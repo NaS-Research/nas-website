@@ -1,0 +1,519 @@
+{
+  "drug": "cyclobenzaprine",
+  "checked": "2026-10-01",
+  "status": "source_reviewed",
+  "review_scope": "Current Teva IR tablets and Amrix ER label: full adult short-term musculoskeletal-spasm, safety, dose and population review.",
+  "sources": [
+    {
+      "id": "cyclobenzaprine-ir",
+      "title": "Cyclobenzaprine · Teva immediate-release tablets",
+      "publisher": "DailyMed / National Library of Medicine",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1d9e34cc-eee9-4147-abf8-c810a80e39d2",
+      "note": "Full public manufacturer label and patient instructions; SPL version 7, effective 20260501. Product-specific directions reviewed October 1, 2026.",
+      "checked": "2026-10-01",
+      "access": "public",
+      "spl_version": "7",
+      "effective_date": "20260501",
+      "xml_sha256": "486442901bb37501a8b98871d79e45c5f3afad68092997ba9a1e0a0e432e06d9",
+      "retrieved_xml": "/tmp/nas-drug-sources/cyclobenzaprine-ir.xml"
+    },
+    {
+      "id": "cyclobenzaprine-er",
+      "title": "Amrix · extended-release cyclobenzaprine capsules",
+      "publisher": "DailyMed / National Library of Medicine",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3902123b-1365-ac3c-0934-afff9eeeb1bd",
+      "note": "Full public manufacturer label and patient instructions; SPL version 32, effective 20240430. Product-specific directions reviewed October 1, 2026.",
+      "checked": "2026-10-01",
+      "access": "public",
+      "spl_version": "32",
+      "effective_date": "20240430",
+      "xml_sha256": "66352f4f473296999ff89e592851ba2797c4301f5722c1c4fa766929c9432dfd",
+      "retrieved_xml": "/tmp/nas-drug-sources/cyclobenzaprine-er.xml"
+    }
+  ],
+  "assertion_source_map": [
+    {
+      "section": "indications",
+      "card": "Labeled oral indication",
+      "assertions": {
+        "paragraphs": [
+          "Relief of muscle spasm associated with acute painful musculoskeletal conditions, alongside rest and physical therapy. Use for only 2–3 weeks because prolonged effectiveness is not established and these conditions generally resolve over this interval."
+        ]
+      },
+      "source_sections": {
+        "cyclobenzaprine-ir": [
+          "INDICATIONS AND USAGE"
+        ],
+        "cyclobenzaprine-er": [
+          "1"
+        ]
+      }
+    },
+    {
+      "section": "indications",
+      "card": "Limitations and population scope",
+      "assertions": {
+        "paragraphs": [
+          "Not effective for spasticity from brain/spinal-cord disease or in children with cerebral palsy. IR safety/effectiveness below 15 years is not established; ER pediatric safety/effectiveness has not been studied. This profile supplies adult regimens and does not endorse chronic pain, insomnia, antidepressant or pediatric off-label treatment."
+        ]
+      },
+      "source_sections": {
+        "cyclobenzaprine-ir": [
+          "INDICATIONS AND USAGE",
+          "Pediatric Use"
+        ],
+        "cyclobenzaprine-er": [
+          "1",
+          "8.4"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Adult oral doses",
+      "assertions": {
+        "paragraphs": [],
+        "table": {
+          "headers": [
+            "Formulation",
+            "Selected regimen"
+          ],
+          "rows": [
+            [
+              "Immediate-release tablets",
+              "Usually 5 mg three times daily; may increase to 7.5 or 10 mg three times daily based on response."
+            ],
+            [
+              "Amrix extended-release capsules",
+              "15 mg once daily; some patients require 30 mg once daily, as one 30 mg or two 15 mg capsules. Take at approximately the same time daily."
+            ],
+            [
+              "Duration",
+              "Only 2–3 weeks; reassess rather than automatically extending."
+            ]
+          ]
+        }
+      },
+      "source_sections": {
+        "cyclobenzaprine-ir": [
+          "DOSAGE AND ADMINISTRATION"
+        ],
+        "cyclobenzaprine-er": [
+          "2"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Extended-release administration",
+      "assertions": {
+        "paragraphs": [
+          "Swallow intact, or sprinkle all capsule contents onto one tablespoon of applesauce and consume immediately without chewing. Rinse the mouth to ensure all contents are swallowed; discard unused mixture. Other foods have not been tested. Do not crush beads or divide the capsule contents into doses."
+        ]
+      },
+      "source_sections": {
+        "cyclobenzaprine-er": [
+          "2",
+          "17",
+          "Patient Information"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Age, organ impairment and dose selection",
+      "assertions": {
+        "paragraphs": [
+          "IR: in older adults or mild hepatic impairment, start at 5 mg and titrate slowly; less frequent dosing may be appropriate. IR is not recommended in moderate/severe hepatic impairment. Amrix ER is not recommended in older adults or any hepatic impairment because exposure increases and dosing flexibility is limited. Selected labels do not provide a numeric renal-adjustment schedule; assess the whole clinical situation rather than inventing one."
+        ]
+      },
+      "source_sections": {
+        "cyclobenzaprine-ir": [
+          "Use in the Elderly",
+          "Impaired Hepatic Function",
+          "DOSAGE AND ADMINISTRATION"
+        ],
+        "cyclobenzaprine-er": [
+          "5.3",
+          "5.4",
+          "8.5",
+          "8.6"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "assertions": {
+        "paragraphs": [],
+        "items": [
+          "Serotonin syndrome is reported with combinations including SSRIs/SNRIs, TCAs, tramadol, bupropion, meperidine and verapamil. Agitation, fever, sweating, clonus/rigidity, seizures or diarrhea require immediate assessment and discontinuation of implicated medicines.",
+          "Structurally related to tricyclic antidepressants; cardiac conduction/arrhythmia risks matter. Review the contraindicated cardiac conditions before treatment.",
+          "Alcohol and other CNS depressants increase impairment. Drowsiness/dizziness can affect driving, work and falls, particularly in older adults.",
+          "Anticholinergic effects require caution with urinary retention, angle-closure glaucoma, raised intraocular pressure or additional anticholinergic drugs.",
+          "Amrix ER is not recommended with hepatic impairment or in older adults; avoid assuming the IR reduced-starting-dose approach applies to ER."
+        ]
+      },
+      "source_sections": {
+        "cyclobenzaprine-ir": [
+          "WARNINGS",
+          "PRECAUTIONS"
+        ],
+        "cyclobenzaprine-er": [
+          "5.1–5.5"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "assertions": {
+        "paragraphs": [
+          "Hypersensitivity; MAOI use or within 14 days after stopping an MAOI; acute recovery from myocardial infarction; arrhythmias, heart block/conduction disturbances or congestive HF; and hyperthyroidism. MAOI combinations have caused severe hyperpyretic crises, seizures and deaths."
+        ]
+      },
+      "source_sections": {
+        "cyclobenzaprine-ir": [
+          "CONTRAINDICATIONS"
+        ],
+        "cyclobenzaprine-er": [
+          "4"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Boxed warning status",
+      "assertions": {
+        "paragraphs": [
+          "No boxed warning is present in the selected IR and Amrix ER labels. Serious MAOI, cardiac and serotonin risks remain prominent contraindications/warnings."
+        ]
+      },
+      "source_sections": {
+        "cyclobenzaprine-ir": [
+          "Full labeling",
+          "CONTRAINDICATIONS",
+          "WARNINGS"
+        ],
+        "cyclobenzaprine-er": [
+          "Full prescribing information",
+          "4",
+          "5"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions and overdose",
+      "assertions": {
+        "paragraphs": [
+          "Drowsiness, dry mouth, dizziness, fatigue, constipation, nausea and dyspepsia are reported; older adults may develop confusion. Serious reports include arrhythmias, seizures, hypersensitivity and serotonin syndrome. Overdose can rapidly cause conduction changes, severe arrhythmia, coma or cardiac arrest and requires emergency toxicology assessment with ECG/airway monitoring. Do not attempt home decontamination or antidote treatment."
+        ]
+      },
+      "source_sections": {
+        "cyclobenzaprine-ir": [
+          "ADVERSE REACTIONS",
+          "OVERDOSAGE"
+        ],
+        "cyclobenzaprine-er": [
+          "6.1",
+          "6.2",
+          "10"
+        ]
+      }
+    },
+    {
+      "section": "interactions",
+      "card": "Clinically relevant interactions",
+      "assertions": {
+        "paragraphs": [],
+        "table": {
+          "headers": [
+            "Combination",
+            "Action"
+          ],
+          "rows": [
+            [
+              "MAOIs or recent MAOI treatment",
+              "Contraindicated during use and within 14 days after MAOI discontinuation."
+            ],
+            [
+              "SSRIs/SNRIs, TCAs, tramadol, bupropion, meperidine, verapamil",
+              "Reported serotonin-syndrome combinations; assess necessity and monitor closely."
+            ],
+            [
+              "Alcohol, barbiturates and other CNS depressants",
+              "Additive sedation/impairment; avoid alcohol and review combinations."
+            ],
+            [
+              "Other anticholinergic medicines",
+              "Review urinary, ocular, bowel and cognitive effects."
+            ],
+            [
+              "Tramadol",
+              "Also increases seizure risk."
+            ],
+            [
+              "Guanethidine and similarly acting antihypertensives",
+              "Their antihypertensive effect may be blocked; reassess BP/therapy."
+            ]
+          ]
+        }
+      },
+      "source_sections": {
+        "cyclobenzaprine-ir": [
+          "Drug Interactions",
+          "WARNINGS"
+        ],
+        "cyclobenzaprine-er": [
+          "7",
+          "5.1"
+        ]
+      }
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy and lactation",
+      "assertions": {
+        "paragraphs": [
+          "Available pregnancy case reports have not identified a clear developmental signal, but human data are limited; weigh clinical need rather than claiming safety. The selected ER label lacks milk-concentration, infant-effect and milk-production data; IR labeling similarly states human milk excretion is unknown and notes related TCAs enter milk. These are limitations of selected product labeling, not a claim that no newer lactation research exists."
+        ]
+      },
+      "source_sections": {
+        "cyclobenzaprine-ir": [
+          "Pregnancy",
+          "Nursing Mothers"
+        ],
+        "cyclobenzaprine-er": [
+          "8.1",
+          "8.2"
+        ]
+      }
+    },
+    {
+      "section": "populations",
+      "card": "Pediatric and geriatric considerations",
+      "assertions": {
+        "paragraphs": [
+          "IR safety/effectiveness below 15 years is not established. ER has not been studied in pediatric patients. Older adults have greater exposure and susceptibility to CNS/cardiac effects; use IR only when clearly needed with a cautious 5 mg start and slow titration/less frequent dosing. Amrix ER is not recommended in older adults."
+        ]
+      },
+      "source_sections": {
+        "cyclobenzaprine-ir": [
+          "Pediatric Use",
+          "Use in the Elderly"
+        ],
+        "cyclobenzaprine-er": [
+          "8.4",
+          "8.5"
+        ]
+      }
+    },
+    {
+      "section": "populations",
+      "card": "Hepatic and renal impairment",
+      "assertions": {
+        "paragraphs": [
+          "Mild hepatic impairment increases IR exposure; start cautiously at 5 mg. IR moderate/severe hepatic use is not recommended; ER is not recommended in any hepatic impairment. No numeric renal regimen is supplied by the selected labels. Urinary metabolite excretion does not establish that impaired renal function has no clinical relevance."
+        ]
+      },
+      "source_sections": {
+        "cyclobenzaprine-ir": [
+          "Impaired Hepatic Function",
+          "CLINICAL PHARMACOLOGY"
+        ],
+        "cyclobenzaprine-er": [
+          "8.6",
+          "12.3"
+        ]
+      }
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism of action",
+      "assertions": {
+        "paragraphs": [
+          "Acts primarily centrally at brain-stem levels, reducing tonic somatic motor activity; it does not act directly at skeletal muscle or neuromuscular junction. The precise mechanism is incompletely characterized."
+        ]
+      },
+      "source_sections": {
+        "cyclobenzaprine-ir": [
+          "CLINICAL PHARMACOLOGY"
+        ],
+        "cyclobenzaprine-er": [
+          "12.1",
+          "12.2"
+        ]
+      }
+    },
+    {
+      "section": "pharmacology",
+      "card": "Pharmacokinetics",
+      "assertions": {
+        "paragraphs": [],
+        "facts": [
+          [
+            "Immediate release",
+            "Oral bioavailability approximately 33–55%; effective half-life ~18 hours (range 8–37). With three-times-daily dosing, accumulation reaches steady state in ~3–4 days."
+          ],
+          [
+            "Extended release",
+            "Peak concentrations ~7–8 hours; mean half-life ~32 hours in studied adults. Food increases exposure; avoid assuming identical absorption to IR."
+          ],
+          [
+            "Metabolism / elimination",
+            "Extensive CYP3A4/CYP1A2 metabolism, with CYP2D6 contribution; primarily urinary excretion of glucuronide metabolites."
+          ],
+          [
+            "Special populations",
+            "Exposure/elimination increase with older age and hepatic impairment, underpinning formulation-specific restrictions."
+          ]
+        ]
+      },
+      "source_sections": {
+        "cyclobenzaprine-ir": [
+          "CLINICAL PHARMACOLOGY"
+        ],
+        "cyclobenzaprine-er": [
+          "12.3"
+        ]
+      }
+    },
+    {
+      "section": "practice",
+      "card": "Monitoring parameters",
+      "assertions": {
+        "paragraphs": [],
+        "items": [
+          "Review contraindicated cardiac/thyroid disease, MAOI exposure and interacting medicines before treatment.",
+          "Follow pain/spasm-related function, physical-therapy progress and treatment duration.",
+          "Assess drowsiness, confusion, falls, urinary retention and bowel/ocular symptoms; reconsider treatment if poorly tolerated.",
+          "Urgently evaluate palpitations, fainting, allergy or serotonin-syndrome symptoms; ECG monitoring is required in suspected overdose."
+        ]
+      },
+      "source_sections": {
+        "cyclobenzaprine-ir": [
+          "PRECAUTIONS",
+          "DOSAGE AND ADMINISTRATION"
+        ],
+        "cyclobenzaprine-er": [
+          "5",
+          "17"
+        ]
+      }
+    },
+    {
+      "section": "practice",
+      "card": "Patient counseling information",
+      "assertions": {
+        "paragraphs": [],
+        "items": [
+          "Follow IR three-times-daily versus ER once-daily directions; use only for the prescribed short course.",
+          "Avoid alcohol; do not drive or operate machinery until the response is known.",
+          "Follow exact ER applesauce instructions and never chew beads or save a mixture.",
+          "Tell the prescriber about all antidepressants, sedatives, glaucoma/urinary problems and liver disease. Report rapid/irregular heartbeat or severe allergy immediately."
+        ]
+      },
+      "source_sections": {
+        "cyclobenzaprine-ir": [
+          "Information for Patients"
+        ],
+        "cyclobenzaprine-er": [
+          "17",
+          "Patient Information"
+        ]
+      }
+    },
+    {
+      "section": "product",
+      "card": "Representative oral product · Teva 5 mg IR",
+      "assertions": {
+        "paragraphs": [],
+        "facts": [
+          [
+            "Dosage form / strength",
+            "Film-coated immediate-release tablet · 5 mg"
+          ],
+          [
+            "Labeler",
+            "Teva Pharmaceuticals USA, Inc."
+          ],
+          [
+            "Appearance / imprint",
+            "White, round · W51 / TV"
+          ],
+          [
+            "Example NDC",
+            "0093-3420-01 · 100 tablets"
+          ]
+        ]
+      },
+      "source_sections": {
+        "cyclobenzaprine-ir": [
+          "HOW SUPPLIED"
+        ]
+      }
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "assertions": {
+        "paragraphs": [
+          "Selected Teva IR tablets: 5, 7.5 and 10 mg. Amrix ER capsules: 15 and 30 mg; 15 mg is orange/orange with blue imprint, and 30 mg is blue/red with white imprint. Other manufacturers may have different appearance and excipients; confirm the package."
+        ]
+      },
+      "source_sections": {
+        "cyclobenzaprine-ir": [
+          "HOW SUPPLIED"
+        ],
+        "cyclobenzaprine-er": [
+          "3",
+          "16"
+        ]
+      }
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "assertions": {
+        "paragraphs": [
+          "Teva IR: 20–25°C in a well-closed container with child-resistant closure. Amrix ER: 25°C, excursions 15–30°C, in a tight light-resistant container. Consume a sprinkled applesauce dose immediately and discard any unused mixture; keep all medicine out of children’s reach."
+        ]
+      },
+      "source_sections": {
+        "cyclobenzaprine-ir": [
+          "HOW SUPPLIED"
+        ],
+        "cyclobenzaprine-er": [
+          "2",
+          "16",
+          "Patient Information"
+        ]
+      }
+    }
+  ],
+  "scope_exclusions": [
+    "No chronic, CNS-spasticity, antidepressant or pediatric off-label regimen supplied.",
+    "Renal dose formula is absent from selected labels; no renal neutrality claimed.",
+    "Lactation summary identifies selected-label evidence limitations; it does not claim all human research is absent."
+  ],
+  "resolved_source_findings": [
+    {
+      "severity": "formulation_precision",
+      "detail": "ER is not recommended in older adults or any hepatic impairment, unlike cautious IR dosing in older adults/mild hepatic impairment."
+    },
+    {
+      "severity": "pediatric_precision",
+      "detail": "IR below-15 evidence limitation and ER pediatric unstudied status remain separate."
+    }
+  ],
+  "material_gaps": [],
+  "clinical_review": "Every published card reviewed against full relevant primary label sections. Source-reviewed within stated scope; not an independent clinician sign-off.",
+  "blueprint": "Immutable APAP eight sections, essential safety, three hero facts, cited disclosures, four safety cards and three product cards.",
+  "validation": {
+    "validateMonograph": [],
+    "build": "parent integration pending",
+    "rendered_page_qa": "parent integration pending"
+  },
+  "monograph_sha256": "05b2b4dce3173721ac6ebd9e42639d5d6f58a8e7814b250dcd14c8bc30584e46"
+}

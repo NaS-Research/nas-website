@@ -1,0 +1,647 @@
+{
+  "drug": "ondansetron",
+  "checked": "2026-10-01",
+  "status": "source_reviewed",
+  "review_scope": "Selected current U.S. oral tablet/ODT/solution and IV/IM labels, with FDA IV dose-removal record; full formulation-specific labeled-use review.",
+  "sources": [
+    {
+      "id": "ondansetron-oral",
+      "title": "Ondansetron · Glenmark tablets and ODT",
+      "publisher": "DailyMed / National Library of Medicine",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=eee5217a-eba8-463a-812d-bf3c66f0934f",
+      "note": "Full public manufacturer label and patient instructions; SPL version 17, effective 20260108. Product-specific directions reviewed October 1, 2026.",
+      "checked": "2026-10-01",
+      "access": "public",
+      "spl_version": "17",
+      "effective_date": "20260108",
+      "xml_sha256": "86929938275f8ff11775b2e99fa06463545d79c467fea2a68916961873a947f1",
+      "retrieved_xml": "/tmp/nas-drug-sources/ondansetron-oral.xml"
+    },
+    {
+      "id": "ondansetron-solution",
+      "title": "Ondansetron · PAI oral solution",
+      "publisher": "DailyMed / National Library of Medicine",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=68a4d845-0c1c-4867-bfca-c0fb11dc93cd",
+      "note": "Full public manufacturer label and patient instructions; SPL version 2, effective 20260331. Product-specific directions reviewed October 1, 2026.",
+      "checked": "2026-10-01",
+      "access": "public",
+      "spl_version": "2",
+      "effective_date": "20260331",
+      "xml_sha256": "f949c60828640e4e04e2f99d66444cf2eeda3448f60ee7f1e966d5cf130d999e",
+      "retrieved_xml": "/tmp/nas-drug-sources/ondansetron-solution.xml"
+    },
+    {
+      "id": "ondansetron-injection",
+      "title": "Ondansetron · Hikma injection",
+      "publisher": "DailyMed / National Library of Medicine",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=97713356-f42b-4a67-95f6-561afa68c0c2",
+      "note": "Full public manufacturer label and patient instructions; SPL version 20, effective 20260416. Product-specific directions reviewed October 1, 2026.",
+      "checked": "2026-10-01",
+      "access": "public",
+      "spl_version": "20",
+      "effective_date": "20260416",
+      "xml_sha256": "37407c8e6bbbc081ad43fbcee3858cac2c49896ccc3a568567fea517449ccd3c",
+      "retrieved_xml": "/tmp/nas-drug-sources/ondansetron-injection.xml"
+    },
+    {
+      "id": "fda",
+      "title": "Zofran injection · FDA dose and QT labeling supplement approval",
+      "publisher": "U.S. Food and Drug Administration",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2012/020007Orig1s043ltr.pdf",
+      "note": "Public NDA 020007/S-043 approval letter, November 14, 2012, Reference ID 3216807; removes 32 mg single IV dosing. Current injection label supplies present regimens.",
+      "checked": "2026-10-01",
+      "access": "public"
+    }
+  ],
+  "assertion_source_map": [
+    {
+      "section": "indications",
+      "card": "Labeled indications",
+      "assertions": {
+        "paragraphs": [
+          "Oral products prevent nausea/vomiting from highly emetogenic single-day chemotherapy, moderately emetogenic chemotherapy, specified abdominal/total-body radiotherapy and surgery. Injection prevents initial/repeat emetogenic chemotherapy-associated nausea/vomiting in adults and children ≥6 months and postoperative nausea/vomiting in adults and children ≥1 month."
+        ]
+      },
+      "source_sections": {
+        "ondansetron-oral": [
+          "1"
+        ],
+        "ondansetron-solution": [
+          "1"
+        ],
+        "ondansetron-injection": [
+          "1"
+        ]
+      }
+    },
+    {
+      "section": "indications",
+      "card": "Population and clinical scope",
+      "assertions": {
+        "paragraphs": [
+          "Oral pediatric support is for moderately emetogenic chemotherapy in ages ≥4; other oral pediatric indications are not established. Injection may treat further postoperative episodes when no prophylactic antiemetic was given; routine prophylaxis is not recommended when postoperative risk is low. No gastroenteritis, pregnancy-nausea or other off-label dosing is supplied."
+        ]
+      },
+      "source_sections": {
+        "ondansetron-oral": [
+          "8.4"
+        ],
+        "ondansetron-solution": [
+          "8.4"
+        ],
+        "ondansetron-injection": [
+          "1",
+          "2.2",
+          "8.4"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Oral doses · Adults",
+      "assertions": {
+        "paragraphs": [
+          "Tablets, ODT and solution use the corresponding oral milligram dose; the selected solution is 4 mg/5 mL. The 24 mg chemotherapy dose below is oral only."
+        ],
+        "table": {
+          "headers": [
+            "Setting",
+            "Regimen"
+          ],
+          "rows": [
+            [
+              "Highly emetogenic single-day chemotherapy",
+              "24 mg once, 30 minutes before chemotherapy."
+            ],
+            [
+              "Moderately emetogenic chemotherapy",
+              "8 mg 30 minutes before; repeat 8 mg 8 hours later; then 8 mg every 12 hours for 1–2 days after completion."
+            ],
+            [
+              "Total-body radiotherapy",
+              "8 mg 1–2 hours before each daily fraction."
+            ],
+            [
+              "Single high-dose abdominal radiotherapy",
+              "8 mg 1–2 hours before; then every 8 hours for 1–2 days after completion."
+            ],
+            [
+              "Daily abdominal fractions",
+              "8 mg 1–2 hours before; then every 8 hours on each treatment day."
+            ],
+            [
+              "Postoperative prevention",
+              "16 mg once, 1 hour before anesthesia induction."
+            ]
+          ]
+        }
+      },
+      "source_sections": {
+        "ondansetron-oral": [
+          "2.1"
+        ],
+        "ondansetron-solution": [
+          "2.1"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Oral pediatric chemotherapy dosing",
+      "assertions": {
+        "paragraphs": [
+          "For moderately emetogenic chemotherapy only: ages 12–17 use the adult 8 mg regimen. Ages 4–11 receive 4 mg 30 minutes before chemotherapy, repeated 4 and 8 hours after the first dose, then 4 mg three times daily for 1–2 days after completion. Below 4 years, oral safety/effectiveness is not established."
+        ]
+      },
+      "source_sections": {
+        "ondansetron-oral": [
+          "2.1",
+          "8.4"
+        ],
+        "ondansetron-solution": [
+          "2.1",
+          "8.4"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Injection doses and preparation",
+      "assertions": {
+        "paragraphs": [
+          "For chemotherapy in adults/children ≥6 months: 0.15 mg/kg IV per dose, maximum 16 mg per dose, for three doses. Dilute in 50 mL D5W or normal saline; smaller 10–50 mL volumes may be appropriate at age 6–12 months and/or weight ≤10 kg. Infuse each dose over 15 minutes, first starting 30 minutes before chemotherapy, then 4 and 8 hours after the first dose."
+        ],
+        "items": [
+          "Postoperative dose: immediately before induction, or after surgery if no prophylaxis and nausea/vomiting occurs within 2 hours. No dilution is required for this use.",
+          "An additional adult 4 mg IV dose after prior 4 mg prophylaxis did not improve control. Pediatric postoperative evidence is in patients without prior prophylactic ondansetron.",
+          "The former 32 mg single IV regimen was removed for QT risk; do not use it."
+        ],
+        "table": {
+          "headers": [
+            "Postoperative population",
+            "Single undiluted dose"
+          ],
+          "rows": [
+            [
+              "Adults and pediatric patients older than 12 years",
+              "4 mg IV over ≥30 seconds, preferably 2–5 minutes; alternatively 4 mg IM."
+            ],
+            [
+              "Children 1 month–12 years, ≤40 kg",
+              "0.1 mg/kg IV over ≥30 seconds, preferably 2–5 minutes."
+            ],
+            [
+              "Children 1 month–12 years, >40 kg",
+              "4 mg IV over ≥30 seconds, preferably 2–5 minutes."
+            ]
+          ]
+        }
+      },
+      "source_sections": {
+        "ondansetron-injection": [
+          "2.1",
+          "2.2",
+          "2.4"
+        ],
+        "fda": [
+          "NDA 020007/S-043 approval and required changes"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Organ impairment and oral technique",
+      "assertions": {
+        "paragraphs": [
+          "Severe hepatic impairment (Child–Pugh ≥10): maximum total 8 mg/day across routes. The injection chemotherapy label uses one 8 mg infusion over 15 minutes before chemotherapy, with no experience beyond day one. No oral adjustment is required for mild/moderate hepatic impairment. No renal adjustment is recommended, but oral experience beyond the first day in renal impairment is limited. Peel ODT foil with dry hands, place immediately on the tongue, and swallow with saliva; water is unnecessary. Measure solution with an accurate oral device."
+        ]
+      },
+      "source_sections": {
+        "ondansetron-oral": [
+          "2.2",
+          "2.3",
+          "8.6",
+          "8.7"
+        ],
+        "ondansetron-solution": [
+          "2.2",
+          "8.6",
+          "8.7"
+        ],
+        "ondansetron-injection": [
+          "2.3",
+          "8.6",
+          "8.7"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "assertions": {
+        "paragraphs": [],
+        "items": [
+          "QT prolongation and torsades can occur, particularly with IV exposure. Avoid congenital long-QT syndrome; ECG monitoring is recommended with electrolyte abnormalities, HF, bradyarrhythmias or other QT-prolonging medicines.",
+          "Hypersensitivity including anaphylaxis/bronchospasm requires discontinuation and emergency care; reactions have occurred in patients allergic to another 5-HT3 antagonist.",
+          "Serotonin syndrome, sometimes fatal, is reported alone or with serotonergic medicines. Agitation, fever, rigidity/clonus, seizures or diarrhea require urgent assessment and stopping implicated medicines.",
+          "Myocardial ischemia/coronary spasm has occurred, often soon after IV dosing. Follow IV rates and monitor; chest pain or breathlessness needs urgent assessment with any route.",
+          "May mask progressive ileus/gastric distension after abdominal surgery or chemotherapy. Follow bowel activity; this is not a prokinetic or a substitute for gastric decompression.",
+          "Selected Glenmark ODT contains phenylalanine from aspartame: 1.5 mg in a 4 mg tablet and 3 mg in an 8 mg tablet. Review the exact product in phenylketonuria."
+        ]
+      },
+      "source_sections": {
+        "ondansetron-oral": [
+          "5.1–5.6"
+        ],
+        "ondansetron-solution": [
+          "5.1–5.5"
+        ],
+        "ondansetron-injection": [
+          "5.1–5.5"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "assertions": {
+        "paragraphs": [
+          "Ondansetron/product ingredient hypersensitivity and concurrent apomorphine are contraindications. Apomorphine combination has caused profound hypotension and loss of consciousness."
+        ]
+      },
+      "source_sections": {
+        "ondansetron-oral": [
+          "4"
+        ],
+        "ondansetron-solution": [
+          "4"
+        ],
+        "ondansetron-injection": [
+          "4"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Boxed warning status",
+      "assertions": {
+        "paragraphs": [
+          "The selected current oral and injectable labels have no boxed warning. This does not remove QT/torsades, myocardial ischemia, serotonin syndrome or anaphylaxis precautions."
+        ]
+      },
+      "source_sections": {
+        "ondansetron-oral": [
+          "Full prescribing information",
+          "5"
+        ],
+        "ondansetron-solution": [
+          "Full prescribing information",
+          "5"
+        ],
+        "ondansetron-injection": [
+          "Full prescribing information",
+          "5"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions and overdose",
+      "assertions": {
+        "paragraphs": [
+          "Common reported reactions include headache, constipation, diarrhea and fatigue, with rates varying by indication and co-treatment; injection reactions also occur. Serious reports include arrhythmias, ischemia, hypersensitivity, severe skin reactions and transient visual loss, particularly after IV use. Excess exposure can cause hypotension, conduction effects or serotonin toxicity; no specific antidote is established. Obtain urgent medical/toxicology assessment and supportive monitoring."
+        ]
+      },
+      "source_sections": {
+        "ondansetron-oral": [
+          "6",
+          "10"
+        ],
+        "ondansetron-solution": [
+          "6",
+          "10"
+        ],
+        "ondansetron-injection": [
+          "6",
+          "10"
+        ]
+      }
+    },
+    {
+      "section": "interactions",
+      "card": "Clinically relevant interactions",
+      "assertions": {
+        "paragraphs": [],
+        "table": {
+          "headers": [
+            "Combination",
+            "Action"
+          ],
+          "rows": [
+            [
+              "Apomorphine",
+              "Contraindicated: severe hypotension/loss of consciousness."
+            ],
+            [
+              "QT-prolonging medicines",
+              "Review additive risk and ECG/electrolyte monitoring."
+            ],
+            [
+              "SSRIs/SNRIs, MAOIs, mirtazapine, lithium, fentanyl, tramadol, IV methylene blue",
+              "Monitor for serotonin syndrome and urgently evaluate symptoms."
+            ],
+            [
+              "Phenytoin, carbamazepine, rifampin",
+              "Exposure decreases; selected labels recommend no dose adjustment."
+            ],
+            [
+              "Tramadol",
+              "Small studies suggest reduced analgesic effect; review pain control and serotonin risk."
+            ]
+          ]
+        }
+      },
+      "source_sections": {
+        "ondansetron-oral": [
+          "7"
+        ],
+        "ondansetron-solution": [
+          "7"
+        ],
+        "ondansetron-injection": [
+          "7"
+        ]
+      }
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy and lactation",
+      "assertions": {
+        "paragraphs": [
+          "Pregnancy observational studies have inconsistent findings concerning oral clefts/cardiac defects and important methodological limitations; they do not establish absence of fetal risk. Balance clinical need and uncertainty. Current labels describe limited postpartum IV data suggesting low milk exposure and no attributed infant adverse effects at doses up to 4 mg/day; effects on milk production are unknown. Repeated/higher oral dosing should not be assumed equivalent."
+        ]
+      },
+      "source_sections": {
+        "ondansetron-oral": [
+          "8.1",
+          "8.2"
+        ],
+        "ondansetron-solution": [
+          "8.1",
+          "8.2"
+        ],
+        "ondansetron-injection": [
+          "8.1",
+          "8.2"
+        ]
+      }
+    },
+    {
+      "section": "populations",
+      "card": "Pediatric and geriatric considerations",
+      "assertions": {
+        "paragraphs": [
+          "Oral moderate-chemotherapy use is supported ≥4 years; injection chemotherapy ≥6 months and postoperative use ≥1 month. Closely monitor infants <4 months receiving injection because clearance is slower and half-life is longer. Older adults have reduced clearance; no routine adjustment is recommended, but data above 75 are limited and cardiac risks require review."
+        ]
+      },
+      "source_sections": {
+        "ondansetron-oral": [
+          "8.4",
+          "8.5"
+        ],
+        "ondansetron-solution": [
+          "8.4",
+          "8.5"
+        ],
+        "ondansetron-injection": [
+          "8.4",
+          "8.5"
+        ]
+      }
+    },
+    {
+      "section": "populations",
+      "card": "Renal and hepatic impairment",
+      "assertions": {
+        "paragraphs": [
+          "Severe hepatic impairment increases exposure and prolongs half-life, requiring the 8 mg/day total limit. No fixed renal adjustment is recommended. Dose/monitoring still depends on route, comorbidity and the limited duration of renal/severe-hepatic study experience."
+        ]
+      },
+      "source_sections": {
+        "ondansetron-oral": [
+          "8.6",
+          "8.7",
+          "12.3"
+        ],
+        "ondansetron-solution": [
+          "8.6",
+          "8.7"
+        ],
+        "ondansetron-injection": [
+          "8.6",
+          "8.7",
+          "12.3"
+        ]
+      }
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism of action",
+      "assertions": {
+        "paragraphs": [
+          "Ondansetron selectively antagonizes serotonin 5-HT3 receptors; chemotherapy-associated emetic signaling involves peripheral vagal and central pathways. It is not a dopamine antagonist and does not stimulate gastric motility."
+        ]
+      },
+      "source_sections": {
+        "ondansetron-oral": [
+          "12.1"
+        ],
+        "ondansetron-injection": [
+          "12.1"
+        ]
+      }
+    },
+    {
+      "section": "pharmacology",
+      "card": "Pharmacokinetics",
+      "assertions": {
+        "paragraphs": [],
+        "facts": [
+          [
+            "Oral absorption",
+            "Approximately 56% bioavailability after an 8 mg tablet; first-pass metabolism. Peak concentrations usually ~1.7–2 hours."
+          ],
+          [
+            "Metabolism / binding",
+            "CYP3A4, CYP2D6 and CYP1A2; approximately 70–76% protein binding."
+          ],
+          [
+            "Elimination",
+            "Extensive metabolism; ~5% unchanged in urine. Adult half-life commonly ~3–6 hours, varying with age/sex/study."
+          ],
+          [
+            "Severe liver impairment",
+            "Half-life may approach 20 hours; use the total daily dose restriction."
+          ]
+        ]
+      },
+      "source_sections": {
+        "ondansetron-oral": [
+          "12.3"
+        ],
+        "ondansetron-injection": [
+          "12.3"
+        ]
+      }
+    },
+    {
+      "section": "practice",
+      "card": "Monitoring parameters",
+      "assertions": {
+        "paragraphs": [],
+        "items": [
+          "Review regimen, route, age/weight and liver disease; reconcile all-route daily exposure.",
+          "Assess cardiac history, interacting medicines and electrolyte risks; obtain ECG monitoring when indicated.",
+          "Follow nausea/vomiting, hydration, bowel activity and postoperative abdominal symptoms.",
+          "Observe infusion-rate tolerance, myocardial ischemia, allergy and serotonin-syndrome symptoms."
+        ]
+      },
+      "source_sections": {
+        "ondansetron-oral": [
+          "5",
+          "17"
+        ],
+        "ondansetron-injection": [
+          "2",
+          "5",
+          "17"
+        ]
+      }
+    },
+    {
+      "section": "practice",
+      "card": "Patient counseling information",
+      "assertions": {
+        "paragraphs": [],
+        "items": [
+          "Follow the exact oral/IV schedule; do not substitute oral high-dose regimens for injection.",
+          "Use dry hands and peel ODT foil; use an accurate measuring device for solution.",
+          "Report fainting, palpitations, chest pain, breathing difficulty, swelling or severe rash promptly.",
+          "Tell the care team about apomorphine, serotonergic/QT medicines, liver disease, pregnancy/breastfeeding and phenylketonuria."
+        ]
+      },
+      "source_sections": {
+        "ondansetron-oral": [
+          "17",
+          "Patient Information"
+        ],
+        "ondansetron-solution": [
+          "17"
+        ],
+        "ondansetron-injection": [
+          "17"
+        ]
+      }
+    },
+    {
+      "section": "product",
+      "card": "Representative oral product · Glenmark 4 mg ODT",
+      "assertions": {
+        "paragraphs": [],
+        "facts": [
+          [
+            "Dosage form / strength",
+            "Orally disintegrating tablet · 4 mg"
+          ],
+          [
+            "Labeler",
+            "Glenmark Pharmaceuticals Inc., USA"
+          ],
+          [
+            "Appearance / imprint",
+            "White, round, flat tablet · G / 4"
+          ],
+          [
+            "Example NDC",
+            "68462-157-13 · 30 tablets in unit-dose blisters"
+          ]
+        ]
+      },
+      "source_sections": {
+        "ondansetron-oral": [
+          "3",
+          "16"
+        ]
+      }
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "assertions": {
+        "paragraphs": [
+          "Selected Glenmark film-coated tablets and ODT: 4 and 8 mg. PAI oral solution: 4 mg/5 mL (0.8 mg/mL). Hikma injection: 2 mg/mL, supplied as 4 mg/2 mL single-dose or 40 mg/20 mL multidose vials. Other products may have different packaging/excipients; verify the label."
+        ]
+      },
+      "source_sections": {
+        "ondansetron-oral": [
+          "3",
+          "16"
+        ],
+        "ondansetron-solution": [
+          "3",
+          "16"
+        ],
+        "ondansetron-injection": [
+          "3",
+          "16"
+        ]
+      }
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "assertions": {
+        "paragraphs": [
+          "Selected products use 20–25°C controlled room temperature. Protect film-coated tablets, oral solution and injection from light; keep solution upright in its carton and ODT in its blister until use. For injection chemotherapy dilution, the label limits use to 24 hours after preparation; inspect the diluted solution and follow sterile preparation instructions. Do not mix with unverified solutions, particularly alkaline preparations."
+        ]
+      },
+      "source_sections": {
+        "ondansetron-oral": [
+          "16",
+          "2.3"
+        ],
+        "ondansetron-solution": [
+          "16"
+        ],
+        "ondansetron-injection": [
+          "2.4",
+          "16"
+        ]
+      }
+    }
+  ],
+  "scope_exclusions": [
+    "No off-label pregnancy/gastroenteritis regimen supplied.",
+    "No claim that all marketed products have identical excipients/storage.",
+    "Historical FDA safety-webpage URL was unavailable; the public FDA approval letter and current injection label resolve the IV maximum and QT change."
+  ],
+  "resolved_source_findings": [
+    {
+      "severity": "route_precision",
+      "detail": "24 mg oral HEC regimen is explicitly distinct from IV maximum 16 mg per chemotherapy dose; severe-hepatic total maximum 8 mg/day takes precedence."
+    },
+    {
+      "severity": "current_label",
+      "detail": "Updated selected labels contain limited human lactation data; older claims of no human milk information were not propagated."
+    }
+  ],
+  "material_gaps": [],
+  "clinical_review": "Every published card reviewed against full relevant primary label sections. Source-reviewed within stated scope; not an independent clinician sign-off.",
+  "blueprint": "Immutable APAP eight sections, essential safety, three hero facts, cited disclosures, four safety cards and three product cards.",
+  "validation": {
+    "validateMonograph": [],
+    "build": "parent integration pending",
+    "rendered_page_qa": "parent integration pending"
+  },
+  "monograph_sha256": "8af7c3da2251885968c5d8071a61f7121e09aaa6a12ab523cb5cd9c5875f8f9d"
+}

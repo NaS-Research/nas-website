@@ -1,0 +1,518 @@
+{
+  "slug": "glipizide",
+  "checked": "2026-10-01",
+  "status": "source_reviewed",
+  "review_scope": "A product-specific sulfonylurea reference for adults with type 2 diabetes, separating immediate and extended release. All eight blueprint sections reviewed. Product-specific focused monograph; not an exhaustive adverse-event catalog.",
+  "sources": [
+    {
+      "id": "ir",
+      "title": "Glipizide immediate-release tablets · Full U.S. label",
+      "publisher": "DailyMed / PD-Rx Pharmaceuticals (Apotex source product)",
+      "note": "SPL version 25, effective 20260923; current public product labeling.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1b2e5656-9da9-4fab-bf01-ed75896b836a",
+      "checked": "2026-10-01",
+      "version": "SPL version 25, effective 20260923; current public product labeling.",
+      "spl_version": "25",
+      "spl_effective_time": "20260923",
+      "xml_url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/1b2e5656-9da9-4fab-bf01-ed75896b836a.xml",
+      "downloaded_xml_sha256": "8b634e0d361a57218056be8752b476d14e3b1d1dbe229986c275d56e8fb7d126"
+    },
+    {
+      "id": "xl",
+      "title": "Glucotrol XL · Full U.S. prescribing information",
+      "publisher": "DailyMed / Roerig (Pfizer)",
+      "note": "SPL version 28, effective 20260721; current public product labeling.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=eed99b60-d043-4249-9b2a-f05e46fb588d",
+      "checked": "2026-10-01",
+      "version": "SPL version 28, effective 20260721; current public product labeling.",
+      "spl_version": "28",
+      "spl_effective_time": "20260721",
+      "xml_url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/eed99b60-d043-4249-9b2a-f05e46fb588d.xml",
+      "downloaded_xml_sha256": "dd9b55183b37d159d280c5517d130ef0a45cd48510111c70b34740b7919be815"
+    },
+    {
+      "id": "irsource",
+      "title": "Glipizide immediate-release · Source manufacturer label",
+      "publisher": "DailyMed / Apotex Corp.",
+      "note": "SPL version 14, effective 20260911; current public product labeling.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=dcf426b8-bcdc-8214-a1b6-6388bd3399a0",
+      "checked": "2026-10-01",
+      "version": "SPL version 14, effective 20260911; current public product labeling.",
+      "spl_version": "14",
+      "spl_effective_time": "20260911",
+      "xml_url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/dcf426b8-bcdc-8214-a1b6-6388bd3399a0.xml",
+      "downloaded_xml_sha256": "1bbfdc60090842cdef63989a4a32802af3db0afa6b4559c3a0862307840915b4"
+    }
+  ],
+  "assertion_to_source": [
+    {
+      "section_id": "indications",
+      "card_title": "Approved use",
+      "assertions": [
+        "Both formulations are labeled as adjuncts to diet and exercise to improve glycemic control in adults with type 2 diabetes. They do not treat diabetic ketoacidosis or replace insulin in type 1 diabetes. Pediatric safety and effectiveness are not established. Neither label establishes glipizide as a cardiovascular-risk-reduction therapy."
+      ],
+      "support": [
+        {
+          "source_id": "ir",
+          "sections": [
+            "Indications; Contraindications; Pediatric use"
+          ]
+        },
+        {
+          "source_id": "xl",
+          "sections": [
+            "1; 5.4; 8.4"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "dosage",
+      "card_title": "Adult initiation and titration",
+      "assertions": [
+        "Titrate to glucose response and hypoglycemia risk; the two maximum doses are not interchangeable.",
+        "Immediate release | Start 5 mg before breakfast, generally about 30 minutes before a meal. Older adults or liver disease may start 2.5 mg. Increase 2.5–5 mg with at least several days between steps.",
+        "Immediate-release limits | Maximum once-daily dose 15 mg. Higher totals ordinarily divided before meals with adequate calories; maximum 40 mg/day.",
+        "Glucotrol XL | Start 5 mg once daily with breakfast or first main meal; increased hypoglycemia risk: start 2.5 mg. Adjust to control; maximum 20 mg once daily."
+      ],
+      "support": [
+        {
+          "source_id": "ir",
+          "sections": [
+            "Dosage / Initial dose; Titration; Maintenance"
+          ]
+        },
+        {
+          "source_id": "xl",
+          "sections": [
+            "2.1; 5.1"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "dosage",
+      "card_title": "Administration and transitions",
+      "assertions": [
+        "Swallow XL whole; do not cut, crush, dissolve or chew it. Its empty shell may appear in stool. The XL label allows switching from IR to the nearest equivalent total daily dose once daily, within the XL maximum and with monitoring; an IR dose above 20 mg is not automatically carried over. Transfers from long-acting sulfonylureas require monitoring for overlapping hypoglycemia. Any insulin-to-glipizide transition is supervised and not a self-directed taper."
+      ],
+      "support": [
+        {
+          "source_id": "ir",
+          "sections": [
+            "Dosage / Patients receiving other oral agents; Patients receiving insulin"
+          ]
+        },
+        {
+          "source_id": "xl",
+          "sections": [
+            "2.1; 17; Patient information"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "dosage",
+      "card_title": "Organ function and vulnerable patients",
+      "assertions": [
+        "Use conservative initial and maintenance doses with renal or hepatic impairment, frailty or malnutrition. XL specifically starts hypoglycemia-predisposed patients, including renal impairment, at 2.5 mg. The labels do not provide a universal eGFR-based titration or fixed renal maximum."
+      ],
+      "support": [
+        {
+          "source_id": "ir",
+          "sections": [
+            "Precautions / Renal and hepatic disease; Maintenance"
+          ]
+        },
+        {
+          "source_id": "xl",
+          "sections": [
+            "5.1; 8.6; 12.3"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "safety",
+      "card_title": "Warnings and precautions",
+      "assertions": [
+        "Hypoglycemia can become prolonged, cause seizures/coma or be fatal. Risk rises with missed calories, alcohol, prolonged exercise, other glucose-lowering agents, older age, malnutrition, adrenal/pituitary disease and renal/hepatic impairment. Autonomic neuropathy or sympatholytic drugs can mask warning symptoms. Use conservative doses and close monitoring. XL labeling says avoid in G6PD deficiency; IR advises caution and considering an alternative because hemolytic anemia can occur. Avoid XL with severe gastrointestinal narrowing because its non-dissolving formulation can obstruct.",
+        "Both labels retain a cardiovascular-mortality warning derived from the historical UGDP trial of tolbutamide, not a glipizide-specific trial establishing the same numerical risk. The approximately 2.5-fold cardiovascular-mortality result was with fixed-dose tolbutamide versus diet alone; the labels extend precaution to related sulfonylureas and require discussing alternatives. Glipizide glucose lowering does not establish cardiovascular protection. Loss of control during infection, surgery or other stress may require temporary insulin and reassessment."
+      ],
+      "support": [
+        {
+          "source_id": "ir",
+          "sections": [
+            "Warnings; Precautions / Hypoglycemia; Hemolytic anemia; Loss of control"
+          ]
+        },
+        {
+          "source_id": "xl",
+          "sections": [
+            "5.1–5.5"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "safety",
+      "card_title": "Contraindications",
+      "assertions": [
+        "IR formally contraindicates hypersensitivity, type 1 diabetes and diabetic ketoacidosis with or without coma. XL’s formal section lists hypersensitivity to glipizide/ingredients and sulfonamide derivatives; its indications/patient information exclude type 1 diabetes and ketoacidosis. G6PD deficiency and severe GI narrowing are XL avoid-use warnings rather than the formal section 4 list."
+      ],
+      "support": [
+        {
+          "source_id": "ir",
+          "sections": [
+            "Contraindications"
+          ]
+        },
+        {
+          "source_id": "xl",
+          "sections": [
+            "1; 4; 5.2; 5.5; Patient information"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "safety",
+      "card_title": "Boxed warning status",
+      "assertions": [
+        "The selected labels do not contain a boxed warning. The IR prominent special cardiovascular warning and XL section 5.3 warning concern historical sulfonylurea evidence; their wording must not be presented as a modern glipizide-specific risk estimate."
+      ],
+      "support": [
+        {
+          "source_id": "ir",
+          "sections": [
+            "Warnings"
+          ]
+        },
+        {
+          "source_id": "xl",
+          "sections": [
+            "Full prescribing information; 5.3"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "safety",
+      "card_title": "Adverse reactions and overdose",
+      "assertions": [
+        "Hypoglycemia, dizziness, diarrhea, tremor and other gastrointestinal symptoms are reported. Persistent allergic skin reactions require stopping; cholestatic jaundice and blood dyscrasias have been reported. Excess dosing can cause recurrent severe hypoglycemia even after apparent recovery. A conscious patient able to swallow can take oral glucose under the established rescue plan; coma, seizure or impaired swallowing requires emergency help and clinician-administered glucagon/IV glucose. Labels call for at least 24–48 hours of close monitoring after severe overdose. Dialysis is unlikely to help."
+      ],
+      "support": [
+        {
+          "source_id": "ir",
+          "sections": [
+            "Adverse reactions; Overdosage"
+          ]
+        },
+        {
+          "source_id": "xl",
+          "sections": [
+            "6; 10; Patient information"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "interactions",
+      "card_title": "Glucose-changing medicines",
+      "assertions": [
+        "Insulin/other diabetes drugs, salicylates/NSAIDs, sulfonamide antibiotics, quinolones, coumarins and several other agents can increase hypoglycemia. Steroids, thiazide/other diuretics, thyroid hormones, some antipsychotics, estrogens and sympathomimetics can weaken glucose control. Alcohol and beta blockers may change control in either direction; beta blockers and other sympatholytics can mask symptoms. Adjust only after clinical review and glucose monitoring, including after withdrawal of an interacting drug."
+      ],
+      "support": [
+        {
+          "source_id": "ir",
+          "sections": [
+            "Precautions / Drug interactions"
+          ]
+        },
+        {
+          "source_id": "xl",
+          "sections": [
+            "7.1"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "interactions",
+      "card_title": "Azoles and colesevelam",
+      "assertions": [
+        "Oral miconazole has been associated with severe hypoglycemia; risk with other miconazole routes is not established by these labels. Fluconazole increases glipizide exposure; monitor closely and consider dose changes. Give glipizide at least four hours before colesevelam: the supporting study specifically evaluated ER absorption, and both selected labels give this separation instruction."
+      ],
+      "support": [
+        {
+          "source_id": "ir",
+          "sections": [
+            "Drug interactions; Dosage / Other oral agents"
+          ]
+        },
+        {
+          "source_id": "xl",
+          "sections": [
+            "2.2; 7.2–7.4; 12.3"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "populations",
+      "card_title": "Pregnancy and lactation",
+      "assertions": [
+        "Both labels warn about neonatal hypoglycemia from sulfonylureas and the risks of poor maternal glucose control. The current IR label retains older pregnancy wording and directs discontinuation at least ONE MONTH before expected delivery if used; Glucotrol XL directs at least TWO WEEKS. Coordinate replacement therapy rather than leaving diabetes untreated. IR advises deciding whether to stop nursing or the drug because infant hypoglycemia is possible. XL reports undetectable milk in one limited study, which is not conclusive, and calls for balancing benefits/risks and infant hypoglycemia monitoring. Jitters, poor feeding, excessive sleepiness, blue color, apnea or seizures need prompt assessment."
+      ],
+      "support": [
+        {
+          "source_id": "ir",
+          "sections": [
+            "Precautions / Pregnancy; Nonteratogenic effects; Nursing mothers"
+          ]
+        },
+        {
+          "source_id": "xl",
+          "sections": [
+            "8.1; 8.2; 17"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "populations",
+      "card_title": "Pediatric and geriatric use",
+      "assertions": [
+        "Safety and effectiveness in children are not established; no pediatric regimen is supplied. Older adults may be more sensitive to hypoglycemia and recognize it poorly, so start conservatively and reassess meals, renal function and interacting medicines."
+      ],
+      "support": [
+        {
+          "source_id": "ir",
+          "sections": [
+            "Pediatric use; Geriatric use; Maintenance"
+          ]
+        },
+        {
+          "source_id": "xl",
+          "sections": [
+            "8.4; 8.5; 5.1"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "populations",
+      "card_title": "Renal and hepatic impairment",
+      "assertions": [
+        "IR labeling notes slowed metabolism/excretion and prolonged hypoglycemia in renal/hepatic dysfunction. XL has no dedicated graded renal PK study; metabolites may circulate longer with renal impairment. Hepatic biotransformation and protein binding support cautious low-dose treatment and prolonged-event monitoring. No labeled numeric renal-stage algorithm is invented."
+      ],
+      "support": [
+        {
+          "source_id": "ir",
+          "sections": [
+            "Renal and hepatic disease; Maintenance"
+          ]
+        },
+        {
+          "source_id": "xl",
+          "sections": [
+            "5.1; 8.6; 12.3"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "pharmacology",
+      "card_title": "Mechanism",
+      "assertions": [
+        "Sulfonylurea receptor binding in pancreatic beta cells closes ATP-sensitive potassium channels and promotes insulin release. Functioning beta cells are required. Meal-stimulated insulin secretion is enhanced; response may decline over time and needs reassessment."
+      ],
+      "support": [
+        {
+          "source_id": "ir",
+          "sections": [
+            "Clinical pharmacology / Mechanism"
+          ]
+        },
+        {
+          "source_id": "xl",
+          "sections": [
+            "12.1; 12.2"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "pharmacology",
+      "card_title": "Disposition and release",
+      "assertions": [
+        "Glipizide is highly protein bound and cleared mainly by hepatic biotransformation; less than 10% is excreted unchanged. XL concentrations begin rising after two to three hours, peak about six to twelve hours and persist across its 24-hour interval. The terminal elimination half-life is about two to five hours. XL’s osmotic tablet controls delivery; its intact empty shell is expected, while shortened GI transit can reduce exposure."
+      ],
+      "support": [
+        {
+          "source_id": "ir",
+          "sections": [
+            "Clinical pharmacology / Pharmacokinetics"
+          ]
+        },
+        {
+          "source_id": "xl",
+          "sections": [
+            "11 / System components; 12.3"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "practice",
+      "card_title": "Monitoring",
+      "assertions": [
+        "Follow blood glucose and HbA1c to select the lowest effective dose and detect loss of response. Monitor more closely during titration, medication changes, acute illness, reduced food intake or organ dysfunction. Review symptoms, driving safety and the need for alternative therapy; glucose lowering alone is not evidence of cardiovascular protection."
+      ],
+      "support": [
+        {
+          "source_id": "ir",
+          "sections": [
+            "Dosage; Laboratory tests; Information for patients"
+          ]
+        },
+        {
+          "source_id": "xl",
+          "sections": [
+            "2; 5; 7; 17"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "practice",
+      "card_title": "Counseling",
+      "assertions": [
+        "Explain the correct formulation’s meal timing, regular meals, activity and glucose checks. Avoid alcohol with XL under its patient instructions. Carry the agreed glucose rescue treatment; seek immediate help for severe or recurrent low glucose and do not give oral food/drink to an unconscious person. Tell the prescriber about pregnancy, breastfeeding, allergy, organ disease, G6PD deficiency and GI narrowing. Never share medication or change doses independently."
+      ],
+      "support": [
+        {
+          "source_id": "ir",
+          "sections": [
+            "Information for patients; Hypoglycemia; Overdosage"
+          ]
+        },
+        {
+          "source_id": "xl",
+          "sections": [
+            "17; Patient information; 10"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "product",
+      "card_title": "Representative products",
+      "assertions": [
+        "The selected PD-Rx repackaged Apotex IR product is a white/off-white round scored 10-mg tablet, “APO” on one side and “GLP” over the score and “10” on the other; the 30-tablet repackager bottle is NDC 43063-861-30. Source and repackager packaging differ. Glucotrol XL 5 mg is white round/biconvex, marked “GXL 5”; 100-tablet bottle NDC 0049-0174-02. Generic appearances vary."
+      ],
+      "support": [
+        {
+          "source_id": "ir",
+          "sections": [
+            "How supplied; SPL source/repackager data"
+          ]
+        },
+        {
+          "source_id": "xl",
+          "sections": [
+            "16"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "product",
+      "card_title": "Dosage forms and strengths",
+      "assertions": [
+        "Apotex IR supplies white/off-white round scored 5- and 10-mg tablets with “APO” and “GLP” over the score and strength. A 2.5-mg starting dose requires confirming the dispensed product’s appropriate splitting instructions with the pharmacist. Glucotrol XL supplies 2.5-mg blue and 5-/10-mg white tablets; none should be split."
+      ],
+      "support": [
+        {
+          "source_id": "irsource",
+          "sections": [
+            "How supplied; Recommended storage"
+          ]
+        },
+        {
+          "source_id": "xl",
+          "sections": [
+            "3; 16; 17; Patient information"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "product",
+      "card_title": "Storage and handling",
+      "assertions": [
+        "Apotex IR: 20–25°C; dispense in a tight, light-resistant container. Glucotrol XL: 20–25°C, excursions 15–30°C; protect from moisture/humidity and keep in the original dry container. Follow the specific dispensed/repackaged container and keep medicines out of children’s reach."
+      ],
+      "support": [
+        {
+          "source_id": "irsource",
+          "sections": [
+            "How supplied; Recommended storage"
+          ]
+        },
+        {
+          "source_id": "xl",
+          "sections": [
+            "3; 16; 17; Patient information"
+          ]
+        }
+      ]
+    }
+  ],
+  "material_errors": [],
+  "gaps": [],
+  "limitations": [
+    "Current IR and XL formal contraindication lists, G6PD instructions, pregnancy washout intervals and lactation wording differ and are explicitly preserved.",
+    "The September 2026 PD-Rx repackager record is supplemented by the current Apotex source manufacturer SPL version 14, effective September 11, 2026, to resolve IR forms/strengths and storage. Source product NDC 60505-0142 is distinguished from repackager NDC 43063-861.",
+    "No numeric renal-stage adjustment, pediatric dose, self-directed insulin transition or cardiovascular-benefit claim is supplied.",
+    "The historical tolbutamide UGDP class warning is attributed accurately and not recast as a quantified glipizide-specific trial finding."
+  ],
+  "regulatory_records": [
+    {
+      "source_file": "glipizide-ir",
+      "records": [
+        {
+          "application_or_monograph": "ANDA075795",
+          "marketing_category": "ANDA"
+        }
+      ]
+    },
+    {
+      "source_file": "glipizide-xl",
+      "records": [
+        {
+          "application_or_monograph": "NDA020329",
+          "marketing_category": "NDA"
+        },
+        {
+          "application_or_monograph": "NDA020329",
+          "marketing_category": "NDA"
+        },
+        {
+          "application_or_monograph": "NDA020329",
+          "marketing_category": "NDA"
+        }
+      ]
+    },
+    {
+      "source_file": "glipizide-apotex",
+      "records": [
+        {
+          "application_or_monograph": "ANDA075795",
+          "marketing_category": "ANDA"
+        }
+      ]
+    }
+  ]
+}

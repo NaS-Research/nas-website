@@ -1,0 +1,894 @@
+{
+  "slug": "methylphenidate",
+  "checked": "2026-10-01",
+  "status": "source_reviewed",
+  "review_scope": "A product-specific reference for Ritalin IR, Concerta, Ritalin LA, and Quillivant XR; release systems and approved ages differ. All eight blueprint sections reviewed. Product-specific focused monograph; not an exhaustive adverse-event catalog.",
+  "sources": [
+    {
+      "id": "ir",
+      "title": "Ritalin · Immediate-release tablets",
+      "publisher": "DailyMed / Sandoz Inc",
+      "note": "SPL version 3, effective 20250205; current public product labeling.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d6fb2750-cdab-4749-ba0d-7534840a5892",
+      "checked": "2026-10-01",
+      "version": "SPL version 3, effective 20250205; current public product labeling.",
+      "spl_version": "3",
+      "spl_effective_time": "20250205",
+      "xml_url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/d6fb2750-cdab-4749-ba0d-7534840a5892.xml",
+      "downloaded_xml_sha256": "934dce852822fc85fa7878a6319b1b4011df5c1f7fc8e7b6c52acd8c519d5365",
+      "regulatory_record": [
+        {
+          "application": "NDA010187",
+          "category": "NDA"
+        }
+      ]
+    },
+    {
+      "id": "concerta",
+      "title": "Concerta · Extended-release tablets",
+      "publisher": "DailyMed / Janssen Pharmaceuticals, Inc.",
+      "note": "SPL version 30, effective 20260420; current public product labeling.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1a88218c-5b18-4220-8f56-526de1a276cd",
+      "checked": "2026-10-01",
+      "version": "SPL version 30, effective 20260420; current public product labeling.",
+      "spl_version": "30",
+      "spl_effective_time": "20260420",
+      "xml_url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/1a88218c-5b18-4220-8f56-526de1a276cd.xml",
+      "downloaded_xml_sha256": "23b6fa34c923af7e30954f5885fb2cfad8f0b71c932eff814f4f0d8108d24a33",
+      "regulatory_record": [
+        {
+          "application": "NDA021121",
+          "category": "NDA"
+        }
+      ]
+    },
+    {
+      "id": "la",
+      "title": "Ritalin LA · Extended-release capsules",
+      "publisher": "DailyMed / Novartis Pharmaceuticals Corporation",
+      "note": "SPL version 36, effective 20250923; current public product labeling.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=effd952d-ac94-47bb-b107-589a4934dcca",
+      "checked": "2026-10-01",
+      "version": "SPL version 36, effective 20250923; current public product labeling.",
+      "spl_version": "36",
+      "spl_effective_time": "20250923",
+      "xml_url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/effd952d-ac94-47bb-b107-589a4934dcca.xml",
+      "downloaded_xml_sha256": "c780431d69e63c79b979dee2a03317b58e8441ac0565523d6c04a9616fbc4a0c",
+      "regulatory_record": [
+        {
+          "application": "NDA021284",
+          "category": "NDA"
+        }
+      ]
+    },
+    {
+      "id": "liquid",
+      "title": "Quillivant XR · Extended-release suspension",
+      "publisher": "DailyMed / NextWave Pharmaceuticals, Inc",
+      "note": "SPL version 21, effective 20260324; current public product labeling.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c2dc2109-44a6-4797-b04e-18761dd9d45a",
+      "checked": "2026-10-01",
+      "version": "SPL version 21, effective 20260324; current public product labeling.",
+      "spl_version": "21",
+      "spl_effective_time": "20260324",
+      "xml_url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/c2dc2109-44a6-4797-b04e-18761dd9d45a.xml",
+      "downloaded_xml_sha256": "d7bb5c814499cc286319540601797cfbf94979e46e36534c829cd3f017f0b4ee",
+      "regulatory_record": [
+        {
+          "application": "NDA202100",
+          "category": "NDA"
+        }
+      ]
+    },
+    {
+      "id": "fda",
+      "title": "Extended-release stimulants · Younger-child safety communication",
+      "publisher": "U.S. Food and Drug Administration",
+      "note": "June 30, 2025 communication; current page checked October 1, 2026.",
+      "url": "https://www.fda.gov/drugs/drug-safety-communications/fda-requires-expanded-labeling-about-weight-loss-risk-patients-younger-6-years-taking-extended",
+      "checked": "2026-10-01",
+      "version": "June 30, 2025 communication; current page checked October 1, 2026."
+    },
+    {
+      "id": "lactation",
+      "title": "Methylphenidate · Lactation",
+      "publisher": "LactMed / National Library of Medicine",
+      "note": "Revised August 15, 2025; limited milk/infant data and milk-production considerations.",
+      "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK501310/",
+      "checked": "2026-10-01",
+      "version": "Revised August 15, 2025; limited milk/infant data and milk-production considerations."
+    }
+  ],
+  "assertion_to_source": [
+    {
+      "section_id": "indications",
+      "card_title": "Approved uses",
+      "assertions": [
+        "Ritalin immediate-release tablets are labeled for ADHD in children age 6 and older and adults, and for narcolepsy. Concerta is labeled for ADHD at ages 6–65. Ritalin LA’s current label restricts its ADHD indication to ages 6–12. Quillivant XR is labeled for ADHD with dosing from age 6; it is not recommended below age 6."
+      ],
+      "support": [
+        {
+          "source_id": "ir",
+          "sections": [
+            "1",
+            "8.4"
+          ]
+        },
+        {
+          "source_id": "concerta",
+          "sections": [
+            "1",
+            "8.4"
+          ]
+        },
+        {
+          "source_id": "la",
+          "sections": [
+            "1",
+            "8.4"
+          ]
+        },
+        {
+          "source_id": "liquid",
+          "sections": [
+            "1",
+            "8.4"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "indications",
+      "card_title": "Formulation boundaries",
+      "assertions": [
+        "This profile covers these four oral products. Daytrana patches, other delayed/extended-release tablets or capsules, chewables, and other liquids require their own administration and conversion instructions. Do not extend the immediate-release narcolepsy indication to the selected ADHD-only extended-release labels."
+      ],
+      "support": [
+        {
+          "source_id": "ir",
+          "sections": [
+            "1",
+            "2",
+            "3"
+          ]
+        },
+        {
+          "source_id": "concerta",
+          "sections": [
+            "1",
+            "2",
+            "3"
+          ]
+        },
+        {
+          "source_id": "la",
+          "sections": [
+            "1",
+            "2",
+            "3"
+          ]
+        },
+        {
+          "source_id": "liquid",
+          "sections": [
+            "1",
+            "2",
+            "3"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "dosage",
+      "card_title": "Ritalin immediate-release dosing",
+      "assertions": [
+        "Age ≥6: start 5 mg twice daily before breakfast and lunch; increase by 5–10 mg per week. Doses above 60 mg/day are not recommended. Adults: the label describes an average total dose of 20–30 mg/day in two or three divided doses, preferably 30–45 minutes before meals; maximum 60 mg/day. If late dosing causes insomnia, take the last dose before 6 p.m. The adult average is not a mandatory starting dose."
+      ],
+      "support": [
+        {
+          "source_id": "ir",
+          "sections": [
+            "2.2"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "dosage",
+      "card_title": "Concerta dosing",
+      "assertions": [
+        "Take once each morning with or without food. Increase in 18-mg steps at weekly intervals; 27 mg permits a smaller increase from 18 mg. Swallow tablets whole with liquid; do not split, crush, or chew.",
+        "Age 6–12 | 18 mg daily / 18–54 mg daily",
+        "Age 13–17 | 18 mg daily / 18–72 mg daily, not above 2 mg/kg/day",
+        "Age 18–65 | 18 or 36 mg daily / 18–72 mg daily"
+      ],
+      "support": [
+        {
+          "source_id": "concerta",
+          "sections": [
+            "2.2–2.4"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "dosage",
+      "card_title": "Ritalin LA dosing and administration",
+      "assertions": [
+        "For its labeled age 6–12 population, start 20 mg each morning, or 10 mg when a lower start is appropriate; increase by 10 mg weekly. Above 60 mg/day is not recommended. Swallow whole, or sprinkle the entire bead contents on a spoonful of non-warm applesauce and consume immediately. Never chew, crush, divide, or store the mixture."
+      ],
+      "support": [
+        {
+          "source_id": "la",
+          "sections": [
+            "1",
+            "2.2"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "dosage",
+      "card_title": "Quillivant XR dosing and preparation",
+      "assertions": [
+        "Age ≥6: start 20 mg each morning; increase weekly by 10–20 mg. Above 60 mg/day is unstudied and not recommended. After pharmacist reconstitution the concentration is 25 mg/5 mL (5 mg/mL); 20 mg is 4 mL. Shake vigorously for at least 10 seconds before every dose and measure with the supplied oral dispenser. Take with or without food. Patients must not reconstitute the powder themselves."
+      ],
+      "support": [
+        {
+          "source_id": "liquid",
+          "sections": [
+            "2.2",
+            "2.3",
+            "2.6",
+            "16.1"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "dosage",
+      "card_title": "Switching and reassessment",
+      "assertions": [
+        "Concerta has a specific table for prior immediate-release doses taken twice or three times daily: 5 mg/dose → 18 mg each morning; 10 → 36; 15 → 54; 20 → 72, with the 72-mg conversion limited to ages 13–65. Ritalin LA has a separate twice-daily Ritalin conversion table; other products require discontinuation and product-specific titration. Quillivant XR explicitly requires retitration rather than a milligram-for-milligram swap. Respect each age maximum. Reduce or discontinue for paradoxical worsening/adverse effects; the labels advise discontinuation if no improvement after appropriate adjustment over one month."
+      ],
+      "support": [
+        {
+          "source_id": "ir",
+          "sections": [
+            "2.3"
+          ]
+        },
+        {
+          "source_id": "concerta",
+          "sections": [
+            "2.4",
+            "2.5"
+          ]
+        },
+        {
+          "source_id": "la",
+          "sections": [
+            "2.3–2.5"
+          ]
+        },
+        {
+          "source_id": "liquid",
+          "sections": [
+            "2.4",
+            "2.5"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "safety",
+      "card_title": "Warnings and precautions",
+      "assertions": [
+        "Avoid use with serious structural heart disease, cardiomyopathy, serious arrhythmias, coronary disease, or other serious cardiac disease. Monitor blood pressure and pulse. Screen for manic risk and assess new psychosis or mania; review new/worsening tics or Tourette symptoms. Watch growth, weight, appetite, peripheral circulation changes, and digital sores. Persistent painful erections require immediate care, including during withdrawal or drug holidays.",
+        "Evaluate glaucoma risk: acute angle-closure reports and increased intraocular pressure warrant ophthalmic assessment and monitoring when indicated. Concerta’s nondeformable tablet is generally inappropriate with severe GI narrowing and must be swallowable whole. Current ER labels/FDA warn that children under 6 have higher exposure and adverse-event risks, including weight loss; no preschool ER regimen is supplied."
+      ],
+      "support": [
+        {
+          "source_id": "ir",
+          "sections": [
+            "5",
+            "6",
+            "8",
+            "17"
+          ]
+        },
+        {
+          "source_id": "concerta",
+          "sections": [
+            "5.2–5.11"
+          ]
+        },
+        {
+          "source_id": "la",
+          "sections": [
+            "5",
+            "6",
+            "8",
+            "17"
+          ]
+        },
+        {
+          "source_id": "liquid",
+          "sections": [
+            "5",
+            "6",
+            "8",
+            "17"
+          ]
+        },
+        {
+          "source_id": "fda",
+          "sections": [
+            "Safety announcement / recommendations"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "safety",
+      "card_title": "Contraindications",
+      "assertions": [
+        "All four labels contraindicate hypersensitivity to methylphenidate/product ingredients and concurrent MAO inhibitors or use within 14 days after stopping an MAOI. Serious cardiac disease, tics, and glaucoma are addressed under current warnings, rather than being added to these formal contraindication lists."
+      ],
+      "support": [
+        {
+          "source_id": "ir",
+          "sections": [
+            "4",
+            "5"
+          ]
+        },
+        {
+          "source_id": "concerta",
+          "sections": [
+            "4",
+            "5"
+          ]
+        },
+        {
+          "source_id": "la",
+          "sections": [
+            "4",
+            "5"
+          ]
+        },
+        {
+          "source_id": "liquid",
+          "sections": [
+            "4",
+            "5"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "safety",
+      "card_title": "Boxed warning: abuse, misuse, and addiction",
+      "assertions": [
+        "Methylphenidate has substantial abuse and misuse potential that can progress to addiction. Overdose and death are possible, especially with excessive doses or unapproved routes. Assess risk before prescribing, teach secure storage and disposal, and reassess for misuse throughout treatment. These products are U.S. Schedule II controlled substances."
+      ],
+      "support": [
+        {
+          "source_id": "ir",
+          "sections": [
+            "Boxed warning",
+            "5.1",
+            "9.1–9.3"
+          ]
+        },
+        {
+          "source_id": "concerta",
+          "sections": [
+            "Boxed warning",
+            "5.1",
+            "9.1–9.3"
+          ]
+        },
+        {
+          "source_id": "la",
+          "sections": [
+            "Boxed warning",
+            "5.1",
+            "9.1–9.3"
+          ]
+        },
+        {
+          "source_id": "liquid",
+          "sections": [
+            "Boxed warning",
+            "5.1",
+            "9.1–9.3"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "safety",
+      "card_title": "Adverse reactions and overdose",
+      "assertions": [
+        "Appetite loss, insomnia, anxiety, headache, abdominal discomfort, nausea, tachycardia, and weight loss are reported; frequency depends on product and population. Serious allergic, cardiovascular, neurologic, vascular, and ocular events also occur. Overdose can cause arrhythmias, severe blood-pressure disturbance, agitation, seizures, serotonin syndrome, hyperthermia, and rhabdomyolysis. Obtain emergency/poison-center help and account for delayed release; dialysis is not useful."
+      ],
+      "support": [
+        {
+          "source_id": "ir",
+          "sections": [
+            "6",
+            "10"
+          ]
+        },
+        {
+          "source_id": "concerta",
+          "sections": [
+            "6",
+            "10"
+          ]
+        },
+        {
+          "source_id": "la",
+          "sections": [
+            "6",
+            "10"
+          ]
+        },
+        {
+          "source_id": "liquid",
+          "sections": [
+            "6",
+            "10"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "interactions",
+      "card_title": "MAOIs, blood-pressure therapy, and anesthesia",
+      "assertions": [
+        "The MAOI combination and 14-day interval are contraindicated because of hypertensive crisis risk. Stimulants may reduce antihypertensive effectiveness; monitor blood pressure and adjust that therapy if needed. Halogenated anesthetics can cause abrupt blood-pressure/pulse increases; labels direct avoiding stimulant use on the day of surgery with those agents."
+      ],
+      "support": [
+        {
+          "source_id": "ir",
+          "sections": [
+            "7"
+          ]
+        },
+        {
+          "source_id": "concerta",
+          "sections": [
+            "7"
+          ]
+        },
+        {
+          "source_id": "la",
+          "sections": [
+            "7"
+          ]
+        },
+        {
+          "source_id": "liquid",
+          "sections": [
+            "7"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "interactions",
+      "card_title": "Risperidone, alcohol, and serotonergic medicines",
+      "assertions": [
+        "Changing either methylphenidate or risperidone dose during combined use can increase extrapyramidal symptoms; monitor movements. Ritalin LA and Quillivant XR direct avoiding alcohol because their release profiles may change; do not generalize this release effect to Concerta. Serotonin syndrome has been reported with methylphenidate plus serotonergic drugs, warranting medication review and assessment of concerning symptoms."
+      ],
+      "support": [
+        {
+          "source_id": "ir",
+          "sections": [
+            "6",
+            "7.1"
+          ]
+        },
+        {
+          "source_id": "concerta",
+          "sections": [
+            "7",
+            "12.3"
+          ]
+        },
+        {
+          "source_id": "la",
+          "sections": [
+            "7.1",
+            "12.3",
+            "17"
+          ]
+        },
+        {
+          "source_id": "liquid",
+          "sections": [
+            "2.2",
+            "7.1",
+            "12.3"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "populations",
+      "card_title": "Pregnancy and lactation",
+      "assertions": [
+        "Pregnancy wording differs: Ritalin/Ritalin LA report no identified drug-associated risk in available reports, Concerta describes inconsistent findings, and Quillivant XR calls data insufficient. None proves absence of risk; consider treatment need, fetal perfusion concerns, and the pregnancy registry. Labels describe low milk exposure but unknown long-term infant neurodevelopment; monitor agitation, sleep, feeding, and weight. LactMed considers medically needed methylphenidate compatible with continuing breastfeeding on limited evidence, while warning that high doses may reduce milk production."
+      ],
+      "support": [
+        {
+          "source_id": "ir",
+          "sections": [
+            "8.1",
+            "8.2"
+          ]
+        },
+        {
+          "source_id": "concerta",
+          "sections": [
+            "8.1",
+            "8.2"
+          ]
+        },
+        {
+          "source_id": "la",
+          "sections": [
+            "8.1",
+            "8.2"
+          ]
+        },
+        {
+          "source_id": "liquid",
+          "sections": [
+            "8.1",
+            "8.2"
+          ]
+        },
+        {
+          "source_id": "lactation",
+          "sections": [
+            "Summary / drug levels / lactation effects"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "populations",
+      "card_title": "Children and older adults",
+      "assertions": [
+        "Use the product’s approved ages. ER products are not recommended below age 6; monitor height and weight, with interruption considered if expected growth fails. Concerta is not indicated above age 65; Ritalin, Ritalin LA, and Quillivant XR lack geriatric study evidence. No unsupported older-adult regimen is provided."
+      ],
+      "support": [
+        {
+          "source_id": "ir",
+          "sections": [
+            "1",
+            "8.4",
+            "8.5"
+          ]
+        },
+        {
+          "source_id": "concerta",
+          "sections": [
+            "1",
+            "8.4",
+            "8.5"
+          ]
+        },
+        {
+          "source_id": "la",
+          "sections": [
+            "1",
+            "8.4",
+            "8.5"
+          ]
+        },
+        {
+          "source_id": "liquid",
+          "sections": [
+            "1",
+            "8.4",
+            "8.5"
+          ]
+        },
+        {
+          "source_id": "fda",
+          "sections": [
+            "Recommendations"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "populations",
+      "card_title": "Renal and hepatic impairment",
+      "assertions": [
+        "Formal organ-impairment evidence is limited. Ritalin/Ritalin LA expect little effect because metabolism is largely ester hydrolysis and little unchanged drug is renally cleared, but those populations were not studied. Concerta supplies no renal/hepatic PK information; Quillivant XR has no clinical experience in these populations. No validated numeric adjustment is invented."
+      ],
+      "support": [
+        {
+          "source_id": "ir",
+          "sections": [
+            "12.3"
+          ]
+        },
+        {
+          "source_id": "concerta",
+          "sections": [
+            "12.3"
+          ]
+        },
+        {
+          "source_id": "la",
+          "sections": [
+            "12.3"
+          ]
+        },
+        {
+          "source_id": "liquid",
+          "sections": [
+            "12.3"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "pharmacology",
+      "card_title": "Mechanism",
+      "assertions": [
+        "Methylphenidate inhibits dopamine and norepinephrine reuptake; the precise therapeutic mechanism in ADHD/narcolepsy is not established. The racemate contains a more pharmacologically active d-enantiomer."
+      ],
+      "support": [
+        {
+          "source_id": "ir",
+          "sections": [
+            "12.1",
+            "12.2"
+          ]
+        },
+        {
+          "source_id": "concerta",
+          "sections": [
+            "12.1",
+            "12.2"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "pharmacology",
+      "card_title": "Disposition and release",
+      "assertions": [
+        "Ester hydrolysis forms largely inactive ritalinic acid, subsequently excreted mainly in urine. IR Ritalin peaks around 2 hours; Concerta has an early rise then prolonged delivery, typically peaking at 6–10 hours. Ritalin LA has two release phases; Quillivant XR’s fasting median peak in its adult study was about 5 hours. These product-specific data do not establish a universal conversion or equivalent duration."
+      ],
+      "support": [
+        {
+          "source_id": "ir",
+          "sections": [
+            "12.3"
+          ]
+        },
+        {
+          "source_id": "concerta",
+          "sections": [
+            "12.3"
+          ]
+        },
+        {
+          "source_id": "la",
+          "sections": [
+            "12.3"
+          ]
+        },
+        {
+          "source_id": "liquid",
+          "sections": [
+            "12.3"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "practice",
+      "card_title": "Monitoring",
+      "assertions": [
+        "Before treatment obtain cardiac history, family history of sudden death/arrhythmia, and examination; assess tics, manic risk, and misuse risk. Follow pulse, blood pressure, growth/weight, appetite, sleep, psychiatric symptoms, circulation, and goal-specific treatment response. Reassess adherence, interactions, and formulation before escalating."
+      ],
+      "support": [
+        {
+          "source_id": "ir",
+          "sections": [
+            "2.1",
+            "5",
+            "17"
+          ]
+        },
+        {
+          "source_id": "concerta",
+          "sections": [
+            "2.1",
+            "5",
+            "17"
+          ]
+        },
+        {
+          "source_id": "la",
+          "sections": [
+            "2.1",
+            "5",
+            "17"
+          ]
+        },
+        {
+          "source_id": "liquid",
+          "sections": [
+            "2.1",
+            "5",
+            "17"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "practice",
+      "card_title": "Counseling",
+      "assertions": [
+        "Do not share or use unapproved routes. Keep medicine securely locked when possible and use approved disposal/take-back options. Teach the specific swallow/sprinkle/shake instructions. Concerta’s intact-looking shell may appear in stool after drug release. Seek urgent help for chest pain, fainting, severe psychosis, painful prolonged erection, eye pain/vision changes, or severe allergic symptoms."
+      ],
+      "support": [
+        {
+          "source_id": "ir",
+          "sections": [
+            "17",
+            "Medication guide"
+          ]
+        },
+        {
+          "source_id": "concerta",
+          "sections": [
+            "17",
+            "Medication guide"
+          ]
+        },
+        {
+          "source_id": "la",
+          "sections": [
+            "17",
+            "Medication guide"
+          ]
+        },
+        {
+          "source_id": "liquid",
+          "sections": [
+            "17",
+            "Medication guide"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "product",
+      "card_title": "Representative products",
+      "assertions": [
+        "Ritalin 5-mg tablets are round yellow, marked CIBA 7 (100-count NDC 66758-273-01). Concerta 18-mg tablets are yellow, marked alza 18 (100-count NDC 50458-585-01). Ritalin LA 10-mg capsules are white/light brown, marked NVR R10 (100-count NDC 0078-0424-05). Quillivant XR is a beige-to-tan suspension after reconstitution; its 60-mL package is NDC 24478-321-02. These identities refer to the cited manufacturers."
+      ],
+      "support": [
+        {
+          "source_id": "ir",
+          "sections": [
+            "16"
+          ]
+        },
+        {
+          "source_id": "concerta",
+          "sections": [
+            "16"
+          ]
+        },
+        {
+          "source_id": "la",
+          "sections": [
+            "16"
+          ]
+        },
+        {
+          "source_id": "liquid",
+          "sections": [
+            "16"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "product",
+      "card_title": "Dosage forms and strengths",
+      "assertions": [
+        "Selected products: Ritalin IR tablets 5/10/20 mg; Concerta ER tablets 18/27/36/54 mg; Ritalin LA ER capsules 10/20/30/40 mg; Quillivant XR reconstituted ER suspension 25 mg/5 mL, final bottle volumes 60/120/150/180 mL. A larger total dose can require multiple units; strengths of other brands are outside this scope."
+      ],
+      "support": [
+        {
+          "source_id": "ir",
+          "sections": [
+            "3",
+            "16"
+          ]
+        },
+        {
+          "source_id": "concerta",
+          "sections": [
+            "3",
+            "16"
+          ]
+        },
+        {
+          "source_id": "la",
+          "sections": [
+            "3",
+            "16"
+          ]
+        },
+        {
+          "source_id": "liquid",
+          "sections": [
+            "3",
+            "16"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "product",
+      "card_title": "Storage and handling",
+      "assertions": [
+        "Ritalin/Ritalin LA: 20–25°C with 15–30°C excursions; Ritalin needs light protection in a tight, light-resistant container and LA a tight container. Concerta: 25°C with 15–30°C excursions, protect from humidity. Quillivant XR: 25°C with 15–30°C excursions, original bottle/carton with adapter and dispenser; stable up to 4 months after pharmacist reconstitution. Secure all products against access and diversion."
+      ],
+      "support": [
+        {
+          "source_id": "ir",
+          "sections": [
+            "16",
+            "17"
+          ]
+        },
+        {
+          "source_id": "concerta",
+          "sections": [
+            "16",
+            "17"
+          ]
+        },
+        {
+          "source_id": "la",
+          "sections": [
+            "16",
+            "17"
+          ]
+        },
+        {
+          "source_id": "liquid",
+          "sections": [
+            "16",
+            "17"
+          ]
+        }
+      ]
+    }
+  ],
+  "material_errors": [],
+  "gaps": [],
+  "limitations": [
+    "Daytrana, other release devices, other liquids/chewables, and dexmethylphenidate are excluded; no cross-formulation extrapolation.",
+    "Formal renal/hepatic and geriatric data are incomplete in the selected labels; no unverified adjustment is supplied.",
+    "Pregnancy-label differences are explicitly reconciled as uncertainty, not universal proof of no risk."
+  ],
+  "essential_and_hero_assertions": {
+    "support": "Indication/class/formulation and essential safety statements are additionally supported by the same label sections mapped to Indications, Safety, Dosage, Clinical pharmacology, and Product cards."
+  }
+}

@@ -1,0 +1,663 @@
+{
+  "slug": "tramadol",
+  "status": "source_reviewed",
+  "checked": "2026-10-01",
+  "scope": "Selected adult U.S. IR50mg Preferred/Graviti-Rising repackager and Lupin ER100/200/300mg tablets; current public SPLs distinguish PI revision from SPL effective date",
+  "excludedRegimens": [
+    "Pediatric use is not approved; adolescent contraindications/risk factors do not create a pediatric indication",
+    "Other ER delivery systems, oral liquids, combination products, other manufacturers/non-U.S. labels",
+    "Universal equianalgesic conversion or fixed taper protocol"
+  ],
+  "sources": [
+    {
+      "id": "label",
+      "title": "Tramadol hydrochloride IR tablets · Prescribing information",
+      "publisher": "DailyMed / Preferred Pharmaceuticals, Inc.",
+      "note": "Current SPL version 1, effective 2026-06-08. ",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=855905c7-1481-4b2d-a318-3254ad8ed73c"
+    },
+    {
+      "id": "er",
+      "title": "Tramadol hydrochloride ER tablets · Prescribing information",
+      "publisher": "DailyMed / Lupin Pharmaceuticals, Inc.",
+      "note": "Current SPL version 26, effective 2026-03-05. ",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=46bb9ae6-3ee8-463c-badb-c7a45a89b84b"
+    }
+  ],
+  "labelMetadata": [
+    {
+      "product": "tramadol-ir",
+      "sourceId": "label",
+      "setid": "855905c7-1481-4b2d-a318-3254ad8ed73c",
+      "effectiveTime": "20260608",
+      "version": "1",
+      "xmlSha256": "e872f18f7e45ee95b2917e7d391915f27d45d5d5bba3b36a309c8f1d134467f4",
+      "localEvidence": "/tmp/nas-drug-sources/tramadol-ir.xml",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/855905c7-1481-4b2d-a318-3254ad8ed73c.xml",
+      "prescribingInformationRevision": "02/2026"
+    },
+    {
+      "product": "tramadol-er",
+      "sourceId": "er",
+      "setid": "46bb9ae6-3ee8-463c-badb-c7a45a89b84b",
+      "effectiveTime": "20260305",
+      "version": "26",
+      "xmlSha256": "d0fe49fb2f37a2da31e2c9fe93aab2ee8ec6710db9d5da14c39b2184be897ddd",
+      "localEvidence": "/tmp/nas-drug-sources/tramadol-er.xml",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/46bb9ae6-3ee8-463c-badb-c7a45a89b84b.xml",
+      "prescribingInformationRevision": "11/2025"
+    }
+  ],
+  "evidence": [
+    {
+      "sourceId": "label",
+      "localEvidence": "/tmp/nas-drug-sources/tramadol-ir.xml",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/tramadol/tramadol-ir.xml",
+      "sha256": "e872f18f7e45ee95b2917e7d391915f27d45d5d5bba3b36a309c8f1d134467f4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/855905c7-1481-4b2d-a318-3254ad8ed73c.xml"
+    },
+    {
+      "sourceId": "label",
+      "localEvidence": "/tmp/nas-drug-sources/tramadol-ir-sections.json",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/tramadol/tramadol-ir-sections.json",
+      "sha256": "ccba5b9bde566d6324d6137a83738bee8dcba21d0d6ed7c10682c5fef0d18e5c",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/855905c7-1481-4b2d-a318-3254ad8ed73c.xml"
+    },
+    {
+      "sourceId": "er",
+      "localEvidence": "/tmp/nas-drug-sources/tramadol-er.xml",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/tramadol/tramadol-er.xml",
+      "sha256": "d0fe49fb2f37a2da31e2c9fe93aab2ee8ec6710db9d5da14c39b2184be897ddd",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/46bb9ae6-3ee8-463c-badb-c7a45a89b84b.xml"
+    },
+    {
+      "sourceId": "er",
+      "localEvidence": "/tmp/nas-drug-sources/tramadol-er-sections.json",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/tramadol/tramadol-er-sections.json",
+      "sha256": "3edd4a69faf679b066112f708820a2993c0822d06b29c0f89e54ec1a26007d03",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/46bb9ae6-3ee8-463c-badb-c7a45a89b84b.xml"
+    }
+  ],
+  "sourceEvidenceRoot": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/tramadol",
+  "sourceManifest": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/tramadol/source-manifest.json",
+  "assertionToSourceMap": [
+    {
+      "section": "indications",
+      "card": "Immediate-release indication",
+      "assertions": {
+        "paragraphs": [
+          "For adults with pain severe enough to require an opioid analgesic when alternative treatments are inadequate. Reserve treatment for patients for whom nonopioid alternatives are ineffective, not tolerated, or otherwise inadequate; addiction and overdose risks persist at recommended doses."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "1 Indications"
+      },
+      "review": "Reviewed the complete supporting public label sections; original summaries retain product-specific scope."
+    },
+    {
+      "section": "indications",
+      "card": "Extended-release indication",
+      "assertions": {
+        "paragraphs": [
+          "For adults with severe and persistent pain requiring opioid treatment that cannot be adequately treated with alternatives, including immediate-release opioids. ER is not an as-needed analgesic."
+        ]
+      },
+      "sourceIds": [
+        "er"
+      ],
+      "sourceSections": {
+        "er": "1 Indications; §2.1"
+      },
+      "review": "Reviewed the complete supporting public label sections; original summaries retain product-specific scope."
+    },
+    {
+      "section": "indications",
+      "card": "Age and formulation limits",
+      "assertions": {
+        "paragraphs": [
+          "Neither selected product is approved for pediatric use. All children under 12 years, and patients under 18 years after tonsillectomy or adenoidectomy, are specifically contraindicated. Avoid use in adolescents with obesity, obstructive sleep apnea, or severe lung disease. Combination products and other ER delivery systems are outside this profile."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "er"
+      ],
+      "sourceSections": {
+        "label": "§4; §5 pediatric ultrarapid warnings; §8.4",
+        "er": "§4; §5 pediatric ultrarapid warnings; §8.4"
+      },
+      "review": "Reviewed the complete supporting public label sections; original summaries retain product-specific scope."
+    },
+    {
+      "section": "dosage",
+      "card": "Immediate-release adult dosing",
+      "assertions": {
+        "paragraphs": [
+          "If rapid analgesia is unnecessary, the label starts at 25 mg/day, increasing the total by 25 mg every 3 days in divided doses to 100 mg/day (25 mg four times daily), then by 50 mg every 3 days to 200 mg/day (50 mg four times daily). After titration, 50–100 mg every 4–6 hours as needed may be used, with a 400 mg/day ceiling. A direct 50–100 mg start is reserved for selected patients needing rapid effect when benefits outweigh higher initial adverse-effect risk. Individual lower limits below take precedence."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "§2.3 Initial Dosage"
+      },
+      "review": "Reviewed the complete supporting public label sections; original summaries retain product-specific scope."
+    },
+    {
+      "section": "dosage",
+      "card": "Extended-release dosing and conversion",
+      "assertions": {
+        "paragraphs": [
+          "Start the selected ER tablet at 100 mg once daily; titrate by 100 mg no more often than every 5 days, up to 300 mg/day. For an IR-to-ER conversion, calculate the 24-hour IR total and round down to the next lower 100 mg increment; some patients cannot be converted because of ER strength and dose limits. No established conversion ratio exists for other opioids: clinician-directed initiation and close reassessment are necessary."
+        ]
+      },
+      "sourceIds": [
+        "er"
+      ],
+      "sourceSections": {
+        "er": "ER §2.3; §2.4; §2.1"
+      },
+      "review": "Reviewed the complete supporting public label sections; original summaries retain product-specific scope."
+    },
+    {
+      "section": "dosage",
+      "card": "Kidney, liver, and older-age limits",
+      "assertions": {
+        "table": {
+          "headers": [
+            "Population",
+            "IR tablets",
+            "Selected ER tablets"
+          ],
+          "rows": [
+            [
+              "CrCl <30 mL/min",
+              "Every 12 hours; maximum 200 mg/day",
+              "Do not use"
+            ],
+            [
+              "Severe hepatic impairment",
+              "50 mg every 12 hours",
+              "Do not use in Child-Pugh C"
+            ],
+            [
+              "Age >75 years",
+              "Maximum 300 mg/day",
+              "Titrate cautiously; maximum remains 300 mg/day"
+            ]
+          ]
+        }
+      },
+      "sourceIds": [
+        "label",
+        "er"
+      ],
+      "sourceSections": {
+        "label": "IR §2.3; ER §8.5–8.7; §12.3",
+        "er": "IR §2.3; ER §8.5–8.7; §12.3"
+      },
+      "review": "Reviewed the complete supporting public label sections; original summaries retain product-specific scope."
+    },
+    {
+      "section": "dosage",
+      "card": "Administration and tapering",
+      "assertions": {
+        "paragraphs": [
+          "IR may be taken without regard to food. Take ER once daily at a consistent time and with consistent regard to food; swallow whole with liquid, never cut, crush, chew, break, or dissolve. Do not add another tramadol-containing medicine. Do not abruptly stop or rapidly reduce treatment in a physically dependent patient: agree on an individualized taper, pain plan, and follow-up; slow or pause reductions for withdrawal."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "er"
+      ],
+      "sourceSections": {
+        "label": "§2.1; §2.5; §12.3 Food Effects",
+        "er": "§2.1; §2.5; §12.3 Food Effects"
+      },
+      "review": "Reviewed the complete supporting public label sections; original summaries retain product-specific scope."
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "assertions": {
+        "paragraphs": [
+          "Fatal respiratory depression is possible, particularly at initiation or dose increases; risk increases with lung disease, sleep apnea, frailty, and CNS depressants. Known CYP2D6 ultrarapid metabolizers should not use tramadol because excessive active M1 exposure can cause life-threatening toxicity. Addiction, misuse, and accidental ingestion remain risks even during prescribed therapy.",
+          "Serotonin syndrome and seizures can occur at recommended doses. Risk rises with serotonergic drugs, seizure history, withdrawal states, head injury, and medicines lowering the seizure threshold. Urgently assess agitation, fever, diarrhea, rigidity or hyperreflexia, or a seizure. Do not prescribe to patients who are suicidal or addiction-prone; assess depression and overdose risk.",
+          "Other warnings include adrenal insufficiency, severe hypotension, opioid-induced hyperalgesia, worsened intracranial pressure, biliary spasm, opioid-induced esophageal dysfunction, anaphylaxis and severe skin reactions. Hyponatremia/SIADH, especially early in older women, and hypoglycemia have been reported. New swallowing difficulty, profound weakness, confusion, severe rash, or fainting needs evaluation."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "er"
+      ],
+      "sourceSections": {
+        "label": "§5 Warnings and Precautions in full; §6.2",
+        "er": "§5 Warnings and Precautions in full; §6.2"
+      },
+      "review": "Reviewed the complete supporting public label sections; original summaries retain product-specific scope."
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "assertions": {
+        "paragraphs": [
+          "Children under 12 years; patients under 18 years after tonsillectomy/adenoidectomy; significant respiratory depression; acute or severe bronchial asthma without monitoring or resuscitation resources; known or suspected GI obstruction including paralytic ileus; and concurrent MAOIs or use within 14 days. Both labels contraindicate tramadol hypersensitivity; the IR label additionally specifies other product components or opioids."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "er"
+      ],
+      "sourceSections": {
+        "label": "§4 Contraindications",
+        "er": "§4 Contraindications"
+      },
+      "review": "Reviewed the complete supporting public label sections; original summaries retain product-specific scope."
+    },
+    {
+      "section": "safety",
+      "card": "Boxed warning · opioid and interaction risks",
+      "assertions": {
+        "paragraphs": [
+          "Both selected labels carry boxed warnings for addiction, abuse and misuse; life-threatening respiratory depression; accidental ingestion; neonatal opioid withdrawal; CYP interactions; ultrarapid metabolism and fatal pediatric respiratory depression; and concomitant benzodiazepines or other CNS depressants. Opioid REMS counseling applies. ER must remain intact to prevent uncontrolled delivery."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "er"
+      ],
+      "sourceSections": {
+        "label": "Boxed Warning; §5; §2.1 ER administration",
+        "er": "Boxed Warning; §5; §2.1 ER administration"
+      },
+      "review": "Reviewed the complete supporting public label sections; original summaries retain product-specific scope."
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions",
+      "assertions": {
+        "paragraphs": [
+          "Common reactions include dizziness, nausea, constipation, headache, somnolence, vomiting, itching, sweating, and weakness. Serious reactions include respiratory depression, seizures, serotonin syndrome, severe allergy/skin reactions, hypotension, and electrolyte or glucose disturbances. Trial rates differ by formulation, dose, and population and should not be compared directly."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "er"
+      ],
+      "sourceSections": {
+        "label": "§6.1–6.2",
+        "er": "§6.1–6.2"
+      },
+      "review": "Reviewed the complete supporting public label sections; original summaries retain product-specific scope."
+    },
+    {
+      "section": "interactions",
+      "card": "CYP2D6 inhibitors",
+      "assertions": {
+        "paragraphs": [
+          "Fluoxetine, paroxetine, bupropion, and quinidine can raise parent tramadol while lowering M1: analgesia may fall or withdrawal appear, while seizure and serotonin risks rise. Stopping an inhibitor can increase M1 and respiratory depression; the label advises considering a lower tramadol dose and close monitoring."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "er"
+      ],
+      "sourceSections": {
+        "label": "§7 CYP2D6 inhibitors; §5 CYP interactions",
+        "er": "§7 CYP2D6 inhibitors; §5 CYP interactions"
+      },
+      "review": "Reviewed the complete supporting public label sections; original summaries retain product-specific scope."
+    },
+    {
+      "section": "interactions",
+      "card": "CYP3A4 inhibitors and inducers",
+      "assertions": {
+        "paragraphs": [
+          "Inhibitors such as erythromycin, azole antifungals, or ritonavir can increase exposure; consider dose reduction and monitor toxicity. Inducers such as rifampin or phenytoin can reduce effect or cause withdrawal; stopping an inducer can increase toxicity and may require dose reduction. Carbamazepine coadministration is not recommended because of reduced effect and seizure concerns."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "er"
+      ],
+      "sourceSections": {
+        "label": "§7 CYP3A4 inhibitors/inducers; carbamazepine",
+        "er": "§7 CYP3A4 inhibitors/inducers; carbamazepine"
+      },
+      "review": "Reviewed the complete supporting public label sections; original summaries retain product-specific scope."
+    },
+    {
+      "section": "interactions",
+      "card": "Serotonergic drugs and CNS depressants",
+      "assertions": {
+        "paragraphs": [
+          "SSRIs, SNRIs, TCAs, triptans and other serotonergic agents increase serotonin-syndrome risk; MAOIs are contraindicated within 14 days. Benzodiazepines, alcohol, other opioids, gabapentinoids and sedatives increase respiratory depression and death. Reserve necessary combinations for carefully selected patients at the lowest appropriate doses and durations, with close observation and overdose-reversal counseling."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "er"
+      ],
+      "sourceSections": {
+        "label": "§7 benzodiazepines/CNS depressants,serotonergic drugs,MAOIs; §5; §2.2",
+        "er": "§7 benzodiazepines/CNS depressants,serotonergic drugs,MAOIs; §5; §2.2"
+      },
+      "review": "Reviewed the complete supporting public label sections; original summaries retain product-specific scope."
+    },
+    {
+      "section": "interactions",
+      "card": "Other interactions",
+      "assertions": {
+        "paragraphs": [
+          "Mixed agonist/antagonist or partial agonist opioids can reduce analgesia or precipitate withdrawal; coordinate care rather than independently stopping an opioid-use-disorder medicine. Muscle relaxants increase respiratory risk; anticholinergics increase retention/ileus risk. Monitor diuretic response, digoxin toxicity, and warfarin INR when relevant."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "er"
+      ],
+      "sourceSections": {
+        "label": "§7 mixed/partial agonists,muscle relaxants,anticholinergics,diuretics,digoxin,warfarin",
+        "er": "§7 mixed/partial agonists,muscle relaxants,anticholinergics,diuretics,digoxin,warfarin"
+      },
+      "review": "Reviewed the complete supporting public label sections; original summaries retain product-specific scope."
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy and lactation",
+      "assertions": {
+        "paragraphs": [
+          "Human pregnancy data are insufficient to define drug-associated risk; animal findings support counseling about potential fetal harm. Prolonged use can cause neonatal opioid withdrawal; placental transfer can cause neonatal respiratory depression, and use during or immediately before labor is not recommended when alternatives are appropriate. Breastfeeding is not recommended during tramadol treatment because tramadol and M1 enter milk and may cause infant sedation or respiratory depression. Long-term opioid use may reduce fertility; reversibility is uncertain."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "er"
+      ],
+      "sourceSections": {
+        "label": "§8.1–8.3; §17 Pregnancy,Lactation,Infertility",
+        "er": "§8.1–8.3; §17 Pregnancy,Lactation,Infertility"
+      },
+      "review": "Reviewed the complete supporting public label sections; original summaries retain product-specific scope."
+    },
+    {
+      "section": "populations",
+      "card": "Pediatric and older patients",
+      "assertions": {
+        "paragraphs": [
+          "The selected labels establish no pediatric safety/effectiveness. Specific age contraindications and adolescent respiratory risk factors are listed above. Older or debilitated patients are more vulnerable to respiratory effects; IR patients over 75 years have a 300 mg/day ceiling. Monitor sedation, falls, sodium-related symptoms, and kidney function."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "er"
+      ],
+      "sourceSections": {
+        "label": "§8.4–8.5; IR §2.3; §5; §17",
+        "er": "§8.4–8.5; IR §2.3; §5; §17"
+      },
+      "review": "Reviewed the complete supporting public label sections; original summaries retain product-specific scope."
+    },
+    {
+      "section": "populations",
+      "card": "Renal and hepatic impairment",
+      "assertions": {
+        "paragraphs": [
+          "Use the IR adjustments in the dosing table. Hemodialysis removes only about 7% of a dose, and the adjusted usual IR dose may be given on dialysis days. Do not use the selected ER tablet when CrCl is below 30 mL/min or in severe hepatic impairment (Child-Pugh C); limited dose flexibility prevents safe adjustment."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "er"
+      ],
+      "sourceSections": {
+        "label": "IR §2.3; ER §8.6–8.7; §12.3",
+        "er": "IR §2.3; ER §8.6–8.7; §12.3"
+      },
+      "review": "Reviewed the complete supporting public label sections; original summaries retain product-specific scope."
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism of action",
+      "assertions": {
+        "paragraphs": [
+          "Tramadol and its active O-desmethyl metabolite M1 contribute to analgesia. Opioid-receptor activity, including μ-receptor agonism, occurs alongside inhibition of norepinephrine and serotonin reuptake. These effects also explain respiratory depression and serotonin-related interaction risks."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "er"
+      ],
+      "sourceSections": {
+        "label": "§12.1–12.2",
+        "er": "§12.1–12.2"
+      },
+      "review": "Reviewed the complete supporting public label sections; original summaries retain product-specific scope."
+    },
+    {
+      "section": "pharmacology",
+      "card": "Pharmacokinetic profile",
+      "assertions": {
+        "facts": [
+          [
+            "IR absolute bioavailability",
+            "Approximately 75% after a 100 mg oral dose"
+          ],
+          [
+            "IR peak concentrations",
+            "Parent about 2 hours; M1 about 3 hours"
+          ],
+          [
+            "IR mean terminal half-lives",
+            "Parent 6.3 hours; M1 7.4 hours"
+          ],
+          [
+            "Elimination",
+            "Hepatic metabolism; renal excretion of parent and metabolites"
+          ]
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "IR §12.3"
+      },
+      "review": "Reviewed the complete supporting public label sections; original summaries retain product-specific scope."
+    },
+    {
+      "section": "pharmacology",
+      "card": "Formulation and patient variability",
+      "assertions": {
+        "paragraphs": [
+          "M1 formation depends on CYP2D6; CYP3A4 also contributes to metabolism. Kidney or liver impairment can prolong exposure. ER prolongs drug delivery and is not interchangeable dose-for-dose with arbitrary IR schedules; take it with consistent regard to food. Hemodialysis removes little tramadol or M1."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "er"
+      ],
+      "sourceSections": {
+        "label": "§12.3; §2.1; IR §2.3; ER §2.3",
+        "er": "§12.3; §2.1; IR §2.3; ER §2.3"
+      },
+      "review": "Reviewed the complete supporting public label sections; original summaries retain product-specific scope."
+    },
+    {
+      "section": "practice",
+      "card": "Monitoring priorities",
+      "assertions": {
+        "paragraphs": [
+          "Reassess pain and function, sedation and respiration, misuse risk, constipation, interactions, and withdrawal at initiation, titration, conversion, and follow-up. Review kidney/liver status and seizure/mental-health history. Investigate symptomatic hyponatremia, hypoglycemia, adrenal insufficiency, dysphagia, or paradoxically worsening pain."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "er"
+      ],
+      "sourceSections": {
+        "label": "§2.4; §5; §7; §8; §17",
+        "er": "§2.4; §5; §7; §8; §17"
+      },
+      "review": "Reviewed the complete supporting public label sections; original summaries retain product-specific scope."
+    },
+    {
+      "section": "practice",
+      "card": "Patient and caregiver counseling",
+      "assertions": {
+        "paragraphs": [
+          "Do not share medication, add alcohol or sedatives, or drive until effects are known. Keep locked away from children and visitors. Discuss access to naloxone or nalmefene, recognize slow breathing or inability to awaken, and teach caregivers how to use the selected reversal product. Do not alter ER tablets, self-escalate doses, or abruptly stop treatment; use an authorized take-back option and follow the label’s disposal instructions."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "er"
+      ],
+      "sourceSections": {
+        "label": "§2.2; §17; Medication Guide",
+        "er": "§2.2; §17; Medication Guide"
+      },
+      "review": "Reviewed the complete supporting public label sections; original summaries retain product-specific scope."
+    },
+    {
+      "section": "practice",
+      "card": "Overdose",
+      "assertions": {
+        "paragraphs": [
+          "Call emergency services immediately for suspected overdose; administer the available opioid reversal agent as directed while obtaining help. Reversal may not correct every tramadol effect, and seizures may occur; hospital airway support and observation are essential. ER can continue releasing drug for 24–48 hours or longer, so repeated reversal and prolonged monitoring may be needed. Dialysis is not an effective overdose-removal strategy."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "er"
+      ],
+      "sourceSections": {
+        "label": "§10; §17 overdose-reversal counseling",
+        "er": "§10; §17 overdose-reversal counseling"
+      },
+      "review": "Reviewed the complete supporting public label sections; original summaries retain product-specific scope."
+    },
+    {
+      "section": "product",
+      "card": "Representative product",
+      "assertions": {
+        "facts": [
+          [
+            "Selected product",
+            "Tramadol HCl IR 50 mg · Preferred Pharmaceuticals"
+          ],
+          [
+            "Appearance",
+            "White to off-white, film-coated, round"
+          ],
+          [
+            "Imprint",
+            "7 and 2 separated by functional score; reverse plain"
+          ],
+          [
+            "Example NDC",
+            "68788-4114-3 · bottle of 30"
+          ]
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "IR §16"
+      },
+      "review": "Reviewed the complete supporting public label sections; original summaries retain product-specific scope."
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "assertions": {
+        "paragraphs": [
+          "Selected IR product: 50 mg functionally scored tablet. Selected Lupin ER products: 100 mg (L010), 200 mg (L011), and 300 mg (L012), white to off-white coated tablets. Other manufacturers, ER capsules, oral liquids, and tramadol/acetaminophen combinations require their own label review."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "er"
+      ],
+      "sourceSections": {
+        "label": "§16",
+        "er": "§16"
+      },
+      "review": "Reviewed the complete supporting public label sections; original summaries retain product-specific scope."
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "assertions": {
+        "paragraphs": [
+          "IR: 20–25°C, excursions 15–30°C, in a tight container. Selected ER: 25°C, excursions 15–30°C. Store securely and use the product-specific disposal instructions. ER tablets must remain whole; a functional IR score does not authorize breaking an ER product."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "er"
+      ],
+      "sourceSections": {
+        "label": "§16; §2.1; §17",
+        "er": "§16; §2.1; §17"
+      },
+      "review": "Reviewed the complete supporting public label sections; original summaries retain product-specific scope."
+    }
+  ],
+  "materialErrors": [],
+  "unresolvedMaterialGaps": [],
+  "sourceDiscrepancies": [
+    {
+      "issue": "Lupin ER §8.7 renal paragraph contains misplaced Child-Pugh Class C parenthesis.",
+      "resolution": "Used explicit CrCl<30mL/min threshold from §8.7/12.3 for severe renal impairment and reserved Child-Pugh C for severe hepatic impairment in §8.6/12.3.",
+      "material": true,
+      "resolved": true
+    },
+    {
+      "issue": "SPL effective2026-03-05 ER document carries PI revisionNovember2025; IR SPL2026-06-08 carries PI revisionFebruary2026.",
+      "resolution": "Recorded both; latest public selected versions reviewed, not inferred label revision from upload date.",
+      "resolved": true
+    }
+  ],
+  "limitations": [
+    "Public primary labels only; no paid access claimed.",
+    "Appearance,NDC,storage,concentration and administration instructions are selected-product-specific.",
+    "Rendered-page and batch build checks are parent integration responsibilities."
+  ],
+  "reviewedSourceSections": [
+    "Full supporting selected Boxed Warnings and §§1–8,9–10,12,16–17; medication guides",
+    "IR and ER dose initiation,titration,taper,renal/hepatic/age distinctions",
+    "All supporting CYP/serotonergic/CNS interactions; contemporary overdose-reversal and OIED warnings"
+  ],
+  "verification": {
+    "schemaErrors": [],
+    "sectionIds": [
+      "indications",
+      "dosage",
+      "safety",
+      "interactions",
+      "populations",
+      "pharmacology",
+      "practice",
+      "product"
+    ],
+    "heroFacts": 3,
+    "safetyCardOrder": [
+      "Warnings and precautions",
+      "Contraindications",
+      "Boxed warning · opioid and interaction risks",
+      "Adverse reactions"
+    ],
+    "productCardOrder": [
+      "Representative product",
+      "Dosage forms and strengths",
+      "Storage and handling"
+    ],
+    "renderedPageQA": "Pending parent batch integration QA"
+  }
+}

@@ -1,0 +1,550 @@
+{
+  "reviewDate": "2026-10-01",
+  "scope": "Independent targeted safety cross-review. Selected critical assertions are listed; this is not an exhaustive second transcription review, pharmacist sign-off or rendered-page QA.",
+  "status": "ten profiles independently reviewed for selected critical assertions; reported corrections rechecked and structure observations closed; retrieval limitations recorded",
+  "profiles": [
+    {
+      "drug": "atorvastatin",
+      "fileSha256": "0218fc697d8e0c5e19a4f48e2e859f0067f9711159bbbe37ec3cbdb5b6248f02",
+      "result": "No material dose/unit/contraindication error identified in assertions checked.",
+      "checks": [
+        {
+          "assertion": "Adult10–80mg; HeFH10–20mg; HoFH10–80mg at10+; interaction20/40mg limits agree.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a60cc18b-0631-4cf0-b021-9f52224ece65",
+          "sourceSection": "2.1–2.5",
+          "access": "direct-public-source-retrieved",
+          "result": "agrees-except-listed-issues"
+        },
+        {
+          "assertion": "Hepatic contraindications, muscle-risk actions, renal no-adjustment and pregnancy/lactation qualifications agree.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a60cc18b-0631-4cf0-b021-9f52224ece65",
+          "sourceSection": "4,5,7,8",
+          "access": "direct-public-source-retrieved",
+          "result": "agrees-except-listed-issues"
+        },
+        {
+          "assertion": "20mg/5mL; empty-stomach timing and12-hour missed-dose rule agree; shake instruction initially omitted.",
+          "sourceId": "other",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=41fca2d8-7f3f-45b9-8974-81b89accc211",
+          "sourceSection": "2.1 and package label",
+          "access": "direct-public-source-retrieved",
+          "result": "agrees-except-listed-issues"
+        },
+        {
+          "assertion": "Most pregnant patients stop; individualized high-risk exceptions and breastfeeding warning agree.",
+          "sourceId": "pregnancy",
+          "sourceUrl": "https://www.fda.gov/drugs/drug-safety-and-availability/fda-requests-removal-strongest-warning-against-using-cholesterol-lowering-statins-during-pregnancy",
+          "sourceSection": "FDA2021communication",
+          "access": "direct-public-source-retrieved",
+          "result": "agrees-except-listed-issues"
+        }
+      ]
+    },
+    {
+      "drug": "rosuvastatin",
+      "fileSha256": "70d1beb1982f23a6aa626f3666d09e865e906ada5f87daffdb9be7a5c46ce5e8",
+      "result": "No material dose/unit/contraindication error identified in assertions checked.",
+      "checks": [
+        {
+          "assertion": "Adult5–40mg; pediatric HeFH age-specific10/20mg maxima; HoFH20mg; Asian5mg start; severe nondialysis renal5start/10max agree.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=325a5d0e-9a72-4015-9fcd-1655fb504cee",
+          "sourceSection": "2.1–2.6",
+          "access": "direct-public-source-retrieved",
+          "result": "agrees-except-listed-issues"
+        },
+        {
+          "assertion": "Contraindications and myopathy actions agree. Interaction5/10/20mg limits and avoid categories checked; ticagrelor lower-dose caution agrees. Antacid2h-before and warfarin INR monitoring agree.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=325a5d0e-9a72-4015-9fcd-1655fb504cee",
+          "sourceSection": "4,5,7.1–7.2,8",
+          "access": "direct-public-source-retrieved",
+          "result": "agrees-except-listed-issues"
+        },
+        {
+          "assertion": "Capsule opening and tube scope differs from tablets, correctly distinguished.",
+          "sourceId": "other",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=619add8c-3e39-4bb7-8828-450bd82c0404",
+          "sourceSection": "2.7",
+          "access": "direct-public-source-retrieved",
+          "result": "agrees-except-listed-issues"
+        },
+        {
+          "assertion": "Pregnancy cessation exceptions and lactation language agree.",
+          "sourceId": "pregnancy",
+          "sourceUrl": "https://www.fda.gov/drugs/drug-safety-and-availability/fda-requests-removal-strongest-warning-against-using-cholesterol-lowering-statins-during-pregnancy",
+          "sourceSection": "FDA2021communication",
+          "access": "direct-public-source-retrieved",
+          "result": "agrees-except-listed-issues"
+        }
+      ]
+    },
+    {
+      "drug": "levothyroxine",
+      "fileSha256": "a3ef89339f04ee6024f7c732d4519db5fa3002b65bca97ca5308314a27b9390b",
+      "result": "No material dose/unit/contraindication error identified in assertions checked.",
+      "checks": [
+        {
+          "assertion": "Mcg units; adult1.6mcg/kg/day and titration; lower cardiac/older start; all pediatric weight bands; pregnancy thresholds and monitoring agree.",
+          "sourceId": "oral",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1e11ad30-1041-4520-10b0-8f9d30d30fcc",
+          "sourceSection": "2.1–2.4",
+          "access": "direct-public-source-retrieved",
+          "result": "agrees-except-listed-issues"
+        },
+        {
+          "assertion": "Adrenal contraindication, glucocorticoid sequencing, cardiac risk, boxed warning, absorption timing and biotin2day pause agree.",
+          "sourceId": "oral",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1e11ad30-1041-4520-10b0-8f9d30d30fcc",
+          "sourceSection": "4,5,7",
+          "access": "direct-public-source-retrieved",
+          "result": "agrees-except-listed-issues"
+        },
+        {
+          "assertion": "Adult myxedema scope;300–500mcg loading,50–100mcg/day,100mcg/min maximum and no oral conversion agree.",
+          "sourceId": "iv",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=08f4b1f8-6807-47e7-bef8-8d1972aa0557",
+          "sourceSection": "1–5",
+          "access": "direct-public-source-retrieved",
+          "result": "agrees-except-listed-issues"
+        },
+        {
+          "assertion": "Replacement-compatible breastfeeding and possible postpartum increased requirement agree.",
+          "sourceId": "lactation",
+          "sourceUrl": "https://www.ncbi.nlm.nih.gov/sites/books/NBK501003/",
+          "sourceSection": "Summary",
+          "access": "direct-public-source-retrieved",
+          "result": "agrees-except-listed-issues"
+        }
+      ]
+    },
+    {
+      "drug": "metformin",
+      "fileSha256": "8c57e4925f877c1cfa79909a01f573d4b47840408b9fa2432f4736d468cb9ac8",
+      "result": "No material dose/unit/contraindication error identified in assertions checked.",
+      "checks": [
+        {
+          "assertion": "IR2550mg adult/2000mg pediatric maxima; ER2000mg with permitted split trial; age10+IR; eGFR30/45 and contrast30–60/48h rules agree.",
+          "sourceId": "oral",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c3dfa8a1-d10a-4a1a-8eba-5f4e2a5a2949",
+          "sourceSection": "2.1–2.5",
+          "access": "direct-public-source-retrieved",
+          "result": "agrees-except-listed-issues"
+        },
+        {
+          "assertion": "Acidosis/renal contraindications, hepatic avoidance, mitochondrial warning, hypoxic holds, B12 schedule and main interactions agree.",
+          "sourceId": "oral",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c3dfa8a1-d10a-4a1a-8eba-5f4e2a5a2949",
+          "sourceSection": "4,5,7,8",
+          "access": "direct-public-source-retrieved",
+          "result": "agrees-except-listed-issues"
+        },
+        {
+          "assertion": "Low milk exposure and newborn/preterm/renal-infant cautions agree.",
+          "sourceId": "lactation",
+          "sourceUrl": "https://www.ncbi.nlm.nih.gov/sites/books/NBK501020/",
+          "sourceSection": "Summary",
+          "access": "direct-public-source-retrieved",
+          "result": "agrees-except-listed-issues"
+        },
+        {
+          "assertion": "High-risk prevention and drug-induced hyperglycemia guidance agree; correctly off-label.",
+          "sourceId": "prevention",
+          "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12690170/",
+          "sourceSection": "3.7–3.10",
+          "access": "direct-public-source-retrieved",
+          "result": "agrees-except-listed-issues"
+        },
+        {
+          "assertion": "Selected metabolic/cycle uses and2.5g adult/2g adolescent suggested ceiling agree; ER pediatric approval not inferred.",
+          "sourceId": "pcos",
+          "sourceUrl": "https://www.monash.edu/__data/assets/pdf_file/0003/3371133/PCOS-Guideline-Summary-2023.pdf",
+          "sourceSection": "4.3–4.4",
+          "access": "direct-public-source-retrieved",
+          "result": "agrees-except-listed-issues"
+        },
+        {
+          "assertion": "Insulin preferred in pregnancy; metformin crosses placenta and is not first-line: agrees with official indexed recommendations15.17/15.21.",
+          "sourceId": "pregnancy",
+          "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12690181/",
+          "sourceSection": "15.17,15.21",
+          "access": "official-index-excerpt; direct-fulltext-CAPTCHA",
+          "result": "agrees"
+        }
+      ]
+    },
+    {
+      "drug": "albuterol",
+      "fileSha256": "9ba037270e8f704b2710f47fe7aae2b356c3645602a5b0a211afc3da5d5715c3",
+      "result": "No material dose/unit/contraindication error identified in assertions checked.",
+      "checks": [
+        {
+          "assertion": "Age4+,2puffs every4–6h; exercise15–30min;90mcg base/108mcg salt and priming4sprays agree.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d92c5d6b-ff10-4087-36a2-1cfc464cb967",
+          "sourceSection": "1–4",
+          "access": "direct-public-source-retrieved",
+          "result": "agrees-except-listed-issues"
+        },
+        {
+          "assertion": "Paradoxical-bronchospasm action, escalation warning, cardiovascular cautions, major interactions and age/pregnancy qualifications agree.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d92c5d6b-ff10-4087-36a2-1cfc464cb967",
+          "sourceSection": "5,7,8",
+          "access": "direct-public-source-retrieved",
+          "result": "agrees-except-listed-issues"
+        },
+        {
+          "assertion": "Weekly cleaning, one-minute puff interval and020/000 counter actions agree.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d92c5d6b-ff10-4087-36a2-1cfc464cb967",
+          "sourceSection": "Instructions for use",
+          "access": "direct-public-source-retrieved",
+          "result": "agrees-except-listed-issues"
+        },
+        {
+          "assertion": "ICS-containing treatment and preferred adult/adolescent ICS-formoterol context agree; product approval is distinguished.",
+          "sourceId": "gina",
+          "sourceUrl": "https://ginasthma.org/wp-content/uploads/2026/07/GINA-Summary-Guide-2026-WEB-WMS.pdf",
+          "sourceSection": "2026guide pp5,21–28",
+          "access": "direct-public-source-retrieved",
+          "result": "agrees-except-listed-issues"
+        }
+      ],
+      "structureRecheck": {
+        "date": "2026-10-01",
+        "safetyCards": 4,
+        "productCards": 3,
+        "result": "matches-blueprint-card-counts"
+      }
+    },
+    {
+      "drug": "losartan",
+      "fileSha256": "2d088dcaf0d8052b1928505eb183d4cec68d45a2523e1436d3711177899ae9cb",
+      "result": "No material dose/unit/contraindication error identified in assertions checked.",
+      "checks": [
+        {
+          "assertion": "Adult50–100mg; depletion/hepatic25mg starts; pediatric0.7mg/kg up-to50 and studied1.4mg/kg/100mg ceilings agree. Renal and pediatric restrictions agree.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9949448f-c3b9-44ee-94ed-c1aca8c90f39",
+          "sourceSection": "1,2,8.7–8.8",
+          "access": "direct-public-source-retrieved",
+          "result": "agrees-except-listed-issues"
+        },
+        {
+          "assertion": "Fetal stop action, aliskiren contraindication, renal/potassium monitoring and lithium/NSAID/dual-RAS advice agree.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9949448f-c3b9-44ee-94ed-c1aca8c90f39",
+          "sourceSection": "Boxed warning,4,5,7,8",
+          "access": "direct-public-source-retrieved",
+          "result": "agrees-except-listed-issues"
+        },
+        {
+          "assertion": "2.5mg/mL compounded suspension and refrigeration4weeks agree. LVH Black-patient outcome qualification accurately distinguished from hypertension treatment.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9949448f-c3b9-44ee-94ed-c1aca8c90f39",
+          "sourceSection": "2.5,16",
+          "access": "direct-public-source-retrieved",
+          "result": "agrees-except-listed-issues"
+        }
+      ],
+      "structureRecheck": {
+        "date": "2026-10-01",
+        "safetyCards": 4,
+        "productCards": 3,
+        "result": "matches-blueprint-card-counts"
+      }
+    },
+    {
+      "drug": "amlodipine",
+      "fileSha256": "c9c4b12f640c82546ffcc681b9f4a32687c8fee2c6285b1a623502cc711bc1bb",
+      "result": "No material dose/unit/contraindication error identified in assertions checked.",
+      "checks": [
+        {
+          "assertion": "Adult5mg/10max; lower2.5start; pediatric6–17/5mg studied ceiling; CAD outcome limits agree.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7367289c-b0b0-466a-83e2-558e2985c29f",
+          "sourceSection": "1–2",
+          "access": "direct-public-source-retrieved",
+          "result": "agrees-except-listed-issues"
+        },
+        {
+          "assertion": "Hepatic slow titration, renal no-adjustment, angina/hypotension cautions and simvastatin20mg limit agree.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7367289c-b0b0-466a-83e2-558e2985c29f",
+          "sourceSection": "4,5,7,12.3",
+          "access": "direct-public-source-retrieved",
+          "result": "agrees-except-listed-issues"
+        },
+        {
+          "assertion": "1mg/mL suspension handling is differentiated from solution.",
+          "sourceId": "suspension",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=df673a4d-acb8-444c-a472-c87ab8cbd366",
+          "sourceSection": "2,3,16",
+          "access": "direct-public-source-retrieved",
+          "result": "agrees-except-listed-issues"
+        },
+        {
+          "assertion": "1mg/mL and qualified pregnancy uncertainty agree.",
+          "sourceId": "solution",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=614d974f-51c7-4b18-8171-39eb6e8d4c03",
+          "sourceSection": "3,8.1",
+          "access": "direct-public-source-retrieved",
+          "result": "agrees-except-listed-issues"
+        },
+        {
+          "assertion": "Limited evidence/usually low milk levels and required therapy not requiring cessation agree.",
+          "sourceId": "lactation",
+          "sourceUrl": "https://www.ncbi.nlm.nih.gov/sites/books/NBK500665/",
+          "sourceSection": "Summary",
+          "access": "direct-public-source-retrieved",
+          "result": "agrees-except-listed-issues"
+        }
+      ],
+      "structureRecheck": {
+        "date": "2026-10-01",
+        "safetyCards": 4,
+        "productCards": 3,
+        "result": "matches-blueprint-card-counts"
+      }
+    },
+    {
+      "drug": "lisinopril",
+      "fileSha256": "6a27a75f7e359fbd56f90eb57fd2623e792e33f50a30db0aa477d99024f5e788",
+      "result": "No material dose/unit/contraindication error identified in assertions checked.",
+      "checks": [
+        {
+          "assertion": "Adult HTN/HF/MI starts and BP thresholds agree; renal10–30 inclusive halving, below10/dialysis2.5mg; pediatric studied limits agree.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=838c2d78-d2d8-4981-9ec9-e50ef9e1a5d8",
+          "sourceSection": "2.1–2.4",
+          "access": "direct-public-source-retrieved",
+          "result": "agrees-except-listed-issues"
+        },
+        {
+          "assertion": "Fetal stop, angioedema/neprilysin36h and aliskiren restrictions, renal/potassium actions agree.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=838c2d78-d2d8-4981-9ec9-e50ef9e1a5d8",
+          "sourceSection": "4,5,7,8",
+          "access": "direct-public-source-retrieved",
+          "result": "agrees-except-listed-issues"
+        },
+        {
+          "assertion": "New low-transfer five-woman evidence accurately distinguished from older label breastfeeding advice.",
+          "sourceId": "lactation",
+          "sourceUrl": "https://www.ncbi.nlm.nih.gov/sites/books/NBK501006/",
+          "sourceSection": "Summary/Drug Levels",
+          "access": "direct-public-source-retrieved",
+          "result": "agrees-except-listed-issues"
+        },
+        {
+          "assertion": "Selected class-use and monitoring statements checked separately against guideline.",
+          "sourceId": "ckd",
+          "sourceUrl": "https://kdigo.org/wp-content/uploads/2024/03/KDIGO-2024-CKD-Guideline.pdf",
+          "sourceSection": "3.6",
+          "access": "direct-public-source-retrieved",
+          "result": "agrees-except-listed-issues"
+        }
+      ]
+    },
+    {
+      "drug": "metoprolol",
+      "result": "No material dose/unit/contraindication error identified in assertions checked.",
+      "checks": [
+        {
+          "assertion": "IR adult hypertension and angina doses; supervised post-IV MI50mg every6h then100mg twice daily agree.",
+          "sourceId": "ir",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=24837d82-0f3f-4482-9af0-31e5f675c30f",
+          "sourceSection": "2.1–2.3",
+          "access": "direct-public-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "ER adult hypertension, HF12.5/25mg start and200mg ceiling; pediatric6+1mg/kg initial50mg ceiling and studied2mg/kg/200mg limit agree.",
+          "sourceId": "er",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=991fe00b-498b-400e-9e5b-921cb07d9b2c",
+          "sourceSection": "2.1–2.4",
+          "access": "direct-public-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Supervised MI IV three5mg doses about2minutes apart with monitoring; contraindication pulse45/PR0.24/SBP100 thresholds agree.",
+          "sourceId": "iv",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=05946833-9d66-4832-a0d8-b91b1ff01b8b",
+          "sourceSection": "2,4",
+          "access": "direct-public-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Withdrawal1–2weeks, alpha-first pheochromocytoma, bronchospasm/hypoglycemia cautions, CYP2D6 and clonidine sequencing, hepatic-low-start and renal no-adjustment agree.",
+          "sourceId": "er",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=991fe00b-498b-400e-9e5b-921cb07d9b2c",
+          "sourceSection": "5,7,8.6–8.7",
+          "access": "direct-public-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Historical boxed presentation correctly distinguished from newer selected section5.1 presentation.",
+          "sourceId": "boxed",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f2152494-0370-492d-9402-4f1368a277c7",
+          "sourceSection": "Boxed warning",
+          "access": "direct-public-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "AF oral25–100mg twice daily/ER25–200mg daily and IV2.5–5mg/2min three doses agree with explicitly historical off-label toolkit.",
+          "sourceId": "af",
+          "sourceUrl": "https://www.acc.org/~/media/Files/Migration%20Content/Quality%20and%20Clinical%20Trials/AFib%20Toolkit/4_AF_TK_RateRhythmDosingTable_3_7_2013.pdf?la=en",
+          "sourceSection": "Table1",
+          "access": "direct-public-source-retrieved",
+          "result": "agrees"
+        }
+      ],
+      "fileSha256": "e34aedc1156328411993f5de3db090f450c539bfbf7de8e9e1cbb115b73e380d"
+    },
+    {
+      "drug": "omeprazole",
+      "result": "No material dose/unit/contraindication error identified in assertions checked.",
+      "checks": [
+        {
+          "assertion": "Adult ulcer/GERD/EE and hypersecretory doses; labeled clarithromycin combinations and ulcer follow-on durations agree.",
+          "sourceId": "rx",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b6761f84-53ac-4745-a8c8-1e5427d7e179",
+          "sourceSection": "2.1",
+          "access": "direct-public-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Packet pediatric1month+EE-only infant weight bands;1–16year bands and2.5mg/5mL versus10mg/15mL preparation,30minute use and6French tube minimum agree.",
+          "sourceId": "rx",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b6761f84-53ac-4745-a8c8-1e5427d7e179",
+          "sourceSection": "2.2–2.3",
+          "access": "direct-public-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Rilpivirine contraindication; clopidogrel/atazanavir/nelfinavir avoidance; citalopram20mg, cilostazol50mg twice daily;14day diagnostic hold; maintenanceEE hepatic/Asian10mg agree.",
+          "sourceId": "rx",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b6761f84-53ac-4745-a8c8-1e5427d7e179",
+          "sourceSection": "4,7,8.6–8.7",
+          "access": "direct-public-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Capsule pediatric2–16years,10/20kg bands; immediate cool-applesauce pellet administration without crushing agree.",
+          "sourceId": "cap",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=062800b1-790a-41c3-a8be-94143d2c7fb6",
+          "sourceSection": "2.2–2.3,8.4",
+          "access": "author-retained-exact-SPL-XML-independently-read; web-page-inaccessible",
+          "result": "agrees"
+        },
+        {
+          "assertion": "OTC adult18+20mg morning14day course; repeat no more often than4months and alarm exclusions agree.",
+          "sourceId": "otc",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=37291cab-e350-d8e3-e063-6294a90a9cb1",
+          "sourceSection": "Drug Facts",
+          "access": "direct-public-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Current ACG public summary favors14day bismuth quadruple when susceptibility unknown; empiric clarithromycin discouraged; test≥4weeks after antibiotics/holdPPI2weeks agrees.",
+          "sourceId": "hp",
+          "sourceUrl": "https://gi.org/journals-publications/ebgi/schoenfeld_sep2024/",
+          "sourceSection": "Recommendations/Key concepts",
+          "access": "direct-public-source-retrieved",
+          "result": "agrees"
+        }
+      ],
+      "fileSha256": "0c1d40d376e8789cfa2f6e082f97e80cd410fc8aba53fbee145f6a56440f4352"
+    }
+  ],
+  "issues": [
+    {
+      "drug": "atorvastatin",
+      "severity": "safety-relevant-administration-omission",
+      "card": "dosage / Other oral formulation",
+      "claim": "Atorvaliq instructions omit resuspension.",
+      "sourceSection": "PRINCIPAL DISPLAY PANEL",
+      "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=41fca2d8-7f3f-45b9-8974-81b89accc211",
+      "recommendation": "Add shake well before use; author/root notified.",
+      "status": "resolved-author-change-independently-rechecked",
+      "recheckDate": "2026-10-01",
+      "resolution": "Current source line136 explicitly instructs Shake well before each use."
+    },
+    {
+      "drug": "albuterol",
+      "severity": "blueprint-structure",
+      "card": "Safety",
+      "recommendation": "Separate third Boxed warning/status card required.",
+      "status": "resolved-author-change-independently-rechecked",
+      "recheckDate": "2026-10-01",
+      "resolution": "Current Safety has4cards in blueprint order; Product has3cards. Additional overdose content merged into existing card."
+    },
+    {
+      "drug": "losartan",
+      "severity": "blueprint-structure",
+      "card": "Safety",
+      "recommendation": "Separate third Boxed warning card required; warning currently in first card.",
+      "status": "resolved-author-change-independently-rechecked",
+      "recheckDate": "2026-10-01",
+      "resolution": "Current Safety has4cards in blueprint order; Product has3cards. Additional overdose content merged into existing card."
+    },
+    {
+      "drug": "albuterol",
+      "severity": "blueprint-structure",
+      "card": "Safety",
+      "status": "resolved-author-change-independently-rechecked",
+      "recommendation": "APAP has exactly four Safety cards: warnings, contraindications, boxed warning/status, adverse reactions.",
+      "observedCardTitles": [
+        "Warnings and precautions",
+        "Contraindications",
+        "Boxed warning status · Ventolin HFA",
+        "Adverse reactions",
+        "Suspected overdose"
+      ],
+      "resolution": "Current Safety has4cards in blueprint order; Product has3cards. Additional overdose content merged into existing card."
+    },
+    {
+      "drug": "losartan",
+      "severity": "blueprint-structure",
+      "card": "Safety",
+      "status": "resolved-author-change-independently-rechecked",
+      "recommendation": "APAP has exactly four Safety cards: warnings, contraindications, boxed warning/status, adverse reactions.",
+      "observedCardTitles": [
+        "Warnings and precautions",
+        "Contraindications",
+        "Boxed warning · Fetal toxicity",
+        "Adverse reactions",
+        "Suspected overdose"
+      ],
+      "resolution": "Current Safety has4cards in blueprint order; Product has3cards. Additional overdose content merged into existing card."
+    }
+  ],
+  "limitations": [
+    {
+      "drug": "metformin",
+      "source": "pregnancy",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12690181/",
+      "access": "Full text CAPTCHA; official primary-source search excerpt supports15.17/15.21; does not equal full-source retrieval."
+    },
+    {
+      "drug": "omeprazole",
+      "source": "cap",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=062800b1-790a-41c3-a8be-94143d2c7fb6",
+      "access": "Web page repeated internal errors. Independently read author-retained full XML; verified matching setId and effective20260801.",
+      "evidencePath": "/tmp/nas-drug-sources/omeprazole-capsule.xml",
+      "evidenceSha256": "cca8451bb64432543c5cd31e0f07173ab83a7c80709bdd96396d8a10a28907ba"
+    }
+  ],
+  "pending": [],
+  "productionFilesEdited": false,
+  "labelDateObservations": [
+    {
+      "drug": "metoprolol",
+      "source": "iv",
+      "observation": "Current source internally differs: updated/effectiveMarch17; highlightsRevised7/2026; bottomRevised03/2026; archivePublishedJuly23. Version1/effectiveMarch17 cited correctly; no newer version asserted."
+    }
+  ]
+}

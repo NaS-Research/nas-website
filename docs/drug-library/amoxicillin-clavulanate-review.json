@@ -1,0 +1,983 @@
+{
+  "slug": "amoxicillin-clavulanate",
+  "checked": "2026-10-01",
+  "status": "source_reviewed",
+  "review_scope": "A product-specific oral antibacterial reference separating immediate-release ratios, pediatric ES-600 and extended-release XR. All eight blueprint sections reviewed. Product-specific focused monograph; not an exhaustive adverse-event catalog.",
+  "sources": [
+    {
+      "id": "ir",
+      "title": "Amoxicillin and clavulanate potassium · Immediate-release tablets/suspension",
+      "publisher": "DailyMed / Sandoz",
+      "note": "SPL version 27, effective 20250501; current public product labeling.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7cba82f0-9886-46e9-8dbd-43a448aade29",
+      "checked": "2026-10-01",
+      "version": "SPL version 27, effective 20250501; current public product labeling.",
+      "spl_version": "27",
+      "spl_effective_time": "20250501",
+      "xml_url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/7cba82f0-9886-46e9-8dbd-43a448aade29.xml",
+      "downloaded_xml_sha256": "e2cea366b52a86a0faf69f7742dd52839ae4249128e2798522c223fb8de693c1"
+    },
+    {
+      "id": "chew",
+      "title": "Amoxicillin and clavulanate potassium · Tablets, suspension and chewable tablets",
+      "publisher": "DailyMed / Chartwell RX",
+      "note": "SPL version 4, effective 20260911; current public product labeling.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f10634cb-6505-43f1-9b70-314c58673016",
+      "checked": "2026-10-01",
+      "version": "SPL version 4, effective 20260911; current public product labeling.",
+      "spl_version": "4",
+      "spl_effective_time": "20260911",
+      "xml_url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/f10634cb-6505-43f1-9b70-314c58673016.xml",
+      "downloaded_xml_sha256": "b25a5329950d5e67e9f752033c0bc1b55d605bf5f4db90fdd6dd0266c7707c7e"
+    },
+    {
+      "id": "es",
+      "title": "Augmentin ES-600 · Oral suspension",
+      "publisher": "DailyMed / US Antibiotics",
+      "note": "SPL version 6, effective 20260707; current public product labeling.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=59979859-8c9b-4173-a5e3-2e6312fd9d79",
+      "checked": "2026-10-01",
+      "version": "SPL version 6, effective 20260707; current public product labeling.",
+      "spl_version": "6",
+      "spl_effective_time": "20260707",
+      "xml_url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/59979859-8c9b-4173-a5e3-2e6312fd9d79.xml",
+      "downloaded_xml_sha256": "d2eb247ea6e4490488d8bb76cd7dff9f421be74730d3f90924d59204a59318fd"
+    },
+    {
+      "id": "xr",
+      "title": "Amoxicillin and clavulanate potassium extended-release · Augmentin XR authorized generic",
+      "publisher": "DailyMed / US Antibiotics",
+      "note": "SPL version 2, effective 20260707; current public product labeling.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=45c60b69-1b65-01ed-e063-6294a90a57be",
+      "checked": "2026-10-01",
+      "version": "SPL version 2, effective 20260707; current public product labeling.",
+      "spl_version": "2",
+      "spl_effective_time": "20260707",
+      "xml_url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/45c60b69-1b65-01ed-e063-6294a90a57be.xml",
+      "downloaded_xml_sha256": "e9f13b5b917a99437d6e7594ce35ec4ba3afd8abd9a7c1c31aeeee04320fb99f"
+    },
+    {
+      "id": "steward",
+      "title": "Adult outpatient antibiotic prescribing recommendations",
+      "publisher": "Centers for Disease Control and Prevention",
+      "url": "https://www.cdc.gov/antibiotic-use/hcp/clinical-care/adult-outpatient.html",
+      "note": "April 16, 2024; bacterial rhinosinusitis, bronchitis and pharyngitis.",
+      "checked": "2026-10-01",
+      "version": "April 16, 2024; bacterial rhinosinusitis, bronchitis and pharyngitis."
+    },
+    {
+      "id": "mec",
+      "title": "U.S. MEC 2024 · Combined hormonal contraceptives",
+      "publisher": "Centers for Disease Control and Prevention",
+      "url": "https://www.cdc.gov/contraception/hcp/usmec/combined-hormonal-contraceptives.html",
+      "note": "November 19, 2024; antimicrobial interactions, Table D1.",
+      "checked": "2026-10-01",
+      "version": "November 19, 2024; antimicrobial interactions, Table D1."
+    }
+  ],
+  "assertion_to_source": [
+    {
+      "section_id": "indications",
+      "card_title": "Immediate-release indications",
+      "assertions": [
+        "IR labeling includes susceptible bacterial lower respiratory infection, acute otitis media, sinusitis, skin/skin-structure infection and urinary tract infection, with organism-specific beta-lactamase criteria. If susceptibility shows amoxicillin alone is appropriate without beta-lactamase production, the combination should not be used. Cultures, local resistance, site and severity guide treatment."
+      ],
+      "support": [
+        {
+          "source_id": "ir",
+          "sections": [
+            "1",
+            "12.4"
+          ]
+        },
+        {
+          "source_id": "chew",
+          "sections": [
+            "1",
+            "12.4"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "indications",
+      "card_title": "ES-600 and XR indications",
+      "assertions": [
+        "ES-600 is labeled for recurrent/persistent acute otitis media in children 3 months–12 years weighing ≤40 kg, with antibiotic treatment for otitis in the preceding 3 months plus age ≤2 years or daycare attendance. Target organisms include S. pneumoniae with penicillin MIC ≤2 mcg/mL and beta-lactamase-producing H. influenzae/M. catarrhalis; MIC ≥4 is outside the indication. XR is labeled for community-acquired pneumonia and acute bacterial sinusitis with its specified susceptible pathogens, including selected reduced-penicillin-susceptibility pneumococci. Do not transfer IR urinary/skin indications to XR or make ES a universal pediatric substitute."
+      ],
+      "support": [
+        {
+          "source_id": "es",
+          "sections": [
+            "1"
+          ]
+        },
+        {
+          "source_id": "xr",
+          "sections": [
+            "1",
+            "12.4"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "indications",
+      "card_title": "Stewardship and current practice",
+      "assertions": [
+        "CDC advises diagnosing bacterial rather than viral rhinosinusitis and permits watchful waiting in uncomplicated cases with reliable follow-up. Amoxicillin or amoxicillin–clavulanate can be first-line when treatment is appropriate; routine antibiotics are not recommended for uncomplicated acute bronchitis or a cold. This profile supplies product-label regimens, not one duration for every infection."
+      ],
+      "support": [
+        {
+          "source_id": "steward",
+          "sections": [
+            "Rhinosinusitis",
+            "Acute bronchitis",
+            "Common cold"
+          ]
+        },
+        {
+          "source_id": "ir",
+          "sections": [
+            "1",
+            "5.9"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "dosage",
+      "card_title": "Adult and ≥40-kg IR regimens",
+      "assertions": [
+        "Give at the start of a meal to improve clavulanate absorption and reduce gastrointestinal intolerance. Renal restrictions can override these schedules.",
+        "More severe or respiratory infection | 875/125 mg every 12 hours OR 500/125 mg every 8 hours.",
+        "Less severe infection | 500/125 mg every 12 hours OR 250/125 mg every 8 hours."
+      ],
+      "support": [
+        {
+          "source_id": "ir",
+          "sections": [
+            "2.1",
+            "2.2",
+            "2.3"
+          ]
+        },
+        {
+          "source_id": "chew",
+          "sections": [
+            "2.1–2.3"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "dosage",
+      "card_title": "Pediatric IR regimens",
+      "assertions": [
+        "Under 12 weeks: 30 mg/kg/DAY in 2 doses using 125/31.25 mg per 5 mL suspension; experience with 200/28.5 in this age group is limited. At ≥12 weeks and <40 kg, the table uses product-specific ratios. The every-12-hour regimen produces less diarrhea in label studies. Selected 200/400 suspensions and chewables contain aspartame; avoid those labeled products in phenylketonuria. At ≥40 kg use adult recommendations.",
+        "More severe, otitis/sinusitis/LRTI · 200/28.5 or 400/57 per 5 mL | 45 mg/kg/DAY divided every 12 hours; approximately 6.4 mg/kg/DAY clavulanate.",
+        "Less severe · same 7:1 products | 25 mg/kg/DAY divided every 12 hours; approximately 3.6 mg/kg/DAY clavulanate.",
+        "More severe · 125/31.25 or 250/62.5 per 5 mL | 40 mg/kg/DAY divided every 8 hours; 10 mg/kg/DAY clavulanate.",
+        "Less severe · same 4:1 products | 20 mg/kg/DAY divided every 8 hours; 5 mg/kg/DAY clavulanate."
+      ],
+      "support": [
+        {
+          "source_id": "ir",
+          "sections": [
+            "2.3"
+          ]
+        },
+        {
+          "source_id": "chew",
+          "sections": [
+            "2.3",
+            "5.8"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "dosage",
+      "card_title": "ES-600 regimen",
+      "assertions": [
+        "For its labeled otitis population (3 months–12 years, ≤40 kg), give 90 mg/kg/DAY amoxicillin divided every 12 hours for 10 days using 600/42.9 mg per 5 mL. This supplies about 6.4 mg/kg/DAY clavulanate. Give at the start of a meal; shake and measure with an oral dosing device. ES-600 has no established adult regimen and should not replace an adult 500/125 or 875/125 tablet merely because swallowing is difficult."
+      ],
+      "support": [
+        {
+          "source_id": "es",
+          "sections": [
+            "2.1–2.3",
+            "17"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "dosage",
+      "card_title": "XR regimen",
+      "assertions": [
+        "Adults and pediatric patients ≥40 kg who can swallow tablets: two 1000/62.5-mg XR tablets every 12 hours (4000/250 mg daily). Label duration is 10 days for acute bacterial sinusitis and 7–10 days for community-acquired pneumonia; current disease guidance and clinical course still inform prescribing. Take at the start of a meal; avoid a high-fat meal because clavulanate absorption falls. A scored tablet may be split for swallowing, but take both halves immediately—splitting does not authorize half a prescribed dose."
+      ],
+      "support": [
+        {
+          "source_id": "xr",
+          "sections": [
+            "2.1–2.3"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "dosage",
+      "card_title": "Substitution and renal dosing",
+      "assertions": [
+        "Two IR 250/125 tablets do not equal one 500/125 tablet: clavulanate doubles. A 250/125 IR tablet is not a 250/62.5 chewable and must not be used in children <40 kg. ES-600 has a different ratio from 200/28.5 or 400/57 suspension; XR cannot be replaced by IR tablets solely by matching amoxicillin milligrams. IR GFR <30 mL/min: do not use 875/125. GFR 10–30: 250/125 or 500/125 every 12 hours according to severity; <10: every 24 hours. Hemodialysis: the same strength choice every 24 hours plus an additional dose during and at the end of dialysis. XR is contraindicated at CrCl <30 mL/min or in hemodialysis. No ES-specific renal schedule or universal pediatric renal algorithm is provided by these labels."
+      ],
+      "support": [
+        {
+          "source_id": "ir",
+          "sections": [
+            "2.4",
+            "2.6"
+          ]
+        },
+        {
+          "source_id": "chew",
+          "sections": [
+            "2.4",
+            "2.6"
+          ]
+        },
+        {
+          "source_id": "es",
+          "sections": [
+            "2.6"
+          ]
+        },
+        {
+          "source_id": "xr",
+          "sections": [
+            "2.5",
+            "4.3",
+            "8.6"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "safety",
+      "card_title": "Warnings and precautions",
+      "assertions": [
+        "Stop treatment and arrange urgent care for anaphylaxis, progressive/blistering rash or suspected severe skin reactions. Drug-induced enterocolitis may cause prolonged vomiting 1–4 hours after a dose without skin or respiratory signs, sometimes with pallor, hypotension or shock; stop and treat promptly. Hepatitis/cholestatic injury can develop during treatment or after it ends; monitor hepatic impairment and evaluate jaundice. C. difficile diarrhea can emerge even more than 2 months later. Avoid use in mononucleosis because of rash risk. Review superinfection and product-specific phenylalanine in susceptible patients."
+      ],
+      "support": [
+        {
+          "source_id": "ir",
+          "sections": [
+            "4",
+            "5",
+            "6",
+            "8",
+            "10",
+            "17"
+          ]
+        },
+        {
+          "source_id": "chew",
+          "sections": [
+            "4",
+            "5",
+            "6",
+            "8",
+            "10",
+            "17"
+          ]
+        },
+        {
+          "source_id": "es",
+          "sections": [
+            "4",
+            "5",
+            "6",
+            "8",
+            "10",
+            "17"
+          ]
+        },
+        {
+          "source_id": "xr",
+          "sections": [
+            "4",
+            "5",
+            "6",
+            "8",
+            "10",
+            "17"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "safety",
+      "card_title": "Contraindications",
+      "assertions": [
+        "Do not use after a serious hypersensitivity reaction to this product or another beta-lactam, or after cholestatic jaundice/hepatic dysfunction previously associated with amoxicillin–clavulanate. XR additionally contraindicates CrCl <30 mL/min and hemodialysis. Existing liver impairment without that prior drug-associated injury is a caution requiring monitoring, not automatically the same contraindication."
+      ],
+      "support": [
+        {
+          "source_id": "ir",
+          "sections": [
+            "4",
+            "5.4"
+          ]
+        },
+        {
+          "source_id": "chew",
+          "sections": [
+            "4",
+            "5.4"
+          ]
+        },
+        {
+          "source_id": "es",
+          "sections": [
+            "4",
+            "2.4"
+          ]
+        },
+        {
+          "source_id": "xr",
+          "sections": [
+            "4",
+            "2.4"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "safety",
+      "card_title": "Boxed warning status",
+      "assertions": [
+        "These selected U.S. labels have no boxed warning. Serious allergy, severe skin reactions, hepatic toxicity, enterocolitis and antibiotic-associated colitis still require explicit counseling and action."
+      ],
+      "support": [
+        {
+          "source_id": "ir",
+          "sections": [
+            "Highlights / 5"
+          ]
+        },
+        {
+          "source_id": "chew",
+          "sections": [
+            "Highlights / 5"
+          ]
+        },
+        {
+          "source_id": "es",
+          "sections": [
+            "Highlights / 5"
+          ]
+        },
+        {
+          "source_id": "xr",
+          "sections": [
+            "Highlights / 5"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "safety",
+      "card_title": "Adverse reactions and overdose",
+      "assertions": [
+        "Diarrhea, nausea/vomiting, rash and candidal overgrowth are common or recognized reactions; rates depend on formulation and studied population. Rare serious reports include hepatic injury, blood-cell abnormalities, interstitial nephritis and seizures. Excess exposure can cause crystalluria or renal injury, especially with renal impairment. Suspected overdose requires stopping further doses and supportive assessment, including hydration/renal evaluation as appropriate; amoxicillin/clavulanate can be removed by hemodialysis."
+      ],
+      "support": [
+        {
+          "source_id": "ir",
+          "sections": [
+            "6",
+            "10"
+          ]
+        },
+        {
+          "source_id": "chew",
+          "sections": [
+            "6",
+            "10"
+          ]
+        },
+        {
+          "source_id": "es",
+          "sections": [
+            "6",
+            "10"
+          ]
+        },
+        {
+          "source_id": "xr",
+          "sections": [
+            "6",
+            "10"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "interactions",
+      "card_title": "Medicines requiring review",
+      "assertions": [
+        "Probenecid reduces renal secretion of amoxicillin and prolongs exposure; coadministration is not recommended. Oral anticoagulants can be associated with increased INR/prothrombin time: monitor and adjust anticoagulation as needed. Allopurinol increases amoxicillin-associated rash frequency; review rather than misclassifying every rash as a predictable severe allergy."
+      ],
+      "support": [
+        {
+          "source_id": "ir",
+          "sections": [
+            "7.1–7.3"
+          ]
+        },
+        {
+          "source_id": "chew",
+          "sections": [
+            "7.1–7.3"
+          ]
+        },
+        {
+          "source_id": "es",
+          "sections": [
+            "7.1–7.3"
+          ]
+        },
+        {
+          "source_id": "xr",
+          "sections": [
+            "7.1–7.3"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "interactions",
+      "card_title": "Contraception and laboratory tests",
+      "assertions": [
+        "Labels warn of possibly reduced combined oral-contraceptive efficacy through altered flora. CDC U.S. MEC 2024 classifies broad-spectrum antibiotics as category 1 for combined hormonal contraception: most do not reduce effectiveness. Do not assert routine failure or obligatory backup solely from this antibiotic; vomiting/diarrhea needs contraceptive-specific advice. Amoxicillin can give false-positive urine-glucose results with copper-reduction tests; use an enzymatic glucose-oxidase method. It can also transiently alter measured pregnancy estrogen metabolites."
+      ],
+      "support": [
+        {
+          "source_id": "ir",
+          "sections": [
+            "7.4",
+            "7.5"
+          ]
+        },
+        {
+          "source_id": "chew",
+          "sections": [
+            "7.4",
+            "7.5"
+          ]
+        },
+        {
+          "source_id": "es",
+          "sections": [
+            "7.4",
+            "7.5"
+          ]
+        },
+        {
+          "source_id": "xr",
+          "sections": [
+            "7.4",
+            "7.5"
+          ]
+        },
+        {
+          "source_id": "mec",
+          "sections": [
+            "Table D1 / Antimicrobial therapy"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "populations",
+      "card_title": "Pregnancy and breastfeeding",
+      "assertions": [
+        "Current ES/XR labels report that decades of data have not established increased major-birth-defect, miscarriage or maternal risk; this does not prove absence of risk. They note increased neonatal necrotizing enterocolitis with prophylactic amoxicillin–clavulanate in a preterm prelabor-rupture-of-membranes study, so this is not an automatic obstetric prophylaxis choice. IR labels use older “only if clearly needed” pregnancy wording. Amoxicillin enters milk; monitor exposed infants for diarrhea, rash or irritability and balance feeding benefits and maternal need. ES labeling’s general pregnancy/lactation data do not establish an adult ES dose."
+      ],
+      "support": [
+        {
+          "source_id": "ir",
+          "sections": [
+            "8.1",
+            "8.3"
+          ]
+        },
+        {
+          "source_id": "chew",
+          "sections": [
+            "8.1",
+            "8.3"
+          ]
+        },
+        {
+          "source_id": "es",
+          "sections": [
+            "8.1",
+            "8.2"
+          ]
+        },
+        {
+          "source_id": "xr",
+          "sections": [
+            "8.1",
+            "8.2"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "populations",
+      "card_title": "Pediatric and geriatric use",
+      "assertions": [
+        "IR neonate/infant dosing differs because amoxicillin renal elimination is immature. ES efficacy/safety is established for its 3-month–12-year, ≤40-kg indication, not infants younger than 3 months or a general adult population. XR use requires ≥40 kg and ability to swallow tablets. Older adults may have impaired renal function even without an age-specific dose reduction; assess renal clearance and choose formulation/dose accordingly."
+      ],
+      "support": [
+        {
+          "source_id": "ir",
+          "sections": [
+            "2.3",
+            "8.4",
+            "8.5"
+          ]
+        },
+        {
+          "source_id": "chew",
+          "sections": [
+            "2.3",
+            "8.4",
+            "8.5"
+          ]
+        },
+        {
+          "source_id": "es",
+          "sections": [
+            "1",
+            "8.4"
+          ]
+        },
+        {
+          "source_id": "xr",
+          "sections": [
+            "2.3",
+            "8.4",
+            "8.5"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "populations",
+      "card_title": "Renal and hepatic impairment",
+      "assertions": [
+        "Amoxicillin is primarily eliminated renally. Use the IR severe-renal schedules, avoid 875/125 below GFR 30, and do not use XR with CrCl <30 or hemodialysis. ES has no established label-specific renal adjustment schedule to extrapolate. Use caution and regularly monitor hepatic function in liver impairment; any prior amoxicillin–clavulanate-associated cholestatic injury remains a contraindication."
+      ],
+      "support": [
+        {
+          "source_id": "ir",
+          "sections": [
+            "2.4",
+            "4.2",
+            "5.4",
+            "8.6"
+          ]
+        },
+        {
+          "source_id": "chew",
+          "sections": [
+            "2.4",
+            "4.2",
+            "5.4",
+            "8.6"
+          ]
+        },
+        {
+          "source_id": "es",
+          "sections": [
+            "2.4",
+            "4.2"
+          ]
+        },
+        {
+          "source_id": "xr",
+          "sections": [
+            "2.4",
+            "4.2",
+            "4.3",
+            "8.6",
+            "8.7"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "pharmacology",
+      "card_title": "Mechanism and spectrum",
+      "assertions": [
+        "Amoxicillin is a bactericidal beta-lactam that inhibits bacterial cell-wall synthesis. Clavulanate inhibits selected beta-lactamases, protecting amoxicillin against some enzymatic resistance. Other resistance mechanisms can remain; use pathogen/site-specific susceptibility and current guidance rather than claiming universal coverage."
+      ],
+      "support": [
+        {
+          "source_id": "ir",
+          "sections": [
+            "12.1",
+            "12.4"
+          ]
+        },
+        {
+          "source_id": "chew",
+          "sections": [
+            "12.1",
+            "12.4"
+          ]
+        },
+        {
+          "source_id": "es",
+          "sections": [
+            "12.1",
+            "12.4"
+          ]
+        },
+        {
+          "source_id": "xr",
+          "sections": [
+            "12.1",
+            "12.4"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "pharmacology",
+      "card_title": "Disposition and formulation effects",
+      "assertions": [
+        "Both components are absorbed orally and weakly protein bound; amoxicillin is primarily renal, while clavulanate has renal and nonrenal elimination. Conventional IR half-lives are about 1.3 hours for amoxicillin and 1 hour for clavulanate. Meal timing supports clavulanate exposure. XR prolongs amoxicillin exposure and ES changes the component ratio; matching a daily amoxicillin total alone does not preserve the same pharmacokinetics or clavulanate dose."
+      ],
+      "support": [
+        {
+          "source_id": "ir",
+          "sections": [
+            "12.3"
+          ]
+        },
+        {
+          "source_id": "chew",
+          "sections": [
+            "12.3"
+          ]
+        },
+        {
+          "source_id": "es",
+          "sections": [
+            "11",
+            "12.3"
+          ]
+        },
+        {
+          "source_id": "xr",
+          "sections": [
+            "2.5",
+            "11",
+            "12.3"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "practice",
+      "card_title": "Monitoring",
+      "assertions": [
+        "Before prescribing, review bacterial indication, allergy history, previous drug-related jaundice, age/weight, renal function and interacting drugs. Use cultures/local susceptibility where relevant and revise treatment when results arrive. Follow response, diarrhea/rash, hydration and signs of liver injury; monitor hepatic impairment regularly and INR with oral anticoagulants. Prolonged or complicated treatment may require reassessment of blood counts and organ function."
+      ],
+      "support": [
+        {
+          "source_id": "ir",
+          "sections": [
+            "1",
+            "2",
+            "4",
+            "5",
+            "6",
+            "7.2",
+            "8"
+          ]
+        },
+        {
+          "source_id": "chew",
+          "sections": [
+            "1",
+            "2",
+            "4",
+            "5",
+            "6",
+            "7.2",
+            "8"
+          ]
+        },
+        {
+          "source_id": "es",
+          "sections": [
+            "1",
+            "2",
+            "4",
+            "5",
+            "6",
+            "7.2",
+            "8"
+          ]
+        },
+        {
+          "source_id": "xr",
+          "sections": [
+            "1",
+            "2",
+            "4",
+            "5",
+            "6",
+            "7.2",
+            "8"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "practice",
+      "card_title": "Patient counseling",
+      "assertions": [
+        "Take at the start of the prescribed meal, with the additional XR meal restriction. Shake liquid and use a calibrated oral device; the pharmacist should reconstitute the correct strength. Follow the prescribed indication-specific duration, do not share or save leftovers, and contact the prescriber for worsening illness. Seek urgent care for breathing difficulty, severe rash, prolonged vomiting, jaundice or severe/watery/bloody diarrhea. Do not substitute tablets, chewables, ES or XR by comparing the first strength number."
+      ],
+      "support": [
+        {
+          "source_id": "ir",
+          "sections": [
+            "2",
+            "5",
+            "17"
+          ]
+        },
+        {
+          "source_id": "chew",
+          "sections": [
+            "2",
+            "5",
+            "17"
+          ]
+        },
+        {
+          "source_id": "es",
+          "sections": [
+            "2",
+            "5",
+            "17"
+          ]
+        },
+        {
+          "source_id": "xr",
+          "sections": [
+            "2",
+            "5",
+            "17"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "product",
+      "card_title": "Representative products",
+      "assertions": [
+        "Sandoz IR 875/125 mg is a white capsule-shaped scored GGN7 tablet; NDC 0781-1852-20 is a 20-tablet bottle. Chartwell’s 400/57-mg chewable is mottled pink, oval and unscored with 93/2272; NDC 62135-105-20 is a 20-tablet bottle. ES-600 is strawberry-cream powder, 600/42.9 mg per 5 mL after preparation; NDC 81964-003-69 supplies 125 mL. Selected XR is a white oval scored bilayer “AUGMENTIN XR” tablet; NDC 81964-220-28 supplies 28. Manufacturer-specific appearance does not identify every generic."
+      ],
+      "support": [
+        {
+          "source_id": "ir",
+          "sections": [
+            "16"
+          ]
+        },
+        {
+          "source_id": "chew",
+          "sections": [
+            "16"
+          ]
+        },
+        {
+          "source_id": "es",
+          "sections": [
+            "16"
+          ]
+        },
+        {
+          "source_id": "xr",
+          "sections": [
+            "16"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "product",
+      "card_title": "Dosage forms and strengths",
+      "assertions": [
+        "Selected IR tablets: 250/125, 500/125 and 875/125 mg; selected suspensions: 200/28.5 and 400/57 mg per 5 mL; selected Chartwell chewables: 200/28.5 and 400/57 mg. The IR dosing sections also specify 125/31.25 and 250/62.5 suspensions and distinguish 250/62.5 chewable from the 250/125 tablet; verify the separate dispensed label rather than assuming these legacy ratio products are supplied by the representative packages. ES: 600/42.9 per 5 mL; XR: 1000/62.5 per tablet. Pediatric prescriptions use the amoxicillin component, while formulation choice determines clavulanate exposure."
+      ],
+      "support": [
+        {
+          "source_id": "ir",
+          "sections": [
+            "2.3",
+            "2.6",
+            "3",
+            "16"
+          ]
+        },
+        {
+          "source_id": "chew",
+          "sections": [
+            "2.6",
+            "3",
+            "16"
+          ]
+        },
+        {
+          "source_id": "es",
+          "sections": [
+            "3",
+            "16"
+          ]
+        },
+        {
+          "source_id": "xr",
+          "sections": [
+            "3",
+            "16"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "product",
+      "card_title": "Storage and handling",
+      "assertions": [
+        "Sandoz/Chartwell IR tablets, chewables and dry suspension: 20–25°C; preserve the labeled original or tight/light-resistant dispensing container. ES dry powder and XR: at or below 25°C, in original containers. Reconstituted IR/ES suspension is refrigerated, shaken before each dose and discarded after 10 days. Storage life is not a directive to prescribe a 10-day course for every infection."
+      ],
+      "support": [
+        {
+          "source_id": "ir",
+          "sections": [
+            "2.5",
+            "16"
+          ]
+        },
+        {
+          "source_id": "chew",
+          "sections": [
+            "2.5",
+            "16"
+          ]
+        },
+        {
+          "source_id": "es",
+          "sections": [
+            "2.5",
+            "16"
+          ]
+        },
+        {
+          "source_id": "xr",
+          "sections": [
+            "16"
+          ]
+        }
+      ]
+    }
+  ],
+  "material_errors": [],
+  "gaps": [],
+  "limitations": [
+    "IV/non-U.S. products and unreviewed generic excipients are outside scope; check the actual package before substitution.",
+    "IR 4:1 liquid/chewable ratios are verified in the selected IR dosing/substitution sections; their current package identity is not asserted as one of the representative products.",
+    "ES-600 has no established adult regimen or product-specific renal schedule; no extrapolated regimen is supplied.",
+    "Label course durations are explicitly tied to indications; current disease guidance may differ. No universal antibiotic course or automatic broader-spectrum preference is recommended."
+  ],
+  "regulatory_records": [
+    {
+      "product": "amcl-ir",
+      "source": "Current SPL marketing metadata; not an inference that all historical packages remain commercially available",
+      "applications": [
+        {
+          "application_number": "ANDA065189",
+          "marketing_category": "ANDA"
+        },
+        {
+          "application_number": "ANDA065064",
+          "marketing_category": "ANDA"
+        },
+        {
+          "application_number": "ANDA065063",
+          "marketing_category": "ANDA"
+        },
+        {
+          "application_number": "ANDA065066",
+          "marketing_category": "ANDA"
+        }
+      ]
+    },
+    {
+      "product": "amcl-chew",
+      "source": "Current SPL marketing metadata; not an inference that all historical packages remain commercially available",
+      "applications": [
+        {
+          "application_number": "ANDA065101",
+          "marketing_category": "ANDA"
+        },
+        {
+          "application_number": "ANDA065096",
+          "marketing_category": "ANDA"
+        },
+        {
+          "application_number": "ANDA065089",
+          "marketing_category": "ANDA"
+        },
+        {
+          "application_number": "ANDA065205",
+          "marketing_category": "ANDA"
+        }
+      ]
+    },
+    {
+      "product": "amcl-es",
+      "source": "Current SPL marketing metadata; not an inference that all historical packages remain commercially available",
+      "applications": [
+        {
+          "application_number": "NDA050755",
+          "marketing_category": "NDA"
+        }
+      ]
+    },
+    {
+      "product": "amcl-xr",
+      "source": "Current SPL marketing metadata; not an inference that all historical packages remain commercially available",
+      "applications": [
+        {
+          "application_number": "NDA050785",
+          "marketing_category": "NDA authorized generic"
+        }
+      ]
+    }
+  ],
+  "source_discrepancies": [
+    "Older product-label contraceptive warnings are reconciled with current public CDC U.S. MEC 2024 broad-spectrum-antibiotic category 1 evidence.",
+    "Older IR pregnancy/lactation wording is distinguished from current ES/XR human-data summaries and PPROM safety signal; no adult ES regimen is inferred."
+  ]
+}

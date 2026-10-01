@@ -1,0 +1,855 @@
+{
+  "drug": "fluticasone-salmeterol",
+  "checked": "2026-10-01",
+  "status": "source_reviewed",
+  "review_scope": "Four selected current U.S. fluticasone propionate/salmeterol device labels; focused GINA 2026 adult/adolescent maintenance/reliever and step-down guidance; FDA 2017 combination-box regulatory history.",
+  "sources": [
+    {
+      "id": "advairdisk",
+      "title": "Advair Diskus · inhalation powder",
+      "publisher": "DailyMed / National Library of Medicine",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4eeb5f6a-593f-4a9e-9692-adefa2caf8fc",
+      "note": "Full public manufacturer label and patient instructions; SPL version 32, effective 20260326. Product-specific directions reviewed October 1, 2026.",
+      "checked": "2026-10-01",
+      "access": "public",
+      "spl_version": "32",
+      "effective_date": "20260326",
+      "xml_sha256": "2178dc489f388c8f1f166ae3e20caf5aea9fe5373de1b32d9c359750a2868500",
+      "retrieved_xml": "/tmp/nas-drug-sources/advairdisk.xml",
+      "publication_date": "2026-03-30",
+      "version_selection": "Current manufacturer DailyMed API record retrieved October 1, 2026; publication is distinct from SPL effective/revision date."
+    },
+    {
+      "id": "advairhfa",
+      "title": "Advair HFA · inhalation aerosol",
+      "publisher": "DailyMed / National Library of Medicine",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=dfaca6f9-3277-47b2-319d-1377917cb54c",
+      "note": "Full public manufacturer label and patient instructions; SPL version 37, effective 20240523. Product-specific directions reviewed October 1, 2026.",
+      "checked": "2026-10-01",
+      "access": "public",
+      "spl_version": "37",
+      "effective_date": "20240523",
+      "xml_sha256": "5fe3233a5d87a055dc13dcde1f9ae99d937b26c78fba09bc87b440177f589ff0",
+      "retrieved_xml": "/tmp/nas-drug-sources/advairhfa.xml",
+      "publication_date": "2026-05-20",
+      "version_selection": "Current manufacturer DailyMed API record retrieved October 1, 2026; publication is distinct from SPL effective/revision date."
+    },
+    {
+      "id": "wixela",
+      "title": "Wixela Inhub · inhalation powder",
+      "publisher": "DailyMed / National Library of Medicine",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3beef422-8a07-4a45-9ba6-414511e4b7e2",
+      "note": "Full public manufacturer label and patient instructions; SPL version 6, effective 20220829. Product-specific directions reviewed October 1, 2026.",
+      "checked": "2026-10-01",
+      "access": "public",
+      "spl_version": "6",
+      "effective_date": "20220829",
+      "xml_sha256": "dd8f1d0bfe31020bafd3c17af3ab9bfd9c125c3b7b450c8f82037ad30e86c5d3",
+      "retrieved_xml": "/tmp/nas-drug-sources/wixela.xml",
+      "publication_date": "2022-09-12",
+      "version_selection": "Current manufacturer DailyMed API record retrieved October 1, 2026; publication is distinct from SPL effective/revision date."
+    },
+    {
+      "id": "airduo",
+      "title": "AirDuo RespiClick · inhalation powder",
+      "publisher": "DailyMed / National Library of Medicine",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9c122b91-a11f-49ca-80bb-3eec5112db87",
+      "note": "Full public manufacturer label and patient instructions; SPL version 17, effective 20210731. Product-specific directions reviewed October 1, 2026.",
+      "checked": "2026-10-01",
+      "access": "public",
+      "spl_version": "17",
+      "effective_date": "20210731",
+      "xml_sha256": "4af8c946df513707d63bef9831c8f889c8e1fe6c973039b453a9c713cea88d64",
+      "retrieved_xml": "/tmp/nas-drug-sources/airduo.xml",
+      "publication_date": "2026-09-14",
+      "version_selection": "Current manufacturer DailyMed API record retrieved October 1, 2026; publication is distinct from SPL effective/revision date."
+    },
+    {
+      "id": "gina2026",
+      "title": "GINA 2026 · Global Strategy for Asthma Management and Prevention",
+      "publisher": "Global Initiative for Asthma",
+      "url": "https://ginasthma.org/wp-content/uploads/2026/05/GINA-2026-Strategy-Report-WMS.pdf",
+      "note": "Public full 2026 strategy report; focused adult/adolescent maintenance/reliever and step-down guidance, printed pages 73–75 and 94–96, reviewed October 1, 2026. Product approvals remain those of U.S. labels.",
+      "checked": "2026-10-01",
+      "access": "public",
+      "pdf_sha256": "33d0453df2d6d49be525a93ae547f71943e9af4f138ab44b9e5eaa765a04b445",
+      "retrieved_pdf": "/tmp/nas-drug-sources/gina2026.pdf",
+      "text_extraction": "Full public PDF extracted with pypdf; relevant sections read."
+    },
+    {
+      "id": "fda2017",
+      "title": "FDA · ICS/LABA class labeling review, December 2017",
+      "publisher": "U.S. Food and Drug Administration",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/nda/2017/021077Orig1s057.pdf",
+      "note": "Primary regulatory review; Division Director/CDTL introduction and section 12 Labeling establish removal of the combination-product boxed warning and retention of LABA-monotherapy risk. Reviewed October 1, 2026.",
+      "checked": "2026-10-01",
+      "access": "public",
+      "pdf_sha256": "2cf673529f74b52439b2f6e6a0fe2494087dc25f2c1c3c76ce912f2e1d5e9599",
+      "retrieved_pdf": "/tmp/nas-drug-sources/fda-ics-laba2017.pdf",
+      "text_extraction": "Full public PDF extracted with pypdf; relevant sections read."
+    }
+  ],
+  "assertion_source_map": [
+    {
+      "section": "indications",
+      "card": "Labeled indications by product",
+      "assertions": {
+        "paragraphs": [
+          "Use for asthma inadequately controlled on a long-term controller such as ICS, or when disease warrants both ICS and LABA. Advair Diskus/Wixela: asthma age ≥4; their 250/50 strength also maintains COPD airflow control and reduces exacerbations in patients with exacerbation history. Advair HFA and AirDuo RespiClick: asthma age ≥12; no COPD indication in these labels. None treats acute bronchospasm."
+        ]
+      },
+      "source_sections": {
+        "advairdisk": [
+          "1",
+          "8.4"
+        ],
+        "advairhfa": [
+          "1",
+          "8.4"
+        ],
+        "wixela": [
+          "1",
+          "8.4"
+        ],
+        "airduo": [
+          "1",
+          "8.4"
+        ]
+      }
+    },
+    {
+      "section": "indications",
+      "card": "Guideline role and scope",
+      "assertions": {
+        "paragraphs": [
+          "GINA 2026 prefers ICS-formoterol reliever-based Track 1 for adults/adolescents. Maintenance ICS/LABA such as fluticasone/salmeterol is a Track 2 option with separate ICS-SABA reliever, or SABA if unavailable, when MART is not possible or established treatment is stable with adherence. Salmeterol combinations cannot serve as relievers, and ICS-formoterol should not be added as reliever to non-formoterol ICS/LABA maintenance. This is focused asthma guidance, not a complete COPD treatment algorithm."
+        ]
+      },
+      "source_sections": {
+        "gina2026": [
+          "Chapter 4, printed pages 73–75, 94–96"
+        ],
+        "advairdisk": [
+          "1.2"
+        ],
+        "wixela": [
+          "1.2"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Labeled maintenance doses",
+      "assertions": {
+        "paragraphs": [
+          "Oral inhalation only; generally approximately 12 hours apart. Select starting strength from previous ICS/combination treatment, disease severity and current control. Rinse and spit after each dose."
+        ],
+        "table": {
+          "headers": [
+            "Product / population",
+            "Regimen and maximum"
+          ],
+          "rows": [
+            [
+              "Diskus / Wixela · asthma ≥12",
+              "1 inhalation twice daily of 100/50, 250/50 or 500/50 mcg; maximum 500/50 twice daily."
+            ],
+            [
+              "Diskus / Wixela · asthma 4–11",
+              "100/50 mcg, 1 inhalation twice daily. Higher strengths are not the pediatric label regimen."
+            ],
+            [
+              "Diskus / Wixela · COPD",
+              "250/50 mcg, 1 inhalation twice daily; 500/50 has no demonstrated efficacy advantage and is not the approved COPD dose."
+            ],
+            [
+              "Advair HFA · asthma ≥12",
+              "45/21, 115/21 or 230/21 mcg per actuation: 2 inhalations twice daily; maximum 2 of 230/21 twice daily."
+            ],
+            [
+              "AirDuo RespiClick · asthma ≥12",
+              "55/14, 113/14 or 232/14 mcg metered strength: 1 inhalation twice daily; maximum 232/14 twice daily. Lower-severity patients not taking ICS start 55/14 twice daily per label."
+            ]
+          ]
+        }
+      },
+      "source_sections": {
+        "advairdisk": [
+          "2",
+          "3"
+        ],
+        "advairhfa": [
+          "2",
+          "3"
+        ],
+        "wixela": [
+          "2",
+          "3"
+        ],
+        "airduo": [
+          "2",
+          "3"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Starting, reassessing and stepping down",
+      "assertions": {
+        "paragraphs": [
+          "Benefit may develop before maximum effect, which can take a week or longer. Labels permit reassessment after about two weeks of inadequate response, including technique/adherence review and supervised strength change. GINA considers gradual step-down after 2–3 months of control without exacerbations; provide an action plan and monitor. Do not completely withdraw ICS except a clinician-directed diagnostic trial. A dose-category table does not establish potency equivalence between devices."
+        ]
+      },
+      "source_sections": {
+        "advairdisk": [
+          "2.1"
+        ],
+        "advairhfa": [
+          "2.2"
+        ],
+        "wixela": [
+          "2.1"
+        ],
+        "airduo": [
+          "2.2"
+        ],
+        "gina2026": [
+          "Chapter 4, printed pages 74–75"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Device administration",
+      "assertions": {
+        "paragraphs": [],
+        "table": {
+          "headers": [
+            "Device",
+            "Key technique"
+          ],
+          "rows": [
+            [
+              "Diskus",
+              "Keep level/flat while loading with lever; exhale away, then inhale quickly/deeply. Do not exhale into it, wash or use a spacer."
+            ],
+            [
+              "Wixela Inhub",
+              "Hold vertically while pushing lever; inhale quickly/deeply after exhaling away. Do not wash or use a spacer. Technique differs from Diskus orientation."
+            ],
+            [
+              "AirDuo RespiClick",
+              "Open upright until cap clicks only when ready; no priming or spacer. Inhale quickly/deeply without blocking vent; close cap. Clean only with dry cloth/tissue."
+            ],
+            [
+              "Advair HFA",
+              "Prime initially with 4 sprays; reprime with 2 after >4 weeks unused or dropping. Shake 5 seconds before each spray. Inhale slowly/deeply while pressing; wait ~30 seconds and shake before second puff. Clean weekly per its instructions."
+            ]
+          ]
+        }
+      },
+      "source_sections": {
+        "advairdisk": [
+          "2",
+          "Instructions for Use"
+        ],
+        "advairhfa": [
+          "2",
+          "Instructions for Use"
+        ],
+        "wixela": [
+          "2",
+          "Instructions for Use"
+        ],
+        "airduo": [
+          "2",
+          "Instructions for Use"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Missed doses and organ-function review",
+      "assertions": {
+        "paragraphs": [
+          "If a dose is missed, take the next at the usual time; do not double. Hepatic disease may increase exposure and requires close monitoring. Formal renal PK studies are absent; these labels do not give a renal adjustment algorithm. Use the lowest effective maintenance strength with regular review."
+        ]
+      },
+      "source_sections": {
+        "advairdisk": [
+          "Patient Information",
+          "8.6",
+          "8.7",
+          "5.8"
+        ],
+        "advairhfa": [
+          "Patient Information",
+          "8.6",
+          "8.7",
+          "5.8"
+        ],
+        "wixela": [
+          "Patient Information",
+          "8.6",
+          "8.7",
+          "5.8"
+        ],
+        "airduo": [
+          "Patient Information",
+          "8.6",
+          "8.7",
+          "5.8"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "assertions": {
+        "paragraphs": [],
+        "items": [
+          "Do not initiate during rapidly deteriorating or life-threatening disease. Increasing reliever use or poorer response requires prompt reassessment; do not take extra doses or another LABA. LABA alone in asthma increases serious asthma-event risk.",
+          "Thrush/dysphonia: rinse and spit after use; assess persistent mouth/throat symptoms. Pneumonia risk is increased in COPD ICS trials, particularly in older patients; evaluate new fever or changing sputum/breathlessness.",
+          "ICS can cause infection susceptibility, adrenal suppression/Cushingoid effects, reduced bone density, growth slowing, glaucoma/cataracts and rare eosinophilic/vasculitic presentations. Review tuberculosis/systemic infections, measles/chickenpox exposure and ocular symptoms.",
+          "Transfer from systemic steroids needs supervised taper and monitoring; these inhalers do not supply systemic stress-dose coverage. Watch weakness, hypotension or other adrenal-insufficiency signs during illness/surgery or steroid withdrawal.",
+          "Paradoxical bronchospasm immediately after inhalation: use the prescribed rapid bronchodilator, stop this product and obtain urgent review. Anaphylaxis/airway swelling requires emergency care.",
+          "Salmeterol can cause cardiovascular effects, hypokalemia and hyperglycemia; use caution with heart disease/arrhythmias, seizure disorders, thyrotoxicosis and diabetes. Strong CYP3A4 inhibitors increase systemic steroid and cardiac risk."
+        ]
+      },
+      "source_sections": {
+        "advairdisk": [
+          "5"
+        ],
+        "advairhfa": [
+          "5"
+        ],
+        "wixela": [
+          "5"
+        ],
+        "airduo": [
+          "5"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "assertions": {
+        "paragraphs": [
+          "Primary treatment of status asthmaticus/acute episodes requiring intensive care and product-ingredient hypersensitivity are contraindicated. Diskus, Wixela and AirDuo powders contain lactose with milk proteins and contraindicate severe milk-protein allergy. Advair HFA does not carry that milk-protein contraindication; check its actual ingredients rather than applying powder rules to all inhalers. Severe milk-protein allergy is distinct from lactose intolerance."
+        ]
+      },
+      "source_sections": {
+        "advairdisk": [
+          "4",
+          "11"
+        ],
+        "advairhfa": [
+          "4",
+          "11"
+        ],
+        "wixela": [
+          "4",
+          "11"
+        ],
+        "airduo": [
+          "4",
+          "11"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Boxed warning status",
+      "assertions": {
+        "paragraphs": [
+          "No boxed warning appears in the selected current combination labels. FDA’s 2017 class review removed the combination ICS/LABA asthma-death box after required safety trials, while preserving serious-event warnings for LABA alone in asthma. Combination trials did not establish absence of every risk. Do not reproduce the historical combination box as current or imply salmeterol monotherapy is safe."
+        ]
+      },
+      "source_sections": {
+        "advairdisk": [
+          "Full prescribing information",
+          "5.1"
+        ],
+        "advairhfa": [
+          "Full prescribing information",
+          "5.1"
+        ],
+        "wixela": [
+          "Full prescribing information",
+          "5.1"
+        ],
+        "airduo": [
+          "Full prescribing information",
+          "5.1"
+        ],
+        "fda2017": [
+          "Division Director/CDTL introduction; section 12 Labeling"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions and overdose",
+      "assertions": {
+        "paragraphs": [
+          "Reported effects include upper-respiratory/throat symptoms, candidiasis, hoarseness, headache, cough and musculoskeletal complaints; profile/rates differ by device and population. Serious systemic steroid, cardiac, allergic and respiratory reactions are described above. Excess salmeterol can cause tachyarrhythmia/QTc prolongation, hypokalemia, seizures or cardiac arrest; repeated excessive ICS can cause hypercorticism. Stop excess dosing and seek urgent medical/Poison Help guidance (U.S. 1-800-222-1222); overdose requires supportive care and cardiac monitoring."
+        ]
+      },
+      "source_sections": {
+        "advairdisk": [
+          "6",
+          "10"
+        ],
+        "advairhfa": [
+          "6",
+          "10"
+        ],
+        "wixela": [
+          "6",
+          "10"
+        ],
+        "airduo": [
+          "6",
+          "10"
+        ]
+      }
+    },
+    {
+      "section": "interactions",
+      "card": "Clinically relevant interactions",
+      "assertions": {
+        "paragraphs": [],
+        "table": {
+          "headers": [
+            "Combination",
+            "Action"
+          ],
+          "rows": [
+            [
+              "Strong CYP3A4 inhibitors: ritonavir, ketoconazole, itraconazole, clarithromycin and others",
+              "Combination not recommended: increased fluticasone exposure/adrenal suppression and salmeterol cardiovascular/QT effects. Arrange a prescribing review."
+            ],
+            [
+              "MAO inhibitors or tricyclic antidepressants, including within 2 weeks of stopping",
+              "Extreme caution: potentiated salmeterol vascular effects."
+            ],
+            [
+              "Beta blockers",
+              "Can blunt bronchodilation and cause severe bronchospasm; if unavoidable, cautious specialist consideration of a cardioselective agent."
+            ],
+            [
+              "Loop/thiazide and other non-potassium-sparing diuretics",
+              "May worsen hypokalemia/ECG effects; monitor as clinically indicated."
+            ],
+            [
+              "Additional LABA-containing products",
+              "Avoid duplicate LABA therapy or excess maintenance dosing."
+            ]
+          ]
+        }
+      },
+      "source_sections": {
+        "advairdisk": [
+          "7"
+        ],
+        "advairhfa": [
+          "7"
+        ],
+        "wixela": [
+          "7"
+        ],
+        "airduo": [
+          "7"
+        ]
+      }
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy and lactation",
+      "assertions": {
+        "paragraphs": [
+          "Human data are insufficient to define all fetal risk; poorly controlled asthma itself increases maternal/perinatal complications. Review treatment and maintain control during pregnancy rather than stopping without a plan. Human milk data for both components and infant/milk-production effects are unavailable; low inhaled plasma levels suggest low milk exposure, but this is an inference. Balance breastfeeding benefit with maternal need and potential infant risk."
+        ]
+      },
+      "source_sections": {
+        "advairdisk": [
+          "8.1",
+          "8.2"
+        ],
+        "advairhfa": [
+          "8.1",
+          "8.2"
+        ],
+        "wixela": [
+          "8.1",
+          "8.2"
+        ],
+        "airduo": [
+          "8.1",
+          "8.2"
+        ]
+      }
+    },
+    {
+      "section": "populations",
+      "card": "Pediatric and geriatric considerations",
+      "assertions": {
+        "paragraphs": [
+          "Diskus/Wixela asthma is established at ≥4, with only 100/50 twice daily for ages 4–11. HFA/RespiClick asthma is established at ≥12; studies in younger children do not establish approval. Monitor growth and titrate to the lowest effective strength. Older adults warrant cardiovascular caution; COPD populations showed more severe adverse events/pneumonia with older age. The HFA label advises cautious low-end selection; no universal automatic age-based dose conversion exists."
+        ]
+      },
+      "source_sections": {
+        "advairdisk": [
+          "8.4",
+          "8.5",
+          "2",
+          "5.14"
+        ],
+        "advairhfa": [
+          "8.4",
+          "8.5",
+          "2",
+          "5.14"
+        ],
+        "wixela": [
+          "8.4",
+          "8.5",
+          "2",
+          "5.14"
+        ],
+        "airduo": [
+          "8.4",
+          "8.5",
+          "2",
+          "5.13"
+        ]
+      }
+    },
+    {
+      "section": "populations",
+      "card": "Renal and hepatic impairment",
+      "assertions": {
+        "paragraphs": [
+          "Both components are predominantly hepatically metabolized; liver dysfunction may increase accumulation, so monitor closely. Formal product renal/hepatic PK studies are limited or absent, and no validated renal/hepatic dose-reduction formula is given. Do not equate missing studies with proven unchanged exposure."
+        ]
+      },
+      "source_sections": {
+        "advairdisk": [
+          "8.6",
+          "8.7",
+          "12.3"
+        ],
+        "advairhfa": [
+          "8.6",
+          "8.7",
+          "12.3"
+        ],
+        "wixela": [
+          "8.6",
+          "8.7",
+          "12.3"
+        ],
+        "airduo": [
+          "8.6",
+          "8.7",
+          "12.3"
+        ]
+      }
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism of action",
+      "assertions": {
+        "paragraphs": [
+          "Fluticasone propionate activates glucocorticoid signaling and suppresses inflammatory cellular/mediator responses. Salmeterol stimulates beta₂ receptors, increasing cyclic AMP and relaxing bronchial smooth muscle. Maintenance bronchodilation accompanies ICS anti-inflammatory treatment; salmeterol does not replace the ICS."
+        ]
+      },
+      "source_sections": {
+        "advairdisk": [
+          "12.1",
+          "5.1"
+        ],
+        "advairhfa": [
+          "12.1",
+          "5.1"
+        ],
+        "wixela": [
+          "12.1",
+          "5.1"
+        ],
+        "airduo": [
+          "12.1",
+          "5.1"
+        ]
+      }
+    },
+    {
+      "section": "pharmacology",
+      "card": "Pharmacokinetics",
+      "assertions": {
+        "paragraphs": [],
+        "facts": [
+          [
+            "Systemic exposure",
+            "Inhaled lung absorption contributes to exposure; swallowed fluticasone oral bioavailability is negligible because of incomplete absorption/first-pass metabolism. Device and technique influence exposure."
+          ],
+          [
+            "Metabolism",
+            "Both are CYP3A4 substrates; interaction-driven accumulation can cause systemic toxicity."
+          ],
+          [
+            "Half-life · product-specific",
+            "Advair inhaled fluticasone estimates average ~5.6 hours; AirDuo estimates ~10.8 hours for fluticasone and ~12.6 hours for salmeterol. Advair labels do not calculate inhaled salmeterol terminal half-life."
+          ],
+          [
+            "Interpretation",
+            "Do not treat the salmeterol xinafoate salt moiety’s half-life as the active drug duration or use these PK estimates to set inhalation frequency."
+          ]
+        ]
+      },
+      "source_sections": {
+        "advairdisk": [
+          "12.3"
+        ],
+        "advairhfa": [
+          "12.3"
+        ],
+        "wixela": [
+          "12.3"
+        ],
+        "airduo": [
+          "12.3"
+        ]
+      }
+    },
+    {
+      "section": "practice",
+      "card": "Monitoring",
+      "assertions": {
+        "paragraphs": [
+          "Review symptom control, reliever use, exacerbations, adherence, technique and lung function. Assess oral candidiasis, growth, eye symptoms and systemic steroid effects. Bone-density evaluation is recommended before and periodically during Diskus/Wixela COPD treatment; other bone-risk patients need clinical review. Consider glucose/potassium or cardiac assessment when risks, interacting therapy or symptoms warrant. Review infection/immune status and systemic-steroid withdrawal."
+        ]
+      },
+      "source_sections": {
+        "advairdisk": [
+          "5",
+          "17"
+        ],
+        "advairhfa": [
+          "5",
+          "17"
+        ],
+        "wixela": [
+          "5",
+          "17"
+        ],
+        "airduo": [
+          "5",
+          "17"
+        ]
+      }
+    },
+    {
+      "section": "practice",
+      "card": "Counseling and urgent action",
+      "assertions": {
+        "paragraphs": [
+          "Use regularly at prescribed doses; rinse and spit, and keep a separate reliever with a written action plan. Do not take extra doses if powder is not tasted. Check counters/refill before running out. Sudden post-dose wheezing, swelling, severe breathlessness, chest pain or failure of the rescue plan requires urgent/emergency evaluation. Report thrush, vision changes, fever/infection exposure and adrenal symptoms. Technique and orientation differ across devices."
+        ]
+      },
+      "source_sections": {
+        "advairdisk": [
+          "Patient Information",
+          "Instructions for Use",
+          "17"
+        ],
+        "advairhfa": [
+          "Patient Information",
+          "Instructions for Use",
+          "17"
+        ],
+        "wixela": [
+          "Patient Information",
+          "Instructions for Use",
+          "17"
+        ],
+        "airduo": [
+          "Patient Information",
+          "Instructions for Use",
+          "17"
+        ]
+      }
+    },
+    {
+      "section": "product",
+      "card": "Representative product",
+      "assertions": {
+        "paragraphs": [
+          "Advair Diskus 250/50 mcg is the representative product. This profile covers Diskus, HFA, Wixela Inhub and AirDuo RespiClick; it excludes AirDuo Digihaler, other generics and non-U.S. devices unless separately verified. Do not confuse salmeterol combinations with fluticasone/vilanterol or fluticasone/formoterol."
+        ]
+      },
+      "source_sections": {
+        "advairdisk": [
+          "11",
+          "16"
+        ],
+        "advairhfa": [
+          "11",
+          "16"
+        ],
+        "wixela": [
+          "11",
+          "16"
+        ],
+        "airduo": [
+          "11",
+          "16"
+        ]
+      }
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "assertions": {
+        "paragraphs": [],
+        "table": {
+          "headers": [
+            "Device",
+            "Labeled strengths / capacity"
+          ],
+          "rows": [
+            [
+              "Diskus / Wixela dry powder",
+              "100/50, 250/50, 500/50 mcg per dose; 60 doses. Contains lactose/milk proteins."
+            ],
+            [
+              "Advair HFA aerosol",
+              "45/21, 115/21, 230/21 mcg delivered per actuation; selected label includes 60- and 120-actuation canisters. Uses HFA propellant, not the powder lactose carrier."
+            ],
+            [
+              "AirDuo RespiClick dry powder",
+              "55/14, 113/14, 232/14 mcg metered strengths; mouthpiece delivers 49/12.75, 100/12.75, 202/12.75 mcg respectively. 60 actuations; lactose/milk proteins."
+            ]
+          ]
+        }
+      },
+      "source_sections": {
+        "advairdisk": [
+          "3",
+          "11",
+          "16"
+        ],
+        "advairhfa": [
+          "3",
+          "11",
+          "16"
+        ],
+        "wixela": [
+          "3",
+          "11",
+          "16"
+        ],
+        "airduo": [
+          "3",
+          "11",
+          "16"
+        ]
+      }
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "assertions": {
+        "paragraphs": [
+          "Diskus/Wixela: 20–25°C, dry and protected from heat/sun; retain unopened foil until first use and discard one month after opening or counter zero. HFA: 20–25°C, mouthpiece down; discard at counter zero, do not puncture/burn or expose above 120°F. AirDuo: 15–25°C, dry, foil until use; discard at 30 days after opening, counter zero or expiration, whichever first. Follow label excursion limits and device cleaning instructions; do not wash powders or interchange HFA actuator/canister products."
+        ]
+      },
+      "source_sections": {
+        "advairdisk": [
+          "16",
+          "Instructions for Use"
+        ],
+        "advairhfa": [
+          "16",
+          "Instructions for Use"
+        ],
+        "wixela": [
+          "16",
+          "Instructions for Use"
+        ],
+        "airduo": [
+          "16",
+          "Instructions for Use",
+          "2.3"
+        ]
+      }
+    }
+  ],
+  "scope_exclusions": [
+    "AirDuo Digihaler, exhaustive generic/repackager/non-U.S. inventory; comprehensive COPD selection algorithm and acute exacerbation protocols."
+  ],
+  "resolved_source_findings": [
+    "Current combination boxed-warning status reconciled with primary FDA 2017 removal; LABA monotherapy risk retained.",
+    "AirDuo metered and delivered doses differ; no puff-equivalence conversion inferred.",
+    "SPL publication dates differ from effective/revision dates; older current manufacturer versions identified transparently."
+  ],
+  "material_gaps": [],
+  "clinical_review": "Every published card reviewed against full relevant primary label sections. Source-reviewed within stated scope; not an independent clinician sign-off.",
+  "blueprint": "Immutable APAP eight sections, essential safety, three hero facts, cited disclosures, four safety cards and three product cards.",
+  "validation": {
+    "validateMonograph": [],
+    "build": "parent integration pending",
+    "rendered_page_qa": "parent integration pending",
+    "audit_assertions_match_monograph": true
+  },
+  "monograph_sha256": "a8b99697f9a4ad13aa9bdabf2c331395777ccdd6a4a016c547658bb754d21ad9",
+  "front_matter_source_map": {
+    "facts": [
+      [
+        "Therapeutic class",
+        "Inhaled corticosteroid / long-acting beta₂ agonist"
+      ],
+      [
+        "Representative product",
+        "Advair Diskus · 250/50 mcg"
+      ],
+      [
+        "Reference focus",
+        "Maintenance therapy · product-specific devices"
+      ]
+    ],
+    "essential": {
+      "title": "Use a separate prescribed reliever for acute symptoms.",
+      "text": "These salmeterol combinations are maintenance inhalers, not rescue or MART treatment. Do not add another LABA or take extra maintenance doses. Increasing symptoms or poor reliever response require prompt assessment; severe breathing difficulty needs emergency care.",
+      "section": "safety",
+      "link": "Warnings and precautions"
+    },
+    "source_sections": {
+      "advairdisk": [
+        "Indications",
+        "Dosage and administration",
+        "Warnings/boxed warning",
+        "Product description"
+      ],
+      "advairhfa": [
+        "Indications",
+        "Dosage and administration",
+        "Warnings/boxed warning",
+        "Product description"
+      ],
+      "wixela": [
+        "Indications",
+        "Dosage and administration",
+        "Warnings/boxed warning",
+        "Product description"
+      ],
+      "airduo": [
+        "Indications",
+        "Dosage and administration",
+        "Warnings/boxed warning",
+        "Product description"
+      ]
+    }
+  }
+}

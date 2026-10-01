@@ -1,0 +1,940 @@
+{
+  "slug": "estradiol",
+  "status": "source_reviewed",
+  "checked": "2026-10-01",
+  "scope": "Selected GoldenState2mg oral tablet with July2026A-S comparison,Sandoz twiceweekly systemicpatch,Vagifem10mcg localinsert,and updatedEstring localring; FDAcurrentlabeltransition and currentlistedNAMS2022guideline context",
+  "excludedRegimens": [
+    "Gender-affirming regimens,pubertal induction,injectable estradiol esters,combination contraceptives",
+    "Systemic-dose Femring,Imvexxy,creams,gels,sprays and weeklypatch dosing",
+    "Legacy oral oncology dose protocols:specialist review required,no modernroutine oncology regimen claimed",
+    "Universal oral/patch/vaginaldose conversion or fixed progestogen regimen"
+  ],
+  "sources": [
+    {
+      "id": "label",
+      "title": "Estradiol oral 2 mg tablet · Prescribing information",
+      "publisher": "DailyMed / Golden State Medical Supply, Inc.",
+      "note": "Current SPL version 15, effective 2025-03-13. Selected repackaged tablet; published labeling retains older boxed language.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d0d1c2c8-b175-4250-9343-d7db65b72e8f"
+    },
+    {
+      "id": "oralcurrent",
+      "title": "Estradiol tablets · Current comparison SPL",
+      "publisher": "DailyMed / A-S Medication Solutions",
+      "note": "Current SPL version 3, effective 2026-07-01. July 2026 SPL still retains older broad boxed wording; upload date is not implementation of FDA requested change.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5c9a2e0f-704b-4d16-8ea3-d94f7f36ce6b"
+    },
+    {
+      "id": "patch",
+      "title": "Estradiol twice-weekly transdermal system · Prescribing information",
+      "publisher": "DailyMed / Sandoz Inc.",
+      "note": "Current SPL version 12, effective 2025-01-30. ",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c4da6de7-9ab1-4fcf-88f3-fe785019e6e7"
+    },
+    {
+      "id": "vagifem",
+      "title": "Vagifem 10 mcg vaginal inserts · Prescribing information",
+      "publisher": "DailyMed / Novo Nordisk Inc.",
+      "note": "Current SPL version 22, effective 2025-02-10. ",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e5ad3cf6-dd96-4e64-af21-c1eee38d0b88"
+    },
+    {
+      "id": "estring",
+      "title": "Estring 7.5 mcg/day vaginal system · Updated prescribing information",
+      "publisher": "DailyMed / Pharmacia & Upjohn Company LLC",
+      "note": "Current SPL version 7, effective 2026-04-23. Current 2026 label without boxed warning; also cross-checked FDA-approved 2026 supplement 22.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=110b9865-5a07-4d45-b560-e89947f12600"
+    },
+    {
+      "id": "fda",
+      "title": "Menopausal hormone therapies · FDA warning changes and updated-product list",
+      "publisher": "U.S. Food and Drug Administration",
+      "note": "November 2025 request; February 2026 approvals; exact updated-product list checked October 1,2026.",
+      "url": "https://www.fda.gov/drugs/drug-safety-and-availability/menopausal-hormone-therapies-updated-prescribing-information"
+    },
+    {
+      "id": "guideline",
+      "title": "2022 hormone therapy position statement",
+      "publisher": "The Menopause Society / NAMS",
+      "note": "Public full statement; still listed on the Society’s current position-statement page. Clinical guidance is distinct from FDA product labeling.",
+      "url": "https://menopause.org/wp-content/uploads/professional/nams-2022-hormone-therapy-position-statement.pdf"
+    },
+    {
+      "id": "fda-request",
+      "title": "FDA requested menopausal hormone therapy labeling changes",
+      "publisher": "U.S. Food and Drug Administration",
+      "note": "November 10, 2025 request; distinguishes systemic estrogen-alone and local vaginal products.",
+      "url": "https://www.fda.gov/drugs/drug-alerts-and-statements/fda-requests-labeling-changes-related-safety-information-clarify-benefitrisk-considerations"
+    },
+    {
+      "id": "fda-approval",
+      "title": "FDA first approvals of menopausal hormone therapy label changes",
+      "publisher": "U.S. Food and Drug Administration",
+      "note": "February 12, 2026 approval announcement.",
+      "url": "https://www.fda.gov/news-events/press-announcements/fda-approves-labeling-changes-menopausal-hormone-therapy-products"
+    }
+  ],
+  "labelMetadata": [
+    {
+      "product": "estradiol-oral",
+      "sourceId": "label",
+      "setid": "d0d1c2c8-b175-4250-9343-d7db65b72e8f",
+      "effectiveTime": "20250313",
+      "version": "15",
+      "xmlSha256": "0f4100fc8bbcf0ae34265ac8353f6357b98112eaf7e604c45093874151e30779",
+      "localEvidence": "/tmp/nas-drug-sources/estradiol-oral.xml",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/d0d1c2c8-b175-4250-9343-d7db65b72e8f.xml"
+    },
+    {
+      "product": "estradiol-oral-current",
+      "sourceId": "oralcurrent",
+      "setid": "5c9a2e0f-704b-4d16-8ea3-d94f7f36ce6b",
+      "effectiveTime": "20260701",
+      "version": "3",
+      "xmlSha256": "b05cdfc985b8a9e94965cec3b32c7e0a04a3d932db9411dc307ee72e3b6caa24",
+      "localEvidence": "/tmp/nas-drug-sources/estradiol-oral-current.xml",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/5c9a2e0f-704b-4d16-8ea3-d94f7f36ce6b.xml"
+    },
+    {
+      "product": "estradiol-patch",
+      "sourceId": "patch",
+      "setid": "c4da6de7-9ab1-4fcf-88f3-fe785019e6e7",
+      "effectiveTime": "20250130",
+      "version": "12",
+      "xmlSha256": "f451a7238237bb2402389c3a85b2d73fcb180ba004e3c021511d5a04bb3677c4",
+      "localEvidence": "/tmp/nas-drug-sources/estradiol-patch.xml",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/c4da6de7-9ab1-4fcf-88f3-fe785019e6e7.xml"
+    },
+    {
+      "product": "estradiol-vagifem",
+      "sourceId": "vagifem",
+      "setid": "e5ad3cf6-dd96-4e64-af21-c1eee38d0b88",
+      "effectiveTime": "20250210",
+      "version": "22",
+      "xmlSha256": "a19acebf1d8e78bedd3feadea08cf0df25f4cc26ec5a2ecab32460bcb094bb73",
+      "localEvidence": "/tmp/nas-drug-sources/estradiol-vagifem.xml",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/e5ad3cf6-dd96-4e64-af21-c1eee38d0b88.xml"
+    },
+    {
+      "product": "estradiol-estring",
+      "sourceId": "estring",
+      "setid": "110b9865-5a07-4d45-b560-e89947f12600",
+      "effectiveTime": "20260423",
+      "version": "7",
+      "xmlSha256": "c20db3dbada93d2f63caec08387cb770b284f5749597c2f2e7971d3df375294b",
+      "localEvidence": "/tmp/nas-drug-sources/estradiol-estring.xml",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/110b9865-5a07-4d45-b560-e89947f12600.xml"
+    }
+  ],
+  "evidence": [
+    {
+      "sourceId": "label",
+      "localEvidence": "/tmp/nas-drug-sources/estradiol-oral.xml",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/estradiol/estradiol-oral.xml",
+      "sha256": "0f4100fc8bbcf0ae34265ac8353f6357b98112eaf7e604c45093874151e30779",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/d0d1c2c8-b175-4250-9343-d7db65b72e8f.xml"
+    },
+    {
+      "sourceId": "label",
+      "localEvidence": "/tmp/nas-drug-sources/estradiol-oral-sections.json",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/estradiol/estradiol-oral-sections.json",
+      "sha256": "9cd58c63db9bd331a189d16cc3192dc50eb3aade5798293ba68f2b7a6f6027cd",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/d0d1c2c8-b175-4250-9343-d7db65b72e8f.xml"
+    },
+    {
+      "sourceId": "oralcurrent",
+      "localEvidence": "/tmp/nas-drug-sources/estradiol-oral-current.xml",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/estradiol/estradiol-oral-current.xml",
+      "sha256": "b05cdfc985b8a9e94965cec3b32c7e0a04a3d932db9411dc307ee72e3b6caa24",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/5c9a2e0f-704b-4d16-8ea3-d94f7f36ce6b.xml"
+    },
+    {
+      "sourceId": "oralcurrent",
+      "localEvidence": "/tmp/nas-drug-sources/estradiol-oral-current-sections.json",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/estradiol/estradiol-oral-current-sections.json",
+      "sha256": "a356ef2ba5054222c0d25f55eb86cec048a766544c948b19dcb3bcae444b7d35",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/5c9a2e0f-704b-4d16-8ea3-d94f7f36ce6b.xml"
+    },
+    {
+      "sourceId": "patch",
+      "localEvidence": "/tmp/nas-drug-sources/estradiol-patch.xml",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/estradiol/estradiol-patch.xml",
+      "sha256": "f451a7238237bb2402389c3a85b2d73fcb180ba004e3c021511d5a04bb3677c4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/c4da6de7-9ab1-4fcf-88f3-fe785019e6e7.xml"
+    },
+    {
+      "sourceId": "patch",
+      "localEvidence": "/tmp/nas-drug-sources/estradiol-patch-sections.json",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/estradiol/estradiol-patch-sections.json",
+      "sha256": "3f8f1f9d335c277a4f19d1d9303175aa1a3827670ca3b1e1cefde67a6cb6797d",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/c4da6de7-9ab1-4fcf-88f3-fe785019e6e7.xml"
+    },
+    {
+      "sourceId": "vagifem",
+      "localEvidence": "/tmp/nas-drug-sources/estradiol-vagifem.xml",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/estradiol/estradiol-vagifem.xml",
+      "sha256": "a19acebf1d8e78bedd3feadea08cf0df25f4cc26ec5a2ecab32460bcb094bb73",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/e5ad3cf6-dd96-4e64-af21-c1eee38d0b88.xml"
+    },
+    {
+      "sourceId": "vagifem",
+      "localEvidence": "/tmp/nas-drug-sources/estradiol-vagifem-sections.json",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/estradiol/estradiol-vagifem-sections.json",
+      "sha256": "f7d772000ef8da20e0c29139842483a6c7e51e9025153d441892c445b089d094",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/e5ad3cf6-dd96-4e64-af21-c1eee38d0b88.xml"
+    },
+    {
+      "sourceId": "estring",
+      "localEvidence": "/tmp/nas-drug-sources/estradiol-estring.xml",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/estradiol/estradiol-estring.xml",
+      "sha256": "c20db3dbada93d2f63caec08387cb770b284f5749597c2f2e7971d3df375294b",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/110b9865-5a07-4d45-b560-e89947f12600.xml"
+    },
+    {
+      "sourceId": "estring",
+      "localEvidence": "/tmp/nas-drug-sources/estradiol-estring-sections.json",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/estradiol/estradiol-estring-sections.json",
+      "sha256": "73ed8d31b7a22e297c8192fc773d7f6bb5ba56c5d4470b7cdaf27ac40a4801be",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/110b9865-5a07-4d45-b560-e89947f12600.xml"
+    },
+    {
+      "sourceId": "fda",
+      "localEvidence": "/tmp/nas-drug-sources/fda-mht-updated.html",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/estradiol/fda-mht-updated.html",
+      "sha256": "7bd34c24f7196aab9fd59a6ed28123885c5df474c967dc4f17b5274ed0152701",
+      "url": "https://www.fda.gov/drugs/drug-safety-and-availability/menopausal-hormone-therapies-updated-prescribing-information"
+    },
+    {
+      "sourceId": "fda-request",
+      "localEvidence": "/tmp/nas-drug-sources/fda-mht-request.html",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/estradiol/fda-mht-request.html",
+      "sha256": "793204f807c774c41d2899ffe7ca9b1433852d42c4bc69f4aaf36db2ff2deded",
+      "url": "https://www.fda.gov/drugs/drug-alerts-and-statements/fda-requests-labeling-changes-related-safety-information-clarify-benefitrisk-considerations"
+    },
+    {
+      "sourceId": "fda-approval",
+      "localEvidence": "/tmp/nas-drug-sources/fda-mht-approval.html",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/estradiol/fda-mht-approval.html",
+      "sha256": "b3bc57b818c202043318132afa8cd8b17b7414d45c9c55f07b46dda3a1222d30",
+      "url": "https://www.fda.gov/news-events/press-announcements/fda-approves-labeling-changes-menopausal-hormone-therapy-products"
+    },
+    {
+      "sourceId": "guideline",
+      "localEvidence": "/tmp/nas-drug-sources/nams2022.pdf",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/estradiol/nams2022.pdf",
+      "sha256": "22a05f37b2f52af05379cfd13f91b6cd01a5ce613c30d7542fe42c40745e3c53",
+      "url": "https://menopause.org/wp-content/uploads/professional/nams-2022-hormone-therapy-position-statement.pdf"
+    },
+    {
+      "sourceId": "guideline",
+      "localEvidence": "/tmp/nas-drug-sources/nams2022.txt",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/estradiol/nams2022.txt",
+      "sha256": "e4e24633a6b24d5774377035d41425df651d3a8547560808cc2fcf66f180afc9",
+      "url": "https://menopause.org/wp-content/uploads/professional/nams-2022-hormone-therapy-position-statement.pdf"
+    },
+    {
+      "sourceId": "estring",
+      "localEvidence": "/tmp/nas-drug-sources/estradiol-estring-fda2026.pdf",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/estradiol/estradiol-estring-fda2026.pdf",
+      "sha256": "f385ce78c66a3b4ff730c6f024eeef70fdf014c48f5e3e24f78e40f3cd340d4d",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/020472s022lbl.pdf"
+    },
+    {
+      "sourceId": "estring",
+      "localEvidence": "/tmp/nas-drug-sources/estradiol-estring-fda2026.txt",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/estradiol/estradiol-estring-fda2026.txt",
+      "sha256": "3a44533b997cc49ff6b12bfea5df777ca53f801a77863c22b57764c85b61ce81",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/020472s022lbl.pdf"
+    }
+  ],
+  "sourceEvidenceRoot": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/estradiol",
+  "sourceManifest": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/estradiol/source-manifest.json",
+  "assertionToSourceMap": [
+    {
+      "section": "indications",
+      "card": "Systemic indications",
+      "assertions": {
+        "paragraphs": [
+          "Selected oral and twice-weekly patch labels include moderate-to-severe menopausal vasomotor symptoms, vulvar/vaginal atrophy, hypoestrogenism from hypogonadism/castration/primary ovarian failure, and osteoporosis prevention in appropriately selected patients. For vaginal symptoms alone, consider a local vaginal product first; for osteoporosis prevention alone, consider non-estrogen options and individual fracture risk."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "oralcurrent",
+        "patch"
+      ],
+      "sourceSections": {
+        "label": "oral Indications; patch §1",
+        "oralcurrent": "oral Indications; patch §1",
+        "patch": "oral Indications; patch §1"
+      },
+      "review": "Reviewed supporting public primary label/guideline sections; selected-product scope retained."
+    },
+    {
+      "section": "indications",
+      "card": "Local vaginal indications",
+      "assertions": {
+        "paragraphs": [
+          "Vagifem treats atrophic vaginitis due to menopause. Estring treats moderate-to-severe vulvar/vaginal atrophy symptoms due to menopause. These selected low-dose products treat local symptoms and are not systemic vasomotor regimens. Estring is distinct from systemic-dose vaginal rings such as Femring, which is outside this profile."
+        ]
+      },
+      "sourceIds": [
+        "vagifem",
+        "estring",
+        "guideline"
+      ],
+      "sourceSections": {
+        "vagifem": "Vagifem §1; Estring Indications; NAMS genitourinary section",
+        "estring": "Vagifem §1; Estring Indications; NAMS genitourinary section",
+        "guideline": "Vagifem §1; Estring Indications; NAMS genitourinary section"
+      },
+      "review": "Reviewed supporting public primary label/guideline sections; selected-product scope retained."
+    },
+    {
+      "section": "indications",
+      "card": "Specialist indications and scope",
+      "assertions": {
+        "paragraphs": [
+          "The oral label also lists palliation of metastatic breast cancer in selected women/men and advanced androgen-dependent prostate cancer. These legacy labeled oncology uses need specialist assessment and are not routine menopausal therapy; no oncology regimen is supplied here. Gender-affirming therapy, injectable estradiol esters, gels/sprays, contraceptive combinations, and other vaginal products require separate review."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "oralcurrent"
+      ],
+      "sourceSections": {
+        "label": "oral Indications; excluded regimen scope",
+        "oralcurrent": "oral Indications; excluded regimen scope"
+      },
+      "review": "Reviewed supporting public primary label/guideline sections; selected-product scope retained."
+    },
+    {
+      "section": "dosage",
+      "card": "Selected oral and patch regimens",
+      "assertions": {
+        "table": {
+          "headers": [
+            "Product/indication",
+            "Selected label regimen",
+            "Scope"
+          ],
+          "rows": [
+            [
+              "Oral menopausal symptoms",
+              "Initial 1–2 mg/day; titrate to response; label example 3 weeks on/1 week off",
+              "Selected labels direct periodic reassessment/taper attempts"
+            ],
+            [
+              "Oral female hypoestrogenism",
+              "Initial 1–2 mg/day; individualize maintenance",
+              "Specialist evaluation of cause"
+            ],
+            [
+              "Twice-weekly patch · symptoms",
+              "Start 0.0375 mg/day delivery; replace twice weekly",
+              "Response-guided adjustment"
+            ],
+            [
+              "Twice-weekly patch · osteoporosis prevention",
+              "Start 0.025 mg/day delivery; replace twice weekly",
+              "Consider non-estrogen alternatives first"
+            ]
+          ]
+        }
+      },
+      "sourceIds": [
+        "label",
+        "oralcurrent",
+        "patch"
+      ],
+      "sourceSections": {
+        "label": "oral Dosage and Administration; patch §2.1–2.4",
+        "oralcurrent": "oral Dosage and Administration; patch §2.1–2.4",
+        "patch": "oral Dosage and Administration; patch §2.1–2.4"
+      },
+      "review": "Reviewed supporting public primary label/guideline sections; selected-product scope retained."
+    },
+    {
+      "section": "dosage",
+      "card": "Local vaginal dosing",
+      "assertions": {
+        "paragraphs": [
+          "Vagifem:one 10 mcg insert using the supplied applicator daily for 2 weeks, then twice weekly (for example Tuesday/Friday). Estring:one 2 mg reservoir ring delivering approximately 7.5 mcg/day, positioned in the upper third of the vagina continuously for 90 days; remove and replace if ongoing therapy is appropriate. The 2 mg reservoir is not a daily dose. If expelled, rinse Estring in lukewarm water and reinsert; retaining it beyond 90 days risks loss of effect and local complications."
+        ]
+      },
+      "sourceIds": [
+        "vagifem",
+        "estring"
+      ],
+      "sourceSections": {
+        "vagifem": "Vagifem §2.1; Estring Dosage and Administration",
+        "estring": "Vagifem §2.1; Estring Dosage and Administration"
+      },
+      "review": "Reviewed supporting public primary label/guideline sections; selected-product scope retained."
+    },
+    {
+      "section": "dosage",
+      "card": "Uterus and progestogen",
+      "assertions": {
+        "paragraphs": [
+          "For systemic estrogen with an intact uterus, provide an adequate progestogen plan to reduce endometrial hyperplasia/cancer risk. After hysterectomy, progestogen is generally unnecessary, although residual endometriosis may warrant it. The Menopause Society states that recommended low-dose vaginal estrogen generally does not require progestogen; long-term trial data beyond 1 year are limited. Older Vagifem labeling contains a broader instruction to consider progestogen, so distinguish this from systemic dosing and individualize the plan."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "patch",
+        "vagifem",
+        "estring",
+        "guideline"
+      ],
+      "sourceSections": {
+        "label": "oral Dosage; patch §2,5.7,5.14; Vagifem §2,5.8,5.15; Estring Warnings; NAMS Progestogen indication/Genitourinary symptoms",
+        "patch": "oral Dosage; patch §2,5.7,5.14; Vagifem §2,5.8,5.15; Estring Warnings; NAMS Progestogen indication/Genitourinary symptoms",
+        "vagifem": "oral Dosage; patch §2,5.7,5.14; Vagifem §2,5.8,5.15; Estring Warnings; NAMS Progestogen indication/Genitourinary symptoms",
+        "estring": "oral Dosage; patch §2,5.7,5.14; Vagifem §2,5.8,5.15; Estring Warnings; NAMS Progestogen indication/Genitourinary symptoms",
+        "guideline": "oral Dosage; patch §2,5.7,5.14; Vagifem §2,5.8,5.15; Estring Warnings; NAMS Progestogen indication/Genitourinary symptoms"
+      },
+      "review": "Reviewed supporting public primary label/guideline sections; selected-product scope retained."
+    },
+    {
+      "section": "dosage",
+      "card": "Patch application and treatment schedule",
+      "assertions": {
+        "paragraphs": [
+          "Apply the selected patch immediately after opening its pouch to clean, dry lower abdomen/buttocks; never breasts. Press firmly about 10 seconds, rotate sites with at least 1 week before reuse, and avoid oily/irritated skin or waistlines. Replace twice weekly; if detached, reapply or replace at another site and keep the original schedule. The selected label uses continuous estrogen after hysterectomy and describes 3 weeks on/1 week off with a uterus; coordinate the prescribed estrogen/progestogen regimen rather than changing schedules independently."
+        ]
+      },
+      "sourceIds": [
+        "patch"
+      ],
+      "sourceSections": {
+        "patch": "patch §2.1–2.5"
+      },
+      "review": "Reviewed supporting public primary label/guideline sections; selected-product scope retained."
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "assertions": {
+        "paragraphs": [
+          "Systemic unopposed estrogen increases endometrial cancer risk in women with a uterus; investigate persistent or recurrent unexplained postmenopausal bleeding. Assess thromboembolic and cardiovascular risks and symptoms promptly. Breast/ovarian cancer considerations depend on regimen, duration and patient history; results from oral conjugated-estrogen WHI trials are not numerical risk estimates for every estradiol route or dose.",
+          "The selected Golden State 2 mg oral tablet contains tartrazine, which can cause allergic-type reactions in susceptible individuals, particularly with aspirin hypersensitivity. Other estrogen warnings include gallbladder disease, severe hypercalcemia in metastatic breast cancer, retinal vascular events, elevated blood pressure, hypertriglyceridemia/pancreatitis, cholestatic jaundice, thyroid-replacement changes, fluid retention, hypocalcemia, endometriosis, severe allergy and angioedema, and exacerbation of susceptible conditions such as migraine or epilepsy.",
+          "Local-product precautions matter: Vagifem applicators may abrade severely atrophic mucosa. Estring can cause irritation, ulceration or erosion and may be unsuitable with vaginal narrowing/prolapse; treat infection before use and remove the ring during an infection until treated. Estring has lower systemic exposure, but the extent to which systemic estrogen risks apply is uncertain."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "oralcurrent",
+        "patch",
+        "vagifem",
+        "estring"
+      ],
+      "sourceSections": {
+        "label": "oral Contraindications tartrazine/Warnings/Precautions; patch/Vagifem §5; Estring Warnings/Precautions",
+        "oralcurrent": "oral Contraindications tartrazine/Warnings/Precautions; patch/Vagifem §5; Estring Warnings/Precautions",
+        "patch": "oral Contraindications tartrazine/Warnings/Precautions; patch/Vagifem §5; Estring Warnings/Precautions",
+        "vagifem": "oral Contraindications tartrazine/Warnings/Precautions; patch/Vagifem §5; Estring Warnings/Precautions",
+        "estring": "oral Contraindications tartrazine/Warnings/Precautions; patch/Vagifem §5; Estring Warnings/Precautions"
+      },
+      "review": "Reviewed supporting public primary label/guideline sections; selected-product scope retained."
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "assertions": {
+        "paragraphs": [
+          "Selected products contraindicate unexplained genital bleeding, estrogen-dependent neoplasia, active/history of DVT or PE, specified arterial thromboembolic disease, hepatic disease, or hypersensitivity. Patch, Vagifem and current Estring also specify proteinC/proteinS/antithrombin deficiency or other thrombophilia. Oral labels specify active/recent arterial disease; patch/Vagifem/Estring include history. Oral and Vagifem/patch labels specify breast cancer/history (oral has a specialist metastatic-treatment exception). Current Estring no longer lists breast cancer history as a separate blanket contraindication; any cancer-survivor use requires individualized specialist discussion. Do not use for pregnancy."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "oralcurrent",
+        "patch",
+        "vagifem",
+        "estring",
+        "guideline"
+      ],
+      "sourceSections": {
+        "label": "oral Contraindications; patch/Vagifem §4; updatedEstring Contraindications; NAMS cancer/local treatment discussion",
+        "oralcurrent": "oral Contraindications; patch/Vagifem §4; updatedEstring Contraindications; NAMS cancer/local treatment discussion",
+        "patch": "oral Contraindications; patch/Vagifem §4; updatedEstring Contraindications; NAMS cancer/local treatment discussion",
+        "vagifem": "oral Contraindications; patch/Vagifem §4; updatedEstring Contraindications; NAMS cancer/local treatment discussion",
+        "estring": "oral Contraindications; patch/Vagifem §4; updatedEstring Contraindications; NAMS cancer/local treatment discussion",
+        "guideline": "oral Contraindications; patch/Vagifem §4; updatedEstring Contraindications; NAMS cancer/local treatment discussion"
+      },
+      "review": "Reviewed supporting public primary label/guideline sections; selected-product scope retained."
+    },
+    {
+      "section": "safety",
+      "card": "Boxed warning status · current product transition",
+      "assertions": {
+        "paragraphs": [
+          "FDA began requesting changes in November 2025 and approved an initial group in February 2026. The updated Estring label has no boxed warning. The selected oral, Sandoz patch and Vagifem public labels still contain earlier boxed language, including endometrial/cardiovascular and dementia-related warnings. FDA retains the endometrial-cancer box for systemic estrogen-alone products while removing other specified boxed risk statements as individual labels are updated. Check the actual dispensed product’s current label; neither a universal old class box nor universal box removal is accurate."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "oralcurrent",
+        "patch",
+        "vagifem",
+        "estring",
+        "fda",
+        "fda-request",
+        "fda-approval"
+      ],
+      "sourceSections": {
+        "label": "Exact selected Boxed Warning contents/code; current Estring no boxed section; FDA November2025 request,February2026 approval,current updated-product list",
+        "oralcurrent": "Exact selected Boxed Warning contents/code; current Estring no boxed section; FDA November2025 request,February2026 approval,current updated-product list",
+        "patch": "Exact selected Boxed Warning contents/code; current Estring no boxed section; FDA November2025 request,February2026 approval,current updated-product list",
+        "vagifem": "Exact selected Boxed Warning contents/code; current Estring no boxed section; FDA November2025 request,February2026 approval,current updated-product list",
+        "estring": "Exact selected Boxed Warning contents/code; current Estring no boxed section; FDA November2025 request,February2026 approval,current updated-product list",
+        "fda": "Exact selected Boxed Warning contents/code; current Estring no boxed section; FDA November2025 request,February2026 approval,current updated-product list",
+        "fda-request": "Exact selected Boxed Warning contents/code; current Estring no boxed section; FDA November2025 request,February2026 approval,current updated-product list",
+        "fda-approval": "Exact selected Boxed Warning contents/code; current Estring no boxed section; FDA November2025 request,February2026 approval,current updated-product list"
+      },
+      "review": "Reviewed supporting public primary label/guideline sections; selected-product scope retained."
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions",
+      "assertions": {
+        "paragraphs": [
+          "Systemic therapy can cause headache, breast tenderness, nausea, bloating, edema, bleeding/spotting and patch-site reactions. Vagifem trials reported back pain, diarrhea, vaginal itching and yeast infection; Estring may cause discharge, irritation or local injury. Serious risks are described above; their likelihood depends on route, regimen and patient factors, and frequencies from different product trials are not directly comparable."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "patch",
+        "vagifem",
+        "estring"
+      ],
+      "sourceSections": {
+        "label": "oral Adverse Reactions; patch/Vagifem §6; Estring Adverse Reactions/Precautions",
+        "patch": "oral Adverse Reactions; patch/Vagifem §6; Estring Adverse Reactions/Precautions",
+        "vagifem": "oral Adverse Reactions; patch/Vagifem §6; Estring Adverse Reactions/Precautions",
+        "estring": "oral Adverse Reactions; patch/Vagifem §6; Estring Adverse Reactions/Precautions"
+      },
+      "review": "Reviewed supporting public primary label/guideline sections; selected-product scope retained."
+    },
+    {
+      "section": "interactions",
+      "card": "CYP3A4 inhibitors and inducers",
+      "assertions": {
+        "paragraphs": [
+          "Rifampin, carbamazepine, phenobarbital and St. John’s wort may lower estrogen exposure and alter effect or bleeding. Azoles, macrolides, ritonavir and grapefruit juice may increase exposure or adverse effects. Estring has no formal interaction studies; its label discusses potential systemic-estrogen CYP interactions, not a proven identical interaction magnitude for every route."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "oralcurrent",
+        "patch",
+        "vagifem",
+        "estring"
+      ],
+      "sourceSections": {
+        "label": "oral Clinical Pharmacology drug interactions; patch/Vagifem §7; Estring Clinical Pharmacology Drug Interactions",
+        "oralcurrent": "oral Clinical Pharmacology drug interactions; patch/Vagifem §7; Estring Clinical Pharmacology Drug Interactions",
+        "patch": "oral Clinical Pharmacology drug interactions; patch/Vagifem §7; Estring Clinical Pharmacology Drug Interactions",
+        "vagifem": "oral Clinical Pharmacology drug interactions; patch/Vagifem §7; Estring Clinical Pharmacology Drug Interactions",
+        "estring": "oral Clinical Pharmacology drug interactions; patch/Vagifem §7; Estring Clinical Pharmacology Drug Interactions"
+      },
+      "review": "Reviewed supporting public primary label/guideline sections; selected-product scope retained."
+    },
+    {
+      "section": "interactions",
+      "card": "Thyroid replacement and laboratory tests",
+      "assertions": {
+        "paragraphs": [
+          "Estrogens increase thyroid-binding globulin and other binding proteins. Patients dependent on thyroid replacement may need a dose change; monitor thyroid function. Total thyroid or sex-hormone measures and some coagulation/lipid tests may shift, so interpret results in context rather than treating a binding-protein change as a new disease."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "oralcurrent",
+        "patch",
+        "vagifem",
+        "estring"
+      ],
+      "sourceSections": {
+        "label": "oral Precautions lab/test interactions; patch §5.11,5.18; Vagifem §5.12,5.20; Estring Precautions",
+        "oralcurrent": "oral Precautions lab/test interactions; patch §5.11,5.18; Vagifem §5.12,5.20; Estring Precautions",
+        "patch": "oral Precautions lab/test interactions; patch §5.11,5.18; Vagifem §5.12,5.20; Estring Precautions",
+        "vagifem": "oral Precautions lab/test interactions; patch §5.11,5.18; Vagifem §5.12,5.20; Estring Precautions",
+        "estring": "oral Precautions lab/test interactions; patch §5.11,5.18; Vagifem §5.12,5.20; Estring Precautions"
+      },
+      "review": "Reviewed supporting public primary label/guideline sections; selected-product scope retained."
+    },
+    {
+      "section": "interactions",
+      "card": "Concurrent hormones",
+      "assertions": {
+        "paragraphs": [
+          "A progestogen’s own risks and contraindications must be reviewed when it is added for endometrial protection. Do not layer systemic and local regimens or substitute a systemic-dose vaginal ring without confirming the indication, total regimen, and product labeling."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "patch",
+        "estring",
+        "guideline"
+      ],
+      "sourceSections": {
+        "label": "oral Dosage/Precautions; patch §2,5.7; Estring Warnings; NAMS systemic vs local estrogen",
+        "patch": "oral Dosage/Precautions; patch §2,5.7; Estring Warnings; NAMS systemic vs local estrogen",
+        "estring": "oral Dosage/Precautions; patch §2,5.7; Estring Warnings; NAMS systemic vs local estrogen",
+        "guideline": "oral Dosage/Precautions; patch §2,5.7; Estring Warnings; NAMS systemic vs local estrogen"
+      },
+      "review": "Reviewed supporting public primary label/guideline sections; selected-product scope retained."
+    },
+    {
+      "section": "populations",
+      "card": "Menopause timing and older age",
+      "assertions": {
+        "paragraphs": [
+          "The Menopause Society’s public 2022 statement favors the benefit–risk balance for bothersome symptoms in otherwise eligible women under 60 years or within 10 years of menopause; later initiation has greater absolute risks and needs individualized discussion. This is not a guarantee of safety or a universal stopping age. Periodically reassess symptoms, risks and preferences."
+        ]
+      },
+      "sourceIds": [
+        "guideline",
+        "fda"
+      ],
+      "sourceSections": {
+        "guideline": "NAMS Abstract,General principles,Initiation and duration; FDA proposed systemic additions",
+        "fda": "NAMS Abstract,General principles,Initiation and duration; FDA proposed systemic additions"
+      },
+      "review": "Reviewed supporting public primary label/guideline sections; selected-product scope retained."
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy, lactation, and children",
+      "assertions": {
+        "paragraphs": [
+          "Estradiol menopausal products are not pregnancy treatments; oral labeling contraindicates known/suspected pregnancy, and Estring should not be used in pregnancy or lactation. Estrogens enter milk and can reduce milk production; other selected labels require clinical benefit-risk assessment. Patch/Vagifem/Estring are not indicated in children; oral pediatric safety/effectiveness is unestablished, and exposure before skeletal maturity can accelerate epiphyseal closure."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "oralcurrent",
+        "patch",
+        "vagifem",
+        "estring"
+      ],
+      "sourceSections": {
+        "label": "oral Contraindications/Precautions pregnancy,lactation,pediatric; patch/Vagifem §8; Estring Precautions",
+        "oralcurrent": "oral Contraindications/Precautions pregnancy,lactation,pediatric; patch/Vagifem §8; Estring Precautions",
+        "patch": "oral Contraindications/Precautions pregnancy,lactation,pediatric; patch/Vagifem §8; Estring Precautions",
+        "vagifem": "oral Contraindications/Precautions pregnancy,lactation,pediatric; patch/Vagifem §8; Estring Precautions",
+        "estring": "oral Contraindications/Precautions pregnancy,lactation,pediatric; patch/Vagifem §8; Estring Precautions"
+      },
+      "review": "Reviewed supporting public primary label/guideline sections; selected-product scope retained."
+    },
+    {
+      "section": "populations",
+      "card": "Renal, hepatic, and cancer considerations",
+      "assertions": {
+        "paragraphs": [
+          "Hepatic impairment/disease is a contraindication in selected labels, not simply a reason to copy a reduced oral dose. Kidney/cardiac disease increases concern about fluid retention; no universal renal dosing algorithm is established, and Estring has no dedicated renal/hepatic PK studies. Any consideration of low-dose vaginal estrogen after breast cancer needs oncology coordination; do not override the selected product’s contraindications through a general guideline summary."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "patch",
+        "vagifem",
+        "estring",
+        "guideline"
+      ],
+      "sourceSections": {
+        "label": "oral Contraindications/Precautions; patch/Vagifem §4,5,8; Estring Special populations/Contraindications/Precautions; NAMS cancer section",
+        "patch": "oral Contraindications/Precautions; patch/Vagifem §4,5,8; Estring Special populations/Contraindications/Precautions; NAMS cancer section",
+        "vagifem": "oral Contraindications/Precautions; patch/Vagifem §4,5,8; Estring Special populations/Contraindications/Precautions; NAMS cancer section",
+        "estring": "oral Contraindications/Precautions; patch/Vagifem §4,5,8; Estring Special populations/Contraindications/Precautions; NAMS cancer section",
+        "guideline": "oral Contraindications/Precautions; patch/Vagifem §4,5,8; Estring Special populations/Contraindications/Precautions; NAMS cancer section"
+      },
+      "review": "Reviewed supporting public primary label/guideline sections; selected-product scope retained."
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism of action",
+      "assertions": {
+        "paragraphs": [
+          "Estradiol is an endogenous estrogen that binds nuclear estrogen receptors in responsive tissues. It influences reproductive tissues and provides negative feedback on pituitary gonadotropins. Replacement can relieve estrogen-deficiency symptoms; local low-dose therapy primarily targets vaginal tissues."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "patch",
+        "vagifem",
+        "estring"
+      ],
+      "sourceSections": {
+        "label": "Clinical Pharmacology/§12.1",
+        "patch": "Clinical Pharmacology/§12.1",
+        "vagifem": "Clinical Pharmacology/§12.1",
+        "estring": "Clinical Pharmacology/§12.1"
+      },
+      "review": "Reviewed supporting public primary label/guideline sections; selected-product scope retained."
+    },
+    {
+      "section": "pharmacology",
+      "card": "Absorption and metabolism",
+      "assertions": {
+        "paragraphs": [
+          "Oral therapy undergoes hepatic first-pass metabolism; skin and vaginal absorption bypass initial first-pass delivery. Estradiol interconverts with estrone and estriol, undergoes conjugation and enterohepatic recycling, and is excreted in urine as parent/metabolite conjugates. Route and product design change systemic exposure; a patch mg/day, oral mg, and vaginal mcg dose cannot be converted by simple arithmetic."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "patch",
+        "vagifem",
+        "estring"
+      ],
+      "sourceSections": {
+        "label": "Clinical Pharmacology/§12.3",
+        "patch": "Clinical Pharmacology/§12.3",
+        "vagifem": "Clinical Pharmacology/§12.3",
+        "estring": "Clinical Pharmacology/§12.3"
+      },
+      "review": "Reviewed supporting public primary label/guideline sections; selected-product scope retained."
+    },
+    {
+      "section": "pharmacology",
+      "card": "Local versus systemic exposure",
+      "assertions": {
+        "paragraphs": [
+          "Estring produces an initial absorption peak followed by relatively low steady systemic exposure while releasing about 7.5 mcg/day locally. Vagifem also has systemic absorption; neither is a zero-absorption product. Serum estradiol/FSH levels generally do not predict symptom response or establish safety for routine menopausal/local-atrophy management."
+        ]
+      },
+      "sourceIds": [
+        "patch",
+        "vagifem",
+        "estring"
+      ],
+      "sourceSections": {
+        "patch": "patch §12.2,5.17; Vagifem §5.1,12; Estring PK,Precautions lab tests",
+        "vagifem": "patch §12.2,5.17; Vagifem §5.1,12; Estring PK,Precautions lab tests",
+        "estring": "patch §12.2,5.17; Vagifem §5.1,12; Estring PK,Precautions lab tests"
+      },
+      "review": "Reviewed supporting public primary label/guideline sections; selected-product scope retained."
+    },
+    {
+      "section": "practice",
+      "card": "Monitoring priorities",
+      "assertions": {
+        "paragraphs": [
+          "Review symptom response, adherence, uterine/progestogen plan, blood pressure, bleeding and breast findings at follow-up. Schedule breast screening according to age, risk and prior results; investigate unexplained persistent/recurrent bleeding. Monitor thyroid function when on replacement, triglycerides or calcium when clinically relevant, and fluid retention in cardiac/renal disease. Routine serum-hormone targeting is not established for these menopause regimens."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "oralcurrent",
+        "patch",
+        "vagifem",
+        "estring"
+      ],
+      "sourceSections": {
+        "label": "oral Precautions; patch/Vagifem §5,17; Estring Warnings/Precautions",
+        "oralcurrent": "oral Precautions; patch/Vagifem §5,17; Estring Warnings/Precautions",
+        "patch": "oral Precautions; patch/Vagifem §5,17; Estring Warnings/Precautions",
+        "vagifem": "oral Precautions; patch/Vagifem §5,17; Estring Warnings/Precautions",
+        "estring": "oral Precautions; patch/Vagifem §5,17; Estring Warnings/Precautions"
+      },
+      "review": "Reviewed supporting public primary label/guideline sections; selected-product scope retained."
+    },
+    {
+      "section": "practice",
+      "card": "Counseling and warning signs",
+      "assertions": {
+        "paragraphs": [
+          "Seek urgent care for chest pain, shortness of breath, unilateral leg swelling, stroke symptoms, severe allergy, or sudden visual change. Report unexplained genital bleeding, breast changes, jaundice, severe headache or new pelvic/vaginal pain. Explain the selected patch/application or vaginal insertion instructions, replacement calendar, and current product warning status; do not self-substitute routes."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "patch",
+        "vagifem",
+        "estring"
+      ],
+      "sourceSections": {
+        "label": "oral Patient Information; patch/Vagifem §17; Estring Patient Information",
+        "patch": "oral Patient Information; patch/Vagifem §17; Estring Patient Information",
+        "vagifem": "oral Patient Information; patch/Vagifem §17; Estring Patient Information",
+        "estring": "oral Patient Information; patch/Vagifem §17; Estring Patient Information"
+      },
+      "review": "Reviewed supporting public primary label/guideline sections; selected-product scope retained."
+    },
+    {
+      "section": "practice",
+      "card": "Overdose",
+      "assertions": {
+        "paragraphs": [
+          "Excess estrogen may cause nausea, vomiting, breast tenderness, abdominal pain, drowsiness/fatigue or withdrawal bleeding. Obtain professional advice and stop the excessive exposure under clinical direction; treatment is supportive. An Estring kept longer than 90 days loses effective delivery rather than creating a standard overdose scenario."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "patch",
+        "vagifem",
+        "estring"
+      ],
+      "sourceSections": {
+        "label": "oral Overdosage; patch/Vagifem §10; Estring Overdosage,Dosage",
+        "patch": "oral Overdosage; patch/Vagifem §10; Estring Overdosage,Dosage",
+        "vagifem": "oral Overdosage; patch/Vagifem §10; Estring Overdosage,Dosage",
+        "estring": "oral Overdosage; patch/Vagifem §10; Estring Overdosage,Dosage"
+      },
+      "review": "Reviewed supporting public primary label/guideline sections; selected-product scope retained."
+    },
+    {
+      "section": "product",
+      "card": "Representative product",
+      "assertions": {
+        "facts": [
+          [
+            "Selected product",
+            "Sandoz twice-weekly estradiol transdermal system"
+          ],
+          [
+            "Delivery rate",
+            "0.0375 mg/day"
+          ],
+          [
+            "Reservoir/system area",
+            "0.585 mg estradiol ·3.75 cm² system"
+          ],
+          [
+            "Example NDC",
+            "0781-7138-83 ·calendar pack of 8"
+          ]
+        ]
+      },
+      "sourceIds": [
+        "patch"
+      ],
+      "sourceSections": {
+        "patch": "patch §16.1"
+      },
+      "review": "Reviewed supporting public primary label/guideline sections; selected-product scope retained."
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "assertions": {
+        "paragraphs": [
+          "Reviewed representative oral tablet:2 mg; current comparison oral label describes 0.5/1/2 mg micronized estradiol. Selected twice-weekly patches deliver 0.025,0.0375,0.05,0.075,0.1 mg/day. Vagifem:10 mcg insert in disposable applicator. Estring:2 mg reservoir releasing 7.5 mcg/day over 90 days. Weekly patches, creams, Imvexxy, Femring, gels/sprays and injectable esters are not interchangeable regimens and are outside this focused profile."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "oralcurrent",
+        "patch",
+        "vagifem",
+        "estring"
+      ],
+      "sourceSections": {
+        "label": "oral Description; patch/Vagifem §3,16; Estring Description,How Supplied",
+        "oralcurrent": "oral Description; patch/Vagifem §3,16; Estring Description,How Supplied",
+        "patch": "oral Description; patch/Vagifem §3,16; Estring Description,How Supplied",
+        "vagifem": "oral Description; patch/Vagifem §3,16; Estring Description,How Supplied",
+        "estring": "oral Description; patch/Vagifem §3,16; Estring Description,How Supplied"
+      },
+      "review": "Reviewed supporting public primary label/guideline sections; selected-product scope retained."
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "assertions": {
+        "paragraphs": [
+          "Selected representative oral tablet:20–25°C in tight, light-resistant child-resistant container. Patch:20–25°C, excursions 15–30°C; keep pouched until application, then fold used adhesive sides together and discard in a sturdy child-proof container, never flush. Vagifem:20–25°C, excursions 15–30°C; do not refrigerate. Estring:15–25°C in its sealed pouch. Keep all products out of children’s reach; follow the exact dispensed product’s instructions."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "patch",
+        "vagifem",
+        "estring"
+      ],
+      "sourceSections": {
+        "label": "oral How Supplied; patch/Vagifem §16; Estring How Supplied,Storage",
+        "patch": "oral How Supplied; patch/Vagifem §16; Estring How Supplied,Storage",
+        "vagifem": "oral How Supplied; patch/Vagifem §16; Estring How Supplied,Storage",
+        "estring": "oral How Supplied; patch/Vagifem §16; Estring How Supplied,Storage"
+      },
+      "review": "Reviewed supporting public primary label/guideline sections; selected-product scope retained."
+    }
+  ],
+  "materialErrors": [],
+  "unresolvedMaterialGaps": [],
+  "sourceDiscrepancies": [
+    {
+      "issue": "FDA2025request and2026approvals do not establish universal removal from all estradiol labels. July2026 oral SPL still carries older box.",
+      "resolution": "Current FDA list,updatedEstring SPL and FDAapprovedPDF cross-checked; selected oral/patch/Vagifem actual boxed status shown; systemic estrogen-alone endometrial box retention stated.",
+      "material": true,
+      "resolved": true
+    },
+    {
+      "issue": "Updated Estring contraindication list omits standalone breast-cancer-history contraindication while selected oral/patch/Vagifem retain it.",
+      "resolution": "Precise product differences and specialist coordination; no universal contraindication added or removed.",
+      "material": true,
+      "resolved": true
+    },
+    {
+      "issue": "Older Vagifem label suggests considering progestogen; NAMS guideline generally does not require it for recommendedlowdose vaginal therapy.",
+      "resolution": "Both scopes stated; systemic uterine protection clearly separated; no generic progestogen dose invented.",
+      "resolved": true
+    },
+    {
+      "issue": "Older oral label retains preliminary WHI-study wording, legacy oncology regimens and calcium/vitaminD blanket dosing.",
+      "resolution": "No outdated WHI preliminary claims or blanket nutrient regimen copied; oncology indications acknowledged but regimens expressly excludedpending specialist review.",
+      "resolved": true
+    },
+    {
+      "issue": "Current Estring full label retains WHIMS trial/geriatric information despite FDA request to remove probable-dementia warning.",
+      "resolution": "No claim that all dementia text has disappeared; boxedstatuslimited exact currentlabel and remainingrisk uncertainty explained.",
+      "resolved": true
+    }
+  ],
+  "limitations": [
+    "Public primary references only; no paywalled access claimed.",
+    "Product-specific appearance,packaging,NDC,storage,delivery and dose limits.",
+    "Schema validity is not clinical review; parent integration build/render QA pending."
+  ],
+  "reviewedSourceSections": [
+    "Supporting oral Description,ClinicalPharmacology,Indications,Contraindications,BoxedWarnings,Warnings,Precautions,AdverseReactions,Overdosage,Dosage,HowSupplied,PatientInformation",
+    "Supporting complete patch/Vagifem BoxedWarnings,§§1–8,10,12,16–17 and insertion/application instructions",
+    "Supporting currentEstring Description,ClinicalPharmacology,Indications,Contraindications,Warnings,Precautions,AdverseReactions,Overdosage,Dosage,HowSupplied,Storage,PatientInformation; FDAapprovedsupplement22PDF crosscheck",
+    "FDANovember2025 requestedchanges,February2026 approval,currentupdatedproductlist",
+    "NAMS2022 fullpublicstatement relevantAbstract,Progestogenindication,Systemic/localdelivery,Genitourinarysymptoms,Cancerconsiderations,Initiation/duration; currentSocietypositionstatementindexconfirmed2022stilllisted"
+  ],
+  "verification": {
+    "schemaErrors": [],
+    "sectionIds": [
+      "indications",
+      "dosage",
+      "safety",
+      "interactions",
+      "populations",
+      "pharmacology",
+      "practice",
+      "product"
+    ],
+    "heroFacts": 3,
+    "safetyCardOrder": [
+      "Warnings and precautions",
+      "Contraindications",
+      "Boxed warning status · current product transition",
+      "Adverse reactions"
+    ],
+    "productCardOrder": [
+      "Representative product",
+      "Dosage forms and strengths",
+      "Storage and handling"
+    ],
+    "renderedPageQA": "Pending parent batch integration QA"
+  },
+  "regulatoryMetadata": {
+    "estringFDAApprovedSupplement": "NDA020472/supplement22,2026,ReferenceID5744942",
+    "estringFDAApprovedUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/020472s022lbl.pdf",
+    "currentSocietyPositionStatementIndex": "https://menopause.org/professional-resources/position-statements",
+    "accessed": "2026-10-01"
+  }
+}

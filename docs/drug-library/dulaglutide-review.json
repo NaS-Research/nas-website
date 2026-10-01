@@ -1,0 +1,432 @@
+{
+  "slug": "dulaglutide",
+  "checked": "2026-10-01",
+  "status": "source_reviewed",
+  "scope": "A weekly subcutaneous medicine for type 2 diabetes. Labeled cardiovascular prevention is limited to adults with the specified cardiovascular risk.",
+  "sources": [
+    {
+      "id": "label",
+      "title": "Dulaglutide · Trulicity full U.S. prescribing information",
+      "publisher": "DailyMed / official U.S. product labeling",
+      "note": "Clinical PI and Medication Guide revised March 2026 (TRU-0021-USPI-20260312). SPL v62 effective June 16, 2026; API publication August 10, 2026. Device IFUs have separate 2022/2023 dates. Checked October 1, 2026.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=463050bd-2b1c-40f5-b3c3-0a04bb433309"
+    }
+  ],
+  "sourceEvidence": {
+    "label": {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=463050bd-2b1c-40f5-b3c3-0a04bb433309",
+      "revision": "Clinical PI and Medication Guide revised March 2026 (TRU-0021-USPI-20260312). SPL v62 effective June 16, 2026; API publication August 10, 2026. Device IFUs have separate 2022/2023 dates. Checked October 1, 2026.",
+      "splVersion": "62",
+      "effectiveTime": "20260616",
+      "checked": "2026-10-01",
+      "access": "Full public supporting primary label sections read; no paywall access",
+      "localEvidence": "/tmp/nas-drug-sources/trulicity.xml",
+      "xmlSha256": "2a790740cae6415ba5160d0c578d599e26decb426a6f5c59d99803bb53b227d5",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/463050bd-2b1c-40f5-b3c3-0a04bb433309.xml"
+    }
+  },
+  "assertionMap": [
+    {
+      "section": "indications",
+      "card": "Labeled uses",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "1 Indications; Medication Guide"
+        ]
+      },
+      "claims": [
+        [
+          "Adults and children age ≥10 with type 2 diabetes",
+          "Improve glycemic control as an adjunct to diet and exercise."
+        ],
+        [
+          "Adults with type 2 diabetes and established cardiovascular disease or multiple cardiovascular risk factors",
+          "Reduce major adverse cardiovascular events: cardiovascular death, nonfatal myocardial infarction or nonfatal stroke."
+        ]
+      ]
+    },
+    {
+      "section": "indications",
+      "card": "Scope of treatment",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "1 Indications; Medication Guide"
+        ]
+      },
+      "claims": [
+        "The reviewed U.S. product is a prescription subcutaneous injection. This profile supplies no obesity, type 1 diabetes, ketoacidosis or pediatric cardiovascular-prevention regimen."
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Weekly regimens",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "2.1 Adult;2.2 Pediatric;2.3 Missed;2.4 Administration;Medication Guide"
+        ]
+      },
+      "claims": [
+        [
+          "Adults",
+          "0.75 mg subcutaneously once weekly",
+          "After 4 weeks, may increase to 1.5 mg for additional glycemic control. Further increases are in 1.5 mg steps after ≥4 weeks at the current dose: 3 mg then 4.5 mg weekly maximum."
+        ],
+        [
+          "Age ≥10",
+          "0.75 mg subcutaneously once weekly",
+          "If needed after ≥4 weeks, increase to 1.5 mg weekly maximum. Adult 3 mg/4.5 mg doses are not pediatric regimens."
+        ]
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Administration and missed doses",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "2.1 Adult;2.2 Pediatric;2.3 Missed;2.4 Administration;Medication Guide"
+        ]
+      },
+      "claims": [
+        "Use on the same weekly day, at any time, with or without food. Inject under the skin of the abdomen, thigh or upper arm; rotate sites. Do not give intravenously or intramuscularly. Do not mix with insulin; separate injections may use the same body region but not adjacent sites. Take a missed dose only if ≥72 hours remain until the next dose; otherwise skip and resume the usual day. A day change requires ≥72 hours since the last dose. Do not give two doses within 3 days."
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Boxed warning;4 Contraindications;5.1–5.9 Warnings;6 Adverse;10 Overdose"
+        ]
+      },
+      "claims": [
+        "Suspected pancreatitis: discontinue and assess severe persistent abdominal pain, possibly radiating to the back, with or without nausea/vomiting.",
+        "Insulin or sulfonylureas increase hypoglycemia risk, including severe events; their doses may need reduction. Serious allergy requires discontinuation and prompt treatment.",
+        "Severe gastrointestinal reactions can occur; use is not recommended in severe gastroparesis. Vomiting/diarrhea can cause dehydration and acute kidney injury: monitor renal function, especially during initiation/escalation when symptoms cause fluid loss.",
+        "Monitor people with prior diabetic retinopathy. Rapid glucose improvement may temporarily worsen retinopathy. Suspected gallstones/cholecystitis require gallbladder evaluation.",
+        "Delayed gastric emptying is associated with rare pulmonary aspiration during general anesthesia/deep sedation, even with reported fasting. Inform the procedural team; the label has insufficient evidence to prescribe a universal withholding interval.",
+        "Counsel on thyroid-tumor symptoms (neck mass, persistent hoarseness, dysphagia or dyspnea). Routine calcitonin testing/thyroid ultrasound has uncertain value; evaluate nodules or substantially elevated calcitonin."
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Boxed warning;4 Contraindications;5.1–5.9 Warnings;6 Adverse;10 Overdose"
+        ]
+      },
+      "claims": [
+        "Personal or family history of medullary thyroid carcinoma (MTC), multiple endocrine neoplasia syndrome type 2 (MEN 2), or a previous serious hypersensitivity reaction to dulaglutide or a component."
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Boxed warning · Thyroid C-cell tumors",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Boxed warning;4 Contraindications;5.1–5.9 Warnings;6 Adverse;10 Overdose"
+        ]
+      },
+      "claims": [
+        "Dulaglutide caused thyroid C-cell tumors in rats. Whether it causes these tumors, including MTC, in humans is unknown. The warning includes MTC/MEN 2 contraindications and thyroid-symptom counseling; it does not establish human causation."
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions and overdose",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Boxed warning;4 Contraindications;5.1–5.9 Warnings;6 Adverse;10 Overdose"
+        ]
+      },
+      "claims": [
+        "Common reactions include nausea, diarrhea, vomiting, abdominal pain and reduced appetite; dyspepsia and fatigue are also reported. Postmarketing reports include serious allergy, kidney injury, ileus/intestinal obstruction or severe constipation, and pulmonary aspiration. Spontaneous reports cannot establish frequency or causation. Overdose may cause gastrointestinal symptoms and hypoglycemia; seek urgent advice/Poison Help for supportive treatment and glucose monitoring."
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Clinically relevant interactions",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "7.1 Oral medicines;7.2 Insulin/secretagogues;12.3 gastric emptying"
+        ]
+      },
+      "claims": [
+        "Consider lowering insulin or insulin-secretagogue doses to reduce hypoglycemia; monitor glucose and symptoms.",
+        "Dulaglutide slows gastric emptying and can reduce the absorption rate of oral medicines. The effect is greatest after the first dose and diminishes with repeated doses.",
+        "At 1.5 mg, studied oral drugs showed no clinically relevant absorption changes; experience at 3 mg/4.5 mg is limited. Monitor levels/effects of narrow-therapeutic-index medicines such as warfarin. Do not assume every oral medicine is unaffected."
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy and lactation",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "8.1–8.7 Specific populations;2.2"
+        ]
+      },
+      "claims": [
+        "Human pregnancy data are insufficient; animal findings indicate potential fetal risk. Use during pregnancy only if benefit justifies risk, while addressing risks of poorly controlled diabetes. Human milk, infant-effect and milk-production data are unavailable; weigh breastfeeding benefits, maternal need and possible infant effects with the clinician."
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Pediatric and geriatric use",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "8.1–8.7 Specific populations;2.2"
+        ]
+      },
+      "claims": [
+        "Glycemic efficacy/safety is established from age 10; below 10 it is not established. Pediatric maximum is 1.5 mg weekly. Trials found no overall safety/efficacy difference in older adults, but assess individual comorbidity and treatment tolerance."
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Renal and hepatic impairment",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "8.1–8.7 Specific populations;2.2"
+        ]
+      },
+      "claims": [
+        "No dose adjustment is recommended for renal impairment, including end-stage renal disease; use caution in ESRD and monitor renal function when gastrointestinal effects cause volume depletion. Hepatic impairment does not require a labeled numeric adjustment, but clinical experience is limited: use cautiously across degrees of hepatic impairment."
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism of action",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "12.1 Mechanism;12.3 PK"
+        ]
+      },
+      "claims": [
+        "GLP-1 receptor activation increases intracellular cAMP and glucose-dependent insulin secretion, suppresses glucagon and slows gastric emptying."
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Pharmacokinetics",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "12.1 Mechanism;12.3 PK"
+        ]
+      },
+      "claims": [
+        [
+          "Time to peak concentration",
+          "24–72 hours; median 48 hours after subcutaneous dosing."
+        ],
+        [
+          "Steady state",
+          "About 2–4 weeks of weekly dosing."
+        ],
+        [
+          "Elimination half-life",
+          "Approximately 5 days."
+        ],
+        [
+          "Metabolism",
+          "Presumed general protein catabolism to amino acids."
+        ]
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Monitoring priorities",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "5;17 Counseling;Medication Guide;four strength-specific IFUs"
+        ]
+      },
+      "claims": [
+        "Follow glucose/HbA1c and hypoglycemia risk according to the treatment plan. Assess nausea, hydration and weight/appetite tolerance before escalation. Check renal function with persistent vomiting/diarrhea or other fluid-loss reactions; monitor retinopathy when previously present. Review planned anesthesia/deep sedation and new oral or glucose-lowering medicines. The label does not require routine calcitonin/thyroid ultrasound screening."
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Pen technique and counseling",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "5;17 Counseling;Medication Guide;four strength-specific IFUs"
+        ]
+      },
+      "claims": [
+        "A clinician should demonstrate the exact pen. Check dose, expiry, damage and clear/colorless solution without particles. Wash hands; keep the pen locked while removing the base cap, do not replace the cap or touch the needle. Place the clear base flat/firm against skin, unlock, press the green button and hold the base until the second loud click (about 5–10 seconds); a visible gray plunger confirms delivery. Use once and immediately place in a sharps container. Obtain trained help for vision problems. A pen dropped on a hard surface should be replaced. Report severe abdominal pain, allergy, persistent gastrointestinal symptoms or vision changes promptly."
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Representative product · Trulicity 0.75 mg/0.5 mL pen",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "3 Forms;11 Description;16.1 Supplied;16.2 Storage;package panels;IFUs"
+        ]
+      },
+      "claims": [
+        [
+          "Ingredient / route",
+          "Dulaglutide · subcutaneous injection."
+        ],
+        [
+          "Presentation",
+          "Clear, colorless solution; disposable prefilled single-dose pen."
+        ],
+        [
+          "Manufacturer",
+          "Eli Lilly and Company."
+        ],
+        [
+          "Example NDC",
+          "0002-1433-80 · carton of four pens."
+        ],
+        [
+          "U.S. status",
+          "Prescription biologic (BLA labeling); no stock claim."
+        ]
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "3 Forms;11 Description;16.1 Supplied;16.2 Storage;package panels;IFUs"
+        ]
+      },
+      "claims": [
+        [
+          "Single-dose pens",
+          "0.75 mg, 1.5 mg, 3 mg and 4.5 mg; each dose in 0.5 mL."
+        ],
+        [
+          "Four-pen carton examples",
+          "0.75 mg: 0002-1433-80; 1.5 mg: 0002-1434-80; 3 mg: 0002-2236-80; 4.5 mg: 0002-3182-80."
+        ],
+        [
+          "Pediatric restriction",
+          "Only the 0.75 mg and 1.5 mg labeled regimens apply from age 10."
+        ]
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "3 Forms;11 Description;16.1 Supplied;16.2 Storage;package panels;IFUs"
+        ]
+      },
+      "claims": [
+        "Refrigerate at 2–8°C. A pen may be kept at room temperature below 30°C for a total of 14 days. Do not freeze; discard a frozen pen. Keep in the original carton, protect from direct heat/light and handle glass parts carefully. Keep away from children and follow local sharps-disposal requirements."
+      ]
+    },
+    {
+      "section": "hero/essential",
+      "card": "Scope and essential safety",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": [
+        "1 Indications; Medication Guide",
+        "Boxed warning;4 Contraindications;5.1–5.9 Warnings;6 Adverse;10 Overdose",
+        "3 Forms;11 Description;16.1 Supplied;16.2 Storage;package panels;IFUs"
+      ],
+      "claims": [
+        "A weekly subcutaneous medicine for type 2 diabetes. Labeled cardiovascular prevention is limited to adults with the specified cardiovascular risk.",
+        "Stop dulaglutide and obtain prompt clinical assessment for severe persistent abdominal pain, sometimes extending to the back, with or without nausea or vomiting: pancreatitis is a labeled risk.",
+        [
+          "Therapeutic class",
+          "GLP-1 receptor agonist"
+        ],
+        [
+          "Representative brand",
+          "Trulicity"
+        ],
+        [
+          "Reference focus",
+          "U.S. single-dose pens; adult and age ≥10 regimens"
+        ]
+      ]
+    }
+  ],
+  "exclusions": [
+    "Non-U.S. regimens/marketing claims; other manufacturer packages; no off-label algorithm or trial-effect-size claim"
+  ],
+  "gaps": [
+    {
+      "material": false,
+      "topic": "Periprocedural management",
+      "resolution": "The current label states evidence is insufficient to dictate a withholding interval. The profile asks for procedural-team review and supplies no unverified withholding algorithm."
+    }
+  ],
+  "materialErrors": [],
+  "validation": {
+    "schema": "Passed validateMonograph with zero errors, 2026-10-01.",
+    "renderedPage": "Pending parent integration QA"
+  },
+  "monographSha256": "418eaebc208c6e4df128c2dc16f57f2bf0232a6e7e7a617feb40271ffa78be5b",
+  "sourceInterpretationNotes": [
+    "Clinical PI revision, SPL effectiveTime/version and API publication are distinct metadata, all stated separately. Product evidence is U.S. prescription labeling, not a pharmacy inventory claim.",
+    "Adult 4.5 mg and pediatric 1.5 mg maxima are separated; no pediatric cardiovascular-prevention claim. The March 2026 severe-GI warning and current section 5.2 pancreatitis wording are used without an outdated restart algorithm.",
+    "IFUs: 0.75/1.5 mg revised 11/2022; 3/4.5 mg implemented 04/2023. All four full IFUs reviewed; the basic base/button technique matches, with exact-pen demonstration required."
+  ]
+}

@@ -1,0 +1,517 @@
+{
+  "reviewDate": "2026-10-01",
+  "scope": "Independent targeted primary-source safety review of listed critical assertions; not an exhaustive second clinical review, pharmacist signoff, or rendered-page QA.",
+  "status": "Ten profiles reviewed for selected critical assertions; current hashes and scope limitations recorded.",
+  "profiles": [
+    {
+      "drug": "montelukast",
+      "fileSha256": "c26bcac4f51078fcb493f641c8613239678ef90b4285b56794fab7d699cc52ce",
+      "result": "No material safety error identified in the selected assertions checked.",
+      "checks": [
+        {
+          "assertion": "Indication-dependent ages and 10/5/4 mg doses; single evening dose for asthma plus rhinitis; EIB minimum age 6, two-hour lead and no repeat within 24 hours; granule liquids/foods and 15-minute use; psychiatric stop warning, rhinitis restriction, PKU quantities and inducer monitoring agree.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=482dcc92-b47f-4ea6-854a-f5ac2aea7842",
+          "sourceSection": "1–2, Boxed warning, 5.1–5.6, 7, 8.6–8.7",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Restricted rhinitis use and serious neuropsychiatric warning agree with FDA communication.",
+          "sourceId": "fda",
+          "sourceUrl": "https://www.fda.gov/drugs/drug-safety-communications/fda-requires-boxed-warning-about-serious-mental-health-side-effects-asthma-and-allergy-drug",
+          "sourceSection": "2020 safety communication",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning · Serious neuropsychiatric events",
+          "Adverse reactions"
+        ],
+        "productCards": 3,
+        "coreSectionOrder": [
+          "indications",
+          "dosage",
+          "safety",
+          "interactions",
+          "populations",
+          "pharmacology",
+          "practice",
+          "product"
+        ]
+      },
+      "issues": []
+    },
+    {
+      "drug": "amoxicillin",
+      "fileSha256": "3383635240dbe55fc7b034572fe90bc87c43d88d31d11ed47e6eff5047d5882c",
+      "result": "No material safety error identified in the selected assertions checked.",
+      "checks": [
+        {
+          "assertion": "Adult 500/875 mg and pediatric daily mg/kg schedules, infant 30 mg/kg/day limit, renal 875 mg restriction and dialysis supplemental doses agree. Serious beta-lactam allergy, DIES and mononucleosis warnings are represented. Exactly 40 kg boundary is explicitly flagged rather than guessed.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b07b5ac4-253e-4c83-91c3-3fdc46e91a0f",
+          "sourceSection": "2.2–2.5, 4–5, 7",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Strep regimens 50 mg/kg daily (maximum 1 g) or 25 mg/kg per dose twice daily (maximum 500 mg), each for ten days, agree.",
+          "sourceId": "cdc-strep",
+          "sourceSection": "Recommended antibiotics",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees",
+          "sourceUrl": "https://www.cdc.gov/group-a-strep/hcp/clinical-guidance/strep-throat.html"
+        },
+        {
+          "assertion": "Susceptibility-dependent clarithromycin use and eradication testing after antibiotics/PPI washout agree with the public society summary.",
+          "sourceId": "acg",
+          "sourceUrl": "https://gi.org/journals-publications/ebgi/schoenfeld_sep2024/",
+          "sourceSection": "Recommendations and key concepts",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning status",
+          "Adverse reactions"
+        ],
+        "productCards": 3,
+        "coreSectionOrder": [
+          "indications",
+          "dosage",
+          "safety",
+          "interactions",
+          "populations",
+          "pharmacology",
+          "practice",
+          "product"
+        ]
+      },
+      "issues": []
+    },
+    {
+      "drug": "fluticasone",
+      "fileSha256": "88a841071bb8bc70083302ac8aa9bd493ba9d7083692811aa2626a25409d73c9",
+      "result": "No material safety error identified in the selected assertions checked.",
+      "checks": [
+        {
+          "assertion": "Propionate age 4 minimum and nasal dose per nostril, adult first-week versus maintenance dosing, and pediatric duration review agree.",
+          "sourceId": "nasal",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b6134ba0-b70a-4eac-9a82-cef64b242c1d",
+          "sourceSection": "Drug Facts: Directions and Warnings",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Furoate age 2 minimum, per-nostril dosing and pediatric duration review agree.",
+          "sourceId": "sensimist",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=107100af-7ca2-44e8-b067-c0ab0a19a6dc",
+          "sourceSection": "Drug Facts: Directions and Warnings",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Asthma age 4 minimum, 88 mcg twice daily pediatric dose, adult 880 mcg twice daily maximum, rescue distinction, priming and strong CYP3A4 interaction warning agree.",
+          "sourceId": "hfa",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=99249b31-bf0a-464f-8335-845279350dbe",
+          "sourceSection": "1–2, 4–5, 7–8",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Age 5–11 daily 50 mcg; age 12+ daily 100 mcg start and 200 mcg maximum; severe milk-protein allergy contraindication and hepatic monitoring distinctions agree.",
+          "sourceId": "arnuity",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=50f193ee-1691-486d-9370-a664df63695c",
+          "sourceSection": "1–2, 4–5, 7–8",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning status",
+          "Adverse reactions and excessive exposure"
+        ],
+        "productCards": 3,
+        "coreSectionOrder": [
+          "indications",
+          "dosage",
+          "safety",
+          "interactions",
+          "populations",
+          "pharmacology",
+          "practice",
+          "product"
+        ]
+      },
+      "issues": []
+    },
+    {
+      "drug": "tamsulosin",
+      "fileSha256": "aacfb4cd28f3d523b775e76c0c700a2aef1d0e0b611f3c68006e02ad353a630e",
+      "result": "No material safety error identified in the selected assertions checked.",
+      "checks": [
+        {
+          "assertion": "0.4 mg after the same meal, 0.8 mg escalation after 2–4 weeks, 0.4 mg restart after interruption, intact capsule, strong CYP3A4 avoidance, IFIS/priapism and severe organ-impairment gaps agree.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b3384748-92f1-0b49-e053-2a95a90abc73",
+          "sourceSection": "2, 4–5, 7–8",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Off-label distal 5–10 mm stone scope and discontinuation for infection, refractory pain or renal deterioration agree.",
+          "sourceId": "eau",
+          "sourceUrl": "https://uroweb.org/guidelines/urolithiasis/chapter/guidelines",
+          "sourceSection": "3.4.3.a and 3.4.9.b",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning status",
+          "Adverse reactions and overdose"
+        ],
+        "productCards": 3,
+        "coreSectionOrder": [
+          "indications",
+          "dosage",
+          "safety",
+          "interactions",
+          "populations",
+          "pharmacology",
+          "practice",
+          "product"
+        ]
+      },
+      "issues": []
+    },
+    {
+      "drug": "insulin-glargine",
+      "fileSha256": "cd98fd093a66e4171831c0e58af8b46ceacc015ff34f84a86dcc70d1ab3a0e06",
+      "result": "No material safety error identified in the selected assertions checked.",
+      "checks": [
+        {
+          "assertion": "U-100 initial basal dosing, 80% U-300 conversion, once-daily versus twice-daily NPH distinction and injection safeguards agree.",
+          "sourceId": "lantus",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d5e07a0c-7e14-4756-9152-9fea485d654a",
+          "sourceSection": "2.1–2.4, 4–5",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "U-300 initial dose distinguishes total from basal insulin; titration interval, five-day effect, 80% twice-daily NPH/detemir conversion and 80/160-unit device limits agree.",
+          "sourceId": "toujeo",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c9561d96-124d-48ca-982f-0aa1575bff36",
+          "sourceSection": "2.1–2.4, 4–5",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Pediatric type 1 versus adult type 2 scope, U-100 conversion and 80% U-300/twice-daily NPH switching agree.",
+          "sourceId": "basaglar",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0ad21db3-2b1c-4ed9-a687-bdd6a74d0aae",
+          "sourceSection": "1–2, 4–5",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Initial U-100 doses and 80% U-300/twice-daily NPH switching agree.",
+          "sourceId": "semglee",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8cf5544f-87d6-468b-f6ae-898b1fdb5d80",
+          "sourceSection": "2.2–2.4, 4–5",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Initial U-100 doses, 80% U-300/twice-daily NPH switching and hypoglycemia contraindication agree.",
+          "sourceId": "rezvoglar",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f6af8706-2058-4fe1-99c8-43684c20bfa2",
+          "sourceSection": "2.2–2.4, 4–5",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning status",
+          "Adverse reactions and overdose"
+        ],
+        "productCards": 3,
+        "coreSectionOrder": [
+          "indications",
+          "dosage",
+          "safety",
+          "interactions",
+          "populations",
+          "pharmacology",
+          "practice",
+          "product"
+        ]
+      },
+      "issues": []
+    },
+    {
+      "drug": "empagliflozin",
+      "fileSha256": "9754c7ed1f4267c57db033a42b81822ade247773fff3fabe61c40740716adcdf",
+      "result": "No material safety error identified in the selected assertions checked.",
+      "checks": [
+        {
+          "assertion": "Adult HF/CKD versus pediatric age 10+ glycemic scope, daily 10/25 mg distinction, three-day surgical hold and oral-intake restart, indication-dependent renal evidence boundaries, ketoacidosis despite glucose below 250, amputation precaution and lithium reduction interaction agree.",
+          "sourceId": "jardiance",
+          "sourceSection": "1–2, 4–5, 7, 8.6–8.7",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=faf3dd6a-9cd0-39c2-0d2e-232cb3f67565"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning status",
+          "Adverse reactions and overdose"
+        ],
+        "productCards": 3,
+        "coreSectionOrder": [
+          "indications",
+          "dosage",
+          "safety",
+          "interactions",
+          "populations",
+          "pharmacology",
+          "practice",
+          "product"
+        ]
+      },
+      "issues": []
+    },
+    {
+      "drug": "furosemide",
+      "fileSha256": "c6426329fb498f9e46a14925db1326eddd3a23525852636314b0043f2edb9105",
+      "result": "No material safety error identified in the selected assertions checked.",
+      "checks": [
+        {
+          "assertion": "Oral adult 20–80 mg start, 6–8-hour repeat interval, supervised 600 mg/day ceiling and pediatric 2 mg/kg start agree.",
+          "sourceId": "oral",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9e493331-dddd-496e-abf8-61747fb67aba",
+          "sourceSection": "Dosage and Administration, Warnings, Precautions",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Adult 20–40 mg edema start, pulmonary-edema 40 then 80 mg, pediatric 1 mg/kg start, premature-infant 1 mg/kg/day maximum, controlled-infusion rate and anuria/ototoxicity precautions agree.",
+          "sourceId": "injection",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6d9caaab-d874-4cf1-b9fe-408452a18998",
+          "sourceSection": "2–5, 7, 8.4",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning status · Product-specific labeling",
+          "Adverse reactions"
+        ],
+        "productCards": 3,
+        "coreSectionOrder": [
+          "indications",
+          "dosage",
+          "safety",
+          "interactions",
+          "populations",
+          "pharmacology",
+          "practice",
+          "product"
+        ]
+      },
+      "issues": []
+    },
+    {
+      "drug": "meloxicam",
+      "fileSha256": "b0c99c4222a6d2d12981743d0f4b10967b3f6a4ebd4190cea60afdefcedbcf39",
+      "result": "No material safety error identified in the selected assertions checked.",
+      "checks": [
+        {
+          "assertion": "Adult 7.5/15 mg dosing, JRA 0.125 mg/kg/day maximum 7.5 mg, dialysis 7.5 mg/day ceiling and fetal renal/ductal precautions agree. Label inconsistency on suspension substitution is disclosed.",
+          "sourceId": "suspension",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=55af77dd-2abc-49a6-990c-399d5a5e7a91",
+          "sourceSection": "2.2–2.6, 5.11, 8.1",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Separate 5/10 mg adult OA regimen, dialysis 5 mg/day ceiling and prior serious NSAID skin-reaction contraindication agree.",
+          "sourceId": "capsule",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ce9a8fd7-9bd2-4793-82f3-0fb8f0965d0f",
+          "sourceSection": "2.2–2.3, 5.9, 8.7",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "IV 30 mg daily over 15 seconds, hydration, moderate/severe renal restriction and volume-depletion contraindication, pemetrexed hold window agree.",
+          "sourceId": "iv",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bf2b198c-0726-488a-b911-4fe394e4b56e",
+          "sourceSection": "2, 4, 5.6, 7, 8.7",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning · Cardiovascular and gastrointestinal events",
+          "Adverse reactions"
+        ],
+        "productCards": 3,
+        "coreSectionOrder": [
+          "indications",
+          "dosage",
+          "safety",
+          "interactions",
+          "populations",
+          "pharmacology",
+          "practice",
+          "product"
+        ]
+      },
+      "issues": []
+    },
+    {
+      "drug": "apixaban",
+      "fileSha256": "594cf0518d8bcc574041f49ce3e27b7f07806588b81d3b29dbb9ead747e068d8",
+      "result": "No material safety error identified in the selected assertions checked.",
+      "checks": [
+        {
+          "assertion": "Adult indication-specific regimens and two-of-three AF reduction criteria; all eight pediatric weight tiers and initial anticoagulation requirement; preparation windows, vomited-dose rule, surgical interruption, inhibitor adjustment and renal/hepatic distinctions agree. Neuraxial label timings are explicitly distinguished from a complete anesthesia protocol.",
+          "sourceId": "label",
+          "sourceUrl": "https://packageinserts.bms.com/pi/pi_eliquis.pdf",
+          "sourceSection": "2.1–2.7, 4–5, 7, 8.6–8.7",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "U.S. sales/manufacture cessation after December 22, 2025 and FDA adverse benefit-risk conclusion agree.",
+          "sourceId": "reversal",
+          "sourceUrl": "https://www.fda.gov/vaccines-blood-biologics/safety-availability-biologics/update-safety-andexxa",
+          "sourceSection": "FDA December 18, 2025 communication",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Substantial human milk transfer and preference for an alternative agree; difference from older PI absence-of-human-data wording is disclosed.",
+          "sourceId": "milk",
+          "sourceUrl": "https://www.ncbi.nlm.nih.gov/sites/books/NBK500741/",
+          "sourceSection": "Summary of use during lactation",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning · Thrombosis and spinal hematoma",
+          "Adverse reactions"
+        ],
+        "productCards": 3,
+        "coreSectionOrder": [
+          "indications",
+          "dosage",
+          "safety",
+          "interactions",
+          "populations",
+          "pharmacology",
+          "practice",
+          "product"
+        ]
+      },
+      "issues": []
+    },
+    {
+      "drug": "simvastatin",
+      "fileSha256": "ba0c94a4396efb8ff72107721216992690c739ea20e6e429464513897bb8873b",
+      "result": "No material safety error identified in the selected assertions checked.",
+      "checks": [
+        {
+          "assertion": "Adult 20–40 mg and pediatric HeFH 10–40 mg ranges; chronic-only 80 mg restriction; severe-renal 5 mg start; interaction caps 10/20 mg, lomitapide reduction, contraindicated combinations and current myasthenia reports agree.",
+          "sourceId": "generic",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c03ab80c-a3ae-4634-a76b-f53740db76f5",
+          "sourceSection": "2.1–2.5, 4–5, 7–8",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Brand dose restrictions and discontinued 5/80 mg brand strengths agree with manufacturer PI.",
+          "sourceId": "label",
+          "sourceUrl": "https://www.organon.com/product/usa/pi_circulars/z/zocor/zocor_pi.pdf",
+          "sourceSection": "2, 3, 4, 16",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning · Label status",
+          "Adverse reactions"
+        ],
+        "productCards": 3,
+        "coreSectionOrder": [
+          "indications",
+          "dosage",
+          "safety",
+          "interactions",
+          "populations",
+          "pharmacology",
+          "practice",
+          "product"
+        ]
+      },
+      "issues": []
+    }
+  ],
+  "limitations": [
+    "Other cited sources and assertions are not independently certified by this targeted audit. Author source-audit files remain required.",
+    "Public ACG society summary was read; no access to paywalled full guideline is claimed.",
+    "Exact label revision/publication metadata is primarily maintained in author audit files; independent direct current source retrieval supports the selected clinical assertions."
+  ],
+  "observations": [
+    {
+      "drug": "meloxicam",
+      "severity": "non-clinical formatting",
+      "status": "resolved-on-current-file-recheck",
+      "description": "Initial source titles/notes had decimal spacing as 7. 5; current file recheck confirms it was corrected to 7.5. Dose regimens were correct throughout."
+    }
+  ],
+  "unresolvedMaterialClinicalErrors": []
+}

@@ -1,0 +1,1014 @@
+{
+  "drug": "latanoprost",
+  "status": "source_reviewed",
+  "checked": "2026-10-01",
+  "scope": "Current U.S. Xalatan preserved multidose and Iyuzeh preservative-free single-dose monotherapy labels.",
+  "blueprint": {
+    "sections": [
+      [
+        "indications",
+        "Indications"
+      ],
+      [
+        "dosage",
+        "Dosage and administration"
+      ],
+      [
+        "safety",
+        "Safety"
+      ],
+      [
+        "interactions",
+        "Drug interactions"
+      ],
+      [
+        "populations",
+        "Use in specific populations"
+      ],
+      [
+        "pharmacology",
+        "Clinical pharmacology"
+      ],
+      [
+        "practice",
+        "Monitoring and counseling"
+      ],
+      [
+        "product",
+        "Product identification"
+      ]
+    ],
+    "essential_safety": true,
+    "hero_facts": 3,
+    "APAP_modified": false
+  },
+  "sources": [
+    {
+      "id": "xal",
+      "title": "Xalatan \u00b7 Current full prescribing information",
+      "publisher": "Viatris / DailyMed",
+      "note": "Product-specific public U.S. prescribing information. Clinical revision and SPL version/effective time audited separately.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a98595b3-9f47-48e0-b18d-550a2095f264"
+    },
+    {
+      "id": "iyu",
+      "title": "Iyuzeh \u00b7 Current full prescribing information",
+      "publisher": "Th\u00e9a / DailyMed",
+      "note": "Product-specific public U.S. prescribing information. Clinical revision and SPL version/effective time audited separately.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=192fc081-cc38-4e83-b779-9592e060b915"
+    }
+  ],
+  "source_records": [
+    {
+      "id": "xal",
+      "local_snapshot": "/tmp/nas-drug-sources/xalatan.xml",
+      "label_revision": "No explicit clinical revision date in current SPL; \u00a92023, UPJ:XLTN:R1",
+      "set_id": "a98595b3-9f47-48e0-b18d-550a2095f264",
+      "spl_version": "2",
+      "spl_effective_time": "20230515",
+      "dailymed_published_date": "2024-10-25",
+      "sha256": "e65c6f17410907734b1a9e1a091f871c2206927075af11690008e313b5e62bb7",
+      "review_method": "Relevant full public clinical sections read; dose, age, route, safety and product distinctions checked. No paywalled or unaccessed full guideline claimed."
+    },
+    {
+      "id": "iyu",
+      "local_snapshot": "/tmp/nas-drug-sources/iyuzeh.xml",
+      "label_revision": "03/2024 (PI); 12/2022 (Patient Information/IFU)",
+      "set_id": "192fc081-cc38-4e83-b779-9592e060b915",
+      "spl_version": "7",
+      "spl_effective_time": "20240730",
+      "dailymed_published_date": "2024-07-31",
+      "sha256": "26b834e4fa6121913bd41a456f2519832866018332aab6be6fb452cfdc95b816",
+      "review_method": "Relevant full public clinical sections read; dose, age, route, safety and product distinctions checked. No paywalled or unaccessed full guideline claimed."
+    }
+  ],
+  "assertion_map": [
+    {
+      "section": "indications",
+      "card": "Approved treatment role",
+      "assertions": [
+        "Both Xalatan and Iyuzeh are labeled to lower elevated intraocular pressure in open-angle glaucoma or ocular hypertension. Pressure is a risk factor for optic-nerve and visual-field damage; the label indication does not establish treatment of every glaucoma subtype. Pediatric safety/effectiveness are not established in these U.S. labels."
+      ],
+      "sources": [
+        {
+          "id": "xal",
+          "sections": "1; 8.4; 12.1"
+        },
+        {
+          "id": "iyu",
+          "sections": "1; 8.4; 12.1"
+        }
+      ]
+    },
+    {
+      "section": "indications",
+      "card": "Formulation selection",
+      "assertions": [
+        "Xalatan is a preserved multidose solution; Iyuzeh is preservative-free in single-dose containers. Both contain 0.005% latanoprost. The absence of preservative does not remove latanoprost\u2019s pigmentation, inflammatory or macular-edema risks."
+      ],
+      "sources": [
+        {
+          "id": "xal",
+          "sections": "3; 5; 11; 16"
+        },
+        {
+          "id": "iyu",
+          "sections": "3; 5; 11; 16"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Dose and missed dose",
+      "assertions": [
+        "Xalatan and Iyuzeh: one drop in each affected eye once daily in the evening. If a dose is missed, skip it and continue the next scheduled dose normally. Do not exceed once daily or double a missed dose."
+      ],
+      "sources": [
+        {
+          "id": "xal",
+          "sections": "2; 17"
+        },
+        {
+          "id": "iyu",
+          "sections": "2; 17; Patient Information"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Lens and other-drop spacing",
+      "assertions": [
+        "Remove contact lenses before either product and wait 15 minutes before reinserting. If using another topical eye medicine, separate administration by at least 5 minutes. Do not mix drops together in the container."
+      ],
+      "sources": [
+        {
+          "id": "xal",
+          "sections": "2; 5.7; 17"
+        },
+        {
+          "id": "iyu",
+          "sections": "2; 5.6; 17"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Iyuzeh single-dose handling",
+      "assertions": [
+        "Wash hands and open a new single-dose container only when ready. One container can treat one or both eyes; use it immediately and discard all remaining solution after that administration. Avoid touching its tip to the eye or other surfaces; never save an opened container for another dose."
+      ],
+      "sources": [
+        {
+          "id": "iyu",
+          "sections": "2; 17; IFU"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Multidose bottle handling",
+      "assertions": [
+        "Avoid contact between the Xalatan dropper tip and the eye, fingers or surrounding structures. A contaminated bottle can cause serious eye infection. Ask the eye clinician about continued use after eye injury, infection, ocular reactions or surgery."
+      ],
+      "sources": [
+        {
+          "id": "xal",
+          "sections": "5.6; 17"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "assertions": [
+        "Iris brown pigmentation may increase over months to years and is likely permanent; eyelid darkening and lash changes are often reversible. Examine patients regularly when pigment changes occur. Unilateral use may create lasting color differences between eyes.",
+        "Use cautiously with prior uveitis/iritis and generally avoid active intraocular inflammation. Macular edema risk is important with aphakia, a torn posterior lens capsule after lens replacement or other risk factors. Use cautiously with prior herpetic keratitis and avoid active herpes simplex keratitis.",
+        "Preserved multidose products can become contaminated and cause bacterial keratitis. Iyuzeh requires immediate disposal after single use to preserve sterility. Contact lenses must be removed before either formulation."
+      ],
+      "sources": [
+        {
+          "id": "xal",
+          "sections": "5.1\u20135.7; 17"
+        },
+        {
+          "id": "iyu",
+          "sections": "5.1\u20135.6; 17"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "assertions": [
+        "Known hypersensitivity to latanoprost or any product ingredient is contraindicated. Xalatan specifically includes benzalkonium chloride in its contraindication statement. Iyuzeh is preservative-free but contains other excipients; check the exact formulation before substituting."
+      ],
+      "sources": [
+        {
+          "id": "xal",
+          "sections": "4; 11"
+        },
+        {
+          "id": "iyu",
+          "sections": "4; 11"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Boxed-warning status",
+      "assertions": [
+        "The current Xalatan and Iyuzeh prescribing information reviewed here contains no FDA boxed warning. Their ocular warnings, handling instructions and allergy contraindications still apply."
+      ],
+      "sources": [
+        {
+          "id": "xal",
+          "sections": "Complete current PI; 4\u20135"
+        },
+        {
+          "id": "iyu",
+          "sections": "Complete current PI; 4\u20135"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions",
+      "assertions": [
+        "Reported ocular effects include hyperemia, irritation, stinging/burning, foreign-body sensation, itching, blurred vision, tearing and punctate keratitis, with product-specific trial frequencies. Pigment/lash changes, uveitis, macular edema and corneal complications are important. Postmarketing reports include asthma worsening/dyspnea, headache/dizziness and rare severe skin reactions; spontaneous reports do not establish incidence or causality."
+      ],
+      "sources": [
+        {
+          "id": "xal",
+          "sections": "6.1\u20136.2"
+        },
+        {
+          "id": "iyu",
+          "sections": "6.1\u20136.2"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Duplicate prostaglandins",
+      "assertions": [
+        "Combining two or more prostaglandins or prostaglandin analogs is not recommended. More-than-once-daily administration of these agents can weaken pressure reduction or cause paradoxical pressure increases. Other classes may be combined when prescribed, with at least 5 minutes between eye drops."
+      ],
+      "sources": [
+        {
+          "id": "xal",
+          "sections": "2"
+        },
+        {
+          "id": "iyu",
+          "sections": "2; 7"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Thimerosal precipitation",
+      "assertions": [
+        "Xalatan can precipitate when mixed in vitro with thimerosal-containing eye drops; separate topical administrations by at least 5 minutes. Iyuzeh\u2019s label describes this finding for the preserved reference product, not a demonstrated Iyuzeh-specific precipitation study. Do not mix solutions."
+      ],
+      "sources": [
+        {
+          "id": "xal",
+          "sections": "2"
+        },
+        {
+          "id": "iyu",
+          "sections": "2"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy and breastfeeding",
+      "assertions": [
+        "Adequate controlled pregnancy data are lacking. IV animal studies found developmental toxicity; they do not directly measure risk from prescribed human eye drops. Human milk excretion is unknown in these labels. Weigh maternal need, breastfeeding benefits and potential infant effects with the clinician."
+      ],
+      "sources": [
+        {
+          "id": "xal",
+          "sections": "8.1\u20138.2"
+        },
+        {
+          "id": "iyu",
+          "sections": "8.1\u20138.2"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Pediatric and older adults",
+      "assertions": [
+        "U.S. pediatric safety/effectiveness are not established for either reviewed product. The labels report no overall safety/effectiveness differences between older and younger adult patients; this does not remove ocular comorbidity or handling considerations."
+      ],
+      "sources": [
+        {
+          "id": "xal",
+          "sections": "8.4\u20138.5"
+        },
+        {
+          "id": "iyu",
+          "sections": "8.4\u20138.5"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Renal and hepatic considerations",
+      "assertions": [
+        "The reviewed labels give no renal- or hepatic-impairment adjustment schedule. Active latanoprost acid is metabolized mainly by the liver and metabolites are largely eliminated in urine; this pharmacology is not proof of a studied impairment-specific dose. Continue product dosing only within the individualized clinical plan."
+      ],
+      "sources": [
+        {
+          "id": "xal",
+          "sections": "2; 8; 12.3"
+        },
+        {
+          "id": "iyu",
+          "sections": "2; 8; 12.3"
+        }
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism and time course",
+      "assertions": [
+        "Latanoprost primarily increases uveoscleral aqueous outflow. Pressure reduction begins about 3\u20134 hours after dosing, reaches maximum around 8\u201312 hours and persists at least 24 hours."
+      ],
+      "sources": [
+        {
+          "id": "xal",
+          "sections": "1; 12.1\u201312.2"
+        },
+        {
+          "id": "iyu",
+          "sections": "1; 12.1\u201312.2"
+        }
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Ocular activation and systemic elimination",
+      "assertions": [
+        "Corneal esterases convert the isopropyl-ester prodrug to active latanoprost acid. Aqueous-humor concentration peaks about 2 hours after instillation. Systemic active acid is cleared rapidly, with an approximately 17-minute plasma half-life; hepatic fatty-acid oxidation generates metabolites mainly excreted through the kidneys."
+      ],
+      "sources": [
+        {
+          "id": "xal",
+          "sections": "12.3"
+        },
+        {
+          "id": "iyu",
+          "sections": "12.3"
+        }
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Concentration equivalence",
+      "assertions": [
+        "0.005% corresponds to 50 mcg/mL, or 0.05 mg/mL. This is an ophthalmic concentration, not a dose to swallow or inject. Each drop contains approximately 1.5 mcg in these product descriptions."
+      ],
+      "sources": [
+        {
+          "id": "xal",
+          "sections": "3; 11"
+        },
+        {
+          "id": "iyu",
+          "sections": "3; 11"
+        }
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Clinical follow-up",
+      "assertions": [
+        "Follow intraocular-pressure response as part of glaucoma care and reassess noticeable pigmentation regularly. New eye injury, infection, conjunctivitis, eyelid reactions or surgery should prompt clinician advice about continuing the product; new visual loss needs prompt assessment."
+      ],
+      "sources": [
+        {
+          "id": "xal",
+          "sections": "1; 5.1; 17"
+        },
+        {
+          "id": "iyu",
+          "sections": "1; 5.1; 17"
+        }
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Counseling and administration",
+      "assertions": [
+        "Use only in the eyes as prescribed, once each evening. Demonstrate clean drop technique, lens removal and 5-minute spacing. Explain possible permanent iris color change and usually reversible lid/lash changes. For Iyuzeh, discard the individual container immediately after dosing even when liquid remains."
+      ],
+      "sources": [
+        {
+          "id": "xal",
+          "sections": "2; 17; package panel"
+        },
+        {
+          "id": "iyu",
+          "sections": "2; 17; Patient Information; IFU"
+        }
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Excess dosing or unintended exposure",
+      "assertions": [
+        "Do not compensate for missed treatment with extra drops. If excess dosing or ingestion occurs, contact a clinician/poison service with the product and amount; treatment is symptom-directed. Label IV experimental exposure findings are not an approved injection route or home-treatment instruction."
+      ],
+      "sources": [
+        {
+          "id": "xal",
+          "sections": "2; 10"
+        },
+        {
+          "id": "iyu",
+          "sections": "2; 10; Patient Information"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Representative product identity",
+      "assertions": [
+        "Viatris Xalatan: 2.5 mL fill in a 5 mL multidose bottle, NDC 58151-419-35, clear colorless preserved solution. Th\u00e9a Iyuzeh: 30 single-dose 0.2 mL containers, NDC 82584-003-30, five units per foil pouch; opalescent white to slightly yellow solution. These examples do not identify every generic."
+      ],
+      "sources": [
+        {
+          "id": "xal",
+          "sections": "16; principal display panel"
+        },
+        {
+          "id": "iyu",
+          "sections": "16; principal display panel"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "assertions": [
+        "Both are sterile 0.005% ophthalmic solutions (50 mcg/mL; 0.05 mg/mL). Xalatan contains benzalkonium chloride 0.02%. Iyuzeh contains no preservative and is supplied only in the reviewed single-dose units. Do not confuse either with fixed-combination eye products."
+      ],
+      "sources": [
+        {
+          "id": "xal",
+          "sections": "3; 11; 16"
+        },
+        {
+          "id": "iyu",
+          "sections": "3; 11; 16"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "assertions": [
+        "Xalatan: protect from light; refrigerate unopened at 2\u20138\u00b0C. After opening, store up to 25\u00b0C for 6 weeks. Its label permits shipment up to 40\u00b0C for no more than 8 days; this is not a routine home-storage allowance. Iyuzeh: keep at 15\u201325\u00b0C in its original pouch; after opening the pouch, mark the date and discard unused units after 30 days. Each opened single-dose container is discarded immediately after administration."
+      ],
+      "sources": [
+        {
+          "id": "xal",
+          "sections": "16; principal display panel"
+        },
+        {
+          "id": "iyu",
+          "sections": "16; 17; IFU"
+        }
+      ]
+    }
+  ],
+  "assertion_source_map": [
+    {
+      "section": "indications",
+      "card": "Approved treatment role",
+      "assertions": [
+        "Both Xalatan and Iyuzeh are labeled to lower elevated intraocular pressure in open-angle glaucoma or ocular hypertension. Pressure is a risk factor for optic-nerve and visual-field damage; the label indication does not establish treatment of every glaucoma subtype. Pediatric safety/effectiveness are not established in these U.S. labels."
+      ],
+      "sources": [
+        {
+          "id": "xal",
+          "sections": "1; 8.4; 12.1"
+        },
+        {
+          "id": "iyu",
+          "sections": "1; 8.4; 12.1"
+        }
+      ]
+    },
+    {
+      "section": "indications",
+      "card": "Formulation selection",
+      "assertions": [
+        "Xalatan is a preserved multidose solution; Iyuzeh is preservative-free in single-dose containers. Both contain 0.005% latanoprost. The absence of preservative does not remove latanoprost\u2019s pigmentation, inflammatory or macular-edema risks."
+      ],
+      "sources": [
+        {
+          "id": "xal",
+          "sections": "3; 5; 11; 16"
+        },
+        {
+          "id": "iyu",
+          "sections": "3; 5; 11; 16"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Dose and missed dose",
+      "assertions": [
+        "Xalatan and Iyuzeh: one drop in each affected eye once daily in the evening. If a dose is missed, skip it and continue the next scheduled dose normally. Do not exceed once daily or double a missed dose."
+      ],
+      "sources": [
+        {
+          "id": "xal",
+          "sections": "2; 17"
+        },
+        {
+          "id": "iyu",
+          "sections": "2; 17; Patient Information"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Lens and other-drop spacing",
+      "assertions": [
+        "Remove contact lenses before either product and wait 15 minutes before reinserting. If using another topical eye medicine, separate administration by at least 5 minutes. Do not mix drops together in the container."
+      ],
+      "sources": [
+        {
+          "id": "xal",
+          "sections": "2; 5.7; 17"
+        },
+        {
+          "id": "iyu",
+          "sections": "2; 5.6; 17"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Iyuzeh single-dose handling",
+      "assertions": [
+        "Wash hands and open a new single-dose container only when ready. One container can treat one or both eyes; use it immediately and discard all remaining solution after that administration. Avoid touching its tip to the eye or other surfaces; never save an opened container for another dose."
+      ],
+      "sources": [
+        {
+          "id": "iyu",
+          "sections": "2; 17; IFU"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Multidose bottle handling",
+      "assertions": [
+        "Avoid contact between the Xalatan dropper tip and the eye, fingers or surrounding structures. A contaminated bottle can cause serious eye infection. Ask the eye clinician about continued use after eye injury, infection, ocular reactions or surgery."
+      ],
+      "sources": [
+        {
+          "id": "xal",
+          "sections": "5.6; 17"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "assertions": [
+        "Iris brown pigmentation may increase over months to years and is likely permanent; eyelid darkening and lash changes are often reversible. Examine patients regularly when pigment changes occur. Unilateral use may create lasting color differences between eyes.",
+        "Use cautiously with prior uveitis/iritis and generally avoid active intraocular inflammation. Macular edema risk is important with aphakia, a torn posterior lens capsule after lens replacement or other risk factors. Use cautiously with prior herpetic keratitis and avoid active herpes simplex keratitis.",
+        "Preserved multidose products can become contaminated and cause bacterial keratitis. Iyuzeh requires immediate disposal after single use to preserve sterility. Contact lenses must be removed before either formulation."
+      ],
+      "sources": [
+        {
+          "id": "xal",
+          "sections": "5.1\u20135.7; 17"
+        },
+        {
+          "id": "iyu",
+          "sections": "5.1\u20135.6; 17"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "assertions": [
+        "Known hypersensitivity to latanoprost or any product ingredient is contraindicated. Xalatan specifically includes benzalkonium chloride in its contraindication statement. Iyuzeh is preservative-free but contains other excipients; check the exact formulation before substituting."
+      ],
+      "sources": [
+        {
+          "id": "xal",
+          "sections": "4; 11"
+        },
+        {
+          "id": "iyu",
+          "sections": "4; 11"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Boxed-warning status",
+      "assertions": [
+        "The current Xalatan and Iyuzeh prescribing information reviewed here contains no FDA boxed warning. Their ocular warnings, handling instructions and allergy contraindications still apply."
+      ],
+      "sources": [
+        {
+          "id": "xal",
+          "sections": "Complete current PI; 4\u20135"
+        },
+        {
+          "id": "iyu",
+          "sections": "Complete current PI; 4\u20135"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions",
+      "assertions": [
+        "Reported ocular effects include hyperemia, irritation, stinging/burning, foreign-body sensation, itching, blurred vision, tearing and punctate keratitis, with product-specific trial frequencies. Pigment/lash changes, uveitis, macular edema and corneal complications are important. Postmarketing reports include asthma worsening/dyspnea, headache/dizziness and rare severe skin reactions; spontaneous reports do not establish incidence or causality."
+      ],
+      "sources": [
+        {
+          "id": "xal",
+          "sections": "6.1\u20136.2"
+        },
+        {
+          "id": "iyu",
+          "sections": "6.1\u20136.2"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Duplicate prostaglandins",
+      "assertions": [
+        "Combining two or more prostaglandins or prostaglandin analogs is not recommended. More-than-once-daily administration of these agents can weaken pressure reduction or cause paradoxical pressure increases. Other classes may be combined when prescribed, with at least 5 minutes between eye drops."
+      ],
+      "sources": [
+        {
+          "id": "xal",
+          "sections": "2"
+        },
+        {
+          "id": "iyu",
+          "sections": "2; 7"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Thimerosal precipitation",
+      "assertions": [
+        "Xalatan can precipitate when mixed in vitro with thimerosal-containing eye drops; separate topical administrations by at least 5 minutes. Iyuzeh\u2019s label describes this finding for the preserved reference product, not a demonstrated Iyuzeh-specific precipitation study. Do not mix solutions."
+      ],
+      "sources": [
+        {
+          "id": "xal",
+          "sections": "2"
+        },
+        {
+          "id": "iyu",
+          "sections": "2"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy and breastfeeding",
+      "assertions": [
+        "Adequate controlled pregnancy data are lacking. IV animal studies found developmental toxicity; they do not directly measure risk from prescribed human eye drops. Human milk excretion is unknown in these labels. Weigh maternal need, breastfeeding benefits and potential infant effects with the clinician."
+      ],
+      "sources": [
+        {
+          "id": "xal",
+          "sections": "8.1\u20138.2"
+        },
+        {
+          "id": "iyu",
+          "sections": "8.1\u20138.2"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Pediatric and older adults",
+      "assertions": [
+        "U.S. pediatric safety/effectiveness are not established for either reviewed product. The labels report no overall safety/effectiveness differences between older and younger adult patients; this does not remove ocular comorbidity or handling considerations."
+      ],
+      "sources": [
+        {
+          "id": "xal",
+          "sections": "8.4\u20138.5"
+        },
+        {
+          "id": "iyu",
+          "sections": "8.4\u20138.5"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Renal and hepatic considerations",
+      "assertions": [
+        "The reviewed labels give no renal- or hepatic-impairment adjustment schedule. Active latanoprost acid is metabolized mainly by the liver and metabolites are largely eliminated in urine; this pharmacology is not proof of a studied impairment-specific dose. Continue product dosing only within the individualized clinical plan."
+      ],
+      "sources": [
+        {
+          "id": "xal",
+          "sections": "2; 8; 12.3"
+        },
+        {
+          "id": "iyu",
+          "sections": "2; 8; 12.3"
+        }
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism and time course",
+      "assertions": [
+        "Latanoprost primarily increases uveoscleral aqueous outflow. Pressure reduction begins about 3\u20134 hours after dosing, reaches maximum around 8\u201312 hours and persists at least 24 hours."
+      ],
+      "sources": [
+        {
+          "id": "xal",
+          "sections": "1; 12.1\u201312.2"
+        },
+        {
+          "id": "iyu",
+          "sections": "1; 12.1\u201312.2"
+        }
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Ocular activation and systemic elimination",
+      "assertions": [
+        "Corneal esterases convert the isopropyl-ester prodrug to active latanoprost acid. Aqueous-humor concentration peaks about 2 hours after instillation. Systemic active acid is cleared rapidly, with an approximately 17-minute plasma half-life; hepatic fatty-acid oxidation generates metabolites mainly excreted through the kidneys."
+      ],
+      "sources": [
+        {
+          "id": "xal",
+          "sections": "12.3"
+        },
+        {
+          "id": "iyu",
+          "sections": "12.3"
+        }
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Concentration equivalence",
+      "assertions": [
+        "0.005% corresponds to 50 mcg/mL, or 0.05 mg/mL. This is an ophthalmic concentration, not a dose to swallow or inject. Each drop contains approximately 1.5 mcg in these product descriptions."
+      ],
+      "sources": [
+        {
+          "id": "xal",
+          "sections": "3; 11"
+        },
+        {
+          "id": "iyu",
+          "sections": "3; 11"
+        }
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Clinical follow-up",
+      "assertions": [
+        "Follow intraocular-pressure response as part of glaucoma care and reassess noticeable pigmentation regularly. New eye injury, infection, conjunctivitis, eyelid reactions or surgery should prompt clinician advice about continuing the product; new visual loss needs prompt assessment."
+      ],
+      "sources": [
+        {
+          "id": "xal",
+          "sections": "1; 5.1; 17"
+        },
+        {
+          "id": "iyu",
+          "sections": "1; 5.1; 17"
+        }
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Counseling and administration",
+      "assertions": [
+        "Use only in the eyes as prescribed, once each evening. Demonstrate clean drop technique, lens removal and 5-minute spacing. Explain possible permanent iris color change and usually reversible lid/lash changes. For Iyuzeh, discard the individual container immediately after dosing even when liquid remains."
+      ],
+      "sources": [
+        {
+          "id": "xal",
+          "sections": "2; 17; package panel"
+        },
+        {
+          "id": "iyu",
+          "sections": "2; 17; Patient Information; IFU"
+        }
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Excess dosing or unintended exposure",
+      "assertions": [
+        "Do not compensate for missed treatment with extra drops. If excess dosing or ingestion occurs, contact a clinician/poison service with the product and amount; treatment is symptom-directed. Label IV experimental exposure findings are not an approved injection route or home-treatment instruction."
+      ],
+      "sources": [
+        {
+          "id": "xal",
+          "sections": "2; 10"
+        },
+        {
+          "id": "iyu",
+          "sections": "2; 10; Patient Information"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Representative product identity",
+      "assertions": [
+        "Viatris Xalatan: 2.5 mL fill in a 5 mL multidose bottle, NDC 58151-419-35, clear colorless preserved solution. Th\u00e9a Iyuzeh: 30 single-dose 0.2 mL containers, NDC 82584-003-30, five units per foil pouch; opalescent white to slightly yellow solution. These examples do not identify every generic."
+      ],
+      "sources": [
+        {
+          "id": "xal",
+          "sections": "16; principal display panel"
+        },
+        {
+          "id": "iyu",
+          "sections": "16; principal display panel"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "assertions": [
+        "Both are sterile 0.005% ophthalmic solutions (50 mcg/mL; 0.05 mg/mL). Xalatan contains benzalkonium chloride 0.02%. Iyuzeh contains no preservative and is supplied only in the reviewed single-dose units. Do not confuse either with fixed-combination eye products."
+      ],
+      "sources": [
+        {
+          "id": "xal",
+          "sections": "3; 11; 16"
+        },
+        {
+          "id": "iyu",
+          "sections": "3; 11; 16"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "assertions": [
+        "Xalatan: protect from light; refrigerate unopened at 2\u20138\u00b0C. After opening, store up to 25\u00b0C for 6 weeks. Its label permits shipment up to 40\u00b0C for no more than 8 days; this is not a routine home-storage allowance. Iyuzeh: keep at 15\u201325\u00b0C in its original pouch; after opening the pouch, mark the date and discard unused units after 30 days. Each opened single-dose container is discarded immediately after administration."
+      ],
+      "sources": [
+        {
+          "id": "xal",
+          "sections": "16; principal display panel"
+        },
+        {
+          "id": "iyu",
+          "sections": "16; 17; IFU"
+        }
+      ]
+    }
+  ],
+  "hero_assertions": {
+    "essential": {
+      "title": "Use once each evening",
+      "text": "More frequent dosing can reduce benefit. Seek prompt advice for new eye inflammation or visual change; follow product-specific sterile handling.",
+      "section": "safety",
+      "link": "Warnings and precautions"
+    },
+    "facts": [
+      [
+        "Class",
+        "Prostaglandin analog"
+      ],
+      [
+        "Concentration",
+        "0.005% \u00b7 50 mcg/mL"
+      ],
+      [
+        "Routine dose",
+        "1 drop once each evening"
+      ]
+    ],
+    "sources": [
+      "xal",
+      "iyu"
+    ]
+  },
+  "section_assertions": [
+    {
+      "section": "indications",
+      "summary": "Latanoprost lowers elevated intraocular pressure in open-angle glaucoma and ocular hypertension.",
+      "takeaway": "An ophthalmologist should establish the diagnosis and follow pressure response.",
+      "sources": [
+        "iyu",
+        "xal"
+      ]
+    },
+    {
+      "section": "dosage",
+      "summary": "Use one drop in the affected eye or eyes once daily in the evening.",
+      "takeaway": "More frequent dosing may reduce benefit or paradoxically raise pressure.",
+      "sources": [
+        "iyu",
+        "xal"
+      ]
+    },
+    {
+      "section": "safety",
+      "summary": "Pigmentation and ocular inflammatory complications require informed follow-up.",
+      "takeaway": "Seek prompt care for new visual loss, eye pain, infection or marked inflammation.",
+      "sources": [
+        "iyu",
+        "xal"
+      ]
+    },
+    {
+      "section": "interactions",
+      "summary": "Avoid duplicate prostaglandin therapy and separate other eye medicines.",
+      "takeaway": "Confirm the entire ophthalmic medication list.",
+      "sources": [
+        "iyu",
+        "xal"
+      ]
+    },
+    {
+      "section": "populations",
+      "summary": "Pregnancy, lactation and pediatric use require individualized review.",
+      "takeaway": "Low systemic exposure does not establish safety in every population.",
+      "sources": [
+        "iyu",
+        "xal"
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "summary": "Latanoprost is a prostaglandin F2\u03b1 analog and ocular prodrug.",
+      "takeaway": "Pressure lowering persists for about 24 hours after the once-daily dose.",
+      "sources": [
+        "iyu",
+        "xal"
+      ]
+    },
+    {
+      "section": "practice",
+      "summary": "Follow pressure response, ocular symptoms and safe administration.",
+      "takeaway": "Bring all eye products to the review and mark opening dates.",
+      "sources": [
+        "iyu",
+        "xal"
+      ]
+    },
+    {
+      "section": "product",
+      "summary": "Preserved bottles and preservative-free units require different storage and discard rules.",
+      "takeaway": "Check the actual package label; generic handling instructions may differ.",
+      "sources": [
+        "iyu",
+        "xal"
+      ]
+    }
+  ],
+  "limitations": [
+    "No pediatric approval, fixed-combination regimen or renal/hepatic impairment-specific studied dose asserted.",
+    "No inaccessible full ophthalmology guideline claimed; label-based follow-up described without invented guideline intervals.",
+    "Iyuzeh IFU has an ambiguous foil-pouch warning despite explicit PI 30-day opened-pouch directions; use clear PI storage instructions and never reuse an opened individual container."
+  ],
+  "unresolved_source_questions": [
+    {
+      "material": false,
+      "source": "iyu",
+      "sections": "IFU; 16; 17",
+      "issue": "IFU states not to dose when foil pouch is opened, conflicting with PI instruction to retain unopened units for 30 days after pouch opening. Clear PI storage and immediate individual-container disposal used; manufacturer wording ambiguity not silently corrected."
+    }
+  ],
+  "validation": {
+    "schema": "Passed actual validateMonograph on 2026-10-01; eight APAP sections, four safety cards, three product cards, three hero facts, citations/table shape/assertion-map coverage checked",
+    "tests_build_lint": "Parent batch checks required",
+    "rendered_page": "Parent batch QA required",
+    "author_string_review": "All rendered paragraphs, table cells, doses, units, spacing and product identifiers manually reviewed; no malformed number spacing found.",
+    "hero_fact_shape": "Corrected to APAP renderer [term,value] tuple arrays; no clinical content changed."
+  },
+  "monograph_sha256": "77c44d645db13e523925dd7780512961f93842ba3b81073c545834856c060bf7"
+}

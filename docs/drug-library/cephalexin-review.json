@@ -1,0 +1,599 @@
+{
+  "slug": "cephalexin",
+  "checked": "2026-10-01",
+  "status": "source_reviewed",
+  "scope": "An oral antibacterial for specified infections caused by susceptible bacteria. Selection and duration depend on the infection, organism and patient; this profile summarizes selected U.S. capsule and suspension labels.",
+  "sources": [
+    {
+      "id": "label",
+      "title": "Cephalexin capsules · Aurobindo full prescribing information",
+      "publisher": "DailyMed / official U.S. product labeling",
+      "note": "Clinical label revised December 2024. SPL v18 effective December 20, 2024; API publication December 23, 2024. Checked October 1, 2026.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8e28f049-6110-4473-830f-c494191a7197"
+    },
+    {
+      "id": "susp",
+      "title": "Cephalexin oral suspension · Aurobindo full prescribing information",
+      "publisher": "DailyMed / official U.S. product labeling",
+      "note": "Clinical label issued March 2026. SPL v2 effective July 21, 2026; API publication July 24, 2026. Checked October 1, 2026.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=655f38e8-1c4d-4cbc-9f52-bb881f065b2d"
+    }
+  ],
+  "sourceEvidence": {
+    "label": {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8e28f049-6110-4473-830f-c494191a7197",
+      "checked": "2026-10-01",
+      "revision": "Clinical label revised December 2024. SPL v18 effective December 20, 2024; API publication December 23, 2024. Checked October 1, 2026.",
+      "splVersion": "18",
+      "effectiveTime": "20241220",
+      "localEvidence": "/tmp/nas-drug-sources/cephalexin-auro-caps.xml",
+      "xmlSha256": "f1d3f95c6de45920da02c4176a8d6901cc2aee7c4391ee9828e9c1c1dfdf97e1",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/8e28f049-6110-4473-830f-c494191a7197.xml",
+      "access": "Full public supporting primary sections read; no paywall access"
+    },
+    "susp": {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=655f38e8-1c4d-4cbc-9f52-bb881f065b2d",
+      "checked": "2026-10-01",
+      "revision": "Clinical label issued March 2026. SPL v2 effective July 21, 2026; API publication July 24, 2026. Checked October 1, 2026.",
+      "splVersion": "2",
+      "effectiveTime": "20260721",
+      "localEvidence": "/tmp/nas-drug-sources/cephalexin-susp.xml",
+      "xmlSha256": "2bff4ea97c6f32af14209f000b5b262c2f2fdb2363027eef945542e5f99083db",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/655f38e8-1c4d-4cbc-9f52-bb881f065b2d.xml",
+      "access": "Full public supporting primary sections read; no paywall access"
+    }
+  },
+  "assertionMap": [
+    {
+      "section": "indications",
+      "card": "Labeled infection sites",
+      "sourceIds": [
+        "label",
+        "susp"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "1.1–1.6;12.4 Microbiology;8.4"
+        ],
+        "susp": [
+          "1.1–1.6;12.4 Microbiology;8.4"
+        ]
+      },
+      "claims": [
+        [
+          "Respiratory tract",
+          "Streptococcus pneumoniae; Streptococcus pyogenes."
+        ],
+        [
+          "Otitis media",
+          "S. pneumoniae, Haemophilus influenzae, Staphylococcus aureus, S. pyogenes, Moraxella catarrhalis."
+        ],
+        [
+          "Skin / skin structure",
+          "S. aureus; S. pyogenes."
+        ],
+        [
+          "Bone",
+          "S. aureus; Proteus mirabilis."
+        ],
+        [
+          "Genitourinary, including acute prostatitis",
+          "Escherichia coli, P. mirabilis, Klebsiella pneumoniae."
+        ]
+      ]
+    },
+    {
+      "section": "indications",
+      "card": "Susceptibility and age scope",
+      "sourceIds": [
+        "label",
+        "susp"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "1.1–1.6;12.4 Microbiology;8.4"
+        ],
+        "susp": [
+          "1.1–1.6;12.4 Microbiology;8.4"
+        ]
+      },
+      "claims": [
+        "Use only for proven or strongly suspected susceptible bacterial infections; use cultures and local susceptibility patterns when selecting or revising treatment. This is not treatment for a viral cold. MRSA, most enterococci, Pseudomonas and several other gram-negative organisms are resistant or outside activity. The current suspension indications include adults and children age ≥1; younger infants require a separate assessment."
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Labeled oral regimens",
+      "sourceIds": [
+        "label",
+        "susp"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "2.1;2.2;capsule2.3/suspension2.4 renal table;suspension2.3 mixing;12.3 meals"
+        ],
+        "susp": [
+          "2.1;2.2;capsule2.3/suspension2.4 renal table;suspension2.3 mixing;12.3 meals"
+        ]
+      },
+      "claims": [
+        [
+          "Adults and age ≥15",
+          "250 mg every 6 hours or 500 mg every 12 hours, generally 7–14 days in the label."
+        ],
+        [
+          "More severe infection · adults / age ≥15",
+          "Up to 4 g/day in 2–4 equal doses."
+        ],
+        [
+          "Pediatric dosage subsection: over age 1",
+          "25–50 mg/kg/day in equal divided doses for 7–14 days."
+        ],
+        [
+          "Severe pediatric infection",
+          "50–100 mg/kg/day in equal divided doses."
+        ],
+        [
+          "Pediatric otitis media",
+          "75–100 mg/kg/day in equal divided doses."
+        ],
+        [
+          "β-hemolytic streptococcal infection",
+          "At least 10 days in the label."
+        ]
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Renal regimens · adults and age ≥15",
+      "sourceIds": [
+        "label",
+        "susp"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "2.1;2.2;capsule2.3/suspension2.4 renal table;suspension2.3 mixing;12.3 meals"
+        ],
+        "susp": [
+          "2.1;2.2;capsule2.3/suspension2.4 renal table;suspension2.3 mixing;12.3 meals"
+        ]
+      },
+      "claims": [
+        "The table below follows the current suspension label. The capsule table lists the same lower-clearance regimens but prints “>60” rather than “≥60”; verify the exact capsule prescription at that boundary. These tables do not establish a renal regimen for younger children or hemodialysis.",
+        [
+          "≥60 mL/min",
+          "No dose adjustment."
+        ],
+        [
+          "30–59 mL/min",
+          "No schedule adjustment, but maximum total dose 1 g/day."
+        ],
+        [
+          "15–29 mL/min",
+          "250 mg every 8 or 12 hours."
+        ],
+        [
+          "5–14 mL/min, not yet on dialysis",
+          "250 mg every 24 hours."
+        ],
+        [
+          "1–4 mL/min, not yet on dialysis",
+          "250 mg every 48 or 60 hours."
+        ]
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Formulation and prescribing details",
+      "sourceIds": [
+        "label",
+        "susp"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "2.1;2.2;capsule2.3/suspension2.4 renal table;suspension2.3 mixing;12.3 meals"
+        ],
+        "susp": [
+          "2.1;2.2;capsule2.3/suspension2.4 renal table;suspension2.3 mixing;12.3 meals"
+        ]
+      },
+      "claims": [
+        "May be given with or without meals. Use an oral measuring device and confirm suspension concentration: 125 mg/5 mL = 25 mg/mL; 250 mg/5 mL = 50 mg/mL. Shake well. Have the pharmacist prepare the exact bottle and verify the prescribed mL/dose from weight and concentration; reconstitution water amounts vary between products. Do not use the selected suspension label’s inconsistent 40 kg/125 mg-per-5 mL twice-daily volume example as a dosing rule. Its age ≥1 indication and “over 1 year” dosage heading also require confirmation for a child exactly age 1. The labeled 7–14 days is not a blanket duration for every infection or a substitute for current local treatment guidance."
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "sourceIds": [
+        "label",
+        "susp"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "4;5.1–5.6;6;10"
+        ],
+        "susp": [
+          "4;5.1–5.6;6;10"
+        ]
+      },
+      "claims": [
+        "Ask about cephalosporin, penicillin and other drug allergies before use. Serious allergy, including anaphylaxis and severe skin reactions, requires discontinuation and immediate treatment; beta-lactam cross-hypersensitivity can occur.",
+        "C. difficile-associated diarrhea can be severe or fatal and may appear more than two months after antibacterial treatment. Persistent watery/bloody diarrhea needs clinical assessment; suspected/confirmed disease may require stopping antibiotics not directed against C. difficile and specific treatment.",
+        "Seizures can occur, particularly with renal impairment and doses not appropriately reduced; discontinue and assess if a seizure occurs.",
+        "Positive direct Coombs tests and drug-induced hemolytic anemia have been reported. Evaluate new anemia and stop cephalexin if hemolysis is suspected.",
+        "Monitor prothrombin time in patients at risk: renal/hepatic impairment, poor nutrition, prolonged treatment or anticoagulant use.",
+        "Unnecessary antibacterial exposure promotes resistance; prolonged use can produce superinfection with nonsusceptible organisms."
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "sourceIds": [
+        "label",
+        "susp"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "4;5.1–5.6;6;10"
+        ],
+        "susp": [
+          "4;5.1–5.6;6;10"
+        ]
+      },
+      "claims": [
+        "Known hypersensitivity to cephalexin or another cephalosporin antibacterial. A penicillin-allergy history requires assessment of the reaction and beta-lactam cross-hypersensitivity; it is not silently rewritten as an absolute label contraindication."
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Boxed warning status",
+      "sourceIds": [
+        "label",
+        "susp"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "4;5.1–5.6;6;10"
+        ],
+        "susp": [
+          "4;5.1–5.6;6;10"
+        ]
+      },
+      "claims": [
+        "The selected capsule and oral-suspension labels have no boxed warning. Their allergy, antibiotic-associated colitis, renal and seizure risks still require attention."
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions and overdose",
+      "sourceIds": [
+        "label",
+        "susp"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "4;5.1–5.6;6;10"
+        ],
+        "susp": [
+          "4;5.1–5.6;6;10"
+        ]
+      },
+      "claims": [
+        "Diarrhea is the most frequent trial reaction; nausea, vomiting, dyspepsia and abdominal pain also occur. Reported serious reactions include allergy/severe skin reactions, hemolytic anemia or other blood-cell changes, interstitial nephritis and transient hepatitis/cholestatic jaundice. Overdose may cause gastrointestinal distress or blood in the urine; obtain Poison Help/medical advice for supportive care. Forced diuresis or dialysis has not been established as beneficial for overdose."
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Clinically relevant interactions",
+      "sourceIds": [
+        "label",
+        "susp"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "7.1–7.3;5.3;5.5;12.3"
+        ],
+        "susp": [
+          "7.1–7.3;5.3;5.5;12.3"
+        ]
+      },
+      "claims": [
+        "Cephalexin can increase metformin concentrations and reduce its renal clearance; monitor carefully and adjust metformin when indicated. Multiple-dose interaction data are limited.",
+        "Probenecid inhibits renal excretion of cephalexin; coadministration is not recommended.",
+        "Benedict/Fehling urine glucose tests may be falsely positive; inform the laboratory. Direct Coombs positivity can also complicate blood testing.",
+        "Anticoagulant therapy is a risk factor for prolonged prothrombin time during cephalosporin treatment; monitor at-risk patients rather than assuming a routine fixed adjustment."
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy and lactation",
+      "sourceIds": [
+        "label",
+        "susp"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "8.1;8.2;8.4–8.6;5.5;2"
+        ],
+        "susp": [
+          "8.1;8.2;8.4–8.6;5.5;2"
+        ]
+      },
+      "claims": [
+        "Decades of observational cephalosporin data have not established an association with major birth defects, miscarriage or other adverse pregnancy outcomes, but the studies have limitations. Use for an assessed bacterial indication. Cephalexin is present in human milk at a reported relative infant dose <1%; infant-effect information is limited and milk-production data are absent. Weigh breastfeeding benefits and maternal need."
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Pediatric and geriatric use",
+      "sourceIds": [
+        "label",
+        "susp"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "8.1;8.2;8.4–8.6;5.5;2"
+        ],
+        "susp": [
+          "8.1;8.2;8.4–8.6;5.5;2"
+        ]
+      },
+      "claims": [
+        "Current suspension labeling establishes use from age 1 and not below 1; its dosage heading says over age 1, so confirm dosing at the exact age boundary. The renal-adjustment table is for adults/age ≥15. A suitable suspension allows small weight-based doses without assuming a child can take a fixed capsule. Older adults need renal-based selection; studies showed no overall age-related difference in response."
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Renal and hepatic considerations",
+      "sourceIds": [
+        "label",
+        "susp"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "8.1;8.2;8.4–8.6;5.5;2"
+        ],
+        "susp": [
+          "8.1;8.2;8.4–8.6;5.5;2"
+        ]
+      },
+      "claims": [
+        "Use lower or less frequent regimens according to the age-appropriate renal guidance and monitor patients with impairment for accumulation, toxicity and interactions. Hemodialysis dosing and younger-child renal algorithms are not established by these tables. The reviewed labels supply no numeric hepatic-dose adjustment; hepatic impairment does increase the need to consider prothrombin-time monitoring."
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism and spectrum",
+      "sourceIds": [
+        "label",
+        "susp"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "12.1;12.3;12.4"
+        ],
+        "susp": [
+          "12.1;12.3;12.4"
+        ]
+      },
+      "claims": [
+        "A bactericidal cephalosporin that inhibits bacterial cell-wall synthesis. The labeled staphylococcal activity is against methicillin-susceptible isolates; do not infer MRSA, enterococcal or Pseudomonas coverage."
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Pharmacokinetics",
+      "sourceIds": [
+        "label",
+        "susp"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "12.1;12.3;12.4"
+        ],
+        "susp": [
+          "12.1;12.3;12.4"
+        ]
+      },
+      "claims": [
+        [
+          "Absorption / meals",
+          "Acid stable; may be taken without regard to meals. Peak concentrations measured around 1 hour."
+        ],
+        [
+          "Protein binding",
+          "Approximately 10–15%."
+        ],
+        [
+          "Elimination",
+          "Glomerular filtration and tubular secretion; over 90% excreted unchanged in urine within 8 hours in studied conditions."
+        ],
+        [
+          "Clinical implication",
+          "Reduced renal clearance prolongs exposure; use the applicable renal regimen."
+        ]
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Monitoring priorities",
+      "sourceIds": [
+        "label",
+        "susp"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "5;8.6;17;suspension16/2.3"
+        ],
+        "susp": [
+          "5;8.6;17;suspension16/2.3"
+        ]
+      },
+      "claims": [
+        "Review allergy history, kidney function, infection site and culture/susceptibility evidence. Assess response and superinfection during therapy. Monitor renal function closely with severe impairment; check prothrombin time when risk factors warrant and investigate new anemia/hemolysis. Severe diarrhea or a new rash/swelling requires assessment rather than routine continuation."
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Patient counseling",
+      "sourceIds": [
+        "label",
+        "susp"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "5;8.6;17;suspension16/2.3"
+        ],
+        "susp": [
+          "5;8.6;17;suspension16/2.3"
+        ]
+      },
+      "claims": [
+        "Use the exact prescribed dose and duration; do not share or save antibiotics for a viral illness. Obtain immediate help for breathing trouble, facial/throat swelling or a severe rash. Report watery/bloody diarrhea during or after treatment. For liquid, verify the concentration and measured mL, shake well, refrigerate after mixing and discard after 14 days. A pharmacist should resolve the selected label’s inconsistent pediatric volume row; household teaspoons are unsuitable for precise measurement."
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Representative product · Aurobindo 500 mg capsule",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "3;11;16;package panels"
+        ]
+      },
+      "claims": [
+        [
+          "Ingredient / route",
+          "Cephalexin monohydrate equivalent to 500 mg cephalexin · oral."
+        ],
+        [
+          "Appearance / imprint",
+          "Dark green / light green hard gelatin capsule; A 43 / 500 mg."
+        ],
+        [
+          "Manufacturer / distributor",
+          "Aurobindo Pharma Limited / Aurobindo Pharma USA."
+        ],
+        [
+          "Example NDC",
+          "65862-019-01 · bottle of 100."
+        ],
+        [
+          "U.S. status",
+          "Prescription antibacterial; no pharmacy stock claim."
+        ]
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "sourceIds": [
+        "label",
+        "susp"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "3;11;16;package panels"
+        ],
+        "susp": [
+          "3;11;16;package panels"
+        ]
+      },
+      "claims": [
+        [
+          "Selected capsules",
+          "250 mg (A 42 / 250 mg); 500 mg (A 43 / 500 mg)."
+        ],
+        [
+          "Selected oral suspensions",
+          "125 mg/5 mL and 250 mg/5 mL after constitution; bottles producing 100 or 200 mL."
+        ],
+        [
+          "Suspension package examples",
+          "125 mg/5 mL: 59651-322-01/-02; 250 mg/5 mL: 59651-323-01/-02."
+        ],
+        [
+          "Scope",
+          "Other capsule/tablet strengths, brands and compounded formulations require their exact labels; no injectable cephalexin regimen is supplied."
+        ]
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "sourceIds": [
+        "label",
+        "susp"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "3;11;16;package panels"
+        ],
+        "susp": [
+          "3;11;16;package panels"
+        ]
+      },
+      "claims": [
+        "Capsules: 20–25°C, excursions 15–30°C; dispense in a tight light-resistant container. Selected suspension powder: 20–25°C, tightly closed. After exact-product reconstitution, refrigerate and keep for no more than 14 days; shake well before every measured dose. Manufacturer water-addition volumes cannot be exchanged between bottles."
+      ]
+    },
+    {
+      "section": "hero/essential",
+      "card": "Scope and essential safety",
+      "sourceIds": [
+        "label",
+        "susp"
+      ],
+      "sourceSections": [
+        "1.1–1.6;12.4 Microbiology;8.4",
+        "4;5.1–5.6;6;10",
+        "3;11;16;package panels"
+      ],
+      "claims": [
+        "An oral antibacterial for specified infections caused by susceptible bacteria. Selection and duration depend on the infection, organism and patient; this profile summarizes selected U.S. capsule and suspension labels.",
+        "Serious allergy and severe antibiotic-associated diarrhea can occur. Renal impairment can require lower or less frequent doses; unadjusted exposure increases seizure risk.",
+        [
+          "Therapeutic class",
+          "Cephalosporin antibacterial"
+        ],
+        [
+          "Representative products",
+          "Aurobindo capsules and oral suspension"
+        ],
+        [
+          "Reference focus",
+          "U.S. oral formulations; infection-specific selection"
+        ]
+      ]
+    }
+  ],
+  "exclusions": [
+    "Non-U.S. availability or regimens; unreviewed manufacturer packages; no off-label or universal guideline dosing algorithm",
+    "Inconsistent label pediatric volume row, exact-age1 regimen, younger-child renal/hemodialysis algorithm, specific guideline empiric-agent choice or universal course length."
+  ],
+  "gaps": [
+    {
+      "material": false,
+      "topic": "Printed pediatric suspension volume inconsistency",
+      "finding": "Aurobindo suspension Table 1 OPTION 2, 40 kg and 125 mg/5 mL, prints 2–4 tsp twice daily. Its corresponding 250 mg/5 mL cell also prints 2–4 tsp twice daily, representing double the same total dose; a comparison capsule/repack suspension table uses 4–8 tsp twice daily for 125 mg/5 mL. The mg/kg/day text agrees across the full labels.",
+      "resolution": "Do not reproduce the inconsistent volume row. Published profile uses mg/kg/day and exact mg/mL, explicitly requires pharmacist-calculated prescribed mL and flags the inconsistency."
+    },
+    {
+      "material": false,
+      "topic": "Age and renal boundary wording",
+      "finding": "Current suspension indications and section 8.4 say age ≥1, while the section 2.2 heading says over 1. The capsule renal table prints >60 mL/min and omits exactly 60; the suspension table prints ≥60.",
+      "resolution": "The published profile requires confirmation for a child exactly age 1. Its renal table explicitly follows the selected suspension table for adults/age ≥15 and flags the exact capsule boundary. No infant, younger-child renal or dialysis algorithm is inferred."
+    }
+  ],
+  "materialErrors": [],
+  "validation": {
+    "schema": "Passed validateMonograph with zero errors, 2026-10-01.",
+    "renderedPage": "Pending parent integration QA"
+  },
+  "monographSha256": "5c7a179dc937cb384012148e840e4dc82e6ce21c9b6aa18a15fa23d40407c3e9",
+  "sourceInterpretationNotes": [
+    "Clinical revision, SPL version/effectiveTime and API publication dates are distinguished. Current public U.S. labeling is product evidence, not a pharmacy inventory claim."
+  ]
+}

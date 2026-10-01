@@ -1,0 +1,462 @@
+{
+  "slug": "allopurinol",
+  "checked": "2026-10-01",
+  "status": "source_reviewed",
+  "review_scope": "An oral tablet reference for gout, cancer-therapy hyperuricemia, and qualifying recurrent calcium oxalate stones. All eight blueprint sections reviewed. Product-specific focused monograph; not an exhaustive adverse-event catalog.",
+  "sources": [
+    {
+      "id": "label",
+      "title": "Allopurinol · Current oral tablet prescribing information",
+      "publisher": "DailyMed / PD-Rx Pharmaceuticals, Inc. (Aurobindo source label)",
+      "note": "SPL version 2, effective 20260925; current public product labeling.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=da78d290-c71f-44bc-8db4-58fe4195e2f8",
+      "checked": "2026-10-01",
+      "version": "SPL version 2, effective 20260925; current public product labeling.",
+      "spl_version": "2",
+      "spl_effective_time": "20260925",
+      "xml_url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/da78d290-c71f-44bc-8db4-58fe4195e2f8.xml",
+      "downloaded_xml_sha256": "7ed6f1566bfc4875a541aa0e354459c4150e6dd01afce007322f1e3ca1349175",
+      "regulatory_record": [
+        {
+          "application": "ANDA215091",
+          "category": "ANDA"
+        }
+      ]
+    },
+    {
+      "id": "acr",
+      "title": "2020 ACR Guideline for the Management of Gout",
+      "publisher": "American College of Rheumatology / Arthritis Care & Research",
+      "note": "2020 guideline, DOI 10.1002/acr.24180; current guideline listed by ACR, checked October 1, 2026. Public full text from the society.",
+      "url": "https://assets.contentstack.io/v3/assets/bltee37abb6b278ab2c/blt04d52e3b6ff5112f/632cab5b258fb55f6b2186af/gout-guideline-2020.pdf",
+      "checked": "2026-10-01",
+      "version": "2020 guideline, DOI 10.1002/acr.24180; current guideline listed by ACR, checked October 1, 2026. Public full text from the society."
+    }
+  ],
+  "assertion_to_source": [
+    {
+      "section_id": "indications",
+      "card_title": "Approved oral indications",
+      "assertions": [
+        "The current U.S. tablet label covers adult primary/secondary gout with manifestations such as flares, tophi, joint damage, uric acid lithiasis or nephropathy; adult/pediatric leukemia, lymphoma, or solid-tumor patients receiving cancer therapy that raises serum/urinary urate; and recurrent calcium oxalate stones in adults with urinary uric acid above 800 mg/day in men or 750 mg/day in women despite lifestyle changes. It does not recommend treatment of asymptomatic hyperuricemia."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "1"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "indications",
+      "card_title": "Role in gout",
+      "assertions": [
+        "Allopurinol lowers urate over time rather than directly treating acute flare pain. ACR recommends it as first-line urate-lowering therapy, including in CKD, when such treatment is indicated. Ongoing flares during initiation do not automatically mean treatment failure or require stopping established allopurinol; treat the flare concurrently."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "2.2",
+            "5.2"
+          ]
+        },
+        {
+          "source_id": "acr",
+          "sections": [
+            "Choice of initial ULT / Table 2"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "dosage",
+      "card_title": "Adult gout and prophylaxis",
+      "assertions": [
+        "With normal renal function, the label starts 100 mg daily and increases by 100 mg weekly to serum urate ≤6 mg/dL; maximum recommended 800 mg/day. Divide doses above 300 mg/day. ACR uses a target below 6 mg/dL and supports titration guided by serial urate rather than fixed dosing. Use colchicine or another appropriate anti-inflammatory prophylaxis at initiation; ACR recommends 3–6 months with extension if flares persist. The label continues prophylaxis until urate normalizes and the patient is flare-free for several months."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "2.2",
+            "2.3"
+          ]
+        },
+        {
+          "source_id": "acr",
+          "sections": [
+            "Table 2 / Table 3 / treat-to-target"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "dosage",
+      "card_title": "Gout with renal impairment",
+      "assertions": [
+        "The table gives INITIAL adult gout doses, not permanent dose ceilings. With renal impairment, increase gradually by 50 mg/day every 2–4 weeks and closely monitor kidney function. The label does not define a maximum at each eGFR; reassess safety and urate response. These limits cannot be substituted for the oncology table.",
+        ">60 | No renal modification to the usual starting regimen",
+        ">30 to 60 | 50 mg daily",
+        ">15 to 30 | 50 mg every other day",
+        "5 to 15 | 50 mg twice weekly",
+        "<5 | 50 mg once weekly"
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "2.6 / Table 1"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "dosage",
+      "card_title": "Cancer-therapy hyperuricemia",
+      "assertions": [
+        "Start 24–48 hours before chemotherapy expected to cause tumor lysis. Adults: 300–800 mg/day, adjusted for kidney function. Pediatric label: 100 mg/m² every 8–12 hours, with a stated weight-based daily regimen of 10 mg/kg/day and maximum 800 mg/day. The label lists both BSA and weight expressions; they are not automatically interchangeable, and oncology must select and verify the regimen. Consider a different formulation if BSA is below 0.5 m². Check urate at least daily and stop when tumor-lysis risk has abated; the label describes 2–3 days after chemotherapy begins, but ongoing risk needs oncology reassessment."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "2.4",
+            "2.6",
+            "8.4"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "dosage",
+      "card_title": "Cancer therapy with renal impairment",
+      "assertions": [
+        "These are adult cancer-therapy doses. Pediatric renal-impairment dosing is not established; severe impairment below eGFR 20 and dialysis were not studied. Obtain specialist dosing rather than applying the adult table.",
+        "eGFR >20 to 60 mL/min | No dosage modification",
+        "eGFR 10–20 mL/min | 200 mg/day",
+        "eGFR <10 mL/min | 100 mg/day",
+        "Dialysis | 50 mg every 12 hours OR 100 mg every 24 hours"
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "2.6 / Table 2"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "dosage",
+      "card_title": "Recurrent calcium oxalate stones and administration",
+      "assertions": [
+        "For qualifying hyperuricosuric adults, 200–300 mg/day in one or divided doses; adjust by follow-up 24-hour urinary urate. Renal-impairment stone dosing is not established. Take after meals to improve tolerance and do not double a missed dose. Maintain hydration under the clinical plan; the label’s adult urine-output goal is at least 2 L/day, requiring individualization when fluid balance is constrained."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "2.3",
+            "2.5",
+            "2.6",
+            "5.3",
+            "17"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "safety",
+      "card_title": "Warnings and precautions",
+      "assertions": [
+        "SJS, TEN, DRESS, and other serious/fatal hypersensitivity can occur. Permanently discontinue at the first rash or other suspected hypersensitivity; do not wait for blistering. Renal dysfunction and certain interacting drugs raise risk. Monitor for kidney injury/xanthine calculi, liver injury, and cytopenias; increased liver enzymes warrant discontinuation under the label. Early gout flares need concurrent anti-inflammatory care, not automatic withdrawal. Dizziness/drowsiness may impair driving and add to alcohol/CNS depressants."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "5.1–5.6"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "safety",
+      "card_title": "Contraindications",
+      "assertions": [
+        "A history of hypersensitivity to allopurinol or a tablet ingredient is contraindicated. HLA-B*58:01 positivity is an avoid-use recommendation unless benefits clearly outweigh risks, rather than a separate formal section 4 contraindication. Severe renal impairment calls for indication-specific assessment/dosing, not a universal contraindication."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "4",
+            "5.1",
+            "2.6"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "safety",
+      "card_title": "Boxed warning status",
+      "assertions": [
+        "The selected U.S. tablet label has no boxed warning. Its severe and potentially fatal hypersensitivity warning still requires immediate action."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "Full labeling / 5.1"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "safety",
+      "card_title": "Adverse reactions and overdose",
+      "assertions": [
+        "Rash, nausea, diarrhea, liver-enzyme elevations, and early gout flares are frequently reported. Less common serious reactions include severe skin/systemic hypersensitivity, hepatitis, kidney injury, and blood dyscrasias; spontaneous reporting does not quantify every event. Overdose has no specific antidote. Allopurinol/oxypurinol are dialyzable, but the clinical benefit of dialysis in overdose is unknown; obtain poison-center/emergency assessment."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "6",
+            "10"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "interactions",
+      "card_title": "Azathioprine and mercaptopurine",
+      "assertions": [
+        "Allopurinol inhibits their xanthine-oxidase-mediated metabolism and can cause dangerous myelosuppression. The current allopurinol label states that with 300–600 mg/day, their usual doses require reduction to approximately one-third to one-quarter, followed by adjustment for response/toxicity. Use their own current prescribing information and specialist oversight for the actual combination; do not assume this fraction applies automatically to every allopurinol dose. Monitor CBC closely."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "5.5",
+            "7.2 / thiopurines"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "interactions",
+      "card_title": "Oncology and urate therapies",
+      "assertions": [
+        "Avoid capecitabine or fluorouracil combinations because antitumor activity may decrease. Do not use allopurinol during pegloticase therapy, since suppressed urate can mask loss of response associated with anaphylaxis risk. Other cytotoxic agents may add marrow suppression, requiring more frequent blood counts. Uricosurics alter oxypurinol clearance and urinary urate load; monitor the combined effect and kidney risk."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "7.2 / capecitabine, fluorouracil, pegloticase, cytotoxic drugs, uricosurics"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "interactions",
+      "card_title": "Other important interactions",
+      "assertions": [
+        "Bendamustine, amoxicillin/ampicillin, and thiazides may increase rash/hypersensitivity risk; kidney impairment adds risk with thiazides. Monitor renal function and adjust as directed. Allopurinol can raise cyclosporine levels, prolong dicumarol effects, and enhance warfarin anticoagulation; monitor drug levels/prothrombin time/INR and adjust the relevant medicine. Chlorpropamide may cause more hypoglycemia with renal impairment. At allopurinol ≥600 mg/day, theophylline clearance may fall; monitor levels and dosing."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "7.1",
+            "7.2"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "populations",
+      "card_title": "HLA-B*58:01 screening",
+      "assertions": [
+        "FDA labeling advises considering screening before initiation in populations with high allele prevalence, including specified African/Asian and Native Hawaiian/Pacific Islander ancestry groups; it generally does not recommend screening low-prevalence populations or existing tolerant users. ACR conditionally recommends testing Southeast Asian (e.g., Han Chinese, Korean, Thai) and African American patients, and against universal testing in others. These approaches differ in scope. A negative test does not eliminate risk; positive patients generally should avoid allopurinol unless a compelling benefit outweighs risk."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "5.1",
+            "12.5"
+          ]
+        },
+        {
+          "source_id": "acr",
+          "sections": [
+            "Table 4 / Allopurinol recommendations"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "populations",
+      "card_title": "Pregnancy and lactation",
+      "assertions": [
+        "Allopurinol and oxypurinol cross the placenta. Limited human reports do not establish a clear risk pattern, while animal findings support potential fetal harm; discuss need and alternatives. Both enter human milk. The selected current U.S. label advises no breastfeeding during treatment and for 1 week after the last dose because of possible serious infant reactions. Limited published milk/infant data do not establish universal safety."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "8.1",
+            "8.2"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "populations",
+      "card_title": "Children and organ impairment",
+      "assertions": [
+        "Pediatric use is established for cancer-therapy hyperuricemia, not pediatric gout, calcium oxalate stone prevention, or rare purine disorders under this label. Pediatric renal dosing remains insufficiently defined. Renal elimination requires close reassessment when function changes. In pre-existing liver disease, monitor liver enzymes periodically; no validated numeric hepatic adjustment is supplied. Older-patient dosing should follow organ function and clinical risk, with no invented age-only regimen."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "8.4",
+            "8.6",
+            "2.6",
+            "5.4"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "pharmacology",
+      "card_title": "Mechanism",
+      "assertions": [
+        "Allopurinol and oxypurinol inhibit xanthine oxidase, reducing conversion of hypoxanthine to xanthine and xanthine to uric acid. They reduce new urate production rather than act as an acute anti-inflammatory or directly remove circulating uric acid."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "12.1",
+            "12.2",
+            "5.2"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "pharmacology",
+      "card_title": "Pharmacokinetics",
+      "assertions": [
+        "Oral absorption is approximately 90%; peaks occur around 1.5 hours for allopurinol and 4.5 hours for oxypurinol. Half-lives are about 1–2 hours and 15 hours respectively in the label’s described setting. Oxypurinol’s sustained activity and renal elimination explain accumulation and dose reassessment in kidney impairment."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "12.3",
+            "8.6"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "practice",
+      "card_title": "Monitoring",
+      "assertions": [
+        "For gout, obtain baseline urate, CBC, chemistry panel, liver tests, creatinine, and eGFR. Follow urate during titration; check kidney function frequently early, and at least daily in tumor-lysis settings. Monitor blood counts more closely with marrow-toxic combinations and liver enzymes with pre-existing disease or hepatic symptoms. Stone prevention uses repeat 24-hour urinary urate. Review adherence and prophylaxis."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "2.1",
+            "2.3–2.6",
+            "5.3–5.5"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "practice",
+      "card_title": "Counseling",
+      "assertions": [
+        "Continue prescribed allopurinol during an ordinary gout flare and seek appropriate flare treatment; do not continue through a rash. Stop and obtain immediate assessment for rash, blisters, fever, eye/mouth irritation, swelling, painful urination, or blood in urine. Report jaundice, unexplained bleeding/infections, or marked fatigue. Discuss hydration, pregnancy/breastfeeding, interacting medicines, missed doses, and driving effects."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "17"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "product",
+      "card_title": "Representative product",
+      "assertions": [
+        "The selected PD-Rx repackaged 100-mg tablet is white/off-white, round, beveled, with AL and 100 separated by a score on one side and plain reverse; the 90-count bottle is NDC 72789-596-90. Its label identifies Aurobindo as the underlying manufacturer/distributor. Other manufacturers and packages differ."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "3",
+            "16",
+            "17 / manufacturer metadata"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "product",
+      "card_title": "Dosage forms and strengths",
+      "assertions": [
+        "The underlying label describes functionally scored 100- and 300-mg tablets; this repackaged presentation specifically supplies 100 mg. The functional 100-mg score permits the 50-mg starting amounts in the label’s renal table. IV allopurinol and other formulations require separate labeling; small-body-surface-area pediatric patients may need an alternative formulation."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "3",
+            "16",
+            "2.4",
+            "2.6"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "product",
+      "card_title": "Storage and handling",
+      "assertions": [
+        "Store at 20–25°C (68–77°F), protected from moisture and light. Dispense in a tight, light-resistant container. Keep medicines out of children’s reach and verify the tablet before splitting a prescribed scored dose."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "16",
+            "3"
+          ]
+        }
+      ]
+    }
+  ],
+  "material_errors": [],
+  "gaps": [],
+  "limitations": [
+    "Current SPL is a September 25, 2026 PD-Rx repackaged Aurobindo label; source versus repackaged product identity is explicit.",
+    "IV allopurinol is excluded. Pediatric renal dosing, renal-impaired stone dosing, and numeric hepatic adjustment are not established in the selected label.",
+    "BSA and weight-based pediatric oncology expressions are both presented by the label and are not asserted to be interchangeable. Specialist regimen verification is required.",
+    "FDA and ACR HLA-screening scope and urate-target wording are distinguished. No general recommendation for urine alkalinization is made from the tablet label’s legacy wording."
+  ]
+}

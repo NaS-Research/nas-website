@@ -1,0 +1,617 @@
+{
+  "slug": "lisdexamfetamine",
+  "status": "source_reviewed",
+  "checked": "2026-10-01",
+  "scope": "CurrentU.S.TakedaVyvansecapsules10–70mgandchewables10–60mg; labeledADHD≥6yearsandadultmoderate/severeBED,renalmaxima,exactadministrationandsafety; FDA2025under6action",
+  "excludedRegimens": [
+    "Othermanufacturerappearance/excipients; otherstimulantconversionoruniversalamphetamineclasscontraindications",
+    "PediatricBED,ADHDunder6,weight-loss/obesityregimens",
+    "Partialcapsule/chewablesplitting,preparedmixturestorage,70mgchewableproduct",
+    "Fixedtaper,universalDATscanwashoutduration,validatednumerichepaticadjustmentnotprovided"
+  ],
+  "sources": [
+    {
+      "id": "label",
+      "title": "Vyvanse capsules and chewable tablets · Prescribing information",
+      "publisher": "DailyMed / Takeda Pharmaceuticals America, Inc.",
+      "note": "Current SPL version 81, effective 2026-04-30. Full prescribing information and Medication Guide revised April2026.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=704e4378-ca83-445c-8b45-3cfa51c1ecad"
+    },
+    {
+      "id": "fda",
+      "title": "Stimulants and patients younger than6 years · Safety communication",
+      "publisher": "U.S. Food and Drug Administration",
+      "note": "June30, 2025 class labeling action; current Vyvanse label incorporates the under-six limitation. Accessed October1, 2026.",
+      "url": "https://www.fda.gov/drugs/drug-safety-communications/fda-requires-expanded-labeling-about-weight-loss-risk-patients-younger-6-years-taking-extended"
+    }
+  ],
+  "labelMetadata": [
+    {
+      "product": "lisdexamfetamine-brand",
+      "sourceId": "label",
+      "setid": "704e4378-ca83-445c-8b45-3cfa51c1ecad",
+      "effectiveTime": "20260430",
+      "version": "81",
+      "PIrevision": "April2026",
+      "xmlSha256": "09af21a652b345aedf00582a7a8c35032fe65800417de6813319463a675508aa",
+      "localEvidence": "/tmp/nas-drug-sources/lisdexamfetamine-brand.xml",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/704e4378-ca83-445c-8b45-3cfa51c1ecad.xml"
+    }
+  ],
+  "evidence": [
+    {
+      "sourceId": "label",
+      "localEvidence": "/tmp/nas-drug-sources/lisdexamfetamine-brand.xml",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/lisdexamfetamine/lisdexamfetamine-brand.xml",
+      "sha256": "09af21a652b345aedf00582a7a8c35032fe65800417de6813319463a675508aa",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/704e4378-ca83-445c-8b45-3cfa51c1ecad.xml"
+    },
+    {
+      "sourceId": "label",
+      "localEvidence": "/tmp/nas-drug-sources/lisdexamfetamine-brand-sections.json",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/lisdexamfetamine/lisdexamfetamine-brand-sections.json",
+      "sha256": "46024281b7f9561cd02051004ab0bb2b1edc5e39360add24b705f67f3d1dbce0",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/704e4378-ca83-445c-8b45-3cfa51c1ecad.xml"
+    },
+    {
+      "sourceId": "fda",
+      "localEvidence": "/tmp/nas-drug-sources/lisdexamfetamine-fda-child.html",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/lisdexamfetamine/lisdexamfetamine-fda-child.html",
+      "sha256": "bfee52358831f2a57208fc4446c0922fc78adacc4efb4189c44f91c4c3c23ea1",
+      "url": "https://www.fda.gov/drugs/drug-safety-communications/fda-requires-expanded-labeling-about-weight-loss-risk-patients-younger-6-years-taking-extended"
+    }
+  ],
+  "sourceEvidenceRoot": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/lisdexamfetamine",
+  "sourceManifest": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/lisdexamfetamine/source-manifest.json",
+  "assertionToSourceMap": [
+    {
+      "section": "indications",
+      "card": "Labeled indications",
+      "assertions": {
+        "paragraphs": [
+          "Vyvanse capsules and chewable tablets treat ADHD in adults and children aged 6 years or older, and moderate to severe binge eating disorder in adults. Pediatric BED safety/effectiveness are not established below age 18 years."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "§1; §8.4ADHD/BEDageeligibility"
+      },
+      "review": "Reviewed complete supporting primary label sections; current guideline scope, population and formulation distinctions retained. General monitoring/emergency counseling identified as clinical synthesis where not exact label instructions."
+    },
+    {
+      "section": "indications",
+      "card": "Limitations of use",
+      "assertions": {
+        "paragraphs": [
+          "Use below age 6 years is not approved or recommended: younger children had higher dextroamphetamine exposure and more adverse reactions, including weight loss, at the same dose. Vyvanse is not indicated or recommended for weight loss; safety and efficacy for obesity are unestablished. Do not infer a BED diagnosis from appetite reduction."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "fda"
+      ],
+      "sourceSections": {
+        "label": "§1LimitationsOfUse; §5.5,8.4",
+        "fda": "June30,2025safetyconcern,labelaction,parents/professionals recommendations,under6PK/weightlossrisk"
+      },
+      "review": "Reviewed complete supporting primary label sections; current guideline scope, population and formulation distinctions retained. General monitoring/emergency counseling identified as clinical synthesis where not exact label instructions."
+    },
+    {
+      "section": "dosage",
+      "card": "Labeled oral regimens",
+      "assertions": {
+        "paragraphs": [
+          "Take in the morning with or without food; avoid afternoon doses because of insomnia. Reassess benefit and adverse effects rather than automatically titrate to the maximum. Lower renal caps take priority."
+        ],
+        "table": {
+          "headers": [
+            "Indication / population",
+            "Initial dose / titration",
+            "Target / maximum"
+          ],
+          "rows": [
+            [
+              "ADHD · adults and age ≥6 years",
+              "30 mg every morning; increase by 10 or 20 mg at approximately weekly intervals",
+              "Recommended 30–70 mg/day; maximum 70 mg once daily"
+            ],
+            [
+              "Moderate to severe BED · adults",
+              "30 mg every morning; increase by 20 mg at approximately weekly intervals",
+              "Target 50–70 mg/day; maximum 70 mg once daily. Discontinue if binge eating does not improve"
+            ]
+          ]
+        }
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "§2.2–2.4labeladult/pediatricADHD andadultBED dose/titrationlimits,discontinueBEDifnoimprovement"
+      },
+      "review": "Reviewed complete supporting primary label sections; current guideline scope, population and formulation distinctions retained. General monitoring/emergency counseling identified as clinical synthesis where not exact label instructions."
+    },
+    {
+      "section": "dosage",
+      "card": "Renal impairment",
+      "assertions": {
+        "paragraphs": [
+          "These limits apply to the reviewed product across its labeled indications. Preserve the label’s indexed GFR units; dialysis does not remove the active drug or justify an extra post-dialysis dose."
+        ],
+        "table": {
+          "headers": [
+            "Renal category · indexed GFR",
+            "Maximum dose",
+            "Important point"
+          ],
+          "rows": [
+            [
+              "Severe ·15 to <30 mL/min/1.73 m²",
+              "50 mg once daily",
+              "Reduced clearance"
+            ],
+            [
+              "ESRD ·<15 mL/min/1.73 m²",
+              "30 mg once daily",
+              "Lisdexamfetamine and dextroamphetamine are not dialyzable"
+            ]
+          ]
+        }
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "§2.5; §8.6 indexedGFR50/30caps; notdialyzable"
+      },
+      "review": "Reviewed complete supporting primary label sections; current guideline scope, population and formulation distinctions retained. General monitoring/emergency counseling identified as clinical synthesis where not exact label instructions."
+    },
+    {
+      "section": "dosage",
+      "card": "Capsule opening and chewable administration",
+      "assertions": {
+        "paragraphs": [
+          "Swallow capsules whole, or open and mix the entire contents thoroughly with yogurt, water, or orange juice. Break up compacted powder if needed, consume the entire mixture immediately, and do not store it. An inactive-ingredient film may remain after consumption. Chewable tablets must be chewed thoroughly before swallowing. The label permits Vyvanse capsules and chewables to substitute mg-for-mg at the same dose; a single dose must not be divided, and partial capsule contents or tablets are not a dose-measuring method."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "§2.2 fullcapsulemix/dispersal/immediateconsumption/noportion instructions; matchedcapsule/chewable mgformgsubstitution"
+      },
+      "review": "Reviewed complete supporting primary label sections; current guideline scope, population and formulation distinctions retained. General monitoring/emergency counseling identified as clinical synthesis where not exact label instructions."
+    },
+    {
+      "section": "dosage",
+      "card": "Pretreatment and interacting drugs",
+      "assertions": {
+        "paragraphs": [
+          "Before treatment, assess cardiac history, family history of sudden death or ventricular arrhythmia, and physical examination; evaluate tics and family history of Tourette’s syndrome. Screen psychiatric risk. When a serotonergic drug or CYP2D6 inhibitor must be combined, use lower starting doses and monitor during initiation and titration. Urinary pH modifiers can alter active amphetamine exposure; dose decisions remain with the prescriber."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "§2.1screening; §5.4,5.7; §2.6,7.1"
+      },
+      "review": "Reviewed complete supporting primary label sections; current guideline scope, population and formulation distinctions retained. General monitoring/emergency counseling identified as clinical synthesis where not exact label instructions."
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "assertions": {
+        "paragraphs": [
+          "Assess misuse and addiction risk before and during treatment; overdose can be fatal. Avoid use with serious structural cardiac disease, cardiomyopathy, serious arrhythmia, coronary artery disease, or other serious cardiac disease. Monitor BP and pulse: average increases are modest but individual increases may be larger. Exertional chest pain or unexplained fainting requires prompt assessment.",
+          "Screen for mania risk; psychosis or mania can emerge even without previous symptoms. Monitor pediatric height and weight; inadequate growth may require treatment interruption. Watch for Raynaud’s symptoms, digital ulcers, new or worsening tics, or Tourette’s symptoms. Serotonin syndrome can occur with interacting drugs or overdose; stop implicated treatment and seek urgent care for suspected toxicity."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "Full§5.1–5.8 includingavoidseriouscardiacdisease,psychrisk,growth,digitalcirculation,tics,serotoninsyndrome"
+      },
+      "review": "Reviewed complete supporting primary label sections; current guideline scope, population and formulation distinctions retained. General monitoring/emergency counseling identified as clinical synthesis where not exact label instructions."
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "assertions": {
+        "paragraphs": [
+          "Known hypersensitivity to amphetamine products or Vyvanse ingredients; and MAOI treatment or use within 14 days after stopping an MAOI, including linezolid or IV methylene blue, because of hypertensive-crisis risk. Serious cardiac disease is an avoid-use warning in this current label, rather than an additional item in its formal contraindication list."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "§4exactcontraindications; §5.2avoidwarningnotformalcontra"
+      },
+      "review": "Reviewed complete supporting primary label sections; current guideline scope, population and formulation distinctions retained. General monitoring/emergency counseling identified as clinical synthesis where not exact label instructions."
+    },
+    {
+      "section": "safety",
+      "card": "Boxed warning",
+      "assertions": {
+        "paragraphs": [
+          "Vyvanse has high potential for abuse and misuse, which can lead to substance-use disorder and addiction. Overdose and death can occur, especially with higher doses or unapproved administration such as snorting or injection. Assess risk, educate patients and families, store securely, dispose appropriately, and repeatedly monitor for misuse."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "CompleteBoxedWarning; §5.1,9.2"
+      },
+      "review": "Reviewed complete supporting primary label sections; current guideline scope, population and formulation distinctions retained. General monitoring/emergency counseling identified as clinical synthesis where not exact label instructions."
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions",
+      "assertions": {
+        "paragraphs": [
+          "ADHD trials commonly report decreased appetite, weight loss, insomnia, dry mouth, GI symptoms, anxiety, irritability, and dizziness. Adult BED trials commonly report dry mouth, insomnia, decreased appetite, increased heart rate, constipation, jitteriness, and anxiety. Serious postmarketing reports include cardiomyopathy, seizures, severe hypersensitivity or skin reactions, and rhabdomyolysis; reported frequencies and causality are uncertain."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "§6.1ADHD andBEDpopulations; §6.2postmarketing"
+      },
+      "review": "Reviewed complete supporting primary label sections; current guideline scope, population and formulation distinctions retained. General monitoring/emergency counseling identified as clinical synthesis where not exact label instructions."
+    },
+    {
+      "section": "interactions",
+      "card": "MAOIs and serotonin-risk combinations",
+      "assertions": {
+        "paragraphs": [
+          "MAOIs are contraindicated during treatment and for 14 days after their last dose. SSRIs, SNRIs, triptans, tramadol, fentanyl, lithium, buspirone, St. John’s wort, and other serotonergic agents raise serotonin-syndrome risk. CYP2D6 inhibitors can increase dextroamphetamine exposure. Consider alternatives; if combination is warranted, initiate lower and monitor closely during dose changes."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "§4,5.7; §7.1 MAOI,serotonergic,CYP2D6"
+      },
+      "review": "Reviewed complete supporting primary label sections; current guideline scope, population and formulation distinctions retained. General monitoring/emergency counseling identified as clinical synthesis where not exact label instructions."
+    },
+    {
+      "section": "interactions",
+      "card": "Urinary pH and tricyclic antidepressants",
+      "assertions": {
+        "paragraphs": [
+          "Urinary alkalinizing agents such as sodium bicarbonate can increase amphetamine exposure; the interaction table advises avoiding coadministration. Acidifying agents such as ascorbic acid can lower exposure and efficacy; adjust only according to clinical response and within dose limits. Tricyclic antidepressants may potentiate sympathomimetic and cardiovascular effects; monitor and consider adjustment or alternative treatment."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "§2.6; §7.1 urinaryacidification/alkalinization,TCAs; avoidancewording specificfullinteractiontable"
+      },
+      "review": "Reviewed complete supporting primary label sections; current guideline scope, population and formulation distinctions retained. General monitoring/emergency counseling identified as clinical synthesis where not exact label instructions."
+    },
+    {
+      "section": "interactions",
+      "card": "Dopamine-transporter imaging",
+      "assertions": {
+        "paragraphs": [
+          "Vyvanse can interfere with ioflupane I-123 dopamine-transporter imaging and produce false-positive diagnostic findings. Inform the imaging team and allow an adequate clinician-directed washout; the label does not provide a universal number of days."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "§7.2 dopamine-transporterioflupaneI123interference/fullwashoutinstruction; §17"
+      },
+      "review": "Reviewed complete supporting primary label sections; current guideline scope, population and formulation distinctions retained. General monitoring/emergency counseling identified as clinical synthesis where not exact label instructions."
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy and lactation",
+      "assertions": {
+        "paragraphs": [
+          "Human pregnancy data are insufficient to determine drug-associated major-birth-defect or miscarriage risk. Amphetamines may impair placental perfusion; adverse outcomes in amphetamine-dependent mothers do not establish an exact risk from therapeutic Vyvanse. Discuss potential fetal effects and the National Pregnancy Registry for Psychostimulants. Monitor exposed newborns for withdrawal or feeding symptoms. Amphetamine enters milk and long-term infant effects are unknown; the current label advises against breastfeeding during Vyvanse treatment."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "Complete§8.1registry,risksummary,clinicalconsiderations,data; §8.2lactation andno-breastfeedingrecommendation; §17"
+      },
+      "review": "Reviewed complete supporting primary label sections; current guideline scope, population and formulation distinctions retained. General monitoring/emergency counseling identified as clinical synthesis where not exact label instructions."
+    },
+    {
+      "section": "populations",
+      "card": "Pediatrics and geriatrics",
+      "assertions": {
+        "paragraphs": [
+          "ADHD safety and efficacy are established at ages 6–17 years; pediatric BED below 18 years is unestablished. Below 6 years, use is not approved or recommended because of higher exposure and more adverse reactions. Monitor growth and appetite, not weight alone. Trials included too few adults aged 65 years or older to determine differences; start cautiously at the low end and consider organ function and comorbid disease."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "fda"
+      ],
+      "sourceSections": {
+        "label": "§8.4fullADHD/BEDscope,under6trial/growth; §8.5geriatrics",
+        "fda": "June30,2025under6limitationrationale and professionalmonitoringadvice"
+      },
+      "review": "Reviewed complete supporting primary label sections; current guideline scope, population and formulation distinctions retained. General monitoring/emergency counseling identified as clinical synthesis where not exact label instructions."
+    },
+    {
+      "section": "populations",
+      "card": "Renal and hepatic considerations",
+      "assertions": {
+        "paragraphs": [
+          "Severe renal impairment and ESRD require the 50 mg/day and 30 mg/day caps above, respectively; neither the prodrug nor active dextroamphetamine is dialyzable. The selected label supplies no validated numeric hepatic-impairment regimen. Red-cell conversion of lisdexamfetamine does not establish safety in every hepatic disorder or remove active-metabolite drug interactions."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "§2.5,8.6; §12.3 redcellconversion/renalPK; nohepaticnumerictableinselectedfullPI"
+      },
+      "review": "Reviewed complete supporting primary label sections; current guideline scope, population and formulation distinctions retained. General monitoring/emergency counseling identified as clinical synthesis where not exact label instructions."
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism of action",
+      "assertions": {
+        "paragraphs": [
+          "Lisdexamfetamine is converted to dextroamphetamine and L-lysine, primarily through red-cell hydrolysis. Amphetamines increase extracellular norepinephrine and dopamine through reduced reuptake and increased release. The exact therapeutic mechanism in ADHD and BED is unknown; lisdexamfetamine itself does not bind the relevant reuptake sites in vitro."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "§12.1–12.2mechanism; §12.3 redcellhydrolysis"
+      },
+      "review": "Reviewed complete supporting primary label sections; current guideline scope, population and formulation distinctions retained. General monitoring/emergency counseling identified as clinical synthesis where not exact label instructions."
+    },
+    {
+      "section": "pharmacology",
+      "card": "Pharmacokinetics",
+      "assertions": {
+        "paragraphs": [
+          "Food can delay the active-drug peak; the label permits administration with or without food. Active dextroamphetamine exposure is similar for matched Vyvanse capsule and chewable doses. These PK results do not authorize conversion mg-for-mg to mixed amphetamine salts or other stimulants."
+        ],
+        "facts": [
+          [
+            "Conversion",
+            "Primarily in blood; lisdexamfetamine is not CYP-metabolized"
+          ],
+          [
+            "Active-drug peak",
+            "About 3.5 hours after capsules in fasted 6–12 year-olds;4.4 hours after 60 mg chewable in fasted healthy subjects"
+          ],
+          [
+            "Active half-life",
+            "About 8.6–9.5 hours in 6–12 year-olds;10–11.3 hours in healthy adults"
+          ],
+          [
+            "Renal considerations",
+            "Urinary pH affects active-drug elimination; neither drug is dialyzable"
+          ]
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "Full§12.3capsuleandchewablepopulation-specificPK,food,conversion/elimination; §8.6dialyzability; §2.2substitution"
+      },
+      "review": "Reviewed complete supporting primary label sections; current guideline scope, population and formulation distinctions retained. General monitoring/emergency counseling identified as clinical synthesis where not exact label instructions."
+    },
+    {
+      "section": "pharmacology",
+      "card": "Dependence and tolerance",
+      "assertions": {
+        "paragraphs": [
+          "Physical dependence and tolerance can develop. Abrupt discontinuation or substantial dose reduction after prolonged use can produce depressed or dysphoric mood, fatigue, unpleasant dreams, sleep changes, increased appetite, or psychomotor changes. Arrange discontinuation and reassessment with the prescriber; the label does not specify a universal taper."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "§9.3PhysicalDependence andTolerance; nofixedtaperprovided"
+      },
+      "review": "Reviewed complete supporting primary label sections; current guideline scope, population and formulation distinctions retained. General monitoring/emergency counseling identified as clinical synthesis where not exact label instructions."
+    },
+    {
+      "section": "practice",
+      "card": "Monitoring",
+      "assertions": {
+        "paragraphs": [
+          "Monitor BP and pulse, weight and pediatric height, appetite, sleep, mood or psychotic/manic symptoms, tics, digital circulation, and misuse risk. Reassess ADHD function or binge-eating response and tolerability. Review renal function when impaired or changing and the complete medication list; do not use weight loss as a marker of BED treatment success."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "§2.1,5,8.4,17monitoring; §2.4BEDresponsevsweight-losslimitation"
+      },
+      "review": "Reviewed complete supporting primary label sections; current guideline scope, population and formulation distinctions retained. General monitoring/emergency counseling identified as clinical synthesis where not exact label instructions."
+    },
+    {
+      "section": "practice",
+      "card": "Patient counseling information",
+      "assertions": {
+        "items": [
+          "Read the Medication Guide; take the morning dose as prescribed, and never share this Schedule II medicine.",
+          "Tell the prescriber about MAOIs, antidepressants, serotonin-risk medicines, supplements, and urinary pH modifiers. Tell imaging clinicians before dopamine-transporter scans.",
+          "Use the entire capsule mixture immediately, or chew the selected tablet thoroughly; do not portion a dose or save a mixture.",
+          "Report chest pain, fainting, new hallucinations/mania, painful or discolored digits, wounds, or worsening tics. Discuss pregnancy and breastfeeding before or during treatment."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "§17; §2.2; §7.2; MedicationGuide"
+      },
+      "review": "Reviewed complete supporting primary label sections; current guideline scope, population and formulation distinctions retained. General monitoring/emergency counseling identified as clinical synthesis where not exact label instructions."
+    },
+    {
+      "section": "practice",
+      "card": "Overdose and urgent symptoms",
+      "assertions": {
+        "paragraphs": [
+          "Overdose can cause dangerous arrhythmias, vascular events, extreme agitation, serotonin syndrome, seizures, hyperthermia, or rhabdomyolysis. Seek immediate medical advice for suspected excess exposure; delayed prodrug conversion matters during observation. Call U.S. Poison Control at 1-800-222-1222; call 911 for collapse, seizure, impaired breathing, or inability to awaken. There is no home antidote and dialysis does not remove lisdexamfetamine or dextroamphetamine."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "§10clinicaleffects,PKconsideration/PoisonHelp/dialyzability; MedicationGuideemergencyadvice"
+      },
+      "review": "Reviewed complete supporting primary label sections; current guideline scope, population and formulation distinctions retained. General monitoring/emergency counseling identified as clinical synthesis where not exact label instructions."
+    },
+    {
+      "section": "product",
+      "card": "Representative capsule · Vyvanse 30 mg",
+      "assertions": {
+        "paragraphs": [
+          "These are brand-product identifiers; generic capsules can look different. A photograph or color match alone cannot verify identity."
+        ],
+        "facts": [
+          [
+            "Strength / form",
+            "30 mg lisdexamfetamine dimesylate capsule"
+          ],
+          [
+            "Appearance",
+            "White body; orange cap"
+          ],
+          [
+            "Imprint",
+            "S489 and 30 mg"
+          ],
+          [
+            "Package example",
+            "Takeda bottle of 100 · NDC 59417-103-10"
+          ]
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "§16.1 exact30mgcapsuleappearance,imprint,NDC"
+      },
+      "review": "Reviewed complete supporting primary label sections; current guideline scope, population and formulation distinctions retained. General monitoring/emergency counseling identified as clinical synthesis where not exact label instructions."
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "assertions": {
+        "paragraphs": [
+          "Vyvanse capsules: 10, 20, 30, 40, 50, 60, and 70 mg. Vyvanse chewables: 10, 20, 30, 40, 50, and 60 mg; no 70 mg chewable is listed. Both are oral products. Doses refer to lisdexamfetamine dimesylate, not an equivalent mg amount of dextroamphetamine or mixed amphetamine salts. Other manufacturers require their own product-identification and dispensing checks."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "§3,11,16.1 fullcapsule/chewablestrengthlist; no70mgchewable; dimesylatestrengthscope"
+      },
+      "review": "Reviewed complete supporting primary label sections; current guideline scope, population and formulation distinctions retained. General monitoring/emergency counseling identified as clinical synthesis where not exact label instructions."
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "assertions": {
+        "paragraphs": [
+          "Dispense in a tight, light-resistant container. Store at 20–25°C(68–77°F), with excursions 15–30°C(59–86°F). Keep securely, preferably locked, away from children. Prefer a medicine take-back program or DEA-authorized collector for unused medicine; follow the Medication Guide’s disposal directions when unavailable. Do not store opened-capsule mixtures."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "§16.2 exactcontainer/temperatureexcursions; §17; MedicationGuideDEA/takeback/storage/disposal; §2.2nomixturestorage"
+      },
+      "review": "Reviewed complete supporting primary label sections; current guideline scope, population and formulation distinctions retained. General monitoring/emergency counseling identified as clinical synthesis where not exact label instructions."
+    }
+  ],
+  "materialErrors": [],
+  "unresolvedMaterialGaps": [],
+  "sourceDiscrepancies": [
+    {
+      "issue": "Old Vyvanse/generic labels may omitunder6limitation,modernabuseboxorDATimaginginterference.",
+      "resolution": "OriginalTakedaApril2026PI/SPLv81checkedwithFDA2025under6communication; all currentlistedwarnings retained.",
+      "material": true,
+      "resolved": true
+    },
+    {
+      "issue": "Highlights§2crossreferencesaredisplacedrelativefullPIheadings.",
+      "resolution": "Fullcurrent§2.1–2.6usedratherthancopyhighlightsnumbering.",
+      "resolved": true
+    },
+    {
+      "issue": "Urinaryalkalinizationparagraphsaysadjustdosewhilefull§7.1tableadvisesavoidcoadministration.",
+      "resolution": "Specificavoidanceinstructionretainedanddosechangesprescriber-directed.",
+      "resolved": true
+    },
+    {
+      "issue": "CurrentformalcontraindicationlistonlyhypersensitivityandMAOIwhileolderamphetamineclasslistsbroaderconditions.",
+      "resolution": "ExactVyvansecontraindicationsretained; seriouscardiacdiseasepresentedasavoidwarning,notinventedformalcontra.",
+      "material": true,
+      "resolved": true
+    },
+    {
+      "issue": "Capsulesinclude70mgbutchewablelistends60mg; matchedcaps/chewmgswapnotcrossstimulantconversion.",
+      "resolution": "Exactstrengthlistandmgformgscope; no70mgchewableorpartialdosemethodinvented.",
+      "resolved": true
+    }
+  ],
+  "limitations": [
+    "Publicprimaryreferencesonly;nopaywalledaccessclaimed.",
+    "Schemaisnotclinicalreview;parentintegrationbuild/renderQApending.",
+    "Currentbrandlabelscope;othermanufacturersmayhaveproduct-specificdirectionsandidentifiers."
+  ],
+  "reviewedSourceSections": [
+    "FullcurrentBoxedWarningand§§1–8,9–12,16–17,MedicationGuide,productstrengthtable",
+    "Exactcapsulemix/chewablehandling/substitutionandpopulationlimits; renalindexedGFR/dialysis,serotonin/CYP2D6/urinarypH/DATimaging; pregnancy/lactationfullrisksummary/data/clinicalconsiderations",
+    "FDAJune30,2025publiccommunicationcompleteunder6limitationrationale,labelaction,parents/professionals recommendations"
+  ],
+  "verification": {
+    "schemaErrors": [],
+    "sectionIds": [
+      "indications",
+      "dosage",
+      "safety",
+      "interactions",
+      "populations",
+      "pharmacology",
+      "practice",
+      "product"
+    ],
+    "heroFacts": 3,
+    "safetyCardOrder": [
+      "Warnings and precautions",
+      "Contraindications",
+      "Boxed warning",
+      "Adverse reactions"
+    ],
+    "productCardOrder": [
+      "Representative capsule · Vyvanse 30 mg",
+      "Dosage forms and strengths",
+      "Storage and handling"
+    ],
+    "renderedPageQA": "Pending parent batch integration QA"
+  }
+}

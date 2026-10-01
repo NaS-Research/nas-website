@@ -1,0 +1,544 @@
+{
+  "drug": "alprazolam",
+  "checked": "2026-10-01",
+  "status": "source_reviewed",
+  "review_scope": "Current public Viatris Xanax IR and Xanax XR records: full adult labeled-use, dose, boxed-warning, interaction and population review.",
+  "sources": [
+    {
+      "id": "alprazolam-ir",
+      "title": "Xanax · Viatris immediate-release tablets",
+      "publisher": "DailyMed / National Library of Medicine",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bb5cf72e-3a41-41a8-9a38-80f974eca33f",
+      "note": "Full public manufacturer label and patient instructions; SPL version 4, effective 20240415. Product-specific directions reviewed October 1, 2026.",
+      "checked": "2026-10-01",
+      "access": "public",
+      "spl_version": "4",
+      "effective_date": "20240415",
+      "xml_sha256": "8df9543b8527a4a3e87dd716dd3ec7df609a822eb18e76f090efd05b5b5179a5",
+      "retrieved_xml": "/tmp/nas-drug-sources/alprazolam-ir.xml",
+      "published_date": "2025-12-12",
+      "version_verification": "Official DailyMed /dailymed/services/v2/spls.json ingredient/brand inventory and current full XML retrieved October 1, 2026; publication date distinct from SPL effective date."
+    },
+    {
+      "id": "alprazolam-xr",
+      "title": "Xanax XR · Viatris extended-release tablets",
+      "publisher": "DailyMed / National Library of Medicine",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c8990714-c2f5-4b0c-9f1c-91d77156d962",
+      "note": "Full public manufacturer label and patient instructions; SPL version 26, effective 20230412. Product-specific directions reviewed October 1, 2026.",
+      "checked": "2026-10-01",
+      "access": "public",
+      "spl_version": "26",
+      "effective_date": "20230412",
+      "xml_sha256": "acf45903cbc001bc831119a33ffc9315d979138282b8c4f47e77408c568bb253",
+      "retrieved_xml": "/tmp/nas-drug-sources/alprazolam-xr.xml",
+      "published_date": "2026-06-03",
+      "version_verification": "Official DailyMed /dailymed/services/v2/spls.json ingredient/brand inventory and current full XML retrieved October 1, 2026; publication date distinct from SPL effective date."
+    }
+  ],
+  "assertion_source_map": [
+    {
+      "section": "indications",
+      "card": "Labeled adult indications",
+      "assertions": {
+        "paragraphs": [
+          "Xanax immediate-release treats acute generalized anxiety disorder and panic disorder with or without agoraphobia in adults. Xanax XR treats adult panic disorder with or without agoraphobia; its label does not include GAD."
+        ]
+      },
+      "source_sections": {
+        "alprazolam-ir": [
+          "1"
+        ],
+        "alprazolam-xr": [
+          "1"
+        ]
+      }
+    },
+    {
+      "section": "indications",
+      "card": "Evidence and scope",
+      "assertions": {
+        "paragraphs": [
+          "Pediatric safety/effectiveness is not established. IR evidence is primarily short-term; XR longer-term efficacy has not been systematically evaluated and use beyond 8 weeks requires reassessment. This profile excludes ODT, oral concentrate and off-label pediatric/insomnia regimens; verify other products separately."
+        ]
+      },
+      "source_sections": {
+        "alprazolam-ir": [
+          "8.4",
+          "14",
+          "Medication Guide"
+        ],
+        "alprazolam-xr": [
+          "2.1",
+          "8.4"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Adult oral dosing",
+      "assertions": {
+        "paragraphs": [],
+        "table": {
+          "headers": [
+            "Product / indication",
+            "Dose and titration"
+          ],
+          "rows": [
+            [
+              "Xanax IR · acute GAD",
+              "0.25–0.5 mg three times daily initially. Adjust at 3–4 day intervals; maximum recommended total 4 mg/day in divided doses."
+            ],
+            [
+              "Xanax IR · panic disorder",
+              "0.5 mg three times daily initially; increase at 3–4 day intervals by no more than 1 mg/day. Trials used 1–10 mg/day, mean ~5–6 mg/day; doses >4 mg/day require periodic reassessment and consideration of reduction."
+            ],
+            [
+              "Xanax XR · panic disorder",
+              "0.5–1 mg once daily initially, preferably morning. Increase at 3–4 day intervals by no more than 1 mg/day; recommended range 3–6 mg once daily. Occasional trial participants required 10 mg/day."
+            ]
+          ]
+        }
+      },
+      "source_sections": {
+        "alprazolam-ir": [
+          "2.1",
+          "2.2"
+        ],
+        "alprazolam-xr": [
+          "2.1"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Geriatric, hepatic and formulation considerations",
+      "assertions": {
+        "paragraphs": [
+          "IR geriatric/hepatic starting dose: 0.25 mg two or three times daily, increasing only if needed/tolerated; reduce further if adverse effects. XR geriatric/hepatic starting dose: 0.5 mg once daily, cautiously titrated. No numeric renal adjustment is provided in these selected labels. Swallow XR whole without dividing/crushing/chewing. Patients on divided IR may switch under supervision to the same total daily dose as once-daily XR, followed by clinical reassessment."
+        ]
+      },
+      "source_sections": {
+        "alprazolam-ir": [
+          "2.4",
+          "2.5",
+          "Medication Guide"
+        ],
+        "alprazolam-xr": [
+          "2.1",
+          "2.3",
+          "2.4",
+          "2.6"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Individualized taper and ritonavir adjustment",
+      "assertions": {
+        "paragraphs": [
+          "Labels recommend reduction by no more than 0.5 mg every 3 days; this is a ceiling on reduction speed, not a mandatory schedule. Many patients need a slower individualized taper, pauses or return to the prior tapered dose if withdrawal emerges. For ritonavir initiated with alprazolam or added to stable treatment, halve alprazolam’s recommended dose; titrate back toward the target after 10–14 days of coadministration. No reduction is required by this label when ritonavir has already been taken >10–14 days. This time-dependent exception requires prescriber supervision; never extrapolate it to other strong CYP3A inhibitors."
+        ]
+      },
+      "source_sections": {
+        "alprazolam-ir": [
+          "2.3",
+          "2.6"
+        ],
+        "alprazolam-xr": [
+          "2.2",
+          "2.5"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "assertions": {
+        "paragraphs": [],
+        "items": [
+          "Reserve opioid co-prescribing for cases where alternatives are inadequate; use minimum effective doses/durations and monitor sedation/respiration closely. Alcohol/other CNS depressants add risk.",
+          "Assess abuse/misuse/addiction risk before and during treatment; use secure storage, limited appropriate dispensing and disposal. Addiction can occur even as prescribed.",
+          "Dependence/withdrawal risk rises with dose and duration. Abrupt stopping or rapid reduction can cause seizures and other severe reactions; protracted withdrawal may last weeks to >12 months.",
+          "Avoid hazardous activities/driving when impaired. Review respiratory disease; discontinue and urgently assess hypoventilation/apnea.",
+          "Depression can worsen; monitor suicidality and limit prescription quantity when indicated. Hypomania/mania has been reported.",
+          "Late-pregnancy exposure can cause neonatal sedation or withdrawal; arrange newborn observation.",
+          "Strong CYP3A inhibitors markedly increase exposure; the label’s ritonavir exception has a specific phase-dependent adjustment."
+        ]
+      },
+      "source_sections": {
+        "alprazolam-ir": [
+          "5.1–5.9",
+          "9.2",
+          "9.3"
+        ],
+        "alprazolam-xr": [
+          "5.1–5.9",
+          "9.2",
+          "9.3"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "assertions": {
+        "paragraphs": [
+          "Known alprazolam or other benzodiazepine hypersensitivity; concurrent strong CYP3A inhibitors, such as ketoconazole/itraconazole/clarithromycin, except the separately managed ritonavir exception. The selected current labels do not list acute narrow-angle glaucoma as a formal contraindication; do not import obsolete product wording."
+        ]
+      },
+      "source_sections": {
+        "alprazolam-ir": [
+          "4",
+          "7.1"
+        ],
+        "alprazolam-xr": [
+          "4",
+          "7.1"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Boxed warning status",
+      "assertions": {
+        "paragraphs": [
+          "Both selected labels have a boxed warning for concomitant opioid risks; abuse, misuse and addiction; and dependence/withdrawal reactions. Potential outcomes include profound sedation, respiratory depression, coma, overdose/death and life-threatening withdrawal seizures."
+        ]
+      },
+      "source_sections": {
+        "alprazolam-ir": [
+          "Boxed warning"
+        ],
+        "alprazolam-xr": [
+          "Boxed warning"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions and overdose",
+      "assertions": {
+        "paragraphs": [
+          "Reported reactions include drowsiness, impaired coordination, light-headedness, hypotension, dysarthria, memory/cognitive effects and libido changes. Serious reports include angioedema, paradoxical agitation, seizures and respiratory depression. Overdose needs emergency airway/supportive monitoring, particularly with opioids/alcohol. Flumazenil can precipitate withdrawal/seizures, especially with dependence or mixed ingestion; its use is a specialist decision and does not replace supportive care."
+        ]
+      },
+      "source_sections": {
+        "alprazolam-ir": [
+          "6.1",
+          "6.2",
+          "10"
+        ],
+        "alprazolam-xr": [
+          "6.1",
+          "6.2",
+          "10"
+        ]
+      }
+    },
+    {
+      "section": "interactions",
+      "card": "Clinically relevant interactions",
+      "assertions": {
+        "paragraphs": [],
+        "table": {
+          "headers": [
+            "Combination",
+            "Action"
+          ],
+          "rows": [
+            [
+              "Opioids; alcohol; sedating antihistamines/other CNS depressants",
+              "Avoid unnecessary combinations; minimum doses/durations and close respiratory/sedation monitoring."
+            ],
+            [
+              "Strong CYP3A inhibitors except ritonavir",
+              "Contraindicated."
+            ],
+            [
+              "Ritonavir",
+              "Use the label’s initial half-dose and >10–14-day phase instructions under supervision; short antiviral courses must not be assumed to reach the later phase."
+            ],
+            [
+              "Moderate/weak CYP3A inhibitors, e.g. fluvoxamine, cimetidine, erythromycin",
+              "Review avoidance/dose reduction and toxicity monitoring."
+            ],
+            [
+              "CYP3A inducers, e.g. carbamazepine, phenytoin",
+              "May reduce exposure; reassess response and changes at discontinuation."
+            ],
+            [
+              "Digoxin",
+              "Check levels before alprazolam and frequently thereafter, especially in older patients; reduce digoxin if necessary."
+            ]
+          ]
+        }
+      },
+      "source_sections": {
+        "alprazolam-ir": [
+          "7.1"
+        ],
+        "alprazolam-xr": [
+          "7.1"
+        ]
+      }
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy and lactation",
+      "assertions": {
+        "paragraphs": [
+          "Observational benzodiazepine data do not show a clear major-birth-defect association, but this does not establish absence of risk. Late pregnancy can cause neonatal respiratory depression, hypotonia or withdrawal; monitor/manage exposed newborns and discuss the pregnancy registry. Alprazolam enters human milk; infant sedation/poor feeding/poor weight gain are reported with benzodiazepines. Both selected labels advise against breastfeeding during treatment."
+        ]
+      },
+      "source_sections": {
+        "alprazolam-ir": [
+          "8.1 Pregnancy risk summary/data",
+          "8.2 Lactation risk summary"
+        ],
+        "alprazolam-xr": [
+          "8.1",
+          "8.2"
+        ]
+      }
+    },
+    {
+      "section": "populations",
+      "card": "Pediatric and geriatric considerations",
+      "assertions": {
+        "paragraphs": [
+          "Pediatric safety/effectiveness is not established. Older patients have reduced clearance/higher concentrations and greater sensitivity; selected starting doses are IR 0.25 mg two/three times daily or XR 0.5 mg once daily, adjusted to response/tolerance."
+        ]
+      },
+      "source_sections": {
+        "alprazolam-ir": [
+          "2.4",
+          "8.4",
+          "8.5"
+        ],
+        "alprazolam-xr": [
+          "2.3",
+          "8.4",
+          "8.5"
+        ]
+      }
+    },
+    {
+      "section": "populations",
+      "card": "Hepatic and renal considerations",
+      "assertions": {
+        "paragraphs": [
+          "Hepatic disease reduces clearance; alcoholic liver disease studies showed mean half-life ~19.7 hours versus ~11.4 in controls. Follow lower product-specific hepatic starts. Selected labels do not supply a renal dose formula; review kidney disease, respiratory status, sedation and concomitant medicines individually."
+        ]
+      },
+      "source_sections": {
+        "alprazolam-ir": [
+          "2.5",
+          "8.6",
+          "12.3",
+          "Medication Guide"
+        ],
+        "alprazolam-xr": [
+          "2.4",
+          "8.6",
+          "12.3",
+          "Medication Guide"
+        ]
+      }
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism of action",
+      "assertions": {
+        "paragraphs": [
+          "Binds the benzodiazepine site of GABAA receptors and enhances GABA-mediated synaptic inhibition. This contributes to anxiolytic/panic benefit and CNS depression."
+        ]
+      },
+      "source_sections": {
+        "alprazolam-ir": [
+          "12.1"
+        ],
+        "alprazolam-xr": [
+          "12.1"
+        ]
+      }
+    },
+    {
+      "section": "pharmacology",
+      "card": "Pharmacokinetics",
+      "assertions": {
+        "paragraphs": [],
+        "facts": [
+          [
+            "Absorption",
+            "IR peak ~1–2 hours; morning XR peak ~10 hours. XR absolute bioavailability ~90%, with ~100% relative bioavailability to IR."
+          ],
+          [
+            "Distribution / metabolism",
+            "~80% protein-bound; primarily CYP3A4 metabolism. Major hydroxyl metabolites have low concentrations/potency."
+          ],
+          [
+            "Elimination",
+            "Primarily urinary parent/metabolites. Mean IR half-life ~11.2 hours (range ~6.3–26.9); XR studies ~10.7–15.8 hours."
+          ],
+          [
+            "Exposure variation",
+            "Older age, liver disease and metabolic interactions can prolong/increase exposure."
+          ]
+        ]
+      },
+      "source_sections": {
+        "alprazolam-ir": [
+          "12.3"
+        ],
+        "alprazolam-xr": [
+          "12.3"
+        ]
+      }
+    },
+    {
+      "section": "practice",
+      "card": "Monitoring parameters",
+      "assertions": {
+        "paragraphs": [],
+        "items": [
+          "Follow anxiety/panic benefit, sedation, coordination, falls, cognition and respiratory function.",
+          "Assess depression/suicidality, misuse/addiction and physical dependence; review prescription quantity and storage.",
+          "Reconcile opioids, alcohol, other sedatives and CYP3A medicines; monitor digoxin when relevant.",
+          "During taper, distinguish recurrence/rebound from withdrawal and slow or pause the plan when needed."
+        ]
+      },
+      "source_sections": {
+        "alprazolam-ir": [
+          "2",
+          "5",
+          "7",
+          "17"
+        ],
+        "alprazolam-xr": [
+          "2",
+          "5",
+          "7",
+          "17"
+        ]
+      }
+    },
+    {
+      "section": "practice",
+      "card": "Patient counseling information",
+      "assertions": {
+        "paragraphs": [],
+        "items": [
+          "Take only the prescribed dose; never share and keep securely away from children/others.",
+          "Do not stop abruptly or rapidly reduce; contact the prescriber before running out.",
+          "Avoid alcohol and unsupervised sedative/opioid combinations; emergency help is needed for shallow breathing or extreme sleepiness.",
+          "Do not divide/crush/chew XR. Discuss pregnancy/breastfeeding and follow approved disposal directions for unused controlled medicine."
+        ]
+      },
+      "source_sections": {
+        "alprazolam-ir": [
+          "17",
+          "Medication Guide"
+        ],
+        "alprazolam-xr": [
+          "17",
+          "Medication Guide"
+        ]
+      }
+    },
+    {
+      "section": "product",
+      "card": "Representative oral product · Xanax 0.25 mg",
+      "assertions": {
+        "paragraphs": [],
+        "facts": [
+          [
+            "Dosage form / strength",
+            "Immediate-release scored tablet · 0.25 mg"
+          ],
+          [
+            "Distributor",
+            "Viatris Specialty LLC"
+          ],
+          [
+            "Appearance / imprint",
+            "White, oval · XANAX 0.25"
+          ],
+          [
+            "Example NDC",
+            "58151-452-01 · 100 tablets"
+          ]
+        ]
+      },
+      "source_sections": {
+        "alprazolam-ir": [
+          "3",
+          "16"
+        ]
+      }
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "assertions": {
+        "paragraphs": [
+          "Selected Xanax IR tablets: 0.25, 0.5, 1 and 2 mg. Xanax XR tablets: 0.5, 1, 2 and 3 mg; XR 0.5 mg is white/pentagonal, marked X / 0.5. Oral concentrates/ODT are outside this profile and require their own measuring/administration directions."
+        ]
+      },
+      "source_sections": {
+        "alprazolam-ir": [
+          "3",
+          "16"
+        ],
+        "alprazolam-xr": [
+          "3",
+          "16"
+        ]
+      }
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "assertions": {
+        "paragraphs": [
+          "Store selected IR at 20–25°C, protected from light, in tight/light-resistant child-resistant containers. XR: 20–25°C with excursions 15–30°C in tight child-resistant containers. Store securely, never share and follow take-back/disposal guidance; keep out of children’s reach."
+        ]
+      },
+      "source_sections": {
+        "alprazolam-ir": [
+          "16",
+          "Principal display panels",
+          "17"
+        ],
+        "alprazolam-xr": [
+          "16",
+          "17",
+          "Medication Guide"
+        ]
+      }
+    }
+  ],
+  "scope_exclusions": [
+    "ODT/oral concentrates and off-label pediatric/insomnia regimens excluded.",
+    "No arbitrary renal formula or universal taper prescribed.",
+    "Selected latest public SPL effective dates differ from publication dates; this is recorded without treating dates as equivalent."
+  ],
+  "resolved_source_findings": [
+    {
+      "severity": "formulation_precision",
+      "detail": "IR GAD/panic and XR panic scope, IR0.25mg versus XR0.5mg geriatric/hepatic starts kept separate."
+    },
+    {
+      "severity": "interaction_precision",
+      "detail": "Strong CYP3A inhibitor contraindication retained; ritonavir half-dose initial phase and >10–14-day exception clearly distinguished."
+    }
+  ],
+  "material_gaps": [],
+  "clinical_review": "Every published card reviewed against full relevant primary label sections. Source-reviewed within stated scope; not an independent clinician sign-off.",
+  "blueprint": "Immutable APAP eight sections, essential safety, three hero facts, cited disclosures, four safety cards and three product cards.",
+  "validation": {
+    "validateMonograph": [],
+    "build": "parent integration pending",
+    "rendered_page_qa": "parent integration pending"
+  },
+  "monograph_sha256": "d36899f9e3385beef7535ac7284c91bda43ff38a92c15b91063fa923ab4e3ddc"
+}

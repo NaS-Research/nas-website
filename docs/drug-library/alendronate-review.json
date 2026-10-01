@@ -1,0 +1,655 @@
+{
+  "slug": "alendronate",
+  "checked": "2026-10-01",
+  "status": "source_reviewed",
+  "scope": "An oral inhibitor of bone resorption used in specified osteoporosis and Paget disease regimens. Ordinary tablets, effervescent tablets and solution have different labeled uses and administration instructions.",
+  "sources": [
+    {
+      "id": "label",
+      "title": "Fosamax · Organon full prescribing information",
+      "publisher": "DailyMed / official U.S. product labeling",
+      "note": "Clinical PI revised February 2026. SPL v10 effective March 12, 2026; API publication March 16, 2026. Brand now marketed only as 70 mg tablet per section 2; other labeled strengths/solution are not current branded packages. Checked October 1, 2026.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=14e931fd-2c5f-4d90-b7db-5980706f4a56"
+    },
+    {
+      "id": "eff",
+      "title": "Binosto · Radius full prescribing information",
+      "publisher": "DailyMed / official U.S. product labeling",
+      "note": "Clinical PI revised February 2026. SPL v6 effective February 6, 2026; API publication February 16, 2026. Checked October 1, 2026.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=09765234-01bc-40f7-b9bb-c167056f3909"
+    },
+    {
+      "id": "solution",
+      "title": "Alendronate sodium oral solution · Hikma full prescribing information",
+      "publisher": "DailyMed / official U.S. product labeling",
+      "note": "Clinical PI revised January 2026. SPL v4 effective January 15, 2026; API history publication January 30, 2026. Checked October 1, 2026.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c910bb05-279b-4ffa-a867-46f4a0853ed5"
+    }
+  ],
+  "sourceEvidence": {
+    "label": {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=14e931fd-2c5f-4d90-b7db-5980706f4a56",
+      "checked": "2026-10-01",
+      "revision": "Clinical PI revised February 2026. SPL v10 effective March 12, 2026; API publication March 16, 2026. Brand now marketed only as 70 mg tablet per section 2; other labeled strengths/solution are not current branded packages. Checked October 1, 2026.",
+      "splVersion": "10",
+      "effectiveTime": "20260312",
+      "localEvidence": "/tmp/nas-drug-sources/fosamax.xml",
+      "xmlSha256": "db3d39b0a5b4baa3b9c3b034bf7f801e66e349eb09080414c4e893ce9d7986bb",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/14e931fd-2c5f-4d90-b7db-5980706f4a56.xml",
+      "access": "Full public supporting primary sections read; no paywall access"
+    },
+    "eff": {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=09765234-01bc-40f7-b9bb-c167056f3909",
+      "checked": "2026-10-01",
+      "revision": "Clinical PI revised February 2026. SPL v6 effective February 6, 2026; API publication February 16, 2026. Checked October 1, 2026.",
+      "splVersion": "6",
+      "effectiveTime": "20260206",
+      "localEvidence": "/tmp/nas-drug-sources/binosto.xml",
+      "xmlSha256": "bcddae2d985ca3bcd75668156403fc52b9e51d40d2aa509f433bda9ef0c6cfa2",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/09765234-01bc-40f7-b9bb-c167056f3909.xml",
+      "access": "Full public supporting primary sections read; no paywall access"
+    },
+    "solution": {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c910bb05-279b-4ffa-a867-46f4a0853ed5",
+      "checked": "2026-10-01",
+      "revision": "Clinical PI revised January 2026. SPL v4 effective January 15, 2026; API history publication January 30, 2026. Checked October 1, 2026.",
+      "splVersion": "4",
+      "effectiveTime": "20260115",
+      "localEvidence": "/tmp/nas-drug-sources/alendronate-solution.xml",
+      "xmlSha256": "2168201a5f0d9dab34ae741b2db07e4bf1f7539eb8c0f35bfececf49c54b1f33",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/c910bb05-279b-4ffa-a867-46f4a0853ed5.xml",
+      "access": "Full public supporting primary sections read; no paywall access"
+    }
+  },
+  "assertionMap": [
+    {
+      "section": "indications",
+      "card": "Labeled uses",
+      "sourceIds": [
+        "label",
+        "eff",
+        "solution"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "1.1–1.6;2 status note (Fosamax);Binosto1.1–1.3;solution1.1/1.3/1.6"
+        ],
+        "eff": [
+          "1.1–1.6;2 status note (Fosamax);Binosto1.1–1.3;solution1.1/1.3/1.6"
+        ],
+        "solution": [
+          "1.1–1.6;2 status note (Fosamax);Binosto1.1–1.3;solution1.1/1.3/1.6"
+        ]
+      },
+      "claims": [
+        [
+          "Fosamax ordinary-tablet labeling",
+          "Treat and prevent postmenopausal osteoporosis; increase bone mass in men with osteoporosis. Treatment reduces hip/spine fractures in postmenopausal women."
+        ],
+        [
+          "Fosamax tablet labeling · glucocorticoid-induced osteoporosis",
+          "Men/women with low BMD receiving prednisone-equivalent ≥7.5 mg/day; benefit/risk below that glucocorticoid dose is unestablished."
+        ],
+        [
+          "Fosamax tablet labeling · Paget disease",
+          "Men/women with alkaline phosphatase ≥2× upper normal, symptoms, or risk of future disease complications."
+        ],
+        [
+          "Binosto 70 mg effervescent / Hikma 70 mg solution",
+          "Treat postmenopausal osteoporosis and increase bone mass in men with osteoporosis; their reviewed indication sections do not add prevention, glucocorticoid or Paget regimens."
+        ]
+      ]
+    },
+    {
+      "section": "indications",
+      "card": "Duration and product status",
+      "sourceIds": [
+        "label",
+        "eff",
+        "solution"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "1.1–1.6;2 status note (Fosamax);Binosto1.1–1.3;solution1.1/1.3/1.6"
+        ],
+        "eff": [
+          "1.1–1.6;2 status note (Fosamax);Binosto1.1–1.3;solution1.1/1.3/1.6"
+        ],
+        "solution": [
+          "1.1–1.6;2 status note (Fosamax);Binosto1.1–1.3;solution1.1/1.3/1.6"
+        ]
+      },
+      "claims": [
+        "Optimal treatment duration is undetermined. Periodically reassess need; the labels advise considering discontinuation after 3–5 years in people at low fracture risk, followed by periodic risk reassessment. This is not a mandatory stop for everyone. Fosamax currently markets only the 70 mg tablet; retained labeled regimens for other strengths do not mean those branded packages remain marketed."
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Labeled adult regimens",
+      "sourceIds": [
+        "label",
+        "eff",
+        "solution"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "2.1–2.8 (Fosamax);Binosto2.1–2.5;solution2.1/2.3/2.6–2.8;16 solution concentration"
+        ],
+        "eff": [
+          "2.1–2.8 (Fosamax);Binosto2.1–2.5;solution2.1/2.3/2.6–2.8;16 solution concentration"
+        ],
+        "solution": [
+          "2.1–2.8 (Fosamax);Binosto2.1–2.5;solution2.1/2.3/2.6–2.8;16 solution concentration"
+        ]
+      },
+      "claims": [
+        [
+          "Postmenopausal osteoporosis treatment or male osteoporosis · ordinary tablets",
+          "70 mg once weekly or 10 mg once daily in Fosamax labeling; brand currently supplies only 70 mg."
+        ],
+        [
+          "Postmenopausal prevention · ordinary tablets",
+          "35 mg weekly or 5 mg daily in Fosamax labeling; obtain the exact alternative product label."
+        ],
+        [
+          "Glucocorticoid-induced osteoporosis · ordinary tablets",
+          "5 mg daily; 10 mg daily for postmenopausal women not receiving estrogen. These strengths are not current Fosamax packages."
+        ],
+        [
+          "Paget disease · ordinary tablets",
+          "40 mg daily for 6 months. Re-treatment may be considered after a 6-month post-treatment evaluation based on relapse/alkaline phosphatase or failure to normalize it."
+        ],
+        [
+          "Binosto or Hikma solution · osteoporosis treatment in postmenopausal women/men",
+          "70 mg once weekly. These are not labeled prevention or Paget regimens."
+        ]
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Exact formulation preparation",
+      "sourceIds": [
+        "label",
+        "eff",
+        "solution"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "2.1–2.8 (Fosamax);Binosto2.1–2.5;solution2.1/2.3/2.6–2.8;16 solution concentration"
+        ],
+        "eff": [
+          "2.1–2.8 (Fosamax);Binosto2.1–2.5;solution2.1/2.3/2.6–2.8;16 solution concentration"
+        ],
+        "solution": [
+          "2.1–2.8 (Fosamax);Binosto2.1–2.5;solution2.1/2.3/2.6–2.8;16 solution concentration"
+        ]
+      },
+      "claims": [
+        [
+          "Ordinary tablet",
+          "On arising, swallow whole with 6–8 ounces plain water. Do not chew or suck."
+        ],
+        [
+          "Hikma solution",
+          "Take the entire single-dose 70 mg/75 mL bottle, then drink ≥2 ounces plain water."
+        ],
+        [
+          "Binosto",
+          "Dissolve one 70 mg effervescent tablet in 4 ounces room-temperature plain water. After bubbling stops, wait ≥5 minutes, stir about 10 seconds and drink. Never swallow, chew or suck the undissolved tablet."
+        ],
+        [
+          "All three",
+          "Take ≥30 minutes before the first food, beverage or oral medicine; use plain water, not mineral/flavored water, coffee or juice. Remain sitting/standing ≥30 minutes AND until after first food. Never take at bedtime or before arising."
+        ]
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Missed weekly dose and supplementation",
+      "sourceIds": [
+        "label",
+        "eff",
+        "solution"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "2.1–2.8 (Fosamax);Binosto2.1–2.5;solution2.1/2.3/2.6–2.8;16 solution concentration"
+        ],
+        "eff": [
+          "2.1–2.8 (Fosamax);Binosto2.1–2.5;solution2.1/2.3/2.6–2.8;16 solution concentration"
+        ],
+        "solution": [
+          "2.1–2.8 (Fosamax);Binosto2.1–2.5;solution2.1/2.3/2.6–2.8;16 solution concentration"
+        ]
+      },
+      "claims": [
+        "For a missed weekly dose, take one dose on the morning after remembering, then return to the chosen weekly day. Do not take two doses the same day. Ensure adequate calcium and vitamin D, supplementing when needed, at a different time from alendronate. Correct hypocalcemia and vitamin D/mineral disorders before treatment; malabsorption may require vitamin D testing and individualized supplementation."
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "sourceIds": [
+        "label",
+        "eff",
+        "solution"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "4;5.1–5.7;6;10;Binosto5.7 sodium"
+        ],
+        "eff": [
+          "4;5.1–5.7;6;10;Binosto5.7 sodium"
+        ],
+        "solution": [
+          "4;5.1–5.7;6;10;Binosto5.7 sodium"
+        ]
+      },
+      "claims": [
+        "Oral alendronate can cause severe esophagitis, erosions/ulcers, bleeding, stricture or perforation. Stop and seek assessment for dysphagia, painful swallowing, chest pain or new/worsening heartburn. Use caution with active upper-GI disease.",
+        "Correct hypocalcemia and other mineral disorders, including vitamin D deficiency. Monitor serum calcium and symptoms when these disorders are present; ensure adequate calcium/vitamin D.",
+        "Severe, sometimes incapacitating bone/joint/muscle pain can occur; discontinue for severe symptoms.",
+        "Osteonecrosis of the jaw is associated with dental extraction/infection and risk factors such as cancer therapies, corticosteroids and poor oral health. Dental-procedure interruption is individualized, not a universal automatic holiday.",
+        "Atypical femoral and other fractures can occur with little trauma and may be bilateral. Evaluate new thigh/groin pain and persistent pain in other bones; assess the opposite limb if a fracture occurs and reassess continued therapy.",
+        "Use is not recommended with creatinine clearance <35 mL/min. Binosto contains 603 mg sodium per tablet; use caution with sodium restriction, including some cardiovascular/heart-failure patients."
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "sourceIds": [
+        "label",
+        "eff",
+        "solution"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "4;5.1–5.7;6;10;Binosto5.7 sodium"
+        ],
+        "eff": [
+          "4;5.1–5.7;6;10;Binosto5.7 sodium"
+        ],
+        "solution": [
+          "4;5.1–5.7;6;10;Binosto5.7 sodium"
+        ]
+      },
+      "claims": [
+        "Esophageal abnormalities delaying emptying (e.g., stricture/achalasia), inability to sit/stand upright for ≥30 minutes, hypocalcemia, or ingredient hypersensitivity. Do not give oral solution or Binosto to people at increased aspiration risk. A drinkable formulation does not remove esophageal or upright-position restrictions."
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Boxed warning status",
+      "sourceIds": [
+        "label",
+        "eff",
+        "solution"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "4;5.1–5.7;6;10;Binosto5.7 sodium"
+        ],
+        "eff": [
+          "4;5.1–5.7;6;10;Binosto5.7 sodium"
+        ],
+        "solution": [
+          "4;5.1–5.7;6;10;Binosto5.7 sodium"
+        ]
+      },
+      "claims": [
+        "The three reviewed labels have no boxed warning. Esophageal injury, jaw osteonecrosis, atypical fractures and mineral/renal restrictions remain clinically important."
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions and overdose",
+      "sourceIds": [
+        "label",
+        "eff",
+        "solution"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "4;5.1–5.7;6;10;Binosto5.7 sodium"
+        ],
+        "eff": [
+          "4;5.1–5.7;6;10;Binosto5.7 sodium"
+        ],
+        "solution": [
+          "4;5.1–5.7;6;10;Binosto5.7 sodium"
+        ]
+      },
+      "claims": [
+        "Common labeled reactions include abdominal pain, acid regurgitation, constipation/diarrhea, dyspepsia, nausea and musculoskeletal pain. Serious reports include esophageal/GI ulceration, hypocalcemia, jaw osteonecrosis, atypical fractures, allergy/severe skin reactions and eye inflammation. Spontaneous reports do not determine frequency or causation. Overdose can cause mineral depletion and upper-GI injury: contact Poison Help urgently, remain upright and do not induce vomiting. The label advises milk or antacids to bind the drug; dialysis is not beneficial."
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Clinically relevant interactions",
+      "sourceIds": [
+        "label",
+        "eff",
+        "solution"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "7.1–7.3;2;12.3;Binosto7.4"
+        ],
+        "eff": [
+          "7.1–7.3;2;12.3;Binosto7.4"
+        ],
+        "solution": [
+          "7.1–7.3;2;12.3;Binosto7.4"
+        ]
+      },
+      "claims": [
+        "Calcium, antacids and other oral products containing multivalent cations reduce absorption. Wait ≥30 minutes after alendronate before any other oral medicine or supplement.",
+        "Food, mineral water, coffee and juice markedly reduce absorption; follow exact plain-water/fasting instructions.",
+        "Aspirin-containing products were associated with more upper-GI events with daily alendronate doses >10 mg. NSAIDs can add GI irritation: use cautiously and assess symptoms.",
+        "Binosto coadministration with levothyroxine slightly decreased alendronate bioavailability in a healthy-subject study. Preserve fasting separation and coordinate both products’ instructions with the pharmacist."
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy and lactation",
+      "sourceIds": [
+        "label",
+        "eff",
+        "solution"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "8.1;8.2;8.4–8.7;12.3"
+        ],
+        "eff": [
+          "8.1;8.2;8.4–8.7;12.3"
+        ],
+        "solution": [
+          "8.1;8.2;8.4–8.7;12.3"
+        ]
+      },
+      "claims": [
+        "Pregnancy data are insufficient; discontinue when pregnancy is recognized. Alendronate remains in bone and can be released for years, creating potential fetal skeletal risk even after a completed course; no verified universal preconception washout interval is supplied. Human milk, infant-effect and milk-production data are unavailable; weigh maternal need and breastfeeding benefits/risks."
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Pediatric and geriatric use",
+      "sourceIds": [
+        "label",
+        "eff",
+        "solution"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "8.1;8.2;8.4–8.7;12.3"
+        ],
+        "eff": [
+          "8.1;8.2;8.4–8.7;12.3"
+        ],
+        "solution": [
+          "8.1;8.2;8.4–8.7;12.3"
+        ]
+      },
+      "claims": [
+        "Alendronate is not indicated for pediatric patients in the reviewed labels; pediatric osteogenesis-imperfecta studies do not establish an approved fracture-prevention regimen. No age-based geriatric adjustment is needed, but greater individual sensitivity and kidney/GI limitations must be considered."
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Renal and hepatic impairment",
+      "sourceIds": [
+        "label",
+        "eff",
+        "solution"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "8.1;8.2;8.4–8.7;12.3"
+        ],
+        "eff": [
+          "8.1;8.2;8.4–8.7;12.3"
+        ],
+        "solution": [
+          "8.1;8.2;8.4–8.7;12.3"
+        ]
+      },
+      "claims": [
+        "Creatinine clearance <35 mL/min: use is not recommended because of insufficient experience. At 35–60 mL/min, no dose adjustment is necessary. No hepatic adjustment is necessary; alendronate is not metabolized or excreted through bile, and specific hepatic studies were not performed."
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism of action",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "12.1;12.3"
+        ]
+      },
+      "claims": [
+        "Alendronate localizes to bone-resorption sites and inhibits osteoclast activity, reducing bone turnover. Drug incorporated into the bone matrix is inactive until released; newly formed resorption surfaces remain the treatment target."
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Pharmacokinetics",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "12.1;12.3"
+        ]
+      },
+      "claims": [
+        [
+          "Oral bioavailability",
+          "About 0.64% in women / 0.59% in men in studies after fasting and 2 hours before breakfast; these are study conditions, not a new required 2-hour interval."
+        ],
+        [
+          "Distribution / binding",
+          "Redistributes to bone or is excreted in urine; plasma protein binding about 78%."
+        ],
+        [
+          "Metabolism / excretion",
+          "No evidence of metabolism; renal elimination of drug not deposited in bone."
+        ],
+        [
+          "Terminal half-life",
+          "Estimated >10 years, largely reflecting release from skeleton, not a plasma-dosing interval."
+        ]
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Monitoring priorities",
+      "sourceIds": [
+        "label",
+        "eff",
+        "solution"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "5;17;1.6;Fosamax5.7 BMD"
+        ],
+        "eff": [
+          "5;17;1.6;Fosamax5.7 BMD"
+        ],
+        "solution": [
+          "5;17;1.6;Fosamax5.7 BMD"
+        ]
+      },
+      "claims": [
+        "Assess renal function, calcium/mineral status, vitamin D adequacy and ability to follow fasting/upright instructions. Review swallowing/GI symptoms, dental risk and new thigh/groin or other persistent bone pain. Follow BMD and fracture risk as clinically appropriate; with glucocorticoid-induced osteoporosis, Fosamax labeling calls for baseline BMD and repeat after 6–12 months. Reassess need periodically and individualize any discontinuation or dental-procedure plan."
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Patient counseling",
+      "sourceIds": [
+        "label",
+        "eff",
+        "solution"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "5;17;1.6;Fosamax5.7 BMD"
+        ],
+        "eff": [
+          "5;17;1.6;Fosamax5.7 BMD"
+        ],
+        "solution": [
+          "5;17;1.6;Fosamax5.7 BMD"
+        ]
+      },
+      "claims": [
+        "Demonstrate the exact ordinary tablet, solution or Binosto instructions. Keep supplements and other oral medicines after the ≥30-minute interval. Report jaw/dental symptoms and tell dental professionals about treatment; stop and obtain assessment for new swallowing symptoms or severe musculoskeletal pain. Support adequate calcium/vitamin D, appropriate weight-bearing exercise and review smoking/excess alcohol. A missed weekly dose follows the next-morning rule; never double on the same day."
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Representative product · Fosamax 70 mg tablet",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "2 Fosamax marketing note;3;11;16;package panels"
+        ]
+      },
+      "claims": [
+        [
+          "Ingredient / route",
+          "91.37 mg alendronate sodium equivalent to 70 mg alendronic acid · oral tablet."
+        ],
+        [
+          "Appearance / imprint",
+          "White oval uncoated; 31 / outline of a bone."
+        ],
+        [
+          "Distributor",
+          "Organon LLC."
+        ],
+        [
+          "Example NDC",
+          "78206-135-01 · blister package of four."
+        ],
+        [
+          "U.S. status",
+          "Prescription; current Fosamax label supplies only 70 mg tablets."
+        ]
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "sourceIds": [
+        "label",
+        "eff",
+        "solution"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "2 Fosamax marketing note;3;11;16;package panels"
+        ],
+        "eff": [
+          "2 Fosamax marketing note;3;11;16;package panels"
+        ],
+        "solution": [
+          "2 Fosamax marketing note;3;11;16;package panels"
+        ]
+      },
+      "claims": [
+        [
+          "Ordinary tablet regimens",
+          "Fosamax retains doses using 5, 10, 35 and 40 mg tablets but no longer markets those branded strengths. Exact generic product labels/packages must be checked."
+        ],
+        [
+          "Binosto",
+          "70 mg effervescent tablet; 603 mg sodium per tablet; NDC 70539-400-04, four blisters."
+        ],
+        [
+          "Hikma solution",
+          "70 mg/75 mL single-dose bottle; NDC 0054-0282-59, carton of four."
+        ],
+        [
+          "Excluded combinations",
+          "Fosamax Plus D adds cholecalciferol and requires its own label; no dosing is inferred here."
+        ]
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "sourceIds": [
+        "label",
+        "eff",
+        "solution"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "2 Fosamax marketing note;3;11;16;package panels"
+        ],
+        "eff": [
+          "2 Fosamax marketing note;3;11;16;package panels"
+        ],
+        "solution": [
+          "2 Fosamax marketing note;3;11;16;package panels"
+        ]
+      },
+      "claims": [
+        "Fosamax tablets: well-closed container, 15–30°C. Binosto: 20–25°C, excursions 15–30°C; protect from moisture and retain original blister until use. Hikma solution: 20–25°C; do not freeze. Verify the exact product because formulation preparation and water volumes differ."
+      ]
+    },
+    {
+      "section": "hero/essential",
+      "card": "Scope and essential safety",
+      "sourceIds": [
+        "label",
+        "eff",
+        "solution"
+      ],
+      "sourceSections": [
+        "1.1–1.6;2 status note (Fosamax);Binosto1.1–1.3;solution1.1/1.3/1.6",
+        "4;5.1–5.7;6;10;Binosto5.7 sodium",
+        "2 Fosamax marketing note;3;11;16;package panels"
+      ],
+      "claims": [
+        "An oral inhibitor of bone resorption used in specified osteoporosis and Paget disease regimens. Ordinary tablets, effervescent tablets and solution have different labeled uses and administration instructions.",
+        "Take on arising, before other food, drinks or medicines, with the formulation-specific plain-water instructions. Remain upright for at least 30 minutes and until after the first food. Stop and seek assessment for painful/difficult swallowing, chest pain or new/worsening heartburn.",
+        [
+          "Therapeutic class",
+          "Bisphosphonate · antiresorptive"
+        ],
+        [
+          "Representative brand",
+          "Fosamax 70 mg tablet"
+        ],
+        [
+          "Reference focus",
+          "U.S. tablets, Binosto and oral solution"
+        ]
+      ]
+    }
+  ],
+  "exclusions": [
+    "Non-U.S. availability or regimens; unreviewed manufacturer packages; no off-label or universal guideline dosing algorithm",
+    "Fosamax Plus D combination and other manufacturers’ packages; no automatic holiday/washout interval."
+  ],
+  "gaps": [],
+  "materialErrors": [],
+  "validation": {
+    "schema": "Passed validateMonograph with zero errors, 2026-10-01.",
+    "renderedPage": "Pending parent integration QA"
+  },
+  "monographSha256": "bee1a61c9f869af2eda935466a18e4d31a154baddc48d5e205e00b2207a9a836",
+  "sourceInterpretationNotes": [
+    "Clinical revision, SPL version/effectiveTime and API publication dates are distinguished. Current public U.S. labeling is product evidence, not a pharmacy inventory claim.",
+    "Fosamax 2026 section 2 explicitly says 5/10/35/40 mg branded tablets and branded oral solution are no longer marketed. Retained label regimens are separated from the current 70 mg brand package; Hikma solution is independently sourced.",
+    "The February 2026 atypical-fracture update covers other bones as well as the femur. No mandatory 3–5-year discontinuation or universal dental-holiday interval is asserted.",
+    "Binosto sodium content (603 mg) is distinct from its 70 mg alendronic-acid dose. Ordinary tablets, oral solution and effervescent preparation/indications are not interchanged."
+  ]
+}

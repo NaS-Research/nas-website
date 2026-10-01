@@ -1,0 +1,412 @@
+{
+  "slug": "atorvastatin",
+  "status": "source_reviewed",
+  "checked": "2026-10-01",
+  "scope": "Lipitor single-ingredient oral tablets, U.S. prescribing information; additional formulation identified separately",
+  "excludedRegimens": [
+    "Combination products",
+    "Non-U.S. labels",
+    "Exhaustive off-label indications",
+    "Independent dialysis dosing algorithm"
+  ],
+  "sources": [
+    {
+      "id": "label",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a60cc18b-0631-4cf0-b021-9f52224ece65",
+      "note": "Current selected label, revised April 2024. Sections 1–8, 10–12, 16–17 and patient labeling."
+    },
+    {
+      "id": "pregnancy",
+      "url": "https://www.fda.gov/drugs/drug-safety-and-availability/fda-requests-removal-strongest-warning-against-using-cholesterol-lowering-statins-during-pregnancy",
+      "note": "July 20, 2021 removal of the class pregnancy contraindication; most pregnant patients should stop therapy, with individualized exceptions."
+    },
+    {
+      "id": "other",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=41fca2d8-7f3f-45b9-8974-81b89accc211",
+      "note": "Separate formulation label, revised April 2024. Administration and concentration differ from tablets."
+    }
+  ],
+  "labelMetadata": {
+    "setid": "a60cc18b-0631-4cf0-b021-9f52224ece65",
+    "effectiveTime": "20240415",
+    "version": "8",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a60cc18b-0631-4cf0-b021-9f52224ece65",
+    "revised": "April 2024"
+  },
+  "assertionToSource": [
+    {
+      "profileSection": "indications",
+      "assertions": [
+        {
+          "card": "Labeled oral indications",
+          "statements": [
+            "In adults with multiple coronary risk factors but no evident coronary heart disease (CHD), reduces myocardial infarction, stroke, revascularization, and angina risk. In adults with type 2 diabetes and multiple CHD risk factors but no evident CHD, reduces myocardial infarction and stroke risk. In established CHD, reduces nonfatal myocardial infarction, fatal and nonfatal stroke, revascularization, heart-failure hospitalization, and angina risk.",
+            "As an adjunct to diet, lowers LDL-C in adults with primary hyperlipidemia and in patients aged 10 years or older with heterozygous familial hypercholesterolemia (HeFH). Also treats adult hypertriglyceridemia and primary dysbetalipoproteinemia. For homozygous familial hypercholesterolemia (HoFH) from age 10, use with other LDL-lowering treatment, or alone if those treatments are unavailable."
+          ],
+          "sourceIds": [
+            "label"
+          ]
+        },
+        {
+          "card": "Reference scope",
+          "statements": [
+            "This profile summarizes Lipitor tablets. Other brands, generic labels, combination medicines, and alternative dosage forms may have different labeled uses or instructions. It does not provide an exhaustive off-label treatment guide."
+          ],
+          "sourceIds": [
+            "label"
+          ]
+        }
+      ],
+      "source": "label",
+      "labelSections": [
+        "1"
+      ]
+    },
+    {
+      "profileSection": "dosage",
+      "assertions": [
+        {
+          "card": "Oral tablets · Recommended dosage",
+          "statements": [
+            "Adults: Start 10–20 mg once daily; range 10–80 mg once daily. A 40 mg start may be used when LDL-C reduction greater than 45% is needed.",
+            "HeFH · age ≥10 years: Start 10 mg once daily; range 10–20 mg once daily.",
+            "HoFH · age ≥10 years: Start 10–20 mg once daily; range 10–80 mg once daily."
+          ],
+          "sourceIds": [
+            "label"
+          ]
+        },
+        {
+          "card": "Administration and dose adjustment",
+          "statements": [
+            "Take tablets once daily at any time, with or without food. Skip a missed dose and resume the next scheduled dose.",
+            "Assess LDL-C as clinically appropriate, as early as 4 weeks after starting, and adjust to response. Interaction-related limits may be lower than the usual maximum."
+          ],
+          "sourceIds": [
+            "label"
+          ]
+        },
+        {
+          "card": "Hepatic and renal impairment",
+          "statements": [
+            "Renal impairment does not require a dose adjustment, but increases muscle-injury risk. Chronic alcohol-associated liver disease markedly increases exposure. Acute liver failure and decompensated cirrhosis are contraindications; assess other hepatic disease individually rather than applying a universal dose reduction."
+          ],
+          "sourceIds": [
+            "label"
+          ]
+        },
+        {
+          "card": "Other oral formulation",
+          "statements": [
+            "Atorvaliq is a 20 mg/5 mL (4 mg/mL) suspension taken on an empty stomach, 1 hour before or 2 hours after a meal. Shake well before each use. Measure with a calibrated oral device in mL. Its missed-dose directions allow taking a dose as soon as possible unless more than 12 hours late; then skip it. Follow its own storage instructions. Lipitor tablet directions do not apply."
+          ],
+          "sourceIds": [
+            "other"
+          ]
+        }
+      ],
+      "source": "label",
+      "labelSections": [
+        "2.1",
+        "2.2",
+        "2.3",
+        "2.4",
+        "2.5",
+        "8.6",
+        "8.7"
+      ]
+    },
+    {
+      "profileSection": "safety",
+      "assertions": [
+        {
+          "card": "Warnings and precautions",
+          "statements": [
+            "Myopathy and rhabdomyolysis can cause acute kidney injury and rarely death. Risk increases with age ≥65, uncontrolled hypothyroidism, renal impairment, interacting medicines, and higher doses.",
+            "Discontinue when myopathy is diagnosed or suspected or CK is markedly elevated. Temporarily interrupt during serious acute illness with high risk of renal failure from rhabdomyolysis. Persistent weakness and elevated CK after stopping may indicate immune-mediated necrotizing myopathy, requiring further evaluation.",
+            "Consider liver enzymes before treatment and when clinically indicated. Promptly discontinue for serious liver injury with symptoms, jaundice, or hyperbilirubinemia. Glucose and HbA1c can rise.",
+            "The 80 mg dose warrants individualized benefit–risk review after a recent hemorrhagic stroke. The label reports an increased hemorrhagic-stroke signal in a post-hoc analysis of SPARCL; do not generalize it to every patient or dose."
+          ],
+          "sourceIds": [
+            "label"
+          ]
+        },
+        {
+          "card": "Contraindications",
+          "statements": [
+            "Acute liver failure, decompensated cirrhosis, or hypersensitivity to atorvastatin or product ingredients. Pregnancy is no longer listed as an absolute contraindication; see population-specific guidance."
+          ],
+          "sourceIds": [
+            "label"
+          ]
+        },
+        {
+          "card": "Boxed warning status",
+          "statements": [
+            "The selected Lipitor tablet label has no boxed warning. Its warnings and precautions still require attention to muscle injury, hepatic injury, and relevant population and interaction risks."
+          ],
+          "sourceIds": [
+            "label"
+          ]
+        },
+        {
+          "card": "Adverse reactions",
+          "statements": [
+            "Common trial reports included nasopharyngitis, joint pain, diarrhea, extremity pain, and urinary tract infection.",
+            "Serious reactions include muscle injury, hepatic injury, and hypersensitivity. Trial frequencies depend on study design and are not comparative risk estimates across statins."
+          ],
+          "sourceIds": [
+            "label"
+          ]
+        }
+      ],
+      "source": "label",
+      "labelSections": [
+        "4",
+        "5.1",
+        "5.2",
+        "5.3",
+        "5.4",
+        "5.5",
+        "6.1",
+        "6.2"
+      ]
+    },
+    {
+      "profileSection": "interactions",
+      "assertions": [
+        {
+          "card": "Exposure and muscle-toxicity interactions",
+          "statements": [
+            "Not recommended: Cyclosporine; gemfibrozil; tipranavir/ritonavir; glecaprevir/pibrentasvir.",
+            "Maximum 20 mg daily: Clarithromycin; itraconazole; saquinavir/ritonavir; darunavir/ritonavir; fosamprenavir with or without ritonavir; elbasvir/grazoprevir; letermovir.",
+            "Maximum 40 mg daily: Nelfinavir.",
+            "Individual benefit–risk assessment: Lopinavir/ritonavir; simeprevir; ledipasvir/sofosbuvir; other azole antifungals or macrolides. Monitor for muscle toxicity."
+          ],
+          "sourceIds": [
+            "label"
+          ]
+        },
+        {
+          "card": "Other clinically relevant interactions",
+          "statements": [
+            "Fibrates other than gemfibrozil, lipid-modifying niacin (≥1 g/day), and colchicine add muscle risk; weigh benefit and monitor if combined. Avoid large grapefruit-juice quantities (>1.2 L/day). Give rifampin simultaneously with Lipitor because delayed dosing can reduce atorvastatin exposure. Monitor digoxin appropriately; atorvastatin can raise norethindrone and ethinyl estradiol concentrations.",
+            "These are the selected label’s interaction instructions, not a complete screen for every newly prescribed medicine. Check both drug labels before adding treatment."
+          ],
+          "sourceIds": [
+            "label"
+          ]
+        }
+      ],
+      "source": "label",
+      "labelSections": [
+        "2.5",
+        "7.1",
+        "7.2",
+        "7.3"
+      ]
+    },
+    {
+      "profileSection": "populations",
+      "assertions": [
+        {
+          "card": "Pregnancy",
+          "statements": [
+            "Stop treatment when pregnancy is recognized in most patients; the label permits consideration of ongoing therapeutic needs. FDA removed the class-wide pregnancy contraindication in 2021 to allow individualized decisions, particularly for very high-risk patients. Notify the prescriber promptly about a known or suspected pregnancy. Observational data have not established an increase in major birth defects; this does not establish safety for every pregnancy."
+          ],
+          "sourceIds": [
+            "label",
+            "pregnancy"
+          ]
+        },
+        {
+          "card": "Lactation",
+          "statements": [
+            "Breastfeeding is not recommended during treatment. Discuss temporary treatment interruption versus continued statin therapy with alternative infant feeding based on the patient’s cardiovascular needs."
+          ],
+          "sourceIds": [
+            "label",
+            "pregnancy"
+          ]
+        },
+        {
+          "card": "Pediatric and geriatric considerations",
+          "statements": [
+            "Lipitor HeFH and HoFH uses are established from age 10; safety and effectiveness below 10 or for other pediatric hyperlipidemias are not established.",
+            "Choose doses cautiously in older adults and monitor for muscle symptoms. Organ impairment and polypharmacy increase risk; see dosing for the relevant renal and hepatic distinctions."
+          ],
+          "sourceIds": [
+            "label"
+          ]
+        }
+      ],
+      "source": "label",
+      "labelSections": [
+        "8.1",
+        "8.2",
+        "8.4",
+        "8.5",
+        "8.6",
+        "8.7"
+      ]
+    },
+    {
+      "profileSection": "pharmacology",
+      "assertions": [
+        {
+          "card": "Mechanism of action and pharmacodynamics",
+          "statements": [
+            "Inhibits HMG-CoA reductase, reducing cholesterol synthesis and increasing hepatic LDL-receptor-mediated clearance. LDL-C response guides dosing; plasma concentration alone is not the treatment target."
+          ],
+          "sourceIds": [
+            "label"
+          ]
+        },
+        {
+          "card": "Pharmacokinetics",
+          "statements": [
+            "Absorption: Peak concentration in approximately 1–2 hours; parent-drug bioavailability about 14%.",
+            "Metabolism: CYP3A4; active metabolites contribute substantially to enzyme inhibition.",
+            "Elimination: Mainly biliary; less than 2% of a dose recovered in urine.",
+            "Half-life: Parent drug about 14 hours; inhibitory activity 20–30 hours with active metabolites."
+          ],
+          "sourceIds": [
+            "label"
+          ]
+        }
+      ],
+      "source": "label",
+      "labelSections": [
+        "12.1",
+        "12.2",
+        "12.3"
+      ]
+    },
+    {
+      "profileSection": "practice",
+      "assertions": [
+        {
+          "card": "Monitoring parameters",
+          "statements": [
+            "Reassess LDL-C as early as 4 weeks after starting and adjust to the individualized plan.",
+            "Consider liver enzymes before treatment and thereafter when clinically indicated. Evaluate jaundice, dark urine, appetite loss, fatigue, or right-upper-abdominal discomfort.",
+            "Investigate unexplained muscle symptoms; CK and renal assessment are appropriate when muscle injury is suspected. Persistent weakness after stopping warrants assessment for immune-mediated myopathy.",
+            "Review glucose risk and reinforce healthy diet, activity, and weight management."
+          ],
+          "sourceIds": [
+            "label"
+          ]
+        },
+        {
+          "card": "Patient counseling information",
+          "statements": [
+            "Use the prescribed once-daily schedule and avoid doubling missed doses.",
+            "Maintain diet and activity measures alongside drug treatment. Review all new medicines and supplements with the prescriber or pharmacist.",
+            "Promptly report unexplained muscle symptoms, especially with fever or feeling unwell. Seek urgent care for a severe allergic reaction.",
+            "Discuss pregnancy or breastfeeding promptly with the treating clinician.",
+            "For overdose, contact U.S. Poison Control at 1-800-222-1222; emergency symptoms require emergency care."
+          ],
+          "sourceIds": [
+            "label"
+          ]
+        }
+      ],
+      "source": "label",
+      "labelSections": [
+        "2.1",
+        "5",
+        "7",
+        "10",
+        "17"
+      ]
+    },
+    {
+      "profileSection": "product",
+      "assertions": [
+        {
+          "card": "Representative oral product · Lipitor",
+          "statements": [
+            "Other strengths and manufacturers have different appearances and package identifiers. Verify the exact imprint and original packaging with a pharmacist.",
+            "Dosage form / strengths: Film-coated oral tablets · 10, 20, 40, 80 mg",
+            "Label distributor: Viatris Specialty LLC",
+            "Representative appearance: 10 mg: white, elliptical tablet",
+            "Imprint: 10 on one side · VLE 155 on the other",
+            "Example package NDC: 58151-155-77 · 90 tablets"
+          ],
+          "sourceIds": [
+            "label"
+          ]
+        },
+        {
+          "card": "Dosage forms and strengths",
+          "statements": [
+            "Selected tablets: 10, 20, 40, 80 mg",
+            "Additional formulation: Atorvaliq oral suspension · 20 mg/5 mL; separate label applies.",
+            "Other products: Generic and combination products require their own labeling."
+          ],
+          "sourceIds": [
+            "label",
+            "other"
+          ]
+        },
+        {
+          "card": "Storage and handling",
+          "statements": [
+            "Lipitor: store at 20–25°C (68–77°F).",
+            "Follow the exact formulation’s storage instructions and retain packaging to identify the medicine."
+          ],
+          "sourceIds": [
+            "label"
+          ]
+        }
+      ],
+      "source": "label",
+      "labelSections": [
+        "3",
+        "16"
+      ]
+    }
+  ],
+  "additionalMappings": [
+    {
+      "assertion": "Pregnancy class contraindication removed; individualized very-high-risk exceptions; breastfeeding recommendation",
+      "source": "pregnancy",
+      "sections": [
+        "FDA What should health care professionals do?",
+        "Additional information for health care professionals"
+      ]
+    },
+    {
+      "assertion": "Atorvaliq suspension concentration, empty-stomach timing, calibrated mL device, product-specific missed-dose rule, and shake well before each use",
+      "source": "other",
+      "sections": [
+        "2.1",
+        "3",
+        "Principal Display Panel – Bottle Label"
+      ]
+    }
+  ],
+  "materialErrors": [],
+  "gaps": [],
+  "limitations": [
+    "Source-reviewed content; rendered UI QA and release checks are handled by the batch integrator.",
+    "Selected brand label scope is explicit; alternative products do not inherit these indications or directions."
+  ],
+  "schemaValidation": [],
+  "reviewFindings": [
+    "Lipitor current SPL revision is April 2024, version 8; publication-date metadata must not be mistaken for prescribing-information revision.",
+    "Atorvaliq food and missed-dose instructions differ from Lipitor.",
+    "Pregnancy absolute contraindication in legacy statin summaries must not be propagated."
+  ],
+  "presentationReview": {
+    "safetyCards": [
+      "Warnings and precautions",
+      "Contraindications",
+      "Boxed warning status",
+      "Adverse reactions"
+    ],
+    "storageChecked": "2026-10-01",
+    "storageSource": "Selected current prescribing information section 16",
+    "storageVerified": "20–25°C."
+  }
+}

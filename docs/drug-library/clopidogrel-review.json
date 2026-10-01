@@ -1,0 +1,527 @@
+{
+  "slug": "clopidogrel",
+  "checked": "2026-10-01",
+  "status": "source_reviewed",
+  "scope": "An oral antiplatelet prodrug for selected coronary and atherosclerotic vascular indications. Bleeding risk, CYP2C19 activation and the prescribed treatment plan guide use.",
+  "sources": [
+    {
+      "id": "label",
+      "title": "Plavix · Full prescribing information",
+      "publisher": "DailyMed / Sanofi",
+      "note": "Clinical PI May 2025; SPL version 5/effective May 30, 2025; DailyMed archive publication June 11, 2025. Public current label accessed October 1, 2026.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=de8b0b67-eb25-4684-83b5-7ad785314227"
+    },
+    {
+      "id": "stroke",
+      "title": "Secondary stroke prevention · Guideline summary",
+      "publisher": "AHA / ASA",
+      "note": "Official 2021 guideline Top Things to Know, updated May 24, 2021; short-term DAPT selection, without a numeric-duration algorithm.",
+      "url": "https://professional.heart.org/en/science-news/2021-guideline-for-the-prevention-of-stroke-in-patients-with-stroke-and-transient-ischemic-attack/top-things-to-know"
+    }
+  ],
+  "sourceEvidence": {
+    "label": {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=de8b0b67-eb25-4684-83b5-7ad785314227",
+      "checked": "2026-10-01",
+      "revision": "Clinical PI May 2025; SPL version 5/effective May 30, 2025; DailyMed archive publication June 11, 2025. Public current label accessed October 1, 2026.",
+      "access": "Full public supporting primary label/guideline sections read; no paywall access",
+      "splVersion": "5",
+      "effectiveTime": "20250530",
+      "xmlSha256": "e2fa73bd4988cdadf1bba6978c0c37de17bcd532b55d72085ae1b52be9e9dfe8",
+      "localEvidence": "/tmp/nas-drug-sources/plavix.xml",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/de8b0b67-eb25-4684-83b5-7ad785314227.xml",
+      "publishedDate": "2025-06-11"
+    },
+    "stroke": {
+      "url": "https://professional.heart.org/en/science-news/2021-guideline-for-the-prevention-of-stroke-in-patients-with-stroke-and-transient-ischemic-attack/top-things-to-know",
+      "checked": "2026-10-01",
+      "revision": "Official 2021 guideline Top Things to Know, updated May 24, 2021; short-term DAPT selection, without a numeric-duration algorithm.",
+      "access": "Full public supporting primary label/guideline sections read; no paywall access"
+    }
+  },
+  "assertionMap": [
+    {
+      "section": "indications",
+      "card": "Labeled uses",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": [
+        "Indications /1",
+        "Guideline scope/recommendations"
+      ],
+      "claims": [
+        "Non-ST-elevation ACS, including medical management or coronary revascularization, and medically managed STEMI: reduce MI/stroke with aspirin. Recent MI, recent stroke or established PAD: reduce MI/stroke."
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "1.1;1.2"
+        ]
+      }
+    },
+    {
+      "section": "indications",
+      "card": "Stroke guideline context",
+      "sourceIds": [
+        "stroke"
+      ],
+      "sourceSections": [
+        "Indications /1",
+        "Guideline scope/recommendations"
+      ],
+      "claims": [
+        "AHA/ASA recommends short-term dual antiplatelet therapy only in selected patients, such as early minor stroke/high-risk TIA or severe symptomatic intracranial stenosis. Routine long-term DAPT is not recommended for secondary stroke prevention. The indication-specific duration and stroke mechanism require clinician review."
+      ],
+      "sourceSectionsById": {
+        "stroke": [
+          "AHA/ASA2021 Top Things to Know points5–6"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Adult oral regimens",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": [
+        "Dosage /2",
+        "Renal/hepatic /8.6–8.7",
+        "ESE R.3.3;R.3.9"
+      ],
+      "claims": [
+        [
+          "ACS needing effect within hours",
+          "300 mg once as loading dose, then 75 mg once daily. Without loading, effect takes several days to establish."
+        ],
+        [
+          "Recent MI/stroke or established PAD",
+          "75 mg once daily without loading."
+        ]
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "2.1;2.2;5.3;8.5–8.7;12.3 food"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Administration and treatment planning",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": [
+        "Dosage /2",
+        "Renal/hepatic /8.6–8.7",
+        "ESE R.3.3;R.3.9"
+      ],
+      "claims": [
+        "May take with or without food. ACS uses aspirin as labeled; PCI, switching from another P2Y12 inhibitor and DAPT duration require an individualized cardiology/neurology plan. This profile supplies no universal switch, 600 mg loading or fixed DAPT-duration rule."
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "2.1;2.2;5.3;8.5–8.7;12.3 food"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Organ impairment and procedures",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": [
+        "Dosage /2",
+        "Renal/hepatic /8.6–8.7",
+        "ESE R.3.3;R.3.9"
+      ],
+      "claims": [
+        "Hepatic impairment and older age require no label dose adjustment. Moderate/severe renal experience is limited; individualize risk assessment. For surgery with major bleeding risk, interrupt 5 days beforehand when possible, then restart once hemostasis is achieved under the treating team."
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "2.1;2.2;5.3;8.5–8.7;12.3 food"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": [
+        "Boxed warning/status",
+        "Contraindications /4",
+        "Warnings/Precautions /5",
+        "Adverse reactions /6",
+        "Overdosage /10"
+      ],
+      "claims": [
+        "Bleeding may be serious or fatal. CYP2C19 variants/inhibitors can reduce effect; avoid strong CYP2C19 inducers because of bleeding risk. Premature discontinuation raises cardiovascular-event risk. TTP can occur after short exposure and requires emergency treatment, including plasma exchange. Cross-reactivity with other thienopyridines is reported."
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Boxed warning;4.1–4.2;5.1–5.5;6.1–6.2;10;12.5"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": [
+        "Boxed warning/status",
+        "Contraindications /4",
+        "Warnings/Precautions /5",
+        "Adverse reactions /6",
+        "Overdosage /10"
+      ],
+      "claims": [
+        "Active pathological bleeding, including peptic-ulcer or intracranial bleeding; hypersensitivity to clopidogrel or product components."
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Boxed warning;4.1–4.2;5.1–5.5;6.1–6.2;10;12.5"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Boxed warning · CYP2C19 poor metabolizers",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": [
+        "Boxed warning/status",
+        "Contraindications /4",
+        "Warnings/Precautions /5",
+        "Adverse reactions /6",
+        "Overdosage /10"
+      ],
+      "claims": [
+        "Patients with two nonfunctional CYP2C19 alleles form less active metabolite and have reduced platelet inhibition. Tests can identify poor metabolizers; consider another P2Y12 inhibitor. The label does not establish a universal dose escalation to overcome this."
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Boxed warning;4.1–4.2;5.1–5.5;6.1–6.2;10;12.5"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": [
+        "Boxed warning/status",
+        "Contraindications /4",
+        "Warnings/Precautions /5",
+        "Adverse reactions /6",
+        "Overdosage /10"
+      ],
+      "claims": [
+        "Bleeding, bruising, epistaxis and hematoma are prominent; itching is reported. Serious postmarketing allergy, skin, blood, liver and lung disorders include insulin autoimmune syndrome with severe hypoglycemia. Overdose may cause bleeding; urgent medical assessment is required and platelet transfusion may restore clotting."
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Boxed warning;4.1–4.2;5.1–5.5;6.1–6.2;10;12.5"
+        ]
+      }
+    },
+    {
+      "section": "interactions",
+      "card": "Clinically relevant interactions",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": [
+        "Drug Interactions /7",
+        "Precautions/Drug Interactions"
+      ],
+      "claims": [
+        "Avoid omeprazole/esomeprazole; omeprazole reduces effect even 12 hours apart. Other listed PPIs had less effect; select gastroprotection with the prescriber.",
+        "Avoid strong CYP2C19 inducers such as rifampin.",
+        "Opioids delay/reduce absorption; consider a parenteral antiplatelet in ACS requiring opioids.",
+        "NSAIDs, warfarin, other antiplatelets and SSRIs/SNRIs increase bleeding risk.",
+        "Avoid repaglinide. If unavoidable, its label-directed start is 0.5 mg before meals, maximum 4 mg/day with more glucose monitoring."
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "7.1–7.8"
+        ]
+      }
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy and lactation",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": [
+        "Pregnancy/Lactation/Pediatric/Geriatric /8",
+        "Endocrine2024 recommendation8"
+      ],
+      "claims": [
+        "Available pregnancy reports have not identified a major-birth-defect/miscarriage signal; emergency MI/stroke treatment should not be withheld solely for fetal concerns. Avoid neuraxial blockade during use; when possible stop 5–7 days before delivery/blockade. Milk data are limited; individualize breastfeeding benefit/risk."
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "8.1;8.2;8.4;8.5"
+        ]
+      }
+    },
+    {
+      "section": "populations",
+      "card": "Pediatric and geriatric considerations",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": [
+        "Pregnancy/Lactation/Pediatric/Geriatric /8",
+        "Endocrine2024 recommendation8"
+      ],
+      "claims": [
+        "Pediatric safety/effectiveness is not established. A neonatal/infant shunt trial showed no clinical benefit. Older adults do not need an age-only adjustment; bleeding context and comorbidities still matter."
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "8.1;8.2;8.4;8.5"
+        ]
+      }
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism of action",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": [
+        "Clinical Pharmacology /12.1–12.3",
+        "Description /unit conversion"
+      ],
+      "claims": [
+        "The active metabolite binds platelet P2Y12 ADP receptors irreversibly, suppressing activation/aggregation for the platelet lifespan."
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "12.1;12.2;12.3"
+        ]
+      }
+    },
+    {
+      "section": "pharmacology",
+      "card": "Pharmacokinetics",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": [
+        "Clinical Pharmacology /12.1–12.3",
+        "Description /unit conversion"
+      ],
+      "claims": [
+        [
+          "Activation",
+          "Hepatic CYP enzymes, principally CYP2C19; much drug becomes inactive metabolites."
+        ],
+        [
+          "Half-lives",
+          "Parent approximately 6 hours; active metabolite about 30 minutes."
+        ],
+        [
+          "Elimination",
+          "Radiolabeled dose: approximately 50% urinary and 46% fecal recovery over 5 days."
+        ],
+        [
+          "Platelet effect",
+          "Steady inhibition after 75 mg/day by days 3–7; recovery generally about 5 days after stopping."
+        ]
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "12.1;12.2;12.3"
+        ]
+      }
+    },
+    {
+      "section": "practice",
+      "card": "Monitoring parameters",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": [
+        "Warnings/Patient counseling /17",
+        "Dosage monitoring",
+        "ESE R.4.2–R.4.5"
+      ],
+      "claims": [
+        "Evaluate blood loss, bruising and unexplained anemia; CBC/platelets and organ tests follow clinical findings.",
+        "Assess TTP symptoms: low platelets/hemolysis, neurologic changes, renal dysfunction and fever.",
+        "Review CYP2C19 results when available and medicines affecting activation/bleeding.",
+        "Check adherence, ischemic symptoms and repaglinide-related hypoglycemia if combination unavoidable."
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "5.2–5.4;7.8;17"
+        ]
+      }
+    },
+    {
+      "section": "practice",
+      "card": "Patient counseling information",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": [
+        "Warnings/Patient counseling /17",
+        "Dosage monitoring",
+        "ESE R.4.2–R.4.5"
+      ],
+      "claims": [
+        "Read the Medication Guide. Do not stop independently. Tell clinicians/dentists before procedures; report prolonged bleeding or blood in stool/urine. Seek urgent help for unexplained fever with neurologic symptoms, weakness or unusual bruising. Review OTC acid reducers, NSAIDs and supplements."
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "5.2–5.4;7.8;17"
+        ]
+      }
+    },
+    {
+      "section": "product",
+      "card": "Representative product · Plavix 75 mg",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": [
+        "Description/Forms /3/11",
+        "How supplied/storage /16",
+        "Package panels"
+      ],
+      "claims": [
+        [
+          "Appearance",
+          "Pink round biconvex film-coated tablet."
+        ],
+        [
+          "Imprint",
+          "75 / 1171."
+        ],
+        [
+          "Manufacturer",
+          "Sanofi-aventis U.S. LLC."
+        ],
+        [
+          "Example NDC",
+          "0024-1171-90 · 90 tablets."
+        ],
+        [
+          "U.S. status",
+          "Prescription medicine."
+        ]
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "3;16;display panels"
+        ]
+      }
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": [
+        "Description/Forms /3/11",
+        "How supplied/storage /16",
+        "Package panels"
+      ],
+      "claims": [
+        [
+          "Selected oral tablets",
+          "75 mg and 300 mg."
+        ],
+        [
+          "300 mg appearance",
+          "Pink oblong, imprinted 300 / 1332; distinct loading strength."
+        ]
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "3;16;display panels"
+        ]
+      }
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": [
+        "Description/Forms /3/11",
+        "How supplied/storage /16",
+        "Package panels"
+      ],
+      "claims": [
+        "Store at 25°C; excursions 15–30°C. Keep the prescribed formulation/strength identified and dispense the Medication Guide."
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "3;16;display panels"
+        ]
+      }
+    },
+    {
+      "section": "hero/essential",
+      "card": "Scope and safety",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": [
+        "Indications",
+        "Warnings",
+        "Clinical Pharmacology",
+        "Description"
+      ],
+      "claims": [
+        "An oral antiplatelet prodrug for selected coronary and atherosclerotic vascular indications. Bleeding risk, CYP2C19 activation and the prescribed treatment plan guide use.",
+        "Stopping can increase cardiovascular-event risk. Report uncontrolled bleeding, black stools or TTP symptoms urgently; avoid omeprazole and esomeprazole.",
+        [
+          "Therapeutic class",
+          "P2Y12 platelet inhibitor"
+        ],
+        [
+          "Representative brand",
+          "Plavix"
+        ],
+        [
+          "Reference focus",
+          "U.S. tablets; selected stroke-guideline context"
+        ]
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "1;5;11;17"
+        ]
+      }
+    }
+  ],
+  "exclusions": [
+    "Other formulations/manufacturers; no universal switching or treatment-duration algorithm"
+  ],
+  "gaps": [],
+  "validation": {
+    "schema": "Passed validateMonograph: zero errors; exact eight sections, four Safety cards and three Product cards.",
+    "renderedPage": "Pending parent integration QA"
+  },
+  "monographSha256": "39c96b476bdc830d45807ddd24c656c91ae9b71e05a2787b9b447a0da3fe7231",
+  "sourceInterpretationNotes": [
+    "SPL effectiveTime is distinguished from clinical PI footer and DailyMed publication; no stock/availability inference.",
+    "AHA/ASA official summary read in full: no numeric DAPT duration asserted. Coronary switching/PCI600mg loading not inferred from clinical pharmacology studies."
+  ]
+}

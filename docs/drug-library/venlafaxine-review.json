@@ -1,0 +1,691 @@
+{
+  "slug": "venlafaxine",
+  "checked": "2026-10-01",
+  "status": "source_reviewed",
+  "scope": "An antidepressant with immediate release and extended release oral products. Indications, dose ceilings and organ-impairment adjustments depend on the exact formulation.",
+  "sources": [
+    {
+      "id": "xr",
+      "title": "Venlafaxine · ER capsules",
+      "publisher": "DailyMed / A-S Medication Solutions; Epic source",
+      "note": "Repackager PI displays July 2026; source text footer December 2025. SPL version 3/effective July 1, 2026; these dates describe distinct label elements.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f50029b8-7d05-445a-9d9f-71a1aee6088b"
+    },
+    {
+      "id": "epic",
+      "title": "Venlafaxine · Manufacturer ER capsules",
+      "publisher": "DailyMed / Epic Pharma",
+      "note": "PI January 2026; SPL version 10/effective and publication February 28, 2026. Exact product/storage evidence.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=430777f0-347c-4f21-8c5d-55f4e9897e74"
+    },
+    {
+      "id": "ir",
+      "title": "Venlafaxine · Immediate release tablets",
+      "publisher": "DailyMed / Sun Pharmaceutical",
+      "note": "Clinical footer August 2023; SPL version 14/effective and publication February 11, 2026.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=55889b3d-74c9-4638-9a14-6a4ca3a99f7f"
+    },
+    {
+      "id": "ert",
+      "title": "Venlafaxine · ER tablets",
+      "publisher": "DailyMed / RemedyRepack",
+      "note": "Clinical PI November 2024; SPL version 8/effective and publication August 17, 2026. Selected repack supplies 75 mg tablets.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1ce5786e-22e6-4afa-8052-6eababc6aa4e"
+    }
+  ],
+  "sourceEvidence": {
+    "xr": {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f50029b8-7d05-445a-9d9f-71a1aee6088b",
+      "checked": "2026-10-01",
+      "revision": "Repackager PI displays July 2026; source text footer December 2025. SPL version 3/effective July 1, 2026; these dates describe distinct label elements.",
+      "splVersion": "3",
+      "effectiveTime": "20260701",
+      "xmlSha256": "95089318251fb2b1753476bede3c4d1ade2e89880768c0e7711364dfa2764fe4",
+      "localEvidence": "/tmp/nas-drug-sources/venlafaxine-xr.xml",
+      "access": "Full public primary label; cited supporting sections reviewed",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/f50029b8-7d05-445a-9d9f-71a1aee6088b.xml"
+    },
+    "epic": {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=430777f0-347c-4f21-8c5d-55f4e9897e74",
+      "checked": "2026-10-01",
+      "revision": "PI January 2026; SPL version 10/effective and publication February 28, 2026. Exact product/storage evidence.",
+      "splVersion": "10",
+      "effectiveTime": "20260228",
+      "xmlSha256": "8a43a1fde8283e5e8d4812714cf69d6f9ec1496be9f3a57339e2563bb9b97296",
+      "localEvidence": "/tmp/nas-drug-sources/venlafaxine-epic.xml",
+      "access": "Full public primary label; cited supporting sections reviewed",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/430777f0-347c-4f21-8c5d-55f4e9897e74.xml"
+    },
+    "ir": {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=55889b3d-74c9-4638-9a14-6a4ca3a99f7f",
+      "checked": "2026-10-01",
+      "revision": "Clinical footer August 2023; SPL version 14/effective and publication February 11, 2026.",
+      "splVersion": "14",
+      "effectiveTime": "20260211",
+      "xmlSha256": "6492a9afbcd493e48435e3eb754c6b77d19224dffcdd94aa315e67c39eb46f62",
+      "localEvidence": "/tmp/nas-drug-sources/venlafaxine-ir.xml",
+      "access": "Full public primary label; cited supporting sections reviewed",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/55889b3d-74c9-4638-9a14-6a4ca3a99f7f.xml"
+    },
+    "ert": {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1ce5786e-22e6-4afa-8052-6eababc6aa4e",
+      "checked": "2026-10-01",
+      "revision": "Clinical PI November 2024; SPL version 8/effective and publication August 17, 2026. Selected repack supplies 75 mg tablets.",
+      "splVersion": "8",
+      "effectiveTime": "20260817",
+      "xmlSha256": "62abc618051db22fcddecf2453cbdcfca0fcb1c000d544221b826dc2b0d6406e",
+      "localEvidence": "/tmp/nas-drug-sources/venlafaxine-ertablet.xml",
+      "access": "Full public primary label; cited supporting sections reviewed",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/1ce5786e-22e6-4afa-8052-6eababc6aa4e.xml"
+    }
+  },
+  "assertionMap": [
+    {
+      "section": "indications",
+      "card": "Labeled uses",
+      "sourceIds": [
+        "xr",
+        "ir",
+        "ert"
+      ],
+      "sourceSections": [
+        "Indications and Usage /1",
+        "Pediatric Use /8.4"
+      ],
+      "claims": [
+        "Selected ER capsules: adult MDD, GAD, social anxiety and panic disorder. Selected IR tablets: MDD. Selected ER tablets: MDD and social anxiety. Pediatric safety/effectiveness is not established."
+      ],
+      "sourceSectionsById": {
+        "xr": [
+          "1;8.4"
+        ],
+        "ir": [
+          "INDICATIONS AND USAGE"
+        ],
+        "ert": [
+          "1.1–1.2;8.4"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Adult ER capsule regimens",
+      "sourceIds": [
+        "xr"
+      ],
+      "sourceSections": [
+        "Dosage and Administration /2",
+        "Renal/hepatic precautions /8.6–8.7",
+        "Drug Interactions"
+      ],
+      "claims": [
+        [
+          "MDD / GAD",
+          "75 mg once daily; may start 37.5 mg for 4–7 days. Increase by ≤75 mg at intervals ≥4 days; maximum 225 mg/day."
+        ],
+        [
+          "Social anxiety",
+          "75 mg once daily; higher doses showed no added benefit."
+        ],
+        [
+          "Panic disorder",
+          "37.5 mg/day for 7 days, then 75 mg/day; increases ≤75 mg at intervals ≥7 days, maximum approximately 225 mg/day."
+        ]
+      ],
+      "sourceSectionsById": {
+        "xr": [
+          "2.1–2.11"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Immediate release and ER tablet distinctions",
+      "sourceIds": [
+        "ir",
+        "ert"
+      ],
+      "sourceSections": [
+        "Dosage and Administration /2",
+        "Renal/hepatic precautions /8.6–8.7",
+        "Drug Interactions"
+      ],
+      "claims": [
+        "IR MDD: start 75 mg/day in 2–3 divided doses with food; titrate by ≤75 mg at intervals ≥4 days, generally to 225 mg/day. Certain severely depressed patients, including inpatients, may require up to 375 mg/day generally in 3 doses. Selected ER tablets: MDD 75 mg/day (optional 37.5 mg for 4–7 days), maximum approximately 225; social anxiety 75 mg/day."
+      ],
+      "sourceSectionsById": {
+        "ir": [
+          "DOSAGE AND ADMINISTRATION"
+        ],
+        "ert": [
+          "2–2.7"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Renal and hepatic adjustments",
+      "sourceIds": [
+        "xr",
+        "ir",
+        "ert"
+      ],
+      "sourceSections": [
+        "Dosage and Administration /2",
+        "Renal/hepatic precautions /8.6–8.7",
+        "Drug Interactions"
+      ],
+      "claims": [
+        "ER capsules: reduce 25–50% at CrCl 30–89 mL/min; reduce ≥50% below 30 or on hemodialysis. Selected IR label: reduce 25% for mild/moderate renal impairment; 50% on hemodialysis. ER tablet label: renal reduction 25–50%; dialysis 50%. Mild/moderate hepatic impairment generally requires 50% reduction; severe disease/cirrhosis may require more. Individualize to exact label and response."
+      ],
+      "sourceSectionsById": {
+        "xr": [
+          "2.1–2.11"
+        ],
+        "ir": [
+          "DOSAGE AND ADMINISTRATION"
+        ],
+        "ert": [
+          "2–2.7"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Administration, switching and discontinuation",
+      "sourceIds": [
+        "xr",
+        "ir",
+        "ert"
+      ],
+      "sourceSections": [
+        "Dosage and Administration /2",
+        "Renal/hepatic precautions /8.6–8.7",
+        "Drug Interactions"
+      ],
+      "claims": [
+        "ER products once daily with food; swallow whole. Selected capsules may be opened onto applesauce using the entire contents, swallowed immediately unchewed and followed by water; do not apply this to tablets. Prescriber-directed IR-to-ER switching uses nearest equivalent daily dose with adjustment. Taper individually; some patients need months. Allow ≥14 days after an antidepressant MAOI before venlafaxine and ≥7 days after venlafaxine before an MAOI."
+      ],
+      "sourceSectionsById": {
+        "xr": [
+          "2.1–2.11"
+        ],
+        "ir": [
+          "DOSAGE AND ADMINISTRATION"
+        ],
+        "ert": [
+          "2–2.7"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "sourceIds": [
+        "xr"
+      ],
+      "sourceSections": [
+        "Boxed warning/status",
+        "Contraindications /4",
+        "Warnings/Precautions /5",
+        "Adverse Reactions /6",
+        "Overdosage /10"
+      ],
+      "claims": [
+        "Monitor for serotonin syndrome, mania, BP elevation, bleeding and symptomatic hyponatremia. Stop implicated serotonergic agents and seek emergency treatment for serotonin syndrome. Avoid untreated narrow angles; use seizure/heart-disease caution. Sustained BP elevation may require dose reduction/stopping. Severe or prolonged discontinuation symptoms require a slower supervised taper. Progressive dyspnea/cough/chest discomfort needs lung evaluation."
+      ],
+      "sourceSectionsById": {
+        "xr": [
+          "Boxed warning;4;5.1–5.13;6;10"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "sourceIds": [
+        "xr",
+        "ir",
+        "ert"
+      ],
+      "sourceSections": [
+        "Boxed warning/status",
+        "Contraindications /4",
+        "Warnings/Precautions /5",
+        "Adverse Reactions /6",
+        "Overdosage /10"
+      ],
+      "claims": [
+        "Selected ER capsule label: venlafaxine, desvenlafaxine or excipient hypersensitivity; MAOI combinations or prohibited washout periods. Do not start during linezolid or IV methylene blue. Exact IR/ER-tablet wording differs; review the selected product before urgent reversible-MAOI therapy."
+      ],
+      "sourceSectionsById": {
+        "xr": [
+          "Boxed warning;4;5.1–5.13;6;10"
+        ],
+        "ir": [
+          "Boxed warning;CONTRAINDICATIONS;WARNINGS;PRECAUTIONS;ADVERSE REACTIONS;OVERDOSAGE"
+        ],
+        "ert": [
+          "Boxed warning;4.1;5;6;10"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Boxed warning · Suicidal thoughts and behaviors",
+      "sourceIds": [
+        "xr",
+        "ir",
+        "ert"
+      ],
+      "sourceSections": [
+        "Boxed warning/status",
+        "Contraindications /4",
+        "Warnings/Precautions /5",
+        "Adverse Reactions /6",
+        "Overdosage /10"
+      ],
+      "claims": [
+        "Antidepressants increase short-term suicidal-thought/behavior risk in pediatric and young-adult patients. Closely monitor all treated patients, especially early and around dose changes. Venlafaxine is not approved for pediatric use."
+      ],
+      "sourceSectionsById": {
+        "xr": [
+          "Boxed warning;4;5.1–5.13;6;10"
+        ],
+        "ir": [
+          "Boxed warning;CONTRAINDICATIONS;WARNINGS;PRECAUTIONS;ADVERSE REACTIONS;OVERDOSAGE"
+        ],
+        "ert": [
+          "Boxed warning;4.1;5;6;10"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions",
+      "sourceIds": [
+        "xr"
+      ],
+      "sourceSections": [
+        "Boxed warning/status",
+        "Contraindications /4",
+        "Warnings/Precautions /5",
+        "Adverse Reactions /6",
+        "Overdosage /10"
+      ],
+      "claims": [
+        "Common effects include nausea, sleepiness, dry mouth, sweating, appetite loss, constipation and sexual dysfunction. Serious postmarketing allergy, arrhythmia and skin/blood/liver disorders are reported. Overdose can cause seizures, ECG changes, impaired consciousness and death; urgent poison-center/emergency care is needed and no specific antidote is known."
+      ],
+      "sourceSectionsById": {
+        "xr": [
+          "Boxed warning;4;5.1–5.13;6;10"
+        ]
+      }
+    },
+    {
+      "section": "interactions",
+      "card": "Clinically relevant interactions",
+      "sourceIds": [
+        "xr",
+        "ir",
+        "ert"
+      ],
+      "sourceSections": [
+        "Drug Interactions /7",
+        "Drug/laboratory interference"
+      ],
+      "claims": [
+        "MAOIs are contraindicated; other serotonergic drugs increase serotonin-syndrome risk and require observation.",
+        "NSAIDs, aspirin, antiplatelets and anticoagulants increase bleeding risk; monitor warfarin indices during initiation, titration and stopping.",
+        "ER capsule label: consider reducing venlafaxine with CYP3A inhibitors; consider reducing interacting CYP2D6-substrate doses.",
+        "IR/ER-tablet labels advise caution with cimetidine in older/hepatic/BP-risk patients and with metoprolol, haloperidol and other relevant psychotropics; consult exact interaction text.",
+        "Avoid alcohol and do not combine with weight-loss agents such as phentermine without review; combination is not recommended."
+      ],
+      "sourceSectionsById": {
+        "xr": [
+          "7.1–7.2"
+        ],
+        "ir": [
+          "PRECAUTIONS: Drug Interactions;Drug-Laboratory Test Interactions"
+        ],
+        "ert": [
+          "7.1–7.14"
+        ]
+      }
+    },
+    {
+      "section": "interactions",
+      "card": "Laboratory interference",
+      "sourceIds": [
+        "xr"
+      ],
+      "sourceSections": [
+        "Drug Interactions /7",
+        "Drug/laboratory interference"
+      ],
+      "claims": [
+        "Urine immunoassays may falsely identify PCP or amphetamines, including for days after stopping. Confirmatory testing distinguishes venlafaxine."
+      ],
+      "sourceSectionsById": {
+        "xr": [
+          "7.1–7.2"
+        ]
+      }
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy and lactation",
+      "sourceIds": [
+        "xr",
+        "ir",
+        "ert"
+      ],
+      "sourceSections": [
+        "Pregnancy/Nursing/Pediatric/Geriatric /8"
+      ],
+      "claims": [
+        "Current ER-capsule evidence has not identified a major-birth-defect signal, but limitations remain. Mid/late pregnancy may increase preeclampsia risk; near-delivery exposure may increase postpartum hemorrhage and neonatal adaptation complications. Balance untreated illness risks and monitor exposed neonates. Venlafaxine/ODV enter milk; current capsule PI individualizes breastfeeding benefit/risk. Older IR/ER-tablet labels advise choosing nursing or medicine continuation after assessment."
+      ],
+      "sourceSectionsById": {
+        "xr": [
+          "8.1;8.2;8.4;8.5"
+        ],
+        "ir": [
+          "PRECAUTIONS: Pregnancy;Nursing Mothers;Pediatric;Geriatric"
+        ],
+        "ert": [
+          "8.1–8.7"
+        ]
+      }
+    },
+    {
+      "section": "populations",
+      "card": "Pediatric and geriatric considerations",
+      "sourceIds": [
+        "xr"
+      ],
+      "sourceSections": [
+        "Pregnancy/Nursing/Pediatric/Geriatric /8"
+      ],
+      "claims": [
+        "Pediatric efficacy is not established; studies showed appetite/weight/growth and BP/lipid concerns. Older adults face greater hyponatremia risk. No age-only adjustment is required, but organ impairment and sensitivity may lower the dose."
+      ],
+      "sourceSectionsById": {
+        "xr": [
+          "8.1;8.2;8.4;8.5"
+        ]
+      }
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism of action",
+      "sourceIds": [
+        "xr"
+      ],
+      "sourceSections": [
+        "Clinical Pharmacology /12.1–12.3"
+      ],
+      "claims": [
+        "Venlafaxine and active ODV inhibit neuronal serotonin/norepinephrine reuptake. The full therapeutic mechanism is not established."
+      ],
+      "sourceSectionsById": {
+        "xr": [
+          "12.1–12.3"
+        ]
+      }
+    },
+    {
+      "section": "pharmacology",
+      "card": "Pharmacokinetics",
+      "sourceIds": [
+        "xr",
+        "ert"
+      ],
+      "sourceSections": [
+        "Clinical Pharmacology /12.1–12.3"
+      ],
+      "claims": [
+        [
+          "Metabolism",
+          "Hepatic; CYP2D6 forms active O-desmethylvenlafaxine (ODV)."
+        ],
+        [
+          "Capsule-label half-lives",
+          "Venlafaxine approximately 5 hours; ODV 11 hours."
+        ],
+        [
+          "ER-tablet study",
+          "Apparent half-lives approximately 10.7 / 12.5 hours under fed conditions."
+        ],
+        [
+          "Elimination",
+          "Predominantly urinary metabolites; renal/hepatic disease reduces clearance."
+        ]
+      ],
+      "sourceSectionsById": {
+        "xr": [
+          "12.1–12.3"
+        ],
+        "ert": [
+          "12.1–12.3"
+        ]
+      }
+    },
+    {
+      "section": "practice",
+      "card": "Monitoring parameters",
+      "sourceIds": [
+        "xr"
+      ],
+      "sourceSections": [
+        "Warnings/Precautions /5",
+        "Patient Counseling /17",
+        "Information for Patients /Laboratory Tests"
+      ],
+      "claims": [
+        "Screen bipolar history; monitor suicidality/clinical worsening early and after dose changes.",
+        "Check BP before and regularly during treatment; assess pulse/cardiovascular context.",
+        "Assess sodium when at risk/symptomatic, bleeding, sexual function and appetite/weight.",
+        "Review renal/hepatic function for dosing; consider lipids with continued treatment.",
+        "Monitor during taper; urgent assessment for severe neurologic, eye, allergy or lung symptoms."
+      ],
+      "sourceSectionsById": {
+        "xr": [
+          "2.6;5.1–5.13;17"
+        ]
+      }
+    },
+    {
+      "section": "practice",
+      "card": "Patient counseling information",
+      "sourceIds": [
+        "xr"
+      ],
+      "sourceSections": [
+        "Warnings/Precautions /5",
+        "Patient Counseling /17",
+        "Information for Patients /Laboratory Tests"
+      ],
+      "claims": [
+        "Do not abruptly stop or alter the dose. Take the correct formulation with food. Avoid alcohol/driving until effects are known; review OTC/herbal medicines. Seek urgent help for suicidal thoughts, serotonin symptoms, severe allergy or eye pain. Read the Medication Guide; inert ER shells/pellets may appear in stool."
+      ],
+      "sourceSectionsById": {
+        "xr": [
+          "2.6;5.1–5.13;17"
+        ]
+      }
+    },
+    {
+      "section": "product",
+      "card": "Representative product · Epic 75 mg ER capsule",
+      "sourceIds": [
+        "epic"
+      ],
+      "sourceSections": [
+        "Description /3/11",
+        "How Supplied/Storage /16",
+        "Package panels"
+      ],
+      "claims": [
+        [
+          "Appearance",
+          "Opaque light-grey cap and flesh body."
+        ],
+        [
+          "Imprint",
+          "YH / 129 in black ink."
+        ],
+        [
+          "Distributor",
+          "Epic Pharma, LLC."
+        ],
+        [
+          "Example NDC",
+          "42806-602-30 · 30 capsules."
+        ],
+        [
+          "U.S. status",
+          "Prescription; not a controlled substance."
+        ]
+      ],
+      "sourceSectionsById": {
+        "epic": [
+          "3;9.1;16;Medication Guide"
+        ]
+      }
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "sourceIds": [
+        "xr",
+        "ir",
+        "ert"
+      ],
+      "sourceSections": [
+        "Description /3/11",
+        "How Supplied/Storage /16",
+        "Package panels"
+      ],
+      "claims": [
+        [
+          "Selected IR tablets",
+          "25, 37.5, 50, 75 and 100 mg."
+        ],
+        [
+          "Selected ER capsules",
+          "37.5, 75 and 150 mg."
+        ],
+        [
+          "Selected ER-tablet repack",
+          "75 mg; underlying description includes 37.5/75/150/225 mg product family."
+        ],
+        [
+          "Brand context",
+          "Effexor XR; exact current product/availability must be verified."
+        ]
+      ],
+      "sourceSectionsById": {
+        "xr": [
+          "3;9.1;16;Medication Guide"
+        ],
+        "ir": [
+          "DESCRIPTION;HOW SUPPLIED;Controlled Substance Class"
+        ],
+        "ert": [
+          "3;11;16"
+        ]
+      }
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "sourceIds": [
+        "epic",
+        "ir",
+        "ert"
+      ],
+      "sourceSections": [
+        "Description /3/11",
+        "How Supplied/Storage /16",
+        "Package panels"
+      ],
+      "claims": [
+        "Selected products: 20–25°C, excursions 15–30°C. IR tablets protect from light/moisture; ER tablets protect from moisture/humidity; keep ER capsules dry. Keep out of children’s reach and preserve Medication Guide."
+      ],
+      "sourceSectionsById": {
+        "epic": [
+          "3;9.1;16;Medication Guide"
+        ],
+        "ir": [
+          "DESCRIPTION;HOW SUPPLIED;Controlled Substance Class"
+        ],
+        "ert": [
+          "3;11;16"
+        ]
+      }
+    },
+    {
+      "section": "hero/essential",
+      "card": "Clinical scope and essential safety",
+      "sourceIds": [
+        "xr",
+        "epic",
+        "ir",
+        "ert"
+      ],
+      "sourceSections": [
+        "Indications",
+        "Warnings",
+        "Counseling"
+      ],
+      "claims": [
+        "An antidepressant with immediate release and extended release oral products. Indications, dose ceilings and organ-impairment adjustments depend on the exact formulation.",
+        "Seek urgent help for suicidal thoughts, severe agitation or serotonin-syndrome symptoms. Abrupt stopping can cause severe, prolonged withdrawal.",
+        [
+          "Therapeutic class",
+          "Serotonin/norepinephrine reuptake inhibitor"
+        ],
+        [
+          "Formulations",
+          "Immediate release tablets; ER capsules/tablets"
+        ],
+        [
+          "Reference focus",
+          "Selected current U.S. labels"
+        ],
+        "Monitor mood and taper under supervision."
+      ],
+      "sourceSectionsById": {
+        "xr": [
+          "1;5;17"
+        ],
+        "epic": [
+          "1;5;17"
+        ],
+        "ir": [
+          "CLINICAL PHARMACOLOGY;WARNINGS;Information for Patients"
+        ],
+        "ert": [
+          "1;5;17"
+        ]
+      }
+    }
+  ],
+  "exclusions": [
+    "Off-label regimens; other manufacturers and compounded preparations; no universal interaction-dose algorithm"
+  ],
+  "gaps": [],
+  "validation": {
+    "schema": "Passed validateMonograph: zero errors; exact eight sections, four Safety cards and three Product cards.",
+    "renderedPage": "Pending parent integration QA"
+  },
+  "monographSha256": "22ff3bcb574f445c3609acca529dc70be8535a9aeb2a33530711e7e6734349d9",
+  "sourceInterpretationNotes": [
+    "Current SPL effectiveTime/publication is separated from clinical PI revision. No inference of actual dispensing availability.",
+    "IR maximum 375 mg/day applies only to certain severely depressed patients; ER maximum approximately 225 is separate.",
+    "Renal adjustments differ among selected labels; no universal percentage asserted.",
+    "Current ER capsule lactation risk-benefit wording differs from older IR/ER tablet nursing wording; both explicitly described.",
+    "Historical Effexor XR label was read for cross-checking but not used as current availability evidence; current generic capsule and manufacturer labels used."
+  ]
+}

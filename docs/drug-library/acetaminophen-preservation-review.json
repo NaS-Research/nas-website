@@ -1,0 +1,570 @@
+{
+  "reviewDate": "2026-10-01",
+  "reviewType": "Independent material-safety and preservation review of immutable founder-approved APAP blueprint",
+  "scope": "Focused single-ingredient oral reference. IV labeling supports clearly qualified safety/pharmacology claims; no IV dosing protocol is represented.",
+  "preservation": {
+    "original": "/Users/agndj/Documents/NaS/nas-website/src/data/drugMonographs/acetaminophen.js",
+    "isolated": "/Users/agndj/Documents/NaS/nas-drug-library-release/src/data/drugMonographs/acetaminophen.js",
+    "originalSha256": "50972dbe3eb307ae910f593345bce54368ad90d39a8215c6d414a1107696c78f",
+    "isolatedSha256": "50972dbe3eb307ae910f593345bce54368ad90d39a8215c6d414a1107696c78f",
+    "byteIdentical": true,
+    "modified": false,
+    "sharedPresentationFiles": [
+      {
+        "path": "src/components/learn/DrugMonograph.jsx",
+        "originalSha256": "15d5d88a4f212a19cc0697e6b65a5bafd58912b23f19cccd82cdb905ccf64800",
+        "isolatedSha256": "44ac97f7839bb98c90d1931ed35f2009e7855cc7206508f804abfbc641d7c950",
+        "byteIdentical": false,
+        "initialIsolatedSha256": "15d5d88a4f212a19cc0697e6b65a5bafd58912b23f19cccd82cdb905ccf64800",
+        "initialByteIdentical": true,
+        "hashComparison": "Current isolated file compared to initial review original hash; original checkout may have independent concurrent changes."
+      },
+      {
+        "path": "src/components/learn/DrugMonographContents.jsx",
+        "originalSha256": "583e6e8b24c7a4bd3a9de5f3da60471ed8e77df6ce4fc3adb6725dea3313b41e",
+        "isolatedSha256": "583e6e8b24c7a4bd3a9de5f3da60471ed8e77df6ce4fc3adb6725dea3313b41e",
+        "byteIdentical": true,
+        "initialIsolatedSha256": "583e6e8b24c7a4bd3a9de5f3da60471ed8e77df6ce4fc3adb6725dea3313b41e",
+        "initialByteIdentical": true,
+        "hashComparison": "Current isolated file compared to initial review original hash; original checkout may have independent concurrent changes."
+      },
+      {
+        "path": "src/components/learn/DrugMonograph.module.css",
+        "originalSha256": "1c000c6e6e42fa9fda1f65bac56fdc200d7ed1c1ec92ae05dbb3b44063989a5b",
+        "isolatedSha256": "1c000c6e6e42fa9fda1f65bac56fdc200d7ed1c1ec92ae05dbb3b44063989a5b",
+        "byteIdentical": true,
+        "initialIsolatedSha256": "1c000c6e6e42fa9fda1f65bac56fdc200d7ed1c1ec92ae05dbb3b44063989a5b",
+        "initialByteIdentical": true,
+        "hashComparison": "Current isolated file compared to initial review original hash; original checkout may have independent concurrent changes."
+      }
+    ],
+    "initialReviewSnapshot": true,
+    "currentMonographSha256": "50972dbe3eb307ae910f593345bce54368ad90d39a8215c6d414a1107696c78f",
+    "concurrentPresentationChange": {
+      "commit": "28328032a3cdf51082b850dd5d1273bc8978afc7",
+      "date": "2026-10-01",
+      "clinicalContentEdited": false,
+      "note": "Concurrent production work removed the shared DrugMonograph default open property. Parent fast-forwarded that production commit. APAP monograph remains unchanged; all profiles now share the current APAP collapsed renderer. Initial renderer equality is historical, not a current unchanged-renderer assertion.",
+      "fastForwardHead": "73067d3bcea712ad49ceb2e87d0884c547031b31"
+    }
+  },
+  "conclusion": "No confirmed materially false dose, contraindication, or causal claim was identified in directly retrieved sources. Two child-specific counseling omissions are safety-relevant review gaps. APAP was not edited. This review does not represent pharmacist sign-off or full independent verification of inaccessible ACOG advisory.",
+  "findings": [
+    {
+      "id": "APAP-PEDIATRIC-PAIN-DURATION",
+      "severity": "safety-relevant-review-gap",
+      "location": "practice / Monitoring parameters; dosage / Pediatric oral suspension",
+      "blueprint": "Only the adult pain threshold of 10 days is explicit; persistent/worsening symptoms otherwise receive general reassessment advice.",
+      "evidence": "Children’s product requires stopping and contacting a doctor when child pain worsens or persists beyond 5 days; fever threshold is 3 days.",
+      "sources": [
+        "child",
+        "patient"
+      ],
+      "recommendation": "Report to founder for review. Preserve immutable APAP. Do not reuse adult duration thresholds in pediatric content."
+    },
+    {
+      "id": "APAP-PEDIATRIC-SORE-THROAT",
+      "severity": "safety-relevant-review-gap",
+      "location": "safety and practice counseling",
+      "blueprint": "No child-specific severe or persistent sore-throat escalation warning is included.",
+      "evidence": "The child label calls for prompt consultation for severe sore throat, duration beyond 2 days, or associated fever, headache, rash, nausea or vomiting.",
+      "sources": [
+        "child",
+        "patient"
+      ],
+      "recommendation": "Report to founder for review. Preserve immutable APAP."
+    }
+  ],
+  "sources": [
+    {
+      "id": "otc",
+      "title": "Tylenol Extra Strength · 500 mg",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=17cfa99d-abb2-4d77-9e0e-e77109fbb61a",
+      "access": "directly-retrieved"
+    },
+    {
+      "id": "er",
+      "title": "Tylenol 8HR · 650 mg extended release",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5d7d1300-bcb8-466a-880b-310b360ee132",
+      "access": "directly-retrieved"
+    },
+    {
+      "id": "child",
+      "title": "Children’s Tylenol · 160 mg / 5 mL",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3162733b-9382-39f1-e063-6294a90ac420",
+      "access": "directly-retrieved"
+    },
+    {
+      "id": "iv",
+      "title": "Acetaminophen injection · Prescribing information",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8481d9f3-d2a5-457f-b92c-99445d063c8f",
+      "access": "directly-retrieved"
+    },
+    {
+      "id": "fda",
+      "title": "Acetaminophen · Safe use",
+      "url": "https://www.fda.gov/drugs/safe-use-over-counter-pain-relievers-and-fever-reducers/acetaminophen",
+      "access": "directly-retrieved"
+    },
+    {
+      "id": "patient",
+      "title": "Acetaminophen · Patient information",
+      "url": "https://medlineplus.gov/druginfo/meds/a681004.html",
+      "access": "directly-retrieved"
+    },
+    {
+      "id": "lactation",
+      "title": "Acetaminophen · Lactation",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK501194/",
+      "access": "directly-retrieved-via-equivalent-public-NCBI-sites/books-path"
+    },
+    {
+      "id": "pregnancy",
+      "title": "Pregnancy · FDA safety communication",
+      "url": "https://www.fda.gov/news-events/press-announcements/fda-responds-evidence-possible-association-between-autism-and-acetaminophen-use-during-pregnancy",
+      "access": "directly-retrieved"
+    },
+    {
+      "id": "acog",
+      "title": "Pregnancy · ACOG practice advisory",
+      "url": "https://www.acog.org/clinical/clinical-guidance/practice-advisory/articles/2025/09/acetaminophen-use-in-pregnancy-and-neurodevelopmental-outcomes",
+      "access": "full-source-retrieval-blocked; official-index-excerpt-only"
+    }
+  ],
+  "verifiedSourceNotes": {
+    "otc": "Current label retrieved. Age12+, two500mg caplets every6h, six caplets/day unless physician-directed,10-day use limit, product appearance/NDC/storage and allergy/liver warnings match.",
+    "er": "Current label retrieved. Two650mg caplets every8h, maximum six/day, swallow whole, no use under12; matches blueprint.",
+    "child": "Current label retrieved.160mg/5mL, all five weight/age-volume bands, every4h, maximum five doses/day, under2 or24lb ask physician; matches. Child-specific stop-use omissions listed separately.",
+    "iv": "Current label retrieved, updated2026-09-21. Boxed warning distinguishes medication errors and hepatic injury; severe liver disease contraindication and severe renal impairment cautions match. Warfarin INR warning and adult-IV mean2.4h half-life match. Mechanism is incompletely defined; hepatic conjugation and NAPQI pathway match. Blueprint does not provide IV doses.",
+    "fda": "Direct safety page retrieved; product-specific dosing, duplicate exposure, overdose escalation and serious skin warnings agree.",
+    "patient": "Direct MedlinePlus page retrieved; administration, warning symptoms, overdose response and adult10-day/fever3-day thresholds agree. Child5-day and sore-throat counseling gaps listed separately.",
+    "pregnancy": "Direct dated FDA communication retrieved; association explicitly does not establish causation, matching qualified blueprint.",
+    "acog": "Direct practice advisory and ACOG news page retrieval failed. Official-domain search excerpt supports judicious use; full advisory not independently read. Current2026SMFM statement, explicitly ACOG-endorsed, directly retrieved; supports first-line pregnancy use and caution interpreting observational associations.",
+    "lactation": "Original /books path returned CAPTCHA; equivalent public /sites/books/NBK501194/ retrieved successfully.2026-04-15 revision and breastfeeding choice, exposure below infant doses, rare adverse effects verified."
+  },
+  "supplementarySources": [
+    {
+      "title": "SMFM2026 statement: Acetaminophen use during pregnancy (ACOG endorsed)",
+      "url": "https://publications.smfm.org/publications/632-society-for-maternal-fetal-medicine-statement-acetaminophen-use/",
+      "access": "directly-retrieved"
+    },
+    {
+      "title": "LactMed acetaminophen equivalent public entry",
+      "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK501194/",
+      "access": "directly-retrieved"
+    }
+  ],
+  "blueprint": {
+    "renderer": "src/components/learn/DrugMonograph.jsx",
+    "contentsRenderer": "src/components/learn/DrugMonographContents.jsx",
+    "stylesheet": "src/components/learn/DrugMonograph.module.css",
+    "heroOrder": [
+      "Drug library back link",
+      "Drug reference eyebrow",
+      "Drug name h1",
+      "Synonym",
+      "Description",
+      "Three hero facts",
+      "Sources checked date and View references link"
+    ],
+    "mainOrder": [
+      "Essential safety callout",
+      "Indications",
+      "Dosage and administration",
+      "Safety",
+      "Drug interactions",
+      "Use in specific populations",
+      "Clinical pharmacology",
+      "Monitoring and counseling",
+      "Product identification",
+      "References",
+      "Footer"
+    ],
+    "essential": {
+      "title": "One ingredient. Count every source.",
+      "text": "Avoid duplicate acetaminophen-containing medicines. Follow the exact product’s daily limit. Suspected overdose requires immediate medical assessment, even without symptoms.",
+      "section": "safety",
+      "link": "Warnings and precautions"
+    },
+    "sectionStructure": [
+      {
+        "number": "01",
+        "id": "indications",
+        "title": "Indications",
+        "summary": "Temporary relief of pain and fever.",
+        "takeaway": "Confirm the indication and formulation before selecting a dose.",
+        "cards": [
+          {
+            "title": "Labeled oral indications",
+            "defaultOpen": true,
+            "tone": null,
+            "badge": null,
+            "bodyTypes": [
+              "paragraphs"
+            ],
+            "sourceIds": [
+              "otc"
+            ]
+          },
+          {
+            "title": "Intravenous therapy",
+            "defaultOpen": false,
+            "tone": null,
+            "badge": null,
+            "bodyTypes": [
+              "paragraphs"
+            ],
+            "sourceIds": [
+              "iv"
+            ]
+          }
+        ]
+      },
+      {
+        "number": "02",
+        "id": "dosage",
+        "title": "Dosage and administration",
+        "summary": "Match the directions to the exact product.",
+        "takeaway": "The selected 500 mg product allows 3,000 mg in 24 hours. Count acetaminophen from every source.",
+        "cards": [
+          {
+            "title": "Immediate-release oral caplets · 500 mg",
+            "defaultOpen": true,
+            "tone": null,
+            "badge": "Age 12 years and older",
+            "bodyTypes": [
+              "paragraphs",
+              "table"
+            ],
+            "sourceIds": [
+              "otc",
+              "fda"
+            ]
+          },
+          {
+            "title": "Extended-release oral caplets · 650 mg",
+            "defaultOpen": false,
+            "tone": null,
+            "badge": "Age 12 years and older",
+            "bodyTypes": [
+              "paragraphs"
+            ],
+            "sourceIds": [
+              "er"
+            ]
+          },
+          {
+            "title": "Pediatric oral suspension · 160 mg / 5 mL",
+            "defaultOpen": false,
+            "tone": null,
+            "badge": null,
+            "bodyTypes": [
+              "paragraphs",
+              "table"
+            ],
+            "sourceIds": [
+              "child"
+            ]
+          },
+          {
+            "title": "Hepatic and renal impairment",
+            "defaultOpen": false,
+            "tone": null,
+            "badge": null,
+            "bodyTypes": [
+              "paragraphs"
+            ],
+            "sourceIds": [
+              "otc",
+              "iv"
+            ]
+          }
+        ]
+      },
+      {
+        "number": "03",
+        "id": "safety",
+        "title": "Safety",
+        "summary": "Hepatic injury, hypersensitivity, and serious skin reactions.",
+        "takeaway": "Suspected overdose needs immediate assessment, even without symptoms.",
+        "cards": [
+          {
+            "title": "Warnings and precautions",
+            "defaultOpen": true,
+            "tone": "warning",
+            "badge": null,
+            "bodyTypes": [
+              "paragraphs"
+            ],
+            "sourceIds": [
+              "fda"
+            ]
+          },
+          {
+            "title": "Contraindications",
+            "defaultOpen": false,
+            "tone": null,
+            "badge": null,
+            "bodyTypes": [
+              "paragraphs"
+            ],
+            "sourceIds": [
+              "otc",
+              "fda",
+              "iv"
+            ]
+          },
+          {
+            "title": "Boxed warning · Intravenous formulation",
+            "defaultOpen": false,
+            "tone": null,
+            "badge": null,
+            "bodyTypes": [
+              "paragraphs"
+            ],
+            "sourceIds": [
+              "iv",
+              "otc"
+            ]
+          },
+          {
+            "title": "Adverse reactions",
+            "defaultOpen": false,
+            "tone": null,
+            "badge": null,
+            "bodyTypes": [
+              "paragraphs"
+            ],
+            "sourceIds": [
+              "patient",
+              "iv"
+            ]
+          }
+        ]
+      },
+      {
+        "number": "04",
+        "id": "interactions",
+        "title": "Drug interactions",
+        "summary": "Reconcile prescription and nonprescription medicines.",
+        "takeaway": "Duplicate ingredients and warfarin deserve particular attention.",
+        "cards": [
+          {
+            "title": "Clinically relevant interactions",
+            "defaultOpen": true,
+            "tone": null,
+            "badge": null,
+            "bodyTypes": [
+              "items"
+            ],
+            "sourceIds": [
+              "fda",
+              "iv"
+            ]
+          }
+        ]
+      },
+      {
+        "number": "05",
+        "id": "populations",
+        "title": "Use in specific populations",
+        "summary": "Consider age, pregnancy, lactation, and organ function.",
+        "takeaway": "Pregnancy decisions require individualized discussion; association does not establish causation.",
+        "cards": [
+          {
+            "title": "Pregnancy",
+            "defaultOpen": false,
+            "tone": null,
+            "badge": null,
+            "bodyTypes": [
+              "paragraphs"
+            ],
+            "sourceIds": [
+              "pregnancy",
+              "acog"
+            ]
+          },
+          {
+            "title": "Lactation",
+            "defaultOpen": false,
+            "tone": null,
+            "badge": null,
+            "bodyTypes": [
+              "paragraphs"
+            ],
+            "sourceIds": [
+              "lactation"
+            ]
+          },
+          {
+            "title": "Pediatric and geriatric considerations",
+            "defaultOpen": false,
+            "tone": null,
+            "badge": null,
+            "bodyTypes": [
+              "paragraphs"
+            ],
+            "sourceIds": [
+              "patient",
+              "fda",
+              "iv"
+            ]
+          }
+        ]
+      },
+      {
+        "number": "06",
+        "id": "pharmacology",
+        "title": "Clinical pharmacology",
+        "summary": "Mechanism, disposition, and toxicity pathway.",
+        "takeaway": "Hepatic metabolism produces a reactive intermediate normally detoxified by glutathione.",
+        "cards": [
+          {
+            "title": "Mechanism of action and pharmacodynamics",
+            "defaultOpen": false,
+            "tone": null,
+            "badge": null,
+            "bodyTypes": [
+              "paragraphs"
+            ],
+            "sourceIds": [
+              "iv"
+            ]
+          },
+          {
+            "title": "Pharmacokinetics",
+            "defaultOpen": false,
+            "tone": null,
+            "badge": null,
+            "bodyTypes": [
+              "facts"
+            ],
+            "sourceIds": [
+              "iv"
+            ]
+          }
+        ]
+      },
+      {
+        "number": "07",
+        "id": "practice",
+        "title": "Monitoring and counseling",
+        "summary": "Assess response, exposure, and warning symptoms.",
+        "takeaway": "Write down the product strength, dose interval, and daily maximum.",
+        "cards": [
+          {
+            "title": "Monitoring parameters",
+            "defaultOpen": true,
+            "tone": null,
+            "badge": null,
+            "bodyTypes": [
+              "items"
+            ],
+            "sourceIds": [
+              "patient",
+              "iv"
+            ]
+          },
+          {
+            "title": "Patient counseling information",
+            "defaultOpen": false,
+            "tone": null,
+            "badge": null,
+            "bodyTypes": [
+              "items"
+            ],
+            "sourceIds": [
+              "patient",
+              "fda"
+            ]
+          }
+        ]
+      },
+      {
+        "number": "08",
+        "id": "product",
+        "title": "Product identification",
+        "summary": "Verify the product, strength, and original packaging.",
+        "takeaway": "Appearance and NDC are product-specific. A photograph alone cannot identify a medicine safely.",
+        "cards": [
+          {
+            "title": "Representative oral product · Tylenol Extra Strength",
+            "defaultOpen": true,
+            "tone": null,
+            "badge": null,
+            "bodyTypes": [
+              "paragraphs",
+              "facts",
+              "links"
+            ],
+            "sourceIds": [
+              "otc"
+            ]
+          },
+          {
+            "title": "Dosage forms and strengths",
+            "defaultOpen": false,
+            "tone": null,
+            "badge": null,
+            "bodyTypes": [
+              "facts"
+            ],
+            "sourceIds": [
+              "otc",
+              "er",
+              "child",
+              "iv",
+              "fda"
+            ]
+          },
+          {
+            "title": "Storage and handling",
+            "defaultOpen": false,
+            "tone": null,
+            "badge": null,
+            "bodyTypes": [
+              "paragraphs"
+            ],
+            "sourceIds": [
+              "otc",
+              "patient"
+            ]
+          }
+        ]
+      }
+    ],
+    "cardBodyRenderOrder": [
+      "Badge",
+      "Paragraphs",
+      "Horizontally scrollable accessible table",
+      "Bulleted items",
+      "Definition-list facts",
+      "External links",
+      "Numbered reference anchors"
+    ],
+    "references": {
+      "number": "09",
+      "order": [
+        "otc",
+        "er",
+        "child",
+        "iv",
+        "fda",
+        "patient",
+        "lactation",
+        "pregnancy",
+        "acog"
+      ],
+      "format": "Numbered subsection links target source-list anchors; ordered original source list provides publisher, external linked title and source note."
+    },
+    "layout": "Desktop1180px maximum shell; article plus242px sticky right contents rail,80px gap. At1050px rail205px/gap44px. At800px or below, single column; expandable two-column contents above article; clinical-focus/back-to-top rail elements hidden.",
+    "palette": {
+      "background": "#0c0d0e",
+      "text": "#eeeae2",
+      "gold": "#c4a575",
+      "muted": "#aaa9a4"
+    },
+    "interaction": "Native details cards; only explicitly open cards default expanded. Right rail updates active section at180px scroll threshold and shows each section’s clinical takeaway; reduced-motion removes rail transitions.",
+    "limits": "Code inspected; no new rendered-page QA performed by this independent safety reviewer."
+  }
+}

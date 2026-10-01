@@ -1,0 +1,1014 @@
+{
+  "drug": "celecoxib",
+  "status": "source_reviewed",
+  "checked": "2026-10-01",
+  "scope": "Current U.S. Viatris Celebrex capsule label; indication-specific adult/JRA dosing and current updated skin/pregnancy warnings.",
+  "blueprint": {
+    "sections": [
+      [
+        "indications",
+        "Indications"
+      ],
+      [
+        "dosage",
+        "Dosage and administration"
+      ],
+      [
+        "safety",
+        "Safety"
+      ],
+      [
+        "interactions",
+        "Drug interactions"
+      ],
+      [
+        "populations",
+        "Use in specific populations"
+      ],
+      [
+        "pharmacology",
+        "Clinical pharmacology"
+      ],
+      [
+        "practice",
+        "Monitoring and counseling"
+      ],
+      [
+        "product",
+        "Product identification"
+      ]
+    ],
+    "essential_safety": true,
+    "hero_facts": 3,
+    "APAP_modified": false
+  },
+  "sources": [
+    {
+      "id": "pi",
+      "title": "Celebrex capsules \u00b7 Current full prescribing information",
+      "publisher": "Viatris / DailyMed",
+      "note": "Clinical revision November 2024; SPL13 effective November 22, 2024. Updated serious skin reactions; current CV/GI boxed warning.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2d6675e4-5859-4be2-8037-a20ce9f707aa"
+    }
+  ],
+  "source_records": [
+    {
+      "id": "pi",
+      "local_snapshot": "/tmp/nas-drug-sources/celebrex.xml",
+      "label_revision": "11/2024",
+      "set_id": "2d6675e4-5859-4be2-8037-a20ce9f707aa",
+      "spl_version": "13",
+      "spl_effective_time": "20241122",
+      "dailymed_published_date": null,
+      "sha256": "1630a33fc30ba7316a79a8ce5bd8c95ffa7c23cfef2ef034bdfd474b23c0977a",
+      "review_method": "Relevant full public clinical sections read; dose, age, route, safety and product distinctions checked. No paywalled or unaccessed full guideline claimed."
+    }
+  ],
+  "assertion_map": [
+    {
+      "section": "indications",
+      "card": "Approved capsule uses",
+      "assertions": [
+        "Celebrex capsules are labeled for osteoarthritis, rheumatoid arthritis, juvenile rheumatoid arthritis (JRA) from age 2 years, ankylosing spondylitis, acute pain in adults and primary dysmenorrhea. The current capsule label does not list familial adenomatous polyposis or migraine as approved indications."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "1.1\u20131.6"
+        }
+      ]
+    },
+    {
+      "section": "indications",
+      "card": "Scope of symptom control",
+      "assertions": [
+        "The label describes relief of signs/symptoms and pain rather than a universal cure or disease-modifying arthritis regimen. This profile concerns oral capsules; any separately marketed celecoxib formulation requires its own indication and administration instructions."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "1; 3; 11"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Adult capsule regimens",
+      "assertions": [
+        "Individualize treatment and reassess ongoing need. These are the labeled indication-specific oral schedules."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "2.1\u20132.6"
+        }
+      ],
+      "table_assertions": {
+        "headers": [
+          "Indication",
+          "Labeled dose"
+        ],
+        "rows": [
+          [
+            "Osteoarthritis",
+            "200 mg once daily or 100 mg twice daily"
+          ],
+          [
+            "Rheumatoid arthritis",
+            "100\u2013200 mg twice daily"
+          ],
+          [
+            "Ankylosing spondylitis",
+            "200 mg/day once daily or divided twice daily; if no response after 6 weeks, a 400 mg/day trial may be considered. If no response after another 6 weeks at 400 mg/day, consider alternatives."
+          ],
+          [
+            "Acute pain / primary dysmenorrhea",
+            "First day: 400 mg initially, plus 200 mg if needed. Later days: 200 mg twice daily as needed."
+          ]
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "JRA from age 2 years",
+      "assertions": [
+        "The label provides weight categories below, not a generalized dose for any pediatric pain condition. Children <10 kg, age <2 or with active systemic features were not studied. Systemic-onset JRA requires coagulation vigilance."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "2.4; 5.15; 8.4"
+        }
+      ],
+      "table_assertions": {
+        "headers": [
+          "Weight",
+          "Oral capsule dose"
+        ],
+        "rows": [
+          [
+            "10\u201325 kg inclusive",
+            "50 mg twice daily"
+          ],
+          [
+            ">25 kg",
+            "100 mg twice daily"
+          ]
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Hepatic function and CYP2C9 phenotype",
+      "assertions": [
+        "Reduce the recommended daily dose by 50% in moderate hepatic impairment (Child-Pugh B); severe hepatic impairment is not recommended. Adults known/suspected to be CYP2C9 poor metabolizers should start at half the lowest recommended dose. For poor-metabolizer JRA patients, consider an alternative treatment. Do not simply halve an already high regimen or infer a combined-adjustment formula."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "2.7; 8.6; 8.8"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Administration and capsule contents",
+      "assertions": [
+        "Labeled regimens can be taken without regard to meal timing. For difficulty swallowing, empty the entire capsule contents onto one level teaspoon of cool or room-temperature applesauce and take immediately with water. The prepared mixture may be refrigerated at 2\u20138\u00b0C for up to 6 hours. Do not estimate partial capsule doses from sprinkled contents."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "2.1; 2.4; 12.3"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Renal and older-patient dose decisions",
+      "assertions": [
+        "Severe renal insufficiency is not recommended; advanced renal disease generally requires avoiding use unless expected benefit outweighs risk, with monitoring if used. Correct dehydration/hypovolemia first. Older adults should start at the low end when use is justified; those weighing <50 kg should begin at the lowest recommended dose. The label supplies no fixed eGFR dose-reduction table."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "5.6; 8.5; 8.7; 12.3"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "assertions": [
+        "Avoid use after a recent MI or in severe heart failure unless the expected benefit outweighs risk, with monitoring if prescribed. Monitor pressure, edema and renal function; hyperkalemia and renal injury may occur even without obvious warning symptoms. Bleeding/ulcer/perforation risk increases with prior ulcer/GI bleed, older age, alcohol, anticoagulants, antiplatelets, corticosteroids or serotonergic antidepressants.",
+        "Stop and evaluate suspected liver injury, anaphylaxis or rash/hypersensitivity. Serious skin reactions include SJS/TEN, DRESS, AGEP and fixed drug eruption, sometimes bullous; fever or lymphadenopathy may precede rash. Aspirin-sensitive asthma is contraindicated; monitor other asthma.",
+        "Monitor anemia or bleeding symptoms. Long-term therapy may warrant periodic CBC/chemistry testing. Anti-inflammatory action can mask fever/inflammation. Systemic-onset JRA requires monitoring for abnormal clotting/bleeding and DIC. Pregnancy restrictions start around 20 weeks and strengthen at about 30 weeks."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "5.1\u20135.15; 8.1"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "assertions": [
+        "Known celecoxib/component hypersensitivity, prior allergic-type reactions to sulfonamides, asthma/urticaria/other allergic reactions after aspirin or other NSAIDs, and use in the setting of CABG surgery are contraindicated. The label also excludes patients with previous serious skin reactions to NSAIDs. Check the nature of reported allergies rather than dismissing the product\u2019s specific sulfonamide warning."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "4; 5.7\u20135.9"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Boxed warning: cardiovascular and gastrointestinal events",
+      "assertions": [
+        "NSAIDs increase the risk of potentially fatal MI and stroke; risk can begin early and increase with duration. Celecoxib is contraindicated around CABG surgery. GI bleeding, ulceration or perforation can occur at any time without warning and can be fatal; older adults and patients with prior ulcer/GI bleed are especially vulnerable."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "Boxed warning; 5.1\u20135.2"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions",
+      "assertions": [
+        "Commonly reported effects include dyspepsia, abdominal pain, diarrhea, nausea, flatulence, dizziness, rash and peripheral edema. Serious events include GI bleeding, cardiovascular thrombosis, kidney injury, liver injury, blood-count abnormalities and severe allergy/skin reactions. Trial and postmarketing lists do not establish the same frequency or causality for every reported event."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "6.1\u20136.2"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Antithrombotics and serotonergic antidepressants",
+      "assertions": [
+        "Warfarin/other anticoagulants, aspirin/other antiplatelets, SSRIs and SNRIs increase bleeding risk; monitor for bleeding. Analgesic-dose aspirin and other NSAIDs/salicylates are not generally recommended together. Low-dose aspirin needs clinician review; celecoxib is not a substitute for its antiplatelet purpose. Corticosteroids also increase GI ulcer/bleeding risk."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "5.2; 5.12; 7"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Antihypertensives, diuretics and cyclosporine",
+      "assertions": [
+        "Celecoxib can blunt ACE inhibitor, ARB, beta-blocker and diuretic effects. ACE inhibitor/ARB combinations particularly raise renal risk with older age, renal impairment or volume depletion: monitor pressure, hydration and renal function at initiation and periodically. Diuretics require efficacy/renal surveillance; cyclosporine combinations can increase nephrotoxicity."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "7"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Lithium, digoxin and methotrexate",
+      "assertions": [
+        "Monitor for lithium toxicity and relevant levels when used together. Monitor serum digoxin because exposure/half-life may rise. Methotrexate toxicity monitoring remains necessary despite a lack of demonstrated celecoxib effect on methotrexate pharmacokinetics in the label."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "7; 12.3"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "CYP interactions",
+      "assertions": [
+        "CYP2C9 inhibitors such as fluconazole raise celecoxib exposure; inducers such as rifampin may reduce efficacy. Dose adjustment may be warranted. Celecoxib inhibits CYP2D6 and may raise exposure to substrates such as atomoxetine; assess those drugs\u2019 adverse effects and dosing."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "7; 12.3"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Pemetrexed oncology coordination",
+      "assertions": [
+        "Concomitant use can increase myelosuppression, renal and GI toxicity. The celecoxib label specifically calls for close monitoring with CrCl 45\u201379 mL/min and describes different hold windows for short- and long-half-life NSAIDs. Obtain a drug-specific oncology plan rather than applying an unspecified NSAID hold window to celecoxib independently."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "7"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy and fertility",
+      "assertions": [
+        "At about 20\u201330 weeks, use only when clinically necessary at the lowest effective dose for the shortest duration; consider amniotic-fluid ultrasound if treatment exceeds 48 hours and discontinue for oligohydramnios. Avoid at about 30 weeks and later because fetal ductal closure adds to renal/low-fluid risk. Earlier-pregnancy data are inconclusive. NSAIDs may reversibly delay ovulation; consider stopping when conception is difficult or infertility is being assessed."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "5.11; 8.1; 8.3"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Breastfeeding",
+      "assertions": [
+        "Small published reports found low milk levels, with limited infant-outcome evidence. The label advises caution and weighing maternal need against breastfeeding benefits and potential infant effects; low exposure does not prove safety for every infant."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "8.2"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Children and systemic JRA",
+      "assertions": [
+        "JRA use is approved from age 2 with the \u226510 kg dose schedule. Pediatric safety/effectiveness beyond 6 months and long-term cardiovascular risk are not established. Active systemic JRA features were not studied. Systemic-onset JRA needs abnormal coagulation/DIC monitoring; poor CYP2C9 metabolizers may need an alternative."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "2.4; 5.15; 8.4; 8.8"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Organ function and older adults",
+      "assertions": [
+        "Child-Pugh B requires a 50% daily-dose reduction; Child-Pugh C and severe renal insufficiency are not recommended. Older adults face greater cardiovascular, GI and renal risk and require cautious selection and monitoring. Lack of a routine age-based adjustment does not remove these risks."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "2.7; 5.6; 8.5\u20138.7; 12.3"
+        }
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism and platelet distinction",
+      "assertions": [
+        "Reduced prostaglandin production supports analgesic, anti-inflammatory and antipyretic effects. Celecoxib does not provide aspirin-like antiplatelet prophylaxis. Prostaglandin suppression also contributes to sodium/water retention and renal risk."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "12.1\u201312.2"
+        }
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Absorption and disposition",
+      "assertions": [
+        "Peak concentration occurs around 3 hours after oral dosing; effective half-life is about 11 hours and steady state is reached by about day 5. Protein binding is about 97%. CYP2C9 forms inactive metabolites, with elimination predominantly after hepatic metabolism through feces and urine; little unchanged drug is recovered."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "12.3"
+        }
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Exposure modifiers",
+      "assertions": [
+        "High-fat food delays the peak and modestly increases exposure; recommended regimens can generally be taken regardless of meals. Moderate hepatic impairment and CYP2C9 poor metabolism can substantially raise exposure. An applesauce mixture of full capsule contents has comparable overall systemic exposure to an intact capsule."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "2.1; 2.4; 2.7; 12.3; 12.5"
+        }
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Monitoring plan",
+      "assertions": [
+        "Check pressure at initiation and during treatment; assess edema/heart-failure symptoms and renal risk. Consider periodic CBC and chemistry testing for long-term use; investigate anemia, liver symptoms or renal decline. Monitor interacting drugs as appropriate. In systemic JRA, evaluate abnormal coagulation/bleeding."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "5.3\u20135.6; 5.12; 5.14\u20135.15; 7"
+        }
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Urgent counseling",
+      "assertions": [
+        "Seek emergency help for chest pain, stroke symptoms, breathing difficulty or face/throat swelling. Stop and seek assessment for black stools, vomiting blood, severe abdominal pain, jaundice or a rash/fever suggesting hypersensitivity. Report unexplained weight gain/edema or worsening dyspnea promptly. Read the Medication Guide with each prescription."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "17; Medication Guide"
+        }
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Medication reconciliation and overdose",
+      "assertions": [
+        "Avoid adding another NSAID or aspirin without advice; OTC cold/fever/insomnia products may contain NSAIDs. Suspected excess ingestion needs poison-service/emergency assessment. Treatment is supportive; there is no specific antidote and high protein binding makes dialysis unlikely to help. Do not attempt home vomiting or charcoal dosing."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "7; 10; 17"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Representative capsule identity",
+      "assertions": [
+        "Current Viatris Celebrex 200 mg capsule is white with a gold band, 7767 on the cap and 200 on the body; 100-count NDC 58151-084-01. The 100 mg capsule uses a blue band, 50 mg red and 400 mg green. Verify the actual package rather than identifying medicine by color alone."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "3; 16"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "assertions": [
+        "Reviewed Celebrex oral capsules contain 50, 100, 200 or 400 mg celecoxib. A capsule-content applesauce instruction is not authorization to create a partial-dose suspension. Other manufacturers and separately marketed formulations need their own labels."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "2.4; 3; 11; 16"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "assertions": [
+        "Store capsules at 20\u201325\u00b0C, with permitted excursions of 15\u201330\u00b0C. For the prescribed full-capsule applesauce mixture, use immediately with water or refrigerate at 2\u20138\u00b0C for no more than 6 hours. Keep medicines safely away from children."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "2.4; 16; Medication Guide"
+        }
+      ]
+    }
+  ],
+  "assertion_source_map": [
+    {
+      "section": "indications",
+      "card": "Approved capsule uses",
+      "assertions": [
+        "Celebrex capsules are labeled for osteoarthritis, rheumatoid arthritis, juvenile rheumatoid arthritis (JRA) from age 2 years, ankylosing spondylitis, acute pain in adults and primary dysmenorrhea. The current capsule label does not list familial adenomatous polyposis or migraine as approved indications."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "1.1\u20131.6"
+        }
+      ]
+    },
+    {
+      "section": "indications",
+      "card": "Scope of symptom control",
+      "assertions": [
+        "The label describes relief of signs/symptoms and pain rather than a universal cure or disease-modifying arthritis regimen. This profile concerns oral capsules; any separately marketed celecoxib formulation requires its own indication and administration instructions."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "1; 3; 11"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Adult capsule regimens",
+      "assertions": [
+        "Individualize treatment and reassess ongoing need. These are the labeled indication-specific oral schedules."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "2.1\u20132.6"
+        }
+      ],
+      "table_assertions": {
+        "headers": [
+          "Indication",
+          "Labeled dose"
+        ],
+        "rows": [
+          [
+            "Osteoarthritis",
+            "200 mg once daily or 100 mg twice daily"
+          ],
+          [
+            "Rheumatoid arthritis",
+            "100\u2013200 mg twice daily"
+          ],
+          [
+            "Ankylosing spondylitis",
+            "200 mg/day once daily or divided twice daily; if no response after 6 weeks, a 400 mg/day trial may be considered. If no response after another 6 weeks at 400 mg/day, consider alternatives."
+          ],
+          [
+            "Acute pain / primary dysmenorrhea",
+            "First day: 400 mg initially, plus 200 mg if needed. Later days: 200 mg twice daily as needed."
+          ]
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "JRA from age 2 years",
+      "assertions": [
+        "The label provides weight categories below, not a generalized dose for any pediatric pain condition. Children <10 kg, age <2 or with active systemic features were not studied. Systemic-onset JRA requires coagulation vigilance."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "2.4; 5.15; 8.4"
+        }
+      ],
+      "table_assertions": {
+        "headers": [
+          "Weight",
+          "Oral capsule dose"
+        ],
+        "rows": [
+          [
+            "10\u201325 kg inclusive",
+            "50 mg twice daily"
+          ],
+          [
+            ">25 kg",
+            "100 mg twice daily"
+          ]
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Hepatic function and CYP2C9 phenotype",
+      "assertions": [
+        "Reduce the recommended daily dose by 50% in moderate hepatic impairment (Child-Pugh B); severe hepatic impairment is not recommended. Adults known/suspected to be CYP2C9 poor metabolizers should start at half the lowest recommended dose. For poor-metabolizer JRA patients, consider an alternative treatment. Do not simply halve an already high regimen or infer a combined-adjustment formula."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "2.7; 8.6; 8.8"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Administration and capsule contents",
+      "assertions": [
+        "Labeled regimens can be taken without regard to meal timing. For difficulty swallowing, empty the entire capsule contents onto one level teaspoon of cool or room-temperature applesauce and take immediately with water. The prepared mixture may be refrigerated at 2\u20138\u00b0C for up to 6 hours. Do not estimate partial capsule doses from sprinkled contents."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "2.1; 2.4; 12.3"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Renal and older-patient dose decisions",
+      "assertions": [
+        "Severe renal insufficiency is not recommended; advanced renal disease generally requires avoiding use unless expected benefit outweighs risk, with monitoring if used. Correct dehydration/hypovolemia first. Older adults should start at the low end when use is justified; those weighing <50 kg should begin at the lowest recommended dose. The label supplies no fixed eGFR dose-reduction table."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "5.6; 8.5; 8.7; 12.3"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "assertions": [
+        "Avoid use after a recent MI or in severe heart failure unless the expected benefit outweighs risk, with monitoring if prescribed. Monitor pressure, edema and renal function; hyperkalemia and renal injury may occur even without obvious warning symptoms. Bleeding/ulcer/perforation risk increases with prior ulcer/GI bleed, older age, alcohol, anticoagulants, antiplatelets, corticosteroids or serotonergic antidepressants.",
+        "Stop and evaluate suspected liver injury, anaphylaxis or rash/hypersensitivity. Serious skin reactions include SJS/TEN, DRESS, AGEP and fixed drug eruption, sometimes bullous; fever or lymphadenopathy may precede rash. Aspirin-sensitive asthma is contraindicated; monitor other asthma.",
+        "Monitor anemia or bleeding symptoms. Long-term therapy may warrant periodic CBC/chemistry testing. Anti-inflammatory action can mask fever/inflammation. Systemic-onset JRA requires monitoring for abnormal clotting/bleeding and DIC. Pregnancy restrictions start around 20 weeks and strengthen at about 30 weeks."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "5.1\u20135.15; 8.1"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "assertions": [
+        "Known celecoxib/component hypersensitivity, prior allergic-type reactions to sulfonamides, asthma/urticaria/other allergic reactions after aspirin or other NSAIDs, and use in the setting of CABG surgery are contraindicated. The label also excludes patients with previous serious skin reactions to NSAIDs. Check the nature of reported allergies rather than dismissing the product\u2019s specific sulfonamide warning."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "4; 5.7\u20135.9"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Boxed warning: cardiovascular and gastrointestinal events",
+      "assertions": [
+        "NSAIDs increase the risk of potentially fatal MI and stroke; risk can begin early and increase with duration. Celecoxib is contraindicated around CABG surgery. GI bleeding, ulceration or perforation can occur at any time without warning and can be fatal; older adults and patients with prior ulcer/GI bleed are especially vulnerable."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "Boxed warning; 5.1\u20135.2"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions",
+      "assertions": [
+        "Commonly reported effects include dyspepsia, abdominal pain, diarrhea, nausea, flatulence, dizziness, rash and peripheral edema. Serious events include GI bleeding, cardiovascular thrombosis, kidney injury, liver injury, blood-count abnormalities and severe allergy/skin reactions. Trial and postmarketing lists do not establish the same frequency or causality for every reported event."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "6.1\u20136.2"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Antithrombotics and serotonergic antidepressants",
+      "assertions": [
+        "Warfarin/other anticoagulants, aspirin/other antiplatelets, SSRIs and SNRIs increase bleeding risk; monitor for bleeding. Analgesic-dose aspirin and other NSAIDs/salicylates are not generally recommended together. Low-dose aspirin needs clinician review; celecoxib is not a substitute for its antiplatelet purpose. Corticosteroids also increase GI ulcer/bleeding risk."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "5.2; 5.12; 7"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Antihypertensives, diuretics and cyclosporine",
+      "assertions": [
+        "Celecoxib can blunt ACE inhibitor, ARB, beta-blocker and diuretic effects. ACE inhibitor/ARB combinations particularly raise renal risk with older age, renal impairment or volume depletion: monitor pressure, hydration and renal function at initiation and periodically. Diuretics require efficacy/renal surveillance; cyclosporine combinations can increase nephrotoxicity."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "7"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Lithium, digoxin and methotrexate",
+      "assertions": [
+        "Monitor for lithium toxicity and relevant levels when used together. Monitor serum digoxin because exposure/half-life may rise. Methotrexate toxicity monitoring remains necessary despite a lack of demonstrated celecoxib effect on methotrexate pharmacokinetics in the label."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "7; 12.3"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "CYP interactions",
+      "assertions": [
+        "CYP2C9 inhibitors such as fluconazole raise celecoxib exposure; inducers such as rifampin may reduce efficacy. Dose adjustment may be warranted. Celecoxib inhibits CYP2D6 and may raise exposure to substrates such as atomoxetine; assess those drugs\u2019 adverse effects and dosing."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "7; 12.3"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Pemetrexed oncology coordination",
+      "assertions": [
+        "Concomitant use can increase myelosuppression, renal and GI toxicity. The celecoxib label specifically calls for close monitoring with CrCl 45\u201379 mL/min and describes different hold windows for short- and long-half-life NSAIDs. Obtain a drug-specific oncology plan rather than applying an unspecified NSAID hold window to celecoxib independently."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "7"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy and fertility",
+      "assertions": [
+        "At about 20\u201330 weeks, use only when clinically necessary at the lowest effective dose for the shortest duration; consider amniotic-fluid ultrasound if treatment exceeds 48 hours and discontinue for oligohydramnios. Avoid at about 30 weeks and later because fetal ductal closure adds to renal/low-fluid risk. Earlier-pregnancy data are inconclusive. NSAIDs may reversibly delay ovulation; consider stopping when conception is difficult or infertility is being assessed."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "5.11; 8.1; 8.3"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Breastfeeding",
+      "assertions": [
+        "Small published reports found low milk levels, with limited infant-outcome evidence. The label advises caution and weighing maternal need against breastfeeding benefits and potential infant effects; low exposure does not prove safety for every infant."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "8.2"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Children and systemic JRA",
+      "assertions": [
+        "JRA use is approved from age 2 with the \u226510 kg dose schedule. Pediatric safety/effectiveness beyond 6 months and long-term cardiovascular risk are not established. Active systemic JRA features were not studied. Systemic-onset JRA needs abnormal coagulation/DIC monitoring; poor CYP2C9 metabolizers may need an alternative."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "2.4; 5.15; 8.4; 8.8"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Organ function and older adults",
+      "assertions": [
+        "Child-Pugh B requires a 50% daily-dose reduction; Child-Pugh C and severe renal insufficiency are not recommended. Older adults face greater cardiovascular, GI and renal risk and require cautious selection and monitoring. Lack of a routine age-based adjustment does not remove these risks."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "2.7; 5.6; 8.5\u20138.7; 12.3"
+        }
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism and platelet distinction",
+      "assertions": [
+        "Reduced prostaglandin production supports analgesic, anti-inflammatory and antipyretic effects. Celecoxib does not provide aspirin-like antiplatelet prophylaxis. Prostaglandin suppression also contributes to sodium/water retention and renal risk."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "12.1\u201312.2"
+        }
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Absorption and disposition",
+      "assertions": [
+        "Peak concentration occurs around 3 hours after oral dosing; effective half-life is about 11 hours and steady state is reached by about day 5. Protein binding is about 97%. CYP2C9 forms inactive metabolites, with elimination predominantly after hepatic metabolism through feces and urine; little unchanged drug is recovered."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "12.3"
+        }
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Exposure modifiers",
+      "assertions": [
+        "High-fat food delays the peak and modestly increases exposure; recommended regimens can generally be taken regardless of meals. Moderate hepatic impairment and CYP2C9 poor metabolism can substantially raise exposure. An applesauce mixture of full capsule contents has comparable overall systemic exposure to an intact capsule."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "2.1; 2.4; 2.7; 12.3; 12.5"
+        }
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Monitoring plan",
+      "assertions": [
+        "Check pressure at initiation and during treatment; assess edema/heart-failure symptoms and renal risk. Consider periodic CBC and chemistry testing for long-term use; investigate anemia, liver symptoms or renal decline. Monitor interacting drugs as appropriate. In systemic JRA, evaluate abnormal coagulation/bleeding."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "5.3\u20135.6; 5.12; 5.14\u20135.15; 7"
+        }
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Urgent counseling",
+      "assertions": [
+        "Seek emergency help for chest pain, stroke symptoms, breathing difficulty or face/throat swelling. Stop and seek assessment for black stools, vomiting blood, severe abdominal pain, jaundice or a rash/fever suggesting hypersensitivity. Report unexplained weight gain/edema or worsening dyspnea promptly. Read the Medication Guide with each prescription."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "17; Medication Guide"
+        }
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Medication reconciliation and overdose",
+      "assertions": [
+        "Avoid adding another NSAID or aspirin without advice; OTC cold/fever/insomnia products may contain NSAIDs. Suspected excess ingestion needs poison-service/emergency assessment. Treatment is supportive; there is no specific antidote and high protein binding makes dialysis unlikely to help. Do not attempt home vomiting or charcoal dosing."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "7; 10; 17"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Representative capsule identity",
+      "assertions": [
+        "Current Viatris Celebrex 200 mg capsule is white with a gold band, 7767 on the cap and 200 on the body; 100-count NDC 58151-084-01. The 100 mg capsule uses a blue band, 50 mg red and 400 mg green. Verify the actual package rather than identifying medicine by color alone."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "3; 16"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "assertions": [
+        "Reviewed Celebrex oral capsules contain 50, 100, 200 or 400 mg celecoxib. A capsule-content applesauce instruction is not authorization to create a partial-dose suspension. Other manufacturers and separately marketed formulations need their own labels."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "2.4; 3; 11; 16"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "assertions": [
+        "Store capsules at 20\u201325\u00b0C, with permitted excursions of 15\u201330\u00b0C. For the prescribed full-capsule applesauce mixture, use immediately with water or refrigerate at 2\u20138\u00b0C for no more than 6 hours. Keep medicines safely away from children."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "2.4; 16; Medication Guide"
+        }
+      ]
+    }
+  ],
+  "hero_assertions": {
+    "essential": {
+      "title": "Serious cardiovascular and GI risk",
+      "text": "Use the lowest effective dose for the shortest appropriate duration. Potentially fatal thrombosis and GI bleeding can occur early or without warning; CABG use is contraindicated.",
+      "section": "safety",
+      "link": "Warnings and precautions"
+    },
+    "facts": [
+      [
+        "Class",
+        "COX-2-selective NSAID"
+      ],
+      [
+        "Reviewed route",
+        "Oral capsules"
+      ],
+      [
+        "Boxed warning",
+        "Cardiovascular / GI events"
+      ]
+    ],
+    "sources": [
+      "pi"
+    ]
+  },
+  "section_assertions": [
+    {
+      "section": "indications",
+      "summary": "Celecoxib capsules treat selected inflammatory and painful conditions.",
+      "takeaway": "Choose the indication-specific regimen and reassess risk and benefit.",
+      "sources": [
+        "pi"
+      ]
+    },
+    {
+      "section": "dosage",
+      "summary": "Use the lowest effective dose for the shortest appropriate duration.",
+      "takeaway": "Do not treat the largest regimen as a universal daily dose.",
+      "sources": [
+        "pi"
+      ]
+    },
+    {
+      "section": "safety",
+      "summary": "COX-2 selectivity does not eliminate serious cardiovascular, GI, renal or allergic risk.",
+      "takeaway": "Stop and seek urgent care for bleeding, stroke/heart symptoms or serious hypersensitivity.",
+      "sources": [
+        "pi"
+      ]
+    },
+    {
+      "section": "interactions",
+      "summary": "Review bleeding, kidney, cardiovascular and metabolic interactions before starting.",
+      "takeaway": "Avoid duplicate NSAIDs and reassess interacting-drug monitoring.",
+      "sources": [
+        "pi"
+      ]
+    },
+    {
+      "section": "populations",
+      "summary": "Pregnancy, childhood and organ impairment need explicit risk assessment.",
+      "takeaway": "Follow the indication-specific age and weight limits.",
+      "sources": [
+        "pi"
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "summary": "Celecoxib mainly inhibits COX-2-mediated prostaglandin synthesis.",
+      "takeaway": "COX-2 selectivity does not make it a cardiovascular-protection drug.",
+      "sources": [
+        "pi"
+      ]
+    },
+    {
+      "section": "practice",
+      "summary": "Review benefit, pressure, fluid status, bleeding and organ function during treatment.",
+      "takeaway": "Tell clinicians about all OTC pain/cold products and stop for warning symptoms.",
+      "sources": [
+        "pi"
+      ]
+    },
+    {
+      "section": "product",
+      "summary": "Identify the capsule strength and product label before applying a regimen.",
+      "takeaway": "Representative imprints and NDCs are not universal generic identifiers.",
+      "sources": [
+        "pi"
+      ]
+    }
+  ],
+  "limitations": [
+    "No migraine-solution regimen or historical polyp-prevention approval inferred from capsule ingredient/trial descriptions.",
+    "No rigid eGFR dosing table or independent oncology hold window invented.",
+    "DailyMed API publication date unavailable; valid official downloaded XML effective time recorded separately."
+  ],
+  "unresolved_source_questions": [],
+  "validation": {
+    "schema": "Passed actual validateMonograph on 2026-10-01; eight APAP sections, four safety cards, three product cards, three hero facts, citation and table shapes, full card/assertion-map coverage verified.",
+    "tests_build_lint": "Parent batch checks required",
+    "rendered_page": "Parent batch QA required",
+    "author_string_review": "Manually reviewed all published paragraphs/table cells, indication-specific doses, units, spacing, device restrictions and storage intervals.",
+    "hero_fact_shape": "Corrected to APAP renderer [term,value] tuple arrays; no clinical content changed."
+  },
+  "monograph_sha256": "ae91245f22b36015a8c34aa17691d8f8ef30377f2062da81ddbff21a731318e6"
+}

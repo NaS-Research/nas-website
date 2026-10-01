@@ -1,0 +1,500 @@
+{
+  "slug": "hydrochlorothiazide",
+  "checked": "2026-10-01",
+  "status": "source_reviewed",
+  "scope": "An oral diuretic and antihypertensive. A focused reference for the selected tablets and 12.5 mg capsules, with distinct label directions and fluid, electrolyte and skin-risk monitoring.",
+  "sources": [
+    {
+      "id": "tablet",
+      "title": "Hydrochlorothiazide · 12.5, 25 and 50 mg tablets",
+      "publisher": "DailyMed / GSMS; Leading Pharma",
+      "note": "Clinical text revision January 2026; DailyMed publication update July 6, 2026. Full tablet label, pediatric directions and package panels.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a85f69f5-ba97-478d-e053-2a95a90a0a97"
+    },
+    {
+      "id": "capsule",
+      "title": "Hydrochlorothiazide · 12.5 mg capsules",
+      "publisher": "DailyMed / Westminster; ScieGen",
+      "note": "Clinical text revision February 2026; DailyMed publication update March 17, 2026. Adult hypertension dosing and product-specific population limits.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0fc94bc2-fa38-439a-a609-1b4130cdacb1"
+    },
+    {
+      "id": "lactation",
+      "title": "Hydrochlorothiazide · Lactation",
+      "publisher": "LactMed / National Library of Medicine",
+      "note": "Revised September 15, 2025. Public monograph: dose-dependent milk-supply considerations and limited infant exposure evidence.",
+      "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK500965/"
+    },
+    {
+      "id": "sentinel",
+      "title": "Hydrochlorothiazide · Skin cancer labeling change",
+      "publisher": "FDA Sentinel Initiative",
+      "note": "August 20, 2020 regulatory evidence summary; observational association informing current labels.",
+      "url": "https://www.sentinelinitiative.org/news-events/fda-safety-communications-labeling-changes/fda-labeling-change-hydrochlorothiazide-and"
+    }
+  ],
+  "sourceEvidence": {
+    "tablet": {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a85f69f5-ba97-478d-e053-2a95a90a0a97",
+      "checked": "2026-10-01",
+      "revision": "Clinical text revision January 2026; DailyMed publication update July 6, 2026. Full tablet label, pediatric directions and package panels.",
+      "access": "Public full label/monograph, not paywalled",
+      "dateDistinction": "Clinical revision and DailyMed update date distinguished; API SPL version not obtained."
+    },
+    "capsule": {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0fc94bc2-fa38-439a-a609-1b4130cdacb1",
+      "checked": "2026-10-01",
+      "revision": "Clinical text revision February 2026; DailyMed publication update March 17, 2026. Adult hypertension dosing and product-specific population limits.",
+      "access": "Public full label/monograph, not paywalled",
+      "dateDistinction": "Clinical revision and DailyMed update date distinguished; API SPL version not obtained."
+    },
+    "lactation": {
+      "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK500965/",
+      "checked": "2026-10-01",
+      "revision": "Public monograph: dose-dependent milk-supply considerations and limited infant exposure evidence.",
+      "access": "Public full label/monograph, not paywalled",
+      "dateDistinction": "Clinical revision and DailyMed update date distinguished; API SPL version not obtained.",
+      "clinicalRevision": "2025-09-15"
+    },
+    "sentinel": {
+      "url": "https://www.sentinelinitiative.org/news-events/fda-safety-communications-labeling-changes/fda-labeling-change-hydrochlorothiazide-and",
+      "checked": "2026-10-01",
+      "revision": "August 20, 2020 regulatory evidence summary; observational association informing current labels.",
+      "access": "Public full label/monograph, not paywalled",
+      "dateDistinction": "Clinical revision and DailyMed update date distinguished; API SPL version not obtained."
+    }
+  },
+  "assertionMap": [
+    {
+      "section": "indications",
+      "card": "Labeled oral indications",
+      "sourceIds": [
+        "tablet",
+        "capsule"
+      ],
+      "sourceSections": [
+        "Indications and Usage"
+      ],
+      "claims": [
+        "The tablet label covers hypertension alone or with other antihypertensives, and adjunctive edema treatment associated with heart failure, cirrhosis, corticosteroid/estrogen therapy or renal disorders. The selected 12.5 mg capsule label is for hypertension."
+      ]
+    },
+    {
+      "section": "indications",
+      "card": "Pregnancy-related edema",
+      "sourceIds": [
+        "tablet"
+      ],
+      "sourceSections": [
+        "Indications and Usage"
+      ],
+      "claims": [
+        "Routine diuresis in a healthy pregnancy is inappropriate; hydrochlorothiazide does not prevent or treat preeclampsia. Physiologic dependent edema is generally managed without diuretics. Pathologic edema requires an individualized clinical assessment."
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Adult oral regimens",
+      "sourceIds": [
+        "tablet",
+        "capsule"
+      ],
+      "sourceSections": [
+        "Dosage and Administration",
+        "Warnings",
+        "Precautions/Pediatric/Elderly"
+      ],
+      "claims": [
+        [
+          "12.5 mg capsule · hypertension",
+          "Start one capsule once daily; doses above 50 mg/day are not recommended."
+        ],
+        [
+          "Tablet · hypertension",
+          "Start 25 mg daily; may increase to 50 mg daily in one or two doses. Above 50 mg increases potassium loss."
+        ],
+        [
+          "Tablet · edema",
+          "25–100 mg/day in one or divided doses. Selected patients may use alternate days or 3–5 days/week under clinician direction."
+        ]
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Pediatric tablet directions",
+      "sourceIds": [
+        "tablet",
+        "capsule"
+      ],
+      "sourceSections": [
+        "Dosage and Administration",
+        "Warnings",
+        "Precautions/Pediatric/Elderly"
+      ],
+      "claims": [
+        "Tablet label: 1–2 mg/kg/day in one or two doses; maximum 37.5 mg/day up to age 2 and 100 mg/day at ages 2–12. Infants under 6 months may require up to 3 mg/kg/day in two doses under specialist supervision. Pediatric evidence is empiric/published experience, without well-controlled trials. Capsule safety and effectiveness in children are not established."
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Hepatic and renal impairment",
+      "sourceIds": [
+        "tablet"
+      ],
+      "sourceSections": [
+        "Dosage and Administration",
+        "Warnings",
+        "Precautions/Pediatric/Elderly"
+      ],
+      "claims": [
+        "Anuria is contraindicated. Severe renal disease warrants caution because azotemia and accumulation can occur; consider withholding or stopping for progressive renal impairment. No fixed creatinine-clearance adjustment table is supplied by these labels. In hepatic impairment, even small fluid/electrolyte shifts can precipitate coma; individualize carefully."
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Formulation-specific administration",
+      "sourceIds": [
+        "tablet",
+        "capsule"
+      ],
+      "sourceSections": [
+        "Dosage and Administration",
+        "Warnings",
+        "Precautions/Pediatric/Elderly"
+      ],
+      "claims": [
+        "Use the prescribed tablet strength or 12.5 mg capsule. Combination antihypertensive products contain additional ingredients and have separate labels. Do not infer that capsule pediatric restrictions or tablet edema doses are interchangeable."
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "sourceIds": [
+        "tablet"
+      ],
+      "sourceSections": [
+        "Contraindications",
+        "Warnings",
+        "Precautions",
+        "Adverse Reactions",
+        "Overdosage"
+      ],
+      "claims": [
+        "Watch for dehydration, hyponatremia, hypokalemia, hypomagnesemia and hypochloremic alkalosis. Hypercalcemia, hyperglycemia and gout can occur. Use cautiously with renal or hepatic disease; lupus may worsen. Sudden visual loss or eye pain may indicate acute myopia/angle-closure glaucoma; discontinue rapidly and obtain urgent ophthalmic care."
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "sourceIds": [
+        "tablet",
+        "capsule"
+      ],
+      "sourceSections": [
+        "Contraindications",
+        "Warnings",
+        "Precautions",
+        "Adverse Reactions",
+        "Overdosage"
+      ],
+      "claims": [
+        "Anuria, or hypersensitivity to hydrochlorothiazide/product ingredients or other sulfonamide-derived drugs as stated in the selected labels. Evaluate the exact allergy history before treatment."
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Boxed warning status · Selected oral products",
+      "sourceIds": [
+        "tablet",
+        "capsule"
+      ],
+      "sourceSections": [
+        "Contraindications",
+        "Warnings",
+        "Precautions",
+        "Adverse Reactions",
+        "Overdosage"
+      ],
+      "claims": [
+        "Neither selected single-ingredient oral label carries a boxed warning. Serious electrolyte and ocular warnings still apply."
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions",
+      "sourceIds": [
+        "tablet",
+        "capsule",
+        "sentinel"
+      ],
+      "sourceSections": [
+        "Contraindications",
+        "Warnings",
+        "Precautions",
+        "Adverse Reactions",
+        "Overdosage"
+      ],
+      "claims": [
+        "Dizziness, orthostatic hypotension, GI symptoms, muscle cramps, photosensitivity and metabolic changes are reported; serious reactions include severe skin reactions, pancreatitis, blood dyscrasias and renal injury. Current labels associate cumulative exposure with non-melanoma skin cancer, especially squamous-cell cancer in White patients at high cumulative doses. Protect skin and arrange screening; individualize benefit–risk assessment rather than stopping routine therapy without a plan. Overdose causes dehydration and electrolyte depletion and requires urgent clinical assessment and supportive correction."
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Clinically relevant interactions",
+      "sourceIds": [
+        "tablet"
+      ],
+      "sourceSections": [
+        "Precautions/Drug interactions",
+        "General",
+        "Drug/Laboratory Test Interactions"
+      ],
+      "claims": [
+        "Lithium: generally avoid; renal clearance falls and toxicity risk rises.",
+        "Digoxin: hypokalemia can increase cardiac toxicity; assess electrolytes and clinical risk.",
+        "NSAIDs may blunt natriuresis, diuresis and BP lowering; monitor response.",
+        "Other antihypertensives, alcohol, opioids and barbiturates can increase hypotension.",
+        "Corticosteroids or ACTH increase electrolyte loss, especially potassium.",
+        "Insulin/oral diabetes medicines may need adjustment if glucose rises.",
+        "Cholestyramine/colestipol reduce absorption; coordinate administration with the pharmacist.",
+        "Nondepolarizing muscle relaxants may have enhanced effects; inform the perioperative team. Pressor response may decrease without precluding use.",
+        "Stop as directed before parathyroid-function testing because calcium handling is altered."
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy",
+      "sourceIds": [
+        "tablet"
+      ],
+      "sourceSections": [
+        "Pregnancy",
+        "Nursing Mothers",
+        "Pediatric Use",
+        "Elderly Use",
+        "LactMed full monograph"
+      ],
+      "claims": [
+        "Use only when clearly needed after clinical review. Thiazides cross the placenta; neonatal jaundice, thrombocytopenia and adult-type adverse effects are possible. Do not use routinely for normal pregnancy edema."
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Lactation",
+      "sourceIds": [
+        "tablet",
+        "capsule",
+        "lactation"
+      ],
+      "sourceSections": [
+        "Pregnancy",
+        "Nursing Mothers",
+        "Pediatric Use",
+        "Elderly Use",
+        "LactMed full monograph"
+      ],
+      "claims": [
+        "Labels advise a decision between nursing and treatment because the drug enters milk. LactMed considers doses up to 50 mg/day acceptable during breastfeeding; intense diuresis at larger doses may reduce milk production. Consider maternal need, dose, milk supply and infant health with the clinician."
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Pediatric and geriatric considerations",
+      "sourceIds": [
+        "tablet",
+        "capsule"
+      ],
+      "sourceSections": [
+        "Pregnancy",
+        "Nursing Mothers",
+        "Pediatric Use",
+        "Elderly Use",
+        "LactMed full monograph"
+      ],
+      "claims": [
+        "Tablet pediatric directions are based on experience rather than controlled trials; the capsule label states pediatric safety/effectiveness are unestablished. The capsule label recommends a 12.5 mg start in older adults, with 12.5 mg increments if needed, because BP reduction and adverse effects may be greater."
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism of action and pharmacodynamics",
+      "sourceIds": [
+        "tablet"
+      ],
+      "sourceSections": [
+        "Clinical Pharmacology",
+        "Pharmacokinetics and Metabolism"
+      ],
+      "claims": [
+        "Hydrochlorothiazide reduces renal sodium/chloride reabsorption, increasing water excretion with possible potassium and magnesium loss. Diuresis starts around 2 hours, peaks around 4 hours and lasts 6–12 hours. Its precise antihypertensive mechanism is not established."
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Pharmacokinetics",
+      "sourceIds": [
+        "tablet"
+      ],
+      "sourceSections": [
+        "Clinical Pharmacology",
+        "Pharmacokinetics and Metabolism"
+      ],
+      "claims": [
+        [
+          "Metabolism",
+          "Not metabolized."
+        ],
+        [
+          "Elimination",
+          "Predominantly renal; at least 61% of an oral dose eliminated unchanged within 24 hours in tablet-label data."
+        ],
+        [
+          "Half-life",
+          "5.6–14.8 hours in tablet-label studies; renal impairment prolongs elimination."
+        ],
+        [
+          "Distribution",
+          "Crosses the placenta and enters breast milk."
+        ]
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Monitoring parameters",
+      "sourceIds": [
+        "tablet"
+      ],
+      "sourceSections": [
+        "Warnings",
+        "Precautions/General",
+        "Information for Patients",
+        "Laboratory Tests"
+      ],
+      "claims": [
+        "Follow BP response, orthostatic symptoms, edema/weight and hydration.",
+        "Check electrolytes and renal function periodically; reassess promptly with vomiting, diarrhea, heavy diuresis or reduced intake.",
+        "Assess glucose with diabetes, uric acid/gout when clinically relevant, and calcium if elevated or parathyroid disease is suspected.",
+        "Arrange regular skin cancer screening and examine new or changing lesions."
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Patient counseling information",
+      "sourceIds": [
+        "tablet",
+        "capsule"
+      ],
+      "sourceSections": [
+        "Warnings",
+        "Precautions/General",
+        "Information for Patients",
+        "Laboratory Tests"
+      ],
+      "claims": [
+        "Take only the prescribed product and dose; consult before using NSAIDs or changing potassium intake/supplements.",
+        "Report weakness, cramps, confusion, fainting, markedly reduced urine or persistent vomiting.",
+        "Seek urgent care for new eye pain or sudden blurred vision.",
+        "Use sun protection and report new, persistent or changing skin lesions."
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Representative oral product · 25 mg tablet",
+      "sourceIds": [
+        "tablet"
+      ],
+      "sourceSections": [
+        "Description",
+        "How Supplied",
+        "Drug Label Information"
+      ],
+      "claims": [
+        [
+          "Label packager",
+          "Golden State Medical Supply; manufactured by Leading Pharma."
+        ],
+        [
+          "Appearance / imprint",
+          "Peach round bisected tablet; EP above score, 131 below."
+        ],
+        [
+          "Example NDC",
+          "51407-331-01 · 100 tablets."
+        ],
+        [
+          "U.S. status",
+          "Prescription; ANDA product."
+        ]
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "sourceIds": [
+        "tablet",
+        "capsule"
+      ],
+      "sourceSections": [
+        "Description",
+        "How Supplied",
+        "Drug Label Information"
+      ],
+      "claims": [
+        [
+          "Selected tablets",
+          "12.5, 25 and 50 mg."
+        ],
+        [
+          "Selected capsule",
+          "12.5 mg; light blue SG / 146; Westminster NDC 69367-219-01, 100 capsules."
+        ],
+        [
+          "Combination products",
+          "Separate ingredient, strength and safety checks required."
+        ]
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "sourceIds": [
+        "tablet",
+        "capsule"
+      ],
+      "sourceSections": [
+        "Description",
+        "How Supplied",
+        "Drug Label Information"
+      ],
+      "claims": [
+        "Selected tablets: 20–25°C in a well-closed child-resistant container. Capsules: 20–25°C in a tight light-resistant container, protected from moisture and freezing. Keep out of children’s reach."
+      ]
+    },
+    {
+      "section": "hero/essential",
+      "card": "Clinical scope and essential safety",
+      "sourceIds": [
+        "tablet",
+        "capsule"
+      ],
+      "sourceSections": [
+        "Indications",
+        "Warnings",
+        "Precautions"
+      ],
+      "claims": [
+        "An oral diuretic and antihypertensive. A focused reference for the selected tablets and 12.5 mg capsules, with distinct label directions and fluid, electrolyte and skin-risk monitoring.",
+        "Severe weakness, confusion, fainting or reduced urine needs prompt assessment. New eye pain or sudden blurred vision requires urgent care and rapid discontinuation for suspected drug-induced angle closure."
+      ]
+    }
+  ],
+  "exclusions": [
+    "Combination antihypertensives; no dosing extrapolation across selected tablet/capsule labels"
+  ],
+  "gaps": [],
+  "validation": {
+    "schema": "Passed validateMonograph with zero errors, 2026-10-01.",
+    "renderedPage": "Pending parent integration QA"
+  },
+  "monographSha256": "df32d3f95d3809cac7bdccc893cda4516e27adebb46440ca10553849f41ed43d"
+}

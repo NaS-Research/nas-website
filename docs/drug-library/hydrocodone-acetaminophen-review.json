@@ -1,0 +1,851 @@
+{
+  "drug": "hydrocodone-acetaminophen",
+  "status": "source_reviewed",
+  "checked": "2026-10-01",
+  "scope": "U.S. immediate-release hydrocodone bitartrate/APAP tablets containing 325 mg APAP: Strides current 01/2026PI preserved in July 2026ProficientRxSPL; representative 5/325package. No pediatric/ER/liquid extrapolation.",
+  "blueprint": {
+    "sections": [
+      [
+        "indications",
+        "Indications"
+      ],
+      [
+        "dosage",
+        "Dosage and administration"
+      ],
+      [
+        "safety",
+        "Safety"
+      ],
+      [
+        "interactions",
+        "Drug interactions"
+      ],
+      [
+        "populations",
+        "Use in specific populations"
+      ],
+      [
+        "pharmacology",
+        "Clinical pharmacology"
+      ],
+      [
+        "practice",
+        "Monitoring and counseling"
+      ],
+      [
+        "product",
+        "Product identification"
+      ]
+    ],
+    "essential_safety": true,
+    "hero_facts": 3,
+    "APAP_modified": false
+  },
+  "source_records": [
+    {
+      "id": "label",
+      "local_snapshot": "/tmp/nas-drug-sources/hydrocodone-combo-july.xml",
+      "sha256": "acfb51ecd5826a1e0c86172775875ac3af3c9d37e851feb7cfb14f357ce550fb",
+      "label_revision": "January 2026",
+      "review_method": "Full relevant clinical SPL sections read; dosing/product table text checked against the source; current manufacturer PDF concordance checked for tirzepatide.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d36f86e2-fe0f-4b74-a5bf-b23082d72da2",
+      "set_id": "d36f86e2-fe0f-4b74-a5bf-b23082d72da2",
+      "spl_version": "1",
+      "spl_effective_time": "20260701",
+      "metadata_note": "Repackaging effective date July 2026 differs from clinical PI revision January 2026; all substantive clinical sections including MedicationGuide read."
+    }
+  ],
+  "assertion_source_map": [
+    {
+      "card": "Approved use and limits",
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Indications and Usage; Clinical Pharmacology"
+        }
+      ],
+      "assertions": [
+        "The reviewed tablets treat pain severe enough to require an opioid when alternative treatments are ineffective, intolerable or insufficient. Risks of addiction and overdose exist at any dose or duration. This is a pain indication, not a cough indication despite hydrocodone\u2019s pharmacologic antitussive activity."
+      ],
+      "section": "indications"
+    },
+    {
+      "card": "Treatment approach",
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Dosage and Administration; Warnings"
+        }
+      ],
+      "assertions": [
+        "Individualize treatment using prior analgesic exposure, pain severity and patient risk. Use the lowest effective dose for the shortest appropriate period; many acute pain conditions need only a few days. Repeated prescribing requires reassessment of benefit, function, adverse effects and misuse risk."
+      ],
+      "section": "indications"
+    },
+    {
+      "card": "Adult oral tablet dosing",
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Dosage and Administration / Initial Dosage"
+        }
+      ],
+      "assertions": [
+        "Use only the prescribed strength and dose. The reviewed immediate-release label gives the following as-needed starting ranges; choose the lowest dose achieving adequate analgesia and titrate individually. These are daily ceilings, not targets."
+      ],
+      "table_assertions": {
+        "headers": [
+          "Hydrocodone / APAP per tablet",
+          "Labeled starting range",
+          "Maximum tablets per day"
+        ],
+        "rows": [
+          [
+            "5 mg / 325 mg",
+            "1\u20132 tablets every 4\u20136 hours as needed",
+            "8"
+          ],
+          [
+            "7.5 mg / 325 mg",
+            "1 tablet every 4\u20136 hours as needed",
+            "6"
+          ],
+          [
+            "10 mg / 325 mg",
+            "1 tablet every 4\u20136 hours as needed",
+            "6"
+          ]
+        ]
+      },
+      "section": "dosage"
+    },
+    {
+      "card": "Total acetaminophen exposure",
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Dosage and Administration; Warnings / Hepatotoxicity; Precautions / Maximum Daily Dose of Acetaminophen"
+        }
+      ],
+      "assertions": [
+        "The 8-tablet 5/325 maximum contains 2,600 mg APAP; either 6-tablet higher-strength maximum contains 1,950 mg. Count every prescription and OTC APAP source, and do not take multiple APAP products without clinician review. The label\u2019s 4,000 mg/day total APAP limit never overrides a lower prescribed or combination-tablet maximum. Liver disease or alcohol exposure increases concern and may require a different plan."
+      ],
+      "section": "dosage"
+    },
+    {
+      "card": "Administration, missed doses and conversions",
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Dosage and Administration / Conversion; Medication Guide"
+        }
+      ],
+      "assertions": [
+        "Take orally exactly as prescribed; do not double a missed dose. The reviewed label does not establish a food-effect dosing rule. Opioid conversion must be conservative because potency varies between patients; relative bioavailability versus extended-release hydrocodone is not established. Do not substitute ER hydrocodone or a liquid preparation using this tablet schedule."
+      ],
+      "section": "dosage"
+    },
+    {
+      "card": "Titration and discontinuation",
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Dosage and Administration / Titration; Safe Reduction or Discontinuation; Warnings / Hyperalgesia"
+        }
+      ],
+      "assertions": [
+        "Reevaluate worsening pain before increasing the dose; opioid-induced hyperalgesia can worsen pain with escalation. A physically dependent patient needs an agreed, individualized taper with continued pain and mental-health support, not abrupt discontinuation. The label gives 10\u201325% or smaller total-daily-dose reductions every 2\u20134 weeks as an example, with slower changes or pauses when needed; this is not a universal schedule."
+      ],
+      "section": "dosage"
+    },
+    {
+      "card": "Warnings and precautions",
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Warnings; Precautions"
+        }
+      ],
+      "assertions": [
+        "Monitor sedation and breathing especially at initiation, dose increases, opioid conversion or interaction changes. Pulmonary disease, frailty, sleep-related breathing disorders and concomitant depressants increase risk. Discuss access to naloxone or another appropriate reversal product; one accidental dose can be fatal to a child.",
+        "Reassess addiction, misuse and diversion throughout treatment. Watch for hypotension, adrenal insufficiency, seizures, biliary problems and esophageal dysfunction. Avoid use in circulatory shock, coma or impaired consciousness. New pain or sensitivity with dose increases warrants evaluation for hyperalgesia.",
+        "APAP can cause serious hepatic injury, particularly with excess total exposure, alcohol or underlying liver disease. Stop and urgently evaluate severe rash, blistering or allergic symptoms. Avoid abrupt opioid withdrawal in dependent patients."
+      ],
+      "section": "safety"
+    },
+    {
+      "card": "Contraindications",
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Contraindications"
+        }
+      ],
+      "assertions": [
+        "Significant respiratory depression; acute or severe bronchial asthma without monitoring or resuscitation capability; known or suspected GI obstruction including paralytic ileus; and hypersensitivity to hydrocodone or acetaminophen are contraindications."
+      ],
+      "section": "safety"
+    },
+    {
+      "card": "Boxed warning: opioid and combination risks",
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Boxed Warning"
+        }
+      ],
+      "assertions": [
+        "The boxed warning covers addiction/abuse/misuse; life-threatening respiratory depression; accidental ingestion; benzodiazepine or other CNS-depressant combinations; neonatal opioid withdrawal with prolonged pregnancy exposure; opioid REMS education; potentially fatal CYP3A4 interactions; and acetaminophen hepatotoxicity. The APAP component does not mitigate opioid overdose risk."
+      ],
+      "section": "safety"
+    },
+    {
+      "card": "Adverse reactions",
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Adverse Reactions; Warnings"
+        }
+      ],
+      "assertions": [
+        "Frequently reported effects include light-headedness, dizziness, sedation, nausea and vomiting; constipation and urinary retention also occur. Serious reports include respiratory depression, severe skin or allergic reactions, serotonin syndrome, adrenal insufficiency, androgen deficiency, hyperalgesia, hypoglycemia and esophageal dysfunction. Spontaneous reports do not establish a precise frequency."
+      ],
+      "section": "safety"
+    },
+    {
+      "card": "CYP3A4 and CYP2D6 interactions",
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Drug Interactions / Inhibitors and Inducers"
+        }
+      ],
+      "assertions": [
+        "Adding a CYP3A4 inhibitor such as a macrolide, azole or ritonavir, or stopping an inducer such as rifampin, carbamazepine or phenytoin, can raise hydrocodone exposure and cause respiratory depression. Consider dose reduction and frequent assessment. Adding an inducer or stopping an inhibitor can reduce effect or cause withdrawal; reassess rather than letting the patient self-escalate. Combined CYP3A4/2D6 inhibition may further increase effects."
+      ],
+      "section": "interactions"
+    },
+    {
+      "card": "Sedatives, alcohol and muscle relaxants",
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Drug Interactions / CNS Depressants; Muscle Relaxants; Medication Guide"
+        }
+      ],
+      "assertions": [
+        "Benzodiazepines, gabapentinoids, other opioids, sedative-hypnotics and alcohol can produce additive sedation, coma and fatal respiratory depression. Reserve necessary combinations for inadequate alternatives, minimize dose/duration and arrange monitoring and reversal access. Muscle relaxants can further suppress respiration. Avoid alcohol."
+      ],
+      "section": "interactions"
+    },
+    {
+      "card": "Serotonergic drugs and MAO inhibitors",
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Drug Interactions / Serotonergic Drugs; MAOIs"
+        }
+      ],
+      "assertions": [
+        "Serotonergic combinations can cause serotonin syndrome; monitor especially when starting or increasing doses and stop the combination opioid if suspected. Use with MAO inhibitors or within 14 days of stopping one is not recommended. Urgent exceptions require specialist titration and close cardiopulmonary monitoring, not routine outpatient substitution."
+      ],
+      "section": "interactions"
+    },
+    {
+      "card": "Other interaction actions",
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Drug Interactions / Mixed Agonists; Anticholinergics; Diuretics; Laboratory Tests"
+        }
+      ],
+      "assertions": [
+        "Mixed agonist/antagonist or partial agonist opioids can reduce analgesia or precipitate withdrawal; any transition needs a planned clinical approach. Anticholinergics increase urinary retention and severe constipation/ileus risk. Opioids may reduce diuretic effect; monitor fluid response and blood pressure. APAP can interfere with urinary 5-HIAA testing."
+      ],
+      "section": "interactions"
+    },
+    {
+      "card": "Kidney and liver impairment",
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Drug Interactions / Renal and Hepatic Impairment; Precautions / Laboratory Tests; Warnings / Hepatotoxicity"
+        }
+      ],
+      "assertions": [
+        "Renal or hepatic impairment may raise hydrocodone concentrations. Start low and closely follow sedation and respiratory effects; the label does not provide numerical eGFR or Child-Pugh adjustment tables. Serial renal/liver tests are advised for severe disease. Liver risk from APAP must also be considered when choosing the combination."
+      ],
+      "section": "populations"
+    },
+    {
+      "card": "Children and older adults",
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Drug Interactions / Pediatric and Geriatric Use; Warnings"
+        }
+      ],
+      "assertions": [
+        "Safety and effectiveness of these tablets in pediatric patients are not established; do not copy pediatric APAP doses into the combination. Older adults should generally start at the low end and undergo slow titration with frequent breathing/CNS assessment and renal review. Frail or pulmonary-compromised patients may need a nonopioid alternative."
+      ],
+      "section": "populations"
+    },
+    {
+      "card": "Pregnancy and delivery",
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Drug Interactions / Pregnancy; Labor or Delivery; Boxed Warning"
+        }
+      ],
+      "assertions": [
+        "Human controlled data are insufficient; use only if potential benefit justifies fetal risk. Prolonged exposure can produce neonatal withdrawal requiring expert treatment. Placental transfer may cause neonatal respiratory depression; the combination is not recommended during or immediately before labor when other analgesic techniques are preferable."
+      ],
+      "section": "populations"
+    },
+    {
+      "card": "Breastfeeding and fertility",
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Drug Interactions / Nursing Mothers; Infertility; Precautions / Lactation"
+        }
+      ],
+      "assertions": [
+        "Hydrocodone enters milk. Balance maternal need and breastfeeding benefits with infant risk; watch for unusual sleepiness, breathing difficulty or limpness and seek immediate care. Infant withdrawal can follow stopping maternal opioids or breastfeeding. The reviewed label does not establish breastfeeding safety or a universal safe dose. Extended opioid use may impair fertility, with reversibility uncertain."
+      ],
+      "section": "populations"
+    },
+    {
+      "card": "Mechanism and clinical effects",
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Clinical Pharmacology / Mechanism; Pharmacodynamics"
+        }
+      ],
+      "assertions": [
+        "Hydrocodone is a full opioid agonist with relative mu-receptor selectivity. It reduces pain perception but also suppresses brainstem respiratory responses, decreases gut motility and can lower blood pressure. APAP\u2019s analgesic mechanism is incompletely established and thought to involve central actions; it does not prevent opioid sedation or dependence."
+      ],
+      "section": "pharmacology"
+    },
+    {
+      "card": "Disposition",
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Clinical Pharmacology / Pharmacokinetics"
+        }
+      ],
+      "assertions": [
+        "In a small labeled oral study, hydrocodone peaked around 1.3 hours with a half-life around 3.8 hours. CYP3A4 forms norhydrocodone; CYP2D6 forms hydromorphone. Hydrocodone/metabolites are mainly renally eliminated. APAP undergoes hepatic conjugation and a smaller oxidative pathway producing a reactive intermediate normally detoxified by glutathione; metabolites are excreted renally. APAP\u2019s half-life is about 1.25\u20133 hours and may lengthen with liver damage or overdose."
+      ],
+      "section": "pharmacology"
+    },
+    {
+      "card": "Monitoring and counseling",
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Warnings; Precautions / Information for Patients; Dosage and Administration"
+        }
+      ],
+      "assertions": [
+        "Review pain/function benefit, sedation, respiratory rate, constipation, blood pressure, organ function, other drugs and misuse risk. Discuss dependence versus addiction and a planned stop/taper. Avoid driving until the individual response is known; do not share medication, self-increase doses or add alcohol/APAP products. Read the Medication Guide with each dispensing and plan bowel care."
+      ],
+      "section": "practice"
+    },
+    {
+      "card": "Overdose response",
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Overdosage; Warnings / Hepatotoxicity; Medication Guide"
+        }
+      ],
+      "assertions": [
+        "Call emergency services for slow breathing, severe sleepiness or inability to wake; give the available reversal agent according to its own instructions and continue emergency care because recurrence is possible. Opioid reversal does not treat APAP poisoning. Suspected excess APAP needs urgent poison-center/emergency assessment even when the person feels well; clinicians assess timing, APAP levels and need for N-acetylcysteine. Do not wait for jaundice or other delayed liver signs."
+      ],
+      "section": "practice"
+    },
+    {
+      "card": "Secure use and disposal",
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Precautions / Storage and Disposal; Reversal Agent Access; Medication Guide"
+        }
+      ],
+      "assertions": [
+        "Keep locked or otherwise secure from children, visitors and diversion. Prefer a drug take-back option; the reviewed Medication Guide directs prompt flushing of unwanted tablets when take-back is not readily available. Make sure household members know where the reversal medicine is and how to obtain emergency help."
+      ],
+      "section": "practice"
+    },
+    {
+      "card": "Representative product",
+      "sources": [
+        {
+          "id": "label",
+          "sections": "How Supplied; SPL Product/Package Record"
+        }
+      ],
+      "assertions": [
+        "Reviewed Strides 5 mg/325 mg tablets are white and capsule-shaped, marked P on one side and 36 04 on the other. The Proficient Rx bottle of 12 has NDC 82804-306-12 and source NDC 64380-440. Other manufacturers or strengths can look different."
+      ],
+      "section": "product"
+    },
+    {
+      "card": "Dosage forms and strengths",
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Description; Dosage and Administration; How Supplied"
+        }
+      ],
+      "assertions": [
+        "The reviewed oral immediate-release tablet label describes hydrocodone bitartrate/APAP 5/325, 7.5/325 and 10/325 mg. The representative repackaging is only 5/325. Liquid, extended-release and other combination products require their own labels; do not infer dose equivalence from this page."
+      ],
+      "section": "product"
+    },
+    {
+      "card": "Storage and handling",
+      "sources": [
+        {
+          "id": "label",
+          "sections": "How Supplied; Precautions / Storage and Disposal"
+        }
+      ],
+      "assertions": [
+        "Store the reviewed tablets at 20\u201325\u00b0C in a tight, light-resistant container with a child-resistant closure. Keep securely out of sight and reach of children; child-resistant packaging alone does not prevent accidental ingestion. Follow the actual package\u2019s instructions."
+      ],
+      "section": "product"
+    }
+  ],
+  "unresolved_material_errors": [],
+  "limitations": [
+    "No numerical organ-adjustment or pediatric tablet regimen is established by reviewed label; these gaps are explicit.",
+    "LactMed page required a browser verification challenge and was not used; lactation statements rely on full current product label, not a claim of LactMed access.",
+    "Source is current Strides labeling carried by a repackager, not a review of every manufacturer\u2019s package or formulation.",
+    "No food-effect dosing rule or safe breastfeeding dose is inferred."
+  ],
+  "validation": {
+    "schema": "Passed validateMonograph on 2026-10-01",
+    "rendered_page": "parent batch QA required",
+    "tests_build_lint": "parent batch checks required",
+    "assertion_mapping": "Each rendered card matches one assertion_map entry; table assertions, citations and hero content included.",
+    "scoped_diff_check": "git diff --check scoped to own files passed",
+    "assertion_map": "All card paragraphs and tables match current profile",
+    "source_hashes": "All local source snapshots match recorded SHA-256 hashes",
+    "formatting": "All rendered clinical strings manually reviewed; dose and unit spacing checked",
+    "scoped_whitespace": "Passed scoped git diff --check and explicit untracked-file trailing-whitespace check"
+  },
+  "sources": [
+    {
+      "id": "label",
+      "title": "Hydrocodone bitartrate and acetaminophen tablets \u00b7 Prescribing information",
+      "publisher": "Strides Pharma / DailyMed",
+      "note": "PI revised January 2026; Proficient Rx repackaging SPL effective July 1, 2026. Includes 5/325, 7.5/325 and 10/325 dosing; package example is 5/325.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d36f86e2-fe0f-4b74-a5bf-b23082d72da2",
+      "local_snapshot": "/tmp/nas-drug-sources/hydrocodone-combo-july.xml",
+      "sha256": "acfb51ecd5826a1e0c86172775875ac3af3c9d37e851feb7cfb14f357ce550fb",
+      "label_revision": "January 2026",
+      "review_method": "Full relevant clinical SPL sections read; dosing/product table text checked against the source; current manufacturer PDF concordance checked for tirzepatide.",
+      "set_id": "d36f86e2-fe0f-4b74-a5bf-b23082d72da2",
+      "spl_version": "1",
+      "spl_effective_time": "20260701",
+      "metadata_note": "Repackaging effective date July 2026 differs from clinical PI revision January 2026; all substantive clinical sections including MedicationGuide read."
+    }
+  ],
+  "assertion_map": [
+    {
+      "card": "Approved use and limits",
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Indications and Usage; Clinical Pharmacology"
+        }
+      ],
+      "assertions": [
+        "The reviewed tablets treat pain severe enough to require an opioid when alternative treatments are ineffective, intolerable or insufficient. Risks of addiction and overdose exist at any dose or duration. This is a pain indication, not a cough indication despite hydrocodone\u2019s pharmacologic antitussive activity."
+      ],
+      "section": "indications"
+    },
+    {
+      "card": "Treatment approach",
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Dosage and Administration; Warnings"
+        }
+      ],
+      "assertions": [
+        "Individualize treatment using prior analgesic exposure, pain severity and patient risk. Use the lowest effective dose for the shortest appropriate period; many acute pain conditions need only a few days. Repeated prescribing requires reassessment of benefit, function, adverse effects and misuse risk."
+      ],
+      "section": "indications"
+    },
+    {
+      "card": "Adult oral tablet dosing",
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Dosage and Administration / Initial Dosage"
+        }
+      ],
+      "assertions": [
+        "Use only the prescribed strength and dose. The reviewed immediate-release label gives the following as-needed starting ranges; choose the lowest dose achieving adequate analgesia and titrate individually. These are daily ceilings, not targets."
+      ],
+      "table_assertions": {
+        "headers": [
+          "Hydrocodone / APAP per tablet",
+          "Labeled starting range",
+          "Maximum tablets per day"
+        ],
+        "rows": [
+          [
+            "5 mg / 325 mg",
+            "1\u20132 tablets every 4\u20136 hours as needed",
+            "8"
+          ],
+          [
+            "7.5 mg / 325 mg",
+            "1 tablet every 4\u20136 hours as needed",
+            "6"
+          ],
+          [
+            "10 mg / 325 mg",
+            "1 tablet every 4\u20136 hours as needed",
+            "6"
+          ]
+        ]
+      },
+      "section": "dosage"
+    },
+    {
+      "card": "Total acetaminophen exposure",
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Dosage and Administration; Warnings / Hepatotoxicity; Precautions / Maximum Daily Dose of Acetaminophen"
+        }
+      ],
+      "assertions": [
+        "The 8-tablet 5/325 maximum contains 2,600 mg APAP; either 6-tablet higher-strength maximum contains 1,950 mg. Count every prescription and OTC APAP source, and do not take multiple APAP products without clinician review. The label\u2019s 4,000 mg/day total APAP limit never overrides a lower prescribed or combination-tablet maximum. Liver disease or alcohol exposure increases concern and may require a different plan."
+      ],
+      "section": "dosage"
+    },
+    {
+      "card": "Administration, missed doses and conversions",
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Dosage and Administration / Conversion; Medication Guide"
+        }
+      ],
+      "assertions": [
+        "Take orally exactly as prescribed; do not double a missed dose. The reviewed label does not establish a food-effect dosing rule. Opioid conversion must be conservative because potency varies between patients; relative bioavailability versus extended-release hydrocodone is not established. Do not substitute ER hydrocodone or a liquid preparation using this tablet schedule."
+      ],
+      "section": "dosage"
+    },
+    {
+      "card": "Titration and discontinuation",
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Dosage and Administration / Titration; Safe Reduction or Discontinuation; Warnings / Hyperalgesia"
+        }
+      ],
+      "assertions": [
+        "Reevaluate worsening pain before increasing the dose; opioid-induced hyperalgesia can worsen pain with escalation. A physically dependent patient needs an agreed, individualized taper with continued pain and mental-health support, not abrupt discontinuation. The label gives 10\u201325% or smaller total-daily-dose reductions every 2\u20134 weeks as an example, with slower changes or pauses when needed; this is not a universal schedule."
+      ],
+      "section": "dosage"
+    },
+    {
+      "card": "Warnings and precautions",
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Warnings; Precautions"
+        }
+      ],
+      "assertions": [
+        "Monitor sedation and breathing especially at initiation, dose increases, opioid conversion or interaction changes. Pulmonary disease, frailty, sleep-related breathing disorders and concomitant depressants increase risk. Discuss access to naloxone or another appropriate reversal product; one accidental dose can be fatal to a child.",
+        "Reassess addiction, misuse and diversion throughout treatment. Watch for hypotension, adrenal insufficiency, seizures, biliary problems and esophageal dysfunction. Avoid use in circulatory shock, coma or impaired consciousness. New pain or sensitivity with dose increases warrants evaluation for hyperalgesia.",
+        "APAP can cause serious hepatic injury, particularly with excess total exposure, alcohol or underlying liver disease. Stop and urgently evaluate severe rash, blistering or allergic symptoms. Avoid abrupt opioid withdrawal in dependent patients."
+      ],
+      "section": "safety"
+    },
+    {
+      "card": "Contraindications",
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Contraindications"
+        }
+      ],
+      "assertions": [
+        "Significant respiratory depression; acute or severe bronchial asthma without monitoring or resuscitation capability; known or suspected GI obstruction including paralytic ileus; and hypersensitivity to hydrocodone or acetaminophen are contraindications."
+      ],
+      "section": "safety"
+    },
+    {
+      "card": "Boxed warning: opioid and combination risks",
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Boxed Warning"
+        }
+      ],
+      "assertions": [
+        "The boxed warning covers addiction/abuse/misuse; life-threatening respiratory depression; accidental ingestion; benzodiazepine or other CNS-depressant combinations; neonatal opioid withdrawal with prolonged pregnancy exposure; opioid REMS education; potentially fatal CYP3A4 interactions; and acetaminophen hepatotoxicity. The APAP component does not mitigate opioid overdose risk."
+      ],
+      "section": "safety"
+    },
+    {
+      "card": "Adverse reactions",
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Adverse Reactions; Warnings"
+        }
+      ],
+      "assertions": [
+        "Frequently reported effects include light-headedness, dizziness, sedation, nausea and vomiting; constipation and urinary retention also occur. Serious reports include respiratory depression, severe skin or allergic reactions, serotonin syndrome, adrenal insufficiency, androgen deficiency, hyperalgesia, hypoglycemia and esophageal dysfunction. Spontaneous reports do not establish a precise frequency."
+      ],
+      "section": "safety"
+    },
+    {
+      "card": "CYP3A4 and CYP2D6 interactions",
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Drug Interactions / Inhibitors and Inducers"
+        }
+      ],
+      "assertions": [
+        "Adding a CYP3A4 inhibitor such as a macrolide, azole or ritonavir, or stopping an inducer such as rifampin, carbamazepine or phenytoin, can raise hydrocodone exposure and cause respiratory depression. Consider dose reduction and frequent assessment. Adding an inducer or stopping an inhibitor can reduce effect or cause withdrawal; reassess rather than letting the patient self-escalate. Combined CYP3A4/2D6 inhibition may further increase effects."
+      ],
+      "section": "interactions"
+    },
+    {
+      "card": "Sedatives, alcohol and muscle relaxants",
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Drug Interactions / CNS Depressants; Muscle Relaxants; Medication Guide"
+        }
+      ],
+      "assertions": [
+        "Benzodiazepines, gabapentinoids, other opioids, sedative-hypnotics and alcohol can produce additive sedation, coma and fatal respiratory depression. Reserve necessary combinations for inadequate alternatives, minimize dose/duration and arrange monitoring and reversal access. Muscle relaxants can further suppress respiration. Avoid alcohol."
+      ],
+      "section": "interactions"
+    },
+    {
+      "card": "Serotonergic drugs and MAO inhibitors",
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Drug Interactions / Serotonergic Drugs; MAOIs"
+        }
+      ],
+      "assertions": [
+        "Serotonergic combinations can cause serotonin syndrome; monitor especially when starting or increasing doses and stop the combination opioid if suspected. Use with MAO inhibitors or within 14 days of stopping one is not recommended. Urgent exceptions require specialist titration and close cardiopulmonary monitoring, not routine outpatient substitution."
+      ],
+      "section": "interactions"
+    },
+    {
+      "card": "Other interaction actions",
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Drug Interactions / Mixed Agonists; Anticholinergics; Diuretics; Laboratory Tests"
+        }
+      ],
+      "assertions": [
+        "Mixed agonist/antagonist or partial agonist opioids can reduce analgesia or precipitate withdrawal; any transition needs a planned clinical approach. Anticholinergics increase urinary retention and severe constipation/ileus risk. Opioids may reduce diuretic effect; monitor fluid response and blood pressure. APAP can interfere with urinary 5-HIAA testing."
+      ],
+      "section": "interactions"
+    },
+    {
+      "card": "Kidney and liver impairment",
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Drug Interactions / Renal and Hepatic Impairment; Precautions / Laboratory Tests; Warnings / Hepatotoxicity"
+        }
+      ],
+      "assertions": [
+        "Renal or hepatic impairment may raise hydrocodone concentrations. Start low and closely follow sedation and respiratory effects; the label does not provide numerical eGFR or Child-Pugh adjustment tables. Serial renal/liver tests are advised for severe disease. Liver risk from APAP must also be considered when choosing the combination."
+      ],
+      "section": "populations"
+    },
+    {
+      "card": "Children and older adults",
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Drug Interactions / Pediatric and Geriatric Use; Warnings"
+        }
+      ],
+      "assertions": [
+        "Safety and effectiveness of these tablets in pediatric patients are not established; do not copy pediatric APAP doses into the combination. Older adults should generally start at the low end and undergo slow titration with frequent breathing/CNS assessment and renal review. Frail or pulmonary-compromised patients may need a nonopioid alternative."
+      ],
+      "section": "populations"
+    },
+    {
+      "card": "Pregnancy and delivery",
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Drug Interactions / Pregnancy; Labor or Delivery; Boxed Warning"
+        }
+      ],
+      "assertions": [
+        "Human controlled data are insufficient; use only if potential benefit justifies fetal risk. Prolonged exposure can produce neonatal withdrawal requiring expert treatment. Placental transfer may cause neonatal respiratory depression; the combination is not recommended during or immediately before labor when other analgesic techniques are preferable."
+      ],
+      "section": "populations"
+    },
+    {
+      "card": "Breastfeeding and fertility",
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Drug Interactions / Nursing Mothers; Infertility; Precautions / Lactation"
+        }
+      ],
+      "assertions": [
+        "Hydrocodone enters milk. Balance maternal need and breastfeeding benefits with infant risk; watch for unusual sleepiness, breathing difficulty or limpness and seek immediate care. Infant withdrawal can follow stopping maternal opioids or breastfeeding. The reviewed label does not establish breastfeeding safety or a universal safe dose. Extended opioid use may impair fertility, with reversibility uncertain."
+      ],
+      "section": "populations"
+    },
+    {
+      "card": "Mechanism and clinical effects",
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Clinical Pharmacology / Mechanism; Pharmacodynamics"
+        }
+      ],
+      "assertions": [
+        "Hydrocodone is a full opioid agonist with relative mu-receptor selectivity. It reduces pain perception but also suppresses brainstem respiratory responses, decreases gut motility and can lower blood pressure. APAP\u2019s analgesic mechanism is incompletely established and thought to involve central actions; it does not prevent opioid sedation or dependence."
+      ],
+      "section": "pharmacology"
+    },
+    {
+      "card": "Disposition",
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Clinical Pharmacology / Pharmacokinetics"
+        }
+      ],
+      "assertions": [
+        "In a small labeled oral study, hydrocodone peaked around 1.3 hours with a half-life around 3.8 hours. CYP3A4 forms norhydrocodone; CYP2D6 forms hydromorphone. Hydrocodone/metabolites are mainly renally eliminated. APAP undergoes hepatic conjugation and a smaller oxidative pathway producing a reactive intermediate normally detoxified by glutathione; metabolites are excreted renally. APAP\u2019s half-life is about 1.25\u20133 hours and may lengthen with liver damage or overdose."
+      ],
+      "section": "pharmacology"
+    },
+    {
+      "card": "Monitoring and counseling",
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Warnings; Precautions / Information for Patients; Dosage and Administration"
+        }
+      ],
+      "assertions": [
+        "Review pain/function benefit, sedation, respiratory rate, constipation, blood pressure, organ function, other drugs and misuse risk. Discuss dependence versus addiction and a planned stop/taper. Avoid driving until the individual response is known; do not share medication, self-increase doses or add alcohol/APAP products. Read the Medication Guide with each dispensing and plan bowel care."
+      ],
+      "section": "practice"
+    },
+    {
+      "card": "Overdose response",
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Overdosage; Warnings / Hepatotoxicity; Medication Guide"
+        }
+      ],
+      "assertions": [
+        "Call emergency services for slow breathing, severe sleepiness or inability to wake; give the available reversal agent according to its own instructions and continue emergency care because recurrence is possible. Opioid reversal does not treat APAP poisoning. Suspected excess APAP needs urgent poison-center/emergency assessment even when the person feels well; clinicians assess timing, APAP levels and need for N-acetylcysteine. Do not wait for jaundice or other delayed liver signs."
+      ],
+      "section": "practice"
+    },
+    {
+      "card": "Secure use and disposal",
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Precautions / Storage and Disposal; Reversal Agent Access; Medication Guide"
+        }
+      ],
+      "assertions": [
+        "Keep locked or otherwise secure from children, visitors and diversion. Prefer a drug take-back option; the reviewed Medication Guide directs prompt flushing of unwanted tablets when take-back is not readily available. Make sure household members know where the reversal medicine is and how to obtain emergency help."
+      ],
+      "section": "practice"
+    },
+    {
+      "card": "Representative product",
+      "sources": [
+        {
+          "id": "label",
+          "sections": "How Supplied; SPL Product/Package Record"
+        }
+      ],
+      "assertions": [
+        "Reviewed Strides 5 mg/325 mg tablets are white and capsule-shaped, marked P on one side and 36 04 on the other. The Proficient Rx bottle of 12 has NDC 82804-306-12 and source NDC 64380-440. Other manufacturers or strengths can look different."
+      ],
+      "section": "product"
+    },
+    {
+      "card": "Dosage forms and strengths",
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Description; Dosage and Administration; How Supplied"
+        }
+      ],
+      "assertions": [
+        "The reviewed oral immediate-release tablet label describes hydrocodone bitartrate/APAP 5/325, 7.5/325 and 10/325 mg. The representative repackaging is only 5/325. Liquid, extended-release and other combination products require their own labels; do not infer dose equivalence from this page."
+      ],
+      "section": "product"
+    },
+    {
+      "card": "Storage and handling",
+      "sources": [
+        {
+          "id": "label",
+          "sections": "How Supplied; Precautions / Storage and Disposal"
+        }
+      ],
+      "assertions": [
+        "Store the reviewed tablets at 20\u201325\u00b0C in a tight, light-resistant container with a child-resistant closure. Keep securely out of sight and reach of children; child-resistant packaging alone does not prevent accidental ingestion. Follow the actual package\u2019s instructions."
+      ],
+      "section": "product"
+    }
+  ],
+  "hero_assertions": {
+    "essential": {
+      "title": "Recognize opioid overdose and count all acetaminophen.",
+      "text": "Slow breathing or inability to wake needs emergency help and an opioid reversal agent if available. Never exceed the prescribed tablet limit or combine additional acetaminophen products without review; liver injury can develop before obvious symptoms.",
+      "section": "safety",
+      "link": "Warnings and precautions"
+    },
+    "facts": [
+      [
+        "Therapeutic class",
+        "Opioid / nonopioid analgesic combination"
+      ],
+      [
+        "U.S. control status",
+        "Schedule II"
+      ],
+      [
+        "Reference focus",
+        "Immediate-release 325 mg APAP tablets"
+      ]
+    ],
+    "sources": [
+      "label"
+    ]
+  }
+}

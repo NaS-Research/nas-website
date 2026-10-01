@@ -1,0 +1,639 @@
+{
+  "slug": "amoxicillin",
+  "status": "source_reviewed",
+  "checked": "2026-10-01",
+  "scope": "Selected current Chartwell single-ingredient immediate-release oral amoxicillin label; CDC confirmed strep regimens; public ACG 2024 guideline summary; CDC U.S. MEC 2024 broad-spectrum-antibiotic contraception guidance",
+  "excludedRegimens": [
+    "Other manufacturers and non-U.S. labels",
+    "Exhaustive off-label regimens",
+    "Amoxicillin/clavulanate and extended-release products",
+    "Exhaustive infection-specific or H. pylori guideline regimens; confirm current local susceptibility and specialist protocol",
+    "Pediatric renal regimens not established by selected label"
+  ],
+  "sources": [
+    {
+      "id": "label",
+      "title": "Amoxicillin · Prescribing information",
+      "publisher": "DailyMed / Chartwell RX LLC",
+      "note": "Current SPL version 3, effective September 25, 2026; published September 28, 2026. Selected single-ingredient capsules, tablets, chewables, and suspension.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b07b5ac4-253e-4c83-91c3-3fdc46e91a0f"
+    },
+    {
+      "id": "cdc-strep",
+      "title": "Group A streptococcal pharyngitis · Clinical guidance",
+      "publisher": "Centers for Disease Control and Prevention",
+      "note": "Current public clinical guidance accessed October 1, 2026; diagnosis and 10-day amoxicillin regimens.",
+      "url": "https://www.cdc.gov/group-a-strep/hcp/clinical-guidance/strep-throat.html"
+    },
+    {
+      "id": "acg",
+      "title": "H. pylori treatment · 2024 guideline summary",
+      "publisher": "American College of Gastroenterology",
+      "note": "September 2024 official public summary of the ACG guideline; susceptibility-directed clarithromycin use and confirmation of eradication. Full paywalled guideline was not accessed.",
+      "url": "https://gi.org/journals-publications/ebgi/schoenfeld_sep2024/"
+    },
+    {
+      "id": "cdc-mec",
+      "title": "Combined hormonal contraceptives · U.S. MEC 2024",
+      "publisher": "Centers for Disease Control and Prevention",
+      "note": "November 19, 2024 page; antimicrobial therapy classification for broad-spectrum antibiotics.",
+      "url": "https://www.cdc.gov/contraception/hcp/usmec/combined-hormonal-contraceptives.html"
+    }
+  ],
+  "labelMetadata": [
+    {
+      "product": "Chartwell amoxicillin",
+      "setid": "b07b5ac4-253e-4c83-91c3-3fdc46e91a0f",
+      "effectiveTime": "20260925",
+      "version": "3",
+      "xmlSha256": "7e34299b9c788de460d9a5ae2635c211d148abd4a701312b93717f925b873da5",
+      "localEvidence": "/tmp/amoxicillin-chartwell.xml",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/b07b5ac4-253e-4c83-91c3-3fdc46e91a0f.xml"
+    }
+  ],
+  "evidence": [
+    {
+      "localEvidence": "/tmp/amoxicillin-chartwell.xml",
+      "sha256": "7e34299b9c788de460d9a5ae2635c211d148abd4a701312b93717f925b873da5",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b07b5ac4-253e-4c83-91c3-3fdc46e91a0f",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/amoxicillin/amoxicillin-chartwell.xml"
+    },
+    {
+      "localEvidence": "/tmp/nas-amoxicillin-strep.html",
+      "sha256": "f8ec5dcf65f52b98ef784f12a866b4fbcafaed882d75286ac75a640f02ab2544",
+      "url": "https://www.cdc.gov/group-a-strep/hcp/clinical-guidance/strep-throat.html",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/amoxicillin/nas-amoxicillin-strep.html"
+    },
+    {
+      "localEvidence": "/tmp/nas-amoxicillin-acg.html",
+      "sha256": "303d83ec8b6660d5236203f9f2150c4eb56d8332e1c2d1efffee9c8e48f5ec10",
+      "url": "https://gi.org/journals-publications/ebgi/schoenfeld_sep2024/",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/amoxicillin/nas-amoxicillin-acg.html"
+    },
+    {
+      "localEvidence": "/tmp/nas-amoxicillin-cdc-mec.html",
+      "sha256": "9378ebd663d8d683a27fd471a0f27e2a53b1a5a2999201a36a5197ccab6db541",
+      "url": "https://www.cdc.gov/contraception/hcp/usmec/combined-hormonal-contraceptives.html",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/amoxicillin/nas-amoxicillin-cdc-mec.html"
+    }
+  ],
+  "reviewedSourceSections": [
+    "1–8",
+    "10",
+    "12",
+    "14 (H. pylori regimen evidence)",
+    "16–17",
+    "CDC strep diagnosis/treatment/doses",
+    "ACG public recommendations/eradication confirmation",
+    "CDC Appendix D antimicrobial therapy"
+  ],
+  "assertionToSourceMap": [
+    {
+      "section": "indications",
+      "card": "Labeled infections",
+      "assertions": {
+        "paragraphs": [
+          "The selected label covers ear, nose, and throat infections; genitourinary infections; skin and soft-tissue infections; and lower respiratory infections caused by specified susceptible, beta-lactamase-negative organisms. Organism coverage varies by site; amoxicillin is not reliable against beta-lactamase-producing isolates. Culture and susceptibility results should guide therapy when available."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": "label §1.1–1.4; §1.6; §12.4",
+      "review": "Compared all card assertions with the listed public source sections; original summaries, not copied label paragraphs."
+    },
+    {
+      "section": "indications",
+      "card": "Streptococcal pharyngitis",
+      "assertions": {
+        "paragraphs": [
+          "CDC recommends antibiotics for confirmed group A streptococcal pharyngitis and lists amoxicillin as a preferred option. Do not treat viral pharyngitis with antibiotics."
+        ]
+      },
+      "sourceIds": [
+        "cdc-strep"
+      ],
+      "sourceSections": "CDC Clinical Guidance for Group A Streptococcal Pharyngitis: Testing/diagnosis and Treatment",
+      "review": "Compared all card assertions with the listed public source sections; original summaries, not copied label paragraphs."
+    },
+    {
+      "section": "indications",
+      "card": "H. pylori and treatment selection",
+      "assertions": {
+        "paragraphs": [
+          "Adult H. pylori-associated duodenal ulcer treatment is labeled with lansoprazole plus clarithromycin, or with lansoprazole alone when clarithromycin cannot be used. These older labeled combinations are not universal empiric choices. Current ACG guidance favors optimized bismuth quadruple therapy for empiric treatment and advises against clarithromycin triple therapy unless susceptibility is demonstrated; other guideline options also exist."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "acg"
+      ],
+      "sourceSections": "label §1.5; ACG 2024 official guideline summary: recommendations",
+      "review": "Compared all card assertions with the listed public source sections; original summaries, not copied label paragraphs."
+    },
+    {
+      "section": "dosage",
+      "card": "Labeled infection dosing from 12 weeks",
+      "assertions": {
+        "table": {
+          "headers": [
+            "Infection category",
+            "Adults / children over 40 kg",
+            "Children under 40 kg"
+          ],
+          "rows": [
+            [
+              "ENT, skin, or GU · mild/moderate",
+              "500 mg every 12 hours OR 250 mg every 8 hours",
+              "25 mg/kg/day divided every 12 hours OR 20 mg/kg/day divided every 8 hours"
+            ],
+            [
+              "ENT, skin, or GU · severe; all lower respiratory",
+              "875 mg every 12 hours OR 500 mg every 8 hours",
+              "45 mg/kg/day divided every 12 hours OR 40 mg/kg/day divided every 8 hours"
+            ]
+          ]
+        },
+        "paragraphs": [
+          "These are selected label regimens, not a substitute for an infection-specific guideline. Take at the start of a meal to reduce gastrointestinal intolerance. The label table separates weights greater than and less than 40 kg; confirm the regimen at that boundary with the prescriber."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": "label §2.1–2.2 Table 1",
+      "review": "Compared all card assertions with the listed public source sections; original summaries, not copied label paragraphs."
+    },
+    {
+      "section": "dosage",
+      "card": "Young infants and confirmed strep throat",
+      "assertions": {
+        "paragraphs": [
+          "For infants younger than 12 weeks, the labeled upper dose is 30 mg/kg/day divided every 12 hours. The label does not establish a regimen for pediatric patients with impaired renal function.",
+          "For confirmed group A streptococcal pharyngitis, CDC recommends 50 mg/kg once daily (maximum 1,000 mg) for 10 days, or 25 mg/kg per dose twice daily (maximum 500 mg per dose) for 10 days. These indication-specific doses differ from the general label table."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "cdc-strep"
+      ],
+      "sourceSections": "label §2.3; CDC strep guidance: Recommended antibiotics",
+      "review": "Compared all card assertions with the listed public source sections; original summaries, not copied label paragraphs."
+    },
+    {
+      "section": "dosage",
+      "card": "Renal impairment",
+      "assertions": {
+        "table": {
+          "headers": [
+            "GFR / treatment",
+            "Selected label recommendation"
+          ],
+          "rows": [
+            [
+              "Below 30 mL/min",
+              "Do not use the 875 mg dose"
+            ],
+            [
+              "10–30 mL/min",
+              "250 or 500 mg every 12 hours, depending on severity"
+            ],
+            [
+              "Below 10 mL/min",
+              "250 or 500 mg every 24 hours, depending on severity"
+            ],
+            [
+              "Hemodialysis",
+              "250 or 500 mg every 24 hours; the label specifies an additional dose during and at the end of dialysis"
+            ]
+          ]
+        },
+        "paragraphs": [
+          "This table applies to adults and pediatric patients aged at least 3 months weighing over 40 kg. Dialysis scheduling and pediatric renal dosing require individualized prescribing."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": "label §2.5 Table 2; §8.6",
+      "review": "Compared all card assertions with the listed public source sections; original summaries, not copied label paragraphs."
+    },
+    {
+      "section": "dosage",
+      "card": "Labeled adult H. pylori regimens",
+      "assertions": {
+        "table": {
+          "headers": [
+            "Combination",
+            "Labeled 14-day regimen"
+          ],
+          "rows": [
+            [
+              "Triple therapy",
+              "Amoxicillin 1 g + clarithromycin 500 mg + lansoprazole 30 mg, each twice daily"
+            ],
+            [
+              "Dual therapy",
+              "Amoxicillin 1 g + lansoprazole 30 mg, each three times daily"
+            ]
+          ]
+        },
+        "paragraphs": [
+          "These describe the selected label, not a preferred empiric regimen. Consult current ACG guidance, resistance information, other product labels, and prior antibiotic exposure; use clarithromycin triple therapy only with demonstrated susceptibility. Confirm eradication at least 4 weeks after antibiotics and after withholding PPI/PCAB therapy for at least 2 weeks as directed."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "acg"
+      ],
+      "sourceSections": "label §2.4; ACG summary: susceptibility restriction, alternatives, eradication timing",
+      "review": "Compared all card assertions with the listed public source sections; original summaries, not copied label paragraphs."
+    },
+    {
+      "section": "dosage",
+      "card": "Suspension and course instructions",
+      "assertions": {
+        "paragraphs": [
+          "A pharmacist should reconstitute the correct strength using its product-specific water volume. Shake well before each dose and measure with a calibrated device. Follow the prescribed infection-specific duration; confirmed group A strep requires 10 days. Do not save doses for another illness or double a missed dose."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "cdc-strep"
+      ],
+      "sourceSections": "label §2.6; §17; CDC strep: duration",
+      "review": "Compared all card assertions with the listed public source sections; original summaries, not copied label paragraphs."
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "assertions": {
+        "paragraphs": [
+          "Anaphylaxis and other serious hypersensitivity reactions can occur. Stop treatment and obtain emergency care for breathing difficulty, swelling, or collapse. Severe cutaneous reactions include Stevens–Johnson syndrome, toxic epidermal necrolysis, DRESS, and acute generalized exanthematous pustulosis; stop and promptly assess a new or progressive rash, blistering, or mucosal lesions.",
+          "Drug-induced enterocolitis syndrome can cause prolonged vomiting 1–4 hours after a dose, often without typical allergic skin or respiratory findings. Pallor, lethargy, hypotension or shock, and later diarrhea may occur. It is reported predominantly in children; discontinue and obtain urgent assessment.",
+          "C. difficile-associated diarrhea can occur during treatment or more than 2 months afterward. Assess persistent watery or bloody diarrhea. Amoxicillin commonly causes a rash in infectious mononucleosis and should not be used in those patients.",
+          "Use only for proven or strongly suspected susceptible bacterial infection. Unnecessary use promotes resistance and offers no benefit for viral illness."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": "label §5.1–5.6; §17",
+      "review": "Compared all card assertions with the listed public source sections; original summaries, not copied label paragraphs."
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "assertions": {
+        "paragraphs": [
+          "A history of a serious hypersensitivity reaction, such as anaphylaxis or Stevens–Johnson syndrome, to amoxicillin or another beta-lactam antibacterial, including penicillins or cephalosporins."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": "label §4",
+      "review": "Compared all card assertions with the listed public source sections; original summaries, not copied label paragraphs."
+    },
+    {
+      "section": "safety",
+      "card": "Boxed warning status",
+      "assertions": {
+        "paragraphs": [
+          "The selected single-ingredient amoxicillin label has no boxed warning. Serious hypersensitivity, severe skin reactions, enterocolitis, and C. difficile diarrhea remain important warnings."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": "complete selected label/Highlights: no Boxed Warning section",
+      "review": "Compared all card assertions with the listed public source sections; original summaries, not copied label paragraphs."
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions",
+      "assertions": {
+        "paragraphs": [
+          "Frequently reported reactions include diarrhea, rash, vomiting, and nausea. Postmarketing reports include severe allergy and skin reactions, enterocolitis, hepatic dysfunction, blood-cell abnormalities, interstitial nephritis, and crystalluria. Voluntary reports cannot establish a reliable frequency or causal rate."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": "label §6.1–6.2",
+      "review": "Compared all card assertions with the listed public source sections; original summaries, not copied label paragraphs."
+    },
+    {
+      "section": "interactions",
+      "card": "Clinically relevant interactions",
+      "assertions": {
+        "table": {
+          "headers": [
+            "Medication / test",
+            "Consideration"
+          ],
+          "rows": [
+            [
+              "Probenecid",
+              "Reduces renal secretion and can raise/prolong amoxicillin levels; combined use is not recommended."
+            ],
+            [
+              "Oral anticoagulants",
+              "Abnormal INR increases have been reported; monitor and adjust anticoagulation when necessary."
+            ],
+            [
+              "Allopurinol",
+              "Increases the incidence of rash with amoxicillin."
+            ],
+            [
+              "Bacteriostatic antibacterials",
+              "In vitro antagonism is described; clinical significance is not well established."
+            ],
+            [
+              "Urine glucose testing",
+              "Copper-reduction tests may be falsely positive; use enzymatic glucose testing."
+            ]
+          ]
+        }
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": "label §7.1–7.3, §7.5–7.6; Highlights §7",
+      "review": "Compared all card assertions with the listed public source sections; original summaries, not copied label paragraphs."
+    },
+    {
+      "section": "interactions",
+      "card": "Hormonal contraception",
+      "assertions": {
+        "paragraphs": [
+          "The selected label describes a possible effect on oral contraceptive efficacy through altered gut flora. Current CDC U.S. MEC classifies broad-spectrum antibiotics as category 1 for combined hormonal contraception and states that most do not reduce effectiveness of pills, patches, or rings. Do not assume routine backup is required solely because amoxicillin is prescribed; vomiting, diarrhea, and other interacting medicines need separate contraceptive advice."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "cdc-mec"
+      ],
+      "sourceSections": "label §7.4; CDC U.S. MEC Appendix D: Antimicrobial therapy / Broad-spectrum antibiotics, category 1",
+      "review": "Compared all card assertions with the listed public source sections; original summaries, not copied label paragraphs."
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy and lactation",
+      "assertions": {
+        "paragraphs": [
+          "Animal studies did not show fetal harm; adequate controlled studies in pregnant women are lacking in this label. Use when clinically needed after assessing the infection and treatment options.",
+          "Penicillins enter human milk, with a potential for infant sensitization. Discuss maternal treatment need and breastfeeding; observe the infant for adverse reactions."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": "label §8.1; §8.3",
+      "review": "Compared all card assertions with the listed public source sections; original summaries, not copied label paragraphs."
+    },
+    {
+      "section": "populations",
+      "card": "Pediatric and geriatric use",
+      "assertions": {
+        "paragraphs": [
+          "Young infants have immature renal function and a lower labeled upper dose. Safety and effectiveness for H. pylori treatment are not established in pediatric patients. Older adults may have reduced renal function; base dose selection on kidney function rather than age alone."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": "label §8.4–8.5; §2.3",
+      "review": "Compared all card assertions with the listed public source sections; original summaries, not copied label paragraphs."
+    },
+    {
+      "section": "populations",
+      "card": "Renal and hepatic considerations",
+      "assertions": {
+        "paragraphs": [
+          "Amoxicillin is primarily eliminated by the kidney. Severe renal impairment requires the dose/interval changes above; pediatric renal regimens are not supplied by the selected label. The label provides no separate hepatic-impairment dosing regimen, so do not invent one."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": "label §8.6; §2.5; complete §8: no separate hepatic regimen",
+      "review": "Compared all card assertions with the listed public source sections; original summaries, not copied label paragraphs."
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism of action",
+      "assertions": {
+        "paragraphs": [
+          "Amoxicillin inhibits bacterial cell-wall synthesis and is bactericidal against susceptible organisms. Beta-lactamases can inactivate it; a single-ingredient product does not provide the beta-lactamase inhibition of amoxicillin/clavulanate."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": "label §12.1; §12.4",
+      "review": "Compared all card assertions with the listed public source sections; original summaries, not copied label paragraphs."
+    },
+    {
+      "section": "pharmacology",
+      "card": "Pharmacokinetics",
+      "assertions": {
+        "facts": [
+          [
+            "Oral absorption",
+            "Peak levels typically within 1–2 hours"
+          ],
+          [
+            "Protein binding",
+            "Approximately 20%"
+          ],
+          [
+            "Half-life",
+            "About 61 minutes with normal renal function"
+          ],
+          [
+            "Elimination",
+            "Approximately 60% of an oral dose appears in urine within 6–8 hours; largely unchanged"
+          ]
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": "label §12.3",
+      "review": "Compared all card assertions with the listed public source sections; original summaries, not copied label paragraphs."
+    },
+    {
+      "section": "pharmacology",
+      "card": "Renal and dialysis effects",
+      "assertions": {
+        "paragraphs": [
+          "Reduced renal clearance increases exposure and drives dose adjustment. Hemodialysis can remove amoxicillin. Doses from this immediate-release oral label should not be extrapolated to combination or extended-release products."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": "label §12.3; §10; §2.5",
+      "review": "Compared all card assertions with the listed public source sections; original summaries, not copied label paragraphs."
+    },
+    {
+      "section": "practice",
+      "card": "Monitoring priorities",
+      "assertions": {
+        "paragraphs": [
+          "Check prior serious beta-lactam reactions and renal function before selecting the regimen. Reassess clinical response, susceptibility results when available, and severe or persistent diarrhea. Monitor INR when oral anticoagulants are used. Assess H. pylori eradication with the guideline-directed test and timing."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "acg"
+      ],
+      "sourceSections": "label §5, §7.2, §8.5–8.6; ACG summary: eradication timing",
+      "review": "Compared all card assertions with the listed public source sections; original summaries, not copied label paragraphs."
+    },
+    {
+      "section": "practice",
+      "card": "Patient counseling",
+      "assertions": {
+        "paragraphs": [
+          "Take the prescribed dose and course for the current infection. Take at the beginning of a meal, shake liquid thoroughly, and check mg per 5 mL before measuring. Seek emergency help for anaphylaxis and prompt assessment for rash, prolonged vomiting after a dose, or severe diarrhea. Do not use leftover antibiotics for a cold."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": "label §2.1, §2.6, §17",
+      "review": "Compared all card assertions with the listed public source sections; original summaries, not copied label paragraphs."
+    },
+    {
+      "section": "practice",
+      "card": "Overdose",
+      "assertions": {
+        "paragraphs": [
+          "Seek medical or poison-center advice. Excess dosing can cause crystalluria or interstitial nephritis with renal impairment. Stop treatment and provide clinician-directed supportive care; maintaining hydration and urine output may help reduce crystalluria. Hemodialysis can remove the drug."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": "label §10",
+      "review": "Compared all card assertions with the listed public source sections; original summaries, not copied label paragraphs."
+    },
+    {
+      "section": "product",
+      "card": "Representative product",
+      "assertions": {
+        "facts": [
+          [
+            "Selected product",
+            "Amoxicillin 500 mg capsules · Chartwell RX LLC label"
+          ],
+          [
+            "Appearance",
+            "Opaque buff cap and body"
+          ],
+          [
+            "Imprint",
+            "TEVA on cap; 3109 on body"
+          ],
+          [
+            "Example NDC",
+            "62135-083-20 · bottle of 20"
+          ]
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": "label §16",
+      "review": "Compared all card assertions with the listed public source sections; original summaries, not copied label paragraphs."
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "assertions": {
+        "paragraphs": [
+          "The selected label includes capsules 250 mg and 500 mg; tablets 500 mg and 875 mg; chewables 125 mg and 250 mg; and suspension 125, 200, 250, or 400 mg per 5 mL. These are single-ingredient oral forms; other manufacturers and amoxicillin/clavulanate products differ."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": "label §3; §16",
+      "review": "Compared all card assertions with the listed public source sections; original summaries, not copied label paragraphs."
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "assertions": {
+        "paragraphs": [
+          "Store dry products at 20–25°C in a tight, light-resistant container with child-resistant closure. Keep reconstituted suspension tightly closed, shake before use, and discard after 14 days. Refrigeration is preferable but is not required by this selected label."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": "label §16; §2.6; §17",
+      "review": "Compared all card assertions with the listed public source sections; original summaries, not copied label paragraphs."
+    }
+  ],
+  "materialErrors": [],
+  "unresolvedMaterialGaps": [],
+  "sourceDiscrepancies": [
+    {
+      "issue": "Highlights renal-dose statement says GFR greater than 30 mL/min; full §2.5 and §8.6 say severe impairment less than 30.",
+      "resolution": "Profile uses full prescribing sections: no 875 mg when GFR <30, renal table <30. Do not propagate Highlights typo.",
+      "material": true,
+      "resolved": true
+    },
+    {
+      "issue": "Label §7.4 describes reduced oral contraceptive efficacy; CDC U.S. MEC 2024 broad-spectrum antibiotics category 1 and most do not affect CHC effectiveness.",
+      "resolution": "Profile presents both sources and does not advise automatic backup solely for amoxicillin; GI illness/other interactions need separate advice.",
+      "resolved": true
+    },
+    {
+      "issue": "Label retains older lansoprazole-based H. pylori regimens and generalized post-symptom duration statements.",
+      "resolution": "Regimens explicitly labeled historical product regimens rather than preferred empiric care; current ACG susceptibility restriction and alternatives contextualize. Generic course duration is infection-specific; CDC confirmed strep 10-day regimen supplied.",
+      "resolved": true
+    },
+    {
+      "issue": "Label weight columns are greater than and less than 40 kg, leaving exactly 40 kg unspecified; Highlights/§8.4 and full §2.2–2.3 have age-boundary wording differences.",
+      "resolution": "Uses full dosage sections and explicitly directs prescriber confirmation at 40 kg; no invented boundary dose.",
+      "resolved": true
+    }
+  ],
+  "limitations": [
+    "Public sources only; no paywalled access claimed.",
+    "Source-specific NDC, appearance, excipients, and storage are not universal across manufacturers.",
+    "ACG official publicly available summary reviewed; full paid journal article not accessed. Hepatic regimen/pediatric renal regimen not supplied by selected label; no invented dosing."
+  ],
+  "verification": {
+    "schemaErrors": [],
+    "sectionIds": [
+      "indications",
+      "dosage",
+      "safety",
+      "interactions",
+      "populations",
+      "pharmacology",
+      "practice",
+      "product"
+    ],
+    "heroFacts": 3,
+    "safetyCardOrder": [
+      "Warnings and precautions",
+      "Contraindications",
+      "Boxed warning status",
+      "Adverse reactions"
+    ],
+    "productCardOrder": [
+      "Representative product",
+      "Dosage forms and strengths",
+      "Storage and handling"
+    ],
+    "renderedPageQA": "Pending parent batch integration QA"
+  },
+  "sourceEvidenceRoot": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/amoxicillin",
+  "sourceManifest": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/amoxicillin/source-manifest.json"
+}

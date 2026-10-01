@@ -1,0 +1,924 @@
+{
+  "slug": "potassium-chloride",
+  "status": "source_reviewed",
+  "checked": "2026-10-01",
+  "scope": "Selected Klor-Con wax-matrix8/10mEq tablets, Actavis microencapsulated8/10mEq capsules, Kesin/Saptalis10%/20% oral solution, Hospira2mEq/mL concentrate, Baxter100/200/400mEq/L highly concentrated ready-to-use bags; historical Micro-K dosing comparison only",
+  "excludedRegimens": [
+    "Other oral ER formulations including Klor-Con M; other IV premixes and mixed-electrolyte fluids",
+    "Enteral feeding-tube preparation/administration protocols: selected labels do not establish one; never crush selected wax-matrix tablets",
+    "Pediatric IV regimen; selected Baxter bags should not be used in children",
+    "Universal IV regimen for serum K2.0–2.5mEq/L; individual critical-care protocol required",
+    "Current Micro-K availability not verified; historical PI is not a current-market claim"
+  ],
+  "sources": [
+    {
+      "id": "label",
+      "title": "Klor-Con 8/10 mEq wax-matrix ER tablets · Prescribing information",
+      "publisher": "DailyMed / Upsher-Smith Laboratories, LLC",
+      "note": "Current SPL version 6, effective 2025-07-14. ",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1ff53330-065c-4213-9c0c-ac498621d09d"
+    },
+    {
+      "id": "capsule",
+      "title": "Potassium chloride ER capsules · Prescribing information",
+      "publisher": "DailyMed / Actavis Pharma, Inc.",
+      "note": "Current SPL version 16, effective 2022-08-01. ",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ed5baaf6-270b-4dd3-b100-36030c0098fc"
+    },
+    {
+      "id": "liquid",
+      "title": "Potassium chloride oral solution 10%/20% · Prescribing information",
+      "publisher": "DailyMed / Kesin Pharma Corporation",
+      "note": "Current SPL version 3, effective 2024-03-12. ",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=25c2b417-eeea-4ba6-8eb9-a7d8a08c6093"
+    },
+    {
+      "id": "microk",
+      "title": "Micro-K capsules · Historical public labeling",
+      "publisher": "DailyMed / Ther-Rx Corporation",
+      "note": "Current SPL version 3, effective 2009-12-21. Historical 2009 SPL; not evidence of current availability or the dosing limits of other capsules.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=cb128705-d8c7-4341-a976-d8fd7371df6d"
+    },
+    {
+      "id": "iv",
+      "title": "Potassium chloride 2 mEq/mL concentrate · Prescribing information",
+      "publisher": "DailyMed / Hospira, Inc.",
+      "note": "Current SPL version 23, effective 2026-07-01. Prescribing information revised January 2026; must dilute.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=559a0a8c-a8fe-40a5-b196-21f9308780ab"
+    },
+    {
+      "id": "ready",
+      "title": "Potassium chloride ready-to-use Viaflex Plus bags · Prescribing information",
+      "publisher": "DailyMed / Baxter Healthcare Corporation",
+      "note": "Current SPL version 15, effective 2026-01-09. January 2026 label; selected highly concentrated 100/200/400 mEq/L products.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=092ddee4-572d-4771-8d95-880cea01097e"
+    }
+  ],
+  "labelMetadata": [
+    {
+      "product": "kcl-tablet-brand",
+      "sourceId": "label",
+      "setid": "1ff53330-065c-4213-9c0c-ac498621d09d",
+      "effectiveTime": "20250714",
+      "version": "6",
+      "xmlSha256": "07c4ecafad32afa4c861b908df462886405b0503c2f51ffb97a54a9c37fa2bcc",
+      "localEvidence": "/tmp/nas-drug-sources/kcl-tablet-brand.xml",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/1ff53330-065c-4213-9c0c-ac498621d09d.xml",
+      "prescribingInformationRevision": "See exact archived selected SPL"
+    },
+    {
+      "product": "kcl-capsule",
+      "sourceId": "capsule",
+      "setid": "ed5baaf6-270b-4dd3-b100-36030c0098fc",
+      "effectiveTime": "20220801",
+      "version": "16",
+      "xmlSha256": "f70c21ce90596be5c72f17e66a3b8bbfac414b775e806608510170b00402fc84",
+      "localEvidence": "/tmp/nas-drug-sources/kcl-capsule.xml",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/ed5baaf6-270b-4dd3-b100-36030c0098fc.xml",
+      "prescribingInformationRevision": "See exact archived selected SPL"
+    },
+    {
+      "product": "kcl-liquid",
+      "sourceId": "liquid",
+      "setid": "25c2b417-eeea-4ba6-8eb9-a7d8a08c6093",
+      "effectiveTime": "20240312",
+      "version": "3",
+      "xmlSha256": "770617a75dbb4065ba97fdac61efafd66e52f0f797c27f0f470b776d9a4dffdd",
+      "localEvidence": "/tmp/nas-drug-sources/kcl-liquid.xml",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/25c2b417-eeea-4ba6-8eb9-a7d8a08c6093.xml",
+      "prescribingInformationRevision": "08/22-R1"
+    },
+    {
+      "product": "kcl-microk",
+      "sourceId": "microk",
+      "setid": "cb128705-d8c7-4341-a976-d8fd7371df6d",
+      "effectiveTime": "20091221",
+      "version": "3",
+      "xmlSha256": "0f8059d9c6000c6fdbf41a79c3af4869b89bd53867a9bdbb7e03f22d6c8b225e",
+      "localEvidence": "/tmp/nas-drug-sources/kcl-microk.xml",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/cb128705-d8c7-4341-a976-d8fd7371df6d.xml",
+      "prescribingInformationRevision": "06/2005"
+    },
+    {
+      "product": "kcl-iv",
+      "sourceId": "iv",
+      "setid": "559a0a8c-a8fe-40a5-b196-21f9308780ab",
+      "effectiveTime": "20260701",
+      "version": "23",
+      "xmlSha256": "8c36c4e67afd1746c9bd57fdaa0f8bba7efb3bd9aaea9627fdf986300fe962fc",
+      "localEvidence": "/tmp/nas-drug-sources/kcl-iv.xml",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/559a0a8c-a8fe-40a5-b196-21f9308780ab.xml",
+      "prescribingInformationRevision": "01/2026"
+    },
+    {
+      "product": "kcl-ready",
+      "sourceId": "ready",
+      "setid": "092ddee4-572d-4771-8d95-880cea01097e",
+      "effectiveTime": "20260109",
+      "version": "15",
+      "xmlSha256": "fc289f1be3bd281065a8dbf7df2b1b3cb5a453b69abef530e406257306cfa6c8",
+      "localEvidence": "/tmp/nas-drug-sources/kcl-ready.xml",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/092ddee4-572d-4771-8d95-880cea01097e.xml",
+      "prescribingInformationRevision": "01/2026"
+    }
+  ],
+  "evidence": [
+    {
+      "sourceId": "label",
+      "localEvidence": "/tmp/nas-drug-sources/kcl-tablet-brand.xml",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/potassium-chloride/kcl-tablet-brand.xml",
+      "sha256": "07c4ecafad32afa4c861b908df462886405b0503c2f51ffb97a54a9c37fa2bcc",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/1ff53330-065c-4213-9c0c-ac498621d09d.xml"
+    },
+    {
+      "sourceId": "label",
+      "localEvidence": "/tmp/nas-drug-sources/kcl-tablet-brand-sections.json",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/potassium-chloride/kcl-tablet-brand-sections.json",
+      "sha256": "5e19e7b0e5773777d33d2a74642ebc87affbe810baa9b09a8a6fbedf979560a6",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/1ff53330-065c-4213-9c0c-ac498621d09d.xml"
+    },
+    {
+      "sourceId": "capsule",
+      "localEvidence": "/tmp/nas-drug-sources/kcl-capsule.xml",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/potassium-chloride/kcl-capsule.xml",
+      "sha256": "f70c21ce90596be5c72f17e66a3b8bbfac414b775e806608510170b00402fc84",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/ed5baaf6-270b-4dd3-b100-36030c0098fc.xml"
+    },
+    {
+      "sourceId": "capsule",
+      "localEvidence": "/tmp/nas-drug-sources/kcl-capsule-sections.json",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/potassium-chloride/kcl-capsule-sections.json",
+      "sha256": "63d0b639fb5fa86754f45563463b68b7a563af8fccabc29889e5693ba68fed09",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/ed5baaf6-270b-4dd3-b100-36030c0098fc.xml"
+    },
+    {
+      "sourceId": "liquid",
+      "localEvidence": "/tmp/nas-drug-sources/kcl-liquid.xml",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/potassium-chloride/kcl-liquid.xml",
+      "sha256": "770617a75dbb4065ba97fdac61efafd66e52f0f797c27f0f470b776d9a4dffdd",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/25c2b417-eeea-4ba6-8eb9-a7d8a08c6093.xml"
+    },
+    {
+      "sourceId": "liquid",
+      "localEvidence": "/tmp/nas-drug-sources/kcl-liquid-sections.json",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/potassium-chloride/kcl-liquid-sections.json",
+      "sha256": "95aef33b258ad42744c17cabe5c908c947a3ae7bc433f9ee19761e9357bbcf5d",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/25c2b417-eeea-4ba6-8eb9-a7d8a08c6093.xml"
+    },
+    {
+      "sourceId": "microk",
+      "localEvidence": "/tmp/nas-drug-sources/kcl-microk.xml",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/potassium-chloride/kcl-microk.xml",
+      "sha256": "0f8059d9c6000c6fdbf41a79c3af4869b89bd53867a9bdbb7e03f22d6c8b225e",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/cb128705-d8c7-4341-a976-d8fd7371df6d.xml"
+    },
+    {
+      "sourceId": "microk",
+      "localEvidence": "/tmp/nas-drug-sources/kcl-microk-sections.json",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/potassium-chloride/kcl-microk-sections.json",
+      "sha256": "825dea4dea8e58c60bf4978da05c7b9b10e8be02a64737907f75d23a22336778",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/cb128705-d8c7-4341-a976-d8fd7371df6d.xml"
+    },
+    {
+      "sourceId": "iv",
+      "localEvidence": "/tmp/nas-drug-sources/kcl-iv.xml",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/potassium-chloride/kcl-iv.xml",
+      "sha256": "8c36c4e67afd1746c9bd57fdaa0f8bba7efb3bd9aaea9627fdf986300fe962fc",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/559a0a8c-a8fe-40a5-b196-21f9308780ab.xml"
+    },
+    {
+      "sourceId": "iv",
+      "localEvidence": "/tmp/nas-drug-sources/kcl-iv-sections.json",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/potassium-chloride/kcl-iv-sections.json",
+      "sha256": "37350ed440de303e9b1a07d21177bc4b8f897192f18266b8b0843c0a9b6e44c9",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/559a0a8c-a8fe-40a5-b196-21f9308780ab.xml"
+    },
+    {
+      "sourceId": "ready",
+      "localEvidence": "/tmp/nas-drug-sources/kcl-ready.xml",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/potassium-chloride/kcl-ready.xml",
+      "sha256": "fc289f1be3bd281065a8dbf7df2b1b3cb5a453b69abef530e406257306cfa6c8",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/092ddee4-572d-4771-8d95-880cea01097e.xml"
+    },
+    {
+      "sourceId": "ready",
+      "localEvidence": "/tmp/nas-drug-sources/kcl-ready-sections.json",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/potassium-chloride/kcl-ready-sections.json",
+      "sha256": "33b52f2ecf0e30fce28d40c4cc81a42090cc63227308731b418513677f2c8897",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/092ddee4-572d-4771-8d95-880cea01097e.xml"
+    }
+  ],
+  "sourceEvidenceRoot": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/potassium-chloride",
+  "sourceManifest": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/potassium-chloride/source-manifest.json",
+  "assertionToSourceMap": [
+    {
+      "section": "indications",
+      "card": "Oral indications",
+      "assertions": {
+        "paragraphs": [
+          "Selected ER tablets, ER capsules, and oral solution treat or prevent hypokalemia, with or without metabolic alkalosis, when potassium-rich diet or reduction of a causative diuretic is inadequate. Establish the deficit and its cause rather than treating an isolated result without clinical review."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "capsule",
+        "liquid"
+      ],
+      "sourceSections": {
+        "label": "Oral §1",
+        "capsule": "Oral §1",
+        "liquid": "Oral §1"
+      },
+      "review": "Reviewed the complete supporting public label sections; original summaries retain product-specific scope."
+    },
+    {
+      "section": "indications",
+      "card": "Intravenous indications",
+      "assertions": {
+        "paragraphs": [
+          "The selected concentrate treats potassium deficiency when oral replacement is not feasible. The selected Baxter highly concentrated ready-to-use bags are for patients needing supplementation or maintenance who cannot accommodate additional fluid volumes; they require continuous cardiac monitoring and frequent potassium and acid-base testing."
+        ]
+      },
+      "sourceIds": [
+        "iv",
+        "ready"
+      ],
+      "sourceSections": {
+        "iv": "IV Indications and Usage; ready Warnings",
+        "ready": "IV Indications and Usage; ready Warnings"
+      },
+      "review": "Reviewed the complete supporting public label sections; original summaries retain product-specific scope."
+    },
+    {
+      "section": "indications",
+      "card": "Formulation scope",
+      "assertions": {
+        "paragraphs": [
+          "This profile distinguishes Klor-Con 8/10 mEq wax-matrix tablets, selected generic microencapsulated capsules, oral solution, and two IV product types. The public Micro-K label is historical and is discussed only to show its distinct instructions; current brand availability is not verified. Other ER tablets, mixed-electrolyte bags, and feeding-tube protocols are outside this reference."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "capsule",
+        "liquid",
+        "microk",
+        "iv",
+        "ready"
+      ],
+      "sourceSections": {
+        "label": "Description; §2; historical Micro-K date/dosing; selected product scope",
+        "capsule": "Description; §2; historical Micro-K date/dosing; selected product scope",
+        "liquid": "Description; §2; historical Micro-K date/dosing; selected product scope",
+        "microk": "Description; §2; historical Micro-K date/dosing; selected product scope",
+        "iv": "Description; §2; historical Micro-K date/dosing; selected product scope",
+        "ready": "Description; §2; historical Micro-K date/dosing; selected product scope"
+      },
+      "review": "Reviewed the complete supporting public label sections; original summaries retain product-specific scope."
+    },
+    {
+      "section": "dosage",
+      "card": "Adult oral dosing",
+      "assertions": {
+        "table": {
+          "headers": [
+            "Selected product",
+            "Treatment",
+            "Prevention and limits"
+          ],
+          "rows": [
+            [
+              "Klor-Con 8/10 mEq wax-matrix ER tablets",
+              "40–100 mEq/day, divided",
+              "Usually 20 mEq/day; no more than 40 mEq per dose"
+            ],
+            [
+              "Actavis ER capsules",
+              "40–100 mEq/day, divided",
+              "Typically 20 mEq/day; no more than 40 mEq per dose"
+            ],
+            [
+              "10% or 20% oral solution",
+              "40–100 mEq/day in 2–5 doses",
+              "Typically 20 mEq/day; ≤40 mEq/dose and ≤200 mEq/day"
+            ]
+          ]
+        }
+      },
+      "sourceIds": [
+        "label",
+        "capsule",
+        "liquid"
+      ],
+      "sourceSections": {
+        "label": "Oral §2.2",
+        "capsule": "Oral §2.2",
+        "liquid": "Oral §2.2"
+      },
+      "review": "Reviewed the complete supporting public label sections; original summaries retain product-specific scope."
+    },
+    {
+      "section": "dosage",
+      "card": "Pediatric oral dosing",
+      "assertions": {
+        "paragraphs": [
+          "Selected solution, birth–16 years: initial treatment 2–4 mEq/kg/day in divided doses; each dose must not exceed 1 mEq/kg or 40 mEq, whichever is lower, and total must not exceed 100 mEq/day. Maintenance typically 1 mEq/kg/day, not exceeding 3 mEq/kg/day. Selected capsules, birth–16 years: initial 2–4 mEq/kg/day divided; each dose ≤1 mEq/kg or 20 mEq, whichever is lower; prevention typically 1 mEq/kg/day. Klor-Con wax-matrix tablet pediatric safety/effectiveness is not established. These distinct product limits are not interchangeable."
+        ]
+      },
+      "sourceIds": [
+        "capsule",
+        "liquid",
+        "label"
+      ],
+      "sourceSections": {
+        "capsule": "capsule §2.3,8.4; liquid §2.3,8.4; tablet §8.4",
+        "liquid": "capsule §2.3,8.4; liquid §2.3,8.4; tablet §8.4",
+        "label": "capsule §2.3,8.4; liquid §2.3,8.4; tablet §8.4"
+      },
+      "review": "Reviewed the complete supporting public label sections; original summaries retain product-specific scope."
+    },
+    {
+      "section": "dosage",
+      "card": "Oral administration",
+      "assertions": {
+        "paragraphs": [
+          "Take solids with meals and a full glass of liquid. Swallow Klor-Con wax-matrix tablets whole; do not crush, chew, or suck. Selected capsules may be opened onto a spoonful of cool soft food, swallowed immediately without chewing, followed by a glass of water or juice; do not store the mixture or use hot food. Dilute each oral-solution dose with at least 4 fl oz of cold water and take with or immediately after meals. No selected label here establishes administration through an enteral tube; obtain a product-specific pharmacy protocol."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "capsule",
+        "liquid"
+      ],
+      "sourceSections": {
+        "label": "Oral §2.1,5.1; selected-label absence of tube protocol",
+        "capsule": "Oral §2.1,5.1; selected-label absence of tube protocol",
+        "liquid": "Oral §2.1,5.1; selected-label absence of tube protocol"
+      },
+      "review": "Reviewed the complete supporting public label sections; original summaries retain product-specific scope."
+    },
+    {
+      "section": "dosage",
+      "card": "Concentrations and historical Micro-K limits",
+      "assertions": {
+        "paragraphs": [
+          "Oral 10% solution contains 20 mEq/15 mL; 20% contains 40 mEq/15 mL. Verify the prescribed mEq before measuring volume. The historical Micro-K label limits a single dose to 20 mEq, unlike the selected current generic capsule’s 40 mEq adult limit; it must not be used to infer a universal capsule regimen."
+        ]
+      },
+      "sourceIds": [
+        "liquid",
+        "microk",
+        "capsule"
+      ],
+      "sourceSections": {
+        "liquid": "liquid §3,16; capsule §2.2; Micro-K Dosage and Administration",
+        "microk": "liquid §3,16; capsule §2.2; Micro-K Dosage and Administration",
+        "capsule": "liquid §3,16; capsule §2.2; Micro-K Dosage and Administration"
+      },
+      "review": "Reviewed the complete supporting public label sections; original summaries retain product-specific scope."
+    },
+    {
+      "section": "dosage",
+      "card": "Adult IV rates and access",
+      "assertions": {
+        "paragraphs": [
+          "Hospira concentrate is 2 mEq/mL and must be diluted and thoroughly mixed; when potassium is above 2.5 mEq/L, its label limits infusion to 10 mEq/hour, at no more than 40 mEq/L, with up to 200 mEq/24 hours. Baxter ready-to-use bags contain 100, 200, or 400 mEq/L: use a calibrated infusion device; 400 mEq/L requires central IV access, and central access is recommended whenever possible for all selected strengths. Verify catheter placement; use continuous cardiac monitoring and frequent potassium/acid-base testing. Its usual rate is ≤10 mEq/hour and ≤200 mEq/24 hours when potassium is above 2.5 mEq/L."
+        ]
+      },
+      "sourceIds": [
+        "iv",
+        "ready"
+      ],
+      "sourceSections": {
+        "iv": "iv Dosage and Administration; ready Dosage and Administration,Warnings",
+        "ready": "iv Dosage and Administration; ready Dosage and Administration,Warnings"
+      },
+      "review": "Reviewed the complete supporting public label sections; original summaries retain product-specific scope."
+    },
+    {
+      "section": "dosage",
+      "card": "Severe hypokalemia and critical-care limits",
+      "assertions": {
+        "paragraphs": [
+          "The selected oral labels direct IV treatment when potassium is below 2.5 mEq/L. IV labels describe rates up to 40 mEq/hour and 400 mEq/24 hours only for urgent, profound hypokalemia below 2.0 mEq/L with ECG changes and/or muscle paralysis, under continuous ECG and frequent serum-potassium monitoring. These are exceptional supervised limits, never a routine replacement order; concentration, access, rate, serial labs, and institutional safeguards must all be confirmed. No universal regimen for the 2.0–2.5 mEq/L interval or pediatric IV protocol is supplied here."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "capsule",
+        "liquid",
+        "iv",
+        "ready"
+      ],
+      "sourceSections": {
+        "label": "Oral §2.1; iv/ready Dosage and Administration,Warnings",
+        "capsule": "Oral §2.1; iv/ready Dosage and Administration,Warnings",
+        "liquid": "Oral §2.1; iv/ready Dosage and Administration,Warnings",
+        "iv": "Oral §2.1; iv/ready Dosage and Administration,Warnings",
+        "ready": "Oral §2.1; iv/ready Dosage and Administration,Warnings"
+      },
+      "review": "Reviewed the complete supporting public label sections; original summaries retain product-specific scope."
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "assertions": {
+        "paragraphs": [
+          "Excess potassium can cause fatal hyperkalemia, sometimes before symptoms appear. Risk rises with renal dysfunction, dehydration, potassium-retaining drugs, and conditions shifting potassium out of cells. Reassess fluid and acid-base status and monitor potassium, renal function, and ECG as clinically required.",
+          "Solid oral KCl can cause GI ulceration, bleeding, obstruction, stenosis, or perforation. Consider liquid for dysphagia or severe motility disorders. Stop and urgently assess severe abdominal pain, distention, vomiting, or GI bleeding. Undiluted oral solution irritates the GI tract.",
+          "Never directly inject IV concentrate: dilution and thorough mixing are mandatory. Rapid infusion, extravasation, and incorrect concentration can cause arrest or severe tissue injury. Selected concentrated ready-to-use bags need a pump, verified access, continuous cardiac monitoring and frequent labs; 400 mEq/L is central-only. IV therapy can cause sodium/chloride disturbances or fluid overload; the concentrate contains aluminum, with greater toxicity risk in impaired kidneys and premature neonates."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "capsule",
+        "liquid",
+        "iv",
+        "ready"
+      ],
+      "sourceSections": {
+        "label": "Oral §5,8.7,10; iv/ready Warnings,Precautions",
+        "capsule": "Oral §5,8.7,10; iv/ready Warnings,Precautions",
+        "liquid": "Oral §5,8.7,10; iv/ready Warnings,Precautions",
+        "iv": "Oral §5,8.7,10; iv/ready Warnings,Precautions",
+        "ready": "Oral §5,8.7,10; iv/ready Warnings,Precautions"
+      },
+      "review": "Reviewed the complete supporting public label sections; original summaries retain product-specific scope."
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "assertions": {
+        "paragraphs": [
+          "Klor-Con tablets and selected generic capsules contraindicate amiloride or triamterene; the selected oral solution contraindicates concomitant potassium-sparing diuretics more broadly. Do not administer potassium to treat a patient who is already hyperkalemic. Hospira concentrate specifically contraindicates hyperkalemia, renal failure, and potassium-retention conditions. Baxter ready-to-use bags contraindicate hyperkalemia or product hypersensitivity; severe renal impairment requires extreme caution, if use is contemplated at all."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "capsule",
+        "liquid",
+        "iv",
+        "ready"
+      ],
+      "sourceSections": {
+        "label": "Oral §4,7; iv/ready Contraindications,Warnings",
+        "capsule": "Oral §4,7; iv/ready Contraindications,Warnings",
+        "liquid": "Oral §4,7; iv/ready Contraindications,Warnings",
+        "iv": "Oral §4,7; iv/ready Contraindications,Warnings",
+        "ready": "Oral §4,7; iv/ready Contraindications,Warnings"
+      },
+      "review": "Reviewed the complete supporting public label sections; original summaries retain product-specific scope."
+    },
+    {
+      "section": "safety",
+      "card": "Boxed warning status",
+      "assertions": {
+        "paragraphs": [
+          "The selected current oral and IV labels do not contain a formally coded boxed warning. This does not reduce the danger: the concentrate prominently warns that undiluted IV administration can be instantly fatal, and the ready-to-use label mandates controlled infusion and monitoring."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "capsule",
+        "liquid",
+        "iv",
+        "ready"
+      ],
+      "sourceSections": {
+        "label": "Complete selected SPL sections/codes; iv/ready Warnings; no code34066-1",
+        "capsule": "Complete selected SPL sections/codes; iv/ready Warnings; no code34066-1",
+        "liquid": "Complete selected SPL sections/codes; iv/ready Warnings; no code34066-1",
+        "iv": "Complete selected SPL sections/codes; iv/ready Warnings; no code34066-1",
+        "ready": "Complete selected SPL sections/codes; iv/ready Warnings; no code34066-1"
+      },
+      "review": "Reviewed the complete supporting public label sections; original summaries retain product-specific scope."
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions",
+      "assertions": {
+        "paragraphs": [
+          "Oral therapy can cause nausea, vomiting, abdominal discomfort, gas, and diarrhea. Serious events include hyperkalemia and solid-product GI injury. IV reactions include arrhythmia or arrest, infusion-site pain, phlebitis or thrombosis, extravasation injury, electrolyte disturbances and fluid overload; hypersensitivity is reported with the selected ready-to-use product. Postmarketing reports do not provide reliable frequencies."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "capsule",
+        "liquid",
+        "iv",
+        "ready"
+      ],
+      "sourceSections": {
+        "label": "Oral §6; iv/ready Adverse Reactions,Warnings",
+        "capsule": "Oral §6; iv/ready Adverse Reactions,Warnings",
+        "liquid": "Oral §6; iv/ready Adverse Reactions,Warnings",
+        "iv": "Oral §6; iv/ready Adverse Reactions,Warnings",
+        "ready": "Oral §6; iv/ready Adverse Reactions,Warnings"
+      },
+      "review": "Reviewed the complete supporting public label sections; original summaries retain product-specific scope."
+    },
+    {
+      "section": "interactions",
+      "card": "Potassium-sparing diuretics",
+      "assertions": {
+        "paragraphs": [
+          "Avoid the product-specific contraindicated combinations described above. Amiloride/triamterene are contraindicated with the selected tablets/capsules; the selected solution contraindicates potassium-sparing diuretics. Spironolactone/eplerenone are also potassium-retaining RAAS therapies and require careful product-specific review, rather than assuming one oral label’s wording applies to all."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "capsule",
+        "liquid"
+      ],
+      "sourceSections": {
+        "label": "Oral §4,7.1–7.2",
+        "capsule": "Oral §4,7.1–7.2",
+        "liquid": "Oral §4,7.1–7.2"
+      },
+      "review": "Reviewed the complete supporting public label sections; original summaries retain product-specific scope."
+    },
+    {
+      "section": "interactions",
+      "card": "RAAS inhibitors and NSAIDs",
+      "assertions": {
+        "paragraphs": [
+          "ACE inhibitors, ARBs, aliskiren, and other potassium-retaining RAAS therapies increase hyperkalemia risk; NSAIDs can also retain potassium. Monitor potassium closely when an oral combination is necessary. The selected Baxter IV label advises avoiding potassium-raising products including ACE inhibitors, ARBs, potassium-sparing diuretics, cyclosporine, and tacrolimus; if unavoidable, monitor closely."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "capsule",
+        "liquid",
+        "ready"
+      ],
+      "sourceSections": {
+        "label": "Oral §7.2–7.3; ready Precautions,Drug Interactions",
+        "capsule": "Oral §7.2–7.3; ready Precautions,Drug Interactions",
+        "liquid": "Oral §7.2–7.3; ready Precautions,Drug Interactions",
+        "ready": "Oral §7.2–7.3; ready Precautions,Drug Interactions"
+      },
+      "review": "Reviewed the complete supporting public label sections; original summaries retain product-specific scope."
+    },
+    {
+      "section": "interactions",
+      "card": "Other electrolyte risks",
+      "assertions": {
+        "paragraphs": [
+          "Diuretics and some antiepileptic/psychotropic medicines can increase IV-fluid-associated hyponatremia risk. Assess sodium and fluid balance as well as potassium. Patients receiving digitalis need close electrolyte and ECG assessment; rapid changes during treatment of potassium intoxication can provoke digitalis toxicity."
+        ]
+      },
+      "sourceIds": [
+        "ready",
+        "iv",
+        "liquid"
+      ],
+      "sourceSections": {
+        "ready": "ready Warnings,Precautions,Overdosage; iv Precautions; liquid §2.1,10",
+        "iv": "ready Warnings,Precautions,Overdosage; iv Precautions; liquid §2.1,10",
+        "liquid": "ready Warnings,Precautions,Overdosage; iv Precautions; liquid §2.1,10"
+      },
+      "review": "Reviewed the complete supporting public label sections; original summaries retain product-specific scope."
+    },
+    {
+      "section": "populations",
+      "card": "Renal and hepatic impairment",
+      "assertions": {
+        "paragraphs": [
+          "For oral products, start at the lower end of the dose range in renal impairment, monitor potassium frequently, and assess renal function; no universal creatinine-clearance dosing table is established. Cirrhosis can increase the potassium response to an oral load, so start low and monitor. The IV concentrate contraindicates renal failure; the ready-to-use product requires extreme caution, if at all, in severe renal impairment."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "capsule",
+        "liquid",
+        "iv",
+        "ready"
+      ],
+      "sourceSections": {
+        "label": "Oral §8.6–8.7; iv Contraindications; ready Warnings",
+        "capsule": "Oral §8.6–8.7; iv Contraindications; ready Warnings",
+        "liquid": "Oral §8.6–8.7; iv Contraindications; ready Warnings",
+        "iv": "Oral §8.6–8.7; iv Contraindications; ready Warnings",
+        "ready": "Oral §8.6–8.7; iv Contraindications; ready Warnings"
+      },
+      "review": "Reviewed the complete supporting public label sections; original summaries retain product-specific scope."
+    },
+    {
+      "section": "populations",
+      "card": "Children and older adults",
+      "assertions": {
+        "paragraphs": [
+          "Pediatric regimens above apply only to selected oral capsules/solution. Klor-Con wax-matrix tablet pediatric use is not established. The selected highly concentrated Baxter ready-to-use bags should not be used in children according to their label; no pediatric IV regimen is extrapolated from adult rates. Older patients often need lower initial oral dosing and closer renal/electrolyte surveillance."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "capsule",
+        "liquid",
+        "ready"
+      ],
+      "sourceSections": {
+        "label": "Oral §2.3,8.4–8.5; ready Pediatric Use",
+        "capsule": "Oral §2.3,8.4–8.5; ready Pediatric Use",
+        "liquid": "Oral §2.3,8.4–8.5; ready Pediatric Use",
+        "ready": "Oral §2.3,8.4–8.5; ready Pediatric Use"
+      },
+      "review": "Reviewed the complete supporting public label sections; original summaries retain product-specific scope."
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy and lactation",
+      "assertions": {
+        "paragraphs": [
+          "Oral-label human pregnancy data are limited and animal studies were not conducted; supplementation that does not cause hyperkalemia is not expected to cause fetal harm. Normal maternal supplementation is not expected to materially change milk potassium. The selected IV labels have more cautious pregnancy/lactation language because adequate studies are absent; use requires a patient-specific benefit-risk assessment."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "capsule",
+        "liquid",
+        "iv",
+        "ready"
+      ],
+      "sourceSections": {
+        "label": "Oral §8.1–8.2; IV Pregnancy; ready Pregnancy,Nursing Mothers",
+        "capsule": "Oral §8.1–8.2; IV Pregnancy; ready Pregnancy,Nursing Mothers",
+        "liquid": "Oral §8.1–8.2; IV Pregnancy; ready Pregnancy,Nursing Mothers",
+        "iv": "Oral §8.1–8.2; IV Pregnancy; ready Pregnancy,Nursing Mothers",
+        "ready": "Oral §8.1–8.2; IV Pregnancy; ready Pregnancy,Nursing Mothers"
+      },
+      "review": "Reviewed the complete supporting public label sections; original summaries retain product-specific scope."
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism and physiology",
+      "assertions": {
+        "paragraphs": [
+          "Potassium is the main intracellular cation and supports nerve conduction, muscle contraction, and cellular metabolism. Chloride replacement is appropriate in many chloride-depletion states. Assessment must include the cause of loss and acid-base balance; replacement is individualized rather than based on a fixed pharmacologic half-life."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "liquid",
+        "ready"
+      ],
+      "sourceSections": {
+        "label": "Oral §12.1; ready Clinical Pharmacology,Warnings",
+        "liquid": "Oral §12.1; ready Clinical Pharmacology,Warnings",
+        "ready": "Oral §12.1; ready Clinical Pharmacology,Warnings"
+      },
+      "review": "Reviewed the complete supporting public label sections; original summaries retain product-specific scope."
+    },
+    {
+      "section": "pharmacology",
+      "card": "Absorption and elimination",
+      "assertions": {
+        "paragraphs": [
+          "Oral ER products distribute potassium release over time, while solution has a faster initial absorption pattern. Selected microencapsulated capsules release over approximately 8–10 hours. The kidneys are the principal route of potassium elimination, making renal impairment a key toxicity determinant. Serum potassium can be normal despite a total-body deficit, or rise rapidly during redistribution."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "capsule",
+        "liquid",
+        "ready"
+      ],
+      "sourceSections": {
+        "label": "Oral §12.3; ready Clinical Pharmacology,Warnings",
+        "capsule": "Oral §12.3; ready Clinical Pharmacology,Warnings",
+        "liquid": "Oral §12.3; ready Clinical Pharmacology,Warnings",
+        "ready": "Oral §12.3; ready Clinical Pharmacology,Warnings"
+      },
+      "review": "Reviewed the complete supporting public label sections; original summaries retain product-specific scope."
+    },
+    {
+      "section": "pharmacology",
+      "card": "Wax-matrix remnants",
+      "assertions": {
+        "paragraphs": [
+          "The selected Klor-Con tablet’s emptied wax matrix may be seen in stool. This is an expected delivery-system remnant and does not mean the prescribed dose should be repeated. Do not extrapolate this observation into permission to crush the tablet."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "tablet §12.3; §2.1"
+      },
+      "review": "Reviewed the complete supporting public label sections; original summaries retain product-specific scope."
+    },
+    {
+      "section": "practice",
+      "card": "Monitoring priorities",
+      "assertions": {
+        "paragraphs": [
+          "Check serum potassium, renal function, acid-base and fluid status before and during replacement; assess magnesium and other electrolytes when relevant. The oral solution label calls for daily or more frequent potassium checks during treatment until normal and less frequent surveillance during stable maintenance. Unstable illness, renal impairment, interacting drugs, or IV replacement require more intensive assessment. Use ECG monitoring as indicated; selected concentrated ready-to-use IV bags require continuous cardiac monitoring and frequent labs."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "capsule",
+        "liquid",
+        "iv",
+        "ready"
+      ],
+      "sourceSections": {
+        "label": "Oral §2.1,8.7; iv/ready Precautions,Warnings,Indications",
+        "capsule": "Oral §2.1,8.7; iv/ready Precautions,Warnings,Indications",
+        "liquid": "Oral §2.1,8.7; iv/ready Precautions,Warnings,Indications",
+        "iv": "Oral §2.1,8.7; iv/ready Precautions,Warnings,Indications",
+        "ready": "Oral §2.1,8.7; iv/ready Precautions,Warnings,Indications"
+      },
+      "review": "Reviewed the complete supporting public label sections; original summaries retain product-specific scope."
+    },
+    {
+      "section": "practice",
+      "card": "Patient and caregiver counseling",
+      "assertions": {
+        "paragraphs": [
+          "Confirm mEq, product concentration, and measured volume before each dose. Take oral therapy with food and the required liquid; follow exact swallowing or capsule-sprinkling instructions. Do not add potassium supplements, potassium salt substitutes, or NSAIDs without review. Report weakness, palpitations, severe abdominal pain, distention, vomiting, black stool, or blood in stool immediately."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "capsule",
+        "liquid"
+      ],
+      "sourceSections": {
+        "label": "Oral §2.1,5,7,17",
+        "capsule": "Oral §2.1,5,7,17",
+        "liquid": "Oral §2.1,5,7,17"
+      },
+      "review": "Reviewed the complete supporting public label sections; original summaries retain product-specific scope."
+    },
+    {
+      "section": "practice",
+      "card": "Overdose",
+      "assertions": {
+        "paragraphs": [
+          "Obtain emergency medical assessment for excess potassium or a suspected infusion error; hyperkalemia may be symptom-free until a dangerous arrhythmia. Stop an implicated IV infusion and initiate urgent ECG/laboratory assessment with clinician-directed treatment. Home remedies are unsafe; management may require potassium-shifting or removal therapy, including dialysis, according to the patient’s condition."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "liquid",
+        "iv",
+        "ready"
+      ],
+      "sourceSections": {
+        "label": "Oral §10; iv/ready Overdosage,Warnings",
+        "liquid": "Oral §10; iv/ready Overdosage,Warnings",
+        "iv": "Oral §10; iv/ready Overdosage,Warnings",
+        "ready": "Oral §10; iv/ready Overdosage,Warnings"
+      },
+      "review": "Reviewed the complete supporting public label sections; original summaries retain product-specific scope."
+    },
+    {
+      "section": "product",
+      "card": "Representative product",
+      "assertions": {
+        "facts": [
+          [
+            "Selected product",
+            "Klor-Con 10 mEq wax-matrix ER tablet · Upsher-Smith"
+          ],
+          [
+            "Appearance",
+            "Yellow, round tablet"
+          ],
+          [
+            "Imprint",
+            "KC 10"
+          ],
+          [
+            "Example NDC",
+            "0245-5316-11 · bottle of 100"
+          ]
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "tablet §16"
+      },
+      "review": "Reviewed the complete supporting public label sections; original summaries retain product-specific scope."
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "assertions": {
+        "paragraphs": [
+          "Selected Klor-Con tablets contain 8 mEq (600 mg KCl) or 10 mEq (750 mg KCl). Selected capsules contain 8 or 10 mEq. Oral solution: 10% = 20 mEq/15 mL; 20% = 40 mEq/15 mL; the selected solution is supplied as institutional-use unit-dose cups. Hospira concentrate: 2 mEq/mL in 10/20/40 mEq single-dose vials, requiring dilution. Baxter ready-to-use bags: 10 mEq/100 mL, 10 mEq/50 mL, 20 mEq/100 mL, 20 mEq/50 mL, or 40 mEq/100 mL. Bag total mEq and concentration mEq/L are different quantities."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "capsule",
+        "liquid",
+        "iv",
+        "ready"
+      ],
+      "sourceSections": {
+        "label": "Oral §3,16; iv/ready Description,How Supplied",
+        "capsule": "Oral §3,16; iv/ready Description,How Supplied",
+        "liquid": "Oral §3,16; iv/ready Description,How Supplied",
+        "iv": "Oral §3,16; iv/ready Description,How Supplied",
+        "ready": "Oral §3,16; iv/ready Description,How Supplied"
+      },
+      "review": "Reviewed the complete supporting public label sections; original summaries retain product-specific scope."
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "assertions": {
+        "paragraphs": [
+          "Selected oral tablets/capsules: 20–25°C in tight containers; use a child-resistant closure for tablets; tablets permit 15–30°C excursions. Oral solution: 20–25°C, excursions 15–30°C, tight light-resistant container, protect from freezing. Store selected concentrate at 20–25°C; single-dose vials require discard of unused contents. Baxter bags: room temperature 25°C, avoid excessive heat, keep in moisture-barrier overwrap until use. Inspect IV solutions and seals, discard leaking/damaged containers, do not connect bags in series or add supplementary medication to the selected ready-to-use bags."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "capsule",
+        "liquid",
+        "iv",
+        "ready"
+      ],
+      "sourceSections": {
+        "label": "Oral §16; iv/ready How Supplied,Principal Display Panel; ready Directions for Use,Precautions",
+        "capsule": "Oral §16; iv/ready How Supplied,Principal Display Panel; ready Directions for Use,Precautions",
+        "liquid": "Oral §16; iv/ready How Supplied,Principal Display Panel; ready Directions for Use,Precautions",
+        "iv": "Oral §16; iv/ready How Supplied,Principal Display Panel; ready Directions for Use,Precautions",
+        "ready": "Oral §16; iv/ready How Supplied,Principal Display Panel; ready Directions for Use,Precautions"
+      },
+      "review": "Reviewed the complete supporting public label sections; original summaries retain product-specific scope."
+    }
+  ],
+  "materialErrors": [],
+  "unresolvedMaterialGaps": [],
+  "sourceDiscrepancies": [
+    {
+      "issue": "Adult single-dose limit differs by selected oral formulation: Klor-Con/Actavis40mEq vs historicalMicro-K20mEq.",
+      "resolution": "Exact formulation-specific limits; no universal ER limit.",
+      "material": true,
+      "resolved": true
+    },
+    {
+      "issue": "Pediatric single-dose ceiling differs capsule20mEq vs solution40mEq, each also≤1mEq/kg.",
+      "resolution": "Separate explicit product limits; pediatric wax-matrix regimen not established.",
+      "material": true,
+      "resolved": true
+    },
+    {
+      "issue": "Oral solution broader potassium-sparing-diuretic contraindication than tablets/capsules.",
+      "resolution": "Each contraindication preserved rather than universalized.",
+      "resolved": true
+    },
+    {
+      "issue": "Concentrate and highly concentrated ready-to-use bags differ in preparation/concentration/access; FDA-coded boxed section absent despite prominent fatality warning.",
+      "resolution": "Separate IV directions and monitoring; central-only400mEq/L from exact Baxter label; no direct IV concentrate administration.",
+      "material": true,
+      "resolved": true
+    },
+    {
+      "issue": "Historical Micro-K source dated2009 with PI06/2005; pediatric labeling differs from current generic capsules.",
+      "resolution": "Historical comparison only; no current availability, pediatric indication, or generic-dose equivalence inferred.",
+      "resolved": true
+    }
+  ],
+  "limitations": [
+    "Public primary labels only; no paid access claimed.",
+    "Appearance,NDC,storage,concentration and administration instructions are selected-product-specific.",
+    "Rendered-page and batch build checks are parent integration responsibilities."
+  ],
+  "reviewedSourceSections": [
+    "Full supporting oral §§1–8,10,12,16–17 and principal display panels",
+    "Full Hospira Description,Clinical Pharmacology,Indications,Contraindications,Warnings,Precautions,Adverse Reactions,Overdosage,Dosage,How Supplied and display panels",
+    "Full Baxter Description,Clinical Pharmacology,Indications,Contraindications,Warnings,Precautions,Adverse Reactions,Overdosage,Dosage,How Supplied,Directions for Use and display panels",
+    "Historical Micro-K dosing,contraindications,precautions and product/date reviewed for bounded comparison"
+  ],
+  "verification": {
+    "schemaErrors": [],
+    "sectionIds": [
+      "indications",
+      "dosage",
+      "safety",
+      "interactions",
+      "populations",
+      "pharmacology",
+      "practice",
+      "product"
+    ],
+    "heroFacts": 3,
+    "safetyCardOrder": [
+      "Warnings and precautions",
+      "Contraindications",
+      "Boxed warning status",
+      "Adverse reactions"
+    ],
+    "productCardOrder": [
+      "Representative product",
+      "Dosage forms and strengths",
+      "Storage and handling"
+    ],
+    "renderedPageQA": "Pending parent batch integration QA"
+  }
+}

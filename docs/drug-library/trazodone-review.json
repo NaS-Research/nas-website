@@ -1,0 +1,511 @@
+{
+  "drug": "trazodone",
+  "checked": "2026-10-01",
+  "status": "source_reviewed",
+  "review_scope": "Focused U.S. adult immediate-release oral trazodone MDD treatment with explicit off-label insomnia distinction.",
+  "sources": [
+    {
+      "id": "label",
+      "title": "Trazodone hydrochloride · TruPharma tablets",
+      "note": "Full label and Medication Guide; SPL version 4, effective September 3, 2026. Representative 25 and 75 mg tablets.",
+      "publisher": "DailyMed / National Library of Medicine",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a57da4f8-151d-4a74-8710-6158d1da3852",
+      "checked": "2026-10-01",
+      "access": "public",
+      "spl_version": "4",
+      "effective_date": "20260903",
+      "xml_sha256": "8aa70a84e3a266520b1e11b434bb988632ff15f53bd82d8227ab618d8ca22731",
+      "retrieved_xml": "/tmp/nas-drug-sources/trazodone.xml"
+    },
+    {
+      "id": "sleep",
+      "title": "Chronic insomnia · AASM 2017 guideline",
+      "note": "Public primary guideline abstract via author-affiliated Duke repository; weak recommendation against trazodone for adult sleep-onset/maintenance insomnia. Full guideline text not claimed accessed.",
+      "publisher": "American Academy of Sleep Medicine / Scholars@Duke",
+      "url": "https://scholars.duke.edu/publication/1162810",
+      "checked": "2026-10-01",
+      "access": "public"
+    }
+  ],
+  "assertion_source_map": [
+    {
+      "section": "indications",
+      "card": "Labeled oral indications",
+      "assertions": {
+        "paragraphs": [
+          "Immediate-release trazodone hydrochloride tablets are indicated for MDD in adults. Pediatric safety and effectiveness are not established."
+        ]
+      },
+      "source_sections": {
+        "label": [
+          "1",
+          "8.4"
+        ]
+      }
+    },
+    {
+      "section": "indications",
+      "card": "Insomnia · Off-label use",
+      "assertions": {
+        "paragraphs": [
+          "Insomnia treatment is outside the selected U.S. label. The AASM 2017 pharmacologic guideline gives a weak recommendation against trazodone for adult sleep-onset or sleep-maintenance insomnia; this is not a universal claim of ineffectiveness. A clinician should reassess the sleep diagnosis, comorbid depression, alternatives, and adverse effects. No insomnia dose is inferred from antidepressant dosing."
+        ]
+      },
+      "source_sections": {
+        "label": [
+          "1"
+        ],
+        "sleep": [
+          "Abstract recommendation 9 and GRADE definition"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Immediate-release oral tablets · Adult MDD",
+      "assertions": {
+        "paragraphs": [],
+        "table": {
+          "headers": [
+            "Parameter",
+            "Selected label regimen"
+          ],
+          "rows": [
+            [
+              "Initial regimen",
+              "150 mg/day in divided doses; start cautiously and increase according to response and tolerance."
+            ],
+            [
+              "Titration",
+              "May increase by 50 mg/day every 3–4 days."
+            ],
+            [
+              "Outpatient maximum",
+              "Usually no more than 400 mg/day in divided doses."
+            ],
+            [
+              "Inpatient maximum",
+              "Up to 600 mg/day in divided doses for more severely depressed patients."
+            ],
+            [
+              "Drowsiness",
+              "May require moving a larger part of the daily dose to bedtime or reducing the dose, directed by the clinician."
+            ]
+          ]
+        }
+      },
+      "source_sections": {
+        "label": [
+          "2.1"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Administration and discontinuation",
+      "assertions": {
+        "paragraphs": [
+          "Take shortly after a meal or light snack. Swallow whole; only a scored tablet may be halved along its score. Do not chew or crush. The selected 25 mg tablet is unscored; the selected 75 mg tablet is scored. Taper gradually when possible; do not stop abruptly."
+        ]
+      },
+      "source_sections": {
+        "label": [
+          "2.2",
+          "2.6",
+          "3",
+          "16",
+          "Medication Guide"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "MAOI switching and interacting medicines",
+      "assertions": {
+        "paragraphs": [
+          "Allow at least 14 days after a psychiatric MAOI before trazodone and at least 14 days after trazodone before a psychiatric MAOI. Linezolid and IV methylene blue are also contraindicated combinations. Strong CYP3A4 inhibitors may require reducing trazodone; inducers may require an increase based on response. The QT warning may favor avoiding the combination rather than simply adjusting a dose."
+        ]
+      },
+      "source_sections": {
+        "label": [
+          "2.4",
+          "2.5",
+          "4",
+          "5.3"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Hepatic and renal impairment",
+      "assertions": {
+        "paragraphs": [
+          "Trazodone has not been studied adequately in hepatic or renal impairment in this label; use caution. No validated numeric renal/hepatic adjustment is supplied. Individualize initiation and titration rather than assuming no adjustment is needed."
+        ]
+      },
+      "source_sections": {
+        "label": [
+          "8.6",
+          "8.7"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "assertions": {
+        "paragraphs": [],
+        "items": [
+          "Monitor worsening depression, suicidal thoughts, unusual behavior and mania; screen personal/family bipolar history before treatment.",
+          "Serotonin syndrome can occur alone or with other serotonergic drugs. Fever, agitation, sweating, rigidity/tremor, overactive reflexes, diarrhea or seizures needs urgent assessment.",
+          "Avoid with known QT prolongation, significant arrhythmia history, torsades risk (including low potassium/magnesium or symptomatic bradycardia), and QT-prolonging combinations. Not recommended during initial MI recovery.",
+          "Orthostatic hypotension, fainting and sedation can impair driving and increase falls; antihypertensive doses may need review.",
+          "For an erection lasting >4 hours, stop trazodone and seek emergency care, painful or not. Do not wait until 6 hours.",
+          "Bleeding, hyponatremia, mania and acute angle closure are additional concerns. Avoid in untreated anatomically narrow angles; confusion, weakness, unsteadiness or seizure may signal low sodium."
+        ]
+      },
+      "source_sections": {
+        "label": [
+          "5.1–5.11"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "assertions": {
+        "paragraphs": [
+          "Concomitant MAOIs, including linezolid and IV methylene blue, or trazodone within 14 days after stopping an MAOI. The reverse psychiatric-MAOI interval is also at least 14 days. QT-risk avoidance and other cautions are addressed in the warning section rather than mislabeled as formal section-4 contraindications."
+        ]
+      },
+      "source_sections": {
+        "label": [
+          "4",
+          "2.4",
+          "5.3"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Boxed warning · Suicidal thoughts and behaviors",
+      "assertions": {
+        "paragraphs": [
+          "Antidepressants increased suicidal thoughts and behaviors in pediatric and young adult patients in short-term studies. Monitor all treated patients for worsening and emerging suicidality. This product is not approved in children."
+        ]
+      },
+      "source_sections": {
+        "label": [
+          "Boxed warning",
+          "5.1",
+          "8.4"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions",
+      "assertions": {
+        "paragraphs": [
+          "Reported trial effects include drowsiness, dizziness/lightheadedness, dry mouth, constipation, fatigue, blurred vision, headache, nausea and vomiting. Serious risks include arrhythmia, priapism, serotonin toxicity and the other warnings above. Inpatient/outpatient trial rates should not be pooled into an individual risk estimate.",
+          "Overdose may cause respiratory arrest, seizures, QT changes, priapism or SIADH; co-ingestion with alcohol or other CNS depressants can be fatal. Seek immediate poison-center/emergency guidance. U.S. Poison Control: 1-800-222-1222."
+        ]
+      },
+      "source_sections": {
+        "label": [
+          "6.1",
+          "6.2",
+          "10"
+        ]
+      }
+    },
+    {
+      "section": "interactions",
+      "card": "Clinically relevant interactions",
+      "assertions": {
+        "paragraphs": [],
+        "table": {
+          "headers": [
+            "Combination",
+            "Action"
+          ],
+          "rows": [
+            [
+              "MAOIs, linezolid, IV methylene blue",
+              "Contraindicated combinations; obey washout intervals."
+            ],
+            [
+              "Other serotonergic medicines or supplements",
+              "Monitor toxicity closely; reconsider unnecessary combinations."
+            ],
+            [
+              "Strong CYP3A4 inhibitors: clarithromycin, azole antifungals, selected HIV medicines",
+              "Exposure and arrhythmia risk increase; QT warning advises avoidance. If a necessary combination is chosen, dose reduction and close review are required."
+            ],
+            [
+              "Strong CYP3A4 inducers: carbamazepine, rifampin, phenytoin, St. John’s wort",
+              "Exposure may decline; monitor response and adjust under prescriber direction. St. John’s wort is also serotonergic."
+            ],
+            [
+              "QT-prolonging medicines",
+              "Avoid because arrhythmia risk is additive."
+            ],
+            [
+              "Aspirin, NSAIDs, anticoagulants / antiplatelets",
+              "Bleeding risk; monitor INR with warfarin during initiation, changes and discontinuation."
+            ],
+            [
+              "Digoxin / phenytoin",
+              "Check concentrations before combined treatment and continue monitoring; reduce affected dose if needed."
+            ],
+            [
+              "Alcohol, sedatives, antihypertensives",
+              "Sedation or hypotension can increase; avoid alcohol and review combined treatment."
+            ]
+          ]
+        }
+      },
+      "source_sections": {
+        "label": [
+          "7.1",
+          "2.5",
+          "5.3",
+          "5.4",
+          "5.5"
+        ]
+      }
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy",
+      "assertions": {
+        "paragraphs": [
+          "Limited published observational data have not identified major birth-defect, miscarriage or other adverse outcome risks, but cannot establish absence of risk. Consider relapse and untreated depression risks before changing therapy; discuss the antidepressant pregnancy registry with the clinician."
+        ]
+      },
+      "source_sections": {
+        "label": [
+          "8.1"
+        ]
+      }
+    },
+    {
+      "section": "populations",
+      "card": "Lactation",
+      "assertions": {
+        "paragraphs": [
+          "Trazodone transfers into human milk. Limited postmarketing data have not identified infant adverse effects; milk-production data are lacking. Balance maternal need and breastfeeding benefits with potential infant effects."
+        ]
+      },
+      "source_sections": {
+        "label": [
+          "8.2"
+        ]
+      }
+    },
+    {
+      "section": "populations",
+      "card": "Pediatric and geriatric considerations",
+      "assertions": {
+        "paragraphs": [
+          "Pediatric safety/effectiveness are not established and the drug is not approved for children. Use cautiously in older adults, who may be more vulnerable to hyponatremia, orthostasis and sedation."
+        ]
+      },
+      "source_sections": {
+        "label": [
+          "8.4",
+          "8.5",
+          "5.4",
+          "5.9",
+          "5.11"
+        ]
+      }
+    },
+    {
+      "section": "populations",
+      "card": "Hepatic and renal impairment",
+      "assertions": {
+        "paragraphs": [
+          "Use cautiously because studies in these populations are lacking; the label supplies no fixed adjustment. Review interacting medicines, falls and cardiac risks during titration."
+        ]
+      },
+      "source_sections": {
+        "label": [
+          "8.6",
+          "8.7"
+        ]
+      }
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism of action and pharmacodynamics",
+      "assertions": {
+        "paragraphs": [
+          "The antidepressant mechanism is incompletely understood. Trazodone inhibits serotonin reuptake and antagonizes 5-HT₂ receptors; alpha-1 adrenergic antagonism can contribute to postural hypotension."
+        ]
+      },
+      "source_sections": {
+        "label": [
+          "12.1",
+          "12.2"
+        ]
+      }
+    },
+    {
+      "section": "pharmacology",
+      "card": "Pharmacokinetics",
+      "assertions": {
+        "paragraphs": [],
+        "facts": [
+          [
+            "Absorption",
+            "Peak approximately 1 hour fasting or 2 hours with food; meal timing changes exposure."
+          ],
+          [
+            "Metabolism",
+            "Extensively metabolized, including CYP3A4 formation of active m-chlorophenylpiperazine (mCPP)."
+          ],
+          [
+            "Elimination",
+            "Less than 1% is excreted unchanged in urine; accumulation occurs in some patients."
+          ],
+          [
+            "Protein binding",
+            "Approximately 89–95% in vitro at therapeutic concentrations."
+          ]
+        ]
+      },
+      "source_sections": {
+        "label": [
+          "12.3, including untitled Absorption/Metabolism/Elimination/Protein Binding blocks"
+        ]
+      }
+    },
+    {
+      "section": "practice",
+      "card": "Monitoring parameters",
+      "assertions": {
+        "paragraphs": [],
+        "items": [
+          "Follow depressive symptoms, suicidal thinking, mania and adherence early and after dose changes.",
+          "Assess daytime sedation, orthostatic symptoms, fainting and falls; review BP-lowering medicines.",
+          "Review rhythm/QT risk, electrolytes when indicated, and symptoms of hyponatremia.",
+          "Monitor INR with warfarin and digoxin/phenytoin concentrations when combined; review CYP3A4 changes."
+        ]
+      },
+      "source_sections": {
+        "label": [
+          "5",
+          "7",
+          "17"
+        ]
+      }
+    },
+    {
+      "section": "practice",
+      "card": "Patient counseling information",
+      "assertions": {
+        "paragraphs": [],
+        "items": [
+          "Take after a meal/light snack and follow titration directions. Do not split an unscored tablet, crush or chew.",
+          "Avoid driving until effects are known; avoid alcohol and discuss other sedating medicines.",
+          "Do not stop suddenly; arrange tapering with the prescriber. Report worsening mood or behavior promptly.",
+          "Seek emergency care for an erection >4 hours or suspected serious arrhythmia/serotonin syndrome."
+        ]
+      },
+      "source_sections": {
+        "label": [
+          "2.2",
+          "5",
+          "17",
+          "Medication Guide"
+        ]
+      }
+    },
+    {
+      "section": "product",
+      "card": "Representative oral product · Trazodone 75 mg",
+      "assertions": {
+        "paragraphs": [],
+        "facts": [
+          [
+            "Dosage form / strength",
+            "Film-coated immediate-release tablet · 75 mg"
+          ],
+          [
+            "Packager / manufacturer",
+            "TruPharma / Oxford Pharmaceuticals"
+          ],
+          [
+            "Appearance / imprint",
+            "Peach, round, convex, scored · 8 | 86 / O"
+          ],
+          [
+            "Example NDC",
+            "52817-396-10 · 100 tablets"
+          ]
+        ]
+      },
+      "source_sections": {
+        "label": [
+          "3",
+          "16"
+        ]
+      }
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "assertions": {
+        "paragraphs": [
+          "Selected product: 25 mg unscored white round tablet (883 / O) and 75 mg scored peach tablet. Other immediate-release strengths and any extended-release product have separate labeling; their split/crush, food, dose and storage directions must be checked."
+        ]
+      },
+      "source_sections": {
+        "label": [
+          "3",
+          "16"
+        ]
+      }
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "assertions": {
+        "paragraphs": [
+          "Store selected tablets at 20–25°C in a tight, light-resistant container; dispense/read the Medication Guide. Keep medicines out of children’s reach."
+        ]
+      },
+      "source_sections": {
+        "label": [
+          "16",
+          "Medication Guide"
+        ]
+      }
+    }
+  ],
+  "scope_exclusions": [
+    "No off-label insomnia dose recommended. Guideline recommendation verified in the public primary abstract; full underlying evidence tables not claimed read.",
+    "Selected label is for immediate-release 25/75 mg products; other strengths and extended-release instructions are not generalized.",
+    "No fixed renal/hepatic adjustment inferred: label notes absent studies and cautions use."
+  ],
+  "resolved_source_findings": [
+    {
+      "severity": "source_reconciliation",
+      "detail": "Medication Guide describes reported priapism >6 hours; full section 5.6 directs immediate discontinuation/emergency care for erection >4 hours, painful or not. Profile uses the action threshold of >4 hours."
+    },
+    {
+      "severity": "mechanism_precision",
+      "detail": "Selected label calls trazodone an SSRI in some passages but also verifies 5-HT2 antagonism in 12.1/12.2. Profile names the serotonin-antagonist/reuptake-inhibitor class and describes both actions."
+    }
+  ],
+  "material_gaps": [],
+  "clinical_review": "Every published clinical card reviewed against full relevant primary label sections. Source-reviewed within stated scope; not an independent clinician sign-off.",
+  "blueprint": "Immutable APAP eight sections, title/order, essential safety, three hero facts, cited disclosures; safety core warning/contraindication/boxed/adverse order preserved.",
+  "validation": {
+    "validateMonograph": [],
+    "build": "parent integration pending",
+    "rendered_page_qa": "parent integration pending"
+  },
+  "monograph_sha256": "918dc30043755c2ee03f19bd6175e0f919f5a1656477bacf2f56fea96bbc0ef1"
+}

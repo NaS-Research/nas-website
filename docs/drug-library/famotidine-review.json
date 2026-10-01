@@ -1,0 +1,751 @@
+{
+  "slug": "famotidine",
+  "status": "source_reviewed",
+  "checked": "2026-10-01",
+  "scope": "Pepcid prescription tablets plus selected single-ingredient Pepcid AC 10/20 mg, Ajanta 40 mg/5 mL pediatric/adult suspension, and Sagent ready-to-use 4 mg/mL IV labels",
+  "excludedRegimens": [
+    "Other manufacturers, non-U.S. labels, and exhaustive off-label regimens",
+    "Combination Pepcid Complete; other IV strengths/preparation protocols",
+    "Pediatric suspension/IV renal regimens not established by selected labels"
+  ],
+  "sources": [
+    {
+      "id": "label",
+      "title": "Pepcid tablets · Prescribing information",
+      "publisher": "DailyMed / Bausch Health US, LLC",
+      "note": "Current SPL version 8, effective 2024-06-01. 20 mg and 40 mg prescription tablets; weight-specific scope.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a06502d9-7903-4f37-833e-e5763d502def"
+    },
+    {
+      "id": "otc10",
+      "title": "Pepcid AC Original Strength · Drug Facts",
+      "publisher": "DailyMed / Kenvue Brands LLC",
+      "note": "Current SPL version 20, effective 2026-02-06. 10 mg single-ingredient tablets.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=54f4086f-e443-4e7e-8c7e-94e152e1c256"
+    },
+    {
+      "id": "otc20",
+      "title": "Pepcid AC Maximum Strength · Drug Facts",
+      "publisher": "DailyMed / Kenvue Brands LLC",
+      "note": "Current SPL version 23, effective 2024-11-11. 20 mg single-ingredient tablets.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2854047f-c5c4-43c3-8ef2-5c0a84a307f2"
+    },
+    {
+      "id": "liquid",
+      "title": "Famotidine oral suspension · Prescribing information",
+      "publisher": "DailyMed / Ajanta Pharma USA Inc.",
+      "note": "Current SPL version 2, effective 2025-11-30. 40 mg/5 mL after constitution; prescribing information revised November 2025.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a88e7069-230c-4105-ade0-a98968e18671"
+    },
+    {
+      "id": "iv",
+      "title": "Famotidine Injection · Prescribing information",
+      "publisher": "DailyMed / Sagent Pharmaceuticals",
+      "note": "Current SPL version 6, effective 2026-06-06. Selected 4 mg/mL ready-to-use solution; single-dose preservative-free and multidose preservative presentations.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9710995d-b518-40ce-bc2b-8b5dcf002c31"
+    }
+  ],
+  "labelMetadata": [
+    {
+      "sourceId": "label",
+      "product": "Pepcid tablets · Prescribing information",
+      "setid": "a06502d9-7903-4f37-833e-e5763d502def",
+      "effectiveTime": "20240601",
+      "version": "8",
+      "xmlSha256": "247c57898c5d47b1049b71d62076f4612859a1ee1e4374f0326913dab56745fd",
+      "localEvidence": "/tmp/nas-drug-sources/famotidine-rx.xml",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/a06502d9-7903-4f37-833e-e5763d502def.xml"
+    },
+    {
+      "sourceId": "otc10",
+      "product": "Pepcid AC Original Strength · Drug Facts",
+      "setid": "54f4086f-e443-4e7e-8c7e-94e152e1c256",
+      "effectiveTime": "20260206",
+      "version": "20",
+      "xmlSha256": "c3c419bcb3d3ee0a0f68442f0c6f87183e253f3e972f33cd733f9b5797da99de",
+      "localEvidence": "/tmp/nas-drug-sources/famotidine-otc10.xml",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/54f4086f-e443-4e7e-8c7e-94e152e1c256.xml"
+    },
+    {
+      "sourceId": "otc20",
+      "product": "Pepcid AC Maximum Strength · Drug Facts",
+      "setid": "2854047f-c5c4-43c3-8ef2-5c0a84a307f2",
+      "effectiveTime": "20241111",
+      "version": "23",
+      "xmlSha256": "0314f4b00f684f50ea6a9d7368e5ce95f6c90e23950f8e51208db97c3119fbca",
+      "localEvidence": "/tmp/nas-drug-sources/famotidine-otc20.xml",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/2854047f-c5c4-43c3-8ef2-5c0a84a307f2.xml"
+    },
+    {
+      "sourceId": "liquid",
+      "product": "Famotidine oral suspension · Prescribing information",
+      "setid": "a88e7069-230c-4105-ade0-a98968e18671",
+      "effectiveTime": "20251130",
+      "version": "2",
+      "xmlSha256": "90eb1de381ebed9f4f372465fc55906d252300f7eae0baae7f93ec87fa3210c5",
+      "localEvidence": "/tmp/nas-drug-sources/famotidine-liquid.xml",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/a88e7069-230c-4105-ade0-a98968e18671.xml"
+    },
+    {
+      "sourceId": "iv",
+      "product": "Famotidine Injection · Prescribing information",
+      "setid": "9710995d-b518-40ce-bc2b-8b5dcf002c31",
+      "effectiveTime": "20260606",
+      "version": "6",
+      "xmlSha256": "a487851f05262231968a94f2972112a05e055c5cc25c5285b1ffc0be8aeb6008",
+      "localEvidence": "/tmp/nas-drug-sources/famotidine-iv.xml",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/9710995d-b518-40ce-bc2b-8b5dcf002c31.xml"
+    }
+  ],
+  "evidence": [
+    {
+      "sourceId": "label",
+      "localEvidence": "/tmp/nas-drug-sources/famotidine-rx.xml",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/famotidine/famotidine-rx.xml",
+      "sha256": "247c57898c5d47b1049b71d62076f4612859a1ee1e4374f0326913dab56745fd",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a06502d9-7903-4f37-833e-e5763d502def"
+    },
+    {
+      "sourceId": "otc10",
+      "localEvidence": "/tmp/nas-drug-sources/famotidine-otc10.xml",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/famotidine/famotidine-otc10.xml",
+      "sha256": "c3c419bcb3d3ee0a0f68442f0c6f87183e253f3e972f33cd733f9b5797da99de",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=54f4086f-e443-4e7e-8c7e-94e152e1c256"
+    },
+    {
+      "sourceId": "otc20",
+      "localEvidence": "/tmp/nas-drug-sources/famotidine-otc20.xml",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/famotidine/famotidine-otc20.xml",
+      "sha256": "0314f4b00f684f50ea6a9d7368e5ce95f6c90e23950f8e51208db97c3119fbca",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2854047f-c5c4-43c3-8ef2-5c0a84a307f2"
+    },
+    {
+      "sourceId": "liquid",
+      "localEvidence": "/tmp/nas-drug-sources/famotidine-liquid.xml",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/famotidine/famotidine-liquid.xml",
+      "sha256": "90eb1de381ebed9f4f372465fc55906d252300f7eae0baae7f93ec87fa3210c5",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a88e7069-230c-4105-ade0-a98968e18671"
+    },
+    {
+      "sourceId": "iv",
+      "localEvidence": "/tmp/nas-drug-sources/famotidine-iv.xml",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/famotidine/famotidine-iv.xml",
+      "sha256": "a487851f05262231968a94f2972112a05e055c5cc25c5285b1ffc0be8aeb6008",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9710995d-b518-40ce-bc2b-8b5dcf002c31"
+    }
+  ],
+  "sourceEvidenceRoot": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/famotidine",
+  "sourceManifest": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/famotidine/source-manifest.json",
+  "assertionToSourceMap": [
+    {
+      "section": "indications",
+      "card": "Prescription oral indications",
+      "assertions": {
+        "paragraphs": [
+          "Pepcid 20 mg and 40 mg tablets are labeled for active duodenal or gastric ulcer, symptomatic nonerosive GERD, and erosive esophagitis due to GERD in adults and pediatric patients weighing at least 40 kg. Pathological hypersecretory conditions and reduction of duodenal-ulcer recurrence are adult indications."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": "label §1; §2.1; §8.4",
+      "review": "All listed assertions compared with the exact public source sections; original summaries and product-specific directions."
+    },
+    {
+      "section": "indications",
+      "card": "Pediatric suspension and IV scope",
+      "assertions": {
+        "paragraphs": [
+          "The selected oral suspension is labeled for pediatric GERD from birth, and peptic ulcer disease from age 1 year. Its GERD indication in children aged 1 year or older includes disease with or without esophagitis and ulcerations. The selected IV product is used in hospitalized patients or as an oral alternative: it covers the listed adult acid-related conditions, but its pediatric indication is peptic ulcer disease from age 1 year."
+        ]
+      },
+      "sourceIds": [
+        "liquid",
+        "iv"
+      ],
+      "sourceSections": "liquid §1, §8.4; iv §1",
+      "review": "All listed assertions compared with the exact public source sections; original summaries and product-specific directions."
+    },
+    {
+      "section": "indications",
+      "card": "OTC heartburn use",
+      "assertions": {
+        "paragraphs": [
+          "Single-ingredient Pepcid AC 10 mg and 20 mg products relieve or prevent heartburn associated with acid indigestion and sour stomach. OTC self-treatment has a 14-day limit and does not substitute for evaluation of persistent symptoms or alarm features."
+        ]
+      },
+      "sourceIds": [
+        "otc10",
+        "otc20"
+      ],
+      "sourceSections": "otc10/otc20 Uses, Warnings",
+      "review": "All listed assertions compared with the exact public source sections; original summaries and product-specific directions."
+    },
+    {
+      "section": "dosage",
+      "card": "Prescription tablets with normal renal function",
+      "assertions": {
+        "table": {
+          "headers": [
+            "Indication",
+            "Dose",
+            "Labeled duration"
+          ],
+          "rows": [
+            [
+              "Active duodenal ulcer",
+              "40 mg once daily OR 20 mg twice daily",
+              "Up to 8 weeks"
+            ],
+            [
+              "Active gastric ulcer",
+              "40 mg once daily",
+              "Up to 8 weeks"
+            ],
+            [
+              "Nonerosive GERD",
+              "20 mg twice daily",
+              "Up to 6 weeks"
+            ],
+            [
+              "Erosive esophagitis",
+              "20 mg or 40 mg twice daily",
+              "Up to 12 weeks"
+            ],
+            [
+              "Hypersecretory conditions · adults",
+              "Start 20 mg every 6 hours; individualize, maximum 160 mg every 6 hours",
+              "As clinically indicated"
+            ],
+            [
+              "Prevent duodenal ulcer recurrence · adults",
+              "20 mg once daily",
+              "1 year or as clinically indicated"
+            ]
+          ]
+        },
+        "paragraphs": [
+          "Tablets apply to adults and pediatric patients weighing at least 40 kg; the last two indications are adults only. Give once-daily doses at bedtime or twice-daily doses in the morning and at bedtime, with or without food. Antacids may be used."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": "label §2.1 Table 1; §2.3",
+      "review": "All listed assertions compared with the exact public source sections; original summaries and product-specific directions."
+    },
+    {
+      "section": "dosage",
+      "card": "Prescription oral renal adjustment",
+      "assertions": {
+        "table": {
+          "headers": [
+            "Indication / usual regimen",
+            "CrCl 30 to <60 mL/min",
+            "CrCl <30 mL/min"
+          ],
+          "rows": [
+            [
+              "Active duodenal or gastric ulcer",
+              "20 mg daily OR 40 mg every other day",
+              "20 mg every other day; 10 mg daily requires another formulation"
+            ],
+            [
+              "Nonerosive GERD",
+              "20 mg daily",
+              "20 mg every other day; 10 mg daily requires another formulation"
+            ],
+            [
+              "Erosive esophagitis · usual 20 mg twice daily",
+              "20 mg daily OR 40 mg every other day",
+              "20 mg every other day; 10 mg daily requires another formulation"
+            ],
+            [
+              "Erosive esophagitis · usual 40 mg twice daily",
+              "40 mg daily",
+              "20 mg daily"
+            ],
+            [
+              "Duodenal ulcer recurrence · adults",
+              "20 mg every other day; alternatively 10 mg daily in another formulation",
+              "10 mg every other day in another formulation"
+            ],
+            [
+              "Hypersecretory conditions · adults",
+              "Avoid use",
+              "Avoid use"
+            ]
+          ]
+        },
+        "paragraphs": [
+          "These are maximum doses for the selected oral label, not the IV table. No adjustment is needed at CrCl ≥60 mL/min. The tablet table includes pediatric patients ≥40 kg; the suspension label does not establish a safe and effective pediatric renal regimen."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "liquid"
+      ],
+      "sourceSections": "label §2.2 Table 2 including footnotes; liquid §2.3; label §8.6",
+      "review": "All listed assertions compared with the exact public source sections; original summaries and product-specific directions."
+    },
+    {
+      "section": "dosage",
+      "card": "OTC 10 mg and 20 mg directions",
+      "assertions": {
+        "paragraphs": [
+          "For adults and children aged at least 12 years, swallow one tablet with water for relief; do not chew. To prevent food-related heartburn, the selected 10 mg product is taken 15–60 minutes before the trigger, while the selected 20 mg product is taken 10–60 minutes before it. Do not exceed two tablets of the selected product in 24 hours or use longer than 14 days without clinician advice. Children under 12 years and patients with kidney disease need advice first."
+        ]
+      },
+      "sourceIds": [
+        "otc10",
+        "otc20"
+      ],
+      "sourceSections": "otc10/otc20 Directions and Warnings",
+      "review": "All listed assertions compared with the exact public source sections; original summaries and product-specific directions."
+    },
+    {
+      "section": "dosage",
+      "card": "Pediatric oral suspension · normal renal function",
+      "assertions": {
+        "table": {
+          "headers": [
+            "Indication / age",
+            "Oral dose",
+            "Duration / limit"
+          ],
+          "rows": [
+            [
+              "GERD · birth to <3 months",
+              "Start 0.5 mg/kg once daily; may increase to 1 mg/kg once daily",
+              "Up to 8 weeks; reassess at 4 weeks"
+            ],
+            [
+              "GERD · 3 months to <1 year",
+              "Start 0.5 mg/kg twice daily; may increase to 1 mg/kg twice daily",
+              "Maximum 40 mg/day; up to 8 weeks, reassess at 4 weeks"
+            ],
+            [
+              "Peptic ulcer · 1 to <17 years",
+              "Start 0.5 mg/kg daily OR 0.25 mg/kg twice daily; may increase to 1 mg/kg daily at bedtime OR 0.5 mg/kg twice daily",
+              "Maximum 40 mg/day; 8 weeks, individualized"
+            ],
+            [
+              "GERD with/without esophagitis · 1 to <17 years",
+              "0.5 mg/kg twice daily",
+              "Maximum 40 mg twice daily; 6–12 weeks, individualized"
+            ]
+          ]
+        },
+        "paragraphs": [
+          "Infant therapy includes clinician-directed conservative measures such as thickened feedings. Doses above are for the selected 40 mg/5 mL suspension; do not apply adult tablets or adult renal adjustments to small children. Shake vigorously for 5–10 seconds before each dose and measure accurately."
+        ]
+      },
+      "sourceIds": [
+        "liquid"
+      ],
+      "sourceSections": "liquid §2.2 Table 2 including footnotes; §2.4",
+      "review": "All listed assertions compared with the exact public source sections; original summaries and product-specific directions."
+    },
+    {
+      "section": "dosage",
+      "card": "Selected IV dosing and preparation",
+      "assertions": {
+        "paragraphs": [
+          "Adults usually receive 20 mg IV every 12 hours; hypersecretory-condition dosing is individually titrated. For pediatric peptic ulcer disease from age 1 year, start 0.25 mg/kg every 12 hours and titrate if needed to 0.5 mg/kg every 12 hours, never exceeding 20 mg per dose. Switch to oral treatment when tolerated.",
+          "For adults with CrCl 30 to <60 mL/min, the selected IV renal dose is 20 mg daily; with CrCl <30, it is 10 mg daily. Avoid use for hypersecretory conditions in these renal categories. A pediatric IV renal regimen is not established.",
+          "The selected 4 mg/mL product may be injected without dilution over at least 2 minutes. For infusion over 15–30 minutes, dilute the required dose in 100 mL of a listed compatible solution: 5% or 10% dextrose, 0.9% saline, or lactated Ringer’s. Gently invert 4–5 times; avoid shaking. Other injection concentrations require their own directions."
+        ]
+      },
+      "sourceIds": [
+        "iv"
+      ],
+      "sourceSections": "iv §2.1–2.4 Tables 1–3 and preparation directions",
+      "review": "All listed assertions compared with the exact public source sections; original summaries and product-specific directions."
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "assertions": {
+        "paragraphs": [
+          "Confusion, delirium, hallucinations, disorientation, agitation, seizures, and lethargy have been reported, particularly in older patients and those with moderate or severe renal impairment. Reduced renal clearance also increases QT-prolongation risk. Use the renal regimen and report new palpitations, fainting, dizziness, or CNS symptoms promptly.",
+          "Symptom improvement does not exclude gastric malignancy. Evaluate suboptimal response or early recurrence. OTC alarm features include painful or difficult swallowing, bloody vomit, black or bloody stools, unexplained weight loss, or persistent heartburn; chest pain with breathlessness or sweating needs urgent assessment.",
+          "The selected multidose IV presentation contains benzyl alcohol. Famotidine Injection is not approved in neonates; benzyl-alcohol-containing IV drugs have caused serious or fatal neonatal toxicity."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "otc10",
+        "otc20",
+        "iv"
+      ],
+      "sourceSections": "label §5.1–5.2, §8.6, §17; otc10/otc20 Warnings; iv §5.3",
+      "review": "All listed assertions compared with the exact public source sections; original summaries and product-specific directions."
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "assertions": {
+        "paragraphs": [
+          "Prescription products are contraindicated after a serious hypersensitivity reaction to famotidine or another H2 receptor antagonist. OTC products also prohibit use with allergy to famotidine or other acid reducers, with specified bleeding/swallowing alarm symptoms, or alongside other acid reducers."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "otc10",
+        "otc20"
+      ],
+      "sourceSections": "label §4; otc10/otc20 Allergy alert and Do not use",
+      "review": "All listed assertions compared with the exact public source sections; original summaries and product-specific directions."
+    },
+    {
+      "section": "safety",
+      "card": "Boxed warning status",
+      "assertions": {
+        "paragraphs": [
+          "The selected prescription famotidine labels have no boxed warning. Renal accumulation, CNS reactions, QT prolongation, and formulation-specific neonatal risks still require attention."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "iv",
+        "liquid"
+      ],
+      "sourceSections": "complete label/iv/liquid selected SPLs: no Boxed Warning section",
+      "review": "All listed assertions compared with the exact public source sections; original summaries and product-specific directions."
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions",
+      "assertions": {
+        "paragraphs": [
+          "Commonly listed adverse reactions include headache, dizziness, constipation, and diarrhea. Postmarketing reports include arrhythmia/QT prolongation, severe hypersensitivity, blood-cell abnormalities, hepatic injury, and severe skin reactions; frequencies cannot reliably be estimated. Infant suspension studies reported agitation that resolved after discontinuation."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "liquid"
+      ],
+      "sourceSections": "label §6.1–6.2; liquid §6.1 pediatric study",
+      "review": "All listed assertions compared with the exact public source sections; original summaries and product-specific directions."
+    },
+    {
+      "section": "interactions",
+      "card": "pH-dependent absorption",
+      "assertions": {
+        "paragraphs": [
+          "The selected oral label does not recommend combination with dasatinib, delavirdine, cefditoren, or fosamprenavir. Other affected medicines include atazanavir, erlotinib, ketoconazole, itraconazole, ledipasvir/sofosbuvir, nilotinib, and rilpivirine; their own labels determine whether to avoid, adjust, or separate dosing."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": "label §7.1",
+      "review": "All listed assertions compared with the exact public source sections; original summaries and product-specific directions."
+    },
+    {
+      "section": "interactions",
+      "card": "Tizanidine and probenecid",
+      "assertions": {
+        "paragraphs": [
+          "Avoid tizanidine if possible because famotidine’s weak CYP1A2 inhibition may increase exposure and cause hypotension, bradycardia, or excessive drowsiness. If needed together, monitor these effects. Probenecid increases famotidine exposure by reducing renal transport; the clinical relevance is uncertain."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": "label §7.2; §12.3 OAT1/OAT3 interaction study",
+      "review": "All listed assertions compared with the exact public source sections; original summaries and product-specific directions."
+    },
+    {
+      "section": "interactions",
+      "card": "OTC combinations",
+      "assertions": {
+        "paragraphs": [
+          "Do not combine the selected OTC products with other acid reducers. Ask a pharmacist or clinician before use with prescription medicines; prescription-label permission to use antacids does not erase OTC combination restrictions."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "otc10",
+        "otc20"
+      ],
+      "sourceSections": "otc10/otc20 Do not use/Ask doctor; label §2.3",
+      "review": "All listed assertions compared with the exact public source sections; original summaries and product-specific directions."
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy and lactation",
+      "assertions": {
+        "paragraphs": [
+          "Human pregnancy data are insufficient to establish risks of major birth defects, miscarriage, or other adverse outcomes. Assess clinical need rather than assuming risk-free use. Limited human milk data reported no infant effects; effects on milk production are unknown. Consider breastfeeding benefits and maternal need. OTC users who are pregnant or breastfeeding should seek professional advice."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "otc10",
+        "otc20"
+      ],
+      "sourceSections": "label §8.1–8.2; otc10/otc20 pregnancy/lactation warning",
+      "review": "All listed assertions compared with the exact public source sections; original summaries and product-specific directions."
+    },
+    {
+      "section": "populations",
+      "card": "Pediatric use",
+      "assertions": {
+        "paragraphs": [
+          "Prescription 20 mg and 40 mg tablets are not recommended below 40 kg. The selected suspension has age-specific GERD dosing from birth and peptic ulcer dosing from age 1 year. The selected IV product has pediatric peptic ulcer labeling from age 1 year, not a neonatal regimen. Pediatric hypersecretory-condition and ulcer-recurrence indications are not established."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "liquid",
+        "iv"
+      ],
+      "sourceSections": "label §8.4; liquid §1, §8.4; iv §1, §5.3, §8.4",
+      "review": "All listed assertions compared with the exact public source sections; original summaries and product-specific directions."
+    },
+    {
+      "section": "populations",
+      "card": "Older adults and organ impairment",
+      "assertions": {
+        "paragraphs": [
+          "Use the lowest effective dose in older adults and monitor renal function. Adjust for CrCl <60 mL/min according to route and indication. The selected labels do not provide a separate hepatic-impairment dosing algorithm; pediatric suspension and IV renal doses are not established."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "liquid",
+        "iv"
+      ],
+      "sourceSections": "label §8.5–8.6; liquid/iv §8.6 and full §8: no hepatic dose algorithm",
+      "review": "All listed assertions compared with the exact public source sections; original summaries and product-specific directions."
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism and effect",
+      "assertions": {
+        "paragraphs": [
+          "Famotidine blocks H2 receptors and suppresses basal, nocturnal, and stimulated gastric acid secretion. Oral antisecretory action begins within about an hour; 20 mg and 40 mg doses generally inhibit secretion for 10–12 hours."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": "label §12.1–12.2",
+      "review": "All listed assertions compared with the exact public source sections; original summaries and product-specific directions."
+    },
+    {
+      "section": "pharmacology",
+      "card": "Pharmacokinetics",
+      "assertions": {
+        "facts": [
+          [
+            "Oral bioavailability / peak",
+            "About 40–45%; peak levels in 1–3 hours"
+          ],
+          [
+            "Protein binding",
+            "About 15–20%"
+          ],
+          [
+            "Half-life",
+            "About 2.5–3.5 hours with normal renal function"
+          ],
+          [
+            "Elimination",
+            "Predominantly renal, with minimal first-pass metabolism"
+          ]
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": "label §12.3",
+      "review": "All listed assertions compared with the exact public source sections; original summaries and product-specific directions."
+    },
+    {
+      "section": "pharmacology",
+      "card": "Age and renal effects",
+      "assertions": {
+        "paragraphs": [
+          "Renal impairment increases exposure substantially. Infants younger than 3 months clear famotidine more slowly than older pediatric patients, which supports the different suspension dosing frequency. Oral and IV doses are not interchangeable on a volume basis."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "liquid",
+        "iv"
+      ],
+      "sourceSections": "label §12.3; liquid §12.3 Infant populations; iv §12.3",
+      "review": "All listed assertions compared with the exact public source sections; original summaries and product-specific directions."
+    },
+    {
+      "section": "practice",
+      "card": "Monitoring priorities",
+      "assertions": {
+        "paragraphs": [
+          "Review renal function and use the lowest effective regimen, especially in older adults. Monitor for new confusion or other CNS symptoms, palpitations or syncope, inadequate response, and early relapse. Reassess infant GERD treatment after 4 weeks."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "liquid"
+      ],
+      "sourceSections": "label §5, §8.5–8.6, §17; liquid §2.2 infant duration footnotes",
+      "review": "All listed assertions compared with the exact public source sections; original summaries and product-specific directions."
+    },
+    {
+      "section": "practice",
+      "card": "Patient and caregiver counseling",
+      "assertions": {
+        "paragraphs": [
+          "Follow the prescribed timing and formulation. OTC users should retain the carton, respect the two-tablet daily limit, and seek care if symptoms persist, worsen, or require more than 14 days of treatment. Teach caregivers to shake suspension vigorously before measuring, and record its 30-day discard date."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "liquid",
+        "otc10",
+        "otc20"
+      ],
+      "sourceSections": "label §17; liquid §2.4, §16; otc10/otc20 Directions/Warnings",
+      "review": "All listed assertions compared with the exact public source sections; original summaries and product-specific directions."
+    },
+    {
+      "section": "practice",
+      "card": "Overdose",
+      "assertions": {
+        "paragraphs": [
+          "Seek medical or poison-center advice after excess dosing. Treatment is clinician-directed and supportive. Famotidine can be removed by hemodialysis, but experience supporting its usefulness for overdose is limited."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "iv"
+      ],
+      "sourceSections": "label/iv §10",
+      "review": "All listed assertions compared with the exact public source sections; original summaries and product-specific directions."
+    },
+    {
+      "section": "product",
+      "card": "Representative product",
+      "assertions": {
+        "facts": [
+          [
+            "Selected product",
+            "Pepcid 20 mg tablets · Bausch Health US, LLC"
+          ],
+          [
+            "Appearance",
+            "Round, white to off-white, film-coated"
+          ],
+          [
+            "Imprint",
+            "MP 973 on one side; other side plain"
+          ],
+          [
+            "Example NDC",
+            "0187-4420-30 · bottle of 30"
+          ]
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": "label §16",
+      "review": "All listed assertions compared with the exact public source sections; original summaries and product-specific directions."
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "assertions": {
+        "paragraphs": [
+          "Selected prescription tablets are 20 mg and 40 mg; OTC single-ingredient products are 10 mg and 20 mg. Selected suspension is 40 mg/5 mL after constitution. Selected IV solution is 4 mg/mL: 20 mg/5 mL preservative-free single-dose vials, or benzyl-alcohol-containing multidose vials. Pepcid Complete combines other ingredients and is outside this reference."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "liquid",
+        "otc10",
+        "otc20",
+        "iv"
+      ],
+      "sourceSections": "label §3, §16; otc10/otc20 active ingredient; liquid §3; iv §3, §5.3, §16",
+      "review": "All listed assertions compared with the exact public source sections; original summaries and product-specific directions."
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "assertions": {
+        "paragraphs": [
+          "Pepcid prescription tablets: store at 25°C with excursions 15–30°C in a tight, light-resistant container. Selected OTC tablets: 20–25°C, protected from moisture.",
+          "Selected suspension: keep at controlled room temperature, protect from freezing, shake vigorously 5–10 seconds before dosing, and discard unused constituted suspension after 30 days.",
+          "Selected IV solution: 20–25°C, excursions 15–30°C; protect from light, retain the carton, and do not freeze. Use diluted solution immediately or refrigerate at 2–8°C for up to 48 hours according to this label."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "liquid",
+        "otc10",
+        "otc20",
+        "iv"
+      ],
+      "sourceSections": "label §16; otc10/otc20 Other information; liquid §2.4, §16; iv §2.4, §16",
+      "review": "All listed assertions compared with the exact public source sections; original summaries and product-specific directions."
+    }
+  ],
+  "materialErrors": [],
+  "unresolvedMaterialGaps": [],
+  "sourceDiscrepancies": [
+    {
+      "issue": "Renal table header says30to60 while full §8.6 defines ≥60 as mild/no adjustment.",
+      "resolution": "Profile uses30≤CrCl<60 and <30; at60 no adjustment.",
+      "resolved": true
+    },
+    {
+      "issue": "Current IV indication is pediatric peptic ulcer ≥1year, unlike broader pediatric oral GERD/suspension labeling; some other injection labels differ.",
+      "resolution": "Selected Sagent product scope explicit; no neonatal or pediatricGERD IV regimen propagated.",
+      "resolved": true
+    },
+    {
+      "issue": "OTC prevention timing differs between10mg15–60minutes and20mg10–60minutes.",
+      "resolution": "Each selected label timing stated separately.",
+      "resolved": true
+    }
+  ],
+  "limitations": [
+    "Public official sources only; no paid source access claimed.",
+    "NDC, excipients, appearances, concentrations, and storage directions are specific to selected products."
+  ],
+  "reviewedSourceSections": [
+    "All supporting selected prescription label sections1–8,10,12,16–17; adult/pediatric dosing tables and footnotes",
+    "Complete selected OTC Drug Facts",
+    "IV preparation and storage directions; suspension preparation/duration footnotes"
+  ],
+  "verification": {
+    "schemaErrors": [],
+    "sectionIds": [
+      "indications",
+      "dosage",
+      "safety",
+      "interactions",
+      "populations",
+      "pharmacology",
+      "practice",
+      "product"
+    ],
+    "heroFacts": 3,
+    "safetyCardOrder": [
+      "Warnings and precautions",
+      "Contraindications",
+      "Boxed warning status",
+      "Adverse reactions"
+    ],
+    "productCardOrder": [
+      "Representative product",
+      "Dosage forms and strengths",
+      "Storage and handling"
+    ],
+    "renderedPageQA": "Pending parent batch integration QA"
+  }
+}

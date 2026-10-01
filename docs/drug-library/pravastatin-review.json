@@ -1,0 +1,426 @@
+{
+  "slug": "pravastatin",
+  "checked": "2026-10-01",
+  "status": "source_reviewed",
+  "review_scope": "An LDL-lowering statin with indication-specific cardiovascular and pediatric HeFH use. All eight blueprint sections reviewed. Product-specific focused monograph; not an exhaustive adverse-event catalog.",
+  "sources": [
+    {
+      "id": "label",
+      "title": "Pravastatin sodium · Full U.S. prescribing information",
+      "publisher": "DailyMed / Cipla USA",
+      "note": "SPL version 4, effective 20260924; current public product labeling.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=678dfe58-3200-4c3d-9718-365aa47d070f",
+      "checked": "2026-10-01",
+      "version": "SPL version 4, effective 20260924; current public product labeling.",
+      "spl_version": "4",
+      "spl_effective_time": "20260924",
+      "xml_url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/678dfe58-3200-4c3d-9718-365aa47d070f.xml",
+      "downloaded_xml_sha256": "331a5d7e4747974781a96d47ba48eb377239080055eb6b1cc500c9abd90aac74"
+    },
+    {
+      "id": "fda",
+      "title": "Statins during pregnancy · FDA safety communication",
+      "publisher": "U.S. Food and Drug Administration",
+      "note": "July 20, 2021; removal of blanket pregnancy contraindication, most patients stop and avoid breastfeeding.",
+      "url": "https://www.fda.gov/drugs/drug-safety-and-availability/fda-requests-removal-strongest-warning-against-using-cholesterol-lowering-statins-during-pregnancy",
+      "checked": "2026-10-01",
+      "version": "July 20, 2021; removal of blanket pregnancy contraindication, most patients stop and avoid breastfeeding."
+    },
+    {
+      "id": "ped",
+      "title": "Pravachol · Original pediatric approval labeling",
+      "publisher": "U.S. Food and Drug Administration",
+      "note": "2003 supplement 054 archived original label; only pediatric approval, trial age and studied dose limits are used. Other historical warnings are superseded.",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2003/19898slr054_pravachol_lbl.pdf",
+      "checked": "2026-10-01",
+      "version": "2003 supplement 054 archived original label; only pediatric approval, trial age and studied dose limits are used. Other historical warnings are superseded."
+    }
+  ],
+  "assertion_to_source": [
+    {
+      "section_id": "indications",
+      "card_title": "Adult indications",
+      "assertions": [
+        "The label includes primary hyperlipidemia, hypertriglyceridemia and primary dysbetalipoproteinemia as diet adjuncts. It also includes reducing myocardial infarction, revascularization and cardiovascular mortality in adults with elevated LDL-C without clinically evident coronary heart disease, and reducing coronary death, MI, revascularization, stroke/TIA and atherosclerosis progression in adults with evident coronary disease. Selection depends on the patient’s lipid and cardiovascular risk assessment."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "1"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "indications",
+      "card_title": "Pediatric indication",
+      "assertions": [
+        "As an adjunct to diet, pravastatin reduces LDL-C in children age 8 and older with HeFH. This is not approval for every childhood lipid disorder. The current indication/dosing sections and original FDA pediatric approval support age 8; an inconsistent age-10 sentence in current section 8.4 is not used to override those sections."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "1; 2.3; 8.4; 14 / Pediatric HeFH"
+          ]
+        },
+        {
+          "source_id": "ped",
+          "sections": [
+            "Indications; Pediatric use; pediatric trial; Dosage"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "dosage",
+      "card_title": "Adult regimen",
+      "assertions": [
+        "Current recommended adult starting dose: 40–80 mg orally once daily, at any time, with or without food. Assess LDL-C as early as four weeks and adjust to response. If a high-intensity statin is needed or LDL goals remain unmet at 80 mg/day, use alternative LDL-lowering treatment rather than exceeding that dose."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "2.1; 2.2"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "dosage",
+      "card_title": "Pediatric HeFH regimen",
+      "assertions": [
+        "Age 8–13: 20 mg once daily; age 14–18: recommended starting dose 40 mg once daily. The original pediatric studies evaluated no more than 20 mg in the younger group and 40 mg in adolescents; do not extrapolate the adult 80-mg dose. Reassess treatment at transition to adult care."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "2.3; 8.4; 14 / Pediatric HeFH"
+          ]
+        },
+        {
+          "source_id": "ped",
+          "sections": [
+            "Dosage / Pediatric patients"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "dosage",
+      "card_title": "Renal and interacting-drug limits",
+      "assertions": [
+        "Severe renal impairment: start 10 mg/day, maximum 40 mg/day. Mild/moderate impairment uses the usual regimen. With cyclosporine: start 10 mg/day, maximum 20 mg/day. With clarithromycin or erythromycin: maximum 40 mg/day. Give at least one hour before or four hours after a bile acid sequestrant. Apply the most restrictive relevant limit."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "2.4; 2.5; 7"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "safety",
+      "card_title": "Warnings and precautions",
+      "assertions": [
+        "Myopathy/rhabdomyolysis can cause acute kidney injury or death; risk increases with age ≥65, uncontrolled hypothyroidism, renal dysfunction, higher doses and interacting drugs. Stop for suspected myopathy or markedly elevated CK, and temporarily hold during serious acute conditions that predispose to rhabdomyolysis-related renal failure. Persistent proximal weakness and CK elevation after stopping may represent immune-mediated necrotizing myopathy requiring specialist assessment. Consider liver tests before treatment and when clinically indicated; stop promptly for serious hepatic injury with symptoms, jaundice or hyperbilirubinemia. HbA1c/glucose may rise; maintain healthy lifestyle measures."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "5.1–5.4"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "safety",
+      "card_title": "Contraindications",
+      "assertions": [
+        "Current formal contraindications are acute liver failure or decompensated cirrhosis, and hypersensitivity to pravastatin or its excipients. Pregnancy is no longer a blanket formal contraindication: most pregnant patients should stop, with individualized decisions for exceptional cardiovascular risk. Do not reuse superseded pregnancy or broad “active liver disease” wording."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "4; 8.1"
+          ]
+        },
+        {
+          "source_id": "fda",
+          "sections": [
+            "2021 safety change; clinician recommendations"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "safety",
+      "card_title": "Boxed warning status",
+      "assertions": [
+        "The selected current label has no boxed warning. Its muscle, liver, pregnancy and interaction precautions still apply."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "Full prescribing information; 5; 8.1"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "safety",
+      "card_title": "Adverse reactions and overdose",
+      "assertions": [
+        "Trials report nausea/vomiting, diarrhea, headache, rash, muscle symptoms and liver/CK elevations. Rare spontaneous reports include serious allergy/skin reactions, hepatic failure, cognitive complaints, and new or worsened myasthenia gravis; these reports cannot establish frequency or causation. Severe allergy or serious weakness needs urgent assessment. No specific antidote is known; suspected overdose requires Poison Control/medical evaluation."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "6.1; 6.2; 10"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "interactions",
+      "card_title": "Myopathy interactions",
+      "assertions": [
+        "Avoid gemfibrozil. Cyclosporine requires a 10-mg start and 20-mg maximum; clarithromycin/erythromycin a 40-mg maximum. Other macrolides can also increase exposure. Niacin, other fibrates and colchicine require weighing benefit against muscle injury and monitoring during initiation/titration. Pravastatin is an OATP1B1 substrate; review other transporter inhibitors rather than assuming absence of CYP-based metabolism means no interactions."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "2.5; 7.1; 12.3"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "interactions",
+      "card_title": "Bile acid sequestrants",
+      "assertions": [
+        "Cholestyramine/colestipol can lower pravastatin exposure. Give pravastatin at least one hour before or at least four hours after a bile acid sequestrant. Recheck lipid response after relevant regimen changes."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "2.1; 2.5; 7.2"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "populations",
+      "card_title": "Pregnancy and breastfeeding",
+      "assertions": [
+        "Discontinue when pregnancy is recognized in most patients; the prescriber may consider continued therapy in a small group with very high cardiovascular risk. FDA removed the all-pregnancy contraindication in 2021; this does not make routine gestational use appropriate. Available observational data do not establish a major-malformation increase, but miscarriage evidence is insufficient. Pravastatin is present in milk; current labeling advises against breastfeeding during treatment. Discuss temporary interruption or alternative feeding according to maternal need."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "8.1; 8.2"
+          ]
+        },
+        {
+          "source_id": "fda",
+          "sections": [
+            "2021 clinician recommendations; evidence review"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "populations",
+      "card_title": "Children and older adults",
+      "assertions": [
+        "The approved pediatric scope is HeFH age ≥8, with the two age-specific regimens above; no regimen is established below age 8 or for other pediatric lipid disorders. The current label’s contrary age-10 sentence is an internal inconsistency reconciled against indication/dosage and original approval evidence. Older age increases muscle risk; choose doses cautiously with organ dysfunction and polypharmacy."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "1; 2.3; 8.4; 8.5"
+          ]
+        },
+        {
+          "source_id": "ped",
+          "sections": [
+            "Pediatric approval and trials"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "populations",
+      "card_title": "Renal and hepatic impairment",
+      "assertions": [
+        "Renal impairment increases muscle risk; monitor for myopathy. Severe impairment starts at 10 mg/day with a 40-mg maximum; mild/moderate impairment needs no special labeled reduction. Acute liver failure/decompensated cirrhosis is contraindicated. Other liver disease or substantial alcohol use calls for assessment and clinically indicated liver testing; the label gives no universal compensated-cirrhosis dose algorithm."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "2.4; 4; 5.1; 5.3; 8.6; 8.7"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "pharmacology",
+      "card_title": "Mechanism and response",
+      "assertions": [
+        "Pravastatin reversibly inhibits HMG-CoA reductase, increases hepatic LDL-receptor expression and uptake, and lowers LDL/total cholesterol and VLDL production. Maximal LDL reduction is usually achieved by four weeks."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "12.1; 12.2"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "pharmacology",
+      "card_title": "Pharmacokinetics",
+      "assertions": [
+        "It is administered in active form; peak plasma concentrations occur around 1–1.5 hours. Absolute oral bioavailability is about 17% with extensive first-pass hepatic extraction; approximately 50% is protein bound. Elimination includes renal and nonrenal pathways; the parent elimination half-life is about 1.8 hours. Food lowers plasma exposure but not the label’s lipid response, supporting administration with or without food."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "12.3"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "practice",
+      "card_title": "Monitoring",
+      "assertions": [
+        "Assess LDL-C when clinically appropriate, as early as four weeks after initiation. Review muscle symptoms and risk factors, obtain CK when clinically warranted by suspected injury, and consider liver enzymes before treatment and thereafter when indicated. Persistent weakness after withdrawal needs evaluation for IMNM. Monitor glucose/HbA1c as clinically appropriate and review pregnancy and interacting drugs."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "2.1; 5; 7; 17"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "practice",
+      "card_title": "Counseling",
+      "assertions": [
+        "Continue the diet/activity plan. Report unexplained muscle pain/tenderness/weakness, especially with fever or malaise; jaundice or dark urine; serious allergy; or new/worsening weakness or eye symptoms. Notify the prescriber about pregnancy or breastfeeding and before starting antibiotics, cyclosporine, colchicine or another lipid medicine. Take consistently and do not exceed the prescribed regimen."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "5; 6.2; 7; 17"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "product",
+      "card_title": "Representative product",
+      "assertions": [
+        "Cipla 40-mg tablets are green, rounded-rectangular and biconvex, marked “G5” and “40”; the 90-tablet bottle is NDC 69097-791-05 and contains a desiccant canister. Other strengths have different shapes/colors and generic manufacturers differ."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "16.1"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "product",
+      "card_title": "Dosage forms and strengths",
+      "assertions": [
+        "The selected oral tablets supply 10, 20, 40 and 80 mg pravastatin sodium. A 10-mg generic enables renal/cyclosporine initiation; do not assume every brand currently supplies all four strengths. This record does not establish a commercial oral liquid."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "3; 16.1; 2.4; 2.5"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "product",
+      "card_title": "Storage and handling",
+      "assertions": [
+        "Store at 20–25°C; excursions 15–30°C permitted. Keep tightly closed, protected from moisture and light; retain the bottle’s desiccant appropriately and keep medicines out of children’s reach."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "16.1"
+          ]
+        }
+      ]
+    }
+  ],
+  "material_errors": [],
+  "gaps": [],
+  "limitations": [
+    "Current section 8.4 has an internal age conflict: it establishes HeFH age 8+ but also says not established under age 10. Sections 1/2.3, the current pediatric trial and original FDA 2003 approval consistently establish age 8+. The monograph uses these affirmative approval/dose statements; the contradictory sentence is not propagated.",
+    "The archived FDA 2003 label is used solely to reconcile age and studied pediatric dose limits. Its historical pregnancy and other warnings do not override current labeling.",
+    "No pediatric adult-dose extrapolation, high-intensity claim, or unprovided hepatic numeric algorithm."
+  ],
+  "regulatory_records": [
+    {
+      "source_file": "pravastatin",
+      "records": [
+        {
+          "application_or_monograph": "ANDA077987",
+          "marketing_category": "ANDA"
+        },
+        {
+          "application_or_monograph": "ANDA077987",
+          "marketing_category": "ANDA"
+        },
+        {
+          "application_or_monograph": "ANDA077987",
+          "marketing_category": "ANDA"
+        },
+        {
+          "application_or_monograph": "ANDA077987",
+          "marketing_category": "ANDA"
+        }
+      ]
+    }
+  ],
+  "source_discrepancies": [
+    {
+      "source_id": "label",
+      "section": "8.4",
+      "conflict": "Establishes HeFH age 8+, then says not established younger than 10.",
+      "resolution": "Current sections 1/2.3 and pediatric trial plus original FDA pediatric approval explicitly establish ages 8–18. Age-10 exclusion sentence is not propagated; pediatric studied-dose limits maintained.",
+      "corroboration": "FDA 2003 supplement 054 pediatric labeling; current additional Cipla, Aurobindo, Apotex and Teva labels were compared and show the same inconsistent sentence.",
+      "clinical_status": "Resolved against affirmative approval/dosing and original trial evidence; no alteration to any label itself."
+    }
+  ]
+}

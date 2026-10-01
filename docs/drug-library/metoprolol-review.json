@@ -1,0 +1,411 @@
+{
+  "drug": "metoprolol",
+  "checked": "2026-10-01",
+  "status": "source_reviewed",
+  "review_scope": "Focused U.S. reference: Alembic oral tartrate tablets, Toprol-XL succinate ER tablets, and selected OneSource IV acute-MI labeling. Recognizes AF rate control as off-label without publishing a current AF dosing protocol.",
+  "blueprint": "acetaminophen.js preserved; eight section IDs/titles/order, essential safety, 3 hero facts and citation-bearing disclosure blocks",
+  "sources": [
+    {
+      "id": "ir",
+      "title": "Metoprolol tartrate · Alembic tablets",
+      "publisher": "DailyMed / National Library of Medicine",
+      "note": "Full prescribing information; version 10, effective August 22, 2024. Hypertension, angina, MI, and product identification.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=24837d82-0f3f-4482-9af0-31e5f675c30f",
+      "checked": "2026-10-01",
+      "access": "public source; no paywalled access claimed",
+      "spl_version": "10",
+      "effective_date": "20240822",
+      "xml_sha256": "0d03d1f25d62e8719f36c93750c8b66d63d41f20d699b9d659cfc7d2c2b7a307",
+      "retrieved_xml": "/tmp/nas-drug-sources/metoprolol-generic-manufacturer.xml"
+    },
+    {
+      "id": "er",
+      "title": "Toprol-XL · Metoprolol succinate ER",
+      "publisher": "DailyMed / National Library of Medicine",
+      "note": "Full prescribing information; version 20, effective April 24, 2023. Heart failure and pediatric hypertension are formulation-specific.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=991fe00b-498b-400e-9e5b-921cb07d9b2c",
+      "checked": "2026-10-01",
+      "access": "public source; no paywalled access claimed",
+      "spl_version": "20",
+      "effective_date": "20230424",
+      "xml_sha256": "b5a0d7dfe3009ec57c199dda977cd6d8d0c33b399f5a86b1edbe5da64a8af67b",
+      "retrieved_xml": "/tmp/nas-drug-sources/metoprolol-succinate.xml"
+    },
+    {
+      "id": "iv",
+      "title": "Metoprolol tartrate injection · OneSource",
+      "publisher": "DailyMed / National Library of Medicine",
+      "note": "Full prescribing information; version 1, effective March 17, 2026. Acute MI protocol and IV contraindications.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=05946833-9d66-4832-a0d8-b91b1ff01b8b",
+      "checked": "2026-10-01",
+      "access": "public source; no paywalled access claimed",
+      "spl_version": "1",
+      "effective_date": "20260317",
+      "xml_sha256": "a32a04cc518d8451f9c0c4c3e88bd629d1b800bab1756b82cb2edd67bb9e4b85",
+      "retrieved_xml": "/tmp/nas-drug-sources/metoprolol-iv.xml"
+    },
+    {
+      "id": "boxed",
+      "title": "Metoprolol tartrate · Boxed withdrawal warning",
+      "publisher": "DailyMed / National Library of Medicine",
+      "note": "Linked label version 6, effective July 14, 2016; boxed presentation differs from selected newer labels.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f2152494-0370-492d-9402-4f1368a277c7",
+      "checked": "2026-10-01",
+      "access": "public source; no paywalled access claimed",
+      "spl_version": "6",
+      "effective_date": "20160714",
+      "xml_sha256": "75fb4d5bab117c2065889b5cb683e41c6293e38a401bd8d1cffe8d3ed838f605",
+      "retrieved_xml": "/tmp/nas-drug-sources/metoprolol-boxed.xml"
+    },
+    {
+      "id": "af",
+      "title": "Atrial fibrillation · ACC rate-control reference",
+      "publisher": "American College of Cardiology",
+      "note": "Public ACC toolkit identifies metoprolol for AF rate control, an off-label use; historical dosing table, not a current individualized regimen.",
+      "url": "https://www.acc.org/~/media/Files/Migration%20Content/Quality%20and%20Clinical%20Trials/AFib%20Toolkit/4_AF_TK_RateRhythmDosingTable_3_7_2013.pdf?la=en",
+      "checked": "2026-10-01",
+      "access": "public source; no paywalled access claimed"
+    }
+  ],
+  "assertion_source_map": [
+    {
+      "card": "Labeled oral indications",
+      "assertions": "Labeled hypertension, angina, and MI uses for tartrate; hypertension, angina, HF, and pediatric hypertension from age 6 for succinate ER.",
+      "source_sections": {
+        "ir": [
+          "1.1",
+          "1.2",
+          "1.3"
+        ],
+        "er": [
+          "1.1",
+          "1.2",
+          "1.3",
+          "2.1",
+          "8.4"
+        ]
+      }
+    },
+    {
+      "card": "Intravenous therapy and off-label rate control",
+      "assertions": "IV stable acute MI followed by oral maintenance; recognition of off-label AF rate control without an AF dosing protocol.",
+      "source_sections": {
+        "iv": [
+          "1"
+        ],
+        "af": [
+          "Table 1: Heart rate control"
+        ]
+      }
+    },
+    {
+      "card": "Immediate-release oral tartrate · Adults",
+      "assertions": "Numeric adult HTN, angina, and MI doses, intervals, studied ranges, duration, meal timing, and monitored MI transition.",
+      "source_sections": {
+        "ir": [
+          "2.1",
+          "2.2",
+          "2.3"
+        ]
+      }
+    },
+    {
+      "card": "Extended-release oral succinate · Toprol-XL",
+      "assertions": "Adult and pediatric ER doses, initial dose limits, HF titration, and tablet splitting without crushing.",
+      "source_sections": {
+        "er": [
+          "2.1",
+          "2.2",
+          "2.3",
+          "2.4"
+        ]
+      }
+    },
+    {
+      "card": "Intravenous tartrate · Acute MI",
+      "assertions": "Three 5 mg IV boluses approximately 2 minutes apart; coronary care setting, BP/HR/ECG monitoring, and oral transition.",
+      "source_sections": {
+        "iv": [
+          "2"
+        ]
+      }
+    },
+    {
+      "card": "Hepatic and renal impairment",
+      "assertions": "Lower hepatic starting doses and gradual titration; no renal reduction required solely for chronic renal failure.",
+      "source_sections": {
+        "ir": [
+          "8.5",
+          "8.6",
+          "8.7"
+        ],
+        "er": [
+          "8.5",
+          "8.6",
+          "8.7"
+        ]
+      }
+    },
+    {
+      "card": "Warnings and precautions",
+      "assertions": "Withdrawal taper, HF and bradycardia risks, incomplete cardioselectivity, bronchospasm, hypoglycemia, alpha blockade first, thyroid and arterial risks, perioperative and anaphylaxis precautions.",
+      "source_sections": {
+        "ir": [
+          "5.1–5.9"
+        ],
+        "er": [
+          "5.1–5.10"
+        ],
+        "iv": [
+          "5.1–5.6"
+        ]
+      }
+    },
+    {
+      "card": "Contraindications",
+      "assertions": "Exact oral and IV exclusions; IV heart rate, PR interval and systolic BP thresholds.",
+      "source_sections": {
+        "ir": [
+          "4"
+        ],
+        "er": [
+          "4"
+        ],
+        "iv": [
+          "4"
+        ]
+      }
+    },
+    {
+      "card": "Boxed-warning presentation",
+      "assertions": "Boxed heading in the named 2016 label versus section 5.1 in selected newer labels; unchanged clinical withdrawal risk.",
+      "source_sections": {
+        "boxed": [
+          "Boxed warning"
+        ],
+        "ir": [
+          "5.1"
+        ],
+        "er": [
+          "5.1"
+        ]
+      }
+    },
+    {
+      "card": "Adverse reactions",
+      "assertions": "Reported common reactions and serious cardiovascular/respiratory reactions without pooling trial rates.",
+      "source_sections": {
+        "ir": [
+          "6.1",
+          "6.2"
+        ],
+        "er": [
+          "6.1",
+          "6.2"
+        ]
+      }
+    },
+    {
+      "card": "Clinically relevant interactions",
+      "assertions": "Negative chronotropes, CYP2D6 inhibitors, catecholamine depletion, additive hypotension, coordinated clonidine withdrawal, and reduced epinephrine response.",
+      "source_sections": {
+        "ir": [
+          "7.1–7.4"
+        ],
+        "er": [
+          "7.1–7.3"
+        ],
+        "iv": [
+          "7.1–7.5"
+        ]
+      }
+    },
+    {
+      "card": "Pregnancy",
+      "assertions": "Observational pregnancy uncertainty, placental transfer, and neonatal beta-blockade effects.",
+      "source_sections": {
+        "ir": [
+          "8.1"
+        ],
+        "er": [
+          "8.1"
+        ]
+      }
+    },
+    {
+      "card": "Lactation",
+      "assertions": "Reported low milk transfer and monitoring for infant bradycardia or listlessness.",
+      "source_sections": {
+        "er": [
+          "8.2"
+        ]
+      }
+    },
+    {
+      "card": "Pediatric and geriatric considerations",
+      "assertions": "ER hypertension use from age 6; no established pediatric tartrate/IV use; cautious geriatric initiation.",
+      "source_sections": {
+        "ir": [
+          "8.4",
+          "8.5"
+        ],
+        "er": [
+          "8.4",
+          "8.5"
+        ],
+        "iv": [
+          "8.4",
+          "8.5"
+        ]
+      }
+    },
+    {
+      "card": "Reproductive and organ-function considerations",
+      "assertions": "Sexual adverse effects and hepatic/renal dosing distinctions.",
+      "source_sections": {
+        "ir": [
+          "8.3",
+          "8.6",
+          "8.7"
+        ],
+        "er": [
+          "8.3",
+          "8.6",
+          "8.7"
+        ]
+      }
+    },
+    {
+      "card": "Mechanism of action and pharmacodynamics",
+      "assertions": "Preferential beta-1 blockade, reduced cardiac oxygen demand, incomplete selectivity, and ER delivery.",
+      "source_sections": {
+        "ir": [
+          "12.1",
+          "12.2"
+        ],
+        "er": [
+          "12.1",
+          "12.2"
+        ]
+      }
+    },
+    {
+      "card": "Pharmacokinetics",
+      "assertions": "CYP2D6 disposition, product-label half-life ranges, urinary metabolites, and distribution.",
+      "source_sections": {
+        "ir": [
+          "12.3"
+        ],
+        "er": [
+          "12.3",
+          "12.5"
+        ]
+      }
+    },
+    {
+      "card": "Monitoring parameters",
+      "assertions": "BP, HR and ECG monitoring; HF assessment during titration; glucose, interactions, hepatic review, and ischemia during taper.",
+      "source_sections": {
+        "ir": [
+          "2",
+          "5",
+          "7",
+          "8.6",
+          "17"
+        ],
+        "er": [
+          "2.3",
+          "5",
+          "7",
+          "8.6",
+          "17"
+        ],
+        "iv": [
+          "2",
+          "5.1"
+        ]
+      }
+    },
+    {
+      "card": "Patient counseling information",
+      "assertions": "Continuous use, tartrate meal timing, next scheduled missed dose without doubling, withdrawal, alertness, surgery, and breathing symptoms.",
+      "source_sections": {
+        "ir": [
+          "17"
+        ],
+        "er": [
+          "17",
+          "5.1"
+        ]
+      }
+    },
+    {
+      "card": "Representative oral product · Toprol-XL 25 mg",
+      "assertions": "Tartrate-equivalent strength expression, succinate salt, tablet appearance/imprint, and exact NDC.",
+      "source_sections": {
+        "er": [
+          "3",
+          "11",
+          "16"
+        ]
+      }
+    },
+    {
+      "card": "Dosage forms and strengths",
+      "assertions": "Selected tartrate and succinate tablet strengths, scoring, and IV concentration.",
+      "source_sections": {
+        "ir": [
+          "3",
+          "16"
+        ],
+        "er": [
+          "3",
+          "16"
+        ],
+        "iv": [
+          "3",
+          "16"
+        ]
+      }
+    },
+    {
+      "card": "Storage and handling",
+      "assertions": "Product-specific temperatures, excursions, and light/moisture/heat protection.",
+      "source_sections": {
+        "ir": [
+          "16"
+        ],
+        "er": [
+          "16"
+        ],
+        "iv": [
+          "16"
+        ]
+      }
+    }
+  ],
+  "resolved_source_findings": [
+    {
+      "severity": "source_error_resolved",
+      "source": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=00940cc5-d2eb-4841-9138-de97d7b1c674",
+      "detail": "Repackager version 1, effective 2026-07-27, section 16 incorrectly describes metformin 500 mg. Excluded its product-identification data. Traced source NDC 62332-114 to Alembic set ID 24837d82-0f3f-4482-9af0-31e5f675c30f and verified coherent metoprolol forms, imprints and NDCs."
+    },
+    {
+      "severity": "scope_distinction",
+      "detail": "Selected newer Alembic and Toprol-XL labels retain cessation warning in section 5.1 without a boxed heading; the linked 2016 tartrate label carries a boxed warning. No blanket boxed-status claim is made."
+    }
+  ],
+  "scope_exclusions": [
+    "ER sprinkle capsules and additional manufacturers require their own labels; no capsule swallowing/tube instructions generalized.",
+    "AF, SVT, migraine prophylaxis, and other off-label dose protocols are outside this reference. The public historical ACC toolkit supports recognition of AF rate control only; current full 2023 guideline access was blocked by publisher/PMC browser checks, so its full text was not claimed read.",
+    "Brand Lopressor labels are not used to erase ingredient-level tartrate HTN/angina/MI indications."
+  ],
+  "material_gaps": [],
+  "clinical_review": "Every published block checked against full relevant public label sections and the accessible professional references listed. Scope-limited source review, not an independent clinician sign-off.",
+  "validation": {
+    "validateMonograph": [],
+    "build": "parent integration pending",
+    "rendered_page_qa": "parent integration pending"
+  },
+  "monograph_sha256": "e34aedc1156328411993f5de3db090f450c539bfbf7de8e9e1cbb115b73e380d"
+}
