@@ -1,0 +1,559 @@
+{
+  "slug": "ergocalciferol",
+  "checked": "2026-10-01",
+  "status": "source_reviewed",
+  "scope": "Prescription vitamin D2 for selected rare mineral disorders. The 50,000 IU capsule requires a specific dose schedule and laboratory follow-up; its label is not a routine nutritional-deficiency protocol.",
+  "sources": [
+    {
+      "id": "label",
+      "title": "Ergocalciferol · 50,000 IU capsule",
+      "publisher": "DailyMed / Torrent",
+      "note": "PI footer September 2026; SPL version 3/effective September 4, 2026; publication September 10, 2026. Label retains legacy high-dose and pregnancy wording.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4ae38744-020d-4c37-a6f1-88f55c2f1047"
+    },
+    {
+      "id": "hypo",
+      "title": "Chronic hypoparathyroidism in adults · Revised guideline",
+      "publisher": "European Society of Endocrinology / EJE",
+      "note": "2025 open-access guideline; treatment R.3.3/R.3.9 and monitoring R.4 reviewed in full supporting sections.",
+      "url": "https://academic.oup.com/ejendo/article/193/5/G83/8321487"
+    },
+    {
+      "id": "prevention",
+      "title": "Vitamin D for prevention of disease · Guideline resources",
+      "publisher": "Endocrine Society",
+      "note": "June 3, 2024 public primary recommendations. Scope excludes a universal established-deficiency repletion protocol.",
+      "url": "https://www.endocrine.org/clinical-practice-guidelines/vitamin-d-for-prevention-of-disease"
+    }
+  ],
+  "sourceEvidence": {
+    "label": {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4ae38744-020d-4c37-a6f1-88f55c2f1047",
+      "checked": "2026-10-01",
+      "revision": "PI footer September 2026; SPL version 3/effective September 4, 2026; publication September 10, 2026. Label retains legacy high-dose and pregnancy wording.",
+      "access": "Full public supporting primary label/guideline sections read; no paywall access",
+      "splVersion": "3",
+      "effectiveTime": "20260904",
+      "xmlSha256": "402933c7a839c27323fc1eefdf234729d85798b9a75cae7e125586ef2194bbe6",
+      "localEvidence": "/tmp/nas-drug-sources/ergocalciferol.xml",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/4ae38744-020d-4c37-a6f1-88f55c2f1047.xml"
+    },
+    "hypo": {
+      "url": "https://academic.oup.com/ejendo/article/193/5/G83/8321487",
+      "checked": "2026-10-01",
+      "revision": "2025 open-access guideline; treatment R.3.3/R.3.9 and monitoring R.4 reviewed in full supporting sections.",
+      "access": "Full public supporting primary label/guideline sections read; no paywall access"
+    },
+    "prevention": {
+      "url": "https://www.endocrine.org/clinical-practice-guidelines/vitamin-d-for-prevention-of-disease",
+      "checked": "2026-10-01",
+      "revision": "June 3, 2024 public primary recommendations. Scope excludes a universal established-deficiency repletion protocol.",
+      "access": "Full public supporting primary label/guideline sections read; no paywall access"
+    }
+  },
+  "assertionMap": [
+    {
+      "section": "indications",
+      "card": "Labeled uses",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": [
+        "Indications /1",
+        "Guideline scope/recommendations"
+      ],
+      "claims": [
+        "Hypoparathyroidism, refractory/vitamin D resistant rickets and familial hypophosphatemia."
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "INDICATIONS AND USAGE"
+        ]
+      }
+    },
+    {
+      "section": "indications",
+      "card": "Guideline and off-label context",
+      "sourceIds": [
+        "label",
+        "hypo",
+        "prevention"
+      ],
+      "sourceSections": [
+        "Indications /1",
+        "Guideline scope/recommendations"
+      ],
+      "claims": [
+        "Nutritional-deficiency repletion is outside this capsule’s listed indications. The 2024 prevention guideline addresses people without established indications; it does not supply a universal high-dose deficiency course. Current adult hypoparathyroidism guidance prefers activated vitamin D when available."
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "INDICATIONS AND USAGE"
+        ],
+        "hypo": [
+          "2025 ESE5.3/R.3.3;R.3.9;5.4/R.4.2–R.4.5"
+        ],
+        "prevention": [
+          "2024 public guideline scope and Recommendation8"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Label regimens · Rare disorders only",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": [
+        "Dosage /2",
+        "Renal/hepatic /8.6–8.7",
+        "ESE R.3.3;R.3.9"
+      ],
+      "claims": [
+        [
+          "Vitamin D resistant rickets",
+          "12,000–500,000 IU/day; narrow therapeutic/toxic margin."
+        ],
+        [
+          "Hypoparathyroidism",
+          "50,000–200,000 IU/day with calcium lactate 4 g six times daily as stated in the legacy regimen."
+        ],
+        [
+          "Familial hypophosphatemia",
+          "Listed indication; no separate fixed dose supplied."
+        ]
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "DOSAGE AND ADMINISTRATION;PRECAUTIONS/General"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Contemporary hypoparathyroidism context",
+      "sourceIds": [
+        "hypo"
+      ],
+      "sourceSections": [
+        "Dosage /2",
+        "Renal/hepatic /8.6–8.7",
+        "ESE R.3.3;R.3.9"
+      ],
+      "claims": [
+        "The 2025 ESE guideline prefers activated vitamin D analogues. Supraphysiological calciferol is reserved for special circumstances or lack of access and carries toxicity risk; vitamin D3 is preferred in that fallback. Native D2/D3 800–2,000 IU/day supports vitamin D status in adult hypoparathyroidism, separate from activated-drug treatment."
+      ],
+      "sourceSectionsById": {
+        "hypo": [
+          "2025 ESE5.3/R.3.3;R.3.9;5.4/R.4.2–R.4.5"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Administration and organ considerations",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": [
+        "Dosage /2",
+        "Renal/hepatic /8.6–8.7",
+        "ESE R.3.3;R.3.9"
+      ],
+      "claims": [
+        "Do not turn broad label ranges into capsule-count instructions. Verify the prescribed frequency, total supplements and calcium plan; adjust with response. The label supplies no renal/hepatic dose algorithm. Renal disease, phosphate elevation and impaired metabolite activation require specialist assessment to prevent calcification."
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "DOSAGE AND ADMINISTRATION;PRECAUTIONS/General"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": [
+        "Boxed warning/status",
+        "Contraindications /4",
+        "Warnings/Precautions /5",
+        "Adverse reactions /6",
+        "Overdosage /10"
+      ],
+      "claims": [
+        "Individual sensitivity varies; infants with idiopathic hypercalcemia may require strict vitamin D restriction. High therapeutic doses need frequent calcium testing. Excess vitamin D can injure kidneys and calcify tissues; hyperphosphatemia adds risk. Selected capsule contains tartrazine, which may provoke allergy/asthma, particularly with aspirin sensitivity."
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "WARNINGS;CONTRAINDICATIONS;PRECAUTIONS/General;ADVERSE REACTIONS;OVERDOSAGE"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": [
+        "Boxed warning/status",
+        "Contraindications /4",
+        "Warnings/Precautions /5",
+        "Adverse reactions /6",
+        "Overdosage /10"
+      ],
+      "claims": [
+        "Hypercalcemia, malabsorption syndrome, abnormal sensitivity to vitamin D toxic effects, or hypervitaminosis D, as specified by the selected label."
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "WARNINGS;CONTRAINDICATIONS;PRECAUTIONS/General;ADVERSE REACTIONS;OVERDOSAGE"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Boxed warning status",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": [
+        "Boxed warning/status",
+        "Contraindications /4",
+        "Warnings/Precautions /5",
+        "Adverse reactions /6",
+        "Overdosage /10"
+      ],
+      "claims": [
+        "The selected U.S. label has no boxed warning. Its high-dose toxicity precautions remain essential."
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "WARNINGS;CONTRAINDICATIONS;PRECAUTIONS/General;ADVERSE REACTIONS;OVERDOSAGE"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": [
+        "Boxed warning/status",
+        "Contraindications /4",
+        "Warnings/Precautions /5",
+        "Adverse reactions /6",
+        "Overdosage /10"
+      ],
+      "claims": [
+        "Toxicity may cause nausea, appetite loss, constipation, weakness, excessive thirst/urination, hypercalciuria, renal failure and widespread calcification; child growth and adult bone mineralization can be harmed. Effects may persist ≥2 months after stopping. Suspected overdose requires urgent assessment, stopping further vitamin D and clinician-directed calcium/renal management."
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "WARNINGS;CONTRAINDICATIONS;PRECAUTIONS/General;ADVERSE REACTIONS;OVERDOSAGE"
+        ]
+      }
+    },
+    {
+      "section": "interactions",
+      "card": "Clinically relevant interactions",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": [
+        "Drug Interactions /7",
+        "Precautions/Drug Interactions"
+      ],
+      "claims": [
+        "Mineral oil impairs fat-soluble vitamin absorption.",
+        "Thiazides can cause hypercalcemia in hypoparathyroid patients treated with ergocalciferol; monitor the calcium plan.",
+        "Review other vitamin D sources and calcium intake before increasing treatment; avoid unplanned duplicate products."
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "PRECAUTIONS/Drug Interactions;General"
+        ]
+      }
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy and lactation",
+      "sourceIds": [
+        "label",
+        "prevention"
+      ],
+      "sourceSections": [
+        "Pregnancy/Lactation/Pediatric/Geriatric /8",
+        "Endocrine2024 recommendation8"
+      ],
+      "claims": [
+        "The capsule label warns about hypervitaminosis D fetal harm and retains legacy “above 400 IU” safety wording; this is not a modern universal intake ceiling. The 2024 guideline suggests empiric supplementation in healthy pregnancy, within its separate scope. High-dose rare-disorder therapy requires specialist review. Large maternal doses can cause infant hypercalcemia; assess infant calcium as directed."
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "PRECAUTIONS/Pregnancy;Nursing Mothers;Pediatric;Geriatric"
+        ],
+        "prevention": [
+          "2024 public guideline scope and Recommendation8"
+        ]
+      }
+    },
+    {
+      "section": "populations",
+      "card": "Pediatric and geriatric considerations",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": [
+        "Pregnancy/Lactation/Pediatric/Geriatric /8",
+        "Endocrine2024 recommendation8"
+      ],
+      "claims": [
+        "Pediatric doses must be individualized; the 50,000 IU capsule is not a routine infant product. Older-adult studies are limited; cautious selection reflects organ function, comorbidity and other medicines."
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "PRECAUTIONS/Pregnancy;Nursing Mothers;Pediatric;Geriatric"
+        ]
+      }
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism of action",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": [
+        "Clinical Pharmacology /12.1–12.3",
+        "Description /unit conversion"
+      ],
+      "claims": [
+        "Activated metabolites promote intestinal calcium/phosphate absorption and affect bone/renal mineral handling. Ergocalciferol is vitamin D2, not cholecalciferol (D3) or calcitriol."
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "CLINICAL PHARMACOLOGY;DESCRIPTION;OVERDOSAGE"
+        ]
+      }
+    },
+    {
+      "section": "pharmacology",
+      "card": "Pharmacokinetics",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": [
+        "Clinical Pharmacology /12.1–12.3",
+        "Description /unit conversion"
+      ],
+      "claims": [
+        [
+          "Activation",
+          "Liver forms 25-hydroxyvitamin D; kidney forms active 1,25-dihydroxyvitamin D."
+        ],
+        [
+          "Label onset lag",
+          "Approximately 10–24 hours before action begins."
+        ],
+        [
+          "Persistence",
+          "Excess-dose effects may persist for two or more months."
+        ],
+        [
+          "Dose conversion",
+          "1 microgram D2 = 40 IU; 50,000 IU = 1,250 micrograms."
+        ]
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "CLINICAL PHARMACOLOGY;DESCRIPTION;OVERDOSAGE"
+        ]
+      }
+    },
+    {
+      "section": "practice",
+      "card": "Monitoring parameters",
+      "sourceIds": [
+        "label",
+        "hypo"
+      ],
+      "sourceSections": [
+        "Warnings/Patient counseling /17",
+        "Dosage monitoring",
+        "ESE R.4.2–R.4.5"
+      ],
+      "claims": [
+        "Label high-dose regimens: calcium/phosphorus every 2 weeks or more often; monthly bone radiographs until correction/stability.",
+        "Adult hypoparathyroidism guideline: calcium, phosphate, magnesium, creatinine/eGFR and symptoms; reassess soon after treatment changes and evaluate urinary calcium/renal complications as appropriate.",
+        "Review all vitamin D/calcium intake, toxicity symptoms and adherence to exact frequency."
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "DOSAGE AND ADMINISTRATION;PRECAUTIONS/General"
+        ],
+        "hypo": [
+          "2025 ESE5.3/R.3.3;R.3.9;5.4/R.4.2–R.4.5"
+        ]
+      }
+    },
+    {
+      "section": "practice",
+      "card": "Patient counseling information",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": [
+        "Warnings/Patient counseling /17",
+        "Dosage monitoring",
+        "ESE R.4.2–R.4.5"
+      ],
+      "claims": [
+        "Check units and daily versus weekly or other schedule at every refill. Do not add vitamin D/calcium supplements independently. Report nausea, constipation, marked thirst, frequent urination, weakness or confusion. Keep capsules away from children; tell clinicians about pregnancy, breastfeeding and new medicines."
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "DOSAGE AND ADMINISTRATION;PRECAUTIONS/General"
+        ]
+      }
+    },
+    {
+      "section": "product",
+      "card": "Representative product · Torrent 50,000 IU capsule",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": [
+        "Description/Forms /3/11",
+        "How supplied/storage /16",
+        "Package panels"
+      ],
+      "claims": [
+        [
+          "Strength",
+          "1.25 mg = 1,250 micrograms = 50,000 IU D2."
+        ],
+        [
+          "Appearance / imprint",
+          "Clear forest-green oval softgel; E09."
+        ],
+        [
+          "Distributor / manufacturer",
+          "Torrent Pharma / Esjay Pharma."
+        ],
+        [
+          "Example NDC",
+          "13668-757-01 · 100 capsules."
+        ],
+        [
+          "U.S. status",
+          "Prescription capsule."
+        ]
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "DESCRIPTION;HOW SUPPLIED;package characteristics"
+        ]
+      }
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": [
+        "Description/Forms /3/11",
+        "How supplied/storage /16",
+        "Package panels"
+      ],
+      "claims": [
+        [
+          "Selected product",
+          "50,000 IU oral softgel capsule."
+        ],
+        [
+          "Outside scope",
+          "Other D2 liquids/supplements, D3 products and activated analogues; no automatic substitution."
+        ]
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "DESCRIPTION;HOW SUPPLIED;package characteristics"
+        ]
+      }
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": [
+        "Description/Forms /3/11",
+        "How supplied/storage /16",
+        "Package panels"
+      ],
+      "claims": [
+        "Store at 25°C, excursions 15–30°C; protect from light. Dispense in a tight, light-resistant container. Check exact ingredients for tartrazine/soy/gelatin concerns."
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "DESCRIPTION;HOW SUPPLIED;package characteristics"
+        ]
+      }
+    },
+    {
+      "section": "hero/essential",
+      "card": "Scope and safety",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": [
+        "Indications",
+        "Warnings",
+        "Clinical Pharmacology",
+        "Description"
+      ],
+      "claims": [
+        "Prescription vitamin D2 for selected rare mineral disorders. The 50,000 IU capsule requires a specific dose schedule and laboratory follow-up; its label is not a routine nutritional-deficiency protocol.",
+        "50,000 IU equals 1,250 micrograms (1.25 mg). Excess dosing can cause prolonged hypercalcemia, renal injury and tissue calcification.",
+        [
+          "Vitamin form",
+          "Ergocalciferol · vitamin D2"
+        ],
+        [
+          "Selected capsule",
+          "50,000 IU = 1.25 mg"
+        ],
+        [
+          "Reference focus",
+          "Current U.S. capsule label and endocrine guidance"
+        ]
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "INDICATIONS;WARNINGS;DESCRIPTION"
+        ]
+      }
+    }
+  ],
+  "exclusions": [
+    "Nutritional-deficiency dosing courses, other D2 products, D3 and activated vitamin D dosing; no universal routine high-dose supplementation"
+  ],
+  "gaps": [],
+  "validation": {
+    "schema": "Passed validateMonograph: zero errors; exact eight sections, four Safety cards and three Product cards.",
+    "renderedPage": "Pending parent integration QA"
+  },
+  "monographSha256": "e51f496b73cf4973b7bd74f2b13bc1010e1f73a3ef95a542a6a4ce2731247795",
+  "sourceInterpretationNotes": [
+    "SPL effectiveTime is distinguished from clinical PI footer and DailyMed publication; no stock/availability inference.",
+    "Current label retains historically high rare-disorder regimens; 2025 ESE guidance materially contextualizes them. Numbers reported as label evidence, not routine prescribing advice.",
+    "Legacy pregnancy400IU statement is explicitly distinguished from current prevention guideline and is not propagated as a universal safe upper limit.",
+    "Nutritional deficiency course intentionally not specified without a population-specific current primary plan; this is a scope limitation, not an invented dose.",
+    "ESE full supporting treatment sections5.3/R.3.3 and R.3.9 and monitoring5.4/R.4 read; unrelated guideline algorithms not claimed."
+  ]
+}

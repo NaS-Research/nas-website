@@ -1,0 +1,1727 @@
+{
+  "drug": "cetirizine",
+  "status": "source_reviewed",
+  "checked": "2026-10-01",
+  "scope": "Current U.S. pediatric Rx oral solution, OTC product-specific age directions and representative oral forms, Quzyttir IV for acute urticaria, and Zerviate ophthalmic solution; FDA May 2025 withdrawal-pruritus update; current public LactMed.",
+  "blueprint": {
+    "sections": [
+      [
+        "indications",
+        "Indications"
+      ],
+      [
+        "dosage",
+        "Dosage and administration"
+      ],
+      [
+        "safety",
+        "Safety"
+      ],
+      [
+        "interactions",
+        "Drug interactions"
+      ],
+      [
+        "populations",
+        "Use in specific populations"
+      ],
+      [
+        "pharmacology",
+        "Clinical pharmacology"
+      ],
+      [
+        "practice",
+        "Monitoring and counseling"
+      ],
+      [
+        "product",
+        "Product identification"
+      ]
+    ],
+    "essential_safety": true,
+    "hero_facts": 3,
+    "APAP_modified": false
+  },
+  "source_records": [
+    {
+      "id": "rx",
+      "local_snapshot": "/tmp/nas-drug-sources/cetirizine-rx-full.xml",
+      "sha256": "b25c5320689c194b293465c873f41bee260208a017210d33c3b7c782f1d8c09f",
+      "label_revision": "August 2025",
+      "review_method": "Full relevant current clinical source sections read; dose, route, age and product tables checked against source text. No unaccessed guideline or source claimed.",
+      "set_id": "2f47dbc5-dfb4-425c-9fe4-777fa3c4e72e",
+      "spl_version": "10",
+      "spl_effective_time": "20250831",
+      "dailymed_published_date": "2026-08-17",
+      "metadata_note": "Published/update date differs from clinical revision and SPL effectiveTime."
+    },
+    {
+      "id": "otc",
+      "local_snapshot": "/tmp/nas-drug-sources/cetirizine-otc.xml",
+      "sha256": "477c07a8434898616b381da8553ba5b01348c04ff3d37bc4f0fa911339c44287",
+      "label_revision": "Drug Facts current September 2026",
+      "review_method": "Full relevant current clinical source sections read; dose, route, age and product tables checked against source text. No unaccessed guideline or source claimed.",
+      "set_id": "30cbaa91-2216-efd2-e063-6294a90aaaed",
+      "spl_version": "4",
+      "spl_effective_time": "20260925"
+    },
+    {
+      "id": "chew",
+      "local_snapshot": "/tmp/nas-drug-sources/cetirizine-chewable.xml",
+      "sha256": "5ef9bebc7d3ba56843b2d1596774f9dd34c652ca55688467b00fe1f1e06aa141",
+      "label_revision": "Drug Facts current April 2026",
+      "review_method": "Full relevant current clinical source sections read; dose, route, age and product tables checked against source text. No unaccessed guideline or source claimed.",
+      "spl_version": "14",
+      "spl_effective_time": "20260422"
+    },
+    {
+      "id": "forms",
+      "local_snapshot": "/tmp/nas-drug-sources/cetirizine-tablet.xml",
+      "sha256": "8b88d1862bd1d52363d5307cd49eed47de3e9a06c9d0182c3d9184fedf373460",
+      "label_revision": "Drug Facts current October 2025",
+      "review_method": "Full relevant current clinical source sections read; dose, route, age and product tables checked against source text. No unaccessed guideline or source claimed.",
+      "spl_version": "25",
+      "spl_effective_time": "20251010"
+    },
+    {
+      "id": "iv",
+      "local_snapshot": "/tmp/nas-drug-sources/quzyttir.xml",
+      "sha256": "32cfd35c16ab9bd5f498e4e664b9f23081b8babb48448481fd9f1df7880cfb2a",
+      "label_revision": "Clinical revision date not stated in accessed SPL",
+      "review_method": "Full relevant current clinical source sections read; dose, route, age and product tables checked against source text. No unaccessed guideline or source claimed.",
+      "spl_version": "5",
+      "spl_effective_time": "20260922",
+      "metadata_note": "SPL effective date and API publication are recorded separately; neither is represented as a stated clinical PI revision date."
+    },
+    {
+      "id": "eye",
+      "local_snapshot": "/tmp/nas-drug-sources/zerviate.xml",
+      "sha256": "7a01e995f3bb26804c5f4a3c141012f301721ab2303b5cd6899787e66f2d2421",
+      "label_revision": "Clinical revision date not stated in accessed SPL",
+      "review_method": "Full relevant current clinical source sections read; dose, route, age and product tables checked against source text. No unaccessed guideline or source claimed.",
+      "spl_version": "3",
+      "spl_effective_time": "20260803",
+      "metadata_note": "SPL effective date and API publication are recorded separately; neither is represented as a stated clinical PI revision date."
+    },
+    {
+      "id": "fda",
+      "url": "https://www.fda.gov/drugs/drug-safety-communications/fda-requires-warning-about-rare-severe-itching-after-stopping-long-term-use-oral-allergy-medicines",
+      "version": "May 16, 2025",
+      "access": "Full public FDA safety communication including Data Summary read",
+      "review_method": "Full relevant current clinical source sections read; dose, route, age and product tables checked against source text. No unaccessed guideline or source claimed."
+    },
+    {
+      "id": "milk",
+      "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK501509/",
+      "version": "September 15, 2025",
+      "access": "Full public LactMed clinical sections read via accessible /sites/books route",
+      "review_method": "Full relevant current clinical source sections read; dose, route, age and product tables checked against source text. No unaccessed guideline or source claimed."
+    },
+    {
+      "id": "chewlow",
+      "local_snapshot": "/tmp/nas-drug-sources/cetirizine-5chew.xml",
+      "sha256": "54c7863d48842b0b94c8edeeb1971dd30de4ceb3a26582c8761e8d64b5e15cf2",
+      "label_revision": "Current Drug Facts",
+      "review_method": "Full relevant current clinical source sections read; dose, route, age and product tables checked against source text. No unaccessed guideline or source claimed.",
+      "set_id": "013ce40e-37c9-4b84-b530-ed895f60ce0e",
+      "spl_version": "8",
+      "spl_effective_time": "20250407"
+    },
+    {
+      "id": "odt",
+      "local_snapshot": "/tmp/nas-drug-sources/cetirizine-odt.xml",
+      "sha256": "d8ce73da2a4fcc0ee61302ecb1d6d0ae8b3557fdf236c0be500f1b9bfd0c313b",
+      "label_revision": "Current Drug Facts",
+      "review_method": "Full relevant current clinical source sections read; dose, route, age and product tables checked against source text. No unaccessed guideline or source claimed.",
+      "set_id": "6a962a1c-c197-492b-bfa6-e0c28eda1533",
+      "spl_version": "17",
+      "spl_effective_time": "20250411"
+    },
+    {
+      "id": "capsule",
+      "local_snapshot": "/tmp/nas-drug-sources/cetirizine-capsule.xml",
+      "sha256": "6511424a9063e6f05b14ff6ee8f7a52772ec085a4d3fcece9bba49c431c089df",
+      "label_revision": "Current Drug Facts",
+      "review_method": "Full relevant current clinical source sections read; dose, route, age and product tables checked against source text. No unaccessed guideline or source claimed.",
+      "set_id": "0face45c-af24-3559-e063-6294a90abde5",
+      "spl_version": "6",
+      "spl_effective_time": "20251021"
+    }
+  ],
+  "assertion_source_map": [
+    {
+      "card": "Oral prescription and OTC uses",
+      "sources": [
+        {
+          "id": "rx",
+          "sections": "Indications and Usage; Pediatric Use"
+        },
+        {
+          "id": "otc",
+          "sections": "Uses; Directions"
+        },
+        {
+          "id": "chew",
+          "sections": "Uses; Directions"
+        },
+        {
+          "id": "forms",
+          "sections": "Uses; Directions; 2.5 mg chewable supplemental label"
+        },
+        {
+          "id": "fda",
+          "sections": "What are cetirizine and levocetirizine?"
+        },
+        {
+          "id": "chewlow",
+          "sections": "Active ingredient; Directions; Warnings; Other information"
+        },
+        {
+          "id": "odt",
+          "sections": "Active ingredient; Directions; Warnings; Other information"
+        },
+        {
+          "id": "capsule",
+          "sections": "Active ingredient; Directions; Warnings; Other information"
+        }
+      ],
+      "assertions": [
+        "The reviewed prescription solution covers perennial allergic rhinitis at age 6\u201323 months and chronic idiopathic urticaria at age 6 months\u20135 years. FDA describes seasonal-allergy approval from age 2 and perennial-allergy/chronic-hive approval from 6 months across oral products. Reviewed OTC allergy products relieve sneezing, rhinorrhea and itchy eyes/nose/throat; their self-care directions begin at age 2 for appropriate low-dose liquids/chewables or age 6 for 10 mg products. Do not infer infant OTC self-treatment."
+      ],
+      "section": "indications"
+    },
+    {
+      "card": "IV and ophthalmic uses",
+      "sources": [
+        {
+          "id": "iv",
+          "sections": "1; 8.4"
+        },
+        {
+          "id": "eye",
+          "sections": "1; 8.4"
+        }
+      ],
+      "assertions": [
+        "Quzyttir treats acute urticaria in adults and children at least 6 months old; it is a supervised IV product. Zerviate treats ocular itching from allergic conjunctivitis, with pediatric safety/effectiveness established from age 2. These routes do not use the oral solution schedule."
+      ],
+      "section": "indications"
+    },
+    {
+      "card": "OTC oral allergy dosing",
+      "sources": [
+        {
+          "id": "otc",
+          "sections": "Directions"
+        },
+        {
+          "id": "rx",
+          "sections": "Dosage and Administration"
+        }
+      ],
+      "assertions": [
+        "For the reviewed 1 mg/mL solution, dosing may be taken without regard to food. The following are Drug Facts self-care directions; organ disease and age limits require clinician advice."
+      ],
+      "table_assertions": {
+        "headers": [
+          "Age",
+          "Dose of 1 mg/mL solution",
+          "Daily maximum"
+        ],
+        "rows": [
+          [
+            "2 to <6 years",
+            "2.5 mg (2.5 mL) once daily; if needed 5 mg once daily or 2.5 mg every 12 hours",
+            "5 mg"
+          ],
+          [
+            "6 to <65 years",
+            "5 or 10 mg (5 or 10 mL) once daily, based on symptoms",
+            "10 mg"
+          ],
+          [
+            "\u226565 years",
+            "5 mg (5 mL) once daily for this solution",
+            "5 mg"
+          ],
+          [
+            "<2 years or kidney/liver disease",
+            "Ask a clinician; not an OTC infant dosing authorization",
+            "Clinician-determined"
+          ]
+        ]
+      },
+      "section": "dosage"
+    },
+    {
+      "card": "Prescription infant and young-child dosing",
+      "sources": [
+        {
+          "id": "rx",
+          "sections": "Indications and Usage; Dosage and Administration; Pediatric Use"
+        }
+      ],
+      "assertions": [
+        "For the reviewed prescription solution: age 6\u201311 months, 2.5 mg (2.5 mL) once daily for perennial rhinitis or chronic urticaria; age 12\u201323 months may increase to 2.5 mg every 12 hours, maximum 5 mg/day. Age 2\u20135 years with chronic urticaria starts at 2.5 mg once daily and may increase to 5 mg once daily or 2.5 mg every 12 hours. Use clinician supervision; trial mg/kg exposures are not the recommended dosing table."
+      ],
+      "section": "dosage"
+    },
+    {
+      "card": "Tablets, chewables, capsules and ODTs",
+      "sources": [
+        {
+          "id": "chew",
+          "sections": "Directions; supplemental 2.5 mg chewable, 10 mg ODT and capsule Drug Facts"
+        },
+        {
+          "id": "forms",
+          "sections": "Directions; supplemental 2.5 mg chewable, 10 mg ODT and capsule Drug Facts"
+        },
+        {
+          "id": "chewlow",
+          "sections": "Active ingredient; Directions; Warnings; Other information"
+        },
+        {
+          "id": "odt",
+          "sections": "Active ingredient; Directions; Warnings; Other information"
+        },
+        {
+          "id": "capsule",
+          "sections": "Active ingredient; Directions; Warnings; Other information"
+        }
+      ],
+      "assertions": [
+        "Reviewed 10 mg tablets, liquid-filled capsules, ODTs and 10 mg chewables use one daily dose from age 6, maximum 10 mg/day, with a 5 mg product potentially appropriate for milder symptoms. Those 10 mg packages direct adults \u226565 and children <6 to a clinician. Chew/crush chewables fully before swallowing; ODTs melt in the mouth. The separately reviewed 2.5 mg chewable permits age 2\u2013<6 dosing of one daily, increasing to two daily or one every 12 hours if needed, maximum 5 mg/day. Do not choose tablet count without checking its strength."
+      ],
+      "section": "dosage"
+    },
+    {
+      "card": "Quzyttir IV dosing",
+      "sources": [
+        {
+          "id": "iv",
+          "sections": "2; 3"
+        }
+      ],
+      "assertions": [
+        "Administer as an IV push over 1\u20132 minutes, once every 24 hours as needed for acute urticaria. Its 10 mg/mL solution requires accurate small-volume measurement. For pretreatment of an infusion product, follow that infusion product\u2019s prescribing instructions."
+      ],
+      "table_assertions": {
+        "headers": [
+          "Age",
+          "IV dose",
+          "Volume at 10 mg/mL"
+        ],
+        "rows": [
+          [
+            "6 months\u20135 years",
+            "2.5 mg",
+            "0.25 mL"
+          ],
+          [
+            "6\u201311 years",
+            "5 or 10 mg, based on severity",
+            "0.5 or 1 mL"
+          ],
+          [
+            "\u226512 years",
+            "10 mg",
+            "1 mL"
+          ]
+        ]
+      },
+      "section": "dosage"
+    },
+    {
+      "card": "Zerviate eye-drop administration",
+      "sources": [
+        {
+          "id": "eye",
+          "sections": "2; 5.1\u20135.2; 17"
+        }
+      ],
+      "assertions": [
+        "Instill one drop in each affected eye twice daily, approximately 8 hours apart. Use the opened single-use container immediately for one or both eyes, then discard remaining solution. Do not touch its tip to the eye/skin. Remove contacts first; reinsert after 10 minutes and avoid contacts in a red eye."
+      ],
+      "section": "dosage"
+    },
+    {
+      "card": "Warnings and precautions",
+      "sources": [
+        {
+          "id": "rx",
+          "sections": "Activities Requiring Mental Alertness; New Onset Pruritus"
+        },
+        {
+          "id": "otc",
+          "sections": "Warnings"
+        },
+        {
+          "id": "iv",
+          "sections": "1; 5.1; 8.4"
+        },
+        {
+          "id": "eye",
+          "sections": "5; 17"
+        },
+        {
+          "id": "fda",
+          "sections": "Patient / professional actions; Data Summary"
+        }
+      ],
+      "assertions": [
+        "Cetirizine can cause drowsiness; use caution with driving or machinery and avoid alcohol or other CNS depressants. Assess kidney/liver disease before oral self-care. Stop and seek help for allergic reactions.",
+        "Rare severe widespread itching may begin within days after stopping oral cetirizine used daily for months or years, even without baseline itching. Discuss this before prolonged use and seek clinician advice if it occurs; restarting or tapering has helped reported cases, but effective treatment has not been established in controlled evaluation.",
+        "For Zerviate, prevent tip contamination, follow contact-lens instructions and discard opened single-use containers. Quzyttir is not recommended below age 6 with renal or hepatic impairment."
+      ],
+      "section": "safety"
+    },
+    {
+      "card": "Contraindications",
+      "sources": [
+        {
+          "id": "rx",
+          "sections": "Contraindications"
+        },
+        {
+          "id": "otc",
+          "sections": "Do not use"
+        },
+        {
+          "id": "iv",
+          "sections": "4"
+        },
+        {
+          "id": "eye",
+          "sections": "4"
+        }
+      ],
+      "assertions": [
+        "Oral cetirizine is contraindicated with known cetirizine, ingredient or hydroxyzine hypersensitivity. Quzyttir also explicitly contraindicates levocetirizine hypersensitivity. Zerviate\u2019s current label lists no formal contraindications; its eye-specific precautions still apply."
+      ],
+      "section": "safety"
+    },
+    {
+      "card": "Boxed warning status",
+      "sources": [
+        {
+          "id": "rx",
+          "sections": "Full labels / warning sections; FDA Safety Communication"
+        },
+        {
+          "id": "otc",
+          "sections": "Full labels / warning sections; FDA Safety Communication"
+        },
+        {
+          "id": "iv",
+          "sections": "Full labels / warning sections; FDA Safety Communication"
+        },
+        {
+          "id": "eye",
+          "sections": "Full labels / warning sections; FDA Safety Communication"
+        },
+        {
+          "id": "fda",
+          "sections": "Full labels / warning sections; FDA Safety Communication"
+        }
+      ],
+      "assertions": [
+        "The reviewed oral, IV and ophthalmic labels have no boxed warning. That does not remove sedation risk, hypersensitivity precautions or the FDA warning about severe itching after long-term oral use is stopped."
+      ],
+      "section": "safety"
+    },
+    {
+      "card": "Adverse reactions",
+      "sources": [
+        {
+          "id": "rx",
+          "sections": "Adverse Reactions"
+        },
+        {
+          "id": "iv",
+          "sections": "6.1"
+        },
+        {
+          "id": "eye",
+          "sections": "6"
+        }
+      ],
+      "assertions": [
+        "Systemic use can cause somnolence, fatigue, dry mouth and dizziness; younger children may have irritability or insomnia. Quzyttir studies also reported dyspepsia, taste change, feeling hot, headache and presyncope at low frequency. Zerviate trials reported eye redness, instillation pain and reduced visual acuity. Serious postmarketing oral reports include anaphylaxis, liver injury, seizures, severe skin reactions and withdrawal pruritus; reports do not establish incidence."
+      ],
+      "section": "safety"
+    },
+    {
+      "card": "Alcohol, sedatives and theophylline",
+      "sources": [
+        {
+          "id": "rx",
+          "sections": "Mental Alertness; Drug-Drug Interactions; Pharmacokinetics"
+        },
+        {
+          "id": "otc",
+          "sections": "Warnings"
+        },
+        {
+          "id": "iv",
+          "sections": "5.1; 7; 12.3"
+        }
+      ],
+      "assertions": [
+        "Alcohol and CNS depressants may further impair alertness with systemic cetirizine. Review sedatives/tranquilizers before use. Oral interaction studies found no clinically important interaction with several tested antibiotics or low-dose theophylline, but theophylline 400 mg reduced cetirizine clearance modestly; larger doses may have greater effects. Do not infer that all combinations are interaction-free."
+      ],
+      "section": "interactions"
+    },
+    {
+      "card": "Formulation and combination review",
+      "sources": [
+        {
+          "id": "otc",
+          "sections": "Active ingredient; Directions; reviewed standalone formulations"
+        },
+        {
+          "id": "forms",
+          "sections": "Active ingredient; Directions; reviewed standalone formulations"
+        },
+        {
+          "id": "chewlow",
+          "sections": "Active ingredient; Directions; Warnings; Other information"
+        },
+        {
+          "id": "odt",
+          "sections": "Active ingredient; Directions; Warnings; Other information"
+        },
+        {
+          "id": "capsule",
+          "sections": "Active ingredient; Directions; Warnings; Other information"
+        }
+      ],
+      "assertions": [
+        "Check for cetirizine in more than one product and distinguish cetirizine alone from pseudoephedrine-containing combination products. This page does not provide the combination\u2019s dosing or decongestant safety rules. OTC allergy formulations share the same active drug despite different brands and strengths."
+      ],
+      "section": "interactions"
+    },
+    {
+      "card": "Kidney and liver considerations",
+      "sources": [
+        {
+          "id": "otc",
+          "sections": "Ask a doctor; Directions"
+        },
+        {
+          "id": "forms",
+          "sections": "Ask a doctor; Directions"
+        },
+        {
+          "id": "iv",
+          "sections": "8.4; 8.6\u20138.7; 12.3"
+        },
+        {
+          "id": "eye",
+          "sections": "Full prescribing information"
+        },
+        {
+          "id": "chewlow",
+          "sections": "Active ingredient; Directions; Warnings; Other information"
+        },
+        {
+          "id": "odt",
+          "sections": "Active ingredient; Directions; Warnings; Other information"
+        },
+        {
+          "id": "capsule",
+          "sections": "Active ingredient; Directions; Warnings; Other information"
+        }
+      ],
+      "assertions": [
+        "Current reviewed OTC oral products require clinician dose selection for kidney or liver disease; they do not supply a numerical adjustment chart. Oral PK studies summarized in the current Quzyttir label show prolonged elimination with CrCl 11\u201331 mL/min and dialysis, and with chronic liver disease. Quzyttir itself requires no adjustment for renal/hepatic impairment in eligible patients, with monitoring for antihistamine effects, but is not recommended below age 6 with either impairment. Ophthalmic labeling supplies no organ-adjustment schedule."
+      ],
+      "section": "populations"
+    },
+    {
+      "card": "Children and older adults",
+      "sources": [
+        {
+          "id": "rx",
+          "sections": "Pediatric Use"
+        },
+        {
+          "id": "otc",
+          "sections": "Directions"
+        },
+        {
+          "id": "forms",
+          "sections": "Directions"
+        },
+        {
+          "id": "iv",
+          "sections": "8.4\u20138.5; 12.3"
+        },
+        {
+          "id": "eye",
+          "sections": "8.4\u20138.5"
+        },
+        {
+          "id": "chewlow",
+          "sections": "Active ingredient; Directions; Warnings; Other information"
+        },
+        {
+          "id": "odt",
+          "sections": "Active ingredient; Directions; Warnings; Other information"
+        },
+        {
+          "id": "capsule",
+          "sections": "Active ingredient; Directions; Warnings; Other information"
+        }
+      ],
+      "assertions": [
+        "Prescription oral and IV data start at 6 months; younger-infant safety/effectiveness is not established. Match each pediatric regimen to its indication. Ophthalmic approval/data begin at age 2. For older adults, review renal function and sedation susceptibility; the OTC liquid\u2019s 5 mg/day direction differs from 10 mg tablet/capsule packages that advise clinician input."
+      ],
+      "section": "populations"
+    },
+    {
+      "card": "Pregnancy",
+      "sources": [
+        {
+          "id": "otc",
+          "sections": "Pregnant / breast-feeding warning"
+        },
+        {
+          "id": "iv",
+          "sections": "8.1"
+        },
+        {
+          "id": "eye",
+          "sections": "8.1"
+        }
+      ],
+      "assertions": [
+        "OTC labels advise consulting a health professional before pregnancy use. Current IV/ophthalmic labels have insufficient controlled human pregnancy evidence; animal studies did not show teratogenicity at the studied high oral exposures. Make a patient-specific decision about route and benefit/risk rather than declaring universal pregnancy safety."
+      ],
+      "section": "populations"
+    },
+    {
+      "card": "Breastfeeding",
+      "sources": [
+        {
+          "id": "otc",
+          "sections": "Pregnant / breast-feeding warning"
+        },
+        {
+          "id": "iv",
+          "sections": "8.2"
+        },
+        {
+          "id": "eye",
+          "sections": "8.2; 12.3"
+        },
+        {
+          "id": "milk",
+          "sections": "Summary; Drug Levels; Effects on Lactation"
+        }
+      ],
+      "assertions": [
+        "The OTC Drug Facts say breastfeeding use is not recommended; LactMed\u2019s September 2025 assessment considers occasional small oral doses acceptable and cetirizine an acceptable antihistamine option when needed. Larger/prolonged doses may sedate an infant or reduce milk supply, particularly early in lactation or with pseudoephedrine. Reconcile that evidence with maternal need and infant monitoring through a clinician. Eye-drop exposure is much lower; pressing the tear duct for at least a minute and wiping excess reduces systemic absorption."
+      ],
+      "section": "populations"
+    },
+    {
+      "card": "Mechanism and oral disposition",
+      "sources": [
+        {
+          "id": "rx",
+          "sections": "Mechanism; Pharmacokinetics"
+        },
+        {
+          "id": "iv",
+          "sections": "12.1\u201312.3"
+        }
+      ],
+      "assertions": [
+        "Cetirizine is a hydroxyzine metabolite acting mainly at peripheral H1 receptors. Oral peak concentrations occur around 1 hour; protein binding is about 93% and adult elimination half-life about 8.3 hours. Metabolism is limited, with substantial urinary recovery as unchanged drug. Food delays the peak without materially changing total exposure."
+      ],
+      "section": "pharmacology"
+    },
+    {
+      "card": "Route differences",
+      "sources": [
+        {
+          "id": "iv",
+          "sections": "8.4; 12.3"
+        },
+        {
+          "id": "eye",
+          "sections": "8.2; 12.3"
+        }
+      ],
+      "assertions": [
+        "IV administration produces a higher peak than oral dosing even when overall exposure is similar; that distinction supports supervised dosing. Ophthalmic administration produces much lower systemic concentrations than oral 10 mg treatment. Neither comparison permits exchanging route-specific milligram doses."
+      ],
+      "section": "pharmacology"
+    },
+    {
+      "card": "Monitoring and counseling",
+      "sources": [
+        {
+          "id": "rx",
+          "sections": "Dosage; Precautions"
+        },
+        {
+          "id": "otc",
+          "sections": "Directions; Warnings"
+        },
+        {
+          "id": "forms",
+          "sections": "Directions; Warnings"
+        },
+        {
+          "id": "iv",
+          "sections": "2; 17"
+        },
+        {
+          "id": "eye",
+          "sections": "2; 17"
+        },
+        {
+          "id": "fda",
+          "sections": "Patient / professional actions"
+        },
+        {
+          "id": "chewlow",
+          "sections": "Active ingredient; Directions; Warnings; Other information"
+        },
+        {
+          "id": "odt",
+          "sections": "Active ingredient; Directions; Warnings; Other information"
+        },
+        {
+          "id": "capsule",
+          "sections": "Active ingredient; Directions; Warnings; Other information"
+        }
+      ],
+      "assertions": [
+        "Check symptom relief, alertness, concurrent medicines and kidney/liver status when relevant. Confirm liquid concentration and measure in mL with the supplied/calibrated device. Review duration before months of daily oral use and discuss the withdrawal-itching warning. New severe itching warrants clinician assessment rather than a self-designed taper. Follow route-specific eye and IV instructions."
+      ],
+      "section": "practice"
+    },
+    {
+      "card": "Overdose",
+      "sources": [
+        {
+          "id": "rx",
+          "sections": "Overdosage"
+        },
+        {
+          "id": "otc",
+          "sections": "Keep out of reach / overdose"
+        },
+        {
+          "id": "iv",
+          "sections": "10"
+        }
+      ],
+      "assertions": [
+        "Contact poison control or emergency care for excess dosing, significant sedation, agitation or other concerning symptoms. Management is supportive; there is no specific cetirizine antidote, and dialysis does not effectively remove it. Do not use tolerance of a previous dose as justification to exceed the package maximum."
+      ],
+      "section": "practice"
+    },
+    {
+      "card": "Representative products",
+      "sources": [
+        {
+          "id": "rx",
+          "sections": "Description; How Supplied"
+        },
+        {
+          "id": "iv",
+          "sections": "3; 16"
+        },
+        {
+          "id": "eye",
+          "sections": "16"
+        }
+      ],
+      "assertions": [
+        "Padagis prescription oral solution is 1 mg/mL, banana-grape flavored, colorless to slightly yellow; 120 mL bottle NDC 45802-626-26. Current Quzyttir uses 1 mL of 10 mg/mL solution in a single-use 2 mL-size amber vial. Current Zerviate supplies 0.2 mL single-use containers, carton of 30, NDC 82667-015-24."
+      ],
+      "section": "product"
+    },
+    {
+      "card": "Dosage forms and strengths",
+      "sources": [
+        {
+          "id": "rx",
+          "sections": "Description"
+        },
+        {
+          "id": "otc",
+          "sections": "Active ingredient"
+        },
+        {
+          "id": "chew",
+          "sections": "Active ingredient"
+        },
+        {
+          "id": "forms",
+          "sections": "Active ingredient / supplemental oral labels"
+        },
+        {
+          "id": "iv",
+          "sections": "3"
+        },
+        {
+          "id": "eye",
+          "sections": "3; 11"
+        },
+        {
+          "id": "chewlow",
+          "sections": "Active ingredient; Directions; Warnings; Other information"
+        },
+        {
+          "id": "odt",
+          "sections": "Active ingredient; Directions; Warnings; Other information"
+        },
+        {
+          "id": "capsule",
+          "sections": "Active ingredient; Directions; Warnings; Other information"
+        }
+      ],
+      "assertions": [
+        "Reviewed oral products include 1 mg/mL solution, 2.5 mg and 10 mg chewables, 10 mg tablets, 10 mg ODTs and 10 mg liquid-filled capsules. Other manufacturers may offer additional strengths; use the actual package. Quzyttir is IV cetirizine HCl 10 mg/mL. Zerviate is 0.24% cetirizine ophthalmic solution, equivalent to approximately 0.29% hydrochloride; oral and IV solutions are not eye drops."
+      ],
+      "section": "product"
+    },
+    {
+      "card": "Storage and handling",
+      "sources": [
+        {
+          "id": "rx",
+          "sections": "Storage"
+        },
+        {
+          "id": "otc",
+          "sections": "Other information"
+        },
+        {
+          "id": "chew",
+          "sections": "Other information"
+        },
+        {
+          "id": "forms",
+          "sections": "Other information / supplemental labels"
+        },
+        {
+          "id": "iv",
+          "sections": "16"
+        },
+        {
+          "id": "eye",
+          "sections": "2; 16"
+        },
+        {
+          "id": "chewlow",
+          "sections": "Active ingredient; Directions; Warnings; Other information"
+        },
+        {
+          "id": "odt",
+          "sections": "Active ingredient; Directions; Warnings; Other information"
+        },
+        {
+          "id": "capsule",
+          "sections": "Active ingredient; Directions; Warnings; Other information"
+        }
+      ],
+      "assertions": [
+        "Reviewed OTC oral products store at 20\u201325\u00b0C; ODTs avoid high humidity and capsules also avoid excessive heat/light. The reviewed prescription solution permits 20\u201325\u00b0C with 15\u201330\u00b0C excursions or refrigeration at 2\u20138\u00b0C. Quzyttir stores at 20\u201325\u00b0C with 15\u201330\u00b0C excursions; discard unused contents. Zerviate stores at 15\u201325\u00b0C in its foil pouch until use; discard an opened unit after dosing. Follow the actual product seal and storage instructions."
+      ],
+      "section": "product"
+    }
+  ],
+  "unresolved_material_errors": [],
+  "limitations": [
+    "Rx Padagis current label is pediatric-focused; no adult or numerical oral renal adjustment is invented from this label. Current OTC kidney/liver guidance is clinician dose selection; historical oral adjustment tables are not presented as current OTC instructions.",
+    "Current IV label gives no organ dose adjustment for eligible patients but excludes renal/hepatic impairment below 6 years; this is not extrapolated to chronic oral dosing.",
+    "Oral package audit is representative across listed forms, not an exhaustive NDC/manufacturer inventory; combination pseudoephedrine products excluded.",
+    "No universal cetirizine taper or controlled evidence-based withdrawal-pruritus treatment is established; clinical review required for severe post-discontinuation itching.",
+    "OTC breastfeeding warning and more permissive current LactMed assessment are distinguished explicitly."
+  ],
+  "validation": {
+    "schema": "Passed validateMonograph on 2026-10-01",
+    "rendered_page": "parent batch QA required",
+    "tests_build_lint": "parent batch checks required",
+    "assertion_map": "All card paragraphs and tables match current profile",
+    "source_hashes": "All local source snapshots match recorded SHA-256 hashes",
+    "formatting": "All rendered clinical strings manually reviewed; dose and unit spacing checked",
+    "scoped_whitespace": "Passed scoped git diff --check and explicit untracked-file trailing-whitespace check"
+  },
+  "sources": [
+    {
+      "id": "rx",
+      "title": "Cetirizine prescription oral solution \u00b7 Full labeling",
+      "publisher": "Padagis / DailyMed",
+      "note": "Clinical label revised August 2025; current SPL10. Pediatric indications and 1 mg/mL dosing; withdrawal-pruritus warning.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2f47dbc5-dfb4-425c-9fe4-777fa3c4e72e",
+      "local_snapshot": "/tmp/nas-drug-sources/cetirizine-rx-full.xml",
+      "sha256": "b25c5320689c194b293465c873f41bee260208a017210d33c3b7c782f1d8c09f",
+      "label_revision": "August 2025",
+      "review_method": "Full relevant current clinical source sections read; dose, route, age and product tables checked against source text. No unaccessed guideline or source claimed.",
+      "set_id": "2f47dbc5-dfb4-425c-9fe4-777fa3c4e72e",
+      "spl_version": "10",
+      "spl_effective_time": "20250831",
+      "dailymed_published_date": "2026-08-17",
+      "metadata_note": "Published/update date differs from clinical revision and SPL effectiveTime."
+    },
+    {
+      "id": "otc",
+      "title": "Cetirizine OTC oral solution \u00b7 Drug Facts",
+      "publisher": "Sun / Ohm Laboratories / DailyMed",
+      "note": "September 2026 current 1 mg/mL Drug Facts; includes withdrawal-itching warning and age-specific self-care directions.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=30cbaa91-2216-efd2-e063-6294a90aaaed",
+      "local_snapshot": "/tmp/nas-drug-sources/cetirizine-otc.xml",
+      "sha256": "477c07a8434898616b381da8553ba5b01348c04ff3d37bc4f0fa911339c44287",
+      "label_revision": "Drug Facts current September 2026",
+      "review_method": "Full relevant current clinical source sections read; dose, route, age and product tables checked against source text. No unaccessed guideline or source claimed.",
+      "set_id": "30cbaa91-2216-efd2-e063-6294a90aaaed",
+      "spl_version": "4",
+      "spl_effective_time": "20260925"
+    },
+    {
+      "id": "chew",
+      "title": "Children\u2019s Zyrtec 10 mg chewable \u00b7 Drug Facts",
+      "publisher": "Kenvue / DailyMed",
+      "note": "Current April 2026 SPL14; chew/crush before swallowing; age 6+ directions.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0fe77356-d945-46a0-882e-b3bbab784556",
+      "local_snapshot": "/tmp/nas-drug-sources/cetirizine-chewable.xml",
+      "sha256": "5ef9bebc7d3ba56843b2d1596774f9dd34c652ca55688467b00fe1f1e06aa141",
+      "label_revision": "Drug Facts current April 2026",
+      "review_method": "Full relevant current clinical source sections read; dose, route, age and product tables checked against source text. No unaccessed guideline or source claimed.",
+      "spl_version": "14",
+      "spl_effective_time": "20260422"
+    },
+    {
+      "id": "forms",
+      "title": "Zyrtec oral tablets \u00b7 Drug Facts",
+      "publisher": "Kenvue / DailyMed",
+      "note": "Current 10 mg tablet label plus separately audited 2.5 mg chewable, 10 mg ODT and 10 mg liquid-filled capsule labels; package-specific instructions apply.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b165db38-b302-4220-8627-77cb07bb078c",
+      "local_snapshot": "/tmp/nas-drug-sources/cetirizine-tablet.xml",
+      "sha256": "8b88d1862bd1d52363d5307cd49eed47de3e9a06c9d0182c3d9184fedf373460",
+      "label_revision": "Drug Facts current October 2025",
+      "review_method": "Full relevant current clinical source sections read; dose, route, age and product tables checked against source text. No unaccessed guideline or source claimed.",
+      "spl_version": "25",
+      "spl_effective_time": "20251010"
+    },
+    {
+      "id": "iv",
+      "title": "Quzyttir \u00b7 Full prescribing information",
+      "publisher": "Esteve / DailyMed",
+      "note": "Current September 2026 SPL5; IV acute urticaria from age 6 months, including renal/hepatic distinctions.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=573770f6-b76e-f6ba-e063-6294a90aa54d",
+      "local_snapshot": "/tmp/nas-drug-sources/quzyttir.xml",
+      "sha256": "32cfd35c16ab9bd5f498e4e664b9f23081b8babb48448481fd9f1df7880cfb2a",
+      "label_revision": "SPL September 2026",
+      "review_method": "Full relevant current clinical source sections read; dose, route, age and product tables checked against source text. No unaccessed guideline or source claimed.",
+      "spl_version": "5",
+      "spl_effective_time": "20260922"
+    },
+    {
+      "id": "eye",
+      "title": "Zerviate \u00b7 Full prescribing information",
+      "publisher": "Harrow / DailyMed",
+      "note": "Current August 2026 SPL3; 0.24% ophthalmic solution in single-use containers.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6fc5ef4e-4aea-4c34-8d51-0c07ab9aad59",
+      "local_snapshot": "/tmp/nas-drug-sources/zerviate.xml",
+      "sha256": "7a01e995f3bb26804c5f4a3c141012f301721ab2303b5cd6899787e66f2d2421",
+      "label_revision": "SPL August 2026",
+      "review_method": "Full relevant current clinical source sections read; dose, route, age and product tables checked against source text. No unaccessed guideline or source claimed.",
+      "spl_version": "3",
+      "spl_effective_time": "20260803"
+    },
+    {
+      "id": "fda",
+      "title": "Severe pruritus after stopping oral cetirizine / levocetirizine",
+      "publisher": "U.S. Food and Drug Administration",
+      "note": "May 16, 2025 safety communication; relevant to prescription and OTC oral products.",
+      "url": "https://www.fda.gov/drugs/drug-safety-communications/fda-requires-warning-about-rare-severe-itching-after-stopping-long-term-use-oral-allergy-medicines",
+      "version": "May 16, 2025",
+      "access": "Full public FDA safety communication including Data Summary read",
+      "review_method": "Full relevant current clinical source sections read; dose, route, age and product tables checked against source text. No unaccessed guideline or source claimed."
+    },
+    {
+      "id": "milk",
+      "title": "Cetirizine \u00b7 Lactation",
+      "publisher": "LactMed / National Library of Medicine",
+      "note": "Revised September 15, 2025; oral and ophthalmic breastfeeding assessment, infant effects and milk-supply considerations.",
+      "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK501509/",
+      "version": "September 15, 2025",
+      "access": "Full public LactMed clinical sections read via accessible /sites/books route",
+      "review_method": "Full relevant current clinical source sections read; dose, route, age and product tables checked against source text. No unaccessed guideline or source claimed."
+    },
+    {
+      "id": "chewlow",
+      "title": "Children\u2019s Zyrtec 2.5 mg chewable \u00b7 Drug Facts",
+      "publisher": "Kenvue / DailyMed",
+      "note": "Current representative oral formulation; strength, directions and storage individually reviewed.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=013ce40e-37c9-4b84-b530-ed895f60ce0e",
+      "local_snapshot": "/tmp/nas-drug-sources/cetirizine-5chew.xml",
+      "sha256": "54c7863d48842b0b94c8edeeb1971dd30de4ceb3a26582c8761e8d64b5e15cf2",
+      "label_revision": "Current Drug Facts",
+      "review_method": "Full relevant current clinical source sections read; dose, route, age and product tables checked against source text. No unaccessed guideline or source claimed.",
+      "set_id": "013ce40e-37c9-4b84-b530-ed895f60ce0e",
+      "spl_version": "8",
+      "spl_effective_time": "20250407"
+    },
+    {
+      "id": "odt",
+      "title": "Zyrtec 10 mg orally disintegrating tablet \u00b7 Drug Facts",
+      "publisher": "Kenvue / DailyMed",
+      "note": "Current representative oral formulation; strength, directions and storage individually reviewed.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6a962a1c-c197-492b-bfa6-e0c28eda1533",
+      "local_snapshot": "/tmp/nas-drug-sources/cetirizine-odt.xml",
+      "sha256": "d8ce73da2a4fcc0ee61302ecb1d6d0ae8b3557fdf236c0be500f1b9bfd0c313b",
+      "label_revision": "Current Drug Facts",
+      "review_method": "Full relevant current clinical source sections read; dose, route, age and product tables checked against source text. No unaccessed guideline or source claimed.",
+      "set_id": "6a962a1c-c197-492b-bfa6-e0c28eda1533",
+      "spl_version": "17",
+      "spl_effective_time": "20250411"
+    },
+    {
+      "id": "capsule",
+      "title": "Zyrtec 10 mg liquid-filled capsule \u00b7 Drug Facts",
+      "publisher": "Kenvue / DailyMed",
+      "note": "Current representative oral formulation; strength, directions and storage individually reviewed.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0face45c-af24-3559-e063-6294a90abde5",
+      "local_snapshot": "/tmp/nas-drug-sources/cetirizine-capsule.xml",
+      "sha256": "6511424a9063e6f05b14ff6ee8f7a52772ec085a4d3fcece9bba49c431c089df",
+      "label_revision": "Current Drug Facts",
+      "review_method": "Full relevant current clinical source sections read; dose, route, age and product tables checked against source text. No unaccessed guideline or source claimed.",
+      "set_id": "0face45c-af24-3559-e063-6294a90abde5",
+      "spl_version": "6",
+      "spl_effective_time": "20251021"
+    }
+  ],
+  "assertion_map": [
+    {
+      "card": "Oral prescription and OTC uses",
+      "sources": [
+        {
+          "id": "rx",
+          "sections": "Indications and Usage; Pediatric Use"
+        },
+        {
+          "id": "otc",
+          "sections": "Uses; Directions"
+        },
+        {
+          "id": "chew",
+          "sections": "Uses; Directions"
+        },
+        {
+          "id": "forms",
+          "sections": "Uses; Directions; 2.5 mg chewable supplemental label"
+        },
+        {
+          "id": "fda",
+          "sections": "What are cetirizine and levocetirizine?"
+        },
+        {
+          "id": "chewlow",
+          "sections": "Active ingredient; Directions; Warnings; Other information"
+        },
+        {
+          "id": "odt",
+          "sections": "Active ingredient; Directions; Warnings; Other information"
+        },
+        {
+          "id": "capsule",
+          "sections": "Active ingredient; Directions; Warnings; Other information"
+        }
+      ],
+      "assertions": [
+        "The reviewed prescription solution covers perennial allergic rhinitis at age 6\u201323 months and chronic idiopathic urticaria at age 6 months\u20135 years. FDA describes seasonal-allergy approval from age 2 and perennial-allergy/chronic-hive approval from 6 months across oral products. Reviewed OTC allergy products relieve sneezing, rhinorrhea and itchy eyes/nose/throat; their self-care directions begin at age 2 for appropriate low-dose liquids/chewables or age 6 for 10 mg products. Do not infer infant OTC self-treatment."
+      ],
+      "section": "indications"
+    },
+    {
+      "card": "IV and ophthalmic uses",
+      "sources": [
+        {
+          "id": "iv",
+          "sections": "1; 8.4"
+        },
+        {
+          "id": "eye",
+          "sections": "1; 8.4"
+        }
+      ],
+      "assertions": [
+        "Quzyttir treats acute urticaria in adults and children at least 6 months old; it is a supervised IV product. Zerviate treats ocular itching from allergic conjunctivitis, with pediatric safety/effectiveness established from age 2. These routes do not use the oral solution schedule."
+      ],
+      "section": "indications"
+    },
+    {
+      "card": "OTC oral allergy dosing",
+      "sources": [
+        {
+          "id": "otc",
+          "sections": "Directions"
+        },
+        {
+          "id": "rx",
+          "sections": "Dosage and Administration"
+        }
+      ],
+      "assertions": [
+        "For the reviewed 1 mg/mL solution, dosing may be taken without regard to food. The following are Drug Facts self-care directions; organ disease and age limits require clinician advice."
+      ],
+      "table_assertions": {
+        "headers": [
+          "Age",
+          "Dose of 1 mg/mL solution",
+          "Daily maximum"
+        ],
+        "rows": [
+          [
+            "2 to <6 years",
+            "2.5 mg (2.5 mL) once daily; if needed 5 mg once daily or 2.5 mg every 12 hours",
+            "5 mg"
+          ],
+          [
+            "6 to <65 years",
+            "5 or 10 mg (5 or 10 mL) once daily, based on symptoms",
+            "10 mg"
+          ],
+          [
+            "\u226565 years",
+            "5 mg (5 mL) once daily for this solution",
+            "5 mg"
+          ],
+          [
+            "<2 years or kidney/liver disease",
+            "Ask a clinician; not an OTC infant dosing authorization",
+            "Clinician-determined"
+          ]
+        ]
+      },
+      "section": "dosage"
+    },
+    {
+      "card": "Prescription infant and young-child dosing",
+      "sources": [
+        {
+          "id": "rx",
+          "sections": "Indications and Usage; Dosage and Administration; Pediatric Use"
+        }
+      ],
+      "assertions": [
+        "For the reviewed prescription solution: age 6\u201311 months, 2.5 mg (2.5 mL) once daily for perennial rhinitis or chronic urticaria; age 12\u201323 months may increase to 2.5 mg every 12 hours, maximum 5 mg/day. Age 2\u20135 years with chronic urticaria starts at 2.5 mg once daily and may increase to 5 mg once daily or 2.5 mg every 12 hours. Use clinician supervision; trial mg/kg exposures are not the recommended dosing table."
+      ],
+      "section": "dosage"
+    },
+    {
+      "card": "Tablets, chewables, capsules and ODTs",
+      "sources": [
+        {
+          "id": "chew",
+          "sections": "Directions; supplemental 2.5 mg chewable, 10 mg ODT and capsule Drug Facts"
+        },
+        {
+          "id": "forms",
+          "sections": "Directions; supplemental 2.5 mg chewable, 10 mg ODT and capsule Drug Facts"
+        },
+        {
+          "id": "chewlow",
+          "sections": "Active ingredient; Directions; Warnings; Other information"
+        },
+        {
+          "id": "odt",
+          "sections": "Active ingredient; Directions; Warnings; Other information"
+        },
+        {
+          "id": "capsule",
+          "sections": "Active ingredient; Directions; Warnings; Other information"
+        }
+      ],
+      "assertions": [
+        "Reviewed 10 mg tablets, liquid-filled capsules, ODTs and 10 mg chewables use one daily dose from age 6, maximum 10 mg/day, with a 5 mg product potentially appropriate for milder symptoms. Those 10 mg packages direct adults \u226565 and children <6 to a clinician. Chew/crush chewables fully before swallowing; ODTs melt in the mouth. The separately reviewed 2.5 mg chewable permits age 2\u2013<6 dosing of one daily, increasing to two daily or one every 12 hours if needed, maximum 5 mg/day. Do not choose tablet count without checking its strength."
+      ],
+      "section": "dosage"
+    },
+    {
+      "card": "Quzyttir IV dosing",
+      "sources": [
+        {
+          "id": "iv",
+          "sections": "2; 3"
+        }
+      ],
+      "assertions": [
+        "Administer as an IV push over 1\u20132 minutes, once every 24 hours as needed for acute urticaria. Its 10 mg/mL solution requires accurate small-volume measurement. For pretreatment of an infusion product, follow that infusion product\u2019s prescribing instructions."
+      ],
+      "table_assertions": {
+        "headers": [
+          "Age",
+          "IV dose",
+          "Volume at 10 mg/mL"
+        ],
+        "rows": [
+          [
+            "6 months\u20135 years",
+            "2.5 mg",
+            "0.25 mL"
+          ],
+          [
+            "6\u201311 years",
+            "5 or 10 mg, based on severity",
+            "0.5 or 1 mL"
+          ],
+          [
+            "\u226512 years",
+            "10 mg",
+            "1 mL"
+          ]
+        ]
+      },
+      "section": "dosage"
+    },
+    {
+      "card": "Zerviate eye-drop administration",
+      "sources": [
+        {
+          "id": "eye",
+          "sections": "2; 5.1\u20135.2; 17"
+        }
+      ],
+      "assertions": [
+        "Instill one drop in each affected eye twice daily, approximately 8 hours apart. Use the opened single-use container immediately for one or both eyes, then discard remaining solution. Do not touch its tip to the eye/skin. Remove contacts first; reinsert after 10 minutes and avoid contacts in a red eye."
+      ],
+      "section": "dosage"
+    },
+    {
+      "card": "Warnings and precautions",
+      "sources": [
+        {
+          "id": "rx",
+          "sections": "Activities Requiring Mental Alertness; New Onset Pruritus"
+        },
+        {
+          "id": "otc",
+          "sections": "Warnings"
+        },
+        {
+          "id": "iv",
+          "sections": "1; 5.1; 8.4"
+        },
+        {
+          "id": "eye",
+          "sections": "5; 17"
+        },
+        {
+          "id": "fda",
+          "sections": "Patient / professional actions; Data Summary"
+        }
+      ],
+      "assertions": [
+        "Cetirizine can cause drowsiness; use caution with driving or machinery and avoid alcohol or other CNS depressants. Assess kidney/liver disease before oral self-care. Stop and seek help for allergic reactions.",
+        "Rare severe widespread itching may begin within days after stopping oral cetirizine used daily for months or years, even without baseline itching. Discuss this before prolonged use and seek clinician advice if it occurs; restarting or tapering has helped reported cases, but effective treatment has not been established in controlled evaluation.",
+        "For Zerviate, prevent tip contamination, follow contact-lens instructions and discard opened single-use containers. Quzyttir is not recommended below age 6 with renal or hepatic impairment."
+      ],
+      "section": "safety"
+    },
+    {
+      "card": "Contraindications",
+      "sources": [
+        {
+          "id": "rx",
+          "sections": "Contraindications"
+        },
+        {
+          "id": "otc",
+          "sections": "Do not use"
+        },
+        {
+          "id": "iv",
+          "sections": "4"
+        },
+        {
+          "id": "eye",
+          "sections": "4"
+        }
+      ],
+      "assertions": [
+        "Oral cetirizine is contraindicated with known cetirizine, ingredient or hydroxyzine hypersensitivity. Quzyttir also explicitly contraindicates levocetirizine hypersensitivity. Zerviate\u2019s current label lists no formal contraindications; its eye-specific precautions still apply."
+      ],
+      "section": "safety"
+    },
+    {
+      "card": "Boxed warning status",
+      "sources": [
+        {
+          "id": "rx",
+          "sections": "Full labels / warning sections; FDA Safety Communication"
+        },
+        {
+          "id": "otc",
+          "sections": "Full labels / warning sections; FDA Safety Communication"
+        },
+        {
+          "id": "iv",
+          "sections": "Full labels / warning sections; FDA Safety Communication"
+        },
+        {
+          "id": "eye",
+          "sections": "Full labels / warning sections; FDA Safety Communication"
+        },
+        {
+          "id": "fda",
+          "sections": "Full labels / warning sections; FDA Safety Communication"
+        }
+      ],
+      "assertions": [
+        "The reviewed oral, IV and ophthalmic labels have no boxed warning. That does not remove sedation risk, hypersensitivity precautions or the FDA warning about severe itching after long-term oral use is stopped."
+      ],
+      "section": "safety"
+    },
+    {
+      "card": "Adverse reactions",
+      "sources": [
+        {
+          "id": "rx",
+          "sections": "Adverse Reactions"
+        },
+        {
+          "id": "iv",
+          "sections": "6.1"
+        },
+        {
+          "id": "eye",
+          "sections": "6"
+        }
+      ],
+      "assertions": [
+        "Systemic use can cause somnolence, fatigue, dry mouth and dizziness; younger children may have irritability or insomnia. Quzyttir studies also reported dyspepsia, taste change, feeling hot, headache and presyncope at low frequency. Zerviate trials reported eye redness, instillation pain and reduced visual acuity. Serious postmarketing oral reports include anaphylaxis, liver injury, seizures, severe skin reactions and withdrawal pruritus; reports do not establish incidence."
+      ],
+      "section": "safety"
+    },
+    {
+      "card": "Alcohol, sedatives and theophylline",
+      "sources": [
+        {
+          "id": "rx",
+          "sections": "Mental Alertness; Drug-Drug Interactions; Pharmacokinetics"
+        },
+        {
+          "id": "otc",
+          "sections": "Warnings"
+        },
+        {
+          "id": "iv",
+          "sections": "5.1; 7; 12.3"
+        }
+      ],
+      "assertions": [
+        "Alcohol and CNS depressants may further impair alertness with systemic cetirizine. Review sedatives/tranquilizers before use. Oral interaction studies found no clinically important interaction with several tested antibiotics or low-dose theophylline, but theophylline 400 mg reduced cetirizine clearance modestly; larger doses may have greater effects. Do not infer that all combinations are interaction-free."
+      ],
+      "section": "interactions"
+    },
+    {
+      "card": "Formulation and combination review",
+      "sources": [
+        {
+          "id": "otc",
+          "sections": "Active ingredient; Directions; reviewed standalone formulations"
+        },
+        {
+          "id": "forms",
+          "sections": "Active ingredient; Directions; reviewed standalone formulations"
+        },
+        {
+          "id": "chewlow",
+          "sections": "Active ingredient; Directions; Warnings; Other information"
+        },
+        {
+          "id": "odt",
+          "sections": "Active ingredient; Directions; Warnings; Other information"
+        },
+        {
+          "id": "capsule",
+          "sections": "Active ingredient; Directions; Warnings; Other information"
+        }
+      ],
+      "assertions": [
+        "Check for cetirizine in more than one product and distinguish cetirizine alone from pseudoephedrine-containing combination products. This page does not provide the combination\u2019s dosing or decongestant safety rules. OTC allergy formulations share the same active drug despite different brands and strengths."
+      ],
+      "section": "interactions"
+    },
+    {
+      "card": "Kidney and liver considerations",
+      "sources": [
+        {
+          "id": "otc",
+          "sections": "Ask a doctor; Directions"
+        },
+        {
+          "id": "forms",
+          "sections": "Ask a doctor; Directions"
+        },
+        {
+          "id": "iv",
+          "sections": "8.4; 8.6\u20138.7; 12.3"
+        },
+        {
+          "id": "eye",
+          "sections": "Full prescribing information"
+        },
+        {
+          "id": "chewlow",
+          "sections": "Active ingredient; Directions; Warnings; Other information"
+        },
+        {
+          "id": "odt",
+          "sections": "Active ingredient; Directions; Warnings; Other information"
+        },
+        {
+          "id": "capsule",
+          "sections": "Active ingredient; Directions; Warnings; Other information"
+        }
+      ],
+      "assertions": [
+        "Current reviewed OTC oral products require clinician dose selection for kidney or liver disease; they do not supply a numerical adjustment chart. Oral PK studies summarized in the current Quzyttir label show prolonged elimination with CrCl 11\u201331 mL/min and dialysis, and with chronic liver disease. Quzyttir itself requires no adjustment for renal/hepatic impairment in eligible patients, with monitoring for antihistamine effects, but is not recommended below age 6 with either impairment. Ophthalmic labeling supplies no organ-adjustment schedule."
+      ],
+      "section": "populations"
+    },
+    {
+      "card": "Children and older adults",
+      "sources": [
+        {
+          "id": "rx",
+          "sections": "Pediatric Use"
+        },
+        {
+          "id": "otc",
+          "sections": "Directions"
+        },
+        {
+          "id": "forms",
+          "sections": "Directions"
+        },
+        {
+          "id": "iv",
+          "sections": "8.4\u20138.5; 12.3"
+        },
+        {
+          "id": "eye",
+          "sections": "8.4\u20138.5"
+        },
+        {
+          "id": "chewlow",
+          "sections": "Active ingredient; Directions; Warnings; Other information"
+        },
+        {
+          "id": "odt",
+          "sections": "Active ingredient; Directions; Warnings; Other information"
+        },
+        {
+          "id": "capsule",
+          "sections": "Active ingredient; Directions; Warnings; Other information"
+        }
+      ],
+      "assertions": [
+        "Prescription oral and IV data start at 6 months; younger-infant safety/effectiveness is not established. Match each pediatric regimen to its indication. Ophthalmic approval/data begin at age 2. For older adults, review renal function and sedation susceptibility; the OTC liquid\u2019s 5 mg/day direction differs from 10 mg tablet/capsule packages that advise clinician input."
+      ],
+      "section": "populations"
+    },
+    {
+      "card": "Pregnancy",
+      "sources": [
+        {
+          "id": "otc",
+          "sections": "Pregnant / breast-feeding warning"
+        },
+        {
+          "id": "iv",
+          "sections": "8.1"
+        },
+        {
+          "id": "eye",
+          "sections": "8.1"
+        }
+      ],
+      "assertions": [
+        "OTC labels advise consulting a health professional before pregnancy use. Current IV/ophthalmic labels have insufficient controlled human pregnancy evidence; animal studies did not show teratogenicity at the studied high oral exposures. Make a patient-specific decision about route and benefit/risk rather than declaring universal pregnancy safety."
+      ],
+      "section": "populations"
+    },
+    {
+      "card": "Breastfeeding",
+      "sources": [
+        {
+          "id": "otc",
+          "sections": "Pregnant / breast-feeding warning"
+        },
+        {
+          "id": "iv",
+          "sections": "8.2"
+        },
+        {
+          "id": "eye",
+          "sections": "8.2; 12.3"
+        },
+        {
+          "id": "milk",
+          "sections": "Summary; Drug Levels; Effects on Lactation"
+        }
+      ],
+      "assertions": [
+        "The OTC Drug Facts say breastfeeding use is not recommended; LactMed\u2019s September 2025 assessment considers occasional small oral doses acceptable and cetirizine an acceptable antihistamine option when needed. Larger/prolonged doses may sedate an infant or reduce milk supply, particularly early in lactation or with pseudoephedrine. Reconcile that evidence with maternal need and infant monitoring through a clinician. Eye-drop exposure is much lower; pressing the tear duct for at least a minute and wiping excess reduces systemic absorption."
+      ],
+      "section": "populations"
+    },
+    {
+      "card": "Mechanism and oral disposition",
+      "sources": [
+        {
+          "id": "rx",
+          "sections": "Mechanism; Pharmacokinetics"
+        },
+        {
+          "id": "iv",
+          "sections": "12.1\u201312.3"
+        }
+      ],
+      "assertions": [
+        "Cetirizine is a hydroxyzine metabolite acting mainly at peripheral H1 receptors. Oral peak concentrations occur around 1 hour; protein binding is about 93% and adult elimination half-life about 8.3 hours. Metabolism is limited, with substantial urinary recovery as unchanged drug. Food delays the peak without materially changing total exposure."
+      ],
+      "section": "pharmacology"
+    },
+    {
+      "card": "Route differences",
+      "sources": [
+        {
+          "id": "iv",
+          "sections": "8.4; 12.3"
+        },
+        {
+          "id": "eye",
+          "sections": "8.2; 12.3"
+        }
+      ],
+      "assertions": [
+        "IV administration produces a higher peak than oral dosing even when overall exposure is similar; that distinction supports supervised dosing. Ophthalmic administration produces much lower systemic concentrations than oral 10 mg treatment. Neither comparison permits exchanging route-specific milligram doses."
+      ],
+      "section": "pharmacology"
+    },
+    {
+      "card": "Monitoring and counseling",
+      "sources": [
+        {
+          "id": "rx",
+          "sections": "Dosage; Precautions"
+        },
+        {
+          "id": "otc",
+          "sections": "Directions; Warnings"
+        },
+        {
+          "id": "forms",
+          "sections": "Directions; Warnings"
+        },
+        {
+          "id": "iv",
+          "sections": "2; 17"
+        },
+        {
+          "id": "eye",
+          "sections": "2; 17"
+        },
+        {
+          "id": "fda",
+          "sections": "Patient / professional actions"
+        },
+        {
+          "id": "chewlow",
+          "sections": "Active ingredient; Directions; Warnings; Other information"
+        },
+        {
+          "id": "odt",
+          "sections": "Active ingredient; Directions; Warnings; Other information"
+        },
+        {
+          "id": "capsule",
+          "sections": "Active ingredient; Directions; Warnings; Other information"
+        }
+      ],
+      "assertions": [
+        "Check symptom relief, alertness, concurrent medicines and kidney/liver status when relevant. Confirm liquid concentration and measure in mL with the supplied/calibrated device. Review duration before months of daily oral use and discuss the withdrawal-itching warning. New severe itching warrants clinician assessment rather than a self-designed taper. Follow route-specific eye and IV instructions."
+      ],
+      "section": "practice"
+    },
+    {
+      "card": "Overdose",
+      "sources": [
+        {
+          "id": "rx",
+          "sections": "Overdosage"
+        },
+        {
+          "id": "otc",
+          "sections": "Keep out of reach / overdose"
+        },
+        {
+          "id": "iv",
+          "sections": "10"
+        }
+      ],
+      "assertions": [
+        "Contact poison control or emergency care for excess dosing, significant sedation, agitation or other concerning symptoms. Management is supportive; there is no specific cetirizine antidote, and dialysis does not effectively remove it. Do not use tolerance of a previous dose as justification to exceed the package maximum."
+      ],
+      "section": "practice"
+    },
+    {
+      "card": "Representative products",
+      "sources": [
+        {
+          "id": "rx",
+          "sections": "Description; How Supplied"
+        },
+        {
+          "id": "iv",
+          "sections": "3; 16"
+        },
+        {
+          "id": "eye",
+          "sections": "16"
+        }
+      ],
+      "assertions": [
+        "Padagis prescription oral solution is 1 mg/mL, banana-grape flavored, colorless to slightly yellow; 120 mL bottle NDC 45802-626-26. Current Quzyttir uses 1 mL of 10 mg/mL solution in a single-use 2 mL-size amber vial. Current Zerviate supplies 0.2 mL single-use containers, carton of 30, NDC 82667-015-24."
+      ],
+      "section": "product"
+    },
+    {
+      "card": "Dosage forms and strengths",
+      "sources": [
+        {
+          "id": "rx",
+          "sections": "Description"
+        },
+        {
+          "id": "otc",
+          "sections": "Active ingredient"
+        },
+        {
+          "id": "chew",
+          "sections": "Active ingredient"
+        },
+        {
+          "id": "forms",
+          "sections": "Active ingredient / supplemental oral labels"
+        },
+        {
+          "id": "iv",
+          "sections": "3"
+        },
+        {
+          "id": "eye",
+          "sections": "3; 11"
+        },
+        {
+          "id": "chewlow",
+          "sections": "Active ingredient; Directions; Warnings; Other information"
+        },
+        {
+          "id": "odt",
+          "sections": "Active ingredient; Directions; Warnings; Other information"
+        },
+        {
+          "id": "capsule",
+          "sections": "Active ingredient; Directions; Warnings; Other information"
+        }
+      ],
+      "assertions": [
+        "Reviewed oral products include 1 mg/mL solution, 2.5 mg and 10 mg chewables, 10 mg tablets, 10 mg ODTs and 10 mg liquid-filled capsules. Other manufacturers may offer additional strengths; use the actual package. Quzyttir is IV cetirizine HCl 10 mg/mL. Zerviate is 0.24% cetirizine ophthalmic solution, equivalent to approximately 0.29% hydrochloride; oral and IV solutions are not eye drops."
+      ],
+      "section": "product"
+    },
+    {
+      "card": "Storage and handling",
+      "sources": [
+        {
+          "id": "rx",
+          "sections": "Storage"
+        },
+        {
+          "id": "otc",
+          "sections": "Other information"
+        },
+        {
+          "id": "chew",
+          "sections": "Other information"
+        },
+        {
+          "id": "forms",
+          "sections": "Other information / supplemental labels"
+        },
+        {
+          "id": "iv",
+          "sections": "16"
+        },
+        {
+          "id": "eye",
+          "sections": "2; 16"
+        },
+        {
+          "id": "chewlow",
+          "sections": "Active ingredient; Directions; Warnings; Other information"
+        },
+        {
+          "id": "odt",
+          "sections": "Active ingredient; Directions; Warnings; Other information"
+        },
+        {
+          "id": "capsule",
+          "sections": "Active ingredient; Directions; Warnings; Other information"
+        }
+      ],
+      "assertions": [
+        "Reviewed OTC oral products store at 20\u201325\u00b0C; ODTs avoid high humidity and capsules also avoid excessive heat/light. The reviewed prescription solution permits 20\u201325\u00b0C with 15\u201330\u00b0C excursions or refrigeration at 2\u20138\u00b0C. Quzyttir stores at 20\u201325\u00b0C with 15\u201330\u00b0C excursions; discard unused contents. Zerviate stores at 15\u201325\u00b0C in its foil pouch until use; discard an opened unit after dosing. Follow the actual product seal and storage instructions."
+      ],
+      "section": "product"
+    }
+  ],
+  "hero_assertions": {
+    "essential": {
+      "title": "Check age, route and sedation risk.",
+      "text": "Use the formulation-specific dose; OTC instructions do not authorize infant self-treatment. Drowsiness can impair driving and worsen with alcohol or sedatives. Severe itching after stopping long-term oral cetirizine warrants clinical advice.",
+      "section": "safety",
+      "link": "Warnings and precautions"
+    },
+    "facts": [
+      [
+        "Therapeutic class",
+        "Second-generation H1 antihistamine"
+      ],
+      [
+        "Common products",
+        "Zyrtec oral \u00b7 Quzyttir IV \u00b7 Zerviate eye drops"
+      ],
+      [
+        "Key distinction",
+        "Age and dosing depend on the product"
+      ]
+    ],
+    "sources": [
+      "rx",
+      "otc",
+      "chew",
+      "forms",
+      "iv",
+      "eye",
+      "fda",
+      "milk",
+      "chewlow",
+      "odt",
+      "capsule"
+    ]
+  }
+}

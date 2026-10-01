@@ -29,6 +29,16 @@ import { famotidine } from "./famotidine.js";
 import { ibuprofen } from "./ibuprofen.js";
 import { buspirone } from "./buspirone.js";
 import { venlafaxine } from "./venlafaxine.js";
+import { tramadol } from "./tramadol.js";
+import { potassiumChloride } from "./potassium-chloride.js";
+import { hydroxyzine } from "./hydroxyzine.js";
+import { allopurinol } from "./allopurinol.js";
+import { clopidogrel } from "./clopidogrel.js";
+import { ergocalciferol } from "./ergocalciferol.js";
+import { cetirizine } from "./cetirizine.js";
+import { ondansetron } from "./ondansetron.js";
+import { cyclobenzaprine } from "./cyclobenzaprine.js";
+import { spironolactone } from "./spironolactone.js";
 
 export const reviewedDrugMonographs = {
   "atorvastatin": atorvastatin,
@@ -61,4 +71,14 @@ export const reviewedDrugMonographs = {
   "ibuprofen": ibuprofen,
   "buspirone": buspirone,
   "venlafaxine": venlafaxine,
+  "tramadol": tramadol,
+  "potassium-chloride": potassiumChloride,
+  "hydroxyzine": hydroxyzine,
+  "allopurinol": allopurinol,
+  "clopidogrel": clopidogrel,
+  "ergocalciferol": ergocalciferol,
+  "cetirizine": cetirizine,
+  "ondansetron": ondansetron,
+  "cyclobenzaprine": cyclobenzaprine,
+  "spironolactone": spironolactone,
 };
