@@ -2,7 +2,7 @@
 
 Task: NaS-Website-Drug Library. Inventory: **300**, including the immutable APAP reference; **299** migrations are tracked in 30 batches (29 of ten, then nine).
 
-This is an active, incomplete work record. 29 batches (290 migrated profiles) have exact GitHub/Netlify production publication receipts and passed hosted checks. Batch30 is source-reviewed and undergoing integration/release QA. Candidate retrieval, clinical source review, schema validation, build/render checks, remote push, and verified publication remain distinct states in the completion ledger. All prior formatting editions are preserved. The remaining inventory is still being authored and reviewed; completion is never inferred from a candidate label or a passing schema.
+The full 300-profile inventory is integrated: all 299 migrations are source-reviewed, checked, remotely committed and verified in production; APAP remains unchanged. Thirty authoring batches (29 of ten and a final nine) are recorded individually. The first nine batches were published together; the ledger records exact production releases rather than implying thirty separate deployments. Every published clinical claim is bounded to its cited product, formulation, route and population. Explicit source-access conflicts and non-actionable formulation gaps remain visible; this completion record does not certify unavailable product labeling. All previous public editions and source evidence are preserved externally.
 
 Earlier batch notes are retained as history; the completion ledger and production-verification entries record the current state.
 
@@ -275,3 +275,17 @@ Profiles: nabumetone, lidocaine, hydroquinone, codeine-guaifenesin, dexamethason
 ### Batch29 production verification
 
 Profiles: liraglutide, guanfacine, betamethasone, mometasone, fluorouracil, beclomethasone, loratadine-pseudoephedrine, ascorbic-acid, mycophenolate-mofetil, olopatadine. Production commit `b4bcda601ccf2e241db7d6f2ab42ae4cec7779d3`, Netlify `6abee4406ef4320008593161`, published `2026-10-01T22:54:28.408Z` via https://github.com/NaS-Research/nas-website/pull/32. Exact preview and production HTML and strict desktop/mobile browser checks passed; receipts and route/browser evidence are recorded in the ledger and archived externally.
+
+
+### Batch30 production verification
+
+Profiles: indomethacin, brompheniramine-dextromethorphan-pseudoephedrine, benzoyl-peroxide, ciprofloxacin-dexamethasone, phenazopyridine, cefuroxime, thiamine, ethinyl-estradiol-norgestrel, sulfacetamide-sulfur. Production commit `dd36035e2f48cae0fcf8161e9398bac5c0fc8efc`, Netlify `6abee60e6ef43200085a5e97`, published `2026-10-01T23:02:22.503Z` via https://github.com/NaS-Research/nas-website/pull/33. Exact preview and production HTML and strict desktop/mobile browser checks passed; receipts and route/browser evidence are recorded in the ledger and archived externally.
+
+
+## Full-inventory closure
+
+All 300 routes passed the final strict article-width scan at 390px and 1440px (600 checks). Every migrated profile has its actual source audit, assertion mappings, current source hash, independent targeted safety review, local build/render verification, remote authoring commit and exact production receipt. The final nine profiles passed eighteen desktop/mobile interaction checks; the independently checked epinephrine numeric-separator correction added two more, with its previous public edition preserved. Repository security, drug-route and five monograph-contract tests pass; production builds contain 562 pages; dependency audit reports zero advisories. No lint script exists in this repository. APAP and the shared presentation files retain their recorded hashes.
+
+Remaining review flags are retained, not concealed: the current generic ciprofloxacin ER prescribing information could not be obtained publicly (FDA ANDA077701 supplement17, September20,2024, explicitly has no available label). Historical ER records do not establish current dosing; the profile withholds unsupported ER regimens, renal conversion and product identification/storage details pending current PI. Independent APAP preservation review flagged omitted pediatric stop-use counseling (pain beyond five days and severe/persistent sore throat) for founder review; no confirmed material false assertion was established, and the immutable file was preserved. Other non-actionable label inconsistencies remain attached to their individual profiles and audits.
+
+The verified lactate inventory identity is topical ammonium lactate12% cream/lotion for xerosis/ichthyosis; its library classification was corrected to Dermatology in batch28. IV fluid regimens are excluded from that selected-product profile.
