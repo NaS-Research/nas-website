@@ -86,13 +86,14 @@
             "pharmacokinetics",
             "parenteral-nutrition-calculations",
             "pharmacy-unit-conversions",
-            "pharmacy-concentrations-specific-gravity"
+            "pharmacy-concentrations-specific-gravity",
+            "pharmacy-dilution-alligation"
           ],
           "pdfPages": [
             19,
             19
           ],
-          "evidence": "chapter1-formula-checklist-map.json; first eight checklist entries verified with completed modules/questions and source/build/desktop/mobile checks; remaining entries open",
+          "evidence": "chapter1-formula-checklist-map.json; first ten entries source/item/build/rendered verified; remaining entries open",
           "topics": [
             {
               "topic": "Liquid-volume conversions",
@@ -221,6 +222,38 @@
                 143
               ],
               "evidence": "pharmacy-concentrations-specific-gravity-review.json"
+            },
+            {
+              "topic": "Dilution and concentration",
+              "status": "verified",
+              "targets": [
+                "pharmacy-dilution-alligation"
+              ],
+              "sourcePrintedPages": [
+                136,
+                139
+              ],
+              "sourcePdfPages": [
+                144,
+                147
+              ],
+              "evidence": "pharmacy-dilution-alligation-review.json"
+            },
+            {
+              "topic": "Alligation",
+              "status": "verified",
+              "targets": [
+                "pharmacy-dilution-alligation"
+              ],
+              "sourcePrintedPages": [
+                137,
+                139
+              ],
+              "sourcePdfPages": [
+                145,
+                147
+              ],
+              "evidence": "pharmacy-dilution-alligation-review.json"
             }
           ]
         },
@@ -274,7 +307,8 @@
       ],
       "moduleSlugs": [
         "pharmacy-unit-conversions",
-        "pharmacy-concentrations-specific-gravity"
+        "pharmacy-concentrations-specific-gravity",
+        "pharmacy-dilution-alligation"
       ],
       "findings": [
         "Textbook six-area exam blueprint superseded by NABP five-domain outline effective 2025-05-01.",
@@ -287,7 +321,8 @@
         "quick-reference-introduction-review.json",
         "chapter1-formula-checklist-map.json",
         "pharmacy-unit-conversions-review.json",
-        "pharmacy-concentrations-specific-gravity-review.json"
+        "pharmacy-concentrations-specific-gravity-review.json",
+        "pharmacy-dilution-alligation-review.json"
       ],
       "pdfRangeStatus": "start verified; end provisional"
     },
@@ -458,14 +493,32 @@
             "pharmacy-concentrations-specific-gravity"
           ],
           "evidence": "pharmacy-concentrations-specific-gravity-review.json; dependency of Chapter 1 checklist; rest of Chapter 10 remains open"
+        },
+        {
+          "topic": "Dilution, concentration, alligation and unknown final volume",
+          "printedPages": [
+            136,
+            139
+          ],
+          "pdfPages": [
+            144,
+            147
+          ],
+          "status": "verified",
+          "targets": [
+            "pharmacy-dilution-alligation"
+          ],
+          "evidence": "pharmacy-dilution-alligation-review.json; end before Osmolarity introduction on page 139"
         }
       ],
       "moduleSlugs": [
-        "pharmacy-concentrations-specific-gravity"
+        "pharmacy-concentrations-specific-gravity",
+        "pharmacy-dilution-alligation"
       ],
       "findings": [],
       "evidence": [
-        "pharmacy-concentrations-specific-gravity-review.json"
+        "pharmacy-concentrations-specific-gravity-review.json",
+        "pharmacy-dilution-alligation-review.json"
       ]
     },
     {

@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-30",
+  "updated": "2026-10-01",
   "status": "in_progress",
   "sourcePolicy": {
     "educational": "Supplied RxPrep 2023 book only for newly authored claims",
@@ -41,11 +41,12 @@
   },
   "thisPass": {
     "guide": "Existing preparation guide expanded at use-quick-references",
-    "questionCoverage": "Six added guide checks, four standalone cumulative questions, nine embedded checks and 60 new module-bank items; 12 existing PN prompts clarified",
-    "validation": "Both new modules and guide passed source/item review, focused structural checks, scoped production builds and desktop/mobile verification. Unit conversions: 38 independent calculations; concentration and retained PN arithmetic: 79. Both content units committed and push-verified; see sequential-release-2026-09-30.json.",
+    "questionCoverage": "Six added guide checks, four standalone cumulative questions, 13 embedded checks and 87 new module-bank items; 12 existing PN prompts clarified",
+    "validation": "Three logical calculation units source/item/build/rendered verified; 162 independent calculations/ratios passed in total. Third unit validated 2026-10-01; commit/push pending.",
     "newModules": [
       "pharmacy-unit-conversions",
-      "pharmacy-concentrations-specific-gravity"
+      "pharmacy-concentrations-specific-gravity",
+      "pharmacy-dilution-alligation"
     ]
   },
   "currentBookLocation": {
@@ -56,15 +57,16 @@
     "dependencyRead": {
       "chapter": 10,
       "printedPages": [
-        128,
-        135
+        136,
+        139
       ],
       "pdfPages": [
-        136,
-        143
-      ]
+        144,
+        147
+      ],
+      "end": "Through extra-credit box before Osmolarity"
     },
-    "completedEntries": 8,
+    "completedEntries": 10,
     "correctedEntries": 0,
     "note": "Do not advance the complete checklist to verified before all remaining entries are audited."
   },
@@ -72,11 +74,13 @@
     "chapter": 1,
     "printedPage": 7,
     "pdfPage": 19,
-    "entry": "Ninth checklist entry: dilution and concentration",
+    "entry": "Eleventh checklist entry: osmolarity",
     "dependencyChapter": 10,
-    "dependencyPrintedPage": 136,
-    "dependencyPdfPage": 144,
-    "sectionAudit": "not begun; next page identity verified"
+    "dependencyPrintedPage": 139,
+    "dependencyPdfPage": 147,
+    "formulaPrintedPage": 140,
+    "formulaPdfPage": 148,
+    "sectionAudit": "Introduction read; full subsection not audited."
   },
   "otherChapter1Work": {
     "quickReferenceIntroduction": "verified",
@@ -97,7 +101,8 @@
     "contentCommits": [
       "df630290c5abc8cd1dadeb5574fa0cec7c0ca582",
       "30d14a7e36d030e32340ff04a6ef28971253a060"
-    ]
+    ],
+    "pendingLogicalUnit": "pharmacy-dilution-alligation"
   },
   "openIssues": [
     "Remaining Chapter 1 checklist entries and all reference tables require source review.",
@@ -106,22 +111,22 @@
     "Audit-branch cumulative bank has 14 pre-existing duplicate prompt groups (83 repeated instances); new items are unique. Resolve in the associated chapter/module reviews."
   ],
   "progressSnapshot": {
-    "date": "2026-09-30",
+    "date": "2026-10-01",
     "chapterLedger": {
       "markedVerified": 6,
       "total": 82,
       "chapterCountPercent": 7.32
     },
     "workingModuleLedger": {
-      "markedVerified": 44,
-      "total": 230,
-      "moduleCountPercent": 19.13
+      "markedVerified": 45,
+      "total": 231,
+      "moduleCountPercent": 19.48
     },
     "committedModuleLedger": {
-      "markedVerified": 49,
-      "total": 227,
-      "moduleCountPercent": 21.59
+      "markedVerified": 50,
+      "total": 228,
+      "moduleCountPercent": 21.93
     },
-    "interpretation": "Count-based snapshots include historical flags preserved from earlier audits, not an independent recheck of every earlier module or chapter. Chapter sizes vary. Working and committed ledgers differ because older unfinished corrections and three additional modules remain unstaged. Two newly verified modules and eight checklist entries add partial chapter coverage, not new full-chapter closures."
+    "interpretation": "Count-based snapshots include historical flags preserved from earlier audits, not an independent recheck of every earlier module or chapter. Chapter sizes vary. Working and committed ledgers differ because older unfinished corrections and three additional modules remain unstaged. Three newly verified modules and ten checklist entries add partial chapter coverage, not new full-chapter closures."
   }
 }

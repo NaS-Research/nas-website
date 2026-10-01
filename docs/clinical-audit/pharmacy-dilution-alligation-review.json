@@ -1,0 +1,432 @@
+{
+  "date": "2026-09-30",
+  "status": "verified",
+  "module": "pharmacy-dilution-alligation",
+  "sourcePolicy": "Supplied RxPrep 2023 only",
+  "source": {
+    "chapter1": {
+      "printedPage": 7,
+      "pdfPage": 19,
+      "purpose": "Checklist entries nine and ten"
+    },
+    "dependency": {
+      "chapter": 10,
+      "printedPages": [
+        136,
+        139
+      ],
+      "pdfPages": [
+        144,
+        147
+      ],
+      "completeRelevantPagesTextAndVisualRead": true,
+      "end": "Extra-credit box before Osmolarity heading"
+    }
+  },
+  "mappingSearch": {
+    "search": "Module and bank search for alligation, Q1C1 and dilution/concentration; no dedicated method module or matching broader standalone item. Existing clinical product-preparation and PN lessons are different scopes and preserved.",
+    "existingNeighbors": [
+      "pharmacy-concentrations-specific-gravity",
+      "parenteral-nutrition-calculations#stock-solutions-additives"
+    ],
+    "broaderBank": "Five selections derive automatically from the new bank; no independent divergent copy."
+  },
+  "scope": {
+    "lessons": 4,
+    "teachingSections": 16,
+    "originalFigures": 4,
+    "embeddedChecks": 4,
+    "assessmentQuestions": 27,
+    "cumulativeAutoSelection": 5
+  },
+  "coverage": [
+    {
+      "lesson": "quantity-concentration",
+      "sourcePrintedPages": [
+        136,
+        137
+      ],
+      "subjects": [
+        "Q1C1 = Q2C2",
+        "Matched quantity and basis",
+        "Concentration unit conversion",
+        "Equivalent ingredient amount"
+      ]
+    },
+    {
+      "lesson": "final-versus-added",
+      "sourcePrintedPages": [
+        136,
+        139
+      ],
+      "subjects": [
+        "Final quantity versus added diluent",
+        "Ingredient-free solvent removal",
+        "0% and 100% of selected ingredient",
+        "Final rounding"
+      ]
+    },
+    {
+      "lesson": "alligation-parts",
+      "sourcePrintedPages": [
+        137,
+        139
+      ],
+      "subjects": [
+        "High/low labels and differences",
+        "Total parts and known final quantity",
+        "Midpoint equal amounts",
+        "Weighted ingredient check"
+      ]
+    },
+    {
+      "lesson": "unknown-final-volume",
+      "sourcePrintedPages": [
+        138,
+        139
+      ],
+      "subjects": [
+        "Known stock quantity with unknown final volume",
+        "Add stock to final denominator",
+        "Ingredient-balance algebra",
+        "Alligation agreement",
+        "Pure ingredient addition"
+      ]
+    }
+  ],
+  "itemReview": {
+    "all27PromptsChoicesKeysExplanationsIndividuallyRead": true,
+    "conceptualBankIds": [
+      "mix-001",
+      "mix-007",
+      "mix-012",
+      "mix-013",
+      "mix-020",
+      "mix-027"
+    ],
+    "embeddedChecks": "All four prompts/options/keys/rationales reviewed against source and independently calculated.",
+    "originality": "Original quantities and wording; no reproduced proprietary practice item.",
+    "distractors": "Final-versus-added confusion, concentration direction, unit mismatch, label reversal, missing added volume and rounding errors; one defensible answer per item.",
+    "finishedModuleComparedAgainToSource": true
+  },
+  "independentArithmetic": {
+    "method": "Independent Decimal arithmetic from literal question/example inputs; all numerical keyed choices and both labeled-part ratios compared. Six conceptual questions separately reviewed against source.",
+    "bank": [
+      {
+        "id": "mix-002",
+        "independentDecimal": "300",
+        "keyedChoice": "300 mL",
+        "passed": true
+      },
+      {
+        "id": "mix-003",
+        "independentDecimal": "60",
+        "keyedChoice": "60 mL",
+        "passed": true
+      },
+      {
+        "id": "mix-004",
+        "independentDecimal": "200.0",
+        "keyedChoice": "200 mL",
+        "passed": true
+      },
+      {
+        "id": "mix-005",
+        "independentDecimal": "2",
+        "keyedChoice": "2% w/v",
+        "passed": true
+      },
+      {
+        "id": "mix-006",
+        "independentDecimal": "180",
+        "keyedChoice": "180 mL",
+        "passed": true
+      },
+      {
+        "id": "mix-008",
+        "independentDecimal": "180",
+        "keyedChoice": "180 mL",
+        "passed": true
+      },
+      {
+        "id": "mix-009",
+        "independentDecimal": "40",
+        "keyedChoice": "40 g",
+        "passed": true
+      },
+      {
+        "id": "mix-010",
+        "independentDecimal": "300",
+        "keyedChoice": "300 mL",
+        "passed": true
+      },
+      {
+        "id": "mix-011",
+        "independentDecimal": "450",
+        "keyedChoice": "450 mL",
+        "passed": true
+      },
+      {
+        "id": "mix-014",
+        "independentDecimal": "155.7",
+        "keyedChoice": "155.7 g",
+        "passed": true
+      },
+      {
+        "id": "mix-016",
+        "independentDecimal": "80",
+        "keyedChoice": "80 g",
+        "passed": true
+      },
+      {
+        "id": "mix-017",
+        "independentDecimal": "120",
+        "keyedChoice": "120 g",
+        "passed": true
+      },
+      {
+        "id": "mix-018",
+        "independentDecimal": "8.00",
+        "keyedChoice": "8% w/w",
+        "passed": true
+      },
+      {
+        "id": "mix-019",
+        "independentDecimal": "60",
+        "keyedChoice": "60 g of each",
+        "passed": true
+      },
+      {
+        "id": "mix-021",
+        "independentDecimal": "250",
+        "keyedChoice": "250 mL",
+        "passed": true
+      },
+      {
+        "id": "mix-022",
+        "independentDecimal": "40",
+        "keyedChoice": "40 mL",
+        "passed": true
+      },
+      {
+        "id": "mix-023",
+        "independentDecimal": "200",
+        "keyedChoice": "200 mL",
+        "passed": true
+      },
+      {
+        "id": "mix-024",
+        "independentDecimal": "50",
+        "keyedChoice": "50 mL",
+        "passed": true
+      },
+      {
+        "id": "mix-026",
+        "independentDecimal": "4.44",
+        "keyedChoice": "4.44 g",
+        "passed": true
+      },
+      {
+        "id": "mix-015",
+        "independentRatio": "4:6",
+        "passed": true
+      },
+      {
+        "id": "mix-025",
+        "independentRatio": "7:10",
+        "passed": true
+      }
+    ],
+    "workedEmbeddedAndFigures": [
+      {
+        "label": "final volume",
+        "value": "300",
+        "passed": true
+      },
+      {
+        "label": "starting ingredient mass",
+        "value": "9.00",
+        "passed": true
+      },
+      {
+        "label": "final ingredient mass",
+        "value": "9.00",
+        "passed": true
+      },
+      {
+        "label": "1.2 L stock volume",
+        "value": "240.0",
+        "passed": true
+      },
+      {
+        "label": "equivalent 8 percent mass",
+        "value": "4.80",
+        "passed": true
+      },
+      {
+        "label": "equivalent 4 percent mass",
+        "value": "4.80",
+        "passed": true
+      },
+      {
+        "label": "added volume",
+        "value": "225",
+        "passed": true
+      },
+      {
+        "label": "final w/w mass",
+        "value": "150",
+        "passed": true
+      },
+      {
+        "label": "added w/w base",
+        "value": "60",
+        "passed": true
+      },
+      {
+        "label": "evaporation final",
+        "value": "200",
+        "passed": true
+      },
+      {
+        "label": "removed solvent",
+        "value": "400",
+        "passed": true
+      },
+      {
+        "label": "higher-stock allocation",
+        "value": "45",
+        "passed": true
+      },
+      {
+        "label": "lower-stock allocation",
+        "value": "105",
+        "passed": true
+      },
+      {
+        "label": "mixture ingredient",
+        "value": "7.50",
+        "passed": true
+      },
+      {
+        "label": "weighted concentration",
+        "value": "5.00",
+        "passed": true
+      },
+      {
+        "label": "midpoint equal mass",
+        "value": "40",
+        "passed": true
+      },
+      {
+        "label": "unknown volume stock",
+        "value": "20",
+        "passed": true
+      },
+      {
+        "label": "unknown final volume",
+        "value": "200",
+        "passed": true
+      },
+      {
+        "label": "reverse concentration",
+        "value": "4",
+        "passed": true
+      },
+      {
+        "label": "two nonzero stocks",
+        "value": "40",
+        "passed": true
+      },
+      {
+        "label": "two-stock total",
+        "value": "120",
+        "passed": true
+      },
+      {
+        "label": "two-stock ingredient",
+        "value": "1200",
+        "passed": true
+      },
+      {
+        "label": "two-stock weighted concentration",
+        "value": "10",
+        "passed": true
+      },
+      {
+        "label": "pure ingredient rounded",
+        "value": "3.33",
+        "passed": true
+      }
+    ],
+    "totalCalculations": 45,
+    "allPassed": true
+  },
+  "sourceFindings": [
+    "The pure ingredient and zero concentration must refer to the tracked ingredient, not all substances in the vehicle.",
+    "Unknown final quantity requires the added stock in the denominator; both alligation and the full ingredient equation give the same result.",
+    "Book examples use rounded intermediate parts on printed page 138; original examples retain intermediate precision and round the requested final answer, consistent with the prior Chapter 9 rule.",
+    "The source includes an enteral dilution example using bacteriostatic water. This module teaches an original generic ingredient-balance example and does not endorse that clinical preparation; actual route/formulation suitability is outside this arithmetic-only scope."
+  ],
+  "unresolvedIssues": [],
+  "validation": {
+    "focusedAssessmentAudit": "Passed; no hard errors or source gaps. Nonuniform size advisories reviewed as appropriate for source scope.",
+    "build": "Passed: exact scoped Next production build, 563 pages; rebuilt after final figure unit clarification.",
+    "desktopMobile": [
+      {
+        "build": "scoped production candidate",
+        "width": 1440,
+        "lessons": 4,
+        "figures": 4,
+        "embeddedChecks": 4,
+        "assessmentCorrect": 10,
+        "secondAttemptDistinct": true,
+        "incorrectFeedbackAndRemediation": true,
+        "priorConversionFigures": 4,
+        "priorConcentrationFigures": 5,
+        "curriculum": true,
+        "sitemap": true,
+        "noOverflow": true,
+        "pageErrors": []
+      },
+      {
+        "build": "scoped production candidate",
+        "width": 390,
+        "lessons": 4,
+        "figures": 4,
+        "embeddedChecks": 4,
+        "assessmentCorrect": 10,
+        "secondAttemptDistinct": true,
+        "incorrectFeedbackAndRemediation": true,
+        "priorConversionFigures": 4,
+        "priorConcentrationFigures": 5,
+        "curriculum": true,
+        "sitemap": true,
+        "noOverflow": true,
+        "pageErrors": []
+      },
+      {
+        "build": "current working Learn integration",
+        "width": 390,
+        "narrowWidth": 320,
+        "librarySearch": true,
+        "moduleLink": true,
+        "figures": 4,
+        "noOverflow": true,
+        "signedOutMemberBoundary": 401,
+        "pageErrors": []
+      }
+    ],
+    "candidateDiff": "Passed: only new module, its reader/catalog registration and scoped ledger/evidence changes; unrelated work excluded.",
+    "renderedVisualReview": "All four original figures visually checked at desktop 1440 and mobile 390, including unobscured viewport captures; arithmetic labels and formula wrapping legible."
+  },
+  "release": {
+    "branch": "audit/rxprep-content-2026-09-24",
+    "baseCommit": "3c23790abc5481f2634918082ea4bd8169ca0529",
+    "commit": "pending",
+    "push": "pending",
+    "production": "not verified"
+  },
+  "remainingBookCoverage": "Chapter 1 checklist and Chapter 10 remain open. Osmolarity starts at printed139/PDF147 and continues with formulas on printed140/PDF148.",
+  "verificationDate": "2026-10-01"
+}
