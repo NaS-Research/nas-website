@@ -1,0 +1,1793 @@
+{
+  "date": "2026-10-01",
+  "module": "parenteral-nutrition",
+  "status": "verified",
+  "statusScope": "Complete current standalone adult PN module; related Chapter11 modules and legacy combined parent remain separate.",
+  "wholeModuleVerified": true,
+  "wholeChapterVerified": false,
+  "unit": "parenteral-nutrition:complete-adult-module-reconciliation",
+  "baseCommit": "70cebda7ceaf70006526643c02320af444308c43",
+  "sourcePolicy": "Private supplied RxPrep2023 remains primary; explicit2026-10-01 user-approved PN official references and linked primary sources retain their item-specific evidence and dated discrepancy resolutions.",
+  "finalBookComparison": {
+    "chapter": 11,
+    "printedPages": [
+      149,
+      161
+    ],
+    "PDFPages": [
+      157,
+      169
+    ],
+    "completeRelevantTextRecompared": true,
+    "renderedSourceEvidence": "Complete Chapter11 source pages/tables inspected in book-expansion/calculation records; nutrient unit reread rendered160/162/163/166/167/169. Original source pages remain private. No claim that all cited external papers/tables were audited.",
+    "scopeMapping": {
+      "clinicalAdultPN": "Current six-lesson module covers adult indications/route, access, fluid/macronutrients, additives, formulation/sterile safety, monitoring and transitions.",
+      "detailedCalculations": "Verified parenteral-nutrition-calculations module contains Harris-Benedict/TEE, protein/nitrogen/NPC:N, ingredient concentrations, electrolyte/order calculations. Current adult bank arithmetic retains independent original verification; no duplicate count.",
+      "ENAndPediatricFluid": "Continue related modules; not absorbed into adult PN closure."
+    },
+    "datedBookBoundaries": [
+      "Book>5-day indication is attributed, with approved risk-based adult timing clarified.",
+      "Book45mEq/L calcium/phosphate heuristic remains attributed with validated formulation/process limits; not a universal guarantee.",
+      "Old risk/BUD scheme and0.22-micron lipid-free rule are reconciled with approved USP/current ASPEN references.",
+      "Historical trace-product group and insulin example remain attributed and do not replace actual product/current clinical review."
+    ]
+  },
+  "exactSourceEvidenceReconciliation": {
+    "questions": [
+      {
+        "id": "parenteral-nutrition-001",
+        "matched": true,
+        "evidence": "parenteral-nutrition-fluid-label-review.json",
+        "currentSHA256": "2ccb919f0f3dd7c14ab2b9394c526ef7996bcbf7782aea0af935064e97a2757a"
+      },
+      {
+        "id": "parenteral-nutrition-002",
+        "matched": true,
+        "evidence": "parenteral-nutrition-fluid-label-review.json",
+        "currentSHA256": "204aab1b8cab47e1b6260d150b8cf295aacf6a31291e772f641fe0ef24efceed"
+      },
+      {
+        "id": "parenteral-nutrition-003",
+        "matched": true,
+        "evidence": "parenteral-nutrition-home-monitoring-review.json",
+        "currentSHA256": "1611ce1abb0aaac50b14489c33803cf035a592c12f6e0bbbee5a95266d4d90a2"
+      },
+      {
+        "id": "parenteral-nutrition-004",
+        "matched": true,
+        "evidence": "parenteral-nutrition-fluid-label-review.json",
+        "currentSHA256": "fff6bcbfec62972ec093b1583d4785e1c6eec50845f7d3b1af55a5e5b43b1ecd"
+      },
+      {
+        "id": "parenteral-nutrition-005",
+        "matched": true,
+        "evidence": "parenteral-nutrition-refeeding-timing-review.json",
+        "currentSHA256": "f4ecc2872f3fcfafb22ac19a2f82cfc4d45307c34b3bee29867175530fd15891"
+      },
+      {
+        "id": "parenteral-nutrition-006",
+        "matched": true,
+        "evidence": "parenteral-nutrition-refeeding-timing-review.json",
+        "currentSHA256": "c0a36683f6e6826a0483dd4dd57468c78d27cb1b1d02631961d085182c270674"
+      },
+      {
+        "id": "parenteral-nutrition-007",
+        "matched": true,
+        "evidence": "parenteral-nutrition-home-monitoring-review.json",
+        "currentSHA256": "e11e242312e1f2d728f1c142d18e972e51cf4f0e0a3bc41ce4ca62666ccc61c9"
+      },
+      {
+        "id": "parenteral-nutrition-008",
+        "matched": true,
+        "evidence": "parenteral-nutrition-home-monitoring-review.json",
+        "currentSHA256": "fc7520a9b061d749ab0e5aef183158a890d18d05f5f88b6882ea6f79ef7313d3"
+      },
+      {
+        "id": "parenteral-nutrition-009",
+        "matched": true,
+        "evidence": "parenteral-nutrition-fluid-label-review.json",
+        "currentSHA256": "0f30ae024fb8931c4823b10372eb3518570d8b1f97704f264efda5bae495175d"
+      },
+      {
+        "id": "parenteral-nutrition-010",
+        "matched": true,
+        "evidence": "parenteral-nutrition-fluid-label-review.json",
+        "currentSHA256": "8f08e7c7cc4828c987c586ace2392f5e11f57956b7f0e5f9020f7c5bada17cfb"
+      },
+      {
+        "id": "parenteral-nutrition-011",
+        "matched": true,
+        "evidence": "parenteral-nutrition-approved-safety-review.json",
+        "currentSHA256": "b8ab9c15f1ec372759e155bb74cb5e3d07747d6c28bfb2d369aaf451d61772e0"
+      },
+      {
+        "id": "parenteral-nutrition-012",
+        "matched": true,
+        "evidence": "parenteral-nutrition-access-review.json",
+        "currentSHA256": "665c787769f98a9cd207fa9bddb32fdc377e156429e32813fa0104701cf00cdb"
+      },
+      {
+        "id": "parenteral-nutrition-013",
+        "matched": true,
+        "evidence": "parenteral-nutrition-access-review.json",
+        "currentSHA256": "821dddefc813e1f372aa45318f92ee0a0fbecff0c9eaee4030741d9e1aedbabb"
+      },
+      {
+        "id": "parenteral-nutrition-014",
+        "matched": true,
+        "evidence": "parenteral-nutrition-approved-safety-review.json",
+        "currentSHA256": "e4a817e1aecac107ee61b9328deb038970b6894d849633d1ece0bc08e06cf27e"
+      },
+      {
+        "id": "parenteral-nutrition-015",
+        "matched": true,
+        "evidence": "parenteral-nutrition-home-monitoring-review.json",
+        "currentSHA256": "b089e21b3b4e0983a6ef0e741c683284b75e8f936d9b0df27e324adc470de947"
+      },
+      {
+        "id": "parenteral-nutrition-016",
+        "matched": true,
+        "evidence": "parenteral-nutrition-approved-safety-review.json",
+        "currentSHA256": "ccc6ccaef0217df77b8c05f75164acea07481e5f7009fe2d867f514a2fc9f68a"
+      },
+      {
+        "id": "parenteral-nutrition-017",
+        "matched": true,
+        "evidence": "parenteral-nutrition-fluid-label-review.json",
+        "currentSHA256": "0bf9aa13f12388ef07b05efbe78b3389386b43510353179b98acc2e9ebae7f49"
+      },
+      {
+        "id": "parenteral-nutrition-018",
+        "matched": true,
+        "evidence": "parenteral-nutrition-fluid-label-review.json",
+        "currentSHA256": "ed67670e6c6f4999de315f7c0b37df311a013fef4c8e5aa6b55fcce00bda6dd4"
+      },
+      {
+        "id": "parenteral-nutrition-019",
+        "matched": true,
+        "evidence": "parenteral-nutrition-fluid-label-review.json",
+        "currentSHA256": "5c1f208e72c1d442da859e3ca0e7fd30a7875f03ce53b9c5783c640ab7ad53ba"
+      },
+      {
+        "id": "parenteral-nutrition-020",
+        "matched": true,
+        "evidence": "parenteral-nutrition-nutrient-monitoring-review.json",
+        "currentSHA256": "2a1adccd8168191924cd3143b53f39785b220d3970bad9d0b1f978b336207aae"
+      },
+      {
+        "id": "parenteral-nutrition-021",
+        "matched": true,
+        "evidence": "parenteral-nutrition-fluid-label-review.json",
+        "currentSHA256": "962bd0be99a8bb8db616bc65ad5e134613272acb12533c4bbccf5d0cf657f153"
+      },
+      {
+        "id": "parenteral-nutrition-022",
+        "matched": true,
+        "evidence": "parenteral-nutrition-approved-safety-review.json",
+        "currentSHA256": "df124ec812760a984ab80875e305991a2b48ac68be3c048353e768bbd6d93238"
+      },
+      {
+        "id": "parenteral-nutrition-023",
+        "matched": true,
+        "evidence": "parenteral-nutrition-approved-safety-review.json",
+        "currentSHA256": "590a82d5cb6206b82083d609242bc41bc5482dfa33f7156a278726a72ed58b8a"
+      },
+      {
+        "id": "parenteral-nutrition-024",
+        "matched": true,
+        "evidence": "parenteral-nutrition-approved-safety-review.json",
+        "currentSHA256": "6ee90de6e0dd5c071b0fabe47145375b1209bb176b8fa4b0f62d060beb614bb5"
+      },
+      {
+        "id": "parenteral-nutrition-025",
+        "matched": true,
+        "evidence": "parenteral-nutrition-nutrient-monitoring-review.json",
+        "currentSHA256": "3dadac8fa5612a85735b5350930f0e0607c0a2fe8a6f2b7971cb30c2d32f9801"
+      },
+      {
+        "id": "parenteral-nutrition-026",
+        "matched": true,
+        "evidence": "parenteral-nutrition-fluid-label-review.json",
+        "currentSHA256": "c224abf29ee3620a23272ee5b78ec195cce0a8e8558116073882bd4595adeb63"
+      },
+      {
+        "id": "parenteral-nutrition-027",
+        "matched": true,
+        "evidence": "parenteral-nutrition-nutrient-monitoring-review.json",
+        "currentSHA256": "4488f153e87a8ac98b8e63269888736eab20dcede0fca13d215324725259b230"
+      },
+      {
+        "id": "parenteral-nutrition-028",
+        "matched": true,
+        "evidence": "parenteral-nutrition-fluid-label-review.json",
+        "currentSHA256": "fb260ef8f44fa2bd0f0af6fc2a15408da79b41d299c6c4250299e08fe9a1769a"
+      },
+      {
+        "id": "parenteral-nutrition-029",
+        "matched": true,
+        "evidence": "parenteral-nutrition-fluid-label-review.json",
+        "currentSHA256": "6a00b74e125adc1385b11d112208a31bb4bdd9824e830d9be2418c8de7cb2942"
+      },
+      {
+        "id": "parenteral-nutrition-030",
+        "matched": true,
+        "evidence": "parenteral-nutrition-nutrient-monitoring-review.json",
+        "currentSHA256": "6af67991c050cdb58462f8f9136ad2ffdcdefdfd4650e48acfadbefa5b83478f"
+      },
+      {
+        "id": "parenteral-nutrition-031",
+        "matched": true,
+        "evidence": "parenteral-nutrition-nutrient-monitoring-review.json",
+        "currentSHA256": "33a543a5ca3cdc677e37b84916385562000746bf9851ac567f356bf75c3a3631"
+      },
+      {
+        "id": "parenteral-nutrition-032",
+        "matched": true,
+        "evidence": "parenteral-nutrition-refeeding-timing-review.json",
+        "currentSHA256": "3b9f073ce35ac9bf4234e228e81c9fc441d5d64cb41f1a1aabad8e3dbf185ed1"
+      },
+      {
+        "id": "parenteral-nutrition-033",
+        "matched": true,
+        "evidence": "parenteral-nutrition-nutrient-monitoring-review.json",
+        "currentSHA256": "7fe910a18f97ff25af5d98d6e84cd15fa281ef77d2dae14c0161de2785896fc3"
+      },
+      {
+        "id": "parenteral-nutrition-034",
+        "matched": true,
+        "evidence": "parenteral-nutrition-approved-safety-review.json",
+        "currentSHA256": "5864a4b8465e0585e96fb23789287a57e8ab47586a65c96b3941dd452f3c6a66"
+      },
+      {
+        "id": "parenteral-nutrition-035",
+        "matched": true,
+        "evidence": "parenteral-nutrition-fluid-label-review.json",
+        "currentSHA256": "94e0fb3e06eb6573d9b42747affeb9cc97049fd0beac9a256db36d525b674ca7"
+      },
+      {
+        "id": "parenteral-nutrition-036",
+        "matched": true,
+        "evidence": "parenteral-nutrition-approved-safety-review.json",
+        "currentSHA256": "8c4daa3f114b2c482dd6ffe31c795c93b02728f6ab3ef103fca3565c12dcde86"
+      },
+      {
+        "id": "parenteral-nutrition-037",
+        "matched": true,
+        "evidence": "parenteral-nutrition-approved-safety-review.json",
+        "currentSHA256": "f433d50a4c8a546d5a06d198d7864958a6f9656e4dc5f4684929c0870525806b"
+      },
+      {
+        "id": "parenteral-nutrition-038",
+        "matched": true,
+        "evidence": "parenteral-nutrition-approved-safety-review.json",
+        "currentSHA256": "f40fb657011ca8c2176115d46ca52489566e5a2c67f8bec565970b9f4772d6e5"
+      },
+      {
+        "id": "parenteral-nutrition-039",
+        "matched": true,
+        "evidence": "parenteral-nutrition-approved-safety-review.json",
+        "currentSHA256": "aa6fd88a4359aeb5805d36f14b9440331da752834ac6348fa126a7106ebff556"
+      },
+      {
+        "id": "parenteral-nutrition-040",
+        "matched": true,
+        "evidence": "parenteral-nutrition-approved-safety-review.json",
+        "currentSHA256": "300a996d72ff2fd17e8bd4a0f4dedd06756d2480ee913abe4c36abed2bf08e54"
+      },
+      {
+        "id": "parenteral-nutrition-041",
+        "matched": true,
+        "evidence": "parenteral-nutrition-approved-safety-review.json",
+        "currentSHA256": "b2d0427ff21bfbe7a53ad094e9885d56eb6438b3f6021bb7a1ebc839049bfac0"
+      },
+      {
+        "id": "parenteral-nutrition-042",
+        "matched": true,
+        "evidence": "parenteral-nutrition-verification-workflow-review.json",
+        "currentSHA256": "16f593aae0cedc40c5986b94f8679e7cbeaffe40946c315f8e9fa73baa890e41"
+      },
+      {
+        "id": "parenteral-nutrition-043",
+        "matched": true,
+        "evidence": "parenteral-nutrition-refeeding-timing-review.json",
+        "currentSHA256": "3acc123a0212e7e03f25404ff559fa24f4d2179d53fe1047f18d3c77eeeb2060"
+      },
+      {
+        "id": "parenteral-nutrition-044",
+        "matched": true,
+        "evidence": "parenteral-nutrition-nutrient-monitoring-review.json",
+        "currentSHA256": "910b214d22276ebd6945ff46dc68215845a0f8c2baaa47b49935659bafa86dd7"
+      },
+      {
+        "id": "parenteral-nutrition-045",
+        "matched": true,
+        "evidence": "parenteral-nutrition-nutrient-monitoring-review.json",
+        "currentSHA256": "f4a2d7100e3d13e99812c65b117ef98d69280d6c2d43febb732abbb8037f0ba8"
+      },
+      {
+        "id": "parenteral-nutrition-046",
+        "matched": true,
+        "evidence": "parenteral-nutrition-fluid-label-review.json",
+        "currentSHA256": "547f98923c5c2695c7c9051fa2496abb326e3e36a6d4042b300e72b7245af7ea"
+      },
+      {
+        "id": "parenteral-nutrition-047",
+        "matched": true,
+        "evidence": "parenteral-nutrition-home-monitoring-review.json",
+        "currentSHA256": "f77aafec4e24b322a88ca247a1474f93ad4bb924824bc4f69b59adda811e9b22"
+      },
+      {
+        "id": "parenteral-nutrition-048",
+        "matched": true,
+        "evidence": "parenteral-nutrition-home-monitoring-review.json",
+        "currentSHA256": "a2dcea3f48854e63652ebb9052e56498cdb4c72b962cc23f36221c5a8ffceb6f"
+      },
+      {
+        "id": "parenteral-nutrition-049",
+        "matched": true,
+        "evidence": "parenteral-nutrition-home-monitoring-review.json",
+        "currentSHA256": "629586194c65d822cdae424e23cdfe787ae8eba57d8e26704171deca5d042a0a"
+      },
+      {
+        "id": "parenteral-nutrition-050",
+        "matched": true,
+        "evidence": "parenteral-nutrition-fluid-label-review.json",
+        "currentSHA256": "b794c15458f1b40d01aa9f135fbd4a890789c57dd246ea6e68f2ea9c468d9c50"
+      },
+      {
+        "id": "parenteral-nutrition-060",
+        "matched": true,
+        "evidence": "parenteral-nutrition-fluid-label-review.json",
+        "currentSHA256": "9174f76dec9e5969601f6b4258669446d0411e6447ce8d93eb981e4e4f1352be"
+      },
+      {
+        "id": "parenteral-nutrition-061",
+        "matched": true,
+        "evidence": "parenteral-nutrition-fluid-label-review.json",
+        "currentSHA256": "52d8e0aa713de9d77044e849d5571d7721926413a1a2522077a42d4e594776cb"
+      },
+      {
+        "id": "parenteral-nutrition-062",
+        "matched": true,
+        "evidence": "parenteral-nutrition-fluid-label-review.json",
+        "currentSHA256": "081636c4aa449c81cd6e5da675d1968966ffec74f1cf8507a41c8e2f4d86f561"
+      },
+      {
+        "id": "parenteral-nutrition-063",
+        "matched": true,
+        "evidence": "parenteral-nutrition-fluid-label-review.json",
+        "currentSHA256": "93cc560adf0f0c09c82345154d8a1499411dc207bb4da8f7dd6b54ea36d129b2"
+      },
+      {
+        "id": "parenteral-nutrition-064",
+        "matched": true,
+        "evidence": "parenteral-nutrition-fluid-label-review.json",
+        "currentSHA256": "5b677967bc75ab1d230e1e8335f5ceddf0bda56db27f8056c2e34dd09dc78f10"
+      },
+      {
+        "id": "parenteral-nutrition-065",
+        "matched": true,
+        "evidence": "parenteral-nutrition-fluid-label-review.json",
+        "currentSHA256": "ebb62c65c7a2f759142eede54d18e9f29dc44c13c2794b88dba5105125691247"
+      },
+      {
+        "id": "parenteral-nutrition-066",
+        "matched": true,
+        "evidence": "parenteral-nutrition-fluid-label-review.json",
+        "currentSHA256": "434f35603572ee4e9f71c2a4d2b5c1421562607b392b01e88ad78af113d5a212"
+      },
+      {
+        "id": "parenteral-nutrition-067",
+        "matched": true,
+        "evidence": "parenteral-nutrition-fluid-label-review.json",
+        "currentSHA256": "5942d5a63beafbbd892d359e806a5905b43fd42aaff51e6368025855901a7bef"
+      },
+      {
+        "id": "parenteral-nutrition-068",
+        "matched": true,
+        "evidence": "parenteral-nutrition-fluid-label-review.json",
+        "currentSHA256": "07648ef872c3654363030eca5da1f9a36e743e4e5e92f46309ff1114a735e2fe"
+      },
+      {
+        "id": "parenteral-nutrition-069",
+        "matched": true,
+        "evidence": "parenteral-nutrition-fluid-label-review.json",
+        "currentSHA256": "cd185d6bb4d2a03a62df7998ca6ea82b8754d31821e465c3f655c6e0031a4b44"
+      },
+      {
+        "id": "parenteral-nutrition-070",
+        "matched": true,
+        "evidence": "parenteral-nutrition-fluid-label-review.json",
+        "currentSHA256": "817577d5ad316bc52257dba4be69cd3df8551ba59110a845dd3ae9fe51e8f606"
+      },
+      {
+        "id": "parenteral-nutrition-071",
+        "matched": true,
+        "evidence": "parenteral-nutrition-fluid-label-review.json",
+        "currentSHA256": "c69630a674187ed24d805fd12c04e4c645b18ca7d8739335793bbaefbaab903d"
+      },
+      {
+        "id": "parenteral-nutrition-072",
+        "matched": true,
+        "evidence": "parenteral-nutrition-fluid-label-review.json",
+        "currentSHA256": "c408932a9a953f6278741d8aea5d7f33ebedb382131bf0e32558b688f3b54462"
+      },
+      {
+        "id": "parenteral-nutrition-073",
+        "matched": true,
+        "evidence": "parenteral-nutrition-fluid-label-review.json",
+        "currentSHA256": "ecdcdb353f7e4c58e4167e5a0405ae898fdcfd514554eafcb5056f55f671f40d"
+      },
+      {
+        "id": "parenteral-nutrition-074",
+        "matched": true,
+        "evidence": "parenteral-nutrition-fluid-label-review.json",
+        "currentSHA256": "36f856e07f5b2dc925bafb5b92248d96671dac451f1ec8da1b67303fbbd8eb7d"
+      },
+      {
+        "id": "parenteral-nutrition-075",
+        "matched": true,
+        "evidence": "parenteral-nutrition-fluid-label-review.json",
+        "currentSHA256": "2c70aefdb74255376732e7a31f50cf57a803835c75b4f4394c82cbdc250ff9fc"
+      },
+      {
+        "id": "parenteral-nutrition-076",
+        "matched": true,
+        "evidence": "parenteral-nutrition-fluid-label-review.json",
+        "currentSHA256": "8cb52fc6bcd5e9d9294f886f4ebf0a8f01f580524718e1ec4e4f546702e66e35"
+      },
+      {
+        "id": "parenteral-nutrition-077",
+        "matched": true,
+        "evidence": "parenteral-nutrition-fluid-label-review.json",
+        "currentSHA256": "76544be008b8e7f9239bb81c48a18c7428a4fa9dedad92798ad846a2045193e3"
+      },
+      {
+        "id": "parenteral-nutrition-078",
+        "matched": true,
+        "evidence": "parenteral-nutrition-fluid-label-review.json",
+        "currentSHA256": "9c5668c1912acafcce629c67389af9a4a26bba46a8c8a9b81304649b054d4fb4"
+      },
+      {
+        "id": "parenteral-nutrition-079",
+        "matched": true,
+        "evidence": "parenteral-nutrition-fluid-label-review.json",
+        "currentSHA256": "82ba4ffee66dcad89a1846021f2156146fa7539ab50275137d94d0f6e4c454c7"
+      },
+      {
+        "id": "parenteral-nutrition-080",
+        "matched": true,
+        "evidence": "parenteral-nutrition-fluid-label-review.json",
+        "currentSHA256": "a7809b5b518b2d24f3564f1be1b54b57e659f7642c7f75bf134777264e14e893"
+      },
+      {
+        "id": "parenteral-nutrition-081",
+        "matched": true,
+        "evidence": "parenteral-nutrition-fluid-label-review.json",
+        "currentSHA256": "df9670af7b309196aa5ec027967f3f095638cc075d44bdcc050e4bda8de79353"
+      },
+      {
+        "id": "parenteral-nutrition-082",
+        "matched": true,
+        "evidence": "parenteral-nutrition-fluid-label-review.json",
+        "currentSHA256": "5487d5eeba75594d288ba118e4707ed50ddf45aec0248b277760d3bee0308d25"
+      },
+      {
+        "id": "parenteral-nutrition-083",
+        "matched": true,
+        "evidence": "parenteral-nutrition-fluid-label-review.json",
+        "currentSHA256": "9ce6da3e0bd2a4231388a0c3c8aa33998b38f3d16ca981cc62c9f8c0365eb543"
+      },
+      {
+        "id": "parenteral-nutrition-084",
+        "matched": true,
+        "evidence": "parenteral-nutrition-fluid-label-review.json",
+        "currentSHA256": "d007ee8735c58a14aff7d709559ed6a25639d4945738fa127e25c2f0593898d6"
+      },
+      {
+        "id": "parenteral-nutrition-085",
+        "matched": true,
+        "evidence": "parenteral-nutrition-fluid-label-review.json",
+        "currentSHA256": "dda08b83ecbbe4a658dff799d30359f5d8121bedd942c3053c2a535b7ac76ec7"
+      },
+      {
+        "id": "parenteral-nutrition-086",
+        "matched": true,
+        "evidence": "parenteral-nutrition-fluid-label-review.json",
+        "currentSHA256": "2e4f23a2f6c7013eae9d63bcbdb27a0973330788f1f46b6cd096866bcc19c43d"
+      },
+      {
+        "id": "parenteral-nutrition-087",
+        "matched": true,
+        "evidence": "parenteral-nutrition-fluid-label-review.json",
+        "currentSHA256": "a171b897c49bdcb88a92c0febf660a3701a94b1f48502e1fa7249978fb4477f4"
+      },
+      {
+        "id": "parenteral-nutrition-088",
+        "matched": true,
+        "evidence": "parenteral-nutrition-fluid-label-review.json",
+        "currentSHA256": "733dd64ae1fe45bbe831a8fe20d215bee659e4b658e299e9ade4bc13f4cc14a1"
+      },
+      {
+        "id": "parenteral-nutrition-089",
+        "matched": true,
+        "evidence": "parenteral-nutrition-fluid-label-review.json",
+        "currentSHA256": "7ea30c420d5d9192a0472d06c8cf72e4021e9d6de9179960e807e1ff3e9bacfa"
+      },
+      {
+        "id": "parenteral-nutrition-090",
+        "matched": true,
+        "evidence": "parenteral-nutrition-fluid-label-review.json",
+        "currentSHA256": "d30170b20efeeb4768a6e26312d504ad004ad56fa2cc17db27663d4a7c08e7a2"
+      },
+      {
+        "id": "parenteral-nutrition-091",
+        "matched": true,
+        "evidence": "parenteral-nutrition-fluid-label-review.json",
+        "currentSHA256": "0ac563c75d6cffc9b6b0a0fe20b79e8f1bb84d3121cadec52f8d16c38c7323f6"
+      },
+      {
+        "id": "parenteral-nutrition-092",
+        "matched": true,
+        "evidence": "parenteral-nutrition-fluid-label-review.json",
+        "currentSHA256": "7ea8c6950560da3d03e29ce18b5fa0d309b5f4f8f0ac799376175f6f4fe2882a"
+      },
+      {
+        "id": "parenteral-nutrition-093",
+        "matched": true,
+        "evidence": "parenteral-nutrition-fluid-label-review.json",
+        "currentSHA256": "a016a46fbf94464cd66d5049a89d0ac82e34202477e8016e4f506815fb678bbb"
+      },
+      {
+        "id": "parenteral-nutrition-094",
+        "matched": true,
+        "evidence": "parenteral-nutrition-fluid-label-review.json",
+        "currentSHA256": "2605bb50a8f0fbad92d727ae69412ee336f2cadd0a533d74aeb48400235d3057"
+      },
+      {
+        "id": "parenteral-nutrition-095",
+        "matched": true,
+        "evidence": "parenteral-nutrition-fluid-label-review.json",
+        "currentSHA256": "b77cd80d7a5bc65fc8330bd24b21f8d3251ca7c8a075dcdff0de20a2e220ccb7"
+      },
+      {
+        "id": "parenteral-nutrition-096",
+        "matched": true,
+        "evidence": "parenteral-nutrition-fluid-label-review.json",
+        "currentSHA256": "faff3db517c40e53875e4560c94dfb706c5829086b0687600fcd1dd84ec13b3c"
+      },
+      {
+        "id": "parenteral-nutrition-097",
+        "matched": true,
+        "evidence": "parenteral-nutrition-fluid-label-review.json",
+        "currentSHA256": "6dfd7c81060505fb1e3a353fdd6f04741b73afd2e048d500d040411bad683e22"
+      },
+      {
+        "id": "parenteral-nutrition-098",
+        "matched": true,
+        "evidence": "parenteral-nutrition-fluid-label-review.json",
+        "currentSHA256": "61f1a76bdaab49f7338f07cda8c216cbcfab54e068be96b1590af12ccff3c84b"
+      },
+      {
+        "id": "parenteral-nutrition-099",
+        "matched": true,
+        "evidence": "parenteral-nutrition-fluid-label-review.json",
+        "currentSHA256": "bca5effa3aaac6612ffd1c118b5cd8b8893dd4c352e79e6895dd8d082ad30ee4"
+      },
+      {
+        "id": "parenteral-nutrition-100",
+        "matched": true,
+        "evidence": "parenteral-nutrition-refeeding-timing-review.json",
+        "currentSHA256": "aff8670eb85ecf13bad0e217fb8c3e8af59fa87a42c10f5c2e3dd4a3c4816c07"
+      },
+      {
+        "id": "parenteral-nutrition-101",
+        "matched": true,
+        "evidence": "parenteral-nutrition-fluid-label-review.json",
+        "currentSHA256": "af937d581918abdc2645a801965d05f68021ffa73436544e6d2347f937c07c26"
+      },
+      {
+        "id": "parenteral-nutrition-102",
+        "matched": true,
+        "evidence": "parenteral-nutrition-approved-safety-review.json",
+        "currentSHA256": "8fe32874d49d88615bd52f398532969d2c6451a4b978ecf6c529ac3afb6135d5"
+      },
+      {
+        "id": "parenteral-nutrition-103",
+        "matched": true,
+        "evidence": "parenteral-nutrition-nutrient-monitoring-review.json",
+        "currentSHA256": "141fb195585040e4fca5e3c496cfe982451b2f8fad7fc92faa32cf13677f32af"
+      },
+      {
+        "id": "parenteral-nutrition-104",
+        "matched": true,
+        "evidence": "parenteral-nutrition-fluid-label-review.json",
+        "currentSHA256": "45f6477ba7cfbc19763792fbb5f88e1d7600aed4529f068aca907ec909159f49"
+      },
+      {
+        "id": "parenteral-nutrition-105",
+        "matched": true,
+        "evidence": "parenteral-nutrition-approved-safety-review.json",
+        "currentSHA256": "f07a123d0ed1bc00ad6023424f51e80aa776f8e856adc8eb3f602166f4918b73"
+      },
+      {
+        "id": "parenteral-nutrition-106",
+        "matched": true,
+        "evidence": "parenteral-nutrition-home-monitoring-review.json",
+        "currentSHA256": "7c9779052a3b8409dd87f0dce7f1181390cf7ab82d57f499e6ed3948dfa87936"
+      },
+      {
+        "id": "parenteral-nutrition-107",
+        "matched": true,
+        "evidence": "parenteral-nutrition-fluid-label-review.json",
+        "currentSHA256": "aaff915528ff82a016e2cabc57417c758a44585c45c088190ae66db0be700b95"
+      },
+      {
+        "id": "parenteral-nutrition-108",
+        "matched": true,
+        "evidence": "parenteral-nutrition-fluid-label-review.json",
+        "currentSHA256": "ec854eb3d0c4d241ee887b53618e2417413426068d44179d2eb13f0d915d6c92"
+      },
+      {
+        "id": "parenteral-nutrition-109",
+        "matched": true,
+        "evidence": "parenteral-nutrition-approved-safety-review.json",
+        "currentSHA256": "7f42a9e4f6e3bfaa48965a12e158bd6d240e30ad46f2828242daa21741725bf7"
+      },
+      {
+        "id": "parenteral-nutrition-book-001",
+        "matched": true,
+        "evidence": "parenteral-nutrition-fluid-label-review.json",
+        "currentSHA256": "958bb5d8102afaf67c0a9ee4176687cc883b791650c61b6dc54990b36cc69ab8"
+      },
+      {
+        "id": "parenteral-nutrition-book-002",
+        "matched": true,
+        "evidence": "parenteral-nutrition-fluid-label-review.json",
+        "currentSHA256": "061c3dddcdd58afae87b9bdf344bc65dab7df265b19b2f15e07640b36935f69f"
+      },
+      {
+        "id": "parenteral-nutrition-book-003",
+        "matched": true,
+        "evidence": "parenteral-nutrition-fluid-label-review.json",
+        "currentSHA256": "49590e3c27008a11db71014f2c180bdd962aae047286f8884e112c3ef0ba6fdf"
+      },
+      {
+        "id": "parenteral-nutrition-book-004",
+        "matched": true,
+        "evidence": "parenteral-nutrition-fluid-label-review.json",
+        "currentSHA256": "f0110a8bd0a95a4c38b2b2fc083f8ef1d9ea26c861bc07973910bb9fe70ade54"
+      },
+      {
+        "id": "parenteral-nutrition-book-005",
+        "matched": true,
+        "evidence": "parenteral-nutrition-fluid-label-review.json",
+        "currentSHA256": "53337a1aa6a68a659e6e262c561094664270720e17dca0825c80fb241fc4c322"
+      },
+      {
+        "id": "parenteral-nutrition-book-006",
+        "matched": true,
+        "evidence": "parenteral-nutrition-fluid-label-review.json",
+        "currentSHA256": "dac0a25928dd70f4690b3a31c4d0b2b35f5f0f628158f42004b61a10ca761ddb"
+      },
+      {
+        "id": "parenteral-nutrition-book-007",
+        "matched": true,
+        "evidence": "parenteral-nutrition-fluid-label-review.json",
+        "currentSHA256": "fe05ea02c5e00adcca4bd5501108ea758bee3afbaa01a4356210481408013f99"
+      },
+      {
+        "id": "parenteral-nutrition-book-008",
+        "matched": true,
+        "evidence": "parenteral-nutrition-fluid-label-review.json",
+        "currentSHA256": "edf01e7509224bac95b4856eb2b0eb50a9ba0cce784ce47185923c47dab97922"
+      },
+      {
+        "id": "parenteral-nutrition-book-009",
+        "matched": true,
+        "evidence": "parenteral-nutrition-fluid-label-review.json",
+        "currentSHA256": "e91a9855f48cb4f277736cd706030d70e5e510733533f45d0126b6dfbc2490dd"
+      },
+      {
+        "id": "parenteral-nutrition-book-010",
+        "matched": true,
+        "evidence": "parenteral-nutrition-fluid-label-review.json",
+        "currentSHA256": "a72e4c55765a6b84cd48645df1afe314f35fff241f9701d64dd273f3467cdfd1"
+      },
+      {
+        "id": "parenteral-nutrition-book-011",
+        "matched": true,
+        "evidence": "parenteral-nutrition-fluid-label-review.json",
+        "currentSHA256": "0f0c9189b52d7f4c0b96955073875a69480e4ecd9d65e3a481bfdba48db8b6d6"
+      },
+      {
+        "id": "parenteral-nutrition-book-012",
+        "matched": true,
+        "evidence": "parenteral-nutrition-fluid-label-review.json",
+        "currentSHA256": "759a51e1635ce5e6a03433abc869211536909c87d0962009c22a83354d20f4b1"
+      },
+      {
+        "id": "parenteral-nutrition-book-013",
+        "matched": true,
+        "evidence": "parenteral-nutrition-fluid-label-review.json",
+        "currentSHA256": "68343a03d28e5d3648296baa149e1edcc7324f1336eb702331ff6240c0162c8d"
+      },
+      {
+        "id": "parenteral-nutrition-book-014",
+        "matched": true,
+        "evidence": "parenteral-nutrition-fluid-label-review.json",
+        "currentSHA256": "a8e23d163de8cd6261c9e29b3f8e8a7cfaf76c366d15c13f41f5784e7b1e5528"
+      },
+      {
+        "id": "parenteral-nutrition-book-015",
+        "matched": true,
+        "evidence": "parenteral-nutrition-fluid-label-review.json",
+        "currentSHA256": "1cd7c2a3a85755866b9ca594fbb4b12cb8a6c7a00d2d0a4fa01759fb2b176802"
+      },
+      {
+        "id": "parenteral-nutrition-book-016",
+        "matched": true,
+        "evidence": "parenteral-nutrition-fluid-label-review.json",
+        "currentSHA256": "38145f0db9985e42d112ba4b98324a0143429b54c0e6da616c45fcd74768bb3d"
+      },
+      {
+        "id": "parenteral-nutrition-book-017",
+        "matched": true,
+        "evidence": "parenteral-nutrition-fluid-label-review.json",
+        "currentSHA256": "481e725dedc459723e7d4ba5df15975dbd7ce247e5e955ea4a9412bbcc474347"
+      },
+      {
+        "id": "parenteral-nutrition-book-018",
+        "matched": true,
+        "evidence": "parenteral-nutrition-fluid-label-review.json",
+        "currentSHA256": "42a920ea0a447a0ac79ed97b64f835c340c8838a3168ade3d6e9dedcf5e436ab"
+      },
+      {
+        "id": "parenteral-nutrition-book-019",
+        "matched": true,
+        "evidence": "parenteral-nutrition-fluid-label-review.json",
+        "currentSHA256": "f3759a36d692a0e660028bfe94ea3fb1c90455443692c4fc9bf5ca9fa8e06d69"
+      },
+      {
+        "id": "parenteral-nutrition-book-020",
+        "matched": true,
+        "evidence": "parenteral-nutrition-fluid-label-review.json",
+        "currentSHA256": "dfa1401039f5882b7c70cda592bb0f16e390aafb4d2f25591db356e53441bd1f"
+      },
+      {
+        "id": "parenteral-nutrition-book-021",
+        "matched": true,
+        "evidence": "parenteral-nutrition-fluid-label-review.json",
+        "currentSHA256": "d074da7c8a411e7212ecb7a2bd15094d4c93f9ab5409af604f9aa76fe1788188"
+      },
+      {
+        "id": "parenteral-nutrition-book-022",
+        "matched": true,
+        "evidence": "parenteral-nutrition-fluid-label-review.json",
+        "currentSHA256": "3f8a341ff8a11d277949c777eca5d90e3df771512aeb2bbeecae2c3780fb1642"
+      },
+      {
+        "id": "parenteral-nutrition-book-023",
+        "matched": true,
+        "evidence": "parenteral-nutrition-fluid-label-review.json",
+        "currentSHA256": "4ed5cf2afbe70bb4326fad7677fa908cc67debf4149f52ed61270425e96b5075"
+      },
+      {
+        "id": "parenteral-nutrition-book-024",
+        "matched": true,
+        "evidence": "parenteral-nutrition-fluid-label-review.json",
+        "currentSHA256": "b26024a3c5eef0a6d4512c3eda5fa463cdd697e296fcaad3ed7ce082594f33bf"
+      },
+      {
+        "id": "parenteral-nutrition-book-025",
+        "matched": true,
+        "evidence": "parenteral-nutrition-fluid-label-review.json",
+        "currentSHA256": "83dcace2af6d22f97e77fa42e6ec9dca98ecd35478585865b14dbfe68d5b0355"
+      },
+      {
+        "id": "parenteral-nutrition-book-026",
+        "matched": true,
+        "evidence": "parenteral-nutrition-fluid-label-review.json",
+        "currentSHA256": "5ad1533a089e0d0bf5fbea055059e8710ebd6c347d51d34e42a7868acc43f1ce"
+      },
+      {
+        "id": "parenteral-nutrition-book-027",
+        "matched": true,
+        "evidence": "parenteral-nutrition-fluid-label-review.json",
+        "currentSHA256": "e6ff1d0fadbf06b49b97ae583db9b5a64ab9331e6adf6454200378eb8f3a06df"
+      },
+      {
+        "id": "parenteral-nutrition-book-028",
+        "matched": true,
+        "evidence": "parenteral-nutrition-fluid-label-review.json",
+        "currentSHA256": "007280ee67e4311d03043293b53c5a232c6f2a475233d24a2966a3e8eba664af"
+      },
+      {
+        "id": "parenteral-nutrition-book-029",
+        "matched": true,
+        "evidence": "parenteral-nutrition-fluid-label-review.json",
+        "currentSHA256": "dafc5116ed98fbcee3ded2a79d2323a7472f9c6fc082b1b9820059ccb65109e1"
+      },
+      {
+        "id": "parenteral-nutrition-book-030",
+        "matched": true,
+        "evidence": "parenteral-nutrition-fluid-label-review.json",
+        "currentSHA256": "fbf4af7528179d776822b2e0356b0b1e4705a5e9d746ad917b3b6b604777198b"
+      },
+      {
+        "id": "parenteral-nutrition-book-031",
+        "matched": true,
+        "evidence": "parenteral-nutrition-fluid-label-review.json",
+        "currentSHA256": "99e761755021fb9ebc1b6f9a57a42bff4f675fb39302f9359c31d683e72388f9"
+      },
+      {
+        "id": "parenteral-nutrition-book-032",
+        "matched": true,
+        "evidence": "parenteral-nutrition-fluid-label-review.json",
+        "currentSHA256": "15f6c89d6ec3496f348d09b9d19f14c77621c618f79ca3841ae9262d2f70d75e"
+      },
+      {
+        "id": "parenteral-nutrition-book-033",
+        "matched": true,
+        "evidence": "parenteral-nutrition-fluid-label-review.json",
+        "currentSHA256": "2967bc5a37def3bcd66535358a81f8be06d5cdf155c749eb521aef9ee7cddd80"
+      },
+      {
+        "id": "parenteral-nutrition-book-034",
+        "matched": true,
+        "evidence": "parenteral-nutrition-fluid-label-review.json",
+        "currentSHA256": "980e75c1cafa07797017a8af14df5518b6c6453d145934e0cc6740ef015ae639"
+      },
+      {
+        "id": "parenteral-nutrition-timing-001",
+        "matched": true,
+        "evidence": "parenteral-nutrition-refeeding-timing-review.json",
+        "currentSHA256": "8894538b532427dbe0f6281db44429bd71ae2ed13d2d55eddb26de5e755e1e42"
+      },
+      {
+        "id": "parenteral-nutrition-timing-002",
+        "matched": true,
+        "evidence": "parenteral-nutrition-refeeding-timing-review.json",
+        "currentSHA256": "c22ab3c2eb8830fb4c9a200060ac62347ff0685ef65d1a24ccc118cb7be4ed7d"
+      },
+      {
+        "id": "parenteral-nutrition-refeeding-001",
+        "matched": true,
+        "evidence": "parenteral-nutrition-refeeding-timing-review.json",
+        "currentSHA256": "541f7aad770b32d9b3105940d41ea44b640bf8d1b215de03278a5d43f8380ecb"
+      },
+      {
+        "id": "parenteral-nutrition-refeeding-002",
+        "matched": true,
+        "evidence": "parenteral-nutrition-refeeding-timing-review.json",
+        "currentSHA256": "02ae1b2bf2f9001a33954c40a2d8dc31a99c05c060d19fcd311dedb95d35f2d5"
+      },
+      {
+        "id": "parenteral-nutrition-care-001",
+        "matched": true,
+        "evidence": "parenteral-nutrition-home-monitoring-review.json",
+        "currentSHA256": "b3366309b1d7d89d7c4df086d4e96b5850bf9b17ec402fe000d8f5ce9e633c62"
+      },
+      {
+        "id": "parenteral-nutrition-care-002",
+        "matched": true,
+        "evidence": "parenteral-nutrition-home-monitoring-review.json",
+        "currentSHA256": "c0eaeb85cf2d32fea8f451007cdb6511c5a9a35a7fbe34e1a002294e56fa1dfa"
+      },
+      {
+        "id": "parenteral-nutrition-care-003",
+        "matched": true,
+        "evidence": "parenteral-nutrition-home-monitoring-review.json",
+        "currentSHA256": "9f99be3dac99a9174d363ab1f5a7443938b64d814fbd9f8e82cabdf0db4f5979"
+      },
+      {
+        "id": "parenteral-nutrition-care-004",
+        "matched": true,
+        "evidence": "parenteral-nutrition-home-monitoring-review.json",
+        "currentSHA256": "6fec5eaaf899d920b3ed87fcd4a6eb40a08f6e39c7e9861fb0dc917f639fc4ca"
+      }
+    ],
+    "bodies": [
+      {
+        "lesson": "pn-decision",
+        "heading": "Distinguish nutrition support routes",
+        "matched": true,
+        "evidence": "parenteral-nutrition-fluid-label-review.json",
+        "currentSHA256": "9a5c4e7ba53a22453cdb915d5a252b7f83f1d26743a96076a02579dbc67a1889"
+      },
+      {
+        "lesson": "pn-decision",
+        "heading": "Use the source indication in its context",
+        "matched": true,
+        "evidence": "parenteral-nutrition-fluid-label-review.json",
+        "currentSHA256": "4f63d82cb09c63b0c812814c0d3cf02db0d99ae6b9f6ca16293cc491a95a93b4"
+      },
+      {
+        "lesson": "pn-decision",
+        "heading": "Recognize the added route burden",
+        "matched": true,
+        "evidence": "parenteral-nutrition-fluid-label-review.json",
+        "currentSHA256": "fc47117c5d43423728678e3fb3058bb337e093ca306018cdc52531b74e4ce571"
+      },
+      {
+        "lesson": "pn-decision",
+        "heading": "Require both need and route failure",
+        "matched": true,
+        "evidence": "parenteral-nutrition-fluid-label-review.json",
+        "currentSHA256": "2280d2199bd412a1cb8f48adf08ad349385e466f5f6dd19ee425cbad43853c4e"
+      },
+      {
+        "lesson": "pn-decision",
+        "heading": "Recognize common indications",
+        "matched": true,
+        "evidence": "parenteral-nutrition-home-monitoring-review.json",
+        "currentSHA256": "1263c98318ae0f9a3726a551f53cca2144bbd6a2f986cd9a532de7472b22cf7f"
+      },
+      {
+        "lesson": "pn-decision",
+        "heading": "Time therapy to nutrition risk",
+        "matched": true,
+        "evidence": "parenteral-nutrition-refeeding-timing-review.json",
+        "currentSHA256": "ef4156cecb53b11c8845edbc66897ff7be9e986651f3531ee1b2daff220259c0"
+      },
+      {
+        "lesson": "pn-decision",
+        "heading": "Stabilize before aggressive delivery",
+        "matched": true,
+        "evidence": "parenteral-nutrition-home-monitoring-review.json",
+        "currentSHA256": "8b0c066960efd2166abda1f5cb60f923fe8d4ea9785e609c134210ad225f9797"
+      },
+      {
+        "lesson": "venous-access",
+        "heading": "Keep the peripheral option short and conditional",
+        "matched": true,
+        "evidence": "parenteral-nutrition-fluid-label-review.json",
+        "currentSHA256": "fd7da19f126aadcff3e5720e19a8b5c75b2c81415ac5f93c1effe92bde814efc"
+      },
+      {
+        "lesson": "venous-access",
+        "heading": "Identify central access by where it ends",
+        "matched": true,
+        "evidence": "parenteral-nutrition-fluid-label-review.json",
+        "currentSHA256": "d9afd439634197b54e6791194051b782992420ed76f2c4144f2c8f211df1f8ee"
+      },
+      {
+        "lesson": "venous-access",
+        "heading": "Separate two compatibility questions",
+        "matched": true,
+        "evidence": "parenteral-nutrition-fluid-label-review.json",
+        "currentSHA256": "8f5953c9e56108baa638d8e6da6e97c1e977e5d3e53aa24cb69d185f53ccaa2c"
+      },
+      {
+        "lesson": "venous-access",
+        "heading": "Use peripheral PN as a limited bridge",
+        "matched": true,
+        "evidence": "parenteral-nutrition-home-monitoring-review.json",
+        "currentSHA256": "52e67e7439f09a6fd48bb44b6550dd5c33f3d5562c3c94b6774dfd5d5d20481e"
+      },
+      {
+        "lesson": "venous-access",
+        "heading": "Use central access for concentrated therapy",
+        "matched": true,
+        "evidence": "parenteral-nutrition-access-review.json",
+        "currentSHA256": "601e6cbf4175c00335c67e89f664424e20c32e8df6f5a4395a9c40d4761bee14"
+      },
+      {
+        "lesson": "venous-access",
+        "heading": "Confirm and protect the system",
+        "matched": true,
+        "evidence": "parenteral-nutrition-approved-safety-review.json",
+        "currentSHA256": "e8a8cc008c60ff3e78bbb3d37e3b546b4d6cbd0bdf886d09e21adb5150f156c6"
+      },
+      {
+        "lesson": "venous-access",
+        "heading": "Treat line findings as clinical signals",
+        "matched": true,
+        "evidence": "parenteral-nutrition-home-monitoring-review.json",
+        "currentSHA256": "15d5c852ace9289720e826ef6aeea9f9987d4c489bdee2194deb1d32e1c3c9d1"
+      },
+      {
+        "lesson": "macronutrient-design",
+        "heading": "Set the fluid allowance before distributing nutrients",
+        "matched": true,
+        "evidence": "parenteral-nutrition-fluid-label-review.json",
+        "currentSHA256": "3e17a7ae3333c8d5a52064982d5882ccb829e9b8fbc67d58548cdbd699e2d9b0"
+      },
+      {
+        "lesson": "macronutrient-design",
+        "heading": "Name the protein basis and energy convention",
+        "matched": true,
+        "evidence": "parenteral-nutrition-fluid-label-review.json",
+        "currentSHA256": "c2926ca78a0bd84f4041d8d824d423f79caf6aee95d4e0abb8860da381c9ee6c"
+      },
+      {
+        "lesson": "macronutrient-design",
+        "heading": "Keep lipid energy and schedule together",
+        "matched": true,
+        "evidence": "parenteral-nutrition-fluid-label-review.json",
+        "currentSHA256": "e5b220460aa09998a970d11d6bdf66f0ff73f620380e5671e18922b5b2963b9e"
+      },
+      {
+        "lesson": "macronutrient-design",
+        "heading": "Count energy actually supplied outside PN",
+        "matched": true,
+        "evidence": "parenteral-nutrition-fluid-label-review.json",
+        "currentSHA256": "81fa2914abaaddf73b0b53adc41ed43bbfa493d624d421c6258dc557ce7dc61a"
+      },
+      {
+        "lesson": "macronutrient-design",
+        "heading": "Set protein from clinical demand",
+        "matched": true,
+        "evidence": "parenteral-nutrition-nutrient-monitoring-review.json",
+        "currentSHA256": "8b0b9503a5db28ec3d8a3fae3e0b8466060f998d73ed05707ddf0e61812e356d"
+      },
+      {
+        "lesson": "macronutrient-design",
+        "heading": "Advance dextrose within metabolic capacity",
+        "matched": true,
+        "evidence": "parenteral-nutrition-nutrient-monitoring-review.json",
+        "currentSHA256": "65fe692a8e3eb6e9bea38dd61d0d14b068da471491b817bb6d1d04598d33f1a9"
+      },
+      {
+        "lesson": "macronutrient-design",
+        "heading": "Prescribe lipid as a drug product",
+        "matched": true,
+        "evidence": "parenteral-nutrition-approved-safety-review.json",
+        "currentSHA256": "9d03cff090649bec5298648bb37085e74f21bb88003863d77561877b4fb79128"
+      },
+      {
+        "lesson": "macronutrient-design",
+        "heading": "Screen the actual lipid product for allergy",
+        "matched": true,
+        "evidence": "parenteral-nutrition-home-monitoring-review.json",
+        "currentSHA256": "3f94db62b821a9a973fce7af7c6c729bdc0fc639d3a0049e47017294754b71db"
+      },
+      {
+        "lesson": "macronutrient-design",
+        "heading": "Make volume and route agree",
+        "matched": true,
+        "evidence": "parenteral-nutrition-home-monitoring-review.json",
+        "currentSHA256": "d82b94f9b173003646c919ed5737ff5099aa24350a9033bb57cd36fb21f43a20"
+      },
+      {
+        "lesson": "micronutrient-balance",
+        "heading": "Name the salt and count its second ion",
+        "matched": true,
+        "evidence": "parenteral-nutrition-fluid-label-review.json",
+        "currentSHA256": "b46e65d4f9c3feedb014e5fedca03fbab57645710a64d596127ffdcef5da2289"
+      },
+      {
+        "lesson": "micronutrient-balance",
+        "heading": "Apply the source precipitation precautions with their limits",
+        "matched": true,
+        "evidence": "parenteral-nutrition-fluid-label-review.json",
+        "currentSHA256": "459aac9dcaf385ca19ea3ebd6951e0b3c9fb2eb45d6677ae54d56cd9e48202c7"
+      },
+      {
+        "lesson": "micronutrient-balance",
+        "heading": "Distinguish the vitamin mixtures and warfarin review",
+        "matched": true,
+        "evidence": "parenteral-nutrition-fluid-label-review.json",
+        "currentSHA256": "7b92c01cb50afd5866b14acb78ee2aff874d546b5ae8ad7169b9186d7321ee64"
+      },
+      {
+        "lesson": "micronutrient-balance",
+        "heading": "Attribute the source trace-element groups",
+        "matched": true,
+        "evidence": "parenteral-nutrition-fluid-label-review.json",
+        "currentSHA256": "8bbee86ad7fed3bf382e9c0d7628514513f95e64914f3de13e86d2de9212ea79"
+      },
+      {
+        "lesson": "micronutrient-balance",
+        "heading": "Keep other medications from becoming routine ingredients",
+        "matched": true,
+        "evidence": "parenteral-nutrition-fluid-label-review.json",
+        "currentSHA256": "d763b5e8fe27c09ef5c676e95abd0f2bb5fc168f687345a2a35c7ff1534e0f66"
+      },
+      {
+        "lesson": "micronutrient-balance",
+        "heading": "Prescribe electrolytes as a pattern",
+        "matched": true,
+        "evidence": "parenteral-nutrition-nutrient-monitoring-review.json",
+        "currentSHA256": "593d314d78ead8f6bc20dc29ce1d24b7a99da066e443a97780298f32f6ba20bf"
+      },
+      {
+        "lesson": "micronutrient-balance",
+        "heading": "Protect calcium and phosphate compatibility",
+        "matched": true,
+        "evidence": "parenteral-nutrition-approved-safety-review.json",
+        "currentSHA256": "c76254ddb43c549bff8d08a9cb52b9cdbc491fecd00855d4d625af3c4e376621"
+      },
+      {
+        "lesson": "micronutrient-balance",
+        "heading": "Provide complete vitamins",
+        "matched": true,
+        "evidence": "parenteral-nutrition-nutrient-monitoring-review.json",
+        "currentSHA256": "54a163055e4c4e3f4801a1afe8c1021d7ae1a4a7857afd7426459f5ff8cad416"
+      },
+      {
+        "lesson": "micronutrient-balance",
+        "heading": "Give thiamine before refeeding",
+        "matched": true,
+        "evidence": "parenteral-nutrition-refeeding-timing-review.json",
+        "currentSHA256": "55b6a592d096267582b21557f44d72cf8cbb67cc6d68c7fac48d31af0fd85334"
+      },
+      {
+        "lesson": "micronutrient-balance",
+        "heading": "Individualize trace elements",
+        "matched": true,
+        "evidence": "parenteral-nutrition-nutrient-monitoring-review.json",
+        "currentSHA256": "286461e5e6b1963314bfadfc014f48f0a8601a02cde677f9be79e764763c9255"
+      },
+      {
+        "lesson": "compounding-safety",
+        "heading": "Communicate the preparation on its label",
+        "matched": true,
+        "evidence": "parenteral-nutrition-fluid-label-review.json",
+        "currentSHA256": "27f168f636ac09e85fe0d24acfd49ec938a0f174745b797b2d25fa5150927067"
+      },
+      {
+        "lesson": "compounding-safety",
+        "heading": "Interpret color separately from particles",
+        "matched": true,
+        "evidence": "parenteral-nutrition-fluid-label-review.json",
+        "currentSHA256": "af337b2e1f40598d9036ebc4418008be9696bc94764af5648413c885dad8873c"
+      },
+      {
+        "lesson": "compounding-safety",
+        "heading": "Verify the measured ingredient before transfer",
+        "matched": true,
+        "evidence": "parenteral-nutrition-fluid-label-review.json",
+        "currentSHA256": "2faf4cb4da59e16f0874ce1596f7dbe01688d3c4d7dbde43dde775310944629f"
+      },
+      {
+        "lesson": "compounding-safety",
+        "heading": "Recognize premixed chambers and their contents",
+        "matched": true,
+        "evidence": "parenteral-nutrition-fluid-label-review.json",
+        "currentSHA256": "73c18d29ec5b41bb6f03e9646b17ebda00b1f1033b17fd9f5c27d63d72aa5342"
+      },
+      {
+        "lesson": "compounding-safety",
+        "heading": "Connect sterile preparation and physical compatibility",
+        "matched": true,
+        "evidence": "parenteral-nutrition-fluid-label-review.json",
+        "currentSHA256": "2e9de9d256e004061c47d1f264c49cdae834e34d88c1363fd5172d3bf5ff581c"
+      },
+      {
+        "lesson": "compounding-safety",
+        "heading": "Choose a formulation deliberately",
+        "matched": true,
+        "evidence": "parenteral-nutrition-nutrient-monitoring-review.json",
+        "currentSHA256": "b4778efbf4e5a166bd076dff69c1e32738bc506aa33aa40f8048970ca2533cf3"
+      },
+      {
+        "lesson": "compounding-safety",
+        "heading": "Recognize emulsion failure",
+        "matched": true,
+        "evidence": "parenteral-nutrition-approved-safety-review.json",
+        "currentSHA256": "684a673eb6d8fe17d94a787522675eec286d609a3264abdfe4e41ae9d8bd6d0d"
+      },
+      {
+        "lesson": "compounding-safety",
+        "heading": "Apply current sterile-compounding standards",
+        "matched": true,
+        "evidence": "parenteral-nutrition-approved-safety-review.json",
+        "currentSHA256": "7f6095c0bbd6de0f63e826bb57660c85ec64c35c04dabb7f296b00af9bdca786"
+      },
+      {
+        "lesson": "compounding-safety",
+        "heading": "Filter every PN formulation",
+        "matched": true,
+        "evidence": "parenteral-nutrition-approved-safety-review.json",
+        "currentSHA256": "dbaa9653344b7193decec87b337e1a8ba95b14103924d09e43a8901a075b5beb"
+      },
+      {
+        "lesson": "compounding-safety",
+        "heading": "Distinguish dating from administration time",
+        "matched": true,
+        "evidence": "parenteral-nutrition-approved-safety-review.json",
+        "currentSHA256": "d0ef4495b217da897bfb71c4c4b74c8658478e83b50d34907f3a1151c4019185"
+      },
+      {
+        "lesson": "compounding-safety",
+        "heading": "Investigate an occluded filter without bypassing it",
+        "matched": true,
+        "evidence": "parenteral-nutrition-approved-safety-review.json",
+        "currentSHA256": "4a7e357325d8b9d92cede3350013bccb7f6091bff92e9ab8c8e09c31f82bda18"
+      },
+      {
+        "lesson": "monitoring-transition",
+        "heading": "Account for insulin adsorption to the container",
+        "matched": true,
+        "evidence": "parenteral-nutrition-fluid-label-review.json",
+        "currentSHA256": "d2db28d5438ce83fe0e9f284bc50e254258ee5d8d6c7da591eaa4c20d1683a2f"
+      },
+      {
+        "lesson": "monitoring-transition",
+        "heading": "Watch the specific source monitoring concerns",
+        "matched": true,
+        "evidence": "parenteral-nutrition-fluid-label-review.json",
+        "currentSHA256": "f30d1ef3e84ca4d5fe357e2f2aedae4db23e4a664636cc897bebd3b2fabd21c0"
+      },
+      {
+        "lesson": "monitoring-transition",
+        "heading": "Read the insulin example without turning it into a fixed order",
+        "matched": true,
+        "evidence": "parenteral-nutrition-fluid-label-review.json",
+        "currentSHA256": "ba459d56ab4ce90a1d01736995377bc8281211189dc1742682040563315e0c83"
+      },
+      {
+        "lesson": "monitoring-transition",
+        "heading": "Assess depletion before calories return",
+        "matched": true,
+        "evidence": "parenteral-nutrition-refeeding-timing-review.json",
+        "currentSHA256": "a242274558cce3f38ec5b9cbef4d81182741d45625ca7904d7eb04d6a1250d60"
+      },
+      {
+        "lesson": "monitoring-transition",
+        "heading": "Start adult refeeding with a measured plan",
+        "matched": true,
+        "evidence": "parenteral-nutrition-refeeding-timing-review.json",
+        "currentSHA256": "bd293657742c0a3b97a942028e2053f7ae20950b7d64afc510449e94ea88e5be"
+      },
+      {
+        "lesson": "monitoring-transition",
+        "heading": "Respond to refeeding changes promptly",
+        "matched": true,
+        "evidence": "parenteral-nutrition-refeeding-timing-review.json",
+        "currentSHA256": "d4cf0e508abf67c219e8593d356b5c51e19e5049ff6ab6b7b141dc63dc4258ae"
+      },
+      {
+        "lesson": "monitoring-transition",
+        "heading": "Monitor by phase and acuity",
+        "matched": true,
+        "evidence": "parenteral-nutrition-home-monitoring-review.json",
+        "currentSHA256": "f6f8c82bdadd58bdf1430823e17e070366bdccfa15a6c3a2ed8f20c4c28c0708"
+      },
+      {
+        "lesson": "monitoring-transition",
+        "heading": "Match lipid laboratory tests to the product",
+        "matched": true,
+        "evidence": "parenteral-nutrition-refeeding-timing-review.json",
+        "currentSHA256": "0b4b0ec7097ba41d0e901c3b0551c709e64bf846d6bb73e8a10fc94fa4a08198"
+      },
+      {
+        "lesson": "monitoring-transition",
+        "heading": "Separate overfeeding from intolerance",
+        "matched": true,
+        "evidence": "parenteral-nutrition-nutrient-monitoring-review.json",
+        "currentSHA256": "e42c5992a89fa5bff39d2ceaaf9783cacd1ef9d7b924cd04be5a031096226246"
+      },
+      {
+        "lesson": "monitoring-transition",
+        "heading": "Prevent and detect long-term complications",
+        "matched": true,
+        "evidence": "parenteral-nutrition-home-monitoring-review.json",
+        "currentSHA256": "40927175f042b6b98d45a7ca9674443bdb8c7ce4cac0b151f021f17491171400"
+      },
+      {
+        "lesson": "monitoring-transition",
+        "heading": "Cycle and transition with intent",
+        "matched": true,
+        "evidence": "parenteral-nutrition-home-monitoring-review.json",
+        "currentSHA256": "0f6722638eeef3555ad9fad9ef3ba3c0025f9e7a47c2f23839c9cd005f71301c"
+      },
+      {
+        "lesson": "monitoring-transition",
+        "heading": "Confirm readiness for home care",
+        "matched": true,
+        "evidence": "parenteral-nutrition-home-monitoring-review.json",
+        "currentSHA256": "9eb0dcdb00b0e3ba7dfd7d8bd314bc9ef0c014717cb281508c98852c50801552"
+      },
+      {
+        "lesson": "monitoring-transition",
+        "heading": "Reconcile each receiving prescription",
+        "matched": true,
+        "evidence": "parenteral-nutrition-home-monitoring-review.json",
+        "currentSHA256": "63e6ed6907bb14f751729b97f315c88547a5618100f44a0d8da7cedb772e598c"
+      }
+    ],
+    "embedded": [
+      {
+        "lesson": "pn-decision",
+        "matched": true,
+        "evidence": "parenteral-nutrition-fluid-label-review.json",
+        "currentSHA256": "2ffed6dc6a5fb7fc8076eff862650816abefacda906431b9bbb39387fcc56d8d"
+      },
+      {
+        "lesson": "venous-access",
+        "matched": true,
+        "evidence": "parenteral-nutrition-fluid-label-review.json",
+        "currentSHA256": "034c3e79c91304eaf759b0b8c78233393ffc6d30fa5f8c923c50cbdeac9b6b3c"
+      },
+      {
+        "lesson": "macronutrient-design",
+        "matched": true,
+        "evidence": "parenteral-nutrition-fluid-label-review.json",
+        "currentSHA256": "a493d2b72b90ab62f87d920572e76543f3668957353c73828d9915766624982e"
+      },
+      {
+        "lesson": "micronutrient-balance",
+        "matched": true,
+        "evidence": "parenteral-nutrition-approved-safety-review.json",
+        "currentSHA256": "b9c0293c28acfbfba301ed4081be06b612cd4e9e41db448e4e081091612379a3"
+      },
+      {
+        "lesson": "compounding-safety",
+        "matched": true,
+        "evidence": "parenteral-nutrition-approved-safety-review.json",
+        "currentSHA256": "6f930f267244df388a84883ad557749f2d36fb0c5ef7cec63b056e7e611bcc4c"
+      },
+      {
+        "lesson": "monitoring-transition",
+        "matched": true,
+        "evidence": "parenteral-nutrition-fluid-label-review.json",
+        "currentSHA256": "2c6330337660d18482c36337924a2e7203cf71b48bc63d6a511c07b3c758b1cb"
+      }
+    ],
+    "gaps": []
+  },
+  "metadataCoverage": [
+    {
+      "lesson": "pn-decision",
+      "status": "verified",
+      "fields": {
+        "summary": "Parenteral nutrition is reserved for a patient whose nutrition needs cannot be met safely or sufficiently through the gastrointestinal tract.",
+        "application": "Document the nutrition deficit, why oral or enteral delivery is not feasible, the expected duration, the goal of therapy, and the conditions that will trigger reassessment or transition.",
+        "keyPoints": [
+          "A central line is not an indication for PN.",
+          "The gastrointestinal route remains preferred when it can meet needs safely.",
+          "Nutrition risk and expected inadequacy influence timing.",
+          "Instability and refeeding risk change how therapy begins."
+        ]
+      },
+      "evidence": [
+        "parenteral-nutrition-fluid-label-review.json",
+        "parenteral-nutrition-refeeding-timing-review.json",
+        "parenteral-nutrition-home-monitoring-review.json"
+      ],
+      "proof": "Book157/158/169 and approved ASPEN2017/2020/2021 support need plus GI feasibility, assessment and goals/reassessment, risk-based timing, instability and refeeding readiness. Existing line alone is not an indication. Summary/application/four key points compare with verified route/need/timing/goals bodies; no fixed waiting rule introduced.",
+      "nonClinicalFraming": "Title, concept labels, visual selector and stable slug are consistent with the existing verified lesson; no architecture change."
+    },
+    {
+      "lesson": "venous-access",
+      "status": "verified",
+      "fields": {
+        "summary": "The final admixture concentration, expected duration, vascular anatomy, infection risk, and care setting determine the access strategy.",
+        "application": "Choose the least burdensome access that can safely deliver the required osmolarity and duration, then define insertion, confirmation, dressing, access, flushing, and complication surveillance responsibilities.",
+        "keyPoints": [
+          "Peripheral PN trades concentration for volume and vein tolerance.",
+          "Central access is selected for concentration and duration, not convenience alone.",
+          "Fewer access events reduce contamination opportunities.",
+          "Infection and thrombosis require active surveillance."
+        ]
+      },
+      "evidence": [
+        "parenteral-nutrition-home-monitoring-review.json",
+        "parenteral-nutrition-access-review.json",
+        "parenteral-nutrition-approved-safety-review.json"
+      ],
+      "proof": "Book108/158, ASPEN2017/2019/2014, MAGIC2015 and CDC support final concentration/duration/device/anatomy/setting and surveillance; summary/application/four key points compare with verified access/care bodies. Fewer manipulations mean fewer contamination opportunities, not proven elimination of infection/thrombosis.",
+      "nonClinicalFraming": "Title, concept labels, visual selector and stable slug are consistent with the existing verified lesson; no architecture change."
+    },
+    {
+      "lesson": "macronutrient-design",
+      "status": "verified",
+      "fields": {
+        "summary": "A safe prescription integrates protein, dextrose, lipid, non-PN energy, fluid, organ function, and the patient's metabolic capacity.",
+        "application": "Translate the assessment into grams per day for amino acids and dextrose, a product-specific lipid dose, total volume, infusion duration, and monitoring plan. Show every energy source.",
+        "keyPoints": [
+          "Amino acids are prescribed in grams per kilogram per day.",
+          "Dextrose provides 3.4 kcal per gram.",
+          "Lipid dosing and compatibility are product specific.",
+          "Non-PN calories and all fluid sources must be counted."
+        ]
+      },
+      "evidence": [
+        "parenteral-nutrition-fluid-label-review.json",
+        "parenteral-nutrition-approved-safety-review.json",
+        "parenteral-nutrition-nutrient-monitoring-review.json"
+      ],
+      "proof": "Book158/160-167, FDA/ASPEN lipid guidance and approved2016/2022 clinical nutrition discussion support individualized protein,3.4kcal/g dextrose, product-specific lipid, all fluid/energy, infusion time and monitoring. Summary/application/four key points do not impose a new universal dose.",
+      "nonClinicalFraming": "Title, concept labels, visual selector and stable slug are consistent with the existing verified lesson; no architecture change."
+    },
+    {
+      "lesson": "micronutrient-balance",
+      "status": "verified",
+      "fields": {
+        "summary": "Micronutrient dosing begins with standard adult needs, then changes with organ function, measured deficits, abnormal losses, duration, and product availability.",
+        "application": "For every additive, identify its amount, chemical form, clinical purpose, compatibility contribution, monitoring endpoint, and whether replacement should occur inside or outside the PN admixture.",
+        "keyPoints": [
+          "Electrolyte requirements change with losses and organ function.",
+          "Calcium-phosphate compatibility is formulation specific.",
+          "Use complete daily parenteral vitamins when available.",
+          "Trace-element omission can cause deficiency as well as prevent toxicity."
+        ]
+      },
+      "evidence": [
+        "parenteral-nutrition-fluid-label-review.json",
+        "parenteral-nutrition-approved-safety-review.json",
+        "parenteral-nutrition-nutrient-monitoring-review.json"
+      ],
+      "proof": "Book166-169, compatibility review2022, ASPEN multivitamin2023/2024 and FDA Tralement2024 support individualized electrolytes/deficits/losses/product requirements, chemical forms, validated compatibility and monitoring. Complete daily vitamins with shortage plan and selective trace adjustment prevent both deficiency and toxicity.",
+      "nonClinicalFraming": "Title, concept labels, visual selector and stable slug are consistent with the existing verified lesson; no architecture change."
+    },
+    {
+      "lesson": "compounding-safety",
+      "status": "verified",
+      "fields": {
+        "summary": "Parenteral nutrition is a high-alert compounded sterile preparation whose physical, chemical, microbial, and labeling safety must be verified as one system.",
+        "application": "Review the order independently, verify the formulation against validated limits, prepare it under current sterile-compounding standards, inspect it, label it completely, and administer it through the correct filter and access device.",
+        "keyPoints": [
+          "TNA stability depends on the complete formulation.",
+          "A visual check is necessary but cannot prove compatibility.",
+          "Use current USP categories and applicable dating requirements rather than the book's former risk scheme.",
+          "Current ASPEN guidance uses a 1.2 micron filter for all PN."
+        ]
+      },
+      "evidence": [
+        "parenteral-nutrition-fluid-label-review.json",
+        "parenteral-nutrition-approved-safety-review.json",
+        "parenteral-nutrition-nutrient-monitoring-review.json"
+      ],
+      "proof": "Book158/285-286 and approved ASPEN order/compounding/filter/compatibility plus USP FAQs support high-alert sterile preparation, independent review, complete formulation limits, inspection/label/access/filter and current preparation-specific dating. Corrected key point replaces wording that might imply all fixed dating rules are obsolete; current categories and applicable requirements are retained.",
+      "nonClinicalFraming": "Title, concept labels, visual selector and stable slug are consistent with the existing verified lesson; no architecture change."
+    },
+    {
+      "lesson": "monitoring-transition",
+      "status": "verified",
+      "fields": {
+        "summary": "Monitoring connects what was prescribed and infused to nutrition response, metabolic tolerance, organ effects, catheter safety, and readiness to use the gut.",
+        "application": "Define the baseline, monitoring interval, target, action threshold, responsible clinician, and transition criterion for every major risk. Increase or decrease monitoring when the patient changes.",
+        "keyPoints": [
+          "Monitoring intensity follows clinical risk and phase of therapy.",
+          "Review total energy while promptly treating clinically significant abnormalities.",
+          "Long-term PN affects liver, bone, micronutrients, and vascular access.",
+          "Transition is based on reliable gastrointestinal delivery, not a calendar date."
+        ]
+      },
+      "evidence": [
+        "parenteral-nutrition-refeeding-timing-review.json",
+        "parenteral-nutrition-home-monitoring-review.json",
+        "parenteral-nutrition-nutrient-monitoring-review.json"
+      ],
+      "proof": "Book169, ASPEN2014/2017/2020/2022 and product-specific labels support prescription-versus-delivery/clinical response, risk/phase-based monitoring, long-term organ/line/micronutrient follow-up, careful cycling and reliable GI transition. Corrected key point aligns urgent parallel treatment with body/question045 and avoids any delay while reviewing calories.",
+      "nonClinicalFraming": "Title, concept labels, visual selector and stable slug are consistent with the existing verified lesson; no architecture change."
+    }
+  ],
+  "moduleOverview": {
+    "description": "Design, verify, administer, and monitor adult parenteral nutrition when the gastrointestinal tract cannot safely meet nutrition needs.",
+    "outcomes": [
+      "Determine when parenteral nutrition is justified and when another route remains preferable.",
+      "Match peripheral or central access to concentration, duration, vascular risk, and the care setting.",
+      "Build a clinically coherent macronutrient, fluid, electrolyte, vitamin, and trace-element plan.",
+      "Identify incompatibility, emulsion, filtration, sterile-compounding, and catheter hazards before administration.",
+      "Use metabolic and clinical trends to advance, cycle, revise, and discontinue therapy safely."
+    ],
+    "status": "verified",
+    "proof": "Description and five outcomes are educational objectives that summarize the six fully supported lessons; no new dose/threshold claim. Topic labels/category/title retain existing content organization.",
+    "references": "All29 references/locators reviewed for subject/date/scope; private-book references use locators only. The source policy/discrepancy ledger retains approved modern exceptions."
+  },
+  "figureCoverage": {
+    "count": 6,
+    "status": "verified",
+    "currentComponentSHA256": "eeeea84b8bf7cb14f83a4ac6005b5eaa3470e740681729db9edcf41af9996984",
+    "evidence": [
+      "parenteral-nutrition-approved-safety-review.json",
+      "parenteral-nutrition-home-monitoring-review.json",
+      "parenteral-nutrition-nutrient-monitoring-review.json"
+    ],
+    "proof": "All current titles/columns read again against the corresponding verified lesson/source evidence; every figure visually inspected at1440/390 in current candidate."
+  },
+  "broaderCoverage": {
+    "currentCumulativeItems": [
+      {
+        "id": "cumulative-parenteral-nutrition-parenteral-nutrition-001",
+        "status": "verified",
+        "question": {
+          "id": "cumulative-parenteral-nutrition-parenteral-nutrition-001",
+          "question": "Which finding most strongly supports parenteral nutrition?",
+          "choices": [
+            "Severe malnutrition with complete intestinal obstruction and no usable enteral route",
+            "A central line without a nutrition deficit",
+            "One missed meal",
+            "Adequate oral intake"
+          ],
+          "answer": 0,
+          "rationale": "PN is justified when a meaningful nutrition need cannot be met through the gastrointestinal tract.",
+          "reviewHref": "/learn/pharmacy/modules/parenteral-nutrition",
+          "module": "Parenteral Nutrition"
+        },
+        "SHA256": "6bf040579f2b9a0b6ed3a770d7f82cb72ccf0f972b8069138b79bc919360b553",
+        "sourceKeys": [
+          "book-PDF158",
+          "aspen-2017"
+        ],
+        "allChoicesKeyExplanationComparedAgain": true,
+        "proof": "Complete obstruction/no usable route plus severe nutritional need supports PN. A line alone, one missed meal or adequate oral intake does not."
+      },
+      {
+        "id": "cumulative-parenteral-nutrition-parenteral-nutrition-036",
+        "status": "verified",
+        "question": {
+          "id": "cumulative-parenteral-nutrition-parenteral-nutrition-036",
+          "question": "Which visual finding requires a PN admixture to be quarantined?",
+          "choices": [
+            "Visible precipitate or free oil",
+            "A complete label",
+            "An intact seal",
+            "A uniform appearance within validated specifications"
+          ],
+          "answer": 0,
+          "rationale": "Particles, precipitate, or emulsion cracking can be dangerous and require investigation.",
+          "reviewHref": "/learn/pharmacy/modules/parenteral-nutrition",
+          "module": "Parenteral Nutrition"
+        },
+        "SHA256": "03dfced92a60798933eb6bd6a076faa8288ce26d8bd6982dd07ed6df242ada7c",
+        "sourceKeys": [
+          "fda-smof-2025"
+        ],
+        "allChoicesKeyExplanationComparedAgain": true,
+        "proof": "FDA2.1 inspection instructions distinguish particles/free oil/phase separation from intact closure/complete label/appearance within validated specifications. Quarantine/investigate defects."
+      },
+      {
+        "id": "cumulative-parenteral-nutrition-parenteral-nutrition-081",
+        "status": "verified",
+        "question": {
+          "id": "cumulative-parenteral-nutrition-parenteral-nutrition-081",
+          "question": "A 55 kg adult has an individualized amino acid target of 1.5 g/kg/day. How many grams are prescribed daily?",
+          "choices": [
+            "82.5 g",
+            "41.3 g",
+            "165 g",
+            "55 g"
+          ],
+          "answer": 0,
+          "rationale": "55 kg multiplied by 1.5 g/kg/day equals 82.5 g per day.",
+          "reviewHref": "/learn/pharmacy/modules/parenteral-nutrition",
+          "module": "Parenteral Nutrition"
+        },
+        "SHA256": "999cc5decb9cc6aeda213d0af46c241644d94fd38ff6670cebb87727e1ae6a56",
+        "sourceKeys": [
+          "book-PDF160",
+          "book-PDF161"
+        ],
+        "allChoicesKeyExplanationComparedAgain": true,
+        "proof": "Stated individualized dose is arithmetic, not a universal dose recommendation:55kg*1.5g/kg/day=82.5g/day.41.3 is rounded half,165double,55ignores multiplier."
+      },
+      {
+        "id": "cumulative-parenteral-nutrition-parenteral-nutrition-book-007",
+        "status": "verified",
+        "question": {
+          "question": "Why can central access deliver a concentrated admixture in the source explanation?",
+          "choices": [
+            "It removes the need for sterility",
+            "It changes dextrose into lipid",
+            "Contents enter a large vessel and are rapidly diluted",
+            "It prevents all thrombosis"
+          ],
+          "answer": 2,
+          "rationale": "The IV-principles chapter explains rapid dilution in a large central vessel.",
+          "reviewHref": "/learn/pharmacy/modules/parenteral-nutrition",
+          "id": "cumulative-parenteral-nutrition-parenteral-nutrition-book-007",
+          "module": "Parenteral Nutrition"
+        },
+        "SHA256": "0cbcecbf41a4a050ebd788798d55db5e95b1070e4d4c24b95523a870ec0482ad",
+        "sourceKeys": [
+          "book-PDF108"
+        ],
+        "allChoicesKeyExplanationComparedAgain": true,
+        "proof": "Large central vessel gives rapid dilution. It neither removes sterility nor changes substrate nor prevents all thrombosis."
+      },
+      {
+        "id": "cumulative-parenteral-nutrition-parenteral-nutrition-care-004",
+        "status": "verified",
+        "question": {
+          "id": "cumulative-parenteral-nutrition-parenteral-nutrition-care-004",
+          "question": "A home-infusion provider cannot obtain an electrolyte salt in the discharging PN order. What is the best receiving-order response?",
+          "choices": [
+            "Substitute another salt at the same stated volume without recalculating the ions",
+            "Review the actual products, salt, dose, units and compatibility, revise the order as needed and communicate it to the accountable teams",
+            "Keep the unavailable ingredient on the order and omit it silently during compounding",
+            "Use the discharging bag label as the complete plan and leave follow-up unassigned"
+          ],
+          "answer": 1,
+          "rationale": "A safe PN transition requires a complete receiving order and named follow-up responsibility. Product availability and formulary differences must be resolved through review and clearly communicated changes. Equal volumes do not establish equivalent electrolyte delivery or compatibility, and silent omission is unsafe.",
+          "reviewHref": "/learn/pharmacy/modules/parenteral-nutrition",
+          "module": "Parenteral Nutrition"
+        },
+        "SHA256": "9ebb5832d52031dac216a856e2d72ae552d6da59c635b4c98bc0e531916534bc",
+        "sourceKeys": [
+          "aspen-2022-transition",
+          "book-PDF174",
+          "aspen-2014"
+        ],
+        "allChoicesKeyExplanationComparedAgain": true,
+        "proof": "Transitions tool requires salt/dose/units and resolution of availability/formulary differences with communicated changes and accountable follow-up. Book order plus stock/dual-ion calculations show equal volume is not equal ion delivery. Silent omission and label-only/unassigned follow-up are unsafe."
+      }
+    ],
+    "exactCurrentObjectsMatch": true,
+    "runtimeCorrectIncorrectAndRemediation": true,
+    "directStandaloneTopicSearch": {
+      "files": [
+        "src/data/pharmacyReview.js",
+        "src/data/pharmacyStudyContent.js",
+        "src/data/pharmacyLearning.js"
+      ],
+      "terms": "PN/parenteral/TPN/refeeding/Clinimix/trace-element/calcium-phosphate",
+      "standaloneFinalReviewDirectMatches": 0,
+      "otherObservedMatches": "Legacy PN study slug is separately covered; general parenteral drug-route guide is not a PN question. No entire broader-bank closure claimed."
+    },
+    "legacyPN": "All nine scoped legacy entries source-verified in preceding nutrient unit; unchanged in this unit. Whole legacy parent/EN topic not closed."
+  },
+  "coverage": {
+    "lessons": 6,
+    "bodies": 57,
+    "figures": 6,
+    "embeddedChecks": 6,
+    "bank": 142,
+    "currentCumulativeItems": 5,
+    "metadataClaimFields": 42,
+    "allCurrentSourceCoverageComplete": true,
+    "wholeModuleVerified": true,
+    "wholeChapterVerified": false,
+    "relatedLegacyPNEntries": 9
+  },
+  "changes": {
+    "keyPoints": [
+      [
+        "compounding-safety",
+        2,
+        "Use current USP categories and applicable dating requirements rather than the book's former risk scheme."
+      ],
+      [
+        "monitoring-transition",
+        1,
+        "Review total energy while promptly treating clinically significant abnormalities."
+      ]
+    ],
+    "allOtherContentUnchanged": true,
+    "newQuestions": 0,
+    "newSections": 0,
+    "backendProgressNavigationChanges": 0
+  },
+  "validation": {
+    "isolatedCandidate": "HEAD70cebda7 archive plus exactly one module file with two key-point corrections; dependency symlink only, no .env or unrelated working edits.",
+    "contentHashes": {
+      "src/data/modules/parenteralNutrition.js": "ccc353867818e3f25dae5a0075a6db65fd55d8990edef79f417e1703b79fe821",
+      "src/data/questionBanks/parenteralNutrition.js": "917f7c86bc8fb4e93bbf6a6cbcca47ef35210b61e0260c92ba12bbc5064e66c8",
+      "src/components/learn/ParenteralNutritionVisual.jsx": "eeeea84b8bf7cb14f83a4ac6005b5eaa3470e740681729db9edcf41af9996984",
+      "src/data/pharmacyStudyContent.js": "f44fcc015e323251a61bee9fb2686b1d9ae764b2892c08f3a10e886587ab958a"
+    },
+    "build": {
+      "status": "passed",
+      "staticPages": 567,
+      "logSHA256": "e68585904d29a019d51f249ed3e555d077568f3678f957c0aa3d177d67ce136c"
+    },
+    "focusedAssessmentAudit": {
+      "status": "passed",
+      "questions": 142,
+      "hardErrors": [],
+      "sourceGaps": [],
+      "logSHA256": "ea96339c58142a0d5b52787ec68ac7f37d9c057f9a7603b0c4e19caaf0b1c125"
+    },
+    "technical": {
+      "status": "passed",
+      "changedKeyPoints": [
+        [
+          "compounding-safety",
+          2,
+          "Use current USP categories and applicable dating requirements rather than the book's former risk scheme."
+        ],
+        [
+          "monitoring-transition",
+          1,
+          "Review total energy while promptly treating clinically significant abnormalities."
+        ]
+      ],
+      "allOtherFieldsUnchanged": true,
+      "bank142Unchanged": true,
+      "embedded6Unchanged": true,
+      "cumulative5Unchanged": true
+    },
+    "browser": {
+      "status": "passed",
+      "results": [
+        {
+          "width": 1440,
+          "renderedBodies": 57,
+          "metadataFields": 42,
+          "figuresPresent": 6,
+          "embeddedChecks": 6,
+          "repairedQuestionsCorrectAndWrong": 9,
+          "moduleFillerQuestions": 1,
+          "currentPNCumulativeCorrectAndWrong": 5,
+          "remediationLinkPassed": true,
+          "localProgressPassed": true
+        },
+        {
+          "width": 390,
+          "renderedBodies": 57,
+          "metadataFields": 42,
+          "figuresPresent": 6,
+          "embeddedChecks": 6,
+          "repairedQuestionsCorrectAndWrong": 9,
+          "moduleFillerQuestions": 1,
+          "currentPNCumulativeCorrectAndWrong": 5,
+          "remediationLinkPassed": true,
+          "localProgressPassed": true
+        }
+      ],
+      "pageErrors": []
+    },
+    "manualVisualReview": {
+      "status": "passed",
+      "currentImagesSHA256": {
+        "figure-micronutrient-balance-390.png": "2be85064acf5a6e1fe814d5a8a2f4955eeb9f12d4f2e4f95d1d9207780670887",
+        "metadata-keypoints-pn-decision-390.png": "907a6e9c82ec702bb4800fdb0dfc0fe73583d7e32ff1b215bec47a81cea9ebcd",
+        "metadata-application-venous-access-1440.png": "73ec0f1142dc04c3c184f9b5ca3223b9587a48f18c2b3285196fb18509c0ad9b",
+        "figure-venous-access-1440.png": "0bb25fb901f61d1fb19f8f58e7decf02e2f5458e41bb240b89ef9501b32ee1f0",
+        "figure-compounding-safety-1440.png": "d90037b30af65ddc05dcf75ad79f9e5e28f04b7a1334eac49f09f1c50c5398e2",
+        "figure-compounding-safety-390.png": "71e2df504aa8348581e62d7bbcaaf05db096d21e4faee3abd2531064f50b7673",
+        "metadata-application-micronutrient-balance-390.png": "970194e17cf84aaf4d2d9c73410838c475891c77096eb1904e4ad760da1c1b00",
+        "figure-pn-decision-390.png": "2e96ef342d3806fce8634cf1771b5f9847065f65362cd05bb24f9f10086589ec",
+        "metadata-keypoints-micronutrient-balance-1440.png": "8d246451bbf19409d3e5816e31b0b668147e53a2e40af7fc92fad1ed60ca7f49",
+        "metadata-keypoints-venous-access-390.png": "5b3a2df3e726da971609fa1bb0ed2b1142200fd20b7cf75aa5b48aaf69f4ff6d",
+        "metadata-application-monitoring-transition-1440.png": "b27b15c2a45cb2e3cc1c564f999528776ab6bda2b6d76eab2a53883c5d5da843",
+        "metadata-keypoints-macronutrient-design-1440.png": "ef8c2cc3583f58b4d5efd8df9613074a6b953a11f1999b70a85a8a5a370fa1db",
+        "metadata-keypoints-macronutrient-design-390.png": "1fd6c31b6b537f1016cc56695239b27546a74e620ef489422c6c743b5e0551b6",
+        "metadata-application-pn-decision-1440.png": "8da3c0c75335c0c4dfcb5b20ba7699177afd6d3af00e857931ffbafa77514a0b",
+        "metadata-keypoints-monitoring-transition-390.png": "baa5c0de2c8dd1a02cca62d35458037ebfba86d5d7fbba8e46af891f0484a240",
+        "figure-pn-decision-1440.png": "53f7e02c6e839afb762da1c30e21fbabc13a115b619a7c0f95551712d869e3b2",
+        "figure-venous-access-390.png": "244d10d22178279cc8c657e36aeac39d1935c0652a69ecf69a4d9d5a832c7cca",
+        "figure-micronutrient-balance-1440.png": "70835d8d822ea6b98c3d3ec8681cbe608d475586b44acac5682080e03a144c80",
+        "metadata-application-monitoring-transition-390.png": "0bb35acd19994ad46d2703d3045008f9a3c366228272dc81e92183d2711d68d2",
+        "metadata-keypoints-compounding-safety-390.png": "f9e47e839c5aeae3d8640b1d6467d30c93a6adccbd21af6a2303bcadf8da05f6",
+        "metadata-keypoints-venous-access-1440.png": "d22ca0da035a9868caeaf0a405c354ed0bd5d64a194888e511cdf061c88c3c7f",
+        "figure-macronutrient-design-1440.png": "bc84e1c0a02e1f422c131acc457002bc44d79a4bfa0374f307afd6b3d6be7f90",
+        "metadata-application-venous-access-390.png": "43adf400fe69af705ba733ceee0c7943198ae0ae468c9d58de2d18e10e0e8d71",
+        "metadata-keypoints-monitoring-transition-1440.png": "fbb46d73e508f7d9ad609aac31b262ea0a2e87eda0b6899e6741c01ed4864e5e",
+        "metadata-application-macronutrient-design-1440.png": "7f3d17c51bcb4750dad3242d7d4a3cab7b19e4deb1f72244e876486223397306",
+        "metadata-application-pn-decision-390.png": "c0b7ad06be4cebff0145d1c75f0d45f413083e540282f1c1f6357e45d27976f2",
+        "metadata-application-macronutrient-design-390.png": "223c31fe26c784a2fb3c363bcff9a25ba788a519dee5d4df7ddfa57115007794",
+        "figure-monitoring-transition-390.png": "6dbc15564263b9d6eb81806655a5441d318acaf3ff4dd4291430a1089870fd1e",
+        "metadata-keypoints-micronutrient-balance-390.png": "c6c222bd88a47646eb49126d7781fba57d5c94e1ad834de249a9cf3e66942e58",
+        "metadata-application-micronutrient-balance-1440.png": "009c2242dc0c85c3edd2c0e1f0a415af6a3bcfe9ff1d548b01ccbb0285426aa1",
+        "metadata-application-compounding-safety-1440.png": "e42977272112109eede4bf1fac0064fa4739aa61b0261c6e3bc85845a9a65275",
+        "metadata-keypoints-compounding-safety-1440.png": "53721acb404b3f806f2f39ce08292c2598406901674ae728717deec75b54d92e",
+        "metadata-keypoints-pn-decision-1440.png": "f1ad2e0c243f256a8ba069f8563bf6371b66054f279ffdd120fab0ca81122de9",
+        "figure-monitoring-transition-1440.png": "b5ddff1e241bde75e73d2cb9995dbcf0fd32aaef9b65b0bc2cf4d2b861adebed",
+        "figure-macronutrient-design-390.png": "3849205cd495909ca187d6b063d9b82cec4ce447876f327b35faf934e2470a09",
+        "metadata-application-compounding-safety-390.png": "a9d9663faacf478dccdc77edf2874187579927dfbaa9103ecac0e7b31e02e73c"
+      },
+      "scope": "All24 key points and six clinical application blocks at1440/390, all six figures at both widths; current57-body exact DOM, summary/outcome DOM and no horizontal overflow checked. All57 teaching bodies retain their individually inspected prior source/render evidence with exact content match; the nine most recent question correct/incorrect visual cards remain unchanged from nutrient release."
+    },
+    "existingGlobalAuditIssues": {
+      "count": 34,
+      "scope": "Unchanged glaucoma/allergic-rhinitis/common-ear typographic violations remain open in global chronological audit. An initial --module=value invocation was not recognized and ran all232 modules; reran documented --module value syntax and PN passed. No unrelated content was edited.",
+      "logSHA256": "f3a4862788cd883d7d80fd941d2a0d40575ad754af93d43df5fc17ed2b77c66f"
+    },
+    "sourceReconciliationHarnessSHA256": "27d9ef2608eea8a3ff49febe6159d19acce1d9006c9684a00b554afcd0c697ef",
+    "runtimeHarnessSHA256": "983efee26197f4b4fc399835feee3427145335a4da92c451bff799228cda213e"
+  },
+  "calculations": {
+    "newDistinctChecks": 0,
+    "runningDistinctChecks": 635,
+    "runningSeparateSourceExamples": 98
+  },
+  "release": {
+    "branch": "audit/rxprep-content-2026-09-24",
+    "commit": "pending",
+    "push": "pending",
+    "production": "not verified"
+  },
+  "nextAction": "Begin existing enteral-nutrition module audit at Chapter11 printed161/PDF169 introductory EN paragraph, then feeding routes and formulas from printed162/PDF170 through printed168/PDF176. Use the supplied book for new EN claims; the approved outside-source exception is scoped to PN. Complete EN, pediatric PN and clinical fluid/calcium dependencies before closing Chapter11 or Chapter1 fluid checklist entry15.",
+  "limits": [
+    "This closes the current standalone adult PN module, not all Chapter11 topics or all82 chapters.",
+    "Legacy PN entry set is verified; combined legacy parent/EN material remains separate.",
+    "Historical source discrepancies/older scoped reports are retained as dated evidence, not rewritten.",
+    "Unrelated work and private source assets remain outside this release.",
+    "Audit branch push does not prove main merge or production publication."
+  ]
+}
