@@ -1,0 +1,741 @@
+{
+  "drug": "polymyxin-b-trimethoprim",
+  "status": "source_reviewed",
+  "checked": "2026-10-01",
+  "scope": "Full current selected Bausch & Lomb ophthalmic clinical label, product identity, regulatory marketing category and all eight blueprint sections.",
+  "blueprint": {
+    "sections": [
+      [
+        "indications",
+        "Indications"
+      ],
+      [
+        "dosage",
+        "Dosage and administration"
+      ],
+      [
+        "safety",
+        "Safety"
+      ],
+      [
+        "interactions",
+        "Drug interactions"
+      ],
+      [
+        "populations",
+        "Use in specific populations"
+      ],
+      [
+        "pharmacology",
+        "Clinical pharmacology"
+      ],
+      [
+        "practice",
+        "Monitoring and counseling"
+      ],
+      [
+        "product",
+        "Product identification"
+      ]
+    ],
+    "essential_safety": true,
+    "hero_facts": 3,
+    "APAP_modified": false
+  },
+  "sources": [
+    {
+      "id": "ophthalmic",
+      "title": "Polymyxin B/trimethoprim \u00b7 Current full ophthalmic label",
+      "publisher": "Bausch & Lomb / DailyMed",
+      "note": "PI October 2025; SPL 13 effective January 6, 2026; published January 8, 2026.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=87999254-1857-4d3c-817a-cb8f6a5b0cf7"
+    }
+  ],
+  "source_records": [
+    {
+      "id": "ophthalmic",
+      "local_snapshot": "/tmp/nas-drug-sources/polytrim.xml",
+      "label_revision": "October 2025",
+      "set_id": "87999254-1857-4d3c-817a-cb8f6a5b0cf7",
+      "spl_version": "13",
+      "spl_effective_time": "20260106",
+      "dailymed_published_date": "2026-01-08",
+      "sha256": "0da7eaef6e477f92f2f7eba63908ee50193cf4d95f434905ca7f355e84e7f65d",
+      "review_method": "Relevant full public clinical sections read; dose, age, route, safety and product distinctions checked. No paywalled or unaccessed full guideline claimed.",
+      "archived_local_snapshot": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/source-snapshots-recovered/batch-25-thyroid-metformin/polytrim.xml"
+    }
+  ],
+  "assertion_map": [
+    {
+      "section": "indications",
+      "card": "Labeled surface infections",
+      "assertions": [
+        "Treats bacterial conjunctivitis and blepharoconjunctivitis due to susceptible staphylococci, streptococci, H. influenzae and P. aeruginosa specified by the label. Pseudomonas efficacy evidence involved fewer than ten infections; in-vitro activity does not establish a universal corneal-ulcer or resistant-organism regimen."
+      ],
+      "sources": [
+        {
+          "id": "ophthalmic",
+          "sections": "INDICATIONS; CLINICAL PHARMACOLOGY"
+        }
+      ]
+    },
+    {
+      "section": "indications",
+      "card": "Scope and status",
+      "assertions": [
+        "The selected U.S. product is prescription ophthalmic solution with ANDA marketing status. It is not indicated for preventing or treating ophthalmia neonatorum; safety/effectiveness below two months is not established. Diagnosis matters: the label does not establish treatment for viral/allergic conjunctivitis or systemic infections."
+      ],
+      "sources": [
+        {
+          "id": "ophthalmic",
+          "sections": "Drug Label Information/product data; WARNINGS; Pediatric Use; INDICATIONS"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Mild to moderate infection",
+      "assertions": [
+        "One drop in each affected eye every three hours, maximum six doses per day, for 7\u201310 days. The label provides this schedule without a separate pediatric weight-based dose. Below two months, treatment is not established. Confirm affected eyes, dose timing and duration with the prescriber rather than substitute oral trimethoprim or systemic polymyxin dosing."
+      ],
+      "sources": [
+        {
+          "id": "ophthalmic",
+          "sections": "DOSAGE; Pediatric Use"
+        }
+      ],
+      "table_assertions": {
+        "headers": [
+          "Setting",
+          "Selected ophthalmic schedule"
+        ],
+        "rows": [
+          [
+            "Mild/moderate surface infection",
+            "1 drop in affected eye(s) every 3 hours; no more than 6 doses/day"
+          ],
+          [
+            "Course",
+            "7\u201310 days"
+          ],
+          [
+            "Age below 2 months",
+            "Safety/effectiveness not established; no neonatal regimen supplied"
+          ]
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Administration and organ considerations",
+      "assertions": [
+        "Avoid touching the tip to the eye, fingers or another surface; do not inject into the eye or use a systemic route. Do not wear contacts during symptomatic bacterial infection. The selected label has no renal, hepatic or dialysis adjustment table; low measured systemic absorption does not prove zero exposure or support a systemic dose conversion."
+      ],
+      "sources": [
+        {
+          "id": "ophthalmic",
+          "sections": "WARNINGS; Information for Patients; CLINICAL PHARMACOLOGY; full dosing/population sections"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "assertions": [
+        "Stop treatment and contact the clinician if redness, irritation, swelling or pain persists or increases. Serious allergy, including anaphylaxis and SJS/TEN, is reported; extensive rash, mucosal injury or breathing difficulty requires urgent care. Prolonged use can promote resistant organisms or fungal superinfection and requires reassessment. This preparation is not for ocular injection or neonatal ophthalmia."
+      ],
+      "sources": [
+        {
+          "id": "ophthalmic",
+          "sections": "WARNINGS; General; Information for Patients; ADVERSE REACTIONS"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "assertions": [
+        "Known hypersensitivity to any ingredient contraindicates the selected solution. Review prior reactions to trimethoprim, polymyxin B and formulation ingredients. Trimethoprim sulfate is a salt; this product is not the trimethoprim/sulfamethoxazole combination. Do not infer the same allergy or dose rules from a different antibiotic product."
+      ],
+      "sources": [
+        {
+          "id": "ophthalmic",
+          "sections": "CONTRAINDICATIONS; DESCRIPTION"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Boxed-warning status",
+      "assertions": [
+        "No boxed warning appears in the selected current ophthalmic label. This does not negate its serious hypersensitivity reports, topical-route restriction or neonatal indication exclusion."
+      ],
+      "sources": [
+        {
+          "id": "ophthalmic",
+          "sections": "Full label; WARNINGS; ADVERSE REACTIONS"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions",
+      "assertions": [
+        "Burning, stinging, itching and increased redness are reported, sometimes on instillation or later in treatment. Allergy can include eyelid swelling, tearing and rash around the eye. Anaphylaxis and SJS/TEN are reported without reliable rates. The label mentions photosensitivity with oral trimethoprim; that is not a quantified ophthalmic-event frequency."
+      ],
+      "sources": [
+        {
+          "id": "ophthalmic",
+          "sections": "ADVERSE REACTIONS"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Medication review and evidence limits",
+      "assertions": [
+        "The full selected ophthalmic label specifies no established drug\u2013drug interaction or routine laboratory-monitoring schedule. Review other ocular products and systemic therapy with the clinician/pharmacist. Systemic trimethoprim/sulfamethoxazole and injectable polymyxin safety algorithms cannot be assumed to describe these eye drops. No unsourced universal separation interval is supplied."
+      ],
+      "sources": [
+        {
+          "id": "ophthalmic",
+          "sections": "Full CLINICAL PHARMACOLOGY; PRECAUTIONS; dosing and safety sections"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Contacts and sterile administration",
+      "assertions": [
+        "Avoid contact lenses while symptomatic infection is present and avoid tip contamination. The solution contains benzalkonium chloride 0.004%; follow clinician advice for other eye medicines and lens resumption rather than use an unrelated glaucoma-product lens instruction."
+      ],
+      "sources": [
+        {
+          "id": "ophthalmic",
+          "sections": "DESCRIPTION; Information for Patients"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Children and older adults",
+      "assertions": [
+        "Safety/effectiveness below two months is not established. The selected geriatric section reports no overall safety/effectiveness differences compared with other adults; it does not remove individual eye-disease or allergy concerns."
+      ],
+      "sources": [
+        {
+          "id": "ophthalmic",
+          "sections": "Pediatric Use; Geriatric Use; WARNINGS"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Renal and hepatic disease",
+      "assertions": [
+        "No numerical organ-function adjustment or dialysis supplemental regimen is established in this ophthalmic label. Systemic exposure was small but detectable in a limited volunteer study. Assess the individual patient rather than claim proven absence of renal/hepatic risk."
+      ],
+      "sources": [
+        {
+          "id": "ophthalmic",
+          "sections": "Full dosing/population sections; CLINICAL PHARMACOLOGY"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy and breastfeeding",
+      "assertions": [
+        "The label describes trimethoprim\u2019s folate-related concern and oral animal/human data; use in pregnancy only when expected benefit justifies fetal risk. Ophthalmic pregnancy data and polymyxin reproductive data are limited. Human milk excretion of this product is unknown and the label advises caution during nursing; do not claim zero infant exposure or equate oral combination studies with ophthalmic outcomes."
+      ],
+      "sources": [
+        {
+          "id": "ophthalmic",
+          "sections": "Pregnancy; Nursing Mothers"
+        }
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanisms and microbiology",
+      "assertions": [
+        "Trimethoprim inhibits bacterial dihydrofolate reductase, impairing folate-dependent nucleic-acid/protein synthesis. Polymyxin B disrupts susceptible gram-negative bacterial membranes. The broad in-vitro organism lists are separate from the narrower clinically labeled infection/organism claims."
+      ],
+      "sources": [
+        {
+          "id": "ophthalmic",
+          "sections": "CLINICAL PHARMACOLOGY; Microbiology; INDICATIONS"
+        }
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Absorption and evidence limits",
+      "assertions": [
+        "In eleven volunteers receiving two drops, measured peak serum trimethoprim was about 0.03 mcg/mL and polymyxin B about 1 unit/mL. These observations do not provide a validated systemic half-life, accumulation model, therapeutic blood target or renal dose algorithm for the ophthalmic course."
+      ],
+      "sources": [
+        {
+          "id": "ophthalmic",
+          "sections": "CLINICAL PHARMACOLOGY"
+        }
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Monitoring",
+      "assertions": [
+        "Assess ocular symptoms, treatment response, hypersensitivity and possible superinfection. The selected label specifies no routine CBC, renal panel or serum drug levels for this topical course. Failure to improve or worsening pain/swelling warrants clinical reassessment rather than extending antibiotic use indefinitely."
+      ],
+      "sources": [
+        {
+          "id": "ophthalmic",
+          "sections": "General; Information for Patients; full label"
+        }
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Counseling",
+      "assertions": [
+        "Use the prescribed affected-eye schedule, keep the tip clean and avoid contact lenses during infection. Stop and contact the clinician for persistent/increasing redness, irritation, swelling or pain; seek urgent care for serious allergy. Keep the bottle protected from light and do not inject or repurpose the drops."
+      ],
+      "sources": [
+        {
+          "id": "ophthalmic",
+          "sections": "Information for Patients; WARNINGS; HOW SUPPLIED"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Representative product identity",
+      "assertions": [
+        "Selected sterile Bausch & Lomb ophthalmic solution is a 10 mL controlled-drop plastic bottle, NDC 24208-315-10, prescription only. Confirm the package and ingredients rather than rely on an antibiotic brand-name assumption."
+      ],
+      "sources": [
+        {
+          "id": "ophthalmic",
+          "sections": "HOW SUPPLIED; principal display; DESCRIPTION"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "assertions": [
+        "Each mL supplies polymyxin B 10,000 units and trimethoprim 1 mg through their sulfate salts. Benzalkonium chloride preservative is 0.004%. This is topical eye solution, not an injectable or oral combination."
+      ],
+      "sources": [
+        {
+          "id": "ophthalmic",
+          "sections": "DESCRIPTION; principal display"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "assertions": [
+        "Store at 15\u201325\u00b0C and protect from light. Retain in its carton until use because the selected bottle does not meet the USP light-resistance packaging specification. Keep the applicator uncontaminated. The reviewed label supplies no universal after-opening discard period; follow the actual dispensing instructions."
+      ],
+      "sources": [
+        {
+          "id": "ophthalmic",
+          "sections": "HOW SUPPLIED; Information for Patients"
+        }
+      ]
+    }
+  ],
+  "assertion_source_map": [
+    {
+      "section": "indications",
+      "card": "Labeled surface infections",
+      "assertions": [
+        "Treats bacterial conjunctivitis and blepharoconjunctivitis due to susceptible staphylococci, streptococci, H. influenzae and P. aeruginosa specified by the label. Pseudomonas efficacy evidence involved fewer than ten infections; in-vitro activity does not establish a universal corneal-ulcer or resistant-organism regimen."
+      ],
+      "sources": [
+        {
+          "id": "ophthalmic",
+          "sections": "INDICATIONS; CLINICAL PHARMACOLOGY"
+        }
+      ]
+    },
+    {
+      "section": "indications",
+      "card": "Scope and status",
+      "assertions": [
+        "The selected U.S. product is prescription ophthalmic solution with ANDA marketing status. It is not indicated for preventing or treating ophthalmia neonatorum; safety/effectiveness below two months is not established. Diagnosis matters: the label does not establish treatment for viral/allergic conjunctivitis or systemic infections."
+      ],
+      "sources": [
+        {
+          "id": "ophthalmic",
+          "sections": "Drug Label Information/product data; WARNINGS; Pediatric Use; INDICATIONS"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Mild to moderate infection",
+      "assertions": [
+        "One drop in each affected eye every three hours, maximum six doses per day, for 7\u201310 days. The label provides this schedule without a separate pediatric weight-based dose. Below two months, treatment is not established. Confirm affected eyes, dose timing and duration with the prescriber rather than substitute oral trimethoprim or systemic polymyxin dosing."
+      ],
+      "sources": [
+        {
+          "id": "ophthalmic",
+          "sections": "DOSAGE; Pediatric Use"
+        }
+      ],
+      "table_assertions": {
+        "headers": [
+          "Setting",
+          "Selected ophthalmic schedule"
+        ],
+        "rows": [
+          [
+            "Mild/moderate surface infection",
+            "1 drop in affected eye(s) every 3 hours; no more than 6 doses/day"
+          ],
+          [
+            "Course",
+            "7\u201310 days"
+          ],
+          [
+            "Age below 2 months",
+            "Safety/effectiveness not established; no neonatal regimen supplied"
+          ]
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Administration and organ considerations",
+      "assertions": [
+        "Avoid touching the tip to the eye, fingers or another surface; do not inject into the eye or use a systemic route. Do not wear contacts during symptomatic bacterial infection. The selected label has no renal, hepatic or dialysis adjustment table; low measured systemic absorption does not prove zero exposure or support a systemic dose conversion."
+      ],
+      "sources": [
+        {
+          "id": "ophthalmic",
+          "sections": "WARNINGS; Information for Patients; CLINICAL PHARMACOLOGY; full dosing/population sections"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "assertions": [
+        "Stop treatment and contact the clinician if redness, irritation, swelling or pain persists or increases. Serious allergy, including anaphylaxis and SJS/TEN, is reported; extensive rash, mucosal injury or breathing difficulty requires urgent care. Prolonged use can promote resistant organisms or fungal superinfection and requires reassessment. This preparation is not for ocular injection or neonatal ophthalmia."
+      ],
+      "sources": [
+        {
+          "id": "ophthalmic",
+          "sections": "WARNINGS; General; Information for Patients; ADVERSE REACTIONS"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "assertions": [
+        "Known hypersensitivity to any ingredient contraindicates the selected solution. Review prior reactions to trimethoprim, polymyxin B and formulation ingredients. Trimethoprim sulfate is a salt; this product is not the trimethoprim/sulfamethoxazole combination. Do not infer the same allergy or dose rules from a different antibiotic product."
+      ],
+      "sources": [
+        {
+          "id": "ophthalmic",
+          "sections": "CONTRAINDICATIONS; DESCRIPTION"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Boxed-warning status",
+      "assertions": [
+        "No boxed warning appears in the selected current ophthalmic label. This does not negate its serious hypersensitivity reports, topical-route restriction or neonatal indication exclusion."
+      ],
+      "sources": [
+        {
+          "id": "ophthalmic",
+          "sections": "Full label; WARNINGS; ADVERSE REACTIONS"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions",
+      "assertions": [
+        "Burning, stinging, itching and increased redness are reported, sometimes on instillation or later in treatment. Allergy can include eyelid swelling, tearing and rash around the eye. Anaphylaxis and SJS/TEN are reported without reliable rates. The label mentions photosensitivity with oral trimethoprim; that is not a quantified ophthalmic-event frequency."
+      ],
+      "sources": [
+        {
+          "id": "ophthalmic",
+          "sections": "ADVERSE REACTIONS"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Medication review and evidence limits",
+      "assertions": [
+        "The full selected ophthalmic label specifies no established drug\u2013drug interaction or routine laboratory-monitoring schedule. Review other ocular products and systemic therapy with the clinician/pharmacist. Systemic trimethoprim/sulfamethoxazole and injectable polymyxin safety algorithms cannot be assumed to describe these eye drops. No unsourced universal separation interval is supplied."
+      ],
+      "sources": [
+        {
+          "id": "ophthalmic",
+          "sections": "Full CLINICAL PHARMACOLOGY; PRECAUTIONS; dosing and safety sections"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Contacts and sterile administration",
+      "assertions": [
+        "Avoid contact lenses while symptomatic infection is present and avoid tip contamination. The solution contains benzalkonium chloride 0.004%; follow clinician advice for other eye medicines and lens resumption rather than use an unrelated glaucoma-product lens instruction."
+      ],
+      "sources": [
+        {
+          "id": "ophthalmic",
+          "sections": "DESCRIPTION; Information for Patients"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Children and older adults",
+      "assertions": [
+        "Safety/effectiveness below two months is not established. The selected geriatric section reports no overall safety/effectiveness differences compared with other adults; it does not remove individual eye-disease or allergy concerns."
+      ],
+      "sources": [
+        {
+          "id": "ophthalmic",
+          "sections": "Pediatric Use; Geriatric Use; WARNINGS"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Renal and hepatic disease",
+      "assertions": [
+        "No numerical organ-function adjustment or dialysis supplemental regimen is established in this ophthalmic label. Systemic exposure was small but detectable in a limited volunteer study. Assess the individual patient rather than claim proven absence of renal/hepatic risk."
+      ],
+      "sources": [
+        {
+          "id": "ophthalmic",
+          "sections": "Full dosing/population sections; CLINICAL PHARMACOLOGY"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy and breastfeeding",
+      "assertions": [
+        "The label describes trimethoprim\u2019s folate-related concern and oral animal/human data; use in pregnancy only when expected benefit justifies fetal risk. Ophthalmic pregnancy data and polymyxin reproductive data are limited. Human milk excretion of this product is unknown and the label advises caution during nursing; do not claim zero infant exposure or equate oral combination studies with ophthalmic outcomes."
+      ],
+      "sources": [
+        {
+          "id": "ophthalmic",
+          "sections": "Pregnancy; Nursing Mothers"
+        }
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanisms and microbiology",
+      "assertions": [
+        "Trimethoprim inhibits bacterial dihydrofolate reductase, impairing folate-dependent nucleic-acid/protein synthesis. Polymyxin B disrupts susceptible gram-negative bacterial membranes. The broad in-vitro organism lists are separate from the narrower clinically labeled infection/organism claims."
+      ],
+      "sources": [
+        {
+          "id": "ophthalmic",
+          "sections": "CLINICAL PHARMACOLOGY; Microbiology; INDICATIONS"
+        }
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Absorption and evidence limits",
+      "assertions": [
+        "In eleven volunteers receiving two drops, measured peak serum trimethoprim was about 0.03 mcg/mL and polymyxin B about 1 unit/mL. These observations do not provide a validated systemic half-life, accumulation model, therapeutic blood target or renal dose algorithm for the ophthalmic course."
+      ],
+      "sources": [
+        {
+          "id": "ophthalmic",
+          "sections": "CLINICAL PHARMACOLOGY"
+        }
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Monitoring",
+      "assertions": [
+        "Assess ocular symptoms, treatment response, hypersensitivity and possible superinfection. The selected label specifies no routine CBC, renal panel or serum drug levels for this topical course. Failure to improve or worsening pain/swelling warrants clinical reassessment rather than extending antibiotic use indefinitely."
+      ],
+      "sources": [
+        {
+          "id": "ophthalmic",
+          "sections": "General; Information for Patients; full label"
+        }
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Counseling",
+      "assertions": [
+        "Use the prescribed affected-eye schedule, keep the tip clean and avoid contact lenses during infection. Stop and contact the clinician for persistent/increasing redness, irritation, swelling or pain; seek urgent care for serious allergy. Keep the bottle protected from light and do not inject or repurpose the drops."
+      ],
+      "sources": [
+        {
+          "id": "ophthalmic",
+          "sections": "Information for Patients; WARNINGS; HOW SUPPLIED"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Representative product identity",
+      "assertions": [
+        "Selected sterile Bausch & Lomb ophthalmic solution is a 10 mL controlled-drop plastic bottle, NDC 24208-315-10, prescription only. Confirm the package and ingredients rather than rely on an antibiotic brand-name assumption."
+      ],
+      "sources": [
+        {
+          "id": "ophthalmic",
+          "sections": "HOW SUPPLIED; principal display; DESCRIPTION"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "assertions": [
+        "Each mL supplies polymyxin B 10,000 units and trimethoprim 1 mg through their sulfate salts. Benzalkonium chloride preservative is 0.004%. This is topical eye solution, not an injectable or oral combination."
+      ],
+      "sources": [
+        {
+          "id": "ophthalmic",
+          "sections": "DESCRIPTION; principal display"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "assertions": [
+        "Store at 15\u201325\u00b0C and protect from light. Retain in its carton until use because the selected bottle does not meet the USP light-resistance packaging specification. Keep the applicator uncontaminated. The reviewed label supplies no universal after-opening discard period; follow the actual dispensing instructions."
+      ],
+      "sources": [
+        {
+          "id": "ophthalmic",
+          "sections": "HOW SUPPLIED; Information for Patients"
+        }
+      ]
+    }
+  ],
+  "hero_assertions": {
+    "essential": {
+      "title": "Topical eye use and allergy",
+      "text": "Do not inject into the eye or use for neonatal ophthalmia. Stop and seek assessment for worsening allergy symptoms; serious skin reactions and anaphylaxis are reported.",
+      "section": "safety",
+      "link": "Warnings and precautions"
+    },
+    "facts": [
+      [
+        "Route",
+        "Topical ophthalmic only"
+      ],
+      [
+        "Strength",
+        "Polymyxin B 10,000 units/mL + trimethoprim 1 mg/mL"
+      ],
+      [
+        "Selected course",
+        "1 drop every 3 hours; maximum 6 doses/day for 7\u201310 days"
+      ]
+    ],
+    "sources": [
+      "ophthalmic"
+    ]
+  },
+  "section_assertions": [
+    {
+      "section": "indications",
+      "summary": "Prescription antimicrobial eye drops for susceptible surface bacterial infection.",
+      "takeaway": "Neonatal ophthalmia and deeper ocular disease require separate assessment.",
+      "sources": [
+        "ophthalmic"
+      ]
+    },
+    {
+      "section": "dosage",
+      "summary": "Apply only to the affected eye or eyes using the prescribed course.",
+      "takeaway": "The six-dose daily ceiling is not an instruction to dose around the clock.",
+      "sources": [
+        "ophthalmic"
+      ]
+    },
+    {
+      "section": "safety",
+      "summary": "Local irritation, serious allergy and superinfection require attention.",
+      "takeaway": "Stop and seek assessment for worsening allergy symptoms.",
+      "sources": [
+        "ophthalmic"
+      ]
+    },
+    {
+      "section": "interactions",
+      "summary": "Reconcile eye preparations and allergies without importing systemic interaction algorithms.",
+      "takeaway": "The selected label does not contain a tested ophthalmic interaction table.",
+      "sources": [
+        "ophthalmic"
+      ]
+    },
+    {
+      "section": "populations",
+      "summary": "Age and reproductive context require product-specific decisions.",
+      "takeaway": "Systemic trimethoprim studies are not direct ophthalmic pregnancy studies.",
+      "sources": [
+        "ophthalmic"
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "summary": "Complementary antibacterial mechanisms act at the ocular surface.",
+      "takeaway": "Measured low blood levels do not establish treatment of systemic infection.",
+      "sources": [
+        "ophthalmic"
+      ]
+    },
+    {
+      "section": "practice",
+      "summary": "Confirm diagnosis, course, response and sterile technique.",
+      "takeaway": "Persistent or worsening symptoms require reassessment.",
+      "sources": [
+        "ophthalmic"
+      ]
+    },
+    {
+      "section": "product",
+      "summary": "Verify the ophthalmic combination and exact concentration.",
+      "takeaway": "The sulfate salt names do not mean sulfamethoxazole is present.",
+      "sources": [
+        "ophthalmic"
+      ]
+    }
+  ],
+  "limitations": [
+    "No neonatal, corneal-ulcer, systemic-infection, renal/dialysis or universal eye-drop spacing protocol inferred. No full ophthalmology guideline claimed as accessed.",
+    "Selected label supplies no universal after-opening discard date or tested drug-interaction table; these limits are stated rather than filled with unrelated ocular-product rules.",
+    "Pregnancy evidence largely concerns oral trimethoprim/combination exposure, not direct controlled ophthalmic pregnancy studies."
+  ],
+  "unresolved_source_questions": [],
+  "validation": {
+    "schema": [],
+    "tests_build_lint": "Parent batch checks required",
+    "rendered_page": "Parent batch QA required",
+    "assertion_map": "Actual authored paragraphs, table cells and card source IDs match audit maps; monograph SHA256 verified."
+  },
+  "monograph_sha256": "37a486f647bcefa29f9ffb17afae15771c24afd04b2d27f00428b9a550ed82c5",
+  "source_archive": {
+    "directory": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/source-snapshots-recovered/batch-25-thyroid-metformin",
+    "checked": "2026-10-01",
+    "verified": "Full selected DailyMed SPL XML, parsed sections and public pages copied with exact SHA256 verification. Existing divergent files preserved."
+  }
+}

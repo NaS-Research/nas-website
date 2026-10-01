@@ -239,6 +239,16 @@ import { loperamide } from "./loperamide.js";
 import { mirabegron } from "./mirabegron.js";
 import { medroxyprogesterone } from "./medroxyprogesterone.js";
 import { dexamethasone } from "./dexamethasone.js";
+import { sucralfate } from "./sucralfate.js";
+import { ubrogepant } from "./ubrogepant.js";
+import { pramipexole } from "./pramipexole.js";
+import { calcitriol } from "./calcitriol.js";
+import { ipratropium } from "./ipratropium.js";
+import { ticagrelor } from "./ticagrelor.js";
+import { fexofenadine } from "./fexofenadine.js";
+import { pancrelipase } from "./pancrelipase.js";
+import { polymyxin_b_trimethoprim } from "./polymyxin-b-trimethoprim.js";
+import { bumetanide } from "./bumetanide.js";
 
 export const reviewedDrugMonographs = {
   "atorvastatin": atorvastatin,
@@ -481,4 +491,14 @@ export const reviewedDrugMonographs = {
   "mirabegron": mirabegron,
   "medroxyprogesterone": medroxyprogesterone,
   "dexamethasone": dexamethasone,
+  "sucralfate": sucralfate,
+  "ubrogepant": ubrogepant,
+  "pramipexole": pramipexole,
+  "calcitriol": calcitriol,
+  "ipratropium": ipratropium,
+  "ticagrelor": ticagrelor,
+  "fexofenadine": fexofenadine,
+  "pancrelipase": pancrelipase,
+  "polymyxin-b-trimethoprim": polymyxin_b_trimethoprim,
+  "bumetanide": bumetanide,
 };

@@ -1,0 +1,711 @@
+{
+  "drug": "fexofenadine",
+  "checked": "2026-10-01",
+  "status": "source_reviewed",
+  "review_scope": "Full selected current OTC allergy/urticaria labels, current FDA status and fully retrieved discontinued FDA prescription/ODT approval provenance. Historical clinical pharmacology and doses are explicitly bounded.",
+  "sources": [
+    {
+      "id": "fexotab",
+      "title": "Aurohealth · current 60 mg OTC allergy tablet",
+      "publisher": "DailyMed / National Library of Medicine",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5413d84e-f945-4920-8981-f62978f21d67",
+      "note": "Full public manufacturer label and patient instructions; SPL version 1, effective 20260806. Product-specific directions reviewed October 1, 2026.",
+      "checked": "2026-10-01",
+      "access": "public",
+      "spl_version": "1",
+      "effective_date": "20260806",
+      "xml_sha256": "4ac73b7f1a0f4ca0e51ad8d95ef9b8c583b7414276c66a1250a98b5bfdb5811c",
+      "retrieved_xml": "/tmp/nas-drug-sources/fexotab.xml"
+    },
+    {
+      "id": "fexotab60",
+      "title": "Aurohealth · current 180 mg OTC allergy tablet",
+      "publisher": "DailyMed / National Library of Medicine",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=683cb2ea-c913-48f4-8adc-2888da3b655e",
+      "note": "Full public manufacturer label and patient instructions; SPL version 1, effective 20260806. Product-specific directions reviewed October 1, 2026.",
+      "checked": "2026-10-01",
+      "access": "public",
+      "spl_version": "1",
+      "effective_date": "20260806",
+      "xml_sha256": "751ce224fc45a4c1e7853dc0ec27fd622a1340e39d825ac6b6b747573e6d59da",
+      "retrieved_xml": "/tmp/nas-drug-sources/fexotab60.xml"
+    },
+    {
+      "id": "fexosusp",
+      "title": "Aurohealth · current OTC allergy suspension",
+      "publisher": "DailyMed / National Library of Medicine",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fe864426-c0d6-492a-96be-cd44fd9ca054",
+      "note": "Full public manufacturer label and patient instructions; SPL version 1, effective 20260901. Product-specific directions reviewed October 1, 2026.",
+      "checked": "2026-10-01",
+      "access": "public",
+      "spl_version": "1",
+      "effective_date": "20260901",
+      "xml_sha256": "7cb6191ff977fc1f6a4617b277e227a7eeeb56b65c35b58b983699d18cfb3d62",
+      "retrieved_xml": "/tmp/nas-drug-sources/fexosusp.xml"
+    },
+    {
+      "id": "fexohives",
+      "title": "Allegra Hives · current 180 mg OTC tablets",
+      "publisher": "DailyMed / National Library of Medicine",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=490b4c5f-448b-4563-928b-837117b59b9f",
+      "note": "Full public manufacturer label and patient instructions; SPL version 10, effective 20260112. Product-specific directions reviewed October 1, 2026.",
+      "checked": "2026-10-01",
+      "access": "public",
+      "spl_version": "10",
+      "effective_date": "20260112",
+      "xml_sha256": "1829ef082fd68c120883ec1336bb1a9e2133475e8673d074acc3e4c2e46fba70",
+      "retrieved_xml": "/tmp/nas-drug-sources/fexohives.xml"
+    },
+    {
+      "id": "fexohiveschild",
+      "title": "Children’s Allegra Hives · current OTC suspension",
+      "publisher": "DailyMed / National Library of Medicine",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ff50d9cd-d849-43e8-b32a-4dcde798d3eb",
+      "note": "Full public manufacturer label and patient instructions; SPL version 1, effective 20260501. Product-specific directions reviewed October 1, 2026.",
+      "checked": "2026-10-01",
+      "access": "public",
+      "spl_version": "1",
+      "effective_date": "20260501",
+      "xml_sha256": "dc33179648e41552a38e0c2da81eafd4482338050519222140965e6a8431ea46",
+      "retrieved_xml": "/tmp/nas-drug-sources/fexohiveschild.xml"
+    },
+    {
+      "id": "fexoodt",
+      "title": "Children’s Allegra · discontinued ODT approval reference",
+      "publisher": "DailyMed / National Library of Medicine",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=06115cea-5a44-409d-85ed-bb71743491c1",
+      "note": "Full public manufacturer label and patient instructions; SPL version 16, effective 20250218. Product-specific directions reviewed October 1, 2026.",
+      "checked": "2026-10-01",
+      "access": "public",
+      "spl_version": "16",
+      "effective_date": "20250218",
+      "xml_sha256": "9dead9ba6a2823748b7c1c668ec8c90a4fb966def69a1971a12a86b829b4b890",
+      "retrieved_xml": "/tmp/nas-drug-sources/fexoodt.xml"
+    },
+    {
+      "id": "fexo-rx2019",
+      "title": "FDA · historical Allegra prescription suspension, May 2019",
+      "publisher": "U.S. Food and Drug Administration",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2019/021963s007lbl.pdf",
+      "note": "Full public approved PI, reference ID4440871, retrieved/read. NDA021963 now lists Discontinued; historical approval/clinical pharmacology provenance, not current prescription availability.",
+      "checked": "2026-10-01",
+      "access": "public primary source",
+      "retrieved_source": "/tmp/nas-drug-sources/fexo-rx2019.pdf",
+      "source_sha256": "642d55cab6be8e5d6aafdf9326194ab9853c9780a150aebc85a15e97ee667214"
+    },
+    {
+      "id": "ANDA202039",
+      "title": "FDA · ANDA202039 current product status",
+      "publisher": "U.S. Food and Drug Administration",
+      "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:ANDA202039&limit=1",
+      "note": "Official current product record checked October 1, 2026; marketed status does not establish pharmacy stock.",
+      "checked": "2026-10-01",
+      "access": "public primary source",
+      "retrieved_source": "/tmp/nas-drug-sources/ANDA202039.json",
+      "source_sha256": "57267812486f40c286c29ae4fafba809e06daa68eca29cdd2d526c436c8c4854"
+    },
+    {
+      "id": "ANDA213466",
+      "title": "FDA · ANDA213466 current product status",
+      "publisher": "U.S. Food and Drug Administration",
+      "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:ANDA213466&limit=1",
+      "note": "Official current product record checked October 1, 2026; marketed status does not establish pharmacy stock.",
+      "checked": "2026-10-01",
+      "access": "public primary source",
+      "retrieved_source": "/tmp/nas-drug-sources/ANDA213466.json",
+      "source_sha256": "54fd962452d61b4ac91f3024c9286bba60f606a68a6a562863b1f5e12fcb397e"
+    },
+    {
+      "id": "NDA020872",
+      "title": "FDA · NDA020872 current product status",
+      "publisher": "U.S. Food and Drug Administration",
+      "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:NDA020872&limit=1",
+      "note": "Official current product record checked October 1, 2026; marketed status does not establish pharmacy stock.",
+      "checked": "2026-10-01",
+      "access": "public primary source",
+      "retrieved_source": "/tmp/nas-drug-sources/NDA020872.json",
+      "source_sha256": "04140874ec0ad750b4e74b72af6654cba53520b66f99ca16f7376be46c70a3a3"
+    },
+    {
+      "id": "NDA201373",
+      "title": "FDA · NDA201373 current product status",
+      "publisher": "U.S. Food and Drug Administration",
+      "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:NDA201373&limit=1",
+      "note": "Official current product record checked October 1, 2026; marketed status does not establish pharmacy stock.",
+      "checked": "2026-10-01",
+      "access": "public primary source",
+      "retrieved_source": "/tmp/nas-drug-sources/NDA201373.json",
+      "source_sha256": "6df4dfdcb44238adeb8e923cce677ee13813f32b7130713487a1101be4ad7aab"
+    },
+    {
+      "id": "NDA021909",
+      "title": "FDA · NDA021909 current product status",
+      "publisher": "U.S. Food and Drug Administration",
+      "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:NDA021909&limit=1",
+      "note": "Official current product record checked October 1, 2026; marketed status does not establish pharmacy stock.",
+      "checked": "2026-10-01",
+      "access": "public primary source",
+      "retrieved_source": "/tmp/nas-drug-sources/NDA021909.json",
+      "source_sha256": "169f3ab63e895de51e7910c31a1a07a6f97a4c7775b50b69f42a28801557c247"
+    },
+    {
+      "id": "NDA021963",
+      "title": "FDA · NDA021963 current product status",
+      "publisher": "U.S. Food and Drug Administration",
+      "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:NDA021963&limit=1",
+      "note": "Official current product record checked October 1, 2026; marketed status does not establish pharmacy stock.",
+      "checked": "2026-10-01",
+      "access": "public primary source",
+      "retrieved_source": "/tmp/nas-drug-sources/NDA021963.json",
+      "source_sha256": "2e0f1329afee363c3aa36b371647785f88cc77ff9245d471c84067618b7e26ff"
+    }
+  ],
+  "assertion_source_map": [
+    {
+      "section": "indications",
+      "card": "Current OTC indications",
+      "assertions": {
+        "paragraphs": [
+          "Selected allergy products temporarily relieve hay-fever/upper-respiratory-allergy runny nose, sneezing, itchy/watery eyes and itchy nose/throat. Hives products reduce hives and associated itching; they do not prevent hives or allergic reactions. This profile excludes pseudoephedrine combination dosing."
+        ]
+      },
+      "source_sections": {
+        "fexotab": [
+          "Uses"
+        ],
+        "fexotab60": [
+          "Uses"
+        ],
+        "fexosusp": [
+          "Uses"
+        ],
+        "fexohives": [
+          "Uses"
+        ],
+        "fexohiveschild": [
+          "Uses"
+        ]
+      }
+    },
+    {
+      "section": "indications",
+      "card": "Discontinued product history",
+      "assertions": {
+        "paragraphs": [
+          "Current FDA NDA021909 lists 30 mg ODT products Discontinued; the retrieved ODT Drug Facts are product-history reference. NDA021963 prescription suspension is also Discontinued. Its May2019 PI approved uncomplicated chronic idiopathic urticaria at 6 months to 6 years, distinct from current OTC allergy/hives ages. This does not establish current prescription supply or permit unsupervised infant use."
+        ]
+      },
+      "source_sections": {
+        "fexoodt": [
+          "Uses",
+          "Directions"
+        ],
+        "fexo-rx2019": [
+          "1.1"
+        ],
+        "NDA021909": [
+          "Current products"
+        ],
+        "NDA021963": [
+          "Current products"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Current OTC tablets",
+      "assertions": {
+        "paragraphs": [
+          "At age ≥ 12: selected 60 mg allergy tablet, one with water every 12 hours, maximum two (120 mg) in 24 hours; selected 180 mg allergy or Hives tablet, one with water daily, maximum one (180 mg). Do not combine these regimens. These tablets are not for use below 12; age ≥ 65 or kidney disease requires medical advice. No universal higher-dose hives algorithm is supplied."
+        ]
+      },
+      "source_sections": {
+        "fexotab": [
+          "Directions"
+        ],
+        "fexotab60": [
+          "Directions"
+        ],
+        "fexohives": [
+          "Directions"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Current OTC suspensions · 30 mg per 5 mL",
+      "assertions": {
+        "paragraphs": [
+          "Shake and measure only with the enclosed cup. Age ≥ 12: 10 mL (60 mg) every 12 hours, maximum 20 mL daily. Allergy suspension at ages 2 to < 12: 5 mL (30 mg) every 12 hours, maximum 10 mL daily; below 2 ask a doctor. Hives suspension at ages 6 to < 12 uses that same 5 mL schedule, but below 6 ask a doctor. Both ask for medical advice at age ≥ 65 or with kidney disease. Their different pediatric indication thresholds must be preserved."
+        ]
+      },
+      "source_sections": {
+        "fexosusp": [
+          "Active ingredient",
+          "Directions"
+        ],
+        "fexohiveschild": [
+          "Active ingredient",
+          "Directions"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Discontinued ODT · approved reference directions",
+      "assertions": {
+        "paragraphs": [
+          "Historical 30 mg ODT label: age ≥ 12, two tablets every 12 hours, maximum four daily; ages 6 to < 12, one every 12 hours, maximum two daily; below 6 do not use. Place on tongue on an empty stomach, with/without water, and use immediately after opening the individual blister. FDA current status is Discontinued; verify an available exact formulation/current directions before use rather than substitute an adult tablet."
+        ]
+      },
+      "source_sections": {
+        "fexoodt": [
+          "Directions",
+          "Other information"
+        ],
+        "NDA021909": [
+          "Current products"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Historical prescription CIU and renal dose provenance",
+      "assertions": {
+        "paragraphs": [
+          "The discontinued FDA May2019 suspension PI gives CIU at ages 2–6: 30 mg (5 mL) twice daily; ages 6 months to < 2: 15 mg (2.5 mL) twice daily. Renal-impairment starting doses for those bands are once daily instead. Its broader renal section describes adult starting 60 mg once daily and ages 2–11 starting 30 mg once daily. These are approved historical clinical references, not a current OTC infant or renal self-dosing instruction. Current OTC labels require clinician assessment; no numerical regimen is established below 6 months."
+        ]
+      },
+      "source_sections": {
+        "fexo-rx2019": [
+          "2.1",
+          "8.4",
+          "8.6"
+        ],
+        "NDA021963": [
+          "Current products"
+        ],
+        "fexosusp": [
+          "Directions"
+        ],
+        "fexohiveschild": [
+          "Directions"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Administration and treatment review",
+      "assertions": {
+        "paragraphs": [
+          "Use water, not fruit juice; avoid simultaneous aluminum/magnesium antacids. Follow the exact package, and do not double a missed dose to exceed its daily maximum. Hives products require medical review if no improvement after 3 days, hives last over 6 weeks, or lesions are bruised/blistered/nonitchy. Unknown cause warrants assessment rather than prolonged empiric escalation."
+        ]
+      },
+      "source_sections": {
+        "fexohives": [
+          "Warnings",
+          "Directions"
+        ],
+        "fexohiveschild": [
+          "Warnings",
+          "Directions"
+        ],
+        "fexotab": [
+          "Warnings"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "assertions": {
+        "paragraphs": [
+          "Hives with tongue/mouth swelling, trouble swallowing/speaking/breathing, drooling, dizziness or loss of consciousness may be anaphylaxis: obtain emergency help and use prescribed epinephrine as instructed. Never use fexofenadine instead of an epinephrine injector or to prevent reactions to known triggers. Kidney disease/older age need individualized dosing. The discontinued ODT reference contains 3.8 mg phenylalanine per tablet and lactose, relevant to PKU/intolerance; this finding is not universal to every product."
+        ]
+      },
+      "source_sections": {
+        "fexohives": [
+          "Severe allergy warning",
+          "Do not use"
+        ],
+        "fexohiveschild": [
+          "Severe allergy warning",
+          "Do not use"
+        ],
+        "fexotab": [
+          "Warnings",
+          "Directions"
+        ],
+        "fexoodt": [
+          "Other information"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "assertions": {
+        "paragraphs": [
+          "Known allergy to fexofenadine or the ingredients of the exact product. OTC product-specific “do not use” directions also restrict ages and use for preventing known-trigger hives; kidney disease is an ask-a-doctor dose warning rather than an ingredient allergy. Check the actual formulation’s ingredients."
+        ]
+      },
+      "source_sections": {
+        "fexo-rx2019": [
+          "4"
+        ],
+        "fexotab": [
+          "Warnings",
+          "Directions"
+        ],
+        "fexotab60": [
+          "Warnings",
+          "Directions"
+        ],
+        "fexosusp": [
+          "Warnings",
+          "Directions"
+        ],
+        "fexohives": [
+          "Warnings",
+          "Directions"
+        ],
+        "fexohiveschild": [
+          "Warnings",
+          "Directions"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Boxed warning status",
+      "assertions": {
+        "paragraphs": [
+          "The selected current OTC labels and historical FDA prescription PI have no boxed warning. The Hives severe-allergy/epinephrine warnings remain important."
+        ]
+      },
+      "source_sections": {
+        "fexo-rx2019": [
+          "Complete PI"
+        ],
+        "fexohives": [
+          "Drug Facts"
+        ],
+        "fexohiveschild": [
+          "Drug Facts"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions",
+      "assertions": {
+        "paragraphs": [
+          "Historical clinical trials report headache, back pain, dizziness and stomach discomfort; children also reported cough/respiratory symptoms/fever, and younger children vomiting, diarrhea or somnolence/fatigue. Serious hypersensitivity including angioedema/anaphylaxis is reported. Trial age groups/causality differ; “non-drowsy” is not a guarantee for every person. Overdose can cause dizziness, drowsiness or dry mouth: seek medical/Poison Help assessment, not a safe dose inferred from high-dose studies; hemodialysis removes little fexofenadine."
+        ]
+      },
+      "source_sections": {
+        "fexo-rx2019": [
+          "6",
+          "10"
+        ],
+        "fexotab": [
+          "Overdose warning"
+        ]
+      }
+    },
+    {
+      "section": "interactions",
+      "card": "Antacids, fruit juice and transport interactions",
+      "assertions": {
+        "paragraphs": [
+          "Aluminum/magnesium antacids taken close to fexofenadine reduce exposure; current labels prohibit simultaneous use but do not provide one universal spacing interval. Apple, orange and grapefruit juices can lower exposure; use water. Erythromycin/ketoconazole increased concentrations in studied adult regimens without observed extra adverse/QTc effects in those studies; this is not a blanket safety claim or permission to change doses independently."
+        ]
+      },
+      "source_sections": {
+        "fexo-rx2019": [
+          "7.1–7.3"
+        ],
+        "fexotab": [
+          "Warnings"
+        ],
+        "fexosusp": [
+          "Warnings"
+        ]
+      }
+    },
+    {
+      "section": "populations",
+      "card": "Pediatric and older patients",
+      "assertions": {
+        "paragraphs": [
+          "Current allergy liquid provides OTC doses from age 2; current Hives liquid from age 6; current selected adult tablets from age 12. Younger children need clinical assessment. Discontinued ODT and historical prescription CIU directions are separately identified. Below 6 months safety/effectiveness were unestablished in the FDA PI. Current products direct adults ≥ 65 to ask a doctor, particularly because renal function can decline."
+        ]
+      },
+      "source_sections": {
+        "fexosusp": [
+          "Directions"
+        ],
+        "fexohiveschild": [
+          "Directions"
+        ],
+        "fexotab": [
+          "Directions"
+        ],
+        "fexo-rx2019": [
+          "8.4",
+          "8.6"
+        ]
+      }
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy and lactation",
+      "assertions": {
+        "paragraphs": [
+          "Current OTC labels ask for professional advice. The FDA May2019 PI reports published literature and pharmacovigilance pregnancy data had not identified a drug-associated major-birth-defect/miscarriage risk; this is limited evidence, not proof of no risk. Fexofenadine is present in human milk; infant-effect and milk-production data were unavailable. Discuss maternal need, alternatives and infant context."
+        ]
+      },
+      "source_sections": {
+        "fexo-rx2019": [
+          "8.1",
+          "8.2"
+        ],
+        "fexotab": [
+          "Pregnancy/breastfeeding warning"
+        ]
+      }
+    },
+    {
+      "section": "populations",
+      "card": "Renal and hepatic considerations",
+      "assertions": {
+        "paragraphs": [
+          "Renal dysfunction increases exposure and half-life; current OTC products require clinician-selected dosing. Historical numeric renal starts are provided above as provenance. Hepatic-impairment PK in the FDA PI did not differ substantially from healthy subjects, with no numeric liver adjustment specified. Do not infer dialysis effectively treats overdose."
+        ]
+      },
+      "source_sections": {
+        "fexo-rx2019": [
+          "8.6",
+          "8.7",
+          "12.3",
+          "10"
+        ],
+        "fexosusp": [
+          "Warnings",
+          "Directions"
+        ]
+      }
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism and disposition",
+      "assertions": {
+        "paragraphs": [
+          "Fexofenadine is a selective peripheral H1 antagonist and active metabolite of terfenadine; it is not the same drug/product. FDA PI: suspension peak about 1 hour in healthy adult subjects, protein binding 60–70%, adult mean half-life about 14.4 hours and hepatic metabolism about 5%. Radiolabeled recovery about 80% feces/11% urine does not establish the absorbed fraction. Pediatric, renal and formulation values differ; do not assume all products have identical food instructions."
+        ]
+      },
+      "source_sections": {
+        "fexo-rx2019": [
+          "12.1–12.3"
+        ]
+      }
+    },
+    {
+      "section": "practice",
+      "card": "Monitoring priorities",
+      "assertions": {
+        "paragraphs": [
+          "Follow nasal/ocular or hives symptom relief, treatment duration, sedation/dizziness, renal context and medication/juice/antacid use. Inspect atypical lesions and urgently assess systemic severe-allergy signs. No routine serum fexofenadine level or universal ECG schedule is specified by the selected labels."
+        ]
+      },
+      "source_sections": {
+        "fexohives": [
+          "Warnings"
+        ],
+        "fexohiveschild": [
+          "Warnings"
+        ],
+        "fexo-rx2019": [
+          "6",
+          "8.6",
+          "12.3"
+        ]
+      }
+    },
+    {
+      "section": "practice",
+      "card": "Patient counseling",
+      "assertions": {
+        "paragraphs": [
+          "Use the actual concentration/age/indication chart, shake suspension and wash/air-dry its cup. Do not combine 60 mg and 180 mg schedules or exceed the daily package maximum. Take with water and avoid simultaneous aluminum/magnesium antacids. Ask about kidney disease, age ≥ 65, pregnancy/breastfeeding and younger-child use. Carry prescribed epinephrine and seek emergency help for anaphylaxis; an antihistamine does not replace it."
+        ]
+      },
+      "source_sections": {
+        "fexotab": [
+          "Directions",
+          "Warnings"
+        ],
+        "fexosusp": [
+          "Directions",
+          "Package label"
+        ],
+        "fexohives": [
+          "Severe allergy warning"
+        ]
+      }
+    },
+    {
+      "section": "product",
+      "card": "Representative product",
+      "assertions": {
+        "paragraphs": [
+          "Aurohealth OTC allergy tablet 60 mg: 30-tablet bottle NDC 58602-877-09. This identifies the selected package, not local stock; verify the original written label and ingredients."
+        ]
+      },
+      "source_sections": {
+        "fexotab": [
+          "Package label"
+        ]
+      }
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "assertions": {
+        "paragraphs": [
+          "Current selected OTC tablets: 60 and 180 mg; suspensions: 30 mg per 5 mL (6 mg/mL), with indication-dependent ages. FDA ANDA202039/ANDA213466 and selected Allegra Hives application records list OTC products. FDA NDA021909 ODT30 mg and NDA021963 older prescription suspension are Discontinued. Do not infer a current Rx infant bottle or equivalent pseudoephedrine combination."
+        ]
+      },
+      "source_sections": {
+        "fexotab": [
+          "Active ingredient"
+        ],
+        "fexotab60": [
+          "Active ingredient"
+        ],
+        "fexosusp": [
+          "Active ingredient"
+        ],
+        "ANDA202039": [
+          "Current products"
+        ],
+        "ANDA213466": [
+          "Current products"
+        ],
+        "NDA020872": [
+          "Current products"
+        ],
+        "NDA201373": [
+          "Current products"
+        ],
+        "NDA021909": [
+          "Current products"
+        ],
+        "NDA021963": [
+          "Current products"
+        ]
+      }
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "assertions": {
+        "paragraphs": [
+          "Current selected products: 20–25°C; protect tablets from excessive moisture/light and follow seal/blister instructions. Shake suspension and use its supplied cup; wash/air-dry after use. Historical ODT instructions require immediate use after opening and no torn/open blister; this is not evidence of current availability. Keep children away and follow actual expiry."
+        ]
+      },
+      "source_sections": {
+        "fexotab": [
+          "Other information"
+        ],
+        "fexotab60": [
+          "Other information"
+        ],
+        "fexosusp": [
+          "Other information",
+          "Package label"
+        ],
+        "fexohives": [
+          "Other information"
+        ],
+        "fexohiveschild": [
+          "Other information"
+        ],
+        "fexoodt": [
+          "Other information"
+        ]
+      }
+    }
+  ],
+  "scope_exclusions": [
+    "No pseudoephedrine combination, non-U.S. dose or autonomous high-dose urticaria algorithm.",
+    "Discontinued prescription suspension/ODT not asserted as currently marketed; historical infant/renal directions are not current OTC self-treatment."
+  ],
+  "resolved_source_findings": [
+    "Current allergy suspension OTC age2 differs from Hives suspension age6.",
+    "ODT NDA021909 and prescription suspension NDA021963 currently Discontinued despite old labels remaining public.",
+    "Current OTC renal/age65 directions require clinician advice; historical renal starts retained as provenance."
+  ],
+  "material_gaps": [],
+  "clinical_review": "Every published card reviewed against full relevant primary label sections. Source-reviewed within stated scope; not an independent clinician sign-off.",
+  "blueprint": "Immutable APAP eight sections, essential safety, three hero facts, cited disclosures, four safety cards and three product cards.",
+  "validation": {
+    "validateMonograph": [],
+    "build": "parent integration pending",
+    "rendered_page_qa": "parent integration pending"
+  },
+  "monograph_sha256": "7ee6861280706cb64a739d678e2fef80979ae4d91fa896b855ab1798aaf5a5c2",
+  "frontmatter_source_map": {
+    "fields": {
+      "name": "Fexofenadine",
+      "synonym": "Fexofenadine hydrochloride · Allegra Allergy / Allegra Hives",
+      "description": "A peripheral H1 antihistamine with product-specific OTC allergy and urticaria directions. Current tablets/suspensions are separated from discontinued ODT and older prescription pediatric-suspension approval provenance.",
+      "facts": [
+        [
+          "Therapeutic class",
+          "Second-generation H1-receptor antagonist"
+        ],
+        [
+          "Representative product",
+          "Fexofenadine hydrochloride · 60 mg OTC tablet"
+        ],
+        [
+          "Reference focus",
+          "Current OTC allergy/hives products · distinct historical directions"
+        ]
+      ],
+      "essential": {
+        "title": "Use the correct age, indication and formulation; recognize anaphylaxis.",
+        "text": "Kidney disease and age ≥ 65 require a clinician-selected dose. Hives with breathing/swallowing trouble or faintness need emergency treatment; fexofenadine never replaces prescribed epinephrine. Avoid fruit juice and simultaneous aluminum/magnesium antacids. Product-specific pediatric ages differ.",
+        "section": "safety",
+        "link": "Warnings and precautions"
+      }
+    },
+    "source_sections": {
+      "fexotab": [
+        "Drug Facts full directions/warnings/package"
+      ],
+      "fexosusp": [
+        "Directions"
+      ],
+      "fexohives": [
+        "Severe allergy warning"
+      ],
+      "fexohiveschild": [
+        "Directions"
+      ],
+      "NDA021909": [
+        "Current products Discontinued"
+      ],
+      "NDA021963": [
+        "Current products Discontinued"
+      ]
+    }
+  },
+  "source_scope_notes": {
+    "current": "Fully retrieved current OTC allergy/hives labels and official FDA status.",
+    "historical": "Discontinued FDA May2019 prescription suspension and ODT labels used only as explicitly identified approval/dose/clinical-pharmacology provenance. No current pediatric prescription or ODT stock claim; any available exact alternative/current directions requires clinician/pharmacist verification."
+  },
+  "review_date": "2026-10-01",
+  "source_access_scope": "Fully retrieved selected public manufacturer full labels and relevant complete prescribing/patient-instruction sections; official current FDA application product records. Historical fexofenadine sources are conspicuously distinguished from current OTC directions."
+}

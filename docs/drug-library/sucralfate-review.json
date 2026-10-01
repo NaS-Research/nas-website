@@ -1,0 +1,811 @@
+{
+  "drug": "sucralfate",
+  "status": "source_reviewed",
+  "checked": "2026-10-01",
+  "reviewScope": "U.S. 1 g tablets and 1 g / 10 mL oral suspension",
+  "sources": [
+    {
+      "id": "label",
+      "title": "Carafate tablets · Full prescribing information",
+      "publisher": "DailyMed / AbbVie",
+      "note": "Current SPL version 17, effective 2024-05-21. ",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c87c6b50-6977-4fa7-ae98-40c0753f7aee"
+    },
+    {
+      "id": "suspension",
+      "title": "Carafate oral suspension · Full prescribing information",
+      "publisher": "DailyMed / AbbVie",
+      "note": "Current SPL version 20, effective 2023-06-08. ",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0fb67b1c-b4c0-46f2-8a81-df1510e006aa"
+    }
+  ],
+  "labelMetadata": [
+    {
+      "sourceId": "label",
+      "product": "sucralfate-tablet",
+      "setid": "c87c6b50-6977-4fa7-ae98-40c0753f7aee",
+      "version": "17",
+      "effectiveTime": "20240521",
+      "publishedDate": "Current public SPL retrieved October1,2026; no independent publication date claimed",
+      "clinicalRevisionWording": [],
+      "checked": "2026-10-01",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/c87c6b50-6977-4fa7-ae98-40c0753f7aee.xml",
+      "xmlSha256": "7784fa1d54db9aefe7e8ed2eb23f9e02c32cd52990e5929f402ef120d60960af",
+      "marketingAuthorization": [
+        {
+          "category": "NDA",
+          "application": "NDA018333"
+        }
+      ],
+      "scope": "Actual selected public product labeling; SPL publication is distinguished from clinical revision, approval chronology and local stock."
+    },
+    {
+      "sourceId": "suspension",
+      "product": "sucralfate-suspension",
+      "setid": "0fb67b1c-b4c0-46f2-8a81-df1510e006aa",
+      "version": "20",
+      "effectiveTime": "20230608",
+      "publishedDate": "Current public SPL retrieved October1,2026; no independent publication date claimed",
+      "clinicalRevisionWording": [],
+      "checked": "2026-10-01",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/0fb67b1c-b4c0-46f2-8a81-df1510e006aa.xml",
+      "xmlSha256": "4956a0275a07c741ab6d73f4024397580f4c53aedc9a9b59d61e9016da6fdf97",
+      "marketingAuthorization": [
+        {
+          "category": "NDA",
+          "application": "NDA019183"
+        }
+      ],
+      "scope": "Actual selected public product labeling; SPL publication is distinguished from clinical revision, approval chronology and local stock."
+    }
+  ],
+  "reviewedSourceSections": {
+    "label": [
+      "D E S CRI P T I O N",
+      "CLINICAL PHARMACOLOGY",
+      "CLINICAL TRIALS",
+      "INDI C A T I O N S A ND U S A G E",
+      "C O N T R A INDI C A T I O NS",
+      "P R E C A U T I O NS",
+      "S pe c i al P opulati o ns: C h r onic Renal Failu r e a nd Di a l y s i s P atien t s",
+      "Drug In t e r a c t io n s",
+      "Ca r cin o g enes i s, M u t agene s is, Im p a i r me n t of Ferti li t y",
+      "Pr eg n an c y",
+      "T e r at o genic e ff e c t s",
+      "N u r sing M o t he r s",
+      "P edia t r ic U se",
+      "G e r iatr i c U s e",
+      "A D VE R S E R E A C T I O NS",
+      "O VE RD OS A G E",
+      "D O S A G E A N D A D M INI S T R A T I O N",
+      "H O W S U P P LI E D",
+      "Storage",
+      "PRINCIPAL DISPLAY PANEL"
+    ],
+    "suspension": [
+      "DESCRIPTION",
+      "CLINICAL PHARMACOLOGY",
+      "CLINICAL TRIALS",
+      "INDICATIONS AND USAGE",
+      "CONTRAINDICATIONS",
+      "WARNINGS",
+      "PRECAUTIONS",
+      "Special Population s : C h ronic Re n al Failure and Dial y sis Patients",
+      "Drug Intera c tions",
+      "Carci n oge ne sis, Mutag en esis, Impairment of F e rt i li t y",
+      "Pregna n c y",
+      "Nursing Mothers",
+      "Pediatric U s e",
+      "Geriatric Use",
+      "ADV E RSE R EACTI O NS",
+      "OVERDOSAGE",
+      "DOS A GE AN D A DMINIS T RAT I ON",
+      "HOW SUPPLIED",
+      "PRINCIPAL DISPLAY PANEL"
+    ]
+  },
+  "assertionToSourceMap": [
+    {
+      "section": "indications",
+      "card": "Labeled uses",
+      "assertions": {
+        "paragraphs": [
+          "Both products have short-term active duodenal-ulcer treatment labeling, up to eight weeks. Tablets also have maintenance treatment after healing at a reduced dose. The suspension label does not establish that maintenance regimen or equivalence to tablets."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "suspension"
+      ],
+      "sourceSections": {
+        "label": [
+          "INDI C A T I O N S A ND U S A G E",
+          "C O N T R A INDI C A T I O NS"
+        ],
+        "suspension": [
+          "INDICATIONS AND USAGE",
+          "CONTRAINDICATIONS",
+          "WARNINGS"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "indications",
+      "card": "Scope",
+      "assertions": {
+        "paragraphs": [
+          "This profile does not supply an H. pylori eradication, gastric-ulcer, reflux, stress-ulcer prevention or compounded/tube regimen. Sucralfate treats the ulcer surface; it does not by itself establish elimination of an underlying cause or prevention of recurrence."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "suspension"
+      ],
+      "sourceSections": {
+        "label": [
+          "INDI C A T I O N S A ND U S A G E",
+          "C O N T R A INDI C A T I O NS"
+        ],
+        "suspension": [
+          "INDICATIONS AND USAGE",
+          "CONTRAINDICATIONS",
+          "WARNINGS"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "dosage",
+      "card": "Adult selected regimens",
+      "assertions": {
+        "table": {
+          "headers": [
+            "Product / purpose",
+            "Regimen and limit"
+          ],
+          "rows": [
+            [
+              "Tablets: active duodenal ulcer",
+              "1 g orally four times daily on an empty stomach; continue 4–8 weeks unless healing is demonstrated by x-ray or endoscopy"
+            ],
+            [
+              "Suspension: active duodenal ulcer",
+              "1 g (10 mL) orally four times daily on an empty stomach; same 4–8 week healing-directed course"
+            ],
+            [
+              "Tablets: maintenance after healing",
+              "1 g orally twice daily; do not extrapolate this indication to suspension"
+            ]
+          ]
+        }
+      },
+      "sourceIds": [
+        "label",
+        "suspension"
+      ],
+      "sourceSections": {
+        "label": [
+          "S pe c i al P opulati o ns: C h r onic Renal Failu r e a nd Di a l y s i s P atien t s",
+          "Drug In t e r a c t io n s",
+          "P edia t r ic U se",
+          "O VE RD OS A G E",
+          "D O S A G E A N D A D M INI S T R A T I O N"
+        ],
+        "suspension": [
+          "Special Population s : C h ronic Re n al Failure and Dial y sis Patients",
+          "Drug Intera c tions",
+          "Pediatric U s e",
+          "OVERDOSAGE",
+          "DOS A GE AN D A DMINIS T RAT I ON"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "dosage",
+      "card": "Administration and spacing",
+      "assertions": {
+        "paragraphs": [
+          "Shake suspension well before measuring. The selected concentration is 1 g / 10 mL. Antacids may be used for pain as prescribed, but not within thirty minutes before or after sucralfate. Resolve other medicines’ timing individually; the studied two-hour-before result is not an instruction for every drug."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "suspension"
+      ],
+      "sourceSections": {
+        "label": [
+          "S pe c i al P opulati o ns: C h r onic Renal Failu r e a nd Di a l y s i s P atien t s",
+          "Drug In t e r a c t io n s",
+          "P edia t r ic U se",
+          "O VE RD OS A G E",
+          "D O S A G E A N D A D M INI S T R A T I O N"
+        ],
+        "suspension": [
+          "Special Population s : C h ronic Re n al Failure and Dial y sis Patients",
+          "Drug Intera c tions",
+          "Pediatric U s e",
+          "OVERDOSAGE",
+          "DOS A GE AN D A DMINIS T RAT I ON"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "dosage",
+      "card": "Dose limitations",
+      "assertions": {
+        "paragraphs": [
+          "Pediatric safety and effectiveness are unestablished. No numeric renal or hepatic adjustment schedule is supplied; renal aluminum risk can make simple dose extrapolation unsafe. Elderly dose selection should be cautious. No independently verified missed-dose, crushing or enteral-tube protocol is supplied."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "suspension"
+      ],
+      "sourceSections": {
+        "label": [
+          "S pe c i al P opulati o ns: C h r onic Renal Failu r e a nd Di a l y s i s P atien t s",
+          "Drug In t e r a c t io n s",
+          "P edia t r ic U se",
+          "O VE RD OS A G E",
+          "D O S A G E A N D A D M INI S T R A T I O N"
+        ],
+        "suspension": [
+          "Special Population s : C h ronic Re n al Failure and Dial y sis Patients",
+          "Drug Intera c tions",
+          "Pediatric U s e",
+          "OVERDOSAGE",
+          "DOS A GE AN D A DMINIS T RAT I ON"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "assertions": {
+        "paragraphs": [
+          "Inappropriate IV administration has caused fatal pulmonary and cerebral emboli; suspension is explicitly oral only. Chronic renal failure and dialysis impair aluminum removal: accumulation can cause bone disease and encephalopathy. Additional aluminum antacids increase burden. Bezoars have occurred, especially with delayed gastric emptying or enteral feeding. Tablets have aspiration/respiratory complications in swallowing impairment or compromised airway reflexes. Suspension has reports of hyperglycemia in diabetes; monitor glucose and review treatment adjustment."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "suspension"
+      ],
+      "sourceSections": {
+        "label": [
+          "C O N T R A INDI C A T I O NS",
+          "P R E C A U T I O NS",
+          "A D VE R S E R E A C T I O NS"
+        ],
+        "suspension": [
+          "CONTRAINDICATIONS",
+          "WARNINGS",
+          "PRECAUTIONS",
+          "ADV E RSE R EACTI O NS"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "assertions": {
+        "paragraphs": [
+          "Known hypersensitivity to sucralfate or product ingredients is contraindicated. Renal failure is a labeled caution requiring careful selection, rather than an invented universal creatinine-clearance contraindication."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "suspension"
+      ],
+      "sourceSections": {
+        "label": [
+          "C O N T R A INDI C A T I O NS",
+          "P R E C A U T I O NS",
+          "A D VE R S E R E A C T I O NS"
+        ],
+        "suspension": [
+          "CONTRAINDICATIONS",
+          "WARNINGS",
+          "PRECAUTIONS",
+          "ADV E RSE R EACTI O NS"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "safety",
+      "card": "Boxed warning status",
+      "assertions": {
+        "paragraphs": [
+          "Neither selected Carafate label has a boxed warning. The absence of a box does not reduce the seriousness of inappropriate injection, allergy or renal aluminum toxicity."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "suspension"
+      ],
+      "sourceSections": {
+        "label": [
+          "C O N T R A INDI C A T I O NS",
+          "P R E C A U T I O NS",
+          "A D VE R S E R E A C T I O NS"
+        ],
+        "suspension": [
+          "CONTRAINDICATIONS",
+          "WARNINGS",
+          "PRECAUTIONS",
+          "ADV E RSE R EACTI O NS"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions",
+      "assertions": {
+        "paragraphs": [
+          "Constipation is the most frequent reported trial complaint. Other reported effects include nausea, diarrhea, vomiting, dyspepsia, dry mouth, dizziness, headache and rash. Postmarketing reports include airway/facial swelling, bronchospasm and anaphylactic reactions; formulation attribution is not always known. Bezoars and aspiration are clinically important complications."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "suspension"
+      ],
+      "sourceSections": {
+        "label": [
+          "C O N T R A INDI C A T I O NS",
+          "P R E C A U T I O NS",
+          "A D VE R S E R E A C T I O NS"
+        ],
+        "suspension": [
+          "CONTRAINDICATIONS",
+          "WARNINGS",
+          "PRECAUTIONS",
+          "ADV E RSE R EACTI O NS"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "interactions",
+      "card": "Binding interactions",
+      "assertions": {
+        "paragraphs": [
+          "Reported affected medicines include digoxin, fluoroquinolones, levothyroxine, phenytoin, tetracyclines, ketoconazole, quinidine, theophylline and selected H2 blockers. These are label examples, including legacy products; not all require identical spacing. Administering selected studied medicines two hours before sucralfate eliminated those studied interactions, but this was not demonstrated universally."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "suspension"
+      ],
+      "sourceSections": {
+        "label": [
+          "P R E C A U T I O NS",
+          "Drug In t e r a c t io n s"
+        ],
+        "suspension": [
+          "WARNINGS",
+          "PRECAUTIONS",
+          "Drug Intera c tions"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "interactions",
+      "card": "Warfarin and aluminum",
+      "assertions": {
+        "paragraphs": [
+          "Subtherapeutic prothrombin-time case reports with warfarin contrast with two studies showing no effect; monitor anticoagulation where clinically appropriate without predicting a guaranteed INR direction. Aluminum-containing antacids add to renal aluminum burden; preserve the separate thirty-minute antacid administration restriction."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "suspension"
+      ],
+      "sourceSections": {
+        "label": [
+          "P R E C A U T I O NS",
+          "Drug In t e r a c t io n s"
+        ],
+        "suspension": [
+          "WARNINGS",
+          "PRECAUTIONS",
+          "Drug Intera c tions"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy and lactation",
+      "assertions": {
+        "paragraphs": [
+          "There are no adequate controlled pregnancy studies; animal findings do not establish human safety. Use in pregnancy only when clearly needed under clinical review. Excretion in human milk is unknown and the labels advise caution during breastfeeding."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "suspension"
+      ],
+      "sourceSections": {
+        "label": [
+          "P R E C A U T I O NS",
+          "S pe c i al P opulati o ns: C h r onic Renal Failu r e a nd Di a l y s i s P atien t s",
+          "Pr eg n an c y",
+          "N u r sing M o t he r s",
+          "P edia t r ic U se",
+          "G e r iatr i c U s e",
+          "O VE RD OS A G E",
+          "D O S A G E A N D A D M INI S T R A T I O N"
+        ],
+        "suspension": [
+          "PRECAUTIONS",
+          "Special Population s : C h ronic Re n al Failure and Dial y sis Patients",
+          "Pregna n c y",
+          "Nursing Mothers",
+          "Pediatric U s e",
+          "Geriatric Use",
+          "OVERDOSAGE",
+          "DOS A GE AN D A DMINIS T RAT I ON"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "populations",
+      "card": "Children and older adults",
+      "assertions": {
+        "paragraphs": [
+          "Safety and effectiveness in pediatric patients have not been established. Older-adult clinical information is limited; consider concurrent diseases, medicines and reduced renal function when selecting treatment and monitoring."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "suspension"
+      ],
+      "sourceSections": {
+        "label": [
+          "P R E C A U T I O NS",
+          "S pe c i al P opulati o ns: C h r onic Renal Failu r e a nd Di a l y s i s P atien t s",
+          "Pr eg n an c y",
+          "N u r sing M o t he r s",
+          "P edia t r ic U se",
+          "G e r iatr i c U s e",
+          "O VE RD OS A G E",
+          "D O S A G E A N D A D M INI S T R A T I O N"
+        ],
+        "suspension": [
+          "PRECAUTIONS",
+          "Special Population s : C h ronic Re n al Failure and Dial y sis Patients",
+          "Pregna n c y",
+          "Nursing Mothers",
+          "Pediatric U s e",
+          "Geriatric Use",
+          "OVERDOSAGE",
+          "DOS A GE AN D A DMINIS T RAT I ON"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "populations",
+      "card": "Renal and hepatic considerations",
+      "assertions": {
+        "paragraphs": [
+          "Use cautiously in chronic renal failure or dialysis because absorbed aluminum cannot be adequately cleared. Protein-bound aluminum does not cross dialysis membranes; dialysis is not a reason to dismiss accumulation. The labels provide no numeric hepatic adjustment or validated renal dose table."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "suspension"
+      ],
+      "sourceSections": {
+        "label": [
+          "P R E C A U T I O NS",
+          "S pe c i al P opulati o ns: C h r onic Renal Failu r e a nd Di a l y s i s P atien t s",
+          "Pr eg n an c y",
+          "N u r sing M o t he r s",
+          "P edia t r ic U se",
+          "G e r iatr i c U s e",
+          "O VE RD OS A G E",
+          "D O S A G E A N D A D M INI S T R A T I O N"
+        ],
+        "suspension": [
+          "PRECAUTIONS",
+          "Special Population s : C h ronic Re n al Failure and Dial y sis Patients",
+          "Pregna n c y",
+          "Nursing Mothers",
+          "Pediatric U s e",
+          "Geriatric Use",
+          "OVERDOSAGE",
+          "DOS A GE AN D A DMINIS T RAT I ON"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism",
+      "assertions": {
+        "paragraphs": [
+          "An ulcer-adherent complex with proteinaceous exudate provides a barrier to acid, pepsin and bile salts. The exact healing mechanism is not fully defined; the effect is predominantly local."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "suspension"
+      ],
+      "sourceSections": {
+        "label": [
+          "D E S CRI P T I O N",
+          "CLINICAL PHARMACOLOGY"
+        ],
+        "suspension": [
+          "DESCRIPTION",
+          "CLINICAL PHARMACOLOGY"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "pharmacology",
+      "card": "Disposition",
+      "assertions": {
+        "paragraphs": [
+          "Gastrointestinal absorption is minimal. Absorbed sulfated disaccharide is principally excreted in urine; some aluminum is absorbed, explaining renal toxicity concerns. The suspension label specifically states that clinical equivalence to tablets has not been demonstrated."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "suspension"
+      ],
+      "sourceSections": {
+        "label": [
+          "D E S CRI P T I O N",
+          "CLINICAL PHARMACOLOGY"
+        ],
+        "suspension": [
+          "DESCRIPTION",
+          "CLINICAL PHARMACOLOGY"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "practice",
+      "card": "Monitoring and counseling",
+      "assertions": {
+        "paragraphs": [
+          "Review ulcer response and the planned course, constipation, swallowing ability, renal function and aluminum exposures. In diabetes using suspension, monitor glucose. Review the whole medicine schedule with a pharmacist, especially thyroid replacement, seizure medicines, antibiotics or anticoagulation. Shake and measure suspension accurately; never inject."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "suspension"
+      ],
+      "sourceSections": {
+        "label": [
+          "P R E C A U T I O NS",
+          "S pe c i al P opulati o ns: C h r onic Renal Failu r e a nd Di a l y s i s P atien t s",
+          "O VE RD OS A G E",
+          "D O S A G E A N D A D M INI S T R A T I O N"
+        ],
+        "suspension": [
+          "WARNINGS",
+          "PRECAUTIONS",
+          "Special Population s : C h ronic Re n al Failure and Dial y sis Patients",
+          "OVERDOSAGE",
+          "DOS A GE AN D A DMINIS T RAT I ON"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "practice",
+      "card": "Overdose and urgent symptoms",
+      "assertions": {
+        "paragraphs": [
+          "Seek medical or Poison Control advice for excessive dosing or concerning symptoms. Human overdose experience is limited and the labels provide no specific treatment recommendation; animal tolerance is not a safe human threshold. Report severe abdominal symptoms, airway swelling or breathing difficulty urgently."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "suspension"
+      ],
+      "sourceSections": {
+        "label": [
+          "P R E C A U T I O NS",
+          "S pe c i al P opulati o ns: C h r onic Renal Failu r e a nd Di a l y s i s P atien t s",
+          "O VE RD OS A G E",
+          "D O S A G E A N D A D M INI S T R A T I O N"
+        ],
+        "suspension": [
+          "WARNINGS",
+          "PRECAUTIONS",
+          "Special Population s : C h ronic Re n al Failure and Dial y sis Patients",
+          "OVERDOSAGE",
+          "DOS A GE AN D A DMINIS T RAT I ON"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "product",
+      "card": "Representative products",
+      "assertions": {
+        "facts": [
+          [
+            "Tablet",
+            "AbbVie Carafate 1 g"
+          ],
+          [
+            "Tablet appearance",
+            "Light pink, scored, oblong; CARAFATE / 1712"
+          ],
+          [
+            "Tablet package",
+            "Bottle 100 · NDC 58914-171-10"
+          ],
+          [
+            "Suspension",
+            "Pink 1 g / 10 mL; bottle 420 mL · NDC 58914-170-14"
+          ]
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "suspension"
+      ],
+      "sourceSections": {
+        "label": [
+          "D E S CRI P T I O N",
+          "S pe c i al P opulati o ns: C h r onic Renal Failu r e a nd Di a l y s i s P atien t s",
+          "O VE RD OS A G E",
+          "D O S A G E A N D A D M INI S T R A T I O N",
+          "H O W S U P P LI E D",
+          "PRINCIPAL DISPLAY PANEL"
+        ],
+        "suspension": [
+          "DESCRIPTION",
+          "Special Population s : C h ronic Re n al Failure and Dial y sis Patients",
+          "OVERDOSAGE",
+          "DOS A GE AN D A DMINIS T RAT I ON",
+          "HOW SUPPLIED",
+          "PRINCIPAL DISPLAY PANEL"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "assertions": {
+        "paragraphs": [
+          "Selected tablets contain 1 g sucralfate; selected oral suspension contains 1 g per 10 mL. Check all inactive ingredients for allergy. No compounded concentration, opened-tablet stability or enteral-tube recipe is verified here."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "suspension"
+      ],
+      "sourceSections": {
+        "label": [
+          "D E S CRI P T I O N",
+          "S pe c i al P opulati o ns: C h r onic Renal Failu r e a nd Di a l y s i s P atien t s",
+          "O VE RD OS A G E",
+          "D O S A G E A N D A D M INI S T R A T I O N",
+          "H O W S U P P LI E D",
+          "PRINCIPAL DISPLAY PANEL"
+        ],
+        "suspension": [
+          "DESCRIPTION",
+          "Special Population s : C h ronic Re n al Failure and Dial y sis Patients",
+          "OVERDOSAGE",
+          "DOS A GE AN D A DMINIS T RAT I ON",
+          "HOW SUPPLIED",
+          "PRINCIPAL DISPLAY PANEL"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "assertions": {
+        "paragraphs": [
+          "Tablets: controlled room temperature 15–30°C. Suspension: 20–25°C; avoid freezing and shake well before use. Follow the actual dispensed container and expiry; do not infer a universal post-opening or compounded beyond-use date."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "suspension"
+      ],
+      "sourceSections": {
+        "label": [
+          "D E S CRI P T I O N",
+          "S pe c i al P opulati o ns: C h r onic Renal Failu r e a nd Di a l y s i s P atien t s",
+          "O VE RD OS A G E",
+          "D O S A G E A N D A D M INI S T R A T I O N",
+          "H O W S U P P LI E D",
+          "PRINCIPAL DISPLAY PANEL"
+        ],
+        "suspension": [
+          "DESCRIPTION",
+          "Special Population s : C h ronic Re n al Failure and Dial y sis Patients",
+          "OVERDOSAGE",
+          "DOS A GE AN D A DMINIS T RAT I ON",
+          "HOW SUPPLIED",
+          "PRINCIPAL DISPLAY PANEL"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    }
+  ],
+  "evidence": [
+    {
+      "sourceId": "label",
+      "localEvidence": "/tmp/nas-drug-sources/sucralfate-tablet.xml",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/sucralfate/sucralfate-tablet.xml",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/c87c6b50-6977-4fa7-ae98-40c0753f7aee.xml",
+      "sha256": "7784fa1d54db9aefe7e8ed2eb23f9e02c32cd52990e5929f402ef120d60960af"
+    },
+    {
+      "sourceId": "label",
+      "localEvidence": "/tmp/nas-drug-sources/sucralfate-tablet-sections.json",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/sucralfate/sucralfate-tablet-sections.json",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/c87c6b50-6977-4fa7-ae98-40c0753f7aee.xml",
+      "sha256": "3b226d1e29e0f3f3f9f729387c3ed3eb6fdc05a16e7eb7f407013b92f11f3303"
+    },
+    {
+      "sourceId": "suspension",
+      "localEvidence": "/tmp/nas-drug-sources/sucralfate-suspension.xml",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/sucralfate/sucralfate-suspension.xml",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/0fb67b1c-b4c0-46f2-8a81-df1510e006aa.xml",
+      "sha256": "4956a0275a07c741ab6d73f4024397580f4c53aedc9a9b59d61e9016da6fdf97"
+    },
+    {
+      "sourceId": "suspension",
+      "localEvidence": "/tmp/nas-drug-sources/sucralfate-suspension-sections.json",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/sucralfate/sucralfate-suspension-sections.json",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/0fb67b1c-b4c0-46f2-8a81-df1510e006aa.xml",
+      "sha256": "e2132e08fcdbd7bddac9774ffff62501ffa49a41b0a2a616eca6cc8b94fa8361"
+    }
+  ],
+  "sourceDiscrepancies": [
+    "Tablet active-ulcer plus maintenance indication differs from suspension active-ulcer-only scope; clinical equivalence is unestablished.",
+    "Two-hour-before interaction result applies to selected studied medicines, not every drug; warfarin case reports conflict with two no-effect studies.",
+    "Renal/dialysis aluminum caution has no numeric adjustment; no universal renal contraindication or safe dialysis clearance is invented."
+  ],
+  "materialErrors": [],
+  "unresolvedMaterialGaps": [],
+  "scopeExclusions": [
+    "Other manufacturers/foreign products not reviewed; current public label presence does not prove local stock.",
+    "Off-label regimens, compounded stability/crushing/tube protocols, universal organ algorithms and individualized emergency treatment are excluded.",
+    "H.pylori eradication, gastric/reflux/stress-ulcer off-label protocols, suspension maintenance equivalence and compounded/tube recipes excluded."
+  ],
+  "verification": {
+    "schemaErrors": [],
+    "sectionIds": [
+      "indications",
+      "dosage",
+      "safety",
+      "interactions",
+      "populations",
+      "pharmacology",
+      "practice",
+      "product"
+    ],
+    "safetyCards": 4,
+    "productCards": 3,
+    "heroFacts": 3,
+    "monographSha256": "6d535587764c9eea9f0192378fa87113092532ea41a3373dbe474dc044df8283",
+    "renderedQA": "Pending parent candidate build/desktop/mobile review; no live claim.",
+    "independentReview": "Pending actual-file independent reviewer."
+  },
+  "sourceAudit": "Full selected primary supporting sections read; current metadata retained separately from historical clinical wording. No paywalled access claimed."
+}

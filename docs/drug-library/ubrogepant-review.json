@@ -1,0 +1,796 @@
+{
+  "drug": "ubrogepant",
+  "status": "source_reviewed",
+  "checked": "2026-10-01",
+  "reviewScope": "U.S. 50 mg and 100 mg oral tablets",
+  "sources": [
+    {
+      "id": "label",
+      "title": "Ubrelvy · Full prescribing information",
+      "publisher": "DailyMed / AbbVie",
+      "note": "Current SPL version 28, effective 2025-06-05. ",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fd9f9458-fd96-4688-be3f-f77b3d1af6ab"
+    }
+  ],
+  "labelMetadata": [
+    {
+      "sourceId": "label",
+      "product": "ubrogepant-ubrelvy",
+      "setid": "fd9f9458-fd96-4688-be3f-f77b3d1af6ab",
+      "version": "28",
+      "effectiveTime": "20250605",
+      "publishedDate": "Current public SPL retrieved October1,2026; no independent publication date claimed",
+      "clinicalRevisionWording": [],
+      "checked": "2026-10-01",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/fd9f9458-fd96-4688-be3f-f77b3d1af6ab.xml",
+      "xmlSha256": "176d82a6d2c6a9271432a1204040bbe6e2608ccbb464e5cb08a84601d445619d",
+      "marketingAuthorization": [
+        {
+          "category": "NDA",
+          "application": "NDA211765"
+        },
+        {
+          "category": "NDA",
+          "application": "NDA211765"
+        }
+      ],
+      "scope": "Actual selected public product labeling; SPL publication is distinguished from clinical revision, approval chronology and local stock."
+    }
+  ],
+  "reviewedSourceSections": {
+    "label": [
+      "1 INDICATIONS AND USAGE",
+      "2 DOSAGE AND ADMINISTRATION",
+      "2.1 Recommended Dosage",
+      "2.2 Dosage Modification s",
+      "3 DOSAGE FORMS AND STRENGTHS",
+      "4 CONTRAINDICATIONS",
+      "5 WARNINGS AND PRECAUTIONS",
+      "5 .1 Hypersensitivity Reactions",
+      "5. 2 Hyper tension",
+      "5. 3 Raynaud’s Phenomenon",
+      "6 ADVERSE REACTIONS",
+      "6.1 Clinical Trials Experience",
+      "6 . 2 Postmarketing Experience",
+      "7 DRUG INTERACTIONS",
+      "7.1 CYP3A4 I nhibitors",
+      "7.2 CYP3A4 I nducers",
+      "7 .3 BCRP and / or P-gp Only Inhibitors",
+      "8 USE IN SPECIFIC POPULATIONS",
+      "8.1 Pregnancy",
+      "8.2 Lactation",
+      "8.4 Pediatric Use",
+      "8.5 Geriatric Use",
+      "8.6 Hepatic Impairment",
+      "8.7 Renal Impairment",
+      "10 OVERDOS AG E",
+      "11 DESCRIPTION",
+      "12 CLINICAL PHARMACOLOGY",
+      "12.1 Mechanism of Action",
+      "12.2 Pharmacodynamics",
+      "12.3 Pharmacokinetics",
+      "13 NONCLINICAL TOXICOLOGY",
+      "13.1 Carcinogenesis, Mutagenesis, Impairment of Fertility",
+      "14 CLINICAL STUDIES",
+      "16 HOW SUPPLIED/STORAGE AND HANDLING",
+      "16.1 How Supplied",
+      "16.2 Storage and Handling",
+      "17 PATIENT COUNSELING INFORMATION",
+      "PRINCIPAL DISPLAY PANEL"
+    ]
+  },
+  "assertionToSourceMap": [
+    {
+      "section": "indications",
+      "card": "Labeled indication",
+      "assertions": {
+        "paragraphs": [
+          "Ubrelvy treats acute migraine with or without aura in adults. It is not indicated for preventive migraine treatment. This profile does not supply a pediatric or off-label preventive regimen."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": [
+          "1 INDICATIONS AND USAGE",
+          "4 CONTRAINDICATIONS",
+          "5 WARNINGS AND PRECAUTIONS",
+          "5 .1 Hypersensitivity Reactions",
+          "5. 2 Hyper tension",
+          "5. 3 Raynaud’s Phenomenon"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "dosage",
+      "card": "Ordinary adult dose",
+      "assertions": {
+        "paragraphs": [
+          "Take 50 mg or 100 mg orally as needed, with or without food. If needed, a second dose may be taken at least two hours later; maximum 200 mg in 24 hours. Safety of treating more than eight migraines in thirty days has not been established."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": [
+          "2 DOSAGE AND ADMINISTRATION",
+          "2.1 Recommended Dosage",
+          "2.2 Dosage Modification s",
+          "3 DOSAGE FORMS AND STRENGTHS",
+          "7 DRUG INTERACTIONS",
+          "8.4 Pediatric Use",
+          "8.6 Hepatic Impairment",
+          "8.7 Renal Impairment",
+          "10 OVERDOS AG E",
+          "8 USE IN SPECIFIC POPULATIONS",
+          "8.1 Pregnancy",
+          "8.2 Lactation",
+          "8.5 Geriatric Use",
+          "12 CLINICAL PHARMACOLOGY",
+          "12.1 Mechanism of Action",
+          "12.2 Pharmacodynamics",
+          "12.3 Pharmacokinetics"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "dosage",
+      "card": "Interaction modifications",
+      "assertions": {
+        "table": {
+          "headers": [
+            "Concurrent exposure",
+            "Initial / second dose"
+          ],
+          "rows": [
+            [
+              "Strong CYP3A4 inhibitor",
+              "Contraindicated"
+            ],
+            [
+              "Moderate CYP3A4 inhibitor",
+              "50 mg; avoid second dose within 24 hours"
+            ],
+            [
+              "Weak CYP3A4 inhibitor",
+              "50 mg; if needed 50 mg at least two hours later"
+            ],
+            [
+              "Strong CYP3A4 inducer",
+              "Avoid concomitant use"
+            ],
+            [
+              "Weak or moderate CYP3A4 inducer",
+              "100 mg; if needed 100 mg at least two hours later"
+            ],
+            [
+              "BCRP and/or P-gp only inhibitor",
+              "50 mg; if needed 50 mg at least two hours later"
+            ]
+          ]
+        }
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": [
+          "2 DOSAGE AND ADMINISTRATION",
+          "2.1 Recommended Dosage",
+          "2.2 Dosage Modification s",
+          "3 DOSAGE FORMS AND STRENGTHS",
+          "7 DRUG INTERACTIONS",
+          "8.4 Pediatric Use",
+          "8.6 Hepatic Impairment",
+          "8.7 Renal Impairment",
+          "10 OVERDOS AG E",
+          "8 USE IN SPECIFIC POPULATIONS",
+          "8.1 Pregnancy",
+          "8.2 Lactation",
+          "8.5 Geriatric Use",
+          "12 CLINICAL PHARMACOLOGY",
+          "12.1 Mechanism of Action",
+          "12.2 Pharmacodynamics",
+          "12.3 Pharmacokinetics"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "dosage",
+      "card": "Organ modifications",
+      "assertions": {
+        "table": {
+          "headers": [
+            "Organ status",
+            "Selected dose rule"
+          ],
+          "rows": [
+            [
+              "Severe hepatic: Child-Pugh C",
+              "50 mg; if needed another 50 mg at least two hours later"
+            ],
+            [
+              "Severe renal: CLcr 15–29 mL/min",
+              "50 mg; if needed another 50 mg at least two hours later"
+            ],
+            [
+              "ESRD: CLcr below 15 mL/min",
+              "Avoid use"
+            ],
+            [
+              "Mild/moderate hepatic or renal impairment",
+              "No adjustment recommended; interacting medicines may still require modification"
+            ]
+          ]
+        }
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": [
+          "2 DOSAGE AND ADMINISTRATION",
+          "2.1 Recommended Dosage",
+          "2.2 Dosage Modification s",
+          "3 DOSAGE FORMS AND STRENGTHS",
+          "7 DRUG INTERACTIONS",
+          "8.4 Pediatric Use",
+          "8.6 Hepatic Impairment",
+          "8.7 Renal Impairment",
+          "10 OVERDOS AG E",
+          "8 USE IN SPECIFIC POPULATIONS",
+          "8.1 Pregnancy",
+          "8.2 Lactation",
+          "8.5 Geriatric Use",
+          "12 CLINICAL PHARMACOLOGY",
+          "12.1 Mechanism of Action",
+          "12.2 Pharmacodynamics",
+          "12.3 Pharmacokinetics"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "dosage",
+      "card": "Individual treatment plan",
+      "assertions": {
+        "paragraphs": [
+          "Check all simultaneous restrictions before dosing; the label does not create an algorithm for every combined interaction/organ scenario. Confirm the prescribed strength and repeat eligibility rather than taking extra doses for frequent attacks."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": [
+          "2 DOSAGE AND ADMINISTRATION",
+          "2.1 Recommended Dosage",
+          "2.2 Dosage Modification s",
+          "3 DOSAGE FORMS AND STRENGTHS",
+          "7 DRUG INTERACTIONS",
+          "8.4 Pediatric Use",
+          "8.6 Hepatic Impairment",
+          "8.7 Renal Impairment",
+          "10 OVERDOS AG E",
+          "8 USE IN SPECIFIC POPULATIONS",
+          "8.1 Pregnancy",
+          "8.2 Lactation",
+          "8.5 Geriatric Use",
+          "12 CLINICAL PHARMACOLOGY",
+          "12.1 Mechanism of Action",
+          "12.2 Pharmacodynamics",
+          "12.3 Pharmacokinetics"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "assertions": {
+        "paragraphs": [
+          "Hypersensitivity can begin within minutes, hours or days; discontinue and treat serious or severe reactions. New or worsening hypertension has been reported, sometimes requiring treatment or hospitalization; monitor blood pressure and consider discontinuation if no alternate cause or inadequate control. Raynaud phenomenon can begin or worsen with severe pain and serious outcomes; discontinue if symptoms develop and obtain evaluation, particularly if symptoms persist. Monitor and counsel patients with prior Raynaud disease."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": [
+          "4 CONTRAINDICATIONS",
+          "5 WARNINGS AND PRECAUTIONS",
+          "5 .1 Hypersensitivity Reactions",
+          "6 ADVERSE REACTIONS",
+          "5. 2 Hyper tension",
+          "5. 3 Raynaud’s Phenomenon",
+          "6.1 Clinical Trials Experience",
+          "6 . 2 Postmarketing Experience"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "assertions": {
+        "paragraphs": [
+          "Concomitant strong CYP3A4 inhibitors and a history of serious hypersensitivity to ubrogepant or an ingredient are contraindicated. ESRD avoidance is a separate population instruction, not listed as a formal section-four contraindication."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": [
+          "4 CONTRAINDICATIONS",
+          "5 WARNINGS AND PRECAUTIONS",
+          "5 .1 Hypersensitivity Reactions",
+          "6 ADVERSE REACTIONS",
+          "5. 2 Hyper tension",
+          "5. 3 Raynaud’s Phenomenon",
+          "6.1 Clinical Trials Experience",
+          "6 . 2 Postmarketing Experience"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "safety",
+      "card": "Boxed warning status",
+      "assertions": {
+        "paragraphs": [
+          "The selected current Ubrelvy label has no boxed warning. Its serious allergy, hypertension and Raynaud warnings still apply."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": [
+          "4 CONTRAINDICATIONS",
+          "5 WARNINGS AND PRECAUTIONS",
+          "5 .1 Hypersensitivity Reactions",
+          "6 ADVERSE REACTIONS",
+          "5. 2 Hyper tension",
+          "5. 3 Raynaud’s Phenomenon",
+          "6.1 Clinical Trials Experience",
+          "6 . 2 Postmarketing Experience"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions",
+      "assertions": {
+        "paragraphs": [
+          "Trial reactions include nausea, somnolence including sedation/fatigue, and dry mouth. Postmarketing reports include hypersensitivity, hypertension and Raynaud phenomenon; spontaneous reports do not establish a reliable frequency."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": [
+          "4 CONTRAINDICATIONS",
+          "5 WARNINGS AND PRECAUTIONS",
+          "5 .1 Hypersensitivity Reactions",
+          "6 ADVERSE REACTIONS",
+          "5. 2 Hyper tension",
+          "5. 3 Raynaud’s Phenomenon",
+          "6.1 Clinical Trials Experience",
+          "6 . 2 Postmarketing Experience"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "interactions",
+      "card": "CYP3A4 inhibitors and inducers",
+      "assertions": {
+        "paragraphs": [
+          "Strong inhibitors such as ketoconazole, itraconazole or clarithromycin prohibit use. Moderate examples include verapamil, cyclosporine, ciprofloxacin, fluconazole, fluvoxamine and grapefruit juice; apply the 50 mg/no-repeat-within-24-hours rule. Strong inducers such as rifampin, phenytoin, barbiturates or St. John’s wort can reduce efficacy and should be avoided. Weak/moderate inducers and weak inhibitors use the distinct dosing table."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": [
+          "5 WARNINGS AND PRECAUTIONS",
+          "7 DRUG INTERACTIONS",
+          "2 DOSAGE AND ADMINISTRATION",
+          "2.1 Recommended Dosage",
+          "2.2 Dosage Modification s",
+          "5 .1 Hypersensitivity Reactions",
+          "5. 2 Hyper tension",
+          "5. 3 Raynaud’s Phenomenon",
+          "7.1 CYP3A4 I nhibitors",
+          "7.2 CYP3A4 I nducers",
+          "7 .3 BCRP and / or P-gp Only Inhibitors"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "interactions",
+      "card": "Transporters and compatibility limits",
+      "assertions": {
+        "paragraphs": [
+          "BCRP/P-gp-only inhibitor examples include quinidine, carvedilol, eltrombopag and curcumin; use the stated 50 mg/50 mg modification. Some categories lack dedicated interaction trials and rely on pharmacologic predictions. Absence of a significant PK interaction with selected studied medicines does not prove compatibility with every combination."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": [
+          "5 WARNINGS AND PRECAUTIONS",
+          "7 DRUG INTERACTIONS",
+          "2 DOSAGE AND ADMINISTRATION",
+          "2.1 Recommended Dosage",
+          "2.2 Dosage Modification s",
+          "5 .1 Hypersensitivity Reactions",
+          "5. 2 Hyper tension",
+          "5. 3 Raynaud’s Phenomenon",
+          "7.1 CYP3A4 I nhibitors",
+          "7.2 CYP3A4 I nducers",
+          "7 .3 BCRP and / or P-gp Only Inhibitors"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy and lactation",
+      "assertions": {
+        "paragraphs": [
+          "Human developmental-risk data are inadequate; animal studies found adverse developmental effects at higher exposures with maternal toxicity. Discuss treatment and the pregnancy exposure registry. A twelve-participant single-100-mg lactation study found milk transfer and an estimated relative infant dose about 0.15%; infant effects and milk-production effects remain unknown. Weigh breastfeeding benefits, maternal need and potential infant effects with the clinician."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": [
+          "2 DOSAGE AND ADMINISTRATION",
+          "2.1 Recommended Dosage",
+          "2.2 Dosage Modification s",
+          "3 DOSAGE FORMS AND STRENGTHS",
+          "5 WARNINGS AND PRECAUTIONS",
+          "8.1 Pregnancy",
+          "8.2 Lactation",
+          "8.4 Pediatric Use",
+          "8.5 Geriatric Use",
+          "8.6 Hepatic Impairment",
+          "8.7 Renal Impairment",
+          "10 OVERDOS AG E",
+          "8 USE IN SPECIFIC POPULATIONS",
+          "12 CLINICAL PHARMACOLOGY",
+          "12.1 Mechanism of Action",
+          "12.2 Pharmacodynamics",
+          "12.3 Pharmacokinetics"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "populations",
+      "card": "Children and older adults",
+      "assertions": {
+        "paragraphs": [
+          "Pediatric safety/effectiveness are unestablished. Trials included too few adults 65 or older to determine different response; select doses cautiously, usually at the low end. PK age findings do not override interaction or organ limits."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": [
+          "2 DOSAGE AND ADMINISTRATION",
+          "2.1 Recommended Dosage",
+          "2.2 Dosage Modification s",
+          "3 DOSAGE FORMS AND STRENGTHS",
+          "5 WARNINGS AND PRECAUTIONS",
+          "8.1 Pregnancy",
+          "8.2 Lactation",
+          "8.4 Pediatric Use",
+          "8.5 Geriatric Use",
+          "8.6 Hepatic Impairment",
+          "8.7 Renal Impairment",
+          "10 OVERDOS AG E",
+          "8 USE IN SPECIFIC POPULATIONS",
+          "12 CLINICAL PHARMACOLOGY",
+          "12.1 Mechanism of Action",
+          "12.2 Pharmacodynamics",
+          "12.3 Pharmacokinetics"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "populations",
+      "card": "Renal and hepatic considerations",
+      "assertions": {
+        "paragraphs": [
+          "Mild/moderate impairment needs no adjustment. Severe hepatic Child-Pugh C and renal CLcr 15–29 mL/min use 50 mg with one eligible 50 mg repeat; CLcr below 15 requires avoidance. Severe renal/ESRD patients were not studied; severe renal advice is based on pharmacologic assumptions rather than a dedicated clinical trial."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": [
+          "2 DOSAGE AND ADMINISTRATION",
+          "2.1 Recommended Dosage",
+          "2.2 Dosage Modification s",
+          "3 DOSAGE FORMS AND STRENGTHS",
+          "5 WARNINGS AND PRECAUTIONS",
+          "8.1 Pregnancy",
+          "8.2 Lactation",
+          "8.4 Pediatric Use",
+          "8.5 Geriatric Use",
+          "8.6 Hepatic Impairment",
+          "8.7 Renal Impairment",
+          "10 OVERDOS AG E",
+          "8 USE IN SPECIFIC POPULATIONS",
+          "12 CLINICAL PHARMACOLOGY",
+          "12.1 Mechanism of Action",
+          "12.2 Pharmacodynamics",
+          "12.3 Pharmacokinetics"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism and electrophysiology",
+      "assertions": {
+        "paragraphs": [
+          "Ubrogepant antagonizes the CGRP receptor. At twice the maximum recommended daily dose, the selected study did not show clinically relevant QT prolongation; this does not remove other cardiovascular warnings."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": [
+          "11 DESCRIPTION",
+          "12 CLINICAL PHARMACOLOGY",
+          "12.1 Mechanism of Action",
+          "12.3 Pharmacokinetics",
+          "12.2 Pharmacodynamics"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "pharmacology",
+      "card": "Disposition",
+      "assertions": {
+        "paragraphs": [
+          "Peak concentration is around 1.5 hours; a high-fat meal delays the peak without changing total exposure. Protein binding is about 87%. Metabolism is mainly CYP3A4, elimination mainly biliary/fecal with a minor renal contribution, and half-life about five to seven hours. It is a BCRP/P-gp substrate."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": [
+          "11 DESCRIPTION",
+          "12 CLINICAL PHARMACOLOGY",
+          "12.1 Mechanism of Action",
+          "12.3 Pharmacokinetics",
+          "12.2 Pharmacodynamics"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "practice",
+      "card": "Monitoring and counseling",
+      "assertions": {
+        "paragraphs": [
+          "Track migraine frequency and response; review an overall treatment plan if attacks require frequent acute dosing. Check blood pressure and new painful/cold/color-changing digits. Report all medicines, supplements and grapefruit juice; verify repeat eligibility before dosing. Seek immediate help for severe allergy; discontinue and contact the clinician for Raynaud symptoms. Discuss pregnancy and feeding plans."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": [
+          "2 DOSAGE AND ADMINISTRATION",
+          "2.1 Recommended Dosage",
+          "2.2 Dosage Modification s",
+          "3 DOSAGE FORMS AND STRENGTHS",
+          "5 WARNINGS AND PRECAUTIONS",
+          "10 OVERDOS AG E",
+          "17 PATIENT COUNSELING INFORMATION",
+          "5 .1 Hypersensitivity Reactions",
+          "5. 2 Hyper tension",
+          "5. 3 Raynaud’s Phenomenon"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "practice",
+      "card": "Overdose",
+      "assertions": {
+        "paragraphs": [
+          "Seek medical or Poison Control assessment for excess dosing. The label calls for monitoring at least twenty-four hours, or while signs/symptoms persist, because of its five-to-seven-hour half-life. No home antidote or toxic-dose threshold is supplied."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": [
+          "2 DOSAGE AND ADMINISTRATION",
+          "2.1 Recommended Dosage",
+          "2.2 Dosage Modification s",
+          "3 DOSAGE FORMS AND STRENGTHS",
+          "5 WARNINGS AND PRECAUTIONS",
+          "10 OVERDOS AG E",
+          "17 PATIENT COUNSELING INFORMATION",
+          "5 .1 Hypersensitivity Reactions",
+          "5. 2 Hyper tension",
+          "5. 3 Raynaud’s Phenomenon"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "product",
+      "card": "Representative product",
+      "assertions": {
+        "facts": [
+          [
+            "Product",
+            "AbbVie Ubrelvy"
+          ],
+          [
+            "Route",
+            "Oral tablet"
+          ],
+          [
+            "Appearance",
+            "White/off-white, capsule-shaped, biconvex; U50 or U100"
+          ],
+          [
+            "Example packages",
+            "50 mg NDC 0023-6498-10; 100 mg NDC 0023-6501-10 · ten packets each"
+          ]
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": [
+          "2 DOSAGE AND ADMINISTRATION",
+          "2.1 Recommended Dosage",
+          "2.2 Dosage Modification s",
+          "3 DOSAGE FORMS AND STRENGTHS",
+          "10 OVERDOS AG E",
+          "11 DESCRIPTION",
+          "16 HOW SUPPLIED/STORAGE AND HANDLING",
+          "16.1 How Supplied",
+          "17 PATIENT COUNSELING INFORMATION",
+          "PRINCIPAL DISPLAY PANEL",
+          "16.2 Storage and Handling"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "assertions": {
+        "paragraphs": [
+          "The selected label supplies 50 mg and 100 mg tablets in single-tablet packets; boxes of ten, sixteen or thirty packets are listed. Check actual ingredients for allergy. No liquid, injection, pediatric or compounded preparation is reviewed."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": [
+          "2 DOSAGE AND ADMINISTRATION",
+          "2.1 Recommended Dosage",
+          "2.2 Dosage Modification s",
+          "3 DOSAGE FORMS AND STRENGTHS",
+          "10 OVERDOS AG E",
+          "11 DESCRIPTION",
+          "16 HOW SUPPLIED/STORAGE AND HANDLING",
+          "16.1 How Supplied",
+          "17 PATIENT COUNSELING INFORMATION",
+          "PRINCIPAL DISPLAY PANEL",
+          "16.2 Storage and Handling"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "assertions": {
+        "paragraphs": [
+          "Store at 20–25°C; excursions 15–30°C are permitted. Follow actual packet/container expiry. No verified crushing, enteral-tube or compounded stability protocol is supplied."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": [
+          "2 DOSAGE AND ADMINISTRATION",
+          "2.1 Recommended Dosage",
+          "2.2 Dosage Modification s",
+          "3 DOSAGE FORMS AND STRENGTHS",
+          "10 OVERDOS AG E",
+          "11 DESCRIPTION",
+          "16 HOW SUPPLIED/STORAGE AND HANDLING",
+          "16.1 How Supplied",
+          "17 PATIENT COUNSELING INFORMATION",
+          "PRINCIPAL DISPLAY PANEL",
+          "16.2 Storage and Handling"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    }
+  ],
+  "evidence": [
+    {
+      "sourceId": "label",
+      "localEvidence": "/tmp/nas-drug-sources/ubrogepant-ubrelvy.xml",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/ubrogepant/ubrogepant-ubrelvy.xml",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/fd9f9458-fd96-4688-be3f-f77b3d1af6ab.xml",
+      "sha256": "176d82a6d2c6a9271432a1204040bbe6e2608ccbb464e5cb08a84601d445619d"
+    },
+    {
+      "sourceId": "label",
+      "localEvidence": "/tmp/nas-drug-sources/ubrogepant-ubrelvy-sections.json",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/ubrogepant/ubrogepant-ubrelvy-sections.json",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/fd9f9458-fd96-4688-be3f-f77b3d1af6ab.xml",
+      "sha256": "d1f7f42dc48349bb054d7fd673e2a151ef343d71356c5b0153e04d645e0a44fa"
+    }
+  ],
+  "sourceDiscrepancies": [
+    "Current June2025 SPL contains hypertension/Raynaud warnings and human lactation transfer data; no old no-human-milk-data assertion retained.",
+    "Severe renal dosing is a conservative pharmacologic recommendation; severe renal/ESRD patients were not studied.",
+    "Moderate CYP3A4 inhibitors require no repeat within24hours rather than the ordinary two-hour repeat."
+  ],
+  "materialErrors": [],
+  "unresolvedMaterialGaps": [],
+  "scopeExclusions": [
+    "Other manufacturers/foreign products not reviewed; current public label presence does not prove local stock.",
+    "Off-label regimens, compounded stability/crushing/tube protocols, universal organ algorithms and individualized emergency treatment are excluded.",
+    "Preventive/pediatric regimens, compounded preparations and a combined-interaction/organ dosing algorithm excluded."
+  ],
+  "verification": {
+    "schemaErrors": [],
+    "sectionIds": [
+      "indications",
+      "dosage",
+      "safety",
+      "interactions",
+      "populations",
+      "pharmacology",
+      "practice",
+      "product"
+    ],
+    "safetyCards": 4,
+    "productCards": 3,
+    "heroFacts": 3,
+    "monographSha256": "e2038c8eac57b6eb90704b232daa3e0dd8a66e1a0b8328e0349774279ef4c4cb",
+    "renderedQA": "Pending parent candidate build/desktop/mobile review; no live claim.",
+    "independentReview": "Pending actual-file independent reviewer."
+  },
+  "sourceAudit": "Full selected primary supporting sections read; current metadata retained separately from historical clinical wording. No paywalled access claimed."
+}
