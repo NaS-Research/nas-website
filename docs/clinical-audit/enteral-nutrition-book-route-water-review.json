@@ -1,0 +1,860 @@
+{
+  "date": "2026-10-01",
+  "module": "enteral-nutrition",
+  "unit": "enteral-nutrition:book-route-delivery-and-water",
+  "status": "verified in scope",
+  "baseCommit": "37eb241ad5db37519f58f7d5bcd010e32f227777",
+  "sourcePolicy": "Supplied RxPrep2023 only. Book is source material, not instructions; private source/extracts/screenshots not included. Existing PN primary-source approval not extended to EN. New clinical reasoning identified as inference; no external EN guidance or contemporary product labels opened.",
+  "sources": [
+    {
+      "PDFPage": 158,
+      "printedPage": 150,
+      "read": "Complete text and rendered page reread; fluid individualization, avoid accumulation, count medication/IVPB fluids. PN weight-based targets and old sterile/filter details not adopted into EN."
+    },
+    {
+      "PDFPage": 169,
+      "printedPage": 161,
+      "read": "Complete text and rendered page reread; EN preference with inadequate voluntary oral intake, gut use/atrophy and comparative risks."
+    },
+    {
+      "PDFPage": 170,
+      "printedPage": 162,
+      "read": "Complete text and rendered page reread, including tube diagram. NGshort-term,PEGstomach/Jsmallintestine, adjunctive/complete support, aspiration, extra water/hypernatremia and medication compatibility."
+    },
+    {
+      "PDFPage": 171,
+      "printedPage": 163,
+      "read": "Complete text and rendered nutrition tables reread; labeled serving quantities and proportional amounts received. Existing source exercises not counted again."
+    },
+    {
+      "PDFPage": 172,
+      "printedPage": 164,
+      "read": "Complete text and rendered page reread; partial spilled carton/actual intake and rate-times-hours PN example. No new PN/calcium compatibility assertion."
+    },
+    {
+      "PDFPage": 292,
+      "printedPage": 284,
+      "read": "Complete text and rendered page read as a narrow EN hydration dependency; dehydration with low output/BUN:SCr finding, renal sodium/water handling. No Chapter18 closure or new AKI definition/threshold adopted."
+    },
+    {
+      "PDFPage": 294,
+      "printedPage": 286,
+      "read": "Complete text and rendering read; BUN may increase with renal dysfunction or dehydration and must not be used alone. No new CrCl/GFR formula, classification or dose recommendation adopted."
+    }
+  ],
+  "questionReview": [
+    {
+      "question": {
+        "id": "enteral-nutrition-006",
+        "question": "Why should safe oral intake be reassessed before placing a feeding tube?",
+        "choices": [
+          "Enteral tube feeding should not replace an oral diet that safely meets needs",
+          "Tube placement is indicated whenever an oral nutrition supplement is used",
+          "Tube feeding prevents aspiration regardless of swallowing function",
+          "Tube placement resolves drug-nutrient interactions without medication review"
+        ],
+        "answer": 0,
+        "rationale": "Tube feeding supports patients who cannot meet their needs by voluntary oral intake. If safe oral intake already meets those needs, a feeding tube is not indicated solely to deliver nutrition. A tube does not eliminate aspiration risk or medication interactions.",
+        "reviewHref": "#enteral-decision"
+      },
+      "PDFPages": [
+        169,
+        170
+      ],
+      "review": "Oral adequacy is the stated prerequisite; safe oral nutrition that meets needs does not require a tube solely for nutrition. Tube aspiration and medication interactions remain possible. Options test route-indication and safety misconceptions. Full prompt, all four choices, answer key, rationale and stable remediation anchor individually reviewed and rendered."
+    },
+    {
+      "question": {
+        "id": "enteral-nutrition-007",
+        "question": "Which outcome is a recognized advantage of enteral nutrition?",
+        "choices": [
+          "Preservation of gastrointestinal structure and function",
+          "Avoidance of intestinal absorption because nutrients enter the bloodstream directly",
+          "Prevention of aspiration because the feeding tube replaces airway protection",
+          "Provision of the full water requirement whenever the calorie target is met"
+        ],
+        "answer": 0,
+        "rationale": "Enteral nutrition uses the gut and helps prevent intestinal atrophy. Parenteral nutrition bypasses the gut. Enteral feeding still carries aspiration risk, and meeting calorie needs does not establish adequate water delivery.",
+        "reviewHref": "#enteral-decision"
+      },
+      "PDFPages": [
+        158,
+        169,
+        170
+      ],
+      "review": "Gut use prevents atrophy; EN does not deliver nutrients directly into blood, establish airway protection or prove adequate water by calorie delivery. Full prompt, all four choices, answer key, rationale and stable remediation anchor individually reviewed and rendered."
+    },
+    {
+      "question": {
+        "id": "enteral-nutrition-008",
+        "question": "What is the most defensible reason to initiate enteral nutrition in a malnourished patient?",
+        "choices": [
+          "Oral intake is inadequate and the gastrointestinal tract is functional",
+          "Adequate safe oral intake is present, but a tube formula is more convenient",
+          "A central venous line is available, even though safe oral intake meets needs",
+          "One low albumin result is present, even though safe oral intake meets needs"
+        ],
+        "answer": 0,
+        "rationale": "Enteral support is favored when voluntary oral intake cannot meet nutritional needs and the gut is usable. Formula convenience, an existing intravenous line, or an isolated laboratory result does not override the stated ability to meet needs safely by mouth.",
+        "reviewHref": "#enteral-decision"
+      },
+      "PDFPages": [
+        169
+      ],
+      "review": "Key meets the book oral-inadequacy/usable-gut criteria. Distractors explicitly stipulate adequate safe oral intake so convenience, a central line or a single laboratory value does not establish the indicated nutrition route. No albumin diagnostic criterion introduced. Full prompt, all four choices, answer key, rationale and stable remediation anchor individually reviewed and rendered."
+    },
+    {
+      "question": {
+        "id": "enteral-nutrition-015",
+        "question": "Which route is most appropriate when long-term gastric feeding is expected and gastric function is stable?",
+        "choices": [
+          "A gastrostomy after individualized procedural assessment",
+          "A jejunostomy solely because a longer course automatically requires a jejunal destination",
+          "Central parenteral nutrition solely because the expected feeding duration is long",
+          "A short-term nasal route without reconsidering access as long-term support is planned"
+        ],
+        "answer": 0,
+        "rationale": "A gastrostomy provides access through the skin to the stomach, whereas a jejunostomy ends in the small intestine. Nasogastric tubes are primarily short-term access. For the stated long-term gastric plan, consider gastrostomy after individualized assessment; duration alone does not establish a need to bypass a usable stomach.",
+        "reviewHref": "#access-route"
+      },
+      "PDFPages": [
+        169,
+        170
+      ],
+      "review": "Duration and destination interpreted together with the PEG/J anatomy in the text and diagram. Considering gastric percutaneous access for the explicitly stated long-term gastric plan is a qualified anatomical/clinical inference, not a quoted duration guideline. No day cutoff or mandatory jejunal conversion. The book sentence combining longer duration with farther GI placement is imprecise; retain individualized assessment and source qualification. Full prompt, all four choices, answer key, rationale and stable remediation anchor individually reviewed and rendered."
+    },
+    {
+      "question": {
+        "id": "enteral-nutrition-016",
+        "question": "Which statement about tube selection is most accurate?",
+        "choices": [
+          "Expected duration, anatomy, aspiration risk, gastric function, and medication needs all matter",
+          "Expected duration alone determines whether the tube must end in the jejunum",
+          "Gastric and jejunal tube tips are interchangeable once the same formula is selected",
+          "Choosing a suitable feeding formula removes the need to review medication compatibility"
+        ],
+        "answer": 0,
+        "rationale": "Assess both the intended duration and the actual feeding destination. Nasogastric access is primarily short term; gastrostomy and jejunostomy reach different organs. Aspiration remains a risk, and medications require product-specific compatibility and absorption review.",
+        "reviewHref": "#access-route"
+      },
+      "PDFPages": [
+        170
+      ],
+      "review": "Synthesis of duration, gastric versus jejunal anatomy, aspiration and product-specific medication/absorption warnings. No external tube-selection algorithm or claim that aspiration is eliminated. Full prompt, all four choices, answer key, rationale and stable remediation anchor individually reviewed and rendered."
+    },
+    {
+      "question": {
+        "id": "enteral-nutrition-018",
+        "question": "Which additional information is needed to calculate daily formula volume from an order that states only feed at 65 mL per hour?",
+        "choices": [
+          "The daily duration or volume target",
+          "The formula calorie density without a feeding duration",
+          "The water percentage on the formula label without a feeding duration",
+          "The formula bag capacity without a scheduled volume or feeding duration"
+        ],
+        "answer": 0,
+        "rationale": "Daily volume equals rate multiplied by the hours actually delivered. Formula energy density, water percentage, or bag capacity alone does not supply the missing daily duration or volume target.",
+        "reviewHref": "#delivery-prescription"
+      },
+      "PDFPages": [
+        172
+      ],
+      "review": "Prompt narrowed to calculating daily formula volume to remove ambiguity about many missing order components. Rate times actual feeding hours supplies volume; nutrient density, water percentage or bag capacity alone does not supply time. Dimensional reasoning extends the book rate-times24h worked example; no new patient-specific rate prescribed. Full prompt, all four choices, answer key, rationale and stable remediation anchor individually reviewed and rendered."
+    },
+    {
+      "question": {
+        "id": "enteral-nutrition-021",
+        "question": "Why should actual delivered volume be audited?",
+        "choices": [
+          "Interruptions can make prescribed and received nutrition substantially different",
+          "A correctly programmed hourly rate is sufficient to establish the daily intake",
+          "The formula container label establishes intake even when part is not delivered",
+          "Ordered calories can substitute for checking how much formula reached the patient"
+        ],
+        "answer": 0,
+        "rationale": "Use the amount actually received, not just the order or nominal container amount. If feeding is interrupted or part of a serving is spilled, those portions are not delivered nutrition. The displayed rate must be interpreted with actual feeding time and volume.",
+        "reviewHref": "#delivery-prescription"
+      },
+      "PDFPages": [
+        171,
+        172
+      ],
+      "review": "Book partial-serving/spill exercise counts actual intake; conditional interruption example follows volume conservation. No prevalence assertion for common holds or new volume-based protocol. Full prompt, all four choices, answer key, rationale and stable remediation anchor individually reviewed and rendered."
+    },
+    {
+      "question": {
+        "id": "enteral-nutrition-030",
+        "question": "What determines total daily water delivery?",
+        "choices": [
+          "Formula free water plus water delivered in flushes, medication fluids, oral intake, and intravenous sources",
+          "The full formula volume plus its free-water volume as a second contribution",
+          "Formula free water and scheduled flushes, excluding medication and intravenous fluids",
+          "The prescribed daily water target regardless of what was actually delivered"
+        ],
+        "answer": 0,
+        "rationale": "Add the water delivered from each source once, using formula water content rather than treating all formula volume as water. Medication fluids, including intravenous sources, contribute to the overall intake. Compare actual delivery with the individualized target; a written target is not evidence that the water was received.",
+        "reviewHref": "#formula-selection"
+      },
+      "PDFPages": [
+        158,
+        170
+      ],
+      "review": "Water in formula plus separate delivered fluid sources, each counted once. Medication/IVPB overall-volume principle on PN page is applied as conservation of intake across routes; no PN weight-based daily requirement is imported into EN. Full prompt, all four choices, answer key, rationale and stable remediation anchor individually reviewed and rendered."
+    },
+    {
+      "question": {
+        "id": "enteral-nutrition-049",
+        "question": "Why should ordered and delivered volumes both be charted?",
+        "choices": [
+          "A patient can receive substantially less nutrition than prescribed",
+          "The ordered daily volume can be charted as delivered whenever the pump rate is correct",
+          "The full bag volume can be charted as intake even if the patient receives only part",
+          "The order can replace the intake record once the correct formula has been selected"
+        ],
+        "answer": 0,
+        "rationale": "Separate the intended daily volume from the volume actually received. Rate, container size, and formula selection do not prove delivery. Comparing the two records reveals a deficit that would be hidden if ordered volume were copied into the intake record.",
+        "reviewHref": "#monitoring-complications"
+      },
+      "PDFPages": [
+        171,
+        172
+      ],
+      "review": "Ordered-versus-received charting inference follows actual-versus-nominal serving calculation. Retained existing ID distinct from q021 intake-audit reason; no new duplicate question added. Order/rate/container alone does not prove intake. Full prompt, all four choices, answer key, rationale and stable remediation anchor individually reviewed and rendered."
+    },
+    {
+      "question": {
+        "id": "enteral-nutrition-092",
+        "question": "A patient on a dense formula becomes hypernatremic with rising BUN and low urine output. What is the best next action?",
+        "choices": [
+          "Recalculate all water sources, losses, kidney function, and flush delivery",
+          "Double the water flush volume immediately without assessing kidney function or the total intake",
+          "Reduce the formula protein immediately because rising BUN proves excess protein delivery",
+          "Change to a lower-calorie formula while leaving the water budget and delivery record unreviewed"
+        ],
+        "answer": 0,
+        "rationale": "Inadequate fluid intake can cause hypernatremia, and dehydration may accompany rising BUN and reduced urine output. Kidney dysfunction can also raise BUN, so the findings do not prove that formula density is the sole cause. Promptly reassess hydration, all delivered fluids, losses, and renal status before choosing a patient-specific correction.",
+        "reviewHref": "#formula-selection"
+      },
+      "PDFPages": [
+        158,
+        170,
+        292,
+        294
+      ],
+      "review": "Hypernatremia with low intake; dehydration can accompany decreased urine output and elevated BUN, while renal dysfunction can elevate BUN too. Prompt clinical reassessment is a safety inference from these findings and fluid-accumulation warning. No sole-cause diagnosis, protein adjustment, sodium-correction rate or fixed extra water inferred. Full prompt, all four choices, answer key, rationale and stable remediation anchor individually reviewed and rendered."
+    },
+    {
+      "question": {
+        "id": "enteral-nutrition-099",
+        "question": "A feeding pump shows the prescribed rate, but only 55 percent of the daily target has been delivered for three days. What is the best next action?",
+        "choices": [
+          "Audit interruptions and redesign the safe delivery schedule",
+          "Document the full daily target because the displayed hourly rate matches the order",
+          "Increase the rate enough to replace the deficit without assessing tolerance or access",
+          "Change the formula concentration without checking why the prescribed volume was not delivered"
+        ],
+        "answer": 0,
+        "rationale": "The amount actually delivered determines nutrition received; a correct displayed rate does not prove that the scheduled volume reached the patient. Review feeding time, interruptions, and the delivery record, then choose a safe revised plan. Do not compensate automatically without considering the clinical feeding plan.",
+        "reviewHref": "#delivery-prescription"
+      },
+      "PDFPages": [
+        172
+      ],
+      "review": "Actual volume determines intake despite a programmed rate. Conditional schedule review/safety inference; no automatic catch-up algorithm, new rate or new percentage calculation.55percent/three days are given scenario data. Full prompt, all four choices, answer key, rationale and stable remediation anchor individually reviewed and rendered."
+    },
+    {
+      "question": {
+        "id": "enteral-nutrition-105",
+        "question": "A home patient uses a 2 kcal per mL formula and receives no scheduled water beyond medication flushes. Which interpretation or management plan is most defensible?",
+        "choices": [
+          "Calculate actual water from the formula and all other sources, then determine supplemental water against an individualized target",
+          "Treat the entire formula volume as water and ignore the product water content",
+          "Calculate supplemental water from formula water alone without counting medication flushes",
+          "Assume that meeting the calorie target establishes adequate daily water delivery"
+        ],
+        "answer": 0,
+        "rationale": "The 2 kcal per mL value describes energy density, not the formula water content or the patient's water requirement. Use product water data and the amount actually delivered, count medication flushes and any other intake once, and compare the total with an individualized target. Prescribe additional water as needed rather than inferring a fixed amount from calorie density alone.",
+        "reviewHref": "#formula-selection"
+      },
+      "PDFPages": [
+        158,
+        170,
+        171,
+        172
+      ],
+      "review": "Energy density is a separate label quantity from water content; actual product-water delivery and all other sources must be counted against an individualized target. Fixed supplemental water is not determined by density alone. Existing 2kcal/mL scenario and ID preserved rather than substituted with easier question. Full prompt, all four choices, answer key, rationale and stable remediation anchor individually reviewed and rendered."
+    }
+  ],
+  "teachingReview": [
+    {
+      "PDFPages": [
+        170
+      ],
+      "lesson": "access-route",
+      "heading": "Separate duration from destination",
+      "body": "Nasogastric tubes are primarily used for short-term support. A longer anticipated course calls for reassessment of access, but duration and tube destination are separate questions: a gastrostomy reaches the stomach, while a jejunostomy reaches the small intestine. Longer support does not by itself mean that the tube must end in the jejunum. Check whether the stomach is usable, identify the actual tube tip, and assess the patient before choosing the access procedure. Tube feeding can supplement other intake or provide complete nutrition support.",
+      "review": "Complete original body individually compared with source. Duration/destination and full-budget assessment are qualified syntheses of stated anatomy, fluid principles and conservation; no numerical clinical target or protocol introduced."
+    },
+    {
+      "PDFPages": [
+        158,
+        170
+      ],
+      "lesson": "formula-selection",
+      "heading": "Account for each water source once",
+      "body": "In a hypothetical water-budget exercise, 1,200 mL of formula labeled 80% water provides 960 mL of water. Add 300 mL of scheduled water flushes, 40 mL of separate medication water, and 100 mL of oral water: 1,400 mL total. Against a stated 1,500 mL daily target, 100 mL remains. These amounts are separate contributions, so do not count a medication flush again as a scheduled flush or add the entire formula volume a second time. Use what was actually delivered. The stated label and target are exercise inputs; this arithmetic does not establish a patient-specific water requirement or a safe flush schedule.",
+      "review": "Complete original body individually compared with source. Duration/destination and full-budget assessment are qualified syntheses of stated anatomy, fluid principles and conservation; no numerical clinical target or protocol introduced."
+    },
+    {
+      "PDFPages": [
+        158,
+        170,
+        292,
+        294
+      ],
+      "lesson": "formula-selection",
+      "heading": "Reassess hydration signals in context",
+      "body": "Inadequate fluid intake during tube feeding can contribute to hypernatremia. Rising blood urea nitrogen (BUN) and reduced urine output also warrant assessment: dehydration can raise BUN, but impaired kidney function can do so as well. Review formula water content, delivered feeding volume, flushes, medication fluids, other intake, losses, and renal status instead of diagnosing the cause from formula density or BUN alone. Tailor the correction to the patient; adding fluid without assessing the total intake and the risk of fluid accumulation can be inappropriate.",
+      "review": "Complete original body individually compared with source. Duration/destination and full-budget assessment are qualified syntheses of stated anatomy, fluid principles and conservation; no numerical clinical target or protocol introduced."
+    }
+  ],
+  "sourceQualifications": [
+    {
+      "topic": "Long-term access wording",
+      "PDFPage": 170,
+      "finding": "Book sentence groups longer support and unusable stomach with farther GI placement; adjoining anatomy and diagram show gastrostomy ends in stomach and jejunostomy in small intestine. Public teaching separates duration and destination with individualized assessment rather than treating duration as mandatory jejunal placement. Specific contemporary procedural indications remain within unreviewed original guidance."
+    },
+    {
+      "topic": "Renal dependency scope",
+      "PDFPage": 292,
+      "finding": "AKI definition box describes non-renal conditions imprecisely. Only dehydration-associated findings and renal water handling used here; the definition is not introduced or considered verified. Full renal module/source discrepancy audit remains later."
+    },
+    {
+      "topic": "Water targets",
+      "PDFPages": [
+        158,
+        170
+      ],
+      "finding": "PN-specific weight formulas are not assigned as universal EN targets. New exercise label and target are hypothetical stated inputs; final clinical targets/flush rates require patient-specific assessment."
+    }
+  ],
+  "preservation": {
+    "all108IdsKeysAnchors": true,
+    "107PromptsUnchangedOneClarified": true,
+    "96OtherQuestionObjectsUnchanged": true,
+    "allPrior50SourceVerifiedBankObjectsUnchanged": true,
+    "all33OriginalBodiesUnchanged": true,
+    "allMetadataEmbeddedChecksAndCumulativeUnchanged": true
+  },
+  "calculationEvidence": {
+    "formulaWater": "960.00",
+    "separateOtherWater": "440",
+    "totalWater": "1400.00",
+    "remainingToStatedTarget": "100.00",
+    "inputs": "Hypothetical label fraction and target; no clinical target or water schedule established.",
+    "newWorkedSectionChecks": 1,
+    "newDistinctAssessmentChecks": 0,
+    "runningAssessmentChecks": 674,
+    "runningSeparateSourceExamples": 98
+  },
+  "validation": {
+    "isolatedBuild": {
+      "staticPages": 567,
+      "exitCode": 0,
+      "logSha256": "6e0171235a5c5c194a1ae534e0e1ab532063a4b172d7e3c1f147b93511aada32"
+    },
+    "focusedStructural": {
+      "modules": 1,
+      "questions": 108,
+      "hardErrors": [],
+      "sourceGaps": [],
+      "sizeAdvisories": [],
+      "thinLessons": [],
+      "weakestModules": [
+        {
+          "module": "enteral-nutrition",
+          "lessons": 6,
+          "questions": 108,
+          "minimumLessonCoverage": 9
+        }
+      ]
+    },
+    "structuralMeaning": "References/shape only; does not establish clinical source support.",
+    "technical": {
+      "status": "passed",
+      "bank": 108,
+      "bodies": 36,
+      "changedQuestions": [
+        {
+          "id": "enteral-nutrition-006",
+          "question": "Why should safe oral intake be reassessed before placing a feeding tube?",
+          "choices": [
+            "Enteral tube feeding should not replace an oral diet that safely meets needs",
+            "Tube placement is indicated whenever an oral nutrition supplement is used",
+            "Tube feeding prevents aspiration regardless of swallowing function",
+            "Tube placement resolves drug-nutrient interactions without medication review"
+          ],
+          "answer": 0,
+          "rationale": "Tube feeding supports patients who cannot meet their needs by voluntary oral intake. If safe oral intake already meets those needs, a feeding tube is not indicated solely to deliver nutrition. A tube does not eliminate aspiration risk or medication interactions.",
+          "reviewHref": "#enteral-decision"
+        },
+        {
+          "id": "enteral-nutrition-007",
+          "question": "Which outcome is a recognized advantage of enteral nutrition?",
+          "choices": [
+            "Preservation of gastrointestinal structure and function",
+            "Avoidance of intestinal absorption because nutrients enter the bloodstream directly",
+            "Prevention of aspiration because the feeding tube replaces airway protection",
+            "Provision of the full water requirement whenever the calorie target is met"
+          ],
+          "answer": 0,
+          "rationale": "Enteral nutrition uses the gut and helps prevent intestinal atrophy. Parenteral nutrition bypasses the gut. Enteral feeding still carries aspiration risk, and meeting calorie needs does not establish adequate water delivery.",
+          "reviewHref": "#enteral-decision"
+        },
+        {
+          "id": "enteral-nutrition-008",
+          "question": "What is the most defensible reason to initiate enteral nutrition in a malnourished patient?",
+          "choices": [
+            "Oral intake is inadequate and the gastrointestinal tract is functional",
+            "Adequate safe oral intake is present, but a tube formula is more convenient",
+            "A central venous line is available, even though safe oral intake meets needs",
+            "One low albumin result is present, even though safe oral intake meets needs"
+          ],
+          "answer": 0,
+          "rationale": "Enteral support is favored when voluntary oral intake cannot meet nutritional needs and the gut is usable. Formula convenience, an existing intravenous line, or an isolated laboratory result does not override the stated ability to meet needs safely by mouth.",
+          "reviewHref": "#enteral-decision"
+        },
+        {
+          "id": "enteral-nutrition-015",
+          "question": "Which route is most appropriate when long-term gastric feeding is expected and gastric function is stable?",
+          "choices": [
+            "A gastrostomy after individualized procedural assessment",
+            "A jejunostomy solely because a longer course automatically requires a jejunal destination",
+            "Central parenteral nutrition solely because the expected feeding duration is long",
+            "A short-term nasal route without reconsidering access as long-term support is planned"
+          ],
+          "answer": 0,
+          "rationale": "A gastrostomy provides access through the skin to the stomach, whereas a jejunostomy ends in the small intestine. Nasogastric tubes are primarily short-term access. For the stated long-term gastric plan, consider gastrostomy after individualized assessment; duration alone does not establish a need to bypass a usable stomach.",
+          "reviewHref": "#access-route"
+        },
+        {
+          "id": "enteral-nutrition-016",
+          "question": "Which statement about tube selection is most accurate?",
+          "choices": [
+            "Expected duration, anatomy, aspiration risk, gastric function, and medication needs all matter",
+            "Expected duration alone determines whether the tube must end in the jejunum",
+            "Gastric and jejunal tube tips are interchangeable once the same formula is selected",
+            "Choosing a suitable feeding formula removes the need to review medication compatibility"
+          ],
+          "answer": 0,
+          "rationale": "Assess both the intended duration and the actual feeding destination. Nasogastric access is primarily short term; gastrostomy and jejunostomy reach different organs. Aspiration remains a risk, and medications require product-specific compatibility and absorption review.",
+          "reviewHref": "#access-route"
+        },
+        {
+          "id": "enteral-nutrition-018",
+          "question": "Which additional information is needed to calculate daily formula volume from an order that states only feed at 65 mL per hour?",
+          "choices": [
+            "The daily duration or volume target",
+            "The formula calorie density without a feeding duration",
+            "The water percentage on the formula label without a feeding duration",
+            "The formula bag capacity without a scheduled volume or feeding duration"
+          ],
+          "answer": 0,
+          "rationale": "Daily volume equals rate multiplied by the hours actually delivered. Formula energy density, water percentage, or bag capacity alone does not supply the missing daily duration or volume target.",
+          "reviewHref": "#delivery-prescription"
+        },
+        {
+          "id": "enteral-nutrition-021",
+          "question": "Why should actual delivered volume be audited?",
+          "choices": [
+            "Interruptions can make prescribed and received nutrition substantially different",
+            "A correctly programmed hourly rate is sufficient to establish the daily intake",
+            "The formula container label establishes intake even when part is not delivered",
+            "Ordered calories can substitute for checking how much formula reached the patient"
+          ],
+          "answer": 0,
+          "rationale": "Use the amount actually received, not just the order or nominal container amount. If feeding is interrupted or part of a serving is spilled, those portions are not delivered nutrition. The displayed rate must be interpreted with actual feeding time and volume.",
+          "reviewHref": "#delivery-prescription"
+        },
+        {
+          "id": "enteral-nutrition-030",
+          "question": "What determines total daily water delivery?",
+          "choices": [
+            "Formula free water plus water delivered in flushes, medication fluids, oral intake, and intravenous sources",
+            "The full formula volume plus its free-water volume as a second contribution",
+            "Formula free water and scheduled flushes, excluding medication and intravenous fluids",
+            "The prescribed daily water target regardless of what was actually delivered"
+          ],
+          "answer": 0,
+          "rationale": "Add the water delivered from each source once, using formula water content rather than treating all formula volume as water. Medication fluids, including intravenous sources, contribute to the overall intake. Compare actual delivery with the individualized target; a written target is not evidence that the water was received.",
+          "reviewHref": "#formula-selection"
+        },
+        {
+          "id": "enteral-nutrition-049",
+          "question": "Why should ordered and delivered volumes both be charted?",
+          "choices": [
+            "A patient can receive substantially less nutrition than prescribed",
+            "The ordered daily volume can be charted as delivered whenever the pump rate is correct",
+            "The full bag volume can be charted as intake even if the patient receives only part",
+            "The order can replace the intake record once the correct formula has been selected"
+          ],
+          "answer": 0,
+          "rationale": "Separate the intended daily volume from the volume actually received. Rate, container size, and formula selection do not prove delivery. Comparing the two records reveals a deficit that would be hidden if ordered volume were copied into the intake record.",
+          "reviewHref": "#monitoring-complications"
+        },
+        {
+          "id": "enteral-nutrition-092",
+          "question": "A patient on a dense formula becomes hypernatremic with rising BUN and low urine output. What is the best next action?",
+          "choices": [
+            "Recalculate all water sources, losses, kidney function, and flush delivery",
+            "Double the water flush volume immediately without assessing kidney function or the total intake",
+            "Reduce the formula protein immediately because rising BUN proves excess protein delivery",
+            "Change to a lower-calorie formula while leaving the water budget and delivery record unreviewed"
+          ],
+          "answer": 0,
+          "rationale": "Inadequate fluid intake can cause hypernatremia, and dehydration may accompany rising BUN and reduced urine output. Kidney dysfunction can also raise BUN, so the findings do not prove that formula density is the sole cause. Promptly reassess hydration, all delivered fluids, losses, and renal status before choosing a patient-specific correction.",
+          "reviewHref": "#formula-selection"
+        },
+        {
+          "id": "enteral-nutrition-099",
+          "question": "A feeding pump shows the prescribed rate, but only 55 percent of the daily target has been delivered for three days. What is the best next action?",
+          "choices": [
+            "Audit interruptions and redesign the safe delivery schedule",
+            "Document the full daily target because the displayed hourly rate matches the order",
+            "Increase the rate enough to replace the deficit without assessing tolerance or access",
+            "Change the formula concentration without checking why the prescribed volume was not delivered"
+          ],
+          "answer": 0,
+          "rationale": "The amount actually delivered determines nutrition received; a correct displayed rate does not prove that the scheduled volume reached the patient. Review feeding time, interruptions, and the delivery record, then choose a safe revised plan. Do not compensate automatically without considering the clinical feeding plan.",
+          "reviewHref": "#delivery-prescription"
+        },
+        {
+          "id": "enteral-nutrition-105",
+          "question": "A home patient uses a 2 kcal per mL formula and receives no scheduled water beyond medication flushes. Which interpretation or management plan is most defensible?",
+          "choices": [
+            "Calculate actual water from the formula and all other sources, then determine supplemental water against an individualized target",
+            "Treat the entire formula volume as water and ignore the product water content",
+            "Calculate supplemental water from formula water alone without counting medication flushes",
+            "Assume that meeting the calorie target establishes adequate daily water delivery"
+          ],
+          "answer": 0,
+          "rationale": "The 2 kcal per mL value describes energy density, not the formula water content or the patient's water requirement. Use product water data and the amount actually delivered, count medication flushes and any other intake once, and compare the total with an individualized target. Prescribe additional water as needed rather than inferring a fixed amount from calorie density alone.",
+          "reviewHref": "#formula-selection"
+        }
+      ],
+      "newQuestions": [],
+      "changedBody": [],
+      "addedBodies": [
+        {
+          "lesson": "access-route",
+          "heading": "Separate duration from destination",
+          "body": "Nasogastric tubes are primarily used for short-term support. A longer anticipated course calls for reassessment of access, but duration and tube destination are separate questions: a gastrostomy reaches the stomach, while a jejunostomy reaches the small intestine. Longer support does not by itself mean that the tube must end in the jejunum. Check whether the stomach is usable, identify the actual tube tip, and assess the patient before choosing the access procedure. Tube feeding can supplement other intake or provide complete nutrition support."
+        },
+        {
+          "lesson": "formula-selection",
+          "heading": "Account for each water source once",
+          "body": "In a hypothetical water-budget exercise, 1,200 mL of formula labeled 80% water provides 960 mL of water. Add 300 mL of scheduled water flushes, 40 mL of separate medication water, and 100 mL of oral water: 1,400 mL total. Against a stated 1,500 mL daily target, 100 mL remains. These amounts are separate contributions, so do not count a medication flush again as a scheduled flush or add the entire formula volume a second time. Use what was actually delivered. The stated label and target are exercise inputs; this arithmetic does not establish a patient-specific water requirement or a safe flush schedule."
+        },
+        {
+          "lesson": "formula-selection",
+          "heading": "Reassess hydration signals in context",
+          "body": "Inadequate fluid intake during tube feeding can contribute to hypernatremia. Rising blood urea nitrogen (BUN) and reduced urine output also warrant assessment: dehydration can raise BUN, but impaired kidney function can do so as well. Review formula water content, delivered feeding volume, flushes, medication fluids, other intake, losses, and renal status instead of diagnosing the cause from formula density or BUN alone. Tailor the correction to the patient; adding fluid without assessing the total intake and the risk of fluid accumulation can be inappropriate."
+        }
+      ],
+      "preservation": {
+        "all108IdsKeysAnchors": true,
+        "107PromptsUnchangedOneClarified": true,
+        "96OtherQuestionObjectsUnchanged": true,
+        "allPrior50SourceVerifiedBankObjectsUnchanged": true,
+        "all33OriginalBodiesUnchanged": true,
+        "allMetadataEmbeddedChecksAndCumulativeUnchanged": true
+      },
+      "workedWaterBudget": {
+        "formulaWater": "960.00",
+        "separateOtherWater": "440",
+        "totalWater": "1400.00",
+        "remainingToStatedTarget": "100.00",
+        "inputs": "Hypothetical label fraction and target; no clinical target or water schedule established.",
+        "newWorkedSectionChecks": 1,
+        "newDistinctAssessmentChecks": 0,
+        "runningAssessmentChecks": 674,
+        "runningSeparateSourceExamples": 98
+      },
+      "contentHashes": {
+        "src/data/modules/enteralNutrition.js": "d43c72c441839e07c137f4150ad801bfc0ab647bf475840c04bcc3bdf1850b8a",
+        "src/data/questionBanks/enteralNutrition.js": "4e2c110a108cb47f1a0f49a580b63be17d81567216d017269716c38c39fe5446"
+      }
+    },
+    "browser": {
+      "status": "passed",
+      "results": [
+        {
+          "width": 1440,
+          "renderedBodies": 36,
+          "newOrRevisedBodies": 3,
+          "retainedBody": 0,
+          "bankItemsCorrectAndWrong": 12,
+          "currentCumulativeRuntimeItems": 5,
+          "clinicalCumulativeItemsPendingSource": [
+            "enteral-nutrition-028",
+            "enteral-nutrition-090"
+          ],
+          "remediationAndProgress": true
+        },
+        {
+          "width": 390,
+          "renderedBodies": 36,
+          "newOrRevisedBodies": 3,
+          "retainedBody": 0,
+          "bankItemsCorrectAndWrong": 12,
+          "currentCumulativeRuntimeItems": 5,
+          "clinicalCumulativeItemsPendingSource": [
+            "enteral-nutrition-028",
+            "enteral-nutrition-090"
+          ],
+          "remediationAndProgress": true
+        }
+      ],
+      "pageErrors": []
+    },
+    "manualVisual": {
+      "newBodyScreenshots": 6,
+      "scopedWrongFeedbackScreenshots": 24,
+      "reviewSheets": 7,
+      "findings": "All three added bodies and all twelve prompts/options/rationales/marked answers/remediation manually read in native-pixel desktop1440/mobile390 pairs. No clipping or overflow; automated320px overflow and progress gates passed. All36 bodies matched rendered DOM."
+    },
+    "browserHarnessRepair": "Initial added assertion included shuffled choice letters; corrected to assert exact choice text within marked answer label. Initial run exited1; final full rerun exited0. No product code changed for the harness correction."
+  },
+  "cumulativeReview": [
+    {
+      "question": {
+        "id": "cumulative-enteral-nutrition-enteral-nutrition-001",
+        "question": "Which principle most strongly favors enteral over parenteral nutrition?",
+        "choices": [
+          "A usable gastrointestinal tract that cannot be supported adequately by oral intake",
+          "A need to bypass all intestinal function",
+          "Complete mechanical obstruction",
+          "Active bowel ischemia"
+        ],
+        "answer": 0,
+        "rationale": "Enteral nutrition is preferred when the gut can safely digest and absorb nutrients but oral intake is inadequate.",
+        "reviewHref": "/learn/pharmacy/modules/enteral-nutrition",
+        "module": "Enteral Nutrition"
+      },
+      "status": "source verified in prior scope; unchanged"
+    },
+    {
+      "question": {
+        "id": "cumulative-enteral-nutrition-enteral-nutrition-028",
+        "question": "Which statement about disease-specific formula is most accurate?",
+        "choices": [
+          "Selection requires a compositional and evidence-based patient rationale",
+          "The diagnosis alone proves superiority",
+          "Every patient with diabetes requires the same formula",
+          "Specialty formulas need no monitoring"
+        ],
+        "answer": 0,
+        "rationale": "Disease labels do not replace assessment of nutrient composition, evidence, cost, and tolerance.",
+        "reviewHref": "/learn/pharmacy/modules/enteral-nutrition",
+        "module": "Enteral Nutrition"
+      },
+      "status": "pending source review; runtime only passed"
+    },
+    {
+      "question": {
+        "id": "cumulative-enteral-nutrition-enteral-nutrition-064",
+        "question": "A daily enteral volume target is 1800 mL and feeding will run for 20 hours. What calculated pump rate corresponds to the target? Round to the nearest tenth of a mL per hour.",
+        "choices": [
+          "90 mL/hour",
+          "180 mL/hour",
+          "20 mL/hour",
+          "1800 mL/hour"
+        ],
+        "answer": 0,
+        "rationale": "1800 mL divided by 20 hours equals 90 mL per hour.",
+        "reviewHref": "/learn/pharmacy/modules/enteral-nutrition",
+        "module": "Enteral Nutrition"
+      },
+      "status": "source verified in prior scope; unchanged"
+    },
+    {
+      "question": {
+        "id": "cumulative-enteral-nutrition-enteral-nutrition-090",
+        "question": "A newly placed small-bore nasal tube has not been confirmed and medication is due. What is the best next action?",
+        "choices": [
+          "Hold use and obtain evidence-based placement confirmation",
+          "Continue the same plan without reassessment",
+          "Change formula based on one isolated detail",
+          "Ignore the access route"
+        ],
+        "answer": 0,
+        "rationale": "Unconfirmed placement creates pulmonary administration risk.",
+        "reviewHref": "/learn/pharmacy/modules/enteral-nutrition",
+        "module": "Enteral Nutrition"
+      },
+      "status": "pending source review; runtime only passed"
+    },
+    {
+      "question": {
+        "id": "cumulative-enteral-nutrition-enteral-nutrition-117",
+        "question": "A prescribed warfarin administration plan holds tube feeding for one hour before and one hour after an 08:00 dose. Which feeding window follows that plan?",
+        "choices": [
+          "Stop at 07:00 and restart at 09:00",
+          "Stop at 07:00 and restart immediately at 08:00",
+          "Stop at 08:00 and restart at 09:00",
+          "Stop at 06:00 and restart at 10:00"
+        ],
+        "answer": 0,
+        "rationale": "One hour before 08:00 is 07:00, and one hour after is 09:00. This implements the stated warfarin plan, not a universal hold for all medications.",
+        "reviewHref": "/learn/pharmacy/modules/enteral-nutrition",
+        "module": "Enteral Nutrition"
+      },
+      "status": "source verified in prior scope; unchanged"
+    }
+  ],
+  "broaderBank": "Current parent EN bank and current five cumulative items integrated/rendered. Cross-module feeding inventory and unfinished warfarin parent rewrite remain pending; no whole broader bank closure claimed.",
+  "coverage": {
+    "bank": 108,
+    "verifiedBank": 62,
+    "remainingBank": 46,
+    "verifiedBankIds": [
+      "enteral-nutrition-060",
+      "enteral-nutrition-061",
+      "enteral-nutrition-062",
+      "enteral-nutrition-063",
+      "enteral-nutrition-064",
+      "enteral-nutrition-065",
+      "enteral-nutrition-066",
+      "enteral-nutrition-067",
+      "enteral-nutrition-068",
+      "enteral-nutrition-069",
+      "enteral-nutrition-070",
+      "enteral-nutrition-071",
+      "enteral-nutrition-072",
+      "enteral-nutrition-073",
+      "enteral-nutrition-074",
+      "enteral-nutrition-075",
+      "enteral-nutrition-076",
+      "enteral-nutrition-077",
+      "enteral-nutrition-078",
+      "enteral-nutrition-079",
+      "enteral-nutrition-080",
+      "enteral-nutrition-081",
+      "enteral-nutrition-082",
+      "enteral-nutrition-083",
+      "enteral-nutrition-084",
+      "enteral-nutrition-085",
+      "enteral-nutrition-086",
+      "enteral-nutrition-087",
+      "enteral-nutrition-088",
+      "enteral-nutrition-089",
+      "enteral-nutrition-109",
+      "enteral-nutrition-110",
+      "enteral-nutrition-111",
+      "enteral-nutrition-112",
+      "enteral-nutrition-113",
+      "enteral-nutrition-114",
+      "enteral-nutrition-001",
+      "enteral-nutrition-115",
+      "enteral-nutrition-033",
+      "enteral-nutrition-035",
+      "enteral-nutrition-036",
+      "enteral-nutrition-037",
+      "enteral-nutrition-040",
+      "enteral-nutrition-042",
+      "enteral-nutrition-093",
+      "enteral-nutrition-094",
+      "enteral-nutrition-098",
+      "enteral-nutrition-107",
+      "enteral-nutrition-116",
+      "enteral-nutrition-117",
+      "enteral-nutrition-006",
+      "enteral-nutrition-007",
+      "enteral-nutrition-008",
+      "enteral-nutrition-015",
+      "enteral-nutrition-016",
+      "enteral-nutrition-018",
+      "enteral-nutrition-021",
+      "enteral-nutrition-030",
+      "enteral-nutrition-049",
+      "enteral-nutrition-092",
+      "enteral-nutrition-099",
+      "enteral-nutrition-105"
+    ],
+    "remainingBankIds": [
+      "enteral-nutrition-002",
+      "enteral-nutrition-003",
+      "enteral-nutrition-004",
+      "enteral-nutrition-005",
+      "enteral-nutrition-009",
+      "enteral-nutrition-010",
+      "enteral-nutrition-011",
+      "enteral-nutrition-012",
+      "enteral-nutrition-013",
+      "enteral-nutrition-014",
+      "enteral-nutrition-017",
+      "enteral-nutrition-019",
+      "enteral-nutrition-020",
+      "enteral-nutrition-022",
+      "enteral-nutrition-023",
+      "enteral-nutrition-024",
+      "enteral-nutrition-025",
+      "enteral-nutrition-026",
+      "enteral-nutrition-027",
+      "enteral-nutrition-028",
+      "enteral-nutrition-029",
+      "enteral-nutrition-031",
+      "enteral-nutrition-032",
+      "enteral-nutrition-034",
+      "enteral-nutrition-038",
+      "enteral-nutrition-039",
+      "enteral-nutrition-041",
+      "enteral-nutrition-043",
+      "enteral-nutrition-044",
+      "enteral-nutrition-045",
+      "enteral-nutrition-046",
+      "enteral-nutrition-047",
+      "enteral-nutrition-048",
+      "enteral-nutrition-050",
+      "enteral-nutrition-090",
+      "enteral-nutrition-091",
+      "enteral-nutrition-095",
+      "enteral-nutrition-096",
+      "enteral-nutrition-097",
+      "enteral-nutrition-100",
+      "enteral-nutrition-101",
+      "enteral-nutrition-102",
+      "enteral-nutrition-103",
+      "enteral-nutrition-104",
+      "enteral-nutrition-106",
+      "enteral-nutrition-108"
+    ],
+    "bodies": 36,
+    "verifiedBodies": 15,
+    "remainingBodies": 21,
+    "embeddedChecks": 6,
+    "verifiedEmbeddedChecks": 2,
+    "remainingEmbeddedChecks": 4,
+    "figures": 6,
+    "verifiedFigures": 0,
+    "cumulative": 5,
+    "sourceVerifiedCumulative": 3,
+    "pendingCumulative": [
+      "enteral-nutrition-028",
+      "enteral-nutrition-090"
+    ],
+    "metadata": "Integrated module/lesson metadata and six figure claim sets remain open."
+  },
+  "wholeModuleVerified": false,
+  "wholeChapterVerified": false,
+  "outsideENSourceApproval": "Pending human response; no outside EN sources opened.",
+  "nextAction": "Next reconcile remaining46 EN bank items and21 original bodies, starting with book-supported aspiration/complication, diarrhea/medication and refeeding claims. Retain useful guidance while resolving source support; no outside EN sources opened. Four embedded clinical checks,six figure claim sets and metadata remain open. Cumulative q028 specialty-formula and q090 placement claims remain source-pending. Continue broader cross-module feeding inventory and working warfarin-bank integration; then pediatric PN and clinical fluid/calcium dependencies. Chapter1 checklist entry15 and fullChapter11 remain reviewing.",
+  "release": {
+    "branch": "audit/rxprep-content-2026-09-24",
+    "contentCommit": "pending",
+    "remoteHashVerified": false,
+    "receipt": "sequential-release-en-route-water-2026-10-01.json",
+    "production": "not verified",
+    "mainMerge": "not performed"
+  }
+}
