@@ -1,0 +1,729 @@
+{
+  "slug": "cyproheptadine",
+  "checked": "2026-10-01",
+  "status": "source_reviewed",
+  "scope": "A prescription oral histamine/serotonin antagonist for selected allergic conditions. This profile follows current 4 mg tablets and 2 mg/5 mL syrup labels, including anticholinergic restrictions, child dose limits and lactation contraindication. Appetite stimulation and serotonin-syndrome treatment are not labeled indications here.",
+  "sources": [
+    {
+      "id": "label",
+      "title": "Cyproheptadine 4 mg tablet · PD-Rx Pharmaceuticals full label",
+      "publisher": "DailyMed / official U.S. product labeling",
+      "note": "Current full label; no separate formal clinical revision printed in retained text; SPL v 13 effective 20260216; API publication Feb 18, 2026. Clinical revision is distinct from publication. Checked October 1, 2026.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=03e69414-8a25-4ed8-b7ac-16445b879b1f"
+    },
+    {
+      "id": "syrup",
+      "title": "Cyproheptadine 2 mg/5 mL syrup · Rising/Lyne",
+      "publisher": "DailyMed / official U.S. product labeling",
+      "note": "Clinical PI revised February 2025; selected syrup contains alcohol 5%; SPL v 9 effective 20250326; API publication Apr 02, 2025. Clinical revision is distinct from publication. Checked October 1, 2026.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e2bf4d46-6585-41d9-868c-98603b165d5b"
+    }
+  ],
+  "sourceEvidence": {
+    "label": {
+      "splVersion": "13",
+      "effectiveTime": "20260216",
+      "apiPublishedDate": "Feb 18, 2026",
+      "clinicalRevision": "Current full label; no separate formal clinical revision printed in retained text; SPL v 13 effective 20260216; API publication Feb 18, 2026. Clinical revision is distinct from publication. Checked October 1, 2026.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=03e69414-8a25-4ed8-b7ac-16445b879b1f",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/03e69414-8a25-4ed8-b7ac-16445b879b1f.xml",
+      "localEvidence": "/tmp/nas-drug-sources/cypro-tab.xml",
+      "sha256": "a552897e2d590415afc769a1570435529b9bbac18f7a5e8a153b2bcdd8618fbc",
+      "supportingSections": [
+        "DESCRIPTION",
+        "CLINICAL PHARMACOLOGY",
+        "Pharmacokinetics and Metabolism",
+        "INDICATIONS AND USAGE",
+        "Newborn or Premature Infants",
+        "Nursing Mothers",
+        "Other Conditions",
+        "Pediatric Patients",
+        "CNS Depressants",
+        "Activities Requiring Mental Alertness",
+        "General",
+        "Information for Patients",
+        "Drug Interactions",
+        "\n                              Pregnancy Category B\n                           ",
+        "Nursing Mothers",
+        "Pediatric Use",
+        "Geriatric Use",
+        "ADVERSE REACTIONS",
+        "Central Nervous System",
+        "Integumentary",
+        "Special Senses",
+        "Cardiovascular",
+        "Hematologic",
+        "Digestive System",
+        "Genitourinary",
+        "Respiratory",
+        "Miscellaneous",
+        "OVERDOSAGE",
+        "DOSAGE AND ADMINISTRATION",
+        "\n                              Age 2 to 6 years\n                           ",
+        "\n                              Age 7 to 14 years\n                           ",
+        "Adults",
+        "HOW SUPPLIED",
+        "STORAGE",
+        "PRINCIPAL DISPLAY PANEL - 4 mg Label Text"
+      ],
+      "access": "Full clinically relevant public supporting sections read; nonclinical carcinogenesis text not used for claims",
+      "checked": "2026-10-01",
+      "packager": "PD-Rx Pharmaceuticals, Inc., verified retained XML author/representedOrganization"
+    },
+    "syrup": {
+      "splVersion": "9",
+      "effectiveTime": "20250326",
+      "apiPublishedDate": "Apr 02, 2025",
+      "clinicalRevision": "Clinical PI revised February 2025; selected syrup contains alcohol 5%; SPL v 9 effective 20250326; API publication Apr 02, 2025. Clinical revision is distinct from publication. Checked October 1, 2026.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e2bf4d46-6585-41d9-868c-98603b165d5b",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/e2bf4d46-6585-41d9-868c-98603b165d5b.xml",
+      "localEvidence": "/tmp/nas-drug-sources/cypro-syrup.xml",
+      "sha256": "334258cb8fc22c2f3664db9e738b9f9748c28a03406c493d26e34e745929c8c3",
+      "supportingSections": [
+        "",
+        "DESCRIPTION",
+        "CLINICAL PHARMACOLOGY",
+        "INDICATIONS AND USAGE",
+        "CONTRAINDICATIONS",
+        "WARNINGS",
+        "PRECAUTIONS",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "ADVERSE REACTIONS",
+        "OVERDOSAGE",
+        "DOSAGE AND ADMINISTRATION",
+        "HOW SUPPLIED",
+        "PRINCIPAL DISPLAY PANEL"
+      ],
+      "access": "Full clinically relevant public supporting sections read; nonclinical carcinogenesis text not used for claims",
+      "checked": "2026-10-01"
+    }
+  },
+  "assertionMap": [
+    {
+      "section": "indications",
+      "card": "Approved label scope",
+      "sourceIds": [
+        "label",
+        "syrup"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Indications and usage"
+        ],
+        "syrup": [
+          "Indications and usage"
+        ]
+      },
+      "claims": [
+        "Perennial/seasonal allergic rhinitis, vasomotor rhinitis, allergic conjunctivitis from inhalant/food allergens, mild uncomplicated urticaria/angioedema, blood/plasma allergic reactions, cold urticaria and dermatographism. Anaphylactic reactions: adjunct to epinephrine and standard measures only after acute manifestations are controlled. It is not initial rescue or a substitute for epinephrine."
+      ]
+    },
+    {
+      "section": "indications",
+      "card": "Off-label boundary",
+      "sourceIds": [
+        "label",
+        "syrup"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Indications and usage"
+        ],
+        "syrup": [
+          "Indications and usage"
+        ]
+      },
+      "claims": [
+        "Increased appetite/weight gain is reported as an adverse effect, not a labeled appetite-stimulation indication. No independent weight-gain, migraine or serotonin-syndrome dose algorithm supplied. Different clinical uses require diagnosis-specific professional review; do not use sedating medication to delay emergency care."
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Selected labeled regimens",
+      "sourceIds": [
+        "label",
+        "syrup"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Dosage and administration",
+          "Instructions for use",
+          "Population restrictions"
+        ],
+        "syrup": [
+          "Dosage and administration",
+          "Instructions for use",
+          "Population restrictions"
+        ]
+      },
+      "claims": [
+        [
+          "Age 2–6 years",
+          "2 mg two or three times daily; maximum 12 mg/day. Selected syrup:5 mL/dose; tablet:half 4 mg tablet."
+        ],
+        [
+          "Age 7–14 years",
+          "4 mg two or three times daily; maximum 16 mg/day. Selected syrup:10 mL/dose."
+        ],
+        [
+          "Pediatric total-dose basis",
+          "Approximately 0.25 mg/kg/day or 8 mg/m²/day described, with individualized response and age maximums. This is total daily dose, not per dose; do not stack formulas."
+        ],
+        [
+          "Adults",
+          "Start 4 mg three times daily; usual therapeutic range 4–20 mg/day, most 12–16 mg/day. Occasional 32 mg/day may be needed, but total must never exceed 0.5 mg/kg/day."
+        ],
+        [
+          "Age 15–17 gap",
+          "Selected tables name child bands through 14 and Adults without explicitly assigning 15–17. Obtain exact prescriber dose review; no automatic adult regimen."
+        ],
+        [
+          "Below 2 / neonatal",
+          "Safety/effectiveness below 2 unestablished; newborn/premature infant use contraindicated. No infant dose inferred."
+        ]
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Administration and adjustment limits",
+      "sourceIds": [
+        "label",
+        "syrup"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Dosage and administration",
+          "Instructions for use",
+          "Population restrictions"
+        ],
+        "syrup": [
+          "Dosage and administration",
+          "Instructions for use",
+          "Population restrictions"
+        ]
+      },
+      "claims": [
+        "Use a calibrated oral device for syrup mL; household spoons are unsuitable. Tablet is scored, but confirm exact dispensed product for half-tablet dosing. Renal insufficiency reduces elimination, yet labels give no validated numeric renal/hepatic or dialysis adjustment; clinician individualization is required. No independent missed-dose doubling or off-label escalation."
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "sourceIds": [
+        "label",
+        "syrup"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Contraindications",
+          "Warnings",
+          "Precautions",
+          "Adverse reactions",
+          "Overdosage",
+          "Boxed warning status"
+        ],
+        "syrup": [
+          "Contraindications",
+          "Warnings",
+          "Precautions",
+          "Adverse reactions",
+          "Overdosage",
+          "Boxed warning status"
+        ]
+      },
+      "claims": [
+        "Sedation, impaired coordination and dizziness can affect driving/machinery. Young children may instead become excited; overdose can cause hallucinations, convulsions, respiratory/cardiac arrest or death.",
+        "Avoid alcohol and review hypnotics, sedatives, tranquilizers and other CNS depressants; effects may add. Selected syrup already contains 5% alcohol.",
+        "Atropine-like effects require caution with bronchial asthma history, raised intraocular pressure, hyperthyroidism, cardiovascular disease or hypertension.",
+        "Older adults are more susceptible to dizziness, sedation and hypotension. The contraindication list includes elderly, debilitated patients; a geriatric low-start paragraph does not override that restriction.",
+        "Reported severe reactions include allergy, blood-cell disorders, urinary retention and liver injury. New jaundice, severe rash, inability to urinate or major neurologic symptoms require assessment."
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "sourceIds": [
+        "label",
+        "syrup"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Contraindications",
+          "Warnings",
+          "Precautions",
+          "Adverse reactions",
+          "Overdosage",
+          "Boxed warning status"
+        ],
+        "syrup": [
+          "Contraindications",
+          "Warnings",
+          "Precautions",
+          "Adverse reactions",
+          "Overdosage",
+          "Boxed warning status"
+        ]
+      },
+      "claims": [
+        "Newborn/premature infants; nursing mothers; hypersensitivity to cyproheptadine or structurally similar drugs; MAO-inhibitor therapy; angle-closure glaucoma; stenosing peptic ulcer; symptomatic prostatic hypertrophy; bladder-neck or pyloroduodenal obstruction; the label’s elderly, debilitated patients category. Below 2 is unestablished, distinct from explicit neonatal contraindication."
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Boxed warning / status",
+      "sourceIds": [
+        "label",
+        "syrup"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Contraindications",
+          "Warnings",
+          "Precautions",
+          "Adverse reactions",
+          "Overdosage",
+          "Boxed warning status"
+        ],
+        "syrup": [
+          "Contraindications",
+          "Warnings",
+          "Precautions",
+          "Adverse reactions",
+          "Overdosage",
+          "Boxed warning status"
+        ]
+      },
+      "claims": [
+        "No boxed warning appears in selected oral labels. Prescription status and explicit neonatal/lactation/MAO/obstruction restrictions remain applicable. No blanket pediatric, frail-older-adult or pregnancy safety claim."
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions and overdose",
+      "sourceIds": [
+        "label",
+        "syrup"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Contraindications",
+          "Warnings",
+          "Precautions",
+          "Adverse reactions",
+          "Overdosage",
+          "Boxed warning status"
+        ],
+        "syrup": [
+          "Contraindications",
+          "Warnings",
+          "Precautions",
+          "Adverse reactions",
+          "Overdosage",
+          "Boxed warning status"
+        ]
+      },
+      "claims": [
+        "Sleepiness, dizziness, dry mouth, constipation, blurred vision and weight gain/increased appetite are reported; excitation, hallucinations, seizures, hypotension, palpitations, urinary retention, photosensitivity and blood abnormalities also occur. Tablet label reports cholestasis, hepatitis/hepatic failure. Overdose may cause CNS depression or stimulation and anticholinergic signs; seek emergency/Poison Control advice. Legacy labels include ipecac/lavage/physostigmine directions; they are not a home treatment protocol and are not propagated as an automatic modern management algorithm."
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "MAO inhibitors",
+      "sourceIds": [
+        "label",
+        "syrup"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Drug interactions",
+          "Precautions",
+          "Clinical pharmacology"
+        ],
+        "syrup": [
+          "Drug interactions",
+          "Precautions",
+          "Clinical pharmacology"
+        ]
+      },
+      "claims": [
+        "Contraindicated during MAO-inhibitor therapy because anticholinergic antihistamine effects can be prolonged/intensified. Labels do not give a validated universal post-stop washout interval; recent MAO therapy needs pharmacist/prescriber review before dosing."
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Alcohol and CNS depressants",
+      "sourceIds": [
+        "label",
+        "syrup"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Drug interactions",
+          "Precautions",
+          "Clinical pharmacology"
+        ],
+        "syrup": [
+          "Drug interactions",
+          "Precautions",
+          "Clinical pharmacology"
+        ]
+      },
+      "claims": [
+        "Alcohol, hypnotics, sedatives, tranquilizers and antianxiety agents may add impairment. Review other antihistamines/anticholinergic products to avoid duplicate exposure; no quantified dose-reduction formula is supplied. The selected syrup’s 5% alcohol is formulation-specific and not assumed for every oral solution."
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Children and older adults",
+      "sourceIds": [
+        "label",
+        "syrup"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Pregnancy",
+          "Nursing mothers",
+          "Pediatric use",
+          "Geriatric use",
+          "Clinical pharmacology"
+        ],
+        "syrup": [
+          "Pregnancy",
+          "Nursing mothers",
+          "Pediatric use",
+          "Geriatric use",
+          "Clinical pharmacology"
+        ]
+      },
+      "claims": [
+        "Below 2 safety/effectiveness are unestablished; newborn/premature use is prohibited. Children need supervision for sedation/excitation and overdose prevention. Ages 15–17 lack an explicit dose-table row. Older adult trial evidence is limited and adverse sensitivity greater; respect the explicit elderly, debilitated contraindication before considering any cautious starting dose."
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Renal and hepatic considerations",
+      "sourceIds": [
+        "label",
+        "syrup"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Pregnancy",
+          "Nursing mothers",
+          "Pediatric use",
+          "Geriatric use",
+          "Clinical pharmacology"
+        ],
+        "syrup": [
+          "Pregnancy",
+          "Nursing mothers",
+          "Pediatric use",
+          "Geriatric use",
+          "Clinical pharmacology"
+        ]
+      },
+      "claims": [
+        "Renal insufficiency diminishes elimination. No numerical renal/hepatic adjustment or dialysis supplement is supplied; assess organ function and clinical response rather than infer standard safety. Tablet postmarketing hepatic injury reports make jaundice/liver symptoms clinically relevant, but do not establish a universal liver-test schedule."
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy and lactation",
+      "sourceIds": [
+        "label",
+        "syrup"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Pregnancy",
+          "Nursing mothers",
+          "Pediatric use",
+          "Geriatric use",
+          "Clinical pharmacology"
+        ],
+        "syrup": [
+          "Pregnancy",
+          "Nursing mothers",
+          "Pediatric use",
+          "Geriatric use",
+          "Clinical pharmacology"
+        ]
+      },
+      "claims": [
+        "Limited human studies did not show increased malformations but cannot exclude harm; use in pregnancy only if clearly needed after benefit/risk review. Selected contraindications prohibit use while nursing because serious infant effects are possible; the later lactation paragraph advises choosing discontinuation of nursing or drug. Human milk excretion is unknown. No legacy category-based pregnancy guarantee or automatic breastfeeding permission."
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism",
+      "sourceIds": [
+        "label",
+        "syrup"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Clinical pharmacology",
+          "Microbiology",
+          "Description"
+        ],
+        "syrup": [
+          "Clinical pharmacology",
+          "Microbiology",
+          "Description"
+        ]
+      },
+      "claims": [
+        "Competes at histamine and serotonin receptor sites, with sedative and atropine-like effects. These explain allergic symptom relief and many adverse effects; they do not establish the drug as emergency anaphylaxis rescue or approve appetite treatment."
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Pharmacokinetics",
+      "sourceIds": [
+        "label",
+        "syrup"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Clinical pharmacology",
+          "Microbiology",
+          "Description"
+        ],
+        "syrup": [
+          "Clinical pharmacology",
+          "Microbiology",
+          "Description"
+        ]
+      },
+      "claims": [
+        "After a single radiolabeled 4 mg dose, at least 40% of radioactivity was recovered in urine and 2–20% in stool; parent was not detected in urine during chronic dosing. Main urinary metabolite is a quaternary ammonium glucuronide conjugate. Elimination diminishes with renal insufficiency. Selected labels supply no validated plasma elimination half-life, CYP dosing algorithm or therapeutic concentration target."
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Monitoring priorities",
+      "sourceIds": [
+        "label",
+        "syrup"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Patient information",
+          "Warnings",
+          "Precautions",
+          "Instructions for use"
+        ],
+        "syrup": [
+          "Patient information",
+          "Warnings",
+          "Precautions",
+          "Instructions for use"
+        ]
+      },
+      "claims": [
+        "Review allergy diagnosis/severity, exact age/weight, nursing status, organ disease, glaucoma/obstruction/frailty and MAO/CNS-depressant exposure. Follow benefit, sedation/excitation, BP-related symptoms, visual/urinary effects and weight/appetite change. Relevant liver/blood symptoms require evaluation; no routine serum level or universal lab interval asserted."
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Counseling",
+      "sourceIds": [
+        "label",
+        "syrup"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Patient information",
+          "Warnings",
+          "Precautions",
+          "Instructions for use"
+        ],
+        "syrup": [
+          "Patient information",
+          "Warnings",
+          "Precautions",
+          "Instructions for use"
+        ]
+      },
+      "claims": [
+        "Use exact tablet/syrup regimen and calibrated mL measurement; never double or treat a young child from an adult bottle without instructions. Avoid alcohol, unsafe activities and duplicate sedating products; supervise children. Epinephrine/emergency services remain primary for acute anaphylaxis. Report urinary retention, severe confusion, jaundice or rash. Suspected excess ingestion needs immediate Poison Control/emergency assessment; no induced vomiting at home."
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Representative 4 mg tablet",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Description",
+          "How supplied",
+          "Storage",
+          "SPL product panels"
+        ]
+      },
+      "claims": [
+        [
+          "Appearance",
+          "White/off-white round flat-faced tablet; B137 one side, score on other."
+        ],
+        [
+          "Selected packages",
+          "Bryant Ranch bottles 30 or 100; NDC 72789-102-30/-01."
+        ],
+        [
+          "Status",
+          "Prescription oral product; other generic imprints require exact package verification."
+        ]
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "sourceIds": [
+        "label",
+        "syrup"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Description",
+          "How supplied",
+          "Storage",
+          "SPL product panels"
+        ],
+        "syrup": [
+          "Description",
+          "How supplied",
+          "Storage",
+          "SPL product panels"
+        ]
+      },
+      "claims": [
+        [
+          "Tablet",
+          "4 mg cyproheptadine HCl per tablet; selected ingredients include lactose."
+        ],
+        [
+          "Selected syrup",
+          "2 mg/5 mL(0.4 mg/mL), yellow mint-flavored 473 mL bottle; NDC 64980-504-48."
+        ],
+        [
+          "Excipients",
+          "Selected Rising/Lyne syrup contains alcohol 5%, sucrose and sorbic acid 0.1%; no universal sugar-free/alcohol-free claim."
+        ],
+        [
+          "Route scope",
+          "Oral tablets/syrup; no unverified injection, compounded concentration or weight-gain supplement approval."
+        ]
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "sourceIds": [
+        "label",
+        "syrup"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Description",
+          "How supplied",
+          "Storage",
+          "SPL product panels"
+        ],
+        "syrup": [
+          "Description",
+          "How supplied",
+          "Storage",
+          "SPL product panels"
+        ]
+      },
+      "claims": [
+        "Tablets 20–25°C in well-closed child-resistant container. Selected syrup 20–25°C with 15–30°C excursions, tight light-resistant container. Keep securely away from children, use actual expiration and calibrated device; no universal compounded or after-opening stability interval supplied."
+      ]
+    },
+    {
+      "section": "hero/essential",
+      "card": "Scope, essential and three tuple facts",
+      "sourceIds": [
+        "label",
+        "syrup"
+      ],
+      "sourceSections": [
+        "Indications",
+        "Strengths",
+        "Warnings",
+        "Product"
+      ],
+      "claims": [
+        "A prescription oral histamine/serotonin antagonist for selected allergic conditions. This profile follows current 4 mg tablets and 2 mg/5 mL syrup labels, including anticholinergic restrictions, child dose limits and lactation contraindication. Appetite stimulation and serotonin-syndrome treatment are not labeled indications here.",
+        "Avoid alcohol and other CNS depressants; impairment or paradoxical excitation can occur. Newborn/premature infants and nursing mothers are contraindicated under selected labeling. Suspected overdose, seizures, severe confusion or respiratory compromise need immediate emergency/Poison Control assessment.",
+        [
+          "Therapeutic class",
+          "Sedating H1 / serotonin antagonist"
+        ],
+        [
+          "Selected strengths",
+          "4 mg tablet; 2 mg/5 mL syrup"
+        ],
+        [
+          "Major cautions",
+          "Sedation, anticholinergic effects and pediatric overdose"
+        ]
+      ]
+    }
+  ],
+  "materialErrors": [],
+  "gaps": [
+    {
+      "material": false,
+      "topic": "Age15–17 dosing",
+      "resolution": "Label table explicitly2–6/7–14/adult without exact adult age definition; no actionable15–17 dose extrapolation, prescriber/product review required."
+    },
+    {
+      "material": false,
+      "topic": "Elderly debilitated contraindication",
+      "resolution": "Explicit contraindication preserved; geriatric low-start discussion cannot override it. No invented numerical geriatric-age contraindication."
+    },
+    {
+      "material": false,
+      "topic": "Historical overdose instructions",
+      "resolution": "Archived label ipecac/lavage/physostigmine not repeated as a contemporary home algorithm; emergency/Poison Control evaluation advised."
+    },
+    {
+      "material": false,
+      "topic": "Off-label and interaction boundaries",
+      "resolution": "Appetite increase is an adverse effect, not labeled weight-gain approval. No off-label appetite/serotonin/migraine regimen or unprovided MAOI washout interval."
+    },
+    {
+      "material": false,
+      "topic": "Organ and lactation limits",
+      "resolution": "Renal elimination reduced without validated adjustment formula; nursing-mother contraindication explicit, no unsupported half-life or dialysis dose."
+    },
+    {
+      "material": false,
+      "topic": "Liquid excipients",
+      "resolution": "Selected syrup2mg/5mL contains5% alcohol and sucrose; not extrapolated to all solutions. Selected tablet has no distinct printed PI revision, SPL date not substituted."
+    }
+  ],
+  "exclusions": [
+    "Unverified other manufacturers/combinations/non-U.S. regimens, off-label algorithms or preferred guideline rankings; current stock; universal laboratory schedules; independent switches or home overdose protocols."
+  ],
+  "validation": {
+    "schema": "validateMonograph: []",
+    "renderedPage": "Pending parent natural 390 px integration QA"
+  },
+  "monographSha256": "93adb7eecfee3e4a2275943cf0f599fbed81f74a20e25a0c45e6947d585f140b",
+  "sourceInterpretationNotes": [
+    "Clinical revision distinct from SPL effectiveTime/API publication. Original focused summaries of current full public supporting text.",
+    "Exact APAP eight sections, four core Safety cards, three Product cards and three tuple facts. No APAP-specific clinical content.",
+    "Independent review correction: selected tablet setid packager PD-Rx Pharmaceuticals, Inc., not Bryant Ranch; title corrected only, clinical assertions unchanged."
+  ],
+  "formattingVerification": "Readable units, identifiers and punctuation; scoped git diff --check clean. Parent natural 390px render pending."
+}

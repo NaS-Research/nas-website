@@ -1,0 +1,581 @@
+{
+  "reviewDate": "2026-10-01",
+  "scope": "Independent targeted critical-assertion primary-source review. Only enumerated assertions independently verified; not exhaustive second clinical signoff, browser QA or build verification.",
+  "status": "complete_targeted_review",
+  "profiles": [
+    {
+      "drug": "sodium-fluoride",
+      "fileSha256": "fa5c553ae9e061f499fb45ead1ae8a49bf1357863cd5fdf0bc10d4dfe1514ecb",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "Selected1.1% paste once daily two-minute brushing age\u22656; adult spit/no food/drink/rinse30minutes, age6\u201316 spit then rinse thoroughly.",
+          "sourceId": "paste",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5ef93306-59dd-447b-a2ec-dd865e52c76b",
+          "sourceSection": "Dosage and Administration",
+          "access": "Retained full selected primary SPL XML and relevant sections independently read; no additional live page access claimed for this assertion.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Selected0.2% rinse10 mL weekly one minute then spit, no swallow, no food/drink/rinse30minutes. Directions over6 differs from pediatric evidence6\u201316; exactly6 eligibility explicitly requires confirmation. Dysphagia contraindicated.",
+          "sourceId": "rinse",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=28e4f7cd-9fd8-4c7a-9e4b-d747fefc76c0",
+          "sourceSection": "Dosage and Administration, Contraindications",
+          "access": "Retained full selected primary SPL XML and relevant sections independently read; no additional live page access claimed for this assertion.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Selected tablet1 mg FLUORIDE ION from2.2 mg sodium fluoride salt; table3\u20136 years water<0.3 ppm0.5mg,0.3\u20130.6ppm0.25mg,>0.6none; >6\u201316 years1mg/0.5mg/none. Under3 prohibited and exact6 boundary deferred, not extrapolated. All three selected SPL approval-category codes explicitly UNAPPROVED DRUG OTHER.",
+          "sourceId": "tablet",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=264d02da-d8fb-4a71-95e6-bab74fd82a15",
+          "sourceSection": "Description, water/age table, Contraindications, approval metadata",
+          "access": "Retained full selected primary SPL XML and relevant sections independently read; no additional live page access claimed for this assertion.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Current FDA recommends ingestible products only children\u22653 with high tooth-decay risk; enforcement intent concerns unapproved products labeled younger or without high-risk limitation. Profile distinguishes this from topical regimens.",
+          "sourceId": "fda",
+          "sourceUrl": "https://www.fda.gov/news-events/public-health-focus/ingestible-fluoride-drug-products",
+          "sourceSection": "Current focus-page recommendations and compliance-action section",
+          "access": "Current full official FDA public focus page independently opened and relevant text read.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Legacy selected labels explicitly advise induced vomiting after excess ingestion; profile rejects this against current Poison Control first aid: do not induce vomiting, call1-800-222-1222, severe collapse/seizure/breathing/unresponsive911. No home mg/kg antidote triage transplanted.",
+          "sourceId": "poison",
+          "sourceUrl": "https://www.poison.org/first-aid-for-poisonings",
+          "sourceSection": "Swallowed-poison first aid comparison with selected labels Overdosage",
+          "access": "Current official National Capital Poison Center public first-aid page independently opened; exact contradictory primary SPL overdose text independently read.",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning status",
+          "Adverse reactions and overdose"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": [],
+      "retainedEvidence": {
+        "fluoride-paste": {
+          "path": "/tmp/nas-drug-sources/fluoride-paste.xml",
+          "sha256": "7124dc268c74be94797c2c0a2c1d1d446da97d0fba91b9b40308860972760d4e"
+        },
+        "fluoride-rinse": {
+          "path": "/tmp/nas-drug-sources/fluoride-rinse.xml",
+          "sha256": "16ac363339d6d476521188d3abc3b1fbaf030c105202c316bfa061101e27bada"
+        },
+        "fluoride-tablet": {
+          "path": "/tmp/nas-drug-sources/fluoride-tablet.xml",
+          "sha256": "f5fe1bb1bf926576ffe6adb0a1a2a384c28df55d9f0990a463ac21e963726f5e"
+        }
+      }
+    },
+    {
+      "drug": "acetaminophen-butalbital-caffeine",
+      "fileSha256": "6fb634eff8b07d51546f5b4d1b8f92332efa3d97f4d7db28650bb40c49a1a275",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "Selected capsule50 mg butalbital/300 mg APAP/40 mg caffeine:1\u20132 every4hours as needed, maximum6 daily\u2192300/1,800/240mg. Overall APAP4,000mg ceiling does not authorize extra capsules. Extended/repeated use discouraged due dependence; no abrupt dependent withdrawal.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c018be7d-f7b8-45e2-97b8-8e7a71740657",
+          "sourceSection": "Description, Dosage and Administration, Warnings, Drug Abuse and Dependence",
+          "access": "Retained full primary SPL XML and extracted sections independently read; matching current public DailyMed page opened.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Formal component hypersensitivity/intolerance and porphyria contraindications; APAP hepatotoxicity boxed warning. Under12 safety/effectiveness unestablished, no invented pediatric mg/kg algorithm. Severe renal/hepatic caution not fabricated dose-adjustment table.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c018be7d-f7b8-45e2-97b8-8e7a71740657",
+          "sourceSection": "Contraindications, Boxed Warning, Pediatric Use, Precautions",
+          "access": "Retained full primary SPL XML and extracted sections independently read; matching current public DailyMed page opened.",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning: hepatotoxicity",
+          "Adverse reactions and overdose"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": [],
+      "retainedEvidence": {
+        "fioricet": {
+          "path": "/tmp/nas-drug-sources/fioricet.xml",
+          "sha256": "5dbbc5e319798628c1472f48bbeb49a6b8fc33882940d22c1aa95c3e3068e224"
+        }
+      },
+      "formattingClosure": {
+        "finding": "Numeric thousands grouping contained spaces after commas",
+        "status": "closed",
+        "verification": "Actual current file restores 1,800/4,000; numeric ingredient totals and daily dose limits unchanged; current author hash captured."
+      }
+    },
+    {
+      "drug": "ciclopirox",
+      "fileSha256": "16658f067504163368d342181c7c4668e1a343a5dae9c51b4608a35beb469222",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "Nail lacquer8%dailybedtime/\u22658hbeforewash, coatpreviouslayers and alcohol removal7days with nail care/monthlyprofessional infectednailremoval; beyond48weeks daily efficacy/safety unestablished.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=eb7b7163-2ee7-447a-b585-7a240070f84b",
+          "sourceSection": "Dosage; Precautions",
+          "access": "Retained full selected primary SPL XML and relevant sections independently read; no additional live page access claimed for this assertion.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Adult scalp seborrheic dermatitis shampoo1%5mL up10longhair/lather3minrinse/BIDweekly4weeks spaced\u22653days. Trial age16+not copied as pediatric approval. Formal Section4None distinct from hypersensitivity warning.",
+          "sourceId": "shampoo",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=cb456f2e-6645-4cc4-8e71-299c47ccb6b7",
+          "sourceSection": "Sections1\u20134",
+          "access": "Retained full primary SPL XML and extracted sections independently read; matching current public DailyMed page opened.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Gel0.77%affectedsurroundingskinBID4weeks/interdigitaltinea/corporis/scalpsebderm. Cream/lotionBID review4weeks; lotion1%olamine10mg/g equivalent7.70mg/gbase distinct salt strength.",
+          "sourceId": "gel",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3c22416e-4293-4ba5-a983-137cbc6022db",
+          "sourceSection": "Dosage; Description",
+          "access": "Retained full selected primary SPL XML and relevant sections independently read; no additional live page access claimed for this assertion.",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning / status",
+          "Adverse reactions and overdose"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": [],
+      "retainedEvidence": {
+        "ciclop-lacquer": {
+          "path": "/tmp/nas-drug-sources/ciclop-lacquer.xml",
+          "sha256": "5c682c4bcdd02d9267daedadfe3a39615036ebe96e9804a44396138af90260d4"
+        },
+        "ciclop-shampoo": {
+          "path": "/tmp/nas-drug-sources/ciclop-shampoo.xml",
+          "sha256": "5f26b8fd8ebed12e665674da74400e04ed143e53ee5d97ee17d8b5eb55708b7d"
+        },
+        "ciclop-gel": {
+          "path": "/tmp/nas-drug-sources/ciclop-gel.xml",
+          "sha256": "38651ffcc0b19e944d0bb3565c3856827dc4c36dbee4a8a66a9f42646d50cb70"
+        },
+        "ciclop-cream": {
+          "path": "/tmp/nas-drug-sources/ciclop-cream.xml",
+          "sha256": "16b92bef02fe941ab178876dd3623306490e54fb0d21f1a03cd35b56b5bb6472"
+        },
+        "ciclop-lotion": {
+          "path": "/tmp/nas-drug-sources/ciclop-lotion.xml",
+          "sha256": "85b28277e9c2586c2fd89b6484ed90938392b04d140e52f27e8ddc97ff78cc44"
+        }
+      }
+    },
+    {
+      "drug": "cyproheptadine",
+      "fileSha256": "93adb7eecfee3e4a2275943cf0f599fbed81f74a20e25a0c45e6947d585f140b",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "Age2\u20136oral2mgBID/TIDmax12/day;7\u201314fourmgBID/TIDmax16/day; pediatric0.25mg/kg/DAY or8mg/m\u00b2/DAY total basis. Adultsstart4TIDusual4\u201320/day occasional32subjectto0.5mg/kg/DAYcap. Unassigned15\u201317agegap explicitlydeferred.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=03e69414-8a25-4ed8-b7ac-16445b879b1f",
+          "sourceSection": "Dosage and Administration",
+          "access": "Retained full primary SPL XML and extracted sections independently read; matching current public DailyMed page opened.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Selected syrup2mg/5mL=5mL2mgor10mL4mg dose;5%alcohol excipient and additiveCNSdepressants retained, not invented renal reduction despite diminished elimination.",
+          "sourceId": "syrup",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e2bf4d46-6585-41d9-868c-98603b165d5b",
+          "sourceSection": "Description; Dosage; Drug Interactions",
+          "access": "Retained full selected primary SPL XML and relevant sections independently read; no additional live page access claimed for this assertion.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Formal newborn/premature/nursing, MAOI, angleclosureglaucoma, stenosingulcer/prostate/outlet/pyloroduodenalobstruction and elderlydebilitated restrictions retained. Legacyhomeipecac/lavageprotocol not republished.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=03e69414-8a25-4ed8-b7ac-16445b879b1f",
+          "sourceSection": "Contraindications; Overdosage",
+          "access": "Retained full primary SPL XML and extracted sections independently read; matching current public DailyMed page opened.",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning / status",
+          "Adverse reactions and overdose"
+        ],
+        "productCards": 3
+      },
+      "issues": [
+        {
+          "severity": "metadata",
+          "status": "closed_verified",
+          "finding": "Cited tablet record identifies PD-Rx Pharmaceuticals, but displayed source title names Bryant Ranch. Clinical dose/contraindication assertions agree; author asked to correct exact source packager title.",
+          "resolution": "Current XML representedOrganization PD-Rx Pharmaceuticals confirmed; displayed source title and author metadata corrected; clinical strings unchanged."
+        }
+      ],
+      "sourceGaps": [],
+      "retainedEvidence": {
+        "cypro-tab": {
+          "path": "/tmp/nas-drug-sources/cypro-tab.xml",
+          "sha256": "a552897e2d590415afc769a1570435529b9bbac18f7a5e8a153b2bcdd8618fbc"
+        },
+        "cypro-syrup": {
+          "path": "/tmp/nas-drug-sources/cypro-syrup.xml",
+          "sha256": "334258cb8fc22c2f3664db9e738b9f9748c28a03406c493d26e34e745929c8c3"
+        }
+      }
+    },
+    {
+      "drug": "insulin-detemir",
+      "fileSha256": "0d8b5a48acfc02d3f7a75d97b83e071857f89583aa8eb29ba8f5a92e3d849ae5",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "Retained regimen basal one-third to one-half of TYPE1 TOTAL0.2\u20130.4units/kg/day estimate, remainder meal insulin; TYPE2 start10units or0.1\u20130.2units/kg once evening or twice daily. Not reversed substitution after discontinuation.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=82192527-99aa-4b53-8ce9-9173668d309c",
+          "sourceSection": "Sections 2.1\u20132.4",
+          "access": "Retained full selected primary SPL XML and relevant sections independently read; no additional live page access claimed for this assertion.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Retained glargine/NPH TO detemir unit-to-unit permitted with monitoring; no reverse automatic conversion. SC only, no mixing/dilution/pump/IV; hypoglycemia and product allergy formal contraindications.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=82192527-99aa-4b53-8ce9-9173668d309c",
+          "sourceSection": "Sections2,4",
+          "access": "Retained full selected primary SPL XML and relevant sections independently read; no additional live page access claimed for this assertion.",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning status",
+          "Adverse reactions"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": [],
+      "retainedEvidence": {
+        "detemir-levemir": {
+          "path": "/tmp/nas-drug-sources/detemir-levemir.xml",
+          "sha256": "c3a84e9ee895f87b7a9e084e43757ae382249d553fe7aa9a114b8c3c6f2fb42d"
+        }
+      }
+    },
+    {
+      "drug": "letrozole",
+      "fileSha256": "a6ed6ddd08ae5bab99f33568722cc2474e9b3591b1258b365ccd2e237515b976",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "2.5mg daily with/without food; optimal adjuvant duration unknown despite five-year study exposure; advanced disease until progression. Full section requires cirrhosis AND severe hepatic dysfunction for2.5mg alternate days; CLcr\u226510 no adjustment and no below10 algorithm.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=82b77d74-085f-45ac-a7dd-1f5c038bf406",
+          "sourceSection": "Sections2.1\u20132.6",
+          "access": "Retained full primary SPL XML and extracted sections independently read; matching current public DailyMed page opened.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Pregnancy and known allergy formal contraindications; BMD/lipid monitoring warnings.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=82b77d74-085f-45ac-a7dd-1f5c038bf406",
+          "sourceSection": "Sections4,5",
+          "access": "Retained full selected primary SPL XML and relevant sections independently read; no additional live page access claimed for this assertion.",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning status",
+          "Adverse reactions"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": [],
+      "retainedEvidence": {
+        "letrozole-femara": {
+          "path": "/tmp/nas-drug-sources/letrozole-femara.xml",
+          "sha256": "18ac035b913912c52879c1aa078538c19174a3d8e23abe0260c791275b5e6c77"
+        }
+      }
+    },
+    {
+      "drug": "desogestrel-ethinyl-estradiol",
+      "fileSha256": "a7350054bfc8fc605a8ef630e2d3721ef1029579add9490ac93b49d8f5ed1d43",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "Enskyce21 daily combination0.15mg desogestrel/0.03mg EE then7inactive, next pack without gap; Sunday start first7combination-day backup.",
+          "sourceId": "enskyce",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=799fa1d8-4e7b-4b5e-844d-d638896a4b02",
+          "sourceSection": "Dosage and Administration; Description",
+          "access": "Retained full selected primary SPL XML and relevant sections independently read; no additional live page access claimed for this assertion.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Kariva21 combination0.15/0.02 then TWO inactive then FIVE estrogen-only0.01mg tablets, not five extra placebos. Current pack-specific missed rules not hybridized into an invented estrogen-tail algorithm.",
+          "sourceId": "kariva",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7b11e11f-6977-4109-b9bd-a066e5d1278a",
+          "sourceSection": "Dosage and Administration; Description",
+          "access": "Retained full primary SPL XML and extracted sections independently read; matching current public DailyMed page opened.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Current listed thrombotic/cardiovascular, breast/liver, focal neurologic migraine, pregnancy/allergy and specified HCV-drug restrictions preserved; broader current Enskyce list does not disappear because older Kariva list omits items. Both boxes contraindicate smoking over35.",
+          "sourceId": "enskyce",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=799fa1d8-4e7b-4b5e-844d-d638896a4b02",
+          "sourceSection": "Contraindications; Boxed warning",
+          "access": "Retained full selected primary SPL XML and relevant sections independently read; no additional live page access claimed for this assertion.",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications and eligibility boundaries",
+          "Boxed-warning status",
+          "Adverse reactions"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": [],
+      "retainedEvidence": {
+        "enskyce": {
+          "path": "/tmp/nas-drug-sources/enskyce.xml",
+          "sha256": "00531843d5ab149ca978f5fc2a6eb515801e373b2a553c931318b4706ac61a67"
+        },
+        "kariva": {
+          "path": "/tmp/nas-drug-sources/kariva.xml",
+          "sha256": "c67ce97c220080a192ef35576b87e913cd53893494daf04c35a8964ac9f1a7b2"
+        }
+      },
+      "priorReviewedHash": "586370b61e45156a3f0f5ea4995398db70a39c09fbf04da0fba21d9ba4d67eb2",
+      "revisionReview": "Final actual pack/dose/tail/contra/box wording reread; enumerated primary-source assertions remain matched. Author identifies formatting only; no unobserved whole-object equivalence asserted."
+    },
+    {
+      "drug": "chlorhexidine",
+      "fileSha256": "d4785d4868ceb23ed6074602586b6bda2255ef76f294d556513b261c12af7e0f",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "Peridex0.12%15mL undiluted thirty-second rinse twice daily after brushing, spit; no immediate eating/brushing/other rinse. Dental followup\u22646months; relevant allergy contraindication.",
+          "sourceId": "rinse",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3fcd41c4-875a-4e54-b533-261f198011af",
+          "sourceSection": "Dosage; Contraindications",
+          "access": "Retained full selected primary SPL XML and relevant sections independently read; no additional live page access claimed for this assertion.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Hibiclens4% skin minimum amount/rinse; handwash5mL15seconds; surgical5mL3minutes repeat; patient preop2minutes repeat. Premature/below2months burn caution; not oral rinse.",
+          "sourceId": "skin",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8b37a721-79bb-4051-95a7-fcb4edebfcb7",
+          "sourceSection": "Drug Facts Directions",
+          "access": "Retained full selected primary SPL XML and relevant sections independently read; no additional live page access claimed for this assertion.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "PerioChip2.5mg each pocket\u22655mm up to8visit and3month reassessment; losswithin48hours replace, >48hours no immediate replacement,\u22657days fullcourse. Old selected record transparently dated, no current stock assertion.",
+          "sourceId": "chip",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c40ab6ac-8987-42d2-a95b-95fbfd3b0162",
+          "sourceSection": "Dosage; Description",
+          "access": "Retained full primary SPL XML and extracted sections independently read; matching current public DailyMed page opened.",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed-warning status",
+          "Adverse reactions"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": [],
+      "retainedEvidence": {
+        "peridex": {
+          "path": "/tmp/nas-drug-sources/peridex.xml",
+          "sha256": "a42a78a5af44cbb847ee80dddca6db60eac9cfa2fb8fa9666240c78508dd58ca"
+        },
+        "hibiclens": {
+          "path": "/tmp/nas-drug-sources/hibiclens.xml",
+          "sha256": "06fb56c12a07ceb1152efdcc74f9b97ef9c777f515780327dfc5e3a54e2d9b7a"
+        },
+        "periochip": {
+          "path": "/tmp/nas-drug-sources/periochip.xml",
+          "sha256": "73ec5f56a7c916a3b421a74564f29e53221ac90b7854d88a949bba912e72ef2e"
+        }
+      }
+    },
+    {
+      "drug": "amiodarone",
+      "fileSha256": "b7c4fbc64ea66da82d06b6da56191e9b18a103bffbbc96c72293ca7ae01ba55b",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "Oral life-threatening ventricular regimen800\u20131600mg/day1\u20133weeks then600\u2013800one month/usual400maintenance; oral pulmonary/hepatic/cardiac box and route-specific shock/block/bradycardia/allergy restrictions.",
+          "sourceId": "pacerone",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4c4ec9b0-13a5-49a8-b57b-b3f64e4316a7",
+          "sourceSection": "Sections2,4; Boxed warning",
+          "access": "Retained full selected primary SPL XML and relevant sections independently read; no additional live page access claimed for this assertion.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "IV150mg10minutes then1mg/min6hours then0.5mg/min18hours and720/daymaintenance; supplemental150over10minutes not arrest bolus. Ready premix no dilution, central dedicated/filter; IV-to-oral transition800\u20131600/<1week,600\u2013800/1\u20133weeks,400/>3weeks at720/dayIV assumption.",
+          "sourceId": "nexterone",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e9108958-b8d7-4fba-87c3-9a32990de551",
+          "sourceSection": "Section2",
+          "access": "Retained full selected primary SPL XML and relevant sections independently read; no additional live page access claimed for this assertion.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "50mg/mL concentrate D5W dilution/pump/filter;150in100 and900in500, >2mg/mL prolonged infusion central; initialrate\u226430mg/min. No automatic premix preparation transfer.",
+          "sourceId": "amioiv",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0a28ae25-7cc4-4ac0-a2ba-7820fb93e25c",
+          "sourceSection": "Section2",
+          "access": "Retained full selected primary SPL XML and relevant sections independently read; no additional live page access claimed for this assertion.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "AHA2025 refractory VF/pulselessVT cardiac arrest first300mg IV/IO bolus/second150; not pulse-present hospital infusion.",
+          "sourceId": "amio-arrest2025",
+          "sourceUrl": "https://professional.heart.org/-/media/CPR-Files/CPR-Guidelines-Files/2025-Algorithms/Algorithm-ACLS-CA-Circular-250620.pdf",
+          "sourceSection": "Complete one-page adult cardiac arrest algorithm",
+          "access": "Full current official AHA one-page PDF independently opened through web tool.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "100\u2013200mg/day chronic AF maintenance is separate guideline scope; original recommendation for normal LV function reserves due adverse effects when alternatives ineffective/not preferred/contraindicated. No autonomous loading recommendation.",
+          "sourceId": "amio-af2023",
+          "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11095842/",
+          "sourceSection": "Long-term rhythm-control recommendation5",
+          "access": "Retained full public primary NIH author manuscript relevant complete recommendation paragraph independently read; no paywall access claimed.",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning status",
+          "Adverse reactions"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": [],
+      "retainedEvidence": {
+        "pacerone": {
+          "path": "/tmp/nas-drug-sources/pacerone.xml",
+          "sha256": "9b1819e74beffddf8520d9b3c2c13ffd25e66b65e2b6ed0768acbdb38a4e23ef"
+        },
+        "nexterone": {
+          "path": "/tmp/nas-drug-sources/nexterone.xml",
+          "sha256": "a17ba40c3467429d461328c46da0d870b4e3030f41a2045a66c18765a282840e"
+        },
+        "amioiv": {
+          "path": "/tmp/nas-drug-sources/amioiv.xml",
+          "sha256": "d2d17389c9a84ef10510e81031a43e924a96358f6a00aaf0379af15c1eef7db5"
+        }
+      }
+    },
+    {
+      "drug": "ethinyl-estradiol-norelgestromin",
+      "fileSha256": "c1b191d77389dde7f9af01ebbdc003be999824bd5e25b5cfd86ad9ffbf832270",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "One intact patch weekly three weeks then one patch-free week\u22647days, nextcycle immediately; no cutting/multiple patches.",
+          "sourceId": "xulane",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f7848550-086a-43d8-8ae5-047f4b9e4382",
+          "sourceSection": "Section2.1",
+          "access": "Retained full selected primary SPL XML and relevant sections independently read; no additional live page access claimed for this assertion.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Label detached<1day reapply/replace keep day;>1day/unknown newcycle+7daybackup; exactly24hours explicitly unresolved. Midcycle up to48 versus\u226548 overlap uses safer\u226548newcyclebackup and clinician confirmation.",
+          "sourceId": "zafemycurrent",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fbbd12dd-c538-2869-e053-6294a90a1a38",
+          "sourceSection": "Section2.3",
+          "access": "Retained full selected primary SPL XML and relevant sections independently read; no additional live page access claimed for this assertion.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "CDC figure2 DIFFERENT\u226548hourdetachment/delay plan keep day,7consecutivepatchdays backup,week3omit hormone-free week and firstweek unprotectedsexprevious5daysconsiderEC exceptUPA. Separate plan not hybrid label instructions.",
+          "sourceId": "cdc-spr",
+          "sourceUrl": "https://www.cdc.gov/contraception/hcp/usspr/combined-hormonal-contraceptives.html",
+          "sourceSection": "Figure2 text description",
+          "access": "Current full official CDC SPR2024 webpage independently opened, complete figure2 text description read.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Both selected patch boxes/contra explicitlyBMI\u226530 and smoker>35; thrombosis/liver/breast/migraine/HCV regimen restrictions retained despite broader general guideline obesity scope.",
+          "sourceId": "zafemycurrent",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fbbd12dd-c538-2869-e053-6294a90a1a38",
+          "sourceSection": "Section4; Boxed warning",
+          "access": "Retained full selected primary SPL XML and relevant sections independently read; no additional live page access claimed for this assertion.",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning status",
+          "Adverse reactions"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": [],
+      "retainedEvidence": {
+        "xulane": {
+          "path": "/tmp/nas-drug-sources/xulane.xml",
+          "sha256": "b6c9b3c683d49a829d305a854abb9b59bb3ae2dfafc5439ccd5f752aafe92f07"
+        },
+        "zafemycurrent": {
+          "path": "/tmp/nas-drug-sources/zafemycurrent.xml",
+          "sha256": "c7515d97b930dc391856a5c42bd32c87da039d2d88523c7391c67cec288aeedf"
+        }
+      }
+    }
+  ],
+  "pending": [],
+  "limitations": []
+}
