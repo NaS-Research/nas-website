@@ -1,0 +1,138 @@
+{
+  "date": "2026-10-01",
+  "recordedAtUTC": "2026-10-01T16:52:47.117742+00:00",
+  "unit": "parenteral-nutrition:approved-access-selection-and-assessment",
+  "branch": "audit/rxprep-content-2026-09-24",
+  "baseCommit": "bdf3c324c2fe92f6d04f6bcd704987d670a11671",
+  "contentCommit": "f6ed6a200ab1ae6c51b3f4662c542ffccfc84a5b",
+  "contentPush": "verified",
+  "remoteVerification": {
+    "command": "git ls-remote origin refs/heads/audit/rxprep-content-2026-09-24",
+    "observedHash": "f6ed6a200ab1ae6c51b3f4662c542ffccfc84a5b",
+    "exactMatch": true
+  },
+  "evidence": "parenteral-nutrition-access-review.json",
+  "coverage": {
+    "baseEvidence": "parenteral-nutrition-home-monitoring-review.json",
+    "baseVerifiedBank": 131,
+    "bank": 142,
+    "currentVerifiedBank": 133,
+    "additionalVerifiedRetainedIds": [
+      "parenteral-nutrition-012",
+      "parenteral-nutrition-013"
+    ],
+    "newVerifiedIds": [],
+    "remainingBank": 9,
+    "remainingBankItemIds": [
+      "parenteral-nutrition-020",
+      "parenteral-nutrition-025",
+      "parenteral-nutrition-027",
+      "parenteral-nutrition-030",
+      "parenteral-nutrition-031",
+      "parenteral-nutrition-033",
+      "parenteral-nutrition-044",
+      "parenteral-nutrition-045",
+      "parenteral-nutrition-103"
+    ],
+    "embeddedVerified": 6,
+    "embedded": 6,
+    "currentCumulativeVerified": 5,
+    "cumulative": 5,
+    "originalTeachingFullyVerified": 17,
+    "originalTeachingRemaining": 7,
+    "newApprovedSourceSectionsThisUnit": 0,
+    "newApprovedSourceSectionsAcrossUnits": 10,
+    "bookAddedSectionsAcrossUnits": 23,
+    "totalSections": 57,
+    "totalFullySourceVerifiedSectionBodies": 50,
+    "figuresFullyVerified": 4,
+    "figuresRemainingPartlySupported": 2,
+    "wholeModuleVerified": false,
+    "wholeChapterVerified": false,
+    "remainingOriginalTeachingBodies": [
+      {
+        "lesson": "macronutrient-design",
+        "heading": "Set protein from clinical demand"
+      },
+      {
+        "lesson": "macronutrient-design",
+        "heading": "Advance dextrose within metabolic capacity"
+      },
+      {
+        "lesson": "micronutrient-balance",
+        "heading": "Prescribe electrolytes as a pattern"
+      },
+      {
+        "lesson": "micronutrient-balance",
+        "heading": "Provide complete vitamins"
+      },
+      {
+        "lesson": "micronutrient-balance",
+        "heading": "Individualize trace elements"
+      },
+      {
+        "lesson": "compounding-safety",
+        "heading": "Choose a formulation deliberately"
+      },
+      {
+        "lesson": "monitoring-transition",
+        "heading": "Separate overfeeding from intolerance"
+      }
+    ],
+    "remainingPartlySupportedFigureIds": [
+      "macronutrient-design",
+      "micronutrient-balance"
+    ]
+  },
+  "validation": {
+    "isolatedBuildStaticPages": 567,
+    "focusedStructuralAudit": "passed",
+    "technical": "passed",
+    "browser": {
+      "status": "passed",
+      "results": [
+        {
+          "width": 1440,
+          "renderedBodies": 57,
+          "figuresPresent": 6,
+          "embeddedChecks": 6,
+          "repairedQuestionsCorrectAndWrong": 2,
+          "moduleFillerQuestions": 8,
+          "currentPNCumulativeCorrectAndWrong": 5,
+          "remediationLinkPassed": true,
+          "localProgressPassed": true
+        },
+        {
+          "width": 390,
+          "renderedBodies": 57,
+          "figuresPresent": 6,
+          "embeddedChecks": 6,
+          "repairedQuestionsCorrectAndWrong": 2,
+          "moduleFillerQuestions": 8,
+          "currentPNCumulativeCorrectAndWrong": 5,
+          "remediationLinkPassed": true,
+          "localProgressPassed": true
+        }
+      ],
+      "pageErrors": []
+    },
+    "manualVisual": "Central-access body and both repaired questions correct/incorrect at1440/390; additional framed mobile captures reviewed.",
+    "candidateContentHashes": {
+      "src/data/modules/parenteralNutrition.js": "9cece9def900ca7f6822cbe5b66e39b9614d5f3b6cc94963eaffa49f23cf5828",
+      "src/data/questionBanks/parenteralNutrition.js": "b726547e1f00e12b43764415b8abd4ea1e49779888ac4e11232e7a40e751286f"
+    },
+    "nonTargetLedgerBytesPreserved": true
+  },
+  "preserved": {
+    "all142ExistingIDsPromptsKeysAnchors": true,
+    "all6EmbeddedChecks": true,
+    "siteArchitectureAndBackend": true,
+    "unrelatedWorkingChangesExcluded": true,
+    "privateBookAssetsExcluded": true
+  },
+  "production": "not verified; audit branch push only",
+  "wholeModuleVerified": false,
+  "wholeChapterVerified": false,
+  "goal": "active; complete82-chapter scope unchanged",
+  "nextAction": "Finish remaining nine PN questions, seven original bodies, two partial figures and legacy monitoring; then complete full-module reconciliation. Chapter11 and checklist entry15 remain reviewing;14 checklist entries complete."
+}
