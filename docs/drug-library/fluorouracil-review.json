@@ -1,0 +1,1179 @@
+{
+  "slug": "fluorouracil",
+  "checked": "2026-10-01",
+  "status": "source_reviewed",
+  "scope": "A cytotoxic antimetabolite with oncology IV regimens and separate dermatologic creams/solutions. This profile reviews current selected U.S. IV, Efudex,0.5% cream and Tolak 4% labels; indication, exposure, pregnancy restrictions and dose schedules differ by route. IV regimens are label examples for specialist protocols, not independent chemotherapy instructions.",
+  "sources": [
+    {
+      "id": "label",
+      "title": "Fluorouracil IV · Fresenius Kabi current full label",
+      "publisher": "DailyMed / official U.S. product labeling",
+      "note": "Current HTML highlights revised March 2026; boxed warning/DPYD major changes October 2025; extracted full-section text omits highlights revision; SPL v 6 effective 20260609; API publication Jun 26, 2026. Clinical revision is distinct from publication. Checked October 1, 2026.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a85ab26a-05ea-498f-8f34-564a925fa9d9"
+    },
+    {
+      "id": "efudex",
+      "title": "Efudex cream/solutions · Bausch current full label",
+      "publisher": "DailyMed / official U.S. product labeling",
+      "note": "Clinical footer March 2024; SPL v 20 effective 20250423; API publication Apr 25, 2025. Clinical revision is distinct from publication. Checked October 1, 2026.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=35de1c1c-bef5-46c5-b6f8-ea032147411c"
+    },
+    {
+      "id": "half",
+      "title": "Fluorouracil 0.5% cream · Dr. Reddy full label",
+      "publisher": "DailyMed / official U.S. product labeling",
+      "note": "Clinical footer July 2025; SPL v 1 effective 20250711; API publication Jul 14, 2025. Clinical revision is distinct from publication. Checked October 1, 2026.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=37dcfb83-0e7d-d23d-9cd5-afa5bdc30628"
+    },
+    {
+      "id": "tolak",
+      "title": "Tolak 4% cream · Hill full label",
+      "publisher": "DailyMed / official U.S. product labeling",
+      "note": "Current HTML highlights revised August 2022 and Patient Information issued August 2022; parsed full-section text omits highlights revision; SPL v 6 effective 20220906; API publication Sep 28, 2022. Clinical revision is distinct from publication. Checked October 1, 2026.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=59de2709-00b8-4f0a-867c-f0dfeb947192"
+    },
+    {
+      "id": "rescue",
+      "title": "Vistogard · BTG current emergency-antidote label",
+      "publisher": "DailyMed / official U.S. product labeling",
+      "note": "Current HTML highlights revised October 2023 and Patient Information issued October 2023; contextual emergency indication/dosing scope only; SPL v 3 effective 20260331; API publication Apr 14, 2026. Clinical revision is distinct from publication. Checked October 1, 2026.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=269f7363-63ed-444e-85f1-f0009e44818b"
+    }
+  ],
+  "sourceEvidence": {
+    "label": {
+      "splVersion": "6",
+      "effectiveTime": "20260609",
+      "apiPublishedDate": "Jun 26, 2026",
+      "clinicalRevision": "Current HTML highlights revised March 2026; boxed warning/DPYD major changes October 2025; extracted full-section text omits highlights revision; SPL v 6 effective 20260609; API publication Jun 26, 2026. Clinical revision is distinct from publication. Checked October 1, 2026.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a85ab26a-05ea-498f-8f34-564a925fa9d9",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/a85ab26a-05ea-498f-8f34-564a925fa9d9.xml",
+      "localEvidence": "/tmp/nas-drug-sources/fluoro-iv.xml",
+      "sha256": "54e21b8d1065d3dcb09c0d7ffeb48c5d336645cdedd81888aba82b1b179aced6",
+      "supportingSections": [
+        "WARNING: SERIOUS ADVERSE REACTIONS OR DEATH IN PATIENTS WITH COMPLETE DPD DEFICIENCY ",
+        "1 INDICATIONS AND USAGE",
+        "1.1\tAdenocarcinoma of the Colon and Rectum ",
+        "1.2\tAdenocarcinoma of the Breast ",
+        "1.3\tGastric Adenocarcinoma ",
+        "1.4\tPancreatic Adenocarcinoma ",
+        "2.1 Evaluation and Testing for DPD Deficiency Before Initiating Fluorouracil",
+        "2.2 General Dosage Information ",
+        "2.3 Recommended Dosage for Adenocarcinoma of the Colon and Rectum",
+        "2.4 Recommended Dosage for Adenocarcinoma of the Breast",
+        "2.5 Recommended Dosage for Gastric Adenocarcinoma",
+        "2.6 Recommended Dosage for Pancreatic Adenocarcinoma",
+        "2.7 Dose Modifications",
+        "2.8 Preparation for Administration",
+        "2.9 Administration",
+        "3 DOSAGE FORMS AND STRENGTHS",
+        "4 CONTRAINDICATIONS",
+        "5.1 Serious Adverse Reactions or Death from Dihydropyrimidine Dehydrogenase (DPD) Deficiency",
+        "5.2 Cardiotoxicity",
+        "5.3 Hyperammonemic Encephalopathy",
+        "5.4 Neurologic Toxicity",
+        "5.5 Diarrhea",
+        "5.6 Palmar-Plantar Erythrodysesthesia (Hand-Foot Syndrome)",
+        "5.7 Myelosuppression",
+        "5.8 Mucositis",
+        "5.9 Increased Risk of Elevated International Normalized Ratio (INR) with Warfarin",
+        "5.10 Embryofetal Toxicity",
+        "6 ADVERSE REACTIONS",
+        "6.2 Postmarketing Experience",
+        "7.1 Anticoagulants and CYP 2C9 Substrates",
+        "8.1 Pregnancy",
+        "8.3 Nursing Mothers",
+        "8.4 Pediatric Use",
+        "8.5 Geriatric Use",
+        "8.6 Females and Males of Reproductive Potential",
+        "10 OVERDOSAGE",
+        "11 DESCRIPTION",
+        "12.1 Mechanism of Action",
+        "12.3 Pharmacokinetics",
+        "12.5 Pharmacogenomics ",
+        "15 REFERENCES",
+        "16.1 How Supplied",
+        "16.2 Storage",
+        "17 PATIENT COUNSELING INFORMATION",
+        "",
+        ""
+      ],
+      "access": "Full clinically relevant public supporting sections read; nonclinical carcinogenesis text not used for claims",
+      "checked": "2026-10-01",
+      "htmlHighlightsEvidence": {
+        "localEvidence": "/tmp/nas-drug-sources/fluoro-iv-current.html",
+        "sha256": "f9509a01bcb9ff29b8b61063066f04baaccd85943bf8c7d1d39404b08bf25e67",
+        "checked": "2026-10-01",
+        "clinicalRevision": "March 2026",
+        "recentMajorDPYDChanges": "October 2025",
+        "interpretation": "Revision appears in current HTML highlights, omitted by extracted full-section text; not absent from current label."
+      }
+    },
+    "efudex": {
+      "splVersion": "20",
+      "effectiveTime": "20250423",
+      "apiPublishedDate": "Apr 25, 2025",
+      "clinicalRevision": "Clinical footer March 2024; SPL v 20 effective 20250423; API publication Apr 25, 2025. Clinical revision is distinct from publication. Checked October 1, 2026.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=35de1c1c-bef5-46c5-b6f8-ea032147411c",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/35de1c1c-bef5-46c5-b6f8-ea032147411c.xml",
+      "localEvidence": "/tmp/nas-drug-sources/efudex.xml",
+      "sha256": "bd8e3fadf724de87b033ea0a72491eadae6db51315a2699db8f88970c3969919",
+      "supportingSections": [
+        "DESCRIPTION:",
+        "CLINICAL PHARMACOLOGY:",
+        "INDICATIONS AND USAGE:",
+        "CONTRAINDICATIONS:",
+        "WARNINGS: Application to mucous membranes should be avoided due to the possibility of local inflammation and ulceration. Additionally, cases of miscarriage and a birth defect (ventricular septal defect) have been reported when EFUDEX was applied to mucous membrane areas during pregnancy.",
+        "PRECAUTIONS:",
+        "        ",
+        "          ",
+        "     ",
+        "       ",
+        "              ",
+        "ADVERSE REACTIONS:",
+        "OVERDOSAGE:",
+        "DOSAGE AND ADMINISTRATION:",
+        "HOW SUPPLIED:",
+        "PACKAGE/LABEL PRINCIPAL DISPLAY PANEL-40 g Cream Carton",
+        "Package/Label Display Panel-Solution Carton",
+        "Package/Label Display Panel-Solution Carton"
+      ],
+      "access": "Full clinically relevant public supporting sections read; nonclinical carcinogenesis text not used for claims",
+      "checked": "2026-10-01"
+    },
+    "half": {
+      "splVersion": "1",
+      "effectiveTime": "20250711",
+      "apiPublishedDate": "Jul 14, 2025",
+      "clinicalRevision": "Clinical footer July 2025; SPL v 1 effective 20250711; API publication Jul 14, 2025. Clinical revision is distinct from publication. Checked October 1, 2026.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=37dcfb83-0e7d-d23d-9cd5-afa5bdc30628",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/37dcfb83-0e7d-d23d-9cd5-afa5bdc30628.xml",
+      "localEvidence": "/tmp/nas-drug-sources/fluoro-half.xml",
+      "sha256": "969ec0afac106dd7eb4c0c39bfa6163032b67f3e3c9e35f6d0be5350951cf477",
+      "supportingSections": [
+        "DESCRIPTION",
+        "CLINICAL PHARMACOLOGY",
+        "INDICATIONS AND USAGE",
+        "CONTRAINDICATIONS",
+        "WARNINGS",
+        "General",
+        "Information for the Patient",
+        "Laboratory Tests",
+        "Pediatric Use",
+        "Geriatric Use",
+        "Pregnancy",
+        "Nursing Women",
+        "ADVERSE REACTIONS",
+        "DOSAGE AND ADMINISTRATION",
+        "OVERDOSE",
+        "HOW SUPPLIED",
+        "",
+        "PATIENT INFORMATION",
+        "PACKAGE LABEL PRINCIPAL DISPLAY PANEL SECTION"
+      ],
+      "access": "Full clinically relevant public supporting sections read; nonclinical carcinogenesis text not used for claims",
+      "checked": "2026-10-01"
+    },
+    "tolak": {
+      "splVersion": "6",
+      "effectiveTime": "20220906",
+      "apiPublishedDate": "Sep 28, 2022",
+      "clinicalRevision": "Current HTML highlights revised August 2022 and Patient Information issued August 2022; parsed full-section text omits highlights revision; SPL v 6 effective 20220906; API publication Sep 28, 2022. Clinical revision is distinct from publication. Checked October 1, 2026.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=59de2709-00b8-4f0a-867c-f0dfeb947192",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/59de2709-00b8-4f0a-867c-f0dfeb947192.xml",
+      "localEvidence": "/tmp/nas-drug-sources/tolak.xml",
+      "sha256": "8d90039bd88482e37454d7126d6f43a0210aacad8dbce647e9c98172b349964d",
+      "supportingSections": [
+        "1 INDICATIONS AND USAGE",
+        "2 DOSAGE AND ADMINISTRATION",
+        "3 DOSAGE FORMS AND STRENGTHS",
+        "4 CONTRAINDICATIONS",
+        "4.1 Pregnancy ",
+        "4.2 Dihydropyrimidine Dehydrogenase Deficiency ",
+        "5.1 Application Site Adverse Reactions ",
+        "5.2 Hypersensitivity Reactions ",
+        "5.3 Ophthalmic Adverse Reactions ",
+        "5.4 Photosensitivity ",
+        "5.5 Embryofetal Toxicity ",
+        "5.6 Toxicity in Patients with Dihydropyrimidine Dehydrogenase Deficiency",
+        "6 ADVERSE REACTIONS",
+        "6.1 Clinical Trials Experience ",
+        "6.2 Postmarketing Experience ",
+        "7 DRUG INTERACTIONS",
+        "",
+        "8.3 Nursing Mothers",
+        "8.4 Pediatric Use",
+        "8.5 Geriatric Use",
+        "11 DESCRIPTION",
+        "12.1 Mechanism of Action",
+        "12.3 Pharmacokinetics",
+        "14 CLINICAL STUDIES",
+        "16.1 How Supplied ",
+        "16.2 Storage and Handling ",
+        "17 PATIENT COUNSELING INFORMATION",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "PATIENT INFORMATION Tolak (tol lak) (fluorouracil) Cream, 4%",
+        "PRINCIPAL DISPLAY PANEL - 40 g Tube Carton"
+      ],
+      "access": "Full clinically relevant public supporting sections read; nonclinical carcinogenesis text not used for claims",
+      "checked": "2026-10-01",
+      "htmlHighlightsEvidence": {
+        "localEvidence": "/tmp/nas-drug-sources/tolak-current.html",
+        "sha256": "e43b92fe60f16daccbc2865b96a4948f462b63a0931d2ce3f5d3b9b0cad60533",
+        "checked": "2026-10-01",
+        "clinicalRevision": "August 2022",
+        "interpretation": "Current HTML highlights revision independently verified; parsed full-section text does not include highlights revision."
+      }
+    },
+    "rescue": {
+      "splVersion": "3",
+      "effectiveTime": "20260331",
+      "apiPublishedDate": "Apr 14, 2026",
+      "clinicalRevision": "Current HTML highlights revised October 2023 and Patient Information issued October 2023; contextual emergency indication/dosing scope only; SPL v 3 effective 20260331; API publication Apr 14, 2026. Clinical revision is distinct from publication. Checked October 1, 2026.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=269f7363-63ed-444e-85f1-f0009e44818b",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/269f7363-63ed-444e-85f1-f0009e44818b.xml",
+      "localEvidence": "/tmp/nas-drug-sources/vistogard.xml",
+      "sha256": "ae6c16e20025a7b3f09f43e073e85e60409f202d67cf1fa816e65b067284bffe",
+      "supportingSections": [
+        "1 INDICATIONS AND USAGE",
+        "",
+        "2.1 Recommended Dosage",
+        "2.2 Preparation and Administration",
+        "17 PATIENT COUNSELING INFORMATION",
+        ""
+      ],
+      "access": "Full clinically relevant public supporting sections read; nonclinical carcinogenesis text not used for claims",
+      "checked": "2026-10-01",
+      "htmlHighlightsEvidence": {
+        "localEvidence": "/tmp/nas-drug-sources/vistogard-current.html",
+        "sha256": "85e48355b8c902d255e414f815ffed36198362f8eab9928e1bc6cbd00548b3b0",
+        "checked": "2026-10-01",
+        "clinicalRevision": "October 2023",
+        "interpretation": "Current HTML highlights revision independently verified; parsed full-section text does not include highlights revision."
+      }
+    }
+  },
+  "assertionMap": [
+    {
+      "section": "indications",
+      "card": "IV labeled cancers",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Indications and usage"
+        ]
+      },
+      "claims": [
+        "Selected IV label treats adenocarcinoma of colon/rectum, breast, stomach and pancreas. Tumor type, protocol, response and patient risks determine treatment; no guideline-preferred regimen, stage-specific choice or unreviewed off-label tumor indication asserted."
+      ]
+    },
+    {
+      "section": "indications",
+      "card": "Topical indications",
+      "sourceIds": [
+        "efudex",
+        "half",
+        "tolak"
+      ],
+      "sourceSectionsById": {
+        "efudex": [
+          "Indications and usage"
+        ],
+        "half": [
+          "Indications and usage"
+        ],
+        "tolak": [
+          "Indications and usage"
+        ]
+      },
+      "claims": [
+        "Efudex: multiple actinic/solar keratoses; ONLY 5% also superficial basal-cell carcinoma when conventional treatment is impractical, with diagnosis confirmed. It is not established for other BCC types.0.5% selected cream: multiple actinic/solar keratoses of face/anterior scalp, adults. Tolak 4%: actinic keratoses face/ears/scalp; pediatric use not intended. No universal BCC indication across strengths."
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Selected IV label examples",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Dosage and administration",
+          "Instructions for use",
+          "Population restrictions"
+        ]
+      },
+      "claims": [
+        [
+          "Colon/rectum, infusional combination",
+          "400 mg/m² IV bolus day 1, then 2, 400–3, 000 mg/m² continuous 46-hour infusion every 2 weeks with leucovorin, with/without oxaliplatin or irinotecan."
+        ],
+        [
+          "Colon/rectum, bolus with leucovorin",
+          "500 mg/m² IV bolus days 1, 8, 15, 22, 29, 36 of 8-week cycles."
+        ],
+        [
+          "Breast, cyclophosphamide-based multidrug",
+          "500 or 600 mg/m² IV days 1 and 8 every 28 days for 6 cycles."
+        ],
+        [
+          "Gastric, platinum-containing multidrug",
+          "200–1, 000 mg/m² continuous IV over 24 hours; frequency/cycle length depends on chosen dose/protocol."
+        ],
+        [
+          "Pancreatic, leucovorin-containing infusion",
+          "400 mg/m² IV bolus day 1, then 2, 400 mg/m² continuous 46-hour infusion every 2 weeks."
+        ]
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "DPYD and IV dose modification",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Dosage and administration",
+          "Instructions for use",
+          "Population restrictions"
+        ]
+      },
+      "claims": [
+        "Test DPYD before initiation unless immediate treatment necessary. Avoid complete DPD deficiency; partial deficiency requires individualized dosing/tolerability/intention review, no fixed reduction supplied. Withhold for cardiotoxicity, hyperammonemic/neurologic toxicity, grade 3–4 diarrhea/mucositis, grade 2–3 hand-foot syndrome or grade 4 myelosuppression. For diarrhea/mucositis/myelosuppression/hand-foot toxicity, resume at reduced dose after resolution or improvement to grade 1. No recommended restart dose after cardiac, hyperammonemic or specified neurologic toxicity. Clinical team controls grading/rechallenge."
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Topical schedules",
+      "sourceIds": [
+        "efudex",
+        "half",
+        "tolak"
+      ],
+      "sourceSectionsById": {
+        "efudex": [
+          "Dosage and administration",
+          "Instructions for use",
+          "Population restrictions"
+        ],
+        "half": [
+          "Dosage and administration",
+          "Instructions for use",
+          "Population restrictions"
+        ],
+        "tolak": [
+          "Dosage and administration",
+          "Instructions for use",
+          "Population restrictions"
+        ]
+      },
+      "claims": [
+        [
+          "Efudex, actinic keratoses",
+          "Cream/solution twice daily; stop when inflammatory response reaches erosion. Usual 2–4 weeks; healing may take 1–2 months after stopping."
+        ],
+        [
+          "Efudex 5%, superficial BCC",
+          "Twice daily≥3–6 weeks; sometimes 10–12 weeks under specialist supervision, with follow-up to establish cure. Not a self-directed extension."
+        ],
+        [
+          "0.5% cream, face/anterior scalp AK",
+          "Thin film once daily up to 4 weeks as tolerated; wash/rinse/dry area, wait 10 minutes, apply; wash hands. Patient leaflet permits moisturizer/sunscreen 2 hours later; other products only if instructed."
+        ],
+        [
+          "Tolak 4%, face/ears/scalp AK",
+          "Wash/rinse/dry; thin film once daily for 4 weeks as tolerated, massage gently and wash hands. No periocular/mucosal application."
+        ]
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Preparation and route boundaries",
+      "sourceIds": [
+        "label",
+        "efudex",
+        "half",
+        "tolak"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Dosage and administration",
+          "Instructions for use",
+          "Population restrictions"
+        ],
+        "efudex": [
+          "Dosage and administration",
+          "Instructions for use",
+          "Population restrictions"
+        ],
+        "half": [
+          "Dosage and administration",
+          "Instructions for use",
+          "Population restrictions"
+        ],
+        "tolak": [
+          "Dosage and administration",
+          "Instructions for use",
+          "Population restrictions"
+        ]
+      },
+      "claims": [
+        "IV specialist aseptic cytotoxic preparation, central venous line/pump for continuous infusion; no simultaneous other drugs in same IV line. Selected syringe/diluted solution storage≤4 hours at 25°C before administration; discard unused single-dose vial. Topicals are skin-only, not swallowed, injected, ophthalmic or intravaginal; avoid airtight dressings and inadvertent transfer. No interchangeable frequency by percentage or independent regimen conversion."
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "sourceIds": [
+        "label",
+        "efudex",
+        "half",
+        "tolak"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Contraindications",
+          "Warnings",
+          "Precautions",
+          "Adverse reactions",
+          "Overdosage",
+          "Boxed warning status"
+        ],
+        "efudex": [
+          "Contraindications",
+          "Warnings",
+          "Precautions",
+          "Adverse reactions",
+          "Overdosage",
+          "Boxed warning status"
+        ],
+        "half": [
+          "Contraindications",
+          "Warnings",
+          "Precautions",
+          "Adverse reactions",
+          "Overdosage",
+          "Boxed warning status"
+        ],
+        "tolak": [
+          "Contraindications",
+          "Warnings",
+          "Precautions",
+          "Adverse reactions",
+          "Overdosage",
+          "Boxed warning status"
+        ]
+      },
+      "claims": [
+        "IV: DPD deficiency may cause fatal early mucositis, diarrhea, neutropenia or neurotoxicity; test DPYD unless immediate therapy needed. Serious toxicity can occur with a negative variant result. Withhold/permanently discontinue according to onset/severity and oncology assessment.",
+        "IV cardiotoxicity includes ischemia, arrhythmia and heart failure: withhold and seek emergency assessment for chest pain, dyspnea, faintness. Infusion and coronary disease are reported risk factors; rechallenge risks are unestablished.",
+        "IV confusion/ataxia/visual disturbance or hyperammonemic encephalopathy (even without liver disease) require holding and urgent treatment. Severe diarrhea/mucositis, myelosuppression and hand-foot reactions require grade-based holds/support/reduction.",
+        "Topical: redness, crusting/burning/erosion are expected, but severe distant eczema/allergy or systemic abdominal pain, bloody diarrhea, vomiting, fever/chills require stopping and urgent assessment. Inflamed/ulcerated skin and occlusion can increase absorption/reaction.",
+        "Topical avoid eyes/mucosa and UV exposure during/immediately after treatment; accidental eye exposure: copious water and medical review. Tolak contains peanut oil; stop for hypersensitivity.",
+        "Fetal harm and route-specific contraception restrictions matter. Prevent pets from licking treated skin/residue or accessing containers: fluorouracil ingestion can be fatal; emergency veterinary care if exposed."
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "sourceIds": [
+        "label",
+        "efudex",
+        "half",
+        "tolak"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Contraindications",
+          "Warnings",
+          "Precautions",
+          "Adverse reactions",
+          "Overdosage",
+          "Boxed warning status"
+        ],
+        "efudex": [
+          "Contraindications",
+          "Warnings",
+          "Precautions",
+          "Adverse reactions",
+          "Overdosage",
+          "Boxed warning status"
+        ],
+        "half": [
+          "Contraindications",
+          "Warnings",
+          "Precautions",
+          "Adverse reactions",
+          "Overdosage",
+          "Boxed warning status"
+        ],
+        "tolak": [
+          "Contraindications",
+          "Warnings",
+          "Precautions",
+          "Adverse reactions",
+          "Overdosage",
+          "Boxed warning status"
+        ]
+      },
+      "claims": [
+        "Selected IV section 4 lists none, while boxed warning/2.1/5.1 directs avoidance with complete DPD deficiency; do not mistake “none” for permission in this high-risk group. Efudex/0.5% contraindicate pregnancy or potential pregnancy during therapy and ingredient hypersensitivity, and state not to use with DPD deficiency. Tolak formal contraindications are pregnancy and DPD deficiency; peanut/other allergy is a stop/avoid-review warning, not an invented additional section 4 item."
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Boxed warning · IV complete DPD deficiency",
+      "sourceIds": [
+        "label",
+        "efudex",
+        "half",
+        "tolak"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Contraindications",
+          "Warnings",
+          "Precautions",
+          "Adverse reactions",
+          "Overdosage",
+          "Boxed warning status"
+        ],
+        "efudex": [
+          "Contraindications",
+          "Warnings",
+          "Precautions",
+          "Adverse reactions",
+          "Overdosage",
+          "Boxed warning status"
+        ],
+        "half": [
+          "Contraindications",
+          "Warnings",
+          "Precautions",
+          "Adverse reactions",
+          "Overdosage",
+          "Boxed warning status"
+        ],
+        "tolak": [
+          "Contraindications",
+          "Warnings",
+          "Precautions",
+          "Adverse reactions",
+          "Overdosage",
+          "Boxed warning status"
+        ]
+      },
+      "claims": [
+        "Current selected IV box: serious adverse reactions/death in complete DPD deficiency, test DPYD before therapy unless immediate treatment necessary, avoid specified homozygous/compound heterozygous variants producing complete deficiency. No proven safe dose. Selected topical labels have no boxed warning; their DPD/pregnancy restrictions still apply."
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions and overdose",
+      "sourceIds": [
+        "label",
+        "efudex",
+        "half",
+        "tolak",
+        "rescue"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Contraindications",
+          "Warnings",
+          "Precautions",
+          "Adverse reactions",
+          "Overdosage",
+          "Boxed warning status"
+        ],
+        "efudex": [
+          "Contraindications",
+          "Warnings",
+          "Precautions",
+          "Adverse reactions",
+          "Overdosage",
+          "Boxed warning status"
+        ],
+        "half": [
+          "Contraindications",
+          "Warnings",
+          "Precautions",
+          "Adverse reactions",
+          "Overdosage",
+          "Boxed warning status"
+        ],
+        "tolak": [
+          "Contraindications",
+          "Warnings",
+          "Precautions",
+          "Adverse reactions",
+          "Overdosage",
+          "Boxed warning status"
+        ],
+        "rescue": [
+          "Contraindications",
+          "Warnings",
+          "Precautions",
+          "Adverse reactions",
+          "Overdosage",
+          "Boxed warning status"
+        ]
+      },
+      "claims": [
+        "IV severe marrow/GI/cardiac/neurotoxicity, hand-foot syndrome, nausea/vomiting, skin/nail/ocular effects and allergy are reported. Topicals commonly cause local irritation and occasional eye reaction/allergy; severe systemic toxicity is possible in susceptible patients. IV overdose or early unusually severe systemic toxicity is an emergency: current IV label specifies uridine triacetate within 96 hours after infusion ends; Vistogard supports overdose regardless of symptoms or defined early severe toxicity, start promptly within 96 hours. Later-start effectiveness unestablished, not a reason to delay emergency review. No home vomiting/lavage or animalLD 50 safety extrapolation."
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Systemic anticoagulants",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Drug interactions",
+          "Precautions",
+          "Clinical pharmacology"
+        ]
+      },
+      "claims": [
+        "Clinically important INR/prothrombin-time rises with warfarin/coumarin anticoagulants: monitor closely and adjust anticoagulant through treating team. Selected label suggests possible CYP2C9 inhibition based partly on prodrug context; no universal established numerical interaction magnitude or dose change."
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Topical products and protocol combinations",
+      "sourceIds": [
+        "label",
+        "efudex",
+        "half",
+        "tolak"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Drug interactions",
+          "Precautions",
+          "Clinical pharmacology"
+        ],
+        "efudex": [
+          "Drug interactions",
+          "Precautions",
+          "Clinical pharmacology"
+        ],
+        "half": [
+          "Drug interactions",
+          "Precautions",
+          "Clinical pharmacology"
+        ],
+        "tolak": [
+          "Drug interactions",
+          "Precautions",
+          "Clinical pharmacology"
+        ]
+      },
+      "claims": [
+        "Tolak interaction-specific trials were not designed; steroid/immunomodulator exposure and several local retinoid/steroid/acid/peel products were generally excluded.0.5% Patient Information restricts other skin products unless instructed. Review other topical/systemic therapies. IV combinations shown are specialist protocol examples, not blanket simultaneous-line compatibility or independent dosing permission."
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Renal, hepatic and DPD considerations",
+      "sourceIds": [
+        "label",
+        "efudex",
+        "half",
+        "tolak"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Pregnancy",
+          "Nursing mothers",
+          "Pediatric use",
+          "Geriatric use",
+          "Clinical pharmacology"
+        ],
+        "efudex": [
+          "Pregnancy",
+          "Nursing mothers",
+          "Pediatric use",
+          "Geriatric use",
+          "Clinical pharmacology"
+        ],
+        "half": [
+          "Pregnancy",
+          "Nursing mothers",
+          "Pediatric use",
+          "Geriatric use",
+          "Clinical pharmacology"
+        ],
+        "tolak": [
+          "Pregnancy",
+          "Nursing mothers",
+          "Pediatric use",
+          "Geriatric use",
+          "Clinical pharmacology"
+        ]
+      },
+      "claims": [
+        "Selected labels provide no validated numerical renal/hepatic/dialysis table; oncology/dermatology team must individualize actual clinical risk. DPD catabolism is distinct from routine creatinine-based adjustment. Hyperammonemic encephalopathy can occur without liver disease. No invented dose reduction, dialysis rescue or activity-score algorithm."
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Children and older adults",
+      "sourceIds": [
+        "label",
+        "efudex",
+        "half",
+        "tolak"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Pregnancy",
+          "Nursing mothers",
+          "Pediatric use",
+          "Geriatric use",
+          "Clinical pharmacology"
+        ],
+        "efudex": [
+          "Pregnancy",
+          "Nursing mothers",
+          "Pediatric use",
+          "Geriatric use",
+          "Clinical pharmacology"
+        ],
+        "half": [
+          "Pregnancy",
+          "Nursing mothers",
+          "Pediatric use",
+          "Geriatric use",
+          "Clinical pharmacology"
+        ],
+        "tolak": [
+          "Pregnancy",
+          "Nursing mothers",
+          "Pediatric use",
+          "Geriatric use",
+          "Clinical pharmacology"
+        ]
+      },
+      "claims": [
+        "IV pediatric safety/effectiveness unestablished. Efudex children unestablished; 0.5% should not be used below 18; Tolak not intended for children. Elderly IV/selected topical experience does not show overall differences; Tolak requires no age-only dose adjustment, but individual sensitivity remains. No unverified pediatric cancer or skin regimen."
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy, lactation and fertility",
+      "sourceIds": [
+        "label",
+        "efudex",
+        "half",
+        "tolak"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Pregnancy",
+          "Nursing mothers",
+          "Pediatric use",
+          "Geriatric use",
+          "Clinical pharmacology"
+        ],
+        "efudex": [
+          "Pregnancy",
+          "Nursing mothers",
+          "Pediatric use",
+          "Geriatric use",
+          "Clinical pharmacology"
+        ],
+        "half": [
+          "Pregnancy",
+          "Nursing mothers",
+          "Pediatric use",
+          "Geriatric use",
+          "Clinical pharmacology"
+        ],
+        "tolak": [
+          "Pregnancy",
+          "Nursing mothers",
+          "Pediatric use",
+          "Geriatric use",
+          "Clinical pharmacology"
+        ]
+      },
+      "claims": [
+        "Topical products contraindicate pregnancy; Tolak effective contraception during therapy and 1 month after last dose. Selected IV fetal harm warning: females and males with partners of reproductive potential use effective contraception during and 3 months after cessation; potential impaired fertility from animal evidence. Topical/IV labels advise choosing nursing versus treatment because serious infant risk/milk data uncertainty; 0.5% and Tolak patient leaflets say not to breastfeed during use. Do not apply IV 3-month interval to every topical or invent a universal milk-discard interval."
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism",
+      "sourceIds": [
+        "label",
+        "efudex",
+        "half",
+        "tolak"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Clinical pharmacology",
+          "Microbiology",
+          "Description"
+        ],
+        "efudex": [
+          "Clinical pharmacology",
+          "Microbiology",
+          "Description"
+        ],
+        "half": [
+          "Clinical pharmacology",
+          "Microbiology",
+          "Description"
+        ],
+        "tolak": [
+          "Clinical pharmacology",
+          "Microbiology",
+          "Description"
+        ]
+      },
+      "claims": [
+        "Active metabolites inhibit thymidylate synthase and incorporate into RNA/DNA, affecting rapidly dividing cells. DPD, encoded by DPYD, catabolizes most systemic fluorouracil; deficient activity can greatly increase toxicity. Variant lists are incomplete and testing varies, so no negative-test clearance guarantee."
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Route-specific pharmacokinetics",
+      "sourceIds": [
+        "label",
+        "efudex",
+        "half",
+        "tolak"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Clinical pharmacology",
+          "Microbiology",
+          "Description"
+        ],
+        "efudex": [
+          "Clinical pharmacology",
+          "Microbiology",
+          "Description"
+        ],
+        "half": [
+          "Clinical pharmacology",
+          "Microbiology",
+          "Description"
+        ],
+        "tolak": [
+          "Clinical pharmacology",
+          "Microbiology",
+          "Description"
+        ]
+      },
+      "claims": [
+        "After single-agent IV bolus, elimination half-life 8–20 minutes increases with dose; 5–20% parent appears unchanged in urine within 6 hours and most remainder is metabolized primarily in liver. These values are not a continuous-infusion or topical dosing algorithm. Topical studies show low but measurable systemic exposure with vehicle/skin-area/inflammation differences; do not use one absorption percentage for all concentrations or exclude serious DPD-related toxicity."
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Monitoring priorities",
+      "sourceIds": [
+        "label",
+        "efudex",
+        "half",
+        "tolak"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Patient information",
+          "Warnings",
+          "Precautions",
+          "Instructions for use"
+        ],
+        "efudex": [
+          "Patient information",
+          "Warnings",
+          "Precautions",
+          "Instructions for use"
+        ],
+        "half": [
+          "Patient information",
+          "Warnings",
+          "Precautions",
+          "Instructions for use"
+        ],
+        "tolak": [
+          "Patient information",
+          "Warnings",
+          "Precautions",
+          "Instructions for use"
+        ]
+      },
+      "claims": [
+        "IV: DPYD testing/risk assessment, CBC before each cycle and weekly for weekly/similar schedules plus as needed; monitor severe GI, neurologic, cardiac and hand-foot symptoms and INR with warfarin. Label counsels daily temperature and immediate fever/infection reporting. Topical: diagnosis, response/local reaction and systemic symptoms; biopsy nonresponding/recurring suspicious lesions and follow superficial BCC as indicated. No universal topical CBC timetable or unverified serum target."
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Counseling",
+      "sourceIds": [
+        "label",
+        "efudex",
+        "half",
+        "tolak",
+        "rescue"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Patient information",
+          "Warnings",
+          "Precautions",
+          "Instructions for use"
+        ],
+        "efudex": [
+          "Patient information",
+          "Warnings",
+          "Precautions",
+          "Instructions for use"
+        ],
+        "half": [
+          "Patient information",
+          "Warnings",
+          "Precautions",
+          "Instructions for use"
+        ],
+        "tolak": [
+          "Patient information",
+          "Warnings",
+          "Precautions",
+          "Instructions for use"
+        ],
+        "rescue": [
+          "Patient information",
+          "Warnings",
+          "Precautions",
+          "Instructions for use"
+        ]
+      },
+      "claims": [
+        "Understand route/product plan and contact treating team early for severe symptoms. Skin may look unsightly during and after treatment; avoid UV/occlusion/eyes/mucosa, wash hands and prevent transfer to others/pets. Keep containers and residue inaccessible. Stop/contact clinician if pregnant or systemic toxicity develops; suspected systemic overdose needs immediate emergency/oncology evaluation for time-critical rescue, not waiting for symptoms or 96 hours to pass."
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Representative IV vial",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Description",
+          "How supplied",
+          "Storage",
+          "SPL product panels"
+        ]
+      },
+      "claims": [
+        [
+          "Strength",
+          "50 mg/mL; 500 mg/10 mL single-dose vial, colorless-to-yellow sterile solution."
+        ],
+        [
+          "Selected package",
+          "Fresenius Kabi vial NDC 63323-117-43; unit of 10 NDC 63323-117-18."
+        ],
+        [
+          "Route / status",
+          "Prescription IV cytotoxic drug; selected single-dose vial not a pharmacy bulk package."
+        ]
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "sourceIds": [
+        "efudex",
+        "half",
+        "tolak"
+      ],
+      "sourceSectionsById": {
+        "efudex": [
+          "Description",
+          "How supplied",
+          "Storage",
+          "SPL product panels"
+        ],
+        "half": [
+          "Description",
+          "How supplied",
+          "Storage",
+          "SPL product panels"
+        ],
+        "tolak": [
+          "Description",
+          "How supplied",
+          "Storage",
+          "SPL product panels"
+        ]
+      },
+      "claims": [
+        [
+          "Efudex",
+          "5% cream 50 mg/g, 40 g tube NDC 0187-3204-47; topical 2%/5% solutions are weight/weight, 10/25 mL dispensers. Do not infer exact mg/mL from w/w without density."
+        ],
+        [
+          "0.5% cream",
+          "5 mg/g with microsphere vehicle; selected 30 g tube NDC 75907-169-11. Not interchangeable with 5% or 4%."
+        ],
+        [
+          "Tolak",
+          "4%=40 mg/g, 40 g tube NDC 28105-421-40; contains peanut oil."
+        ],
+        [
+          "Scope",
+          "Unverified other IV brands/bulk-vial handling and off-label regimens require exact product/protocol review; no preferred chemotherapy guideline or stock claim."
+        ]
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "sourceIds": [
+        "label",
+        "efudex",
+        "half",
+        "tolak"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Description",
+          "How supplied",
+          "Storage",
+          "SPL product panels"
+        ],
+        "efudex": [
+          "Description",
+          "How supplied",
+          "Storage",
+          "SPL product panels"
+        ],
+        "half": [
+          "Description",
+          "How supplied",
+          "Storage",
+          "SPL product panels"
+        ],
+        "tolak": [
+          "Description",
+          "How supplied",
+          "Storage",
+          "SPL product panels"
+        ]
+      },
+      "claims": [
+        "IV 20–25°C, protect from light in carton, do not freeze; qualified cytotoxic preparation/disposal, discard unused single-dose contents. Efudex 25°C with 15–30°C excursions; 0.5% cream 20–25°C. Tolak 25°C with 15–30°C excursions, do not freeze; exact Patient Information 20–25°C. Respect expiration and prevent child/pet access; no household warming/precipitate-recovery instructions."
+      ]
+    },
+    {
+      "section": "hero/essential",
+      "card": "Scope, essential and three tuple facts",
+      "sourceIds": [
+        "label",
+        "efudex",
+        "half",
+        "tolak",
+        "rescue"
+      ],
+      "sourceSections": [
+        "Indications",
+        "Strengths",
+        "Warnings",
+        "Product"
+      ],
+      "claims": [
+        "A cytotoxic antimetabolite with oncology IV regimens and separate dermatologic creams/solutions. This profile reviews current selected U.S. IV, Efudex, 0.5% cream and Tolak 4% labels; indication, exposure, pregnancy restrictions and dose schedules differ by route. IV regimens are label examples for specialist protocols, not independent chemotherapy instructions.",
+        "Before IV therapy, current labeling directs DPYD testing unless immediate treatment is necessary; avoid complete DPD deficiency, for which no dose is proven safe. Topical products also restrict DPD deficiency. Unexpected early severe mouth sores, diarrhea, fever or neurologic symptoms require immediate stopping/oncology or emergency review; IV overdose is time-critical.",
+        [
+          "Therapeutic class",
+          "Fluoropyrimidine antimetabolite"
+        ],
+        [
+          "Routes",
+          "Specialist IV therapy; product-specific topical use"
+        ],
+        [
+          "Major safety determinant",
+          "DPD function and severe early toxicity"
+        ]
+      ]
+    }
+  ],
+  "materialErrors": [],
+  "gaps": [
+    {
+      "material": false,
+      "topic": "DPYD testing/status scope",
+      "resolution": "Current full IV box/2.1/5.1 require pretherapy DPYD testing unless immediate therapy needed. No FDA-authorized test statement is source historical/current-label text, not independently asserted regulatory test availability. No activity-score numerical algorithm or negative-test safety guarantee."
+    },
+    {
+      "material": false,
+      "topic": "Specialist IV scope",
+      "resolution": "Tumor/protocol-specific current-label examples, grades/holds/restart boundaries retained; no guideline ranking, stage choice, organ/dialysis formula or independent chemotherapy preparation algorithm."
+    },
+    {
+      "material": false,
+      "topic": "Topical product scope",
+      "resolution": "Efudex5% superficialBCC indication not transferred to0.5%/4% or2% solution. Efudex solution weight/weight not falsely expressed asmg/mL. Skin-site/frequency/contraception differences preserved."
+    },
+    {
+      "material": false,
+      "topic": "Rescue scope",
+      "resolution": "Vistogard current1/2/17 reviewed contextually for urgent overdose/early severe toxicity and96hour boundary; no home antidote dosing algorithm or statement rescue mustwait96hours. Later efficacy unestablished does not deny urgent assessment."
+    },
+    {
+      "material": false,
+      "topic": "Legacy topical overdose",
+      "resolution": "0.5% label emesis/lavage and Efudex animalLD50 omitted as home instructions/reassurance; emergency professional review instead."
+    },
+    {
+      "material": false,
+      "topic": "Source clinical revision",
+      "resolution": "IVcurrentHTMLMarch2026/DPYDmajorchangesOctober2025;EfudexMarch2024;0.5%July2025;TolakcurrentHTMLAugust2022;VistogardcurrentHTMLOctober2023. Parsed fullsection text omits highlights dates; SPL/API dates separate."
+    },
+    {
+      "material": false,
+      "topic": "Lactation",
+      "resolution": "Topical full nursing-choice discussions paired with PatientInfo no-breastfeeding instructions; no universal posttreatment milk-discard interval."
+    }
+  ],
+  "exclusions": [
+    "Unverified other manufacturers/combinations/non-U.S. regimens, off-label algorithms or preferred guideline rankings; current stock; universal laboratory schedules; independent switches or home overdose protocols."
+  ],
+  "validation": {
+    "schema": "validateMonograph: []",
+    "renderedPage": "Pending parent natural 390 px integration QA"
+  },
+  "monographSha256": "2bb0927a34ef97eaa9f3e64b2e915e4ef0c7e7ed1840fd63924baea0b5fab0fd",
+  "sourceInterpretationNotes": [
+    "Clinical revision distinct from SPL effectiveTime/API publication. Original focused summaries of current full public supporting text.",
+    "Exact APAP eight sections, four core Safety cards, three Product cards and three tuple facts. No APAP-specific clinical content.",
+    "Source-note-only metadata correction after explicit currentHTMLhighlight cross-check; clinical content and assertions unchanged. Highlights revised GoLYTELYJanuary2026/MoviPrepOctober2025/TolakAugust2022/VistogardOctober2023 rather than falsely described as absent."
+  ],
+  "formattingOnlyRevision": {
+    "checked": "2026-10-01",
+    "changes": [
+      "Remove spaces inside numeric thousands separators: 2,400, 3,000 and 1,000"
+    ],
+    "equivalence": "Old and new monograph text are identical after whitespace removal; all clinical words, numbers, symbols, frequencies and source statements are preserved.",
+    "previousMonographSha256": "af7c8313a52f738ef277cab5e3a9cd595404a5ce8aacd832e707192bff02b62b"
+  }
+}

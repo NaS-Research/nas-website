@@ -279,6 +279,16 @@ import { penicillinV } from "./penicillin-v.js";
 import { diphenhydramine } from "./diphenhydramine.js";
 import { levalbuterol } from "./levalbuterol.js";
 import { lactate } from "./lactate.js";
+import { liraglutide } from "./liraglutide.js";
+import { guanfacine } from "./guanfacine.js";
+import { betamethasone } from "./betamethasone.js";
+import { mometasone } from "./mometasone.js";
+import { fluorouracil } from "./fluorouracil.js";
+import { beclomethasone } from "./beclomethasone.js";
+import { loratadinePseudoephedrine } from "./loratadine-pseudoephedrine.js";
+import { ascorbicAcid } from "./ascorbic-acid.js";
+import { mycophenolate_mofetil } from "./mycophenolate-mofetil.js";
+import { olopatadine } from "./olopatadine.js";
 
 export const reviewedDrugMonographs = {
   "atorvastatin": atorvastatin,
@@ -561,4 +571,14 @@ export const reviewedDrugMonographs = {
   "diphenhydramine": diphenhydramine,
   "levalbuterol": levalbuterol,
   "lactate": lactate,
+  "liraglutide": liraglutide,
+  "guanfacine": guanfacine,
+  "betamethasone": betamethasone,
+  "mometasone": mometasone,
+  "fluorouracil": fluorouracil,
+  "beclomethasone": beclomethasone,
+  "loratadine-pseudoephedrine": loratadinePseudoephedrine,
+  "ascorbic-acid": ascorbicAcid,
+  "mycophenolate-mofetil": mycophenolate_mofetil,
+  "olopatadine": olopatadine,
 };

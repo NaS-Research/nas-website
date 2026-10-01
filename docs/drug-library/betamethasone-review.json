@@ -1,0 +1,746 @@
+{
+  "slug": "betamethasone",
+  "checked": "2026-10-01",
+  "status": "source_reviewed",
+  "review_scope": "Product-specific topical and injectable corticosteroid reference; selected U.S. products and labeled indications are distinguished. All eight blueprint sections reviewed. Product-specific focused monograph; not an exhaustive adverse-event catalog.",
+  "sources": [
+    {
+      "id": "val",
+      "title": "Betamethasone valerate cream 0.1%",
+      "publisher": "DailyMed / Sun Pharmaceutical Industries",
+      "note": "SPL version 6, effective 20251002; current public product labeling.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3c85be0f-2731-44f1-a18e-d3852d54846f",
+      "checked": "2026-10-01",
+      "version": "SPL version 6, effective 20251002; current public product labeling.",
+      "spl_version": "6",
+      "spl_effective_time": "20251002",
+      "xml_url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/3c85be0f-2731-44f1-a18e-d3852d54846f.xml",
+      "downloaded_xml_sha256": "54fcef7b26afb65c00ee4b89654608f36d9b36fa809ea99e1f6c91fe5dd2783a",
+      "access_scope": "Complete current selected SPL clinical, product and population sections reviewed."
+    },
+    {
+      "id": "dipro",
+      "title": "Diprolene augmented betamethasone dipropionate ointment 0.05%",
+      "publisher": "DailyMed / Organon",
+      "note": "SPL version 3, effective 20251119; current public product labeling.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0b9543ad-2ca7-430d-aef9-81c376dc2e6c",
+      "checked": "2026-10-01",
+      "version": "SPL version 3, effective 20251119; current public product labeling.",
+      "spl_version": "3",
+      "spl_effective_time": "20251119",
+      "xml_url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/0b9543ad-2ca7-430d-aef9-81c376dc2e6c.xml",
+      "downloaded_xml_sha256": "7d4c42d02287aeeb480176efc884011c0f5a57bdcb2580b055de57502ecf0116",
+      "access_scope": "Complete current selected SPL clinical, product and population sections reviewed."
+    },
+    {
+      "id": "inj",
+      "title": "Celestone Soluspan injectable suspension",
+      "publisher": "DailyMed / Organon",
+      "note": "SPL version 10, effective 20260306; current public product labeling.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bf78d1be-42d7-4837-92a5-49113a79278f",
+      "checked": "2026-10-01",
+      "version": "SPL version 10, effective 20260306; current public product labeling.",
+      "spl_version": "10",
+      "spl_effective_time": "20260306",
+      "xml_url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/bf78d1be-42d7-4837-92a5-49113a79278f.xml",
+      "downloaded_xml_sha256": "171f3d9349568f072faad80427820a5a8ec36fe639f277ff1d694406b3ec0969",
+      "access_scope": "Complete current selected SPL clinical, product and population sections reviewed."
+    }
+  ],
+  "assertion_to_source": [
+    {
+      "section_id": "indications",
+      "card_title": "Corticosteroid-responsive skin disease",
+      "assertions": [
+        "Valerate cream relieves inflammatory and itchy manifestations of responsive dermatoses. Diprolene ointment has the same indication from age 13. These products do not treat an undiagnosed infection and are not interchangeable by percentage alone."
+      ],
+      "support": [
+        {
+          "source_id": "val",
+          "sections": [
+            "Indications"
+          ]
+        },
+        {
+          "source_id": "dipro",
+          "sections": [
+            "1",
+            "2",
+            "12.2"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "indications",
+      "card_title": "Injectable indications and scope",
+      "assertions": [
+        "When oral treatment is not feasible, Celestone Soluspan has broad intramuscular indications for selected severe allergic, inflammatory, endocrine, gastrointestinal, hematologic, neoplastic, neurologic, ocular, renal, respiratory, and rheumatic disorders. Examples include refractory severe allergy, acute multiple sclerosis exacerbations, nephrotic syndrome, and short-term rheumatic flares. Local joint/soft-tissue use is adjunctive for specified inflammatory disorders; intralesional use includes selected keloids and inflammatory skin lesions. Consult the full label for disease-specific eligibility. This profile excludes antenatal fetal maturation protocols, other topical vehicles, combinations, and non-U.S. oral products."
+      ],
+      "support": [
+        {
+          "source_id": "inj",
+          "sections": [
+            "Indications and usage / all disease subsections"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "dosage",
+      "card_title": "Topical regimens",
+      "assertions": [
+        "Apply valerate cream as a thin film 1–3 times daily; once or twice daily is often effective. Diprolene: thin film once or twice daily, stop when controlled, no more than 50 g/week or 2 consecutive weeks; reassess if no improvement by 2 weeks. Avoid face, groin, axillae, and atrophic skin with Diprolene. Neither product should be covered with an occlusive dressing unless directed. Avoid eyes; wash hands after Diprolene."
+      ],
+      "support": [
+        {
+          "source_id": "val",
+          "sections": [
+            "Dosage and administration",
+            "Information for patients"
+          ]
+        },
+        {
+          "source_id": "dipro",
+          "sections": [
+            "2",
+            "17"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "dosage",
+      "card_title": "Systemic injection",
+      "assertions": [
+        "The labeled initial parenteral range is 0.25–9 mg/day, individualized to disease and response; life-threatening conditions may require more. The pediatric initial range is 0.02–0.3 mg/kg/day in 3 or 4 divided doses (0.6–9 mg/m²/day), not a universal regimen. The label specifies 30 mg daily for 1 week then 12 mg every other day for 1 month for acute multiple sclerosis exacerbations; this historical label regimen requires specialist selection rather than automatic use. Taper prolonged therapy gradually. Oral/IV steroid-equivalence tables cannot be applied directly to depot IM or joint injections."
+      ],
+      "support": [
+        {
+          "source_id": "inj",
+          "sections": [
+            "Dosage and administration",
+            "Precautions / Neuro-psychiatric"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "dosage",
+      "card_title": "Local injection regimens",
+      "assertions": [
+        "These clinician-administered doses are volumes of the 6 mg/mL suspension. Use sterile technique, exclude septic arthritis, and inject tendon sheaths rather than tendons. Local injection can still add systemic corticosteroid exposure.",
+        "Joint: hip | 1–2 mL",
+        "Joint: knee, ankle, shoulder | 1 mL",
+        "Joint: elbow, wrist | 0.5–1 mL",
+        "Small hand or chest joint | 0.25–0.5 mL",
+        "Acute specified bursitis | 1 mL intrabursal",
+        "Intralesional skin | 0.2 mL/cm² intradermally; total no more than 1 mL at weekly intervals",
+        "Specified foot disorders | 0.25–1 mL depending on diagnosis, at intervals of 3 days to 1 week; see full label"
+      ],
+      "support": [
+        {
+          "source_id": "inj",
+          "sections": [
+            "Dosage and administration / Bursitis, Rheumatoid arthritis, Dermatologic conditions, Disorders of foot",
+            "Precautions / Intra-articular and soft tissue"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "dosage",
+      "card_title": "Preparation and route",
+      "assertions": [
+        "Shake Celestone Soluspan well. It is for the labeled IM, intra-articular, soft-tissue, intralesional, intrabursal, or intradermal routes; do not administer IV. Epidural use is unapproved and carries serious neurologic risk. If a local anesthetic is used, use the label-compatible preservative-free-of-parabens formulation, draw steroid into the syringe first, then anesthetic, and briefly shake; never add anesthetic to the steroid vial."
+      ],
+      "support": [
+        {
+          "source_id": "inj",
+          "sections": [
+            "Warnings",
+            "Dosage and administration",
+            "How supplied"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "safety",
+      "card_title": "Warnings and precautions",
+      "assertions": [
+        "Topical exposure can suppress the adrenal axis, raise glucose, cause Cushing features, and damage skin; large areas, high potency, prolonged use, occlusion, young age, or liver failure increase risk. Reduce/withdraw gradually or substitute lower potency when adrenal suppression is documented. Diprolene also carries cataract/glaucoma warnings; report vision changes. Treat skin infection and stop steroid if infection fails to respond.",
+        "Systemic/local injections can worsen or mask infection, reactivate hepatitis B or tuberculosis, cause Strongyloides hyperinfection, and aggravate systemic fungal disease. Screen for hepatitis B before immunosuppressive prolonged treatment; assess other infection risks. Avoid injection into an acutely infected site. Watch BP, fluid retention, potassium loss, diabetes, osteoporosis, GI perforation/bleeding, psychiatric change, and ocular effects. Evaluate suspected pheochromocytoma; crisis can be fatal. Avoid use for traumatic brain injury or cerebral malaria. Epidural administration can cause paralysis, stroke, and death; intrathecal use has serious reported events."
+      ],
+      "support": [
+        {
+          "source_id": "val",
+          "sections": [
+            "Precautions / General"
+          ]
+        },
+        {
+          "source_id": "dipro",
+          "sections": [
+            "5",
+            "8.4"
+          ]
+        },
+        {
+          "source_id": "inj",
+          "sections": [
+            "Warnings / all subsections",
+            "Precautions / all subsections"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "safety",
+      "card_title": "Contraindications",
+      "assertions": [
+        "All selected products contraindicate component hypersensitivity; Diprolene additionally specifies hypersensitivity to other corticosteroids. IM corticosteroid preparations are contraindicated in idiopathic thrombocytopenic purpura. Live or live-attenuated vaccines are contraindicated during immunosuppressive corticosteroid dosing. The injection label places systemic fungal infection avoidance and acute local infection restrictions under warnings, rather than its formal contraindications section."
+      ],
+      "support": [
+        {
+          "source_id": "val",
+          "sections": [
+            "Contraindications"
+          ]
+        },
+        {
+          "source_id": "dipro",
+          "sections": [
+            "4"
+          ]
+        },
+        {
+          "source_id": "inj",
+          "sections": [
+            "Contraindications",
+            "Warnings / Vaccination, Fungal infections, Immunosuppression"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "safety",
+      "card_title": "Boxed warning status",
+      "assertions": [
+        "None of these selected U.S. labels has a boxed warning. The injection route restrictions and serious infection/adrenal risks remain clinically important."
+      ],
+      "support": [
+        {
+          "source_id": "val",
+          "sections": [
+            "Full label"
+          ]
+        },
+        {
+          "source_id": "dipro",
+          "sections": [
+            "Full label"
+          ]
+        },
+        {
+          "source_id": "inj",
+          "sections": [
+            "Full label"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "safety",
+      "card_title": "Adverse reactions and overdose",
+      "assertions": [
+        "Topical reactions include burning, irritation, folliculitis, skin atrophy, striae, pigment change, contact dermatitis, and secondary infection. Injection can cause anaphylaxis, metabolic and fluid disturbances, mood/psychiatric symptoms, myopathy, osteoporosis/osteonecrosis, ocular injury, and local tissue injury. Reported events do not all have established frequencies. Excess topical or repeated injectable exposure can produce systemic steroid toxicity; acute injection overdose receives supportive care, and ongoing steroid reduction must account for adrenal suppression and the underlying disease."
+      ],
+      "support": [
+        {
+          "source_id": "val",
+          "sections": [
+            "Adverse reactions",
+            "Overdosage"
+          ]
+        },
+        {
+          "source_id": "dipro",
+          "sections": [
+            "6",
+            "5.1"
+          ]
+        },
+        {
+          "source_id": "inj",
+          "sections": [
+            "Adverse reactions / all subsections",
+            "Overdosage"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "interactions",
+      "card_title": "Metabolism and exposure",
+      "assertions": [
+        "For injectable betamethasone, strong CYP3A4 inhibitors such as ritonavir, cobicistat, clarithromycin, and azole antifungals increase systemic steroid exposure; weigh benefit and monitor. Enzyme inducers may lower effect and require adjustment. Estrogens can increase effect; cholestyramine can increase clearance. The selected topical labels do not supply a validated interaction dose algorithm."
+      ],
+      "support": [
+        {
+          "source_id": "inj",
+          "sections": [
+            "Drug interactions / CYP3A4 inhibitors, Hepatic enzyme inducers, Estrogens, Cholestyramine"
+          ]
+        },
+        {
+          "source_id": "val",
+          "sections": [
+            "Full label"
+          ]
+        },
+        {
+          "source_id": "dipro",
+          "sections": [
+            "Full label"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "interactions",
+      "card_title": "Other combinations and tests",
+      "assertions": [
+        "Potassium-depleting diuretics or amphotericin B add hypokalemia risk, and digoxin then adds arrhythmia risk. Monitor coagulation with warfarin and glucose when adjusting diabetes therapy. NSAIDs increase GI effects; review aspirin in hypoprothrombinemia. Cyclosporine may increase both drugs’ activity and has reported convulsions. Anticholinesterase combinations may cause severe weakness in myasthenia gravis. Isoniazid concentrations may fall; aminoglutethimide affects adrenal suppression. Steroids suppress skin-test responses and reduce vaccine responses; avoid live vaccines at immunosuppressive doses."
+      ],
+      "support": [
+        {
+          "source_id": "inj",
+          "sections": [
+            "Drug interactions / all subsections",
+            "Warnings / Vaccination"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "populations",
+      "card_title": "Pregnancy and lactation",
+      "assertions": [
+        "Use only after a drug- and indication-specific benefit/risk assessment. Diprolene advises the smallest area and shortest duration during pregnancy or breastfeeding, with possible low birthweight risk after substantial potent-topical exposure; do not apply to nipple or areola. Valerate cream has inadequate pregnancy and milk-exposure data. Systemic injection has inadequate human pregnancy studies, neonatal hypoadrenalism risk, and reported neonatal hypoglycemia after antenatal administration; systemic steroids enter milk and may affect infant growth/adrenal function. This is not an antenatal dosing guide."
+      ],
+      "support": [
+        {
+          "source_id": "val",
+          "sections": [
+            "Pregnancy",
+            "Nursing mothers"
+          ]
+        },
+        {
+          "source_id": "dipro",
+          "sections": [
+            "8.1",
+            "8.2"
+          ]
+        },
+        {
+          "source_id": "inj",
+          "sections": [
+            "Pregnancy",
+            "Nursing mothers",
+            "Pediatric use"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "populations",
+      "card_title": "Children and older adults",
+      "assertions": [
+        "Diprolene is for age 13 and older; younger use is not recommended, and it should not treat diaper dermatitis. The selected valerate cream label supplies pediatric caution without a defined minimum approved age or numeric child dose; use the least amount compatible with effective treatment and monitor growth. Injectable pediatric dosing remains disease-specific. Older adults may be more sensitive despite no overall label-reported difference."
+      ],
+      "support": [
+        {
+          "source_id": "val",
+          "sections": [
+            "Pediatric use"
+          ]
+        },
+        {
+          "source_id": "dipro",
+          "sections": [
+            "1",
+            "8.4",
+            "8.5"
+          ]
+        },
+        {
+          "source_id": "inj",
+          "sections": [
+            "Pediatric use",
+            "Geriatric use",
+            "Dosage and administration"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "populations",
+      "card_title": "Renal, hepatic, and endocrine considerations",
+      "assertions": [
+        "Injection requires caution with renal insufficiency, heart failure, or hypertension because of fluid and potassium effects; cirrhosis enhances steroid effect. Thyroid status can alter clearance and require adjustment. Topical labels do not establish numeric renal/hepatic adjustments; liver failure increases Diprolene adrenal-suppression risk. Do not invent a kidney-based dosing table."
+      ],
+      "support": [
+        {
+          "source_id": "inj",
+          "sections": [
+            "Warnings / Cardio-renal, Endocrine",
+            "Precautions / Cardio-renal, Gastrointestinal"
+          ]
+        },
+        {
+          "source_id": "dipro",
+          "sections": [
+            "5.1",
+            "12.3"
+          ]
+        },
+        {
+          "source_id": "val",
+          "sections": [
+            "Pharmacokinetics"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "pharmacology",
+      "card_title": "Mechanism and potency",
+      "assertions": [
+        "Topical corticosteroids reduce inflammation and itching and cause vasoconstriction; the exact dermatosis mechanism is not fully defined. Diprolene ointment is super-high potency by vasoconstrictor testing, which does not prove therapeutic equivalence to other preparations. Betamethasone has strong glucocorticoid activity and relatively little mineralocorticoid activity."
+      ],
+      "support": [
+        {
+          "source_id": "val",
+          "sections": [
+            "Clinical pharmacology",
+            "Description"
+          ]
+        },
+        {
+          "source_id": "dipro",
+          "sections": [
+            "12.1",
+            "12.2"
+          ]
+        },
+        {
+          "source_id": "inj",
+          "sections": [
+            "Clinical pharmacology"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "pharmacology",
+      "card_title": "Absorption and disposition",
+      "assertions": [
+        "Skin inflammation and occlusion raise percutaneous absorption; absorbed topical drug is metabolized mainly in the liver and eliminated through renal and biliary pathways. No Diprolene-specific PK trial or universal plasma half-life is established here. In Celestone Soluspan, soluble phosphate provides prompt activity and poorly soluble acetate sustained activity; joint administration also produces systemic absorption."
+      ],
+      "support": [
+        {
+          "source_id": "val",
+          "sections": [
+            "Pharmacokinetics"
+          ]
+        },
+        {
+          "source_id": "dipro",
+          "sections": [
+            "12.3"
+          ]
+        },
+        {
+          "source_id": "inj",
+          "sections": [
+            "Clinical pharmacology",
+            "Dosage and administration / Rheumatoid arthritis"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "practice",
+      "card_title": "Monitoring",
+      "assertions": [
+        "Review treated area, response, infection, skin atrophy, and vision; consider ACTH stimulation or urinary cortisol assessment when topical exposure risks adrenal suppression. For prolonged/systemic injection therapy assess BP, weight/edema, glucose, potassium, infection, mood, bone/eye risk, and child growth. Screen hepatitis B before immunosuppressive treatment; investigate joint fluid before intra-articular injection and urgent fever/worsening joint pain afterward."
+      ],
+      "support": [
+        {
+          "source_id": "val",
+          "sections": [
+            "Precautions / General, Laboratory tests"
+          ]
+        },
+        {
+          "source_id": "dipro",
+          "sections": [
+            "5",
+            "17"
+          ]
+        },
+        {
+          "source_id": "inj",
+          "sections": [
+            "Warnings",
+            "Precautions / Intra-articular, Musculoskeletal",
+            "Pediatric use"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "practice",
+      "card_title": "Patient counseling",
+      "assertions": [
+        "Use only for the prescribed condition and route. Do not occlude skin unless directed; diapers may act as occlusion. Report vision change, persistent irritation, poor healing, fever, or infection exposure promptly. Do not abruptly stop prolonged systemic steroids; tell healthcare professionals about current/recent treatment and discuss stress coverage after adrenal suppression. Topical and inhaled treatments do not automatically supply systemic stress replacement."
+      ],
+      "support": [
+        {
+          "source_id": "val",
+          "sections": [
+            "Information for patients"
+          ]
+        },
+        {
+          "source_id": "dipro",
+          "sections": [
+            "17"
+          ]
+        },
+        {
+          "source_id": "inj",
+          "sections": [
+            "Information for patients",
+            "Precautions / Endocrine"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "product",
+      "card_title": "Representative products",
+      "assertions": [
+        "Sun valerate cream: 15 g tube NDC 51672-1269-1 or 45 g 51672-1269-6. Organon Diprolene ointment: 15 g NDC 78206-124-01 or 50 g 78206-124-02. Organon Celestone Soluspan: 5 mL multiple-dose vial NDC 78206-118-01. These are representative official prescription SPL products; package identity and approval metadata are recorded in the audit, not a claim of stock availability."
+      ],
+      "support": [
+        {
+          "source_id": "val",
+          "sections": [
+            "How supplied",
+            "SPL product metadata"
+          ]
+        },
+        {
+          "source_id": "dipro",
+          "sections": [
+            "16",
+            "SPL product metadata"
+          ]
+        },
+        {
+          "source_id": "inj",
+          "sections": [
+            "How supplied",
+            "SPL product metadata"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "product",
+      "card_title": "Dosage forms and strengths",
+      "assertions": [
+        "Selected valerate cream 0.1% has 1.2 mg ester equivalent to 1 mg betamethasone/g. Augmented dipropionate ointment 0.05% has 0.643 mg ester equivalent to 0.5 mg betamethasone/g. Celestone Soluspan is labeled 6 mg/mL: per mL, phosphate equivalent to 3 mg betamethasone plus 3 mg betamethasone acetate. Do not recalculate the labeled injection concentration using topical ester conventions. The injection contains benzalkonium chloride; the label’s benzyl-alcohol dilution warning does not mean this vial contains benzyl alcohol."
+      ],
+      "support": [
+        {
+          "source_id": "val",
+          "sections": [
+            "Description"
+          ]
+        },
+        {
+          "source_id": "dipro",
+          "sections": [
+            "3",
+            "11"
+          ]
+        },
+        {
+          "source_id": "inj",
+          "sections": [
+            "Description",
+            "Dosage and administration",
+            "How supplied"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "product",
+      "card_title": "Storage and handling",
+      "assertions": [
+        "Valerate cream: 20–25°C. Diprolene and Celestone Soluspan: 25°C with 15–30°C excursions permitted. Protect the injection from light, shake well, and do not autoclave the vial. Keep topical products for skin use and injection preparation for trained administration."
+      ],
+      "support": [
+        {
+          "source_id": "val",
+          "sections": [
+            "How supplied"
+          ]
+        },
+        {
+          "source_id": "dipro",
+          "sections": [
+            "16"
+          ]
+        },
+        {
+          "source_id": "inj",
+          "sections": [
+            "How supplied",
+            "Precautions / General"
+          ]
+        }
+      ]
+    }
+  ],
+  "material_errors": [],
+  "gaps": [],
+  "limitations": [
+    "Not a universal corticosteroid protocol; antenatal fetal maturation, combination products, other vehicles, and non-U.S. oral formulations are excluded.",
+    "Celestone Soluspan legacy MS doses are labeled, not a statement of current guideline preference. Its benzyl-alcohol dilution precaution is separated from actual benzalkonium-chloride vial composition.",
+    "Minimum pediatric age is not established by the selected valerate cream label; no invented age approval or child algorithm. Renal/hepatic adjustments are not numerically established."
+  ],
+  "regulatory_identity": [
+    {
+      "source_file": "beta-val",
+      "labeler": [
+        "Sun Pharmaceutical Industries, Inc."
+      ],
+      "label_approval_records": [
+        {
+          "application": {
+            "extension": "ANDA072041",
+            "root": "2.16.840.1.113883.3.150"
+          },
+          "marketing_category": {
+            "code": "C73584",
+            "codeSystem": "2.16.840.1.113883.3.26.1.1",
+            "displayName": "ANDA"
+          }
+        }
+      ]
+    },
+    {
+      "source_file": "beta-dipro",
+      "labeler": [
+        "Organon LLC"
+      ],
+      "label_approval_records": [
+        {
+          "application": {
+            "extension": "NDA018741",
+            "root": "2.16.840.1.113883.3.150"
+          },
+          "marketing_category": {
+            "code": "C73594",
+            "codeSystem": "2.16.840.1.113883.3.26.1.1",
+            "displayName": "NDA"
+          }
+        }
+      ]
+    },
+    {
+      "source_file": "beta-inj",
+      "labeler": [
+        "Organon LLC"
+      ],
+      "label_approval_records": [
+        {
+          "application": {
+            "extension": "NDA014602",
+            "root": "2.16.840.1.113883.3.150"
+          },
+          "marketing_category": {
+            "code": "C73594",
+            "codeSystem": "2.16.840.1.113883.3.26.1.1",
+            "displayName": "NDA"
+          }
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "schema": "validateMonograph returned [] on 2026-10-01",
+    "blueprint_sections": "Exact eight IDs/titles/order, four Safety cards, three Product cards, three hero tuples.",
+    "mobile_content": "Two-column tables where needed, readable spaced text. Release owner handles rendered QA.",
+    "source_method": "Current selected complete primary product labels and public official/guideline sources reviewed; explicit formulation and source-status boundaries."
+  },
+  "front_matter_assertion_map": {
+    "hero_facts": [
+      [
+        "Therapeutic class",
+        "Glucocorticoid"
+      ],
+      [
+        "Selected routes",
+        "Topical and local / IM injection"
+      ],
+      [
+        "Key distinction",
+        "Ester and vehicle determine use"
+      ]
+    ],
+    "essential": {
+      "title": "Prevent adrenal suppression and route errors.",
+      "text": "Use the exact ester and formulation. Diprolene is limited to 50 g/week and 2 consecutive weeks. Celestone Soluspan must not be given IV; local injections can still cause systemic effects. Taper prolonged systemic therapy under clinical supervision.",
+      "section": "safety",
+      "link": "Warnings and precautions"
+    },
+    "support": {
+      "val": [
+        "Indications",
+        "Dosage",
+        "Warnings",
+        "Contraindications"
+      ],
+      "dipro": [
+        "Indications",
+        "Dosage",
+        "Warnings",
+        "Contraindications"
+      ],
+      "inj": [
+        "Indications",
+        "Dosage",
+        "Warnings",
+        "Contraindications"
+      ]
+    }
+  },
+  "monograph_sha256": "610df45fe6a172d70baceb56cd04d30634f6147c3134eba47199f901c86a5257",
+  "source_discrepancies": [
+    {
+      "issue": "Celestone Soluspan current SPL effective 2026-03-06 retains printed revision 7/2024. Its dilution warning mentions benzyl alcohol, while the actual vial preservative is benzalkonium chloride.",
+      "resolution": "Actual product and dilution warning explicitly separated; no invented new printed label revision."
+    },
+    {
+      "issue": "Legacy labeled multiple-sclerosis regimen is not a current guideline preference statement.",
+      "resolution": "Specialist selection stated; no universal steroid-equivalence/depot conversion."
+    }
+  ]
+}

@@ -1,0 +1,1154 @@
+{
+  "drug": "olopatadine",
+  "status": "source_reviewed",
+  "checked": "2026-10-01",
+  "scope": "Full current three selected OTC eye Drug Facts and current single-ingredient nasal full clinical, patient/IFU and product label reviewed.",
+  "blueprint": {
+    "sections": [
+      [
+        "indications",
+        "Indications"
+      ],
+      [
+        "dosage",
+        "Dosage and administration"
+      ],
+      [
+        "safety",
+        "Safety"
+      ],
+      [
+        "interactions",
+        "Drug interactions"
+      ],
+      [
+        "populations",
+        "Use in specific populations"
+      ],
+      [
+        "pharmacology",
+        "Clinical pharmacology"
+      ],
+      [
+        "practice",
+        "Monitoring and counseling"
+      ],
+      [
+        "product",
+        "Product identification"
+      ]
+    ],
+    "essential_safety": true,
+    "hero_facts": 3,
+    "APAP_modified": false
+  },
+  "sources": [
+    {
+      "id": "eye-low",
+      "title": "Pataday 0.1% · Full current Drug Facts",
+      "publisher": "Alcon / DailyMed",
+      "note": "SPL 6 effective January 20, 2026; published January 23, 2026; twice-daily eye drops.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b7a24375-25df-4405-aa7c-34c46af51194"
+    },
+    {
+      "id": "eye-daily",
+      "title": "Pataday 0.2% · Full current Drug Facts",
+      "publisher": "Alcon / DailyMed",
+      "note": "SPL 7 effective January 20, 2026; published January 23, 2026; once-daily eye drops.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1c7d2342-ba1c-4244-9814-d92a05725d4e"
+    },
+    {
+      "id": "eye-extra",
+      "title": "Pataday 0.7% · Full current Drug Facts",
+      "publisher": "Alcon / DailyMed",
+      "note": "SPL 5 effective January 20, 2026; published January 23, 2026; once-daily eye drops.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6d07a5d6-265c-4735-97b3-8a2575b276cb"
+    },
+    {
+      "id": "nasal",
+      "title": "Olopatadine nasal spray · Full current prescription label",
+      "publisher": "Apotex / DailyMed",
+      "note": "PI/Patient/IFU November 2025; current SPL 13 effective September 15, 2026; published September 23, 2026.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3aa27224-7b72-38eb-0c21-b8d73525ee85"
+    }
+  ],
+  "source_records": [
+    {
+      "id": "eye-low",
+      "local_snapshot": "/tmp/nas-drug-sources/olop-01.xml",
+      "label_revision": "Drug Facts;current SPL January2026",
+      "set_id": "b7a24375-25df-4405-aa7c-34c46af51194",
+      "spl_version": "6",
+      "spl_effective_time": "20260120",
+      "dailymed_published_date": "2026-01-23",
+      "sha256": "df2d744668d9245d61704e2d1309ba93bcdd15c8dd694985fa2dc23f0d35943e",
+      "review_method": "Relevant full public clinical sections read; dose, age, route, safety and product distinctions checked. No paywalled or unaccessed full guideline claimed.",
+      "archived_local_snapshot": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/source-snapshots-recovered/batch-29-thyroid-metformin/olop-01.xml"
+    },
+    {
+      "id": "eye-daily",
+      "local_snapshot": "/tmp/nas-drug-sources/olop-02.xml",
+      "label_revision": "Drug Facts;current SPL January2026",
+      "set_id": "1c7d2342-ba1c-4244-9814-d92a05725d4e",
+      "spl_version": "7",
+      "spl_effective_time": "20260120",
+      "dailymed_published_date": "2026-01-23",
+      "sha256": "390e908f57a4a74dcf1dbb7c1a7b7a7c2a93d79cc45a10149112d4134f62556f",
+      "review_method": "Relevant full public clinical sections read; dose, age, route, safety and product distinctions checked. No paywalled or unaccessed full guideline claimed.",
+      "archived_local_snapshot": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/source-snapshots-recovered/batch-29-thyroid-metformin/olop-02.xml"
+    },
+    {
+      "id": "eye-extra",
+      "local_snapshot": "/tmp/nas-drug-sources/olop-07.xml",
+      "label_revision": "Drug Facts;current SPL January2026",
+      "set_id": "6d07a5d6-265c-4735-97b3-8a2575b276cb",
+      "spl_version": "5",
+      "spl_effective_time": "20260120",
+      "dailymed_published_date": "2026-01-23",
+      "sha256": "6808d249d014de2872626be9ff2fbbe8e0be49856576de2694384c091340c1b4",
+      "review_method": "Relevant full public clinical sections read; dose, age, route, safety and product distinctions checked. No paywalled or unaccessed full guideline claimed.",
+      "archived_local_snapshot": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/source-snapshots-recovered/batch-29-thyroid-metformin/olop-07.xml"
+    },
+    {
+      "id": "nasal",
+      "local_snapshot": "/tmp/nas-drug-sources/olop-nasal.xml",
+      "label_revision": "PI/Patient/IFU November2025",
+      "set_id": "3aa27224-7b72-38eb-0c21-b8d73525ee85",
+      "spl_version": "13",
+      "spl_effective_time": "20260915",
+      "dailymed_published_date": "2026-09-23",
+      "sha256": "8908bcc0abe7b72c641dc9205809483f645851614f5bf8f16bebc9520d4cfc9e",
+      "review_method": "Relevant full public clinical sections read; dose, age, route, safety and product distinctions checked. No paywalled or unaccessed full guideline claimed.",
+      "archived_local_snapshot": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/source-snapshots-recovered/batch-29-thyroid-metformin/olop-nasal.xml"
+    }
+  ],
+  "assertion_map": [
+    {
+      "section": "indications",
+      "card": "Eye-drop uses and status",
+      "assertions": [
+        "Selected OTC Pataday products temporarily relieve allergen-related eye itch; 0.1% also labels redness relief. NDA OTC status is product-specific. These products do not treat contact-lens irritation or establish treatment for infection/glaucoma."
+      ],
+      "sources": [
+        {
+          "id": "eye-low",
+          "sections": "Uses;marketing category"
+        },
+        {
+          "id": "eye-daily",
+          "sections": "Uses;marketing category"
+        },
+        {
+          "id": "eye-extra",
+          "sections": "Uses;marketing category"
+        }
+      ]
+    },
+    {
+      "section": "indications",
+      "card": "Nasal use and scope",
+      "assertions": [
+        "Prescription single-ingredient nasal spray treats seasonal allergic-rhinitis symptoms from age six. Perennial-rhinitis trial participation does not establish that indication. Olopatadine–mometasone combinations require separate review."
+      ],
+      "sources": [
+        {
+          "id": "nasal",
+          "sections": "1;6.1"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Selected ophthalmic doses",
+      "assertions": [
+        "Age two and older: one drop per affected eye. Under two, consult a clinician. Do not exceed the product’s daily frequency."
+      ],
+      "sources": [
+        {
+          "id": "eye-low",
+          "sections": "Directions"
+        },
+        {
+          "id": "eye-daily",
+          "sections": "Directions"
+        },
+        {
+          "id": "eye-extra",
+          "sections": "Directions"
+        }
+      ],
+      "table_assertions": {
+        "headers": [
+          "Selected strength",
+          "Schedule"
+        ],
+        "rows": [
+          [
+            "0.1%",
+            "Twice daily, 6–8 hours apart; maximum twice/day"
+          ],
+          [
+            "0.2%",
+            "Once daily; maximum once/day"
+          ],
+          [
+            "0.7%",
+            "Once daily; maximum 1 drop per eye/day"
+          ]
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Eye-drop administration",
+      "assertions": [
+        "Remove contact lenses; wait at least ten minutes before reinsertion, and do not wear them with red eyes. Space other ophthalmic products at least five minutes. Avoid touching the tip; recap."
+      ],
+      "sources": [
+        {
+          "id": "eye-low",
+          "sections": "Warnings;Directions"
+        },
+        {
+          "id": "eye-daily",
+          "sections": "Warnings;Directions"
+        },
+        {
+          "id": "eye-extra",
+          "sections": "Warnings;Directions"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Nasal dose and technique",
+      "assertions": [
+        "Age ≥ 12: two sprays per nostril twice daily. Ages 6–11: one per nostril twice daily. Each spray delivers 665 mcg hydrochloride= 600 mcg base. Shake and prime five sprays/until mist; after over seven unused days, re-prime two. Aim away from septum, head downward; avoid immediate nose-blowing/head tilt. No younger-child regimen inferred."
+      ],
+      "sources": [
+        {
+          "id": "nasal",
+          "sections": "2;3;11;IFU"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Organ adjustments",
+      "assertions": [
+        "Nasal label warrants no renal/hepatic adjustment, despite increased renal exposure and no dedicated hepatic study. This does not authorize an oral-systemic dose. OTC eye labels provide no numerical organ-adjustment algorithm."
+      ],
+      "sources": [
+        {
+          "id": "nasal",
+          "sections": "12.3"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "assertions": [
+        "Eye drops: stop and seek assessment for pain, vision change, increasing redness or itch worsening/persisting beyond 72 hours. Avoid contaminated/cloudy products. Nasal spray: inspect mucosa initially/periodically; consider stopping for ulcers. Nosebleeds and somnolence occur; septal-perforation evidence includes investigational/vehicle formulations. Avoid hazardous activity until response known."
+      ],
+      "sources": [
+        {
+          "id": "eye-low",
+          "sections": "Warnings"
+        },
+        {
+          "id": "eye-daily",
+          "sections": "Warnings"
+        },
+        {
+          "id": "eye-extra",
+          "sections": "Warnings"
+        },
+        {
+          "id": "nasal",
+          "sections": "5.1–5.2"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "assertions": [
+        "OTC eye labels prohibit use with ingredient sensitivity or contact-lens irritation. Selected nasal PI formally lists no contraindications; that does not establish safety for a patient with a suspected formulation allergy."
+      ],
+      "sources": [
+        {
+          "id": "eye-low",
+          "sections": "Do not use"
+        },
+        {
+          "id": "eye-daily",
+          "sections": "Do not use"
+        },
+        {
+          "id": "eye-extra",
+          "sections": "Do not use"
+        },
+        {
+          "id": "nasal",
+          "sections": "4"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Boxed-warning status",
+      "assertions": [
+        "No boxed warning in reviewed ophthalmic/nasal labels. Route restrictions, eye red flags and nasal sedation/mucosal precautions remain applicable."
+      ],
+      "sources": [
+        {
+          "id": "eye-low",
+          "sections": "Full Drug Facts"
+        },
+        {
+          "id": "eye-daily",
+          "sections": "Full Drug Facts"
+        },
+        {
+          "id": "eye-extra",
+          "sections": "Full Drug Facts"
+        },
+        {
+          "id": "nasal",
+          "sections": "Full PI"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions",
+      "assertions": [
+        "Nasal trials report bitter taste, headache, epistaxis, throat symptoms, cough and occasional sleepiness; pediatric rash/fever also occurred. Postmarketing smell disturbances have uncertain rates. OTC eye labels do not supply a comprehensive trial-frequency table; do not extrapolate nasal rates to drops."
+      ],
+      "sources": [
+        {
+          "id": "nasal",
+          "sections": "6"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Other eye products",
+      "assertions": [
+        "Separate ophthalmic products by at least five minutes and check duplicate ingredients. Do not treat contact-lens discomfort by adding these drops."
+      ],
+      "sources": [
+        {
+          "id": "eye-low",
+          "sections": "Directions;Warnings"
+        },
+        {
+          "id": "eye-daily",
+          "sections": "Directions;Warnings"
+        },
+        {
+          "id": "eye-extra",
+          "sections": "Directions;Warnings"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Nasal interactions",
+      "assertions": [
+        "Avoid alcohol and other CNS depressants because alertness may worsen. Formal interaction studies were not performed; limited metabolism makes CYP-inhibition interactions unexpected, without establishing universal compatibility."
+      ],
+      "sources": [
+        {
+          "id": "nasal",
+          "sections": "5.2;7;12.3"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Children and older adults",
+      "assertions": [
+        "Selected drops allow OTC directions from two; younger children need clinical advice. Nasal efficacy/safety established from six, not below six; older-adult evidence is limited and selection should be cautious."
+      ],
+      "sources": [
+        {
+          "id": "eye-low",
+          "sections": "Directions"
+        },
+        {
+          "id": "eye-daily",
+          "sections": "Directions"
+        },
+        {
+          "id": "eye-extra",
+          "sections": "Directions"
+        },
+        {
+          "id": "nasal",
+          "sections": "8.4–8.5"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy and breastfeeding",
+      "assertions": [
+        "No published nasal-specific human pregnancy data; class-level observations do not prove product safety. Human milk/infant/production data are absent; weigh maternal need and feeding benefits. OTC ophthalmic labels give no comparable detailed reproductive dataset; assess the exact route instead of copying nasal exposure estimates."
+      ],
+      "sources": [
+        {
+          "id": "nasal",
+          "sections": "8.1–8.2"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Kidney and liver disease",
+      "assertions": [
+        "Renal clearance is predominant. Nasal dosing needs no adjustment per studied exposure assessment; hepatic-study absence is explicitly acknowledged. No renal/hepatic/dialysis algorithm for other routes is inferred."
+      ],
+      "sources": [
+        {
+          "id": "nasal",
+          "sections": "12.3"
+        }
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism",
+      "assertions": [
+        "Olopatadine antagonizes H1 receptors. Clinical effects are formulation/route-specific; this is not a corticosteroid or antibiotic."
+      ],
+      "sources": [
+        {
+          "id": "nasal",
+          "sections": "12.1;1"
+        }
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Disposition",
+      "assertions": [
+        "Nasal absorption produces measurable systemic exposure; renal elimination dominates and metabolism is limited. Nasal-study plasma half-life is 8–12 hours. OTC eye labels lack a full PK dataset, so no shared bioavailability or systemic conversion is supplied."
+      ],
+      "sources": [
+        {
+          "id": "nasal",
+          "sections": "12.3"
+        }
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Monitoring",
+      "assertions": [
+        "Eye pain, vision changes, worsening redness or prolonged itch require assessment. With nasal use, follow mucosal integrity, bleeding and alertness. No universal laboratory schedule is established."
+      ],
+      "sources": [
+        {
+          "id": "eye-low",
+          "sections": "Stop use"
+        },
+        {
+          "id": "eye-daily",
+          "sections": "Stop use"
+        },
+        {
+          "id": "eye-extra",
+          "sections": "Stop use"
+        },
+        {
+          "id": "nasal",
+          "sections": "5;17"
+        }
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Counseling",
+      "assertions": [
+        "Use only the intended eye/nasal route. Do not exceed frequency, share contaminated applicators or confuse base and salt strength. Accidental ingestion/overdose needs prompt medical/poison-center advice; nasal sedation requires driving and sedative caution."
+      ],
+      "sources": [
+        {
+          "id": "eye-low",
+          "sections": "Directions;Warnings"
+        },
+        {
+          "id": "eye-daily",
+          "sections": "Directions;Warnings"
+        },
+        {
+          "id": "eye-extra",
+          "sections": "Directions;Warnings"
+        },
+        {
+          "id": "nasal",
+          "sections": "10;17;IFU"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Representative product identity",
+      "assertions": [
+        "Pataday 0.1%5 mL NDC 0065-4274-01; 0.2% selected 2.5 mL NDC 0065-6150-01; 0.7%2.5 mL NDC 0065-0816-04. Nasal Apotex 30.5 g/240-spray bottle NDC 60505-0845-5. The 0.2% record contains an inconsistent 0.7% package panel; use active-ingredient/product table and verify actual package."
+      ],
+      "sources": [
+        {
+          "id": "eye-low",
+          "sections": "Product/package"
+        },
+        {
+          "id": "eye-daily",
+          "sections": "Product/package"
+        },
+        {
+          "id": "eye-extra",
+          "sections": "Product/package"
+        },
+        {
+          "id": "nasal",
+          "sections": "16"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "assertions": [
+        "Eye percentages express olopatadine base: 0.1/0.2/0.7% correspond to hydrochloride 0.111/0.222/0.776%. Selected eye preservatives differ; check allergies. Nasal 0.6%base delivers 600 mcg base= 665 mcg salt per spray, not an eye-drop concentration."
+      ],
+      "sources": [
+        {
+          "id": "eye-low",
+          "sections": "Active/inactive ingredients"
+        },
+        {
+          "id": "eye-daily",
+          "sections": "Active/inactive ingredients"
+        },
+        {
+          "id": "eye-extra",
+          "sections": "Active/inactive ingredients"
+        },
+        {
+          "id": "nasal",
+          "sections": "3;11"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "assertions": [
+        "Eye 0.1%: 4–25°C; 0.2/0.7%: 2–25°C. Nasal: 4–25°C; discard after 240 sprays following priming, even with liquid left. This corresponds to 30 days at adult dosing, not a universal 30-day opening expiry for pediatric use. Keep tips clean; retain exact product expiry."
+      ],
+      "sources": [
+        {
+          "id": "eye-low",
+          "sections": "Other information;Directions"
+        },
+        {
+          "id": "eye-daily",
+          "sections": "Other information;Directions"
+        },
+        {
+          "id": "eye-extra",
+          "sections": "Other information;Directions"
+        },
+        {
+          "id": "nasal",
+          "sections": "2.3;16;IFU"
+        }
+      ]
+    }
+  ],
+  "assertion_source_map": [
+    {
+      "section": "indications",
+      "card": "Eye-drop uses and status",
+      "assertions": [
+        "Selected OTC Pataday products temporarily relieve allergen-related eye itch; 0.1% also labels redness relief. NDA OTC status is product-specific. These products do not treat contact-lens irritation or establish treatment for infection/glaucoma."
+      ],
+      "sources": [
+        {
+          "id": "eye-low",
+          "sections": "Uses;marketing category"
+        },
+        {
+          "id": "eye-daily",
+          "sections": "Uses;marketing category"
+        },
+        {
+          "id": "eye-extra",
+          "sections": "Uses;marketing category"
+        }
+      ]
+    },
+    {
+      "section": "indications",
+      "card": "Nasal use and scope",
+      "assertions": [
+        "Prescription single-ingredient nasal spray treats seasonal allergic-rhinitis symptoms from age six. Perennial-rhinitis trial participation does not establish that indication. Olopatadine–mometasone combinations require separate review."
+      ],
+      "sources": [
+        {
+          "id": "nasal",
+          "sections": "1;6.1"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Selected ophthalmic doses",
+      "assertions": [
+        "Age two and older: one drop per affected eye. Under two, consult a clinician. Do not exceed the product’s daily frequency."
+      ],
+      "sources": [
+        {
+          "id": "eye-low",
+          "sections": "Directions"
+        },
+        {
+          "id": "eye-daily",
+          "sections": "Directions"
+        },
+        {
+          "id": "eye-extra",
+          "sections": "Directions"
+        }
+      ],
+      "table_assertions": {
+        "headers": [
+          "Selected strength",
+          "Schedule"
+        ],
+        "rows": [
+          [
+            "0.1%",
+            "Twice daily, 6–8 hours apart; maximum twice/day"
+          ],
+          [
+            "0.2%",
+            "Once daily; maximum once/day"
+          ],
+          [
+            "0.7%",
+            "Once daily; maximum 1 drop per eye/day"
+          ]
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Eye-drop administration",
+      "assertions": [
+        "Remove contact lenses; wait at least ten minutes before reinsertion, and do not wear them with red eyes. Space other ophthalmic products at least five minutes. Avoid touching the tip; recap."
+      ],
+      "sources": [
+        {
+          "id": "eye-low",
+          "sections": "Warnings;Directions"
+        },
+        {
+          "id": "eye-daily",
+          "sections": "Warnings;Directions"
+        },
+        {
+          "id": "eye-extra",
+          "sections": "Warnings;Directions"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Nasal dose and technique",
+      "assertions": [
+        "Age ≥ 12: two sprays per nostril twice daily. Ages 6–11: one per nostril twice daily. Each spray delivers 665 mcg hydrochloride= 600 mcg base. Shake and prime five sprays/until mist; after over seven unused days, re-prime two. Aim away from septum, head downward; avoid immediate nose-blowing/head tilt. No younger-child regimen inferred."
+      ],
+      "sources": [
+        {
+          "id": "nasal",
+          "sections": "2;3;11;IFU"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Organ adjustments",
+      "assertions": [
+        "Nasal label warrants no renal/hepatic adjustment, despite increased renal exposure and no dedicated hepatic study. This does not authorize an oral-systemic dose. OTC eye labels provide no numerical organ-adjustment algorithm."
+      ],
+      "sources": [
+        {
+          "id": "nasal",
+          "sections": "12.3"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "assertions": [
+        "Eye drops: stop and seek assessment for pain, vision change, increasing redness or itch worsening/persisting beyond 72 hours. Avoid contaminated/cloudy products. Nasal spray: inspect mucosa initially/periodically; consider stopping for ulcers. Nosebleeds and somnolence occur; septal-perforation evidence includes investigational/vehicle formulations. Avoid hazardous activity until response known."
+      ],
+      "sources": [
+        {
+          "id": "eye-low",
+          "sections": "Warnings"
+        },
+        {
+          "id": "eye-daily",
+          "sections": "Warnings"
+        },
+        {
+          "id": "eye-extra",
+          "sections": "Warnings"
+        },
+        {
+          "id": "nasal",
+          "sections": "5.1–5.2"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "assertions": [
+        "OTC eye labels prohibit use with ingredient sensitivity or contact-lens irritation. Selected nasal PI formally lists no contraindications; that does not establish safety for a patient with a suspected formulation allergy."
+      ],
+      "sources": [
+        {
+          "id": "eye-low",
+          "sections": "Do not use"
+        },
+        {
+          "id": "eye-daily",
+          "sections": "Do not use"
+        },
+        {
+          "id": "eye-extra",
+          "sections": "Do not use"
+        },
+        {
+          "id": "nasal",
+          "sections": "4"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Boxed-warning status",
+      "assertions": [
+        "No boxed warning in reviewed ophthalmic/nasal labels. Route restrictions, eye red flags and nasal sedation/mucosal precautions remain applicable."
+      ],
+      "sources": [
+        {
+          "id": "eye-low",
+          "sections": "Full Drug Facts"
+        },
+        {
+          "id": "eye-daily",
+          "sections": "Full Drug Facts"
+        },
+        {
+          "id": "eye-extra",
+          "sections": "Full Drug Facts"
+        },
+        {
+          "id": "nasal",
+          "sections": "Full PI"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions",
+      "assertions": [
+        "Nasal trials report bitter taste, headache, epistaxis, throat symptoms, cough and occasional sleepiness; pediatric rash/fever also occurred. Postmarketing smell disturbances have uncertain rates. OTC eye labels do not supply a comprehensive trial-frequency table; do not extrapolate nasal rates to drops."
+      ],
+      "sources": [
+        {
+          "id": "nasal",
+          "sections": "6"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Other eye products",
+      "assertions": [
+        "Separate ophthalmic products by at least five minutes and check duplicate ingredients. Do not treat contact-lens discomfort by adding these drops."
+      ],
+      "sources": [
+        {
+          "id": "eye-low",
+          "sections": "Directions;Warnings"
+        },
+        {
+          "id": "eye-daily",
+          "sections": "Directions;Warnings"
+        },
+        {
+          "id": "eye-extra",
+          "sections": "Directions;Warnings"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Nasal interactions",
+      "assertions": [
+        "Avoid alcohol and other CNS depressants because alertness may worsen. Formal interaction studies were not performed; limited metabolism makes CYP-inhibition interactions unexpected, without establishing universal compatibility."
+      ],
+      "sources": [
+        {
+          "id": "nasal",
+          "sections": "5.2;7;12.3"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Children and older adults",
+      "assertions": [
+        "Selected drops allow OTC directions from two; younger children need clinical advice. Nasal efficacy/safety established from six, not below six; older-adult evidence is limited and selection should be cautious."
+      ],
+      "sources": [
+        {
+          "id": "eye-low",
+          "sections": "Directions"
+        },
+        {
+          "id": "eye-daily",
+          "sections": "Directions"
+        },
+        {
+          "id": "eye-extra",
+          "sections": "Directions"
+        },
+        {
+          "id": "nasal",
+          "sections": "8.4–8.5"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy and breastfeeding",
+      "assertions": [
+        "No published nasal-specific human pregnancy data; class-level observations do not prove product safety. Human milk/infant/production data are absent; weigh maternal need and feeding benefits. OTC ophthalmic labels give no comparable detailed reproductive dataset; assess the exact route instead of copying nasal exposure estimates."
+      ],
+      "sources": [
+        {
+          "id": "nasal",
+          "sections": "8.1–8.2"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Kidney and liver disease",
+      "assertions": [
+        "Renal clearance is predominant. Nasal dosing needs no adjustment per studied exposure assessment; hepatic-study absence is explicitly acknowledged. No renal/hepatic/dialysis algorithm for other routes is inferred."
+      ],
+      "sources": [
+        {
+          "id": "nasal",
+          "sections": "12.3"
+        }
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism",
+      "assertions": [
+        "Olopatadine antagonizes H1 receptors. Clinical effects are formulation/route-specific; this is not a corticosteroid or antibiotic."
+      ],
+      "sources": [
+        {
+          "id": "nasal",
+          "sections": "12.1;1"
+        }
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Disposition",
+      "assertions": [
+        "Nasal absorption produces measurable systemic exposure; renal elimination dominates and metabolism is limited. Nasal-study plasma half-life is 8–12 hours. OTC eye labels lack a full PK dataset, so no shared bioavailability or systemic conversion is supplied."
+      ],
+      "sources": [
+        {
+          "id": "nasal",
+          "sections": "12.3"
+        }
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Monitoring",
+      "assertions": [
+        "Eye pain, vision changes, worsening redness or prolonged itch require assessment. With nasal use, follow mucosal integrity, bleeding and alertness. No universal laboratory schedule is established."
+      ],
+      "sources": [
+        {
+          "id": "eye-low",
+          "sections": "Stop use"
+        },
+        {
+          "id": "eye-daily",
+          "sections": "Stop use"
+        },
+        {
+          "id": "eye-extra",
+          "sections": "Stop use"
+        },
+        {
+          "id": "nasal",
+          "sections": "5;17"
+        }
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Counseling",
+      "assertions": [
+        "Use only the intended eye/nasal route. Do not exceed frequency, share contaminated applicators or confuse base and salt strength. Accidental ingestion/overdose needs prompt medical/poison-center advice; nasal sedation requires driving and sedative caution."
+      ],
+      "sources": [
+        {
+          "id": "eye-low",
+          "sections": "Directions;Warnings"
+        },
+        {
+          "id": "eye-daily",
+          "sections": "Directions;Warnings"
+        },
+        {
+          "id": "eye-extra",
+          "sections": "Directions;Warnings"
+        },
+        {
+          "id": "nasal",
+          "sections": "10;17;IFU"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Representative product identity",
+      "assertions": [
+        "Pataday 0.1%5 mL NDC 0065-4274-01; 0.2% selected 2.5 mL NDC 0065-6150-01; 0.7%2.5 mL NDC 0065-0816-04. Nasal Apotex 30.5 g/240-spray bottle NDC 60505-0845-5. The 0.2% record contains an inconsistent 0.7% package panel; use active-ingredient/product table and verify actual package."
+      ],
+      "sources": [
+        {
+          "id": "eye-low",
+          "sections": "Product/package"
+        },
+        {
+          "id": "eye-daily",
+          "sections": "Product/package"
+        },
+        {
+          "id": "eye-extra",
+          "sections": "Product/package"
+        },
+        {
+          "id": "nasal",
+          "sections": "16"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "assertions": [
+        "Eye percentages express olopatadine base: 0.1/0.2/0.7% correspond to hydrochloride 0.111/0.222/0.776%. Selected eye preservatives differ; check allergies. Nasal 0.6%base delivers 600 mcg base= 665 mcg salt per spray, not an eye-drop concentration."
+      ],
+      "sources": [
+        {
+          "id": "eye-low",
+          "sections": "Active/inactive ingredients"
+        },
+        {
+          "id": "eye-daily",
+          "sections": "Active/inactive ingredients"
+        },
+        {
+          "id": "eye-extra",
+          "sections": "Active/inactive ingredients"
+        },
+        {
+          "id": "nasal",
+          "sections": "3;11"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "assertions": [
+        "Eye 0.1%: 4–25°C; 0.2/0.7%: 2–25°C. Nasal: 4–25°C; discard after 240 sprays following priming, even with liquid left. This corresponds to 30 days at adult dosing, not a universal 30-day opening expiry for pediatric use. Keep tips clean; retain exact product expiry."
+      ],
+      "sources": [
+        {
+          "id": "eye-low",
+          "sections": "Other information;Directions"
+        },
+        {
+          "id": "eye-daily",
+          "sections": "Other information;Directions"
+        },
+        {
+          "id": "eye-extra",
+          "sections": "Other information;Directions"
+        },
+        {
+          "id": "nasal",
+          "sections": "2.3;16;IFU"
+        }
+      ]
+    }
+  ],
+  "hero_assertions": {
+    "essential": {
+      "title": "Verify the route and strength",
+      "text": "Eye pain or vision changes need assessment. Nasal spray can cause sleepiness and mucosal injury; do not spray it into eyes or add doses beyond the product schedule.",
+      "section": "safety",
+      "link": "Warnings and precautions"
+    },
+    "facts": [
+      [
+        "Eye drops",
+        "0.1% twice daily; 0.2/0.7% once daily"
+      ],
+      [
+        "OTC eye age",
+        "From 2 years; younger consult doctor"
+      ],
+      [
+        "Nasal age",
+        "From 6 years; prescription spray"
+      ]
+    ],
+    "sources": [
+      "eye-low",
+      "eye-daily",
+      "eye-extra",
+      "nasal"
+    ]
+  },
+  "section_assertions": [
+    {
+      "section": "indications",
+      "summary": "Eye allergy and nasal allergy use different formulations.",
+      "takeaway": "Do not spray nasal solution into the eye.",
+      "sources": [
+        "eye-daily",
+        "eye-extra",
+        "eye-low",
+        "nasal"
+      ]
+    },
+    {
+      "section": "dosage",
+      "summary": "Strength and route determine frequency.",
+      "takeaway": "Once-daily drops are not twice-daily products.",
+      "sources": [
+        "eye-daily",
+        "eye-extra",
+        "eye-low",
+        "nasal"
+      ]
+    },
+    {
+      "section": "safety",
+      "summary": "Eye red flags and nasal mucosal/sedation risks differ.",
+      "takeaway": "Vision changes or eye pain need assessment.",
+      "sources": [
+        "eye-daily",
+        "eye-extra",
+        "eye-low",
+        "nasal"
+      ]
+    },
+    {
+      "section": "interactions",
+      "summary": "Route-specific administration and sedative review matter.",
+      "takeaway": "A lack of formal studies is not proof of no interactions.",
+      "sources": [
+        "eye-daily",
+        "eye-extra",
+        "eye-low",
+        "nasal"
+      ]
+    },
+    {
+      "section": "populations",
+      "summary": "Eye and nasal age thresholds differ.",
+      "takeaway": "Lower-age studies do not replace labeled eligibility.",
+      "sources": [
+        "eye-daily",
+        "eye-extra",
+        "eye-low",
+        "nasal"
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "summary": "Histamine-receptor antagonism relieves allergy symptoms.",
+      "takeaway": "Nasal PK does not establish ophthalmic exposure.",
+      "sources": [
+        "nasal"
+      ]
+    },
+    {
+      "section": "practice",
+      "summary": "Monitor symptom response, route technique and red flags.",
+      "takeaway": "Persistent or atypical symptoms need diagnosis review.",
+      "sources": [
+        "eye-daily",
+        "eye-extra",
+        "eye-low",
+        "nasal"
+      ]
+    },
+    {
+      "section": "product",
+      "summary": "Check actual concentration, preservative and device.",
+      "takeaway": "Package marketing names alone may not establish strength.",
+      "sources": [
+        "eye-daily",
+        "eye-extra",
+        "eye-low",
+        "nasal"
+      ]
+    }
+  ],
+  "limitations": [
+    "Selected0.2% SPL includes a0.7% principal panel with another NDC despite0.2% active ingredient/product table. Not reconciled: verified consistent0.2% package example retained; actual dispensed package must be checked.",
+    "Nasal pediatric PK prose is malformed/mixes concentration and AUC units; no quantitative pediatric exposure comparison propagated.",
+    "OTC eye labels lack detailed reproductive/PK/organ-adjustment evidence; nasal findings are not extrapolated. No inaccessible ophthalmology/allergy guideline or combination nasal label review claimed.",
+    "Nasal240-spray discard is an actuation limit;30-day label phrase applies to adult schedule, not universal pediatric calendar expiry."
+  ],
+  "unresolved_source_questions": [],
+  "validation": {
+    "schema": [],
+    "tests_build_lint": "Parent batch checks required",
+    "rendered_page": "Parent batch QA required"
+  },
+  "monograph_sha256": "f0ceefe6a0c78f15da7f0169153589db21952b2242673002efb23cc5a9f1543d",
+  "source_archive": {
+    "directory": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/source-snapshots-recovered/batch-29-thyroid-metformin",
+    "checked": "2026-10-01",
+    "verified": "Full selected DailyMed SPL XML, parsed sections and public pages copied with exact SHA256 verification. Existing divergent files preserved."
+  }
+}

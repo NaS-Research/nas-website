@@ -1,0 +1,618 @@
+{
+  "reviewDate": "2026-10-01",
+  "scope": "Independent targeted critical-assertion primary-source review. Only enumerated assertions independently verified; not exhaustive second clinical signoff, browser QA or build verification.",
+  "status": "complete_targeted_review",
+  "profiles": [
+    {
+      "drug": "betamethasone",
+      "fileSha256": "610df45fe6a172d70baceb56cd04d30634f6147c3134eba47199f901c86a5257",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "Selected valerate0.1%cream thin film1–3times daily, once/twice often effective; formal component hypersensitivity. Topical concentration not same ester as augmented ointment.",
+          "sourceId": "val",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3c85be0f-2731-44f1-a18e-d3852d54846f",
+          "sourceSection": "Dosage; Contraindications; Description",
+          "access": "Retained full selected primary SPL XML and relevant sections independently read; no additional live page access claimed for this assertion.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Diprolene0.05%augmented ointment age13+, once/twice thin film, maximum50g/week and2consecutive weeks; stop controlled/review nonresponse2weeks; face/groin/axillae/occlusion restrictions.",
+          "sourceId": "dipro",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0b9543ad-2ca7-430d-aef9-81c376dc2e6c",
+          "sourceSection": "Sections1–2",
+          "access": "Retained full selected primary SPL XML and relevant sections independently read; no additional live page access claimed for this assertion.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Celestone suspension labeled6mg/mL comprises phosphate equivalent3mg betamethasone plus3mg acetate; actual preservative benzalkonium, not benzyl-alcohol diluent warning. No IV administration. Broad initial0.25–9mg/day individualized, pediatric0.02–0.3mg/kg/day divided3–4.",
+          "sourceId": "inj",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bf78d1be-42d7-4837-92a5-49113a79278f",
+          "sourceSection": "Description; Dosage; Warnings",
+          "access": "Retained full primary SPL XML and extracted sections independently read; matching current public DailyMed page opened.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Local joint volumes hip1–2mL/knee-ankle-shoulder1/elbow-wrist0.5–1/small0.25–0.5; intradermal0.2mL/cm²total≤1mLweekly. IM idiopathic thrombocytopenic purpura contraindication and formal hypersensitivity distinct from warning fungal avoidance.",
+          "sourceId": "inj",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bf78d1be-42d7-4837-92a5-49113a79278f",
+          "sourceSection": "Dosage and Administration; Contraindications",
+          "access": "Retained full primary SPL XML and extracted sections independently read; matching current public DailyMed page opened.",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning status",
+          "Adverse reactions and overdose"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": [],
+      "retainedEvidence": {
+        "beta-val": {
+          "path": "/tmp/nas-drug-sources/beta-val.xml",
+          "sha256": "54fcef7b26afb65c00ee4b89654608f36d9b36fa809ea99e1f6c91fe5dd2783a"
+        },
+        "beta-dipro": {
+          "path": "/tmp/nas-drug-sources/beta-dipro.xml",
+          "sha256": "7d4c42d02287aeeb480176efc884011c0f5a57bdcb2580b055de57502ecf0116"
+        },
+        "beta-inj": {
+          "path": "/tmp/nas-drug-sources/beta-inj.xml",
+          "sha256": "171f3d9349568f072faad80427820a5a8ec36fe639f277ff1d694406b3ec0969"
+        }
+      }
+    },
+    {
+      "drug": "mometasone",
+      "fileSha256": "8a7917ed5966fd0f9ce53089dbf329123a350ab5b37ff287736056e9a6ab522b",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "Cream0.1%age2+once-daily thin film, discontinue controlled/reassess2weeks; no diaper occlusion or face/groin/axillae; component hypersensitivity formal restriction.",
+          "sourceId": "cream",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=88f5622d-64da-42b7-8aa9-62a5da5ebfbb",
+          "sourceSection": "Sections1–4",
+          "access": "Retained full selected primary SPL XML and relevant sections independently read; no additional live page access claimed for this assertion.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Current selected Rx nasal narrowed indications: seasonal prophylaxis12+2sprays EACH nostril daily2–4weeks before season; polyps18+2sprays each BID, once daily some effective. Prime10/reprime2after>1week. Distinct OTC allergyage2–11one spray each/day and≥12two.",
+          "sourceId": "rx",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=48f7ba0d-33e0-163b-2fa0-f85062768fd5",
+          "sourceSection": "Sections1–2",
+          "access": "Retained full selected primary SPL XML and relevant sections independently read; no additional live page access claimed for this assertion.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "HFA5–11two50mcg puffs BIDmax200/day;≥12starttwo100 BID without priorICS or two200 BID chronic oral steroids, max800/day. Prime4initial/>5daysunused. Not rescue.",
+          "sourceId": "hfa",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0c6d63da-41bc-4894-bead-198e66c848ac",
+          "sourceSection": "Sections1–2,4",
+          "access": "Retained full selected primary SPL XML and relevant sections independently read; no additional live page access claimed for this assertion.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "DPI4–11labeled110 each evening max110/day;≥12start220evening max440/day except chronic oral steroid440BIDmax880. Labeled110/220deliver100/200mouthpiece. Milk-protein allergy formal contraindication distinct from HFA.",
+          "sourceId": "dpi",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=10b36fb2-6b0d-4f20-b197-3564d6f594b9",
+          "sourceSection": "Sections2–4",
+          "access": "Retained full primary SPL XML and extracted sections independently read; matching current public DailyMed page opened.",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning status",
+          "Adverse reactions and overdose"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": [],
+      "retainedEvidence": {
+        "mome-cream": {
+          "path": "/tmp/nas-drug-sources/mome-cream.xml",
+          "sha256": "b7a38cc64997fb3bdfc9a829a54e7284ad3f564082825817985cdc4a2e7a3372"
+        },
+        "mome-rxnasal": {
+          "path": "/tmp/nas-drug-sources/mome-rxnasal.xml",
+          "sha256": "7dd5ea4cd91cbb20ea18f9e8574ea7d5d19a0826bca287aaba253bad27782124"
+        },
+        "mome-otcnasal": {
+          "path": "/tmp/nas-drug-sources/mome-otcnasal.xml",
+          "sha256": "a3527be379905ce4ef8bce7e49531a205bba72d655707db001c49f14667df1bc"
+        },
+        "mome-hfa": {
+          "path": "/tmp/nas-drug-sources/mome-hfa.xml",
+          "sha256": "df49f53b81aa4f3c0f6b0df5075113bb4f08618a222f7759ae30e50686960af8"
+        },
+        "mome-dpi": {
+          "path": "/tmp/nas-drug-sources/mome-dpi.xml",
+          "sha256": "4f06d877eadc0b4bcedcf051bdac04b973ff374a4238de482185933fd99847b7"
+        }
+      }
+    },
+    {
+      "drug": "fluorouracil",
+      "fileSha256": "2bb0927a34ef97eaa9f3e64b2e915e4ef0c7e7ed1840fd63924baea0b5fab0fd",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "Current IV DPD box directs pretreatment DPYD variant testing unless immediate treatment necessary; avoid complete deficiency and no proven safe complete-deficiency dose. Partial deficiency individualized, section4None not unrestricted permission.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a85ab26a-05ea-498f-8f34-564a925fa9d9",
+          "sourceSection": "Boxed warning; Sections2.1,4",
+          "access": "Retained full primary SPL XML and extracted sections independently read; matching current public DailyMed page opened.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Colon400mg/m²bolus then2400–3000mg/m²46h every2weeks; bolus500days1,8,15,22,29,36 each8weeks; breast500/600days1,8every28days6cycles; gastric200–1000per24hprotocol-specific; pancreatic400then2400over46h every2weeks. Oncology protocols not autonomous substitution.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a85ab26a-05ea-498f-8f34-564a925fa9d9",
+          "sourceSection": "Sections2.3–2.9",
+          "access": "Retained full selected primary SPL XML and relevant sections independently read; no additional live page access claimed for this assertion.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Efudex AK twice daily2–4weeks to erosion; BCC ONLY5% twice daily≥3–6weeks possibly10–12 specialist followed for cure. Pregnancy/potential pregnancy, DPD and hypersensitivity restrictions.",
+          "sourceId": "efudex",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=35de1c1c-bef5-46c5-b6f8-ea032147411c",
+          "sourceSection": "Full retained label Dosage; Contraindications",
+          "access": "Retained full selected primary SPL XML and relevant sections independently read; no additional live page access claimed for this assertion.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "0.5% thin once daily up to4weeks,10minutes after wash/dry; distinct from Tolak4% once daily4weeks face/ears/scalp. Pregnancy/DPD restrictions product-specific.",
+          "sourceId": "half",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=37dcfb83-0e7d-d23d-9cd5-afa5bdc30628",
+          "sourceSection": "Dosage; Contraindications",
+          "access": "Retained full selected primary SPL XML and relevant sections independently read; no additional live page access claimed for this assertion.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "IV overdose uridine triacetate within96hours after infusion end; not a home overdose protocol.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a85ab26a-05ea-498f-8f34-564a925fa9d9",
+          "sourceSection": "Section10",
+          "access": "Retained full selected primary SPL XML and relevant sections independently read; no additional live page access claimed for this assertion.",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning · IV complete DPD deficiency",
+          "Adverse reactions and overdose"
+        ],
+        "productCards": 3
+      },
+      "issues": [
+        {
+          "severity": "metadata",
+          "status": "closed_verified",
+          "finding": "Current public DailyMed highlights prints Revised3/2026 and recent DPD changes10/2025 while source note says no printed clinical revision in retained text. Author asked to distinguish HTML/retained XML dates.",
+          "resolution": "Source note now preserves current HTML highlights Revised3/2026 and DPYD changes10/2025 separately from retained parsed full-section text; no clinical changes."
+        }
+      ],
+      "sourceGaps": [],
+      "retainedEvidence": {
+        "fluoro-iv": {
+          "path": "/tmp/nas-drug-sources/fluoro-iv.xml",
+          "sha256": "54e21b8d1065d3dcb09c0d7ffeb48c5d336645cdedd81888aba82b1b179aced6"
+        },
+        "efudex": {
+          "path": "/tmp/nas-drug-sources/efudex.xml",
+          "sha256": "bd8e3fadf724de87b033ea0a72491eadae6db51315a2699db8f88970c3969919"
+        },
+        "fluoro-half": {
+          "path": "/tmp/nas-drug-sources/fluoro-half.xml",
+          "sha256": "969ec0afac106dd7eb4c0c39bfa6163032b67f3e3c9e35f6d0be5350951cf477"
+        },
+        "tolak": {
+          "path": "/tmp/nas-drug-sources/tolak.xml",
+          "sha256": "8d90039bd88482e37454d7126d6f43a0210aacad8dbce647e9c98172b349964d"
+        }
+      },
+      "priorReviewedHash": "f0855867e5ee1538ae2175ef68d3705256bad7fca2da7bbad63cbe26ae001aea",
+      "revisionReview": "Source-note clinical revision metadata refined by author; existing independently checked clinical regimens unchanged. Exact current source notes reread; no new whole-profile clinical coverage claimed.",
+      "formattingRevisionRecheck": {
+        "date": "2026-10-01",
+        "previousMonographSha256": "af7c8313a52f738ef277cab5e3a9cd595404a5ce8aacd832e707192bff02b62b",
+        "currentMonographSha256": "2bb0927a34ef97eaa9f3e64b2e915e4ef0c7e7ed1840fd63924baea0b5fab0fd",
+        "verification": "Actual revised table independently reread; 2,400–3,000 mg/m² colorectal infusion, 200–1,000 mg/m² gastric infusion and 2,400 mg/m² pancreatic infusion agree with retained primary label sections 2.3, 2.5 and 2.6. Author separately records whitespace-removal equivalence; no independent full old-object comparison claimed."
+      }
+    },
+    {
+      "drug": "beclomethasone",
+      "fileSha256": "ae7b4d7967dabe76f95e62a4e3f8ac9cf06bbd91f4e40c1dcb09c3ff4b3b1442",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "Qvar Redihaler4–11 start40mcg twice daily, max80twice;12+ ICS-naive40–80twice, individualized switching/max320twice. Oral inhalation no spacer, no priming, no water cleaning; rinse/spit.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=cada897a-264e-450d-ae00-36e7fe747080",
+          "sourceSection": "Sections2.1–2.2",
+          "access": "Retained full selected primary SPL XML and relevant sections independently read; no additional live page access claimed for this assertion.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Qnasl12+ two80mcg sprays EACH nostril once daily=320total;4–11 one40mcg EACH=80total; currentPI no priming, distinct from old generic assumed instructions.",
+          "sourceId": "nasal",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4b8d8e84-b5d2-4e56-97ec-4f72971465c5",
+          "sourceSection": "Section2",
+          "access": "Retained full primary SPL XML and extracted sections independently read; matching current public DailyMed page opened.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Qvar formal status-asthmaticus/acute-intensive-treatment restriction and allergy; Qnasl formal allergy. Neither universal milk-protein contraindication nor invented organ algorithm.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=cada897a-264e-450d-ae00-36e7fe747080",
+          "sourceSection": "Section4",
+          "access": "Retained full selected primary SPL XML and relevant sections independently read; no additional live page access claimed for this assertion.",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning · status",
+          "Adverse reactions and overdose"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": [],
+      "retainedEvidence": {
+        "qvar": {
+          "path": "/tmp/nas-drug-sources/qvar.xml",
+          "sha256": "0242e7beb57276394bf5087c9c8c9c23319b7557fbdfe23fb94c01b501c9ea5a"
+        },
+        "qnasl": {
+          "path": "/tmp/nas-drug-sources/qnasl.xml",
+          "sha256": "2ac3b4baf73a379bc27049251f190e343d59110eeb118de5374515f058521cd5"
+        }
+      }
+    },
+    {
+      "drug": "liraglutide",
+      "fileSha256": "834b9435ba1968a4a83ba707d8778b898e4c60a1a8e81d1215de6a748fa313e6",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "Victoza adult0.6mgdaily1week then1.2,≥1week then1.8ifneeded; pediatric≥10 0.6increments≥1week max1.8. Missed resume next scheduled; >3days restart0.6 and prescriber retitrate.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5a9ef4ea-c76a-4d34-a604-27c5b505f5a4",
+          "sourceSection": "Section2",
+          "access": "Retained full selected primary SPL XML and relevant sections independently read; no additional live page access claimed for this assertion.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Saxenda0.6/1.2/1.8/2.4/3mg weekly steps; adult3maintenance intolerance stop/16weeks<4%weight loss stop; peds12maintenanceweeks<1%BMI stop,2.4maintenance permitted if3intolerable,stop if2.4intolerable. >3days restart0.6.",
+          "sourceId": "weight",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3946d389-0926-4f77-a708-0acb8153b143",
+          "sourceSection": "Section2",
+          "access": "Retained full primary SPL XML and extracted sections independently read; matching current public DailyMed page opened.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Current obesity indication pediatric≥12 AND >60kg, formal restrictions MTC/MEN2 and serious allergy. Pregnancy omitted from formal4 but8.1 directs discontinue when recognized, not safety authorization.",
+          "sourceId": "weight",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3946d389-0926-4f77-a708-0acb8153b143",
+          "sourceSection": "Sections1,4,8.1",
+          "access": "Retained full selected primary SPL XML and relevant sections independently read; no additional live page access claimed for this assertion.",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning",
+          "Adverse reactions"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": [],
+      "retainedEvidence": {
+        "liraglutide-victoza": {
+          "path": "/tmp/nas-drug-sources/liraglutide-victoza.xml",
+          "sha256": "b14adc782ac8eaf1e871bdc936480c5d5d23ca1edc49306020c978d4fa5ee500"
+        },
+        "liraglutide-saxenda": {
+          "path": "/tmp/nas-drug-sources/liraglutide-saxenda.xml",
+          "sha256": "99c55f409d563b47a2e8a807a0f4c1d03ea1f5ecee335ea84fa20adafb9923de"
+        }
+      }
+    },
+    {
+      "drug": "guanfacine",
+      "fileSha256": "f00049fc41eb17ef57628fc68e724959c10ad8285f150ffe44146930e87ce1df",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "ER start1mgdaily/max1mgweekly increment,0.05–0.12mg/kg/day targets. All six selected weight-table ranges match; age6–12 above4mg unstudied,13–17 above7 unstudied,adjunct>4unstudied. Not milligram-for-milligram IR replacement.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b972af81-3a37-40be-9fe1-3ddf59852528",
+          "sourceSection": "Sections2.1–2.4",
+          "access": "Retained full primary SPL XML and extracted sections independently read; matching current public DailyMed page opened.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "ER taper≤1mg every3–7days BP/pulse monitoring; ≥2missed consecutive consider retitration. Strong/moderate3A4 inhibitors half recommended; inducers up to double with stated1–2week transitions, not IR extrapolation.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b972af81-3a37-40be-9fe1-3ddf59852528",
+          "sourceSection": "Sections2.5–2.7",
+          "access": "Retained full selected primary SPL XML and relevant sections independently read; no additional live page access claimed for this assertion.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "IR hypertension start1mgbedtime; if insufficient3–4weeks2mg, adverse effects increase>3/day rather than a made-up absolute cap. Guanfacine allergy formal restriction.",
+          "sourceId": "ir",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=73d50917-c807-4213-8efe-aea209845936",
+          "sourceSection": "Dosage; Contraindications",
+          "access": "Retained full selected primary SPL XML and relevant sections independently read; no additional live page access claimed for this assertion.",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning status",
+          "Adverse reactions"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": [],
+      "retainedEvidence": {
+        "guanfacine-intuniv": {
+          "path": "/tmp/nas-drug-sources/guanfacine-intuniv.xml",
+          "sha256": "704b2de3fcb351252d7a0196f44433e2d3f4eeac9a0b7662b3779f174aec7ccd"
+        },
+        "guanfacine-ir": {
+          "path": "/tmp/nas-drug-sources/guanfacine-ir.xml",
+          "sha256": "6e8d5a55c8cf2639e3d344a1fd21fc81658eddca36134b931cfc0e98eb7d922e"
+        }
+      }
+    },
+    {
+      "drug": "mycophenolate-mofetil",
+      "fileSha256": "6710a7c79beb33dde78bee546fe029dd1011592d4ab92f62943155520abeb7e5",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "Adult kidney1g BID oral/IV, heart1.5g BID oral/IV, liver1.5g oral versus1gIV BID. IV over at least2h, not bolus, temporary up14days.",
+          "sourceId": "pi",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=37241e87-4af4-4dc3-a1aa-ea6f20d8dc40",
+          "sourceSection": "Sections2.1–2.4",
+          "access": "Retained full selected primary SPL XML and relevant sections independently read; no additional live page access claimed for this assertion.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Pediatric≥3months kidney600mg/m² BID max2g/day; heart/liver600start→900if tolerated max3g/day. BSA1.25–<1.5 capsules750BID,≥1.5 1gBID starting heart/liver dosing not maximum extrapolation.",
+          "sourceId": "pi",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=37241e87-4af4-4dc3-a1aa-ea6f20d8dc40",
+          "sourceSection": "Sections2.2–2.4",
+          "access": "Retained full selected primary SPL XML and relevant sections independently read; no additional live page access claimed for this assertion.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Kidney graft severe chronic GFR<25 indexed avoid>1gBID; delayed graft no automatic adjustment; ANC<1300interrupt/reduce. Allergy including MPA, IVpolysorbate80 contraindications.",
+          "sourceId": "pi",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=37241e87-4af4-4dc3-a1aa-ea6f20d8dc40",
+          "sourceSection": "Sections2.5,4",
+          "access": "Retained full selected primary SPL XML and relevant sections independently read; no additional live page access claimed for this assertion.",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed-warning status",
+          "Adverse reactions"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": [],
+      "retainedEvidence": {
+        "cellcept": {
+          "path": "/tmp/nas-drug-sources/cellcept.xml",
+          "sha256": "13d3ed2851e73ec1c712590cad2ab3462ebcd8a50a890f2125d2d7ca2bade29d"
+        }
+      }
+    },
+    {
+      "drug": "olopatadine",
+      "fileSha256": "f0ceefe6a0c78f15da7f0169153589db21952b2242673002efb23cc5a9f1543d",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "Age≥2 one drop affected eye twice daily6–8h apart,max2/day;other ophthalmics5min.",
+          "sourceId": "eye-low",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b7a24375-25df-4405-aa7c-34c46af51194",
+          "sourceSection": "Drug Facts Directions",
+          "access": "Retained full selected primary SPL XML and relevant sections independently read; no additional live page access claimed for this assertion.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Age≥2 one drop affected eye once daily,max1/day.",
+          "sourceId": "eye-daily",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1c7d2342-ba1c-4244-9814-d92a05725d4e",
+          "sourceSection": "Drug Facts Directions",
+          "access": "Retained full selected primary SPL XML and relevant sections independently read; no additional live page access claimed for this assertion.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Age≥2 one drop affected eye once daily,max1 per eye/day.",
+          "sourceId": "eye-extra",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6d07a5d6-265c-4735-97b3-8a2575b276cb",
+          "sourceSection": "Drug Facts Directions",
+          "access": "Retained full selected primary SPL XML and relevant sections independently read; no additional live page access claimed for this assertion.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "≥12two sprays each nostril BID;6–11one BID. Prime5oruntilmist,after>7daysreprime2;665mcgHCl per spray. No<6regimen inferred.",
+          "sourceId": "nasal",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3aa27224-7b72-38eb-0c21-b8d73525ee85",
+          "sourceSection": "Sections2.1–2.3,3",
+          "access": "Retained full selected primary SPL XML and relevant sections independently read; no additional live page access claimed for this assertion.",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed-warning status",
+          "Adverse reactions"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": [],
+      "retainedEvidence": {
+        "olop-01": {
+          "path": "/tmp/nas-drug-sources/olop-01.xml",
+          "sha256": "df2d744668d9245d61704e2d1309ba93bcdd15c8dd694985fa2dc23f0d35943e"
+        },
+        "olop-02": {
+          "path": "/tmp/nas-drug-sources/olop-02.xml",
+          "sha256": "390e908f57a4a74dcf1dbb7c1a7b7a7c2a93d79cc45a10149112d4134f62556f"
+        },
+        "olop-07": {
+          "path": "/tmp/nas-drug-sources/olop-07.xml",
+          "sha256": "6808d249d014de2872626be9ff2fbbe8e0be49856576de2694384c091340c1b4"
+        },
+        "olop-nasal": {
+          "path": "/tmp/nas-drug-sources/olop-nasal.xml",
+          "sha256": "8908bcc0abe7b72c641dc9205809483f645851614f5bf8f16bebc9520d4cfc9e"
+        }
+      }
+    },
+    {
+      "drug": "loratadine-pseudoephedrine",
+      "fileSha256": "c0b6d9064a95e54f4546237bf3b85a4d9001b93fff45c5301ac310d5d15f2202",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "12Hour≥12 one5mg/120mg sulfate tablet every12h maximum2/day,whole tablet;under12 doctor. Liver/kidney disease doctor rather than invented renal schedule. Allergy/MAOI and2weeksafter no-use.",
+          "sourceId": "lord12",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a7125705-01ff-4418-8c53-9209c2bbb484",
+          "sourceSection": "Full Drug Facts",
+          "access": "Retained full selected primary SPL XML and relevant sections independently read; no additional live page access claimed for this assertion.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "24Hour≥12 one10mg/240mg sulfate daily with full water,max1/day,whole tablet. Persistent symptoms7days/fever or nervousness,dizziness,insomnia stop/ask doctor.",
+          "sourceId": "lord24",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f046a807-ab8c-0620-e053-2a95a90a9d3c",
+          "sourceSection": "Full Drug Facts",
+          "access": "Retained full selected primary SPL XML and relevant sections independently read; no additional live page access claimed for this assertion.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "EU severe/uncontrolled hypertension/severe acute or chronic kidney disease/failure no-use and PRES/RCVS urgent-stop symptoms kept separate from U.S. OTC formal restrictions.",
+          "sourceId": "ema",
+          "sourceUrl": "https://www.ema.europa.eu/en/documents/referral/ema-confirms-measures-minimise-risk-serious-side-effects-medicines-containing-pseudoephedrine_en.pdf",
+          "sourceSection": "Current referral overview",
+          "access": "Current official EMA referral HTML complete overview/patient/professional warnings independently read. Direct PDF web open failed; no PDF text access claimed.",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning status",
+          "Adverse reactions"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": [],
+      "retainedEvidence": {
+        "lord12": {
+          "path": "/tmp/nas-drug-sources/lord12.xml",
+          "sha256": "5bdb3252d83be75ce514eeca3ed26b78fa016f660fcd7a6754b902ac2c001625"
+        },
+        "lord24": {
+          "path": "/tmp/nas-drug-sources/lord24.xml",
+          "sha256": "398b9c52ff4e5f85f575e52606fe042c7e4bbb105dded32bb942d42c8648fa27"
+        }
+      }
+    },
+    {
+      "drug": "ascorbic-acid",
+      "fileSha256": "997dd16fa1712c5d170117f171c0c3ebb07c5b209f4ca6f3c346d98bc2a80c88",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "ASCOR once DAILY age5–<12months50mg at1.3mg/min,1–<11years100at3.3,≥11/adult200at33. Recommended≤7days;repeatbelow11notrecommended;pregnancy/lactation/G6PD not exceed age-condition RDA/AI.",
+          "sourceId": "ascor",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=388aad52-fc01-4784-9791-1dbc80c69306",
+          "sourceSection": "Sections2.2–2.3",
+          "access": "Retained full selected primary SPL XML and relevant sections independently read; no additional live page access claimed for this assertion.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "PBP500mg/mL not whole25000mg patientdose;dilute1–25mg/mL finalISOTONIC suitablefluid;singleclosure sterileISO5 dispensingwithin4h,eachprepareddoseimmediate. No copper admixture. Oxalate injury/G6PD hemolysis warnings and no formal contraindications retained.",
+          "sourceId": "ascor",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=388aad52-fc01-4784-9791-1dbc80c69306",
+          "sourceSection": "Sections2.1,4,5.1–5.2",
+          "access": "Retained full selected primary SPL XML and relevant sections independently read; no additional live page access claimed for this assertion.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "All published nutritional age/sex/pregnancy/lactation RDA/AI values match NIHTable1;smokers+35/day. UL400/650/1200/1800/2000 age1–3/4–8/9–13/14–18/adult,infantnotestablished. Nutrition limits not universal scurvy drug protocol.",
+          "sourceId": "ods",
+          "sourceUrl": "https://ods.od.nih.gov/factsheets/VitaminC-HealthProfessional/",
+          "sourceSection": "Tables1,3",
+          "access": "Current full official NIH ODS web page independently read, both full nutritional tables and excessive-intake scope. No local raw HTML access claimed.",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning status",
+          "Adverse reactions"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": [],
+      "retainedEvidence": {
+        "ascor": {
+          "path": "/tmp/nas-drug-sources/ascor.xml",
+          "sha256": "6b52968a5521a49caa66650db8930ff42f0941bee68b33becb6cdfa72e7310ee"
+        }
+      }
+    }
+  ],
+  "pending": [],
+  "limitations": []
+}
