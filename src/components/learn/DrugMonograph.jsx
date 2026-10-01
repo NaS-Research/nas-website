@@ -15,7 +15,7 @@ function ReferenceLinks({ ids, sources }) {
 }
 
 function Detail({ block, sources }) {
-  return <details className={`${styles.detail} ${block.tone === "warning" ? styles.warning : ""}`} open={block.open || undefined}>
+  return <details className={`${styles.detail} ${block.tone === "warning" ? styles.warning : ""}`}>
     <summary><h3>{block.title}</h3><span className={styles.toggle} aria-hidden="true" /></summary>
     <div className={styles.detailBody}>
       {block.badge && <span className={styles.badge}>{block.badge}</span>}
