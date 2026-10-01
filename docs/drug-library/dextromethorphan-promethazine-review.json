@@ -1,0 +1,556 @@
+{
+  "slug": "dextromethorphan-promethazine",
+  "checked": "2026-10-01",
+  "status": "source_reviewed",
+  "scope": "A prescription oral cough/allergy-cold combination. This profile follows the selected Xttrium syrup containing dextromethorphan hydrobromide 15 mg and promethazine hydrochloride 6.25 mg per 5 mL, including pediatric respiratory-depression restrictions. It is distinct from codeine combinations, promethazine injection and dextromethorphan psychiatric products.",
+  "sources": [
+    {
+      "id": "label",
+      "title": "Promethazine/dextromethorphan · Xttrium full oral syrup label",
+      "publisher": "DailyMed / official U.S. product labeling",
+      "note": "Clinical bottle label REV. January 2025; SPL v1 effective 20250407; API publication Apr 10, 2025. Clinical revision is distinct from publication. Checked October 1, 2026.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=30c9d769-bc74-04d2-e063-6294a90a665a"
+    },
+    {
+      "id": "dmcontext",
+      "title": "Dextromethorphan interaction context · current Auvelity label",
+      "publisher": "DailyMed / official U.S. product labeling",
+      "note": "Highlights revised August 2026; only full sections 5.8 and 7.1 reviewed for shared-ingredient interaction context, not cough-product dosing or indication; SPL v18 effective 20260817; API publication Aug 19, 2026. Clinical revision is distinct from publication. Checked October 1, 2026.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=dcefda7c-9a68-278e-e053-2995a90aec79"
+    }
+  ],
+  "sourceEvidence": {
+    "label": {
+      "splVersion": "1",
+      "effectiveTime": "20250407",
+      "apiPublishedDate": "Apr 10, 2025",
+      "clinicalRevision": "Clinical bottle label REV. January 2025; SPL v1 effective 20250407; API publication Apr 10, 2025. Clinical revision is distinct from publication. Checked October 1, 2026.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=30c9d769-bc74-04d2-e063-6294a90a665a",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/30c9d769-bc74-04d2-e063-6294a90a665a.xml",
+      "localEvidence": "/tmp/nas-drug-sources/prometh-dm.xml",
+      "sha256": "140e9dd23d628bd92c94c7d6031a32a8fea55102e46115f92c925ff5fbcfbc1c",
+      "supportingSections": [
+        "DESCRIPTION",
+        "Dextromethorphan",
+        "Promethazine",
+        "INDICATIONS AND USAGE",
+        "CONTRAINDICATIONS",
+        "WARNING",
+        "Dextromethorphan",
+        "CNS Depression",
+        "Respiratory Depression",
+        "Lower Seizure Threshold",
+        "Bone-Marrow Depression",
+        "Neuroleptic Malignant Syndrome",
+        "Use In Pediatric Patients",
+        "Other Consideration",
+        "PRECAUTIONS",
+        "General",
+        "Information For Patients",
+        "Dextromethorphan",
+        "CNS Depressants",
+        "Epinephrine",
+        "Anticholinergics",
+        "Monoamine oxidase inhibitors (MAOI)",
+        "Drug/Laboratory Test Interactions",
+        "Pregnancy Tests",
+        "Glucose Tolerance Test",
+        "Carcinogenesis, Mutagenesis, Impairment Of Fertility",
+        "Pregnancy category C",
+        "Nonteratogenic Effects",
+        "Labor And Delivery",
+        "Nursing Mothers",
+        "Pediatric Use",
+        "Geriatric Use",
+        "Dextromethorphan",
+        "Promethazine",
+        "DRUG ABUSE AND DEPENDENCE",
+        "Dextromethorphan",
+        "Promethazine",
+        "Treatment",
+        "DOSAGE AND ADMINISTRATION",
+        "HOW SUPPLIED",
+        "STORAGE AND HANDLING",
+        "PRINCIPAL DISPLAY PANEL - 437 mL Bottle Label"
+      ],
+      "access": "Full relevant public supporting sections read; contextual source limited explicitly",
+      "checked": "2026-10-01"
+    },
+    "dmcontext": {
+      "splVersion": "18",
+      "effectiveTime": "20260817",
+      "apiPublishedDate": "Aug 19, 2026",
+      "clinicalRevision": "Highlights revised August 2026; only full sections 5.8 and 7.1 reviewed for shared-ingredient interaction context, not cough-product dosing or indication; SPL v18 effective 20260817; API publication Aug 19, 2026. Clinical revision is distinct from publication. Checked October 1, 2026.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=dcefda7c-9a68-278e-e053-2995a90aec79",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/dcefda7c-9a68-278e-e053-2995a90aec79.xml",
+      "localEvidence": "/tmp/nas-drug-sources/auvelity-dmcontext.xml",
+      "sha256": "2400f34a6b99067287f170ec274217eb8daad7371acdec4723b4db08e93eeb4e",
+      "supportingSections": [
+        "5.8\tSerotonin Syndrome",
+        "7.1\tDrugs Having Clinically Important Interactions with AUVELITY"
+      ],
+      "access": "Full relevant public supporting sections read; contextual source limited explicitly",
+      "checked": "2026-10-01"
+    }
+  },
+  "assertionMap": [
+    {
+      "section": "indications",
+      "card": "Labeled use and excluded routes",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Indications and usage;1.1–1.3"
+        ]
+      },
+      "claims": [
+        "Temporary relief of cough and upper-respiratory symptoms associated with allergy or the common cold. Not treatment of lower-respiratory symptoms, including asthma; do not infer disease-modifying infection treatment, chronic-cough control, pediatric vomiting treatment or psychiatric use. Promethazine’s antiemetic properties do not establish an antiemetic indication for this fixed cough combination."
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Selected label regimens",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Dosage and administration;2.1–2.5",
+          "Special population dose restrictions"
+        ]
+      },
+      "claims": [
+        [
+          "Adults",
+          "5 mL every 4–6 hours; maximum 30 mL in 24 hours (90 mg dextromethorphan HBr and 37.5 mg promethazine HCl)."
+        ],
+        [
+          "Age 6 to <12 years",
+          "2.5–5 mL every 4–6 hours; maximum 20 mL in 24 hours (60 mg and 25 mg, respectively)."
+        ],
+        [
+          "Age 2 to <6 years",
+          "1.25–2.5 mL every 4–6 hours; maximum 10 mL in 24 hours (30 mg and 12.5 mg, respectively)."
+        ],
+        [
+          "Below age 2",
+          "Contraindicated: potentially fatal respiratory depression at a wide range of weight-based doses."
+        ],
+        [
+          "Exact adolescent scope",
+          "The selected table labels the top row Adults and children only through <12; it does not explicitly assign ages 12–17. Obtain exact-product prescriber/pharmacist dosing review rather than infer an adolescent regimen."
+        ]
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Administration and adjustment limits",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Dosage and administration;2.1–2.5",
+          "Special population dose restrictions"
+        ]
+      },
+      "claims": [
+        "Use a calibrated oral syringe/cup for the prescribed mL dose; household teaspoons are unreliable for small doses. Take only the prescribed amount and avoid duplicate promethazine, dextromethorphan or other sedating cough/cold medicines. Older adults generally start low and need close sedation assessment. The selected label supplies no validated renal/hepatic dose table or universal duration; hepatic impairment requires caution, while renal disease needs individual review. No pediatric mg/kg rescue formula, other concentration conversion or double missed dose recommended."
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "sourceIds": [
+        "label",
+        "dmcontext"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Boxed warning",
+          "Contraindications/highlights",
+          "Warnings and precautions",
+          "Adverse reactions",
+          "Overdosage"
+        ],
+        "dmcontext": [
+          "5.8Serotoninsyndrome;7.1StrongCYP2D6inhibitors/serotonergic medicines;contextonly,noAuvelityregimen"
+        ]
+      },
+      "claims": [
+        "Fatal respiratory depression below 2 years is the boxed risk; age ≥2 still requires caution, lowest effective dose and avoidance of other respiratory depressants. Weight-based dosing does not reliably prevent apnea.",
+        "Avoid promethazine in compromised respiratory function such as COPD or sleep apnea. Marked sedation/coordination impairment increases accident risk; avoid alcohol and other CNS depressants.",
+        "Promethazine can lower seizure threshold and cause acute dystonia, involuntary movements, hallucinations or paradoxical excitation. Dehydrated ill children are more susceptible to dystonia; avoid pediatric symptoms suggesting Reye syndrome or other hepatic disease.",
+        "Fever, rigidity, confusion and unstable vital signs can indicate potentially fatal neuroleptic malignant syndrome: stop and obtain emergency assessment.",
+        "Use caution with bone-marrow depression, cardiovascular disease and liver impairment; leukopenia/agranulocytosis and cholestatic jaundice have been reported.",
+        "Anticholinergic effects matter with narrow-angle glaucoma, prostatic hypertrophy, bladder-neck or pyloroduodenal obstruction and stenosing peptic ulcer. Avoid prolonged sun exposure because photosensitivity can occur.",
+        "MAO inhibitors are prohibited with this combination; modern dextromethorphan-containing labeling also identifies serotonergic/CYP2D6 interaction hazards. Review new or recently stopped medicines before use; suspected serotonin toxicity requires urgent assessment."
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Boxed warning",
+          "Contraindications/highlights",
+          "Warnings and precautions",
+          "Adverse reactions",
+          "Overdosage"
+        ]
+      },
+      "claims": [
+        "Below 2 years of age; receiving an MAO inhibitor; comatose states; known hypersensitivity or idiosyncratic reaction to promethazine/other phenothiazines. Antihistamines are contraindicated for treatment of lower-respiratory-tract symptoms including asthma. The label supplies no safe infant dose or permission to treat asthma cough with this product."
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Boxed warning · pediatric respiratory depression",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Boxed warning",
+          "Contraindications/highlights",
+          "Warnings and precautions",
+          "Adverse reactions",
+          "Overdosage"
+        ]
+      },
+      "claims": [
+        "Promethazine should not be used below 2 years because postmarketing respiratory depression, including deaths, occurred across many weight-based doses. At age ≥2 use the lowest effective prescribed dose cautiously and avoid concomitant respiratory-depressant drugs."
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions and overdose",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Boxed warning",
+          "Contraindications/highlights",
+          "Warnings and precautions",
+          "Adverse reactions",
+          "Overdosage"
+        ]
+      },
+      "claims": [
+        "Drowsiness is prominent; dizziness, confusion, blurred vision, dry mouth, GI upset, photosensitivity and BP/heart-rate changes can occur. Serious reports include seizures, EPS, blood dyscrasias, jaundice, airway allergy, apnea and NMS. Overdose may produce excitation/psychosis or profound CNS depression, hypotension, respiratory failure, seizures, coma and death. Seek immediate emergency/Poison Help (1-800-222-1222); clinical airway/cardiovascular support is required. Naloxone does not reverse promethazine depression; epinephrine must not treat promethazine-overdose hypotension because it can further lower BP. No home lavage, cathartic, charcoal or antidote protocol supplied."
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Selected cough-product label",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Drug interactions;7.1–7.7",
+          "Contraindications",
+          "Warnings"
+        ]
+      },
+      "claims": [
+        "MAO inhibitors with dextromethorphan have been associated with hyperpyrexia, hypotension and death; concomitant use is contraindicated. The selected combination label does not state a numeric post-MAO discontinuation interval: recent use requires pharmacist review. Alcohol, opioids, sedative/hypnotics, anesthetics, TCAs and tranquilizers intensify promethazine sedation/respiratory risk; avoid or clinician-adjust, never patient-led dose reduction. Other anticholinergic agents add adverse effects. Promethazine can alter certain hCG pregnancy tests and glucose-tolerance results."
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Modern shared-ingredient context",
+      "sourceIds": [
+        "label",
+        "dmcontext"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Drug interactions;7.1–7.7",
+          "Contraindications",
+          "Warnings"
+        ],
+        "dmcontext": [
+          "5.8Serotoninsyndrome;7.1StrongCYP2D6inhibitors/serotonergic medicines;contextonly,noAuvelityregimen"
+        ]
+      },
+      "claims": [
+        "The current Auvelity label identifies dextromethorphan-associated serotonin-syndrome risk with SSRIs/TCAs and other serotonergic medicines, and increased dextromethorphan exposure with strong CYP2D6 inhibitors. This supports pharmacist review of these combinations and prompt assessment of agitation, fever, tremor/twitching or autonomic instability. Auvelity has different ingredients/exposure: its doses, contraindication list and washout algorithm are not transplanted to this syrup. Do not combine dextromethorphan products independently."
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Children and older adults",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Pregnancy/lactation/pediatric/geriatric",
+          "Renal/hepatic impairment;2.5/5.2–5.3/8.6"
+        ]
+      },
+      "claims": [
+        "Below 2 is contraindicated. Older children need lowest effective prescribed dosing, respiratory-depressant avoidance and activity supervision; pediatric Reye/hepatic symptoms and dehydration-associated dystonia deserve caution. Exact ages 12–17 lack an explicit row in this selected table and require dose review. Older adults may develop confusion/oversedation; start at the low end and monitor comorbid organ disease and interacting medicines."
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Renal and hepatic considerations",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Pregnancy/lactation/pediatric/geriatric",
+          "Renal/hepatic impairment;2.5/5.2–5.3/8.6"
+        ]
+      },
+      "claims": [
+        "Promethazine is hepatically metabolized and requires caution with impaired liver function; cholestatic jaundice is reported. The selected combination label provides no quantified renal/hepatic adjustment or dialysis clearance-based regimen. Debilitated, sedated or supine patients need caution with dextromethorphan. Do not infer safety from local OTC dextromethorphan dosing."
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy and lactation",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Pregnancy/lactation/pediatric/geriatric",
+          "Renal/hepatic impairment;2.5/5.2–5.3/8.6"
+        ]
+      },
+      "claims": [
+        "Combination reproduction studies were not conducted and adequate controlled human studies are absent; use only when clearly needed after benefit/risk assessment. Promethazine within 2 weeks of delivery may inhibit neonatal platelet aggregation; later developmental effects are unknown. The selected label says human milk excretion of either drug is unknown and advises nursing caution. No fetal-safety guarantee, universal milk-discard interval or pregnancy-letter category used as a modern risk conclusion."
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Clinical pharmacology;12.1–12.3"
+        ]
+      },
+      "claims": [
+        "Dextromethorphan acts centrally to raise cough threshold; promethazine blocks H1 receptors and has sedative/anticholinergic effects. The fixed oral product contains no codeine and does not acquire codeine analgesic indications. Lack of opioid analgesic action does not imply harmless overdose or freedom from misuse."
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Pharmacokinetics and effects",
+      "sourceIds": [
+        "label",
+        "dmcontext"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Clinical pharmacology;12.1–12.3"
+        ],
+        "dmcontext": [
+          "5.8Serotoninsyndrome;7.1StrongCYP2D6inhibitors/serotonergic medicines;contextonly,noAuvelityregimen"
+        ]
+      },
+      "claims": [
+        "Both are absorbed orally and undergo hepatic metabolism. Dextromethorphan onset is roughly 15–30 minutes with effects around 3–6 hours; promethazine effects begin about 20 minutes and usually last 4–6 hours, sometimes up to 12 hours. These label effect times are not ingredient plasma half-lives. Modern dextromethorphan labeling supports CYP2D6-inhibition exposure concerns; no cough-syrup poor-metabolizer dosing algorithm inferred."
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Monitoring priorities",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Information for patients /17",
+          "Warnings and monitoring",
+          "Dosage restrictions"
+        ]
+      },
+      "claims": [
+        "Assess cause/severity of cough, age, breathing disorders, dehydration, organ disease, CNS/movement symptoms and all prescriptions/OTC products. Review treatment response and persistent symptoms rather than escalating dose. Check for sedation, paradoxical excitation, respiratory depression and relevant blood/liver symptoms; no universal laboratory schedule asserted."
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Counseling",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Information for patients /17",
+          "Warnings and monitoring",
+          "Dosage restrictions"
+        ]
+      },
+      "claims": [
+        "Measure doses in mL with an appropriate calibrated device. Never give to a child below 2; obtain explicit adolescent dosing review for this label. Avoid alcohol/other sedating or duplicate cough medicines and driving until effects known; supervise children’s hazardous activities. Report uncontrolled movements and limit sun exposure. Seek emergency care for slow breathing, severe unresponsiveness, seizure, NMS/serotonin-toxicity symptoms or overdose. Keep secure from children; no sharing or intentional high-dose use."
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Representative Xttrium syrup",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Description /3/11",
+          "How supplied/storage/16",
+          "SPL product/approval panels"
+        ]
+      },
+      "claims": [
+        [
+          "Concentration",
+          "Per 5 mL: dextromethorphan HBr 15 mg and promethazine HCl 6.25 mg."
+        ],
+        [
+          "Appearance / package",
+          "Clear yellow syrup; full PI lists 473 mL bottle, NDC 0116-4024-16."
+        ],
+        [
+          "Status",
+          "Prescription oral syrup, ANDA088864; clinical bottle label January 2025."
+        ]
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Description /3/11",
+          "How supplied/storage/16",
+          "SPL product/approval panels"
+        ]
+      },
+      "claims": [
+        [
+          "Selected excipients",
+          "Alcohol 7%, sucrose, flavorings and dyes; exact allergies/metabolic considerations require package review."
+        ],
+        [
+          "Per mL",
+          "Dextromethorphan HBr 3 mg/mL and promethazine HCl 1.25 mg/mL, derived from labeled 5 mL amounts."
+        ],
+        [
+          "Route scope",
+          "Oral syrup only; not promethazine injection/suppository, promethazine-codeine, standalone dextromethorphan or psychiatric fixed combinations."
+        ],
+        [
+          "Product differences",
+          "Other manufacturers’ salt strengths, alcohol/excipients, dose instructions and approval records require their own label review."
+        ]
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Description /3/11",
+          "How supplied/storage/16",
+          "SPL product/approval panels"
+        ]
+      },
+      "claims": [
+        "Store at 20–25°C, tightly closed and protected from light. Dispense in a tight light-resistant container. Keep securely away from children and use the actual package expiration; no universal after-opening discard interval is supplied."
+      ]
+    },
+    {
+      "section": "hero/essential",
+      "card": "Scope, essential and three tuple facts",
+      "sourceIds": [
+        "label",
+        "dmcontext"
+      ],
+      "sourceSections": [
+        "Indications",
+        "Strengths",
+        "Boxed warnings",
+        "Product"
+      ],
+      "claims": [
+        "A prescription oral cough/allergy-cold combination. This profile follows the selected Xttrium syrup containing dextromethorphan hydrobromide 15 mg and promethazine hydrochloride 6.25 mg per 5 mL, including pediatric respiratory-depression restrictions. It is distinct from codeine combinations, promethazine injection and dextromethorphan psychiatric products.",
+        "Promethazine products are contraindicated below age 2, and respiratory depression can still occur in older children and adults. Avoid other respiratory/CNS depressants and use the lowest effective prescribed dose. Severe sleepiness, slow breathing, inability to wake, seizures or fever with rigidity/confusion require emergency care.",
+        [
+          "Therapeutic class",
+          "Antitussive + sedating H1 antihistamine"
+        ],
+        [
+          "Strength per 5 mL",
+          "Dextromethorphan HBr 15 mg + promethazine HCl 6.25 mg"
+        ],
+        [
+          "Selected product",
+          "Prescription oral syrup · alcohol 7%"
+        ]
+      ]
+    }
+  ],
+  "materialErrors": [],
+  "gaps": [
+    {
+      "material": false,
+      "topic": "Age12–17 row gap",
+      "finding": "Dose table adultrow andchildbands2–<6,6–<12;noexplicitadolescentrow.",
+      "resolution": "Non-actionable adolescentdose;exactproductprescriber/pharmacistreview, no blanket≥12inference."
+    },
+    {
+      "material": false,
+      "topic": "ModernDMinteraction context",
+      "finding": "Selectedolderformatcombo lacksserotonin/CYP2D6algorithm and numericMAOafterstopinterval;currentAuvelity5.8/7.1verifiesDMshared-ingredient safetycontext.",
+      "resolution": "Riskreviewandurgentsymptoms included;no psychiatricdose/bupropionrisk orproduct-specificwashouttransplant. RecentMAOuse non-actionablepharmacyreview."
+    },
+    {
+      "material": false,
+      "topic": "Package size metadata",
+      "finding": "How supplied andbottlepaneltext473mL,sectiontitlemalformed437mL.",
+      "resolution": "473mL textualprimarylisting;nostockclaim/title notusedasanewfill."
+    },
+    {
+      "material": false,
+      "topic": "Legacyabuse/PKclaims",
+      "finding": "Labelclinicalpharmsaysnoaddictiveproperties whileabuse sectionsaysslightpsychicdependence;nohalf-lifedata.",
+      "resolution": "No no-misuse guarantee;effectonset/duration nothalf-life;noorgandoseformula."
+    },
+    {
+      "material": false,
+      "topic": "Formulation scope",
+      "resolution": "SelectedapprovedXttriumANDA08886415/6.25mgper5mLand7%alcohol;notuniversalallmanufacturers/excipients orpromethazinecodeine/injection/standaloneDM regimen."
+    }
+  ],
+  "exclusions": [
+    "Unverified other formulations/routes/manufacturers; non-U.S. regimens; currentstock claims; preferred guideline rankings, independent switches, universal monitoring schedules and home overdose protocols."
+  ],
+  "validation": {
+    "schema": "validateMonograph returned [] October1,2026; exact eight ordered sections/fourSafety/threeProduct/threehero tuples.",
+    "renderedPage": "Pending parent natural390px integration QA; readable two-column tables"
+  },
+  "monographSha256": "cd4852743e820ac6e51f096312fce519fdc997ef65f3f556c070a328554a996a",
+  "sourceInterpretationNotes": [
+    "Clinical revision distinct SPL effectiveTime/API publication; current full primary publicly served label reviewed, not snippet-only candidates.",
+    "Original focused summaries; no invented sources/paywall access. No old absolute safety/availability assertions propagated.",
+    "Other-product dextromethorphan context is explicitly scoped; no bupropion-specific boxed risk, indication, dose or washout algorithm transplanted to cough syrup."
+  ]
+}

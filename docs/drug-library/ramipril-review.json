@@ -1,0 +1,579 @@
+{
+  "slug": "ramipril",
+  "checked": "2026-10-01",
+  "status": "source_reviewed",
+  "scope": "A prescription ACE inhibitor for hypertension, specified high-cardiovascular-risk adults, and stable heart failure following myocardial infarction. This profile follows the current Hikma capsule label, distinguishing indication-specific targets, renal adjustments and fetal toxicity.",
+  "sources": [
+    {
+      "id": "label",
+      "title": "Ramipril capsules · full Hikma label",
+      "publisher": "DailyMed / official U.S. product labeling",
+      "note": "Clinical highlights and full PI revised May 2026; SPL v11 effective 20260520; API publication Jun 05, 2026. Clinical revision is distinct from publication. Checked October 1, 2026.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7e9e84f7-ff47-463d-bf47-7a9745960aae"
+    }
+  ],
+  "sourceEvidence": {
+    "label": {
+      "splVersion": "11",
+      "effectiveTime": "20260520",
+      "apiPublishedDate": "Jun 05, 2026",
+      "clinicalRevision": "Clinical highlights and full PI revised May 2026; SPL v11 effective 20260520; API publication Jun 05, 2026. Clinical revision is distinct from publication. Checked October 1, 2026.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7e9e84f7-ff47-463d-bf47-7a9745960aae",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/7e9e84f7-ff47-463d-bf47-7a9745960aae.xml",
+      "localEvidence": "/tmp/nas-drug-sources/ramipril.xml",
+      "sha256": "2c3edf0921ea51f3d270048cb884919171fa00ff80f7b564621a0f0df41d61c3",
+      "supportingSections": [
+        "WARNING: FETAL TOXICITY ",
+        "1.1 Hypertension",
+        "1.2 Reduction in the Risk of Myocardial Infarction, Stroke, and Death from Cardiovascular Causes ",
+        "1.3 Heart Failure Post-Myocardial Infarction ",
+        "2.1 Hypertension",
+        "2.2 Reduction in Risk of Myocardial Infarction, Stroke, and Death from Cardiovascular Causes ",
+        "2.3 Heart Failure Post-Myocardial Infarction ",
+        "2.4 General Dosing Information",
+        "2.5 Dosage Adjustment",
+        "3 DOSAGE FORMS AND STRENGTHS",
+        "4 CONTRAINDICATIONS",
+        "5.1 Anaphylactoid and Possibly Related Reactions",
+        "5.2 Hepatic Failure and Impaired Liver Function ",
+        "5.3 Renal Impairment ",
+        "5.4 Neutropenia and Agranulocytosis",
+        "5.5 Hypotension",
+        "5.6 Fetal Toxicity ",
+        "5.7 Dual Blockade of the Renin-Angiotensin System ",
+        "5.8 Hyperkalemia",
+        "5.9 Cough",
+        "6.1 Clinical Trials Experience ",
+        "6.2 Post-Marketing Experience",
+        "6.3 Clinical Laboratory Test Findings",
+        "7.1 Diuretics",
+        "7.2 Agents Increasing Serum Potassium ",
+        "7.3 Other Agents Affecting RAS",
+        "7.4 Lithium",
+        "7.5 Gold",
+        "7.6 Non-Steroidal Anti-Inflammatory Agents including Selective Cyclooxygenase-2 Inhibitors (COX-2 Inhibitors)",
+        "7.7 mTOR Inhibitors or Other Drugs Known to Cause Angioedema",
+        "8.1 Pregnancy",
+        "8.3 Nursing Mothers",
+        "8.4 Pediatric Use",
+        "8.5 Geriatric Use",
+        "8.6 Renal Impairment ",
+        "10 OVERDOSAGE",
+        "11 DESCRIPTION",
+        "12.1 Mechanism of Action",
+        "12.2 Pharmacodynamics",
+        "12.3 Pharmacokinetics",
+        "13.1 Carcinogenesis, Mutagenesis, Impairment of Fertility",
+        "14.1 Hypertension ",
+        "14.2 Reduction in Risk of Myocardial Infarction, Stroke, and Death from Cardiovascular Causes\n                     ",
+        "14.3 Heart Failure Post-Myocardial Infarction ",
+        "16 HOW SUPPLIED/STORAGE AND HANDLING",
+        "17 PATIENT COUNSELING INFORMATION",
+        "PRINCIPAL DISPLAY PANEL ",
+        "PRINCIPAL DISPLAY PANEL",
+        "PRINCIPAL DISPLAY PANEL",
+        "PRINCIPAL DISPLAY PANEL"
+      ],
+      "access": "Full relevant public supporting sections read; contextual source limited explicitly",
+      "checked": "2026-10-01"
+    }
+  },
+  "assertionMap": [
+    {
+      "section": "indications",
+      "card": "Hypertension",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Indications and usage;1.1–1.3"
+        ]
+      },
+      "claims": [
+        "Treatment of hypertension to reduce BP, as part of broader cardiovascular-risk management; may be used alone or with thiazide diuretics. BP goals and preferred-drug rankings require current disease-specific guideline assessment, not the older JNC reference retained in the label."
+      ]
+    },
+    {
+      "section": "indications",
+      "card": "Specified cardiovascular risk and post-MI heart failure",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Indications and usage;1.1–1.3"
+        ]
+      },
+      "claims": [
+        "Risk reduction for MI, stroke and cardiovascular death: age ≥55 with coronary disease, prior stroke, peripheral vascular disease, or diabetes plus≥1 additional risk factor (hypertension, elevated total cholesterol, low HDL, smoking or documented microalbuminuria). Can supplement other needed risk treatments. Post-MI indication is clinically stable patients with congestive-heart-failure signs within the first few days after acute MI, reducing death/failure hospitalization and progression. No automatic pediatric, kidney-protection-alone or all-heart-failure indication inferred."
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Selected adult regimens",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Dosage and administration;2.1–2.5",
+          "Special population dose restrictions"
+        ]
+      },
+      "claims": [
+        [
+          "Hypertension · no diuretic",
+          "Start 2.5 mg once daily; usual maintenance 2.5–20 mg/day once daily or in 2 equal doses, adjusted to BP response."
+        ],
+        [
+          "Specified high CV risk",
+          "2.5 mg once daily for 1 week, then 5 mg once daily for 3 weeks, then 10 mg once daily as tolerated. Hypertension/recentMI may permit divided dosing."
+        ],
+        [
+          "Stable post-MI heart failure",
+          "Start 2.5 mg twice daily; if hypotensive at this dose, 1.25 mg twice daily. After 1 week, titrate toward 5 mg twice daily, increases about 3 weeks apart."
+        ],
+        [
+          "Initial post-MI observation",
+          "Medical supervision≥2 hours and until BP remains stable for ≥1additional hour. Consider reducing concomitant diuretic when possible."
+        ]
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Renal and volume-related adjustment",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Dosage and administration;2.1–2.5",
+          "Special population dose restrictions"
+        ]
+      },
+      "claims": [
+        [
+          "Baseline renal function",
+          "Establish before start. Usual regimens if estimated CrCl>40 mL/min; worse impairment needs lower doses."
+        ],
+        [
+          "Hypertension with renal impairment",
+          "Start 1.25 mg once daily; titrate to control or maximum 5 mg/day."
+        ],
+        [
+          "Post-MI HF with renal impairment",
+          "Start 1.25 mg once daily; may increase to 1.25 mg twice daily, maximum 2.5 mg twice daily by response/tolerance."
+        ],
+        [
+          "Volume depletion / renal-artery stenosis",
+          "If suspected, start 1.25 mg once daily and adjust by BP. Correct salt/volume deficits clinically."
+        ],
+        [
+          "Diuretic or borderline renal scope",
+          "Clinician reviews diuretic/volume status and exactCrCl threshold; do not mechanically apply one-quarter dose to every indication or invent a high CV risk renal target."
+        ]
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Capsule administration",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Dosage and administration;2.1–2.5",
+          "Special population dose restrictions"
+        ]
+      },
+      "claims": [
+        "Usually swallow whole. May open onto about 4 oz applesauce or mix in 4 oz (120 mL) water or apple juice; consume the entire mixture to receive full dose. Specified mixtures may be stored≤24 hours at room temperature or≤48 hours refrigerated. Food does not materially reduce extent of absorption. No patient-led switch from another ACE inhibitor, pediatric dose or universal missed-dose doubling supplied."
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Boxed warning",
+          "Contraindications/highlights",
+          "Warnings and precautions",
+          "Adverse reactions",
+          "Overdosage"
+        ]
+      },
+      "claims": [
+        "Head/neck angioedema may be fatal; discontinue and institute urgent treatment. Abdominal pain with/without vomiting can be intestinal angioedema even without prior facial swelling. ACE-inhibitor angioedema risk is higher in Black patients; individual assessment is essential.",
+        "Anaphylactoid reactions may occur with Hymenoptera venom desensitization, high-flux dialysis membranes or dextran-sulfate LDL apheresis; coordinate with treating specialists.",
+        "Correct volume/salt depletion. Hypotension can follow initial/increased doses, particularly with diuretics, diarrhea/vomiting, dialysis, renal-artery stenosis or HF; supervise high-risk starts and perioperative management.",
+        "Renal function can worsen, including oliguria/azotemia or acute failure, especially in severe HF, renal-artery stenosis, pre-existing disease or interacting drugs. Monitor renal function early and after relevant changes.",
+        "Hyperkalemia risk increases with renal insufficiency, diabetes or potassium-raising medicines; monitor and avoid unreviewed supplements/salt substitutes.",
+        "Stop for jaundice or marked hepatic-enzyme elevation because rare cholestatic disease can progress to fatal necrosis. Rare marrow suppression/neutropenia particularly concerns collagen-vascular disease with renal impairment.",
+        "ACE-inhibitor dry cough may persist and warrants reassessment. Dual RAS blockade generally adds harm without benefit; avoid routine combined therapy.",
+        "Pregnancy exposure can injure/kill the fetus; discontinue promptly when detected and arrange alternative therapy rather than continue pending routine follow-up."
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Boxed warning",
+          "Contraindications/highlights",
+          "Warnings and precautions",
+          "Adverse reactions",
+          "Overdosage"
+        ]
+      },
+      "claims": [
+        "Hypersensitivity to ramipril/product or another ACE inhibitor, including prior ACE-inhibitor angioedema. Current highlights additionally name hereditary or idiopathic angioedema; the full section 4 uses the narrower hypersensitivity/previous-ACE wording, so both safety restrictions are retained. Neprilysin-inhibitor combination is contraindicated: no ramipril within 36 hours before or after switching sacubitril/valsartan. Aliskiren combination is contraindicated in diabetes; avoid it with GFR <60 mL/min/1.73m² under warnings."
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Boxed warning · fetal toxicity",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Boxed warning",
+          "Contraindications/highlights",
+          "Warnings and precautions",
+          "Adverse reactions",
+          "Overdosage"
+        ]
+      },
+      "claims": [
+        "Drugs acting directly on the renin-angiotensin system can injure or kill the developing fetus. When pregnancy is detected, discontinue ramipril as soon as possible. Later pregnancy exposure can cause oligohydramnios, fetal/neonatal renal failure and other severe outcomes; the first-trimester evidence limitations do not authorize use."
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions and overdose",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Boxed warning",
+          "Contraindications/highlights",
+          "Warnings and precautions",
+          "Adverse reactions",
+          "Overdosage"
+        ]
+      },
+      "claims": [
+        "Reported effects include cough, dizziness, headache, fatigue, GI complaints and hypotension; post-MI rates differ from hypertension trials. Serious reports include angioedema, kidney/liver injury, marrow disorders and severe skin reactions; postmarketing frequencies/causality may be uncertain. Overdose most likely causes marked hypotension: emergency/Poison Help (1-800-222-1222) and professional volume/hemodynamic support. Adult hemodialytic removal is not established. The retained label’s claim that angiotensin II is essentially unavailable is historical and is not repeated as a current availability or treatment rule."
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "RAS, angioedema and potassium",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Drug interactions;7.1–7.7",
+          "Contraindications",
+          "Warnings"
+        ]
+      },
+      "claims": [
+        "Sacubitril/neprilysin inhibition: contraindicated combination and 36-hour separation; mTOR inhibitors such as temsirolimus also raise angioedema concern. Avoid routine ACE/ARB/aliskiren dual blockade; aliskiren-diabetes contraindication and GFR <60avoidance are distinct. Potassium supplements, potassium-sparing diuretics and potassium salt substitutes can cause hyperkalemia; monitor."
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Diuretics, NSAIDs and other medicines",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Drug interactions;7.1–7.7",
+          "Contraindications",
+          "Warnings"
+        ]
+      },
+      "claims": [
+        "Diuretics/volume depletion increase hypotension; clinician-directed lower initial dose or diuretic adjustment may be needed. NSAIDs/COX-2 inhibitors can reduce BP benefit and worsen renal function, especially in older, depleted or renally impaired patients. Lithium levels/toxicity may increase, particularly with diuretics: frequent lithium monitoring. Injectable gold can cause flushing/nausea/vomiting/hypotension. Rare hypoglycemia reports with insulin/oral glucose-lowering medicines have uncertain causality; assess symptoms clinically."
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Renal and hepatic considerations",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Pregnancy/lactation/pediatric/geriatric",
+          "Renal/hepatic impairment;2.5/5.2–5.3/8.6"
+        ]
+      },
+      "claims": [
+        "Use indication-specific renal reduction in dosage; PK study units indexed to 1.73m² are distinct from estimated CrCl dosing section units. Renal-artery stenosis and severe HF increase acute renal-risk concerns. Liver impairment slows activation to ramiprilat and increases parent levels; no formal validated hepatic dose table for hypertensive patients is supplied. Do not interpret metabolism changes as proof of safety in advanced disease."
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Children and older adults",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Pregnancy/lactation/pediatric/geriatric",
+          "Renal/hepatic impairment;2.5/5.2–5.3/8.6"
+        ]
+      },
+      "claims": [
+        "Pediatric efficacy/safety are unestablished. In-utero-exposed neonates require observation for hypotension, oliguria and hyperkalemia, with specialist perfusion/renal support if needed. Older adult sensitivity and ramiprilat exposure may be greater; review renal function, volume and medications rather than use an invented age-only dose."
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy and lactation",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Pregnancy/lactation/pediatric/geriatric",
+          "Renal/hepatic impairment;2.5/5.2–5.3/8.6"
+        ]
+      },
+      "claims": [
+        "Avoid pregnancy exposure; discuss alternatives before conception and discontinue promptly if pregnant. Monitor exposed fetus/neonate according to specialist guidance because oligohydramnios may appear after injury. A single 10 mg maternal dose produced undetectable milk levels, but multiple-dose concentrations are unpredictable; the selected full label says do not use in nursing mothers. No single-dose observation is presented as general breastfeeding safety."
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Clinical pharmacology;12.1–12.3"
+        ]
+      },
+      "claims": [
+        "Hepatic ester cleavage produces active ramiprilat, which inhibits ACE, lowering angiotensin II formation and aldosterone secretion. Reduced vasoconstriction lowers BP; reduced aldosterone contributes to potassium increase. ACE also metabolizes bradykinin, relevant to cough/angioedema. Mean monotherapy BP response was smaller in Black patients in label studies; this does not remove all clinical benefit or determine an individual dose."
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Pharmacokinetics",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Clinical pharmacology;12.1–12.3"
+        ]
+      },
+      "claims": [
+        "Oral parent peak about 1 hour, ramiprilat 2–4 hours; food slows absorption rate without materially changing extent. Parent/metabolite handling includes hepatic activation and urine/fecal elimination. Repeated 5–10 mg doses yield ramiprilat therapeutic-range half-life about 13–17 hours; a >50 hour terminal phase reflects ACE binding/dissociation and does not contribute to accumulation. Renal impairment increases ramiprilat exposure; do not infer extra dialysis doses or an exact universal hepatic conversion formula."
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Monitoring priorities",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Information for patients /17",
+          "Warnings and monitoring",
+          "Dosage restrictions"
+        ]
+      },
+      "claims": [
+        "Check baseline renal function, potassium, BP/volume status and all medicines; reassess after starting, titration, diuretic/NSAID changes or dehydration. High-riskHF starts need close follow-up for first 2 weeks and after dose increases; renal-artery stenosis requires early renal monitoring. Consider WBC with collagen-vascular disease, particularly renal impairment; liver symptoms warrant prompt testing/review. No universal creatinine-rise cutoff or fixed all-patient laboratory interval invented."
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Counseling",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Information for patients /17",
+          "Warnings and monitoring",
+          "Dosage restrictions"
+        ]
+      },
+      "claims": [
+        "Report planned/detected pregnancy and avoid nursing under selected labeling. Stop and seek immediate evaluation for angioedema, difficulty breathing or fainting; fever/sore throat can indicate neutropenia. Vomiting, diarrhea, excessive sweating or poor intake can worsen hypotension and needs review. Do not use potassium salt substitutes/supplements or start NSAIDs/RAS drugs without clinician review. Take exact regimen and approved capsule mixture if needed; never independently bridge the sacubitril 36-hour separation."
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Representative Hikma capsule",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Description /3/11",
+          "How supplied/storage/16",
+          "SPL product/approval panels"
+        ]
+      },
+      "claims": [
+        [
+          "1.25 mg capsule",
+          "Yellow opaque capsule, 54 328 printed on cap/body; white/off-white powder."
+        ],
+        [
+          "Package",
+          "Bottle of 100, NDC 0054-0106-25."
+        ],
+        [
+          "Status",
+          "Prescription oral ANDA077900 product; full PI revised May 2026, no current-stock inference."
+        ]
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Description /3/11",
+          "How supplied/storage/16",
+          "SPL product/approval panels"
+        ]
+      },
+      "claims": [
+        [
+          "Selected strengths",
+          "1.25, 2.5, 5 and 10 mg oral hard-gelatin capsules."
+        ],
+        [
+          "2.5 mg",
+          "Orange opaque, 54 794; bottle of 100 NDC 0054-0107-25."
+        ],
+        [
+          "5 mg",
+          "Red opaque, 54 145; bottle of 100 NDC 0054-0108-25."
+        ],
+        [
+          "10 mg",
+          "Blue opaque, 54 602; bottle of 100 NDC 0054-0109-25."
+        ],
+        [
+          "Scope",
+          "Other capsule/tablet manufacturers and combination products need exact labeling; no injectable ramipril or invented scored-capsule division."
+        ]
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Description /3/11",
+          "How supplied/storage/16",
+          "SPL product/approval panels"
+        ]
+      },
+      "claims": [
+        "Store at 20–25°C; dispense tight, light-resistant, child-resistant container. Approved applesauce/water/apple-juice mixtures may be kept≤24 hours room temperature or≤48 hours refrigerated, then discard unneeded mixture. Consume the complete mixture; do not extrapolate this stability to other vehicles or enteral-tube preparations."
+      ]
+    },
+    {
+      "section": "hero/essential",
+      "card": "Scope, essential and three tuple facts",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": [
+        "Indications",
+        "Strengths",
+        "Boxed warnings",
+        "Product"
+      ],
+      "claims": [
+        "A prescription ACE inhibitor for hypertension, specified high-cardiovascular-risk adults, and stable heart failure following myocardial infarction. This profile follows the current Hikma capsule label, distinguishing indication-specific targets, renal adjustments and fetal toxicity.",
+        "When pregnancy is detected, discontinue ramipril as soon as possible and obtain treatment review. Stop and seek immediate care for tongue/throat swelling or breathing difficulty. Monitor BP, renal function and potassium; do not combine with sacubitril/valsartan or bypass its 36-hour switching separation.",
+        [
+          "Therapeutic class",
+          "ACE inhibitor · ramiprilat prodrug"
+        ],
+        [
+          "Representative formulation",
+          "1.25 mg oral capsule"
+        ],
+        [
+          "Major monitoring",
+          "Blood pressure · creatinine/renal function · potassium"
+        ]
+      ]
+    }
+  ],
+  "materialErrors": [],
+  "gaps": [
+    {
+      "material": false,
+      "topic": "Highlights vs full contraindication wording",
+      "finding": "Currenthighlights namepriorACE/hereditary/idiopathicangioedema;full4hypersens/previousACEexamples narrower.",
+      "resolution": "Bothrestrictions explicitly retained conservatively; no omittedangioedema-history permission."
+    },
+    {
+      "material": false,
+      "topic": "Renal dosing scope",
+      "finding": "2.5usualestimatedCrCl>40;worseimpairment discussion25%levels, indication-specific HTN/HF regimens. PKusesindexedCrClunits.",
+      "resolution": "ExactHTN/HF dosecaps;no inferredhighCVriskrenaltarget or automaticquarterallregimens;borderlinepharmacyreview."
+    },
+    {
+      "material": false,
+      "topic": "Overdose historicalavailability statement",
+      "finding": "Label10claimsangiotensinIIessentiallyunavailableoutside research;currentlabelcannotestablish contemporaryavailability.",
+      "resolution": "Noavailability/antidoteprotocolpropagated;professionalhemodynamic support only."
+    },
+    {
+      "material": false,
+      "topic": "Other sources/guidelines",
+      "finding": "BrandAltacecandidateofficialAPI404;selectedfullcurrentHikmasource fetched successfully.",
+      "resolution": "No unverifiedbrandlabelclaims/imprints;no JNC ranking orunverified currentHF/BPguidelineclaims."
+    },
+    {
+      "material": false,
+      "topic": "Reproductive/pediatric",
+      "resolution": "No pediatricdose;full8.3do notuseinnursing preserved despite single-doseundetectablemilk. Pregnancybox/promptstopandneonatalmonitor retained."
+    }
+  ],
+  "exclusions": [
+    "Unverified other formulations/routes/manufacturers; non-U.S. regimens; currentstock claims; preferred guideline rankings, independent switches, universal monitoring schedules and home overdose protocols."
+  ],
+  "validation": {
+    "schema": "validateMonograph returned [] October1,2026; exact eight ordered sections/fourSafety/threeProduct/threehero tuples.",
+    "renderedPage": "Pending parent natural390px integration QA; readable two-column tables"
+  },
+  "monographSha256": "8e8730a98c68d98c526cd2b602926604dff3d61f2630dc291ace5efe6ea81d97",
+  "sourceInterpretationNotes": [
+    "Clinical revision distinct SPL effectiveTime/API publication; current full primary publicly served label reviewed, not snippet-only candidates.",
+    "Original focused summaries; no invented sources/paywall access. No old absolute safety/availability assertions propagated.",
+    "Other-product dextromethorphan context is explicitly scoped; no bupropion-specific boxed risk, indication, dose or washout algorithm transplanted to cough syrup."
+  ]
+}
