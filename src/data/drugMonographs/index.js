@@ -169,6 +169,16 @@ import { nortriptyline } from "./nortriptyline.js";
 import { timolol } from "./timolol.js";
 import { cefdinir } from "./cefdinir.js";
 import { magnesium_salts } from "./magnesium-salts.js";
+import { meclizine } from "./meclizine.js";
+import { cyclosporine } from "./cyclosporine.js";
+import { fluconazole } from "./fluconazole.js";
+import { rimegepant } from "./rimegepant.js";
+import { tretinoin } from "./tretinoin.js";
+import { lovastatin } from "./lovastatin.js";
+import { drospirenoneEthinylEstradiol } from "./drospirenone-ethinyl-estradiol.js";
+import { tiotropium } from "./tiotropium.js";
+import { docusate } from "./docusate.js";
+import { temazepam } from "./temazepam.js";
 
 export const reviewedDrugMonographs = {
   "atorvastatin": atorvastatin,
@@ -341,4 +351,14 @@ export const reviewedDrugMonographs = {
   "timolol": timolol,
   "cefdinir": cefdinir,
   "magnesium-salts": magnesium_salts,
+  "meclizine": meclizine,
+  "cyclosporine": cyclosporine,
+  "fluconazole": fluconazole,
+  "rimegepant": rimegepant,
+  "tretinoin": tretinoin,
+  "lovastatin": lovastatin,
+  "drospirenone-ethinyl-estradiol": drospirenoneEthinylEstradiol,
+  "tiotropium": tiotropium,
+  "docusate": docusate,
+  "temazepam": temazepam,
 };

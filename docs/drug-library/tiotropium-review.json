@@ -1,0 +1,796 @@
+{
+  "drug": "tiotropium",
+  "checked": "2026-10-01",
+  "status": "source_reviewed",
+  "review_scope": "Current selected standalone Spiriva Respimat, Spiriva HandiHaler and LupinHaler capsule full primary labels/IFUs; product-specific U.S. doses and ages, with focused GINA2026 add-on context.",
+  "sources": [
+    {
+      "id": "tiotropresp",
+      "title": "Spiriva Respimat · 1.25 and 2.5 mcg/actuation",
+      "publisher": "DailyMed / National Library of Medicine",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7b656b14-fcaa-2741-f6f0-e0be48971c02",
+      "note": "Full public manufacturer label and patient instructions; SPL version 16, effective 20260817. Product-specific directions reviewed October 1, 2026.",
+      "checked": "2026-10-01",
+      "access": "public",
+      "spl_version": "16",
+      "effective_date": "20260817",
+      "xml_sha256": "118159f868452ad9886857a9d7682bc721afe0739f5e05496bd4c1fa2c3c659b",
+      "retrieved_xml": "/tmp/nas-drug-sources/tiotropresp.xml",
+      "publication_date": "Aug 19, 2026",
+      "reviewed_sections": "Full supporting label sections: indications; complete dosage/product/device instructions; contraindications; warnings; interaction sections; specific populations; relevant complete PK; counseling/IFU; storage."
+    },
+    {
+      "id": "tiotrophandi",
+      "title": "Spiriva HandiHaler · 18 mcg inhalation capsules",
+      "publisher": "DailyMed / National Library of Medicine",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=820839ef-e53d-47e8-a3b9-d911ff92e6a9",
+      "note": "Full public manufacturer label and patient instructions; SPL version 28, effective 20251110. Product-specific directions reviewed October 1, 2026.",
+      "checked": "2026-10-01",
+      "access": "public",
+      "spl_version": "28",
+      "effective_date": "20251110",
+      "xml_sha256": "44945da411ee2d07c02706cd4ffd9116ed8ef8209a5e6cd153dc4044708c47ca",
+      "retrieved_xml": "/tmp/nas-drug-sources/tiotrophandi.xml",
+      "publication_date": "Nov 20, 2025",
+      "reviewed_sections": "Full supporting label sections: indications; complete dosage/product/device instructions; contraindications; warnings; interaction sections; specific populations; relevant complete PK; counseling/IFU; storage."
+    },
+    {
+      "id": "tiotroplupin",
+      "title": "Lupin tiotropium · 18 mcg capsules with LupinHaler",
+      "publisher": "DailyMed / National Library of Medicine",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=496b38ee-45b6-4bb2-a35e-9023c3b73719",
+      "note": "Full public manufacturer label and patient instructions; SPL version 9, effective 20251111. Product-specific directions reviewed October 1, 2026.",
+      "checked": "2026-10-01",
+      "access": "public",
+      "spl_version": "9",
+      "effective_date": "20251111",
+      "xml_sha256": "855ac36585b58c68cdd072154d4b4f386f0f11dd3871579c2edd0b5c79cbdd9b",
+      "retrieved_xml": "/tmp/nas-drug-sources/tiotroplupin.xml",
+      "publication_date": "Nov 17, 2025",
+      "reviewed_sections": "Full supporting label sections: indications; complete dosage/product/device instructions; contraindications; warnings; interaction sections; specific populations; relevant complete PK; counseling/IFU; storage."
+    },
+    {
+      "id": "gina",
+      "title": "GINA 2026 · Global Strategy for Asthma Management and Prevention",
+      "publisher": "Global Initiative for Asthma",
+      "url": "https://ginasthma.org/wp-content/uploads/2026/05/GINA-2026-Strategy-Report-WMS.pdf",
+      "note": "Public full 2026 report, focused complete add-on LAMA guidance printed 98–99 and 108; read October 1, 2026. U.S. product ages/doses remain those of retrieved labels.",
+      "checked": "2026-10-01",
+      "access": "public complete primary source",
+      "retrieved_source": "/tmp/nas-drug-sources/gina2026.pdf",
+      "source_sha256": "33d0453df2d6d49be525a93ae547f71943e9af4f138ab44b9e5eaa765a04b445",
+      "version": "GINA2026 strategy report",
+      "reviewed_sections": [
+        "Complete add-on LAMA adult/adolescent section, printed98–99",
+        "Complete relevant children6–11 add-on LAMA guidance, printed108"
+      ],
+      "access_scope": "Full public primary strategy report; original concise focused guidance only."
+    }
+  ],
+  "assertion_source_map": [
+    {
+      "section": "indications",
+      "card": "Product-specific labeled indications",
+      "assertions": {
+        "paragraphs": [
+          "All selected products provide long-term once-daily maintenance treatment of COPD-associated bronchospasm, including chronic bronchitis and emphysema, and reduce COPD exacerbations. Respimat also has a maintenance-asthma indication at age six and older. HandiHaler and selected Lupin capsules have no pediatric or asthma indication; do not transfer Respimat’s indications to them."
+        ]
+      },
+      "source_sections": {
+        "tiotropresp": [
+          "1",
+          "8.4"
+        ],
+        "tiotrophandi": [
+          "1",
+          "8.4"
+        ],
+        "tiotroplupin": [
+          "1",
+          "8.4"
+        ]
+      }
+    },
+    {
+      "section": "indications",
+      "card": "Asthma treatment context",
+      "assertions": {
+        "paragraphs": [
+          "GINA 2026 positions tiotropium as add-on maintenance therapy alongside ICS-containing treatment after review of adherence and inhaler technique. Adult/adolescent add-on LAMA is generally considered for uncontrolled asthma despite medium/high-dose ICS-LABA; children 6–11 have separate step guidance and specialist assessment. Continue prescribed anti-inflammatory therapy and the designated reliever; tiotropium is not a replacement for either. U.S. product doses/ages here follow the retrieved labels."
+        ]
+      },
+      "source_sections": {
+        "gina": [
+          "Complete add-on LAMA guidance: printed98–99",
+          "Children6–11: printed108"
+        ],
+        "tiotropresp": [
+          "1.2",
+          "2.2",
+          "5.1"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Dose by indication and product",
+      "assertions": {
+        "paragraphs": [
+          "Do not exceed one daily dose in 24 hours. Asthma benefit may take 4–8 weeks; worsening symptoms still need the existing rescue/action plan."
+        ],
+        "table": {
+          "headers": [
+            "Product and indication",
+            "Daily dose"
+          ],
+          "rows": [
+            [
+              "Respimat · COPD",
+              "Two inhalations of 2.5 mcg per actuation once daily: total 5 mcg."
+            ],
+            [
+              "Respimat · asthma, age ≥ 6",
+              "Two inhalations of 1.25 mcg per actuation once daily: total 2.5 mcg."
+            ],
+            [
+              "HandiHaler · COPD",
+              "Two inhalations of powder from the same single 18 mcg capsule once daily, using HandiHaler."
+            ],
+            [
+              "Lupin capsules · COPD",
+              "Two inhalations from the same single 18 mcg capsule once daily, using LupinHaler."
+            ]
+          ]
+        }
+      },
+      "source_sections": {
+        "tiotropresp": [
+          "2",
+          "3"
+        ],
+        "tiotrophandi": [
+          "2",
+          "3"
+        ],
+        "tiotroplupin": [
+          "2",
+          "3"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Respimat setup and daily technique",
+      "assertions": {
+        "paragraphs": [
+          "Insert the cartridge only into its specified Spiriva Respimat device. For first preparation, spray toward the ground until a mist appears, then repeat three more times. If unused for more than three days, release one preparation puff; if more than 21 days, repeat visible-mist preparation plus three additional sprays. Daily technique is turn, open, press while slowly inhaling deeply; hold the breath about ten seconds or as comfortable. Repeat for two puffs. Do not spray into eyes or cover air vents. Children require adult assistance. Clean the mouthpiece weekly with a damp cloth/tissue."
+        ]
+      },
+      "source_sections": {
+        "tiotropresp": [
+          "2",
+          "Instructions for Use"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Capsule device technique",
+      "assertions": {
+        "paragraphs": [
+          "Remove one capsule immediately before use, place it in the matched device’s center chamber, close the mouthpiece and press/release the piercing button once. Exhale away from the device, then inhale deeply; a capsule rattle indicates movement. Repeat exhalation and inhalation from the same capsule to obtain the full dose, without piercing again. Do not swallow, open the capsule, shake the device or exhale into it. Discard the used capsule and any extra capsule exposed to air; never store a capsule in the device. Cleaning is as needed with warm water and complete air drying, which takes 24 hours; no detergents or dishwasher."
+        ]
+      },
+      "source_sections": {
+        "tiotrophandi": [
+          "2",
+          "Instructions for Use"
+        ],
+        "tiotroplupin": [
+          "2",
+          "Patient Information and Instructions for Use"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Organ function, missed doses and switching",
+      "assertions": {
+        "paragraphs": [
+          "No dose adjustment is required by the selected labels for older age, renal impairment or hepatic impairment; renal monitoring requirements still apply. A forgotten capsule dose may be taken when remembered, but do not use more than once in 24 hours. Any product change needs review of indication, strength and technique; the similar systemic-exposure study of 18 mcg powder versus 5 mcg spray does not authorize unsupervised device or dose substitution."
+        ]
+      },
+      "source_sections": {
+        "tiotropresp": [
+          "2",
+          "8.5–8.7",
+          "12.3",
+          "Patient Information"
+        ],
+        "tiotrophandi": [
+          "2",
+          "8.5–8.7",
+          "12.3",
+          "Patient Information"
+        ],
+        "tiotroplupin": [
+          "2",
+          "8.5–8.7",
+          "12.3",
+          "Patient Information"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "assertions": {
+        "paragraphs": [
+          "Do not use for acute bronchospasm. Stop and seek immediate care for angioedema, anaphylaxis or paradoxical bronchospasm; acute bronchospasm requires the prescribed rapid-acting reliever and medical assessment. Use caution with narrow-angle glaucoma and urinary retention, especially prostatic enlargement or bladder-neck obstruction. Eye pain, halos/red eyes or difficulty/pain passing urine requires prompt advice. Closely monitor anticholinergic effects when CrCl < 60 mL/min. Atropine-derivative allergy warrants close observation. The lactose-containing capsule products additionally caution about severe milk-protein hypersensitivity; Respimat has a different aqueous formulation."
+        ]
+      },
+      "source_sections": {
+        "tiotropresp": [
+          "5.1–5.6",
+          "11"
+        ],
+        "tiotrophandi": [
+          "5.1–5.6",
+          "11"
+        ],
+        "tiotroplupin": [
+          "5.1–5.6",
+          "11"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "assertions": {
+        "paragraphs": [
+          "The selected labels contraindicate hypersensitivity to tiotropium, ipratropium or any product component. Narrow-angle glaucoma, urinary retention and renal impairment are precautions rather than universal listed contraindications. Capsule-label severe milk-protein hypersensitivity language is a caution; do not silently rewrite it as a separate formal contraindication or apply lactose excipients to Respimat. A component allergy still requires avoidance of the implicated product."
+        ]
+      },
+      "source_sections": {
+        "tiotropresp": [
+          "4",
+          "5.2",
+          "5.4–5.6",
+          "11"
+        ],
+        "tiotrophandi": [
+          "4",
+          "5.2",
+          "5.4–5.6",
+          "11"
+        ],
+        "tiotroplupin": [
+          "4",
+          "5.2",
+          "5.4–5.6",
+          "11"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Boxed warning status",
+      "assertions": {
+        "paragraphs": [
+          "No boxed warning appears in the selected current standalone product SPLs. Serious allergy, paradoxical bronchospasm, glaucoma and urinary-retention warnings remain clinically important. No LABA monotherapy warning should be attributed to standalone tiotropium, which is a LAMA."
+        ]
+      },
+      "source_sections": {
+        "tiotropresp": [
+          "Complete label: no boxed-warning section",
+          "5",
+          "11"
+        ],
+        "tiotrophandi": [
+          "Complete label: no boxed-warning section",
+          "5",
+          "11"
+        ],
+        "tiotroplupin": [
+          "Complete label: no boxed-warning section",
+          "5",
+          "11"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions",
+      "assertions": {
+        "paragraphs": [
+          "Dry mouth and upper-airway symptoms are reported; constipation, dysuria, urinary retention, blurred vision, palpitations and other anticholinergic effects may occur. Capsule and spray clinical-trial rates differ, and postmarketing reports cannot establish a reliable event frequency. Excess dosing may cause anticholinergic toxicity: stop further doses and obtain clinician/poison-center advice for supportive assessment. Swallowing a capsule does not deliver the intended lung treatment even though oral absorption is low."
+        ]
+      },
+      "source_sections": {
+        "tiotropresp": [
+          "6",
+          "10",
+          "2"
+        ],
+        "tiotrophandi": [
+          "6",
+          "10",
+          "2"
+        ],
+        "tiotroplupin": [
+          "6",
+          "10",
+          "2"
+        ]
+      }
+    },
+    {
+      "section": "interactions",
+      "card": "Clinically relevant interactions",
+      "assertions": {
+        "paragraphs": [
+          "Review inhalers as well as oral bladder, gastrointestinal and other anticholinergic medicines. Selected studies describe use with other respiratory therapies; this does not waive the duplicate-anticholinergic warning."
+        ],
+        "table": {
+          "headers": [
+            "Combination",
+            "Action"
+          ],
+          "rows": [
+            [
+              "Other anticholinergic drugs",
+              "Avoid coadministration when possible because systemic anticholinergic effects can add; review ipratropium, other LAMAs and bladder antimuscarinics."
+            ],
+            [
+              "Beta agonists and inhaled steroids",
+              "Selected clinical programs used these concomitantly without increased adverse reactions; follow the indication-specific maintenance/reliever plan."
+            ],
+            [
+              "Other respiratory medicines",
+              "Respimat programs also included antihistamines, leukotriene modifiers and anti-IgE therapy; this is not an instruction to add them indiscriminately."
+            ],
+            [
+              "Cimetidine and CYP findings",
+              "A small IV interaction study found increased exposure with cimetidine. Metabolism is limited; in-vitro CYP2D6/3A4 findings do not establish a universal dose-adjustment algorithm for clinical inhaler co-treatment."
+            ]
+          ]
+        }
+      },
+      "source_sections": {
+        "tiotropresp": [
+          "7",
+          "12.3"
+        ],
+        "tiotrophandi": [
+          "7",
+          "12.3"
+        ],
+        "tiotroplupin": [
+          "7",
+          "12.3"
+        ]
+      }
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy and lactation",
+      "assertions": {
+        "paragraphs": [
+          "Human pregnancy data are insufficient to define drug-associated risk. Uncontrolled asthma itself can harm pregnancy outcomes, so assess maternal respiratory control and treatment needs. Human milk/infant-effect data are absent; consider breastfeeding benefits, maternal need and potential infant effects. Animal milk transfer and high-dose reproductive observations are not proof of human safety or harm at an inhaled therapeutic dose."
+        ]
+      },
+      "source_sections": {
+        "tiotropresp": [
+          "8.1",
+          "8.2"
+        ],
+        "tiotrophandi": [
+          "8.1",
+          "8.2"
+        ],
+        "tiotroplupin": [
+          "8.1",
+          "8.2"
+        ]
+      }
+    },
+    {
+      "section": "populations",
+      "card": "Children and older adults",
+      "assertions": {
+        "paragraphs": [
+          "Respimat asthma safety/efficacy are established at ages 6–17; below six they are unestablished despite a small younger-child safety study. HandiHaler/Lupin capsule pediatric use is unestablished and not indicated. Older adults need no age-only dose change, but dry mouth, constipation and urinary events warrant attention, particularly with renal dysfunction or other anticholinergics."
+        ]
+      },
+      "source_sections": {
+        "tiotropresp": [
+          "8.4",
+          "8.5"
+        ],
+        "tiotrophandi": [
+          "8.4",
+          "8.5"
+        ],
+        "tiotroplupin": [
+          "8.4",
+          "8.5"
+        ]
+      }
+    },
+    {
+      "section": "populations",
+      "card": "Renal and hepatic considerations",
+      "assertions": {
+        "paragraphs": [
+          "CrCl < 60 mL/min requires close monitoring for anticholinergic adverse effects. Exposure rises with renal impairment, while severe-impairment inhaled exposure data are insufficient. Selected labels do not require a renal dose reduction. Hepatic PK was not studied, but the labels still specify no dose adjustment; distinguish that dosing instruction from a claim of proven unchanged exposure."
+        ]
+      },
+      "source_sections": {
+        "tiotropresp": [
+          "2",
+          "5.6",
+          "8.6",
+          "8.7",
+          "12.3"
+        ],
+        "tiotrophandi": [
+          "2",
+          "5.6",
+          "8.6",
+          "8.7",
+          "12.3"
+        ],
+        "tiotroplupin": [
+          "2",
+          "5.6",
+          "8.6",
+          "8.7",
+          "12.3"
+        ]
+      }
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism and pharmacodynamics",
+      "assertions": {
+        "paragraphs": [
+          "Tiotropium antagonizes muscarinic receptors, including airway-smooth-muscle M3 receptors, with competitive reversible blockade and prolonged bronchodilation. Predominantly local airway effects do not eliminate systemic anticholinergic effects. It supplies bronchodilation rather than the anti-inflammatory action of an inhaled corticosteroid."
+        ]
+      },
+      "source_sections": {
+        "tiotropresp": [
+          "12.1",
+          "5"
+        ],
+        "tiotrophandi": [
+          "12.1",
+          "5"
+        ],
+        "tiotroplupin": [
+          "12.1",
+          "5"
+        ]
+      }
+    },
+    {
+      "section": "pharmacology",
+      "card": "Exposure and disposition",
+      "assertions": {
+        "paragraphs": [
+          "Respimat peak concentrations occur about 5–7 minutes after inhalation; capsule data report about seven minutes. Binding is approximately 72%. Renal excretion of unchanged tiotropium is important, with relatively limited metabolism. Respimat’s terminal half-life is about 25 hours in COPD and 44 hours in asthma; COPD capsule data describe about 25 hours. Steady state is reached around day seven. Dose fraction absorbed and urine recovery depend on route/product and study conditions; do not equate IV recovery with inhaled bioavailability."
+        ]
+      },
+      "source_sections": {
+        "tiotropresp": [
+          "12.3"
+        ],
+        "tiotrophandi": [
+          "12.3"
+        ],
+        "tiotroplupin": [
+          "12.3"
+        ]
+      }
+    },
+    {
+      "section": "practice",
+      "card": "Monitoring priorities",
+      "assertions": {
+        "paragraphs": [
+          "Assess symptom control, rescue use, exacerbations and observed technique. Check for dry mouth, constipation, urinary difficulty, eye symptoms and allergic reactions, with closer surveillance in renal impairment. Reconcile duplicate anticholinergic products. In asthma verify continued ICS-containing treatment and follow the prescribed action plan rather than waiting for tiotropium’s delayed maximal maintenance benefit."
+        ]
+      },
+      "source_sections": {
+        "tiotropresp": [
+          "5",
+          "7",
+          "17",
+          "2.2"
+        ],
+        "tiotrophandi": [
+          "5",
+          "7",
+          "17",
+          "2.2"
+        ],
+        "tiotroplupin": [
+          "5",
+          "7",
+          "17",
+          "2.2"
+        ]
+      }
+    },
+    {
+      "section": "practice",
+      "card": "Counseling and safe handling",
+      "assertions": {
+        "paragraphs": [
+          "Demonstrate the exact device and have the patient repeat the steps. Two Respimat puffs equal one daily dose; two capsule inhalations come from one capsule. Neither product is a rescue treatment. Keep medicine away from children and powder/mist away from eyes. Seek urgent help for immediate worsening after inhalation, facial/throat swelling or acute eye symptoms. Use caution driving if dizziness or blurred vision occurs. Follow the device-specific cleaning and discard instructions."
+        ]
+      },
+      "source_sections": {
+        "tiotropresp": [
+          "17",
+          "Patient Information",
+          "Instructions for Use"
+        ],
+        "tiotrophandi": [
+          "17",
+          "Patient Information",
+          "Instructions for Use"
+        ],
+        "tiotroplupin": [
+          "17",
+          "Patient Information",
+          "Instructions for Use"
+        ]
+      }
+    },
+    {
+      "section": "product",
+      "card": "Representative product",
+      "assertions": {
+        "paragraphs": [
+          "Spiriva Respimat 2.5 mcg/actuation has an aqua cap and gray inhaler body; selected 60-actuation package NDC 0597-0100-61 provides 30 two-puff doses after preparation. The 1.25 mcg asthma product has a blue cap. This example does not verify commercial supply."
+        ]
+      },
+      "source_sections": {
+        "tiotropresp": [
+          "3",
+          "16"
+        ]
+      }
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "assertions": {
+        "paragraphs": [
+          "Respimat delivers 1.25 or 2.5 mcg tiotropium per actuation; two actuations form the 2.5 or 5 mcg total dose. Spiriva capsules contain 18 mcg tiotropium with lactose in light-green gelatin capsules marked TI 01/company symbol, used only in HandiHaler. Lupin capsules contain 18 mcg with lactose in white hypromellose capsules marked LU/T18, used only in LupinHaler. Delivered lung dose depends on inspiratory technique; nominal capsule content is not an oral dose. Stiolto’s additional olodaterol ingredient is outside this standalone profile."
+        ]
+      },
+      "source_sections": {
+        "tiotropresp": [
+          "3",
+          "11",
+          "16"
+        ],
+        "tiotrophandi": [
+          "3",
+          "11",
+          "16"
+        ],
+        "tiotroplupin": [
+          "3",
+          "11",
+          "16"
+        ]
+      }
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "assertions": {
+        "paragraphs": [
+          "Store selected products at 20–25°C, with excursions 15–30°C. Avoid freezing Respimat. Its IFU directs discard three months after cartridge insertion, or sooner if locked/expired; do not retain a prepared but unused device indefinitely. Keep capsule blisters dry, protected from temperature extremes/moisture, and sealed until immediately before use. Never store a capsule in the device; discard a capsule exposed to air and not used immediately."
+        ]
+      },
+      "source_sections": {
+        "tiotropresp": [
+          "16",
+          "Instructions for Use",
+          "Patient Information"
+        ],
+        "tiotrophandi": [
+          "16",
+          "Instructions for Use",
+          "Patient Information"
+        ],
+        "tiotroplupin": [
+          "16",
+          "Instructions for Use",
+          "Patient Information"
+        ]
+      }
+    }
+  ],
+  "scope_exclusions": [
+    "Tiotropium/olodaterol fixed combination excluded.",
+    "No pediatric/asthma capsule approval inferred from Respimat.",
+    "No mg-for-mg or capsule-to-spray substitution algorithm.",
+    "No current stock inference."
+  ],
+  "resolved_source_findings": [
+    "Respimat2026 SPL differentiates total daily asthma2.5mcg (two1.25mcg actuations) from COPD5mcg (two2.5mcg actuations).",
+    "Respimat IFU says discard3months after cartridge insertion whereas PI16 uses first-use language; conservative published insertion-date cutoff follows actual current IFU and also respects lock/expiry.",
+    "HandiHaler and LupinHaler are matched capsule devices, not oral administration. No label equivalence converted into unsupervised switch.",
+    "Capsule milk-protein hypersensitivity is labeled caution, not rewritten as universal formal contraindication or applied to Respimat excipients.",
+    "No unsupported hepatic PK certainty or renal dose algorithm; exact no-adjustment label instruction and CrCl<60monitoring both retained."
+  ],
+  "material_gaps": [],
+  "clinical_review": "Every published card reviewed against full relevant primary label sections. Source-reviewed within stated scope; not an independent clinician sign-off.",
+  "blueprint": "Immutable APAP eight sections, essential safety, three hero facts, cited disclosures, four safety cards and three product cards.",
+  "validation": {
+    "validateMonograph": [],
+    "build": "parent integration pending",
+    "rendered_page_qa": "parent integration pending",
+    "mobile_content_precheck": "Only two-column tables and natural breakable prose; parent strict390px article-layout gate pending."
+  },
+  "monograph_sha256": "9c6049e1220f52158768efd878c138fa76769a525a400446f4820d7cd1e83370",
+  "front_matter_source_map": {
+    "identity_and_facts": {
+      "tiotropresp": [
+        "1",
+        "3",
+        "16"
+      ],
+      "tiotrophandi": [
+        "1",
+        "3"
+      ],
+      "tiotroplupin": [
+        "1",
+        "3"
+      ]
+    },
+    "essential": {
+      "tiotropresp": [
+        "2",
+        "5.1–5.5"
+      ],
+      "tiotrophandi": [
+        "2",
+        "5.1–5.5"
+      ],
+      "tiotroplupin": [
+        "2",
+        "5.1–5.5"
+      ]
+    }
+  },
+  "current_regulatory_status_checks": [
+    {
+      "application": "NDA021936",
+      "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:NDA021936&limit=1",
+      "checked": "2026-10-01",
+      "retrieved_file": "/tmp/nas-drug-sources/NDA021936.json",
+      "sha256": "c2b537540e73cd212542dfcfb9d3ab0521eb630ac637ec784da4bd708f133ee8",
+      "sponsor": "BOEHRINGER INGELHEIM",
+      "reviewed_products": [
+        {
+          "product_number": "002",
+          "reference_drug": "Yes",
+          "brand_name": "SPIRIVA RESPIMAT",
+          "active_ingredients": [
+            {
+              "name": "TIOTROPIUM BROMIDE",
+              "strength": "EQ 0.00125MG BASE/INH"
+            }
+          ],
+          "reference_standard": "Yes",
+          "dosage_form": "SPRAY, METERED",
+          "route": "INHALATION",
+          "marketing_status": "Prescription"
+        },
+        {
+          "product_number": "001",
+          "reference_drug": "Yes",
+          "brand_name": "SPIRIVA RESPIMAT",
+          "active_ingredients": [
+            {
+              "name": "TIOTROPIUM BROMIDE",
+              "strength": "EQ 0.0025MG BASE/INH"
+            }
+          ],
+          "reference_standard": "Yes",
+          "dosage_form": "SPRAY, METERED",
+          "route": "INHALATION",
+          "marketing_status": "Prescription"
+        }
+      ],
+      "scope": "Current official regulatory product status only; no stock inference or substitution of FDA record for clinical label."
+    },
+    {
+      "application": "NDA207070",
+      "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:NDA207070&limit=1",
+      "checked": "2026-10-01",
+      "retrieved_file": "/tmp/nas-drug-sources/NDA207070.json",
+      "sha256": "dc71dea7aca1be2020b00352dbb191d48f250cee65a95bf47598fdea2a5607d6",
+      "sponsor": "BOEHRINGER INGELHEIM",
+      "reviewed_products": [
+        {
+          "product_number": "001",
+          "reference_drug": "No",
+          "brand_name": "SPIRIVA RESPIMAT",
+          "active_ingredients": [
+            {
+              "name": "TIOTROPIUM BROMIDE",
+              "strength": "2.5MCG"
+            }
+          ],
+          "dosage_form": "SPRAY",
+          "route": "INHALATION",
+          "marketing_status": "Prescription"
+        }
+      ],
+      "scope": "Current official regulatory product status only; no stock inference or substitution of FDA record for clinical label."
+    },
+    {
+      "application": "NDA021395",
+      "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:NDA021395&limit=1",
+      "checked": "2026-10-01",
+      "retrieved_file": "/tmp/nas-drug-sources/NDA021395.json",
+      "sha256": "bad0a7339b34961a6da5e374e3d594fed2703e3f44b44abdc9d21f14fcc6cc70",
+      "sponsor": "BOEHRINGER INGELHEIM",
+      "reviewed_products": [
+        {
+          "product_number": "001",
+          "reference_drug": "Yes",
+          "brand_name": "SPIRIVA",
+          "active_ingredients": [
+            {
+              "name": "TIOTROPIUM BROMIDE",
+              "strength": "EQ 0.018MG BASE/INH"
+            }
+          ],
+          "reference_standard": "Yes",
+          "dosage_form": "POWDER",
+          "route": "INHALATION",
+          "marketing_status": "Prescription",
+          "te_code": "AB"
+        }
+      ],
+      "scope": "Current official regulatory product status only; no stock inference or substitution of FDA record for clinical label."
+    },
+    {
+      "application": "ANDA211287",
+      "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:ANDA211287&limit=1",
+      "checked": "2026-10-01",
+      "retrieved_file": "/tmp/nas-drug-sources/ANDA211287.json",
+      "sha256": "e96d12d7897882b6a77909519c0282ad815eca67f9a203a3d676562ed959e863",
+      "sponsor": "LUPIN",
+      "reviewed_products": [
+        {
+          "product_number": "001",
+          "reference_drug": "No",
+          "brand_name": "TIOTROPIUM BROMIDE",
+          "active_ingredients": [
+            {
+              "name": "TIOTROPIUM BROMIDE",
+              "strength": "EQ 0.018MG BASE/INH"
+            }
+          ],
+          "reference_standard": "No",
+          "dosage_form": "POWDER",
+          "route": "INHALATION",
+          "marketing_status": "Prescription",
+          "te_code": "AB"
+        }
+      ],
+      "scope": "Current official regulatory product status only; no stock inference or substitution of FDA record for clinical label."
+    }
+  ],
+  "source_review_detail": "Each published clinical card checked against complete supporting primary product-label sections/IFUs, with focused complete guideline sections explicitly scoped. Exact current FDA product arrays also reviewed for selected Rx status. No paywalled access or unverified current PI claimed."
+}

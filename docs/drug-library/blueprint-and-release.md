@@ -2,7 +2,7 @@
 
 Task: NaS-Website-Drug Library. Inventory: **300**, including the immutable APAP reference; **299** migrations are tracked in 30 batches (29 of ten, then nine).
 
-This is an active, incomplete work record. 16 batches (160 migrated profiles) have exact GitHub/Netlify production publication receipts and passed hosted checks. Batch17 is source-reviewed and undergoing integration/release QA. Candidate retrieval, clinical source review, schema validation, build/render checks, remote push, and verified publication remain distinct states in the completion ledger. All prior formatting editions are preserved. The remaining inventory is still being authored and reviewed; completion is never inferred from a candidate label or a passing schema.
+This is an active, incomplete work record. 17 batches (170 migrated profiles) have exact GitHub/Netlify production publication receipts and passed hosted checks. Batch18 is source-reviewed and undergoing integration/release QA. Candidate retrieval, clinical source review, schema validation, build/render checks, remote push, and verified publication remain distinct states in the completion ledger. All prior formatting editions are preserved. The remaining inventory is still being authored and reviewed; completion is never inferred from a candidate label or a passing schema.
 
 Earlier batch notes are retained as history; the completion ledger and production-verification entries record the current state.
 
@@ -210,3 +210,8 @@ Profiles: clindamycin, atomoxetine, dexmethylphenidate, methotrexate, donepezil,
 ### Batch16 production verification
 
 Profiles: phentermine, ofloxacin, mupirocin, verapamil, olanzapine, metronidazole, prazosin, ciprofloxacin, sildenafil, ethinyl-estradiol-levonorgestrel. Production commit `079a47c1535060fadd4a32b09997196505f20e6d`, Netlify `6abec997f4cf0600075e3d1f`, published `2026-10-01T21:00:52.073Z` via https://github.com/NaS-Research/nas-website/pull/19. Exact preview and production HTML and strict desktop/mobile browser checks passed; receipts and route/browser evidence are recorded in the ledger and archived externally.
+
+
+### Batch17 production verification
+
+Profiles: evolocumab, mesalamine, memantine, ethinyl-estradiol-etonogestrel, diazepam, lithium, nortriptyline, timolol, cefdinir, magnesium-salts. Production commit `9a17e182db2d6779de5e389c65df37142f30f4d1`, Netlify `6abecb8b98e2f2000881813a`, published `2026-10-01T21:09:05.857Z` via https://github.com/NaS-Research/nas-website/pull/20. Exact preview and production HTML and strict desktop/mobile browser checks passed; receipts and route/browser evidence are recorded in the ledger and archived externally.
