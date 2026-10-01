@@ -5,17 +5,17 @@ import { validateMonograph } from '../src/data/drugMonographs/schema.js';
 import { coreDrugs } from '../src/data/drugLibrary.js';
 const approved=[];
 const ledger=JSON.parse(readFileSync('docs/drug-library/completion-audit.json'));
-const throughBatch=Number(process.argv[2] || 1);
-if(!Number.isInteger(throughBatch)||throughBatch<1||throughBatch>30)throw new Error('Specify a completed candidate batch number (1–30)');
+const selectedBatches=new Set((process.argv.slice(2).length?process.argv.slice(2):['1']).map(Number));
+if([...selectedBatches].some(batch=>!Number.isInteger(batch)||batch<1||batch>30))throw new Error('Specify completed candidate batch numbers (1–30)');
 for(const drug of coreDrugs){
  if(drug.slug==='acetaminophen') continue;
- if(ledger.drugs.find(entry=>entry.slug===drug.slug)?.batch>throughBatch)continue;
+ if(!selectedBatches.has(ledger.drugs.find(entry=>entry.slug===drug.slug)?.batch))continue;
  const filename=`src/data/drugMonographs/${drug.slug}.js`;
  const auditfile=`docs/drug-library/${drug.slug}-review.json`;
- if(!existsSync(filename)||!existsSync(auditfile))continue;
+ if(!existsSync(filename)||!existsSync(auditfile))throw new Error(`${drug.slug}: selected batch is incomplete`);
  const audit=JSON.parse(readFileSync(auditfile));
- if(audit.status!=='source_reviewed')continue;
- for(const key of ['materialErrors','materialGaps','material_errors','material_gaps','unresolved_material_errors']) {
+ if(audit.status!=='source_reviewed')throw new Error(`${drug.slug}: selected batch still requires clinical review`);
+ for(const key of ['materialErrors','materialGaps','unresolvedMaterialGaps','material_errors','material_gaps','unresolved_material_errors']) {
   if(audit[key]?.length)throw new Error(`${drug.slug}: unresolved ${key}`);
  }
  const exports=await import(`../${filename}`);

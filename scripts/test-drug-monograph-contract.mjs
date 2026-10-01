@@ -18,7 +18,8 @@ test('Every library drug appears exactly once, with ten-drug batches and final r
  assert.equal(ledger.total, coreDrugs.length);
  assert.deepEqual(ledger.drugs.map(d => d.slug), coreDrugs.map(d => d.slug));
  assert.equal(new Set(ledger.drugs.map(d => d.slug)).size, coreDrugs.length);
- const batches = Map.groupBy(ledger.drugs.filter(d => d.slug !== 'acetaminophen'), d => d.batch);
+ const batches = new Map();
+ for (const drug of ledger.drugs.filter(d => d.slug !== 'acetaminophen')) batches.set(drug.batch, [...(batches.get(drug.batch) || []), drug]);
  assert.equal(batches.size, 30);
  for (const [batch, drugs] of batches) assert.equal(drugs.length, batch === 30 ? 9 : 10);
 });
@@ -36,9 +37,10 @@ test('Every routed monograph has a complete source audit and follows the APAP co
   const audit = JSON.parse(readFileSync(new URL(`../docs/drug-library/${slug}-review.json`, import.meta.url)));
   assert.equal(audit.status, 'source_reviewed', slug);
   assert.ok(audit.sources?.length, `${slug}: no source records`);
-  const assertions = audit.assertionToSource || audit.assertion_to_source || audit.assertionMap || audit.assertion_map || audit.assertion_source_map;
+  for (const source of monograph.sources) assert.ok(audit.sources.some(reviewed => reviewed.id === source.id && reviewed.url === source.url), `${slug}/${source.id}: displayed reference not in source audit`);
+  const assertions = audit.assertionToSource || audit.assertionToSourceMap || audit.assertion_to_source || audit.assertionMap || audit.assertion_map || audit.assertion_source_map;
   assert.ok(assertions && Object.keys(assertions).length, `${slug}: no assertion mappings`);
-  for (const key of ['materialErrors','materialGaps','material_errors','material_gaps','unresolved_material_errors']) assert.ok(!audit[key]?.length, `${slug}: unresolved ${key}`);
+  for (const key of ['materialErrors','materialGaps','unresolvedMaterialGaps','material_errors','material_gaps','unresolved_material_errors']) assert.ok(!audit[key]?.length, `${slug}: unresolved ${key}`);
  }
 });
 test('Completion claims require section evidence, validation, and deployment receipts', () => {

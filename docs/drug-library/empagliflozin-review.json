@@ -1,0 +1,439 @@
+{
+  "drug": "empagliflozin",
+  "checked": "2026-10-01",
+  "status": "source_reviewed",
+  "review_scope": "Current standalone Jardiance full label: adult HF/CKD/CV outcomes and adult/pediatric ≥10 type 2 glycemic control, with renal evidence boundaries and safety actions.",
+  "sources": [
+    {
+      "id": "jardiance",
+      "title": "Jardiance · empagliflozin tablets",
+      "publisher": "DailyMed / National Library of Medicine",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=faf3dd6a-9cd0-39c2-0d2e-232cb3f67565",
+      "note": "Full public manufacturer label and patient instructions; SPL version 31, effective 20260130. Product-specific directions reviewed October 1, 2026.",
+      "checked": "2026-10-01",
+      "access": "public",
+      "spl_version": "31",
+      "effective_date": "20260130",
+      "xml_sha256": "ec88bb9aa0eee51a36acbf33f2f4f39ab6c6c3b2b95e9a172d879374b17618c8",
+      "retrieved_xml": "/tmp/nas-drug-sources/jardiance.xml"
+    }
+  ],
+  "assertion_source_map": [
+    {
+      "section": "indications",
+      "card": "Labeled oral indications",
+      "assertions": {
+        "paragraphs": [
+          "Adults: reduces cardiovascular death/HF hospitalization in heart failure; reduces sustained eGFR decline, end-stage kidney disease, cardiovascular death and hospitalization in CKD at risk of progression; reduces cardiovascular death in type 2 diabetes with established cardiovascular disease. With diet/exercise, improves type 2 diabetes glycemic control in adults and children ≥10 years. HF and CKD indication wording does not require diabetes."
+        ]
+      },
+      "source_sections": {
+        "jardiance": [
+          "1",
+          "8.4"
+        ]
+      }
+    },
+    {
+      "section": "indications",
+      "card": "Limitations of use",
+      "assertions": {
+        "paragraphs": [
+          "Not recommended for type 1 diabetes glycemic control due to ketoacidosis risk, or type 2 glycemic control at eGFR <30 mL/min/1.73 m² because glucose lowering is likely ineffective. CKD treatment is not recommended in polycystic kidney disease or with current/recent IV immunosuppression or >45 mg prednisone-equivalent for kidney disease. These limitations are distinct from the formal allergy contraindication."
+        ]
+      },
+      "source_sections": {
+        "jardiance": [
+          "1",
+          "4"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Oral dose by indication",
+      "assertions": {
+        "paragraphs": [
+          "Take once daily in the morning, with or without food."
+        ],
+        "table": {
+          "headers": [
+            "Population / indication",
+            "Dose"
+          ],
+          "rows": [
+            [
+              "Adult HF / CKD risk reduction",
+              "10 mg once daily."
+            ],
+            [
+              "Adult type 2 diabetes with established cardiovascular disease · cardiovascular death reduction",
+              "10 mg once daily."
+            ],
+            [
+              "Adult / pediatric ≥10 type 2 diabetes glycemic control",
+              "10 mg once daily; may increase to 25 mg if tolerated and additional glucose lowering is needed."
+            ],
+            [
+              "Before first dose",
+              "Check renal function and volume status; correct volume depletion."
+            ]
+          ]
+        }
+      },
+      "source_sections": {
+        "jardiance": [
+          "2.1",
+          "2.2"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Surgery, fasting and missed doses",
+      "assertions": {
+        "paragraphs": [
+          "Withhold at least 3 days, if possible, before surgery or procedures involving prolonged fasting. Resume when clinically stable and oral intake has resumed. Also consider temporary interruption during illnesses or situations predisposing to ketoacidosis. For a missed dose, take when remembered unless almost time for the next; skip rather than double."
+        ]
+      },
+      "source_sections": {
+        "jardiance": [
+          "2.3",
+          "2.4",
+          "5.1",
+          "Medication Guide"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Renal and hepatic considerations",
+      "assertions": {
+        "paragraphs": [
+          "Glycemic use is not recommended below eGFR 30 mL/min/1.73 m². HF trials enrolled eGFR ≥20; CKD trial eGFR 20–90. Trials did not enroll eGFR <20 or patients already on dialysis, so do not infer an initiation regimen there. Enrolled patients were not required to stop solely for later decline below 20 or starting dialysis; reassess clinically. Hepatic impairment is permitted without a labeled dose change."
+        ]
+      },
+      "source_sections": {
+        "jardiance": [
+          "1",
+          "8.6",
+          "8.7"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "assertions": {
+        "paragraphs": [],
+        "items": [
+          "Ketoacidosis may be fatal and occur at glucose <250 mg/dL. Risk rises with missed/reduced insulin, pancreatic disease, acute illness, fasting/ketogenic diet, surgery, dehydration or heavy alcohol. Stop, evaluate ketones/acidosis promptly and treat; confirm resolution before restarting.",
+          "Glucosuria can persist 3 days and ketoacidosis/glucosuria has sometimes lasted >6 days to 2 weeks after stopping. A normal-looking glucose reading does not rule it out.",
+          "Volume depletion, hypotension and acute kidney injury can occur, especially with older age, eGFR <60 or loop diuretics. Correct depletion before use and monitor renal function/symptoms.",
+          "UTI/genital infection can progress to urosepsis, pyelonephritis or Fournier gangrene in patients with or without diabetes. Perineal pain/swelling/redness plus fever/malaise needs immediate evaluation; stop if Fournier gangrene is suspected and treat urgently.",
+          "Hypoglycemia increases with insulin/sulfonylureas in adults; children ≥10 have increased risk even without insulin. Review concomitant doses without unnecessary insulin omission.",
+          "Monitor new foot pain, sores, ulcers or infection and provide preventive foot care; lower-limb amputation is a labeled precaution. Stop for serious hypersensitivity and treat promptly."
+        ]
+      },
+      "source_sections": {
+        "jardiance": [
+          "5.1–5.6"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "assertions": {
+        "paragraphs": [
+          "Hypersensitivity to empagliflozin or any Jardiance ingredient; serious reactions including angioedema have occurred. Renal/indication limitations and ketoacidosis risks are discussed separately."
+        ]
+      },
+      "source_sections": {
+        "jardiance": [
+          "4",
+          "5.6"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Boxed warning status",
+      "assertions": {
+        "paragraphs": [
+          "The selected current Jardiance label has no boxed warning. Ketoacidosis, severe genitourinary infection, volume depletion and other serious risks remain labeled precautions."
+        ]
+      },
+      "source_sections": {
+        "jardiance": [
+          "Full prescribing information",
+          "5"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions and overdose",
+      "assertions": {
+        "paragraphs": [
+          "Common reported reactions include urinary tract infection and female genital mycotic infection; increased urination, thirst, male genital infection and nausea also occur. Hypoglycemia risk depends on population/co-therapy. Serious risks are summarized above; postmarketing reports cannot establish incidence. For overdose seek medical/Poison Help guidance (U.S. 1-800-222-1222); removal by hemodialysis is unstudied."
+        ]
+      },
+      "source_sections": {
+        "jardiance": [
+          "6.1",
+          "6.2",
+          "10"
+        ]
+      }
+    },
+    {
+      "section": "interactions",
+      "card": "Clinically relevant interactions",
+      "assertions": {
+        "paragraphs": [],
+        "table": {
+          "headers": [
+            "Combination / test",
+            "Action"
+          ],
+          "rows": [
+            [
+              "Diuretics",
+              "Assess/correct volume depletion and monitor volume status/renal function."
+            ],
+            [
+              "Insulin or insulin secretagogues",
+              "May need lower co-therapy dose to reduce hypoglycemia; excessive insulin reduction can precipitate ketoacidosis."
+            ],
+            [
+              "Lithium",
+              "SGLT2 inhibitors may lower serum lithium; check levels more frequently at initiation/dose changes."
+            ],
+            [
+              "Urine glucose / 1,5-anhydroglucitol assay",
+              "Glucosuria is expected and 1,5-AG is unreliable; use alternative glycemic monitoring."
+            ]
+          ]
+        }
+      },
+      "source_sections": {
+        "jardiance": [
+          "7",
+          "5.1"
+        ]
+      }
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy and lactation",
+      "assertions": {
+        "paragraphs": [
+          "Not recommended in the second/third trimesters because animal data raise fetal kidney-development concerns; limited human data cannot define congenital/miscarriage risk. Poorly controlled diabetes also poses risk; review alternatives with the clinician. Breastfeeding is not recommended because of potential postnatal kidney effects; human milk data are limited."
+        ]
+      },
+      "source_sections": {
+        "jardiance": [
+          "8.1",
+          "8.2",
+          "Medication Guide"
+        ]
+      }
+    },
+    {
+      "section": "populations",
+      "card": "Pediatric and geriatric considerations",
+      "assertions": {
+        "paragraphs": [
+          "Type 2 diabetes glycemic control is established at age ≥10; younger children and pediatric outcome indications are not established. Children have higher hypoglycemia risk regardless of insulin use. Older adults, especially ≥75 in glucose-control trials, had more volume-depletion/UTI reactions; assess hydration and renal function."
+        ]
+      },
+      "source_sections": {
+        "jardiance": [
+          "8.4",
+          "8.5",
+          "5.4"
+        ]
+      }
+    },
+    {
+      "section": "populations",
+      "card": "Renal and hepatic impairment",
+      "assertions": {
+        "paragraphs": [
+          "Glucose lowering declines with worsening kidney function and renal/volume/UTI adverse risks rise. Distinguish eGFR <30 glycemic limitation from HF/CKD trials at ≥20. No trial enrollment below 20 or on dialysis establishes initiation there. Hepatic impairment is allowed; no dose adjustment is specified."
+        ]
+      },
+      "source_sections": {
+        "jardiance": [
+          "8.6",
+          "8.7"
+        ]
+      }
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism of action and pharmacodynamics",
+      "assertions": {
+        "paragraphs": [
+          "Empagliflozin blocks proximal renal SGLT2 glucose reabsorption, increasing urinary glucose loss. Reduced sodium reabsorption increases distal sodium delivery and may contribute to tubuloglomerular feedback and other cardiovascular/renal effects. Glucosuria typically approaches baseline about 3 days after stopping, though prolonged postmarketing cases occur."
+        ]
+      },
+      "source_sections": {
+        "jardiance": [
+          "12.1",
+          "12.2",
+          "5.1"
+        ]
+      }
+    },
+    {
+      "section": "pharmacology",
+      "card": "Pharmacokinetics",
+      "assertions": {
+        "paragraphs": [],
+        "facts": [
+          [
+            "Absorption",
+            "Peak approximately 1.5 hours after oral dosing; food effect is not clinically important."
+          ],
+          [
+            "Protein binding",
+            "Approximately 86.2%."
+          ],
+          [
+            "Metabolism",
+            "Mainly glucuronidation; no major plasma metabolite, with each major conjugate <10% of drug-related material."
+          ],
+          [
+            "Elimination",
+            "Apparent terminal half-life about 12.4 hours; radiolabeled material recovered in urine (~54%) and feces (~41%)."
+          ]
+        ]
+      },
+      "source_sections": {
+        "jardiance": [
+          "12.3"
+        ]
+      }
+    },
+    {
+      "section": "practice",
+      "card": "Monitoring parameters",
+      "assertions": {
+        "paragraphs": [],
+        "items": [
+          "Check renal function and volume status before starting and as clinically indicated; monitor dehydration, dizziness and changes after diuretics.",
+          "Follow glucose/HbA1c as appropriate; educate all patients about lows and use closer observation in children or insulin/sulfonylurea users.",
+          "Assess ketones when clinical risk/symptoms warrant; evaluate acidosis even with glucose <250 mg/dL.",
+          "Review urinary/genital infection symptoms, feet/ulcers and lithium levels when relevant."
+        ]
+      },
+      "source_sections": {
+        "jardiance": [
+          "2.1",
+          "5",
+          "7",
+          "17"
+        ]
+      }
+    },
+    {
+      "section": "practice",
+      "card": "Patient counseling information",
+      "assertions": {
+        "paragraphs": [],
+        "items": [
+          "Take the prescribed tablet each morning; do not double missed doses. Arrange stopping ≥3 days before surgery/prolonged fasting and clinician-directed restart.",
+          "Report inability to eat/drink, vomiting or acute illness; agree on fluid advice appropriate to HF/CKD rather than forcing an arbitrary fluid intake.",
+          "Stop and seek urgent care for ketoacidosis symptoms; genital/perineal pain, redness or swelling with fever/malaise also needs immediate care.",
+          "Report urinary infection, genital yeast symptoms, new foot sores or pain, and pregnancy. Discuss breastfeeding alternatives."
+        ]
+      },
+      "source_sections": {
+        "jardiance": [
+          "2.3",
+          "2.4",
+          "17",
+          "Medication Guide"
+        ]
+      }
+    },
+    {
+      "section": "product",
+      "card": "Representative oral product · Jardiance 10 mg",
+      "assertions": {
+        "paragraphs": [],
+        "facts": [
+          [
+            "Dosage form / strength",
+            "Film-coated tablet · 10 mg"
+          ],
+          [
+            "Distributor",
+            "Boehringer Ingelheim Pharmaceuticals, Inc."
+          ],
+          [
+            "Appearance / imprint",
+            "Pale yellow, round, biconvex/beveled · S 10 / company symbol"
+          ],
+          [
+            "Example NDC",
+            "0597-0152-30 · 30-tablet bottle"
+          ]
+        ]
+      },
+      "source_sections": {
+        "jardiance": [
+          "3",
+          "16"
+        ]
+      }
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "assertions": {
+        "paragraphs": [
+          "Standalone Jardiance tablets: 10 mg round (S 10) and 25 mg oval (S 25), pale yellow and film-coated. Bottles and institutional blister cards are described in the label. Empagliflozin combinations such as metformin/linagliptin products are outside this reference."
+        ]
+      },
+      "source_sections": {
+        "jardiance": [
+          "3",
+          "16"
+        ]
+      }
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "assertions": {
+        "paragraphs": [
+          "Store at 20–25°C; permitted excursions 15–30°C. Dispense in a well-closed container and keep out of children’s reach. Read the Medication Guide."
+        ]
+      },
+      "source_sections": {
+        "jardiance": [
+          "16",
+          "Medication Guide"
+        ]
+      }
+    }
+  ],
+  "scope_exclusions": [
+    "Combination empagliflozin products excluded.",
+    "No regimen recommended for type 1 glycemic control or initiation at eGFR <20/on dialysis; trial-continuation detail is not an initiation endorsement.",
+    "No off-label regimen or unaccessed professional guideline recommendation is claimed."
+  ],
+  "resolved_source_findings": [],
+  "material_gaps": [],
+  "clinical_review": "Every published card reviewed against full relevant primary label sections. Source-reviewed within stated scope; not an independent clinician sign-off.",
+  "blueprint": "Immutable APAP eight sections, essential safety, three hero facts, cited disclosures, four safety cards and three product cards.",
+  "validation": {
+    "validateMonograph": [],
+    "build": "parent integration pending",
+    "rendered_page_qa": "parent integration pending"
+  },
+  "monograph_sha256": "9754c7ed1f4267c57db033a42b81822ade247773fff3fabe61c40740716adcdf"
+}

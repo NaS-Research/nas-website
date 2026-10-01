@@ -9,6 +9,16 @@ import { losartan } from "./losartan.js";
 import { metoprolol } from "./metoprolol.js";
 import { rosuvastatin } from "./rosuvastatin.js";
 import { omeprazole } from "./omeprazole.js";
+import { montelukast } from "./montelukast.js";
+import { amoxicillin } from "./amoxicillin.js";
+import { fluticasone } from "./fluticasone.js";
+import { tamsulosin } from "./tamsulosin.js";
+import { apixaban } from "./apixaban.js";
+import { simvastatin } from "./simvastatin.js";
+import { insulinGlargine } from "./insulin-glargine.js";
+import { empagliflozin } from "./empagliflozin.js";
+import { furosemide } from "./furosemide.js";
+import { meloxicam } from "./meloxicam.js";
 
 export const reviewedDrugMonographs = {
   "atorvastatin": atorvastatin,
@@ -21,4 +31,14 @@ export const reviewedDrugMonographs = {
   "metoprolol": metoprolol,
   "rosuvastatin": rosuvastatin,
   "omeprazole": omeprazole,
+  "montelukast": montelukast,
+  "amoxicillin": amoxicillin,
+  "fluticasone": fluticasone,
+  "tamsulosin": tamsulosin,
+  "apixaban": apixaban,
+  "simvastatin": simvastatin,
+  "insulin-glargine": insulinGlargine,
+  "empagliflozin": empagliflozin,
+  "furosemide": furosemide,
+  "meloxicam": meloxicam,
 };

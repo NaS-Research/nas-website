@@ -1,0 +1,557 @@
+{
+  "slug": "meloxicam",
+  "checked": "2026-10-01",
+  "status": "source_reviewed",
+  "scope": "A nonsteroidal anti-inflammatory drug. Standard tablets/suspension, 5/10 mg capsules and IV formulations have distinct indications, doses and population limits.",
+  "sources": [
+    {
+      "id": "tablet",
+      "title": "Meloxicam · Standard oral tablets",
+      "publisher": "DailyMed / Unichem",
+      "note": "PI August 2024; DailyMed update August 5, 2024. Strengths 7.5/15 mg tablets and ≥60 kg JRA restriction.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5fe76337-eae5-4e5c-96ef-6cfa97983c6e"
+    },
+    {
+      "id": "suspension",
+      "title": "Meloxicam ·7.5 mg/5 mL suspension",
+      "publisher": "DailyMed / Emerald Therapeutics",
+      "note": "PI October 2024; DailyMed update May 29, 2026. Weight-based JRA directions ≥2 years.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=55af77dd-2abc-49a6-990c-399d5a5e7a91"
+    },
+    {
+      "id": "capsule",
+      "title": "Meloxicam ·5/10 mg capsules",
+      "publisher": "DailyMed / ANI; Novitium",
+      "note": "PI October 2024; Medication Guide June 2025; SPL version 5/effective 20250610 shown in Medication Guide. Distinct adult OA dosing.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ce9a8fd7-9bd2-4793-82f3-0fb8f0965d0f"
+    },
+    {
+      "id": "vivlodex",
+      "title": "Vivlodex · Original capsule label",
+      "publisher": "DailyMed / Iroko",
+      "note": "Historical PI October 2015; publication April 8, 2019. Brand context only; current generic capsule directions sourced separately.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fcfd6c24-98d0-4b7b-8336-936899ef61de"
+    },
+    {
+      "id": "iv",
+      "title": "Xifyrm · IV meloxicam",
+      "publisher": "DailyMed / Azurity",
+      "note": "PI June 2025; publication June 18, 2025. Strength 30 mg/mL single-dose vial.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bf2b198c-0726-488a-b911-4fe394e4b56e"
+    },
+    {
+      "id": "anjeso",
+      "title": "Anjeso · Regulatory label",
+      "publisher": "FDA / Drugs@FDA",
+      "note": "FDA PI April 2021, NDA210583/S001, ReferenceID4786652. Historical IV product; current availability assessed separately.",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2021/210583s001lbl.pdf"
+    },
+    {
+      "id": "status",
+      "title": "Anjeso · Current regulatory record",
+      "publisher": "FDA / Drugs@FDA",
+      "note": "Checked October 1, 2026: discontinued; not withdrawn for safety/effectiveness. The later July 2021 supplement has no label posted in this record.",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=210583"
+    }
+  ],
+  "sourceEvidence": {
+    "tablet": {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5fe76337-eae5-4e5c-96ef-6cfa97983c6e",
+      "checked": "2026-10-01",
+      "revision": "PI August 2024; DailyMed update August 5, 2024.7.5/15 mg tablets and≥60 kg JRA restriction.",
+      "access": "Public full primary label/regulatory record; cited supporting sections read",
+      "dateDistinction": "Clinical revision vs publication/update distinguished. API XML versions not obtained unless explicitly documented."
+    },
+    "suspension": {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=55af77dd-2abc-49a6-990c-399d5a5e7a91",
+      "checked": "2026-10-01",
+      "revision": "PI October 2024; DailyMed update May 29, 2026. Weight-based JRA directions≥2 years.",
+      "access": "Public full primary label/regulatory record; cited supporting sections read",
+      "dateDistinction": "Clinical revision vs publication/update distinguished. API XML versions not obtained unless explicitly documented."
+    },
+    "capsule": {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ce9a8fd7-9bd2-4793-82f3-0fb8f0965d0f",
+      "checked": "2026-10-01",
+      "revision": "PI October 2024; Medication Guide June 2025; SPL version 5/effective 20250610 shown in Medication Guide. Distinct adult OA dosing.",
+      "access": "Public full primary label/regulatory record; cited supporting sections read",
+      "dateDistinction": "Clinical revision vs publication/update distinguished. API XML versions not obtained unless explicitly documented.",
+      "labelPublication": "June 10,2025",
+      "splVersion": 5,
+      "splEffectiveTime": "20250610",
+      "versionEvidenceURL": "https://dailymed.nlm.nih.gov/dailymed/medguide.cfm?setid=ce9a8fd7-9bd2-4793-82f3-0fb8f0965d0f"
+    },
+    "vivlodex": {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fcfd6c24-98d0-4b7b-8336-936899ef61de",
+      "checked": "2026-10-01",
+      "revision": "Historical PI October 2015; publication April 8, 2019. Brand context only; current generic capsule directions sourced separately.",
+      "access": "Public full primary label/regulatory record; cited supporting sections read",
+      "dateDistinction": "Clinical revision vs publication/update distinguished. API XML versions not obtained unless explicitly documented."
+    },
+    "iv": {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bf2b198c-0726-488a-b911-4fe394e4b56e",
+      "checked": "2026-10-01",
+      "revision": "PI June 2025; publication June 18, 2025.30 mg/mL single-dose vial.",
+      "access": "Public full primary label/regulatory record; cited supporting sections read",
+      "dateDistinction": "Clinical revision vs publication/update distinguished. API XML versions not obtained unless explicitly documented."
+    },
+    "anjeso": {
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2021/210583s001lbl.pdf",
+      "checked": "2026-10-01",
+      "revision": "FDA PI April 2021, NDA210583/S001, ReferenceID4786652. Historical IV product; current availability assessed separately.",
+      "access": "Public full primary label/regulatory record; cited supporting sections read",
+      "dateDistinction": "Clinical revision vs publication/update distinguished. API XML versions not obtained unless explicitly documented."
+    },
+    "status": {
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=210583",
+      "checked": "2026-10-01",
+      "revision": "Checked October 1, 2026: discontinued; not withdrawn for safety/effectiveness. The later July 2021 supplement has no label posted in this record.",
+      "access": "Public full primary label/regulatory record; cited supporting sections read",
+      "dateDistinction": "Clinical revision vs publication/update distinguished. API XML versions not obtained unless explicitly documented."
+    }
+  },
+  "assertionMap": [
+    {
+      "section": "indications",
+      "card": "Labeled oral uses",
+      "sourceIds": [
+        "tablet",
+        "suspension",
+        "capsule",
+        "vivlodex"
+      ],
+      "sourceSections": [
+        "Indications and Usage /1",
+        "Drugs@FDA product/history record"
+      ],
+      "claims": [
+        "Standard tablets/suspension treat OA and RA signs/symptoms. Tablets cover pauciarticular/polyarticular JRA at≥60 kg; suspension covers JRA from age 2. The 5/10 mg capsules(Vivlodex formulation) are for adult OA pain."
+      ]
+    },
+    {
+      "section": "indications",
+      "card": "Intravenous use and status",
+      "sourceIds": [
+        "iv",
+        "anjeso",
+        "status"
+      ],
+      "sourceSections": [
+        "Indications and Usage /1",
+        "Drugs@FDA product/history record"
+      ],
+      "claims": [
+        "Xifyrm treats adult moderate-to-severe pain alone or with non-NSAID analgesics. Delayed onset makes IV meloxicam unsuitable alone when rapid relief is required. Anjeso had this indication but is listed discontinued, for reasons other than safety/effectiveness."
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Adult formulation-specific regimens",
+      "sourceIds": [
+        "tablet",
+        "suspension",
+        "capsule",
+        "iv",
+        "anjeso"
+      ],
+      "sourceSections": [
+        "Dosage and Administration /2",
+        "Renal/hepatic /8.6–8.8",
+        "Warnings"
+      ],
+      "claims": [
+        [
+          "Standard tablet/suspension · OA/RA",
+          "7.5 mg orally once daily; may increase to 15 mg/day."
+        ],
+        [
+          "5/10 mg capsule · adult OA",
+          "5 mg once daily; may increase to 10 mg/day."
+        ],
+        [
+          "Xifyrm IV; historical Anjeso",
+          "30 mg once daily by IV bolus over 15 seconds. Hydrate first; assess need for short-acting non-NSAID rescue."
+        ]
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Pediatric JRA directions",
+      "sourceIds": [
+        "tablet",
+        "suspension",
+        "capsule",
+        "iv"
+      ],
+      "sourceSections": [
+        "Dosage and Administration /2",
+        "Renal/hepatic /8.6–8.8",
+        "Warnings"
+      ],
+      "claims": [
+        "Tablets: 7.5 mg once daily only at≥60 kg; do not use below 60 kg. Suspension: age≥2, 0.125 mg/kg once daily, max 7.5 mg; 1.5 mg/mL concentration. Higher doses gave no additional benefit. Capsule and IV pediatric safety/effectiveness are unestablished."
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Renal and hepatic considerations",
+      "sourceIds": [
+        "tablet",
+        "capsule",
+        "iv",
+        "anjeso"
+      ],
+      "sourceSections": [
+        "Dosage and Administration /2",
+        "Renal/hepatic /8.6–8.8",
+        "Warnings"
+      ],
+      "claims": [
+        "Standard oral products: severe renal impairment not recommended; dialysis maximum 7.5 mg/day for tablet/suspension versus 5 mg/day for 5/10 mg capsules. IV products: not recommended with moderate/severe renal insufficiency; contraindicated when such patients risk renal failure from volume depletion. Mild/moderate hepatic impairment generally needs no oral adjustment; severe disease is poorly studied and warrants caution/monitoring. IV hepatic data are limited. For IV therapy, consider dose reduction and adverse-effect monitoring in known/suspected poor CYP2C9 metabolizers; the label gives no fixed alternate regimen."
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Administration and switching",
+      "sourceIds": [
+        "tablet",
+        "suspension",
+        "capsule"
+      ],
+      "sourceSections": [
+        "Dosage and Administration /2",
+        "Renal/hepatic /8.6–8.8",
+        "Warnings"
+      ],
+      "claims": [
+        "Standard tablets/suspension may be taken with or without food; gently shake suspension and measure accurately. Labels warn against assuming equivalent exposure across oral formulations. The suspension label specifically permits corresponding 7.5/15 mg standard-tablet substitution, alongside a broader non-interchangeability warning; prescriber/pharmacist must verify the exact switch. 5/10 mg capsules are not equivalent to standard tablets."
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "sourceIds": [
+        "tablet",
+        "capsule",
+        "iv"
+      ],
+      "sourceSections": [
+        "Boxed warning/status",
+        "Contraindications /4",
+        "Warnings/Precautions /5",
+        "Adverse reactions /6",
+        "Overdosage /10"
+      ],
+      "claims": [
+        "Avoid after recent MI or with severe heart failure unless benefit outweighs risk. Monitor BP, edema, renal function and potassium; correct dehydration first. Stop for suspected liver injury, serious skin reaction or DRESS. NSAIDs can mask infection and cause anemia/bleeding."
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "sourceIds": [
+        "tablet",
+        "capsule",
+        "iv",
+        "anjeso"
+      ],
+      "sourceSections": [
+        "Boxed warning/status",
+        "Contraindications /4",
+        "Warnings/Precautions /5",
+        "Adverse reactions /6",
+        "Overdosage /10"
+      ],
+      "claims": [
+        "Meloxicam/product hypersensitivity, prior serious NSAID skin reaction, aspirin/NSAID-triggered asthma or allergic reactions, and CABG surgery. IV products additionally contraindicate moderate/severe renal insufficiency with volume-depletion renal-failure risk."
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Boxed warning · Cardiovascular and gastrointestinal events",
+      "sourceIds": [
+        "tablet",
+        "suspension",
+        "capsule",
+        "iv",
+        "anjeso"
+      ],
+      "sourceSections": [
+        "Boxed warning/status",
+        "Contraindications /4",
+        "Warnings/Precautions /5",
+        "Adverse reactions /6",
+        "Overdosage /10"
+      ],
+      "claims": [
+        "Selected products warn of potentially fatal MI/stroke and GI bleeding, ulceration or perforation. Risk may begin early; older adults and prior ulcer/GI-bleeding patients face greater GI risk. CABG use is contraindicated."
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions",
+      "sourceIds": [
+        "tablet",
+        "capsule",
+        "iv"
+      ],
+      "sourceSections": [
+        "Boxed warning/status",
+        "Contraindications /4",
+        "Warnings/Precautions /5",
+        "Adverse reactions /6",
+        "Overdosage /10"
+      ],
+      "claims": [
+        "Oral effects include dyspepsia, diarrhea, nausea, headache and edema. IV trials commonly reported constipation, increased GGT and anemia. Severe allergy, skin reactions, hepatic/renal injury and blood disorders are reported. Overdose requires urgent supportive care; no specific antidote exists and high protein binding limits dialysis usefulness."
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Clinically relevant interactions",
+      "sourceIds": [
+        "tablet",
+        "capsule",
+        "iv"
+      ],
+      "sourceSections": [
+        "Drug interactions /7",
+        "Precautions/Drug interactions"
+      ],
+      "claims": [
+        "Anticoagulants, aspirin, antiplatelets, SSRIs/SNRIs: monitor bleeding. Analgesic-dose aspirin/other NSAIDs are generally not recommended.",
+        "ACE inhibitors/ARBs/beta-blockers: monitor BP; assess renal function/hydration with ACE inhibitors/ARBs.",
+        "Diuretics: monitor renal function and diuretic/BP response.",
+        "Lithium, methotrexate and cyclosporine: monitor toxicity; capsule label also directs digoxin-level monitoring.",
+        "Pemetrexed: coordinate oncology-directed interruption at least 5 days before, treatment day and 2 days after; monitor toxicity at CrCl 45–79 mL/min. Standard-tablet label advises against concomitant use below 45."
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy and reproductive potential",
+      "sourceIds": [
+        "suspension",
+        "capsule",
+        "iv"
+      ],
+      "sourceSections": [
+        "Use in populations /8",
+        "Pregnancy/Nursing/Pediatric/Geriatric"
+      ],
+      "claims": [
+        "Between about 20–30 weeks, use only when necessary at lowest dose/shortest duration; consider amniotic-fluid ultrasound beyond 48 hours and stop for oligohydramnios. Avoid at about 30 weeks onward. NSAIDs may reversibly delay ovulation; consider withdrawal when investigating infertility."
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Lactation, children and older adults",
+      "sourceIds": [
+        "capsule",
+        "suspension",
+        "iv"
+      ],
+      "sourceSections": [
+        "Use in populations /8",
+        "Pregnancy/Nursing/Pediatric/Geriatric"
+      ],
+      "claims": [
+        "Human milk/infant-effect data are unavailable; individualize breastfeeding decisions. JRA age/weight limits apply by oral form; do not extrapolate to capsules/IV. Older adults face greater GI, CV and renal risk. Xifyrm also describes animal male-fertility findings of uncertain human relevance."
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism of action",
+      "sourceIds": [
+        "capsule"
+      ],
+      "sourceSections": [
+        "Clinical Pharmacology /12.1–12.3"
+      ],
+      "claims": [
+        "Analgesic/anti-inflammatory activity involves COX-1/COX-2 inhibition; the complete mechanism is not established."
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Pharmacokinetics",
+      "sourceIds": [
+        "tablet",
+        "iv"
+      ],
+      "sourceSections": [
+        "Clinical Pharmacology /12.1–12.3"
+      ],
+      "claims": [
+        [
+          "Binding",
+          "Approximately 99% protein-bound."
+        ],
+        [
+          "Metabolism",
+          "Extensive hepatic metabolism; CYP2C9 with smaller CYP3A4 contribution."
+        ],
+        [
+          "Half-life",
+          "Approximately 15–20 hours orally; selected Xifyrm study mean 21 hours."
+        ],
+        [
+          "Clearance",
+          "Metabolites excreted in urine/feces; not effectively dialyzable."
+        ]
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Monitoring parameters",
+      "sourceIds": [
+        "tablet",
+        "iv"
+      ],
+      "sourceSections": [
+        "Warnings /5",
+        "Laboratory Tests",
+        "Patient counseling /17"
+      ],
+      "claims": [
+        "Assess pain/function and duration; IV product is not for long-term treatment.",
+        "Monitor BP, edema and renal function/potassium in at-risk patients.",
+        "Consider periodic CBC/chemistry with prolonged oral NSAID treatment; assess hemoglobin for anemia symptoms.",
+        "Check GI bleeding, skin/allergy and liver-injury symptoms; pregnancy ultrasound as directed."
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Patient counseling information",
+      "sourceIds": [
+        "suspension",
+        "capsule",
+        "iv"
+      ],
+      "sourceSections": [
+        "Warnings /5",
+        "Laboratory Tests",
+        "Patient counseling /17"
+      ],
+      "claims": [
+        "Seek emergency care for chest pain, focal weakness, breathing difficulty or GI bleeding. Stop for rash or liver-injury symptoms and obtain assessment. Check OTC products for NSAIDs, discuss aspirin before combining, and verify formulation each refill."
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Representative oral product · Unichem tablet",
+      "sourceIds": [
+        "tablet"
+      ],
+      "sourceSections": [
+        "Description /3",
+        "How supplied/storage /16",
+        "Package display panels"
+      ],
+      "claims": [
+        [
+          "Strength / appearance",
+          "7.5 mg light-yellow round tablet."
+        ],
+        [
+          "Imprint",
+          "U and L /7.5."
+        ],
+        [
+          "Distributor",
+          "Unichem Pharmaceuticals(USA), Inc."
+        ],
+        [
+          "Example NDC",
+          "29300-124-13 ·30 tablets."
+        ],
+        [
+          "U. S. status",
+          "Prescription medicine."
+        ]
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "sourceIds": [
+        "tablet",
+        "suspension",
+        "capsule",
+        "iv",
+        "anjeso"
+      ],
+      "sourceSections": [
+        "Description /3",
+        "How supplied/storage /16",
+        "Package display panels"
+      ],
+      "claims": [
+        [
+          "Standard oral",
+          "7.5/15 mg tablets; 7.5 mg/5 mL suspension."
+        ],
+        [
+          "Selected low-dose capsule",
+          "5/10 mg; separate dose/exposure limits."
+        ],
+        [
+          "IV",
+          "Xifyrm 30 mg/mL, 1 mL single-dose vial; historical Anjeso 30 mg/mL."
+        ],
+        [
+          "Outside scope",
+          "ODT, other suspensions and combination/local-surgical products have separate labels."
+        ]
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "sourceIds": [
+        "tablet",
+        "suspension",
+        "capsule",
+        "iv"
+      ],
+      "sourceSections": [
+        "Description /3",
+        "How supplied/storage /16",
+        "Package display panels"
+      ],
+      "claims": [
+        "Tablets: 20–25°C, dry, tight container. Selected suspension: 25°C, excursions 15–30°C, tightly closed. Capsules: 20–25°C, original tightly closed bottle for moisture protection. Xifyrm: 20–25°C, carton for light protection; inspect and discard unused vial contents."
+      ]
+    },
+    {
+      "section": "hero/essential",
+      "card": "Clinical scope and essential safety",
+      "sourceIds": [
+        "tablet",
+        "capsule",
+        "iv"
+      ],
+      "sourceSections": [
+        "Indications",
+        "Warnings",
+        "Patient counseling"
+      ],
+      "claims": [
+        "A nonsteroidal anti-inflammatory drug. Standard tablets/suspension, 5/10 mg capsules and IV formulations have distinct indications, doses and population limits.",
+        "Chest pain, stroke symptoms, bloody vomit or black stools require urgent care. Stop and seek assessment for serious rash or allergy. Verify the exact formulation before dosing."
+      ]
+    }
+  ],
+  "exclusions": [
+    "ODT, Qamzova and other unreviewed oral formulations; combination/local-surgical products; no availability guarantee for historical brands"
+  ],
+  "gaps": [],
+  "validation": {
+    "schema": "Passed validateMonograph; zero errors",
+    "renderedPage": "Pending parent integration QA"
+  },
+  "monographSha256": "b0c99c4222a6d2d12981743d0f4b10967b3f6a4ebd4190cea60afdefcedbcf39",
+  "sourceInterpretationNotes": [
+    "Suspension 2.1 specifically permits corresponding standard-tablet substitution, while 2.6 states broad non-interchangeability. Profile reports both and requires exact-product verification; no blanket equivalence claim.",
+    "Historical Vivlodex brand context is separated from current ANI capsule label, which carries updated fetal/DRESS/skin warnings.",
+    "Anjeso is discontinued per current FDA record, not due to safety/effectiveness. Its historical regimen is crosschecked against current Xifyrm; no brand-availability claim. FDA S002 July 2021 has no label posted."
+  ]
+}

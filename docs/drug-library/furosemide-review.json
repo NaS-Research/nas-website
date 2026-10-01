@@ -1,0 +1,472 @@
+{
+  "slug": "furosemide",
+  "checked": "2026-10-01",
+  "status": "source_reviewed",
+  "scope": "A potent diuretic for edema. Selected oral tablets/solutions and IV/IM injection have separate dose schedules; fluid, electrolyte, renal and hearing assessment guide treatment.",
+  "sources": [
+    {
+      "id": "oral",
+      "title": "Furosemide · Tablets and oral solutions",
+      "publisher": "DailyMed / Hikma",
+      "note": "PI revised November 2025; DailyMed update November 3, 2025. Includes two oral-solution concentrations.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9e493331-dddd-496e-abf8-61747fb67aba"
+    },
+    {
+      "id": "lasix",
+      "title": "Lasix · Oral tablets",
+      "publisher": "DailyMed / Validus",
+      "note": "Clinical text footer August 2018; DailyMed update September 30, 2025. Publication date is not the clinical revision date.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2c9b4d8f-0770-482d-a9e6-9c616a440b1a"
+    },
+    {
+      "id": "injection",
+      "title": "Furosemide · IV/IM injection",
+      "publisher": "DailyMed / Civica; Hikma",
+      "note": "PI October 2025; DailyMed update October 31, 2025. Selected 40 mg/4 mL single-dose vial.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6d9caaab-d874-4cf1-b9fe-408452a18998"
+    },
+    {
+      "id": "hf",
+      "title": "Heart failure · Diuretics and decongestion",
+      "publisher": "AHA / ACC / HFSA",
+      "note": "2022 guideline slide set, slides 68–70: congestion treatment, thiazide addition and oral diuretic table. Guideline context differs from product labeling.",
+      "url": "https://professional.heart.org/-/media/832EA0F4E73948848612F228F7FA2D35.pdf"
+    }
+  ],
+  "sourceEvidence": {
+    "oral": {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9e493331-dddd-496e-abf8-61747fb67aba",
+      "checked": "2026-10-01",
+      "revision": "PI revised November 2025; DailyMed update November 3, 2025. Includes two oral-solution concentrations.",
+      "access": "Public full primary label/regulatory record; cited supporting sections read",
+      "dateDistinction": "Clinical revision vs publication/update distinguished. API XML versions not obtained unless explicitly documented."
+    },
+    "lasix": {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2c9b4d8f-0770-482d-a9e6-9c616a440b1a",
+      "checked": "2026-10-01",
+      "revision": "Clinical text footer August 2018; DailyMed update September 30, 2025. Publication date is not the clinical revision date.",
+      "access": "Public full primary label/regulatory record; cited supporting sections read",
+      "dateDistinction": "Clinical revision vs publication/update distinguished. API XML versions not obtained unless explicitly documented."
+    },
+    "injection": {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6d9caaab-d874-4cf1-b9fe-408452a18998",
+      "checked": "2026-10-01",
+      "revision": "PI October 2025; DailyMed update October 31, 2025. Selected 40 mg/4 mL single-dose vial.",
+      "access": "Public full primary label/regulatory record; cited supporting sections read",
+      "dateDistinction": "Clinical revision vs publication/update distinguished. API XML versions not obtained unless explicitly documented."
+    },
+    "hf": {
+      "url": "https://professional.heart.org/-/media/832EA0F4E73948848612F228F7FA2D35.pdf",
+      "checked": "2026-10-01",
+      "revision": "2022 guideline slide set, slides 68–70: congestion treatment, thiazide addition and oral diuretic table. Guideline context differs from product labeling.",
+      "access": "Public full primary label/regulatory record; cited supporting sections read",
+      "dateDistinction": "Clinical revision vs publication/update distinguished. API XML versions not obtained unless explicitly documented."
+    }
+  },
+  "assertionMap": [
+    {
+      "section": "indications",
+      "card": "Labeled uses",
+      "sourceIds": [
+        "oral",
+        "injection"
+      ],
+      "sourceSections": [
+        "Indications and Usage /1",
+        "HF slides 68–70"
+      ],
+      "claims": [
+        "Oral and selected injection labels cover adult/pediatric edema with heart failure, cirrhosis or renal disease including nephrotic syndrome. Oral products also cover adult hypertension; injection is adjunctive therapy for acute pulmonary edema."
+      ]
+    },
+    {
+      "section": "indications",
+      "card": "Heart failure guidance",
+      "sourceIds": [
+        "hf"
+      ],
+      "sourceSections": [
+        "Indications and Usage /1",
+        "HF slides 68–70"
+      ],
+      "claims": [
+        "The AHA/ACC/HFSA guideline recommends diuretics for fluid retention to relieve congestion and prevent worsening heart failure. Reserve addition of a thiazide to a loop diuretic for inadequate response to moderate/high loop doses, to limit electrolyte abnormalities."
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Adult oral regimens",
+      "sourceIds": [
+        "oral",
+        "lasix"
+      ],
+      "sourceSections": [
+        "Dosage and Administration /2",
+        "Renal/hepatic /8.6–8.8",
+        "Warnings"
+      ],
+      "claims": [
+        [
+          "Edema",
+          "20–80 mg once initially; repeat or increase by 20–40 mg no sooner than 6–8 hours. Maintenance once/twice daily. Severe edema may require carefully supervised titration up to 600 mg/day."
+        ],
+        [
+          "Hypertension",
+          "80 mg/day initially, usually 40 mg twice daily; adjust to BP response and review other antihypertensives."
+        ]
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Adult parenteral regimens",
+      "sourceIds": [
+        "injection"
+      ],
+      "sourceSections": [
+        "Dosage and Administration /2",
+        "Renal/hepatic /8.6–8.8",
+        "Warnings"
+      ],
+      "claims": [
+        "Edema: 20–40 mg IV/IM initially; IV over 1–2 minutes. Repeat/increase by 20 mg no sooner than 2 hours, then once/twice daily as individualized. Acute pulmonary edema: 40 mg IV over 1–2 minutes; if inadequate after 1 hour, 80 mg IV over 1–2 minutes. Continuous infusion must not exceed 4 mg/min; high-dose therapy requires controlled infusion."
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Pediatric route distinctions",
+      "sourceIds": [
+        "oral",
+        "injection"
+      ],
+      "sourceSections": [
+        "Dosage and Administration /2",
+        "Renal/hepatic /8.6–8.8",
+        "Warnings"
+      ],
+      "claims": [
+        "Oral edema: 2 mg/kg once initially; increase 1–2 mg/kg no sooner than 6–8 hours. IV/IM: 1 mg/kg initially over 1–2 minutes; increase 1 mg/kg no sooner than 2 hours. Both labels advise against doses above 6 mg/kg. Selected injection limits premature infants to 1 mg/kg/day."
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Renal, hepatic and formulation considerations",
+      "sourceIds": [
+        "oral",
+        "injection"
+      ],
+      "sourceSections": [
+        "Dosage and Administration /2",
+        "Renal/hepatic /8.6–8.8",
+        "Warnings"
+      ],
+      "claims": [
+        "Anuria is contraindicated. Stop for increasing azotemia plus oliguria in progressive severe renal disease. Cirrhosis/ascites warrants hospital initiation and careful titration; correct hepatic coma/electrolyte depletion first. Oral solutions are 8 or 10 mg/mL; verify concentration and measuring device. No automatic oral-to-IV conversion is supplied here."
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "sourceIds": [
+        "oral",
+        "injection"
+      ],
+      "sourceSections": [
+        "Boxed warning/status",
+        "Contraindications /4",
+        "Warnings/Precautions /5",
+        "Adverse reactions /6",
+        "Overdosage /10"
+      ],
+      "claims": [
+        "Dehydration, hypotension, electrolyte depletion and metabolic abnormalities may be severe. Rapid injection, renal impairment, excessive doses, low albumin and ototoxic drugs increase hearing risk. Watch for urinary retention. Assess sulfonamide allergy history, lupus, glucose and gout risks."
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "sourceIds": [
+        "lasix",
+        "injection"
+      ],
+      "sourceSections": [
+        "Boxed warning/status",
+        "Contraindications /4",
+        "Warnings/Precautions /5",
+        "Adverse reactions /6",
+        "Overdosage /10"
+      ],
+      "claims": [
+        "Anuria or prior hypersensitivity to furosemide."
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Boxed warning status · Product-specific labeling",
+      "sourceIds": [
+        "oral",
+        "lasix",
+        "injection"
+      ],
+      "sourceSections": [
+        "Boxed warning/status",
+        "Contraindications /4",
+        "Warnings/Precautions /5",
+        "Adverse reactions /6",
+        "Overdosage /10"
+      ],
+      "claims": [
+        "Selected oral labels prominently warn of profound diuresis and water/electrolyte depletion requiring medical supervision. The selected modern injection PI has no boxed warning; its serious volume/electrolyte and hearing warnings still apply."
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions",
+      "sourceIds": [
+        "lasix",
+        "injection"
+      ],
+      "sourceSections": [
+        "Boxed warning/status",
+        "Contraindications /4",
+        "Warnings/Precautions /5",
+        "Adverse reactions /6",
+        "Overdosage /10"
+      ],
+      "claims": [
+        "Dizziness, orthostasis, GI upset, cramps and photosensitivity occur. Serious reports include hearing loss, severe allergy/skin reactions, blood disorders and renal injury. Overdose requires urgent supportive fluid/electrolyte correction and BP monitoring; dialysis does not speed elimination."
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Clinically relevant interactions",
+      "sourceIds": [
+        "oral",
+        "injection"
+      ],
+      "sourceSections": [
+        "Drug interactions /7",
+        "Precautions/Drug interactions"
+      ],
+      "claims": [
+        "Avoid lithium; avoid ethacrynic acid and aminoglycosides except life-threatening indications.",
+        "Cisplatin/nephrotoxic drugs require renal/hearing review.",
+        "ACE inhibitors/ARBs and other antihypertensives: monitor BP/renal function; doses may need reduction.",
+        "NSAIDs/phenytoin may reduce response. Methotrexate/tubularly secreted drugs can increase toxicity.",
+        "Potassium-depleting medicines increase risk; hypokalemia enhances digoxin toxicity.",
+        "Separate oral tablets and sucralfate by at least 2 hours.",
+        "Review high-dose salicylates, cyclosporine, chloral hydrate and perioperative muscle relaxants against the full label."
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy and lactation",
+      "sourceIds": [
+        "injection"
+      ],
+      "sourceSections": [
+        "Use in populations /8",
+        "Pregnancy/Nursing/Pediatric/Geriatric"
+      ],
+      "claims": [
+        "Use requires individualized maternal/fetal assessment. The newer injection PI reports no demonstrated major-malformation signal from available observational data; this does not establish absence of risk. Furosemide enters milk and significant diuresis may impair supply."
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Pediatric and geriatric considerations",
+      "sourceIds": [
+        "lasix",
+        "injection"
+      ],
+      "sourceSections": [
+        "Use in populations /8",
+        "Pregnancy/Nursing/Pediatric/Geriatric"
+      ],
+      "claims": [
+        "Premature infants have hearing, nephrocalcinosis and nephrolithiasis risks; assess renal function/ultrasound as labeled. Oral labeling notes possible persistent ductus risk early in premature life. Older adults often need lower starting doses and renal assessment."
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism of action",
+      "sourceIds": [
+        "oral"
+      ],
+      "sourceSections": [
+        "Clinical Pharmacology /12.1–12.3"
+      ],
+      "claims": [
+        "Inhibits renal sodium/chloride reabsorption, particularly in the loop of Henle, producing diuresis."
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Pharmacokinetics",
+      "sourceIds": [
+        "lasix",
+        "injection"
+      ],
+      "sourceSections": [
+        "Clinical Pharmacology /12.1–12.3"
+      ],
+      "claims": [
+        [
+          "Oral effect",
+          "Onset within 1 hour; duration 6–8 hours."
+        ],
+        [
+          "IV effect",
+          "Onset within 5 minutes; duration approximately 2 hours."
+        ],
+        [
+          "Disposition",
+          "Highly albumin-bound; predominantly urinary elimination."
+        ],
+        [
+          "Half-life",
+          "Approximately 2 hours; patient factors alter clearance."
+        ]
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Monitoring parameters",
+      "sourceIds": [
+        "oral",
+        "injection"
+      ],
+      "sourceSections": [
+        "Warnings /5",
+        "Laboratory Tests",
+        "Patient counseling /17"
+      ],
+      "claims": [
+        "Assess BP, hydration, urine output and edema response.",
+        "Check sodium/potassium, CO₂, BUN/creatinine; assess magnesium/calcium, glucose and uric acid as appropriate.",
+        "Check hearing symptoms and urinary retention.",
+        "Infant renal function/ultrasound and high-dose treatment require additional surveillance."
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Patient counseling information",
+      "sourceIds": [
+        "oral",
+        "lasix",
+        "injection"
+      ],
+      "sourceSections": [
+        "Warnings /5",
+        "Laboratory Tests",
+        "Patient counseling /17"
+      ],
+      "claims": [
+        "Rise slowly. Report fainting, cramps, marked thirst, reduced urine or hearing changes. Follow the prescribed fluid/potassium plan and sun protection. Measure liquid with the supplied calibrated device; verify strength every refill."
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Representative oral product · Lasix",
+      "sourceIds": [
+        "lasix"
+      ],
+      "sourceSections": [
+        "Description /3",
+        "How supplied/storage /16",
+        "Package display panels"
+      ],
+      "claims": [
+        [
+          "Strength / appearance",
+          "40 mg white, round, scored tablet."
+        ],
+        [
+          "Imprint",
+          "Lasix 40."
+        ],
+        [
+          "Distributor",
+          "Validus Pharmaceuticals LLC."
+        ],
+        [
+          "Example NDC",
+          "30698-060-01 ·100 tablets."
+        ],
+        [
+          "U. S. status",
+          "Prescription medicine."
+        ]
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "sourceIds": [
+        "oral",
+        "injection"
+      ],
+      "sourceSections": [
+        "Description /3",
+        "How supplied/storage /16",
+        "Package display panels"
+      ],
+      "claims": [
+        [
+          "Selected oral products",
+          "20/40/80 mg tablets; 10 mg/mL and 40 mg/5 mL solutions."
+        ],
+        [
+          "Selected IV/IM product",
+          "40 mg/4 mL(10 mg/mL), single-dose vial."
+        ],
+        [
+          "Scope boundary",
+          "Subcutaneous on-body products require separate labels and are outside these dosing directions."
+        ]
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "sourceIds": [
+        "oral",
+        "lasix",
+        "injection"
+      ],
+      "sourceSections": [
+        "Description /3",
+        "How supplied/storage /16",
+        "Package display panels"
+      ],
+      "claims": [
+        "Lasix: 20–25°C, excursions 15–30°C; protect from light and reject discolored tablets. Hikma 10 mg/mL: original bottle; discard 90 days after opening; 60 mL package uses its supplied syringe. Injection: 20–25°C, light protection; discard unused contents and reject particles/discoloration."
+      ]
+    },
+    {
+      "section": "hero/essential",
+      "card": "Clinical scope and essential safety",
+      "sourceIds": [
+        "oral",
+        "injection"
+      ],
+      "sourceSections": [
+        "Indications",
+        "Warnings",
+        "Patient counseling"
+      ],
+      "claims": [
+        "A potent diuretic for edema. Selected oral tablets/solutions and IV/IM injection have separate dose schedules; fluid, electrolyte, renal and hearing assessment guide treatment.",
+        "Fainting, marked weakness, reduced urine or hearing changes need prompt assessment. Route, repeat interval and injection rate must match the prescribed product."
+      ]
+    }
+  ],
+  "exclusions": [
+    "Subcutaneous on-body furosemide formulations; no automatic oral/IV conversion; institutional high-dose protocols"
+  ],
+  "gaps": [],
+  "validation": {
+    "schema": "Passed validateMonograph; zero errors",
+    "renderedPage": "Pending parent integration QA"
+  },
+  "monographSha256": "c6426329fb498f9e46a14925db1326eddd3a23525852636314b0043f2edb9105"
+}

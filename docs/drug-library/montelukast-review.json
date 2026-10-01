@@ -1,0 +1,521 @@
+{
+  "slug": "montelukast",
+  "status": "source_reviewed",
+  "checked": "2026-10-01",
+  "scope": "Selected current U.S. Singulair oral tablet, chewable and granule label with FDA neuropsychiatric/rhinitis safety communication",
+  "excludedRegimens": [
+    "Other manufacturers and non-U.S. labels",
+    "Exhaustive off-label regimens",
+    "Combination respiratory products"
+  ],
+  "sources": [
+    {
+      "id": "label",
+      "title": "Singulair · Prescribing information",
+      "publisher": "DailyMed / Organon LLC",
+      "note": "Current SPL version 5, effective April 30, 2025; published June 25, 2025. Selected U.S. tablet, chewable, and granule labeling.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=482dcc92-b47f-4ea6-854a-f5ac2aea7842"
+    },
+    {
+      "id": "fda",
+      "title": "Montelukast · Boxed warning and restricted rhinitis use",
+      "publisher": "U.S. Food and Drug Administration",
+      "note": "March 4, 2020 drug safety communication; serious mental-health effects and prescribing/counseling recommendations.",
+      "url": "https://www.fda.gov/drugs/drug-safety-communications/fda-requires-boxed-warning-about-serious-mental-health-side-effects-asthma-and-allergy-drug"
+    }
+  ],
+  "labelMetadata": [
+    {
+      "product": "Singulair",
+      "setid": "482dcc92-b47f-4ea6-854a-f5ac2aea7842",
+      "effectiveTime": "20250430",
+      "version": "5",
+      "xmlSha256": "ad63983d29aa05ecfed7afd5d6801a4002ad588581d5a9a20ecaa8e86af110a6",
+      "localEvidence": "/tmp/singulair.xml",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/482dcc92-b47f-4ea6-854a-f5ac2aea7842.xml"
+    }
+  ],
+  "evidence": [
+    {
+      "localEvidence": "/tmp/singulair.xml",
+      "sha256": "ad63983d29aa05ecfed7afd5d6801a4002ad588581d5a9a20ecaa8e86af110a6",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=482dcc92-b47f-4ea6-854a-f5ac2aea7842",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/montelukast/singulair.xml"
+    },
+    {
+      "localEvidence": "/tmp/nas-montelukast-fda.html",
+      "sha256": "88a78c3e235e98d3dbe6dd50440a1aed4f83be5b2771be14a58ffca50af82661",
+      "url": "https://www.fda.gov/drugs/drug-safety-communications/fda-requires-boxed-warning-about-serious-mental-health-side-effects-asthma-and-allergy-drug",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/montelukast/nas-montelukast-fda.html"
+    }
+  ],
+  "reviewedSourceSections": [
+    "Boxed Warning",
+    "1–8",
+    "10",
+    "12",
+    "14 (labeled indication evidence)",
+    "16–17",
+    "Medication Guide",
+    "Instructions for Use",
+    "FDA communication: patient/professional recommendations"
+  ],
+  "assertionToSourceMap": [
+    {
+      "section": "indications",
+      "card": "Labeled indications",
+      "assertions": {
+        "paragraphs": [
+          "Singulair is labeled for prevention and chronic treatment of asthma from age 12 months, prevention of exercise-induced bronchoconstriction from age 6 years, seasonal allergic rhinitis from age 2 years, and perennial allergic rhinitis from age 6 months."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": "label §1.1–1.4; §8.4",
+      "review": "Compared all card assertions with the listed public source sections; original summaries, not copied label paragraphs."
+    },
+    {
+      "section": "indications",
+      "card": "Place in therapy and limitations",
+      "assertions": {
+        "paragraphs": [
+          "For allergic rhinitis, use only when alternatives are ineffective or not tolerated. Discuss benefits and neuropsychiatric risks before prescribing for asthma or exercise-related symptoms. Montelukast is not rescue treatment for acute bronchospasm or status asthmaticus."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "fda"
+      ],
+      "sourceSections": "label Boxed Warning; §5.1–5.2; FDA safety communication",
+      "review": "Compared all card assertions with the listed public source sections; original summaries, not copied label paragraphs."
+    },
+    {
+      "section": "dosage",
+      "card": "Asthma and rhinitis dosing",
+      "assertions": {
+        "table": {
+          "headers": [
+            "Age",
+            "Once-daily oral dose and formulation"
+          ],
+          "rows": [
+            [
+              "15 years or older",
+              "10 mg film-coated tablet"
+            ],
+            [
+              "6–14 years",
+              "5 mg chewable tablet"
+            ],
+            [
+              "2–5 years",
+              "4 mg chewable tablet or one 4 mg granule packet"
+            ],
+            [
+              "12–23 months",
+              "One 4 mg granule packet for asthma or perennial rhinitis"
+            ],
+            [
+              "6–11 months",
+              "One 4 mg granule packet for perennial rhinitis only"
+            ]
+          ]
+        },
+        "paragraphs": [
+          "For asthma, give in the evening without regard to food. For rhinitis alone, individualize the time; food does not dictate administration. A patient with both asthma and rhinitis takes one dose in the evening."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": "label §2.1, §2.3–2.4",
+      "review": "Compared all card assertions with the listed public source sections; original summaries, not copied label paragraphs."
+    },
+    {
+      "section": "dosage",
+      "card": "Exercise-induced bronchoconstriction",
+      "assertions": {
+        "paragraphs": [
+          "For patients aged 6–14 years, give 5 mg; for those aged 15 years or older, give 10 mg, at least 2 hours before exercise. Do not repeat within 24 hours. Patients taking montelukast daily must not take an additional exercise dose. Keep prescribed short-acting rescue medicine available; daily asthma dosing has not been established to prevent an acute exercise episode."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": "label §2.2; §17",
+      "review": "Compared all card assertions with the listed public source sections; original summaries, not copied label paragraphs."
+    },
+    {
+      "section": "dosage",
+      "card": "Oral granule administration",
+      "assertions": {
+        "paragraphs": [
+          "Open a packet only when ready to administer. Give directly into the mouth, or mix with one teaspoon (5 mL) of cold or room-temperature baby formula or breast milk. The label also permits a spoonful of cold or room-temperature applesauce, carrots, rice, or ice cream. Do not dissolve in other liquids; liquids may be taken afterward.",
+          "Give the entire packet within 15 minutes of opening. Discard unused mixture and do not save it for later. Granules may be given without regard to meals."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": "label §2.5; Instructions for Use",
+      "review": "Compared all card assertions with the listed public source sections; original summaries, not copied label paragraphs."
+    },
+    {
+      "section": "dosage",
+      "card": "Dose considerations and missed doses",
+      "assertions": {
+        "paragraphs": [
+          "No renal adjustment is recommended. Mild-to-moderate hepatic impairment does not require adjustment; severe hepatic impairment and hepatitis have not been evaluated. Skip a missed dose and take the next at its usual time; do not double."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": "label §8.6–8.7; §12.3; Medication Guide",
+      "review": "Compared all card assertions with the listed public source sections; original summaries, not copied label paragraphs."
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "assertions": {
+        "paragraphs": [
+          "Neuropsychiatric events include agitation, aggression, depression, abnormal dreams, sleep disturbances, and suicidal thoughts or behavior. Events can occur with or without a prior psychiatric history and can begin or persist after discontinuation. Stop treatment and contact the prescriber immediately; continue monitoring until symptoms resolve. Restarting requires reassessment of benefit and risk.",
+          "Montelukast does not treat an acute attack. Do not abruptly replace inhaled or oral corticosteroids with it. Patients with aspirin-sensitive asthma must continue avoiding aspirin and other triggering NSAIDs.",
+          "Watch for eosinophilia with vasculitic rash, worsening pulmonary symptoms, cardiac complications, or neuropathy, particularly during corticosteroid reduction. A causal link to montelukast has not been established.",
+          "Chewable tablets contain aspartame-derived phenylalanine: 0.674 mg per 4 mg tablet and 0.842 mg per 5 mg tablet. Consider this in phenylketonuria."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "fda"
+      ],
+      "sourceSections": "label §5.1–5.6; FDA safety communication",
+      "review": "Compared all card assertions with the listed public source sections; original summaries, not copied label paragraphs."
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "assertions": {
+        "paragraphs": [
+          "Hypersensitivity to any component of the selected product."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": "label §4",
+      "review": "Compared all card assertions with the listed public source sections; original summaries, not copied label paragraphs."
+    },
+    {
+      "section": "safety",
+      "card": "Boxed warning · Serious neuropsychiatric events",
+      "assertions": {
+        "paragraphs": [
+          "The selected product has a boxed warning for serious neuropsychiatric events, including suicidal thoughts and behavior. Discuss the risk, monitor symptoms, and stop for new symptoms. The warning restricts allergic rhinitis use to patients with inadequate response or intolerance to alternatives."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "fda"
+      ],
+      "sourceSections": "label Boxed Warning; FDA safety communication",
+      "review": "Compared all card assertions with the listed public source sections; original summaries, not copied label paragraphs."
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions",
+      "assertions": {
+        "paragraphs": [
+          "Common events in controlled trials included upper respiratory infection, fever, headache, pharyngitis, cough, abdominal pain, diarrhea, and ear or sinus infections; patterns differ by age and indication. Postmarketing reports include serious neuropsychiatric events, hypersensitivity including anaphylaxis, severe skin reactions, and liver injury. Voluntary reports do not establish frequency."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": "label §6.1–6.2",
+      "review": "Compared all card assertions with the listed public source sections; original summaries, not copied label paragraphs."
+    },
+    {
+      "section": "interactions",
+      "card": "Clinically relevant interactions",
+      "assertions": {
+        "table": {
+          "headers": [
+            "Medication",
+            "Label-based consideration"
+          ],
+          "rows": [
+            [
+              "Phenobarbital or rifampin",
+              "Potent enzyme induction may lower montelukast exposure; monitor clinical response. No routine dose adjustment is recommended."
+            ],
+            [
+              "Gemfibrozil",
+              "Increases montelukast exposure substantially; the label does not require a dose adjustment based on available clinical experience."
+            ],
+            [
+              "Theophylline, corticosteroids, contraceptives, digoxin, warfarin, or fexofenadine",
+              "Studied combinations did not require montelukast dose adjustment; this does not replace individual interaction review."
+            ]
+          ]
+        }
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": "label §7; §12.3 Drug Interaction Studies",
+      "review": "Compared all card assertions with the listed public source sections; original summaries, not copied label paragraphs."
+    },
+    {
+      "section": "interactions",
+      "card": "Aspirin-sensitive asthma",
+      "assertions": {
+        "paragraphs": [
+          "Lack of a pharmacokinetic dose adjustment with NSAIDs does not make an aspirin-triggering medicine safe in aspirin-sensitive asthma. Continue the clinician-directed avoidance plan."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": "label §5.4; §17",
+      "review": "Compared all card assertions with the listed public source sections; original summaries, not copied label paragraphs."
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy and lactation",
+      "assertions": {
+        "paragraphs": [
+          "Observational pregnancy studies have not established an increased risk of major birth defects, but study limitations remain. Poorly controlled asthma itself increases maternal and infant risks; review the treatment plan with the clinician.",
+          "Montelukast is present in human milk. Available infant data do not suggest a significant adverse-reaction risk; effects on milk production are unknown. Consider breastfeeding benefits, maternal need, and infant exposure."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": "label §8.1–8.2",
+      "review": "Compared all card assertions with the listed public source sections; original summaries, not copied label paragraphs."
+    },
+    {
+      "section": "populations",
+      "card": "Children and older adults",
+      "assertions": {
+        "paragraphs": [
+          "The minimum age is indication-specific: asthma 12 months, exercise prevention 6 years, seasonal rhinitis 2 years, and perennial rhinitis 6 months. Use the age-appropriate formulation. Older adults do not require a dose adjustment solely for age."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": "label §8.4–8.5; §2",
+      "review": "Compared all card assertions with the listed public source sections; original summaries, not copied label paragraphs."
+    },
+    {
+      "section": "populations",
+      "card": "Renal and hepatic impairment",
+      "assertions": {
+        "paragraphs": [
+          "Renal elimination is negligible, and no renal adjustment is recommended. No adjustment is required in mild-to-moderate hepatic impairment. Severe impairment or hepatitis lacks pharmacokinetic evaluation; obtain individualized advice rather than extrapolating."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": "label §8.6–8.7; §12.3",
+      "review": "Compared all card assertions with the listed public source sections; original summaries, not copied label paragraphs."
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism of action",
+      "assertions": {
+        "paragraphs": [
+          "Montelukast selectively antagonizes the CysLT1 receptor, inhibiting leukotriene-mediated airway effects such as smooth-muscle contraction, edema, and inflammatory activity. It has no receptor agonist activity."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": "label §12.1",
+      "review": "Compared all card assertions with the listed public source sections; original summaries, not copied label paragraphs."
+    },
+    {
+      "section": "pharmacology",
+      "card": "Pharmacokinetics",
+      "assertions": {
+        "facts": [
+          [
+            "Adult 10 mg tablet",
+            "Peak concentration about 3–4 hours; oral bioavailability about 64%"
+          ],
+          [
+            "Protein binding",
+            "More than 99%"
+          ],
+          [
+            "Metabolism",
+            "Extensive; CYP2C8 is important, with CYP3A4 and CYP2C9 involvement"
+          ],
+          [
+            "Elimination",
+            "Predominantly bile/feces; half-life about 2.7–5.5 hours in healthy young adults"
+          ]
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": "label §12.3",
+      "review": "Compared all card assertions with the listed public source sections; original summaries, not copied label paragraphs."
+    },
+    {
+      "section": "pharmacology",
+      "card": "Formulation considerations",
+      "assertions": {
+        "paragraphs": [
+          "Chewables and granules have different absorption characteristics from the adult tablet. The 4 mg granules and 4 mg chewable were bioequivalent in fasted adults, supporting the labeled pediatric choices; this is not permission to improvise an adult regimen with multiple chewables."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": "label §12.3 Absorption and Specific Populations",
+      "review": "Compared all card assertions with the listed public source sections; original summaries, not copied label paragraphs."
+    },
+    {
+      "section": "practice",
+      "card": "Monitoring priorities",
+      "assertions": {
+        "paragraphs": [
+          "Assess asthma or rhinitis response, rescue-inhaler use, adherence, and new mood, behavior, or sleep changes. Continue watching neuropsychiatric symptoms after stopping. During steroid reduction, investigate signs of systemic eosinophilic disease."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "fda"
+      ],
+      "sourceSections": "label §5.1, §5.5, §17; FDA safety communication",
+      "review": "Compared all card assertions with the listed public source sections; original summaries, not copied label paragraphs."
+    },
+    {
+      "section": "practice",
+      "card": "Patient and caregiver counseling",
+      "assertions": {
+        "paragraphs": [
+          "Explain the boxed warning before starting, including symptoms that require immediate discontinuation and clinician contact. Keep rescue medicine available and seek urgent care for severe breathing difficulty. Do not independently stop corticosteroids or add an extra exercise dose. Teach packet preparation and check phenylalanine exposure when relevant."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "fda"
+      ],
+      "sourceSections": "label §17; Medication Guide; Instructions for Use; FDA safety communication",
+      "review": "Compared all card assertions with the listed public source sections; original summaries, not copied label paragraphs."
+    },
+    {
+      "section": "practice",
+      "card": "Overdose",
+      "assertions": {
+        "paragraphs": [
+          "Seek medical or poison-center advice for excess dosing. Reported overdose symptoms include abdominal pain, sleepiness, thirst, headache, vomiting, and hyperactivity. Management is supportive; removal by peritoneal dialysis or hemodialysis is unknown."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": "label §10",
+      "review": "Compared all card assertions with the listed public source sections; original summaries, not copied label paragraphs."
+    },
+    {
+      "section": "product",
+      "card": "Representative product",
+      "assertions": {
+        "facts": [
+          [
+            "Selected product",
+            "Singulair 10 mg film-coated tablets · Organon LLC"
+          ],
+          [
+            "Appearance",
+            "Beige, rounded square tablet"
+          ],
+          [
+            "Imprint",
+            "MSD 117 on one side; SINGULAIR on the other"
+          ],
+          [
+            "Example NDC",
+            "78206-172-01 · bottle of 30"
+          ]
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": "label §16",
+      "review": "Compared all card assertions with the listed public source sections; original summaries, not copied label paragraphs."
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "assertions": {
+        "paragraphs": [
+          "The selected label includes 10 mg film-coated tablets, 4 mg and 5 mg chewable tablets, and 4 mg oral granule packets. Chewables contain phenylalanine. Generic products may have different appearance, ingredients, and packaging."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": "label §3; §5.6; §16",
+      "review": "Compared all card assertions with the listed public source sections; original summaries, not copied label paragraphs."
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "assertions": {
+        "paragraphs": [
+          "Store at 20–25°C, with permitted excursions of 15–30°C. Protect from moisture and light, and keep in the original package. Open granule packets only when ready; administer within 15 minutes and discard unused mixture."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": "label §16; §2.5",
+      "review": "Compared all card assertions with the listed public source sections; original summaries, not copied label paragraphs."
+    }
+  ],
+  "materialErrors": [],
+  "unresolvedMaterialGaps": [],
+  "sourceDiscrepancies": [],
+  "limitations": [
+    "Public sources only; no paywalled access claimed.",
+    "Source-specific NDC, appearance, excipients, and storage are not universal across manufacturers."
+  ],
+  "verification": {
+    "schemaErrors": [],
+    "sectionIds": [
+      "indications",
+      "dosage",
+      "safety",
+      "interactions",
+      "populations",
+      "pharmacology",
+      "practice",
+      "product"
+    ],
+    "heroFacts": 3,
+    "safetyCardOrder": [
+      "Warnings and precautions",
+      "Contraindications",
+      "Boxed warning · Serious neuropsychiatric events",
+      "Adverse reactions"
+    ],
+    "productCardOrder": [
+      "Representative product",
+      "Dosage forms and strengths",
+      "Storage and handling"
+    ],
+    "renderedPageQA": "Pending parent batch integration QA"
+  },
+  "sourceEvidenceRoot": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/montelukast",
+  "sourceManifest": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/montelukast/source-manifest.json"
+}

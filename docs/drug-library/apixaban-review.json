@@ -1,0 +1,1070 @@
+{
+  "drug": "apixaban",
+  "status": "source_reviewed",
+  "checked": "2026-10-01",
+  "scope": "Current U.S. BMS/Pfizer Eliquis manufacturer August2026 PI, all adult approved uses and pediatric VTE oral formulations; FDA reversal status and current LactMed supplement.",
+  "blueprint": {
+    "sections": [
+      [
+        "indications",
+        "Indications"
+      ],
+      [
+        "dosage",
+        "Dosage and administration"
+      ],
+      [
+        "safety",
+        "Safety"
+      ],
+      [
+        "interactions",
+        "Drug interactions"
+      ],
+      [
+        "populations",
+        "Use in specific populations"
+      ],
+      [
+        "pharmacology",
+        "Clinical pharmacology"
+      ],
+      [
+        "practice",
+        "Monitoring and counseling"
+      ],
+      [
+        "product",
+        "Product identification"
+      ]
+    ],
+    "essential_safety": true,
+    "hero_facts": 3,
+    "APAP_modified": false
+  },
+  "source_records": [
+    {
+      "id": "label",
+      "local_snapshot": "/tmp/nas-drug-sources/eliquis-current.pdf",
+      "sha256": "2f4b9c71610bf2f0d53d529c8156ded60293a4707c20231081d4081bc25d04c2",
+      "label_revision": "August 2026",
+      "review_method": "Full relevant clinical label sections read; PDF dose tables visually checked when applicable.",
+      "url": "https://packageinserts.bms.com/pi/pi_eliquis.pdf"
+    },
+    {
+      "id": "reversal",
+      "url": "https://www.fda.gov/vaccines-blood-biologics/safety-availability-biologics/update-safety-andexxa",
+      "version": "December 18, 2025",
+      "access": "Full public FDA safety communication read"
+    },
+    {
+      "id": "milk",
+      "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK500741/",
+      "version": "May 15, 2026",
+      "access": "Full relevant public summary, human milk observations and infant evidence limits read"
+    }
+  ],
+  "assertion_source_map": [
+    {
+      "card": "Adult approved uses",
+      "sources": [
+        {
+          "id": "label",
+          "sections": "1.1–1.5"
+        }
+      ],
+      "assertions": [
+        "Eliquis reduces stroke/systemic embolism risk in adult nonvalvular AF; prevents DVT after adult hip or knee replacement; treats adult DVT and PE; and reduces recurrent DVT/PE risk after initial treatment. These uses have separate dosing and treatment-duration requirements."
+      ],
+      "section": "indications"
+    },
+    {
+      "card": "Pediatric approved use and boundaries",
+      "sources": [
+        {
+          "id": "label",
+          "sections": "1.6; 2.2; 8.4"
+        }
+      ],
+      "assertions": [
+        "Treatment of VTE and reduction of recurrence are approved from birth after at least 5 days of initial anticoagulant therapy. Pediatric use below 2.6 kg is not recommended because it was not studied. The pediatric approval does not extend adult AF or orthopedic-prophylaxis regimens to children."
+      ],
+      "section": "indications"
+    },
+    {
+      "card": "Situations needing another treatment strategy",
+      "sources": [
+        {
+          "id": "label",
+          "sections": "5.4–5.6"
+        }
+      ],
+      "assertions": [
+        "The label does not recommend apixaban for prosthetic heart valves or triple-positive antiphospholipid syndrome. It is not an alternative to unfractionated heparin for initial PE treatment with hemodynamic instability or anticipated thrombolysis/embolectomy."
+      ],
+      "section": "indications"
+    },
+    {
+      "card": "Adult dosing",
+      "sources": [
+        {
+          "id": "label",
+          "sections": "2.1; 12.3"
+        }
+      ],
+      "assertions": [
+        "Take orally twice daily. Food does not materially affect bioavailability. Select the regimen by indication."
+      ],
+      "table_assertions": {
+        "headers": [
+          "Indication",
+          "Regimen"
+        ],
+        "rows": [
+          [
+            "Nonvalvular AF",
+            "5 mg twice daily; 2.5 mg twice daily only when ≥2 apply: age ≥80 years, weight ≤60 kg, serum creatinine ≥1.5 mg/dL"
+          ],
+          [
+            "Hip / knee replacement prophylaxis",
+            "2.5 mg twice daily, starting 12–24 hours after surgery; 35 days after hip or 12 days after knee replacement"
+          ],
+          [
+            "Acute adult DVT / PE",
+            "10 mg twice daily for the first 7 days, then 5 mg twice daily"
+          ],
+          [
+            "Adult recurrence reduction",
+            "2.5 mg twice daily after at least 6 months of DVT / PE treatment"
+          ]
+        ]
+      },
+      "section": "dosage"
+    },
+    {
+      "card": "Pediatric VTE weight-based dosing",
+      "sources": [
+        {
+          "id": "label",
+          "sections": "2.2"
+        }
+      ],
+      "assertions": [
+        "Begin the apixaban regimen after at least 5 days of initial anticoagulation. The day numbers in this table refer to apixaban treatment, not the preceding therapy. Reassess the weight tier as the child grows and individualize total duration. All entries below are twice-daily doses."
+      ],
+      "table_assertions": {
+        "headers": [
+          "Weight",
+          "Apixaban days 1–7",
+          "Day 8 onward"
+        ],
+        "rows": [
+          [
+            "2.6 to <4 kg",
+            "0.3 mg",
+            "0.15 mg"
+          ],
+          [
+            "4 to <6 kg",
+            "1 mg",
+            "0.5 mg"
+          ],
+          [
+            "6 to <9 kg",
+            "2 mg",
+            "1 mg"
+          ],
+          [
+            "9 to <12 kg",
+            "3 mg",
+            "1.5 mg"
+          ],
+          [
+            "12 to <18 kg",
+            "4 mg",
+            "2 mg"
+          ],
+          [
+            "18 to <25 kg",
+            "6 mg",
+            "3 mg"
+          ],
+          [
+            "25 to <35 kg",
+            "8 mg",
+            "4 mg"
+          ],
+          [
+            "≥35 kg",
+            "10 mg",
+            "5 mg"
+          ]
+        ]
+      },
+      "section": "dosage"
+    },
+    {
+      "card": "Tablets, mixtures and feeding tubes",
+      "sources": [
+        {
+          "id": "label",
+          "sections": "2.7"
+        }
+      ],
+      "assertions": [
+        "Adults and children ≥35 kg may use 2.5 or 5 mg tablets. They can be crushed into water, D5W or apple juice, or mixed with applesauce and promptly given. For a 12 French NG tube, suspend crushed tablets in 60 mL water or D5W and flush afterward with 20 mL. Stability of these crushed-tablet preparations is up to 4 hours; do not substitute this method for the pediatric packet/capsule instructions."
+      ],
+      "section": "dosage"
+    },
+    {
+      "card": "Pediatric suspension preparation",
+      "sources": [
+        {
+          "id": "label",
+          "sections": "2.2; 2.7; Instructions for Use"
+        }
+      ],
+      "assertions": [
+        "For 2.6 to <4 kg use the 0.15 mg Sprinkle capsules: open and mix the entire prescribed contents with water or infant formula; do not swallow the capsule. For 4 to <35 kg use 0.5 mg tablets supplied in packets; mix with water, formula, apple juice or applesauce, not swallowed whole. Liquid mixtures must be administered within 2 hours; applesauce mixtures immediately. Use the exact IFU volumes, oral syringe and rinse steps to deliver the full dose. The 0.5 mg packet-tablet liquid mixture has specified NG/G-tube options; obtain tube-size and preparation instructions rather than extrapolating to Sprinkle capsules."
+      ],
+      "section": "dosage"
+    },
+    {
+      "card": "Missed or vomited doses",
+      "sources": [
+        {
+          "id": "label",
+          "sections": "2.3; 17; Instructions for Use"
+        }
+      ],
+      "assertions": [
+        "Take a missed dose as soon as possible on the same day and resume twice-daily dosing; never double. For a child vomiting or spitting up within 30 minutes, repeat the dose; after more than 30 minutes, do not repeat and give the next scheduled dose. Repeated vomiting requires clinician advice."
+      ],
+      "section": "dosage"
+    },
+    {
+      "card": "Elective procedures",
+      "sources": [
+        {
+          "id": "label",
+          "sections": "2.4; 5.3"
+        }
+      ],
+      "assertions": [
+        "The label calls for at least 48 hours of interruption before procedures with moderate/high bleeding risk, or at least 24 hours for low-risk procedures with readily controlled bleeding. Bridging during this short interruption is generally unnecessary; restart once adequate hemostasis is established. Neuraxial procedures require a separate anesthesia plan; these general surgical intervals are not a complete neuraxial protocol."
+      ],
+      "section": "dosage"
+    },
+    {
+      "card": "Anticoagulant transitions",
+      "sources": [
+        {
+          "id": "label",
+          "sections": "2.5"
+        }
+      ],
+      "assertions": [
+        "From warfarin, start apixaban when INR is below 2.0. Apixaban affects INR during the reverse transition; one labeled approach starts both warfarin and a parenteral anticoagulant when the next apixaban dose would be due, stopping the parenteral drug when INR is acceptable. For transitions with other oral/parenteral anticoagulants, start the replacement at the next scheduled dose time. Use a supervised plan to avoid gaps or unintended overlap."
+      ],
+      "section": "dosage"
+    },
+    {
+      "card": "Warnings and precautions",
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Boxed warning; 5.1–5.3"
+        }
+      ],
+      "assertions": [
+        "Serious or fatal bleeding can occur; stop apixaban for active pathological hemorrhage and assess promptly. Other antithrombotics, NSAIDs and SSRIs/SNRIs can increase bleeding risk. Premature cessation without alternative anticoagulation increases thrombotic risk.",
+        "Neuraxial hematoma may cause permanent paralysis. The label specifies no catheter removal earlier than 24 hours after the last dose, no next dose earlier than 5 hours after removal, and a 48-hour delay after traumatic puncture. These are label precautions, not a complete anesthesia protocol; optimal timing is not established and pediatric catheter timing has no supporting data. New leg weakness/numbness or bowel/bladder dysfunction needs urgent evaluation."
+      ],
+      "section": "safety"
+    },
+    {
+      "card": "Contraindications",
+      "sources": [
+        {
+          "id": "label",
+          "sections": "4; 8.6–8.7"
+        }
+      ],
+      "assertions": [
+        "Active pathological bleeding and severe hypersensitivity to apixaban or the product are contraindications. Renal/hepatic and indication-specific restrictions require additional review even when they are not formal contraindications."
+      ],
+      "section": "safety"
+    },
+    {
+      "card": "Boxed warning · Thrombosis and spinal hematoma",
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Boxed warning"
+        }
+      ],
+      "assertions": [
+        "The boxed warning addresses increased thrombosis after premature discontinuation and spinal/epidural hematoma with neuraxial anesthesia or spinal puncture. Risk rises with indwelling catheters, other hemostasis-altering drugs, traumatic/repeated puncture and spinal deformity or surgery. Plan interruption and observe neurologic status."
+      ],
+      "section": "safety"
+    },
+    {
+      "card": "Adverse reactions",
+      "sources": [
+        {
+          "id": "label",
+          "sections": "6.1; 8.3"
+        }
+      ],
+      "assertions": [
+        "Bleeding is the principal adult adverse reaction. Pediatric trial events commonly included headache, vomiting and excessive menstrual bleeding. Investigate blood loss, anemia or abnormal uterine bleeding rather than dismissing these as routine nuisance effects."
+      ],
+      "section": "safety"
+    },
+    {
+      "card": "Combined P-gp and strong CYP3A4 inhibitors",
+      "sources": [
+        {
+          "id": "label",
+          "sections": "2.6; 7.1"
+        }
+      ],
+      "assertions": [
+        "For adults taking 5 or 10 mg twice daily, reduce the apixaban dose by 50% with combined P-gp/strong CYP3A4 inhibitors such as ketoconazole, itraconazole or ritonavir. Avoid these combinations when already taking 2.5 mg twice daily. Pediatric coadministration has not been studied; do not invent an adult-style weight-based adjustment. The label specifically states that clarithromycin does not require adjustment on pharmacokinetic grounds."
+      ],
+      "section": "interactions"
+    },
+    {
+      "card": "Inducers and hemostasis combinations",
+      "sources": [
+        {
+          "id": "label",
+          "sections": "5.2; 7.2–7.3"
+        }
+      ],
+      "assertions": [
+        "Avoid combined strong CYP3A4/P-gp inducers such as rifampin, carbamazepine, phenytoin and St. John’s wort: lower exposure can increase stroke or thrombosis risk. Antiplatelets, anticoagulants, thrombolytics, chronic NSAIDs and SSRIs/SNRIs increase bleeding risk and need an explicit benefit/risk review."
+      ],
+      "section": "interactions"
+    },
+    {
+      "card": "Adult kidney function",
+      "sources": [
+        {
+          "id": "label",
+          "sections": "8.6"
+        }
+      ],
+      "assertions": [
+        "For AF, use the two-of-three reduction criteria rather than serum creatinine alone. For adult surgical prophylaxis and VTE, the label recommends no renal dose adjustment, including ESRD on dialysis; however, clinical studies excluded dialysis and CrCl below 15 mL/min, so those recommendations rely on PK/PD evidence. AF outcome equivalence on dialysis remains unknown."
+      ],
+      "section": "populations"
+    },
+    {
+      "card": "Pediatric kidney function",
+      "sources": [
+        {
+          "id": "label",
+          "sections": "8.6 Table 12"
+        }
+      ],
+      "assertions": [
+        "Apixaban is not recommended at eGFR below 30 mL/min/1.73 m² for age ≥2 years. For younger children, apply the label’s age-specific renal adequacy criteria; these are not the adult AF rule. The label table gives thresholds for both sexes: at 1 week, eGFR <8; at 2–8 weeks, <12; and after 8 weeks to <2 years, <22 mL/min/1.73 m². Specialist assessment is needed for neonatal ages not explicitly covered in that table."
+      ],
+      "section": "populations"
+    },
+    {
+      "card": "Hepatic impairment",
+      "sources": [
+        {
+          "id": "label",
+          "sections": "8.7"
+        }
+      ],
+      "assertions": [
+        "Child-Pugh A needs no adjustment. No dosing recommendation can be provided for Child-Pugh B because of coagulation abnormalities and limited experience. Use is not recommended in Child-Pugh C; pediatric hepatic impairment has not been studied."
+      ],
+      "section": "populations"
+    },
+    {
+      "card": "Pregnancy and reproductive planning",
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Highlights; 8.1; 8.3"
+        }
+      ],
+      "assertions": [
+        "Use in pregnancy is not recommended; human data are limited and maternal/fetal bleeding is a concern. Discuss pregnancy plans and abnormal uterine bleeding. As delivery approaches, a shorter-acting anticoagulant may be considered under a coordinated obstetric/anticoagulation plan."
+      ],
+      "section": "populations"
+    },
+    {
+      "card": "Breastfeeding and older adults",
+      "sources": [
+        {
+          "id": "label",
+          "sections": "8.2; 8.5–8.6"
+        },
+        {
+          "id": "milk",
+          "sections": "Summary of Use during Lactation; Drug Levels"
+        }
+      ],
+      "assertions": [
+        "Breastfeeding is not recommended on apixaban. Although the product label retains an older absence-of-human-data statement, current LactMed documents substantial milk transfer and prefers an alternative, especially for newborn/preterm infants. Older adults still need the indication-specific dose criteria and assessment of organ function and interacting therapy."
+      ],
+      "section": "populations"
+    },
+    {
+      "card": "Mechanism and laboratory interpretation",
+      "sources": [
+        {
+          "id": "label",
+          "sections": "12.1–12.2"
+        }
+      ],
+      "assertions": [
+        "Apixaban inhibits free and clot-bound factor Xa and prothrombinase activity without requiring antithrombin. PT/INR/aPTT changes at therapeutic doses are small and variable, making these tests unsuitable for routine assessment of anticoagulant effect. Specialized assays require a clinical question and local interpretation."
+      ],
+      "section": "pharmacology"
+    },
+    {
+      "card": "Disposition",
+      "sources": [
+        {
+          "id": "label",
+          "sections": "12.3"
+        }
+      ],
+      "assertions": [
+        "Oral bioavailability is about 50%, with peaks at 3–4 hours. Protein binding is about 87% and adult half-life about 12 hours. CYP3A4 is the main metabolic pathway; renal excretion contributes about 27% of total clearance, with intestinal/biliary elimination also contributing. The pediatric label reports a peak around 2 hours after a single dose; adult PK values must not replace pediatric weight-tier dosing."
+      ],
+      "section": "pharmacology"
+    },
+    {
+      "card": "Monitoring and counseling",
+      "sources": [
+        {
+          "id": "label",
+          "sections": "2; 5; 8; 17"
+        }
+      ],
+      "assertions": [
+        "Review the indication, dose, weight when relevant, renal/hepatic status, bleeding history and full medicine list. Follow bleeding or anemia symptoms and new interacting drugs. Do not stop without a plan; report blood in urine/stool, prolonged bleeding, faintness or neurologic symptoms. Tell dentists and procedural teams about treatment. Caregivers need hands-on preparation training and weight-tier review."
+      ],
+      "section": "practice"
+    },
+    {
+      "card": "Major bleeding and current reversal context",
+      "sources": [
+        {
+          "id": "label",
+          "sections": "5.2 Reversal of Anticoagulant Effect"
+        },
+        {
+          "id": "reversal",
+          "sections": "December 18, 2025 safety communication"
+        }
+      ],
+      "assertions": [
+        "Anticoagulant effects can persist for at least 24 hours after a dose. Vitamin K and protamine do not reverse apixaban; dialysis has little effect. The current label allows consideration of PCC-based management but does not establish its clinical efficacy. FDA found Andexxa’s risks outweighed benefits and reported the end of U.S. sales on December 22, 2025; do not rely on older labels describing routine availability. Emergency specialists should use the current local protocol."
+      ],
+      "section": "practice"
+    },
+    {
+      "card": "Overdose",
+      "sources": [
+        {
+          "id": "label",
+          "sections": "10"
+        }
+      ],
+      "assertions": [
+        "Suspected overdose or accidental ingestion requires urgent poison-center/medical assessment. Activated charcoal can reduce absorption in selected circumstances; this is a supervised toxicology decision, not a home treatment. Continue bleeding surveillance and supportive management."
+      ],
+      "section": "practice"
+    },
+    {
+      "card": "Representative product",
+      "sources": [
+        {
+          "id": "label",
+          "sections": "3; 16"
+        }
+      ],
+      "assertions": [
+        "Eliquis 5 mg tablets are pink, oval and biconvex with 894 / 5 imprints. Example bottle of 60: NDC 0003-0894-21. Pediatric packets and Sprinkle capsules have different strengths and preparation requirements; appearance alone does not establish the correct dose."
+      ],
+      "section": "product"
+    },
+    {
+      "card": "Dosage forms and strengths",
+      "sources": [
+        {
+          "id": "label",
+          "sections": "3; 16"
+        }
+      ],
+      "assertions": [
+        "Adult/≥35 kg tablets contain 2.5 or 5 mg. Pediatric 0.5 mg tablets for suspension are supplied as packets containing 1, 3 or 4 tablets, corresponding to 0.5, 1.5 or 2 mg per packet. Sprinkle capsules contain 0.15 mg powder and are opened for suspension. Verify both tablet count and packet total."
+      ],
+      "section": "product"
+    },
+    {
+      "card": "Storage and handling",
+      "sources": [
+        {
+          "id": "label",
+          "sections": "2.7; 16; Instructions for Use"
+        }
+      ],
+      "assertions": [
+        "Store Eliquis and Sprinkle at 20–25°C with excursions to 15–30°C. Follow formulation-specific mixture timing: pediatric liquids within 2 hours, applesauce mixtures immediately, and crushed 2.5/5 mg preparations up to 4 hours. Keep medicines away from children and use prescribed oral dosing equipment."
+      ],
+      "section": "product"
+    }
+  ],
+  "unresolved_material_errors": [],
+  "limitations": [
+    "Dialysis/CrCl<15 adult outcome evidence remains limited; label recommendations rely on PK/PD.",
+    "Pediatric hepatic impairment and strong-inhibitor coadministration lack data; adult dose reductions are not extrapolated.",
+    "The pediatric renal table begins at one week; neonatal ages not explicitly listed require specialist review.",
+    "A general surgical hold interval is not a complete neuraxial protocol; local anesthesia guidance and patient-specific timing are required.",
+    "ASRA fifth-edition full text/PDF was inaccessible via public tool (403/internal error); no unverified numerical ASRA recommendation is presented.",
+    "No PCC reversal dose or pediatric reversal algorithm is invented.",
+    "DailyMed repackager setid7be1f4c1-bb2f-4ded-ae9a-515d2a22f93e, SPL2 effective20260911, contains stale andexanet-availability wording; current manufacturer PI/FDA supersede it.",
+    "Label lactation absence-of-data statement is superseded by current LactMed milk measurements; breastfeeding restriction is retained."
+  ],
+  "validation": {
+    "schema": "Passed validateMonograph: eight sections, four safety cards and three product cards.",
+    "rendered_page": "parent batch QA required",
+    "tests_build_lint": "parent batch checks required",
+    "audit_coverage": "All 29 cards mapped to specific source sections; hero safety and facts also mapped.",
+    "scoped_diff_check": "Passed git diff --check; no registry/APAP/route/dependency edits or commits by delegated author."
+  },
+  "sources": [
+    {
+      "id": "label",
+      "title": "Eliquis · Current prescribing information",
+      "publisher": "Bristol Myers Squibb / Pfizer",
+      "note": "Manufacturer PI revised August 2026; adult tablets and pediatric oral-suspension formulations.",
+      "url": "https://packageinserts.bms.com/pi/pi_eliquis.pdf",
+      "local_snapshot": "/tmp/nas-drug-sources/eliquis-current.pdf",
+      "sha256": "2f4b9c71610bf2f0d53d529c8156ded60293a4707c20231081d4081bc25d04c2",
+      "label_revision": "August 2026",
+      "review_method": "Full relevant clinical label sections read; PDF dose tables visually checked when applicable."
+    },
+    {
+      "id": "reversal",
+      "title": "Andexxa · U.S. safety and sale update",
+      "publisher": "U.S. Food and Drug Administration",
+      "note": "December 18, 2025: risks outweighed benefits; U.S. commercial sales ended December 22, 2025.",
+      "url": "https://www.fda.gov/vaccines-blood-biologics/safety-availability-biologics/update-safety-andexxa",
+      "version": "December 18, 2025",
+      "access": "Full public FDA safety communication read"
+    },
+    {
+      "id": "milk",
+      "title": "Apixaban · Lactation",
+      "publisher": "LactMed / National Library of Medicine",
+      "note": "Revised May 15, 2026; human milk measurements and infant-exposure concerns.",
+      "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK500741/",
+      "version": "May 15, 2026",
+      "access": "Full relevant public summary, human milk observations and infant evidence limits read"
+    }
+  ],
+  "assertion_map": [
+    {
+      "card": "Adult approved uses",
+      "sources": [
+        {
+          "id": "label",
+          "sections": "1.1–1.5"
+        }
+      ],
+      "assertions": [
+        "Eliquis reduces stroke/systemic embolism risk in adult nonvalvular AF; prevents DVT after adult hip or knee replacement; treats adult DVT and PE; and reduces recurrent DVT/PE risk after initial treatment. These uses have separate dosing and treatment-duration requirements."
+      ],
+      "section": "indications"
+    },
+    {
+      "card": "Pediatric approved use and boundaries",
+      "sources": [
+        {
+          "id": "label",
+          "sections": "1.6; 2.2; 8.4"
+        }
+      ],
+      "assertions": [
+        "Treatment of VTE and reduction of recurrence are approved from birth after at least 5 days of initial anticoagulant therapy. Pediatric use below 2.6 kg is not recommended because it was not studied. The pediatric approval does not extend adult AF or orthopedic-prophylaxis regimens to children."
+      ],
+      "section": "indications"
+    },
+    {
+      "card": "Situations needing another treatment strategy",
+      "sources": [
+        {
+          "id": "label",
+          "sections": "5.4–5.6"
+        }
+      ],
+      "assertions": [
+        "The label does not recommend apixaban for prosthetic heart valves or triple-positive antiphospholipid syndrome. It is not an alternative to unfractionated heparin for initial PE treatment with hemodynamic instability or anticipated thrombolysis/embolectomy."
+      ],
+      "section": "indications"
+    },
+    {
+      "card": "Adult dosing",
+      "sources": [
+        {
+          "id": "label",
+          "sections": "2.1; 12.3"
+        }
+      ],
+      "assertions": [
+        "Take orally twice daily. Food does not materially affect bioavailability. Select the regimen by indication."
+      ],
+      "table_assertions": {
+        "headers": [
+          "Indication",
+          "Regimen"
+        ],
+        "rows": [
+          [
+            "Nonvalvular AF",
+            "5 mg twice daily; 2.5 mg twice daily only when ≥2 apply: age ≥80 years, weight ≤60 kg, serum creatinine ≥1.5 mg/dL"
+          ],
+          [
+            "Hip / knee replacement prophylaxis",
+            "2.5 mg twice daily, starting 12–24 hours after surgery; 35 days after hip or 12 days after knee replacement"
+          ],
+          [
+            "Acute adult DVT / PE",
+            "10 mg twice daily for the first 7 days, then 5 mg twice daily"
+          ],
+          [
+            "Adult recurrence reduction",
+            "2.5 mg twice daily after at least 6 months of DVT / PE treatment"
+          ]
+        ]
+      },
+      "section": "dosage"
+    },
+    {
+      "card": "Pediatric VTE weight-based dosing",
+      "sources": [
+        {
+          "id": "label",
+          "sections": "2.2"
+        }
+      ],
+      "assertions": [
+        "Begin the apixaban regimen after at least 5 days of initial anticoagulation. The day numbers in this table refer to apixaban treatment, not the preceding therapy. Reassess the weight tier as the child grows and individualize total duration. All entries below are twice-daily doses."
+      ],
+      "table_assertions": {
+        "headers": [
+          "Weight",
+          "Apixaban days 1–7",
+          "Day 8 onward"
+        ],
+        "rows": [
+          [
+            "2.6 to <4 kg",
+            "0.3 mg",
+            "0.15 mg"
+          ],
+          [
+            "4 to <6 kg",
+            "1 mg",
+            "0.5 mg"
+          ],
+          [
+            "6 to <9 kg",
+            "2 mg",
+            "1 mg"
+          ],
+          [
+            "9 to <12 kg",
+            "3 mg",
+            "1.5 mg"
+          ],
+          [
+            "12 to <18 kg",
+            "4 mg",
+            "2 mg"
+          ],
+          [
+            "18 to <25 kg",
+            "6 mg",
+            "3 mg"
+          ],
+          [
+            "25 to <35 kg",
+            "8 mg",
+            "4 mg"
+          ],
+          [
+            "≥35 kg",
+            "10 mg",
+            "5 mg"
+          ]
+        ]
+      },
+      "section": "dosage"
+    },
+    {
+      "card": "Tablets, mixtures and feeding tubes",
+      "sources": [
+        {
+          "id": "label",
+          "sections": "2.7"
+        }
+      ],
+      "assertions": [
+        "Adults and children ≥35 kg may use 2.5 or 5 mg tablets. They can be crushed into water, D5W or apple juice, or mixed with applesauce and promptly given. For a 12 French NG tube, suspend crushed tablets in 60 mL water or D5W and flush afterward with 20 mL. Stability of these crushed-tablet preparations is up to 4 hours; do not substitute this method for the pediatric packet/capsule instructions."
+      ],
+      "section": "dosage"
+    },
+    {
+      "card": "Pediatric suspension preparation",
+      "sources": [
+        {
+          "id": "label",
+          "sections": "2.2; 2.7; Instructions for Use"
+        }
+      ],
+      "assertions": [
+        "For 2.6 to <4 kg use the 0.15 mg Sprinkle capsules: open and mix the entire prescribed contents with water or infant formula; do not swallow the capsule. For 4 to <35 kg use 0.5 mg tablets supplied in packets; mix with water, formula, apple juice or applesauce, not swallowed whole. Liquid mixtures must be administered within 2 hours; applesauce mixtures immediately. Use the exact IFU volumes, oral syringe and rinse steps to deliver the full dose. The 0.5 mg packet-tablet liquid mixture has specified NG/G-tube options; obtain tube-size and preparation instructions rather than extrapolating to Sprinkle capsules."
+      ],
+      "section": "dosage"
+    },
+    {
+      "card": "Missed or vomited doses",
+      "sources": [
+        {
+          "id": "label",
+          "sections": "2.3; 17; Instructions for Use"
+        }
+      ],
+      "assertions": [
+        "Take a missed dose as soon as possible on the same day and resume twice-daily dosing; never double. For a child vomiting or spitting up within 30 minutes, repeat the dose; after more than 30 minutes, do not repeat and give the next scheduled dose. Repeated vomiting requires clinician advice."
+      ],
+      "section": "dosage"
+    },
+    {
+      "card": "Elective procedures",
+      "sources": [
+        {
+          "id": "label",
+          "sections": "2.4; 5.3"
+        }
+      ],
+      "assertions": [
+        "The label calls for at least 48 hours of interruption before procedures with moderate/high bleeding risk, or at least 24 hours for low-risk procedures with readily controlled bleeding. Bridging during this short interruption is generally unnecessary; restart once adequate hemostasis is established. Neuraxial procedures require a separate anesthesia plan; these general surgical intervals are not a complete neuraxial protocol."
+      ],
+      "section": "dosage"
+    },
+    {
+      "card": "Anticoagulant transitions",
+      "sources": [
+        {
+          "id": "label",
+          "sections": "2.5"
+        }
+      ],
+      "assertions": [
+        "From warfarin, start apixaban when INR is below 2.0. Apixaban affects INR during the reverse transition; one labeled approach starts both warfarin and a parenteral anticoagulant when the next apixaban dose would be due, stopping the parenteral drug when INR is acceptable. For transitions with other oral/parenteral anticoagulants, start the replacement at the next scheduled dose time. Use a supervised plan to avoid gaps or unintended overlap."
+      ],
+      "section": "dosage"
+    },
+    {
+      "card": "Warnings and precautions",
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Boxed warning; 5.1–5.3"
+        }
+      ],
+      "assertions": [
+        "Serious or fatal bleeding can occur; stop apixaban for active pathological hemorrhage and assess promptly. Other antithrombotics, NSAIDs and SSRIs/SNRIs can increase bleeding risk. Premature cessation without alternative anticoagulation increases thrombotic risk.",
+        "Neuraxial hematoma may cause permanent paralysis. The label specifies no catheter removal earlier than 24 hours after the last dose, no next dose earlier than 5 hours after removal, and a 48-hour delay after traumatic puncture. These are label precautions, not a complete anesthesia protocol; optimal timing is not established and pediatric catheter timing has no supporting data. New leg weakness/numbness or bowel/bladder dysfunction needs urgent evaluation."
+      ],
+      "section": "safety"
+    },
+    {
+      "card": "Contraindications",
+      "sources": [
+        {
+          "id": "label",
+          "sections": "4; 8.6–8.7"
+        }
+      ],
+      "assertions": [
+        "Active pathological bleeding and severe hypersensitivity to apixaban or the product are contraindications. Renal/hepatic and indication-specific restrictions require additional review even when they are not formal contraindications."
+      ],
+      "section": "safety"
+    },
+    {
+      "card": "Boxed warning · Thrombosis and spinal hematoma",
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Boxed warning"
+        }
+      ],
+      "assertions": [
+        "The boxed warning addresses increased thrombosis after premature discontinuation and spinal/epidural hematoma with neuraxial anesthesia or spinal puncture. Risk rises with indwelling catheters, other hemostasis-altering drugs, traumatic/repeated puncture and spinal deformity or surgery. Plan interruption and observe neurologic status."
+      ],
+      "section": "safety"
+    },
+    {
+      "card": "Adverse reactions",
+      "sources": [
+        {
+          "id": "label",
+          "sections": "6.1; 8.3"
+        }
+      ],
+      "assertions": [
+        "Bleeding is the principal adult adverse reaction. Pediatric trial events commonly included headache, vomiting and excessive menstrual bleeding. Investigate blood loss, anemia or abnormal uterine bleeding rather than dismissing these as routine nuisance effects."
+      ],
+      "section": "safety"
+    },
+    {
+      "card": "Combined P-gp and strong CYP3A4 inhibitors",
+      "sources": [
+        {
+          "id": "label",
+          "sections": "2.6; 7.1"
+        }
+      ],
+      "assertions": [
+        "For adults taking 5 or 10 mg twice daily, reduce the apixaban dose by 50% with combined P-gp/strong CYP3A4 inhibitors such as ketoconazole, itraconazole or ritonavir. Avoid these combinations when already taking 2.5 mg twice daily. Pediatric coadministration has not been studied; do not invent an adult-style weight-based adjustment. The label specifically states that clarithromycin does not require adjustment on pharmacokinetic grounds."
+      ],
+      "section": "interactions"
+    },
+    {
+      "card": "Inducers and hemostasis combinations",
+      "sources": [
+        {
+          "id": "label",
+          "sections": "5.2; 7.2–7.3"
+        }
+      ],
+      "assertions": [
+        "Avoid combined strong CYP3A4/P-gp inducers such as rifampin, carbamazepine, phenytoin and St. John’s wort: lower exposure can increase stroke or thrombosis risk. Antiplatelets, anticoagulants, thrombolytics, chronic NSAIDs and SSRIs/SNRIs increase bleeding risk and need an explicit benefit/risk review."
+      ],
+      "section": "interactions"
+    },
+    {
+      "card": "Adult kidney function",
+      "sources": [
+        {
+          "id": "label",
+          "sections": "8.6"
+        }
+      ],
+      "assertions": [
+        "For AF, use the two-of-three reduction criteria rather than serum creatinine alone. For adult surgical prophylaxis and VTE, the label recommends no renal dose adjustment, including ESRD on dialysis; however, clinical studies excluded dialysis and CrCl below 15 mL/min, so those recommendations rely on PK/PD evidence. AF outcome equivalence on dialysis remains unknown."
+      ],
+      "section": "populations"
+    },
+    {
+      "card": "Pediatric kidney function",
+      "sources": [
+        {
+          "id": "label",
+          "sections": "8.6 Table 12"
+        }
+      ],
+      "assertions": [
+        "Apixaban is not recommended at eGFR below 30 mL/min/1.73 m² for age ≥2 years. For younger children, apply the label’s age-specific renal adequacy criteria; these are not the adult AF rule. The label table gives thresholds for both sexes: at 1 week, eGFR <8; at 2–8 weeks, <12; and after 8 weeks to <2 years, <22 mL/min/1.73 m². Specialist assessment is needed for neonatal ages not explicitly covered in that table."
+      ],
+      "section": "populations"
+    },
+    {
+      "card": "Hepatic impairment",
+      "sources": [
+        {
+          "id": "label",
+          "sections": "8.7"
+        }
+      ],
+      "assertions": [
+        "Child-Pugh A needs no adjustment. No dosing recommendation can be provided for Child-Pugh B because of coagulation abnormalities and limited experience. Use is not recommended in Child-Pugh C; pediatric hepatic impairment has not been studied."
+      ],
+      "section": "populations"
+    },
+    {
+      "card": "Pregnancy and reproductive planning",
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Highlights; 8.1; 8.3"
+        }
+      ],
+      "assertions": [
+        "Use in pregnancy is not recommended; human data are limited and maternal/fetal bleeding is a concern. Discuss pregnancy plans and abnormal uterine bleeding. As delivery approaches, a shorter-acting anticoagulant may be considered under a coordinated obstetric/anticoagulation plan."
+      ],
+      "section": "populations"
+    },
+    {
+      "card": "Breastfeeding and older adults",
+      "sources": [
+        {
+          "id": "label",
+          "sections": "8.2; 8.5–8.6"
+        },
+        {
+          "id": "milk",
+          "sections": "Summary of Use during Lactation; Drug Levels"
+        }
+      ],
+      "assertions": [
+        "Breastfeeding is not recommended on apixaban. Although the product label retains an older absence-of-human-data statement, current LactMed documents substantial milk transfer and prefers an alternative, especially for newborn/preterm infants. Older adults still need the indication-specific dose criteria and assessment of organ function and interacting therapy."
+      ],
+      "section": "populations"
+    },
+    {
+      "card": "Mechanism and laboratory interpretation",
+      "sources": [
+        {
+          "id": "label",
+          "sections": "12.1–12.2"
+        }
+      ],
+      "assertions": [
+        "Apixaban inhibits free and clot-bound factor Xa and prothrombinase activity without requiring antithrombin. PT/INR/aPTT changes at therapeutic doses are small and variable, making these tests unsuitable for routine assessment of anticoagulant effect. Specialized assays require a clinical question and local interpretation."
+      ],
+      "section": "pharmacology"
+    },
+    {
+      "card": "Disposition",
+      "sources": [
+        {
+          "id": "label",
+          "sections": "12.3"
+        }
+      ],
+      "assertions": [
+        "Oral bioavailability is about 50%, with peaks at 3–4 hours. Protein binding is about 87% and adult half-life about 12 hours. CYP3A4 is the main metabolic pathway; renal excretion contributes about 27% of total clearance, with intestinal/biliary elimination also contributing. The pediatric label reports a peak around 2 hours after a single dose; adult PK values must not replace pediatric weight-tier dosing."
+      ],
+      "section": "pharmacology"
+    },
+    {
+      "card": "Monitoring and counseling",
+      "sources": [
+        {
+          "id": "label",
+          "sections": "2; 5; 8; 17"
+        }
+      ],
+      "assertions": [
+        "Review the indication, dose, weight when relevant, renal/hepatic status, bleeding history and full medicine list. Follow bleeding or anemia symptoms and new interacting drugs. Do not stop without a plan; report blood in urine/stool, prolonged bleeding, faintness or neurologic symptoms. Tell dentists and procedural teams about treatment. Caregivers need hands-on preparation training and weight-tier review."
+      ],
+      "section": "practice"
+    },
+    {
+      "card": "Major bleeding and current reversal context",
+      "sources": [
+        {
+          "id": "label",
+          "sections": "5.2 Reversal of Anticoagulant Effect"
+        },
+        {
+          "id": "reversal",
+          "sections": "December 18, 2025 safety communication"
+        }
+      ],
+      "assertions": [
+        "Anticoagulant effects can persist for at least 24 hours after a dose. Vitamin K and protamine do not reverse apixaban; dialysis has little effect. The current label allows consideration of PCC-based management but does not establish its clinical efficacy. FDA found Andexxa’s risks outweighed benefits and reported the end of U.S. sales on December 22, 2025; do not rely on older labels describing routine availability. Emergency specialists should use the current local protocol."
+      ],
+      "section": "practice"
+    },
+    {
+      "card": "Overdose",
+      "sources": [
+        {
+          "id": "label",
+          "sections": "10"
+        }
+      ],
+      "assertions": [
+        "Suspected overdose or accidental ingestion requires urgent poison-center/medical assessment. Activated charcoal can reduce absorption in selected circumstances; this is a supervised toxicology decision, not a home treatment. Continue bleeding surveillance and supportive management."
+      ],
+      "section": "practice"
+    },
+    {
+      "card": "Representative product",
+      "sources": [
+        {
+          "id": "label",
+          "sections": "3; 16"
+        }
+      ],
+      "assertions": [
+        "Eliquis 5 mg tablets are pink, oval and biconvex with 894 / 5 imprints. Example bottle of 60: NDC 0003-0894-21. Pediatric packets and Sprinkle capsules have different strengths and preparation requirements; appearance alone does not establish the correct dose."
+      ],
+      "section": "product"
+    },
+    {
+      "card": "Dosage forms and strengths",
+      "sources": [
+        {
+          "id": "label",
+          "sections": "3; 16"
+        }
+      ],
+      "assertions": [
+        "Adult/≥35 kg tablets contain 2.5 or 5 mg. Pediatric 0.5 mg tablets for suspension are supplied as packets containing 1, 3 or 4 tablets, corresponding to 0.5, 1.5 or 2 mg per packet. Sprinkle capsules contain 0.15 mg powder and are opened for suspension. Verify both tablet count and packet total."
+      ],
+      "section": "product"
+    },
+    {
+      "card": "Storage and handling",
+      "sources": [
+        {
+          "id": "label",
+          "sections": "2.7; 16; Instructions for Use"
+        }
+      ],
+      "assertions": [
+        "Store Eliquis and Sprinkle at 20–25°C with excursions to 15–30°C. Follow formulation-specific mixture timing: pediatric liquids within 2 hours, applesauce mixtures immediately, and crushed 2.5/5 mg preparations up to 4 hours. Keep medicines away from children and use prescribed oral dosing equipment."
+      ],
+      "section": "product"
+    }
+  ],
+  "hero_assertion_source_map": {
+    "essential_safety": {
+      "assertions": {
+        "title": "Prevent gaps in anticoagulation and recognize bleeding.",
+        "text": "Premature discontinuation increases thrombotic risk; spinal or epidural procedures can cause hematoma and paralysis. Use a planned interruption or transition, and urgently assess significant bleeding or new neurologic symptoms after a spinal procedure.",
+        "section": "safety",
+        "link": "Warnings and precautions"
+      },
+      "sources": [
+        "label: Boxed warning; 5.1–5.3"
+      ]
+    },
+    "facts": {
+      "assertions": [
+        [
+          "Therapeutic class",
+          "Direct factor Xa inhibitor"
+        ],
+        [
+          "Common brand",
+          "Eliquis · Pediatric Sprinkle formulation"
+        ],
+        [
+          "Reference focus",
+          "Current U.S. oral adult and pediatric label"
+        ]
+      ],
+      "sources": [
+        "label: 1; 3; 12.1"
+      ]
+    }
+  }
+}

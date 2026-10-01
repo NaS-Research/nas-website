@@ -1,0 +1,896 @@
+{
+  "drug": "insulin-glargine",
+  "checked": "2026-10-01",
+  "status": "source_reviewed",
+  "review_scope": "Major U.S. standalone glargine U-100 products (Lantus, Basaglar, Semglee, Rezvoglar) and Toujeo U-300, including full product-specific dose, pediatric wording and storage review.",
+  "sources": [
+    {
+      "id": "lantus",
+      "title": "Lantus · U-100 vial and SoloStar",
+      "publisher": "DailyMed / National Library of Medicine",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d5e07a0c-7e14-4756-9152-9fea485d654a",
+      "note": "Full public manufacturer label and patient instructions; SPL version 35, effective 20250602. Product-specific directions reviewed October 1, 2026.",
+      "checked": "2026-10-01",
+      "access": "public",
+      "spl_version": "35",
+      "effective_date": "20250602",
+      "xml_sha256": "535d6c9aef778526d5e09e37fa49e921b165241559c33d77a6a169c7ab3b8830",
+      "retrieved_xml": "/tmp/nas-drug-sources/lantus.xml"
+    },
+    {
+      "id": "toujeo",
+      "title": "Toujeo · U-300 SoloStar and Max SoloStar",
+      "publisher": "DailyMed / National Library of Medicine",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c9561d96-124d-48ca-982f-0aa1575bff36",
+      "note": "Full public manufacturer label and patient instructions; SPL version 25, effective 20250530. Product-specific directions reviewed October 1, 2026.",
+      "checked": "2026-10-01",
+      "access": "public",
+      "spl_version": "25",
+      "effective_date": "20250530",
+      "xml_sha256": "7a637ac3fca02fb8a863c21015f210d13bbcfb4df08d55c7b5f545b13898a9d7",
+      "retrieved_xml": "/tmp/nas-drug-sources/toujeo.xml"
+    },
+    {
+      "id": "basaglar",
+      "title": "Basaglar · U-100 KwikPen and Tempo Pen",
+      "publisher": "DailyMed / National Library of Medicine",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0ad21db3-2b1c-4ed9-a687-bdd6a74d0aae",
+      "note": "Full public manufacturer label and patient instructions; SPL version 35, effective 20260616. Product-specific directions reviewed October 1, 2026.",
+      "checked": "2026-10-01",
+      "access": "public",
+      "spl_version": "35",
+      "effective_date": "20260616",
+      "xml_sha256": "d77efe35e5df0029524d29fda9eff1eeb7e947391bf12c27e25aaa00260f5bd3",
+      "retrieved_xml": "/tmp/nas-drug-sources/basaglar.xml"
+    },
+    {
+      "id": "semglee",
+      "title": "Semglee · insulin glargine-yfgn U-100",
+      "publisher": "DailyMed / National Library of Medicine",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8cf5544f-87d6-468b-f6ae-898b1fdb5d80",
+      "note": "Full public manufacturer label and patient instructions; SPL version 14, effective 20250303. Product-specific directions reviewed October 1, 2026.",
+      "checked": "2026-10-01",
+      "access": "public",
+      "spl_version": "14",
+      "effective_date": "20250303",
+      "xml_sha256": "660c2110a0aa6a05cc2e8c4e4fbbb9ca38a32207e1db6d619cc19e2eaff637ae",
+      "retrieved_xml": "/tmp/nas-drug-sources/semglee.xml"
+    },
+    {
+      "id": "rezvoglar",
+      "title": "Rezvoglar · insulin glargine-aglr U-100",
+      "publisher": "DailyMed / National Library of Medicine",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f6af8706-2058-4fe1-99c8-43684c20bfa2",
+      "note": "Full public manufacturer label and patient instructions; SPL version 7, effective 20240809. Product-specific directions reviewed October 1, 2026.",
+      "checked": "2026-10-01",
+      "access": "public",
+      "spl_version": "7",
+      "effective_date": "20240809",
+      "xml_sha256": "3f029557cb3c07521de639f2ac7c53f98638f6cf7b11918b6b1f70bc08cccf3d",
+      "retrieved_xml": "/tmp/nas-drug-sources/rezvoglar.xml"
+    }
+  ],
+  "assertion_source_map": [
+    {
+      "section": "indications",
+      "card": "Labeled subcutaneous indications",
+      "assertions": {
+        "paragraphs": [
+          "Lantus, Semglee and Rezvoglar labels indicate adult and pediatric diabetes mellitus; their pediatric evidence derives from type 1 diabetes ages 6–15 and adult studies. Toujeo explicitly indicates diabetes in adults and children ≥6 years. Basaglar specifically indicates adult/pediatric type 1 diabetes and adult type 2 diabetes; pediatric type 2 use and type 1 use below 6 are not established. Do not assign one universal minimum age to every product."
+        ]
+      },
+      "source_sections": {
+        "lantus": [
+          "1",
+          "2",
+          "3",
+          "8.4"
+        ],
+        "toujeo": [
+          "1",
+          "2",
+          "3",
+          "8.4"
+        ],
+        "basaglar": [
+          "1",
+          "2",
+          "3",
+          "8.4"
+        ],
+        "semglee": [
+          "1",
+          "2",
+          "3",
+          "8.4"
+        ],
+        "rezvoglar": [
+          "1",
+          "2",
+          "3",
+          "8.4"
+        ]
+      }
+    },
+    {
+      "section": "indications",
+      "card": "Clinical role and limitations",
+      "assertions": {
+        "paragraphs": [
+          "All selected products are basal insulin and are not recommended for treating diabetic ketoacidosis. In type 1 diabetes, combine with short-/rapid-acting premeal insulin. This profile excludes fixed insulin glargine/lixisenatide combinations and individualized emergency insulin protocols."
+        ]
+      },
+      "source_sections": {
+        "lantus": [
+          "1",
+          "2.2",
+          "2.3"
+        ],
+        "toujeo": [
+          "1",
+          "2.2",
+          "2.3"
+        ],
+        "basaglar": [
+          "1",
+          "2.2",
+          "2.3"
+        ],
+        "semglee": [
+          "1",
+          "2.2",
+          "2.3"
+        ],
+        "rezvoglar": [
+          "1",
+          "2.2",
+          "2.3"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Initial basal dosing · Product-specific labels",
+      "assertions": {
+        "paragraphs": [
+          "These starting regimens require individual assessment; they are not a total insulin prescription."
+        ],
+        "table": {
+          "headers": [
+            "Product / situation",
+            "Starting regimen"
+          ],
+          "rows": [
+            [
+              "Lantus / Basaglar / Semglee / Rezvoglar · type 1",
+              "Approximately one-third of total daily insulin requirements as basal; premeal insulin supplies the remainder."
+            ],
+            [
+              "U-100 products · insulin-naive type 2",
+              "0.2 units/kg or up to 10 units once daily, followed by supervised titration."
+            ],
+            [
+              "Toujeo · insulin-naive type 1",
+              "Basal approximately one-third to one-half of total daily insulin. Label rule-of-thumb initial TOTAL insulin: 0.2–0.4 units/kg/day; remainder as mealtime insulin."
+            ],
+            [
+              "Toujeo · insulin-naive type 2",
+              "0.2 units/kg once daily."
+            ],
+            [
+              "Toujeo titration",
+              "Adjust no more often than every 3–4 days. Full glucose-lowering effect may take 5 days; monitor daily at initiation."
+            ]
+          ]
+        }
+      },
+      "source_sections": {
+        "lantus": [
+          "2.2",
+          "2.3"
+        ],
+        "toujeo": [
+          "2.2",
+          "2.3"
+        ],
+        "basaglar": [
+          "2.2",
+          "2.3"
+        ],
+        "semglee": [
+          "2.2",
+          "2.3"
+        ],
+        "rezvoglar": [
+          "2.2",
+          "2.3"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Switching basal insulin",
+      "assertions": {
+        "paragraphs": [
+          "Increase glucose checks during changes and early follow-up; other diabetes medicines may also need adjustment."
+        ],
+        "table": {
+          "headers": [
+            "Switch",
+            "Selected label instruction"
+          ],
+          "rows": [
+            [
+              "Toujeo U-300 → Lantus / Basaglar / Semglee / Rezvoglar U-100",
+              "Start at 80% of the discontinued U-300 daily unit dose."
+            ],
+            [
+              "Once-daily long/intermediate basal → Toujeo",
+              "Start at the same daily unit dose. A higher eventual Toujeo dose than Lantus may be needed."
+            ],
+            [
+              "Twice-daily NPH / detemir → Toujeo",
+              "Start at 80% of total daily twice-daily NPH or detemir units."
+            ],
+            [
+              "Twice-daily NPH → selected U-100 glargine",
+              "Start at 80% of total daily NPH units."
+            ],
+            [
+              "Once-daily NPH → Lantus / Semglee / Rezvoglar",
+              "Same starting units as discontinued once-daily NPH. Basaglar requires individualized intermediate-insulin conversion."
+            ],
+            [
+              "Another U-100 glargine → Basaglar",
+              "Basaglar label specifies the same unit dose, with supervised monitoring."
+            ]
+          ]
+        }
+      },
+      "source_sections": {
+        "lantus": [
+          "2.4",
+          "5.2"
+        ],
+        "toujeo": [
+          "2.4",
+          "5.2"
+        ],
+        "basaglar": [
+          "2.4",
+          "5.2"
+        ],
+        "semglee": [
+          "2.4",
+          "5.2"
+        ],
+        "rezvoglar": [
+          "2.4",
+          "5.2"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Administration and pen dose limits",
+      "assertions": {
+        "paragraphs": [
+          "Inject once daily at the same time under the skin of abdomen, thigh or upper arm. Rotate sites; avoid pits, thickened skin or amyloid lumps. Use only clear, colorless solution. Do not mix, dilute, use in a pump, or administer intravenously. A pen displays actual units; no concentration calculation is needed. Never withdraw from a pen with a syringe."
+        ],
+        "facts": [
+          [
+            "Toujeo SoloStar",
+            "450 units/1.5 mL; 1-unit increments, up to 80 units/injection."
+          ],
+          [
+            "Toujeo Max SoloStar",
+            "900 units/3 mL; 2-unit increments, up to 160 units/injection; recommended if needing ≥20 units/day. Odd-unit conversion between pens requires clinician-directed ±1 unit."
+          ],
+          [
+            "U-100 pens",
+            "1-unit increments. Basaglar, Rezvoglar, Lantus SoloStar and Semglee pen instructions limit a single injection to 80 units."
+          ]
+        ]
+      },
+      "source_sections": {
+        "lantus": [
+          "2.1",
+          "2.2",
+          "Patient Information / Instructions for Use"
+        ],
+        "toujeo": [
+          "2.1",
+          "2.2",
+          "Patient Information / Instructions for Use"
+        ],
+        "basaglar": [
+          "2.1",
+          "2.2",
+          "Patient Information / Instructions for Use"
+        ],
+        "semglee": [
+          "2.1",
+          "2.2",
+          "Patient Information / Instructions for Use"
+        ],
+        "rezvoglar": [
+          "2.1",
+          "2.2",
+          "Patient Information / Instructions for Use"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Renal, hepatic and changing insulin needs",
+      "assertions": {
+        "paragraphs": [
+          "No fixed renal/hepatic adjustment is provided. Monitor more often and individualize units with changes in renal/hepatic function, meals, activity, acute illness or other medicines. Do not apply an arbitrary dose ceiling: device limits describe one injection rather than a maximum daily prescription."
+        ]
+      },
+      "source_sections": {
+        "lantus": [
+          "2.2",
+          "8.6",
+          "8.7"
+        ],
+        "toujeo": [
+          "2.2",
+          "8.6",
+          "8.7"
+        ],
+        "basaglar": [
+          "2.2",
+          "8.6",
+          "8.7"
+        ],
+        "semglee": [
+          "2.2",
+          "8.6",
+          "8.7"
+        ],
+        "rezvoglar": [
+          "2.2",
+          "8.6",
+          "8.7"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "assertions": {
+        "paragraphs": [],
+        "items": [
+          "Severe hypoglycemia can cause seizure, coma or death. Renal/hepatic impairment, missed meals, activity changes and interacting medicines increase risk; reduced warning symptoms require more frequent checks.",
+          "Never share pens, syringes or needles, even with a new needle. Check product and concentration every injection; never use a syringe to extract pen contents.",
+          "Changes in brand, concentration, injection site or technique require supervision and extra glucose monitoring. Moving from a repeatedly used abnormal site to healthy skin can cause hypoglycemia.",
+          "Insulin moves potassium into cells; monitor potassium in patients at risk. Severe low potassium can cause arrhythmia or paralysis.",
+          "Anaphylaxis requires stopping the product and emergency treatment. TZDs with insulin can cause fluid retention or worsen heart failure; review swelling, dyspnea or sudden weight gain."
+        ]
+      },
+      "source_sections": {
+        "lantus": [
+          "5.1–5.7"
+        ],
+        "toujeo": [
+          "5.1–5.7"
+        ],
+        "basaglar": [
+          "5.1–5.7"
+        ],
+        "semglee": [
+          "5.1–5.7"
+        ],
+        "rezvoglar": [
+          "5.1–5.7"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "assertions": {
+        "paragraphs": [
+          "Do not administer during an episode of hypoglycemia or with hypersensitivity to insulin glargine/the selected product’s ingredients."
+        ]
+      },
+      "source_sections": {
+        "lantus": [
+          "4"
+        ],
+        "toujeo": [
+          "4"
+        ],
+        "basaglar": [
+          "4"
+        ],
+        "semglee": [
+          "4"
+        ],
+        "rezvoglar": [
+          "4"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Boxed warning status",
+      "assertions": {
+        "paragraphs": [
+          "The selected U.S. labels have no boxed warning. Severe hypoglycemia, medication errors, anaphylaxis, hypokalemia and infection from sharing devices remain important labeled risks."
+        ]
+      },
+      "source_sections": {
+        "lantus": [
+          "Full prescribing information; 5"
+        ],
+        "toujeo": [
+          "Full prescribing information; 5"
+        ],
+        "basaglar": [
+          "Full prescribing information; 5"
+        ],
+        "semglee": [
+          "Full prescribing information; 5"
+        ],
+        "rezvoglar": [
+          "Full prescribing information; 5"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions and overdose",
+      "assertions": {
+        "paragraphs": [
+          "Hypoglycemia, weight gain, edema, injection-site reactions, lipodystrophy and localized cutaneous amyloidosis are reported. Immunogenicity occurs; antibody tests and trial adverse-event rates are not directly comparable across products. Excess insulin can cause prolonged/recurrent hypoglycemia and hypokalemia. Treat mild lows with oral carbohydrate if able to swallow; severe symptoms need emergency glucagon or IV glucose and continued observation. Do not give food/drink to an unconscious person."
+        ]
+      },
+      "source_sections": {
+        "lantus": [
+          "6",
+          "10",
+          "Patient Information"
+        ],
+        "toujeo": [
+          "6",
+          "10",
+          "Patient Information"
+        ],
+        "basaglar": [
+          "6",
+          "10",
+          "Patient Information"
+        ],
+        "semglee": [
+          "6",
+          "10",
+          "Patient Information"
+        ],
+        "rezvoglar": [
+          "6",
+          "10",
+          "Patient Information"
+        ]
+      }
+    },
+    {
+      "section": "interactions",
+      "card": "Clinically relevant interactions",
+      "assertions": {
+        "paragraphs": [],
+        "table": {
+          "headers": [
+            "Combination",
+            "Action"
+          ],
+          "rows": [
+            [
+              "Other glucose-lowering agents; ACE inhibitors/ARBs, salicylates, fluoxetine, selected antibiotics",
+              "Hypoglycemia risk may rise; more glucose checks and an insulin reduction may be needed."
+            ],
+            [
+              "Corticosteroids, atypical antipsychotics, sympathomimetics, thyroid hormones, selected hormones/diuretics",
+              "Glucose-lowering effect may decline; monitor and adjust insulin if needed."
+            ],
+            [
+              "Alcohol, beta-blockers, clonidine, lithium; pentamidine",
+              "Glucose response may increase or decrease; pentamidine can cause lows followed by highs. Monitor closely."
+            ],
+            [
+              "Beta-blockers, clonidine, guanethidine, reserpine",
+              "May mask hypoglycemia symptoms; rely on more frequent glucose checks."
+            ],
+            [
+              "TZDs such as pioglitazone",
+              "Monitor fluid retention/heart failure; consider TZD reduction or discontinuation if heart failure develops."
+            ]
+          ]
+        }
+      },
+      "source_sections": {
+        "lantus": [
+          "7",
+          "5.7"
+        ],
+        "toujeo": [
+          "7",
+          "5.7"
+        ]
+      }
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy and lactation",
+      "assertions": {
+        "paragraphs": [
+          "Published glargine pregnancy studies have not established a clear association with adverse developmental outcomes; observational limitations remain. Poor glycemic control poses maternal/fetal risks, and both low and high glucose require attention. Human milk data are absent or limited; endogenous insulin is in milk. Balance maternal treatment and breastfeeding benefits with potential infant effects and monitor changing insulin needs."
+        ]
+      },
+      "source_sections": {
+        "lantus": [
+          "8.1",
+          "8.2"
+        ],
+        "toujeo": [
+          "8.1",
+          "8.2"
+        ],
+        "basaglar": [
+          "8.1",
+          "8.2"
+        ],
+        "semglee": [
+          "8.1",
+          "8.2"
+        ],
+        "rezvoglar": [
+          "8.1",
+          "8.2"
+        ]
+      }
+    },
+    {
+      "section": "populations",
+      "card": "Pediatric considerations",
+      "assertions": {
+        "paragraphs": [
+          "Toujeo is labeled ≥6 years; not established below 6. Basaglar pediatric type 1 evidence is ages 6–15; below 6 and pediatric type 2 are not established. Lantus, Semglee and Rezvoglar have broad pediatric diabetes indication wording supported by type 1 ages 6–15 plus adult studies; their selected labels do not state the same explicit minimum as Toujeo. Pediatric type 1 trial severe hypoglycemia was more frequent than in adult trials; specialist dosing and caregiver training are essential."
+        ]
+      },
+      "source_sections": {
+        "lantus": [
+          "1",
+          "8.4"
+        ],
+        "toujeo": [
+          "1",
+          "8.4"
+        ],
+        "basaglar": [
+          "1",
+          "8.4"
+        ],
+        "semglee": [
+          "1",
+          "8.4"
+        ],
+        "rezvoglar": [
+          "1",
+          "8.4"
+        ]
+      }
+    },
+    {
+      "section": "populations",
+      "card": "Older adults and renal/hepatic impairment",
+      "assertions": {
+        "paragraphs": [
+          "Use conservative initiation and increments in older adults, where lows may be harder to recognize. Kidney/hepatic effects on glargine pharmacokinetics have not been directly studied adequately; frequent glucose checks and dose adjustment may be necessary. No eGFR-based fixed unit adjustment is supplied."
+        ]
+      },
+      "source_sections": {
+        "lantus": [
+          "8.5",
+          "8.6",
+          "8.7"
+        ],
+        "toujeo": [
+          "8.5",
+          "8.6",
+          "8.7"
+        ],
+        "basaglar": [
+          "8.5",
+          "8.6",
+          "8.7"
+        ],
+        "semglee": [
+          "8.5",
+          "8.6",
+          "8.7"
+        ],
+        "rezvoglar": [
+          "8.5",
+          "8.6",
+          "8.7"
+        ]
+      }
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism of action",
+      "assertions": {
+        "paragraphs": [
+          "Insulin promotes peripheral glucose uptake and suppresses hepatic glucose output. It also inhibits lipolysis/proteolysis and promotes protein synthesis. Glargine’s subcutaneous absorption provides prolonged basal activity."
+        ]
+      },
+      "source_sections": {
+        "lantus": [
+          "12.1",
+          "12.2",
+          "12.3"
+        ],
+        "toujeo": [
+          "12.1",
+          "12.2",
+          "12.3"
+        ]
+      }
+    },
+    {
+      "section": "pharmacology",
+      "card": "Pharmacodynamics and pharmacokinetics",
+      "assertions": {
+        "paragraphs": [
+          "Time-action profiles vary within and between patients; do not promise a fixed duration for every injection."
+        ],
+        "facts": [
+          [
+            "U-100",
+            "Relatively constant concentrations with no pronounced peak versus NPH over 24 hours. Lantus clamp median effect was 24 hours; range included 10.8 to >24 hours."
+          ],
+          [
+            "U-300",
+            "Onset develops over approximately 6 hours in single-dose clamp studies; steady-state concentrations reached by at least 5 days. Unit-for-unit glucose-lowering effect differs from U-100."
+          ],
+          [
+            "Metabolism",
+            "Subcutaneous/circulating active metabolites M1 and M2 have insulin-like activity."
+          ],
+          [
+            "Dose interpretation",
+            "Pen units do not require volume conversion; pharmacologic differences still require product-specific switching and titration."
+          ]
+        ]
+      },
+      "source_sections": {
+        "lantus": [
+          "12.2",
+          "12.3"
+        ],
+        "toujeo": [
+          "12.2",
+          "12.3"
+        ]
+      }
+    },
+    {
+      "section": "practice",
+      "card": "Monitoring parameters",
+      "assertions": {
+        "paragraphs": [],
+        "items": [
+          "Monitor glucose according to the individualized plan; increase checks during brand/concentration changes, illness, meals/activity changes or impaired low-glucose awareness.",
+          "Review hypoglycemia episodes, injection sites, technique, adherence and storage. Check glycemic progress and whether basal/mealtime balance remains appropriate.",
+          "Check potassium in at-risk patients; follow weight, edema and heart failure symptoms with TZDs.",
+          "Review kidney/hepatic function changes and interacting drugs; reassess dose under medical supervision."
+        ]
+      },
+      "source_sections": {
+        "lantus": [
+          "2",
+          "5",
+          "17"
+        ],
+        "toujeo": [
+          "2",
+          "5",
+          "17"
+        ]
+      }
+    },
+    {
+      "section": "practice",
+      "card": "Patient counseling information",
+      "assertions": {
+        "paragraphs": [],
+        "items": [
+          "Read the exact device instructions, prime as directed, use a new needle each time and remove it after injection. Confirm product, concentration and prescribed units.",
+          "Never share any pen or needle; do not transfer insulin from a pen to a syringe. Use the correct U-100 syringe only for a U-100 vial.",
+          "Carry a low-glucose treatment plan and teach caregivers emergency glucagon use. Discuss safe driving and alcohol; lows may recur because this insulin lasts a long time.",
+          "Rotate healthy injection sites; keep a clinician-directed plan for missed doses/illness. Do not stop necessary basal insulin or double a dose without guidance."
+        ]
+      },
+      "source_sections": {
+        "lantus": [
+          "17",
+          "Patient Information / SoloStar Instructions for Use"
+        ],
+        "toujeo": [
+          "17",
+          "Patient Information / Instructions for Use"
+        ],
+        "basaglar": [
+          "Instructions for Use"
+        ],
+        "semglee": [
+          "Patient Information"
+        ],
+        "rezvoglar": [
+          "Instructions for Use"
+        ]
+      }
+    },
+    {
+      "section": "product",
+      "card": "Representative injectable product · Lantus SoloStar",
+      "assertions": {
+        "paragraphs": [],
+        "facts": [
+          [
+            "Dosage form / concentration",
+            "Clear, colorless solution · U-100 (100 units/mL)"
+          ],
+          [
+            "Presentation",
+            "3 mL single-patient-use prefilled SoloStar pen · 300 total units"
+          ],
+          [
+            "Manufacturer",
+            "Sanofi-aventis U.S. LLC"
+          ],
+          [
+            "Example NDC",
+            "0088-2219-05 · five pens"
+          ]
+        ]
+      },
+      "source_sections": {
+        "lantus": [
+          "3",
+          "16.1"
+        ]
+      }
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "assertions": {
+        "paragraphs": [],
+        "table": {
+          "headers": [
+            "Product",
+            "Selected presentations"
+          ],
+          "rows": [
+            [
+              "Lantus U-100",
+              "10 mL vial; 3 mL SoloStar pen"
+            ],
+            [
+              "Basaglar U-100",
+              "3 mL KwikPen and Tempo Pen"
+            ],
+            [
+              "Semglee (glargine-yfgn) U-100",
+              "10 mL vial; 3 mL prefilled pen"
+            ],
+            [
+              "Rezvoglar (glargine-aglr) U-100",
+              "3 mL KwikPen"
+            ],
+            [
+              "Toujeo U-300",
+              "1.5 mL SoloStar (450 units); 3 mL Max SoloStar (900 units)"
+            ]
+          ]
+        }
+      },
+      "source_sections": {
+        "lantus": [
+          "3",
+          "16"
+        ],
+        "toujeo": [
+          "3",
+          "16"
+        ],
+        "basaglar": [
+          "3",
+          "16"
+        ],
+        "semglee": [
+          "3",
+          "16"
+        ],
+        "rezvoglar": [
+          "3",
+          "16"
+        ]
+      }
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "assertions": {
+        "paragraphs": [
+          "Store unopened selected products refrigerated at 2–8°C until labeled expiry; protect from heat/light and do not freeze. Discard if frozen. Follow the exact product/device instructions and write the opening/discard date."
+        ],
+        "table": {
+          "headers": [
+            "Presentation",
+            "In-use / room-temperature rule"
+          ],
+          "rows": [
+            [
+              "Lantus / Semglee U-100 vial",
+              "28 days refrigerated or ≤30°C. Unopened room-temperature storage is also limited to 28 days."
+            ],
+            [
+              "Lantus / Basaglar / Semglee / Rezvoglar U-100 pen",
+              "28 days at ≤30°C; do not refrigerate once in use. Room-temperature unopened storage counts toward product limits."
+            ],
+            [
+              "Toujeo SoloStar / Max SoloStar U-300",
+              "56 days once in use at ≤30°C; do not refrigerate in-use pens. Keep cap on; selected manufacturer table specifies unopened refrigerated storage until expiry."
+            ]
+          ]
+        }
+      },
+      "source_sections": {
+        "lantus": [
+          "16.2",
+          "Instructions for Use / Patient Information"
+        ],
+        "toujeo": [
+          "16.2",
+          "Instructions for Use / Patient Information"
+        ],
+        "basaglar": [
+          "16.2",
+          "Instructions for Use / Patient Information"
+        ],
+        "semglee": [
+          "16.2",
+          "Instructions for Use / Patient Information"
+        ],
+        "rezvoglar": [
+          "16.2",
+          "Instructions for Use / Patient Information"
+        ]
+      }
+    }
+  ],
+  "scope_exclusions": [
+    "Fixed-ratio insulin glargine/lixisenatide combinations excluded; their indications and doses are separate.",
+    "No automatic pharmacy-interchangeability or therapeutic-equivalence designation inferred from biosimilar naming; no FDA interchangeability claim made.",
+    "Generic/unbranded products require their exact label/device; no pediatric minimum invented for labels with broad indication wording."
+  ],
+  "resolved_source_findings": [
+    {
+      "severity": "source_selection",
+      "detail": "Search surfaced older repackaged Lantus/Toujeo labels with replaced product/storage sections. Current manufacturer records were resolved through official SPL API and used instead."
+    }
+  ],
+  "material_gaps": [],
+  "clinical_review": "Every published card reviewed against full relevant primary label sections. Source-reviewed within stated scope; not an independent clinician sign-off.",
+  "blueprint": "Immutable APAP eight sections, essential safety, three hero facts, cited disclosures, four safety cards and three product cards.",
+  "validation": {
+    "validateMonograph": [],
+    "build": "parent integration pending",
+    "rendered_page_qa": "parent integration pending"
+  },
+  "monograph_sha256": "cd98fd093a66e4171831c0e58af8b46ceacc015ff34f84a86dcc70d1ab3a0e06"
+}
