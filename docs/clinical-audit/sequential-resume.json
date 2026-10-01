@@ -41,8 +41,8 @@
   },
   "thisPass": {
     "guide": "Existing preparation guide expanded at use-quick-references",
-    "questionCoverage": "Six added guide checks, four standalone cumulative questions, 27 embedded checks and 188 new module-bank items; earlier 12 PN concentration prompts clarified and four lithium items repaired. Existing PN module expanded with three checks and 72 original items (16 fluid, 26 energy/nitrogen, 30 delivery/additive/order), then fully reconciled at 172 items with 40 retained/current bank objects revised and all IDs, keys and anchors preserved.",
-    "validation": "Seven new calculation modules and the complete existing PN calculation module source/item/build/rendered verified. Running totals: 591 distinct original/retained checks and 98 separate source-example checks; 65 current reverifications not counted again.",
+    "questionCoverage": "Six added guide checks, four standalone cumulative questions, 27 embedded checks and 188 new module-bank items; earlier 12 PN concentration prompts clarified and four lithium items repaired. Existing PN module expanded with three checks and 72 original items (16 fluid, 26 energy/nitrogen, 30 delivery/additive/order), then fully reconciled at 172 items with 40 retained/current bank objects revised and all IDs, keys and anchors preserved. Adult clinical PN expanded with 18 teaching sections and 30 original bank items; 11 prior questions revised while preserving IDs, keys and anchors.",
+    "validation": "Seven new calculation modules and complete PN calculation module verified. Adult clinical PN book expansion verified; whole adult module remains reviewing. Running totals: 634 distinct original/retained arithmetic checks and 98 separate source-example checks; prior reverifications not recounted.",
     "newModules": [
       "pharmacy-unit-conversions",
       "pharmacy-concentrations-specific-gravity",
@@ -70,7 +70,7 @@
       ],
       "allTextAndVisualRead": true,
       "status": "reviewing",
-      "note": "Whole Chapter 11 read and 54 source exercises recalculated; complete PN calculation module verified. Clinical chapter coverage remains open.",
+      "note": "Whole Chapter 11 read and 54 source exercises recalculated; complete PN calculation module verified. Clinical chapter coverage remains open. Adult clinical PN expansion verified; retained safety/provenance claims remain reviewing.",
       "verifiedModules": [
         "parenteral-nutrition-calculations"
       ]
@@ -87,8 +87,8 @@
     "dependencyChapter": 11,
     "dependencyPrintedPage": 150,
     "dependencyPdfPage": 158,
-    "sectionAudit": "Complete PN calculation module verified; begin adult clinical PN module",
-    "nextAction": "Audit the entire existing adult clinical parenteral-nutrition module and its bank, checks, figures and cumulative items against Chapter 11, starting at printed 149 / PDF 157. The PN calculation module is fully verified; clinical PN, enteral nutrition, pediatric PN, fluid/electrolyte and calcium interpretation remain open. Keep checklist entry 15 reviewing and completed checklist count 14 until all corresponding coverage is verified.",
+    "sectionAudit": "Adult clinical PN book expansion verified; retained clinical provenance review open",
+    "nextAction": "Finish adult clinical PN retained teaching, figure/check captions, 59 remaining bank items and three retained cumulative items. Await explicit answer to the limited PN safety-source exception; without it continue book-supported comparisons and keep filter/USP discrepancies open. Do not silently replace current claims with obsolete book rules. Then audit EN, pediatric PN and clinical fluid/calcium coverage. Checklist entry 15 remains reviewing; completed count 14.",
     "nextDependencyPrintedPage": 149,
     "nextDependencyPdfPage": 157
   },
@@ -128,7 +128,8 @@
     "Pending unrelated clinical edits are preserved and excluded from this pass.",
     "Historical audit-branch snapshot recorded 14 pre-existing duplicate prompt groups (83 instances). This PN completion unit resolves two PN duplicate prompts; all current PN prompts/IDs are globally unique. Remaining modules require their own duplicate review; the older count is not a fresh global count.",
     "Global structural audit observed 34 pre-existing typographic violations in unchanged glaucoma, allergic-rhinitis and common-ear modules; retain for their chronological reviews. Focused PN audit passed.",
-    "Complete PN calculation module verified and pushed; broader adult/pediatric PN, EN, clinical fluid and calcium interpretation remain open. Keep checklist entry 15 reviewing and count 14. Chapter 12 and Chapter 53 reads are scoped dependencies, not chapter closure."
+    "Complete PN calculation module verified and pushed; broader adult/pediatric PN, EN, clinical fluid and calcium interpretation remain open. Keep checklist entry 15 reviewing and count 14. Chapter 12 and Chapter 53 reads are scoped dependencies, not chapter closure.",
+    "Adult clinical PN expansion verified; filter/USP discrepancies and retained extra claims remain reviewing. Source exception pending; preserve modern claims without silently reverting them. parenteral-nutrition-book-expansion-review.json"
   ],
   "progressSnapshot": {
     "date": "2026-10-01",
@@ -160,5 +161,13 @@
     "lipid-energy-ledger",
     "stock-solutions-additives",
     "rate-final-audit"
-  ]
+  ],
+  "pendingLogicalUnit": "parenteral-nutrition: book-supported expansion",
+  "pendingSourceException": {
+    "status": "awaiting explicit user answer",
+    "scope": "Existing PN safety claims in already cited ASPEN, USP, FDA and CDC sources",
+    "requested": true,
+    "outsideSourcesOpenedThisUnit": false,
+    "evidence": "parenteral-nutrition-book-expansion-review.json"
+  }
 }

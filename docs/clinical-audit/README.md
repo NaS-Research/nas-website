@@ -60,6 +60,9 @@ Work is on `audit/rxprep-content-2026-09-24`. The initial worktree contained sub
 
 Use the bundled Node runtime (the system Node is too old for the existing loader). Application guidance was read from `node_modules/next/dist/docs/01-app/02-guides/building.md` before authoring.
 
+
+Adult clinical PN has a verified book expansion: 18 new teaching sections and 30 original questions, with ten retained GIR rounding prompts clarified and one duplicate prompt replaced. All 100 prior IDs, keys and anchors remain. The current 130-item bank and six checks passed desktop/mobile runtime grading; 43 calculations passed independent Decimal review. The exact 567-page production build and focused audit passed. Source-verified current item scope is 71/130; 59 retained conceptual/integration items, retained clinical teaching and figures remain under provenance review. Book conflicts with modern retained filter/USP guidance are recorded in `parenteral-nutrition-book-expansion-review.json`; a limited source exception is awaiting an explicit user answer. Runtime grading does not establish clinical correctness for those open items. Running arithmetic totals: 634 distinct checks and 98 separate source examples. Checklist count stays 14; Chapter 11 and whole adult PN remain reviewing. Content commit/push pending; production not verified.
+
 ## Current position
 
 - Read chapter 1 preparation text, printed pages 3-9 (PDF 15-21), including formula-checklist scope. The rest of chapter 1 is still open.

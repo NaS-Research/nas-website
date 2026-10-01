@@ -63,7 +63,7 @@ const core = [
   q("047", "Is a taper mandatory for every stable adult receiving cyclic PN?", ["No, starting and stopping should be individualized", "Yes, every patient requires a four-hour taper", "Yes, because abrupt stopping always causes coma", "No, because glucose never changes"], 0, "Tapering depends on patient factors, insulin exposure, infusion pattern, and local protocol.", "monitoring-transition"),
   q("048", "Which complication belongs in long-term PN surveillance?", ["Metabolic bone disease", "Improved visual acuity", "Seasonal rhinitis", "Dental caries only"], 0, "Long-term PN can affect bone through multiple nutrient and metabolic pathways.", "monitoring-transition"),
   q("049", "What is required before home PN discharge?", ["A trained patient or caregiver, coordinated team, supplies, line-care plan, monitoring, and emergency instructions", "A catheter without teaching", "A bag and no follow-up", "A promise to avoid all oral intake"], 0, "Home PN is a coordinated high-risk therapy that requires competency and support.", "monitoring-transition"),
-  q("050", "When should PN be reduced?", ["As documented oral or enteral intake reliably replaces the delivered nutrients", "Whenever albumin rises once", "When the bag changes color", "Only after the central line is removed"], 0, "Transition follows measured gastrointestinal delivery and tolerance.", "monitoring-transition"),
+  q("050", "Which change supports reassessing the need for intravenous nutrition in the book's route framework?", ["As documented oral or enteral intake reliably replaces the delivered nutrients", "Whenever albumin rises once", "When the bag changes color", "Only after the central line is removed"], 0, "The source prefers gastrointestinal delivery when it functions and can maintain nutritional status. Actual delivery and tolerance must support that route assessment.", "monitoring-transition"),
 ];
 
 const dextroseEnergyCases = [100, 125, 150, 175, 200, 225, 250, 275, 300, 325].map((grams, index) => {
@@ -76,7 +76,7 @@ const girCases = [
   [160, 55, 20], [280, 85, 18], [220, 65, 16], [190, 70, 12], [260, 100, 24],
 ].map(([grams, weight, hours], index) => {
   const gir = Math.round((grams * 1000 / weight / (hours * 60)) * 100) / 100;
-  return q(`07${index}`, `A ${weight} kg adult receives ${grams} g of dextrose over ${hours} hours. What is the glucose infusion rate?`, [`${gir} mg/kg/min`, `${Math.round(gir * 10) / 10} g/kg/min`, `${Math.round(gir * 2 * 100) / 100} mg/kg/min`, `${Math.round(gir / 2 * 100) / 100} mg/kg/min`], 0, `Convert grams to milligrams, then divide by ${weight} kg and ${hours * 60} minutes. The result is ${gir} mg/kg/min.`, "macronutrient-design");
+  return q(`07${index}`, `A ${weight} kg adult receives ${grams} g of dextrose over ${hours} hours. What is the glucose infusion rate to the nearest hundredth?`, [`${gir} mg/kg/min`, `${Math.round(gir * 10) / 10} g/kg/min`, `${Math.round(gir * 2 * 100) / 100} mg/kg/min`, `${Math.round(gir / 2 * 100) / 100} mg/kg/min`], 0, `Convert grams to milligrams, then divide by ${weight} kg and ${hours * 60} minutes. The result is ${gir} mg/kg/min.`, "macronutrient-design");
 });
 
 const proteinCases = [
@@ -109,6 +109,399 @@ const integrationCases = [
   ["An older handout assigns every compounded PN a five-day refrigerated beyond-use date.", "Replace the rule with current USP chapter 797, stability data, process, container, and storage assessment", "The former fixed risk categories and BUDs are obsolete.", "compounding-safety"],
 ].map(([caseText, correct, rationale, lesson], index) => q(`10${index}`, `${caseText} What is the most defensible next action?`, [correct, "Continue unchanged without reassessment", "Use a fixed rule that ignores the patient's current state", "Delay action until after discharge"], 0, rationale, lesson));
 
+const bookReviewCases = [
+  {
+    "question": "In the supplied book, which route includes both oral food and formula delivered into the gastrointestinal tract?",
+    "choices": [
+      "Enteral nutrition",
+      "Intravenous PN only",
+      "An intra-arterial infusion",
+      "A central venous line"
+    ],
+    "answer": 0,
+    "rationale": "The book EN definition includes gastrointestinal delivery by mouth or by feeding formula.",
+    "reviewHref": "#pn-decision",
+    "id": "parenteral-nutrition-book-001"
+  },
+  {
+    "question": "The source describes inability to absorb adequate GI nutrition for more than five days. How should that statement be read?",
+    "choices": [
+      "As a mandatory wait for every malnourished patient",
+      "As a possible PN indication in the source discussion",
+      "As proof that a central line is sufficient indication",
+      "As a rule that every missed meal requires PN"
+    ],
+    "answer": 1,
+    "rationale": "The source indication is contextual; it does not provide a complete timing algorithm or mandate waiting for every patient.",
+    "reviewHref": "#pn-decision",
+    "id": "parenteral-nutrition-book-002"
+  },
+  {
+    "question": "Which source route comparison explains why a functioning gastrointestinal route is preferred when it meets the need?",
+    "choices": [
+      "PN has no catheter risks",
+      "PN always costs less",
+      "EN is more physiologic and has fewer complications",
+      "EN cannot provide protein"
+    ],
+    "answer": 2,
+    "rationale": "The book favors EN when the gut functions, describing fewer complications and generally lower cost.",
+    "reviewHref": "#pn-decision",
+    "id": "parenteral-nutrition-book-003"
+  },
+  {
+    "question": "Why does the source qualify short-term peripheral PN as something that may be possible?",
+    "choices": [
+      "Peripheral PN is always suitable for full nutrition",
+      "A short duration eliminates vein damage",
+      "PN contains only water",
+      "Peripheral vein irritation and the formulation still matter"
+    ],
+    "answer": 3,
+    "rationale": "The book describes possible use for less than one week but emphasizes phlebitis and vein damage.",
+    "reviewHref": "#venous-access",
+    "id": "parenteral-nutrition-book-004"
+  },
+  {
+    "question": "A PICC begins in a peripheral vein. Which feature makes its infusion access central in the source description?",
+    "choices": [
+      "The tip ends in a large central vessel",
+      "The skin entry must be in the chest",
+      "The bag must contain only saline",
+      "The catheter name alone prevents infection"
+    ],
+    "answer": 0,
+    "rationale": "The IV chapter identifies the central tip location, and its PICC example ends in the superior vena cava.",
+    "reviewHref": "#venous-access",
+    "id": "parenteral-nutrition-book-005"
+  },
+  {
+    "question": "Which source compatibility result is needed before putting two ingredients in the same PN container?",
+    "choices": [
+      "Any Y-site result regardless of concentration",
+      "Additive compatibility for the actual container conditions",
+      "A result for a different diluent only",
+      "A statement that both are IV drugs"
+    ],
+    "answer": 1,
+    "rationale": "Additive and Y-site entries address different contact conditions and cannot simply be substituted.",
+    "reviewHref": "#venous-access",
+    "id": "parenteral-nutrition-book-006"
+  },
+  {
+    "question": "Why can central access deliver a concentrated admixture in the source explanation?",
+    "choices": [
+      "It removes the need for sterility",
+      "It changes dextrose into lipid",
+      "Contents enter a large vessel and are rapidly diluted",
+      "It prevents all thrombosis"
+    ],
+    "answer": 2,
+    "rationale": "The IV-principles chapter explains rapid dilution in a large central vessel.",
+    "reviewHref": "#venous-access",
+    "id": "parenteral-nutrition-book-007"
+  },
+  {
+    "question": "An exercise explicitly orders protein using IBW. What should happen to that weight basis?",
+    "choices": [
+      "Replace it with adjusted weight automatically",
+      "Use height without weight",
+      "Always substitute actual weight",
+      "Use the IBW requested by the exercise"
+    ],
+    "answer": 3,
+    "rationale": "The book uses total weight for most PN work unless a question specifies another basis; some protein orders specify IBW.",
+    "reviewHref": "#macronutrient-design",
+    "id": "parenteral-nutrition-book-008"
+  },
+  {
+    "question": "A PN exercise labels its target as nonprotein calories. Which energy must be kept outside that NPC target?",
+    "choices": [
+      "Amino acid energy",
+      "Dextrose energy",
+      "Lipid energy",
+      "Both dextrose and lipid energy"
+    ],
+    "answer": 0,
+    "rationale": "NPC includes dextrose and lipid; a goal that includes amino acid calories is a different total-energy convention.",
+    "reviewHref": "#macronutrient-design",
+    "id": "parenteral-nutrition-book-009"
+  },
+  {
+    "question": "What source distinction prevents automatically exchanging traditional ILE and Smoflipid?",
+    "choices": [
+      "Neither contains oil",
+      "Their soybean-only versus four-oil formulations differ",
+      "Both supply no calories",
+      "Both are amino acid solutions"
+    ],
+    "answer": 1,
+    "rationale": "The book distinguishes traditional soybean-oil emulsion from four-oil Smoflipid.",
+    "reviewHref": "#macronutrient-design",
+    "id": "parenteral-nutrition-book-010"
+  },
+  {
+    "question": "Which schedule change does the book discuss when triglycerides are high?",
+    "choices": [
+      "Every weekly dose must be infused daily",
+      "Lipid frequency must always increase",
+      "Lipid may be reduced to three times weekly or once weekly",
+      "All nutrients must permanently stop"
+    ],
+    "answer": 2,
+    "rationale": "The source gives these reduced frequencies; the actual prescribed schedule remains part of the patient plan.",
+    "reviewHref": "#macronutrient-design",
+    "id": "parenteral-nutrition-book-011"
+  },
+  {
+    "question": "A supplied PN stock is potassium phosphate. Which additional quantity must be counted alongside phosphate?",
+    "choices": [
+      "Only sterile water",
+      "Only amino acid calories",
+      "Vitamin K",
+      "Potassium from that same stock"
+    ],
+    "answer": 3,
+    "rationale": "A phosphate salt contributes its counterion, so potassium from potassium phosphate is included in the potassium total.",
+    "reviewHref": "#micronutrient-balance",
+    "id": "parenteral-nutrition-book-012"
+  },
+  {
+    "question": "How does the source say the PN phosphate order should identify the ingredient?",
+    "choices": [
+      "In mmol of phosphate with the sodium or potassium salt specified",
+      "As an unspecified number of milliliters only",
+      "As calories of phosphorus",
+      "As the bag color"
+    ],
+    "answer": 0,
+    "rationale": "The source distinguishes mmol of phosphate and the selected salt form.",
+    "reviewHref": "#micronutrient-balance",
+    "id": "parenteral-nutrition-book-013"
+  },
+  {
+    "question": "Why does the source prefer calcium gluconate to calcium chloride in its PN precipitation discussion?",
+    "choices": [
+      "It eliminates all phosphate",
+      "It leaves less free calcium available to bind phosphate",
+      "It is an oral calcium tablet",
+      "It removes all other compatibility variables"
+    ],
+    "answer": 1,
+    "rationale": "The book describes lower dissociation and less calcium-phosphate precipitation risk; this does not prove complete compatibility.",
+    "reviewHref": "#micronutrient-balance",
+    "id": "parenteral-nutrition-book-014"
+  },
+  {
+    "question": "Which source sequence supports limiting calcium-phosphate precipitation?",
+    "choices": [
+      "Calcium first before any other fluid",
+      "Phosphate and calcium without mixing",
+      "Phosphate after dextrose/amino acids, then calcium near the end",
+      "All salts added to an empty bag at once"
+    ],
+    "answer": 2,
+    "rationale": "The book describes phosphate first after the macronutrients, agitation and calcium near the end at larger volume.",
+    "reviewHref": "#micronutrient-balance",
+    "id": "parenteral-nutrition-book-015"
+  },
+  {
+    "question": "What does a calcium-phosphate point above the source solubility curve indicate?",
+    "choices": [
+      "Proof of sterility",
+      "Proof of lower glucose",
+      "A requirement to add more calcium",
+      "Precipitation risk"
+    ],
+    "answer": 3,
+    "rationale": "The book describes points above the curve as indicating precipitation risk.",
+    "reviewHref": "#micronutrient-balance",
+    "id": "parenteral-nutrition-book-016"
+  },
+  {
+    "question": "Which temperature direction does the source associate with more calcium-phosphate dissociation and precipitation risk?",
+    "choices": [
+      "Increasing temperature",
+      "Refrigeration alone proves compatibility",
+      "Temperature has no role",
+      "Removing the bag label"
+    ],
+    "answer": 0,
+    "rationale": "The source states that higher temperature increases dissociation and precipitation risk.",
+    "reviewHref": "#micronutrient-balance",
+    "id": "parenteral-nutrition-book-017"
+  },
+  {
+    "question": "What distinguishes the source MVI-12 mixture from MVI-13?",
+    "choices": [
+      "MVI-12 contains no water-soluble vitamins",
+      "MVI-12 omits vitamin K",
+      "MVI-12 contains only lipid",
+      "MVI-12 doubles every trace element"
+    ],
+    "answer": 1,
+    "rationale": "The source identifies vitamin K as absent from MVI-12.",
+    "reviewHref": "#micronutrient-balance",
+    "id": "parenteral-nutrition-book-018"
+  },
+  {
+    "question": "Which source monitoring instruction connects warfarin with PN vitamin provision?",
+    "choices": [
+      "Monitor only BMI",
+      "Stop all amino acids",
+      "Monitor INR",
+      "Ignore which vitamin mixture is used"
+    ],
+    "answer": 2,
+    "rationale": "The book specifically calls for INR monitoring when a PN patient receives warfarin.",
+    "reviewHref": "#micronutrient-balance",
+    "id": "parenteral-nutrition-book-019"
+  },
+  {
+    "question": "How is thiamine classified in the source MVI-13 discussion?",
+    "choices": [
+      "A lipid calorie source",
+      "A phosphate salt",
+      "A fat-soluble vitamin",
+      "One of the water-soluble vitamins"
+    ],
+    "answer": 3,
+    "rationale": "Thiamine is included among the source's nine water-soluble vitamins.",
+    "reviewHref": "#micronutrient-balance",
+    "id": "parenteral-nutrition-book-020"
+  },
+  {
+    "question": "Which pair does the 2023 book name in its severe liver-disease trace-element withholding discussion?",
+    "choices": [
+      "Manganese and copper",
+      "Dextrose and amino acids",
+      "Sodium and chloride",
+      "Vitamins A and E only"
+    ],
+    "answer": 0,
+    "rationale": "The source names manganese and copper. This attributed review group does not replace the actual patient/product plan.",
+    "reviewHref": "#micronutrient-balance",
+    "id": "parenteral-nutrition-book-021"
+  },
+  {
+    "question": "Which group does the 2023 book name in its severe renal-disease trace-element withholding discussion?",
+    "choices": [
+      "All four fat-soluble vitamins",
+      "Chromium, molybdenum and selenium",
+      "Dextrose, lipid and amino acids",
+      "Sodium, acetate and chloride only"
+    ],
+    "answer": 1,
+    "rationale": "These are the source's named elements; an actual formulation still needs component-by-component patient review.",
+    "reviewHref": "#micronutrient-balance",
+    "id": "parenteral-nutrition-book-022"
+  },
+  {
+    "question": "Why does the source generally discourage adding other IV drugs to a PN preparation?",
+    "choices": [
+      "Every IV drug supplies vitamins",
+      "It makes the drug enteral",
+      "Changing or stopping the drug can waste the entire PN bag",
+      "All drugs require a lipid vehicle"
+    ],
+    "answer": 2,
+    "rationale": "The source gives loss of the entire PN preparation when a drug changes as a reason to avoid routine additions.",
+    "reviewHref": "#micronutrient-balance",
+    "id": "parenteral-nutrition-book-023"
+  },
+  {
+    "question": "Before administration, what happens to the separating seal in the source two-chamber premixed PN example?",
+    "choices": [
+      "It is kept intact throughout infusion",
+      "It is replaced with a feeding tube",
+      "It changes the route to oral",
+      "It is broken so amino acid and dextrose chambers mix"
+    ],
+    "answer": 3,
+    "rationale": "The book describes mixing the separate chamber contents before administration by breaking the seal.",
+    "reviewHref": "#compounding-safety",
+    "id": "parenteral-nutrition-book-024"
+  },
+  {
+    "question": "What does the book specifically identify as present in Clinimix-E?",
+    "choices": [
+      "Electrolytes",
+      "Only oral food",
+      "No amino acids in any product",
+      "A fixed insulin dose for every patient"
+    ],
+    "answer": 0,
+    "rationale": "Clinimix-E is the source example containing electrolytes.",
+    "reviewHref": "#compounding-safety",
+    "id": "parenteral-nutrition-book-025"
+  },
+  {
+    "question": "Which distinction matters when a sterile PN preparation also contains a potentially incompatible ingredient?",
+    "choices": [
+      "Sterility proves all salts stay dissolved",
+      "Sterile preparation and physical/chemical compatibility are separate requirements",
+      "A clear label eliminates precipitation",
+      "Central access eliminates chemical reactions"
+    ],
+    "answer": 1,
+    "rationale": "The book separately addresses sterile preparation and incompatibilities such as precipitation or drug degradation.",
+    "reviewHref": "#compounding-safety",
+    "id": "parenteral-nutrition-book-026"
+  },
+  {
+    "question": "Which PN complication does the source associate with intracellular electrolyte loss, especially phosphate?",
+    "choices": [
+      "Seasonal rhinitis",
+      "A catheter tip seen on x-ray",
+      "Refeeding syndrome",
+      "An isolated change in bag color"
+    ],
+    "answer": 2,
+    "rationale": "The source PN monitoring discussion identifies refeeding and especially phosphate loss.",
+    "reviewHref": "#monitoring-transition",
+    "id": "parenteral-nutrition-book-027"
+  },
+  {
+    "question": "An arithmetic-only exercise supplies a prior sliding-scale requirement of 24 units and asks for one-half. What is that number?",
+    "choices": [
+      "24 units",
+      "48 units",
+      "6 units",
+      "12 units"
+    ],
+    "answer": 3,
+    "rationale": "24/2 = 12 units. This supplied exercise mirrors the book arithmetic example; it does not independently establish an actual insulin-in-bag order.",
+    "reviewHref": "#monitoring-transition",
+    "id": "parenteral-nutrition-book-028"
+  },
+  {
+    "question": "An original energy exercise supplies propofol at 14 mL/hour for eight hours and 1.1 kcal/mL. What energy is delivered?",
+    "choices": [
+      "123.2 kcal",
+      "112 kcal",
+      "14.3 kcal",
+      "246.4 kcal"
+    ],
+    "answer": 0,
+    "rationale": "14 x 8 = 112 mL; 112 x 1.1 = 123.2 kcal. This computes energy, not an anesthetic dose.",
+    "reviewHref": "#macronutrient-design",
+    "id": "parenteral-nutrition-book-029"
+  },
+  {
+    "question": "An original exercise gives 180 mL of lipid once weekly at a supplied 1.1 kcal/mL. What is the average daily energy to the nearest tenth?",
+    "choices": [
+      "198 kcal/day",
+      "28.3 kcal/day",
+      "180 kcal/day",
+      "1,386 kcal/day"
+    ],
+    "answer": 1,
+    "rationale": "180 x 1.1 = 198 kcal per weekly dose; 198/7 = 28.3 kcal/day to the nearest tenth. The average does not change the weekly schedule.",
+    "reviewHref": "#macronutrient-design",
+    "id": "parenteral-nutrition-book-030"
+  }
+];
+
 export const parenteralNutritionQuestionBank = [
   ...core,
   ...dextroseEnergyCases,
@@ -116,8 +509,9 @@ export const parenteralNutritionQuestionBank = [
   ...proteinCases,
   ...lipidCases,
   ...integrationCases,
+  ...bookReviewCases,
 ];
 
-if (parenteralNutritionQuestionBank.length !== 100) {
-  throw new Error(`Parenteral nutrition question bank must contain 100 questions, found ${parenteralNutritionQuestionBank.length}.`);
+if (parenteralNutritionQuestionBank.length !== 130) {
+  throw new Error(`Parenteral nutrition question bank must contain 130 questions, found ${parenteralNutritionQuestionBank.length}.`);
 }

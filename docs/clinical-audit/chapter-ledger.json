@@ -505,12 +505,43 @@
         105
       ],
       "pdfPages": null,
-      "status": "unmapped",
+      "status": "reviewing",
       "subsectionsComplete": false,
-      "subsections": [],
-      "moduleSlugs": [],
-      "findings": [],
-      "evidence": []
+      "subsections": [
+        {
+          "topic": "Adult PN access/compatibility dependency",
+          "printedPages": [
+            100,
+            104
+          ],
+          "pdfPages": [
+            108,
+            112
+          ],
+          "status": "reviewing",
+          "targets": [
+            "parenteral-nutrition"
+          ],
+          "textAndFiguresRead": true,
+          "verifiedAddedSections": [
+            "Keep the peripheral option short and conditional",
+            "Identify central access by where it ends",
+            "Separate two compatibility questions"
+          ],
+          "wholeCorrespondingModuleVerified": false,
+          "evidence": "parenteral-nutrition-book-expansion-review.json",
+          "note": "Five-page scoped dependency only; filter conflict remains open."
+        }
+      ],
+      "moduleSlugs": [
+        "parenteral-nutrition"
+      ],
+      "findings": [
+        "Adult PN access and compatibility methods added from rendered source; lipid-free filter conflict documented. Whole chapter and clinical module remain open."
+      ],
+      "evidence": [
+        "parenteral-nutrition-book-expansion-review.json"
+      ]
     },
     {
       "chapter": 8,
@@ -935,6 +966,57 @@
             "parenteral-nutrition-calculations": "parenteral-nutrition-calculations-completion-review.json"
           },
           "wholePNCalculationModuleVerified": true
+        },
+        {
+          "topic": "Adult clinical PN book expansion",
+          "printedPages": [
+            149,
+            161
+          ],
+          "pdfPages": [
+            157,
+            169
+          ],
+          "status": "reviewing",
+          "targets": [
+            "parenteral-nutrition"
+          ],
+          "textAndFiguresRead": true,
+          "verifiedAddedSections": {
+            "pn-decision": [
+              "Distinguish nutrition support routes",
+              "Use the source indication in its context",
+              "Recognize the added route burden"
+            ],
+            "venous-access": [
+              "Keep the peripheral option short and conditional",
+              "Identify central access by where it ends",
+              "Separate two compatibility questions"
+            ],
+            "macronutrient-design": [
+              "Name the protein basis and energy convention",
+              "Keep lipid energy and schedule together",
+              "Count energy actually supplied outside PN"
+            ],
+            "micronutrient-balance": [
+              "Name the salt and count its second ion",
+              "Apply the source precipitation precautions with their limits",
+              "Distinguish the vitamin mixtures and warfarin review",
+              "Attribute the source trace-element groups",
+              "Keep other medications from becoming routine ingredients"
+            ],
+            "compounding-safety": [
+              "Recognize premixed chambers and their contents",
+              "Connect sterile preparation and physical compatibility"
+            ],
+            "monitoring-transition": [
+              "Watch the specific source monitoring concerns",
+              "Read the insulin example without turning it into a fixed order"
+            ]
+          },
+          "newOriginalQuestions": 30,
+          "wholeCorrespondingModuleVerified": false,
+          "evidence": "parenteral-nutrition-book-expansion-review.json"
         }
       ],
       "moduleSlugs": [
@@ -949,13 +1031,15 @@
         "Existing PN calculation module expanded with source-verified fluid lesson and 16 original questions. Missing/source-unreconciled material remains; checklist count 14.",
         "Energy and nitrogen lessons, two protein target sections and26 original questions verified. Whole module/source reconciliation remains open; checklist count14.",
         "18 calculation sections in existing dextrose, lipid, additive and order lessons plus 30 original questions verified. All 142 prior bank objects preserved; whole module remains reviewing and checklist count stays 14.",
-        "Whole PN calculation module (nine lessons, 64 sections, nine figures/checks, 172 bank and five cumulative items) verified. Clinical PN/EN/pediatric/fluid coverage remains open; chapter and checklist entry 15 not closed."
+        "Whole PN calculation module (nine lessons, 64 sections, nine figures/checks, 172 bank and five cumulative items) verified. Clinical PN/EN/pediatric/fluid coverage remains open; chapter and checklist entry 15 not closed.",
+        "Adult PN expanded with 18 book sections/30 original questions; 10 retained GIR prompts clarified and one duplicate revised. 43 independent calculations and full runtime/build/render checks passed. Retained clinical claim provenance and modern-source conflicts remain open."
       ],
       "evidence": [
         "parenteral-nutrition-calculations-review.json",
         "parenteral-nutrition-energy-nitrogen-review.json",
         "parenteral-nutrition-delivery-review.json",
-        "parenteral-nutrition-calculations-completion-review.json"
+        "parenteral-nutrition-calculations-completion-review.json",
+        "parenteral-nutrition-book-expansion-review.json"
       ],
       "pdfRangeStatus": "All 20 pages visually verified",
       "verifiedModules": [
@@ -1101,12 +1185,37 @@
         283
       ],
       "pdfPages": null,
-      "status": "unmapped",
+      "status": "reviewing",
       "subsectionsComplete": false,
-      "subsections": [],
-      "moduleSlugs": [],
-      "findings": [],
-      "evidence": []
+      "subsections": [
+        {
+          "topic": "Old USP PN risk/BUD discrepancy",
+          "printedPages": [
+            279,
+            279
+          ],
+          "pdfPages": [
+            287,
+            287
+          ],
+          "status": "reviewing",
+          "targets": [
+            "parenteral-nutrition"
+          ],
+          "textAndFiguresRead": true,
+          "scope": "Conflict evidence only; no current BUD teaching verified",
+          "evidence": "parenteral-nutrition-book-expansion-review.json"
+        }
+      ],
+      "moduleSlugs": [
+        "parenteral-nutrition"
+      ],
+      "findings": [
+        "Rendered old risk-category/BUD table conflicts with retained modern PN teaching. Source exception pending; no whole chapter closure."
+      ],
+      "evidence": [
+        "parenteral-nutrition-book-expansion-review.json"
+      ]
     },
     {
       "chapter": 18,
@@ -3285,16 +3394,40 @@
             "evidence": "parenteral-nutrition-calculations-completion-review.json",
             "wholeTableVerified": false
           }
+        },
+        {
+          "topic": "Adult clinical PN propofol energy dependency",
+          "printedPages": [
+            716,
+            716
+          ],
+          "pdfPages": [
+            724,
+            724
+          ],
+          "status": "reviewing",
+          "targets": [
+            "parenteral-nutrition"
+          ],
+          "evidence": "parenteral-nutrition-book-expansion-review.json",
+          "scopedCalorieDependency": {
+            "status": "verified",
+            "value": "Propofol 1.1 kcal/mL",
+            "wholeTableVerified": false
+          },
+          "note": "Energy contribution only; no anesthetic order or full sedative-table verification."
         }
       ],
       "moduleSlugs": [
-        "parenteral-nutrition-calculations"
+        "parenteral-nutrition-calculations",
+        "parenteral-nutrition"
       ],
       "findings": [
         "Rendered printed 716/PDF 724 confirms propofol 1.1 kcal/mL for PN calculation dependency; this does not verify the sedative table or clinical ICU module."
       ],
       "evidence": [
-        "parenteral-nutrition-calculations-completion-review.json"
+        "parenteral-nutrition-calculations-completion-review.json",
+        "parenteral-nutrition-book-expansion-review.json"
       ]
     },
     {
