@@ -67,6 +67,8 @@ export const pharmacyStudyContent = {
     sourceTopics: ["Nutrition support", "Enteral nutrition", "Parenteral nutrition calculations"],
     mustKnow: [
       "Use the gastrointestinal tract when it functions and can be accessed safely. Parenteral nutrition carries greater infection, thrombosis, metabolic, and compatibility risk.",
+      "Determine the fluid allowance first when designing PN, tailor it to the patient and count medication fluids, including intravenous piggybacks, in the overall delivered volume.",
+      "A two-in-one PN admixture contains dextrose and amino acids together, with lipid infused separately if needed. A three-in-one admixture, also called a total nutrient admixture, includes lipid in the same container.",
       "Protein provides 4 kcal/g, dextrose provides 3.4 kcal/g in parenteral nutrition, and intravenous lipid provides a product-specific caloric density.",
       "A parenteral nutrition assessment includes amino acids, dextrose, lipid, total calories, fluid, electrolytes, micronutrients, access, and infusion rate.",
       "Monitor glucose, electrolytes, triglycerides, liver tests, weight, fluid balance, line complications, and refeeding risk.",
