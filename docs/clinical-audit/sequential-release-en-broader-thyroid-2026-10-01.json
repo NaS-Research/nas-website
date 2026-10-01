@@ -1,0 +1,125 @@
+{
+  "date": "2026-10-01",
+  "unit": "enteral-nutrition:broader-thyroid-feeding-dependency",
+  "baseCommit": "0d26bb644345904534dda755f69620881981e4b4",
+  "contentCommit": "d7a8e19385931d8693551138dbf2662b6a2dab54",
+  "branch": "audit/rxprep-content-2026-09-24",
+  "remoteDestination": "github.com/NaS-Research/nas-website.git",
+  "contentRemoteHashObserved": "d7a8e19385931d8693551138dbf2662b6a2dab54",
+  "contentRemoteVerifiedAt": "2026-10-01T21:36:45.316349+00:00",
+  "scope": [
+    "src/data/modules/thyroidMedicinalChemistry.js",
+    "src/data/questionBanks/thyroidMedicinalChemistry.js",
+    "docs/clinical-audit/module-ledger.json",
+    "docs/clinical-audit/chapter-ledger.json",
+    "docs/clinical-audit/enteral-nutrition-broader-thyroid-review.json",
+    "docs/clinical-audit/sequential-resume.json"
+  ],
+  "checks": {
+    "isolatedBuild567": true,
+    "focusedStructuralBank": 120,
+    "scopedQuestionsCorrectWrongDesktopMobile": 8,
+    "newTeachingBodiesDesktopMobile": 1,
+    "embeddedChecksCorrectWrongDesktopMobile": 1,
+    "renderedBodyDOMEquality": 25,
+    "manualVisualReview": true,
+    "distinctConceptSamplerRespected": true,
+    "attemptGroupsPerViewport": 4,
+    "runtime320Overflow": true,
+    "remediationAndSavedProgress": true,
+    "moduleSavedAttemptsPerViewport": 8,
+    "moduleBestScore": 10,
+    "moduleLatestScore": 0,
+    "cumulativeRuntimeItems": 5,
+    "cumulativeSourceVerifiedItemsThisUnit": 1,
+    "targetOnlyLedgerEntries": true,
+    "candidateCodeExactlyMatchesReviewedBuildAndCommittedBlobs": true
+  },
+  "preservation": {
+    "all120CommittedIdsPromptsKeysCorrectTextsAnchorsDifficulty": true,
+    "unchangedOtherBankObjects": 112,
+    "all24OriginalBodiesUnchanged": true,
+    "allOriginalChecksQuestionKeysCorrectTextsAnchors": true,
+    "otherSevenChecksUnchanged": true,
+    "allOtherMetadataUnchanged": true,
+    "all1180CumulativeIdsPromptsKeysCorrectTextsAnchorsPreserved": true,
+    "unchangedOtherCumulativeObjects": 1179,
+    "changedCumulativeObject": "cumulative-thyroid-medicinal-chemistry-thychem-23-application",
+    "local31QuestionDraftByteIdentical": true,
+    "unrelatedModuleWorkingBytesPreserved": true
+  },
+  "coverage": {
+    "sourceVerifiedBankIds": [
+      "thychem-23-principle",
+      "thychem-23-application",
+      "thychem-23-safety",
+      "thychem-23-case",
+      "thychem-24-principle",
+      "thychem-24-application",
+      "thychem-24-safety",
+      "thychem-24-case"
+    ],
+    "sourceVerifiedBankCountThisUnit": 8,
+    "releasedBank": 120,
+    "workingDraftBank": 31,
+    "newQuestionIds": 0,
+    "newSourceVerifiedTeachingBodies": 1,
+    "verifiedBodyHeadings": [
+      "Coordinate levothyroxine with feeds and binding products"
+    ],
+    "verifiedEmbeddedCheckLessons": [
+      "formulation-chemistry"
+    ],
+    "embeddedChecksClosedThisUnit": 1,
+    "cumulativeSourceVerifiedIds": [
+      "cumulative-thyroid-medicinal-chemistry-thychem-23-application"
+    ],
+    "cumulativeRuntimeItems": 5,
+    "otherCumulativeObjectsUnchanged": 1179,
+    "wholeParentModuleVerified": false,
+    "wholeENModuleVerified": false,
+    "wholeChapterVerified": false,
+    "ENAggregateUnchanged": {
+      "bankVerified": 66,
+      "bank": 108,
+      "bodiesVerified": 16,
+      "bodies": 36,
+      "embeddedChecksVerified": 2,
+      "embeddedChecks": 6,
+      "figuresVerified": 0,
+      "figures": 6
+    },
+    "calculationTotalsUnchanged": {
+      "assessmentChecks": 674,
+      "separateSourceExamples": 98
+    }
+  },
+  "newBroaderSourceVerifiedQuestionIds": [
+    "thychem-23-principle",
+    "thychem-23-application",
+    "thychem-23-safety",
+    "thychem-23-case",
+    "thychem-24-principle",
+    "thychem-24-application",
+    "thychem-24-safety",
+    "thychem-24-case"
+  ],
+  "cumulativeBroaderENSourceVerifiedQuestionCount": 45,
+  "contentBlobSHA256": {
+    "src/data/modules/thyroidMedicinalChemistry.js": "d8e38c2039340610c2598007654b760e692278f83f1a3e8bc25e698989b972f7",
+    "src/data/questionBanks/thyroidMedicinalChemistry.js": "44d9d3c2e7daa8564bde9510bfc15a4c476ea986a569ee4dcca606043a8bf99b",
+    "docs/clinical-audit/module-ledger.json": "18b130977d17068da7689e680f6998cb8971ef57186c2f299a9f103ab26acdd5",
+    "docs/clinical-audit/chapter-ledger.json": "14a3cdfbf9c6d146c7f6649bf030a08314dfca061ac03720a32bf28cfad4aac7",
+    "docs/clinical-audit/enteral-nutrition-broader-thyroid-review.json": "7070726e09fce03fc0b7a577c4f802092e887040325861118badf3e4e690a0d7",
+    "docs/clinical-audit/sequential-resume.json": "32e4a34cc219d3a6cda90cc8bc54f1100b7f62a33d163e831fd10e2b2d584214"
+  },
+  "bookAssetsPublished": false,
+  "outsideENSourcesUsed": false,
+  "wholeParentModuleVerified": false,
+  "wholeENModuleVerified": false,
+  "wholeChapterVerified": false,
+  "mainMerge": "notperformed",
+  "production": "notverified",
+  "unrelatedWorkingChanges": "Local31 thyroid case draft remains byte-identical and unreleased; unrelated module and ledger edits preserved unstaged. No duplicate23/24 cases added to the released120-question bank.",
+  "nextAction": "Continue broader feeding inventory with lefamulin oral fasting and tablet-technique topics, expanding the mapped075/079/080 rows to all73-80 questions and reviewing the corresponding complete lesson bodies/checks. Compare committed bank with local work and preserve original IDs and unrelated drafts. Thyroid released120 has eight source-verified repairs,one new teaching body andone embedded check;local31 semantic draft remains unchanged/unreleased and its23/24 cases overlap committed cases,so do not add duplicate questions. The three incidental thyroid05/11/17 application primary topics, remaining112 committed questions,original24 bodies,seven checks,eight figures andmetadata still require full parent audit;the original physical-interaction body has only partially supported claims,including gastric-condition effects not established by this source subset. Working-only labels,product-specific storage,six-week switch claims andother chemistry revisions remain unreleased. Preserve DOAC026/028/029/049/052 and retained exposure/food-duration body/check claims pending;local59 DOAC rewrite remains unreleased. Preserve tetracycline069 and incidental adsorption017/041/121 pending. Complete42 EN questions,20 bodies,four checks,six figures andmetadata per enteral-nutrition-book-safety-coverage-review.json;outside ASPEN/SCCM/FDA EN approval remains unanswered andno outside EN sources opened. Then pediatricPN andclinicalfluid/calcium dependencies. Chapter1checklist15/Chapter11reviewing;do not close fullmodules oradvance sequentially yet."
+}
