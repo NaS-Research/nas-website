@@ -1,0 +1,1717 @@
+{
+  "recordedAt": "2026-10-02T06:23:58.276860+00:00",
+  "baseCommit": "2e69ddca366b6d2e39b49738a11b74bfd2cd872e",
+  "unit": "Pediatric PN source-record continuity and remaining source gaps",
+  "status": "reconciliation complete; clinical coverage remains incomplete",
+  "sourcePolicy": "Originalbookrestriction plus existing approvedASPEN/USP/FDA/CDC PN set. No newoutside neonatal/renal or ENguideline set opened.",
+  "fullBookGapSearch": {
+    "all1032PagesExtractedAndSearched": true,
+    "privateResultSHA256": "4c866bf86de44df501a448d3a473c1b8b9863c15adbfdadb07fa9f1acada42a8",
+    "matchingPDFPages": [
+      161,
+      303,
+      378,
+      438,
+      570,
+      661,
+      720,
+      735,
+      867,
+      990
+    ],
+    "termFamilies": [
+      "phototherapy",
+      "insensible water/incubator/warmer",
+      "renal/kidney replacement and protein/dialysis/catabolism",
+      "neonatal glucose/brain/GIR"
+    ],
+    "limits": "Text search is triage, not proof of complete source absence. OCR spelling, tables and image-only material can evade matches. Relevant Ch11 and Ch54 source pages were therefore checked directly against prior full text/visual reviews; Ch54PDF730 fulltext and renderedpage rechecked this turn. False-positive matches for girls, drug protein-binding, lipid catabolism and psoriasis phototherapy excluded. No raw private extracts/screenshots published."
+  },
+  "approvedReferenceGapChecks": [
+    {
+      "url": "https://aspenjournals.onlinelibrary.wiley.com/doi/10.1177/0148607117695251",
+      "scope": "Targeted full-article term searches; completeQuestion7globalrecommendations/rationale andpediatricconsiderations read. This supports pediatrichemodialysis nutritioncontext; does not establish aCKRT proteinprescription orthe complete originalbody. Adultwound/protein-loss paragraph is not pediatric-specific evidence.",
+      "newSourceSet": false
+    },
+    {
+      "url": "https://aspenjournals.onlinelibrary.wiley.com/doi/10.1002/jpen.2550",
+      "scope": "Targeted insensible/brain searches; prior full relevant recommendation/purpose/rationale review retained. No direct neonatalbrain/GIR or warmer-loss support located.",
+      "newSourceSet": false
+    },
+    {
+      "url": "https://aspenjournals.onlinelibrary.wiley.com/doi/full/10.1177/0148607113511992",
+      "scope": "Targeted insensible/phototherapy/brain/renal-replacement searches; no matching support located. This search does not replace full section source review.",
+      "newSourceSet": false
+    },
+    {
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2021/020734s037lbl.pdf",
+      "scope": "Previously reviewedfullPDF9kidneydisease dosemodifications rechecked; adjacentTable1 explicitly adult. The broad renal/dialysis statement does not independently establish the full pediatricCKRT/catabolism/wound claim. No adult numericaldose adopted for children.",
+      "newSourceSet": false
+    }
+  ],
+  "currentObjectReconciliation": {
+    "bank": 101,
+    "matchedBank": 100,
+    "unmatchedBank": [
+      "pedpn-012"
+    ],
+    "bodies": 42,
+    "matchedBodies": 39,
+    "unmatchedBodies": [
+      "Build a complete fluid ledger",
+      "Advance according to response",
+      "Do not impose blanket protein restriction"
+    ],
+    "questionObjects": [
+      {
+        "id": "pedpn-001",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-development-delivery-review.json",
+            "path": "$.questionReview[0]"
+          }
+        ]
+      },
+      {
+        "id": "pedpn-002",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-indication-access-review.json",
+            "path": "$.questions[0]"
+          }
+        ]
+      },
+      {
+        "id": "pedpn-003",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-preterm-lipid-review.json",
+            "path": "$.questionReview[0]"
+          }
+        ]
+      },
+      {
+        "id": "pedpn-004",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-indication-access-review.json",
+            "path": "$.questions[1]"
+          }
+        ]
+      },
+      {
+        "id": "pedpn-005",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-indication-access-review.json",
+            "path": "$.questions[2]"
+          }
+        ]
+      },
+      {
+        "id": "pedpn-006",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-development-delivery-review.json",
+            "path": "$.questionReview[1]"
+          }
+        ]
+      },
+      {
+        "id": "pedpn-007",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-development-delivery-review.json",
+            "path": "$.questionReview[2]"
+          }
+        ]
+      },
+      {
+        "id": "pedpn-008",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-book-calculations-review.json",
+            "path": "$.questionReview[0]"
+          }
+        ]
+      },
+      {
+        "id": "pedpn-009",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-book-calculations-review.json",
+            "path": "$.questionReview[1]"
+          }
+        ]
+      },
+      {
+        "id": "pedpn-010",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-book-calculations-review.json",
+            "path": "$.questionReview[2]"
+          }
+        ]
+      },
+      {
+        "id": "pedpn-011",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-metabolic-response-review.json",
+            "path": "$.questionReview[0]"
+          }
+        ]
+      },
+      {
+        "id": "pedpn-012",
+        "exactSourceReviewedObjectMatch": false,
+        "matchingRecords": []
+      },
+      {
+        "id": "pedpn-013",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-order-monitoring-review.json",
+            "path": "$.questionReview[0]"
+          }
+        ]
+      },
+      {
+        "id": "pedpn-014",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-preterm-lipid-review.json",
+            "path": "$.questionReview[1]"
+          }
+        ]
+      },
+      {
+        "id": "pedpn-015",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-preterm-lipid-review.json",
+            "path": "$.questionReview[2]"
+          }
+        ]
+      },
+      {
+        "id": "pedpn-016",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-metabolic-response-review.json",
+            "path": "$.questionReview[1]"
+          }
+        ]
+      },
+      {
+        "id": "pedpn-017",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-preterm-lipid-review.json",
+            "path": "$.questionReview[3]"
+          }
+        ]
+      },
+      {
+        "id": "pedpn-018",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-preterm-lipid-review.json",
+            "path": "$.questionReview[4]"
+          }
+        ]
+      },
+      {
+        "id": "pedpn-019",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-preterm-lipid-review.json",
+            "path": "$.questionReview[5]"
+          }
+        ]
+      },
+      {
+        "id": "pedpn-020",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-preterm-lipid-review.json",
+            "path": "$.questionReview[6]"
+          }
+        ]
+      },
+      {
+        "id": "pedpn-021",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-preterm-lipid-review.json",
+            "path": "$.questionReview[7]"
+          }
+        ]
+      },
+      {
+        "id": "pedpn-022",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-preterm-lipid-review.json",
+            "path": "$.questionReview[8]"
+          }
+        ]
+      },
+      {
+        "id": "pedpn-023",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-micronutrient-review.json",
+            "path": "$.questionReview[0]"
+          }
+        ]
+      },
+      {
+        "id": "pedpn-024",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-micronutrient-review.json",
+            "path": "$.questionReview[1]"
+          }
+        ]
+      },
+      {
+        "id": "pedpn-025",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-micronutrient-review.json",
+            "path": "$.questionReview[2]"
+          }
+        ]
+      },
+      {
+        "id": "pedpn-026",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-micronutrient-review.json",
+            "path": "$.questionReview[3]"
+          }
+        ]
+      },
+      {
+        "id": "pedpn-027",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-micronutrient-review.json",
+            "path": "$.questionReview[4]"
+          }
+        ]
+      },
+      {
+        "id": "pedpn-028",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-micronutrient-review.json",
+            "path": "$.questionReview[5]"
+          }
+        ]
+      },
+      {
+        "id": "pedpn-029",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-compounding-safety-review.json",
+            "path": "$.questionReview[1]"
+          }
+        ]
+      },
+      {
+        "id": "pedpn-030",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-preterm-lipid-review.json",
+            "path": "$.questionReview[9]"
+          },
+          {
+            "evidence": "pediatric-parenteral-nutrition-compounding-safety-review.json",
+            "path": "$.questionReview[2]"
+          }
+        ]
+      },
+      {
+        "id": "pedpn-031",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-compounding-safety-review.json",
+            "path": "$.questionReview[3]"
+          }
+        ]
+      },
+      {
+        "id": "pedpn-032",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-preterm-lipid-review.json",
+            "path": "$.questionReview[10]"
+          },
+          {
+            "evidence": "pediatric-parenteral-nutrition-compounding-safety-review.json",
+            "path": "$.questionReview[4]"
+          }
+        ]
+      },
+      {
+        "id": "pedpn-033",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-compounding-safety-review.json",
+            "path": "$.questionReview[5]"
+          }
+        ]
+      },
+      {
+        "id": "pedpn-034",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-compounding-safety-review.json",
+            "path": "$.questionReview[6]"
+          }
+        ]
+      },
+      {
+        "id": "pedpn-035",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-compounding-safety-review.json",
+            "path": "$.questionReview[7]"
+          }
+        ]
+      },
+      {
+        "id": "pedpn-036",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-order-monitoring-review.json",
+            "path": "$.questionReview[1]"
+          }
+        ]
+      },
+      {
+        "id": "pedpn-037",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-development-delivery-review.json",
+            "path": "$.questionReview[3]"
+          }
+        ]
+      },
+      {
+        "id": "pedpn-038",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-metabolic-response-review.json",
+            "path": "$.questionReview[2]"
+          }
+        ]
+      },
+      {
+        "id": "pedpn-039",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-development-delivery-review.json",
+            "path": "$.questionReview[4]"
+          }
+        ]
+      },
+      {
+        "id": "pedpn-040",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-order-monitoring-review.json",
+            "path": "$.questionReview[2]"
+          }
+        ]
+      },
+      {
+        "id": "pedpn-050",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-maintenance-fluid-review.json",
+            "path": "$.questionReview[0]"
+          }
+        ]
+      },
+      {
+        "id": "pedpn-051",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-maintenance-fluid-review.json",
+            "path": "$.questionReview[1]"
+          }
+        ]
+      },
+      {
+        "id": "pedpn-052",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-maintenance-fluid-review.json",
+            "path": "$.questionReview[2]"
+          }
+        ]
+      },
+      {
+        "id": "pedpn-053",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-maintenance-fluid-review.json",
+            "path": "$.questionReview[3]"
+          }
+        ]
+      },
+      {
+        "id": "pedpn-054",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-maintenance-fluid-review.json",
+            "path": "$.questionReview[4]"
+          }
+        ]
+      },
+      {
+        "id": "pedpn-055",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-maintenance-fluid-review.json",
+            "path": "$.questionReview[5]"
+          }
+        ]
+      },
+      {
+        "id": "pedpn-056",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-maintenance-fluid-review.json",
+            "path": "$.questionReview[6]"
+          }
+        ]
+      },
+      {
+        "id": "pedpn-057",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-maintenance-fluid-review.json",
+            "path": "$.questionReview[7]"
+          }
+        ]
+      },
+      {
+        "id": "pedpn-058",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-maintenance-fluid-review.json",
+            "path": "$.questionReview[8]"
+          }
+        ]
+      },
+      {
+        "id": "pedpn-059",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-maintenance-fluid-review.json",
+            "path": "$.questionReview[9]"
+          }
+        ]
+      },
+      {
+        "id": "pedpn-060",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-book-calculations-review.json",
+            "path": "$.questionReview[3]"
+          }
+        ]
+      },
+      {
+        "id": "pedpn-061",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-book-calculations-review.json",
+            "path": "$.questionReview[4]"
+          }
+        ]
+      },
+      {
+        "id": "pedpn-062",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-book-calculations-review.json",
+            "path": "$.questionReview[5]"
+          }
+        ]
+      },
+      {
+        "id": "pedpn-063",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-book-calculations-review.json",
+            "path": "$.questionReview[6]"
+          }
+        ]
+      },
+      {
+        "id": "pedpn-064",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-book-calculations-review.json",
+            "path": "$.questionReview[7]"
+          }
+        ]
+      },
+      {
+        "id": "pedpn-065",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-book-calculations-review.json",
+            "path": "$.questionReview[8]"
+          }
+        ]
+      },
+      {
+        "id": "pedpn-066",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-book-calculations-review.json",
+            "path": "$.questionReview[9]"
+          }
+        ]
+      },
+      {
+        "id": "pedpn-067",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-book-calculations-review.json",
+            "path": "$.questionReview[10]"
+          }
+        ]
+      },
+      {
+        "id": "pedpn-068",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-book-calculations-review.json",
+            "path": "$.questionReview[11]"
+          }
+        ]
+      },
+      {
+        "id": "pedpn-069",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-book-calculations-review.json",
+            "path": "$.questionReview[12]"
+          }
+        ]
+      },
+      {
+        "id": "pedpn-041",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-starter-order-reconciliation-review.json",
+            "path": "$.questionReview[0]"
+          }
+        ]
+      },
+      {
+        "id": "pedpn-070",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-book-calculations-review.json",
+            "path": "$.questionReview[13]"
+          }
+        ]
+      },
+      {
+        "id": "pedpn-071",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-book-calculations-review.json",
+            "path": "$.questionReview[14]"
+          }
+        ]
+      },
+      {
+        "id": "pedpn-072",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-book-calculations-review.json",
+            "path": "$.questionReview[15]"
+          }
+        ]
+      },
+      {
+        "id": "pedpn-073",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-book-calculations-review.json",
+            "path": "$.questionReview[16]"
+          }
+        ]
+      },
+      {
+        "id": "pedpn-074",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-book-calculations-review.json",
+            "path": "$.questionReview[17]"
+          }
+        ]
+      },
+      {
+        "id": "pedpn-075",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-book-calculations-review.json",
+            "path": "$.questionReview[18]"
+          }
+        ]
+      },
+      {
+        "id": "pedpn-076",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-book-calculations-review.json",
+            "path": "$.questionReview[19]"
+          }
+        ]
+      },
+      {
+        "id": "pedpn-077",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-book-calculations-review.json",
+            "path": "$.questionReview[20]"
+          }
+        ]
+      },
+      {
+        "id": "pedpn-078",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-book-calculations-review.json",
+            "path": "$.questionReview[21]"
+          }
+        ]
+      },
+      {
+        "id": "pedpn-079",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-book-calculations-review.json",
+            "path": "$.questionReview[22]"
+          }
+        ]
+      },
+      {
+        "id": "pedpn-080",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-book-calculations-review.json",
+            "path": "$.questionReview[23]"
+          }
+        ]
+      },
+      {
+        "id": "pedpn-081",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-book-calculations-review.json",
+            "path": "$.questionReview[24]"
+          }
+        ]
+      },
+      {
+        "id": "pedpn-082",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-book-calculations-review.json",
+            "path": "$.questionReview[25]"
+          }
+        ]
+      },
+      {
+        "id": "pedpn-083",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-book-calculations-review.json",
+            "path": "$.questionReview[26]"
+          }
+        ]
+      },
+      {
+        "id": "pedpn-084",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-book-calculations-review.json",
+            "path": "$.questionReview[27]"
+          }
+        ]
+      },
+      {
+        "id": "pedpn-085",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-book-calculations-review.json",
+            "path": "$.questionReview[28]"
+          }
+        ]
+      },
+      {
+        "id": "pedpn-086",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-book-calculations-review.json",
+            "path": "$.questionReview[29]"
+          }
+        ]
+      },
+      {
+        "id": "pedpn-087",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-book-calculations-review.json",
+            "path": "$.questionReview[30]"
+          }
+        ]
+      },
+      {
+        "id": "pedpn-088",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-book-calculations-review.json",
+            "path": "$.questionReview[31]"
+          }
+        ]
+      },
+      {
+        "id": "pedpn-089",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-book-calculations-review.json",
+            "path": "$.questionReview[32]"
+          }
+        ]
+      },
+      {
+        "id": "pedpn-090",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-book-calculations-review.json",
+            "path": "$.questionReview[33]"
+          }
+        ]
+      },
+      {
+        "id": "pedpn-091",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-book-calculations-review.json",
+            "path": "$.questionReview[34]"
+          }
+        ]
+      },
+      {
+        "id": "pedpn-092",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-book-calculations-review.json",
+            "path": "$.questionReview[35]"
+          }
+        ]
+      },
+      {
+        "id": "pedpn-093",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-book-calculations-review.json",
+            "path": "$.questionReview[36]"
+          }
+        ]
+      },
+      {
+        "id": "pedpn-094",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-book-calculations-review.json",
+            "path": "$.questionReview[37]"
+          }
+        ]
+      },
+      {
+        "id": "pedpn-095",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-book-calculations-review.json",
+            "path": "$.questionReview[38]"
+          }
+        ]
+      },
+      {
+        "id": "pedpn-096",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-book-calculations-review.json",
+            "path": "$.questionReview[39]"
+          }
+        ]
+      },
+      {
+        "id": "pedpn-097",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-book-calculations-review.json",
+            "path": "$.questionReview[40]"
+          }
+        ]
+      },
+      {
+        "id": "pedpn-098",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-book-calculations-review.json",
+            "path": "$.questionReview[41]"
+          }
+        ]
+      },
+      {
+        "id": "pedpn-099",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-book-calculations-review.json",
+            "path": "$.questionReview[42]"
+          }
+        ]
+      },
+      {
+        "id": "pedpn-100",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-preterm-lipid-review.json",
+            "path": "$.questionReview[11]"
+          }
+        ]
+      },
+      {
+        "id": "pedpn-101",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-preterm-lipid-review.json",
+            "path": "$.questionReview[12]"
+          }
+        ]
+      },
+      {
+        "id": "pedpn-102",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-compounding-safety-review.json",
+            "path": "$.questionReview[8]"
+          }
+        ]
+      },
+      {
+        "id": "pedpn-103",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-preterm-lipid-review.json",
+            "path": "$.questionReview[13]"
+          },
+          {
+            "evidence": "pediatric-parenteral-nutrition-compounding-safety-review.json",
+            "path": "$.questionReview[9]"
+          }
+        ]
+      },
+      {
+        "id": "pedpn-104",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-compounding-safety-review.json",
+            "path": "$.questionReview[10]"
+          }
+        ]
+      },
+      {
+        "id": "pedpn-105",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-micronutrient-review.json",
+            "path": "$.questionReview[6]"
+          }
+        ]
+      },
+      {
+        "id": "pedpn-106",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-order-monitoring-review.json",
+            "path": "$.questionReview[3]"
+          }
+        ]
+      },
+      {
+        "id": "pedpn-107",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-order-monitoring-review.json",
+            "path": "$.questionReview[4]"
+          }
+        ]
+      },
+      {
+        "id": "pedpn-108",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-development-delivery-review.json",
+            "path": "$.questionReview[5]"
+          }
+        ]
+      },
+      {
+        "id": "pedpn-109",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-micronutrient-review.json",
+            "path": "$.questionReview[7]"
+          }
+        ]
+      }
+    ],
+    "wholeBodies": [
+      {
+        "slug": "pediatric-pn-decision-access",
+        "heading": "Define the patient precisely",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-development-delivery-review.json",
+            "path": "$.teachingReview[0]"
+          }
+        ]
+      },
+      {
+        "slug": "pediatric-pn-decision-access",
+        "heading": "Use PN when the gut cannot yet meet the need",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-indication-access-review.json",
+            "path": "$.teaching[0]"
+          }
+        ]
+      },
+      {
+        "slug": "pediatric-pn-decision-access",
+        "heading": "Initiate preterm support promptly when appropriate",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-preterm-lipid-review.json",
+            "path": "$.teachingReview[0]"
+          }
+        ]
+      },
+      {
+        "slug": "pediatric-pn-decision-access",
+        "heading": "Use neonatal starter PN as a temporary bridge",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-starter-order-reconciliation-review.json",
+            "path": "$.teachingReview[0]"
+          }
+        ]
+      },
+      {
+        "slug": "pediatric-pn-decision-access",
+        "heading": "Distinguish starter PN from commercial multichamber bags",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-starter-order-reconciliation-review.json",
+            "path": "$.teachingReview[1]"
+          }
+        ]
+      },
+      {
+        "slug": "pediatric-pn-decision-access",
+        "heading": "Keep the preterm guideline in scope",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-preterm-lipid-review.json",
+            "path": "$.teachingReview[1]"
+          }
+        ]
+      },
+      {
+        "slug": "pediatric-pn-decision-access",
+        "heading": "Match access to concentration and duration",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-indication-access-review.json",
+            "path": "$.teaching[1]"
+          }
+        ]
+      },
+      {
+        "slug": "pediatric-fluid-glucose",
+        "heading": "Build a complete fluid ledger",
+        "exactSourceReviewedObjectMatch": false,
+        "matchingRecords": []
+      },
+      {
+        "slug": "pediatric-fluid-glucose",
+        "heading": "Calculate a stated daily maintenance estimate",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-maintenance-fluid-review.json",
+            "path": "$.teachingReview[0]"
+          }
+        ]
+      },
+      {
+        "slug": "pediatric-fluid-glucose",
+        "heading": "Separate the fluid allowance from PN volume",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-maintenance-fluid-review.json",
+            "path": "$.teachingReview[1]"
+          }
+        ]
+      },
+      {
+        "slug": "pediatric-fluid-glucose",
+        "heading": "Calculate dextrose in both directions",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-book-calculations-review.json",
+            "path": "$.teachingReview[0]"
+          }
+        ]
+      },
+      {
+        "slug": "pediatric-fluid-glucose",
+        "heading": "Advance according to response",
+        "exactSourceReviewedObjectMatch": false,
+        "matchingRecords": []
+      },
+      {
+        "slug": "pediatric-fluid-glucose",
+        "heading": "Account for concentration and osmolarity",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-indication-access-review.json",
+            "path": "$.teaching[2]"
+          }
+        ]
+      },
+      {
+        "slug": "pediatric-protein-lipid",
+        "heading": "Use current preterm amino-acid limits",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-metabolic-response-review.json",
+            "path": "$.teachingReview[0]"
+          }
+        ]
+      },
+      {
+        "slug": "pediatric-protein-lipid",
+        "heading": "Do not impose blanket protein restriction",
+        "exactSourceReviewedObjectMatch": false,
+        "matchingRecords": []
+      },
+      {
+        "slug": "pediatric-protein-lipid",
+        "heading": "Advance lipid deliberately",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-metadata-review.json",
+            "path": "$.teachingReverification[0]"
+          }
+        ]
+      },
+      {
+        "slug": "pediatric-protein-lipid",
+        "heading": "Check all SMOFlipid dose limits",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-preterm-lipid-review.json",
+            "path": "$.teachingReview[3]"
+          }
+        ]
+      },
+      {
+        "slug": "pediatric-protein-lipid",
+        "heading": "Protect against rapid infusion",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-metadata-review.json",
+            "path": "$.teachingReverification[1]"
+          }
+        ]
+      },
+      {
+        "slug": "pediatric-protein-lipid",
+        "heading": "Calculate a stated amino-acid order",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-book-calculations-review.json",
+            "path": "$.teachingReview[1]"
+          }
+        ]
+      },
+      {
+        "slug": "pediatric-protein-lipid",
+        "heading": "Convert a stated lipid dose to volume",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-book-calculations-review.json",
+            "path": "$.teachingReview[2]"
+          }
+        ]
+      },
+      {
+        "slug": "pediatric-minerals-micros",
+        "heading": "Balance growth with compatibility",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-micronutrient-review.json",
+            "path": "$.teachingReview[0]"
+          }
+        ]
+      },
+      {
+        "slug": "pediatric-minerals-micros",
+        "heading": "Count both ions in phosphate products",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-micronutrient-review.json",
+            "path": "$.teachingReview[1]"
+          }
+        ]
+      },
+      {
+        "slug": "pediatric-minerals-micros",
+        "heading": "Use pediatric vitamin products and labeled dosing",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-micronutrient-review.json",
+            "path": "$.teachingReview[2]"
+          }
+        ]
+      },
+      {
+        "slug": "pediatric-minerals-micros",
+        "heading": "Adjust trace elements selectively",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-micronutrient-review.json",
+            "path": "$.teachingReview[3]"
+          }
+        ]
+      },
+      {
+        "slug": "pediatric-minerals-micros",
+        "heading": "Distinguish vitamin dose from infusion volume",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-micronutrient-review.json",
+            "path": "$.teachingReview[4]"
+          }
+        ]
+      },
+      {
+        "slug": "pediatric-minerals-micros",
+        "heading": "Check what a fixed trace-element mix supplies",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-micronutrient-review.json",
+            "path": "$.teachingReview[5]"
+          }
+        ]
+      },
+      {
+        "slug": "pediatric-minerals-micros",
+        "heading": "Interpret trace-element tests in context",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-micronutrient-review.json",
+            "path": "$.teachingReview[6]"
+          }
+        ]
+      },
+      {
+        "slug": "pediatric-compounding-safety",
+        "heading": "Validate the complete formulation",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-compounding-safety-review.json",
+            "path": "$.teachingReview[0]"
+          }
+        ]
+      },
+      {
+        "slug": "pediatric-compounding-safety",
+        "heading": "Do not force a total nutrient admixture",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-preterm-lipid-review.json",
+            "path": "$.teachingReview[5]"
+          },
+          {
+            "evidence": "pediatric-parenteral-nutrition-compounding-safety-review.json",
+            "path": "$.teachingReview[1]"
+          }
+        ]
+      },
+      {
+        "slug": "pediatric-compounding-safety",
+        "heading": "Calculate the aluminum burden",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-compounding-safety-review.json",
+            "path": "$.teachingReview[2]"
+          }
+        ]
+      },
+      {
+        "slug": "pediatric-compounding-safety",
+        "heading": "Protect the entire administration path",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-compounding-safety-review.json",
+            "path": "$.teachingReview[3]"
+          }
+        ]
+      },
+      {
+        "slug": "pediatric-compounding-safety",
+        "heading": "Keep the filter in the safety path",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-compounding-safety-review.json",
+            "path": "$.teachingReview[4]"
+          }
+        ]
+      },
+      {
+        "slug": "pediatric-compounding-safety",
+        "heading": "Calculate aluminum from concentration and volume",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-compounding-safety-review.json",
+            "path": "$.teachingReview[5]"
+          }
+        ]
+      },
+      {
+        "slug": "pediatric-order-monitoring",
+        "heading": "Build from the patient outward",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-order-monitoring-review.json",
+            "path": "$.teachingReview[0]"
+          }
+        ]
+      },
+      {
+        "slug": "pediatric-order-monitoring",
+        "heading": "Reconcile the prescribed dosing weight",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-order-monitoring-review.json",
+            "path": "$.teachingReview[1]"
+          }
+        ]
+      },
+      {
+        "slug": "pediatric-order-monitoring",
+        "heading": "Validate an unexpected glucose result",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-order-monitoring-review.json",
+            "path": "$.teachingReview[2]"
+          }
+        ]
+      },
+      {
+        "slug": "pediatric-order-monitoring",
+        "heading": "Compare today's order with yesterday's",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-order-monitoring-review.json",
+            "path": "$.teachingReview[3]"
+          }
+        ]
+      },
+      {
+        "slug": "pediatric-order-monitoring",
+        "heading": "Compare more than laboratory values",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-development-delivery-review.json",
+            "path": "$.teachingReview[1]"
+          }
+        ]
+      },
+      {
+        "slug": "pediatric-order-monitoring",
+        "heading": "Use trends to change one coherent plan",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-metabolic-response-review.json",
+            "path": "$.teachingReview[1]"
+          }
+        ]
+      },
+      {
+        "slug": "pediatric-order-monitoring",
+        "heading": "Transition while preserving growth",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-development-delivery-review.json",
+            "path": "$.teachingReview[2]"
+          }
+        ]
+      },
+      {
+        "slug": "pediatric-order-monitoring",
+        "heading": "Reconcile delivered nutrients across routes",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-development-delivery-review.json",
+            "path": "$.teachingReview[3]"
+          }
+        ]
+      },
+      {
+        "slug": "pediatric-order-monitoring",
+        "heading": "Interpret growth with fluid and developmental context",
+        "exactSourceReviewedObjectMatch": true,
+        "matchingRecords": [
+          {
+            "evidence": "pediatric-parenteral-nutrition-development-delivery-review.json",
+            "path": "$.teachingReview[4]"
+          }
+        ]
+      }
+    ],
+    "method": "Exact complete current object to individual prior source-review snapshots; evidence continuity check, not independent rereview of all clinical sources."
+  },
+  "embeddedCheckReconciliation": [
+    {
+      "lesson": "pediatric-pn-decision-access",
+      "exactWholeCheckMatch": true,
+      "evidence": [
+        "pediatric-parenteral-nutrition-development-delivery-review.json"
+      ]
+    },
+    {
+      "lesson": "pediatric-fluid-glucose",
+      "exactWholeCheckMatch": true,
+      "evidence": [
+        "pediatric-parenteral-nutrition-book-calculations-review.json"
+      ]
+    },
+    {
+      "lesson": "pediatric-protein-lipid",
+      "exactWholeCheckMatch": true,
+      "evidence": [
+        "pediatric-parenteral-nutrition-preterm-lipid-review.json"
+      ]
+    },
+    {
+      "lesson": "pediatric-minerals-micros",
+      "exactWholeCheckMatch": true,
+      "evidence": [
+        "pediatric-parenteral-nutrition-micronutrient-review.json"
+      ]
+    },
+    {
+      "lesson": "pediatric-compounding-safety",
+      "exactWholeCheckMatch": true,
+      "evidence": [
+        "pediatric-parenteral-nutrition-compounding-safety-review.json"
+      ]
+    },
+    {
+      "lesson": "pediatric-order-monitoring",
+      "exactWholeCheckMatch": true,
+      "evidence": [
+        "pediatric-parenteral-nutrition-order-monitoring-review.json"
+      ]
+    }
+  ],
+  "figureReconciliation": [
+    {
+      "lesson": "pediatric-pn-decision-access",
+      "visual": "peds-pn-decision",
+      "sourceEvidence": "pediatric-parenteral-nutrition-indication-access-review.json",
+      "componentUnchangedSinceMetadataBuild": true
+    },
+    {
+      "lesson": "pediatric-fluid-glucose",
+      "visual": "peds-pn-glucose",
+      "sourceEvidence": "pediatric-parenteral-nutrition-book-calculations-review.json",
+      "componentUnchangedSinceMetadataBuild": true
+    },
+    {
+      "lesson": "pediatric-protein-lipid",
+      "visual": "peds-pn-macros",
+      "sourceEvidence": "pediatric-parenteral-nutrition-preterm-lipid-review.json",
+      "componentUnchangedSinceMetadataBuild": true
+    },
+    {
+      "lesson": "pediatric-minerals-micros",
+      "visual": "peds-pn-micros",
+      "sourceEvidence": "pediatric-parenteral-nutrition-micronutrient-review.json",
+      "componentUnchangedSinceMetadataBuild": true
+    },
+    {
+      "lesson": "pediatric-compounding-safety",
+      "visual": "peds-pn-safety",
+      "sourceEvidence": "pediatric-parenteral-nutrition-compounding-safety-review.json",
+      "componentUnchangedSinceMetadataBuild": true
+    },
+    {
+      "lesson": "pediatric-order-monitoring",
+      "visual": "peds-pn-audit",
+      "sourceEvidence": "pediatric-parenteral-nutrition-development-delivery-review.json",
+      "componentUnchangedSinceMetadataBuild": true
+    }
+  ],
+  "allCurrentMetadataEvidence": "pediatric-parenteral-nutrition-metadata-review.json",
+  "coverage": {
+    "bank": 101,
+    "newlySourceVerifiedBank": 0,
+    "sourceVerifiedBank": 100,
+    "remainingBank": 1,
+    "bodies": 42,
+    "newlySourceVerifiedBodies": 0,
+    "sourceVerifiedBodies": 39,
+    "remainingBodies": 3,
+    "embeddedChecks": 6,
+    "sourceVerifiedEmbeddedChecks": 6,
+    "figures": 6,
+    "sourceVerifiedFigures": 6,
+    "cumulative": 5,
+    "sourceVerifiedCumulative": 5,
+    "metadataVerified": true,
+    "wholeModuleVerified": false,
+    "wholeChapterVerified": false,
+    "semanticFieldGroups": 43
+  },
+  "pendingClaims": [
+    {
+      "type": "bank question",
+      "id": "pedpn-012",
+      "currentObjectSHA256": "686de6fd612ece1f25ab9fb85cf86703a8e658c91b5dc5dd9c73b1d5e7409c32",
+      "unresolved": "Direct neonatalphototherapy/open-warmer water-loss evidence; rationale does not substantiate the specific keyed claim. Three absurd distractors also require improvement after the keyed claim is sourced.",
+      "status": "not verified",
+      "originalObjectPreserved": true
+    },
+    {
+      "type": "whole teaching body",
+      "heading": "Build a complete fluid ledger",
+      "currentObjectSHA256": "e09d8cd11ccf566397704ea4b6f2ac40c4b2642ea6fd5d386db463169c54c5b8",
+      "unresolved": "Specific neonatal environmental/phototherapy loss claims, alongside already supported general fluid accounting.",
+      "status": "not verified",
+      "originalObjectPreserved": true
+    },
+    {
+      "type": "whole teaching body",
+      "heading": "Advance according to response",
+      "currentObjectSHA256": "ec5e66d6155da4eba2574917d656fb9f12fed4789e377caa887639a9e53d2695",
+      "unresolved": "Higher neonatalGIR because of rapidgrowth/relativelylargebrain; general glucosemonitoring is already supported.",
+      "status": "not verified",
+      "originalObjectPreserved": true
+    },
+    {
+      "type": "whole teaching body",
+      "heading": "Do not impose blanket protein restriction",
+      "currentObjectSHA256": "b87bcd0a6dfab8446917edf231d02913a2e95837ceafd4f1b70a2e286701662b",
+      "unresolved": "Whole pediatric claim spansrenal/hepatic dysfunction,CKRT,catabolism,wounds,ammonia/growth/diagnosis. Partial renal/dialysis context does not close the wholebody.",
+      "status": "not verified",
+      "originalObjectPreserved": true
+    }
+  ],
+  "pendingApprovals": {
+    "pediatric": {
+      "status": "awaiting explicit human reply",
+      "request": "May use primary neonatal and pediatric renal nutrition guidelines beyond current book/approved reference set for retained water-loss,neonatal GIR/brain,and CKRT/catabolism/wound protein claims.",
+      "dependentOutsideSourceWorkAuthorized": false,
+      "preserveOriginalClaimsUntilReviewed": true
+    },
+    "enteral": {
+      "status": "pending human response",
+      "requestedScope": "Primary ASPEN/SCCM EN clinical guidance and FDA guidance/product labeling",
+      "authorized": false,
+      "sourcesOpened": false,
+      "renewedRequestDate": "2026-10-01"
+    }
+  },
+  "preservation": {
+    "noProductCodeChanged": true,
+    "all101QuestionsAnd42BodiesUnchanged": true,
+    "all6ChecksAndFiguresUnchanged": true,
+    "all1180CumulativeObjectsUnchanged": true,
+    "all28ReferencesAndAllMetadataUnchanged": true,
+    "privateBookAndExtractsNotPublished": true
+  },
+  "validation": {
+    "moduleSHA256": "c89e97aee93bfdfd0afe078c4a872b1b85e8af73991b99bf529a5ef169ed9e35",
+    "exactCurrentCommittedModuleMatchesPreviouslyBuiltCandidate": true,
+    "priorBuildAndRuntimeEvidence": "pediatric-parenteral-nutrition-metadata-review.json validation:567staticpages,101questions,42bodyDOM,sixmetadataDOM,28referenceDOM,desktop/mobilemanualreview and320overflow. No codechanges this unit; repeatedbuild/assessmentattempts unnecessary.",
+    "methodBounds": "Exact content-to-prior-source-review matching establishes evidence continuity; it is not an independent rereview of every clinicalsource and does not close unmatched claims."
+  },
+  "release": {
+    "branch": "audit/rxprep-content-2026-09-24",
+    "commit": "pending",
+    "push": "pending",
+    "receipt": "sequential-release-pediatric-pn-source-gaps-2026-10-02.json",
+    "mainMerge": "not performed",
+    "production": "not verified"
+  },
+  "nextAction": "Await explicit human approval of the already-requested additional primary neonatal/pediatric renal guideline set for three retained pediatric PN gaps. Also retain separate ENsource request as unapproved. Do not repeat the released metadata audit or exact-object checks as new clinical progress, broaden sources without approval, infer approval from automatic continuation, or skip to the next topic before current verification. On approval, review full relevant source sections/tables/figures, repair allfour pedpn-012 options, verify the three whole original bodies, then complete whole-module source/rendered reconciliation. WholeChapter11,Chapter1entry15 and broaderChapter54 remain open.",
+  "wholeModuleVerified": false,
+  "wholeChapterVerified": false,
+  "wholeGoalComplete": false
+}

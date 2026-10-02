@@ -1277,7 +1277,8 @@
         "pediatric-parenteral-nutrition-indication-access-review.json",
         "pediatric-parenteral-nutrition-metabolic-response-review.json",
         "pediatric-parenteral-nutrition-starter-order-reconciliation-review.json",
-        "pediatric-parenteral-nutrition-metadata-review.json"
+        "pediatric-parenteral-nutrition-metadata-review.json",
+        "pediatric-parenteral-nutrition-source-gap-reconciliation.json"
       ],
       "bookCalculationReview": {
         "evidence": "pediatric-parenteral-nutrition-book-calculations-review.json",
@@ -2844,6 +2845,25 @@
           "Advance according to response",
           "Do not impose blanket protein restriction"
         ]
+      },
+      "sourceGapReconciliation": {
+        "evidence": "pediatric-parenteral-nutrition-source-gap-reconciliation.json",
+        "exactMatchedBankObjects": 100,
+        "exactMatchedWholeBodies": 39,
+        "bank": 101,
+        "bodies": 42,
+        "embeddedChecksMatched": 6,
+        "figuresUnchangedVerified": 6,
+        "metadataVerified": true,
+        "pendingQuestionIds": [
+          "pedpn-012"
+        ],
+        "remainingWholeBodyHeadings": [
+          "Build a complete fluid ledger",
+          "Advance according to response",
+          "Do not impose blanket protein restriction"
+        ],
+        "wholeModuleVerified": false
       }
     },
     {
