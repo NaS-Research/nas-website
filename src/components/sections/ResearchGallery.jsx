@@ -97,8 +97,8 @@ function ResearchRail({ studies, compact, paused, reduced }) {
       onDragStart={e => e.preventDefault()}
       onClickCapture={e => { if (suppressClick.current) { e.preventDefault(); e.stopPropagation(); suppressClick.current = false; } }}>
       {(reduced ? [{ id: "still", studies }] : batches).map((batch, copy) => <div className="research-gallery__group" ref={copy === (reduced ? 0 : 1) ? group : undefined} key={batch.id} aria-hidden={!reduced && copy !== 1 ? true : undefined}>
-        {batch.studies.map(study => <Link key={study.slug} href={`/research/${study.slug}`} className={`research-gallery__card${study.mark ? " research-gallery__card--mark" : ""}`} tabIndex={!reduced && copy !== 1 ? -1 : undefined} aria-label={`${study.title}. ${study.type}. Read publication.`}>
-          {study.workspaceFilm || study.video ? <WorkspacePreviewFilm className="research-gallery__film" compact={compact} paused={paused || reduced} src={study.video || undefined} poster={study.workspaceFilm ? undefined : study.image} /> : <Image src={study.image} alt="" fill sizes={compact ? "(max-width: 600px) 78vw, 35vw" : "(max-width: 600px) 88vw, 78vw"} draggable={false} />}
+        {batch.studies.map(study => <Link key={study.slug} href={`/research/${study.slug}`} className={`research-gallery__card${study.mark ? " research-gallery__card--mark" : ""}${study.contain ? " research-gallery__card--contain" : ""}`} tabIndex={!reduced && copy !== 1 ? -1 : undefined} aria-label={`${study.title}. ${study.type}. Read publication.`}>
+          {study.workspaceFilm || study.video ? <WorkspacePreviewFilm className="research-gallery__film" compact={compact} paused={paused || reduced} src={(compact ? study.compactVideo || study.video : study.video) || undefined} poster={study.workspaceFilm ? undefined : study.image} /> : <Image src={study.image} alt="" fill sizes={compact ? "(max-width: 600px) 78vw, 35vw" : "(max-width: 600px) 88vw, 78vw"} draggable={false} />}
           <div className="research-gallery__shade" />
           <div className="research-gallery__caption">
             <p>{study.area} <span>· {study.type}</span></p>

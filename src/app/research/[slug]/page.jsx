@@ -4,6 +4,7 @@ import { publicationArtwork } from "@/data/publicationArtwork";
 import PublicationArtwork from "@/components/research/PublicationArtwork";
 import "@/components/research/publication-artwork.css";
 import "./publication-refinements.css";
+import "./paper-article.css";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -12,10 +13,21 @@ import CortexNativeVisual from "@/components/research/CortexNativeVisual";
 import DenialsWorkflowFigure from "@/components/research/DenialsWorkflowFigure";
 import BbbStudyVisual from "@/components/research/BbbStudyVisual";
 import PublicationActions from "@/components/research/PublicationActions";
-import { getResearchItem, researchItems } from "@/data/researchLibrary";
+import EvidenceFigure from "@/components/research/EvidenceFigure";
+import { Fragment } from "react";
+import { getResearchItem, researchItems, researchDrafts } from "@/data/researchLibrary";
 
-function PublicationBlock({ block }) {
-  if (!block.includes("●")) return <p>{block.replaceAll("*", "")}</p>;
+function SourceReferences({ references = [] }) {
+  if (!references.length) return null;
+  return <sup className="publication-source-references">
+    {references.map((number, index) => <span key={number}>
+      {index > 0 && ", "}<a href={`#source-${number}`} aria-label={`Source ${number}`}>{number}</a>
+    </span>)}
+  </sup>;
+}
+
+function PublicationBlock({ block, sourceRefs }) {
+  if (!block.includes("●")) return <p>{block.replaceAll("*", "")}<SourceReferences references={sourceRefs} /></p>;
 
   const [intro, ...items] = block.split("●").map((part) => part.trim()).filter(Boolean);
   const hasIntro = !block.trimStart().startsWith("●");
@@ -32,8 +44,16 @@ function PublicationBlock({ block }) {
   );
 }
 
+function PublicationFigure({ figure }) {
+  if (figure.kind === "evidence") return <EvidenceFigure figure={figure}><SourceReferences references={figure.sourceRefs} /></EvidenceFigure>;
+  return <figure className="publication-study-figure">
+    <Image src={figure.src} alt={figure.alt} width={2100} height={figure.height} sizes="(max-width: 800px) 100vw, 900px" />
+    <figcaption>{figure.caption} <a className="publication-figure-expand" href={figure.src} target="_blank" rel="noopener noreferrer">Open full-size figure ↗</a></figcaption>
+  </figure>;
+}
+
 export function generateStaticParams() {
-  return researchItems.map((item) => ({ slug: item.slug }));
+  return [...researchItems, ...researchDrafts].map((item) => ({ slug: item.slug }));
 }
 
 export async function generateMetadata({ params }) {
@@ -52,7 +72,7 @@ export async function generateMetadata({ params }) {
       url: `/research/${item.slug}`,
       siteName: "NaS Research",
       type: "article",
-      publishedTime: item.dateISO,
+      ...(item.publicationStatus === "draft" ? {} : { publishedTime: item.dateISO }),
       authors: item.authors,
       images: [
         {
@@ -75,17 +95,18 @@ export default async function ResearchPublicationPage({ params }) {
   const item = getResearchItem(slug);
   if (!item) notFound();
 
-  const isResearchPublication = ["Research Report", "Research Note", "White Paper"].includes(item.type);
+  const isResearchPublication = ["Research Report", "Research Note", "White Paper"].includes(item.type) || Boolean(item.citable);
+  const isPaperArticle = item.variant === "paper";
   const isOriginStory = item.variant === "institutional-origin";
   const hasHeroVideo = Boolean(item.heroVideo);
   const hasHeroImage = false;
-  const citation = `${item.authors.join(", ")} (${item.date.slice(-4)}). ${item.title}. NaS Research. ${item.version ? `Version ${item.version}. ` : ""}https://nasresearch.bio/research/${item.slug}`;
+  const citation = `${item.authors.join(", ")} (${item.date.slice(-4)}). ${item.title}. NaS Research. ${item.version ? `Version ${item.version}. ` : ""}${item.publicationStatus === "draft" ? "Draft. " : ""}https://nasresearch.bio/research/${item.slug}`;
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "Article",
     headline: item.title,
     description: item.abstract,
-    datePublished: item.dateISO,
+    ...(item.publicationStatus === "draft" ? { dateCreated: item.dateISO } : { datePublished: item.dateISO }),
     ...(item.updatedDateISO ? { dateModified: item.updatedDateISO } : {}),
     image: `https://nasresearch.bio${publicationArtwork[item.slug]?.src || "/og.png"}`,
     mainEntityOfPage: `https://nasresearch.bio/research/${item.slug}`,
@@ -100,7 +121,7 @@ export default async function ResearchPublicationPage({ params }) {
   const related = researchItems.filter((candidate) => candidate.slug !== item.slug && candidate.area === item.area).slice(0, 2);
 
   return (
-    <div className="nas-page publication-page">
+    <div className={`nas-page publication-page${isPaperArticle ? " publication-page--paper" : ""}${item.theme === "dark" ? " publication-page--dark" : ""}`}>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData).replace(/</g, "\\u003c") }} />
       <header className={`publication-hero ${isOriginStory ? "publication-hero--origin" : ""} ${hasHeroVideo ? "publication-hero--place" : ""} ${hasHeroImage ? "publication-hero--visual" : ""}`}>
         {hasHeroVideo && (
@@ -129,6 +150,7 @@ export default async function ResearchPublicationPage({ params }) {
         )}
         <div className="nas-shell publication-hero__inner">
           <Link href="/research" className="publication-back">← Research library</Link>
+          {isPaperArticle && <Image className="publication-paper-mark" src="/assets/images/NaSLogo-transparent-hd.png" alt="NaS gold emblem" width={76} height={76} priority />}
           <div className="publication-meta-line">
             <time dateTime={item.dateISO}>{item.date}</time>
             <span>{item.area}</span>
@@ -149,8 +171,8 @@ export default async function ResearchPublicationPage({ params }) {
         </div>
       </header>
 
-      {!hasHeroVideo && <PublicationArtwork slug={item.slug} hero />}
-      <MobileContents sections={item.sections.map(({ id, title }) => ({ id, title }))} hasSources={Boolean(item.sources?.length)} />
+      {!hasHeroVideo && item.showArticleArtwork !== false && <PublicationArtwork slug={item.slug} hero />}
+      <MobileContents sections={item.sections.map(({ id, title }) => ({ id, title }))} hasSources={Boolean(item.sources?.length)} hasCitation={isResearchPublication} />
       <div className="nas-shell publication-layout">
         <aside className="publication-toc" aria-label="Publication contents">
           <details className="publication-contents" open>
@@ -195,7 +217,10 @@ export default async function ResearchPublicationPage({ params }) {
             >
               {section.level === 2 ? <h3>{section.title}</h3> : <h2>{section.title}</h2>}
               {(section.blocks ?? section.paragraphs).map((block, index) => (
-                <PublicationBlock block={block} key={`${section.id}-${index}`} />
+                <Fragment key={`${section.id}-${index}`}>
+                  <PublicationBlock block={block} sourceRefs={section.citationsByParagraph?.[index]} />
+                  {section.figures?.filter((figure) => figure.afterParagraph === index).map((figure) => <PublicationFigure figure={figure} key={figure.src} />)}
+                </Fragment>
               ))}
               {item.slug === "introducing-nas-workspace" && section.id === "nicole" && <NicolePreviewInterface />}
               {section.resultsTable && <div className="publication-results-table"><table>
@@ -203,10 +228,8 @@ export default async function ResearchPublicationPage({ params }) {
                 <thead><tr>{section.resultsTable[0].map((cell) => <th scope="col" key={cell}>{cell}</th>)}</tr></thead>
                 <tbody>{section.resultsTable.slice(1).map((row) => <tr key={row[0]}>{row.map((cell, i) => i === 0 ? <th scope="row" key={i}>{cell}</th> : <td key={i}>{cell}</td>)}</tr>)}</tbody>
               </table></div>}
-              {section.figures?.map((figure) => <figure className="publication-study-figure" key={figure.src}>
-                <Image src={figure.src} alt={figure.alt} width={2100} height={figure.height} sizes="(max-width: 800px) 100vw, 900px" />
-                <figcaption>{figure.caption} <a className="publication-figure-expand" href={figure.src} target="_blank" rel="noopener noreferrer">Open full-size figure ↗</a></figcaption>
-              </figure>)}
+              {section.tableSourceRefs && <p className="publication-table-source">Source<SourceReferences references={section.tableSourceRefs} /></p>}
+              {section.figures?.filter((figure) => figure.afterParagraph === undefined).map((figure) => <PublicationFigure figure={figure} key={figure.src} />)}
               {item.workflowFigureSection === section.id && <DenialsWorkflowFigure />}
               {item.slug === "blood-brain-barrier-prediction-audit" && <BbbStudyVisual section={section.id} />}
               {item.visualsBySection?.[section.id]?.map((visual) => (
@@ -222,12 +245,15 @@ export default async function ResearchPublicationPage({ params }) {
                 {item.sourcesIntro ?? "This publication draws on the institutional and government sources listed below. Links open in a new tab."}
               </p>
               <ol>
-                {item.sources.map((source) => (
-                  <li key={source.url}>
+                {item.sources.map((source, index) => (
+                  <li id={`source-${index + 1}`} key={source.url}>
                     <a href={source.url} target="_blank" rel="noreferrer">
                       {source.title}
                       <span aria-hidden="true"> ↗</span>
                     </a>
+                    {source.citation && <p className="publication-source-citation">{source.citation}</p>}
+                    {source.role && <p className="publication-source-role">{source.role}</p>}
+                    {source.links?.length > 0 && <div className="publication-source-links">{source.links.map((link) => <a href={link.url} target="_blank" rel="noreferrer" key={link.url}>{link.label} ↗</a>)}</div>}
                   </li>
                 ))}
               </ol>

@@ -3,7 +3,7 @@ import { readFileSync } from 'node:fs';
 import vm from 'node:vm';
 import { researchTypeGroups, availableResearchTypes, matchesResearchType } from '../src/data/researchTaxonomy.mjs';
 const context = vm.createContext({ availableResearchTypes, cortexPaperSections: [], cortexNativeVisualsBySection: {} });
-for (const name of ['bbbRelease', 'brcaRepeatabilityRelease', 'atlasRelease', 'denialsRelease', 'researchLibrary']) {
+for (const name of ['bbbRelease', 'brcaRepeatabilityRelease', 'atlasRelease', 'denialsRelease', 'aiHospitalBillingEvidence', 'aiHospitalBillingEssay', 'researchLibrary']) {
   const source = readFileSync(new URL(`../src/data/${name}.js`, import.meta.url), 'utf8').replace(/^import .*;\n/gm, '').replace(/export /g, '');
   vm.runInContext(source, context);
 }
@@ -14,6 +14,7 @@ for (const item of items) {
   assert.ok(!/computational/i.test(item.area), `${item.slug}: concise area`);
 }
 const expected = {
+  'ai-hospital-billing-evidence': ['Essays', 'Healthcare Operations'],
   'introducing-nas-workspace': ['Releases', 'Scientific Infrastructure'],
   'blood-brain-barrier-prediction-audit': ['Publications', 'Drug Discovery'],
   'pam50-technical-repeatability': ['Publications', 'Oncology'],

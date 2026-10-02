@@ -53,6 +53,8 @@ html:has(.publication-page), body:has(.publication-page) { overflow-x: clip; }
 @media (max-width: 767px) {
   .publication-page .publication-toc { display: none; }
   .mobile-contents { display: block; }
+  body:has(.publication-page) .personal-tools { position: relative; inset: auto; width: calc(100% - 2rem); margin: 1rem auto; }
+  body:has(.publication-page) .personal-tools-panel { position: relative; inset: auto; width: 100%; max-width: 100%; flex-basis: 100%; }
   .mobile-contents__trigger { position: fixed; z-index: 40; right: 1rem; bottom: calc(1rem + env(safe-area-inset-bottom)); display: flex; gap: 1rem; align-items: center; min-height: 44px; padding: .65rem 1rem; border: 1px solid #ffffff30; border-radius: 999px; background: #202020; color: #eee; font-size: .85rem; box-shadow: 0 4px 20px #0005; }
   .mobile-contents__sheet { position: fixed; inset: auto 0 0; width: 100%; max-width: none; max-height: 75dvh; margin: 0; padding: 0; border: 1px solid #ffffff20; border-radius: 20px 20px 0 0; background: #161616; color: #eee; }
   .mobile-contents__sheet::backdrop { background: #0009; }

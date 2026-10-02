@@ -4,6 +4,9 @@
 .publication-artwork--mark img { object-fit: contain; padding: 16%; }
 .publication-artwork--hero { width: calc(100% - 2.5rem); max-width: 72rem; margin: 0 auto 2rem; }
 .publication-artwork--hero .publication-artwork__frame { aspect-ratio: 16 / 9; }
+.publication-artwork--contain .publication-artwork__frame { background: #000; }
+.publication-artwork--contain .publication-artwork__frame img,
+.publication-artwork--contain .publication-artwork__frame video { object-fit: contain; }
 .publication-artwork--hero figcaption { margin-top: .8rem; font-size: .75rem; line-height: 1.6; color: #999; }
 .research-result:hover .publication-artwork img { transform: scale(1.025); }
 .research-results--grid .research-result { display: flex; flex-direction: column; padding: 0 0 2rem; overflow: hidden; }

@@ -1,5 +1,14 @@
 // Original NaS artwork; conceptual images do not represent measured outcomes.
 export const publicationArtwork = {
+  "ai-hospital-billing-evidence": {
+    src: "/research/ai-hospital-billing/cover-v1/poster-960.webp",
+    heroSrc: "/research/ai-hospital-billing/cover-v1/poster-1920.webp",
+    film: "/research/ai-hospital-billing/cover-v1/loop-1920.mp4",
+    previewFilm: "/research/ai-hospital-billing/cover-v1/loop-960.mp4",
+    alt: "A clinical note connected to a billing-code suggestion, with AI-assisted coding subject to review",
+    contain: true,
+    showControl: true,
+  },
   "introducing-nas-workspace": { workspaceFilm: true, src: "/workspace/particles-v2/poster-1920.webp", alt: "White and gold particles forming a flowing loop against black, the NaS workspace visual" },
   "blood-brain-barrier-prediction-audit": {
     src: "/research/bbb-audit/cover-v1.webp",

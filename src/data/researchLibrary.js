@@ -5,8 +5,10 @@ import { denialsRelease } from "@/data/denialsRelease";
 import { atlasRelease } from "@/data/atlasRelease";
 import { brcaRepeatabilityRelease } from "@/data/brcaRepeatabilityRelease";
 import { bbbRelease } from "@/data/bbbRelease";
+import { aiHospitalBillingEssay } from "@/data/aiHospitalBillingEssay";
 
 export const researchItems = [
+  aiHospitalBillingEssay,
   {
   "slug": "introducing-nas-workspace",
   "title": "Introducing the NaS workspace",
@@ -505,8 +507,12 @@ export const researchItems = [
   },
 ];
 
+// Editorial previews can be read directly without entering public directories.
+export const researchDrafts = [];
+
 export const researchTypes = availableResearchTypes(researchItems);
 
 export function getResearchItem(slug) {
-  return researchItems.find((item) => item.slug === slug);
+  return researchItems.find((item) => item.slug === slug)
+    ?? researchDrafts.find((item) => item.slug === slug);
 }
