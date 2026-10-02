@@ -89,7 +89,7 @@
     "dependencyPrintedPage": 150,
     "dependencyPdfPage": 158,
     "sectionAudit": "PediatricPN82/100bank,23/35bodies,4/6checks,4/6figures,4/5cumulative;18bank/12bodies/2checks/2figures/1cumulative andfullmetadata pending. Maintenancequestions050-059 nowverified. Chapter54 fullsourcealreadyread;wholechaptercontentauditpending.",
-    "nextAction": "Finish18remainingpediatricPNbankquestions/12existingbodies/twoembeddedchecks/twofigures/onecumulative andfullmodulemetadata against approvedPNsources. Maintenance100/50/20 calculation questions now verified; do not reread them as pending. Resolve age/development and PNindications/access, glucose/organ context, protein restriction and delivered-intake/growth monitoring. Chapter54 supplied-book PDF729-738/printed721-730 fulltext/tables/images already read; broader chapter mapping/content/question audit remains pending. Preserve pendingEN outside-source exception;Chapter1entry15andChapter11stillreviewing.",
+    "nextAction": "Use the recorded monitoring source intake first: repair pedpn-013/106 sampling questions and pedpn-036/107/040 dosing-weight/order-review questions, then finish complete related teaching/checks/figures and QA. Eight relevant source PDF pages and ASPEN2014 Administration3 are already read; preserve newer filter guidance. Finish all 18 pending PN questions and 12 pending bodies; this intake adds zero clinical closure counts. Chapter54 whole-content audit and EN source exception remain pending; Chapter1 entry15 and Chapter11 remain reviewing.",
     "nextDependencyPrintedPage": 161,
     "nextDependencyPdfPage": 169
   },
@@ -1961,10 +1961,10 @@
     "previousGoalTurnClassification": "no progress",
     "previousTurnEvidence": "Percentage-only checkpoint inspection; no source or content unit completed.",
     "currentTurnClassification": "progress",
-    "currentTurnEvidence": "Seven scoped validated files committed; exact audit-branch remote content hash verified; release receipt prepared.",
+    "currentTurnEvidence": "Scoped maintenance-fluid content and receipt committed and exact remote hashes verified. Eight relevant PN source pages read/rendered, two template details inspected, and the full ASPEN2014 Administration3 section read; source intake recorded without adding clinical closure counts.",
     "genuineBlocker": false,
     "wholeGoalComplete": false,
-    "nextAction": "Finish18remainingpediatricPNbankquestions/12existingbodies/twoembeddedchecks/twofigures/onecumulative andfullmodulemetadata against approvedPNsources. Maintenance100/50/20 calculation questions now verified; do not reread them as pending. Resolve age/development and PNindications/access, glucose/organ context, protein restriction and delivered-intake/growth monitoring. Chapter54 supplied-book PDF729-738/printed721-730 fulltext/tables/images already read; broader chapter mapping/content/question audit remains pending. Preserve pendingEN outside-source exception;Chapter1entry15andChapter11stillreviewing."
+    "nextAction": "Use the recorded monitoring source intake first: repair pedpn-013/106 sampling questions and pedpn-036/107/040 dosing-weight/order-review questions, then finish complete related teaching/checks/figures and QA. Eight relevant source PDF pages and ASPEN2014 Administration3 are already read; preserve newer filter guidance. Finish all 18 pending PN questions and 12 pending bodies; this intake adds zero clinical closure counts. Chapter54 whole-content audit and EN source exception remain pending; Chapter1 entry15 and Chapter11 remain reviewing."
   },
   "latestPediatricPnMaintenanceFluidReview": {
     "evidence": "pediatric-parenteral-nutrition-maintenance-fluid-review.json",
@@ -2122,5 +2122,22 @@
     "wholeChapterVerified": false,
     "broaderChapterMappingPending": true,
     "sourceCaseArithmeticOnly": true
+  },
+  "latestPediatricPnMonitoringSourceIntake": {
+    "evidence": "pediatric-parenteral-nutrition-monitoring-source-intake.json",
+    "status": "source intake completed; content revision and clinical closure pending",
+    "additionalSourceFigureDetailViews": 2,
+    "completePublisherRelevantSection": "ASPEN2014 Administration3",
+    "questionClosureCountAdded": 0,
+    "teachingClosureCountAdded": 0,
+    "verifiedContentCommit": "41158a3e686f91ce91e3acafe30ad639f1383f7c",
+    "verifiedReceiptCommit": "3e5f748c17929cce5a649fc211b37a7b6e594619",
+    "receiptRemoteHashObserved": "3e5f748c17929cce5a649fc211b37a7b6e594619",
+    "privateWorkspace": "/private/tmp/nas-pediatric-pn-monitoring",
+    "receiptRemoteVerification": "Exact hash observed in this goal turn before source intake.",
+    "sourcePdfPagesReadAndViewedThisTurn": 8,
+    "newPrescribingChecklistPages": 3,
+    "additionalFDAPagesFirstRenderedThisUnit": 4,
+    "FDA2021Page17Reverified": true
   }
 }

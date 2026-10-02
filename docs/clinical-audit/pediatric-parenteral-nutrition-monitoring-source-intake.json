@@ -1,0 +1,233 @@
+{
+  "recordedAt": "2026-10-02T03:39:08.471914+00:00",
+  "unit": "Pediatric PN development and monitoring: additional source intake",
+  "baseCommit": "3e5f748c17929cce5a649fc211b37a7b6e594619",
+  "status": "source intake completed; content revision and clinical closure pending",
+  "sourcePolicy": {
+    "authorization": "Existing approved PN source exception: official ASPEN/FDA material and directly linked primary PN guidance.",
+    "suppliedBookRemainsPrimary": true,
+    "outsideENSourcesUsed": false,
+    "incidentalSearchResultsNotAdopted": true
+  },
+  "sources": [
+    {
+      "title": "ASPEN PN Prescribing Checklist",
+      "url": "https://nutritioncare.org/wp-content/uploads/2024/12/PN-Checklist-01-Prescribing.pdf",
+      "documentDate": "2024-12-10",
+      "pdfPages": 3,
+      "completeTextPagesRead": [
+        1,
+        2,
+        3
+      ],
+      "completeRenderedPagesViewed": [
+        1,
+        2,
+        3
+      ],
+      "figureDetailViews": [
+        "Figure 1 adult order template",
+        "Figure 2 pediatric/neonatal order template"
+      ],
+      "tableReviewed": "Table 1: all rows, grouped acute-care/long-term headings, frequency columns, abbreviations, source note, and professional-judgment qualification.",
+      "findings": "The pediatric template expresses component delivery per kilogram per day and identifies the dosing weight. Monitoring depends on care setting and stability. The laboratory table distinguishes baseline, early acute care, stable acute care, and long-term intervals; it does not make one interval universal. Serum proteins are framed as inflammation markers.",
+      "documentSHA256": "fbef951340540989c1966bad8dd747e427f4337c378be10db3051de1766364b3",
+      "newPublicReferenceNotYetAdded": true
+    },
+    {
+      "title": "FDA CLINIMIX labeling, 2021",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2021/020734s037lbl.pdf",
+      "labelReferenceId": "4778063",
+      "completeTextPagesRead": [
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "completeRenderedPagesViewed": [
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "sections": [
+        "4",
+        "5.1-5.11",
+        "6",
+        "8.1 continuation through 8.5"
+      ],
+      "scope": "Relevant complete pages, including pregnancy/lactation/geriatric context; not the full 21-page label and not a current-label claim.",
+      "findings": "The label describes neonatal glycemic vulnerability, immature renal handling, and individualized electrolyte monitoring. It treats hepatobiliary disease as multifactorial and calls for clinical assessment of contributors. Renal dysfunction may require changes to fluid, protein, and electrolyte content. Its peripheral-access warning concerns the specified CLINIMIX formulations; it cannot alone verify every pediatric device claim.",
+      "documentSHA256": "356eeefcf812bfb162ce7e40a7ecf93b61dcad079f90a00a255d0efbcf24e0a8",
+      "numericProductLimitsNotNewlyAdopted": true
+    },
+    {
+      "title": "ASPEN PN Safety Consensus Recommendations, 2014",
+      "url": "https://aspenjournals.onlinelibrary.wiley.com/doi/full/10.1177/0148607113511992",
+      "doi": "10.1177/0148607113511992",
+      "access": "Publisher full-text HTML through web reader; no access-control bypass.",
+      "completeRelevantSectionRead": "Administration 3: all 18 recommendation groups and complete rationale through Documentation, including vascular access, filters, tubing, infusion practices, and medication administration.",
+      "locator": "Publisher section Administration 3; Vascular access rationale; Documentation rationale.",
+      "findings": "Incorrect sampling from a PN-infusing device can produce falsely elevated results and harmful intervention. This supports checking specimen validity while assessing the patient, rather than presuming contamination or ignoring true hyperglycemia. Documentation covers administration times, rate, route, response, and therapeutic progress. The old filter-size scheme differs from the newer verified ASPEN filter position and will not replace it.",
+      "wholeArticleRead": false,
+      "historicalInfusionAndHangTimeRegimensNotAdopted": true
+    },
+    {
+      "title": "ASPEN PN Order Review and Verification Checklist",
+      "url": "https://nutritioncare.org/wp-content/uploads/2024/12/PN-Checklist-02-Order-Review.pdf",
+      "completeTextPagesReRead": [
+        1,
+        2
+      ],
+      "freshRenderedReviewThisTurn": false,
+      "priorCompleteTextAndRenderedReview": "pediatric-parenteral-nutrition-compounding-safety-review.json",
+      "findings": "Review dosing weight, units, current nutrition plan, ingredient doses, volume, rate, and changes from the previous order. A change in measured weight requires reconciling the prescribed dosing weight and clinical plan; it does not automatically mandate proportional increases in all nutrient grams.",
+      "documentSHA256": "13e7e27f9fb85bdced5a63b2301895d84f4811ef1051456117fcf45176723b1e"
+    },
+    {
+      "title": "Supplied RxPrep 2023 Chapter 54",
+      "printedPageReReadAsText": 721,
+      "pdfPageReReadAsText": 729,
+      "freshRenderedReviewThisTurn": false,
+      "priorCompleteTenPageTextAndRenderedReview": "pediatric-conditions-book-source-read.json",
+      "scope": "Developmental physiology and age classifications; not a PN dosing protocol."
+    }
+  ],
+  "privateSourceImageEvidence": [
+    {
+      "name": "prescribing-1.png",
+      "sha256": "31e40eb677e962e8c1876a2510e33762db4ca684bbfb74416e0a145bf4aa49a9",
+      "manuallyViewed": true
+    },
+    {
+      "name": "prescribing-2.png",
+      "sha256": "1d81872123ae0258b40bf43157c7db733733e1c79a13384efffb30d45d0fc8d1",
+      "manuallyViewed": true
+    },
+    {
+      "name": "prescribing-3.png",
+      "sha256": "6955b8f50460de506cab26d222c7233f7103ea8d46e2a58c5afcdad80c36822a",
+      "manuallyViewed": true
+    },
+    {
+      "name": "clinimix-2021-13.png",
+      "sha256": "92ac11afb8b0db62dfade70577456f64d130e05e70ba1c5eed806f8c36da0484",
+      "manuallyViewed": true
+    },
+    {
+      "name": "clinimix-2021-14.png",
+      "sha256": "d3d8efa7b56925f7def94f6fbea7b59f6b056830305ba94cd1fcebefbd926e39",
+      "manuallyViewed": true
+    },
+    {
+      "name": "clinimix-2021-15.png",
+      "sha256": "0b5914be27dd521c3e8c7ed8248ef78c71dbcc30326ba777d338f17d2d0a484a",
+      "manuallyViewed": true
+    },
+    {
+      "name": "clinimix-2021-16.png",
+      "sha256": "b85220219311a1ee946be9c64b7e84ce2dd36bd0355594f558b0fb71f0845c37",
+      "manuallyViewed": true
+    },
+    {
+      "name": "clinimix-2021-17.png",
+      "sha256": "95fbe3bec87606d322d9a774d8f55dc01bf202a13eaaba491d041c2c338176c3",
+      "manuallyViewed": true
+    },
+    {
+      "name": "prescribing-adult-template-detail.png",
+      "sha256": "876d2ab20536166fa248a4de5e183ba27dc1dff963d5ff8b6017f18abd11b86b",
+      "manuallyViewed": true
+    },
+    {
+      "name": "prescribing-pediatric-template-detail.png",
+      "sha256": "f6b53d533583a24b964527687a6016e0d8a6a03beff4e70e01d613ed287d3b0a",
+      "manuallyViewed": true
+    }
+  ],
+  "nextContentTargets": [
+    {
+      "ids": [
+        "pedpn-013",
+        "pedpn-106"
+      ],
+      "action": "Repair implausible choices, distinguish suspected sampling contamination from proven contamination, and preserve prompt clinical assessment with a valid sample. Reconcile remediation anchors with the finished teaching."
+    },
+    {
+      "ids": [
+        "pedpn-036",
+        "pedpn-107"
+      ],
+      "action": "Clarify prescribed dosing weight versus a new scale measurement. Verify weight-based PN delivery without implying every medication or nutrient must increase automatically. Replace generic distractors with specific calculation or order-review errors."
+    },
+    {
+      "ids": [
+        "pedpn-040"
+      ],
+      "action": "Verify current/prior-order comparison against the checklist and replace unrelated room/font distractors."
+    },
+    {
+      "teaching": [
+        "Build from the patient outward",
+        "Use trends to change one coherent plan"
+      ],
+      "action": "Audit complete bodies and add useful sampling/order-reconciliation teaching. Individual risk lists still require full source support; these pages do not close every clause."
+    },
+    {
+      "teaching": [
+        "Define the patient precisely",
+        "Compare more than laboratory values"
+      ],
+      "action": "Complete age/growth and anthropometric-source mapping. The newly read laboratory table does not alone support all growth measurements."
+    }
+  ],
+  "remainingEvidenceGaps": [
+    "Full disease-specific PN indication and pediatric device-selection detail.",
+    "Phototherapy/open-warmer water loss claims.",
+    "Renal protein restriction, catabolic state, dialysis losses, and growth-specific qualifiers.",
+    "Whole delivered-intake/enteral-transition and growth-monitoring bodies.",
+    "Full decision and order figures, two checks, one cumulative item, and module metadata."
+  ],
+  "coverageAfterIntake": {
+    "bank": 100,
+    "newlySourceVerifiedBank": 10,
+    "sourceVerifiedBank": 82,
+    "remainingBank": 18,
+    "bodies": 35,
+    "newlySourceVerifiedBodies": 2,
+    "sourceVerifiedBodies": 23,
+    "remainingBodies": 12,
+    "embeddedChecks": 6,
+    "sourceVerifiedEmbeddedChecks": 4,
+    "remainingEmbeddedChecks": 2,
+    "figures": 6,
+    "sourceVerifiedFigures": 4,
+    "remainingFigures": 2,
+    "cumulative": 5,
+    "sourceVerifiedCumulative": 4,
+    "remainingCumulative": 1,
+    "metadataVerified": false,
+    "wholeModuleVerified": false,
+    "wholeChapterVerified": false
+  },
+  "newlyVerifiedQuestionCount": 0,
+  "newlyVerifiedTeachingBodyCount": 0,
+  "newlyVerifiedFigureCount": 0,
+  "newlyVerifiedEmbeddedCheckCount": 0,
+  "newlyVerifiedCumulativeCount": 0,
+  "newlyCompletedBookChapterCount": 0,
+  "productCodeChanged": false,
+  "requiredNextGates": [
+    "Complete source reconciliation and individual question-choice review",
+    "Implement reviewed corrections",
+    "Independent calculation where applicable",
+    "Final source comparison",
+    "Focused structural validation and isolated build",
+    "Desktop/mobile rendered and saved-progress verification",
+    "Scoped content commit, push, and exact remote receipt"
+  ],
+  "privateSourceAssetsIncludedInGit": false,
+  "wholeGoalComplete": false
+}
