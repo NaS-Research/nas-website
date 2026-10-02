@@ -1,0 +1,727 @@
+{
+  "date": "2026-10-01",
+  "module": "pediatric-parenteral-nutrition",
+  "unit": "Pediatric PN dosing-weight reconciliation, specimen validity and daily order review",
+  "status": "Scoped source, arithmetic and rendered verification passed; whole module incomplete",
+  "baseCommit": "2691673f9582a0a4284376f2db522e453ce87eb7",
+  "sourcePolicy": {
+    "suppliedBookPrimary": true,
+    "approvedOutsidePNReferencesUsed": true,
+    "approvalContinuity": "Existing PN source exception; official ASPEN/FDA and directly linked primary PN guidance.",
+    "outsideENSourcesUsed": false
+  },
+  "sourceRead": {
+    "intakeEvidence": "pediatric-parenteral-nutrition-monitoring-source-intake.json",
+    "reuseScope": "Three complete ASPEN prescribing pages including both template figures and complete monitoring table; complete FDA2021 PDF13-17; full ASPEN2014 Administration3 recommendations/rationale. Both order-checklist text pages rechecked.",
+    "currentRecomparison": "Final five prompts,20choices,keys,rationales,corrected anchor,four whole bodies and four check choices compared with the relevant complete source sections and prior verified book/calculation/compounding/micronutrient evidence.",
+    "bookEvidence": "pediatric-parenteral-nutrition-book-calculations-review.json: completePDF158-168; pediatric-parenteral-nutrition-maintenance-fluid-review.json: PDF158/approved full FDA source pages. No new whole book chapter closure."
+  },
+  "questionReview": [
+    {
+      "question": {
+        "id": "pedpn-013",
+        "question": "A blood glucose sample drawn through a line infusing PN is unexpectedly high. Which response best addresses the result's validity?",
+        "choices": [
+          "Arrange a valid repeat sample while assessing the patient and infusion",
+          "Diagnose diabetes from this result before checking collection conditions",
+          "Assume contamination and dismiss the result without assessing the patient",
+          "Repeat through the same infusing lumen without correcting the collection method"
+        ],
+        "answer": 0,
+        "rationale": "Incorrect collection during PN infusion can falsely elevate laboratory values. Check specimen validity and assess possible true hyperglycemia promptly; neither diabetes nor contamination is established by this result alone.",
+        "reviewHref": "#pediatric-order-monitoring"
+      },
+      "status": "verified",
+      "sourceEvidence": [
+        "ASPEN2014 Administration3 vascular-access rationale: spurious values and harm from intervention",
+        "FDA2021 PDF17 section8.4: neonatal hypo/hyperglycemia vulnerability"
+      ],
+      "oneBestAnswerAndAllAlternativesReviewed": true,
+      "choicesReviewed": [
+        {
+          "text": "Arrange a valid repeat sample while assessing the patient and infusion",
+          "keyed": true,
+          "review": "Valid collection and prompt patient/infusion assessment address both artifact and true hyperglycemia."
+        },
+        {
+          "text": "Diagnose diabetes from this result before checking collection conditions",
+          "keyed": false,
+          "review": "An unvalidated specimen does not establish diabetes."
+        },
+        {
+          "text": "Assume contamination and dismiss the result without assessing the patient",
+          "keyed": false,
+          "review": "Possible contamination does not exclude genuine illness or justify dismissing the result."
+        },
+        {
+          "text": "Repeat through the same infusing lumen without correcting the collection method",
+          "keyed": false,
+          "review": "Repeating the same faulty collection does not establish validity."
+        }
+      ],
+      "stableIdAndAnswerIndexPreserved": true,
+      "correctTextIntentionallyRevised": true
+    },
+    {
+      "question": {
+        "id": "pedpn-036",
+        "question": "A new neonatal PN dosing weight has been confirmed in the nutrition care plan. What should be rechecked?",
+        "choices": [
+          "Weight-based PN doses, GIR, fluid volume, and infusion rate",
+          "Amino-acid dose per kilogram alone, leaving glucose and fluids unchecked",
+          "Yesterday's absolute amounts interpreted with the old dosing weight",
+          "Bag volume alone, without reviewing component doses"
+        ],
+        "answer": 0,
+        "rationale": "A changed prescribed dosing weight changes the interpretation of per-kilogram delivery. Recheck the complete PN order against the current plan; do not automatically increase every ingredient solely because a scale measurement changed.",
+        "reviewHref": "#pediatric-order-monitoring"
+      },
+      "status": "verified",
+      "sourceEvidence": [
+        "ASPENPrescribingChecklist PDF1/2 pediatric dosing weight and amounts/kg/day template",
+        "ASPENOrderReviewChecklist PDF1 current plan, ingredient doses/units, volume/rate, previous order and independent calculations"
+      ],
+      "oneBestAnswerAndAllAlternativesReviewed": true,
+      "choicesReviewed": [
+        {
+          "text": "Weight-based PN doses, GIR, fluid volume, and infusion rate",
+          "keyed": true,
+          "review": "Review the whole weight-based PN prescription against the confirmed dosing weight and plan."
+        },
+        {
+          "text": "Amino-acid dose per kilogram alone, leaving glucose and fluids unchecked",
+          "keyed": false,
+          "review": "Amino acids alone omit glucose and fluid delivery."
+        },
+        {
+          "text": "Yesterday's absolute amounts interpreted with the old dosing weight",
+          "keyed": false,
+          "review": "The prior weight contradicts the newly confirmed prescribed weight."
+        },
+        {
+          "text": "Bag volume alone, without reviewing component doses",
+          "keyed": false,
+          "review": "The same volume may contain different ingredient amounts."
+        }
+      ],
+      "stableIdAndAnswerIndexPreserved": true,
+      "correctTextIntentionallyRevised": true
+    },
+    {
+      "question": {
+        "id": "pedpn-040",
+        "question": "Which comparison is most useful during daily pediatric PN order verification?",
+        "choices": [
+          "Today's weight-based doses, volume, and rate versus the prior order, current nutrition plan, and clinical/laboratory context",
+          "Today's bag volume versus yesterday's bag volume without comparing ingredients",
+          "Today's amino-acid grams versus yesterday's grams while omitting units and dosing weight",
+          "The current component doses versus an adult standard without reviewing the pediatric plan"
+        ],
+        "answer": 0,
+        "rationale": "ASPEN's order-review checklist compares the current and previous orders and checks doses, volume, and rate against the current nutrition care plan. A single unchanged quantity cannot verify the whole pediatric prescription.",
+        "reviewHref": "#pediatric-order-monitoring"
+      },
+      "status": "verified",
+      "sourceEvidence": [
+        "ASPENPrescribingChecklist PDF1/2 pediatric dosing weight and amounts/kg/day template",
+        "ASPENOrderReviewChecklist PDF1 current plan, ingredient doses/units, volume/rate, previous order and independent calculations"
+      ],
+      "oneBestAnswerAndAllAlternativesReviewed": true,
+      "choicesReviewed": [
+        {
+          "text": "Today's weight-based doses, volume, and rate versus the prior order, current nutrition plan, and clinical/laboratory context",
+          "keyed": true,
+          "review": "Current/prior order comparison must also reconcile the current plan, units, volume, rate, and clinical context."
+        },
+        {
+          "text": "Today's bag volume versus yesterday's bag volume without comparing ingredients",
+          "keyed": false,
+          "review": "An unchanged bag volume cannot validate its components."
+        },
+        {
+          "text": "Today's amino-acid grams versus yesterday's grams while omitting units and dosing weight",
+          "keyed": false,
+          "review": "Grams alone omit the dosing-weight denominator and may hide unit errors."
+        },
+        {
+          "text": "The current component doses versus an adult standard without reviewing the pediatric plan",
+          "keyed": false,
+          "review": "An adult standard cannot replace the pediatric nutrition plan."
+        }
+      ],
+      "stableIdAndAnswerIndexPreserved": true,
+      "correctTextIntentionallyRevised": true
+    },
+    {
+      "question": {
+        "id": "pedpn-106",
+        "question": "A neonate receiving PN has an unexpected glucose of 480 mg/dL reported from a sample collected through the infusing lumen. What is the most defensible next action?",
+        "choices": [
+          "Obtain a valid uncontaminated sample while assessing the patient and infusion",
+          "Dismiss the result as contamination without assessing the neonate",
+          "Treat the reported value as confirmed hyperglycemia before checking specimen validity",
+          "Repeat the sample through the same infusing lumen without correcting the collection method"
+        ],
+        "answer": 0,
+        "rationale": "Incorrect sampling during PN infusion can produce falsely elevated results. Assess the neonate and infusion promptly and verify the result with a valid specimen; do not assume either contamination or true hyperglycemia has been established.",
+        "reviewHref": "#pediatric-order-monitoring"
+      },
+      "status": "verified",
+      "sourceEvidence": [
+        "ASPEN2014 Administration3 vascular-access rationale: spurious values and harm from intervention",
+        "FDA2021 PDF17 section8.4: neonatal hypo/hyperglycemia vulnerability"
+      ],
+      "oneBestAnswerAndAllAlternativesReviewed": true,
+      "choicesReviewed": [
+        {
+          "text": "Obtain a valid uncontaminated sample while assessing the patient and infusion",
+          "keyed": true,
+          "review": "Check a valid specimen while promptly assessing the neonate and infusion."
+        },
+        {
+          "text": "Dismiss the result as contamination without assessing the neonate",
+          "keyed": false,
+          "review": "The collection route suggests possible artifact but does not prove it."
+        },
+        {
+          "text": "Treat the reported value as confirmed hyperglycemia before checking specimen validity",
+          "keyed": false,
+          "review": "Treating this value as confirmed ignores specimen validity; the correct response also includes assessment rather than delaying care."
+        },
+        {
+          "text": "Repeat the sample through the same infusing lumen without correcting the collection method",
+          "keyed": false,
+          "review": "A repeat with the same collection defect can reproduce a false result."
+        }
+      ],
+      "stableIdAndAnswerIndexPreserved": true,
+      "correctTextIntentionallyRevised": false,
+      "remediationCorrection": "Fluid/glucose anchor changed to the order-monitoring lesson containing specimen-validity teaching."
+    },
+    {
+      "question": {
+        "id": "pedpn-107",
+        "question": "The team confirms a change in a neonate's PN dosing weight from 1.1 to 1.3 kg. Yesterday's order, including 2.2 g/day of amino acids, is copied unchanged. What is the most defensible next action?",
+        "choices": [
+          "Recalculate weight-based delivery and reconcile each component with the current nutrition care plan",
+          "Increase every ingredient in direct proportion to the weight change without reviewing targets",
+          "Keep the old dosing weight because the daily amino-acid grams are unchanged",
+          "Check bag volume alone without recalculating per-kilogram nutrient delivery"
+        ],
+        "answer": 0,
+        "rationale": "The copied amino-acid amount supplies 2 g/kg/day at 1.1 kg but about 1.69 g/kg/day at 1.3 kg. Review the prescribed weight, target, GIR, fluid, and rate; the new weight alone does not authorize increasing every ingredient.",
+        "reviewHref": "#pediatric-order-monitoring"
+      },
+      "status": "verified",
+      "sourceEvidence": [
+        "ASPENPrescribingChecklist PDF1/2 pediatric dosing weight and amounts/kg/day template",
+        "ASPENOrderReviewChecklist PDF1 current plan, ingredient doses/units, volume/rate, previous order and independent calculations"
+      ],
+      "oneBestAnswerAndAllAlternativesReviewed": true,
+      "choicesReviewed": [
+        {
+          "text": "Recalculate weight-based delivery and reconcile each component with the current nutrition care plan",
+          "keyed": true,
+          "review": "Recalculate delivery per kilogram and reconcile the prescribed target and complete order."
+        },
+        {
+          "text": "Increase every ingredient in direct proportion to the weight change without reviewing targets",
+          "keyed": false,
+          "review": "A proportional increase in every ingredient is not automatically authorized by a dosing-weight change."
+        },
+        {
+          "text": "Keep the old dosing weight because the daily amino-acid grams are unchanged",
+          "keyed": false,
+          "review": "Unchanged absolute grams do not justify retaining an obsolete prescribed weight."
+        },
+        {
+          "text": "Check bag volume alone without recalculating per-kilogram nutrient delivery",
+          "keyed": false,
+          "review": "Bag volume alone omits the changed per-kilogram delivery."
+        }
+      ],
+      "stableIdAndAnswerIndexPreserved": true,
+      "correctTextIntentionallyRevised": true,
+      "independentArithmetic": {
+        "unchangedAminoAcidsGPerDay": "2.2",
+        "priorDosingWeightKg": "1.1",
+        "newDosingWeightKg": "1.3",
+        "priorDoseGPerKgPerDay": "2",
+        "newDoseUnroundedGPerKgPerDay": "1.692307692307692307692307692",
+        "newDoseRoundedGPerKgPerDay": "1.69",
+        "conditionalTargetGPerKgPerDay": "2",
+        "conditionalDailyAmountG": "2.6"
+      }
+    }
+  ],
+  "verifiedBankIds": [
+    "pedpn-003",
+    "pedpn-008",
+    "pedpn-009",
+    "pedpn-010",
+    "pedpn-013",
+    "pedpn-014",
+    "pedpn-015",
+    "pedpn-017",
+    "pedpn-018",
+    "pedpn-019",
+    "pedpn-020",
+    "pedpn-021",
+    "pedpn-022",
+    "pedpn-023",
+    "pedpn-024",
+    "pedpn-025",
+    "pedpn-026",
+    "pedpn-027",
+    "pedpn-028",
+    "pedpn-029",
+    "pedpn-030",
+    "pedpn-031",
+    "pedpn-032",
+    "pedpn-033",
+    "pedpn-034",
+    "pedpn-035",
+    "pedpn-036",
+    "pedpn-040",
+    "pedpn-050",
+    "pedpn-051",
+    "pedpn-052",
+    "pedpn-053",
+    "pedpn-054",
+    "pedpn-055",
+    "pedpn-056",
+    "pedpn-057",
+    "pedpn-058",
+    "pedpn-059",
+    "pedpn-060",
+    "pedpn-061",
+    "pedpn-062",
+    "pedpn-063",
+    "pedpn-064",
+    "pedpn-065",
+    "pedpn-066",
+    "pedpn-067",
+    "pedpn-068",
+    "pedpn-069",
+    "pedpn-070",
+    "pedpn-071",
+    "pedpn-072",
+    "pedpn-073",
+    "pedpn-074",
+    "pedpn-075",
+    "pedpn-076",
+    "pedpn-077",
+    "pedpn-078",
+    "pedpn-079",
+    "pedpn-080",
+    "pedpn-081",
+    "pedpn-082",
+    "pedpn-083",
+    "pedpn-084",
+    "pedpn-085",
+    "pedpn-086",
+    "pedpn-087",
+    "pedpn-088",
+    "pedpn-089",
+    "pedpn-090",
+    "pedpn-091",
+    "pedpn-092",
+    "pedpn-093",
+    "pedpn-094",
+    "pedpn-095",
+    "pedpn-096",
+    "pedpn-097",
+    "pedpn-098",
+    "pedpn-099",
+    "pedpn-100",
+    "pedpn-101",
+    "pedpn-102",
+    "pedpn-103",
+    "pedpn-104",
+    "pedpn-105",
+    "pedpn-106",
+    "pedpn-107",
+    "pedpn-109"
+  ],
+  "newlyVerifiedBankIds": [
+    "pedpn-013",
+    "pedpn-036",
+    "pedpn-040",
+    "pedpn-106",
+    "pedpn-107"
+  ],
+  "pendingQuestionIds": [
+    "pedpn-001",
+    "pedpn-002",
+    "pedpn-004",
+    "pedpn-005",
+    "pedpn-006",
+    "pedpn-007",
+    "pedpn-011",
+    "pedpn-012",
+    "pedpn-016",
+    "pedpn-037",
+    "pedpn-038",
+    "pedpn-039",
+    "pedpn-108"
+  ],
+  "teachingReview": [
+    {
+      "heading": "Build from the patient outward",
+      "body": "Start with a verified dosing weight and total fluid allowance. Subtract non-PN fluids. Calculate amino acids, GIR and dextrose grams, lipid grams and volume, electrolytes, minerals, vitamins, trace elements, and sterile water. Confirm final concentration, osmolarity screen, compatibility, route, infusion time, and rate.",
+      "status": "verified",
+      "newBody": false,
+      "sourceEvidence": [
+        {
+          "clauses": "Dosing weight, components, volume, schedule and rate",
+          "sources": [
+            "ASPEN prescribing PDF1 and pediatric template PDF2",
+            "ASPEN order review PDF1"
+          ]
+        },
+        {
+          "clauses": "Remaining PN fluid allowance after other sources",
+          "sources": [
+            "Verified maintenance-fluid review: complete FDA2018 PDF5-6/8-9 and bookPDF158"
+          ]
+        },
+        {
+          "clauses": "Amino acids, GIR/dextrose, lipid grams and volume",
+          "sources": [
+            "Verified book-calculations review: complete bookPDF158-168 and independent calculations",
+            "Verified preterm/lipid review with product-specific limits"
+          ]
+        },
+        {
+          "clauses": "Electrolytes, minerals, vitamins and trace elements",
+          "sources": [
+            "Verified micronutrient review and full source tables/labels",
+            "ASPEN prescribing PDF1"
+          ]
+        },
+        {
+          "clauses": "Sterile water, final concentration, compatibility and route",
+          "sources": [
+            "ASPEN prescribing PDF2 final active concentrations",
+            "ASPEN order review PDF1/2 final-volume and stability considerations",
+            "Verified compounding-safety review"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Reconcile the prescribed dosing weight",
+      "body": "Use the dosing weight in the current nutrition care plan. When that weight changes, recheck nutrient amounts per kilogram, GIR, fluid volume, and infusion rate. For example, 2.2 g of amino acids per day supplies 2 g/kg/day at 1.1 kg but about 1.69 g/kg/day at 1.3 kg. If the assessed target remains 2 g/kg/day at the newly prescribed 1.3 kg dosing weight, the daily amount would be 2.6 g. Verify the weight and target before changing the order; a new scale measurement does not automatically authorize a proportional increase in every ingredient.",
+      "status": "verified",
+      "newBody": true,
+      "sourceEvidence": [
+        "ASPEN prescribing PDF1/2 and order review PDF1; independent decimal calculation; conditional target does not prescribe a universal neonatal dose."
+      ]
+    },
+    {
+      "heading": "Validate an unexpected glucose result",
+      "body": "A sample collected incorrectly through a line infusing PN can have a falsely elevated glucose result. Assess the patient and the infusion promptly while arranging a valid specimen under the local blood-sampling policy. Do not assume contamination has been proved, dismiss possible true hyperglycemia, or change treatment solely from a potentially contaminated result. Newborns, especially premature infants, are vulnerable to both low and high glucose. Specimen validity and clinical assessment belong in the same review.",
+      "status": "verified",
+      "newBody": true,
+      "sourceEvidence": [
+        "ASPEN2014 Administration3 vascular-access rationale",
+        "FDA2021 PDF17 fullsection8.4",
+        "No sample-discard volume, insulin algorithm or mandatory treatment delay introduced."
+      ]
+    },
+    {
+      "heading": "Compare today's order with yesterday's",
+      "body": "Compare the current and previous prescriptions with the current nutrition care plan. Check ingredient doses and units, dosing weight, total volume, infusion schedule and rate, route, and relevant clinical and laboratory findings. Investigate substantial changes and missing additives, and independently check calculations or unit conversions. Confirm compatibility and stability at the final concentrations before approving preparation. Matching yesterday's bag volume alone cannot establish that today's component doses are appropriate.",
+      "status": "verified",
+      "newBody": true,
+      "sourceEvidence": [
+        "ASPEN order-review fullPDF1: previous/current order, current nutrition plan, missing additives and independent calculations",
+        "ASPEN prescribing PDF2: final active concentrations and compatibility/stability"
+      ]
+    }
+  ],
+  "embeddedReview": {
+    "lesson": "pediatric-order-monitoring",
+    "question": {
+      "question": "What is the most important first step when reviewing a new pediatric PN order?",
+      "choices": [
+        "Verify the prescribed dosing weight and current nutrition care plan",
+        "Reuse yesterday's absolute doses because the bag volume is unchanged",
+        "Check amino-acid grams while omitting dextrose delivery and total fluids",
+        "Approve ingredient doses before confirming per-kilogram versus per-day units"
+      ],
+      "answer": 0,
+      "rationale": "Verify the dosing weight and current plan before interpreting weight-based delivery. Then review every component, its units, volume, rate, route, and compatibility; an unchanged bag volume does not validate the whole order.",
+      "reviewHref": "#pediatric-order-monitoring"
+    },
+    "status": "verified",
+    "allChoicesReviewed": [
+      {
+        "text": "Verify the prescribed dosing weight and current nutrition care plan",
+        "review": "Verify weight and the current plan before interpreting weight-based delivery."
+      },
+      {
+        "text": "Reuse yesterday's absolute doses because the bag volume is unchanged",
+        "review": "Unchanged bag volume does not validate yesterday's component amounts today."
+      },
+      {
+        "text": "Check amino-acid grams while omitting dextrose delivery and total fluids",
+        "review": "Checking one nutrient omits the remainder of the fluid/glucose order."
+      },
+      {
+        "text": "Approve ingredient doses before confirming per-kilogram versus per-day units",
+        "review": "Per-kilogram versus per-day units must be confirmed before approving doses."
+      }
+    ],
+    "sourceEvidence": [
+      "ASPEN prescribing PDF1/2 dosing weight/current plan/units",
+      "ASPEN order-review PDF1 full order review"
+    ],
+    "correctAndWrongStatesAndSavedProgressVerified": true
+  },
+  "referenceReview": {
+    "addedReferences": [
+      {
+        "label": "ASPEN. PN Prescribing Checklist, 2024",
+        "href": "https://nutritioncare.org/wp-content/uploads/2024/12/PN-Checklist-01-Prescribing.pdf"
+      },
+      {
+        "label": "ASPEN. PN Safety Consensus Recommendations, 2014: Sampling and Order Verification",
+        "href": "https://aspenjournals.onlinelibrary.wiley.com/doi/full/10.1177/0148607113511992"
+      },
+      {
+        "label": "FDA. CLINIMIX Label, 2021: Pediatric Glycemic and Monitoring Precautions",
+        "href": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2021/020734s037lbl.pdf"
+      }
+    ],
+    "prior21ReferencesPreserved": true,
+    "all24LabelsAndHrefsRenderedExact": true,
+    "historicalLabelAndConsensusDatesExplicit": true,
+    "wholeModuleMetadataVerified": false
+  },
+  "sourceDiscrepancies": [
+    {
+      "issue": "Previous questions used a scale-weight change to imply every nutrient and medication must be adjusted automatically.",
+      "resolution": "Confirm the prescribed PN dosing weight and reconcile delivery with the current plan; do not impose automatic proportional increases or assert review of every medication."
+    },
+    {
+      "issue": "Sampling case106 linked to fluid/glucose despite specimen-validity teaching in order monitoring.",
+      "resolution": "Corrected the anchor; preserved the patient-assessment component of the correct response."
+    },
+    {
+      "issue": "The 2014 consensus gives a historical filter-size scheme superseded by the previously verified2021 ASPEN position.",
+      "resolution": "Only sampling/order-verification evidence adopted here; newer filtration teaching and all six figures preserved."
+    }
+  ],
+  "coverage": {
+    "bank": 100,
+    "newlySourceVerifiedBank": 5,
+    "sourceVerifiedBank": 87,
+    "remainingBank": 13,
+    "bodies": 38,
+    "newlySourceVerifiedBodies": 4,
+    "sourceVerifiedBodies": 27,
+    "remainingBodies": 11,
+    "embeddedChecks": 6,
+    "sourceVerifiedEmbeddedChecks": 5,
+    "remainingEmbeddedChecks": 1,
+    "figures": 6,
+    "sourceVerifiedFigures": 4,
+    "remainingFigures": 2,
+    "cumulative": 5,
+    "sourceVerifiedCumulative": 4,
+    "remainingCumulative": 1,
+    "metadataVerified": false,
+    "wholeModuleVerified": false,
+    "wholeChapterVerified": false
+  },
+  "preservation": {
+    "all100BankIdsAndAnswerIndicesPreserved": true,
+    "95OtherQuestionObjectsUnchanged": true,
+    "samplingCase106RemediationAnchorCorrected": true,
+    "all1180CumulativeObjectsUnchanged": true,
+    "all35ExistingTeachingBodiesUnchanged": true,
+    "fiveOtherLessonObjectsUnchanged": true,
+    "fiveOtherEmbeddedChecksUnchanged": true,
+    "allSixFigureFilesUnchanged": true,
+    "all21PriorReferencesPreserved": true,
+    "newAssessmentObjects": 0
+  },
+  "calculationEvidence": {
+    "independentWorkedExample": {
+      "unchangedAminoAcidsGPerDay": "2.2",
+      "priorDosingWeightKg": "1.1",
+      "newDosingWeightKg": "1.3",
+      "priorDoseGPerKgPerDay": "2",
+      "newDoseUnroundedGPerKgPerDay": "1.692307692307692307692307692",
+      "newDoseRoundedGPerKgPerDay": "1.69",
+      "conditionalTargetGPerKgPerDay": "2",
+      "conditionalDailyAmountG": "2.6"
+    },
+    "runningAssessmentCalculations": 728,
+    "runningSeparateCompletedBookExercises": 98,
+    "oneWorkedExampleNotAddedToAssessmentOrBookTotals": true
+  },
+  "validation": {
+    "focusedStructure": {
+      "status": "passed",
+      "questions": 100,
+      "command": "node --loader ./scripts/esm-alias-loader.mjs scripts/audit-pharmacy-assessments.mjs --module pediatric-parenteral-nutrition",
+      "initialInvocationFailure": "Missing alias loader; corrected using the repository loader and reran successfully."
+    },
+    "isolatedBuild": {
+      "status": "passed",
+      "staticPages": 567,
+      "command": "next build --webpack",
+      "scope": "Exact archived base plus only two scoped codefiles and existing node_modules; unrelated drafts/env/private sources excluded."
+    },
+    "browser": {
+      "status": "passed",
+      "results": [
+        {
+          "module": "pediatric-parenteral-nutrition",
+          "width": 1440,
+          "renderedBodies": 38,
+          "expandedBodyViews": 4,
+          "bankItemsCorrectWrong": 5,
+          "cumulativeRuntimeItems": 5,
+          "sourceVerifiedCumulativeInThisUnit": 0,
+          "sourceVerifiedChecksThisUnit": 1,
+          "wholeParentCumulativeClinicalSourceClosure": false,
+          "groups": 1,
+          "remediationAndSavedProgress": true
+        },
+        {
+          "module": "pediatric-parenteral-nutrition",
+          "width": 390,
+          "renderedBodies": 38,
+          "expandedBodyViews": 4,
+          "bankItemsCorrectWrong": 5,
+          "cumulativeRuntimeItems": 5,
+          "sourceVerifiedCumulativeInThisUnit": 0,
+          "sourceVerifiedChecksThisUnit": 1,
+          "wholeParentCumulativeClinicalSourceClosure": false,
+          "groups": 1,
+          "remediationAndSavedProgress": true
+        }
+      ],
+      "pageErrors": []
+    },
+    "manualRenderedReview": {
+      "status": "passed",
+      "allPairsManuallyViewed": true,
+      "pairs": [
+        {
+          "image": "view-00.png",
+          "label": "pedpn-013 correct",
+          "sha256": "b258b51cb7a86f7e807da3deceed46d168bb48737566a369be19a34a12717aae"
+        },
+        {
+          "image": "view-01.png",
+          "label": "pedpn-013 wrong",
+          "sha256": "e1b6ea4821e975d360e3b0d7922604290d833032b17f68797ecef5ca77ec7583"
+        },
+        {
+          "image": "view-02.png",
+          "label": "pedpn-036 correct",
+          "sha256": "869155723e35dca092fc17030812973de2c78c5a9218fd728d7f4f417e2bb5c5"
+        },
+        {
+          "image": "view-03.png",
+          "label": "pedpn-036 wrong",
+          "sha256": "708050992ee22ab2991e10d966fdd7ba6fe670a4ab50723f0bbf3838ec56c662"
+        },
+        {
+          "image": "view-04.png",
+          "label": "pedpn-040 correct",
+          "sha256": "d048ef5905f50ecab80325361bc0883a8485ce5d8ad30dcd2314daf83ae13dbf"
+        },
+        {
+          "image": "view-05.png",
+          "label": "pedpn-040 wrong",
+          "sha256": "352e6a4b4e6345eaedbe96800a3f788109b369d7678e767e8fac0e46dc91b641"
+        },
+        {
+          "image": "view-06.png",
+          "label": "pedpn-106 correct",
+          "sha256": "709821bde153404ec9d1e934357d230a78205a5dab98e9debbb7a7563fd18fc3"
+        },
+        {
+          "image": "view-07.png",
+          "label": "pedpn-106 wrong",
+          "sha256": "ba089fc6af33ef7f8f92a4e143bf8c3165e2553d83f0ce66c51c659f880050f4"
+        },
+        {
+          "image": "view-08.png",
+          "label": "pedpn-107 correct",
+          "sha256": "d24736b6d0d9c3ce314fad7256b541f1edea01539d522f5eea4f35ebbe428ece"
+        },
+        {
+          "image": "view-09.png",
+          "label": "pedpn-107 wrong",
+          "sha256": "a61e1d8861a42f98bae2ed5f80b165e20cbdbb761a8d498c82d46bbbbc365e8b"
+        },
+        {
+          "image": "view-10.png",
+          "label": "Build from the patient outward",
+          "sha256": "c53abf3d8f43c6a131b12335e6fba8ee753102f1a0e7fa02166b64c99775fb6e"
+        },
+        {
+          "image": "view-11.png",
+          "label": "Reconcile the prescribed dosing weight",
+          "sha256": "aaa5e93c8259e41f01233aab8439a543a2c96478f3a73b00b51cc626be269b24"
+        },
+        {
+          "image": "view-12.png",
+          "label": "Validate an unexpected glucose result",
+          "sha256": "ca48e0cf3ac79d7db536a014896af6d2f5bc5d566b25745dfb7c9f967b1b72b0"
+        },
+        {
+          "image": "view-13.png",
+          "label": "Compare today's order with yesterday's",
+          "sha256": "1fa2c08e1ca3b3393850d6f31c8c6e499d01b1ff45a77927eb89658ecdd38d91"
+        },
+        {
+          "image": "view-14.png",
+          "label": "Order embedded check correct",
+          "sha256": "0674b00a1de0d85f29e5318aadc7e6aab964e96824b6b07e521f2118d835f7f0"
+        },
+        {
+          "image": "view-15.png",
+          "label": "Order embedded check wrong",
+          "sha256": "d41da0e2e11d74db3dbb084efdc0901d0df2e5350e5540459eee655df94cf7fb"
+        },
+        {
+          "image": "view-16.png",
+          "label": "Source references",
+          "sha256": "5bbd721bbbb276d7d2b38db7cd751a2dd480a1a79a26e37cceda88290218ba7f"
+        }
+      ],
+      "checkedAt": "2026-10-02T03:51:58.891731+00:00",
+      "notes": "All17 desktop/mobile pairs manually viewed: ten correct/wrong question states, four complete teaching bodies, two embedded-check states, and all24 references. No clipped text, overlapping choices, incorrect feedback key, or arithmetic defect."
+    },
+    "contentHashes": {
+      "src/data/modules/pediatricParenteralNutrition.js": "479959cb61d486fad9cc928d14c5addac85a8a70afac17d40fb5e2de466fcfaf",
+      "src/data/questionBanks/pediatricParenteralNutrition.js": "9459d6b2084dfd3b4c1df5f9e40fc534504752da427a19b4028a5699848a10ac"
+    },
+    "runtime320Overflow": true,
+    "moduleSavedAttemptsPerViewport": 2,
+    "moduleBestScore": 10,
+    "moduleLatestScore": 0,
+    "orderCheckSavedAttemptsPerViewport": 2,
+    "orderCheckBestScore": 1,
+    "orderCheckLatestScore": 0,
+    "all1180CumulativeObjectsUnchanged": true,
+    "newCumulativeClinicalClosures": 0,
+    "newFigureClosures": 0
+  },
+  "release": {
+    "branch": "audit/rxprep-content-2026-09-24",
+    "commit": "pending",
+    "push": "pending",
+    "receipt": "sequential-release-pediatric-pn-order-monitoring-2026-10-01.json",
+    "mainMerge": "not performed",
+    "production": "not verified"
+  },
+  "nextAction": "Finish all13remaining pediatricPN questions and11original bodies, decision check, decision/order figures, development cumulative item and full metadata. Use approved PN sources for development/indications/access, complete fluid ledger and water losses, glucose/organ context, protein restriction and growth/delivered-intake/enteral transition. Sampling013/106 and order036/040/107 plus order check are verified; do not repeat them as pending. Chapter1entry15 and Chapter11 remain reviewing; Chapter54 source reading is recorded but its broader audit remains pending. EN outside-source exception remains unresolved."
+}
