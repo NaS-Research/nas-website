@@ -1,0 +1,997 @@
+{
+  "recordedAt": "2026-10-02T18:05:00.274166+00:00",
+  "baseCommit": "de1d934a4087c7172c54457ce30cd8492ac42d7a",
+  "unit": "Enteral nutrition gastric/postpyloric access and individualized delivery",
+  "approval": {
+    "text": "I approve all. continue working",
+    "scope": "Approved supplemental ASPEN/SCCM EN primary guidance and FDA sources; pediatric AuSPEN consensus in JPEN added within approved EN source review. Approval persists."
+  },
+  "sources": [
+    {
+      "id": "safe2017",
+      "url": "https://aspenjournals.onlinelibrary.wiley.com/doi/full/10.1177/0148607116673053",
+      "sourceYear": 2017,
+      "read": "Complete Q4.1 access selection recommendations and rationale; complete Q6.2 administration recommendations/rationale and all Table4 rows; complete Q6.3 aspiration recommendations/rationale; complete Q6.7 schedules/interruptions recommendations/rationale; complete Q6.11 actual delivery recommendations/rationale. Publisher text and read-only visible DOM used.",
+      "visuals": "Table4 rendered top/bottom and horizontal left/middle/right views inspected because long cells require horizontal scrolling. No figure/table within adopted Q4.1/Q6.3/Q6.7/Q6.11.",
+      "limits": "Full paper not audited. No new flush amount, hold interval, refeeding protocol, infant positioning rule, diagnostic test, or clinical dose adopted. Published corrigendum reviewed in prior access-safety unit; corrected preoperative fasting not adopted here. Dated consensus source, not a claim of latest2026 guidance."
+    },
+    {
+      "id": "sccm2016",
+      "url": "https://sccmmedia.sccm.org/documents/LearnICU/Guidelines/Nutrition-SCCM-ASPEN.pdf",
+      "sourceYear": 2016,
+      "read": "Complete B4a/B4b recommendations and shared rationale (PDF8–9, printed397–398); complete D4/D4a/D4b recommendations and rationale (PDF12–13, printed401–402). B5 complete source review retained from prior decision unit for worsening-shock distractor in024.",
+      "visuals": "Source PDF9 rendered and Figures4/5 fully inspected. No quantitative comparative outcome estimate adopted; no mortality benefit or aspiration elimination claimed. Figure6 belongs to prior D3 protocol rationale, Figure7 to D4c prokinetics; neither adopted here.",
+      "limits": "Critically ill adult population. Continuous delivery recommendation for high-risk/bolus-intolerant adults is expert consensus; not a universal requirement for all adults."
+    },
+    {
+      "id": "auspen2024",
+      "url": "https://aspenjournals.onlinelibrary.wiley.com/doi/10.1002/jpen.2615",
+      "sourceYear": 2024,
+      "title": "A clinical consensus paper on jejunal tube feeding in children",
+      "read": "Abstract population/methods, introduction gastric/postpyloric distinctions, and complete Clinical use of JT section recommendations and rationale (publisher HTML423–440).",
+      "visuals": "No table/figure in adopted Clinical use section. Table1 methods and Table2 indications are outside adopted pediatric-delivery claims; no table closure claimed.",
+      "limits": "AuSPEN pediatric consensus published in JPEN, not an American ASPEN adult guideline. Continuous pump delivery is explicitly pediatric and levelV consensus. Full paper not audited; no new formula, osmolarity, micronutrient, flush, or complication protocol adopted."
+    },
+    {
+      "id": "priorBook",
+      "evidence": "enteral-nutrition-book-route-water-review.json, enteral-nutrition-book-safety-coverage-review.json, and enteral-nutrition-book-calculations-review.json",
+      "read": "Previously verified private RxPrep2023 route distinctions and delivered-volume/rate arithmetic are retained. No new book exercise or calculation closure in this unit.",
+      "limits": "Book kept private; this supplemental primary-source unit does not close Chapter11 or the full module."
+    }
+  ],
+  "questionReview": [
+    {
+      "question": {
+        "id": "enteral-nutrition-009",
+        "question": "For a patient with adequate gastric function and low aspiration risk, which feeding destination offers the most flexibility for bolus, intermittent, or continuous schedules?",
+        "choices": [
+          "Gastric access",
+          "Jejunal access regardless of tolerance",
+          "Postpyloric access solely to increase the size of boluses",
+          "Either gastric or jejunal access with identical schedule options"
+        ],
+        "answer": 0,
+        "rationale": "Gastric access supports multiple schedules when gastric function, tolerance, and aspiration risk permit. Jejunal schedules are more limited and generally use controlled delivery. Do not select a postpyloric destination simply to permit larger boluses; tip location affects the feeding plan.",
+        "reviewHref": "#access-route"
+      },
+      "status": "verified",
+      "stemVerified": true,
+      "oneBestAnswerVerified": true,
+      "rationaleVerified": true,
+      "sourceEvidence": [
+        "safe2017Q4.1/Q6.7, full rationale",
+        "auspen2024 introduction, gastric flexibility"
+      ],
+      "choicesReviewed": [
+        {
+          "text": "Gastric access",
+          "keyed": true,
+          "review": "Gastric function/tolerance/risk in stem permits the stated schedule flexibility."
+        },
+        {
+          "text": "Jejunal access regardless of tolerance",
+          "keyed": false,
+          "review": "Jejunal schedule options remain limited and tolerance matters."
+        },
+        {
+          "text": "Postpyloric access solely to increase the size of boluses",
+          "keyed": false,
+          "review": "Postpyloric selection is not a method for obtaining larger boluses."
+        },
+        {
+          "text": "Either gastric or jejunal access with identical schedule options",
+          "keyed": false,
+          "review": "Tip destinations have different schedule constraints."
+        }
+      ]
+    },
+    {
+      "question": {
+        "id": "enteral-nutrition-010",
+        "question": "Which adequately resuscitated, stable adult with a usable small intestine most strongly warrants reassessment for postpyloric feeding?",
+        "choices": [
+          "Persistent aspiration risk with severe gastroparesis despite preventive measures",
+          "Normal gastric emptying, good gastric tolerance, and low aspiration risk",
+          "Good gastric tolerance but a longer anticipated duration of feeding",
+          "Adequate gastric feeding with a preference for a simpler home schedule"
+        ],
+        "answer": 0,
+        "rationale": "Severe gastroparesis with persistent aspiration risk supports assessment for small bowel access. Normal emptying and tolerance do not establish that need; longer duration concerns access longevity, and home convenience alone does not justify bypassing a usable stomach. Postpyloric feeding does not eliminate aspiration.",
+        "reviewHref": "#access-route"
+      },
+      "status": "verified",
+      "stemVerified": true,
+      "oneBestAnswerVerified": true,
+      "rationaleVerified": true,
+      "sourceEvidence": [
+        "safe2017Q4.1/Q6.3 full recommendations/rationale",
+        "sccm2016B4a/D4a"
+      ],
+      "choicesReviewed": [
+        {
+          "text": "Persistent aspiration risk with severe gastroparesis despite preventive measures",
+          "keyed": true,
+          "review": "Severe gastroparesis plus persistent aspiration risk supports small bowel assessment when distal gut usable and stable."
+        },
+        {
+          "text": "Normal gastric emptying, good gastric tolerance, and low aspiration risk",
+          "keyed": false,
+          "review": "Normal emptying/good tolerance/low risk does not indicate bypass."
+        },
+        {
+          "text": "Good gastric tolerance but a longer anticipated duration of feeding",
+          "keyed": false,
+          "review": "Longer duration alone does not establish a distal destination."
+        },
+        {
+          "text": "Adequate gastric feeding with a preference for a simpler home schedule",
+          "keyed": false,
+          "review": "Simpler home schedule alone does not establish need to bypass stomach."
+        }
+      ]
+    },
+    {
+      "question": {
+        "id": "enteral-nutrition-011",
+        "question": "Why does the 2024 AuSPEN pediatric consensus recommend continuous pump delivery for children receiving jejunal feeds?",
+        "choices": [
+          "The jejunum has limited reservoir capacity compared with the stomach",
+          "Jejunal access prevents absorption of all enteral nutrients",
+          "A jejunal tip provides the same bolus-volume flexibility as a gastric tip",
+          "A pump eliminates the need to monitor jejunal feeding tolerance"
+        ],
+        "answer": 0,
+        "rationale": "The pediatric consensus recommends continuous pump delivery because the jejunum has limited reservoir capacity; boluses may cause intolerance and dumping physiology. Jejunal feeding can provide nutrition, but gastric and jejunal schedules are not interchangeable, and tolerance still requires monitoring. This pediatric recommendation does not establish a mandatory 24-hour adult schedule.",
+        "reviewHref": "#access-route"
+      },
+      "status": "verified",
+      "stemVerified": true,
+      "oneBestAnswerVerified": true,
+      "rationaleVerified": true,
+      "sourceEvidence": [
+        "auspen2024Clinical use of JT continuous-pump recommendation and reservoir/dumping rationale",
+        "safe2017Q6.7 adult periodic-continuous schedule distinction"
+      ],
+      "choicesReviewed": [
+        {
+          "text": "The jejunum has limited reservoir capacity compared with the stomach",
+          "keyed": true,
+          "review": "Limited jejunal reservoir is the stated pediatric consensus rationale."
+        },
+        {
+          "text": "Jejunal access prevents absorption of all enteral nutrients",
+          "keyed": false,
+          "review": "Jejunal feeding can provide nutrition, so absence of absorption is false."
+        },
+        {
+          "text": "A jejunal tip provides the same bolus-volume flexibility as a gastric tip",
+          "keyed": false,
+          "review": "Gastric and jejunal delivery flexibility differ."
+        },
+        {
+          "text": "A pump eliminates the need to monitor jejunal feeding tolerance",
+          "keyed": false,
+          "review": "Pump delivery does not replace monitoring."
+        }
+      ]
+    },
+    {
+      "question": {
+        "id": "enteral-nutrition-017",
+        "question": "A stable adult with jejunal access develops intolerance during large, rapid feedings. Which delivery change is most appropriate to assess?",
+        "choices": [
+          "Continuous pump delivery at an individualized rate",
+          "Keep the same rapid boluses because the prescribed daily volume is correct",
+          "Use a shorter running time and increase the rate without assessing tolerance",
+          "Select the rate from the bag volume alone without a daily schedule"
+        ],
+        "answer": 0,
+        "rationale": "Assess controlled continuous delivery and set the rate and running hours according to the prescribed volume and tolerance. Jejunal schedules are more limited than gastric schedules. A correct daily target does not establish that rapid delivery is tolerated; shortening the schedule raises the required rate, and container volume alone does not define the plan.",
+        "reviewHref": "#delivery-prescription"
+      },
+      "status": "verified",
+      "stemVerified": true,
+      "oneBestAnswerVerified": true,
+      "rationaleVerified": true,
+      "sourceEvidence": [
+        "safe2017Q6.7 all recommendations/rationale; Q6.2 prescribed delivery changes"
+      ],
+      "choicesReviewed": [
+        {
+          "text": "Continuous pump delivery at an individualized rate",
+          "keyed": true,
+          "review": "Controlled infusion schedule is appropriate to assess for rapid-feed intolerance; individualized rate, not a fixed starting dose."
+        },
+        {
+          "text": "Keep the same rapid boluses because the prescribed daily volume is correct",
+          "keyed": false,
+          "review": "Daily volume does not demonstrate tolerable delivery speed."
+        },
+        {
+          "text": "Use a shorter running time and increase the rate without assessing tolerance",
+          "keyed": false,
+          "review": "Shorter running time raises rate for same goal and requires tolerance assessment."
+        },
+        {
+          "text": "Select the rate from the bag volume alone without a daily schedule",
+          "keyed": false,
+          "review": "Container volume alone does not define schedule/rate."
+        }
+      ]
+    },
+    {
+      "question": {
+        "id": "enteral-nutrition-019",
+        "question": "For a patient who tolerates the prescribed rate and daily volume, what is a practical advantage of a cyclic pump-feeding schedule?",
+        "choices": [
+          "It provides a feeding-free interval while maintaining controlled pump delivery",
+          "Its off-feeding interval establishes that daytime oral intake is adequate",
+          "Its shorter running time preserves the same daily volume without changing the rate",
+          "Its use establishes that the tube destination no longer affects the schedule"
+        ],
+        "answer": 0,
+        "rationale": "A cyclic schedule provides controlled infusion during a defined part of the day and time off feeding that may fit activity or home routines. Appetite and oral intake still need assessment. Fewer running hours at an unchanged rate reduce delivered volume, and the tube tip and tolerance remain relevant.",
+        "reviewHref": "#delivery-prescription"
+      },
+      "status": "verified",
+      "stemVerified": true,
+      "oneBestAnswerVerified": true,
+      "rationaleVerified": true,
+      "sourceEvidence": [
+        "safe2017Q6.7 complete rationale, especially off-time/nocturnal/appetite uncertainty",
+        "safe2017Q6.11 delivered-volume arithmetic; prior verified rate lesson"
+      ],
+      "choicesReviewed": [
+        {
+          "text": "It provides a feeding-free interval while maintaining controlled pump delivery",
+          "keyed": true,
+          "review": "A defined infusion period leaves time off feeding while retaining pump delivery."
+        },
+        {
+          "text": "Its off-feeding interval establishes that daytime oral intake is adequate",
+          "keyed": false,
+          "review": "Time off feeding does not prove adequate oral nutrition."
+        },
+        {
+          "text": "Its shorter running time preserves the same daily volume without changing the rate",
+          "keyed": false,
+          "review": "Fewer hours at unchanged rate reduce daily volume."
+        },
+        {
+          "text": "Its use establishes that the tube destination no longer affects the schedule",
+          "keyed": false,
+          "review": "Tip destination and tolerance remain relevant."
+        }
+      ]
+    },
+    {
+      "question": {
+        "id": "enteral-nutrition-022",
+        "question": "What is the purpose of a prescribed volume-based feeding protocol?",
+        "choices": [
+          "To target a safe daily volume despite predictable interruptions",
+          "To replace a tolerance assessment whenever feeding has been interrupted",
+          "To raise the rate until all missed feeding is replaced, without prescribed limits",
+          "To count the ordered daily target as delivered intake even after a hold"
+        ],
+        "answer": 0,
+        "rationale": "A daily volume target can guide adjustments within prescribed limits after interruptions. Reassess patient condition, tube destination, and tolerance before changing delivery. The protocol does not authorize unlimited catch-up, replace monitoring, or establish that ordered volume actually reached the patient.",
+        "reviewHref": "#delivery-prescription"
+      },
+      "status": "verified",
+      "stemVerified": true,
+      "oneBestAnswerVerified": true,
+      "rationaleVerified": true,
+      "sourceEvidence": [
+        "safe2017Q6.7 recommendations1–4 and full rationale; Q6.2 documented rate changes; Q6.11 actual delivery"
+      ],
+      "choicesReviewed": [
+        {
+          "text": "To target a safe daily volume despite predictable interruptions",
+          "keyed": true,
+          "review": "Daily goal with bounded adjustments can accommodate interruptions."
+        },
+        {
+          "text": "To replace a tolerance assessment whenever feeding has been interrupted",
+          "keyed": false,
+          "review": "Protocol does not replace tolerance assessment."
+        },
+        {
+          "text": "To raise the rate until all missed feeding is replaced, without prescribed limits",
+          "keyed": false,
+          "review": "Catch-up remains within prescribed limits."
+        },
+        {
+          "text": "To count the ordered daily target as delivered intake even after a hold",
+          "keyed": false,
+          "review": "Ordered volume is not proof of actual intake."
+        }
+      ]
+    },
+    {
+      "question": {
+        "id": "enteral-nutrition-024",
+        "question": "Which patient is the best candidate for gastric bolus feeding after individualized assessment?",
+        "choices": [
+          "A stable patient with a mature gastrostomy, good gastric tolerance, and low aspiration risk",
+          "A stable patient with severe gastroparesis and recurrent aspiration during gastric feeds",
+          "A stable patient with jejunal access who does not tolerate rapid feedings",
+          "A patient with worsening shock and escalating vasopressor needs"
+        ],
+        "answer": 0,
+        "rationale": "Stable gastric access, good tolerance, and low aspiration risk support consideration of bolus feeding. Severe gastroparesis or recurrent aspiration warrants reassessing destination and method; jejunal intolerance favors controlled delivery. Worsening shock requires perfusion assessment and withholding unsafe feeding rather than choosing boluses.",
+        "reviewHref": "#delivery-prescription"
+      },
+      "status": "verified",
+      "stemVerified": true,
+      "oneBestAnswerVerified": true,
+      "rationaleVerified": true,
+      "sourceEvidence": [
+        "safe2017Q6.3/Q6.7; sccm2016D4b; B5 retained from prior full decision review"
+      ],
+      "choicesReviewed": [
+        {
+          "text": "A stable patient with a mature gastrostomy, good gastric tolerance, and low aspiration risk",
+          "keyed": true,
+          "review": "Mature gastric access/good tolerance/low risk supports consideration of bolus feeding."
+        },
+        {
+          "text": "A stable patient with severe gastroparesis and recurrent aspiration during gastric feeds",
+          "keyed": false,
+          "review": "Severe gastroparesis with aspiration warrants route/method reassessment."
+        },
+        {
+          "text": "A stable patient with jejunal access who does not tolerate rapid feedings",
+          "keyed": false,
+          "review": "Jejunal rapid-feed intolerance does not support gastric-bolus strategy."
+        },
+        {
+          "text": "A patient with worsening shock and escalating vasopressor needs",
+          "keyed": false,
+          "review": "Worsening shock/escalating support requires perfusion review and withholding unsafe EN."
+        }
+      ]
+    },
+    {
+      "question": {
+        "id": "enteral-nutrition-095",
+        "question": "A stable ventilated adult with a usable small intestine has recurrent emesis despite head elevation and gastric motility management. What is the best next action?",
+        "choices": [
+          "Reassess for postpyloric access and other causes of intolerance",
+          "Increase gastric feeding volume without reassessing the cause of emesis",
+          "Continue the same plan because head elevation has already been attempted",
+          "Assume postpyloric feeding would eliminate all future aspiration without other prevention measures"
+        ],
+        "answer": 0,
+        "rationale": "Persistent intolerance and aspiration risk warrant reassessment of the cause, tube destination, and controlled delivery. Small bowel access may help selected patients but does not eliminate aspiration. More gastric volume or a destination change without assessment does not address the entire problem.",
+        "reviewHref": "#access-route"
+      },
+      "status": "verified",
+      "stemVerified": true,
+      "oneBestAnswerVerified": true,
+      "rationaleVerified": true,
+      "sourceEvidence": [
+        "safe2017Q4.1/Q6.3; sccm2016B4a/D4a/D4b"
+      ],
+      "choicesReviewed": [
+        {
+          "text": "Reassess for postpyloric access and other causes of intolerance",
+          "keyed": true,
+          "review": "Persistent emesis merits source/cause/route/delivery reassessment."
+        },
+        {
+          "text": "Increase gastric feeding volume without reassessing the cause of emesis",
+          "keyed": false,
+          "review": "More volume does not resolve cause and may worsen intolerance."
+        },
+        {
+          "text": "Continue the same plan because head elevation has already been attempted",
+          "keyed": false,
+          "review": "Previous head elevation does not remove need to reassess persistent symptoms."
+        },
+        {
+          "text": "Assume postpyloric feeding would eliminate all future aspiration without other prevention measures",
+          "keyed": false,
+          "review": "Postpyloric feeding cannot eliminate aspiration of secretions or reflux."
+        }
+      ]
+    },
+    {
+      "question": {
+        "id": "enteral-nutrition-097",
+        "question": "A stable adult with a mature gastrostomy wants daytime mobility, tolerates gastric feeds, and has low aspiration risk. What is the best next action?",
+        "choices": [
+          "Consider bolus or cyclic delivery based on goals and tolerance",
+          "Keep a 24-hour pump schedule solely because every tube-fed adult must remain connected all day",
+          "Change to jejunal access solely to obtain greater bolus flexibility",
+          "Shorten the running hours without checking the resulting daily volume"
+        ],
+        "answer": 0,
+        "rationale": "Gastric access can support several schedules. Consider a tolerated bolus or cyclic plan that fits home goals while still meeting the prescribed volume. Trial the planned home schedule before discharge. A 24-hour connection is not always needed; home convenience does not by itself justify a jejunal destination or omission of the volume target.",
+        "reviewHref": "#delivery-prescription"
+      },
+      "status": "verified",
+      "stemVerified": true,
+      "oneBestAnswerVerified": true,
+      "rationaleVerified": true,
+      "sourceEvidence": [
+        "safe2017Q6.7 complete recommendations/rationale, including trial of home schedule before discharge; Q6.11"
+      ],
+      "choicesReviewed": [
+        {
+          "text": "Consider bolus or cyclic delivery based on goals and tolerance",
+          "keyed": true,
+          "review": "Individualized bolus/cyclic plan can support the stated gastric-tolerant low-risk home goal; trial before discharge."
+        },
+        {
+          "text": "Keep a 24-hour pump schedule solely because every tube-fed adult must remain connected all day",
+          "keyed": false,
+          "review": "Source does not mandate a 24-hour connection for all adults."
+        },
+        {
+          "text": "Change to jejunal access solely to obtain greater bolus flexibility",
+          "keyed": false,
+          "review": "Jejunal destination has more limited schedule flexibility."
+        },
+        {
+          "text": "Shorten the running hours without checking the resulting daily volume",
+          "keyed": false,
+          "review": "Shorter schedule requires reassessing resulting daily delivery."
+        }
+      ]
+    }
+  ],
+  "teachingReview": [
+    {
+      "heading": "Start with the stomach when appropriate",
+      "body": "Use gastric access when the stomach functions adequately and there is no severe emptying disorder or gastric outlet obstruction. Gastric feeding offers bolus, intermittent, and continuous schedule options; choose among them according to tolerance and aspiration risk. Nasal access is usually for shorter support, while longer support warrants individualized assessment for percutaneous access. Duration does not determine the tip destination by itself. Review anatomy and contraindications before placement; head or facial injury can make a nasal route unsuitable.",
+      "status": "whole body verified",
+      "wholeBodyVerified": true,
+      "clauseSource": [
+        {
+          "claim": "Usable stomach without severe emptying/outlet disorder",
+          "source": "safe2017Q4.1 recommendations/rationale"
+        },
+        {
+          "claim": "Gastric bolus/intermittent/continuous choices depend on tolerance/aspiration risk",
+          "source": "safe2017Q6.3/Q6.7; auspen2024introduction"
+        },
+        {
+          "claim": "Shorter nasal versus longer percutaneous support; duration distinct from destination",
+          "source": "safe2017Q4.1 full recommendations/rationale; prior book route evidence"
+        },
+        {
+          "claim": "Anatomy/contraindications including head/facial injury can preclude nasal access",
+          "source": "safe2017Q4.1 full rationale"
+        }
+      ]
+    },
+    {
+      "heading": "Move beyond the pylorus for a reason",
+      "body": "Postpyloric delivery places the tip in the duodenum or jejunum. Consider it when severe gastroparesis, gastric outlet obstruction, or persistent gastric intolerance prevents an adequate gastric plan, or when aspiration risk warrants small bowel access. This choice does not eliminate aspiration: oral secretions and reflux can still be aspirated. Use a controlled schedule matched to tolerance. The 2024 AuSPEN pediatric consensus recommends continuous pump delivery for children receiving jejunal feeds because jejunal reservoir capacity is limited. Adult schedules remain individualized; the 2017 ASPEN safe-practice guidance describes periodic continuous jejunal feeding, including nocturnal schedules, rather than requiring every patient to remain connected for 24 hours.",
+      "status": "whole body verified",
+      "wholeBodyVerified": true,
+      "clauseSource": [
+        {
+          "claim": "Duodenal/jejunal tip distinction and selective severe gastric dysfunction/outlet obstruction/intolerance/high aspiration risk",
+          "source": "safe2017Q4.1/Q6.3; sccm2016B4a/D4a; auspen2024introduction"
+        },
+        {
+          "claim": "Aspiration of oral secretions/reflux persists despite postpyloric access",
+          "source": "safe2017Q6.3 full rationale"
+        },
+        {
+          "claim": "Controlled schedule matched to tolerance",
+          "source": "safe2017Q6.7 all recommendations/rationale"
+        },
+        {
+          "claim": "2024AuSPEN pediatric continuous pump recommendation with limited-reservoir rationale",
+          "source": "auspen2024Clinical use recommendation and complete rationale, explicitly child population"
+        },
+        {
+          "claim": "Adult individualized periodic continuous/nocturnal jejunal schedules; no universal24h requirement",
+          "source": "safe2017Q6.7 complete rationale"
+        }
+      ]
+    },
+    {
+      "heading": "Match method to access and tolerance",
+      "body": "Bolus and intermittent schedules provide separate feedings rather than an uninterrupted infusion. Gastric bolus feeding can fit meals and home routines when tolerated and aspiration risk is low. Continuous infusion offers controlled delivery for patients at high aspiration risk or unable to tolerate gastric boluses; small bowel delivery also requires a tolerance-based schedule. A cyclic pump schedule runs during a defined part of the day, leaving time off feeding. That interval can support activity and home routines, but it does not guarantee appetite or adequate oral intake. Match the method, rate, and running hours to the tube tip, patient condition, prescribed daily volume, and tolerance.",
+      "status": "whole body verified",
+      "wholeBodyVerified": true,
+      "clauseSource": [
+        {
+          "claim": "Bolus/intermittent separate feedings versus continuous infusion",
+          "source": "safe2017Q6.2 described gravity-bolus/continuous-pump administration; Q6.7 intermittent versus continuous trial description"
+        },
+        {
+          "claim": "Tolerated gastric bolus fits meals/home with low aspiration risk",
+          "source": "safe2017Q6.3/Q6.7 full rationale"
+        },
+        {
+          "claim": "Continuous delivery for high aspiration risk/bolus intolerance; small bowel schedule matched to tolerance",
+          "source": "sccm2016D4b; safe2017Q6.7"
+        },
+        {
+          "claim": "Cyclic pump schedule provides defined running period and off-time; convenience does not guarantee appetite/oral adequacy",
+          "source": "safe2017Q6.7 complete rationale including nocturnal schedule and appetite limitations; cyclic is the described periodic infusion schedule"
+        },
+        {
+          "claim": "Method/rate/hours depend on tip, condition, daily volume, tolerance",
+          "source": "safe2017Q6.7 recommendations3/4; Q6.2 documented order-based rate changes; Q6.11"
+        }
+      ]
+    },
+    {
+      "heading": "Manage interruptions deliberately",
+      "body": "Procedures, medication windows, tube problems, and routine care can reduce the amount of nutrition received. Assess which holds are necessary, minimize avoidable interruptions, and document actual feeding time and volume. A volume-based protocol specifies a daily volume goal and permits adjustments within prescribed limits to account for missed delivery. Reassess the tube destination, patient condition, and tolerance before increasing the rate; the protocol is not permission for unrestricted catch-up feeding. Compare delivery records with the expected volume rather than relying on pump settings alone.",
+      "status": "whole body verified",
+      "wholeBodyVerified": true,
+      "clauseSource": [
+        {
+          "claim": "Procedures/medication/tube/routine-care holds can reduce received nutrition; assess necessity/minimize avoidable interruptions",
+          "source": "safe2017Q6.2/Q6.7 complete recommendations/rationale"
+        },
+        {
+          "claim": "Document actual feeding time and volume",
+          "source": "safe2017Q6.2 administration documentation; Q6.11 all recommendations/rationale"
+        },
+        {
+          "claim": "Volume-based goal and adjustments within prescribed limits",
+          "source": "safe2017Q6.7 complete rationale, makeup within set guidelines; Q6.2 documented rate changes"
+        },
+        {
+          "claim": "Reassess destination, condition, tolerance; no unrestricted catch-up",
+          "source": "safe2017Q6.7 recommendation4 and bounded-protocol rationale"
+        },
+        {
+          "claim": "Crosscheck received volume, not pump settings alone",
+          "source": "safe2017Q6.11 complete recommendations/rationale"
+        }
+      ]
+    }
+  ],
+  "embeddedCheckReview": [
+    {
+      "lesson": "access-route",
+      "check": {
+        "question": "A stable adult with a usable small intestine has severe gastroparesis and recurrent aspiration despite preventive measures. Which access and delivery plan is most appropriate to reassess for?",
+        "choices": [
+          "Postpyloric access with controlled delivery",
+          "Increase the gastric bolus volume without reassessing tolerance",
+          "Select a longer-term gastric tube solely because support will continue",
+          "Continue the same gastric plan because aspiration prevention measures have already been tried"
+        ],
+        "answer": 0,
+        "rationale": "Reassess for postpyloric access to bypass impaired gastric emptying and for controlled delivery matched to tolerance. More gastric volume does not correct severe gastroparesis; duration alone does not determine destination, and persistent aspiration warrants reassessment. Small bowel feeding does not eliminate aspiration of secretions or reflux.",
+        "reviewHref": "#access-route"
+      },
+      "status": "verified",
+      "stemKeyRationaleVerified": true,
+      "sourceEvidence": [
+        "safe2017Q4.1/Q6.3/Q6.7",
+        "sccm2016B4a/D4a/D4b"
+      ],
+      "choicesReviewed": [
+        {
+          "text": "Postpyloric access with controlled delivery",
+          "keyed": true,
+          "review": "Usable distal gut with severe gastroparesis and persistent aspiration supports postpyloric reassessment and controlled delivery."
+        },
+        {
+          "text": "Increase the gastric bolus volume without reassessing tolerance",
+          "keyed": false,
+          "review": "More gastric volume does not correct gastroparesis."
+        },
+        {
+          "text": "Select a longer-term gastric tube solely because support will continue",
+          "keyed": false,
+          "review": "Duration alone does not determine destination."
+        },
+        {
+          "text": "Continue the same gastric plan because aspiration prevention measures have already been tried",
+          "keyed": false,
+          "review": "Persistent aspiration requires reassessment despite prior prevention."
+        }
+      ],
+      "rationaleLimit": "Postpyloric access does not eliminate aspiration."
+    }
+  ],
+  "figureReview": [
+    {
+      "type": "access-route",
+      "figure": {
+        "eyebrow": "Access map",
+        "title": "Choose the tip before the tube.",
+        "items": [
+          [
+            "Nasal",
+            "Shorter course",
+            "Gastric or postpyloric"
+          ],
+          [
+            "Gastric",
+            "Flexible schedules",
+            "Bolus, intermittent, continuous when tolerated"
+          ],
+          [
+            "Postpyloric",
+            "Bypass",
+            "Controlled small bowel delivery"
+          ],
+          [
+            "Percutaneous",
+            "Longer support",
+            "Gastrostomy or jejunostomy"
+          ]
+        ]
+      },
+      "status": "whole figure verified",
+      "allLabelsAndNodesReviewed": true,
+      "sourceEvidence": [
+        "Tip/site before access choice is a conceptual decision aid, not an insertion sequence: safe2017Q4.1 individualized anatomy/function/duration.",
+        "Nasal short course and gastric/postpyloric destinations: safe2017Q4.1 and prior book route distinction.",
+        "Gastric flexible bolus/intermittent/continuous when tolerated: safe2017Q6.3/Q6.7; auspen2024introduction.",
+        "Postpyloric bypass/control: safe2017Q4.1/Q6.7; sccm2016B4a/D4b.",
+        "Percutaneous longer support, gastrostomy/jejunostomy separate destinations: safe2017Q4.1 and prior book route distinction."
+      ],
+      "limits": "Conceptual teaching diagram, no measured clinical data or effect-size claim."
+    },
+    {
+      "type": "delivery-prescription",
+      "figure": {
+        "eyebrow": "Delivery engine",
+        "title": "Rate is only half the order.",
+        "items": [
+          [
+            "Volume",
+            "Daily target",
+            "What must reach the patient"
+          ],
+          [
+            "Rate",
+            "Pump rate, mL/h",
+            "Volume divided by running hours"
+          ],
+          [
+            "Schedule",
+            "Feeding times",
+            "Continuous, cyclic, intermittent, bolus"
+          ],
+          [
+            "Audit",
+            "Actually delivered",
+            "Account for every interruption"
+          ]
+        ]
+      },
+      "status": "whole figure verified",
+      "allLabelsAndNodesReviewed": true,
+      "sourceEvidence": [
+        "Rate alone is incomplete: safe2017Q6.7 schedule and Q6.11 actual delivery; prior verified prescription/rate body.",
+        "Volume daily target: safe2017Q6.7/Q6.11.",
+        "Pump rate volume divided by running hours: algebraic inverse of Q6.11 rate-times-hours; prior independently verified rate calculations. No numeric exercise added.",
+        "Schedule feeding times continuous/cyclic/intermittent/bolus: safe2017Q6.2/Q6.7; new title avoids describing bolus schedules only as hours on.",
+        "Actual delivery accounts for interruptions: safe2017Q6.7/Q6.11."
+      ],
+      "limits": "Conceptual teaching diagram, no measured clinical data or effect-size claim."
+    }
+  ],
+  "sourceDiscrepancies": [
+    {
+      "issue": "Generic jejunal-pump wording could imply mandatory24-hour delivery in all populations.",
+      "resolution": "Explicit2024pediatric recommendation and separate2017adult periodic-continuous/nocturnal schedule explanation; no universal adult bolus prohibition claimed."
+    },
+    {
+      "issue": "Gastric reservoir illustration could suggest schedule flexibility regardless of tolerance.",
+      "resolution": "Gastric node now says flexible schedules when tolerated."
+    },
+    {
+      "issue": "Volume-based catch-up could be interpreted as unrestricted replacement of all missed volume.",
+      "resolution": "Daily target, prescribed limits, condition/tip/tolerance reassessment and actual-delivery documentation explicit."
+    },
+    {
+      "issue": "Postpyloric destination could imply elimination of aspiration.",
+      "resolution": "Explicit residual risk from secretions/reflux in lesson, bank and check."
+    }
+  ],
+  "preservation": {
+    "bankObjectsUnchanged": 99,
+    "cumulativeObjectsUnchanged": 1180,
+    "wholeBodyObjectsUnchanged": 32,
+    "all36HeadingsStable": true,
+    "otherFiveChecksUnchanged": true,
+    "otherFourFiguresUnchanged": true,
+    "visualRendererUnchanged": true,
+    "allExistingMetadataAnd11ReferencesUnchanged": true,
+    "onePediatricPrimaryConsensusReferenceAdded": true,
+    "pathsIdsAndAnswerIndicesPreserved": true,
+    "architectureBackendAndAccountTrackingUnchanged": true,
+    "noNewClinicalDoseProtocolOrCalculation": true
+  },
+  "coverage": {
+    "bank": 108,
+    "verifiedBank": 84,
+    "remainingBank": 24,
+    "verifiedBankIds": [
+      "enteral-nutrition-060",
+      "enteral-nutrition-061",
+      "enteral-nutrition-062",
+      "enteral-nutrition-063",
+      "enteral-nutrition-064",
+      "enteral-nutrition-065",
+      "enteral-nutrition-066",
+      "enteral-nutrition-067",
+      "enteral-nutrition-068",
+      "enteral-nutrition-069",
+      "enteral-nutrition-070",
+      "enteral-nutrition-071",
+      "enteral-nutrition-072",
+      "enteral-nutrition-073",
+      "enteral-nutrition-074",
+      "enteral-nutrition-075",
+      "enteral-nutrition-076",
+      "enteral-nutrition-077",
+      "enteral-nutrition-078",
+      "enteral-nutrition-079",
+      "enteral-nutrition-080",
+      "enteral-nutrition-081",
+      "enteral-nutrition-082",
+      "enteral-nutrition-083",
+      "enteral-nutrition-084",
+      "enteral-nutrition-085",
+      "enteral-nutrition-086",
+      "enteral-nutrition-087",
+      "enteral-nutrition-088",
+      "enteral-nutrition-089",
+      "enteral-nutrition-109",
+      "enteral-nutrition-110",
+      "enteral-nutrition-111",
+      "enteral-nutrition-112",
+      "enteral-nutrition-113",
+      "enteral-nutrition-114",
+      "enteral-nutrition-001",
+      "enteral-nutrition-115",
+      "enteral-nutrition-033",
+      "enteral-nutrition-035",
+      "enteral-nutrition-036",
+      "enteral-nutrition-037",
+      "enteral-nutrition-040",
+      "enteral-nutrition-042",
+      "enteral-nutrition-093",
+      "enteral-nutrition-094",
+      "enteral-nutrition-098",
+      "enteral-nutrition-107",
+      "enteral-nutrition-116",
+      "enteral-nutrition-117",
+      "enteral-nutrition-006",
+      "enteral-nutrition-007",
+      "enteral-nutrition-008",
+      "enteral-nutrition-015",
+      "enteral-nutrition-016",
+      "enteral-nutrition-018",
+      "enteral-nutrition-021",
+      "enteral-nutrition-030",
+      "enteral-nutrition-049",
+      "enteral-nutrition-092",
+      "enteral-nutrition-099",
+      "enteral-nutrition-105",
+      "enteral-nutrition-023",
+      "enteral-nutrition-041",
+      "enteral-nutrition-090",
+      "enteral-nutrition-104",
+      "enteral-nutrition-002",
+      "enteral-nutrition-003",
+      "enteral-nutrition-004",
+      "enteral-nutrition-005",
+      "enteral-nutrition-100",
+      "enteral-nutrition-012",
+      "enteral-nutrition-013",
+      "enteral-nutrition-014",
+      "enteral-nutrition-106",
+      "enteral-nutrition-009",
+      "enteral-nutrition-010",
+      "enteral-nutrition-011",
+      "enteral-nutrition-017",
+      "enteral-nutrition-019",
+      "enteral-nutrition-022",
+      "enteral-nutrition-024",
+      "enteral-nutrition-095",
+      "enteral-nutrition-097"
+    ],
+    "remainingBankIds": [
+      "enteral-nutrition-020",
+      "enteral-nutrition-025",
+      "enteral-nutrition-026",
+      "enteral-nutrition-027",
+      "enteral-nutrition-028",
+      "enteral-nutrition-029",
+      "enteral-nutrition-031",
+      "enteral-nutrition-032",
+      "enteral-nutrition-034",
+      "enteral-nutrition-038",
+      "enteral-nutrition-039",
+      "enteral-nutrition-043",
+      "enteral-nutrition-044",
+      "enteral-nutrition-045",
+      "enteral-nutrition-046",
+      "enteral-nutrition-047",
+      "enteral-nutrition-048",
+      "enteral-nutrition-050",
+      "enteral-nutrition-091",
+      "enteral-nutrition-096",
+      "enteral-nutrition-101",
+      "enteral-nutrition-102",
+      "enteral-nutrition-103",
+      "enteral-nutrition-108"
+    ],
+    "bodies": 36,
+    "verifiedBodies": 24,
+    "remainingBodies": 12,
+    "embeddedChecks": 6,
+    "verifiedEmbeddedChecks": 4,
+    "remainingEmbeddedChecks": 2,
+    "figures": 6,
+    "verifiedFigures": 3,
+    "cumulative": 5,
+    "sourceVerifiedCumulative": 4,
+    "pendingCumulative": [
+      "enteral-nutrition-028"
+    ],
+    "metadata": "Full module and lesson metadata remain pending.",
+    "remainingFigures": 3,
+    "wholeModuleVerified": false,
+    "wholeChapterVerified": false
+  },
+  "remainingCoverageReview": {
+    "questionIds": [
+      "enteral-nutrition-020",
+      "enteral-nutrition-025",
+      "enteral-nutrition-026",
+      "enteral-nutrition-027",
+      "enteral-nutrition-028",
+      "enteral-nutrition-029",
+      "enteral-nutrition-031",
+      "enteral-nutrition-032",
+      "enteral-nutrition-034",
+      "enteral-nutrition-038",
+      "enteral-nutrition-039",
+      "enteral-nutrition-043",
+      "enteral-nutrition-044",
+      "enteral-nutrition-045",
+      "enteral-nutrition-046",
+      "enteral-nutrition-047",
+      "enteral-nutrition-048",
+      "enteral-nutrition-050",
+      "enteral-nutrition-091",
+      "enteral-nutrition-096",
+      "enteral-nutrition-101",
+      "enteral-nutrition-102",
+      "enteral-nutrition-103",
+      "enteral-nutrition-108"
+    ],
+    "wholeBodyHeadings": [
+      "Recognize the patient who needs support",
+      "Advance according to risk",
+      "Use standard formulas when digestion works",
+      "Use density to solve a volume problem",
+      "Treat fiber and specialty claims carefully",
+      "Build the water prescription",
+      "Separate medications from formula and each other",
+      "Respect the tube tip",
+      "Prevent aspiration with a bundle",
+      "Use gastric residuals selectively",
+      "Find the cause of diarrhea and clogging",
+      "Monitor delivery and metabolic safety"
+    ],
+    "embeddedCheckLessons": [
+      "medication-administration",
+      "monitoring-complications"
+    ],
+    "figureTypes": [
+      "formula-selection",
+      "medication-administration",
+      "monitoring-complications"
+    ],
+    "cumulativeIds": [
+      "enteral-nutrition-028"
+    ],
+    "fullMetadataPending": true
+  },
+  "calculationEvidence": {
+    "newDistinctAssessmentCalculations": 0,
+    "newCompletedBookExercises": 0,
+    "runningAssessmentCalculations": 728,
+    "runningSeparateCompletedBookExercises": 98
+  },
+  "validation": {
+    "build": {
+      "status": "passed",
+      "staticPages": 567,
+      "scope": "Exact base archive plus three reviewed product files; final figure edits included in final build"
+    },
+    "assessmentStructure": {
+      "status": "passed",
+      "bankQuestions": 108,
+      "hardErrors": [],
+      "doesNotEstablishClinicalAccuracy": true
+    },
+    "browser": {
+      "status": "passed",
+      "results": [
+        {
+          "width": 1440,
+          "wholeBodyDOMEquality": 36,
+          "allSixMetadataDOMEquality": true,
+          "all12ReferenceDOMEquality": true,
+          "nineChangedQuestionsCorrectWrongFeedback": true,
+          "allSixFigureDOMPresence": true,
+          "twoReviewedFiguresAllNodesDOMEquality": true,
+          "changedEmbeddedCheckCorrectWrongFeedback": true,
+          "remediationAnchor": true,
+          "noHorizontalOverflow": true,
+          "accountPersistence": "not tested; unauthenticated local preview"
+        },
+        {
+          "width": 390,
+          "wholeBodyDOMEquality": 36,
+          "allSixMetadataDOMEquality": true,
+          "all12ReferenceDOMEquality": true,
+          "nineChangedQuestionsCorrectWrongFeedback": true,
+          "allSixFigureDOMPresence": true,
+          "twoReviewedFiguresAllNodesDOMEquality": true,
+          "changedEmbeddedCheckCorrectWrongFeedback": true,
+          "remediationAnchor": true,
+          "noHorizontalOverflow": true,
+          "accountPersistence": "not tested; unauthenticated local preview"
+        }
+      ],
+      "pageErrors": []
+    },
+    "contentHashes": {
+      "src/data/modules/enteralNutrition.js": "40b8e14df16117fada199654962b524f1d2f4534743db6fd2086cb12955ddb72",
+      "src/data/questionBanks/enteralNutrition.js": "e05666a0e61f2e794e2b0dd16cbdb07811e363a0ca97ed1aee7ccdd9e9138e23",
+      "src/components/learn/EnteralNutritionVisual.jsx": "84d21aace383d7a0e55085146f9bd9a155ce5d5afe51641accb342cb66a64f22"
+    },
+    "manualReview": {
+      "status": "passed",
+      "recordedAt": "2026-10-02T18:04:59.891835+00:00",
+      "sourceReview": "Adopted clinical source sections, recommendations, rationales, Table4 and SCCM Figures4/5 reviewed as documented in source record. Full source papers not closed.",
+      "visualScope": {
+        "wholeTeachingBodies": "All four updated whole bodies visually inspected at1440 and390.",
+        "figures": "Both reviewed diagrams, all four nodes and captions visually inspected at1440 and390.",
+        "embeddedCheck": "Correct and wrong states visually inspected at1440 and390.",
+        "references": "All12 reference rows visually inspected at1440 and390.",
+        "bank": "Representative correct/wrong feedback captures manually inspected; all9 changed questions in both states at both widths separately verified by browser assertions. Manual visual inspection does not claim every screenshot was individually inspected.",
+        "additionalFinalCaptureInspection": [
+          "references-1440.png",
+          "references-390.png",
+          "check-wrong-1440.png",
+          "check-wrong-390.png",
+          "question-enteral-nutrition-011-wrong-390.png",
+          "question-enteral-nutrition-022-wrong-390.png",
+          "question-enteral-nutrition-017-correct-390.png",
+          "question-enteral-nutrition-010-wrong-390.png",
+          "question-enteral-nutrition-019-wrong-1440.png",
+          "question-enteral-nutrition-022-wrong-1440.png",
+          "question-enteral-nutrition-024-correct-1440.png",
+          "question-enteral-nutrition-024-wrong-1440.png",
+          "question-enteral-nutrition-095-wrong-390.png",
+          "question-enteral-nutrition-097-correct-390.png"
+        ]
+      },
+      "findings": "Target text, choices, feedback and diagrams readable, wrapped and within viewport. Early headless capture artifacts resolved by forced full-page paint before viewport captures; no product change for that capture issue.",
+      "limits": "Isolated unauthenticated preview only; no authenticated account persistence, production deployment or complete module claim."
+    },
+    "accountPersistence": "Unauthenticated local preview; no backend/account/production validation claim."
+  },
+  "release": {
+    "branch": "audit/rxprep-content-2026-09-24",
+    "commit": "pending",
+    "push": "pending",
+    "receipt": "sequential-release-enteral-route-delivery-2026-10-02.json",
+    "mainMerge": "not performed",
+    "production": "not verified"
+  },
+  "wholeGoalComplete": false
+}
