@@ -1,0 +1,1021 @@
+{
+  "date": "2026-10-01",
+  "unit": "Pediatric PN daily maintenance convention and fluid allowance calculations",
+  "module": "pediatric-parenteral-nutrition",
+  "baseCommit": "8cd2e3e2c5047ca30e1915a2bb708fb96e22c546",
+  "status": "Ten retained maintenance questions and two worked teaching bodies verified; the complete fluid lesson, pediatric PN module, and associated chapters remain incomplete.",
+  "sourcePolicy": {
+    "suppliedBook": "Private supplied PDF; cover identifies RxPrep 2023.",
+    "outsidePNReferencesAuthorized": true,
+    "authorizationQuote": "use that and complete the goal. I approve",
+    "scope": "Official ASPEN, USP, FDA, and CDC PN sources and linked primary material; outside EN sources remain unauthorized.",
+    "outsideENSourcesUsed": false
+  },
+  "sources": {
+    "book11": {
+      "source": "Supplied private RxPrep2023",
+      "chapter": 11,
+      "printedPage": 150,
+      "pdfPage": 158,
+      "scope": "Full printed page 150 / PDF page 158 and its fluid table were previously read as text and rendered images; the table text was rechecked in this unit. The pediatric equation applies only above 20 kg. Adult 30-40 mL/kg/day and other-fluid accounting are distinguished from the pediatric equation."
+    },
+    "fda2018": {
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2018/020734s034lbl.pdf",
+      "source": "FDA CLINIMIX label October2018",
+      "scope": "Complete relevant PDF pages 5-6 (dosing considerations) and 8-9 (section 2.8 and Tables 3-6) were read as text and rendered images. All column and row headers, footnotes, age groups, total nutritional requirements, and product-specific dose volumes were reviewed. PDF page 18 reference 1, ASPEN PN Handbook (2014), page 123, was read as text. Four complete pages were rendered and manually viewed. This supports a historical maintenance method, not current 2026 labeling or product availability. Review of the complete 20-page label is not claimed.",
+      "sha256": "de4b8b2ac5d1564ed748722f87c18545a9661b91d8c88927cefa0e4415aa82af"
+    },
+    "fda2021": {
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2021/020734s037lbl.pdf",
+      "source": "FDA CLINIMIX label2021 reference4778063",
+      "scope": "Complete relevant PDF pages 10-11 (pediatric tables) and 17 (section 8.4) were read as text and rendered images; PDF page 8 dosing text was also read. The later tables omit the older Recommended Nutritional Requirements column. This is not established as the latest label, and removal of that column is not treated as withdrawal of the mathematical convention. No new protein or product dose was adopted. Review of the complete 21-page label is not claimed.",
+      "sha256": "356eeefcf812bfb162ce7e40a7ecf93b61dcad079f90a00a255d0efbcf24e0a8"
+    },
+    "holliday": {
+      "url": "https://doi.org/10.1542/peds.19.5.823",
+      "source": "Holliday MA,Segar WE.Pediatrics1957;19:823-832",
+      "scope": "The original study is reference 31 in ASPEN Nutrition in Clinical Practice (2018), doi:10.1002/ncp.10095. Its complete original publisher abstract, including the formula and water conversion, was exposed in an indexed primary-publisher search result. Direct access redirected to login or traffic validation; the full paper was not accessed or claimed reviewed. This establishes named-method provenance. Complete FDA 2018 tables supply direct numerical support. No historical electrolyte or energy regimen was adopted."
+    },
+    "aspenOrder": {
+      "url": "https://nutritioncare.org/wp-content/uploads/2024/12/PN-Checklist-02-Order-Review.pdf",
+      "scope": "The prior complete two-page text and rendered review is recorded in pediatric-parenteral-nutrition-compounding-safety-review.json. Both pages were rechecked as text in this unit. Dosing weight, age, nutrition plan, volume, infusion rate, pediatric units, and the distinction between 2-in-1 PN with separate ILE and TNA support checking a stated prescription."
+    }
+  },
+  "questionReview": [
+    {
+      "question": {
+        "id": "pedpn-050",
+        "question": "A child aged at least 1 month weighs 3 kg. Using the stated Holliday-Segar daily maintenance convention, what is the estimated total fluid volume?",
+        "choices": [
+          "300 mL/day",
+          "1150 mL/day",
+          "150 mL/day",
+          "60 mL/day"
+        ],
+        "answer": 0,
+        "rationale": "3 kg times 100 mL/kg = 300 mL/day. Apply 100 mL/kg to the first 10 kg, 50 mL/kg only to the next 10 kg, and 20 mL/kg only to weight above 20 kg. This is a maintenance estimate, not an automatic PN volume. Adjust for clinical status and account for other fluid sources before prescribing PN.",
+        "reviewHref": "#pediatric-fluid-glucose"
+      },
+      "status": "verified",
+      "sourceEvidence": [
+        "FDA2018 PDF9 Table4-6 tier equation,age scope and total-needs versus product-volume columns",
+        "FDA2018 PDF5-6 section2.5 and8 section2.8 individualized rate/volume",
+        "BookChapter11 PDF158 pediatric weightabove20kg formula where relevant",
+        "Indexed original1957 publisher abstract method provenance only"
+      ],
+      "independentArithmetic": {
+        "id": "pedpn-050",
+        "weightKg": "3",
+        "firstTierMl": "300",
+        "secondTierMl": "0",
+        "thirdTierMl": "0",
+        "totalMlPerDay": "300",
+        "distractorVolumes": [
+          "1150",
+          "150",
+          "60"
+        ],
+        "distractorModels": [
+          "Apply second-tier base before reaching10kg",
+          "Apply50mL/kg to entire weight",
+          "Apply20mL/kg to entire weight"
+        ],
+        "answerUnique": true
+      },
+      "oneBestAnswerAndAllAlternativesReviewed": true,
+      "keyAndCorrectTextPreserved": true,
+      "change": "Clarify age of at least one month and estimated total daily volume; provide the individual calculation and replace arbitrary offsets with incorrect tier applications."
+    },
+    {
+      "question": {
+        "id": "pedpn-051",
+        "question": "A child aged at least 1 month weighs 5 kg. Using the stated Holliday-Segar daily maintenance convention, what is the estimated total fluid volume?",
+        "choices": [
+          "500 mL/day",
+          "1250 mL/day",
+          "250 mL/day",
+          "100 mL/day"
+        ],
+        "answer": 0,
+        "rationale": "5 kg times 100 mL/kg = 500 mL/day. Apply 100 mL/kg to the first 10 kg, 50 mL/kg only to the next 10 kg, and 20 mL/kg only to weight above 20 kg. This is a maintenance estimate, not an automatic PN volume. Adjust for clinical status and account for other fluid sources before prescribing PN.",
+        "reviewHref": "#pediatric-fluid-glucose"
+      },
+      "status": "verified",
+      "sourceEvidence": [
+        "FDA2018 PDF9 Table4-6 tier equation,age scope and total-needs versus product-volume columns",
+        "FDA2018 PDF5-6 section2.5 and8 section2.8 individualized rate/volume",
+        "BookChapter11 PDF158 pediatric weightabove20kg formula where relevant",
+        "Indexed original1957 publisher abstract method provenance only"
+      ],
+      "independentArithmetic": {
+        "id": "pedpn-051",
+        "weightKg": "5",
+        "firstTierMl": "500",
+        "secondTierMl": "0",
+        "thirdTierMl": "0",
+        "totalMlPerDay": "500",
+        "distractorVolumes": [
+          "1250",
+          "250",
+          "100"
+        ],
+        "distractorModels": [
+          "Apply second-tier base before reaching10kg",
+          "Apply50mL/kg to entire weight",
+          "Apply20mL/kg to entire weight"
+        ],
+        "answerUnique": true
+      },
+      "oneBestAnswerAndAllAlternativesReviewed": true,
+      "keyAndCorrectTextPreserved": true,
+      "change": "Clarify age of at least one month and estimated total daily volume; provide the individual calculation and replace arbitrary offsets with incorrect tier applications."
+    },
+    {
+      "question": {
+        "id": "pedpn-052",
+        "question": "A child aged at least 1 month weighs 8 kg. Using the stated Holliday-Segar daily maintenance convention, what is the estimated total fluid volume?",
+        "choices": [
+          "800 mL/day",
+          "1400 mL/day",
+          "400 mL/day",
+          "160 mL/day"
+        ],
+        "answer": 0,
+        "rationale": "8 kg times 100 mL/kg = 800 mL/day. Apply 100 mL/kg to the first 10 kg, 50 mL/kg only to the next 10 kg, and 20 mL/kg only to weight above 20 kg. This is a maintenance estimate, not an automatic PN volume. Adjust for clinical status and account for other fluid sources before prescribing PN.",
+        "reviewHref": "#pediatric-fluid-glucose"
+      },
+      "status": "verified",
+      "sourceEvidence": [
+        "FDA2018 PDF9 Table4-6 tier equation,age scope and total-needs versus product-volume columns",
+        "FDA2018 PDF5-6 section2.5 and8 section2.8 individualized rate/volume",
+        "BookChapter11 PDF158 pediatric weightabove20kg formula where relevant",
+        "Indexed original1957 publisher abstract method provenance only"
+      ],
+      "independentArithmetic": {
+        "id": "pedpn-052",
+        "weightKg": "8",
+        "firstTierMl": "800",
+        "secondTierMl": "0",
+        "thirdTierMl": "0",
+        "totalMlPerDay": "800",
+        "distractorVolumes": [
+          "1400",
+          "400",
+          "160"
+        ],
+        "distractorModels": [
+          "Apply second-tier base before reaching10kg",
+          "Apply50mL/kg to entire weight",
+          "Apply20mL/kg to entire weight"
+        ],
+        "answerUnique": true
+      },
+      "oneBestAnswerAndAllAlternativesReviewed": true,
+      "keyAndCorrectTextPreserved": true,
+      "change": "Clarify age of at least one month and estimated total daily volume; provide the individual calculation and replace arbitrary offsets with incorrect tier applications."
+    },
+    {
+      "question": {
+        "id": "pedpn-053",
+        "question": "A child aged at least 1 month weighs 10 kg. Using the stated Holliday-Segar daily maintenance convention, what is the estimated total fluid volume?",
+        "choices": [
+          "1000 mL/day",
+          "1500 mL/day",
+          "500 mL/day",
+          "200 mL/day"
+        ],
+        "answer": 0,
+        "rationale": "10 kg times 100 mL/kg = 1000 mL/day. Apply 100 mL/kg to the first 10 kg, 50 mL/kg only to the next 10 kg, and 20 mL/kg only to weight above 20 kg. This is a maintenance estimate, not an automatic PN volume. Adjust for clinical status and account for other fluid sources before prescribing PN.",
+        "reviewHref": "#pediatric-fluid-glucose"
+      },
+      "status": "verified",
+      "sourceEvidence": [
+        "FDA2018 PDF9 Table4-6 tier equation,age scope and total-needs versus product-volume columns",
+        "FDA2018 PDF5-6 section2.5 and8 section2.8 individualized rate/volume",
+        "BookChapter11 PDF158 pediatric weightabove20kg formula where relevant",
+        "Indexed original1957 publisher abstract method provenance only"
+      ],
+      "independentArithmetic": {
+        "id": "pedpn-053",
+        "weightKg": "10",
+        "firstTierMl": "1000",
+        "secondTierMl": "0",
+        "thirdTierMl": "0",
+        "totalMlPerDay": "1000",
+        "distractorVolumes": [
+          "1500",
+          "500",
+          "200"
+        ],
+        "distractorModels": [
+          "Apply second-tier base before reaching10kg",
+          "Apply50mL/kg to entire weight",
+          "Apply20mL/kg to entire weight"
+        ],
+        "answerUnique": true
+      },
+      "oneBestAnswerAndAllAlternativesReviewed": true,
+      "keyAndCorrectTextPreserved": true,
+      "change": "Clarify age of at least one month and estimated total daily volume; provide the individual calculation and replace arbitrary offsets with incorrect tier applications."
+    },
+    {
+      "question": {
+        "id": "pedpn-054",
+        "question": "A child aged at least 1 month weighs 12 kg. Using the stated Holliday-Segar daily maintenance convention, what is the estimated total fluid volume?",
+        "choices": [
+          "1100 mL/day",
+          "1200 mL/day",
+          "600 mL/day",
+          "1740 mL/day"
+        ],
+        "answer": 0,
+        "rationale": "1,000 mL + (12 - 10) kg times 50 mL/kg = 1100 mL/day. Apply 100 mL/kg to the first 10 kg, 50 mL/kg only to the next 10 kg, and 20 mL/kg only to weight above 20 kg. This is a maintenance estimate, not an automatic PN volume. Adjust for clinical status and account for other fluid sources before prescribing PN.",
+        "reviewHref": "#pediatric-fluid-glucose"
+      },
+      "status": "verified",
+      "sourceEvidence": [
+        "FDA2018 PDF9 Table4-6 tier equation,age scope and total-needs versus product-volume columns",
+        "FDA2018 PDF5-6 section2.5 and8 section2.8 individualized rate/volume",
+        "BookChapter11 PDF158 pediatric weightabove20kg formula where relevant",
+        "Indexed original1957 publisher abstract method provenance only"
+      ],
+      "independentArithmetic": {
+        "id": "pedpn-054",
+        "weightKg": "12",
+        "firstTierMl": "1000",
+        "secondTierMl": "100",
+        "thirdTierMl": "0",
+        "totalMlPerDay": "1100",
+        "distractorVolumes": [
+          "1200",
+          "600",
+          "1740"
+        ],
+        "distractorModels": [
+          "Apply100mL/kg to entire weight",
+          "Apply50mL/kg to entire weight",
+          "Add20mL/kg for entire weight to1500mL base"
+        ],
+        "answerUnique": true
+      },
+      "oneBestAnswerAndAllAlternativesReviewed": true,
+      "keyAndCorrectTextPreserved": true,
+      "change": "Clarify age of at least one month and estimated total daily volume; provide the individual calculation and replace arbitrary offsets with incorrect tier applications."
+    },
+    {
+      "question": {
+        "id": "pedpn-055",
+        "question": "A child aged at least 1 month weighs 15 kg. Using the stated Holliday-Segar daily maintenance convention, what is the estimated total fluid volume?",
+        "choices": [
+          "1250 mL/day",
+          "1500 mL/day",
+          "750 mL/day",
+          "1800 mL/day"
+        ],
+        "answer": 0,
+        "rationale": "1,000 mL + (15 - 10) kg times 50 mL/kg = 1250 mL/day. Apply 100 mL/kg to the first 10 kg, 50 mL/kg only to the next 10 kg, and 20 mL/kg only to weight above 20 kg. This is a maintenance estimate, not an automatic PN volume. Adjust for clinical status and account for other fluid sources before prescribing PN.",
+        "reviewHref": "#pediatric-fluid-glucose"
+      },
+      "status": "verified",
+      "sourceEvidence": [
+        "FDA2018 PDF9 Table4-6 tier equation,age scope and total-needs versus product-volume columns",
+        "FDA2018 PDF5-6 section2.5 and8 section2.8 individualized rate/volume",
+        "BookChapter11 PDF158 pediatric weightabove20kg formula where relevant",
+        "Indexed original1957 publisher abstract method provenance only"
+      ],
+      "independentArithmetic": {
+        "id": "pedpn-055",
+        "weightKg": "15",
+        "firstTierMl": "1000",
+        "secondTierMl": "250",
+        "thirdTierMl": "0",
+        "totalMlPerDay": "1250",
+        "distractorVolumes": [
+          "1500",
+          "750",
+          "1800"
+        ],
+        "distractorModels": [
+          "Apply100mL/kg to entire weight",
+          "Apply50mL/kg to entire weight",
+          "Add20mL/kg for entire weight to1500mL base"
+        ],
+        "answerUnique": true
+      },
+      "oneBestAnswerAndAllAlternativesReviewed": true,
+      "keyAndCorrectTextPreserved": true,
+      "change": "Clarify age of at least one month and estimated total daily volume; provide the individual calculation and replace arbitrary offsets with incorrect tier applications."
+    },
+    {
+      "question": {
+        "id": "pedpn-056",
+        "question": "A child aged at least 1 month weighs 20 kg. Using the stated Holliday-Segar daily maintenance convention, what is the estimated total fluid volume?",
+        "choices": [
+          "1500 mL/day",
+          "2000 mL/day",
+          "1000 mL/day",
+          "1900 mL/day"
+        ],
+        "answer": 0,
+        "rationale": "1,000 mL + (20 - 10) kg times 50 mL/kg = 1500 mL/day. Apply 100 mL/kg to the first 10 kg, 50 mL/kg only to the next 10 kg, and 20 mL/kg only to weight above 20 kg. This is a maintenance estimate, not an automatic PN volume. Adjust for clinical status and account for other fluid sources before prescribing PN.",
+        "reviewHref": "#pediatric-fluid-glucose"
+      },
+      "status": "verified",
+      "sourceEvidence": [
+        "FDA2018 PDF9 Table4-6 tier equation,age scope and total-needs versus product-volume columns",
+        "FDA2018 PDF5-6 section2.5 and8 section2.8 individualized rate/volume",
+        "BookChapter11 PDF158 pediatric weightabove20kg formula where relevant",
+        "Indexed original1957 publisher abstract method provenance only"
+      ],
+      "independentArithmetic": {
+        "id": "pedpn-056",
+        "weightKg": "20",
+        "firstTierMl": "1000",
+        "secondTierMl": "500",
+        "thirdTierMl": "0",
+        "totalMlPerDay": "1500",
+        "distractorVolumes": [
+          "2000",
+          "1000",
+          "1900"
+        ],
+        "distractorModels": [
+          "Apply100mL/kg to entire weight",
+          "Apply50mL/kg to entire weight",
+          "Add20mL/kg for entire weight to1500mL base"
+        ],
+        "answerUnique": true
+      },
+      "oneBestAnswerAndAllAlternativesReviewed": true,
+      "keyAndCorrectTextPreserved": true,
+      "change": "Clarify age of at least one month and estimated total daily volume; provide the individual calculation and replace arbitrary offsets with incorrect tier applications."
+    },
+    {
+      "question": {
+        "id": "pedpn-057",
+        "question": "A child aged at least 1 month weighs 24 kg. Using the stated Holliday-Segar daily maintenance convention, what is the estimated total fluid volume?",
+        "choices": [
+          "1580 mL/day",
+          "2400 mL/day",
+          "1200 mL/day",
+          "1980 mL/day"
+        ],
+        "answer": 0,
+        "rationale": "1,500 mL + (24 - 20) kg times 20 mL/kg = 1580 mL/day. Apply 100 mL/kg to the first 10 kg, 50 mL/kg only to the next 10 kg, and 20 mL/kg only to weight above 20 kg. This is a maintenance estimate, not an automatic PN volume. Adjust for clinical status and account for other fluid sources before prescribing PN.",
+        "reviewHref": "#pediatric-fluid-glucose"
+      },
+      "status": "verified",
+      "sourceEvidence": [
+        "FDA2018 PDF9 Table4-6 tier equation,age scope and total-needs versus product-volume columns",
+        "FDA2018 PDF5-6 section2.5 and8 section2.8 individualized rate/volume",
+        "BookChapter11 PDF158 pediatric weightabove20kg formula where relevant",
+        "Indexed original1957 publisher abstract method provenance only"
+      ],
+      "independentArithmetic": {
+        "id": "pedpn-057",
+        "weightKg": "24",
+        "firstTierMl": "1000",
+        "secondTierMl": "500",
+        "thirdTierMl": "80",
+        "totalMlPerDay": "1580",
+        "distractorVolumes": [
+          "2400",
+          "1200",
+          "1980"
+        ],
+        "distractorModels": [
+          "Apply100mL/kg to entire weight",
+          "Apply50mL/kg to entire weight",
+          "Add20mL/kg for entire weight to1500mL base"
+        ],
+        "answerUnique": true
+      },
+      "oneBestAnswerAndAllAlternativesReviewed": true,
+      "keyAndCorrectTextPreserved": true,
+      "change": "Clarify age of at least one month and estimated total daily volume; provide the individual calculation and replace arbitrary offsets with incorrect tier applications."
+    },
+    {
+      "question": {
+        "id": "pedpn-058",
+        "question": "A child aged at least 1 month weighs 30 kg. Using the stated Holliday-Segar daily maintenance convention, what is the estimated total fluid volume?",
+        "choices": [
+          "1700 mL/day",
+          "3000 mL/day",
+          "1500 mL/day",
+          "2100 mL/day"
+        ],
+        "answer": 0,
+        "rationale": "1,500 mL + (30 - 20) kg times 20 mL/kg = 1700 mL/day. Apply 100 mL/kg to the first 10 kg, 50 mL/kg only to the next 10 kg, and 20 mL/kg only to weight above 20 kg. This is a maintenance estimate, not an automatic PN volume. Adjust for clinical status and account for other fluid sources before prescribing PN.",
+        "reviewHref": "#pediatric-fluid-glucose"
+      },
+      "status": "verified",
+      "sourceEvidence": [
+        "FDA2018 PDF9 Table4-6 tier equation,age scope and total-needs versus product-volume columns",
+        "FDA2018 PDF5-6 section2.5 and8 section2.8 individualized rate/volume",
+        "BookChapter11 PDF158 pediatric weightabove20kg formula where relevant",
+        "Indexed original1957 publisher abstract method provenance only"
+      ],
+      "independentArithmetic": {
+        "id": "pedpn-058",
+        "weightKg": "30",
+        "firstTierMl": "1000",
+        "secondTierMl": "500",
+        "thirdTierMl": "200",
+        "totalMlPerDay": "1700",
+        "distractorVolumes": [
+          "3000",
+          "1500",
+          "2100"
+        ],
+        "distractorModels": [
+          "Apply100mL/kg to entire weight",
+          "Apply50mL/kg to entire weight",
+          "Add20mL/kg for entire weight to1500mL base"
+        ],
+        "answerUnique": true
+      },
+      "oneBestAnswerAndAllAlternativesReviewed": true,
+      "keyAndCorrectTextPreserved": true,
+      "change": "Clarify age of at least one month and estimated total daily volume; provide the individual calculation and replace arbitrary offsets with incorrect tier applications."
+    },
+    {
+      "question": {
+        "id": "pedpn-059",
+        "question": "A child aged at least 1 month weighs 42 kg. Using the stated Holliday-Segar daily maintenance convention, what is the estimated total fluid volume?",
+        "choices": [
+          "1940 mL/day",
+          "4200 mL/day",
+          "2100 mL/day",
+          "2340 mL/day"
+        ],
+        "answer": 0,
+        "rationale": "1,500 mL + (42 - 20) kg times 20 mL/kg = 1940 mL/day. Apply 100 mL/kg to the first 10 kg, 50 mL/kg only to the next 10 kg, and 20 mL/kg only to weight above 20 kg. This is a maintenance estimate, not an automatic PN volume. Adjust for clinical status and account for other fluid sources before prescribing PN.",
+        "reviewHref": "#pediatric-fluid-glucose"
+      },
+      "status": "verified",
+      "sourceEvidence": [
+        "FDA2018 PDF9 Table4-6 tier equation,age scope and total-needs versus product-volume columns",
+        "FDA2018 PDF5-6 section2.5 and8 section2.8 individualized rate/volume",
+        "BookChapter11 PDF158 pediatric weightabove20kg formula where relevant",
+        "Indexed original1957 publisher abstract method provenance only"
+      ],
+      "independentArithmetic": {
+        "id": "pedpn-059",
+        "weightKg": "42",
+        "firstTierMl": "1000",
+        "secondTierMl": "500",
+        "thirdTierMl": "440",
+        "totalMlPerDay": "1940",
+        "distractorVolumes": [
+          "4200",
+          "2100",
+          "2340"
+        ],
+        "distractorModels": [
+          "Apply100mL/kg to entire weight",
+          "Apply50mL/kg to entire weight",
+          "Add20mL/kg for entire weight to1500mL base"
+        ],
+        "answerUnique": true
+      },
+      "oneBestAnswerAndAllAlternativesReviewed": true,
+      "keyAndCorrectTextPreserved": true,
+      "change": "Clarify age of at least one month and estimated total daily volume; provide the individual calculation and replace arbitrary offsets with incorrect tier applications."
+    }
+  ],
+  "verifiedBankIds": [
+    "pedpn-003",
+    "pedpn-008",
+    "pedpn-009",
+    "pedpn-010",
+    "pedpn-014",
+    "pedpn-015",
+    "pedpn-017",
+    "pedpn-018",
+    "pedpn-019",
+    "pedpn-020",
+    "pedpn-021",
+    "pedpn-022",
+    "pedpn-023",
+    "pedpn-024",
+    "pedpn-025",
+    "pedpn-026",
+    "pedpn-027",
+    "pedpn-028",
+    "pedpn-029",
+    "pedpn-030",
+    "pedpn-031",
+    "pedpn-032",
+    "pedpn-033",
+    "pedpn-034",
+    "pedpn-035",
+    "pedpn-050",
+    "pedpn-051",
+    "pedpn-052",
+    "pedpn-053",
+    "pedpn-054",
+    "pedpn-055",
+    "pedpn-056",
+    "pedpn-057",
+    "pedpn-058",
+    "pedpn-059",
+    "pedpn-060",
+    "pedpn-061",
+    "pedpn-062",
+    "pedpn-063",
+    "pedpn-064",
+    "pedpn-065",
+    "pedpn-066",
+    "pedpn-067",
+    "pedpn-068",
+    "pedpn-069",
+    "pedpn-070",
+    "pedpn-071",
+    "pedpn-072",
+    "pedpn-073",
+    "pedpn-074",
+    "pedpn-075",
+    "pedpn-076",
+    "pedpn-077",
+    "pedpn-078",
+    "pedpn-079",
+    "pedpn-080",
+    "pedpn-081",
+    "pedpn-082",
+    "pedpn-083",
+    "pedpn-084",
+    "pedpn-085",
+    "pedpn-086",
+    "pedpn-087",
+    "pedpn-088",
+    "pedpn-089",
+    "pedpn-090",
+    "pedpn-091",
+    "pedpn-092",
+    "pedpn-093",
+    "pedpn-094",
+    "pedpn-095",
+    "pedpn-096",
+    "pedpn-097",
+    "pedpn-098",
+    "pedpn-099",
+    "pedpn-100",
+    "pedpn-101",
+    "pedpn-102",
+    "pedpn-103",
+    "pedpn-104",
+    "pedpn-105",
+    "pedpn-109"
+  ],
+  "newlyVerifiedBankIds": [
+    "pedpn-050",
+    "pedpn-051",
+    "pedpn-052",
+    "pedpn-053",
+    "pedpn-054",
+    "pedpn-055",
+    "pedpn-056",
+    "pedpn-057",
+    "pedpn-058",
+    "pedpn-059"
+  ],
+  "pendingQuestionIds": [
+    "pedpn-001",
+    "pedpn-002",
+    "pedpn-004",
+    "pedpn-005",
+    "pedpn-006",
+    "pedpn-007",
+    "pedpn-011",
+    "pedpn-012",
+    "pedpn-013",
+    "pedpn-016",
+    "pedpn-036",
+    "pedpn-037",
+    "pedpn-038",
+    "pedpn-039",
+    "pedpn-040",
+    "pedpn-106",
+    "pedpn-107",
+    "pedpn-108"
+  ],
+  "teachingReview": [
+    {
+      "lesson": "pediatric-fluid-glucose",
+      "heading": "Calculate a stated daily maintenance estimate",
+      "body": "For the Holliday-Segar convention used in these exercises, assign 100 mL/kg/day to the first 10 kg, 50 mL/kg/day only to the next 10 kg, and 20 mL/kg/day only to weight above 20 kg. A 12 kg child therefore has an estimate of 1,000 + 2 times 50 = 1,100 mL/day. Do not apply one tier's rate to the entire weight. These are total maintenance estimates for calculation practice, not a neonatal fluid protocol or an automatic PN prescription. The clinical fluid plan must be individualized.",
+      "status": "verified",
+      "sourceEvidence": [
+        "FDA2018 PDF9 totalrequirements Table4-6",
+        "BookPDF158 weightabove20kg andotherfluid accounting",
+        "FDA2018 PDF5-6/8 individualized needs/rate/volume;ASPENorder checklist nutritional plan/2in1separateILE"
+      ],
+      "independentWorkedExamples": [
+        {
+          "weightKg": 12,
+          "totalMaintenanceEstimateMl": 1100
+        },
+        {
+          "weightKg": 24,
+          "totalMaintenanceEstimateMl": 1580,
+          "adoptedTotalDailyAllowanceMl": 1580,
+          "otherCountedSourcesMl": 180,
+          "remainingAllowanceMl": 1400
+        }
+      ]
+    },
+    {
+      "lesson": "pediatric-fluid-glucose",
+      "heading": "Separate the fluid allowance from PN volume",
+      "body": "For a 24 kg child, the stated daily convention gives 1,000 + 500 + 4 times 20 = 1,580 mL/day. If the team has assessed and adopted a total daily allowance of 1,580 mL, and all other counted fluid sources supply 180 mL, the remaining allowance is 1,400 mL. Check whether the proposed PN, including any separate lipid infusion, fits within that remainder while meeting the assessed nutrition goal. The estimate alone does not select a product, concentration, route, or infusion rate.",
+      "status": "verified",
+      "sourceEvidence": [
+        "FDA2018 PDF9 totalrequirements Table4-6",
+        "BookPDF158 weightabove20kg andotherfluid accounting",
+        "FDA2018 PDF5-6/8 individualized needs/rate/volume;ASPENorder checklist nutritional plan/2in1separateILE"
+      ],
+      "independentWorkedExamples": [
+        {
+          "weightKg": 12,
+          "totalMaintenanceEstimateMl": 1100
+        },
+        {
+          "weightKg": 24,
+          "totalMaintenanceEstimateMl": 1580,
+          "adoptedTotalDailyAllowanceMl": 1580,
+          "otherCountedSourcesMl": 180,
+          "remainingAllowanceMl": 1400
+        }
+      ]
+    }
+  ],
+  "referenceMetadataReview": {
+    "heading": "Clinical references and calculation methods.",
+    "introduction": "References include historical maintenance-fluid methods, dated product labels, and PN guidance. Check the exact product's current labeling and local policy before applying a clinical prescription.",
+    "status": "verified",
+    "reason": "The shared default calls all references contemporary or current. The module now distinguishes historical methods and dated labels and directs readers to current product labeling. Existing optional metadata fields are used; the shared renderer is unchanged.",
+    "newReferences": [
+      {
+        "label": "Holliday and Segar. The Maintenance Need for Water in Parenteral Fluid Therapy, 1957",
+        "href": "https://doi.org/10.1542/peds.19.5.823"
+      },
+      {
+        "label": "FDA. CLINIMIX Label, 2018: Historical Daily Maintenance Estimates, Tables 4-6",
+        "href": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2018/020734s034lbl.pdf"
+      }
+    ],
+    "all19PriorReferencesPreserved": true,
+    "renderedReferenceCount": 21,
+    "wholeModuleMetadataVerified": false
+  },
+  "sourceDiscrepancies": [
+    "Chapter 54 does not contain the lower-weight maintenance formula; Chapter 11 provides only the branch above 20 kg. Lower tiers are supported by the approved FDA 2018 tables rather than inferred from the book.",
+    "In FDA 2018 Tables 4-6, the fluid expression in the Recommended Nutritional Requirements column produces a total daily volume despite the row heading mL/kg/day. Do not multiply that completed total by weight again or equate it with a product-specific PN volume.",
+    "FDA 2021 tables omit the older nutritional-requirements column and retain product-specific dose volumes. No current product dose, universal fluid target, or withdrawal of the historical convention is inferred. The public 2018 reference is explicitly labeled historical.",
+    "The 2018 and 2021 preterm protein tables list 3-4 g/kg/day. These are not substituted for the previously reviewed 2023 ASPEN maximal target of 3.5 g/kg/day. No neonatal fluid protocol or new amino-acid dose is adopted.",
+    "The original 1957 full paper was unavailable. Indexed abstract provenance is not a full-paper review; complete relevant FDA 2018 tables provide the numerical evidence.",
+    "The questions calculate a stated daily maintenance convention for children aged at least one month. Actual PN volume requires clinical assessment and reconciliation of other fluid sources, product, concentration, access, and rate. No automatic infusion recommendation is added."
+  ],
+  "coverage": {
+    "bank": 100,
+    "newlySourceVerifiedBank": 10,
+    "sourceVerifiedBank": 82,
+    "remainingBank": 18,
+    "bodies": 35,
+    "newlySourceVerifiedBodies": 2,
+    "sourceVerifiedBodies": 23,
+    "remainingBodies": 12,
+    "embeddedChecks": 6,
+    "sourceVerifiedEmbeddedChecks": 4,
+    "remainingEmbeddedChecks": 2,
+    "figures": 6,
+    "sourceVerifiedFigures": 4,
+    "remainingFigures": 2,
+    "cumulative": 5,
+    "sourceVerifiedCumulative": 4,
+    "remainingCumulative": 1,
+    "metadataVerified": false,
+    "wholeModuleVerified": false,
+    "wholeChapterVerified": false
+  },
+  "preservation": {
+    "all100BankIdsKeysCorrectTextsAnchorsPreserved": true,
+    "tenStemsAgeAndTotalVolumeClarified": true,
+    "ninetyOtherQuestionObjectsUnchanged": true,
+    "all1180CumulativeObjectsUnchanged": true,
+    "all33ExistingTeachingBodiesUnchanged": true,
+    "fiveOtherLessonObjectsUnchanged": true,
+    "allSixEmbeddedChecksUnchanged": true,
+    "allSixFigureFilesUnchanged": true,
+    "all19PriorReferencesPreserved": true,
+    "newAssessmentObjects": 0
+  },
+  "calculationEvidence": {
+    "independentCappedTierRows": [
+      {
+        "id": "pedpn-050",
+        "weightKg": "3",
+        "firstTierMl": "300",
+        "secondTierMl": "0",
+        "thirdTierMl": "0",
+        "totalMlPerDay": "300",
+        "distractorVolumes": [
+          "1150",
+          "150",
+          "60"
+        ],
+        "distractorModels": [
+          "Apply second-tier base before reaching10kg",
+          "Apply50mL/kg to entire weight",
+          "Apply20mL/kg to entire weight"
+        ],
+        "answerUnique": true
+      },
+      {
+        "id": "pedpn-051",
+        "weightKg": "5",
+        "firstTierMl": "500",
+        "secondTierMl": "0",
+        "thirdTierMl": "0",
+        "totalMlPerDay": "500",
+        "distractorVolumes": [
+          "1250",
+          "250",
+          "100"
+        ],
+        "distractorModels": [
+          "Apply second-tier base before reaching10kg",
+          "Apply50mL/kg to entire weight",
+          "Apply20mL/kg to entire weight"
+        ],
+        "answerUnique": true
+      },
+      {
+        "id": "pedpn-052",
+        "weightKg": "8",
+        "firstTierMl": "800",
+        "secondTierMl": "0",
+        "thirdTierMl": "0",
+        "totalMlPerDay": "800",
+        "distractorVolumes": [
+          "1400",
+          "400",
+          "160"
+        ],
+        "distractorModels": [
+          "Apply second-tier base before reaching10kg",
+          "Apply50mL/kg to entire weight",
+          "Apply20mL/kg to entire weight"
+        ],
+        "answerUnique": true
+      },
+      {
+        "id": "pedpn-053",
+        "weightKg": "10",
+        "firstTierMl": "1000",
+        "secondTierMl": "0",
+        "thirdTierMl": "0",
+        "totalMlPerDay": "1000",
+        "distractorVolumes": [
+          "1500",
+          "500",
+          "200"
+        ],
+        "distractorModels": [
+          "Apply second-tier base before reaching10kg",
+          "Apply50mL/kg to entire weight",
+          "Apply20mL/kg to entire weight"
+        ],
+        "answerUnique": true
+      },
+      {
+        "id": "pedpn-054",
+        "weightKg": "12",
+        "firstTierMl": "1000",
+        "secondTierMl": "100",
+        "thirdTierMl": "0",
+        "totalMlPerDay": "1100",
+        "distractorVolumes": [
+          "1200",
+          "600",
+          "1740"
+        ],
+        "distractorModels": [
+          "Apply100mL/kg to entire weight",
+          "Apply50mL/kg to entire weight",
+          "Add20mL/kg for entire weight to1500mL base"
+        ],
+        "answerUnique": true
+      },
+      {
+        "id": "pedpn-055",
+        "weightKg": "15",
+        "firstTierMl": "1000",
+        "secondTierMl": "250",
+        "thirdTierMl": "0",
+        "totalMlPerDay": "1250",
+        "distractorVolumes": [
+          "1500",
+          "750",
+          "1800"
+        ],
+        "distractorModels": [
+          "Apply100mL/kg to entire weight",
+          "Apply50mL/kg to entire weight",
+          "Add20mL/kg for entire weight to1500mL base"
+        ],
+        "answerUnique": true
+      },
+      {
+        "id": "pedpn-056",
+        "weightKg": "20",
+        "firstTierMl": "1000",
+        "secondTierMl": "500",
+        "thirdTierMl": "0",
+        "totalMlPerDay": "1500",
+        "distractorVolumes": [
+          "2000",
+          "1000",
+          "1900"
+        ],
+        "distractorModels": [
+          "Apply100mL/kg to entire weight",
+          "Apply50mL/kg to entire weight",
+          "Add20mL/kg for entire weight to1500mL base"
+        ],
+        "answerUnique": true
+      },
+      {
+        "id": "pedpn-057",
+        "weightKg": "24",
+        "firstTierMl": "1000",
+        "secondTierMl": "500",
+        "thirdTierMl": "80",
+        "totalMlPerDay": "1580",
+        "distractorVolumes": [
+          "2400",
+          "1200",
+          "1980"
+        ],
+        "distractorModels": [
+          "Apply100mL/kg to entire weight",
+          "Apply50mL/kg to entire weight",
+          "Add20mL/kg for entire weight to1500mL base"
+        ],
+        "answerUnique": true
+      },
+      {
+        "id": "pedpn-058",
+        "weightKg": "30",
+        "firstTierMl": "1000",
+        "secondTierMl": "500",
+        "thirdTierMl": "200",
+        "totalMlPerDay": "1700",
+        "distractorVolumes": [
+          "3000",
+          "1500",
+          "2100"
+        ],
+        "distractorModels": [
+          "Apply100mL/kg to entire weight",
+          "Apply50mL/kg to entire weight",
+          "Add20mL/kg for entire weight to1500mL base"
+        ],
+        "answerUnique": true
+      },
+      {
+        "id": "pedpn-059",
+        "weightKg": "42",
+        "firstTierMl": "1000",
+        "secondTierMl": "500",
+        "thirdTierMl": "440",
+        "totalMlPerDay": "1940",
+        "distractorVolumes": [
+          "4200",
+          "2100",
+          "2340"
+        ],
+        "distractorModels": [
+          "Apply100mL/kg to entire weight",
+          "Apply50mL/kg to entire weight",
+          "Add20mL/kg for entire weight to1500mL base"
+        ],
+        "answerUnique": true
+      }
+    ],
+    "workedTeachingExamples": [
+      {
+        "weightKg": 12,
+        "totalMaintenanceEstimateMl": 1100
+      },
+      {
+        "weightKg": 24,
+        "totalMaintenanceEstimateMl": 1580,
+        "adoptedTotalDailyAllowanceMl": 1580,
+        "otherCountedSourcesMl": 180,
+        "remainingAllowanceMl": 1400
+      }
+    ],
+    "newDistinctSourceClosedBankCalculations": 10,
+    "runningAssessmentCalculationsBefore": 718,
+    "runningAssessmentCalculationsAfter": 728,
+    "runningSeparateCompletedBookExercisesUnchanged": 98,
+    "countConvention": "The ten questions were arithmetic-only in the earlier unit and excluded from the completed calculation count. They now have complete source support. Reverification and new teaching examples are not counted as additional bank calculations. Chapter 54 LC case arithmetic is recorded separately while its full clinical audit remains pending."
+  },
+  "validation": {
+    "isolatedBuild": {
+      "status": "passed",
+      "command": "next build --webpack",
+      "staticPages": 567,
+      "scope": "Archived exactbase HEAD plusonlytwo scopedcodefiles,existingnode_modulessymlink;unrelateddrafts/env/privatePDFexcluded",
+      "initialFailure": "An initial ENOSPC failure was resolved by deleting only disposable .next caches from private audit candidates. The final build exited successfully."
+    },
+    "focusedStructuralAudit": {
+      "status": "passed",
+      "module": "pediatric-parenteral-nutrition",
+      "questions": 100,
+      "clinicalAccuracyEstablishedSeparately": true
+    },
+    "browser": {
+      "status": "passed",
+      "results": [
+        {
+          "module": "pediatric-parenteral-nutrition",
+          "width": 1440,
+          "renderedBodies": 35,
+          "expandedBodyViews": 2,
+          "bankItemsCorrectWrong": 10,
+          "cumulativeRuntimeItems": 5,
+          "sourceVerifiedCumulativeInThisUnit": 0,
+          "sourceVerifiedChecksThisUnit": 0,
+          "wholeParentCumulativeClinicalSourceClosure": false,
+          "groups": 1,
+          "remediationAndSavedProgress": true
+        },
+        {
+          "module": "pediatric-parenteral-nutrition",
+          "width": 390,
+          "renderedBodies": 35,
+          "expandedBodyViews": 2,
+          "bankItemsCorrectWrong": 10,
+          "cumulativeRuntimeItems": 5,
+          "sourceVerifiedCumulativeInThisUnit": 0,
+          "sourceVerifiedChecksThisUnit": 0,
+          "wholeParentCumulativeClinicalSourceClosure": false,
+          "groups": 1,
+          "remediationAndSavedProgress": true
+        }
+      ],
+      "pageErrors": []
+    },
+    "manualRenderedReview": {
+      "status": "passed",
+      "widths": [
+        1440,
+        390
+      ],
+      "pairs": 23,
+      "allFinalPairsManuallyViewed": true,
+      "views": [
+        "pedpn-050 correct",
+        "pedpn-050 wrong",
+        "pedpn-051 correct",
+        "pedpn-051 wrong",
+        "pedpn-052 correct",
+        "pedpn-052 wrong",
+        "pedpn-053 correct",
+        "pedpn-053 wrong",
+        "pedpn-054 correct",
+        "pedpn-054 wrong",
+        "pedpn-055 correct",
+        "pedpn-055 wrong",
+        "pedpn-056 correct",
+        "pedpn-056 wrong",
+        "pedpn-057 correct",
+        "pedpn-057 wrong",
+        "pedpn-058 correct",
+        "pedpn-058 wrong",
+        "pedpn-059 correct",
+        "pedpn-059 wrong",
+        "Calculate a stated daily maintenance estimate",
+        "Separate the fluid allowance from PN volume",
+        "Source references"
+      ],
+      "scope": "All ten revised questions in correct and incorrect states at desktop and mobile widths; both new teaching bodies; all 21 source links and the dated reference introduction. All 35 teaching-body DOM texts match the runtime module. Checks of 320 px overflow, remediation links, and saved best/latest scores passed. Every cumulative question object remains unchanged."
+    },
+    "contentHashes": {
+      "src/data/modules/pediatricParenteralNutrition.js": "e7a7c804a0d0e17a09e27a08430063a5aacc8b5b6b181e21725924d498938d5e",
+      "src/data/questionBanks/pediatricParenteralNutrition.js": "79f315570b576544e6b876986e3d65ab84af6465a6368682a38b99b2db92baee"
+    },
+    "sourceRecomparison": "Final prompts, all 40 choices, keys, rationales, two teaching bodies, worked calculations, and reference wording were compared again with complete relevant FDA 2018 pages and book PDF page 158. Total maintenance needs remain distinct from product volume; age scope and individual clinical adjustment are explicit."
+  },
+  "release": {
+    "branch": "audit/rxprep-content-2026-09-24",
+    "commit": "pending",
+    "push": "pending",
+    "receipt": "sequential-release-pediatric-pn-maintenance-fluid-2026-10-01.json",
+    "mainMerge": "notperformed",
+    "production": "notverified"
+  },
+  "nextAction": "Finish18remainingpediatricPNbankquestions/12existingbodies/twoembeddedchecks/twofigures/onecumulative andfullmodulemetadata against approvedPNsources. Maintenance100/50/20 calculation questions now verified; do not reread them as pending. Resolve age/development and PNindications/access, glucose/organ context, protein restriction and delivered-intake/growth monitoring. Chapter54 supplied-book PDF729-738/printed721-730 fulltext/tables/images already read; broader chapter mapping/content/question audit remains pending. Preserve pendingEN outside-source exception;Chapter1entry15andChapter11stillreviewing."
+}

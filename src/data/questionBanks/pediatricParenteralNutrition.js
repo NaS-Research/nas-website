@@ -50,7 +50,9 @@ const core = [
 
 const fluidCases = [3, 5, 8, 10, 12, 15, 20, 24, 30, 42].map((kg, index) => {
   const volume = kg <= 10 ? kg * 100 : kg <= 20 ? 1000 + (kg - 10) * 50 : 1500 + (kg - 20) * 20;
-  return q(`05${index}`, `Using the stated Holliday-Segar daily maintenance convention, what is the estimated volume for a ${kg} kg child?`, [`${volume} mL/day`, `${volume + 250} mL/day`, `${Math.max(100, volume - 300)} mL/day`, `${kg * 20} mL/day`], 0, `The first 10 kg receive 100 mL/kg, the next 10 kg receive 50 mL/kg, and weight above 20 kg receives 20 mL/kg. This estimate must be adjusted for clinical context.`, "pediatric-fluid-glucose");
+  const incorrectVolumes = kg <= 10 ? [1000 + kg * 50, kg * 50, kg * 20] : [kg * 100, kg * 50, 1500 + kg * 20];
+  const calculation = kg <= 10 ? `${kg} kg times 100 mL/kg = ${volume} mL/day` : kg <= 20 ? `1,000 mL + (${kg} - 10) kg times 50 mL/kg = ${volume} mL/day` : `1,500 mL + (${kg} - 20) kg times 20 mL/kg = ${volume} mL/day`;
+  return q(`05${index}`, `A child aged at least 1 month weighs ${kg} kg. Using the stated Holliday-Segar daily maintenance convention, what is the estimated total fluid volume?`, [`${volume} mL/day`, ...incorrectVolumes.map(value => `${value} mL/day`)], 0, `${calculation}. Apply 100 mL/kg to the first 10 kg, 50 mL/kg only to the next 10 kg, and 20 mL/kg only to weight above 20 kg. This is a maintenance estimate, not an automatic PN volume. Adjust for clinical status and account for other fluid sources before prescribing PN.`, "pediatric-fluid-glucose");
 });
 
 const girToGramsCases = [[1,6],[1.5,8],[2,6],[2.5,10],[3,5],[3.2,7],[4,4],[5,3],[6,2.5],[8,2]].map(([kg,gir], index) => {
