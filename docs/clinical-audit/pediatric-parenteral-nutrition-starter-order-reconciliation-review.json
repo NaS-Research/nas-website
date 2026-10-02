@@ -1,0 +1,1171 @@
+{
+  "recordedAt": "2026-10-02T05:47:12.038535+00:00",
+  "baseCommit": "526e809a41658c61f7f04040c6ad11be6ace6c0d",
+  "unit": "Neonatal starter PN bridge and complete daily-order lesson reconciliation",
+  "sourcePolicy": "SuppliedRxPrep2023 remains primary; existing official ASPEN/USP/FDA/CDC PN source approval used. ASPEN2026 child resource linked by approved essential-resource page. No new outside neonatal/renal guideline set adopted.",
+  "sources": [
+    {
+      "title": "ASPEN Clinical Considerations for Neonatal Starter Parenteral Nutrition",
+      "updated": "2026-09-02",
+      "url": "https://nutritioncare.org/wp-content/uploads/2026/09/Clinical-Considerations-Neonatal-Starter-PN.pdf",
+      "pages": 8,
+      "fullTextRead": true,
+      "all8RenderedPagesViewedDuringIntake": true,
+      "keyPagesRecheckedThisUnit": [
+        2,
+        5
+      ],
+      "privateFileSHA256": "752672cba87a2da0c54eccedd9abad7e7b5f0055aceba2bd776f060b1aa8b4be",
+      "method": "Board-approved clinical considerations from narrative review and interprofessional expertise; not a new randomized trial or a universal patient protocol.",
+      "adoptedSections": [
+        "Definition and Purpose: fullpage2",
+        "Indications and institutional eligibility: fullpage2",
+        "Commercial MCB substitution: fullpage5",
+        "Summary timing: fullpage6"
+      ],
+      "limits": [
+        "No universal starter recipe, nutrient dose, catheter dwell policy, new peripheral osmolarity cutoff or beyond-use time adopted.",
+        "Commercial MCB recommendation limited to neonatal starter use and products then available in the United States.",
+        "No claim that all outsourced services were discontinued or that a current universal shortage exists.",
+        "Referenced primary studies and member-protected dosing resource not independently read or accessed.",
+        "The document does not resolve retained neonatal water-loss, brain/GIR or CKRT protein claims."
+      ]
+    },
+    {
+      "title": "ASPEN prescribing/order-review tools and prior complete source reviews",
+      "prescribingPDF1TextAndVisualRechecked": true,
+      "pediatricTemplateTextAndVisualRechecked": true,
+      "evidence": [
+        "pediatric-parenteral-nutrition-order-monitoring-review.json",
+        "pediatric-parenteral-nutrition-development-delivery-review.json",
+        "pediatric-parenteral-nutrition-metabolic-response-review.json",
+        "pediatric-parenteral-nutrition-indication-access-review.json"
+      ],
+      "bounds": "Prior exact content/evidence snapshots reconciled for unchanged bodies/questions/figures; no claim of independently rereading every referenced full article this unit."
+    }
+  ],
+  "questionReview": [
+    {
+      "question": {
+        "id": "pedpn-041",
+        "question": "An eligible newborn receives standardized neonatal starter PN while a patient-specific formulation is prepared. Which plan follows ASPEN's September 2026 clinical considerations?",
+        "choices": [
+          "Transition to patient-specific PN as soon as feasible, ideally within 24 hours and no later than 48 hours after birth",
+          "Continue the starter formulation for a week because it supplies every infant's complete nutrient requirements",
+          "Replace starter PN with a weight-scaled commercial multichamber bag without reviewing amino-acid composition",
+          "Delay the patient-specific formulation until full enteral feeding is established"
+        ],
+        "answer": 0,
+        "rationale": "Starter PN is a temporary bridge and does not meet each infant's complete macronutrient and electrolyte needs. ASPEN calls for prompt transition after birth and advises against substituting the commercial multichamber PN bags then available in the United States as neonatal starter PN.",
+        "reviewHref": "#pediatric-pn-decision-access"
+      },
+      "status": "verified",
+      "oneDefensibleBestAnswer": true,
+      "allChoices": [
+        {
+          "text": "Transition to patient-specific PN as soon as feasible, ideally within 24 hours and no later than 48 hours after birth",
+          "keyed": true,
+          "review": "Temporary bridge; patient-specific transition ideally24/no later48hours after birth explicitly stated on pages2/6."
+        },
+        {
+          "text": "Continue the starter formulation for a week because it supplies every infant's complete nutrient requirements",
+          "keyed": false,
+          "review": "One week and complete nutrient adequacy contradict both transition timing and incomplete macronutrient/electrolyte provision."
+        },
+        {
+          "text": "Replace starter PN with a weight-scaled commercial multichamber bag without reviewing amino-acid composition",
+          "keyed": false,
+          "review": "Weight scaling does not establish neonatal amino-acid suitability; page5 advises against US commercial MCB substitution for neonatal starter PN."
+        },
+        {
+          "text": "Delay the patient-specific formulation until full enteral feeding is established",
+          "keyed": false,
+          "review": "Waiting for full enteral intake delays individualized PN beyond the stated newborn transition plan."
+        }
+      ],
+      "rationaleSource": "Completepages2/5/6; neonatal starter context and source date preserved.",
+      "distinctness": "Existing003 tests prompt PN initiation after access; new041 tests replacement of standardized starter PN with an individualized formulation. No numerical dose question duplicated."
+    }
+  ],
+  "teachingReview": [
+    {
+      "heading": "Use neonatal starter PN as a temporary bridge",
+      "body": "ASPEN's September 2026 clinical considerations describe standardized neonatal starter PN as a bridge for eligible newborns while patient-specific PN is prepared. Begin after appropriate venous access is established. Transition as soon as feasible, ideally within 24 hours and no later than 48 hours after birth. Starter PN does not meet each infant's complete macronutrient and electrolyte needs. Use institution-defined eligibility and formulation protocols; a readily available bag does not replace the individual nutrition assessment.",
+      "status": "whole body verified",
+      "clauseSource": "Page2 definition/purpose, timing, incomplete provision and institutional eligibility; page6 timing summary.",
+      "dateAndPopulationScopePreserved": true
+    },
+    {
+      "heading": "Distinguish starter PN from commercial multichamber bags",
+      "body": "The September 2026 ASPEN document advises against using the commercial multichamber PN bags then available in the United States as neonatal starter PN. They lack pediatric-specific amino-acid composition and can create inappropriate electrolyte or lipid delivery and volume or hang-time problems. This recommendation addresses neonatal starter use. Historical CLINIMIX examples elsewhere in this module explain calculations and labeled precautions; they do not endorse that product as neonatal starter PN.",
+      "status": "whole body verified",
+      "clauseSource": "Page5 complete MCB subsection: composition, electrolyte/lipid delivery, volume/hangtime reasons. HistoricalCLINIMIX calculation and monitoring use reconciled against existing maintenance/order source records; no neonatal starter endorsement.",
+      "dateAndPopulationScopePreserved": true
+    }
+  ],
+  "wholeLessons": [
+    {
+      "slug": "pediatric-order-monitoring",
+      "bodies": [
+        {
+          "heading": "Build from the patient outward",
+          "exactVerifiedBodyMatch": true,
+          "matchingRecords": [
+            {
+              "evidence": "pediatric-parenteral-nutrition-order-monitoring-review.json",
+              "recordPath": "$.teachingReview[0]",
+              "status": "verified",
+              "sourceMapping": {
+                "status": "verified",
+                "newBody": false,
+                "sourceEvidence": [
+                  {
+                    "clauses": "Dosing weight, components, volume, schedule and rate",
+                    "sources": [
+                      "ASPEN prescribing PDF1 and pediatric template PDF2",
+                      "ASPEN order review PDF1"
+                    ]
+                  },
+                  {
+                    "clauses": "Remaining PN fluid allowance after other sources",
+                    "sources": [
+                      "Verified maintenance-fluid review: complete FDA2018 PDF5-6/8-9 and bookPDF158"
+                    ]
+                  },
+                  {
+                    "clauses": "Amino acids, GIR/dextrose, lipid grams and volume",
+                    "sources": [
+                      "Verified book-calculations review: complete bookPDF158-168 and independent calculations",
+                      "Verified preterm/lipid review with product-specific limits"
+                    ]
+                  },
+                  {
+                    "clauses": "Electrolytes, minerals, vitamins and trace elements",
+                    "sources": [
+                      "Verified micronutrient review and full source tables/labels",
+                      "ASPEN prescribing PDF1"
+                    ]
+                  },
+                  {
+                    "clauses": "Sterile water, final concentration, compatibility and route",
+                    "sources": [
+                      "ASPEN prescribing PDF2 final active concentrations",
+                      "ASPEN order review PDF1/2 final-volume and stability considerations",
+                      "Verified compounding-safety review"
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "heading": "Reconcile the prescribed dosing weight",
+          "exactVerifiedBodyMatch": true,
+          "matchingRecords": [
+            {
+              "evidence": "pediatric-parenteral-nutrition-order-monitoring-review.json",
+              "recordPath": "$.teachingReview[1]",
+              "status": "verified",
+              "sourceMapping": {
+                "status": "verified",
+                "newBody": true,
+                "sourceEvidence": [
+                  "ASPEN prescribing PDF1/2 and order review PDF1; independent decimal calculation; conditional target does not prescribe a universal neonatal dose."
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "heading": "Validate an unexpected glucose result",
+          "exactVerifiedBodyMatch": true,
+          "matchingRecords": [
+            {
+              "evidence": "pediatric-parenteral-nutrition-order-monitoring-review.json",
+              "recordPath": "$.teachingReview[2]",
+              "status": "verified",
+              "sourceMapping": {
+                "status": "verified",
+                "newBody": true,
+                "sourceEvidence": [
+                  "ASPEN2014 Administration3 vascular-access rationale",
+                  "FDA2021 PDF17 fullsection8.4",
+                  "No sample-discard volume, insulin algorithm or mandatory treatment delay introduced."
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "heading": "Compare today's order with yesterday's",
+          "exactVerifiedBodyMatch": true,
+          "matchingRecords": [
+            {
+              "evidence": "pediatric-parenteral-nutrition-order-monitoring-review.json",
+              "recordPath": "$.teachingReview[3]",
+              "status": "verified",
+              "sourceMapping": {
+                "status": "verified",
+                "newBody": true,
+                "sourceEvidence": [
+                  "ASPEN order-review fullPDF1: previous/current order, current nutrition plan, missing additives and independent calculations",
+                  "ASPEN prescribing PDF2: final active concentrations and compatibility/stability"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "heading": "Compare more than laboratory values",
+          "exactVerifiedBodyMatch": true,
+          "matchingRecords": [
+            {
+              "evidence": "pediatric-parenteral-nutrition-development-delivery-review.json",
+              "recordPath": "$.teachingReview[1]",
+              "status": "verified",
+              "sourceMapping": {
+                "status": "verified",
+                "newBody": false,
+                "clauseReview": [
+                  {
+                    "clauses": "Actual intake,output,fluid accumulation,growth and feeding tolerance",
+                    "sources": [
+                      "aspen2017 pediatric13A",
+                      "neonatal2025 pages1-3"
+                    ]
+                  },
+                  {
+                    "clauses": "Glucose,electrolytes,Ca,Mg,P,TG,liver/kidney and acid-base tests; catheter findings",
+                    "sources": [
+                      "fda2025smof fullPDF10 section5.10",
+                      "fda2021 fullPDF14/15 monitoring and organ context",
+                      "prior complete ASPEN prescribing Table1",
+                      "aspen2017 pediatric13A"
+                    ]
+                  },
+                  {
+                    "clauses": "Frequency individualized to age,acuity,stability,order changes",
+                    "sources": [
+                      "aspen2017 pediatric13A",
+                      "prior complete prescribing Table1 qualification"
+                    ]
+                  },
+                  {
+                    "clauses": "Labs cannot prove delivered nutrients or growth goals",
+                    "sources": [
+                      "aspen2017 pediatric13A separate actual/projected intake,goal and lab assessments"
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "heading": "Use trends to change one coherent plan",
+          "exactVerifiedBodyMatch": true,
+          "matchingRecords": [
+            {
+              "evidence": "pediatric-parenteral-nutrition-metabolic-response-review.json",
+              "recordPath": "$.teachingReview[1]",
+              "status": "whole body verified",
+              "sourceMapping": {
+                "status": "whole body verified",
+                "allClausesReviewed": [
+                  {
+                    "claim": "Risingglucose prompts complete GIR/source/clinical/medicine/insulin/specimen review",
+                    "source": "FDA2021 5.3/5.5/8.4;ASPEN2017Q13 pediatric illness/stress,steroid use and actual-intake review; prior ASPEN2014 Administration3 sample-validity review. Named items are an assessment framework, not asserted causes of this particular result."
+                  },
+                  {
+                    "claim": "Assess patient and validrepeat whenpotentiallycontaminated;single result notprovenartifact/intolerance",
+                    "source": "Prior complete ASPEN2014 Administration3 and FDA2021 neonatalglycemia warning."
+                  },
+                  {
+                    "claim": "Risingdirectbilirubin requires earlycause/contribution review with complete intake/medication/duration context and otherlivertests",
+                    "source": "FDA2021 5.7/5.9/8.4;FDA2025 5.2;ASPEN2017Q13 andTable13.2;priorQ2Bneonatal lowEN/prolongedPN context. Inference is clinically structured assessment, not etiologydiagnosis."
+                  },
+                  {
+                    "claim": "Lipidpossiblecontribution;multifactorial;clinicalassessmentguideswholeplan/response",
+                    "source": "FDA2025SMOF5.2 and2017Q13 pediatric continuous assessment/reassessment."
+                  }
+                ],
+                "originalClinicalThemesPreserved": true
+              }
+            }
+          ]
+        },
+        {
+          "heading": "Transition while preserving growth",
+          "exactVerifiedBodyMatch": true,
+          "matchingRecords": [
+            {
+              "evidence": "pediatric-parenteral-nutrition-development-delivery-review.json",
+              "recordPath": "$.teachingReview[2]",
+              "status": "verified",
+              "sourceMapping": {
+                "status": "verified",
+                "newBody": false,
+                "clauseReview": [
+                  {
+                    "clauses": "Advance clinically safe tolerated intake; reconcile both routes with absorption,growth,energy/protein and hydration/electrolytes",
+                    "sources": [
+                      "aspen2017 global13B,pediatric13B,full Table13.4"
+                    ]
+                  },
+                  {
+                    "clauses": "One order/energy fraction cannot prove all requirements or absorption,especially intestinal failure",
+                    "sources": [
+                      "aspen2017 global13B impaired-GI absorption qualifier and pediatric growth/nutrient assessment"
+                    ]
+                  },
+                  {
+                    "clauses": "Micronutrient supplementation and monitoring after PN stops",
+                    "sources": [
+                      "aspen2017 full Table13.4"
+                    ]
+                  },
+                  {
+                    "clauses": "Prompt central access removal once no longer essential; assess ongoing IV needs first",
+                    "sources": [
+                      "cdc section2.2 row10",
+                      "aspen2017 Table13.4 continued IV fluid/electrolyte needs and GI-impairment qualifier"
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "heading": "Reconcile delivered nutrients across routes",
+          "exactVerifiedBodyMatch": true,
+          "matchingRecords": [
+            {
+              "evidence": "pediatric-parenteral-nutrition-development-delivery-review.json",
+              "recordPath": "$.teachingReview[3]",
+              "status": "verified",
+              "sourceMapping": {
+                "status": "verified",
+                "newBody": true,
+                "clauseReview": [
+                  {
+                    "clauses": "Documented composition,volume,time and PN/separate lipid/oral or EN intake converted to actual energy,protein,fluid",
+                    "sources": [
+                      "aspen2017 pediatric13A actual/projected energy/protein",
+                      "prior verified book calculations and complete ASPEN prescribing/administration tools"
+                    ]
+                  },
+                  {
+                    "clauses": "Procedures,line problems,medication incompatibility can interrupt delivery",
+                    "sources": [
+                      "aspen2017 adult13A administration interruption narrative and pediatric13A PICU paragraph"
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "heading": "Interpret growth with fluid and developmental context",
+          "exactVerifiedBodyMatch": true,
+          "matchingRecords": [
+            {
+              "evidence": "pediatric-parenteral-nutrition-development-delivery-review.json",
+              "recordPath": "$.teachingReview[4]",
+              "status": "verified",
+              "sourceMapping": {
+                "status": "verified",
+                "newBody": true,
+                "clauseReview": [
+                  {
+                    "clauses": "Serialweight,length,HC and chart; fluid,illness,medicine confounders; broader clinical examination/intake context",
+                    "sources": [
+                      "neonatal2025 page1 complete table; page3 physical assessment",
+                      "aspen2017 pediatric13A"
+                    ]
+                  },
+                  {
+                    "clauses": "First2postnatalweeks proposed weight indicators unsuitable; nutrient intake central; criteria unvalidated",
+                    "sources": [
+                      "neonatal2025 page5 complete proposed-indicators table and introductory qualification",
+                      "neonatal2025 page4 informational/clinical-judgment disclaimer"
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "id": "pedpn-013",
+          "exactVerifiedQuestionMatch": true,
+          "matchingRecords": [
+            {
+              "evidence": "pediatric-parenteral-nutrition-order-monitoring-review.json",
+              "recordPath": "$.questionReview[0]",
+              "status": "verified"
+            }
+          ]
+        },
+        {
+          "id": "pedpn-036",
+          "exactVerifiedQuestionMatch": true,
+          "matchingRecords": [
+            {
+              "evidence": "pediatric-parenteral-nutrition-order-monitoring-review.json",
+              "recordPath": "$.questionReview[1]",
+              "status": "verified"
+            }
+          ]
+        },
+        {
+          "id": "pedpn-037",
+          "exactVerifiedQuestionMatch": true,
+          "matchingRecords": [
+            {
+              "evidence": "pediatric-parenteral-nutrition-development-delivery-review.json",
+              "recordPath": "$.questionReview[3]",
+              "status": "verified"
+            }
+          ]
+        },
+        {
+          "id": "pedpn-038",
+          "exactVerifiedQuestionMatch": true,
+          "matchingRecords": [
+            {
+              "evidence": "pediatric-parenteral-nutrition-metabolic-response-review.json",
+              "recordPath": "$.questionReview[2]",
+              "status": "verified"
+            }
+          ]
+        },
+        {
+          "id": "pedpn-039",
+          "exactVerifiedQuestionMatch": true,
+          "matchingRecords": [
+            {
+              "evidence": "pediatric-parenteral-nutrition-development-delivery-review.json",
+              "recordPath": "$.questionReview[4]",
+              "status": "verified"
+            }
+          ]
+        },
+        {
+          "id": "pedpn-040",
+          "exactVerifiedQuestionMatch": true,
+          "matchingRecords": [
+            {
+              "evidence": "pediatric-parenteral-nutrition-order-monitoring-review.json",
+              "recordPath": "$.questionReview[2]",
+              "status": "verified"
+            }
+          ]
+        },
+        {
+          "id": "pedpn-106",
+          "exactVerifiedQuestionMatch": true,
+          "matchingRecords": [
+            {
+              "evidence": "pediatric-parenteral-nutrition-order-monitoring-review.json",
+              "recordPath": "$.questionReview[3]",
+              "status": "verified"
+            }
+          ]
+        },
+        {
+          "id": "pedpn-107",
+          "exactVerifiedQuestionMatch": true,
+          "matchingRecords": [
+            {
+              "evidence": "pediatric-parenteral-nutrition-order-monitoring-review.json",
+              "recordPath": "$.questionReview[4]",
+              "status": "verified"
+            }
+          ]
+        },
+        {
+          "id": "pedpn-108",
+          "exactVerifiedQuestionMatch": true,
+          "matchingRecords": [
+            {
+              "evidence": "pediatric-parenteral-nutrition-development-delivery-review.json",
+              "recordPath": "$.questionReview[5]",
+              "status": "verified"
+            }
+          ]
+        }
+      ],
+      "checkUnchanged": true,
+      "figureUnchanged": true,
+      "metadataSourceReviewRequired": true,
+      "status": "verified",
+      "wholeLessonVerified": true,
+      "embeddedCheckSourceEvidence": "pediatric-parenteral-nutrition-order-monitoring-review.json",
+      "checkSnapshot": {
+        "question": "What is the most important first step when reviewing a new pediatric PN order?",
+        "choices": [
+          "Verify the prescribed dosing weight and current nutrition care plan",
+          "Reuse yesterday's absolute doses because the bag volume is unchanged",
+          "Check amino-acid grams while omitting dextrose delivery and total fluids",
+          "Approve ingredient doses before confirming per-kilogram versus per-day units"
+        ],
+        "answer": 0,
+        "rationale": "Verify the dosing weight and current plan before interpreting weight-based delivery. Then review every component, its units, volume, rate, route, and compatibility; an unchanged bag volume does not validate the whole order.",
+        "reviewHref": "#pediatric-order-monitoring"
+      },
+      "figureSourceEvidence": "pediatric-parenteral-nutrition-development-delivery-review.json",
+      "metadataReview": {
+        "slug": "pediatric-order-monitoring",
+        "title": {
+          "text": "Order Construction, Monitoring, and Transition",
+          "source": "All nine whole bodies cover construction, monitoring and transition."
+        },
+        "summary": {
+          "text": "A pediatric PN order is a daily closed loop that connects growth goals, calculations, source products, the final container, actual delivery, laboratory trends, and enteral advancement.",
+          "source": "ASPEN prescribing daily review; order review current/previous prescription; ASPEN2017 pediatric13A/13B actual delivery, growth, clinical labs and transition."
+        },
+        "concepts": [
+          {
+            "text": "Daily order reconstruction",
+            "source": "Prescribing pediatric template and order-review checklist"
+          },
+          {
+            "text": "Source volumes and final concentration",
+            "source": "PrescribingPDF2 final-active concentrations; complete verified book calculation and compounding records"
+          },
+          {
+            "text": "Growth and metabolic monitoring",
+            "source": "ASPEN2017 pediatric13A and full Tables13.1–13.3;2025 neonatal assessment"
+          },
+          {
+            "text": "Enteral transition and access preservation",
+            "source": "ASPEN2017 pediatric13B/fullTable13.4 and CDC removal when no longer essential"
+          }
+        ],
+        "application": {
+          "text": "Compare today with yesterday. Confirm the prescribed dosing weight and recalculate per-kilogram delivery when that weight changes. Verify source concentrations and final volume, quantify actual delivery, review growth and laboratory trends, and state what will change when enteral intake advances.",
+          "source": "PrescribingPDF1/2 dosing weight,volume,rate; order-review checklist current plan/previous order; verified dosing-weight body;2017 pediatric13A/B actual delivery, growth and laboratory context."
+        },
+        "keyPoints": [
+          {
+            "text": "Confirm the dosing weight before recalculating per-kilogram delivery.",
+            "source": "Confirmed dosing-weight body and prescribing pediatric template"
+          },
+          {
+            "text": "Measure actual delivery, not only the order.",
+            "source": "2017pediatric13A actual versus projected intake"
+          },
+          {
+            "text": "Interpret laboratory changes in clinical context.",
+            "source": "2017pediatric13A and FDA2021/2025 metabolic-response review"
+          },
+          {
+            "text": "Transition across both routes without losing the growth plan.",
+            "source": "2017pediatric13B and fullTable13.4"
+          }
+        ],
+        "visual": {
+          "type": "peds-pn-audit",
+          "source": "Exact unchanged four-stage config, prior complete source/visual review in pediatric-parenteral-nutrition-development-delivery-review.json"
+        },
+        "allMetadataFieldsSourceReviewed": true,
+        "noAdditionalClinicalDoseOrLabSchedule": true
+      }
+    },
+    {
+      "slug": "pediatric-pn-decision-access",
+      "bodies": [
+        {
+          "heading": "Define the patient precisely",
+          "exactVerifiedBodyMatch": true,
+          "matchingRecords": [
+            {
+              "evidence": "pediatric-parenteral-nutrition-development-delivery-review.json",
+              "recordPath": "$.teachingReview[0]",
+              "status": "verified",
+              "sourceMapping": {
+                "status": "verified",
+                "newBody": false,
+                "clauseReview": [
+                  {
+                    "clauses": "Age,maturity,weight,growth,disease,enteral exposure affect needs and tolerance",
+                    "sources": [
+                      "aspen2017 pediatric13A",
+                      "fda2021 section8.4",
+                      "neonatal2025 page1 and full assessment context",
+                      "bookChapter54 printed721/PDF729"
+                    ]
+                  },
+                  {
+                    "clauses": "Serial growth with appropriate chart; one weight/adult template insufficient",
+                    "sources": [
+                      "neonatal2025 page1",
+                      "aspen2017 pediatric13A actual intake and growth goals"
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "heading": "Use PN when the gut cannot yet meet the need",
+          "exactVerifiedBodyMatch": true,
+          "matchingRecords": [
+            {
+              "evidence": "pediatric-parenteral-nutrition-indication-access-review.json",
+              "recordPath": "$.teaching[0]",
+              "status": "whole body verified",
+              "sourceMapping": {
+                "wholeBodyVerified": true,
+                "clauseMap": [
+                  {
+                    "clauses": "All listed conditions can prevent adequate feeding,without establishing diagnosis-alone indication.",
+                    "source": "Question1pediatric etiologies and cancer/IBD/CKD restrictions;Table1.1;Question2 rationale prolongedileus/fistula/obstruction."
+                  },
+                  {
+                    "clauses": "Safe gut access,adequate nutrient/fluid delivery and growth determine need.",
+                    "source": "1C/1D;Question1IF definition and pediatricgrowth rationale."
+                  },
+                  {
+                    "clauses": "Total PN or supplement tolerated oral/EN;ongoing reassessment as status changes.",
+                    "source": "2B;Question1 nutrition-autonomy continuum;priorQuestion13 monitoring/transition review."
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "heading": "Initiate preterm support promptly when appropriate",
+          "exactVerifiedBodyMatch": true,
+          "matchingRecords": [
+            {
+              "evidence": "pediatric-parenteral-nutrition-preterm-lipid-review.json",
+              "recordPath": "$.teachingReview[0]",
+              "status": "verified",
+              "sourceMapping": {
+                "lesson": "pediatric-pn-decision-access",
+                "sourceUrls": [
+                  "https://aspenjournals.onlinelibrary.wiley.com/doi/10.1002/jpen.2550",
+                  "https://nutritioncare.org/wp-content/uploads/2025/02/NICU-PN-Guidelines-Practice-Tool.pdf"
+                ],
+                "status": "verified"
+              }
+            }
+          ]
+        },
+        {
+          "heading": "Use neonatal starter PN as a temporary bridge",
+          "evidence": "this unit: ASPEN2026 full8pages",
+          "exactVerifiedBodyMatch": true
+        },
+        {
+          "heading": "Distinguish starter PN from commercial multichamber bags",
+          "evidence": "this unit: ASPEN2026 full8pages",
+          "exactVerifiedBodyMatch": true
+        },
+        {
+          "heading": "Keep the preterm guideline in scope",
+          "exactVerifiedBodyMatch": true,
+          "matchingRecords": [
+            {
+              "evidence": "pediatric-parenteral-nutrition-preterm-lipid-review.json",
+              "recordPath": "$.teachingReview[1]",
+              "status": "verified",
+              "sourceMapping": {
+                "lesson": "pediatric-pn-decision-access",
+                "sourceUrls": [
+                  "https://aspenjournals.onlinelibrary.wiley.com/doi/10.1002/jpen.2550"
+                ],
+                "status": "verified"
+              }
+            }
+          ]
+        },
+        {
+          "heading": "Match access to concentration and duration",
+          "exactVerifiedBodyMatch": true,
+          "matchingRecords": [
+            {
+              "evidence": "pediatric-parenteral-nutrition-indication-access-review.json",
+              "recordPath": "$.teaching[1]",
+              "status": "whole body verified",
+              "sourceMapping": {
+                "wholeBodyVerified": true,
+                "clauseMap": [
+                  {
+                    "clauses": "ShorttermperipheralPN,osmolarity and fluid tolerability;infiltration/extravasation/phlebitis monitoring.",
+                    "source": "6D/full pediatric rationale;Table6.1 all4rows."
+                  },
+                  {
+                    "clauses": "Central concentration with infection,thrombosis,malposition and access-loss risks.",
+                    "source": "5A/fullcentralrisk rationale;Table5.1."
+                  },
+                  {
+                    "clauses": "PICC/tunneled/port selection based on duration,development,otherIV,anatomy,setting,access preservation.",
+                    "source": "5A selection paragraph and all9device Table5.2."
+                  },
+                  {
+                    "clauses": "Smallestdevice,fewestneededlumens;confirmed/documentedcentraltip beforePN.",
+                    "source": "5B/5E and complete rationale."
+                  },
+                  {
+                    "clauses": "AppropriateUVC shorttermneonatal access.",
+                    "source": "Table5.2umbilicalrow;no arterialPN or numericdwellpolicy taught."
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "id": "pedpn-001",
+          "exactVerifiedQuestionMatch": true,
+          "matchingRecords": [
+            {
+              "evidence": "pediatric-parenteral-nutrition-development-delivery-review.json",
+              "recordPath": "$.questionReview[0]",
+              "status": "verified"
+            }
+          ]
+        },
+        {
+          "id": "pedpn-002",
+          "exactVerifiedQuestionMatch": true,
+          "matchingRecords": [
+            {
+              "evidence": "pediatric-parenteral-nutrition-indication-access-review.json",
+              "recordPath": "$.questions[0]",
+              "status": "verified"
+            }
+          ]
+        },
+        {
+          "id": "pedpn-003",
+          "exactVerifiedQuestionMatch": true,
+          "matchingRecords": [
+            {
+              "evidence": "pediatric-parenteral-nutrition-preterm-lipid-review.json",
+              "recordPath": "$.questionReview[0]",
+              "status": "verified"
+            }
+          ]
+        },
+        {
+          "id": "pedpn-004",
+          "exactVerifiedQuestionMatch": true,
+          "matchingRecords": [
+            {
+              "evidence": "pediatric-parenteral-nutrition-indication-access-review.json",
+              "recordPath": "$.questions[1]",
+              "status": "verified"
+            }
+          ]
+        },
+        {
+          "id": "pedpn-005",
+          "exactVerifiedQuestionMatch": true,
+          "matchingRecords": [
+            {
+              "evidence": "pediatric-parenteral-nutrition-indication-access-review.json",
+              "recordPath": "$.questions[2]",
+              "status": "verified"
+            }
+          ]
+        },
+        {
+          "id": "pedpn-006",
+          "exactVerifiedQuestionMatch": true,
+          "matchingRecords": [
+            {
+              "evidence": "pediatric-parenteral-nutrition-development-delivery-review.json",
+              "recordPath": "$.questionReview[1]",
+              "status": "verified"
+            }
+          ]
+        },
+        {
+          "id": "pedpn-014",
+          "exactVerifiedQuestionMatch": true,
+          "matchingRecords": [
+            {
+              "evidence": "pediatric-parenteral-nutrition-preterm-lipid-review.json",
+              "recordPath": "$.questionReview[1]",
+              "status": "verified"
+            }
+          ]
+        },
+        {
+          "id": "pedpn-041",
+          "evidence": "this unit",
+          "exactVerifiedQuestionMatch": true
+        },
+        {
+          "id": "pedpn-100",
+          "exactVerifiedQuestionMatch": true,
+          "matchingRecords": [
+            {
+              "evidence": "pediatric-parenteral-nutrition-preterm-lipid-review.json",
+              "recordPath": "$.questionReview[11]",
+              "status": "verified"
+            }
+          ]
+        }
+      ],
+      "checkUnchanged": true,
+      "figureUnchanged": true,
+      "metadataSourceReviewRequired": true,
+      "status": "verified",
+      "wholeLessonVerified": true,
+      "embeddedCheckSourceEvidence": "pediatric-parenteral-nutrition-development-delivery-review.json",
+      "checkSnapshot": {
+        "question": "Which information most directly distinguishes a neonatal PN order from an adult PN order?",
+        "choices": [
+          "Gestational age, postnatal age, current weight, growth, and organ maturity",
+          "Body weight alone, using the same per-kilogram targets at every age",
+          "An adult PN template scaled down by weight without reviewing neonatal tolerance",
+          "The bag volume alone, without the infant's developmental and growth context"
+        ],
+        "answer": 0,
+        "rationale": "Neonatal requirements and tolerance depend on developmental age, organ maturity, weight, and growth. Weight alone, a scaled adult template, or bag volume cannot provide that assessment.",
+        "reviewHref": "#pediatric-pn-decision-access"
+      },
+      "figureSourceEvidence": "pediatric-parenteral-nutrition-indication-access-review.json",
+      "metadataReview": {
+        "exactUnchangedFieldsMatchPrior": true,
+        "priorEvidence": "pediatric-parenteral-nutrition-indication-access-review.json wholeLesson.metadataReview",
+        "all7BodiesAnd9QuestionsReconciled": true,
+        "newStarterClaimsQualifiedWithinExistingIndicationLesson": true
+      }
+    }
+  ],
+  "partialFluidMetadataReview": {
+    "application": "Confirm the prescribed dosing weight, total fluid target, all non-PN fluids, dextrose grams, infusion duration, and calculated GIR. Recalculate delivery when the prescribed dosing weight, concentration, volume, or infusion schedule changes; interpret observed weight changes with hydration and clinical context.",
+    "source": "Verified GIR/maintenance arithmetic and complete ASPEN prescribing pediatric template; confirmed dosing-weight and neonatal growth/fluid-context records.",
+    "onlyThisFieldVerified": true,
+    "wholeFluidLessonVerified": false
+  },
+  "referenceReview": {
+    "newDatedReference": {
+      "label": "ASPEN. Clinical Considerations for Neonatal Starter PN, September 2, 2026",
+      "href": "https://nutritioncare.org/wp-content/uploads/2026/09/Clinical-Considerations-Neonatal-Starter-PN.pdf"
+    },
+    "all27PriorEntriesUnchanged": true
+  },
+  "coverage": {
+    "bank": 101,
+    "newlySourceVerifiedBank": 1,
+    "sourceVerifiedBank": 100,
+    "remainingBank": 1,
+    "bodies": 42,
+    "newlySourceVerifiedBodies": 2,
+    "sourceVerifiedBodies": 39,
+    "remainingBodies": 3,
+    "embeddedChecks": 6,
+    "sourceVerifiedEmbeddedChecks": 6,
+    "figures": 6,
+    "sourceVerifiedFigures": 6,
+    "cumulative": 5,
+    "sourceVerifiedCumulative": 5,
+    "metadataVerified": false,
+    "wholeModuleVerified": false,
+    "wholeChapterVerified": false
+  },
+  "verifiedBankIds": [
+    "pedpn-001",
+    "pedpn-002",
+    "pedpn-003",
+    "pedpn-004",
+    "pedpn-005",
+    "pedpn-006",
+    "pedpn-007",
+    "pedpn-008",
+    "pedpn-009",
+    "pedpn-010",
+    "pedpn-011",
+    "pedpn-013",
+    "pedpn-014",
+    "pedpn-015",
+    "pedpn-016",
+    "pedpn-017",
+    "pedpn-018",
+    "pedpn-019",
+    "pedpn-020",
+    "pedpn-021",
+    "pedpn-022",
+    "pedpn-023",
+    "pedpn-024",
+    "pedpn-025",
+    "pedpn-026",
+    "pedpn-027",
+    "pedpn-028",
+    "pedpn-029",
+    "pedpn-030",
+    "pedpn-031",
+    "pedpn-032",
+    "pedpn-033",
+    "pedpn-034",
+    "pedpn-035",
+    "pedpn-036",
+    "pedpn-037",
+    "pedpn-038",
+    "pedpn-039",
+    "pedpn-040",
+    "pedpn-041",
+    "pedpn-050",
+    "pedpn-051",
+    "pedpn-052",
+    "pedpn-053",
+    "pedpn-054",
+    "pedpn-055",
+    "pedpn-056",
+    "pedpn-057",
+    "pedpn-058",
+    "pedpn-059",
+    "pedpn-060",
+    "pedpn-061",
+    "pedpn-062",
+    "pedpn-063",
+    "pedpn-064",
+    "pedpn-065",
+    "pedpn-066",
+    "pedpn-067",
+    "pedpn-068",
+    "pedpn-069",
+    "pedpn-070",
+    "pedpn-071",
+    "pedpn-072",
+    "pedpn-073",
+    "pedpn-074",
+    "pedpn-075",
+    "pedpn-076",
+    "pedpn-077",
+    "pedpn-078",
+    "pedpn-079",
+    "pedpn-080",
+    "pedpn-081",
+    "pedpn-082",
+    "pedpn-083",
+    "pedpn-084",
+    "pedpn-085",
+    "pedpn-086",
+    "pedpn-087",
+    "pedpn-088",
+    "pedpn-089",
+    "pedpn-090",
+    "pedpn-091",
+    "pedpn-092",
+    "pedpn-093",
+    "pedpn-094",
+    "pedpn-095",
+    "pedpn-096",
+    "pedpn-097",
+    "pedpn-098",
+    "pedpn-099",
+    "pedpn-100",
+    "pedpn-101",
+    "pedpn-102",
+    "pedpn-103",
+    "pedpn-104",
+    "pedpn-105",
+    "pedpn-106",
+    "pedpn-107",
+    "pedpn-108",
+    "pedpn-109"
+  ],
+  "pendingQuestionIds": [
+    "pedpn-012"
+  ],
+  "preservation": {
+    "all100OriginalQuestionObjectsUnchanged": true,
+    "all100IdsPromptsKeysAnchorsPreserved": true,
+    "all40OriginalBodiesUnchanged": true,
+    "all6ChecksUnchanged": true,
+    "all6FiguresUnchanged": true,
+    "all1180CumulativeObjectsUnchanged": true,
+    "all27OriginalReferencesUnchanged": true,
+    "stableModuleAndLessonPaths": true,
+    "architectureBackendAndTrackingUnchanged": true,
+    "newBodies": 2,
+    "newQuestions": 1,
+    "metadataFieldsChanged": 3,
+    "newReference": 1,
+    "fixed100QuestionGuardRemoved": true
+  },
+  "sourceDiscrepancies": [
+    {
+      "issue": "Observed scale-weight change was previously conflated with confirmed prescribed dosing weight.",
+      "resolution": "Fluid application and order application/keypoint now require confirmed dosing weight and clinical context; all original questions and teaching retained."
+    },
+    {
+      "issue": "Historical commercial-product examples could imply neonatal starter suitability.",
+      "resolution": "Dated2026US starter context and specific composition/delivery/volume reasons added; product examples remain calculations/precautions."
+    },
+    {
+      "issue": "The original bank was locked to exactly100questions.",
+      "resolution": "Removed fixed-length runtime guard to permit source-supported expansion; generic assessment audit verifies101uniqueIDs and four unique options. Existing cumulative selection preserved by insertion after GIR-to-grams cases."
+    },
+    {
+      "issue": "Three retained neonatal/renal claims need additional evidence.",
+      "resolution": "Not replaced by narrower teaching or marked complete. Human request for additional primary guidelines remains pending."
+    }
+  ],
+  "calculationEvidence": {
+    "newDistinctAssessmentCalculations": 0,
+    "newCompletedBookExercises": 0,
+    "runningAssessmentCalculations": 728,
+    "runningSeparateCompletedBookExercises": 98
+  },
+  "validation": {
+    "focusedStructure": {
+      "status": "passed",
+      "bankQuestions": 101,
+      "hardErrors": [],
+      "sourceGaps": [],
+      "bounds": "Structural sourceGap result does not prove full clinical closure."
+    },
+    "isolatedBuild": {
+      "status": "passed",
+      "staticPages": 567,
+      "scope": "Exact archivedHEAD plus two scoped content files; unrelated drafts excluded."
+    },
+    "browser": {
+      "status": "passed",
+      "results": [
+        {
+          "module": "pediatric-parenteral-nutrition",
+          "width": 1440,
+          "renderedBodies": 42,
+          "expandedBodyViews": 2,
+          "metadataDOMLessons": 3,
+          "metadataViews": 5,
+          "all28ReferencesRendered": true,
+          "bankItemsCorrectWrong": 10,
+          "unchangedCumulativeObjectsPreserved": 1180,
+          "figureViews": 0,
+          "sourceVerifiedChecksThisUnit": 1,
+          "changedBodiesRendered": true,
+          "groups": 1,
+          "remediationAndSavedProgress": true
+        },
+        {
+          "module": "pediatric-parenteral-nutrition",
+          "width": 390,
+          "renderedBodies": 42,
+          "expandedBodyViews": 2,
+          "metadataDOMLessons": 3,
+          "metadataViews": 5,
+          "all28ReferencesRendered": true,
+          "bankItemsCorrectWrong": 10,
+          "unchangedCumulativeObjectsPreserved": 1180,
+          "figureViews": 0,
+          "sourceVerifiedChecksThisUnit": 1,
+          "changedBodiesRendered": true,
+          "groups": 1,
+          "remediationAndSavedProgress": true
+        }
+      ],
+      "pageErrors": []
+    },
+    "manualRenderedReview": {
+      "status": "passed",
+      "all12PairsActuallyViewed": true,
+      "pairs": [
+        {
+          "image": "view-00.png",
+          "label": "Starter question correct",
+          "sha256": "a79e316f41f74228c2ffea0ff0e26d5440830277171b5bf24920ed264221e8c0"
+        },
+        {
+          "image": "view-01.png",
+          "label": "Starter question wrong",
+          "sha256": "37d7e2822ef23feadbd1f68dd035bc8a3422d27d5c8368c021c6771f2460283a"
+        },
+        {
+          "image": "view-02.png",
+          "label": "Order check correct",
+          "sha256": "ef3ebe209d5310d19f81782b97c144f58c261af5841d879f06fc590242223bae"
+        },
+        {
+          "image": "view-03.png",
+          "label": "Order check wrong",
+          "sha256": "9266d08b163f9e543f6998b100fba09c6cd26bf7868d67989d75195fcd2d0e03"
+        },
+        {
+          "image": "view-04.png",
+          "label": "Starter PN bridge",
+          "sha256": "85d98468fb4dcc159b915d0c1ea80782eac89e952732db8259d6da3361b617c2"
+        },
+        {
+          "image": "view-05.png",
+          "label": "Commercial MCB distinction",
+          "sha256": "2f4ae1f06cc7a472e30cfe62ddace658bb3dbbcbe7e3bc39d8cdfd96ee5316b6"
+        },
+        {
+          "image": "view-06.png",
+          "label": "Order summary",
+          "sha256": "3efe6bd943196c264c6a3e4d24bd6dce88c5529d8a072964dde558aefe9a0127"
+        },
+        {
+          "image": "view-07.png",
+          "label": "Order concepts",
+          "sha256": "04fd6955cb745b2ba26604a53c58b973a655daada9981f06b201be5434935b21"
+        },
+        {
+          "image": "view-08.png",
+          "label": "Order keypoints",
+          "sha256": "4bb206c0d59c840189f4d2e3dec87994c0dc16134033807f85aa02088f6913ab"
+        },
+        {
+          "image": "view-09.png",
+          "label": "Order application",
+          "sha256": "b7a13f966c4d21b9e6e64fc162fddcf4853dfb013885652de1f94ab5fa0fc90e"
+        },
+        {
+          "image": "view-10.png",
+          "label": "Fluid application",
+          "sha256": "2a207f4a4fccb052fff6d807ec909f8047bd678694483a9b32185058987234f4"
+        },
+        {
+          "image": "view-11.png",
+          "label": "New dated source link",
+          "sha256": "b68e4fabc6942b24414f1972a0ffc92de396323b1718295562a483e644c550f6"
+        }
+      ],
+      "findings": "Both complete new bodies, all four choices and correct/wrong feedback for new041 and unchanged order check, all order metadata fields, fluid application and dated source link legible at desktop1440/mobile390. No clipping or fixed-header obstruction in the reviewed captures.",
+      "sourceVisualReview": "Complete8page starter-PN PDF previously viewed during source intake; full pages2/5 rechecked here. ASPEN prescribing fullpage1 and complete pediatric-template detail rechecked here."
+    },
+    "runtimeWidths": [
+      1440,
+      390,
+      320
+    ],
+    "all42BodyDOMEquality": true,
+    "all28ReferenceDOMEquality": true,
+    "metadataDOMEqualityFor3Lessons": true,
+    "all9OrderQuestionsAndNew041CorrectWrong": true,
+    "localProgress": "Two module and two embedded-order-check attempts per viewport; best10/latest0 and best1/latest0. No authenticated backend persistence claim.",
+    "contentHashes": {
+      "src/data/modules/pediatricParenteralNutrition.js": "d6776c78e0f987490d05c1de24c6e365b9c6e757d3f4add20630389fe201debc",
+      "src/data/questionBanks/pediatricParenteralNutrition.js": "0ac0d4259af0638c0cae1e50d1dbdef388c136cd1253fea5b338954b4602e329"
+    }
+  },
+  "release": {
+    "branch": "audit/rxprep-content-2026-09-24",
+    "commit": "pending",
+    "push": "pending",
+    "receipt": "sequential-release-pediatric-pn-starter-order-2026-10-02.json",
+    "mainMerge": "not performed",
+    "production": "not verified"
+  },
+  "nextAction": "Finish retained pediatric PN question pedpn-012 and three original whole bodies: Build a complete fluid ledger; Advance according to response; Do not impose blanket protein restriction. Neonatal phototherapy/open-warmer water loss, higher neonatal GIR/brain rationale and broad pediatric CKRT/catabolism/wound protein needs still require directly verified support. Pending human source-expansion request is unanswered; do not treat elapsed time as approval. Continue authorized source review and remaining fluid/protein/module metadata and final101-question/42-body reconciliation. Decision/access and order/monitoring lessons are whole verified; do not repeat their original source gaps as open. Whole Chapter11, Chapter1 entry15, broader Chapter54 and the separate EN source exception remain open.",
+  "wholeGoalComplete": false
+}
