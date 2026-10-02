@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-01",
+  "updated": "2026-10-02",
   "total": 300,
   "immutableBlueprint": {
     "slug": "acetaminophen",
@@ -26,6 +26,23 @@
       "currentRendererSha256": "44ac97f7839bb98c90d1931ed35f2009e7855cc7206508f804abfbc641d7c950",
       "reason": "Concurrent production edit removes initial open state on all disclosure cards. Preserved via fast-forward; this task did not edit renderer or APAP content.",
       "rendererChangeCommit": "28328032a3cdf51082b850dd5d1273bc8978afc7"
+    },
+    "frozenEditionPath": "docs/drug-library/blueprints/acetaminophen-v1.js",
+    "authorizedCounselingRevision": {
+      "sha256": "02edeb3b350a18c5d99c1a9fe8c5f49d1e49249dc0f6527775e6a1557b9d3c38",
+      "approval": {
+        "date": "2026-10-02",
+        "scope": "Explicit exception for this three-profile corrective release: paroxetine correction, olmesartan source refresh and two APAP pediatric counseling statements with existing child-source anchors. No general change to ten-drug release policy.",
+        "request": "May I publish those two updates together with the missing pediatric acetaminophen warnings? This smaller release needs approval beyond the original ten-drug batches",
+        "userResponse": "yes push. are you done. I approve also",
+        "sourceThread": "01a0f563-7d46-73b9-9343-5c9bd72220f1"
+      },
+      "changes": {
+        "Monitoring parameters": "For the linked Children\u2019s Tylenol suspension, stop use and contact a doctor if the child\u2019s pain worsens or lasts longer than five days, fever worsens or lasts longer than three days, new symptoms develop, or redness or swelling occurs.",
+        "Patient counseling information": "For a child with severe sore throat, sore throat lasting longer than two days, or sore throat accompanied or followed by fever, headache, rash, nausea or vomiting, consult a doctor promptly."
+      },
+      "source": "child",
+      "preserved": "Original edition/hash, all dosing and other clinical claims, full structure and presentation unchanged."
     }
   },
   "statusDefinitions": {
@@ -59874,7 +59891,7 @@
       "generic": "olmesartan",
       "number": 92,
       "batch": 10,
-      "status": "deployed",
+      "status": "source_reviewed",
       "sectionAudit": {
         "indications": "verified",
         "dosage": "verified",
@@ -59891,7 +59908,7 @@
           "id": "label",
           "title": "Olmesartan medoxomil \u00b7 Prescribing information",
           "publisher": "DailyMed / Umedica Laboratories USA Inc.",
-          "note": "Current SPL version 3, effective 2026-06-04. PI revised April 2026; selected 5/20/40 mg tablets and specific extemporaneous suspension.",
+          "note": "Current SPL version 4, effective September 30, 2026; PI footer September 2026. Full clinical text unchanged apart from revision footer and formatting compared with the reviewed version 3.",
           "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c49a7f23-2af0-4607-9f21-114970f8630d"
         },
         {
@@ -59903,21 +59920,6 @@
         }
       ],
       "gaps": [],
-      "commit": "fc3b376cd266e490337dfffa65ab3483ed5e7638",
-      "deployment": {
-        "status": "verified",
-        "commit": "4573694aca725d2ec5632d85ca6f56a59e0734ab",
-        "context": "production",
-        "publishedAt": "2026-10-01T18:46:50.770Z",
-        "netlifyDeployId": "6abeaa3f111d9d0008558a97",
-        "url": "https://nasresearch.bio",
-        "hostReceipt": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/batch-10/production/netlify-deploy.json",
-        "liveRoutes": "passed",
-        "liveRouteCount": 101,
-        "hostedHTMLReport": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/batch-10/production/report.json",
-        "browserInteractions": "passed_batch_desktop_mobile",
-        "browserQA": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/batch-10/production/browser-qa/report.json"
-      },
       "candidateAudit": {
         "status": "candidates_only",
         "record": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/candidates/olmesartan-candidates.json",
@@ -59939,17 +59941,13 @@
         }
       },
       "checks": {
-        "contract": "passed",
         "build": "passed",
         "renderedDesktop": "passed",
         "renderedMobile": "passed",
-        "security": "passed",
-        "drugRoutes": "passed",
-        "dependencyAudit": "passed_zero_advisories",
-        "generatedHTML": "passed",
-        "browserInteractions": "passed"
+        "tests": "9 passed",
+        "lint": "No lint script configured"
       },
-      "monographSha256": "aa55e93c4d34b191f8dbcee93f5c7ab84eaa3695ff8317c900e722b267b785fb",
+      "monographSha256": "ca1fc602ee75ed5442f1524e7c2699d05827868d1b7b8754a5236742cbc2fbe6",
       "sourceAuditRecord": "docs/drug-library/olmesartan-review.json",
       "sourceAudit": [
         {
@@ -60424,12 +60422,55 @@
         "renderedQA": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/batch-10/rendered-qa",
         "caveat": "Local and hosted checks passed; exact production publication verified."
       },
-      "remoteReceipt": {
-        "branch": "work/drug-library",
-        "commit": "fc3b376cd266e490337dfffa65ab3483ed5e7638",
-        "status": "verified"
-      },
-      "publicationCommit": "4573694aca725d2ec5632d85ca6f56a59e0734ab"
+      "previousEditions": [
+        {
+          "commit": "fc3b376cd266e490337dfffa65ab3483ed5e7638",
+          "deployment": {
+            "status": "verified",
+            "commit": "4573694aca725d2ec5632d85ca6f56a59e0734ab",
+            "context": "production",
+            "publishedAt": "2026-10-01T18:46:50.770Z",
+            "netlifyDeployId": "6abeaa3f111d9d0008558a97",
+            "url": "https://nasresearch.bio",
+            "hostReceipt": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/batch-10/production/netlify-deploy.json",
+            "liveRoutes": "passed",
+            "liveRouteCount": 101,
+            "hostedHTMLReport": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/batch-10/production/report.json",
+            "browserInteractions": "passed_batch_desktop_mobile",
+            "browserQA": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/batch-10/production/browser-qa/report.json"
+          },
+          "checks": {
+            "contract": "passed",
+            "build": "passed",
+            "renderedDesktop": "passed",
+            "renderedMobile": "passed",
+            "security": "passed",
+            "drugRoutes": "passed",
+            "dependencyAudit": "passed_zero_advisories",
+            "generatedHTML": "passed",
+            "browserInteractions": "passed"
+          },
+          "monographSha256": "aa55e93c4d34b191f8dbcee93f5c7ab84eaa3695ff8317c900e722b267b785fb",
+          "remoteReceipt": {
+            "branch": "work/drug-library",
+            "commit": "fc3b376cd266e490337dfffa65ab3483ed5e7638",
+            "status": "verified"
+          },
+          "publicationCommit": "4573694aca725d2ec5632d85ca6f56a59e0734ab"
+        }
+      ],
+      "remediationRelease": {
+        "date": "2026-10-02",
+        "status": "approved-checked-awaiting-publication",
+        "scope": "Current source update; previous deployment receipts apply only to the previous edition.",
+        "checks": {
+          "productionBuild": "passed",
+          "tests": "9 passed",
+          "renderedPageQA": "6 desktop/mobile checks passed across all three profiles",
+          "visualInspection": "Screenshots reviewed; approved APAP additions retain existing format",
+          "evidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-02/source-remediation/approved-release"
+        }
+      }
     },
     {
       "slug": "testosterone",
@@ -65086,7 +65127,7 @@
       "generic": "paroxetine",
       "number": 99,
       "batch": 10,
-      "status": "deployed",
+      "status": "source_reviewed",
       "sectionAudit": {
         "indications": "verified",
         "dosage": "verified",
@@ -65103,7 +65144,7 @@
           "id": "ir",
           "title": "Paxil \u00b7 Current full prescribing information",
           "publisher": "Apotex / DailyMed",
-          "note": "Clinical Medication Guide revision November 2024; current SPL12 effective September 16, 2026.",
+          "note": "Full prescribing information and Medication Guide revised September 2026; current SPL version 13, effective September 29, 2026. Updated IR GAD starting dose, SAD/GAD titration and QT-related contraindications; CR and Brisdelle remain separate products.",
           "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ef3b5cbe-f9e1-c1ac-79da-cfe14e3a7e7e"
         },
         {
@@ -65122,21 +65163,6 @@
         }
       ],
       "gaps": [],
-      "commit": "fc3b376cd266e490337dfffa65ab3483ed5e7638",
-      "deployment": {
-        "status": "verified",
-        "commit": "4573694aca725d2ec5632d85ca6f56a59e0734ab",
-        "context": "production",
-        "publishedAt": "2026-10-01T18:46:50.770Z",
-        "netlifyDeployId": "6abeaa3f111d9d0008558a97",
-        "url": "https://nasresearch.bio",
-        "hostReceipt": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/batch-10/production/netlify-deploy.json",
-        "liveRoutes": "passed",
-        "liveRouteCount": 101,
-        "hostedHTMLReport": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/batch-10/production/report.json",
-        "browserInteractions": "passed_batch_desktop_mobile",
-        "browserQA": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/batch-10/production/browser-qa/report.json"
-      },
       "candidateAudit": {
         "status": "candidates_only",
         "record": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/candidates/paroxetine-candidates.json",
@@ -65158,17 +65184,13 @@
         }
       },
       "checks": {
-        "contract": "passed",
         "build": "passed",
         "renderedDesktop": "passed",
         "renderedMobile": "passed",
-        "security": "passed",
-        "drugRoutes": "passed",
-        "dependencyAudit": "passed_zero_advisories",
-        "generatedHTML": "passed",
-        "browserInteractions": "passed"
+        "tests": "9 passed",
+        "lint": "No lint script configured"
       },
-      "monographSha256": "cacdc86382ec0f8b583156aac0c39712a3494b3a634cb055bc88c2dfebff1714",
+      "monographSha256": "d49b98ae572bdcfd4f3e44faab873e36e510322764f51efe76c45f4c52aeecb1",
       "sourceAuditRecord": "docs/drug-library/paroxetine-review.json",
       "sourceAudit": [
         {
@@ -65210,7 +65232,7 @@
             },
             {
               "id": "ir",
-              "sections": "3; 11"
+              "sections": "1; 8.4"
             }
           ]
         },
@@ -65218,12 +65240,12 @@
           "section": "dosage",
           "card": "Paxil IR adult dosing",
           "assertions": [
-            "Take once daily in the morning, with or without food. Where indicated and tolerated, titrate by 10 mg/day at intervals of at least 1 week. For SAD and GAD, 20 mg/day is the recommended dose; studied higher doses did not establish additional benefit above 20 mg. The studied ranges are not universal targets."
+            "Take once daily in the morning, with or without food. For MDD, OCD, PD and PTSD, increase by 10 mg/day at weekly intervals if response is inadequate and treatment is tolerated, up to the indication-specific maximum. For SAD, start 20 mg once daily; after 1\u20132 weeks, the prescriber may increase by 10 mg/day at weekly intervals up to 60 mg/day. For GAD, start 10 mg once daily and increase to 20 mg once daily after one week; subsequent increases of 10 mg/day at weekly intervals may reach 50 mg/day according to response and tolerability. The SAD/GAD trials did not establish additional benefit above 20 mg/day; the maximum is not an automatic treatment target. The lower geriatric/severe-organ-impairment limits below still apply."
           ],
           "sources": [
             {
               "id": "ir",
-              "sections": "2.1\u20132.3"
+              "sections": "2.1\u20132.8; 8.5\u20138.7"
             }
           ],
           "table_assertions": {
@@ -65256,12 +65278,12 @@
               [
                 "SAD",
                 "20 mg",
-                "Recommended 20 mg; studied 20\u201360 mg"
+                "60 mg; no established additional benefit above 20 mg/day"
               ],
               [
                 "GAD",
-                "20 mg",
-                "Recommended 20 mg; studied 20\u201350 mg"
+                "10 mg; 20 mg after one week",
+                "50 mg; no established additional benefit above 20 mg/day"
               ]
             ]
           }
@@ -65317,7 +65339,7 @@
           "sources": [
             {
               "id": "ir",
-              "sections": "2.5; 8.5\u20138.6; 12.3"
+              "sections": "2.1\u20132.8; 8.5\u20138.7"
             },
             {
               "id": "cr",
@@ -65347,7 +65369,7 @@
           "sources": [
             {
               "id": "ir",
-              "sections": "2.6\u20132.7; 5.2; 5.7"
+              "sections": "2.1\u20132.8; 8.5\u20138.7"
             },
             {
               "id": "cr",
@@ -65370,7 +65392,7 @@
           "sources": [
             {
               "id": "ir",
-              "sections": "5; 7; 17"
+              "sections": "Boxed Warning; 4; 5; 6"
             },
             {
               "id": "cr",
@@ -65386,12 +65408,12 @@
           "section": "safety",
           "card": "Contraindications",
           "assertions": [
-            "All three reviewed products contraindicate MAOI use or use within 14 days of stopping an MAOI, thioridazine, pimozide and known paroxetine/excipient hypersensitivity. Brisdelle additionally contraindicates pregnancy. Pregnancy is a significant risk consideration for IR/CR but is not listed as their formal contraindication."
+            "The reviewed products contraindicate MAOI use or use within 14 days of stopping an MAOI and known paroxetine/excipient hypersensitivity. The current Paxil IR label additionally contraindicates concomitant drugs that prolong the QTc interval and are CYP2D6 substrates; this includes the thioridazine/pimozide restrictions retained in the CR and Brisdelle labels. Check the exact companion drug before combining treatment. Brisdelle additionally contraindicates pregnancy. Pregnancy is a significant risk consideration for IR/CR but is not listed as their formal contraindication."
           ],
           "sources": [
             {
               "id": "ir",
-              "sections": "4"
+              "sections": "Boxed Warning; 4; 5; 6"
             },
             {
               "id": "cr",
@@ -65412,7 +65434,7 @@
           "sources": [
             {
               "id": "ir",
-              "sections": "Boxed Warning; 5.1"
+              "sections": "Boxed Warning; 4; 5; 6"
             },
             {
               "id": "cr",
@@ -65433,7 +65455,7 @@
           "sources": [
             {
               "id": "ir",
-              "sections": "6.1\u20136.2"
+              "sections": "Boxed Warning; 4; 5; 6"
             },
             {
               "id": "cr",
@@ -65449,12 +65471,12 @@
           "section": "interactions",
           "card": "CYP2D6 and QT-related combinations",
           "assertions": [
-            "Paroxetine inhibits CYP2D6 and can increase substrate exposure, including metoprolol, atomoxetine, flecainide and some antipsychotics/TCAs. Monitor and adjust the affected drug when starting or stopping paroxetine. Thioridazine/pimozide combinations are contraindicated because increased exposure can cause QT prolongation and ventricular arrhythmia. Do not generalize that restriction into an unsupported universal QT-dose limit."
+            "Paroxetine strongly inhibits CYP2D6 and can increase substrate exposure, including metoprolol, atomoxetine, flecainide and some antipsychotics/TCAs. Monitor and adjust an otherwise permissible companion drug when starting or stopping paroxetine. Current Paxil IR contraindicates CYP2D6 substrates that prolong the QTc interval because increased exposure can cause serious arrhythmias, including torsade de pointes and sudden death. The CR and Brisdelle labels specifically contraindicate thioridazine and pimozide. Dose adjustment does not make a contraindicated combination acceptable; reconcile the exact formulation and companion label with the pharmacist."
           ],
           "sources": [
             {
               "id": "ir",
-              "sections": "4; 5.3; 7; 12.3"
+              "sections": "4; 5.3; 5.5; 5.12; 7; 12.3"
             },
             {
               "id": "cr",
@@ -65475,7 +65497,7 @@
           "sources": [
             {
               "id": "ir",
-              "sections": "5.11; 7"
+              "sections": "4; 5.3; 5.5; 5.12; 7; 12.3"
             },
             {
               "id": "cr",
@@ -65496,7 +65518,7 @@
           "sources": [
             {
               "id": "ir",
-              "sections": "5.2; 5.5; 7"
+              "sections": "4; 5.3; 5.5; 5.12; 7; 12.3"
             },
             {
               "id": "cr",
@@ -65517,7 +65539,7 @@
           "sources": [
             {
               "id": "ir",
-              "sections": "7; 12.3"
+              "sections": "4; 5.3; 5.5; 5.12; 7; 12.3"
             },
             {
               "id": "cr",
@@ -65538,7 +65560,7 @@
           "sources": [
             {
               "id": "ir",
-              "sections": "5.4\u20135.5; 8.1"
+              "sections": "5.4; 8"
             },
             {
               "id": "cr",
@@ -65559,7 +65581,7 @@
           "sources": [
             {
               "id": "ir",
-              "sections": "8.2\u20138.3"
+              "sections": "5.4; 8"
             },
             {
               "id": "cr",
@@ -65580,7 +65602,7 @@
           "sources": [
             {
               "id": "ir",
-              "sections": "8.4\u20138.6"
+              "sections": "5.4; 8"
             },
             {
               "id": "cr",
@@ -65601,7 +65623,7 @@
           "sources": [
             {
               "id": "ir",
-              "sections": "12.1\u201312.2"
+              "sections": "12"
             },
             {
               "id": "cr",
@@ -65622,7 +65644,7 @@
           "sources": [
             {
               "id": "ir",
-              "sections": "12.3"
+              "sections": "12"
             },
             {
               "id": "cr",
@@ -65639,7 +65661,7 @@
           "sources": [
             {
               "id": "ir",
-              "sections": "12.3"
+              "sections": "12"
             },
             {
               "id": "cr",
@@ -65660,7 +65682,7 @@
           "sources": [
             {
               "id": "ir",
-              "sections": "5; 7; 17"
+              "sections": "2; 5; 17; Medication Guide"
             },
             {
               "id": "cr",
@@ -65681,7 +65703,7 @@
           "sources": [
             {
               "id": "ir",
-              "sections": "5; 7; 17"
+              "sections": "2; 5; 17; Medication Guide"
             },
             {
               "id": "cr",
@@ -65702,7 +65724,7 @@
           "sources": [
             {
               "id": "ir",
-              "sections": "2.1; 3"
+              "sections": "2; 5; 17; Medication Guide"
             },
             {
               "id": "cr",
@@ -65723,7 +65745,7 @@
           "sources": [
             {
               "id": "ir",
-              "sections": "3; 16"
+              "sections": "3; 11; 16; package panels"
             },
             {
               "id": "cr",
@@ -65739,12 +65761,12 @@
           "section": "product",
           "card": "Dosage forms and strengths",
           "assertions": [
-            "Reviewed oral forms: Paxil IR 10, 20, 30 and 40 mg tablets; Paxil CR 12.5, 25 and 37.5 mg extended-release tablets; Brisdelle 7.5 mg capsules. Paxil/CR use hydrochloride, Brisdelle mesylate; doses are expressed as paroxetine. The Paxil highlights incorrectly call its 10\u201340 mg tablets extended-release, while its full formulation section distinguishes them from Paxil CR. This profile follows the full sections. No availability or dosing claim is made for unreviewed Pexeva or generic liquids."
+            "Reviewed oral forms: Paxil IR 10, 20, 30 and 40 mg tablets; Paxil CR 12.5, 25 and 37.5 mg extended-release tablets; Brisdelle 7.5 mg capsules. Paxil/CR use hydrochloride, Brisdelle mesylate; doses are expressed as paroxetine. Current Paxil IR sections 3 and 11 identify conventional tablets; the earlier version\u2019s incorrect extended-release description is not retained as a current-label finding. No availability or dosing claim is made for unreviewed Pexeva or generic liquids."
           ],
           "sources": [
             {
               "id": "ir",
-              "sections": "3; 11"
+              "sections": "3; 11; 16; package panels"
             },
             {
               "id": "cr",
@@ -65756,7 +65778,7 @@
             },
             {
               "id": "ir",
-              "sections": "Highlights\u00a73 versus full\u00a73/11 formulation distinction"
+              "sections": "3; 11; 16; package panels"
             }
           ]
         },
@@ -65769,7 +65791,7 @@
           "sources": [
             {
               "id": "ir",
-              "sections": "16; Medication Guide"
+              "sections": "3; 11; 16; package panels"
             },
             {
               "id": "cr",
@@ -65789,12 +65811,55 @@
         "renderedQA": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/batch-10/rendered-qa",
         "caveat": "Local and hosted checks passed; exact production publication verified."
       },
-      "remoteReceipt": {
-        "branch": "work/drug-library",
-        "commit": "fc3b376cd266e490337dfffa65ab3483ed5e7638",
-        "status": "verified"
-      },
-      "publicationCommit": "4573694aca725d2ec5632d85ca6f56a59e0734ab"
+      "previousEditions": [
+        {
+          "commit": "fc3b376cd266e490337dfffa65ab3483ed5e7638",
+          "deployment": {
+            "status": "verified",
+            "commit": "4573694aca725d2ec5632d85ca6f56a59e0734ab",
+            "context": "production",
+            "publishedAt": "2026-10-01T18:46:50.770Z",
+            "netlifyDeployId": "6abeaa3f111d9d0008558a97",
+            "url": "https://nasresearch.bio",
+            "hostReceipt": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/batch-10/production/netlify-deploy.json",
+            "liveRoutes": "passed",
+            "liveRouteCount": 101,
+            "hostedHTMLReport": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/batch-10/production/report.json",
+            "browserInteractions": "passed_batch_desktop_mobile",
+            "browserQA": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/batch-10/production/browser-qa/report.json"
+          },
+          "checks": {
+            "contract": "passed",
+            "build": "passed",
+            "renderedDesktop": "passed",
+            "renderedMobile": "passed",
+            "security": "passed",
+            "drugRoutes": "passed",
+            "dependencyAudit": "passed_zero_advisories",
+            "generatedHTML": "passed",
+            "browserInteractions": "passed"
+          },
+          "monographSha256": "cacdc86382ec0f8b583156aac0c39712a3494b3a634cb055bc88c2dfebff1714",
+          "remoteReceipt": {
+            "branch": "work/drug-library",
+            "commit": "fc3b376cd266e490337dfffa65ab3483ed5e7638",
+            "status": "verified"
+          },
+          "publicationCommit": "4573694aca725d2ec5632d85ca6f56a59e0734ab"
+        }
+      ],
+      "remediationRelease": {
+        "date": "2026-10-02",
+        "status": "approved-checked-awaiting-publication",
+        "scope": "Current source update; previous deployment receipts apply only to the previous edition.",
+        "checks": {
+          "productionBuild": "passed",
+          "tests": "9 passed",
+          "renderedPageQA": "6 desktop/mobile checks passed across all three profiles",
+          "visualInspection": "Screenshots reviewed; approved APAP additions retain existing format",
+          "evidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-02/source-remediation/approved-release"
+        }
+      }
     },
     {
       "slug": "ferrous-sulfate",
@@ -70936,7 +71001,7 @@
       "generic": "acetaminophen",
       "number": 108,
       "batch": null,
-      "status": "immutable_blueprint",
+      "status": "authorized_blueprint_revision",
       "sectionAudit": {
         "indications": "preserved",
         "dosage": "preserved",
@@ -70970,6 +71035,26 @@
           "previous_page": "null",
           "previous_page_url": "null",
           "next_page": 2
+        }
+      },
+      "monographSha256": "02edeb3b350a18c5d99c1a9fe8c5f49d1e49249dc0f6527775e6a1557b9d3c38",
+      "remediationRelease": {
+        "date": "2026-10-02",
+        "status": "approved-checked-awaiting-publication",
+        "approval": {
+          "date": "2026-10-02",
+          "scope": "Explicit exception for this three-profile corrective release: paroxetine correction, olmesartan source refresh and two APAP pediatric counseling statements with existing child-source anchors. No general change to ten-drug release policy.",
+          "request": "May I publish those two updates together with the missing pediatric acetaminophen warnings? This smaller release needs approval beyond the original ten-drug batches",
+          "userResponse": "yes push. are you done. I approve also",
+          "sourceThread": "01a0f563-7d46-73b9-9343-5c9bd72220f1"
+        },
+        "scope": "Two pediatric counseling additions only",
+        "checks": {
+          "productionBuild": "passed",
+          "tests": "9 passed",
+          "renderedPageQA": "6 desktop/mobile checks passed across all three profiles",
+          "visualInspection": "Screenshots reviewed; approved APAP additions retain existing format",
+          "evidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-02/source-remediation/approved-release"
         }
       }
     },

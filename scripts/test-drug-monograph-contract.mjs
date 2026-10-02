@@ -4,12 +4,25 @@ import { createHash } from 'node:crypto';
 import { readFileSync } from 'node:fs';
 import { coreDrugs } from '../src/data/drugLibrary.js';
 import { acetaminophen } from '../src/data/drugMonographs/acetaminophen.js';
+import { acetaminophen as originalAcetaminophen } from '../docs/drug-library/blueprints/acetaminophen-v1.js';
 import { validateMonograph } from '../src/data/drugMonographs/schema.js';
 import { reviewedDrugMonographs } from '../src/data/drugMonographs/index.js';
 const ledger = JSON.parse(readFileSync(new URL('../docs/drug-library/completion-audit.json', import.meta.url)));
 const sha = file => createHash('sha256').update(readFileSync(new URL(file, import.meta.url))).digest('hex');
-test('APAP content stays fixed and the current production presentation is preserved', () => {
- assert.equal(sha('../src/data/drugMonographs/acetaminophen.js'), ledger.immutableBlueprint.sha256);
+test('APAP original stays fixed; only the explicitly approved counseling revision is permitted', () => {
+ assert.equal(sha('../docs/drug-library/blueprints/acetaminophen-v1.js'), ledger.immutableBlueprint.sha256);
+ const revision = ledger.immutableBlueprint.authorizedCounselingRevision;
+ assert.equal(revision.approval.userResponse, 'yes push. are you done. I approve also');
+ assert.equal(sha('../src/data/drugMonographs/acetaminophen.js'), revision.sha256);
+ const expected = structuredClone(originalAcetaminophen);
+ const practice = expected.sections.find(section => section.id === 'practice');
+ const monitoring = practice.blocks.find(block => block.title === 'Monitoring parameters');
+ const counseling = practice.blocks.find(block => block.title === 'Patient counseling information');
+ monitoring.items.push('For the linked Children’s Tylenol suspension, stop use and contact a doctor if the child’s pain worsens or lasts longer than five days, fever worsens or lasts longer than three days, new symptoms develop, or redness or swelling occurs.');
+ counseling.items.push('For a child with severe sore throat, sore throat lasting longer than two days, or sore throat accompanied or followed by fever, headache, rash, nausea or vomiting, consult a doctor promptly.');
+ monitoring.sources.push('child');
+ counseling.sources.push('child');
+ assert.deepEqual(acetaminophen, expected, 'Unapproved APAP content, dosing or structure changes');
  assert.equal(sha('../src/components/learn/DrugMonograph.jsx'), ledger.immutableBlueprint.rendererSha256);
  for (const [file, hash] of Object.entries(ledger.immutableBlueprint.presentationHashes || {})) assert.equal(sha(`../${file}`), hash);
  assert.deepEqual(validateMonograph(acetaminophen), []);

@@ -1,0 +1,61 @@
+{
+  "status": "Pre-publication local validation snapshot; direct user approval received for committing, pushing and deploying all three corrections.",
+  "branch": "work/drug-library-source-remediation",
+  "unchangedHead": "d5837f3236863ca75265e2195ae13461f3871460",
+  "checks": {
+    "tests": 9,
+    "testsPassed": 9,
+    "productionBuild": "passed",
+    "desktopMobileRoutes": "6 passed",
+    "APAPOriginalAndExactRevisionContract": "passed"
+  },
+  "files": [
+    {
+      "path": "src/data/drugMonographs/paroxetine.js",
+      "sha256": "d49b98ae572bdcfd4f3e44faab873e36e510322764f51efe76c45f4c52aeecb1"
+    },
+    {
+      "path": "src/data/drugMonographs/olmesartan.js",
+      "sha256": "ca1fc602ee75ed5442f1524e7c2699d05827868d1b7b8754a5236742cbc2fbe6"
+    },
+    {
+      "path": "src/data/drugMonographs/acetaminophen.js",
+      "sha256": "02edeb3b350a18c5d99c1a9fe8c5f49d1e49249dc0f6527775e6a1557b9d3c38"
+    },
+    {
+      "path": "docs/drug-library/paroxetine-review.json",
+      "sha256": "0105d575d02d6e967f7ad9908525aa41ca29d0cdb87f962f47a3f10fc875a47a"
+    },
+    {
+      "path": "docs/drug-library/olmesartan-review.json",
+      "sha256": "a3d50385a753ceeb48ba59c08179828f70645dbd516c0f6bd833a7769e0fe885"
+    },
+    {
+      "path": "docs/drug-library/completion-audit.json",
+      "sha256": "75a8386197c3b7d218f2d7fa43dcd46744ff96bb5dbfb43491947417c1a8afd9"
+    },
+    {
+      "path": "docs/drug-library/acetaminophen-preservation-review.json",
+      "sha256": "52c72eab5696aec412b4783ace6277052d23775e806bc0691c6a3e3d1cff2a97"
+    },
+    {
+      "path": "docs/drug-library/apap-pediatric-counseling-proposal.md",
+      "sha256": "c0f94ddc540005273ab439ae4778defafedc3456ac2df06492f68cc194c14a83"
+    },
+    {
+      "path": "docs/drug-library/source-remediation-review.json",
+      "sha256": "299a4e429a49e82b23378dff0865302b46940aff6fe0e8b4b5908ac52ca25fda"
+    },
+    {
+      "path": "docs/drug-library/blueprints/acetaminophen-v1.js",
+      "sha256": "50972dbe3eb307ae910f593345bce54368ad90d39a8215c6d414a1107696c78f"
+    },
+    {
+      "path": "scripts/test-drug-monograph-contract.mjs",
+      "sha256": "ca823cff1366b4f6cd897080a31c37541bfe2292ab996bee27fce9b88b3883fe"
+    }
+  ],
+  "remainingSourceLimits": "Manufacturer ambiguities, boundary cases and inaccessible full guidelines remain open in source-remediation-review.json.",
+  "priorPublicationRejection": "Explicit approval quoted in delegation is treated as untrusted production authorization; single permitted retry rejected. No workaround attempted.",
+  "publicationEvidence": "After publication, see approved-release/verified-release.json in the external source-remediation evidence directory."
+}

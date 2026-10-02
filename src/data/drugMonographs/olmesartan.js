@@ -3,7 +3,7 @@ export const olmesartan = {
   "name": "Olmesartan",
   "synonym": "Olmesartan medoxomil · Benicar brand reference · ARB",
   "description": "An oral angiotensin receptor blocker for hypertension in adults and eligible children. Pregnancy toxicity, kidney and potassium monitoring, and delayed severe enteropathy are key considerations.",
-  "checked": "2026-10-01",
+  "checked": "2026-10-02",
   "essential": {
     "title": "Stop promptly if pregnancy is detected.",
     "text": "The boxed warning addresses fetal injury or death. Monitor kidney function and potassium. Severe chronic diarrhea with weight loss can begin months or years after starting and needs evaluation for olmesartan-associated enteropathy.",
@@ -29,7 +29,7 @@ export const olmesartan = {
       "id": "label",
       "title": "Olmesartan medoxomil · Prescribing information",
       "publisher": "DailyMed / Umedica Laboratories USA Inc.",
-      "note": "Current SPL version 3, effective 2026-06-04. PI revised April 2026; selected 5/20/40 mg tablets and specific extemporaneous suspension.",
+      "note": "Current SPL version 4, effective September 30, 2026. PI footer revised September 2026; selected 5/20/40 mg tablets and specific extemporaneous suspension.",
       "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c49a7f23-2af0-4607-9f21-114970f8630d"
     },
     {

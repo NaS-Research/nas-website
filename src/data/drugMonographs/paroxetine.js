@@ -4,7 +4,7 @@ export const paroxetine = {
   "name": "Paroxetine",
   "synonym": "Paxil · Paxil CR · Brisdelle",
   "description": "SSRI with product-specific psychiatric and menopausal vasomotor indications.",
-  "checked": "2026-10-01",
+  "checked": "2026-10-02",
   "essential": {
     "title": "Monitor mood and serotonin toxicity",
     "text": "Watch for suicidal thoughts, serotonin syndrome, bleeding and low sodium. Review interacting drugs, pregnancy plans and the exact formulation; do not abruptly stop psychiatric treatment.",
@@ -30,7 +30,7 @@ export const paroxetine = {
       "id": "ir",
       "title": "Paxil · Current full prescribing information",
       "publisher": "Apotex / DailyMed",
-      "note": "Clinical Medication Guide revision November 2024; current SPL12 effective September 16, 2026.",
+      "note": "Full prescribing information and Medication Guide revised September 2026; current SPL version 13, effective September 29, 2026. Updated IR GAD starting dose, SAD/GAD titration and QT-related contraindications; CR and Brisdelle remain separate products.",
       "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ef3b5cbe-f9e1-c1ac-79da-cfe14e3a7e7e"
     },
     {
@@ -94,7 +94,7 @@ export const paroxetine = {
         {
           "title": "Paxil IR adult dosing",
           "paragraphs": [
-            "Take once daily in the morning, with or without food. Where indicated and tolerated, titrate by 10 mg/day at intervals of at least 1 week. For SAD and GAD, 20 mg/day is the recommended dose; studied higher doses did not establish additional benefit above 20 mg. The studied ranges are not universal targets."
+            "Take once daily in the morning, with or without food. For MDD, OCD, PD and PTSD, increase by 10 mg/day at weekly intervals if response is inadequate and treatment is tolerated, up to the indication-specific maximum. For SAD, start 20 mg once daily; after 1–2 weeks, the prescriber may increase by 10 mg/day at weekly intervals up to 60 mg/day. For GAD, start 10 mg once daily and increase to 20 mg once daily after one week; subsequent increases of 10 mg/day at weekly intervals may reach 50 mg/day according to response and tolerability. The SAD/GAD trials did not establish additional benefit above 20 mg/day; the maximum is not an automatic treatment target. The lower geriatric/severe-organ-impairment limits below still apply."
           ],
           "sources": [
             "ir"
@@ -129,12 +129,12 @@ export const paroxetine = {
               [
                 "SAD",
                 "20 mg",
-                "Recommended 20 mg; studied 20–60 mg"
+                "60 mg; no established additional benefit above 20 mg/day"
               ],
               [
                 "GAD",
-                "20 mg",
-                "Recommended 20 mg; studied 20–50 mg"
+                "10 mg; 20 mg after one week",
+                "50 mg; no established additional benefit above 20 mg/day"
               ]
             ]
           }
@@ -233,7 +233,7 @@ export const paroxetine = {
         {
           "title": "Contraindications",
           "paragraphs": [
-            "All three reviewed products contraindicate MAOI use or use within 14 days of stopping an MAOI, thioridazine, pimozide and known paroxetine/excipient hypersensitivity. Brisdelle additionally contraindicates pregnancy. Pregnancy is a significant risk consideration for IR/CR but is not listed as their formal contraindication."
+            "The reviewed products contraindicate MAOI use or use within 14 days of stopping an MAOI and known paroxetine/excipient hypersensitivity. The current Paxil IR label additionally contraindicates concomitant drugs that prolong the QTc interval and are CYP2D6 substrates; this includes the thioridazine/pimozide restrictions retained in the CR and Brisdelle labels. Check the exact companion drug before combining treatment. Brisdelle additionally contraindicates pregnancy. Pregnancy is a significant risk consideration for IR/CR but is not listed as their formal contraindication."
           ],
           "sources": [
             "ir",
@@ -274,7 +274,7 @@ export const paroxetine = {
         {
           "title": "CYP2D6 and QT-related combinations",
           "paragraphs": [
-            "Paroxetine inhibits CYP2D6 and can increase substrate exposure, including metoprolol, atomoxetine, flecainide and some antipsychotics/TCAs. Monitor and adjust the affected drug when starting or stopping paroxetine. Thioridazine/pimozide combinations are contraindicated because increased exposure can cause QT prolongation and ventricular arrhythmia. Do not generalize that restriction into an unsupported universal QT-dose limit."
+            "Paroxetine strongly inhibits CYP2D6 and can increase substrate exposure, including metoprolol, atomoxetine, flecainide and some antipsychotics/TCAs. Monitor and adjust an otherwise permissible companion drug when starting or stopping paroxetine. Current Paxil IR contraindicates CYP2D6 substrates that prolong the QTc interval because increased exposure can cause serious arrhythmias, including torsade de pointes and sudden death. The CR and Brisdelle labels specifically contraindicate thioridazine and pimozide. Dose adjustment does not make a contraindicated combination acceptable; reconcile the exact formulation and companion label with the pharmacist."
           ],
           "sources": [
             "ir",
@@ -459,7 +459,7 @@ export const paroxetine = {
         {
           "title": "Dosage forms and strengths",
           "paragraphs": [
-            "Reviewed oral forms: Paxil IR 10, 20, 30 and 40 mg tablets; Paxil CR 12.5, 25 and 37.5 mg extended-release tablets; Brisdelle 7.5 mg capsules. Paxil/CR use hydrochloride, Brisdelle mesylate; doses are expressed as paroxetine. The Paxil highlights incorrectly call its 10–40 mg tablets extended-release, while its full formulation section distinguishes them from Paxil CR. This profile follows the full sections. No availability or dosing claim is made for unreviewed Pexeva or generic liquids."
+            "Reviewed oral forms: Paxil IR 10, 20, 30 and 40 mg tablets; Paxil CR 12.5, 25 and 37.5 mg extended-release tablets; Brisdelle 7.5 mg capsules. Paxil/CR use hydrochloride, Brisdelle mesylate; doses are expressed as paroxetine. Current Paxil IR sections 3 and 11 identify conventional tablets; the earlier version’s incorrect extended-release description is not retained as a current-label finding. No availability or dosing claim is made for unreviewed Pexeva or generic liquids."
           ],
           "sources": [
             "ir",

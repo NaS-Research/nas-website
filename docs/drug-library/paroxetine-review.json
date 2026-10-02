@@ -1,7 +1,7 @@
 {
   "drug": "paroxetine",
   "status": "source_reviewed",
-  "checked": "2026-10-01",
+  "checked": "2026-10-02",
   "scope": "Current U.S. Paxil IR tablets, Paxil CR tablets and Brisdelle VMS capsule; product-specific clinical scope and safety.",
   "blueprint": {
     "sections": [
@@ -47,7 +47,7 @@
       "id": "ir",
       "title": "Paxil \u00b7 Current full prescribing information",
       "publisher": "Apotex / DailyMed",
-      "note": "Clinical Medication Guide revision November 2024; current SPL12 effective September 16, 2026.",
+      "note": "Full prescribing information and Medication Guide revised September 2026; current SPL version 13, effective September 29, 2026. Updated IR GAD starting dose, SAD/GAD titration and QT-related contraindications; CR and Brisdelle remain separate products.",
       "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ef3b5cbe-f9e1-c1ac-79da-cfe14e3a7e7e"
     },
     {
@@ -68,14 +68,15 @@
   "source_records": [
     {
       "id": "ir",
-      "local_snapshot": "/tmp/nas-drug-sources/paxil.xml",
-      "label_revision": "Medication Guide 11/2024; independent PI header date not established",
+      "local_snapshot": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-02/source-remediation/ef3b5cbe-f9e1-c1ac-79da-cfe14e3a7e7e.xml",
+      "label_revision": "Full prescribing information and Medication Guide September 2026",
       "set_id": "ef3b5cbe-f9e1-c1ac-79da-cfe14e3a7e7e",
-      "spl_version": "12",
-      "spl_effective_time": "20260916",
+      "spl_version": "13",
+      "spl_effective_time": "20260929",
       "dailymed_published_date": null,
-      "sha256": "55154f6658122cbba946a5b0e254951111152580060c2d57789c22c6b36c037f",
-      "review_method": "Relevant full public clinical sections read; dose, age, route, safety and product distinctions checked. No paywalled or unaccessed full guideline claimed."
+      "sha256": "8af6da7c732f175c466778075b010bb593b06479afe69a42f59a4b9716cd9732",
+      "review_method": "Current full IR indication, administration/dose, contraindication, warnings, interaction, population, pharmacology, product and counseling sections checked against the complete profile; CR/Brisdelle snapshots remain byte-identical to their earlier reviewed sources. A source update is not independent pharmacist sign-off.",
+      "checked": "2026-10-02"
     },
     {
       "id": "cr",
@@ -140,7 +141,7 @@
         },
         {
           "id": "ir",
-          "sections": "3; 11"
+          "sections": "1; 8.4"
         }
       ]
     },
@@ -148,12 +149,12 @@
       "section": "dosage",
       "card": "Paxil IR adult dosing",
       "assertions": [
-        "Take once daily in the morning, with or without food. Where indicated and tolerated, titrate by 10 mg/day at intervals of at least 1 week. For SAD and GAD, 20 mg/day is the recommended dose; studied higher doses did not establish additional benefit above 20 mg. The studied ranges are not universal targets."
+        "Take once daily in the morning, with or without food. For MDD, OCD, PD and PTSD, increase by 10 mg/day at weekly intervals if response is inadequate and treatment is tolerated, up to the indication-specific maximum. For SAD, start 20 mg once daily; after 1\u20132 weeks, the prescriber may increase by 10 mg/day at weekly intervals up to 60 mg/day. For GAD, start 10 mg once daily and increase to 20 mg once daily after one week; subsequent increases of 10 mg/day at weekly intervals may reach 50 mg/day according to response and tolerability. The SAD/GAD trials did not establish additional benefit above 20 mg/day; the maximum is not an automatic treatment target. The lower geriatric/severe-organ-impairment limits below still apply."
       ],
       "sources": [
         {
           "id": "ir",
-          "sections": "2.1\u20132.3"
+          "sections": "2.1\u20132.8; 8.5\u20138.7"
         }
       ],
       "table_assertions": {
@@ -186,12 +187,12 @@
           [
             "SAD",
             "20 mg",
-            "Recommended 20 mg; studied 20\u201360 mg"
+            "60 mg; no established additional benefit above 20 mg/day"
           ],
           [
             "GAD",
-            "20 mg",
-            "Recommended 20 mg; studied 20\u201350 mg"
+            "10 mg; 20 mg after one week",
+            "50 mg; no established additional benefit above 20 mg/day"
           ]
         ]
       }
@@ -247,7 +248,7 @@
       "sources": [
         {
           "id": "ir",
-          "sections": "2.5; 8.5\u20138.6; 12.3"
+          "sections": "2.1\u20132.8; 8.5\u20138.7"
         },
         {
           "id": "cr",
@@ -277,7 +278,7 @@
       "sources": [
         {
           "id": "ir",
-          "sections": "2.6\u20132.7; 5.2; 5.7"
+          "sections": "2.1\u20132.8; 8.5\u20138.7"
         },
         {
           "id": "cr",
@@ -300,7 +301,7 @@
       "sources": [
         {
           "id": "ir",
-          "sections": "5; 7; 17"
+          "sections": "Boxed Warning; 4; 5; 6"
         },
         {
           "id": "cr",
@@ -316,12 +317,12 @@
       "section": "safety",
       "card": "Contraindications",
       "assertions": [
-        "All three reviewed products contraindicate MAOI use or use within 14 days of stopping an MAOI, thioridazine, pimozide and known paroxetine/excipient hypersensitivity. Brisdelle additionally contraindicates pregnancy. Pregnancy is a significant risk consideration for IR/CR but is not listed as their formal contraindication."
+        "The reviewed products contraindicate MAOI use or use within 14 days of stopping an MAOI and known paroxetine/excipient hypersensitivity. The current Paxil IR label additionally contraindicates concomitant drugs that prolong the QTc interval and are CYP2D6 substrates; this includes the thioridazine/pimozide restrictions retained in the CR and Brisdelle labels. Check the exact companion drug before combining treatment. Brisdelle additionally contraindicates pregnancy. Pregnancy is a significant risk consideration for IR/CR but is not listed as their formal contraindication."
       ],
       "sources": [
         {
           "id": "ir",
-          "sections": "4"
+          "sections": "Boxed Warning; 4; 5; 6"
         },
         {
           "id": "cr",
@@ -342,7 +343,7 @@
       "sources": [
         {
           "id": "ir",
-          "sections": "Boxed Warning; 5.1"
+          "sections": "Boxed Warning; 4; 5; 6"
         },
         {
           "id": "cr",
@@ -363,7 +364,7 @@
       "sources": [
         {
           "id": "ir",
-          "sections": "6.1\u20136.2"
+          "sections": "Boxed Warning; 4; 5; 6"
         },
         {
           "id": "cr",
@@ -379,12 +380,12 @@
       "section": "interactions",
       "card": "CYP2D6 and QT-related combinations",
       "assertions": [
-        "Paroxetine inhibits CYP2D6 and can increase substrate exposure, including metoprolol, atomoxetine, flecainide and some antipsychotics/TCAs. Monitor and adjust the affected drug when starting or stopping paroxetine. Thioridazine/pimozide combinations are contraindicated because increased exposure can cause QT prolongation and ventricular arrhythmia. Do not generalize that restriction into an unsupported universal QT-dose limit."
+        "Paroxetine strongly inhibits CYP2D6 and can increase substrate exposure, including metoprolol, atomoxetine, flecainide and some antipsychotics/TCAs. Monitor and adjust an otherwise permissible companion drug when starting or stopping paroxetine. Current Paxil IR contraindicates CYP2D6 substrates that prolong the QTc interval because increased exposure can cause serious arrhythmias, including torsade de pointes and sudden death. The CR and Brisdelle labels specifically contraindicate thioridazine and pimozide. Dose adjustment does not make a contraindicated combination acceptable; reconcile the exact formulation and companion label with the pharmacist."
       ],
       "sources": [
         {
           "id": "ir",
-          "sections": "4; 5.3; 7; 12.3"
+          "sections": "4; 5.3; 5.5; 5.12; 7; 12.3"
         },
         {
           "id": "cr",
@@ -405,7 +406,7 @@
       "sources": [
         {
           "id": "ir",
-          "sections": "5.11; 7"
+          "sections": "4; 5.3; 5.5; 5.12; 7; 12.3"
         },
         {
           "id": "cr",
@@ -426,7 +427,7 @@
       "sources": [
         {
           "id": "ir",
-          "sections": "5.2; 5.5; 7"
+          "sections": "4; 5.3; 5.5; 5.12; 7; 12.3"
         },
         {
           "id": "cr",
@@ -447,7 +448,7 @@
       "sources": [
         {
           "id": "ir",
-          "sections": "7; 12.3"
+          "sections": "4; 5.3; 5.5; 5.12; 7; 12.3"
         },
         {
           "id": "cr",
@@ -468,7 +469,7 @@
       "sources": [
         {
           "id": "ir",
-          "sections": "5.4\u20135.5; 8.1"
+          "sections": "5.4; 8"
         },
         {
           "id": "cr",
@@ -489,7 +490,7 @@
       "sources": [
         {
           "id": "ir",
-          "sections": "8.2\u20138.3"
+          "sections": "5.4; 8"
         },
         {
           "id": "cr",
@@ -510,7 +511,7 @@
       "sources": [
         {
           "id": "ir",
-          "sections": "8.4\u20138.6"
+          "sections": "5.4; 8"
         },
         {
           "id": "cr",
@@ -531,7 +532,7 @@
       "sources": [
         {
           "id": "ir",
-          "sections": "12.1\u201312.2"
+          "sections": "12"
         },
         {
           "id": "cr",
@@ -552,7 +553,7 @@
       "sources": [
         {
           "id": "ir",
-          "sections": "12.3"
+          "sections": "12"
         },
         {
           "id": "cr",
@@ -569,7 +570,7 @@
       "sources": [
         {
           "id": "ir",
-          "sections": "12.3"
+          "sections": "12"
         },
         {
           "id": "cr",
@@ -590,7 +591,7 @@
       "sources": [
         {
           "id": "ir",
-          "sections": "5; 7; 17"
+          "sections": "2; 5; 17; Medication Guide"
         },
         {
           "id": "cr",
@@ -611,7 +612,7 @@
       "sources": [
         {
           "id": "ir",
-          "sections": "5; 7; 17"
+          "sections": "2; 5; 17; Medication Guide"
         },
         {
           "id": "cr",
@@ -632,7 +633,7 @@
       "sources": [
         {
           "id": "ir",
-          "sections": "2.1; 3"
+          "sections": "2; 5; 17; Medication Guide"
         },
         {
           "id": "cr",
@@ -653,7 +654,7 @@
       "sources": [
         {
           "id": "ir",
-          "sections": "3; 16"
+          "sections": "3; 11; 16; package panels"
         },
         {
           "id": "cr",
@@ -669,12 +670,12 @@
       "section": "product",
       "card": "Dosage forms and strengths",
       "assertions": [
-        "Reviewed oral forms: Paxil IR 10, 20, 30 and 40 mg tablets; Paxil CR 12.5, 25 and 37.5 mg extended-release tablets; Brisdelle 7.5 mg capsules. Paxil/CR use hydrochloride, Brisdelle mesylate; doses are expressed as paroxetine. The Paxil highlights incorrectly call its 10\u201340 mg tablets extended-release, while its full formulation section distinguishes them from Paxil CR. This profile follows the full sections. No availability or dosing claim is made for unreviewed Pexeva or generic liquids."
+        "Reviewed oral forms: Paxil IR 10, 20, 30 and 40 mg tablets; Paxil CR 12.5, 25 and 37.5 mg extended-release tablets; Brisdelle 7.5 mg capsules. Paxil/CR use hydrochloride, Brisdelle mesylate; doses are expressed as paroxetine. Current Paxil IR sections 3 and 11 identify conventional tablets; the earlier version\u2019s incorrect extended-release description is not retained as a current-label finding. No availability or dosing claim is made for unreviewed Pexeva or generic liquids."
       ],
       "sources": [
         {
           "id": "ir",
-          "sections": "3; 11"
+          "sections": "3; 11; 16; package panels"
         },
         {
           "id": "cr",
@@ -686,7 +687,7 @@
         },
         {
           "id": "ir",
-          "sections": "Highlights\u00a73 versus full\u00a73/11 formulation distinction"
+          "sections": "3; 11; 16; package panels"
         }
       ]
     },
@@ -699,7 +700,7 @@
       "sources": [
         {
           "id": "ir",
-          "sections": "16; Medication Guide"
+          "sections": "3; 11; 16; package panels"
         },
         {
           "id": "cr",
@@ -752,7 +753,7 @@
         },
         {
           "id": "ir",
-          "sections": "3; 11"
+          "sections": "1; 8.4"
         }
       ]
     },
@@ -760,12 +761,12 @@
       "section": "dosage",
       "card": "Paxil IR adult dosing",
       "assertions": [
-        "Take once daily in the morning, with or without food. Where indicated and tolerated, titrate by 10 mg/day at intervals of at least 1 week. For SAD and GAD, 20 mg/day is the recommended dose; studied higher doses did not establish additional benefit above 20 mg. The studied ranges are not universal targets."
+        "Take once daily in the morning, with or without food. For MDD, OCD, PD and PTSD, increase by 10 mg/day at weekly intervals if response is inadequate and treatment is tolerated, up to the indication-specific maximum. For SAD, start 20 mg once daily; after 1\u20132 weeks, the prescriber may increase by 10 mg/day at weekly intervals up to 60 mg/day. For GAD, start 10 mg once daily and increase to 20 mg once daily after one week; subsequent increases of 10 mg/day at weekly intervals may reach 50 mg/day according to response and tolerability. The SAD/GAD trials did not establish additional benefit above 20 mg/day; the maximum is not an automatic treatment target. The lower geriatric/severe-organ-impairment limits below still apply."
       ],
       "sources": [
         {
           "id": "ir",
-          "sections": "2.1\u20132.3"
+          "sections": "2.1\u20132.8; 8.5\u20138.7"
         }
       ],
       "table_assertions": {
@@ -798,12 +799,12 @@
           [
             "SAD",
             "20 mg",
-            "Recommended 20 mg; studied 20\u201360 mg"
+            "60 mg; no established additional benefit above 20 mg/day"
           ],
           [
             "GAD",
-            "20 mg",
-            "Recommended 20 mg; studied 20\u201350 mg"
+            "10 mg; 20 mg after one week",
+            "50 mg; no established additional benefit above 20 mg/day"
           ]
         ]
       }
@@ -859,7 +860,7 @@
       "sources": [
         {
           "id": "ir",
-          "sections": "2.5; 8.5\u20138.6; 12.3"
+          "sections": "2.1\u20132.8; 8.5\u20138.7"
         },
         {
           "id": "cr",
@@ -889,7 +890,7 @@
       "sources": [
         {
           "id": "ir",
-          "sections": "2.6\u20132.7; 5.2; 5.7"
+          "sections": "2.1\u20132.8; 8.5\u20138.7"
         },
         {
           "id": "cr",
@@ -912,7 +913,7 @@
       "sources": [
         {
           "id": "ir",
-          "sections": "5; 7; 17"
+          "sections": "Boxed Warning; 4; 5; 6"
         },
         {
           "id": "cr",
@@ -928,12 +929,12 @@
       "section": "safety",
       "card": "Contraindications",
       "assertions": [
-        "All three reviewed products contraindicate MAOI use or use within 14 days of stopping an MAOI, thioridazine, pimozide and known paroxetine/excipient hypersensitivity. Brisdelle additionally contraindicates pregnancy. Pregnancy is a significant risk consideration for IR/CR but is not listed as their formal contraindication."
+        "The reviewed products contraindicate MAOI use or use within 14 days of stopping an MAOI and known paroxetine/excipient hypersensitivity. The current Paxil IR label additionally contraindicates concomitant drugs that prolong the QTc interval and are CYP2D6 substrates; this includes the thioridazine/pimozide restrictions retained in the CR and Brisdelle labels. Check the exact companion drug before combining treatment. Brisdelle additionally contraindicates pregnancy. Pregnancy is a significant risk consideration for IR/CR but is not listed as their formal contraindication."
       ],
       "sources": [
         {
           "id": "ir",
-          "sections": "4"
+          "sections": "Boxed Warning; 4; 5; 6"
         },
         {
           "id": "cr",
@@ -954,7 +955,7 @@
       "sources": [
         {
           "id": "ir",
-          "sections": "Boxed Warning; 5.1"
+          "sections": "Boxed Warning; 4; 5; 6"
         },
         {
           "id": "cr",
@@ -975,7 +976,7 @@
       "sources": [
         {
           "id": "ir",
-          "sections": "6.1\u20136.2"
+          "sections": "Boxed Warning; 4; 5; 6"
         },
         {
           "id": "cr",
@@ -991,12 +992,12 @@
       "section": "interactions",
       "card": "CYP2D6 and QT-related combinations",
       "assertions": [
-        "Paroxetine inhibits CYP2D6 and can increase substrate exposure, including metoprolol, atomoxetine, flecainide and some antipsychotics/TCAs. Monitor and adjust the affected drug when starting or stopping paroxetine. Thioridazine/pimozide combinations are contraindicated because increased exposure can cause QT prolongation and ventricular arrhythmia. Do not generalize that restriction into an unsupported universal QT-dose limit."
+        "Paroxetine strongly inhibits CYP2D6 and can increase substrate exposure, including metoprolol, atomoxetine, flecainide and some antipsychotics/TCAs. Monitor and adjust an otherwise permissible companion drug when starting or stopping paroxetine. Current Paxil IR contraindicates CYP2D6 substrates that prolong the QTc interval because increased exposure can cause serious arrhythmias, including torsade de pointes and sudden death. The CR and Brisdelle labels specifically contraindicate thioridazine and pimozide. Dose adjustment does not make a contraindicated combination acceptable; reconcile the exact formulation and companion label with the pharmacist."
       ],
       "sources": [
         {
           "id": "ir",
-          "sections": "4; 5.3; 7; 12.3"
+          "sections": "4; 5.3; 5.5; 5.12; 7; 12.3"
         },
         {
           "id": "cr",
@@ -1017,7 +1018,7 @@
       "sources": [
         {
           "id": "ir",
-          "sections": "5.11; 7"
+          "sections": "4; 5.3; 5.5; 5.12; 7; 12.3"
         },
         {
           "id": "cr",
@@ -1038,7 +1039,7 @@
       "sources": [
         {
           "id": "ir",
-          "sections": "5.2; 5.5; 7"
+          "sections": "4; 5.3; 5.5; 5.12; 7; 12.3"
         },
         {
           "id": "cr",
@@ -1059,7 +1060,7 @@
       "sources": [
         {
           "id": "ir",
-          "sections": "7; 12.3"
+          "sections": "4; 5.3; 5.5; 5.12; 7; 12.3"
         },
         {
           "id": "cr",
@@ -1080,7 +1081,7 @@
       "sources": [
         {
           "id": "ir",
-          "sections": "5.4\u20135.5; 8.1"
+          "sections": "5.4; 8"
         },
         {
           "id": "cr",
@@ -1101,7 +1102,7 @@
       "sources": [
         {
           "id": "ir",
-          "sections": "8.2\u20138.3"
+          "sections": "5.4; 8"
         },
         {
           "id": "cr",
@@ -1122,7 +1123,7 @@
       "sources": [
         {
           "id": "ir",
-          "sections": "8.4\u20138.6"
+          "sections": "5.4; 8"
         },
         {
           "id": "cr",
@@ -1143,7 +1144,7 @@
       "sources": [
         {
           "id": "ir",
-          "sections": "12.1\u201312.2"
+          "sections": "12"
         },
         {
           "id": "cr",
@@ -1164,7 +1165,7 @@
       "sources": [
         {
           "id": "ir",
-          "sections": "12.3"
+          "sections": "12"
         },
         {
           "id": "cr",
@@ -1181,7 +1182,7 @@
       "sources": [
         {
           "id": "ir",
-          "sections": "12.3"
+          "sections": "12"
         },
         {
           "id": "cr",
@@ -1202,7 +1203,7 @@
       "sources": [
         {
           "id": "ir",
-          "sections": "5; 7; 17"
+          "sections": "2; 5; 17; Medication Guide"
         },
         {
           "id": "cr",
@@ -1223,7 +1224,7 @@
       "sources": [
         {
           "id": "ir",
-          "sections": "5; 7; 17"
+          "sections": "2; 5; 17; Medication Guide"
         },
         {
           "id": "cr",
@@ -1244,7 +1245,7 @@
       "sources": [
         {
           "id": "ir",
-          "sections": "2.1; 3"
+          "sections": "2; 5; 17; Medication Guide"
         },
         {
           "id": "cr",
@@ -1265,7 +1266,7 @@
       "sources": [
         {
           "id": "ir",
-          "sections": "3; 16"
+          "sections": "3; 11; 16; package panels"
         },
         {
           "id": "cr",
@@ -1281,12 +1282,12 @@
       "section": "product",
       "card": "Dosage forms and strengths",
       "assertions": [
-        "Reviewed oral forms: Paxil IR 10, 20, 30 and 40 mg tablets; Paxil CR 12.5, 25 and 37.5 mg extended-release tablets; Brisdelle 7.5 mg capsules. Paxil/CR use hydrochloride, Brisdelle mesylate; doses are expressed as paroxetine. The Paxil highlights incorrectly call its 10\u201340 mg tablets extended-release, while its full formulation section distinguishes them from Paxil CR. This profile follows the full sections. No availability or dosing claim is made for unreviewed Pexeva or generic liquids."
+        "Reviewed oral forms: Paxil IR 10, 20, 30 and 40 mg tablets; Paxil CR 12.5, 25 and 37.5 mg extended-release tablets; Brisdelle 7.5 mg capsules. Paxil/CR use hydrochloride, Brisdelle mesylate; doses are expressed as paroxetine. Current Paxil IR sections 3 and 11 identify conventional tablets; the earlier version\u2019s incorrect extended-release description is not retained as a current-label finding. No availability or dosing claim is made for unreviewed Pexeva or generic liquids."
       ],
       "sources": [
         {
           "id": "ir",
-          "sections": "3; 11"
+          "sections": "3; 11; 16; package panels"
         },
         {
           "id": "cr",
@@ -1298,7 +1299,7 @@
         },
         {
           "id": "ir",
-          "sections": "Highlights\u00a73 versus full\u00a73/11 formulation distinction"
+          "sections": "3; 11; 16; package panels"
         }
       ]
     },
@@ -1311,7 +1312,7 @@
       "sources": [
         {
           "id": "ir",
-          "sections": "16; Medication Guide"
+          "sections": "3; 11; 16; package panels"
         },
         {
           "id": "cr",
@@ -1442,11 +1443,6 @@
   "unresolved_source_questions": [
     {
       "material": false,
-      "source": "ir",
-      "issue": "Paxil highlights\u00a73 incorrectly says extended-release10/20/30/40mg; full\u00a73/11 and separateCR source used for correct formulation distinction."
-    },
-    {
-      "material": false,
       "source": "cr",
       "issue": "\u00a716 Fahrenheit excursion endpoint typo; source Celsius20\u201325\u00b0C and15\u201330\u00b0C excursions retained, typo not propagated."
     },
@@ -1458,8 +1454,19 @@
   ],
   "validation": {
     "schema": "Passed actual validateMonograph; eight sections, four Safety cards, three Product cards, three tuple hero facts",
-    "tests_build_lint": "Parent batch checks required",
-    "rendered_page": "Parent batch QA required"
+    "tests_build_lint": "Nine tests and production build passed; no configured lint script",
+    "rendered_page": "Desktop/mobile production-build browser checks and screenshot review passed October 2, 2026"
   },
-  "monograph_sha256": "cacdc86382ec0f8b583156aac0c39712a3494b3a634cb055bc88c2dfebff1714"
+  "monograph_sha256": "d49b98ae572bdcfd4f3e44faab873e36e510322764f51efe76c45f4c52aeecb1",
+  "sourceUpdateReview": {
+    "date": "2026-10-02",
+    "previousMonographSha256": "cacdc86382ec0f8b583156aac0c39712a3494b3a634cb055bc88c2dfebff1714",
+    "previousAuditArtifact": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-02/source-remediation/paroxetine-review-before-remediation.json",
+    "changes": [
+      "IR GAD initial dose 20\u219210 mg/day, then 20 mg after one week; explicit current SAD/GAD escalation and maxima",
+      "Current IR QT/CYP2D6-substrate contraindication broadened beyond two named antipsychotics",
+      "SPL v13/effective 20260929 and September 2026 clinical revision; historical formulation typo no longer asserted as current"
+    ],
+    "scope": "Author source update; prior independent review applies to the earlier edition only. Full primary IR text checked, with CR/Brisdelle unchanged-source continuity."
+  }
 }

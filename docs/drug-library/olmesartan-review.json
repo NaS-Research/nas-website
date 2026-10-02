@@ -1,7 +1,7 @@
 {
   "slug": "olmesartan",
   "status": "source_reviewed",
-  "checked": "2026-10-01",
+  "checked": "2026-10-02",
   "scope": "CurrentU.S.Umedicaolmesartanmedoxomil5/20/40mgtablets; adultand6+weight-eligiblepediatricHTN,exactlabelpharmacy2mg/mLsuspension",
   "excludedRegimens": [
     "OlmesartanHCTZ/amlodipine/triplecombinationregimens;currentBenicarbrandsupply notverified",
@@ -15,7 +15,7 @@
       "id": "label",
       "title": "Olmesartan medoxomil · Prescribing information",
       "publisher": "DailyMed / Umedica Laboratories USA Inc.",
-      "note": "Current SPL version 3, effective 2026-06-04. PI revised April 2026; selected 5/20/40 mg tablets and specific extemporaneous suspension.",
+      "note": "Current SPL version 4, effective September 30, 2026; PI footer September 2026. Full clinical text unchanged apart from revision footer and formatting compared with the reviewed version 3.",
       "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c49a7f23-2af0-4607-9f21-114970f8630d"
     },
     {
@@ -31,11 +31,11 @@
       "sourceId": "label",
       "product": "olmesartan",
       "setid": "c49a7f23-2af0-4607-9f21-114970f8630d",
-      "effectiveTime": "20260604",
-      "version": "3",
-      "documentVersion": "PIrevisedApril2026;SPLJune4,2026",
+      "effectiveTime": "20260930",
+      "version": "4",
+      "documentVersion": "PI footer September 2026; SPL effective September 30, 2026",
       "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/c49a7f23-2af0-4607-9f21-114970f8630d.xml",
-      "xmlSha256": "47af0464d3720350a2711f9a6fce75a51d5cb52506cbb17bb0863ddffe1dfbb1"
+      "xmlSha256": "469a806157cb1998748698f7220534473a89127c1f5fe0af13c34add0ffab7cc"
     }
   ],
   "evidence": [
@@ -59,6 +59,13 @@
       "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/olmesartan/batch10-htn2025-web.json",
       "sha256": "af86581f53434006a9bcb333d5e1a0932910d4e59da7e6cb08a5eae48ba6c9d9",
       "url": "https://professional.heart.org/en/science-news/2025-high-blood-pressure-guideline/top-things-to-know"
+    },
+    {
+      "sourceId": "label",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-02/source-remediation/c49a7f23-2af0-4607-9f21-114970f8630d.xml",
+      "sha256": "469a806157cb1998748698f7220534473a89127c1f5fe0af13c34add0ffab7cc",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/c49a7f23-2af0-4607-9f21-114970f8630d.xml",
+      "scope": "Current source; historical artifacts above retained"
     }
   ],
   "sourceEvidenceRoot": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/olmesartan",
@@ -592,6 +599,24 @@
       "Dosage forms and strengths",
       "Storage and handling"
     ],
-    "renderedPageQA": "Pending parent batch QA"
-  }
+    "renderedPageQA": "Desktop/mobile production-build browser checks and screenshot review passed October 2, 2026"
+  },
+  "sourceUpdateReview": {
+    "result": "No changed clinical assertions; revision footer April→September 2026 and V-00→V-01, plus invisible/whitespace formatting changes only.",
+    "method": "Complete section text equality after explicitly enumerated footer substitutions and normalization of whitespace/Unicode format characters.",
+    "monographAction": "Update source version/effective-time/revision note; clinical instructions remain valid.",
+    "currentMonographSha256": "ca1fc602ee75ed5442f1524e7c2699d05827868d1b7b8754a5236742cbc2fbe6"
+  },
+  "historicalLabelMetadata": [
+    {
+      "sourceId": "label",
+      "product": "olmesartan",
+      "setid": "c49a7f23-2af0-4607-9f21-114970f8630d",
+      "effectiveTime": "20260604",
+      "version": "3",
+      "documentVersion": "PIrevisedApril2026;SPLJune4,2026",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/c49a7f23-2af0-4607-9f21-114970f8630d.xml",
+      "xmlSha256": "47af0464d3720350a2711f9a6fce75a51d5cb52506cbb17bb0863ddffe1dfbb1"
+    }
+  ]
 }

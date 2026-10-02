@@ -566,5 +566,65 @@
     },
     "interaction": "Native details cards; only explicitly open cards default expanded. Right rail updates active section at180px scroll threshold and shows each section’s clinical takeaway; reduced-motion removes rail transitions.",
     "limits": "Code inspected; no new rendered-page QA performed by this independent safety reviewer."
+  },
+  "supplementalReview20261002": {
+    "scope": "Author review of current pediatric Drug Facts and complete ACOG advisory; immutable monograph not edited. Original independent review remains historical.",
+    "acog": {
+      "access": "full-public-primary-advisory-retrieved-and-read",
+      "artifact": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-02/source-remediation/acog-advisory.html",
+      "sha256": "508eca474a9512641941eac7263d28befc2106c37a91dce69fea67b807d07961",
+      "sectionsRead": [
+        "ACOG Recommendation",
+        "Background",
+        "Implementation Considerations",
+        "Conclusion",
+        "References"
+      ],
+      "result": "Published pregnancy summary supported: current evidence does not establish a causal link; judicious clinically needed use with obstetric consultation. Earlier retrieval failure is historical, not a current unresolved access gap."
+    },
+    "pediatricCounseling": {
+      "source": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3162733b-9382-39f1-e063-6294a90ac420",
+      "labelUpdated": "2026-06-12",
+      "reviewedSections": [
+        "Warnings / Sore throat warning",
+        "Warnings / Stop use and ask a doctor",
+        "Directions"
+      ],
+      "status": "approved-corrected-awaiting-publication",
+      "confirmedOmissions": [
+        "Stop use and doctor contact for child pain worsening or lasting over five days, fever worsening or lasting over three days, new symptoms, redness or swelling",
+        "Prompt doctor consultation for severe sore throat, lasting over two days, or accompanied/followed by fever, headache, rash, nausea or vomiting"
+      ]
+    },
+    "currentMonographSha256": "02edeb3b350a18c5d99c1a9fe8c5f49d1e49249dc0f6527775e6a1557b9d3c38"
+  },
+  "authorizedCounselingRevision": {
+    "originalSha256": "50972dbe3eb307ae910f593345bce54368ad90d39a8215c6d414a1107696c78f",
+    "frozenEdition": "docs/drug-library/blueprints/acetaminophen-v1.js",
+    "currentSha256": "02edeb3b350a18c5d99c1a9fe8c5f49d1e49249dc0f6527775e6a1557b9d3c38",
+    "approval": {
+      "date": "2026-10-02",
+      "scope": "Explicit exception for this three-profile corrective release: paroxetine correction, olmesartan source refresh and two APAP pediatric counseling statements with existing child-source anchors. No general change to ten-drug release policy.",
+      "request": "May I publish those two updates together with the missing pediatric acetaminophen warnings? This smaller release needs approval beyond the original ten-drug batches",
+      "userResponse": "yes push. are you done. I approve also",
+      "sourceThread": "01a0f563-7d46-73b9-9343-5c9bd72220f1"
+    },
+    "assertionSourceMap": [
+      {
+        "section": "practice",
+        "card": "Monitoring parameters",
+        "assertion": "For the linked Children’s Tylenol suspension, stop use and contact a doctor if the child’s pain worsens or lasts longer than five days, fever worsens or lasts longer than three days, new symptoms develop, or redness or swelling occurs.",
+        "source": "child",
+        "sourceSections": "Drug Facts / Stop use and ask a doctor"
+      },
+      {
+        "section": "practice",
+        "card": "Patient counseling information",
+        "assertion": "For a child with severe sore throat, sore throat lasting longer than two days, or sore throat accompanied or followed by fever, headache, rash, nausea or vomiting, consult a doctor promptly.",
+        "source": "child",
+        "sourceSections": "Drug Facts / Sore throat warning"
+      }
+    ],
+    "result": "Two previously reported counseling omissions corrected with explicit user permission; original independent review is historical. No dosing, source-list order, presentation or other clinical claims changed."
   }
 }
