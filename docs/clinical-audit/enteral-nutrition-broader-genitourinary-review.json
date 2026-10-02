@@ -1,0 +1,1219 @@
+{
+  "date": "2026-10-01",
+  "unit": "enteral-nutrition:broader-genitourinary-dosage-form-dependency",
+  "baseCommit": "f145fc2efa5ac0b6f04677f8039491d08efdbc51",
+  "source": {
+    "identity": "Private supplied cover-verified RxPrep2023,1032pages.",
+    "completeChapterTextAndRenderedRead": [
+      {
+        "chapter": 50,
+        "pdfPages": [
+          697,
+          701
+        ],
+        "printedPages": [
+          689,
+          693
+        ]
+      },
+      {
+        "chapter": 52,
+        "pdfPages": [
+          707,
+          712
+        ],
+        "printedPages": [
+          699,
+          704
+        ]
+      }
+    ],
+    "additionalTextAndRenderedRead": [
+      95
+    ],
+    "verifiedPrintedFooters": [
+      87,
+      689,
+      690,
+      691,
+      692,
+      693,
+      699,
+      700,
+      701,
+      702,
+      703,
+      704
+    ],
+    "additionalExtractOnlyNotAdopted": [
+      96
+    ],
+    "fullBookClinicalAudit": false,
+    "claims": {
+      "95": "Complete oral formulation table/text read. Long-acting release, avoid crush/chew, specific opening/splitting examples and actual labeling; osmotic shells after drug release; oral solutions often preferred for NG delivery, not every formulation universally compatible.",
+      "697-701": "Complete sexual dysfunction chapter read, including PDE5 pathway/food/interaction tables, alprostadil PGE1andlocal delivery, route-specific doses/adverse effects andHSDD. No contemporary dosing/label or cAMPmechanism adopted.",
+      "707-712": "Complete urinary chapter read, including treatment algorithm, antimuscarinic/agonist/Botox/desmopressin tables/counseling. DitropanXLOROS/empty ghostshell isexplicit. Historical receptor-selectivity/cognition/dose/label assertions are not newly adopted."
+    },
+    "sourceGaps": [
+      "Complete original matrix/food/transit/tube assessment remains pending.",
+      "Alprostadil cAMPmechanism and complete local-device/systemic/partner scope not fully established by the book chapter.",
+      "Historical stress-incontinence off-label discussion does not establish allcurrentUSduloxetine constraints/foreign-approval history.",
+      "Salt/hydrate/strength-convention and medicinal-chemistry structures/current references require further reconciliation.",
+      "Interactive module figures/metadata are not source-verified by seeing book illustrations."
+    ],
+    "qualifiedSynthesis": [
+      "Input rate is part of exposure even when the active molecule and milligram amount remain unchanged.",
+      "A ghost shell alone does not prove dose loss; exact product and release-system instructions still apply."
+    ],
+    "historicalContextNotNewlyAdopted": [
+      "Broad antimuscarinicM3selectivity/CNS comparison, newer OABtreatment sequence andBotox360-unit adult multi-indication total are source context, not current protocol closure.",
+      "HistoricalHSDDindication/REMS andPDE5renal/nitrate rules read asbook context; no new current label statement adopted."
+    ]
+  },
+  "questionReview": [
+    {
+      "module": "genitourinary-medicinal-chemistry",
+      "id": "genitourinary-medchem-121",
+      "concept": "extended-release dosage form integrity",
+      "difficulty": "Foundational",
+      "prompt": "Which principle best characterizes extended-release dosage form integrity?",
+      "choices": [
+        "Extended-release tablets use a delivery system to control input rate and must be administered according to product instructions.",
+        "Release rate is irrelevant once the active molecule has been identified",
+        "Any extended-release tablet can be crushed if its total milligram dose is unchanged",
+        "A visible empty shell proves that the entire dose remained unreleased"
+      ],
+      "answer": 0,
+      "explanation": "The book explains that controlled-release dosage forms regulate drug delivery over time, and that crushing or chewing can release the contents at once. It also describes an empty shell after drug release. The molecule and total milligram amount alone do not describe the delivered exposure; use the exact product instructions.",
+      "reviewHref": "#product-engineering",
+      "status": "verified",
+      "changed": true,
+      "sourcePdfPages": [
+        95,
+        697,
+        698,
+        699,
+        700,
+        701,
+        707,
+        708,
+        709,
+        710,
+        711,
+        712
+      ],
+      "review": "Complete retained key and revised alternatives/explanation supported by full formulation table and urinary osmotic/ghost-shell context. Product-specific exceptions preserved; no universal tube method or release design asserted."
+    },
+    {
+      "module": "genitourinary-medicinal-chemistry",
+      "id": "genitourinary-medchem-122",
+      "concept": "extended-release dosage form integrity",
+      "difficulty": "Applied",
+      "prompt": "Which structure based action best applies to extended-release dosage form integrity?",
+      "choices": [
+        "Verify whether a dosage form can be split, crushed, chewed, or opened before manipulation.",
+        "Split every extended-release tablet whenever a score line is visible",
+        "Crush the tablet when swallowing is difficult without checking its release system",
+        "Apply one capsule product's opening instructions to every extended-release product"
+      ],
+      "answer": 0,
+      "explanation": "The book generally warns against crushing or chewing long-acting dosage forms, but identifies product-specific examples that may be opened or divided under their own instructions. Verify the exact dosage form before manipulation. A feeding tube or swallowing difficulty is a reason to review alternatives, not permission to defeat release control.",
+      "reviewHref": "#product-engineering",
+      "status": "verified",
+      "changed": true,
+      "sourcePdfPages": [
+        95,
+        697,
+        698,
+        699,
+        700,
+        701,
+        707,
+        708,
+        709,
+        710,
+        711,
+        712
+      ],
+      "review": "Complete retained key and revised alternatives/explanation supported by full formulation table and urinary osmotic/ghost-shell context. Product-specific exceptions preserved; no universal tube method or release design asserted."
+    },
+    {
+      "module": "genitourinary-medicinal-chemistry",
+      "id": "genitourinary-medchem-123",
+      "concept": "extended-release dosage form integrity",
+      "difficulty": "Advanced",
+      "prompt": "Which comparison or assessment is most appropriate for extended-release dosage form integrity?",
+      "choices": [
+        "Review matrix or osmotic design, tablet shell, food, transit, swallowing, feeding tube, dose dumping, and alternatives.",
+        "Integrate scaffold, active species, route, formulation, organ function, interactions, current label, guideline role, and preference.",
+        "Compare bone, breast, endometrium, liver, thrombosis, metabolism, and indication-specific evidence.",
+        "Review DHT, testosterone, tissue dependence, prostate size, hair biology, sexual effects, and reproductive goals."
+      ],
+      "answer": 0,
+      "explanation": "The engineered input rate is part of the prescribed exposure.",
+      "reviewHref": "#product-engineering",
+      "status": "pending",
+      "changed": false,
+      "sourcePdfPages": [
+        95,
+        697,
+        698,
+        699,
+        700,
+        701,
+        707,
+        708,
+        709,
+        710,
+        711,
+        712
+      ],
+      "review": "Book supports long-acting delivery, osmotic shells, swallowing/tube formulation review and product-specific manipulation. The complete original matrix/food/transit/tube assessment formulation is not fully established; retained unchanged pending."
+    },
+    {
+      "module": "genitourinary-medicinal-chemistry",
+      "id": "genitourinary-medchem-124",
+      "concept": "extended-release dosage form integrity",
+      "difficulty": "Expert",
+      "prompt": "Which reasoning hazard is most important to prevent with extended-release dosage form integrity?",
+      "choices": [
+        "Changing the dosage form can defeat release control even when the molecule remains intact.",
+        "Checking the exact product instructions before manipulating the dosage form",
+        "Recognizing that an emptied Ditropan XL shell may appear in stool after drug release",
+        "Reviewing an appropriate alternative dosage form when swallowing or tube delivery is difficult"
+      ],
+      "answer": 0,
+      "explanation": "The book links long-acting dosage forms with controlled release and warns that crushing or chewing can release drug at once. Ditropan XL is its urinary example of an osmotic system that can leave an empty shell. Preserving the active molecule does not preserve the designed release process.",
+      "reviewHref": "#product-engineering",
+      "status": "verified",
+      "changed": true,
+      "sourcePdfPages": [
+        95,
+        697,
+        698,
+        699,
+        700,
+        701,
+        707,
+        708,
+        709,
+        710,
+        711,
+        712
+      ],
+      "review": "Complete retained key and revised alternatives/explanation supported by full formulation table and urinary osmotic/ghost-shell context. Product-specific exceptions preserved; no universal tube method or release design asserted."
+    },
+    {
+      "module": "genitourinary-medicinal-chemistry",
+      "id": "genitourinary-medchem-125",
+      "concept": "local and systemic delivery",
+      "difficulty": "Foundational",
+      "prompt": "Which principle best characterizes local and systemic delivery?",
+      "choices": [
+        "Vaginal, intrauterine, transdermal, urethral, and intracavernosal products may prioritize local delivery but can still create systemic exposure.",
+        "Estrogens, progestogens, and androgens share a fused-ring steroid framework, but oxidation state, substituents, stereochemistry, and metabolism create different receptor and exposure profiles.",
+        "Progestins arise from progesterone-like, testosterone-derived, or spironolactone-related scaffolds with distinct receptor and metabolic profiles.",
+        "PDE5 inhibitors use heterocyclic, hydrogen-bonding, and hydrophobic features to occupy the catalytic pocket and slow cGMP degradation."
+      ],
+      "answer": 0,
+      "explanation": "Anatomical targeting changes exposure but rarely makes it zero elsewhere.",
+      "reviewHref": "#product-engineering",
+      "status": "pending",
+      "changed": false,
+      "sourcePdfPages": [
+        95,
+        697,
+        698,
+        699,
+        700,
+        701,
+        707,
+        708,
+        709,
+        710,
+        711,
+        712
+      ],
+      "review": "Complete cross-route vaginal/intrauterine/transdermal/urethral/intracavernosal systemic-exposure and device/transfer policy not established by reviewed chapters. Route-specific partial support does not close the whole original question."
+    },
+    {
+      "module": "genitourinary-medicinal-chemistry",
+      "id": "genitourinary-medchem-126",
+      "concept": "local and systemic delivery",
+      "difficulty": "Applied",
+      "prompt": "Which structure based action best applies to local and systemic delivery?",
+      "choices": [
+        "Map intended site, absorption route, local concentration, systemic concentration, and device duration.",
+        "Identify the ring system and substituent pattern before predicting receptor behavior.",
+        "Classify the structural family before discussing androgenic or mineralocorticoid tendencies.",
+        "Map molecular recognition to the nitric oxide and cGMP pathway before applying clinical rules."
+      ],
+      "answer": 0,
+      "explanation": "Anatomical targeting changes exposure but rarely makes it zero elsewhere.",
+      "reviewHref": "#product-engineering",
+      "status": "pending",
+      "changed": false,
+      "sourcePdfPages": [
+        95,
+        697,
+        698,
+        699,
+        700,
+        701,
+        707,
+        708,
+        709,
+        710,
+        711,
+        712
+      ],
+      "review": "Complete cross-route vaginal/intrauterine/transdermal/urethral/intracavernosal systemic-exposure and device/transfer policy not established by reviewed chapters. Route-specific partial support does not close the whole original question."
+    },
+    {
+      "module": "genitourinary-medicinal-chemistry",
+      "id": "genitourinary-medchem-127",
+      "concept": "local and systemic delivery",
+      "difficulty": "Advanced",
+      "prompt": "Which comparison or assessment is most appropriate for local and systemic delivery?",
+      "choices": [
+        "Compare placement, technique, replacement, expulsion or transfer, local reactions, systemic effects, and user preference.",
+        "Compare configuration, hydroxyl and carbonyl placement, alkyl substitution, lipophilicity, metabolism, and product evidence.",
+        "Compare parent scaffold, substitutions, receptor affinity, active metabolites, half-life, route, and dose.",
+        "Compare scaffold, PDE selectivity, stereochemistry, onset, half-life, CYP3A metabolism, and tissue exposure."
+      ],
+      "answer": 0,
+      "explanation": "Anatomical targeting changes exposure but rarely makes it zero elsewhere.",
+      "reviewHref": "#product-engineering",
+      "status": "pending",
+      "changed": false,
+      "sourcePdfPages": [
+        95,
+        697,
+        698,
+        699,
+        700,
+        701,
+        707,
+        708,
+        709,
+        710,
+        711,
+        712
+      ],
+      "review": "Complete cross-route vaginal/intrauterine/transdermal/urethral/intracavernosal systemic-exposure and device/transfer policy not established by reviewed chapters. Route-specific partial support does not close the whole original question."
+    },
+    {
+      "module": "genitourinary-medicinal-chemistry",
+      "id": "genitourinary-medchem-128",
+      "concept": "local and systemic delivery",
+      "difficulty": "Expert",
+      "prompt": "Which reasoning hazard is most important to prevent with local and systemic delivery?",
+      "choices": [
+        "Calling a product local does not prove absence of systemic risk.",
+        "Calling all steroid-shaped molecules clinically interchangeable ignores receptor selectivity and exposure.",
+        "A generation label alone cannot predict every clinical effect.",
+        "PDE5 inhibition cannot create an erection without upstream sexual stimulation and nitric oxide signaling."
+      ],
+      "answer": 0,
+      "explanation": "Anatomical targeting changes exposure but rarely makes it zero elsewhere.",
+      "reviewHref": "#product-engineering",
+      "status": "pending",
+      "changed": false,
+      "sourcePdfPages": [
+        95,
+        697,
+        698,
+        699,
+        700,
+        701,
+        707,
+        708,
+        709,
+        710,
+        711,
+        712
+      ],
+      "review": "Complete cross-route vaginal/intrauterine/transdermal/urethral/intracavernosal systemic-exposure and device/transfer policy not established by reviewed chapters. Route-specific partial support does not close the whole original question."
+    },
+    {
+      "module": "genitourinary-medicinal-chemistry",
+      "id": "genitourinary-medchem-129",
+      "concept": "alprostadil local prostaglandin signaling",
+      "difficulty": "Foundational",
+      "prompt": "Which principle best characterizes alprostadil local prostaglandin signaling?",
+      "choices": [
+        "Alprostadil is prostaglandin E1 that activates prostaglandin receptors and raises cAMP in erectile smooth muscle after urethral or intracavernosal delivery.",
+        "Lipophilic ligands cross membranes and bind intracellular receptors whose conformational state changes transcription, coregulator recruitment, and tissue response.",
+        "Levonorgestrel is the biologically active levorotatory enantiomer related to racemic norgestrel.",
+        "Sildenafil and vardenafil use related heterocyclic designs with overlapping PDE5 recognition and CYP3A handling."
+      ],
+      "answer": 0,
+      "explanation": "Alprostadil can produce smooth-muscle relaxation without inhibiting PDE5.",
+      "reviewHref": "#product-engineering",
+      "status": "pending",
+      "changed": false,
+      "sourcePdfPages": [
+        95,
+        697,
+        698,
+        699,
+        700,
+        701,
+        707,
+        708,
+        709,
+        710,
+        711,
+        712
+      ],
+      "review": "Book explicitly identifies alprostadil asPGE1 and describes penile injection/urethral delivery, titration and adverse effects. Complete cAMP/PDE5-mechanism distinction or supervised titration/partner/route-safety scope not fully established; original harder topic retained."
+    },
+    {
+      "module": "genitourinary-medicinal-chemistry",
+      "id": "genitourinary-medchem-130",
+      "concept": "alprostadil local prostaglandin signaling",
+      "difficulty": "Applied",
+      "prompt": "Which structure based action best applies to alprostadil local prostaglandin signaling?",
+      "choices": [
+        "Separate its cAMP pathway and local-delivery technique from the nitric oxide, cGMP, and PDE5 pathway.",
+        "Separate receptor binding from the downstream tissue response and time course.",
+        "Preserve the active stereochemical identity when comparing strengths and products.",
+        "Expect shared class hazards while preserving product-specific timing, food, and interaction instructions."
+      ],
+      "answer": 0,
+      "explanation": "Alprostadil can produce smooth-muscle relaxation without inhibiting PDE5.",
+      "reviewHref": "#product-engineering",
+      "status": "pending",
+      "changed": false,
+      "sourcePdfPages": [
+        95,
+        697,
+        698,
+        699,
+        700,
+        701,
+        707,
+        708,
+        709,
+        710,
+        711,
+        712
+      ],
+      "review": "Book explicitly identifies alprostadil asPGE1 and describes penile injection/urethral delivery, titration and adverse effects. Complete cAMP/PDE5-mechanism distinction or supervised titration/partner/route-safety scope not fully established; original harder topic retained."
+    },
+    {
+      "module": "genitourinary-medicinal-chemistry",
+      "id": "genitourinary-medchem-131",
+      "concept": "alprostadil local prostaglandin signaling",
+      "difficulty": "Advanced",
+      "prompt": "Which comparison or assessment is most appropriate for alprostadil local prostaglandin signaling?",
+      "choices": [
+        "Review product route, supervised titration, dose, technique, pain, fibrosis, bleeding, hypotension, erection duration, and partner considerations.",
+        "Review receptor subtype, agonism or antagonism, tissue coregulators, exposure, route, and target-gene response.",
+        "Review enantiomer composition, receptor potency, formulation, local versus systemic delivery, timing, and label.",
+        "Review molecular substituents, PDE6 activity, food effect, CYP3A exposure, QT context, and labeled dose."
+      ],
+      "answer": 0,
+      "explanation": "Alprostadil can produce smooth-muscle relaxation without inhibiting PDE5.",
+      "reviewHref": "#product-engineering",
+      "status": "pending",
+      "changed": false,
+      "sourcePdfPages": [
+        95,
+        697,
+        698,
+        699,
+        700,
+        701,
+        707,
+        708,
+        709,
+        710,
+        711,
+        712
+      ],
+      "review": "Book explicitly identifies alprostadil asPGE1 and describes penile injection/urethral delivery, titration and adverse effects. Complete cAMP/PDE5-mechanism distinction or supervised titration/partner/route-safety scope not fully established; original harder topic retained."
+    },
+    {
+      "module": "genitourinary-medicinal-chemistry",
+      "id": "genitourinary-medchem-132",
+      "concept": "alprostadil local prostaglandin signaling",
+      "difficulty": "Expert",
+      "prompt": "Which reasoning hazard is most important to prevent with alprostadil local prostaglandin signaling?",
+      "choices": [
+        "Calling alprostadil a local PDE5 inhibitor assigns the wrong messenger system and can obscure route-specific safety.",
+        "A binding assay alone cannot establish whole-patient benefit or risk.",
+        "Treating norgestrel and levonorgestrel milligrams as automatically equivalent ignores composition.",
+        "Structural similarity does not make dosing or all off-target effects identical."
+      ],
+      "answer": 0,
+      "explanation": "Alprostadil can produce smooth-muscle relaxation without inhibiting PDE5.",
+      "reviewHref": "#product-engineering",
+      "status": "pending",
+      "changed": false,
+      "sourcePdfPages": [
+        95,
+        697,
+        698,
+        699,
+        700,
+        701,
+        707,
+        708,
+        709,
+        710,
+        711,
+        712
+      ],
+      "review": "Book explicitly identifies alprostadil asPGE1 and describes penile injection/urethral delivery, titration and adverse effects. Complete cAMP/PDE5-mechanism distinction or supervised titration/partner/route-safety scope not fully established; original harder topic retained."
+    },
+    {
+      "module": "genitourinary-medicinal-chemistry",
+      "id": "genitourinary-medchem-133",
+      "concept": "duloxetine indication boundary",
+      "difficulty": "Foundational",
+      "prompt": "Which principle best characterizes duloxetine indication boundary?",
+      "choices": [
+        "Duloxetine inhibits serotonin and norepinephrine transporters and has a plausible continence mechanism, but current US labeling does not include stress urinary incontinence.",
+        "Three-dimensional configuration controls how a steroidal ligand presents hydrogen-bonding and hydrophobic surfaces to its receptor.",
+        "Desogestrel is converted to the active progestin etonogestrel, which is also delivered directly in implants and vaginal products.",
+        "Tadalafil uses a rigid fused heterocyclic scaffold and defined stereochemistry distinct from sildenafil-like structures."
+      ],
+      "answer": 0,
+      "explanation": "Mechanism and approval answer different questions.",
+      "reviewHref": "#product-engineering",
+      "status": "pending",
+      "changed": false,
+      "sourcePdfPages": [
+        95,
+        697,
+        698,
+        699,
+        700,
+        701,
+        707,
+        708,
+        709,
+        710,
+        711,
+        712
+      ],
+      "review": "Historical2023book describes stress-incontinence use asnotFDA-approved. Complete currentUSlabel/SNRImechanism/jurisdiction/constraints claim cannot be newly verified from this historical urinary section alone. No contemporary label opened or easier replacement introduced."
+    },
+    {
+      "module": "genitourinary-medicinal-chemistry",
+      "id": "genitourinary-medchem-134",
+      "concept": "duloxetine indication boundary",
+      "difficulty": "Applied",
+      "prompt": "Which structure based action best applies to duloxetine indication boundary?",
+      "choices": [
+        "Distinguish molecular rationale, evidence, foreign approval, and current US indication before presenting a treatment role.",
+        "Preserve stereochemical identity when comparing active ingredients and metabolites.",
+        "Map administered parent, activation, active species, and route-specific exposure.",
+        "Connect rigidity and metabolism to its durable exposure while using current labeling for dose and interactions."
+      ],
+      "answer": 0,
+      "explanation": "Mechanism and approval answer different questions.",
+      "reviewHref": "#product-engineering",
+      "status": "pending",
+      "changed": false,
+      "sourcePdfPages": [
+        95,
+        697,
+        698,
+        699,
+        700,
+        701,
+        707,
+        708,
+        709,
+        710,
+        711,
+        712
+      ],
+      "review": "Historical2023book describes stress-incontinence use asnotFDA-approved. Complete currentUSlabel/SNRImechanism/jurisdiction/constraints claim cannot be newly verified from this historical urinary section alone. No contemporary label opened or easier replacement introduced."
+    },
+    {
+      "module": "genitourinary-medicinal-chemistry",
+      "id": "genitourinary-medchem-135",
+      "concept": "duloxetine indication boundary",
+      "difficulty": "Advanced",
+      "prompt": "Which comparison or assessment is most appropriate for duloxetine indication boundary?",
+      "choices": [
+        "Review jurisdiction, exact product label, approved conditions, hepatic and renal constraints, blood pressure, serotonergic interactions, discontinuation, and urinary effects.",
+        "Inspect stereocenters, geometric constraints, active metabolites, racemization potential, and product composition.",
+        "Compare oral activation, implant release, vaginal delivery, CYP3A context, duration, and product replacement schedule.",
+        "Review stereochemistry, PDE11 activity, half-life, CYP3A, renal and hepatic limits, nitrate timing, and daily versus as-needed use."
+      ],
+      "answer": 0,
+      "explanation": "Mechanism and approval answer different questions.",
+      "reviewHref": "#product-engineering",
+      "status": "pending",
+      "changed": false,
+      "sourcePdfPages": [
+        95,
+        697,
+        698,
+        699,
+        700,
+        701,
+        707,
+        708,
+        709,
+        710,
+        711,
+        712
+      ],
+      "review": "Historical2023book describes stress-incontinence use asnotFDA-approved. Complete currentUSlabel/SNRImechanism/jurisdiction/constraints claim cannot be newly verified from this historical urinary section alone. No contemporary label opened or easier replacement introduced."
+    },
+    {
+      "module": "genitourinary-medicinal-chemistry",
+      "id": "genitourinary-medchem-136",
+      "concept": "duloxetine indication boundary",
+      "difficulty": "Expert",
+      "prompt": "Which reasoning hazard is most important to prevent with duloxetine indication boundary?",
+      "choices": [
+        "Importing a non-US continence indication into a US curriculum as an approved use converts international regulatory history into misinformation.",
+        "Treating mirror-image or epimeric structures as equivalent can reverse a structure-activity conclusion.",
+        "Calling every etonogestrel product a desogestrel prodrug confuses active ingredient identity.",
+        "A long duration does not remove once-daily limits or nitrate contraindication."
+      ],
+      "answer": 0,
+      "explanation": "Mechanism and approval answer different questions.",
+      "reviewHref": "#product-engineering",
+      "status": "pending",
+      "changed": false,
+      "sourcePdfPages": [
+        95,
+        697,
+        698,
+        699,
+        700,
+        701,
+        707,
+        708,
+        709,
+        710,
+        711,
+        712
+      ],
+      "review": "Historical2023book describes stress-incontinence use asnotFDA-approved. Complete currentUSlabel/SNRImechanism/jurisdiction/constraints claim cannot be newly verified from this historical urinary section alone. No contemporary label opened or easier replacement introduced."
+    },
+    {
+      "module": "genitourinary-medicinal-chemistry",
+      "id": "genitourinary-medchem-137",
+      "concept": "salt and active-moiety conventions",
+      "difficulty": "Foundational",
+      "prompt": "Which principle best characterizes salt and active-moiety conventions?",
+      "choices": [
+        "A salt can improve manufacturing, stability, or dissolution, while the label defines how strength is expressed.",
+        "Oral, transdermal, vaginal, injectable, and intrauterine delivery create different first-pass exposure and concentration profiles from related active moieties.",
+        "Drospirenone is structurally related to spironolactone and has progestogenic, antiandrogenic, and antimineralocorticoid activity.",
+        "Nitrates and guanylate cyclase stimulators increase cGMP production while PDE5 inhibition reduces cGMP breakdown."
+      ],
+      "answer": 0,
+      "explanation": "The product's strength convention already accounts for its defined chemical form.",
+      "reviewHref": "#product-engineering",
+      "status": "pending",
+      "changed": false,
+      "sourcePdfPages": [
+        95,
+        697,
+        698,
+        699,
+        700,
+        701,
+        707,
+        708,
+        709,
+        710,
+        711,
+        712
+      ],
+      "review": "Complete salt/hydrate/active-moiety strength convention and chemistry/label-based comparison not established by the reviewed formulation/urinary/sexual chapters. Retained pending."
+    },
+    {
+      "module": "genitourinary-medicinal-chemistry",
+      "id": "genitourinary-medchem-138",
+      "concept": "salt and active-moiety conventions",
+      "difficulty": "Applied",
+      "prompt": "Which structure based action best applies to salt and active-moiety conventions?",
+      "choices": [
+        "Use the regulatory label rather than molecular-weight improvisation when comparing strengths.",
+        "Treat route and formulation as part of the medicine rather than packaging.",
+        "Connect structural ancestry to potassium and interaction assessment without exaggerating its diuretic role.",
+        "Recognize the pathway convergence as a contraindicated hypotension risk."
+      ],
+      "answer": 0,
+      "explanation": "The product's strength convention already accounts for its defined chemical form.",
+      "reviewHref": "#product-engineering",
+      "status": "pending",
+      "changed": false,
+      "sourcePdfPages": [
+        95,
+        697,
+        698,
+        699,
+        700,
+        701,
+        707,
+        708,
+        709,
+        710,
+        711,
+        712
+      ],
+      "review": "Complete salt/hydrate/active-moiety strength convention and chemistry/label-based comparison not established by the reviewed formulation/urinary/sexual chapters. Retained pending."
+    },
+    {
+      "module": "genitourinary-medicinal-chemistry",
+      "id": "genitourinary-medchem-139",
+      "concept": "salt and active-moiety conventions",
+      "difficulty": "Advanced",
+      "prompt": "Which comparison or assessment is most appropriate for salt and active-moiety conventions?",
+      "choices": [
+        "Verify salt, hydrate, active-moiety basis, concentration, route, dosage form, and manufacturer instructions.",
+        "Compare absorption surface, hepatic first pass, local exposure, depot behavior, peak-to-trough pattern, and patient factors.",
+        "Review renal, adrenal, hepatic, potassium, interacting medicines, estrogen partner, and product-specific regimen.",
+        "Review all nitrate forms, riociguat, timing, blood pressure, emergency planning, and product-specific washout guidance."
+      ],
+      "answer": 0,
+      "explanation": "The product's strength convention already accounts for its defined chemical form.",
+      "reviewHref": "#product-engineering",
+      "status": "pending",
+      "changed": false,
+      "sourcePdfPages": [
+        95,
+        697,
+        698,
+        699,
+        700,
+        701,
+        707,
+        708,
+        709,
+        710,
+        711,
+        712
+      ],
+      "review": "Complete salt/hydrate/active-moiety strength convention and chemistry/label-based comparison not established by the reviewed formulation/urinary/sexual chapters. Retained pending."
+    },
+    {
+      "module": "genitourinary-medicinal-chemistry",
+      "id": "genitourinary-medchem-140",
+      "concept": "salt and active-moiety conventions",
+      "difficulty": "Expert",
+      "prompt": "Which reasoning hazard is most important to prevent with salt and active-moiety conventions?",
+      "choices": [
+        "Unrequested salt conversions can create dosing errors.",
+        "Using oral exposure assumptions for a local or transdermal product can misstate efficacy and safety.",
+        "Using the antimineralocorticoid label as proof of clinically useful diuresis is an overreach.",
+        "Looking only for one brand name can miss a dangerous mechanistic interaction."
+      ],
+      "answer": 0,
+      "explanation": "The product's strength convention already accounts for its defined chemical form.",
+      "reviewHref": "#product-engineering",
+      "status": "pending",
+      "changed": false,
+      "sourcePdfPages": [
+        95,
+        697,
+        698,
+        699,
+        700,
+        701,
+        707,
+        708,
+        709,
+        710,
+        711,
+        712
+      ],
+      "review": "Complete salt/hydrate/active-moiety strength convention and chemistry/label-based comparison not established by the reviewed formulation/urinary/sexual chapters. Retained pending."
+    },
+    {
+      "module": "genitourinary-medicinal-chemistry",
+      "id": "genitourinary-medchem-141",
+      "concept": "structure-to-clinic boundary",
+      "difficulty": "Foundational",
+      "prompt": "Which principle best characterizes structure-to-clinic boundary?",
+      "choices": [
+        "Medicinal chemistry can predict charge, metabolism, target recognition, and delivery challenges but cannot establish indication, dose, outcomes, or individual suitability alone.",
+        "The 17 alpha ethynyl group of ethinyl estradiol reduces rapid oxidation at C17 and supports oral activity relative to unmodified estradiol.",
+        "Finasteride and dutasteride use steroid-like scaffolds to inhibit conversion of testosterone to DHT through tight enzyme interactions.",
+        "Bladder antimuscarinics generally combine a cationic center with hydrophobic groups at a spacing compatible with muscarinic receptor binding."
+      ],
+      "answer": 0,
+      "explanation": "Clinical decisions require evidence beyond molecular plausibility.",
+      "reviewHref": "#product-engineering",
+      "status": "pending",
+      "changed": false,
+      "sourcePdfPages": [
+        95,
+        697,
+        698,
+        699,
+        700,
+        701,
+        707,
+        708,
+        709,
+        710,
+        711,
+        712
+      ],
+      "review": "Generic medicinal-chemistry/evidence-boundary synthesis and complete molecular/scaffold/clinical assessment list not established by this clinical-source scope. Current label/structure/reference reconciliation remains pending."
+    },
+    {
+      "module": "genitourinary-medicinal-chemistry",
+      "id": "genitourinary-medchem-142",
+      "concept": "structure-to-clinic boundary",
+      "difficulty": "Applied",
+      "prompt": "Which structure based action best applies to structure-to-clinic boundary?",
+      "choices": [
+        "Use chemistry to generate a hypothesis, then verify it with labeling, evidence, and patient data.",
+        "Connect the ethynyl substitution to metabolic persistence without treating it as a universal safety improvement.",
+        "Relate enzyme inhibition to gradual DHT reduction and tissue remodeling rather than immediate smooth-muscle relaxation.",
+        "Identify charge state, hydrophobic domains, flexibility, and stereochemistry before predicting distribution."
+      ],
+      "answer": 0,
+      "explanation": "Clinical decisions require evidence beyond molecular plausibility.",
+      "reviewHref": "#product-engineering",
+      "status": "pending",
+      "changed": false,
+      "sourcePdfPages": [
+        95,
+        697,
+        698,
+        699,
+        700,
+        701,
+        707,
+        708,
+        709,
+        710,
+        711,
+        712
+      ],
+      "review": "Generic medicinal-chemistry/evidence-boundary synthesis and complete molecular/scaffold/clinical assessment list not established by this clinical-source scope. Current label/structure/reference reconciliation remains pending."
+    },
+    {
+      "module": "genitourinary-medicinal-chemistry",
+      "id": "genitourinary-medchem-143",
+      "concept": "structure-to-clinic boundary",
+      "difficulty": "Advanced",
+      "prompt": "Which comparison or assessment is most appropriate for structure-to-clinic boundary?",
+      "choices": [
+        "Integrate scaffold, active species, route, formulation, organ function, interactions, current label, guideline role, and preference.",
+        "Compare C17 substitution, aromatic A ring, hydroxyl pattern, first-pass effects, protein synthesis, and product dose.",
+        "Compare scaffold, isoenzyme profile, onset, half-life, prostate phenotype, PSA trend, fertility, and exposure.",
+        "Compare pKa, permanent versus pH-dependent charge, lipophilicity, receptor profile, metabolism, and formulation."
+      ],
+      "answer": 0,
+      "explanation": "Clinical decisions require evidence beyond molecular plausibility.",
+      "reviewHref": "#product-engineering",
+      "status": "pending",
+      "changed": false,
+      "sourcePdfPages": [
+        95,
+        697,
+        698,
+        699,
+        700,
+        701,
+        707,
+        708,
+        709,
+        710,
+        711,
+        712
+      ],
+      "review": "Generic medicinal-chemistry/evidence-boundary synthesis and complete molecular/scaffold/clinical assessment list not established by this clinical-source scope. Current label/structure/reference reconciliation remains pending."
+    },
+    {
+      "module": "genitourinary-medicinal-chemistry",
+      "id": "genitourinary-medchem-144",
+      "concept": "structure-to-clinic boundary",
+      "difficulty": "Expert",
+      "prompt": "Which reasoning hazard is most important to prevent with structure-to-clinic boundary?",
+      "choices": [
+        "Structure-only prescribing overstates what molecular features can prove.",
+        "More oral persistence can also amplify hepatic effects and cannot be equated with safer exposure.",
+        "Expecting same-day symptom relief confuses enzyme inhibition with alpha blockade.",
+        "A shared pharmacophore does not make central exposure or tolerability identical."
+      ],
+      "answer": 0,
+      "explanation": "Clinical decisions require evidence beyond molecular plausibility.",
+      "reviewHref": "#product-engineering",
+      "status": "pending",
+      "changed": false,
+      "sourcePdfPages": [
+        95,
+        697,
+        698,
+        699,
+        700,
+        701,
+        707,
+        708,
+        709,
+        710,
+        711,
+        712
+      ],
+      "review": "Generic medicinal-chemistry/evidence-boundary synthesis and complete molecular/scaffold/clinical assessment list not established by this clinical-source scope. Current label/structure/reference reconciliation remains pending."
+    }
+  ],
+  "teachingReview": [
+    {
+      "lesson": "product-engineering",
+      "heading": "Protect release-system integrity",
+      "body": "Matrix, membrane, and osmotic systems control input rate. Crushing, chewing, splitting, or opening can defeat that control, so dosage-form manipulation follows exact manufacturer instructions rather than molecule-level intuition. The book identifies Ditropan XL as an osmotic-release oxybutynin product that can leave an empty shell in the stool. A visible ghost shell can remain after the drug has been released; it does not by itself show that the full dose was lost. Use this product-specific counseling example without assuming that every extended-release product uses the same delivery system.",
+      "status": "pending complete original body",
+      "expandedSourceVerifiedClauses": " The book identifies Ditropan XL as an osmotic-release oxybutynin product that can leave an empty shell in the stool. A visible ghost shell can remain after the drug has been released; it does not by itself show that the full dose was lost. Use this product-specific counseling example without assuming that every extended-release product uses the same delivery system.",
+      "review": "Original harder matrix/membrane/local systemic exposure/cAMP/current-label/salt and structure claims preserved. Only appended DitropanXLosmotic/empty-shell counseling is newly source-verified; whole body remains pending."
+    },
+    {
+      "lesson": "product-engineering",
+      "heading": "Map local and systemic exposure",
+      "body": "Vaginal rings, intrauterine systems, transdermal patches, urethral pellets, and intracavernosal injections target anatomy differently but can still produce systemic exposure and class effects.",
+      "status": "pending complete original body",
+      "expandedSourceVerifiedClauses": null,
+      "review": "Original harder matrix/membrane/local systemic exposure/cAMP/current-label/salt and structure claims preserved. Only appended DitropanXLosmotic/empty-shell counseling is newly source-verified; whole body remains pending."
+    },
+    {
+      "lesson": "product-engineering",
+      "heading": "Use prostaglandin chemistry locally",
+      "body": "Alprostadil is prostaglandin E1 delivered directly through intracavernosal injection or a urethral system. It activates prostaglandin receptors and raises cAMP in smooth muscle, producing relaxation without requiring nitric oxide or PDE5 inhibition. Route, titration, penile pain, fibrosis, hypotension, bleeding, and the four-hour emergency threshold remain product and patient specific.",
+      "status": "pending complete original body",
+      "expandedSourceVerifiedClauses": null,
+      "review": "Original harder matrix/membrane/local systemic exposure/cAMP/current-label/salt and structure claims preserved. Only appended DitropanXLosmotic/empty-shell counseling is newly source-verified; whole body remains pending."
+    },
+    {
+      "lesson": "product-engineering",
+      "heading": "Separate international from US use",
+      "body": "Duloxetine is an SNRI whose aromatic and amine features support serotonin and norepinephrine transporter inhibition after oral exposure. It has been used for stress urinary incontinence outside the United States, but current US duloxetine labeling does not include that indication. A mechanistic rationale or foreign approval is not a US indication.",
+      "status": "pending complete original body",
+      "expandedSourceVerifiedClauses": null,
+      "review": "Original harder matrix/membrane/local systemic exposure/cAMP/current-label/salt and structure claims preserved. Only appended DitropanXLosmotic/empty-shell counseling is newly source-verified; whole body remains pending."
+    },
+    {
+      "lesson": "product-engineering",
+      "heading": "Read salts and strengths correctly",
+      "body": "Salt formation can improve stability, crystallinity, or dissolution. The regulatory label defines whether strength is expressed as salt or active moiety, and unsupported molecular-weight conversion creates error rather than precision.",
+      "status": "pending complete original body",
+      "expandedSourceVerifiedClauses": null,
+      "review": "Original harder matrix/membrane/local systemic exposure/cAMP/current-label/salt and structure claims preserved. Only appended DitropanXLosmotic/empty-shell counseling is newly source-verified; whole body remains pending."
+    },
+    {
+      "lesson": "product-engineering",
+      "heading": "Stop where structure stops",
+      "body": "Structure can predict charge, likely metabolism, target recognition, and formulation challenges. It cannot by itself establish indication, dose, effectiveness, pregnancy safety, or suitability for an individual patient.",
+      "status": "pending complete original body",
+      "expandedSourceVerifiedClauses": null,
+      "review": "Original harder matrix/membrane/local systemic exposure/cAMP/current-label/salt and structure claims preserved. Only appended DitropanXLosmotic/empty-shell counseling is newly source-verified; whole body remains pending."
+    }
+  ],
+  "embeddedCheckReview": [
+    {
+      "lesson": "product-engineering",
+      "question": {
+        "question": "What is the correct final step after making a structure based pharmacologic prediction?",
+        "choices": [
+          "Verify it with current labeling, clinical evidence, and patient-specific data",
+          "Convert every salt by molecular weight",
+          "Assume all routes are equivalent",
+          "Use the prediction as the approved dose"
+        ],
+        "answer": 0,
+        "rationale": "Medicinal chemistry generates hypotheses that require regulatory and clinical verification.",
+        "reviewHref": "#product-engineering"
+      },
+      "status": "pending unchanged",
+      "review": "Complete structure/label/clinical boundary not fully established by these clinical formulation chapters."
+    }
+  ],
+  "broaderSelection": {
+    "expandedOriginalPrimaryQuestions": 24,
+    "sourceVerifiedQuestions": 3,
+    "correctedQuestions": 3,
+    "pendingOriginalPrimaryQuestions": 21,
+    "pendingQuestionIds": [
+      "genitourinary-medchem-123",
+      "genitourinary-medchem-125",
+      "genitourinary-medchem-126",
+      "genitourinary-medchem-127",
+      "genitourinary-medchem-128",
+      "genitourinary-medchem-129",
+      "genitourinary-medchem-130",
+      "genitourinary-medchem-131",
+      "genitourinary-medchem-132",
+      "genitourinary-medchem-133",
+      "genitourinary-medchem-134",
+      "genitourinary-medchem-135",
+      "genitourinary-medchem-136",
+      "genitourinary-medchem-137",
+      "genitourinary-medchem-138",
+      "genitourinary-medchem-139",
+      "genitourinary-medchem-140",
+      "genitourinary-medchem-141",
+      "genitourinary-medchem-142",
+      "genitourinary-medchem-143",
+      "genitourinary-medchem-144"
+    ],
+    "allOtherParentQuestionsSourcePending": 120,
+    "selectionMethod": "Complete24-question product-engineering lesson groups, not only lexical feeding candidate123; six corresponding bodies and one check reviewed."
+  },
+  "existingToxicologyEvidenceReused": {
+    "candidateId": "tox-lead-who-label-boundary",
+    "completePriorModuleAudit": "toxicology-completion.json",
+    "bookCoverage": "toxicology-chapter-coverage.json",
+    "priorModuleStatus": "verified",
+    "currentWorkingAndHEADHashesMatchCompletedReview": true,
+    "sourceHashes": {
+      "src/data/modules/toxicologyAntidotes.js": "f1dab1c4db7e9842077a921f36886633a17e842a71d4ec7ee571a0be088ecc05",
+      "src/data/questionBanks/toxicologyAntidotes.js": "71c15e9429b7ac18097d1911a9b2ce38aa43ca36bb5daf9e715aae0844319c79",
+      "src/components/learn/ToxicologyAntidotesVisual.jsx": "e063afed4b094fc1c6f410020b4ae24f3323dc645419ad039f7703a8b5623c6b"
+    },
+    "scope": "Existing completed28lesson/266question clinical audit covers the lead/WHO/USlabel route safeguards. No toxicology content changed, no new source read or new book-only question closure/count claimed. Chapter81and toxicology module retain their verified status."
+  },
+  "integration": {
+    "releasedBankQuestions": 144,
+    "originalBodies": 36,
+    "bodiesAfter": 36,
+    "originalChecks": 8,
+    "wholeParentModuleVerified": false,
+    "cumulative": "All1180objects unchanged; five genitourinary cumulative items remain pending and are runtime-tested only.",
+    "metadataReferencesFiguresClinicallyVerified": false
+  },
+  "coverage": {
+    "questionsSourceVerified": 3,
+    "questionsCorrected": 3,
+    "wholeBodiesVerified": 0,
+    "expandedBodies": 1,
+    "newBodies": 0,
+    "newSourceVerifiedBodyClauses": true,
+    "embeddedChecksVerified": 0,
+    "figuresVerified": 0,
+    "metadataVerified": false,
+    "wholeParentModuleVerified": false,
+    "broaderEnteralBookVerifiedQuestionCountAfter": 116,
+    "sourceVerifiedCumulativeItemsThisUnit": 0,
+    "runningAssessmentCalculations": 677,
+    "runningSeparateSourceExamples": 98,
+    "enteralNutritionCountsUnchanged": {
+      "questionsVerified": 66,
+      "questionsTotal": 108,
+      "bodiesVerified": 16,
+      "bodiesTotal": 36,
+      "checksVerified": 2,
+      "checksTotal": 6,
+      "figuresVerified": 0,
+      "figuresTotal": 6
+    }
+  },
+  "validation": {
+    "technical": {
+      "status": "passed",
+      "modules": [
+        {
+          "slug": "genitourinary-medicinal-chemistry",
+          "bank": 144,
+          "bodies": 36,
+          "changedQuestions": [
+            {
+              "id": "genitourinary-medchem-121",
+              "concept": "extended-release dosage form integrity",
+              "difficulty": "Foundational",
+              "prompt": "Which principle best characterizes extended-release dosage form integrity?",
+              "choices": [
+                "Extended-release tablets use a delivery system to control input rate and must be administered according to product instructions.",
+                "Release rate is irrelevant once the active molecule has been identified",
+                "Any extended-release tablet can be crushed if its total milligram dose is unchanged",
+                "A visible empty shell proves that the entire dose remained unreleased"
+              ],
+              "answer": 0,
+              "explanation": "The book explains that controlled-release dosage forms regulate drug delivery over time, and that crushing or chewing can release the contents at once. It also describes an empty shell after drug release. The molecule and total milligram amount alone do not describe the delivered exposure; use the exact product instructions.",
+              "reviewHref": "#product-engineering"
+            },
+            {
+              "id": "genitourinary-medchem-122",
+              "concept": "extended-release dosage form integrity",
+              "difficulty": "Applied",
+              "prompt": "Which structure based action best applies to extended-release dosage form integrity?",
+              "choices": [
+                "Verify whether a dosage form can be split, crushed, chewed, or opened before manipulation.",
+                "Split every extended-release tablet whenever a score line is visible",
+                "Crush the tablet when swallowing is difficult without checking its release system",
+                "Apply one capsule product's opening instructions to every extended-release product"
+              ],
+              "answer": 0,
+              "explanation": "The book generally warns against crushing or chewing long-acting dosage forms, but identifies product-specific examples that may be opened or divided under their own instructions. Verify the exact dosage form before manipulation. A feeding tube or swallowing difficulty is a reason to review alternatives, not permission to defeat release control.",
+              "reviewHref": "#product-engineering"
+            },
+            {
+              "id": "genitourinary-medchem-124",
+              "concept": "extended-release dosage form integrity",
+              "difficulty": "Expert",
+              "prompt": "Which reasoning hazard is most important to prevent with extended-release dosage form integrity?",
+              "choices": [
+                "Changing the dosage form can defeat release control even when the molecule remains intact.",
+                "Checking the exact product instructions before manipulating the dosage form",
+                "Recognizing that an emptied Ditropan XL shell may appear in stool after drug release",
+                "Reviewing an appropriate alternative dosage form when swallowing or tube delivery is difficult"
+              ],
+              "answer": 0,
+              "explanation": "The book links long-acting dosage forms with controlled release and warns that crushing or chewing can release drug at once. Ditropan XL is its urinary example of an osmotic system that can leave an empty shell. Preserving the active molecule does not preserve the designed release process.",
+              "reviewHref": "#product-engineering"
+            }
+          ],
+          "verifiedQuestions": [
+            {
+              "id": "genitourinary-medchem-121",
+              "concept": "extended-release dosage form integrity",
+              "difficulty": "Foundational",
+              "prompt": "Which principle best characterizes extended-release dosage form integrity?",
+              "choices": [
+                "Extended-release tablets use a delivery system to control input rate and must be administered according to product instructions.",
+                "Release rate is irrelevant once the active molecule has been identified",
+                "Any extended-release tablet can be crushed if its total milligram dose is unchanged",
+                "A visible empty shell proves that the entire dose remained unreleased"
+              ],
+              "answer": 0,
+              "explanation": "The book explains that controlled-release dosage forms regulate drug delivery over time, and that crushing or chewing can release the contents at once. It also describes an empty shell after drug release. The molecule and total milligram amount alone do not describe the delivered exposure; use the exact product instructions.",
+              "reviewHref": "#product-engineering"
+            },
+            {
+              "id": "genitourinary-medchem-122",
+              "concept": "extended-release dosage form integrity",
+              "difficulty": "Applied",
+              "prompt": "Which structure based action best applies to extended-release dosage form integrity?",
+              "choices": [
+                "Verify whether a dosage form can be split, crushed, chewed, or opened before manipulation.",
+                "Split every extended-release tablet whenever a score line is visible",
+                "Crush the tablet when swallowing is difficult without checking its release system",
+                "Apply one capsule product's opening instructions to every extended-release product"
+              ],
+              "answer": 0,
+              "explanation": "The book generally warns against crushing or chewing long-acting dosage forms, but identifies product-specific examples that may be opened or divided under their own instructions. Verify the exact dosage form before manipulation. A feeding tube or swallowing difficulty is a reason to review alternatives, not permission to defeat release control.",
+              "reviewHref": "#product-engineering"
+            },
+            {
+              "id": "genitourinary-medchem-124",
+              "concept": "extended-release dosage form integrity",
+              "difficulty": "Expert",
+              "prompt": "Which reasoning hazard is most important to prevent with extended-release dosage form integrity?",
+              "choices": [
+                "Changing the dosage form can defeat release control even when the molecule remains intact.",
+                "Checking the exact product instructions before manipulating the dosage form",
+                "Recognizing that an emptied Ditropan XL shell may appear in stool after drug release",
+                "Reviewing an appropriate alternative dosage form when swallowing or tube delivery is difficult"
+              ],
+              "answer": 0,
+              "explanation": "The book links long-acting dosage forms with controlled release and warns that crushing or chewing can release drug at once. Ditropan XL is its urinary example of an osmotic system that can leave an empty shell. Preserving the active molecule does not preserve the designed release process.",
+              "reviewHref": "#product-engineering"
+            }
+          ],
+          "retainedBodies": [
+            {
+              "lesson": "product-engineering",
+              "heading": "Protect release-system integrity",
+              "body": "Matrix, membrane, and osmotic systems control input rate. Crushing, chewing, splitting, or opening can defeat that control, so dosage-form manipulation follows exact manufacturer instructions rather than molecule-level intuition. The book identifies Ditropan XL as an osmotic-release oxybutynin product that can leave an empty shell in the stool. A visible ghost shell can remain after the drug has been released; it does not by itself show that the full dose was lost. Use this product-specific counseling example without assuming that every extended-release product uses the same delivery system.",
+              "wholeBodySourceVerified": false
+            }
+          ],
+          "unchangedOtherBankObjects": 141
+        }
+      ],
+      "preservation": {
+        "all144IdsPromptsKeysCorrectTextsAnchorsPreserved": true,
+        "unchangedOtherBankObjects": 141,
+        "all36OriginalBodyTextsPreserved": true,
+        "oneBodyExpandedWithSourceVerifiedClauses": true,
+        "unchangedOtherBodies": 35,
+        "allEightChecksMetadataReferencesFiguresPreserved": true,
+        "all1180CumulativeObjectsUnchanged": true,
+        "targetOnlyWorkingCodeEdits": true
+      },
+      "runningAssessmentChecks": 677,
+      "runningSeparateSourceExamples": 98,
+      "newAssessmentCalculations": 0,
+      "newSourceExerciseExamples": 0,
+      "contentHashes": {
+        "src/data/modules/genitourinaryMedicinalChemistry.js": "0f1091baa9d668355b38303240cb4efd16d899d6cf08683ddbbf5c9f19a89c0f",
+        "src/data/questionBanks/genitourinaryMedicinalChemistry.js": "c906f1080c0bfedcad7b6d38f5b1765d86bfcea08b6835558d41d4572c9aa462"
+      }
+    },
+    "focusedChecks": {
+      "modules": 1,
+      "questions": 144,
+      "hardErrors": [],
+      "sourceGaps": [],
+      "sizeAdvisories": [],
+      "thinLessons": [],
+      "weakestModules": [
+        {
+          "module": "genitourinary-medicinal-chemistry",
+          "lessons": 8,
+          "questions": 144,
+          "minimumLessonCoverage": 16
+        }
+      ]
+    },
+    "build": "Isolated HEAD-derived567-page production build passed.",
+    "browser": {
+      "status": "passed",
+      "results": [
+        {
+          "module": "genitourinary-medicinal-chemistry",
+          "width": 1440,
+          "renderedBodies": 36,
+          "expandedBodyViews": 1,
+          "bankItemsCorrectWrong": 3,
+          "cumulativeRuntimeItems": 5,
+          "sourceVerifiedCumulativeInThisUnit": 0,
+          "cumulativeClinicalSourceClosure": false,
+          "groups": 3,
+          "remediationAndSavedProgress": true
+        },
+        {
+          "module": "genitourinary-medicinal-chemistry",
+          "width": 390,
+          "renderedBodies": 36,
+          "expandedBodyViews": 1,
+          "bankItemsCorrectWrong": 3,
+          "cumulativeRuntimeItems": 5,
+          "sourceVerifiedCumulativeInThisUnit": 0,
+          "cumulativeClinicalSourceClosure": false,
+          "groups": 3,
+          "remediationAndSavedProgress": true
+        }
+      ],
+      "pageErrors": []
+    },
+    "manualRenderedReview": {
+      "status": "passed",
+      "pairs": 4,
+      "widths": [
+        1440,
+        390
+      ],
+      "viewsReviewed": [
+        "question-genitourinary-medchem-121",
+        "question-genitourinary-medchem-122",
+        "question-genitourinary-medchem-124",
+        "body-genitourinary-medicinal-chemistry-0"
+      ],
+      "scope": "Three source-closed questions and one expanded body viewed. All36bodies matchedDOM. Correct/wrong feedback, review links, saved progress and320pxoverflow passed. Five parent cumulative items runtime-tested only. Whole expanded body remains pending.",
+      "sourceRecomparison": "Final121/122/124keys/alternatives/explanations compared again with completePDF95formulation table. Appended DitropanXLosmotic/empty-shell counseling compared with710table,712counseling and95ghost-shell explanation. No full matrix/tube policy, salt/structural claim or contemporary label status newly closed."
+    },
+    "structuralScopeNote": "Focused structural checker covers144questions/anchors/references. Empty sourceGaps is not clinical closure.24original questions reviewed;21pending."
+  },
+  "release": {
+    "branch": "audit/rxprep-content-2026-09-24",
+    "commit": "pending",
+    "push": "pending",
+    "production": "not verified"
+  },
+  "nextAction": "Continue remaining broader feeding/administration antimicrobial topic groups: acute-bacterial-meningitis095, hospital-ventilator-associated-pneumonia157, rickettsial079/085-088, Lyme062/063 and tularemia079/087/091, then hepatic nutrition candidates. Expand to full original associated groups and supplied-book sections. Existing toxicology lead/WHO candidate is already covered by matching completed review and is not newly counted. Keep21genitourinary selected questions, six original bodies/check/figures/current metadata pending. Full EN, pediatricPN and fluid/calcium dependencies remain; Chapter1entry15/Chapter11 reviewing. No outsideEN source opened."
+}

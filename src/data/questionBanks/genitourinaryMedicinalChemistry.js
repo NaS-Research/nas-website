@@ -57,7 +57,7 @@ function distractors(index, field) {
   return [5, 13, 21].map((offset) => concepts[(index + offset) % concepts.length][field]);
 }
 
-export const genitourinaryMedicinalChemistryQuestionBank = concepts.flatMap((concept, conceptIndex) =>
+const originalGenitourinaryMedicinalChemistryQuestionBank = concepts.flatMap((concept, conceptIndex) =>
   dimensions.map(([field, prefix], dimensionIndex) => ({
     id: `genitourinary-medchem-${String(conceptIndex * 4 + dimensionIndex + 1).padStart(3, "0")}`,
     concept: concept.name,
@@ -69,3 +69,34 @@ export const genitourinaryMedicinalChemistryQuestionBank = concepts.flatMap((con
     reviewHref: `#${concept.lesson}`,
   })),
 );
+
+const sourceReviewedReleaseQuestions = {
+  "genitourinary-medchem-121": {
+    "choices": [
+      "Extended-release tablets use a delivery system to control input rate and must be administered according to product instructions.",
+      "Release rate is irrelevant once the active molecule has been identified",
+      "Any extended-release tablet can be crushed if its total milligram dose is unchanged",
+      "A visible empty shell proves that the entire dose remained unreleased"
+    ],
+    "explanation": "The book explains that controlled-release dosage forms regulate drug delivery over time, and that crushing or chewing can release the contents at once. It also describes an empty shell after drug release. The molecule and total milligram amount alone do not describe the delivered exposure; use the exact product instructions."
+  },
+  "genitourinary-medchem-122": {
+    "choices": [
+      "Verify whether a dosage form can be split, crushed, chewed, or opened before manipulation.",
+      "Split every extended-release tablet whenever a score line is visible",
+      "Crush the tablet when swallowing is difficult without checking its release system",
+      "Apply one capsule product's opening instructions to every extended-release product"
+    ],
+    "explanation": "The book generally warns against crushing or chewing long-acting dosage forms, but identifies product-specific examples that may be opened or divided under their own instructions. Verify the exact dosage form before manipulation. A feeding tube or swallowing difficulty is a reason to review alternatives, not permission to defeat release control."
+  },
+  "genitourinary-medchem-124": {
+    "choices": [
+      "Changing the dosage form can defeat release control even when the molecule remains intact.",
+      "Checking the exact product instructions before manipulating the dosage form",
+      "Recognizing that an emptied Ditropan XL shell may appear in stool after drug release",
+      "Reviewing an appropriate alternative dosage form when swallowing or tube delivery is difficult"
+    ],
+    "explanation": "The book links long-acting dosage forms with controlled release and warns that crushing or chewing can release drug at once. Ditropan XL is its urinary example of an osmotic system that can leave an empty shell. Preserving the active molecule does not preserve the designed release process."
+  }
+};
+export const genitourinaryMedicinalChemistryQuestionBank = originalGenitourinaryMedicinalChemistryQuestionBank.map((question) => sourceReviewedReleaseQuestions[question.id] ? { ...question, ...sourceReviewedReleaseQuestions[question.id] } : question);
