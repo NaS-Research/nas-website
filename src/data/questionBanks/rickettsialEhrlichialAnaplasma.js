@@ -50,5 +50,26 @@ const cases = [
   ["severity-triage", "Fever persists 72 hours after correctly dosed doxycycline. What should happen?", ["Reassess diagnosis, coinfection, complications, delivery, and dangerous alternatives", "Assume resistance and double indefinitely", "Ignore the fever", "Stop all evaluation"], "Expected response is usually rapid, so persistent fever needs a structured audit."],
 ].map((item, index) => ({ id: `rickettsial-${String(generated.length + index + 1).padStart(3, "0")}`, lesson: item[0], question: item[1], choices: item[2], answer: 0, rationale: item[3], reviewHref: `#${item[0]}` }));
 
-export const rickettsialEhrlichialAnaplasmaQuestionBank = [...generated, ...cases];
+const bookAdministrationRepairs = {
+  "rickettsial-086": {
+    "choices": [
+      "Protect absorption by separating polyvalent cations and prevent esophageal injury with water and upright posture",
+      "Give doxycycline together with an iron supplement to improve absorption",
+      "Take the capsule with very little water and lie down immediately",
+      "Assume food prevents every mineral-related absorption interaction"
+    ],
+    "rationale": "The book describes chelation with polyvalent cations and esophageal irritation with oral doxycycline. Separate interfering mineral products, use water with tablets or capsules, and remain upright after a dose. Food used to reduce gastrointestinal irritation does not remove the cation interaction."
+  },
+  "rickettsial-088": {
+    "choices": [
+      "Allowing a mineral supplement to accompany every doxycycline dose",
+      "Separating doxycycline from an interfering iron product",
+      "Taking an oral tablet or capsule with water",
+      "Remaining upright after an oral doxycycline dose"
+    ],
+    "rationale": "Mineral products can chelate tetracyclines and reduce absorption. Routine coadministration with an interfering supplement risks inadequate delivery. The other choices follow the described separation or esophageal-protection instructions."
+  }
+};
+
+export const rickettsialEhrlichialAnaplasmaQuestionBank = [...generated, ...cases].map(question => bookAdministrationRepairs[question.id] ? { ...question, ...bookAdministrationRepairs[question.id] } : question);
 if (rickettsialEhrlichialAnaplasmaQuestionBank.length < 100) throw new Error(`Rickettsial question bank must contain at least 100 questions, found ${rickettsialEhrlichialAnaplasmaQuestionBank.length}.`);

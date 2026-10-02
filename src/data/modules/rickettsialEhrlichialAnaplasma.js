@@ -109,7 +109,7 @@ export const rickettsialEhrlichialAnaplasmaModule = {
         ["Dose adults and larger children", "Adults and patients at least 45 kg receive doxycycline 100 mg orally or IV every 12 hours."],
         ["Calculate the pediatric dose", "Children below 45 kg receive 2.2 mg/kg per dose every 12 hours, with a maximum of 100 mg per dose. The weight based amount is per dose, not per day."],
         ["Connect mechanism to organism biology", "Doxycycline reversibly binds the bacterial 30S ribosomal subunit and blocks aminoacyl tRNA entry, interrupting protein synthesis in intracellular pathogens."],
-        ["Protect exposure", "Separate iron, calcium, magnesium, aluminum, bismuth, and interacting tube feeds. Give with water, maintain upright posture, and counsel about photosensitivity."]
+        ["Protect exposure", "Separate iron, calcium, magnesium, aluminum, bismuth, and interacting tube feeds. Give with water, maintain upright posture, and counsel about photosensitivity. For an oral doxycycline tablet or capsule, use 8 oz of water and remain upright for at least 30 minutes after the dose to reduce esophageal irritation. Review interfering mineral products separately; this instruction does not establish a product-specific feeding-tube technique or feeding interruption interval."]
       ],
       ["Do not wait for confirmation.", "Adult exposure is every 12 hours.", "Pediatric dosing is 2.2 mg/kg per dose.", "Chelation can undermine enteral treatment."],
       check("What is the doxycycline dose for a 30 kg child with suspected RMSF?", ["66 mg every 12 hours", "66 mg once daily", "220 mg every 12 hours", "No doxycycline before age eight"], "Multiply 30 kg by 2.2 mg/kg for each twice daily dose.", "empiric-doxycycline")

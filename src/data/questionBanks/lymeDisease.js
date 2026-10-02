@@ -63,5 +63,26 @@ const cases = [
   ["integrated-cases", "A positive Lyme antibody result appears in a patient with low exposure probability and no objective manifestations. What is the best next step?", ["Reassess pretest probability, assay sequence, prior infection, and alternate causes", "Diagnose active disseminated disease automatically", "Begin indefinite antibiotics", "Use the result as proof of treatment failure"], "Testing is interpreted through clinical probability and the validated algorithm."]
 ].map((item, index) => ({ id: `lyme-${String(generated.length + index + 1).padStart(3, "0")}`, lesson: item[0], question: item[1], choices: item[2], answer: 0, rationale: item[3], reviewHref: `#${item[0]}` }));
 
-export const lymeDiseaseQuestionBank = [...generated, ...cases];
+const bookAdministrationRepairs = {
+  "lyme-061": {
+    "choices": [
+      "Doxycycline absorption can fall with polyvalent cations and esophageal injury risk falls with water and upright posture",
+      "Water and posture replace the need to review mineral interactions",
+      "Iron and magnesium increase doxycycline absorption when taken together",
+      "Lying down immediately after a dose is the preferred way to prevent esophageal irritation"
+    ],
+    "rationale": "The book describes chelation with polyvalent cations and esophageal irritation with oral doxycycline. Separate interfering mineral products, use water with tablets or capsules, and remain upright after a dose. Food used to reduce gastrointestinal irritation does not remove the cation interaction."
+  },
+  "lyme-064": {
+    "choices": [
+      "Giving every dose with a mineral supplement",
+      "Separating an interfering mineral product from the antibiotic",
+      "Using water with an oral tablet or capsule",
+      "Counseling about doxycycline photosensitivity"
+    ],
+    "rationale": "The book describes chelation and reduced absorption with interfering mineral products. Giving every dose with such a supplement defeats the separation plan. Water and photosensitivity counseling address additional documented safety issues."
+  }
+};
+
+export const lymeDiseaseQuestionBank = [...generated, ...cases].map(question => bookAdministrationRepairs[question.id] ? { ...question, ...bookAdministrationRepairs[question.id] } : question);
 if (lymeDiseaseQuestionBank.length < 100) throw new Error(`Lyme disease question bank must contain at least 100 questions, found ${lymeDiseaseQuestionBank.length}.`);

@@ -75,5 +75,107 @@ const caseRows = [
 
 const cases = caseRows.map((item, index) => ({ id: `tularemia-${String(generated.length + index + 1).padStart(3, "0")}`, lesson: item[0], question: item[1], choices: item[2], answer: 0, rationale: item[3], reviewHref: `#${item[0]}` }));
 
-export const tularemiaQuestionBank = [...generated, ...cases];
+const bookAdministrationRepairs = {
+  "tularemia-071": {
+    "choices": [
+      "Assess QT risk, interacting cations, tendon and neurologic risk, glycemia, renal function, absorption, and clinical response",
+      "Assess only QT risk and ignore cations, renal function, and neurologic symptoms",
+      "Treat simultaneous iron use as a way to increase ciprofloxacin absorption",
+      "Ignore new tendon or neuropathic symptoms if the fever is improving"
+    ],
+    "rationale": "The quinolone section describes cation-related absorption loss, QT prolongation, tendon injury, neuropathy and central nervous system effects, dysglycemia, aortic risk, and renal dosing review. Assess these patient-specific risks and interactions; an administration plan must preserve exposure while monitoring treatment and toxicity. This class-safety assessment does not establish a tularemia-specific dose or duration."
+  },
+  "tularemia-075": {
+    "choices": [
+      "Assess renal function, QT interval, cations, tendon history, dysglycemia, neurologic effects, and response",
+      "Ignore renal function because every quinolone has the same renal handling",
+      "Use normal glucose as a reason to omit all interaction and toxicity review",
+      "Continue despite new tendon pain without reviewing the fluoroquinolone"
+    ],
+    "rationale": "The quinolone section describes cation-related absorption loss, QT prolongation, tendon injury, neuropathy and central nervous system effects, dysglycemia, aortic risk, and renal dosing review. Assess these patient-specific risks and interactions; an administration plan must preserve exposure while monitoring treatment and toxicity. This class-safety assessment does not establish a tularemia-specific dose or duration."
+  },
+  "tularemia-083": {
+    "choices": [
+      "Assess weight, renal function, level timing, urine output, hearing, vestibular symptoms, neuromuscular risk, and response",
+      "Choose the dosing weight without considering body size or the local protocol",
+      "Record a drug level without recording dose or sample time",
+      "Monitor fever alone and omit renal, auditory, and vestibular review"
+    ],
+    "rationale": "The aminoglycoside section links dosing to body size and renal function and requires drug concentrations, renal monitoring, urine output, and auditory or vestibular assessment. It also warns about neuromuscular toxicity. Dose and sampling times make concentration results interpretable. These monitoring principles do not verify the separate current tularemia regimen."
+  },
+  "tularemia-085": {
+    "choices": [
+      "Polyvalent cations can reduce fluoroquinolone absorption and QT, tendon, neurologic, glycemic, and aortic risks require patient specific review",
+      "Oral mineral products reliably increase fluoroquinolone absorption",
+      "A normal QT interval excludes tendon, neurologic, glycemic, and aortic risks",
+      "Stopping a mineral interaction review is justified once an oral dose is prescribed"
+    ],
+    "rationale": "The quinolone section describes cation-related absorption loss, QT prolongation, tendon injury, neuropathy and central nervous system effects, dysglycemia, aortic risk, and renal dosing review. Assess these patient-specific risks and interactions; an administration plan must preserve exposure while monitoring treatment and toxicity. This class-safety assessment does not establish a tularemia-specific dose or duration."
+  },
+  "tularemia-086": {
+    "choices": [
+      "Separate interacting cations, assess risk, and give clear symptom escalation instructions",
+      "Give an interfering antacid with each oral fluoroquinolone dose",
+      "Continue unchanged after new tendon or neuropathic symptoms without assessment",
+      "Review warnings but omit a practical separation and monitoring plan"
+    ],
+    "rationale": "The book calls for separating interfering cations and reviewing patient-specific quinolone risks. It advises prompt action for tendon or neuropathic symptoms. A useful plan connects the interaction and safety review to actual administration and symptom instructions."
+  },
+  "tularemia-089": {
+    "choices": [
+      "Water, upright posture, cation separation, and sun protection reduce preventable doxycycline failure and harm",
+      "Use water instead of separating all interfering mineral products",
+      "Take an oral tablet or capsule with minimal water and lie down immediately",
+      "Ignore photosensitivity when the dose is separated from antacids"
+    ],
+    "rationale": "The book describes chelation with polyvalent cations and esophageal irritation with oral doxycycline. Separate interfering mineral products, use water with tablets or capsules, and remain upright after a dose. Food used to reduce gastrointestinal irritation does not remove the cation interaction. The tetracycline safety section also describes photosensitivity."
+  },
+  "tularemia-093": {
+    "choices": [
+      "Gentamicin requires renal function and concentration guided monitoring with attention to auditory, vestibular, and neuromuscular toxicity",
+      "Renal monitoring replaces drug concentrations and auditory assessment",
+      "Normal hearing excludes renal and neuromuscular toxicity",
+      "Every concentration can be interpreted without knowing the sampling time"
+    ],
+    "rationale": "The aminoglycoside section links dosing to body size and renal function and requires drug concentrations, renal monitoring, urine output, and auditory or vestibular assessment. It also warns about neuromuscular toxicity. Dose and sampling times make concentration results interpretable. These monitoring principles do not verify the separate current tularemia regimen."
+  },
+  "tularemia-094": {
+    "choices": [
+      "Use an extended interval protocol and respond to changing renal function or unexpected concentrations",
+      "Apply one unchanged interval regardless of renal function or concentration results",
+      "Interpret an extended-interval random level as a traditional trough regardless of timing",
+      "Use an unrelated nomogram without checking its dose and sample-time assumptions"
+    ],
+    "rationale": "Extended-interval aminoglycoside dosing uses an institution-specific monitoring method. The book requires timed random concentrations for the chosen nomogram and renal-function review; traditional peak and trough sampling follows a different sequence. A method must fit the dose and sampling time rather than being copied between regimens."
+  },
+  "tularemia-095": {
+    "choices": [
+      "Assess creatinine trend, urine output, level timing, hearing, balance, concomitant nephrotoxins, and dose interval",
+      "Use a single creatinine result and omit urine output and subsequent levels",
+      "Ignore nephrotoxins when an aminoglycoside is prescribed",
+      "Record concentration values without dose interval or sample timing"
+    ],
+    "rationale": "The aminoglycoside section links dosing to body size and renal function and requires drug concentrations, renal monitoring, urine output, and auditory or vestibular assessment. It also warns about neuromuscular toxicity. Dose and sampling times make concentration results interpretable. These monitoring principles do not verify the separate current tularemia regimen."
+  },
+  "tularemia-096": {
+    "choices": [
+      "Ordering a level without documenting when the dose was given",
+      "Documenting both dose and collection times",
+      "Checking whether the level is a traditional peak, trough, or extended-interval random sample",
+      "Using the chosen protocol to relate concentration to dosing interval"
+    ],
+    "rationale": "The book gives different timing instructions for traditional peaks and troughs and extended-interval random concentrations. A value without dose and sample timing cannot be placed reliably into that framework. The other choices supply the context needed for interpretation."
+  },
+  "tularemia-087": {
+    "choices": [
+      "Assess antacids, iron, calcium, magnesium, tube feeds, QT drugs, tendon disease, neuropathy, glycemia, and aortic history",
+      "Assess only the dosing clock and omit cations or feeding formulation",
+      "Use a normal glucose reading to exclude all later quinolone toxicity",
+      "Ignore aortic and tendon history when oral therapy is selected"
+    ],
+    "rationale": "The book describes chelation with mineral products, ciprofloxacin formulation and feeding-tube precautions, QT interactions, tendon injury, neuropathy, dysglycemia, and aortic risk. This supports the full administration assessment. Review the actual formulation and feeding plan; ciprofloxacin-specific tube instructions are not a universal rule for every fluoroquinolone."
+  }
+};
+
+export const tularemiaQuestionBank = [...generated, ...cases].map(question => bookAdministrationRepairs[question.id] ? { ...question, ...bookAdministrationRepairs[question.id] } : question);
 if (tularemiaQuestionBank.length < 100) throw new Error(`Tularemia question bank must contain at least 100 questions, found ${tularemiaQuestionBank.length}.`);
