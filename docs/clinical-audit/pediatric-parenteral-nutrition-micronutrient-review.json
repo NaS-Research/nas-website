@@ -1,0 +1,1012 @@
+{
+  "date": "2026-10-01",
+  "unit": "Pediatric PN minerals, vitamins, trace-element products and monitoring source reconciliation",
+  "module": "pediatric-parenteral-nutrition",
+  "baseCommit": "415a6b8f244c8dfeef2226323fd3a95b619ae4df",
+  "status": "Complete mineral/micronutrient lesson verified; whole pediatric PN module and chapters incomplete",
+  "sourcePolicy": {
+    "suppliedBook": "Private supplied PDF cover RxPrep2023; primary educational source remains private",
+    "outsidePNReferencesAuthorized": true,
+    "authorizationQuote": "use that and complete the goal. I approve",
+    "scope": "Existing official ASPEN/USP/FDA/CDC PN references and linked primary sources only",
+    "outsideENSourcesUsed": false
+  },
+  "sources": {
+    "multrys": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2024/209376s007lbl.pdf",
+    "vitamins": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2024/021265s044lbl.pdf",
+    "trace": "https://nutritioncare.org/wp-content/uploads/2024/12/PN-Trace-Element-Practice-Tool.pdf",
+    "shortage": "https://nutritioncare.org/wp-content/uploads/2024/12/Intravenous-Multivitamin-Shortage-Recommendations.pdf",
+    "bone": "https://aspenjournals.onlinelibrary.wiley.com/doi/full/10.1177/0148607113487216",
+    "counterions": "https://www.accessdata.fda.gov/drugsatfda_docs/nda/2019/212832Orig1s000MultidisciplineR.pdf",
+    "order": "https://nutritioncare.org/wp-content/uploads/2024/12/PN-Checklist-02-Order-Review.pdf",
+    "compound": "https://nutritioncare.org/wp-content/uploads/2024/12/PN-Checklist-03-Compounding.pdf",
+    "phosphate": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2024/212832s002lbl.pdf"
+  },
+  "sourceRead": {
+    "multrys": "Combined26-page FDA July2024 Tralement/Multrys label; first13pages are Tralement. Complete relevant Multrys PDF pages15-22 and25 (printed2-9 and12) text/rendered reviewed. Includes Table1 all9 rows and Table2 requirements/footnotes, indication, exact concentrations, dose groups, monitoring, hepatic/manganese warnings and pharmacokinetic qualification. Whole combined label and remaining Multrys pages not claimed read.",
+    "vitamins": "11-page FDA November2024 INFUVITE PEDIATRIC label; complete relevant PDF pages2-5 text/rendered reviewed, sections1/2.1-2.5 and both whole weight-group tables. Whole11-page label not claimed read. No adult substitution or unlabeled direct/undiluted dose adopted.",
+    "trace": "Both pages of ASPEN November2023 practice tool fully text/rendered reviewed, tables/footnotes/disclaimer included. Informational practice tool, not an ASPEN Board Approved clinical guideline. Its copper concentration discrepancy is documented and not propagated.",
+    "shortage": "Nine-page October9,2024 ASPEN shortage document; complete PDF pages1-4 text/rendered reviewed, profiles/footnotes/temporary-only limitation included. Whole9-page document and no blanket neonatal adult-product substitution claimed.",
+    "bone": "Official2013 ASPEN guideline Abstract/Background and Q1 rationale reviewed, including reread of relevant background in current continuation. Used only to support preterm mineral accretion physiology. Whole29-page article/tables, current dose policy, feeding and vitamin-D regimen not claimed.",
+    "counterions": "103-page FDA2019 NDA212832 multidisciplinary review; only complete PDF page30 / printed20 Table2 text/rendered reviewed for sodium counterion/product variation. No claim of current2026 marketed availability or regulatory status inferred from2019 table.",
+    "priorSafetyEvidenceReused": "Previously fully source/render-reviewed order and compounding checklists and relevant FDA phosphate sections, as recorded in pediatric-parenteral-nutrition-compounding-safety-review.json. Exact code for the safety lesson and all diagrams preserved. No new broader safety closure counted.",
+    "book": "Supplied private RxPrep2023 Chapter11 PDF157-176 / printed149-168 previously fully text/render-reviewed. No new fullChapter54 source review or chapter closure this unit.",
+    "renderedRelevantSourcePDFPagesReviewed": 20,
+    "sourcePDFSHA256": {
+      "multrys.pdf": "ca8bbdb7e08de501fcda2cbca24a81685e340b271aa66cbe89c4a345079ab9c0",
+      "vitamins.pdf": "23ef455beb08de01aab6fd57b1933298bc427e970476645c2d71fd7bd3432d3b",
+      "trace.pdf": "4c3f7e31e6a6dae6310f8ace3ea2b17272694fc82da81f85947ab0fa2cd65bad",
+      "shortage.pdf": "f497ccfc23653c432723571da867b9539aee9be7965703114695de0535bfcf69",
+      "counterions.pdf": "a2fa92f88372a0568d75f2d349238793910250fef173fa5794c51e019d545488"
+    }
+  },
+  "questionReview": [
+    {
+      "question": {
+        "id": "pedpn-023",
+        "question": "Why are calcium and phosphorus especially important in preterm PN?",
+        "choices": [
+          "Late gestational bone-mineral accretion has been interrupted",
+          "Prematurity makes calcium-phosphate solubility unimportant",
+          "Bone-mineral accretion is completed early in gestation",
+          "A pediatric multivitamin supplies all calcium and phosphorus needed for growth"
+        ],
+        "answer": 0,
+        "rationale": "Preterm birth interrupts a period of rapid mineral accretion.",
+        "reviewHref": "#pediatric-minerals-micros"
+      },
+      "sourceEvidence": [
+        {
+          "url": "https://aspenjournals.onlinelibrary.wiley.com/doi/full/10.1177/0148607113487216",
+          "locator": "Background and Question1 rationale: last-trimester mineral accretion and preterm interruption; no new vitamin-D or feeding regimen adopted"
+        },
+        {
+          "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2024/021265s044lbl.pdf",
+          "locator": "PDF pages2-3 vitamin component tables do not provide all bone-mineral calcium/phosphorus"
+        }
+      ],
+      "review": "Prompt, every choice, keyed answer, rationale and remediation anchor individually compared with source. Wrong choices test specific formulation, monitoring or dosing errors; no diagnosis or universal clinical dose inferred. Original IDs/prompts/keys/correct texts/anchors retained.",
+      "status": "verified",
+      "newSourceClosure": true
+    },
+    {
+      "question": {
+        "id": "pedpn-024",
+        "question": "Which calcium salt is generally preferred in PN compatibility design?",
+        "choices": [
+          "Calcium gluconate",
+          "Calcium chloride",
+          "Calcium carbonate tablets",
+          "Calcium citrate tablets"
+        ],
+        "answer": 0,
+        "rationale": "ASPEN's compounding checklist prefers calcium gluconate when inorganic phosphate salts are used. The complete formulation still requires compatibility validation.",
+        "reviewHref": "#pediatric-minerals-micros"
+      },
+      "sourceEvidence": [
+        {
+          "url": "https://nutritioncare.org/wp-content/uploads/2024/12/PN-Checklist-03-Compounding.pdf",
+          "locator": "Previously fully text/render-reviewed PDF page2 calcium-gluconate preference with inorganic phosphate; exact formula validation on page1"
+        }
+      ],
+      "review": "Prompt, every choice, keyed answer, rationale and remediation anchor individually compared with source. Wrong choices test specific formulation, monitoring or dosing errors; no diagnosis or universal clinical dose inferred. Original IDs/prompts/keys/correct texts/anchors retained.",
+      "status": "verified",
+      "newSourceClosure": false
+    },
+    {
+      "question": {
+        "id": "pedpn-025",
+        "question": "What does sodium phosphate contribute besides phosphate?",
+        "choices": [
+          "Sodium",
+          "Potassium",
+          "Calcium",
+          "Magnesium"
+        ],
+        "answer": 0,
+        "rationale": "The sodium counterion must be included in the electrolyte total.",
+        "reviewHref": "#pediatric-minerals-micros"
+      },
+      "sourceEvidence": [
+        {
+          "url": "https://www.accessdata.fda.gov/drugsatfda_docs/nda/2019/212832Orig1s000MultidisciplineR.pdf",
+          "locator": "PDF page30 / printed20 Table2: sodium phosphate sodium counterion; potassium-product concentrations differ"
+        }
+      ],
+      "review": "Prompt, every choice, keyed answer, rationale and remediation anchor individually compared with source. Wrong choices test specific formulation, monitoring or dosing errors; no diagnosis or universal clinical dose inferred. Original IDs/prompts/keys/correct texts/anchors retained.",
+      "status": "verified",
+      "newSourceClosure": true
+    },
+    {
+      "question": {
+        "id": "pedpn-026",
+        "question": "Why should zinc be reviewed in a child with high ostomy output?",
+        "choices": [
+          "Gastrointestinal loss can increase zinc requirement",
+          "A standard fixed trace-element mix guarantees adequate zinc despite ongoing losses",
+          "Gastrointestinal losses affect electrolytes but cannot affect trace elements",
+          "The entire fixed trace-element mix should be increased without reviewing its other components"
+        ],
+        "answer": 0,
+        "rationale": "Large gastrointestinal losses can deplete zinc.",
+        "reviewHref": "#pediatric-minerals-micros"
+      },
+      "sourceEvidence": [
+        {
+          "url": "https://nutritioncare.org/wp-content/uploads/2024/12/PN-Trace-Element-Practice-Tool.pdf",
+          "locator": "Full PDF page1: intestinal elimination, high GI losses and zinc deficiency risk; page2 patient-specific dosing and monitoring"
+        },
+        {
+          "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2024/209376s007lbl.pdf",
+          "locator": "PDF pages17-18 / Multrys printed4-5: individual contributions and supplement comparison across PN/EN"
+        }
+      ],
+      "review": "Prompt, every choice, keyed answer, rationale and remediation anchor individually compared with source. Wrong choices test specific formulation, monitoring or dosing errors; no diagnosis or universal clinical dose inferred. Original IDs/prompts/keys/correct texts/anchors retained.",
+      "status": "verified",
+      "newSourceClosure": true
+    },
+    {
+      "question": {
+        "id": "pedpn-027",
+        "question": "Why are copper and manganese reviewed carefully in cholestasis?",
+        "choices": [
+          "Biliary excretion is impaired and accumulation can occur",
+          "Cholestasis prevents these elements from accumulating during prolonged PN",
+          "Renal function alone determines the handling of both elements",
+          "Rising bilirubin is a reason to increase every component of a fixed trace-element mix"
+        ],
+        "answer": 0,
+        "rationale": "Copper is primarily excreted in bile, and manganese is presumed to use biliary elimination. The Multrys label recommends monitoring for accumulation and considering individual products in hepatobiliary disease.",
+        "reviewHref": "#pediatric-minerals-micros"
+      },
+      "sourceEvidence": [
+        {
+          "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2024/209376s007lbl.pdf",
+          "locator": "PDF pages19-20/22/25 / Multrys printed6-7/9/12 sections5.3-5.4,8.6,12.3; copper primarily biliary and manganese presumed biliary"
+        }
+      ],
+      "review": "Prompt, every choice, keyed answer, rationale and remediation anchor individually compared with source. Wrong choices test specific formulation, monitoring or dosing errors; no diagnosis or universal clinical dose inferred. Original IDs/prompts/keys/correct texts/anchors retained.",
+      "status": "verified",
+      "newSourceClosure": true
+    },
+    {
+      "question": {
+        "id": "pedpn-028",
+        "question": "What governs pediatric parenteral multivitamin dosing?",
+        "choices": [
+          "The exact product label, age or weight, and clinical context",
+          "The same adult dose volume for every infant",
+          "One universal mL/kg dose across all pediatric vitamin products",
+          "Identical vial preparation steps for single-dose and pharmacy bulk packages"
+        ],
+        "answer": 0,
+        "rationale": "Verify the exact product and preparation. The November 2024 INFUVITE PEDIATRIC label uses actual-weight groups and separate instructions for single-dose vials and the pharmacy bulk package; temporary shortage substitutions are not routine care.",
+        "reviewHref": "#pediatric-minerals-micros"
+      },
+      "sourceEvidence": [
+        {
+          "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2024/021265s044lbl.pdf",
+          "locator": "PDF pages2-5 sections1/2.1-2.5; labeled age/actual weight groups, different single-dose/bulk preparation"
+        },
+        {
+          "url": "https://nutritioncare.org/wp-content/uploads/2024/12/Intravenous-Multivitamin-Shortage-Recommendations.pdf",
+          "locator": "PDF pages1-4: temporary shortage-only plans, product profiles and return to normal dosing"
+        }
+      ],
+      "review": "Prompt, every choice, keyed answer, rationale and remediation anchor individually compared with source. Wrong choices test specific formulation, monitoring or dosing errors; no diagnosis or universal clinical dose inferred. Original IDs/prompts/keys/correct texts/anchors retained.",
+      "status": "verified",
+      "newSourceClosure": true
+    },
+    {
+      "question": {
+        "id": "pedpn-105",
+        "question": "A child with a high-output ostomy develops poor growth and dermatitis while receiving standard trace elements. What is the most defensible next action?",
+        "choices": [
+          "Review zinc losses, dose, products, output, and other causes of deficiency",
+          "Double the entire trace-element combination without reviewing its other ingredients",
+          "Diagnose zinc deficiency from dermatitis alone without checking intake or laboratory context",
+          "Keep the same dose because gastrointestinal output cannot affect trace-element losses"
+        ],
+        "answer": 0,
+        "rationale": "High gastrointestinal output can increase zinc losses.",
+        "reviewHref": "#pediatric-minerals-micros"
+      },
+      "sourceEvidence": [
+        {
+          "url": "https://nutritioncare.org/wp-content/uploads/2024/12/PN-Trace-Element-Practice-Tool.pdf",
+          "locator": "PDF pages1-2 zinc high GI losses, growth/skin findings, interpret labs/individualize; no diagnosis from dermatitis alone"
+        },
+        {
+          "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2024/209376s007lbl.pdf",
+          "locator": "PDF pages17-18: exact four-element contribution and avoid using extra combination to meet an individual gap"
+        }
+      ],
+      "review": "Prompt, every choice, keyed answer, rationale and remediation anchor individually compared with source. Wrong choices test specific formulation, monitoring or dosing errors; no diagnosis or universal clinical dose inferred. Original IDs/prompts/keys/correct texts/anchors retained.",
+      "status": "verified",
+      "newSourceClosure": true
+    },
+    {
+      "question": {
+        "id": "pedpn-109",
+        "question": "A child with cholestasis receives the same fixed trace-element mix for months. What is the most defensible next action?",
+        "choices": [
+          "Review copper and manganese accumulation risk while preventing deficiency with individualized dosing",
+          "Omit all trace elements indefinitely without monitoring for deficiency",
+          "Increase the fixed combination because cholestasis prevents trace-element accumulation",
+          "Ignore the trace-element composition while checking calories alone"
+        ],
+        "answer": 0,
+        "rationale": "Biliary impairment changes trace-element handling, but blanket omission can also cause harm.",
+        "reviewHref": "#pediatric-minerals-micros"
+      },
+      "sourceEvidence": [
+        {
+          "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2024/209376s007lbl.pdf",
+          "locator": "PDF pages19-20/22 section5.3/5.4/8.6: hepatobiliary toxicity review, labs, individual products"
+        },
+        {
+          "url": "https://nutritioncare.org/wp-content/uploads/2024/12/PN-Trace-Element-Practice-Tool.pdf",
+          "locator": "PDF pages1-2 long-term omission deficiency risk and status-directed dosing"
+        }
+      ],
+      "review": "Prompt, every choice, keyed answer, rationale and remediation anchor individually compared with source. Wrong choices test specific formulation, monitoring or dosing errors; no diagnosis or universal clinical dose inferred. Original IDs/prompts/keys/correct texts/anchors retained.",
+      "status": "verified",
+      "newSourceClosure": true
+    }
+  ],
+  "verifiedBankIds": [
+    "pedpn-003",
+    "pedpn-008",
+    "pedpn-009",
+    "pedpn-010",
+    "pedpn-014",
+    "pedpn-015",
+    "pedpn-017",
+    "pedpn-018",
+    "pedpn-019",
+    "pedpn-020",
+    "pedpn-021",
+    "pedpn-022",
+    "pedpn-023",
+    "pedpn-024",
+    "pedpn-025",
+    "pedpn-026",
+    "pedpn-027",
+    "pedpn-028",
+    "pedpn-029",
+    "pedpn-030",
+    "pedpn-031",
+    "pedpn-032",
+    "pedpn-033",
+    "pedpn-034",
+    "pedpn-035",
+    "pedpn-060",
+    "pedpn-061",
+    "pedpn-062",
+    "pedpn-063",
+    "pedpn-064",
+    "pedpn-065",
+    "pedpn-066",
+    "pedpn-067",
+    "pedpn-068",
+    "pedpn-069",
+    "pedpn-070",
+    "pedpn-071",
+    "pedpn-072",
+    "pedpn-073",
+    "pedpn-074",
+    "pedpn-075",
+    "pedpn-076",
+    "pedpn-077",
+    "pedpn-078",
+    "pedpn-079",
+    "pedpn-080",
+    "pedpn-081",
+    "pedpn-082",
+    "pedpn-083",
+    "pedpn-084",
+    "pedpn-085",
+    "pedpn-086",
+    "pedpn-087",
+    "pedpn-088",
+    "pedpn-089",
+    "pedpn-090",
+    "pedpn-091",
+    "pedpn-092",
+    "pedpn-093",
+    "pedpn-094",
+    "pedpn-095",
+    "pedpn-096",
+    "pedpn-097",
+    "pedpn-098",
+    "pedpn-099",
+    "pedpn-100",
+    "pedpn-101",
+    "pedpn-102",
+    "pedpn-103",
+    "pedpn-104",
+    "pedpn-105",
+    "pedpn-109"
+  ],
+  "pendingQuestionIds": [
+    "pedpn-001",
+    "pedpn-002",
+    "pedpn-004",
+    "pedpn-005",
+    "pedpn-006",
+    "pedpn-007",
+    "pedpn-011",
+    "pedpn-012",
+    "pedpn-013",
+    "pedpn-016",
+    "pedpn-036",
+    "pedpn-037",
+    "pedpn-038",
+    "pedpn-039",
+    "pedpn-040",
+    "pedpn-050",
+    "pedpn-051",
+    "pedpn-052",
+    "pedpn-053",
+    "pedpn-054",
+    "pedpn-055",
+    "pedpn-056",
+    "pedpn-057",
+    "pedpn-058",
+    "pedpn-059",
+    "pedpn-106",
+    "pedpn-107",
+    "pedpn-108"
+  ],
+  "teachingReview": [
+    {
+      "lesson": "pediatric-minerals-micros",
+      "heading": "Balance growth with compatibility",
+      "body": "Preterm infants have high calcium and phosphorus needs because substantial mineral accretion normally occurs late in gestation. The amount that can be delivered is limited by solubility, final concentration, amino-acid formulation, pH, salt form, temperature, order of mixing, storage, and infusion conditions. ASPEN's compounding checklist prefers calcium gluconate when inorganic phosphate salts are used; the exact formulation still requires validation.",
+      "sourceEvidence": [
+        {
+          "url": "https://aspenjournals.onlinelibrary.wiley.com/doi/full/10.1177/0148607113487216",
+          "locator": "Background/Q1 rationale: late-gestation mineral accretion interrupted by preterm birth"
+        },
+        {
+          "url": "https://nutritioncare.org/wp-content/uploads/2024/12/PN-Checklist-02-Order-Review.pdf",
+          "locator": "Prior full PDF pages1-2: formulation-specific amino-acid curves/concentrations/volume/cysteine"
+        },
+        {
+          "url": "https://nutritioncare.org/wp-content/uploads/2024/12/PN-Checklist-03-Compounding.pdf",
+          "locator": "Prior full PDF pages1-2: mixing, electrolyte interactions and calcium-gluconate/inorganic phosphate preference"
+        },
+        {
+          "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2024/212832s002lbl.pdf",
+          "locator": "Prior complete PDF page4 section2.3 and page5 section5.2: compatibility factors/precipitation/infusion conditions"
+        }
+      ],
+      "status": "verified",
+      "newBody": false,
+      "newWholeBodyClosure": true
+    },
+    {
+      "lesson": "pediatric-minerals-micros",
+      "heading": "Count both ions in phosphate products",
+      "body": "Sodium phosphate contributes sodium and phosphate, while potassium phosphate contributes potassium and phosphate. Concentrations vary by product. Calculate mmol of phosphate and mEq of the counterion separately, then add both to the final daily electrolyte totals.",
+      "sourceEvidence": [
+        {
+          "url": "https://www.accessdata.fda.gov/drugsatfda_docs/nda/2019/212832Orig1s000MultidisciplineR.pdf",
+          "locator": "Full PDF page30 / printed20 Table2: sodium and potassium contributions and product variation"
+        },
+        {
+          "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2024/212832s002lbl.pdf",
+          "locator": "Prior PDF page4 section2.4 and page5 section3 phosphate/potassium product contributions"
+        }
+      ],
+      "status": "verified",
+      "newBody": false,
+      "newWholeBodyClosure": true
+    },
+    {
+      "lesson": "pediatric-minerals-micros",
+      "heading": "Use pediatric vitamin products and labeled dosing",
+      "body": "Pediatric parenteral multivitamin dosing depends on product labeling and weight or age. An adult product is not an automatic substitute for an infant product. During shortages, use an institution-approved plan based on current ASPEN recommendations. Restore normal labeled dosing once supply returns; temporary conservation measures are not routine care.",
+      "sourceEvidence": [
+        {
+          "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2024/021265s044lbl.pdf",
+          "locator": "PDF pages2-4: indication up to11 years, actual weight groups, preparation"
+        },
+        {
+          "url": "https://nutritioncare.org/wp-content/uploads/2024/12/Intravenous-Multivitamin-Shortage-Recommendations.pdf",
+          "locator": "PDF pages1-4: shortage-only substitutions and restore routine labeled dose after supply returns"
+        }
+      ],
+      "status": "verified",
+      "newBody": false,
+      "newWholeBodyClosure": true
+    },
+    {
+      "lesson": "pediatric-minerals-micros",
+      "heading": "Adjust trace elements selectively",
+      "body": "High gastrointestinal losses and burns can increase zinc deficiency risk; assess output, growth, skin findings, and wound healing. Copper is primarily excreted in bile, and manganese is presumed to use biliary elimination. Cholestasis therefore warrants review for copper accumulation and manganese neurotoxicity. Individualize the components instead of assuming a fixed mix fits every child or omitting all trace elements. Long-term PN without copper, zinc, or selenium can cause deficiency. Use weight, organ function, losses, duration, product content, and interpretable laboratory trends together.",
+      "sourceEvidence": [
+        {
+          "url": "https://nutritioncare.org/wp-content/uploads/2024/12/PN-Trace-Element-Practice-Tool.pdf",
+          "locator": "Full PDF pages1-2: high GI losses/burns/zinc signs, long-term omission deficiencies and monitoring"
+        },
+        {
+          "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2024/209376s007lbl.pdf",
+          "locator": "PDF pages19-20/22/25: biliary handling, cholestatic copper/manganese accumulation and individualized products"
+        }
+      ],
+      "status": "verified",
+      "newBody": false,
+      "newWholeBodyClosure": true
+    },
+    {
+      "lesson": "pediatric-minerals-micros",
+      "heading": "Distinguish vitamin dose from infusion volume",
+      "body": "INFUVITE PEDIATRIC is labeled for children up to 11 years of age. For a 2 kg child within that labeled age range under the November 2024 label, the daily single-dose preparation uses 2.6 mL from Vial 1 and 0.65 mL from Vial 2: 3.25 mL total. The pharmacy bulk package first combines both vials and supplies 3.25 mL of that mixture. These are different preparation steps, not interchangeable vial instructions. The label requires the daily dose to be added to at least 100 mL of intravenous dextrose or saline; check that volume against the complete fluid plan. Never give the product as an undiluted intravenous injection or add it directly to lipid emulsion. Verify compatibility, protect light-sensitive vitamins, and monitor vitamin status during prolonged use.",
+      "sourceEvidence": [
+        {
+          "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2024/021265s044lbl.pdf",
+          "locator": "PDF pages2-5 sections1/2.1-2.5; Table1/Table2 for1 to<3kg:2.6+.65=3.25mL; at least100mL IV dextrose/saline, no undiluted injection/direct ILE, light protection, vitamin monitoring"
+        }
+      ],
+      "status": "verified",
+      "newBody": true,
+      "newWholeBodyClosure": true
+    },
+    {
+      "lesson": "pediatric-minerals-micros",
+      "heading": "Check what a fixed trace-element mix supplies",
+      "body": "Multrys is labeled for neonatal and pediatric patients weighing less than 10 kg who need all four supplied trace elements. Its July 2024 label uses a different schedule for 0.4 to 0.59 kg patients; do not extend the daily formula to that group. For a 1.2 kg patient, Table 1 gives 0.4 mL/day: 400 mcg zinc, 24 mcg copper, 1.2 mcg manganese, and 2.4 mcg selenium. The label's zinc total is 400 mcg/kg/day below 3 kg, or 480 mcg/day here. If no enteral zinc is received, 80 mcg/day remains to be supplied. Do not add more fixed combination simply to close a zinc gap; check individual supplementation and all routes. The label does not recommend Multrys when a patient needs less of any one component, and advises considering individual products in hepatobiliary disease.",
+      "sourceEvidence": [
+        {
+          "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2024/209376s007lbl.pdf",
+          "locator": "PDF pages15-18/20/22/25 / Multrys printed2-5/7/9/12: under10kg/allfour ingredients,0.4-.59kg separate schedule;1.2kg Table1 .4mL at1000/60/3/6mcg/mL; zinc target400mcg/kg/day less3kg; compare all routes; lower-component/hepatobiliary restrictions"
+        }
+      ],
+      "status": "verified",
+      "newBody": true,
+      "newWholeBodyClosure": true
+    },
+    {
+      "lesson": "pediatric-minerals-micros",
+      "heading": "Interpret trace-element tests in context",
+      "body": "For long-term Multrys use, the label monitors serum zinc, copper, and selenium and whole-blood manganese. Follow the laboratory's collection and handling requirements and its reference range. ASPEN's trace-element practice tool cautions that acute illness and inflammation can distort interpretation, recommends considering inflammatory markers, and notes that serum copper does not directly measure copper balance. Combine interpretable results with intake, losses, growth, skin findings, liver function, and neurologic symptoms rather than increasing every trace element after one low result.",
+      "sourceEvidence": [
+        {
+          "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2024/209376s007lbl.pdf",
+          "locator": "PDF page18 / Multrys printed5 monitoring: serum zinc/copper/selenium, whole-blood manganese, assay ranges/collection"
+        },
+        {
+          "url": "https://nutritioncare.org/wp-content/uploads/2024/12/PN-Trace-Element-Practice-Tool.pdf",
+          "locator": "PDF pages1-2 footnotes/dosing: acute illness/inflammation, CRP, serum copper not copper balance; status directs dose"
+        }
+      ],
+      "status": "verified",
+      "newBody": true,
+      "newWholeBodyClosure": true
+    }
+  ],
+  "cumulativeReview": [
+    {
+      "question": {
+        "id": "cumulative-pediatric-parenteral-nutrition-pedpn-026",
+        "question": "Why should zinc be reviewed in a child with high ostomy output?",
+        "choices": [
+          "Gastrointestinal loss can increase zinc requirement",
+          "A standard fixed trace-element mix guarantees adequate zinc despite ongoing losses",
+          "Gastrointestinal losses affect electrolytes but cannot affect trace elements",
+          "The entire fixed trace-element mix should be increased without reviewing its other components"
+        ],
+        "answer": 0,
+        "rationale": "Large gastrointestinal losses can deplete zinc.",
+        "reviewHref": "/learn/pharmacy/modules/pediatric-parenteral-nutrition",
+        "module": "Pediatric Parenteral Nutrition"
+      },
+      "status": "verified",
+      "sourceEvidence": [
+        {
+          "url": "https://nutritioncare.org/wp-content/uploads/2024/12/PN-Trace-Element-Practice-Tool.pdf",
+          "locator": "Full PDF page1: intestinal elimination, high GI losses and zinc deficiency risk; page2 patient-specific dosing and monitoring"
+        },
+        {
+          "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2024/209376s007lbl.pdf",
+          "locator": "PDF pages17-18 / Multrys printed4-5: individual contributions and supplement comparison across PN/EN"
+        }
+      ],
+      "derivedFromBankId": "pedpn-026"
+    },
+    {
+      "question": {
+        "id": "cumulative-pediatric-parenteral-nutrition-pedpn-109",
+        "question": "A child with cholestasis receives the same fixed trace-element mix for months. What is the most defensible next action?",
+        "choices": [
+          "Review copper and manganese accumulation risk while preventing deficiency with individualized dosing",
+          "Omit all trace elements indefinitely without monitoring for deficiency",
+          "Increase the fixed combination because cholestasis prevents trace-element accumulation",
+          "Ignore the trace-element composition while checking calories alone"
+        ],
+        "answer": 0,
+        "rationale": "Biliary impairment changes trace-element handling, but blanket omission can also cause harm.",
+        "reviewHref": "/learn/pharmacy/modules/pediatric-parenteral-nutrition",
+        "module": "Pediatric Parenteral Nutrition"
+      },
+      "status": "verified",
+      "sourceEvidence": [
+        {
+          "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2024/209376s007lbl.pdf",
+          "locator": "PDF pages19-20/22 section5.3/5.4/8.6: hepatobiliary toxicity review, labs, individual products"
+        },
+        {
+          "url": "https://nutritioncare.org/wp-content/uploads/2024/12/PN-Trace-Element-Practice-Tool.pdf",
+          "locator": "PDF pages1-2 long-term omission deficiency risk and status-directed dosing"
+        }
+      ],
+      "derivedFromBankId": "pedpn-109"
+    }
+  ],
+  "embeddedReview": [
+    {
+      "lesson": "pediatric-minerals-micros",
+      "question": {
+        "question": "Why must potassium phosphate be included in two parts of the electrolyte audit?",
+        "choices": [
+          "It contributes both phosphate and potassium",
+          "Its phosphate is counted, while its potassium can be omitted",
+          "Its potassium is counted only when hyperkalemia is already present",
+          "The same labeled volume supplies the same potassium dose across every product"
+        ],
+        "answer": 0,
+        "rationale": "Both the phosphate dose and potassium contribution affect the final prescription.",
+        "reviewHref": "#pediatric-minerals-micros"
+      },
+      "status": "Prior source-verified check alternatives repaired and whole check reverified; no new aggregate closure",
+      "sourceEvidence": [
+        {
+          "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2024/212832s002lbl.pdf",
+          "locator": "Prior FDA2024 label PDF page4 section2.4/page5 section3 both phosphorus/potassium"
+        },
+        {
+          "url": "https://www.accessdata.fda.gov/drugsatfda_docs/nda/2019/212832Orig1s000MultidisciplineR.pdf",
+          "locator": "FDA2019 PDF page30 Table2 product-specific potassium concentration"
+        }
+      ],
+      "stablePromptKeyCorrectTextRationaleAnchorPreserved": true
+    }
+  ],
+  "figureReview": {
+    "type": "peds-pn-micros",
+    "status": "verified without code change",
+    "review": "All four stages/labels reviewed: calcium-phosphorus bone accretion and solubility; sodium/potassium/magnesium losses/kidneys/medicines; vitamin age/product label; trace losses/cholestasis/duration. Existing conceptual diagram, no new clinical dosing or molecular claim.",
+    "sourceEvidence": [
+      {
+        "url": "https://aspenjournals.onlinelibrary.wiley.com/doi/full/10.1177/0148607113487216",
+        "locator": "Background mineral accretion"
+      },
+      {
+        "url": "https://nutritioncare.org/wp-content/uploads/2024/12/PN-Checklist-02-Order-Review.pdf",
+        "locator": "Prior full checklist renal function/labs/medicines and electrolyte formulation"
+      },
+      {
+        "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2024/021265s044lbl.pdf",
+        "locator": "PDF2-5 age/weight/product"
+      },
+      {
+        "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2024/209376s007lbl.pdf",
+        "locator": "PDF15-22 organ function/contribution/monitoring"
+      },
+      {
+        "url": "https://nutritioncare.org/wp-content/uploads/2024/12/PN-Trace-Element-Practice-Tool.pdf",
+        "locator": "PDF1-2 losses and long-term PN"
+      }
+    ]
+  },
+  "wholeLessonReview": {
+    "slug": "pediatric-minerals-micros",
+    "wholeLessonVerified": true,
+    "teachingBodies": 7,
+    "mappedBankQuestions": 8,
+    "mappedBankIds": [
+      "pedpn-023",
+      "pedpn-024",
+      "pedpn-025",
+      "pedpn-026",
+      "pedpn-027",
+      "pedpn-028",
+      "pedpn-105",
+      "pedpn-109"
+    ],
+    "embeddedChecks": 1,
+    "figures": 1,
+    "metadataFields": [
+      "title",
+      "summary",
+      "concepts",
+      "application",
+      "keyPoints"
+    ],
+    "metadataSourceReviewed": true,
+    "metadataSourceEvidence": [
+      {
+        "url": "https://aspenjournals.onlinelibrary.wiley.com/doi/full/10.1177/0148607113487216",
+        "locator": "Background mineral growth"
+      },
+      {
+        "url": "https://nutritioncare.org/wp-content/uploads/2024/12/PN-Checklist-02-Order-Review.pdf",
+        "locator": "Prior checklist dose perkg, renal/loss/fluid/acid-base and exact formulation"
+      },
+      {
+        "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2024/021265s044lbl.pdf",
+        "locator": "PDF2-5 age/weight and dilution"
+      },
+      {
+        "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2024/209376s007lbl.pdf",
+        "locator": "PDF15-22 all-source product content/monitoring/organ function"
+      },
+      {
+        "url": "https://nutritioncare.org/wp-content/uploads/2024/12/PN-Trace-Element-Practice-Tool.pdf",
+        "locator": "PDF1-2 losses, duration, test interpretation"
+      }
+    ],
+    "metadataRuntime": {
+      "status": "passed",
+      "fields": [
+        "title",
+        "summary",
+        "concepts",
+        "keyPoints",
+        "application"
+      ],
+      "widths": [
+        1440,
+        390
+      ],
+      "additionalStudyContent": false,
+      "referenceScreenshotRecapturedWithTallerViewport": true
+    },
+    "additionalRenderedStudyContent": false,
+    "directDerivedCumulativeObjects": 2,
+    "parentModuleCumulativeBankStillIncomplete": true
+  },
+  "referenceChanges": {
+    "added": [
+      {
+        "label": "FDA. Multrys Prescribing Information, July 2024 (combined Tralement and Multrys document)",
+        "href": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2024/209376s007lbl.pdf"
+      },
+      {
+        "label": "FDA. INFUVITE PEDIATRIC Prescribing Information, November 2024",
+        "href": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2024/021265s044lbl.pdf"
+      },
+      {
+        "label": "ASPEN. Practical Considerations for Parenteral Trace Elements, 2023",
+        "href": "https://nutritioncare.org/wp-content/uploads/2024/12/PN-Trace-Element-Practice-Tool.pdf"
+      },
+      {
+        "label": "ASPEN. Intravenous Multivitamin Shortage Recommendations, 2024",
+        "href": "https://nutritioncare.org/wp-content/uploads/2024/12/Intravenous-Multivitamin-Shortage-Recommendations.pdf"
+      },
+      {
+        "label": "ASPEN. Neonatal Metabolic Bone Disease Guideline, 2013",
+        "href": "https://aspenjournals.onlinelibrary.wiley.com/doi/full/10.1177/0148607113487216"
+      },
+      {
+        "label": "FDA. Potassium Phosphates Review, 2019: Product and Counterion Comparison",
+        "href": "https://www.accessdata.fda.gov/drugsatfda_docs/nda/2019/212832Orig1s000MultidisciplineR.pdf"
+      }
+    ],
+    "allThirteenPriorReferencesPreserved": true,
+    "renderedReferenceCount": 19,
+    "wholeModuleMetadataVerified": false
+  },
+  "changes": {
+    "changedBankIds": [
+      "pedpn-023",
+      "pedpn-024",
+      "pedpn-025",
+      "pedpn-026",
+      "pedpn-027",
+      "pedpn-028",
+      "pedpn-105",
+      "pedpn-109"
+    ],
+    "clarifiedRationales": [
+      "pedpn-027",
+      "pedpn-028"
+    ],
+    "revisedAlternativeSets": [
+      "pedpn-023",
+      "pedpn-024",
+      "pedpn-025",
+      "pedpn-026",
+      "pedpn-027",
+      "pedpn-028",
+      "pedpn-105",
+      "pedpn-109"
+    ],
+    "repairedEmbeddedAlternativeSet": "pediatric-minerals-micros",
+    "newBodyHeadings": [
+      "Distinguish vitamin dose from infusion volume",
+      "Check what a fixed trace-element mix supplies",
+      "Interpret trace-element tests in context"
+    ],
+    "revisedExistingBodies": [
+      "Balance growth with compatibility",
+      "Use pediatric vitamin products and labeled dosing",
+      "Adjust trace elements selectively"
+    ],
+    "newAssessmentObjects": 0
+  },
+  "sourceDiscrepancies": [
+    "ASPEN2023 trace-element tool page2 lists Multrys copper50mcg/mL; FDA July2024 Multrys label gives60mcg/mL, also consistent with each Table1 copper row. FDA60 used for teaching/calculations; tool50 not propagated.",
+    "Multrys label daily formula0.3mL/kg/day rounded to0.1mL does not match every Table1 weight-band value: at1.8kg formula0.54 rounds0.5mL while Table1 gives0.6mL. Ambiguity remains outside this teaching case; no new dosing algorithm for those weights adopted. The1.2kg example explicitly uses Table1 .4mL and its formula agrees (.36 rounds.4). All table-row element multiplication verified separately from a universal dosing-rule validation.",
+    "Table2 zinc ranges meet at5kg; no new5kg dosing decision adopted. Product-specific label/lab/clinical verification remains necessary.",
+    "ASPEN practice tool explicitly is not a Board Approved guideline; shortage recommendations are temporary-only, not standard care.",
+    "Copper primary biliary elimination distinguished from manganese presumed biliary elimination in FDA pharmacokinetics. No normal blood manganese result claimed to exclude brain accumulation.",
+    "Vitamin dose volume is separate from at least100mL labeled IV dilution; single-dose vial volumes are not bulk-package preparation instructions. Age up to11years explicit; label doses not extrapolated outside the stated product/population.",
+    "FDA2019 counterion table is historical and lists4.7 versus4.4mEq/mL potassium products; no universal potassium concentration or current availability inferred. Existing dual-ion teaching and specific2024 label support retained.",
+    "No extension of approved outsidePN sources to EN. No whole pediatric module, Chapter11 or Chapter54 closure inferred from this lesson."
+  ],
+  "coverage": {
+    "bank": 100,
+    "newlySourceVerifiedBank": 7,
+    "sourceVerifiedBank": 72,
+    "remainingBank": 28,
+    "bodies": 33,
+    "newlySourceVerifiedBodies": 7,
+    "sourceVerifiedBodies": 21,
+    "remainingBodies": 12,
+    "embeddedChecks": 6,
+    "sourceVerifiedEmbeddedChecks": 4,
+    "remainingEmbeddedChecks": 2,
+    "figures": 6,
+    "sourceVerifiedFigures": 4,
+    "remainingFigures": 2,
+    "cumulative": 5,
+    "sourceVerifiedCumulative": 4,
+    "remainingCumulative": 1,
+    "metadataVerified": false,
+    "wholeModuleVerified": false,
+    "wholeChapterVerified": false
+  },
+  "preservation": {
+    "all100BankIdsPromptsKeysCorrectTextsAnchorsPreserved": true,
+    "ninetyTwoChoiceSetsPreserved": true,
+    "ninetyTwoBankObjectsUnchanged": true,
+    "all1180CumulativeIdsPromptsKeysCorrectTextsAnchorsPreserved": true,
+    "twoDerivedCumulativeAlternativeSetsChanged": [
+      "cumulative-pediatric-parenteral-nutrition-pedpn-026",
+      "cumulative-pediatric-parenteral-nutrition-pedpn-109"
+    ],
+    "1178OtherCumulativeObjectsUnchanged": true,
+    "fiveOtherEmbeddedChecksUnchanged": true,
+    "mineralCheckPromptKeyCorrectTextRationaleAnchorPreserved": true,
+    "twentySevenOfThirtyExistingBodiesUnchanged": true,
+    "fiveOtherLessonObjectsUnchanged": true,
+    "allSixDiagramsUnchanged": true,
+    "newBodies": 3,
+    "newAssessmentObjects": 0
+  },
+  "validation": {
+    "isolatedBuild": {
+      "command": "next build --webpack",
+      "status": "passed",
+      "staticPages": 567,
+      "candidate": "Archived exact base HEAD plus only two scoped content files; existing node_modules symlink. Unrelated working drafts/env/private PDFs excluded."
+    },
+    "focusedStructuralAudit": {
+      "script": "scripts/audit-pharmacy-assessments.mjs --module pediatric-parenteral-nutrition",
+      "status": "passed",
+      "questionCount": 100,
+      "scope": "Structural checks do not themselves establish clinical accuracy"
+    },
+    "independentWorkedExamples": {
+      "vitamin2kg": {
+        "vial1mL": "2.6",
+        "vial2mL": "0.65",
+        "combinedmL": "3.25",
+        "minimumDilutionmL": "100"
+      },
+      "multrys1Point2kg": {
+        "table1DailyVolumeMl": "0.4",
+        "zincProvidedMcg": "400.0",
+        "copperProvidedMcg": "24.0",
+        "manganeseProvidedMcg": "1.2",
+        "seleniumProvidedMcg": "2.4",
+        "dailyZincTargetMcg": "480.0",
+        "remainingZincIfNoEnteralMcg": "80.0"
+      }
+    },
+    "additionalLabelTableArithmetic": {
+      "infuviteWeightGroupVolumes": [
+        {
+          "weightGroup": "<1 kg",
+          "vial1": "1.2",
+          "vial2": "0.3",
+          "sum": "1.5",
+          "bulkDose": "1.5"
+        },
+        {
+          "weightGroup": "1 to <3 kg",
+          "vial1": "2.6",
+          "vial2": "0.65",
+          "sum": "3.25",
+          "bulkDose": "3.25"
+        },
+        {
+          "weightGroup": ">=3 kg",
+          "vial1": "4",
+          "vial2": "1",
+          "sum": "5",
+          "bulkDose": "5"
+        }
+      ],
+      "multrysAllNineRows": [
+        {
+          "mLPerDay": "0.2",
+          "microgramsPerDay": {
+            "zinc": "200.0",
+            "copper": "12.0",
+            "manganese": "0.6",
+            "selenium": "1.2"
+          }
+        },
+        {
+          "mLPerDay": "0.3",
+          "microgramsPerDay": {
+            "zinc": "300.0",
+            "copper": "18.0",
+            "manganese": "0.9",
+            "selenium": "1.8"
+          }
+        },
+        {
+          "mLPerDay": "0.4",
+          "microgramsPerDay": {
+            "zinc": "400.0",
+            "copper": "24.0",
+            "manganese": "1.2",
+            "selenium": "2.4"
+          }
+        },
+        {
+          "mLPerDay": "0.5",
+          "microgramsPerDay": {
+            "zinc": "500.0",
+            "copper": "30.0",
+            "manganese": "1.5",
+            "selenium": "3.0"
+          }
+        },
+        {
+          "mLPerDay": "0.6",
+          "microgramsPerDay": {
+            "zinc": "600.0",
+            "copper": "36.0",
+            "manganese": "1.8",
+            "selenium": "3.6"
+          }
+        },
+        {
+          "mLPerDay": "0.7",
+          "microgramsPerDay": {
+            "zinc": "700.0",
+            "copper": "42.0",
+            "manganese": "2.1",
+            "selenium": "4.2"
+          }
+        },
+        {
+          "mLPerDay": "0.8",
+          "microgramsPerDay": {
+            "zinc": "800.0",
+            "copper": "48.0",
+            "manganese": "2.4",
+            "selenium": "4.8"
+          }
+        },
+        {
+          "mLPerDay": "0.9",
+          "microgramsPerDay": {
+            "zinc": "900.0",
+            "copper": "54.0",
+            "manganese": "2.7",
+            "selenium": "5.4"
+          }
+        },
+        {
+          "mLPerDay": "1",
+          "microgramsPerDay": {
+            "zinc": "1000",
+            "copper": "60",
+            "manganese": "3",
+            "selenium": "6"
+          }
+        }
+      ]
+    },
+    "runningAssessmentCalculationsBefore": 718,
+    "runningAssessmentCalculationsAfter": 718,
+    "runningSeparateBookSourceExercisesUnchanged": 98,
+    "browser": {
+      "status": "passed",
+      "results": [
+        {
+          "module": "pediatric-parenteral-nutrition",
+          "width": 1440,
+          "renderedBodies": 33,
+          "expandedBodyViews": 7,
+          "bankItemsCorrectWrong": 8,
+          "cumulativeRuntimeItems": 5,
+          "sourceVerifiedCumulativeInThisUnit": 2,
+          "sourceVerifiedChecksThisUnit": 1,
+          "wholeParentCumulativeClinicalSourceClosure": false,
+          "groups": 1,
+          "remediationAndSavedProgress": true
+        },
+        {
+          "module": "pediatric-parenteral-nutrition",
+          "width": 390,
+          "renderedBodies": 33,
+          "expandedBodyViews": 7,
+          "bankItemsCorrectWrong": 8,
+          "cumulativeRuntimeItems": 5,
+          "sourceVerifiedCumulativeInThisUnit": 2,
+          "sourceVerifiedChecksThisUnit": 1,
+          "wholeParentCumulativeClinicalSourceClosure": false,
+          "groups": 1,
+          "remediationAndSavedProgress": true
+        }
+      ],
+      "pageErrors": []
+    },
+    "manualRenderedReview": {
+      "status": "passed",
+      "pairs": 23,
+      "widths": [
+        1440,
+        390
+      ],
+      "viewsReviewed": [
+        "pedpn-023",
+        "pedpn-024",
+        "pedpn-025",
+        "pedpn-026",
+        "pedpn-027",
+        "pedpn-028",
+        "pedpn-105",
+        "pedpn-109",
+        "Balance growth with compatibility",
+        "Count both ions in phosphate products",
+        "Use pediatric vitamin products and labeled dosing",
+        "Adjust trace elements selectively",
+        "Distinguish vitamin dose from infusion volume",
+        "Check what a fixed trace-element mix supplies",
+        "Interpret trace-element tests in context",
+        "pediatric-minerals-micros check",
+        "cumulative-pediatric-parenteral-nutrition-pedpn-026",
+        "cumulative-pediatric-parenteral-nutrition-pedpn-109",
+        "Mineral and micronutrient figure",
+        "Source references",
+        "Mineral/micronutrient lesson title, summary and concepts",
+        "Mineral/micronutrient lesson key points",
+        "Mineral/micronutrient lesson application"
+      ],
+      "allFinalPairsManuallyViewed": true,
+      "scope": "Eight source-reviewed bank objects, seven whole teaching bodies, one embedded check, two derived cumulative objects, one unchanged figure,19 references and three metadata views. Correct/wrong grading, remediation and saved progress at both widths; all33 body texts equal runtime DOM;320px overflow check passed.",
+      "sourceRecomparison": "Final prompts, all choices/keys/rationales, seven bodies, check, two cumulative objects, figure and metadata compared again against reviewed primary source sections and prior exact safety evidence. FDA60 copper value, age/weight/preparation/dilution distinctions, selective supplementation and test-interpretation limits retained. FDA rounding/table ambiguity documented without new formula extrapolation."
+    },
+    "contentHashes": {
+      "src/data/modules/pediatricParenteralNutrition.js": "c541287b0ee8403009adb8b3385028d337050e22fe114f11151c735cc3711611",
+      "src/data/questionBanks/pediatricParenteralNutrition.js": "43eeb928dff5b130508d362281b45e4da1c75215cb9a35594639da13b9793b24"
+    }
+  },
+  "release": {
+    "branch": "audit/rxprep-content-2026-09-24",
+    "commit": "pending",
+    "push": "pending",
+    "receipt": "sequential-release-pediatric-pn-micronutrients-2026-10-01.json",
+    "mainMerge": "not performed",
+    "production": "not verified"
+  },
+  "nextAction": "Continue28remainingpediatricPNbankquestions/12bodies/twoembeddedchecks/twofigures/onecumulativeandfullmodulemetadata source reconciliation. Prioritize pediatric maintenance fluid and age/organ context, access/decision and delivered-intake/growth monitoring within approved PN sources. Compounding safety and mineral/micronutrient lessons already fully verified. FullChapter54 supplied-book source audit still pending. Preserve42ENquestions/20bodies/fourchecks/sixfigures and pending outsideENexception. Chapter1entry15andChapter11remainreviewing; do not advance whole chapter closure."
+}
