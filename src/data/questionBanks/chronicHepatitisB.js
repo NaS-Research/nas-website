@@ -47,8 +47,56 @@ const reviewLessonByConcept = {
 const dimensions = [["principle", "Which statement is most accurate?", 0], ["action", "Which action best applies the evidence?", 1], ["assessment", "Which plan demonstrates the strongest clinical reasoning?", 1], ["hazard", "Which error creates the greatest avoidable risk?", 2]];
 const generic = ["Use one isolated laboratory value without reviewing the full serology pattern, fibrosis, treatment history, or current guidance.", "Assume viral suppression removes every need for monitoring, vaccination, or cancer surveillance.", "Select therapy from drug name alone without kidney, bone, liver, pregnancy, resistance, coinfection, or adherence context."];
 
+const bookAdministrationRepairs = {
+  "chronic-hepatitis-b-040": {
+    "choices": [
+      "Ignoring renal and bone context can turn effective suppression into preventable toxicity.",
+      "Review renal function and bone risk before choosing or dosing TDF.",
+      "Check for interacting nephrotoxic drugs during TDF treatment.",
+      "Plan monitoring for HBV worsening if antiviral treatment is stopped."
+    ],
+    "rationale": "TDF can cause renal toxicity, including Fanconi syndrome, and loss of bone mineral density. Ignoring these risks can cause preventable harm. Kidney-based dosing, review of nephrotoxins, and monitoring after discontinuation address the book’s safety concerns."
+  },
+  "chronic-hepatitis-b-044": {
+    "choices": [
+      "Substituting any TAF-containing HIV combination for single-agent HBV therapy without a complete HIV plan is unsafe.",
+      "Verify the exact single-agent HBV product before dispensing.",
+      "Test for HIV before starting HBV antiviral therapy.",
+      "Choose therapy that appropriately treats both viruses when HIV and HBV coexist."
+    ],
+    "rationale": "The book distinguishes Vemlidy for HBV from TAF-containing HIV combination products. It also requires HIV testing before HBV treatment and an appropriate plan for both viruses in coinfection. A product substitution without that plan is unsafe; a shared ingredient does not establish interchangeability."
+  },
+  "chronic-hepatitis-b-046": {
+    "choices": [
+      "Test for HIV first, assess prior lamivudine resistance, calculate kidney function, and preserve the correct 0.5 or 1 mg context.",
+      "Give the same entecavir dose regardless of prior lamivudine resistance.",
+      "Start HBV antiviral therapy without testing for HIV.",
+      "Keep the dose unchanged despite kidney impairment requiring adjustment."
+    ],
+    "rationale": "Before entecavir, test for HIV and review prior treatment and kidney function. The book gives 0.5 mg daily for nucleoside-treatment-naive patients and 1 mg daily for lamivudine-resistant patients, with renal adjustment when needed. These are distinct dose contexts, not interchangeable strengths."
+  },
+  "chronic-hepatitis-b-047": {
+    "choices": [
+      "Test for HIV first, assess prior lamivudine resistance, calculate kidney function, and preserve the correct 0.5 or 1 mg context.",
+      "Give the same entecavir dose regardless of prior lamivudine resistance.",
+      "Start HBV antiviral therapy without testing for HIV.",
+      "Keep the dose unchanged despite kidney impairment requiring adjustment."
+    ],
+    "rationale": "Before entecavir, test for HIV and review prior treatment and kidney function. The book gives 0.5 mg daily for nucleoside-treatment-naive patients and 1 mg daily for lamivudine-resistant patients, with renal adjustment when needed. These are distinct dose contexts, not interchangeable strengths."
+  },
+  "chronic-hepatitis-b-048": {
+    "choices": [
+      "Entecavir monotherapy in unrecognized HIV can select HIV resistance.",
+      "Test for HIV before choosing the HBV antiviral regimen.",
+      "Account for kidney function when dosing entecavir.",
+      "Use the stated lamivudine-resistance context to distinguish 0.5 mg from 1 mg."
+    ],
+    "rationale": "HBV antivirals can select HIV resistance when HIV infection is unrecognized or untreated. HIV testing and an appropriate regimen for coinfection must precede therapy; the other choices address the book’s dosing and safety requirements."
+  }
+};
+
 export const chronicHepatitisBQuestionBank = concepts.flatMap(([slug, principle, action, hazard], conceptIndex) => dimensions.map(([dimension, stem, answerType], dimensionIndex) => {
   const correct = [principle, action, hazard][answerType];
   const choices = dimension === "hazard" ? [hazard, principle, action, generic[(conceptIndex + dimensionIndex) % 3]] : [correct, hazard, generic[(conceptIndex + dimensionIndex) % 3], generic[(conceptIndex + dimensionIndex + 1) % 3]];
   return { id: `chronic-hepatitis-b-${String(conceptIndex * 4 + dimensionIndex + 1).padStart(3, "0")}`, question: `${stem} Focus: ${slug.replaceAll("-", " ")}.`, choices, answer: 0, rationale: `${principle} ${action}`, reviewHref: `#${reviewLessonByConcept[slug]}`, difficulty: dimensionIndex < 2 ? "foundational" : "advanced" };
-}));
+})).map(question => bookAdministrationRepairs[question.id] ? { ...question, ...bookAdministrationRepairs[question.id] } : question);

@@ -43,8 +43,76 @@ const reviewLessonByConcept = {
 };
 const dimensions = [["principle", "Which statement is most accurate?", 0], ["action", "Which action best applies the evidence?", 1], ["assessment", "Which plan demonstrates the strongest clinical reasoning?", 1], ["hazard", "Which error creates the greatest avoidable risk?", 2]];
 const generic = ["Use one result without reviewing fibrosis, prior treatment, interactions, coinfection, or liver compensation.", "Assume every DAA combination, genotype, and cirrhosis state is interchangeable.", "Stop follow-up when the last tablet is taken without confirming SVR12 or planning cirrhosis surveillance."];
+const bookAdministrationRepairs = {
+  "hepatitis-c-033": {
+    "choices": [
+      "Glecaprevir and pibrentasvir combines an NS3/4A protease inhibitor with an NS5A inhibitor and is taken as three adult tablets together once daily with food.",
+      "Glecaprevir and pibrentasvir are both NS5B polymerase inhibitors.",
+      "The adult tablet regimen is three tablets divided across separate fasting doses.",
+      "Food instructions can be copied unchanged from every other HCV protease-inhibitor combination."
+    ],
+    "rationale": "Glecaprevir targets NS3/4A protease and pibrentasvir targets the NS5A replication complex. The adult tablet regimen is three tablets together once daily with food. Meal instructions are product-specific: elbasvir/grazoprevir is an exception to the protease-inhibitor-with-food mnemonic."
+  },
+  "hepatitis-c-036": {
+    "choices": [
+      "Any prior hepatic decompensation excludes Mavyret even if the current Child-Pugh score appears improved.",
+      "Current improvement in Child-Pugh class erases any history of hepatic decompensation.",
+      "A prior decompensation episode can be ignored if the patient can take tablets with food.",
+      "The meal requirement replaces review of hepatic contraindications."
+    ],
+    "rationale": "The book contraindicates Mavyret in Child-Pugh B or C and in patients with a history of hepatic decompensation. An improved current score does not remove that historical exclusion. Taking tablets with food addresses administration, not eligibility.",
+    "question": "Which hepatic exclusion must be respected when considering glecaprevir/pibrentasvir?"
+  },
+  "hepatitis-c-040": {
+    "choices": [
+      "Sofosbuvir alone is not a complete HCV regimen.",
+      "Sofosbuvir monotherapy is a complete substitute for a combination regimen.",
+      "Two drugs with the same NS5B polymerase target are the preferred way to build every HCV regimen.",
+      "Meal instructions alone determine whether an HCV antiviral combination is appropriate."
+    ],
+    "rationale": "Sofosbuvir monotherapy is not effective or recommended. HCV regimens combine agents acting at different targets; the book contrasts a preferred sofosbuvir/velpatasvir combination with the inappropriate pairing of two NS5B-targeting agents.",
+    "question": "Which limitation must be recognized when choosing a sofosbuvir regimen?"
+  },
+  "hepatitis-c-053": {
+    "choices": [
+      "Reduced gastric acidity lowers absorption of ledipasvir and velpatasvir, with product-specific antacid, H2 blocker, and PPI rules.",
+      "Acid-reducing medicines always increase ledipasvir and velpatasvir exposure.",
+      "Every antacid, H2 blocker and PPI uses the same timing rule with every DAA.",
+      "The presence of food removes the need to review acid suppression."
+    ],
+    "rationale": "Antacids, H2 blockers and PPIs can lower ledipasvir or velpatasvir concentrations. The book gives different instructions for these acid-reducing classes and specifically says PPIs are not recommended with Epclusa. Review the exact product and timing rather than applying one universal spacing rule; this does not establish a current label-specific exception."
+  },
+  "hepatitis-c-054": {
+    "choices": [
+      "Use the exact label and timing rather than one class-wide separation rule.",
+      "Apply one identical separation rule to all antacids, H2 blockers and PPIs.",
+      "Add an over-the-counter PPI to Epclusa without reviewing the combination.",
+      "Treat the food instruction as a substitute for acid-suppression review."
+    ],
+    "rationale": "Antacids, H2 blockers and PPIs can lower ledipasvir or velpatasvir concentrations. The book gives different instructions for these acid-reducing classes and specifically says PPIs are not recommended with Epclusa. Review the exact product and timing rather than applying one universal spacing rule; this does not establish a current label-specific exception."
+  },
+  "hepatitis-c-055": {
+    "choices": [
+      "Use the exact label and timing rather than one class-wide separation rule.",
+      "Apply one identical separation rule to all antacids, H2 blockers and PPIs.",
+      "Add an over-the-counter PPI to Epclusa without reviewing the combination.",
+      "Treat the food instruction as a substitute for acid-suppression review."
+    ],
+    "rationale": "Antacids, H2 blockers and PPIs can lower ledipasvir or velpatasvir concentrations. The book gives different instructions for these acid-reducing classes and specifically says PPIs are not recommended with Epclusa. Review the exact product and timing rather than applying one universal spacing rule; this does not establish a current label-specific exception."
+  },
+  "hepatitis-c-056": {
+    "choices": [
+      "Adding an over-the-counter PPI without review can reduce DAA exposure.",
+      "Review the exact DAA and acid-reducing product before changing administration.",
+      "Keep antacid, H2 blocker and PPI instructions distinct.",
+      "Reconcile nonprescription acid-reducing medicines before treatment."
+    ],
+    "rationale": "Antacids, H2 blockers and PPIs can lower ledipasvir or velpatasvir concentrations. The book gives different instructions for these acid-reducing classes and specifically says PPIs are not recommended with Epclusa. Review the exact product and timing rather than applying one universal spacing rule; this does not establish a current label-specific exception."
+  }
+};
+
 export const hepatitisCQuestionBank = concepts.flatMap(([slug, principle, action, hazard], conceptIndex) => dimensions.map(([dimension, stem, answerType], dimensionIndex) => {
   const correct = [principle, action, hazard][answerType];
   const choices = dimension === "hazard" ? [hazard, principle, action, generic[(conceptIndex + dimensionIndex) % 3]] : [correct, hazard, generic[(conceptIndex + dimensionIndex) % 3], generic[(conceptIndex + dimensionIndex + 1) % 3]];
   return { id: `hepatitis-c-${String(conceptIndex * 4 + dimensionIndex + 1).padStart(3, "0")}`, question: `${stem} Focus: ${slug.replaceAll("-", " ")}.`, choices, answer: 0, rationale: `${principle} ${action}`, reviewHref: `#${reviewLessonByConcept[slug]}`, difficulty: dimensionIndex < 2 ? "foundational" : "advanced" };
-}));
+})).map(question => bookAdministrationRepairs[question.id] ? { ...question, ...bookAdministrationRepairs[question.id] } : question);
