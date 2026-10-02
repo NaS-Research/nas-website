@@ -16,7 +16,7 @@ function displayName(name) {
 }
 
 export default function DrugLibrary() {
-  const classMenuRef = useRef(null);
+  const toolbarRef = useRef(null);
   const resultsRef = useRef(null);
   const [mode, setMode] = useState("core");
   const [query, setQuery] = useState("");
@@ -31,6 +31,31 @@ export default function DrugLibrary() {
     const initialQuery = new URLSearchParams(window.location.search).get("q");
     if (initialQuery) setQuery(initialQuery.trim().slice(0, 160));
   }, []);
+
+  useEffect(() => {
+    const closeMenus = (event) => {
+      if (event.type === "keydown" && event.key !== "Escape") return;
+      if (event.type !== "keydown" && toolbarRef.current?.contains(event.target)) return;
+      toolbarRef.current?.querySelectorAll("details[open]").forEach((menu) => {
+        menu.open = false;
+        if (event.type === "keydown") menu.querySelector("summary")?.focus();
+      });
+    };
+    document.addEventListener("pointerdown", closeMenus);
+    document.addEventListener("keydown", closeMenus);
+    return () => {
+      document.removeEventListener("pointerdown", closeMenus);
+      document.removeEventListener("keydown", closeMenus);
+    };
+  }, []);
+
+  const activeFilterCount = Number(letter !== "All") + Number(therapeuticClass !== "All classes");
+  const clearFilters = () => {
+    setQuery("");
+    setLetter("All");
+    setTherapeuticClass("All classes");
+    setPage(1);
+  };
 
   const filtered = useMemo(() => {
     const normalized = query.toLowerCase();
@@ -100,62 +125,53 @@ export default function DrugLibrary() {
         <p>Browse a growing medication library organized by generic name and therapeutic class, or search the current RxNorm vocabulary.</p>
       </header>
 
-      <div className="drug-library__tabs" role="tablist" aria-label="Drug collections">
-        <button type="button" role="tab" aria-selected={mode === "core"} className={mode === "core" ? "is-active" : ""} onClick={() => changeMode("core")}>
-          Drug library
-        </button>
-        <button type="button" role="tab" aria-selected={mode === "all"} className={mode === "all" ? "is-active" : ""} onClick={() => changeMode("all")}>
-          Medication search <span>RxNorm</span>
-        </button>
-        <button type="button" role="tab" aria-selected={mode === "questions"} className={mode === "questions" ? "is-active" : ""} onClick={() => changeMode("questions")}>
-          Questions <span>{drugQuestions.length}</span>
-        </button>
+      <div className={styles.toolbar} ref={toolbarRef}>
+        {mode !== "questions" ? <label className={styles.search}>
+          <span className="sr-only">{mode === "core" ? "Search medications" : "Search RxNorm"}</span>
+          <svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" /><path d="m16 16 5 5" /></svg>
+          <input type="search" maxLength={160} value={query} onChange={(event) => { setQuery(event.target.value); setPage(1); }} placeholder={mode === "core" ? "Search medications" : "Search RxNorm"} />
+        </label> : <span className={styles.modeTitle}>Medication questions</span>}
+        <div className={styles.actions}>
+          {mode === "core" && <details className={styles.menu} name="drug-library-tools">
+            <summary>
+              <svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18" /><path d="M8 3v6M16 9v6M8 15v6" /></svg>
+              Filter {activeFilterCount > 0 && <span className={styles.filterCount}>{activeFilterCount}</span>}
+            </summary>
+            <div className={styles.popover}>
+              <label className={styles.classLabel} htmlFor="drug-class">Therapeutic class</label>
+              <select id="drug-class" value={therapeuticClass} onChange={(event) => { setTherapeuticClass(event.target.value); setPage(1); }}>
+                {studyClasses.map((item) => <option key={item}>{item}</option>)}
+              </select>
+              <fieldset className={styles.alphabet}>
+                <legend>Starts with</legend>
+                <div>{letters.map((item) => <button type="button" aria-pressed={letter === item} onClick={() => { setLetter(item); setPage(1); }} key={item}>{item}</button>)}</div>
+              </fieldset>
+              <div className={styles.popoverFooter}>
+                <button type="button" onClick={clearFilters}>Reset</button>
+                <button type="button" onClick={(event) => { const menu = event.currentTarget.closest("details"); menu.open = false; menu.querySelector("summary").focus(); }}>Show {filtered.length} medications</button>
+              </div>
+            </div>
+          </details>}
+          <details className={styles.menu} name="drug-library-tools">
+            <summary aria-label="More medication tools" title="More medication tools"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><circle cx="5" cy="12" r="1.5" /><circle cx="12" cy="12" r="1.5" /><circle cx="19" cy="12" r="1.5" /></svg></summary>
+            <div className={`${styles.popover} ${styles.tools}`}>
+              <p>Explore medicines</p>
+              {[{ id: "core", label: "Drug library", detail: `${coreDrugs.length} reviewed profiles`, icon: "M4 4h6a3 3 0 0 1 3 3v14a4 4 0 0 0-4-3H4V4Zm16 0h-4a3 3 0 0 0-3 3m0 14a4 4 0 0 1 4-3h3V4Z" }, { id: "all", label: "RxNorm search", detail: "National medication vocabulary", icon: "M15 3h6v6M21 3l-9 9M10 5H4v15h15v-6" }, { id: "questions", label: "Practice questions", detail: `${drugQuestions.length} questions`, icon: "M8 8a4 4 0 0 1 8 0c0 3-4 3-4 6m0 3v2" }].map((item) => <button type="button" aria-pressed={mode === item.id} key={item.id} onClick={(event) => { const menu = event.currentTarget.closest("details"); menu.open = false; changeMode(item.id); menu.querySelector("summary").focus(); }}>
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true"><path d={item.icon} /></svg>
+                <span><strong>{item.label}</strong><small>{item.detail}</small></span><b aria-hidden="true">{mode === item.id ? "✓" : "↗"}</b>
+              </button>)}
+            </div>
+          </details>
+        </div>
       </div>
-
-      {mode !== "questions" && <div className="drug-library__toolbar">
-        <label>
-          <span className="sr-only">Search medications</span>
-          <i aria-hidden="true">⌕</i>
-          <input value={query} onChange={(event) => { setQuery(event.target.value); setPage(1); }} placeholder={mode === "core" ? "Search generic, brand, or class" : "Search the national medication vocabulary"} />
-        </label>
-        <p>{mode === "core" ? `${filtered.length} medications` : "Current RxNorm concepts"}</p>
+      {mode !== "questions" && <div className={styles.meta}>
+        <p role="status" aria-live="polite">{mode === "core" ? `${filtered.length} medications${letter !== "All" ? ` · ${letter}` : ""}${therapeuticClass !== "All classes" ? ` · ${therapeuticClass}` : ""}` : "RxNorm · National medication vocabulary"}</p>
+        {mode === "core" && (query || activeFilterCount > 0) && <button type="button" onClick={clearFilters}>Clear filters <span aria-hidden="true">×</span></button>}
+        {mode === "all" && <button type="button" onClick={() => changeMode("core")}>Back to library</button>}
       </div>}
 
       {mode === "core" ? (
         <>
-          <details className="drug-library__class-menu" ref={classMenuRef}>
-            <summary>
-              <span>Therapeutic class</span>
-              <strong>
-                {therapeuticClass !== "All classes" && <i style={{ "--drug-class-color": getTherapeuticClassColor(therapeuticClass) }} aria-hidden="true" />}
-                {therapeuticClass}
-              </strong>
-              <b aria-hidden="true">⌄</b>
-            </summary>
-            <div className="drug-library__class-options" aria-label="Filter medications by therapeutic class">
-              {studyClasses.map((item) => (
-                <button
-                  type="button"
-                  className={therapeuticClass === item ? "is-active" : ""}
-                  style={item === "All classes" ? undefined : { "--drug-class-color": getTherapeuticClassColor(item) }}
-                  onClick={() => {
-                    setTherapeuticClass(item);
-                    setLetter("All");
-                    setPage(1);
-                    classMenuRef.current?.removeAttribute("open");
-                  }}
-                  key={item}
-                >
-                  {item !== "All classes" && <i aria-hidden="true" />}
-                  <span>{item}</span>
-                  {therapeuticClass === item && <b aria-hidden="true">✓</b>}
-                </button>
-              ))}
-            </div>
-          </details>
-          <div className="drug-library__letters" aria-label="Filter by first letter">
-            {letters.map((item) => <button type="button" className={letter === item ? "is-active" : ""} onClick={() => { setLetter(item); setPage(1); }} key={item}>{item}</button>)}
-          </div>
           <div className={`drug-library__grid ${styles.results}`} ref={resultsRef} tabIndex={-1} aria-label="Medication results">
             {filtered.slice((currentPage - 1) * 9, currentPage * 9).map((drug) => (
               <article className={`drug-card ${drug.appearance ? "drug-card--featured" : ""}`} key={drug.generic}>
