@@ -1193,7 +1193,7 @@
         {
           "slug": "pediatric-pn-decision-access",
           "status": "verified",
-          "latestScopedEvidence": "pediatric-parenteral-nutrition-starter-order-reconciliation-review.json",
+          "latestScopedEvidence": "pediatric-parenteral-nutrition-guidelines-review.json",
           "wholeLessonVerified": true,
           "teachingBodiesVerified": 7,
           "teachingBodiesTotal": 7,
@@ -1205,55 +1205,59 @@
         },
         {
           "slug": "pediatric-fluid-glucose",
-          "status": "reviewing",
-          "latestScopedEvidence": "pediatric-parenteral-nutrition-starter-order-reconciliation-review.json",
+          "status": "verified",
+          "latestScopedEvidence": "pediatric-parenteral-nutrition-guidelines-review.json",
           "embeddedCheckVerified": true,
-          "wholeLessonVerified": false,
-          "teachingBodiesVerified": 4,
+          "wholeLessonVerified": true,
+          "teachingBodiesVerified": 6,
           "teachingBodiesTotal": 6,
           "metadataVerified": true,
           "applicationVerified": true,
-          "metadataEvidence": "pediatric-parenteral-nutrition-metadata-review.json"
+          "metadataEvidence": "pediatric-parenteral-nutrition-metadata-review.json",
+          "figureVerified": true
         },
         {
           "slug": "pediatric-protein-lipid",
-          "status": "reviewing",
-          "latestScopedEvidence": "pediatric-parenteral-nutrition-metabolic-response-review.json",
+          "status": "verified",
+          "latestScopedEvidence": "pediatric-parenteral-nutrition-guidelines-review.json",
           "embeddedCheckVerified": true,
-          "wholeLessonVerified": false,
-          "teachingBodiesVerified": 6,
+          "wholeLessonVerified": true,
+          "teachingBodiesVerified": 7,
           "teachingBodiesTotal": 7,
           "metadataVerified": true,
-          "metadataEvidence": "pediatric-parenteral-nutrition-metadata-review.json"
+          "metadataEvidence": "pediatric-parenteral-nutrition-metadata-review.json",
+          "figureVerified": true
         },
         {
           "slug": "pediatric-minerals-micros",
           "status": "verified",
-          "latestScopedEvidence": "pediatric-parenteral-nutrition-micronutrient-review.json",
+          "latestScopedEvidence": "pediatric-parenteral-nutrition-guidelines-review.json",
           "wholeLessonVerified": true,
           "embeddedCheckVerified": true,
           "teachingBodiesVerified": 7,
           "mappedBankQuestionsVerified": 8,
           "figureVerified": true,
           "metadataVerified": true,
-          "metadataEvidence": "pediatric-parenteral-nutrition-metadata-review.json"
+          "metadataEvidence": "pediatric-parenteral-nutrition-metadata-review.json",
+          "teachingBodiesTotal": 7
         },
         {
           "slug": "pediatric-compounding-safety",
           "status": "verified",
-          "latestScopedEvidence": "pediatric-parenteral-nutrition-compounding-safety-review.json",
+          "latestScopedEvidence": "pediatric-parenteral-nutrition-guidelines-review.json",
           "wholeLessonVerified": true,
           "teachingBodiesVerified": 6,
           "mappedBankQuestionsVerified": 10,
           "embeddedCheckVerified": true,
           "figureVerified": true,
           "metadataVerified": true,
-          "metadataEvidence": "pediatric-parenteral-nutrition-metadata-review.json"
+          "metadataEvidence": "pediatric-parenteral-nutrition-metadata-review.json",
+          "teachingBodiesTotal": 6
         },
         {
           "slug": "pediatric-order-monitoring",
           "status": "verified",
-          "latestScopedEvidence": "pediatric-parenteral-nutrition-starter-order-reconciliation-review.json",
+          "latestScopedEvidence": "pediatric-parenteral-nutrition-guidelines-review.json",
           "wholeLessonVerified": true,
           "teachingBodiesVerified": 9,
           "teachingBodiesTotal": 9,
@@ -1265,7 +1269,7 @@
         }
       ],
       "questions": 101,
-      "status": "reviewing",
+      "status": "verified",
       "evidence": [
         "pediatric-parenteral-nutrition-book-calculations-review.json",
         "pediatric-parenteral-nutrition-preterm-lipid-review.json",
@@ -1278,7 +1282,8 @@
         "pediatric-parenteral-nutrition-metabolic-response-review.json",
         "pediatric-parenteral-nutrition-starter-order-reconciliation-review.json",
         "pediatric-parenteral-nutrition-metadata-review.json",
-        "pediatric-parenteral-nutrition-source-gap-reconciliation.json"
+        "pediatric-parenteral-nutrition-source-gap-reconciliation.json",
+        "pediatric-parenteral-nutrition-guidelines-review.json"
       ],
       "bookCalculationReview": {
         "evidence": "pediatric-parenteral-nutrition-book-calculations-review.json",
@@ -2864,6 +2869,28 @@
           "Do not impose blanket protein restriction"
         ],
         "wholeModuleVerified": false
+      },
+      "wholeModuleVerified": true,
+      "latestScopedEvidence": "pediatric-parenteral-nutrition-guidelines-review.json",
+      "approvedGuidelineReview": {
+        "evidence": "pediatric-parenteral-nutrition-guidelines-review.json",
+        "bank": 101,
+        "sourceVerifiedBank": 101,
+        "remainingBank": 0,
+        "bodies": 42,
+        "sourceVerifiedBodies": 42,
+        "remainingBodies": 0,
+        "embeddedChecks": 6,
+        "sourceVerifiedEmbeddedChecks": 6,
+        "figures": 6,
+        "sourceVerifiedFigures": 6,
+        "cumulative": 5,
+        "sourceVerifiedCumulative": 5,
+        "metadataVerified": true,
+        "wholeModuleVerified": true,
+        "wholeChapterVerified": false,
+        "pendingQuestionIds": [],
+        "remainingWholeBodyHeadings": []
       }
     },
     {
