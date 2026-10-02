@@ -1,4 +1,21 @@
 .results { scroll-margin-top: 100px; }
+.page :global(.drug-library-back) { margin-top: 6.5rem; }
+.page :global(.drug-library) { padding-block: clamp(2.5rem, 5vw, 4.5rem) clamp(2.5rem, 4vw, 4rem); }
+.page :global(.drug-library__hero) { padding-bottom: clamp(2rem, 4vw, 3rem); }
+.page > :global(.site-closing) { --footer-blend-height: clamp(2rem, 3vw, 3rem); }
+.page :global(.site-closing__social) { padding-block: 1.5rem; margin-bottom: clamp(2rem, 4vw, 3rem); }
+.page :global(.site-closing__base button) { margin-left: 0; padding-left: 0; }
+:global(body):has(.page) :global(.pharmacy-tool-menu:not([open])) { width: max-content; }
+.sourceNote { display: grid; grid-template-columns: 10rem minmax(0, 46rem); gap: 1rem 2rem; padding-top: 1.75rem; color: #97938c; font-size: .75rem; line-height: 1.8; }
+.sourceTitle { color: #cbc5bb; font-size: .75rem; font-weight: 500; }
+.sourceNote a { color: #c4a575; text-decoration: underline; text-underline-offset: .2em; }
+.sourceNote a:hover { color: #eeeae2; }
+.sourceNote a:focus-visible { outline: 2px solid #c4a575; outline-offset: 4px; }
+@media (max-width: 767px) {
+  .sourceNote { grid-template-columns: 1fr; gap: .5rem; padding-top: 1.5rem; }
+  .page :global(.site-closing__base) { display: grid; grid-template-columns: 1fr; justify-items: start; }
+  .page :global(.drug-card:last-child:nth-child(odd)) { grid-column: 1 / -1; }
+}
 .toolbar { display: flex; align-items: center; gap: 1rem; padding-block: .8rem; border-block: 1px solid var(--nas-line); position: relative; }
 .search { display: flex; align-items: center; gap: .8rem; flex: 1; min-width: 0; color: #a7a39c; }
 .search input { min-width: 0; width: 100%; min-height: 44px; background: transparent; color: #eeeae2; font-size: 16px; }
@@ -35,7 +52,7 @@
 .modeTitle { flex: 1; color: #eeeae2; font-size: .9rem; }
 .toolbar :is(summary, button, select, input):focus-visible, .meta button:focus-visible { outline: 2px solid #c4a575; outline-offset: 3px; }
 @media (max-width: 480px) { .toolbar { gap: .25rem; } .search { gap: .5rem; } .menu summary { padding-inline: .5rem; gap: .4rem; } .actions { gap: 0; } .popover { padding: 1rem; } .meta { gap: .5rem; } }
-.pagination { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding-block: 1.5rem; border-bottom: 1px solid var(--nas-line); }
+.pagination { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding-block: 1rem; border-bottom: 1px solid var(--nas-line); }
 .pagination p { color: var(--nas-muted); font-size: .78rem; text-align: center; }
 .pagination button { min-height: 44px; padding: .65rem .9rem; color: var(--nas-gold-light); font-size: .8rem; cursor: pointer; transition: color 200ms ease; }
 .pagination button:hover:not(:disabled) { color: #fff; }

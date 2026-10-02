@@ -1,6 +1,7 @@
 import Link from "next/link";
 import DrugLibrary from "@/components/learn/DrugLibrary";
 import Footer from "@/components/Footer";
+import styles from "@/components/learn/DrugLibraryPagination.module.css";
 
 export const metadata = {
   title: "Drug Library | NaS Learn",
@@ -11,7 +12,7 @@ export const metadata = {
 
 export default function DrugLibraryPage() {
   return (
-    <div className="nas-page drug-library-page">
+    <div className={`nas-page drug-library-page ${styles.page}`}>
       <div data-page-main className="nas-shell">
         <Link href="/learn" className="learning-back drug-library-back">← NaS Learn</Link>
         <DrugLibrary />
