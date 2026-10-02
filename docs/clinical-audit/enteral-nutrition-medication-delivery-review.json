@@ -1,0 +1,806 @@
+{
+  "recordedAt": "2026-10-02T18:46:43.294936+00:00",
+  "baseCommit": "c0ecc6e3122598dbe77df69ad0fce5179610842c",
+  "unit": "Enteral nutrition medication administration, liquid tolerance and tube obstruction",
+  "approval": {
+    "text": "I approve all. continue working",
+    "scope": "Approved supplemental ASPEN/SCCM EN primary guidance and FDA sources; approval persists."
+  },
+  "sources": [
+    {
+      "id": "book",
+      "source": "Private RxPrep2023",
+      "read": "Complete printed162/PDF170 drug-administration section reread; full rendered page, feeding-tube diagram and all labeled sites inspected.",
+      "adopted": "Drug-specific compatibility and alteration review, no medication mixed into formula, risk of blockage/altered absorption/toxicity; general hazardous/release review for unchanged medication diagram.",
+      "limits": "No new product-specific administration or interaction interval adopted. Existing individually reviewed drug bodies retained. General book feeding-hold interval distinguished from medication-specific separation under approved primary guidance. Book/extract/images remain private."
+    },
+    {
+      "id": "safe2017",
+      "url": "https://aspenjournals.onlinelibrary.wiley.com/doi/full/10.1177/0148607116673053",
+      "sourceYear": 2017,
+      "read": "Complete Section7 background; Q7.1/Q7.2/Q7.3 recommendations and rationale. Complete Section8 background; Q8.1/Q8.2/Q8.3/Q8.6 recommendations and rationale. Publisher full text reviewed including medication pause versus interaction hold, sorbitol/excipients, gastric versus postpyloric dissolution/absorption, purified water, separate administration, first-line warm-water declogging and trained protocol escalation.",
+      "visuals": "No table or figure within these adopted background/question sections. Source quantitative examples, dilution ranges, syringe sizes, osmolality thresholds, enzyme mixture and dwell-time protocols read but not adopted.",
+      "limits": "Dated safe-practice recommendations; whole paper not audited. No claim of latest2026 USP/OSHA/NIOSH requirements, no new fixed flush/hold dose, no hazardous-drug slurry instruction, no enzyme recipe or homemade mechanical device. Previous corrigendum remains reviewed; fasting rules not adopted."
+    },
+    {
+      "id": "sccm2016",
+      "url": "https://sccmmedia.sccm.org/documents/LearnICU/Guidelines/Nutrition-SCCM-ASPEN.pdf",
+      "sourceYear": 2016,
+      "read": "Complete D6 recommendation and rationale, printed403/PDF14.",
+      "visuals": "Full rendered PDF14 inspected, including complete D6 across both columns. No figure/table in D6. Adjacent D4d/D5/E1 not adopted as new closure in this unit.",
+      "limits": "Adult critically ill population; recommendation to avoid automatic interruption solely for diarrhea is expert consensus. Diarrhea causes listed without an unsupported comparative ranking. No new infectious diagnostic algorithm, symptom cutoff, or treatment protocol adopted."
+    }
+  ],
+  "questionReview": [
+    {
+      "question": {
+        "id": "enteral-nutrition-034",
+        "question": "Two medications have been verified as compatible with the intended tube, with no prolonged feeding hold required. Which sequence is safest?",
+        "choices": [
+          "Pause feeding; flush, give the first drug, flush, give the second drug, flush, and restart promptly",
+          "Combine the two drugs in one syringe because each is individually compatible",
+          "Add the drugs directly to the formula rather than interrupting delivery",
+          "Give the drugs separately but omit the intervening flush"
+        ],
+        "answer": 0,
+        "rationale": "The 2017 ASPEN safe-practice guidance recommends pausing feeding, administering medications separately, and flushing before, between, and after doses. Separate compatibility does not establish compatibility when mixed. Restart promptly after administration unless a specific interaction or clinical condition requires longer separation.",
+        "reviewHref": "#medication-administration"
+      },
+      "status": "verified",
+      "stemVerified": true,
+      "oneBestAnswerVerified": true,
+      "rationaleVerified": true,
+      "sourceEvidence": [
+        "safe2017 Q8.2 recommendations7–15 and full rationale; Q7.2 individual fluid needs"
+      ],
+      "choicesReviewed": [
+        {
+          "text": "Pause feeding; flush, give the first drug, flush, give the second drug, flush, and restart promptly",
+          "keyed": true,
+          "review": "Pause, flush, separate doses, intervening/final flush and prompt resumption fit no-interaction-hold stem."
+        },
+        {
+          "text": "Combine the two drugs in one syringe because each is individually compatible",
+          "keyed": false,
+          "review": "Individual tube compatibility does not establish mixed-drug compatibility."
+        },
+        {
+          "text": "Add the drugs directly to the formula rather than interrupting delivery",
+          "keyed": false,
+          "review": "Do not add medications directly to formula."
+        },
+        {
+          "text": "Give the drugs separately but omit the intervening flush",
+          "keyed": false,
+          "review": "Intervening flush is part of the recommended sequence."
+        }
+      ]
+    },
+    {
+      "question": {
+        "id": "enteral-nutrition-038",
+        "question": "A medication order is transferred from gastric to jejunal delivery. Why must its formulation and administration method be reassessed?",
+        "choices": [
+          "Bypassing gastric conditions or a primary absorption site can change drug dissolution and exposure",
+          "The same preparation and exposure can be assumed because both routes use a feeding tube",
+          "A larger water flush establishes that gastric and jejunal delivery are equivalent",
+          "An oral liquid designation alone establishes suitability for jejunal delivery"
+        ],
+        "answer": 0,
+        "rationale": "The distal tip affects the conditions for dissolution and absorption. Evaluate the exact drug and formulation before applying a gastric method to jejunal delivery. More water or an oral liquid label does not establish site compatibility, and exposure should not be assumed unchanged.",
+        "reviewHref": "#medication-administration"
+      },
+      "status": "verified",
+      "stemVerified": true,
+      "oneBestAnswerVerified": true,
+      "rationaleVerified": true,
+      "sourceEvidence": [
+        "safe2017 Q8.1/Q8.3/Q8.6 full recommendations/rationale"
+      ],
+      "choicesReviewed": [
+        {
+          "text": "Bypassing gastric conditions or a primary absorption site can change drug dissolution and exposure",
+          "keyed": true,
+          "review": "Gastric dissolution conditions or primary absorption site may be bypassed."
+        },
+        {
+          "text": "The same preparation and exposure can be assumed because both routes use a feeding tube",
+          "keyed": false,
+          "review": "Feeding-tube designation alone does not establish equivalent preparation/exposure."
+        },
+        {
+          "text": "A larger water flush establishes that gastric and jejunal delivery are equivalent",
+          "keyed": false,
+          "review": "More water does not prove site equivalence."
+        },
+        {
+          "text": "An oral liquid designation alone establishes suitability for jejunal delivery",
+          "keyed": false,
+          "review": "An oral-liquid label does not prove jejunal suitability."
+        }
+      ]
+    },
+    {
+      "question": {
+        "id": "enteral-nutrition-039",
+        "question": "A tube-fed patient develops loose stools after several liquid medications are added. Which formulation characteristics warrant review?",
+        "choices": [
+          "Sorbitol content and high osmolality",
+          "The oral liquid designation as proof that the preparation cannot contribute",
+          "The absence of tablet crushing as proof of good gastrointestinal tolerance",
+          "Individual tube compatibility as proof that excipients cannot cause symptoms"
+        ],
+        "answer": 0,
+        "rationale": "Sorbitol is a cathartic, and high-osmolality liquid medications can cause gastrointestinal disturbances. An oral label, lack of crushing, or tube compatibility does not exclude adverse effects from the formulation. Assess other causes of diarrhea as well; timing alone does not prove a medication caused it.",
+        "reviewHref": "#medication-administration"
+      },
+      "status": "verified",
+      "stemVerified": true,
+      "oneBestAnswerVerified": true,
+      "rationaleVerified": true,
+      "sourceEvidence": [
+        "safe2017 Q8.1 liquid-excipient/osmolality rationale; Q8.2 complete rationale, sorbitol cathartic"
+      ],
+      "choicesReviewed": [
+        {
+          "text": "Sorbitol content and high osmolality",
+          "keyed": true,
+          "review": "Sorbitol and high osmolality warrant review for GI symptoms."
+        },
+        {
+          "text": "The oral liquid designation as proof that the preparation cannot contribute",
+          "keyed": false,
+          "review": "Oral designation does not exclude formulation contribution."
+        },
+        {
+          "text": "The absence of tablet crushing as proof of good gastrointestinal tolerance",
+          "keyed": false,
+          "review": "Not crushing tablets does not prove liquid tolerance."
+        },
+        {
+          "text": "Individual tube compatibility as proof that excipients cannot cause symptoms",
+          "keyed": false,
+          "review": "Tube compatibility does not exclude excipient adverse effects."
+        }
+      ]
+    },
+    {
+      "question": {
+        "id": "enteral-nutrition-045",
+        "question": "An adult has an uncomplicated occlusion of a correctly positioned feeding tube. What is the initial approach after checking for kinks?",
+        "choices": [
+          "Follow the institutional procedure using warm water and gentle back-and-forth syringe movement",
+          "Begin with an enzyme mixture before trying water",
+          "Use an acidic carbonated beverage as the preferred first-line fluid",
+          "Increase syringe pressure until the obstruction is forced through"
+        ],
+        "answer": 0,
+        "rationale": "The 2017 ASPEN safe-practice guidance recommends warm water and gentle technique first. Acidic beverages can worsen formula precipitation; forceful pressure is not the recommended gentle approach. Enzyme products or approved devices are subsequent options when water fails, used by trained staff under the appropriate protocol.",
+        "reviewHref": "#monitoring-complications"
+      },
+      "status": "verified",
+      "stemVerified": true,
+      "oneBestAnswerVerified": true,
+      "rationaleVerified": true,
+      "sourceEvidence": [
+        "safe2017 Section7 background/Q7.3 complete recommendations/rationale"
+      ],
+      "choicesReviewed": [
+        {
+          "text": "Follow the institutional procedure using warm water and gentle back-and-forth syringe movement",
+          "keyed": true,
+          "review": "Warm water and gentle back-and-forth technique first after kinks assessed in uncomplicated positioned tube."
+        },
+        {
+          "text": "Begin with an enzyme mixture before trying water",
+          "keyed": false,
+          "review": "Enzyme protocol is a subsequent option if water fails."
+        },
+        {
+          "text": "Use an acidic carbonated beverage as the preferred first-line fluid",
+          "keyed": false,
+          "review": "Acidic beverages may worsen formula precipitation."
+        },
+        {
+          "text": "Increase syringe pressure until the obstruction is forced through",
+          "keyed": false,
+          "review": "Forceful pressure is not the recommended gentle technique."
+        }
+      ]
+    },
+    {
+      "question": {
+        "id": "enteral-nutrition-046",
+        "question": "A stable critically ill adult receiving enteral nutrition develops diarrhea. What should be reviewed before attributing it to the formula alone?",
+        "choices": [
+          "Medications such as antibiotics or sorbitol preparations, and possible infectious causes",
+          "The formula name as sufficient evidence of the cause",
+          "A single liquid stool as proof that enteral feeding must be permanently stopped",
+          "The absence of a formula change as a reason to exclude medication effects"
+        ],
+        "answer": 0,
+        "rationale": "The 2016 SCCM/ASPEN guideline describes medications, infection, formula composition, delivery, and contamination as possible contributors. Review the patient, stool pattern, and fluid and electrolyte status. A product name or one stool does not establish the cause, and medication effects can arise without a formula change; do not automatically interrupt feeding solely for diarrhea in the stated ICU setting.",
+        "reviewHref": "#monitoring-complications"
+      },
+      "status": "verified",
+      "stemVerified": true,
+      "oneBestAnswerVerified": true,
+      "rationaleVerified": true,
+      "sourceEvidence": [
+        "sccm2016 D6 full recommendation/rationale; safe2017 Q8.1/Q8.2 medication GI effects"
+      ],
+      "choicesReviewed": [
+        {
+          "text": "Medications such as antibiotics or sorbitol preparations, and possible infectious causes",
+          "keyed": true,
+          "review": "Medication and infectious causes belong in the differential."
+        },
+        {
+          "text": "The formula name as sufficient evidence of the cause",
+          "keyed": false,
+          "review": "Formula name alone does not diagnose etiology."
+        },
+        {
+          "text": "A single liquid stool as proof that enteral feeding must be permanently stopped",
+          "keyed": false,
+          "review": "One liquid stool does not establish permanent EN cessation."
+        },
+        {
+          "text": "The absence of a formula change as a reason to exclude medication effects",
+          "keyed": false,
+          "review": "Medication effects can occur without a formula change."
+        }
+      ]
+    },
+    {
+      "question": {
+        "id": "enteral-nutrition-048",
+        "question": "How should formula osmolality be considered when evaluating diarrhea during enteral nutrition in a critically ill adult?",
+        "choices": [
+          "Assess it alongside medications, infection, delivery, and the clinical findings",
+          "Treat the osmolality label alone as proof that formula caused the diarrhea",
+          "Use an isotonic formula label to exclude infectious diarrhea",
+          "Exclude medication effects whenever the formula is isotonic"
+        ],
+        "answer": 0,
+        "rationale": "Formula osmolality is one possible contributor described in the 2016 SCCM/ASPEN guideline, not a diagnosis by itself. Neither isotonic nor higher-osmolality labeling excludes medications or infection. Use a clinical assessment rather than assigning every episode to one formula characteristic.",
+        "reviewHref": "#monitoring-complications"
+      },
+      "status": "verified",
+      "stemVerified": true,
+      "oneBestAnswerVerified": true,
+      "rationaleVerified": true,
+      "sourceEvidence": [
+        "sccm2016 D6 full recommendation/rationale"
+      ],
+      "choicesReviewed": [
+        {
+          "text": "Assess it alongside medications, infection, delivery, and the clinical findings",
+          "keyed": true,
+          "review": "Osmolality alongside medications/infection/delivery and clinical examination, no etiologic ranking."
+        },
+        {
+          "text": "Treat the osmolality label alone as proof that formula caused the diarrhea",
+          "keyed": false,
+          "review": "Label alone cannot diagnose the cause."
+        },
+        {
+          "text": "Use an isotonic formula label to exclude infectious diarrhea",
+          "keyed": false,
+          "review": "Isotonic formula does not exclude infection."
+        },
+        {
+          "text": "Exclude medication effects whenever the formula is isotonic",
+          "keyed": false,
+          "review": "Isotonic formula does not exclude medication effects."
+        }
+      ]
+    },
+    {
+      "question": {
+        "id": "enteral-nutrition-102",
+        "question": "A correctly positioned feeding tube is clogged after different medications were mixed together. There is no kink and no evidence of displacement. Which interpretation or management plan is most defensible?",
+        "choices": [
+          "Use warm water gently under the declogging procedure, then review separate medication administration and flushing",
+          "Increase pressure until the mixed medications are pushed through",
+          "Use cola as the preferred first attempt to dissolve the medication mixture",
+          "Repeat the combined-medication method after patency returns because the daily doses are unchanged"
+        ],
+        "answer": 0,
+        "rationale": "Warm water and gentle syringe movement are the initial declogging approach in the 2017 ASPEN safe-practice guidance. Review why the drugs were mixed and correct preparation and flushing practices. Acidic beverages or forceful pressure are unsuitable substitutes; if water fails, escalate through the approved protocol.",
+        "reviewHref": "#monitoring-complications"
+      },
+      "status": "verified",
+      "stemVerified": true,
+      "oneBestAnswerVerified": true,
+      "rationaleVerified": true,
+      "sourceEvidence": [
+        "safe2017 Section7 background/Q7.3; Q8.1/Q8.2 separate-drug/flush prevention"
+      ],
+      "choicesReviewed": [
+        {
+          "text": "Use warm water gently under the declogging procedure, then review separate medication administration and flushing",
+          "keyed": true,
+          "review": "Warm-water/gentle initial protocol plus review of medication mixing and flushing addresses restoration and prevention."
+        },
+        {
+          "text": "Increase pressure until the mixed medications are pushed through",
+          "keyed": false,
+          "review": "Forceful pressure is not recommended gentle declogging."
+        },
+        {
+          "text": "Use cola as the preferred first attempt to dissolve the medication mixture",
+          "keyed": false,
+          "review": "Acidic cola is not preferred first-line fluid."
+        },
+        {
+          "text": "Repeat the combined-medication method after patency returns because the daily doses are unchanged",
+          "keyed": false,
+          "review": "Unchanged daily dose does not make mixing medications acceptable."
+        }
+      ]
+    }
+  ],
+  "teachingReview": [
+    {
+      "heading": "Separate medications from formula and each other",
+      "body": "Pause feeding for medication administration and tube flushing. Give each compatible medication separately, flushing before the first drug, between drugs, and after the final drug. Do not add medications directly to formula or combine different drugs in one syringe. Use a clean enteral syringe and the approved preparation instructions; the 2017 ASPEN safe-practice guidance recommends purified water for medication preparation and surrounding flushes. Choose flush amounts with the patient’s fluid needs and restrictions in mind. Restart feeding promptly after administration unless a drug-specific interaction or clinical condition requires a longer hold. A brief administration pause and a prolonged feeding-separation interval serve different purposes.",
+      "status": "whole body verified",
+      "wholeBodyVerified": true,
+      "clauseSource": [
+        {
+          "claim": "Brief feeding pause for administration/flushes versus prolonged interaction-specific separation",
+          "source": "safe2017 Q8.2 recommendation14/15 and full timing rationale"
+        },
+        {
+          "claim": "Separate each compatible drug; flush before/between/after; no formula admixture or combined-drug syringe",
+          "source": "safe2017 Q8.2 recommendations7–14/rationale; book printed162 no formula mixing"
+        },
+        {
+          "claim": "Clean enteral syringe and approved preparation; purified water for medication preparation/flushes",
+          "source": "safe2017 Q8.2 recommendations11–14 and water rationale; Q7.1 recommendation7"
+        },
+        {
+          "claim": "Flush volumes account for fluid needs/restriction",
+          "source": "safe2017 Q8.2 recommendation14.3; Q7.2 complete rationale"
+        },
+        {
+          "claim": "Prompt restart unless specific interaction or clinical condition needs longer hold",
+          "source": "safe2017 Q8.2 recommendation15/timing rationale; previously reviewed Q6.10 clinical-situation distinction"
+        }
+      ]
+    },
+    {
+      "heading": "Respect the tube tip",
+      "body": "Identify and document the tube’s entry point and distal tip when reviewing a medication order. Jejunal delivery bypasses gastric conditions and may bypass a drug’s primary absorption site, so an oral or gastric administration method cannot automatically be transferred to a jejunal tube. Review the exact drug, dosage form, dissolution requirements, and administration site; obtain a suitable formulation or alternative route when needed. Sorbitol-containing or highly osmolar liquids can contribute to gastrointestinal symptoms, especially with small bowel delivery. Follow product-specific dilution instructions rather than assuming every liquid is compatible, and count preparation and flush water in the fluid plan.",
+      "status": "whole body verified",
+      "wholeBodyVerified": true,
+      "clauseSource": [
+        {
+          "claim": "Entry/distal tip documented for medication order and changes communicated",
+          "source": "safe2017 Q8.1/Q8.3 recommendations/rationale"
+        },
+        {
+          "claim": "Jejunal delivery bypasses gastric conditions and may bypass primary absorption site, not all drugs fail",
+          "source": "safe2017 Q8.1 recommendation3.2.1; Q8.3/Q8.6 dissolution/absorption rationale"
+        },
+        {
+          "claim": "Exact drug/formulation/dissolution/site reviewed; alternative formulation/route if needed",
+          "source": "safe2017 Q8.1/Q8.2/Q8.3/Q8.6; book printed162 compatibility"
+        },
+        {
+          "claim": "Sorbitol/high-osmolality liquid GI effects, especially postpyloric; no default liquid compatibility",
+          "source": "safe2017 Q8.1/Q8.2 full rationale"
+        },
+        {
+          "claim": "Product-specific preparation/dilution, water counted in fluid plan",
+          "source": "safe2017 Q8.2 pharmacist preparation/individual formulation/dilution rationale; Q7.2 individual fluid needs; prior verified water accounting"
+        }
+      ]
+    },
+    {
+      "heading": "Find the cause of diarrhea and clogging",
+      "body": "Assess diarrhea with the clinical examination, stool pattern, fluid and electrolyte status, and a review of medications, infection, formula composition, delivery, and contamination. Antibiotics, laxatives, and sorbitol-containing preparations are possible contributors; formula osmolality alone does not establish the cause. The 2016 SCCM/ASPEN guideline advises against automatically interrupting feeding for diarrhea in critically ill adults while evaluating its cause. For an uncomplicated clogged tube, check for kinks and follow the institutional declogging procedure. Warm water with gentle back-and-forth syringe movement is the initial approach for trained staff. Avoid acidic beverages, forceful pressure, and improvised objects. If water fails, escalate through the approved protocol rather than improvising an enzyme mixture or device.",
+      "status": "whole body verified",
+      "wholeBodyVerified": true,
+      "clauseSource": [
+        {
+          "claim": "Exam/stool/fluid/electrolytes plus medication/infection/composition/delivery/contamination review",
+          "source": "sccm2016 D6 complete rationale"
+        },
+        {
+          "claim": "Antibiotics/laxatives/sorbitol are contributors; osmolality alone not cause proof",
+          "source": "sccm2016 D6; safe2017 Q8.2 sorbitol"
+        },
+        {
+          "claim": "No automatic EN interruption solely for diarrhea in critically ill adults while cause assessed",
+          "source": "sccm2016 D6 explicit expert-consensus recommendation"
+        },
+        {
+          "claim": "Kinks checked; uncomplicated occlusion follows institutional process for trained staff; warm water gentle back-and-forth first",
+          "source": "safe2017 Q7.3 all recommendations/rationale"
+        },
+        {
+          "claim": "Avoid acidic beverages, forceful pressure and improvised objects; failure escalated through approved enzyme/device protocol",
+          "source": "safe2017 Section7 background acidic beverages; Q7.3 gentle first-line and trained approved second-line approaches; no universal mechanical-device prohibition or enzyme recipe"
+        }
+      ]
+    }
+  ],
+  "embeddedCheckReview": [
+    {
+      "lesson": "medication-administration",
+      "check": {
+        "question": "Two medications have been verified as compatible with a patient’s feeding tube, and neither requires a prolonged separation from feeding. Which administration plan is safest?",
+        "choices": [
+          "Pause feeding, give the drugs separately with appropriate flushes, then restart promptly",
+          "Mix the two medications together because each is individually tube compatible",
+          "Add the two medications to the formula so nutrition continues during administration",
+          "Apply a prolonged feeding hold to every medication without checking for an interaction"
+        ],
+        "answer": 0,
+        "rationale": "Briefly pause feeding to administer each medication separately, with flushing before, between, and after doses. Individual compatibility does not establish that the drugs can be mixed together or into formula. Restart promptly when administration is complete unless a drug-specific interaction or clinical condition requires a longer hold.",
+        "reviewHref": "#medication-administration"
+      },
+      "status": "verified",
+      "stemKeyRationaleVerified": true,
+      "sourceEvidence": [
+        "safe2017 Q8.1/Q8.2 complete recommendations/rationale"
+      ],
+      "choicesReviewed": [
+        {
+          "text": "Pause feeding, give the drugs separately with appropriate flushes, then restart promptly",
+          "keyed": true,
+          "review": "Individually compatible drugs with no prolonged hold: pause, administer separately, flush, restart."
+        },
+        {
+          "text": "Mix the two medications together because each is individually tube compatible",
+          "keyed": false,
+          "review": "Individual compatibility does not establish combination compatibility."
+        },
+        {
+          "text": "Add the two medications to the formula so nutrition continues during administration",
+          "keyed": false,
+          "review": "Formula admixture is prohibited by source."
+        },
+        {
+          "text": "Apply a prolonged feeding hold to every medication without checking for an interaction",
+          "keyed": false,
+          "review": "Prolonged hold requires a defined indication, not a universal rule."
+        }
+      ]
+    }
+  ],
+  "figureReview": [
+    {
+      "type": "medication-administration",
+      "figure": {
+        "eyebrow": "Medication sequence",
+        "title": "Review, separate, flush, verify.",
+        "items": [
+          [
+            "Review",
+            "Dosage form",
+            "Crushability, release, hazard"
+          ],
+          [
+            "Verify",
+            "Tube tip",
+            "Gastric conditions and absorption site"
+          ],
+          [
+            "Separate",
+            "One drug at a time",
+            "Never mix into formula"
+          ],
+          [
+            "Flush",
+            "Before, between, after",
+            "Protect dose and tube patency"
+          ]
+        ]
+      },
+      "status": "whole figure verified without changes",
+      "allLabelsAndNodesReviewed": true,
+      "sourceEvidence": [
+        "Review/separate/flush/verify conceptual workflow: safe2017 Q8.1/Q8.2; not permission to verify position only after giving a dose.",
+        "Dosage-form crushability/release/hazard review: book printed162; safe2017 Q8.1/Q8.6.",
+        "Verify tip/gastric conditions/absorption site: safe2017 Q8.1/Q8.3/Q8.6.",
+        "Separate/one drug at a time/never mix into formula: book printed162; safe2017 Q8.2.",
+        "Flush/before-between-after/dose delivery and patency: safe2017 Q7.1/Q8.2."
+      ],
+      "limits": "Conceptual decision diagram, no measured data, protocol dose or numeric flush claim."
+    }
+  ],
+  "cumulativeReview": "All1180 cumulative objects unchanged; no new cumulative coverage counted. Existing5/5 EN closure retained.",
+  "sourceDiscrepancies": [
+    {
+      "issue": "Stop feeding only when the drug requires it could omit the brief administration/flush pause.",
+      "resolution": "Routine pause and prompt restart explicit; prolonged hold remains interaction/clinical-specific, not universal."
+    },
+    {
+      "issue": "Jejunal wording could imply uniform medication failure or gastric activation requirement.",
+      "resolution": "Site-specific dissolution/absorption reassessment and exact-product compatibility replace blanket assumptions."
+    },
+    {
+      "issue": "Diarrhea wording ranks causes above formula osmolality without source comparison.",
+      "resolution": "Broad assessment without unsupported comparative ranking; adult ICU avoid-automatic-interruption guidance explicitly dated/scoped."
+    },
+    {
+      "issue": "Generic blockage case lacked clinical context and usable distractors.",
+      "resolution": "Confirmed position/no kink case with initial warm-water/gentle protocol, separate-drug/flush prevention and plausible wrong alternatives."
+    }
+  ],
+  "preservation": {
+    "bankObjectsUnchanged": 101,
+    "cumulativeObjectsUnchanged": 1180,
+    "wholeBodyObjectsUnchanged": 33,
+    "all36HeadingsStable": true,
+    "otherFiveChecksUnchanged": true,
+    "allSixFiguresUnchanged": true,
+    "visualRendererUnchanged": true,
+    "allExistingMetadataAnd14ReferencesUnchanged": true,
+    "noReferencesAdded": true,
+    "pathsIdsAndAnswerIndicesPreserved": true,
+    "architectureBackendAndAccountTrackingUnchanged": true,
+    "noNewClinicalDoseProtocolOrCalculation": true
+  },
+  "coverage": {
+    "bank": 108,
+    "verifiedBank": 98,
+    "remainingBank": 10,
+    "verifiedBankIds": [
+      "enteral-nutrition-060",
+      "enteral-nutrition-061",
+      "enteral-nutrition-062",
+      "enteral-nutrition-063",
+      "enteral-nutrition-064",
+      "enteral-nutrition-065",
+      "enteral-nutrition-066",
+      "enteral-nutrition-067",
+      "enteral-nutrition-068",
+      "enteral-nutrition-069",
+      "enteral-nutrition-070",
+      "enteral-nutrition-071",
+      "enteral-nutrition-072",
+      "enteral-nutrition-073",
+      "enteral-nutrition-074",
+      "enteral-nutrition-075",
+      "enteral-nutrition-076",
+      "enteral-nutrition-077",
+      "enteral-nutrition-078",
+      "enteral-nutrition-079",
+      "enteral-nutrition-080",
+      "enteral-nutrition-081",
+      "enteral-nutrition-082",
+      "enteral-nutrition-083",
+      "enteral-nutrition-084",
+      "enteral-nutrition-085",
+      "enteral-nutrition-086",
+      "enteral-nutrition-087",
+      "enteral-nutrition-088",
+      "enteral-nutrition-089",
+      "enteral-nutrition-109",
+      "enteral-nutrition-110",
+      "enteral-nutrition-111",
+      "enteral-nutrition-112",
+      "enteral-nutrition-113",
+      "enteral-nutrition-114",
+      "enteral-nutrition-001",
+      "enteral-nutrition-115",
+      "enteral-nutrition-033",
+      "enteral-nutrition-035",
+      "enteral-nutrition-036",
+      "enteral-nutrition-037",
+      "enteral-nutrition-040",
+      "enteral-nutrition-042",
+      "enteral-nutrition-093",
+      "enteral-nutrition-094",
+      "enteral-nutrition-098",
+      "enteral-nutrition-107",
+      "enteral-nutrition-116",
+      "enteral-nutrition-117",
+      "enteral-nutrition-006",
+      "enteral-nutrition-007",
+      "enteral-nutrition-008",
+      "enteral-nutrition-015",
+      "enteral-nutrition-016",
+      "enteral-nutrition-018",
+      "enteral-nutrition-021",
+      "enteral-nutrition-030",
+      "enteral-nutrition-049",
+      "enteral-nutrition-092",
+      "enteral-nutrition-099",
+      "enteral-nutrition-105",
+      "enteral-nutrition-023",
+      "enteral-nutrition-041",
+      "enteral-nutrition-090",
+      "enteral-nutrition-104",
+      "enteral-nutrition-002",
+      "enteral-nutrition-003",
+      "enteral-nutrition-004",
+      "enteral-nutrition-005",
+      "enteral-nutrition-100",
+      "enteral-nutrition-012",
+      "enteral-nutrition-013",
+      "enteral-nutrition-014",
+      "enteral-nutrition-106",
+      "enteral-nutrition-009",
+      "enteral-nutrition-010",
+      "enteral-nutrition-011",
+      "enteral-nutrition-017",
+      "enteral-nutrition-019",
+      "enteral-nutrition-022",
+      "enteral-nutrition-024",
+      "enteral-nutrition-095",
+      "enteral-nutrition-097",
+      "enteral-nutrition-025",
+      "enteral-nutrition-026",
+      "enteral-nutrition-027",
+      "enteral-nutrition-028",
+      "enteral-nutrition-029",
+      "enteral-nutrition-032",
+      "enteral-nutrition-103",
+      "enteral-nutrition-034",
+      "enteral-nutrition-038",
+      "enteral-nutrition-039",
+      "enteral-nutrition-045",
+      "enteral-nutrition-046",
+      "enteral-nutrition-048",
+      "enteral-nutrition-102"
+    ],
+    "remainingBankIds": [
+      "enteral-nutrition-020",
+      "enteral-nutrition-031",
+      "enteral-nutrition-043",
+      "enteral-nutrition-044",
+      "enteral-nutrition-047",
+      "enteral-nutrition-050",
+      "enteral-nutrition-091",
+      "enteral-nutrition-096",
+      "enteral-nutrition-101",
+      "enteral-nutrition-108"
+    ],
+    "bodies": 36,
+    "verifiedBodies": 31,
+    "remainingBodies": 5,
+    "embeddedChecks": 6,
+    "verifiedEmbeddedChecks": 5,
+    "remainingEmbeddedChecks": 1,
+    "figures": 6,
+    "verifiedFigures": 5,
+    "cumulative": 5,
+    "sourceVerifiedCumulative": 5,
+    "pendingCumulative": [],
+    "metadata": "Full module and lesson metadata remain pending.",
+    "remainingFigures": 1,
+    "wholeModuleVerified": false,
+    "wholeChapterVerified": false
+  },
+  "remainingCoverageReview": {
+    "questionIds": [
+      "enteral-nutrition-020",
+      "enteral-nutrition-031",
+      "enteral-nutrition-043",
+      "enteral-nutrition-044",
+      "enteral-nutrition-047",
+      "enteral-nutrition-050",
+      "enteral-nutrition-091",
+      "enteral-nutrition-096",
+      "enteral-nutrition-101",
+      "enteral-nutrition-108"
+    ],
+    "wholeBodyHeadings": [
+      "Recognize the patient who needs support",
+      "Advance according to risk",
+      "Prevent aspiration with a bundle",
+      "Use gastric residuals selectively",
+      "Monitor delivery and metabolic safety"
+    ],
+    "embeddedCheckLessons": [
+      "monitoring-complications"
+    ],
+    "figureTypes": [
+      "monitoring-complications"
+    ],
+    "cumulativeIds": [],
+    "fullMetadataPending": true
+  },
+  "calculationEvidence": {
+    "newDistinctAssessmentCalculations": 0,
+    "newCompletedBookExercises": 0,
+    "runningAssessmentCalculations": 728,
+    "runningSeparateCompletedBookExercises": 98
+  },
+  "validation": {
+    "build": {
+      "status": "passed",
+      "staticPages": 567,
+      "scope": "Exact base archive plus two reviewed product files; unchanged committed public tree shared from prior candidate",
+      "priorAttempt": "Two disk-space failures preserved in private build-disk-failure logs; earlier completed audit build cache/redundant archives and failed candidate caches removed, unchanged build rerun successfully."
+    },
+    "assessmentStructure": {
+      "status": "passed",
+      "bankQuestions": 108,
+      "hardErrors": [],
+      "doesNotEstablishClinicalAccuracy": true
+    },
+    "browser": {
+      "status": "passed",
+      "results": [
+        {
+          "width": 1440,
+          "wholeBodyDOMEquality": 36,
+          "allSixMetadataDOMEquality": true,
+          "all14ReferenceDOMEquality": true,
+          "sevenChangedQuestionsCorrectWrongFeedback": true,
+          "allSixFigureDOMPresence": true,
+          "oneReviewedUnchangedFigureAllNodesDOMEquality": true,
+          "changedEmbeddedCheckCorrectWrongFeedback": true,
+          "remediationAnchor": true,
+          "noHorizontalOverflow": true,
+          "accountPersistence": "not tested; unauthenticated local preview"
+        },
+        {
+          "width": 390,
+          "wholeBodyDOMEquality": 36,
+          "allSixMetadataDOMEquality": true,
+          "all14ReferenceDOMEquality": true,
+          "sevenChangedQuestionsCorrectWrongFeedback": true,
+          "allSixFigureDOMPresence": true,
+          "oneReviewedUnchangedFigureAllNodesDOMEquality": true,
+          "changedEmbeddedCheckCorrectWrongFeedback": true,
+          "remediationAnchor": true,
+          "noHorizontalOverflow": true,
+          "accountPersistence": "not tested; unauthenticated local preview"
+        }
+      ],
+      "pageErrors": []
+    },
+    "contentHashes": {
+      "src/data/modules/enteralNutrition.js": "35c5c8c0a89e5d38612b92e75ec8d6d76e94f94e8372b64ab43b858560d441c4",
+      "src/data/questionBanks/enteralNutrition.js": "dea4aa85ce8abd19cf1a7c6a95d0a4aecd85e419a5947989baca5863025305d6"
+    },
+    "manualReview": {
+      "status": "passed",
+      "reviewScope": "All three revised whole teaching bodies, all seven changed question stems/options/keys/rationales and both correct/wrong feedback states, revised embedded check in both states, and every label/node of the unchanged medication diagram inspected at desktop1440 and mobile390. Existing reference labels checked visually and all14 hrefs checked by browser.",
+      "renderEvidence": [
+        "sheet-bodies-1440.png",
+        "sheet-bodies-390.png",
+        "sheet-check-1440.png",
+        "sheet-check-390.png",
+        "sheet-figure-refs-1440.png",
+        "sheet-figure-refs-390.png",
+        "sheet-q034-1440.png",
+        "sheet-q034-390.png",
+        "sheet-q038-1440.png",
+        "sheet-q038-390.png",
+        "sheet-q039-1440.png",
+        "sheet-q039-390.png",
+        "sheet-q045-1440.png",
+        "sheet-q045-390.png",
+        "sheet-q046-1440.png",
+        "sheet-q046-390.png",
+        "sheet-q048-1440.png",
+        "sheet-q048-390.png",
+        "sheet-q102-1440.png",
+        "sheet-q102-390.png"
+      ],
+      "clinicalComparison": "Compared final wording with complete adopted ASPEN2017 Q8.1/Q8.2/Q8.3/Q8.6 and Q7.1/Q7.2/Q7.3, private printed162/PDF170 and SCCM2016 D6. No medication-specific dose, flush amount, enzyme recipe or universal prolonged hold added. ICU diarrhea recommendation remains population-scoped and dated.",
+      "figureInterpretation": "Medication figure node order verifies tube tip before separate medication administration. Caption is a conceptual cue, not permission to verify location only after administration. All six diagrams remain unchanged.",
+      "visualFindings": "Revised text, full options and feedback fit; no clipping or overlaps in reviewed targets. Mobile figure nodes stack in intended order.",
+      "overflow": "1440,390 and320 browser checks passed; no horizontal overflow.",
+      "limits": "Unauthenticated local preview; account persistence, main merge and production publication not tested."
+    },
+    "accountPersistence": "Unauthenticated local preview; no backend/account/production validation claim."
+  },
+  "release": {
+    "branch": "audit/rxprep-content-2026-09-24",
+    "commit": "pending",
+    "push": "pending",
+    "receipt": "sequential-release-enteral-medication-delivery-2026-10-02.json",
+    "mainMerge": "not performed",
+    "production": "not verified"
+  },
+  "wholeGoalComplete": false
+}
