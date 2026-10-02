@@ -162,7 +162,10 @@
     ],
     "previousVerifiedContentCommit": "4e5a8d9f9fc718e50c63942f6f0c29908ef6046b",
     "remoteVerifiedAt": "2026-10-02T04:36:29.813545+00:00",
-    "baseReceipt": "sequential-release-pediatric-pn-order-monitoring-2026-10-01.json"
+    "baseReceipt": "sequential-release-pediatric-pn-order-monitoring-2026-10-01.json",
+    "receiptCommit": "a8ad546a0f38b2287c4e544d530925edbc04421a",
+    "receiptRemoteHashObserved": "a8ad546a0f38b2287c4e544d530925edbc04421a",
+    "receiptRemoteVerifiedAt": "2026-10-02T04:37:47.772368+00:00"
   },
   "openIssues": [
     "Remaining Chapter 1 checklist entries and all reference tables require source review.",
@@ -1968,7 +1971,7 @@
     "priorContentTurnClassification": "progress",
     "priorContentTurnEvidence": "Developmental/delivery product edits and isolated build passed; final validation/release remained pending.",
     "currentTurnClassification": "progress",
-    "currentTurnEvidence": "Six bank questions,five whole teaching bodies,decisioncheck,one cumulative and unchanged orderfigure clinically verified; isolated567pagebuild,100questionstructure,desktop/mobile correct/wrong feedback/localprogress,40bodyDOM,27references and23manually viewed pairs passed. Six scoped content files committed and exact remote content hash verified; release receipt prepared.",
+    "currentTurnEvidence": "Six bank questions,five whole teaching bodies,decisioncheck,one cumulative and unchanged orderfigure clinically verified; isolated567pagebuild,100questionstructure,desktop/mobile correct/wrong feedback/localprogress,40bodyDOM,27references and23manually viewed pairs passed. Six scoped content files committed and exact remote content hash verified; release receipt prepared. Release receipt committed and exact remotea8ad546a verified. Complete2017Question5/6HTML sections and all parsed access/peripheral tables read; no additional clinical closure. Access source-intake record saved.",
     "genuineBlocker": false,
     "wholeGoalComplete": false,
     "nextAction": "Finish remaining pediatricPN bank002/004/005/011/012/016/038 and eight original bodies: indications/access; full fluid ledger/response/concentration; amino-acid provision/protein restriction; integrated glucose/bilirubin trends. Finish decision figure and full lesson/module metadata, then reconcile all100questions/40bodies/sixchecks/sixfigures/fivecumulative. Review complete approved sources for those outstanding claims rather than extrapolating from current development/transition scope. Do not repeat the newly verified001/006/007/037/039/108,decisioncheck,developmentcumulative or orderfigure as pending. Chapter1entry15/Chapter11 remain reviewing; Chapter54 broader audit pending. EN outside-source exception remains unresolved."
@@ -2419,5 +2422,13 @@
     ],
     "runningAssessmentCalculations": 728,
     "runningSeparateCompletedBookExercises": 98
+  },
+  "latestPediatricPnAccessSourceIntake": {
+    "evidence": "pediatric-parenteral-nutrition-access-source-intake.json",
+    "status": "Complete relevant access/peripheral-PN HTML text read; table visual review and product revisions pending",
+    "newClinicalClosures": 0,
+    "verifiedContentCommit": "7d50214bbc69dde401826fe31c641a899b33f28f",
+    "verifiedReceiptCommit": "a8ad546a0f38b2287c4e544d530925edbc04421a",
+    "nextAction": "Finish indication source and rendered access/peripheral tables; then repair002/004/005 and wholebody/accessfigure/metadata. Other pending questions/bodies remain in current nextStartingPoint."
   }
 }

@@ -1,0 +1,92 @@
+{
+  "recordedAt": "2026-10-02T04:39:28.410330+00:00",
+  "baseCommit": "a8ad546a0f38b2287c4e544d530925edbc04421a",
+  "unit": "Next pediatric PN indication/access and concentration dependencies",
+  "status": "Complete relevant access/peripheral-PN HTML text read; table visual review and product revisions pending",
+  "sourcePolicy": "Existing approved PN source exception; no new outside EN module source claims.",
+  "sources": [
+    {
+      "title": "ASPEN.WhenIsParenteralNutritionAppropriate?2017",
+      "url": "https://aspenjournals.onlinelibrary.wiley.com/doi/10.1177/0148607117695251",
+      "completeRelevantSectionsRead": [
+        "Question5 recommendations5A-5E and complete rationale through tip-position verification",
+        "Question6 recommendations6A-6D and complete adult/neonatal/pediatric rationale"
+      ],
+      "completeParsedTablesRead": [
+        "5.1:both complication columns and CVAD footnote",
+        "5.2:all9device rows,all5columns and abbreviations; includes continuation rows forPICCs/ports/specialpurpose devices",
+        "6.1:all4rows,bothcolumns and PN footnote"
+      ],
+      "renderedTablesNotYetFullyReviewed": [
+        "5.1",
+        "5.2",
+        "6.1"
+      ],
+      "indicationSectionPartialOnly": "Question1 recommendations1A-1D and introductory rationale located/read; full indication rationale and Tables1.1/1.2 still pending.",
+      "findings": [
+        "Concentration, expected duration, developmental stage, other IV therapies and access preservation inform device choice.",
+        "Peripheral technical failure/extravasation/phlebitis and central infection/thrombosis/access loss require active assessment.",
+        "Confirm central tip placement; children growing with longstanding devices may need reassessment.",
+        "PeripheralPN selection remains evidence-limited and patient-specific; osmolarity and sufficient volume limit nutrient delivery."
+      ],
+      "sourceQualifications": [
+        "2017PIVscheduledrotation advice must not become a universal pediatric rule; review CDC pediatric recommendations before any policy-specific adoption.",
+        "Numeric dwell times,peripheral fluid allowances,osmolarity cutoffs and macronutrient concentration maxima not adopted in this intake.",
+        "Adult/PICU observational outcomes not treated as causal comparative effectiveness.",
+        "Dedicated lumen evidence modest/unresolved; avoid claims of guaranteed infection prevention.",
+        "Whole54page article,full PDF download and full reference-paper reading not claimed."
+      ]
+    }
+  ],
+  "nextContentTargets": {
+    "bankQuestions": [
+      "pedpn-002",
+      "pedpn-004",
+      "pedpn-005"
+    ],
+    "wholeBodies": [
+      "Use PN when the gut cannot yet meet the need",
+      "Match access to concentration and duration",
+      "Account for concentration and osmolarity"
+    ],
+    "figure": "peds-pn-decision",
+    "metadata": "Decision/access lesson,then complete module reconciliation"
+  },
+  "remainingOtherTargets": [
+    "pedpn-011/012:glucose tolerance and neonatal water losses",
+    "pedpn-016:pediatric kidney dysfunction/protein requirements",
+    "pedpn-038:neonatal bilirubin differential",
+    "Eight original whole bodies and remaining metadata still open"
+  ],
+  "requiredNextGates": [
+    "Finish full indication source rationale/tables and rendered relevant tables",
+    "Review all alternatives individually and repair implausible distractors",
+    "Revise/source-map whole bodies and decision figure/metadata",
+    "Compare final content with source;independent calculations if relevant",
+    "Isolatedbuild,focusedstructure,desktop/mobilecorrect/wrong/localprogress,manualrenderedQA",
+    "Target-onlyledgerupdate,scopedcommit,push/exactremoteverification"
+  ],
+  "coverageAfterIntake": {
+    "sourceVerifiedBank": 93,
+    "bank": 100,
+    "sourceVerifiedBodies": 32,
+    "bodies": 40,
+    "sourceVerifiedEmbeddedChecks": 6,
+    "embeddedChecks": 6,
+    "sourceVerifiedFigures": 5,
+    "figures": 6,
+    "sourceVerifiedCumulative": 5,
+    "cumulative": 5,
+    "wholeModuleVerified": false,
+    "chapterVerified": 6,
+    "chapters": 82
+  },
+  "newlyVerifiedQuestionCount": 0,
+  "newlyVerifiedTeachingBodyCount": 0,
+  "newlyVerifiedFigureCount": 0,
+  "newlyVerifiedEmbeddedCheckCount": 0,
+  "newlyVerifiedCumulativeCount": 0,
+  "productCodeChangedAfterVerifiedRelease": false,
+  "privateSourceAssetsIncludedInGit": false,
+  "wholeGoalComplete": false
+}
