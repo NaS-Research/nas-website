@@ -1,0 +1,1015 @@
+{
+  "date": "2026-10-01",
+  "recordedAt": "2026-10-02T04:34:20.769562+00:00",
+  "module": "pediatric-parenteral-nutrition",
+  "unit": "Pediatric PN developmental assessment, delivered intake, growth and transition",
+  "status": "Scoped clinical, structural, build and rendered verification passed; whole module incomplete",
+  "baseCommit": "bc3c322eaa1eb2d43691f3b2f680cd93371b2b44",
+  "sourcePolicy": {
+    "suppliedBookPrimary": true,
+    "approvedOutsidePNReferencesUsed": true,
+    "approvalContinuity": "User-approved PN exception for official ASPEN/FDA/USP/CDC and directly linked primary PN guidance.",
+    "outsideENSourcesUsed": false,
+    "noFullENModuleSourceClosure": true
+  },
+  "sources": {
+    "aspen2017": {
+      "title": "When Is Parenteral Nutrition Appropriate?",
+      "url": "https://aspenjournals.onlinelibrary.wiley.com/doi/10.1177/0148607117695251",
+      "date": "2017-02-17",
+      "kind": "ASPEN Board-approved consensus recommendation",
+      "scope": "Complete Question13 recommendations and rationale, adult and pediatric subsections, all parsed Tables13.1-13.4 with headers and footnotes. Pediatric actual-versus-projected intake, interruptions, age/illness-specific monitoring and transition context rechecked against the final content. Full54page article not claimed reviewed.",
+      "visualScope": "All13 rows and PN footnote of Table13.4 viewed in publisher HTML across two screenshots in the preceding content turn. Table13.1 visual inspection partial; Tables13.2/13.3 not fully visually inspected. No fixed monitoring schedule, adult triglyceride cutoff, adult lipid-energy fraction, numeric PN-weaning threshold, adult30mL/hour protocol or weekly infusion-elimination protocol adopted. Monitoring claims are additionally supported by the previously fully rendered ASPEN prescribing table and FDA label pages.",
+      "accessLimitations": "Publisher PDF download returned403; ePDF reader stayed loading and a browser download observation timed out/reset. No full PDF or successful web screenshot image review claimed; full relevant HTML text was accessible.",
+      "locators": [
+        "Question13, global13A/13B",
+        "Pediatric13A: actual versus projected energy/protein; interruptions and custom laboratory schedule",
+        "Table13.4 full transition recommendations",
+        "Pediatric13B growth, biochemical/nutrient intake and gastrointestinal function"
+      ]
+    },
+    "neonatal2025": {
+      "title": "Neonatal Nutrition Assessment",
+      "url": "https://nutritioncare.org/wp-content/uploads/2025/08/Neonatal-Nutr-Assessment.pdf?ver=1757421988",
+      "date": "2025-09-08",
+      "kind": "Informational practice tool, not an ASPEN clinical guideline",
+      "completeTextPagesRead": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "completeRenderedPagesViewed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "sha256": "6f0efa0c923f5c89c18c5f98ebd68d0fc361051230f70aad55c2a3203d26f7d0",
+      "tables": "All headers, rows, footnotes and qualifications on all five pages read, including anthropometrics, PN/EN assessment ranges, physical examination, micronutrient differential and proposed malnutrition indicators.",
+      "adoption": "Serial growth/maturity-appropriate chart and fluid/illness/medicine confounders from page1; professional-judgment qualification from page4; unvalidated proposed criteria and first-two-week limitations from page5. No numeric nutrient ranges, diagnosis cutoffs, chart age cutoffs or fixed weighing schedules adopted.",
+      "qualification": "Explicitly not based on ASPEN Board Approved documents or developed through ASPEN guideline processes. Proposed2018 neonatal malnutrition criteria remain unvalidated. Page5 weight-for-age z decline and weight-gain velocity inappropriate for first2weeks; nutrient intake preferred then. Not generalized to all infants or used to diagnose malnutrition from one weight."
+    },
+    "cdc": {
+      "title": "Guidelines for Prevention of Intravascular Catheter-Related Infections: Summary of Recommendations",
+      "url": "https://www.cdc.gov/infection-control/hcp/intravascular-catheter-related-infections/summary-recommendations.html",
+      "guidelineYear": 2011,
+      "summaryUpdated": "2024-02-28",
+      "scope": "Complete section2.2 table with all11 recommendation rows read as text. Row10 and neighboring rows6-11 viewed in rendered browser table. Whole guideline not claimed reviewed.",
+      "adopted": "Row10: promptly remove any intravascular catheter that is no longer essential, CategoryIA. Continuing intravenous needs must be assessed before declaring a device unnecessary.",
+      "notAdopted": "Adult insertion-site advice and dedicated-PN-lumen benefit not adopted. Row9 identifies dedicated lumen evidence as unresolved."
+    },
+    "fda2021": {
+      "title": "CLINIMIX labeling2021 reference4778063",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2021/020734s037lbl.pdf",
+      "sha256": "356eeefcf812bfb162ce7e40a7ecf93b61dcad079f90a00a255d0efbcf24e0a8",
+      "scope": "Previously complete text/rendered PDF13-17 with sections4,5.1-5.11,6 and8.4; current development content turn rechecked full text14,15,17 and freshly viewed full17 image. Pediatric glycemic/fluid/renal maturity context supports assessment, not an adult-scaled template. Historical label not established as latest2026.",
+      "evidence": "pediatric-parenteral-nutrition-monitoring-source-intake.json"
+    },
+    "fda2025smof": {
+      "title": "SMOFlipid prescribing information2025",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/207648s013lbl.pdf",
+      "sha256": "fb05ffac9ee712d58281bf9fb3564182c808147531db52a3703ab90625f45130",
+      "scope": "Prior complete relevant label2-7 source review; development content turn rechecked complete PDF7,9,10 text and freshly rendered/viewed full10. Section5.10 supports fluid/electrolytes,TG,glucose,liver/kidney monitoring. No new dose,rate,test timing or comparative efficacy claim.",
+      "evidence": "pediatric-parenteral-nutrition-preterm-lipid-review.json"
+    },
+    "priorCompleteSources": {
+      "evidence": [
+        "pediatric-parenteral-nutrition-book-calculations-review.json",
+        "pediatric-parenteral-nutrition-maintenance-fluid-review.json",
+        "pediatric-parenteral-nutrition-order-monitoring-review.json",
+        "pediatric-parenteral-nutrition-compounding-safety-review.json",
+        "pediatric-parenteral-nutrition-monitoring-source-intake.json"
+      ],
+      "reuse": "Book Chapter11 complete source read recorded; printed150/PDF158 full fluid table rechecked. Chapter54 printed721/PDF729 full developmental text rechecked; prior fullChapter54 text/rendered read recorded, but broader clinical audit pending. Complete ASPEN2024 prescribing3pages with pediatric template and laboratory table, complete2page order/admin/compounding/filter tools and current2021 filtration evidence support retained figure/order-monitoring clauses. No new whole chapter or whole2017 article closure."
+    }
+  },
+  "questionReview": [
+    {
+      "question": {
+        "id": "pedpn-001",
+        "question": "Why can a single pediatric PN template not be used across all ages?",
+        "choices": [
+          "Gestational age, organ maturity, growth, weight, and tolerance change requirements",
+          "Weight alone determines identical per-kilogram targets at every age",
+          "An adult PN template can be scaled by weight without assessing neonatal tolerance",
+          "Age changes the product label but has no effect on nutrient needs"
+        ],
+        "answer": 0,
+        "rationale": "Developmental age, organ maturity, growth, illness, and weight affect requirements and tolerance. A weight-only or scaled adult template cannot replace the pediatric assessment.",
+        "reviewHref": "#pediatric-pn-decision-access"
+      },
+      "status": "verified",
+      "sourceEvidence": [
+        "aspen2017 pediatric13A; neonatal2025 page1; fda2021 section8.4"
+      ],
+      "oneBestAnswerAndAllAlternativesReviewed": true,
+      "choicesReviewed": [
+        {
+          "text": "Gestational age, organ maturity, growth, weight, and tolerance change requirements",
+          "keyed": true,
+          "review": "Developmental maturity, growth and tolerance alter requirements; weight is one part of the assessment."
+        },
+        {
+          "text": "Weight alone determines identical per-kilogram targets at every age",
+          "keyed": false,
+          "review": "Weight alone cannot make per-kilogram requirements identical across developmental stages."
+        },
+        {
+          "text": "An adult PN template can be scaled by weight without assessing neonatal tolerance",
+          "keyed": false,
+          "review": "Scaling an adult template ignores neonatal organ maturity and tolerance."
+        },
+        {
+          "text": "Age changes the product label but has no effect on nutrient needs",
+          "keyed": false,
+          "review": "Development changes physiological requirements, not merely the product label."
+        }
+      ],
+      "stableIdAnswerIndexAndAnchorPreserved": true,
+      "promptRevised": false,
+      "keyedTextRevised": false
+    },
+    {
+      "question": {
+        "id": "pedpn-006",
+        "question": "Why should enteral readiness be reassessed during PN?",
+        "choices": [
+          "The gastrointestinal route may increasingly meet needs and allow PN reduction",
+          "One ordered feed proves that all intravenous nutrition can be stopped",
+          "A fixed PN regimen remains appropriate regardless of advancing enteral intake",
+          "An energy-intake percentage alone proves adequate absorption and hydration"
+        ],
+        "answer": 0,
+        "rationale": "Reassess gastrointestinal function and actual tolerated intake as feeding advances. PN reduction must preserve nutrition, growth, and hydration; an order or energy percentage alone does not establish readiness.",
+        "reviewHref": "#pediatric-pn-decision-access"
+      },
+      "status": "verified",
+      "sourceEvidence": [
+        "aspen2017 global13B,pediatric13A/13B,full Table13.4"
+      ],
+      "oneBestAnswerAndAllAlternativesReviewed": true,
+      "choicesReviewed": [
+        {
+          "text": "The gastrointestinal route may increasingly meet needs and allow PN reduction",
+          "keyed": true,
+          "review": "Ongoing assessment of gastrointestinal function and actual intake can permit safe PN reduction."
+        },
+        {
+          "text": "One ordered feed proves that all intravenous nutrition can be stopped",
+          "keyed": false,
+          "review": "An order does not prove delivery, tolerance, absorption or adequacy."
+        },
+        {
+          "text": "A fixed PN regimen remains appropriate regardless of advancing enteral intake",
+          "keyed": false,
+          "review": "The combined regimen must be reassessed as reliable enteral intake advances."
+        },
+        {
+          "text": "An energy-intake percentage alone proves adequate absorption and hydration",
+          "keyed": false,
+          "review": "Energy fraction alone cannot establish absorption or fluid adequacy."
+        }
+      ],
+      "stableIdAnswerIndexAndAnchorPreserved": true,
+      "promptRevised": false,
+      "keyedTextRevised": true
+    },
+    {
+      "question": {
+        "id": "pedpn-007",
+        "question": "Which approach correctly accounts for daily pediatric fluid intake?",
+        "choices": [
+          "Count PN, medicines, carriers, flushes, blood products, and enteral intake",
+          "Count PN and enteral intake but exclude medication and carrier volumes",
+          "Count nutrition and medicines but exclude separate lipid and flush volumes",
+          "Use urine output alone as the measure of administered fluid"
+        ],
+        "answer": 0,
+        "rationale": "All administered fluid contributes to intake, including separate lipid, medication carriers, and flushes. Record output separately to assess balance; urine output alone cannot measure fluid delivered.",
+        "reviewHref": "#pediatric-fluid-glucose"
+      },
+      "status": "verified",
+      "sourceEvidence": [
+        "prior complete FDA2018 dosing/fluid pages and bookPDF158 total-other-fluid accounting",
+        "aspen2017 Question13 intake/output narrative; Table13.1 full parsed row",
+        "prior complete ASPEN administration checklist all-fluid accounting"
+      ],
+      "oneBestAnswerAndAllAlternativesReviewed": true,
+      "choicesReviewed": [
+        {
+          "text": "Count PN, medicines, carriers, flushes, blood products, and enteral intake",
+          "keyed": true,
+          "review": "Include all administered fluids across nutrition, medicines, carriers, flushes, blood and feeding routes."
+        },
+        {
+          "text": "Count PN and enteral intake but exclude medication and carrier volumes",
+          "keyed": false,
+          "review": "Medication and carrier volumes remain part of administered fluid."
+        },
+        {
+          "text": "Count nutrition and medicines but exclude separate lipid and flush volumes",
+          "keyed": false,
+          "review": "Separate lipid and flushes add fluid and cannot be excluded."
+        },
+        {
+          "text": "Use urine output alone as the measure of administered fluid",
+          "keyed": false,
+          "review": "Urine is output and cannot substitute for intake accounting."
+        }
+      ],
+      "stableIdAnswerIndexAndAnchorPreserved": true,
+      "promptRevised": true,
+      "keyedTextRevised": true
+    },
+    {
+      "question": {
+        "id": "pedpn-037",
+        "question": "Which assessment best represents nutrition actually received?",
+        "choices": [
+          "Calculate nutrients and fluid from documented PN, lipid, and oral or enteral delivery, accounting for interruptions",
+          "Use the ordered PN bag without checking infusion completion or other routes",
+          "Use delivered mL alone without the nutrient composition",
+          "Use the previous prescription as proof of current intake"
+        ],
+        "answer": 0,
+        "rationale": "Calculate actual energy, protein, and fluid from delivered volumes and composition across routes. Procedures, line problems, and medication incompatibilities can interrupt delivery, so prescribed amounts may exceed what the patient received.",
+        "reviewHref": "#pediatric-order-monitoring"
+      },
+      "status": "verified",
+      "sourceEvidence": [
+        "aspen2017 pediatric13A actual/projected energy and protein, interruptions and medication incompatibility",
+        "prior verified nutrient composition and volume conversions"
+      ],
+      "oneBestAnswerAndAllAlternativesReviewed": true,
+      "choicesReviewed": [
+        {
+          "text": "Calculate nutrients and fluid from documented PN, lipid, and oral or enteral delivery, accounting for interruptions",
+          "keyed": true,
+          "review": "Actual nutrient and fluid totals require documented delivery, composition and interruptions across routes."
+        },
+        {
+          "text": "Use the ordered PN bag without checking infusion completion or other routes",
+          "keyed": false,
+          "review": "The order does not establish infusion completion or contributions from other routes."
+        },
+        {
+          "text": "Use delivered mL alone without the nutrient composition",
+          "keyed": false,
+          "review": "mL alone does not establish energy or protein without composition."
+        },
+        {
+          "text": "Use the previous prescription as proof of current intake",
+          "keyed": false,
+          "review": "An earlier prescription cannot establish present delivery."
+        }
+      ],
+      "stableIdAnswerIndexAndAnchorPreserved": true,
+      "promptRevised": true,
+      "keyedTextRevised": true
+    },
+    {
+      "question": {
+        "id": "pedpn-039",
+        "question": "When should pediatric PN be reduced during transition to enteral feeding?",
+        "choices": [
+          "As actual tolerated intake reliably replaces intravenous nutrients while growth, absorption, hydration, and electrolytes are assessed",
+          "As soon as a feed is ordered, before confirming delivery or tolerance",
+          "At one energy-intake percentage without reviewing protein, absorption, or fluid needs",
+          "Only after catheter removal, regardless of reliable enteral intake"
+        ],
+        "answer": 0,
+        "rationale": "Reconcile both routes and adjust PN to the nutrients still needed. Confirm tolerance and consider absorption, growth, hydration, and electrolytes; an ordered feed or an energy percentage alone does not establish that PN can be stopped.",
+        "reviewHref": "#pediatric-order-monitoring"
+      },
+      "status": "verified",
+      "sourceEvidence": [
+        "aspen2017 global13B,pediatric13A/13B,full Table13.4"
+      ],
+      "oneBestAnswerAndAllAlternativesReviewed": true,
+      "choicesReviewed": [
+        {
+          "text": "As actual tolerated intake reliably replaces intravenous nutrients while growth, absorption, hydration, and electrolytes are assessed",
+          "keyed": true,
+          "review": "Adjust remaining intravenous nutrition after confirming actual tolerated replacement and assessing growth, absorption, hydration and electrolytes."
+        },
+        {
+          "text": "As soon as a feed is ordered, before confirming delivery or tolerance",
+          "keyed": false,
+          "review": "Feed ordering is insufficient evidence of safe nutrient replacement."
+        },
+        {
+          "text": "At one energy-intake percentage without reviewing protein, absorption, or fluid needs",
+          "keyed": false,
+          "review": "One energy percentage omits other nutrients, absorption and hydration."
+        },
+        {
+          "text": "Only after catheter removal, regardless of reliable enteral intake",
+          "keyed": false,
+          "review": "Catheter removal is not a prerequisite for reducing nutrient delivery; continuing intravenous need must be assessed."
+        }
+      ],
+      "stableIdAnswerIndexAndAnchorPreserved": true,
+      "promptRevised": true,
+      "keyedTextRevised": true
+    },
+    {
+      "question": {
+        "id": "pedpn-108",
+        "question": "Delivered enteral energy has reached 70 percent of the assessed energy goal, but PN remains unchanged. What is the most defensible next action?",
+        "choices": [
+          "Reconcile both routes and adjust PN after assessing tolerated intake, absorption, growth, and fluid and nutrient needs",
+          "Stop all PN because one energy percentage proves every requirement is met",
+          "Reduce PN by the enteral mL alone without reviewing nutrient composition or absorption",
+          "Keep the full PN prescription indefinitely despite reliable enteral replacement"
+        ],
+        "answer": 0,
+        "rationale": "An energy percentage alone does not establish protein, micronutrient, or fluid adequacy, nor reliable absorption. Adjust the combined plan to prevent excess delivery while preserving growth and hydration; do not automatically stop PN.",
+        "reviewHref": "#pediatric-order-monitoring"
+      },
+      "status": "verified",
+      "sourceEvidence": [
+        "aspen2017 global13B,pediatric13A/13B,full Table13.4"
+      ],
+      "oneBestAnswerAndAllAlternativesReviewed": true,
+      "choicesReviewed": [
+        {
+          "text": "Reconcile both routes and adjust PN after assessing tolerated intake, absorption, growth, and fluid and nutrient needs",
+          "keyed": true,
+          "review": "Reconcile the combined plan and remaining needs while confirming tolerance, absorption, growth and fluid adequacy."
+        },
+        {
+          "text": "Stop all PN because one energy percentage proves every requirement is met",
+          "keyed": false,
+          "review": "The supplied70percent energy fraction cannot prove every nutrient/fluid requirement is met."
+        },
+        {
+          "text": "Reduce PN by the enteral mL alone without reviewing nutrient composition or absorption",
+          "keyed": false,
+          "review": "Equal volumes can provide different nutrients; absorption also matters."
+        },
+        {
+          "text": "Keep the full PN prescription indefinitely despite reliable enteral replacement",
+          "keyed": false,
+          "review": "An unchanged full PN order despite reliable replacement can provide excessive nutrition or fluid."
+        }
+      ],
+      "stableIdAnswerIndexAndAnchorPreserved": true,
+      "promptRevised": true,
+      "keyedTextRevised": true
+    }
+  ],
+  "verifiedBankIds": [
+    "pedpn-001",
+    "pedpn-003",
+    "pedpn-006",
+    "pedpn-007",
+    "pedpn-008",
+    "pedpn-009",
+    "pedpn-010",
+    "pedpn-013",
+    "pedpn-014",
+    "pedpn-015",
+    "pedpn-017",
+    "pedpn-018",
+    "pedpn-019",
+    "pedpn-020",
+    "pedpn-021",
+    "pedpn-022",
+    "pedpn-023",
+    "pedpn-024",
+    "pedpn-025",
+    "pedpn-026",
+    "pedpn-027",
+    "pedpn-028",
+    "pedpn-029",
+    "pedpn-030",
+    "pedpn-031",
+    "pedpn-032",
+    "pedpn-033",
+    "pedpn-034",
+    "pedpn-035",
+    "pedpn-036",
+    "pedpn-037",
+    "pedpn-039",
+    "pedpn-040",
+    "pedpn-050",
+    "pedpn-051",
+    "pedpn-052",
+    "pedpn-053",
+    "pedpn-054",
+    "pedpn-055",
+    "pedpn-056",
+    "pedpn-057",
+    "pedpn-058",
+    "pedpn-059",
+    "pedpn-060",
+    "pedpn-061",
+    "pedpn-062",
+    "pedpn-063",
+    "pedpn-064",
+    "pedpn-065",
+    "pedpn-066",
+    "pedpn-067",
+    "pedpn-068",
+    "pedpn-069",
+    "pedpn-070",
+    "pedpn-071",
+    "pedpn-072",
+    "pedpn-073",
+    "pedpn-074",
+    "pedpn-075",
+    "pedpn-076",
+    "pedpn-077",
+    "pedpn-078",
+    "pedpn-079",
+    "pedpn-080",
+    "pedpn-081",
+    "pedpn-082",
+    "pedpn-083",
+    "pedpn-084",
+    "pedpn-085",
+    "pedpn-086",
+    "pedpn-087",
+    "pedpn-088",
+    "pedpn-089",
+    "pedpn-090",
+    "pedpn-091",
+    "pedpn-092",
+    "pedpn-093",
+    "pedpn-094",
+    "pedpn-095",
+    "pedpn-096",
+    "pedpn-097",
+    "pedpn-098",
+    "pedpn-099",
+    "pedpn-100",
+    "pedpn-101",
+    "pedpn-102",
+    "pedpn-103",
+    "pedpn-104",
+    "pedpn-105",
+    "pedpn-106",
+    "pedpn-107",
+    "pedpn-108",
+    "pedpn-109"
+  ],
+  "newlyVerifiedBankIds": [
+    "pedpn-001",
+    "pedpn-006",
+    "pedpn-007",
+    "pedpn-037",
+    "pedpn-039",
+    "pedpn-108"
+  ],
+  "pendingQuestionIds": [
+    "pedpn-002",
+    "pedpn-004",
+    "pedpn-005",
+    "pedpn-011",
+    "pedpn-012",
+    "pedpn-016",
+    "pedpn-038"
+  ],
+  "teachingReview": [
+    {
+      "heading": "Define the patient precisely",
+      "body": "A 900 g preterm infant, a term neonate, a toddler, and a teenager do not share one default prescription. Gestational age, postmenstrual age, postnatal age, current weight, growth velocity, organ maturity, disease, and enteral exposure change nutrient demand and tolerance. Assess growth with serial measurements and a chart appropriate to the infant's maturity and age; a single weight or an adult template cannot describe the whole nutrition plan.",
+      "status": "verified",
+      "newBody": false,
+      "clauseReview": [
+        {
+          "clauses": "Age,maturity,weight,growth,disease,enteral exposure affect needs and tolerance",
+          "sources": [
+            "aspen2017 pediatric13A",
+            "fda2021 section8.4",
+            "neonatal2025 page1 and full assessment context",
+            "bookChapter54 printed721/PDF729"
+          ]
+        },
+        {
+          "clauses": "Serial growth with appropriate chart; one weight/adult template insufficient",
+          "sources": [
+            "neonatal2025 page1",
+            "aspen2017 pediatric13A actual intake and growth goals"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Compare more than laboratory values",
+      "body": "Monitor actual intake, output, edema, daily or clinically appropriate weight, growth velocity, head circumference and length when relevant, glucose, electrolytes, calcium, magnesium, phosphorus, triglycerides, liver and kidney function, acid-base status, catheter findings, and feeding tolerance. Frequency changes with age, stability, acuity, and recent order changes. Laboratory results assess tolerance and complications; they do not establish that the prescribed nutrients were delivered or that growth goals were met.",
+      "status": "verified",
+      "newBody": false,
+      "clauseReview": [
+        {
+          "clauses": "Actual intake,output,fluid accumulation,growth and feeding tolerance",
+          "sources": [
+            "aspen2017 pediatric13A",
+            "neonatal2025 pages1-3"
+          ]
+        },
+        {
+          "clauses": "Glucose,electrolytes,Ca,Mg,P,TG,liver/kidney and acid-base tests; catheter findings",
+          "sources": [
+            "fda2025smof fullPDF10 section5.10",
+            "fda2021 fullPDF14/15 monitoring and organ context",
+            "prior complete ASPEN prescribing Table1",
+            "aspen2017 pediatric13A"
+          ]
+        },
+        {
+          "clauses": "Frequency individualized to age,acuity,stability,order changes",
+          "sources": [
+            "aspen2017 pediatric13A",
+            "prior complete prescribing Table1 qualification"
+          ]
+        },
+        {
+          "clauses": "Labs cannot prove delivered nutrients or growth goals",
+          "sources": [
+            "aspen2017 pediatric13A separate actual/projected intake,goal and lab assessments"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Transition while preserving growth",
+      "body": "Advance enteral nutrition when clinically safe and reconcile actual delivery across both routes. Reduce PN as tolerated enteral intake reliably replaces intravenous nutrients, while checking absorption, growth, hydration, electrolytes, and the full energy and protein plan. An ordered feed or one percentage of energy intake does not establish that all nutrition and fluid needs are met, especially in intestinal failure. Assess micronutrient supplementation and a monitoring plan after PN stops. Remove central access promptly once it is no longer essential; assess continuing intravenous needs before deciding that the device is unnecessary.",
+      "status": "verified",
+      "newBody": false,
+      "clauseReview": [
+        {
+          "clauses": "Advance clinically safe tolerated intake; reconcile both routes with absorption,growth,energy/protein and hydration/electrolytes",
+          "sources": [
+            "aspen2017 global13B,pediatric13B,full Table13.4"
+          ]
+        },
+        {
+          "clauses": "One order/energy fraction cannot prove all requirements or absorption,especially intestinal failure",
+          "sources": [
+            "aspen2017 global13B impaired-GI absorption qualifier and pediatric growth/nutrient assessment"
+          ]
+        },
+        {
+          "clauses": "Micronutrient supplementation and monitoring after PN stops",
+          "sources": [
+            "aspen2017 full Table13.4"
+          ]
+        },
+        {
+          "clauses": "Prompt central access removal once no longer essential; assess ongoing IV needs first",
+          "sources": [
+            "cdc section2.2 row10",
+            "aspen2017 Table13.4 continued IV fluid/electrolyte needs and GI-impairment qualifier"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Reconcile delivered nutrients across routes",
+      "body": "Compare the prescription with what was actually infused or fed. Use the documented volume, composition, and infusion time for PN and separate lipid, and the measured oral or enteral intake. Record interruptions for procedures, line problems, and medication incompatibilities. Convert the delivered amounts to energy, protein, and fluid totals before comparing them with the assessed goals; a delivered volume alone is not a complete nutrient assessment.",
+      "status": "verified",
+      "newBody": true,
+      "clauseReview": [
+        {
+          "clauses": "Documented composition,volume,time and PN/separate lipid/oral or EN intake converted to actual energy,protein,fluid",
+          "sources": [
+            "aspen2017 pediatric13A actual/projected energy/protein",
+            "prior verified book calculations and complete ASPEN prescribing/administration tools"
+          ]
+        },
+        {
+          "clauses": "Procedures,line problems,medication incompatibility can interrupt delivery",
+          "sources": [
+            "aspen2017 adult13A administration interruption narrative and pediatric13A PICU paragraph"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Interpret growth with fluid and developmental context",
+      "body": "Track serial weight, length, and head circumference in neonates using an appropriate growth chart. Weight changes can reflect fluid shifts, illness, or medicines as well as nutrition. Interpret growth trends with actual nutrient intake, hydration, examination, and the clinical course; do not equate one weight increase with adequate nutrition. In the first two postnatal weeks, the neonatal assessment tool cautions against using its proposed weight-growth malnutrition indicators and gives nutrient intake a central role. Those proposed indicators have not been validated, so they require clinical judgment.",
+      "status": "verified",
+      "newBody": true,
+      "clauseReview": [
+        {
+          "clauses": "Serialweight,length,HC and chart; fluid,illness,medicine confounders; broader clinical examination/intake context",
+          "sources": [
+            "neonatal2025 page1 complete table; page3 physical assessment",
+            "aspen2017 pediatric13A"
+          ]
+        },
+        {
+          "clauses": "First2postnatalweeks proposed weight indicators unsuitable; nutrient intake central; criteria unvalidated",
+          "sources": [
+            "neonatal2025 page5 complete proposed-indicators table and introductory qualification",
+            "neonatal2025 page4 informational/clinical-judgment disclaimer"
+          ]
+        }
+      ]
+    }
+  ],
+  "embeddedReview": {
+    "lesson": "pediatric-pn-decision-access",
+    "question": {
+      "question": "Which information most directly distinguishes a neonatal PN order from an adult PN order?",
+      "choices": [
+        "Gestational age, postnatal age, current weight, growth, and organ maturity",
+        "Body weight alone, using the same per-kilogram targets at every age",
+        "An adult PN template scaled down by weight without reviewing neonatal tolerance",
+        "The bag volume alone, without the infant's developmental and growth context"
+      ],
+      "answer": 0,
+      "rationale": "Neonatal requirements and tolerance depend on developmental age, organ maturity, weight, and growth. Weight alone, a scaled adult template, or bag volume cannot provide that assessment.",
+      "reviewHref": "#pediatric-pn-decision-access"
+    },
+    "status": "verified",
+    "sourceEvidence": [
+      "aspen2017 pediatric13A",
+      "fda2021 section8.4",
+      "neonatal2025 page1"
+    ],
+    "allChoicesReviewed": [
+      {
+        "text": "Gestational age, postnatal age, current weight, growth, and organ maturity",
+        "keyed": true,
+        "review": "Neonatal developmental maturity,weight,growth and tolerance are necessary assessment inputs."
+      },
+      {
+        "text": "Body weight alone, using the same per-kilogram targets at every age",
+        "keyed": false,
+        "review": "Weight alone cannot determine identical age-independent requirements."
+      },
+      {
+        "text": "An adult PN template scaled down by weight without reviewing neonatal tolerance",
+        "keyed": false,
+        "review": "Adult scaling omits neonatal physiology and tolerance."
+      },
+      {
+        "text": "The bag volume alone, without the infant's developmental and growth context",
+        "keyed": false,
+        "review": "Bag volume alone omits developmental context and growth."
+      }
+    ],
+    "correctWrongSavedProgressVerified": true
+  },
+  "cumulativeReview": {
+    "question": {
+      "id": "cumulative-pediatric-parenteral-nutrition-pedpn-001",
+      "question": "Why can a single pediatric PN template not be used across all ages?",
+      "choices": [
+        "Gestational age, organ maturity, growth, weight, and tolerance change requirements",
+        "Weight alone determines identical per-kilogram targets at every age",
+        "An adult PN template can be scaled by weight without assessing neonatal tolerance",
+        "Age changes the product label but has no effect on nutrient needs"
+      ],
+      "answer": 0,
+      "rationale": "Developmental age, organ maturity, growth, illness, and weight affect requirements and tolerance. A weight-only or scaled adult template cannot replace the pediatric assessment.",
+      "reviewHref": "/learn/pharmacy/modules/pediatric-parenteral-nutrition",
+      "module": "Pediatric Parenteral Nutrition"
+    },
+    "status": "verified",
+    "derivedFrom": "pedpn-001",
+    "sourceEvidence": [
+      "aspen2017 pediatric13A; neonatal2025 page1; fda2021 section8.4"
+    ],
+    "allChoicesReviewed": [
+      {
+        "text": "Gestational age, organ maturity, growth, weight, and tolerance change requirements",
+        "keyed": true,
+        "review": "Developmental maturity, growth and tolerance alter requirements; weight is one part of the assessment."
+      },
+      {
+        "text": "Weight alone determines identical per-kilogram targets at every age",
+        "keyed": false,
+        "review": "Weight alone cannot make per-kilogram requirements identical across developmental stages."
+      },
+      {
+        "text": "An adult PN template can be scaled by weight without assessing neonatal tolerance",
+        "keyed": false,
+        "review": "Scaling an adult template ignores neonatal organ maturity and tolerance."
+      },
+      {
+        "text": "Age changes the product label but has no effect on nutrient needs",
+        "keyed": false,
+        "review": "Development changes physiological requirements, not merely the product label."
+      }
+    ],
+    "oneBestAnswerReviewed": true,
+    "runtimeFieldsEqualBank": true,
+    "unchangedRemediation": "Stable full module path; correct/wrong feedback, rendered rationale, link navigation and saved local attempts verified at both viewports.",
+    "other1179ObjectsUnchanged": true,
+    "total1180IdsAndKeysPreserved": true
+  },
+  "figureReview": {
+    "type": "peds-pn-audit",
+    "status": "verified unchanged",
+    "caption": "Calculate, deliver, observe, revise.",
+    "sourceEvidence": [
+      {
+        "step": "Rx/Order:weight,grams,volume,route",
+        "evidence": "Prior complete ASPEN prescribing pediatric template/order review and independently verified PN calculations."
+      },
+      {
+        "step": "Bag/Verify:sources,compatibility,label",
+        "evidence": "Prior complete ASPEN compounding/order checklists and FDA compatibility/label evidence."
+      },
+      {
+        "step": "Bed/Deliver:pump,filter,line,actualintake",
+        "evidence": "Prior complete administration checklist/current2021 filter tool; ASPEN2017 pediatric13A actual intake."
+      },
+      {
+        "step": "Next/Revise:growth,labs,enteralprogress",
+        "evidence": "ASPEN2017 pediatric13A/13B and full transition table; complete neonatal2025 assessment; FDA2025 section5.10."
+      }
+    ],
+    "allFourStepsSourceReviewed": true,
+    "desktopMobileRenderedReviewed": true,
+    "allSixFigureFilesAndTypesUnchanged": true,
+    "figureComponentSHA256": "8f7deea157cc22dca98800e63480550a3c556f1c441d76b832cba8744632f809"
+  },
+  "referenceReview": {
+    "addedReferences": [
+      {
+        "label": "ASPEN. When Is Parenteral Nutrition Appropriate? 2017: Pediatric Monitoring and Transition",
+        "href": "https://aspenjournals.onlinelibrary.wiley.com/doi/10.1177/0148607117695251"
+      },
+      {
+        "label": "ASPEN. Neonatal Nutrition Assessment, 2025 (informational practice tool)",
+        "href": "https://nutritioncare.org/wp-content/uploads/2025/08/Neonatal-Nutr-Assessment.pdf?ver=1757421988"
+      },
+      {
+        "label": "CDC. Intravascular Catheter Recommendations, 2011; Summary Updated 2024",
+        "href": "https://www.cdc.gov/infection-control/hcp/intravascular-catheter-related-infections/summary-recommendations.html"
+      }
+    ],
+    "prior24Preserved": true,
+    "all27LabelsAndHrefsExactInRenderedDOM": true,
+    "all27RenderedManuallyViewed": true,
+    "practiceToolAndHistoricalDatesExplicit": true,
+    "wholeModuleMetadataVerified": false
+  },
+  "sourceDiscrepancies": [
+    {
+      "issue": "Delivered mL alone was framed as nutrition actually received.",
+      "resolution": "Calculate delivered energy,protein and fluid using documented composition and interruptions across routes."
+    },
+    {
+      "issue": "Integratedcase108 described70percent measured needs without distinguishing energy from other requirements.",
+      "resolution": "Stem now specifies delivered energy relative to assessed energy goal; all alternatives/rationale require further assessment,not automaticPNcessation."
+    },
+    {
+      "issue": "Neonatal assessment practice-tool criteria can be mistaken for validated guideline thresholds.",
+      "resolution": "Informational source label,first2week limitations and unvalidated status explicit; no numerical diagnostic cutoffs adopted."
+    },
+    {
+      "issue": "Older2017 adult lipid/monitoring/weaning schedules could be misapplied to pediatric or current product limits.",
+      "resolution": "No old adult thresholds/protocols introduced; age/product-specific prior verified limits preserved."
+    }
+  ],
+  "coverage": {
+    "bank": 100,
+    "newlySourceVerifiedBank": 6,
+    "sourceVerifiedBank": 93,
+    "remainingBank": 7,
+    "bodies": 40,
+    "newlySourceVerifiedBodies": 5,
+    "sourceVerifiedBodies": 32,
+    "remainingBodies": 8,
+    "embeddedChecks": 6,
+    "sourceVerifiedEmbeddedChecks": 6,
+    "remainingEmbeddedChecks": 0,
+    "figures": 6,
+    "sourceVerifiedFigures": 5,
+    "remainingFigures": 1,
+    "cumulative": 5,
+    "sourceVerifiedCumulative": 5,
+    "remainingCumulative": 0,
+    "metadataVerified": false,
+    "wholeModuleVerified": false,
+    "wholeChapterVerified": false
+  },
+  "preservation": {
+    "bankIdsAndAnswerKeysRetained": 100,
+    "unchangedBankObjects": 94,
+    "unchangedTeachingBodies": 35,
+    "newBodies": 2,
+    "changedOriginalBodies": 3,
+    "unchangedEmbeddedChecks": 5,
+    "unchangedCumulativeObjects": 1179,
+    "stableCumulativeIdsAndAnswerKeys": 1180,
+    "allSixFiguresUnchanged": true,
+    "prior24ReferencesPreserved": true,
+    "architectureProgressAndBackendUnchanged": true
+  },
+  "calculationEvidence": {
+    "newAssessmentCalculations": 0,
+    "newCompletedBookExercises": 0,
+    "runningAssessmentCalculations": 728,
+    "runningSeparateCompletedBookExercises": 98,
+    "q108SuppliedEnergyPercentageNotNewCalculationOrUniversalStopThreshold": true
+  },
+  "validation": {
+    "focusedStructure": {
+      "status": "passed",
+      "questions": 100,
+      "hardErrors": [],
+      "command": "node --loader ./scripts/esm-alias-loader.mjs scripts/audit-pharmacy-assessments.mjs --module pediatric-parenteral-nutrition"
+    },
+    "isolatedBuild": {
+      "status": "passed",
+      "staticPages": 567,
+      "command": "next build --webpack",
+      "scope": "Exact archived committed base plus two scoped code files and existing runtime dependencies. Unrelated working drafts/env/private sources excluded."
+    },
+    "preservationHelper": "A missing reviewHref on unrelated cumulative objects caused a private assertion KeyError; optional-field access corrected and checks passed. Candidate export rerun from candidate cwd to avoid main-working-tree alias resolution. No product/runtime repair needed.",
+    "browser": {
+      "status": "passed",
+      "results": [
+        {
+          "module": "pediatric-parenteral-nutrition",
+          "width": 1440,
+          "renderedBodies": 40,
+          "expandedBodyViews": 5,
+          "bankItemsCorrectWrong": 6,
+          "cumulativeRuntimeItems": 5,
+          "sourceVerifiedCumulativeInThisUnit": 1,
+          "cumulativeCorrectWrongAndSavedProgress": true,
+          "figureViews": 1,
+          "sourceVerifiedChecksThisUnit": 1,
+          "wholeParentCumulativeClinicalSourceClosure": true,
+          "groups": 1,
+          "remediationAndSavedProgress": true
+        },
+        {
+          "module": "pediatric-parenteral-nutrition",
+          "width": 390,
+          "renderedBodies": 40,
+          "expandedBodyViews": 5,
+          "bankItemsCorrectWrong": 6,
+          "cumulativeRuntimeItems": 5,
+          "sourceVerifiedCumulativeInThisUnit": 1,
+          "cumulativeCorrectWrongAndSavedProgress": true,
+          "figureViews": 1,
+          "sourceVerifiedChecksThisUnit": 1,
+          "wholeParentCumulativeClinicalSourceClosure": true,
+          "groups": 1,
+          "remediationAndSavedProgress": true
+        }
+      ],
+      "pageErrors": []
+    },
+    "manualRenderedReview": {
+      "status": "passed",
+      "allPairsManuallyViewed": true,
+      "pairs": [
+        {
+          "image": "view-00.png",
+          "label": "pedpn-001 correct",
+          "sha256": "5b01dd51240e333aeea103f189d30ee667d76ca3d77445aa60a9741f96429a23"
+        },
+        {
+          "image": "view-01.png",
+          "label": "pedpn-001 wrong",
+          "sha256": "5f5c8e4b7279e197e7354ccdc70f5694adef17785dd3f65687ea93484b61b11d"
+        },
+        {
+          "image": "view-02.png",
+          "label": "pedpn-006 correct",
+          "sha256": "f86a5855d6447d79720d916cc08d46393cae8e1d62543677a6b9f78d2d4396a8"
+        },
+        {
+          "image": "view-03.png",
+          "label": "pedpn-006 wrong",
+          "sha256": "74ab778c7d65497274c9dbf712cd5a205c0c2d60c98a56829b61b41dd1b32754"
+        },
+        {
+          "image": "view-04.png",
+          "label": "pedpn-007 correct",
+          "sha256": "24cffd8ddc1b6a4640b5ad392798f7aba69c32009eb99ef10036c0b003929caa"
+        },
+        {
+          "image": "view-05.png",
+          "label": "pedpn-007 wrong",
+          "sha256": "ef812c9899dc6319e512aaa046606f256d88530b1851961404ce8c3ec3915295"
+        },
+        {
+          "image": "view-06.png",
+          "label": "pedpn-037 correct",
+          "sha256": "545e18906e0e6cfefd28463ad09da4d1baa6f7fe1d260ef967fe773b17e03cc5"
+        },
+        {
+          "image": "view-07.png",
+          "label": "pedpn-037 wrong",
+          "sha256": "19166a8b0322d879e23687825b0ca3bb63aeed04040db6c33d2510c02ff81c4c"
+        },
+        {
+          "image": "view-08.png",
+          "label": "pedpn-039 correct",
+          "sha256": "7300eb3ab01f5d4a0e54490e64815b1e3284d67da803c7a0605947a65ec790a1"
+        },
+        {
+          "image": "view-09.png",
+          "label": "pedpn-039 wrong",
+          "sha256": "a3a5b9dd844ac15f8332d76655c27a6b28a63468794a0638d9425a6aca9f71ba"
+        },
+        {
+          "image": "view-10.png",
+          "label": "pedpn-108 correct",
+          "sha256": "c8f7724dcd70160be167668d8f28fce74944eb5624d448fee62d3a5968cc0c2c"
+        },
+        {
+          "image": "view-11.png",
+          "label": "pedpn-108 wrong",
+          "sha256": "ab3feb3da511d044ef85867fae1f462e57fc36d902b9013646beb1a9b83baf70"
+        },
+        {
+          "image": "view-12.png",
+          "label": "Define the patient precisely",
+          "sha256": "f0e54b25de164f7d6bcc0dec80ab0c90fb7b2801cdbf80e5b2eba5b6abb650e5"
+        },
+        {
+          "image": "view-13.png",
+          "label": "Compare more than laboratory values",
+          "sha256": "fd8e8281a1b854116e9247f4e8bf483a89c816493aa4ff870e2443b9a9e9df9f"
+        },
+        {
+          "image": "view-14.png",
+          "label": "Transition while preserving growth",
+          "sha256": "7262c72769a197d754fe09db8e7c5ca9cf333a58a2e2d6a3cb3c951afd9e5849"
+        },
+        {
+          "image": "view-15.png",
+          "label": "Reconcile delivered nutrients across routes",
+          "sha256": "d79ab48ba1c37f549dd3ecd1607771261657b739272a6f5ba3e4a76a141b18db"
+        },
+        {
+          "image": "view-16.png",
+          "label": "Interpret growth with fluid and developmental context",
+          "sha256": "03989267a4e87190e972b27596ea99d807489a7b9d41360021b80ae9dee54502"
+        },
+        {
+          "image": "view-17.png",
+          "label": "Development embedded check correct",
+          "sha256": "fc27957db2f05f21bcc39a347a1a25d3a012d8cf2d6fee26847d64fdd9efb0ed"
+        },
+        {
+          "image": "view-18.png",
+          "label": "Development embedded check wrong",
+          "sha256": "584adf3c0fd1799e21b621a21543b1efcfb97f164deb9383f26ba27cb2c03e45"
+        },
+        {
+          "image": "view-19.png",
+          "label": "Cumulative development correct",
+          "sha256": "9aa1d28de5f0ab018aabe412e47a68d292f41ac7904cc70fd3041bedaba170ce"
+        },
+        {
+          "image": "view-20.png",
+          "label": "Cumulative development wrong",
+          "sha256": "2f6987e8c9e2a0cc68b61312898ff8c49fd033148e34ef2a4c594f5035ba61ff"
+        },
+        {
+          "image": "view-21.png",
+          "label": "Daily closed-loop figure",
+          "sha256": "47232c5c815ecd2a8184e0ec4f995290818c804411b8aec660cab07900296191"
+        },
+        {
+          "image": "view-22.png",
+          "label": "Source references",
+          "sha256": "a1c29ce02518bd1d59441306edab86a121c502f3a4d8ab6ba35ad682181ac9ea"
+        }
+      ],
+      "checkedAt": "2026-10-02T04:30:26.609758+00:00",
+      "scope": "12 bank correct/wrong pairs; five complete body pairs; two decision-check pairs; two derived-cumulative pairs; unchanged daily-loop figure; all27references. Desktop1440/mobile390. Text, labels, feedback, rationales and source qualifications legible without clipping.",
+      "issues": []
+    },
+    "contentHashes": {
+      "src/data/modules/pediatricParenteralNutrition.js": "d4b9d2110482bf18dc21efb87ca2195b1df59ee1f1ce04975d48f9c683357b74",
+      "src/data/questionBanks/pediatricParenteralNutrition.js": "f3baa96d374f3b30c6d66c3b1dc0e527dd18f3bb17c9a888a96bce4225b692eb"
+    },
+    "renderedBodyDOMEquality": 40,
+    "runtime320Overflow": true,
+    "newlyVerifiedQuestionsCorrectWrong": 6,
+    "decisionCheckCorrectWrong": true,
+    "derivedCumulativeCorrectWrong": true,
+    "moduleAndCumulativeSavedAttemptsPerViewport": 2,
+    "moduleAndCumulativeBestScore": 10,
+    "moduleAndCumulativeLatestScore": 0,
+    "decisionCheckSavedAttemptsPerViewport": 2,
+    "decisionCheckBestScore": 1,
+    "decisionCheckLatestScore": 0,
+    "savedProgressScope": "Existing committed localStorage practice behavior; no sign-in,backend persistence or unrelated draft account changes claimed tested."
+  },
+  "release": {
+    "branch": "audit/rxprep-content-2026-09-24",
+    "commit": "pending",
+    "push": "pending",
+    "receipt": "sequential-release-pediatric-pn-development-delivery-2026-10-01.json",
+    "mainMerge": "not performed",
+    "production": "not verified"
+  },
+  "nextAction": "Finish remaining pediatricPN bank002/004/005/011/012/016/038 and eight original bodies: indications/access; full fluid ledger/response/concentration; amino-acid provision/protein restriction; integrated glucose/bilirubin trends. Finish decision figure and full lesson/module metadata, then reconcile all100questions/40bodies/sixchecks/sixfigures/fivecumulative. Review complete approved sources for those outstanding claims rather than extrapolating from current development/transition scope. Do not repeat the newly verified001/006/007/037/039/108,decisioncheck,developmentcumulative or orderfigure as pending. Chapter1entry15/Chapter11 remain reviewing; Chapter54 broader audit pending. EN outside-source exception remains unresolved."
+}
