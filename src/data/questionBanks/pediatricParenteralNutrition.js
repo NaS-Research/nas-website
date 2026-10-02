@@ -55,12 +55,12 @@ const fluidCases = [3, 5, 8, 10, 12, 15, 20, 24, 30, 42].map((kg, index) => {
 
 const girToGramsCases = [[1,6],[1.5,8],[2,6],[2.5,10],[3,5],[3.2,7],[4,4],[5,3],[6,2.5],[8,2]].map(([kg,gir], index) => {
   const grams = Math.round(gir * kg * 1440 / 1000 * 100) / 100;
-  return q(`06${index}`, `A ${kg} kg patient is prescribed a GIR of ${gir} mg/kg/min over 24 hours. How many grams of dextrose are delivered daily?`, [`${grams} g`, `${Math.round(grams * 2 * 100) / 100} g`, `${Math.round((grams + 5) * 100) / 100} g`, `${Math.round(grams / 2 * 100) / 100} g`], 0, `${gir} times ${kg} times 1,440 divided by 1,000 equals ${grams} g/day.`, "pediatric-fluid-glucose");
+  return q(`06${index}`, `A ${kg} kg patient is prescribed a GIR of ${gir} mg/kg/min over 24 hours. How many grams of dextrose are delivered daily? Round to the nearest hundredth of a gram when needed.`, [`${grams} g`, `${Math.round(grams * 2 * 100) / 100} g`, `${Math.round((grams + 5) * 100) / 100} g`, `${Math.round(grams / 2 * 100) / 100} g`], 0, `${gir} times ${kg} times 1,440 divided by 1,000 equals ${grams} g/day after rounding to the nearest hundredth when needed.`, "pediatric-fluid-glucose");
 });
 
 const gramsToGirCases = [[17.28,2],[28.8,2],[43.2,3],[50.4,5],[72,10],[86.4,12],[100.8,15],[115.2,20],[129.6,30],[144,40]].map(([grams,kg], index) => {
   const gir = Math.round(grams * 1000 / kg / 1440 * 100) / 100;
-  return q(`07${index}`, `A ${kg} kg patient receives ${grams} g of dextrose over 24 hours. What is the GIR?`, [`${gir} mg/kg/min`, `${Math.round(gir * 2 * 100) / 100} mg/kg/min`, `${Math.round((gir + 1.5) * 100) / 100} mg/kg/min`, `${Math.round(gir / 2 * 100) / 100} mg/kg/min`], 0, `${grams * 1000} mg divided by ${kg} kg and 1,440 minutes equals ${gir} mg/kg/min.`, "pediatric-fluid-glucose");
+  return q(`07${index}`, `A ${kg} kg patient receives ${grams} g of dextrose over 24 hours. What is the GIR? Round to the nearest hundredth of a mg/kg/min when needed.`, [`${gir} mg/kg/min`, `${Math.round(gir * 2 * 100) / 100} mg/kg/min`, `${Math.round((gir + 1.5) * 100) / 100} mg/kg/min`, `${Math.round(gir / 2 * 100) / 100} mg/kg/min`], 0, `${grams * 1000} mg divided by ${kg} kg and 1,440 minutes equals ${gir} mg/kg/min after rounding to the nearest hundredth when needed.`, "pediatric-fluid-glucose");
 });
 
 const proteinCases = [[0.8,3],[1,3.5],[1.2,3],[1.5,3.2],[2,3.5],[3,2.5],[5,2],[8,1.8],[12,1.5],[20,1.2]].map(([kg,dose], index) => {

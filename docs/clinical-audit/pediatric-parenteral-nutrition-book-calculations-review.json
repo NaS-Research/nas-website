@@ -1,0 +1,1668 @@
+{
+  "date": "2026-10-01",
+  "module": "pediatric-parenteral-nutrition",
+  "unit": "Pediatric PN prescribed-dose and GIR calculation reconciliation",
+  "status": "Scoped calculation unit verified; whole module and chapter incomplete",
+  "baseCommit": "c452b35baed622c0c82fc6cc44ab2f2f38678201",
+  "sourcePolicy": {
+    "primary": "Supplied private RxPrep2023 book",
+    "outsidePNReferencesAuthorized": true,
+    "authorizationQuote": "use that and complete the goal. I approve",
+    "scope": "Existing official ASPEN, USP, FDA and CDC PN references; no extension to EN",
+    "newClaimsForThisCalculationUnit": "Supplied-book methods and explicit question givens; no outside recommendations used to close these43items",
+    "privateBookAndExtractsOutsideGit": true
+  },
+  "sourceRead": {
+    "chapter": 11,
+    "printedPages": [
+      150,
+      160
+    ],
+    "pdfPages": [
+      158,
+      168
+    ],
+    "fullTextAndRenderedPagesRead": true,
+    "sourceTextSHA256": {
+      "158": "68355240072216ef80f1a1a13d233c6fb7072dc0ed74d2da65587a5576c530bd",
+      "159": "c786ea64c4d6bb0310c9fabf37c6172c8de7e0f03c2fc66bd2cf4278a213c03f",
+      "160": "45c468b40a51cfc7ee6efce5380aa621572353a57e1dc844b51dfbd519782e03",
+      "161": "125609d2fedb65f775d030c60e02b626fce8cb41b27e98b9b646932101116baf",
+      "162": "2614942e78d6e07a47c70f448d734de4396188b3557d3d3ff85faebab074664b",
+      "163": "11d8e443cc52f71cf2b17314f025f5c035548b3ee6eb238c1ebe3f1cd916c038",
+      "164": "208921b2a9d934becda088482f11ead503cd70b214ad2af7cae9ac148724de98",
+      "165": "beb8023d2c7553f2b8793d55aa4aded39f0bc28b6f7851af2bfc9344fe130925",
+      "166": "92c527ed8923cad47765ac5484a13642ab5c98944983042dbc26d04de1573636",
+      "167": "7bca1f898cc66381ab2abca2f85d9b46af5012af3dee8115ebb282b6c8c9a3d1",
+      "168": "e10bc32af4d99357eaa3a392063c6ea359acf81878b93a8240d0dfa7a0cd1e5d"
+    },
+    "coverage": "All PN prose, tables, footnotes and examples on these11pages read. Historical adult ranges, 4mg/kg/min ceiling, calcium45mEq/L heuristic, dosing andhang-time passages are not adopted as neonatal recommendations."
+  },
+  "questionReview": [
+    {
+      "question": {
+        "id": "pedpn-008",
+        "question": "How many kilocalories does one gram of intravenous dextrose provide?",
+        "choices": [
+          "3.4 kcal",
+          "4 kcal",
+          "7 kcal",
+          "9 kcal"
+        ],
+        "answer": 0,
+        "rationale": "Intravenous dextrose provides 3.4 kcal/g.",
+        "reviewHref": "#pediatric-fluid-glucose"
+      },
+      "pdfPages": [
+        160,
+        163
+      ],
+      "review": "Full prompt, every choice, keyed answer and explanation individually read. Dimensional reconstruction supports the stated prescription calculation; no pediatric dose, range, rate, age/product suitability or fluid algorithm is selected by this item.",
+      "independentCalculation": {
+        "method": "3.4kcal/g dextrose explicitly in book; GIRmg/kg/min normalizes rate by bodyweight andtime; same amount/weight over half time doubles rate",
+        "arithmetic": "passed"
+      },
+      "status": "verified"
+    },
+    {
+      "question": {
+        "id": "pedpn-009",
+        "question": "Which units define GIR?",
+        "choices": [
+          "mg/kg/min",
+          "g/mL/day",
+          "kcal/L/hour",
+          "mEq/kg/week"
+        ],
+        "answer": 0,
+        "rationale": "GIR normalizes glucose delivery to weight and minutes.",
+        "reviewHref": "#pediatric-fluid-glucose"
+      },
+      "pdfPages": [
+        163
+      ],
+      "review": "Full prompt, every choice, keyed answer and explanation individually read. Dimensional reconstruction supports the stated prescription calculation; no pediatric dose, range, rate, age/product suitability or fluid algorithm is selected by this item.",
+      "independentCalculation": {
+        "method": "3.4kcal/g dextrose explicitly in book; GIRmg/kg/min normalizes rate by bodyweight andtime; same amount/weight over half time doubles rate",
+        "arithmetic": "passed"
+      },
+      "status": "verified"
+    },
+    {
+      "question": {
+        "id": "pedpn-010",
+        "question": "What happens to GIR if the same dextrose grams are infused over half as many hours?",
+        "choices": [
+          "It doubles",
+          "It is halved",
+          "It is unchanged",
+          "It becomes negative"
+        ],
+        "answer": 0,
+        "rationale": "The same amount delivered in half the time doubles the rate.",
+        "reviewHref": "#pediatric-fluid-glucose"
+      },
+      "pdfPages": [
+        163
+      ],
+      "review": "Full prompt, every choice, keyed answer and explanation individually read. Dimensional reconstruction supports the stated prescription calculation; no pediatric dose, range, rate, age/product suitability or fluid algorithm is selected by this item.",
+      "independentCalculation": {
+        "method": "3.4kcal/g dextrose explicitly in book; GIRmg/kg/min normalizes rate by bodyweight andtime; same amount/weight over half time doubles rate",
+        "arithmetic": "passed"
+      },
+      "status": "verified"
+    },
+    {
+      "question": {
+        "id": "pedpn-060",
+        "question": "A 1 kg patient is prescribed a GIR of 6 mg/kg/min over 24 hours. How many grams of dextrose are delivered daily? Round to the nearest hundredth of a gram when needed.",
+        "choices": [
+          "8.64 g",
+          "17.28 g",
+          "13.64 g",
+          "4.32 g"
+        ],
+        "answer": 0,
+        "rationale": "6 times 1 times 1,440 divided by 1,000 equals 8.64 g/day after rounding to the nearest hundredth when needed.",
+        "reviewHref": "#pediatric-fluid-glucose"
+      },
+      "pdfPages": [
+        163
+      ],
+      "review": "Full prompt, every choice, keyed answer and explanation individually read. Dimensional reconstruction supports the stated prescription calculation; no pediatric dose, range, rate, age/product suitability or fluid algorithm is selected by this item.",
+      "independentCalculation": {
+        "independentExactValue": "8.64",
+        "expectedCorrectText": "8.64 g",
+        "method": "mg/(kg min) times kg times minutes, divided by1000mg/g",
+        "allChoicesUniqueAndNonKeyedAnswersNumericallyIncorrect": true,
+        "arithmetic": "passed"
+      },
+      "status": "verified"
+    },
+    {
+      "question": {
+        "id": "pedpn-061",
+        "question": "A 1.5 kg patient is prescribed a GIR of 8 mg/kg/min over 24 hours. How many grams of dextrose are delivered daily? Round to the nearest hundredth of a gram when needed.",
+        "choices": [
+          "17.28 g",
+          "34.56 g",
+          "22.28 g",
+          "8.64 g"
+        ],
+        "answer": 0,
+        "rationale": "8 times 1.5 times 1,440 divided by 1,000 equals 17.28 g/day after rounding to the nearest hundredth when needed.",
+        "reviewHref": "#pediatric-fluid-glucose"
+      },
+      "pdfPages": [
+        163
+      ],
+      "review": "Full prompt, every choice, keyed answer and explanation individually read. Dimensional reconstruction supports the stated prescription calculation; no pediatric dose, range, rate, age/product suitability or fluid algorithm is selected by this item.",
+      "independentCalculation": {
+        "independentExactValue": "17.28",
+        "expectedCorrectText": "17.28 g",
+        "method": "mg/(kg min) times kg times minutes, divided by1000mg/g",
+        "allChoicesUniqueAndNonKeyedAnswersNumericallyIncorrect": true,
+        "arithmetic": "passed"
+      },
+      "status": "verified"
+    },
+    {
+      "question": {
+        "id": "pedpn-062",
+        "question": "A 2 kg patient is prescribed a GIR of 6 mg/kg/min over 24 hours. How many grams of dextrose are delivered daily? Round to the nearest hundredth of a gram when needed.",
+        "choices": [
+          "17.28 g",
+          "34.56 g",
+          "22.28 g",
+          "8.64 g"
+        ],
+        "answer": 0,
+        "rationale": "6 times 2 times 1,440 divided by 1,000 equals 17.28 g/day after rounding to the nearest hundredth when needed.",
+        "reviewHref": "#pediatric-fluid-glucose"
+      },
+      "pdfPages": [
+        163
+      ],
+      "review": "Full prompt, every choice, keyed answer and explanation individually read. Dimensional reconstruction supports the stated prescription calculation; no pediatric dose, range, rate, age/product suitability or fluid algorithm is selected by this item.",
+      "independentCalculation": {
+        "independentExactValue": "17.28",
+        "expectedCorrectText": "17.28 g",
+        "method": "mg/(kg min) times kg times minutes, divided by1000mg/g",
+        "allChoicesUniqueAndNonKeyedAnswersNumericallyIncorrect": true,
+        "arithmetic": "passed"
+      },
+      "status": "verified"
+    },
+    {
+      "question": {
+        "id": "pedpn-063",
+        "question": "A 2.5 kg patient is prescribed a GIR of 10 mg/kg/min over 24 hours. How many grams of dextrose are delivered daily? Round to the nearest hundredth of a gram when needed.",
+        "choices": [
+          "36 g",
+          "72 g",
+          "41 g",
+          "18 g"
+        ],
+        "answer": 0,
+        "rationale": "10 times 2.5 times 1,440 divided by 1,000 equals 36 g/day after rounding to the nearest hundredth when needed.",
+        "reviewHref": "#pediatric-fluid-glucose"
+      },
+      "pdfPages": [
+        163
+      ],
+      "review": "Full prompt, every choice, keyed answer and explanation individually read. Dimensional reconstruction supports the stated prescription calculation; no pediatric dose, range, rate, age/product suitability or fluid algorithm is selected by this item.",
+      "independentCalculation": {
+        "independentExactValue": "36.0",
+        "expectedCorrectText": "36 g",
+        "method": "mg/(kg min) times kg times minutes, divided by1000mg/g",
+        "allChoicesUniqueAndNonKeyedAnswersNumericallyIncorrect": true,
+        "arithmetic": "passed"
+      },
+      "status": "verified"
+    },
+    {
+      "question": {
+        "id": "pedpn-064",
+        "question": "A 3 kg patient is prescribed a GIR of 5 mg/kg/min over 24 hours. How many grams of dextrose are delivered daily? Round to the nearest hundredth of a gram when needed.",
+        "choices": [
+          "21.6 g",
+          "43.2 g",
+          "26.6 g",
+          "10.8 g"
+        ],
+        "answer": 0,
+        "rationale": "5 times 3 times 1,440 divided by 1,000 equals 21.6 g/day after rounding to the nearest hundredth when needed.",
+        "reviewHref": "#pediatric-fluid-glucose"
+      },
+      "pdfPages": [
+        163
+      ],
+      "review": "Full prompt, every choice, keyed answer and explanation individually read. Dimensional reconstruction supports the stated prescription calculation; no pediatric dose, range, rate, age/product suitability or fluid algorithm is selected by this item.",
+      "independentCalculation": {
+        "independentExactValue": "21.6",
+        "expectedCorrectText": "21.6 g",
+        "method": "mg/(kg min) times kg times minutes, divided by1000mg/g",
+        "allChoicesUniqueAndNonKeyedAnswersNumericallyIncorrect": true,
+        "arithmetic": "passed"
+      },
+      "status": "verified"
+    },
+    {
+      "question": {
+        "id": "pedpn-065",
+        "question": "A 3.2 kg patient is prescribed a GIR of 7 mg/kg/min over 24 hours. How many grams of dextrose are delivered daily? Round to the nearest hundredth of a gram when needed.",
+        "choices": [
+          "32.26 g",
+          "64.52 g",
+          "37.26 g",
+          "16.13 g"
+        ],
+        "answer": 0,
+        "rationale": "7 times 3.2 times 1,440 divided by 1,000 equals 32.26 g/day after rounding to the nearest hundredth when needed.",
+        "reviewHref": "#pediatric-fluid-glucose"
+      },
+      "pdfPages": [
+        163
+      ],
+      "review": "Full prompt, every choice, keyed answer and explanation individually read. Dimensional reconstruction supports the stated prescription calculation; no pediatric dose, range, rate, age/product suitability or fluid algorithm is selected by this item.",
+      "independentCalculation": {
+        "independentExactValue": "32.256",
+        "expectedCorrectText": "32.26 g",
+        "method": "mg/(kg min) times kg times minutes, divided by1000mg/g",
+        "allChoicesUniqueAndNonKeyedAnswersNumericallyIncorrect": true,
+        "arithmetic": "passed"
+      },
+      "status": "verified"
+    },
+    {
+      "question": {
+        "id": "pedpn-066",
+        "question": "A 4 kg patient is prescribed a GIR of 4 mg/kg/min over 24 hours. How many grams of dextrose are delivered daily? Round to the nearest hundredth of a gram when needed.",
+        "choices": [
+          "23.04 g",
+          "46.08 g",
+          "28.04 g",
+          "11.52 g"
+        ],
+        "answer": 0,
+        "rationale": "4 times 4 times 1,440 divided by 1,000 equals 23.04 g/day after rounding to the nearest hundredth when needed.",
+        "reviewHref": "#pediatric-fluid-glucose"
+      },
+      "pdfPages": [
+        163
+      ],
+      "review": "Full prompt, every choice, keyed answer and explanation individually read. Dimensional reconstruction supports the stated prescription calculation; no pediatric dose, range, rate, age/product suitability or fluid algorithm is selected by this item.",
+      "independentCalculation": {
+        "independentExactValue": "23.04",
+        "expectedCorrectText": "23.04 g",
+        "method": "mg/(kg min) times kg times minutes, divided by1000mg/g",
+        "allChoicesUniqueAndNonKeyedAnswersNumericallyIncorrect": true,
+        "arithmetic": "passed"
+      },
+      "status": "verified"
+    },
+    {
+      "question": {
+        "id": "pedpn-067",
+        "question": "A 5 kg patient is prescribed a GIR of 3 mg/kg/min over 24 hours. How many grams of dextrose are delivered daily? Round to the nearest hundredth of a gram when needed.",
+        "choices": [
+          "21.6 g",
+          "43.2 g",
+          "26.6 g",
+          "10.8 g"
+        ],
+        "answer": 0,
+        "rationale": "3 times 5 times 1,440 divided by 1,000 equals 21.6 g/day after rounding to the nearest hundredth when needed.",
+        "reviewHref": "#pediatric-fluid-glucose"
+      },
+      "pdfPages": [
+        163
+      ],
+      "review": "Full prompt, every choice, keyed answer and explanation individually read. Dimensional reconstruction supports the stated prescription calculation; no pediatric dose, range, rate, age/product suitability or fluid algorithm is selected by this item.",
+      "independentCalculation": {
+        "independentExactValue": "21.6",
+        "expectedCorrectText": "21.6 g",
+        "method": "mg/(kg min) times kg times minutes, divided by1000mg/g",
+        "allChoicesUniqueAndNonKeyedAnswersNumericallyIncorrect": true,
+        "arithmetic": "passed"
+      },
+      "status": "verified"
+    },
+    {
+      "question": {
+        "id": "pedpn-068",
+        "question": "A 6 kg patient is prescribed a GIR of 2.5 mg/kg/min over 24 hours. How many grams of dextrose are delivered daily? Round to the nearest hundredth of a gram when needed.",
+        "choices": [
+          "21.6 g",
+          "43.2 g",
+          "26.6 g",
+          "10.8 g"
+        ],
+        "answer": 0,
+        "rationale": "2.5 times 6 times 1,440 divided by 1,000 equals 21.6 g/day after rounding to the nearest hundredth when needed.",
+        "reviewHref": "#pediatric-fluid-glucose"
+      },
+      "pdfPages": [
+        163
+      ],
+      "review": "Full prompt, every choice, keyed answer and explanation individually read. Dimensional reconstruction supports the stated prescription calculation; no pediatric dose, range, rate, age/product suitability or fluid algorithm is selected by this item.",
+      "independentCalculation": {
+        "independentExactValue": "21.6",
+        "expectedCorrectText": "21.6 g",
+        "method": "mg/(kg min) times kg times minutes, divided by1000mg/g",
+        "allChoicesUniqueAndNonKeyedAnswersNumericallyIncorrect": true,
+        "arithmetic": "passed"
+      },
+      "status": "verified"
+    },
+    {
+      "question": {
+        "id": "pedpn-069",
+        "question": "A 8 kg patient is prescribed a GIR of 2 mg/kg/min over 24 hours. How many grams of dextrose are delivered daily? Round to the nearest hundredth of a gram when needed.",
+        "choices": [
+          "23.04 g",
+          "46.08 g",
+          "28.04 g",
+          "11.52 g"
+        ],
+        "answer": 0,
+        "rationale": "2 times 8 times 1,440 divided by 1,000 equals 23.04 g/day after rounding to the nearest hundredth when needed.",
+        "reviewHref": "#pediatric-fluid-glucose"
+      },
+      "pdfPages": [
+        163
+      ],
+      "review": "Full prompt, every choice, keyed answer and explanation individually read. Dimensional reconstruction supports the stated prescription calculation; no pediatric dose, range, rate, age/product suitability or fluid algorithm is selected by this item.",
+      "independentCalculation": {
+        "independentExactValue": "23.04",
+        "expectedCorrectText": "23.04 g",
+        "method": "mg/(kg min) times kg times minutes, divided by1000mg/g",
+        "allChoicesUniqueAndNonKeyedAnswersNumericallyIncorrect": true,
+        "arithmetic": "passed"
+      },
+      "status": "verified"
+    },
+    {
+      "question": {
+        "id": "pedpn-070",
+        "question": "A 2 kg patient receives 17.28 g of dextrose over 24 hours. What is the GIR? Round to the nearest hundredth of a mg/kg/min when needed.",
+        "choices": [
+          "6 mg/kg/min",
+          "12 mg/kg/min",
+          "7.5 mg/kg/min",
+          "3 mg/kg/min"
+        ],
+        "answer": 0,
+        "rationale": "17280 mg divided by 2 kg and 1,440 minutes equals 6 mg/kg/min after rounding to the nearest hundredth when needed.",
+        "reviewHref": "#pediatric-fluid-glucose"
+      },
+      "pdfPages": [
+        163
+      ],
+      "review": "Full prompt, every choice, keyed answer and explanation individually read. Dimensional reconstruction supports the stated prescription calculation; no pediatric dose, range, rate, age/product suitability or fluid algorithm is selected by this item.",
+      "independentCalculation": {
+        "independentExactValue": "6.00",
+        "expectedCorrectText": "6 mg/kg/min",
+        "method": "grams to mg divided by kg and actual minutes",
+        "allChoicesUniqueAndNonKeyedAnswersNumericallyIncorrect": true,
+        "arithmetic": "passed"
+      },
+      "status": "verified"
+    },
+    {
+      "question": {
+        "id": "pedpn-071",
+        "question": "A 2 kg patient receives 28.8 g of dextrose over 24 hours. What is the GIR? Round to the nearest hundredth of a mg/kg/min when needed.",
+        "choices": [
+          "10 mg/kg/min",
+          "20 mg/kg/min",
+          "11.5 mg/kg/min",
+          "5 mg/kg/min"
+        ],
+        "answer": 0,
+        "rationale": "28800 mg divided by 2 kg and 1,440 minutes equals 10 mg/kg/min after rounding to the nearest hundredth when needed.",
+        "reviewHref": "#pediatric-fluid-glucose"
+      },
+      "pdfPages": [
+        163
+      ],
+      "review": "Full prompt, every choice, keyed answer and explanation individually read. Dimensional reconstruction supports the stated prescription calculation; no pediatric dose, range, rate, age/product suitability or fluid algorithm is selected by this item.",
+      "independentCalculation": {
+        "independentExactValue": "10.0",
+        "expectedCorrectText": "10 mg/kg/min",
+        "method": "grams to mg divided by kg and actual minutes",
+        "allChoicesUniqueAndNonKeyedAnswersNumericallyIncorrect": true,
+        "arithmetic": "passed"
+      },
+      "status": "verified"
+    },
+    {
+      "question": {
+        "id": "pedpn-072",
+        "question": "A 3 kg patient receives 43.2 g of dextrose over 24 hours. What is the GIR? Round to the nearest hundredth of a mg/kg/min when needed.",
+        "choices": [
+          "10 mg/kg/min",
+          "20 mg/kg/min",
+          "11.5 mg/kg/min",
+          "5 mg/kg/min"
+        ],
+        "answer": 0,
+        "rationale": "43200 mg divided by 3 kg and 1,440 minutes equals 10 mg/kg/min after rounding to the nearest hundredth when needed.",
+        "reviewHref": "#pediatric-fluid-glucose"
+      },
+      "pdfPages": [
+        163
+      ],
+      "review": "Full prompt, every choice, keyed answer and explanation individually read. Dimensional reconstruction supports the stated prescription calculation; no pediatric dose, range, rate, age/product suitability or fluid algorithm is selected by this item.",
+      "independentCalculation": {
+        "independentExactValue": "10.0",
+        "expectedCorrectText": "10 mg/kg/min",
+        "method": "grams to mg divided by kg and actual minutes",
+        "allChoicesUniqueAndNonKeyedAnswersNumericallyIncorrect": true,
+        "arithmetic": "passed"
+      },
+      "status": "verified"
+    },
+    {
+      "question": {
+        "id": "pedpn-073",
+        "question": "A 5 kg patient receives 50.4 g of dextrose over 24 hours. What is the GIR? Round to the nearest hundredth of a mg/kg/min when needed.",
+        "choices": [
+          "7 mg/kg/min",
+          "14 mg/kg/min",
+          "8.5 mg/kg/min",
+          "3.5 mg/kg/min"
+        ],
+        "answer": 0,
+        "rationale": "50400 mg divided by 5 kg and 1,440 minutes equals 7 mg/kg/min after rounding to the nearest hundredth when needed.",
+        "reviewHref": "#pediatric-fluid-glucose"
+      },
+      "pdfPages": [
+        163
+      ],
+      "review": "Full prompt, every choice, keyed answer and explanation individually read. Dimensional reconstruction supports the stated prescription calculation; no pediatric dose, range, rate, age/product suitability or fluid algorithm is selected by this item.",
+      "independentCalculation": {
+        "independentExactValue": "7.0",
+        "expectedCorrectText": "7 mg/kg/min",
+        "method": "grams to mg divided by kg and actual minutes",
+        "allChoicesUniqueAndNonKeyedAnswersNumericallyIncorrect": true,
+        "arithmetic": "passed"
+      },
+      "status": "verified"
+    },
+    {
+      "question": {
+        "id": "pedpn-074",
+        "question": "A 10 kg patient receives 72 g of dextrose over 24 hours. What is the GIR? Round to the nearest hundredth of a mg/kg/min when needed.",
+        "choices": [
+          "5 mg/kg/min",
+          "10 mg/kg/min",
+          "6.5 mg/kg/min",
+          "2.5 mg/kg/min"
+        ],
+        "answer": 0,
+        "rationale": "72000 mg divided by 10 kg and 1,440 minutes equals 5 mg/kg/min after rounding to the nearest hundredth when needed.",
+        "reviewHref": "#pediatric-fluid-glucose"
+      },
+      "pdfPages": [
+        163
+      ],
+      "review": "Full prompt, every choice, keyed answer and explanation individually read. Dimensional reconstruction supports the stated prescription calculation; no pediatric dose, range, rate, age/product suitability or fluid algorithm is selected by this item.",
+      "independentCalculation": {
+        "independentExactValue": "5",
+        "expectedCorrectText": "5 mg/kg/min",
+        "method": "grams to mg divided by kg and actual minutes",
+        "allChoicesUniqueAndNonKeyedAnswersNumericallyIncorrect": true,
+        "arithmetic": "passed"
+      },
+      "status": "verified"
+    },
+    {
+      "question": {
+        "id": "pedpn-075",
+        "question": "A 12 kg patient receives 86.4 g of dextrose over 24 hours. What is the GIR? Round to the nearest hundredth of a mg/kg/min when needed.",
+        "choices": [
+          "5 mg/kg/min",
+          "10 mg/kg/min",
+          "6.5 mg/kg/min",
+          "2.5 mg/kg/min"
+        ],
+        "answer": 0,
+        "rationale": "86400 mg divided by 12 kg and 1,440 minutes equals 5 mg/kg/min after rounding to the nearest hundredth when needed.",
+        "reviewHref": "#pediatric-fluid-glucose"
+      },
+      "pdfPages": [
+        163
+      ],
+      "review": "Full prompt, every choice, keyed answer and explanation individually read. Dimensional reconstruction supports the stated prescription calculation; no pediatric dose, range, rate, age/product suitability or fluid algorithm is selected by this item.",
+      "independentCalculation": {
+        "independentExactValue": "5.0",
+        "expectedCorrectText": "5 mg/kg/min",
+        "method": "grams to mg divided by kg and actual minutes",
+        "allChoicesUniqueAndNonKeyedAnswersNumericallyIncorrect": true,
+        "arithmetic": "passed"
+      },
+      "status": "verified"
+    },
+    {
+      "question": {
+        "id": "pedpn-076",
+        "question": "A 15 kg patient receives 100.8 g of dextrose over 24 hours. What is the GIR? Round to the nearest hundredth of a mg/kg/min when needed.",
+        "choices": [
+          "4.67 mg/kg/min",
+          "9.34 mg/kg/min",
+          "6.17 mg/kg/min",
+          "2.34 mg/kg/min"
+        ],
+        "answer": 0,
+        "rationale": "100800 mg divided by 15 kg and 1,440 minutes equals 4.67 mg/kg/min after rounding to the nearest hundredth when needed.",
+        "reviewHref": "#pediatric-fluid-glucose"
+      },
+      "pdfPages": [
+        163
+      ],
+      "review": "Full prompt, every choice, keyed answer and explanation individually read. Dimensional reconstruction supports the stated prescription calculation; no pediatric dose, range, rate, age/product suitability or fluid algorithm is selected by this item.",
+      "independentCalculation": {
+        "independentExactValue": "4.666666666666666666666666667",
+        "expectedCorrectText": "4.67 mg/kg/min",
+        "method": "grams to mg divided by kg and actual minutes",
+        "allChoicesUniqueAndNonKeyedAnswersNumericallyIncorrect": true,
+        "arithmetic": "passed"
+      },
+      "status": "verified"
+    },
+    {
+      "question": {
+        "id": "pedpn-077",
+        "question": "A 20 kg patient receives 115.2 g of dextrose over 24 hours. What is the GIR? Round to the nearest hundredth of a mg/kg/min when needed.",
+        "choices": [
+          "4 mg/kg/min",
+          "8 mg/kg/min",
+          "5.5 mg/kg/min",
+          "2 mg/kg/min"
+        ],
+        "answer": 0,
+        "rationale": "115200 mg divided by 20 kg and 1,440 minutes equals 4 mg/kg/min after rounding to the nearest hundredth when needed.",
+        "reviewHref": "#pediatric-fluid-glucose"
+      },
+      "pdfPages": [
+        163
+      ],
+      "review": "Full prompt, every choice, keyed answer and explanation individually read. Dimensional reconstruction supports the stated prescription calculation; no pediatric dose, range, rate, age/product suitability or fluid algorithm is selected by this item.",
+      "independentCalculation": {
+        "independentExactValue": "4.0",
+        "expectedCorrectText": "4 mg/kg/min",
+        "method": "grams to mg divided by kg and actual minutes",
+        "allChoicesUniqueAndNonKeyedAnswersNumericallyIncorrect": true,
+        "arithmetic": "passed"
+      },
+      "status": "verified"
+    },
+    {
+      "question": {
+        "id": "pedpn-078",
+        "question": "A 30 kg patient receives 129.6 g of dextrose over 24 hours. What is the GIR? Round to the nearest hundredth of a mg/kg/min when needed.",
+        "choices": [
+          "3 mg/kg/min",
+          "6 mg/kg/min",
+          "4.5 mg/kg/min",
+          "1.5 mg/kg/min"
+        ],
+        "answer": 0,
+        "rationale": "129600 mg divided by 30 kg and 1,440 minutes equals 3 mg/kg/min after rounding to the nearest hundredth when needed.",
+        "reviewHref": "#pediatric-fluid-glucose"
+      },
+      "pdfPages": [
+        163
+      ],
+      "review": "Full prompt, every choice, keyed answer and explanation individually read. Dimensional reconstruction supports the stated prescription calculation; no pediatric dose, range, rate, age/product suitability or fluid algorithm is selected by this item.",
+      "independentCalculation": {
+        "independentExactValue": "3.0",
+        "expectedCorrectText": "3 mg/kg/min",
+        "method": "grams to mg divided by kg and actual minutes",
+        "allChoicesUniqueAndNonKeyedAnswersNumericallyIncorrect": true,
+        "arithmetic": "passed"
+      },
+      "status": "verified"
+    },
+    {
+      "question": {
+        "id": "pedpn-079",
+        "question": "A 40 kg patient receives 144 g of dextrose over 24 hours. What is the GIR? Round to the nearest hundredth of a mg/kg/min when needed.",
+        "choices": [
+          "2.5 mg/kg/min",
+          "5 mg/kg/min",
+          "4 mg/kg/min",
+          "1.25 mg/kg/min"
+        ],
+        "answer": 0,
+        "rationale": "144000 mg divided by 40 kg and 1,440 minutes equals 2.5 mg/kg/min after rounding to the nearest hundredth when needed.",
+        "reviewHref": "#pediatric-fluid-glucose"
+      },
+      "pdfPages": [
+        163
+      ],
+      "review": "Full prompt, every choice, keyed answer and explanation individually read. Dimensional reconstruction supports the stated prescription calculation; no pediatric dose, range, rate, age/product suitability or fluid algorithm is selected by this item.",
+      "independentCalculation": {
+        "independentExactValue": "2.5",
+        "expectedCorrectText": "2.5 mg/kg/min",
+        "method": "grams to mg divided by kg and actual minutes",
+        "allChoicesUniqueAndNonKeyedAnswersNumericallyIncorrect": true,
+        "arithmetic": "passed"
+      },
+      "status": "verified"
+    },
+    {
+      "question": {
+        "id": "pedpn-080",
+        "question": "A 0.8 kg patient is prescribed 3 g/kg/day of amino acids. How many grams are required, and what volume of a 10 percent amino-acid solution provides the dose?",
+        "choices": [
+          "2.4 g and 24 mL",
+          "2.4 g and 12 mL",
+          "4.8 g and 24 mL",
+          "0.8 g and 3 mL"
+        ],
+        "answer": 0,
+        "rationale": "0.8 times 3 equals 2.4 g. A 10 percent solution contains 0.1 g/mL, so 2.4 divided by 0.1 equals 24 mL.",
+        "reviewHref": "#pediatric-protein-lipid"
+      },
+      "pdfPages": [
+        161,
+        162,
+        163
+      ],
+      "review": "Full prompt, every choice, keyed answer and explanation individually read. Dimensional reconstruction supports the stated prescription calculation; no pediatric dose, range, rate, age/product suitability or fluid algorithm is selected by this item.",
+      "independentCalculation": {
+        "independentExactValue": "24",
+        "expectedCorrectText": "2.4 g and 24 mL",
+        "method": "weight times stated prescribed g/kg/day, divided by stated grams/mL; prescribing dose not verified",
+        "allChoicesUniqueAndNonKeyedAnswersNumericallyIncorrect": true,
+        "arithmetic": "passed"
+      },
+      "status": "verified"
+    },
+    {
+      "question": {
+        "id": "pedpn-081",
+        "question": "A 1 kg patient is prescribed 3.5 g/kg/day of amino acids. How many grams are required, and what volume of a 10 percent amino-acid solution provides the dose?",
+        "choices": [
+          "3.5 g and 35 mL",
+          "3.5 g and 17.5 mL",
+          "7 g and 35 mL",
+          "1 g and 3.5 mL"
+        ],
+        "answer": 0,
+        "rationale": "1 times 3.5 equals 3.5 g. A 10 percent solution contains 0.1 g/mL, so 3.5 divided by 0.1 equals 35 mL.",
+        "reviewHref": "#pediatric-protein-lipid"
+      },
+      "pdfPages": [
+        161,
+        162,
+        163
+      ],
+      "review": "Full prompt, every choice, keyed answer and explanation individually read. Dimensional reconstruction supports the stated prescription calculation; no pediatric dose, range, rate, age/product suitability or fluid algorithm is selected by this item.",
+      "independentCalculation": {
+        "independentExactValue": "35",
+        "expectedCorrectText": "3.5 g and 35 mL",
+        "method": "weight times stated prescribed g/kg/day, divided by stated grams/mL; prescribing dose not verified",
+        "allChoicesUniqueAndNonKeyedAnswersNumericallyIncorrect": true,
+        "arithmetic": "passed"
+      },
+      "status": "verified"
+    },
+    {
+      "question": {
+        "id": "pedpn-082",
+        "question": "A 1.2 kg patient is prescribed 3 g/kg/day of amino acids. How many grams are required, and what volume of a 10 percent amino-acid solution provides the dose?",
+        "choices": [
+          "3.6 g and 36 mL",
+          "3.6 g and 18 mL",
+          "7.2 g and 36 mL",
+          "1.2 g and 3 mL"
+        ],
+        "answer": 0,
+        "rationale": "1.2 times 3 equals 3.6 g. A 10 percent solution contains 0.1 g/mL, so 3.6 divided by 0.1 equals 36 mL.",
+        "reviewHref": "#pediatric-protein-lipid"
+      },
+      "pdfPages": [
+        161,
+        162,
+        163
+      ],
+      "review": "Full prompt, every choice, keyed answer and explanation individually read. Dimensional reconstruction supports the stated prescription calculation; no pediatric dose, range, rate, age/product suitability or fluid algorithm is selected by this item.",
+      "independentCalculation": {
+        "independentExactValue": "36",
+        "expectedCorrectText": "3.6 g and 36 mL",
+        "method": "weight times stated prescribed g/kg/day, divided by stated grams/mL; prescribing dose not verified",
+        "allChoicesUniqueAndNonKeyedAnswersNumericallyIncorrect": true,
+        "arithmetic": "passed"
+      },
+      "status": "verified"
+    },
+    {
+      "question": {
+        "id": "pedpn-083",
+        "question": "A 1.5 kg patient is prescribed 3.2 g/kg/day of amino acids. How many grams are required, and what volume of a 10 percent amino-acid solution provides the dose?",
+        "choices": [
+          "4.8 g and 48 mL",
+          "4.8 g and 24 mL",
+          "9.6 g and 48 mL",
+          "1.5 g and 3.2 mL"
+        ],
+        "answer": 0,
+        "rationale": "1.5 times 3.2 equals 4.8 g. A 10 percent solution contains 0.1 g/mL, so 4.8 divided by 0.1 equals 48 mL.",
+        "reviewHref": "#pediatric-protein-lipid"
+      },
+      "pdfPages": [
+        161,
+        162,
+        163
+      ],
+      "review": "Full prompt, every choice, keyed answer and explanation individually read. Dimensional reconstruction supports the stated prescription calculation; no pediatric dose, range, rate, age/product suitability or fluid algorithm is selected by this item.",
+      "independentCalculation": {
+        "independentExactValue": "48.0",
+        "expectedCorrectText": "4.8 g and 48 mL",
+        "method": "weight times stated prescribed g/kg/day, divided by stated grams/mL; prescribing dose not verified",
+        "allChoicesUniqueAndNonKeyedAnswersNumericallyIncorrect": true,
+        "arithmetic": "passed"
+      },
+      "status": "verified"
+    },
+    {
+      "question": {
+        "id": "pedpn-084",
+        "question": "A 2 kg patient is prescribed 3.5 g/kg/day of amino acids. How many grams are required, and what volume of a 10 percent amino-acid solution provides the dose?",
+        "choices": [
+          "7 g and 70 mL",
+          "7 g and 35 mL",
+          "14 g and 70 mL",
+          "2 g and 3.5 mL"
+        ],
+        "answer": 0,
+        "rationale": "2 times 3.5 equals 7 g. A 10 percent solution contains 0.1 g/mL, so 7 divided by 0.1 equals 70 mL.",
+        "reviewHref": "#pediatric-protein-lipid"
+      },
+      "pdfPages": [
+        161,
+        162,
+        163
+      ],
+      "review": "Full prompt, every choice, keyed answer and explanation individually read. Dimensional reconstruction supports the stated prescription calculation; no pediatric dose, range, rate, age/product suitability or fluid algorithm is selected by this item.",
+      "independentCalculation": {
+        "independentExactValue": "70",
+        "expectedCorrectText": "7 g and 70 mL",
+        "method": "weight times stated prescribed g/kg/day, divided by stated grams/mL; prescribing dose not verified",
+        "allChoicesUniqueAndNonKeyedAnswersNumericallyIncorrect": true,
+        "arithmetic": "passed"
+      },
+      "status": "verified"
+    },
+    {
+      "question": {
+        "id": "pedpn-085",
+        "question": "A 3 kg patient is prescribed 2.5 g/kg/day of amino acids. How many grams are required, and what volume of a 10 percent amino-acid solution provides the dose?",
+        "choices": [
+          "7.5 g and 75 mL",
+          "7.5 g and 37.5 mL",
+          "15 g and 75 mL",
+          "3 g and 2.5 mL"
+        ],
+        "answer": 0,
+        "rationale": "3 times 2.5 equals 7.5 g. A 10 percent solution contains 0.1 g/mL, so 7.5 divided by 0.1 equals 75 mL.",
+        "reviewHref": "#pediatric-protein-lipid"
+      },
+      "pdfPages": [
+        161,
+        162,
+        163
+      ],
+      "review": "Full prompt, every choice, keyed answer and explanation individually read. Dimensional reconstruction supports the stated prescription calculation; no pediatric dose, range, rate, age/product suitability or fluid algorithm is selected by this item.",
+      "independentCalculation": {
+        "independentExactValue": "75",
+        "expectedCorrectText": "7.5 g and 75 mL",
+        "method": "weight times stated prescribed g/kg/day, divided by stated grams/mL; prescribing dose not verified",
+        "allChoicesUniqueAndNonKeyedAnswersNumericallyIncorrect": true,
+        "arithmetic": "passed"
+      },
+      "status": "verified"
+    },
+    {
+      "question": {
+        "id": "pedpn-086",
+        "question": "A 5 kg patient is prescribed 2 g/kg/day of amino acids. How many grams are required, and what volume of a 10 percent amino-acid solution provides the dose?",
+        "choices": [
+          "10 g and 100 mL",
+          "10 g and 50 mL",
+          "20 g and 100 mL",
+          "5 g and 2 mL"
+        ],
+        "answer": 0,
+        "rationale": "5 times 2 equals 10 g. A 10 percent solution contains 0.1 g/mL, so 10 divided by 0.1 equals 100 mL.",
+        "reviewHref": "#pediatric-protein-lipid"
+      },
+      "pdfPages": [
+        161,
+        162,
+        163
+      ],
+      "review": "Full prompt, every choice, keyed answer and explanation individually read. Dimensional reconstruction supports the stated prescription calculation; no pediatric dose, range, rate, age/product suitability or fluid algorithm is selected by this item.",
+      "independentCalculation": {
+        "independentExactValue": "1.0E+2",
+        "expectedCorrectText": "10 g and 100 mL",
+        "method": "weight times stated prescribed g/kg/day, divided by stated grams/mL; prescribing dose not verified",
+        "allChoicesUniqueAndNonKeyedAnswersNumericallyIncorrect": true,
+        "arithmetic": "passed"
+      },
+      "status": "verified"
+    },
+    {
+      "question": {
+        "id": "pedpn-087",
+        "question": "A 8 kg patient is prescribed 1.8 g/kg/day of amino acids. How many grams are required, and what volume of a 10 percent amino-acid solution provides the dose?",
+        "choices": [
+          "14.4 g and 144 mL",
+          "14.4 g and 72 mL",
+          "28.8 g and 144 mL",
+          "8 g and 1.8 mL"
+        ],
+        "answer": 0,
+        "rationale": "8 times 1.8 equals 14.4 g. A 10 percent solution contains 0.1 g/mL, so 14.4 divided by 0.1 equals 144 mL.",
+        "reviewHref": "#pediatric-protein-lipid"
+      },
+      "pdfPages": [
+        161,
+        162,
+        163
+      ],
+      "review": "Full prompt, every choice, keyed answer and explanation individually read. Dimensional reconstruction supports the stated prescription calculation; no pediatric dose, range, rate, age/product suitability or fluid algorithm is selected by this item.",
+      "independentCalculation": {
+        "independentExactValue": "144",
+        "expectedCorrectText": "14.4 g and 144 mL",
+        "method": "weight times stated prescribed g/kg/day, divided by stated grams/mL; prescribing dose not verified",
+        "allChoicesUniqueAndNonKeyedAnswersNumericallyIncorrect": true,
+        "arithmetic": "passed"
+      },
+      "status": "verified"
+    },
+    {
+      "question": {
+        "id": "pedpn-088",
+        "question": "A 12 kg patient is prescribed 1.5 g/kg/day of amino acids. How many grams are required, and what volume of a 10 percent amino-acid solution provides the dose?",
+        "choices": [
+          "18 g and 180 mL",
+          "18 g and 90 mL",
+          "36 g and 180 mL",
+          "12 g and 1.5 mL"
+        ],
+        "answer": 0,
+        "rationale": "12 times 1.5 equals 18 g. A 10 percent solution contains 0.1 g/mL, so 18 divided by 0.1 equals 180 mL.",
+        "reviewHref": "#pediatric-protein-lipid"
+      },
+      "pdfPages": [
+        161,
+        162,
+        163
+      ],
+      "review": "Full prompt, every choice, keyed answer and explanation individually read. Dimensional reconstruction supports the stated prescription calculation; no pediatric dose, range, rate, age/product suitability or fluid algorithm is selected by this item.",
+      "independentCalculation": {
+        "independentExactValue": "180",
+        "expectedCorrectText": "18 g and 180 mL",
+        "method": "weight times stated prescribed g/kg/day, divided by stated grams/mL; prescribing dose not verified",
+        "allChoicesUniqueAndNonKeyedAnswersNumericallyIncorrect": true,
+        "arithmetic": "passed"
+      },
+      "status": "verified"
+    },
+    {
+      "question": {
+        "id": "pedpn-089",
+        "question": "A 20 kg patient is prescribed 1.2 g/kg/day of amino acids. How many grams are required, and what volume of a 10 percent amino-acid solution provides the dose?",
+        "choices": [
+          "24 g and 240 mL",
+          "24 g and 120 mL",
+          "48 g and 240 mL",
+          "20 g and 1.2 mL"
+        ],
+        "answer": 0,
+        "rationale": "20 times 1.2 equals 24 g. A 10 percent solution contains 0.1 g/mL, so 24 divided by 0.1 equals 240 mL.",
+        "reviewHref": "#pediatric-protein-lipid"
+      },
+      "pdfPages": [
+        161,
+        162,
+        163
+      ],
+      "review": "Full prompt, every choice, keyed answer and explanation individually read. Dimensional reconstruction supports the stated prescription calculation; no pediatric dose, range, rate, age/product suitability or fluid algorithm is selected by this item.",
+      "independentCalculation": {
+        "independentExactValue": "240",
+        "expectedCorrectText": "24 g and 240 mL",
+        "method": "weight times stated prescribed g/kg/day, divided by stated grams/mL; prescribing dose not verified",
+        "allChoicesUniqueAndNonKeyedAnswersNumericallyIncorrect": true,
+        "arithmetic": "passed"
+      },
+      "status": "verified"
+    },
+    {
+      "question": {
+        "id": "pedpn-090",
+        "question": "A 1 kg patient is prescribed 0.5 g/kg of a 20 percent lipid emulsion containing 0.2 g/mL. What volume supplies the dose?",
+        "choices": [
+          "2.5 mL",
+          "5 mL",
+          "10.5 mL",
+          "0.5 mL"
+        ],
+        "answer": 0,
+        "rationale": "The dose is 0.5 g. Dividing by 0.2 g/mL gives 2.5 mL. The age, product label, rate, and energy limit still require verification.",
+        "reviewHref": "#pediatric-protein-lipid"
+      },
+      "pdfPages": [
+        165
+      ],
+      "review": "Full prompt, every choice, keyed answer and explanation individually read. Dimensional reconstruction supports the stated prescription calculation; no pediatric dose, range, rate, age/product suitability or fluid algorithm is selected by this item.",
+      "independentCalculation": {
+        "independentExactValue": "2.5",
+        "expectedCorrectText": "2.5 mL",
+        "method": "weight times stated g/kg, divided by explicitly stated grams/mL; age/product/rate clinical selection not verified",
+        "allChoicesUniqueAndNonKeyedAnswersNumericallyIncorrect": true,
+        "arithmetic": "passed"
+      },
+      "status": "verified"
+    },
+    {
+      "question": {
+        "id": "pedpn-091",
+        "question": "A 1.5 kg patient is prescribed 1 g/kg of a 20 percent lipid emulsion containing 0.2 g/mL. What volume supplies the dose?",
+        "choices": [
+          "7.5 mL",
+          "15 mL",
+          "15.5 mL",
+          "1.5 mL"
+        ],
+        "answer": 0,
+        "rationale": "The dose is 1.5 g. Dividing by 0.2 g/mL gives 7.5 mL. The age, product label, rate, and energy limit still require verification.",
+        "reviewHref": "#pediatric-protein-lipid"
+      },
+      "pdfPages": [
+        165
+      ],
+      "review": "Full prompt, every choice, keyed answer and explanation individually read. Dimensional reconstruction supports the stated prescription calculation; no pediatric dose, range, rate, age/product suitability or fluid algorithm is selected by this item.",
+      "independentCalculation": {
+        "independentExactValue": "7.5",
+        "expectedCorrectText": "7.5 mL",
+        "method": "weight times stated g/kg, divided by explicitly stated grams/mL; age/product/rate clinical selection not verified",
+        "allChoicesUniqueAndNonKeyedAnswersNumericallyIncorrect": true,
+        "arithmetic": "passed"
+      },
+      "status": "verified"
+    },
+    {
+      "question": {
+        "id": "pedpn-092",
+        "question": "A 2 kg patient is prescribed 1.5 g/kg of a 20 percent lipid emulsion containing 0.2 g/mL. What volume supplies the dose?",
+        "choices": [
+          "15 mL",
+          "30 mL",
+          "23 mL",
+          "3 mL"
+        ],
+        "answer": 0,
+        "rationale": "The dose is 3 g. Dividing by 0.2 g/mL gives 15 mL. The age, product label, rate, and energy limit still require verification.",
+        "reviewHref": "#pediatric-protein-lipid"
+      },
+      "pdfPages": [
+        165
+      ],
+      "review": "Full prompt, every choice, keyed answer and explanation individually read. Dimensional reconstruction supports the stated prescription calculation; no pediatric dose, range, rate, age/product suitability or fluid algorithm is selected by this item.",
+      "independentCalculation": {
+        "independentExactValue": "15",
+        "expectedCorrectText": "15 mL",
+        "method": "weight times stated g/kg, divided by explicitly stated grams/mL; age/product/rate clinical selection not verified",
+        "allChoicesUniqueAndNonKeyedAnswersNumericallyIncorrect": true,
+        "arithmetic": "passed"
+      },
+      "status": "verified"
+    },
+    {
+      "question": {
+        "id": "pedpn-093",
+        "question": "A 2.5 kg patient is prescribed 2 g/kg of a 20 percent lipid emulsion containing 0.2 g/mL. What volume supplies the dose?",
+        "choices": [
+          "25 mL",
+          "50 mL",
+          "33 mL",
+          "5 mL"
+        ],
+        "answer": 0,
+        "rationale": "The dose is 5 g. Dividing by 0.2 g/mL gives 25 mL. The age, product label, rate, and energy limit still require verification.",
+        "reviewHref": "#pediatric-protein-lipid"
+      },
+      "pdfPages": [
+        165
+      ],
+      "review": "Full prompt, every choice, keyed answer and explanation individually read. Dimensional reconstruction supports the stated prescription calculation; no pediatric dose, range, rate, age/product suitability or fluid algorithm is selected by this item.",
+      "independentCalculation": {
+        "independentExactValue": "25",
+        "expectedCorrectText": "25 mL",
+        "method": "weight times stated g/kg, divided by explicitly stated grams/mL; age/product/rate clinical selection not verified",
+        "allChoicesUniqueAndNonKeyedAnswersNumericallyIncorrect": true,
+        "arithmetic": "passed"
+      },
+      "status": "verified"
+    },
+    {
+      "question": {
+        "id": "pedpn-094",
+        "question": "A 3 kg patient is prescribed 2.5 g/kg of a 20 percent lipid emulsion containing 0.2 g/mL. What volume supplies the dose?",
+        "choices": [
+          "37.5 mL",
+          "75 mL",
+          "45.5 mL",
+          "7.5 mL"
+        ],
+        "answer": 0,
+        "rationale": "The dose is 7.5 g. Dividing by 0.2 g/mL gives 37.5 mL. The age, product label, rate, and energy limit still require verification.",
+        "reviewHref": "#pediatric-protein-lipid"
+      },
+      "pdfPages": [
+        165
+      ],
+      "review": "Full prompt, every choice, keyed answer and explanation individually read. Dimensional reconstruction supports the stated prescription calculation; no pediatric dose, range, rate, age/product suitability or fluid algorithm is selected by this item.",
+      "independentCalculation": {
+        "independentExactValue": "37.5",
+        "expectedCorrectText": "37.5 mL",
+        "method": "weight times stated g/kg, divided by explicitly stated grams/mL; age/product/rate clinical selection not verified",
+        "allChoicesUniqueAndNonKeyedAnswersNumericallyIncorrect": true,
+        "arithmetic": "passed"
+      },
+      "status": "verified"
+    },
+    {
+      "question": {
+        "id": "pedpn-095",
+        "question": "A 4 kg patient is prescribed 3 g/kg of a 20 percent lipid emulsion containing 0.2 g/mL. What volume supplies the dose?",
+        "choices": [
+          "60 mL",
+          "120 mL",
+          "68 mL",
+          "12 mL"
+        ],
+        "answer": 0,
+        "rationale": "The dose is 12 g. Dividing by 0.2 g/mL gives 60 mL. The age, product label, rate, and energy limit still require verification.",
+        "reviewHref": "#pediatric-protein-lipid"
+      },
+      "pdfPages": [
+        165
+      ],
+      "review": "Full prompt, every choice, keyed answer and explanation individually read. Dimensional reconstruction supports the stated prescription calculation; no pediatric dose, range, rate, age/product suitability or fluid algorithm is selected by this item.",
+      "independentCalculation": {
+        "independentExactValue": "6E+1",
+        "expectedCorrectText": "60 mL",
+        "method": "weight times stated g/kg, divided by explicitly stated grams/mL; age/product/rate clinical selection not verified",
+        "allChoicesUniqueAndNonKeyedAnswersNumericallyIncorrect": true,
+        "arithmetic": "passed"
+      },
+      "status": "verified"
+    },
+    {
+      "question": {
+        "id": "pedpn-096",
+        "question": "A 5 kg patient is prescribed 1 g/kg of a 20 percent lipid emulsion containing 0.2 g/mL. What volume supplies the dose?",
+        "choices": [
+          "25 mL",
+          "50 mL",
+          "33 mL",
+          "5 mL"
+        ],
+        "answer": 0,
+        "rationale": "The dose is 5 g. Dividing by 0.2 g/mL gives 25 mL. The age, product label, rate, and energy limit still require verification.",
+        "reviewHref": "#pediatric-protein-lipid"
+      },
+      "pdfPages": [
+        165
+      ],
+      "review": "Full prompt, every choice, keyed answer and explanation individually read. Dimensional reconstruction supports the stated prescription calculation; no pediatric dose, range, rate, age/product suitability or fluid algorithm is selected by this item.",
+      "independentCalculation": {
+        "independentExactValue": "25",
+        "expectedCorrectText": "25 mL",
+        "method": "weight times stated g/kg, divided by explicitly stated grams/mL; age/product/rate clinical selection not verified",
+        "allChoicesUniqueAndNonKeyedAnswersNumericallyIncorrect": true,
+        "arithmetic": "passed"
+      },
+      "status": "verified"
+    },
+    {
+      "question": {
+        "id": "pedpn-097",
+        "question": "A 8 kg patient is prescribed 2 g/kg of a 20 percent lipid emulsion containing 0.2 g/mL. What volume supplies the dose?",
+        "choices": [
+          "80 mL",
+          "160 mL",
+          "88 mL",
+          "16 mL"
+        ],
+        "answer": 0,
+        "rationale": "The dose is 16 g. Dividing by 0.2 g/mL gives 80 mL. The age, product label, rate, and energy limit still require verification.",
+        "reviewHref": "#pediatric-protein-lipid"
+      },
+      "pdfPages": [
+        165
+      ],
+      "review": "Full prompt, every choice, keyed answer and explanation individually read. Dimensional reconstruction supports the stated prescription calculation; no pediatric dose, range, rate, age/product suitability or fluid algorithm is selected by this item.",
+      "independentCalculation": {
+        "independentExactValue": "8E+1",
+        "expectedCorrectText": "80 mL",
+        "method": "weight times stated g/kg, divided by explicitly stated grams/mL; age/product/rate clinical selection not verified",
+        "allChoicesUniqueAndNonKeyedAnswersNumericallyIncorrect": true,
+        "arithmetic": "passed"
+      },
+      "status": "verified"
+    },
+    {
+      "question": {
+        "id": "pedpn-098",
+        "question": "A 12 kg patient is prescribed 2.5 g/kg of a 20 percent lipid emulsion containing 0.2 g/mL. What volume supplies the dose?",
+        "choices": [
+          "150 mL",
+          "300 mL",
+          "158 mL",
+          "30 mL"
+        ],
+        "answer": 0,
+        "rationale": "The dose is 30 g. Dividing by 0.2 g/mL gives 150 mL. The age, product label, rate, and energy limit still require verification.",
+        "reviewHref": "#pediatric-protein-lipid"
+      },
+      "pdfPages": [
+        165
+      ],
+      "review": "Full prompt, every choice, keyed answer and explanation individually read. Dimensional reconstruction supports the stated prescription calculation; no pediatric dose, range, rate, age/product suitability or fluid algorithm is selected by this item.",
+      "independentCalculation": {
+        "independentExactValue": "150",
+        "expectedCorrectText": "150 mL",
+        "method": "weight times stated g/kg, divided by explicitly stated grams/mL; age/product/rate clinical selection not verified",
+        "allChoicesUniqueAndNonKeyedAnswersNumericallyIncorrect": true,
+        "arithmetic": "passed"
+      },
+      "status": "verified"
+    },
+    {
+      "question": {
+        "id": "pedpn-099",
+        "question": "A 20 kg patient is prescribed 1.5 g/kg of a 20 percent lipid emulsion containing 0.2 g/mL. What volume supplies the dose?",
+        "choices": [
+          "150 mL",
+          "300 mL",
+          "158 mL",
+          "30 mL"
+        ],
+        "answer": 0,
+        "rationale": "The dose is 30 g. Dividing by 0.2 g/mL gives 150 mL. The age, product label, rate, and energy limit still require verification.",
+        "reviewHref": "#pediatric-protein-lipid"
+      },
+      "pdfPages": [
+        165
+      ],
+      "review": "Full prompt, every choice, keyed answer and explanation individually read. Dimensional reconstruction supports the stated prescription calculation; no pediatric dose, range, rate, age/product suitability or fluid algorithm is selected by this item.",
+      "independentCalculation": {
+        "independentExactValue": "150",
+        "expectedCorrectText": "150 mL",
+        "method": "weight times stated g/kg, divided by explicitly stated grams/mL; age/product/rate clinical selection not verified",
+        "allChoicesUniqueAndNonKeyedAnswersNumericallyIncorrect": true,
+        "arithmetic": "passed"
+      },
+      "status": "verified"
+    }
+  ],
+  "pendingQuestionIds": [
+    "pedpn-001",
+    "pedpn-002",
+    "pedpn-003",
+    "pedpn-004",
+    "pedpn-005",
+    "pedpn-006",
+    "pedpn-007",
+    "pedpn-011",
+    "pedpn-012",
+    "pedpn-013",
+    "pedpn-014",
+    "pedpn-015",
+    "pedpn-016",
+    "pedpn-017",
+    "pedpn-018",
+    "pedpn-019",
+    "pedpn-020",
+    "pedpn-021",
+    "pedpn-022",
+    "pedpn-023",
+    "pedpn-024",
+    "pedpn-025",
+    "pedpn-026",
+    "pedpn-027",
+    "pedpn-028",
+    "pedpn-029",
+    "pedpn-030",
+    "pedpn-031",
+    "pedpn-032",
+    "pedpn-033",
+    "pedpn-034",
+    "pedpn-035",
+    "pedpn-036",
+    "pedpn-037",
+    "pedpn-038",
+    "pedpn-039",
+    "pedpn-040",
+    "pedpn-050",
+    "pedpn-051",
+    "pedpn-052",
+    "pedpn-053",
+    "pedpn-054",
+    "pedpn-055",
+    "pedpn-056",
+    "pedpn-057",
+    "pedpn-058",
+    "pedpn-059",
+    "pedpn-100",
+    "pedpn-101",
+    "pedpn-102",
+    "pedpn-103",
+    "pedpn-104",
+    "pedpn-105",
+    "pedpn-106",
+    "pedpn-107",
+    "pedpn-108",
+    "pedpn-109"
+  ],
+  "teachingReview": [
+    {
+      "lesson": "pediatric-fluid-glucose",
+      "heading": "Calculate dextrose in both directions",
+      "body": "To convert GIR to grams per day, multiply mg/kg/min by weight and 1,440 minutes, then divide by 1,000 mg/g. To calculate GIR from grams per day, multiply grams by 1,000 and divide by weight and total infusion minutes. Intravenous dextrose provides 3.4 kcal/g.",
+      "status": "verified",
+      "pdfPages": [
+        160,
+        163
+      ]
+    },
+    {
+      "lesson": "pediatric-protein-lipid",
+      "heading": "Calculate a stated amino-acid order",
+      "body": "For a stated order of 3 g/kg/day in a 1.2 kg patient, multiply 3 by 1.2 to obtain 3.6 g/day. A 10 percent amino-acid solution contains 10 g per 100 mL, or 0.1 g/mL; 3.6 g therefore requires 36 mL. This calculates the supplied prescription. It does not select an age-specific dose or establish compatibility of the final admixture.",
+      "status": "verified",
+      "pdfPages": [
+        161,
+        162,
+        163
+      ]
+    },
+    {
+      "lesson": "pediatric-protein-lipid",
+      "heading": "Convert a stated lipid dose to volume",
+      "body": "For a stated dose of 1.5 g/kg in a 2 kg patient, the lipid amount is 3 g. If the specified 20 percent emulsion contains 0.2 g/mL, divide 3 g by 0.2 g/mL to obtain 15 mL. Dose frequency, product, age, infusion rate, and the complete energy plan must still be specified and checked separately.",
+      "status": "verified",
+      "pdfPages": [
+        165
+      ]
+    }
+  ],
+  "pendingOriginalBodyHeadings": [
+    "Define the patient precisely",
+    "Use PN when the gut cannot yet meet the need",
+    "Initiate preterm support promptly when appropriate",
+    "Match access to concentration and duration",
+    "Build a complete fluid ledger",
+    "Advance according to response",
+    "Account for concentration and osmolarity",
+    "Use current preterm amino-acid limits",
+    "Do not impose blanket protein restriction",
+    "Advance lipid deliberately",
+    "Protect against rapid infusion",
+    "Balance growth with compatibility",
+    "Count both ions in phosphate products",
+    "Use pediatric vitamin products and labeled dosing",
+    "Adjust trace elements selectively",
+    "Validate the complete formulation",
+    "Do not force a total nutrient admixture",
+    "Calculate the aluminum burden",
+    "Protect the entire administration path",
+    "Build from the patient outward",
+    "Compare more than laboratory values",
+    "Use trends to change one coherent plan",
+    "Transition while preserving growth"
+  ],
+  "embeddedReview": {
+    "lesson": "pediatric-fluid-glucose",
+    "question": {
+      "question": "A 2 kg infant receives dextrose at 6 mg/kg/min. Approximately how many grams are delivered in 24 hours?",
+      "choices": [
+        "17.28 g",
+        "6 g",
+        "12 g",
+        "28.8 g"
+      ],
+      "answer": 0,
+      "rationale": "6 mg/kg/min times 2 kg times 1,440 minutes divided by 1,000 equals 17.28 g/day.",
+      "reviewHref": "#pediatric-fluid-glucose"
+    },
+    "independentCalculation": "6mg/(kgmin) x2kg x1440min /1000mg/g=17.28g; otherchoices6,12,28.8incorrect",
+    "status": "verified without change"
+  },
+  "figureReview": {
+    "file": "src/components/learn/PediatricParenteralNutritionVisual.jsx",
+    "type": "peds-pn-glucose",
+    "claimSet": {
+      "title": "Weight and time define delivery.",
+      "steps": [
+        [
+          "GIR",
+          "Prescribe",
+          "mg/kg/min"
+        ],
+        [
+          "×",
+          "Scale",
+          "weight and 1,440 minutes"
+        ],
+        [
+          "g",
+          "Convert",
+          "divide milligrams by 1,000"
+        ],
+        [
+          "Trend",
+          "Advance",
+          "glucose and clinical tolerance"
+        ]
+      ]
+    },
+    "review": "The1440minute step is the daily24hour conversion; use actual duration for a different infusion interval. BookPDF158 requiresglucoseintolerance assessment;163expresses deliveryinmg/kg/min. Figure depicts daily dimensional conversion, not pediatric target or advancementdose. Otherfivefigureclaimsets pending.",
+    "status": "verified without change"
+  },
+  "cumulativeReview": {
+    "sourceSupportedItems": [
+      {
+        "id": "cumulative-pediatric-parenteral-nutrition-pedpn-060",
+        "question": "A 1 kg patient is prescribed a GIR of 6 mg/kg/min over 24 hours. How many grams of dextrose are delivered daily? Round to the nearest hundredth of a gram when needed.",
+        "choices": [
+          "8.64 g",
+          "17.28 g",
+          "13.64 g",
+          "4.32 g"
+        ],
+        "answer": 0,
+        "rationale": "6 times 1 times 1,440 divided by 1,000 equals 8.64 g/day after rounding to the nearest hundredth when needed.",
+        "reviewHref": "/learn/pharmacy/modules/pediatric-parenteral-nutrition",
+        "module": "Pediatric Parenteral Nutrition"
+      },
+      {
+        "id": "cumulative-pediatric-parenteral-nutrition-pedpn-084",
+        "question": "A 2 kg patient is prescribed 3.5 g/kg/day of amino acids. How many grams are required, and what volume of a 10 percent amino-acid solution provides the dose?",
+        "choices": [
+          "7 g and 70 mL",
+          "7 g and 35 mL",
+          "14 g and 70 mL",
+          "2 g and 3.5 mL"
+        ],
+        "answer": 0,
+        "rationale": "2 times 3.5 equals 7 g. A 10 percent solution contains 0.1 g/mL, so 7 divided by 0.1 equals 70 mL.",
+        "reviewHref": "/learn/pharmacy/modules/pediatric-parenteral-nutrition",
+        "module": "Pediatric Parenteral Nutrition"
+      }
+    ],
+    "pendingItems": [
+      {
+        "id": "cumulative-pediatric-parenteral-nutrition-pedpn-001",
+        "question": "Why can a single pediatric PN template not be used across all ages?",
+        "choices": [
+          "Gestational age, organ maturity, growth, weight, and tolerance change requirements",
+          "All pediatric patients have identical metabolism",
+          "Only bag color changes",
+          "Age affects the label but not the dose"
+        ],
+        "answer": 0,
+        "rationale": "Developmental physiology and growth make neonatal, infant, child, and adolescent needs different.",
+        "reviewHref": "/learn/pharmacy/modules/pediatric-parenteral-nutrition",
+        "module": "Pediatric Parenteral Nutrition"
+      },
+      {
+        "id": "cumulative-pediatric-parenteral-nutrition-pedpn-026",
+        "question": "Why should zinc be reviewed in a child with high ostomy output?",
+        "choices": [
+          "Gastrointestinal loss can increase zinc requirement",
+          "Zinc causes all ostomy output",
+          "Zinc replaces sodium completely",
+          "Ostomy output eliminates renal clearance"
+        ],
+        "answer": 0,
+        "rationale": "Large gastrointestinal losses can deplete zinc.",
+        "reviewHref": "/learn/pharmacy/modules/pediatric-parenteral-nutrition",
+        "module": "Pediatric Parenteral Nutrition"
+      },
+      {
+        "id": "cumulative-pediatric-parenteral-nutrition-pedpn-109",
+        "question": "A child with cholestasis receives the same fixed trace-element mix for months. What is the most defensible next action?",
+        "choices": [
+          "Review copper and manganese accumulation risk while preventing deficiency with individualized dosing",
+          "Continue unchanged without reassessment",
+          "Apply an adult default without calculation",
+          "Wait until discharge to review the order"
+        ],
+        "answer": 0,
+        "rationale": "Biliary impairment changes trace-element handling, but blanket omission can also cause harm.",
+        "reviewHref": "/learn/pharmacy/modules/pediatric-parenteral-nutrition",
+        "module": "Pediatric Parenteral Nutrition"
+      }
+    ],
+    "wholeCumulativeBankUnchanged": false,
+    "all1180IdsKeysChoicesAnchorsPreserved": true,
+    "1179OtherObjectsUnchanged": true,
+    "oneDerivedGIR060RoundingClarified": true
+  },
+  "changes": {
+    "newBodies": 2,
+    "roundingClarifiedOriginalQuestionIds": [
+      "pedpn-060",
+      "pedpn-061",
+      "pedpn-062",
+      "pedpn-063",
+      "pedpn-064",
+      "pedpn-065",
+      "pedpn-066",
+      "pedpn-067",
+      "pedpn-068",
+      "pedpn-069",
+      "pedpn-070",
+      "pedpn-071",
+      "pedpn-072",
+      "pedpn-073",
+      "pedpn-074",
+      "pedpn-075",
+      "pedpn-076",
+      "pedpn-077",
+      "pedpn-078",
+      "pedpn-079"
+    ],
+    "bankCountUnchanged": 100,
+    "newAssessmentItems": 0,
+    "existingKeysChoicesCorrectTextsAnchorsPreserved": true
+  },
+  "coverage": {
+    "bank": 100,
+    "sourceVerifiedBank": 43,
+    "remainingBank": 57,
+    "bodies": 26,
+    "sourceVerifiedBodies": 3,
+    "remainingBodies": 23,
+    "embeddedChecks": 6,
+    "sourceVerifiedEmbeddedChecks": 1,
+    "remainingEmbeddedChecks": 5,
+    "figures": 6,
+    "sourceVerifiedFigures": 1,
+    "remainingFigures": 5,
+    "cumulative": 5,
+    "sourceVerifiedCumulative": 2,
+    "remainingCumulative": 3,
+    "metadataVerified": false,
+    "wholeModuleVerified": false,
+    "wholeChapterVerified": false
+  },
+  "calculationEvidence": {
+    "selectedOriginalCalculationItemsIndependentlyRecalculated": 50,
+    "sourceSupportedCalculationBankItemsThisUnit": 40,
+    "tenMaintenanceFluidItemsArithmeticPassedButSourceReconciliationPending": true,
+    "embeddedCalculationSeparatelyVerified": 1,
+    "derivedCumulativeCalculationsSeparatelyVerified": 2,
+    "newlyAddedAssessmentObjects": 0,
+    "newDistinctBankCalculationChecks": 40,
+    "runningAssessmentCalculationChecksBefore": 677,
+    "runningAssessmentCalculationChecksAfter": 717,
+    "runningSeparateSourceExerciseChecksUnchanged": 98,
+    "twoWorkedExampleResults": [
+      "1.2kg x3g/kg/day=3.6g/day;10percent=0.1g/mL;36mL",
+      "2kg x1.5g/kg=3g;0.2g/mL;15mL"
+    ],
+    "countConvention": "Continue priorbank-based distinctcalculationcheckcount; embedded/derivedcopies not added again."
+  },
+  "sourceDiscrepancies": {
+    "maintenanceFluid": "BookPDF158visually givesonly1500+20(weight-20) forweight>20kg. Do not claim thatpassage supplies100/50/20lowerweightbranches. Alltencompletefluidquestionexplanations requirefurther approvedPNsource support.",
+    "adultToPediatricLimits": "Do not apply bookadultdextroselimit4mg/kg/min oradultproteinranges to infants. Prescribed-dose arithmetic does notverify appropriateness.",
+    "rounding": "OriginalGIR065exact32.256gand076exact4.666666...mg/kg/min lackedexplicitroundinginstructions. Twenty samefamily prompts/explanations clarified with exactIDs,keys,choices andhardtopics retained.",
+    "sourceAccess": "ASPEN oldAppropriate-Dosing-for-PN.pdf URLreturned404; currentofficialessential-resourcespage exposesmembers-only link. No access restriction bypassed. Reference remains anopenmetadata repair; nofulldosingdocumentread claimed.",
+    "historicalGuidance": "NICU2023guideline/practice-tool and pediatricILEfactsheet/2025SMOFlabel located withinapprovedPNscope forlaterclinicalreview. Retrieval is notwholemoduleverification."
+  },
+  "preservation": {
+    "all100StableIdsKeysCorrectTextsChoicesAnchorsPreserved": true,
+    "eightyOtherBankObjectsUnchanged": true,
+    "all24OriginalBodiesAndSixChecksPreserved": true,
+    "twoWorkedExamplesAdded": true,
+    "figuresMetadataReferencesPreserved": true,
+    "all1180CumulativeIdsKeysChoicesAnchorsPreserved": true,
+    "1179OtherCumulativeObjectsUnchanged": true,
+    "oneDerivedCumulativeRoundingClarified": true
+  },
+  "validation": {
+    "focusedStructural": {
+      "modules": 1,
+      "questions": 100,
+      "hardErrors": [],
+      "sourceGaps": [],
+      "sizeAdvisories": [],
+      "thinLessons": [],
+      "weakestModules": [
+        {
+          "module": "pediatric-parenteral-nutrition",
+          "lessons": 6,
+          "questions": 100,
+          "minimumLessonCoverage": 8
+        }
+      ]
+    },
+    "isolatedBuild": "passed567staticpages usingexistingnextbuild--webpack",
+    "browser": {
+      "status": "passed",
+      "results": [
+        {
+          "module": "pediatric-parenteral-nutrition",
+          "width": 1440,
+          "renderedBodies": 26,
+          "expandedBodyViews": 3,
+          "bankItemsCorrectWrong": 43,
+          "cumulativeRuntimeItems": 5,
+          "sourceVerifiedCumulativeInThisUnit": 2,
+          "sourceVerifiedChecksThisUnit": 1,
+          "wholeParentCumulativeClinicalSourceClosure": false,
+          "groups": 5,
+          "remediationAndSavedProgress": true
+        },
+        {
+          "module": "pediatric-parenteral-nutrition",
+          "width": 390,
+          "renderedBodies": 26,
+          "expandedBodyViews": 3,
+          "bankItemsCorrectWrong": 43,
+          "cumulativeRuntimeItems": 5,
+          "sourceVerifiedCumulativeInThisUnit": 2,
+          "sourceVerifiedChecksThisUnit": 1,
+          "wholeParentCumulativeClinicalSourceClosure": false,
+          "groups": 5,
+          "remediationAndSavedProgress": true
+        }
+      ],
+      "pageErrors": []
+    },
+    "manualRenderedReview": {
+      "status": "passed",
+      "pairs": 50,
+      "widths": [
+        1440,
+        390
+      ],
+      "viewsReviewed": [
+        "pedpn-008",
+        "pedpn-009",
+        "pedpn-010",
+        "pedpn-060",
+        "pedpn-061",
+        "pedpn-062",
+        "pedpn-063",
+        "pedpn-064",
+        "pedpn-065",
+        "pedpn-066",
+        "pedpn-067",
+        "pedpn-068",
+        "pedpn-069",
+        "pedpn-070",
+        "pedpn-071",
+        "pedpn-072",
+        "pedpn-073",
+        "pedpn-074",
+        "pedpn-075",
+        "pedpn-076",
+        "pedpn-077",
+        "pedpn-078",
+        "pedpn-079",
+        "pedpn-080",
+        "pedpn-081",
+        "pedpn-082",
+        "pedpn-083",
+        "pedpn-084",
+        "pedpn-085",
+        "pedpn-086",
+        "pedpn-087",
+        "pedpn-088",
+        "pedpn-089",
+        "pedpn-090",
+        "pedpn-091",
+        "pedpn-092",
+        "pedpn-093",
+        "pedpn-094",
+        "pedpn-095",
+        "pedpn-096",
+        "pedpn-097",
+        "pedpn-098",
+        "pedpn-099",
+        "Calculate dextrose in both directions",
+        "Calculate a stated amino-acid order",
+        "Convert a stated lipid dose to volume",
+        "pediatric-fluid-glucose check",
+        "cumulative-pediatric-parenteral-nutrition-pedpn-060",
+        "cumulative-pediatric-parenteral-nutrition-pedpn-084",
+        "GIR figure"
+      ],
+      "scope": "All43 source-supported bank questions, three teaching bodies, one embedded check, two cumulative feedback items and the daily GIR figure manually viewed at desktop/mobile sizes. All26 bodies matched DOM. Correct/wrong grading, review links, saved progress and320px overflow passed. Three other parent cumulative items runtime only.",
+      "sourceRecomparison": "Finished question prompts, every choice, keys and rationales, the three bodies, embedded check, two cumulative objects and daily GIR figure recompared with the previously fully read/rendered Chapter11PNpages158-168. Relevant pages158,160-163,165 reread after edits. Book adult dose ranges/4mg/kg/min ceiling and historical hangtimes not applied to infants. Explicit question givens support arithmetic only."
+    },
+    "contentHashes": {
+      "src/data/modules/pediatricParenteralNutrition.js": "4d45900e5b0d6ddbf6d6b01991d43ab582757d12a1f25daa230ad7f10835fe6d",
+      "src/data/questionBanks/pediatricParenteralNutrition.js": "5cbf553a880fb0bc6f3026e9d5203d98084cc4d44b5c7fa633c81d07a4b6eaf1"
+    },
+    "structuralScopeNote": "Focused100-question checks passed; structure and arithmetic do not close the57 remaining clinical/source items. Initial equals-sign CLI invocation accidentally checked all modules; preexisting glaucoma dash errors were excluded by the corrected single-module invocation."
+  },
+  "release": {
+    "branch": "audit/rxprep-content-2026-09-24",
+    "commit": "pending",
+    "push": "pending",
+    "mainMerge": "not performed",
+    "production": "not verified"
+  },
+  "nextAction": "Continue remaining57pediatricPNquestions,23originalbodies,fivechecks/fivefigures,threecumulativeitems andmetadata usingbook andexistingapprovedPNsources. Reconcilefullmaintenancefluidbranches,currentpreterm/lipid/mineral/compounding/monitoringclaims. ENoutside-sourceexception remainspending; preserve42ENquestions/20bodies/fourchecks/sixfigures/sourcegaps. Chapter1entry15/Chapter11remainreviewing; do notadvancechapterclosure."
+}
