@@ -1,0 +1,157 @@
+{
+  "date": "2026-10-02",
+  "unit": "Pediatric PN parent and lesson metadata reconciliation",
+  "baseCommit": "25a3dcaac12eada86fda592062017ee1b6854bbe",
+  "contentCommit": "428e8c7b83c9bcc347629ce3a78d9521412ddb54",
+  "branch": "audit/rxprep-content-2026-09-24",
+  "remoteDestination": "github.com/NaS-Research/nas-website.git",
+  "contentRemoteHashObserved": "428e8c7b83c9bcc347629ce3a78d9521412ddb54",
+  "contentRemoteVerifiedAt": "2026-10-02T06:11:14.914423+00:00",
+  "scope": [
+    "src/data/modules/pediatricParenteralNutrition.js",
+    "docs/clinical-audit/module-ledger.json",
+    "docs/clinical-audit/chapter-ledger.json",
+    "docs/clinical-audit/pediatric-parenteral-nutrition-metadata-review.json",
+    "docs/clinical-audit/sequential-resume.json"
+  ],
+  "contentBlobSHA256": {
+    "src/data/modules/pediatricParenteralNutrition.js": "c89e97aee93bfdfd0afe078c4a872b1b85e8af73991b99bf529a5ef169ed9e35",
+    "docs/clinical-audit/module-ledger.json": "ce03bf9aa4a3bf085cf6e59f1ae3e21f7681864b29a91fa61dad843bbed2b77b",
+    "docs/clinical-audit/chapter-ledger.json": "647f729288f27e229ab2ea7f2b9bfc271b7a00503d415c286fc07fe145cee0a6",
+    "docs/clinical-audit/pediatric-parenteral-nutrition-metadata-review.json": "4c243adeefffdc7ee86d67a08b6d82d003b5ef02607f83071e7a1fa7f8c1608d",
+    "docs/clinical-audit/sequential-resume.json": "494096c0ae53e9358292c63317e02b0d1de82c13a930f09a9ab63c96da73f7ff"
+  },
+  "checks": {
+    "isolatedBuildStaticPages": 567,
+    "focusedStructuralBankQuestions": 101,
+    "semanticMetadataFieldGroups": 43,
+    "all42BodyDOMEquality": true,
+    "allSixLessonMetadataDOMEquality": true,
+    "all28ReferencesDOMEquality": true,
+    "manualDesktopMobilePairsActuallyViewed": 12,
+    "runtime320OverflowPassed": true,
+    "targetOnlyModuleLedgerEntries": [
+      "pediatric-parenteral-nutrition"
+    ],
+    "targetOnlyChapterLedgerEntries": [
+      11
+    ],
+    "candidateCodeMatchesReviewedBuildAndCommittedBlobs": true,
+    "newQuestions": 0,
+    "newBodiesClosed": 0,
+    "priorVerifiedBodiesRequalifiedAndReverified": 2,
+    "noAuthenticatedBackendPersistenceClaim": true
+  },
+  "coverage": {
+    "bank": 101,
+    "newlySourceVerifiedBank": 0,
+    "sourceVerifiedBank": 100,
+    "remainingBank": 1,
+    "bodies": 42,
+    "newlySourceVerifiedBodies": 0,
+    "sourceVerifiedBodies": 39,
+    "remainingBodies": 3,
+    "embeddedChecks": 6,
+    "sourceVerifiedEmbeddedChecks": 6,
+    "figures": 6,
+    "sourceVerifiedFigures": 6,
+    "cumulative": 5,
+    "sourceVerifiedCumulative": 5,
+    "metadataVerified": true,
+    "wholeModuleVerified": false,
+    "wholeChapterVerified": false
+  },
+  "preservation": {
+    "all101BankObjectsUnchanged": true,
+    "all1180CumulativeObjectsUnchanged": true,
+    "all6EmbeddedChecksUnchanged": true,
+    "all6FigureTypesAndComponentUnchanged": true,
+    "all28ReferencesUnchanged": true,
+    "all42BodyHeadingsAndStablePathsPreserved": true,
+    "40WholeBodyObjectsUnchanged": true,
+    "twoPreviouslyVerifiedBodiesDateAndPopulationQualified": true,
+    "allThreePendingOriginalBodiesUnchanged": true,
+    "noNewDoseOrCalculation": true,
+    "architectureBackendAndTrackingUnchanged": true
+  },
+  "sources": {
+    "book": {
+      "chapter": 11,
+      "privateEdition": "RxPrep2023",
+      "PDF158FullTextRechecked": true,
+      "PDF163FullTextRechecked": true,
+      "previousTableAndRenderedSourceEvidence": "pediatric-parenteral-nutrition-book-calculations-review.json and pediatric-parenteral-nutrition-maintenance-fluid-review.json",
+      "noPrivateSourceAssetsPublished": true
+    },
+    "guideline": {
+      "url": "https://aspenjournals.onlinelibrary.wiley.com/doi/10.1002/jpen.2550",
+      "date": "2023-08-23",
+      "relevantRead": "Abstract,purpose,target population,Table1all12recommendations; fullQ3recommendation/rationale andQ4recommendation/rationale. No claim of all29pages or allsourceforestplots being reread.",
+      "population": "Preterm infants without congenital disease requiring surgery or establishedPNALD; NEC/PNALDexcluded atstudyentry; expected to advance tofullEN except laterNEC. Not generalterm/olderpediatric/CKRT dose guidance.",
+      "corrigendum": "https://aspenjournals.onlinelibrary.wiley.com/doi/full/10.1002/jpen.2582",
+      "correctionRead": "Complete correction prose; multimodal trial cannot isolateAA harm; dose recommendation wording retained. No corrected effect-size stats adopted."
+    },
+    "smof": {
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/207648s013lbl.pdf",
+      "labelDate": "July2025",
+      "fullRelevantSectionsReadAndViewed": "PDF5complete2.3,PDF6fullTable1/allfootnotes,PDF7full5.1; allagebands,doses,rates,energyfootnote reviewed. No latest2026label claim."
+    },
+    "lipid": {
+      "url": "https://nutritioncare.org/text-based-resource/aspen-lipid-injectable-emulsion-safety-recommendations-part-2-neonate-and-pediatric-considerations/",
+      "toolDate": "2022-09-01",
+      "scope": "Complete2page tool; page2neonatalphotoprotection/filter/separateinfusionsafeguards. Historical2022productapprovalstatus not adopted ascurrent."
+    },
+    "previousApprovedClinicalEvidence": [
+      "pediatric-parenteral-nutrition-indication-access-review.json",
+      "pediatric-parenteral-nutrition-starter-order-reconciliation-review.json",
+      "pediatric-parenteral-nutrition-micronutrient-review.json",
+      "pediatric-parenteral-nutrition-compounding-safety-review.json",
+      "pediatric-parenteral-nutrition-preterm-lipid-review.json",
+      "pediatric-parenteral-nutrition-development-delivery-review.json",
+      "pediatric-parenteral-nutrition-metabolic-response-review.json",
+      "pediatric-parenteral-nutrition-maintenance-fluid-review.json",
+      "pediatric-parenteral-nutrition-book-calculations-review.json",
+      "pediatric-parenteral-nutrition-order-monitoring-review.json"
+    ]
+  },
+  "sourceDiscrepancies": [
+    {
+      "issue": "Unqualified current-label wording could imply that aJuly2025productlabel is necessarily thelatest2026label.",
+      "resolution": "Both affected lipid bodies now explicitly say citedJuly2025label; all doses/rates unchanged."
+    },
+    {
+      "issue": "Summary language could imply guaranteed developmental benefit or universalpreterm dosing.",
+      "resolution": "Parent/protein summary describes assessment/goals; keypoints/outcome name2023guideline scope. No newdevelopment/harm statistics or universalpediatric doses."
+    },
+    {
+      "issue": "Three originalclaims stilllack directly verified support.",
+      "resolution": "Exactoriginalbodies andpedpn-012retained; no narrowerreplacement and no wholemoduleclosure."
+    }
+  ],
+  "calculationEvidence": {
+    "newDistinctAssessmentCalculations": 0,
+    "newCompletedBookExercises": 0,
+    "runningAssessmentCalculations": 728,
+    "runningSeparateCompletedBookExercises": 98
+  },
+  "pendingQuestionIds": [
+    "pedpn-012"
+  ],
+  "remainingWholeBodyHeadings": [
+    "Build a complete fluid ledger",
+    "Advance according to response",
+    "Do not impose blanket protein restriction"
+  ],
+  "broaderENVerifiedBankUnchanged": 148,
+  "bookAssetsPublished": false,
+  "approvedOutsidePNSourcesUsed": true,
+  "newOutsideNeonatalRenalSourceSetUsed": false,
+  "wholeParentModuleVerified": false,
+  "wholeChapterVerified": false,
+  "fullGoalChaptersVerified": 6,
+  "fullGoalChapters": 82,
+  "mainMerge": "not performed",
+  "production": "not verified",
+  "unrelatedWorkingChanges": "Target-onlyHEAD-derivedledgerblobs;unrelateddrafts retained/excluded. Privatebook/sourcePDF/text/images excluded.",
+  "nextAction": "Finish retained pediatric PN question pedpn-012 and three original whole bodies: Build a complete fluid ledger; Advance according to response; Do not impose blanket protein restriction. Neonatal phototherapy/open-warmer water loss, higher neonatal GIR/brain rationale and broad pediatric CKRT/catabolism/wound protein needs still require directly verified support. Human source-expansion request remains unanswered; new guideline set not authorized. All parent/six-lesson metadata are now reviewed; do not repeat metadata as open. Final101-question/42-body reconciliation and full module closure remain pending these source gaps. Whole Chapter11, Chapter1 entry15 determining fluid needs, broader Chapter54 and separate EN exception remain open."
+}
