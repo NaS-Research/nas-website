@@ -1,0 +1,827 @@
+{
+  "recordedAt": "2026-10-02T06:09:07.958181+00:00",
+  "baseCommit": "25a3dcaac12eada86fda592062017ee1b6854bbe",
+  "unit": "Pediatric PN parent and lesson metadata reconciliation",
+  "sourcePolicy": "SuppliedRxPrep2023 primary; existing approvedASPEN/USP/FDA/CDC references reused. No expanded neonatal/pediatric renal guideline set fetched or adopted.",
+  "sources": {
+    "book": {
+      "chapter": 11,
+      "privateEdition": "RxPrep2023",
+      "PDF158FullTextRechecked": true,
+      "PDF163FullTextRechecked": true,
+      "previousTableAndRenderedSourceEvidence": "pediatric-parenteral-nutrition-book-calculations-review.json and pediatric-parenteral-nutrition-maintenance-fluid-review.json",
+      "noPrivateSourceAssetsPublished": true
+    },
+    "guideline": {
+      "url": "https://aspenjournals.onlinelibrary.wiley.com/doi/10.1002/jpen.2550",
+      "date": "2023-08-23",
+      "relevantRead": "Abstract,purpose,target population,Table1all12recommendations; fullQ3recommendation/rationale andQ4recommendation/rationale. No claim of all29pages or allsourceforestplots being reread.",
+      "population": "Preterm infants without congenital disease requiring surgery or establishedPNALD; NEC/PNALDexcluded atstudyentry; expected to advance tofullEN except laterNEC. Not generalterm/olderpediatric/CKRT dose guidance.",
+      "corrigendum": "https://aspenjournals.onlinelibrary.wiley.com/doi/full/10.1002/jpen.2582",
+      "correctionRead": "Complete correction prose; multimodal trial cannot isolateAA harm; dose recommendation wording retained. No corrected effect-size stats adopted."
+    },
+    "smof": {
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/207648s013lbl.pdf",
+      "labelDate": "July2025",
+      "fullRelevantSectionsReadAndViewed": "PDF5complete2.3,PDF6fullTable1/allfootnotes,PDF7full5.1; allagebands,doses,rates,energyfootnote reviewed. No latest2026label claim."
+    },
+    "lipid": {
+      "url": "https://nutritioncare.org/text-based-resource/aspen-lipid-injectable-emulsion-safety-recommendations-part-2-neonate-and-pediatric-considerations/",
+      "toolDate": "2022-09-01",
+      "scope": "Complete2page tool; page2neonatalphotoprotection/filter/separateinfusionsafeguards. Historical2022productapprovalstatus not adopted ascurrent."
+    },
+    "previousApprovedClinicalEvidence": [
+      "pediatric-parenteral-nutrition-indication-access-review.json",
+      "pediatric-parenteral-nutrition-starter-order-reconciliation-review.json",
+      "pediatric-parenteral-nutrition-micronutrient-review.json",
+      "pediatric-parenteral-nutrition-compounding-safety-review.json",
+      "pediatric-parenteral-nutrition-preterm-lipid-review.json",
+      "pediatric-parenteral-nutrition-development-delivery-review.json",
+      "pediatric-parenteral-nutrition-metabolic-response-review.json",
+      "pediatric-parenteral-nutrition-maintenance-fluid-review.json",
+      "pediatric-parenteral-nutrition-book-calculations-review.json",
+      "pediatric-parenteral-nutrition-order-monitoring-review.json"
+    ]
+  },
+  "parentMetadata": {
+    "title": {
+      "value": "Pediatric Parenteral Nutrition",
+      "source": "Six corresponding lessons address age-specific PN; a curriculum topic, not an outcome promise."
+    },
+    "source": {
+      "value": "Neonatal and pediatric nutrition support",
+      "source": "Broad topical descriptor; not a false edition or unreviewed source attribution."
+    },
+    "description": {
+      "value": "Plan and verify age-specific parenteral nutrition for preterm infants, neonates, children, and adolescents. Assess growth and developmental goals, vascular access, formulation compatibility, and the safety of prescribed and delivered nutrients.",
+      "source": "Developmental assessment,growth/clinical goals and prescribed-versus-delivered review: ASPEN2017Questions1/2/13 and2025 neonatal assessment prior development/metabolic records; access/compatibility from completed indication and safety records. Wording describes assessment rather than guaranteeing development or safety."
+    },
+    "topics": {
+      "value": [
+        "Indication and access",
+        "Fluid and glucose",
+        "Protein and lipid",
+        "Minerals and micronutrients",
+        "Compounding safety",
+        "Calculations and monitoring"
+      ],
+      "source": [
+        "Complete indication/access lesson.",
+        "Fluid/dextrose calculation and monitoring metadata; three detailed original body claims remain open.",
+        "Amino-acid and lipid metadata; renal/CKRT whole body remains open.",
+        "Complete micronutrient lesson.",
+        "Complete compounding safety lesson.",
+        "Complete daily-order lesson and reviewed book calculations."
+      ]
+    },
+    "outcomes": {
+      "value": [
+        "Distinguish neonatal and pediatric PN decisions from adult nutrition-support practice.",
+        "Calculate weight-based fluid, dextrose, amino-acid, lipid, and infusion requirements.",
+        "Apply the 2023 ASPEN preterm guidance and cited product-specific dose and rate limits within their patient populations.",
+        "Evaluate calcium-phosphate compatibility, micronutrient dosing, aluminum exposure, filtration, and photoprotection.",
+        "Reconstruct a complete pediatric PN order and identify errors before preparation or administration."
+      ],
+      "source": [
+        "ASPEN2017 full neonatal/pediatric assessment,indication,access rationale and2023 preterm population reviewed; age-specific decision objective.",
+        "Complete book-calculations and historical maintenance reviews: stated fluid,dextrose,AA,lipid and infusion arithmetic. No automatic clinical prescription implied.",
+        "ASPEN2023 full Table1/purpose/target population and2024 correction; dated FDA2025 product-specific dose/rate table. Explicit year and scope replace unqualified current guidance.",
+        "Completed micronutrient and compounding reviews: exact compatibility,vitamin/trace labeling,totalaluminum,1.2filter and pretermphotoprotection.",
+        "Complete nine-body daily-order lesson with ASPEN prescribing/order-review and2017pediatric13 actual intake/labs/transition."
+      ]
+    },
+    "referenceHeading": {
+      "value": "Clinical references and calculation methods.",
+      "source": "Accurately identifies28 existing clinical/calculation references; all exactlinks unchanged."
+    },
+    "referenceIntroduction": {
+      "value": "References include historical maintenance-fluid methods, dated product labels, and PN guidance. Check the exact product's current labeling and local policy before applying a clinical prescription.",
+      "source": "Maintenance methods retain historicalFDA2018 context;2021/2024/2025 labels and2023/2026 guidance dates stated in source records; clinical product labeling/local policy must be checked before use. No unverified latest-label claim."
+    }
+  },
+  "lessonMetadata": [
+    {
+      "slug": "pediatric-pn-decision-access",
+      "status": "metadata verified",
+      "fields": {
+        "title": {
+          "value": "Patient, Indication, and Vascular Access",
+          "source": {
+            "evidence": "pediatric-parenteral-nutrition-indication-access-review.json",
+            "locator": "wholeLesson.metadataReview",
+            "exactBaselineMetadataUnchanged": true
+          }
+        },
+        "summary": {
+          "value": "Pediatric PN starts with developmental age, growth, gastrointestinal function, expected duration, and fluid tolerance. Match the vascular device to the complete formulation and the patient's needs.",
+          "source": {
+            "evidence": "pediatric-parenteral-nutrition-indication-access-review.json",
+            "locator": "wholeLesson.metadataReview",
+            "exactBaselineMetadataUnchanged": true
+          }
+        },
+        "concepts": {
+          "value": [
+            "Preterm, neonatal, infant, child, and adolescent context",
+            "Indications and enteral alternatives",
+            "Peripheral and central access",
+            "Umbilical and long-term devices"
+          ],
+          "source": {
+            "evidence": "pediatric-parenteral-nutrition-indication-access-review.json",
+            "locator": "wholeLesson.metadataReview",
+            "exactBaselineMetadataUnchanged": true
+          }
+        },
+        "visual": {
+          "value": "peds-pn-decision",
+          "source": {
+            "evidence": "pediatric-parenteral-nutrition-indication-access-review.json",
+            "locator": "wholeLesson.metadataReview",
+            "exactBaselineMetadataUnchanged": true
+          }
+        },
+        "application": {
+          "value": "Document age and developmental context, dosing weight, nutrition deficit, why the enteral route is insufficient, expected duration, access type and tip location, fluid allowance, and the conditions that will trigger reassessment.",
+          "source": {
+            "evidence": "pediatric-parenteral-nutrition-indication-access-review.json",
+            "locator": "wholeLesson.metadataReview",
+            "exactBaselineMetadataUnchanged": true
+          }
+        },
+        "keyPoints": {
+          "value": [
+            "Age and developmental stage change the prescription.",
+            "PN requires both nutrition need and an inadequate gastrointestinal route.",
+            "Prompt initiation in preterm infants follows appropriate access.",
+            "Access determines what can be delivered safely."
+          ],
+          "source": {
+            "evidence": "pediatric-parenteral-nutrition-indication-access-review.json",
+            "locator": "wholeLesson.metadataReview",
+            "exactBaselineMetadataUnchanged": true
+          }
+        }
+      },
+      "wholeLessonVerified": true,
+      "metadataReviewDoesNotClosePendingBodies": true
+    },
+    {
+      "slug": "pediatric-fluid-glucose",
+      "status": "metadata verified",
+      "fields": {
+        "title": {
+          "value": "Fluid, Dextrose, and Glucose Infusion Rate",
+          "source": "Book Ch11 PDF158/163/164 fluid and dextrose calculation topics; complete book-calculations and maintenance-fluid reviews."
+        },
+        "summary": {
+          "value": "Small changes in daily volume or dextrose concentration can produce large changes in neonatal fluid exposure, osmolarity, glucose delivery, and metabolic risk.",
+          "source": "FDA2021 CLINIMIX pediatric glucose/infusion monitoring and formulation osmolarity; ASPEN2017 Question6 neonatal fluid tolerance; independent GIR and concentration examples. Relative neonatal volume sensitivity is a qualitative safety principle, not a newly specified threshold."
+        },
+        "concepts": {
+          "value": [
+            "Age-specific fluid planning",
+            "Maintenance estimates and exceptional losses",
+            "Dextrose grams and calories",
+            "GIR calculation and tolerance"
+          ],
+          "source": [
+            "ASPEN2017 neonatal/pediatric fluid context and FDA2018 age-group tables, historically qualified in maintenance-fluid review.",
+            "Book PDF158 fluid tailoring, renal/fluid accumulation and counted medications; FDA2018 complete fluid dosing text. No phototherapy-specific loss conclusion adopted.",
+            "Book Ch11 PDF163 PN dextrose3.4kcal/g and complete reviewed exercises.",
+            "Book-calculations review independently reconciles grams/mg, prescribed kg and actual minutes; FDA2021 pediatric glucose monitoring. No neonatal brain/GIR claim adopted."
+          ]
+        },
+        "visual": {
+          "value": "peds-pn-glucose",
+          "source": "peds-pn-glucose unchanged; complete source and rendered figure review in book-calculations review."
+        },
+        "application": {
+          "value": "Confirm the prescribed dosing weight, total fluid target, all non-PN fluids, dextrose grams, infusion duration, and calculated GIR. Recalculate delivery when the prescribed dosing weight, concentration, volume, or infusion schedule changes; interpret observed weight changes with hydration and clinical context.",
+          "source": "ASPEN prescribing complete pediatric template; starter-order and metabolic-response reviews distinguish confirmed prescribed dosing weight from observed hydration-dependent weight; book GIR arithmetic and complete medication-fluid accounting."
+        },
+        "keyPoints": {
+          "value": [
+            "Count every fluid source.",
+            "GIR uses weight and actual infusion minutes.",
+            "Dextrose provides 3.4 kcal/g.",
+            "A calculated range does not replace glucose and clinical monitoring."
+          ],
+          "source": [
+            "Book PDF158 counted fluid and clinical tailoring; FDA2018 complete dosing text.",
+            "Book-calculations review: mg/kg/min uses stated dosing weight and actual infusion duration, not automatically24hours.",
+            "Book PDF163 dextrose monohydrate in PN provides3.4kcal/g; adult handling estimate does not establish neonatal target.",
+            "FDA2021 full pediatric glucose warning and ASPEN2017 pediatric13A complete monitoring; metabolic-response review."
+          ]
+        }
+      },
+      "wholeLessonVerified": false,
+      "metadataReviewDoesNotClosePendingBodies": true
+    },
+    {
+      "slug": "pediatric-protein-lipid",
+      "status": "metadata verified",
+      "fields": {
+        "title": {
+          "value": "Amino Acids, Lipid, and Growth",
+          "source": "Growth is an assessed goal; ASPEN2023 Questions2/3/4 and FDA2025 SMOFlipid dosing and metabolism."
+        },
+        "summary": {
+          "value": "Amino-acid and lipid planning must address growth and neurodevelopmental goals, dose, formulation, infusion rate, essential fatty-acid provision, clearance, and metabolic tolerance together. A higher dose does not establish better developmental outcomes.",
+          "source": "ASPEN2023 purpose/target population and full Question3 recommendation/rationale: developmental benefit of higher AA not established; this is a caution against assuming dose proves benefit, not a claim that all lipid/AA dose increases lack benefit or cause harm. Question4 and lipid tool address EFAD; FDA2025 full2.3/Table1/5.1 address product,dose,rate,all-source energy and clearance.2024corrigendum reviewed; no isolated AA-sepsis causality adopted."
+        },
+        "concepts": {
+          "value": [
+            "Preterm amino-acid guidance",
+            "Pediatric protein calculations",
+            "Lipid dose and advancement",
+            "Essential fatty acids and triglyceride tolerance"
+          ],
+          "source": [
+            "ASPEN2023 full Table1 Questions2/3 with target population;2024corrigendum retains recommendations.",
+            "Complete stated-prescription AA calculations in book-calculations review; does not select a pediatric disease-specific dose.",
+            "ASPEN2023 Question4 and FDA2025 SMOFlipid full Table1 with all age groups and footnotes.",
+            "ASPEN2022 neonatal/pediatric lipid tool complete page2 indication,prescribing and monitoring; FDA2025 full2.3 and5.1. No universal TG cutoff added."
+          ]
+        },
+        "visual": {
+          "value": "peds-pn-macros",
+          "source": "peds-pn-macros unchanged; complete source and rendered figure review in preterm-lipid review."
+        },
+        "application": {
+          "value": "Calculate grams per kilogram and total grams for amino acids and lipid, verify the exact product and age indication, calculate source volume and rate, and reconcile energy with growth goals and all non-PN calories.",
+          "source": "Book stated grams/kg,totalgrams,percent-source-volume arithmetic; FDA2025 full2.3/Table1 with exact age bands, daily and hourly ceilings and all-route calorie accounting; ASPEN2017 pediatric13A actual delivery and growth assessment."
+        },
+        "keyPoints": {
+          "value": [
+            "Within the 2023 ASPEN guideline population, initial amino acids should not exceed 3 g/kg/day.",
+            "The guideline's maximal preterm amino-acid target is 3 to 3.5 g/kg/day.",
+            "Lipid dosing and rate are product and age specific.",
+            "Photoprotection and pump safeguards matter in neonates."
+          ],
+          "source": [
+            "ASPEN2023 Table1Question2 against initialAA>3; restricted to guideline population, not all pediatric ages/renal support.",
+            "ASPEN2023 Questions2/3 target3–3.5; fullQuestion3 rationale rechecked.",
+            "FDA2025 fullTable1 all pediatric age bands,daily maxima and maximum hourly rate; no latest-label assertion.",
+            "ASPEN2022 fullpage2 recommends neonatalILEphotoprotection,1.2micronfilter,and safeguards for separate lipid infusion programming."
+          ]
+        }
+      },
+      "wholeLessonVerified": false,
+      "metadataReviewDoesNotClosePendingBodies": true
+    },
+    {
+      "slug": "pediatric-minerals-micros",
+      "status": "metadata verified",
+      "fields": {
+        "title": {
+          "value": "Electrolytes, Minerals, Vitamins, and Trace Elements",
+          "source": {
+            "evidence": "pediatric-parenteral-nutrition-micronutrient-review.json",
+            "locator": "wholeLessonReview.metadataSourceEvidence + figureReview",
+            "exactBaselineMetadataUnchanged": true
+          }
+        },
+        "summary": {
+          "value": "Growth, immature elimination, organ dysfunction, gastrointestinal losses, and product concentration make pediatric micronutrient design especially sensitive to weight and formulation details.",
+          "source": {
+            "evidence": "pediatric-parenteral-nutrition-micronutrient-review.json",
+            "locator": "wholeLessonReview.metadataSourceEvidence + figureReview",
+            "exactBaselineMetadataUnchanged": true
+          }
+        },
+        "concepts": {
+          "value": [
+            "Calcium and phosphorus for bone mineralization",
+            "Sodium, potassium, magnesium, and acetate",
+            "Age-specific multivitamins",
+            "Trace-element adjustment"
+          ],
+          "source": {
+            "evidence": "pediatric-parenteral-nutrition-micronutrient-review.json",
+            "locator": "wholeLessonReview.metadataSourceEvidence + figureReview",
+            "exactBaselineMetadataUnchanged": true
+          }
+        },
+        "visual": {
+          "value": "peds-pn-micros",
+          "source": {
+            "evidence": "pediatric-parenteral-nutrition-micronutrient-review.json",
+            "locator": "wholeLessonReview.metadataSourceEvidence + figureReview",
+            "exactBaselineMetadataUnchanged": true
+          }
+        },
+        "application": {
+          "value": "Calculate every component per kilogram and per day, identify the product and concentration, include counterions, and compare the final amount with age, laboratory trends, organ function, losses, compatibility, and current labeling.",
+          "source": {
+            "evidence": "pediatric-parenteral-nutrition-micronutrient-review.json",
+            "locator": "wholeLessonReview.metadataSourceEvidence + figureReview",
+            "exactBaselineMetadataUnchanged": true
+          }
+        },
+        "keyPoints": {
+          "value": [
+            "Bone-mineral needs and solubility must be solved together.",
+            "Phosphate salts contribute a clinically relevant counterion.",
+            "Use age-appropriate labeled vitamin dosing.",
+            "Trace elements are adjusted by risk, loss, organ function, and duration."
+          ],
+          "source": {
+            "evidence": "pediatric-parenteral-nutrition-micronutrient-review.json",
+            "locator": "wholeLessonReview.metadataSourceEvidence + figureReview",
+            "exactBaselineMetadataUnchanged": true
+          }
+        }
+      },
+      "wholeLessonVerified": true,
+      "metadataReviewDoesNotClosePendingBodies": true
+    },
+    {
+      "slug": "pediatric-compounding-safety",
+      "status": "metadata verified",
+      "fields": {
+        "title": {
+          "value": "Compatibility, Aluminum, Filtration, and Photoprotection",
+          "source": {
+            "evidence": "pediatric-parenteral-nutrition-compounding-safety-review.json",
+            "locator": "wholeLessonReview + sourceRead + figureReview",
+            "exactBaselineMetadataUnchanged": true
+          }
+        },
+        "summary": {
+          "value": "A neonatal PN admixture can be mathematically correct and still unsafe because of precipitation, emulsion instability, light exposure, contamination, aluminum burden, or administration error.",
+          "source": {
+            "evidence": "pediatric-parenteral-nutrition-compounding-safety-review.json",
+            "locator": "wholeLessonReview + sourceRead + figureReview",
+            "exactBaselineMetadataUnchanged": true
+          }
+        },
+        "concepts": {
+          "value": [
+            "Calcium-phosphate solubility",
+            "Two-in-one versus total nutrient admixture",
+            "Aluminum exposure",
+            "Filter, light, and administration safeguards"
+          ],
+          "source": {
+            "evidence": "pediatric-parenteral-nutrition-compounding-safety-review.json",
+            "locator": "wholeLessonReview + sourceRead + figureReview",
+            "exactBaselineMetadataUnchanged": true
+          }
+        },
+        "visual": {
+          "value": "peds-pn-safety",
+          "source": {
+            "evidence": "pediatric-parenteral-nutrition-compounding-safety-review.json",
+            "locator": "wholeLessonReview + sourceRead + figureReview",
+            "exactBaselineMetadataUnchanged": true
+          }
+        },
+        "application": {
+          "value": "Use validated compatibility data for the exact formulation and process. Calculate total aluminum exposure from all products, protect preterm PN and the lipid infusion from light according to validated policy, use the correct filter, and independently verify pump programming and line setup.",
+          "source": {
+            "evidence": "pediatric-parenteral-nutrition-compounding-safety-review.json",
+            "locator": "wholeLessonReview + sourceRead + figureReview",
+            "exactBaselineMetadataUnchanged": true
+          }
+        },
+        "keyPoints": {
+          "value": [
+            "Clear appearance does not prove calcium-phosphate compatibility.",
+            "TNA may be infeasible in small pediatric formulations.",
+            "Total aluminum exposure includes every PN component.",
+            "Use a 1.2 micron filter and protect preterm PN from light."
+          ],
+          "source": {
+            "evidence": "pediatric-parenteral-nutrition-compounding-safety-review.json",
+            "locator": "wholeLessonReview + sourceRead + figureReview",
+            "exactBaselineMetadataUnchanged": true
+          }
+        }
+      },
+      "wholeLessonVerified": true,
+      "metadataReviewDoesNotClosePendingBodies": true
+    },
+    {
+      "slug": "pediatric-order-monitoring",
+      "status": "metadata verified",
+      "fields": {
+        "title": {
+          "value": "Order Construction, Monitoring, and Transition",
+          "source": {
+            "evidence": "pediatric-parenteral-nutrition-starter-order-reconciliation-review.json",
+            "locator": "wholeLessons[pediatric-order-monitoring].metadataReview",
+            "exactBaselineMetadataUnchanged": true
+          }
+        },
+        "summary": {
+          "value": "A pediatric PN order is a daily closed loop that connects growth goals, calculations, source products, the final container, actual delivery, laboratory trends, and enteral advancement.",
+          "source": {
+            "evidence": "pediatric-parenteral-nutrition-starter-order-reconciliation-review.json",
+            "locator": "wholeLessons[pediatric-order-monitoring].metadataReview",
+            "exactBaselineMetadataUnchanged": true
+          }
+        },
+        "concepts": {
+          "value": [
+            "Daily order reconstruction",
+            "Source volumes and final concentration",
+            "Growth and metabolic monitoring",
+            "Enteral transition and access preservation"
+          ],
+          "source": {
+            "evidence": "pediatric-parenteral-nutrition-starter-order-reconciliation-review.json",
+            "locator": "wholeLessons[pediatric-order-monitoring].metadataReview",
+            "exactBaselineMetadataUnchanged": true
+          }
+        },
+        "visual": {
+          "value": "peds-pn-audit",
+          "source": {
+            "evidence": "pediatric-parenteral-nutrition-starter-order-reconciliation-review.json",
+            "locator": "wholeLessons[pediatric-order-monitoring].metadataReview",
+            "exactBaselineMetadataUnchanged": true
+          }
+        },
+        "application": {
+          "value": "Compare today with yesterday. Confirm the prescribed dosing weight and recalculate per-kilogram delivery when that weight changes. Verify source concentrations and final volume, quantify actual delivery, review growth and laboratory trends, and state what will change when enteral intake advances.",
+          "source": {
+            "evidence": "pediatric-parenteral-nutrition-starter-order-reconciliation-review.json",
+            "locator": "wholeLessons[pediatric-order-monitoring].metadataReview",
+            "exactBaselineMetadataUnchanged": true
+          }
+        },
+        "keyPoints": {
+          "value": [
+            "Confirm the dosing weight before recalculating per-kilogram delivery.",
+            "Measure actual delivery, not only the order.",
+            "Interpret laboratory changes in clinical context.",
+            "Transition across both routes without losing the growth plan."
+          ],
+          "source": {
+            "evidence": "pediatric-parenteral-nutrition-starter-order-reconciliation-review.json",
+            "locator": "wholeLessons[pediatric-order-monitoring].metadataReview",
+            "exactBaselineMetadataUnchanged": true
+          }
+        }
+      },
+      "wholeLessonVerified": true,
+      "metadataReviewDoesNotClosePendingBodies": true
+    }
+  ],
+  "semanticMetadataFieldGroupsReviewed": 43,
+  "teachingReverification": [
+    {
+      "heading": "Advance lipid deliberately",
+      "body": "The 2023 ASPEN guideline recommends daily advancement to 3 g/kg/day within its preterm population when soybean-oil or multicomponent lipid is used, while attending to composition and essential fatty-acid provision. The cited July 2025 SMOFlipid label begins at 0.5 to 1 g/kg/day from birth through 2 years and does not exceed 3 g/kg/day. Age, product, total energy, clearance, and clinical status govern the actual order.",
+      "status": "whole body reverified",
+      "clauseSource": "ASPEN2023Q4/purpose population;FDAJuly2025PDF5/6all-ageTable1/footnotes andPDF7clearance",
+      "additionalBodyClosureCount": 0
+    },
+    {
+      "heading": "Protect against rapid infusion",
+      "body": "Rapid lipid infusion has caused severe decompensation in neonates and infants. Under the cited July 2025 SMOFlipid label, the hourly rate must not exceed 0.75 mL/kg/hour. ASPEN recommends a 1.2 micron filter and neonatal photoprotection. Separate infusion requires safeguards against pump programming and line-connection errors.",
+      "status": "whole body reverified",
+      "clauseSource": "FDAJuly2025PDF7full5.1 andPDF6rate;ASPEN2022fullpage2neonatalfilter/photo/programming safeguards",
+      "additionalBodyClosureCount": 0
+    }
+  ],
+  "coverage": {
+    "bank": 101,
+    "newlySourceVerifiedBank": 0,
+    "sourceVerifiedBank": 100,
+    "remainingBank": 1,
+    "bodies": 42,
+    "newlySourceVerifiedBodies": 0,
+    "sourceVerifiedBodies": 39,
+    "remainingBodies": 3,
+    "embeddedChecks": 6,
+    "sourceVerifiedEmbeddedChecks": 6,
+    "figures": 6,
+    "sourceVerifiedFigures": 6,
+    "cumulative": 5,
+    "sourceVerifiedCumulative": 5,
+    "metadataVerified": true,
+    "wholeModuleVerified": false,
+    "wholeChapterVerified": false
+  },
+  "verifiedBankIds": [
+    "pedpn-001",
+    "pedpn-002",
+    "pedpn-003",
+    "pedpn-004",
+    "pedpn-005",
+    "pedpn-006",
+    "pedpn-007",
+    "pedpn-008",
+    "pedpn-009",
+    "pedpn-010",
+    "pedpn-011",
+    "pedpn-013",
+    "pedpn-014",
+    "pedpn-015",
+    "pedpn-016",
+    "pedpn-017",
+    "pedpn-018",
+    "pedpn-019",
+    "pedpn-020",
+    "pedpn-021",
+    "pedpn-022",
+    "pedpn-023",
+    "pedpn-024",
+    "pedpn-025",
+    "pedpn-026",
+    "pedpn-027",
+    "pedpn-028",
+    "pedpn-029",
+    "pedpn-030",
+    "pedpn-031",
+    "pedpn-032",
+    "pedpn-033",
+    "pedpn-034",
+    "pedpn-035",
+    "pedpn-036",
+    "pedpn-037",
+    "pedpn-038",
+    "pedpn-039",
+    "pedpn-040",
+    "pedpn-041",
+    "pedpn-050",
+    "pedpn-051",
+    "pedpn-052",
+    "pedpn-053",
+    "pedpn-054",
+    "pedpn-055",
+    "pedpn-056",
+    "pedpn-057",
+    "pedpn-058",
+    "pedpn-059",
+    "pedpn-060",
+    "pedpn-061",
+    "pedpn-062",
+    "pedpn-063",
+    "pedpn-064",
+    "pedpn-065",
+    "pedpn-066",
+    "pedpn-067",
+    "pedpn-068",
+    "pedpn-069",
+    "pedpn-070",
+    "pedpn-071",
+    "pedpn-072",
+    "pedpn-073",
+    "pedpn-074",
+    "pedpn-075",
+    "pedpn-076",
+    "pedpn-077",
+    "pedpn-078",
+    "pedpn-079",
+    "pedpn-080",
+    "pedpn-081",
+    "pedpn-082",
+    "pedpn-083",
+    "pedpn-084",
+    "pedpn-085",
+    "pedpn-086",
+    "pedpn-087",
+    "pedpn-088",
+    "pedpn-089",
+    "pedpn-090",
+    "pedpn-091",
+    "pedpn-092",
+    "pedpn-093",
+    "pedpn-094",
+    "pedpn-095",
+    "pedpn-096",
+    "pedpn-097",
+    "pedpn-098",
+    "pedpn-099",
+    "pedpn-100",
+    "pedpn-101",
+    "pedpn-102",
+    "pedpn-103",
+    "pedpn-104",
+    "pedpn-105",
+    "pedpn-106",
+    "pedpn-107",
+    "pedpn-108",
+    "pedpn-109"
+  ],
+  "pendingQuestionIds": [
+    "pedpn-012"
+  ],
+  "remainingWholeBodyHeadings": [
+    "Build a complete fluid ledger",
+    "Advance according to response",
+    "Do not impose blanket protein restriction"
+  ],
+  "preservation": {
+    "all101BankObjectsUnchanged": true,
+    "all1180CumulativeObjectsUnchanged": true,
+    "all6EmbeddedChecksUnchanged": true,
+    "all6FigureTypesAndComponentUnchanged": true,
+    "all28ReferencesUnchanged": true,
+    "all42BodyHeadingsAndStablePathsPreserved": true,
+    "40WholeBodyObjectsUnchanged": true,
+    "twoPreviouslyVerifiedBodiesDateAndPopulationQualified": true,
+    "allThreePendingOriginalBodiesUnchanged": true,
+    "noNewDoseOrCalculation": true,
+    "architectureBackendAndTrackingUnchanged": true
+  },
+  "sourceDiscrepancies": [
+    {
+      "issue": "Unqualified current-label wording could imply that aJuly2025productlabel is necessarily thelatest2026label.",
+      "resolution": "Both affected lipid bodies now explicitly say citedJuly2025label; all doses/rates unchanged."
+    },
+    {
+      "issue": "Summary language could imply guaranteed developmental benefit or universalpreterm dosing.",
+      "resolution": "Parent/protein summary describes assessment/goals; keypoints/outcome name2023guideline scope. No newdevelopment/harm statistics or universalpediatric doses."
+    },
+    {
+      "issue": "Three originalclaims stilllack directly verified support.",
+      "resolution": "Exactoriginalbodies andpedpn-012retained; no narrowerreplacement and no wholemoduleclosure."
+    }
+  ],
+  "calculationEvidence": {
+    "newDistinctAssessmentCalculations": 0,
+    "newCompletedBookExercises": 0,
+    "runningAssessmentCalculations": 728,
+    "runningSeparateCompletedBookExercises": 98
+  },
+  "validation": {
+    "isolatedBuild": {
+      "status": "passed",
+      "staticPages": 567,
+      "scope": "ArchivedHEAD25a3dcaa plus exactone reviewedmodulefile."
+    },
+    "focusedStructure": {
+      "status": "passed",
+      "bankQuestions": 101,
+      "hardErrors": [],
+      "bounds": "Structural sourceGap result does not prove clinical closure."
+    },
+    "preservation": {
+      "all101BankObjectsUnchanged": true,
+      "all1180CumulativeObjectsUnchanged": true,
+      "all6EmbeddedChecksUnchanged": true,
+      "all6FigureTypesAndComponentUnchanged": true,
+      "all28ReferencesUnchanged": true,
+      "all42BodyHeadingsAndStablePathsPreserved": true,
+      "40WholeBodyObjectsUnchanged": true,
+      "twoPreviouslyVerifiedBodiesDateAndPopulationQualified": true,
+      "allThreePendingOriginalBodiesUnchanged": true,
+      "noNewDoseOrCalculation": true,
+      "architectureBackendAndTrackingUnchanged": true
+    },
+    "browser": {
+      "status": "passed",
+      "results": [
+        {
+          "width": 1440,
+          "all42BodyDOMEquality": true,
+          "allSixLessonMetadataDOMEquality": true,
+          "allFiveOutcomesAndDescriptionDOMEquality": true,
+          "all28ReferencesDOMEquality": true,
+          "manualCaptures": 12,
+          "noHorizontalOverflow": true
+        },
+        {
+          "width": 390,
+          "all42BodyDOMEquality": true,
+          "allSixLessonMetadataDOMEquality": true,
+          "allFiveOutcomesAndDescriptionDOMEquality": true,
+          "all28ReferencesDOMEquality": true,
+          "manualCaptures": 12,
+          "noHorizontalOverflow": true
+        }
+      ],
+      "pageErrors": []
+    },
+    "manualRenderedReview": {
+      "status": "passed",
+      "all12DesktopMobilePairsActuallyViewed": true,
+      "pairs": [
+        {
+          "file": "pair-body-0.png",
+          "sourceFiles": [
+            "body-0-1440.png",
+            "body-0-390.png"
+          ],
+          "sha256": "4d1ac06a085b32f2edc81a0c114f561566c9a8f4de07001bead21a62365721c4"
+        },
+        {
+          "file": "pair-body-1.png",
+          "sourceFiles": [
+            "body-1-1440.png",
+            "body-1-390.png"
+          ],
+          "sha256": "429f79c711711be88ee93de417a6c66c87cfe1872b028dca1867430c6c699346"
+        },
+        {
+          "file": "pair-hero.png",
+          "sourceFiles": [
+            "hero-1440.png",
+            "hero-390.png"
+          ],
+          "sha256": "9599756d22bd1700cc694eedf5fdb9a3f08535b2ebdf40629623c91d8116244e"
+        },
+        {
+          "file": "pair-metadata-pediatric-fluid-glucose-application.png",
+          "sourceFiles": [
+            "metadata-pediatric-fluid-glucose-application-1440.png",
+            "metadata-pediatric-fluid-glucose-application-390.png"
+          ],
+          "sha256": "a0eb39e35bcb1cb8ca58a0d15e646c16032d82118d7327f56969920fa1149a6e"
+        },
+        {
+          "file": "pair-metadata-pediatric-fluid-glucose-concepts.png",
+          "sourceFiles": [
+            "metadata-pediatric-fluid-glucose-concepts-1440.png",
+            "metadata-pediatric-fluid-glucose-concepts-390.png"
+          ],
+          "sha256": "27e5823a163e256a2b67b57409395daa5e6fdf4d5709b9d3631bc9f751861d5a"
+        },
+        {
+          "file": "pair-metadata-pediatric-fluid-glucose-keypoints.png",
+          "sourceFiles": [
+            "metadata-pediatric-fluid-glucose-keypoints-1440.png",
+            "metadata-pediatric-fluid-glucose-keypoints-390.png"
+          ],
+          "sha256": "badfac13fc14714f25288d51f62a0e52916108b7af2325cd697b4baedc961086"
+        },
+        {
+          "file": "pair-metadata-pediatric-fluid-glucose-summary.png",
+          "sourceFiles": [
+            "metadata-pediatric-fluid-glucose-summary-1440.png",
+            "metadata-pediatric-fluid-glucose-summary-390.png"
+          ],
+          "sha256": "153caee263a3d887359247a5e08288df012a8588c74e2cd5991169fc3317fa77"
+        },
+        {
+          "file": "pair-metadata-pediatric-protein-lipid-application.png",
+          "sourceFiles": [
+            "metadata-pediatric-protein-lipid-application-1440.png",
+            "metadata-pediatric-protein-lipid-application-390.png"
+          ],
+          "sha256": "923908e93bc3db8a0678e14a56a85c86beb94c05d024a85448a195e56156b387"
+        },
+        {
+          "file": "pair-metadata-pediatric-protein-lipid-concepts.png",
+          "sourceFiles": [
+            "metadata-pediatric-protein-lipid-concepts-1440.png",
+            "metadata-pediatric-protein-lipid-concepts-390.png"
+          ],
+          "sha256": "ff3a24094c3381561cedcf54c7ebd4b8c49ccbf7df71b0f769873fc67bede4b7"
+        },
+        {
+          "file": "pair-metadata-pediatric-protein-lipid-keypoints.png",
+          "sourceFiles": [
+            "metadata-pediatric-protein-lipid-keypoints-1440.png",
+            "metadata-pediatric-protein-lipid-keypoints-390.png"
+          ],
+          "sha256": "6d35a0b551bc57087c977e48efb0474bdd1a9d0d5ab6c4c41a5c8a3d9d3a28b5"
+        },
+        {
+          "file": "pair-metadata-pediatric-protein-lipid-summary.png",
+          "sourceFiles": [
+            "metadata-pediatric-protein-lipid-summary-1440.png",
+            "metadata-pediatric-protein-lipid-summary-390.png"
+          ],
+          "sha256": "ba56c0461e93cc6ce65657c08b1b6ff35b08a4ae19f670d9a3540d4c318ea545"
+        },
+        {
+          "file": "pair-reference-introduction.png",
+          "sourceFiles": [
+            "reference-introduction-1440.png",
+            "reference-introduction-390.png"
+          ],
+          "sha256": "89ed088fa237d6bef852cf8e81742216275bfb2fe312c4d346f3dc75b45c0242"
+        }
+      ],
+      "findings": "Complete parent hero/outcomes, all fluid/protein summary/concepts/keypoints/application groups, both date-qualified bodies and reference introduction legible at1440/390. No cropped text or fixed-header obstruction in reviewed fields.320widthoverflowpassed.",
+      "sourceVisualRecheck": [
+        "FDAJuly2025SMOFlipid fullPDF5/6/7, including allTable1rows/footnotes and5.1",
+        "ASPEN2023practice full2pages and2022lipid fullpage2 previously viewed during this ongoing metadata unit; no new source forestplot stats adopted."
+      ]
+    },
+    "runtimeWidths": [
+      1440,
+      390,
+      320
+    ],
+    "contentHashes": {
+      "src/data/modules/pediatricParenteralNutrition.js": "c89e97aee93bfdfd0afe078c4a872b1b85e8af73991b99bf529a5ef169ed9e35"
+    },
+    "noAssessmentAttemptsRepeated": "Allbank/cumulative/checkobjects unchanged; previousunitcorrect-wrong/localprogress verification retained. No additional backend/persistence claim."
+  },
+  "release": {
+    "branch": "audit/rxprep-content-2026-09-24",
+    "commit": "pending",
+    "push": "pending",
+    "receipt": "sequential-release-pediatric-pn-metadata-2026-10-02.json",
+    "mainMerge": "not performed",
+    "production": "not verified"
+  },
+  "nextAction": "Finish retained pediatric PN question pedpn-012 and three original whole bodies: Build a complete fluid ledger; Advance according to response; Do not impose blanket protein restriction. Neonatal phototherapy/open-warmer water loss, higher neonatal GIR/brain rationale and broad pediatric CKRT/catabolism/wound protein needs still require directly verified support. Human source-expansion request remains unanswered; new guideline set not authorized. All parent/six-lesson metadata are now reviewed; do not repeat metadata as open. Final101-question/42-body reconciliation and full module closure remain pending these source gaps. Whole Chapter11, Chapter1 entry15 determining fluid needs, broader Chapter54 and separate EN exception remain open.",
+  "wholeGoalComplete": false
+}

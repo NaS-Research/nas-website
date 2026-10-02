@@ -1200,7 +1200,8 @@
           "embeddedCheckVerified": true,
           "figureVerified": true,
           "metadataVerified": true,
-          "mappedBankQuestionsVerified": 9
+          "mappedBankQuestionsVerified": 9,
+          "metadataEvidence": "pediatric-parenteral-nutrition-metadata-review.json"
         },
         {
           "slug": "pediatric-fluid-glucose",
@@ -1210,8 +1211,9 @@
           "wholeLessonVerified": false,
           "teachingBodiesVerified": 4,
           "teachingBodiesTotal": 6,
-          "metadataVerified": false,
-          "applicationVerified": true
+          "metadataVerified": true,
+          "applicationVerified": true,
+          "metadataEvidence": "pediatric-parenteral-nutrition-metadata-review.json"
         },
         {
           "slug": "pediatric-protein-lipid",
@@ -1221,7 +1223,8 @@
           "wholeLessonVerified": false,
           "teachingBodiesVerified": 6,
           "teachingBodiesTotal": 7,
-          "metadataVerified": false
+          "metadataVerified": true,
+          "metadataEvidence": "pediatric-parenteral-nutrition-metadata-review.json"
         },
         {
           "slug": "pediatric-minerals-micros",
@@ -1232,7 +1235,8 @@
           "teachingBodiesVerified": 7,
           "mappedBankQuestionsVerified": 8,
           "figureVerified": true,
-          "metadataVerified": true
+          "metadataVerified": true,
+          "metadataEvidence": "pediatric-parenteral-nutrition-metadata-review.json"
         },
         {
           "slug": "pediatric-compounding-safety",
@@ -1243,7 +1247,8 @@
           "mappedBankQuestionsVerified": 10,
           "embeddedCheckVerified": true,
           "figureVerified": true,
-          "metadataVerified": true
+          "metadataVerified": true,
+          "metadataEvidence": "pediatric-parenteral-nutrition-metadata-review.json"
         },
         {
           "slug": "pediatric-order-monitoring",
@@ -1255,7 +1260,8 @@
           "embeddedCheckVerified": true,
           "figureVerified": true,
           "metadataVerified": true,
-          "mappedBankQuestionsVerified": 9
+          "mappedBankQuestionsVerified": 9,
+          "metadataEvidence": "pediatric-parenteral-nutrition-metadata-review.json"
         }
       ],
       "questions": 101,
@@ -1270,7 +1276,8 @@
         "pediatric-parenteral-nutrition-development-delivery-review.json",
         "pediatric-parenteral-nutrition-indication-access-review.json",
         "pediatric-parenteral-nutrition-metabolic-response-review.json",
-        "pediatric-parenteral-nutrition-starter-order-reconciliation-review.json"
+        "pediatric-parenteral-nutrition-starter-order-reconciliation-review.json",
+        "pediatric-parenteral-nutrition-metadata-review.json"
       ],
       "bookCalculationReview": {
         "evidence": "pediatric-parenteral-nutrition-book-calculations-review.json",
@@ -2799,6 +2806,36 @@
           "pedpn-108",
           "pedpn-109"
         ],
+        "pendingQuestionIds": [
+          "pedpn-012"
+        ],
+        "remainingWholeBodyHeadings": [
+          "Build a complete fluid ledger",
+          "Advance according to response",
+          "Do not impose blanket protein restriction"
+        ]
+      },
+      "metadataVerified": true,
+      "metadataReview": {
+        "evidence": "pediatric-parenteral-nutrition-metadata-review.json",
+        "bank": 101,
+        "newlySourceVerifiedBank": 0,
+        "sourceVerifiedBank": 100,
+        "remainingBank": 1,
+        "bodies": 42,
+        "newlySourceVerifiedBodies": 0,
+        "sourceVerifiedBodies": 39,
+        "remainingBodies": 3,
+        "embeddedChecks": 6,
+        "sourceVerifiedEmbeddedChecks": 6,
+        "figures": 6,
+        "sourceVerifiedFigures": 6,
+        "cumulative": 5,
+        "sourceVerifiedCumulative": 5,
+        "metadataVerified": true,
+        "wholeModuleVerified": false,
+        "wholeChapterVerified": false,
+        "semanticFieldGroups": 43,
         "pendingQuestionIds": [
           "pedpn-012"
         ],
