@@ -1,0 +1,910 @@
+{
+  "date": "2026-10-01",
+  "unit": "Pediatric PN compounding, aluminum, filtration and photoprotection safety source reconciliation",
+  "module": "pediatric-parenteral-nutrition",
+  "baseCommit": "5142f1a2883e11ae873f0459498ddc75d1a1ea73",
+  "status": "Compounding safety lesson verified; whole pediatric PN module and chapter incomplete",
+  "sourcePolicy": {
+    "suppliedBook": "Private supplied PDF cover is RxPrep2023; remains primary, private book/extracts/screenshots excluded from Git",
+    "outsidePNReferencesAuthorized": true,
+    "authorizationQuote": "use that and complete the goal. I approve",
+    "scope": "Existing official ASPEN/USP/FDA/CDC PN references and primary linked material; no extension to EN",
+    "outsideENSourcesUsed": false
+  },
+  "sources": {
+    "aluminum": "https://www.fda.gov/media/163799/download",
+    "aluminumDraftStatus": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/small-volume-parenteral-drug-products-and-pharmacy-bulk-packages-parenteral-nutrition-aluminum",
+    "order": "https://nutritioncare.org/wp-content/uploads/2024/12/PN-Checklist-02-Order-Review.pdf",
+    "compound": "https://nutritioncare.org/wp-content/uploads/2024/12/PN-Checklist-03-Compounding.pdf",
+    "admin": "https://nutritioncare.org/wp-content/uploads/2024/12/PN-Checklist-04-Administration.pdf",
+    "filter": "https://nutritioncare.org/wp-content/uploads/2024/12/IV-Filters-For-PN-Factsheet.pdf",
+    "phosphate": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2024/212832s002lbl.pdf",
+    "photoprotection": "https://aspenjournals.onlinelibrary.wiley.com/doi/10.1002/ncp.10747",
+    "compatibilityAbstract": "https://aspenjournals.onlinelibrary.wiley.com/doi/10.1002/ncp.11189"
+  },
+  "sourceRead": {
+    "aluminumDraft": "26-page July2025 FDA draft downloaded. Full relevant PDF pages4-12 and16-19 read as text and rendered pages (printed1-9/13-16). Scope includes draft sponsor/applicant status, total LVP/SVP exposure, two figures, dose-volume formulas, five example calculations and label warning/maximum-at-expiry context. Remaining manufacturing sections, later label/glossary/reference pages and remaining ACL examples not claimed read or adopted. Official listing still marks Draft/not for implementation.",
+    "orderCompoundAdminFilter": "All four two-page ASPEN practice tools fully read in text and rendered pages, including tables/figures/footnotes. Full primary filter position paper not claimed read. Administration monitoring fields seen but whole monitoring lesson not closed.",
+    "potassiumPhosphate": "Eight-page FDA August2024 label downloaded; complete PDF pages3-6 text/rendered read. Adopted evidence limited to sections2.3/2.4 product contribution,5.2 precipitation and5.5 aluminum warning. No new clinical dose/rate/contraindication claim adopted; full eight-page label review not claimed.",
+    "photoprotection": "Abstract, Executive Summary, Introduction and Methods definition read again. Both lipid-containing and lipid-free PN and full container/set from compounding through infusion retained for preterm population. Whole paper/research table/statistics not claimed.",
+    "compatibilityPrimaryArticle": "Official abstract only accessible and read. No full-article access or clinical closure attributed to unseen sections. Formulation factors instead supported by fully reviewed ASPEN checklists/FDA label.",
+    "bookChapter54": "Private extracts located only; no full chapter review or new Chapter54 closure.",
+    "renderedRelevantSourcePDFPagesReviewed": 25,
+    "sourcePDFSHA256": {
+      "aluminum.pdf": "767169d16a8be4af3848f04049de54d813c0d05e162daee5a1dd9bcc58bf75c7",
+      "order.pdf": "13e7e27f9fb85bdced5a63b2301895d84f4811ef1051456117fcf45176723b1e",
+      "compound.pdf": "7ccfb196fa3474e9ce753b623232229978224cbfff395d9a655731d36df149ec",
+      "admin.pdf": "5c41c84c82b6902d3bb0dd72848256c3ec9914c55116e87ac95e66d8a8505963",
+      "filter.pdf": "10e361366689f648395c62d1d9771cd34a984728c41fe5f97669b22f41a1aef7",
+      "phosphate.pdf": "12cd0ef1b2e5fa86b1e5647935034098c340ee63bf4dba45c9c5d13ae0e842d7"
+    }
+  },
+  "questionReview": [
+    {
+      "question": {
+        "id": "pedpn-024",
+        "question": "Which calcium salt is generally preferred in PN compatibility design?",
+        "choices": [
+          "Calcium gluconate",
+          "Calcium carbonate tablets",
+          "Calcium hydroxide",
+          "Calcium oxide"
+        ],
+        "answer": 0,
+        "rationale": "ASPEN's compounding checklist prefers calcium gluconate when inorganic phosphate salts are used. The complete formulation still requires compatibility validation.",
+        "reviewHref": "#pediatric-minerals-micros"
+      },
+      "sourceEvidence": [
+        {
+          "url": "https://nutritioncare.org/wp-content/uploads/2024/12/PN-Checklist-03-Compounding.pdf",
+          "locator": "PDF page2 calcium-gluconate row; exact formula validation page1"
+        }
+      ],
+      "review": "Prompt, every choice, answer, rationale and remediation anchor reviewed individually. Draft target is attributed, not a finalized safe threshold. Full original IDs/prompts/keys/correct texts/anchors preserved.",
+      "status": "verified",
+      "newSourceClosure": true
+    },
+    {
+      "question": {
+        "id": "pedpn-029",
+        "question": "Can a clear pediatric PN bag prove calcium-phosphate compatibility?",
+        "choices": [
+          "No, validated formulation data and process controls are still required",
+          "Yes, appearance proves molecular stability",
+          "Yes, if refrigerated",
+          "Yes, if central"
+        ],
+        "answer": 0,
+        "rationale": "Subvisible or delayed precipitation can occur despite a clear appearance.",
+        "reviewHref": "#pediatric-compounding-safety"
+      },
+      "sourceEvidence": [
+        {
+          "url": "https://nutritioncare.org/wp-content/uploads/2024/12/PN-Checklist-03-Compounding.pdf",
+          "locator": "PDF page2 delayed gross particulates"
+        },
+        {
+          "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2024/212832s002lbl.pdf",
+          "locator": "PDF pages4-5 sections2.3/5.2"
+        },
+        {
+          "url": "https://nutritioncare.org/wp-content/uploads/2024/12/PN-Checklist-02-Order-Review.pdf",
+          "locator": "PDF pages1-2 formulation review/Table1"
+        }
+      ],
+      "review": "Prompt, every choice, answer, rationale and remediation anchor reviewed individually. Draft target is attributed, not a finalized safe threshold. Full original IDs/prompts/keys/correct texts/anchors preserved.",
+      "status": "verified",
+      "newSourceClosure": true
+    },
+    {
+      "question": {
+        "id": "pedpn-030",
+        "question": "Why may a total nutrient admixture be infeasible in a neonate?",
+        "choices": [
+          "High calcium and phosphorus needs can conflict with emulsion compatibility and stability",
+          "Neonates cannot receive lipid",
+          "Dextrose cannot mix with amino acids",
+          "Every neonatal line is peripheral"
+        ],
+        "answer": 0,
+        "rationale": "Mineral needs and small volumes often constrain TNA stability.",
+        "reviewHref": "#pediatric-compounding-safety"
+      },
+      "sourceEvidence": [
+        {
+          "url": "https://nutritioncare.org/wp-content/uploads/2024/12/PN-Checklist-02-Order-Review.pdf",
+          "locator": "PDF page2 Table1 emulsion and calcium-phosphate limits"
+        },
+        {
+          "url": "https://nutritioncare.org/wp-content/uploads/2024/12/PN-Checklist-03-Compounding.pdf",
+          "locator": "PDF pages1-2 interactions and validated process; previously verified pediatric lipid tool retained"
+        }
+      ],
+      "review": "Prompt, every choice, answer, rationale and remediation anchor reviewed individually. Draft target is attributed, not a finalized safe threshold. Full original IDs/prompts/keys/correct texts/anchors preserved.",
+      "status": "verified",
+      "newSourceClosure": false
+    },
+    {
+      "question": {
+        "id": "pedpn-031",
+        "question": "What filter does ASPEN recommend for lipid and other PN formulations?",
+        "choices": [
+          "1.2 micron",
+          "0.22 micron for every formulation",
+          "10 micron",
+          "No filter"
+        ],
+        "answer": 0,
+        "rationale": "ASPEN's 2021 filter position recommends a 1.2 micron filter for TNAs, dextrose-amino acid admixtures, and lipid emulsions. Filtration does not replace compatibility review or routine infection-control practices.",
+        "reviewHref": "#pediatric-compounding-safety"
+      },
+      "sourceEvidence": [
+        {
+          "url": "https://nutritioncare.org/wp-content/uploads/2024/12/IV-Filters-For-PN-Factsheet.pdf",
+          "locator": "PDF page1 Executive Summary and page2 best practice6"
+        }
+      ],
+      "review": "Prompt, every choice, answer, rationale and remediation anchor reviewed individually. Draft target is attributed, not a finalized safe threshold. Full original IDs/prompts/keys/correct texts/anchors preserved.",
+      "status": "verified",
+      "newSourceClosure": true
+    },
+    {
+      "question": {
+        "id": "pedpn-032",
+        "question": "Why is neonatal PN photoprotection recommended?",
+        "choices": [
+          "It reduces light-generated free radicals and lipid peroxides",
+          "It increases glucose concentration",
+          "It removes aluminum",
+          "It changes central access to peripheral"
+        ],
+        "answer": 0,
+        "rationale": "ASPEN recommends photoprotection to reduce oxidative degradation products.",
+        "reviewHref": "#pediatric-compounding-safety"
+      },
+      "sourceEvidence": [
+        {
+          "url": "https://aspenjournals.onlinelibrary.wiley.com/doi/10.1002/ncp.10747",
+          "locator": "Abstract/Executive Summary/Introduction, premature infant recommendation and oxidative degradation"
+        }
+      ],
+      "review": "Prompt, every choice, answer, rationale and remediation anchor reviewed individually. Draft target is attributed, not a finalized safe threshold. Full original IDs/prompts/keys/correct texts/anchors preserved.",
+      "status": "verified",
+      "newSourceClosure": false
+    },
+    {
+      "question": {
+        "id": "pedpn-033",
+        "question": "Which aluminum exposure target appears in the cited FDA draft PN guidance?",
+        "choices": [
+          "4 to 5 mcg/kg/day",
+          "4 to 5 mg/kg/hour",
+          "40 g/kg/day",
+          "500 mcg/kg/min"
+        ],
+        "answer": 0,
+        "rationale": "The July 2025 nonbinding draft proposes total PN exposure no higher than 4 to 5 mcg/kg/day. It is not a finalized implementation standard, and tissue loading can occur below that range.",
+        "reviewHref": "#pediatric-compounding-safety"
+      },
+      "sourceEvidence": [
+        {
+          "url": "https://www.fda.gov/media/163799/download",
+          "locator": "PDF pages4-7 draft status, sponsor/applicant scope and 4-5 mcg/kg/day"
+        },
+        {
+          "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2024/212832s002lbl.pdf",
+          "locator": "PDF page6 section5.5 lower-rate tissue loading"
+        }
+      ],
+      "review": "Prompt, every choice, answer, rationale and remediation anchor reviewed individually. Draft target is attributed, not a finalized safe threshold. Full original IDs/prompts/keys/correct texts/anchors preserved.",
+      "status": "verified",
+      "newSourceClosure": true
+    },
+    {
+      "question": {
+        "id": "pedpn-034",
+        "question": "Which patients are especially vulnerable to PN aluminum toxicity?",
+        "choices": [
+          "Preterm infants with immature kidney function and prolonged exposure",
+          "Healthy adults after one oral dose",
+          "Patients using topical lotion",
+          "Children receiving no parenteral products"
+        ],
+        "answer": 0,
+        "rationale": "Immature elimination and cumulative exposure increase neurologic and bone risk.",
+        "reviewHref": "#pediatric-compounding-safety"
+      },
+      "sourceEvidence": [
+        {
+          "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2024/212832s002lbl.pdf",
+          "locator": "PDF page6 section5.5 renal impairment/preterm CNS and bone toxicity"
+        },
+        {
+          "url": "https://www.fda.gov/media/163799/download",
+          "locator": "PDF pages6-7 Background"
+        }
+      ],
+      "review": "Prompt, every choice, answer, rationale and remediation anchor reviewed individually. Draft target is attributed, not a finalized safe threshold. Full original IDs/prompts/keys/correct texts/anchors preserved.",
+      "status": "verified",
+      "newSourceClosure": true
+    },
+    {
+      "question": {
+        "id": "pedpn-035",
+        "question": "What must an aluminum audit include?",
+        "choices": [
+          "Every large- and small-volume PN component",
+          "Calcium only",
+          "The bag label color",
+          "Lipid calories only"
+        ],
+        "answer": 0,
+        "rationale": "Total exposure is the sum of contributions from all products.",
+        "reviewHref": "#pediatric-compounding-safety"
+      },
+      "sourceEvidence": [
+        {
+          "url": "https://www.fda.gov/media/163799/download",
+          "locator": "PDF pages5/7/9 all LVP and SVP components and Figures1-2"
+        }
+      ],
+      "review": "Prompt, every choice, answer, rationale and remediation anchor reviewed individually. Draft target is attributed, not a finalized safe threshold. Full original IDs/prompts/keys/correct texts/anchors preserved.",
+      "status": "verified",
+      "newSourceClosure": true
+    },
+    {
+      "question": {
+        "id": "pedpn-102",
+        "question": "A calcium-phosphate calculation exceeds validated limits, but the bag looks clear. What is the most defensible next action?",
+        "choices": [
+          "Quarantine the order and resolve compatibility before compounding or administration",
+          "Approve the order because a clear bag proves compatibility",
+          "Slow the infusion to make the unvalidated admixture compatible",
+          "Use a 1.2 micron filter to approve the order without resolving compatibility"
+        ],
+        "answer": 0,
+        "rationale": "Appearance cannot exclude subvisible or delayed precipitation.",
+        "reviewHref": "#pediatric-compounding-safety"
+      },
+      "sourceEvidence": [
+        {
+          "url": "https://nutritioncare.org/wp-content/uploads/2024/12/PN-Checklist-02-Order-Review.pdf",
+          "locator": "PDF page1 pharmacist approval only after compatibility review"
+        },
+        {
+          "url": "https://nutritioncare.org/wp-content/uploads/2024/12/PN-Checklist-03-Compounding.pdf",
+          "locator": "PDF page2 delayed precipitation"
+        },
+        {
+          "url": "https://nutritioncare.org/wp-content/uploads/2024/12/IV-Filters-For-PN-Factsheet.pdf",
+          "locator": "PDF pages1-2 filter not substitute for pharmacist compatibility review"
+        }
+      ],
+      "review": "Prompt, every choice, answer, rationale and remediation anchor reviewed individually. Draft target is attributed, not a finalized safe threshold. Full original IDs/prompts/keys/correct texts/anchors preserved.",
+      "status": "verified",
+      "newSourceClosure": true
+    },
+    {
+      "question": {
+        "id": "pedpn-103",
+        "question": "A preterm neonate receives PN from a bag and tubing exposed to ambient light during a 24-hour infusion. What is the most defensible next action?",
+        "choices": [
+          "Implement validated photoprotection across the container and administration set",
+          "Continue unchanged without reassessment",
+          "Apply an adult default without calculation",
+          "Wait until discharge to review the order"
+        ],
+        "answer": 0,
+        "rationale": "ASPEN recommends complete PN light protection for premature infants from compounding through infusion, including the container and infusion set. Lipid-free PN can also form peroxides.",
+        "reviewHref": "#pediatric-compounding-safety"
+      },
+      "sourceEvidence": [
+        {
+          "url": "https://aspenjournals.onlinelibrary.wiley.com/doi/10.1002/ncp.10747",
+          "locator": "Abstract/Executive Summary/Introduction and Methods complete-light-protection definition"
+        }
+      ],
+      "review": "Prompt, every choice, answer, rationale and remediation anchor reviewed individually. Draft target is attributed, not a finalized safe threshold. Full original IDs/prompts/keys/correct texts/anchors preserved.",
+      "status": "verified",
+      "newSourceClosure": false
+    },
+    {
+      "question": {
+        "id": "pedpn-104",
+        "question": "A 2 kg infant receives 12 mcg of aluminum daily from all PN products. What is the most defensible next action?",
+        "choices": [
+          "Reduce product-related exposure because 6 mcg/kg/day exceeds the cited draft guidance target",
+          "Approve the order because the calculated exposure is below 5 mcg/kg/day",
+          "Count only the calcium product and omit the other aluminum sources",
+          "Treat one day of exposure as proof that prolonged administration cannot cause accumulation"
+        ],
+        "answer": 0,
+        "rationale": "Twelve mcg divided by 2 kg is 6 mcg/kg/day, above the cited target; values below it do not prove absence of risk.",
+        "reviewHref": "#pediatric-compounding-safety"
+      },
+      "sourceEvidence": [
+        {
+          "url": "https://www.fda.gov/media/163799/download",
+          "locator": "PDF pages5/7 and11 total exposure and dose-volume conversion"
+        },
+        {
+          "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2024/212832s002lbl.pdf",
+          "locator": "PDF page6 section5.5 warning tissue loading even below range"
+        }
+      ],
+      "review": "Prompt, every choice, answer, rationale and remediation anchor reviewed individually. Draft target is attributed, not a finalized safe threshold. Full original IDs/prompts/keys/correct texts/anchors preserved.",
+      "status": "verified",
+      "newSourceClosure": true
+    }
+  ],
+  "verifiedBankIds": [
+    "pedpn-003",
+    "pedpn-008",
+    "pedpn-009",
+    "pedpn-010",
+    "pedpn-014",
+    "pedpn-015",
+    "pedpn-017",
+    "pedpn-018",
+    "pedpn-019",
+    "pedpn-020",
+    "pedpn-021",
+    "pedpn-022",
+    "pedpn-024",
+    "pedpn-029",
+    "pedpn-030",
+    "pedpn-031",
+    "pedpn-032",
+    "pedpn-033",
+    "pedpn-034",
+    "pedpn-035",
+    "pedpn-060",
+    "pedpn-061",
+    "pedpn-062",
+    "pedpn-063",
+    "pedpn-064",
+    "pedpn-065",
+    "pedpn-066",
+    "pedpn-067",
+    "pedpn-068",
+    "pedpn-069",
+    "pedpn-070",
+    "pedpn-071",
+    "pedpn-072",
+    "pedpn-073",
+    "pedpn-074",
+    "pedpn-075",
+    "pedpn-076",
+    "pedpn-077",
+    "pedpn-078",
+    "pedpn-079",
+    "pedpn-080",
+    "pedpn-081",
+    "pedpn-082",
+    "pedpn-083",
+    "pedpn-084",
+    "pedpn-085",
+    "pedpn-086",
+    "pedpn-087",
+    "pedpn-088",
+    "pedpn-089",
+    "pedpn-090",
+    "pedpn-091",
+    "pedpn-092",
+    "pedpn-093",
+    "pedpn-094",
+    "pedpn-095",
+    "pedpn-096",
+    "pedpn-097",
+    "pedpn-098",
+    "pedpn-099",
+    "pedpn-100",
+    "pedpn-101",
+    "pedpn-102",
+    "pedpn-103",
+    "pedpn-104"
+  ],
+  "pendingQuestionIds": [
+    "pedpn-001",
+    "pedpn-002",
+    "pedpn-004",
+    "pedpn-005",
+    "pedpn-006",
+    "pedpn-007",
+    "pedpn-011",
+    "pedpn-012",
+    "pedpn-013",
+    "pedpn-016",
+    "pedpn-023",
+    "pedpn-025",
+    "pedpn-026",
+    "pedpn-027",
+    "pedpn-028",
+    "pedpn-036",
+    "pedpn-037",
+    "pedpn-038",
+    "pedpn-039",
+    "pedpn-040",
+    "pedpn-050",
+    "pedpn-051",
+    "pedpn-052",
+    "pedpn-053",
+    "pedpn-054",
+    "pedpn-055",
+    "pedpn-056",
+    "pedpn-057",
+    "pedpn-058",
+    "pedpn-059",
+    "pedpn-105",
+    "pedpn-106",
+    "pedpn-107",
+    "pedpn-108",
+    "pedpn-109"
+  ],
+  "teachingReview": [
+    {
+      "lesson": "pediatric-compounding-safety",
+      "heading": "Validate the complete formulation",
+      "body": "Calcium-phosphate solubility depends on amino-acid product and concentration, calcium and phosphate salts, pH, cysteine, other electrolytes, final volume, temperature, sequence, time, and storage. A clear bag does not prove safety. Use validated compatibility data and compounding-system limits for the exact formulation.",
+      "sourceEvidence": [
+        {
+          "url": "https://nutritioncare.org/wp-content/uploads/2024/12/PN-Checklist-02-Order-Review.pdf",
+          "locator": "PDF pages1-2 compatibility/stability and product-specific amino-acid curves, volume, cysteine"
+        },
+        {
+          "url": "https://nutritioncare.org/wp-content/uploads/2024/12/PN-Checklist-03-Compounding.pdf",
+          "locator": "PDF pages1-2 electrolyte/acidic interactions, validated mixing sequence and storage"
+        },
+        {
+          "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2024/212832s002lbl.pdf",
+          "locator": "PDF page4 section2.3 pH/temperature/relative ions, sequence and refrigeration; page5 section5.2 postfilter precipitation"
+        }
+      ],
+      "status": "verified",
+      "newBody": false,
+      "newWholeBodyClosure": true
+    },
+    {
+      "lesson": "pediatric-compounding-safety",
+      "heading": "Do not force a total nutrient admixture",
+      "body": "ASPEN notes that a total nutrient admixture is often not feasible for pediatric patients because high calcium and phosphorus requirements create compatibility and stability constraints. Lipid is commonly infused separately or co-administered by a validated Y-site process. Product-specific compatibility remains required.",
+      "sourceEvidence": [
+        {
+          "url": "https://nutritioncare.org/wp-content/uploads/2024/12/PN-Checklist-02-Order-Review.pdf",
+          "locator": "PDF page2 Table1 emulsion instability/calcium-phosphate risk and separate ILE"
+        },
+        {
+          "url": "https://nutritioncare.org/wp-content/uploads/2024/12/IV-Filters-For-PN-Factsheet.pdf",
+          "locator": "PDF page1 Figure2 Y-site process; prior pediatric lipid tool whole-body closure retained"
+        }
+      ],
+      "status": "verified",
+      "newBody": false,
+      "newWholeBodyClosure": false
+    },
+    {
+      "lesson": "pediatric-compounding-safety",
+      "heading": "Calculate the aluminum burden",
+      "body": "Aluminum contamination can enter PN through large- and small-volume components. Immature kidneys and prolonged exposure increase neurologic and bone toxicity risk. The July 2025 FDA draft, written for product sponsors and applicants, proposes limiting total PN exposure to 4 to 5 mcg/kg/day. It remains a nonbinding draft, not a finalized implementation standard. The product-label warning states that tissue loading can occur below this range. Check each component's aluminum information and sum all sources; a labeled maximum gives an exposure estimate, not proof of the amount actually present.",
+      "sourceEvidence": [
+        {
+          "url": "https://www.fda.gov/media/163799/download",
+          "locator": "PDF pages4-12 and16-19 draft/regulatory label and maximum-at-expiry context"
+        },
+        {
+          "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2024/212832s002lbl.pdf",
+          "locator": "PDF page6 section5.5 prolonged exposure, kidney immaturity, CNS/bone and lower-rate loading"
+        }
+      ],
+      "status": "verified",
+      "newBody": false,
+      "newWholeBodyClosure": true
+    },
+    {
+      "lesson": "pediatric-compounding-safety",
+      "heading": "Protect the entire administration path",
+      "body": "ASPEN recommends a 1.2 micron filter for total nutrient admixtures, dextrose-amino acid admixtures, and lipid emulsions. For premature infants, protect the PN bag and infusion set from compounding through infusion, including lipid-free PN. Verify the patient, route, pump channel and rate, line connection, filter, and light-protection setup before administration.",
+      "sourceEvidence": [
+        {
+          "url": "https://nutritioncare.org/wp-content/uploads/2024/12/IV-Filters-For-PN-Factsheet.pdf",
+          "locator": "PDF pages1-2 1.2 micron scope"
+        },
+        {
+          "url": "https://nutritioncare.org/wp-content/uploads/2024/12/PN-Checklist-04-Administration.pdf",
+          "locator": "PDF page1 patient/line/pump/light-protection checks"
+        },
+        {
+          "url": "https://aspenjournals.onlinelibrary.wiley.com/doi/10.1002/ncp.10747",
+          "locator": "Executive Summary and Methods definition complete container/set, lipid-free PN, beginning at compounding"
+        }
+      ],
+      "status": "verified",
+      "newBody": false,
+      "newWholeBodyClosure": true
+    },
+    {
+      "lesson": "pediatric-compounding-safety",
+      "heading": "Keep the filter in the safety path",
+      "body": "Place a 1.2 micron filter near the catheter hub, below the Y-site where separately infused lipid and dextrose-amino acid solutions join. A filter does not replace compatibility review or infection-control practices. If pressure alarms suggest occlusion, check the tubing, clamps, catheter, and filter size. Replace an occluded filter with one of the same pore size and ask the pharmacist to review the formulation. Never bypass the filter to keep PN running.",
+      "sourceEvidence": [
+        {
+          "url": "https://nutritioncare.org/wp-content/uploads/2024/12/IV-Filters-For-PN-Factsheet.pdf",
+          "locator": "PDF page1 Figure2 and page2 occlusion response, no unfiltered continuation"
+        },
+        {
+          "url": "https://nutritioncare.org/wp-content/uploads/2024/12/PN-Checklist-04-Administration.pdf",
+          "locator": "PDF page1 distal filter and asepsis"
+        }
+      ],
+      "status": "verified",
+      "newBody": true,
+      "newWholeBodyClosure": true
+    },
+    {
+      "lesson": "pediatric-compounding-safety",
+      "heading": "Calculate aluminum from concentration and volume",
+      "body": "For a stated example, a 2 kg infant receives 60 mL/day of a component labeled at 25 mcg/L and 3 mL/day of another labeled at 3,500 mcg/L. Divide each concentration by 1,000 to convert to mcg/mL. The contributions are 1.5 and 10.5 mcg/day: 12 mcg/day total, or 6 mcg/kg/day. These are example concentrations, not named-product doses. Count every other component before interpreting the total. Maximum label values estimate exposure; they do not establish actual aluminum content.",
+      "sourceEvidence": [
+        {
+          "url": "https://www.fda.gov/media/163799/download",
+          "locator": "PDF page11 dose-volume formula, page9 assumed upper concentration and page19 maximum-at-expiry label; new stated hypothetical example independently recalculated"
+        }
+      ],
+      "status": "verified",
+      "newBody": true,
+      "newWholeBodyClosure": true
+    }
+  ],
+  "embeddedReview": [
+    {
+      "lesson": "pediatric-compounding-safety",
+      "question": {
+        "question": "Which total aluminum exposure target is stated in the cited FDA draft PN guidance?",
+        "choices": [
+          "4 to 5 mcg/kg/day",
+          "40 to 50 mg/kg/day",
+          "400 mcg/kg/hour",
+          "5 g/kg/day"
+        ],
+        "answer": 0,
+        "rationale": "The draft targets no more than 4 to 5 mcg/kg/day; lower exposure does not eliminate accumulation risk.",
+        "reviewHref": "#pediatric-compounding-safety"
+      },
+      "status": "verified without change",
+      "sourceEvidence": [
+        {
+          "url": "https://www.fda.gov/media/163799/download",
+          "locator": "Draft PDF pages5/7 and FDA label page6 section5.5"
+        }
+      ]
+    },
+    {
+      "lesson": "pediatric-minerals-micros",
+      "question": {
+        "question": "Why must potassium phosphate be included in two parts of the electrolyte audit?",
+        "choices": [
+          "It contributes both phosphate and potassium",
+          "It contributes lipid and protein",
+          "It replaces vitamins",
+          "It contains no measurable ions"
+        ],
+        "answer": 0,
+        "rationale": "Both the phosphate dose and potassium contribution affect the final prescription.",
+        "reviewHref": "#pediatric-minerals-micros"
+      },
+      "status": "verified without change",
+      "sourceEvidence": [
+        {
+          "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2024/212832s002lbl.pdf",
+          "locator": "FDA label PDF page4 section2.4 and page5 section3 product contains phosphate and potassium"
+        }
+      ]
+    }
+  ],
+  "figureReview": {
+    "type": "peds-pn-safety",
+    "status": "verified",
+    "pretermPhotoprotectionScopeCorrected": true,
+    "review": "All four stages and labels reviewed: exact mixture compatibility; total aluminum; current1.2 micron PN filtration; preterm bag/administration set light protection. Conceptual diagram, not observed molecular structure. Other five diagrams unchanged.",
+    "sourceEvidence": [
+      {
+        "url": "https://nutritioncare.org/wp-content/uploads/2024/12/PN-Checklist-02-Order-Review.pdf"
+      },
+      {
+        "url": "https://nutritioncare.org/wp-content/uploads/2024/12/PN-Checklist-03-Compounding.pdf"
+      },
+      {
+        "url": "https://nutritioncare.org/wp-content/uploads/2024/12/IV-Filters-For-PN-Factsheet.pdf"
+      },
+      {
+        "url": "https://www.fda.gov/media/163799/download"
+      },
+      {
+        "url": "https://aspenjournals.onlinelibrary.wiley.com/doi/10.1002/ncp.10747"
+      }
+    ]
+  },
+  "wholeLessonReview": {
+    "slug": "pediatric-compounding-safety",
+    "wholeLessonVerified": true,
+    "teachingBodies": 6,
+    "mappedBankQuestions": 10,
+    "mappedBankIds": [
+      "pedpn-029",
+      "pedpn-030",
+      "pedpn-031",
+      "pedpn-032",
+      "pedpn-033",
+      "pedpn-034",
+      "pedpn-035",
+      "pedpn-102",
+      "pedpn-103",
+      "pedpn-104"
+    ],
+    "embeddedChecks": 1,
+    "figures": 1,
+    "metadataFields": [
+      "title",
+      "summary",
+      "concepts",
+      "application",
+      "keyPoints"
+    ],
+    "metadataSourceReviewed": true,
+    "metadataRuntime": {
+      "status": "passed",
+      "fields": [
+        "title",
+        "summary",
+        "concepts",
+        "keyPoints",
+        "application"
+      ],
+      "widths": [
+        1440,
+        390
+      ],
+      "additionalStudyContent": false,
+      "referenceScreenshotRecapturedWithTallerViewport": true
+    },
+    "additionalRenderedStudyContent": false,
+    "directDerivedCumulativeObjects": 0,
+    "parentModuleCumulativeBankStillIncomplete": true
+  },
+  "referenceChanges": {
+    "added": [
+      {
+        "label": "ASPEN. PN Order Review and Verification Checklist",
+        "href": "https://nutritioncare.org/wp-content/uploads/2024/12/PN-Checklist-02-Order-Review.pdf"
+      },
+      {
+        "label": "ASPEN. PN Compounding Checklist",
+        "href": "https://nutritioncare.org/wp-content/uploads/2024/12/PN-Checklist-03-Compounding.pdf"
+      },
+      {
+        "label": "ASPEN. PN Administration Checklist",
+        "href": "https://nutritioncare.org/wp-content/uploads/2024/12/PN-Checklist-04-Administration.pdf"
+      },
+      {
+        "label": "ASPEN. PN Filter Practice Tool, 2021",
+        "href": "https://nutritioncare.org/wp-content/uploads/2024/12/IV-Filters-For-PN-Factsheet.pdf"
+      },
+      {
+        "label": "FDA. Potassium Phosphates Prescribing Information, August 2024",
+        "href": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2024/212832s002lbl.pdf"
+      }
+    ],
+    "eightPriorReferencesPreserved": true,
+    "renderedReferenceCount": 13,
+    "wholeModuleMetadataVerified": false
+  },
+  "changes": {
+    "changedBankIds": [
+      "pedpn-024",
+      "pedpn-031",
+      "pedpn-033",
+      "pedpn-102",
+      "pedpn-104"
+    ],
+    "clarifiedRationales": [
+      "pedpn-024",
+      "pedpn-031",
+      "pedpn-033"
+    ],
+    "revisedAlternativeSets": [
+      "pedpn-102",
+      "pedpn-104"
+    ],
+    "newBodyHeadings": [
+      "Keep the filter in the safety path",
+      "Calculate aluminum from concentration and volume"
+    ],
+    "revisedExistingBodies": [
+      "Calculate the aluminum burden",
+      "Protect the entire administration path"
+    ],
+    "applicationAndKeyPointPretermScopeClarified": true,
+    "newAssessmentObjects": 0
+  },
+  "sourceDiscrepancies": [
+    "FDA July2025 aluminum document remains nonbinding draft/not for implementation. Sponsor/applicant recommendation distinguished from current product-label warning; exposure below4-5mcg/kg/day does not establish absence of accumulation.",
+    "Maximum label concentration represents an exposure estimate, not actual measured aluminum content. LVP25mcg/L concentration and mcg/kg/day total exposure are separate units.",
+    "New teaching concentrations are explicitly stated examples, not named-product clinical doses. FDA cysteine example uses4gAA/kg/day only for exposure arithmetic; not adopted as preterm AA recommendation.",
+    "Full compatibility primary article unavailable; no unseen-paper closure. Exact-formulation factors supported by readable checklists and FDA section2.3.",
+    "FDA phosphate section5.3 contains a potassium unit inconsistency (mEq/dL); it was not propagated or used for dose/threshold teaching.",
+    "Photoprotection recommendation kept in premature-infant scope; lipid-free PN also covered. No full monitoring/minerals/whole module closure inferred from adjacent safety checks."
+  ],
+  "coverage": {
+    "bank": 100,
+    "newlySourceVerifiedBank": 8,
+    "sourceVerifiedBank": 65,
+    "remainingBank": 35,
+    "bodies": 30,
+    "newlySourceVerifiedBodies": 5,
+    "sourceVerifiedBodies": 14,
+    "remainingBodies": 16,
+    "embeddedChecks": 6,
+    "sourceVerifiedEmbeddedChecks": 4,
+    "remainingEmbeddedChecks": 2,
+    "figures": 6,
+    "sourceVerifiedFigures": 3,
+    "remainingFigures": 3,
+    "cumulative": 5,
+    "sourceVerifiedCumulative": 2,
+    "remainingCumulative": 3,
+    "metadataVerified": false,
+    "wholeModuleVerified": false,
+    "wholeChapterVerified": false
+  },
+  "preservation": {
+    "all100BankIdsPromptsKeysCorrectTextsAnchorsPreserved": true,
+    "ninetyEightChoiceSetsPreserved": true,
+    "ninetyFiveBankObjectsUnchanged": true,
+    "all1180CumulativeObjectsUnchanged": true,
+    "allSixEmbeddedChecksUnchanged": true,
+    "twentySixOfTwentyEightExistingBodiesUnchanged": true,
+    "fiveOtherLessonObjectsUnchanged": true,
+    "fiveOtherDiagramsUnchanged": true,
+    "newBodies": 2,
+    "newAssessmentObjects": 0
+  },
+  "validation": {
+    "isolatedBuild": {
+      "command": "next build --webpack",
+      "status": "passed",
+      "staticPages": 567,
+      "candidate": "Archived exact base HEAD plus only three scoped code files, with existing node_modules symlink; unrelated working drafts/env/source PDF excluded"
+    },
+    "focusedStructuralAudit": {
+      "script": "scripts/audit-pharmacy-assessments.mjs --module pediatric-parenteral-nutrition",
+      "status": "passed",
+      "questionCount": 100,
+      "scope": "Structural quality does not itself establish clinical accuracy"
+    },
+    "independentCalculations": {
+      "pedpn-104": {
+        "dailyMicrograms": "12",
+        "kg": "2",
+        "microgramsPerKgPerDay": "6"
+      },
+      "newWorkedExample": {
+        "component1McgPerDay": "1.500",
+        "component2McgPerDay": "10.5"
+      }
+    },
+    "additionalFDASourceExercises": [
+      {
+        "case": "LVP upper estimate, FDA printed 7",
+        "exact": "2.000",
+        "expected": "2"
+      },
+      {
+        "case": "Remaining SVP budget, FDA printed 7",
+        "exact": "3",
+        "expected": "3"
+      },
+      {
+        "case": "Zinc chloride, FDA printed 9",
+        "exact": "0.045",
+        "expected": "0.045"
+      },
+      {
+        "case": "Multiple vitamins, FDA printed 9",
+        "exact": "0.0975",
+        "sourceRounded": "0.1"
+      },
+      {
+        "case": "Cysteine, FDA printed 9",
+        "exact": "0.2086956521739130434782608696",
+        "sourceRounded": "0.21"
+      }
+    ],
+    "runningAssessmentCalculationsBefore": 717,
+    "runningAssessmentCalculationsAfter": 718,
+    "runningSeparateBookSourceExercisesUnchanged": 98,
+    "browser": {
+      "status": "passed",
+      "results": [
+        {
+          "module": "pediatric-parenteral-nutrition",
+          "width": 1440,
+          "renderedBodies": 30,
+          "expandedBodyViews": 6,
+          "bankItemsCorrectWrong": 11,
+          "cumulativeRuntimeItems": 5,
+          "sourceVerifiedCumulativeInThisUnit": 0,
+          "sourceVerifiedChecksThisUnit": 2,
+          "wholeParentCumulativeClinicalSourceClosure": false,
+          "groups": 2,
+          "remediationAndSavedProgress": true
+        },
+        {
+          "module": "pediatric-parenteral-nutrition",
+          "width": 390,
+          "renderedBodies": 30,
+          "expandedBodyViews": 6,
+          "bankItemsCorrectWrong": 11,
+          "cumulativeRuntimeItems": 5,
+          "sourceVerifiedCumulativeInThisUnit": 0,
+          "sourceVerifiedChecksThisUnit": 2,
+          "wholeParentCumulativeClinicalSourceClosure": false,
+          "groups": 2,
+          "remediationAndSavedProgress": true
+        }
+      ],
+      "pageErrors": []
+    },
+    "manualRenderedReview": {
+      "status": "passed",
+      "pairs": 24,
+      "widths": [
+        1440,
+        390
+      ],
+      "viewsReviewed": [
+        "pedpn-024",
+        "pedpn-029",
+        "pedpn-030",
+        "pedpn-031",
+        "pedpn-032",
+        "pedpn-033",
+        "pedpn-034",
+        "pedpn-035",
+        "pedpn-102",
+        "pedpn-103",
+        "pedpn-104",
+        "Validate the complete formulation",
+        "Do not force a total nutrient admixture",
+        "Calculate the aluminum burden",
+        "Protect the entire administration path",
+        "Keep the filter in the safety path",
+        "Calculate aluminum from concentration and volume",
+        "pediatric-compounding-safety check",
+        "pediatric-minerals-micros check",
+        "Compounding safety figure",
+        "Source references",
+        "Safety lesson title, summary and concepts",
+        "Safety lesson key points",
+        "Safety lesson application"
+      ],
+      "allPairsManuallyViewed": true,
+      "scope": "Eleven question objects with full wrong feedback, six complete teaching bodies, two checks, one safety figure,13 references and three lesson metadata views. Correct and wrong grading/progress/remediation tested at both widths; all30 bodies matched DOM; five parent cumulative objects runtime only.",
+      "referenceScreenshotRepair": "Initial tall mobile element capture showed existing sticky navigation over heading. Recaptured at taller viewport; final heading/all13 links unobscured and manually viewed. No product code changed for capture.",
+      "sourceRecomparison": "Finished question objects, six whole bodies, both checks, four-stage figure and safety metadata compared again with reviewed FDA draft/label, ASPEN checklists/filter tool and photoprotection Executive Summary/definition. Units, all-source summation, below-range tissue loading, draft status, exact-formulation limits and preterm container/set scope retained."
+    },
+    "contentHashes": {
+      "src/data/modules/pediatricParenteralNutrition.js": "83a2a7ffbeb8c99a35945f55cbf8df08151d0eaa9008ac4e2daa43d86ab90d6e",
+      "src/data/questionBanks/pediatricParenteralNutrition.js": "9b3af6549e00e2f44128fc98148c994f16683ab5807f426cd50901a36443ec11",
+      "src/components/learn/PediatricParenteralNutritionVisual.jsx": "8f7deea157cc22dca98800e63480550a3c556f1c441d76b832cba8744632f809"
+    }
+  },
+  "release": {
+    "branch": "audit/rxprep-content-2026-09-24",
+    "commit": "pending",
+    "push": "pending",
+    "receipt": "sequential-release-pediatric-pn-compounding-safety-2026-10-01.json",
+    "mainMerge": "not performed",
+    "production": "not verified"
+  },
+  "nextAction": "Continue35remainingpediatricPNbankquestions/16bodies/twoembeddedchecks/threefigures/threecumulativeandfullmodulemetadata source reconciliation. Prioritize pediatric fluid needs and age/organ context, minerals/counterions/vitamins/trace elements and delivered-intake/growth monitoring within approved PN sources. Complete compounding safety lesson already verified; fullChapter54 source audit still pending. Preserve42ENquestions/20bodies/fourchecks/sixfigures and pending outsideENexception. Chapter1entry15andChapter11remainreviewing; do not advance whole chapter closure."
+}
