@@ -8,6 +8,7 @@ export const metadata = {
   title: "Knowledge Review: Pharmacy | NaS",
   description: "A cumulative pharmacy review combining foundational questions with patient cases across the complete NaS Learn sequence.",
   alternates: { canonical: "/learn/pharmacy/review" },
+    openGraph: { url: "/learn/pharmacy/review", siteName: "NaS Research", type: "website", images: [{ url: "/nas-logo-share-v1.png", width: 1200, height: 630, alt: "NaS Research" }] },
 };
 
 export default function PharmacyReviewPage() {

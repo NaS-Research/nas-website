@@ -356,6 +356,7 @@ export async function generateMetadata({ params }) {
     title: `${module.title} | NaS Learn`,
     description: module.description,
     alternates: { canonical: `/learn/pharmacy/modules/${module.slug}` },
+    openGraph: { url: `/learn/pharmacy/modules/${module.slug}`, siteName: "NaS Research", type: "website", images: [{ url: "/nas-logo-share-v1.png", width: 1200, height: 630, alt: "NaS Research" }] },
   };
 }
 

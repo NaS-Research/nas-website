@@ -4,7 +4,7 @@ import { researchItems } from "@/data/researchLibrary";
 import { researchProjects } from "@/data/researchProjects";
 import { pharmacyLessons } from "@/data/pharmacyLearning";
 import { pharmacyModules } from "@/data/pharmacyModules";
-import { featuredDrugs } from "@/data/drugLibrary";
+import { coreDrugs } from "@/data/drugLibrary";
 
 export const metadata = {
   title: "Sitemap | NaS Research",
@@ -47,10 +47,10 @@ const groups = [
         href: `/learn/pharmacy/modules/${module.slug}`,
         detail: `${module.submodules.length} submodules · ${module.source}`,
       })),
-      ...featuredDrugs.map((drug) => ({
+      ...coreDrugs.map((drug) => ({
         label: drug.generic.replace(/\b\w/g, (letter) => letter.toUpperCase()),
         href: `/learn/pharmacy/drugs/${drug.slug}`,
-        detail: `${drug.className} · ${drug.brand}`,
+        detail: [drug.className || drug.therapeuticClass, drug.brand].filter(Boolean).join(" · "),
       })),
       ...pharmacyLessons.map((lesson) => ({
         label: lesson.title,
@@ -108,7 +108,7 @@ export default function SitemapPage() {
             <h2>Publications</h2>
           </header>
           <div className="sitemap-links">
-            {researchItems.map((item) => (
+            {researchItems.filter((item) => !item.noindex).map((item) => (
               <Link href={`/research/${item.slug}`} key={item.slug}>
                 <span>
                   <strong>{item.title}</strong>

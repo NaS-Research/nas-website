@@ -21,13 +21,14 @@ export async function generateMetadata({ params }) {
   return {
     title: `${drug.generic.replace(/\b\w/g, (letter) => letter.toUpperCase())} | NaS Drug Library`,
     description: slug === acetaminophen.slug
-      ? "Acetaminophen: indications, formulation-specific dosage, safety, interactions, monitoring, and referenced pharmacy information."
+      ? "Acetaminophen: indications, formulation-specific dosage, safety, interactions, monitoring, and referenced drug information."
       : reviewedDrugMonographs[slug]
       ? reviewedDrugMonographs[slug].description
       : drug.brand
-      ? `Study ${drug.generic}, including common uses, mechanism, safety, monitoring, counseling, and current official medication references.`
+      ? `Study ${drug.generic}, including indications, mechanism, safety, monitoring, counseling, and current official medication references.`
       : `Review ${drug.generic} through its medication profile and current public medication label records.`,
     alternates: { canonical: `/learn/pharmacy/drugs/${drug.slug}` },
+    openGraph: { url: `/learn/pharmacy/drugs/${drug.slug}`, siteName: "NaS Research", type: "website", images: [{ url: "/nas-logo-share-v1.png", width: 1200, height: 630, alt: "NaS Research" }] },
   };
 }
 

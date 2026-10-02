@@ -9,6 +9,7 @@ export const metadata = {
   description:
     "Lessons, models, and references for understanding living systems. Explore the learning library from NaS.",
   alternates: { canonical: "/learn" },
+    openGraph: { url: "/learn", siteName: "NaS Research", type: "website", images: [{ url: "/nas-logo-share-v1.png", width: 1200, height: 630, alt: "NaS Research" }] },
 };
 
 export default function LearningPage() {

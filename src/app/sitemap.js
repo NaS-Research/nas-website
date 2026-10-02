@@ -2,29 +2,30 @@ import { researchItems } from "@/data/researchLibrary";
 import { researchProjects } from "@/data/researchProjects";
 import { pharmacyLessons } from "@/data/pharmacyLearning";
 import { pharmacyModules } from "@/data/pharmacyModules";
-import { featuredDrugs } from "@/data/drugLibrary";
+import { coreDrugs } from "@/data/drugLibrary";
 
 const baseUrl = "https://nasresearch.bio";
 
 export default function sitemap() {
   const pages = [
-    { path: "/workspace", lastModified: "2026-09-19", changeFrequency: "monthly", priority: 0.9 },
-    { path: "/research/areas", lastModified: "2026-09-19", changeFrequency: "monthly", priority: 0.8 },
-    { path: "", lastModified: "2026-09-10", changeFrequency: "weekly", priority: 1 },
-    { path: "/research", lastModified: "2026-09-10", changeFrequency: "weekly", priority: 0.9 },
-    { path: "/products", lastModified: "2026-09-19", changeFrequency: "monthly", priority: 0.8 },
-    { path: "/learn", lastModified: "2026-09-10", changeFrequency: "weekly", priority: 0.8 },
-    { path: "/learn/pharmacy/atlas", lastModified: "2026-08-24", changeFrequency: "weekly", priority: 0.85 },
-    { path: "/learn/pharmacy/drugs", lastModified: "2026-08-24", changeFrequency: "weekly", priority: 0.85 },
-    { path: "/learn/pharmacy/review", lastModified: "2026-08-24", changeFrequency: "monthly", priority: 0.8 },
-    { path: "/about", lastModified: "2026-07-20", changeFrequency: "monthly", priority: 0.7 },
-    { path: "/support", lastModified: "2026-07-20", changeFrequency: "monthly", priority: 0.6 },
-    { path: "/sitemap", lastModified: "2026-07-22", changeFrequency: "monthly", priority: 0.4 },
-    { path: "/legal/privacy", lastModified: "2026-07-21", changeFrequency: "yearly", priority: 0.3 },
-    { path: "/legal/terms", lastModified: "2026-07-21", changeFrequency: "yearly", priority: 0.3 },
+    { path: "/workspace", changeFrequency: "monthly", priority: 0.9 },
+    { path: "/research/areas", changeFrequency: "monthly", priority: 0.8 },
+    { path: "", changeFrequency: "weekly", priority: 1 },
+    { path: "/research", changeFrequency: "weekly", priority: 0.9 },
+    { path: "/products", changeFrequency: "monthly", priority: 0.8 },
+    { path: "/learn/library", changeFrequency: "weekly", priority: 0.85 },
+    { path: "/learn", changeFrequency: "weekly", priority: 0.8 },
+    { path: "/learn/pharmacy/atlas", changeFrequency: "weekly", priority: 0.85 },
+    { path: "/learn/pharmacy/drugs", changeFrequency: "weekly", priority: 0.85 },
+    { path: "/learn/pharmacy/review", changeFrequency: "monthly", priority: 0.8 },
+    { path: "/about", changeFrequency: "monthly", priority: 0.7 },
+    { path: "/support", changeFrequency: "monthly", priority: 0.6 },
+    { path: "/sitemap", changeFrequency: "monthly", priority: 0.4 },
+    { path: "/legal/privacy", changeFrequency: "yearly", priority: 0.3 },
+    { path: "/legal/terms", changeFrequency: "yearly", priority: 0.3 },
   ];
 
-  const publicationPages = researchItems.map((item) => ({
+  const publicationPages = researchItems.filter((item) => !item.noindex).map((item) => ({
     url: `${baseUrl}/research/${item.slug}`,
     lastModified: new Date(item.updatedDateISO || item.dateISO),
     changeFrequency: "monthly",
@@ -47,14 +48,12 @@ export default function sitemap() {
 
   const modulePages = pharmacyModules.map((module) => ({
     url: `${baseUrl}/learn/pharmacy/modules/${module.slug}`,
-    lastModified: new Date("2026-08-24"),
     changeFrequency: "monthly",
     priority: 0.82,
   }));
 
-  const drugPages = featuredDrugs.map((drug) => ({
+  const drugPages = coreDrugs.map((drug) => ({
     url: `${baseUrl}/learn/pharmacy/drugs/${drug.slug}`,
-    lastModified: new Date("2026-08-24"),
     changeFrequency: "monthly",
     priority: 0.75,
   }));
@@ -62,7 +61,6 @@ export default function sitemap() {
   return [
     ...pages.map((page) => ({
       url: `${baseUrl}${page.path}`,
-      lastModified: new Date(page.lastModified),
       changeFrequency: page.changeFrequency,
       priority: page.priority,
     })),

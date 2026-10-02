@@ -9,13 +9,14 @@ import { authReady } from "@/lib/auth/config.mjs";
 import PageNavigationMotion from "@/components/PageNavigationMotion";
 
 const siteDescription =
-  "NaS Research builds systems, knowledge foundations, and scientific instruments for investigating difficult questions across the life sciences.";
+  "NaS Research is a life sciences research institute in Chicago. Explore biomedical research, scientific tools, and NaS Learn, including our drug reference library.";
 
 const organizationJsonLd = {
   "@context": "https://schema.org",
   "@type": "Organization",
   "@id": "https://nasresearch.bio/#organization",
   name: "NaS Research",
+  alternateName: "NaS",
   url: "https://nasresearch.bio",
   logo: "https://nasresearch.bio/web-app-manifest-512x512.png",
   description: siteDescription,
@@ -35,7 +36,7 @@ const organizationJsonLd = {
 
 export const metadata = {
   /* ---------- Basic identity ---------- */
-  title: "NaS Research | Life Science Research",
+  title: "NaS Research | Biomedical Research & Life Science Tools",
   description: siteDescription,
   authors: [{ name: "NaS Research", url: "https://nasresearch.bio" }],
   creator: "NaS Research",
@@ -62,9 +63,6 @@ export const metadata = {
 
   /* ---------- Open Graph / social preview ---------- */
   openGraph: {
-    title: "NaS Research",
-    description: siteDescription,
-    url: "https://nasresearch.bio",
     siteName: "NaS Research",
     locale: "en_US",
     type: "website",
@@ -80,8 +78,6 @@ export const metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "NaS Research",
-    description: siteDescription,
     images: ["/nas-logo-share-v1.png"],
   },
 
@@ -107,7 +103,7 @@ export default function RootLayout({ children }) {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify([organizationJsonLd, { "@context": "https://schema.org", "@type": "WebSite", "@id": "https://nasresearch.bio/#website", url: "https://nasresearch.bio", name: "NaS Research", publisher: { "@id": "https://nasresearch.bio/#organization" } }]).replace(/</g, "\\u003c"),
+            __html: JSON.stringify([organizationJsonLd, { "@context": "https://schema.org", "@type": "WebSite", "@id": "https://nasresearch.bio/#website", url: "https://nasresearch.bio", name: "NaS Research", alternateName: "NaS", inLanguage: "en-US", publisher: { "@id": "https://nasresearch.bio/#organization" } }]).replace(/</g, "\\u003c"),
           }}
         />
         {/* Favicons & PWA assets */}

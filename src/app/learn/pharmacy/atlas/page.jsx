@@ -5,6 +5,7 @@ export const metadata = {
   title: "Human Atlas | NaS",
   description: "Explore anatomy, pharmacology, clinical reasoning, safety, and medication interactions through interactive visual models.",
   alternates: { canonical: "/learn/pharmacy/atlas" },
+    openGraph: { url: "/learn/pharmacy/atlas", siteName: "NaS Research", type: "website", images: [{ url: "/nas-logo-share-v1.png", width: 1200, height: 630, alt: "NaS Research" }] },
 };
 
 export default function PharmacyAtlasPage() {
