@@ -1,0 +1,706 @@
+{
+  "date": "2026-10-01",
+  "unit": "Pediatric PN preterm guidance and lipid administration source reconciliation",
+  "module": "pediatric-parenteral-nutrition",
+  "baseCommit": "9d639121f5db98824c080c34fab54c5bb8bf849e",
+  "status": "Scoped preterm and lipid source reconciliation verified; whole module and chapter incomplete",
+  "sourcePolicy": {
+    "suppliedBook": "PrivateRxPrep2023 primary; book methods already reconciled in prior calculation review",
+    "outsidePNReferencesAuthorized": true,
+    "authorizationQuote": "use that and complete the goal. I approve",
+    "scope": "Existing official ASPEN/USP/FDA/CDC PN references and primary linked material; no extension to EN",
+    "outsideENSourcesUsed": false,
+    "privateBookAndExtractsOutsideGit": true
+  },
+  "sources": {
+    "guideline": "https://aspenjournals.onlinelibrary.wiley.com/doi/10.1002/jpen.2550",
+    "practice": "https://nutritioncare.org/wp-content/uploads/2025/02/NICU-PN-Guidelines-Practice-Tool.pdf",
+    "corrigendum": "https://aspenjournals.onlinelibrary.wiley.com/doi/full/10.1002/jpen.2582",
+    "smof": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/207648s013lbl.pdf",
+    "lipid": "https://nutritioncare.org/text-based-resource/aspen-lipid-injectable-emulsion-safety-recommendations-part-2-neonate-and-pediatric-considerations/",
+    "photoprotection": "https://aspenjournals.onlinelibrary.wiley.com/doi/10.1002/ncp.10747",
+    "resources": "https://nutritioncare.org/clinical-resources/parenteral-nutrition/essential-resources/"
+  },
+  "sourceRead": {
+    "practiceTool": "Bothpages fulltext andrenderedtable/footnotes read. Includes all12recommendations,certainty and strength,starterPN exception androutineinsulin boundary.",
+    "lipidTool": "Bothpages fulltext/renderedproducttable,dosingtable,footnotes,safetysummary read.2022productapprovaltable nottreatedas currentFDAapprovalstatus;nodoseminimizationthresholdadopted.",
+    "smofLabel": "22-page2025label downloaded; fullrelevantpages2-7 textandrenderedread,includingTable1,footnotes,containerpreparation,admixture instructions,energy limit,rapidinfusionwarning,contraindications andPNALDwarnings.Whole22pagelabelreviewnotclaimed.",
+    "guideline": "Abstract,Purpose,populationboundaries andTable1recommendations read throughofficialarticle.Whole29pagearticle/allforestplotsnotclaimed.",
+    "corrigendum": "Completecorrectionprose read viaofficial /doi/full page; correctedfigures notadopted. Authorsexplicitlyretainrecommendationwording;multiinterventiontrialdoesnotproveisolatedAAcausality.",
+    "photoprotection": "Abstract,ExecutiveSummary andIntro read;completebagsplusinfusionsets supported,ILE-containingandILE-free PN bothcovered.Wholepaper/fullstudytable notclaimed.",
+    "sourcePDFSHA256": {
+      "practice.pdf": "9db514fd352b93804620045de38a939f94c14e59d0cbc729486b69a3a726f9ce",
+      "lipid.pdf": "59b90843d84e5f225f58a4cbc4fbbd0173714b29478b9a4a40e60d4a20806913",
+      "smof.pdf": "fb05ffac9ee712d58281bf9fb3564182c808147531db52a3703ab90625f45130"
+    }
+  },
+  "questionReview": [
+    {
+      "question": {
+        "id": "pedpn-003",
+        "question": "What does the 2023 ASPEN preterm guideline recommend about PN initiation?",
+        "choices": [
+          "Begin promptly after birth once appropriate vascular access is obtained",
+          "Delay every infant for seven days",
+          "Wait until severe weight loss occurs",
+          "Use PN only after adolescence"
+        ],
+        "answer": 0,
+        "rationale": "ASPEN recommends prompt initiation after appropriate access is obtained in its defined preterm population; this is a strong recommendation based on very low-certainty evidence.",
+        "reviewHref": "#pediatric-pn-decision-access"
+      },
+      "source": "https://nutritioncare.org/wp-content/uploads/2025/02/NICU-PN-Guidelines-Practice-Tool.pdf",
+      "locator": "page1/Q1;guideline Purpose/Abstract",
+      "review": "Prompt, every choice, key, rationale and remediation anchor individually reviewed. Context and product-specific boundaries retained; no dose recommendation extrapolated to all children.",
+      "status": "verified"
+    },
+    {
+      "question": {
+        "id": "pedpn-014",
+        "question": "What initial preterm amino-acid dose does the 2023 ASPEN guideline recommend against?",
+        "choices": [
+          "More than 3 g/kg/day",
+          "Exactly 1 g/kg/day",
+          "Exactly 2 g/kg/day",
+          "Exactly 2.5 g/kg/day"
+        ],
+        "answer": 0,
+        "rationale": "ASPEN recommends against an initial dose above 3 g/kg/day within the guideline population. The maximal target is a separate decision.",
+        "reviewHref": "#pediatric-pn-decision-access"
+      },
+      "source": "https://nutritioncare.org/wp-content/uploads/2025/02/NICU-PN-Guidelines-Practice-Tool.pdf",
+      "locator": "page1/Q2;corrigendum recommendation retained",
+      "review": "Prompt, every choice, key, rationale and remediation anchor individually reviewed. Context and product-specific boundaries retained; no dose recommendation extrapolated to all children.",
+      "status": "verified"
+    },
+    {
+      "question": {
+        "id": "pedpn-015",
+        "question": "What maximal preterm amino-acid target does the 2023 ASPEN guideline recommend not exceeding?",
+        "choices": [
+          "3.5 g/kg/day",
+          "4.5 g/kg/day",
+          "6 g/kg/day",
+          "10 g/kg/day"
+        ],
+        "answer": 0,
+        "rationale": "Within the guideline population, the maximal target is 3 to 3.5 g/kg/day. This does not authorize an initial dose above 3 g/kg/day.",
+        "reviewHref": "#pediatric-protein-lipid"
+      },
+      "source": "https://nutritioncare.org/wp-content/uploads/2025/02/NICU-PN-Guidelines-Practice-Tool.pdf",
+      "locator": "page1/Q2-3",
+      "review": "Prompt, every choice, key, rationale and remediation anchor individually reviewed. Context and product-specific boundaries retained; no dose recommendation extrapolated to all children.",
+      "status": "verified"
+    },
+    {
+      "question": {
+        "id": "pedpn-017",
+        "question": "What preterm lipid target does ASPEN recommend advancing toward when soybean-oil or multicomponent ILE is used?",
+        "choices": [
+          "3 g/kg/day",
+          "0.1 g/kg/day",
+          "6 g/kg/day",
+          "10 g/kg/day"
+        ],
+        "answer": 0,
+        "rationale": "Within the guideline population, the 2023 recommendation advances soybean-oil or multicomponent ILE daily toward 3 g/kg/day while ensuring adequate essential fatty acids.",
+        "reviewHref": "#pediatric-protein-lipid"
+      },
+      "source": "https://nutritioncare.org/wp-content/uploads/2025/02/NICU-PN-Guidelines-Practice-Tool.pdf",
+      "locator": "page1/Q4",
+      "review": "Prompt, every choice, key, rationale and remediation anchor individually reviewed. Context and product-specific boundaries retained; no dose recommendation extrapolated to all children.",
+      "status": "verified"
+    },
+    {
+      "question": {
+        "id": "pedpn-018",
+        "question": "What is the current SMOFlipid initial labeled dose from birth through 2 years?",
+        "choices": [
+          "0.5 to 1 g/kg/day",
+          "3.5 to 5 g/kg/day",
+          "0.01 g/kg/week",
+          "5 g/kg/hour"
+        ],
+        "answer": 0,
+        "rationale": "The 2025 label begins at 0.5 to 1 g/kg/day in this age group.",
+        "reviewHref": "#pediatric-protein-lipid"
+      },
+      "source": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/207648s013lbl.pdf",
+      "locator": "page6/Table1 birth-to-2years initial dose",
+      "review": "Prompt, every choice, key, rationale and remediation anchor individually reviewed. Context and product-specific boundaries retained; no dose recommendation extrapolated to all children.",
+      "status": "verified"
+    },
+    {
+      "question": {
+        "id": "pedpn-019",
+        "question": "What is the current SMOFlipid maximum labeled dose from birth through 2 years?",
+        "choices": [
+          "3 g/kg/day",
+          "1 g/kg/day",
+          "5 g/kg/day",
+          "10 g/kg/day"
+        ],
+        "answer": 0,
+        "rationale": "The labeled maximum is 3 g/kg/day and no more than 60 percent of total energy.",
+        "reviewHref": "#pediatric-protein-lipid"
+      },
+      "source": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/207648s013lbl.pdf",
+      "locator": "page6/Table1 and60percent totalenergyfootnote",
+      "review": "Prompt, every choice, key, rationale and remediation anchor individually reviewed. Context and product-specific boundaries retained; no dose recommendation extrapolated to all children.",
+      "status": "verified"
+    },
+    {
+      "question": {
+        "id": "pedpn-020",
+        "question": "What hourly SMOFlipid rate must not be exceeded in neonates and infants?",
+        "choices": [
+          "0.75 mL/kg/hour",
+          "7.5 mL/kg/hour",
+          "3 mL/kg/min",
+          "75 mL/kg/hour"
+        ],
+        "answer": 0,
+        "rationale": "The current label warns against rates above 0.75 mL/kg/hour.",
+        "reviewHref": "#pediatric-protein-lipid"
+      },
+      "source": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/207648s013lbl.pdf",
+      "locator": "page6/Table1 andpage7/section5.1",
+      "review": "Prompt, every choice, key, rationale and remediation anchor individually reviewed. Context and product-specific boundaries retained; no dose recommendation extrapolated to all children.",
+      "status": "verified"
+    },
+    {
+      "question": {
+        "id": "pedpn-021",
+        "question": "Why can chronic lipid minimization be harmful?",
+        "choices": [
+          "It can cause essential fatty-acid deficiency and impair growth",
+          "It always increases bone calcium",
+          "It prevents every liver problem",
+          "It supplies excess amino acids"
+        ],
+        "answer": 0,
+        "rationale": "Adequate essential fatty-acid provision is necessary for growth and development.",
+        "reviewHref": "#pediatric-protein-lipid"
+      },
+      "source": "https://nutritioncare.org/text-based-resource/aspen-lipid-injectable-emulsion-safety-recommendations-part-2-neonate-and-pediatric-considerations/",
+      "locator": "page2/Prescribing andMonitoring;practicepage1/Q4",
+      "review": "Prompt, every choice, key, rationale and remediation anchor individually reviewed. Context and product-specific boundaries retained; no dose recommendation extrapolated to all children.",
+      "status": "verified"
+    },
+    {
+      "question": {
+        "id": "pedpn-022",
+        "question": "Which statement about lipid composition is most defensible?",
+        "choices": [
+          "Product choice is clinical and product specific; no one composition has proven superior for preterm growth",
+          "Every emulsion is interchangeable",
+          "Fish oil is always mandatory",
+          "Soybean oil is always contraindicated"
+        ],
+        "answer": 0,
+        "rationale": "The 2023 guideline found no growth benefit establishing one ILE composition as preferable in its defined preterm population. Product-specific indications and safety still matter.",
+        "reviewHref": "#pediatric-protein-lipid"
+      },
+      "source": "https://nutritioncare.org/wp-content/uploads/2025/02/NICU-PN-Guidelines-Practice-Tool.pdf",
+      "locator": "page1/Q5;guideline population limits",
+      "review": "Prompt, every choice, key, rationale and remediation anchor individually reviewed. Context and product-specific boundaries retained; no dose recommendation extrapolated to all children.",
+      "status": "verified"
+    },
+    {
+      "question": {
+        "id": "pedpn-030",
+        "question": "Why may a total nutrient admixture be infeasible in a neonate?",
+        "choices": [
+          "High calcium and phosphorus needs can conflict with emulsion compatibility and stability",
+          "Neonates cannot receive lipid",
+          "Dextrose cannot mix with amino acids",
+          "Every neonatal line is peripheral"
+        ],
+        "answer": 0,
+        "rationale": "Mineral needs and small volumes often constrain TNA stability.",
+        "reviewHref": "#pediatric-compounding-safety"
+      },
+      "source": "https://nutritioncare.org/text-based-resource/aspen-lipid-injectable-emulsion-safety-recommendations-part-2-neonate-and-pediatric-considerations/",
+      "locator": "page2/Preparation;SMOFpage2/Yconnector",
+      "review": "Prompt, every choice, key, rationale and remediation anchor individually reviewed. Context and product-specific boundaries retained; no dose recommendation extrapolated to all children.",
+      "status": "verified"
+    },
+    {
+      "question": {
+        "id": "pedpn-032",
+        "question": "Why is neonatal PN photoprotection recommended?",
+        "choices": [
+          "It reduces light-generated free radicals and lipid peroxides",
+          "It increases glucose concentration",
+          "It removes aluminum",
+          "It changes central access to peripheral"
+        ],
+        "answer": 0,
+        "rationale": "ASPEN recommends photoprotection to reduce oxidative degradation products.",
+        "reviewHref": "#pediatric-compounding-safety"
+      },
+      "source": "https://aspenjournals.onlinelibrary.wiley.com/doi/10.1002/ncp.10747",
+      "locator": "Executive Summary;lipidpage2/Administration",
+      "review": "Prompt, every choice, key, rationale and remediation anchor individually reviewed. Context and product-specific boundaries retained; no dose recommendation extrapolated to all children.",
+      "status": "verified"
+    },
+    {
+      "question": {
+        "id": "pedpn-100",
+        "question": "A preterm infant is ordered amino acids at 3.6 g/kg/day on the first day of life. What is the most defensible next action?",
+        "choices": [
+          "Reduce the initial dose to no more than 3 g/kg/day and reassess the complete plan",
+          "Continue unchanged without reassessment",
+          "Apply an adult default without calculation",
+          "Wait until discharge to review the order"
+        ],
+        "answer": 0,
+        "rationale": "For an infant within the 2023 guideline population, 3.6 g/kg/day exceeds the initial 3 g/kg/day limit. Reassess the prescription; the later maximal target is a separate limit.",
+        "reviewHref": "#pediatric-pn-decision-access"
+      },
+      "source": "https://nutritioncare.org/wp-content/uploads/2025/02/NICU-PN-Guidelines-Practice-Tool.pdf",
+      "locator": "page1/Q2;3.6>3 initial limit;definedpopulation",
+      "review": "Prompt, every choice, key, rationale and remediation anchor individually reviewed. Context and product-specific boundaries retained; no dose recommendation extrapolated to all children.",
+      "status": "verified"
+    },
+    {
+      "question": {
+        "id": "pedpn-101",
+        "question": "A neonatal lipid infusion is programmed at 1.2 mL/kg/hour using current SMOFlipid. What is the most defensible next action?",
+        "choices": [
+          "Stop and correct the rate because it exceeds the labeled 0.75 mL/kg/hour maximum",
+          "Continue unchanged without reassessment",
+          "Apply an adult default without calculation",
+          "Wait until discharge to review the order"
+        ],
+        "answer": 0,
+        "rationale": "Rapid lipid infusion has caused severe neonatal and infant decompensation.",
+        "reviewHref": "#pediatric-protein-lipid"
+      },
+      "source": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/207648s013lbl.pdf",
+      "locator": "page6/Table1 andpage7/section5.1;1.2>0.75rate",
+      "review": "Prompt, every choice, key, rationale and remediation anchor individually reviewed. Context and product-specific boundaries retained; no dose recommendation extrapolated to all children.",
+      "status": "verified"
+    },
+    {
+      "question": {
+        "id": "pedpn-103",
+        "question": "A preterm neonate receives PN from a bag and tubing exposed to ambient light during a 24-hour infusion. What is the most defensible next action?",
+        "choices": [
+          "Implement validated photoprotection across the container and administration set",
+          "Continue unchanged without reassessment",
+          "Apply an adult default without calculation",
+          "Wait until discharge to review the order"
+        ],
+        "answer": 0,
+        "rationale": "ASPEN recommends complete PN light protection for premature infants from compounding through infusion, including the container and infusion set. Lipid-free PN can also form peroxides.",
+        "reviewHref": "#pediatric-compounding-safety"
+      },
+      "source": "https://aspenjournals.onlinelibrary.wiley.com/doi/10.1002/ncp.10747",
+      "locator": "Executive Summary/completebagandinfusionset protection;lipidpage2/Administration",
+      "review": "Prompt, every choice, key, rationale and remediation anchor individually reviewed. Context and product-specific boundaries retained; no dose recommendation extrapolated to all children.",
+      "status": "verified"
+    }
+  ],
+  "verifiedBankIds": [
+    "pedpn-003",
+    "pedpn-008",
+    "pedpn-009",
+    "pedpn-010",
+    "pedpn-014",
+    "pedpn-015",
+    "pedpn-017",
+    "pedpn-018",
+    "pedpn-019",
+    "pedpn-020",
+    "pedpn-021",
+    "pedpn-022",
+    "pedpn-030",
+    "pedpn-032",
+    "pedpn-060",
+    "pedpn-061",
+    "pedpn-062",
+    "pedpn-063",
+    "pedpn-064",
+    "pedpn-065",
+    "pedpn-066",
+    "pedpn-067",
+    "pedpn-068",
+    "pedpn-069",
+    "pedpn-070",
+    "pedpn-071",
+    "pedpn-072",
+    "pedpn-073",
+    "pedpn-074",
+    "pedpn-075",
+    "pedpn-076",
+    "pedpn-077",
+    "pedpn-078",
+    "pedpn-079",
+    "pedpn-080",
+    "pedpn-081",
+    "pedpn-082",
+    "pedpn-083",
+    "pedpn-084",
+    "pedpn-085",
+    "pedpn-086",
+    "pedpn-087",
+    "pedpn-088",
+    "pedpn-089",
+    "pedpn-090",
+    "pedpn-091",
+    "pedpn-092",
+    "pedpn-093",
+    "pedpn-094",
+    "pedpn-095",
+    "pedpn-096",
+    "pedpn-097",
+    "pedpn-098",
+    "pedpn-099",
+    "pedpn-100",
+    "pedpn-101",
+    "pedpn-103"
+  ],
+  "pendingQuestionIds": [
+    "pedpn-001",
+    "pedpn-002",
+    "pedpn-004",
+    "pedpn-005",
+    "pedpn-006",
+    "pedpn-007",
+    "pedpn-011",
+    "pedpn-012",
+    "pedpn-013",
+    "pedpn-016",
+    "pedpn-023",
+    "pedpn-024",
+    "pedpn-025",
+    "pedpn-026",
+    "pedpn-027",
+    "pedpn-028",
+    "pedpn-029",
+    "pedpn-031",
+    "pedpn-033",
+    "pedpn-034",
+    "pedpn-035",
+    "pedpn-036",
+    "pedpn-037",
+    "pedpn-038",
+    "pedpn-039",
+    "pedpn-040",
+    "pedpn-050",
+    "pedpn-051",
+    "pedpn-052",
+    "pedpn-053",
+    "pedpn-054",
+    "pedpn-055",
+    "pedpn-056",
+    "pedpn-057",
+    "pedpn-058",
+    "pedpn-059",
+    "pedpn-102",
+    "pedpn-104",
+    "pedpn-105",
+    "pedpn-106",
+    "pedpn-107",
+    "pedpn-108",
+    "pedpn-109"
+  ],
+  "teachingReview": [
+    {
+      "lesson": "pediatric-pn-decision-access",
+      "heading": "Initiate preterm support promptly when appropriate",
+      "body": "The 2023 ASPEN preterm guideline recommends prompt PN initiation after birth once appropriate vascular access is obtained. The evidence quality for timing is limited, so the prescription still accounts for clinical stability, substrate tolerance, available access, and the planned introduction of enteral feeding.",
+      "sourceUrls": [
+        "https://aspenjournals.onlinelibrary.wiley.com/doi/10.1002/jpen.2550",
+        "https://nutritioncare.org/wp-content/uploads/2025/02/NICU-PN-Guidelines-Practice-Tool.pdf"
+      ],
+      "status": "verified"
+    },
+    {
+      "lesson": "pediatric-pn-decision-access",
+      "heading": "Keep the preterm guideline in scope",
+      "body": "The 2023 ASPEN guideline addresses preterm infants without congenital disease requiring surgery and without established PN-associated liver disease. It anticipates progression to full enteral feeding, with necrotizing enterocolitis possible later. Most questions have low or very low certainty even when recommendations are strong. Apply its limits within that population and reassess the individual infant; do not extrapolate them to every pediatric diagnosis.",
+      "sourceUrls": [
+        "https://aspenjournals.onlinelibrary.wiley.com/doi/10.1002/jpen.2550"
+      ],
+      "status": "verified"
+    },
+    {
+      "lesson": "pediatric-protein-lipid",
+      "heading": "Advance lipid deliberately",
+      "body": "ASPEN recommends daily advancement to 3 g/kg/day for preterm infants when soybean-oil or multicomponent lipid is used, while attending to composition and essential fatty-acid provision. Current SMOFlipid labeling begins at 0.5 to 1 g/kg/day from birth through 2 years and does not exceed 3 g/kg/day. Age, product, total energy, clearance, and clinical status govern the actual order.",
+      "sourceUrls": [
+        "https://nutritioncare.org/wp-content/uploads/2025/02/NICU-PN-Guidelines-Practice-Tool.pdf",
+        "https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/207648s013lbl.pdf"
+      ],
+      "status": "verified"
+    },
+    {
+      "lesson": "pediatric-protein-lipid",
+      "heading": "Check all SMOFlipid dose limits",
+      "body": "For SMOFlipid, check both the daily dose and the hourly rate. The 2025 label starts at 0.5 to 1 g/kg/day from birth to 2 years, 1 to 2 g/kg/day at ages 2 to under 12, and 1 g/kg/day at ages 12 to 17. The respective daily maxima are 3, 3, and 2.5 g/kg, and lipid must supply no more than 60 percent of total energy. The pediatric maximum rate is 0.75 mL/kg/hour; it is a ceiling, not a starting rate. Measure baseline triglycerides, account for every energy source, and adjust for clearance and tolerance.",
+      "sourceUrls": [
+        "https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/207648s013lbl.pdf"
+      ],
+      "status": "verified"
+    },
+    {
+      "lesson": "pediatric-protein-lipid",
+      "heading": "Protect against rapid infusion",
+      "body": "Rapid lipid infusion has caused severe decompensation in neonates and infants. For current SMOFlipid labeling, the hourly rate must not exceed 0.75 mL/kg/hour. ASPEN recommends a 1.2 micron filter and neonatal photoprotection. Separate infusion requires safeguards against pump programming and line-connection errors.",
+      "sourceUrls": [
+        "https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/207648s013lbl.pdf",
+        "https://nutritioncare.org/text-based-resource/aspen-lipid-injectable-emulsion-safety-recommendations-part-2-neonate-and-pediatric-considerations/"
+      ],
+      "status": "verified"
+    },
+    {
+      "lesson": "pediatric-compounding-safety",
+      "heading": "Do not force a total nutrient admixture",
+      "body": "ASPEN notes that a total nutrient admixture is often not feasible for pediatric patients because high calcium and phosphorus requirements create compatibility and stability constraints. Lipid is commonly infused separately or co-administered by a validated Y-site process. Product-specific compatibility remains required.",
+      "sourceUrls": [
+        "https://nutritioncare.org/text-based-resource/aspen-lipid-injectable-emulsion-safety-recommendations-part-2-neonate-and-pediatric-considerations/",
+        "https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/207648s013lbl.pdf"
+      ],
+      "status": "verified"
+    }
+  ],
+  "partialBodyReview": {
+    "lesson": "pediatric-protein-lipid",
+    "heading": "Use current preterm amino-acid limits",
+    "body": "The 2023 ASPEN preterm guideline recommends against an initial amino-acid dose above 3 g/kg/day. For the maximal target, it recommends at least 3 g/kg/day without exceeding 3.5 g/kg/day. The guideline does not establish a benefit from routinely increasing the maximal target to 4 g/kg/day. Other pediatric age groups require individualized dosing based on growth, illness, losses, organ support, and the selected product.",
+    "change": "Removedunsupportedclaimaboutoldclassroompractice;stateslackofestablishedroutine4g/kg/daybenefit. Preterm initial/maximal limits source-verified. Otherpediatricage/disease individualizationclause remains forlater product/disease-sourceaudit;wholebody notclosed.",
+    "wholeBodyVerified": false
+  },
+  "embeddedReview": {
+    "lesson": "pediatric-protein-lipid",
+    "question": {
+      "question": "Which initial amino-acid order conflicts with the 2023 ASPEN preterm guideline?",
+      "choices": [
+        "3.5 g/kg/day at initiation",
+        "2 g/kg/day at initiation",
+        "2.5 g/kg/day at initiation",
+        "3 g/kg/day at initiation"
+      ],
+      "answer": 0,
+      "rationale": "ASPEN recommends against an initial preterm amino-acid dose above 3 g/kg/day.",
+      "reviewHref": "#pediatric-protein-lipid"
+    },
+    "source": "https://nutritioncare.org/wp-content/uploads/2025/02/NICU-PN-Guidelines-Practice-Tool.pdf",
+    "locator": "page1/Q2;initial3.5>3limit;otherthreealternativesnotabovelimit",
+    "unchanged": true,
+    "status": "verified without change"
+  },
+  "figureReview": {
+    "type": "peds-pn-macros",
+    "file": "src/components/learn/PediatricParenteralNutritionVisual.jsx",
+    "title": "Protein and lipid, safely advanced.",
+    "steps": [
+      [
+        "AA",
+        "Protein",
+        "age and evidence based g/kg"
+      ],
+      [
+        "ILE",
+        "Lipid",
+        "product and age specific dose"
+      ],
+      [
+        "Rate",
+        "Protect",
+        "avoid rapid delivery"
+      ],
+      [
+        "Growth",
+        "Follow",
+        "actual intake and response"
+      ]
+    ],
+    "sourceUrls": [
+      "https://nutritioncare.org/wp-content/uploads/2025/02/NICU-PN-Guidelines-Practice-Tool.pdf",
+      "https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/207648s013lbl.pdf",
+      "https://nutritioncare.org/text-based-resource/aspen-lipid-injectable-emulsion-safety-recommendations-part-2-neonate-and-pediatric-considerations/"
+    ],
+    "unchanged": true,
+    "status": "verified without change"
+  },
+  "referenceRepair": {
+    "oldBrokenHref": "https://nutritioncare.org/wp-content/uploads/2024/12/Appropriate-Dosing-for-PN.pdf",
+    "newHref": "https://nutritioncare.org/clinical-resources/parenteral-nutrition/essential-resources/",
+    "newPublicReferences": [
+      "https://nutritioncare.org/wp-content/uploads/2025/02/NICU-PN-Guidelines-Practice-Tool.pdf",
+      "https://doi.org/10.1002/jpen.2582",
+      "https://aspenjournals.onlinelibrary.wiley.com/doi/10.1002/ncp.10747"
+    ],
+    "dosingDocumentMembersOnlyAndNotRead": true,
+    "onlyReferenceSubsetReviewed": true
+  },
+  "changes": {
+    "newBodies": 2,
+    "existingBodyTextChanged": 2,
+    "sevenRationalesClarified": [
+      "pedpn-003",
+      "pedpn-014",
+      "pedpn-015",
+      "pedpn-017",
+      "pedpn-022",
+      "pedpn-100",
+      "pedpn-103"
+    ],
+    "onePhotoprotectionStemClarifiedWithPretermContext": "pedpn-103",
+    "ninetyNineOriginalQuestionPromptsPreserved": true,
+    "allOriginalChoicesKeysCorrectTextsAnchorsPreserved": true,
+    "all1180CumulativeObjectsUnchanged": true,
+    "newAssessmentObjects": 0
+  },
+  "sourceDiscrepancies": {
+    "guidelineScope": "Preterm guideline excludescongenitaldiseaserequiringsurgery andestablishedPNALD. Mostcertainty loworverylowdespitestrongrecommendations. Routineuseoutsidepopulationnotimplied.",
+    "initialVersusMaximal": "InitialAAabove3conflictswithguideline;maximaltarget3-3.5isaseparatequestion.",
+    "causality": "2024corrigendum removes amultiple-interventionstudyfrompooledBPD/sepsisanalyses;AAcannotisolatedlybeidentifiedas causeofharm fromthatstudy. Recommendationremainsunchanged.",
+    "lipidLimits": "Dailyg/kg,60percentenergyceiling,initialrate andmaximumhourlyrateareseparateconstraints.0.75isnotastartingrate.",
+    "historicalFactsheet": "2022Clinolipidapprovaltable isdated; currentproductindicationsstillrequirecurrentlabels.NoClinolipidclaimclosedthisunit.",
+    "maintenanceFluid": "TenHollidaySegaritems remainpending;bookPDF158onlysupplies>20kgbranch.",
+    "otherClinicalGaps": "AArenal/hepaticindividualization,completefluidlossledger,minerals,traceelements,aluminum,othercompounding/monitoringclaims,fullmetadata remainpending."
+  },
+  "coverage": {
+    "bank": 100,
+    "newlySourceVerifiedBank": 14,
+    "sourceVerifiedBank": 57,
+    "remainingBank": 43,
+    "bodies": 28,
+    "newlySourceVerifiedBodies": 6,
+    "sourceVerifiedBodies": 9,
+    "remainingBodies": 19,
+    "embeddedChecks": 6,
+    "sourceVerifiedEmbeddedChecks": 2,
+    "remainingEmbeddedChecks": 4,
+    "figures": 6,
+    "sourceVerifiedFigures": 2,
+    "remainingFigures": 4,
+    "cumulative": 5,
+    "sourceVerifiedCumulative": 2,
+    "remainingCumulative": 3,
+    "metadataVerified": false,
+    "wholeModuleVerified": false,
+    "wholeChapterVerified": false
+  },
+  "preservation": {
+    "all100BankIdsKeysChoicesCorrectTextsAnchorsPreserved": true,
+    "ninetyThreeOtherBankObjectsUnchanged": true,
+    "all1180CumulativeObjectsUnchanged": true,
+    "allSixEmbeddedCheckObjectsAndFigureFilesUnchanged": true,
+    "twentyFourOfTwentySixExistingBodiesUnchanged": true,
+    "twoExistingBodyChangesExplicitlyReviewed": true,
+    "allOtherModuleAndLessonMetadataExceptReferencesPreserved": true,
+    "newBodies": 2,
+    "newAssessmentObjects": 0
+  },
+  "validation": {
+    "focusedStructural": {
+      "modules": 1,
+      "questions": 100,
+      "hardErrors": [],
+      "sourceGaps": [],
+      "sizeAdvisories": [],
+      "thinLessons": [],
+      "weakestModules": [
+        {
+          "module": "pediatric-parenteral-nutrition",
+          "lessons": 6,
+          "questions": 100,
+          "minimumLessonCoverage": 8
+        }
+      ]
+    },
+    "isolatedBuild": "FinalisolatedHEAD-derivednextbuild--webpackproductionbuildpassed567staticpages",
+    "browser": {
+      "status": "passed",
+      "results": [
+        {
+          "module": "pediatric-parenteral-nutrition",
+          "width": 1440,
+          "renderedBodies": 28,
+          "expandedBodyViews": 6,
+          "bankItemsCorrectWrong": 14,
+          "cumulativeRuntimeItems": 5,
+          "sourceVerifiedCumulativeInThisUnit": 0,
+          "sourceVerifiedChecksThisUnit": 1,
+          "wholeParentCumulativeClinicalSourceClosure": false,
+          "groups": 2,
+          "remediationAndSavedProgress": true
+        },
+        {
+          "module": "pediatric-parenteral-nutrition",
+          "width": 390,
+          "renderedBodies": 28,
+          "expandedBodyViews": 6,
+          "bankItemsCorrectWrong": 14,
+          "cumulativeRuntimeItems": 5,
+          "sourceVerifiedCumulativeInThisUnit": 0,
+          "sourceVerifiedChecksThisUnit": 1,
+          "wholeParentCumulativeClinicalSourceClosure": false,
+          "groups": 2,
+          "remediationAndSavedProgress": true
+        }
+      ],
+      "pageErrors": []
+    },
+    "manualRenderedReview": {
+      "status": "passed",
+      "pairs": 24,
+      "widths": [
+        1440,
+        390
+      ],
+      "viewsReviewed": [
+        "pedpn-003",
+        "pedpn-014",
+        "pedpn-015",
+        "pedpn-017",
+        "pedpn-018",
+        "pedpn-019",
+        "pedpn-020",
+        "pedpn-021",
+        "pedpn-022",
+        "pedpn-030",
+        "pedpn-032",
+        "pedpn-100",
+        "pedpn-101",
+        "pedpn-103",
+        "Initiate preterm support promptly when appropriate",
+        "Keep the preterm guideline in scope",
+        "Advance lipid deliberately",
+        "Check all SMOFlipid dose limits",
+        "Protect against rapid infusion",
+        "Do not force a total nutrient admixture",
+        "pediatric-protein-lipid check",
+        "Macronutrient figure",
+        "Preterm amino-acid teaching change (wholebody pending)",
+        "Source references"
+      ],
+      "scope": "All14 source-reviewed questions, six fullyverified teaching bodies, the partiallyverified AAteaching change, unchangedproteinembeddedcheck, macronutrientfigure andeightreferences manuallyviewed atdesktop/mobile sizes. Correct/wrongfeedback,internalremediationlinks,savedprogress and320pxoverflowpassed. All28bodystrings matchedDOM; fiveparentcumulativeitems runtimeonly.",
+      "sourceRecomparison": "Finished14 questionobjects, six fullbodies, changedAApretermclauses, unchangedcheck andfigure recheckedagainstASPEN practiceToolpage1/Q1-5/fullguidelinepopulation,2024corrigendumrecommendationwording,lipidToolpage2andFDA2025labelpages2-7/Table1footnotes,photoprotectionExecutiveSummary. InitialversusmaximalAA,separateenergy/rateceilings,fullbag/setprotection andILE-freePN preserved."
+    },
+    "contentHashes": {
+      "src/data/modules/pediatricParenteralNutrition.js": "e01374764d0c12a9aa54d414131f9f368bbf0428c9c410fbd74bb8eb4bf5290a",
+      "src/data/questionBanks/pediatricParenteralNutrition.js": "af73ffd007109c623657bc7ea89c4069105936138e2a8c5e25eb2dcb0d4aaa46"
+    },
+    "twoComparisonChecks": [
+      "3.6g/kg/day>3g/kg/day initial preterm limit",
+      "1.2mL/kg/hour>0.75mL/kg/hour SMOFlipid rate ceiling"
+    ],
+    "runningAssessmentCalculationsUnchanged": 717,
+    "runningSeparateSourceExercisesUnchanged": 98,
+    "structuralScopeNote": "Focused100-question structuralcheckpassed. Source/runtimecoverage remains57bank,9/28bodies,2/6checks,2/6figures,2/5cumulative;metadataandwholemodulepending. Initialnonexistentcheckscriptinvocationresolvedbyactualscripts/audit-pharmacy-assessments.mjs;allfinalchecksverified."
+  },
+  "release": {
+    "branch": "audit/rxprep-content-2026-09-24",
+    "commit": "pending",
+    "push": "pending",
+    "mainMerge": "not performed",
+    "production": "not verified"
+  },
+  "nextAction": "Continue43remainingpediatricPNbankquestions/19bodies/fourchecks/fourfigures/threecumulativeandfullmetadata source reconciliation. Prioritize fluid needs, calcium/phosphate/counterions,vitamins/traceelements,aluminum,compounding anddelivered-intake/monitoring withinapprovedPNsources;fullChapter54sourceauditstillpending. Preserve42ENquestions/20bodies/fourchecks/sixfigures andpendingoutsideENexception. Chapter1entry15andChapter11remainreviewing;do notadvancewholechapterclosure."
+}
