@@ -1,0 +1,652 @@
+{
+  "recordedAt": "2026-10-02T04:58:22.019213+00:00",
+  "baseCommit": "1b266338839bb5b85b45e855d9f066fd49953155",
+  "unit": "Pediatric PN indications,vascular access and formulation suitability",
+  "sourcePolicy": "User-approved PN source exception;no outside-source EN content introduced.",
+  "sources": [
+    {
+      "title": "When Is Parenteral Nutrition Appropriate?",
+      "url": "https://aspenjournals.onlinelibrary.wiley.com/doi/10.1177/0148607117695251",
+      "date": "2017-02-17",
+      "kind": "ASPEN Board-approved consensus recommendations",
+      "completeSectionsRead": [
+        "Question1:all recommendations,full adult rationale,neonatal considerations,pediatric considerations",
+        "Question2:all recommendations,full adult rationale,neonatal and pediatric considerations",
+        "Question5:5A-5E and full rationale through tip-position confirmation",
+        "Question6:6A-6D and full adult/neonatal/pediatric rationale"
+      ],
+      "completeTablesTextAndVisualReviewed": [
+        "1.1:13rows,all3columns,allrowspans and reference markers",
+        "1.2:all3types,all3columns and reference marker",
+        "5.1:both full columns,all11infection and10thrombosis factors,CVADfootnote",
+        "5.2:all9devices,all5columns and abbreviations footnote",
+        "6.1:all4rows,bothcolumns and PNfootnote"
+      ],
+      "visualMethod": "Publisher HTML tables were horizontally clipped (Table5.2 actualwidth6521px in690px wrapper). Exact DOM outerHTML and rendered innerText captured through the source browser. Private CSS reflow preserved cells,rowspans,headers,footnotes and source text. Every reflowed whole-table image manually viewed; normalized rendered text equality with the original publisher DOM asserted. These are private legible source-table renders, not screenshots of a downloaded publisher PDF.",
+      "privateCaptureSHA256": {
+        "source-sections.json": "eca4a1207bb43ca99f70ee8745c6b26bcca54544db7eb49a09090a3039f11946",
+        "source-tables.json": "f25585c2deaa2b6b4e8b029f2d1ed83dac454973cab2595e1763f848144eca16"
+      },
+      "sourceRenderManifest": [
+        {
+          "id": "table2-0148607117695251",
+          "capture": "Original publisher DOM table HTML; private CSS reflow only",
+          "textExactlyMatchesPublisher": true,
+          "png": "source-table-0.png",
+          "rows": 13
+        },
+        {
+          "id": "table3-0148607117695251",
+          "capture": "Original publisher DOM table HTML; private CSS reflow only",
+          "textExactlyMatchesPublisher": true,
+          "png": "source-table-1.png",
+          "rows": 3
+        },
+        {
+          "id": "table7-0148607117695251",
+          "capture": "Original publisher DOM table HTML; private CSS reflow only",
+          "textExactlyMatchesPublisher": true,
+          "png": "source-table-2.png",
+          "rows": 1
+        },
+        {
+          "id": "table8-0148607117695251",
+          "capture": "Original publisher DOM table HTML; private CSS reflow only",
+          "textExactlyMatchesPublisher": true,
+          "png": "source-table-3.png",
+          "rows": 9
+        },
+        {
+          "id": "table9-0148607117695251",
+          "capture": "Original publisher DOM table HTML; private CSS reflow only",
+          "textExactlyMatchesPublisher": true,
+          "png": "source-table-4.png",
+          "rows": 4
+        }
+      ],
+      "bounds": "Whole54page article/fullreferencepapers not claimed reviewed. Publisher PDF not downloaded. One public HTML download returned403; source browser text accessible.",
+      "qualifications": [
+        "Medical diagnosis alone does not establish indication. Use assessed gastrointestinal function,nutrient/fluid adequacy,growth and safe enteral access.",
+        "2017 tables mix adult and pediatric advice. No adult bowel-length or fistula-output cutoff used as a pediatric rule.",
+        "No numeric catheter dwell-time,peripheral fluid allowance,macronutrient concentration maximum,osmolarity cutoff or fixed PN start/weaning schedule newly adopted.",
+        "No universal pediatric PIVrotation rule,adult femoral-site rule,portinfection guarantee or dedicated-lumen benefit adopted.",
+        "PeripheralPN evidence limited and individualized. Midline remains noncentral; PN suitability cannot be inferred from device name."
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "pedpn-002",
+      "before": {
+        "id": "pedpn-002",
+        "question": "Which condition is a common pediatric indication for PN when enteral needs cannot be met?",
+        "choices": [
+          "Necrotizing enterocolitis",
+          "Uncomplicated seasonal rhinitis",
+          "Stable myopia",
+          "A healed paper cut"
+        ],
+        "answer": 0,
+        "rationale": "Necrotizing enterocolitis can make enteral feeding unsafe or inadequate.",
+        "reviewHref": "#pediatric-pn-decision-access"
+      },
+      "after": {
+        "id": "pedpn-002",
+        "question": "Which child has the clearest indication for PN after nutrition and gastrointestinal assessment?",
+        "choices": [
+          "A child with necrotizing enterocolitis whose safe enteral intake cannot meet assessed needs",
+          "A child with short bowel syndrome who meets assessed nutrient, growth, and hydration goals through tolerated enteral feeding",
+          "A child receiving cancer treatment who tolerates enough oral nutrition to meet assessed needs",
+          "A child with kidney disease who meets nutrient needs through oral and enteral intake"
+        ],
+        "answer": 0,
+        "rationale": "PN is indicated when safe oral or enteral delivery cannot meet the child's assessed needs. Necrotizing enterocolitis can create that situation; short bowel syndrome, cancer treatment, or kidney disease alone does not establish a PN indication.",
+        "reviewHref": "#pediatric-pn-decision-access"
+      },
+      "stemVerified": true,
+      "oneBestAnswerVerified": true,
+      "answerKeyAndReviewAnchorPreserved": true,
+      "rationaleVerified": true,
+      "choices": [
+        {
+          "text": "A child with necrotizing enterocolitis whose safe enteral intake cannot meet assessed needs",
+          "keyed": true,
+          "review": "Safe enteral intake cannot meet assessed needs:PNindication supported by1C/1D and NEC listed in Table1.1."
+        },
+        {
+          "text": "A child with short bowel syndrome who meets assessed nutrient, growth, and hydration goals through tolerated enteral feeding",
+          "keyed": false,
+          "review": "Shortbowel diagnosis alone does not establish PN need when assessed nutrient,growth,hydration goals met:Question1pediatric intestinalfunction/autonomy."
+        },
+        {
+          "text": "A child receiving cancer treatment who tolerates enough oral nutrition to meet assessed needs",
+          "keyed": false,
+          "review": "Cancer treatment alone without inadequate oral/ENintake does not establish need:Question1final pediatric paragraph."
+        },
+        {
+          "text": "A child with kidney disease who meets nutrient needs through oral and enteral intake",
+          "keyed": false,
+          "review": "Kidney disease alone with sufficient enteral intake does not establish need:Question1final pediatric paragraph."
+        }
+      ]
+    },
+    {
+      "id": "pedpn-004",
+      "before": {
+        "id": "pedpn-004",
+        "question": "What is the strongest reason to choose central rather than peripheral access?",
+        "choices": [
+          "The required concentration and duration cannot be delivered safely through peripheral veins",
+          "Central access prevents every infection",
+          "Peripheral access cannot deliver any fluid",
+          "Central access removes metabolic limits"
+        ],
+        "answer": 0,
+        "rationale": "Central blood flow permits more concentrated therapy, but metabolic and catheter risks remain.",
+        "reviewHref": "#pediatric-pn-decision-access"
+      },
+      "after": {
+        "id": "pedpn-004",
+        "question": "What most strongly supports choosing central rather than peripheral access for pediatric PN?",
+        "choices": [
+          "The required formulation and expected duration cannot be delivered safely through peripheral veins",
+          "The peripheral cannula is newly placed, so the full concentrated formulation can be used without review",
+          "A midline is available, so peripheral osmolarity limits no longer apply",
+          "Central access would allow the prescribed dextrose dose to exceed the child's metabolic tolerance"
+        ],
+        "answer": 0,
+        "rationale": "Choose access that can safely deliver the required formulation for the expected duration. A new peripheral cannula or noncentral midline does not remove osmolarity limits, and central access does not remove metabolic or catheter risks.",
+        "reviewHref": "#pediatric-pn-decision-access"
+      },
+      "stemVerified": true,
+      "oneBestAnswerVerified": true,
+      "answerKeyAndReviewAnchorPreserved": true,
+      "rationaleVerified": true,
+      "choices": [
+        {
+          "text": "The required formulation and expected duration cannot be delivered safely through peripheral veins",
+          "keyed": true,
+          "review": "Required concentration/formulation and duration exceeding safe peripheral delivery favor appropriate central access:Question5A,Question6."
+        },
+        {
+          "text": "The peripheral cannula is newly placed, so the full concentrated formulation can be used without review",
+          "keyed": false,
+          "review": "New peripheral cannula does not remove formulation osmolarity and vein limits:Question6B/C."
+        },
+        {
+          "text": "A midline is available, so peripheral osmolarity limits no longer apply",
+          "keyed": false,
+          "review": "Midline does not reach central veins and retains peripheral osmolarity limits:Table5.2midline row."
+        },
+        {
+          "text": "Central access would allow the prescribed dextrose dose to exceed the child's metabolic tolerance",
+          "keyed": false,
+          "review": "Central route does not remove metabolic tolerance/overfeeding risks:Question1overfeeding rationale and previously verified monitoring guidance."
+        }
+      ]
+    },
+    {
+      "id": "pedpn-005",
+      "before": {
+        "id": "pedpn-005",
+        "question": "Which risk remains important with a pediatric PICC?",
+        "choices": [
+          "Infection, thrombosis, malposition, and loss of access",
+          "Guaranteed embolism prevention",
+          "Elimination of compatibility concerns",
+          "Automatic long-term sterility"
+        ],
+        "answer": 0,
+        "rationale": "Central devices require active mechanical, thrombotic, and infection surveillance.",
+        "reviewHref": "#pediatric-pn-decision-access"
+      },
+      "after": {
+        "id": "pedpn-005",
+        "question": "Which plan best addresses the continuing risks of a pediatric PICC used for PN?",
+        "choices": [
+          "Monitor for infection, thrombosis, malposition, and loss of access while reassessing device need",
+          "Monitor for infection but omit thrombosis assessment because the insertion site is peripheral",
+          "Confirm the tip only at insertion and disregard possible tip retraction as the child grows",
+          "Review nutrient compatibility but omit catheter surveillance while the pump runs normally"
+        ],
+        "answer": 0,
+        "rationale": "A PICC remains a central device with infectious, thrombotic, and mechanical risks. Tip position may need reassessment during growth, and a functioning pump or peripheral insertion site does not establish device safety.",
+        "reviewHref": "#pediatric-pn-decision-access"
+      },
+      "stemVerified": true,
+      "oneBestAnswerVerified": true,
+      "answerKeyAndReviewAnchorPreserved": true,
+      "rationaleVerified": true,
+      "choices": [
+        {
+          "text": "Monitor for infection, thrombosis, malposition, and loss of access while reassessing device need",
+          "keyed": true,
+          "review": "Infection,thrombosis,malposition and loss of sites require surveillance/reassessment:Question5A/5E."
+        },
+        {
+          "text": "Monitor for infection but omit thrombosis assessment because the insertion site is peripheral",
+          "keyed": false,
+          "review": "Peripheral insertion does not make PICC noncentral or remove DVT risk:Table5.2PICC row."
+        },
+        {
+          "text": "Confirm the tip only at insertion and disregard possible tip retraction as the child grows",
+          "keyed": false,
+          "review": "Tip may retract during growth and position may need reassessment:Question5E final paragraph."
+        },
+        {
+          "text": "Review nutrient compatibility but omit catheter surveillance while the pump runs normally",
+          "keyed": false,
+          "review": "Pump function/compatibility does not assess catheter infection or thrombosis:Question5 device-risk rationale and maintenance emphasis."
+        }
+      ]
+    }
+  ],
+  "teaching": [
+    {
+      "heading": "Use PN when the gut cannot yet meet the need",
+      "before": {
+        "heading": "Use PN when the gut cannot yet meet the need",
+        "body": "Common indications include necrotizing enterocolitis, gastroschisis, intestinal obstruction or dysmotility, short bowel syndrome, severe malabsorption, high-output fistula, prolonged ileus, and treatment-related gastrointestinal injury. PN supports the interval in which safe enteral delivery cannot meet the assessed goal. It does not remove the need to reassess enteral readiness."
+      },
+      "after": {
+        "heading": "Use PN when the gut cannot yet meet the need",
+        "body": "Necrotizing enterocolitis, gastroschisis, obstruction, dysmotility, short bowel syndrome, severe malabsorption, high-output fistula, prolonged ileus, and treatment-related intestinal injury can prevent adequate feeding. The diagnosis alone is not the indication: assess whether the gut can be safely accessed and can provide the nutrients and fluids needed for growth. PN may provide all nutrition or supplement tolerated oral or enteral intake. Reassess gastrointestinal function and enteral readiness as the condition changes."
+      },
+      "wholeBodyVerified": true,
+      "clauseMap": [
+        {
+          "clauses": "All listed conditions can prevent adequate feeding,without establishing diagnosis-alone indication.",
+          "source": "Question1pediatric etiologies and cancer/IBD/CKD restrictions;Table1.1;Question2 rationale prolongedileus/fistula/obstruction."
+        },
+        {
+          "clauses": "Safe gut access,adequate nutrient/fluid delivery and growth determine need.",
+          "source": "1C/1D;Question1IF definition and pediatricgrowth rationale."
+        },
+        {
+          "clauses": "Total PN or supplement tolerated oral/EN;ongoing reassessment as status changes.",
+          "source": "2B;Question1 nutrition-autonomy continuum;priorQuestion13 monitoring/transition review."
+        }
+      ]
+    },
+    {
+      "heading": "Match access to concentration and duration",
+      "before": {
+        "heading": "Match access to concentration and duration",
+        "body": "Peripheral access limits final concentration and is vulnerable to infiltration and phlebitis. Central access supports concentrated therapy but introduces infection, thrombosis, malposition, and device risks. Umbilical venous catheters can provide early neonatal access when positioned and managed correctly. PICCs, tunneled catheters, and ports are selected according to duration, anatomy, care setting, and the need to preserve access."
+      },
+      "after": {
+        "heading": "Match access to concentration and duration",
+        "body": "Peripheral PN is a short-term option when the required nutrients fit within peripheral osmolarity limits and the patient can tolerate the necessary fluid volume. Monitor for infiltration, extravasation, and phlebitis. Central access permits more concentrated formulations but retains infection, thrombosis, malposition, and access-loss risks. Select PICCs, tunneled catheters, or ports according to expected duration, developmental stage, other intravenous therapies, anatomy, care setting, and access preservation. Use the smallest device and fewest lumens that meet the patient's needs, and confirm and document central tip position before PN begins. An appropriately positioned umbilical venous catheter can provide short-term neonatal access."
+      },
+      "wholeBodyVerified": true,
+      "clauseMap": [
+        {
+          "clauses": "ShorttermperipheralPN,osmolarity and fluid tolerability;infiltration/extravasation/phlebitis monitoring.",
+          "source": "6D/full pediatric rationale;Table6.1 all4rows."
+        },
+        {
+          "clauses": "Central concentration with infection,thrombosis,malposition and access-loss risks.",
+          "source": "5A/fullcentralrisk rationale;Table5.1."
+        },
+        {
+          "clauses": "PICC/tunneled/port selection based on duration,development,otherIV,anatomy,setting,access preservation.",
+          "source": "5A selection paragraph and all9device Table5.2."
+        },
+        {
+          "clauses": "Smallestdevice,fewestneededlumens;confirmed/documentedcentraltip beforePN.",
+          "source": "5B/5E and complete rationale."
+        },
+        {
+          "clauses": "AppropriateUVC shorttermneonatal access.",
+          "source": "Table5.2umbilicalrow;no arterialPN or numericdwellpolicy taught."
+        }
+      ]
+    },
+    {
+      "heading": "Account for concentration and osmolarity",
+      "before": {
+        "heading": "Account for concentration and osmolarity",
+        "body": "Greater dextrose and amino-acid concentrations raise osmolarity. A classroom estimate can help screen an order, but final peripheral suitability depends on the complete formulation, access, validated policy, and vein tolerance. Central access does not make unlimited carbohydrate delivery metabolically safe."
+      },
+      "after": {
+        "heading": "Account for concentration and osmolarity",
+        "body": "Greater dextrose and amino-acid concentrations raise osmolarity. Screen the complete formulation, including electrolytes, for the proposed route; a classroom estimate alone does not establish peripheral suitability. Review the applicable formulation limits, vascular access policy, vein tolerance, and fluid allowance. Dilution may require more fluid than the patient can tolerate or may limit nutrient delivery. Central access can accommodate a concentrated formulation, but it does not remove metabolic limits on carbohydrate delivery."
+      },
+      "wholeBodyVerified": true,
+      "clauseMap": [
+        {
+          "clauses": "Dextrose/aminoacid concentration increasesosmolarity;completeformulation includes electrolytes.",
+          "source": "Question6B/C concentration-limit rationale;Table6.1nutrientdelivery/electrolyte constraints."
+        },
+        {
+          "clauses": "Classroom estimate alone cannot establish peripheralsuitability;policy,vein tolerance,fluid allowance matter.",
+          "source": "Question6B/C estimation accuracy caveat;6Dfragileveins;Table6.1patient considerations."
+        },
+        {
+          "clauses": "Dilution may exceedfluidtolerance or limitnutrientdelivery.",
+          "source": "Question6D energy/protein within tolerable volume;Table6.1."
+        },
+        {
+          "clauses": "Central accommodatesconcentration but retains carbohydrate metaboliclimits.",
+          "source": "Question5centralPN rationale;Question1overfeeding;priorFDA/ASPENmonitoring unit."
+        }
+      ]
+    }
+  ],
+  "figure": {
+    "type": "peds-pn-decision",
+    "title": "Age,gut,access,horizon.",
+    "allFourStepsReviewed": true,
+    "changedDetail": "Peripheral,central,orumbilical replaced with Formulation,duration,tipposition to avoid presenting UVC as a separate mutuallyexclusive route.",
+    "stepSources": [
+      "Patient:prior2025 neonatal assessment/development review",
+      "Need:Question1/2 and allTable1.1",
+      "Access:Question5/6 and Table5.2",
+      "Plan:Question5 duration and priorQuestion13 reassessment"
+    ],
+    "allOtherFiveFiguresPreserved": true
+  },
+  "wholeLesson": {
+    "slug": "pediatric-pn-decision-access",
+    "status": "verified",
+    "wholeFiveBodiesVerified": true,
+    "newWholeBodies": 2,
+    "priorBodyEvidence": [
+      "pediatric-parenteral-nutrition-development-delivery-review.json",
+      "pediatric-parenteral-nutrition-preterm-lipid-review.json"
+    ],
+    "allMappedBankQuestionIds": [
+      "pedpn-001",
+      "pedpn-002",
+      "pedpn-003",
+      "pedpn-004",
+      "pedpn-005",
+      "pedpn-006",
+      "pedpn-014",
+      "pedpn-100"
+    ],
+    "allMappedBankQuestionsVerified": true,
+    "embeddedCheck": "Previouslyfullyverified;unchanged. No additionalcheckclosurecount.",
+    "figureVerified": true,
+    "metadataReview": {
+      "title": "Developmental patient assessment,indication,access covered by all fivebody headings.",
+      "summary": {
+        "text": "Pediatric PN starts with developmental age, growth, gastrointestinal function, expected duration, and fluid tolerance. Match the vascular device to the complete formulation and the patient's needs.",
+        "source": "Question1development/growth/gut,Question5device/context/duration,Question6fluidtolerance."
+      },
+      "concepts": [
+        {
+          "text": "Preterm, neonatal, infant, child, and adolescent context",
+          "source": "Prior developmental/preterm scope records"
+        },
+        {
+          "text": "Indications and enteral alternatives",
+          "source": "Question1/2,Table1.1"
+        },
+        {
+          "text": "Peripheral and central access",
+          "source": "Question5/6,Tables5.1/5.2/6.1"
+        },
+        {
+          "text": "Umbilical and long-term devices",
+          "source": "Table5.2umbilical,tunneled,andportrows"
+        }
+      ],
+      "application": {
+        "text": "Document age and developmental context, dosing weight, nutrition deficit, why the enteral route is insufficient, expected duration, access type and tip location, fluid allowance, and the conditions that will trigger reassessment.",
+        "source": "Age/development/weight/growth:previousassessment/pretermunits;nutritiondeficit/enteralinsufficiency:Question1/2;duration/type/tip:5A/5E;fluidallowance:6D;reassessment:previousQuestion13."
+      },
+      "keyPoints": [
+        {
+          "text": "Age and developmental stage change the prescription.",
+          "source": "Prior age/development assessment"
+        },
+        {
+          "text": "PN requires both nutrition need and an inadequate gastrointestinal route.",
+          "source": "Question1/2"
+        },
+        {
+          "text": "Prompt initiation in preterm infants follows appropriate access.",
+          "source": "Prior2023preterm guideline scopedrecommendation"
+        },
+        {
+          "text": "Access determines what can be delivered safely.",
+          "source": "Question5/6"
+        }
+      ]
+    }
+  },
+  "coverage": {
+    "bank": 100,
+    "newlySourceVerifiedBank": 3,
+    "sourceVerifiedBank": 96,
+    "remainingBank": 4,
+    "bodies": 40,
+    "newlySourceVerifiedBodies": 3,
+    "sourceVerifiedBodies": 35,
+    "remainingBodies": 5,
+    "embeddedChecks": 6,
+    "sourceVerifiedEmbeddedChecks": 6,
+    "remainingEmbeddedChecks": 0,
+    "figures": 6,
+    "sourceVerifiedFigures": 6,
+    "remainingFigures": 0,
+    "cumulative": 5,
+    "sourceVerifiedCumulative": 5,
+    "remainingCumulative": 0,
+    "metadataVerified": false,
+    "wholeModuleVerified": false,
+    "wholeChapterVerified": false
+  },
+  "preservation": {
+    "bankIdsAnswerKeysAndAnchorsRetained": 100,
+    "unchangedBankObjects": 97,
+    "unchangedTeachingBodies": 37,
+    "newBodies": 0,
+    "changedOriginalBodies": 3,
+    "unchangedEmbeddedChecks": 6,
+    "unchangedCumulativeObjects": 1180,
+    "unchangedFigures": 5,
+    "onlyDecisionAccessDetailChanged": true,
+    "all27ReferencesPreserved": true,
+    "architectureProgressAndBackendUnchanged": true
+  },
+  "calculationEvidence": {
+    "newAssessmentCalculations": 0,
+    "newCompletedBookExercises": 0,
+    "runningAssessmentCalculations": 728,
+    "runningSeparateCompletedBookExercises": 98
+  },
+  "validation": {
+    "focusedStructure": {
+      "status": "passed",
+      "bankQuestions": 100,
+      "hardErrors": []
+    },
+    "isolatedBuild": {
+      "status": "passed",
+      "staticPages": 567,
+      "scope": "ExactarchivedHEAD plus3scopedcodefiles. Existingdeps;unrelateddraftsexcluded. Finalbuildincludes tightenedq002nutrient qualifier."
+    },
+    "browser": {
+      "status": "passed",
+      "results": [
+        {
+          "module": "pediatric-parenteral-nutrition",
+          "width": 1440,
+          "renderedBodies": 40,
+          "expandedBodyViews": 3,
+          "bankItemsCorrectWrong": 3,
+          "unchangedCumulativeObjectsPreserved": 1180,
+          "figureViews": 1,
+          "sourceVerifiedChecksThisUnit": 0,
+          "wholeDecisionLessonRendered": true,
+          "groups": 1,
+          "remediationAndSavedProgress": true
+        },
+        {
+          "module": "pediatric-parenteral-nutrition",
+          "width": 390,
+          "renderedBodies": 40,
+          "expandedBodyViews": 3,
+          "bankItemsCorrectWrong": 3,
+          "unchangedCumulativeObjectsPreserved": 1180,
+          "figureViews": 1,
+          "sourceVerifiedChecksThisUnit": 0,
+          "wholeDecisionLessonRendered": true,
+          "groups": 1,
+          "remediationAndSavedProgress": true
+        }
+      ],
+      "pageErrors": []
+    },
+    "metadata": {
+      "status": "passed",
+      "widths": [
+        1440,
+        390
+      ],
+      "fields": [
+        "summary",
+        "concepts",
+        "keyPoints",
+        "application"
+      ],
+      "artifactNote": "Tall whole-section screenshots include fixed-header overlays at mobile capture height; metadata also captured separately at the actual1000px viewport."
+    },
+    "manualRenderedReview": {
+      "status": "passed",
+      "reviewedAt": "2026-10-02T04:58:21.866118+00:00",
+      "allPairsManuallyViewed": true,
+      "pairs": [
+        {
+          "image": "view-00.png",
+          "label": "pedpn-002 correct",
+          "sha256": "8160a8aa3fdb72532a53b0c7b09fa62bd6ad9a420a870e648cd939e73deb6899"
+        },
+        {
+          "image": "view-01.png",
+          "label": "pedpn-002 wrong",
+          "sha256": "6a9cdfe23de793385c983dbe9802bae0f8bf9c74a790bb2c860b7f325f718c83"
+        },
+        {
+          "image": "view-02.png",
+          "label": "pedpn-004 correct",
+          "sha256": "6d42ef77788f07f5d164e8677f7ce279e3b998103c519a73511ace35f95eef80"
+        },
+        {
+          "image": "view-03.png",
+          "label": "pedpn-004 wrong",
+          "sha256": "8d0844f21f5137b0b26f3e5007c6d2f06148b1a88ade2ae72615fefb4e12accc"
+        },
+        {
+          "image": "view-04.png",
+          "label": "pedpn-005 correct",
+          "sha256": "82e36da6f0e0624f7cf2c28db685f2742e90d27b2fb82dafb3e9172834808eec"
+        },
+        {
+          "image": "view-05.png",
+          "label": "pedpn-005 wrong",
+          "sha256": "89638363e3b63f8b90154017eff94e522caeee17785a2f2027b78c9e0e0fc2ae"
+        },
+        {
+          "image": "view-06.png",
+          "label": "Use PN when the gut cannot yet meet the need",
+          "sha256": "05b04e14b63a16074cf3cbc0f2410e31028f4d88ed642907cc1499a521a6226c"
+        },
+        {
+          "image": "view-07.png",
+          "label": "Match access to concentration and duration",
+          "sha256": "84df8f250f69ea785d3410d26dfc691115f0651e4bb783d6f5147fa55a3e3e00"
+        },
+        {
+          "image": "view-08.png",
+          "label": "Account for concentration and osmolarity",
+          "sha256": "ac279af1c9c418ff7579371ff19dca1de953c9726a63fd0586f58fe5ee0c5814"
+        },
+        {
+          "image": "view-09.png",
+          "label": "Decision access figure",
+          "sha256": "299500b942633bb9440d830077404ea9e64cc939439cfc76fa76141c139c8f69"
+        },
+        {
+          "image": "view-10.png",
+          "label": "Whole decision and access lesson",
+          "sha256": "b4cf2c7c698bb14824b4e2ee56d27f472c985b6c0be6ec43c94914e6871b7394"
+        },
+        {
+          "image": "view-11.png",
+          "label": "Decision metadata summary",
+          "sha256": "174bc6ff3f9886b32c080603a856f52319f2e6cbd76af087a83fc2737f4a9fdf"
+        },
+        {
+          "image": "view-12.png",
+          "label": "Decision metadata concepts",
+          "sha256": "f4775a34b8e6cf0652e4076362793e43a4d8390c864f63697164b91a424bc405"
+        },
+        {
+          "image": "view-13.png",
+          "label": "Decision metadata keypoints",
+          "sha256": "85b20b281f3e2c5f21472b1d66a962d615cca1d1b483b4ae3ec33a6ef3b4841c"
+        },
+        {
+          "image": "view-14.png",
+          "label": "Decision metadata application",
+          "sha256": "a1c489475048385826f940aebf9f77ee9c75fe865be136b6cbfdb551847bc0ae"
+        }
+      ],
+      "sourceTablesManuallyViewed": [
+        "1.1",
+        "1.2",
+        "5.1",
+        "5.2",
+        "6.1"
+      ],
+      "sourceVisualType": "ExactpublisherDOM privatelyreflowed;fulltext equality verified.",
+      "findings": [
+        "Three bankquestions correctly display shuffled choices,both feedback states,rationale andreviewlinks at1440/390.",
+        "Allthreewholebodies readable without clipping.",
+        "Decisionfigure foursteps remain legible at desktop/mobile.",
+        "Tallwholelesson capture hasfixedheader overlay;normalheight summary,concepts,keypoints,application separately inspected and readable."
+      ],
+      "unresolvedProductIssuesFromThisUnit": []
+    },
+    "contentHashes": {
+      "src/data/modules/pediatricParenteralNutrition.js": "bfde400eae88db964bf9bcc9935b9a0edd280c70ca3bfab8b4c40dfdbcdf9ee8",
+      "src/data/questionBanks/pediatricParenteralNutrition.js": "44aa6d6e5a36d2f76079203ef059e1cb8348680932a0e067c9ddfbca4a3a0000",
+      "src/components/learn/PediatricParenteralNutritionVisual.jsx": "f09f132216ebdcb7265cf8991a64acabfdbf2ab8701c97caff12253e63cff8de"
+    },
+    "runtimeWidths": [
+      1440,
+      390,
+      320
+    ],
+    "all40BodyDOMEquality": true,
+    "savedLocalProgress": "Two modulepractice attempts perviewport,best10/latest0;existinglocalStorage behavior only. Noauthenticatedbackend persistence claim.",
+    "unchangedCumulativeRuntimeObjects": 1180
+  },
+  "release": {
+    "branch": "audit/rxprep-content-2026-09-24",
+    "commit": "pending",
+    "push": "pending",
+    "receipt": "sequential-release-pediatric-pn-indication-access-2026-10-01.json",
+    "mainMerge": "not performed",
+    "production": "not verified"
+  },
+  "sourceDiscrepancies": [
+    {
+      "issue": "2017Table5.2 rotation/dwell advice mixes population-specific andhistorical recommendations.",
+      "resolution": "No universalpediatricPIVrotation,dwell numeric rule oradultfemoralsiteadvice adopted. ExistingCDCremovalprinciple retained."
+    },
+    {
+      "issue": "Accessfigurepreviously listed peripheral,central,umbilical asifmutuallyexclusive.",
+      "resolution": "Revised detail teaches formulation,duration,tipposition;body specifiesappropriatelypositionedUVC."
+    },
+    {
+      "issue": "Indication questiontestedobviousnonclinicalalternatives.",
+      "resolution": "Allfourchoices nowcompare conditions with explicit nutrient adequacy;diagnosisaloneinsufficient."
+    }
+  ],
+  "nextAction": "Finish pediatricPN bank011/012/016/038 and five remaining original whole bodies: Build a complete fluid ledger; Advance according to response; Use current preterm amino-acid limits; Do not impose blanket protein restriction; Use trends to change one coherent plan. Then reconcile all100questions,40bodies,sixchecks,sixfigures,fivecumulative and complete remaining lesson/module metadata against complete approved sources. Decision/access lesson now whole verified; do not repeat002/004/005,indication/access/concentration bodies or decisionfigure as pending. WholeChapter11,Chapter1entry15 andChapter54 broader audit remain reviewing. EN outside-source exception remains unresolved.",
+  "wholeGoalComplete": false
+}
