@@ -1,0 +1,118 @@
+{
+  "date": "2026-10-01",
+  "unit": "enteral-nutrition:broader-meningitis-hap-administration-dependency",
+  "baseCommit": "45d61b229811fc60654b47a478d2ccecb199c7bd",
+  "contentCommit": "1d73f4b7319b64c465ce74797e9aea65df284719",
+  "branch": "audit/rxprep-content-2026-09-24",
+  "remoteDestination": "github.com/NaS-Research/nas-website.git",
+  "contentRemoteHashObserved": "1d73f4b7319b64c465ce74797e9aea65df284719",
+  "contentRemoteVerifiedAt": "2026-10-02T00:24:56.959897+00:00",
+  "automaticApprovalReview": {
+    "initialPushAutomaticReviewRejected": true,
+    "reason": "Destination ownership and transfer authorization evidence requested.",
+    "resolution": "Configured origin and package repository both github.com/NaS-Research/nas-website; read-only GitHub API verified NaS-Research organization ownership and signed-in admin/push permissions. Same scoped push then passed automatic review and exact remote hash verification.",
+    "finalPushBlocked": false
+  },
+  "scope": [
+    "src/data/modules/acuteBacterialMeningitis.js",
+    "src/data/questionBanks/acuteBacterialMeningitis.js",
+    "src/data/modules/hospitalVentilatorAssociatedPneumonia.js",
+    "src/data/questionBanks/hospitalVentilatorAssociatedPneumonia.js",
+    "docs/clinical-audit/module-ledger.json",
+    "docs/clinical-audit/chapter-ledger.json",
+    "docs/clinical-audit/enteral-nutrition-broader-meningitis-hap-review.json",
+    "docs/clinical-audit/sequential-resume.json"
+  ],
+  "checks": {
+    "isolatedBuildStaticPages": 567,
+    "focusedStructuralBankQuestions": 346,
+    "sourceClosedQuestionsCorrectWrongDesktopMobile": 5,
+    "newBodiesSourceVerified": 2,
+    "renderedBodyDOMEquality": 89,
+    "manualDesktopMobilePairsReviewed": 7,
+    "embeddedChecksSourceVerifiedThisUnit": 0,
+    "runtime320Overflow": true,
+    "remediationAndSavedProgress": true,
+    "moduleSavedAttemptsPerViewport": 2,
+    "moduleBestScore": 10,
+    "moduleLatestScore": 0,
+    "cumulativeRuntimeItems": 10,
+    "cumulativeSourceVerifiedItemsThisUnit": 0,
+    "all1180CumulativeObjectsUnchanged": true,
+    "targetOnlyModuleLedgerEntries": [
+      "acute-bacterial-meningitis",
+      "hospital-ventilator-associated-pneumonia"
+    ],
+    "targetOnlyChapterLedgerEntries": [
+      11,
+      23,
+      46
+    ],
+    "candidateCodeExactlyMatchesReviewedBuildAndCommittedBlobs": true
+  },
+  "preservation": {
+    "all346OriginalIdsPromptsKeysCorrectTextsAnchorsPreserved": true,
+    "unchangedOtherBankObjects": 341,
+    "all87OriginalBodyTextsPreserved": true,
+    "twoNewSourceVerifiedBodies": true,
+    "all20ChecksMetadataReferencesFiguresPreserved": true,
+    "all1180CumulativeObjectsUnchanged": true,
+    "targetOnlyWorkingCodeEdits": true,
+    "baselineAndCandidateAliasesResolvedInTheirOwnCheckouts": true
+  },
+  "coverage": {
+    "questionsSourceVerified": 5,
+    "questionsCorrected": 5,
+    "wholeOriginalBodiesVerified": 0,
+    "newBodies": 2,
+    "newBodiesSourceVerified": 2,
+    "embeddedChecksVerified": 0,
+    "figuresVerified": 0,
+    "metadataVerified": false,
+    "wholeParentModulesVerified": false,
+    "broaderEnteralBookVerifiedQuestionCountAfter": 121,
+    "sourceVerifiedCumulativeItemsThisUnit": 0,
+    "runningAssessmentCalculations": 677,
+    "runningSeparateSourceExamples": 98,
+    "enteralNutritionCountsUnchanged": {
+      "questionsVerified": 66,
+      "questionsTotal": 108,
+      "bodiesVerified": 16,
+      "bodiesTotal": 36,
+      "checksVerified": 2,
+      "checksTotal": 6,
+      "figuresVerified": 0,
+      "figuresTotal": 6
+    }
+  },
+  "newBroaderSourceVerifiedQuestionIds": [
+    "acute-bacterial-meningitis-081",
+    "acute-bacterial-meningitis-082",
+    "acute-bacterial-meningitis-084",
+    "acute-bacterial-meningitis-096",
+    "hospital-ventilator-associated-pneumonia-152"
+  ],
+  "cumulativeBroaderENSourceVerifiedQuestionCount": 121,
+  "broaderParentCount": 20,
+  "originalPrimaryQuestionsReviewed": 34,
+  "originalPrimaryQuestionsPending": 29,
+  "contentBlobSHA256": {
+    "src/data/modules/acuteBacterialMeningitis.js": "4fda92c3c38b9e965f96aacca9eb5776bc536cd57c19e856924e9abe36a1d1f8",
+    "src/data/questionBanks/acuteBacterialMeningitis.js": "63ee7a8e396f1040be077196601279e58b4ab24108653b90cb2197492e0045ee",
+    "src/data/modules/hospitalVentilatorAssociatedPneumonia.js": "4ca52d6098f9d04fc306a35a0f599153926d4a358c9089955141a4b77d95b531",
+    "src/data/questionBanks/hospitalVentilatorAssociatedPneumonia.js": "901a8f7be49d74e6f6c2c5f5111220de23021bce0a61f14f6bde70f9adf493f6",
+    "docs/clinical-audit/module-ledger.json": "6a4085ac7b32b9c9e5d6d00fe5de2711630b9645d3c99ebd3d94d2fc5bd258ed",
+    "docs/clinical-audit/chapter-ledger.json": "ec4c79906d7a2f2e38411b1576fe667d82f6d3400fd9c1ef2b9afdb127dd165a",
+    "docs/clinical-audit/enteral-nutrition-broader-meningitis-hap-review.json": "38457660a41510e32865f8a0b7b21e3bb16c653ea1c191d6f8c834ca834a3415",
+    "docs/clinical-audit/sequential-resume.json": "4ae5a39a52257cf74ccb6f6afd11e27896f2b88a442a5d99b0ea715a4a6ccce0"
+  },
+  "bookAssetsPublished": false,
+  "outsideENSourcesUsed": false,
+  "wholeParentModulesVerified": false,
+  "wholeENModuleVerified": false,
+  "wholeChapterVerified": false,
+  "mainMerge": "not performed",
+  "production": "not verified",
+  "unrelatedWorkingChanges": "All87 original bodies/20checks/metadata/figures and341 other bank objects preserved. Only two module ledger andChapter11/23/46entries patched; unrelated dirty ledger bytes preserved working but excluded from HEAD-derived staged blobs. PrivatePDF/extracts/sourceimages excluded.",
+  "nextAction": "Continue remaining broader administration antimicrobial groups:rickettsial079/085-088,Lyme062/063,tularemia079/087/091,thenhepaticnutrition. Expand fulloriginalgroups/booksections. Keep29originalmeningitis/HAPquestions,nineoriginalbodies/twochecks/currentmetadata/figures pending. EarlyEN/circuit/NICE/2022prevention gaps unresolved; nooutsideENsourceopened. FullEN,pediatricPN,fluid/calcium andChapter1entry15/Chapter11 remain reviewing."
+}
