@@ -1,0 +1,668 @@
+{
+  "recordedAt": "2026-10-02T14:14:26.182295+00:00",
+  "baseCommit": "ea865f169dc69f6f3f6936bde33685b878bb35f0",
+  "unit": "Enteral nutrition primary-source decision and perfusion safety",
+  "approval": {
+    "text": "I approve all. continue working",
+    "scope": "ASPEN/SCCM EN clinical guidance and FDA guidance/product labels; approval persists"
+  },
+  "sources": [
+    {
+      "id": "sccm2016",
+      "url": "https://sccmmedia.sccm.org/documents/LearnICU/Guidelines/Nutrition-SCCM-ASPEN.pdf",
+      "sourceYear": 2016,
+      "read": "Population/introduction PDF2; full B1 recommendation/rationale PDF6–7; full B5 recommendation/rationale PDF9–10; full C1 low-risk exception/rationale and C2 PDF10; full C3 recommendation/rationale PDF10–11. Rendered relevant PDF6,7,9,10,11 viewed.",
+      "limits": "Dated adult ICU guideline; B1 very-low-quality evidence, B5/C1/C3 expert consensus. Not a latest2026 guideline claim. No new quantitative vasopressor or feeding-dose protocol. Incidental remaining sections on these pages do not constitute whole-paper review."
+    },
+    {
+      "id": "aspenTool2023",
+      "url": "https://nutritioncare.org/wp-content/uploads/2024/12/EN-Indications-Critical-Illness-Practice-Tool.pdf",
+      "sourceYear": 2023,
+      "read": "Complete two-page practice tool, both tables and footnote/reference boundary, full text and both rendered pages viewed. Footer08/07/23; URL directory2024 is not source year.",
+      "limits": "Informational practice tool citing2022consensus. Limited evidence for monitoring; numerical VDE/MAP/GRV/formula/ECMO instructions not adopted in this unit."
+    },
+    {
+      "id": "safe2017",
+      "url": "https://aspenjournals.onlinelibrary.wiley.com/doi/full/10.1177/0148607116673053",
+      "sourceYear": 2017,
+      "read": "Full Section4 Question4.1 practice recommendations and complete rationale including short/long-term access, pediatric considerations and contraindications (publisher full HTML1377–1405). No table in this subsection.",
+      "limits": "Contraindications passage concerns access-device placement; urgent withholding through suspected ischemia additionally supported by SCCM2016B5. Not an audit of the entire paper."
+    },
+    {
+      "id": "indications2022-intake",
+      "url": "https://aspenjournals.onlinelibrary.wiley.com/doi/full/10.1002/jpen.2364",
+      "sourceYear": 2022,
+      "read": "Full Section1 recommendations/rationale, Section5A–C recommendations, clinical monitoring and feeding/vasopressor rationale opened and read. Table1/2 and VDE equation extracted. PDF27pages source text accessible.",
+      "limits": "PDF download returned403 and web screenshot cache misses; source-table visual review remains pending. This unit does not adopt its numeric prescriptions or claim those tables visually verified. Lactate qualification independently supported by the completely rendered2023practice tool. Full2022five-question guideline DOI10.1002/jpen.2267 remains pending."
+    }
+  ],
+  "questionReview": [
+    {
+      "question": {
+        "id": "enteral-nutrition-002",
+        "question": "Which condition is the clearest reason to withhold enteral feeding?",
+        "choices": [
+          "Suspected bowel ischemia",
+          "Stable low-dose vasopressor support after adequate resuscitation",
+          "High nutrition risk with stable perfusion and a usable gut",
+          "Dysphagia with a usable gut and inadequate oral intake"
+        ],
+        "answer": 0,
+        "rationale": "Withhold feeding and urgently assess suspected bowel ischemia. The other settings can support carefully monitored enteral nutrition when clinically appropriate; vasopressor use alone is not an absolute exclusion.",
+        "reviewHref": "#enteral-decision"
+      },
+      "status": "verified",
+      "stemVerified": true,
+      "oneBestAnswerVerified": true,
+      "rationaleVerified": true,
+      "sourceEvidence": [
+        "SCCM2016B5 PDF9–10: withhold when ischemia signs emerge; immediate clinical reassessment",
+        "ASPEN2023Table1: vasopressor administration alone not absolute exclusion",
+        "SCCM2016B1/C3 and prior book indication evidence: high-risk or inadequate oral intake with usable gut"
+      ],
+      "choicesReviewed": [
+        {
+          "text": "Suspected bowel ischemia",
+          "keyed": true,
+          "review": "Suspected ischemia requires hold/assessment."
+        },
+        {
+          "text": "Stable low-dose vasopressor support after adequate resuscitation",
+          "keyed": false,
+          "review": "Stable selected support may permit monitored feeding."
+        },
+        {
+          "text": "High nutrition risk with stable perfusion and a usable gut",
+          "keyed": false,
+          "review": "High risk with stable perfusion/usable gut supports feeding."
+        },
+        {
+          "text": "Dysphagia with a usable gut and inadequate oral intake",
+          "keyed": false,
+          "review": "Inadequate safe oral intake with usable gut can support EN."
+        }
+      ]
+    },
+    {
+      "question": {
+        "id": "enteral-nutrition-003",
+        "question": "Under the 2016 SCCM/ASPEN guideline, when should enteral nutrition be considered for a resuscitated, stable critically ill adult with high nutrition risk, a usable gut, and inadequate oral intake?",
+        "choices": [
+          "Within 24 to 48 hours",
+          "After a mandatory seven-day delay regardless of nutrition risk",
+          "Only after a mandatory fourteen-day trial without nutrition support",
+          "Only after parenteral nutrition has failed"
+        ],
+        "answer": 0,
+        "rationale": "The guideline supports early initiation within 24 to 48 hours once adequately resuscitated and stable. Its first-week exception concerns patients with low nutrition risk, normal baseline nutrition status, and low disease severity; it does not justify a fixed delay in this high-risk case.",
+        "reviewHref": "#enteral-decision"
+      },
+      "status": "verified",
+      "stemVerified": true,
+      "oneBestAnswerVerified": true,
+      "rationaleVerified": true,
+      "sourceEvidence": [
+        "SCCM2016B1 PDF6–7 early24–48h; B5 stability PDF9–10; C1 low-risk exception and daily reassessment PDF10; C3 high-risk context PDF10–11"
+      ],
+      "choicesReviewed": [
+        {
+          "text": "Within 24 to 48 hours",
+          "keyed": true,
+          "review": "Dated guideline early initiation range."
+        },
+        {
+          "text": "After a mandatory seven-day delay regardless of nutrition risk",
+          "keyed": false,
+          "review": "Low-risk exception does not apply to this high-risk case."
+        },
+        {
+          "text": "Only after a mandatory fourteen-day trial without nutrition support",
+          "keyed": false,
+          "review": "No mandatory fourteen-day deprivation in this source."
+        },
+        {
+          "text": "Only after parenteral nutrition has failed",
+          "keyed": false,
+          "review": "PN failure is not required to use a safe functional gut."
+        }
+      ]
+    },
+    {
+      "question": {
+        "id": "enteral-nutrition-004",
+        "question": "A patient has escalating vasopressor doses, cool extremities, and rising lactate. What is the best nutrition response?",
+        "choices": [
+          "Withhold enteral feeding and urgently reassess perfusion",
+          "Keep the current feeding rate but stop further advancement",
+          "Switch to postpyloric feeding without reassessing perfusion",
+          "Use a slower gastric infusion while vasopressor needs continue to escalate"
+        ],
+        "answer": 0,
+        "rationale": "Escalating vasopressor needs with impaired-perfusion findings require withholding feeding and urgent reassessment. Continuing the previous rate or changing the tube destination does not resolve instability. Lactate alone does not establish enteral intolerance or diagnose bowel ischemia.",
+        "reviewHref": "#enteral-decision"
+      },
+      "status": "verified",
+      "stemVerified": true,
+      "oneBestAnswerVerified": true,
+      "rationaleVerified": true,
+      "sourceEvidence": [
+        "SCCM2016B5 complete PDF9–10: hold in escalating pressor requirement; rate/route changes do not establish perfusion",
+        "ASPEN2023Table1: insufficient data for lactate as sole enteral-tolerance monitor; whole-pattern interpretation not an ischemia diagnosis"
+      ],
+      "choicesReviewed": [
+        {
+          "text": "Withhold enteral feeding and urgently reassess perfusion",
+          "keyed": true,
+          "review": "Hold and reassess unstable perfusion."
+        },
+        {
+          "text": "Keep the current feeding rate but stop further advancement",
+          "keyed": false,
+          "review": "Continuing current rate can leave unsafe feeding running."
+        },
+        {
+          "text": "Switch to postpyloric feeding without reassessing perfusion",
+          "keyed": false,
+          "review": "Postpyloric destination does not correct shock."
+        },
+        {
+          "text": "Use a slower gastric infusion while vasopressor needs continue to escalate",
+          "keyed": false,
+          "review": "Slower infusion does not establish perfusion safety during escalation."
+        }
+      ]
+    },
+    {
+      "question": {
+        "id": "enteral-nutrition-005",
+        "question": "Which finding supports cautious low-dose feeding after shock?",
+        "choices": [
+          "Resuscitation is complete and perfusion is stable",
+          "Vasopressor requirements are still escalating despite resuscitation",
+          "Abdominal distention is increasing while perfusion deteriorates",
+          "A fixed number of hours has elapsed despite persistent instability"
+        ],
+        "answer": 0,
+        "rationale": "Resuscitation with stable perfusion can permit carefully monitored low-dose feeding, including selected patients on stable low-dose vasopressor support. Elapsed time alone does not establish safety, and escalating support or concerning abdominal findings requires reassessment.",
+        "reviewHref": "#enteral-decision"
+      },
+      "status": "verified",
+      "stemVerified": true,
+      "oneBestAnswerVerified": true,
+      "rationaleVerified": true,
+      "sourceEvidence": [
+        "SCCM2016B5 full rationale: cautious feeding selected stable low-dose pressor support vs escalation/intolerance; elapsed time not evidence of resuscitation",
+        "ASPEN2023Table1 contextual monitoring rather than categorical pressor exclusion"
+      ],
+      "choicesReviewed": [
+        {
+          "text": "Resuscitation is complete and perfusion is stable",
+          "keyed": true,
+          "review": "Complete resuscitation and stable perfusion support cautious monitoring."
+        },
+        {
+          "text": "Vasopressor requirements are still escalating despite resuscitation",
+          "keyed": false,
+          "review": "Escalation indicates persistent instability."
+        },
+        {
+          "text": "Abdominal distention is increasing while perfusion deteriorates",
+          "keyed": false,
+          "review": "Deteriorating perfusion with abdominal signs requires hold/assessment."
+        },
+        {
+          "text": "A fixed number of hours has elapsed despite persistent instability",
+          "keyed": false,
+          "review": "Elapsed time alone is not clinical stability."
+        }
+      ]
+    },
+    {
+      "question": {
+        "id": "enteral-nutrition-100",
+        "question": "A patient in shock has escalating vasopressors, abdominal distention, and rising lactate while feeds advance. Which interpretation or management plan is most defensible?",
+        "choices": [
+          "Hold enteral feeding and urgently evaluate perfusion and possible bowel ischemia",
+          "Stop advancement but continue the previous feeding rate while shock worsens",
+          "Switch to jejunal feeding without reassessing perfusion",
+          "Change to a lower-fiber formula and continue advancing during escalating shock"
+        ],
+        "answer": 0,
+        "rationale": "Escalating vasopressor needs with abdominal distention raise concern for unsafe feeding during shock. Hold feeding and urgently assess perfusion and possible ischemia. Continuing the previous rate is not enough; neither a route change nor a formula change corrects instability. Lactate alone cannot diagnose bowel ischemia or establish enteral intolerance.",
+        "reviewHref": "#enteral-decision"
+      },
+      "status": "verified",
+      "stemVerified": true,
+      "oneBestAnswerVerified": true,
+      "rationaleVerified": true,
+      "sourceEvidence": [
+        "SCCM2016B5 full rationale: escalating shock and abdominal intolerance requires hold until stabilization",
+        "ASPEN2023Table1 lactate qualification; urgent possible-ischemia assessment is not diagnosis from lactate alone"
+      ],
+      "choicesReviewed": [
+        {
+          "text": "Hold enteral feeding and urgently evaluate perfusion and possible bowel ischemia",
+          "keyed": true,
+          "review": "Hold and urgently assess possible ischemia/perfusion."
+        },
+        {
+          "text": "Stop advancement but continue the previous feeding rate while shock worsens",
+          "keyed": false,
+          "review": "Merely stopping escalation leaves ongoing feeding during worsening shock."
+        },
+        {
+          "text": "Switch to jejunal feeding without reassessing perfusion",
+          "keyed": false,
+          "review": "A route change does not correct instability."
+        },
+        {
+          "text": "Change to a lower-fiber formula and continue advancing during escalating shock",
+          "keyed": false,
+          "review": "Formula fiber changes do not correct shock."
+        }
+      ]
+    }
+  ],
+  "teachingReview": [
+    {
+      "heading": "Do not feed through active instability",
+      "body": "Suspected bowel ischemia or complete intestinal obstruction requires withholding enteral feeding and urgent clinical assessment. The 2016 SCCM/ASPEN guideline advises withholding feeding during hemodynamic instability until resuscitation and stability are achieved. If vasopressor requirements escalate or new abdominal findings suggest ischemia, hold feeding and reassess; merely stopping advancement can leave an unsafe infusion running. Stable low-dose vasopressor support does not automatically exclude carefully monitored feeding. Assess the whole clinical pattern: the 2023 ASPEN practice tool states that lactate alone is not an established measure of enteral tolerance.",
+      "status": "whole body verified",
+      "wholeBodyVerified": true,
+      "clauseSource": [
+        "SCCM2016B5 full recommendation/rationale: withhold when unstable/escalating or possible ischemia; selected stable low-dose support",
+        "ASPEN2017Q4.1 complete rationale: ischemia/complete mechanical obstruction precludes safe access except decompression; no claim that all obstruction prevents distal access",
+        "ASPEN2023Table1 lactate qualification: insufficient data for sole tolerance assessment"
+      ]
+    },
+    {
+      "heading": "Use early feeding with clinical judgment",
+      "body": "The 2016 SCCM/ASPEN guideline recommends considering enteral nutrition within 24 to 48 hours for critically ill adults unable to maintain oral intake, after adequate resuscitation and stabilization. Apply nutrition risk as well as timing: patients with low nutrition risk, normal baseline nutrition status, and low disease severity may not require specialized nutrition therapy during the first ICU week. Reassess risk daily. Early initiation does not mandate immediate full-rate feeding; choose dose and advancement according to the patient's perfusion, tolerance, and refeeding risk.",
+      "status": "whole body verified",
+      "wholeBodyVerified": true,
+      "clauseSource": [
+        "SCCM2016B1 andB5: dated adult early initiation after stability",
+        "SCCM2016C1 full recommendation/rationale: low-risk/normal baseline/low severity first-week exception and daily reassessment",
+        "SCCM2016C2/C3 complete recommendations/rationales: initiation is distinct from automatic full-rate nutrition; tolerance and refeeding risk inform advance"
+      ]
+    }
+  ],
+  "embeddedCheckReview": {
+    "lesson": "enteral-decision",
+    "check": {
+      "question": "Which patient is the best candidate for early enteral nutrition?",
+      "choices": [
+        "A resuscitated, hemodynamically stable ventilated adult with high nutrition risk, inadequate oral intake, and a usable gut",
+        "A patient with suspected bowel ischemia and rising lactate",
+        "A patient with complete intestinal obstruction",
+        "A patient meeting needs with a safe oral diet"
+      ],
+      "answer": 0,
+      "rationale": "High nutrition risk and inadequate oral intake support early enteral nutrition when the gut is usable and perfusion is stable. Suspected ischemia and complete obstruction require withholding feeding; adequate safe oral intake does not by itself justify a feeding tube.",
+      "reviewHref": "#enteral-decision"
+    },
+    "status": "verified",
+    "sourceEvidence": [
+      "SCCM2016B1 PDF6–7 early24–48h; B5 stability PDF9–10; C1 low-risk exception and daily reassessment PDF10; C3 high-risk context PDF10–11",
+      "SCCM2016B5 PDF9–10: withhold when ischemia signs emerge; immediate clinical reassessment",
+      "ASPEN2023Table1: vasopressor administration alone not absolute exclusion",
+      "SCCM2016B1/C3 and prior book indication evidence: high-risk or inadequate oral intake with usable gut"
+    ],
+    "choicesReviewed": [
+      "High risk/inadequate oral with usable gut/stable perfusion favors initiation.",
+      "Suspected ischemia requires hold/assessment.",
+      "Complete obstruction requires hold/assessment; not a gastric-outlet-only bypass case.",
+      "Safe oral intake meeting needs does not itself justify tube feeding."
+    ]
+  },
+  "figureReview": {
+    "type": "enteral-decision",
+    "figure": {
+      "eyebrow": "Route decision",
+      "title": "Need, gut, perfusion, route.",
+      "items": [
+        [
+          "01",
+          "Need",
+          "Oral intake cannot safely meet the target"
+        ],
+        [
+          "02",
+          "Gut",
+          "Digestion and absorption are usable"
+        ],
+        [
+          "03",
+          "Perfusion",
+          "Resuscitation is complete and stable"
+        ],
+        [
+          "04",
+          "Route",
+          "Choose oral, gastric, or postpyloric delivery"
+        ]
+      ]
+    },
+    "status": "verified",
+    "sourceEvidence": {
+      "need": "Prior book indication evidence in route-water review and EN001 exact retained object",
+      "gut": "Prior book EN001 usable digestion/absorption evidence",
+      "perfusion": "SCCM2016B5 complete rationale; read as perfusion assessment and resuscitation completion when needed",
+      "route": "ASPEN2017Q4.1 full rationale: evaluate anatomy/function/access destination; prior book enteral oral/tube definition"
+    },
+    "fileUnchanged": true,
+    "sha256": "22b35a75d64b209f15a8ca537163c94cccdd94d0accdb4c3414cb8f4d0ed575c"
+  },
+  "sourceDiscrepancies": [
+    {
+      "issue": "Prior shock cases only stopped advancement, leaving current feeds running.",
+      "resolution": "Explicit hold during escalating unstable shock, plus urgent perfusion/possible-ischemia review."
+    },
+    {
+      "issue": "Generic early ICU feeding claim ignored low-risk first-week exception.",
+      "resolution": "Explicitly2016guideline, high-risk case qualifier, low-risk baseline/severity exception and daily reassessment."
+    },
+    {
+      "issue": "Rising lactate could be read as a standalone intolerance/ischemia diagnosis.",
+      "resolution": "Whole-pattern assessment with explicit lactate-alone limitation; possible ischemia evaluated rather than diagnosed from lactate."
+    },
+    {
+      "issue": "2022indications vasopressor-context GRV>300mL differs from2016general<500mL/no other intolerance guidance.",
+      "resolution": "Population-specific full reconciliation and source table visuals remain pending; EN101/monitoring body/check not closed or altered."
+    }
+  ],
+  "preservation": {
+    "bankObjectsUnchanged": 103,
+    "cumulativeObjectsUnchanged": 1180,
+    "wholeBodyObjectsUnchanged": 34,
+    "all36HeadingsStable": true,
+    "fiveChecksUnchanged": true,
+    "all6FiguresUnchanged": true,
+    "allExistingMetadataAnd6ReferencesUnchanged": true,
+    "threeDatedPrimaryReferencesAdded": true,
+    "pathsIdsAndAnswerIndicesPreserved": true,
+    "architectureBackendAndAccountTrackingUnchanged": true,
+    "noNewClinicalDoseProtocolOrCalculation": true
+  },
+  "coverage": {
+    "bank": 108,
+    "verifiedBank": 71,
+    "remainingBank": 37,
+    "verifiedBankIds": [
+      "enteral-nutrition-060",
+      "enteral-nutrition-061",
+      "enteral-nutrition-062",
+      "enteral-nutrition-063",
+      "enteral-nutrition-064",
+      "enteral-nutrition-065",
+      "enteral-nutrition-066",
+      "enteral-nutrition-067",
+      "enteral-nutrition-068",
+      "enteral-nutrition-069",
+      "enteral-nutrition-070",
+      "enteral-nutrition-071",
+      "enteral-nutrition-072",
+      "enteral-nutrition-073",
+      "enteral-nutrition-074",
+      "enteral-nutrition-075",
+      "enteral-nutrition-076",
+      "enteral-nutrition-077",
+      "enteral-nutrition-078",
+      "enteral-nutrition-079",
+      "enteral-nutrition-080",
+      "enteral-nutrition-081",
+      "enteral-nutrition-082",
+      "enteral-nutrition-083",
+      "enteral-nutrition-084",
+      "enteral-nutrition-085",
+      "enteral-nutrition-086",
+      "enteral-nutrition-087",
+      "enteral-nutrition-088",
+      "enteral-nutrition-089",
+      "enteral-nutrition-109",
+      "enteral-nutrition-110",
+      "enteral-nutrition-111",
+      "enteral-nutrition-112",
+      "enteral-nutrition-113",
+      "enteral-nutrition-114",
+      "enteral-nutrition-001",
+      "enteral-nutrition-115",
+      "enteral-nutrition-033",
+      "enteral-nutrition-035",
+      "enteral-nutrition-036",
+      "enteral-nutrition-037",
+      "enteral-nutrition-040",
+      "enteral-nutrition-042",
+      "enteral-nutrition-093",
+      "enteral-nutrition-094",
+      "enteral-nutrition-098",
+      "enteral-nutrition-107",
+      "enteral-nutrition-116",
+      "enteral-nutrition-117",
+      "enteral-nutrition-006",
+      "enteral-nutrition-007",
+      "enteral-nutrition-008",
+      "enteral-nutrition-015",
+      "enteral-nutrition-016",
+      "enteral-nutrition-018",
+      "enteral-nutrition-021",
+      "enteral-nutrition-030",
+      "enteral-nutrition-049",
+      "enteral-nutrition-092",
+      "enteral-nutrition-099",
+      "enteral-nutrition-105",
+      "enteral-nutrition-023",
+      "enteral-nutrition-041",
+      "enteral-nutrition-090",
+      "enteral-nutrition-104",
+      "enteral-nutrition-002",
+      "enteral-nutrition-003",
+      "enteral-nutrition-004",
+      "enteral-nutrition-005",
+      "enteral-nutrition-100"
+    ],
+    "remainingBankIds": [
+      "enteral-nutrition-009",
+      "enteral-nutrition-010",
+      "enteral-nutrition-011",
+      "enteral-nutrition-012",
+      "enteral-nutrition-013",
+      "enteral-nutrition-014",
+      "enteral-nutrition-017",
+      "enteral-nutrition-019",
+      "enteral-nutrition-020",
+      "enteral-nutrition-022",
+      "enteral-nutrition-024",
+      "enteral-nutrition-025",
+      "enteral-nutrition-026",
+      "enteral-nutrition-027",
+      "enteral-nutrition-028",
+      "enteral-nutrition-029",
+      "enteral-nutrition-031",
+      "enteral-nutrition-032",
+      "enteral-nutrition-034",
+      "enteral-nutrition-038",
+      "enteral-nutrition-039",
+      "enteral-nutrition-043",
+      "enteral-nutrition-044",
+      "enteral-nutrition-045",
+      "enteral-nutrition-046",
+      "enteral-nutrition-047",
+      "enteral-nutrition-048",
+      "enteral-nutrition-050",
+      "enteral-nutrition-091",
+      "enteral-nutrition-095",
+      "enteral-nutrition-096",
+      "enteral-nutrition-097",
+      "enteral-nutrition-101",
+      "enteral-nutrition-102",
+      "enteral-nutrition-103",
+      "enteral-nutrition-106",
+      "enteral-nutrition-108"
+    ],
+    "bodies": 36,
+    "verifiedBodies": 18,
+    "remainingBodies": 18,
+    "embeddedChecks": 6,
+    "verifiedEmbeddedChecks": 3,
+    "remainingEmbeddedChecks": 3,
+    "figures": 6,
+    "verifiedFigures": 1,
+    "cumulative": 5,
+    "sourceVerifiedCumulative": 4,
+    "pendingCumulative": [
+      "enteral-nutrition-028"
+    ],
+    "metadata": "Full module and lesson metadata remain pending.",
+    "remainingFigures": 5,
+    "wholeModuleVerified": false,
+    "wholeChapterVerified": false
+  },
+  "remainingCoverageReview": {
+    "questionIds": [
+      "enteral-nutrition-009",
+      "enteral-nutrition-010",
+      "enteral-nutrition-011",
+      "enteral-nutrition-012",
+      "enteral-nutrition-013",
+      "enteral-nutrition-014",
+      "enteral-nutrition-017",
+      "enteral-nutrition-019",
+      "enteral-nutrition-020",
+      "enteral-nutrition-022",
+      "enteral-nutrition-024",
+      "enteral-nutrition-025",
+      "enteral-nutrition-026",
+      "enteral-nutrition-027",
+      "enteral-nutrition-028",
+      "enteral-nutrition-029",
+      "enteral-nutrition-031",
+      "enteral-nutrition-032",
+      "enteral-nutrition-034",
+      "enteral-nutrition-038",
+      "enteral-nutrition-039",
+      "enteral-nutrition-043",
+      "enteral-nutrition-044",
+      "enteral-nutrition-045",
+      "enteral-nutrition-046",
+      "enteral-nutrition-047",
+      "enteral-nutrition-048",
+      "enteral-nutrition-050",
+      "enteral-nutrition-091",
+      "enteral-nutrition-095",
+      "enteral-nutrition-096",
+      "enteral-nutrition-097",
+      "enteral-nutrition-101",
+      "enteral-nutrition-102",
+      "enteral-nutrition-103",
+      "enteral-nutrition-106",
+      "enteral-nutrition-108"
+    ],
+    "wholeBodyHeadings": [
+      "Recognize the patient who needs support",
+      "Start with the stomach when appropriate",
+      "Move beyond the pylorus for a reason",
+      "Confirm before first use",
+      "Prevent wrong-route connections",
+      "Match method to access and tolerance",
+      "Advance according to risk",
+      "Manage interruptions deliberately",
+      "Use standard formulas when digestion works",
+      "Use density to solve a volume problem",
+      "Treat fiber and specialty claims carefully",
+      "Build the water prescription",
+      "Separate medications from formula and each other",
+      "Respect the tube tip",
+      "Prevent aspiration with a bundle",
+      "Use gastric residuals selectively",
+      "Find the cause of diarrhea and clogging",
+      "Monitor delivery and metabolic safety"
+    ],
+    "embeddedCheckLessons": [
+      "access-route",
+      "medication-administration",
+      "monitoring-complications"
+    ],
+    "figureTypes": [
+      "access-route",
+      "delivery-prescription",
+      "formula-selection",
+      "medication-administration",
+      "monitoring-complications"
+    ],
+    "cumulativeIds": [
+      "enteral-nutrition-028"
+    ],
+    "fullMetadataPending": true
+  },
+  "calculationEvidence": {
+    "newDistinctAssessmentCalculations": 0,
+    "newCompletedBookExercises": 0,
+    "runningAssessmentCalculations": 728,
+    "runningSeparateCompletedBookExercises": 98
+  },
+  "validation": {
+    "build": {
+      "status": "passed",
+      "staticPages": 567,
+      "scope": "Exact HEAD archive plus two reviewed product files"
+    },
+    "assessmentStructure": {
+      "status": "passed",
+      "bankQuestions": 108,
+      "hardErrors": [],
+      "doesNotEstablishClinicalAccuracy": true
+    },
+    "browser": {
+      "status": "passed",
+      "results": [
+        {
+          "width": 1440,
+          "wholeBodyDOMEquality": 36,
+          "allSixMetadataDOMEquality": true,
+          "all9ReferenceDOMEquality": true,
+          "fiveChangedQuestionsCorrectWrongFeedback": true,
+          "decisionCheckCorrectWrongFeedback": true,
+          "remediationAnchor": true,
+          "noHorizontalOverflow": true,
+          "accountPersistence": "not tested; unauthenticated local preview"
+        },
+        {
+          "width": 390,
+          "wholeBodyDOMEquality": 36,
+          "allSixMetadataDOMEquality": true,
+          "all9ReferenceDOMEquality": true,
+          "fiveChangedQuestionsCorrectWrongFeedback": true,
+          "decisionCheckCorrectWrongFeedback": true,
+          "remediationAnchor": true,
+          "noHorizontalOverflow": true,
+          "accountPersistence": "not tested; unauthenticated local preview"
+        }
+      ],
+      "pageErrors": []
+    },
+    "contentHashes": {
+      "src/data/modules/enteralNutrition.js": "5966db1bd5822260cfa915def859275a5afd0fc7db36c9d915d4ce971253662a",
+      "src/data/questionBanks/enteralNutrition.js": "53c3c2a1fdc9472768f417491fa550bbfb1fa63ce2c2e7b24eb40995ea51748b"
+    },
+    "manualReview": {
+      "status": "passed",
+      "changedBodiesDesktopMobileViewed": true,
+      "decisionFigureDesktopMobileViewed": true,
+      "fiveChangedQuestionCorrectWrongDesktopMobileViewed": true,
+      "decisionCheckCorrectWrongDesktopMobileViewed": true,
+      "all9ReferencesDesktopMobileViewed": true,
+      "mobileScreenshotLimit": "Some initial wrong-answer element captures obscured stems; independent full viewport recaptures inspected for all five.",
+      "persistence": "Unauthenticated local preview only; no account/backend/production claim."
+    }
+  },
+  "release": {
+    "branch": "audit/rxprep-content-2026-09-24",
+    "commit": "pending",
+    "push": "pending",
+    "receipt": "sequential-release-enteral-primary-decision-2026-10-02.json",
+    "mainMerge": "not performed",
+    "production": "not verified"
+  },
+  "wholeGoalComplete": false
+}
