@@ -34,8 +34,8 @@ const nodes = {
     title: "Composition follows physiology.",
     items: [
       ["Intact", "Polymeric", "Use when digestion and absorption work"],
-      ["Hydrolyzed", "Peptide based", "Use for a defined absorption problem"],
-      ["Density", "Energy per mL", "Trade volume for free water"],
+      ["Hydrolyzed", "Peptide based", "Consider for a defined absorption or tolerance problem"],
+      ["Density", "Energy per mL", "Check product water and daily volume"],
       ["Water", "Total sources", "Formula plus flushes plus other intake"],
     ],
   },
