@@ -1,0 +1,443 @@
+{
+  "recordedAt": "2026-10-02T05:24:17.288740+00:00",
+  "baseCommit": "dfb69eea710efd75f167773ca5dbc5b2317d256c",
+  "unit": "Pediatric PN glucose tolerance,renal protein assessment and bilirubin response",
+  "sourcePolicy": "User-approved existing official ASPEN/FDA PN sources; suppliedbookprimary; no new EN outside source used.",
+  "sources": [
+    {
+      "title": "ASPEN When Is Parenteral Nutrition Appropriate?",
+      "year": 2017,
+      "url": "https://aspenjournals.onlinelibrary.wiley.com/doi/10.1177/0148607117695251",
+      "completeSectionsRead": [
+        "Question7:all recommendations/full rationale/pediatric considerations",
+        "Question13:all recommendations/full adult and pediatric rationales/transition sections/all four tables"
+      ],
+      "tablesFullyReadAndViewed": [
+        "13.1",
+        "13.2",
+        "13.3",
+        "13.4"
+      ],
+      "qualifications": [
+        "Board-approved consensus; monitoring detail relies heavily on expert opinion.",
+        "Pediatric considerations read separately; adult-only numeric rules not extrapolated.",
+        "No fixed lab schedule, age-independent nutrient range, IDPN dose or new renal protocol adopted.",
+        "Question7 describes supplemental IDPN in selected malnourished children; it does not establish a CKRT dose or a benefit for every child."
+      ]
+    },
+    {
+      "title": "FDA CLINIMIX prescribing information",
+      "year": 2021,
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2021/020734s037lbl.pdf",
+      "sourceReuse": "Full relevant PDF13–17 previously read/viewed in monitoring-source-intake; full14/15/17 text and images rechecked this unit.",
+      "sections": [
+        "5.3infection",
+        "5.5glucose utilization/monitoring/insulin",
+        "5.7hepatobiliary causes/ammonia/early expert assessment",
+        "5.9PNALD",
+        "5.10renal protein/fluid/electrolyte individualization",
+        "5.11monitoring",
+        "8.4pediatric glucose/liver vulnerability"
+      ],
+      "qualification": "Historical2021 label; latest2026 labeling not established. No new product dose adopted."
+    },
+    {
+      "title": "FDA SMOFlipid prescribing information",
+      "year": 2025,
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/207648s013lbl.pdf",
+      "completeSectionsRechecked": [
+        "5.2PNALD/IFALD and other hepatobiliary disorders spanning PDF7–8",
+        "5.4infection monitoring PDF8"
+      ],
+      "allRelevantPagesReadAndViewed": true,
+      "qualification": "Lipid phytosterol contribution is association, not sole causation. Neonatal trial outcomes and numeric bilirubin definitions not generalized or newly adopted."
+    },
+    {
+      "title": "ASPEN Preterm PN guideline2023 and related source review",
+      "evidence": "pediatric-parenteral-nutrition-preterm-lipid-review.json",
+      "reuse": "Unchanged initial/maximal AA sentences re-compared with the prior complete guideline/practice-tool/corrigendum evidence. Guideline population remains limited to appropriate preterm infants, not all neonatal/pediatric renal disease."
+    },
+    {
+      "title": "RxPrep2023 Chapter11",
+      "evidence": "pediatric-parenteral-nutrition-book-calculations-review.json",
+      "recomparison": "Complete private source textPDF158/163/164 re-read: individualized fluid/nutrient planning, glucose intolerance monitoring, dextrose concentrations and calories. Whole Chapter11/Chapter54 not closed."
+    },
+    {
+      "title": "ASPEN2014 PN safety consensus",
+      "evidence": "pediatric-parenteral-nutrition-monitoring-source-intake.json",
+      "reuse": "Previously complete Administration3 source on spurious laboratory values; current page monitoring-parameter paragraph checked. No whole new guideline read claimed."
+    }
+  ],
+  "questionReview": [
+    {
+      "question": {
+        "id": "pedpn-011",
+        "question": "Why is a classroom GIR range not an automatic target?",
+        "choices": [
+          "Illness, age, glucose response, medicines, and other dextrose sources affect tolerance",
+          "The same calculated GIR is equally well tolerated at every pediatric age",
+          "A rate within a reference range makes blood glucose monitoring unnecessary",
+          "PN dextrose is the only glucose source that needs to be counted"
+        ],
+        "answer": 0,
+        "rationale": "A calculated GIR describes delivery, not tolerance. Interpret it with developmental age, glucose trends, illness, medicines, and all dextrose sources. Newborns, particularly preterm and low-birth-weight infants, need close glucose monitoring.",
+        "reviewHref": "#pediatric-fluid-glucose"
+      },
+      "status": "verified",
+      "sources": [
+        "FDA2021 5.5 and8.4",
+        "ASPEN2017 Question13 pediatric13A,age/disease/medicines and actual intake; Table13.1glucose/intake"
+      ],
+      "allFourChoicesIndividuallyReviewed": [
+        {
+          "text": "Illness, age, glucose response, medicines, and other dextrose sources affect tolerance",
+          "keyed": true,
+          "review": "Developmental context,glucose,illness,medicines and total delivery inform tolerance; GIR alone describes administered rate."
+        },
+        {
+          "text": "The same calculated GIR is equally well tolerated at every pediatric age",
+          "keyed": false,
+          "review": "Equal numerical delivery does not establish equal age-specific tolerance."
+        },
+        {
+          "text": "A rate within a reference range makes blood glucose monitoring unnecessary",
+          "keyed": false,
+          "review": "A range does not remove the explicit neonatal glucose-monitoring requirement."
+        },
+        {
+          "text": "PN dextrose is the only glucose source that needs to be counted",
+          "keyed": false,
+          "review": "Other intravenous/oral/enteral sources remain part of total delivery assessment."
+        }
+      ],
+      "oneBestAnswer": true,
+      "idPromptKeyAndAnchorPreserved": true,
+      "inference": null
+    },
+    {
+      "question": {
+        "id": "pedpn-016",
+        "question": "Why is a fixed 1 g/kg/day protein ceiling inappropriate for every child with kidney dysfunction?",
+        "choices": [
+          "Growth, renal function, nutrient losses, and dialysis must be assessed for the individual child",
+          "Kidney dysfunction requires the same protein ceiling regardless of age or growth",
+          "Starting dialysis makes assessment of protein intake unnecessary",
+          "Renal dysfunction requires omission of amino acids from every PN prescription"
+        ],
+        "answer": 0,
+        "rationale": "Protein dosing in kidney dysfunction requires an individual nutrition and renal assessment. Children receiving dialysis can have nutrient losses and impaired growth; selected malnourished children may need supplemental protein. A fixed ceiling based on the diagnosis alone does not establish the appropriate dose, and this does not mean every child needs a higher dose.",
+        "reviewHref": "#pediatric-protein-lipid"
+      },
+      "status": "verified",
+      "sources": [
+        "FDA2021 5.10 individualized fluid/protein/electrolyte adjustment and renal expert review",
+        "ASPEN2017 Question7 pediatric renal growth failure and selected supplemental protein; nutrient loss rationale",
+        "ASPEN2017 Question13 individualized age/diagnosis/intake assessment"
+      ],
+      "allFourChoicesIndividuallyReviewed": [
+        {
+          "text": "Growth, renal function, nutrient losses, and dialysis must be assessed for the individual child",
+          "keyed": true,
+          "review": "Assess growth,renal function,losses and dialysis; these sources require patient-specific assessment."
+        },
+        {
+          "text": "Kidney dysfunction requires the same protein ceiling regardless of age or growth",
+          "keyed": false,
+          "review": "Diagnosis alone and one ceiling omit developmental/growth/therapy context."
+        },
+        {
+          "text": "Starting dialysis makes assessment of protein intake unnecessary",
+          "keyed": false,
+          "review": "Dialysis-related losses and potential malnutrition require ongoing intake assessment."
+        },
+        {
+          "text": "Renal dysfunction requires omission of amino acids from every PN prescription",
+          "keyed": false,
+          "review": "The sources permit individualized amino-acid delivery and supplemental protein in selected children; blanket omission is unsupported."
+        }
+      ],
+      "oneBestAnswer": true,
+      "idPromptKeyAndAnchorPreserved": true,
+      "inference": "The conclusion that the diagnosis alone does not establish a universal1g/kg/day ceiling follows from the explicit individualized assessment and selected pediatric protein supplementation. No alternative numeric renal dose is prescribed. This question closure does not verify the broader CKRT/catabolism/wound claims in its linked body."
+    },
+    {
+      "question": {
+        "id": "pedpn-038",
+        "question": "A neonate develops rising direct bilirubin during PN. What is the best response?",
+        "choices": [
+          "Review infection, intestinal failure, enteral exposure, energy, medicines, and PN duration together",
+          "Treat lipid as the only cause before reviewing the patient and the complete regimen",
+          "Wait for the next routine panel without assessing the rising direct bilirubin",
+          "Permanently remove amino acids from PN before evaluating hepatic function"
+        ],
+        "answer": 0,
+        "rationale": "PN-associated liver disease is multifactorial. Rising direct bilirubin warrants early clinical assessment of possible causative and contributing factors, other liver tests, and the complete nutrition and medication plan. Lipid can contribute, but the trend alone does not establish a single cause or justify permanent amino-acid withdrawal.",
+        "reviewHref": "#pediatric-order-monitoring"
+      },
+      "status": "verified",
+      "sources": [
+        "FDA2025 SMOFlipid5.2 multifactorial PNALD,possible lipid contribution/early hepatobiliary assessment",
+        "FDA2021 5.7/5.9 early causative/contributory review",
+        "ASPEN2017 Question13 Table13.2 directbilirubin/otherliver tests,comprehensivepediatric monitoring; priorQuestion2B neonatal lowEN/prolongedPN context"
+      ],
+      "allFourChoicesIndividuallyReviewed": [
+        {
+          "text": "Review infection, intestinal failure, enteral exposure, energy, medicines, and PN duration together",
+          "keyed": true,
+          "review": "Full clinical/medication/intake/duration assessment addresses contributing factors; the list is a clinical assessment framework, not proof that each factor caused this result."
+        },
+        {
+          "text": "Treat lipid as the only cause before reviewing the patient and the complete regimen",
+          "keyed": false,
+          "review": "A possible lipid contribution does not establish sole causation."
+        },
+        {
+          "text": "Wait for the next routine panel without assessing the rising direct bilirubin",
+          "keyed": false,
+          "review": "Rising abnormalities warrant early assessment instead of deferral solely to a routine schedule."
+        },
+        {
+          "text": "Permanently remove amino acids from PN before evaluating hepatic function",
+          "keyed": false,
+          "review": "A bilirubin trend does not justify permanent AA withdrawal before evaluating hepatic function."
+        }
+      ],
+      "oneBestAnswer": true,
+      "idPromptKeyAndAnchorPreserved": true,
+      "inference": "Synthesized assessment approach across the FDA warnings and ASPEN whole-patient monitoring; no neonatal bilirubin cutoff or treatment algorithm adopted."
+    }
+  ],
+  "teachingReview": [
+    {
+      "heading": "Use current preterm amino-acid limits",
+      "body": "The 2023 ASPEN preterm guideline recommends against an initial amino-acid dose above 3 g/kg/day. For the maximal target, it recommends at least 3 g/kg/day without exceeding 3.5 g/kg/day. The guideline does not establish a benefit from routinely increasing the maximal target to 4 g/kg/day. Other pediatric age groups require individualized dosing based on growth, illness, losses, organ support, and the selected product. These preterm limits do not select a dose for term infants, older children, or children receiving dialysis. Compare prescribed and delivered intake with the current growth and clinical goals.",
+      "status": "whole body verified",
+      "allClausesReviewed": [
+        {
+          "claim": "Initial AA≤3g/kg/day;maximal3–3.5;no established routine4benefit",
+          "source": "Prior complete2023guideline/practice-tool/corrigendum review; first three sentences unchanged."
+        },
+        {
+          "claim": "Other pediatric ages/growth/illness/losses/organ support/product require individual dosing",
+          "source": "ASPEN2017 Q13 pediatric individualized age/diagnosis/clinical intake;Q7dialysis/growth/nutrientloss;FDA2021 renalprotein/fluidadjustment and product-age context previously reviewed."
+        },
+        {
+          "claim": "Preterm limits do not select term/older/dialysis doses",
+          "source": "2023guideline limited population plus2017Q7/Q13; scope distinction, not a renal dose recommendation."
+        },
+        {
+          "claim": "Compare actual versus projected intake with growth and clinical goals",
+          "source": "ASPEN2017 Q13 pediatric13A/13B explicit actual-versus-projected energy/protein and changing growth goals."
+        }
+      ],
+      "originalClinicalThemesPreserved": true
+    },
+    {
+      "heading": "Use trends to change one coherent plan",
+      "body": "When glucose rises, review GIR and all dextrose sources, sepsis or other acute stress, corticosteroids, insulin delivery, and sampling validity. Assess the patient and arrange a valid repeat sample when contamination is possible; one result does not establish either an artifact or PN intolerance. Rising direct bilirubin warrants early review of infection, intestinal failure, enteral exposure, total energy, medicines, and PN duration. Review other liver tests and involve a clinician experienced in liver disease to identify causative and contributing factors. PN-associated liver disease is multifactorial: lipid can contribute, but the bilirubin trend does not establish lipid as the only cause. Revise the complete nutrition plan with the clinical assessment and monitor the response.",
+      "status": "whole body verified",
+      "allClausesReviewed": [
+        {
+          "claim": "Risingglucose prompts complete GIR/source/clinical/medicine/insulin/specimen review",
+          "source": "FDA2021 5.3/5.5/8.4;ASPEN2017Q13 pediatric illness/stress,steroid use and actual-intake review; prior ASPEN2014 Administration3 sample-validity review. Named items are an assessment framework, not asserted causes of this particular result."
+        },
+        {
+          "claim": "Assess patient and validrepeat whenpotentiallycontaminated;single result notprovenartifact/intolerance",
+          "source": "Prior complete ASPEN2014 Administration3 and FDA2021 neonatalglycemia warning."
+        },
+        {
+          "claim": "Risingdirectbilirubin requires earlycause/contribution review with complete intake/medication/duration context and otherlivertests",
+          "source": "FDA2021 5.7/5.9/8.4;FDA2025 5.2;ASPEN2017Q13 andTable13.2;priorQ2Bneonatal lowEN/prolongedPN context. Inference is clinically structured assessment, not etiologydiagnosis."
+        },
+        {
+          "claim": "Lipidpossiblecontribution;multifactorial;clinicalassessmentguideswholeplan/response",
+          "source": "FDA2025SMOF5.2 and2017Q13 pediatric continuous assessment/reassessment."
+        }
+      ],
+      "originalClinicalThemesPreserved": true
+    }
+  ],
+  "coverage": {
+    "bank": 100,
+    "newlySourceVerifiedBank": 3,
+    "sourceVerifiedBank": 99,
+    "remainingBank": 1,
+    "bodies": 40,
+    "newlySourceVerifiedBodies": 2,
+    "sourceVerifiedBodies": 37,
+    "remainingBodies": 3,
+    "embeddedChecks": 6,
+    "sourceVerifiedEmbeddedChecks": 6,
+    "remainingEmbeddedChecks": 0,
+    "figures": 6,
+    "sourceVerifiedFigures": 6,
+    "remainingFigures": 0,
+    "cumulative": 5,
+    "sourceVerifiedCumulative": 5,
+    "remainingCumulative": 0,
+    "metadataVerified": false,
+    "wholeModuleVerified": false,
+    "wholeChapterVerified": false
+  },
+  "preservation": {
+    "bankIdsPromptsKeysAnchorsRetained": 100,
+    "unchangedBankObjects": 97,
+    "unchangedTeachingBodies": 38,
+    "newBodies": 0,
+    "changedBodies": 2,
+    "unchangedChecks": 6,
+    "unchangedCumulativeObjects": 1180,
+    "allSixFiguresUnchanged": true,
+    "all27ReferencesAndAllMetadataPreserved": true,
+    "architectureBackendAndTrackingUnchanged": true
+  },
+  "sourceDiscrepancies": [
+    {
+      "issue": "Original trend paragraph could be read as diagnosing causes from a lab trend.",
+      "resolution": "All clinical themes retained as assessment items; valid repeat/early hepaticexpert review and multifactorial qualification added."
+    },
+    {
+      "issue": "Adult monitoring numeric advice and historical lab schedules coexist with pediatric considerations.",
+      "resolution": "All relevant sections/tables read and viewed; no fixed schedule,universalTGcutoff or adult-onlydose adopted."
+    },
+    {
+      "issue": "Question16 individual renal-assessment concept is supported; its whole linked body includes broaderCKRT/catabolism/wound claims.",
+      "resolution": "Question fullyreviewed;linked wholebody remains pending,so no CKRTprotocol or blanket increase asserted."
+    },
+    {
+      "issue": "Specific neonatalwaterloss and brain/GIR statements lack directly verified approvedsupport.",
+      "resolution": "Original usefulmaterial preserved; exactquestion/bodygaps retained for continuedreview."
+    }
+  ],
+  "calculationEvidence": {
+    "newDistinctAssessmentCalculations": 0,
+    "newCompletedBookExercises": 0,
+    "runningAssessmentCalculations": 728,
+    "runningSeparateCompletedBookExercises": 98
+  },
+  "validation": {
+    "focusedStructure": {
+      "status": "passed",
+      "bankQuestions": 100,
+      "hardErrors": [],
+      "sourceGaps": [],
+      "meaning": "Structural sourceGap report is not independent clinical proof."
+    },
+    "isolatedBuild": {
+      "status": "passed",
+      "staticPages": 567,
+      "scope": "Archived exactHEAD plus2scopedcodefiles;unrelated working drafts excluded."
+    },
+    "browser": {
+      "status": "passed",
+      "results": [
+        {
+          "module": "pediatric-parenteral-nutrition",
+          "width": 1440,
+          "renderedBodies": 40,
+          "expandedBodyViews": 2,
+          "bankItemsCorrectWrong": 3,
+          "unchangedCumulativeObjectsPreserved": 1180,
+          "figureViews": 0,
+          "sourceVerifiedChecksThisUnit": 0,
+          "changedBodiesRendered": true,
+          "groups": 1,
+          "remediationAndSavedProgress": true
+        },
+        {
+          "module": "pediatric-parenteral-nutrition",
+          "width": 390,
+          "renderedBodies": 40,
+          "expandedBodyViews": 2,
+          "bankItemsCorrectWrong": 3,
+          "unchangedCumulativeObjectsPreserved": 1180,
+          "figureViews": 0,
+          "sourceVerifiedChecksThisUnit": 0,
+          "changedBodiesRendered": true,
+          "groups": 1,
+          "remediationAndSavedProgress": true
+        }
+      ],
+      "pageErrors": []
+    },
+    "manualRenderedReview": {
+      "status": "passed",
+      "pairs": [
+        {
+          "image": "view-00.png",
+          "label": "pedpn-011 correct",
+          "sha256": "f171feedf61afbedd456bf31228446d4287855862b9665fcfd121b83355d650e"
+        },
+        {
+          "image": "view-01.png",
+          "label": "pedpn-011 wrong",
+          "sha256": "3fa890913b3268b2bb157c6a1ea1c6632933b436f5b79ce382509abc1b97eb12"
+        },
+        {
+          "image": "view-02.png",
+          "label": "pedpn-016 correct",
+          "sha256": "6418b042888c74d502dd203f27e01fd4331840b1b68106b129fc861e2f1aa756"
+        },
+        {
+          "image": "view-03.png",
+          "label": "pedpn-016 wrong",
+          "sha256": "3313af702e3e6a6c3f71318cfdc85526da43f24a68ef16f575be88b6a303e86d"
+        },
+        {
+          "image": "view-04.png",
+          "label": "pedpn-038 correct",
+          "sha256": "7e537b1aae96d520b131f9543e367e83d8ee4740b3c4711335ea13631136b305"
+        },
+        {
+          "image": "view-05.png",
+          "label": "pedpn-038 wrong",
+          "sha256": "b9068933a41537528b750c9736fcfb4c1b382c7308f13e3078cc666e8e369675"
+        },
+        {
+          "image": "view-06.png",
+          "label": "Use current preterm amino-acid limits",
+          "sha256": "a889a6fb3d38861e66977e85c3922d066d5b51871bbdef7df4d2ad197f044f1a"
+        },
+        {
+          "image": "view-07.png",
+          "label": "Use trends to change one coherent plan",
+          "sha256": "7635cbdff6a2c45c7a9503f99b79aa64284a06fde2a27182488cab9a5e28afdc"
+        }
+      ],
+      "allPairsManuallyViewed": true,
+      "findings": "All 8 desktop/mobile pairs viewed: three questions in correct/incorrect states and two complete teaching bodies. All choices, feedback, remediation links and body text legible; no clipped text or header obstruction in these captures.",
+      "sourceTablesManuallyViewed": [
+        "13.1 all11rows/3columns and footnote",
+        "13.2 all12rows/8columns/merged headers and abbreviations",
+        "13.3 all17rows/2columns and abbreviation",
+        "13.4 all13 recommendations and abbreviation"
+      ],
+      "sourceMethod": "Exact publisher DOM with private CSS reflow; normalized visible text matches captured original. This is not an original publisher PDF screenshot.",
+      "sourceFDAPagesManuallyViewed": [
+        "CLINIMIX2021 PDF14,15,17",
+        "SMOFlipid2025 PDF7,8"
+      ]
+    },
+    "runtimeWidths": [
+      1440,
+      390,
+      320
+    ],
+    "all40BodyDOMEquality": true,
+    "contentHashes": {
+      "src/data/modules/pediatricParenteralNutrition.js": "fa98158d724d25f333fd71b1ee066bd9011c1fa9ce241a2eded6d6d9b4f43e5d",
+      "src/data/questionBanks/pediatricParenteralNutrition.js": "4ba2e5f7800cc0ddd24f648dc7e76416234c4fb6398e448a7fda7808ac0e8cb8"
+    },
+    "localSavedProgress": "Two module attempts perviewport,best10/latest0; no authenticated/backend persistence claim."
+  },
+  "release": {
+    "branch": "audit/rxprep-content-2026-09-24",
+    "commit": "pending",
+    "push": "pending",
+    "receipt": "sequential-release-pediatric-pn-metabolic-response-2026-10-02.json",
+    "mainMerge": "not performed",
+    "production": "not verified"
+  },
+  "nextAction": "Finish pediatricPN question pedpn-012 and three original whole bodies: Build a complete fluid ledger; Advance according to response; Do not impose blanket protein restriction. Specific neonatal phototherapy/open-warmer water loss, higher neonatal GIR/brain rationale, and broad pediatric CKRT/catabolism/wound protein needs remain source-pending. Use the supplied book and approved existing official PN sources; do not substitute a narrower body and falsely close it. Then reconcile all100questions,40bodies,sixchecks,sixfigures,fivecumulative and complete lesson/module metadata. Order/monitoring now9/9 wholebodies; its metadata remains open. WholeChapter11,Chapter1entry15 and broaderChapter54 remain reviewing. EN source exception remains unresolved.",
+  "wholeGoalComplete": false
+}
