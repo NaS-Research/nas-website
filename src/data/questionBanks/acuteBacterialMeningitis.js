@@ -82,7 +82,46 @@ const cases = [
   { lesson: "public-health-followup", question: "A pregnant household contact needs meningococcal prophylaxis. Which option is preferred in current CDC guidance?", choices: ["Single-dose intramuscular ceftriaxone", "Rifampin without interaction review", "Ciprofloxacin despite any resistance pattern", "No prophylaxis because of pregnancy"], answer: 0, rationale: "CDC identifies ceftriaxone as the preferred prophylaxis option in pregnancy." },
 ].map((item, index) => ({ ...item, id: `acute-bacterial-meningitis-${String(generated.length + index + 1).padStart(3, "0")}`, reviewHref: `#${item.lesson}` }));
 
-export const acuteBacterialMeningitisQuestionBank = [...generated, ...cases];
+const bookAdministrationRepairs = {
+  "acute-bacterial-meningitis-081": {
+    "choices": [
+      "Dexamethasone works best when given with or before the first antibiotic dose",
+      "Dexamethasone should replace the first antibiotic dose",
+      "Dexamethasone should begin only after the antibiotic course is completed",
+      "Dexamethasone timing is unrelated to the first antibiotic dose"
+    ],
+    "rationale": "The meningitis section places dexamethasone before or with the first antibiotic dose to reduce selected pneumococcal neurologic complications. It is an adjunct to antibiotics, not a replacement. Starting it after the completed course or ignoring the first-dose timing does not follow that sequence."
+  },
+  "acute-bacterial-meningitis-082": {
+    "choices": [
+      "Administer it immediately under protocol while ensuring antibiotics are not delayed",
+      "Wait for final culture results before starting any treatment",
+      "Give dexamethasone alone instead of empiric antibiotics",
+      "Withhold antibiotics whenever lumbar puncture is delayed"
+    ],
+    "rationale": "The book describes urgent treatment, dexamethasone before or with the first antibiotic dose, and antibiotic initiation when lumbar puncture is delayed. These instructions support coordinating the adjunct without postponing urgent antimicrobial therapy. Steroid monotherapy and waiting for a procedure or final cultures fail to treat the emergency."
+  },
+  "acute-bacterial-meningitis-084": {
+    "choices": [
+      "Holding antibiotics until dexamethasone arrives",
+      "Coordinating dexamethasone with the first antibiotic dose",
+      "Initiating antibiotics when lumbar puncture is delayed",
+      "Reassessing dexamethasone when the pathogen is identified"
+    ],
+    "rationale": "The book treats bacterial meningitis as an emergency and places dexamethasone before or with the first antibiotic dose. The timing goal should be coordinated without turning the adjunct into a reason to postpone urgent antibiotics. The other choices describe compatible treatment or reassessment steps, not the timing hazard."
+  },
+  "acute-bacterial-meningitis-096": {
+    "choices": [
+      "Calling a short course risk-free",
+      "Reviewing mood and sleep during systemic corticosteroid treatment",
+      "Monitoring blood glucose during higher-dose systemic corticosteroid treatment",
+      "Recognizing indigestion as a possible short-term steroid effect"
+    ],
+    "rationale": "The systemic corticosteroid table lists short-term effects including mood changes, insomnia, indigestion, fluid retention, and higher-dose increases in blood pressure and glucose. A brief course therefore does not establish absence of risk. The other choices recognize or monitor described effects; they do not assume the course is harmless."
+  }
+};
+
+export const acuteBacterialMeningitisQuestionBank = [...generated, ...cases].map(question => bookAdministrationRepairs[question.id] ? { ...question, ...bookAdministrationRepairs[question.id] } : question);
 
 if (acuteBacterialMeningitisQuestionBank.length < 100) {
   throw new Error(`Acute bacterial meningitis question bank must contain at least 100 questions, found ${acuteBacterialMeningitisQuestionBank.length}.`);

@@ -9050,7 +9050,10 @@
         },
         {
           "slug": "dexamethasone",
-          "status": "unreviewed"
+          "status": "reviewing",
+          "latestScopedEvidence": "enteral-nutrition-broader-meningitis-hap-review.json",
+          "embeddedCheckVerified": false,
+          "wholeLessonVerified": false
         },
         {
           "slug": "definitive-therapy",
@@ -9070,8 +9073,50 @@
         }
       ],
       "questions": 172,
-      "status": "unreviewed",
-      "evidence": []
+      "status": "reviewing",
+      "evidence": [
+        "enteral-nutrition-broader-meningitis-hap-review.json"
+      ],
+      "broaderEnteralAdministrationReview": {
+        "evidence": "enteral-nutrition-broader-meningitis-hap-review.json",
+        "verifiedQuestionIds": [
+          "acute-bacterial-meningitis-081",
+          "acute-bacterial-meningitis-082",
+          "acute-bacterial-meningitis-084",
+          "acute-bacterial-meningitis-096"
+        ],
+        "correctedQuestionIds": [
+          "acute-bacterial-meningitis-081",
+          "acute-bacterial-meningitis-082",
+          "acute-bacterial-meningitis-084",
+          "acute-bacterial-meningitis-096"
+        ],
+        "originalPrimaryQuestionIdsPending": [
+          "acute-bacterial-meningitis-083",
+          "acute-bacterial-meningitis-085",
+          "acute-bacterial-meningitis-086",
+          "acute-bacterial-meningitis-087",
+          "acute-bacterial-meningitis-088",
+          "acute-bacterial-meningitis-089",
+          "acute-bacterial-meningitis-090",
+          "acute-bacterial-meningitis-091",
+          "acute-bacterial-meningitis-092",
+          "acute-bacterial-meningitis-093",
+          "acute-bacterial-meningitis-094",
+          "acute-bacterial-meningitis-095",
+          "acute-bacterial-meningitis-167"
+        ],
+        "newBodyHeadings": [
+          "Monitor short-term steroid effects"
+        ],
+        "newBodiesSourceVerified": true,
+        "wholeOriginalBodiesVerified": false,
+        "verifiedEmbeddedCheckLessons": [],
+        "sourceVerifiedCumulativeIds": [],
+        "wholeModuleVerified": false,
+        "figuresVerified": 0,
+        "metadataVerified": false
+      }
     },
     {
       "slug": "acute-otitis-media",
@@ -9320,12 +9365,54 @@
         },
         {
           "slug": "prevention-system",
-          "status": "unreviewed"
+          "status": "reviewing",
+          "latestScopedEvidence": "enteral-nutrition-broader-meningitis-hap-review.json",
+          "embeddedCheckVerified": false,
+          "wholeLessonVerified": false
         }
       ],
       "questions": 174,
-      "status": "unreviewed",
-      "evidence": []
+      "status": "reviewing",
+      "evidence": [
+        "enteral-nutrition-broader-meningitis-hap-review.json"
+      ],
+      "broaderEnteralAdministrationReview": {
+        "evidence": "enteral-nutrition-broader-meningitis-hap-review.json",
+        "verifiedQuestionIds": [
+          "hospital-ventilator-associated-pneumonia-152"
+        ],
+        "correctedQuestionIds": [
+          "hospital-ventilator-associated-pneumonia-152"
+        ],
+        "originalPrimaryQuestionIdsPending": [
+          "hospital-ventilator-associated-pneumonia-149",
+          "hospital-ventilator-associated-pneumonia-150",
+          "hospital-ventilator-associated-pneumonia-151",
+          "hospital-ventilator-associated-pneumonia-153",
+          "hospital-ventilator-associated-pneumonia-154",
+          "hospital-ventilator-associated-pneumonia-155",
+          "hospital-ventilator-associated-pneumonia-156",
+          "hospital-ventilator-associated-pneumonia-157",
+          "hospital-ventilator-associated-pneumonia-158",
+          "hospital-ventilator-associated-pneumonia-159",
+          "hospital-ventilator-associated-pneumonia-160",
+          "hospital-ventilator-associated-pneumonia-161",
+          "hospital-ventilator-associated-pneumonia-162",
+          "hospital-ventilator-associated-pneumonia-163",
+          "hospital-ventilator-associated-pneumonia-164",
+          "hospital-ventilator-associated-pneumonia-174"
+        ],
+        "newBodyHeadings": [
+          "Reassess stress-ulcer prophylaxis"
+        ],
+        "newBodiesSourceVerified": true,
+        "wholeOriginalBodiesVerified": false,
+        "verifiedEmbeddedCheckLessons": [],
+        "sourceVerifiedCumulativeIds": [],
+        "wholeModuleVerified": false,
+        "figuresVerified": 0,
+        "metadataVerified": false
+      }
     },
     {
       "slug": "tuberculosis",

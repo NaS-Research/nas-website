@@ -66,5 +66,17 @@ const cases=[
   ["duration-deescalation","A patient with VAP improves, source control is adequate, and no complication is found. What duration is standard?",["Seven days with individual adjustment based on response","Fourteen days for every organism","One dose","Continue until the radiograph is completely normal"],"Seven days is recommended for most improving VAP."],
   ["prevention-system","Which updated oral-care practice belongs in an adult VAP prevention bundle?",["Daily toothbrushing without routine chlorhexidine","Routine chlorhexidine for every ventilated adult","No oral care","Prophylactic systemic antibiotics"],"The 2022 prevention update supports toothbrushing and advises against routine chlorhexidine."],
 ].map((item,index)=>({id:`hospital-ventilator-associated-pneumonia-${String(generated.length+index+1).padStart(3,"0")}`,lesson:item[0],question:item[1],choices:item[2],answer:0,rationale:item[3],reviewHref:`#${item[0]}`}));
-export const hospitalVentilatorAssociatedPneumoniaQuestionBank=[...generated,...cases];
+const bookAdministrationRepairs = {
+  "hospital-ventilator-associated-pneumonia-152": {
+    "choices": [
+      "Treating the ventilator bundle as head-of-bed elevation alone",
+      "Combining hand hygiene with appropriate head-of-bed elevation",
+      "Reviewing whether a nasogastric tube is still needed",
+      "Reviewing whether stress-ulcer prophylaxis is still indicated"
+    ],
+    "rationale": "The book describes several complementary VAP prevention measures: hand hygiene, head-of-bed elevation, weaning when possible, removal of unnecessary nasogastric tubes, and discontinuation of unnecessary stress-ulcer prophylaxis. Head-of-bed elevation alone does not cover that broader prevention plan. The other choices address additional listed measures."
+  }
+};
+
+export const hospitalVentilatorAssociatedPneumoniaQuestionBank=[...generated,...cases].map(question => bookAdministrationRepairs[question.id] ? { ...question, ...bookAdministrationRepairs[question.id] } : question);
 if(hospitalVentilatorAssociatedPneumoniaQuestionBank.length<100)throw new Error(`Hospital and ventilator-associated pneumonia question bank must contain at least 100 questions, found ${hospitalVentilatorAssociatedPneumoniaQuestionBank.length}.`);
