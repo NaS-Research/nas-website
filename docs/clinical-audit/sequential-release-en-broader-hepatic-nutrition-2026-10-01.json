@@ -1,0 +1,164 @@
+{
+  "date": "2026-10-01",
+  "unit": "enteral-nutrition:broader-hepatic-nutrition-administration-dependency",
+  "baseCommit": "0d02dd4451e6e3e32f94beec533b676d38e65fcb",
+  "contentCommit": "314c59254e612c2abe4d1f8033260c1ee7617662",
+  "branch": "audit/rxprep-content-2026-09-24",
+  "remoteDestination": "github.com/NaS-Research/nas-website.git",
+  "contentRemoteHashObserved": "314c59254e612c2abe4d1f8033260c1ee7617662",
+  "contentRemoteVerifiedAt": "2026-10-02T01:12:44.927370+00:00",
+  "scope": [
+    "src/data/modules/cirrhosisDecompensatedLiverDisease.js",
+    "src/data/modules/chronicHepatitisB.js",
+    "src/data/modules/hepatitisC.js",
+    "src/data/questionBanks/chronicHepatitisB.js",
+    "src/data/questionBanks/hepatitisC.js",
+    "docs/clinical-audit/module-ledger.json",
+    "docs/clinical-audit/chapter-ledger.json",
+    "docs/clinical-audit/enteral-nutrition-broader-hepatic-nutrition-review.json",
+    "docs/clinical-audit/sequential-resume.json"
+  ],
+  "checks": {
+    "isolatedBuildStaticPages": 567,
+    "buildCommand": "existing repository next build --webpack",
+    "focusedStructuralBankQuestions": 340,
+    "sourceClosedQuestionsCorrectWrongDesktopMobile": 12,
+    "expandedExistingBodies": 1,
+    "wholeOriginalBodiesSourceVerified": 0,
+    "newSourceVerifiedBodies": 2,
+    "renderedBodyDOMEquality": 149,
+    "manualDesktopMobilePairsReviewed": 18,
+    "embeddedChecksSourceVerifiedWithoutChange": 2,
+    "runtime320Overflow": true,
+    "remediationAndSavedProgress": true,
+    "moduleBankSavedAttemptsPerViewport": {
+      "cirrhosis-decompensated-liver-disease": 0,
+      "chronic-hepatitis-b": 2,
+      "hepatitis-c": 2
+    },
+    "cirrhosisBankProgressNotClaimed": true,
+    "testedModuleBankBestScore": 10,
+    "testedModuleBankLatestScore": 0,
+    "eachVerifiedHCVCheckSavedAttemptsPerViewport": 2,
+    "eachVerifiedHCVCheckBestScore": 1,
+    "eachVerifiedHCVCheckLatestScore": 0,
+    "cumulativeRuntimeItems": 15,
+    "cumulativeSourceVerifiedItemsThisUnit": 1,
+    "cumulativeRuntimeOnlyItems": 14,
+    "all1180CumulativeIdsPreserved": true,
+    "unchangedCumulativeObjects": 1179,
+    "derivedCumulativeChoicesRationaleRepaired": "cumulative-hepatitis-c-hepatitis-c-055",
+    "targetOnlyModuleLedgerEntries": [
+      "cirrhosis-decompensated-liver-disease",
+      "chronic-hepatitis-b",
+      "hepatitis-c"
+    ],
+    "targetOnlyChapterLedgerEntries": [
+      11,
+      19
+    ],
+    "completeChapter19SourceTextAndRenderedTablesFiguresRead": true,
+    "correctedChapter19SourceBoundary": {
+      "printedPages": [
+        296,
+        307
+      ],
+      "pdfPages": [
+        304,
+        315
+      ]
+    },
+    "candidateCodeExactlyMatchesReviewedBuildAndCommittedBlobs": true
+  },
+  "preservation": {
+    "all340OriginalQuestionIdsKeysCorrectTextsAnchorsDifficultyPreserved": true,
+    "all338OtherPromptsPreserved": true,
+    "twoAmbiguousErrorPromptsClarifiedOnSameTopics": [
+      "hepatitis-c-036",
+      "hepatitis-c-040"
+    ],
+    "unchangedOtherBankObjects": 328,
+    "all147OriginalBodyTextsPreserved": true,
+    "oneBodyExpandedWithSourceVerifiedClauses": true,
+    "twoSourceVerifiedBodiesAdded": true,
+    "all36ChecksMetadataReferencesFiguresPreserved": true,
+    "1179CumulativeObjectsUnchanged": true,
+    "oneDerivedCumulativeChoicesRationaleRepaired": true,
+    "targetOnlyWorkingCodeEdits": true,
+    "candidateAliasesResolvedInOwnCheckout": true
+  },
+  "coverage": {
+    "questionsSourceVerified": 12,
+    "questionsCorrected": 12,
+    "questionPromptsClarified": [
+      "hepatitis-c-036",
+      "hepatitis-c-040"
+    ],
+    "wholeOriginalBodiesVerified": 0,
+    "expandedBodies": 1,
+    "newBodies": 2,
+    "newBodiesSourceVerified": true,
+    "appendedBodyClausesSourceVerified": true,
+    "embeddedChecksVerifiedWithoutChange": 2,
+    "figuresVerified": 0,
+    "metadataVerified": false,
+    "wholeParentModulesVerified": false,
+    "broaderEnteralBookVerifiedQuestionCountAfter": 148,
+    "broaderSourceVerifiedQuestionParentCountAfter": 25,
+    "broaderMappedParentCountAfter": 26,
+    "sourceVerifiedCumulativeItemsThisUnit": 1,
+    "runningAssessmentCalculations": 677,
+    "runningSeparateSourceExamples": 98,
+    "enteralNutritionCountsUnchanged": {
+      "questionsVerified": 66,
+      "questionsTotal": 108,
+      "bodiesVerified": 16,
+      "bodiesTotal": 36,
+      "checksVerified": 2,
+      "checksTotal": 6,
+      "figuresVerified": 0,
+      "figuresTotal": 6
+    }
+  },
+  "newBroaderSourceVerifiedQuestionIds": [
+    "chronic-hepatitis-b-040",
+    "chronic-hepatitis-b-044",
+    "chronic-hepatitis-b-046",
+    "chronic-hepatitis-b-047",
+    "chronic-hepatitis-b-048",
+    "hepatitis-c-033",
+    "hepatitis-c-036",
+    "hepatitis-c-040",
+    "hepatitis-c-053",
+    "hepatitis-c-054",
+    "hepatitis-c-055",
+    "hepatitis-c-056"
+  ],
+  "cumulativeBroaderENSourceVerifiedQuestionCount": 148,
+  "broaderQuestionParentCount": 25,
+  "broaderMappedParentCount": 26,
+  "originalPrimaryQuestionsReviewed": 64,
+  "originalPrimaryQuestionsPending": 52,
+  "runningAssessmentCalculations": 677,
+  "runningSeparateSourceExerciseExamples": 98,
+  "contentBlobSHA256": {
+    "src/data/modules/cirrhosisDecompensatedLiverDisease.js": "c63bdb40e2da657f74a6b4ec072c420c08bd857a3f8e3c75fa8202775874edcc",
+    "src/data/modules/chronicHepatitisB.js": "3ac16e298fab82ccb40ac7b1cc77d10349a90d785e4d0d94aecd39d00cdb47d5",
+    "src/data/modules/hepatitisC.js": "ba8d6de5918a4d0d6cacb991d4f0926885d5c5ae659601b6030e0c3583d184ce",
+    "src/data/questionBanks/chronicHepatitisB.js": "d485bbd53c0a092757ef859bde93abd790b22bce92376ec1309458d35d5fdfa3",
+    "src/data/questionBanks/hepatitisC.js": "3c72e12b60e911099449dbe84de9ff0bc7b395d9da7674020c9536650e8a943f",
+    "docs/clinical-audit/module-ledger.json": "e7f76c6d3ea1df1cfd2bb613685eb249d20898fe0850705e73fea589929e41b0",
+    "docs/clinical-audit/chapter-ledger.json": "63691a20b6bc5fb43214dcc56020b51f799913b78f2debb2170c9012714b2a7b",
+    "docs/clinical-audit/enteral-nutrition-broader-hepatic-nutrition-review.json": "95596535cb75243feabd415b90918ab43fd7c707d6553b119360449a8f7fe9e1",
+    "docs/clinical-audit/sequential-resume.json": "44bbc00df376dea8b21ab123309554a58344d659477986636238e87c562cda7b"
+  },
+  "bookAssetsPublished": false,
+  "outsideENSourcesUsed": false,
+  "wholeParentModulesVerified": false,
+  "wholeENModuleVerified": false,
+  "wholeChapterVerified": false,
+  "mainMerge": "not performed",
+  "production": "not verified",
+  "unrelatedWorkingChanges": "All147 original body texts,36 checks,metadata,references and figures preserved. Only three module ledger and Chapter11/19 entries patched; unrelated dirty ledger bytes preserved in the working tree but excluded from HEAD-derived staged blobs. The private book and source images remain excluded.",
+  "nextAction": "Return to EN original source gaps after completion of this broader hepatic candidate pass; inventory52pending originalhepatic questions/20bodies/threechecks,currentmetadata/figures and remainingbroader candidates explicitly. Reconcile supplied-book-supported originalENclaims and full pediatricPN/fluid/calcium dependencies in source order; keep unsupported modernclinicaldetails pending. Chapter1entry15/Chapter11 remainreviewing. No outsideEN source authorized oropened."
+}
