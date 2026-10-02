@@ -72,3 +72,7 @@
 .home-research-identity a { display: inline-flex; gap: 1.25rem; margin-top: 1.5rem; color: #e8d0a3; font-size: 1rem; padding-block: .75rem; }
 .home-research-identity a:hover { color: #fff; }
 @media (max-width: 700px) { .home-research-identity { grid-template-columns: 1fr; gap: 2rem; } }
+
+/* Keep the featured homepage hero on a plain black background. */
+.home-carousel::before,
+.home-carousel::after { content: none; display: none; }

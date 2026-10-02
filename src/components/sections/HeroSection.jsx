@@ -77,7 +77,6 @@ export default function HeroSection() {
       aria-label="Featured NaS Research"
 
     >
-      <div className="home-mark-hero__atmosphere" aria-hidden="true" />
 
       <div className="home-carousel__stage" aria-live="off">
       {slides.map((activeSlide, index) => (
