@@ -1,0 +1,307 @@
+{
+  "date": "2026-10-02",
+  "unit": "Pediatric PN glucose tolerance,renal protein assessment and bilirubin response",
+  "baseCommit": "dfb69eea710efd75f167773ca5dbc5b2317d256c",
+  "contentCommit": "8b80581fccb26ab589ea6dfa24597f22c9bc4cab",
+  "branch": "audit/rxprep-content-2026-09-24",
+  "remoteDestination": "github.com/NaS-Research/nas-website.git",
+  "contentRemoteHashObserved": "8b80581fccb26ab589ea6dfa24597f22c9bc4cab",
+  "contentRemoteVerifiedAt": "2026-10-02T05:26:30.562848+00:00",
+  "scope": [
+    "src/data/modules/pediatricParenteralNutrition.js",
+    "src/data/questionBanks/pediatricParenteralNutrition.js",
+    "docs/clinical-audit/module-ledger.json",
+    "docs/clinical-audit/chapter-ledger.json",
+    "docs/clinical-audit/pediatric-parenteral-nutrition-metabolic-response-review.json",
+    "docs/clinical-audit/sequential-resume.json"
+  ],
+  "contentBlobSHA256": {
+    "src/data/modules/pediatricParenteralNutrition.js": "fa98158d724d25f333fd71b1ee066bd9011c1fa9ce241a2eded6d6d9b4f43e5d",
+    "src/data/questionBanks/pediatricParenteralNutrition.js": "4ba2e5f7800cc0ddd24f648dc7e76416234c4fb6398e448a7fda7808ac0e8cb8",
+    "docs/clinical-audit/module-ledger.json": "d262b2fe32353747ff00c6dbb28f58a3514e5d9d9bd4a995d614dc4bb1ef09a0",
+    "docs/clinical-audit/chapter-ledger.json": "4673833359b9b5592ce8fe618415682e0c247f3db61dcdd2e933b7c0df919876",
+    "docs/clinical-audit/pediatric-parenteral-nutrition-metabolic-response-review.json": "3d8bc0571b34a0da9c482137bb7558e1594d55626c523b1400afc006c2b1c4cf",
+    "docs/clinical-audit/sequential-resume.json": "0a0c5ba8c82215418640d26dc4edc4515b6841c2e001e2c4ef3e725ac1daec9a"
+  },
+  "checks": {
+    "isolatedBuildStaticPages": 567,
+    "focusedStructuralBankQuestions": 100,
+    "newlySourceVerifiedBankQuestions": 3,
+    "all12ChoicesIndividuallyReviewed": true,
+    "newTeachingBodies": 0,
+    "wholeBodiesNewlyVerified": 2,
+    "unchangedTeachingBodies": 38,
+    "unchangedChecks": 6,
+    "unchangedCumulativeObjects": 1180,
+    "allSixFiguresUnchanged": true,
+    "all27ReferencesAndAllMetadataPreserved": true,
+    "all40RenderedBodyDOMEquality": true,
+    "correctWrongAt1440And390": {
+      "bankQuestions": 3
+    },
+    "manualDesktopMobilePairsReviewed": 8,
+    "completeSourceTableReflowImagesManuallyReviewed": 4,
+    "sourceTableTextExactlyMatchesOriginalPublisherDOM": true,
+    "runtime320Overflow": true,
+    "remediationAndSavedLocalProgress": true,
+    "moduleAttemptsPerViewport": 2,
+    "moduleBestScore": 10,
+    "moduleLatestScore": 0,
+    "targetOnlyModuleLedgerEntries": [
+      "pediatric-parenteral-nutrition"
+    ],
+    "targetOnlyChapterLedgerEntries": [
+      11
+    ],
+    "candidateCodeMatchesReviewedBuildAndCommittedBlobs": true
+  },
+  "coverage": {
+    "bank": 100,
+    "newlySourceVerifiedBank": 3,
+    "sourceVerifiedBank": 99,
+    "remainingBank": 1,
+    "bodies": 40,
+    "newlySourceVerifiedBodies": 2,
+    "sourceVerifiedBodies": 37,
+    "remainingBodies": 3,
+    "embeddedChecks": 6,
+    "sourceVerifiedEmbeddedChecks": 6,
+    "remainingEmbeddedChecks": 0,
+    "figures": 6,
+    "sourceVerifiedFigures": 6,
+    "remainingFigures": 0,
+    "cumulative": 5,
+    "sourceVerifiedCumulative": 5,
+    "remainingCumulative": 0,
+    "metadataVerified": false,
+    "wholeModuleVerified": false,
+    "wholeChapterVerified": false
+  },
+  "preservation": {
+    "bankIdsPromptsKeysAnchorsRetained": 100,
+    "unchangedBankObjects": 97,
+    "unchangedTeachingBodies": 38,
+    "newBodies": 0,
+    "changedBodies": 2,
+    "unchangedChecks": 6,
+    "unchangedCumulativeObjects": 1180,
+    "allSixFiguresUnchanged": true,
+    "all27ReferencesAndAllMetadataPreserved": true,
+    "architectureBackendAndTrackingUnchanged": true
+  },
+  "sources": [
+    {
+      "title": "ASPEN When Is Parenteral Nutrition Appropriate?",
+      "year": 2017,
+      "url": "https://aspenjournals.onlinelibrary.wiley.com/doi/10.1177/0148607117695251",
+      "completeSectionsRead": [
+        "Question7:all recommendations/full rationale/pediatric considerations",
+        "Question13:all recommendations/full adult and pediatric rationales/transition sections/all four tables"
+      ],
+      "tablesFullyReadAndViewed": [
+        "13.1",
+        "13.2",
+        "13.3",
+        "13.4"
+      ],
+      "qualifications": [
+        "Board-approved consensus; monitoring detail relies heavily on expert opinion.",
+        "Pediatric considerations read separately; adult-only numeric rules not extrapolated.",
+        "No fixed lab schedule, age-independent nutrient range, IDPN dose or new renal protocol adopted.",
+        "Question7 describes supplemental IDPN in selected malnourished children; it does not establish a CKRT dose or a benefit for every child."
+      ]
+    },
+    {
+      "title": "FDA CLINIMIX prescribing information",
+      "year": 2021,
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2021/020734s037lbl.pdf",
+      "sourceReuse": "Full relevant PDF13–17 previously read/viewed in monitoring-source-intake; full14/15/17 text and images rechecked this unit.",
+      "sections": [
+        "5.3infection",
+        "5.5glucose utilization/monitoring/insulin",
+        "5.7hepatobiliary causes/ammonia/early expert assessment",
+        "5.9PNALD",
+        "5.10renal protein/fluid/electrolyte individualization",
+        "5.11monitoring",
+        "8.4pediatric glucose/liver vulnerability"
+      ],
+      "qualification": "Historical2021 label; latest2026 labeling not established. No new product dose adopted."
+    },
+    {
+      "title": "FDA SMOFlipid prescribing information",
+      "year": 2025,
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/207648s013lbl.pdf",
+      "completeSectionsRechecked": [
+        "5.2PNALD/IFALD and other hepatobiliary disorders spanning PDF7–8",
+        "5.4infection monitoring PDF8"
+      ],
+      "allRelevantPagesReadAndViewed": true,
+      "qualification": "Lipid phytosterol contribution is association, not sole causation. Neonatal trial outcomes and numeric bilirubin definitions not generalized or newly adopted."
+    },
+    {
+      "title": "ASPEN Preterm PN guideline2023 and related source review",
+      "evidence": "pediatric-parenteral-nutrition-preterm-lipid-review.json",
+      "reuse": "Unchanged initial/maximal AA sentences re-compared with the prior complete guideline/practice-tool/corrigendum evidence. Guideline population remains limited to appropriate preterm infants, not all neonatal/pediatric renal disease."
+    },
+    {
+      "title": "RxPrep2023 Chapter11",
+      "evidence": "pediatric-parenteral-nutrition-book-calculations-review.json",
+      "recomparison": "Complete private source textPDF158/163/164 re-read: individualized fluid/nutrient planning, glucose intolerance monitoring, dextrose concentrations and calories. Whole Chapter11/Chapter54 not closed."
+    },
+    {
+      "title": "ASPEN2014 PN safety consensus",
+      "evidence": "pediatric-parenteral-nutrition-monitoring-source-intake.json",
+      "reuse": "Previously complete Administration3 source on spurious laboratory values; current page monitoring-parameter paragraph checked. No whole new guideline read claimed."
+    }
+  ],
+  "sourceDiscrepancies": [
+    {
+      "issue": "Original trend paragraph could be read as diagnosing causes from a lab trend.",
+      "resolution": "All clinical themes retained as assessment items; valid repeat/early hepaticexpert review and multifactorial qualification added."
+    },
+    {
+      "issue": "Adult monitoring numeric advice and historical lab schedules coexist with pediatric considerations.",
+      "resolution": "All relevant sections/tables read and viewed; no fixed schedule,universalTGcutoff or adult-onlydose adopted."
+    },
+    {
+      "issue": "Question16 individual renal-assessment concept is supported; its whole linked body includes broaderCKRT/catabolism/wound claims.",
+      "resolution": "Question fullyreviewed;linked wholebody remains pending,so no CKRTprotocol or blanket increase asserted."
+    },
+    {
+      "issue": "Specific neonatalwaterloss and brain/GIR statements lack directly verified approvedsupport.",
+      "resolution": "Original usefulmaterial preserved; exactquestion/bodygaps retained for continuedreview."
+    }
+  ],
+  "calculationEvidence": {
+    "newDistinctAssessmentCalculations": 0,
+    "newCompletedBookExercises": 0,
+    "runningAssessmentCalculations": 728,
+    "runningSeparateCompletedBookExercises": 98
+  },
+  "newlySourceVerifiedQuestionIds": [
+    "pedpn-011",
+    "pedpn-016",
+    "pedpn-038"
+  ],
+  "verifiedBankIds": [
+    "pedpn-001",
+    "pedpn-002",
+    "pedpn-003",
+    "pedpn-004",
+    "pedpn-005",
+    "pedpn-006",
+    "pedpn-007",
+    "pedpn-008",
+    "pedpn-009",
+    "pedpn-010",
+    "pedpn-011",
+    "pedpn-013",
+    "pedpn-014",
+    "pedpn-015",
+    "pedpn-016",
+    "pedpn-017",
+    "pedpn-018",
+    "pedpn-019",
+    "pedpn-020",
+    "pedpn-021",
+    "pedpn-022",
+    "pedpn-023",
+    "pedpn-024",
+    "pedpn-025",
+    "pedpn-026",
+    "pedpn-027",
+    "pedpn-028",
+    "pedpn-029",
+    "pedpn-030",
+    "pedpn-031",
+    "pedpn-032",
+    "pedpn-033",
+    "pedpn-034",
+    "pedpn-035",
+    "pedpn-036",
+    "pedpn-037",
+    "pedpn-038",
+    "pedpn-039",
+    "pedpn-040",
+    "pedpn-050",
+    "pedpn-051",
+    "pedpn-052",
+    "pedpn-053",
+    "pedpn-054",
+    "pedpn-055",
+    "pedpn-056",
+    "pedpn-057",
+    "pedpn-058",
+    "pedpn-059",
+    "pedpn-060",
+    "pedpn-061",
+    "pedpn-062",
+    "pedpn-063",
+    "pedpn-064",
+    "pedpn-065",
+    "pedpn-066",
+    "pedpn-067",
+    "pedpn-068",
+    "pedpn-069",
+    "pedpn-070",
+    "pedpn-071",
+    "pedpn-072",
+    "pedpn-073",
+    "pedpn-074",
+    "pedpn-075",
+    "pedpn-076",
+    "pedpn-077",
+    "pedpn-078",
+    "pedpn-079",
+    "pedpn-080",
+    "pedpn-081",
+    "pedpn-082",
+    "pedpn-083",
+    "pedpn-084",
+    "pedpn-085",
+    "pedpn-086",
+    "pedpn-087",
+    "pedpn-088",
+    "pedpn-089",
+    "pedpn-090",
+    "pedpn-091",
+    "pedpn-092",
+    "pedpn-093",
+    "pedpn-094",
+    "pedpn-095",
+    "pedpn-096",
+    "pedpn-097",
+    "pedpn-098",
+    "pedpn-099",
+    "pedpn-100",
+    "pedpn-101",
+    "pedpn-102",
+    "pedpn-103",
+    "pedpn-104",
+    "pedpn-105",
+    "pedpn-106",
+    "pedpn-107",
+    "pedpn-108",
+    "pedpn-109"
+  ],
+  "pendingQuestionIds": [
+    "pedpn-012"
+  ],
+  "remainingWholeBodyHeadings": [
+    "Build a complete fluid ledger",
+    "Advance according to response",
+    "Do not impose blanket protein restriction"
+  ],
+  "broaderENVerifiedBankUnchanged": 148,
+  "bookAssetsPublished": false,
+  "approvedOutsidePNSourcesUsed": true,
+  "outsideENSourcesUsed": false,
+  "wholeParentModuleVerified": false,
+  "wholeChapterVerified": false,
+  "fullGoalChaptersVerified": 6,
+  "fullGoalChapters": 82,
+  "mainMerge": "not performed",
+  "production": "not verified",
+  "unrelatedWorkingChanges": "Target-onlyHEAD-derivedledgerblobs;allunrelateddrafts retained/excluded.97bankobjects,38bodies,6checks,6figures and1180cumulativeobjects unchanged. Private source text/HTML/images excluded.",
+  "nextAction": "Finish pediatricPN question pedpn-012 and three original whole bodies: Build a complete fluid ledger; Advance according to response; Do not impose blanket protein restriction. Specific neonatal phototherapy/open-warmer water loss, higher neonatal GIR/brain rationale, and broad pediatric CKRT/catabolism/wound protein needs remain source-pending. Use the supplied book and approved existing official PN sources; do not substitute a narrower body and falsely close it. Then reconcile all100questions,40bodies,sixchecks,sixfigures,fivecumulative and complete lesson/module metadata. Order/monitoring now9/9 wholebodies; its metadata remains open. WholeChapter11,Chapter1entry15 and broaderChapter54 remain reviewing. EN source exception remains unresolved."
+}
