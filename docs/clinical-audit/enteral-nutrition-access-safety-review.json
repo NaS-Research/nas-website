@@ -1,0 +1,586 @@
+{
+  "recordedAt": "2026-10-02T17:31:09.249695+00:00",
+  "baseCommit": "98df41d01be3f9931f0d02348b0f8b559aeb56b0",
+  "unit": "Enteral nutrition tube-placement confirmation and connector safety",
+  "approval": {
+    "text": "I approve all. continue working",
+    "scope": "Authorized ASPEN/SCCM EN guidance and FDA guidance/product labels; approval persists"
+  },
+  "sources": [
+    {
+      "id": "safe2017",
+      "url": "https://aspenjournals.onlinelibrary.wiley.com/doi/full/10.1177/0148607116673053",
+      "sourceYear": 2017,
+      "read": "Complete recommendations and rationale Q4.4 adult confirmation (publisher HTML1440–1477), Q4.5 pediatric/neonatal confirmation (1478–1500), and Q9.3 misconnection prevention (3924–3967). Figure11 fully viewed in source browser viewer; caption read. Q4.1–4.3 also completely read, retained for subsequent access review.",
+      "visuals": "Figure11 complete connector diagram viewed. No table in adopted Q4.4/Q4.5/Q9.3. Source diagram not copied into product.",
+      "limits": "Dated safe-practice recommendations, not a claim of latest2026 guidance or a universal bedside protocol. No pH cutoff, insertion technique, diagnostic accuracy estimate, radiation dose, or numeric securement protocol adopted. Full paper not audited; incidental snippets in other sections do not establish review."
+    },
+    {
+      "id": "corrigendum2017",
+      "url": "https://aspenjournals.onlinelibrary.wiley.com/doi/10.1177/0148607117697291",
+      "sourceYear": 2017,
+      "read": "Complete March2,2017 corrigendum substantive passage: corrects printed preoperative human-milk/infant-formula fasting intervals, online text updated.",
+      "limits": "Correction does not change adopted placement or connector subsections. No fasting instruction added."
+    },
+    {
+      "id": "fdaTips",
+      "url": "https://www.fda.gov/medical-devices/medical-device-connectors/tips-health-care-providers-reduce-medical-device-misconnections",
+      "read": "Complete substantive tips page, assessing devices, clear labeling, tracing new/replaced lines patient-to-origin, rechecking before each use and transfers, training and reporting. No tables or figures in this page.",
+      "limits": "General device-misconnection advice, applied to enteral connections without inferring confirmation of internal tip location."
+    },
+    {
+      "id": "fda2015",
+      "url": "https://www.fda.gov/media/83412/download",
+      "sourceYear": 2015,
+      "read": "Official13-page guidance PDF. Complete adopted I introduction PDF4–5, II definitions PDF5–6, III background PDF6–7, IV scope PDF7, V.A rigid/semirigid connectors PDF8, V.D–F colors/labels/adapters/syringes/labeling PDF10–11. Rendered PDF4,5,10,11 viewed, including Luer lock/slip illustration.",
+      "limits": "Nonbinding engineering guidance. No current standards-recognition table or legally mandatory ENFit claim, universal adapter ban, universal enteral connector compatibility, or manufacturing-test protocol adopted."
+    }
+  ],
+  "questionReview": [
+    {
+      "question": {
+        "id": "enteral-nutrition-012",
+        "question": "Under the 2017 ASPEN recommendations, which method confirms an adult's blindly placed short-term feeding tube before its initial use?",
+        "choices": [
+          "Radiographic confirmation",
+          "Air auscultation alone after inserting the tube",
+          "Aspirate pH testing alone without radiographic confirmation",
+          "Absence of coughing or respiratory distress during insertion"
+        ],
+        "answer": 0,
+        "rationale": "Obtain and properly interpret a radiograph showing the entire tube course and tip before initial feeding, fluid, or medication administration in this adult case. Auscultation is unreliable, pH alone does not replace the recommended initial radiograph, and misplacement may occur without respiratory symptoms. Pediatric and neonatal verification requires its own risk-based protocol.",
+        "reviewHref": "#access-route"
+      },
+      "status": "verified",
+      "stemVerified": true,
+      "oneBestAnswerVerified": true,
+      "rationaleVerified": true,
+      "sourceEvidence": [
+        "safe2017Q4.4 recommendations1/3/8 and full rationale: initial adult radiograph, entire course/tip, asymptomatic malposition and pH-alone limitations",
+        "safe2017Q4.5 full population distinction"
+      ],
+      "choicesReviewed": [
+        {
+          "text": "Radiographic confirmation",
+          "keyed": true,
+          "review": "Recommended initial imaging in the stated adult blindly placed short-term tube case."
+        },
+        {
+          "text": "Air auscultation alone after inserting the tube",
+          "keyed": false,
+          "review": "Auscultation cannot distinguish gastric from airway placement reliably."
+        },
+        {
+          "text": "Aspirate pH testing alone without radiographic confirmation",
+          "keyed": false,
+          "review": "Aspirate pH is an adjunct; alone it does not replace the adult initial radiograph recommendation."
+        },
+        {
+          "text": "Absence of coughing or respiratory distress during insertion",
+          "keyed": false,
+          "review": "Misplacement can be asymptomatic."
+        }
+      ]
+    },
+    {
+      "question": {
+        "id": "enteral-nutrition-013",
+        "question": "Which finding most strongly requires reassessment for possible feeding-tube migration before continued use?",
+        "choices": [
+          "A change in external tube length with new coughing",
+          "An ENFit syringe still connects to the tube",
+          "A previous placement image is available and no subsequent clinical change is reported",
+          "The documented external marking is unchanged and no new symptoms are reported"
+        ],
+        "answer": 0,
+        "rationale": "Changed external length with new coughing raises concern for displacement: hold feeding, fluids, and medication through the tube until the intended location is confirmed. These findings do not diagnose the new tip location. A connector that fits and a previous image cannot resolve new migration concerns; unchanged markings and no new symptoms do not prove ongoing placement either.",
+        "reviewHref": "#access-route"
+      },
+      "status": "verified",
+      "stemVerified": true,
+      "oneBestAnswerVerified": true,
+      "rationaleVerified": true,
+      "sourceEvidence": [
+        "safe2017Q4.4 recommendations4/5/8, full rationale; Q4.5 point-in-time radiograph",
+        "safe2017Q9.3 and FDA connector guidance: connector compatibility does not supply location evidence"
+      ],
+      "choicesReviewed": [
+        {
+          "text": "A change in external tube length with new coughing",
+          "keyed": true,
+          "review": "Changed external length with cough warrants hold and confirmation of intended position."
+        },
+        {
+          "text": "An ENFit syringe still connects to the tube",
+          "keyed": false,
+          "review": "Connector fit provides no internal tip information."
+        },
+        {
+          "text": "A previous placement image is available and no subsequent clinical change is reported",
+          "keyed": false,
+          "review": "Prior image with no reported new change is less compelling than the new migration findings; prior image still is not permanent assurance."
+        },
+        {
+          "text": "The documented external marking is unchanged and no new symptoms are reported",
+          "keyed": false,
+          "review": "No new marking change or symptom is less compelling, without proving correct position."
+        }
+      ]
+    },
+    {
+      "question": {
+        "id": "enteral-nutrition-014",
+        "question": "What safety problem is ENFit designed to reduce?",
+        "choices": [
+          "Wrong-route connection between enteral and nonenteral systems",
+          "Use of a medication formulation that is unsuitable for the tube",
+          "Use of a feeding tube whose tip has migrated",
+          "Contamination of formula during preparation or administration"
+        ],
+        "answer": 0,
+        "rationale": "ENFit connector geometry is designed to reduce cross-system misconnections. It does not establish medication suitability, tube-tip position, or formula sterility. Trace the line and verify the connection before use, use compatible enteral equipment, and do not rely on color or labeling alone.",
+        "reviewHref": "#access-route"
+      },
+      "status": "verified",
+      "stemVerified": true,
+      "oneBestAnswerVerified": true,
+      "rationaleVerified": true,
+      "sourceEvidence": [
+        "safe2017Q9.3 full recommendations/rationale and Figure11; fda2015I/V.D/V.E; fdaTips before-each-use checks",
+        "Medication formulation limitation crosschecked with previously verified book formulation body and EN116"
+      ],
+      "choicesReviewed": [
+        {
+          "text": "Wrong-route connection between enteral and nonenteral systems",
+          "keyed": true,
+          "review": "ENFit geometry addresses cross-system misconnection."
+        },
+        {
+          "text": "Use of a medication formulation that is unsuitable for the tube",
+          "keyed": false,
+          "review": "Medication formulation suitability requires separate verification."
+        },
+        {
+          "text": "Use of a feeding tube whose tip has migrated",
+          "keyed": false,
+          "review": "A connector does not establish internal tip location."
+        },
+        {
+          "text": "Contamination of formula during preparation or administration",
+          "keyed": false,
+          "review": "Connector geometry does not establish sterile formula handling."
+        }
+      ]
+    },
+    {
+      "question": {
+        "id": "enteral-nutrition-106",
+        "question": "A patient repeatedly coughs during feeding and the external tube marking has changed by 8 cm. Which interpretation or management plan is most defensible?",
+        "choices": [
+          "Stop use and verify tube position before further feeding or medication",
+          "Continue feeding because the previous placement radiograph was satisfactory",
+          "Continue feeding because an ENFit syringe still connects correctly",
+          "Resume after air auscultation alone without resolving the placement concern"
+        ],
+        "answer": 0,
+        "rationale": "Stop feeding and do not give fluids or medication through the tube until its intended position is confirmed. New coughing and changed external length raise concern for migration but do not identify the tip location. Reassess placement and obtain radiography if uncertain; a previous image, unchanged connector fit, or auscultation alone cannot settle the new concern.",
+        "reviewHref": "#access-route"
+      },
+      "status": "verified",
+      "stemVerified": true,
+      "oneBestAnswerVerified": true,
+      "rationaleVerified": true,
+      "sourceEvidence": [
+        "safe2017Q4.4 recommendations4/5/8 and full adult rationale; Q4.5 point-in-time limitation",
+        "safe2017Q9.3 and fda2015 connector scope"
+      ],
+      "choicesReviewed": [
+        {
+          "text": "Stop use and verify tube position before further feeding or medication",
+          "keyed": true,
+          "review": "Hold and confirm intended position before continued use."
+        },
+        {
+          "text": "Continue feeding because the previous placement radiograph was satisfactory",
+          "keyed": false,
+          "review": "Previous image only established location at that time."
+        },
+        {
+          "text": "Continue feeding because an ENFit syringe still connects correctly",
+          "keyed": false,
+          "review": "ENFit fit does not resolve new migration concern."
+        },
+        {
+          "text": "Resume after air auscultation alone without resolving the placement concern",
+          "keyed": false,
+          "review": "Auscultation alone is unreliable."
+        }
+      ]
+    }
+  ],
+  "teachingReview": [
+    {
+      "heading": "Confirm before first use",
+      "body": "The 2017 ASPEN safe-practice recommendations call for a properly obtained and interpreted radiograph showing the entire tube course and tip before an adult's blindly placed short-term feeding tube is first used for feeds, fluids, or medications. Air auscultation alone is unreliable, and absence of respiratory symptoms does not establish placement. Mark and document external length, check securement, and reassess possible migration; hold use until the intended position is confirmed when location is uncertain. A previous image establishes location only at that time. Pediatric and neonatal confirmation requires a population-specific protocol that weighs radiation exposure, availability, and misplacement risk. The same recommendations support two nonradiologic methods, such as length measurement and aspirate pH testing, when repeated imaging is not feasible, with radiography for inconclusive results. They identify radiography as best practice for high-risk children, including neonates and sedated or critically ill children. Neither population should rely on auscultation alone.",
+      "status": "whole body verified",
+      "wholeBodyVerified": true,
+      "clauseSource": [
+        {
+          "claim": "Dated adult initial radiograph with full course and tip before feeds/fluids/medications",
+          "source": "safe2017Q4.4 recommendations1/8 and complete rationale"
+        },
+        {
+          "claim": "Auscultation alone unreliable; no respiratory symptoms does not prove placement",
+          "source": "safe2017Q4.4 recommendation3 and complete rationale"
+        },
+        {
+          "claim": "Document external length, assess securement/migration; hold uncertain use and confirm intended position",
+          "source": "safe2017Q4.4 recommendations4/5/8 and complete rationale; clinical hold interpretation preserves safety pending confirmation"
+        },
+        {
+          "claim": "Prior image proves location only at that moment",
+          "source": "safe2017Q4.5 complete rationale; same physical limitation applies to adults"
+        },
+        {
+          "claim": "Pediatric/neonatal population-specific radiation/availability/risk assessment; two methods when repeated imaging infeasible; radiograph if inconclusive and best practice in high-risk children",
+          "source": "safe2017Q4.5 all recommendations and complete rationale, including neonates/sedation/critical illness; no numeric pH threshold or insertion procedure adopted"
+        }
+      ]
+    },
+    {
+      "heading": "Prevent wrong-route connections",
+      "body": "Enteral-specific connectors such as ENFit are designed to reduce wrong-route connections between enteral and nonenteral systems, including intravenous lines. Before each use, verify the connection and trace the line from the patient to its source; repeat this check when replacing equipment or transferring care. Label enteral equipment and use a compatible enteral syringe, but do not rely on color or labels alone. Never force a connection or modify a connector to defeat its safety features. Check device-specific compatibility before using an enteral transition adapter. A connector that fits does not confirm the tube tip or establish that a medication formulation is suitable for that tube.",
+      "status": "whole body verified",
+      "wholeBodyVerified": true,
+      "clauseSource": [
+        {
+          "claim": "ENFit reduces enteral/nonenteral including IV misconnections",
+          "source": "safe2017Q9.3 complete recommendations/rationale/Figure11; fda2015I/V.A/V.D"
+        },
+        {
+          "claim": "Before each use connection check and patient-to-origin tracing; repeat for new/replaced equipment and transfers",
+          "source": "fdaTips complete substantive list; safe2017Q9.3 recommendations6/7"
+        },
+        {
+          "claim": "Label and compatible enteral syringe; labels/color alone insufficient",
+          "source": "fdaTips assessment/labeling; fda2015V.D/V.E; safe2017Q9.3 recommendations1/8 and rationale"
+        },
+        {
+          "claim": "Do not force/modify safeguards; device-specific enteral transition adapter compatibility",
+          "source": "safe2017Q9.3 recommendation5/rationale; fda2015V.E/V.F; forcing limitation preserves safety features"
+        },
+        {
+          "claim": "Connector fit neither verifies tip nor medication formulation suitability",
+          "source": "Contrast between safe2017Q4.4/Q4.5 placement evidence and Q9.3 connector scope; prior book formulation teaching/EN116"
+        }
+      ]
+    }
+  ],
+  "embeddedCheckReview": "No new embedded check closure; all six unchanged. Access check still requires complete destination/delivery evidence.",
+  "figureReview": "No module figure closed. All six files and metadata unchanged. Source Figure11 viewed for connector evidence, distinct from pending access-route module figure.",
+  "sourceDiscrepancies": [
+    {
+      "issue": "Generic initial placement statement obscured adult and pediatric/neonatal populations.",
+      "resolution": "Dated adult radiograph recommendation and separate pediatric risk-based explanation; no pH cutoff adopted."
+    },
+    {
+      "issue": "Connector fit and a previous radiograph could be interpreted as evidence of ongoing internal position.",
+      "resolution": "Explicitly separate internal placement from connector compatibility; new migration concern requires confirmation before resumed use."
+    },
+    {
+      "issue": "ASPEN2017 has a published corrigendum.",
+      "resolution": "Complete correction read; preoperative fasting correction does not alter adopted sections. No fasting claims adopted."
+    },
+    {
+      "issue": "Safety features could be reduced to color/label checks or an absolute adapter ban.",
+      "resolution": "Geometry plus tracing/each-use checks; transition adapter compatibility device-specific; no forcing/modifying safeguards."
+    }
+  ],
+  "preservation": {
+    "bankObjectsUnchanged": 104,
+    "cumulativeObjectsUnchanged": 1180,
+    "wholeBodyObjectsUnchanged": 34,
+    "all36HeadingsStable": true,
+    "all6ChecksUnchanged": true,
+    "all6FiguresUnchanged": true,
+    "allExistingMetadataAnd9ReferencesUnchanged": true,
+    "twoFDAPrimaryReferencesAdded": true,
+    "pathsIdsAndAnswerIndicesPreserved": true,
+    "architectureBackendAndAccountTrackingUnchanged": true,
+    "noNewClinicalDoseProtocolOrCalculation": true
+  },
+  "coverage": {
+    "bank": 108,
+    "verifiedBank": 75,
+    "remainingBank": 33,
+    "verifiedBankIds": [
+      "enteral-nutrition-060",
+      "enteral-nutrition-061",
+      "enteral-nutrition-062",
+      "enteral-nutrition-063",
+      "enteral-nutrition-064",
+      "enteral-nutrition-065",
+      "enteral-nutrition-066",
+      "enteral-nutrition-067",
+      "enteral-nutrition-068",
+      "enteral-nutrition-069",
+      "enteral-nutrition-070",
+      "enteral-nutrition-071",
+      "enteral-nutrition-072",
+      "enteral-nutrition-073",
+      "enteral-nutrition-074",
+      "enteral-nutrition-075",
+      "enteral-nutrition-076",
+      "enteral-nutrition-077",
+      "enteral-nutrition-078",
+      "enteral-nutrition-079",
+      "enteral-nutrition-080",
+      "enteral-nutrition-081",
+      "enteral-nutrition-082",
+      "enteral-nutrition-083",
+      "enteral-nutrition-084",
+      "enteral-nutrition-085",
+      "enteral-nutrition-086",
+      "enteral-nutrition-087",
+      "enteral-nutrition-088",
+      "enteral-nutrition-089",
+      "enteral-nutrition-109",
+      "enteral-nutrition-110",
+      "enteral-nutrition-111",
+      "enteral-nutrition-112",
+      "enteral-nutrition-113",
+      "enteral-nutrition-114",
+      "enteral-nutrition-001",
+      "enteral-nutrition-115",
+      "enteral-nutrition-033",
+      "enteral-nutrition-035",
+      "enteral-nutrition-036",
+      "enteral-nutrition-037",
+      "enteral-nutrition-040",
+      "enteral-nutrition-042",
+      "enteral-nutrition-093",
+      "enteral-nutrition-094",
+      "enteral-nutrition-098",
+      "enteral-nutrition-107",
+      "enteral-nutrition-116",
+      "enteral-nutrition-117",
+      "enteral-nutrition-006",
+      "enteral-nutrition-007",
+      "enteral-nutrition-008",
+      "enteral-nutrition-015",
+      "enteral-nutrition-016",
+      "enteral-nutrition-018",
+      "enteral-nutrition-021",
+      "enteral-nutrition-030",
+      "enteral-nutrition-049",
+      "enteral-nutrition-092",
+      "enteral-nutrition-099",
+      "enteral-nutrition-105",
+      "enteral-nutrition-023",
+      "enteral-nutrition-041",
+      "enteral-nutrition-090",
+      "enteral-nutrition-104",
+      "enteral-nutrition-002",
+      "enteral-nutrition-003",
+      "enteral-nutrition-004",
+      "enteral-nutrition-005",
+      "enteral-nutrition-100",
+      "enteral-nutrition-012",
+      "enteral-nutrition-013",
+      "enteral-nutrition-014",
+      "enteral-nutrition-106"
+    ],
+    "remainingBankIds": [
+      "enteral-nutrition-009",
+      "enteral-nutrition-010",
+      "enteral-nutrition-011",
+      "enteral-nutrition-017",
+      "enteral-nutrition-019",
+      "enteral-nutrition-020",
+      "enteral-nutrition-022",
+      "enteral-nutrition-024",
+      "enteral-nutrition-025",
+      "enteral-nutrition-026",
+      "enteral-nutrition-027",
+      "enteral-nutrition-028",
+      "enteral-nutrition-029",
+      "enteral-nutrition-031",
+      "enteral-nutrition-032",
+      "enteral-nutrition-034",
+      "enteral-nutrition-038",
+      "enteral-nutrition-039",
+      "enteral-nutrition-043",
+      "enteral-nutrition-044",
+      "enteral-nutrition-045",
+      "enteral-nutrition-046",
+      "enteral-nutrition-047",
+      "enteral-nutrition-048",
+      "enteral-nutrition-050",
+      "enteral-nutrition-091",
+      "enteral-nutrition-095",
+      "enteral-nutrition-096",
+      "enteral-nutrition-097",
+      "enteral-nutrition-101",
+      "enteral-nutrition-102",
+      "enteral-nutrition-103",
+      "enteral-nutrition-108"
+    ],
+    "bodies": 36,
+    "verifiedBodies": 20,
+    "remainingBodies": 16,
+    "embeddedChecks": 6,
+    "verifiedEmbeddedChecks": 3,
+    "remainingEmbeddedChecks": 3,
+    "figures": 6,
+    "verifiedFigures": 1,
+    "cumulative": 5,
+    "sourceVerifiedCumulative": 4,
+    "pendingCumulative": [
+      "enteral-nutrition-028"
+    ],
+    "metadata": "Full module and lesson metadata remain pending.",
+    "remainingFigures": 5,
+    "wholeModuleVerified": false,
+    "wholeChapterVerified": false
+  },
+  "remainingCoverageReview": {
+    "questionIds": [
+      "enteral-nutrition-009",
+      "enteral-nutrition-010",
+      "enteral-nutrition-011",
+      "enteral-nutrition-017",
+      "enteral-nutrition-019",
+      "enteral-nutrition-020",
+      "enteral-nutrition-022",
+      "enteral-nutrition-024",
+      "enteral-nutrition-025",
+      "enteral-nutrition-026",
+      "enteral-nutrition-027",
+      "enteral-nutrition-028",
+      "enteral-nutrition-029",
+      "enteral-nutrition-031",
+      "enteral-nutrition-032",
+      "enteral-nutrition-034",
+      "enteral-nutrition-038",
+      "enteral-nutrition-039",
+      "enteral-nutrition-043",
+      "enteral-nutrition-044",
+      "enteral-nutrition-045",
+      "enteral-nutrition-046",
+      "enteral-nutrition-047",
+      "enteral-nutrition-048",
+      "enteral-nutrition-050",
+      "enteral-nutrition-091",
+      "enteral-nutrition-095",
+      "enteral-nutrition-096",
+      "enteral-nutrition-097",
+      "enteral-nutrition-101",
+      "enteral-nutrition-102",
+      "enteral-nutrition-103",
+      "enteral-nutrition-108"
+    ],
+    "wholeBodyHeadings": [
+      "Recognize the patient who needs support",
+      "Start with the stomach when appropriate",
+      "Move beyond the pylorus for a reason",
+      "Match method to access and tolerance",
+      "Advance according to risk",
+      "Manage interruptions deliberately",
+      "Use standard formulas when digestion works",
+      "Use density to solve a volume problem",
+      "Treat fiber and specialty claims carefully",
+      "Build the water prescription",
+      "Separate medications from formula and each other",
+      "Respect the tube tip",
+      "Prevent aspiration with a bundle",
+      "Use gastric residuals selectively",
+      "Find the cause of diarrhea and clogging",
+      "Monitor delivery and metabolic safety"
+    ],
+    "embeddedCheckLessons": [
+      "access-route",
+      "medication-administration",
+      "monitoring-complications"
+    ],
+    "figureTypes": [
+      "access-route",
+      "delivery-prescription",
+      "formula-selection",
+      "medication-administration",
+      "monitoring-complications"
+    ],
+    "cumulativeIds": [
+      "enteral-nutrition-028"
+    ],
+    "fullMetadataPending": true
+  },
+  "calculationEvidence": {
+    "newDistinctAssessmentCalculations": 0,
+    "newCompletedBookExercises": 0,
+    "runningAssessmentCalculations": 728,
+    "runningSeparateCompletedBookExercises": 98
+  },
+  "validation": {
+    "build": {
+      "status": "passed",
+      "staticPages": 567,
+      "scope": "Exact HEAD archive plus two reviewed product files"
+    },
+    "assessmentStructure": {
+      "status": "passed",
+      "bankQuestions": 108,
+      "hardErrors": [],
+      "doesNotEstablishClinicalAccuracy": true
+    },
+    "browser": {
+      "status": "passed",
+      "results": [
+        {
+          "width": 1440,
+          "wholeBodyDOMEquality": 36,
+          "allSixMetadataDOMEquality": true,
+          "all11ReferenceDOMEquality": true,
+          "fourChangedQuestionsCorrectWrongFeedback": true,
+          "allSixFigureDOMPresence": true,
+          "remediationAnchor": true,
+          "noHorizontalOverflow": true,
+          "accountPersistence": "not tested; unauthenticated local preview"
+        },
+        {
+          "width": 390,
+          "wholeBodyDOMEquality": 36,
+          "allSixMetadataDOMEquality": true,
+          "all11ReferenceDOMEquality": true,
+          "fourChangedQuestionsCorrectWrongFeedback": true,
+          "allSixFigureDOMPresence": true,
+          "remediationAnchor": true,
+          "noHorizontalOverflow": true,
+          "accountPersistence": "not tested; unauthenticated local preview"
+        }
+      ],
+      "pageErrors": []
+    },
+    "contentHashes": {
+      "src/data/modules/enteralNutrition.js": "83d666c7401e35c58d7328454a2c906e4f6e03a7897a9c613d29ffb5bbec2426",
+      "src/data/questionBanks/enteralNutrition.js": "19b56fd20d4ed1e064609a153a6d6b14192f79f550e496e658ce486cb88c9af7"
+    },
+    "manualReview": {
+      "status": "passed",
+      "twoChangedBodiesDesktopMobileViewed": true,
+      "fourChangedQuestionsCorrectWrongDesktopMobileViewed": true,
+      "all11ReferencesDesktopMobileViewed": true,
+      "unobstructedWrongAnswerViewportRecapturesBothWidthsViewed": true,
+      "captureCorrection": "Initial element screenshots sometimes clipped stems while scrolling; instant-scroll viewport recaptures assert full target bounds and were visually inspected. No product change required.",
+      "accountPersistence": "Unauthenticated local preview only; no backend/account/production validation claim."
+    }
+  },
+  "release": {
+    "branch": "audit/rxprep-content-2026-09-24",
+    "commit": "pending",
+    "push": "pending",
+    "receipt": "sequential-release-enteral-access-safety-2026-10-02.json",
+    "mainMerge": "not performed",
+    "production": "not verified"
+  },
+  "wholeGoalComplete": false
+}
