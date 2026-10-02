@@ -105,8 +105,8 @@
     "branch": "audit/rxprep-content-2026-09-24",
     "baseCommit": "526e809a41658c61f7f04040c6ad11be6ace6c0d",
     "remoteVerifiedAtStart": true,
-    "commit": "pending",
-    "push": "pending",
+    "commit": "7259050af8a7e4602b7ebaf6b66ae680b758aef9",
+    "push": "verified exact remote hash",
     "production": "not verified",
     "receipt": "sequential-release-pediatric-pn-starter-order-2026-10-02.json",
     "contentCommits": [
@@ -160,14 +160,12 @@
       "4e5a8d9f9fc718e50c63942f6f0c29908ef6046b",
       "7d50214bbc69dde401826fe31c641a899b33f28f",
       "724158aefc2b761f4ae1014d5cf133b6008b7898",
-      "8b80581fccb26ab589ea6dfa24597f22c9bc4cab"
+      "8b80581fccb26ab589ea6dfa24597f22c9bc4cab",
+      "7259050af8a7e4602b7ebaf6b66ae680b758aef9"
     ],
     "previousVerifiedContentCommit": "8b80581fccb26ab589ea6dfa24597f22c9bc4cab",
-    "remoteVerifiedAt": "2026-10-02T05:26:30.562848+00:00",
-    "baseReceipt": "sequential-release-pediatric-pn-metabolic-response-2026-10-02.json",
-    "receiptCommit": "4e1f01fa1b38d57a8a5521d6c1872ee9fec2803b",
-    "receiptRemoteHashObserved": "4e1f01fa1b38d57a8a5521d6c1872ee9fec2803b",
-    "receiptRemoteVerifiedAt": "2026-10-02T05:27:12.830905+00:00"
+    "remoteVerifiedAt": "2026-10-02T05:49:36.830469+00:00",
+    "baseReceipt": "sequential-release-pediatric-pn-metabolic-response-2026-10-02.json"
   },
   "openIssues": [
     "Remaining Chapter 1 checklist entries and all reference tables require source review.",
@@ -1967,7 +1965,7 @@
     "previousTurnEvidence": "Status-only turn verified live counts without changing content/release state.",
     "noProgressRevalidation": "HEAD526e809 and remote match; scoped code and index clean before this unit; approved starter/order work available.",
     "currentTurnClassification": "progress",
-    "currentTurnEvidence": "Pediatric PN starter/order reconciliation: two original starter-PN bodies and one distinct question added and source verified; prescribed-dosing-weight instructions corrected in fluid and order metadata. Complete9-body/9-question order lesson verified; expanded7-body/9-question decision lesson reverified. Coverage100/101bank,39/42bodies,6/6checks,6/6figures,5/5cumulative;one question,three original bodies and remaining metadata/final module reconciliation open. Final source/runtime/manual checks passed; scoped release in progress.",
+    "currentTurnEvidence": "Source-reviewed starter bridge bodies and distinct041 added; fluid/order dosing-weight metadata corrected; full daily-order lesson verified and expanded decision lesson reverified. Isolated567page build,101question structure,42bodyDOM,10bankobjects/onecheck correct-wrong,three lesson metadataDOM,28referenceDOM and12actuallyvieweddesktop/mobilepairs passed. Six scopedfiles committed and exact remote content hash verified. Coverage100/101bank,39/42bodies;fullmodule/chapter remain open.",
     "genuineBlocker": false,
     "wholeGoalComplete": false,
     "nextAction": "Finish retained pediatric PN question pedpn-012 and three original whole bodies: Build a complete fluid ledger; Advance according to response; Do not impose blanket protein restriction. Neonatal phototherapy/open-warmer water loss, higher neonatal GIR/brain rationale and broad pediatric CKRT/catabolism/wound protein needs still require directly verified support. Pending human source-expansion request is unanswered; do not treat elapsed time as approval. Continue authorized source review and remaining fluid/protein/module metadata and final101-question/42-body reconciliation. Decision/access and order/monitoring lessons are whole verified; do not repeat their original source gaps as open. Whole Chapter11, Chapter1 entry15, broader Chapter54 and the separate EN source exception remain open."
