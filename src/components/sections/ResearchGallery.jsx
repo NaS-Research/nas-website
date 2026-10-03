@@ -118,13 +118,6 @@ export default function ResearchGallery({ studies }) {
     perspectives: studies.filter(study => study.type === "Institutional Essay" || study.type === "Release"),
     publications: studies.filter(study => study.type !== "Institutional Essay" && study.type !== "Release"),
   }), [studies]);
-  const gallery = useRef(null);
-  const step = () => {
-    gallery.current?.querySelectorAll(".research-gallery__rail").forEach(element => {
-      const card = element.querySelector("a");
-      if (card) element.scrollLeft += card.getBoundingClientRect().width + 12;
-    });
-  };
   const [paused, setPaused] = useState(false);
   // Start still for SSR; enable movement only after checking the visitor's preference.
   const [reduced, setReduced] = useState(true);
@@ -135,7 +128,7 @@ export default function ResearchGallery({ studies }) {
     return () => media.removeEventListener("change", update);
   }, []);
   if (!studies.length) return null;
-  return <section ref={gallery} id="current-research" className="research-gallery" aria-labelledby="research-gallery-title">
+  return <section id="current-research" className="research-gallery" aria-labelledby="research-gallery-title">
     <header className="research-gallery__header">
       <p>Research at NaS</p><h2 id="research-gallery-title">Selected research.</h2>
       <Link href="/research">Explore all research <span aria-hidden="true">↗</span></Link>
@@ -145,7 +138,6 @@ export default function ResearchGallery({ studies }) {
     <div className="research-gallery__footer">
       <span>Research, releases & perspectives</span>
       <div className="research-gallery__controls" role="group" aria-label="Research gallery controls">
-      <button onClick={step} aria-label="Show more research">←</button>
       {!reduced && <button onClick={() => setPaused(value => !value)} aria-label={paused ? "Play research gallery" : "Pause research gallery"} aria-pressed={paused}><span aria-hidden="true">{paused ? "▶" : "Ⅱ"}</span> {paused ? "Play" : "Pause"}</button>}
       </div>
     </div>
