@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-03T18:42:08.168217+00:00",
+  "updated": "2026-10-03T18:54:12.489388+00:00",
   "status": "working",
   "sourcePolicy": {
     "educational": "Supplied RxPrep 2023 book remains primary; explicit user approval on 2026-10-01 authorizes the existing official ASPEN, USP, FDA and CDC references for remaining PN clinical and safety claims. Explicit human approval on 2026-10-02 authorizes primary neonatal and pediatric renal nutrition guidelines for the retained pediatric PN water-loss, GIR/brain, CKRT/catabolism/wound protein claims, and primary ASPEN/SCCM enteral clinical guidance plus FDA guidance/product labeling for the unfinished EN audit.",
@@ -89,7 +89,7 @@
     "dependencyPrintedPage": 150,
     "dependencyPdfPage": 158,
     "sectionAudit": "Final current EN source-object comparison complete:36/36 whole teaching bodies,107/108 full module questions,6/6 embedded checks,6/6 complete figures,5/5 associated cumulative items and78/79 metadata statements reconciled. Five fully supported lessons verified; formula-selection remains reviewing for EN031 and concepts[3]. Full private book EN section and fluid context visually reread;37 existing question computations,5 worked bodies,2 embedded calculations and6 book exercises independently rechecked. No product changes or new questions/calculation/module/chapter closures. Retained production build matches927 tracked product files; fresh desktop/mobile six-figure DOM and all six correct/incorrect check feedback,anchors,320px overflow and visual review passed.",
-    "nextAction": "Await the pending human source-expansion answer or find complete support within existing approved sources; then finish whole-module comparison and closure. Do not silently remove useful retained physiology or bypass the source rule. Chapter1 fluid-needs and Chapter11/54 dependencies remain open.",
+    "nextAction": "Await direct source-expansion response. If approved, read the complete relevant National Academies scope and tables/figures, source-review/correct the full EN031 object and add matching original teaching if needed; compare the entire current EN module again, validate, then close only if all requirements pass. If source limits retained, keep the unresolved question/concept and full module open; do not skip the topic or delete useful content to bypass the source rule.",
     "nextDependencyPrintedPage": 161,
     "nextDependencyPdfPage": 169
   },
@@ -2119,14 +2119,14 @@
   },
   "latestGoalContinuationAudit": {
     "currentTurnClassification": "progress",
-    "previousGoalTurnClassification": "no progress",
-    "previousGoalTurnEvidence": "Previous status-only response checked the committed module/chapter counts. The earlier source-comparison work is now reconciled into current exact-object evidence and five lesson closures.",
-    "currentTurnEvidence": "Final current EN source-object comparison complete:36/36 whole teaching bodies,107/108 full module questions,6/6 embedded checks,6/6 complete figures,5/5 associated cumulative items and78/79 metadata statements reconciled. Five fully supported lessons verified; formula-selection remains reviewing for EN031 and concepts[3]. Full private book EN section and fluid context visually reread;37 existing question computations,5 worked bodies,2 embedded calculations and6 book exercises independently rechecked. No product changes or new questions/calculation/module/chapter closures. Retained production build matches927 tracked product files; fresh desktop/mobile six-figure DOM and all six correct/incorrect check feedback,anchors,320px overflow and visual review passed. Content commit f642e4597d5f86c29c9401924f129c82dff983f3 pushed and exact remote observed.",
-    "genuineBlocker": false,
+    "previousGoalTurnClassification": "progress",
+    "previousGoalTurnEvidence": "Final whole-object reconciliation and five lesson closures committedf642e459 with exact remote receipt7d7915c0.",
+    "currentTurnEvidence": "New approved-domain candidate screen ruled out adoption of FDA-hosted corporate GRAS submission and two abstract-only ASPEN invited-review pages. No full guideline or renal physiology review inferred from metadata. Exact pending question/concept and topic-specific National Academies request recorded; no clinical/product changes or closures.",
+    "genuineBlocker": true,
     "consecutiveImpasseTurns": 0,
     "wholeGoalComplete": false,
-    "nextAction": "Await the pending human source-expansion answer or find complete support within existing approved sources; then finish whole-module comparison and closure. Do not silently remove useful retained physiology or bypass the source rule. Chapter1 fluid-needs and Chapter11/54 dependencies remain open.",
-    "goalToolState": "Original82chapterobjective remains active."
+    "nextAction": "Await direct source-expansion response. If approved, read the complete relevant National Academies scope and tables/figures, source-review/correct the full EN031 object and add matching original teaching if needed; compare the entire current EN module again, validate, then close only if all requirements pass. If source limits retained, keep the unresolved question/concept and full module open; do not skip the topic or delete useful content to bypass the source rule.",
+    "goalToolState": "Original82chaptergoal active; current turn made new source-provenance progress, not a verified process wait."
   },
   "latestPediatricPnMaintenanceFluidReview": {
     "evidence": "pediatric-parenteral-nutrition-maintenance-fluid-review.json",
@@ -4796,5 +4796,25 @@
     ],
     "wholeModuleVerified": false,
     "wholeChapterVerified": false
+  },
+  "pendingEnteralRenalSoluteSourceExpansion": {
+    "status": "awaiting direct human response",
+    "authorized": false,
+    "requestedReference": "National Academies Dietary Reference Intakes for Water, Potassium, Sodium, Chloride, and Sulfate",
+    "requestedScope": "Remaining renal-solute EN031 and formula-selection.concepts[3] only",
+    "questionPresentedAt": "2026-10-03T18:54:12.489388+00:00",
+    "evidence": "enteral-nutrition-renal-source-screening.json",
+    "noResponseIsNotApproval": true
+  },
+  "latestEnteralRenalSoluteSourceScreening": {
+    "evidence": "enteral-nutrition-renal-source-screening.json",
+    "candidateDecisions": 3,
+    "newClinicalClaims": 0,
+    "remainingQuestions": [
+      "enteral-nutrition-031"
+    ],
+    "remainingMetadata": [
+      "submodules.formula-selection.concepts[3]"
+    ]
   }
 }

@@ -1,0 +1,118 @@
+{
+  "updated": "2026-10-03T18:54:12.489388+00:00",
+  "unit": "Remaining EN renal-solute source screening and precise authorization checkpoint",
+  "baseCommit": "7d7915c01c28356db31cc57e849ae67f460d407d",
+  "status": "Source screening complete; clinical question and concept remain unverified",
+  "sourceRules": {
+    "requestFile": "User attached Pasted text.txt; educational book primary and explicit authorization required for additional sources.",
+    "existingApproval": "Direct human2026-10-02 approves ASPEN/SCCM EN primary guidance and FDA guidance/product labeling. This does not authorize unrelated references or make every file hosted on an FDA domain FDA-authored guidance.",
+    "additionalReference": "National Academies Dietary Reference Intakes for Water, Potassium, Sodium, Chloride, and Sulfate; topic-specific approval requested; no adoption or clinical review before response."
+  },
+  "pending": {
+    "question": {
+      "id": "enteral-nutrition-031",
+      "question": "Why can a high renal solute load worsen dehydration risk?",
+      "choices": [
+        "It increases obligatory water needed for solute excretion",
+        "It removes all sodium from urine",
+        "It blocks intestinal absorption",
+        "It makes formula sterile"
+      ],
+      "answer": 0,
+      "rationale": "Protein and electrolytes contribute solute that the kidney must excrete with water.",
+      "reviewHref": "#formula-selection"
+    },
+    "questionObjectSha256": "639a2de858a2ccf38fca8c12cfcd8b2b40efa111c7f312f6493ba0c5eff29f7d",
+    "metadata": {
+      "path": "submodules.formula-selection.concepts[3]",
+      "value": "Free water and renal solute load"
+    },
+    "wholeQuestionUnverified": true,
+    "reviewNeeded": "Stem, single-best key, distractor plausibility/incorrectness and rationale; matching original teaching for the retained concept. Existing distractors must not be considered verified merely because the key is physiologically plausible.",
+    "previousCompletedEvidence": {
+      "file": "enteral-nutrition-final-reconciliation-review.json",
+      "sha256": "f5e7979786b18cfa7a34b4eede1bd79f25e89368bacf84f0682c66220c920600"
+    }
+  },
+  "candidateScreening": [
+    {
+      "url": "https://www.fda.gov/media/183698/download?attachment=",
+      "title": "GRAS Notice1179 with amendments, liquid whole cow milk",
+      "provenanceRead": "Cover and author/title metadata PDFpages1\u20132, text lines0\u201342. Prepared by Spherix Consulting Group for Crossway Foods and submitted to FDA.",
+      "decision": "Not FDA-authored clinical guidance or an FDA-approved product label. A company submission on the FDA domain does not resolve the approved-source boundary or support this general question without further authorized review.",
+      "scope": "Provenance screening only; no complete clinical section or103-page PDF review claimed.",
+      "visualAttempt": "PDFpage2 screenshot returned cache-miss error; no successful visual inspection claimed.",
+      "clinicalClaimAdopted": false
+    },
+    {
+      "url": "https://aspenjournals.onlinelibrary.wiley.com/doi/10.1177/0884533616669362",
+      "title": "What is in the Bottle? A Review of Infant Formulas",
+      "provenanceRead": "Publisher metadata identifies an invited review,2016. Retrieved DOI page exposes abstract then references; full-path request403.",
+      "decision": "Abstract/references do not establish the whole renal-solute claim, all distractors, or general population applicability. ASPEN hosting alone is not proof of Board guidance. No source closure.",
+      "scope": "Metadata/abstract availability screening only; no full article or underlying reference review claimed.",
+      "clinicalClaimAdopted": false
+    },
+    {
+      "url": "https://aspenjournals.onlinelibrary.wiley.com/doi/10.1002/ncp.10876",
+      "title": "Fluid management in hospitalized pediatric patients",
+      "provenanceRead": "Publisher metadata identifies an invited review,2022. DOI text lines157\u2013166 show abstract/conflict statement then references; full-path request inaccessible.",
+      "decision": "The accessible abstract cannot establish the full claim or adult/general applicability. No full-source or primary-guidance claim, and no source closure.",
+      "scope": "Metadata/abstract availability screening only; no full article, recommendations, tables/figures or referenced paper review claimed.",
+      "clinicalClaimAdopted": false
+    }
+  ],
+  "searchScope": {
+    "approvedDomains": [
+      "fda.gov",
+      "accessdata.fda.gov",
+      "nutritioncare.org",
+      "aspenjournals.onlinelibrary.wiley.com"
+    ],
+    "queries": [
+      "renal solute load water",
+      "amino acid solute dehydration",
+      "renal solute formula dehydration"
+    ],
+    "limits": "Finite candidate screening, not proof that no approved source exists. An earlier query using site terms returned off-domain snippets; none adopted. Prior entire-book literal searches and ASPEN2009/2017 searches were not repeated. No National Academies/NCBI/AAP physiology adopted without approval."
+  },
+  "authorizationRequest": {
+    "status": "awaiting direct human response",
+    "scope": "Use only the National Academies water/electrolyte reference to verify the remaining renal-solute question and hydration concept.",
+    "questionPresented": "May I use the National Academies Dietary Reference Intakes for Water, Potassium, Sodium, Chloride, and Sulfate to verify the remaining renal-solute question and hydration concept? This approval would apply only to that topic.",
+    "noResponseIsNotApproval": true,
+    "alreadyApprovedSourcesRemainApproved": true
+  },
+  "coverage": {
+    "newQuestionClosures": 0,
+    "newLessonClosures": 0,
+    "newModuleClosures": 0,
+    "newChapterClosures": 0,
+    "verifiedModuleCount": 55,
+    "moduleCount": 232,
+    "verifiedChapterCount": 6,
+    "chapterCount": 82,
+    "wholeENVerified": false,
+    "wholeGoalComplete": false
+  },
+  "preservation": {
+    "productChanges": 0,
+    "privateBookMaterialIncluded": false,
+    "unrelatedPathsExcluded": 407
+  },
+  "validation": {
+    "scope": "Documentation/source provenance only. JSON validation and exact scoped preservation; product build/UI evidence unchanged in prior final-reconciliation record.",
+    "newBuildOrUITest": "Not run; no product changes.",
+    "technicalSourceErrorsDisclosed": [
+      "Two full-text Wiley variants unavailable; DOI pages supplied only abstract/reference content.",
+      "FDAPDF screenshot cache-miss; text provenance only."
+    ]
+  },
+  "release": {
+    "branch": "audit/rxprep-content-2026-09-24",
+    "commit": null,
+    "push": "pending",
+    "mainMerge": "not performed",
+    "production": "not verified"
+  },
+  "nextAction": "Await direct source-expansion response. If approved, read the complete relevant National Academies scope and tables/figures, source-review/correct the full EN031 object and add matching original teaching if needed; compare the entire current EN module again, validate, then close only if all requirements pass. If source limits retained, keep the unresolved question/concept and full module open; do not skip the topic or delete useful content to bypass the source rule."
+}
