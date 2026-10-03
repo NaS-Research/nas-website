@@ -153,7 +153,9 @@
             "Recognize the patient who needs support"
           ],
           "latestScopedEvidence": "enteral-nutrition-route-comparison-review.json",
-          "reopenedClinicalReconciliationHeadings": []
+          "reopenedClinicalReconciliationHeadings": [],
+          "latestMetadataEvidence": "enteral-nutrition-clinical-metadata-review.json",
+          "metadataStatus": "source-verified metadata; whole module remains reviewing"
         },
         {
           "slug": "access-route",
@@ -162,7 +164,9 @@
             "Name where the tube ends",
             "Separate duration from destination"
           ],
-          "latestScopedEvidence": "enteral-nutrition-book-route-water-review.json"
+          "latestScopedEvidence": "enteral-nutrition-book-route-water-review.json",
+          "latestMetadataEvidence": "enteral-nutrition-clinical-metadata-review.json",
+          "metadataStatus": "source-verified metadata; whole module remains reviewing"
         },
         {
           "slug": "delivery-prescription",
@@ -173,7 +177,9 @@
             "Advance according to risk"
           ],
           "latestScopedEvidence": "enteral-nutrition-monitoring-refeeding-review.json",
-          "embeddedCheckVerified": true
+          "embeddedCheckVerified": true,
+          "latestMetadataEvidence": "enteral-nutrition-clinical-metadata-review.json",
+          "metadataStatus": "source-verified metadata; whole module remains reviewing"
         },
         {
           "slug": "formula-selection",
@@ -185,7 +191,9 @@
             "Reassess hydration signals in context"
           ],
           "latestScopedEvidence": "enteral-nutrition-book-route-water-review.json",
-          "embeddedCheckVerified": true
+          "embeddedCheckVerified": true,
+          "latestMetadataEvidence": "enteral-nutrition-clinical-metadata-review.json",
+          "metadataStatus": "one renal-solute concept pending"
         },
         {
           "slug": "medication-administration",
@@ -198,7 +206,9 @@
             "Monitor phenytoin when feeding changes",
             "Review the dosage form before altering it"
           ],
-          "latestScopedEvidence": "enteral-nutrition-book-medication-review.json"
+          "latestScopedEvidence": "enteral-nutrition-book-medication-review.json",
+          "latestMetadataEvidence": "enteral-nutrition-clinical-metadata-review.json",
+          "metadataStatus": "source-verified metadata; whole module remains reviewing"
         },
         {
           "slug": "monitoring-complications",
@@ -210,7 +220,9 @@
             "Monitor delivery and metabolic safety"
           ],
           "embeddedCheckVerified": true,
-          "figureVerified": true
+          "figureVerified": true,
+          "latestMetadataEvidence": "enteral-nutrition-clinical-metadata-review.json",
+          "metadataStatus": "source-verified metadata; whole module remains reviewing"
         }
       ],
       "questions": 108,
@@ -223,7 +235,8 @@
         "enteral-nutrition-monitoring-refeeding-review.json",
         "enteral-nutrition-preparation-monitoring-review.json",
         "enteral-nutrition-indications-metadata-review.json",
-        "enteral-nutrition-route-comparison-review.json"
+        "enteral-nutrition-route-comparison-review.json",
+        "enteral-nutrition-clinical-metadata-review.json"
       ],
       "latestBookCalculationReview": {
         "evidence": "enteral-nutrition-book-calculations-review.json",
@@ -2003,6 +2016,158 @@
         "sourceAuthorizationQuestion": "Direct human response pending to National Academies water/electrolyte reference request; no adoption without authorization. Entire1032-page book text search found no renal solute/solute load/obligatory literals; not proof of semantic absence.2009ASPEN searched primary PDF supplied no established support.",
         "metadataStatus": "One route key point closed in this unit; final full clinical metadata review and renal-solute concept remain open.",
         "clinicalReconciliation": "2022Q3 route-comparison scope reconciled. Complete all parent/six-lesson metadata and final whole-module source/object reconciliation.",
+        "finalWholeModuleQA": true
+      },
+      "latestClinicalMetadataReview": {
+        "evidence": "enteral-nutrition-clinical-metadata-review.json",
+        "bank": 108,
+        "verifiedBank": 107,
+        "remainingBank": 1,
+        "verifiedBankIds": [
+          "enteral-nutrition-060",
+          "enteral-nutrition-061",
+          "enteral-nutrition-062",
+          "enteral-nutrition-063",
+          "enteral-nutrition-064",
+          "enteral-nutrition-065",
+          "enteral-nutrition-066",
+          "enteral-nutrition-067",
+          "enteral-nutrition-068",
+          "enteral-nutrition-069",
+          "enteral-nutrition-070",
+          "enteral-nutrition-071",
+          "enteral-nutrition-072",
+          "enteral-nutrition-073",
+          "enteral-nutrition-074",
+          "enteral-nutrition-075",
+          "enteral-nutrition-076",
+          "enteral-nutrition-077",
+          "enteral-nutrition-078",
+          "enteral-nutrition-079",
+          "enteral-nutrition-080",
+          "enteral-nutrition-081",
+          "enteral-nutrition-082",
+          "enteral-nutrition-083",
+          "enteral-nutrition-084",
+          "enteral-nutrition-085",
+          "enteral-nutrition-086",
+          "enteral-nutrition-087",
+          "enteral-nutrition-088",
+          "enteral-nutrition-089",
+          "enteral-nutrition-109",
+          "enteral-nutrition-110",
+          "enteral-nutrition-111",
+          "enteral-nutrition-112",
+          "enteral-nutrition-113",
+          "enteral-nutrition-114",
+          "enteral-nutrition-001",
+          "enteral-nutrition-115",
+          "enteral-nutrition-033",
+          "enteral-nutrition-035",
+          "enteral-nutrition-036",
+          "enteral-nutrition-037",
+          "enteral-nutrition-040",
+          "enteral-nutrition-042",
+          "enteral-nutrition-093",
+          "enteral-nutrition-094",
+          "enteral-nutrition-098",
+          "enteral-nutrition-107",
+          "enteral-nutrition-116",
+          "enteral-nutrition-117",
+          "enteral-nutrition-006",
+          "enteral-nutrition-007",
+          "enteral-nutrition-008",
+          "enteral-nutrition-015",
+          "enteral-nutrition-016",
+          "enteral-nutrition-018",
+          "enteral-nutrition-021",
+          "enteral-nutrition-030",
+          "enteral-nutrition-049",
+          "enteral-nutrition-092",
+          "enteral-nutrition-099",
+          "enteral-nutrition-105",
+          "enteral-nutrition-023",
+          "enteral-nutrition-041",
+          "enteral-nutrition-090",
+          "enteral-nutrition-104",
+          "enteral-nutrition-002",
+          "enteral-nutrition-003",
+          "enteral-nutrition-004",
+          "enteral-nutrition-005",
+          "enteral-nutrition-100",
+          "enteral-nutrition-012",
+          "enteral-nutrition-013",
+          "enteral-nutrition-014",
+          "enteral-nutrition-106",
+          "enteral-nutrition-009",
+          "enteral-nutrition-010",
+          "enteral-nutrition-011",
+          "enteral-nutrition-017",
+          "enteral-nutrition-019",
+          "enteral-nutrition-022",
+          "enteral-nutrition-024",
+          "enteral-nutrition-095",
+          "enteral-nutrition-097",
+          "enteral-nutrition-025",
+          "enteral-nutrition-026",
+          "enteral-nutrition-027",
+          "enteral-nutrition-028",
+          "enteral-nutrition-029",
+          "enteral-nutrition-032",
+          "enteral-nutrition-103",
+          "enteral-nutrition-034",
+          "enteral-nutrition-038",
+          "enteral-nutrition-039",
+          "enteral-nutrition-045",
+          "enteral-nutrition-046",
+          "enteral-nutrition-048",
+          "enteral-nutrition-102",
+          "enteral-nutrition-020",
+          "enteral-nutrition-043",
+          "enteral-nutrition-044",
+          "enteral-nutrition-047",
+          "enteral-nutrition-091",
+          "enteral-nutrition-096",
+          "enteral-nutrition-101",
+          "enteral-nutrition-050",
+          "enteral-nutrition-108"
+        ],
+        "remainingBankIds": [
+          "enteral-nutrition-031"
+        ],
+        "bodies": 36,
+        "verifiedBodies": 36,
+        "remainingBodies": 0,
+        "embeddedChecks": 6,
+        "verifiedEmbeddedChecks": 6,
+        "remainingEmbeddedChecks": 0,
+        "figures": 6,
+        "verifiedFigures": 6,
+        "cumulative": 5,
+        "sourceVerifiedCumulative": 5,
+        "pendingCumulative": [],
+        "metadata": "All79 parent/six-lesson statements reviewed;78 supported,one renal-solute concept pending. Five key points corrected.",
+        "remainingFigures": 0,
+        "wholeModuleVerified": false,
+        "wholeChapterVerified": false,
+        "bookAndAdoptedSourceBodyReviewCoverage": 36,
+        "bodyReviewCoverageTotal": 36,
+        "reopenedClinicalReconciliationBodies": [],
+        "newBodyClosuresThisUnit": 0,
+        "reopenedBodyScopesThisUnit": 0,
+        "metadataStatements": 79,
+        "verifiedMetadataStatements": 78,
+        "remainingMetadataStatements": 1
+      },
+      "remainingClinicalMetadataReview": {
+        "questionIds": [
+          "enteral-nutrition-031"
+        ],
+        "wholeBodyHeadings": [],
+        "renalSoluteConcept": "Free water and renal solute load",
+        "sourceAuthorizationQuestion": "Direct human response pending to National Academies water/electrolyte reference request; no adoption without authorization. Entire1032-page book text search found no renal solute/solute load/obligatory literals; not proof of semantic absence.2009ASPEN searched primary PDF supplied no established support.",
+        "metadataStatus": "Only formula-selection.concepts[3] renal-solute support pending;78other statements reconciled.",
+        "clinicalReconciliation": "Whole-module final source/object reconciliation and rendered assessment closure remain pending; no full EN closure.",
         "finalWholeModuleQA": true
       }
     },
