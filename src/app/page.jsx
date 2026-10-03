@@ -3,6 +3,7 @@ import Link from "next/link";
 import HeroSection from "@/components/sections/HeroSection";
 import Featured from "@/components/sections/Featured";
 import HomeLearnFeature from "@/components/sections/HomeLearnFeature";
+import HomeBillingFeature from "@/components/sections/HomeBillingFeature";
 import CurrentResearch from "@/components/sections/CurrentResearch";
 import WorkWithNas from "@/components/sections/WorkWithNas";
 import Footer from "@/components/Footer";
@@ -24,6 +25,7 @@ export default function Home() {
       </section>
       <Featured />
       <HomeLearnFeature />
+      <HomeBillingFeature />
       <CurrentResearch />
       <WorkWithNas />
 
