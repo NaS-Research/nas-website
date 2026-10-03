@@ -1,0 +1,586 @@
+{
+  "updated": "2026-10-03T17:30:45.398541+00:00",
+  "unit": "Enteral nutrition indications and scoped metadata/reference reconciliation",
+  "status": "verified logical unit; full module and chapter remain reviewing",
+  "baseCommit": "36be5d3ff0a1fd4573eda8bbb9bc18977b2e3b60",
+  "sourceAuthorization": "Book primary; explicit human approval2026-10-02 for primaryASPEN/SCCM andFDA EN clinical guidance. National Academies request remains pending.",
+  "sources": [
+    {
+      "id": "book2023",
+      "read": "Chapter11 printed161/PDF169 complete EN paragraph visually reread and text compared. Earlier complete EN source-page coverage retained.",
+      "private": true
+    },
+    {
+      "id": "safe2017",
+      "url": "https://aspenjournals.onlinelibrary.wiley.com/doi/full/10.1177/0148607116673053",
+      "read": "Section1 background/Q1.1 recommendations and complete rationale, completeQ4.1 recommendations/rationale reread; Table1 full13rows/note retained official publisherPDF visual evidence.",
+      "priorVisualEvidence": "enteral-nutrition-preparation-monitoring-review.json",
+      "priorVisualEvidenceSHA256": "a4a2f1577098392d7d832ae59fdb99f094c055b060528cd0cac867d2dd5f3bae",
+      "limits": "No whole-paper review claim; no new pediatric cutoff/access-duration number adopted."
+    },
+    {
+      "id": "sccm2016",
+      "url": "https://sccmmedia.sccm.org/documents/LearnICU/Guidelines/Nutrition-SCCM-ASPEN.pdf",
+      "read": "Retain complete B1/B5/C1/C3 nutrition-initiation reviews; C1 complete rationale reread for obstruction/perfusion. Other adopted clinical scopes remain in prior review evidence."
+    },
+    {
+      "id": "aspen2022",
+      "url": "https://aspenjournals.onlinelibrary.wiley.com/doi/10.1002/jpen.2267",
+      "read": "Q3 complete recommendation/rationale and Table5 text read; source visual/correction/reconciliation pending. No new2022 clinical claim adopted in this unit.",
+      "finding": "First-week adult ICU EN-candidate comparison needs population-specific qualification of generic route superiority statements. Book-based body/questions retained but this current-guidance scope reopened."
+    },
+    {
+      "id": "fda2015",
+      "url": "https://www.fda.gov/media/83412/download",
+      "read": "Official2015 landing download resolves to the same retained PDF; prior full adopted clinical review retained. No new connector claim."
+    }
+  ],
+  "wholeBodyReview": [
+    {
+      "heading": "Recognize the patient who needs support",
+      "body": "Assess nutrition support when safe oral intake cannot meet the patient\u2019s needs. Relevant settings include dysphagia associated with neurologic disease or cancer treatment, critical illness, and requirements that cannot be met orally. These settings prompt assessment rather than establish an indication by diagnosis alone. Confirm that the proposed route can safely deliver nutrients to a functioning gastrointestinal tract. Selected patients with gastric outlet obstruction may be candidates for feeding beyond the obstruction when the small bowel is usable; complete intestinal obstruction requires withholding enteral feeding and clinical assessment. Match initiation to nutrition risk, anticipated intake, perfusion, and tolerance. Expected duration also guides access selection. A diagnosis or fixed day count alone does not establish a feeding indication.",
+      "status": "whole-body source-verified",
+      "claims": [
+        {
+          "scope": "Nutrition support assessment when safe oral intake cannot meet needs; oral/GI suitability",
+          "support": [
+            "RxPrep2023 Chapter11 printed161/PDF169 enteral paragraph",
+            "safe2017 Section1 background/Q1.1 recommendations and complete rationale"
+          ]
+        },
+        {
+          "scope": "Dysphagia with neurologic disease/cancer treatment and critical illness as assessment settings, not automatic indications",
+          "support": [
+            "safe2017 Q1.1/Table1 complete13rows and EN/GI note",
+            "safe2017 Q4.1 complete rationale"
+          ]
+        },
+        {
+          "scope": "Selected gastric outlet obstruction may permit feeding beyond obstruction with usable small bowel; complete intestinal obstruction precludes feeding",
+          "support": [
+            "safe2017 Q4.1 recommendations/full rationale",
+            "retained SCCM2016 C1 complete rationale/previous EN initiation review"
+          ]
+        },
+        {
+          "scope": "Nutrition risk, anticipated inadequacy, perfusion/tolerance, duration-directed access; no diagnosis-only or fixed-day trigger",
+          "support": [
+            "retained SCCM2016 B1/B5/C1/C3 complete scopes",
+            "safe2017 Q1.1/Q4.1",
+            "RxPrep2023 EN section"
+          ]
+        }
+      ],
+      "numericalProtocolsAdded": false
+    }
+  ],
+  "metadataStatementReview": [
+    {
+      "old": "Detect intolerance, refeeding risk, aspiration, contamination, and mechanical complications early.",
+      "new": "Recognize signs that warrant assessment for intolerance, refeeding risk, aspiration, contamination, or mechanical complications.",
+      "status": "source-verified statement correction",
+      "support": [
+        "safe2017 Q1.1/Q10.1/Q10.2",
+        "refeeding2020 adultTable6; prior monitoring/refeeding review"
+      ],
+      "reason": "Avoid promising early detection; describe recognition and assessment."
+    },
+    {
+      "old": "Choose the least complex formula that meets nutrient, volume, digestion, absorption, electrolyte, and tolerance needs.",
+      "new": "Match formula composition to nutrient, volume, digestion, absorption, electrolyte, and tolerance needs; greater complexity does not establish greater benefit.",
+      "status": "source-verified statement correction",
+      "support": [
+        "RxPrep2023 Chapter11 EN formulas",
+        "enteral-nutrition-formula-clinical-review.json",
+        "safe2017 Q5.1/Q5.2 previously reviewed scopes"
+      ],
+      "reason": "Match patient physiology and nutrient prescription; avoid a complexity-only rule."
+    },
+    {
+      "old": "Caloric density changes free-water delivery.",
+      "new": "Calculate formula water from product composition and the volume actually delivered.",
+      "status": "source-verified statement correction",
+      "support": [
+        "RxPrep2023 Chapter11 free-water examples",
+        "enteral-nutrition-book-route-water-review.json"
+      ],
+      "reason": "Water delivery depends on composition and actual volume; caloric density alone is not the calculation."
+    },
+    {
+      "old": "When a problem appears, identify whether it is gastrointestinal, metabolic, mechanical, medication related, or infectious before changing the formula.",
+      "new": "When a problem appears, assess gastrointestinal, metabolic, mechanical, medication-related, and infectious causes. Respond promptly to urgent findings and reassess the feeding plan.",
+      "status": "source-verified statement correction",
+      "support": [
+        "safe2017 Q10.1/Q10.2",
+        "enteral-nutrition-monitoring-refeeding-review.json",
+        "enteral-nutrition-preparation-monitoring-review.json"
+      ],
+      "reason": "Do not imply urgent response must wait for a definitive causal category."
+    }
+  ],
+  "referencesReview": {
+    "status": "attribution reconciled; final whole-module claim-to-reference matching remains pending",
+    "currentReferences": [
+      {
+        "label": "ASPEN practice tool: enteral nutrition in patients with fat malabsorption, 2023",
+        "href": "https://nutritioncare.org/wp-content/uploads/2024/12/EN-Patients-With-Fat-Malabsorption-Practice-Tool.pdf"
+      },
+      {
+        "label": "ASPEN practice tool: hypoallergenic formula composition and pediatric indications, 2023",
+        "href": "https://nutritioncare.org/wp-content/uploads/2024/12/Hypoallergenic-Formula-Practice-Tool.pdf"
+      },
+      {
+        "label": "McGrath et al. AuSPEN clinical consensus on jejunal tube feeding in children, 2024",
+        "href": "https://aspenjournals.onlinelibrary.wiley.com/doi/10.1002/jpen.2615"
+      },
+      {
+        "label": "FDA. Tips for Health Care Providers to Reduce Medical Device Misconnections",
+        "href": "https://www.fda.gov/medical-devices/medical-device-connectors/tips-health-care-providers-reduce-medical-device-misconnections"
+      },
+      {
+        "label": "FDA. Enteral Small-Bore Connector Misconnection Guidance, 2015",
+        "href": "https://www.fda.gov/media/83412/download"
+      },
+      {
+        "label": "SCCM/ASPEN. Adult Critical Care Nutrition Guideline, 2016",
+        "href": "https://sccmmedia.sccm.org/documents/LearnICU/Guidelines/Nutrition-SCCM-ASPEN.pdf"
+      },
+      {
+        "label": "ASPEN. Enteral Nutrition Indications in Critical Illness Practice Tool, August 2023",
+        "href": "https://nutritioncare.org/wp-content/uploads/2024/12/EN-Indications-Critical-Illness-Practice-Tool.pdf"
+      },
+      {
+        "label": "ASPEN. Safe Practices for Enteral Nutrition Therapy, 2017",
+        "href": "https://aspenjournals.onlinelibrary.wiley.com/doi/full/10.1177/0148607116673053"
+      },
+      {
+        "label": "ASPEN. Adult Critical Care Nutrition Guideline, 2022: Selected Nutrition-Support Questions",
+        "href": "https://doi.org/10.1002/jpen.2267"
+      },
+      {
+        "label": "ASPEN. Consensus Recommendations for Refeeding Syndrome, 2020",
+        "href": "https://doi.org/10.1002/ncp.10474"
+      },
+      {
+        "label": "FDA medical device connector safety resources",
+        "href": "https://www.fda.gov/medical-devices/general-hospital-devices-and-supplies/medical-device-connectors"
+      }
+    ],
+    "count": 11,
+    "uniqueURLs": 11,
+    "labelsChanged": {
+      "SCCM/ASPEN. Adult Critical Care Nutrition Guideline, 2016: Initiation, Hemodynamics, and Nutrition Risk": "SCCM/ASPEN. Adult Critical Care Nutrition Guideline, 2016",
+      "ASPEN. Safe Practices for Enteral Nutrition Therapy, 2017: Access Selection": "ASPEN. Safe Practices for Enteral Nutrition Therapy, 2017",
+      "ASPEN guideline for nutrition support in the adult critically ill patient": "ASPEN. Adult Critical Care Nutrition Guideline, 2022: Selected Nutrition-Support Questions",
+      "ASPEN consensus recommendations for refeeding syndrome": "ASPEN. Consensus Recommendations for Refeeding Syndrome, 2020"
+    },
+    "removed": [
+      "    { label: \"ASPEN Safe Practices for Enteral Nutrition Therapy\", href: \"https://nutritioncare.org/clinical-resources/enteral-nutrition/\" },\n",
+      "    { label: \"SCCM and ASPEN adult critical care nutrition guideline\", href: \"https://sccmmedia.sccm.org/documents/LearnICU/Guidelines/Nutrition-SCCM-ASPEN.pdf\" },\n",
+      "    { label: \"FDA guidance on enteral connector misconnections\", href: \"https://www.fda.gov/regulatory-information/search-fda-guidance-documents/safety-considerations-mitigate-risks-misconnections-small-bore-connectors-intended-enteral\" },\n"
+    ],
+    "decisions": [
+      "Removed exact duplicate SCCM2016 PDF URL; retained whole-guideline citation.",
+      "Removed general ASPEN resource hub falsely labeled Safe Practices; retained actual2017 primary DOI article. Official hub links that actual article.",
+      "Removed FDA2015 duplicate landing page; its download is the retained FDA83412 PDF.",
+      "Dated2016/2017/2020/2022 titles accurately identify the source without suggesting whole-paper review."
+    ],
+    "additionalReviewPending": "2022 Q3 route-comparison context/table5 visual/corrections must be reconciled before full module closure."
+  },
+  "questionReview": {
+    "newClosures": 0,
+    "all108ObjectsUnchanged": true,
+    "prior107ClosuresRetainedWithRouteComparisonScopeReopenedForEN007EN008": true
+  },
+  "coverage": {
+    "bank": 108,
+    "verifiedBank": 107,
+    "remainingBank": 1,
+    "verifiedBankIds": [
+      "enteral-nutrition-060",
+      "enteral-nutrition-061",
+      "enteral-nutrition-062",
+      "enteral-nutrition-063",
+      "enteral-nutrition-064",
+      "enteral-nutrition-065",
+      "enteral-nutrition-066",
+      "enteral-nutrition-067",
+      "enteral-nutrition-068",
+      "enteral-nutrition-069",
+      "enteral-nutrition-070",
+      "enteral-nutrition-071",
+      "enteral-nutrition-072",
+      "enteral-nutrition-073",
+      "enteral-nutrition-074",
+      "enteral-nutrition-075",
+      "enteral-nutrition-076",
+      "enteral-nutrition-077",
+      "enteral-nutrition-078",
+      "enteral-nutrition-079",
+      "enteral-nutrition-080",
+      "enteral-nutrition-081",
+      "enteral-nutrition-082",
+      "enteral-nutrition-083",
+      "enteral-nutrition-084",
+      "enteral-nutrition-085",
+      "enteral-nutrition-086",
+      "enteral-nutrition-087",
+      "enteral-nutrition-088",
+      "enteral-nutrition-089",
+      "enteral-nutrition-109",
+      "enteral-nutrition-110",
+      "enteral-nutrition-111",
+      "enteral-nutrition-112",
+      "enteral-nutrition-113",
+      "enteral-nutrition-114",
+      "enteral-nutrition-001",
+      "enteral-nutrition-115",
+      "enteral-nutrition-033",
+      "enteral-nutrition-035",
+      "enteral-nutrition-036",
+      "enteral-nutrition-037",
+      "enteral-nutrition-040",
+      "enteral-nutrition-042",
+      "enteral-nutrition-093",
+      "enteral-nutrition-094",
+      "enteral-nutrition-098",
+      "enteral-nutrition-107",
+      "enteral-nutrition-116",
+      "enteral-nutrition-117",
+      "enteral-nutrition-006",
+      "enteral-nutrition-007",
+      "enteral-nutrition-008",
+      "enteral-nutrition-015",
+      "enteral-nutrition-016",
+      "enteral-nutrition-018",
+      "enteral-nutrition-021",
+      "enteral-nutrition-030",
+      "enteral-nutrition-049",
+      "enteral-nutrition-092",
+      "enteral-nutrition-099",
+      "enteral-nutrition-105",
+      "enteral-nutrition-023",
+      "enteral-nutrition-041",
+      "enteral-nutrition-090",
+      "enteral-nutrition-104",
+      "enteral-nutrition-002",
+      "enteral-nutrition-003",
+      "enteral-nutrition-004",
+      "enteral-nutrition-005",
+      "enteral-nutrition-100",
+      "enteral-nutrition-012",
+      "enteral-nutrition-013",
+      "enteral-nutrition-014",
+      "enteral-nutrition-106",
+      "enteral-nutrition-009",
+      "enteral-nutrition-010",
+      "enteral-nutrition-011",
+      "enteral-nutrition-017",
+      "enteral-nutrition-019",
+      "enteral-nutrition-022",
+      "enteral-nutrition-024",
+      "enteral-nutrition-095",
+      "enteral-nutrition-097",
+      "enteral-nutrition-025",
+      "enteral-nutrition-026",
+      "enteral-nutrition-027",
+      "enteral-nutrition-028",
+      "enteral-nutrition-029",
+      "enteral-nutrition-032",
+      "enteral-nutrition-103",
+      "enteral-nutrition-034",
+      "enteral-nutrition-038",
+      "enteral-nutrition-039",
+      "enteral-nutrition-045",
+      "enteral-nutrition-046",
+      "enteral-nutrition-048",
+      "enteral-nutrition-102",
+      "enteral-nutrition-020",
+      "enteral-nutrition-043",
+      "enteral-nutrition-044",
+      "enteral-nutrition-047",
+      "enteral-nutrition-091",
+      "enteral-nutrition-096",
+      "enteral-nutrition-101",
+      "enteral-nutrition-050",
+      "enteral-nutrition-108"
+    ],
+    "remainingBankIds": [
+      "enteral-nutrition-031"
+    ],
+    "bodies": 36,
+    "verifiedBodies": 35,
+    "remainingBodies": 1,
+    "embeddedChecks": 6,
+    "verifiedEmbeddedChecks": 6,
+    "remainingEmbeddedChecks": 0,
+    "figures": 6,
+    "verifiedFigures": 6,
+    "cumulative": 5,
+    "sourceVerifiedCumulative": 5,
+    "pendingCumulative": [],
+    "metadata": "Four metadata statements and reference attribution reconciled; renal-solute concept and final route-comparison context remain pending.",
+    "remainingFigures": 0,
+    "wholeModuleVerified": false,
+    "wholeChapterVerified": false,
+    "bookAndAdoptedSourceBodyReviewCoverage": 36,
+    "bodyReviewCoverageTotal": 36,
+    "reopenedClinicalReconciliationBodies": [
+      "Connect the route to its advantages"
+    ],
+    "newBodyClosuresThisUnit": 1,
+    "reopenedBodyScopesThisUnit": 1
+  },
+  "remainingCoverageReview": {
+    "questionIds": [
+      "enteral-nutrition-031"
+    ],
+    "wholeBodyHeadings": [
+      "Connect the route to its advantages"
+    ],
+    "renalSoluteConcept": "Free water and renal solute load",
+    "sourceAuthorizationQuestion": "Direct human response pending to National Academies water/electrolyte reference request; no adoption without authorization. Entire1032-page book text search found no renal solute/solute load/obligatory literals; not proof of semantic absence.2009ASPEN searched primary PDF supplied no established support.",
+    "metadataStatus": "Final whole parent/six-lesson clinical metadata review remains pending; this unit closes only the four changed statements plus reference attribution.",
+    "clinicalReconciliation": "2022Q3 Table5 source visual and corrigendum; reconcile whole route-advantage body plus EN007/008 and relevant metadata before full-module closure.",
+    "finalWholeModuleQA": true
+  },
+  "preservation": {
+    "all108BankObjectsUnchanged": true,
+    "all1180CumulativeObjectsUnchanged": true,
+    "all36HeadingsStable": true,
+    "other35BodiesUnchanged": true,
+    "allSixChecksUnchanged": true,
+    "allSixFiguresAndRendererUnchanged": true,
+    "idsPathsKeysBackendTrackingUnchanged": true,
+    "uniqueReferences": 11,
+    "metadataConceptStillPending": "Free water and renal solute load",
+    "noNewDoseCalculationOrNumericalThreshold": true
+  },
+  "calculationEvidence": {
+    "noNewDoseCalculationOrNumericalThreshold": true,
+    "priorIndependentCalculationsRetained": {
+      "newDistinctAssessmentCalculations": 0,
+      "newCompletedBookExercises": 0,
+      "runningAssessmentCalculations": 728,
+      "runningSeparateCompletedBookExercises": 98
+    }
+  },
+  "validation": {
+    "build": {
+      "status": "passed",
+      "staticPages": 567,
+      "scope": "Exact36be HEAD archive plus the reviewed enteralNutrition data file; committed public tree/dependency symlinks; no env/unrelated drafts."
+    },
+    "assessmentStructure": {
+      "modules": 1,
+      "questions": 108,
+      "hardErrors": [],
+      "sourceGaps": [],
+      "sizeAdvisories": [],
+      "thinLessons": [],
+      "weakestModules": [
+        {
+          "module": "enteral-nutrition",
+          "lessons": 6,
+          "questions": 108,
+          "minimumLessonCoverage": 9
+        }
+      ]
+    },
+    "browser": {
+      "status": "passed",
+      "results": [
+        {
+          "width": 1440,
+          "wholeBodyDOMEquality": 36,
+          "parentOutcomesAndDescriptionDOMEquality": true,
+          "allSixMetadataDOMEquality": true,
+          "all11ReferencesDOMEquality": true,
+          "noStudyContentForTheseSixSlugs": true,
+          "allSixFiguresPresent": true,
+          "noHorizontalOverflow": true,
+          "assessmentChanges": 0,
+          "accountPersistence": "not tested; unauthenticated local preview"
+        },
+        {
+          "width": 390,
+          "wholeBodyDOMEquality": 36,
+          "parentOutcomesAndDescriptionDOMEquality": true,
+          "allSixMetadataDOMEquality": true,
+          "all11ReferencesDOMEquality": true,
+          "noStudyContentForTheseSixSlugs": true,
+          "allSixFiguresPresent": true,
+          "noHorizontalOverflow": true,
+          "assessmentChanges": 0,
+          "accountPersistence": "not tested; unauthenticated local preview"
+        }
+      ],
+      "pageErrors": [],
+      "consoleErrors": [],
+      "captures": [
+        "hero-1440.png",
+        "header-enteral-decision-1440.png",
+        "points-enteral-decision-1440.png",
+        "application-enteral-decision-1440.png",
+        "header-access-route-1440.png",
+        "points-access-route-1440.png",
+        "application-access-route-1440.png",
+        "header-delivery-prescription-1440.png",
+        "points-delivery-prescription-1440.png",
+        "application-delivery-prescription-1440.png",
+        "header-formula-selection-1440.png",
+        "points-formula-selection-1440.png",
+        "application-formula-selection-1440.png",
+        "header-medication-administration-1440.png",
+        "points-medication-administration-1440.png",
+        "application-medication-administration-1440.png",
+        "header-monitoring-complications-1440.png",
+        "points-monitoring-complications-1440.png",
+        "application-monitoring-complications-1440.png",
+        "body-1440.png",
+        "references-1440.png",
+        "hero-390.png",
+        "header-enteral-decision-390.png",
+        "points-enteral-decision-390.png",
+        "application-enteral-decision-390.png",
+        "header-access-route-390.png",
+        "points-access-route-390.png",
+        "application-access-route-390.png",
+        "header-delivery-prescription-390.png",
+        "points-delivery-prescription-390.png",
+        "application-delivery-prescription-390.png",
+        "header-formula-selection-390.png",
+        "points-formula-selection-390.png",
+        "application-formula-selection-390.png",
+        "header-medication-administration-390.png",
+        "points-medication-administration-390.png",
+        "application-medication-administration-390.png",
+        "header-monitoring-complications-390.png",
+        "points-monitoring-complications-390.png",
+        "application-monitoring-complications-390.png",
+        "body-390.png",
+        "references-390.png"
+      ]
+    },
+    "headerRecapture": {
+      "status": "passed",
+      "captures": 12,
+      "errors": [],
+      "position": 300,
+      "reason": "Keep title below sticky mobile contents bar without modifying product DOM/CSS."
+    },
+    "visualInspection": {
+      "status": "passed",
+      "scope": "All changed whole-body text, parent title/description/five outcomes, six complete lesson titles/summaries/concept lists/key-point lists/applications and eleven reference labels visually inspected on desktop1440/mobile390. DOM matches all36 bodies and all metadata;320 horizontal overflow check passed.",
+      "method": "42 original unmodified page captures composed into21 desktop/mobile sheets. Header captures repositioned300px below viewport top to avoid sticky mobile contents overlay. These are separate captures, not a single continuous viewport.",
+      "captureLimitation": "Initial screenshots started before hydration finished and Playwright caret hiding produced transient radio style mismatch warnings. Fresh networkidle+one-second settle capture pass has zero console/page errors. Initial mobile header screenshots were partly occluded by sticky contents; final12 title captures are unobstructed. No product CSS/component change made.",
+      "limits": [
+        "Local unauthenticated preview; no account persistence, main merge or production verification.",
+        "No new assessment feedback claim; bank/checks unchanged and prior feedback evidence retained.",
+        "No full module/chapter closure."
+      ],
+      "captureHashes": {
+        "points-delivery-prescription-1440.png": "58ee02c1a572089d9fd5c1520a3c8d0df37a132371862deafac1facc239e2adf",
+        "application-monitoring-complications-1440.png": "ae42a77d86a4e9427b4bf9f2387ad1257454a49ae4a7f500a20d5b503c1d74a8",
+        "header-formula-selection-1440.png": "c536284cdf6e6b6b6b5775346da75b994318006f2a92b51af3f77904e2fcc100",
+        "application-enteral-decision-390.png": "6e6d2831ff95d110e1f6ca3cb75e47a7696eb095b64e3fe1e7c7df6854500a94",
+        "references-1440.png": "c4df3d2d31c3e98ce3f23751e9ed3ff4d63bdc6bdda8555e1de559fd294d1cdf",
+        "application-medication-administration-1440.png": "35ff11f44ffef8aff1df854f356486054972377bce031a6cdb23b024005403fa",
+        "header-medication-administration-1440.png": "ee91279bf9e3b06e2dc9ef4d4bfaaf360bf1858d69ec78081b44383eeea028e0",
+        "application-delivery-prescription-1440.png": "a7a5771033b44804ede6c029c0c53fc813a558536e0fd241162d838775533048",
+        "points-enteral-decision-390.png": "1eb16930ecccf898bb59aa8c3db9b58c44ba85033fe611bda2fe3fe1823af7e0",
+        "header-formula-selection-390.png": "cac51f84ce6e02348ca47e97be5cd87a17c9427f22d715f75f092424415a1ca5",
+        "application-medication-administration-390.png": "86b5536e9963ced7680ad83c3c8171ed573bbfffbbc45fb15f756e19f9a0ec76",
+        "header-access-route-1440.png": "7e07f791e79c08e5fdd36799658b4da7a13f9633c0d30189b67a7b83e2b9bbe8",
+        "points-access-route-1440.png": "c070ae40f6f3898c69b023b437d2e30e47f07d4d04dd17b30226ee9f762f58c1",
+        "application-access-route-390.png": "55cc4cbf1a30755f79b390afbcdcb1cb35e6da528713698054edf3504a5446b6",
+        "points-delivery-prescription-390.png": "1cb942b80f245e8fe1be0fc12d1e0bd28845f31d73c80f8a9469b086a379e162",
+        "points-formula-selection-1440.png": "43e0d4992b1b178813e24318b85ce7b1cb935ff58cd80a80dc621bd217d4846f",
+        "hero-390.png": "cd160178f2eaf6d5bbe8801092c23307f37a0da4d0ee7083abd6af2cdf55375f",
+        "header-enteral-decision-1440.png": "0aca4aedf6b13b8e0c3957542602899929d1e3b16e93c5b9cdba4452f154df9c",
+        "header-access-route-390.png": "78f641dc88996a1550819537f2fc3978eb3bc7e990c7f711bb53d9bf914d81d9",
+        "header-monitoring-complications-390.png": "1a36c31c60dda57f3370e39fefed86f86cd0d4c1c73828ca0e40a417b9fa9744",
+        "points-medication-administration-1440.png": "458c1b373303d619f3abbbe2025687101b0da865e20276ec3a946e40a5354186",
+        "points-monitoring-complications-1440.png": "b70255600b9238843c6c1113c404e100aed156f20b5d00feecb37ea0a247731b",
+        "header-delivery-prescription-1440.png": "abeecf0490a0600ca195a1726dca46bc5adaabde2a226408f7fb3f7aced3e3f4",
+        "application-monitoring-complications-390.png": "153c60a0164e3f99154b429bc92b9b67854a1d7c9908f1a529cd08e7c061fcab",
+        "points-enteral-decision-1440.png": "fb6d17381aa4aeef57c8a46b1ceb46a455c56de8565dfd3f53afdfd02cf9bce6",
+        "header-delivery-prescription-390.png": "46d8dc1bf13fe6b5b9ecf1fad7ff174cfb7b37e1a1cadf126753adcfc43f104e",
+        "hero-1440.png": "ade854cda61bcfc70243c3cb94e98ed211b56e57a695c6285a3295f38c4523c3",
+        "application-enteral-decision-1440.png": "693060c7bec17f7603f2133305f6814d45de808526be54f8ba727db76d4446a7",
+        "body-390.png": "f749750c85e4cad29d7eecfe9b279b5e850127bc7cab84b0e4d549c4a17e9759",
+        "points-formula-selection-390.png": "f6088c4ef9061fd37345616274d731b9157a0b923bb7a30205eeff768c6926b5",
+        "points-monitoring-complications-390.png": "a8b1f0f64ce9380d3d2114ced519dfc310edaac1ce3d36d4847cbf4e6dc7c23e",
+        "application-formula-selection-390.png": "456bfd96bd75d4c4a8cbab9b9ee553fb2db4344391fcffdab3e98f113949d8b8",
+        "references-390.png": "fca6de58f0f163a64af98a92ff8894290a40d4b1721e7cbf57e5345da3ff374e",
+        "header-monitoring-complications-1440.png": "34b424bcf1a870c957690841d97eb15db6c79e2fe671a2c2faa18054e9b8bd39",
+        "body-1440.png": "fabe08b2f9bb1da0e87455604fb514a723e4887bbdb9f8686894524ff6ece8f5",
+        "points-medication-administration-390.png": "d306f6e9612097a9b0bfb8672a719fd42f3faaa0224ab45e5becca1dc1d4817f",
+        "application-access-route-1440.png": "e9cf220da349984dcba7917ba523f2d8afa501d39d77a560a087aa2bb857e1b2",
+        "points-access-route-390.png": "f4f48e6dd087b58c7c78bf3ea35cf7f80ebab4e69b09cb3b9880948470a9511c",
+        "header-medication-administration-390.png": "2aa42766a5435a70f34ef1b3b8d9d358152501d1c0de7c3d41cabc903f31563c",
+        "application-formula-selection-1440.png": "3db0088ea5a1bcf4412030fbd0ed94a4d14f45aab19f08a2de61edbf07f23f46",
+        "header-enteral-decision-390.png": "66a51e3b8d0069a8973993f7110f43528869004252b2efe8305bae5565296096",
+        "application-delivery-prescription-390.png": "a6a2f120d3571bc318e83389a297cbce4e18ab5e2e48a7daa831b7ba8478897c"
+      },
+      "sheetHashes": {
+        "sheet-hero.png": "952f962d9a446397e772039076013609da6ebc370fe525fdb750fc0ed69f55c5",
+        "sheet-points-delivery-prescription.png": "549169582acd45882416a50931e397ba364f650814752772c0295b22a6a61842",
+        "sheet-points-enteral-decision.png": "42c9b1aed33e0f751c9bba660b35d92d57bbc76310390e2063d81573cd5bac2f",
+        "sheet-application-access-route.png": "2eeeeea0cd65f2bda78a8133ed943a359255a34721309d7077c9b88fed9b7c2e",
+        "sheet-header-enteral-decision.png": "a6cbed1ce5db81a331ab92dc539f63f58546e07d491aa56ba62ecd703ad86958",
+        "sheet-header-access-route.png": "3adb26db2e795e3a2667a5f1893958521947c6c996d8dd7415174068337cda7d",
+        "sheet-application-delivery-prescription.png": "78ec7145077a14988f3b3948fda2c7770a5dad27ff788abf9f7009f60fdaf69c",
+        "sheet-body.png": "e0a25713b4f009432c699f721a6a1dc4d002a64c425658af5d42dea01e32263e",
+        "sheet-application-formula-selection.png": "bede320e7e805e05d184e96ecd518e99829e2b893f04e505286935632c3a9438",
+        "sheet-application-medication-administration.png": "abb7e41e588e64a76781ba4369c1a3acea5344aac6fba7c9f5db8d00c1163c35",
+        "sheet-points-medication-administration.png": "ad7b2fa849a8b588ca7ca9593a27d37deed118964afc4885413b0f13e2e0c623",
+        "sheet-references.png": "564705c4aa21b1c20d5bdc7e28cfa4e4d7a14a440ac0e41fdfa062e7b86b39ac",
+        "sheet-header-medication-administration.png": "2702cb6c246111a611847f5fea6ef0d270771ba88b7ab700662f1dd3f5e49bd3",
+        "sheet-application-enteral-decision.png": "5f2e35e73969812a39036b0f561d93aaa5c0b3ebe8ce38685d5a5aaa4b975975",
+        "sheet-header-monitoring-complications.png": "631cb8a4e83079d38e96ce73a9a632b47ca27b3442c9308247f4138713575860",
+        "sheet-header-delivery-prescription.png": "d02dfc574cd8324c53aae6cad294048409cc68e9c3b474d4e1b8206ab59b2731",
+        "sheet-points-monitoring-complications.png": "9732ff65546ce60d1e987c8cd72b6b49712d87f3001e1ae9a6669e19a04dba57",
+        "sheet-application-monitoring-complications.png": "67be4b18056e90fa1348998234025a2b7aa0e389191c78f4af618851d2e14eaa",
+        "sheet-points-formula-selection.png": "35673aee7ba3ce5ac792b6a7f2569cd0ffd95965bd97d56ccbab84842ea7925c",
+        "sheet-header-formula-selection.png": "5b0da89072527534ec30d2047835213c066147a3e9bcade87bc8e0ea330b3d29",
+        "sheet-points-access-route.png": "42d37a0c8be03f8033fc1309ba9286a7f697b358dc1fbcc927ce14964a74af66"
+      }
+    },
+    "contentHashes": {
+      "src/data/modules/enteralNutrition.js": "66fb4da1bd5cb90681fa21e015135b48a00b5412a7f80d1f98fb191ce7e57370"
+    },
+    "finalSourceComparison": "Complete changed body and four statements rereconciled with book/approved primary sources; dedup attribution retained. Further clinical comparison explicitly open.",
+    "previewProcess": "Owned session26269 stopped; terminal exit0 observed. Capture81018/48776 terminal exit0; initial sandbox browser launch failed, permitted rerun succeeded.",
+    "unrelatedWorkPreservation": {
+      "baseline": "Current405 unrelated entries refreshed immediately before staging; all are excluded from the staged scope.",
+      "priorUnitBaselineDifferences": [
+        {
+          "path": "src/app/page.jsx",
+          "old": {
+            "status": " M",
+            "sha256": "60b57fa44272be1a9c0e3c34c024ea2f8bd38e051689ab1099d2e0baae96a3cf"
+          },
+          "current": {
+            "status": " M",
+            "sha256": "4a9f3be5e14baaa4fb0dba9b8ca3405ca922b6e06429b9727e2a3159c4cdcf67"
+          }
+        }
+      ],
+      "interpretation": "Other work changed unrelated source files during this unit. Preserve current contents and stage only five reviewed paths; do not assert unrelated files remain frozen across concurrent work.",
+      "concurrentChangesDuringReview": [
+        "src/components/sections/ResearchGallery.jsx",
+        "src/components/sections/research-gallery.css"
+      ]
+    }
+  },
+  "release": {
+    "branch": "audit/rxprep-content-2026-09-24",
+    "commit": null,
+    "push": "pending",
+    "receipt": "sequential-release-enteral-indications-metadata-2026-10-03.json",
+    "mainMerge": "not performed",
+    "production": "not verified"
+  },
+  "wholeGoalComplete": false
+}

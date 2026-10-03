@@ -12,7 +12,7 @@ export const enteralNutritionModule = {
     "Select an access site and administration method that match duration, gastric function, aspiration risk, and patient goals.",
     "Compare formula composition and calculate delivery, free water, and supplemental flush requirements.",
     "Administer medications through enteral access without compromising the drug, formula, or tube.",
-    "Detect intolerance, refeeding risk, aspiration, contamination, and mechanical complications early.",
+    "Recognize signs that warrant assessment for intolerance, refeeding risk, aspiration, contamination, or mechanical complications.",
   ],
   submodules: [
     {
@@ -25,7 +25,7 @@ export const enteralNutritionModule = {
       lesson: [
         { heading: "Prefer the gut when it is usable", body: "Enteral nutrition delivers nutrients through the gastrointestinal tract by mouth or feeding tube. It supports gut structure and function, avoids central venous access, and is generally preferred to parenteral nutrition when digestion and absorption are adequate. It does not replace an oral diet when safe oral intake can meet the patient's needs." },
         { heading: "Connect the route to its advantages", body: "Compared with parenteral nutrition, enteral nutrition generally costs less and uses the gastrointestinal tract, helping prevent intestinal atrophy. It also carries lower risks of infection, hyperglycemia, cholelithiasis, and cholestasis. These advantages favor using a usable gut; they do not remove aspiration risk or the need to monitor nutrition and hydration." },
-        { heading: "Recognize the patient who needs support", body: "Consider enteral nutrition when oral intake is unsafe, impossible, or persistently inadequate. Common settings include dysphagia, neurologic injury, mechanical obstruction above a functioning gut, critical illness, cancer treatment, and increased requirements that cannot be met orally. Nutrition risk and expected duration matter more than a single day count." },
+        { heading: "Recognize the patient who needs support", body: "Assess nutrition support when safe oral intake cannot meet the patient’s needs. Relevant settings include dysphagia associated with neurologic disease or cancer treatment, critical illness, and requirements that cannot be met orally. These settings prompt assessment rather than establish an indication by diagnosis alone. Confirm that the proposed route can safely deliver nutrients to a functioning gastrointestinal tract. Selected patients with gastric outlet obstruction may be candidates for feeding beyond the obstruction when the small bowel is usable; complete intestinal obstruction requires withholding enteral feeding and clinical assessment. Match initiation to nutrition risk, anticipated intake, perfusion, and tolerance. Expected duration also guides access selection. A diagnosis or fixed day count alone does not establish a feeding indication." },
         { heading: "Do not feed through active instability", body: "Suspected bowel ischemia or complete intestinal obstruction requires withholding enteral feeding and urgent clinical assessment. The 2016 SCCM/ASPEN guideline advises withholding feeding during hemodynamic instability until resuscitation and stability are achieved. If vasopressor requirements escalate or new abdominal findings suggest ischemia, hold feeding and reassess; merely stopping advancement can leave an unsafe infusion running. Stable low-dose vasopressor support does not automatically exclude carefully monitored feeding. Assess the whole clinical pattern: the 2023 ASPEN practice tool states that lactate alone is not an established measure of enteral tolerance." },
         { heading: "Use early feeding with clinical judgment", body: "The 2016 SCCM/ASPEN guideline recommends considering enteral nutrition within 24 to 48 hours for critically ill adults unable to maintain oral intake, after adequate resuscitation and stabilization. Apply nutrition risk as well as timing: patients with low nutrition risk, normal baseline nutrition status, and low disease severity may not require specialized nutrition therapy during the first ICU week. Reassess risk daily. Early initiation does not mandate immediate full-rate feeding; choose dose and advancement according to the patient's perfusion, tolerance, and refeeding risk." },
       ],
@@ -70,7 +70,7 @@ export const enteralNutritionModule = {
     {
       slug: "formula-selection",
       title: "Formula Selection and Hydration",
-      summary: "Choose the least complex formula that meets nutrient, volume, digestion, absorption, electrolyte, and tolerance needs.",
+      summary: "Match formula composition to nutrient, volume, digestion, absorption, electrolyte, and tolerance needs; greater complexity does not establish greater benefit.",
       concepts: ["Polymeric and peptide-based formulas", "Caloric density", "Fiber and disease-specific products", "Free water and renal solute load"],
       visual: "formula-selection",
       application: "Start with physiology and the nutrition prescription. Product marketing cannot substitute for an assessment of protein, calories, fluid, electrolytes, fiber, absorption, cost, and evidence.",
@@ -84,7 +84,7 @@ export const enteralNutritionModule = {
         { heading: "Account for each water source once", body: "In a hypothetical water-budget exercise, 1,200 mL of formula labeled 80% water provides 960 mL of water. Add 300 mL of scheduled water flushes, 40 mL of separate medication water, and 100 mL of oral water: 1,400 mL total. Against a stated 1,500 mL daily target, 100 mL remains. These amounts are separate contributions, so do not count a medication flush again as a scheduled flush or add the entire formula volume a second time. Use what was actually delivered. The stated label and target are exercise inputs; this arithmetic does not establish a patient-specific water requirement or a safe flush schedule." },
         { heading: "Reassess hydration signals in context", body: "Inadequate fluid intake during tube feeding can contribute to hypernatremia. Rising blood urea nitrogen (BUN) and reduced urine output also warrant assessment: dehydration can raise BUN, but impaired kidney function can do so as well. Review formula water content, delivered feeding volume, flushes, medication fluids, other intake, losses, and renal status instead of diagnosing the cause from formula density or BUN alone. Tailor the correction to the patient; adding fluid without assessing the total intake and the risk of fluid accumulation can be inappropriate." },
       ],
-      keyPoints: ["Polymeric formula is a reasonable starting point when digestion and absorption are intact.", "Caloric density changes free-water delivery.", "Specialty formulas require a patient-specific rationale.", "Formula volume and water volume are not interchangeable."],
+      keyPoints: ["Polymeric formula is a reasonable starting point when digestion and absorption are intact.", "Calculate formula water from product composition and the volume actually delivered.", "Specialty formulas require a patient-specific rationale.", "Formula volume and water volume are not interchangeable."],
       check: { question: "A patient receives 1,500 mL of a formula that is 76 percent free water. How much water comes from the formula?", choices: ["1,140 mL", "760 mL", "1,500 mL", "1,976 mL"], answer: 0, rationale: "One thousand five hundred milliliters multiplied by 0.76 equals 1,140 mL of free water.", reviewHref: "#formula-selection" },
     },
     {
@@ -113,7 +113,7 @@ export const enteralNutritionModule = {
       summary: "Tolerance is a clinical pattern. Integrate delivered volume, symptoms, examination, stool, fluid balance, glucose, electrolytes, access integrity, and infection risk.",
       concepts: ["Aspiration prevention", "Diarrhea and intolerance", "Tube obstruction and displacement", "Refeeding and metabolic monitoring"],
       visual: "monitoring-complications",
-      application: "When a problem appears, identify whether it is gastrointestinal, metabolic, mechanical, medication related, or infectious before changing the formula.",
+      application: "When a problem appears, assess gastrointestinal, metabolic, mechanical, medication-related, and infectious causes. Respond promptly to urgent findings and reassess the feeding plan.",
       lesson: [
         { heading: "Prevent aspiration with a bundle", body: "For critically ill adults receiving gastric enteral nutrition, use coordinated aspiration precautions: elevate the head of the bed 30 to 45 degrees when clinically feasible, confirm the intended tube position before use and reassess when migration is suspected, and minimize unnecessary sedation while maintaining appropriate comfort and care. Assess gastric emptying and the patient's ability to protect the airway; consider postpyloric access for high aspiration risk and continuous delivery when gastric boluses are not tolerated. The 2016 SCCM/ASPEN guideline advises against adding blue dye or methylene blue to formula as aspiration markers. A single residual volume does not establish aspiration or normal tolerance. Apply age- and condition-specific positioning guidance rather than transferring this adult ICU bundle to infants." },
         { heading: "Use gastric residuals selectively", body: "The 2016 SCCM/ASPEN adult ICU guideline advises against routine gastric residual volume monitoring and against automatically holding feeding for a residual below 500 mL when other intolerance signs are absent. Values in the 200 to 500 mL range still warrant aspiration-risk assessment and preventive measures. This is not a universal safety cutoff: the 2023 ASPEN practice tool, in its vasopressor-administration guidance, describes a reasonable hold above 300 mL based on limited, low-quality evidence. Follow the applicable clinical setting and institutional protocol rather than combining these thresholds into one rule. Assess residual trends with vomiting, distention, pain, hemodynamics, stool, available imaging, and aspiration risk. Neither a value below 500 mL nor omission of routine residual checks establishes normal tolerance or removes the need for clinical monitoring." },
@@ -132,15 +132,12 @@ export const enteralNutritionModule = {
     { label: "FDA. Tips for Health Care Providers to Reduce Medical Device Misconnections", href: "https://www.fda.gov/medical-devices/medical-device-connectors/tips-health-care-providers-reduce-medical-device-misconnections" },
     { label: "FDA. Enteral Small-Bore Connector Misconnection Guidance, 2015", href: "https://www.fda.gov/media/83412/download" },
 
-    { label: "SCCM/ASPEN. Adult Critical Care Nutrition Guideline, 2016: Initiation, Hemodynamics, and Nutrition Risk", href: "https://sccmmedia.sccm.org/documents/LearnICU/Guidelines/Nutrition-SCCM-ASPEN.pdf" },
+    { label: "SCCM/ASPEN. Adult Critical Care Nutrition Guideline, 2016", href: "https://sccmmedia.sccm.org/documents/LearnICU/Guidelines/Nutrition-SCCM-ASPEN.pdf" },
     { label: "ASPEN. Enteral Nutrition Indications in Critical Illness Practice Tool, August 2023", href: "https://nutritioncare.org/wp-content/uploads/2024/12/EN-Indications-Critical-Illness-Practice-Tool.pdf" },
-    { label: "ASPEN. Safe Practices for Enteral Nutrition Therapy, 2017: Access Selection", href: "https://aspenjournals.onlinelibrary.wiley.com/doi/full/10.1177/0148607116673053" },
+    { label: "ASPEN. Safe Practices for Enteral Nutrition Therapy, 2017", href: "https://aspenjournals.onlinelibrary.wiley.com/doi/full/10.1177/0148607116673053" },
 
-    { label: "ASPEN Safe Practices for Enteral Nutrition Therapy", href: "https://nutritioncare.org/clinical-resources/enteral-nutrition/" },
-    { label: "ASPEN guideline for nutrition support in the adult critically ill patient", href: "https://doi.org/10.1002/jpen.2267" },
-    { label: "SCCM and ASPEN adult critical care nutrition guideline", href: "https://sccmmedia.sccm.org/documents/LearnICU/Guidelines/Nutrition-SCCM-ASPEN.pdf" },
-    { label: "ASPEN consensus recommendations for refeeding syndrome", href: "https://doi.org/10.1002/ncp.10474" },
-    { label: "FDA guidance on enteral connector misconnections", href: "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/safety-considerations-mitigate-risks-misconnections-small-bore-connectors-intended-enteral" },
+    { label: "ASPEN. Adult Critical Care Nutrition Guideline, 2022: Selected Nutrition-Support Questions", href: "https://doi.org/10.1002/jpen.2267" },
+    { label: "ASPEN. Consensus Recommendations for Refeeding Syndrome, 2020", href: "https://doi.org/10.1002/ncp.10474" },
     { label: "FDA medical device connector safety resources", href: "https://www.fda.gov/medical-devices/general-hospital-devices-and-supplies/medical-device-connectors" },
   ],
   questionBank: enteralNutritionQuestionBank,
