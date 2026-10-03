@@ -1,0 +1,526 @@
+{
+  "updated": "2026-10-03T17:03:07.919031+00:00",
+  "unit": "Enteral nutrition preparation, contamination and monitoring",
+  "status": "verified logical unit; full module and chapter remain reviewing",
+  "baseCommit": "5542ab0d83a55d766495a9b6109f7ed358aa2657",
+  "sourceAuthorization": "Explicit human approval 2026-10-02; prior source boundaries retained.",
+  "sources": [
+    {
+      "id": "safe2017",
+      "url": "https://aspenjournals.onlinelibrary.wiley.com/doi/full/10.1177/0148607116673053",
+      "sourceYear": 2017,
+      "authorization": "Explicit human approval 2026-10-02 for primary ASPEN/SCCM enteral clinical guidance. Book remains primary and private.",
+      "read": "Q1.1, Q3.3, Q6.2, Q6.9, Section10 background/Q10.1/Q10.2, and Q11.1 recommendations and complete rationales read; no whole-paper review claim. Q6.9 source figures9/10 visual evidence retained from the exact committed intake.",
+      "sourceVisuals": [
+        {
+          "table": 1,
+          "printedPage": 19,
+          "pdfPage": 5,
+          "method": "Official publisher ePDF in native Chrome Guest; full13 rows, caption and EN/GI note visually inspected unobstructed."
+        },
+        {
+          "table": 4,
+          "printedPage": 62,
+          "pdfPage": 48,
+          "method": "Official publisher ePDF in native Chrome Guest; full14 rows, caption and EAD/EN note visually inspected unobstructed."
+        }
+      ],
+      "visualAccessResolution": "HTML table row ends clipped; original publisher PDF resolved this. Both complete table screenshots observed through computer-use tool; no local image file or image hash claimed. Guest window closed and noWindowsAvailable observed.",
+      "priorVisualEvidence": "enteral-nutrition-contamination-source-intake.json",
+      "priorVisualEvidenceSHA256": "b624592c4714da68d32bb65947742585a93d53725c4bd5a9fcd0079ce27cb760",
+      "limits": "No new universal hang times, specific disinfection recipe, microbial-count threshold, fixed laboratory interval, incidence estimate, or perioperative fasting rule adopted."
+    },
+    {
+      "id": "safe2017-corrigendum",
+      "url": "https://aspenjournals.onlinelibrary.wiley.com/doi/10.1177/0148607117697291",
+      "read": "Complete clinical correction text read: original preoperative human-milk/infant-formula hours corrected. Does not change Q6.9, Tables1/4 or adopted monitoring claims; no fasting rule adopted."
+    },
+    {
+      "id": "refeeding2020",
+      "url": "https://aspenjournals.onlinelibrary.wiley.com/doi/full/10.1002/ncp.10474",
+      "read": "Retain completed adult Table6/pathophysiology review and unchanged visual evidence from enteral-nutrition-monitoring-refeeding-review.json and its PN source record. No new dose, diagnostic calculation, or protocol adopted."
+    },
+    {
+      "id": "book2023",
+      "read": "Chapter11 printed150/PDF158 and printed161/PDF169 text crosschecked; complete book EN coverage and page visual evidence retained from earlier committed EN book reviews. Book alone does not support detailed retained EN handling/monitoring claims; approved primary guidance supplies these details."
+    }
+  ],
+  "questionReview": [
+    {
+      "question": {
+        "id": "enteral-nutrition-050",
+        "question": "An adult receives commercial liquid formula through an open feeding system in the hospital. Which practice best reduces microbial contamination?",
+        "choices": [
+          "Use hand hygiene and aseptic handling, and follow manufacturer and facility preparation, storage, hang-time, and equipment-change instructions",
+          "Add fresh formula to the existing container and restart the hang-time clock with each refill",
+          "Extend the hang time whenever the formula still looks and smells unchanged",
+          "Wash and reuse equipment labeled for single use to avoid replacing the feeding system"
+        ],
+        "answer": 0,
+        "rationale": "Contamination prevention combines correct handling with product- and setting-specific time limits and equipment instructions. Topping off does not reset exposure time, normal appearance does not establish microbiological safety, and washing does not authorize reuse of equipment labeled for single use.",
+        "reviewHref": "#monitoring-complications"
+      },
+      "status": "source-verified",
+      "sourceScopes": [
+        "safe2017 Q6.9 recommendations1-11/full rationale/sourceFigures9/10",
+        "safe2017 Q10.1/Q10.2; retained SCCM2016 D6 diarrhea review"
+      ],
+      "choicesReviewed": [
+        {
+          "index": 0,
+          "text": "Use hand hygiene and aseptic handling, and follow manufacturer and facility preparation, storage, hang-time, and equipment-change instructions",
+          "keyed": true,
+          "decision": "Hand hygiene/aseptic handling plus manufacturer/facility handling and time/equipment instructions is the single best answer."
+        },
+        {
+          "index": 1,
+          "text": "Add fresh formula to the existing container and restart the hang-time clock with each refill",
+          "keyed": false,
+          "decision": "Adding formula does not reset prior exposure; Q6.9 rejects topping off."
+        },
+        {
+          "index": 2,
+          "text": "Extend the hang time whenever the formula still looks and smells unchanged",
+          "keyed": false,
+          "decision": "Appearance or smell does not establish microbiological safety or authorize extending limits."
+        },
+        {
+          "index": 3,
+          "text": "Wash and reuse equipment labeled for single use to avoid replacing the feeding system",
+          "keyed": false,
+          "decision": "Washing does not authorize reusing equipment explicitly labeled single use."
+        }
+      ],
+      "rationaleReview": "Complete changed explanation compared with adopted primary-source scope. Single best answer, three plausible handling/attribution errors; no organism, treatment dose, or universal hang-time threshold added."
+    },
+    {
+      "question": {
+        "id": "enteral-nutrition-108",
+        "question": "An adult receiving tube feeding develops fever and diarrhea. The feeding container has repeatedly been topped off with fresh formula instead of being replaced. Which interpretation or management plan is most defensible?",
+        "choices": [
+          "Promptly assess the patient, discard the compromised formula and delivery system, and investigate contamination alongside other possible causes",
+          "Continue using the same container because each addition of fresh formula resets its safe hang time",
+          "Change to a different formula composition but keep the same container and administration set",
+          "Diagnose formula contamination from the handling error alone and defer assessment of other causes"
+        ],
+        "answer": 0,
+        "rationale": "Topping off is unsafe because it prolongs exposure and can introduce or propagate contamination. Stop using the compromised formula and system and replace them according to safe preparation, storage, hang-time, and equipment-change instructions. Fever and diarrhea require prompt clinical assessment; the handling error raises concern but does not establish contamination as the cause or exclude medication effects, infection from another source, or other intolerance.",
+        "reviewHref": "#monitoring-complications"
+      },
+      "status": "source-verified",
+      "sourceScopes": [
+        "safe2017 Q6.9 recommendations1-11/full rationale/sourceFigures9/10",
+        "safe2017 Q10.1/Q10.2; retained SCCM2016 D6 diarrhea review"
+      ],
+      "choicesReviewed": [
+        {
+          "index": 0,
+          "text": "Promptly assess the patient, discard the compromised formula and delivery system, and investigate contamination alongside other possible causes",
+          "keyed": true,
+          "decision": "Prompt clinical assessment and removal/replacement of compromised formula/delivery system addresses risk without asserting a proven microbial cause."
+        },
+        {
+          "index": 1,
+          "text": "Continue using the same container because each addition of fresh formula resets its safe hang time",
+          "keyed": false,
+          "decision": "Fresh additions do not reset safe use of the already exposed system."
+        },
+        {
+          "index": 2,
+          "text": "Change to a different formula composition but keep the same container and administration set",
+          "keyed": false,
+          "decision": "Changing composition alone while retaining the implicated container/set fails to correct the handling breach."
+        },
+        {
+          "index": 3,
+          "text": "Diagnose formula contamination from the handling error alone and defer assessment of other causes",
+          "keyed": false,
+          "decision": "A handling error is a risk clue; symptoms still need assessment of medication effects, infections and other causes."
+        }
+      ],
+      "rationaleReview": "Complete changed explanation compared with adopted primary-source scope. Single best answer, three plausible handling/attribution errors; no organism, treatment dose, or universal hang-time threshold added."
+    }
+  ],
+  "wholeBodyReview": [
+    {
+      "heading": "Monitor delivery and metabolic safety",
+      "body": "Compare the prescribed regimen with the formula and water actually delivered, including interruptions and their causes. Track weight trend, intake and output, hydration and volume status, gastrointestinal symptoms, glucose, sodium, potassium, magnesium, phosphate, and kidney function. Set the monitoring interval according to acuity, the stage of feeding, and clinical changes rather than applying one schedule to every patient. For patients at refeeding risk, check and treat potassium, magnesium, and phosphate abnormalities during cautious initiation; severely low levels warrant delaying initiation or calorie increases until corrected. Rapid falls or levels that are difficult to correct require prompt reassessment, electrolyte treatment, and adjustment of energy delivery. Inspect tube position, patency, and the access site; report new pain, excess leakage, redness, or swelling. Reduce contamination risk with hand hygiene, aseptic handling, and manufacturer and facility instructions for preparation, storage, hang time, and equipment changes. Do not top off a feeding container or reuse equipment labeled for single use. Fever or diarrhea warrants clinical assessment of contamination and other possible causes rather than a diagnosis based on a handling error alone.",
+      "status": "whole-body source-verified",
+      "claimGroupsReviewed": [
+        {
+          "claim": "Actual formula/water delivery, interruptions, weight/intake/output/hydration/GI/lab trends; acuity and care-stage intervals",
+          "sources": [
+            "safe2017 Q1.1",
+            "safe2017 Q6.2/Table4",
+            "safe2017 Section10/Q10.1/Q10.2",
+            "retained book and monitoring/refeeding review"
+          ]
+        },
+        {
+          "claim": "K/Mg/phosphate correction, severe baseline-deficit delay and rapid/hard-to-correct electrolyte response during cautious initiation",
+          "sources": [
+            "refeeding2020 adultTable6/pathophysiology",
+            "enteral-nutrition-monitoring-refeeding-review.json"
+          ]
+        },
+        {
+          "claim": "Tube position/patency/site assessment and new pain/leakage/redness/swelling reporting",
+          "sources": [
+            "safe2017 Q3.3",
+            "safe2017 Q6.2/Table4",
+            "retained access/patency review"
+          ]
+        },
+        {
+          "claim": "Hand hygiene/aseptic handling/instructions/no topping off/no reuse contrary to single-use labeling; assess contamination alongside other causes",
+          "sources": [
+            "safe2017 Q6.9",
+            "safe2017 Q10.1/Q10.2"
+          ]
+        }
+      ]
+    }
+  ],
+  "figureReview": [
+    {
+      "type": "monitoring-complications",
+      "status": "whole-figure source-verified unchanged",
+      "eyebrow": "Tolerance matrix",
+      "title": "Find the system that failed.",
+      "claimGroups": [
+        {
+          "labels": [
+            "GI",
+            "Pain, stool, emesis",
+            "Assess rate, disease, infection, drugs"
+          ],
+          "sources": [
+            "safe2017 Q1.1/Q10.1/Q10.2",
+            "retained SCCM2016 D6 diarrhea review"
+          ]
+        },
+        {
+          "labels": [
+            "Metabolic",
+            "Glucose and electrolytes",
+            "Watch refeeding and hydration"
+          ],
+          "sources": [
+            "safe2017 Q1.1/Q10.1",
+            "refeeding2020 adultTable6/pathophysiology"
+          ]
+        },
+        {
+          "labels": [
+            "Mechanical",
+            "Position and patency",
+            "Migration, clogging, leakage"
+          ],
+          "sources": [
+            "safe2017 Q3.3/Q6.2/Table4/Q11.1",
+            "retained safe2017 Q7.3 access/patency review"
+          ]
+        },
+        {
+          "labels": [
+            "Delivery",
+            "Ordered versus received",
+            "Audit holds, pump, preparation"
+          ],
+          "sources": [
+            "safe2017 Q6.2/Table4/Q6.9",
+            "safe2017 Section10/Q10.1"
+          ]
+        }
+      ],
+      "presentationReview": "Four assessment categories with arrows as reading cues; no observed data, quantitative axis, fixed causal sequence, diagnosis, threshold, or universal schedule claimed. All captions/labels/notes visually readable on desktop and mobile; renderer unchanged."
+    }
+  ],
+  "embeddedCheckReview": {
+    "newClosures": 0,
+    "allSixPreviouslyVerifiedChecksUnchanged": true
+  },
+  "preservation": {
+    "bankObjectsUnchanged": 106,
+    "cumulativeObjectsUnchanged": 1180,
+    "wholeBodyObjectsUnchanged": 35,
+    "all36HeadingsStable": true,
+    "allSixChecksUnchanged": true,
+    "allSixFiguresUnchanged": true,
+    "visualRendererUnchanged": true,
+    "allMetadataAnd14ReferencesUnchanged": true,
+    "pathsIdsAnswerIndicesAndAnchorsPreserved": true,
+    "architectureBackendAccountTrackingUnchanged": true,
+    "noNewClinicalDoseOrCalculation": true
+  },
+  "coverage": {
+    "bank": 108,
+    "verifiedBank": 107,
+    "remainingBank": 1,
+    "verifiedBankIds": [
+      "enteral-nutrition-060",
+      "enteral-nutrition-061",
+      "enteral-nutrition-062",
+      "enteral-nutrition-063",
+      "enteral-nutrition-064",
+      "enteral-nutrition-065",
+      "enteral-nutrition-066",
+      "enteral-nutrition-067",
+      "enteral-nutrition-068",
+      "enteral-nutrition-069",
+      "enteral-nutrition-070",
+      "enteral-nutrition-071",
+      "enteral-nutrition-072",
+      "enteral-nutrition-073",
+      "enteral-nutrition-074",
+      "enteral-nutrition-075",
+      "enteral-nutrition-076",
+      "enteral-nutrition-077",
+      "enteral-nutrition-078",
+      "enteral-nutrition-079",
+      "enteral-nutrition-080",
+      "enteral-nutrition-081",
+      "enteral-nutrition-082",
+      "enteral-nutrition-083",
+      "enteral-nutrition-084",
+      "enteral-nutrition-085",
+      "enteral-nutrition-086",
+      "enteral-nutrition-087",
+      "enteral-nutrition-088",
+      "enteral-nutrition-089",
+      "enteral-nutrition-109",
+      "enteral-nutrition-110",
+      "enteral-nutrition-111",
+      "enteral-nutrition-112",
+      "enteral-nutrition-113",
+      "enteral-nutrition-114",
+      "enteral-nutrition-001",
+      "enteral-nutrition-115",
+      "enteral-nutrition-033",
+      "enteral-nutrition-035",
+      "enteral-nutrition-036",
+      "enteral-nutrition-037",
+      "enteral-nutrition-040",
+      "enteral-nutrition-042",
+      "enteral-nutrition-093",
+      "enteral-nutrition-094",
+      "enteral-nutrition-098",
+      "enteral-nutrition-107",
+      "enteral-nutrition-116",
+      "enteral-nutrition-117",
+      "enteral-nutrition-006",
+      "enteral-nutrition-007",
+      "enteral-nutrition-008",
+      "enteral-nutrition-015",
+      "enteral-nutrition-016",
+      "enteral-nutrition-018",
+      "enteral-nutrition-021",
+      "enteral-nutrition-030",
+      "enteral-nutrition-049",
+      "enteral-nutrition-092",
+      "enteral-nutrition-099",
+      "enteral-nutrition-105",
+      "enteral-nutrition-023",
+      "enteral-nutrition-041",
+      "enteral-nutrition-090",
+      "enteral-nutrition-104",
+      "enteral-nutrition-002",
+      "enteral-nutrition-003",
+      "enteral-nutrition-004",
+      "enteral-nutrition-005",
+      "enteral-nutrition-100",
+      "enteral-nutrition-012",
+      "enteral-nutrition-013",
+      "enteral-nutrition-014",
+      "enteral-nutrition-106",
+      "enteral-nutrition-009",
+      "enteral-nutrition-010",
+      "enteral-nutrition-011",
+      "enteral-nutrition-017",
+      "enteral-nutrition-019",
+      "enteral-nutrition-022",
+      "enteral-nutrition-024",
+      "enteral-nutrition-095",
+      "enteral-nutrition-097",
+      "enteral-nutrition-025",
+      "enteral-nutrition-026",
+      "enteral-nutrition-027",
+      "enteral-nutrition-028",
+      "enteral-nutrition-029",
+      "enteral-nutrition-032",
+      "enteral-nutrition-103",
+      "enteral-nutrition-034",
+      "enteral-nutrition-038",
+      "enteral-nutrition-039",
+      "enteral-nutrition-045",
+      "enteral-nutrition-046",
+      "enteral-nutrition-048",
+      "enteral-nutrition-102",
+      "enteral-nutrition-020",
+      "enteral-nutrition-043",
+      "enteral-nutrition-044",
+      "enteral-nutrition-047",
+      "enteral-nutrition-091",
+      "enteral-nutrition-096",
+      "enteral-nutrition-101",
+      "enteral-nutrition-050",
+      "enteral-nutrition-108"
+    ],
+    "remainingBankIds": [
+      "enteral-nutrition-031"
+    ],
+    "bodies": 36,
+    "verifiedBodies": 35,
+    "remainingBodies": 1,
+    "embeddedChecks": 6,
+    "verifiedEmbeddedChecks": 6,
+    "remainingEmbeddedChecks": 0,
+    "figures": 6,
+    "verifiedFigures": 6,
+    "cumulative": 5,
+    "sourceVerifiedCumulative": 5,
+    "pendingCumulative": [],
+    "metadata": "Full module and lesson metadata remain pending.",
+    "remainingFigures": 0,
+    "wholeModuleVerified": false,
+    "wholeChapterVerified": false
+  },
+  "remainingCoverageReview": {
+    "questionIds": [
+      "enteral-nutrition-031"
+    ],
+    "wholeBodyHeadings": [
+      "Recognize the patient who needs support"
+    ],
+    "embeddedCheckLessons": [],
+    "figureTypes": [],
+    "cumulativeIds": [],
+    "fullMetadataPending": true,
+    "duplicateReferenceWarning": "Existing duplicate SCCM PDF href used as React key; all14 links render in reviewed candidate. Reconcile references during full metadata audit."
+  },
+  "calculationEvidence": {
+    "newDistinctAssessmentCalculations": 0,
+    "newCompletedBookExercises": 0,
+    "runningAssessmentCalculations": 728,
+    "runningSeparateCompletedBookExercises": 98
+  },
+  "validation": {
+    "build": {
+      "status": "passed",
+      "staticPages": 567,
+      "scope": "Exact HEAD archive with committed public tree (unchanged since archived public base) and two reviewed product files. Dependency symlink; no environment files or unrelated local changes. Webpack mode used."
+    },
+    "assessmentStructure": {
+      "modules": 1,
+      "questions": 108,
+      "hardErrors": [],
+      "sourceGaps": [],
+      "sizeAdvisories": [],
+      "thinLessons": [],
+      "weakestModules": [
+        {
+          "module": "enteral-nutrition",
+          "lessons": 6,
+          "questions": 108,
+          "minimumLessonCoverage": 9
+        }
+      ]
+    },
+    "browser": {
+      "status": "passed",
+      "results": [
+        {
+          "width": 1440,
+          "wholeBodyDOMEquality": 36,
+          "allSixMetadataDOMEquality": true,
+          "all14ReferenceDOMEquality": true,
+          "twoChangedQuestionsCorrectWrongFeedback": true,
+          "allSixFigureDOMPresence": true,
+          "allSixChecksUnchanged": true,
+          "remediationAnchor": true,
+          "noHorizontalOverflow": true,
+          "accountPersistence": "not tested; unauthenticated local preview"
+        },
+        {
+          "width": 390,
+          "wholeBodyDOMEquality": 36,
+          "allSixMetadataDOMEquality": true,
+          "all14ReferenceDOMEquality": true,
+          "twoChangedQuestionsCorrectWrongFeedback": true,
+          "allSixFigureDOMPresence": true,
+          "allSixChecksUnchanged": true,
+          "remediationAnchor": true,
+          "noHorizontalOverflow": true,
+          "accountPersistence": "not tested; unauthenticated local preview"
+        }
+      ],
+      "pageErrors": []
+    },
+    "visualInspection": {
+      "status": "passed",
+      "inspectedAt": "2026-10-03T17:03:07.713728+00:00",
+      "desktopWidth": 1440,
+      "mobileWidth": 390,
+      "additionalOverflowWidth": 320,
+      "coverage": [
+        "EN050 and EN108 complete stems, all four choices, complete rationales, keyed selection and incorrect-answer remediation in both desktop and mobile states",
+        "Complete Monitor delivery and metabolic safety body on desktop and mobile",
+        "All four monitoring-complications categories, labels and notes on desktop and mobile",
+        "All14 reference rows and labels on desktop and mobile; content still subject to full metadata/source reconciliation"
+      ],
+      "method": "Five contact sheets manually inspected. Desktop assessment details also individually inspected. Contact sheets explicitly juxtapose separate legend and fieldset captures; no claim of one uninterrupted full-field screenshot for every state. Source product DOM and CSS were unchanged for capture.",
+      "captureLimitation": "Some desktop viewport/fieldset screenshots intermittently omit part of the legend while the corresponding separate legend or full-field detail displays the complete text. Visual coverage uses the combined unmodified capture evidence. Normal headful Chrome recapture exited0 and closed its owned browser. This does not establish absence of a wider Chromium legend-paint issue.",
+      "knownExistingWarning": "Duplicate SCCM reference URL React key warning; retained for remaining metadata review. All14 links render.",
+      "scopeLimits": [
+        "Unauthenticated local candidate only; no account persistence or production verification",
+        "No full module or chapter closure"
+      ],
+      "captureHashes": {
+        "question-enteral-nutrition-050-correct-1440.png": "d385ecb7fe79aa9192ea291f25101ac356c6549a1fe2fbdaef46c1df4bbaff72",
+        "question-enteral-nutrition-050-correct-390.png": "bd058f121d19bc9066032ed91dc8b05e7100f55c368c11b90a490b8d955b4c3e",
+        "detail-question-enteral-nutrition-050-correct-1440.png": "04b25ff428926826b7326fcb7a1d8ffc41c34624c12de073fc5575614f3e0753",
+        "stem-question-enteral-nutrition-050-correct-1440.png": "886d46ef6b75665775f19b5cfb8eb569587affef981476710f58f2fc9f4ae615",
+        "question-enteral-nutrition-050-wrong-1440.png": "2bf378c3fe49a5cecac40a10ee5550d8b49fb50b5693d6317c210770f5a1c55a",
+        "question-enteral-nutrition-050-wrong-390.png": "2300d69cd8588d4e2d0b73f0cf9dcaa106e7be427d750c1ecff8c9a86597115e",
+        "detail-question-enteral-nutrition-050-wrong-1440.png": "83ba7659c7e7f28411e2ff1f51e9782b3effa94235aff2def57e95d48e9f69f0",
+        "stem-question-enteral-nutrition-050-wrong-1440.png": "41b0b220f1aaf77132b8e5b9f32759d214bbafd2670c2039ff91dbed238d2e62",
+        "question-enteral-nutrition-108-correct-1440.png": "7367ce126dad5593ce2addf5a3bd8f6c1082379e6096923380fc454f9193a9a2",
+        "question-enteral-nutrition-108-correct-390.png": "8dfa6b58f7eca0d6012c387ecb868990e523f9714d304f9b6599e272cd5f9131",
+        "detail-question-enteral-nutrition-108-correct-1440.png": "af4160dc865162d9bce67c077774c802e9543a07f04f0dfc435c799b734637af",
+        "stem-question-enteral-nutrition-108-correct-1440.png": "7b6c5ff5d85780ef95762caaa9ce449d762b8bb85f9ab69f46aa123ebce44f89",
+        "question-enteral-nutrition-108-wrong-1440.png": "1a0a14beb9dfc6554861bc31ebc13563efd50c7604daaecda8126db846f4353a",
+        "question-enteral-nutrition-108-wrong-390.png": "687d7f038fba438b003fd62004c73053ad2f575e4cee91345de54bfc5c5ff998",
+        "detail-question-enteral-nutrition-108-wrong-1440.png": "5e3410f460fce2af6e69c35acd4c9b016a3fbdc602a9da84bdc3a9efa4c1a84f",
+        "stem-question-enteral-nutrition-108-wrong-1440.png": "bc707916bebb76ff5aea1520391c8e21136846ea8fa062f6e0770da4612c1d62",
+        "body-0-1440.png": "5332f0f816e048d6be0eb7c8f8432fb92220e92c11e87d6cf20de253f96a9171",
+        "body-0-390.png": "3be1fe733871073adb45741b425e55df6b5f77a02f1367b9b711e18d5983d5ef",
+        "monitoring-figure-1440.png": "4f37d6fa17b92c06331a0da9dad4e8677c9fc6ce6d6e468e09d6f08a1e514a46",
+        "monitoring-figure-390.png": "7abe5022790ba40eadb9aa5ed4658d1716fe33268fc18290df0457bb863769f5",
+        "references-1440.png": "bedef1104c6c9e4e03cd781042c108879f446ea83519948fd0c54d1a8212ae68",
+        "references-390.png": "49da54e98354fcfca888e5de3295b027f8a2e188b839c162993dc96dbadd09fb"
+      },
+      "sheetHashes": {
+        "sheet-enteral-nutrition-050.png": "db750e43985cf6b2e9830166fdb383968b3c846e9bd1289144ac56f81cf01003",
+        "sheet-enteral-nutrition-108.png": "d2863da0bf2c618286d5b00817639a9d76eed0f5eb14f24962694f40acbdeb76",
+        "sheet-body-0.png": "aec09edf0c9ee4d1c69fb54c9a148c7d10f65e7f8fb4b791d9b59af8a8218b99",
+        "sheet-monitoring-figure.png": "8eeadaf93c42fe8354a57d7c0f58ad45368c9d498248030162f1d17a047d5d64",
+        "sheet-references.png": "93ae231370277c2362778705148f8b59ee592d26c4fa5eeb86330b3081ba2b02"
+      }
+    },
+    "contentHashes": {
+      "src/data/modules/enteralNutrition.js": "4f7fe709e8ff9f5e0034199a705e5c021e2fe8d615e7fd64c65620ff083dc38c",
+      "src/data/questionBanks/enteralNutrition.js": "688aee1dd2b17de3cdd6bb1e859632655cdb0a627f3dc142b21e3c3f9edbb7ad"
+    },
+    "finalSourceComparison": "Both complete changed questions including all choices/rationales, the whole monitoring body, and every unchanged figure label compared with adopted source scopes after edits. No new dose/calculation or numeric protocol.",
+    "knownExistingWarning": "Duplicate SCCM reference URL used as key; all14 rendered links verified. Metadata remains pending; no warning-free whole-module claim."
+  },
+  "release": {
+    "branch": "audit/rxprep-content-2026-09-24",
+    "commit": null,
+    "push": "pending",
+    "receipt": "sequential-release-enteral-preparation-monitoring-2026-10-03.json",
+    "mainMerge": "not performed",
+    "production": "not verified"
+  },
+  "wholeGoalComplete": false
+}
