@@ -1,0 +1,399 @@
+{
+  "updated": "2026-10-03T17:52:22.900184+00:00",
+  "unit": "Enteral nutrition route comparison in adult critical illness",
+  "status": "verified logical unit; full module and chapter remain reviewing",
+  "baseCommit": "19a3d18635ea4245b8cca347ef0e65c7a3ee3490",
+  "sourceAuthorization": "Book primary; explicit human approval2026-10-02 for primaryASPEN/SCCM andFDA EN clinical guidance. National Academies request remains pending.",
+  "sources": [
+    {
+      "id": "book2023",
+      "private": true,
+      "read": "Chapter11 printed161/PDF169 complete EN paragraph visually reread. General gut preservation/cost and PN-complication concerns preserved with clinical-setting qualification."
+    },
+    {
+      "id": "aspen2022",
+      "url": "https://aspenjournals.onlinelibrary.wiley.com/doi/10.1002/jpen.2267",
+      "read": "Complete Q3 recommendation/rationale including all Table5 cells/notes; Table1 Q3 recommendation and complete clinical application. Publisher original PDF Table5 page18/printed29 and Table1 Q3 page3/printed14 visually inspected in owned Chrome Guest PDF viewer.",
+      "visualOutcome": "Table titles, all columns, both Table5 rows and footnote visible; full Q3 summary/application visible. Guest tab closed; noWindowsAvailable observed.",
+      "scopeLimits": "No whole guideline, supplement GRADE plot or original trial audit claimed. No trial-specific outcome rate adopted."
+    },
+    {
+      "id": "corrigendum2022",
+      "url": "https://aspenjournals.onlinelibrary.wiley.com/doi/10.1002/jpen.2419",
+      "read": "Complete correction text reviewed; it concerns lipid search Figure1 and fish-oil mortality Figure24/statistical sentence, not Q3/Table5. February10 correction notice in primary PDF also reviewed; listed tables3/4/6/7/8 do not include Table5.",
+      "scopeLimits": "No visual review of corrected lipid figures claimed or lipid finding newly adopted."
+    },
+    {
+      "id": "prior-approved-scopes",
+      "read": "Retained2016B1/B5/C1/C3 and prior EN aspiration/monitoring evidence support gastrointestinal suitability, contraindications and monitoring; no new indication threshold."
+    }
+  ],
+  "wholeBodyReview": [
+    {
+      "heading": "Connect the route to its advantages",
+      "body": "Enteral nutrition generally costs less than parenteral nutrition and uses the gastrointestinal tract, helping prevent intestinal atrophy. Infection, hyperglycemia, cholelithiasis, and cholestasis are concerns with parenteral nutrition, but comparative benefits depend on the patient and treatment setting. The 2022 ASPEN guideline found no significant clinical-outcome difference between early exclusive enteral and parenteral nutrition with similar energy delivery in critically ill adults who were candidates for enteral feeding; either route was acceptable during the first ICU week. The supporting interventions lasted only 5 to 7 days, so this finding does not establish equal outcomes for prolonged treatment or patients unable to tolerate enteral nutrition. Consider gastrointestinal suitability, tolerance, cost, and practical delivery rather than promising fewer infections solely from the route. Enteral feeding still requires aspiration precautions and nutrition and hydration monitoring."
+    }
+  ],
+  "claimSupport": [
+    {
+      "scope": "General cost/gut preservation and PN-complication concerns",
+      "source": "RxPrep2023 printed161/PDF169; complications retained without unconditional comparative-risk claim."
+    },
+    {
+      "scope": "Adult critically ill EN candidates, similar energy, early exclusive routes, either acceptable first week;5to7day interventions; limits for prolonged therapy or EN intolerance",
+      "source": "ASPEN2022 completeQ3/Table5/Table1Q3; no clinical superiority or statistical equivalence inferred."
+    },
+    {
+      "scope": "Aspiration and hydration monitoring remain needed",
+      "source": "Retained book/approved EN monitoring review; no new monitoring target."
+    }
+  ],
+  "questionReview": {
+    "changed": [
+      {
+        "id": "enteral-nutrition-001",
+        "changes": "Rationale only; all prompt/choices/answer/reviewHref retained. Usable gut favors EN among the stated options, without universal outcome superiority.",
+        "support": "Book2023 EN paragraph + approved2022Q3"
+      }
+    ],
+    "retainedFullyReviewed": [
+      {
+        "id": "enteral-nutrition-007",
+        "question": {
+          "id": "enteral-nutrition-007",
+          "question": "Which outcome is a recognized advantage of enteral nutrition?",
+          "choices": [
+            "Preservation of gastrointestinal structure and function",
+            "Avoidance of intestinal absorption because nutrients enter the bloodstream directly",
+            "Prevention of aspiration because the feeding tube replaces airway protection",
+            "Provision of the full water requirement whenever the calorie target is met"
+          ],
+          "answer": 0,
+          "rationale": "Enteral nutrition uses the gut and helps prevent intestinal atrophy. Parenteral nutrition bypasses the gut. Enteral feeding still carries aspiration risk, and meeting calorie needs does not establish adequate water delivery.",
+          "reviewHref": "#enteral-decision"
+        },
+        "support": "Book2023 EN paragraph and prior approved indication/aspiration/hydration scopes. No comparative infection/outcome superiority asserted.",
+        "status": "retained source-verified"
+      },
+      {
+        "id": "enteral-nutrition-008",
+        "question": {
+          "id": "enteral-nutrition-008",
+          "question": "What is the most defensible reason to initiate enteral nutrition in a malnourished patient?",
+          "choices": [
+            "Oral intake is inadequate and the gastrointestinal tract is functional",
+            "Adequate safe oral intake is present, but a tube formula is more convenient",
+            "A central venous line is available, even though safe oral intake meets needs",
+            "One low albumin result is present, even though safe oral intake meets needs"
+          ],
+          "answer": 0,
+          "rationale": "Enteral support is favored when voluntary oral intake cannot meet nutritional needs and the gut is usable. Formula convenience, an existing intravenous line, or an isolated laboratory result does not override the stated ability to meet needs safely by mouth.",
+          "reviewHref": "#enteral-decision"
+        },
+        "support": "Book2023 EN paragraph and prior approved indication/aspiration/hydration scopes. No comparative infection/outcome superiority asserted.",
+        "status": "retained source-verified"
+      }
+    ],
+    "cumulativeChanged": [
+      "cumulative-enteral-nutrition-enteral-nutrition-001"
+    ],
+    "newQuestionClosures": 0
+  },
+  "metadataStatementReview": {
+    "keyPoint": "A functional, safe gut supports enteral nutrition; compare routes within the applicable clinical setting.",
+    "support": "Book GI preference plus2022Q3 population qualification.",
+    "finalFullMetadataReview": false
+  },
+  "sourceDiscrepancies": {
+    "rows": [
+      {
+        "scope": "Table5 Reignier ICU mortality PN",
+        "count": 405,
+        "reportedPercent": 31,
+        "statedRandomizedN": 1208,
+        "percentUsingStatedAllocationN": "33.52649006622516556291390728"
+      },
+      {
+        "scope": "Table5 Reignier ICU mortality EN",
+        "count": 429,
+        "reportedPercent": 33,
+        "statedRandomizedN": 1202,
+        "percentUsingStatedAllocationN": "35.69051580698835274542429285"
+      },
+      {
+        "scope": "Table5 Reignier hospital mortality PN",
+        "count": 479,
+        "reportedPercent": 34,
+        "statedRandomizedN": 1208,
+        "percentUsingStatedAllocationN": "39.65231788079470198675496689"
+      },
+      {
+        "scope": "Table5 Reignier hospital mortality EN",
+        "count": 498,
+        "reportedPercent": 36,
+        "statedRandomizedN": 1202,
+        "percentUsingStatedAllocationN": "41.43094841930116472545757072"
+      }
+    ],
+    "interpretation": "Reported Table5 count/percent pairs do not reconcile with the stated randomized group sizes. Outcome-specific denominators are not given in this table; no corrected outcome rate or original-trial finding is inferred. No trial-specific numerical outcome is adopted in public teaching. Primary trial reconciliation remains outside this scoped approved ASPEN review.",
+    "strayText": "Extra vs in Reignier intake cell retained as publisher transcription anomaly, not adopted.",
+    "sampleTotal": 4798
+  },
+  "coverage": {
+    "bank": 108,
+    "verifiedBank": 107,
+    "remainingBank": 1,
+    "verifiedBankIds": [
+      "enteral-nutrition-060",
+      "enteral-nutrition-061",
+      "enteral-nutrition-062",
+      "enteral-nutrition-063",
+      "enteral-nutrition-064",
+      "enteral-nutrition-065",
+      "enteral-nutrition-066",
+      "enteral-nutrition-067",
+      "enteral-nutrition-068",
+      "enteral-nutrition-069",
+      "enteral-nutrition-070",
+      "enteral-nutrition-071",
+      "enteral-nutrition-072",
+      "enteral-nutrition-073",
+      "enteral-nutrition-074",
+      "enteral-nutrition-075",
+      "enteral-nutrition-076",
+      "enteral-nutrition-077",
+      "enteral-nutrition-078",
+      "enteral-nutrition-079",
+      "enteral-nutrition-080",
+      "enteral-nutrition-081",
+      "enteral-nutrition-082",
+      "enteral-nutrition-083",
+      "enteral-nutrition-084",
+      "enteral-nutrition-085",
+      "enteral-nutrition-086",
+      "enteral-nutrition-087",
+      "enteral-nutrition-088",
+      "enteral-nutrition-089",
+      "enteral-nutrition-109",
+      "enteral-nutrition-110",
+      "enteral-nutrition-111",
+      "enteral-nutrition-112",
+      "enteral-nutrition-113",
+      "enteral-nutrition-114",
+      "enteral-nutrition-001",
+      "enteral-nutrition-115",
+      "enteral-nutrition-033",
+      "enteral-nutrition-035",
+      "enteral-nutrition-036",
+      "enteral-nutrition-037",
+      "enteral-nutrition-040",
+      "enteral-nutrition-042",
+      "enteral-nutrition-093",
+      "enteral-nutrition-094",
+      "enteral-nutrition-098",
+      "enteral-nutrition-107",
+      "enteral-nutrition-116",
+      "enteral-nutrition-117",
+      "enteral-nutrition-006",
+      "enteral-nutrition-007",
+      "enteral-nutrition-008",
+      "enteral-nutrition-015",
+      "enteral-nutrition-016",
+      "enteral-nutrition-018",
+      "enteral-nutrition-021",
+      "enteral-nutrition-030",
+      "enteral-nutrition-049",
+      "enteral-nutrition-092",
+      "enteral-nutrition-099",
+      "enteral-nutrition-105",
+      "enteral-nutrition-023",
+      "enteral-nutrition-041",
+      "enteral-nutrition-090",
+      "enteral-nutrition-104",
+      "enteral-nutrition-002",
+      "enteral-nutrition-003",
+      "enteral-nutrition-004",
+      "enteral-nutrition-005",
+      "enteral-nutrition-100",
+      "enteral-nutrition-012",
+      "enteral-nutrition-013",
+      "enteral-nutrition-014",
+      "enteral-nutrition-106",
+      "enteral-nutrition-009",
+      "enteral-nutrition-010",
+      "enteral-nutrition-011",
+      "enteral-nutrition-017",
+      "enteral-nutrition-019",
+      "enteral-nutrition-022",
+      "enteral-nutrition-024",
+      "enteral-nutrition-095",
+      "enteral-nutrition-097",
+      "enteral-nutrition-025",
+      "enteral-nutrition-026",
+      "enteral-nutrition-027",
+      "enteral-nutrition-028",
+      "enteral-nutrition-029",
+      "enteral-nutrition-032",
+      "enteral-nutrition-103",
+      "enteral-nutrition-034",
+      "enteral-nutrition-038",
+      "enteral-nutrition-039",
+      "enteral-nutrition-045",
+      "enteral-nutrition-046",
+      "enteral-nutrition-048",
+      "enteral-nutrition-102",
+      "enteral-nutrition-020",
+      "enteral-nutrition-043",
+      "enteral-nutrition-044",
+      "enteral-nutrition-047",
+      "enteral-nutrition-091",
+      "enteral-nutrition-096",
+      "enteral-nutrition-101",
+      "enteral-nutrition-050",
+      "enteral-nutrition-108"
+    ],
+    "remainingBankIds": [
+      "enteral-nutrition-031"
+    ],
+    "bodies": 36,
+    "verifiedBodies": 36,
+    "remainingBodies": 0,
+    "embeddedChecks": 6,
+    "verifiedEmbeddedChecks": 6,
+    "remainingEmbeddedChecks": 0,
+    "figures": 6,
+    "verifiedFigures": 6,
+    "cumulative": 5,
+    "sourceVerifiedCumulative": 5,
+    "pendingCumulative": [],
+    "metadata": "Route-comparison key point reconciled; renal-solute concept and final whole metadata reconciliation remain pending.",
+    "remainingFigures": 0,
+    "wholeModuleVerified": false,
+    "wholeChapterVerified": false,
+    "bookAndAdoptedSourceBodyReviewCoverage": 36,
+    "bodyReviewCoverageTotal": 36,
+    "reopenedClinicalReconciliationBodies": [],
+    "newBodyClosuresThisUnit": 1,
+    "reopenedBodyScopesThisUnit": 0
+  },
+  "remainingCoverageReview": {
+    "questionIds": [
+      "enteral-nutrition-031"
+    ],
+    "wholeBodyHeadings": [],
+    "renalSoluteConcept": "Free water and renal solute load",
+    "sourceAuthorizationQuestion": "Direct human response pending to National Academies water/electrolyte reference request; no adoption without authorization. Entire1032-page book text search found no renal solute/solute load/obligatory literals; not proof of semantic absence.2009ASPEN searched primary PDF supplied no established support.",
+    "metadataStatus": "One route key point closed in this unit; final full clinical metadata review and renal-solute concept remain open.",
+    "clinicalReconciliation": "2022Q3 route-comparison scope reconciled. Complete all parent/six-lesson metadata and final whole-module source/object reconciliation.",
+    "finalWholeModuleQA": true
+  },
+  "preservation": {
+    "bankIDsPromptsChoicesAnswerIndicesCorrectTextsReviewAnchors": true,
+    "bankCount": 108,
+    "other107ObjectsUnchanged": true,
+    "cumulativeCount": 1180,
+    "other1179CumulativeObjectsUnchanged": true,
+    "other35BodiesAndAllSixChecksFiguresUnchanged": true,
+    "metadataOnlyOneKeyPointChanged": true,
+    "referencesUnchanged": true,
+    "architectureAccountsBackendUnchanged": true
+  },
+  "validation": {
+    "build": {
+      "status": "passed",
+      "staticPages": 567,
+      "scope": "Exact19a3 Git archive plus two reviewed product files; committed public symlink and current installed dependencies. No unrelated drafts or env files copied."
+    },
+    "assessmentStructure": {
+      "modules": 1,
+      "questions": 108,
+      "hardErrors": [],
+      "sourceGaps": [],
+      "sizeAdvisories": [],
+      "thinLessons": [],
+      "weakestModules": [
+        {
+          "module": "enteral-nutrition",
+          "lessons": 6,
+          "questions": 108,
+          "minimumLessonCoverage": 9
+        }
+      ]
+    },
+    "browser": {
+      "status": "passed",
+      "results": [
+        {
+          "width": 1440,
+          "wholeBodyDOMEquality": 36,
+          "allKeyPointsDOMEquality": true,
+          "correctFeedback": true,
+          "questionRationaleDOMEquality": true,
+          "reviewLinkTargetVerified": true,
+          "tenQuestionGrade": "10/10",
+          "noHorizontalOverflow": true,
+          "localUnauthenticated": true
+        },
+        {
+          "width": 390,
+          "wholeBodyDOMEquality": 36,
+          "allKeyPointsDOMEquality": true,
+          "correctFeedback": true,
+          "questionRationaleDOMEquality": true,
+          "reviewLinkTargetVerified": true,
+          "tenQuestionGrade": "10/10",
+          "noHorizontalOverflow": true,
+          "localUnauthenticated": true
+        }
+      ],
+      "pageErrors": [],
+      "consoleErrors": [],
+      "captures": [
+        "body-1440.png",
+        "points-1440.png",
+        "feedback-1440.png",
+        "body-390.png",
+        "points-390.png",
+        "feedback-390.png"
+      ]
+    },
+    "visualInspection": {
+      "status": "passed",
+      "scope": "Complete changed route-advantages body, all four decision key points, EN001 prompt/four choices/correct feedback/explanation/review link visually inspected at1440 and390. No clipping or overflow of changed content; all36 bodies DOM matched on both widths.320px overflow check passed.",
+      "method": "Six unmodified viewport PNGs composed into three separate desktop/mobile comparison sheets. Captures positioned300px below viewport top; no DOM/style edits for QA.",
+      "captureHashes": {
+        "points-390.png": "89b4f1a369303dd1237517db2bf5290c8dc74cd0bd7a0ccb12a819ae149dc8a1",
+        "feedback-1440.png": "518afac374e1444b6c1dd91c0518c41bcb4c26f624fcbb3ce45f5daa6bd047ff",
+        "points-1440.png": "94d9dba5ed9c32592ab0d9e74552fa3fb54e4f33e8d2c8d79d2cbf44f06e78b4",
+        "body-390.png": "223e667c91dfd71b35138cbe68049469fb5326938f561ef997124218d117dc17",
+        "body-1440.png": "dca90002bd206b219f56868c579fb5947abad377f6d3e99be75b62bdd4494ded",
+        "feedback-390.png": "99bb9aa0d40746974347b8eeda959289cd0384b40c0ef7f90d37ccf4c26f7657"
+      },
+      "sheetHashes": {
+        "sheet-body.png": "d78c0ccbac07b7a5a930290562fd67a51d217bd7b950fd63c1673c1567ff584c",
+        "sheet-points.png": "4303acadf6bd50e6273b22debc09444fe1f0a9b2ddaa93d7818c0ee9114cb82c",
+        "sheet-feedback.png": "291b3996bce4050118a7e7091084d290beb40717fa30d850772fbad9fb5261c7"
+      },
+      "limits": [
+        "Local unauthenticated built preview; no authenticated member persistence or production verification.",
+        "Deterministic Math.random=0.999999 used only in browser test context to select the first ten questions. Product randomization unchanged.",
+        "Two initial browser scripts had unscoped selectors that included six embedded checks/submit buttons; corrected scoped run passed with zero page/console errors."
+      ]
+    },
+    "contentHashes": {
+      "src/data/modules/enteralNutrition.js": "3838fd7a051211cf4a0025c8cd73ac8ff4568f767ee35838a204191711082d36",
+      "src/data/questionBanks/enteralNutrition.js": "60bfc7542ab8bb724800babea6d7ea54c114ce177109b9f176fd5cb167658f4f"
+    },
+    "finalSourceComparison": "Complete changed body/key point/rationale rereconciled with book and complete authorized2022Q3 scopes; limits retained. EN007/008 useful accurate objects preserved.",
+    "previewProcess": "Owned built-preview session57320 stopped with CtrlC; terminal exit130 observed. Successful browser session72062 terminal exit0. Initial server sandbox EPERM corrected with approved elevated local preview."
+  },
+  "release": {
+    "branch": "audit/rxprep-content-2026-09-24",
+    "commit": null,
+    "push": "pending",
+    "receipt": "sequential-release-enteral-route-comparison-2026-10-03.json",
+    "mainMerge": "not performed",
+    "production": "not verified"
+  },
+  "wholeGoalComplete": false
+}
