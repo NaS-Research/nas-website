@@ -4,6 +4,8 @@
 .research-gallery__header h2{font-size:clamp(38px,5.5vw,76px);line-height:1.08;letter-spacing:-.055em;font-weight:500;margin:0 0 22px}
 .research-gallery__header>a{font-size:14px;color:#cbb58f}
 .research-gallery__row{position:relative;margin-bottom:12px}
+.research-gallery__row-label{width:calc(100% - (2 * var(--nas-gutter)));max-width:var(--nas-wide);margin:0 auto 16px;color:#b4a58d;font-size:11px;font-weight:500;letter-spacing:.12em;text-transform:uppercase}
+.research-gallery__row + .research-gallery__row{margin-top:32px}
 .research-gallery__rail{display:flex;overflow-x:auto;scrollbar-width:none;overscroll-behavior-x:contain;cursor:grab;scroll-behavior:auto;touch-action:pan-x pan-y}
 .research-gallery__rail::-webkit-scrollbar{display:none}
 .research-gallery__rail:active{cursor:grabbing}
@@ -20,7 +22,7 @@
 .research-gallery__row--small .research-gallery__caption{left:22px;right:22px;bottom:20px}
 .research-gallery__row--small .research-gallery__caption p{font-size:10px;margin-bottom:7px}
 .research-gallery__row--small .research-gallery__caption p>span{display:none}
-.research-gallery__row--small h3{font-size:clamp(20px,1.8vw,27px);margin-bottom:13px;max-width:24ch}
+.research-gallery__row--small .research-gallery__caption h3{font-size:clamp(20px,1.8vw,27px);margin-bottom:13px;max-width:24ch}
 .research-gallery__row--small .research-gallery__read{font-size:11px;padding:0 0 3px}
 .research-gallery__footer{display:flex;justify-content:space-between;align-items:center;margin:22px auto 0;width:calc(100% - 48px);max-width:1400px;color:#93938e;font-size:11px}
 .research-gallery__footer button{display:flex;gap:9px;align-items:center;border:1px solid #ffffff24;border-radius:24px;background:#1b1b1a;color:#efeee9;padding:9px 16px;cursor:pointer}

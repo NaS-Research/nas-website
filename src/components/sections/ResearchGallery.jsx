@@ -5,10 +5,10 @@ import { flushSync } from "react-dom";
 import { shuffleResearch } from "./shuffle-research.mjs";
 import WorkspacePreviewFilm from "./WorkspacePreviewFilm";
 import Link from "next/link";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import "./research-gallery.css";
 
-function ResearchRail({ studies, compact, paused, reduced }) {
+function ResearchRail({ studies, label, compact, paused, reduced }) {
   const rail = useRef(null);
   const [batches, setBatches] = useState(() => [0, 1, 2, 3].map(id => ({ id, studies })));
   const batchesRef = useRef(batches); batchesRef.current = batches;
@@ -71,7 +71,8 @@ function ResearchRail({ studies, compact, paused, reduced }) {
   }, [reduced, compact, collectionKey]);
 
   return <div className={compact ? "research-gallery__row research-gallery__row--small" : "research-gallery__row"}>
-    <div ref={rail} className="research-gallery__rail" data-reduced={reduced} role="region" aria-label={compact ? "More publications" : "Featured publications"}
+    <h3 className="research-gallery__row-label">{label}</h3>
+    <div ref={rail} className="research-gallery__rail" data-reduced={reduced} role="region" aria-label={label}
       onPointerEnter={e => { if (e.pointerType === "mouse") interacting.current = true; }}
       onPointerLeave={() => { interacting.current = false; }}
       onTouchStart={() => { interacting.current = true; }}
@@ -113,6 +114,10 @@ function ResearchRail({ studies, compact, paused, reduced }) {
 }
 
 export default function ResearchGallery({ studies }) {
+  const { perspectives, publications } = useMemo(() => ({
+    perspectives: studies.filter(study => study.type === "Institutional Essay" || study.type === "Release"),
+    publications: studies.filter(study => study.type !== "Institutional Essay" && study.type !== "Release"),
+  }), [studies]);
   const gallery = useRef(null);
   const step = () => {
     gallery.current?.querySelectorAll(".research-gallery__rail").forEach(element => {
@@ -135,8 +140,8 @@ export default function ResearchGallery({ studies }) {
       <p>Research at NaS</p><h2 id="research-gallery-title">Selected research.</h2>
       <Link href="/research">Explore all research <span aria-hidden="true">↗</span></Link>
     </header>
-    <ResearchRail studies={studies} paused={paused} reduced={reduced} />
-    <ResearchRail studies={studies} compact paused={paused} reduced={reduced} />
+    {perspectives.length > 0 && <ResearchRail studies={perspectives} label="Perspectives & releases" paused={paused} reduced={reduced} />}
+    {publications.length > 0 && <ResearchRail studies={publications} label="Research & publications" compact paused={paused} reduced={reduced} />}
     <div className="research-gallery__footer">
       <span>Research, releases & perspectives</span>
       <div className="research-gallery__controls" role="group" aria-label="Research gallery controls">
