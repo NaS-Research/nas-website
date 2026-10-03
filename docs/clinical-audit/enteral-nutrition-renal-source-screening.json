@@ -118,5 +118,23 @@
     "production": "not verified",
     "scope": "Completed candidate-screening documentation; no clinical source adoption or question/module closure."
   },
-  "nextAction": "Await direct source-expansion response. If approved, read the complete relevant National Academies scope and tables/figures, source-review/correct the full EN031 object and add matching original teaching if needed; compare the entire current EN module again, validate, then close only if all requirements pass. If source limits retained, keep the unresolved question/concept and full module open; do not skip the topic or delete useful content to bypass the source rule."
+  "nextAction": "Await direct source-expansion response. If approved, read the complete relevant National Academies scope and tables/figures, source-review/correct the full EN031 object and add matching original teaching if needed; compare the entire current EN module again, validate, then close only if all requirements pass. If source limits retained, keep the unresolved question/concept and full module open; do not skip the topic or delete useful content to bypass the source rule.",
+  "blockedAudit": {
+    "verifiedAt": "2026-10-03T18:59:39.358251+00:00",
+    "sameGenuineBlockerConsecutiveGoalTurns": 3,
+    "condition": "Unanswered topic-specific National Academies authorization required under attached educational-source rules",
+    "safeActionsExhaustedForCurrentTopic": true,
+    "noTopicSkippingOrUnsupportedAdoption": true,
+    "entireGoalComplete": false,
+    "scopedCheckpointOnly": true,
+    "goalToolStatus": "blocked",
+    "goalToolStatusConfirmed": true,
+    "recordedAt": "2026-10-03T19:00:20.563614+00:00",
+    "resumeCondition": "Direct human authorization for the topic-specific National Academies reference, or new complete usable support within already authorized sources. Resume the original82chaptergoal with its scope unchanged.",
+    "release": {
+      "commit": null,
+      "push": "pending",
+      "scope": "Blocked-status checkpoint documentation only; no clinical/product changes."
+    }
+  }
 }
