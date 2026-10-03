@@ -24,8 +24,8 @@ export default function Home() {
         <div><p>NaS Research is a life sciences research institute developing biomedical research, scientific tools, and learning resources. Explore our studies, examine the evidence, and follow the questions that guide our work.</p><Link href="/about">Get to know NaS Research <span aria-hidden="true">↗</span></Link></div>
       </section>
       <Featured />
-      <HomeLearnFeature />
       <HomeBillingFeature />
+      <HomeLearnFeature />
       <CurrentResearch />
       <WorkWithNas />
 
