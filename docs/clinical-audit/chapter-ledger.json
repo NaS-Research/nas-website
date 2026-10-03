@@ -2097,7 +2097,8 @@
         "enteral-nutrition-preparation-monitoring-review.json",
         "enteral-nutrition-indications-metadata-review.json",
         "enteral-nutrition-route-comparison-review.json",
-        "enteral-nutrition-clinical-metadata-review.json"
+        "enteral-nutrition-clinical-metadata-review.json",
+        "enteral-nutrition-final-reconciliation-review.json"
       ],
       "pdfRangeStatus": "All 20 pages visually verified",
       "verifiedModules": [
@@ -2114,8 +2115,45 @@
         "Enteral preparation/monitoring unit verifies EN050/108, the complete Monitor delivery and metabolic safety body and unchanged monitoring-complications figure. Aggregate107/108bank,35/36bodies,6/6checks,6/6figures,5/5cumulative. All108 IDs/keys/anchors,106 other bank objects,35 other bodies,all6checks/figures,metadata,14references and1180cumulative objects preserved. Isolated567-page build, focused108-question audit, desktop/mobile feedback and visual checks passed. Full module/Chapter11 remain reviewing; retained duplicate-reference key warning documented for pending metadata reconciliation.",
         "EN indications/metadata unit verifies the complete Recognize the patient who needs support body, four metadata statements and reference attribution. All108bank/1180cumulative/sixchecks/sixfigures/35otherbodies unchanged; references14to11 without attribution loss. Aggregate107/108bank;36/36body review coverage, but35/36 current clinical reconciliation because route-advantages body reopened for2022Q3 population context. Isolated567-page build,108-question structure, full metadata/body DOM checks and42 desktop/mobile captures passed; final fresh capture console/page errors zero. FullEN/Chapter11 remain reviewing.",
         "EN route comparison reconciled with approved2022ASPEN Q3: whole route-advantages body and one decision key point qualified by adult ICU EN-candidate population, similar energy delivery, first week and5to7day trial duration; no universal lower infection promise. EN001 rationale and its cumulative copy clarified; EN007/008 preserved after full question/choice/key/rationale review.108bank stable,107verified;36/36current bodies; six checks/six figures/five cumulative closures retained. Isolated567-page build,108-question structure,36-body DOM matching,desktop/mobile10/10 grade/revised feedback/review link and six raw captures passed. FullEN andChapter11 remain reviewing.",
-        "EN complete parent/six-lesson metadata inventory reviewed:79 statements,78source-supported andone renal-solute concept pending. Five key points corrected:withhold for suspected ischemia/complete obstruction/instability; gastric schedules qualified by function/tolerance/aspiration risk; connector risk-prevention intent; medications as possible diarrhea/obstruction causes; all dosage forms require product-specific review. All108bank objects,1180cumulative objects,36bodies,sixchecks/sixfigures and11references unchanged. Exact isolated567-page build and108-question structural check passed;desktop/mobile whole36-body and metadata DOM matching,38raw captures/19visually inspected sheets,320px overflow andzero page/consoleerrors passed. FullEN/Chapter11 reviewing;no new module/chapter/calculation closures."
-      ]
+        "EN complete parent/six-lesson metadata inventory reviewed:79 statements,78source-supported andone renal-solute concept pending. Five key points corrected:withhold for suspected ischemia/complete obstruction/instability; gastric schedules qualified by function/tolerance/aspiration risk; connector risk-prevention intent; medications as possible diarrhea/obstruction causes; all dosage forms require product-specific review. All108bank objects,1180cumulative objects,36bodies,sixchecks/sixfigures and11references unchanged. Exact isolated567-page build and108-question structural check passed;desktop/mobile whole36-body and metadata DOM matching,38raw captures/19visually inspected sheets,320px overflow andzero page/consoleerrors passed. FullEN/Chapter11 reviewing;no new module/chapter/calculation closures.",
+        "Final current EN source-object comparison complete:36/36 whole teaching bodies,107/108 full module questions,6/6 embedded checks,6/6 complete figures,5/5 associated cumulative items and78/79 metadata statements reconciled. Five fully supported lessons verified; formula-selection remains reviewing for EN031 and concepts[3]. Full private book EN section and fluid context visually reread;37 existing question computations,5 worked bodies,2 embedded calculations and6 book exercises independently rechecked. No product changes or new questions/calculation/module/chapter closures. Retained production build matches927 tracked product files; fresh desktop/mobile six-figure DOM and all six correct/incorrect check feedback,anchors,320px overflow and visual review passed."
+      ],
+      "latestEnteralFinalReconciliationReview": {
+        "evidence": "enteral-nutrition-final-reconciliation-review.json",
+        "bank": 108,
+        "verifiedBank": 107,
+        "remainingBank": 1,
+        "remainingBankIds": [
+          "enteral-nutrition-031"
+        ],
+        "bodies": 36,
+        "verifiedBodies": 36,
+        "remainingBodies": 0,
+        "embeddedChecks": 6,
+        "verifiedEmbeddedChecks": 6,
+        "remainingEmbeddedChecks": 0,
+        "figures": 6,
+        "verifiedFigures": 6,
+        "remainingFigures": 0,
+        "cumulative": 5,
+        "sourceVerifiedCumulative": 5,
+        "pendingCumulative": [],
+        "metadataStatements": 79,
+        "verifiedMetadataStatements": 78,
+        "remainingMetadataStatements": 1,
+        "verifiedLessons": [
+          "enteral-decision",
+          "access-route",
+          "delivery-prescription",
+          "medication-administration",
+          "monitoring-complications"
+        ],
+        "remainingLessons": [
+          "formula-selection"
+        ],
+        "wholeModuleVerified": false,
+        "wholeChapterVerified": false
+      }
     },
     {
       "chapter": 12,
