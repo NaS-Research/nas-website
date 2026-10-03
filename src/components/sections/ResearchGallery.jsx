@@ -71,7 +71,6 @@ function ResearchRail({ studies, label, compact, paused, reduced }) {
   }, [reduced, compact, collectionKey]);
 
   return <div className={compact ? "research-gallery__row research-gallery__row--small" : "research-gallery__row"}>
-    <h3 className="research-gallery__row-label">{label}</h3>
     <div ref={rail} className="research-gallery__rail" data-reduced={reduced} role="region" aria-label={label}
       onPointerEnter={e => { if (e.pointerType === "mouse") interacting.current = true; }}
       onPointerLeave={() => { interacting.current = false; }}
