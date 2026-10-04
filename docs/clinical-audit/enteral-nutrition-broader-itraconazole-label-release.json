@@ -1,0 +1,127 @@
+{
+  "verifiedAt": "2026-10-04T23:37:03.223524+00:00",
+  "unit": "enteral-nutrition:broader-itraconazole-formulation-label-reconciliation",
+  "contentCommit": "a9b9a2489b61aab36cef0c628d5ba3e2bc7dfc6a",
+  "remoteBranch": "audit/rxprep-content-2026-09-24",
+  "remoteHashObserved": "a9b9a2489b61aab36cef0c628d5ba3e2bc7dfc6a",
+  "exactRemoteObservedByTool": true,
+  "coverage": {
+    "evidence": "enteral-nutrition-broader-itraconazole-label-review.json",
+    "moduleBank": 176,
+    "sourceVerifiedBankIds": [
+      "triazole-pharmacology-049",
+      "triazole-pharmacology-050",
+      "triazole-pharmacology-051",
+      "triazole-pharmacology-052",
+      "triazole-pharmacology-053",
+      "triazole-pharmacology-054",
+      "triazole-pharmacology-055",
+      "triazole-pharmacology-056",
+      "triazole-pharmacology-057",
+      "triazole-pharmacology-058",
+      "triazole-pharmacology-059",
+      "triazole-pharmacology-060",
+      "triazole-pharmacology-165",
+      "triazole-pharmacology-166"
+    ],
+    "newFullQuestionsVerified": 9,
+    "previouslyVerifiedQuestionsRechecked": [
+      "triazole-pharmacology-050",
+      "triazole-pharmacology-052",
+      "triazole-pharmacology-054",
+      "triazole-pharmacology-056",
+      "triazole-pharmacology-165"
+    ],
+    "fullQuestionsReconciled": 14,
+    "broaderFeedingBankVerifiedAfter": 189,
+    "wholeBodiesVerified": 3,
+    "wholeEmbeddedChecksVerified": 1,
+    "wholeFiguresVerified": 1,
+    "lessonMetadataStatementsVerified": 9,
+    "lessonMetadataStatementsPending": 3,
+    "lesson": "itraconazole-formulations",
+    "wholeLessonVerified": false,
+    "wholeParentModuleVerified": false,
+    "wholeENModuleVerified": false,
+    "wholeChapterVerified": false,
+    "all1180CumulativeObjectsUnchanged": true,
+    "noCumulativeClosureClaimed": true,
+    "existing176IdsStemsKeysCorrectTextsAndAnchorsPreserved": true,
+    "noNewQuestionIds": true,
+    "originalClinicalAssessmentScopeRetained": true,
+    "otherNineFiguresUnchanged": true,
+    "other38BodiesAndNineChecksUnchanged": true,
+    "unrelatedWorkingDraftsPreserved": true
+  },
+  "validation": {
+    "productionBuild": {
+      "status": "passed",
+      "exitCode": 0,
+      "pages": 567,
+      "isolatedExactBase": "f16260af21ac2b0bae55669d515f2aa51abe49e1",
+      "trackedProductFiles": [
+        "src/data/modules/triazoleAntifungalPharmacology.js",
+        "src/data/questionBanks/triazoleAntifungalPharmacology.js",
+        "src/components/learn/TriazoleAntifungalPharmacologyVisual.jsx"
+      ]
+    },
+    "browserStatus": "passed",
+    "all1180CumulativeObjectsUnchanged": true,
+    "noNewCumulativeGradingOrClosureClaim": true,
+    "rawScreenshotsActuallyViewed": 72,
+    "nativeComparisonCount": 18,
+    "objectPreservation": {
+      "status": "passed",
+      "totalQuestions": 176,
+      "changedQuestionIds": [
+        "triazole-pharmacology-049",
+        "triazole-pharmacology-050",
+        "triazole-pharmacology-051",
+        "triazole-pharmacology-052",
+        "triazole-pharmacology-053",
+        "triazole-pharmacology-054",
+        "triazole-pharmacology-055",
+        "triazole-pharmacology-056",
+        "triazole-pharmacology-057",
+        "triazole-pharmacology-058",
+        "triazole-pharmacology-059",
+        "triazole-pharmacology-060",
+        "triazole-pharmacology-165",
+        "triazole-pharmacology-166"
+      ],
+      "unchangedQuestions": 162,
+      "all176IdsStemsKeysOriginalCorrectTextsAndAnchorsPreserved": true,
+      "changedBodyHeadings": [
+        "Name the complete product",
+        "Teach opposing administration rules",
+        "Protect the heart"
+      ],
+      "other38WholeBodiesUnchanged": true,
+      "changedEmbeddedCheckLessons": [
+        "itraconazole-formulations"
+      ],
+      "otherNineWholeChecksUnchanged": true,
+      "allOriginalModuleAndLessonMetadataUnchanged": true,
+      "cumulativeTotal": 1180,
+      "all1180WholeCumulativeObjectsUnchanged": true,
+      "references": 13,
+      "twoReferencesReconciledThreeAddedEightOthersUnchanged": true,
+      "noNewQuestionIds": true
+    }
+  },
+  "preservation": {
+    "existingDraftPaths": 810,
+    "allExistingDraftFileHashesChecked": true,
+    "existingDeletionsPreserved": true,
+    "workingModuleOriginalHistoplasmosisReferenceDraftPreserved": true,
+    "workingLedgerPriorDraftFieldsUnchanged": true,
+    "scopedCommittedOtherLedgerEntriesUnchanged": true
+  },
+  "publication": {
+    "mainMerge": "not performed",
+    "production": "not verified"
+  },
+  "wholeGoalComplete": false,
+  "nextAction": "Continue the retained itraconazole TDM body, questions061-064 and three metadata statements only when complete approved FDA evidence supports every original timing, target and assay claim; historical assay information does not establish a universal clinical target. Do not narrow the original clinical scope to force closure. Reconcile retained breakthrough question175, foundations125/127 and posaconazole pseudoaldosteronism body/questions093-096/170 using the supplied book and already approved FDA material. Continue remaining broader EN dependencies, then pediatric PN/fluid/calcium dependencies. Chapter1 entry15 and Chapter11 remain reviewing; the full82-chapter objective is unchanged.",
+  "receiptCommit": "This receipt follows the exact verified content commit; its own remote hash is verified separately in the execution output."
+}
