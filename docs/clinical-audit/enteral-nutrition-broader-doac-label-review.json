@@ -1,0 +1,1334 @@
+{
+  "updated": "2026-10-04T22:05:16.232791+00:00",
+  "unit": "Approved DOAC food, dosage-form and feeding-label reconciliation",
+  "status": "verified logical unit; entire parent/module/chapter remain reviewing",
+  "baseCommit": "f4234f1c49b5282aefd1aac144abc73ee462ef54",
+  "sourceAuthorization": {
+    "status": "authorized primary review in progress",
+    "requestedScope": "Primary ASPEN/SCCM EN clinical guidance and FDA guidance/product labeling",
+    "authorized": true,
+    "sourcesOpened": true,
+    "renewedRequestDate": "2026-10-01",
+    "approvedAt": "2026-10-02T13:29:07.160093+00:00",
+    "approvalText": "I approve all. continue working",
+    "evidence": "enteral-nutrition-medication-delivery-review.json",
+    "remainingSourceReviewPending": true
+  },
+  "sourceReview": {
+    "primaryBook": {
+      "filename": "NAPLEX 2024.pdf",
+      "verifiedEdition": "RxPrep2023;1032pages",
+      "completeRelevantPagesReadAndRendered": [
+        {
+          "pdf": 95,
+          "printed": 87
+        },
+        {
+          "pdf": 107,
+          "printed": 99
+        },
+        {
+          "pdf": 170,
+          "printed": 162
+        },
+        {
+          "pdf": 186,
+          "printed": 178
+        },
+        {
+          "pdf": 294,
+          "printed": 286
+        },
+        {
+          "pdf": 513,
+          "printed": 505
+        },
+        {
+          "pdf": 514,
+          "printed": 506
+        },
+        {
+          "pdf": 515,
+          "printed": 507
+        },
+        {
+          "pdf": 523,
+          "printed": 515
+        }
+      ],
+      "visuals": "Complete common oral-formulation table, feeding tube/site diagram, renal-weight algorithm/equation boxes, oral-Xa/dabigatran tables, interaction/conversion box and counseling page viewed. Adjacent unrelated drug claims are not adopted as new verified content.",
+      "pageImageHashes": {
+        "book-95.png": "fd2bdc0d8344225c9908537b8d5c1d59813685c8b81c681da0626eb924cc8ab0",
+        "book-107.png": "75f86619da22508247151e64e448f365bfa07ec04a03beded7e79f0dec57dbdc",
+        "book-170.png": "ae613591892445b7e6a940097e366d31951b89e1f0a2b14014a7060be9278b8b",
+        "book-186.png": "18056457b1674f5fc7db616f340901facddc12b98c253cbc303a104bc44943fd",
+        "book-294.png": "43333f1808fa9b77228a659920d9becf63168432692af04bcb300f5bed620b81",
+        "book-513.png": "79b5b3f629d87c5c2686712b1f0a9411c4a050e20286c275761724b4c74c3d75",
+        "book-514.png": "bd1b0e50dd8b95b4a95a5337fdb3842d55a785c2901d5bc3718f7c4fd68c0385",
+        "book-515.png": "44845da4b4c77cd0581c905db5dca8b1bbfb14f3c7cd00757ae00d7e882f0c24",
+        "book-523.png": "a5c190577f9beb6e4ff6e02401242a9b5c91e8cb4af07128ca8332b908fb4b79"
+      }
+    },
+    "FDAProducts": [
+      {
+        "name": "Xarelto tablets and oral suspension",
+        "revision": "March2026",
+        "referenceID": "5768784",
+        "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/022406s045lbl.pdf",
+        "pdfPages": 92,
+        "pdfSha256": "11d34d725fb588932371cc651f0f055576b6dfc9e1cf4ad24aeb32fc1e0b90e3",
+        "completeAdoptedScopes": [
+          "1.4 Recurrence reduction,PDF4",
+          "2.1 entire adult dosing Table1 with all footnotes,PDF6",
+          "2.6 entire Administration Options,PDF11-12",
+          "12.3 entire Absorption subsection,PDF38-39"
+        ],
+        "originalPagesActuallyViewed": [
+          1,
+          4,
+          6,
+          11,
+          12,
+          38,
+          39
+        ],
+        "limits": "No complete92-page audit; no adjacent renal PK Table18 or other indications/pediatric dosing adopted. Numeric50mL preparation is product-specific adult tablet administration, not a general flush or hydration prescription."
+      },
+      {
+        "name": "Pradaxa capsules",
+        "revision": "June2025;FDA-hosted2026 file",
+        "referenceID": "5647188",
+        "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/022512Orig1s049lbl.pdf",
+        "pdfPages": 31,
+        "pdfSha256": "d5043e4a405ed3ecbac3cc2aeaeb22f15a13699b8eee1bfe6dcfac6e9dc70144",
+        "completeAdoptedScopes": [
+          "2.5 Administration,PDF5",
+          "12.3 Absorption,PDF17",
+          "16 entire Storage and Handling,PDF25",
+          "17 Instructions for Patients and Bleeding/GI-adverse counseling scopes,PDF25-26",
+          "Medication Guide How should I take and capsule-storage sections,PDF29-30",
+          "6.1 complete GI-adverse paragraph,PDF9;12.1 mechanism context,PDF16"
+        ],
+        "originalPagesActuallyViewed": [
+          1,
+          5,
+          9,
+          16,
+          17,
+          25,
+          26,
+          29,
+          30
+        ],
+        "limits": "No whole31-page label audit. The75percent shell-removal increase is a single-dose relative-bioavailability study; it is not an automatic dose-conversion factor, a pediatric formulation-equivalence rule, or a measured clinical pillbox-storage effect. Adjacent figures1/2 and Table10 viewed as context; no numerical dosing/assay conclusions from them adopted."
+      }
+    ],
+    "sourceAssetsOutsideGit": true,
+    "versionCheck": "Official FDA-hosted label revision dates read on original pages; contemporary DailyMed pages checked for context, with rivaroxaban repackager status noted. Product facts adopted from the FDA PDFs. No claim these scopes validate every current indication or full guideline."
+  },
+  "sourceDiscrepancies": [
+    {
+      "topic": "Rivaroxaban10mg extended recurrence-prevention timing",
+      "bookLocation": {
+        "pdf": 513,
+        "printed": 505
+      },
+      "bookRule": "At least3months of initial treatment",
+      "approvedLabelRule": "At least6months of standard anticoagulation for patients at continued risk",
+      "resolution": "Retain existing6-month correct text/body and qualify with approved dated product labeling; do not import the discrepant book value."
+    },
+    {
+      "topic": "Creatinine-clearance weight convention",
+      "bookLocations": [
+        186,
+        294
+      ],
+      "bookScope": "General weight-selection algorithms",
+      "approvedLabelScope": "Xarelto adultTable1 footnote specifies actual weight",
+      "resolution": "Preserve product-specific key and limit teaching to rivaroxaban adult dosing; no universal all-drug actual-weight rule adopted."
+    }
+  ],
+  "questionReview": [
+    {
+      "id": "direct-oral-anticoagulants-026",
+      "question": {
+        "id": "direct-oral-anticoagulants-026",
+        "question": "Which clinical action best applies to rivaroxaban atrial fibrillation renal and food rules?",
+        "choices": [
+          "Calculate creatinine clearance using actual weight and verify the dose is taken with the meal.",
+          "Use ideal body weight for every rivaroxaban creatinine-clearance calculation and omit meal verification.",
+          "Use the reported eGFR alone without checking the product-specific creatinine-clearance method.",
+          "Take the prescribed 15 or 20 mg dose fasting because the evening meal is optional."
+        ],
+        "answer": 0,
+        "rationale": "The rivaroxaban adult dosing table specifies creatinine clearance calculated with actual weight. For nonvalvular atrial fibrillation, the prescribed 15 or 20 mg tablet is taken with the evening meal. A general weight algorithm or reported eGFR does not replace this product-specific instruction; meal timing remains part of the dosing plan.",
+        "reviewHref": "#oral-factor-xa-inhibitor-regimens"
+      },
+      "previousQuestion": {
+        "id": "direct-oral-anticoagulants-026",
+        "question": "Which clinical action best applies to rivaroxaban atrial fibrillation renal and food rules?",
+        "choices": [
+          "Calculate creatinine clearance using actual weight and verify the dose is taken with the meal.",
+          "Recalculate CrCl and review every P-gp inhibitor or inducer during acute illness or medication change.",
+          "Avoid major inducers when the label recommends it and select a monitorable or noninteracting alternative.",
+          "Stop active exposure, resuscitate, obtain targeted laboratories and imaging, control the source, and use reversal when expected benefit justifies thrombosis risk."
+        ],
+        "answer": 0,
+        "rationale": "Food improves bioavailability of higher rivaroxaban tablet strengths.",
+        "reviewHref": "#oral-factor-xa-inhibitor-regimens"
+      },
+      "objectSha256": "1ccdfa34599cc5439fecf77053910ad1cb40ca637278ca2c096fbb16cf00baac",
+      "status": "complete question source-verified after repair",
+      "sourceScopes": [
+        "Xarelto2.1/Table1 and actual-weight footnote, PDF6",
+        "Book186/294 general renal estimate distinction"
+      ],
+      "stemAndKeyReview": "Original clinical topic, keyed answer text, numeric key0 and review anchor retained.028 and052 stems clarify the requested risk statement without reducing the original food/exposure or capsule/storage topic.",
+      "distractorReview": [
+        {
+          "text": "Use ideal body weight for every rivaroxaban creatinine-clearance calculation and omit meal verification.",
+          "status": "plausible but incorrect within the named product/formulation/regimen; checked against complete adopted source scopes",
+          "explanation": "The rivaroxaban adult dosing table specifies creatinine clearance calculated with actual weight. For nonvalvular atrial fibrillation, the prescribed 15 or 20 mg tablet is taken with the evening meal. A general weight algorithm or reported eGFR does not replace this product-specific instruction; meal timing remains part of the dosing plan."
+        },
+        {
+          "text": "Use the reported eGFR alone without checking the product-specific creatinine-clearance method.",
+          "status": "plausible but incorrect within the named product/formulation/regimen; checked against complete adopted source scopes",
+          "explanation": "The rivaroxaban adult dosing table specifies creatinine clearance calculated with actual weight. For nonvalvular atrial fibrillation, the prescribed 15 or 20 mg tablet is taken with the evening meal. A general weight algorithm or reported eGFR does not replace this product-specific instruction; meal timing remains part of the dosing plan."
+        },
+        {
+          "text": "Take the prescribed 15 or 20 mg dose fasting because the evening meal is optional.",
+          "status": "plausible but incorrect within the named product/formulation/regimen; checked against complete adopted source scopes",
+          "explanation": "The rivaroxaban adult dosing table specifies creatinine clearance calculated with actual weight. For nonvalvular atrial fibrillation, the prescribed 15 or 20 mg tablet is taken with the evening meal. A general weight algorithm or reported eGFR does not replace this product-specific instruction; meal timing remains part of the dosing plan."
+        }
+      ],
+      "rationaleReview": "Each incorrect alternative is addressed by the full revised explanation; no unrelated true principle competes with the retained key."
+    },
+    {
+      "id": "direct-oral-anticoagulants-028",
+      "question": {
+        "id": "direct-oral-anticoagulants-028",
+        "question": "An adult plans to take a prescribed 20 mg rivaroxaban tablet fasting. Which statement correctly identifies the administration risk?",
+        "choices": [
+          "Taking the 15 or 20 mg dose fasting can reduce exposure.",
+          "Taking the 20 mg tablet fasting produces greater bioavailability than taking it with food.",
+          "The food-optional instruction for the 10 mg tablet also applies to the 15 and 20 mg tablets.",
+          "Changing meal timing removes the need to assess creatinine clearance for the prescribed dose."
+        ],
+        "answer": 0,
+        "rationale": "The label describes greater rivaroxaban exposure when the 20 mg tablet is taken with food and requires food for the 15 and 20 mg tablets. Food instructions differ by strength. Taking a higher-strength tablet fasting can reduce exposure; food neither replaces renal-dose assessment nor makes the 10 mg instructions interchangeable with those for 15 or 20 mg.",
+        "reviewHref": "#oral-factor-xa-inhibitor-regimens"
+      },
+      "previousQuestion": {
+        "id": "direct-oral-anticoagulants-028",
+        "question": "Which reasoning hazard is most important to prevent with rivaroxaban atrial fibrillation renal and food rules?",
+        "choices": [
+          "Taking the 15 or 20 mg dose fasting can reduce exposure.",
+          "Looking at kidney function or P-gp in isolation can underestimate combined accumulation.",
+          "Increasing the DOAC dose empirically to overcome induction lacks a validated target and can become dangerous when the inducer stops.",
+          "Waiting for a routine coagulation test to become abnormal before controlling life-threatening bleeding can be fatal."
+        ],
+        "answer": 0,
+        "rationale": "Food improves bioavailability of higher rivaroxaban tablet strengths.",
+        "reviewHref": "#oral-factor-xa-inhibitor-regimens"
+      },
+      "objectSha256": "f63435e4447fe354ec767fdc49225196659eee42bf4811d6cc3ae3b63790381d",
+      "status": "complete question source-verified after repair",
+      "sourceScopes": [
+        "Xarelto12.3 Absorption, PDF38-39;2.1/Table1,PDF6"
+      ],
+      "stemAndKeyReview": "Original clinical topic, keyed answer text, numeric key0 and review anchor retained.028 and052 stems clarify the requested risk statement without reducing the original food/exposure or capsule/storage topic.",
+      "distractorReview": [
+        {
+          "text": "Taking the 20 mg tablet fasting produces greater bioavailability than taking it with food.",
+          "status": "plausible but incorrect within the named product/formulation/regimen; checked against complete adopted source scopes",
+          "explanation": "The label describes greater rivaroxaban exposure when the 20 mg tablet is taken with food and requires food for the 15 and 20 mg tablets. Food instructions differ by strength. Taking a higher-strength tablet fasting can reduce exposure; food neither replaces renal-dose assessment nor makes the 10 mg instructions interchangeable with those for 15 or 20 mg."
+        },
+        {
+          "text": "The food-optional instruction for the 10 mg tablet also applies to the 15 and 20 mg tablets.",
+          "status": "plausible but incorrect within the named product/formulation/regimen; checked against complete adopted source scopes",
+          "explanation": "The label describes greater rivaroxaban exposure when the 20 mg tablet is taken with food and requires food for the 15 and 20 mg tablets. Food instructions differ by strength. Taking a higher-strength tablet fasting can reduce exposure; food neither replaces renal-dose assessment nor makes the 10 mg instructions interchangeable with those for 15 or 20 mg."
+        },
+        {
+          "text": "Changing meal timing removes the need to assess creatinine clearance for the prescribed dose.",
+          "status": "plausible but incorrect within the named product/formulation/regimen; checked against complete adopted source scopes",
+          "explanation": "The label describes greater rivaroxaban exposure when the 20 mg tablet is taken with food and requires food for the 15 and 20 mg tablets. Food instructions differ by strength. Taking a higher-strength tablet fasting can reduce exposure; food neither replaces renal-dose assessment nor makes the 10 mg instructions interchangeable with those for 15 or 20 mg."
+        }
+      ],
+      "rationaleReview": "Each incorrect alternative is addressed by the full revised explanation; no unrelated true principle competes with the retained key."
+    },
+    {
+      "id": "direct-oral-anticoagulants-029",
+      "question": {
+        "id": "direct-oral-anticoagulants-029",
+        "question": "Which principle best characterizes rivaroxaban acute and extended VTE regimens?",
+        "choices": [
+          "Adult acute VTE uses rivaroxaban 15 mg twice daily with food for 21 days, then 20 mg once daily with food; selected extended prevention uses 10 mg after at least six months of standard treatment.",
+          "Adult acute VTE starts with 15 mg twice daily for only 7 days before changing to 20 mg once daily.",
+          "Adult acute VTE starts with 10 mg once daily, with no higher-intensity initial treatment phase.",
+          "The labeled 10 mg extended recurrence-prevention regimen begins after only 3 months of standard treatment."
+        ],
+        "answer": 0,
+        "rationale": "Rivaroxaban adult DVT or PE treatment uses 15 mg twice daily with food for 21 days, then 20 mg once daily with food. The labeled 10 mg once-daily recurrence-prevention option is for patients at continued risk after at least six months of standard anticoagulation and may be taken with or without food. A 7-day initial phase, immediate 10 mg treatment, or a 3-month threshold does not match this regimen.",
+        "reviewHref": "#oral-factor-xa-inhibitor-regimens"
+      },
+      "previousQuestion": {
+        "id": "direct-oral-anticoagulants-029",
+        "question": "Which principle best characterizes rivaroxaban acute and extended VTE regimens?",
+        "choices": [
+          "Adult acute VTE uses rivaroxaban 15 mg twice daily with food for 21 days, then 20 mg once daily with food; selected extended prevention uses 10 mg after at least six months of standard treatment.",
+          "Dabigatran capsules must be swallowed whole and protected from moisture in the original bottle or blister because opening changes exposure and improper storage reduces product integrity.",
+          "Premature discontinuation without adequate alternative anticoagulation increases thrombotic risk.",
+          "Idarucizumab is indicated when dabigatran reversal is needed for emergency surgery or urgent procedures or for life-threatening or uncontrolled bleeding."
+        ],
+        "answer": 0,
+        "rationale": "Rivaroxaban intensity changes at defined VTE treatment phases.",
+        "reviewHref": "#oral-factor-xa-inhibitor-regimens"
+      },
+      "objectSha256": "3cb8c48acb9bf7c0c81a8120e54c534ed3084ad44edb94888e5ded2f83bb73ea",
+      "status": "complete question source-verified after repair",
+      "sourceScopes": [
+        "Xarelto1.4,PDF4;2.1/Table1,PDF6",
+        "Book513 discrepancy retained with label resolution"
+      ],
+      "stemAndKeyReview": "Original clinical topic, keyed answer text, numeric key0 and review anchor retained.028 and052 stems clarify the requested risk statement without reducing the original food/exposure or capsule/storage topic.",
+      "distractorReview": [
+        {
+          "text": "Adult acute VTE starts with 15 mg twice daily for only 7 days before changing to 20 mg once daily.",
+          "status": "plausible but incorrect within the named product/formulation/regimen; checked against complete adopted source scopes",
+          "explanation": "Rivaroxaban adult DVT or PE treatment uses 15 mg twice daily with food for 21 days, then 20 mg once daily with food. The labeled 10 mg once-daily recurrence-prevention option is for patients at continued risk after at least six months of standard anticoagulation and may be taken with or without food. A 7-day initial phase, immediate 10 mg treatment, or a 3-month threshold does not match this regimen."
+        },
+        {
+          "text": "Adult acute VTE starts with 10 mg once daily, with no higher-intensity initial treatment phase.",
+          "status": "plausible but incorrect within the named product/formulation/regimen; checked against complete adopted source scopes",
+          "explanation": "Rivaroxaban adult DVT or PE treatment uses 15 mg twice daily with food for 21 days, then 20 mg once daily with food. The labeled 10 mg once-daily recurrence-prevention option is for patients at continued risk after at least six months of standard anticoagulation and may be taken with or without food. A 7-day initial phase, immediate 10 mg treatment, or a 3-month threshold does not match this regimen."
+        },
+        {
+          "text": "The labeled 10 mg extended recurrence-prevention regimen begins after only 3 months of standard treatment.",
+          "status": "plausible but incorrect within the named product/formulation/regimen; checked against complete adopted source scopes",
+          "explanation": "Rivaroxaban adult DVT or PE treatment uses 15 mg twice daily with food for 21 days, then 20 mg once daily with food. The labeled 10 mg once-daily recurrence-prevention option is for patients at continued risk after at least six months of standard anticoagulation and may be taken with or without food. A 7-day initial phase, immediate 10 mg treatment, or a 3-month threshold does not match this regimen."
+        }
+      ],
+      "rationaleReview": "Each incorrect alternative is addressed by the full revised explanation; no unrelated true principle competes with the retained key."
+    },
+    {
+      "id": "direct-oral-anticoagulants-049",
+      "question": {
+        "id": "direct-oral-anticoagulants-049",
+        "question": "Which principle best characterizes dabigatran capsule handling and storage?",
+        "choices": [
+          "Dabigatran capsules must be swallowed whole and protected from moisture in the original bottle or blister because opening changes exposure and improper storage reduces product integrity.",
+          "Opening the capsule is the labeled way to prepare dabigatran for a feeding tube.",
+          "A weekly pill organizer provides the same moisture protection required by the original product package.",
+          "An adult capsule dose can be substituted milligram for milligram with dabigatran oral pellets."
+        ],
+        "answer": 0,
+        "rationale": "The capsule is swallowed whole and retained in its original moisture-protective bottle or blister. Removing the capsule shell increased bioavailability in the label's relative-bioavailability study. Opening is not a capsule tube-delivery method, a pill organizer does not satisfy the labeled storage instruction, and the capsule and oral-pellet dosage forms are not interchangeable milligram for milligram.",
+        "reviewHref": "#dabigatran-pharmacology-and-use"
+      },
+      "previousQuestion": {
+        "id": "direct-oral-anticoagulants-049",
+        "question": "Which principle best characterizes dabigatran capsule handling and storage?",
+        "choices": [
+          "Dabigatran capsules must be swallowed whole and protected from moisture in the original bottle or blister because opening changes exposure and improper storage reduces product integrity.",
+          "Strong P-gp or CYP3A induction can lower DOAC exposure and increase thrombotic risk.",
+          "Major bleeding care begins with stabilization, drug identification, last-dose and organ assessment, and definitive source control.",
+          "Apixaban, rivaroxaban, and edoxaban bind factor Xa directly and reduce thrombin generation without requiring antithrombin."
+        ],
+        "answer": 0,
+        "rationale": "The capsule formulation and packaging are integral to safe dabigatran delivery.",
+        "reviewHref": "#dabigatran-pharmacology-and-use"
+      },
+      "objectSha256": "0080c03dad6008c5fc4ddf5c48aa3add8c7d23c2dbd32f56132769f65fb1d865",
+      "status": "complete question source-verified after repair",
+      "sourceScopes": [
+        "Pradaxa2.5,PDF5;12.3 Absorption,PDF17;16,PDF25;17 instructions,PDF25;MedicationGuide storage,PDF30",
+        "Book515/523 original capsule/storage/no-NG instructions"
+      ],
+      "stemAndKeyReview": "Original clinical topic, keyed answer text, numeric key0 and review anchor retained.028 and052 stems clarify the requested risk statement without reducing the original food/exposure or capsule/storage topic.",
+      "distractorReview": [
+        {
+          "text": "Opening the capsule is the labeled way to prepare dabigatran for a feeding tube.",
+          "status": "plausible but incorrect within the named product/formulation/regimen; checked against complete adopted source scopes",
+          "explanation": "The capsule is swallowed whole and retained in its original moisture-protective bottle or blister. Removing the capsule shell increased bioavailability in the label's relative-bioavailability study. Opening is not a capsule tube-delivery method, a pill organizer does not satisfy the labeled storage instruction, and the capsule and oral-pellet dosage forms are not interchangeable milligram for milligram."
+        },
+        {
+          "text": "A weekly pill organizer provides the same moisture protection required by the original product package.",
+          "status": "plausible but incorrect within the named product/formulation/regimen; checked against complete adopted source scopes",
+          "explanation": "The capsule is swallowed whole and retained in its original moisture-protective bottle or blister. Removing the capsule shell increased bioavailability in the label's relative-bioavailability study. Opening is not a capsule tube-delivery method, a pill organizer does not satisfy the labeled storage instruction, and the capsule and oral-pellet dosage forms are not interchangeable milligram for milligram."
+        },
+        {
+          "text": "An adult capsule dose can be substituted milligram for milligram with dabigatran oral pellets.",
+          "status": "plausible but incorrect within the named product/formulation/regimen; checked against complete adopted source scopes",
+          "explanation": "The capsule is swallowed whole and retained in its original moisture-protective bottle or blister. Removing the capsule shell increased bioavailability in the label's relative-bioavailability study. Opening is not a capsule tube-delivery method, a pill organizer does not satisfy the labeled storage instruction, and the capsule and oral-pellet dosage forms are not interchangeable milligram for milligram."
+        }
+      ],
+      "rationaleReview": "Each incorrect alternative is addressed by the full revised explanation; no unrelated true principle competes with the retained key."
+    },
+    {
+      "id": "direct-oral-anticoagulants-052",
+      "question": {
+        "id": "direct-oral-anticoagulants-052",
+        "question": "Which statement correctly identifies a dabigatran capsule-handling risk?",
+        "choices": [
+          "Placing capsules into a weekly pillbox or opening them can create unreliable or excessive exposure.",
+          "Removing the capsule shell preserves the same bioavailability as an intact capsule.",
+          "Taking an intact capsule with food necessarily prevents dabigatran absorption.",
+          "Keeping capsules in their original blister package violates the moisture-protection instruction."
+        ],
+        "answer": 0,
+        "rationale": "Opening a dabigatran capsule can increase exposure, while transferring capsules to a pill organizer abandons the labeled moisture-protective packaging. These are separate handling concerns; no numerical clinical exposure change from pillbox storage is inferred. The intact capsule may be taken with or without food, and an original blister is an accepted storage package.",
+        "reviewHref": "#dabigatran-pharmacology-and-use"
+      },
+      "previousQuestion": {
+        "id": "direct-oral-anticoagulants-052",
+        "question": "Which reasoning hazard is most important to prevent with dabigatran capsule handling and storage?",
+        "choices": [
+          "Placing capsules into a weekly pillbox or opening them can create unreliable or excessive exposure.",
+          "Increasing the DOAC dose empirically to overcome induction lacks a validated target and can become dangerous when the inducer stops.",
+          "Waiting for a routine coagulation test to become abnormal before controlling life-threatening bleeding can be fatal.",
+          "Calling direct factor Xa inhibitors antiplatelet drugs confuses thrombosis biology and combination risk."
+        ],
+        "answer": 0,
+        "rationale": "The capsule formulation and packaging are integral to safe dabigatran delivery.",
+        "reviewHref": "#dabigatran-pharmacology-and-use"
+      },
+      "objectSha256": "953ae6ca4191b0d9e2856f72c35c35d969dacfec98c5015e270fea02172a539d",
+      "status": "complete question source-verified after repair",
+      "sourceScopes": [
+        "Pradaxa12.3 Absorption,PDF17;16/17,PDF25;MedicationGuide29-30",
+        "Book515/523 capsule/storage instructions"
+      ],
+      "stemAndKeyReview": "Original clinical topic, keyed answer text, numeric key0 and review anchor retained.028 and052 stems clarify the requested risk statement without reducing the original food/exposure or capsule/storage topic.",
+      "distractorReview": [
+        {
+          "text": "Removing the capsule shell preserves the same bioavailability as an intact capsule.",
+          "status": "plausible but incorrect within the named product/formulation/regimen; checked against complete adopted source scopes",
+          "explanation": "Opening a dabigatran capsule can increase exposure, while transferring capsules to a pill organizer abandons the labeled moisture-protective packaging. These are separate handling concerns; no numerical clinical exposure change from pillbox storage is inferred. The intact capsule may be taken with or without food, and an original blister is an accepted storage package."
+        },
+        {
+          "text": "Taking an intact capsule with food necessarily prevents dabigatran absorption.",
+          "status": "plausible but incorrect within the named product/formulation/regimen; checked against complete adopted source scopes",
+          "explanation": "Opening a dabigatran capsule can increase exposure, while transferring capsules to a pill organizer abandons the labeled moisture-protective packaging. These are separate handling concerns; no numerical clinical exposure change from pillbox storage is inferred. The intact capsule may be taken with or without food, and an original blister is an accepted storage package."
+        },
+        {
+          "text": "Keeping capsules in their original blister package violates the moisture-protection instruction.",
+          "status": "plausible but incorrect within the named product/formulation/regimen; checked against complete adopted source scopes",
+          "explanation": "Opening a dabigatran capsule can increase exposure, while transferring capsules to a pill organizer abandons the labeled moisture-protective packaging. These are separate handling concerns; no numerical clinical exposure change from pillbox storage is inferred. The intact capsule may be taken with or without food, and an original blister is an accepted storage package."
+        }
+      ],
+      "rationaleReview": "Each incorrect alternative is addressed by the full revised explanation; no unrelated true principle competes with the retained key."
+    }
+  ],
+  "teachingReview": [
+    {
+      "lesson": "oral-factor-xa-inhibitor-regimens",
+      "section": {
+        "heading": "Pair rivaroxaban dose with food and phase",
+        "body": "Rivaroxaban nonvalvular atrial fibrillation dosing uses creatinine clearance and is taken with the evening meal. Acute VTE uses 15 mg twice daily with food for 21 days, followed by 20 mg once daily with food. A 10 mg once-daily extended option can follow at least six months of standard anticoagulation. The 15 mg and 20 mg tablets require food for reliable exposure. For the adult rivaroxaban dosing table, calculate creatinine clearance using actual body weight. The March 2026 label specifies at least six months before the 10 mg recurrence-prevention option for patients at continued risk."
+      },
+      "status": "whole expanded body source-verified",
+      "sourceScopes": [
+        "Xarelto1.4,2.1/Table1,12.3Absorption"
+      ],
+      "review": "Adult NVAF evening meal, acute15mgBID21days then20mgdaily withfood, selected10mg extended option after6months,15/20food effect and product-specific actual-weight basis each checked. Original entire body retained before expansion."
+    },
+    {
+      "lesson": "dabigatran-pharmacology-and-use",
+      "section": {
+        "heading": "Protect the dosage form",
+        "body": "Dabigatran capsules should be swallowed whole and stored according to the product instructions to protect them from moisture. Opening, crushing, or chewing a capsule can substantially increase exposure. Do not administer the capsule through an NG tube. Pradaxa capsules stay in their original bottle or blister, outside a pill organizer; open only one bottle at a time, use it within four months after opening, and check the date on a blister pack. Dyspepsia is common and should be distinguished from occult or overt gastrointestinal bleeding."
+      },
+      "status": "whole unchanged body source-verified",
+      "sourceScopes": [
+        "Book515/523",
+        "Pradaxa2.5,12.3Absorption,16,17Instructions/Bleeding/GastrointestinalAdverseReactions,MedicationGuide29-30"
+      ],
+      "review": "Whole capsule, moisture protection, opening/crushing/chewing exposure risk, book no-NG instruction, original bottle/blister/no organizer, one bottle,4-month opened bottle limit and blister date, dyspepsia and bleeding distinction each checked. No new clinical change to body."
+    },
+    {
+      "lesson": "doac-selection-interactions-and-implementation",
+      "section": {
+        "heading": "Verify rivaroxaban gastric-tube delivery",
+        "body": "For an adult who cannot swallow a Xarelto tablet, verify the prescribed strength and gastric tube placement. The tablet label permits crushing and suspension in 50 mL of water for an NG or gastric feeding tube. Avoid delivery distal to the stomach because absorption and exposure can fall. Follow a 15 or 20 mg crushed-tablet dose immediately with enteral feeding; this feeding step is not required for the 2.5 or 10 mg tablets. These instructions belong to the tablet product and do not establish one tube method for every anticoagulant or dosage form."
+      },
+      "status": "whole new original body source-verified",
+      "sourceScopes": [
+        "Xarelto2.6 complete,PDF11-12",
+        "Xarelto12.3Absorption,PDF38-39"
+      ],
+      "review": "Adult tablet product; gastric placement,50mLwater preparation,avoid distal delivery, immediatefeeds15/20 andno requiredfeeding2.5/10 all directly checked. No pediatric suspension, general fluid flush or all-class protocol inferred."
+    }
+  ],
+  "embeddedCheckReview": {
+    "lesson": "dabigatran-pharmacology-and-use",
+    "question": {
+      "question": "Why should a dabigatran capsule not be opened or chewed?",
+      "choices": [
+        "Altering the capsule can substantially increase exposure",
+        "Opening the capsule preserves the bioavailability of an intact capsule",
+        "Opening makes a capsule interchangeable milligram for milligram with oral pellets",
+        "Opening substantially reduces exposure"
+      ],
+      "answer": 0,
+      "rationale": "The labeled dosage form is designed for whole-capsule administration, and opening it can markedly increase bioavailability. Removing the shell does not preserve intact-capsule bioavailability or make the separate oral-pellet formulation interchangeable. The observed change is increased exposure.",
+      "reviewHref": "#dabigatran-pharmacology-and-use"
+    },
+    "previousQuestion": {
+      "question": "Why should a dabigatran capsule not be opened or chewed?",
+      "choices": [
+        "Altering the capsule can substantially increase exposure",
+        "It converts the drug into a factor Xa inhibitor",
+        "It prevents renal elimination",
+        "It eliminates all anticoagulant effect"
+      ],
+      "answer": 0,
+      "rationale": "The labeled dosage form is designed for whole-capsule administration, and opening it can markedly increase bioavailability.",
+      "reviewHref": "#dabigatran-pharmacology-and-use"
+    },
+    "status": "whole check source-verified after distractor/rationale repair",
+    "sourceScopes": [
+      "Pradaxa2.5/12.3Absorption and formulation noninterchangeability statement on PDF1/17"
+    ],
+    "keyAndDistractors": "Original correct text/key/anchor retained; plausible wrong alternatives reverse exposure, assert equivalence to intact capsule or make oral pellets interchangeable. Full label rejects each.",
+    "browser": "Incorrect0/1 andcorrect1/1 confirmed atbothwidths."
+  },
+  "coverage": {
+    "evidence": "enteral-nutrition-broader-doac-label-review.json",
+    "newFullQuestionsVerified": 5,
+    "newSourceVerifiedBankIds": [
+      "direct-oral-anticoagulants-026",
+      "direct-oral-anticoagulants-028",
+      "direct-oral-anticoagulants-029",
+      "direct-oral-anticoagulants-049",
+      "direct-oral-anticoagulants-052"
+    ],
+    "combinedDOACFeedingBankIds": [
+      "direct-oral-anticoagulants-025",
+      "direct-oral-anticoagulants-026",
+      "direct-oral-anticoagulants-027",
+      "direct-oral-anticoagulants-028",
+      "direct-oral-anticoagulants-029",
+      "direct-oral-anticoagulants-030",
+      "direct-oral-anticoagulants-031",
+      "direct-oral-anticoagulants-032",
+      "direct-oral-anticoagulants-049",
+      "direct-oral-anticoagulants-050",
+      "direct-oral-anticoagulants-051",
+      "direct-oral-anticoagulants-052"
+    ],
+    "combinedDOACFeedingBankVerified": 12,
+    "releasedBank": 116,
+    "releasedBodies": 25,
+    "wholeBodiesVerifiedThisUnit": 3,
+    "newOriginalBodies": 1,
+    "embeddedChecksVerifiedThisUnit": 1,
+    "references": 11,
+    "newDatedReferences": 2,
+    "allCumulativeObjectsUnchanged": 1180,
+    "wholeParentModuleVerified": false,
+    "wholeENModuleVerified": false,
+    "wholeChapterVerified": false,
+    "remainingBodyHeadings": [
+      "Account for delivery and absorption"
+    ],
+    "workingDraftPreservedUnreleased": true
+  },
+  "currentObjectReconciliation": {
+    "priorEvidence": {
+      "file": "enteral-nutrition-broader-doac-review.json",
+      "sha256": "bd9d31c9a4fa48edfbd487e195015a31598d5f7bc0ae7a455282b80928d7db80"
+    },
+    "currentModuleSha256": "8d2fca4493a7e560bbd2bad4a7c2c640298214d1d9bc1f68c36d6eea1852dca7",
+    "preservation": {
+      "status": "passed",
+      "bank": 116,
+      "changedQuestions": [
+        {
+          "id": "direct-oral-anticoagulants-026",
+          "before": {
+            "id": "direct-oral-anticoagulants-026",
+            "question": "Which clinical action best applies to rivaroxaban atrial fibrillation renal and food rules?",
+            "choices": [
+              "Calculate creatinine clearance using actual weight and verify the dose is taken with the meal.",
+              "Recalculate CrCl and review every P-gp inhibitor or inducer during acute illness or medication change.",
+              "Avoid major inducers when the label recommends it and select a monitorable or noninteracting alternative.",
+              "Stop active exposure, resuscitate, obtain targeted laboratories and imaging, control the source, and use reversal when expected benefit justifies thrombosis risk."
+            ],
+            "answer": 0,
+            "rationale": "Food improves bioavailability of higher rivaroxaban tablet strengths.",
+            "reviewHref": "#oral-factor-xa-inhibitor-regimens"
+          },
+          "after": {
+            "id": "direct-oral-anticoagulants-026",
+            "question": "Which clinical action best applies to rivaroxaban atrial fibrillation renal and food rules?",
+            "choices": [
+              "Calculate creatinine clearance using actual weight and verify the dose is taken with the meal.",
+              "Use ideal body weight for every rivaroxaban creatinine-clearance calculation and omit meal verification.",
+              "Use the reported eGFR alone without checking the product-specific creatinine-clearance method.",
+              "Take the prescribed 15 or 20 mg dose fasting because the evening meal is optional."
+            ],
+            "answer": 0,
+            "rationale": "The rivaroxaban adult dosing table specifies creatinine clearance calculated with actual weight. For nonvalvular atrial fibrillation, the prescribed 15 or 20 mg tablet is taken with the evening meal. A general weight algorithm or reported eGFR does not replace this product-specific instruction; meal timing remains part of the dosing plan.",
+            "reviewHref": "#oral-factor-xa-inhibitor-regimens"
+          }
+        },
+        {
+          "id": "direct-oral-anticoagulants-028",
+          "before": {
+            "id": "direct-oral-anticoagulants-028",
+            "question": "Which reasoning hazard is most important to prevent with rivaroxaban atrial fibrillation renal and food rules?",
+            "choices": [
+              "Taking the 15 or 20 mg dose fasting can reduce exposure.",
+              "Looking at kidney function or P-gp in isolation can underestimate combined accumulation.",
+              "Increasing the DOAC dose empirically to overcome induction lacks a validated target and can become dangerous when the inducer stops.",
+              "Waiting for a routine coagulation test to become abnormal before controlling life-threatening bleeding can be fatal."
+            ],
+            "answer": 0,
+            "rationale": "Food improves bioavailability of higher rivaroxaban tablet strengths.",
+            "reviewHref": "#oral-factor-xa-inhibitor-regimens"
+          },
+          "after": {
+            "id": "direct-oral-anticoagulants-028",
+            "question": "An adult plans to take a prescribed 20 mg rivaroxaban tablet fasting. Which statement correctly identifies the administration risk?",
+            "choices": [
+              "Taking the 15 or 20 mg dose fasting can reduce exposure.",
+              "Taking the 20 mg tablet fasting produces greater bioavailability than taking it with food.",
+              "The food-optional instruction for the 10 mg tablet also applies to the 15 and 20 mg tablets.",
+              "Changing meal timing removes the need to assess creatinine clearance for the prescribed dose."
+            ],
+            "answer": 0,
+            "rationale": "The label describes greater rivaroxaban exposure when the 20 mg tablet is taken with food and requires food for the 15 and 20 mg tablets. Food instructions differ by strength. Taking a higher-strength tablet fasting can reduce exposure; food neither replaces renal-dose assessment nor makes the 10 mg instructions interchangeable with those for 15 or 20 mg.",
+            "reviewHref": "#oral-factor-xa-inhibitor-regimens"
+          }
+        },
+        {
+          "id": "direct-oral-anticoagulants-029",
+          "before": {
+            "id": "direct-oral-anticoagulants-029",
+            "question": "Which principle best characterizes rivaroxaban acute and extended VTE regimens?",
+            "choices": [
+              "Adult acute VTE uses rivaroxaban 15 mg twice daily with food for 21 days, then 20 mg once daily with food; selected extended prevention uses 10 mg after at least six months of standard treatment.",
+              "Dabigatran capsules must be swallowed whole and protected from moisture in the original bottle or blister because opening changes exposure and improper storage reduces product integrity.",
+              "Premature discontinuation without adequate alternative anticoagulation increases thrombotic risk.",
+              "Idarucizumab is indicated when dabigatran reversal is needed for emergency surgery or urgent procedures or for life-threatening or uncontrolled bleeding."
+            ],
+            "answer": 0,
+            "rationale": "Rivaroxaban intensity changes at defined VTE treatment phases.",
+            "reviewHref": "#oral-factor-xa-inhibitor-regimens"
+          },
+          "after": {
+            "id": "direct-oral-anticoagulants-029",
+            "question": "Which principle best characterizes rivaroxaban acute and extended VTE regimens?",
+            "choices": [
+              "Adult acute VTE uses rivaroxaban 15 mg twice daily with food for 21 days, then 20 mg once daily with food; selected extended prevention uses 10 mg after at least six months of standard treatment.",
+              "Adult acute VTE starts with 15 mg twice daily for only 7 days before changing to 20 mg once daily.",
+              "Adult acute VTE starts with 10 mg once daily, with no higher-intensity initial treatment phase.",
+              "The labeled 10 mg extended recurrence-prevention regimen begins after only 3 months of standard treatment."
+            ],
+            "answer": 0,
+            "rationale": "Rivaroxaban adult DVT or PE treatment uses 15 mg twice daily with food for 21 days, then 20 mg once daily with food. The labeled 10 mg once-daily recurrence-prevention option is for patients at continued risk after at least six months of standard anticoagulation and may be taken with or without food. A 7-day initial phase, immediate 10 mg treatment, or a 3-month threshold does not match this regimen.",
+            "reviewHref": "#oral-factor-xa-inhibitor-regimens"
+          }
+        },
+        {
+          "id": "direct-oral-anticoagulants-049",
+          "before": {
+            "id": "direct-oral-anticoagulants-049",
+            "question": "Which principle best characterizes dabigatran capsule handling and storage?",
+            "choices": [
+              "Dabigatran capsules must be swallowed whole and protected from moisture in the original bottle or blister because opening changes exposure and improper storage reduces product integrity.",
+              "Strong P-gp or CYP3A induction can lower DOAC exposure and increase thrombotic risk.",
+              "Major bleeding care begins with stabilization, drug identification, last-dose and organ assessment, and definitive source control.",
+              "Apixaban, rivaroxaban, and edoxaban bind factor Xa directly and reduce thrombin generation without requiring antithrombin."
+            ],
+            "answer": 0,
+            "rationale": "The capsule formulation and packaging are integral to safe dabigatran delivery.",
+            "reviewHref": "#dabigatran-pharmacology-and-use"
+          },
+          "after": {
+            "id": "direct-oral-anticoagulants-049",
+            "question": "Which principle best characterizes dabigatran capsule handling and storage?",
+            "choices": [
+              "Dabigatran capsules must be swallowed whole and protected from moisture in the original bottle or blister because opening changes exposure and improper storage reduces product integrity.",
+              "Opening the capsule is the labeled way to prepare dabigatran for a feeding tube.",
+              "A weekly pill organizer provides the same moisture protection required by the original product package.",
+              "An adult capsule dose can be substituted milligram for milligram with dabigatran oral pellets."
+            ],
+            "answer": 0,
+            "rationale": "The capsule is swallowed whole and retained in its original moisture-protective bottle or blister. Removing the capsule shell increased bioavailability in the label's relative-bioavailability study. Opening is not a capsule tube-delivery method, a pill organizer does not satisfy the labeled storage instruction, and the capsule and oral-pellet dosage forms are not interchangeable milligram for milligram.",
+            "reviewHref": "#dabigatran-pharmacology-and-use"
+          }
+        },
+        {
+          "id": "direct-oral-anticoagulants-052",
+          "before": {
+            "id": "direct-oral-anticoagulants-052",
+            "question": "Which reasoning hazard is most important to prevent with dabigatran capsule handling and storage?",
+            "choices": [
+              "Placing capsules into a weekly pillbox or opening them can create unreliable or excessive exposure.",
+              "Increasing the DOAC dose empirically to overcome induction lacks a validated target and can become dangerous when the inducer stops.",
+              "Waiting for a routine coagulation test to become abnormal before controlling life-threatening bleeding can be fatal.",
+              "Calling direct factor Xa inhibitors antiplatelet drugs confuses thrombosis biology and combination risk."
+            ],
+            "answer": 0,
+            "rationale": "The capsule formulation and packaging are integral to safe dabigatran delivery.",
+            "reviewHref": "#dabigatran-pharmacology-and-use"
+          },
+          "after": {
+            "id": "direct-oral-anticoagulants-052",
+            "question": "Which statement correctly identifies a dabigatran capsule-handling risk?",
+            "choices": [
+              "Placing capsules into a weekly pillbox or opening them can create unreliable or excessive exposure.",
+              "Removing the capsule shell preserves the same bioavailability as an intact capsule.",
+              "Taking an intact capsule with food necessarily prevents dabigatran absorption.",
+              "Keeping capsules in their original blister package violates the moisture-protection instruction."
+            ],
+            "answer": 0,
+            "rationale": "Opening a dabigatran capsule can increase exposure, while transferring capsules to a pill organizer abandons the labeled moisture-protective packaging. These are separate handling concerns; no numerical clinical exposure change from pillbox storage is inferred. The intact capsule may be taken with or without food, and an original blister is an accepted storage package.",
+            "reviewHref": "#dabigatran-pharmacology-and-use"
+          }
+        }
+      ],
+      "unchangedFullBankObjects": 111,
+      "bodyChanges": [
+        {
+          "lesson": "oral-factor-xa-inhibitor-regimens",
+          "before": {
+            "heading": "Pair rivaroxaban dose with food and phase",
+            "body": "Rivaroxaban nonvalvular atrial fibrillation dosing uses creatinine clearance and is taken with the evening meal. Acute VTE uses 15 mg twice daily with food for 21 days, followed by 20 mg once daily with food. A 10 mg once-daily extended option can follow at least six months of standard anticoagulation. The 15 mg and 20 mg tablets require food for reliable exposure."
+          },
+          "after": {
+            "heading": "Pair rivaroxaban dose with food and phase",
+            "body": "Rivaroxaban nonvalvular atrial fibrillation dosing uses creatinine clearance and is taken with the evening meal. Acute VTE uses 15 mg twice daily with food for 21 days, followed by 20 mg once daily with food. A 10 mg once-daily extended option can follow at least six months of standard anticoagulation. The 15 mg and 20 mg tablets require food for reliable exposure. For the adult rivaroxaban dosing table, calculate creatinine clearance using actual body weight. The March 2026 label specifies at least six months before the 10 mg recurrence-prevention option for patients at continued risk."
+          }
+        }
+      ],
+      "oldBodiesPreservedInFull": 23,
+      "expandedBodyRetainsOldText": true,
+      "newBody": {
+        "heading": "Verify rivaroxaban gastric-tube delivery",
+        "body": "For an adult who cannot swallow a Xarelto tablet, verify the prescribed strength and gastric tube placement. The tablet label permits crushing and suspension in 50 mL of water for an NG or gastric feeding tube. Avoid delivery distal to the stomach because absorption and exposure can fall. Follow a 15 or 20 mg crushed-tablet dose immediately with enteral feeding; this feeding step is not required for the 2.5 or 10 mg tablets. These instructions belong to the tablet product and do not establish one tube method for every anticoagulant or dosage form."
+      },
+      "checkChanges": [
+        {
+          "before": {
+            "question": "Why should a dabigatran capsule not be opened or chewed?",
+            "choices": [
+              "Altering the capsule can substantially increase exposure",
+              "It converts the drug into a factor Xa inhibitor",
+              "It prevents renal elimination",
+              "It eliminates all anticoagulant effect"
+            ],
+            "answer": 0,
+            "rationale": "The labeled dosage form is designed for whole-capsule administration, and opening it can markedly increase bioavailability.",
+            "reviewHref": "#dabigatran-pharmacology-and-use"
+          },
+          "after": {
+            "question": "Why should a dabigatran capsule not be opened or chewed?",
+            "choices": [
+              "Altering the capsule can substantially increase exposure",
+              "Opening the capsule preserves the bioavailability of an intact capsule",
+              "Opening makes a capsule interchangeable milligram for milligram with oral pellets",
+              "Opening substantially reduces exposure"
+            ],
+            "answer": 0,
+            "rationale": "The labeled dosage form is designed for whole-capsule administration, and opening it can markedly increase bioavailability. Removing the shell does not preserve intact-capsule bioavailability or make the separate oral-pellet formulation interchangeable. The observed change is increased exposure.",
+            "reviewHref": "#dabigatran-pharmacology-and-use"
+          }
+        }
+      ],
+      "otherEmbeddedChecksUnchanged": 5,
+      "metadataAndFigureIdentifiersUnchanged": true,
+      "oldReferencesUnchanged": 9,
+      "newReferences": [
+        {
+          "label": "FDA. Xarelto tablets and oral suspension prescribing information, March 2026",
+          "href": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/022406s045lbl.pdf"
+        },
+        {
+          "label": "FDA. Pradaxa capsules prescribing information, revised June 2025",
+          "href": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/022512Orig1s049lbl.pdf"
+        }
+      ],
+      "allCumulativeObjectsUnchanged": 1180,
+      "stableIdsKeysCorrectTextsAndAnchors": true
+    },
+    "cumulative": "All1180 complete objects deeply unchanged; no new source closure of their unrelated content."
+  },
+  "validation": {
+    "assessmentStructure": {
+      "modules": 1,
+      "questions": 116,
+      "hardErrors": [],
+      "sourceGaps": [],
+      "sizeAdvisories": [],
+      "thinLessons": [],
+      "weakestModules": [
+        {
+          "module": "direct-oral-anticoagulants",
+          "lessons": 6,
+          "questions": 116,
+          "minimumLessonCoverage": 16
+        }
+      ]
+    },
+    "build": {
+      "status": "passed",
+      "exitCode": 0,
+      "staticPages": 567,
+      "logSha256": "427401b689444886a87312267584ef71cd51d75d46c9d6d41e2fa0c48283d894",
+      "scope": "Exact committedf4234f1carchive with only two reviewed DOAC file overlays; installed dependencies linked; no unrelateddrafts or privateenv included."
+    },
+    "browser": {
+      "status": "passed",
+      "results": [
+        {
+          "width": 1440,
+          "bodies": 25,
+          "exactMetadata": true,
+          "references": 11,
+          "checkResults": [
+            {
+              "wrong": true,
+              "grade": "0/1"
+            },
+            {
+              "wrong": false,
+              "grade": "1/1"
+            }
+          ],
+          "attempts": [
+            {
+              "target": "direct-oral-anticoagulants-026",
+              "seed": 27,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "direct-oral-anticoagulants-082",
+                "direct-oral-anticoagulants-007",
+                "direct-oral-anticoagulants-004",
+                "direct-oral-anticoagulants-055",
+                "direct-oral-anticoagulants-026",
+                "direct-oral-anticoagulants-115",
+                "direct-oral-anticoagulants-031",
+                "direct-oral-anticoagulants-038",
+                "direct-oral-anticoagulants-080",
+                "direct-oral-anticoagulants-054"
+              ]
+            },
+            {
+              "target": "direct-oral-anticoagulants-026",
+              "seed": 27,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "direct-oral-anticoagulants-082",
+                "direct-oral-anticoagulants-007",
+                "direct-oral-anticoagulants-004",
+                "direct-oral-anticoagulants-055",
+                "direct-oral-anticoagulants-026",
+                "direct-oral-anticoagulants-115",
+                "direct-oral-anticoagulants-031",
+                "direct-oral-anticoagulants-038",
+                "direct-oral-anticoagulants-080",
+                "direct-oral-anticoagulants-054"
+              ]
+            },
+            {
+              "target": "direct-oral-anticoagulants-028",
+              "seed": 14,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "direct-oral-anticoagulants-050",
+                "direct-oral-anticoagulants-036",
+                "direct-oral-anticoagulants-093",
+                "direct-oral-anticoagulants-084",
+                "direct-oral-anticoagulants-075",
+                "direct-oral-anticoagulants-053",
+                "direct-oral-anticoagulants-085",
+                "direct-oral-anticoagulants-115",
+                "direct-oral-anticoagulants-028",
+                "direct-oral-anticoagulants-116"
+              ]
+            },
+            {
+              "target": "direct-oral-anticoagulants-028",
+              "seed": 14,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "direct-oral-anticoagulants-050",
+                "direct-oral-anticoagulants-036",
+                "direct-oral-anticoagulants-093",
+                "direct-oral-anticoagulants-084",
+                "direct-oral-anticoagulants-075",
+                "direct-oral-anticoagulants-053",
+                "direct-oral-anticoagulants-085",
+                "direct-oral-anticoagulants-115",
+                "direct-oral-anticoagulants-028",
+                "direct-oral-anticoagulants-116"
+              ]
+            },
+            {
+              "target": "direct-oral-anticoagulants-029",
+              "seed": 38,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "direct-oral-anticoagulants-024",
+                "direct-oral-anticoagulants-029",
+                "direct-oral-anticoagulants-090",
+                "direct-oral-anticoagulants-060",
+                "direct-oral-anticoagulants-079",
+                "direct-oral-anticoagulants-065",
+                "direct-oral-anticoagulants-109",
+                "direct-oral-anticoagulants-014",
+                "direct-oral-anticoagulants-012",
+                "direct-oral-anticoagulants-002"
+              ]
+            },
+            {
+              "target": "direct-oral-anticoagulants-029",
+              "seed": 38,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "direct-oral-anticoagulants-024",
+                "direct-oral-anticoagulants-029",
+                "direct-oral-anticoagulants-090",
+                "direct-oral-anticoagulants-060",
+                "direct-oral-anticoagulants-079",
+                "direct-oral-anticoagulants-065",
+                "direct-oral-anticoagulants-109",
+                "direct-oral-anticoagulants-014",
+                "direct-oral-anticoagulants-012",
+                "direct-oral-anticoagulants-002"
+              ]
+            },
+            {
+              "target": "direct-oral-anticoagulants-049",
+              "seed": 11,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "direct-oral-anticoagulants-050",
+                "direct-oral-anticoagulants-043",
+                "direct-oral-anticoagulants-015",
+                "direct-oral-anticoagulants-019",
+                "direct-oral-anticoagulants-105",
+                "direct-oral-anticoagulants-089",
+                "direct-oral-anticoagulants-049",
+                "direct-oral-anticoagulants-035",
+                "direct-oral-anticoagulants-006",
+                "direct-oral-anticoagulants-054"
+              ]
+            },
+            {
+              "target": "direct-oral-anticoagulants-049",
+              "seed": 11,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "direct-oral-anticoagulants-050",
+                "direct-oral-anticoagulants-043",
+                "direct-oral-anticoagulants-015",
+                "direct-oral-anticoagulants-019",
+                "direct-oral-anticoagulants-105",
+                "direct-oral-anticoagulants-089",
+                "direct-oral-anticoagulants-049",
+                "direct-oral-anticoagulants-035",
+                "direct-oral-anticoagulants-006",
+                "direct-oral-anticoagulants-054"
+              ]
+            },
+            {
+              "target": "direct-oral-anticoagulants-052",
+              "seed": 4,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "direct-oral-anticoagulants-080",
+                "direct-oral-anticoagulants-027",
+                "direct-oral-anticoagulants-021",
+                "direct-oral-anticoagulants-015",
+                "direct-oral-anticoagulants-112",
+                "direct-oral-anticoagulants-107",
+                "direct-oral-anticoagulants-052",
+                "direct-oral-anticoagulants-081",
+                "direct-oral-anticoagulants-020",
+                "direct-oral-anticoagulants-030"
+              ]
+            },
+            {
+              "target": "direct-oral-anticoagulants-052",
+              "seed": 4,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "direct-oral-anticoagulants-080",
+                "direct-oral-anticoagulants-027",
+                "direct-oral-anticoagulants-021",
+                "direct-oral-anticoagulants-015",
+                "direct-oral-anticoagulants-112",
+                "direct-oral-anticoagulants-107",
+                "direct-oral-anticoagulants-052",
+                "direct-oral-anticoagulants-081",
+                "direct-oral-anticoagulants-020",
+                "direct-oral-anticoagulants-030"
+              ]
+            }
+          ],
+          "noHorizontalOverflow": true,
+          "unauthenticated": true
+        },
+        {
+          "width": 390,
+          "bodies": 25,
+          "exactMetadata": true,
+          "references": 11,
+          "checkResults": [
+            {
+              "wrong": true,
+              "grade": "0/1"
+            },
+            {
+              "wrong": false,
+              "grade": "1/1"
+            }
+          ],
+          "attempts": [
+            {
+              "target": "direct-oral-anticoagulants-026",
+              "seed": 27,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "direct-oral-anticoagulants-082",
+                "direct-oral-anticoagulants-007",
+                "direct-oral-anticoagulants-004",
+                "direct-oral-anticoagulants-055",
+                "direct-oral-anticoagulants-026",
+                "direct-oral-anticoagulants-115",
+                "direct-oral-anticoagulants-031",
+                "direct-oral-anticoagulants-038",
+                "direct-oral-anticoagulants-080",
+                "direct-oral-anticoagulants-054"
+              ]
+            },
+            {
+              "target": "direct-oral-anticoagulants-026",
+              "seed": 27,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "direct-oral-anticoagulants-082",
+                "direct-oral-anticoagulants-007",
+                "direct-oral-anticoagulants-004",
+                "direct-oral-anticoagulants-055",
+                "direct-oral-anticoagulants-026",
+                "direct-oral-anticoagulants-115",
+                "direct-oral-anticoagulants-031",
+                "direct-oral-anticoagulants-038",
+                "direct-oral-anticoagulants-080",
+                "direct-oral-anticoagulants-054"
+              ]
+            },
+            {
+              "target": "direct-oral-anticoagulants-028",
+              "seed": 14,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "direct-oral-anticoagulants-050",
+                "direct-oral-anticoagulants-036",
+                "direct-oral-anticoagulants-093",
+                "direct-oral-anticoagulants-084",
+                "direct-oral-anticoagulants-075",
+                "direct-oral-anticoagulants-053",
+                "direct-oral-anticoagulants-085",
+                "direct-oral-anticoagulants-115",
+                "direct-oral-anticoagulants-028",
+                "direct-oral-anticoagulants-116"
+              ]
+            },
+            {
+              "target": "direct-oral-anticoagulants-028",
+              "seed": 14,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "direct-oral-anticoagulants-050",
+                "direct-oral-anticoagulants-036",
+                "direct-oral-anticoagulants-093",
+                "direct-oral-anticoagulants-084",
+                "direct-oral-anticoagulants-075",
+                "direct-oral-anticoagulants-053",
+                "direct-oral-anticoagulants-085",
+                "direct-oral-anticoagulants-115",
+                "direct-oral-anticoagulants-028",
+                "direct-oral-anticoagulants-116"
+              ]
+            },
+            {
+              "target": "direct-oral-anticoagulants-029",
+              "seed": 38,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "direct-oral-anticoagulants-024",
+                "direct-oral-anticoagulants-029",
+                "direct-oral-anticoagulants-090",
+                "direct-oral-anticoagulants-060",
+                "direct-oral-anticoagulants-079",
+                "direct-oral-anticoagulants-065",
+                "direct-oral-anticoagulants-109",
+                "direct-oral-anticoagulants-014",
+                "direct-oral-anticoagulants-012",
+                "direct-oral-anticoagulants-002"
+              ]
+            },
+            {
+              "target": "direct-oral-anticoagulants-029",
+              "seed": 38,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "direct-oral-anticoagulants-024",
+                "direct-oral-anticoagulants-029",
+                "direct-oral-anticoagulants-090",
+                "direct-oral-anticoagulants-060",
+                "direct-oral-anticoagulants-079",
+                "direct-oral-anticoagulants-065",
+                "direct-oral-anticoagulants-109",
+                "direct-oral-anticoagulants-014",
+                "direct-oral-anticoagulants-012",
+                "direct-oral-anticoagulants-002"
+              ]
+            },
+            {
+              "target": "direct-oral-anticoagulants-049",
+              "seed": 11,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "direct-oral-anticoagulants-050",
+                "direct-oral-anticoagulants-043",
+                "direct-oral-anticoagulants-015",
+                "direct-oral-anticoagulants-019",
+                "direct-oral-anticoagulants-105",
+                "direct-oral-anticoagulants-089",
+                "direct-oral-anticoagulants-049",
+                "direct-oral-anticoagulants-035",
+                "direct-oral-anticoagulants-006",
+                "direct-oral-anticoagulants-054"
+              ]
+            },
+            {
+              "target": "direct-oral-anticoagulants-049",
+              "seed": 11,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "direct-oral-anticoagulants-050",
+                "direct-oral-anticoagulants-043",
+                "direct-oral-anticoagulants-015",
+                "direct-oral-anticoagulants-019",
+                "direct-oral-anticoagulants-105",
+                "direct-oral-anticoagulants-089",
+                "direct-oral-anticoagulants-049",
+                "direct-oral-anticoagulants-035",
+                "direct-oral-anticoagulants-006",
+                "direct-oral-anticoagulants-054"
+              ]
+            },
+            {
+              "target": "direct-oral-anticoagulants-052",
+              "seed": 4,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "direct-oral-anticoagulants-080",
+                "direct-oral-anticoagulants-027",
+                "direct-oral-anticoagulants-021",
+                "direct-oral-anticoagulants-015",
+                "direct-oral-anticoagulants-112",
+                "direct-oral-anticoagulants-107",
+                "direct-oral-anticoagulants-052",
+                "direct-oral-anticoagulants-081",
+                "direct-oral-anticoagulants-020",
+                "direct-oral-anticoagulants-030"
+              ]
+            },
+            {
+              "target": "direct-oral-anticoagulants-052",
+              "seed": 4,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "direct-oral-anticoagulants-080",
+                "direct-oral-anticoagulants-027",
+                "direct-oral-anticoagulants-021",
+                "direct-oral-anticoagulants-015",
+                "direct-oral-anticoagulants-112",
+                "direct-oral-anticoagulants-107",
+                "direct-oral-anticoagulants-052",
+                "direct-oral-anticoagulants-081",
+                "direct-oral-anticoagulants-020",
+                "direct-oral-anticoagulants-030"
+              ]
+            }
+          ],
+          "noHorizontalOverflow": true,
+          "unauthenticated": true
+        }
+      ],
+      "errors": [],
+      "captures": [
+        "body-oral-factor-xa-inhibitor-regimens-Pair-1440.png",
+        "body-dabigatran-pharmacology-and-use-Protect-1440.png",
+        "body-doac-selection-interactions-and-implementation-Verify-1440.png",
+        "references-1440.png",
+        "embedded-incorrect-1440.png",
+        "embedded-correct-1440.png",
+        "question-026-incorrect-1440.png",
+        "question-026-correct-1440.png",
+        "question-028-incorrect-1440.png",
+        "question-028-correct-1440.png",
+        "question-029-incorrect-1440.png",
+        "question-029-correct-1440.png",
+        "question-049-incorrect-1440.png",
+        "question-049-correct-1440.png",
+        "question-052-incorrect-1440.png",
+        "question-052-correct-1440.png",
+        "body-oral-factor-xa-inhibitor-regimens-Pair-390.png",
+        "body-dabigatran-pharmacology-and-use-Protect-390.png",
+        "body-doac-selection-interactions-and-implementation-Verify-390.png",
+        "references-390.png",
+        "embedded-incorrect-390.png",
+        "embedded-correct-390.png",
+        "question-026-incorrect-390.png",
+        "question-026-correct-390.png",
+        "question-028-incorrect-390.png",
+        "question-028-correct-390.png",
+        "question-029-incorrect-390.png",
+        "question-029-correct-390.png",
+        "question-049-incorrect-390.png",
+        "question-049-correct-390.png",
+        "question-052-incorrect-390.png",
+        "question-052-correct-390.png"
+      ]
+    },
+    "visualReview": {
+      "status": "passed",
+      "originalCapturesActuallyViewed": [
+        "body-oral-factor-xa-inhibitor-regimens-Pair-1440.png",
+        "body-dabigatran-pharmacology-and-use-Protect-1440.png",
+        "body-doac-selection-interactions-and-implementation-Verify-1440.png",
+        "references-1440.png",
+        "embedded-incorrect-1440.png",
+        "embedded-correct-1440.png",
+        "question-026-incorrect-1440.png",
+        "question-026-correct-1440.png",
+        "question-028-incorrect-1440.png",
+        "question-028-correct-1440.png",
+        "question-029-incorrect-1440.png",
+        "question-029-correct-1440.png",
+        "question-049-incorrect-1440.png",
+        "question-049-correct-1440.png",
+        "question-052-incorrect-1440.png",
+        "question-052-correct-1440.png",
+        "body-oral-factor-xa-inhibitor-regimens-Pair-390.png",
+        "body-dabigatran-pharmacology-and-use-Protect-390.png",
+        "body-doac-selection-interactions-and-implementation-Verify-390.png",
+        "references-390.png",
+        "embedded-incorrect-390.png",
+        "embedded-correct-390.png",
+        "question-026-incorrect-390.png",
+        "question-026-correct-390.png",
+        "question-028-incorrect-390.png",
+        "question-028-correct-390.png",
+        "question-029-incorrect-390.png",
+        "question-029-correct-390.png",
+        "question-049-incorrect-390.png",
+        "question-049-correct-390.png",
+        "question-052-incorrect-390.png",
+        "question-052-correct-390.png"
+      ],
+      "method": "Ten comparison sheets covering all32 original captures actually viewed. Five target questions and one check show both feedback paths at1440/390; three reviewed bodies andall11references displayed.320overflow passed.",
+      "imageHashes": {
+        "body-oral-factor-xa-inhibitor-regimens-Pair-1440.png": "4c36efbf9e7f1ca760a24f45fbeb9af58710cfe7824628ca794f70c6f64835ee",
+        "body-dabigatran-pharmacology-and-use-Protect-1440.png": "31e40e2386a34aacdf3b2577a3ab26ee6dc43d6e16dddca49d0fc965d5c40455",
+        "body-doac-selection-interactions-and-implementation-Verify-1440.png": "283efdefa3abbb69bbc0eda4a476813cb115dfffc9606ba6d558945f28de8cc7",
+        "references-1440.png": "d2f1afe133558fb972ae9de1d42284c737fa934620a0e6698db303901ab7e78c",
+        "embedded-incorrect-1440.png": "c62ea47f677d9d99058747fa61451933e07d782cc14a07674d22c644f321f3d9",
+        "embedded-correct-1440.png": "7f4ef0f13cda36e7d3bd57fa8bed389f623fa03058dca4c0398c7f984a7b3195",
+        "question-026-incorrect-1440.png": "be04b87f9f0aa81e65b8b141c3426c450b363e2cf73535b03af7a0d6e53e7c81",
+        "question-026-correct-1440.png": "10d38d435d675390c72ebe0be6da416e9a351dfb2f17f086c12b191d1d1d9afe",
+        "question-028-incorrect-1440.png": "015fe7c8763ae9621af248865223822c2392bbd8fd09e46ac93ad3ffbb0e1c83",
+        "question-028-correct-1440.png": "34a33c67186c44e85c4c0e4a5d1cbe14072f75bbb904fc4cf6d77726ed55b0d3",
+        "question-029-incorrect-1440.png": "6b822a3053d5cae23ce1f6e85b3699fa21d5a921bbe67bfa44e198a9477ce4dd",
+        "question-029-correct-1440.png": "19a9981f6b35701f99362172c1e7f42b0bddf982620e788029d273f1b446672b",
+        "question-049-incorrect-1440.png": "224805cccf4fa987f8ca45849d6c8c5355d23f94110a43ba11b913d581d6975c",
+        "question-049-correct-1440.png": "2dbf44e529e1106cd83a35048ac9dfaed054ecfe082f9af184598361882139ba",
+        "question-052-incorrect-1440.png": "877d0a7ded8283c8734abfb346211c23a5c9f0e637338fe53a33faca4f27a1b3",
+        "question-052-correct-1440.png": "ed7191b8ea91e3ea279cf6b2d2892ab16a3fd9aeb9f6c9860127b80defe68824",
+        "body-oral-factor-xa-inhibitor-regimens-Pair-390.png": "fba8fae65b0cf26b4d76c051f0f3b46673d376fdac5d07812263802659ae50a8",
+        "body-dabigatran-pharmacology-and-use-Protect-390.png": "11ecaf1ec6415a02e4fb41ef07f65c9ea534d68d6c4d7d16f9eb4308cec9e18b",
+        "body-doac-selection-interactions-and-implementation-Verify-390.png": "724f980a233e953b11a4bd035ccee0eb35fe4608ae12f2e8e20c6136ca853301",
+        "references-390.png": "b4bfe8b792e0abe49be418516b3d6c60f2cc2f4018ba138def789f6ce2fab2a2",
+        "embedded-incorrect-390.png": "db7f9e929dc9c04e40989a65f477586d6504134b79932c56cc1cf1c9fc8e122b",
+        "embedded-correct-390.png": "c48b5429707c4b76ee738353df2ce5561547ab995255f4d7be6627ccd7a43213",
+        "question-026-incorrect-390.png": "9917160571b5b61c274682a16c6b596a00fc7bef92e48fa81cbf15cd0d8a12b1",
+        "question-026-correct-390.png": "f13f36f5d6822e97ab9cfdf2da29be0b1d015a47d7ea07b7eb1ebf3c05653fb5",
+        "question-028-incorrect-390.png": "aa52522478757349637c6c58d98c14453fe65102a86f1e454c645a25204ab2e5",
+        "question-028-correct-390.png": "f2d79eb603ce3851d8a8d5ccb1161bfb3145810db9151fbba48009207659c446",
+        "question-029-incorrect-390.png": "014c268e903649fdcb13d27b256147984212d333a747b431befbcb8a8b2ee82a",
+        "question-029-correct-390.png": "2329b373176e967c9123dc065765cce0e2b44452ba6da6e0506dff7bf5d43e83",
+        "question-049-incorrect-390.png": "27cfd5c3ae2252441fdf1117065574c2aaaaff09763382a63f1894035cca0e8f",
+        "question-049-correct-390.png": "bea2223cd2aa41fdf1bc86afc24db462a281127549ee4f1048d06416fd376201",
+        "question-052-incorrect-390.png": "7dcdd3b006a98ff7ae2c78ca5a053166871ff1b7aba8929e8a65e2b98af1531a",
+        "question-052-correct-390.png": "84e174748db51f57869bf50d33d5fd36eae0a97af9a68394786bc1f2c6ee46f7"
+      }
+    },
+    "limitations": "Local unauthenticated production preview; source verification is limited to reviewed clinical objects. DOM matching of all25 bodies andmetadata does not clinically verify unrelated bodies or metadata. No account persistence or deployed production claim. Transient seeded browser sampling only; assessment code unchanged.",
+    "processes": "Build35883terminalexit0;browser60666terminalexit0;ownedpreview73313stoppedCtrlCterminalexit130.",
+    "toolingCorrections": "BundledNode rejects obsolete experimental-default-type flag; rerun with existing repository alias loader and default module detection passed. No product-runtime changes."
+  },
+  "remainingReview": {
+    "retainedBody": {
+      "heading": "Account for delivery and absorption",
+      "body": "Food requirements, bariatric or major gastrointestinal surgery, feeding tubes, dysphagia, vomiting, malabsorption, and dosage-form manipulation can change exposure or feasibility. Select a product and route with evidence for the patient's anatomy and administration pathway."
+    },
+    "status": "whole body pending; general route/feasibility clauses supported, surgery-specific DOAC absorption consequences not fully established",
+    "bookSearch": {
+      "pagesTextSearched": 1032,
+      "termScope": [
+        "bariatric",
+        "malabsorption",
+        "gastric bypass"
+      ],
+      "searchResultsSha256": "7b944fa67ee212108c35435b9864c942f2c13f5a48640c2aa5ceda96a4f2f7c8",
+      "reviewedNewPages": [
+        95,
+        107
+      ],
+      "limits": "Locating aid, not a full1032-page visual/clinical audit. Iron/osteoporosis search hits are not adopted as direct DOAC outcome evidence."
+    },
+    "nextAction": "Finish the retained DOAC Account for delivery and absorption body: distinguish book-supported general route/feasibility clauses from remaining bariatric/post-surgical DOAC exposure claims. Relevant book95/107 and complete approved rivaroxaban release-site and dabigatran capsule absorption scopes have been read; do not infer a measured post-bariatric outcome or blanket dose rule. Reconcile the remaining broader feeding inventory against already approved FDA labeling, including lefamulin oral administration, before whole EN closure. Preserve the dirty59-question/nine-lesson DOAC draft; released116 IDs and all cumulative objects remain stable. Chapter1entry15/Chapter11 remain reviewing.",
+    "incidentalNonfeedingQuestions": [
+      "direct-oral-anticoagulants-007",
+      "direct-oral-anticoagulants-099"
+    ],
+    "wholeParentQuestionsRemainPending": true
+  },
+  "release": {
+    "branch": "audit/rxprep-content-2026-09-24",
+    "commit": null,
+    "push": "pending",
+    "receipt": "enteral-nutrition-broader-doac-label-release.json",
+    "mainMerge": "not performed",
+    "production": "not verified"
+  },
+  "wholeGoalComplete": false
+}

@@ -5667,25 +5667,34 @@
         {
           "slug": "oral-factor-xa-inhibitor-regimens",
           "status": "reviewing",
-          "latestScopedEvidence": "enteral-nutrition-broader-doac-review.json",
-          "wholeLessonVerified": false
+          "latestScopedEvidence": "enteral-nutrition-broader-doac-label-review.json",
+          "wholeLessonVerified": false,
+          "verifiedSectionHeadings": [
+            "Pair rivaroxaban dose with food and phase"
+          ]
         },
         {
           "slug": "dabigatran-pharmacology-and-use",
           "status": "reviewing",
-          "latestScopedEvidence": "enteral-nutrition-broader-doac-review.json",
+          "latestScopedEvidence": "enteral-nutrition-broader-doac-label-review.json",
           "wholeLessonVerified": false,
-          "partiallyVerifiedSectionHeadings": [
-            "Protect the dosage form"
-          ],
+          "partiallyVerifiedSectionHeadings": [],
           "verifiedClaimsBySection": {
-            "Protect the dosage form": "New route/storage clauses only;retained exposure mechanism pending"
+            "Protect the dosage form": "Whole retained body source-verified with dated FDA capsule exposure and storage scopes."
           },
-          "embeddedCheckVerified": false
+          "embeddedCheckVerified": true,
+          "verifiedSectionHeadings": [
+            "Protect the dosage form"
+          ]
         },
         {
           "slug": "doac-selection-interactions-and-implementation",
-          "status": "unreviewed"
+          "status": "reviewing",
+          "latestScopedEvidence": "enteral-nutrition-broader-doac-label-review.json",
+          "wholeLessonVerified": false,
+          "verifiedSectionHeadings": [
+            "Verify rivaroxaban gastric-tube delivery"
+          ]
         },
         {
           "slug": "monitoring-procedures-and-transitions",
@@ -5699,7 +5708,8 @@
       "questions": 116,
       "status": "reviewing",
       "evidence": [
-        "enteral-nutrition-broader-doac-review.json"
+        "enteral-nutrition-broader-doac-review.json",
+        "enteral-nutrition-broader-doac-label-review.json"
       ],
       "latestEnteralDependencyReview": {
         "evidence": "enteral-nutrition-broader-doac-review.json",
@@ -5742,7 +5752,49 @@
           "assessmentChecks": 674,
           "separateSourceExamples": 98
         },
-        "workingLocalDraftPreservedUnreleased": false
+        "workingLocalDraftPreservedUnreleased": true,
+        "labelContinuationEvidence": "enteral-nutrition-broader-doac-label-review.json"
+      },
+      "latestApprovedDOACFeedingReview": {
+        "evidence": "enteral-nutrition-broader-doac-label-review.json",
+        "newFullQuestionsVerified": 5,
+        "newSourceVerifiedBankIds": [
+          "direct-oral-anticoagulants-026",
+          "direct-oral-anticoagulants-028",
+          "direct-oral-anticoagulants-029",
+          "direct-oral-anticoagulants-049",
+          "direct-oral-anticoagulants-052"
+        ],
+        "combinedDOACFeedingBankIds": [
+          "direct-oral-anticoagulants-025",
+          "direct-oral-anticoagulants-026",
+          "direct-oral-anticoagulants-027",
+          "direct-oral-anticoagulants-028",
+          "direct-oral-anticoagulants-029",
+          "direct-oral-anticoagulants-030",
+          "direct-oral-anticoagulants-031",
+          "direct-oral-anticoagulants-032",
+          "direct-oral-anticoagulants-049",
+          "direct-oral-anticoagulants-050",
+          "direct-oral-anticoagulants-051",
+          "direct-oral-anticoagulants-052"
+        ],
+        "combinedDOACFeedingBankVerified": 12,
+        "releasedBank": 116,
+        "releasedBodies": 25,
+        "wholeBodiesVerifiedThisUnit": 3,
+        "newOriginalBodies": 1,
+        "embeddedChecksVerifiedThisUnit": 1,
+        "references": 11,
+        "newDatedReferences": 2,
+        "allCumulativeObjectsUnchanged": 1180,
+        "wholeParentModuleVerified": false,
+        "wholeENModuleVerified": false,
+        "wholeChapterVerified": false,
+        "remainingBodyHeadings": [
+          "Account for delivery and absorption"
+        ],
+        "workingDraftPreservedUnreleased": true
       }
     },
     {
