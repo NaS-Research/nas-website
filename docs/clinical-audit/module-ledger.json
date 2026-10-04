@@ -14175,13 +14175,18 @@
         {
           "slug": "formulations-organ-function",
           "status": "reviewing",
-          "latestScopedEvidence": "enteral-nutrition-broader-antifungal-formulations-review.json",
+          "latestScopedEvidence": "enteral-nutrition-broader-antifungal-exposure-review.json",
           "verifiedBodyHeadings": [
             "Build the food and pH plan around the formulation",
-            "Reject dose-for-dose substitution"
+            "Reject dose-for-dose substitution",
+            "Audit oral delivery"
           ],
           "embeddedCheckVerified": true,
-          "wholeLessonVerified": false
+          "wholeLessonVerified": false,
+          "latestVerifiedQuestionIds": [
+            "antifungal-foundations-125",
+            "antifungal-foundations-127"
+          ]
         },
         {
           "slug": "interactions-electrophysiology",
@@ -14199,7 +14204,8 @@
       "questions": 184,
       "status": "reviewing",
       "evidence": [
-        "enteral-nutrition-broader-antifungal-formulations-review.json"
+        "enteral-nutrition-broader-antifungal-formulations-review.json",
+        "enteral-nutrition-broader-antifungal-exposure-review.json"
       ],
       "broaderEnteralFormulationReview": {
         "evidence": "enteral-nutrition-broader-antifungal-formulations-review.json",
@@ -14231,6 +14237,63 @@
         "figuresVerified": 0,
         "metadataVerified": false,
         "allCumulativeItemsUnchangedButFullSourceClosurePending": true
+      },
+      "latestAntifungalExposureReview": {
+        "evidence": "enteral-nutrition-broader-antifungal-exposure-review.json",
+        "moduleBanks": {
+          "triazole": 176,
+          "foundations": 184
+        },
+        "sourceVerifiedBankIds": [
+          "triazole-pharmacology-093",
+          "triazole-pharmacology-094",
+          "triazole-pharmacology-095",
+          "triazole-pharmacology-096",
+          "triazole-pharmacology-170",
+          "triazole-pharmacology-175",
+          "antifungal-foundations-125",
+          "antifungal-foundations-127"
+        ],
+        "newFullQuestionsVerified": 8,
+        "broaderFeedingBankVerifiedAfter": 197,
+        "wholeNewBodiesVerified": 2,
+        "wholePosaconazoleLessonVerified": true,
+        "posaconazoleLessonQuestionTotal": 18,
+        "posaconazolePriorVerifiedQuestionsExactRechecked": [
+          "triazole-pharmacology-081",
+          "triazole-pharmacology-082",
+          "triazole-pharmacology-083",
+          "triazole-pharmacology-084",
+          "triazole-pharmacology-085",
+          "triazole-pharmacology-086",
+          "triazole-pharmacology-087",
+          "triazole-pharmacology-088",
+          "triazole-pharmacology-089",
+          "triazole-pharmacology-090",
+          "triazole-pharmacology-091",
+          "triazole-pharmacology-092",
+          "triazole-pharmacology-169"
+        ],
+        "posaconazoleNewlyVerifiedQuestionIds": [
+          "triazole-pharmacology-093",
+          "triazole-pharmacology-094",
+          "triazole-pharmacology-095",
+          "triazole-pharmacology-096",
+          "triazole-pharmacology-170"
+        ],
+        "posaconazoleWholeBodiesVerified": 4,
+        "posaconazoleMetadataStatementsVerified": 12,
+        "retainedPosaconazoleWholeFigureAndCheckRechecked": true,
+        "foundationsWholeLessonVerified": false,
+        "wholeParentModulesVerified": false,
+        "wholeENModuleVerified": false,
+        "wholeChaptersVerified": false,
+        "all1180CumulativeObjectsUnchanged": true,
+        "noNewCumulativeClosureClaimed": true,
+        "all360QuestionIdsStemsKeysOriginalCorrectTextsAndAnchorsPreserved": true,
+        "noNewQuestionIds": true,
+        "originalClinicalScopeRetained": true,
+        "unrelatedDraftsPreserved": true
       }
     },
     {
@@ -14355,13 +14418,14 @@
         },
         {
           "slug": "posaconazole-delivery",
-          "status": "reviewing",
-          "latestScopedEvidence": "enteral-nutrition-broader-posaconazole-label-review.json",
-          "wholeLessonVerified": false,
+          "status": "verified",
+          "latestScopedEvidence": "enteral-nutrition-broader-antifungal-exposure-review.json",
+          "wholeLessonVerified": true,
           "verifiedBodyHeadings": [
             "Stop unsafe substitution",
             "Use the current tablet instruction",
-            "Protect suspension absorption"
+            "Protect suspension absorption",
+            "Recognize mineralocorticoid excess"
           ],
           "embeddedCheckVerified": true,
           "figureVerified": true,
@@ -14379,19 +14443,18 @@
             "triazole-pharmacology-090",
             "triazole-pharmacology-091",
             "triazole-pharmacology-092",
-            "triazole-pharmacology-169"
-          ],
-          "sourceClosedCumulative": [
-            "cumulative-triazole-antifungal-pharmacology-triazole-pharmacology-089"
-          ],
-          "remainingBody": "Recognize mineralocorticoid excess",
-          "remainingQuestionIds": [
             "triazole-pharmacology-093",
             "triazole-pharmacology-094",
             "triazole-pharmacology-095",
             "triazole-pharmacology-096",
+            "triazole-pharmacology-169",
             "triazole-pharmacology-170"
-          ]
+          ],
+          "sourceClosedCumulative": [
+            "cumulative-triazole-antifungal-pharmacology-triazole-pharmacology-089"
+          ],
+          "remainingBody": null,
+          "remainingQuestionIds": []
         },
         {
           "slug": "isavuconazole-system",
@@ -14415,7 +14478,8 @@
       "evidence": [
         "enteral-nutrition-broader-antifungal-formulations-review.json",
         "enteral-nutrition-broader-posaconazole-label-review.json",
-        "enteral-nutrition-broader-itraconazole-label-review.json"
+        "enteral-nutrition-broader-itraconazole-label-review.json",
+        "enteral-nutrition-broader-antifungal-exposure-review.json"
       ],
       "broaderEnteralFormulationReview": {
         "evidence": "enteral-nutrition-broader-antifungal-formulations-review.json",
@@ -14450,7 +14514,7 @@
         "figuresVerified": 0,
         "metadataVerified": false,
         "allCumulativeItemsUnchangedButFullSourceClosurePending": true,
-        "continuationEvidence": "enteral-nutrition-broader-itraconazole-label-review.json",
+        "continuationEvidence": "enteral-nutrition-broader-antifungal-exposure-review.json",
         "historicalCountsPreserved": true
       },
       "latestPosaconazoleFormulationLabelReview": {
@@ -14547,6 +14611,63 @@
         "otherNineFiguresUnchanged": true,
         "other38BodiesAndNineChecksUnchanged": true,
         "unrelatedWorkingDraftsPreserved": true
+      },
+      "latestAntifungalExposureReview": {
+        "evidence": "enteral-nutrition-broader-antifungal-exposure-review.json",
+        "moduleBanks": {
+          "triazole": 176,
+          "foundations": 184
+        },
+        "sourceVerifiedBankIds": [
+          "triazole-pharmacology-093",
+          "triazole-pharmacology-094",
+          "triazole-pharmacology-095",
+          "triazole-pharmacology-096",
+          "triazole-pharmacology-170",
+          "triazole-pharmacology-175",
+          "antifungal-foundations-125",
+          "antifungal-foundations-127"
+        ],
+        "newFullQuestionsVerified": 8,
+        "broaderFeedingBankVerifiedAfter": 197,
+        "wholeNewBodiesVerified": 2,
+        "wholePosaconazoleLessonVerified": true,
+        "posaconazoleLessonQuestionTotal": 18,
+        "posaconazolePriorVerifiedQuestionsExactRechecked": [
+          "triazole-pharmacology-081",
+          "triazole-pharmacology-082",
+          "triazole-pharmacology-083",
+          "triazole-pharmacology-084",
+          "triazole-pharmacology-085",
+          "triazole-pharmacology-086",
+          "triazole-pharmacology-087",
+          "triazole-pharmacology-088",
+          "triazole-pharmacology-089",
+          "triazole-pharmacology-090",
+          "triazole-pharmacology-091",
+          "triazole-pharmacology-092",
+          "triazole-pharmacology-169"
+        ],
+        "posaconazoleNewlyVerifiedQuestionIds": [
+          "triazole-pharmacology-093",
+          "triazole-pharmacology-094",
+          "triazole-pharmacology-095",
+          "triazole-pharmacology-096",
+          "triazole-pharmacology-170"
+        ],
+        "posaconazoleWholeBodiesVerified": 4,
+        "posaconazoleMetadataStatementsVerified": 12,
+        "retainedPosaconazoleWholeFigureAndCheckRechecked": true,
+        "foundationsWholeLessonVerified": false,
+        "wholeParentModulesVerified": false,
+        "wholeENModuleVerified": false,
+        "wholeChaptersVerified": false,
+        "all1180CumulativeObjectsUnchanged": true,
+        "noNewCumulativeClosureClaimed": true,
+        "all360QuestionIdsStemsKeysOriginalCorrectTextsAndAnchorsPreserved": true,
+        "noNewQuestionIds": true,
+        "originalClinicalScopeRetained": true,
+        "unrelatedDraftsPreserved": true
       }
     },
     {

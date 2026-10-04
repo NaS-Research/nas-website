@@ -122,5 +122,26 @@ const sourceReviewedDeliveryQuestions = {
     "rationale": "Prescribed oral dosing does not prove reliable delivery. Formulation, food, gastric pH and tube-feed timing can change whether the administration plan protects exposure."
   }
 };
-export const systemicAntifungalFoundationsQuestionBank = [...generated, ...cases].map((question) => sourceReviewedDeliveryQuestions[question.id] ? { ...question, ...sourceReviewedDeliveryQuestions[question.id] } : question);
+const priorExposureReviewQuestionBank = [...generated, ...cases].map((question) => sourceReviewedDeliveryQuestions[question.id] ? { ...question, ...sourceReviewedDeliveryQuestions[question.id] } : question);
+const sourceReviewedExposureQuestions = {
+  "antifungal-foundations-125": {
+    "choices": [
+      "Food, gastric pH, mucositis, vomiting, feeding tubes, swallowing, and adherence can determine oral antifungal exposure",
+      "Once an oral dose is prescribed, food and gastric pH cannot affect systemic exposure",
+      "Changing to any suspension guarantees reliable delivery despite vomiting or feeding-tube problems",
+      "All oral antifungal products can be crushed and use the same meal instructions"
+    ],
+    "rationale": "Reliable oral therapy requires the exact product, actual intake and administration to be checked. Conventional posaconazole suspension depends on meal conditions and can have reduced exposure with esomeprazole or cimetidine; delayed-release tablets must be swallowed whole and may be taken with or without food. Severe diarrhea or vomiting requires breakthrough monitoring, and a specific NG-tube study found lower suspension exposure. Mucositis, nausea, swallowing, access and adherence help assess whether the intended dose and nutrition can actually be delivered; they do not establish one uniform pharmacokinetic effect. A prescription or liquid formulation alone does not prove reliable absorption, and crushing or transferring meal rules across products is unsafe."
+  },
+  "antifungal-foundations-127": {
+    "choices": [
+      "Assess formulation, meals, acid suppression, tube feeds, mucositis, nausea, access, and teach back",
+      "Confirm only the ingredient name and assume meals, pH medicines and delivery devices are interchangeable",
+      "Ignore mucositis, nausea and access because they cannot interfere with completing an oral plan",
+      "Accept a written prescription as proof of correct administration without checking what the patient or caregiver will do"
+    ],
+    "rationale": "Review the formulation, meal conditions, acid-suppressing medicines and actual delivery route, including tube feeds, and assess mucositis, nausea, swallowing, access and adherence as barriers to completing the plan. Use teach-back to check understanding of the exact product and its instructions, including permitted manipulation and the proper measuring device. This is an educational way to check the labeled administration plan, not a claim that FDA mandates teach-back or that it guarantees absorption. NOXAFIL labeling distinguishes whole tablets, conventional suspension meal and spoon instructions, and PowderMix kit-specific preparation. Ingredient-only review, omission of intake barriers, and assuming a written order proves administration all miss that assessment."
+  }
+};
+export const systemicAntifungalFoundationsQuestionBank = priorExposureReviewQuestionBank.map((question) => sourceReviewedExposureQuestions[question.id] ? { ...question, ...sourceReviewedExposureQuestions[question.id] } : question);
 if (systemicAntifungalFoundationsQuestionBank.length < 100) throw new Error(`Systemic antifungal foundations bank must contain at least 100 questions, found ${systemicAntifungalFoundationsQuestionBank.length}.`);

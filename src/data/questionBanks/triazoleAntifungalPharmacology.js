@@ -402,9 +402,66 @@ const itraconazoleFormulationRepairs = {
   }
 };
 
-export const triazoleAntifungalPharmacologyQuestionBank = posaconazoleReviewedTriazoleQuestionBank.map((question) => {
+const priorExposureReviewQuestionBank = posaconazoleReviewedTriazoleQuestionBank.map((question) => {
   const repair = itraconazoleFormulationRepairs[question.id];
   return repair ? { ...question, ...repair } : question;
 });
 
+const sourceReviewedExposureQuestions = {
+  "triazole-pharmacology-093": {
+    "choices": [
+      "Posaconazole can cause hypertension and hypokalemia through apparent mineralocorticoid excess",
+      "Pseudoaldosteronism requires elevated aldosterone and cannot occur with suppressed renin and aldosterone",
+      "Posaconazole-related mineralocorticoid excess raises potassium rather than lowering it",
+      "New hypertension during posaconazole excludes a drug-related cause if the patient already had hypertension"
+    ],
+    "rationale": "The current NOXAFIL warning identifies new or worsening hypertension with hypokalemia and reports low renin and aldosterone with elevated 11-deoxycortisol. Thus high aldosterone is not required, potassium may fall, and prior hypertension does not exclude worsening from a drug-associated syndrome. Postmarketing reports do not establish its frequency or prove causation in every patient."
+  },
+  "triazole-pharmacology-094": {
+    "choices": [
+      "Recognize the pattern, review exposure, and manage the drug and electrolyte consequences",
+      "Replace potassium alone and ignore the new blood-pressure pattern and posaconazole exposure",
+      "Increase posaconazole whenever hypokalemia develops because the pattern proves underexposure",
+      "Wait for every specialized hormone result before monitoring blood pressure or correcting potassium"
+    ],
+    "rationale": "Recognize the paired blood-pressure and potassium change, review the exact product, dose, exposure and competing causes, and manage the clinical consequences. The label calls for blood-pressure and potassium monitoring; options include discontinuation, an appropriate alternative antifungal, or an aldosterone-receptor antagonist. The FDA 2021 review links reported cases with supratherapeutic exposure, not proven underexposure. Potassium replacement alone does not resolve the whole assessment, and immediate monitoring and correction need not await a universal hormone panel. No concentration cutoff or fixed treatment sequence is established here."
+  },
+  "triazole-pharmacology-095": {
+    "choices": [
+      "Assess blood pressure, potassium, bicarbonate, renin, aldosterone, posaconazole concentration, and interacting causes",
+      "Measure blood pressure only because potassium and the acid-base pattern are unrelated to this syndrome",
+      "Interpret one drug concentration as definitive proof and omit competing medicines or causes",
+      "Require elevated renin and aldosterone before considering posaconazole-associated pseudoaldosteronism"
+    ],
+    "rationale": "Assess blood pressure and potassium first, then use bicarbonate to characterize possible metabolic alkalosis and interpret renin, aldosterone, drug exposure and competing causes in clinical context. The current label reports low renin and aldosterone with elevated 11-deoxycortisol; the FDA 2021 review describes alkalosis and reports associated with supratherapeutic posaconazole levels. Blood pressure alone misses the electrolyte pattern. One concentration cannot prove causation, and high renin or aldosterone is not required. This is a contextual assessment, not a mandatory fixed testing panel or a universal drug-level threshold."
+  },
+  "triazole-pharmacology-096": {
+    "choices": [
+      "Attributing the entire pattern to essential hypertension",
+      "Checking the potassium and bicarbonate pattern alongside new or worsening hypertension",
+      "Reviewing posaconazole exposure and competing causes before assigning causation",
+      "Interpreting renin and aldosterone in context rather than requiring them to be elevated"
+    ],
+    "rationale": "Essential hypertension alone should not explain away new or worsening hypertension paired with hypokalemia and possible metabolic alkalosis during posaconazole use. Reviewing electrolytes, exposure, hormones and competing causes helps evaluate the drug-safety signal; these are appropriate actions, not the hazard. Prior hypertension or concomitant steroids can complicate attribution, and temporal association alone does not establish causation."
+  },
+  "triazole-pharmacology-170": {
+    "choices": [
+      "Posaconazole-associated pseudoaldosteronism",
+      "Essential hypertension alone, with no need to explain potassium loss or alkalosis",
+      "Posaconazole underexposure established solely by the hypertension and electrolyte pattern",
+      "Aldosterone excess that is excluded unless both renin and aldosterone are elevated"
+    ],
+    "rationale": "This combination should prompt evaluation for posaconazole-associated pseudoaldosteronism. The FDA 2021 clinical review describes hypertension, hypokalemia and metabolic alkalosis, while the current label reports new or worsening hypertension, hypokalemia, low renin and aldosterone, and elevated 11-deoxycortisol. Essential hypertension alone is not an adequate explanation for the complete pattern; the pattern does not prove underexposure, and elevated renin or aldosterone is not required. Review drug exposure and competing causes rather than treating the triad as definitive proof."
+  },
+  "triazole-pharmacology-175": {
+    "choices": [
+      "Verify formulation, dose, food, acid suppression, adherence, concentration, organism, resistance, site, and immune status",
+      "Assume resistance only",
+      "Continue unchanged without diagnostics",
+      "Treat a screening result alone"
+    ],
+    "rationale": "Audit the full delivery and disease context rather than assuming resistance. Conventional posaconazole suspension has product-specific dosing and meal requirements, and acid suppression, poor intake, severe diarrhea or vomiting, administration problems and missed doses can undermine the plan. Review concentration in relation to the actual product and dose history; no universal target is supplied here. Establish organism and susceptibility, infected site and immune status with the clinical, radiologic and mycologic evidence. The book calls for tailoring to culture and susceptibility, and the label describes high-risk prophylaxis populations and diagnosis using those evidence domains. Neither a screening result alone nor unchanged prophylaxis without diagnostic review addresses the problem. The label's oral Candida resistance observations cannot establish mold resistance in this patient, and a composite trial failure endpoint is not itself proof of breakthrough infection or resistance."
+  }
+};
+export const triazoleAntifungalPharmacologyQuestionBank = priorExposureReviewQuestionBank.map((question) => sourceReviewedExposureQuestions[question.id] ? { ...question, ...sourceReviewedExposureQuestions[question.id] } : question);
 if(triazoleAntifungalPharmacologyQuestionBank.length<100)throw new Error(`Triazole pharmacology bank must contain at least 100 questions, found ${triazoleAntifungalPharmacologyQuestionBank.length}.`);
