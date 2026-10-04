@@ -11571,9 +11571,10 @@
           "verifiedSectionHeadings": [
             "Map every cation source",
             "Do not improvise tube delivery",
-            "Teach a complete sequence"
+            "Teach a complete sequence",
+            "Separate chelation from equipment adherence"
           ],
-          "latestScopedEvidence": "enteral-nutrition-broader-ddi-tetracycline-review.json",
+          "latestScopedEvidence": "enteral-nutrition-broader-tetracycline-compatibility-review.json",
           "embeddedCheckVerified": true
         },
         {
@@ -11600,7 +11601,8 @@
       "questions": 132,
       "status": "reviewing",
       "evidence": [
-        "enteral-nutrition-broader-ddi-tetracycline-review.json"
+        "enteral-nutrition-broader-ddi-tetracycline-review.json",
+        "enteral-nutrition-broader-tetracycline-compatibility-review.json"
       ],
       "latestEnteralDependencyReview": {
         "evidence": "enteral-nutrition-broader-ddi-tetracycline-review.json",
@@ -11615,19 +11617,45 @@
           "tetracycline-pharmacology-064",
           "tetracycline-pharmacology-070",
           "tetracycline-pharmacology-071",
-          "tetracycline-pharmacology-072"
+          "tetracycline-pharmacology-072",
+          "tetracycline-pharmacology-069"
         ],
         "verifiedBodyHeadings": [
           "Release design matters",
           "Map every cation source",
           "Do not improvise tube delivery",
-          "Teach a complete sequence"
+          "Teach a complete sequence",
+          "Separate chelation from equipment adherence"
         ],
         "verifiedEmbeddedCheckLessons": [
           "pk-dosing",
           "administration"
         ],
-        "wholeModuleVerified": false
+        "wholeModuleVerified": false,
+        "compatibilityContinuationEvidence": "enteral-nutrition-broader-tetracycline-compatibility-review.json"
+      },
+      "latestTetracyclineCompatibilityReview": {
+        "evidence": "enteral-nutrition-broader-tetracycline-compatibility-review.json",
+        "sourceVerifiedBankIdsThisUnit": [
+          "tetracycline-pharmacology-069"
+        ],
+        "newFullQuestionsVerified": 1,
+        "sharedFeedingChoicesVerified": [
+          "tetracycline-pharmacology-017",
+          "tetracycline-pharmacology-041",
+          "tetracycline-pharmacology-121"
+        ],
+        "sharedFullQuestionsVerified": false,
+        "newOriginalBodiesVerified": 1,
+        "newBodyHeading": "Separate chelation from equipment adherence",
+        "parentBank": 132,
+        "parentBodies": 41,
+        "parentReferences": 9,
+        "newReferences": 2,
+        "cumulativeObjectsChanged": 0,
+        "wholeParentModuleVerified": false,
+        "wholeENModuleVerified": false,
+        "wholeChapterVerified": false
       }
     },
     {
