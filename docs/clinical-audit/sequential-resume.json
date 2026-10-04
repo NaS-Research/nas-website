@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-04T22:17:25.012611+00:00",
+  "updated": "2026-10-04T22:18:28.238076+00:00",
   "status": "working",
   "sourcePolicy": {
     "educational": "Supplied RxPrep 2023 book remains primary; explicit user approval on 2026-10-01 authorizes the existing official ASPEN, USP, FDA and CDC references for remaining PN clinical and safety claims. Explicit human approval on 2026-10-02 authorizes primary neonatal and pediatric renal nutrition guidelines for the retained pediatric PN water-loss, GIR/brain, CKRT/catabolism/wound protein claims, and primary ASPEN/SCCM enteral clinical guidance plus FDA guidance/product labeling for the unfinished EN audit. Direct human approval on2026-10-04 authorizes the National Academies2005Water reference for EN031 and the retained renal-solute concept only.",
@@ -105,8 +105,8 @@
     "branch": "audit/rxprep-content-2026-09-24",
     "baseCommit": "c791b3db83e5ea1ba766fc898e739b0acacc655f",
     "remoteVerifiedAtStart": true,
-    "commit": null,
-    "push": "pending",
+    "commit": "dd8077bf8c115ca469b787a56ea434370d9857d0",
+    "push": "verified",
     "production": "not verified",
     "receipt": "enteral-nutrition-broader-doac-delivery-release.json",
     "contentCommits": [
@@ -174,13 +174,14 @@
       "6771d8bc96b3337beb7b910222c5022e408d1c1a",
       "2956c5643a647e470e6a08b784792d9a13b77cc5",
       "f642e4597d5f86c29c9401924f129c82dff983f3",
-      "7602162ecbe081c753b7da128df0bfbe72af291a"
+      "7602162ecbe081c753b7da128df0bfbe72af291a",
+      "dd8077bf8c115ca469b787a56ea434370d9857d0"
     ],
     "previousVerifiedContentCommit": "7602162ecbe081c753b7da128df0bfbe72af291a",
     "baseReceipt": "2c43caec116bf9d0386648a017f2124771f920aa",
-    "remoteHashObserved": null,
-    "exactRemoteObservedByTool": false,
-    "remoteVerifiedAt": null,
+    "remoteHashObserved": "dd8077bf8c115ca469b787a56ea434370d9857d0",
+    "exactRemoteObservedByTool": true,
+    "remoteVerifiedAt": "2026-10-04T22:18:28.238076+00:00",
     "mainMerge": "not performed"
   },
   "openIssues": [
@@ -5202,6 +5203,17 @@
     "wholeParentModuleVerified": false,
     "wholeENModuleVerified": false,
     "wholeChapterVerified": false,
-    "workingDraftPreservedUnreleased": true
+    "workingDraftPreservedUnreleased": true,
+    "release": {
+      "branch": "audit/rxprep-content-2026-09-24",
+      "commit": "dd8077bf8c115ca469b787a56ea434370d9857d0",
+      "push": "verified",
+      "receipt": "enteral-nutrition-broader-doac-delivery-release.json",
+      "mainMerge": "not performed",
+      "production": "not verified",
+      "remoteHashObserved": "dd8077bf8c115ca469b787a56ea434370d9857d0",
+      "exactRemoteObservedByTool": true,
+      "remoteVerifiedAt": "2026-10-04T22:18:28.238076+00:00"
+    }
   }
 }
