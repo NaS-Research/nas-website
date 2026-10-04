@@ -1,0 +1,237 @@
+{
+  "updated": "2026-10-04T22:16:34.233159+00:00",
+  "unit": "enteral-nutrition:broader-doac-delivery-body",
+  "status": "verified logical unit; whole module and chapters reviewing",
+  "baseCommit": "c791b3db83e5ea1ba766fc898e739b0acacc655f",
+  "sourceAuthorization": {
+    "status": "authorized primary review in progress",
+    "requestedScope": "Primary ASPEN/SCCM EN clinical guidance and FDA guidance/product labeling",
+    "authorized": true,
+    "sourcesOpened": true,
+    "renewedRequestDate": "2026-10-01",
+    "approvedAt": "2026-10-02T13:29:07.160093+00:00",
+    "approvalText": "I approve all. continue working",
+    "evidence": "enteral-nutrition-medication-delivery-review.json",
+    "remainingSourceReviewPending": true
+  },
+  "sourceReview": {
+    "continuationEvidence": "enteral-nutrition-broader-doac-label-review.json",
+    "primaryBook": {
+      "identity": "Supplied private PDF; cover verified RxPrep2023",
+      "completeRelevantPagesReadAndRendered": [
+        {
+          "pdf": 95,
+          "printed": 87
+        },
+        {
+          "pdf": 107,
+          "printed": 99
+        },
+        {
+          "pdf": 170,
+          "printed": 162
+        },
+        {
+          "pdf": 515,
+          "printed": 507
+        }
+      ],
+      "limits": "Only relevant complete page scopes reviewed; oral-formulation and route feasibility claims applied without transferring adjacent drug-specific instructions. No post-bariatric DOAC outcome or dosing protocol adopted."
+    },
+    "FDAProducts": [
+      {
+        "name": "Xarelto tablets and oral suspension",
+        "revision": "March2026",
+        "referenceID": "5768784",
+        "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/022406s045lbl.pdf",
+        "pdfPages": 92,
+        "pdfSha256": "11d34d725fb588932371cc651f0f055576b6dfc9e1cf4ad24aeb32fc1e0b90e3",
+        "completeAdoptedScopes": [
+          "1.4 Recurrence reduction,PDF4",
+          "2.1 entire adult dosing Table1 with all footnotes,PDF6",
+          "2.6 entire Administration Options,PDF11-12",
+          "12.3 entire Absorption subsection,PDF38-39"
+        ],
+        "originalPagesActuallyViewed": [
+          1,
+          4,
+          6,
+          11,
+          12,
+          38,
+          39
+        ],
+        "limits": "No complete92-page audit; no adjacent renal PK Table18 or other indications/pediatric dosing adopted. Numeric50mL preparation is product-specific adult tablet administration, not a general flush or hydration prescription."
+      },
+      {
+        "name": "Pradaxa capsules",
+        "revision": "June2025;FDA-hosted2026 file",
+        "referenceID": "5647188",
+        "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/022512Orig1s049lbl.pdf",
+        "pdfPages": 31,
+        "pdfSha256": "d5043e4a405ed3ecbac3cc2aeaeb22f15a13699b8eee1bfe6dcfac6e9dc70144",
+        "completeAdoptedScopes": [
+          "2.5 Administration,PDF5",
+          "12.3 Absorption,PDF17",
+          "16 entire Storage and Handling,PDF25",
+          "17 Instructions for Patients and Bleeding/GI-adverse counseling scopes,PDF25-26",
+          "Medication Guide How should I take and capsule-storage sections,PDF29-30",
+          "6.1 complete GI-adverse paragraph,PDF9;12.1 mechanism context,PDF16"
+        ],
+        "originalPagesActuallyViewed": [
+          1,
+          5,
+          9,
+          16,
+          17,
+          25,
+          26,
+          29,
+          30
+        ],
+        "limits": "No whole31-page label audit. The75percent shell-removal increase is a single-dose relative-bioavailability study; it is not an automatic dose-conversion factor, a pediatric formulation-equivalence rule, or a measured clinical pillbox-storage effect. Adjacent figures1/2 and Table10 viewed as context; no numerical dosing/assay conclusions from them adopted."
+      }
+    ],
+    "sourceAssetsOutsideGit": true,
+    "scopeReuse": "Relevant complete source scopes and original source pages reviewed in preceding label unit; book95/107 source text reread for this body. No new external source adopted."
+  },
+  "bodyReview": {
+    "heading": "Account for delivery and absorption",
+    "before": "Food requirements, bariatric or major gastrointestinal surgery, feeding tubes, dysphagia, vomiting, malabsorption, and dosage-form manipulation can change exposure or feasibility. Select a product and route with evidence for the patient's anatomy and administration pathway.",
+    "after": "Check whether the patient can swallow and retain the prescribed oral dose, then verify the exact product and administration pathway. For rivaroxaban tablets delivered through an NG or gastric feeding tube, keep delivery within the stomach and immediately follow a crushed 15 or 20 mg dose with enteral feeding. Dabigatran capsules must remain intact; do not open them to prepare a feeding-tube dose. Vomiting or an unsuitable gastrointestinal route can make oral delivery impractical. Reassess the product and route rather than assuming that crushing a dosage form will provide reliable treatment.",
+    "wholeBodySourceVerified": true,
+    "claimReview": [
+      {
+        "clause": "Assess swallowing and whether the oral dose can be retained",
+        "source": "BookPDF95/printed87 formulation rationale: dysphagia and vomiting; general feasibility, not a DOAC bioavailability measurement."
+      },
+      {
+        "clause": "NG/gastric rivaroxaban tablet delivery stays gastric; crushed15/20mg followed immediately by enteral feeding",
+        "source": "FDA Xarelto complete2.6 AdministrationOptionsPDF11-12 and12.3 AbsorptionPDF38-39; product-specific adult tablet scope."
+      },
+      {
+        "clause": "Dabigatran capsule intact; do not open for feeding-tube preparation",
+        "source": "BookPDF515/printed507 and FDA Pradaxa2.5 AdministrationPDF5 and12.3 AbsorptionPDF17."
+      },
+      {
+        "clause": "Vomiting/unsuitable GI route may make oral delivery impractical; reassess product and route",
+        "source": "BookPDF95/printed87 andPDF107/printed99 complete route-feasibility context; reassessment does not prescribe a replacement anticoagulant or conversion dose."
+      }
+    ],
+    "removedUnsupportedClaim": "The prior grouped bariatric or major GI surgery/exposure clause implied a DOAC-specific consequence beyond these source scopes. It is removed from this body; no surgery-specific adjustment or outcome is substituted.",
+    "originalComplexityPreserved": "Retains individualized swallowing, dose retention, tube site, formulation and delivery review; introduces concrete previously verified product rules rather than a generic easy statement."
+  },
+  "coverage": {
+    "evidence": "enteral-nutrition-broader-doac-delivery-review.json",
+    "wholeBodiesVerifiedThisUnit": 1,
+    "verifiedBodyHeading": "Account for delivery and absorption",
+    "combinedDOACFeedingBodiesVerified": 4,
+    "combinedDOACFeedingBankVerified": 12,
+    "newFullQuestionsVerified": 0,
+    "moduleBankUnchanged": 116,
+    "cumulativeObjectsUnchanged": 1180,
+    "embeddedChecksUnchanged": 6,
+    "parentBodies": 25,
+    "allOtherBodiesUnchanged": 24,
+    "referencesUnchanged": 11,
+    "feedingDeliveryBodyPending": false,
+    "wholeParentModuleVerified": false,
+    "wholeENModuleVerified": false,
+    "wholeChapterVerified": false,
+    "workingDraftPreservedUnreleased": true
+  },
+  "currentObjectReconciliation": {
+    "oneBodyOnlyChanged": true,
+    "all116FullQuestionObjectsUnchanged": true,
+    "all1180FullCumulativeObjectsUnchanged": true,
+    "all24OtherBodyObjectsUnchanged": true,
+    "allSixEmbeddedCheckObjectsUnchanged": true,
+    "allMetadataFigureIdentifiersAndReferencesUnchanged": true,
+    "wholeMetadataFiguresNotClinicallyClosedByDOM": true
+  },
+  "validation": {
+    "structure": {
+      "modules": 1,
+      "questions": 116,
+      "hardErrors": [],
+      "sourceGaps": [],
+      "sizeAdvisories": [],
+      "thinLessons": [],
+      "weakestModules": [
+        {
+          "module": "direct-oral-anticoagulants",
+          "lessons": 6,
+          "questions": 116,
+          "minimumLessonCoverage": 16
+        }
+      ]
+    },
+    "productionBuild": {
+      "status": "passed",
+      "exitCode": 0,
+      "pages": 567,
+      "isolatedBase": "c791b3db83e5ea1ba766fc898e739b0acacc655f"
+    },
+    "browser": {
+      "status": "passed",
+      "results": [
+        {
+          "width": 1440,
+          "bodies": 25,
+          "exactMetadata": true,
+          "references": 11,
+          "noHorizontalOverflow": true,
+          "unauthenticated": true
+        },
+        {
+          "width": 390,
+          "bodies": 25,
+          "exactMetadata": true,
+          "references": 11,
+          "noHorizontalOverflow": true,
+          "unauthenticated": true
+        }
+      ],
+      "errors": [],
+      "captures": [
+        "body-doac-selection-interactions-and-implementation-Account-1440.png",
+        "body-doac-selection-interactions-and-implementation-Account-390.png"
+      ]
+    },
+    "visualInspection": {
+      "allCapturesActuallyViewed": true,
+      "pages": [
+        {
+          "width": 1440,
+          "result": "Readable complete revised body; no clipping/overlap."
+        },
+        {
+          "width": 390,
+          "result": "Readable complete revised body; no clipping/overlap."
+        }
+      ],
+      "zeroConsoleAndPageErrors": true,
+      "320pxOverflowPassed": true
+    },
+    "toolingCorrection": "Initial Python tarfile.extractall filter argument unsupported; extraction retried from known Git archive after checking safe member paths. Failed dependent checks were rerun successfully; no repository product edit occurred. First object check used lessons rather than submodules; corrected traversal proved exact object preservation.",
+    "localDrafts": "Raw working module/bank remain unchanged; reviewed candidate alone staged. Ledger prior working draft fields preserved, unrelated entries excluded."
+  },
+  "remainingReview": {
+    "nextAction": "Reconcile the retained lefamulin oral-administration inventory against already approved FDA product labeling:17 original oral questions,four bodies andone embedded check currently pending. Preserve full original assessment scope, stable IDs/keys/anchors and all unrelated working drafts. Reconcile remaining broader feeding dependencies under their parent modules before whole EN closure. Chapter1entry15/Chapter11 remain reviewing.",
+    "broaderFeedingQuestionsVerified": 154,
+    "incidentalNonfeedingQuestionsRemainPending": [
+      "direct-oral-anticoagulants-007",
+      "direct-oral-anticoagulants-099"
+    ],
+    "wholeGoalComplete": false
+  },
+  "release": {
+    "branch": "audit/rxprep-content-2026-09-24",
+    "commit": null,
+    "push": "pending",
+    "receipt": "enteral-nutrition-broader-doac-delivery-release.json",
+    "mainMerge": "not performed",
+    "production": "not verified"
+  },
+  "wholeGoalComplete": false
+}
