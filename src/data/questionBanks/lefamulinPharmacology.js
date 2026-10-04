@@ -81,4 +81,157 @@ const cases = [
   ["164", "integration", "Which plan best represents complete lefamulin use?", ["Confirmed adult nonsevere CABP with a reason standard options are unsuitable, exact route and regimen, QT and CYP review, hepatic and reproductive assessment, response monitoring, transition, and exit criteria", "Lefamulin for any cough", "Oral therapy with meals and no interaction review", "A rapid IV push for severe Pseudomonas pneumonia"], "A complete plan aligns syndrome, evidence position, exposure, safety, response, and exit."],
 ].map(([id, lesson, question, choices, rationale]) => ({ id: `lefamulin-pharmacology-case-${id}`, lesson, question, choices, answer: 0, rationale, reviewHref: `#${lesson}` }));
 
-export const lefamulinPharmacologyQuestionBank = [...generated, ...cases];
+const oralAdministrationRepairs = {
+  "lefamulin-pharmacology-073": {
+    "choices": [
+      "Lefamulin tablets are taken at least one hour before a meal or two hours after a meal",
+      "The meal interval is reversed: take the tablet two hours before or one hour after a meal",
+      "Take the tablet with a meal whenever nausea occurs",
+      "Only the morning dose requires a fasting window"
+    ],
+    "rationale": "Each oral dose uses the labeled interval of at least one hour before or two hours after a meal. Reversing those intervals, routinely taking the dose with food, or exempting the evening dose does not follow the label. The single-dose high-fat, high-calorie meal study found lower peak concentration and overall exposure; it does not measure a universal effect for every meal or enteral-feed regimen."
+  },
+  "lefamulin-pharmacology-074": {
+    "choices": [
+      "Build dose times around meals before discharge",
+      "Choose convenient dose times first and ask the patient to fit meals around them later",
+      "Give both daily tablets at breakfast to avoid two fasting windows",
+      "Recommend taking every tablet with food to manage nausea"
+    ],
+    "rationale": "Plan the twice-daily dose times and labeled meal intervals together before discharge. Deferring that planning can leave an impractical schedule, combining both tablets is not every-12-hour dosing, and taking each dose with food conflicts with the oral instructions. Nausea warrants assessment without automatically replacing the fasting rule."
+  },
+  "lefamulin-pharmacology-075": {
+    "choices": [
+      "Assess meal schedule, enteral feeds, adherence, nausea, dose times, and caregiver support",
+      "Check the clock times only; meal and feeding schedules cannot affect administration feasibility",
+      "Review meals but assume any swallowing or tube-delivery problem is solved by crushing",
+      "Keep the nutrition schedule unchanged and instruct every dose to be taken with the next meal"
+    ],
+    "rationale": "Assess the actual meals or feeds, dose times, adherence barriers, nausea and available support. Clock times alone do not establish fasting feasibility, crushing the tablet is prohibited, and with-meal dosing conflicts with the labeled interval. Reviewing enteral feeds is a feasibility assessment; the meal study does not establish a tested continuous-feed interruption or crushed-tube protocol."
+  },
+  "lefamulin-pharmacology-076": {
+    "choices": [
+      "Writing take with food to reduce nausea",
+      "Writing take at least one hour before a meal for each prescribed oral dose",
+      "Writing take at least two hours after a meal for each prescribed oral dose",
+      "Arranging prescribed every-12-hour doses around feasible meal intervals"
+    ],
+    "rationale": "The error is substituting routine with-food counseling for the product-specific fasting instructions. At least one hour before a meal, at least two hours after a meal, and a feasible every-12-hour schedule all follow the oral administration requirements. Assess nausea without automatically changing those requirements."
+  },
+  "lefamulin-pharmacology-077": {
+    "choices": [
+      "The 600 mg tablet is swallowed whole with 6 to 8 ounces of water and is not crushed or divided",
+      "The tablet can be crushed if the full 600 mg is recovered",
+      "Dividing the tablet is permitted even though crushing is prohibited",
+      "The whole-tablet instruction replaces the need for a fasting window"
+    ],
+    "rationale": "The labeled 600 mg tablet is swallowed whole with 6 to 8 ounces of water and is neither crushed nor divided. Recovering the nominal milligram amount does not authorize crushing, dividing is also prohibited, and an intact tablet still requires the labeled meal interval."
+  },
+  "lefamulin-pharmacology-078": {
+    "choices": [
+      "Confirm swallowing ability before choosing oral therapy",
+      "Select oral tablets first and solve dysphagia by crushing later",
+      "Confirm total milligrams but omit the ability to swallow an intact tablet",
+      "Substitute half-tablets whenever the patient reports swallowing difficulty"
+    ],
+    "rationale": "Check that the patient can swallow the intact tablet with the specified water before selecting the oral plan. Choosing first and crushing later, checking milligrams alone, or dividing tablets does not meet the labeled technique. A swallowing problem requires a feasible alternative plan, not an assumed manipulation method."
+  },
+  "lefamulin-pharmacology-079": {
+    "choices": [
+      "Assess dysphagia, feeding tube, water access, tablet manipulation, aspiration risk, and alternatives",
+      "Assess tube access but assume the oral tablet is crushable for every device",
+      "Assess water access alone without checking whole-tablet swallowing",
+      "Assess total daily milligrams and treat divided tablets as equivalent administration"
+    ],
+    "rationale": "Assess swallowing, aspiration concerns, tube dependence, water availability, proposed manipulation and alternatives. The label requires an intact tablet with 6 to 8 ounces of water and prohibits crushing or dividing. Tube access, water access or matching total milligrams alone does not establish a feasible labeled oral technique; no crushed-tablet tube method is established here."
+  },
+  "lefamulin-pharmacology-080": {
+    "choices": [
+      "Crushing the tablet for a feeding tube",
+      "Swallowing the tablet intact with 6 to 8 ounces of water",
+      "Reviewing another feasible treatment plan when the patient cannot swallow the tablet",
+      "Keeping the intact tablet dose within the labeled fasting window"
+    ],
+    "rationale": "Crushing the tablet for a feeding tube violates the explicit tablet instructions. Intact swallowing with the specified water, reassessing the plan when that is impossible, and observing the meal interval are appropriate actions. The label does not provide a workaround that makes crushing acceptable."
+  },
+  "lefamulin-pharmacology-081": {
+    "choices": [
+      "A missed dose may be taken only when at least eight hours remain before the next scheduled dose",
+      "A missed dose should be taken whenever at least six hours remain before the next dose",
+      "A missed dose is taken only when at least twelve hours remain before the next dose",
+      "A missed dose is added to the next scheduled tablet"
+    ],
+    "rationale": "Take a missed dose as soon as possible if at least eight hours remain before the next scheduled dose. Six hours is below the cutoff; twelve hours is not the required threshold. When fewer than eight hours remain, skip the missed dose and resume the usual schedule rather than adding it to the next tablet. This is the labeled scheduling rule, not a measured concentration calculation."
+  },
+  "lefamulin-pharmacology-082": {
+    "choices": [
+      "Skip the missed dose when fewer than eight hours remain and resume the schedule",
+      "Take the missed dose when six hours remain and postpone the next tablet by two hours",
+      "Double the next scheduled dose to replace the omitted tablet",
+      "Restart the entire five-day course whenever a tablet is missed"
+    ],
+    "rationale": "When fewer than eight hours remain, the label directs skipping the missed dose and resuming at the next scheduled dose. Taking it with only six hours left, doubling the next dose, or automatically restarting the course is not that instruction. Questions about treatment adequacy require reassessment rather than an invented catch-up regimen."
+  },
+  "lefamulin-pharmacology-083": {
+    "choices": [
+      "Assess current time, scheduled next dose, meal window, symptoms, and total exposure",
+      "Count tablets remaining without checking the next scheduled dose time",
+      "Use the time since the previous dose alone and ignore the next scheduled dose",
+      "Check the meal interval but ignore whether the next dose is fewer than eight hours away"
+    ],
+    "rationale": "Establish the current time, next scheduled dose, meal interval and doses already taken, while assessing symptoms that may need follow-up. Tablet count, time since the previous dose or meal timing alone cannot determine whether at least eight hours remain. Total exposure here means reconciling actual doses; it does not require a plasma concentration estimate or an automatic dose conversion."
+  },
+  "lefamulin-pharmacology-084": {
+    "choices": [
+      "Doubling the next dose",
+      "Skipping the missed dose when fewer than eight hours remain",
+      "Taking an eligible missed dose promptly when at least eight hours remain",
+      "Resuming the next scheduled dose after an ineligible missed dose is skipped"
+    ],
+    "rationale": "Doubling the next dose creates a catch-up regimen that the label does not recommend. The supported actions are to take an eligible missed dose promptly when at least eight hours remain, or otherwise skip it and resume the next scheduled dose. Do not substitute dose doubling for the eight-hour decision."
+  },
+  "lefamulin-pharmacology-085": {
+    "choices": [
+      "Every oral course requires alignment of twice-daily timing, fasting windows, whole-tablet swallowing, and interaction avoidance",
+      "A five-day course makes meal timing unnecessary",
+      "Keeping tablets intact removes the need to review interacting medications",
+      "Once the daily milligram total is correct, both tablets can be taken together"
+    ],
+    "rationale": "The labeled oral course combines every-12-hour timing, fasting intervals, intact-tablet swallowing and medication-interaction review. Five days does not waive meal rules, intact tablets do not neutralize CYP or QT interactions, and matching daily milligrams does not authorize combining the doses. Build a plan the patient can actually follow."
+  },
+  "lefamulin-pharmacology-086": {
+    "choices": [
+      "Test the real daily schedule before prescribing",
+      "Assume a twice-daily prescription is feasible without discussing meals or sleep",
+      "Choose a convenient with-meal schedule before reviewing the fasting requirement",
+      "Delay swallowing and interaction review until the course has already started"
+    ],
+    "rationale": "Test the actual daily schedule before prescribing: every-12-hour doses must fit the meal intervals, intact-tablet technique and medication safety plan. A twice-daily label alone does not prove feasibility. A convenient with-meal schedule conflicts with administration instructions, and swallowing or interaction problems should be addressed before treatment begins."
+  },
+  "lefamulin-pharmacology-087": {
+    "choices": [
+      "Assess work, meals, sleep, other medications, swallowing, cost, access, and follow-up",
+      "Assess the number of tablets only; work and meals cannot affect adherence",
+      "Assess the meal schedule but defer medication and swallowing review",
+      "Assess swallowing alone and assume cost, access and follow-up cannot interrupt the prescribed course"
+    ],
+    "rationale": "Assess the practical ability to obtain and complete the prescribed course as well as the labeled dose schedule, meal intervals, whole-tablet technique and medication interactions. Tablet count, meal timing or swallowing alone leaves other delivery barriers unchecked. Arrange the dose schedule and confirm access and follow-up so the patient can complete the prescribed course."
+  },
+  "lefamulin-pharmacology-088": {
+    "choices": [
+      "Calling a five-day course simple without testing feasibility",
+      "Testing whether every-12-hour doses can fit the actual meal schedule",
+      "Verifying whole-tablet swallowing and access to the prescribed course",
+      "Reviewing interacting medications before the first oral dose"
+    ],
+    "rationale": "A five-day course can still fail operationally if the patient cannot obtain it or follow its administration constraints. Calling it simple without testing feasibility is the hazard. Checking the actual schedule, swallowing and access, and interacting medicines are appropriate planning steps; short duration does not remove those requirements."
+  },
+  "lefamulin-pharmacology-case-158": {
+    "rationale": "Six hours is fewer than the labeled eight-hour cutoff, so skip the missed tablet and resume at the next scheduled time. Taking two tablets, taking the ineligible missed dose with a meal, or stopping the entire prescribed course is not the missed-dose instruction. The label does not call for a doubled dose or an automatic course restart."
+  }
+};
+
+export const lefamulinPharmacologyQuestionBank = [...generated, ...cases].map((question) => {
+  const repair = oralAdministrationRepairs[question.id];
+  return repair ? { ...question, ...repair } : question;
+});

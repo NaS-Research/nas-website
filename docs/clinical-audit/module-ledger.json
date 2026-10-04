@@ -12217,11 +12217,15 @@
         },
         {
           "slug": "oral-administration",
-          "status": "reviewing",
-          "latestScopedEvidence": "enteral-nutrition-broader-lefamulin-source-gap.json",
-          "wholeLessonVerified": false,
-          "sourceClosedBodies": 0,
-          "sourceClosedCheck": false
+          "status": "verified",
+          "latestScopedEvidence": "enteral-nutrition-broader-lefamulin-label-review.json",
+          "wholeLessonVerified": true,
+          "sourceClosedBodies": 4,
+          "sourceClosedCheck": true,
+          "sourceClosedFigure": true,
+          "sourceClosedMetadataStatements": 12,
+          "sourceClosedQuestions": 17,
+          "sourceClosedCumulative": 1
         },
         {
           "slug": "iv-preparation",
@@ -12247,7 +12251,8 @@
       "questions": 168,
       "status": "reviewing",
       "evidence": [
-        "enteral-nutrition-broader-lefamulin-source-gap.json"
+        "enteral-nutrition-broader-lefamulin-source-gap.json",
+        "enteral-nutrition-broader-lefamulin-label-review.json"
       ],
       "broaderEnteralOralSourceGap": {
         "evidence": "enteral-nutrition-broader-lefamulin-source-gap.json",
@@ -12256,7 +12261,52 @@
         "sourceClosedBodies": 0,
         "sourceClosedChecks": 0,
         "wholeModuleVerified": false,
-        "retainedCodeUnchanged": true
+        "retainedCodeUnchanged": true,
+        "continuationEvidence": "enteral-nutrition-broader-lefamulin-label-review.json",
+        "currentOriginalOralQuestionsPending": 0
+      },
+      "latestLefamulinOralLabelReview": {
+        "evidence": "enteral-nutrition-broader-lefamulin-label-review.json",
+        "moduleBank": 168,
+        "sourceVerifiedBankIds": [
+          "lefamulin-pharmacology-073",
+          "lefamulin-pharmacology-074",
+          "lefamulin-pharmacology-075",
+          "lefamulin-pharmacology-076",
+          "lefamulin-pharmacology-077",
+          "lefamulin-pharmacology-078",
+          "lefamulin-pharmacology-079",
+          "lefamulin-pharmacology-080",
+          "lefamulin-pharmacology-081",
+          "lefamulin-pharmacology-082",
+          "lefamulin-pharmacology-083",
+          "lefamulin-pharmacology-084",
+          "lefamulin-pharmacology-085",
+          "lefamulin-pharmacology-086",
+          "lefamulin-pharmacology-087",
+          "lefamulin-pharmacology-088",
+          "lefamulin-pharmacology-case-158"
+        ],
+        "newFullQuestionsVerified": 17,
+        "broaderFeedingBankVerifiedAfter": 171,
+        "wholeBodiesVerified": 4,
+        "wholeEmbeddedChecksVerified": 1,
+        "wholeFiguresVerified": 1,
+        "oralMetadataStatementsVerified": 12,
+        "wholeLessonVerified": "oral-administration",
+        "wholeParentModuleVerified": false,
+        "wholeENModuleVerified": false,
+        "wholeChapterVerified": false,
+        "cumulativeSourceVerifiedIds": [
+          "cumulative-lefamulin-pharmacology-lefamulin-pharmacology-085"
+        ],
+        "otherCumulativeObjectsUnchanged": 1179,
+        "allExisting168IdsStemsKeysCorrectTextsAndAnchorsPreserved": true,
+        "noNewQuestionIds": true,
+        "allOriginal40BodyTextsRetained": true,
+        "otherNineFiguresUnchanged": true,
+        "other36BodiesAndNineChecksUnchanged": true,
+        "workingDraftsPreserved": true
       }
     },
     {

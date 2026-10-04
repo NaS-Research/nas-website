@@ -1,0 +1,2745 @@
+{
+  "updated": "2026-10-04T22:34:58.377378+00:00",
+  "unit": "enteral-nutrition:broader-lefamulin-oral-label-reconciliation",
+  "status": "oral administration lesson verified;whole module andchapters reviewing",
+  "baseCommit": "611a258058b4dc5441ea3df0c23fa6da682957b1",
+  "sourceAuthorization": {
+    "status": "authorized",
+    "scope": "Supplied private RxPrep2023 and previously approved primary FDA product labeling",
+    "approvalText": "I approve all. continue working",
+    "approvedAt": "2026-10-02T13:29:07.160093+00:00",
+    "evidence": "sequential-resume.json pendingEnteralSourceException",
+    "noNewNonFDAClinicalGuidelineOrStudyAdopted": true
+  },
+  "sourceReview": {
+    "primaryBook": {
+      "identity": "NAPLEX2024filename;verified RxPrep2023;1032pages;private",
+      "completeRelevantPagesFreshlyReadAndRendered": [
+        {
+          "pdf": 370,
+          "printed": 362
+        },
+        {
+          "pdf": 375,
+          "printed": 367
+        }
+      ],
+      "reusedCompleteScopes": {
+        "evidence": [
+          "enteral-nutrition-broader-lefamulin-source-gap.json",
+          "enteral-nutrition-broader-doac-label-review.json"
+        ],
+        "pages": [
+          95,
+          107,
+          170
+        ],
+        "limits": "General oral-route/manipulation and feeding-feasibility context; no unrelated product manipulation guidance transferred."
+      },
+      "limits": "Book general antibiotic counseling does not independently establish lefamulin timing,water,duration ormanipulation instructions. Earlier source-gap findings preserved historically."
+    },
+    "currentLabel": {
+      "name": "XENLETA tablets/injection",
+      "issuer": "Meitheal Pharmaceuticals;official NLM DailyMed NDA labeling repository",
+      "revision": "February2026",
+      "DailyMedUpdated": "July22,2026",
+      "labelCode": "LB-859-V1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=eb972ea8-7502-422e-84bb-66cb8e93ca06",
+      "pdfUrl": "https://dailymed.nlm.nih.gov/dailymed/getFile.cfm?setid=eb972ea8-7502-422e-84bb-66cb8e93ca06&type=pdf",
+      "pages": 31,
+      "sha256": "43de7e968e716e18a09baec178482bb621a6514c4c17d3700250dfa24b99f04d",
+      "completeAdoptedScopes": [
+        "2.1 adult dosing/Table1/allfootnotes;PDF4",
+        "2.3 complete Administration includingMissedDose;PDF4-5",
+        "3 tabletstrength/appearance;PDF5",
+        "7.1/7.2/7.3 complete Interactionsections;PDF9-10",
+        "12.3 complete Absorption/EffectofFood;PDF15",
+        "17 Administration/Nausea/Interaction/AntibacterialResistance counseling;PDF22-23"
+      ],
+      "originalPagesActuallyViewed": [
+        1,
+        4,
+        5,
+        9,
+        10,
+        14,
+        15,
+        22,
+        23
+      ],
+      "limits": "No whole31-page audit. Table4 andadjacent numericalQT/PK context viewed,not newly adopted dosing oroutcome estimates. No claimed validated continuous-feed interruption,crushed-tube administration ormissed-dose PK mechanism."
+    },
+    "FDAArchivedLabel": {
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2021/211672s002,211673s002lbl.pdf",
+      "revision": "March2021",
+      "referenceID": "4762766",
+      "pages": 23,
+      "sha256": "e756ff17d6aec6e469381d820f9a84376f5409b624fffb1edda034a53725f20a",
+      "completeRelevantScopesReadAndRendered": [
+        "2.3 Administration/MissedDose PDF3",
+        "12.3 Absorption/EffectofFood PDF14"
+      ],
+      "originalPagesActuallyViewed": [
+        3,
+        14
+      ],
+      "limits": "Archived FDA label expresslymaynotbelatest;used for source comparison,not latest-label assertion. Adopted oral instructions andfood-study facts matched February2026 officialcurrentlabel."
+    },
+    "sourceAssetsOutsideGit": true,
+    "otherExtractedPages": "Book74/381/489 textread as contextual locating material;371-374 onlyextracted this unit. These original pages are not newly claimed rendered orclinicallyclosed in thisunit. Label13 onlyextracted/read,no visualclaim ornew chemistry adoption."
+  },
+  "sourceDiscrepancies": [
+    {
+      "issue": "Book alone lacked full original oral administration rules",
+      "resolution": "Previously approved FDA product-label scope supplies exact administration andqualified food-study support;17 pending oralquestions/fourbodies/check nowclosed."
+    },
+    {
+      "issue": "Old missed-dose rationale claimed the eight-hour rule avoids excessive concentration",
+      "resolution": "No measured missed-dose concentration mechanism established by these labelscopes;replaced with explicit labeled scheduling rule,originalcorrecttexts unchanged."
+    },
+    {
+      "issue": "Figure omitted minimum language and used success-only wording",
+      "resolution": "Meal andmissed-dose boundaries nowstate at least;caption describes scheduling coordination without a guarantee of clinical success."
+    }
+  ],
+  "questionReview": [
+    {
+      "id": "lefamulin-pharmacology-073",
+      "before": {
+        "id": "lefamulin-pharmacology-073",
+        "lesson": "oral-administration",
+        "question": "Which principle best characterizes oral fasting window?",
+        "choices": [
+          "Lefamulin tablets are taken at least one hour before a meal or two hours after a meal",
+          "Each IV dose is infused over 60 minutes and the rate should not be exceeded",
+          "Strong CYP3A or P-gp inhibitors markedly increase oral lefamulin exposure",
+          "Definitive reassessment determines whether the adult still has a supported CABP syndrome, is responding, remains free of an uncovered pathogen or complication, and can safely continue the current route"
+        ],
+        "answer": 0,
+        "rationale": "Food reduces oral exposure and the label requires fasting administration",
+        "reviewHref": "#oral-administration"
+      },
+      "after": {
+        "id": "lefamulin-pharmacology-073",
+        "lesson": "oral-administration",
+        "question": "Which principle best characterizes oral fasting window?",
+        "choices": [
+          "Lefamulin tablets are taken at least one hour before a meal or two hours after a meal",
+          "The meal interval is reversed: take the tablet two hours before or one hour after a meal",
+          "Take the tablet with a meal whenever nausea occurs",
+          "Only the morning dose requires a fasting window"
+        ],
+        "answer": 0,
+        "rationale": "Each oral dose uses the labeled interval of at least one hour before or two hours after a meal. Reversing those intervals, routinely taking the dose with food, or exempting the evening dose does not follow the label. The single-dose high-fat, high-calorie meal study found lower peak concentration and overall exposure; it does not measure a universal effect for every meal or enteral-feed regimen.",
+        "reviewHref": "#oral-administration"
+      },
+      "status": "complete stem/key/all alternatives/rationale source-reconciled",
+      "sourceScopes": "2.3 Administration;12.3 Absorption/Effect of Food;17 Administration/Nausea counseling",
+      "clinicalReview": {
+        "originalIdStemKeyCorrectTextAndAnchorRetained": true,
+        "allAlternativesIndividuallyReviewed": true,
+        "distractors": "Topical administration misconceptions replace unrelated true principles; hazard questions contrast the retained hazard against source-supported actions. Case158 alternatives retained and all addressed.",
+        "rationale": "Full explanation addresses each alternative and original assessment scope. Meal study qualified; tube/feed feasibility is not a validated crushing or continuous-feed protocol. Missed-dose explanation uses the labeled rule without claiming a measured concentration mechanism.",
+        "planningLimits": "Work, meals, sleep, cost, access, caregiver support, aspiration concerns and follow-up are individualized delivery/feasibility assessments; no quantified economic, aspiration or clinical-outcome effect is asserted."
+      }
+    },
+    {
+      "id": "lefamulin-pharmacology-074",
+      "before": {
+        "id": "lefamulin-pharmacology-074",
+        "lesson": "oral-administration",
+        "question": "Which clinical action best applies to oral fasting window?",
+        "choices": [
+          "Build dose times around meals before discharge",
+          "Program the pump and monitor the site and cardiac risk",
+          "Avoid strong inhibitors and monitor closely with moderate inhibitors",
+          "Use updated diagnostics and clinical stability to continue, transition from IV to oral, select another regimen, or complete therapy with an explicit endpoint"
+        ],
+        "answer": 0,
+        "rationale": "Food reduces oral exposure and the label requires fasting administration",
+        "reviewHref": "#oral-administration"
+      },
+      "after": {
+        "id": "lefamulin-pharmacology-074",
+        "lesson": "oral-administration",
+        "question": "Which clinical action best applies to oral fasting window?",
+        "choices": [
+          "Build dose times around meals before discharge",
+          "Choose convenient dose times first and ask the patient to fit meals around them later",
+          "Give both daily tablets at breakfast to avoid two fasting windows",
+          "Recommend taking every tablet with food to manage nausea"
+        ],
+        "answer": 0,
+        "rationale": "Plan the twice-daily dose times and labeled meal intervals together before discharge. Deferring that planning can leave an impractical schedule, combining both tablets is not every-12-hour dosing, and taking each dose with food conflicts with the oral instructions. Nausea warrants assessment without automatically replacing the fasting rule.",
+        "reviewHref": "#oral-administration"
+      },
+      "status": "complete stem/key/all alternatives/rationale source-reconciled",
+      "sourceScopes": "2.3 Administration;12.3 Absorption/Effect of Food;17 Administration/Nausea counseling",
+      "clinicalReview": {
+        "originalIdStemKeyCorrectTextAndAnchorRetained": true,
+        "allAlternativesIndividuallyReviewed": true,
+        "distractors": "Topical administration misconceptions replace unrelated true principles; hazard questions contrast the retained hazard against source-supported actions. Case158 alternatives retained and all addressed.",
+        "rationale": "Full explanation addresses each alternative and original assessment scope. Meal study qualified; tube/feed feasibility is not a validated crushing or continuous-feed protocol. Missed-dose explanation uses the labeled rule without claiming a measured concentration mechanism.",
+        "planningLimits": "Work, meals, sleep, cost, access, caregiver support, aspiration concerns and follow-up are individualized delivery/feasibility assessments; no quantified economic, aspiration or clinical-outcome effect is asserted."
+      }
+    },
+    {
+      "id": "lefamulin-pharmacology-075",
+      "before": {
+        "id": "lefamulin-pharmacology-075",
+        "lesson": "oral-administration",
+        "question": "Which assessment is most appropriate for oral fasting window?",
+        "choices": [
+          "Assess meal schedule, enteral feeds, adherence, nausea, dose times, and caregiver support",
+          "Assess 250 mL volume, 60-minute duration, pump rate, line, QT risks, and infusion reaction",
+          "Assess azoles, macrolides, boosters, calcium-channel blockers, route, QTc, and adverse effects",
+          "Assess temperature, heart rate, respiratory rate, oxygenation, blood pressure, mental status, oral intake, imaging and microbiology, MRSA or Pseudomonas risk, ECG and electrolytes, interacting drugs, hepatic function, fasting feasibility, adverse effects, and doses completed"
+        ],
+        "answer": 0,
+        "rationale": "Food reduces oral exposure and the label requires fasting administration",
+        "reviewHref": "#oral-administration"
+      },
+      "after": {
+        "id": "lefamulin-pharmacology-075",
+        "lesson": "oral-administration",
+        "question": "Which assessment is most appropriate for oral fasting window?",
+        "choices": [
+          "Assess meal schedule, enteral feeds, adherence, nausea, dose times, and caregiver support",
+          "Check the clock times only; meal and feeding schedules cannot affect administration feasibility",
+          "Review meals but assume any swallowing or tube-delivery problem is solved by crushing",
+          "Keep the nutrition schedule unchanged and instruct every dose to be taken with the next meal"
+        ],
+        "answer": 0,
+        "rationale": "Assess the actual meals or feeds, dose times, adherence barriers, nausea and available support. Clock times alone do not establish fasting feasibility, crushing the tablet is prohibited, and with-meal dosing conflicts with the labeled interval. Reviewing enteral feeds is a feasibility assessment; the meal study does not establish a tested continuous-feed interruption or crushed-tube protocol.",
+        "reviewHref": "#oral-administration"
+      },
+      "status": "complete stem/key/all alternatives/rationale source-reconciled",
+      "sourceScopes": "2.3 Administration;12.3 Absorption/Effect of Food;17 Administration/Nausea counseling",
+      "clinicalReview": {
+        "originalIdStemKeyCorrectTextAndAnchorRetained": true,
+        "allAlternativesIndividuallyReviewed": true,
+        "distractors": "Topical administration misconceptions replace unrelated true principles; hazard questions contrast the retained hazard against source-supported actions. Case158 alternatives retained and all addressed.",
+        "rationale": "Full explanation addresses each alternative and original assessment scope. Meal study qualified; tube/feed feasibility is not a validated crushing or continuous-feed protocol. Missed-dose explanation uses the labeled rule without claiming a measured concentration mechanism.",
+        "planningLimits": "Work, meals, sleep, cost, access, caregiver support, aspiration concerns and follow-up are individualized delivery/feasibility assessments; no quantified economic, aspiration or clinical-outcome effect is asserted."
+      }
+    },
+    {
+      "id": "lefamulin-pharmacology-076",
+      "before": {
+        "id": "lefamulin-pharmacology-076",
+        "lesson": "oral-administration",
+        "question": "Which reasoning hazard is most important to prevent with oral fasting window?",
+        "choices": [
+          "Writing take with food to reduce nausea",
+          "Shortening infusion to 30 minutes for convenience",
+          "Applying the oral interaction magnitude to IV therapy without distinction",
+          "Extending lefamulin or switching routes automatically without revisiting diagnosis, spectrum, QT and CYP risk, organ function, oral constraints, and the planned duration"
+        ],
+        "answer": 0,
+        "rationale": "Food reduces oral exposure and the label requires fasting administration",
+        "reviewHref": "#oral-administration"
+      },
+      "after": {
+        "id": "lefamulin-pharmacology-076",
+        "lesson": "oral-administration",
+        "question": "Which reasoning hazard is most important to prevent with oral fasting window?",
+        "choices": [
+          "Writing take with food to reduce nausea",
+          "Writing take at least one hour before a meal for each prescribed oral dose",
+          "Writing take at least two hours after a meal for each prescribed oral dose",
+          "Arranging prescribed every-12-hour doses around feasible meal intervals"
+        ],
+        "answer": 0,
+        "rationale": "The error is substituting routine with-food counseling for the product-specific fasting instructions. At least one hour before a meal, at least two hours after a meal, and a feasible every-12-hour schedule all follow the oral administration requirements. Assess nausea without automatically changing those requirements.",
+        "reviewHref": "#oral-administration"
+      },
+      "status": "complete stem/key/all alternatives/rationale source-reconciled",
+      "sourceScopes": "2.3 Administration;12.3 Absorption/Effect of Food;17 Administration/Nausea counseling",
+      "clinicalReview": {
+        "originalIdStemKeyCorrectTextAndAnchorRetained": true,
+        "allAlternativesIndividuallyReviewed": true,
+        "distractors": "Topical administration misconceptions replace unrelated true principles; hazard questions contrast the retained hazard against source-supported actions. Case158 alternatives retained and all addressed.",
+        "rationale": "Full explanation addresses each alternative and original assessment scope. Meal study qualified; tube/feed feasibility is not a validated crushing or continuous-feed protocol. Missed-dose explanation uses the labeled rule without claiming a measured concentration mechanism.",
+        "planningLimits": "Work, meals, sleep, cost, access, caregiver support, aspiration concerns and follow-up are individualized delivery/feasibility assessments; no quantified economic, aspiration or clinical-outcome effect is asserted."
+      }
+    },
+    {
+      "id": "lefamulin-pharmacology-077",
+      "before": {
+        "id": "lefamulin-pharmacology-077",
+        "lesson": "oral-administration",
+        "question": "Which principle best characterizes tablet technique?",
+        "choices": [
+          "The 600 mg tablet is swallowed whole with 6 to 8 ounces of water and is not crushed or divided",
+          "Lefamulin can prolong QT and should be avoided with known QT prolongation or ventricular arrhythmia including torsades",
+          "Oral lefamulin can increase sensitive CYP3A substrate exposure, while IV lefamulin does not show the same substrate effect",
+          "Lefamulin is a semisynthetic systemic pleuromutilin built around the mutilin core"
+        ],
+        "answer": 0,
+        "rationale": "The label specifically prohibits crushing or dividing the tablet",
+        "reviewHref": "#oral-administration"
+      },
+      "after": {
+        "id": "lefamulin-pharmacology-077",
+        "lesson": "oral-administration",
+        "question": "Which principle best characterizes tablet technique?",
+        "choices": [
+          "The 600 mg tablet is swallowed whole with 6 to 8 ounces of water and is not crushed or divided",
+          "The tablet can be crushed if the full 600 mg is recovered",
+          "Dividing the tablet is permitted even though crushing is prohibited",
+          "The whole-tablet instruction replaces the need for a fasting window"
+        ],
+        "answer": 0,
+        "rationale": "The labeled 600 mg tablet is swallowed whole with 6 to 8 ounces of water and is neither crushed nor divided. Recovering the nominal milligram amount does not authorize crushing, dividing is also prohibited, and an intact tablet still requires the labeled meal interval.",
+        "reviewHref": "#oral-administration"
+      },
+      "status": "complete stem/key/all alternatives/rationale source-reconciled",
+      "sourceScopes": "2.3 Administration;3 Tablet appearance/strength",
+      "clinicalReview": {
+        "originalIdStemKeyCorrectTextAndAnchorRetained": true,
+        "allAlternativesIndividuallyReviewed": true,
+        "distractors": "Topical administration misconceptions replace unrelated true principles; hazard questions contrast the retained hazard against source-supported actions. Case158 alternatives retained and all addressed.",
+        "rationale": "Full explanation addresses each alternative and original assessment scope. Meal study qualified; tube/feed feasibility is not a validated crushing or continuous-feed protocol. Missed-dose explanation uses the labeled rule without claiming a measured concentration mechanism.",
+        "planningLimits": "Work, meals, sleep, cost, access, caregiver support, aspiration concerns and follow-up are individualized delivery/feasibility assessments; no quantified economic, aspiration or clinical-outcome effect is asserted."
+      }
+    },
+    {
+      "id": "lefamulin-pharmacology-078",
+      "before": {
+        "id": "lefamulin-pharmacology-078",
+        "lesson": "oral-administration",
+        "question": "Which clinical action best applies to tablet technique?",
+        "choices": [
+          "Confirm swallowing ability before choosing oral therapy",
+          "Choose another antibiotic when baseline risk is unacceptable",
+          "Avoid QT-prolonging sensitive substrates and monitor other sensitive substrates",
+          "Connect scaffold and induced-fit ribosomal binding before predicting activity"
+        ],
+        "answer": 0,
+        "rationale": "The label specifically prohibits crushing or dividing the tablet",
+        "reviewHref": "#oral-administration"
+      },
+      "after": {
+        "id": "lefamulin-pharmacology-078",
+        "lesson": "oral-administration",
+        "question": "Which clinical action best applies to tablet technique?",
+        "choices": [
+          "Confirm swallowing ability before choosing oral therapy",
+          "Select oral tablets first and solve dysphagia by crushing later",
+          "Confirm total milligrams but omit the ability to swallow an intact tablet",
+          "Substitute half-tablets whenever the patient reports swallowing difficulty"
+        ],
+        "answer": 0,
+        "rationale": "Check that the patient can swallow the intact tablet with the specified water before selecting the oral plan. Choosing first and crushing later, checking milligrams alone, or dividing tablets does not meet the labeled technique. A swallowing problem requires a feasible alternative plan, not an assumed manipulation method.",
+        "reviewHref": "#oral-administration"
+      },
+      "status": "complete stem/key/all alternatives/rationale source-reconciled",
+      "sourceScopes": "2.3 Administration;3 Tablet appearance/strength",
+      "clinicalReview": {
+        "originalIdStemKeyCorrectTextAndAnchorRetained": true,
+        "allAlternativesIndividuallyReviewed": true,
+        "distractors": "Topical administration misconceptions replace unrelated true principles; hazard questions contrast the retained hazard against source-supported actions. Case158 alternatives retained and all addressed.",
+        "rationale": "Full explanation addresses each alternative and original assessment scope. Meal study qualified; tube/feed feasibility is not a validated crushing or continuous-feed protocol. Missed-dose explanation uses the labeled rule without claiming a measured concentration mechanism.",
+        "planningLimits": "Work, meals, sleep, cost, access, caregiver support, aspiration concerns and follow-up are individualized delivery/feasibility assessments; no quantified economic, aspiration or clinical-outcome effect is asserted."
+      }
+    },
+    {
+      "id": "lefamulin-pharmacology-079",
+      "before": {
+        "id": "lefamulin-pharmacology-079",
+        "lesson": "oral-administration",
+        "question": "Which assessment is most appropriate for tablet technique?",
+        "choices": [
+          "Assess dysphagia, feeding tube, water access, tablet manipulation, aspiration risk, and alternatives",
+          "Assess ECG, QTc, rhythm history, syncope, structural heart disease, and alternatives",
+          "Assess pimozide, simvastatin, alprazolam, diltiazem, verapamil, vardenafil, route, and toxicity",
+          "Assess class, salt form, route, ribosomal target, spectrum, and resistance"
+        ],
+        "answer": 0,
+        "rationale": "The label specifically prohibits crushing or dividing the tablet",
+        "reviewHref": "#oral-administration"
+      },
+      "after": {
+        "id": "lefamulin-pharmacology-079",
+        "lesson": "oral-administration",
+        "question": "Which assessment is most appropriate for tablet technique?",
+        "choices": [
+          "Assess dysphagia, feeding tube, water access, tablet manipulation, aspiration risk, and alternatives",
+          "Assess tube access but assume the oral tablet is crushable for every device",
+          "Assess water access alone without checking whole-tablet swallowing",
+          "Assess total daily milligrams and treat divided tablets as equivalent administration"
+        ],
+        "answer": 0,
+        "rationale": "Assess swallowing, aspiration concerns, tube dependence, water availability, proposed manipulation and alternatives. The label requires an intact tablet with 6 to 8 ounces of water and prohibits crushing or dividing. Tube access, water access or matching total milligrams alone does not establish a feasible labeled oral technique; no crushed-tablet tube method is established here.",
+        "reviewHref": "#oral-administration"
+      },
+      "status": "complete stem/key/all alternatives/rationale source-reconciled",
+      "sourceScopes": "2.3 Administration;3 Tablet appearance/strength",
+      "clinicalReview": {
+        "originalIdStemKeyCorrectTextAndAnchorRetained": true,
+        "allAlternativesIndividuallyReviewed": true,
+        "distractors": "Topical administration misconceptions replace unrelated true principles; hazard questions contrast the retained hazard against source-supported actions. Case158 alternatives retained and all addressed.",
+        "rationale": "Full explanation addresses each alternative and original assessment scope. Meal study qualified; tube/feed feasibility is not a validated crushing or continuous-feed protocol. Missed-dose explanation uses the labeled rule without claiming a measured concentration mechanism.",
+        "planningLimits": "Work, meals, sleep, cost, access, caregiver support, aspiration concerns and follow-up are individualized delivery/feasibility assessments; no quantified economic, aspiration or clinical-outcome effect is asserted."
+      }
+    },
+    {
+      "id": "lefamulin-pharmacology-080",
+      "before": {
+        "id": "lefamulin-pharmacology-080",
+        "lesson": "oral-administration",
+        "question": "Which reasoning hazard is most important to prevent with tablet technique?",
+        "choices": [
+          "Crushing the tablet for a feeding tube",
+          "Starting lefamulin without reviewing a documented long QT syndrome",
+          "Assuming oral and IV lefamulin have identical perpetrator effects",
+          "Calling lefamulin a macrolide because both act at the 50S subunit"
+        ],
+        "answer": 0,
+        "rationale": "The label specifically prohibits crushing or dividing the tablet",
+        "reviewHref": "#oral-administration"
+      },
+      "after": {
+        "id": "lefamulin-pharmacology-080",
+        "lesson": "oral-administration",
+        "question": "Which reasoning hazard is most important to prevent with tablet technique?",
+        "choices": [
+          "Crushing the tablet for a feeding tube",
+          "Swallowing the tablet intact with 6 to 8 ounces of water",
+          "Reviewing another feasible treatment plan when the patient cannot swallow the tablet",
+          "Keeping the intact tablet dose within the labeled fasting window"
+        ],
+        "answer": 0,
+        "rationale": "Crushing the tablet for a feeding tube violates the explicit tablet instructions. Intact swallowing with the specified water, reassessing the plan when that is impossible, and observing the meal interval are appropriate actions. The label does not provide a workaround that makes crushing acceptable.",
+        "reviewHref": "#oral-administration"
+      },
+      "status": "complete stem/key/all alternatives/rationale source-reconciled",
+      "sourceScopes": "2.3 Administration;3 Tablet appearance/strength",
+      "clinicalReview": {
+        "originalIdStemKeyCorrectTextAndAnchorRetained": true,
+        "allAlternativesIndividuallyReviewed": true,
+        "distractors": "Topical administration misconceptions replace unrelated true principles; hazard questions contrast the retained hazard against source-supported actions. Case158 alternatives retained and all addressed.",
+        "rationale": "Full explanation addresses each alternative and original assessment scope. Meal study qualified; tube/feed feasibility is not a validated crushing or continuous-feed protocol. Missed-dose explanation uses the labeled rule without claiming a measured concentration mechanism.",
+        "planningLimits": "Work, meals, sleep, cost, access, caregiver support, aspiration concerns and follow-up are individualized delivery/feasibility assessments; no quantified economic, aspiration or clinical-outcome effect is asserted."
+      }
+    },
+    {
+      "id": "lefamulin-pharmacology-081",
+      "before": {
+        "id": "lefamulin-pharmacology-081",
+        "lesson": "oral-administration",
+        "question": "Which principle best characterizes missed dose rule?",
+        "choices": [
+          "A missed dose may be taken only when at least eight hours remain before the next scheduled dose",
+          "Hypokalemia, hypomagnesemia, bradycardia, organ failure, and interacting drugs can increase torsades risk",
+          "Oral lefamulin is contraindicated with sensitive CYP3A substrates that prolong QT, such as pimozide",
+          "Lefamulin binds A and P sites of the peptidyl transferase center in domain V of 23S rRNA"
+        ],
+        "answer": 0,
+        "rationale": "The eight-hour rule avoids excessive concentration and preserves the schedule",
+        "reviewHref": "#oral-administration"
+      },
+      "after": {
+        "id": "lefamulin-pharmacology-081",
+        "lesson": "oral-administration",
+        "question": "Which principle best characterizes missed dose rule?",
+        "choices": [
+          "A missed dose may be taken only when at least eight hours remain before the next scheduled dose",
+          "A missed dose should be taken whenever at least six hours remain before the next dose",
+          "A missed dose is taken only when at least twelve hours remain before the next dose",
+          "A missed dose is added to the next scheduled tablet"
+        ],
+        "answer": 0,
+        "rationale": "Take a missed dose as soon as possible if at least eight hours remain before the next scheduled dose. Six hours is below the cutoff; twelve hours is not the required threshold. When fewer than eight hours remain, skip the missed dose and resume the usual schedule rather than adding it to the next tablet. This is the labeled scheduling rule, not a measured concentration calculation.",
+        "reviewHref": "#oral-administration"
+      },
+      "status": "complete stem/key/all alternatives/rationale source-reconciled",
+      "sourceScopes": "2.3 Missed Dose;17 complete-as-directed counseling",
+      "clinicalReview": {
+        "originalIdStemKeyCorrectTextAndAnchorRetained": true,
+        "allAlternativesIndividuallyReviewed": true,
+        "distractors": "Topical administration misconceptions replace unrelated true principles; hazard questions contrast the retained hazard against source-supported actions. Case158 alternatives retained and all addressed.",
+        "rationale": "Full explanation addresses each alternative and original assessment scope. Meal study qualified; tube/feed feasibility is not a validated crushing or continuous-feed protocol. Missed-dose explanation uses the labeled rule without claiming a measured concentration mechanism.",
+        "planningLimits": "Work, meals, sleep, cost, access, caregiver support, aspiration concerns and follow-up are individualized delivery/feasibility assessments; no quantified economic, aspiration or clinical-outcome effect is asserted."
+      }
+    },
+    {
+      "id": "lefamulin-pharmacology-082",
+      "before": {
+        "id": "lefamulin-pharmacology-082",
+        "lesson": "oral-administration",
+        "question": "Which clinical action best applies to missed dose rule?",
+        "choices": [
+          "Skip the missed dose when fewer than eight hours remain and resume the schedule",
+          "Correct modifiable factors and obtain ECG monitoring when use cannot be avoided",
+          "Select another antibacterial or remove the contraindicated substrate safely",
+          "Trace binding through incorrect tRNA positioning and protein-synthesis inhibition"
+        ],
+        "answer": 0,
+        "rationale": "The eight-hour rule avoids excessive concentration and preserves the schedule",
+        "reviewHref": "#oral-administration"
+      },
+      "after": {
+        "id": "lefamulin-pharmacology-082",
+        "lesson": "oral-administration",
+        "question": "Which clinical action best applies to missed dose rule?",
+        "choices": [
+          "Skip the missed dose when fewer than eight hours remain and resume the schedule",
+          "Take the missed dose when six hours remain and postpone the next tablet by two hours",
+          "Double the next scheduled dose to replace the omitted tablet",
+          "Restart the entire five-day course whenever a tablet is missed"
+        ],
+        "answer": 0,
+        "rationale": "When fewer than eight hours remain, the label directs skipping the missed dose and resuming at the next scheduled dose. Taking it with only six hours left, doubling the next dose, or automatically restarting the course is not that instruction. Questions about treatment adequacy require reassessment rather than an invented catch-up regimen.",
+        "reviewHref": "#oral-administration"
+      },
+      "status": "complete stem/key/all alternatives/rationale source-reconciled",
+      "sourceScopes": "2.3 Missed Dose;17 complete-as-directed counseling",
+      "clinicalReview": {
+        "originalIdStemKeyCorrectTextAndAnchorRetained": true,
+        "allAlternativesIndividuallyReviewed": true,
+        "distractors": "Topical administration misconceptions replace unrelated true principles; hazard questions contrast the retained hazard against source-supported actions. Case158 alternatives retained and all addressed.",
+        "rationale": "Full explanation addresses each alternative and original assessment scope. Meal study qualified; tube/feed feasibility is not a validated crushing or continuous-feed protocol. Missed-dose explanation uses the labeled rule without claiming a measured concentration mechanism.",
+        "planningLimits": "Work, meals, sleep, cost, access, caregiver support, aspiration concerns and follow-up are individualized delivery/feasibility assessments; no quantified economic, aspiration or clinical-outcome effect is asserted."
+      }
+    },
+    {
+      "id": "lefamulin-pharmacology-083",
+      "before": {
+        "id": "lefamulin-pharmacology-083",
+        "lesson": "oral-administration",
+        "question": "Which assessment is most appropriate for missed dose rule?",
+        "choices": [
+          "Assess current time, scheduled next dose, meal window, symptoms, and total exposure",
+          "Assess potassium, magnesium, calcium, heart rate, kidney and liver function, diuretics, and ECG",
+          "Assess exact substrate, QT effect, CYP3A sensitivity, route, alternatives, and withdrawal risks",
+          "Assess target, subunit, RNA domain, tRNA placement, and downstream translation"
+        ],
+        "answer": 0,
+        "rationale": "The eight-hour rule avoids excessive concentration and preserves the schedule",
+        "reviewHref": "#oral-administration"
+      },
+      "after": {
+        "id": "lefamulin-pharmacology-083",
+        "lesson": "oral-administration",
+        "question": "Which assessment is most appropriate for missed dose rule?",
+        "choices": [
+          "Assess current time, scheduled next dose, meal window, symptoms, and total exposure",
+          "Count tablets remaining without checking the next scheduled dose time",
+          "Use the time since the previous dose alone and ignore the next scheduled dose",
+          "Check the meal interval but ignore whether the next dose is fewer than eight hours away"
+        ],
+        "answer": 0,
+        "rationale": "Establish the current time, next scheduled dose, meal interval and doses already taken, while assessing symptoms that may need follow-up. Tablet count, time since the previous dose or meal timing alone cannot determine whether at least eight hours remain. Total exposure here means reconciling actual doses; it does not require a plasma concentration estimate or an automatic dose conversion.",
+        "reviewHref": "#oral-administration"
+      },
+      "status": "complete stem/key/all alternatives/rationale source-reconciled",
+      "sourceScopes": "2.3 Missed Dose;17 complete-as-directed counseling",
+      "clinicalReview": {
+        "originalIdStemKeyCorrectTextAndAnchorRetained": true,
+        "allAlternativesIndividuallyReviewed": true,
+        "distractors": "Topical administration misconceptions replace unrelated true principles; hazard questions contrast the retained hazard against source-supported actions. Case158 alternatives retained and all addressed.",
+        "rationale": "Full explanation addresses each alternative and original assessment scope. Meal study qualified; tube/feed feasibility is not a validated crushing or continuous-feed protocol. Missed-dose explanation uses the labeled rule without claiming a measured concentration mechanism.",
+        "planningLimits": "Work, meals, sleep, cost, access, caregiver support, aspiration concerns and follow-up are individualized delivery/feasibility assessments; no quantified economic, aspiration or clinical-outcome effect is asserted."
+      }
+    },
+    {
+      "id": "lefamulin-pharmacology-084",
+      "before": {
+        "id": "lefamulin-pharmacology-084",
+        "lesson": "oral-administration",
+        "question": "Which reasoning hazard is most important to prevent with missed dose rule?",
+        "choices": [
+          "Doubling the next dose",
+          "Treating QT risk as a medication-list problem only",
+          "Treating the combination as a minor monitor-only interaction",
+          "Placing the target at the 30S decoding center"
+        ],
+        "answer": 0,
+        "rationale": "The eight-hour rule avoids excessive concentration and preserves the schedule",
+        "reviewHref": "#oral-administration"
+      },
+      "after": {
+        "id": "lefamulin-pharmacology-084",
+        "lesson": "oral-administration",
+        "question": "Which reasoning hazard is most important to prevent with missed dose rule?",
+        "choices": [
+          "Doubling the next dose",
+          "Skipping the missed dose when fewer than eight hours remain",
+          "Taking an eligible missed dose promptly when at least eight hours remain",
+          "Resuming the next scheduled dose after an ineligible missed dose is skipped"
+        ],
+        "answer": 0,
+        "rationale": "Doubling the next dose creates a catch-up regimen that the label does not recommend. The supported actions are to take an eligible missed dose promptly when at least eight hours remain, or otherwise skip it and resume the next scheduled dose. Do not substitute dose doubling for the eight-hour decision.",
+        "reviewHref": "#oral-administration"
+      },
+      "status": "complete stem/key/all alternatives/rationale source-reconciled",
+      "sourceScopes": "2.3 Missed Dose;17 complete-as-directed counseling",
+      "clinicalReview": {
+        "originalIdStemKeyCorrectTextAndAnchorRetained": true,
+        "allAlternativesIndividuallyReviewed": true,
+        "distractors": "Topical administration misconceptions replace unrelated true principles; hazard questions contrast the retained hazard against source-supported actions. Case158 alternatives retained and all addressed.",
+        "rationale": "Full explanation addresses each alternative and original assessment scope. Meal study qualified; tube/feed feasibility is not a validated crushing or continuous-feed protocol. Missed-dose explanation uses the labeled rule without claiming a measured concentration mechanism.",
+        "planningLimits": "Work, meals, sleep, cost, access, caregiver support, aspiration concerns and follow-up are individualized delivery/feasibility assessments; no quantified economic, aspiration or clinical-outcome effect is asserted."
+      }
+    },
+    {
+      "id": "lefamulin-pharmacology-085",
+      "before": {
+        "id": "lefamulin-pharmacology-085",
+        "lesson": "oral-administration",
+        "question": "Which principle best characterizes oral adherence design?",
+        "choices": [
+          "Every oral course requires alignment of twice-daily timing, fasting windows, whole-tablet swallowing, and interaction avoidance",
+          "Class IA and III antiarrhythmics and other QT-prolonging drugs should generally not be combined with lefamulin",
+          "Animal findings support a potential for fetal harm with lefamulin",
+          "Hydrogen bonds, hydrophobic interactions, and van der Waals forces close the ribosomal pocket around lefamulin"
+        ],
+        "answer": 0,
+        "rationale": "Multiple administration constraints can undermine an otherwise active regimen",
+        "reviewHref": "#oral-administration"
+      },
+      "after": {
+        "id": "lefamulin-pharmacology-085",
+        "lesson": "oral-administration",
+        "question": "Which principle best characterizes oral adherence design?",
+        "choices": [
+          "Every oral course requires alignment of twice-daily timing, fasting windows, whole-tablet swallowing, and interaction avoidance",
+          "A five-day course makes meal timing unnecessary",
+          "Keeping tablets intact removes the need to review interacting medications",
+          "Once the daily milligram total is correct, both tablets can be taken together"
+        ],
+        "answer": 0,
+        "rationale": "The labeled oral course combines every-12-hour timing, fasting intervals, intact-tablet swallowing and medication-interaction review. Five days does not waive meal rules, intact tablets do not neutralize CYP or QT interactions, and matching daily milligrams does not authorize combining the doses. Build a plan the patient can actually follow.",
+        "reviewHref": "#oral-administration"
+      },
+      "status": "complete stem/key/all alternatives/rationale source-reconciled",
+      "sourceScopes": "2.1 adult dosing/Table1 footnote;2.3 Administration;7.1-7.3 Interactions;17 adherence/medication-change counseling",
+      "clinicalReview": {
+        "originalIdStemKeyCorrectTextAndAnchorRetained": true,
+        "allAlternativesIndividuallyReviewed": true,
+        "distractors": "Topical administration misconceptions replace unrelated true principles; hazard questions contrast the retained hazard against source-supported actions. Case158 alternatives retained and all addressed.",
+        "rationale": "Full explanation addresses each alternative and original assessment scope. Meal study qualified; tube/feed feasibility is not a validated crushing or continuous-feed protocol. Missed-dose explanation uses the labeled rule without claiming a measured concentration mechanism.",
+        "planningLimits": "Work, meals, sleep, cost, access, caregiver support, aspiration concerns and follow-up are individualized delivery/feasibility assessments; no quantified economic, aspiration or clinical-outcome effect is asserted."
+      }
+    },
+    {
+      "id": "lefamulin-pharmacology-086",
+      "before": {
+        "id": "lefamulin-pharmacology-086",
+        "lesson": "oral-administration",
+        "question": "Which clinical action best applies to oral adherence design?",
+        "choices": [
+          "Test the real daily schedule before prescribing",
+          "Replace one component or choose another CABP regimen",
+          "Verify pregnancy status and choose a better-supported alternative when possible",
+          "Use induced fit to explain high target engagement and a distinct resistance profile"
+        ],
+        "answer": 0,
+        "rationale": "Multiple administration constraints can undermine an otherwise active regimen",
+        "reviewHref": "#oral-administration"
+      },
+      "after": {
+        "id": "lefamulin-pharmacology-086",
+        "lesson": "oral-administration",
+        "question": "Which clinical action best applies to oral adherence design?",
+        "choices": [
+          "Test the real daily schedule before prescribing",
+          "Assume a twice-daily prescription is feasible without discussing meals or sleep",
+          "Choose a convenient with-meal schedule before reviewing the fasting requirement",
+          "Delay swallowing and interaction review until the course has already started"
+        ],
+        "answer": 0,
+        "rationale": "Test the actual daily schedule before prescribing: every-12-hour doses must fit the meal intervals, intact-tablet technique and medication safety plan. A twice-daily label alone does not prove feasibility. A convenient with-meal schedule conflicts with administration instructions, and swallowing or interaction problems should be addressed before treatment begins.",
+        "reviewHref": "#oral-administration"
+      },
+      "status": "complete stem/key/all alternatives/rationale source-reconciled",
+      "sourceScopes": "2.1 adult dosing/Table1 footnote;2.3 Administration;7.1-7.3 Interactions;17 adherence/medication-change counseling",
+      "clinicalReview": {
+        "originalIdStemKeyCorrectTextAndAnchorRetained": true,
+        "allAlternativesIndividuallyReviewed": true,
+        "distractors": "Topical administration misconceptions replace unrelated true principles; hazard questions contrast the retained hazard against source-supported actions. Case158 alternatives retained and all addressed.",
+        "rationale": "Full explanation addresses each alternative and original assessment scope. Meal study qualified; tube/feed feasibility is not a validated crushing or continuous-feed protocol. Missed-dose explanation uses the labeled rule without claiming a measured concentration mechanism.",
+        "planningLimits": "Work, meals, sleep, cost, access, caregiver support, aspiration concerns and follow-up are individualized delivery/feasibility assessments; no quantified economic, aspiration or clinical-outcome effect is asserted."
+      }
+    },
+    {
+      "id": "lefamulin-pharmacology-087",
+      "before": {
+        "id": "lefamulin-pharmacology-087",
+        "lesson": "oral-administration",
+        "question": "Which assessment is most appropriate for oral adherence design?",
+        "choices": [
+          "Assess work, meals, sleep, other medications, swallowing, cost, access, and follow-up",
+          "Assess antiarrhythmics, antipsychotics, macrolides, fluoroquinolones, tricyclics, QTc, and alternatives",
+          "Assess pregnancy status, gestational timing, infection severity, alternatives, fetal risk, and follow-up",
+          "Assess target conformation, contact sites, competing mechanisms, and organism phenotype"
+        ],
+        "answer": 0,
+        "rationale": "Multiple administration constraints can undermine an otherwise active regimen",
+        "reviewHref": "#oral-administration"
+      },
+      "after": {
+        "id": "lefamulin-pharmacology-087",
+        "lesson": "oral-administration",
+        "question": "Which assessment is most appropriate for oral adherence design?",
+        "choices": [
+          "Assess work, meals, sleep, other medications, swallowing, cost, access, and follow-up",
+          "Assess the number of tablets only; work and meals cannot affect adherence",
+          "Assess the meal schedule but defer medication and swallowing review",
+          "Assess swallowing alone and assume cost, access and follow-up cannot interrupt the prescribed course"
+        ],
+        "answer": 0,
+        "rationale": "Assess the practical ability to obtain and complete the prescribed course as well as the labeled dose schedule, meal intervals, whole-tablet technique and medication interactions. Tablet count, meal timing or swallowing alone leaves other delivery barriers unchecked. Arrange the dose schedule and confirm access and follow-up so the patient can complete the prescribed course.",
+        "reviewHref": "#oral-administration"
+      },
+      "status": "complete stem/key/all alternatives/rationale source-reconciled",
+      "sourceScopes": "2.1 adult dosing/Table1 footnote;2.3 Administration;7.1-7.3 Interactions;17 adherence/medication-change counseling",
+      "clinicalReview": {
+        "originalIdStemKeyCorrectTextAndAnchorRetained": true,
+        "allAlternativesIndividuallyReviewed": true,
+        "distractors": "Topical administration misconceptions replace unrelated true principles; hazard questions contrast the retained hazard against source-supported actions. Case158 alternatives retained and all addressed.",
+        "rationale": "Full explanation addresses each alternative and original assessment scope. Meal study qualified; tube/feed feasibility is not a validated crushing or continuous-feed protocol. Missed-dose explanation uses the labeled rule without claiming a measured concentration mechanism.",
+        "planningLimits": "Work, meals, sleep, cost, access, caregiver support, aspiration concerns and follow-up are individualized delivery/feasibility assessments; no quantified economic, aspiration or clinical-outcome effect is asserted."
+      }
+    },
+    {
+      "id": "lefamulin-pharmacology-088",
+      "before": {
+        "id": "lefamulin-pharmacology-088",
+        "lesson": "oral-administration",
+        "question": "Which reasoning hazard is most important to prevent with oral adherence design?",
+        "choices": [
+          "Calling a five-day course simple without testing feasibility",
+          "Adding lefamulin to moxifloxacin for broader atypical coverage",
+          "Using a retired pregnancy letter as the entire assessment",
+          "Reducing mechanism to nonspecific ribosomal binding"
+        ],
+        "answer": 0,
+        "rationale": "Multiple administration constraints can undermine an otherwise active regimen",
+        "reviewHref": "#oral-administration"
+      },
+      "after": {
+        "id": "lefamulin-pharmacology-088",
+        "lesson": "oral-administration",
+        "question": "Which reasoning hazard is most important to prevent with oral adherence design?",
+        "choices": [
+          "Calling a five-day course simple without testing feasibility",
+          "Testing whether every-12-hour doses can fit the actual meal schedule",
+          "Verifying whole-tablet swallowing and access to the prescribed course",
+          "Reviewing interacting medications before the first oral dose"
+        ],
+        "answer": 0,
+        "rationale": "A five-day course can still fail operationally if the patient cannot obtain it or follow its administration constraints. Calling it simple without testing feasibility is the hazard. Checking the actual schedule, swallowing and access, and interacting medicines are appropriate planning steps; short duration does not remove those requirements.",
+        "reviewHref": "#oral-administration"
+      },
+      "status": "complete stem/key/all alternatives/rationale source-reconciled",
+      "sourceScopes": "2.1 adult dosing/Table1 footnote;2.3 Administration;7.1-7.3 Interactions;17 adherence/medication-change counseling",
+      "clinicalReview": {
+        "originalIdStemKeyCorrectTextAndAnchorRetained": true,
+        "allAlternativesIndividuallyReviewed": true,
+        "distractors": "Topical administration misconceptions replace unrelated true principles; hazard questions contrast the retained hazard against source-supported actions. Case158 alternatives retained and all addressed.",
+        "rationale": "Full explanation addresses each alternative and original assessment scope. Meal study qualified; tube/feed feasibility is not a validated crushing or continuous-feed protocol. Missed-dose explanation uses the labeled rule without claiming a measured concentration mechanism.",
+        "planningLimits": "Work, meals, sleep, cost, access, caregiver support, aspiration concerns and follow-up are individualized delivery/feasibility assessments; no quantified economic, aspiration or clinical-outcome effect is asserted."
+      }
+    },
+    {
+      "id": "lefamulin-pharmacology-case-158",
+      "before": {
+        "id": "lefamulin-pharmacology-case-158",
+        "lesson": "oral-administration",
+        "question": "A patient remembers a missed lefamulin tablet with six hours remaining before the next dose. What should the patient do?",
+        "choices": [
+          "Skip the missed dose and resume at the next scheduled time",
+          "Take two tablets now",
+          "Take the missed dose with a meal",
+          "Stop the entire course"
+        ],
+        "answer": 0,
+        "rationale": "The missed dose is skipped when fewer than eight hours remain before the next scheduled dose.",
+        "reviewHref": "#oral-administration"
+      },
+      "after": {
+        "id": "lefamulin-pharmacology-case-158",
+        "lesson": "oral-administration",
+        "question": "A patient remembers a missed lefamulin tablet with six hours remaining before the next dose. What should the patient do?",
+        "choices": [
+          "Skip the missed dose and resume at the next scheduled time",
+          "Take two tablets now",
+          "Take the missed dose with a meal",
+          "Stop the entire course"
+        ],
+        "answer": 0,
+        "rationale": "Six hours is fewer than the labeled eight-hour cutoff, so skip the missed tablet and resume at the next scheduled time. Taking two tablets, taking the ineligible missed dose with a meal, or stopping the entire prescribed course is not the missed-dose instruction. The label does not call for a doubled dose or an automatic course restart.",
+        "reviewHref": "#oral-administration"
+      },
+      "status": "complete stem/key/all alternatives/rationale source-reconciled",
+      "sourceScopes": "2.3 Missed Dose;17 complete-as-directed counseling",
+      "clinicalReview": {
+        "originalIdStemKeyCorrectTextAndAnchorRetained": true,
+        "allAlternativesIndividuallyReviewed": true,
+        "distractors": "Topical administration misconceptions replace unrelated true principles; hazard questions contrast the retained hazard against source-supported actions. Case158 alternatives retained and all addressed.",
+        "rationale": "Full explanation addresses each alternative and original assessment scope. Meal study qualified; tube/feed feasibility is not a validated crushing or continuous-feed protocol. Missed-dose explanation uses the labeled rule without claiming a measured concentration mechanism.",
+        "planningLimits": "Work, meals, sleep, cost, access, caregiver support, aspiration concerns and follow-up are individualized delivery/feasibility assessments; no quantified economic, aspiration or clinical-outcome effect is asserted."
+      }
+    }
+  ],
+  "teachingReview": [
+    {
+      "heading": "Food timing protects exposure",
+      "before": "Take each dose at least one hour before a meal or two hours afterward. Do not copy with-food counseling from another antibiotic.",
+      "after": "Take each dose at least one hour before a meal or two hours afterward. Do not copy with-food counseling from another antibiotic. In the label's single-dose study, a high-fat, high-calorie breakfast lowered peak concentration and overall exposure. That study does not establish one effect for every meal or a validated continuous-feed interruption schedule.",
+      "wholeBodyVerified": true,
+      "source": "Label2.1/2.3/3/7/12.3Absorption/17 as applicable;general routefeasibility book95/107/170 reused;operationalassessmentnot quantifiedoutcome inference."
+    },
+    {
+      "heading": "The tablet remains whole",
+      "before": "Swallow the blue 600 mg tablet whole with 6 to 8 ounces of water. A patient who cannot swallow it should use another feasible plan rather than crush it.",
+      "after": "Swallow the blue 600 mg tablet whole with 6 to 8 ounces of water. A patient who cannot swallow it should use another feasible plan rather than crush it. Do not divide the tablet either. Matching the prescribed milligrams does not validate a crushed feeding-tube dose; reassess the route and product when intact swallowing is not feasible.",
+      "wholeBodyVerified": true,
+      "source": "Label2.1/2.3/3/7/12.3Absorption/17 as applicable;general routefeasibility book95/107/170 reused;operationalassessmentnot quantifiedoutcome inference."
+    },
+    {
+      "heading": "Eight hours determines a missed dose",
+      "before": "Take a missed dose when at least eight hours remain before the next scheduled dose. If fewer than eight hours remain, skip it and resume the schedule.",
+      "after": "Take a missed dose when at least eight hours remain before the next scheduled dose. If fewer than eight hours remain, skip it and resume the schedule. Take an eligible missed dose as soon as possible, and do not double the next dose or automatically restart the course to replace an omitted tablet.",
+      "wholeBodyVerified": true,
+      "source": "Label2.1/2.3/3/7/12.3Absorption/17 as applicable;general routefeasibility book95/107/170 reused;operationalassessmentnot quantifiedoutcome inference."
+    },
+    {
+      "heading": "A short course can still be operationally difficult",
+      "before": "Twice-daily fasting windows, whole-tablet swallowing, interactions, cost, and access can defeat adherence. Test the schedule with the patient before discharge.",
+      "after": "Twice-daily fasting windows, whole-tablet swallowing, interactions, cost, and access can defeat adherence. Test the schedule with the patient before discharge. The labeled initial oral adult CABP course is 600 mg every 12 hours for five days. Confirm that the patient can obtain and complete it, apply the meal and missed-dose instructions, and communicate medication changes. An IV-to-oral switch completes its planned treatment course rather than automatically starting a new five-day course.",
+      "wholeBodyVerified": true,
+      "source": "Label2.1/2.3/3/7/12.3Absorption/17 as applicable;general routefeasibility book95/107/170 reused;operationalassessmentnot quantifiedoutcome inference."
+    }
+  ],
+  "embeddedCheckReview": {
+    "after": {
+      "question": "A patient remembers a dose with six hours before the next scheduled tablet. What should happen?",
+      "choices": [
+        "Skip the missed dose and resume the next scheduled dose",
+        "Take two tablets immediately",
+        "Take the missed tablet with a meal",
+        "Restart the five-day count"
+      ],
+      "answer": 0,
+      "rationale": "Six hours is below the eight-hour cutoff. Skip the missed tablet and resume at the next scheduled time; do not take two tablets, take the ineligible missed tablet with a meal, or automatically restart a five-day course.",
+      "reviewHref": "#oral-administration"
+    },
+    "wholeCheckVerified": true,
+    "edit": {
+      "before": "The label directs skipping the missed dose when fewer than eight hours remain.",
+      "after": "Six hours is below the eight-hour cutoff. Skip the missed tablet and resume at the next scheduled time; do not take two tablets, take the ineligible missed tablet with a meal, or automatically restart a five-day course."
+    },
+    "source": "Label2.3 complete missed-dose rule;independently checked6<8;allalternatives/rationale reviewed."
+  },
+  "metadataReview": [
+    {
+      "field": "title",
+      "text": "Build the Dose Around Fasting, Water, and Time",
+      "status": "verified",
+      "source": "Label2.1/2.3 and17; pedagogical title/application organizes product-specific counseling and actual schedule feasibility."
+    },
+    {
+      "field": "summary",
+      "text": "Oral lefamulin must be taken at least one hour before a meal or two hours after a meal, swallowed whole with 6 to 8 ounces of water, and never crushed or divided. Missed doses follow an eight-hour rule.",
+      "status": "verified",
+      "source": "Label2.1/2.3 and17; pedagogical title/application organizes product-specific counseling and actual schedule feasibility."
+    },
+    {
+      "field": "application",
+      "text": "Write the actual meal, dose, sleep, other medication, and missed-dose schedule before selecting outpatient oral therapy.",
+      "status": "verified",
+      "source": "Label2.1/2.3 and17; pedagogical title/application organizes product-specific counseling and actual schedule feasibility."
+    },
+    {
+      "field": "concepts[0]",
+      "text": "Fasting window",
+      "status": "verified",
+      "source": "Label2.3 fasting/whole-tablet/water/missed-dose rules;17 exact-as-directed adherence counseling."
+    },
+    {
+      "field": "concepts[1]",
+      "text": "Whole tablet",
+      "status": "verified",
+      "source": "Label2.3 fasting/whole-tablet/water/missed-dose rules;17 exact-as-directed adherence counseling."
+    },
+    {
+      "field": "concepts[2]",
+      "text": "6 to 8 ounces",
+      "status": "verified",
+      "source": "Label2.3 fasting/whole-tablet/water/missed-dose rules;17 exact-as-directed adherence counseling."
+    },
+    {
+      "field": "concepts[3]",
+      "text": "Eight-hour rule",
+      "status": "verified",
+      "source": "Label2.3 fasting/whole-tablet/water/missed-dose rules;17 exact-as-directed adherence counseling."
+    },
+    {
+      "field": "concepts[4]",
+      "text": "Adherence",
+      "status": "verified",
+      "source": "Label2.3 fasting/whole-tablet/water/missed-dose rules;17 exact-as-directed adherence counseling."
+    },
+    {
+      "field": "keyPoints[0]",
+      "text": "Dose at least one hour before or two hours after food.",
+      "status": "verified",
+      "source": "Label2.3 fasting/whole-tablet/water/missed-dose rules;17 exact-as-directed adherence counseling."
+    },
+    {
+      "field": "keyPoints[1]",
+      "text": "Swallow whole with 6 to 8 ounces of water.",
+      "status": "verified",
+      "source": "Label2.3 fasting/whole-tablet/water/missed-dose rules;17 exact-as-directed adherence counseling."
+    },
+    {
+      "field": "keyPoints[2]",
+      "text": "Never crush or divide the tablet.",
+      "status": "verified",
+      "source": "Label2.3 fasting/whole-tablet/water/missed-dose rules;17 exact-as-directed adherence counseling."
+    },
+    {
+      "field": "keyPoints[3]",
+      "text": "Use the eight-hour missed-dose rule.",
+      "status": "verified",
+      "source": "Label2.3 fasting/whole-tablet/water/missed-dose rules;17 exact-as-directed adherence counseling."
+    }
+  ],
+  "figureReview": {
+    "wholeOralFigureVerified": true,
+    "edit": {
+      "type": "oral-administration",
+      "before": "  \"oral-administration\": [\"Fasting clock\", \"Twice-daily therapy succeeds only when meals, water, and missed doses align\", [\"Separate\", \"One hour before food\", \"Or wait two hours after a meal.\"], [\"Swallow\", \"Whole with water\", \"Use 6 to 8 ounces and never crush or divide.\"], [\"Count\", \"Eight hours remaining\", \"Take a missed dose only when this window remains.\"], [\"Test\", \"Real schedule\", \"Meals, work, sleep, cost, and interactions must fit.\"]],",
+      "after": "  \"oral-administration\": [\"Fasting clock\", \"Coordinate meals, water, and missed-dose decisions with the twice-daily schedule\", [\"Separate\", \"At least one hour before food\", \"Or wait at least two hours after a meal.\"], [\"Swallow\", \"Whole with water\", \"Use 6 to 8 ounces and never crush or divide.\"], [\"Count\", \"At least eight hours remaining\", \"Otherwise skip it and resume the next scheduled dose.\"], [\"Test\", \"Real schedule\", \"Meals, work, sleep, cost, and interactions must fit.\"]],"
+    },
+    "completeClaimStrings": 14,
+    "source": "Label2.1/2.3/17 scheduling/whole-tablet/missed-dose andmedicationreview;real-schedule step is an operational feasibility assessment.",
+    "allOtherNineFiguresPreservedUnreviewed": true,
+    "layout": "Four ordinalsteps, no pharmacokinetic curve,measuredoutcome graphic orspatial/molecular assertion."
+  },
+  "cumulativeReview": {
+    "after": {
+      "id": "cumulative-lefamulin-pharmacology-lefamulin-pharmacology-085",
+      "lesson": "oral-administration",
+      "question": "Which principle best characterizes oral adherence design?",
+      "choices": [
+        "Every oral course requires alignment of twice-daily timing, fasting windows, whole-tablet swallowing, and interaction avoidance",
+        "A five-day course makes meal timing unnecessary",
+        "Keeping tablets intact removes the need to review interacting medications",
+        "Once the daily milligram total is correct, both tablets can be taken together"
+      ],
+      "answer": 0,
+      "rationale": "The labeled oral course combines every-12-hour timing, fasting intervals, intact-tablet swallowing and medication-interaction review. Five days does not waive meal rules, intact tablets do not neutralize CYP or QT interactions, and matching daily milligrams does not authorize combining the doses. Build a plan the patient can actually follow.",
+      "reviewHref": "/learn/pharmacy/modules/lefamulin-pharmacology",
+      "module": "Lefamulin Pharmacology"
+    },
+    "completeSourceVerified": true,
+    "parentId": "lefamulin-pharmacology-085",
+    "other1179FullObjectsUnchanged": true,
+    "otherFourAssociatedLefamulinCopiesNotNewlySourceClosed": true
+  },
+  "coverage": {
+    "evidence": "enteral-nutrition-broader-lefamulin-label-review.json",
+    "moduleBank": 168,
+    "sourceVerifiedBankIds": [
+      "lefamulin-pharmacology-073",
+      "lefamulin-pharmacology-074",
+      "lefamulin-pharmacology-075",
+      "lefamulin-pharmacology-076",
+      "lefamulin-pharmacology-077",
+      "lefamulin-pharmacology-078",
+      "lefamulin-pharmacology-079",
+      "lefamulin-pharmacology-080",
+      "lefamulin-pharmacology-081",
+      "lefamulin-pharmacology-082",
+      "lefamulin-pharmacology-083",
+      "lefamulin-pharmacology-084",
+      "lefamulin-pharmacology-085",
+      "lefamulin-pharmacology-086",
+      "lefamulin-pharmacology-087",
+      "lefamulin-pharmacology-088",
+      "lefamulin-pharmacology-case-158"
+    ],
+    "newFullQuestionsVerified": 17,
+    "broaderFeedingBankVerifiedAfter": 171,
+    "wholeBodiesVerified": 4,
+    "wholeEmbeddedChecksVerified": 1,
+    "wholeFiguresVerified": 1,
+    "oralMetadataStatementsVerified": 12,
+    "wholeLessonVerified": "oral-administration",
+    "wholeParentModuleVerified": false,
+    "wholeENModuleVerified": false,
+    "wholeChapterVerified": false,
+    "cumulativeSourceVerifiedIds": [
+      "cumulative-lefamulin-pharmacology-lefamulin-pharmacology-085"
+    ],
+    "otherCumulativeObjectsUnchanged": 1179,
+    "allExisting168IdsStemsKeysCorrectTextsAndAnchorsPreserved": true,
+    "noNewQuestionIds": true,
+    "allOriginal40BodyTextsRetained": true,
+    "otherNineFiguresUnchanged": true,
+    "other36BodiesAndNineChecksUnchanged": true,
+    "workingDraftsPreserved": true
+  },
+  "validation": {
+    "structure": {
+      "modules": 1,
+      "questions": 168,
+      "hardErrors": [],
+      "sourceGaps": [],
+      "sizeAdvisories": [],
+      "thinLessons": [],
+      "weakestModules": [
+        {
+          "module": "lefamulin-pharmacology",
+          "lessons": 10,
+          "questions": 168,
+          "minimumLessonCoverage": 9
+        }
+      ]
+    },
+    "productionBuild": {
+      "status": "passed",
+      "exitCode": 0,
+      "pages": 567,
+      "isolatedExactBase": "611a258058b4dc5441ea3df0c23fa6da682957b1",
+      "trackedProductChanges": [
+        "src/data/modules/lefamulinPharmacology.js",
+        "src/data/questionBanks/lefamulinPharmacology.js",
+        "src/components/learn/LefamulinPharmacologyVisual.jsx"
+      ]
+    },
+    "objectPreservation": {
+      "changedQuestionIds": [
+        "lefamulin-pharmacology-073",
+        "lefamulin-pharmacology-074",
+        "lefamulin-pharmacology-075",
+        "lefamulin-pharmacology-076",
+        "lefamulin-pharmacology-077",
+        "lefamulin-pharmacology-078",
+        "lefamulin-pharmacology-079",
+        "lefamulin-pharmacology-080",
+        "lefamulin-pharmacology-081",
+        "lefamulin-pharmacology-082",
+        "lefamulin-pharmacology-083",
+        "lefamulin-pharmacology-084",
+        "lefamulin-pharmacology-085",
+        "lefamulin-pharmacology-086",
+        "lefamulin-pharmacology-087",
+        "lefamulin-pharmacology-088",
+        "lefamulin-pharmacology-case-158"
+      ],
+      "otherFullQuestionsUnchanged": 151,
+      "changedBodies": 4,
+      "otherWholeBodiesUnchanged": 36,
+      "otherEmbeddedChecksUnchanged": 9,
+      "allMetadataUnchanged": true,
+      "changedCumulativeIds": [
+        "cumulative-lefamulin-pharmacology-lefamulin-pharmacology-085"
+      ],
+      "otherCumulativeUnchanged": 1179
+    },
+    "browser": {
+      "status": "passed",
+      "results": [
+        {
+          "width": 1440,
+          "bodies": 40,
+          "exactMetadata": true,
+          "references": 3,
+          "checkResults": [
+            {
+              "wrong": true,
+              "grade": "0/1"
+            },
+            {
+              "wrong": false,
+              "grade": "1/1"
+            }
+          ],
+          "attempts": [
+            {
+              "target": "lefamulin-pharmacology-073",
+              "seed": 6,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "lefamulin-pharmacology-095",
+                "lefamulin-pharmacology-009",
+                "lefamulin-pharmacology-101",
+                "lefamulin-pharmacology-123",
+                "lefamulin-pharmacology-073",
+                "lefamulin-pharmacology-108",
+                "lefamulin-pharmacology-102",
+                "lefamulin-pharmacology-143",
+                "lefamulin-pharmacology-081",
+                "lefamulin-pharmacology-127"
+              ]
+            },
+            {
+              "target": "lefamulin-pharmacology-073",
+              "seed": 6,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "lefamulin-pharmacology-095",
+                "lefamulin-pharmacology-009",
+                "lefamulin-pharmacology-101",
+                "lefamulin-pharmacology-123",
+                "lefamulin-pharmacology-073",
+                "lefamulin-pharmacology-108",
+                "lefamulin-pharmacology-102",
+                "lefamulin-pharmacology-143",
+                "lefamulin-pharmacology-081",
+                "lefamulin-pharmacology-127"
+              ]
+            },
+            {
+              "target": "lefamulin-pharmacology-074",
+              "seed": 1,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "lefamulin-pharmacology-008",
+                "lefamulin-pharmacology-094",
+                "lefamulin-pharmacology-013",
+                "lefamulin-pharmacology-070",
+                "lefamulin-pharmacology-098",
+                "lefamulin-pharmacology-113",
+                "lefamulin-pharmacology-case-157",
+                "lefamulin-pharmacology-074",
+                "lefamulin-pharmacology-068",
+                "lefamulin-pharmacology-007"
+              ]
+            },
+            {
+              "target": "lefamulin-pharmacology-074",
+              "seed": 1,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "lefamulin-pharmacology-008",
+                "lefamulin-pharmacology-094",
+                "lefamulin-pharmacology-013",
+                "lefamulin-pharmacology-070",
+                "lefamulin-pharmacology-098",
+                "lefamulin-pharmacology-113",
+                "lefamulin-pharmacology-case-157",
+                "lefamulin-pharmacology-074",
+                "lefamulin-pharmacology-068",
+                "lefamulin-pharmacology-007"
+              ]
+            },
+            {
+              "target": "lefamulin-pharmacology-075",
+              "seed": 16,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "lefamulin-pharmacology-074",
+                "lefamulin-pharmacology-053",
+                "lefamulin-pharmacology-150",
+                "lefamulin-pharmacology-075",
+                "lefamulin-pharmacology-123",
+                "lefamulin-pharmacology-045",
+                "lefamulin-pharmacology-063",
+                "lefamulin-pharmacology-142",
+                "lefamulin-pharmacology-030",
+                "lefamulin-pharmacology-004"
+              ]
+            },
+            {
+              "target": "lefamulin-pharmacology-075",
+              "seed": 16,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "lefamulin-pharmacology-074",
+                "lefamulin-pharmacology-053",
+                "lefamulin-pharmacology-150",
+                "lefamulin-pharmacology-075",
+                "lefamulin-pharmacology-123",
+                "lefamulin-pharmacology-045",
+                "lefamulin-pharmacology-063",
+                "lefamulin-pharmacology-142",
+                "lefamulin-pharmacology-030",
+                "lefamulin-pharmacology-004"
+              ]
+            },
+            {
+              "target": "lefamulin-pharmacology-076",
+              "seed": 8,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "lefamulin-pharmacology-090",
+                "lefamulin-pharmacology-043",
+                "lefamulin-pharmacology-case-160",
+                "lefamulin-pharmacology-046",
+                "lefamulin-pharmacology-140",
+                "lefamulin-pharmacology-121",
+                "lefamulin-pharmacology-076",
+                "lefamulin-pharmacology-105",
+                "lefamulin-pharmacology-150",
+                "lefamulin-pharmacology-case-164"
+              ]
+            },
+            {
+              "target": "lefamulin-pharmacology-076",
+              "seed": 8,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "lefamulin-pharmacology-090",
+                "lefamulin-pharmacology-043",
+                "lefamulin-pharmacology-case-160",
+                "lefamulin-pharmacology-046",
+                "lefamulin-pharmacology-140",
+                "lefamulin-pharmacology-121",
+                "lefamulin-pharmacology-076",
+                "lefamulin-pharmacology-105",
+                "lefamulin-pharmacology-150",
+                "lefamulin-pharmacology-case-164"
+              ]
+            },
+            {
+              "target": "lefamulin-pharmacology-077",
+              "seed": 31,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "lefamulin-pharmacology-072",
+                "lefamulin-pharmacology-046",
+                "lefamulin-pharmacology-077",
+                "lefamulin-pharmacology-037",
+                "lefamulin-pharmacology-098",
+                "lefamulin-pharmacology-087",
+                "lefamulin-pharmacology-158",
+                "lefamulin-pharmacology-011",
+                "lefamulin-pharmacology-039",
+                "lefamulin-pharmacology-117"
+              ]
+            },
+            {
+              "target": "lefamulin-pharmacology-077",
+              "seed": 31,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "lefamulin-pharmacology-072",
+                "lefamulin-pharmacology-046",
+                "lefamulin-pharmacology-077",
+                "lefamulin-pharmacology-037",
+                "lefamulin-pharmacology-098",
+                "lefamulin-pharmacology-087",
+                "lefamulin-pharmacology-158",
+                "lefamulin-pharmacology-011",
+                "lefamulin-pharmacology-039",
+                "lefamulin-pharmacology-117"
+              ]
+            },
+            {
+              "target": "lefamulin-pharmacology-078",
+              "seed": 17,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "lefamulin-pharmacology-128",
+                "lefamulin-pharmacology-110",
+                "lefamulin-pharmacology-132",
+                "lefamulin-pharmacology-016",
+                "lefamulin-pharmacology-083",
+                "lefamulin-pharmacology-045",
+                "lefamulin-pharmacology-096",
+                "lefamulin-pharmacology-037",
+                "lefamulin-pharmacology-113",
+                "lefamulin-pharmacology-078"
+              ]
+            },
+            {
+              "target": "lefamulin-pharmacology-078",
+              "seed": 17,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "lefamulin-pharmacology-128",
+                "lefamulin-pharmacology-110",
+                "lefamulin-pharmacology-132",
+                "lefamulin-pharmacology-016",
+                "lefamulin-pharmacology-083",
+                "lefamulin-pharmacology-045",
+                "lefamulin-pharmacology-096",
+                "lefamulin-pharmacology-037",
+                "lefamulin-pharmacology-113",
+                "lefamulin-pharmacology-078"
+              ]
+            },
+            {
+              "target": "lefamulin-pharmacology-079",
+              "seed": 12,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "lefamulin-pharmacology-114",
+                "lefamulin-pharmacology-079",
+                "lefamulin-pharmacology-088",
+                "lefamulin-pharmacology-071",
+                "lefamulin-pharmacology-049",
+                "lefamulin-pharmacology-139",
+                "lefamulin-pharmacology-157",
+                "lefamulin-pharmacology-095",
+                "lefamulin-pharmacology-058",
+                "lefamulin-pharmacology-155"
+              ]
+            },
+            {
+              "target": "lefamulin-pharmacology-079",
+              "seed": 12,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "lefamulin-pharmacology-114",
+                "lefamulin-pharmacology-079",
+                "lefamulin-pharmacology-088",
+                "lefamulin-pharmacology-071",
+                "lefamulin-pharmacology-049",
+                "lefamulin-pharmacology-139",
+                "lefamulin-pharmacology-157",
+                "lefamulin-pharmacology-095",
+                "lefamulin-pharmacology-058",
+                "lefamulin-pharmacology-155"
+              ]
+            },
+            {
+              "target": "lefamulin-pharmacology-080",
+              "seed": 19,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "lefamulin-pharmacology-080",
+                "lefamulin-pharmacology-096",
+                "lefamulin-pharmacology-004",
+                "lefamulin-pharmacology-006",
+                "lefamulin-pharmacology-061",
+                "lefamulin-pharmacology-044",
+                "lefamulin-pharmacology-case-161",
+                "lefamulin-pharmacology-109",
+                "lefamulin-pharmacology-149",
+                "lefamulin-pharmacology-146"
+              ]
+            },
+            {
+              "target": "lefamulin-pharmacology-080",
+              "seed": 19,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "lefamulin-pharmacology-080",
+                "lefamulin-pharmacology-096",
+                "lefamulin-pharmacology-004",
+                "lefamulin-pharmacology-006",
+                "lefamulin-pharmacology-061",
+                "lefamulin-pharmacology-044",
+                "lefamulin-pharmacology-case-161",
+                "lefamulin-pharmacology-109",
+                "lefamulin-pharmacology-149",
+                "lefamulin-pharmacology-146"
+              ]
+            },
+            {
+              "target": "lefamulin-pharmacology-081",
+              "seed": 6,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "lefamulin-pharmacology-095",
+                "lefamulin-pharmacology-009",
+                "lefamulin-pharmacology-101",
+                "lefamulin-pharmacology-123",
+                "lefamulin-pharmacology-073",
+                "lefamulin-pharmacology-108",
+                "lefamulin-pharmacology-102",
+                "lefamulin-pharmacology-143",
+                "lefamulin-pharmacology-081",
+                "lefamulin-pharmacology-127"
+              ]
+            },
+            {
+              "target": "lefamulin-pharmacology-081",
+              "seed": 6,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "lefamulin-pharmacology-095",
+                "lefamulin-pharmacology-009",
+                "lefamulin-pharmacology-101",
+                "lefamulin-pharmacology-123",
+                "lefamulin-pharmacology-073",
+                "lefamulin-pharmacology-108",
+                "lefamulin-pharmacology-102",
+                "lefamulin-pharmacology-143",
+                "lefamulin-pharmacology-081",
+                "lefamulin-pharmacology-127"
+              ]
+            },
+            {
+              "target": "lefamulin-pharmacology-082",
+              "seed": 23,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "lefamulin-pharmacology-020",
+                "lefamulin-pharmacology-065",
+                "lefamulin-pharmacology-118",
+                "lefamulin-pharmacology-146",
+                "lefamulin-pharmacology-108",
+                "lefamulin-pharmacology-057",
+                "lefamulin-pharmacology-029",
+                "lefamulin-pharmacology-082",
+                "lefamulin-pharmacology-087",
+                "lefamulin-pharmacology-069"
+              ]
+            },
+            {
+              "target": "lefamulin-pharmacology-082",
+              "seed": 23,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "lefamulin-pharmacology-020",
+                "lefamulin-pharmacology-065",
+                "lefamulin-pharmacology-118",
+                "lefamulin-pharmacology-146",
+                "lefamulin-pharmacology-108",
+                "lefamulin-pharmacology-057",
+                "lefamulin-pharmacology-029",
+                "lefamulin-pharmacology-082",
+                "lefamulin-pharmacology-087",
+                "lefamulin-pharmacology-069"
+              ]
+            },
+            {
+              "target": "lefamulin-pharmacology-083",
+              "seed": 14,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "lefamulin-pharmacology-039",
+                "lefamulin-pharmacology-083",
+                "lefamulin-pharmacology-155",
+                "lefamulin-pharmacology-109",
+                "lefamulin-pharmacology-case-163",
+                "lefamulin-pharmacology-034",
+                "lefamulin-pharmacology-010",
+                "lefamulin-pharmacology-070",
+                "lefamulin-pharmacology-064",
+                "lefamulin-pharmacology-018"
+              ]
+            },
+            {
+              "target": "lefamulin-pharmacology-083",
+              "seed": 14,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "lefamulin-pharmacology-039",
+                "lefamulin-pharmacology-083",
+                "lefamulin-pharmacology-155",
+                "lefamulin-pharmacology-109",
+                "lefamulin-pharmacology-case-163",
+                "lefamulin-pharmacology-034",
+                "lefamulin-pharmacology-010",
+                "lefamulin-pharmacology-070",
+                "lefamulin-pharmacology-064",
+                "lefamulin-pharmacology-018"
+              ]
+            },
+            {
+              "target": "lefamulin-pharmacology-084",
+              "seed": 24,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "lefamulin-pharmacology-014",
+                "lefamulin-pharmacology-084",
+                "lefamulin-pharmacology-025",
+                "lefamulin-pharmacology-073",
+                "lefamulin-pharmacology-064",
+                "lefamulin-pharmacology-069",
+                "lefamulin-pharmacology-027",
+                "lefamulin-pharmacology-148",
+                "lefamulin-pharmacology-034",
+                "lefamulin-pharmacology-097"
+              ]
+            },
+            {
+              "target": "lefamulin-pharmacology-084",
+              "seed": 24,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "lefamulin-pharmacology-014",
+                "lefamulin-pharmacology-084",
+                "lefamulin-pharmacology-025",
+                "lefamulin-pharmacology-073",
+                "lefamulin-pharmacology-064",
+                "lefamulin-pharmacology-069",
+                "lefamulin-pharmacology-027",
+                "lefamulin-pharmacology-148",
+                "lefamulin-pharmacology-034",
+                "lefamulin-pharmacology-097"
+              ]
+            },
+            {
+              "target": "lefamulin-pharmacology-085",
+              "seed": 27,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "lefamulin-pharmacology-139",
+                "lefamulin-pharmacology-086",
+                "lefamulin-pharmacology-135",
+                "lefamulin-pharmacology-120",
+                "lefamulin-pharmacology-053",
+                "lefamulin-pharmacology-034",
+                "lefamulin-pharmacology-085",
+                "lefamulin-pharmacology-060",
+                "lefamulin-pharmacology-019",
+                "lefamulin-pharmacology-115"
+              ]
+            },
+            {
+              "target": "lefamulin-pharmacology-085",
+              "seed": 27,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "lefamulin-pharmacology-139",
+                "lefamulin-pharmacology-086",
+                "lefamulin-pharmacology-135",
+                "lefamulin-pharmacology-120",
+                "lefamulin-pharmacology-053",
+                "lefamulin-pharmacology-034",
+                "lefamulin-pharmacology-085",
+                "lefamulin-pharmacology-060",
+                "lefamulin-pharmacology-019",
+                "lefamulin-pharmacology-115"
+              ]
+            },
+            {
+              "target": "lefamulin-pharmacology-086",
+              "seed": 4,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "lefamulin-pharmacology-054",
+                "lefamulin-pharmacology-053",
+                "lefamulin-pharmacology-136",
+                "lefamulin-pharmacology-133",
+                "lefamulin-pharmacology-case-164",
+                "lefamulin-pharmacology-035",
+                "lefamulin-pharmacology-086",
+                "lefamulin-pharmacology-111",
+                "lefamulin-pharmacology-046",
+                "lefamulin-pharmacology-099"
+              ]
+            },
+            {
+              "target": "lefamulin-pharmacology-086",
+              "seed": 4,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "lefamulin-pharmacology-054",
+                "lefamulin-pharmacology-053",
+                "lefamulin-pharmacology-136",
+                "lefamulin-pharmacology-133",
+                "lefamulin-pharmacology-case-164",
+                "lefamulin-pharmacology-035",
+                "lefamulin-pharmacology-086",
+                "lefamulin-pharmacology-111",
+                "lefamulin-pharmacology-046",
+                "lefamulin-pharmacology-099"
+              ]
+            },
+            {
+              "target": "lefamulin-pharmacology-087",
+              "seed": 22,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "lefamulin-pharmacology-case-162",
+                "lefamulin-pharmacology-139",
+                "lefamulin-pharmacology-104",
+                "lefamulin-pharmacology-053",
+                "lefamulin-pharmacology-050",
+                "lefamulin-pharmacology-048",
+                "lefamulin-pharmacology-087",
+                "lefamulin-pharmacology-153",
+                "lefamulin-pharmacology-004",
+                "lefamulin-pharmacology-119"
+              ]
+            },
+            {
+              "target": "lefamulin-pharmacology-087",
+              "seed": 22,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "lefamulin-pharmacology-case-162",
+                "lefamulin-pharmacology-139",
+                "lefamulin-pharmacology-104",
+                "lefamulin-pharmacology-053",
+                "lefamulin-pharmacology-050",
+                "lefamulin-pharmacology-048",
+                "lefamulin-pharmacology-087",
+                "lefamulin-pharmacology-153",
+                "lefamulin-pharmacology-004",
+                "lefamulin-pharmacology-119"
+              ]
+            },
+            {
+              "target": "lefamulin-pharmacology-088",
+              "seed": 12,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "lefamulin-pharmacology-114",
+                "lefamulin-pharmacology-079",
+                "lefamulin-pharmacology-088",
+                "lefamulin-pharmacology-071",
+                "lefamulin-pharmacology-049",
+                "lefamulin-pharmacology-139",
+                "lefamulin-pharmacology-157",
+                "lefamulin-pharmacology-095",
+                "lefamulin-pharmacology-058",
+                "lefamulin-pharmacology-155"
+              ]
+            },
+            {
+              "target": "lefamulin-pharmacology-088",
+              "seed": 12,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "lefamulin-pharmacology-114",
+                "lefamulin-pharmacology-079",
+                "lefamulin-pharmacology-088",
+                "lefamulin-pharmacology-071",
+                "lefamulin-pharmacology-049",
+                "lefamulin-pharmacology-139",
+                "lefamulin-pharmacology-157",
+                "lefamulin-pharmacology-095",
+                "lefamulin-pharmacology-058",
+                "lefamulin-pharmacology-155"
+              ]
+            },
+            {
+              "target": "lefamulin-pharmacology-case-158",
+              "seed": 5,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "lefamulin-pharmacology-116",
+                "lefamulin-pharmacology-107",
+                "lefamulin-pharmacology-case-158",
+                "lefamulin-pharmacology-case-164",
+                "lefamulin-pharmacology-051",
+                "lefamulin-pharmacology-048",
+                "lefamulin-pharmacology-case-162",
+                "lefamulin-pharmacology-097",
+                "lefamulin-pharmacology-111",
+                "lefamulin-pharmacology-058"
+              ]
+            },
+            {
+              "target": "lefamulin-pharmacology-case-158",
+              "seed": 5,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "lefamulin-pharmacology-116",
+                "lefamulin-pharmacology-107",
+                "lefamulin-pharmacology-case-158",
+                "lefamulin-pharmacology-case-164",
+                "lefamulin-pharmacology-051",
+                "lefamulin-pharmacology-048",
+                "lefamulin-pharmacology-case-162",
+                "lefamulin-pharmacology-097",
+                "lefamulin-pharmacology-111",
+                "lefamulin-pharmacology-058"
+              ]
+            }
+          ],
+          "noHorizontalOverflow": true,
+          "unauthenticated": true
+        },
+        {
+          "width": 390,
+          "bodies": 40,
+          "exactMetadata": true,
+          "references": 3,
+          "checkResults": [
+            {
+              "wrong": true,
+              "grade": "0/1"
+            },
+            {
+              "wrong": false,
+              "grade": "1/1"
+            }
+          ],
+          "attempts": [
+            {
+              "target": "lefamulin-pharmacology-073",
+              "seed": 6,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "lefamulin-pharmacology-095",
+                "lefamulin-pharmacology-009",
+                "lefamulin-pharmacology-101",
+                "lefamulin-pharmacology-123",
+                "lefamulin-pharmacology-073",
+                "lefamulin-pharmacology-108",
+                "lefamulin-pharmacology-102",
+                "lefamulin-pharmacology-143",
+                "lefamulin-pharmacology-081",
+                "lefamulin-pharmacology-127"
+              ]
+            },
+            {
+              "target": "lefamulin-pharmacology-073",
+              "seed": 6,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "lefamulin-pharmacology-095",
+                "lefamulin-pharmacology-009",
+                "lefamulin-pharmacology-101",
+                "lefamulin-pharmacology-123",
+                "lefamulin-pharmacology-073",
+                "lefamulin-pharmacology-108",
+                "lefamulin-pharmacology-102",
+                "lefamulin-pharmacology-143",
+                "lefamulin-pharmacology-081",
+                "lefamulin-pharmacology-127"
+              ]
+            },
+            {
+              "target": "lefamulin-pharmacology-074",
+              "seed": 1,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "lefamulin-pharmacology-008",
+                "lefamulin-pharmacology-094",
+                "lefamulin-pharmacology-013",
+                "lefamulin-pharmacology-070",
+                "lefamulin-pharmacology-098",
+                "lefamulin-pharmacology-113",
+                "lefamulin-pharmacology-case-157",
+                "lefamulin-pharmacology-074",
+                "lefamulin-pharmacology-068",
+                "lefamulin-pharmacology-007"
+              ]
+            },
+            {
+              "target": "lefamulin-pharmacology-074",
+              "seed": 1,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "lefamulin-pharmacology-008",
+                "lefamulin-pharmacology-094",
+                "lefamulin-pharmacology-013",
+                "lefamulin-pharmacology-070",
+                "lefamulin-pharmacology-098",
+                "lefamulin-pharmacology-113",
+                "lefamulin-pharmacology-case-157",
+                "lefamulin-pharmacology-074",
+                "lefamulin-pharmacology-068",
+                "lefamulin-pharmacology-007"
+              ]
+            },
+            {
+              "target": "lefamulin-pharmacology-075",
+              "seed": 16,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "lefamulin-pharmacology-074",
+                "lefamulin-pharmacology-053",
+                "lefamulin-pharmacology-150",
+                "lefamulin-pharmacology-075",
+                "lefamulin-pharmacology-123",
+                "lefamulin-pharmacology-045",
+                "lefamulin-pharmacology-063",
+                "lefamulin-pharmacology-142",
+                "lefamulin-pharmacology-030",
+                "lefamulin-pharmacology-004"
+              ]
+            },
+            {
+              "target": "lefamulin-pharmacology-075",
+              "seed": 16,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "lefamulin-pharmacology-074",
+                "lefamulin-pharmacology-053",
+                "lefamulin-pharmacology-150",
+                "lefamulin-pharmacology-075",
+                "lefamulin-pharmacology-123",
+                "lefamulin-pharmacology-045",
+                "lefamulin-pharmacology-063",
+                "lefamulin-pharmacology-142",
+                "lefamulin-pharmacology-030",
+                "lefamulin-pharmacology-004"
+              ]
+            },
+            {
+              "target": "lefamulin-pharmacology-076",
+              "seed": 8,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "lefamulin-pharmacology-090",
+                "lefamulin-pharmacology-043",
+                "lefamulin-pharmacology-case-160",
+                "lefamulin-pharmacology-046",
+                "lefamulin-pharmacology-140",
+                "lefamulin-pharmacology-121",
+                "lefamulin-pharmacology-076",
+                "lefamulin-pharmacology-105",
+                "lefamulin-pharmacology-150",
+                "lefamulin-pharmacology-case-164"
+              ]
+            },
+            {
+              "target": "lefamulin-pharmacology-076",
+              "seed": 8,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "lefamulin-pharmacology-090",
+                "lefamulin-pharmacology-043",
+                "lefamulin-pharmacology-case-160",
+                "lefamulin-pharmacology-046",
+                "lefamulin-pharmacology-140",
+                "lefamulin-pharmacology-121",
+                "lefamulin-pharmacology-076",
+                "lefamulin-pharmacology-105",
+                "lefamulin-pharmacology-150",
+                "lefamulin-pharmacology-case-164"
+              ]
+            },
+            {
+              "target": "lefamulin-pharmacology-077",
+              "seed": 31,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "lefamulin-pharmacology-072",
+                "lefamulin-pharmacology-046",
+                "lefamulin-pharmacology-077",
+                "lefamulin-pharmacology-037",
+                "lefamulin-pharmacology-098",
+                "lefamulin-pharmacology-087",
+                "lefamulin-pharmacology-158",
+                "lefamulin-pharmacology-011",
+                "lefamulin-pharmacology-039",
+                "lefamulin-pharmacology-117"
+              ]
+            },
+            {
+              "target": "lefamulin-pharmacology-077",
+              "seed": 31,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "lefamulin-pharmacology-072",
+                "lefamulin-pharmacology-046",
+                "lefamulin-pharmacology-077",
+                "lefamulin-pharmacology-037",
+                "lefamulin-pharmacology-098",
+                "lefamulin-pharmacology-087",
+                "lefamulin-pharmacology-158",
+                "lefamulin-pharmacology-011",
+                "lefamulin-pharmacology-039",
+                "lefamulin-pharmacology-117"
+              ]
+            },
+            {
+              "target": "lefamulin-pharmacology-078",
+              "seed": 17,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "lefamulin-pharmacology-128",
+                "lefamulin-pharmacology-110",
+                "lefamulin-pharmacology-132",
+                "lefamulin-pharmacology-016",
+                "lefamulin-pharmacology-083",
+                "lefamulin-pharmacology-045",
+                "lefamulin-pharmacology-096",
+                "lefamulin-pharmacology-037",
+                "lefamulin-pharmacology-113",
+                "lefamulin-pharmacology-078"
+              ]
+            },
+            {
+              "target": "lefamulin-pharmacology-078",
+              "seed": 17,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "lefamulin-pharmacology-128",
+                "lefamulin-pharmacology-110",
+                "lefamulin-pharmacology-132",
+                "lefamulin-pharmacology-016",
+                "lefamulin-pharmacology-083",
+                "lefamulin-pharmacology-045",
+                "lefamulin-pharmacology-096",
+                "lefamulin-pharmacology-037",
+                "lefamulin-pharmacology-113",
+                "lefamulin-pharmacology-078"
+              ]
+            },
+            {
+              "target": "lefamulin-pharmacology-079",
+              "seed": 12,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "lefamulin-pharmacology-114",
+                "lefamulin-pharmacology-079",
+                "lefamulin-pharmacology-088",
+                "lefamulin-pharmacology-071",
+                "lefamulin-pharmacology-049",
+                "lefamulin-pharmacology-139",
+                "lefamulin-pharmacology-157",
+                "lefamulin-pharmacology-095",
+                "lefamulin-pharmacology-058",
+                "lefamulin-pharmacology-155"
+              ]
+            },
+            {
+              "target": "lefamulin-pharmacology-079",
+              "seed": 12,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "lefamulin-pharmacology-114",
+                "lefamulin-pharmacology-079",
+                "lefamulin-pharmacology-088",
+                "lefamulin-pharmacology-071",
+                "lefamulin-pharmacology-049",
+                "lefamulin-pharmacology-139",
+                "lefamulin-pharmacology-157",
+                "lefamulin-pharmacology-095",
+                "lefamulin-pharmacology-058",
+                "lefamulin-pharmacology-155"
+              ]
+            },
+            {
+              "target": "lefamulin-pharmacology-080",
+              "seed": 19,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "lefamulin-pharmacology-080",
+                "lefamulin-pharmacology-096",
+                "lefamulin-pharmacology-004",
+                "lefamulin-pharmacology-006",
+                "lefamulin-pharmacology-061",
+                "lefamulin-pharmacology-044",
+                "lefamulin-pharmacology-case-161",
+                "lefamulin-pharmacology-109",
+                "lefamulin-pharmacology-149",
+                "lefamulin-pharmacology-146"
+              ]
+            },
+            {
+              "target": "lefamulin-pharmacology-080",
+              "seed": 19,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "lefamulin-pharmacology-080",
+                "lefamulin-pharmacology-096",
+                "lefamulin-pharmacology-004",
+                "lefamulin-pharmacology-006",
+                "lefamulin-pharmacology-061",
+                "lefamulin-pharmacology-044",
+                "lefamulin-pharmacology-case-161",
+                "lefamulin-pharmacology-109",
+                "lefamulin-pharmacology-149",
+                "lefamulin-pharmacology-146"
+              ]
+            },
+            {
+              "target": "lefamulin-pharmacology-081",
+              "seed": 6,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "lefamulin-pharmacology-095",
+                "lefamulin-pharmacology-009",
+                "lefamulin-pharmacology-101",
+                "lefamulin-pharmacology-123",
+                "lefamulin-pharmacology-073",
+                "lefamulin-pharmacology-108",
+                "lefamulin-pharmacology-102",
+                "lefamulin-pharmacology-143",
+                "lefamulin-pharmacology-081",
+                "lefamulin-pharmacology-127"
+              ]
+            },
+            {
+              "target": "lefamulin-pharmacology-081",
+              "seed": 6,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "lefamulin-pharmacology-095",
+                "lefamulin-pharmacology-009",
+                "lefamulin-pharmacology-101",
+                "lefamulin-pharmacology-123",
+                "lefamulin-pharmacology-073",
+                "lefamulin-pharmacology-108",
+                "lefamulin-pharmacology-102",
+                "lefamulin-pharmacology-143",
+                "lefamulin-pharmacology-081",
+                "lefamulin-pharmacology-127"
+              ]
+            },
+            {
+              "target": "lefamulin-pharmacology-082",
+              "seed": 23,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "lefamulin-pharmacology-020",
+                "lefamulin-pharmacology-065",
+                "lefamulin-pharmacology-118",
+                "lefamulin-pharmacology-146",
+                "lefamulin-pharmacology-108",
+                "lefamulin-pharmacology-057",
+                "lefamulin-pharmacology-029",
+                "lefamulin-pharmacology-082",
+                "lefamulin-pharmacology-087",
+                "lefamulin-pharmacology-069"
+              ]
+            },
+            {
+              "target": "lefamulin-pharmacology-082",
+              "seed": 23,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "lefamulin-pharmacology-020",
+                "lefamulin-pharmacology-065",
+                "lefamulin-pharmacology-118",
+                "lefamulin-pharmacology-146",
+                "lefamulin-pharmacology-108",
+                "lefamulin-pharmacology-057",
+                "lefamulin-pharmacology-029",
+                "lefamulin-pharmacology-082",
+                "lefamulin-pharmacology-087",
+                "lefamulin-pharmacology-069"
+              ]
+            },
+            {
+              "target": "lefamulin-pharmacology-083",
+              "seed": 14,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "lefamulin-pharmacology-039",
+                "lefamulin-pharmacology-083",
+                "lefamulin-pharmacology-155",
+                "lefamulin-pharmacology-109",
+                "lefamulin-pharmacology-case-163",
+                "lefamulin-pharmacology-034",
+                "lefamulin-pharmacology-010",
+                "lefamulin-pharmacology-070",
+                "lefamulin-pharmacology-064",
+                "lefamulin-pharmacology-018"
+              ]
+            },
+            {
+              "target": "lefamulin-pharmacology-083",
+              "seed": 14,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "lefamulin-pharmacology-039",
+                "lefamulin-pharmacology-083",
+                "lefamulin-pharmacology-155",
+                "lefamulin-pharmacology-109",
+                "lefamulin-pharmacology-case-163",
+                "lefamulin-pharmacology-034",
+                "lefamulin-pharmacology-010",
+                "lefamulin-pharmacology-070",
+                "lefamulin-pharmacology-064",
+                "lefamulin-pharmacology-018"
+              ]
+            },
+            {
+              "target": "lefamulin-pharmacology-084",
+              "seed": 24,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "lefamulin-pharmacology-014",
+                "lefamulin-pharmacology-084",
+                "lefamulin-pharmacology-025",
+                "lefamulin-pharmacology-073",
+                "lefamulin-pharmacology-064",
+                "lefamulin-pharmacology-069",
+                "lefamulin-pharmacology-027",
+                "lefamulin-pharmacology-148",
+                "lefamulin-pharmacology-034",
+                "lefamulin-pharmacology-097"
+              ]
+            },
+            {
+              "target": "lefamulin-pharmacology-084",
+              "seed": 24,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "lefamulin-pharmacology-014",
+                "lefamulin-pharmacology-084",
+                "lefamulin-pharmacology-025",
+                "lefamulin-pharmacology-073",
+                "lefamulin-pharmacology-064",
+                "lefamulin-pharmacology-069",
+                "lefamulin-pharmacology-027",
+                "lefamulin-pharmacology-148",
+                "lefamulin-pharmacology-034",
+                "lefamulin-pharmacology-097"
+              ]
+            },
+            {
+              "target": "lefamulin-pharmacology-085",
+              "seed": 27,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "lefamulin-pharmacology-139",
+                "lefamulin-pharmacology-086",
+                "lefamulin-pharmacology-135",
+                "lefamulin-pharmacology-120",
+                "lefamulin-pharmacology-053",
+                "lefamulin-pharmacology-034",
+                "lefamulin-pharmacology-085",
+                "lefamulin-pharmacology-060",
+                "lefamulin-pharmacology-019",
+                "lefamulin-pharmacology-115"
+              ]
+            },
+            {
+              "target": "lefamulin-pharmacology-085",
+              "seed": 27,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "lefamulin-pharmacology-139",
+                "lefamulin-pharmacology-086",
+                "lefamulin-pharmacology-135",
+                "lefamulin-pharmacology-120",
+                "lefamulin-pharmacology-053",
+                "lefamulin-pharmacology-034",
+                "lefamulin-pharmacology-085",
+                "lefamulin-pharmacology-060",
+                "lefamulin-pharmacology-019",
+                "lefamulin-pharmacology-115"
+              ]
+            },
+            {
+              "target": "lefamulin-pharmacology-086",
+              "seed": 4,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "lefamulin-pharmacology-054",
+                "lefamulin-pharmacology-053",
+                "lefamulin-pharmacology-136",
+                "lefamulin-pharmacology-133",
+                "lefamulin-pharmacology-case-164",
+                "lefamulin-pharmacology-035",
+                "lefamulin-pharmacology-086",
+                "lefamulin-pharmacology-111",
+                "lefamulin-pharmacology-046",
+                "lefamulin-pharmacology-099"
+              ]
+            },
+            {
+              "target": "lefamulin-pharmacology-086",
+              "seed": 4,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "lefamulin-pharmacology-054",
+                "lefamulin-pharmacology-053",
+                "lefamulin-pharmacology-136",
+                "lefamulin-pharmacology-133",
+                "lefamulin-pharmacology-case-164",
+                "lefamulin-pharmacology-035",
+                "lefamulin-pharmacology-086",
+                "lefamulin-pharmacology-111",
+                "lefamulin-pharmacology-046",
+                "lefamulin-pharmacology-099"
+              ]
+            },
+            {
+              "target": "lefamulin-pharmacology-087",
+              "seed": 22,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "lefamulin-pharmacology-case-162",
+                "lefamulin-pharmacology-139",
+                "lefamulin-pharmacology-104",
+                "lefamulin-pharmacology-053",
+                "lefamulin-pharmacology-050",
+                "lefamulin-pharmacology-048",
+                "lefamulin-pharmacology-087",
+                "lefamulin-pharmacology-153",
+                "lefamulin-pharmacology-004",
+                "lefamulin-pharmacology-119"
+              ]
+            },
+            {
+              "target": "lefamulin-pharmacology-087",
+              "seed": 22,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "lefamulin-pharmacology-case-162",
+                "lefamulin-pharmacology-139",
+                "lefamulin-pharmacology-104",
+                "lefamulin-pharmacology-053",
+                "lefamulin-pharmacology-050",
+                "lefamulin-pharmacology-048",
+                "lefamulin-pharmacology-087",
+                "lefamulin-pharmacology-153",
+                "lefamulin-pharmacology-004",
+                "lefamulin-pharmacology-119"
+              ]
+            },
+            {
+              "target": "lefamulin-pharmacology-088",
+              "seed": 12,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "lefamulin-pharmacology-114",
+                "lefamulin-pharmacology-079",
+                "lefamulin-pharmacology-088",
+                "lefamulin-pharmacology-071",
+                "lefamulin-pharmacology-049",
+                "lefamulin-pharmacology-139",
+                "lefamulin-pharmacology-157",
+                "lefamulin-pharmacology-095",
+                "lefamulin-pharmacology-058",
+                "lefamulin-pharmacology-155"
+              ]
+            },
+            {
+              "target": "lefamulin-pharmacology-088",
+              "seed": 12,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "lefamulin-pharmacology-114",
+                "lefamulin-pharmacology-079",
+                "lefamulin-pharmacology-088",
+                "lefamulin-pharmacology-071",
+                "lefamulin-pharmacology-049",
+                "lefamulin-pharmacology-139",
+                "lefamulin-pharmacology-157",
+                "lefamulin-pharmacology-095",
+                "lefamulin-pharmacology-058",
+                "lefamulin-pharmacology-155"
+              ]
+            },
+            {
+              "target": "lefamulin-pharmacology-case-158",
+              "seed": 5,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "lefamulin-pharmacology-116",
+                "lefamulin-pharmacology-107",
+                "lefamulin-pharmacology-case-158",
+                "lefamulin-pharmacology-case-164",
+                "lefamulin-pharmacology-051",
+                "lefamulin-pharmacology-048",
+                "lefamulin-pharmacology-case-162",
+                "lefamulin-pharmacology-097",
+                "lefamulin-pharmacology-111",
+                "lefamulin-pharmacology-058"
+              ]
+            },
+            {
+              "target": "lefamulin-pharmacology-case-158",
+              "seed": 5,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "lefamulin-pharmacology-116",
+                "lefamulin-pharmacology-107",
+                "lefamulin-pharmacology-case-158",
+                "lefamulin-pharmacology-case-164",
+                "lefamulin-pharmacology-051",
+                "lefamulin-pharmacology-048",
+                "lefamulin-pharmacology-case-162",
+                "lefamulin-pharmacology-097",
+                "lefamulin-pharmacology-111",
+                "lefamulin-pharmacology-058"
+              ]
+            }
+          ],
+          "noHorizontalOverflow": true,
+          "unauthenticated": true
+        }
+      ],
+      "errors": [],
+      "captures": [
+        "body-Food-1440.png",
+        "body-The-1440.png",
+        "body-Eight-1440.png",
+        "body-A-1440.png",
+        "references-1440.png",
+        "figure-1440.png",
+        "oral-keypoints-1440.png",
+        "embedded-incorrect-1440.png",
+        "embedded-correct-1440.png",
+        "question-073-incorrect-1440.png",
+        "question-073-correct-1440.png",
+        "question-074-incorrect-1440.png",
+        "question-074-correct-1440.png",
+        "question-075-incorrect-1440.png",
+        "question-075-correct-1440.png",
+        "question-076-incorrect-1440.png",
+        "question-076-correct-1440.png",
+        "question-077-incorrect-1440.png",
+        "question-077-correct-1440.png",
+        "question-078-incorrect-1440.png",
+        "question-078-correct-1440.png",
+        "question-079-incorrect-1440.png",
+        "question-079-correct-1440.png",
+        "question-080-incorrect-1440.png",
+        "question-080-correct-1440.png",
+        "question-081-incorrect-1440.png",
+        "question-081-correct-1440.png",
+        "question-082-incorrect-1440.png",
+        "question-082-correct-1440.png",
+        "question-083-incorrect-1440.png",
+        "question-083-correct-1440.png",
+        "question-084-incorrect-1440.png",
+        "question-084-correct-1440.png",
+        "question-085-incorrect-1440.png",
+        "question-085-correct-1440.png",
+        "question-086-incorrect-1440.png",
+        "question-086-correct-1440.png",
+        "question-087-incorrect-1440.png",
+        "question-087-correct-1440.png",
+        "question-088-incorrect-1440.png",
+        "question-088-correct-1440.png",
+        "question-158-incorrect-1440.png",
+        "question-158-correct-1440.png",
+        "body-Food-390.png",
+        "body-The-390.png",
+        "body-Eight-390.png",
+        "body-A-390.png",
+        "references-390.png",
+        "figure-390.png",
+        "oral-keypoints-390.png",
+        "embedded-incorrect-390.png",
+        "embedded-correct-390.png",
+        "question-073-incorrect-390.png",
+        "question-073-correct-390.png",
+        "question-074-incorrect-390.png",
+        "question-074-correct-390.png",
+        "question-075-incorrect-390.png",
+        "question-075-correct-390.png",
+        "question-076-incorrect-390.png",
+        "question-076-correct-390.png",
+        "question-077-incorrect-390.png",
+        "question-077-correct-390.png",
+        "question-078-incorrect-390.png",
+        "question-078-correct-390.png",
+        "question-079-incorrect-390.png",
+        "question-079-correct-390.png",
+        "question-080-incorrect-390.png",
+        "question-080-correct-390.png",
+        "question-081-incorrect-390.png",
+        "question-081-correct-390.png",
+        "question-082-incorrect-390.png",
+        "question-082-correct-390.png",
+        "question-083-incorrect-390.png",
+        "question-083-correct-390.png",
+        "question-084-incorrect-390.png",
+        "question-084-correct-390.png",
+        "question-085-incorrect-390.png",
+        "question-085-correct-390.png",
+        "question-086-incorrect-390.png",
+        "question-086-correct-390.png",
+        "question-087-incorrect-390.png",
+        "question-087-correct-390.png",
+        "question-088-incorrect-390.png",
+        "question-088-correct-390.png",
+        "question-158-incorrect-390.png",
+        "question-158-correct-390.png"
+      ]
+    },
+    "cumulativeBrowser": {
+      "status": "passed",
+      "results": [
+        {
+          "width": 1440,
+          "wrong": true,
+          "seed": 111,
+          "grade": "9/10",
+          "ids": [
+            "cumulative-acute-liver-failure-acute-liver-failure-120",
+            "cumulative-shock-vasoactive-pharmacotherapy-shock-vasoactive-31-case",
+            "cumulative-lefamulin-pharmacology-lefamulin-pharmacology-085",
+            "cumulative-hiv-foundations-diagnosis-care-hiv-foundations-care-109",
+            "cumulative-diuretic-pharmacology-diuretic-pharmacology-001",
+            "cumulative-common-ear-conditions-common-ear-wax-definition",
+            "cumulative-antihypertensive-medicinal-chemistry-antihypertensive-medchem-059",
+            "cumulative-acute-kidney-injury-acute-kidney-injury-031",
+            "cumulative-urinary-incontinence-urinary-incontinence-01-principle",
+            "cumulative-pharmacy-concentrations-specific-gravity-strength-023"
+          ],
+          "feedbackAndReviewPathVerified": true
+        },
+        {
+          "width": 1440,
+          "wrong": false,
+          "seed": 111,
+          "grade": "10/10",
+          "ids": [
+            "cumulative-acute-liver-failure-acute-liver-failure-120",
+            "cumulative-shock-vasoactive-pharmacotherapy-shock-vasoactive-31-case",
+            "cumulative-lefamulin-pharmacology-lefamulin-pharmacology-085",
+            "cumulative-hiv-foundations-diagnosis-care-hiv-foundations-care-109",
+            "cumulative-diuretic-pharmacology-diuretic-pharmacology-001",
+            "cumulative-common-ear-conditions-common-ear-wax-definition",
+            "cumulative-antihypertensive-medicinal-chemistry-antihypertensive-medchem-059",
+            "cumulative-acute-kidney-injury-acute-kidney-injury-031",
+            "cumulative-urinary-incontinence-urinary-incontinence-01-principle",
+            "cumulative-pharmacy-concentrations-specific-gravity-strength-023"
+          ],
+          "feedbackAndReviewPathVerified": true
+        },
+        {
+          "width": 390,
+          "wrong": true,
+          "seed": 111,
+          "grade": "9/10",
+          "ids": [
+            "cumulative-acute-liver-failure-acute-liver-failure-120",
+            "cumulative-shock-vasoactive-pharmacotherapy-shock-vasoactive-31-case",
+            "cumulative-lefamulin-pharmacology-lefamulin-pharmacology-085",
+            "cumulative-hiv-foundations-diagnosis-care-hiv-foundations-care-109",
+            "cumulative-diuretic-pharmacology-diuretic-pharmacology-001",
+            "cumulative-common-ear-conditions-common-ear-wax-definition",
+            "cumulative-antihypertensive-medicinal-chemistry-antihypertensive-medchem-059",
+            "cumulative-acute-kidney-injury-acute-kidney-injury-031",
+            "cumulative-urinary-incontinence-urinary-incontinence-01-principle",
+            "cumulative-pharmacy-concentrations-specific-gravity-strength-023"
+          ],
+          "feedbackAndReviewPathVerified": true
+        },
+        {
+          "width": 390,
+          "wrong": false,
+          "seed": 111,
+          "grade": "10/10",
+          "ids": [
+            "cumulative-acute-liver-failure-acute-liver-failure-120",
+            "cumulative-shock-vasoactive-pharmacotherapy-shock-vasoactive-31-case",
+            "cumulative-lefamulin-pharmacology-lefamulin-pharmacology-085",
+            "cumulative-hiv-foundations-diagnosis-care-hiv-foundations-care-109",
+            "cumulative-diuretic-pharmacology-diuretic-pharmacology-001",
+            "cumulative-common-ear-conditions-common-ear-wax-definition",
+            "cumulative-antihypertensive-medicinal-chemistry-antihypertensive-medchem-059",
+            "cumulative-acute-kidney-injury-acute-kidney-injury-031",
+            "cumulative-urinary-incontinence-urinary-incontinence-01-principle",
+            "cumulative-pharmacy-concentrations-specific-gravity-strength-023"
+          ],
+          "feedbackAndReviewPathVerified": true
+        }
+      ],
+      "errors": [],
+      "captures": [
+        "cumulative-085-incorrect-1440.png",
+        "cumulative-085-correct-1440.png",
+        "cumulative-085-incorrect-390.png",
+        "cumulative-085-correct-390.png"
+      ]
+    },
+    "visualInspection": {
+      "all90OriginalCapturesActuallyViewed": true,
+      "nativeComparisonCount": 23,
+      "manifest": [
+        {
+          "comparison": "qa-question-73.png",
+          "originals": [
+            "question-073-incorrect-1440.png",
+            "question-073-correct-1440.png",
+            "question-073-incorrect-390.png",
+            "question-073-correct-390.png"
+          ],
+          "nativePixelsPreserved": true
+        },
+        {
+          "comparison": "qa-question-74.png",
+          "originals": [
+            "question-074-incorrect-1440.png",
+            "question-074-correct-1440.png",
+            "question-074-incorrect-390.png",
+            "question-074-correct-390.png"
+          ],
+          "nativePixelsPreserved": true
+        },
+        {
+          "comparison": "qa-question-75.png",
+          "originals": [
+            "question-075-incorrect-1440.png",
+            "question-075-correct-1440.png",
+            "question-075-incorrect-390.png",
+            "question-075-correct-390.png"
+          ],
+          "nativePixelsPreserved": true
+        },
+        {
+          "comparison": "qa-question-76.png",
+          "originals": [
+            "question-076-incorrect-1440.png",
+            "question-076-correct-1440.png",
+            "question-076-incorrect-390.png",
+            "question-076-correct-390.png"
+          ],
+          "nativePixelsPreserved": true
+        },
+        {
+          "comparison": "qa-question-77.png",
+          "originals": [
+            "question-077-incorrect-1440.png",
+            "question-077-correct-1440.png",
+            "question-077-incorrect-390.png",
+            "question-077-correct-390.png"
+          ],
+          "nativePixelsPreserved": true
+        },
+        {
+          "comparison": "qa-question-78.png",
+          "originals": [
+            "question-078-incorrect-1440.png",
+            "question-078-correct-1440.png",
+            "question-078-incorrect-390.png",
+            "question-078-correct-390.png"
+          ],
+          "nativePixelsPreserved": true
+        },
+        {
+          "comparison": "qa-question-79.png",
+          "originals": [
+            "question-079-incorrect-1440.png",
+            "question-079-correct-1440.png",
+            "question-079-incorrect-390.png",
+            "question-079-correct-390.png"
+          ],
+          "nativePixelsPreserved": true
+        },
+        {
+          "comparison": "qa-question-80.png",
+          "originals": [
+            "question-080-incorrect-1440.png",
+            "question-080-correct-1440.png",
+            "question-080-incorrect-390.png",
+            "question-080-correct-390.png"
+          ],
+          "nativePixelsPreserved": true
+        },
+        {
+          "comparison": "qa-question-81.png",
+          "originals": [
+            "question-081-incorrect-1440.png",
+            "question-081-correct-1440.png",
+            "question-081-incorrect-390.png",
+            "question-081-correct-390.png"
+          ],
+          "nativePixelsPreserved": true
+        },
+        {
+          "comparison": "qa-question-82.png",
+          "originals": [
+            "question-082-incorrect-1440.png",
+            "question-082-correct-1440.png",
+            "question-082-incorrect-390.png",
+            "question-082-correct-390.png"
+          ],
+          "nativePixelsPreserved": true
+        },
+        {
+          "comparison": "qa-question-83.png",
+          "originals": [
+            "question-083-incorrect-1440.png",
+            "question-083-correct-1440.png",
+            "question-083-incorrect-390.png",
+            "question-083-correct-390.png"
+          ],
+          "nativePixelsPreserved": true
+        },
+        {
+          "comparison": "qa-question-84.png",
+          "originals": [
+            "question-084-incorrect-1440.png",
+            "question-084-correct-1440.png",
+            "question-084-incorrect-390.png",
+            "question-084-correct-390.png"
+          ],
+          "nativePixelsPreserved": true
+        },
+        {
+          "comparison": "qa-question-85.png",
+          "originals": [
+            "question-085-incorrect-1440.png",
+            "question-085-correct-1440.png",
+            "question-085-incorrect-390.png",
+            "question-085-correct-390.png"
+          ],
+          "nativePixelsPreserved": true
+        },
+        {
+          "comparison": "qa-question-86.png",
+          "originals": [
+            "question-086-incorrect-1440.png",
+            "question-086-correct-1440.png",
+            "question-086-incorrect-390.png",
+            "question-086-correct-390.png"
+          ],
+          "nativePixelsPreserved": true
+        },
+        {
+          "comparison": "qa-question-87.png",
+          "originals": [
+            "question-087-incorrect-1440.png",
+            "question-087-correct-1440.png",
+            "question-087-incorrect-390.png",
+            "question-087-correct-390.png"
+          ],
+          "nativePixelsPreserved": true
+        },
+        {
+          "comparison": "qa-question-88.png",
+          "originals": [
+            "question-088-incorrect-1440.png",
+            "question-088-correct-1440.png",
+            "question-088-incorrect-390.png",
+            "question-088-correct-390.png"
+          ],
+          "nativePixelsPreserved": true
+        },
+        {
+          "comparison": "qa-question-158.png",
+          "originals": [
+            "question-158-incorrect-1440.png",
+            "question-158-correct-1440.png",
+            "question-158-incorrect-390.png",
+            "question-158-correct-390.png"
+          ],
+          "nativePixelsPreserved": true
+        },
+        {
+          "comparison": "qa-other-1.png",
+          "originals": [
+            "body-Food-1440.png",
+            "body-The-1440.png",
+            "body-Eight-1440.png",
+            "body-A-1440.png"
+          ],
+          "nativePixelsPreserved": true
+        },
+        {
+          "comparison": "qa-other-2.png",
+          "originals": [
+            "references-1440.png",
+            "figure-1440.png",
+            "oral-keypoints-1440.png",
+            "embedded-incorrect-1440.png"
+          ],
+          "nativePixelsPreserved": true
+        },
+        {
+          "comparison": "qa-other-3.png",
+          "originals": [
+            "embedded-correct-1440.png",
+            "body-Food-390.png",
+            "body-The-390.png",
+            "body-Eight-390.png"
+          ],
+          "nativePixelsPreserved": true
+        },
+        {
+          "comparison": "qa-other-4.png",
+          "originals": [
+            "body-A-390.png",
+            "references-390.png",
+            "figure-390.png",
+            "oral-keypoints-390.png"
+          ],
+          "nativePixelsPreserved": true
+        },
+        {
+          "comparison": "qa-other-5.png",
+          "originals": [
+            "embedded-incorrect-390.png",
+            "embedded-correct-390.png",
+            "cumulative-085-incorrect-1440.png",
+            "cumulative-085-correct-1440.png"
+          ],
+          "nativePixelsPreserved": true
+        },
+        {
+          "comparison": "qa-other-6.png",
+          "originals": [
+            "cumulative-085-incorrect-390.png",
+            "cumulative-085-correct-390.png"
+          ],
+          "nativePixelsPreserved": true
+        }
+      ],
+      "result": "Complete text andfeedback readable;all four diagramnodes present;no clipping,overlap orhorizontaloverflow at actual1440/390 widths;320px overflow passed.",
+      "noBrowserConsoleOrPageErrors": true
+    },
+    "toolingCorrection": "Initial system Python lacked fitz;source read/render retried with existing Python3.12 installation. First Next installation-guide .mdx path missing;located andread actual .md guide. No product API ordependency change.",
+    "localPreview": "Unauthenticated isolated build;no account persistence orproduction publication asserted."
+  },
+  "remainingReview": {
+    "nextAction": "Reconcile the16 retained pending antifungal formulation questions in enteral-nutrition-broader-antifungal-formulations-review.json against the supplied book and already approved FDA product labeling, including itraconazole/SUBA formulation differences and posaconazole suspension acidic-beverage claims. Include derived cumulative triazole089 and the pending whole formulation bodies/checks/figures/metadata;preserve full original assessment scope,stable IDs/keys/anchors andunrelated parent drafts. Continue remaining broader dependencies before fullEN closure andthen pediatricPN/fluid/calcium dependencies. Chapter1entry15/Chapter11 remain reviewing;full parent audits remain required.",
+    "otherParentCoverage": "151 other module questions,36 otherbodies,ninechecks/ninefigures andparent/otherlessonmetadata stillrequire parentaudit. WholeChapter22 source/read/modulecoverage incomplete.",
+    "wholeGoalComplete": false
+  },
+  "release": {
+    "branch": "audit/rxprep-content-2026-09-24",
+    "commit": null,
+    "push": "pending",
+    "receipt": "enteral-nutrition-broader-lefamulin-label-release.json",
+    "mainMerge": "not performed",
+    "production": "not verified"
+  },
+  "privateSourcesInGit": false,
+  "wholeGoalComplete": false
+}
