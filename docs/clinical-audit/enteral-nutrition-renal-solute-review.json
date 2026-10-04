@@ -1,0 +1,2914 @@
+{
+  "updated": "2026-10-04T17:17:37.820348+00:00",
+  "unit": "Approved National Academies renal-solute teaching and complete EN031 review",
+  "status": "verified logical unit; broader feeding dependencies and whole module/chapter remain reviewing",
+  "baseCommit": "2c43caec116bf9d0386648a017f2124771f920aa",
+  "sourceAuthorization": {
+    "status": "authorized; topic review and validation in progress",
+    "authorized": true,
+    "requestedReference": "National Academies Dietary Reference Intakes for Water, Potassium, Sodium, Chloride, and Sulfate",
+    "requestedScope": "Remaining renal-solute EN031 and formula-selection.concepts[3] only",
+    "questionPresentedAt": "2026-10-03T18:54:12.489388+00:00",
+    "evidence": "enteral-nutrition-renal-source-screening.json",
+    "noResponseIsNotApproval": true,
+    "authorization": {
+      "source": "Direct human message in current task",
+      "message": "I give approval",
+      "recordedAt": "2026-10-04T17:08:24.802187+00:00",
+      "scope": "National Academies Dietary Reference Intakes for Water, Potassium, Sodium, Chloride, and Sulfate; remaining EN031 and formula-selection.concepts[3] only"
+    }
+  },
+  "sourceReview": {
+    "reference": {
+      "author": "Institute of Medicine",
+      "year": 2005,
+      "title": "Dietary Reference Intakes for Water, Potassium, Sodium, Chloride, and Sulfate",
+      "chapter": "4Water",
+      "doi": "10.17226/10925",
+      "url": "https://www.nationalacademies.org/read/10925/chapter/6"
+    },
+    "completeRelevantScopes": [
+      {
+        "pages": [
+          81,
+          82,
+          83
+        ],
+        "section": "Urinary and Gastrointestinal Water Loss",
+        "claim": "Urine concentration has a physiological ceiling; the excretory load determines minimum urinary water. Supports conditional fixed-capacity mechanism, not inevitable dehydration.",
+        "visuals": "Complete source page81Table4-3 and82Figure4-4 with caption/axes viewed; respiratory table and historical hydration graph are context, no new clinical targets adopted."
+      },
+      {
+        "pages": [
+          135,
+          136
+        ],
+        "section": "Macronutrients; Sodium Intake",
+        "claim": "Urea arises from protein/amino-acid metabolism and requires renal water excretion. Eight-men,seven-day protein comparison with freely available water did not show higher urine volume; limited sodium findings do not establish a fixed water increase.",
+        "limits": "No numeric urea-water factor, dose, population-wide effect size or universal high-protein dehydration claim introduced."
+      },
+      {
+        "pages": [
+          144,
+          145
+        ],
+        "section": "Adults Ages19Through50Years: Evidence Considered in Setting the AI",
+        "claim": "Diet composition and electrolyte/excretory load affect water need; a population AI is not an individual fluid requirement.",
+        "limits": "No DRI daily liter target or new tube flush amount adopted."
+      }
+    ],
+    "sourceFilesKeptOutsideGit": true,
+    "originalPagesActuallyViewed": [
+      80,
+      81,
+      82,
+      83,
+      135,
+      136,
+      144,
+      145,
+      147,
+      148
+    ],
+    "adjacentPageLimits": "147-148older-adult context viewed; no complete Table4-14 review or new age-specific prescription claimed. All adopted renal scopes read as complete text and original pages. No whole113-page chapter audit claim.",
+    "htmlSha256": "394c7d9f976773cabe1f1ecdbff4e9d51f6ac3d6044468d8d978aa85d182fd22",
+    "pageImageHashes": {
+      "nap-80.png": "41c5d7cc662ba6a3b15ad357ef68acb64c91032022a7dd9fa7d151e503bc9808",
+      "nap-81.png": "70b2a4eea26430e5a30a1cf92ef200c674bd6d8e1f7b22166ab9c9808168777d",
+      "nap-82.png": "8b931e6ee72ad71bbce3615938c681c208b0100987e6879437ac72b0d6cb2ea0",
+      "nap-83.png": "d91020390a333feb6b1752b6934f6cbde0c6c375749900f8b537ab22a49692b9",
+      "nap-135.png": "a1d51aaa6256a31f0381360844b69b7693b278dbb7d3716c852e29d17469eeae",
+      "nap-136.png": "dd6bacab346e2dc1477169343cbcea0430ad73f7abe745363d2d6fe3fd124291",
+      "nap-144.png": "39e941f99507761c9fe3c127dfe982b9b75dd690d61f54e2d001002b131707c5",
+      "nap-145.png": "5ec20b15fd72f0f2cfa6e448c0021cd71bc5d49c9c986cdc0bdef1d2d3f09db2",
+      "nap-147.png": "dc625a5615686d0cbecc46d06c9a760f23145e5891be11265c39ff804519b781",
+      "nap-148.png": "8b2ced8843af25c7111b24ad0522b1d871b824d2dcdaa546e4e43a766651e25b"
+    },
+    "privateBookComparison": {
+      "printedPages": [
+        150,
+        161,
+        162,
+        163,
+        164
+      ],
+      "pdfPages": [
+        158,
+        169,
+        170,
+        171,
+        172
+      ],
+      "completePagesVisuallyReread": true,
+      "comparison": "Added approved mechanism does not change book water/nutrient exercises, medicine administration, tube sites or guideline qualifications. Book source remains primary; no new current product composition inferred."
+    }
+  },
+  "questionReview": [
+    {
+      "question": {
+        "id": "enteral-nutrition-031",
+        "question": "With unchanged renal concentrating capacity and insufficient water intake, why can a higher renal solute load increase dehydration risk?",
+        "choices": [
+          "It increases obligatory water needed for solute excretion",
+          "It lowers the minimum urine volume needed for solute excretion",
+          "It replaces urinary water losses with additional formula calories",
+          "It prevents protein metabolism from producing urinary solute"
+        ],
+        "answer": 0,
+        "rationale": "Urea from protein metabolism and electrolytes contribute to urinary solute. At the same renal concentrating capacity, clearing a higher solute load requires more urinary water, which can worsen a water deficit when intake is insufficient. The minimum required urine volume does not fall; formula calories do not replace water, and protein metabolism still produces urea. Higher solute intake alone does not prove dehydration when sufficient water is available. Assess the total water supply and renal status.",
+        "reviewHref": "#formula-selection"
+      },
+      "objectSha256": "366619db7d50fe6903cd2cb6b74bd6f5601cc7ee9a9eab2e0671993691201ea7",
+      "previousQuestion": {
+        "id": "enteral-nutrition-031",
+        "question": "Why can a high renal solute load worsen dehydration risk?",
+        "choices": [
+          "It increases obligatory water needed for solute excretion",
+          "It removes all sodium from urine",
+          "It blocks intestinal absorption",
+          "It makes formula sterile"
+        ],
+        "answer": 0,
+        "rationale": "Protein and electrolytes contribute solute that the kidney must excrete with water.",
+        "reviewHref": "#formula-selection"
+      },
+      "status": "full question source-verified after revision",
+      "stem": "Adds fixed concentrating capacity and inadequate intake; asks conditional mechanism, not guaranteed dehydration from higher protein alone.",
+      "key": "Original key0andcorrecttext retained; required urinary water increases with excretory load at same concentrating capacity.",
+      "distractors": [
+        {
+          "text": "It lowers the minimum urine volume needed for solute excretion",
+          "review": "Reverses the minimum urine volume relationship; incorrect at fixed concentrating capacity."
+        },
+        {
+          "text": "It replaces urinary water losses with additional formula calories",
+          "review": "Confuses energy provision with water replacement; book water and nutrient-label scopes distinguish these quantities."
+        },
+        {
+          "text": "It prevents protein metabolism from producing urinary solute",
+          "review": "Incorrectly removes urea production from protein metabolism; approved source identifies that end product."
+        }
+      ],
+      "rationale": "Explains conditional urinary-water mechanism, each distractor and adequate-water limitation; no new numerical prescription.",
+      "reviewAnchor": "Stable#formula-selection; browser-resolved at both widths."
+    }
+  ],
+  "teachingReview": [
+    {
+      "slug": "formula-selection",
+      "section": {
+        "heading": "Distinguish renal solute load from formula water",
+        "body": "Protein metabolism produces urea, and electrolytes also contribute to the solutes cleared in urine. Because urine cannot be concentrated without limit, a higher excretory solute load can require more urinary water at the same concentrating capacity. When available water is insufficient, this can increase dehydration risk. The 2005 Institute of Medicine water report supports this mechanism; it also describes a small study in which higher protein intake did not increase urine volume when water was freely available. A higher solute load therefore does not by itself establish dehydration or a fixed additional water dose. Review formula composition, all delivered water, losses, and renal function together."
+      },
+      "objectSha256": "c2fe4be616e4dd28cd4503028e05c1171e5e591b6e5e8df75646da9d914fc36a",
+      "status": "complete new original body source-verified",
+      "claimReview": "Protein-derived urea/electrolyte urinary load, finite concentrating ability, insufficient-water condition and adequate-water limitation supported by approved complete scopes. Practical composition/delivery/loss/renal assessment retains prior approved water-prescription scope."
+    }
+  ],
+  "metadataStatementReview": {
+    "total": 79,
+    "verified": 79,
+    "pending": 0,
+    "inventory": [
+      {
+        "path": "title",
+        "value": "Enteral Nutrition",
+        "status": "retained source-verified",
+        "objectSha256": "f8e20f67577de803d2e873618b7ba4b9c641c9abd30098f70058820199fd044d",
+        "sourceEvidence": [
+          {
+            "file": "enteral-nutrition-clinical-metadata-review.json",
+            "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+          }
+        ]
+      },
+      {
+        "path": "source",
+        "value": "Clinical nutrition support",
+        "status": "retained source-verified",
+        "objectSha256": "b3d1cf71dd1f8190df6c101230219680ebc1356899c2c643dd0846eedbbb5c53",
+        "sourceEvidence": [
+          {
+            "file": "enteral-nutrition-clinical-metadata-review.json",
+            "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+          }
+        ]
+      },
+      {
+        "path": "description",
+        "value": "Translate gastrointestinal function, access, formula composition, medication handling, and monitoring into a safe enteral nutrition plan.",
+        "status": "retained source-verified",
+        "objectSha256": "66afc86d84fe766c11604531e80ea88b6569c6240f3ad9e4256a37f594722fa0",
+        "sourceEvidence": [
+          {
+            "file": "enteral-nutrition-clinical-metadata-review.json",
+            "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+          }
+        ]
+      },
+      {
+        "path": "topics[0]",
+        "value": "Indications and timing",
+        "status": "retained source-verified",
+        "objectSha256": "251f1547c301d739b122027f8e1387146e47d9672ffb4d1ba9c34cc33a0ceb19",
+        "sourceEvidence": [
+          {
+            "file": "enteral-nutrition-clinical-metadata-review.json",
+            "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+          }
+        ]
+      },
+      {
+        "path": "topics[1]",
+        "value": "Access and delivery",
+        "status": "retained source-verified",
+        "objectSha256": "2a81651f067d856bc166de45a18709b44156e6bc7bb4940b1531840f7cb40fa3",
+        "sourceEvidence": [
+          {
+            "file": "enteral-nutrition-clinical-metadata-review.json",
+            "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+          }
+        ]
+      },
+      {
+        "path": "topics[2]",
+        "value": "Formula selection",
+        "status": "retained source-verified",
+        "objectSha256": "dcf4949a675350bd9943d9baf28f4a83d87290e17dcacb8ef456f3e2e8198ed9",
+        "sourceEvidence": [
+          {
+            "file": "enteral-nutrition-clinical-metadata-review.json",
+            "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+          }
+        ]
+      },
+      {
+        "path": "topics[3]",
+        "value": "Medication safety",
+        "status": "retained source-verified",
+        "objectSha256": "ffaa3667ce33d90d795a2b029cbf0550039424dd04ead1ab964e654d9a696f3e",
+        "sourceEvidence": [
+          {
+            "file": "enteral-nutrition-clinical-metadata-review.json",
+            "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+          }
+        ]
+      },
+      {
+        "path": "topics[4]",
+        "value": "Monitoring and complications",
+        "status": "retained source-verified",
+        "objectSha256": "373f66dc694381f4c356977240ce956172fdd334f82f3420699ccce42c125b62",
+        "sourceEvidence": [
+          {
+            "file": "enteral-nutrition-clinical-metadata-review.json",
+            "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+          }
+        ]
+      },
+      {
+        "path": "outcomes[0]",
+        "value": "Determine when enteral nutrition is appropriate and when feeding should be delayed or withheld.",
+        "status": "retained source-verified",
+        "objectSha256": "1f70373745baa19fd95c1b7d594f62232074259ae6333245c7f30f4ac805ee5a",
+        "sourceEvidence": [
+          {
+            "file": "enteral-nutrition-clinical-metadata-review.json",
+            "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+          }
+        ]
+      },
+      {
+        "path": "outcomes[1]",
+        "value": "Select an access site and administration method that match duration, gastric function, aspiration risk, and patient goals.",
+        "status": "retained source-verified",
+        "objectSha256": "c69399a236210ea717d790d89aeea379ce82290b3a91c6483ed30001a720e93c",
+        "sourceEvidence": [
+          {
+            "file": "enteral-nutrition-clinical-metadata-review.json",
+            "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+          }
+        ]
+      },
+      {
+        "path": "outcomes[2]",
+        "value": "Compare formula composition and calculate delivery, free water, and supplemental flush requirements.",
+        "status": "retained source-verified",
+        "objectSha256": "f4fc01a19317dd58babe50a95b662b79376b753c429e8a1cc1bae664cb44fb47",
+        "sourceEvidence": [
+          {
+            "file": "enteral-nutrition-clinical-metadata-review.json",
+            "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+          }
+        ]
+      },
+      {
+        "path": "outcomes[3]",
+        "value": "Administer medications through enteral access without compromising the drug, formula, or tube.",
+        "status": "retained source-verified",
+        "objectSha256": "5b3aa80e6e06a4e607e85c3fc204be1d8c26384309c07626e302db8cdeebe0f4",
+        "sourceEvidence": [
+          {
+            "file": "enteral-nutrition-clinical-metadata-review.json",
+            "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+          }
+        ]
+      },
+      {
+        "path": "outcomes[4]",
+        "value": "Recognize signs that warrant assessment for intolerance, refeeding risk, aspiration, contamination, or mechanical complications.",
+        "status": "retained source-verified",
+        "objectSha256": "15b8ce1298742084c8578342d3c1c08cfdf9a0594d9570dcd5e34d7797bc7691",
+        "sourceEvidence": [
+          {
+            "file": "enteral-nutrition-clinical-metadata-review.json",
+            "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+          }
+        ]
+      },
+      {
+        "path": "submodules.enteral-decision.title",
+        "value": "The Enteral Decision",
+        "status": "retained source-verified",
+        "objectSha256": "4403006383e2780bec958022b3ef855f772995760d4de7bff37461040c5fcaa3",
+        "sourceEvidence": [
+          {
+            "file": "enteral-nutrition-clinical-metadata-review.json",
+            "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+          }
+        ]
+      },
+      {
+        "path": "submodules.enteral-decision.summary",
+        "value": "Use the gastrointestinal tract when it can safely receive and absorb nutrients, but separate a functioning gut from a patient who is not yet adequately resuscitated.",
+        "status": "retained source-verified",
+        "objectSha256": "36a02105990d0e590cb2283992191af4d1d124209bcdad75808f0c55c4b89483",
+        "sourceEvidence": [
+          {
+            "file": "enteral-nutrition-clinical-metadata-review.json",
+            "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+          }
+        ]
+      },
+      {
+        "path": "submodules.enteral-decision.concepts[0]",
+        "value": "Indications and goals",
+        "status": "retained source-verified",
+        "objectSha256": "3ce73ae62b166b226e0ba6d232199a3e16e8e5610ce5f59284d949cf674392e2",
+        "sourceEvidence": [
+          {
+            "file": "enteral-nutrition-clinical-metadata-review.json",
+            "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+          }
+        ]
+      },
+      {
+        "path": "submodules.enteral-decision.concepts[1]",
+        "value": "Hemodynamic stability",
+        "status": "retained source-verified",
+        "objectSha256": "d05b8c8832f443d5b3e80d906c080ebebea4efe9c994b86aadb4d4c0a6ea6f11",
+        "sourceEvidence": [
+          {
+            "file": "enteral-nutrition-clinical-metadata-review.json",
+            "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+          }
+        ]
+      },
+      {
+        "path": "submodules.enteral-decision.concepts[2]",
+        "value": "Contraindications",
+        "status": "retained source-verified",
+        "objectSha256": "cb71b7885a0686848760cf96fc7de0d1b5452782c4f4e5f5e2f6fd30dd564230",
+        "sourceEvidence": [
+          {
+            "file": "enteral-nutrition-clinical-metadata-review.json",
+            "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+          }
+        ]
+      },
+      {
+        "path": "submodules.enteral-decision.concepts[3]",
+        "value": "Early critical care feeding",
+        "status": "retained source-verified",
+        "objectSha256": "3be2b97f41470edc3bfeb09540c4847891e12451d1231bcd953277fc98adbec7",
+        "sourceEvidence": [
+          {
+            "file": "enteral-nutrition-clinical-metadata-review.json",
+            "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+          }
+        ]
+      },
+      {
+        "path": "submodules.enteral-decision.application",
+        "value": "Before writing a feeding order, state why oral intake is inadequate, whether the gut is usable, whether perfusion is adequate, and what clinical outcome the therapy should support.",
+        "status": "retained source-verified",
+        "objectSha256": "ccdab0d1dced93f09d24c331c0f1bcb431dfcd187bbf7fc08515e0f8a853c709",
+        "sourceEvidence": [
+          {
+            "file": "enteral-nutrition-clinical-metadata-review.json",
+            "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+          }
+        ]
+      },
+      {
+        "path": "submodules.enteral-decision.keyPoints[0]",
+        "value": "A functional, safe gut supports enteral nutrition; compare routes within the applicable clinical setting.",
+        "status": "retained source-verified",
+        "objectSha256": "66d6f1a18c92c1e37c39b29274a18c0a25c268d4ea0ca4dbfa996f26883f12c6",
+        "sourceEvidence": [
+          {
+            "file": "enteral-nutrition-clinical-metadata-review.json",
+            "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+          }
+        ]
+      },
+      {
+        "path": "submodules.enteral-decision.keyPoints[1]",
+        "value": "Nutrition risk and expected inadequacy guide initiation.",
+        "status": "retained source-verified",
+        "objectSha256": "808e7dbad0d0c12e4f3442ef2cd4bbc03231e9aa736ed2256103017c74e72559",
+        "sourceEvidence": [
+          {
+            "file": "enteral-nutrition-clinical-metadata-review.json",
+            "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+          }
+        ]
+      },
+      {
+        "path": "submodules.enteral-decision.keyPoints[2]",
+        "value": "Withhold feeding for suspected bowel ischemia, complete intestinal obstruction, or hemodynamic instability; reassess before initiation or resumption.",
+        "status": "corrected source-verified",
+        "objectSha256": "81acc935b850f884ea858b148670af50d99a0534add55b9e1abcc44bc8cf30b1",
+        "sourceEvidence": [
+          {
+            "file": "enteral-nutrition-clinical-metadata-review.json",
+            "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+          }
+        ]
+      },
+      {
+        "path": "submodules.enteral-decision.keyPoints[3]",
+        "value": "Early feeding is a monitored strategy, not an automatic full-rate order.",
+        "status": "retained source-verified",
+        "objectSha256": "6c68053b9c220703f335551c0a3868bacee16bab61c4271ac6a8f1df94558450",
+        "sourceEvidence": [
+          {
+            "file": "enteral-nutrition-clinical-metadata-review.json",
+            "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+          }
+        ]
+      },
+      {
+        "path": "submodules.access-route.title",
+        "value": "Access and Route Selection",
+        "status": "retained source-verified",
+        "objectSha256": "7448e3d2156fa190915d437f5a52b6af4b1f2e8d1789d496ebd9d31ad2523d8c",
+        "sourceEvidence": [
+          {
+            "file": "enteral-nutrition-clinical-metadata-review.json",
+            "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+          }
+        ]
+      },
+      {
+        "path": "submodules.access-route.summary",
+        "value": "Access is chosen by expected duration, anatomy, gastric emptying, aspiration risk, procedural burden, and the therapies that must pass through the tube.",
+        "status": "retained source-verified",
+        "objectSha256": "648fae5fee64e68051c2d54819029c9ac0c2ad3d09c5754bff97f9210c502715",
+        "sourceEvidence": [
+          {
+            "file": "enteral-nutrition-clinical-metadata-review.json",
+            "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+          }
+        ]
+      },
+      {
+        "path": "submodules.access-route.concepts[0]",
+        "value": "Gastric versus postpyloric",
+        "status": "retained source-verified",
+        "objectSha256": "59cf510bf3e07d5c753c948c9a5a2ac919420e0e3a766c6a6f820758a8cdcebf",
+        "sourceEvidence": [
+          {
+            "file": "enteral-nutrition-clinical-metadata-review.json",
+            "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+          }
+        ]
+      },
+      {
+        "path": "submodules.access-route.concepts[1]",
+        "value": "Nasal versus percutaneous",
+        "status": "retained source-verified",
+        "objectSha256": "0c727a568d5faf356c16d0395b57861fdd90918fea25db4c87b21c0406d99317",
+        "sourceEvidence": [
+          {
+            "file": "enteral-nutrition-clinical-metadata-review.json",
+            "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+          }
+        ]
+      },
+      {
+        "path": "submodules.access-route.concepts[2]",
+        "value": "Placement confirmation",
+        "status": "retained source-verified",
+        "objectSha256": "8e419b02d4b4ad8a5a3d743c4d1918b31810089bff0bcf8b6fe99e14386793ab",
+        "sourceEvidence": [
+          {
+            "file": "enteral-nutrition-clinical-metadata-review.json",
+            "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+          }
+        ]
+      },
+      {
+        "path": "submodules.access-route.concepts[3]",
+        "value": "ENFit safety",
+        "status": "retained source-verified",
+        "objectSha256": "11c81fca612b4042f42bf6198a5d55e6cc423ec8d6a0d5e5fcd65abe308c3761",
+        "sourceEvidence": [
+          {
+            "file": "enteral-nutrition-clinical-metadata-review.json",
+            "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+          }
+        ]
+      },
+      {
+        "path": "submodules.access-route.application",
+        "value": "Choose the least invasive route that can reliably deliver the prescribed therapy, then build a placement, securement, skin care, and reassessment plan around it.",
+        "status": "retained source-verified",
+        "objectSha256": "3267df73f9ee8b9095fbf446e74c4feb5fda77ef223d8cd7fa9232a3e69a421f",
+        "sourceEvidence": [
+          {
+            "file": "enteral-nutrition-clinical-metadata-review.json",
+            "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+          }
+        ]
+      },
+      {
+        "path": "submodules.access-route.keyPoints[0]",
+        "value": "Gastric access permits bolus, intermittent, or continuous feeding when function, tolerance, and aspiration risk allow.",
+        "status": "corrected source-verified",
+        "objectSha256": "9dfc8586e8808ceec26ecf5ed7ace5d486cd999eba013bd8b5535d2c77489e57",
+        "sourceEvidence": [
+          {
+            "file": "enteral-nutrition-clinical-metadata-review.json",
+            "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+          }
+        ]
+      },
+      {
+        "path": "submodules.access-route.keyPoints[1]",
+        "value": "Postpyloric access is selected for a clinical reason, not by habit.",
+        "status": "retained source-verified",
+        "objectSha256": "60604933582d574ebe368c7b43003429bb6d21cea17651db0fb16aa9090bebfa",
+        "sourceEvidence": [
+          {
+            "file": "enteral-nutrition-clinical-metadata-review.json",
+            "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+          }
+        ]
+      },
+      {
+        "path": "submodules.access-route.keyPoints[2]",
+        "value": "Confirm initial placement before use and reassess possible migration.",
+        "status": "retained source-verified",
+        "objectSha256": "5dd993d7c6a1d803b1463d9edf8c967ec1802a755e30eb1e6af4bd223f44f124",
+        "sourceEvidence": [
+          {
+            "file": "enteral-nutrition-clinical-metadata-review.json",
+            "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+          }
+        ]
+      },
+      {
+        "path": "submodules.access-route.keyPoints[3]",
+        "value": "Use enteral-specific connectors to reduce the risk of wrong-route connections.",
+        "status": "corrected source-verified",
+        "objectSha256": "1c9c2ce597ce14eeca7cb6c3ca5c7ae1b251bd7be5df7dc537cd46f5ea9bf122",
+        "sourceEvidence": [
+          {
+            "file": "enteral-nutrition-clinical-metadata-review.json",
+            "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+          }
+        ]
+      },
+      {
+        "path": "submodules.delivery-prescription.title",
+        "value": "Delivery and the Feeding Prescription",
+        "status": "retained source-verified",
+        "objectSha256": "45c74a18eeaf8c201249ac0c1152870cddd88253648a1cec1bbe3011a602abde",
+        "sourceEvidence": [
+          {
+            "file": "enteral-nutrition-clinical-metadata-review.json",
+            "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+          }
+        ]
+      },
+      {
+        "path": "submodules.delivery-prescription.summary",
+        "value": "The prescription links a daily nutrient and fluid target to a formula, route, rate, schedule, flush plan, and advancement strategy.",
+        "status": "retained source-verified",
+        "objectSha256": "c3d99b513de1ba64c5afeb8106dc5a0f2c2e551060d6a2b2fab4171c9711f9a3",
+        "sourceEvidence": [
+          {
+            "file": "enteral-nutrition-clinical-metadata-review.json",
+            "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+          }
+        ]
+      },
+      {
+        "path": "submodules.delivery-prescription.concepts[0]",
+        "value": "Bolus, intermittent, and continuous delivery",
+        "status": "retained source-verified",
+        "objectSha256": "b506a78ad3169fa23e94c16429c860adb1efd5d29192c5ccd1e046d29af8f4b5",
+        "sourceEvidence": [
+          {
+            "file": "enteral-nutrition-clinical-metadata-review.json",
+            "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+          }
+        ]
+      },
+      {
+        "path": "submodules.delivery-prescription.concepts[1]",
+        "value": "Daily volume targets",
+        "status": "retained source-verified",
+        "objectSha256": "f3929223c85e321eca68bcfc3ec1969dc05f3bb2f81bb9fd7f2ab895d54c9a96",
+        "sourceEvidence": [
+          {
+            "file": "enteral-nutrition-clinical-metadata-review.json",
+            "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+          }
+        ]
+      },
+      {
+        "path": "submodules.delivery-prescription.concepts[2]",
+        "value": "Rate calculations",
+        "status": "retained source-verified",
+        "objectSha256": "9fd0f852ee320c391b770da361ec81831d9e3e8dec6101ee078961a51644ba29",
+        "sourceEvidence": [
+          {
+            "file": "enteral-nutrition-clinical-metadata-review.json",
+            "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+          }
+        ]
+      },
+      {
+        "path": "submodules.delivery-prescription.concepts[3]",
+        "value": "Advancement and interruptions",
+        "status": "retained source-verified",
+        "objectSha256": "6bc622132c072aced3c834bea814d170fc40a996db5d4050f68a4873d4fb3004",
+        "sourceEvidence": [
+          {
+            "file": "enteral-nutrition-clinical-metadata-review.json",
+            "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+          }
+        ]
+      },
+      {
+        "path": "submodules.delivery-prescription.application",
+        "value": "Every order should make the intended daily volume visible. Calculate what will actually be delivered after holds, procedures, medication windows, and pump downtime.",
+        "status": "retained source-verified",
+        "objectSha256": "00a35b025d4bf5b4462fe1d799889a56a7f82023e6e9960fd253bc52478dc658",
+        "sourceEvidence": [
+          {
+            "file": "enteral-nutrition-clinical-metadata-review.json",
+            "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+          }
+        ]
+      },
+      {
+        "path": "submodules.delivery-prescription.keyPoints[0]",
+        "value": "Bolus feeding is generally a gastric strategy.",
+        "status": "retained source-verified",
+        "objectSha256": "162d4865d0a131b6ad6b76cc7231bb7974a17989aa2b967e5e9cea18215ef5e9",
+        "sourceEvidence": [
+          {
+            "file": "enteral-nutrition-clinical-metadata-review.json",
+            "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+          }
+        ]
+      },
+      {
+        "path": "submodules.delivery-prescription.keyPoints[1]",
+        "value": "Rate multiplied by hours equals delivered volume.",
+        "status": "retained source-verified",
+        "objectSha256": "8e12cc00173df1ad625c63b26cd61772fde087cec99b8e6d9014d3238f3f5090",
+        "sourceEvidence": [
+          {
+            "file": "enteral-nutrition-clinical-metadata-review.json",
+            "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+          }
+        ]
+      },
+      {
+        "path": "submodules.delivery-prescription.keyPoints[2]",
+        "value": "Advancement follows tolerance and refeeding risk.",
+        "status": "retained source-verified",
+        "objectSha256": "270d4c59d1e44c79c717fbea63409c5788ec688cd4bdd3237eabbf1b491519fb",
+        "sourceEvidence": [
+          {
+            "file": "enteral-nutrition-clinical-metadata-review.json",
+            "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+          }
+        ]
+      },
+      {
+        "path": "submodules.delivery-prescription.keyPoints[3]",
+        "value": "Track prescribed volume against actual delivery.",
+        "status": "retained source-verified",
+        "objectSha256": "ae94209d6276f2ca28625507c8f4288c32268ef78d60819fba62a33e3b00e4fe",
+        "sourceEvidence": [
+          {
+            "file": "enteral-nutrition-clinical-metadata-review.json",
+            "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+          }
+        ]
+      },
+      {
+        "path": "submodules.formula-selection.title",
+        "value": "Formula Selection and Hydration",
+        "status": "retained source-verified",
+        "objectSha256": "75490b8e44681344c26b5da6d3cce052445835d819d986b950edfe70521c6d4d",
+        "sourceEvidence": [
+          {
+            "file": "enteral-nutrition-clinical-metadata-review.json",
+            "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+          }
+        ]
+      },
+      {
+        "path": "submodules.formula-selection.summary",
+        "value": "Match formula composition to nutrient, volume, digestion, absorption, electrolyte, and tolerance needs; greater complexity does not establish greater benefit.",
+        "status": "retained source-verified",
+        "objectSha256": "8280c45c2878ea990cfd2429be9f96bac446eeee43b21d449aa81f3a962702c8",
+        "sourceEvidence": [
+          {
+            "file": "enteral-nutrition-clinical-metadata-review.json",
+            "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+          }
+        ]
+      },
+      {
+        "path": "submodules.formula-selection.concepts[0]",
+        "value": "Polymeric and peptide-based formulas",
+        "status": "retained source-verified",
+        "objectSha256": "a53977c0ffd7d3d7a79728477d2a7c7f3a3ccc042d969c8f4b566764b7ab036e",
+        "sourceEvidence": [
+          {
+            "file": "enteral-nutrition-clinical-metadata-review.json",
+            "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+          }
+        ]
+      },
+      {
+        "path": "submodules.formula-selection.concepts[1]",
+        "value": "Caloric density",
+        "status": "retained source-verified",
+        "objectSha256": "327c36456e22d84eb0297d51680991fe3cda9ff547ded63b996d8698d148d166",
+        "sourceEvidence": [
+          {
+            "file": "enteral-nutrition-clinical-metadata-review.json",
+            "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+          }
+        ]
+      },
+      {
+        "path": "submodules.formula-selection.concepts[2]",
+        "value": "Fiber and disease-specific products",
+        "status": "retained source-verified",
+        "objectSha256": "f70171fb90b6558b938dbde9539b958d4dd9bf8f18a4a39074bc6748c433f4a7",
+        "sourceEvidence": [
+          {
+            "file": "enteral-nutrition-clinical-metadata-review.json",
+            "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+          }
+        ]
+      },
+      {
+        "path": "submodules.formula-selection.concepts[3]",
+        "value": "Free water and renal solute load",
+        "status": "source-verified; renal solute mechanism and distinction from delivered formula water",
+        "objectSha256": "d4e0704a937eca44ea24bc539a3f086569e5d84a2f51663fbae2d5969bc8f59b",
+        "sourceEvidence": [
+          {
+            "file": "enteral-nutrition-renal-solute-review.json",
+            "scope": "approved2005Water81-83,135-136,144-145; retained product-water/individualized-prescription source review"
+          }
+        ]
+      },
+      {
+        "path": "submodules.formula-selection.application",
+        "value": "Start with physiology and the nutrition prescription. Product marketing cannot substitute for an assessment of protein, calories, fluid, electrolytes, fiber, absorption, cost, and evidence.",
+        "status": "retained source-verified",
+        "objectSha256": "1b33286b426bc5fae9bd21f1838bb7af55e72f52cbc1db54ba1fc20b0654a04c",
+        "sourceEvidence": [
+          {
+            "file": "enteral-nutrition-clinical-metadata-review.json",
+            "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+          }
+        ]
+      },
+      {
+        "path": "submodules.formula-selection.keyPoints[0]",
+        "value": "Polymeric formula is a reasonable starting point when digestion and absorption are intact.",
+        "status": "retained source-verified",
+        "objectSha256": "5fcca20350861980af8d1102cba6974132f95d055f93ab5a66214037da8bfad4",
+        "sourceEvidence": [
+          {
+            "file": "enteral-nutrition-clinical-metadata-review.json",
+            "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+          }
+        ]
+      },
+      {
+        "path": "submodules.formula-selection.keyPoints[1]",
+        "value": "Calculate formula water from product composition and the volume actually delivered.",
+        "status": "retained source-verified",
+        "objectSha256": "ab27eb4e6e4b90ba6113c9315b4f2e00355666160f91ac51427ada96f2e97f4e",
+        "sourceEvidence": [
+          {
+            "file": "enteral-nutrition-clinical-metadata-review.json",
+            "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+          }
+        ]
+      },
+      {
+        "path": "submodules.formula-selection.keyPoints[2]",
+        "value": "Specialty formulas require a patient-specific rationale.",
+        "status": "retained source-verified",
+        "objectSha256": "784fbaca814e5f42dd8b99ff5036a5fb7c6c2817fb4e582a5198ffee59ab6f16",
+        "sourceEvidence": [
+          {
+            "file": "enteral-nutrition-clinical-metadata-review.json",
+            "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+          }
+        ]
+      },
+      {
+        "path": "submodules.formula-selection.keyPoints[3]",
+        "value": "Formula volume and water volume are not interchangeable.",
+        "status": "retained source-verified",
+        "objectSha256": "a8ef03fbf6c2ac38c66a0cc77e94f26fbf45e7f26dbf3a909c66de4cc15fad4c",
+        "sourceEvidence": [
+          {
+            "file": "enteral-nutrition-clinical-metadata-review.json",
+            "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+          }
+        ]
+      },
+      {
+        "path": "submodules.medication-administration.title",
+        "value": "Medication Administration Through Enteral Access",
+        "status": "retained source-verified",
+        "objectSha256": "db7c293d313ce9e25209cb0d6c8109a4066cdc13a492deff00e167a9256a85a5",
+        "sourceEvidence": [
+          {
+            "file": "enteral-nutrition-clinical-metadata-review.json",
+            "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+          }
+        ]
+      },
+      {
+        "path": "submodules.medication-administration.summary",
+        "value": "Safe medication delivery requires a dosage-form review, absorption-site review, drug-specific feeding plan, and flush sequence for every administration.",
+        "status": "retained source-verified",
+        "objectSha256": "9c9c6b60856821946128751fedfe7cd5b91f7e7dc58444019cc689e332b93b6e",
+        "sourceEvidence": [
+          {
+            "file": "enteral-nutrition-clinical-metadata-review.json",
+            "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+          }
+        ]
+      },
+      {
+        "path": "submodules.medication-administration.concepts[0]",
+        "value": "Do-not-crush formulations",
+        "status": "retained source-verified",
+        "objectSha256": "69185786bf74c1a8bf38e54954b0525dd155c1ee374e91be49939122a3f791f1",
+        "sourceEvidence": [
+          {
+            "file": "enteral-nutrition-clinical-metadata-review.json",
+            "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+          }
+        ]
+      },
+      {
+        "path": "submodules.medication-administration.concepts[1]",
+        "value": "Drug and nutrient interactions",
+        "status": "retained source-verified",
+        "objectSha256": "ee8a97c89b9c1f113baffab814a1beec78d399f497ca7d59916e6f62eecf8fb2",
+        "sourceEvidence": [
+          {
+            "file": "enteral-nutrition-clinical-metadata-review.json",
+            "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+          }
+        ]
+      },
+      {
+        "path": "submodules.medication-administration.concepts[2]",
+        "value": "Flush sequence",
+        "status": "retained source-verified",
+        "objectSha256": "28e2e7438ffa4adf46293538f18093aeed7666182719be69ceab2ad0600dae83",
+        "sourceEvidence": [
+          {
+            "file": "enteral-nutrition-clinical-metadata-review.json",
+            "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+          }
+        ]
+      },
+      {
+        "path": "submodules.medication-administration.concepts[3]",
+        "value": "Tube site and dosage form",
+        "status": "retained source-verified",
+        "objectSha256": "582372d8cdc86998cda128df44b21f02184dafefb6fb05269f445433fa1e1e6e",
+        "sourceEvidence": [
+          {
+            "file": "enteral-nutrition-clinical-metadata-review.json",
+            "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+          }
+        ]
+      },
+      {
+        "path": "submodules.medication-administration.application",
+        "value": "Do not ask only whether a tablet can fit through a tube. Ask whether the dosage form can be altered, whether the drug can be absorbed beyond the tube tip, and whether feeding changes exposure.",
+        "status": "retained source-verified",
+        "objectSha256": "037d3d81d808601faab6f44932514fcc69ef8a2f50658224f5721eeef95e9463",
+        "sourceEvidence": [
+          {
+            "file": "enteral-nutrition-clinical-metadata-review.json",
+            "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+          }
+        ]
+      },
+      {
+        "path": "submodules.medication-administration.keyPoints[0]",
+        "value": "Check product-specific instructions before altering or administering any dosage form through a tube.",
+        "status": "corrected source-verified",
+        "objectSha256": "472f6e6500875b794ecd79052206eaca468de37b8ca5fb8d8b10e0374fcee5d8",
+        "sourceEvidence": [
+          {
+            "file": "enteral-nutrition-clinical-metadata-review.json",
+            "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+          }
+        ]
+      },
+      {
+        "path": "submodules.medication-administration.keyPoints[1]",
+        "value": "Give medications separately from formula and from one another.",
+        "status": "retained source-verified",
+        "objectSha256": "6b7d99da36e7066c5a238227cccf3c9e3230186959ad1070978215e55553758a",
+        "sourceEvidence": [
+          {
+            "file": "enteral-nutrition-clinical-metadata-review.json",
+            "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+          }
+        ]
+      },
+      {
+        "path": "submodules.medication-administration.keyPoints[2]",
+        "value": "Use drug-specific feeding holds rather than a universal rule.",
+        "status": "retained source-verified",
+        "objectSha256": "ad27a71f60d4a90e029157b816b8405bdb8d394880d1f000ab78670067514bf1",
+        "sourceEvidence": [
+          {
+            "file": "enteral-nutrition-clinical-metadata-review.json",
+            "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+          }
+        ]
+      },
+      {
+        "path": "submodules.medication-administration.keyPoints[3]",
+        "value": "The tube tip can change drug absorption and effect.",
+        "status": "retained source-verified",
+        "objectSha256": "43ef8346ad6ddba3f654f8184fc5b51916ad8415289d2f182406117a3bb59af4",
+        "sourceEvidence": [
+          {
+            "file": "enteral-nutrition-clinical-metadata-review.json",
+            "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+          }
+        ]
+      },
+      {
+        "path": "submodules.monitoring-complications.title",
+        "value": "Monitoring and Complication Prevention",
+        "status": "retained source-verified",
+        "objectSha256": "a5902741a30b812511df3ea6e91c3b6bfffdade9c55cb0a1115eec4efe5a4917",
+        "sourceEvidence": [
+          {
+            "file": "enteral-nutrition-clinical-metadata-review.json",
+            "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+          }
+        ]
+      },
+      {
+        "path": "submodules.monitoring-complications.summary",
+        "value": "Tolerance is a clinical pattern. Integrate delivered volume, symptoms, examination, stool, fluid balance, glucose, electrolytes, access integrity, and infection risk.",
+        "status": "retained source-verified",
+        "objectSha256": "a5710cc0725a088b37a82f6439e36cf2bfeb730687f0222c080b5b6fc45780e5",
+        "sourceEvidence": [
+          {
+            "file": "enteral-nutrition-clinical-metadata-review.json",
+            "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+          }
+        ]
+      },
+      {
+        "path": "submodules.monitoring-complications.concepts[0]",
+        "value": "Aspiration prevention",
+        "status": "retained source-verified",
+        "objectSha256": "2fc9c232e918c9edcbfe9bb571f71de02cf247cb7740212d8b9cd4f4b1014ed2",
+        "sourceEvidence": [
+          {
+            "file": "enteral-nutrition-clinical-metadata-review.json",
+            "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+          }
+        ]
+      },
+      {
+        "path": "submodules.monitoring-complications.concepts[1]",
+        "value": "Diarrhea and intolerance",
+        "status": "retained source-verified",
+        "objectSha256": "b5e8ca7f7ae55685005cb8b32172058eef191ee8fa337ab9a0e7e2a5f26d89e0",
+        "sourceEvidence": [
+          {
+            "file": "enteral-nutrition-clinical-metadata-review.json",
+            "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+          }
+        ]
+      },
+      {
+        "path": "submodules.monitoring-complications.concepts[2]",
+        "value": "Tube obstruction and displacement",
+        "status": "retained source-verified",
+        "objectSha256": "6581815187fa5a8a59eea11b298e9931a807b16d7c124215c1f5afa0dc8e1d84",
+        "sourceEvidence": [
+          {
+            "file": "enteral-nutrition-clinical-metadata-review.json",
+            "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+          }
+        ]
+      },
+      {
+        "path": "submodules.monitoring-complications.concepts[3]",
+        "value": "Refeeding and metabolic monitoring",
+        "status": "retained source-verified",
+        "objectSha256": "c603b6a8aedc2b908b6ff167bd016ac4d9e2df86706bd6029365fd9b77da928a",
+        "sourceEvidence": [
+          {
+            "file": "enteral-nutrition-clinical-metadata-review.json",
+            "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+          }
+        ]
+      },
+      {
+        "path": "submodules.monitoring-complications.application",
+        "value": "When a problem appears, assess gastrointestinal, metabolic, mechanical, medication-related, and infectious causes. Respond promptly to urgent findings and reassess the feeding plan.",
+        "status": "retained source-verified",
+        "objectSha256": "5ed08351e41d79b78326368c3fd8464d195ca516a52adf6978ab299db4295388",
+        "sourceEvidence": [
+          {
+            "file": "enteral-nutrition-clinical-metadata-review.json",
+            "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+          }
+        ]
+      },
+      {
+        "path": "submodules.monitoring-complications.keyPoints[0]",
+        "value": "Aspiration prevention uses several coordinated measures.",
+        "status": "retained source-verified",
+        "objectSha256": "644abda3c11331a90c5912b99e6e744d6fef930afacf2f825a9b487ed1ee8a96",
+        "sourceEvidence": [
+          {
+            "file": "enteral-nutrition-clinical-metadata-review.json",
+            "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+          }
+        ]
+      },
+      {
+        "path": "submodules.monitoring-complications.keyPoints[1]",
+        "value": "A residual value must be interpreted in clinical context.",
+        "status": "retained source-verified",
+        "objectSha256": "96c039db0b5a573048a0f4fb3dd1258e3e9e935cfb0fe6ee501acab7dc248a8a",
+        "sourceEvidence": [
+          {
+            "file": "enteral-nutrition-clinical-metadata-review.json",
+            "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+          }
+        ]
+      },
+      {
+        "path": "submodules.monitoring-complications.keyPoints[2]",
+        "value": "Assess medications as possible causes of diarrhea and tube obstruction.",
+        "status": "corrected source-verified",
+        "objectSha256": "97dab9363621a261a508cf469037c38cfb5483cae23de30483301ea5b0af136e",
+        "sourceEvidence": [
+          {
+            "file": "enteral-nutrition-clinical-metadata-review.json",
+            "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+          }
+        ]
+      },
+      {
+        "path": "submodules.monitoring-complications.keyPoints[3]",
+        "value": "Monitor what was delivered, not only what was ordered.",
+        "status": "retained source-verified",
+        "objectSha256": "3eca38387dac4923efbbf6e1f9c5c763f99376e122afcace17a0cbd0584d8c07",
+        "sourceEvidence": [
+          {
+            "file": "enteral-nutrition-clinical-metadata-review.json",
+            "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+          }
+        ]
+      }
+    ]
+  },
+  "currentObjectReconciliation": {
+    "priorEvidence": {
+      "file": "enteral-nutrition-final-reconciliation-review.json",
+      "sha256": "f5e7979786b18cfa7a34b4eede1bd79f25e89368bacf84f0682c66220c920600"
+    },
+    "retainedEvidenceFileHashes": {
+      "enteral-nutrition-route-comparison-review.json": "1e179027a2bd222d6f65a7b2662c5c3849e47bdef836487a4a4b93ab73096bb6",
+      "enteral-nutrition-primary-decision-review.json": "89b062e713966c072c4af6c97e4da168e3d030c8b3ccd96888813306176b0339",
+      "enteral-nutrition-book-calculations-review.json": "22ec53aeb2bc25b1eaa46d83d5a8f29d249b4a3ee6dedab176b34ffa5750f6ae",
+      "enteral-nutrition-book-route-water-review.json": "ba731c92d84dfd7a86e897c17415012bf7ba1247174cd7d7f37add69adf46e7f",
+      "enteral-nutrition-route-delivery-review.json": "8766af85fa8bee94e78ec3957c76cf1a2d444f7a164c20b5fab4f86865617993",
+      "enteral-nutrition-access-safety-review.json": "3f92a254e072f908aaa54aef4da27eb70273cc228ddcb2f993acbd23b35008d5",
+      "enteral-nutrition-monitoring-refeeding-review.json": "b133dde83890554db260500dd4813d563f7f5a6ffa94e36812e021a1267e4d53",
+      "enteral-nutrition-book-safety-coverage-review.json": "7eef143c41efb5f6bd991f981da6a2d71ec3d4bf5e15bd7e3a239db391d7f6a6",
+      "enteral-nutrition-formula-selection-review.json": "3e0c811b69b1e70cbd108abb196cfdb6dcb4a0188682483198baeaa6cd740555",
+      "enteral-nutrition-book-medication-review.json": "3cba6e0d23d967be68cfc42db0f61872aa65e00db189efee8d4293635211a0e6",
+      "enteral-nutrition-medication-delivery-review.json": "18f967b06865f095ad44f19fdd6b835aa6395068e4526732cc35d772f8acfc47",
+      "enteral-nutrition-preparation-monitoring-review.json": "a4a2f1577098392d7d832ae59fdb99f094c055b060528cd0cac867d2dd5f3bae",
+      "enteral-nutrition-indications-metadata-review.json": "529d15307fb214148b57fa940c041e143e87b2b2c0f5ea30b9872962ac362a63"
+    },
+    "questionReconciliation": [
+      {
+        "id": "enteral-nutrition-001",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-002",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-003",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-004",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-005",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-006",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-007",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-008",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-009",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-010",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-011",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-012",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-013",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-014",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-015",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-016",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-017",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-018",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-019",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-020",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-021",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-022",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-023",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-024",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-025",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-026",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-027",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-028",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-029",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-030",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-031",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": false,
+        "priorSupported": false
+      },
+      {
+        "id": "enteral-nutrition-032",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-033",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-034",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-035",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-036",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-037",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-038",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-039",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-040",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-041",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-042",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-043",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-044",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-045",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-046",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-047",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-048",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-049",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-050",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-060",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-061",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-062",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-063",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-064",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-065",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-066",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-067",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-068",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-069",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-070",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-071",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-072",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-073",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-074",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-075",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-076",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-077",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-078",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-079",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-080",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-081",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-082",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-083",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-084",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-085",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-086",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-087",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-088",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-089",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-090",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-091",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-092",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-093",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-094",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-095",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-096",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-097",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-098",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-099",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-100",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-101",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-102",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-103",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-104",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-105",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-106",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-107",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-108",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-109",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-110",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-111",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-112",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-113",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-114",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-115",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-116",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-117",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      }
+    ],
+    "unchangedObjects": "107whole question objects,36whole bodies,six checks,six figures,79metadata values,11references andall1180cumulative objects deeply unchanged; remaining question andconcept resolved here. Exact prior completed source matrices retained by file hashes.",
+    "fullCurrentModuleObjectSha256": "ff5686ef0aa791c1613a8c508e868652c728a14a28861edcc43ec33060bcc3b2",
+    "newReference": {
+      "label": "Institute of Medicine. Dietary Reference Intakes: Water, 2005, Chapter 4",
+      "href": "https://www.nationalacademies.org/read/10925/chapter/6"
+    },
+    "calculationEvidence": "No calculation changed or new numeric patient target added; prior independent37question computations,five worked bodies,two embedded computations andsix book exercises retained under unchanged complete objects."
+  },
+  "lessonCoverage": [
+    {
+      "slug": "enteral-decision",
+      "status": "verified",
+      "bodies": 5,
+      "verifiedQuestions": 9,
+      "totalQuestions": 9,
+      "verifiedMetadata": 11,
+      "totalMetadata": 11,
+      "embeddedCheckVerified": true,
+      "figureVerified": true,
+      "pendingQuestions": [],
+      "pendingMetadata": []
+    },
+    {
+      "slug": "access-route",
+      "status": "verified",
+      "bodies": 6,
+      "verifiedQuestions": 12,
+      "totalQuestions": 12,
+      "verifiedMetadata": 11,
+      "totalMetadata": 11,
+      "embeddedCheckVerified": true,
+      "figureVerified": true,
+      "pendingQuestions": [],
+      "pendingMetadata": []
+    },
+    {
+      "slug": "delivery-prescription",
+      "status": "verified",
+      "bodies": 5,
+      "verifiedQuestions": 32,
+      "totalQuestions": 32,
+      "verifiedMetadata": 11,
+      "totalMetadata": 11,
+      "embeddedCheckVerified": true,
+      "figureVerified": true,
+      "pendingQuestions": [],
+      "pendingMetadata": []
+    },
+    {
+      "slug": "formula-selection",
+      "status": "verified",
+      "bodies": 9,
+      "verifiedQuestions": 26,
+      "totalQuestions": 26,
+      "verifiedMetadata": 11,
+      "totalMetadata": 11,
+      "embeddedCheckVerified": true,
+      "figureVerified": true,
+      "pendingQuestions": [],
+      "pendingMetadata": []
+    },
+    {
+      "slug": "medication-administration",
+      "status": "verified",
+      "bodies": 8,
+      "verifiedQuestions": 16,
+      "totalQuestions": 16,
+      "verifiedMetadata": 11,
+      "totalMetadata": 11,
+      "embeddedCheckVerified": true,
+      "figureVerified": true,
+      "pendingQuestions": [],
+      "pendingMetadata": []
+    },
+    {
+      "slug": "monitoring-complications",
+      "status": "verified",
+      "bodies": 4,
+      "verifiedQuestions": 13,
+      "totalQuestions": 13,
+      "verifiedMetadata": 11,
+      "totalMetadata": 11,
+      "embeddedCheckVerified": true,
+      "figureVerified": true,
+      "pendingQuestions": [],
+      "pendingMetadata": []
+    }
+  ],
+  "coverage": {
+    "evidence": "enteral-nutrition-renal-solute-review.json",
+    "bank": 108,
+    "verifiedBank": 108,
+    "remainingBank": 0,
+    "verifiedBankIds": [
+      "enteral-nutrition-001",
+      "enteral-nutrition-002",
+      "enteral-nutrition-003",
+      "enteral-nutrition-004",
+      "enteral-nutrition-005",
+      "enteral-nutrition-006",
+      "enteral-nutrition-007",
+      "enteral-nutrition-008",
+      "enteral-nutrition-009",
+      "enteral-nutrition-010",
+      "enteral-nutrition-011",
+      "enteral-nutrition-012",
+      "enteral-nutrition-013",
+      "enteral-nutrition-014",
+      "enteral-nutrition-015",
+      "enteral-nutrition-016",
+      "enteral-nutrition-017",
+      "enteral-nutrition-018",
+      "enteral-nutrition-019",
+      "enteral-nutrition-020",
+      "enteral-nutrition-021",
+      "enteral-nutrition-022",
+      "enteral-nutrition-023",
+      "enteral-nutrition-024",
+      "enteral-nutrition-025",
+      "enteral-nutrition-026",
+      "enteral-nutrition-027",
+      "enteral-nutrition-028",
+      "enteral-nutrition-029",
+      "enteral-nutrition-030",
+      "enteral-nutrition-031",
+      "enteral-nutrition-032",
+      "enteral-nutrition-033",
+      "enteral-nutrition-034",
+      "enteral-nutrition-035",
+      "enteral-nutrition-036",
+      "enteral-nutrition-037",
+      "enteral-nutrition-038",
+      "enteral-nutrition-039",
+      "enteral-nutrition-040",
+      "enteral-nutrition-041",
+      "enteral-nutrition-042",
+      "enteral-nutrition-043",
+      "enteral-nutrition-044",
+      "enteral-nutrition-045",
+      "enteral-nutrition-046",
+      "enteral-nutrition-047",
+      "enteral-nutrition-048",
+      "enteral-nutrition-049",
+      "enteral-nutrition-050",
+      "enteral-nutrition-060",
+      "enteral-nutrition-061",
+      "enteral-nutrition-062",
+      "enteral-nutrition-063",
+      "enteral-nutrition-064",
+      "enteral-nutrition-065",
+      "enteral-nutrition-066",
+      "enteral-nutrition-067",
+      "enteral-nutrition-068",
+      "enteral-nutrition-069",
+      "enteral-nutrition-070",
+      "enteral-nutrition-071",
+      "enteral-nutrition-072",
+      "enteral-nutrition-073",
+      "enteral-nutrition-074",
+      "enteral-nutrition-075",
+      "enteral-nutrition-076",
+      "enteral-nutrition-077",
+      "enteral-nutrition-078",
+      "enteral-nutrition-079",
+      "enteral-nutrition-080",
+      "enteral-nutrition-081",
+      "enteral-nutrition-082",
+      "enteral-nutrition-083",
+      "enteral-nutrition-084",
+      "enteral-nutrition-085",
+      "enteral-nutrition-086",
+      "enteral-nutrition-087",
+      "enteral-nutrition-088",
+      "enteral-nutrition-089",
+      "enteral-nutrition-090",
+      "enteral-nutrition-091",
+      "enteral-nutrition-092",
+      "enteral-nutrition-093",
+      "enteral-nutrition-094",
+      "enteral-nutrition-095",
+      "enteral-nutrition-096",
+      "enteral-nutrition-097",
+      "enteral-nutrition-098",
+      "enteral-nutrition-099",
+      "enteral-nutrition-100",
+      "enteral-nutrition-101",
+      "enteral-nutrition-102",
+      "enteral-nutrition-103",
+      "enteral-nutrition-104",
+      "enteral-nutrition-105",
+      "enteral-nutrition-106",
+      "enteral-nutrition-107",
+      "enteral-nutrition-108",
+      "enteral-nutrition-109",
+      "enteral-nutrition-110",
+      "enteral-nutrition-111",
+      "enteral-nutrition-112",
+      "enteral-nutrition-113",
+      "enteral-nutrition-114",
+      "enteral-nutrition-115",
+      "enteral-nutrition-116",
+      "enteral-nutrition-117"
+    ],
+    "remainingBankIds": [],
+    "bodies": 37,
+    "verifiedBodies": 37,
+    "remainingBodies": 0,
+    "embeddedChecks": 6,
+    "verifiedEmbeddedChecks": 6,
+    "remainingEmbeddedChecks": 0,
+    "figures": 6,
+    "verifiedFigures": 6,
+    "remainingFigures": 0,
+    "cumulative": 5,
+    "sourceVerifiedCumulative": 5,
+    "pendingCumulative": [],
+    "metadataStatements": 79,
+    "verifiedMetadataStatements": 79,
+    "remainingMetadataStatements": 0,
+    "verifiedLessons": [
+      "enteral-decision",
+      "access-route",
+      "delivery-prescription",
+      "formula-selection",
+      "medication-administration",
+      "monitoring-complications"
+    ],
+    "remainingLessons": [],
+    "wholeModuleVerified": false,
+    "wholeChapterVerified": false,
+    "moduleContentObjectsReconciled": true,
+    "closureLimit": "Standalone EN content, own108bank andfive EN-derived cumulative objects are covered; full EN topic closure still requires reconciling outstanding broader feeding dependencies recorded under their parent modules. No full-module/chapter count increase."
+  },
+  "preservation": {
+    "status": "passed",
+    "onlyChanges": [
+      "one original renal-solute body",
+      "one approved reference",
+      "EN031 stem,distractors,rationale"
+    ],
+    "unchangedCumulativeObjects": 1180,
+    "unchangedBankObjects": 107,
+    "unchangedBodies": 36,
+    "newBodies": 1,
+    "preservedChecks": 6,
+    "preservedFigures": 6,
+    "preservedMetadataStatements": 79,
+    "preservedReferenceObjects": 11,
+    "priorEvidenceFileHashes": {
+      "enteral-nutrition-route-comparison-review.json": "1e179027a2bd222d6f65a7b2662c5c3849e47bdef836487a4a4b93ab73096bb6",
+      "enteral-nutrition-primary-decision-review.json": "89b062e713966c072c4af6c97e4da168e3d030c8b3ccd96888813306176b0339",
+      "enteral-nutrition-book-calculations-review.json": "22ec53aeb2bc25b1eaa46d83d5a8f29d249b4a3ee6dedab176b34ffa5750f6ae",
+      "enteral-nutrition-book-route-water-review.json": "ba731c92d84dfd7a86e897c17415012bf7ba1247174cd7d7f37add69adf46e7f",
+      "enteral-nutrition-route-delivery-review.json": "8766af85fa8bee94e78ec3957c76cf1a2d444f7a164c20b5fab4f86865617993",
+      "enteral-nutrition-access-safety-review.json": "3f92a254e072f908aaa54aef4da27eb70273cc228ddcb2f993acbd23b35008d5",
+      "enteral-nutrition-monitoring-refeeding-review.json": "b133dde83890554db260500dd4813d563f7f5a6ffa94e36812e021a1267e4d53",
+      "enteral-nutrition-book-safety-coverage-review.json": "7eef143c41efb5f6bd991f981da6a2d71ec3d4bf5e15bd7e3a239db391d7f6a6",
+      "enteral-nutrition-formula-selection-review.json": "3e0c811b69b1e70cbd108abb196cfdb6dcb4a0188682483198baeaa6cd740555",
+      "enteral-nutrition-book-medication-review.json": "3cba6e0d23d967be68cfc42db0f61872aa65e00db189efee8d4293635211a0e6",
+      "enteral-nutrition-medication-delivery-review.json": "18f967b06865f095ad44f19fdd6b835aa6395068e4526732cc35d772f8acfc47",
+      "enteral-nutrition-preparation-monitoring-review.json": "a4a2f1577098392d7d832ae59fdb99f094c055b060528cd0cac867d2dd5f3bae",
+      "enteral-nutrition-indications-metadata-review.json": "529d15307fb214148b57fa940c041e143e87b2b2c0f5ea30b9872962ac362a63"
+    },
+    "questionReconciliation": [
+      {
+        "id": "enteral-nutrition-001",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-002",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-003",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-004",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-005",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-006",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-007",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-008",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-009",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-010",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-011",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-012",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-013",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-014",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-015",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-016",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-017",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-018",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-019",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-020",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-021",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-022",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-023",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-024",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-025",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-026",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-027",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-028",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-029",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-030",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-031",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": false,
+        "priorSupported": false
+      },
+      {
+        "id": "enteral-nutrition-032",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-033",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-034",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-035",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-036",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-037",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-038",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-039",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-040",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-041",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-042",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-043",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-044",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-045",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-046",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-047",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-048",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-049",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-050",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-060",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-061",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-062",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-063",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-064",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-065",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-066",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-067",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-068",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-069",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-070",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-071",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-072",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-073",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-074",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-075",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-076",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-077",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-078",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-079",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-080",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-081",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-082",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-083",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-084",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-085",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-086",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-087",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-088",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-089",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-090",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-091",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-092",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-093",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-094",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-095",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-096",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-097",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-098",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-099",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-100",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-101",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-102",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-103",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-104",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-105",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-106",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-107",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-108",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-109",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-110",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-111",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-112",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-113",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-114",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-115",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-116",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      },
+      {
+        "id": "enteral-nutrition-117",
+        "priorObjectHashMatched": true,
+        "currentUnchanged": true,
+        "priorSupported": true
+      }
+    ],
+    "currentQuestion": {
+      "id": "enteral-nutrition-031",
+      "question": "With unchanged renal concentrating capacity and insufficient water intake, why can a higher renal solute load increase dehydration risk?",
+      "choices": [
+        "It increases obligatory water needed for solute excretion",
+        "It lowers the minimum urine volume needed for solute excretion",
+        "It replaces urinary water losses with additional formula calories",
+        "It prevents protein metabolism from producing urinary solute"
+      ],
+      "answer": 0,
+      "rationale": "Urea from protein metabolism and electrolytes contribute to urinary solute. At the same renal concentrating capacity, clearing a higher solute load requires more urinary water, which can worsen a water deficit when intake is insufficient. The minimum required urine volume does not fall; formula calories do not replace water, and protein metabolism still produces urea. Higher solute intake alone does not prove dehydration when sufficient water is available. Assess the total water supply and renal status.",
+      "reviewHref": "#formula-selection"
+    },
+    "currentQuestionSha256": "366619db7d50fe6903cd2cb6b74bd6f5601cc7ee9a9eab2e0671993691201ea7",
+    "priorQuestion": {
+      "id": "enteral-nutrition-031",
+      "question": "Why can a high renal solute load worsen dehydration risk?",
+      "choices": [
+        "It increases obligatory water needed for solute excretion",
+        "It removes all sodium from urine",
+        "It blocks intestinal absorption",
+        "It makes formula sterile"
+      ],
+      "answer": 0,
+      "rationale": "Protein and electrolytes contribute solute that the kidney must excrete with water.",
+      "reviewHref": "#formula-selection"
+    },
+    "newBody": {
+      "heading": "Distinguish renal solute load from formula water",
+      "body": "Protein metabolism produces urea, and electrolytes also contribute to the solutes cleared in urine. Because urine cannot be concentrated without limit, a higher excretory solute load can require more urinary water at the same concentrating capacity. When available water is insufficient, this can increase dehydration risk. The 2005 Institute of Medicine water report supports this mechanism; it also describes a small study in which higher protein intake did not increase urine volume when water was freely available. A higher solute load therefore does not by itself establish dehydration or a fixed additional water dose. Review formula composition, all delivered water, losses, and renal function together."
+    },
+    "newBodySha256": "c2fe4be616e4dd28cd4503028e05c1171e5e591b6e5e8df75646da9d914fc36a",
+    "sourceConcept": "Free water and renal solute load"
+  },
+  "validation": {
+    "assessmentStructure": {
+      "modules": 1,
+      "questions": 108,
+      "hardErrors": [],
+      "sourceGaps": [],
+      "sizeAdvisories": [],
+      "thinLessons": [],
+      "weakestModules": [
+        {
+          "module": "enteral-nutrition",
+          "lessons": 6,
+          "questions": 108,
+          "minimumLessonCoverage": 9
+        }
+      ]
+    },
+    "build": {
+      "status": "passed",
+      "exitCode": 0,
+      "staticPages": 567,
+      "scope": "Exact baseGitarchive with only two clinical data file overlays; dependencies linked, no unrelateddrafts or private env included.",
+      "logSha256": "b38521ca5f9d59372588cb1edd0bd649595960275ec48cabe2fb667a092a6f3f"
+    },
+    "browser": {
+      "status": "passed",
+      "results": [
+        {
+          "width": 1440,
+          "bodies": 37,
+          "exactMetadata": true,
+          "references": 12,
+          "attempts": [
+            {
+              "seed": 26,
+              "grade": "9/10",
+              "targetFeedbackVerified": true,
+              "ids": [
+                "enteral-nutrition-097",
+                "enteral-nutrition-082",
+                "enteral-nutrition-029",
+                "enteral-nutrition-031",
+                "enteral-nutrition-040",
+                "enteral-nutrition-093",
+                "enteral-nutrition-037",
+                "enteral-nutrition-042",
+                "enteral-nutrition-025",
+                "enteral-nutrition-065"
+              ]
+            },
+            {
+              "seed": 26,
+              "grade": "10/10",
+              "targetFeedbackVerified": true,
+              "ids": [
+                "enteral-nutrition-097",
+                "enteral-nutrition-082",
+                "enteral-nutrition-029",
+                "enteral-nutrition-031",
+                "enteral-nutrition-040",
+                "enteral-nutrition-093",
+                "enteral-nutrition-037",
+                "enteral-nutrition-042",
+                "enteral-nutrition-025",
+                "enteral-nutrition-065"
+              ]
+            }
+          ],
+          "noHorizontalOverflow": true,
+          "unauthenticated": true
+        },
+        {
+          "width": 390,
+          "bodies": 37,
+          "exactMetadata": true,
+          "references": 12,
+          "attempts": [
+            {
+              "seed": 26,
+              "grade": "9/10",
+              "targetFeedbackVerified": true,
+              "ids": [
+                "enteral-nutrition-097",
+                "enteral-nutrition-082",
+                "enteral-nutrition-029",
+                "enteral-nutrition-031",
+                "enteral-nutrition-040",
+                "enteral-nutrition-093",
+                "enteral-nutrition-037",
+                "enteral-nutrition-042",
+                "enteral-nutrition-025",
+                "enteral-nutrition-065"
+              ]
+            },
+            {
+              "seed": 26,
+              "grade": "10/10",
+              "targetFeedbackVerified": true,
+              "ids": [
+                "enteral-nutrition-097",
+                "enteral-nutrition-082",
+                "enteral-nutrition-029",
+                "enteral-nutrition-031",
+                "enteral-nutrition-040",
+                "enteral-nutrition-093",
+                "enteral-nutrition-037",
+                "enteral-nutrition-042",
+                "enteral-nutrition-025",
+                "enteral-nutrition-065"
+              ]
+            }
+          ],
+          "noHorizontalOverflow": true,
+          "unauthenticated": true
+        }
+      ],
+      "errors": [],
+      "captures": [
+        "body-1440.png",
+        "references-1440.png",
+        "question-incorrect-1440.png",
+        "question-correct-1440.png",
+        "body-390.png",
+        "references-390.png",
+        "question-incorrect-390.png",
+        "question-correct-390.png"
+      ]
+    },
+    "visualReview": {
+      "status": "passed",
+      "actuallyViewedCaptures": [
+        "body-1440.png",
+        "references-1440.png",
+        "question-incorrect-1440.png",
+        "question-correct-1440.png",
+        "body-390.png",
+        "references-390.png",
+        "question-incorrect-390.png",
+        "question-correct-390.png"
+      ],
+      "imageHashes": {
+        "body-1440.png": "9daa4afd2f000c622578e583816322aa90811a1d2b8eb58346252c46ec84efda",
+        "references-1440.png": "aa2594497e1fb119d1a931122a6636377dcf664ab16b60058890aded19456682",
+        "question-incorrect-1440.png": "83736b6325c8c7b4c3dcf5f9956a368a5eb12436c0246840897e1925f9848f30",
+        "question-correct-1440.png": "d71aa863eb5e9d2a35e4d9e9e5a3a3afb23050fe3a7825da26f6c8d1bc05d3d9",
+        "body-390.png": "5f7ecbd9bf55ab9a35d4092c0927eeaa1daf06b6db107e72576abf6604e9eab9",
+        "references-390.png": "ef574806448d3bdc72220d597e3016bcf1505e5ab35ffffa50fd25775f609f4f",
+        "question-incorrect-390.png": "57fcd90415f5390a3a31ed7f96614324ca6f7369bc4f14dacc70388f002de5c5",
+        "question-correct-390.png": "27ccad2535370845163bbbfbab1ecba01f0815ffa5bccc07c51863d764d9e7de"
+      },
+      "findings": "New body readable at both sizes; full question/choices/correct andincorrect feedback andreferences legible;320px nohorizontaloverflow. Existing site style preserved."
+    },
+    "limitations": "Local unauthenticated production preview; no account persistence or deployedproduction claim. Seeded randomness used only in transient browser to sample retained EN031 through actual shuffling/grade code.",
+    "toolingCorrections": [
+      "Initial candidate preparation call used a not-yet-created cwd; corrected before execution.",
+      "Default network sandbox blocked chapter fetch; approved systemcurl used after Python certificate configuration error.",
+      "First browser harness tried to resample EN031 immediately but existing fresh-question exclusion prevented it. Fresh page attempts used; final browser process exited0. No product workaround or sampling change."
+    ],
+    "previewProcess": "Owned preview58886 stoppedCtrlC; terminalexit130. Browser96159terminalexit0."
+  },
+  "remainingCoverageReview": {
+    "currentENBank": [],
+    "currentENMetadata": [],
+    "broaderFeedingDependencies": "Retained parent review records include unsupported full nonfeeding topics and feeding-related adsorption/administration gaps; reconcile this inventory before whole topic/module closure. No unsupported parent claim silently adopted or removed.",
+    "nextAction": "Start with earliest outstanding tetracycline adsorption row069 and shared distractors017/041/121 in existing broader DDI/tetracycline review; use approved ASPEN/FDA scope where applicable, distinguish unsupported drug-specific assertion from source-backed cation interaction. Keep Chapter1fluidneeds/Chapter11/54 open."
+  },
+  "release": {
+    "branch": "audit/rxprep-content-2026-09-24",
+    "commit": null,
+    "push": "pending",
+    "receipt": "enteral-nutrition-renal-solute-release.json",
+    "production": "not verified; no main merge or deployment"
+  },
+  "wholeGoalComplete": false
+}
