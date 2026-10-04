@@ -1,0 +1,112 @@
+{
+  "verifiedAt": "2026-10-04T22:40:48.363483+00:00",
+  "unit": "enteral-nutrition:broader-lefamulin-oral-label-reconciliation",
+  "contentCommit": "f45fcac88b5a562e8caf2f89a6b82af178dc7f48",
+  "remoteBranch": "audit/rxprep-content-2026-09-24",
+  "remoteHashObserved": "f45fcac88b5a562e8caf2f89a6b82af178dc7f48",
+  "exactRemoteObservedByTool": true,
+  "coverage": {
+    "evidence": "enteral-nutrition-broader-lefamulin-label-review.json",
+    "moduleBank": 168,
+    "sourceVerifiedBankIds": [
+      "lefamulin-pharmacology-073",
+      "lefamulin-pharmacology-074",
+      "lefamulin-pharmacology-075",
+      "lefamulin-pharmacology-076",
+      "lefamulin-pharmacology-077",
+      "lefamulin-pharmacology-078",
+      "lefamulin-pharmacology-079",
+      "lefamulin-pharmacology-080",
+      "lefamulin-pharmacology-081",
+      "lefamulin-pharmacology-082",
+      "lefamulin-pharmacology-083",
+      "lefamulin-pharmacology-084",
+      "lefamulin-pharmacology-085",
+      "lefamulin-pharmacology-086",
+      "lefamulin-pharmacology-087",
+      "lefamulin-pharmacology-088",
+      "lefamulin-pharmacology-case-158"
+    ],
+    "newFullQuestionsVerified": 17,
+    "broaderFeedingBankVerifiedAfter": 171,
+    "wholeBodiesVerified": 4,
+    "wholeEmbeddedChecksVerified": 1,
+    "wholeFiguresVerified": 1,
+    "oralMetadataStatementsVerified": 12,
+    "wholeLessonVerified": "oral-administration",
+    "wholeParentModuleVerified": false,
+    "wholeENModuleVerified": false,
+    "wholeChapterVerified": false,
+    "cumulativeSourceVerifiedIds": [
+      "cumulative-lefamulin-pharmacology-lefamulin-pharmacology-085"
+    ],
+    "otherCumulativeObjectsUnchanged": 1179,
+    "allExisting168IdsStemsKeysCorrectTextsAndAnchorsPreserved": true,
+    "noNewQuestionIds": true,
+    "allOriginal40BodyTextsRetained": true,
+    "otherNineFiguresUnchanged": true,
+    "other36BodiesAndNineChecksUnchanged": true,
+    "workingDraftsPreserved": true
+  },
+  "validation": {
+    "productionBuild": {
+      "status": "passed",
+      "exitCode": 0,
+      "pages": 567,
+      "isolatedExactBase": "611a258058b4dc5441ea3df0c23fa6da682957b1",
+      "trackedProductChanges": [
+        "src/data/modules/lefamulinPharmacology.js",
+        "src/data/questionBanks/lefamulinPharmacology.js",
+        "src/components/learn/LefamulinPharmacologyVisual.jsx"
+      ]
+    },
+    "browserStatus": "passed",
+    "cumulativeBrowserStatus": "passed",
+    "rawScreenshotsActuallyViewed": 90,
+    "nativeComparisonCount": 23,
+    "objectPreservation": {
+      "changedQuestionIds": [
+        "lefamulin-pharmacology-073",
+        "lefamulin-pharmacology-074",
+        "lefamulin-pharmacology-075",
+        "lefamulin-pharmacology-076",
+        "lefamulin-pharmacology-077",
+        "lefamulin-pharmacology-078",
+        "lefamulin-pharmacology-079",
+        "lefamulin-pharmacology-080",
+        "lefamulin-pharmacology-081",
+        "lefamulin-pharmacology-082",
+        "lefamulin-pharmacology-083",
+        "lefamulin-pharmacology-084",
+        "lefamulin-pharmacology-085",
+        "lefamulin-pharmacology-086",
+        "lefamulin-pharmacology-087",
+        "lefamulin-pharmacology-088",
+        "lefamulin-pharmacology-case-158"
+      ],
+      "otherFullQuestionsUnchanged": 151,
+      "changedBodies": 4,
+      "otherWholeBodiesUnchanged": 36,
+      "otherEmbeddedChecksUnchanged": 9,
+      "allMetadataUnchanged": true,
+      "changedCumulativeIds": [
+        "cumulative-lefamulin-pharmacology-lefamulin-pharmacology-085"
+      ],
+      "otherCumulativeUnchanged": 1179
+    }
+  },
+  "preservation": {
+    "unrelatedDraftPaths": 407,
+    "trackedDraftHashesChecked": true,
+    "existingUntrackedDirectoriesPreserved": true,
+    "workingLedgerPriorDraftFieldsUnchanged": true,
+    "scopedCommittedOtherLedgerEntriesUnchanged": true
+  },
+  "publication": {
+    "mainMerge": "not performed",
+    "production": "not verified"
+  },
+  "wholeGoalComplete": false,
+  "nextAction": "Reconcile the16 retained pending antifungal formulation questions in enteral-nutrition-broader-antifungal-formulations-review.json against the supplied book and already approved FDA product labeling, including itraconazole/SUBA formulation differences and posaconazole suspension acidic-beverage claims. Include derived cumulative triazole089 and the pending whole formulation bodies/checks/figures/metadata;preserve full original assessment scope,stable IDs/keys/anchors andunrelated parent drafts. Continue remaining broader dependencies before fullEN closure andthen pediatricPN/fluid/calcium dependencies. Chapter1entry15/Chapter11 remain reviewing;full parent audits remain required.",
+  "receiptCommit": "This receipt is committed after the exact verified content commit; its own remote hash is verified separately in the execution output."
+}
