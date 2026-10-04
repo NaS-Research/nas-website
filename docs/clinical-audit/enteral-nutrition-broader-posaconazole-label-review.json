@@ -1,0 +1,2385 @@
+{
+  "updated": "2026-10-04T23:08:46.193079+00:00",
+  "unit": "enteral-nutrition:broader-posaconazole-formulation-label-reconciliation",
+  "status": "formulation dependency verified; whole lesson/module/chapters reviewing",
+  "baseCommit": "b303791f2ea2ed8799c491bfa31caed07c930e38",
+  "sourceAuthorization": {
+    "authorized": true,
+    "scope": "Supplied private RxPrep2023 and previously approved FDA guidance/product labeling",
+    "approvalText": "I approve all. continue working",
+    "approvalDate": "2026-10-02",
+    "evidence": "sequential-resume.json pendingEnteralSourceException",
+    "noNewNonFDAClinicalGuidelineOrStudyAdopted": true
+  },
+  "sourceReview": {
+    "privateBook": {
+      "identity": "NAPLEX2024filename; verified RxPrep2023; 1032pages",
+      "completeRelevantPagesTextAndRenderedReviewed": [
+        398,
+        399,
+        400,
+        401,
+        403,
+        916
+      ],
+      "printedPages": [
+        390,
+        391,
+        392,
+        393,
+        395,
+        906
+      ],
+      "limits": "Formulation-specific teaching and historical food/pH comparisons only. No whole Chapter24 review claimed. A text-only locating search of pages155-183 found no further adopted alkalosis/mineralocorticoid support."
+    },
+    "currentLabel": {
+      "name": "NOXAFIL injection, delayed-release tablets, conventional oral suspension and PowderMix",
+      "issuer": "Merck Sharp & Dohme LLC; official NLM DailyMed NDA labeling repository",
+      "revision": "February2026",
+      "DailyMedUpdated": "February13,2026",
+      "labelCode": "uspi-mk5592-mf-2601r050",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b073b082-7b57-4423-8c06-4fd4263d6f84",
+      "pdfUrl": "https://dailymed.nlm.nih.gov/dailymed/getFile.cfm?setid=b073b082-7b57-4423-8c06-4fd4263d6f84&type=pdf",
+      "pdfPages": 94,
+      "sha256": "a6dc73ba506c5181d216918a603140142394358cba1bdaa2ddee22c17fe46ac0",
+      "completeAdoptedScopes": [
+        "1.1/1.2/1.3 all indication/age/weight rows; PDF5-6",
+        "2.1 Important Administration Instructions; PDF6-7",
+        "2.2/2.3/2.4 complete Tables1-6 and all footnotes; PDF7-12",
+        "2.7/2.8/2.9/2.10 complete oral instructions; PDF14-16",
+        "4.7 and5.9 complete PowderMix HFI contraindication/warning; PDF17/19",
+        "5.3 Electrolytes and5.4 Pseudoaldosteronism for retained metadata/figure only; PDF18",
+        "5.10 Breakthrough Fungal Infections; PDF20",
+        "7 introduction and7.1 complete Tables15/16; PDF30-32",
+        "7.2 introduction andTable17 digoxin/glipizide/immunosuppressant portion; PDF33; no full interaction-table closure claimed",
+        "7.3 complete formulation-specific absence-of-interaction subsection; PDF36",
+        "12.3 complete Absorption subsection andTables23-25 including complete NG-tube footnote; PDF45-48",
+        "17 complete Patient Counseling; PDF65-66"
+      ],
+      "originalPagesActuallyViewed": [
+        1,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        30,
+        31,
+        32,
+        33,
+        36,
+        45,
+        46,
+        47,
+        48,
+        65,
+        66
+      ],
+      "otherReadOrExtractedPages": "34/35/43/44/49/50/53/54/55 were text-read or extracted as locating/context material. They are not newly claimed visually reviewed or used to close additional lesson topics.",
+      "limits": "No whole94-page label audit; no patient-IFU kit training, IV preparation, whole clinical trial or full interaction-table audit. Table23 is a single-dose healthy-volunteer food study; Table25 includes a specific NG-tube study. No numeric PK or clinical outcome estimate, universal feed interruption, automatic tube equivalence, or concentration-based pseudoaldosteronism threshold added."
+    },
+    "sourceAssetsOutsideGit": true,
+    "otherModuleReferences": "Nine existing other references retained unchanged; their current-label/guideline clinical claims are not newly adopted or fully audited."
+  },
+  "sourceDiscrepancies": [
+    {
+      "issue": "Book requires food for posaconazole tablets; retained current instruction differs",
+      "resolution": "Approved February2026 NOXAFIL label permits delayed-release tablets with or without food. Explicit food-study qualification prevents equating food flexibility with no PK effect."
+    },
+    {
+      "issue": "Book acidic-beverage advice was ketoconazole-specific and did not support the complete retained suspension key",
+      "resolution": "NOXAFIL 2.8 supplies direct conventional suspension fallback with exact conditions and alternatives; no ketoconazole borrowing."
+    },
+    {
+      "issue": "Broad formulation non-substitution wording could imply injection/tablets cannot be switched",
+      "resolution": "Teaching now names the conventional oral suspension versus delayed-release tablets/PowderMix. Full reviewed table footnotes explicitly permit injection/tablet switching; no universal prohibition added."
+    },
+    {
+      "issue": "Original poor intake/acid suppression/mucositis/diarrhea/tube sentence grouped mechanisms and evidence too broadly",
+      "resolution": "Scope retained but differentiated: intake assessment for nausea/mucositis; product-specific interacting drugs; severe GI symptoms and NG-study breakthrough monitoring; no uniform exposure estimate or every-device protocol."
+    },
+    {
+      "issue": "Pseudoaldosteronism body/questions contain alkalosis/bicarbonate and concentration-evaluation claims beyond the adopted label scopes",
+      "resolution": "Complete body and five associated questions preserved unchanged and remain pending; label directly supports only retained metadata/diagram BP/K safety concept in this unit."
+    }
+  ],
+  "questionReview": [
+    {
+      "id": "triazole-pharmacology-081",
+      "before": {
+        "id": "triazole-pharmacology-081",
+        "lesson": "posaconazole-delivery",
+        "question": "Which principle best characterizes posaconazole non-substitutability?",
+        "choices": [
+          "Posaconazole delayed-release tablets, oral suspension, and PowderMix differ in indication, dosing, age or weight eligibility, preparation, and exposure",
+          "Several triazoles can prolong QT while isavuconazole shortens it",
+          "Azole nitrogens coordinate the heme iron of fungal lanosterol 14 alpha demethylase",
+          "Candida krusei is intrinsically resistant and Candida glabrata requires susceptibility-guided interpretation"
+        ],
+        "answer": 0,
+        "rationale": "The products are explicitly non-substitutable",
+        "reviewHref": "#posaconazole-delivery"
+      },
+      "after": {
+        "id": "triazole-pharmacology-081",
+        "lesson": "posaconazole-delivery",
+        "question": "Which principle best characterizes posaconazole non-substitutability?",
+        "choices": [
+          "Posaconazole delayed-release tablets, oral suspension, and PowderMix differ in indication, dosing, age or weight eligibility, preparation, and exposure",
+          "Every oral posaconazole product uses the same dose and preparation instructions",
+          "PowderMix is the conventional oral suspension in a different package",
+          "Age and weight can be ignored once the ingredient is identified"
+        ],
+        "answer": 0,
+        "rationale": "The NOXAFIL label separates these oral products by indication, age and weight, dosing, preparation and exposure. Conventional oral suspension cannot replace delayed-release tablets or PowderMix dose for dose. A shared ingredient does not establish the same product, eligibility or administration plan.",
+        "reviewHref": "#posaconazole-delivery"
+      },
+      "status": "complete stem, key, all alternatives and rationale source-reconciled",
+      "newlyVerified": true,
+      "sourceScopes": "1.1-1.3; 2.1-2.4 with complete tables/footnotes; 2.7-2.10; 12.3 Absorption",
+      "review": {
+        "originalIdStemKeyCorrectTextAndAnchorRetained": true,
+        "allAlternativesReviewed": true,
+        "distractors": "Relevant formulation, eligibility, food, manipulation, exposure and interaction misconceptions replace unrelated true principles. Previously repaired topical choices and the complete case169 choices are retained. Every rationale addresses all four alternatives.",
+        "clinicalLimits": "Food flexibility does not imply zero food effect or guaranteed absorption. Acidic beverage fallback follows the exact conventional suspension conditions. NG findings are specific healthy-volunteer data, not a universal tube/feed protocol. Nausea/mucositis are intake-feasibility assessments, not a measured uniform pharmacokinetic effect."
+      }
+    },
+    {
+      "id": "triazole-pharmacology-082",
+      "before": {
+        "id": "triazole-pharmacology-082",
+        "lesson": "posaconazole-delivery",
+        "question": "Which clinical action best applies to posaconazole non-substitutability?",
+        "choices": [
+          "Select the formulation before selecting the dose",
+          "Select an oral dose first and assume it applies to both suspension and tablets",
+          "Choose the formulation after copying the previous milligram dose",
+          "Treat identical ingredient names as proof of identical oral exposure"
+        ],
+        "answer": 0,
+        "rationale": "Posaconazole suspension and delayed-release tablets have different bioavailability and dosing regimens. Identify the formulation before selecting its dose.",
+        "reviewHref": "#posaconazole-delivery"
+      },
+      "after": {
+        "id": "triazole-pharmacology-082",
+        "lesson": "posaconazole-delivery",
+        "question": "Which clinical action best applies to posaconazole non-substitutability?",
+        "choices": [
+          "Select the formulation before selecting the dose",
+          "Select an oral dose first and assume it applies to both suspension and tablets",
+          "Choose the formulation after copying the previous milligram dose",
+          "Treat identical ingredient names as proof of identical oral exposure"
+        ],
+        "answer": 0,
+        "rationale": "Identify the exact formulation before selecting its indication-specific dose and administration plan. The conventional oral suspension is not substitutable with delayed-release tablets or PowderMix. Selecting or copying a dose first, or treating the ingredient name as proof of equal exposure, bypasses those product requirements.",
+        "reviewHref": "#posaconazole-delivery"
+      },
+      "status": "complete stem, key, all alternatives and rationale source-reconciled",
+      "newlyVerified": false,
+      "sourceScopes": "1.1-1.3; 2.1-2.4 with complete tables/footnotes; 2.7-2.10; 12.3 Absorption",
+      "review": {
+        "originalIdStemKeyCorrectTextAndAnchorRetained": true,
+        "allAlternativesReviewed": true,
+        "distractors": "Relevant formulation, eligibility, food, manipulation, exposure and interaction misconceptions replace unrelated true principles. Previously repaired topical choices and the complete case169 choices are retained. Every rationale addresses all four alternatives.",
+        "clinicalLimits": "Food flexibility does not imply zero food effect or guaranteed absorption. Acidic beverage fallback follows the exact conventional suspension conditions. NG findings are specific healthy-volunteer data, not a universal tube/feed protocol. Nausea/mucositis are intake-feasibility assessments, not a measured uniform pharmacokinetic effect."
+      }
+    },
+    {
+      "id": "triazole-pharmacology-083",
+      "before": {
+        "id": "triazole-pharmacology-083",
+        "lesson": "posaconazole-delivery",
+        "question": "Which assessment is most appropriate for posaconazole non-substitutability?",
+        "choices": [
+          "Assess indication, age, weight, swallowing, food, tube access, formulation, and label",
+          "Assess QTc, bradycardia, structural disease, congenital syndrome, electrolytes, antiarrhythmics, psychotropics, and antiemetics",
+          "Assess imidazole versus triazole ring, heme coordination, CYP51 affinity, lipophilicity, and host CYP effects",
+          "Assess species, MIC category, dose-dependent susceptibility, blood culture clearance, stability, and site"
+        ],
+        "answer": 0,
+        "rationale": "The products are explicitly non-substitutable",
+        "reviewHref": "#posaconazole-delivery"
+      },
+      "after": {
+        "id": "triazole-pharmacology-083",
+        "lesson": "posaconazole-delivery",
+        "question": "Which assessment is most appropriate for posaconazole non-substitutability?",
+        "choices": [
+          "Assess indication, age, weight, swallowing, food, tube access, formulation, and label",
+          "Use age alone because weight never affects posaconazole formulation eligibility",
+          "Treat all oral products as suitable for a feeding tube at the same milligram dose",
+          "Check the ingredient and dose but omit food and whole-tablet swallowing"
+        ],
+        "answer": 0,
+        "rationale": "Check the indication, age and weight against the exact product label, then assess its food instructions and whether the patient can use that dosage form. Delayed-release tablets must remain whole, and conventional suspension has product-specific nutrition requirements. Tube access is a delivery assessment, not permission to crush tablets or assume equal tube exposure; the label's suspension NG-tube study found lower exposure and recommends breakthrough monitoring.",
+        "reviewHref": "#posaconazole-delivery"
+      },
+      "status": "complete stem, key, all alternatives and rationale source-reconciled",
+      "newlyVerified": true,
+      "sourceScopes": "1.1-1.3; 2.1-2.4 with complete tables/footnotes; 2.7-2.10; 12.3 Absorption",
+      "review": {
+        "originalIdStemKeyCorrectTextAndAnchorRetained": true,
+        "allAlternativesReviewed": true,
+        "distractors": "Relevant formulation, eligibility, food, manipulation, exposure and interaction misconceptions replace unrelated true principles. Previously repaired topical choices and the complete case169 choices are retained. Every rationale addresses all four alternatives.",
+        "clinicalLimits": "Food flexibility does not imply zero food effect or guaranteed absorption. Acidic beverage fallback follows the exact conventional suspension conditions. NG findings are specific healthy-volunteer data, not a universal tube/feed protocol. Nausea/mucositis are intake-feasibility assessments, not a measured uniform pharmacokinetic effect."
+      }
+    },
+    {
+      "id": "triazole-pharmacology-084",
+      "before": {
+        "id": "triazole-pharmacology-084",
+        "lesson": "posaconazole-delivery",
+        "question": "Which reasoning hazard is most important to prevent with posaconazole non-substitutability?",
+        "choices": [
+          "Substituting oral suspension for delayed-release tablets at the same dose",
+          "Reviewing the new formulation and its dosing regimen before a switch",
+          "Checking the suspension meal or nutritional-supplement plan",
+          "Confirming the dispensed formulation matches the intended order"
+        ],
+        "answer": 0,
+        "rationale": "Suspension and delayed-release tablets are not interchangeable. A product switch requires checking the new formulation and dosing rather than copying the same milligram amount.",
+        "reviewHref": "#posaconazole-delivery"
+      },
+      "after": {
+        "id": "triazole-pharmacology-084",
+        "lesson": "posaconazole-delivery",
+        "question": "Which reasoning hazard is most important to prevent with posaconazole non-substitutability?",
+        "choices": [
+          "Substituting oral suspension for delayed-release tablets at the same dose",
+          "Reviewing the new formulation and its dosing regimen before a switch",
+          "Checking the suspension meal or nutritional-supplement plan",
+          "Confirming the dispensed formulation matches the intended order"
+        ],
+        "answer": 0,
+        "rationale": "Conventional oral suspension is not substitutable with delayed-release tablets at the same milligram dose. Reviewing the new product and regimen, checking its nutrition plan, and confirming the dispensed formulation are appropriate checks. An ingredient match does not justify copying the dose or administration instructions.",
+        "reviewHref": "#posaconazole-delivery"
+      },
+      "status": "complete stem, key, all alternatives and rationale source-reconciled",
+      "newlyVerified": false,
+      "sourceScopes": "1.1-1.3; 2.1-2.4 with complete tables/footnotes; 2.7-2.10; 12.3 Absorption",
+      "review": {
+        "originalIdStemKeyCorrectTextAndAnchorRetained": true,
+        "allAlternativesReviewed": true,
+        "distractors": "Relevant formulation, eligibility, food, manipulation, exposure and interaction misconceptions replace unrelated true principles. Previously repaired topical choices and the complete case169 choices are retained. Every rationale addresses all four alternatives.",
+        "clinicalLimits": "Food flexibility does not imply zero food effect or guaranteed absorption. Acidic beverage fallback follows the exact conventional suspension conditions. NG findings are specific healthy-volunteer data, not a universal tube/feed protocol. Nausea/mucositis are intake-feasibility assessments, not a measured uniform pharmacokinetic effect."
+      }
+    },
+    {
+      "id": "triazole-pharmacology-085",
+      "before": {
+        "id": "triazole-pharmacology-085",
+        "lesson": "posaconazole-delivery",
+        "question": "Which principle best characterizes posaconazole tablet administration?",
+        "choices": [
+          "Delayed-release tablets are swallowed whole and can be taken with or without food",
+          "A safe interaction plan includes onset, offset, dose change, monitoring, and a responsible clinician",
+          "CYP51 inhibition depletes ergosterol and accumulates abnormal sterol intermediates",
+          "Fluconazole can cause hepatotoxicity, QT prolongation, severe skin reactions, and clinically important interactions"
+        ],
+        "answer": 0,
+        "rationale": "The current tablet label permits administration with or without food",
+        "reviewHref": "#posaconazole-delivery"
+      },
+      "after": {
+        "id": "triazole-pharmacology-085",
+        "lesson": "posaconazole-delivery",
+        "question": "Which principle best characterizes posaconazole tablet administration?",
+        "choices": [
+          "Delayed-release tablets are swallowed whole and can be taken with or without food",
+          "Delayed-release tablets must always be taken with a full meal",
+          "Crushing a delayed-release tablet preserves its labeled administration technique",
+          "The conventional suspension food rule applies to every posaconazole product"
+        ],
+        "answer": 0,
+        "rationale": "NOXAFIL delayed-release tablets may be taken with or without food and must be swallowed whole without dividing, crushing or chewing. Requiring a full meal for every tablet dose copies the conventional suspension rule to the wrong product. Food can change tablet exposure in the label's healthy-volunteer study; permission to dose without food does not mean food has no pharmacokinetic effect.",
+        "reviewHref": "#posaconazole-delivery"
+      },
+      "status": "complete stem, key, all alternatives and rationale source-reconciled",
+      "newlyVerified": true,
+      "sourceScopes": "2.1; 2.7; 5.10; 7.2 introduction; 17; 12.3 tablet Absorption/Table 23",
+      "review": {
+        "originalIdStemKeyCorrectTextAndAnchorRetained": true,
+        "allAlternativesReviewed": true,
+        "distractors": "Relevant formulation, eligibility, food, manipulation, exposure and interaction misconceptions replace unrelated true principles. Previously repaired topical choices and the complete case169 choices are retained. Every rationale addresses all four alternatives.",
+        "clinicalLimits": "Food flexibility does not imply zero food effect or guaranteed absorption. Acidic beverage fallback follows the exact conventional suspension conditions. NG findings are specific healthy-volunteer data, not a universal tube/feed protocol. Nausea/mucositis are intake-feasibility assessments, not a measured uniform pharmacokinetic effect."
+      }
+    },
+    {
+      "id": "triazole-pharmacology-086",
+      "before": {
+        "id": "triazole-pharmacology-086",
+        "lesson": "posaconazole-delivery",
+        "question": "Which clinical action best applies to posaconazole tablet administration?",
+        "choices": [
+          "Use the tablet when eligible and reliable higher oral exposure is needed",
+          "Document both the azole and victim-drug pathway through initiation, steady state, and discontinuation",
+          "Use the pathway to predict membrane dysfunction and target-based resistance",
+          "Monitor risk by dose, duration, organ function, symptoms, electrolytes, and medication burden"
+        ],
+        "answer": 0,
+        "rationale": "The current tablet label permits administration with or without food",
+        "reviewHref": "#posaconazole-delivery"
+      },
+      "after": {
+        "id": "triazole-pharmacology-086",
+        "lesson": "posaconazole-delivery",
+        "question": "Which clinical action best applies to posaconazole tablet administration?",
+        "choices": [
+          "Use the tablet when eligible and reliable higher oral exposure is needed",
+          "Keep conventional suspension fasting because tablets and suspension always produce equal exposure",
+          "Choose delayed-release tablets without checking indication, age, weight or swallowing",
+          "Crush the tablet whenever the patient cannot swallow it whole"
+        ],
+        "answer": 0,
+        "rationale": "For an eligible patient who cannot eat a full meal, the label favors delayed-release tablets over conventional suspension for prophylaxis because tablets generally provide higher plasma exposure. Eligibility and intact swallowing still matter, and severe diarrhea or vomiting warrants breakthrough monitoring. This is product selection to improve delivery, not guaranteed exposure or better clinical outcomes; equal exposure, unchecked eligibility and crushing are unsafe assumptions.",
+        "reviewHref": "#posaconazole-delivery"
+      },
+      "status": "complete stem, key, all alternatives and rationale source-reconciled",
+      "newlyVerified": true,
+      "sourceScopes": "2.1; 2.7; 5.10; 7.2 introduction; 17; 12.3 tablet Absorption/Table 23",
+      "review": {
+        "originalIdStemKeyCorrectTextAndAnchorRetained": true,
+        "allAlternativesReviewed": true,
+        "distractors": "Relevant formulation, eligibility, food, manipulation, exposure and interaction misconceptions replace unrelated true principles. Previously repaired topical choices and the complete case169 choices are retained. Every rationale addresses all four alternatives.",
+        "clinicalLimits": "Food flexibility does not imply zero food effect or guaranteed absorption. Acidic beverage fallback follows the exact conventional suspension conditions. NG findings are specific healthy-volunteer data, not a universal tube/feed protocol. Nausea/mucositis are intake-feasibility assessments, not a measured uniform pharmacokinetic effect."
+      }
+    },
+    {
+      "id": "triazole-pharmacology-087",
+      "before": {
+        "id": "triazole-pharmacology-087",
+        "lesson": "posaconazole-delivery",
+        "question": "Which assessment is most appropriate for posaconazole tablet administration?",
+        "choices": [
+          "Assess ability to swallow whole, gastrointestinal function, weight, indication, adherence, and interactions",
+          "Assess narrow therapeutic index, level timing, organ function, symptoms, communication, and follow-up",
+          "Assess lanosterol, CYP51, ergosterol, ERG11 or cyp51A changes, efflux, and phenotype",
+          "Assess liver tests, QTc, potassium, magnesium, rash, warfarin, sulfonylureas, phenytoin, and CYP substrates"
+        ],
+        "answer": 0,
+        "rationale": "The current tablet label permits administration with or without food",
+        "reviewHref": "#posaconazole-delivery"
+      },
+      "after": {
+        "id": "triazole-pharmacology-087",
+        "lesson": "posaconazole-delivery",
+        "question": "Which assessment is most appropriate for posaconazole tablet administration?",
+        "choices": [
+          "Assess ability to swallow whole, gastrointestinal function, weight, indication, adherence, and interactions",
+          "Confirm the indication but assume swallowing and gastrointestinal symptoms cannot affect delivery",
+          "Check daily milligrams and ignore the product's age and weight eligibility",
+          "Assume tablets remove the need for adherence and medication-interaction review"
+        ],
+        "answer": 0,
+        "rationale": "Assess intact swallowing, gastrointestinal symptoms, labeled eligibility, actual adherence and interacting medicines before relying on the tablet plan. The label permits food flexibility, but prohibits tablet manipulation and calls for breakthrough monitoring with severe diarrhea or vomiting. Eligibility, adherence and CYP3A4 interaction review are not waived by changing from suspension to tablets.",
+        "reviewHref": "#posaconazole-delivery"
+      },
+      "status": "complete stem, key, all alternatives and rationale source-reconciled",
+      "newlyVerified": true,
+      "sourceScopes": "2.1; 2.7; 5.10; 7.2 introduction; 17; 12.3 tablet Absorption/Table 23",
+      "review": {
+        "originalIdStemKeyCorrectTextAndAnchorRetained": true,
+        "allAlternativesReviewed": true,
+        "distractors": "Relevant formulation, eligibility, food, manipulation, exposure and interaction misconceptions replace unrelated true principles. Previously repaired topical choices and the complete case169 choices are retained. Every rationale addresses all four alternatives.",
+        "clinicalLimits": "Food flexibility does not imply zero food effect or guaranteed absorption. Acidic beverage fallback follows the exact conventional suspension conditions. NG findings are specific healthy-volunteer data, not a universal tube/feed protocol. Nausea/mucositis are intake-feasibility assessments, not a measured uniform pharmacokinetic effect."
+      }
+    },
+    {
+      "id": "triazole-pharmacology-088",
+      "before": {
+        "id": "triazole-pharmacology-088",
+        "lesson": "posaconazole-delivery",
+        "question": "Which reasoning hazard is most important to prevent with posaconazole tablet administration?",
+        "choices": [
+          "Repeating the older rule that every posaconazole tablet dose requires food",
+          "Reducing tacrolimus at azole start but not planning azole discontinuation",
+          "Describing azoles as fungal cell-wall inhibitors",
+          "Calling fluconazole interaction free because it is renally cleared"
+        ],
+        "answer": 0,
+        "rationale": "The current tablet label permits administration with or without food",
+        "reviewHref": "#posaconazole-delivery"
+      },
+      "after": {
+        "id": "triazole-pharmacology-088",
+        "lesson": "posaconazole-delivery",
+        "question": "Which reasoning hazard is most important to prevent with posaconazole tablet administration?",
+        "choices": [
+          "Repeating the older rule that every posaconazole tablet dose requires food",
+          "Teaching that the delayed-release tablet may be taken with or without food",
+          "Confirming the tablet is swallowed whole without dividing, crushing or chewing",
+          "Checking the exact product before giving meal instructions"
+        ],
+        "answer": 0,
+        "rationale": "The current NOXAFIL delayed-release tablet instruction permits administration with or without food. Repeating a universal food requirement confuses it with conventional oral suspension. Teaching the current tablet instruction, preserving whole-tablet administration and checking the formulation are appropriate actions. Give the patient the instructions for the exact dispensed formulation.",
+        "reviewHref": "#posaconazole-delivery"
+      },
+      "status": "complete stem, key, all alternatives and rationale source-reconciled",
+      "newlyVerified": true,
+      "sourceScopes": "2.1; 2.7; 5.10; 7.2 introduction; 17; 12.3 tablet Absorption/Table 23",
+      "review": {
+        "originalIdStemKeyCorrectTextAndAnchorRetained": true,
+        "allAlternativesReviewed": true,
+        "distractors": "Relevant formulation, eligibility, food, manipulation, exposure and interaction misconceptions replace unrelated true principles. Previously repaired topical choices and the complete case169 choices are retained. Every rationale addresses all four alternatives.",
+        "clinicalLimits": "Food flexibility does not imply zero food effect or guaranteed absorption. Acidic beverage fallback follows the exact conventional suspension conditions. NG findings are specific healthy-volunteer data, not a universal tube/feed protocol. Nausea/mucositis are intake-feasibility assessments, not a measured uniform pharmacokinetic effect."
+      }
+    },
+    {
+      "id": "triazole-pharmacology-089",
+      "before": {
+        "id": "triazole-pharmacology-089",
+        "lesson": "posaconazole-delivery",
+        "question": "Which principle best characterizes posaconazole suspension administration?",
+        "choices": [
+          "Oral suspension is given with a full meal or, when needed, a nutritional supplement or acidic carbonated beverage",
+          "Every systemic triazole can cause clinically important liver injury, with different clearance and label details",
+          "Additional ring nitrogen generally improves fungal CYP selectivity relative to early imidazoles but does not eliminate human CYP interactions",
+          "Itraconazole capsules, oral solution, and SUBA products differ in bioavailability and are not interchangeable"
+        ],
+        "answer": 0,
+        "rationale": "Low or variable suspension exposure can cause prophylaxis or treatment failure",
+        "reviewHref": "#posaconazole-delivery"
+      },
+      "after": {
+        "id": "triazole-pharmacology-089",
+        "lesson": "posaconazole-delivery",
+        "question": "Which principle best characterizes posaconazole suspension administration?",
+        "choices": [
+          "Oral suspension is given with a full meal or, when needed, a nutritional supplement or acidic carbonated beverage",
+          "Conventional oral suspension is routinely taken fasting like the delayed-release tablet",
+          "Any clear drink makes fasting suspension exposure equivalent to a full meal",
+          "Adding an acidic beverage removes the need to review interacting drugs or breakthrough risk"
+        ],
+        "answer": 0,
+        "rationale": "Give conventional NOXAFIL oral suspension during or within 20 minutes after a full meal. When a full meal cannot be eaten and tablets or injection are not options, the label permits a liquid nutritional supplement or an acidic carbonated beverage such as ginger ale. Routine fasting, an arbitrary clear drink, or using a beverage to bypass interaction and breakthrough review does not follow that plan. PowderMix is a separate delayed-release product with its own with-food and preparation instructions.",
+        "reviewHref": "#posaconazole-delivery"
+      },
+      "status": "complete stem, key, all alternatives and rationale source-reconciled",
+      "newlyVerified": true,
+      "sourceScopes": "2.1; 2.8-2.10; 5.10; 7.1/Table16; 7.3; 12.3 Absorption/Tables24-25 including NG footnote; 17",
+      "review": {
+        "originalIdStemKeyCorrectTextAndAnchorRetained": true,
+        "allAlternativesReviewed": true,
+        "distractors": "Relevant formulation, eligibility, food, manipulation, exposure and interaction misconceptions replace unrelated true principles. Previously repaired topical choices and the complete case169 choices are retained. Every rationale addresses all four alternatives.",
+        "clinicalLimits": "Food flexibility does not imply zero food effect or guaranteed absorption. Acidic beverage fallback follows the exact conventional suspension conditions. NG findings are specific healthy-volunteer data, not a universal tube/feed protocol. Nausea/mucositis are intake-feasibility assessments, not a measured uniform pharmacokinetic effect."
+      }
+    },
+    {
+      "id": "triazole-pharmacology-090",
+      "before": {
+        "id": "triazole-pharmacology-090",
+        "lesson": "posaconazole-delivery",
+        "question": "Which clinical action best applies to posaconazole suspension administration?",
+        "choices": [
+          "Protect absorption and monitor for breakthrough when adequate intake cannot be achieved",
+          "Continue the suspension fasting and assume the prescribed dose ensures absorption",
+          "Assume a proton pump inhibitor cannot affect suspension exposure",
+          "Treat identical tablet and suspension milligrams as identical absorbed doses"
+        ],
+        "answer": 0,
+        "rationale": "Suspension needs a full meal or oral nutritional supplement. Acid suppression can decrease its absorption and create treatment-failure risk, so inadequate intake and interacting medicines require an exposure review.",
+        "reviewHref": "#posaconazole-delivery"
+      },
+      "after": {
+        "id": "triazole-pharmacology-090",
+        "lesson": "posaconazole-delivery",
+        "question": "Which clinical action best applies to posaconazole suspension administration?",
+        "choices": [
+          "Protect absorption and monitor for breakthrough when adequate intake cannot be achieved",
+          "Continue the suspension fasting and assume the prescribed dose ensures absorption",
+          "Assume a proton pump inhibitor cannot affect suspension exposure",
+          "Treat identical tablet and suspension milligrams as identical absorbed doses"
+        ],
+        "answer": 0,
+        "rationale": "Protect the conventional suspension nutrition and delivery plan, and monitor for breakthrough when adequate intake cannot be achieved. If a full meal is impossible, review the labeled alternative formulation or supplement/acidic-beverage options; if those cannot be tolerated, consider another antifungal or closely monitored suspension therapy. Fasting with assumed absorption, ignoring an esomeprazole interaction, or equating tablet and suspension milligrams does not establish adequate exposure.",
+        "reviewHref": "#posaconazole-delivery"
+      },
+      "status": "complete stem, key, all alternatives and rationale source-reconciled",
+      "newlyVerified": false,
+      "sourceScopes": "2.1; 2.8-2.10; 5.10; 7.1/Table16; 7.3; 12.3 Absorption/Tables24-25 including NG footnote; 17",
+      "review": {
+        "originalIdStemKeyCorrectTextAndAnchorRetained": true,
+        "allAlternativesReviewed": true,
+        "distractors": "Relevant formulation, eligibility, food, manipulation, exposure and interaction misconceptions replace unrelated true principles. Previously repaired topical choices and the complete case169 choices are retained. Every rationale addresses all four alternatives.",
+        "clinicalLimits": "Food flexibility does not imply zero food effect or guaranteed absorption. Acidic beverage fallback follows the exact conventional suspension conditions. NG findings are specific healthy-volunteer data, not a universal tube/feed protocol. Nausea/mucositis are intake-feasibility assessments, not a measured uniform pharmacokinetic effect."
+      }
+    },
+    {
+      "id": "triazole-pharmacology-091",
+      "before": {
+        "id": "triazole-pharmacology-091",
+        "lesson": "posaconazole-delivery",
+        "question": "Which assessment is most appropriate for posaconazole suspension administration?",
+        "choices": [
+          "Assess meal, supplement, acid suppression, nausea, mucositis, diarrhea, tube feeds, and alternative formulation",
+          "Assess ALT, AST, alkaline phosphatase, bilirubin, symptoms, hepatic impairment, alcohol, and other hepatotoxins",
+          "Assess CYP3A4, CYP2C9, CYP2C19, P-glycoprotein, substrate risk, and concentration",
+          "Assess capsule or solution, product strength, food, gastric pH, indication, swallowing, and concentration"
+        ],
+        "answer": 0,
+        "rationale": "Low or variable suspension exposure can cause prophylaxis or treatment failure",
+        "reviewHref": "#posaconazole-delivery"
+      },
+      "after": {
+        "id": "triazole-pharmacology-091",
+        "lesson": "posaconazole-delivery",
+        "question": "Which assessment is most appropriate for posaconazole suspension administration?",
+        "choices": [
+          "Assess meal, supplement, acid suppression, nausea, mucositis, diarrhea, tube feeds, and alternative formulation",
+          "Review meal timing alone and ignore vomiting, diarrhea and interacting drugs",
+          "Treat any acid-suppressing medicine as having the same proven effect on every posaconazole formulation",
+          "Assume tube feeds make conventional suspension and crushed tablets interchangeable"
+        ],
+        "answer": 0,
+        "rationale": "Assess the actual nutrition plan, interacting medicines and delivery route, including nausea or mucositis that may make the prescribed intake difficult. The label identifies lower suspension exposure with cimetidine or esomeprazole and lower exposure in a specific NG-tube study; severe diarrhea or vomiting requires breakthrough monitoring. These findings do not establish one effect for all acid suppressants, all tube/feed arrangements or mucositis, and they do not authorize crushing delayed-release tablets.",
+        "reviewHref": "#posaconazole-delivery"
+      },
+      "status": "complete stem, key, all alternatives and rationale source-reconciled",
+      "newlyVerified": true,
+      "sourceScopes": "2.1; 2.8-2.10; 5.10; 7.1/Table16; 7.3; 12.3 Absorption/Tables24-25 including NG footnote; 17",
+      "review": {
+        "originalIdStemKeyCorrectTextAndAnchorRetained": true,
+        "allAlternativesReviewed": true,
+        "distractors": "Relevant formulation, eligibility, food, manipulation, exposure and interaction misconceptions replace unrelated true principles. Previously repaired topical choices and the complete case169 choices are retained. Every rationale addresses all four alternatives.",
+        "clinicalLimits": "Food flexibility does not imply zero food effect or guaranteed absorption. Acidic beverage fallback follows the exact conventional suspension conditions. NG findings are specific healthy-volunteer data, not a universal tube/feed protocol. Nausea/mucositis are intake-feasibility assessments, not a measured uniform pharmacokinetic effect."
+      }
+    },
+    {
+      "id": "triazole-pharmacology-092",
+      "before": {
+        "id": "triazole-pharmacology-092",
+        "lesson": "posaconazole-delivery",
+        "question": "Which reasoning hazard is most important to prevent with posaconazole suspension administration?",
+        "choices": [
+          "Giving suspension fasting without an exposure plan",
+          "Confirming the suspension is taken with a full meal",
+          "Planning an oral nutritional supplement when needed for suspension administration",
+          "Reviewing acid-suppressing medicines and the exact formulation"
+        ],
+        "answer": 0,
+        "rationale": "Giving suspension without its nutrition plan can undermine delivery. Its administration and absorption requirements should be checked rather than inferred from the ingredient name.",
+        "reviewHref": "#posaconazole-delivery"
+      },
+      "after": {
+        "id": "triazole-pharmacology-092",
+        "lesson": "posaconazole-delivery",
+        "question": "Which reasoning hazard is most important to prevent with posaconazole suspension administration?",
+        "choices": [
+          "Giving suspension fasting without an exposure plan",
+          "Confirming the suspension is taken with a full meal",
+          "Planning an oral nutritional supplement when needed for suspension administration",
+          "Reviewing acid-suppressing medicines and the exact formulation"
+        ],
+        "answer": 0,
+        "rationale": "Giving conventional suspension fasting without a nutrition and exposure plan bypasses its labeled administration requirements. A full meal is the first choice; when it is not possible, review the product-specific supplement/acidic-beverage fallback and alternative formulations. Checking the meal plan and relevant interacting medicines are appropriate actions, not additional hazards.",
+        "reviewHref": "#posaconazole-delivery"
+      },
+      "status": "complete stem, key, all alternatives and rationale source-reconciled",
+      "newlyVerified": false,
+      "sourceScopes": "2.1; 2.8-2.10; 5.10; 7.1/Table16; 7.3; 12.3 Absorption/Tables24-25 including NG footnote; 17",
+      "review": {
+        "originalIdStemKeyCorrectTextAndAnchorRetained": true,
+        "allAlternativesReviewed": true,
+        "distractors": "Relevant formulation, eligibility, food, manipulation, exposure and interaction misconceptions replace unrelated true principles. Previously repaired topical choices and the complete case169 choices are retained. Every rationale addresses all four alternatives.",
+        "clinicalLimits": "Food flexibility does not imply zero food effect or guaranteed absorption. Acidic beverage fallback follows the exact conventional suspension conditions. NG findings are specific healthy-volunteer data, not a universal tube/feed protocol. Nausea/mucositis are intake-feasibility assessments, not a measured uniform pharmacokinetic effect."
+      }
+    },
+    {
+      "id": "triazole-pharmacology-169",
+      "before": {
+        "id": "triazole-pharmacology-169",
+        "lesson": "posaconazole-delivery",
+        "question": "A prescription switches posaconazole delayed-release tablets to oral suspension at the same milligram dose. What should happen?",
+        "choices": [
+          "Stop and redesign the regimen because the formulations are not substitutable",
+          "Dispense without review",
+          "Crush both products together",
+          "Assume identical exposure"
+        ],
+        "answer": 0,
+        "rationale": "Current labeling explicitly separates indication, dose, administration, and exposure by formulation.",
+        "reviewHref": "#posaconazole-delivery"
+      },
+      "after": {
+        "id": "triazole-pharmacology-169",
+        "lesson": "posaconazole-delivery",
+        "question": "A prescription switches posaconazole delayed-release tablets to oral suspension at the same milligram dose. What should happen?",
+        "choices": [
+          "Stop and redesign the regimen because the formulations are not substitutable",
+          "Dispense without review",
+          "Crush both products together",
+          "Assume identical exposure"
+        ],
+        "answer": 0,
+        "rationale": "Stop the dose-for-dose substitution and verify the new product's indication, eligibility, regimen and administration. Conventional oral suspension is not substitutable with delayed-release tablets because dosing and exposure differ. Dispensing unchanged or assuming equal exposure is unsupported, and crushing the delayed-release tablet is explicitly prohibited.",
+        "reviewHref": "#posaconazole-delivery"
+      },
+      "status": "complete stem, key, all alternatives and rationale source-reconciled",
+      "newlyVerified": true,
+      "sourceScopes": "1.1-1.3; 2.1-2.4 with complete tables/footnotes; 2.7-2.10; 12.3 Absorption",
+      "review": {
+        "originalIdStemKeyCorrectTextAndAnchorRetained": true,
+        "allAlternativesReviewed": true,
+        "distractors": "Relevant formulation, eligibility, food, manipulation, exposure and interaction misconceptions replace unrelated true principles. Previously repaired topical choices and the complete case169 choices are retained. Every rationale addresses all four alternatives.",
+        "clinicalLimits": "Food flexibility does not imply zero food effect or guaranteed absorption. Acidic beverage fallback follows the exact conventional suspension conditions. NG findings are specific healthy-volunteer data, not a universal tube/feed protocol. Nausea/mucositis are intake-feasibility assessments, not a measured uniform pharmacokinetic effect."
+      }
+    }
+  ],
+  "teachingReview": [
+    {
+      "heading": "Stop unsafe substitution",
+      "before": "Posaconazole formulations are explicitly non-substitutable. A product switch requires a new indication, eligibility, dose, administration, and monitoring verification rather than a copied milligram amount.",
+      "after": "Conventional posaconazole oral suspension is not substitutable with delayed-release tablets or PowderMix. A product switch requires a new indication, eligibility, dose, administration, and monitoring verification rather than a copied milligram amount. The February 2026 NOXAFIL label specifies delayed-release tablets for invasive aspergillosis treatment or high-risk prophylaxis in patients aged at least two years who weigh more than 40 kg. PowderMix covers those indications in children aged at least two years weighing 10 to 40 kg. Conventional oral suspension covers high-risk prophylaxis and oropharyngeal candidiasis in patients aged at least 13 years. Follow the exact product and indication rather than transferring one eligibility rule to every formulation. PowderMix is contraindicated in known or suspected hereditary fructose intolerance and requires its kit-specific preparation and provided notched-tip syringes.",
+      "wholeBodyVerified": true,
+      "source": "Current NOXAFIL1/2/5.10/7.1/7.3/12.3 Absorption/17 as applicable; source-specific instructions and qualified intake/delivery planning."
+    },
+    {
+      "heading": "Use the current tablet instruction",
+      "before": "Delayed-release tablets are swallowed whole and may be taken with or without food. This differs from older generalized teaching that every posaconazole dose must accompany a meal.",
+      "after": "Delayed-release tablets are swallowed whole and may be taken with or without food. This differs from older generalized teaching that every posaconazole dose must accompany a meal. Do not divide, crush, or chew the tablets. For eligible patients who cannot eat a full meal, the label favors tablets over conventional suspension for prophylaxis because tablets generally provide higher exposure. Food flexibility does not guarantee absorption: monitor for breakthrough infection with severe diarrhea or vomiting. The tablet food study still found an exposure change with a high-fat meal.",
+      "wholeBodyVerified": true,
+      "source": "Current NOXAFIL1/2/5.10/7.1/7.3/12.3 Absorption/17 as applicable; source-specific instructions and qualified intake/delivery planning."
+    },
+    {
+      "heading": "Protect suspension absorption",
+      "before": "Oral suspension is given with a full meal or, when needed, a nutritional supplement or acidic carbonated beverage. Poor intake, acid suppression, mucositis, diarrhea, and tube feeding can undermine exposure.",
+      "after": "Oral suspension is given with a full meal or, when needed, a nutritional supplement or acidic carbonated beverage. Give each conventional suspension dose during or within 20 minutes after a full meal. If a full meal is not possible and tablets or injection are not options, use the labeled liquid nutritional supplement or acidic carbonated beverage, such as ginger ale. If these cannot be tolerated either, consider an alternative antifungal or closely monitored suspension therapy. Shake well and use the provided measured dosing spoon. Assess poor intake, acid suppression, nausea, mucositis, diarrhea, and tube feeding before relying on oral delivery. Cimetidine and esomeprazole can lower suspension exposure; severe diarrhea or vomiting requires breakthrough monitoring. A healthy-volunteer NG-tube study found lower suspension exposure, but does not define every tube or continuous-feed protocol. Mucositis and nausea prompt intake assessment rather than a claimed uniform pharmacokinetic effect. PowderMix has separate with-food instructions and kit-specific preparation.",
+      "wholeBodyVerified": true,
+      "source": "Current NOXAFIL1/2/5.10/7.1/7.3/12.3 Absorption/17 as applicable; source-specific instructions and qualified intake/delivery planning."
+    }
+  ],
+  "embeddedCheckReview": {
+    "before": {
+      "question": "Can posaconazole delayed-release tablets and oral suspension be substituted at the same milligram dose?",
+      "choices": [
+        "No, the regimen must be redesigned for the exact formulation",
+        "Yes, they are equivalent",
+        "Only if both are crushed",
+        "Yes, without monitoring"
+      ],
+      "answer": 0,
+      "rationale": "Current labeling separates the formulations by dose, administration, indication, and exposure.",
+      "reviewHref": "#posaconazole-delivery"
+    },
+    "after": {
+      "question": "Can posaconazole delayed-release tablets and oral suspension be substituted at the same milligram dose?",
+      "choices": [
+        "No, the regimen must be redesigned for the exact formulation",
+        "Yes, they are equivalent",
+        "Only if both are crushed",
+        "Yes, without monitoring"
+      ],
+      "answer": 0,
+      "rationale": "No. Conventional oral suspension is not substitutable with delayed-release tablets at the same milligram dose. Verify the exact product's indication, eligibility, dosing and administration. Equal ingredient names or monitoring alone do not establish equivalence, and the delayed-release tablets must not be crushed.",
+      "reviewHref": "#posaconazole-delivery"
+    },
+    "wholeCheckVerified": true,
+    "allAlternativesAndRationaleReviewed": true,
+    "source": "NOXAFIL2.1/2.7/2.8/2.9 complete formulation/manipulation rules."
+  },
+  "metadataReview": [
+    {
+      "field": "title",
+      "text": "Make Posaconazole Formulation Visible",
+      "status": "verified",
+      "source": "FDA-approved NOXAFIL label 1.1-1.3, 2.1-2.4, 2.7-2.10, 5.3/5.4, 7.1/7.2 introduction and 12.3 Absorption; original organizational teaching."
+    },
+    {
+      "field": "summary",
+      "text": "Delayed-release tablets, oral suspension, and PowderMix differ in indication, eligibility, dosing, preparation, and exposure.",
+      "status": "verified",
+      "source": "FDA-approved NOXAFIL label 1.1-1.3, 2.1-2.4, 2.7-2.10, 5.3/5.4, 7.1/7.2 introduction and 12.3 Absorption; original organizational teaching."
+    },
+    {
+      "field": "application",
+      "text": "Select the formulation before the dose, then protect administration, exposure, interactions, and electrolyte surveillance.",
+      "status": "verified",
+      "source": "FDA-approved NOXAFIL label 1.1-1.3, 2.1-2.4, 2.7-2.10, 5.3/5.4, 7.1/7.2 introduction and 12.3 Absorption; original organizational teaching."
+    },
+    {
+      "field": "concepts[0]",
+      "text": "Delayed-release tablet",
+      "status": "verified",
+      "source": "NOXAFIL 2.1/2.7/2.8/2.9/12.3; hypertension/hypokalemia and pseudoaldosteronism concept directly supported by 5.3/5.4. No alkalosis or concentration threshold inferred."
+    },
+    {
+      "field": "concepts[1]",
+      "text": "Oral suspension",
+      "status": "verified",
+      "source": "NOXAFIL 2.1/2.7/2.8/2.9/12.3; hypertension/hypokalemia and pseudoaldosteronism concept directly supported by 5.3/5.4. No alkalosis or concentration threshold inferred."
+    },
+    {
+      "field": "concepts[2]",
+      "text": "Non-substitution",
+      "status": "verified",
+      "source": "NOXAFIL 2.1/2.7/2.8/2.9/12.3; hypertension/hypokalemia and pseudoaldosteronism concept directly supported by 5.3/5.4. No alkalosis or concentration threshold inferred."
+    },
+    {
+      "field": "concepts[3]",
+      "text": "Food",
+      "status": "verified",
+      "source": "NOXAFIL 2.1/2.7/2.8/2.9/12.3; hypertension/hypokalemia and pseudoaldosteronism concept directly supported by 5.3/5.4. No alkalosis or concentration threshold inferred."
+    },
+    {
+      "field": "concepts[4]",
+      "text": "Pseudoaldosteronism",
+      "status": "verified",
+      "source": "NOXAFIL 2.1/2.7/2.8/2.9/12.3; hypertension/hypokalemia and pseudoaldosteronism concept directly supported by 5.3/5.4. No alkalosis or concentration threshold inferred."
+    },
+    {
+      "field": "keyPoints[0]",
+      "text": "Formulation comes before dose.",
+      "status": "verified",
+      "source": "NOXAFIL 2.1/2.7/2.8/2.9/12.3; hypertension/hypokalemia and pseudoaldosteronism concept directly supported by 5.3/5.4. No alkalosis or concentration threshold inferred."
+    },
+    {
+      "field": "keyPoints[1]",
+      "text": "Current delayed-release tablets can be taken with or without food.",
+      "status": "verified",
+      "source": "NOXAFIL 2.1/2.7/2.8/2.9/12.3; hypertension/hypokalemia and pseudoaldosteronism concept directly supported by 5.3/5.4. No alkalosis or concentration threshold inferred."
+    },
+    {
+      "field": "keyPoints[2]",
+      "text": "Suspension exposure depends on administration conditions.",
+      "status": "verified",
+      "source": "NOXAFIL 2.1/2.7/2.8/2.9/12.3; hypertension/hypokalemia and pseudoaldosteronism concept directly supported by 5.3/5.4. No alkalosis or concentration threshold inferred."
+    },
+    {
+      "field": "keyPoints[3]",
+      "text": "Hypertension plus hypokalemia is a drug-safety signal.",
+      "status": "verified",
+      "source": "NOXAFIL 2.1/2.7/2.8/2.9/12.3; hypertension/hypokalemia and pseudoaldosteronism concept directly supported by 5.3/5.4. No alkalosis or concentration threshold inferred."
+    }
+  ],
+  "figureReview": {
+    "wholeFigureVerified": true,
+    "completeClaimStrings": 14,
+    "before": {
+      "beforeDiagrams": {
+        "azole-target-sar": [
+          "Interrupt ergosterol synthesis",
+          "Azole ring",
+          "CYP51 heme",
+          "Sterol shift",
+          "Membrane failure"
+        ],
+        "spectrum-clinical-role": [
+          "Define the antifungal role",
+          "Organism",
+          "Site",
+          "Disease phase",
+          "Host"
+        ],
+        "fluconazole-exposure": [
+          "Preserve reliable exposure",
+          "Oral access",
+          "Loading",
+          "Renal maintenance",
+          "Susceptibility"
+        ],
+        "itraconazole-formulations": [
+          "Treat formulation as the drug",
+          "Product",
+          "Food and pH",
+          "Concentration",
+          "Cardiac safety"
+        ],
+        "voriconazole-precision": [
+          "Control nonlinear variability",
+          "Dose",
+          "Trough",
+          "CYP2C19",
+          "Toxicity"
+        ],
+        "posaconazole-delivery": [
+          "Choose product before dose",
+          "Formulation",
+          "Administration",
+          "Exposure",
+          "Electrolytes"
+        ],
+        "isavuconazole-system": [
+          "Translate prodrug to active exposure",
+          "Prodrug mass",
+          "Loading",
+          "Route switch",
+          "QT direction"
+        ],
+        "interactions-electrophysiology": [
+          "Own the interaction lifecycle",
+          "Start",
+          "Steady state",
+          "Stop",
+          "Follow-up"
+        ],
+        "tdm-organ-monitoring": [
+          "Measure only with an action",
+          "Question",
+          "Timing",
+          "Result",
+          "Response"
+        ],
+        "integration-transition": [
+          "Close the triazole loop",
+          "Verify",
+          "Deliver",
+          "Monitor",
+          "Transition"
+        ]
+      },
+      "afterPosaconazoleStepNotesAndBodies": [
+        [
+          "Name the exact product",
+          "Verify indication, age, weight, and dosage form before selecting the regimen."
+        ],
+        [
+          "Follow product instructions",
+          "Swallow tablets whole; use the conventional suspension meal plan or PowderMix food and kit instructions."
+        ],
+        [
+          "Review intake and interactions",
+          "Severe diarrhea or vomiting and suspension NG-tube delivery warrant breakthrough monitoring."
+        ],
+        [
+          "Monitor blood pressure and potassium",
+          "Review new hypertension or hypokalemia and correct electrolyte disturbances."
+        ]
+      ],
+      "otherNineDiagramsNotesAndBodiesUnchanged": true
+    },
+    "source": "NOXAFIL2.1/2.7-2.10;5.3/5.4/5.10;7.1;12.3 NG footnote. Four ordinal planning steps; no measured PK curve, dose-conversion ratio, molecular structure or guaranteed outcome.",
+    "otherNineFiguresUnchanged": true,
+    "desktopMobileActuallyViewed": true
+  },
+  "cumulativeReview": {
+    "id": "cumulative-triazole-antifungal-pharmacology-triazole-pharmacology-089",
+    "before": {
+      "id": "cumulative-triazole-antifungal-pharmacology-triazole-pharmacology-089",
+      "lesson": "posaconazole-delivery",
+      "question": "Which principle best characterizes posaconazole suspension administration?",
+      "choices": [
+        "Oral suspension is given with a full meal or, when needed, a nutritional supplement or acidic carbonated beverage",
+        "Every systemic triazole can cause clinically important liver injury, with different clearance and label details",
+        "Additional ring nitrogen generally improves fungal CYP selectivity relative to early imidazoles but does not eliminate human CYP interactions",
+        "Itraconazole capsules, oral solution, and SUBA products differ in bioavailability and are not interchangeable"
+      ],
+      "answer": 0,
+      "rationale": "Low or variable suspension exposure can cause prophylaxis or treatment failure",
+      "reviewHref": "/learn/pharmacy/modules/triazole-antifungal-pharmacology",
+      "module": "Triazole Antifungal Pharmacology"
+    },
+    "after": {
+      "id": "cumulative-triazole-antifungal-pharmacology-triazole-pharmacology-089",
+      "lesson": "posaconazole-delivery",
+      "question": "Which principle best characterizes posaconazole suspension administration?",
+      "choices": [
+        "Oral suspension is given with a full meal or, when needed, a nutritional supplement or acidic carbonated beverage",
+        "Conventional oral suspension is routinely taken fasting like the delayed-release tablet",
+        "Any clear drink makes fasting suspension exposure equivalent to a full meal",
+        "Adding an acidic beverage removes the need to review interacting drugs or breakthrough risk"
+      ],
+      "answer": 0,
+      "rationale": "Give conventional NOXAFIL oral suspension during or within 20 minutes after a full meal. When a full meal cannot be eaten and tablets or injection are not options, the label permits a liquid nutritional supplement or an acidic carbonated beverage such as ginger ale. Routine fasting, an arbitrary clear drink, or using a beverage to bypass interaction and breakthrough review does not follow that plan. PowderMix is a separate delayed-release product with its own with-food and preparation instructions.",
+      "reviewHref": "/learn/pharmacy/modules/triazole-antifungal-pharmacology",
+      "module": "Triazole Antifungal Pharmacology"
+    },
+    "wholeQuestionVerified": true,
+    "parent": "triazole-pharmacology-089",
+    "other1179Unchanged": true,
+    "otherFourAssociatedTriazoleCopiesNotNewlyClosed": true
+  },
+  "coverage": {
+    "evidence": "enteral-nutrition-broader-posaconazole-label-review.json",
+    "moduleBank": 176,
+    "sourceVerifiedBankIds": [
+      "triazole-pharmacology-081",
+      "triazole-pharmacology-082",
+      "triazole-pharmacology-083",
+      "triazole-pharmacology-084",
+      "triazole-pharmacology-085",
+      "triazole-pharmacology-086",
+      "triazole-pharmacology-087",
+      "triazole-pharmacology-088",
+      "triazole-pharmacology-089",
+      "triazole-pharmacology-090",
+      "triazole-pharmacology-091",
+      "triazole-pharmacology-092",
+      "triazole-pharmacology-169"
+    ],
+    "newFullQuestionsVerified": 9,
+    "previouslyVerifiedQuestionsRechecked": [
+      "triazole-pharmacology-082",
+      "triazole-pharmacology-084",
+      "triazole-pharmacology-090",
+      "triazole-pharmacology-092"
+    ],
+    "fullQuestionsReconciled": 13,
+    "broaderFeedingBankVerifiedAfter": 180,
+    "wholeBodiesVerified": 3,
+    "wholeEmbeddedChecksVerified": 1,
+    "wholeFiguresVerified": 1,
+    "lessonMetadataStatementsVerified": 12,
+    "lesson": "posaconazole-delivery",
+    "wholeLessonVerified": false,
+    "wholeParentModuleVerified": false,
+    "wholeENModuleVerified": false,
+    "wholeChapterVerified": false,
+    "cumulativeSourceVerifiedIds": [
+      "cumulative-triazole-antifungal-pharmacology-triazole-pharmacology-089"
+    ],
+    "other1179CumulativeObjectsUnchanged": true,
+    "existing176IdsStemsKeysCorrectTextsAndAnchorsPreserved": true,
+    "noNewQuestionIds": true,
+    "originalClinicalAssessmentScopeRetained": true,
+    "otherNineFiguresUnchanged": true,
+    "other38BodiesAndNineChecksUnchanged": true,
+    "unrelatedWorkingDraftsPreserved": true
+  },
+  "validation": {
+    "structure": {
+      "modules": 1,
+      "questions": 176,
+      "hardErrors": [],
+      "sourceGaps": [],
+      "sizeAdvisories": [],
+      "thinLessons": [],
+      "weakestModules": [
+        {
+          "module": "triazole-antifungal-pharmacology",
+          "lessons": 10,
+          "questions": 176,
+          "minimumLessonCoverage": 17
+        }
+      ]
+    },
+    "productionBuild": {
+      "status": "passed",
+      "exitCode": 0,
+      "pages": 567,
+      "isolatedExactBase": "b303791f2ea2ed8799c491bfa31caed07c930e38",
+      "trackedProductFiles": [
+        "src/data/modules/triazoleAntifungalPharmacology.js",
+        "src/data/questionBanks/triazoleAntifungalPharmacology.js",
+        "src/components/learn/TriazoleAntifungalPharmacologyVisual.jsx"
+      ],
+      "rebuildReason": "Final product-specific figure, PowderMix HFI/kit safeguards and public question088 rationale correction included in the final567-page build. Twelve unchanged full question objects retain their prior grading evidence; final088 and all teaching/metadata/check/figure/reference DOM were freshly rechecked."
+    },
+    "objectPreservation": {
+      "changedQuestionIds": [
+        "triazole-pharmacology-081",
+        "triazole-pharmacology-082",
+        "triazole-pharmacology-083",
+        "triazole-pharmacology-084",
+        "triazole-pharmacology-085",
+        "triazole-pharmacology-086",
+        "triazole-pharmacology-087",
+        "triazole-pharmacology-088",
+        "triazole-pharmacology-089",
+        "triazole-pharmacology-090",
+        "triazole-pharmacology-091",
+        "triazole-pharmacology-092",
+        "triazole-pharmacology-169"
+      ],
+      "otherFullQuestionsUnchanged": 163,
+      "changedBodies": 3,
+      "otherWholeBodiesUnchanged": 38,
+      "otherEmbeddedChecksUnchanged": 9,
+      "allMetadataUnchanged": true,
+      "changedCumulativeIds": [
+        "cumulative-triazole-antifungal-pharmacology-triazole-pharmacology-089"
+      ],
+      "otherCumulativeUnchanged": 1179,
+      "sourceClosedLessonQuestions": 13,
+      "wholeLessonVerified": false
+    },
+    "browser": {
+      "status": "passed",
+      "results": [
+        {
+          "width": 1440,
+          "bodies": 41,
+          "exactMetadata": true,
+          "references": 10,
+          "checkResults": [
+            {
+              "wrong": true,
+              "grade": "0/1"
+            },
+            {
+              "wrong": false,
+              "grade": "1/1"
+            }
+          ],
+          "attempts": [
+            {
+              "target": "triazole-pharmacology-081",
+              "seed": 16,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "triazole-pharmacology-068",
+                "triazole-pharmacology-082",
+                "triazole-pharmacology-080",
+                "triazole-pharmacology-066",
+                "triazole-pharmacology-108",
+                "triazole-pharmacology-014",
+                "triazole-pharmacology-071",
+                "triazole-pharmacology-126",
+                "triazole-pharmacology-147",
+                "triazole-pharmacology-081"
+              ]
+            },
+            {
+              "target": "triazole-pharmacology-081",
+              "seed": 16,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "triazole-pharmacology-068",
+                "triazole-pharmacology-082",
+                "triazole-pharmacology-080",
+                "triazole-pharmacology-066",
+                "triazole-pharmacology-108",
+                "triazole-pharmacology-014",
+                "triazole-pharmacology-071",
+                "triazole-pharmacology-126",
+                "triazole-pharmacology-147",
+                "triazole-pharmacology-081"
+              ]
+            },
+            {
+              "target": "triazole-pharmacology-082",
+              "seed": 16,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "triazole-pharmacology-068",
+                "triazole-pharmacology-082",
+                "triazole-pharmacology-080",
+                "triazole-pharmacology-066",
+                "triazole-pharmacology-108",
+                "triazole-pharmacology-014",
+                "triazole-pharmacology-071",
+                "triazole-pharmacology-126",
+                "triazole-pharmacology-147",
+                "triazole-pharmacology-081"
+              ]
+            },
+            {
+              "target": "triazole-pharmacology-082",
+              "seed": 16,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "triazole-pharmacology-068",
+                "triazole-pharmacology-082",
+                "triazole-pharmacology-080",
+                "triazole-pharmacology-066",
+                "triazole-pharmacology-108",
+                "triazole-pharmacology-014",
+                "triazole-pharmacology-071",
+                "triazole-pharmacology-126",
+                "triazole-pharmacology-147",
+                "triazole-pharmacology-081"
+              ]
+            },
+            {
+              "target": "triazole-pharmacology-083",
+              "seed": 5,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "triazole-pharmacology-083",
+                "triazole-pharmacology-150",
+                "triazole-pharmacology-049",
+                "triazole-pharmacology-115",
+                "triazole-pharmacology-071",
+                "triazole-pharmacology-099",
+                "triazole-pharmacology-142",
+                "triazole-pharmacology-143",
+                "triazole-pharmacology-102",
+                "triazole-pharmacology-090"
+              ]
+            },
+            {
+              "target": "triazole-pharmacology-083",
+              "seed": 5,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "triazole-pharmacology-083",
+                "triazole-pharmacology-150",
+                "triazole-pharmacology-049",
+                "triazole-pharmacology-115",
+                "triazole-pharmacology-071",
+                "triazole-pharmacology-099",
+                "triazole-pharmacology-142",
+                "triazole-pharmacology-143",
+                "triazole-pharmacology-102",
+                "triazole-pharmacology-090"
+              ]
+            },
+            {
+              "target": "triazole-pharmacology-084",
+              "seed": 68,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "triazole-pharmacology-068",
+                "triazole-pharmacology-143",
+                "triazole-pharmacology-021",
+                "triazole-pharmacology-102",
+                "triazole-pharmacology-084",
+                "triazole-pharmacology-107",
+                "triazole-pharmacology-140",
+                "triazole-pharmacology-130",
+                "triazole-pharmacology-091",
+                "triazole-pharmacology-150"
+              ]
+            },
+            {
+              "target": "triazole-pharmacology-084",
+              "seed": 68,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "triazole-pharmacology-068",
+                "triazole-pharmacology-143",
+                "triazole-pharmacology-021",
+                "triazole-pharmacology-102",
+                "triazole-pharmacology-084",
+                "triazole-pharmacology-107",
+                "triazole-pharmacology-140",
+                "triazole-pharmacology-130",
+                "triazole-pharmacology-091",
+                "triazole-pharmacology-150"
+              ]
+            },
+            {
+              "target": "triazole-pharmacology-085",
+              "seed": 18,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "triazole-pharmacology-153",
+                "triazole-pharmacology-047",
+                "triazole-pharmacology-060",
+                "triazole-pharmacology-098",
+                "triazole-pharmacology-085",
+                "triazole-pharmacology-115",
+                "triazole-pharmacology-051",
+                "triazole-pharmacology-049",
+                "triazole-pharmacology-106",
+                "triazole-pharmacology-122"
+              ]
+            },
+            {
+              "target": "triazole-pharmacology-085",
+              "seed": 18,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "triazole-pharmacology-153",
+                "triazole-pharmacology-047",
+                "triazole-pharmacology-060",
+                "triazole-pharmacology-098",
+                "triazole-pharmacology-085",
+                "triazole-pharmacology-115",
+                "triazole-pharmacology-051",
+                "triazole-pharmacology-049",
+                "triazole-pharmacology-106",
+                "triazole-pharmacology-122"
+              ]
+            },
+            {
+              "target": "triazole-pharmacology-086",
+              "seed": 54,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "triazole-pharmacology-001",
+                "triazole-pharmacology-045",
+                "triazole-pharmacology-131",
+                "triazole-pharmacology-091",
+                "triazole-pharmacology-030",
+                "triazole-pharmacology-161",
+                "triazole-pharmacology-128",
+                "triazole-pharmacology-033",
+                "triazole-pharmacology-136",
+                "triazole-pharmacology-086"
+              ]
+            },
+            {
+              "target": "triazole-pharmacology-086",
+              "seed": 54,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "triazole-pharmacology-001",
+                "triazole-pharmacology-045",
+                "triazole-pharmacology-131",
+                "triazole-pharmacology-091",
+                "triazole-pharmacology-030",
+                "triazole-pharmacology-161",
+                "triazole-pharmacology-128",
+                "triazole-pharmacology-033",
+                "triazole-pharmacology-136",
+                "triazole-pharmacology-086"
+              ]
+            },
+            {
+              "target": "triazole-pharmacology-087",
+              "seed": 23,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "triazole-pharmacology-145",
+                "triazole-pharmacology-111",
+                "triazole-pharmacology-067",
+                "triazole-pharmacology-152",
+                "triazole-pharmacology-060",
+                "triazole-pharmacology-148",
+                "triazole-pharmacology-157",
+                "triazole-pharmacology-087",
+                "triazole-pharmacology-005",
+                "triazole-pharmacology-077"
+              ]
+            },
+            {
+              "target": "triazole-pharmacology-087",
+              "seed": 23,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "triazole-pharmacology-145",
+                "triazole-pharmacology-111",
+                "triazole-pharmacology-067",
+                "triazole-pharmacology-152",
+                "triazole-pharmacology-060",
+                "triazole-pharmacology-148",
+                "triazole-pharmacology-157",
+                "triazole-pharmacology-087",
+                "triazole-pharmacology-005",
+                "triazole-pharmacology-077"
+              ]
+            },
+            {
+              "target": "triazole-pharmacology-089",
+              "seed": 26,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "triazole-pharmacology-025",
+                "triazole-pharmacology-007",
+                "triazole-pharmacology-002",
+                "triazole-pharmacology-069",
+                "triazole-pharmacology-142",
+                "triazole-pharmacology-118",
+                "triazole-pharmacology-089",
+                "triazole-pharmacology-041",
+                "triazole-pharmacology-036",
+                "triazole-pharmacology-150"
+              ]
+            },
+            {
+              "target": "triazole-pharmacology-089",
+              "seed": 26,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "triazole-pharmacology-025",
+                "triazole-pharmacology-007",
+                "triazole-pharmacology-002",
+                "triazole-pharmacology-069",
+                "triazole-pharmacology-142",
+                "triazole-pharmacology-118",
+                "triazole-pharmacology-089",
+                "triazole-pharmacology-041",
+                "triazole-pharmacology-036",
+                "triazole-pharmacology-150"
+              ]
+            },
+            {
+              "target": "triazole-pharmacology-090",
+              "seed": 5,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "triazole-pharmacology-083",
+                "triazole-pharmacology-150",
+                "triazole-pharmacology-049",
+                "triazole-pharmacology-115",
+                "triazole-pharmacology-071",
+                "triazole-pharmacology-099",
+                "triazole-pharmacology-142",
+                "triazole-pharmacology-143",
+                "triazole-pharmacology-102",
+                "triazole-pharmacology-090"
+              ]
+            },
+            {
+              "target": "triazole-pharmacology-090",
+              "seed": 5,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "triazole-pharmacology-083",
+                "triazole-pharmacology-150",
+                "triazole-pharmacology-049",
+                "triazole-pharmacology-115",
+                "triazole-pharmacology-071",
+                "triazole-pharmacology-099",
+                "triazole-pharmacology-142",
+                "triazole-pharmacology-143",
+                "triazole-pharmacology-102",
+                "triazole-pharmacology-090"
+              ]
+            },
+            {
+              "target": "triazole-pharmacology-091",
+              "seed": 7,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "triazole-pharmacology-024",
+                "triazole-pharmacology-093",
+                "triazole-pharmacology-096",
+                "triazole-pharmacology-039",
+                "triazole-pharmacology-112",
+                "triazole-pharmacology-154",
+                "triazole-pharmacology-124",
+                "triazole-pharmacology-014",
+                "triazole-pharmacology-091",
+                "triazole-pharmacology-080"
+              ]
+            },
+            {
+              "target": "triazole-pharmacology-091",
+              "seed": 7,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "triazole-pharmacology-024",
+                "triazole-pharmacology-093",
+                "triazole-pharmacology-096",
+                "triazole-pharmacology-039",
+                "triazole-pharmacology-112",
+                "triazole-pharmacology-154",
+                "triazole-pharmacology-124",
+                "triazole-pharmacology-014",
+                "triazole-pharmacology-091",
+                "triazole-pharmacology-080"
+              ]
+            },
+            {
+              "target": "triazole-pharmacology-092",
+              "seed": 11,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "triazole-pharmacology-034",
+                "triazole-pharmacology-111",
+                "triazole-pharmacology-169",
+                "triazole-pharmacology-092",
+                "triazole-pharmacology-132",
+                "triazole-pharmacology-107",
+                "triazole-pharmacology-127",
+                "triazole-pharmacology-149",
+                "triazole-pharmacology-133",
+                "triazole-pharmacology-148"
+              ]
+            },
+            {
+              "target": "triazole-pharmacology-092",
+              "seed": 11,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "triazole-pharmacology-034",
+                "triazole-pharmacology-111",
+                "triazole-pharmacology-169",
+                "triazole-pharmacology-092",
+                "triazole-pharmacology-132",
+                "triazole-pharmacology-107",
+                "triazole-pharmacology-127",
+                "triazole-pharmacology-149",
+                "triazole-pharmacology-133",
+                "triazole-pharmacology-148"
+              ]
+            },
+            {
+              "target": "triazole-pharmacology-169",
+              "seed": 11,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "triazole-pharmacology-034",
+                "triazole-pharmacology-111",
+                "triazole-pharmacology-169",
+                "triazole-pharmacology-092",
+                "triazole-pharmacology-132",
+                "triazole-pharmacology-107",
+                "triazole-pharmacology-127",
+                "triazole-pharmacology-149",
+                "triazole-pharmacology-133",
+                "triazole-pharmacology-148"
+              ]
+            },
+            {
+              "target": "triazole-pharmacology-169",
+              "seed": 11,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "triazole-pharmacology-034",
+                "triazole-pharmacology-111",
+                "triazole-pharmacology-169",
+                "triazole-pharmacology-092",
+                "triazole-pharmacology-132",
+                "triazole-pharmacology-107",
+                "triazole-pharmacology-127",
+                "triazole-pharmacology-149",
+                "triazole-pharmacology-133",
+                "triazole-pharmacology-148"
+              ]
+            },
+            {
+              "target": "triazole-pharmacology-088",
+              "seed": 25,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "triazole-pharmacology-106",
+                "triazole-pharmacology-033",
+                "triazole-pharmacology-088",
+                "triazole-pharmacology-011",
+                "triazole-pharmacology-091",
+                "triazole-pharmacology-136",
+                "triazole-pharmacology-143",
+                "triazole-pharmacology-140",
+                "triazole-pharmacology-037",
+                "triazole-pharmacology-013"
+              ]
+            },
+            {
+              "target": "triazole-pharmacology-088",
+              "seed": 25,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "triazole-pharmacology-106",
+                "triazole-pharmacology-033",
+                "triazole-pharmacology-088",
+                "triazole-pharmacology-011",
+                "triazole-pharmacology-091",
+                "triazole-pharmacology-136",
+                "triazole-pharmacology-143",
+                "triazole-pharmacology-140",
+                "triazole-pharmacology-037",
+                "triazole-pharmacology-013"
+              ]
+            }
+          ],
+          "noHorizontalOverflow": true,
+          "unauthenticated": true
+        },
+        {
+          "width": 390,
+          "bodies": 41,
+          "exactMetadata": true,
+          "references": 10,
+          "checkResults": [
+            {
+              "wrong": true,
+              "grade": "0/1"
+            },
+            {
+              "wrong": false,
+              "grade": "1/1"
+            }
+          ],
+          "attempts": [
+            {
+              "target": "triazole-pharmacology-081",
+              "seed": 16,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "triazole-pharmacology-068",
+                "triazole-pharmacology-082",
+                "triazole-pharmacology-080",
+                "triazole-pharmacology-066",
+                "triazole-pharmacology-108",
+                "triazole-pharmacology-014",
+                "triazole-pharmacology-071",
+                "triazole-pharmacology-126",
+                "triazole-pharmacology-147",
+                "triazole-pharmacology-081"
+              ]
+            },
+            {
+              "target": "triazole-pharmacology-081",
+              "seed": 16,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "triazole-pharmacology-068",
+                "triazole-pharmacology-082",
+                "triazole-pharmacology-080",
+                "triazole-pharmacology-066",
+                "triazole-pharmacology-108",
+                "triazole-pharmacology-014",
+                "triazole-pharmacology-071",
+                "triazole-pharmacology-126",
+                "triazole-pharmacology-147",
+                "triazole-pharmacology-081"
+              ]
+            },
+            {
+              "target": "triazole-pharmacology-082",
+              "seed": 16,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "triazole-pharmacology-068",
+                "triazole-pharmacology-082",
+                "triazole-pharmacology-080",
+                "triazole-pharmacology-066",
+                "triazole-pharmacology-108",
+                "triazole-pharmacology-014",
+                "triazole-pharmacology-071",
+                "triazole-pharmacology-126",
+                "triazole-pharmacology-147",
+                "triazole-pharmacology-081"
+              ]
+            },
+            {
+              "target": "triazole-pharmacology-082",
+              "seed": 16,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "triazole-pharmacology-068",
+                "triazole-pharmacology-082",
+                "triazole-pharmacology-080",
+                "triazole-pharmacology-066",
+                "triazole-pharmacology-108",
+                "triazole-pharmacology-014",
+                "triazole-pharmacology-071",
+                "triazole-pharmacology-126",
+                "triazole-pharmacology-147",
+                "triazole-pharmacology-081"
+              ]
+            },
+            {
+              "target": "triazole-pharmacology-083",
+              "seed": 5,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "triazole-pharmacology-083",
+                "triazole-pharmacology-150",
+                "triazole-pharmacology-049",
+                "triazole-pharmacology-115",
+                "triazole-pharmacology-071",
+                "triazole-pharmacology-099",
+                "triazole-pharmacology-142",
+                "triazole-pharmacology-143",
+                "triazole-pharmacology-102",
+                "triazole-pharmacology-090"
+              ]
+            },
+            {
+              "target": "triazole-pharmacology-083",
+              "seed": 5,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "triazole-pharmacology-083",
+                "triazole-pharmacology-150",
+                "triazole-pharmacology-049",
+                "triazole-pharmacology-115",
+                "triazole-pharmacology-071",
+                "triazole-pharmacology-099",
+                "triazole-pharmacology-142",
+                "triazole-pharmacology-143",
+                "triazole-pharmacology-102",
+                "triazole-pharmacology-090"
+              ]
+            },
+            {
+              "target": "triazole-pharmacology-084",
+              "seed": 68,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "triazole-pharmacology-068",
+                "triazole-pharmacology-143",
+                "triazole-pharmacology-021",
+                "triazole-pharmacology-102",
+                "triazole-pharmacology-084",
+                "triazole-pharmacology-107",
+                "triazole-pharmacology-140",
+                "triazole-pharmacology-130",
+                "triazole-pharmacology-091",
+                "triazole-pharmacology-150"
+              ]
+            },
+            {
+              "target": "triazole-pharmacology-084",
+              "seed": 68,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "triazole-pharmacology-068",
+                "triazole-pharmacology-143",
+                "triazole-pharmacology-021",
+                "triazole-pharmacology-102",
+                "triazole-pharmacology-084",
+                "triazole-pharmacology-107",
+                "triazole-pharmacology-140",
+                "triazole-pharmacology-130",
+                "triazole-pharmacology-091",
+                "triazole-pharmacology-150"
+              ]
+            },
+            {
+              "target": "triazole-pharmacology-085",
+              "seed": 18,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "triazole-pharmacology-153",
+                "triazole-pharmacology-047",
+                "triazole-pharmacology-060",
+                "triazole-pharmacology-098",
+                "triazole-pharmacology-085",
+                "triazole-pharmacology-115",
+                "triazole-pharmacology-051",
+                "triazole-pharmacology-049",
+                "triazole-pharmacology-106",
+                "triazole-pharmacology-122"
+              ]
+            },
+            {
+              "target": "triazole-pharmacology-085",
+              "seed": 18,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "triazole-pharmacology-153",
+                "triazole-pharmacology-047",
+                "triazole-pharmacology-060",
+                "triazole-pharmacology-098",
+                "triazole-pharmacology-085",
+                "triazole-pharmacology-115",
+                "triazole-pharmacology-051",
+                "triazole-pharmacology-049",
+                "triazole-pharmacology-106",
+                "triazole-pharmacology-122"
+              ]
+            },
+            {
+              "target": "triazole-pharmacology-086",
+              "seed": 54,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "triazole-pharmacology-001",
+                "triazole-pharmacology-045",
+                "triazole-pharmacology-131",
+                "triazole-pharmacology-091",
+                "triazole-pharmacology-030",
+                "triazole-pharmacology-161",
+                "triazole-pharmacology-128",
+                "triazole-pharmacology-033",
+                "triazole-pharmacology-136",
+                "triazole-pharmacology-086"
+              ]
+            },
+            {
+              "target": "triazole-pharmacology-086",
+              "seed": 54,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "triazole-pharmacology-001",
+                "triazole-pharmacology-045",
+                "triazole-pharmacology-131",
+                "triazole-pharmacology-091",
+                "triazole-pharmacology-030",
+                "triazole-pharmacology-161",
+                "triazole-pharmacology-128",
+                "triazole-pharmacology-033",
+                "triazole-pharmacology-136",
+                "triazole-pharmacology-086"
+              ]
+            },
+            {
+              "target": "triazole-pharmacology-087",
+              "seed": 23,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "triazole-pharmacology-145",
+                "triazole-pharmacology-111",
+                "triazole-pharmacology-067",
+                "triazole-pharmacology-152",
+                "triazole-pharmacology-060",
+                "triazole-pharmacology-148",
+                "triazole-pharmacology-157",
+                "triazole-pharmacology-087",
+                "triazole-pharmacology-005",
+                "triazole-pharmacology-077"
+              ]
+            },
+            {
+              "target": "triazole-pharmacology-087",
+              "seed": 23,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "triazole-pharmacology-145",
+                "triazole-pharmacology-111",
+                "triazole-pharmacology-067",
+                "triazole-pharmacology-152",
+                "triazole-pharmacology-060",
+                "triazole-pharmacology-148",
+                "triazole-pharmacology-157",
+                "triazole-pharmacology-087",
+                "triazole-pharmacology-005",
+                "triazole-pharmacology-077"
+              ]
+            },
+            {
+              "target": "triazole-pharmacology-089",
+              "seed": 26,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "triazole-pharmacology-025",
+                "triazole-pharmacology-007",
+                "triazole-pharmacology-002",
+                "triazole-pharmacology-069",
+                "triazole-pharmacology-142",
+                "triazole-pharmacology-118",
+                "triazole-pharmacology-089",
+                "triazole-pharmacology-041",
+                "triazole-pharmacology-036",
+                "triazole-pharmacology-150"
+              ]
+            },
+            {
+              "target": "triazole-pharmacology-089",
+              "seed": 26,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "triazole-pharmacology-025",
+                "triazole-pharmacology-007",
+                "triazole-pharmacology-002",
+                "triazole-pharmacology-069",
+                "triazole-pharmacology-142",
+                "triazole-pharmacology-118",
+                "triazole-pharmacology-089",
+                "triazole-pharmacology-041",
+                "triazole-pharmacology-036",
+                "triazole-pharmacology-150"
+              ]
+            },
+            {
+              "target": "triazole-pharmacology-090",
+              "seed": 5,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "triazole-pharmacology-083",
+                "triazole-pharmacology-150",
+                "triazole-pharmacology-049",
+                "triazole-pharmacology-115",
+                "triazole-pharmacology-071",
+                "triazole-pharmacology-099",
+                "triazole-pharmacology-142",
+                "triazole-pharmacology-143",
+                "triazole-pharmacology-102",
+                "triazole-pharmacology-090"
+              ]
+            },
+            {
+              "target": "triazole-pharmacology-090",
+              "seed": 5,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "triazole-pharmacology-083",
+                "triazole-pharmacology-150",
+                "triazole-pharmacology-049",
+                "triazole-pharmacology-115",
+                "triazole-pharmacology-071",
+                "triazole-pharmacology-099",
+                "triazole-pharmacology-142",
+                "triazole-pharmacology-143",
+                "triazole-pharmacology-102",
+                "triazole-pharmacology-090"
+              ]
+            },
+            {
+              "target": "triazole-pharmacology-091",
+              "seed": 7,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "triazole-pharmacology-024",
+                "triazole-pharmacology-093",
+                "triazole-pharmacology-096",
+                "triazole-pharmacology-039",
+                "triazole-pharmacology-112",
+                "triazole-pharmacology-154",
+                "triazole-pharmacology-124",
+                "triazole-pharmacology-014",
+                "triazole-pharmacology-091",
+                "triazole-pharmacology-080"
+              ]
+            },
+            {
+              "target": "triazole-pharmacology-091",
+              "seed": 7,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "triazole-pharmacology-024",
+                "triazole-pharmacology-093",
+                "triazole-pharmacology-096",
+                "triazole-pharmacology-039",
+                "triazole-pharmacology-112",
+                "triazole-pharmacology-154",
+                "triazole-pharmacology-124",
+                "triazole-pharmacology-014",
+                "triazole-pharmacology-091",
+                "triazole-pharmacology-080"
+              ]
+            },
+            {
+              "target": "triazole-pharmacology-092",
+              "seed": 11,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "triazole-pharmacology-034",
+                "triazole-pharmacology-111",
+                "triazole-pharmacology-169",
+                "triazole-pharmacology-092",
+                "triazole-pharmacology-132",
+                "triazole-pharmacology-107",
+                "triazole-pharmacology-127",
+                "triazole-pharmacology-149",
+                "triazole-pharmacology-133",
+                "triazole-pharmacology-148"
+              ]
+            },
+            {
+              "target": "triazole-pharmacology-092",
+              "seed": 11,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "triazole-pharmacology-034",
+                "triazole-pharmacology-111",
+                "triazole-pharmacology-169",
+                "triazole-pharmacology-092",
+                "triazole-pharmacology-132",
+                "triazole-pharmacology-107",
+                "triazole-pharmacology-127",
+                "triazole-pharmacology-149",
+                "triazole-pharmacology-133",
+                "triazole-pharmacology-148"
+              ]
+            },
+            {
+              "target": "triazole-pharmacology-169",
+              "seed": 11,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "triazole-pharmacology-034",
+                "triazole-pharmacology-111",
+                "triazole-pharmacology-169",
+                "triazole-pharmacology-092",
+                "triazole-pharmacology-132",
+                "triazole-pharmacology-107",
+                "triazole-pharmacology-127",
+                "triazole-pharmacology-149",
+                "triazole-pharmacology-133",
+                "triazole-pharmacology-148"
+              ]
+            },
+            {
+              "target": "triazole-pharmacology-169",
+              "seed": 11,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "triazole-pharmacology-034",
+                "triazole-pharmacology-111",
+                "triazole-pharmacology-169",
+                "triazole-pharmacology-092",
+                "triazole-pharmacology-132",
+                "triazole-pharmacology-107",
+                "triazole-pharmacology-127",
+                "triazole-pharmacology-149",
+                "triazole-pharmacology-133",
+                "triazole-pharmacology-148"
+              ]
+            },
+            {
+              "target": "triazole-pharmacology-088",
+              "seed": 25,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "triazole-pharmacology-106",
+                "triazole-pharmacology-033",
+                "triazole-pharmacology-088",
+                "triazole-pharmacology-011",
+                "triazole-pharmacology-091",
+                "triazole-pharmacology-136",
+                "triazole-pharmacology-143",
+                "triazole-pharmacology-140",
+                "triazole-pharmacology-037",
+                "triazole-pharmacology-013"
+              ]
+            },
+            {
+              "target": "triazole-pharmacology-088",
+              "seed": 25,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "triazole-pharmacology-106",
+                "triazole-pharmacology-033",
+                "triazole-pharmacology-088",
+                "triazole-pharmacology-011",
+                "triazole-pharmacology-091",
+                "triazole-pharmacology-136",
+                "triazole-pharmacology-143",
+                "triazole-pharmacology-140",
+                "triazole-pharmacology-037",
+                "triazole-pharmacology-013"
+              ]
+            }
+          ],
+          "noHorizontalOverflow": true,
+          "unauthenticated": true
+        }
+      ],
+      "errors": [],
+      "captures": [
+        "body-Stop-1440.png",
+        "body-Use-1440.png",
+        "body-Protect-1440.png",
+        "references-1440.png",
+        "figure-1440.png",
+        "oral-keypoints-1440.png",
+        "embedded-incorrect-1440.png",
+        "embedded-correct-1440.png",
+        "question-081-incorrect-1440.png",
+        "question-081-correct-1440.png",
+        "question-082-incorrect-1440.png",
+        "question-082-correct-1440.png",
+        "question-083-incorrect-1440.png",
+        "question-083-correct-1440.png",
+        "question-084-incorrect-1440.png",
+        "question-084-correct-1440.png",
+        "question-085-incorrect-1440.png",
+        "question-085-correct-1440.png",
+        "question-086-incorrect-1440.png",
+        "question-086-correct-1440.png",
+        "question-087-incorrect-1440.png",
+        "question-087-correct-1440.png",
+        "question-088-incorrect-1440.png",
+        "question-088-correct-1440.png",
+        "question-089-incorrect-1440.png",
+        "question-089-correct-1440.png",
+        "question-090-incorrect-1440.png",
+        "question-090-correct-1440.png",
+        "question-091-incorrect-1440.png",
+        "question-091-correct-1440.png",
+        "question-092-incorrect-1440.png",
+        "question-092-correct-1440.png",
+        "question-169-incorrect-1440.png",
+        "question-169-correct-1440.png",
+        "body-Stop-390.png",
+        "body-Use-390.png",
+        "body-Protect-390.png",
+        "references-390.png",
+        "figure-390.png",
+        "oral-keypoints-390.png",
+        "embedded-incorrect-390.png",
+        "embedded-correct-390.png",
+        "question-081-incorrect-390.png",
+        "question-081-correct-390.png",
+        "question-082-incorrect-390.png",
+        "question-082-correct-390.png",
+        "question-083-incorrect-390.png",
+        "question-083-correct-390.png",
+        "question-084-incorrect-390.png",
+        "question-084-correct-390.png",
+        "question-085-incorrect-390.png",
+        "question-085-correct-390.png",
+        "question-086-incorrect-390.png",
+        "question-086-correct-390.png",
+        "question-087-incorrect-390.png",
+        "question-087-correct-390.png",
+        "question-088-incorrect-390.png",
+        "question-088-correct-390.png",
+        "question-089-incorrect-390.png",
+        "question-089-correct-390.png",
+        "question-090-incorrect-390.png",
+        "question-090-correct-390.png",
+        "question-091-incorrect-390.png",
+        "question-091-correct-390.png",
+        "question-092-incorrect-390.png",
+        "question-092-correct-390.png",
+        "question-169-incorrect-390.png",
+        "question-169-correct-390.png"
+      ],
+      "focusedFinalRecheck": {
+        "question": "triazole-pharmacology-088",
+        "change": "Removed private source-discrepancy wording from public rationale; exact formulation instructions retained.",
+        "proof": "All other175 full question objects, teaching, metadata, checks, references and all1180 cumulative objects exactly equal the previously fully graded candidate.",
+        "freshChecks": "Final rebuilt candidate: question088 correct/incorrect at1440/390; all41 bodies/metadata,10references,10figures,embedded check and320px overflow rechecked.",
+        "unchanged12Questions": "Their previous desktop/mobile complete grading evidence retained after full-object equality proof."
+      }
+    },
+    "cumulativeBrowser": {
+      "status": "passed",
+      "results": [
+        {
+          "width": 1440,
+          "wrong": true,
+          "seed": 57,
+          "grade": "9/10",
+          "ids": [
+            "cumulative-tetracycline-pharmacology-tetracycline-pharmacology-067",
+            "cumulative-urticaria-and-angioedema-urticaria-012",
+            "cumulative-attention-deficit-hyperactivity-disorder-attention-deficit-hyperactivity-disorder-087",
+            "cumulative-asthma-asthma-001",
+            "cumulative-parenteral-nutrition-calculations-pncalc-energy-013",
+            "cumulative-cystic-fibrosis-cf-061",
+            "cumulative-triazole-antifungal-pharmacology-triazole-pharmacology-089",
+            "cumulative-hiv-protease-inhibitors-hiv-pi-037",
+            "cumulative-pharmacy-osmolarity-calculations-calc-osm-001",
+            "cumulative-chronic-heart-failure-pharmacotherapy-chronic-heart-failure-090"
+          ],
+          "feedbackAndReviewPathVerified": true
+        },
+        {
+          "width": 1440,
+          "wrong": false,
+          "seed": 57,
+          "grade": "10/10",
+          "ids": [
+            "cumulative-tetracycline-pharmacology-tetracycline-pharmacology-067",
+            "cumulative-urticaria-and-angioedema-urticaria-012",
+            "cumulative-attention-deficit-hyperactivity-disorder-attention-deficit-hyperactivity-disorder-087",
+            "cumulative-asthma-asthma-001",
+            "cumulative-parenteral-nutrition-calculations-pncalc-energy-013",
+            "cumulative-cystic-fibrosis-cf-061",
+            "cumulative-triazole-antifungal-pharmacology-triazole-pharmacology-089",
+            "cumulative-hiv-protease-inhibitors-hiv-pi-037",
+            "cumulative-pharmacy-osmolarity-calculations-calc-osm-001",
+            "cumulative-chronic-heart-failure-pharmacotherapy-chronic-heart-failure-090"
+          ],
+          "feedbackAndReviewPathVerified": true
+        },
+        {
+          "width": 390,
+          "wrong": true,
+          "seed": 57,
+          "grade": "9/10",
+          "ids": [
+            "cumulative-tetracycline-pharmacology-tetracycline-pharmacology-067",
+            "cumulative-urticaria-and-angioedema-urticaria-012",
+            "cumulative-attention-deficit-hyperactivity-disorder-attention-deficit-hyperactivity-disorder-087",
+            "cumulative-asthma-asthma-001",
+            "cumulative-parenteral-nutrition-calculations-pncalc-energy-013",
+            "cumulative-cystic-fibrosis-cf-061",
+            "cumulative-triazole-antifungal-pharmacology-triazole-pharmacology-089",
+            "cumulative-hiv-protease-inhibitors-hiv-pi-037",
+            "cumulative-pharmacy-osmolarity-calculations-calc-osm-001",
+            "cumulative-chronic-heart-failure-pharmacotherapy-chronic-heart-failure-090"
+          ],
+          "feedbackAndReviewPathVerified": true
+        },
+        {
+          "width": 390,
+          "wrong": false,
+          "seed": 57,
+          "grade": "10/10",
+          "ids": [
+            "cumulative-tetracycline-pharmacology-tetracycline-pharmacology-067",
+            "cumulative-urticaria-and-angioedema-urticaria-012",
+            "cumulative-attention-deficit-hyperactivity-disorder-attention-deficit-hyperactivity-disorder-087",
+            "cumulative-asthma-asthma-001",
+            "cumulative-parenteral-nutrition-calculations-pncalc-energy-013",
+            "cumulative-cystic-fibrosis-cf-061",
+            "cumulative-triazole-antifungal-pharmacology-triazole-pharmacology-089",
+            "cumulative-hiv-protease-inhibitors-hiv-pi-037",
+            "cumulative-pharmacy-osmolarity-calculations-calc-osm-001",
+            "cumulative-chronic-heart-failure-pharmacotherapy-chronic-heart-failure-090"
+          ],
+          "feedbackAndReviewPathVerified": true
+        }
+      ],
+      "errors": [],
+      "captures": [
+        "cumulative-089-incorrect-1440.png",
+        "cumulative-089-correct-1440.png",
+        "cumulative-089-incorrect-390.png",
+        "cumulative-089-correct-390.png"
+      ]
+    },
+    "visualInspection": {
+      "all72OriginalCapturesActuallyViewed": true,
+      "nativeComparisonCount": 18,
+      "manifest": [
+        {
+          "comparison": "qa-question-081.png",
+          "originals": [
+            "question-081-incorrect-1440.png",
+            "question-081-incorrect-390.png",
+            "question-081-correct-1440.png",
+            "question-081-correct-390.png"
+          ],
+          "nativePixelsPreserved": true
+        },
+        {
+          "comparison": "qa-question-082.png",
+          "originals": [
+            "question-082-incorrect-1440.png",
+            "question-082-incorrect-390.png",
+            "question-082-correct-1440.png",
+            "question-082-correct-390.png"
+          ],
+          "nativePixelsPreserved": true
+        },
+        {
+          "comparison": "qa-question-083.png",
+          "originals": [
+            "question-083-incorrect-1440.png",
+            "question-083-incorrect-390.png",
+            "question-083-correct-1440.png",
+            "question-083-correct-390.png"
+          ],
+          "nativePixelsPreserved": true
+        },
+        {
+          "comparison": "qa-question-084.png",
+          "originals": [
+            "question-084-incorrect-1440.png",
+            "question-084-incorrect-390.png",
+            "question-084-correct-1440.png",
+            "question-084-correct-390.png"
+          ],
+          "nativePixelsPreserved": true
+        },
+        {
+          "comparison": "qa-question-085.png",
+          "originals": [
+            "question-085-incorrect-1440.png",
+            "question-085-incorrect-390.png",
+            "question-085-correct-1440.png",
+            "question-085-correct-390.png"
+          ],
+          "nativePixelsPreserved": true
+        },
+        {
+          "comparison": "qa-question-086.png",
+          "originals": [
+            "question-086-incorrect-1440.png",
+            "question-086-incorrect-390.png",
+            "question-086-correct-1440.png",
+            "question-086-correct-390.png"
+          ],
+          "nativePixelsPreserved": true
+        },
+        {
+          "comparison": "qa-question-087.png",
+          "originals": [
+            "question-087-incorrect-1440.png",
+            "question-087-incorrect-390.png",
+            "question-087-correct-1440.png",
+            "question-087-correct-390.png"
+          ],
+          "nativePixelsPreserved": true
+        },
+        {
+          "comparison": "qa-question-088.png",
+          "originals": [
+            "question-088-incorrect-1440.png",
+            "question-088-incorrect-390.png",
+            "question-088-correct-1440.png",
+            "question-088-correct-390.png"
+          ],
+          "nativePixelsPreserved": true
+        },
+        {
+          "comparison": "qa-question-089.png",
+          "originals": [
+            "question-089-incorrect-1440.png",
+            "question-089-incorrect-390.png",
+            "question-089-correct-1440.png",
+            "question-089-correct-390.png"
+          ],
+          "nativePixelsPreserved": true
+        },
+        {
+          "comparison": "qa-question-090.png",
+          "originals": [
+            "question-090-incorrect-1440.png",
+            "question-090-incorrect-390.png",
+            "question-090-correct-1440.png",
+            "question-090-correct-390.png"
+          ],
+          "nativePixelsPreserved": true
+        },
+        {
+          "comparison": "qa-question-091.png",
+          "originals": [
+            "question-091-incorrect-1440.png",
+            "question-091-incorrect-390.png",
+            "question-091-correct-1440.png",
+            "question-091-correct-390.png"
+          ],
+          "nativePixelsPreserved": true
+        },
+        {
+          "comparison": "qa-question-092.png",
+          "originals": [
+            "question-092-incorrect-1440.png",
+            "question-092-incorrect-390.png",
+            "question-092-correct-1440.png",
+            "question-092-correct-390.png"
+          ],
+          "nativePixelsPreserved": true
+        },
+        {
+          "comparison": "qa-question-169.png",
+          "originals": [
+            "question-169-incorrect-1440.png",
+            "question-169-incorrect-390.png",
+            "question-169-correct-1440.png",
+            "question-169-correct-390.png"
+          ],
+          "nativePixelsPreserved": true
+        },
+        {
+          "comparison": "qa-other-1.png",
+          "originals": [
+            "body-Stop-1440.png",
+            "body-Use-1440.png",
+            "body-Protect-1440.png",
+            "references-1440.png"
+          ],
+          "nativePixelsPreserved": true
+        },
+        {
+          "comparison": "qa-other-2.png",
+          "originals": [
+            "figure-1440.png",
+            "oral-keypoints-1440.png",
+            "embedded-incorrect-1440.png",
+            "embedded-correct-1440.png"
+          ],
+          "nativePixelsPreserved": true
+        },
+        {
+          "comparison": "qa-other-3.png",
+          "originals": [
+            "body-Stop-390.png",
+            "body-Use-390.png",
+            "body-Protect-390.png",
+            "references-390.png"
+          ],
+          "nativePixelsPreserved": true
+        },
+        {
+          "comparison": "qa-other-4.png",
+          "originals": [
+            "figure-390.png",
+            "oral-keypoints-390.png",
+            "embedded-incorrect-390.png",
+            "embedded-correct-390.png"
+          ],
+          "nativePixelsPreserved": true
+        },
+        {
+          "comparison": "qa-other-5.png",
+          "originals": [
+            "cumulative-089-incorrect-1440.png",
+            "cumulative-089-correct-1440.png",
+            "cumulative-089-incorrect-390.png",
+            "cumulative-089-correct-390.png"
+          ],
+          "nativePixelsPreserved": true
+        }
+      ],
+      "result": "Teaching, four figure nodes, complete question choices and feedback readable at1440/390 actual widths. No clipping, overlap or horizontal overflow.320px overflow check also passed."
+    },
+    "toolingCorrections": "Initial bank overlay placed the existing minimum-count guard before final exported bank initialization; guard moved intact after initialization and structural/export/build checks passed. QA caption assertion changed to raw textContent because existing CSS capitalizes the caption. A temporary source-array parser delimiter was corrected to avoid semicolons inside text. No production grading, navigation or dependency changes.",
+    "localPreview": "Unauthenticated isolated production build; no account persistence or production publication asserted."
+  },
+  "remainingReview": {
+    "original16SourceGapIdsNowClosed": [
+      "triazole-pharmacology-081",
+      "triazole-pharmacology-083",
+      "triazole-pharmacology-085",
+      "triazole-pharmacology-086",
+      "triazole-pharmacology-087",
+      "triazole-pharmacology-088",
+      "triazole-pharmacology-089",
+      "triazole-pharmacology-091",
+      "triazole-pharmacology-169"
+    ],
+    "remainingOriginalSourceGapIds": [
+      "triazole-pharmacology-049",
+      "triazole-pharmacology-051",
+      "triazole-pharmacology-053",
+      "triazole-pharmacology-055",
+      "triazole-pharmacology-175",
+      "antifungal-foundations-125",
+      "antifungal-foundations-127"
+    ],
+    "remainingPosaconazoleLessonQuestionIds": [
+      "triazole-pharmacology-093",
+      "triazole-pharmacology-094",
+      "triazole-pharmacology-095",
+      "triazole-pharmacology-096",
+      "triazole-pharmacology-170"
+    ],
+    "remainingPosaconazoleLessonBody": "Recognize mineralocorticoid excess",
+    "wholeParentModuleCoverage": "163 other questions,38 otherbodies,ninechecks/ninefigures andparent/otherlessonmetadata stillrequire completeaudit. Whole Chapter24 and EN dependencies incomplete.",
+    "nextAction": "Reconcile the four retained itraconazole formulation questions (049, 051, 053, 055), relevant whole teaching/check/diagram/metadata and SUBA terminology using the supplied book and already approved FDA product labels for conventional capsules, oral solution and TOLSURA. Preserve full clinical scope and stable IDs/keys. Then complete the retained breakthrough question 175, foundations 125/127 and the posaconazole pseudoaldosteronism body/questions 093-096/170 with complete approved evidence for every original claim. Continue remaining broader EN dependencies before whole EN closure, then pediatric PN/fluid/calcium dependencies. Chapter 1 entry 15 and Chapter 11 remain reviewing; the full 82-chapter objective is unchanged.",
+    "wholeGoalComplete": false
+  },
+  "release": {
+    "branch": "audit/rxprep-content-2026-09-24",
+    "commit": null,
+    "push": "pending",
+    "receipt": "enteral-nutrition-broader-posaconazole-label-release.json",
+    "mainMerge": "not performed",
+    "production": "not verified"
+  },
+  "wholeGoalComplete": false,
+  "privateSourcesInGit": false
+}

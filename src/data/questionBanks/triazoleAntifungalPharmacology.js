@@ -146,5 +146,131 @@ const sourceReviewedDeliveryQuestions = {
     "rationale": "Giving suspension without its nutrition plan can undermine delivery. Its administration and absorption requirements should be checked rather than inferred from the ingredient name."
   }
 };
-export const triazoleAntifungalPharmacologyQuestionBank=[...generated,...cases].map((question) => sourceReviewedDeliveryQuestions[question.id] ? { ...question, ...sourceReviewedDeliveryQuestions[question.id] } : question);
+const priorTriazoleQuestionBank=[...generated,...cases].map((question) => sourceReviewedDeliveryQuestions[question.id] ? { ...question, ...sourceReviewedDeliveryQuestions[question.id] } : question);
+
+const posaconazoleDeliveryRepairs = {
+  "triazole-pharmacology-081": {
+    "choices": [
+      "Posaconazole delayed-release tablets, oral suspension, and PowderMix differ in indication, dosing, age or weight eligibility, preparation, and exposure",
+      "Every oral posaconazole product uses the same dose and preparation instructions",
+      "PowderMix is the conventional oral suspension in a different package",
+      "Age and weight can be ignored once the ingredient is identified"
+    ],
+    "rationale": "The NOXAFIL label separates these oral products by indication, age and weight, dosing, preparation and exposure. Conventional oral suspension cannot replace delayed-release tablets or PowderMix dose for dose. A shared ingredient does not establish the same product, eligibility or administration plan."
+  },
+  "triazole-pharmacology-082": {
+    "choices": [
+      "Select the formulation before selecting the dose",
+      "Select an oral dose first and assume it applies to both suspension and tablets",
+      "Choose the formulation after copying the previous milligram dose",
+      "Treat identical ingredient names as proof of identical oral exposure"
+    ],
+    "rationale": "Identify the exact formulation before selecting its indication-specific dose and administration plan. The conventional oral suspension is not substitutable with delayed-release tablets or PowderMix. Selecting or copying a dose first, or treating the ingredient name as proof of equal exposure, bypasses those product requirements."
+  },
+  "triazole-pharmacology-083": {
+    "choices": [
+      "Assess indication, age, weight, swallowing, food, tube access, formulation, and label",
+      "Use age alone because weight never affects posaconazole formulation eligibility",
+      "Treat all oral products as suitable for a feeding tube at the same milligram dose",
+      "Check the ingredient and dose but omit food and whole-tablet swallowing"
+    ],
+    "rationale": "Check the indication, age and weight against the exact product label, then assess its food instructions and whether the patient can use that dosage form. Delayed-release tablets must remain whole, and conventional suspension has product-specific nutrition requirements. Tube access is a delivery assessment, not permission to crush tablets or assume equal tube exposure; the label's suspension NG-tube study found lower exposure and recommends breakthrough monitoring."
+  },
+  "triazole-pharmacology-084": {
+    "choices": [
+      "Substituting oral suspension for delayed-release tablets at the same dose",
+      "Reviewing the new formulation and its dosing regimen before a switch",
+      "Checking the suspension meal or nutritional-supplement plan",
+      "Confirming the dispensed formulation matches the intended order"
+    ],
+    "rationale": "Conventional oral suspension is not substitutable with delayed-release tablets at the same milligram dose. Reviewing the new product and regimen, checking its nutrition plan, and confirming the dispensed formulation are appropriate checks. An ingredient match does not justify copying the dose or administration instructions."
+  },
+  "triazole-pharmacology-085": {
+    "choices": [
+      "Delayed-release tablets are swallowed whole and can be taken with or without food",
+      "Delayed-release tablets must always be taken with a full meal",
+      "Crushing a delayed-release tablet preserves its labeled administration technique",
+      "The conventional suspension food rule applies to every posaconazole product"
+    ],
+    "rationale": "NOXAFIL delayed-release tablets may be taken with or without food and must be swallowed whole without dividing, crushing or chewing. Requiring a full meal for every tablet dose copies the conventional suspension rule to the wrong product. Food can change tablet exposure in the label's healthy-volunteer study; permission to dose without food does not mean food has no pharmacokinetic effect."
+  },
+  "triazole-pharmacology-086": {
+    "choices": [
+      "Use the tablet when eligible and reliable higher oral exposure is needed",
+      "Keep conventional suspension fasting because tablets and suspension always produce equal exposure",
+      "Choose delayed-release tablets without checking indication, age, weight or swallowing",
+      "Crush the tablet whenever the patient cannot swallow it whole"
+    ],
+    "rationale": "For an eligible patient who cannot eat a full meal, the label favors delayed-release tablets over conventional suspension for prophylaxis because tablets generally provide higher plasma exposure. Eligibility and intact swallowing still matter, and severe diarrhea or vomiting warrants breakthrough monitoring. This is product selection to improve delivery, not guaranteed exposure or better clinical outcomes; equal exposure, unchecked eligibility and crushing are unsafe assumptions."
+  },
+  "triazole-pharmacology-087": {
+    "choices": [
+      "Assess ability to swallow whole, gastrointestinal function, weight, indication, adherence, and interactions",
+      "Confirm the indication but assume swallowing and gastrointestinal symptoms cannot affect delivery",
+      "Check daily milligrams and ignore the product's age and weight eligibility",
+      "Assume tablets remove the need for adherence and medication-interaction review"
+    ],
+    "rationale": "Assess intact swallowing, gastrointestinal symptoms, labeled eligibility, actual adherence and interacting medicines before relying on the tablet plan. The label permits food flexibility, but prohibits tablet manipulation and calls for breakthrough monitoring with severe diarrhea or vomiting. Eligibility, adherence and CYP3A4 interaction review are not waived by changing from suspension to tablets."
+  },
+  "triazole-pharmacology-088": {
+    "choices": [
+      "Repeating the older rule that every posaconazole tablet dose requires food",
+      "Teaching that the delayed-release tablet may be taken with or without food",
+      "Confirming the tablet is swallowed whole without dividing, crushing or chewing",
+      "Checking the exact product before giving meal instructions"
+    ],
+    "rationale": "The current NOXAFIL delayed-release tablet instruction permits administration with or without food. Repeating a universal food requirement confuses it with conventional oral suspension. Teaching the current tablet instruction, preserving whole-tablet administration and checking the formulation are appropriate actions. Give the patient the instructions for the exact dispensed formulation."
+  },
+  "triazole-pharmacology-089": {
+    "choices": [
+      "Oral suspension is given with a full meal or, when needed, a nutritional supplement or acidic carbonated beverage",
+      "Conventional oral suspension is routinely taken fasting like the delayed-release tablet",
+      "Any clear drink makes fasting suspension exposure equivalent to a full meal",
+      "Adding an acidic beverage removes the need to review interacting drugs or breakthrough risk"
+    ],
+    "rationale": "Give conventional NOXAFIL oral suspension during or within 20 minutes after a full meal. When a full meal cannot be eaten and tablets or injection are not options, the label permits a liquid nutritional supplement or an acidic carbonated beverage such as ginger ale. Routine fasting, an arbitrary clear drink, or using a beverage to bypass interaction and breakthrough review does not follow that plan. PowderMix is a separate delayed-release product with its own with-food and preparation instructions."
+  },
+  "triazole-pharmacology-090": {
+    "choices": [
+      "Protect absorption and monitor for breakthrough when adequate intake cannot be achieved",
+      "Continue the suspension fasting and assume the prescribed dose ensures absorption",
+      "Assume a proton pump inhibitor cannot affect suspension exposure",
+      "Treat identical tablet and suspension milligrams as identical absorbed doses"
+    ],
+    "rationale": "Protect the conventional suspension nutrition and delivery plan, and monitor for breakthrough when adequate intake cannot be achieved. If a full meal is impossible, review the labeled alternative formulation or supplement/acidic-beverage options; if those cannot be tolerated, consider another antifungal or closely monitored suspension therapy. Fasting with assumed absorption, ignoring an esomeprazole interaction, or equating tablet and suspension milligrams does not establish adequate exposure."
+  },
+  "triazole-pharmacology-091": {
+    "choices": [
+      "Assess meal, supplement, acid suppression, nausea, mucositis, diarrhea, tube feeds, and alternative formulation",
+      "Review meal timing alone and ignore vomiting, diarrhea and interacting drugs",
+      "Treat any acid-suppressing medicine as having the same proven effect on every posaconazole formulation",
+      "Assume tube feeds make conventional suspension and crushed tablets interchangeable"
+    ],
+    "rationale": "Assess the actual nutrition plan, interacting medicines and delivery route, including nausea or mucositis that may make the prescribed intake difficult. The label identifies lower suspension exposure with cimetidine or esomeprazole and lower exposure in a specific NG-tube study; severe diarrhea or vomiting requires breakthrough monitoring. These findings do not establish one effect for all acid suppressants, all tube/feed arrangements or mucositis, and they do not authorize crushing delayed-release tablets."
+  },
+  "triazole-pharmacology-092": {
+    "choices": [
+      "Giving suspension fasting without an exposure plan",
+      "Confirming the suspension is taken with a full meal",
+      "Planning an oral nutritional supplement when needed for suspension administration",
+      "Reviewing acid-suppressing medicines and the exact formulation"
+    ],
+    "rationale": "Giving conventional suspension fasting without a nutrition and exposure plan bypasses its labeled administration requirements. A full meal is the first choice; when it is not possible, review the product-specific supplement/acidic-beverage fallback and alternative formulations. Checking the meal plan and relevant interacting medicines are appropriate actions, not additional hazards."
+  },
+  "triazole-pharmacology-169": {
+    "choices": [
+      "Stop and redesign the regimen because the formulations are not substitutable",
+      "Dispense without review",
+      "Crush both products together",
+      "Assume identical exposure"
+    ],
+    "rationale": "Stop the dose-for-dose substitution and verify the new product's indication, eligibility, regimen and administration. Conventional oral suspension is not substitutable with delayed-release tablets because dosing and exposure differ. Dispensing unchanged or assuming equal exposure is unsupported, and crushing the delayed-release tablet is explicitly prohibited."
+  }
+};
+
+export const triazoleAntifungalPharmacologyQuestionBank = priorTriazoleQuestionBank.map((question) => {
+  const repair = posaconazoleDeliveryRepairs[question.id];
+  return repair ? { ...question, ...repair } : question;
+});
+
 if(triazoleAntifungalPharmacologyQuestionBank.length<100)throw new Error(`Triazole pharmacology bank must contain at least 100 questions, found ${triazoleAntifungalPharmacologyQuestionBank.length}.`);

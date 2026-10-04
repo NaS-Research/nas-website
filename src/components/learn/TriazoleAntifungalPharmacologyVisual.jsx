@@ -15,13 +15,21 @@ const diagrams={
 
 const notes=["Define the input","Protect the conversion","Measure the state","Own the next action"];
 
+const posaconazoleSteps=[
+  ["Name the exact product","Verify indication, age, weight, and dosage form before selecting the regimen."],
+  ["Follow product instructions","Swallow tablets whole; use the conventional suspension meal plan or PowderMix food and kit instructions."],
+  ["Review intake and interactions","Severe diarrhea or vomiting and suspension NG-tube delivery warrant breakthrough monitoring."],
+  ["Monitor blood pressure and potassium","Review new hypertension or hypokalemia and correct electrolyte disturbances."]
+];
+
 export default function TriazoleAntifungalPharmacologyVisual({type}){
   const data=diagrams[type.replace("triazole-antifungal-","")];
   if(!data)return null;
+  const productSteps=type==="triazole-antifungal-posaconazole-delivery"?posaconazoleSteps:null;
   return <figure className="chol-visual triazole-antifungal-visual" aria-label={data[0]}>
     <figcaption><span>Systemic azole map</span><strong>{data[0]}</strong></figcaption>
     <div className="chol-visual__grid">
-      {data.slice(1).map((label,index)=><div key={label}><span>{String(index+1).padStart(2,"0")}</span><strong>{label}</strong><em>{notes[index]}</em><p>Keep target, formulation, exposure, organism, toxicity, and ownership connected.</p></div>)}
+      {data.slice(1).map((label,index)=><div key={label}><span>{String(index+1).padStart(2,"0")}</span><strong>{label}</strong><em>{productSteps?productSteps[index][0]:notes[index]}</em><p>{productSteps?productSteps[index][1]:"Keep target, formulation, exposure, organism, toxicity, and ownership connected."}</p></div>)}
     </div>
   </figure>;
 }
