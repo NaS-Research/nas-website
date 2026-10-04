@@ -1,0 +1,140 @@
+{
+  "verifiedAt": "2026-10-04T23:59:27.856032+00:00",
+  "unit": "enteral-nutrition:broader-antifungal-exposure-and-posaconazole-lesson-reconciliation",
+  "contentCommit": "28ffa9eb9974e1f7ab95f991a36b91edf1c4bd27",
+  "remoteBranch": "audit/rxprep-content-2026-09-24",
+  "remoteHashObserved": "28ffa9eb9974e1f7ab95f991a36b91edf1c4bd27",
+  "exactRemoteObservedByTool": true,
+  "coverage": {
+    "evidence": "enteral-nutrition-broader-antifungal-exposure-review.json",
+    "moduleBanks": {
+      "triazole": 176,
+      "foundations": 184
+    },
+    "sourceVerifiedBankIds": [
+      "triazole-pharmacology-093",
+      "triazole-pharmacology-094",
+      "triazole-pharmacology-095",
+      "triazole-pharmacology-096",
+      "triazole-pharmacology-170",
+      "triazole-pharmacology-175",
+      "antifungal-foundations-125",
+      "antifungal-foundations-127"
+    ],
+    "newFullQuestionsVerified": 8,
+    "broaderFeedingBankVerifiedAfter": 197,
+    "wholeNewBodiesVerified": 2,
+    "wholePosaconazoleLessonVerified": true,
+    "posaconazoleLessonQuestionTotal": 18,
+    "posaconazolePriorVerifiedQuestionsExactRechecked": [
+      "triazole-pharmacology-081",
+      "triazole-pharmacology-082",
+      "triazole-pharmacology-083",
+      "triazole-pharmacology-084",
+      "triazole-pharmacology-085",
+      "triazole-pharmacology-086",
+      "triazole-pharmacology-087",
+      "triazole-pharmacology-088",
+      "triazole-pharmacology-089",
+      "triazole-pharmacology-090",
+      "triazole-pharmacology-091",
+      "triazole-pharmacology-092",
+      "triazole-pharmacology-169"
+    ],
+    "posaconazoleNewlyVerifiedQuestionIds": [
+      "triazole-pharmacology-093",
+      "triazole-pharmacology-094",
+      "triazole-pharmacology-095",
+      "triazole-pharmacology-096",
+      "triazole-pharmacology-170"
+    ],
+    "posaconazoleWholeBodiesVerified": 4,
+    "posaconazoleMetadataStatementsVerified": 12,
+    "retainedPosaconazoleWholeFigureAndCheckRechecked": true,
+    "foundationsWholeLessonVerified": false,
+    "wholeParentModulesVerified": false,
+    "wholeENModuleVerified": false,
+    "wholeChaptersVerified": false,
+    "all1180CumulativeObjectsUnchanged": true,
+    "noNewCumulativeClosureClaimed": true,
+    "all360QuestionIdsStemsKeysOriginalCorrectTextsAndAnchorsPreserved": true,
+    "noNewQuestionIds": true,
+    "originalClinicalScopeRetained": true,
+    "unrelatedDraftsPreserved": true
+  },
+  "validation": {
+    "productionBuild": {
+      "status": "passed",
+      "exitCode": 0,
+      "pages": 567,
+      "isolatedExactBase": "1e798b1042cd29d99971dc27c50e5c51a1f511da"
+    },
+    "browserStatus": "passed",
+    "structureQuestions": 360,
+    "rawCapturesActuallyViewed": 54,
+    "nativeComparisons": 14,
+    "all1180CumulativeObjectsUnchanged": true,
+    "noNewCumulativeGradingOrClosureClaim": true,
+    "objectPreservation": {
+      "status": "passed",
+      "modules": {
+        "module": {
+          "bankTotal": 176,
+          "changedQuestionIds": [
+            "triazole-pharmacology-093",
+            "triazole-pharmacology-094",
+            "triazole-pharmacology-095",
+            "triazole-pharmacology-096",
+            "triazole-pharmacology-170",
+            "triazole-pharmacology-175"
+          ],
+          "unchangedQuestions": 170,
+          "totalWholeBodies": 41,
+          "changedBodyHeadings": [
+            "Recognize mineralocorticoid excess"
+          ],
+          "allIdsStemsKeysOriginalCorrectChoicesAnchorsPreserved": true,
+          "allOtherModuleLessonMetadataAndChecksUnchanged": true,
+          "allOtherBodiesUnchanged": true,
+          "references": 14,
+          "originalReferencesUnchanged": true
+        },
+        "foundations": {
+          "bankTotal": 184,
+          "changedQuestionIds": [
+            "antifungal-foundations-125",
+            "antifungal-foundations-127"
+          ],
+          "unchangedQuestions": 182,
+          "totalWholeBodies": 41,
+          "changedBodyHeadings": [
+            "Audit oral delivery"
+          ],
+          "allIdsStemsKeysOriginalCorrectChoicesAnchorsPreserved": true,
+          "allOtherModuleLessonMetadataAndChecksUnchanged": true,
+          "allOtherBodiesUnchanged": true,
+          "references": 8,
+          "originalReferencesUnchanged": true
+        }
+      },
+      "cumulativeTotal": 1180,
+      "allWholeCumulativeObjectsUnchanged": true,
+      "noNewQuestionIds": true
+    }
+  },
+  "preservation": {
+    "existingDraftPaths": 810,
+    "allExistingDraftHashesChecked": true,
+    "existingDeletionsPreserved": true,
+    "workingHistoplasmosisHrefPreserved": true,
+    "workingLedgerPriorFieldsUnchanged": true,
+    "otherCommittedLedgerEntriesUnchanged": true
+  },
+  "publication": {
+    "mainMerge": "not performed",
+    "production": "not verified"
+  },
+  "wholeGoalComplete": false,
+  "nextAction": "Continue the preserved itraconazole TDM body,questions061-064 and three metadata statements with complete approved FDA evidence for original timing,target and assay scope;historical assay distinctions and a proposed regulatory concentration target cannot close a clinical monitoring strategy. Continue all remaining broader EN dependencies and pediatric PN/fluid/calcium dependencies before completing Chapter1entry15/Chapter11. Posaconazole-delivery is now a complete verified lesson;foundations oral-delivery body/questions125/127 and triazole breakthrough175 are verified scoped dependencies. Full82-chapter goal remains active.",
+  "receiptCommit": "This receipt follows the exact verified content commit;its own remote hash is verified separately in execution output."
+}
