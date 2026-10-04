@@ -268,8 +268,142 @@ const posaconazoleDeliveryRepairs = {
   }
 };
 
-export const triazoleAntifungalPharmacologyQuestionBank = priorTriazoleQuestionBank.map((question) => {
+const posaconazoleReviewedTriazoleQuestionBank = priorTriazoleQuestionBank.map((question) => {
   const repair = posaconazoleDeliveryRepairs[question.id];
+  return repair ? { ...question, ...repair } : question;
+});
+
+const itraconazoleFormulationRepairs = {
+  "triazole-pharmacology-049": {
+    "choices": [
+      "Itraconazole capsules, oral solution, and SUBA products differ in bioavailability and are not interchangeable",
+      "All itraconazole products are interchangeable at the same milligram dose",
+      "TOLSURA is simply a conventional 100 mg capsule with a different brand name",
+      "Oral solution and conventional capsules have identical exposure and approved uses"
+    ],
+    "rationale": "Conventional capsules, oral solution and the US SUBA product TOLSURA are distinct products. The solution gives greater exposure than conventional capsules at the same dose and has different approved uses. TOLSURA contains 65 mg per capsule and is explicitly not interchangeable or substitutable with other itraconazole products. A shared ingredient or brand change does not establish a dose-for-dose conversion; enhanced absorption does not guarantee clinical superiority."
+  },
+  "triazole-pharmacology-050": {
+    "choices": [
+      "Prescribe and teach the exact product rather than the ingredient alone",
+      "Specify only itraconazole because capsule and solution instructions are equivalent",
+      "Copy the capsule meal instruction to every itraconazole product",
+      "Switch from capsules to solution at the same dose without reviewing absorption"
+    ],
+    "rationale": "Prescribe and counsel for the exact product and indication. Conventional capsules are swallowed whole immediately after a full meal; oral solution is taken without food when possible; TOLSURA is swallowed whole with food and has its own regimen. Ingredient-only orders, one meal instruction for every product, and an unchecked same-dose switch omit clinically important formulation differences."
+  },
+  "triazole-pharmacology-051": {
+    "choices": [
+      "Assess capsule or solution, product strength, food, gastric pH, indication, swallowing, and concentration",
+      "Assess the ingredient but omit strength, dosage form and approved indication",
+      "Check food timing alone and assume gastric pH and swallowing do not matter",
+      "Assume the same milligram dose and measured concentration describe every itraconazole product"
+    ],
+    "rationale": "Verify the exact capsule or solution, product strength, approved indication, meal instructions and relevant pH-altering medicines. Confirm the patient can use the prescribed dosage form; both conventional and TOLSURA capsules must be swallowed whole. Formulation changes can alter exposure, and any concentration must be identified by its timing and reported analyte. Ingredient-only, food-only and same-milligram assumptions omit those checks; no universal concentration target or tube conversion follows from this assessment."
+  },
+  "triazole-pharmacology-052": {
+    "choices": [
+      "Substituting solution and capsules milligram for milligram without review",
+      "Confirm the exact formulation before counseling about food",
+      "Review acid-suppressing medicines when conventional capsules are used",
+      "Recheck formulation-specific dosing before changing products"
+    ],
+    "rationale": "Conventional capsules and oral solution must not be used interchangeably, and TOLSURA is not substitutable with other itraconazole products. Copying a milligram dose without reviewing product-specific dosing can change exposure. Confirming the formulation, reviewing acid-suppressing medicines and checking the new regimen are appropriate actions rather than additional hazards."
+  },
+  "triazole-pharmacology-053": {
+    "choices": [
+      "Conventional capsules are taken with a full meal and depend on gastric acidity, while oral solution is taken without food when possible",
+      "All itraconazole products should be given fasting because they have the same food effect",
+      "Oral solution must always be given after a full meal like conventional capsules",
+      "A proton pump inhibitor has the same absorption effect on conventional capsules and TOLSURA"
+    ],
+    "rationale": "Conventional capsules are swallowed whole immediately after a full meal, and reduced gastric acidity can reduce their absorption. Oral solution is taken without food when possible. TOLSURA also requires food, but its label describes increased exposure with acid-reducing medicines, including omeprazole. Universal fasting, applying the capsule meal rule to solution, or assuming one pH effect for every product gives the wrong instruction."
+  },
+  "triazole-pharmacology-054": {
+    "choices": [
+      "Write product-specific administration and reassess acid suppression",
+      "Assume a proton pump inhibitor improves conventional capsule absorption",
+      "Use fasting administration for every itraconazole product",
+      "Review the ingredient but omit the formulation and meal instructions"
+    ],
+    "rationale": "Write the exact product's administration instructions and review acid suppression. PPIs and H2 blockers can reduce conventional capsule absorption; this is not the TOLSURA interaction, for which increased exposure and adverse-reaction monitoring are labeled. Conventional capsules require a full meal, solution is taken without food when possible, and TOLSURA requires food. Omitting the product or giving every formulation fasting bypasses those rules."
+  },
+  "triazole-pharmacology-055": {
+    "choices": [
+      "Assess meal timing, proton pump inhibitor, H2 blocker, antacid, gastric surgery, tube feeds, and product",
+      "Assess the ingredient and ignore the timing of food and antacids",
+      "Treat a PPI, an H2 blocker and an antacid as irrelevant to conventional capsules",
+      "Assume gastric surgery or a feeding tube makes all itraconazole products interchangeable"
+    ],
+    "rationale": "Assess the exact product, meal timing and pH-altering medicines. For conventional capsules, reduced acidity can lower absorption; separate acid-neutralizing medicines by at least two hours before or after the capsule. TOLSURA has a different labeled pH interaction. Gastric surgery and tube feeding prompt assessment of anatomy, nutrition and dosage-form feasibility, not an assumed universal exposure change or permission to manipulate a capsule. Ingredient-only review and automatic tube substitution omit those requirements."
+  },
+  "triazole-pharmacology-056": {
+    "choices": [
+      "Giving one administration rule for every itraconazole formulation",
+      "Distinguishing capsule food instructions from solution food instructions",
+      "Identifying acid-suppressing medicines before reviewing capsule absorption",
+      "Confirming the exact product before planning administration"
+    ],
+    "rationale": "One ingredient-level administration rule can confuse conventional capsules, oral solution and TOLSURA. Their food and pH instructions must be checked separately. Distinguishing the products, identifying acid-suppressing medicines and confirming the prescribed formulation are appropriate checks; they do not replace the product-specific regimen."
+  },
+  "triazole-pharmacology-057": {
+    "choices": [
+      "Itraconazole has negative inotropic potential and a boxed warning for congestive heart failure and cardiac effects",
+      "Enhanced-absorption itraconazole removes the risk of heart failure",
+      "Cardiac toxicity occurs only at high doses, so lower doses need no symptom review",
+      "New peripheral edema cannot be related to itraconazole treatment"
+    ],
+    "rationale": "Itraconazole can cause or worsen heart failure and has negative inotropic effects described in its boxed warnings. Conventional capsules, oral solution and TOLSURA retain cardiac precautions. Heart failure has also been reported at lower doses, and edema may be a warning sign; an enhanced-absorption product or a lower dose does not remove the need for cardiac assessment."
+  },
+  "triazole-pharmacology-058": {
+    "choices": [
+      "Avoid onychomycosis use in ventricular dysfunction and reassess systemic therapy if heart failure symptoms occur",
+      "Use conventional capsules for onychomycosis despite a history of heart failure",
+      "Continue unchanged when new dyspnea and edema appear",
+      "Substitute TOLSURA for nail treatment because its absorption eliminates cardiac risk"
+    ],
+    "rationale": "Do not use conventional SPORANOX capsules for onychomycosis in ventricular dysfunction or a history of heart failure. New heart-failure symptoms require urgent evaluation and product-specific treatment action: conventional capsule labeling calls for discontinuation, while the solution and TOLSURA clinical warnings require careful reassessment of continued therapy. Their patient instructions advise stopping and contacting the healthcare provider immediately. TOLSURA is not indicated for onychomycosis and does not eliminate cardiac risk."
+  },
+  "triazole-pharmacology-059": {
+    "choices": [
+      "Assess ejection fraction, edema, dyspnea, weight, cardiac history, interacting negative inotropes, and indication",
+      "Assess only the prescribed milligrams and ignore cardiac history",
+      "Treat a normal previous ejection fraction as proof that new edema is harmless",
+      "Add a calcium channel blocker without reviewing cardiac effects and interactions"
+    ],
+    "rationale": "Review the cardiac history, indication, new edema or dyspnea, weight change, and ventricular function when clinically indicated. The labels describe negative inotropic effects and additive cardiac risk with calcium channel blockers; felodipine and nisoldipine are contraindicated combinations. Milligrams alone, an old normal ejection fraction or an unchecked additional negative inotrope does not resolve a new safety signal. This assessment does not mandate routine echocardiography for every patient."
+  },
+  "triazole-pharmacology-060": {
+    "choices": [
+      "Treating new edema as a minor cosmetic effect",
+      "Promptly evaluate edema with dyspnea or sudden weight gain",
+      "Review the exact product and cardiac warning when symptoms appear",
+      "Check ventricular dysfunction and interacting negative inotropes before treatment"
+    ],
+    "rationale": "New edema should not be dismissed as cosmetic, particularly with dyspnea or sudden weight gain during itraconazole therapy. These are labeled heart-failure warning symptoms. Prompt evaluation, review of the product's treatment action, and assessment of ventricular dysfunction and interacting negative inotropes are appropriate safeguards rather than reasoning hazards."
+  },
+  "triazole-pharmacology-165": {
+    "choices": [
+      "Reduced and variable absorption with treatment failure risk",
+      "Food omission and acid suppression reliably increase conventional capsule exposure",
+      "Identical exposure because conventional capsules and oral solution contain the same ingredient",
+      "No concern because every itraconazole product is independent of gastric pH"
+    ],
+    "rationale": "Fasting and proton pump inhibition can reduce conventional capsule absorption and threaten efficacy; they do not guarantee either failure or toxic exposure in an individual patient. Verify the full-meal, whole-capsule instructions and review the acid-suppressing medicine. Oral solution is not dose-for-dose interchangeable, and TOLSURA has different food and pH instructions. Shared ingredients do not establish equal exposure or one pH rule."
+  },
+  "triazole-pharmacology-166": {
+    "choices": [
+      "Urgently assess possible itraconazole-associated heart failure and reassess therapy",
+      "Reassure without evaluation",
+      "Increase the dose",
+      "Add a negative inotrope without review"
+    ],
+    "rationale": "New edema, dyspnea and rapid weight gain warrant urgent assessment for possible itraconazole-associated heart failure. Patient instructions advise stopping the medicine and contacting the healthcare provider immediately; clinicians then apply the exact product's warning and benefit-risk decision. Reassurance without evaluation, increasing the dose, or adding an unchecked negative inotrope fails to address this cardiac signal."
+  }
+};
+
+export const triazoleAntifungalPharmacologyQuestionBank = posaconazoleReviewedTriazoleQuestionBank.map((question) => {
+  const repair = itraconazoleFormulationRepairs[question.id];
   return repair ? { ...question, ...repair } : question;
 });
 

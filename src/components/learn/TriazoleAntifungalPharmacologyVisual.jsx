@@ -22,10 +22,12 @@ const posaconazoleSteps=[
   ["Monitor blood pressure and potassium","Review new hypertension or hypokalemia and correct electrolyte disturbances."]
 ];
 
+const itraconazoleSteps=[["Verify the exact formulation","Conventional capsule, solution and TOLSURA have distinct strengths, indications and regimens."],["Write food and pH instructions","Use the full-meal capsule rule, fasting solution instruction or TOLSURA food and interaction plan."],["Identify the reported analyte","Parent itraconazole and metabolite-sensitive measurements are different quantities; keep assay context visible."],["Act on heart-failure symptoms","Promptly assess edema, dyspnea or sudden weight gain and apply the exact product warning."]];
+
 export default function TriazoleAntifungalPharmacologyVisual({type}){
   const data=diagrams[type.replace("triazole-antifungal-","")];
   if(!data)return null;
-  const productSteps=type==="triazole-antifungal-posaconazole-delivery"?posaconazoleSteps:null;
+  const productSteps=type==="triazole-antifungal-posaconazole-delivery"?posaconazoleSteps:type==="triazole-antifungal-itraconazole-formulations"?itraconazoleSteps:null;
   return <figure className="chol-visual triazole-antifungal-visual" aria-label={data[0]}>
     <figcaption><span>Systemic azole map</span><strong>{data[0]}</strong></figcaption>
     <div className="chol-visual__grid">
