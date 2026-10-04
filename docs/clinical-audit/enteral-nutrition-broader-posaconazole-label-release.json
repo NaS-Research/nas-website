@@ -1,0 +1,116 @@
+{
+  "verifiedAt": "2026-10-04T23:10:29.023920+00:00",
+  "unit": "enteral-nutrition:broader-posaconazole-formulation-label-reconciliation",
+  "contentCommit": "27578f7fbe880cbcb9b136a8168d3074cbb8b62d",
+  "remoteBranch": "audit/rxprep-content-2026-09-24",
+  "remoteHashObserved": "27578f7fbe880cbcb9b136a8168d3074cbb8b62d",
+  "exactRemoteObservedByTool": true,
+  "coverage": {
+    "evidence": "enteral-nutrition-broader-posaconazole-label-review.json",
+    "moduleBank": 176,
+    "sourceVerifiedBankIds": [
+      "triazole-pharmacology-081",
+      "triazole-pharmacology-082",
+      "triazole-pharmacology-083",
+      "triazole-pharmacology-084",
+      "triazole-pharmacology-085",
+      "triazole-pharmacology-086",
+      "triazole-pharmacology-087",
+      "triazole-pharmacology-088",
+      "triazole-pharmacology-089",
+      "triazole-pharmacology-090",
+      "triazole-pharmacology-091",
+      "triazole-pharmacology-092",
+      "triazole-pharmacology-169"
+    ],
+    "newFullQuestionsVerified": 9,
+    "previouslyVerifiedQuestionsRechecked": [
+      "triazole-pharmacology-082",
+      "triazole-pharmacology-084",
+      "triazole-pharmacology-090",
+      "triazole-pharmacology-092"
+    ],
+    "fullQuestionsReconciled": 13,
+    "broaderFeedingBankVerifiedAfter": 180,
+    "wholeBodiesVerified": 3,
+    "wholeEmbeddedChecksVerified": 1,
+    "wholeFiguresVerified": 1,
+    "lessonMetadataStatementsVerified": 12,
+    "lesson": "posaconazole-delivery",
+    "wholeLessonVerified": false,
+    "wholeParentModuleVerified": false,
+    "wholeENModuleVerified": false,
+    "wholeChapterVerified": false,
+    "cumulativeSourceVerifiedIds": [
+      "cumulative-triazole-antifungal-pharmacology-triazole-pharmacology-089"
+    ],
+    "other1179CumulativeObjectsUnchanged": true,
+    "existing176IdsStemsKeysCorrectTextsAndAnchorsPreserved": true,
+    "noNewQuestionIds": true,
+    "originalClinicalAssessmentScopeRetained": true,
+    "otherNineFiguresUnchanged": true,
+    "other38BodiesAndNineChecksUnchanged": true,
+    "unrelatedWorkingDraftsPreserved": true
+  },
+  "validation": {
+    "productionBuild": {
+      "status": "passed",
+      "exitCode": 0,
+      "pages": 567,
+      "isolatedExactBase": "b303791f2ea2ed8799c491bfa31caed07c930e38",
+      "trackedProductFiles": [
+        "src/data/modules/triazoleAntifungalPharmacology.js",
+        "src/data/questionBanks/triazoleAntifungalPharmacology.js",
+        "src/components/learn/TriazoleAntifungalPharmacologyVisual.jsx"
+      ],
+      "rebuildReason": "Final product-specific figure, PowderMix HFI/kit safeguards and public question088 rationale correction included in the final567-page build. Twelve unchanged full question objects retain their prior grading evidence; final088 and all teaching/metadata/check/figure/reference DOM were freshly rechecked."
+    },
+    "browserStatus": "passed",
+    "cumulativeBrowserStatus": "passed",
+    "rawScreenshotsActuallyViewed": 72,
+    "nativeComparisonCount": 18,
+    "objectPreservation": {
+      "changedQuestionIds": [
+        "triazole-pharmacology-081",
+        "triazole-pharmacology-082",
+        "triazole-pharmacology-083",
+        "triazole-pharmacology-084",
+        "triazole-pharmacology-085",
+        "triazole-pharmacology-086",
+        "triazole-pharmacology-087",
+        "triazole-pharmacology-088",
+        "triazole-pharmacology-089",
+        "triazole-pharmacology-090",
+        "triazole-pharmacology-091",
+        "triazole-pharmacology-092",
+        "triazole-pharmacology-169"
+      ],
+      "otherFullQuestionsUnchanged": 163,
+      "changedBodies": 3,
+      "otherWholeBodiesUnchanged": 38,
+      "otherEmbeddedChecksUnchanged": 9,
+      "allMetadataUnchanged": true,
+      "changedCumulativeIds": [
+        "cumulative-triazole-antifungal-pharmacology-triazole-pharmacology-089"
+      ],
+      "otherCumulativeUnchanged": 1179,
+      "sourceClosedLessonQuestions": 13,
+      "wholeLessonVerified": false
+    }
+  },
+  "preservation": {
+    "existingDraftPaths": 810,
+    "allExistingDraftFileHashesChecked": true,
+    "existingDeletionsPreserved": true,
+    "workingModuleOriginalHistoplasmosisReferenceDraftPreserved": true,
+    "workingLedgerPriorDraftFieldsUnchanged": true,
+    "scopedCommittedOtherLedgerEntriesUnchanged": true
+  },
+  "publication": {
+    "mainMerge": "not performed",
+    "production": "not verified"
+  },
+  "wholeGoalComplete": false,
+  "nextAction": "Reconcile the four retained itraconazole formulation questions (049, 051, 053, 055), relevant whole teaching/check/diagram/metadata and SUBA terminology using the supplied book and already approved FDA product labels for conventional capsules, oral solution and TOLSURA. Preserve full clinical scope and stable IDs/keys. Then complete the retained breakthrough question 175, foundations 125/127 and the posaconazole pseudoaldosteronism body/questions 093-096/170 with complete approved evidence for every original claim. Continue remaining broader EN dependencies before whole EN closure, then pediatric PN/fluid/calcium dependencies. Chapter 1 entry 15 and Chapter 11 remain reviewing; the full 82-chapter objective is unchanged.",
+  "receiptCommit": "This receipt is committed after the exact verified content commit; its own remote hash is verified separately in the execution output."
+}
