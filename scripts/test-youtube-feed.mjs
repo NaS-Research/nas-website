@@ -1,0 +1,11 @@
+import assert from 'node:assert/strict';
+import { parseYoutubeFeed } from '../src/lib/youtubeFeed.mjs';
+const channel = 'UCtest';
+const entry = (id, title, date, owner = channel) => `<entry><yt:channelId>${owner}</yt:channelId><yt:videoId>${id}</yt:videoId><title>${title}</title><published>${date}</published></entry>`;
+const xml = `<feed>${entry('aaaaaaaaaaa', 'Old &amp; accurate', '2026-01-01')}${entry('bbbbbbbbbbb', '<![CDATA[New <idea>]]>', '2026-02-01')}${entry('bbbbbbbbbbb', 'Duplicate', '2026-02-01')}${entry('ccccccccccc', 'Other channel', '2026-03-01', 'UCother')}${entry('unsafe"link', 'Invalid ID', '2026-04-01')}${entry('ddddddddddd', 'Invalid date', 'not-a-date')}</feed>`;
+const result = parseYoutubeFeed(xml, channel);
+assert.deepEqual(result.map(video => video.id), ['bbbbbbbbbbb', 'aaaaaaaaaaa']);
+assert.equal(result[0].title, 'New <idea>');
+assert.equal(result[1].title, 'Old & accurate');
+assert.deepEqual(parseYoutubeFeed('<html>Unavailable</html>', channel), []);
+console.log('YouTube feed: newest-first order, entity decoding, deduplication, channel validation, malformed entries, and empty responses passed.');

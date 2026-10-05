@@ -33,3 +33,15 @@
 @media (max-width: 1000px) { .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 640px) { .grid { grid-template-columns: minmax(0, 1fr); gap: 2.5rem; } .heading { display: block; } .collectionLink { display: inline-block; margin-top: 1rem; } .filters { flex-direction: column; gap: 1rem; } .select select { width: 100%; } .feature { padding-top: 1rem; } }
 @media (prefers-reduced-motion: reduce) { .thumbnail img { transition: none; } .videoLink:hover .thumbnail img { transform: none; } }
+
+.track { display: grid; grid-auto-flow: column; grid-auto-columns: calc((100% - 4rem) / 3); gap: 2rem; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; overscroll-behavior-x: contain; padding: .5rem; margin: -.5rem; }
+.track::-webkit-scrollbar { display: none; }
+.track > article { scroll-snap-align: start; }
+.track:focus-visible { outline: 2px solid #e7d0a5; outline-offset: 4px; }
+.sliderControls { display: flex; justify-content: flex-end; gap: .65rem; margin-top: 2rem; }
+.sliderControls button { width: 2.75rem; height: 2.75rem; border-radius: 50%; border: 1px solid #444; color: #eee; background: #171717; font: inherit; font-size: 1.15rem; cursor: pointer; transition: background .2s; }
+.sliderControls button:hover:not(:disabled) { background: #303030; }
+.sliderControls button:disabled { opacity: .3; cursor: default; }
+.sliderControls button:focus-visible { outline: 2px solid #e7d0a5; outline-offset: 4px; }
+@media (max-width: 1000px) { .track { grid-auto-columns: calc((100% - 2rem) / 2); } }
+@media (max-width: 640px) { .track { grid-auto-columns: 100%; gap: 1.5rem; } .sliderControls { margin-top: 1.5rem; } }
