@@ -195,3 +195,29 @@ calciumPhosphorusHomeostasisModule.references.push(...[
     "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=49e5afe9-a0c7-40c4-af9f-f287a80c5c88"
   }
 ]);
+
+const sourceReviewedMalignancyCalciumLesson = calciumPhosphorusHomeostasisModule.submodules.find((lesson) => lesson.slug === "hypercalcemia");
+const sourceReviewedMalignancyCalciumBodies = {
+  "Determine severity and mechanism": "Hypercalcemia can cause polyuria, dehydration, kidney injury, constipation, weakness, cognitive change, shortened QT, and dysrhythmia. Assess symptoms, speed of calcium rise, volume status, ECG, kidney function, phosphate, PTH, and medication or supplement exposure. In adult hypercalcemia of malignancy, the Endocrine Society classifies calcium above 14 mg/dL (3.5 mmol/L) as severe, but symptoms and rapid change also matter. Interpret PTH in relation to calcium: high or inappropriately unsuppressed PTH points toward a PTH-dependent cause, while suppressed PTH prompts evaluation for malignancy and other non-PTH mechanisms. Familial hypocalciuric hypercalcemia can resemble primary hyperparathyroidism biochemically; the PTH result alone does not establish the diagnosis.",
+  "Match onset to the clinical need": "For adults with severe hypercalcemia of malignancy, the Endocrine Society suggests calcitonin together with an IV bisphosphonate or denosumab as initial treatment. Calcitonin acts within hours but develops tachyphylaxis; limit it to 48 to 72 hours. It is a bridge while a slower antiresorptive effect develops, not a durable treatment by itself. The guideline table lists IV pamidronate and zoledronic acid onset at about 48 to 72 hours and denosumab at about 3 to 10 days; do not assume that every agent has the same response time. The guideline strongly recommends an IV bisphosphonate or denosumab for adult malignancy-associated hypercalcemia, and conditionally suggests denosumab over an IV bisphosphonate. The comparative evidence is very low certainty and largely indirect, so the preference does not establish superiority for every patient or every calcium disorder.",
+  "Treat the source": "Calcitriol-mediated hypercalcemia in lymphoma or granulomatous disease may respond to glucocorticoids, which reduce active vitamin D production. For calcitriol-associated malignancy, persistent severe or symptomatic hypercalcemia despite glucocorticoids is a setting where the Endocrine Society suggests adding an IV bisphosphonate or denosumab. Severe primary hyperparathyroidism that responds poorly to other measures may require parathyroidectomy after acute assessment and stabilization. Review medicines and supplements that can contribute to high calcium and remove or adjust the provoking exposure as appropriate. Treating the underlying malignancy is essential to prevent recurrence; lowering calcium alone does not treat the cancer."
+};
+for (const section of sourceReviewedMalignancyCalciumLesson.lesson) {
+  if (Object.hasOwn(sourceReviewedMalignancyCalciumBodies, section.heading)) section.body = sourceReviewedMalignancyCalciumBodies[section.heading];
+}
+sourceReviewedMalignancyCalciumLesson.lesson.push(...[
+  {
+    "heading": "Reconcile the product and indication before dosing",
+    "body": "Hypercalcemia regimens differ from osteoporosis regimens even when the active ingredient is the same. For malignancy-associated hypercalcemia, zoledronic acid labeling specifies a maximum 4 mg IV dose infused over at least 15 minutes, with creatinine assessment before treatment; wait at least 7 days before considering retreatment to allow the initial response. The book contrasts this with Reclast 5 mg yearly for osteoporosis treatment. Xgeva labeling covers hypercalcemia of malignancy refractory to bisphosphonates: 120 mg subcutaneously every 4 weeks, with additional 120 mg doses on days 8 and 15 in the first month. The book contrasts this with Prolia 60 mg every 6 months for osteoporosis. The guideline suggestion favoring denosumab in adult hypercalcemia of malignancy has broader scope than the Xgeva labeled refractory indication. Verify the actual product, indication, regimen, and clinical plan; do not substitute an osteoporosis dose or duplicate products containing the same active ingredient."
+  },
+  {
+    "heading": "Plan safety and reassess recurrent disease",
+    "body": "Before and after antiresorptive therapy, assess kidney function, calcium, phosphate, magnesium, vitamin D status, and oral health. Denosumab can cause severe hypocalcemia, especially with advanced kidney impairment or inadequate mineral supplementation. IV bisphosphonates can worsen renal function. Zoledronic acid labeling distinguishes the hypercalcemia regimen from its creatinine-clearance-based dose table for myeloma or bone metastases: the hypercalcemia section does not require adjustment for mild-to-moderate impairment with serum creatinine below 4.5 mg/dL, while severe impairment requires a risk-benefit assessment. The Endocrine Society separately advises renal dosing and longer IV bisphosphonate infusions for HCM with creatinine clearance below 60 mL/min. Reconcile these indication-specific instructions and renal measures with the treating team. Monitor the calcium response and treatment complications rather than judging success from an early value alone. For refractory or recurrent malignancy-associated hypercalcemia despite an IV bisphosphonate, the guideline suggests denosumab; evidence for the reverse sequence is lacking. Coordinate oncology treatment of the cause."
+  }
+]);
+calciumPhosphorusHomeostasisModule.references.push(...[
+  {
+    "label": "Endocrine Society full clinical guideline: adult hypercalcemia of malignancy (2022; published 2023)",
+    "href": "https://academic.oup.com/jcem/article/108/3/507/6916871"
+  }
+]);

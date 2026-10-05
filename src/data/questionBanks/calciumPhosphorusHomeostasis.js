@@ -483,3 +483,127 @@ calciumPhosphorusHomeostasisQuestionBank.splice(calciumPhosphorusHomeostasisQues
   "reviewHref": "#hypocalcemia",
   "difficulty": "clinical"
 });
+
+const sourceReviewedMalignancyCalciumQuestions = {
+  "calcium-phosphorus-027": {
+    "choices": [
+      "Primary hyperparathyroidism and malignancy",
+      "Vitamin D intoxication and lithium toxicity",
+      "Granulomatous disease and immobilization",
+      "Thiazide use and milk-alkali syndrome"
+    ],
+    "rationale": "The Society emergency guidance identifies primary hyperparathyroidism and malignancy as the dominant causes. Vitamin D excess, lithium, granulomatous disease, immobilization, thiazides, and milk-alkali syndrome are recognized but less common causes; they do not replace this dominant pair. Use PTH and the clinical context to distinguish mechanisms."
+  },
+  "calcium-phosphorus-028": {
+    "choices": [
+      "QT shortening",
+      "QT prolongation",
+      "QT must remain unchanged",
+      "ECG assessment is unnecessary even in severe cases"
+    ],
+    "rationale": "The acute hypercalcemia guidance identifies QT shortening and dysrhythmia. QT prolongation is the contrasting hypocalcemia pattern. An unchanged QT is not required, and severe hypercalcemia can carry cardiac risk requiring ECG assessment."
+  },
+  "calcium-phosphorus-029": {
+    "choices": [
+      "Restore intravascular volume with an individualized isotonic crystalloid plan",
+      "Begin forced loop diuresis before correcting volume depletion",
+      "Restrict fluids solely because the calcium is high",
+      "Use free-water replacement as the sole initial intravascular resuscitation plan"
+    ],
+    "rationale": "Isotonic saline restores depleted intravascular volume and enhances urinary calcium excretion. The guideline requires hydration tailored to cardiac function; kidney impairment and congestion also require reassessment. Forced diuresis before volume correction can worsen depletion, fluid restriction does not correct it, and free-water replacement does not serve the same intravascular resuscitation purpose."
+  },
+  "calcium-phosphorus-030": {
+    "choices": [
+      "They can worsen volume depletion and are mainly used if fluid overload develops",
+      "They should replace hydration before volume status is assessed",
+      "Every mild hypercalcemia case needs forced loop diuresis",
+      "Their use removes the need to monitor kidney function and electrolytes"
+    ],
+    "rationale": "The acute hypercalcemia guidance does not recommend routine loop diuretics for hypercalcemia. They can worsen volume depletion, and may be used judiciously for fluid overload during or after rehydration. They are not a substitute for volume assessment or an automatic first step before fluid correction."
+  },
+  "calcium-phosphorus-031": {
+    "choices": [
+      "48 to 72 hours",
+      "Continue for at least 7 days before assessing tachyphylaxis",
+      "Continue indefinitely until the malignancy is cured",
+      "Use it alone instead of a slower antiresorptive whenever calcium initially improves"
+    ],
+    "rationale": "The Endocrine Society limits calcitonin to 48 to 72 hours in severe malignancy-associated hypercalcemia because tachyphylaxis develops. It is a rapid bridge, not a week-long or indefinite substitute for slower antiresorptive and cause-directed treatment."
+  },
+  "calcium-phosphorus-032": {
+    "rationale": "Recommendation 1 strongly recommends an IV bisphosphonate or denosumab for adults with malignancy-associated hypercalcemia. Recommendation 2 conditionally suggests denosumab over an IV bisphosphonate, based on very low-certainty, largely indirect evidence. Indefinite calcitonin alone, calcium supplementation, or routinely withholding antiresorptive treatment does not match the recommendation."
+  },
+  "calcium-phosphorus-033": {
+    "rationale": "Glucocorticoids inhibit active vitamin D production in lymphoma and granulomatous mechanisms. Additional calcitriol or calcium does not target the excess-calcium mechanism, and desmopressin is not the cause-directed therapy described in the guideline. Persistent severe or symptomatic calcitriol-associated malignancy hypercalcemia despite glucocorticoids may require an added antiresorptive."
+  },
+  "calcium-phosphorus-034": {
+    "rationale": "Xgeva labeling warns of severe hypocalcemia, with greater risk in advanced renal dysfunction, dialysis, and inadequate calcium or vitamin D support. Mineral status must be assessed and followed even when denosumab is selected to avoid bisphosphonate renal toxicity. High albumin alone, normal magnesium, or mild isolated hypernatremia does not identify the same risk pattern."
+  },
+  "calcium-phosphorus-091": {
+    "choices": [
+      "Evaluate PTH-related peptide and other malignancy mechanisms",
+      "Diagnose primary hyperparathyroidism from the high calcium despite suppressed PTH",
+      "Treat the lung mass as proof of one specific calcium mechanism without further evaluation",
+      "Wait for all cancer investigations before stabilizing clinically urgent symptoms"
+    ],
+    "rationale": "High calcium with suppressed PTH redirects evaluation toward malignancy and other non-PTH causes. PTH-related peptide is a common malignant mechanism, but a lung mass does not establish it by itself; assess the full cancer and mineral context while treating clinical urgency. Calling this PTH-dependent disease, assuming one mechanism is proven, or waiting to stabilize severe symptoms until every test returns is not justified."
+  },
+  "calcium-phosphorus-097": {
+    "choices": [
+      "Use a glucocorticoid-directed strategy and escalate antiresorptive therapy if needed",
+      "Give additional calcitriol to suppress the hypercalcemia",
+      "Use calcitonin alone indefinitely for durable cause control",
+      "Diagnose primary hyperparathyroidism despite the suppressed PTH"
+    ],
+    "rationale": "High calcitriol with lymphoma fits a calcitriol-associated malignant mechanism. Glucocorticoids reduce active vitamin D production. If severe or symptomatic hypercalcemia persists despite them, the Endocrine Society conditionally suggests an IV bisphosphonate or denosumab. More calcitriol, calcitonin indefinitely, or treating the PTH result as primary hyperparathyroidism does not address this pattern."
+  },
+  "calcium-phosphorus-100": {
+    "choices": [
+      "Use carefully titrated isotonic fluid with frequent congestion and perfusion reassessment, then add mechanism-specific therapy",
+      "Give a fixed large-volume saline regimen without reassessing cardiac tolerance",
+      "Use forced diuresis alone without assessing intravascular depletion",
+      "Delay all calcium-lowering treatment until pulmonary congestion has completely resolved"
+    ],
+    "rationale": "Urgent hypercalcemia treatment and limited cardiac fluid tolerance must both shape care. The guideline calls for hydration tailored to cardiac function, careful assessment for overload, and judicious loop diuretic use when needed for congestion. A fixed large-volume prescription or ignoring perfusion and overload can be harmful; a diuretic-only plan does not replace volume and mechanism assessment."
+  },
+  "calcium-phosphorus-106": {
+    "choices": [
+      "Recognize tachyphylaxis and rely on durable cause-specific therapy",
+      "Continue calcitonin indefinitely as the sole calcium-lowering therapy",
+      "Assume the initial improvement established permanent control of the cause",
+      "Assume every antiresorptive should already have its full effect within a few hours"
+    ],
+    "rationale": "Calcitonin develops tachyphylaxis after a short course; the guideline limits treatment to 48 to 72 hours. A day-four rebound warrants reassessment of the durable antiresorptive response and underlying cause rather than indefinite calcitonin alone. Do not assume the early response cured the cause or that all antiresorptive agents act within the same number of hours."
+  }
+};
+for (const question of calciumPhosphorusHomeostasisQuestionBank) {
+  if (Object.hasOwn(sourceReviewedMalignancyCalciumQuestions, question.id)) Object.assign(question, sourceReviewedMalignancyCalciumQuestions[question.id]);
+}
+calciumPhosphorusHomeostasisQuestionBank.splice(calciumPhosphorusHomeostasisQuestionBank.findIndex((question) => question.id === "calcium-phosphorus-026"), 0, {
+  "id": "calcium-phosphorus-malignancy-product-regimen",
+  "question": "An adult has malignancy-associated hypercalcemia refractory to an IV bisphosphonate. Which Xgeva statement matches its labeled indication and regimen?",
+  "choices": [
+    "Xgeva covers this refractory indication; 120 mg subcutaneously every 4 weeks with extra doses on days 8 and 15 of the first month",
+    "Use Prolia 60 mg every 6 months because denosumab products share one regimen",
+    "Use the yearly Reclast osteoporosis regimen as the Xgeva dosing schedule",
+    "Treat the guideline preference for denosumab as proof that Xgeva labeling has no refractory-indication restriction"
+  ],
+  "answer": 0,
+  "rationale": "Xgeva labeling specifies hypercalcemia of malignancy refractory to bisphosphonates and 120 mg subcutaneously every 4 weeks with additional doses on days 8 and 15 in the first month. Prolia and Reclast osteoporosis schedules are different. The Endocrine Society guideline recommendation and the labeled indication have different scopes; verify the actual product and treatment plan.",
+  "reviewHref": "#hypercalcemia",
+  "difficulty": "clinical"
+});
+calciumPhosphorusHomeostasisQuestionBank.splice(calciumPhosphorusHomeostasisQuestionBank.findIndex((question) => question.id === "calcium-phosphorus-109"), 0, {
+  "id": "calcium-phosphorus-malignancy-renal-regimen",
+  "question": "A patient with malignancy-associated hypercalcemia and renal impairment is being considered for zoledronic acid. Which medication-review principle is most appropriate?",
+  "choices": [
+    "Review the hypercalcemia-specific label, current renal function, and guideline renal-infusion guidance together",
+    "Copy the myeloma/bone-metastasis dose table automatically to every zoledronic acid indication",
+    "Assume that no initial dose adjustment means renal monitoring is unnecessary",
+    "Infuse faster than 15 minutes to reduce the time the kidneys are exposed to the drug"
+  ],
+  "answer": 0,
+  "rationale": "The label separates HCM from the creatinine-clearance dose table for myeloma and bone metastases, requires creatinine assessment, and specifies an infusion of at least 15 minutes. Severe impairment requires a risk-benefit assessment. The Endocrine Society additionally advises renal dosing and longer infusions for HCM with CrCl below 60 mL/min. Reconcile indication, renal measures, label, and guidance rather than copying one table or abandoning monitoring.",
+  "reviewHref": "#hypercalcemia",
+  "difficulty": "clinical"
+});

@@ -1,0 +1,2665 @@
+{
+  "updated": "2026-10-05T04:10:47.136865+00:00",
+  "unit": "enteral-nutrition:broader-hypercalcemia-and-HCM-treatment",
+  "status": "Scoped treatment unit verified; broader dialysis claim, whole lesson, calcium parent, EN and chapters remain reviewing",
+  "baseCommit": "55a40151dd29c05e6824322b967e1de5a43bea47",
+  "sourcePolicy": {
+    "primary": "Cover-verified supplied RxPrep2023; private source text/images remain outside Git",
+    "directApprovalUsed": "I give approval: specifically requested Society acute hypercalcemia and Endocrine Society HCM guidance; prior FDA labeling approval for feeding/calcium products",
+    "noGeneralOutsideSourceAuthorizationInferred": true,
+    "additionalNephrologyDialysisSourceRequest": "pending direct approval; not used",
+    "earlier2022ChronicHypoparathyroidismRequest": "pending direct approval; not used"
+  },
+  "sourceReview": {
+    "book": {
+      "pdfPageActuallyViewed": 815,
+      "printedPage": 805,
+      "scope": "Entire Hypercalcemia of Malignancy section, all table columns, osteoporosis contrast rows and footnote; relevant cross-book text occurrences located separately. No new albumin-correction or dialysis claim adopted."
+    },
+    "society": {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5314807/",
+      "publication": "2016",
+      "articleContextTextRead": true,
+      "completeOriginalHtmlSectionsActuallyViewed": [
+        "Introduction",
+        "Severity assessment",
+        "Clinical features",
+        "Causes including nested investigation/management",
+        "Investigation",
+        "Management:Rehydration",
+        "Second-line treatments"
+      ],
+      "scopeLimits": "Dialysis is mentioned for severe renal failure; this does not verify the whole retained broader dialysis/refractory/fluids-intolerance claim. Fixed historical large fluid volume not adopted."
+    },
+    "endocrineSociety": {
+      "doi": "10.1210/clinem/dgac621",
+      "href": "https://academic.oup.com/jcem/article/108/3/507/6916871",
+      "publication": "2023 volume108 pages507-528; advance access21December2022",
+      "finalPublishedPdfPrimaryInstitutionCopy": "https://scholarworks.aub.edu.lb/server/api/core/bitstreams/ba06da96-a7eb-4932-b593-749b12a0421e/content",
+      "finalPublishedPdfPagesActuallyViewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "printedJournalPagesActuallyViewed": [
+        507,
+        508,
+        509,
+        510,
+        511,
+        512,
+        513,
+        514,
+        515,
+        516,
+        517
+      ],
+      "advanceManuscriptOriginalPdfPagesActuallyViewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "adoptedScope": "Adult HCM recommendations1-5, full Table1 including continuation/footnote, complete figures1/2, Table2 UGPS and Table3 recommendation strength, full comparative-evidence and recurrence/calcitriol context relevant to adopted claims",
+      "all22PagesRenderedOrWholeGuidelineAudited": false,
+      "noHypercalcemiaDialysisText": true
+    },
+    "products": {
+      "zoledronic": {
+        "href": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=1738a682-5903-b675-3a7a-61d299a6f248&type=display",
+        "piRevision": "October2023",
+        "completeOriginalSectionsActuallyViewed": [
+          "1.1",
+          "2.1",
+          "2.2 including renal dose table",
+          "5.1",
+          "5.2",
+          "5.3",
+          "5.4"
+        ],
+        "indicationSpecificRenalDistinctionPreserved": true
+      },
+      "xgeva": {
+        "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=628f0998-1206-4001-aeee-18133aa9f3bf",
+        "piRevision": "June2026",
+        "completeOriginalSectionsActuallyViewed": [
+          "1.3",
+          "2.4",
+          "5.1",
+          "5.3",
+          "8.6"
+        ],
+        "FDARefractoryIndicationDistinctFromGuidelinePreference": true
+      }
+    },
+    "originalHtmlSourceCapturesActuallyViewed": [
+      "society-hypercalcemia-sec1.png",
+      "society-hypercalcemia-sec2.png",
+      "society-hypercalcemia-sec3.png",
+      "society-hypercalcemia-sec4.png",
+      "society-hypercalcemia-sec5.png",
+      "society-hypercalcemia-Management.png",
+      "zoledronic-1-1.png",
+      "zoledronic-2-1.png",
+      "zoledronic-5-2.png",
+      "zoledronic-5-3.png",
+      "zoledronic-5-4.png",
+      "xgeva-1-3.png",
+      "xgeva-2-4.png",
+      "xgeva-5-3.png",
+      "xgeva-8-6.png",
+      "society-hypercalcemia-Second-line treatments.png",
+      "zoledronic-2-2.png",
+      "zoledronic-5-1.png",
+      "xgeva-5-1.png"
+    ]
+  },
+  "coverage": {
+    "evidence": "enteral-nutrition-broader-hypercalcemia-review.json",
+    "moduleBankBefore": 106,
+    "moduleBankAfter": 108,
+    "wholeQuestionsVerified": 14,
+    "existingQuestionsNewlyVerified": 12,
+    "newDistinctQuestionsAdded": 2,
+    "sourceVerifiedBankIds": [
+      "calcium-phosphorus-027",
+      "calcium-phosphorus-028",
+      "calcium-phosphorus-029",
+      "calcium-phosphorus-030",
+      "calcium-phosphorus-031",
+      "calcium-phosphorus-032",
+      "calcium-phosphorus-033",
+      "calcium-phosphorus-034",
+      "calcium-phosphorus-091",
+      "calcium-phosphorus-097",
+      "calcium-phosphorus-100",
+      "calcium-phosphorus-106",
+      "calcium-phosphorus-malignancy-product-regimen",
+      "calcium-phosphorus-malignancy-renal-regimen"
+    ],
+    "broaderFeedingBankVerifiedAfter": 299,
+    "wholeBodiesVerified": 5,
+    "retainedWholeBodiesReconciled": 3,
+    "newWholeBodiesAdded": 2,
+    "sourceVerifiedBodyHeadings": [
+      "Determine severity and mechanism",
+      "Match onset to the clinical need",
+      "Treat the source",
+      "Reconcile the product and indication before dosing",
+      "Plan safety and reassess recurrent disease"
+    ],
+    "embeddedCheckVerified": true,
+    "figureVerified": true,
+    "derivedHypercalcemiaCumulativePresent": false,
+    "newlyCountedCumulativeQuestions": 0,
+    "lessonQuestionsVerified": 14,
+    "lessonQuestionTotal": 15,
+    "remainingQuestionIds": [
+      "calcium-phosphorus-035"
+    ],
+    "remainingBodyHeadings": [
+      "Restore volume thoughtfully"
+    ],
+    "wholeLessonMetadataVerified": true,
+    "wholeLessonVerified": false,
+    "wholeParentModuleVerified": false,
+    "wholeENModuleVerified": false,
+    "wholeChaptersVerified": false,
+    "all106OriginalIdsKeysCorrectTextsAnchorsRelativeOrderPreserved": true,
+    "fiveOriginalCumulativeSelectionsPreserved": true,
+    "all1180CumulativeWholeObjectsUnchanged": true
+  },
+  "changes": {
+    "questions": {
+      "calcium-phosphorus-027": {
+        "before": {
+          "id": "calcium-phosphorus-027",
+          "question": "Which pair accounts for most adult hypercalcemia?",
+          "choices": [
+            "Primary hyperparathyroidism and malignancy",
+            "Hypoparathyroidism and diarrhea",
+            "Iron deficiency and asthma",
+            "Migraine and dermatitis"
+          ],
+          "answer": 0,
+          "rationale": "Primary hyperparathyroidism and malignancy are the dominant causes.",
+          "reviewHref": "#hypercalcemia"
+        },
+        "after": {
+          "id": "calcium-phosphorus-027",
+          "question": "Which pair accounts for most adult hypercalcemia?",
+          "choices": [
+            "Primary hyperparathyroidism and malignancy",
+            "Vitamin D intoxication and lithium toxicity",
+            "Granulomatous disease and immobilization",
+            "Thiazide use and milk-alkali syndrome"
+          ],
+          "answer": 0,
+          "rationale": "The Society emergency guidance identifies primary hyperparathyroidism and malignancy as the dominant causes. Vitamin D excess, lithium, granulomatous disease, immobilization, thiazides, and milk-alkali syndrome are recognized but less common causes; they do not replace this dominant pair. Use PTH and the clinical context to distinguish mechanisms.",
+          "reviewHref": "#hypercalcemia"
+        }
+      },
+      "calcium-phosphorus-028": {
+        "before": {
+          "id": "calcium-phosphorus-028",
+          "question": "Which ECG effect can occur with hypercalcemia?",
+          "choices": [
+            "QT shortening",
+            "Universal QT prolongation",
+            "Atrial standstill in every case",
+            "No conduction effect"
+          ],
+          "answer": 0,
+          "rationale": "Hypercalcemia can shorten the QT interval and cause dysrhythmia when severe.",
+          "reviewHref": "#hypercalcemia"
+        },
+        "after": {
+          "id": "calcium-phosphorus-028",
+          "question": "Which ECG effect can occur with hypercalcemia?",
+          "choices": [
+            "QT shortening",
+            "QT prolongation",
+            "QT must remain unchanged",
+            "ECG assessment is unnecessary even in severe cases"
+          ],
+          "answer": 0,
+          "rationale": "The acute hypercalcemia guidance identifies QT shortening and dysrhythmia. QT prolongation is the contrasting hypocalcemia pattern. An unchanged QT is not required, and severe hypercalcemia can carry cardiac risk requiring ECG assessment.",
+          "reviewHref": "#hypercalcemia"
+        }
+      },
+      "calcium-phosphorus-029": {
+        "before": {
+          "id": "calcium-phosphorus-029",
+          "question": "What is the first fluid principle in volume-depleted hypercalcemia?",
+          "choices": [
+            "Restore intravascular volume with an individualized isotonic crystalloid plan",
+            "Give a loop diuretic before assessing volume",
+            "Restrict all fluid",
+            "Use dextrose water for shock"
+          ],
+          "answer": 0,
+          "rationale": "Volume restoration improves perfusion and renal calcium clearance, but heart and kidney function shape the prescription.",
+          "reviewHref": "#hypercalcemia"
+        },
+        "after": {
+          "id": "calcium-phosphorus-029",
+          "question": "What is the first fluid principle in volume-depleted hypercalcemia?",
+          "choices": [
+            "Restore intravascular volume with an individualized isotonic crystalloid plan",
+            "Begin forced loop diuresis before correcting volume depletion",
+            "Restrict fluids solely because the calcium is high",
+            "Use free-water replacement as the sole initial intravascular resuscitation plan"
+          ],
+          "answer": 0,
+          "rationale": "Isotonic saline restores depleted intravascular volume and enhances urinary calcium excretion. The guideline requires hydration tailored to cardiac function; kidney impairment and congestion also require reassessment. Forced diuresis before volume correction can worsen depletion, fluid restriction does not correct it, and free-water replacement does not serve the same intravascular resuscitation purpose.",
+          "reviewHref": "#hypercalcemia"
+        }
+      },
+      "calcium-phosphorus-030": {
+        "before": {
+          "id": "calcium-phosphorus-030",
+          "question": "Why are loop diuretics not routine calcium-lowering treatment?",
+          "choices": [
+            "They can worsen volume depletion and are mainly used if fluid overload develops",
+            "They always raise calcium",
+            "They block PTH measurement",
+            "They cannot produce urine"
+          ],
+          "answer": 0,
+          "rationale": "Routine forced diuresis adds risk and does not replace adequate volume assessment.",
+          "reviewHref": "#hypercalcemia"
+        },
+        "after": {
+          "id": "calcium-phosphorus-030",
+          "question": "Why are loop diuretics not routine calcium-lowering treatment?",
+          "choices": [
+            "They can worsen volume depletion and are mainly used if fluid overload develops",
+            "They should replace hydration before volume status is assessed",
+            "Every mild hypercalcemia case needs forced loop diuresis",
+            "Their use removes the need to monitor kidney function and electrolytes"
+          ],
+          "answer": 0,
+          "rationale": "The acute hypercalcemia guidance does not recommend routine loop diuretics for hypercalcemia. They can worsen volume depletion, and may be used judiciously for fluid overload during or after rehydration. They are not a substitute for volume assessment or an automatic first step before fluid correction.",
+          "reviewHref": "#hypercalcemia"
+        }
+      },
+      "calcium-phosphorus-031": {
+        "before": {
+          "id": "calcium-phosphorus-031",
+          "question": "How long should calcitonin generally be limited in severe hypercalcemia of malignancy?",
+          "choices": [
+            "48 to 72 hours",
+            "Six months",
+            "One year",
+            "A single annual dose"
+          ],
+          "answer": 0,
+          "rationale": "The Endocrine Society limits use because tachyphylaxis develops rapidly.",
+          "reviewHref": "#hypercalcemia"
+        },
+        "after": {
+          "id": "calcium-phosphorus-031",
+          "question": "How long should calcitonin generally be limited in severe hypercalcemia of malignancy?",
+          "choices": [
+            "48 to 72 hours",
+            "Continue for at least 7 days before assessing tachyphylaxis",
+            "Continue indefinitely until the malignancy is cured",
+            "Use it alone instead of a slower antiresorptive whenever calcium initially improves"
+          ],
+          "answer": 0,
+          "rationale": "The Endocrine Society limits calcitonin to 48 to 72 hours in severe malignancy-associated hypercalcemia because tachyphylaxis develops. It is a rapid bridge, not a week-long or indefinite substitute for slower antiresorptive and cause-directed treatment.",
+          "reviewHref": "#hypercalcemia"
+        }
+      },
+      "calcium-phosphorus-032": {
+        "before": {
+          "id": "calcium-phosphorus-032",
+          "question": "Which therapy does the Endocrine Society recommend for adults with hypercalcemia of malignancy?",
+          "choices": [
+            "An IV bisphosphonate or denosumab",
+            "Calcitonin alone indefinitely",
+            "Calcium supplementation",
+            "No antiresorptive therapy"
+          ],
+          "answer": 0,
+          "rationale": "The guideline recommends an IV bisphosphonate or denosumab and suggests denosumab over an IV bisphosphonate.",
+          "reviewHref": "#hypercalcemia"
+        },
+        "after": {
+          "id": "calcium-phosphorus-032",
+          "question": "Which therapy does the Endocrine Society recommend for adults with hypercalcemia of malignancy?",
+          "choices": [
+            "An IV bisphosphonate or denosumab",
+            "Calcitonin alone indefinitely",
+            "Calcium supplementation",
+            "No antiresorptive therapy"
+          ],
+          "answer": 0,
+          "rationale": "Recommendation 1 strongly recommends an IV bisphosphonate or denosumab for adults with malignancy-associated hypercalcemia. Recommendation 2 conditionally suggests denosumab over an IV bisphosphonate, based on very low-certainty, largely indirect evidence. Indefinite calcitonin alone, calcium supplementation, or routinely withholding antiresorptive treatment does not match the recommendation.",
+          "reviewHref": "#hypercalcemia"
+        }
+      },
+      "calcium-phosphorus-033": {
+        "before": {
+          "id": "calcium-phosphorus-033",
+          "question": "Which treatment is most directly matched to calcitriol-mediated hypercalcemia?",
+          "choices": [
+            "Glucocorticoid therapy",
+            "More calcitriol",
+            "Calcium chloride",
+            "Desmopressin"
+          ],
+          "answer": 0,
+          "rationale": "Glucocorticoids reduce calcitriol production in lymphoma and granulomatous mechanisms.",
+          "reviewHref": "#hypercalcemia"
+        },
+        "after": {
+          "id": "calcium-phosphorus-033",
+          "question": "Which treatment is most directly matched to calcitriol-mediated hypercalcemia?",
+          "choices": [
+            "Glucocorticoid therapy",
+            "More calcitriol",
+            "Calcium chloride",
+            "Desmopressin"
+          ],
+          "answer": 0,
+          "rationale": "Glucocorticoids inhibit active vitamin D production in lymphoma and granulomatous mechanisms. Additional calcitriol or calcium does not target the excess-calcium mechanism, and desmopressin is not the cause-directed therapy described in the guideline. Persistent severe or symptomatic calcitriol-associated malignancy hypercalcemia despite glucocorticoids may require an added antiresorptive.",
+          "reviewHref": "#hypercalcemia"
+        }
+      },
+      "calcium-phosphorus-034": {
+        "before": {
+          "id": "calcium-phosphorus-034",
+          "question": "Which factor increases the risk of profound hypocalcemia after denosumab?",
+          "choices": [
+            "Advanced kidney impairment and uncorrected mineral deficiency",
+            "High albumin alone",
+            "A normal magnesium level",
+            "Mild isolated hypernatremia"
+          ],
+          "answer": 0,
+          "rationale": "Severe kidney disease and deficient calcium or vitamin D increase post-antiresorptive hypocalcemia risk.",
+          "reviewHref": "#hypercalcemia"
+        },
+        "after": {
+          "id": "calcium-phosphorus-034",
+          "question": "Which factor increases the risk of profound hypocalcemia after denosumab?",
+          "choices": [
+            "Advanced kidney impairment and uncorrected mineral deficiency",
+            "High albumin alone",
+            "A normal magnesium level",
+            "Mild isolated hypernatremia"
+          ],
+          "answer": 0,
+          "rationale": "Xgeva labeling warns of severe hypocalcemia, with greater risk in advanced renal dysfunction, dialysis, and inadequate calcium or vitamin D support. Mineral status must be assessed and followed even when denosumab is selected to avoid bisphosphonate renal toxicity. High albumin alone, normal magnesium, or mild isolated hypernatremia does not identify the same risk pattern.",
+          "reviewHref": "#hypercalcemia"
+        }
+      },
+      "calcium-phosphorus-091": {
+        "before": {
+          "id": "calcium-phosphorus-091",
+          "question": "Calcium 13.2 mg/dL with suppressed PTH and a lung mass. Which interpretation or action is most defensible?",
+          "choices": [
+            "Evaluate PTH-related peptide and other malignancy mechanisms",
+            "Treat the isolated number without evaluating the mechanism",
+            "Ignore kidney function and symptoms",
+            "Delay urgent stabilization until every test returns"
+          ],
+          "answer": 0,
+          "rationale": "Suppressed PTH redirects the differential toward malignancy and other non-PTH causes.",
+          "reviewHref": "#hypercalcemia"
+        },
+        "after": {
+          "id": "calcium-phosphorus-091",
+          "question": "Calcium 13.2 mg/dL with suppressed PTH and a lung mass. Which interpretation or action is most defensible?",
+          "choices": [
+            "Evaluate PTH-related peptide and other malignancy mechanisms",
+            "Diagnose primary hyperparathyroidism from the high calcium despite suppressed PTH",
+            "Treat the lung mass as proof of one specific calcium mechanism without further evaluation",
+            "Wait for all cancer investigations before stabilizing clinically urgent symptoms"
+          ],
+          "answer": 0,
+          "rationale": "High calcium with suppressed PTH redirects evaluation toward malignancy and other non-PTH causes. PTH-related peptide is a common malignant mechanism, but a lung mass does not establish it by itself; assess the full cancer and mineral context while treating clinical urgency. Calling this PTH-dependent disease, assuming one mechanism is proven, or waiting to stabilize severe symptoms until every test returns is not justified.",
+          "reviewHref": "#hypercalcemia"
+        }
+      },
+      "calcium-phosphorus-097": {
+        "before": {
+          "id": "calcium-phosphorus-097",
+          "question": "A patient with lymphoma has suppressed PTH, high calcitriol, and hypercalcemia. Which interpretation or action is most defensible?",
+          "choices": [
+            "Use a glucocorticoid-directed strategy and escalate antiresorptive therapy if needed",
+            "Treat the isolated number without evaluating the mechanism",
+            "Ignore kidney function and symptoms",
+            "Delay urgent stabilization until every test returns"
+          ],
+          "answer": 0,
+          "rationale": "Calcitriol-mediated malignancy hypercalcemia is glucocorticoid responsive.",
+          "reviewHref": "#hypercalcemia"
+        },
+        "after": {
+          "id": "calcium-phosphorus-097",
+          "question": "A patient with lymphoma has suppressed PTH, high calcitriol, and hypercalcemia. Which interpretation or action is most defensible?",
+          "choices": [
+            "Use a glucocorticoid-directed strategy and escalate antiresorptive therapy if needed",
+            "Give additional calcitriol to suppress the hypercalcemia",
+            "Use calcitonin alone indefinitely for durable cause control",
+            "Diagnose primary hyperparathyroidism despite the suppressed PTH"
+          ],
+          "answer": 0,
+          "rationale": "High calcitriol with lymphoma fits a calcitriol-associated malignant mechanism. Glucocorticoids reduce active vitamin D production. If severe or symptomatic hypercalcemia persists despite them, the Endocrine Society conditionally suggests an IV bisphosphonate or denosumab. More calcitriol, calcitonin indefinitely, or treating the PTH result as primary hyperparathyroidism does not address this pattern.",
+          "reviewHref": "#hypercalcemia"
+        }
+      },
+      "calcium-phosphorus-100": {
+        "before": {
+          "id": "calcium-phosphorus-100",
+          "question": "A patient with severe hypercalcemia is dehydrated and confused but has heart failure with pulmonary congestion. What is the best next interpretation or management principle?",
+          "choices": [
+            "Use carefully titrated isotonic fluid with frequent congestion and perfusion reassessment, then add mechanism-specific therapy",
+            "Normalize one laboratory value without a mechanism",
+            "Use the same fixed plan for every patient",
+            "Ignore medication timing"
+          ],
+          "answer": 0,
+          "rationale": "Both calcium urgency and limited fluid tolerance must shape the plan.",
+          "reviewHref": "#hypercalcemia"
+        },
+        "after": {
+          "id": "calcium-phosphorus-100",
+          "question": "A patient with severe hypercalcemia is dehydrated and confused but has heart failure with pulmonary congestion. What is the best next interpretation or management principle?",
+          "choices": [
+            "Use carefully titrated isotonic fluid with frequent congestion and perfusion reassessment, then add mechanism-specific therapy",
+            "Give a fixed large-volume saline regimen without reassessing cardiac tolerance",
+            "Use forced diuresis alone without assessing intravascular depletion",
+            "Delay all calcium-lowering treatment until pulmonary congestion has completely resolved"
+          ],
+          "answer": 0,
+          "rationale": "Urgent hypercalcemia treatment and limited cardiac fluid tolerance must both shape care. The guideline calls for hydration tailored to cardiac function, careful assessment for overload, and judicious loop diuretic use when needed for congestion. A fixed large-volume prescription or ignoring perfusion and overload can be harmful; a diuretic-only plan does not replace volume and mechanism assessment.",
+          "reviewHref": "#hypercalcemia"
+        }
+      },
+      "calcium-phosphorus-106": {
+        "before": {
+          "id": "calcium-phosphorus-106",
+          "question": "A patient with severe hypercalcemia receives calcitonin and improves initially, then calcium rises on day four. What is the best next interpretation or management principle?",
+          "choices": [
+            "Recognize tachyphylaxis and rely on durable cause-specific therapy",
+            "Normalize one laboratory value without a mechanism",
+            "Use the same fixed plan for every patient",
+            "Ignore medication timing"
+          ],
+          "answer": 0,
+          "rationale": "Calcitonin loses effectiveness after a short course.",
+          "reviewHref": "#hypercalcemia"
+        },
+        "after": {
+          "id": "calcium-phosphorus-106",
+          "question": "A patient with severe hypercalcemia receives calcitonin and improves initially, then calcium rises on day four. What is the best next interpretation or management principle?",
+          "choices": [
+            "Recognize tachyphylaxis and rely on durable cause-specific therapy",
+            "Continue calcitonin indefinitely as the sole calcium-lowering therapy",
+            "Assume the initial improvement established permanent control of the cause",
+            "Assume every antiresorptive should already have its full effect within a few hours"
+          ],
+          "answer": 0,
+          "rationale": "Calcitonin develops tachyphylaxis after a short course; the guideline limits treatment to 48 to 72 hours. A day-four rebound warrants reassessment of the durable antiresorptive response and underlying cause rather than indefinite calcitonin alone. Do not assume the early response cured the cause or that all antiresorptive agents act within the same number of hours.",
+          "reviewHref": "#hypercalcemia"
+        }
+      },
+      "calcium-phosphorus-malignancy-product-regimen": {
+        "before": null,
+        "after": {
+          "id": "calcium-phosphorus-malignancy-product-regimen",
+          "question": "An adult has malignancy-associated hypercalcemia refractory to an IV bisphosphonate. Which Xgeva statement matches its labeled indication and regimen?",
+          "choices": [
+            "Xgeva covers this refractory indication; 120 mg subcutaneously every 4 weeks with extra doses on days 8 and 15 of the first month",
+            "Use Prolia 60 mg every 6 months because denosumab products share one regimen",
+            "Use the yearly Reclast osteoporosis regimen as the Xgeva dosing schedule",
+            "Treat the guideline preference for denosumab as proof that Xgeva labeling has no refractory-indication restriction"
+          ],
+          "answer": 0,
+          "rationale": "Xgeva labeling specifies hypercalcemia of malignancy refractory to bisphosphonates and 120 mg subcutaneously every 4 weeks with additional doses on days 8 and 15 in the first month. Prolia and Reclast osteoporosis schedules are different. The Endocrine Society guideline recommendation and the labeled indication have different scopes; verify the actual product and treatment plan.",
+          "reviewHref": "#hypercalcemia",
+          "difficulty": "clinical"
+        }
+      },
+      "calcium-phosphorus-malignancy-renal-regimen": {
+        "before": null,
+        "after": {
+          "id": "calcium-phosphorus-malignancy-renal-regimen",
+          "question": "A patient with malignancy-associated hypercalcemia and renal impairment is being considered for zoledronic acid. Which medication-review principle is most appropriate?",
+          "choices": [
+            "Review the hypercalcemia-specific label, current renal function, and guideline renal-infusion guidance together",
+            "Copy the myeloma/bone-metastasis dose table automatically to every zoledronic acid indication",
+            "Assume that no initial dose adjustment means renal monitoring is unnecessary",
+            "Infuse faster than 15 minutes to reduce the time the kidneys are exposed to the drug"
+          ],
+          "answer": 0,
+          "rationale": "The label separates HCM from the creatinine-clearance dose table for myeloma and bone metastases, requires creatinine assessment, and specifies an infusion of at least 15 minutes. Severe impairment requires a risk-benefit assessment. The Endocrine Society additionally advises renal dosing and longer infusions for HCM with CrCl below 60 mL/min. Reconcile indication, renal measures, label, and guidance rather than copying one table or abandoning monitoring.",
+          "reviewHref": "#hypercalcemia",
+          "difficulty": "clinical"
+        }
+      }
+    },
+    "wholeBodies": [
+      "Determine severity and mechanism",
+      "Match onset to the clinical need",
+      "Treat the source",
+      "Reconcile the product and indication before dosing",
+      "Plan safety and reassess recurrent disease"
+    ],
+    "checks": {
+      "hypercalcemia": {
+        "before": {
+          "question": "Why is calcitonin paired with a longer-acting antiresorptive in severe hypercalcemia of malignancy?",
+          "choices": [
+            "Calcitonin acts quickly but loses effect within days",
+            "Calcitonin has no calcium effect",
+            "Bisphosphonates act within seconds",
+            "The combination prevents every recurrence"
+          ],
+          "answer": 0,
+          "rationale": "Calcitonin provides a rapid bridge while the slower antiresorptive effect develops, and its duration is limited by tachyphylaxis.",
+          "reviewHref": "#hypercalcemia"
+        },
+        "after": {
+          "question": "Why is calcitonin paired with a longer-acting antiresorptive in severe hypercalcemia of malignancy?",
+          "choices": [
+            "Calcitonin acts quickly but loses effect within days",
+            "Calcitonin has no calcium effect",
+            "Bisphosphonates act within seconds",
+            "The combination prevents every recurrence"
+          ],
+          "answer": 0,
+          "rationale": "Calcitonin provides a rapid bridge while the slower antiresorptive effect develops, and its duration is limited by tachyphylaxis.",
+          "reviewHref": "#hypercalcemia"
+        }
+      }
+    },
+    "figures": [
+      "hypercalcemia"
+    ],
+    "bodyChanges": {
+      "Determine severity and mechanism": {
+        "before": "Hypercalcemia can cause polyuria, dehydration, kidney injury, constipation, weakness, cognitive change, shortened QT, and dysrhythmia. Check medication and supplement exposure, volume status, kidney function, phosphate, PTH, and a confirmatory calcium measurement. PTH is the central first branch in the etiologic workup.",
+        "after": "Hypercalcemia can cause polyuria, dehydration, kidney injury, constipation, weakness, cognitive change, shortened QT, and dysrhythmia. Assess symptoms, speed of calcium rise, volume status, ECG, kidney function, phosphate, PTH, and medication or supplement exposure. In adult hypercalcemia of malignancy, the Endocrine Society classifies calcium above 14 mg/dL (3.5 mmol/L) as severe, but symptoms and rapid change also matter. Interpret PTH in relation to calcium: high or inappropriately unsuppressed PTH points toward a PTH-dependent cause, while suppressed PTH prompts evaluation for malignancy and other non-PTH mechanisms. Familial hypocalciuric hypercalcemia can resemble primary hyperparathyroidism biochemically; the PTH result alone does not establish the diagnosis."
+      },
+      "Match onset to the clinical need": {
+        "before": "Calcitonin acts rapidly but loses effect through tachyphylaxis, so the Endocrine Society limits its use in severe hypercalcemia of malignancy to 48 to 72 hours. IV bisphosphonates and denosumab reduce osteoclast-mediated calcium release more slowly. The guideline recommends an IV bisphosphonate or denosumab for adults with hypercalcemia of malignancy and suggests denosumab over an IV bisphosphonate, while recognizing low-certainty evidence.",
+        "after": "For adults with severe hypercalcemia of malignancy, the Endocrine Society suggests calcitonin together with an IV bisphosphonate or denosumab as initial treatment. Calcitonin acts within hours but develops tachyphylaxis; limit it to 48 to 72 hours. It is a bridge while a slower antiresorptive effect develops, not a durable treatment by itself. The guideline table lists IV pamidronate and zoledronic acid onset at about 48 to 72 hours and denosumab at about 3 to 10 days; do not assume that every agent has the same response time. The guideline strongly recommends an IV bisphosphonate or denosumab for adult malignancy-associated hypercalcemia, and conditionally suggests denosumab over an IV bisphosphonate. The comparative evidence is very low certainty and largely indirect, so the preference does not establish superiority for every patient or every calcium disorder."
+      },
+      "Treat the source": {
+        "before": "Calcitriol-mediated hypercalcemia may respond to glucocorticoids. Primary hyperparathyroidism may require surgery after stabilization. Hypercalcemia related to medication or supplements requires withdrawal and reassessment. Antiresorptive therapy can produce hypocalcemia, especially with vitamin D deficiency or severe kidney impairment, so mineral status and organ function must be followed.",
+        "after": "Calcitriol-mediated hypercalcemia in lymphoma or granulomatous disease may respond to glucocorticoids, which reduce active vitamin D production. For calcitriol-associated malignancy, persistent severe or symptomatic hypercalcemia despite glucocorticoids is a setting where the Endocrine Society suggests adding an IV bisphosphonate or denosumab. Severe primary hyperparathyroidism that responds poorly to other measures may require parathyroidectomy after acute assessment and stabilization. Review medicines and supplements that can contribute to high calcium and remove or adjust the provoking exposure as appropriate. Treating the underlying malignancy is essential to prevent recurrence; lowering calcium alone does not treat the cancer."
+      }
+    },
+    "addedBodies": [
+      {
+        "heading": "Reconcile the product and indication before dosing",
+        "body": "Hypercalcemia regimens differ from osteoporosis regimens even when the active ingredient is the same. For malignancy-associated hypercalcemia, zoledronic acid labeling specifies a maximum 4 mg IV dose infused over at least 15 minutes, with creatinine assessment before treatment; wait at least 7 days before considering retreatment to allow the initial response. The book contrasts this with Reclast 5 mg yearly for osteoporosis treatment. Xgeva labeling covers hypercalcemia of malignancy refractory to bisphosphonates: 120 mg subcutaneously every 4 weeks, with additional 120 mg doses on days 8 and 15 in the first month. The book contrasts this with Prolia 60 mg every 6 months for osteoporosis. The guideline suggestion favoring denosumab in adult hypercalcemia of malignancy has broader scope than the Xgeva labeled refractory indication. Verify the actual product, indication, regimen, and clinical plan; do not substitute an osteoporosis dose or duplicate products containing the same active ingredient."
+      },
+      {
+        "heading": "Plan safety and reassess recurrent disease",
+        "body": "Before and after antiresorptive therapy, assess kidney function, calcium, phosphate, magnesium, vitamin D status, and oral health. Denosumab can cause severe hypocalcemia, especially with advanced kidney impairment or inadequate mineral supplementation. IV bisphosphonates can worsen renal function. Zoledronic acid labeling distinguishes the hypercalcemia regimen from its creatinine-clearance-based dose table for myeloma or bone metastases: the hypercalcemia section does not require adjustment for mild-to-moderate impairment with serum creatinine below 4.5 mg/dL, while severe impairment requires a risk-benefit assessment. The Endocrine Society separately advises renal dosing and longer IV bisphosphonate infusions for HCM with creatinine clearance below 60 mL/min. Reconcile these indication-specific instructions and renal measures with the treating team. Monitor the calcium response and treatment complications rather than judging success from an early value alone. For refractory or recurrent malignancy-associated hypercalcemia despite an IV bisphosphonate, the guideline suggests denosumab; evidence for the reverse sequence is lacking. Coordinate oncology treatment of the cause."
+      }
+    ],
+    "addedQuestions": [
+      "calcium-phosphorus-malignancy-product-regimen",
+      "calcium-phosphorus-malignancy-renal-regimen"
+    ],
+    "references": [
+      {
+        "label": "Endocrine Society full clinical guideline: adult hypercalcemia of malignancy (2022; published 2023)",
+        "href": "https://academic.oup.com/jcem/article/108/3/507/6916871"
+      }
+    ],
+    "retainedPendingQuestions": [
+      "calcium-phosphorus-035"
+    ],
+    "retainedPendingBodies": [
+      "Restore volume thoughtfully"
+    ],
+    "metadataWholeReviewed": true
+  },
+  "questionReview": [
+    {
+      "before": {
+        "id": "calcium-phosphorus-027",
+        "question": "Which pair accounts for most adult hypercalcemia?",
+        "choices": [
+          "Primary hyperparathyroidism and malignancy",
+          "Hypoparathyroidism and diarrhea",
+          "Iron deficiency and asthma",
+          "Migraine and dermatitis"
+        ],
+        "answer": 0,
+        "rationale": "Primary hyperparathyroidism and malignancy are the dominant causes.",
+        "reviewHref": "#hypercalcemia"
+      },
+      "final": {
+        "id": "calcium-phosphorus-027",
+        "question": "Which pair accounts for most adult hypercalcemia?",
+        "choices": [
+          "Primary hyperparathyroidism and malignancy",
+          "Vitamin D intoxication and lithium toxicity",
+          "Granulomatous disease and immobilization",
+          "Thiazide use and milk-alkali syndrome"
+        ],
+        "answer": 0,
+        "rationale": "The Society emergency guidance identifies primary hyperparathyroidism and malignancy as the dominant causes. Vitamin D excess, lithium, granulomatous disease, immobilization, thiazides, and milk-alkali syndrome are recognized but less common causes; they do not replace this dominant pair. Use PTH and the clinical context to distinguish mechanisms.",
+        "reviewHref": "#hypercalcemia"
+      },
+      "wholeStemAllAlternativesKeyRationaleAnchorVerified": true,
+      "newlyCounted": true
+    },
+    {
+      "before": {
+        "id": "calcium-phosphorus-028",
+        "question": "Which ECG effect can occur with hypercalcemia?",
+        "choices": [
+          "QT shortening",
+          "Universal QT prolongation",
+          "Atrial standstill in every case",
+          "No conduction effect"
+        ],
+        "answer": 0,
+        "rationale": "Hypercalcemia can shorten the QT interval and cause dysrhythmia when severe.",
+        "reviewHref": "#hypercalcemia"
+      },
+      "final": {
+        "id": "calcium-phosphorus-028",
+        "question": "Which ECG effect can occur with hypercalcemia?",
+        "choices": [
+          "QT shortening",
+          "QT prolongation",
+          "QT must remain unchanged",
+          "ECG assessment is unnecessary even in severe cases"
+        ],
+        "answer": 0,
+        "rationale": "The acute hypercalcemia guidance identifies QT shortening and dysrhythmia. QT prolongation is the contrasting hypocalcemia pattern. An unchanged QT is not required, and severe hypercalcemia can carry cardiac risk requiring ECG assessment.",
+        "reviewHref": "#hypercalcemia"
+      },
+      "wholeStemAllAlternativesKeyRationaleAnchorVerified": true,
+      "newlyCounted": true
+    },
+    {
+      "before": {
+        "id": "calcium-phosphorus-029",
+        "question": "What is the first fluid principle in volume-depleted hypercalcemia?",
+        "choices": [
+          "Restore intravascular volume with an individualized isotonic crystalloid plan",
+          "Give a loop diuretic before assessing volume",
+          "Restrict all fluid",
+          "Use dextrose water for shock"
+        ],
+        "answer": 0,
+        "rationale": "Volume restoration improves perfusion and renal calcium clearance, but heart and kidney function shape the prescription.",
+        "reviewHref": "#hypercalcemia"
+      },
+      "final": {
+        "id": "calcium-phosphorus-029",
+        "question": "What is the first fluid principle in volume-depleted hypercalcemia?",
+        "choices": [
+          "Restore intravascular volume with an individualized isotonic crystalloid plan",
+          "Begin forced loop diuresis before correcting volume depletion",
+          "Restrict fluids solely because the calcium is high",
+          "Use free-water replacement as the sole initial intravascular resuscitation plan"
+        ],
+        "answer": 0,
+        "rationale": "Isotonic saline restores depleted intravascular volume and enhances urinary calcium excretion. The guideline requires hydration tailored to cardiac function; kidney impairment and congestion also require reassessment. Forced diuresis before volume correction can worsen depletion, fluid restriction does not correct it, and free-water replacement does not serve the same intravascular resuscitation purpose.",
+        "reviewHref": "#hypercalcemia"
+      },
+      "wholeStemAllAlternativesKeyRationaleAnchorVerified": true,
+      "newlyCounted": true
+    },
+    {
+      "before": {
+        "id": "calcium-phosphorus-030",
+        "question": "Why are loop diuretics not routine calcium-lowering treatment?",
+        "choices": [
+          "They can worsen volume depletion and are mainly used if fluid overload develops",
+          "They always raise calcium",
+          "They block PTH measurement",
+          "They cannot produce urine"
+        ],
+        "answer": 0,
+        "rationale": "Routine forced diuresis adds risk and does not replace adequate volume assessment.",
+        "reviewHref": "#hypercalcemia"
+      },
+      "final": {
+        "id": "calcium-phosphorus-030",
+        "question": "Why are loop diuretics not routine calcium-lowering treatment?",
+        "choices": [
+          "They can worsen volume depletion and are mainly used if fluid overload develops",
+          "They should replace hydration before volume status is assessed",
+          "Every mild hypercalcemia case needs forced loop diuresis",
+          "Their use removes the need to monitor kidney function and electrolytes"
+        ],
+        "answer": 0,
+        "rationale": "The acute hypercalcemia guidance does not recommend routine loop diuretics for hypercalcemia. They can worsen volume depletion, and may be used judiciously for fluid overload during or after rehydration. They are not a substitute for volume assessment or an automatic first step before fluid correction.",
+        "reviewHref": "#hypercalcemia"
+      },
+      "wholeStemAllAlternativesKeyRationaleAnchorVerified": true,
+      "newlyCounted": true
+    },
+    {
+      "before": {
+        "id": "calcium-phosphorus-031",
+        "question": "How long should calcitonin generally be limited in severe hypercalcemia of malignancy?",
+        "choices": [
+          "48 to 72 hours",
+          "Six months",
+          "One year",
+          "A single annual dose"
+        ],
+        "answer": 0,
+        "rationale": "The Endocrine Society limits use because tachyphylaxis develops rapidly.",
+        "reviewHref": "#hypercalcemia"
+      },
+      "final": {
+        "id": "calcium-phosphorus-031",
+        "question": "How long should calcitonin generally be limited in severe hypercalcemia of malignancy?",
+        "choices": [
+          "48 to 72 hours",
+          "Continue for at least 7 days before assessing tachyphylaxis",
+          "Continue indefinitely until the malignancy is cured",
+          "Use it alone instead of a slower antiresorptive whenever calcium initially improves"
+        ],
+        "answer": 0,
+        "rationale": "The Endocrine Society limits calcitonin to 48 to 72 hours in severe malignancy-associated hypercalcemia because tachyphylaxis develops. It is a rapid bridge, not a week-long or indefinite substitute for slower antiresorptive and cause-directed treatment.",
+        "reviewHref": "#hypercalcemia"
+      },
+      "wholeStemAllAlternativesKeyRationaleAnchorVerified": true,
+      "newlyCounted": true
+    },
+    {
+      "before": {
+        "id": "calcium-phosphorus-032",
+        "question": "Which therapy does the Endocrine Society recommend for adults with hypercalcemia of malignancy?",
+        "choices": [
+          "An IV bisphosphonate or denosumab",
+          "Calcitonin alone indefinitely",
+          "Calcium supplementation",
+          "No antiresorptive therapy"
+        ],
+        "answer": 0,
+        "rationale": "The guideline recommends an IV bisphosphonate or denosumab and suggests denosumab over an IV bisphosphonate.",
+        "reviewHref": "#hypercalcemia"
+      },
+      "final": {
+        "id": "calcium-phosphorus-032",
+        "question": "Which therapy does the Endocrine Society recommend for adults with hypercalcemia of malignancy?",
+        "choices": [
+          "An IV bisphosphonate or denosumab",
+          "Calcitonin alone indefinitely",
+          "Calcium supplementation",
+          "No antiresorptive therapy"
+        ],
+        "answer": 0,
+        "rationale": "Recommendation 1 strongly recommends an IV bisphosphonate or denosumab for adults with malignancy-associated hypercalcemia. Recommendation 2 conditionally suggests denosumab over an IV bisphosphonate, based on very low-certainty, largely indirect evidence. Indefinite calcitonin alone, calcium supplementation, or routinely withholding antiresorptive treatment does not match the recommendation.",
+        "reviewHref": "#hypercalcemia"
+      },
+      "wholeStemAllAlternativesKeyRationaleAnchorVerified": true,
+      "newlyCounted": true
+    },
+    {
+      "before": {
+        "id": "calcium-phosphorus-033",
+        "question": "Which treatment is most directly matched to calcitriol-mediated hypercalcemia?",
+        "choices": [
+          "Glucocorticoid therapy",
+          "More calcitriol",
+          "Calcium chloride",
+          "Desmopressin"
+        ],
+        "answer": 0,
+        "rationale": "Glucocorticoids reduce calcitriol production in lymphoma and granulomatous mechanisms.",
+        "reviewHref": "#hypercalcemia"
+      },
+      "final": {
+        "id": "calcium-phosphorus-033",
+        "question": "Which treatment is most directly matched to calcitriol-mediated hypercalcemia?",
+        "choices": [
+          "Glucocorticoid therapy",
+          "More calcitriol",
+          "Calcium chloride",
+          "Desmopressin"
+        ],
+        "answer": 0,
+        "rationale": "Glucocorticoids inhibit active vitamin D production in lymphoma and granulomatous mechanisms. Additional calcitriol or calcium does not target the excess-calcium mechanism, and desmopressin is not the cause-directed therapy described in the guideline. Persistent severe or symptomatic calcitriol-associated malignancy hypercalcemia despite glucocorticoids may require an added antiresorptive.",
+        "reviewHref": "#hypercalcemia"
+      },
+      "wholeStemAllAlternativesKeyRationaleAnchorVerified": true,
+      "newlyCounted": true
+    },
+    {
+      "before": {
+        "id": "calcium-phosphorus-034",
+        "question": "Which factor increases the risk of profound hypocalcemia after denosumab?",
+        "choices": [
+          "Advanced kidney impairment and uncorrected mineral deficiency",
+          "High albumin alone",
+          "A normal magnesium level",
+          "Mild isolated hypernatremia"
+        ],
+        "answer": 0,
+        "rationale": "Severe kidney disease and deficient calcium or vitamin D increase post-antiresorptive hypocalcemia risk.",
+        "reviewHref": "#hypercalcemia"
+      },
+      "final": {
+        "id": "calcium-phosphorus-034",
+        "question": "Which factor increases the risk of profound hypocalcemia after denosumab?",
+        "choices": [
+          "Advanced kidney impairment and uncorrected mineral deficiency",
+          "High albumin alone",
+          "A normal magnesium level",
+          "Mild isolated hypernatremia"
+        ],
+        "answer": 0,
+        "rationale": "Xgeva labeling warns of severe hypocalcemia, with greater risk in advanced renal dysfunction, dialysis, and inadequate calcium or vitamin D support. Mineral status must be assessed and followed even when denosumab is selected to avoid bisphosphonate renal toxicity. High albumin alone, normal magnesium, or mild isolated hypernatremia does not identify the same risk pattern.",
+        "reviewHref": "#hypercalcemia"
+      },
+      "wholeStemAllAlternativesKeyRationaleAnchorVerified": true,
+      "newlyCounted": true
+    },
+    {
+      "before": {
+        "id": "calcium-phosphorus-091",
+        "question": "Calcium 13.2 mg/dL with suppressed PTH and a lung mass. Which interpretation or action is most defensible?",
+        "choices": [
+          "Evaluate PTH-related peptide and other malignancy mechanisms",
+          "Treat the isolated number without evaluating the mechanism",
+          "Ignore kidney function and symptoms",
+          "Delay urgent stabilization until every test returns"
+        ],
+        "answer": 0,
+        "rationale": "Suppressed PTH redirects the differential toward malignancy and other non-PTH causes.",
+        "reviewHref": "#hypercalcemia"
+      },
+      "final": {
+        "id": "calcium-phosphorus-091",
+        "question": "Calcium 13.2 mg/dL with suppressed PTH and a lung mass. Which interpretation or action is most defensible?",
+        "choices": [
+          "Evaluate PTH-related peptide and other malignancy mechanisms",
+          "Diagnose primary hyperparathyroidism from the high calcium despite suppressed PTH",
+          "Treat the lung mass as proof of one specific calcium mechanism without further evaluation",
+          "Wait for all cancer investigations before stabilizing clinically urgent symptoms"
+        ],
+        "answer": 0,
+        "rationale": "High calcium with suppressed PTH redirects evaluation toward malignancy and other non-PTH causes. PTH-related peptide is a common malignant mechanism, but a lung mass does not establish it by itself; assess the full cancer and mineral context while treating clinical urgency. Calling this PTH-dependent disease, assuming one mechanism is proven, or waiting to stabilize severe symptoms until every test returns is not justified.",
+        "reviewHref": "#hypercalcemia"
+      },
+      "wholeStemAllAlternativesKeyRationaleAnchorVerified": true,
+      "newlyCounted": true
+    },
+    {
+      "before": {
+        "id": "calcium-phosphorus-097",
+        "question": "A patient with lymphoma has suppressed PTH, high calcitriol, and hypercalcemia. Which interpretation or action is most defensible?",
+        "choices": [
+          "Use a glucocorticoid-directed strategy and escalate antiresorptive therapy if needed",
+          "Treat the isolated number without evaluating the mechanism",
+          "Ignore kidney function and symptoms",
+          "Delay urgent stabilization until every test returns"
+        ],
+        "answer": 0,
+        "rationale": "Calcitriol-mediated malignancy hypercalcemia is glucocorticoid responsive.",
+        "reviewHref": "#hypercalcemia"
+      },
+      "final": {
+        "id": "calcium-phosphorus-097",
+        "question": "A patient with lymphoma has suppressed PTH, high calcitriol, and hypercalcemia. Which interpretation or action is most defensible?",
+        "choices": [
+          "Use a glucocorticoid-directed strategy and escalate antiresorptive therapy if needed",
+          "Give additional calcitriol to suppress the hypercalcemia",
+          "Use calcitonin alone indefinitely for durable cause control",
+          "Diagnose primary hyperparathyroidism despite the suppressed PTH"
+        ],
+        "answer": 0,
+        "rationale": "High calcitriol with lymphoma fits a calcitriol-associated malignant mechanism. Glucocorticoids reduce active vitamin D production. If severe or symptomatic hypercalcemia persists despite them, the Endocrine Society conditionally suggests an IV bisphosphonate or denosumab. More calcitriol, calcitonin indefinitely, or treating the PTH result as primary hyperparathyroidism does not address this pattern.",
+        "reviewHref": "#hypercalcemia"
+      },
+      "wholeStemAllAlternativesKeyRationaleAnchorVerified": true,
+      "newlyCounted": true
+    },
+    {
+      "before": {
+        "id": "calcium-phosphorus-100",
+        "question": "A patient with severe hypercalcemia is dehydrated and confused but has heart failure with pulmonary congestion. What is the best next interpretation or management principle?",
+        "choices": [
+          "Use carefully titrated isotonic fluid with frequent congestion and perfusion reassessment, then add mechanism-specific therapy",
+          "Normalize one laboratory value without a mechanism",
+          "Use the same fixed plan for every patient",
+          "Ignore medication timing"
+        ],
+        "answer": 0,
+        "rationale": "Both calcium urgency and limited fluid tolerance must shape the plan.",
+        "reviewHref": "#hypercalcemia"
+      },
+      "final": {
+        "id": "calcium-phosphorus-100",
+        "question": "A patient with severe hypercalcemia is dehydrated and confused but has heart failure with pulmonary congestion. What is the best next interpretation or management principle?",
+        "choices": [
+          "Use carefully titrated isotonic fluid with frequent congestion and perfusion reassessment, then add mechanism-specific therapy",
+          "Give a fixed large-volume saline regimen without reassessing cardiac tolerance",
+          "Use forced diuresis alone without assessing intravascular depletion",
+          "Delay all calcium-lowering treatment until pulmonary congestion has completely resolved"
+        ],
+        "answer": 0,
+        "rationale": "Urgent hypercalcemia treatment and limited cardiac fluid tolerance must both shape care. The guideline calls for hydration tailored to cardiac function, careful assessment for overload, and judicious loop diuretic use when needed for congestion. A fixed large-volume prescription or ignoring perfusion and overload can be harmful; a diuretic-only plan does not replace volume and mechanism assessment.",
+        "reviewHref": "#hypercalcemia"
+      },
+      "wholeStemAllAlternativesKeyRationaleAnchorVerified": true,
+      "newlyCounted": true
+    },
+    {
+      "before": {
+        "id": "calcium-phosphorus-106",
+        "question": "A patient with severe hypercalcemia receives calcitonin and improves initially, then calcium rises on day four. What is the best next interpretation or management principle?",
+        "choices": [
+          "Recognize tachyphylaxis and rely on durable cause-specific therapy",
+          "Normalize one laboratory value without a mechanism",
+          "Use the same fixed plan for every patient",
+          "Ignore medication timing"
+        ],
+        "answer": 0,
+        "rationale": "Calcitonin loses effectiveness after a short course.",
+        "reviewHref": "#hypercalcemia"
+      },
+      "final": {
+        "id": "calcium-phosphorus-106",
+        "question": "A patient with severe hypercalcemia receives calcitonin and improves initially, then calcium rises on day four. What is the best next interpretation or management principle?",
+        "choices": [
+          "Recognize tachyphylaxis and rely on durable cause-specific therapy",
+          "Continue calcitonin indefinitely as the sole calcium-lowering therapy",
+          "Assume the initial improvement established permanent control of the cause",
+          "Assume every antiresorptive should already have its full effect within a few hours"
+        ],
+        "answer": 0,
+        "rationale": "Calcitonin develops tachyphylaxis after a short course; the guideline limits treatment to 48 to 72 hours. A day-four rebound warrants reassessment of the durable antiresorptive response and underlying cause rather than indefinite calcitonin alone. Do not assume the early response cured the cause or that all antiresorptive agents act within the same number of hours.",
+        "reviewHref": "#hypercalcemia"
+      },
+      "wholeStemAllAlternativesKeyRationaleAnchorVerified": true,
+      "newlyCounted": true
+    },
+    {
+      "before": null,
+      "final": {
+        "id": "calcium-phosphorus-malignancy-product-regimen",
+        "question": "An adult has malignancy-associated hypercalcemia refractory to an IV bisphosphonate. Which Xgeva statement matches its labeled indication and regimen?",
+        "choices": [
+          "Xgeva covers this refractory indication; 120 mg subcutaneously every 4 weeks with extra doses on days 8 and 15 of the first month",
+          "Use Prolia 60 mg every 6 months because denosumab products share one regimen",
+          "Use the yearly Reclast osteoporosis regimen as the Xgeva dosing schedule",
+          "Treat the guideline preference for denosumab as proof that Xgeva labeling has no refractory-indication restriction"
+        ],
+        "answer": 0,
+        "rationale": "Xgeva labeling specifies hypercalcemia of malignancy refractory to bisphosphonates and 120 mg subcutaneously every 4 weeks with additional doses on days 8 and 15 in the first month. Prolia and Reclast osteoporosis schedules are different. The Endocrine Society guideline recommendation and the labeled indication have different scopes; verify the actual product and treatment plan.",
+        "reviewHref": "#hypercalcemia",
+        "difficulty": "clinical"
+      },
+      "wholeStemAllAlternativesKeyRationaleAnchorVerified": true,
+      "newlyCounted": true
+    },
+    {
+      "before": null,
+      "final": {
+        "id": "calcium-phosphorus-malignancy-renal-regimen",
+        "question": "A patient with malignancy-associated hypercalcemia and renal impairment is being considered for zoledronic acid. Which medication-review principle is most appropriate?",
+        "choices": [
+          "Review the hypercalcemia-specific label, current renal function, and guideline renal-infusion guidance together",
+          "Copy the myeloma/bone-metastasis dose table automatically to every zoledronic acid indication",
+          "Assume that no initial dose adjustment means renal monitoring is unnecessary",
+          "Infuse faster than 15 minutes to reduce the time the kidneys are exposed to the drug"
+        ],
+        "answer": 0,
+        "rationale": "The label separates HCM from the creatinine-clearance dose table for myeloma and bone metastases, requires creatinine assessment, and specifies an infusion of at least 15 minutes. Severe impairment requires a risk-benefit assessment. The Endocrine Society additionally advises renal dosing and longer infusions for HCM with CrCl below 60 mL/min. Reconcile indication, renal measures, label, and guidance rather than copying one table or abandoning monitoring.",
+        "reviewHref": "#hypercalcemia",
+        "difficulty": "clinical"
+      },
+      "wholeStemAllAlternativesKeyRationaleAnchorVerified": true,
+      "newlyCounted": true
+    }
+  ],
+  "finalSourceComparison": {
+    "status": "passed",
+    "comparedFinalWholeBodiesAndWholeQuestionsAgain": true,
+    "wholeBodies": {
+      "Determine severity and mechanism": {
+        "wholeTextReviewed": true,
+        "sources": [
+          "Society severity/clinical features/causes/investigation",
+          "HCM introduction and recommendations severe threshold"
+        ]
+      },
+      "Match onset to the clinical need": {
+        "wholeTextReviewed": true,
+        "sources": [
+          "HCM recommendations1/2/3, Table1 onset/duration and full comparative evidence"
+        ]
+      },
+      "Treat the source": {
+        "wholeTextReviewed": true,
+        "sources": [
+          "Society second-line glucocorticoids/PHPT surgery",
+          "HCM recommendation5 and calcitriol background, introduction cause control"
+        ]
+      },
+      "Reconcile the product and indication before dosing": {
+        "wholeTextReviewed": true,
+        "sources": [
+          "Book PDF815 printed805 full HCM table incl osteoporosis rows",
+          "Zoledronic2.1/5.1",
+          "Xgeva1.3/2.4/5.1",
+          "HCM FDA refractory context distinct from recommendation2"
+        ]
+      },
+      "Plan safety and reassess recurrent disease": {
+        "wholeTextReviewed": true,
+        "sources": [
+          "HCM Table2 UGPS1-7 and recommendation4 full context including absent reverse-sequence evidence",
+          "Zoledronic2.1/2.2/5.2/5.3/5.4",
+          "Xgeva5.3/8.6"
+        ]
+      }
+    },
+    "wholeQuestions": {
+      "calcium-phosphorus-027": {
+        "wholeStemAllAlternativesCorrectKeyRationaleAnchorReviewed": true,
+        "sources": [
+          "Society causes and PTH investigation"
+        ]
+      },
+      "calcium-phosphorus-028": {
+        "wholeStemAllAlternativesCorrectKeyRationaleAnchorReviewed": true,
+        "sources": [
+          "Society clinical features; prior approved acute hypocalcemia QT context"
+        ]
+      },
+      "calcium-phosphorus-029": {
+        "wholeStemAllAlternativesCorrectKeyRationaleAnchorReviewed": true,
+        "sources": [
+          "HCM Table1 saline mechanism and UGPS1; Society rehydration"
+        ]
+      },
+      "calcium-phosphorus-030": {
+        "wholeStemAllAlternativesCorrectKeyRationaleAnchorReviewed": true,
+        "sources": [
+          "Society rehydration; HCM Table1 loop row and footnote"
+        ]
+      },
+      "calcium-phosphorus-031": {
+        "wholeStemAllAlternativesCorrectKeyRationaleAnchorReviewed": true,
+        "sources": [
+          "HCM recommendation3 remark and Table1; book differs up48hours"
+        ]
+      },
+      "calcium-phosphorus-032": {
+        "wholeStemAllAlternativesCorrectKeyRationaleAnchorReviewed": true,
+        "sources": [
+          "HCM recommendations1/2 and full evidence/strength context"
+        ]
+      },
+      "calcium-phosphorus-033": {
+        "wholeStemAllAlternativesCorrectKeyRationaleAnchorReviewed": true,
+        "sources": [
+          "Society glucocorticoid second-line; HCM calcitriol background/recommendation5"
+        ]
+      },
+      "calcium-phosphorus-034": {
+        "wholeStemAllAlternativesCorrectKeyRationaleAnchorReviewed": true,
+        "sources": [
+          "Xgeva5.3/8.6; HCM hypocalcemia and renal precautions"
+        ]
+      },
+      "calcium-phosphorus-091": {
+        "wholeStemAllAlternativesCorrectKeyRationaleAnchorReviewed": true,
+        "sources": [
+          "Society PTH investigation; HCM PTHrP background; clinical urgency guidance"
+        ]
+      },
+      "calcium-phosphorus-097": {
+        "wholeStemAllAlternativesCorrectKeyRationaleAnchorReviewed": true,
+        "sources": [
+          "HCM recommendation5 and calcitriol background; Society glucocorticoid mechanism"
+        ]
+      },
+      "calcium-phosphorus-100": {
+        "wholeStemAllAlternativesCorrectKeyRationaleAnchorReviewed": true,
+        "sources": [
+          "HCM UGPS1, saline/loop Table1 and footnote; Society rehydration overload warning"
+        ]
+      },
+      "calcium-phosphorus-106": {
+        "wholeStemAllAlternativesCorrectKeyRationaleAnchorReviewed": true,
+        "sources": [
+          "HCM recommendation3 tachyphylaxis; Table1 different antiresorptive onset"
+        ]
+      },
+      "calcium-phosphorus-malignancy-product-regimen": {
+        "wholeStemAllAlternativesCorrectKeyRationaleAnchorReviewed": true,
+        "sources": [
+          "Xgeva1.3/2.4; book osteoporosis contrast; HCM FDA indication versus recommendation2"
+        ]
+      },
+      "calcium-phosphorus-malignancy-renal-regimen": {
+        "wholeStemAllAlternativesCorrectKeyRationaleAnchorReviewed": true,
+        "sources": [
+          "Zoledronic2.1/2.2/5.3; HCM UGPS4/5"
+        ]
+      }
+    },
+    "wholeLessonMetadata": {
+      "summaryConceptsKeyPointsApplicationReviewed": true,
+      "sources": [
+        "Society clinical features/causes/investigation/management",
+        "HCM Table1, Table2 UGPS and recommendations1-5"
+      ]
+    },
+    "embeddedCheck": {
+      "wholeStemAlternativesKeyRationaleAnchorReviewed": true,
+      "source": "HCM recommendation3, Table1 calcitonin onset/duration and bisphosphonate/denosumab onset"
+    },
+    "fourCardFigure": {
+      "allCardsLabelsTimesCaptionReviewed": true,
+      "source": "Society acute assessment and HCM Table1/UGPS1/recommendations1-5",
+      "purpose": "Conceptual clinical sequence; not an observed molecular structure"
+    },
+    "numericSourceChecks": {
+      "thresholdConversion": "14mg/dL calcium *10 /40.078 =3.493mmol/L, rounds3.5",
+      "doseTimingUnitsComparedDirectly": true,
+      "newCalculationQuestions": 0
+    },
+    "sourceDiscrepancies": [
+      {
+        "claim": "Routine loop use",
+        "book": "PDF815 mentions loops with hydration in mild HCM",
+        "approvedGuidance": "No routine use; judicious fluid-overload role",
+        "resolution": "Follow approved guidance and retain volume/perfusion reassessment"
+      },
+      {
+        "claim": "Calcitonin limit",
+        "book": "Up48hours",
+        "approvedGuidance": "48to72hours due tachyphylaxis",
+        "resolution": "Guideline short-course limit used with adult severeHCM scope"
+      },
+      {
+        "claim": "Denosumab onset",
+        "book": "Table24to72hours",
+        "approvedGuidance": "Final published Table1:3to10days; time complete response23days",
+        "resolution": "Use3to10day onset; no universal rapid-effect assumption"
+      },
+      {
+        "claim": "Zoledronic renal regimen",
+        "label": "HCM section no initial adjustment mild/moderate SCr<4.5; severe risk-benefit. Separate bone-metastasis/myeloma CrCl table",
+        "guideline": "HCM UGPS5 CrCl<60 renal dosing/longer infusions",
+        "resolution": "Explicitly distinguish indication and renal metric; reconcile label/guidance with treating team; no copied universal dose table"
+      },
+      {
+        "claim": "Denosumab recommendation versus FDA indication",
+        "label": "Xgeva HCM refractory to bisphosphonates",
+        "guideline": "AdultHCM recommendation2 conditional D preference overIVBP basedverylowindirect evidence",
+        "resolution": "Both scopes explicit; preference not represented as universal superiority or an expanded FDA indication"
+      }
+    ],
+    "all1180CumulativeWholeObjectsUnchanged": true,
+    "noHypercalcemiaDerivativeInExistingSelection": true,
+    "cumulative026TechnicalSmokeOnly": true,
+    "wholeLessonVerified": false,
+    "remainingWholeQuestionIds": [
+      "calcium-phosphorus-035"
+    ],
+    "remainingWholeBodyHeadings": [
+      "Restore volume thoughtfully"
+    ],
+    "broaderDialysisClaimsNotVerified": true,
+    "newOutsideSourcesUsedWithoutApproval": false,
+    "publicLearnerApprovalProcessPhrasesRemoved": true
+  },
+  "cumulativeReview": {
+    "hypercalcemiaDerivativeInOriginalSelection": false,
+    "allFiveSelectionIdsPreserved": true,
+    "all1180WholeObjectsUnchanged": true,
+    "026BrowserSmokeOnly": true,
+    "newlyClinicallyAuditedCumulativeQuestions": 0
+  },
+  "validation": {
+    "productionBuild": {
+      "status": "passed",
+      "exitCode": 0,
+      "pages": 567,
+      "isolatedBaseCommit": "55a40151dd29c05e6824322b967e1de5a43bea47"
+    },
+    "structure": {
+      "modules": 1,
+      "questions": 108,
+      "hardErrors": [],
+      "sourceGaps": [],
+      "sizeAdvisories": [],
+      "thinLessons": [],
+      "weakestModules": [
+        {
+          "module": "calcium-phosphorus-homeostasis",
+          "lessons": 6,
+          "questions": 108,
+          "minimumLessonCoverage": 8
+        }
+      ]
+    },
+    "numericSourceChecks": {
+      "status": "passed",
+      "scope": "Drug/regimen dose, timing, renal-threshold units compared directly against book and approved labels/guideline.14mg/dL calcium converts approximately to3.5mmol/L; no new calculation question or independent formula claim counted."
+    },
+    "objectPreservation": {
+      "status": "passed",
+      "bankBefore": 106,
+      "bankAfter": 108,
+      "all106OriginalIdsKeysCorrectTextsAnchorsRelativeOrderPreserved": true,
+      "other94WholeQuestionObjectsUnchanged": true,
+      "threeOldBodiesReconciledTwoAdded": true,
+      "untouchedBroaderDialysisClaimsRetainedPending": true,
+      "otherLessonMetadataChecksAndFiguresUnchanged": true,
+      "onlyFullGuidelineReferenceAdded": true,
+      "fiveOriginalDerivedCumulativeIdsPreserved": true,
+      "noHypercalcemiaDerivativeInExistingCumulativeSelection": true,
+      "all1180WholeCumulativeObjectsUnchanged": true,
+      "all1180CumulativeIdsKeysAnchorsOrderPreserved": true,
+      "allOtherModuleWholeObjectsUnchanged": true
+    },
+    "browser": {
+      "status": "passed",
+      "results": [
+        {
+          "width": 1440,
+          "module": "calcium-phosphorus-homeostasis",
+          "bodies": 31,
+          "exactMetadata": true,
+          "checkResults": [
+            {
+              "slug": "hypercalcemia",
+              "wrong": true,
+              "feedbackAndAnchorVerified": true
+            },
+            {
+              "slug": "hypercalcemia",
+              "wrong": false,
+              "feedbackAndAnchorVerified": true
+            }
+          ],
+          "references": 20,
+          "wholeLessonClinicalVerification": false,
+          "bookSupportedQuestionScopeVerified": true,
+          "attempts": [
+            {
+              "target": "calcium-phosphorus-malignancy-product-regimen",
+              "seed": 36,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-072",
+                "calcium-phosphorus-iron-repeat-monitoring",
+                "calcium-phosphorus-014",
+                "calcium-phosphorus-050",
+                "calcium-phosphorus-malignancy-product-regimen",
+                "calcium-phosphorus-020",
+                "calcium-phosphorus-103",
+                "calcium-phosphorus-017",
+                "calcium-phosphorus-094",
+                "calcium-phosphorus-028"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-malignancy-product-regimen",
+              "seed": 36,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-072",
+                "calcium-phosphorus-iron-repeat-monitoring",
+                "calcium-phosphorus-014",
+                "calcium-phosphorus-050",
+                "calcium-phosphorus-malignancy-product-regimen",
+                "calcium-phosphorus-020",
+                "calcium-phosphorus-103",
+                "calcium-phosphorus-017",
+                "calcium-phosphorus-094",
+                "calcium-phosphorus-028"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-027",
+              "seed": 4,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-070",
+                "calcium-phosphorus-010",
+                "calcium-phosphorus-017",
+                "calcium-phosphorus-027",
+                "calcium-phosphorus-042",
+                "calcium-phosphorus-008",
+                "calcium-phosphorus-096",
+                "calcium-phosphorus-005",
+                "calcium-phosphorus-016",
+                "calcium-phosphorus-079"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-027",
+              "seed": 4,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-070",
+                "calcium-phosphorus-010",
+                "calcium-phosphorus-017",
+                "calcium-phosphorus-027",
+                "calcium-phosphorus-042",
+                "calcium-phosphorus-008",
+                "calcium-phosphorus-096",
+                "calcium-phosphorus-005",
+                "calcium-phosphorus-016",
+                "calcium-phosphorus-079"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-028",
+              "seed": 14,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-107",
+                "calcium-phosphorus-075",
+                "calcium-phosphorus-094",
+                "calcium-phosphorus-083",
+                "calcium-phosphorus-109",
+                "calcium-phosphorus-089",
+                "calcium-phosphorus-072",
+                "calcium-phosphorus-034",
+                "calcium-phosphorus-028",
+                "calcium-phosphorus-025"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-028",
+              "seed": 14,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-107",
+                "calcium-phosphorus-075",
+                "calcium-phosphorus-094",
+                "calcium-phosphorus-083",
+                "calcium-phosphorus-109",
+                "calcium-phosphorus-089",
+                "calcium-phosphorus-072",
+                "calcium-phosphorus-034",
+                "calcium-phosphorus-028",
+                "calcium-phosphorus-025"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-029",
+              "seed": 26,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-091",
+                "calcium-phosphorus-078",
+                "calcium-phosphorus-027",
+                "calcium-phosphorus-029",
+                "calcium-phosphorus-038",
+                "calcium-phosphorus-087",
+                "calcium-phosphorus-035",
+                "calcium-phosphorus-040",
+                "calcium-phosphorus-025",
+                "calcium-phosphorus-061"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-029",
+              "seed": 26,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-091",
+                "calcium-phosphorus-078",
+                "calcium-phosphorus-027",
+                "calcium-phosphorus-029",
+                "calcium-phosphorus-038",
+                "calcium-phosphorus-087",
+                "calcium-phosphorus-035",
+                "calcium-phosphorus-040",
+                "calcium-phosphorus-025",
+                "calcium-phosphorus-061"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-030",
+              "seed": 5,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-062",
+                "calcium-phosphorus-087",
+                "calcium-phosphorus-043",
+                "calcium-phosphorus-074",
+                "calcium-phosphorus-044",
+                "calcium-phosphorus-097",
+                "calcium-phosphorus-032",
+                "calcium-phosphorus-050",
+                "calcium-phosphorus-088",
+                "calcium-phosphorus-030"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-030",
+              "seed": 5,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-062",
+                "calcium-phosphorus-087",
+                "calcium-phosphorus-043",
+                "calcium-phosphorus-074",
+                "calcium-phosphorus-044",
+                "calcium-phosphorus-097",
+                "calcium-phosphorus-032",
+                "calcium-phosphorus-050",
+                "calcium-phosphorus-088",
+                "calcium-phosphorus-030"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-031",
+              "seed": 6,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-090",
+                "calcium-phosphorus-074",
+                "calcium-phosphorus-006",
+                "calcium-phosphorus-malignancy-renal-regimen",
+                "calcium-phosphorus-061",
+                "calcium-phosphorus-031",
+                "calcium-phosphorus-021",
+                "calcium-phosphorus-101",
+                "calcium-phosphorus-064",
+                "calcium-phosphorus-020"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-031",
+              "seed": 6,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-090",
+                "calcium-phosphorus-074",
+                "calcium-phosphorus-006",
+                "calcium-phosphorus-malignancy-renal-regimen",
+                "calcium-phosphorus-061",
+                "calcium-phosphorus-031",
+                "calcium-phosphorus-021",
+                "calcium-phosphorus-101",
+                "calcium-phosphorus-064",
+                "calcium-phosphorus-020"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-032",
+              "seed": 3,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-102",
+                "calcium-phosphorus-035",
+                "calcium-phosphorus-032",
+                "calcium-phosphorus-061",
+                "calcium-phosphorus-044",
+                "calcium-phosphorus-103",
+                "calcium-phosphorus-037",
+                "calcium-phosphorus-089",
+                "calcium-phosphorus-106",
+                "calcium-phosphorus-024"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-032",
+              "seed": 3,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-102",
+                "calcium-phosphorus-035",
+                "calcium-phosphorus-032",
+                "calcium-phosphorus-061",
+                "calcium-phosphorus-044",
+                "calcium-phosphorus-103",
+                "calcium-phosphorus-037",
+                "calcium-phosphorus-089",
+                "calcium-phosphorus-106",
+                "calcium-phosphorus-024"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-033",
+              "seed": 21,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-074",
+                "calcium-phosphorus-076",
+                "calcium-phosphorus-021",
+                "calcium-phosphorus-100",
+                "calcium-phosphorus-073",
+                "calcium-phosphorus-003",
+                "calcium-phosphorus-017",
+                "calcium-phosphorus-033",
+                "calcium-phosphorus-094",
+                "calcium-phosphorus-066"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-033",
+              "seed": 21,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-074",
+                "calcium-phosphorus-076",
+                "calcium-phosphorus-021",
+                "calcium-phosphorus-100",
+                "calcium-phosphorus-073",
+                "calcium-phosphorus-003",
+                "calcium-phosphorus-017",
+                "calcium-phosphorus-033",
+                "calcium-phosphorus-094",
+                "calcium-phosphorus-066"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-034",
+              "seed": 14,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-107",
+                "calcium-phosphorus-075",
+                "calcium-phosphorus-094",
+                "calcium-phosphorus-083",
+                "calcium-phosphorus-109",
+                "calcium-phosphorus-089",
+                "calcium-phosphorus-072",
+                "calcium-phosphorus-034",
+                "calcium-phosphorus-028",
+                "calcium-phosphorus-025"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-034",
+              "seed": 14,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-107",
+                "calcium-phosphorus-075",
+                "calcium-phosphorus-094",
+                "calcium-phosphorus-083",
+                "calcium-phosphorus-109",
+                "calcium-phosphorus-089",
+                "calcium-phosphorus-072",
+                "calcium-phosphorus-034",
+                "calcium-phosphorus-028",
+                "calcium-phosphorus-025"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-091",
+              "seed": 26,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-091",
+                "calcium-phosphorus-078",
+                "calcium-phosphorus-027",
+                "calcium-phosphorus-029",
+                "calcium-phosphorus-038",
+                "calcium-phosphorus-087",
+                "calcium-phosphorus-035",
+                "calcium-phosphorus-040",
+                "calcium-phosphorus-025",
+                "calcium-phosphorus-061"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-091",
+              "seed": 26,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-091",
+                "calcium-phosphorus-078",
+                "calcium-phosphorus-027",
+                "calcium-phosphorus-029",
+                "calcium-phosphorus-038",
+                "calcium-phosphorus-087",
+                "calcium-phosphorus-035",
+                "calcium-phosphorus-040",
+                "calcium-phosphorus-025",
+                "calcium-phosphorus-061"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-097",
+              "seed": 1,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-012",
+                "calcium-phosphorus-024",
+                "calcium-phosphorus-iron-persistent-warning",
+                "calcium-phosphorus-019",
+                "calcium-phosphorus-085",
+                "calcium-phosphorus-004",
+                "calcium-phosphorus-102",
+                "calcium-phosphorus-097",
+                "calcium-phosphorus-048",
+                "calcium-phosphorus-090"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-097",
+              "seed": 1,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-012",
+                "calcium-phosphorus-024",
+                "calcium-phosphorus-iron-persistent-warning",
+                "calcium-phosphorus-019",
+                "calcium-phosphorus-085",
+                "calcium-phosphorus-004",
+                "calcium-phosphorus-102",
+                "calcium-phosphorus-097",
+                "calcium-phosphorus-048",
+                "calcium-phosphorus-090"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-100",
+              "seed": 12,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-005",
+                "calcium-phosphorus-044",
+                "calcium-phosphorus-046",
+                "calcium-phosphorus-neonatal-ceftriaxone-compatibility",
+                "calcium-phosphorus-iron-repeat-monitoring",
+                "calcium-phosphorus-100",
+                "calcium-phosphorus-079",
+                "calcium-phosphorus-016",
+                "calcium-phosphorus-009",
+                "calcium-phosphorus-019"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-100",
+              "seed": 12,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-005",
+                "calcium-phosphorus-044",
+                "calcium-phosphorus-046",
+                "calcium-phosphorus-neonatal-ceftriaxone-compatibility",
+                "calcium-phosphorus-iron-repeat-monitoring",
+                "calcium-phosphorus-100",
+                "calcium-phosphorus-079",
+                "calcium-phosphorus-016",
+                "calcium-phosphorus-009",
+                "calcium-phosphorus-019"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-106",
+              "seed": 3,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-102",
+                "calcium-phosphorus-035",
+                "calcium-phosphorus-032",
+                "calcium-phosphorus-061",
+                "calcium-phosphorus-044",
+                "calcium-phosphorus-103",
+                "calcium-phosphorus-037",
+                "calcium-phosphorus-089",
+                "calcium-phosphorus-106",
+                "calcium-phosphorus-024"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-106",
+              "seed": 3,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-102",
+                "calcium-phosphorus-035",
+                "calcium-phosphorus-032",
+                "calcium-phosphorus-061",
+                "calcium-phosphorus-044",
+                "calcium-phosphorus-103",
+                "calcium-phosphorus-037",
+                "calcium-phosphorus-089",
+                "calcium-phosphorus-106",
+                "calcium-phosphorus-024"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-malignancy-renal-regimen",
+              "seed": 6,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-090",
+                "calcium-phosphorus-074",
+                "calcium-phosphorus-006",
+                "calcium-phosphorus-malignancy-renal-regimen",
+                "calcium-phosphorus-061",
+                "calcium-phosphorus-031",
+                "calcium-phosphorus-021",
+                "calcium-phosphorus-101",
+                "calcium-phosphorus-064",
+                "calcium-phosphorus-020"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-malignancy-renal-regimen",
+              "seed": 6,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-090",
+                "calcium-phosphorus-074",
+                "calcium-phosphorus-006",
+                "calcium-phosphorus-malignancy-renal-regimen",
+                "calcium-phosphorus-061",
+                "calcium-phosphorus-031",
+                "calcium-phosphorus-021",
+                "calcium-phosphorus-101",
+                "calcium-phosphorus-064",
+                "calcium-phosphorus-020"
+              ]
+            }
+          ],
+          "noHorizontalOverflow": true,
+          "unauthenticated": true
+        },
+        {
+          "width": 390,
+          "module": "calcium-phosphorus-homeostasis",
+          "bodies": 31,
+          "exactMetadata": true,
+          "checkResults": [
+            {
+              "slug": "hypercalcemia",
+              "wrong": true,
+              "feedbackAndAnchorVerified": true
+            },
+            {
+              "slug": "hypercalcemia",
+              "wrong": false,
+              "feedbackAndAnchorVerified": true
+            }
+          ],
+          "references": 20,
+          "wholeLessonClinicalVerification": false,
+          "bookSupportedQuestionScopeVerified": true,
+          "attempts": [
+            {
+              "target": "calcium-phosphorus-malignancy-product-regimen",
+              "seed": 36,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-072",
+                "calcium-phosphorus-iron-repeat-monitoring",
+                "calcium-phosphorus-014",
+                "calcium-phosphorus-050",
+                "calcium-phosphorus-malignancy-product-regimen",
+                "calcium-phosphorus-020",
+                "calcium-phosphorus-103",
+                "calcium-phosphorus-017",
+                "calcium-phosphorus-094",
+                "calcium-phosphorus-028"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-malignancy-product-regimen",
+              "seed": 36,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-072",
+                "calcium-phosphorus-iron-repeat-monitoring",
+                "calcium-phosphorus-014",
+                "calcium-phosphorus-050",
+                "calcium-phosphorus-malignancy-product-regimen",
+                "calcium-phosphorus-020",
+                "calcium-phosphorus-103",
+                "calcium-phosphorus-017",
+                "calcium-phosphorus-094",
+                "calcium-phosphorus-028"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-027",
+              "seed": 4,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-070",
+                "calcium-phosphorus-010",
+                "calcium-phosphorus-017",
+                "calcium-phosphorus-027",
+                "calcium-phosphorus-042",
+                "calcium-phosphorus-008",
+                "calcium-phosphorus-096",
+                "calcium-phosphorus-005",
+                "calcium-phosphorus-016",
+                "calcium-phosphorus-079"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-027",
+              "seed": 4,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-070",
+                "calcium-phosphorus-010",
+                "calcium-phosphorus-017",
+                "calcium-phosphorus-027",
+                "calcium-phosphorus-042",
+                "calcium-phosphorus-008",
+                "calcium-phosphorus-096",
+                "calcium-phosphorus-005",
+                "calcium-phosphorus-016",
+                "calcium-phosphorus-079"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-028",
+              "seed": 14,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-107",
+                "calcium-phosphorus-075",
+                "calcium-phosphorus-094",
+                "calcium-phosphorus-083",
+                "calcium-phosphorus-109",
+                "calcium-phosphorus-089",
+                "calcium-phosphorus-072",
+                "calcium-phosphorus-034",
+                "calcium-phosphorus-028",
+                "calcium-phosphorus-025"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-028",
+              "seed": 14,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-107",
+                "calcium-phosphorus-075",
+                "calcium-phosphorus-094",
+                "calcium-phosphorus-083",
+                "calcium-phosphorus-109",
+                "calcium-phosphorus-089",
+                "calcium-phosphorus-072",
+                "calcium-phosphorus-034",
+                "calcium-phosphorus-028",
+                "calcium-phosphorus-025"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-029",
+              "seed": 26,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-091",
+                "calcium-phosphorus-078",
+                "calcium-phosphorus-027",
+                "calcium-phosphorus-029",
+                "calcium-phosphorus-038",
+                "calcium-phosphorus-087",
+                "calcium-phosphorus-035",
+                "calcium-phosphorus-040",
+                "calcium-phosphorus-025",
+                "calcium-phosphorus-061"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-029",
+              "seed": 26,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-091",
+                "calcium-phosphorus-078",
+                "calcium-phosphorus-027",
+                "calcium-phosphorus-029",
+                "calcium-phosphorus-038",
+                "calcium-phosphorus-087",
+                "calcium-phosphorus-035",
+                "calcium-phosphorus-040",
+                "calcium-phosphorus-025",
+                "calcium-phosphorus-061"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-030",
+              "seed": 5,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-062",
+                "calcium-phosphorus-087",
+                "calcium-phosphorus-043",
+                "calcium-phosphorus-074",
+                "calcium-phosphorus-044",
+                "calcium-phosphorus-097",
+                "calcium-phosphorus-032",
+                "calcium-phosphorus-050",
+                "calcium-phosphorus-088",
+                "calcium-phosphorus-030"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-030",
+              "seed": 5,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-062",
+                "calcium-phosphorus-087",
+                "calcium-phosphorus-043",
+                "calcium-phosphorus-074",
+                "calcium-phosphorus-044",
+                "calcium-phosphorus-097",
+                "calcium-phosphorus-032",
+                "calcium-phosphorus-050",
+                "calcium-phosphorus-088",
+                "calcium-phosphorus-030"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-031",
+              "seed": 6,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-090",
+                "calcium-phosphorus-074",
+                "calcium-phosphorus-006",
+                "calcium-phosphorus-malignancy-renal-regimen",
+                "calcium-phosphorus-061",
+                "calcium-phosphorus-031",
+                "calcium-phosphorus-021",
+                "calcium-phosphorus-101",
+                "calcium-phosphorus-064",
+                "calcium-phosphorus-020"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-031",
+              "seed": 6,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-090",
+                "calcium-phosphorus-074",
+                "calcium-phosphorus-006",
+                "calcium-phosphorus-malignancy-renal-regimen",
+                "calcium-phosphorus-061",
+                "calcium-phosphorus-031",
+                "calcium-phosphorus-021",
+                "calcium-phosphorus-101",
+                "calcium-phosphorus-064",
+                "calcium-phosphorus-020"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-032",
+              "seed": 3,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-102",
+                "calcium-phosphorus-035",
+                "calcium-phosphorus-032",
+                "calcium-phosphorus-061",
+                "calcium-phosphorus-044",
+                "calcium-phosphorus-103",
+                "calcium-phosphorus-037",
+                "calcium-phosphorus-089",
+                "calcium-phosphorus-106",
+                "calcium-phosphorus-024"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-032",
+              "seed": 3,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-102",
+                "calcium-phosphorus-035",
+                "calcium-phosphorus-032",
+                "calcium-phosphorus-061",
+                "calcium-phosphorus-044",
+                "calcium-phosphorus-103",
+                "calcium-phosphorus-037",
+                "calcium-phosphorus-089",
+                "calcium-phosphorus-106",
+                "calcium-phosphorus-024"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-033",
+              "seed": 21,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-074",
+                "calcium-phosphorus-076",
+                "calcium-phosphorus-021",
+                "calcium-phosphorus-100",
+                "calcium-phosphorus-073",
+                "calcium-phosphorus-003",
+                "calcium-phosphorus-017",
+                "calcium-phosphorus-033",
+                "calcium-phosphorus-094",
+                "calcium-phosphorus-066"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-033",
+              "seed": 21,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-074",
+                "calcium-phosphorus-076",
+                "calcium-phosphorus-021",
+                "calcium-phosphorus-100",
+                "calcium-phosphorus-073",
+                "calcium-phosphorus-003",
+                "calcium-phosphorus-017",
+                "calcium-phosphorus-033",
+                "calcium-phosphorus-094",
+                "calcium-phosphorus-066"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-034",
+              "seed": 14,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-107",
+                "calcium-phosphorus-075",
+                "calcium-phosphorus-094",
+                "calcium-phosphorus-083",
+                "calcium-phosphorus-109",
+                "calcium-phosphorus-089",
+                "calcium-phosphorus-072",
+                "calcium-phosphorus-034",
+                "calcium-phosphorus-028",
+                "calcium-phosphorus-025"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-034",
+              "seed": 14,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-107",
+                "calcium-phosphorus-075",
+                "calcium-phosphorus-094",
+                "calcium-phosphorus-083",
+                "calcium-phosphorus-109",
+                "calcium-phosphorus-089",
+                "calcium-phosphorus-072",
+                "calcium-phosphorus-034",
+                "calcium-phosphorus-028",
+                "calcium-phosphorus-025"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-091",
+              "seed": 26,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-091",
+                "calcium-phosphorus-078",
+                "calcium-phosphorus-027",
+                "calcium-phosphorus-029",
+                "calcium-phosphorus-038",
+                "calcium-phosphorus-087",
+                "calcium-phosphorus-035",
+                "calcium-phosphorus-040",
+                "calcium-phosphorus-025",
+                "calcium-phosphorus-061"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-091",
+              "seed": 26,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-091",
+                "calcium-phosphorus-078",
+                "calcium-phosphorus-027",
+                "calcium-phosphorus-029",
+                "calcium-phosphorus-038",
+                "calcium-phosphorus-087",
+                "calcium-phosphorus-035",
+                "calcium-phosphorus-040",
+                "calcium-phosphorus-025",
+                "calcium-phosphorus-061"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-097",
+              "seed": 1,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-012",
+                "calcium-phosphorus-024",
+                "calcium-phosphorus-iron-persistent-warning",
+                "calcium-phosphorus-019",
+                "calcium-phosphorus-085",
+                "calcium-phosphorus-004",
+                "calcium-phosphorus-102",
+                "calcium-phosphorus-097",
+                "calcium-phosphorus-048",
+                "calcium-phosphorus-090"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-097",
+              "seed": 1,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-012",
+                "calcium-phosphorus-024",
+                "calcium-phosphorus-iron-persistent-warning",
+                "calcium-phosphorus-019",
+                "calcium-phosphorus-085",
+                "calcium-phosphorus-004",
+                "calcium-phosphorus-102",
+                "calcium-phosphorus-097",
+                "calcium-phosphorus-048",
+                "calcium-phosphorus-090"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-100",
+              "seed": 12,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-005",
+                "calcium-phosphorus-044",
+                "calcium-phosphorus-046",
+                "calcium-phosphorus-neonatal-ceftriaxone-compatibility",
+                "calcium-phosphorus-iron-repeat-monitoring",
+                "calcium-phosphorus-100",
+                "calcium-phosphorus-079",
+                "calcium-phosphorus-016",
+                "calcium-phosphorus-009",
+                "calcium-phosphorus-019"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-100",
+              "seed": 12,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-005",
+                "calcium-phosphorus-044",
+                "calcium-phosphorus-046",
+                "calcium-phosphorus-neonatal-ceftriaxone-compatibility",
+                "calcium-phosphorus-iron-repeat-monitoring",
+                "calcium-phosphorus-100",
+                "calcium-phosphorus-079",
+                "calcium-phosphorus-016",
+                "calcium-phosphorus-009",
+                "calcium-phosphorus-019"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-106",
+              "seed": 3,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-102",
+                "calcium-phosphorus-035",
+                "calcium-phosphorus-032",
+                "calcium-phosphorus-061",
+                "calcium-phosphorus-044",
+                "calcium-phosphorus-103",
+                "calcium-phosphorus-037",
+                "calcium-phosphorus-089",
+                "calcium-phosphorus-106",
+                "calcium-phosphorus-024"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-106",
+              "seed": 3,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-102",
+                "calcium-phosphorus-035",
+                "calcium-phosphorus-032",
+                "calcium-phosphorus-061",
+                "calcium-phosphorus-044",
+                "calcium-phosphorus-103",
+                "calcium-phosphorus-037",
+                "calcium-phosphorus-089",
+                "calcium-phosphorus-106",
+                "calcium-phosphorus-024"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-malignancy-renal-regimen",
+              "seed": 6,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-090",
+                "calcium-phosphorus-074",
+                "calcium-phosphorus-006",
+                "calcium-phosphorus-malignancy-renal-regimen",
+                "calcium-phosphorus-061",
+                "calcium-phosphorus-031",
+                "calcium-phosphorus-021",
+                "calcium-phosphorus-101",
+                "calcium-phosphorus-064",
+                "calcium-phosphorus-020"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-malignancy-renal-regimen",
+              "seed": 6,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-090",
+                "calcium-phosphorus-074",
+                "calcium-phosphorus-006",
+                "calcium-phosphorus-malignancy-renal-regimen",
+                "calcium-phosphorus-061",
+                "calcium-phosphorus-031",
+                "calcium-phosphorus-021",
+                "calcium-phosphorus-101",
+                "calcium-phosphorus-064",
+                "calcium-phosphorus-020"
+              ]
+            }
+          ],
+          "noHorizontalOverflow": true,
+          "unauthenticated": true
+        },
+        {
+          "width": 1440,
+          "route": "cumulative",
+          "attempts": [
+            {
+              "id": "cumulative-calcium-phosphorus-homeostasis-calcium-phosphorus-026",
+              "wrong": true,
+              "seed": 86,
+              "feedbackAndModuleLinkVerified": true
+            },
+            {
+              "id": "cumulative-calcium-phosphorus-homeostasis-calcium-phosphorus-026",
+              "wrong": false,
+              "seed": 86,
+              "feedbackAndModuleLinkVerified": true
+            }
+          ]
+        },
+        {
+          "width": 390,
+          "route": "cumulative",
+          "attempts": [
+            {
+              "id": "cumulative-calcium-phosphorus-homeostasis-calcium-phosphorus-026",
+              "wrong": true,
+              "seed": 86,
+              "feedbackAndModuleLinkVerified": true
+            },
+            {
+              "id": "cumulative-calcium-phosphorus-homeostasis-calcium-phosphorus-026",
+              "wrong": false,
+              "seed": 86,
+              "feedbackAndModuleLinkVerified": true
+            }
+          ]
+        }
+      ],
+      "errors": [],
+      "captures": [
+        "body-module-Determine-severity-and-mechanism-1440.png",
+        "body-module-Match-onset-to-the-clinical-need-1440.png",
+        "body-module-Treat-the-source-1440.png",
+        "body-module-Reconcile-the-product-and-indication-before-dosing-1440.png",
+        "body-module-Plan-safety-and-reassess-recurrent-disease-1440.png",
+        "figure-hypercalcemia-1440.png",
+        "references-module-1440.png",
+        "question-calcium-phosphorus-malignancy-product-regimen-correct-1440.png",
+        "question-calcium-phosphorus-027-correct-1440.png",
+        "question-calcium-phosphorus-028-correct-1440.png",
+        "question-calcium-phosphorus-029-correct-1440.png",
+        "question-calcium-phosphorus-030-correct-1440.png",
+        "question-calcium-phosphorus-031-correct-1440.png",
+        "question-calcium-phosphorus-032-correct-1440.png",
+        "question-calcium-phosphorus-033-correct-1440.png",
+        "question-calcium-phosphorus-034-correct-1440.png",
+        "question-calcium-phosphorus-091-correct-1440.png",
+        "question-calcium-phosphorus-097-correct-1440.png",
+        "question-calcium-phosphorus-100-correct-1440.png",
+        "question-calcium-phosphorus-106-correct-1440.png",
+        "question-calcium-phosphorus-malignancy-renal-regimen-correct-1440.png",
+        "check-hypercalcemia-incorrect-1440.png",
+        "check-hypercalcemia-correct-1440.png",
+        "body-module-Determine-severity-and-mechanism-390.png",
+        "body-module-Match-onset-to-the-clinical-need-390.png",
+        "body-module-Treat-the-source-390.png",
+        "body-module-Reconcile-the-product-and-indication-before-dosing-390.png",
+        "body-module-Plan-safety-and-reassess-recurrent-disease-390.png",
+        "figure-hypercalcemia-390.png",
+        "references-module-390.png",
+        "question-calcium-phosphorus-malignancy-product-regimen-incorrect-390.png",
+        "question-calcium-phosphorus-027-incorrect-390.png",
+        "question-calcium-phosphorus-028-incorrect-390.png",
+        "question-calcium-phosphorus-029-incorrect-390.png",
+        "question-calcium-phosphorus-030-incorrect-390.png",
+        "question-calcium-phosphorus-031-incorrect-390.png",
+        "question-calcium-phosphorus-032-incorrect-390.png",
+        "question-calcium-phosphorus-033-incorrect-390.png",
+        "question-calcium-phosphorus-034-incorrect-390.png",
+        "question-calcium-phosphorus-091-incorrect-390.png",
+        "question-calcium-phosphorus-097-incorrect-390.png",
+        "question-calcium-phosphorus-100-incorrect-390.png",
+        "question-calcium-phosphorus-106-incorrect-390.png",
+        "question-calcium-phosphorus-malignancy-renal-regimen-incorrect-390.png",
+        "check-hypercalcemia-incorrect-390.png",
+        "check-hypercalcemia-correct-390.png",
+        "cumulative-026-incorrect-1440.png",
+        "cumulative-026-correct-1440.png",
+        "cumulative-026-incorrect-390.png",
+        "cumulative-026-correct-390.png"
+      ]
+    },
+    "visualInspection": {
+      "status": "passed",
+      "rawCaptureCountActuallyInspected": 57,
+      "nativePairsActuallyViewed": 25,
+      "pairsActuallyViewed": [
+        {
+          "pair": "pair-body-module-Determine-severity-and-mechanism.png",
+          "originals": [
+            "body-module-Determine-severity-and-mechanism-1440.png",
+            "body-module-Determine-severity-and-mechanism-390.png"
+          ]
+        },
+        {
+          "pair": "pair-body-module-Match-onset-to-the-clinical-need.png",
+          "originals": [
+            "body-module-Match-onset-to-the-clinical-need-1440.png",
+            "body-module-Match-onset-to-the-clinical-need-390.png"
+          ]
+        },
+        {
+          "pair": "pair-body-module-Plan-safety-and-reassess-recurrent-disease.png",
+          "originals": [
+            "body-module-Plan-safety-and-reassess-recurrent-disease-1440.png",
+            "body-module-Plan-safety-and-reassess-recurrent-disease-390.png"
+          ]
+        },
+        {
+          "pair": "pair-body-module-Reconcile-the-product-and-indication-before-dosing.png",
+          "originals": [
+            "body-module-Reconcile-the-product-and-indication-before-dosing-1440.png",
+            "body-module-Reconcile-the-product-and-indication-before-dosing-390.png"
+          ]
+        },
+        {
+          "pair": "pair-body-module-Treat-the-source.png",
+          "originals": [
+            "body-module-Treat-the-source-1440.png",
+            "body-module-Treat-the-source-390.png"
+          ]
+        },
+        {
+          "pair": "pair-check-hypercalcemia-correct.png",
+          "originals": [
+            "check-hypercalcemia-correct-1440.png",
+            "check-hypercalcemia-correct-390.png"
+          ]
+        },
+        {
+          "pair": "pair-check-hypercalcemia-incorrect.png",
+          "originals": [
+            "check-hypercalcemia-incorrect-1440.png",
+            "check-hypercalcemia-incorrect-390.png"
+          ]
+        },
+        {
+          "pair": "pair-cumulative-026-correct.png",
+          "originals": [
+            "cumulative-026-correct-1440.png",
+            "cumulative-026-correct-390.png"
+          ]
+        },
+        {
+          "pair": "pair-cumulative-026-incorrect.png",
+          "originals": [
+            "cumulative-026-incorrect-1440.png",
+            "cumulative-026-incorrect-390.png"
+          ]
+        },
+        {
+          "pair": "pair-figure-hypercalcemia.png",
+          "originals": [
+            "figure-hypercalcemia-1440.png",
+            "figure-hypercalcemia-390.png"
+          ]
+        },
+        {
+          "pair": "pair-question-calcium-phosphorus-027-correct.png",
+          "originals": [
+            "question-calcium-phosphorus-027-correct-1440.png",
+            "question-calcium-phosphorus-027-incorrect-390.png"
+          ]
+        },
+        {
+          "pair": "pair-question-calcium-phosphorus-028-correct.png",
+          "originals": [
+            "question-calcium-phosphorus-028-correct-1440.png",
+            "question-calcium-phosphorus-028-incorrect-390.png"
+          ]
+        },
+        {
+          "pair": "pair-question-calcium-phosphorus-029-correct.png",
+          "originals": [
+            "question-calcium-phosphorus-029-correct-1440.png",
+            "question-calcium-phosphorus-029-incorrect-390.png"
+          ]
+        },
+        {
+          "pair": "pair-question-calcium-phosphorus-030-correct.png",
+          "originals": [
+            "question-calcium-phosphorus-030-correct-1440.png",
+            "question-calcium-phosphorus-030-incorrect-390.png"
+          ]
+        },
+        {
+          "pair": "pair-question-calcium-phosphorus-031-correct.png",
+          "originals": [
+            "question-calcium-phosphorus-031-correct-1440.png",
+            "question-calcium-phosphorus-031-incorrect-390.png"
+          ]
+        },
+        {
+          "pair": "pair-question-calcium-phosphorus-032-correct.png",
+          "originals": [
+            "question-calcium-phosphorus-032-correct-1440.png",
+            "question-calcium-phosphorus-032-incorrect-390.png"
+          ]
+        },
+        {
+          "pair": "pair-question-calcium-phosphorus-033-correct.png",
+          "originals": [
+            "question-calcium-phosphorus-033-correct-1440.png",
+            "question-calcium-phosphorus-033-incorrect-390.png"
+          ]
+        },
+        {
+          "pair": "pair-question-calcium-phosphorus-034-correct.png",
+          "originals": [
+            "question-calcium-phosphorus-034-correct-1440.png",
+            "question-calcium-phosphorus-034-incorrect-390.png"
+          ]
+        },
+        {
+          "pair": "pair-question-calcium-phosphorus-091-correct.png",
+          "originals": [
+            "question-calcium-phosphorus-091-correct-1440.png",
+            "question-calcium-phosphorus-091-incorrect-390.png"
+          ]
+        },
+        {
+          "pair": "pair-question-calcium-phosphorus-097-correct.png",
+          "originals": [
+            "question-calcium-phosphorus-097-correct-1440.png",
+            "question-calcium-phosphorus-097-incorrect-390.png"
+          ]
+        },
+        {
+          "pair": "pair-question-calcium-phosphorus-100-correct.png",
+          "originals": [
+            "question-calcium-phosphorus-100-correct-1440.png",
+            "question-calcium-phosphorus-100-incorrect-390.png"
+          ]
+        },
+        {
+          "pair": "pair-question-calcium-phosphorus-106-correct.png",
+          "originals": [
+            "question-calcium-phosphorus-106-correct-1440.png",
+            "question-calcium-phosphorus-106-incorrect-390.png"
+          ]
+        },
+        {
+          "pair": "pair-question-calcium-phosphorus-malignancy-product-regimen-correct.png",
+          "originals": [
+            "question-calcium-phosphorus-malignancy-product-regimen-correct-1440.png",
+            "question-calcium-phosphorus-malignancy-product-regimen-incorrect-390.png"
+          ]
+        },
+        {
+          "pair": "pair-question-calcium-phosphorus-malignancy-renal-regimen-correct.png",
+          "originals": [
+            "question-calcium-phosphorus-malignancy-renal-regimen-correct-1440.png",
+            "question-calcium-phosphorus-malignancy-renal-regimen-incorrect-390.png"
+          ]
+        },
+        {
+          "pair": "pair-references-module.png",
+          "originals": [
+            "references-module-1440.png",
+            "references-module-390.png"
+          ]
+        }
+      ],
+      "supplementalViewportCapturesActuallyViewed": [
+        "reference-header-1440.png",
+        "reference-header-390.png",
+        "body-viewport-Determine-severity-and-mechanism-1440.png",
+        "body-viewport-Match-onset-to-the-clinical-need-1440.png",
+        "body-viewport-Plan-safety-and-reassess-recurrent-disease-1440.png",
+        "body-viewport-Reconcile-the-product-and-indication-before-dosing-1440.png",
+        "body-viewport-Treat-the-source-1440.png"
+      ],
+      "inspection": "Five complete scoped teaching bodies, all four figure cards,14whole question stems/options/feedback, check bothstates, cumulative026 smoke bothstates and references inspected at desktop/mobile size.320px document overflow check passed.",
+      "captureCorrection": "Mobile reference heading in full-section capture was beneath existing sticky navigation; actual viewport supplemental captures show full heading/intro. Five desktop body viewport supplements resolve uncertainty about element-crop edges; all scoped text is visible. No UI hidden for QA.",
+      "finalRerenderPixelComparison": {
+        "all50FinalBrowserCapturesComparedAgainstEarlierViewedPixels": true,
+        "unchangedPixelCaptureCount": 45,
+        "changedPixelCapturesActuallyReinspected": [
+          "question-calcium-phosphorus-030-correct-1440.png",
+          "question-calcium-phosphorus-031-correct-1440.png",
+          "question-calcium-phosphorus-030-incorrect-390.png",
+          "question-calcium-phosphorus-031-incorrect-390.png",
+          "question-calcium-phosphorus-106-incorrect-390.png"
+        ],
+        "twoFinalWordingQuestionPairsAnd106MobileReinspected": true
+      },
+      "untouchedContent": "Other module/lesson DOM checks and cumulative026 provide technical evidence only, not newly counted clinical verification."
+    },
+    "limits": "Unauthenticated isolated preview. Untouched DOM is technical evidence only; full lesson/parent/EN/chapter or production publication not established."
+  },
+  "remainingReview": {
+    "questionIds": [
+      "calcium-phosphorus-035"
+    ],
+    "bodyHeadings": [
+      "Restore volume thoughtfully"
+    ],
+    "metadataVerified": true,
+    "wholeLessonPending": true,
+    "nextAction": "Continue calcium/phosphorus review. Additional primary nephrology source authorization for retained hypercalcemia dialysis/fluids-intolerance claim remains pending; question035 and Restore volume thoughtfully body remain unverified as whole items. The earlier2022International Task Force chronic hypoparathyroidism source request also remains pending direct approval; preserve pending hypocalcemia008/023/095, Correct the mechanism and Protect the kidney during chronic therapy bodies and chronic key point. Continue independent approved/book-supported work: reconcile remaining acute phosphate body and aluminum question050 before CKD closure, then finish calcium parent and EN reintegration. Earliest sequential checkpoint remains Chapter1 printed7/PDF19 formula entry15 fluid needs with Chapter11 feeding dependencies. Full82-chapter goal remains active."
+  },
+  "release": {
+    "branch": "audit/rxprep-content-2026-09-24",
+    "commit": null,
+    "push": "pending",
+    "receipt": "enteral-nutrition-broader-hypercalcemia-release.json",
+    "mainMerge": "not performed",
+    "production": "not verified"
+  },
+  "wholeGoalComplete": false
+}

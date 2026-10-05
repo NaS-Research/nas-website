@@ -202,7 +202,41 @@
         },
         {
           "slug": "hypercalcemia",
-          "status": "unreviewed"
+          "status": "reviewing",
+          "latestScopedEvidence": "enteral-nutrition-broader-hypercalcemia-review.json",
+          "wholeLessonVerified": false,
+          "verifiedQuestionIds": [
+            "calcium-phosphorus-027",
+            "calcium-phosphorus-028",
+            "calcium-phosphorus-029",
+            "calcium-phosphorus-030",
+            "calcium-phosphorus-031",
+            "calcium-phosphorus-032",
+            "calcium-phosphorus-033",
+            "calcium-phosphorus-034",
+            "calcium-phosphorus-091",
+            "calcium-phosphorus-097",
+            "calcium-phosphorus-100",
+            "calcium-phosphorus-106",
+            "calcium-phosphorus-malignancy-product-regimen",
+            "calcium-phosphorus-malignancy-renal-regimen"
+          ],
+          "remainingQuestionIds": [
+            "calcium-phosphorus-035"
+          ],
+          "verifiedBodyHeadings": [
+            "Determine severity and mechanism",
+            "Match onset to the clinical need",
+            "Treat the source",
+            "Reconcile the product and indication before dosing",
+            "Plan safety and reassess recurrent disease"
+          ],
+          "remainingBodyHeadings": [
+            "Restore volume thoughtfully"
+          ],
+          "embeddedCheckVerified": true,
+          "figureVerified": true,
+          "metadataVerified": true
         },
         {
           "slug": "hypophosphatemia",
@@ -294,7 +328,8 @@
         "enteral-nutrition-broader-phosphate-physiology-review.json",
         "enteral-nutrition-broader-calcium-measurement-book-review.json",
         "enteral-nutrition-broader-ckd-binder-review.json",
-        "enteral-nutrition-broader-acute-hypocalcemia-review.json"
+        "enteral-nutrition-broader-acute-hypocalcemia-review.json",
+        "enteral-nutrition-broader-hypercalcemia-review.json"
       ],
       "latestPhosphateRouteLabelReview": {
         "evidence": "enteral-nutrition-broader-phosphate-route-label-review.json",
@@ -602,6 +637,61 @@
         "all104OriginalIdsKeysCorrectTextsAnchorsRelativeOrderPreserved": true,
         "fiveOriginalCumulativeSelectionsPreserved": true,
         "other1179CumulativeWholeObjectsUnchanged": true
+      },
+      "latestHypercalcemiaReview": {
+        "evidence": "enteral-nutrition-broader-hypercalcemia-review.json",
+        "moduleBankBefore": 106,
+        "moduleBankAfter": 108,
+        "wholeQuestionsVerified": 14,
+        "existingQuestionsNewlyVerified": 12,
+        "newDistinctQuestionsAdded": 2,
+        "sourceVerifiedBankIds": [
+          "calcium-phosphorus-027",
+          "calcium-phosphorus-028",
+          "calcium-phosphorus-029",
+          "calcium-phosphorus-030",
+          "calcium-phosphorus-031",
+          "calcium-phosphorus-032",
+          "calcium-phosphorus-033",
+          "calcium-phosphorus-034",
+          "calcium-phosphorus-091",
+          "calcium-phosphorus-097",
+          "calcium-phosphorus-100",
+          "calcium-phosphorus-106",
+          "calcium-phosphorus-malignancy-product-regimen",
+          "calcium-phosphorus-malignancy-renal-regimen"
+        ],
+        "broaderFeedingBankVerifiedAfter": 299,
+        "wholeBodiesVerified": 5,
+        "retainedWholeBodiesReconciled": 3,
+        "newWholeBodiesAdded": 2,
+        "sourceVerifiedBodyHeadings": [
+          "Determine severity and mechanism",
+          "Match onset to the clinical need",
+          "Treat the source",
+          "Reconcile the product and indication before dosing",
+          "Plan safety and reassess recurrent disease"
+        ],
+        "embeddedCheckVerified": true,
+        "figureVerified": true,
+        "derivedHypercalcemiaCumulativePresent": false,
+        "newlyCountedCumulativeQuestions": 0,
+        "lessonQuestionsVerified": 14,
+        "lessonQuestionTotal": 15,
+        "remainingQuestionIds": [
+          "calcium-phosphorus-035"
+        ],
+        "remainingBodyHeadings": [
+          "Restore volume thoughtfully"
+        ],
+        "wholeLessonMetadataVerified": true,
+        "wholeLessonVerified": false,
+        "wholeParentModuleVerified": false,
+        "wholeENModuleVerified": false,
+        "wholeChaptersVerified": false,
+        "all106OriginalIdsKeysCorrectTextsAnchorsRelativeOrderPreserved": true,
+        "fiveOriginalCumulativeSelectionsPreserved": true,
+        "all1180CumulativeWholeObjectsUnchanged": true
       }
     },
     {
