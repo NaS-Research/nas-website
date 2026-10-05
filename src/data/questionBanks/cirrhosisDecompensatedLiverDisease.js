@@ -466,3 +466,165 @@ Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => 
   ],
   "rationale": "Total protein alone is an inadequate primary classifier. SAAG below 1.1 g/dL prompts evaluation for causes such as peritoneal malignancy or tuberculosis, with targeted tests guided by the clinical context. It does not prove a specific diagnosis; the other plans appropriately refine the cause."
 });
+
+// Reconcile every complete treatment and paracentesis bank object while retaining IDs, keys and lesson links.
+Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => question.id === "cirrhosis-decompensated-029"), {
+  "question": "Which explanation best accounts for ascites together with impaired kidney perfusion in cirrhosis?",
+  "choices": [
+    "Portal hypertension and vasodilation activate sodium retention despite excess visible fluid.",
+    "Visible fluid excess guarantees adequate effective arterial blood volume.",
+    "Ascites is caused only by excess water intake, independent of sodium retention.",
+    "Peripheral edema excludes neurohormonal sodium retention."
+  ],
+  "rationale": "Portal hypertension and vasodilation reduce effective arterial filling and activate sodium-retaining pathways. Ascites or edema therefore does not guarantee adequate kidney perfusion. Water intake alone is an incomplete explanation."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => question.id === "cirrhosis-decompensated-030"), {
+  "question": "A patient’s food intake has fallen after receiving very restrictive diet instructions for cirrhotic ascites. Which plan best supports both ascites control and nutrition?",
+  "choices": [
+    "Use achievable sodium restriction of about 2 g/day with dietitian support and adequate calories and protein.",
+    "Eliminate dietary sodium completely even if calorie intake falls further.",
+    "Restrict protein routinely because all ascites requires protein avoidance.",
+    "Replace sodium counseling with routine severe water restriction despite normal serum sodium."
+  ],
+  "rationale": "Moderate sodium restriction supports negative sodium balance while preserving adequate nutrition. Extreme restrictions that undermine intake are counterproductive. Normal sodium does not justify routine severe fluid restriction, and ascites alone does not require protein avoidance."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => question.id === "cirrhosis-decompensated-031"), {
+  "question": "A patient with moderate ascites has serum sodium 138 mmol/L and stable kidney function. Which fluid instruction is best?",
+  "choices": [
+    "Routine fluid restriction is unnecessary; focus on sodium restriction and monitored diuretic therapy.",
+    "Limit all fluids to 500 mL/day solely because ascites is present.",
+    "Use fluid restriction instead of dietary sodium restriction.",
+    "Withhold all oral fluids until the ascites disappears."
+  ],
+  "rationale": "Normal serum sodium does not justify routine fluid restriction for ascites. Sodium restriction and individualized diuretics address retained sodium. Fluid restriction is reserved for selected clinically important dilutional hyponatremia, after considering volume status."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => question.id === "cirrhosis-decompensated-032"), {
+  "question": "A patient develops hypovolemic hyponatremia after excessive diuresis. Which instruction creates the greatest avoidable risk?",
+  "choices": [
+    "Automatically impose severe fluid restriction without addressing diuretic-related volume depletion.",
+    "Reassess and stop the excessive diuretic exposure as indicated.",
+    "Restore volume under clinical supervision.",
+    "Arrange urgent assessment if severe symptoms accompany the low sodium."
+  ],
+  "rationale": "Hypovolemic hyponatremia requires correction of the volume-depleting cause and supervised volume restoration. Blind fluid restriction can worsen the depleted state. Fluid restriction for dilutional hypervolemic hyponatremia is a different treatment context."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => question.id === "cirrhosis-decompensated-033"), {
+  "question": "Which initial tablet regimen represents the common paired approach to cirrhotic ascites?",
+  "choices": [
+    "Spironolactone 100 mg/day plus furosemide 40 mg/day, adjusted to response and tolerance.",
+    "Spironolactone 40 mg/day plus furosemide 100 mg/day as the standard 100:40 pair.",
+    "Furosemide 400 mg/day plus spironolactone 160 mg/day as routine starting doses.",
+    "An NSAID plus furosemide to promote sodium excretion."
+  ],
+  "rationale": "The common initial pair is spironolactone 100 mg/day with furosemide 40 mg/day. Aldosterone blockade addresses a central sodium-retaining pathway. The other doses reverse the relationship or misapply ceilings, and NSAIDs can worsen retention and kidney function."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => question.id === "cirrhosis-decompensated-034"), {
+  "question": "The clinician plans to increase spironolactone tablets from 100 to 200 mg/day while preserving the usual 100:40 paired relationship. Which furosemide dose matches that plan?",
+  "choices": [
+    "80 mg/day.",
+    "20 mg/day.",
+    "200 mg/day.",
+    "400 mg/day."
+  ],
+  "rationale": "The scale factor is 200 ÷ 100 = 2. Furosemide 40 × 2 = 80 mg/day. This is a ratio calculation, not an instruction to increase treatment regardless of potassium, kidney function, blood pressure or weight response."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => question.id === "cirrhosis-decompensated-035"), {
+  "question": "A patient on spironolactone develops hyperkalemia after starting a potassium-containing salt substitute. Which plan is best?",
+  "choices": [
+    "Stop the unprescribed potassium source, assess urgency and reduce or discontinue spironolactone as indicated while treating hyperkalemia.",
+    "Continue both products because the paired diuretic ratio guarantees normal potassium.",
+    "Increase spironolactone to correct hyperkalemia.",
+    "Delay all potassium testing until ascites has fully resolved."
+  ],
+  "rationale": "Spironolactone and potassium-containing salt substitutes can contribute to hyperkalemia. The patient requires assessment, treatment and medication adjustment. A dose ratio does not guarantee safe electrolytes; the CaroSpir label requires early and regular potassium monitoring."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => question.id === "cirrhosis-decompensated-036"), {
+  "question": "A patient taking Aldactone tablets 200 mg/day is changed to CaroSpir suspension. Which proposed order creates the greatest avoidable risk?",
+  "choices": [
+    "Automatically prescribe CaroSpir 200 mg/day as a therapeutically equivalent substitution.",
+    "Verify the formulation-specific label before selecting the dose.",
+    "Use another formulation if a spironolactone dose above 100 mg is required.",
+    "Take CaroSpir consistently with respect to food."
+  ],
+  "rationale": "CaroSpir is not therapeutically equivalent to Aldactone, and suspension doses above 100 mg can produce higher-than-expected exposure. Its label directs use of another formulation when more than 100 mg is needed. Automatic milligram-for-milligram substitution is unsafe."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => question.id === "cirrhosis-decompensated-037"), {
+  "question": "A patient has symptomatic tense grade 3 ascites. Which treatment best addresses prompt fluid relief?",
+  "choices": [
+    "Therapeutic paracentesis with indicated albumin and diagnostic testing when required.",
+    "Wait for maximum diuretic doses even if they cause hypotension.",
+    "Use an NSAID to improve diuretic response.",
+    "Omit all infection assessment because draining fluid excludes SBP."
+  ],
+  "rationale": "Tense ascites is an indication for paracentesis with indicated albumin. Treatment should not be delayed for unsafe dose escalation. Diagnostic sampling remains important when indicated; drainage alone does not exclude infection."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => question.id === "cirrhosis-decompensated-038"), {
+  "question": "After removal of 8 L of ascites, the protocol specifies albumin 8 g/L. How many grams should be administered?",
+  "choices": [
+    "64 g.",
+    "24 g.",
+    "8 g.",
+    "40 g."
+  ],
+  "rationale": "Use the total drained volume: 8 L × 8 g/L = 64 g. The 5 L threshold triggers replacement; it is not subtracted. Twenty-four grams would result from incorrectly dosing only the 3 L above the threshold."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => question.id === "cirrhosis-decompensated-039"), {
+  "question": "A patient with AKI and low blood pressure undergoes removal of 4 L of ascites. Which albumin assessment is best?",
+  "choices": [
+    "Consider albumin because the patient’s circulatory and kidney risks can justify replacement below the usual volume trigger.",
+    "Prohibit albumin whenever the volume is 5 L or less.",
+    "Decide solely from the low serum albumin concentration without assessing circulation.",
+    "Assume a small-volume tap eliminates the need for kidney and pressure follow-up."
+  ],
+  "rationale": "Smaller-volume drainage does not automatically exclude albumin. AASLD guidance advises strong consideration with hemodynamic instability, AKI or hyponatremia. Volume removed, clinical risks and follow-up should be assessed together."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => question.id === "cirrhosis-decompensated-040"), {
+  "question": "Which albumin calculation after an 8 L tap would underdose the stated 6 to 8 g/L replacement regimen?",
+  "choices": [
+    "18 to 24 g after subtracting the first 5 L.",
+    "48 g using 6 g/L for all 8 L.",
+    "64 g using 8 g/L for all 8 L.",
+    "48 to 64 g using the total removed volume."
+  ],
+  "rationale": "The first 5 L is not deducted. For all 8 L, 6 to 8 g/L gives 48 to 64 g. Dosing only the 3 L above the trigger produces 18 to 24 g and underdoses this regimen."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => question.id === "cirrhosis-decompensated-041"), {
+  "question": "Ascites remains difficult to control because diuretics repeatedly cause hypotension and AKI before conventional maximum doses are reached. Which classification best fits?",
+  "choices": [
+    "Diuretic-intractable ascites, because adverse effects prevent effective dosing.",
+    "Diuretic-resistant ascites proven solely by a low starting dose.",
+    "Responsive ascites, because a maximum dose has not been attempted.",
+    "No refractory category is possible until both drugs reach their ceilings."
+  ],
+  "rationale": "Adverse effects that preclude effective diuretic dosing fit diuretic-intractable disease. Diuretic resistance describes inadequate response despite appropriate tolerated treatment. Maximum doses should not be forced through kidney injury or hypotension."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => question.id === "cirrhosis-decompensated-042"), {
+  "question": "A patient has persistent ascites despite diuretics. Urine sodium suggests substantial excretion, but weight is unchanged. Which step best evaluates apparent treatment failure?",
+  "choices": [
+    "Review hidden dietary sodium and confirm intake, urine collection quality, kidney function and medication use.",
+    "Diagnose irreversible diuretic resistance from the weight value alone.",
+    "Immediately exceed conventional ascites dose ceilings without safety assessment.",
+    "Stop dietary counseling because urine sodium excludes excess intake."
+  ],
+  "rationale": "Persistent fluid despite substantial sodium excretion raises concern that intake offsets the loss. Review hidden sodium and interpret urine data with renal function and collection quality. A single weight or urine result does not establish irreversible resistance or justify unsafe escalation."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => question.id === "cirrhosis-decompensated-043"), {
+  "question": "A patient with refractory ascites is being considered for elective TIPS. Which evaluation is best?",
+  "choices": [
+    "Assess liver severity, cardiac and pulmonary function, infection, encephalopathy risk and follow-up support with a multidisciplinary team.",
+    "Approve TIPS solely because one MELD score is below a fixed cutoff.",
+    "Assume TIPS cannot worsen encephalopathy.",
+    "Ignore severe heart failure because the procedure treats portal pressure."
+  ],
+  "rationale": "TIPS selection must consider multiple organ systems and encephalopathy risk. North American guidance favors multidisciplinary assessment over an absolute MELD cutoff. Severe heart failure and other major contraindications can preclude elective TIPS despite a seemingly favorable score."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => question.id === "cirrhosis-decompensated-044"), {
+  "question": "A patient needs repeated taps for refractory ascites and improves after each drainage. Which plan creates the greatest avoidable risk?",
+  "choices": [
+    "Defer transplant and advanced-therapy assessment indefinitely because each tap briefly relieves symptoms.",
+    "Refer for liver-transplant evaluation while continuing symptom relief.",
+    "Assess whether TIPS is appropriate after reviewing contraindications.",
+    "Coordinate recurrence follow-up, nutrition and the patient’s goals."
+  ],
+  "rationale": "Temporary symptom relief does not remove the prognostic importance of refractory ascites. Continue relief while evaluating transplant and selected advanced options. Delaying that assessment indefinitely can miss an appropriate treatment pathway."
+});

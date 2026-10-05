@@ -295,3 +295,127 @@ cirrhosisDecompensatedLiverDiseaseModule.references.push(...[
     "href": "https://www.hepatitisc.uw.edu/go/management-cirrhosis-related-complications/ascites-diagnosis-management/core-concept/1/1/"
   }
 ]);
+
+// Reconcile complete ascites treatment and paracentesis lessons with formulation and total-volume distinctions.
+Object.assign(cirrhosisDecompensatedLiverDiseaseModule.submodules.find((lesson) => lesson.slug === "ascites-treatment").lesson.find((body) => body.heading === "Remove aggravators"), {
+  "body": "Ascites reflects portal hypertension, vasodilation and neurohormonal sodium retention; visible fluid excess can coexist with reduced effective arterial volume. Avoid NSAIDs, which promote sodium retention and kidney injury. Review ACE inhibitors, ARBs and other drugs that can worsen perfusion, as well as supplements, alcohol and hidden dietary sodium. Reconcile prescribed and nonprescribed drugs before increasing diuretics."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseModule.submodules.find((lesson) => lesson.slug === "ascites-treatment").lesson.find((body) => body.heading === "Use paired diuresis"), {
+  "body": "A common initial tablet regimen is spironolactone 100 mg/day with furosemide 40 mg/day. Aldosterone blockade alone may suffice for a first episode; longstanding ascites often responds better to the combination. If both drugs are increased while preserving the 100:40 relationship, 200 mg/day pairs with 80 mg/day. Titrate to response and tolerance, not the ratio alone. Guidance uses conventional ascites ceilings of spironolactone 400 mg/day and furosemide 160 mg/day; these are not mandatory targets. Allow at least 72 hours between spironolactone dose increases to assess its delayed effect."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseModule.submodules.find((lesson) => lesson.slug === "ascites-treatment").lesson.find((body) => body.heading === "Set a safe pace"), {
+  "body": "Measure weight daily at the same time and assess edema, blood pressure, symptoms, kidney function, sodium and potassium. Without peripheral edema, limit weight loss to about 0.5 kg/day; with peripheral edema, up to 1 kg/day may be tolerated if circulation, kidneys and electrolytes remain stable. A loss of 0.8 kg/day without edema exceeds the usual safety limit. Hypotension, AKI, important sodium or potassium disturbances, severe cramps or worsening encephalopathy require prompt reassessment and possible dose reduction or interruption. Once ascites is controlled, taper to the lowest effective doses."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseModule.submodules.find((lesson) => lesson.slug === "ascites-treatment").lesson.find((body) => body.heading === "Restrict water selectively"), {
+  "body": "Routine fluid restriction is unnecessary when ascites is accompanied by normal serum sodium. Consider it for dilutional, hypervolemic hyponatremia, particularly at serum sodium ≤125 mmol/L, with the volume target and other treatment individualized to severity and symptoms. Low sodium from excessive diuresis with hypovolemia instead calls for stopping the cause and restoring volume under clinical supervision. Severe or symptomatic hyponatremia requires urgent assessment and controlled correction; do not automatically prescribe the same water limit for every low sodium result."
+});
+cirrhosisDecompensatedLiverDiseaseModule.submodules.find((lesson) => lesson.slug === "ascites-treatment").lesson.push(...[
+  {
+    "heading": "Balance sodium and nutrition",
+    "body": "Aim for moderate sodium restriction of about 2 g/day, with practical advice on prepared foods, added salt and label reading. Preserve adequate calories and protein; an excessively unpalatable diet can worsen intake and malnutrition. A dietitian can help make sodium restriction achievable. Sodium restriction targets retained sodium, whereas fluid restriction targets selected hyponatremia; they are not interchangeable instructions."
+  },
+  {
+    "heading": "Distinguish the suspension",
+    "body": "CaroSpir oral suspension contains 25 mg/5 mL, or 5 mg/mL, and is not therapeutically equivalent to Aldactone tablets. Its label recommends an initial daily dose of 75 mg (15 mL) for edema associated with hepatic cirrhosis, initiated in a hospital setting and titrated slowly. If it is the sole diuretic, allow at least five days before increasing the dose. Use another formulation if more than 100 mg is required. Take it consistently with respect to food; do not copy the tablet dose schedule into a suspension order."
+  },
+  {
+    "heading": "Make monitoring actionable",
+    "body": "Check sodium, potassium and kidney function regularly, especially early in treatment and after changes. The CaroSpir label calls for potassium measurement within one week of initiation or titration and regularly thereafter, with closer monitoring for impaired renal function or interacting drugs. Hyperkalemia requires dose reduction or discontinuation and treatment. Avoid potassium supplements and potassium-containing salt substitutes unless specifically directed. CaroSpir is contraindicated with hyperkalemia, Addison disease or concomitant eplerenone. Spironolactone can cause gynecomastia; report troublesome effects so the regimen can be reassessed."
+  }
+]);
+Object.assign(cirrhosisDecompensatedLiverDiseaseModule.submodules.find((lesson) => lesson.slug === "ascites-treatment"), {
+  "summary": "Reduce retained sodium while protecting perfusion, electrolytes and nutrition; match the diuretic plan to the patient and formulation.",
+  "concepts": [
+    "Sodium and nutrition",
+    "Tablet diuresis",
+    "Weight-loss limits",
+    "Selective fluid restriction",
+    "CaroSpir dosing"
+  ],
+  "application": "Use daily weight and edema with blood pressure, kidney function, sodium, potassium and medication review to adjust treatment safely; verify the formulation before prescribing.",
+  "keyPoints": [
+    "Aim for about 2 g/day of sodium while preserving nutrition.",
+    "A common tablet pair is spironolactone 100 mg/day and furosemide 40 mg/day.",
+    "Weight-loss limits differ with and without peripheral edema.",
+    "Fluid restriction depends on hyponatremia and volume status.",
+    "CaroSpir has distinct dosing and monitoring instructions."
+  ]
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseModule.submodules.find((lesson) => lesson.slug === "ascites-treatment").check, {
+  "question": "A patient without peripheral edema loses 0.8 kg/day on diuretics and develops dizziness with rising creatinine. What is the best next step?",
+  "choices": [
+    "Promptly reassess volume and kidney function and reduce or interrupt diuretics as indicated.",
+    "Continue unchanged because any weight loss confirms safe ascites treatment.",
+    "Increase both diuretics until their maximum doses are reached.",
+    "Add routine severe water restriction without assessing sodium or volume status."
+  ],
+  "rationale": "Without peripheral edema, usual weight loss should not exceed about 0.5 kg/day. Dizziness and rising creatinine add concern for volume contraction and kidney injury. The regimen requires reassessment; a fixed dose ratio or visible fluid excess does not establish adequate perfusion."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseModule.submodules.find((lesson) => lesson.slug === "paracentesis-refractory").lesson.find((body) => body.heading === "Use paracentesis for relief"), {
+  "body": "Large-volume paracentesis with indicated albumin is the initial treatment for tense, grade 3 ascites and first-line symptom relief for refractory ascites. It need not wait for an unsafe trial of maximum diuretics. Diagnostic fluid testing remains a separate requirement when indicated; symptom relief does not exclude infection. Repeated taps may be appropriate when diuretics are ineffective or poorly tolerated, while a longer-term plan addresses recurrence."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseModule.submodules.find((lesson) => lesson.slug === "paracentesis-refractory").lesson.find((body) => body.heading === "Replace effective volume"), {
+  "body": "When more than 5 L of ascites is removed, administer intravenous albumin at 6 to 8 g for every liter of the total volume removed to reduce post-paracentesis circulatory dysfunction. Five liters is the usual trigger for replacement, not an amount to subtract before calculating the dose. Circulatory dysfunction can lead to renal impairment and dilutional hyponatremia. For smaller-volume taps, albumin may still be appropriate with hypotension, AKI or hyponatremia; the threshold does not replace individual risk assessment."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseModule.submodules.find((lesson) => lesson.slug === "paracentesis-refractory").lesson.find((body) => body.heading === "Define refractory disease"), {
+  "body": "Refractory ascites cannot be adequately mobilized, or recurs early after drainage despite medical therapy. Distinguish diuretic-resistant disease, with inadequate response despite appropriate sodium restriction and tolerated treatment, from diuretic-intractable disease, in which adverse effects prevent effective dosing. Confirm sodium exposure, medication use, dose and response, kidney function, blood pressure and competing causes. Urine sodium can help assess sodium balance, but interpret it with intake, renal function and collection quality. Do not force maximum doses through hypotension, AKI or severe electrolyte abnormalities."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseModule.submodules.find((lesson) => lesson.slug === "paracentesis-refractory").lesson.find((body) => body.heading === "Select advanced options"), {
+  "body": "A transjugular intrahepatic portosystemic shunt (TIPS) reduces portal pressure and can improve ascites control in carefully selected patients. Assess liver severity, cardiac function, pulmonary pressures, infection, encephalopathy risk and support for follow-up. Severe heart failure, severe untreated valvular disease, moderate or severe pulmonary hypertension despite optimization, uncontrolled systemic infection or refractory overt encephalopathy can preclude elective TIPS. Use multidisciplinary assessment rather than one absolute MELD cutoff. Refractory ascites should prompt liver-transplant referral; symptom relief is not a reason to defer evaluation."
+});
+cirrhosisDecompensatedLiverDiseaseModule.submodules.find((lesson) => lesson.slug === "paracentesis-refractory").lesson.push(...[
+  {
+    "heading": "Calculate albumin from the total",
+    "body": "For a tap removing 8 L, the 6 to 8 g/L recommendation gives 8 × 6 = 48 g to 8 × 8 = 64 g of albumin. Calculating only the 3 L above the 5 L trigger would give 18 to 24 g and underdose this regimen. Specify grams in the order and use the selected product concentration to determine the infusion volume. The 6 to 8 g/L recommendation is based on expert guidance; it is not a precisely established dose-response optimum for every patient."
+  },
+  {
+    "heading": "Assess procedure safety",
+    "body": "For paracentesis, an elevated INR or low platelet count from cirrhosis alone does not routinely require prophylactic plasma or platelet transfusion. These findings are not automatic contraindications to a needed tap. Evaluate actual bleeding risk and special situations such as disseminated intravascular coagulation or uremia with thrombocytopenia with the procedural team. Review blood pressure, symptoms, sodium and kidney function after drainage and albumin administration; fluid removal still requires clinical follow-up."
+  },
+  {
+    "heading": "Plan beyond the next tap",
+    "body": "Continue achievable sodium restriction and individualize diuretics according to tolerance and response. Recurrent need for drainage should trigger hepatology review: North American TIPS recommendations support consideration in selected patients needing at least three large-volume taps for tense ascites in a year despite optimal medical therapy. TIPS response may take weeks to months, so follow-up remains necessary. Coordinate transplant evaluation, nutrition, recurrence management and the patient’s goals. Routine long-term albumin solely for recurrent ascites is a different intervention from replacement after a large-volume tap and is not established by this dosing rule."
+  }
+]);
+Object.assign(cirrhosisDecompensatedLiverDiseaseModule.submodules.find((lesson) => lesson.slug === "paracentesis-refractory"), {
+  "summary": "Relieve tense or refractory ascites, calculate albumin from the total drained volume and plan safely for recurrence, TIPS and transplant assessment.",
+  "concepts": [
+    "Tense ascites relief",
+    "Total-volume albumin",
+    "Resistant versus intractable",
+    "TIPS selection",
+    "Transplant referral"
+  ],
+  "application": "Pair drainage with indicated albumin and follow-up, confirm the reason for treatment failure and coordinate hepatology, TIPS and transplant evaluation.",
+  "keyPoints": [
+    "Tense and refractory ascites can require prompt paracentesis.",
+    "After removal of more than 5 L, dose albumin for the total liters removed.",
+    "Adverse effects can make ascites diuretic-intractable before maximum doses.",
+    "Cirrhosis-related INR or platelets alone do not require routine pre-tap transfusion.",
+    "TIPS candidacy requires assessment beyond one score."
+  ]
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseModule.submodules.find((lesson) => lesson.slug === "paracentesis-refractory").check, {
+  "question": "A therapeutic tap removes 8 L of ascites. Using the recommended 6 to 8 g/L albumin regimen, which dose range is correct?",
+  "choices": [
+    "48 to 64 g, calculated from all 8 L removed.",
+    "18 to 24 g, calculated only from the 3 L above 5 L.",
+    "6 to 8 g total, regardless of the volume removed.",
+    "No albumin because the first 5 L are excluded from replacement."
+  ],
+  "rationale": "8 L × 6 to 8 g/L = 48 to 64 g. Removal of more than 5 L triggers the usual replacement recommendation; the dose uses the total volume drained. Subtracting 5 L would underdose the stated regimen."
+});
+cirrhosisDecompensatedLiverDiseaseModule.references.push(...[
+  {
+    "label": "CaroSpir: Current DailyMed dosing and safety label",
+    "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c4f70a04-7d89-4b73-8b02-17d43471bf08"
+  },
+  {
+    "label": "FDA CaroSpir label: Formulation and cirrhosis dosing",
+    "href": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2023/209478s006lbl.pdf"
+  },
+  {
+    "label": "ALTA: North American TIPS recommendations",
+    "href": "https://doi.org/10.1016/j.cgh.2021.07.018"
+  }
+]);
