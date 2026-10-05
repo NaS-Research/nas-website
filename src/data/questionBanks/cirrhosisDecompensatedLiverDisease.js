@@ -750,3 +750,85 @@ Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => 
   ],
   "rationale": "Trimethoprim-sulfamethoxazole can cause hyperkalemia and needs renal and medication review; spironolactone adds potassium risk. Prophylaxis should be individualized and monitored, including its continued indication. A preventive dose does not eliminate adverse effects."
 });
+
+// Review complete HRS-AKI cases while preserving IDs, keys, difficulty and lesson links.
+Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => question.id === "cirrhosis-decompensated-057"), {
+  "question": "Creatinine rises from 0.8 to 1.1 mg/dL within 48 hours in a patient with cirrhosis. Which interpretation is best?",
+  "choices": [
+    "The 0.3 mg/dL rise meets an AKI criterion; its cause still needs evaluation.",
+    "AKI is excluded because creatinine remains below 1.5 mg/dL.",
+    "The change proves HRS-AKI without volume or source assessment.",
+    "The rise is 50%, so only the relative-rise criterion is met."
+  ],
+  "rationale": "The absolute rise is 1.1 − 0.8 = 0.3 mg/dL, which meets the 48-hour AKI criterion. The relative rise is 0.3 ÷ 0.8 = 37.5%, not 50%. Low creatinine can be misleading in cirrhosis; the AKI phenotype requires further evaluation."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => question.id === "cirrhosis-decompensated-058"), {
+  "question": "A patient with cirrhosis, ascites and AKI is euvolemic after assessment. Is a routine 48-hour albumin infusion required before considering HRS-AKI?",
+  "choices": [
+    "No; current criteria use prompt clinical assessment and response to resuscitation when it is indicated.",
+    "Yes; every patient must receive albumin for 48 hours regardless of volume.",
+    "Yes; fluid overload makes the diagnostic albumin infusion mandatory.",
+    "No; AKI alone proves HRS without evaluating alternative causes."
+  ],
+  "rationale": "ADQI-ICA 2024 recommends against systematic 48-hour albumin as a diagnostic prerequisite. Assess volume and alternative causes. When volume resuscitation is clinically indicated, absence of improvement within 24 hours contributes to the HRS-AKI criteria; euvolemia does not prove the diagnosis by itself."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => question.id === "cirrhosis-decompensated-059"), {
+  "question": "A patient with cirrhosis and ascites has pre-existing diabetic CKD and new AKI. Which diagnostic approach is best?",
+  "choices": [
+    "Evaluate competing causes and consider superimposed HRS-AKI or mixed injury.",
+    "Exclude HRS-AKI solely because CKD existed before admission.",
+    "Diagnose HRS-AKI solely from the cirrhosis history.",
+    "Treat proteinuria as proof that no hemodynamic component can coexist."
+  ],
+  "rationale": "Pre-existing CKD, proteinuria or tubular injury does not automatically exclude HRS-AKI in current consensus criteria. Determine the predominant explanation and assess possible coexistence. Neither cirrhosis nor CKD alone defines the acute cause."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => question.id === "cirrhosis-decompensated-060"), {
+  "question": "Which decision creates the greatest avoidable risk when evaluating AKI in cirrhosis?",
+  "choices": [
+    "Label every creatinine rise as HRS without evaluating shock, obstruction or nephrotoxic exposure.",
+    "Assess volume and treat true depletion when indicated.",
+    "Investigate infection and review medications promptly.",
+    "Consider HRS-AKI alongside other causes and revise the assessment with new evidence."
+  ],
+  "rationale": "HRS-AKI requires a clinical evaluation and no strong evidence for another primary explanation. Shock, obstruction and drug-related injury may require different urgent care. Volume assessment, infection treatment, medication review and reconsideration of mixed causes support the diagnostic process."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => question.id === "cirrhosis-decompensated-061"), {
+  "question": "An adult with suspected HRS-AKI has worsening respiratory symptoms and SpO₂ of 88%. Which TERLIVAZ decision is best?",
+  "choices": [
+    "Do not initiate during hypoxia; urgently evaluate oxygenation and the clinical cause.",
+    "Start immediately because HRS removes the respiratory contraindication.",
+    "Start if albumin is given first, regardless of oxygenation.",
+    "Start without oximetry because respiratory monitoring is optional."
+  ],
+  "rationale": "The US label contraindicates TERLIVAZ during hypoxia or worsening respiratory symptoms; SpO₂ below 90% is an explicit safety threshold. Assess volume and respiratory status and discuss suitable alternatives. Albumin and HRS severity do not remove the contraindication."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => question.id === "cirrhosis-decompensated-062"), {
+  "question": "On day 4 of US TERLIVAZ therapy, creatinine is unchanged from its pretreatment baseline. Which labeled dose decision applies?",
+  "choices": [
+    "Discontinue TERLIVAZ rather than escalating the dose.",
+    "Automatically double the dose because the decline is less than 30%.",
+    "Continue indefinitely until creatinine improves.",
+    "Use the SBP PMN 25% rule to decide the dose."
+  ],
+  "rationale": "The day-4 stop branch takes priority when creatinine is at or above the pretreatment baseline. Dose increase may be considered only when creatinine is below baseline but has fallen less than 30%. International consensus titration and SBP cell-count rules are different pathways."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => question.id === "cirrhosis-decompensated-063"), {
+  "question": "Pretreatment creatinine is 3.0 mg/dL and day-4 creatinine is 2.1 mg/dL on US TERLIVAZ. Safety assessment permits continued treatment. Which decision is best?",
+  "choices": [
+    "Continue 0.85 mg IV every 6 hours because creatinine has fallen exactly 30%.",
+    "Increase to 1.7 mg every 6 hours because a 30% fall is insufficient.",
+    "Discontinue because creatinine remains above 1.5 mg/dL.",
+    "Continue for at least 30 days regardless of response."
+  ],
+  "rationale": "The decline is (3.0 − 2.1) ÷ 3.0 × 100 = 30%. A decrease of at least 30% meets the US day-4 continuation branch. Continue safety monitoring and apply the labeled success and maximum-duration stopping rules; remaining above 1.5 mg/dL alone is not the day-4 failure rule."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => question.id === "cirrhosis-decompensated-064"), {
+  "question": "Which proposal creates the greatest avoidable risk when selecting TERLIVAZ?",
+  "choices": [
+    "Start it despite ongoing mesenteric ischemia because kidney failure is severe.",
+    "Assess baseline oxygenation and volume before treatment.",
+    "Avoid use during hypoxia and review alternatives with specialists.",
+    "Coordinate transplant evaluation and watch for ischemic symptoms during therapy."
+  ],
+  "rationale": "Ongoing mesenteric, coronary or peripheral ischemia is a labeled contraindication. Vasoconstriction can cause further ischemic harm, and treatment should stop if ischemic adverse reactions develop. Respiratory assessment and transplant-aware monitoring are necessary parts of care."
+});

@@ -5,7 +5,7 @@ const views = {
   "ascites-treatment": ["Sodium", "Spironolactone", "Furosemide", "Weight"],
   "paracentesis-refractory": ["Large volume", "Albumin", "TIPS", "Transplant"],
   "sbp": ["PMN ≥250", "Antibiotic", "Albumin", "Prophylaxis"],
-  "hrs-aki": ["AKI screen", "Albumin", "Terlipressin", "Oxygenation"],
+  "hrs-aki": ["AKI causes", "Volume", "Treatment", "Oxygenation"],
   "portal-varices": ["CSPH", "Carvedilol", "Endoscopy", "Ligation"],
   "acute-bleeding": ["Resuscitate", "Vasoactive", "Antibiotic", "Endoscopy"],
   "encephalopathy": ["Precipitant", "Lactulose", "Rifaximin", "Recovery"],
@@ -16,8 +16,9 @@ export const cirrhosisDecompensatedVisualTypes = Object.keys(views).map((key) =>
 export default function CirrhosisDecompensatedVisual({ type }) {
   const key = type.replace("cirrhosis-decompensated-", "");
   const labels = views[key] || views["integrated-case"];
-  const reviewed = key === "compensation-portal" || key === "severity-assessment" || key === "ascites-diagnosis" || key === "ascites-treatment" || key === "paracentesis-refractory" || key === "sbp";
+  const reviewed = key === "compensation-portal" || key === "severity-assessment" || key === "ascites-diagnosis" || key === "ascites-treatment" || key === "paracentesis-refractory" || key === "sbp" || key === "hrs-aki";
   const captions = {
+    "hrs-aki": "Assess kidney injury and volume, select treatment for the clinical phenotype, and follow oxygenation, ischemia and transplant needs.",
     "sbp": "Treat suspected infected ascites promptly, support kidney perfusion with adjunctive albumin, and select prevention for the clinical indication.",
     "ascites-treatment": "Sodium restriction and individualized diuresis require weight, circulation, kidney and electrolyte monitoring.",
     "paracentesis-refractory": "Relieve fluid pressure with indicated albumin, then assess recurrence, TIPS candidacy and transplant referral.",

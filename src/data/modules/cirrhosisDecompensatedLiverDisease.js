@@ -498,3 +498,88 @@ cirrhosisDecompensatedLiverDiseaseModule.references.push(...[
     "href": "https://www.aasld.org/liver-fellow-network/core-series/why-series/antibiotics-sbp-prophylaxis-why-or-why-not"
   }
 ]);
+
+// Reconcile HRS-AKI assessment and treatment with current consensus and US labeling.
+Object.assign(cirrhosisDecompensatedLiverDiseaseModule.submodules.find((lesson) => lesson.slug === "hrs-aki"), {
+  "summary": "Recognize acute kidney injury early, evaluate competing and coexisting causes, apply current HRS-AKI criteria, and use vasoconstrictors with careful albumin, respiratory and transplant assessment.",
+  "concepts": [
+    "Creatinine trajectory and urine output",
+    "Volume and competing causes",
+    "Current HRS-AKI criteria",
+    "Vasoconstrictor plus albumin",
+    "US terlipressin dosing",
+    "Respiratory and ischemic safety",
+    "Transplant and kidney follow-up"
+  ],
+  "application": "Assess volume, infection, medications and kidney findings promptly; establish the likely AKI phenotype, begin indicated specialist treatment, and monitor response, oxygenation and volume while preserving the transplant pathway.",
+  "lesson": [
+    {
+      "heading": "Explain the circulatory syndrome",
+      "body": "Advanced cirrhosis and portal hypertension can produce splanchnic vasodilation and reduced effective arterial circulation despite ascites. Compensatory renin-angiotensin-aldosterone and sympathetic activation contributes to renal vasoconstriction and impaired perfusion. Infection, bleeding, nephrotoxins and volume depletion can precipitate or worsen kidney dysfunction. HRS-AKI is one phenotype of AKI in cirrhosis with ascites; it may coexist with tubular injury or chronic kidney disease rather than being a guarantee of structurally normal kidneys."
+    },
+    {
+      "heading": "Recognize creatinine limitations",
+      "body": "Low muscle mass can make a seemingly modest serum creatinine misleading. Compare with a reliable prior baseline and follow urine output and the clinical course. Current ADQI-ICA criteria recognize AKI with a creatinine rise ≥0.3 mg/dL within 48 hours, a rise ≥50% known or presumed within 7 days, and/or urine output ≤0.5 mL/kg/hour for at least 6 hours. A rise from 0.8 to 1.1 mg/dL in 48 hours meets the absolute-rise criterion even though the increase is only 37.5%. This establishes AKI, not its cause."
+    },
+    {
+      "heading": "Reverse correctable causes",
+      "body": "Assess blood pressure and circulation, volume losses or overload, recent bleeding, infection and medication exposure. Stop nephrotoxins such as NSAIDs and reassess diuretics and other drugs that worsen perfusion according to current physiology. Treat infection and correct true volume depletion promptly; choose and reassess fluids from the clinical context. Urinalysis, sediment, proteinuria, kidney imaging and specialist assessment can identify obstruction or structural injury. Septic shock requiring vasopressors is strong evidence for another primary cause; infection without shock can also precipitate HRS-AKI."
+    },
+    {
+      "heading": "Use current HRS-AKI criteria",
+      "body": "The 2024 ADQI-ICA consensus requires cirrhosis with ascites, an AKI trajectory, no improvement in creatinine and/or urine output within 24 hours after adequate volume resuscitation when clinically indicated, and no strong evidence that another process is the primary cause. Assess volume in every case. A routine 48-hour albumin infusion is no longer a prerequisite and is inappropriate in a euvolemic or overloaded patient. Pre-existing CKD or proteinuria does not automatically exclude superimposed HRS-AKI; evaluate possible mixed injury and revise the diagnosis as evidence changes."
+    },
+    {
+      "heading": "Pair vasoconstriction with individualized albumin",
+      "body": "Once HRS-AKI is established, initiate specialist-directed vasoconstrictor treatment promptly with adjunctive 20% to 25% albumin when appropriate. Terlipressin is a preferred agent when the patient is eligible. A commonly recommended albumin amount during treatment is 20 to 40 g/day, but optimal dosing is uncertain: reassess volume daily, adjust to the patient and withhold albumin if overload or pulmonary edema develops. Albumin alone is not equivalent to vasoconstrictor treatment, and the HRS regimen should not be copied from SBP day-1/day-3 or paracentesis per-liter dosing."
+    },
+    {
+      "heading": "Choose alternatives in the right care setting",
+      "body": "If terlipressin is unavailable or contraindicated, norepinephrine with albumin is an alternative requiring ICU monitoring and central venous infusion in the consensus pathway. Midodrine plus octreotide with albumin is a less effective fallback when preferred treatment cannot be used and ICU transfer for norepinephrine is not possible. The review book lists this combination, but it should not be presented as an equally preferred substitute. Select the regimen with liver and kidney specialists, and monitor circulation, organ function and adverse effects."
+    },
+    {
+      "heading": "Use terlipressin safely",
+      "body": "The US TERLIVAZ label applies to adults with HRS and rapidly worsening kidney function. Obtain baseline oxygen saturation and assess volume and acute-on-chronic liver failure severity. Do not start during hypoxia, including SpO₂ <90%, or worsening respiratory symptoms; ongoing coronary, peripheral or mesenteric ischemia is also a contraindication. Avoid use in ACLF grade 3. Creatinine >5 mg/dL is a limitation because benefit is unlikely, rather than a listed absolute contraindication. For highly prioritized transplant candidates, including MELD ≥35, benefit may not outweigh risk. Discuss fetal harm risk when pregnancy is relevant."
+    },
+    {
+      "heading": "Administer the US formulation correctly",
+      "body": "For US TERLIVAZ, record the last available pretreatment creatinine as the dosing baseline. Give 0.85 mg IV every 6 hours over 2 minutes on days 1 to 3. One vial contains 0.85 mg terlipressin, equivalent to 1 mg terlipressin acetate; these mass expressions must not be mistaken for different vial doses. Reconstitute a vial with 5 mL of 0.9% sodium chloride and inspect the solution. A peripheral or central line can be used without a dedicated central line; flush afterward. International consensus infusion and titration protocols differ from this US labeled bolus schedule."
+    },
+    {
+      "heading": "Adjust the US regimen on day 4",
+      "body": "Compare day-4 creatinine with the pretreatment dosing baseline. If it has fallen by at least 30%, continue 0.85 mg every 6 hours. If it is below baseline but the decline is less than 30%, the dose may be increased to 1.7 mg every 6 hours after safety assessment. If it is at or above baseline, discontinue rather than escalating. A fall from 3.0 to 2.1 mg/dL is (3.0 − 2.1) ÷ 3.0 × 100 = 30%, so the continuation branch applies. The US day-4 30% rule is distinct from the consensus 25% titration criterion and the SBP PMN-response rule."
+    },
+    {
+      "heading": "Monitor and stop treatment promptly",
+      "body": "Use continuous pulse oximetry and regular respiratory assessment while following creatinine, urine output, blood pressure, volume and ischemic symptoms. Discontinue TERLIVAZ if SpO₂ falls below 90% or hypoxia, increased respiratory symptoms or ischemia develops; a creatinine response does not cancel these safety rules. Manage overload by reassessing albumin and other fluids and adjusting treatment with the team. Under the US label, continue only until 24 hours after the second of two consecutive creatinine values ≤1.5 mg/dL, at least 2 hours apart, or a maximum of 14 days. The consensus also calls for stopping for severe adverse reactions, need for kidney replacement therapy or failure on maximum tolerated therapy; do not combine its different response endpoints into one dosing algorithm."
+    },
+    {
+      "heading": "Protect the transplant pathway",
+      "body": "Pharmacologic improvement can bridge to kidney recovery or liver transplantation but does not cure advanced cirrhosis. Coordinate timely transplant evaluation regardless of vasoconstrictor response; respiratory failure or ischemia can jeopardize candidacy. Kidney replacement therapy is individualized to complications, trajectory and goals, and can provide a bridge for transplant candidates. Arrange liver and kidney follow-up after AKI with medication reconciliation, kidney recovery assessment and a plan to prevent another insult. Discuss symptom relief and goals of care alongside disease-directed treatment."
+    }
+  ],
+  "keyPoints": [
+    "A small creatinine rise can meet AKI criteria; AKI does not establish HRS.",
+    "Current HRS-AKI assessment does not require routine albumin for 48 hours.",
+    "CKD and structural injury can coexist with HRS-AKI.",
+    "Individualize albumin and watch for pulmonary edema.",
+    "Use the US terlipressin day-4 dose algorithm and respiratory stopping rules.",
+    "Kidney improvement does not remove the need for transplant assessment."
+  ]
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseModule.submodules.find((lesson) => lesson.slug === "hrs-aki").check, {
+  "question": "A patient receiving TERLIVAZ has improving creatinine but new dyspnea and an SpO₂ of 88%. Which action is best?",
+  "choices": [
+    "Discontinue TERLIVAZ and urgently assess respiratory and volume status.",
+    "Continue because kidney improvement overrides the oxygen threshold.",
+    "Give more albumin automatically without assessing volume.",
+    "Wait until day 4 before responding to hypoxia."
+  ],
+  "rationale": "The US label requires discontinuation when SpO₂ falls below 90% and with hypoxia or increased respiratory symptoms. Improving creatinine does not override respiratory safety. Assess oxygenation, volume and other causes urgently; albumin must be reassessed rather than automatically increased."
+});
+cirrhosisDecompensatedLiverDiseaseModule.references.push(...[
+  {
+    "label": "ADQI-ICA 2024: AKI and HRS-AKI diagnostic and treatment consensus",
+    "href": "https://doi.org/10.1016/j.jhep.2024.03.031"
+  }
+]);
