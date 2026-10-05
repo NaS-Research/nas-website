@@ -130,3 +130,23 @@ export const fluidElectrolyteTherapyQuestionBank = [
 if (fluidElectrolyteTherapyQuestionBank.length !== 100) {
   throw new Error(`Fluid and electrolyte question bank must contain 100 questions, found ${fluidElectrolyteTherapyQuestionBank.length}.`);
 }
+
+// Reconcile enteral intake and gastric-loss fluid assessments.
+Object.assign(fluidElectrolyteTherapyQuestionBank.find((question) => question.id === "fluid-electrolyte-016"), {
+  "choices": [
+    "Enteral intake must be included and IV fluid reduced or stopped as appropriate",
+    "Continue the full IV maintenance volume because tube water counts only toward nutrition",
+    "Stop every IV fluid as soon as any enteral feeding begins",
+    "Replace the formula volume with additional IV water without counting water already delivered"
+  ],
+  "rationale": "Count the fluid and electrolytes actually received from tube feeds, water flushes, oral intake, medicines and other IV sources. NICE advises IV fluid only when oral or enteral routes cannot meet the need, so reduce or stop unnecessary IV maintenance after reassessment. Starting a feed does not prove that hydration is sufficient, and adding a full IV allowance without counting enteral water can overprescribe fluid. The stem does not select a fixed daily volume."
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find((question) => question.id === "fluid-electrolyte-083"), {
+  "choices": [
+    "Replacement based on the loss",
+    "Treat measured gastric drainage as already covered by the ordinary maintenance allowance",
+    "Replace all drainage with feeding formula without assessing fluid and electrolyte needs",
+    "Continue the same daily IV order as drainage changes, without reassessing intake or fluid balance"
+  ],
+  "rationale": "Measured gastric drainage is an abnormal ongoing loss. Review its quantity and composition, the patient’s fluid status, laboratory trends and all intake, then adjust replacement alongside any maintenance requirement. Ordinary maintenance does not automatically cover this loss; formula is not an interchangeable loss-replacement prescription, and a changing output requires reassessment. The stem does not establish a resuscitation bolus or an exact replacement solution, rate or volume."
+});

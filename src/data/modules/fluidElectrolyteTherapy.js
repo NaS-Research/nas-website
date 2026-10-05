@@ -120,3 +120,13 @@ export const fluidElectrolyteTherapyModule = {
   ],
   questionBank: fluidElectrolyteTherapyQuestionBank,
 };
+
+// Account for received enteral intake and measured gastric losses.
+fluidElectrolyteTherapyModule.submodules.find((lesson) => lesson.slug === "iv-fluid-selection").lesson.push({
+  "heading": "Count intake and replace abnormal losses",
+  "body": "For a stable hospitalized adult, assess the water and electrolytes actually received from oral intake, tube feeds, prescribed water flushes, medication fluids and other IV sources before adding IV maintenance. Reduce or stop IV fluid when oral or enteral delivery meets the need; starting a feed alone does not establish adequate hydration. A tube used for gastric drainage instead removes fluid: measure the loss, review its composition and adjust the prescription for abnormal losses alongside ordinary maintenance needs. Reassess fluid balance, clinical status, kidney function and electrolyte trends as intake or output changes. These principles do not select one fixed daily volume or an exact replacement solution for every patient."
+});
+fluidElectrolyteTherapyModule.references.push({
+  "label": "NICE CG174 full guidance: adult IV fluids, including December 2025 update",
+  "href": "https://www.nice.org.uk/guidance/cg174/resources/intravenous-fluid-therapy-in-adults-in-hospital-pdf-35109752233669"
+});
