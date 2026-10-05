@@ -157,3 +157,153 @@ chronicHepatitisBModule.references.push(...[
     "href": "https://www.aasld.org/sites/default/files/2025-11/CHB%20Educational%20Slide%20Set%20Final%202.pdf"
   }
 ]);
+
+// Source-reviewed HBV natural history, serology and staging.
+Object.assign(chronicHepatitisBModule.submodules.find((lesson) => lesson.slug === "virus-natural-history").lesson.find((body) => body.heading === "Map replication"), {
+  "heading": "Map replication",
+  "body": "HBV carries partially double-stranded DNA into hepatocytes. Repair in the nucleus creates covalently closed circular DNA (cccDNA), a template for viral RNA; the viral polymerase then reverse-transcribes pregenomic RNA into new DNA. Nucleos(t)ide analogs interrupt this replication step without reliably removing the nuclear reservoir. An undetectable serum HBV DNA result is evidence of suppression, not proof that every infected hepatocyte or cccDNA molecule has disappeared."
+});
+Object.assign(chronicHepatitisBModule.submodules.find((lesson) => lesson.slug === "virus-natural-history").lesson.find((body) => body.heading === "Map injury"), {
+  "heading": "Map injury",
+  "body": "Much of HBV-associated liver injury results from the host response to infected hepatocytes rather than direct viral cytotoxicity. Inflammation can lead to fibrosis over time. ALT is a marker of liver injury, not a direct measurement of viral load, liver function or fibrosis. Review its trend alongside HBV DNA and fibrosis assessment; a single normal ALT does not establish an inactive infection or an undamaged liver."
+});
+Object.assign(chronicHepatitisBModule.submodules.find((lesson) => lesson.slug === "virus-natural-history").lesson.find((body) => body.heading === "Map chronicity"), {
+  "heading": "Map chronicity",
+  "body": "Acquisition in infancy, especially around birth, is much more likely to become chronic than acquisition in an immunocompetent adult. Symptoms do not determine persistence: chronic HBV may remain clinically silent. Document timing and serial HBsAg results rather than inferring clearance from improved symptoms. Residual cccDNA after apparent control or resolved infection can support reactivation during immunosuppression, so a negative HBsAg result does not erase the relevance of prior core antibody."
+});
+Object.assign(chronicHepatitisBModule.submodules.find((lesson) => lesson.slug === "virus-natural-history").lesson.find((body) => body.heading === "Map consequences"), {
+  "heading": "Map consequences",
+  "body": "Chronic HBV can cause cirrhosis, hepatic decompensation and hepatocellular carcinoma (HCC). Antiviral suppression lowers progression risk but does not guarantee that existing cirrhosis reverses or cancer risk disappears. HBV-associated HCC can occur without cirrhosis. Assess surveillance eligibility using the patient’s liver stage and risk factors; after HBsAg loss, surveillance may still be indicated, including in people with cirrhosis or other persistent high-risk features."
+});
+chronicHepatitisBModule.submodules.find((lesson) => lesson.slug === "virus-natural-history").lesson.push({
+  "heading": "Connect transmission to prevention",
+  "body": "Exposure to infected blood or body fluids can transmit HBV through sex, shared injection equipment, needlesticks or birth. Household risk includes blood-contaminated personal items such as razors and toothbrushes; ordinary hugging or sharing food is not the mechanism. People without jaundice can transmit infection. Assess vaccination of susceptible contacts, safer injection and sexual practices, blood precautions and appropriate postexposure care. Pregnancy care and infant vaccine plus HBIG when indicated reduce perinatal transmission; maternal antiviral therapy does not replace indicated infant immunoprophylaxis."
+});
+Object.assign(chronicHepatitisBModule.submodules.find((lesson) => lesson.slug === "virus-natural-history"), {
+  "summary": "Connect HBV’s persistent nuclear reservoir with immune-mediated injury, age-dependent chronicity, blood and body-fluid transmission, and continuing liver risk.",
+  "application": "Explain why symptoms, normal ALT and suppressed serum DNA each answer different questions and cannot independently establish clearance or remove prevention needs.",
+  "keyPoints": [
+    "cccDNA can persist despite serum DNA suppression.",
+    "ALT reflects injury; fibrosis and viral activity need separate assessment.",
+    "Infant acquisition carries greater chronicity risk.",
+    "Asymptomatic infection can transmit, and suppression does not erase every HCC risk."
+  ]
+});
+Object.assign(chronicHepatitisBModule.submodules.find((lesson) => lesson.slug === "virus-natural-history").check, {
+  "question": "Why does undetectable serum HBV DNA during nucleos(t)ide analog therapy not establish eradication of HBV?",
+  "choices": [
+    "Nuclear cccDNA can persist despite suppressed replication",
+    "HBV has no drug-sensitive replication step",
+    "HBV replicates exclusively in red blood cells",
+    "A normal ALT proves all infected hepatocytes have disappeared"
+  ],
+  "answer": 0,
+  "rationale": "Polymerase-directed treatment suppresses new viral DNA production without reliably eliminating cccDNA in hepatocytes. Serum DNA and ALT therefore cannot prove eradication; persistence also explains potential reactivation under immunosuppression.",
+  "reviewHref": "#virus-natural-history"
+});
+Object.assign(chronicHepatitisBModule.submodules.find((lesson) => lesson.slug === "screening-serology").lesson.find((body) => body.heading === "Use the triple panel"), {
+  "heading": "Use the triple panel",
+  "body": "CDC recommends screening every adult aged eighteen or older at least once with HBsAg, anti-HBs and total anti-HBc. Interpret antigen, surface antibody and core antibody together; core antibody reflects natural infection, not vaccination alone. Susceptible people with ongoing exposure risk need periodic testing tailored to that risk. Test HBsAg during every pregnancy; a previously completed triple panel without subsequent risk can inform which repeat tests are needed. Screening must not delay indicated vaccination."
+});
+Object.assign(chronicHepatitisBModule.submodules.find((lesson) => lesson.slug === "screening-serology").lesson.find((body) => body.heading === "Separate acute from chronic"), {
+  "heading": "Separate acute from chronic",
+  "body": "HBsAg identifies current infection but does not date its onset. Persistence for at least six months establishes chronicity. Order IgM anti-HBc when acute infection is suspected: it supports recent infection, but can also be positive during severe chronic flares or reactivation. Review earlier tests, exposure timing, symptoms, liver tests and HBV DNA rather than labeling every IgM-positive result a first acute infection. Recent vaccination can transiently produce a positive HBsAg test and requires timing context."
+});
+Object.assign(chronicHepatitisBModule.submodules.find((lesson) => lesson.slug === "screening-serology").lesson.find((body) => body.heading === "Resolve isolated core antibody"), {
+  "heading": "Resolve isolated core antibody",
+  "body": "HBsAg negative, anti-HBs negative and total anti-HBc positive is an isolated-core pattern, not one diagnosis. Possibilities include remote infection with waned surface antibody, a false-positive core result, occult infection with detectable HBV DNA, a window-period acute infection or an HBsAg variant missed by the assay. Consider exposure and immune status; repeat core testing when false positivity is plausible and obtain HBV DNA when occult infection or immunosuppression is relevant. Suspected acute infection needs IgM testing. Do not equate isolated core antibody with vaccination or guaranteed absence of reactivation risk."
+});
+Object.assign(chronicHepatitisBModule.submodules.find((lesson) => lesson.slug === "screening-serology").lesson.find((body) => body.heading === "Complete the baseline"), {
+  "heading": "Complete the baseline",
+  "body": "Link confirmed HBsAg-positive patients to HBV care and establish a baseline before deciding on treatment. Include quantitative HBV DNA, HBeAg/anti-HBe, ALT and other liver tests, blood count, kidney function and liver-stage assessment. Review HIV and HCV, HDV testing indications, HAV immunity, pregnancy, prior HBV therapy, family history of cirrhosis/HCC, alcohol, metabolic disease and medicines. These data support treatment eligibility, drug safety, vaccination and cancer-surveillance decisions; the screening panel alone does not provide them."
+});
+chronicHepatitisBModule.submodules.find((lesson) => lesson.slug === "screening-serology").lesson.push({
+  "heading": "Translate patterns into next steps",
+  "body": "With HBsAg negative, positive anti-HBs plus negative total anti-HBc supports vaccine immunity when a completed series is documented; positive anti-HBs plus positive core antibody supports resolved natural infection and warrants reactivation counseling. All three negative generally indicates susceptibility when there is no completed vaccine history. Anti-HBs can wane in immunocompetent vaccine responders, so a later negative titer alone does not automatically require revaccination. HBsAg plus core antibody positivity supports infection and linkage to care; IgM and the timeline help classify acuity."
+});
+Object.assign(chronicHepatitisBModule.submodules.find((lesson) => lesson.slug === "screening-serology"), {
+  "summary": "Use CDC’s adult triple-panel screening and the complete marker pattern to distinguish infection, resolved infection, vaccine immunity, susceptibility and uncertainty.",
+  "application": "Read HBsAg, anti-HBs and total anti-HBc together, check the timing and vaccine record, and choose the follow-up needed for the clinical question.",
+  "keyPoints": [
+    "Adults need at least one triple-panel screen.",
+    "Positive core antibody is not produced by vaccination alone.",
+    "IgM can appear in severe chronic flares; HBsAg persistence establishes chronicity.",
+    "Resolved infection and isolated core results require appropriate reactivation assessment."
+  ]
+});
+Object.assign(chronicHepatitisBModule.submodules.find((lesson) => lesson.slug === "screening-serology").check, {
+  "question": "Which pattern best supports immunity from a documented completed hepatitis B vaccine series?",
+  "choices": [
+    "HBsAg negative, anti-HBs positive, total anti-HBc negative",
+    "HBsAg negative, anti-HBs positive, total anti-HBc positive",
+    "HBsAg positive, anti-HBs negative, total anti-HBc positive",
+    "HBsAg negative, anti-HBs negative, total anti-HBc positive"
+  ],
+  "answer": 0,
+  "rationale": "Vaccination produces surface antibody without core antibody. Surface and core antibodies together, with negative HBsAg, support resolved natural infection; HBsAg plus core antibody supports infection. An isolated-core pattern needs contextual evaluation rather than being labeled vaccine immunity.",
+  "reviewHref": "#screening-serology"
+});
+Object.assign(chronicHepatitisBModule.submodules.find((lesson) => lesson.slug === "phase-staging").lesson.find((body) => body.heading === "Trend viral activity"), {
+  "heading": "Trend viral activity",
+  "body": "Quantitative HBV DNA measures circulating viral activity; HBeAg and anti-HBe provide additional context. HBeAg-negative disease can remain highly replicative because precore or basal-core-promoter variants reduce or abolish e-antigen production without preventing replication. Neither negative HBeAg nor positive anti-HBe alone proves inactivity or noninfectiousness. Compare serial DNA and ALT with previous results, treatment exposure and liver stage before assigning a phase."
+});
+Object.assign(chronicHepatitisBModule.submodules.find((lesson) => lesson.slug === "phase-staging").lesson.find((body) => body.heading === "Trend inflammation"), {
+  "heading": "Trend inflammation",
+  "body": "Use serial ALT and evaluate other causes of elevation, including alcohol, metabolic liver disease and medicines. Normal ALT does not exclude significant fibrosis. AASLD uses ALT upper limits of 35 U/L for men and 25 U/L for women in HBV management, which may differ from the laboratory’s range. Do not transfer another guideline’s thresholds without identifying the framework, or treat a single value near a cutoff as a complete disease assessment."
+});
+Object.assign(chronicHepatitisBModule.submodules.find((lesson) => lesson.slug === "phase-staging").lesson.find((body) => body.heading === "Stage fibrosis"), {
+  "heading": "Stage fibrosis",
+  "body": "Use an appropriate combination of examination, blood tests, validated noninvasive fibrosis assessment, elastography, imaging and biopsy when needed. ALT and DNA cannot independently measure fibrosis; prior staging can become outdated. AASLD notes that liver stiffness may be overestimated during significant inflammation, so interpret elastography in context. Cirrhosis changes treatment decisions and HCC surveillance even when ALT is normal; signs of decompensation need prompt specialist assessment."
+});
+Object.assign(chronicHepatitisBModule.submodules.find((lesson) => lesson.slug === "phase-staging").lesson.find((body) => body.heading === "Name the phase carefully"), {
+  "heading": "Name the phase carefully",
+  "body": "AASLD’s 2025 teaching framework distinguishes immune-tolerant, immune-active, inactive and indeterminate chronic HBV, plus HBsAg loss. Immune-tolerant patterns have positive HBeAg, very high DNA and normal ALT; inactive patterns have negative HBeAg, low DNA and persistently normal ALT. Active patterns combine replication with inflammation, while indeterminate results fall outside the defined patterns. These are changing clinical patterns, not permanent labels or standalone treatment orders. Fibrosis, age, family history, coinfection and transmission context can change management."
+});
+chronicHepatitisBModule.submodules.find((lesson) => lesson.slug === "phase-staging").lesson.push({
+  "heading": "Work through an indeterminate pattern",
+  "body": "A patient with established chronic HBV is HBeAg negative, has HBV DNA 8,000 IU/mL and ALT 22 U/L on one visit. AASLD’s inactive pattern requires HBV DNA below 2,000 IU/mL and persistently normal ALT, so these data do not support an inactive label. Normal ALT also does not establish absence of fibrosis. Review prior DNA/ALT, treatment history and fibrosis assessment; this discordant pattern fits indeterminate disease and requires individualized treatment evaluation and follow-up rather than dismissal or automatic use of one numeric cutoff."
+});
+Object.assign(chronicHepatitisBModule.submodules.find((lesson) => lesson.slug === "phase-staging"), {
+  "summary": "Separate viral activity, inflammation and fibrosis, then interpret their trends within a defined HBV phase framework.",
+  "application": "Use a DNA/ALT timeline and liver-stage evidence to distinguish a supported phase from an indeterminate pattern before evaluating treatment.",
+  "keyPoints": [
+    "HBeAg negativity does not establish inactivity.",
+    "A normal ALT does not exclude fibrosis.",
+    "Phase definitions depend on combined, repeated measurements.",
+    "Indeterminate disease and cirrhosis require treatment assessment."
+  ]
+});
+Object.assign(chronicHepatitisBModule.submodules.find((lesson) => lesson.slug === "phase-staging").check, {
+  "question": "Which finding demonstrates why a normal ALT alone cannot dismiss clinically important chronic HBV?",
+  "choices": [
+    "High HBV DNA together with significant fibrosis",
+    "Documented vaccine immunity with negative HBsAg and core antibody",
+    "Negative HBeAg by itself proving viral clearance",
+    "A single ALT value proving no liver fibrosis"
+  ],
+  "answer": 0,
+  "rationale": "ALT is a marker of injury, not a fibrosis or viral-load assay. Replication and significant fibrosis may be present with normal ALT. Vaccine immunity is a different serologic state; negative HBeAg alone does not prove clearance.",
+  "reviewHref": "#phase-staging"
+});
+chronicHepatitisBModule.references.push(...[
+  {
+    "label": "CDC 2023: universal HBV screening and serology interpretation",
+    "href": "https://www.cdc.gov/mmwr/volumes/72/rr/rr7201a1.htm"
+  },
+  {
+    "label": "CDC Pink Book: HBV pathogenesis and transmission",
+    "href": "https://www.cdc.gov/pinkbook/hcp/table-of-contents/chapter-10-hepatitis-b.html"
+  },
+  {
+    "label": "University of Washington: HBV diagnosis and marker limitations",
+    "href": "https://www.hepatitisb.uw.edu/go/hbv/diagnosis-hbv/core-concept/all"
+  },
+  {
+    "label": "University of Washington: initial HBV evaluation",
+    "href": "https://www.hepatitisb.uw.edu/go/hbv/initial-evaluation-counseling/core-concept/all"
+  },
+  {
+    "label": "University of Washington: HBV persistence and reactivation biology",
+    "href": "https://www.hepatitisb.uw.edu/go/hbv/hepatitis-b-reactivation-setting-immunosuppression/core-concept/all"
+  }
+]);

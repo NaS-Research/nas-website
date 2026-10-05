@@ -236,3 +236,257 @@ Object.assign(chronicHepatitisBQuestionBank.find((question) => question.id === "
 Object.assign(chronicHepatitisBQuestionBank.find((question) => question.id === "chronic-hepatitis-b-047"), {
   "rationale": "Test for HIV and review kidney function, prior treatment and resistance before selecting entecavir. The usual adult dose is 0.5 mg daily for nucleoside-naive compensated infection; the label specifies 1 mg for defined lamivudine-refractory or resistant infection and adult decompensated disease, with renal adjustment. A labeled dose does not make entecavir preferred after lamivudine resistance; AASLD favors a tenofovir strategy in that pattern."
 });
+
+// Source-reviewed HBV natural history, serology and staging.
+Object.assign(chronicHepatitisBQuestionBank.find((question) => question.id === "chronic-hepatitis-b-001"), {
+  "choices": [
+    "HBV is a partially double-stranded DNA virus with a persistent nuclear cccDNA reservoir",
+    "HBV has an RNA-only genome and never forms a DNA intermediate",
+    "HBV persists primarily in red blood cells rather than hepatocytes",
+    "Undetectable serum HBV DNA proves that nuclear cccDNA has been eliminated"
+  ],
+  "rationale": "HBV carries partially double-stranded DNA and forms cccDNA in hepatocytes. Polymerase-directed treatment can suppress circulating DNA without reliably removing the reservoir; suppression is not proof of eradication."
+});
+Object.assign(chronicHepatitisBQuestionBank.find((question) => question.id === "chronic-hepatitis-b-002"), {
+  "choices": [
+    "Interpret age at acquisition, immune status, serial ALT and DNA, HBeAg and fibrosis together",
+    "Use one normal ALT as proof that HBV is inactive",
+    "Use disappearance of jaundice as proof that chronic infection has cleared",
+    "Discard prior core-antibody positivity once serum HBsAg becomes negative"
+  ],
+  "rationale": "Trajectory depends on host factors, viral activity and liver stage. ALT, symptoms and HBsAg each answer different questions; none independently proves an undamaged liver or erases reactivation risk from prior infection."
+});
+Object.assign(chronicHepatitisBQuestionBank.find((question) => question.id === "chronic-hepatitis-b-003"), {
+  "choices": [
+    "Distinguish suppressed circulating DNA from a persistent reservoir and assess liver stage and ongoing risk",
+    "Stop all follow-up once DNA becomes undetectable on treatment",
+    "Treat a normal ALT as proof that no fibrosis exists",
+    "Assume HCC can occur only after HBV causes cirrhosis"
+  ],
+  "rationale": "DNA suppression does not reliably eliminate cccDNA, and ALT does not measure fibrosis. HCC can occur in HBV without cirrhosis, so liver stage and risk factors remain relevant to follow-up and surveillance."
+});
+Object.assign(chronicHepatitisBQuestionBank.find((question) => question.id === "chronic-hepatitis-b-004"), {
+  "choices": [
+    "Label chronic HBV inactive using one normal ALT without reviewing DNA or fibrosis",
+    "Compare serial ALT with quantitative HBV DNA",
+    "Assess fibrosis independently of ALT",
+    "Review prior tests and antiviral exposure before assigning a phase"
+  ],
+  "rationale": "An isolated normal ALT can conceal replication or established fibrosis. The other actions combine the evidence needed to interpret dynamic disease rather than inferring inactivity from one injury marker."
+});
+Object.assign(chronicHepatitisBQuestionBank.find((question) => question.id === "chronic-hepatitis-b-005"), {
+  "choices": [
+    "HBV can spread through infected blood or body fluids during sex, shared injection, needlestick exposure or birth",
+    "Ordinary hugging is the main mechanism of household HBV transmission",
+    "Only people with jaundice can transmit HBV",
+    "HBV spreads principally through contaminated food like hepatitis A"
+  ],
+  "rationale": "HBV transmission involves infected blood or body fluids and can occur without symptoms. Household blood-contaminated items are relevant; ordinary hugging and food sharing do not explain HBV transmission."
+});
+Object.assign(chronicHepatitisBQuestionBank.find((question) => question.id === "chronic-hepatitis-b-006"), {
+  "choices": [
+    "Assess susceptible contacts for vaccination and use appropriate blood, sexual and injection precautions",
+    "Limit prevention counseling to people who visibly have jaundice",
+    "Share razors after viral suppression because transmission risk is automatically zero",
+    "Replace indicated infant vaccine and HBIG with maternal antiviral therapy alone"
+  ],
+  "rationale": "Vaccination of susceptible contacts and exposure precautions complement treatment. Asymptomatic infection can transmit, and maternal treatment does not replace indicated infant immunoprophylaxis."
+});
+Object.assign(chronicHepatitisBQuestionBank.find((question) => question.id === "chronic-hepatitis-b-007"), {
+  "choices": [
+    "Coordinate contact vaccination, exposure precautions and pregnancy/infant prevention when relevant",
+    "Assume an asymptomatic household contact cannot have HBV",
+    "Apply a foodborne-hepatitis prevention plan as the only HBV strategy",
+    "Omit indicated infant immunoprophylaxis when the pregnant patient receives antivirals"
+  ],
+  "rationale": "Prevention must address actual blood/body-fluid routes and susceptible contacts. Symptoms cannot identify every infection, and pregnancy antiviral decisions and infant immunoprophylaxis serve complementary roles."
+});
+Object.assign(chronicHepatitisBQuestionBank.find((question) => question.id === "chronic-hepatitis-b-008"), {
+  "choices": [
+    "Use absence of symptoms as proof that an infected person cannot transmit HBV",
+    "Review vaccination status of susceptible contacts",
+    "Counsel against sharing blood-contaminated razors or injection equipment",
+    "Arrange appropriate perinatal prevention when relevant"
+  ],
+  "rationale": "Clinically silent HBV can still transmit. The other actions reduce exposure or susceptibility and do not rely on symptoms to identify infectious people."
+});
+Object.assign(chronicHepatitisBQuestionBank.find((question) => question.id === "chronic-hepatitis-b-009"), {
+  "choices": [
+    "CDC recommends at least one adult screen with HBsAg, anti-HBs and total anti-HBc",
+    "Healthy adults need no HBV screening unless they disclose a risk factor",
+    "Anti-HBs alone distinguishes current infection from resolved infection",
+    "Total anti-HBc is unnecessary because vaccination always produces it"
+  ],
+  "rationale": "CDC’s universal adult screen uses all three markers. Anti-HBs alone cannot classify every state, and vaccination alone does not produce core antibody; risk-based testing continues when relevant."
+});
+Object.assign(chronicHepatitisBQuestionBank.find((question) => question.id === "chronic-hepatitis-b-010"), {
+  "choices": [
+    "Interpret all three screening markers and order additional tests for the specific clinical question",
+    "Use HBsAg alone to distinguish vaccine immunity from resolved infection",
+    "Order IgM anti-HBc routinely as a substitute for every initial triple panel",
+    "Delay indicated vaccination until all screening results return"
+  ],
+  "rationale": "The triple panel distinguishes infection, immunity and susceptibility; IgM and DNA address particular follow-up questions. HBsAg alone cannot separate the HBsAg-negative states, and screening should not delay vaccination."
+});
+Object.assign(chronicHepatitisBQuestionBank.find((question) => question.id === "chronic-hepatitis-b-011"), {
+  "choices": [
+    "Use prior triple-panel results, vaccination records and exposure history to tailor repeat testing",
+    "Repeat HBsAg alone for every purpose and ignore prior core-antibody results",
+    "Assume a negative adult screen eliminates the need for testing during future pregnancies",
+    "Avoid periodic testing of susceptible people who continue to have exposure risk"
+  ],
+  "rationale": "A one-time screen does not replace pregnancy testing or periodic risk-based testing. Prior results guide additional testing, and prior core positivity remains relevant when immunosuppression is planned."
+});
+Object.assign(chronicHepatitisBQuestionBank.find((question) => question.id === "chronic-hepatitis-b-012"), {
+  "choices": [
+    "Classify every HBsAg-negative person as susceptible without checking surface or core antibodies",
+    "Read HBsAg, anti-HBs and total anti-HBc together",
+    "Review completed vaccination history when interpreting waned anti-HBs",
+    "Use additional tests when acute infection or occult HBV is suspected"
+  ],
+  "rationale": "HBsAg-negative states include vaccine immunity, resolved infection, susceptibility and isolated core patterns. The other actions resolve these distinctions rather than reducing the panel to one antigen result."
+});
+Object.assign(chronicHepatitisBQuestionBank.find((question) => question.id === "chronic-hepatitis-b-013"), {
+  "choices": [
+    "Anti-HBs without core antibody supports vaccine immunity; anti-HBs with core antibody and negative HBsAg supports resolved infection",
+    "Vaccination routinely produces total anti-HBc",
+    "A positive anti-HBs always proves that HBV was acquired naturally",
+    "An isolated positive core antibody proves current infection in every patient"
+  ],
+  "rationale": "The core marker distinguishes natural exposure from vaccination alone. An isolated-core pattern has multiple possible explanations and needs timing, risk and immune-status context."
+});
+Object.assign(chronicHepatitisBQuestionBank.find((question) => question.id === "chronic-hepatitis-b-014"), {
+  "choices": [
+    "Read the full serology pattern with timing, vaccine history and immune status, adding DNA when indicated",
+    "Treat isolated core antibody as proof of vaccine immunity",
+    "Treat all three negative markers as proof of prior natural infection",
+    "Use positive anti-HBs alone to distinguish every infection state"
+  ],
+  "rationale": "Serology interpretation depends on the combination and context. Vaccination alone does not yield core antibody; all-negative results generally indicate susceptibility without a completed vaccine history, and anti-HBs alone does not identify the source of immunity."
+});
+Object.assign(chronicHepatitisBQuestionBank.find((question) => question.id === "chronic-hepatitis-b-015"), {
+  "choices": [
+    "Evaluate an isolated-core result for remote infection, false positivity, window-period infection or occult HBV as the context warrants",
+    "Assume isolated core antibody excludes HBV reactivation during immunosuppression",
+    "Diagnose occult HBV from core antibody alone without DNA assessment",
+    "Automatically revaccinate every immunocompetent documented vaccine responder whose anti-HBs later wanes"
+  ],
+  "rationale": "Isolated core antibody does not establish one diagnosis; occult infection involves detectable HBV DNA despite negative HBsAg. Prior infection can reactivate, while waning surface antibody after a completed vaccine response does not by itself mandate revaccination."
+});
+Object.assign(chronicHepatitisBQuestionBank.find((question) => question.id === "chronic-hepatitis-b-016"), {
+  "choices": [
+    "Dismiss isolated core antibody as vaccine immunity before evaluating planned immunosuppression",
+    "Review natural-exposure and immune-status history",
+    "Consider repeat testing when a false-positive core result is plausible",
+    "Obtain HBV DNA when occult infection or immunosuppression makes it relevant"
+  ],
+  "rationale": "Vaccination alone does not produce core antibody. Dismissing the result can miss prior or occult infection and reactivation risk; the other actions help determine its cause and clinical significance."
+});
+Object.assign(chronicHepatitisBQuestionBank.find((question) => question.id === "chronic-hepatitis-b-017"), {
+  "choices": [
+    "HBsAg persistence for at least six months establishes chronicity; IgM anti-HBc can occur in acute infection or severe chronic flares",
+    "Any single positive HBsAg result dates infection to the current month",
+    "IgM anti-HBc is never detectable during chronic HBV reactivation",
+    "The absence of jaundice excludes acute HBV"
+  ],
+  "rationale": "The six-month HBsAg timeline establishes chronic infection. IgM generally supports recent acute infection but is not exclusive to it; symptoms and a single antigen result cannot date every infection."
+});
+Object.assign(chronicHepatitisBQuestionBank.find((question) => question.id === "chronic-hepatitis-b-018"), {
+  "choices": [
+    "Review previous HBsAg results, exposure timing, IgM anti-HBc, liver tests and DNA to distinguish acute infection from a chronic flare",
+    "Label every IgM-positive result a new acute infection regardless of prior HBsAg history",
+    "Classify chronicity using one positive HBsAg result alone",
+    "Diagnose clearance because jaundice improves"
+  ],
+  "rationale": "Acuity requires the timeline and marker pattern. IgM may occur in a severe flare, and symptom improvement or one antigen result cannot establish clearance or the duration of infection."
+});
+Object.assign(chronicHepatitisBQuestionBank.find((question) => question.id === "chronic-hepatitis-b-019"), {
+  "choices": [
+    "Interpret positive IgM in a patient with years of documented HBsAg positivity as requiring assessment for a chronic flare or reactivation",
+    "Erase the chronic diagnosis whenever IgM anti-HBc becomes positive",
+    "Wait six months to link a newly HBsAg-positive symptomatic patient to care",
+    "Assume a postvaccination HBsAg result needs no review of timing or other markers"
+  ],
+  "rationale": "A documented chronic history remains relevant when IgM appears. Evaluate flares and reactivation promptly; newly identified infection needs timely care, and recent vaccination can transiently affect HBsAg interpretation."
+});
+Object.assign(chronicHepatitisBQuestionBank.find((question) => question.id === "chronic-hepatitis-b-020"), {
+  "choices": [
+    "Diagnose every positive HBsAg result as a new acute infection without reviewing prior results",
+    "Use persistence for at least six months to establish chronicity",
+    "Order IgM when recent acute infection is suspected",
+    "Consider a chronic flare when IgM is positive despite an established chronic history"
+  ],
+  "rationale": "A single HBsAg-positive result cannot date onset. The other actions incorporate history and marker limitations to distinguish acute infection from chronic disease and flares."
+});
+Object.assign(chronicHepatitisBQuestionBank.find((question) => question.id === "chronic-hepatitis-b-021"), {
+  "choices": [
+    "Chronic HBV phases can change and require combined interpretation of viral activity, inflammation and liver stage",
+    "Negative HBeAg alone defines inactive HBV",
+    "One normal ALT proves absence of fibrosis",
+    "The phase recorded at diagnosis is permanent even if DNA and ALT change"
+  ],
+  "rationale": "HBV phases are dynamic. HBeAg negativity can coexist with replication, ALT is not a fibrosis test, and transitions require reassessment rather than reliance on the original label."
+});
+Object.assign(chronicHepatitisBQuestionBank.find((question) => question.id === "chronic-hepatitis-b-022"), {
+  "choices": [
+    "Trend ALT and DNA, review HBeAg and treatment exposure, and assess fibrosis",
+    "Use HBeAg negativity alone to clear a patient from follow-up",
+    "Treat laboratory-normal ALT as proof that no fibrosis assessment is needed",
+    "Assign a permanent phase from the first DNA measurement"
+  ],
+  "rationale": "Combined longitudinal assessment distinguishes activity from injury and established scarring. No single viral or biochemical value provides the complete phase and treatment assessment."
+});
+Object.assign(chronicHepatitisBQuestionBank.find((question) => question.id === "chronic-hepatitis-b-023"), {
+  "choices": [
+    "Reassess an HBeAg-negative patient with DNA 8,000 IU/mL and normal ALT as indeterminate rather than automatically inactive",
+    "Call DNA 8,000 IU/mL inactive solely because HBeAg is negative",
+    "Infer no fibrosis from the normal ALT",
+    "Apply the first phase label indefinitely without comparing later results"
+  ],
+  "rationale": "AASLD’s inactive pattern includes DNA below 2,000 IU/mL and persistently normal ALT. DNA 8,000 does not meet that pattern; assess the timeline and fibrosis before individualizing treatment and follow-up."
+});
+Object.assign(chronicHepatitisBQuestionBank.find((question) => question.id === "chronic-hepatitis-b-024"), {
+  "choices": [
+    "Keep the initial inactive label despite rising DNA and ALT without reassessment",
+    "Compare subsequent DNA and ALT results with the baseline",
+    "Review treatment exposure and possible competing causes of ALT elevation",
+    "Reassess liver stage and treatment eligibility when the pattern changes"
+  ],
+  "rationale": "A static label can miss transition and treatment need. The other actions respond to changing viral activity and liver injury instead of treating the initial phase as permanent."
+});
+Object.assign(chronicHepatitisBQuestionBank.find((question) => question.id === "chronic-hepatitis-b-025"), {
+  "choices": [
+    "Significant fibrosis and cirrhosis affect treatment and surveillance decisions even when ALT is normal",
+    "Normal ALT excludes cirrhosis in chronic HBV",
+    "Undetectable DNA automatically ends HCC surveillance in cirrhosis",
+    "Elastography always measures fibrosis accurately regardless of marked inflammation"
+  ],
+  "rationale": "ALT and DNA do not independently measure fibrosis. Cirrhosis carries continuing treatment and surveillance implications, and inflammation can increase liver stiffness and complicate elastography interpretation."
+});
+Object.assign(chronicHepatitisBQuestionBank.find((question) => question.id === "chronic-hepatitis-b-026"), {
+  "choices": [
+    "Assess fibrosis with appropriate noninvasive testing, laboratory and imaging evidence and specialist review",
+    "Use ALT alone to rule out cirrhosis",
+    "Ignore prior decompensation once ALT normalizes",
+    "Stop all surveillance once an antiviral suppresses DNA"
+  ],
+  "rationale": "Fibrosis assessment uses multiple evidence sources. A normal injury marker and suppressed DNA do not erase established cirrhosis, prior decompensation or relevant cancer risk."
+});
+Object.assign(chronicHepatitisBQuestionBank.find((question) => question.id === "chronic-hepatitis-b-027"), {
+  "choices": [
+    "Interpret elastography alongside inflammation, other liver-stage evidence and prior assessments",
+    "Treat a high stiffness result during marked inflammation as an exact fibrosis stage without context",
+    "Use a remote staging result as permanently valid despite clinical change",
+    "Withhold further liver assessment solely because ALT is normal"
+  ],
+  "rationale": "Inflammation can overestimate liver stiffness, and liver stage can change. Contextual interpretation and timely reassessment are stronger than assuming one test or a normal ALT supplies the entire stage."
+});
+Object.assign(chronicHepatitisBQuestionBank.find((question) => question.id === "chronic-hepatitis-b-028"), {
+  "choices": [
+    "Dismiss cirrhosis-related treatment evaluation solely because ALT is normal",
+    "Document fibrosis and any signs of decompensation",
+    "Assess HBV DNA and current treatment eligibility with liver stage",
+    "Evaluate continuing HCC surveillance when indicated"
+  ],
+  "rationale": "Normal ALT does not remove cirrhosis-related risk or treatment indications. The other choices assess severity, treatment and surveillance rather than dismissing established liver disease on one biochemical result."
+});
