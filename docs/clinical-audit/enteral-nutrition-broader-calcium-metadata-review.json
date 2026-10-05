@@ -1,7 +1,7 @@
 {
   "updated": "2026-10-05T07:20:06.113291+00:00",
   "unit": "enteral-nutrition:broader-calcium-metadata",
-  "status": "Scoped source and rendered verification complete;push pending. Whole calcium parent remains reviewing.",
+  "status": "Scoped source and rendered verification complete;exact audit-branch push verified. Whole calcium parent remains reviewing.",
   "baseCommit": "a6a818d0f7d6fba0c4d6ad97e5011a182183468e",
   "sourcePolicy": {
     "primary": "Cover-verified supplied RxPrep2023;private text/screens outside Git",
@@ -940,11 +940,14 @@
   },
   "release": {
     "branch": "audit/rxprep-content-2026-09-24",
-    "commit": null,
-    "push": "pending",
+    "commit": "f252bd30b42a9a42d1755d1381425b294dac9329",
+    "push": "verified",
     "receipt": "enteral-nutrition-broader-calcium-metadata-release.json",
     "mainMerge": "not performed",
-    "production": "not verified"
+    "production": "not verified",
+    "remoteHashObserved": "f252bd30b42a9a42d1755d1381425b294dac9329",
+    "exactRemoteObservedByTool": true,
+    "remoteVerifiedAt": "2026-10-05T07:24:35.145576+00:00"
   },
   "wholeGoalComplete": false
 }

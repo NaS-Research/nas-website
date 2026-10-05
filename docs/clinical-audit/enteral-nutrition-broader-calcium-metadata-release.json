@@ -1,0 +1,89 @@
+{
+  "verifiedAt": "2026-10-05T07:24:35.145576+00:00",
+  "unit": "enteral-nutrition:broader-calcium-metadata",
+  "contentCommit": "f252bd30b42a9a42d1755d1381425b294dac9329",
+  "remoteBranch": "audit/rxprep-content-2026-09-24",
+  "remoteHashObserved": "f252bd30b42a9a42d1755d1381425b294dac9329",
+  "exactRemoteObservedByTool": true,
+  "coverage": {
+    "evidence": "enteral-nutrition-broader-calcium-metadata-review.json",
+    "moduleQuestionTotal": 108,
+    "newWholeBankQuestionsVerified": 0,
+    "broaderFeedingBankVerifiedAfter": 321,
+    "newWholeBodiesVerified": 0,
+    "newWholeModuleMetadataVerified": true,
+    "newWholeLessonMetadataVerified": [
+      "mineral-regulation",
+      "calcium-measurement",
+      "hypocalcemia",
+      "hyperphosphatemia-ckd-mbd"
+    ],
+    "newWholeEmbeddedChecksVerified": [
+      "mineral-regulation",
+      "calcium-measurement"
+    ],
+    "newWholeFiguresVerified": [
+      "mineral-regulation",
+      "calcium-measurement"
+    ],
+    "all108WholeBankObjectsUnchanged": true,
+    "all35WholeTeachingBodiesUnchanged": true,
+    "all1180WholeCumulativeObjectsUnchanged": true,
+    "allSixMetadataAndCheckFigureScopesSourceCoveredWithPriorEvidence": true,
+    "wholeLessonsNewlyVerified": false,
+    "wholeParentModuleVerified": false,
+    "wholeENModuleVerified": false,
+    "wholeChapterVerified": false
+  },
+  "validation": {
+    "productionBuild": {
+      "status": "passed",
+      "exitCode": 0,
+      "pages": 567,
+      "bundler": "webpack",
+      "baseCommit": "a6a818d0f7d6fba0c4d6ad97e5011a182183468e"
+    },
+    "structureQuestions": 108,
+    "browserStatus": "passed",
+    "allFourOptionsBothChecksBothWidthsVerified": true,
+    "rawCapturesActuallyInspected": 38,
+    "nativePairsActuallyInspected": 19,
+    "completeOriginalSourceCapturesActuallyInspected": 22,
+    "objectPreservation": {
+      "status": "passed",
+      "whole108BankObjectsUnchanged": true,
+      "whole1180CumulativeObjectsUnchanged": true,
+      "all35WholeBodiesUnchanged": true,
+      "allOtherModulesUnchanged": true,
+      "onlyIntendedMetadataAndTwoCheckObjectsChanged": true,
+      "twoCheckStemsKeysCorrectTextsAnchorsAndIdsPreserved": true,
+      "twoCheckChoicesRationalesReconciled": true,
+      "wholeParentVerified": false
+    }
+  },
+  "preservation": {
+    "status": "passed",
+    "baselinePathsChecked": 809,
+    "allUnrelatedDraftBytesAndDeletionsPreserved": true,
+    "moduleDraftRecoveredByRemovingExactScopedTail": true,
+    "originalCleanVisualChangedOnlyByReviewedTextReplacement": true,
+    "allOtherWorkingLedgerFieldsPreserved": true,
+    "allOtherCommittedLedgerEntriesPreserved": true,
+    "onlyHeadDerivedVerifiedProductsStagedOrCommitted": true,
+    "scope": [
+      "src/data/modules/calciumPhosphorusHomeostasis.js",
+      "src/components/learn/CalciumPhosphorusVisual.jsx",
+      "docs/clinical-audit/enteral-nutrition-broader-calcium-metadata-review.json",
+      "docs/clinical-audit/module-ledger.json",
+      "docs/clinical-audit/chapter-ledger.json",
+      "docs/clinical-audit/sequential-resume.json"
+    ]
+  },
+  "publication": {
+    "mainMerge": "not performed",
+    "production": "not verified"
+  },
+  "wholeGoalComplete": false,
+  "nextAction": "Finish the calcium parent audit in one complete reconciliation: individually recheck all108 current whole bank objects, every distractor and rationale, all35 teaching sections, six checks and figures, complete metadata/references, calculations, and the five inherited cumulative selections. Private reconciliation inventory confirms108/108 exact whole current bank objects already match committed source-review evidence; use it to locate each full source comparison, but still examine clinical quality. Correct any weak distractors before whole-parent closure. Then finish enteral reintegration and Chapter11 feeding dependencies before closing Chapter1 printed7/PDF19 entry15. Next Chapter11 source page remains PDF169/printed161;full82-chapter goal remains active.",
+  "receiptCommit": "This receipt follows the exact verified content commit;its own remote hash is verified separately in execution output."
+}
