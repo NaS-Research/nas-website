@@ -221,3 +221,10 @@ calciumPhosphorusHomeostasisModule.references.push(...[
     "href": "https://academic.oup.com/jcem/article/108/3/507/6916871"
   }
 ]);
+
+const sourceReviewedMineralInterpretationLesson = calciumPhosphorusHomeostasisModule.submodules.find((lesson) => lesson.slug === "calcium-measurement");
+sourceReviewedMineralInterpretationLesson.lesson.find((section) => section.heading === "Let PTH organize the differential").body = "Interpret calcium and PTH together. Hypercalcemia with an elevated or inappropriately normal PTH suggests a PTH-dependent process such as primary or tertiary hyperparathyroidism. Familial hypocalciuric hypercalcemia can resemble that biochemical pair, so PTH alone does not establish the diagnosis. Suppressed PTH with high calcium shifts attention toward malignancy, vitamin D excess, granulomatous disease, medicines, or other non-PTH causes. For unexplained hypocalcemia, confirm calcium and assess magnesium, phosphate, kidney function, PTH, and vitamin D together; the evaluation should accompany urgent treatment when clinically indicated.";
+calciumPhosphorusHomeostasisModule.submodules.find((lesson) => lesson.slug === "mineral-regulation").lesson.push({
+  "heading": "Contrast PTH and FGF23 before treating phosphate",
+  "body": "PTH and FGF23 both promote renal phosphate excretion, but their active-vitamin-D effects differ. Endogenous PTH promotes renal calcium reabsorption, phosphate excretion, and active vitamin D synthesis; calcitriol then increases intestinal absorption of calcium and phosphate. FGF23 decreases proximal tubular phosphate reabsorption and reduces calcitriol production. In CKD, elevated FGF23 and reduced calcitriol can contribute to secondary PTH elevation. Read calcium, phosphate, PTH, kidney function, and vitamin D context together. Early phosphate-regulatory changes do not by themselves establish a benefit from phosphate binders: KDIGO bases phosphate-lowering decisions in CKD on progressively or persistently elevated serum phosphate."
+});

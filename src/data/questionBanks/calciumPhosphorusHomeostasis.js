@@ -607,3 +607,91 @@ calciumPhosphorusHomeostasisQuestionBank.splice(calciumPhosphorusHomeostasisQues
   "reviewHref": "#hypercalcemia",
   "difficulty": "clinical"
 });
+
+const sourceReviewedMineralInterpretationQuestions = {
+  "calcium-phosphorus-002": {
+    "choices": [
+      "Reduced proximal phosphate reabsorption",
+      "Increased proximal phosphate reabsorption",
+      "Suppressed phosphate excretion because PTH conserves both calcium and phosphate",
+      "Reduced phosphate filtration as its principal direct phosphate action"
+    ],
+    "rationale": "PTH inhibits proximal tubular phosphate reabsorption and promotes urinary phosphate excretion. Its calcium-conserving action does not mean that phosphate is also retained. The clinical review distinguishes this tubular transport effect from intestinal absorption or a primary reduction in filtration."
+  },
+  "calcium-phosphorus-004": {
+    "choices": [
+      "It increases absorption of calcium and phosphate",
+      "It reduces intestinal absorption of both calcium and phosphate",
+      "It increases calcium absorption while necessarily blocking phosphate absorption",
+      "It causes renal phosphate excretion with no intestinal mineral effect"
+    ],
+    "rationale": "Calcitriol increases intestinal absorption of both calcium and phosphate. The book describes its calcium-absorption role, and the phosphate review and endogenous-PTH label explain the phosphate effect. Reduced absorption of both minerals, a mandatory opposing effect on phosphate, or an exclusively renal action does not match this intestinal mechanism."
+  },
+  "calcium-phosphorus-005": {
+    "choices": [
+      "Promote renal phosphate excretion and suppress calcitriol",
+      "Increase proximal renal phosphate reabsorption",
+      "Promote phosphaturia while increasing renal calcitriol production",
+      "Increase intestinal absorption as its only phosphate-regulating effect"
+    ],
+    "rationale": "FGF23 decreases proximal tubular phosphate reabsorption and reduces active vitamin D production. This promotes phosphate excretion while lowering calcitriol, unlike the active-vitamin-D synthesis effect described for endogenous PTH. Increased renal reabsorption, increased calcitriol production, or an exclusively intestinal mechanism does not describe the FGF23 pathway."
+  },
+  "calcium-phosphorus-007": {
+    "choices": [
+      "Phosphate retention, reduced calcitriol effect, and elevated PTH",
+      "Enhanced renal phosphate clearance, high calcitriol, and suppressed PTH",
+      "High calcium with suppressed PTH as a requirement for secondary hyperparathyroidism",
+      "Low phosphate from increased renal clearance with unchanged calcitriol at every CKD stage"
+    ],
+    "rationale": "Advanced CKD can impair phosphate clearance and active vitamin D physiology, creating hypocalcemic pressure and secondary PTH elevation. The book and KDIGO describe this linked pattern; it is not a requirement that every value be abnormal in every patient. Modest PTH increases can be adaptive, so assess trends and modifiable factors rather than treating one elevated result automatically."
+  },
+  "calcium-phosphorus-009": {
+    "question": "What does sustained excess PTH generally do to bone mineral flux?",
+    "choices": [
+      "It favors bone resorption and mineral release",
+      "It stops all bone remodeling",
+      "It mobilizes calcium from bone while preventing any phosphate release",
+      "It lowers extracellular calcium by permanently trapping both minerals in bone"
+    ],
+    "rationale": "Sustained excess PTH can favor bone resorption and mineral release, as the book illustrates in CKD-related secondary hyperparathyroidism. Endogenous PTH stimulates bone turnover to mobilize both calcium and phosphate; its renal phosphate-excretion effect helps explain why serum phosphate does not simply track that release. The statement concerns excess signaling, not a claim that all PTH exposure stops remodeling or has one identical bone effect."
+  },
+  "calcium-phosphorus-013": {
+    "choices": [
+      "PTH-dependent hypercalcemia",
+      "A PTH-independent pattern with appropriately suppressed PTH",
+      "Normal feedback that rules out further assessment",
+      "Calcitriol-mediated hypercalcemia with PTH suppression"
+    ],
+    "rationale": "During hypercalcemia, an elevated or inappropriately unsuppressed PTH points toward a PTH-dependent process. Primary or tertiary hyperparathyroidism may fit, but familial hypocalciuric hypercalcemia can mimic the biochemical pattern, so the calcium-PTH pair is not a complete diagnosis. The alternatives describe suppressed-PTH physiology or incorrectly dismiss the abnormal pair."
+  },
+  "calcium-phosphorus-014": {
+    "choices": [
+      "Malignancy, vitamin D mechanisms, medications, and other non-PTH causes",
+      "Primary hyperparathyroidism solely because calcium is elevated",
+      "A normal calcium-PTH pair requiring no further evaluation",
+      "One proven malignant mechanism without additional clinical assessment"
+    ],
+    "rationale": "High calcium with suppressed PTH redirects evaluation toward malignancy and other non-PTH causes, including vitamin D-related or medication mechanisms. It does not prove one specific malignancy pathway, make the pair normal, or support primary PTH excess solely because calcium is high. Use the clinical history, medicines and additional mineral data to distinguish causes."
+  },
+  "calcium-phosphorus-015": {
+    "choices": [
+      "Ionized or confirmed calcium, magnesium, phosphate, PTH, kidney function, and vitamin D",
+      "Total calcium alone without albumin or clinical context",
+      "PTH alone while ignoring the phosphate, magnesium, and kidney results",
+      "Vitamin D alone before assessing clinically urgent hypocalcemia"
+    ],
+    "rationale": "Confirm the calcium abnormality and assess magnesium, phosphate, PTH, kidney function, and vitamin D together. The Society emergency guidance lists this mineral-hormone-renal evaluation, and calcium chloride dosing uses serum ionized calcium in the acute setting. A single isolated test misses important context; evaluation must accompany, rather than delay, urgent stabilization when symptoms warrant it."
+  },
+  "calcium-phosphorus-090": {
+    "choices": [
+      "PTH-dependent hypercalcemia",
+      "A suppressed-PTH malignancy pattern despite the measured elevated PTH",
+      "Vitamin D intoxication established by recurrent stones without interpreting PTH",
+      "Normal feedback because the calcium is above the reference interval"
+    ],
+    "rationale": "Calcium 11.8 mg/dL with an elevated PTH is a PTH-dependent biochemical pattern. Primary or tertiary hyperparathyroidism may explain it, but the PTH result alone does not settle the precise cause; the Society guidance warns that familial hypocalciuric hypercalcemia can mimic the pair. The alternatives disregard the elevated PTH or wrongly call the abnormal results normal."
+  }
+};
+for (const question of calciumPhosphorusHomeostasisQuestionBank) {
+  if (Object.hasOwn(sourceReviewedMineralInterpretationQuestions, question.id)) Object.assign(question, sourceReviewedMineralInterpretationQuestions[question.id]);
+}

@@ -1,0 +1,1580 @@
+{
+  "updated": "2026-10-05T04:59:17.442557+00:00",
+  "unit": "enteral-nutrition:broader-mineral-and-PTH-interpretation",
+  "status": "Scoped unit verified; calcium parent, EN and chapters remain reviewing",
+  "baseCommit": "1595adae7b29ca7e6b7726edfd8e1180bdd124c7",
+  "sourcePolicy": {
+    "primary": "Supplied RxPrep2023 book; private extracts and pixels outside Git",
+    "approvedPreviouslyUsed": [
+      "Endocrine Society2012 hypophosphatemia review",
+      "KDIGO2017",
+      "Society2016 acute hypo/hypercalcemia",
+      "FDA calcium/PTH product labeling"
+    ],
+    "newAdditionalSourceApproval": {
+      "status": "approved by direct user message: I give approval",
+      "scope": "Official guidelines, FDA labels and primary academic clinical references where the book cannot verify retained content; includes pending calcium, dialysis, aluminum and mineral physiology scopes",
+      "primarySourceRemains": "Supplied cover-verified RxPrep2023 book",
+      "approvalContext": "Response to pending asynchronous request for this additional authoritative source policy",
+      "usedNewlyAuthorizedSourcesInThisUnit": false
+    }
+  },
+  "sourceReview": {
+    "book": {
+      "pdfPagesActuallyViewed": [
+        168,
+        297,
+        299,
+        814
+      ],
+      "printedPages": [
+        160,
+        289,
+        291,
+        804
+      ],
+      "adoptedScope": "CKD mineral/PTH and active-vitaminD physiology at297/299;168/814 searched acute phosphate context but no new whole acute phosphate/dialysis claim adopted"
+    },
+    "endocrine2012": {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3319220/",
+      "doi": "10.1210/jc.2011-1319",
+      "wholeParagraphsActuallyViewed": [
+        "Background PTH/FGF23 and intestinal phosphate",
+        "Renal XLH FGF23 physiology"
+      ],
+      "table2FootnoteActuallyViewed": true,
+      "wholeTable2NewlyAudited": false,
+      "stableCachedHtmlSha256": "51d6ec97244d47cfca1d644b170aaeefe0978bc636cbe27dd6da2757f4f7e3c3",
+      "freshRetrievalLimitation": "Fresh urllib HTTPS retrieval failed local certificate-chain verification; cached previously approved exact primary document SHA verified. TLS validation was not disabled."
+    },
+    "kdigo2017": {
+      "url": "https://kdigo.org/wp-content/uploads/2018/04/2017-KDIGO-CKD-MBD-GL-Update.pdf",
+      "pdfPagesActuallyViewed": [
+        16,
+        29,
+        34
+      ],
+      "printedPages": [
+        15,
+        28,
+        33
+      ],
+      "adoptedScope": "Serial laboratory interpretation;4.1.5 progressively/persistently elevated phosphate;4.2.1 adaptive PTH and modifiable factors"
+    },
+    "society2016": {
+      "hypercalcemiaUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5314807/",
+      "hypocalcemiaUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5314808/",
+      "adoptedScope": "Complete Causes/Investigation including FHH caveat, hypocalcemia Investigations and urgent stabilization context; no broader dialysis claim newly verified"
+    },
+    "FDA": {
+      "yorvipath": {
+        "piRevision": "October2025",
+        "sectionActuallyViewed": "12.1 complete endogenous PTH mechanism"
+      },
+      "calciumChloride": {
+        "piRevision": "December2025",
+        "sectionActuallyViewed": "2.2 complete individualized ionized-calcium dosing",
+        "noDosageNewlyAdopted": true
+      }
+    },
+    "originalHtmlCapturesActuallyViewed": [
+      {
+        "file": "endocrine2012-background.png",
+        "wholeOriginalParagraphText": "Phosphate is abundantly present in many foods. Isolated dietary phosphate deficiency is uncommon, and deficiency usually occurs with generalized malnutrition. Intestinal phosphate absorption is up-regulated by 1,25OHD. In equilibrium, about 300 mg of phosphate moves into and out of bone daily in adults. Phosphate is freely filtered at the glomerulus and then reabsorbed, but proximal tubular reabsorption is inhibited by both PTH and fibroblast growth factor 23 (FGF23)."
+      },
+      {
+        "file": "endocrine2012-renal-FGF23.png",
+        "wholeOriginalParagraphText": "XLH is caused by inactivating mutations in PHEX (13), which lead to increased bone expression of the phosphate-regulating hormone FGF23 (14). FGF23 enters the circulation and acts primarily at renal tubular FGF receptors, in conjunction with the coreceptor klotho (15), decreasing proximal renal tubular phosphate reabsorption and 1,25OHD production, and also increasing vitamin D degradation (16). Although these effects on phosphate transport and 1,25OHD metabolism occur in the proximal tubule, FGF23 signaling appears to start in the distal tubule (17). Mechanisms translating the initial distal tubule signal to proximal tubule effect have not been determined. Nevertheless, FGF23 excess causes the biochemical phenotype of XLH. Less common autosomal recessive forms of hypophosphatemic rickets are caused by inactivating mutations in both dentin matrix protein 1 (DMP1) and in ectonucleotide pyrophosphatase/phosphodiesterase 1 (ENPP1), both with hypophosphatemia due to excess FGF23 (18–20)."
+      },
+      {
+        "file": "endocrine2012-CKD-pattern.png",
+        "wholeOriginalParagraphText": "In chronic kidney disease (often treated with phosphate binders), calcium and alkaline phosphatase may be low, and phosphorus, FGF23, and PTH are usually high."
+      },
+      {
+        "file": "yorvipath-mechanism.png",
+        "wholeOriginalParagraphText": "At physiological conditions, palopegteriparatide releases PTH(1-34) to maintain a continuous systemic exposure. Endogenous PTH maintains extracellular calcium and phosphate homeostasis by increasing serum calcium and decreasing serum phosphate. These effects are mediated by stimulating bone turnover to mobilize calcium and phosphate from bone, promoting renal calcium reabsorption and phosphate excretion, and facilitating active vitamin D synthesis, in turn increasing intestinal absorption of calcium and phosphate. Similar to endogenous PTH, PTH(1-34) released from palopegteriparatide exerts these effects through its main receptor, parathyroid hormone 1 receptor (PTH1R), which is highly expressed on osteoblasts, osteocytes, renal tubular cells, and in several other tissues."
+      },
+      {
+        "file": "society-hypercalcemia-Causes.png",
+        "wholeOriginalSectionText": "Causes\n\nNinety percent of hypercalcaemia is due to primary hyperparathyroidism or malignancy\n\nLess common causes include\n\nThiazide diuretics\n\nFamilial hypocalciuric hypercalcaemia\n\nNon-malignant granulomatous disease\n\nThyrotoxicosis\n\nTertiary hyperparathyroidism\n\nHypervitaminosis D\n\nRhabdomyolysis\n\nLithium\n\nImmobilisation\n\nAdrenal insufficiency\n\nMilk-alkali syndrome\n\nHypervitaminosis A\n\nTheophylline toxicity\n\nPhaeochromocytoma\n\nInvestigation\nHistory\n\nSymptoms of hypercalcaemia and duration\n\nSymptoms of underlying causes, e.g. weight loss, night sweats, cough\n\nFamily history\n\nDrugs including supplements and over-the-counter preparations\n\nExamination\n\nAssess for cognitive impairment\n\nFluid balance status\n\nFor underlying causes, including neck, respiratory, abdomen, breasts, lymph nodes\n\nECG\n\nLook for shortened QT interval or other conduction abnormalities\n\nBloods\n\nCalcium adjusted for albumin\n\nPhosphate\n\nPTH\n\nUrea and electrolytes\n\nHigh calcium and high PTH = primary or tertiary hyperparathyroidism*\n\nHigh calcium and low PTH = malignancy or other less common causes\n\n(*Familial hypocalciuric hypercalcaemia may be misdiagnosed as primary hyperparathyroidism due to hypercalcaemia with inappropriately normal or raised PTH. However, the hypercalcaemia is not usually severe and it is less likely to present as an emergency)\n\nManagement\nRehydration\n\nIntravenous 0.9% saline 4–6 L in 24 h\n\nMonitor for fluid overload if renal impairment or elderly\n\nLoop diuretics rarely used and only if fluid overload develops; not effective for reducing serum calcium\n\nMay need to consider dialysis if severe renal failure\n\nIf further treatment required after intravenous saline, consider intravenous bisphosphonates\n\nZoledronic acid 4 mg over 15 min\n\nOR Pamidronate 30–90 mg (depending on severity of hypercalcaemia) at 20 mg/h\n\nOR Ibandronic acid 2–4 mg\n\nGive more slowly and consider dose reduction in renal impairment\n\nMonitor serum calcium response: will reach nadir at 2–4 days\n\nCan cause hypocalcaemia if vitamin D deficiency or suppressed PTH\n\nSecond-line treatments\n\nGlucocorticoids (inhibit 1,25OHD production)\n\nIn lymphoma, other granulomatous diseases or 25OHD poisoning\n\nPrednisolone 40 mg daily\n\nUsually effective in 2–4 days\n\nCalcimimetics, denosumab, calcitonin\n\nUnder specialist supervision\n\nCan be considered if poor response to other measures\n\nParathyroidectomy\n\nCan be considered in acute presentation of primary hyperparathyroidism if severe hypercalcaemia and poor response to other measures"
+      },
+      {
+        "file": "society-hypercalcemia-Investigation.png",
+        "wholeOriginalSectionText": "Investigation\nHistory\n\nSymptoms of hypercalcaemia and duration\n\nSymptoms of underlying causes, e.g. weight loss, night sweats, cough\n\nFamily history\n\nDrugs including supplements and over-the-counter preparations\n\nExamination\n\nAssess for cognitive impairment\n\nFluid balance status\n\nFor underlying causes, including neck, respiratory, abdomen, breasts, lymph nodes\n\nECG\n\nLook for shortened QT interval or other conduction abnormalities\n\nBloods\n\nCalcium adjusted for albumin\n\nPhosphate\n\nPTH\n\nUrea and electrolytes\n\nHigh calcium and high PTH = primary or tertiary hyperparathyroidism*\n\nHigh calcium and low PTH = malignancy or other less common causes\n\n(*Familial hypocalciuric hypercalcaemia may be misdiagnosed as primary hyperparathyroidism due to hypercalcaemia with inappropriately normal or raised PTH. However, the hypercalcaemia is not usually severe and it is less likely to present as an emergency)"
+      },
+      {
+        "file": "society-hypocalcemia-Investigations.png",
+        "wholeOriginalSectionText": "Investigations\n\nSerum calcium (adjusted for albumin)\n\nPhosphate\n\nParathyroid hormone (PTH)\n\nUrea and electrolytes\n\nVitamin D\n\nMagnesium"
+      },
+      {
+        "file": "chloride-2-2.png",
+        "wholeOriginalSectionText": "2.2 Recommended Dosage and Administration\n\nThe recommended dose range of calcium chloride injection in:\n\nAdults is from 200 mg to 1,000 mg.\nPediatric patients is from 2.7 mg/kg to 5 mg/kg of calcium chloride.\n\nDosing of this calcium chloride injection product is not possible in patients who require doses less than 200 mg because the recommended dose cannot be achieved with the supplied syringe. For patients who require doses less than 200 mg, use another calcium chloride injection product that allows dosing of less than 200 mg.\n\nIndividualize the dose for a patient within these dose ranges depending on serum ionized calcium level, severity of hypocalcemia symptoms and the acuity of hypocalcemia onset.\n\nRepeated injections may be required because of rapid excretion of calcium.",
+        "actuallyViewed": true
+      }
+    ]
+  },
+  "coverage": {
+    "evidence": "enteral-nutrition-broader-mineral-interpretation-review.json",
+    "moduleBankBefore": 108,
+    "moduleBankAfter": 108,
+    "wholeQuestionsVerified": 9,
+    "existingQuestionsNewlyVerified": 9,
+    "newDistinctQuestionsAdded": 0,
+    "sourceVerifiedBankIds": [
+      "calcium-phosphorus-002",
+      "calcium-phosphorus-004",
+      "calcium-phosphorus-005",
+      "calcium-phosphorus-007",
+      "calcium-phosphorus-009",
+      "calcium-phosphorus-013",
+      "calcium-phosphorus-014",
+      "calcium-phosphorus-015",
+      "calcium-phosphorus-090"
+    ],
+    "broaderFeedingBankVerifiedAfter": 308,
+    "wholeBodiesVerified": 2,
+    "retainedWholeBodiesReconciled": 1,
+    "newWholeBodiesAdded": 1,
+    "sourceVerifiedBodyHeadings": {
+      "calcium-measurement": [
+        "Let PTH organize the differential"
+      ],
+      "mineral-regulation": [
+        "Contrast PTH and FGF23 before treating phosphate"
+      ]
+    },
+    "moduleWholeQuestionsVerifiedAfter": 95,
+    "moduleQuestionTotal": 108,
+    "remainingQuestionIds": [
+      "calcium-phosphorus-001",
+      "calcium-phosphorus-003",
+      "calcium-phosphorus-006",
+      "calcium-phosphorus-008",
+      "calcium-phosphorus-011",
+      "calcium-phosphorus-012",
+      "calcium-phosphorus-017",
+      "calcium-phosphorus-023",
+      "calcium-phosphorus-035",
+      "calcium-phosphorus-050",
+      "calcium-phosphorus-092",
+      "calcium-phosphorus-095",
+      "calcium-phosphorus-102"
+    ],
+    "remainingCoreBodyHeadings": [
+      "Track calcium through the feedback loop",
+      "Separate vitamin D production from effect",
+      "Use FGF23 to explain phosphate control",
+      "Know what the laboratory measured",
+      "Use correction formulas cautiously"
+    ],
+    "newWholeMetadataChecksFiguresVerified": false,
+    "newlyCountedCumulativeQuestions": 0,
+    "wholeLessonsVerified": false,
+    "wholeParentModuleVerified": false,
+    "wholeENModuleVerified": false,
+    "wholeChaptersVerified": false,
+    "all108OriginalIdsKeysCorrectTextsAnchorsRelativeOrderPreserved": true,
+    "all1180CumulativeWholeObjectsUnchanged": true
+  },
+  "changes": {
+    "questions": {
+      "calcium-phosphorus-002": {
+        "before": {
+          "id": "calcium-phosphorus-002",
+          "question": "What is the expected renal phosphate response to increased PTH?",
+          "choices": [
+            "Reduced proximal phosphate reabsorption",
+            "Complete phosphate retention",
+            "Increased calcitriol suppression without phosphaturia",
+            "No change in phosphate handling"
+          ],
+          "answer": 0,
+          "rationale": "PTH reduces proximal tubular phosphate reabsorption and promotes phosphaturia.",
+          "reviewHref": "#mineral-regulation"
+        },
+        "after": {
+          "id": "calcium-phosphorus-002",
+          "question": "What is the expected renal phosphate response to increased PTH?",
+          "choices": [
+            "Reduced proximal phosphate reabsorption",
+            "Increased proximal phosphate reabsorption",
+            "Suppressed phosphate excretion because PTH conserves both calcium and phosphate",
+            "Reduced phosphate filtration as its principal direct phosphate action"
+          ],
+          "answer": 0,
+          "rationale": "PTH inhibits proximal tubular phosphate reabsorption and promotes urinary phosphate excretion. Its calcium-conserving action does not mean that phosphate is also retained. The clinical review distinguishes this tubular transport effect from intestinal absorption or a primary reduction in filtration.",
+          "reviewHref": "#mineral-regulation"
+        }
+      },
+      "calcium-phosphorus-004": {
+        "before": {
+          "id": "calcium-phosphorus-004",
+          "question": "How does calcitriol affect intestinal mineral handling?",
+          "choices": [
+            "It increases absorption of calcium and phosphate",
+            "It blocks calcium absorption",
+            "It increases phosphate loss in stool only",
+            "It has no intestinal action"
+          ],
+          "answer": 0,
+          "rationale": "Calcitriol promotes intestinal absorption of both minerals.",
+          "reviewHref": "#mineral-regulation"
+        },
+        "after": {
+          "id": "calcium-phosphorus-004",
+          "question": "How does calcitriol affect intestinal mineral handling?",
+          "choices": [
+            "It increases absorption of calcium and phosphate",
+            "It reduces intestinal absorption of both calcium and phosphate",
+            "It increases calcium absorption while necessarily blocking phosphate absorption",
+            "It causes renal phosphate excretion with no intestinal mineral effect"
+          ],
+          "answer": 0,
+          "rationale": "Calcitriol increases intestinal absorption of both calcium and phosphate. The book describes its calcium-absorption role, and the phosphate review and endogenous-PTH label explain the phosphate effect. Reduced absorption of both minerals, a mandatory opposing effect on phosphate, or an exclusively renal action does not match this intestinal mechanism.",
+          "reviewHref": "#mineral-regulation"
+        }
+      },
+      "calcium-phosphorus-005": {
+        "before": {
+          "id": "calcium-phosphorus-005",
+          "question": "Which action is most characteristic of FGF23?",
+          "choices": [
+            "Promote renal phosphate excretion and suppress calcitriol",
+            "Increase renal phosphate reabsorption",
+            "Stimulate PTH as its only effect",
+            "Raise ionized calcium directly within seconds"
+          ],
+          "answer": 0,
+          "rationale": "FGF23 is phosphaturic and suppresses renal calcitriol formation.",
+          "reviewHref": "#mineral-regulation"
+        },
+        "after": {
+          "id": "calcium-phosphorus-005",
+          "question": "Which action is most characteristic of FGF23?",
+          "choices": [
+            "Promote renal phosphate excretion and suppress calcitriol",
+            "Increase proximal renal phosphate reabsorption",
+            "Promote phosphaturia while increasing renal calcitriol production",
+            "Increase intestinal absorption as its only phosphate-regulating effect"
+          ],
+          "answer": 0,
+          "rationale": "FGF23 decreases proximal tubular phosphate reabsorption and reduces active vitamin D production. This promotes phosphate excretion while lowering calcitriol, unlike the active-vitamin-D synthesis effect described for endogenous PTH. Increased renal reabsorption, increased calcitriol production, or an exclusively intestinal mechanism does not describe the FGF23 pathway.",
+          "reviewHref": "#mineral-regulation"
+        }
+      },
+      "calcium-phosphorus-007": {
+        "before": {
+          "id": "calcium-phosphorus-007",
+          "question": "Which pattern is most consistent with secondary hyperparathyroidism in advanced CKD?",
+          "choices": [
+            "Phosphate retention, reduced calcitriol effect, and elevated PTH",
+            "Suppressed PTH with isolated hypercalcemia",
+            "Low phosphate with autonomous PTH suppression",
+            "Normal mineral physiology in every stage"
+          ],
+          "answer": 0,
+          "rationale": "CKD can produce phosphate retention, reduced calcitriol, hypocalcemic pressure, and compensatory PTH elevation.",
+          "reviewHref": "#mineral-regulation"
+        },
+        "after": {
+          "id": "calcium-phosphorus-007",
+          "question": "Which pattern is most consistent with secondary hyperparathyroidism in advanced CKD?",
+          "choices": [
+            "Phosphate retention, reduced calcitriol effect, and elevated PTH",
+            "Enhanced renal phosphate clearance, high calcitriol, and suppressed PTH",
+            "High calcium with suppressed PTH as a requirement for secondary hyperparathyroidism",
+            "Low phosphate from increased renal clearance with unchanged calcitriol at every CKD stage"
+          ],
+          "answer": 0,
+          "rationale": "Advanced CKD can impair phosphate clearance and active vitamin D physiology, creating hypocalcemic pressure and secondary PTH elevation. The book and KDIGO describe this linked pattern; it is not a requirement that every value be abnormal in every patient. Modest PTH increases can be adaptive, so assess trends and modifiable factors rather than treating one elevated result automatically.",
+          "reviewHref": "#mineral-regulation"
+        }
+      },
+      "calcium-phosphorus-009": {
+        "before": {
+          "id": "calcium-phosphorus-009",
+          "question": "What does sustained PTH exposure generally do to bone mineral flux?",
+          "choices": [
+            "It favors bone resorption and mineral release",
+            "It prevents all remodeling",
+            "It removes phosphate without affecting bone",
+            "It converts calcium into magnesium"
+          ],
+          "answer": 0,
+          "rationale": "Sustained PTH signaling can increase bone resorption and release calcium and phosphate.",
+          "reviewHref": "#mineral-regulation"
+        },
+        "after": {
+          "id": "calcium-phosphorus-009",
+          "question": "What does sustained excess PTH generally do to bone mineral flux?",
+          "choices": [
+            "It favors bone resorption and mineral release",
+            "It stops all bone remodeling",
+            "It mobilizes calcium from bone while preventing any phosphate release",
+            "It lowers extracellular calcium by permanently trapping both minerals in bone"
+          ],
+          "answer": 0,
+          "rationale": "Sustained excess PTH can favor bone resorption and mineral release, as the book illustrates in CKD-related secondary hyperparathyroidism. Endogenous PTH stimulates bone turnover to mobilize both calcium and phosphate; its renal phosphate-excretion effect helps explain why serum phosphate does not simply track that release. The statement concerns excess signaling, not a claim that all PTH exposure stops remodeling or has one identical bone effect.",
+          "reviewHref": "#mineral-regulation"
+        }
+      },
+      "calcium-phosphorus-013": {
+        "before": {
+          "id": "calcium-phosphorus-013",
+          "question": "Hypercalcemia with an elevated PTH most strongly suggests which mechanism?",
+          "choices": [
+            "PTH-dependent hypercalcemia",
+            "Calcitriol-independent PTH suppression",
+            "Laboratory normality",
+            "Isolated phosphate deficiency"
+          ],
+          "answer": 0,
+          "rationale": "PTH should be suppressed during hypercalcemia, so an elevated value is inappropriate and indicates a PTH-dependent process.",
+          "reviewHref": "#calcium-measurement"
+        },
+        "after": {
+          "id": "calcium-phosphorus-013",
+          "question": "Hypercalcemia with an elevated PTH most strongly suggests which mechanism?",
+          "choices": [
+            "PTH-dependent hypercalcemia",
+            "A PTH-independent pattern with appropriately suppressed PTH",
+            "Normal feedback that rules out further assessment",
+            "Calcitriol-mediated hypercalcemia with PTH suppression"
+          ],
+          "answer": 0,
+          "rationale": "During hypercalcemia, an elevated or inappropriately unsuppressed PTH points toward a PTH-dependent process. Primary or tertiary hyperparathyroidism may fit, but familial hypocalciuric hypercalcemia can mimic the biochemical pattern, so the calcium-PTH pair is not a complete diagnosis. The alternatives describe suppressed-PTH physiology or incorrectly dismiss the abnormal pair.",
+          "reviewHref": "#calcium-measurement"
+        }
+      },
+      "calcium-phosphorus-014": {
+        "before": {
+          "id": "calcium-phosphorus-014",
+          "question": "Hypercalcemia with a suppressed PTH should prompt evaluation for what?",
+          "choices": [
+            "Malignancy, vitamin D mechanisms, medications, and other non-PTH causes",
+            "Primary hypoparathyroidism only",
+            "Magnesium deficiency only",
+            "An isolated low albumin"
+          ],
+          "answer": 0,
+          "rationale": "Suppressed PTH appropriately redirects the differential away from primary PTH excess.",
+          "reviewHref": "#calcium-measurement"
+        },
+        "after": {
+          "id": "calcium-phosphorus-014",
+          "question": "Hypercalcemia with a suppressed PTH should prompt evaluation for what?",
+          "choices": [
+            "Malignancy, vitamin D mechanisms, medications, and other non-PTH causes",
+            "Primary hyperparathyroidism solely because calcium is elevated",
+            "A normal calcium-PTH pair requiring no further evaluation",
+            "One proven malignant mechanism without additional clinical assessment"
+          ],
+          "answer": 0,
+          "rationale": "High calcium with suppressed PTH redirects evaluation toward malignancy and other non-PTH causes, including vitamin D-related or medication mechanisms. It does not prove one specific malignancy pathway, make the pair normal, or support primary PTH excess solely because calcium is high. Use the clinical history, medicines and additional mineral data to distinguish causes.",
+          "reviewHref": "#calcium-measurement"
+        }
+      },
+      "calcium-phosphorus-015": {
+        "before": {
+          "id": "calcium-phosphorus-015",
+          "question": "Which laboratory set best begins evaluation of unexplained hypocalcemia?",
+          "choices": [
+            "Ionized or confirmed calcium, magnesium, phosphate, PTH, kidney function, and vitamin D",
+            "Troponin and LDL only",
+            "Urine glucose only",
+            "Hemoglobin alone"
+          ],
+          "answer": 0,
+          "rationale": "The set distinguishes binding, hormone, mineral, renal, and vitamin D mechanisms.",
+          "reviewHref": "#calcium-measurement"
+        },
+        "after": {
+          "id": "calcium-phosphorus-015",
+          "question": "Which laboratory set best begins evaluation of unexplained hypocalcemia?",
+          "choices": [
+            "Ionized or confirmed calcium, magnesium, phosphate, PTH, kidney function, and vitamin D",
+            "Total calcium alone without albumin or clinical context",
+            "PTH alone while ignoring the phosphate, magnesium, and kidney results",
+            "Vitamin D alone before assessing clinically urgent hypocalcemia"
+          ],
+          "answer": 0,
+          "rationale": "Confirm the calcium abnormality and assess magnesium, phosphate, PTH, kidney function, and vitamin D together. The Society emergency guidance lists this mineral-hormone-renal evaluation, and calcium chloride dosing uses serum ionized calcium in the acute setting. A single isolated test misses important context; evaluation must accompany, rather than delay, urgent stabilization when symptoms warrant it.",
+          "reviewHref": "#calcium-measurement"
+        }
+      },
+      "calcium-phosphorus-090": {
+        "before": {
+          "id": "calcium-phosphorus-090",
+          "question": "Calcium 11.8 mg/dL with an elevated PTH and recurrent nephrolithiasis. Which interpretation or action is most defensible?",
+          "choices": [
+            "PTH-dependent hypercalcemia",
+            "Treat the isolated number without evaluating the mechanism",
+            "Ignore kidney function and symptoms",
+            "Delay urgent stabilization until every test returns"
+          ],
+          "answer": 0,
+          "rationale": "PTH should be suppressed during hypercalcemia, so elevation supports primary or tertiary hyperparathyroid physiology.",
+          "reviewHref": "#calcium-measurement"
+        },
+        "after": {
+          "id": "calcium-phosphorus-090",
+          "question": "Calcium 11.8 mg/dL with an elevated PTH and recurrent nephrolithiasis. Which interpretation or action is most defensible?",
+          "choices": [
+            "PTH-dependent hypercalcemia",
+            "A suppressed-PTH malignancy pattern despite the measured elevated PTH",
+            "Vitamin D intoxication established by recurrent stones without interpreting PTH",
+            "Normal feedback because the calcium is above the reference interval"
+          ],
+          "answer": 0,
+          "rationale": "Calcium 11.8 mg/dL with an elevated PTH is a PTH-dependent biochemical pattern. Primary or tertiary hyperparathyroidism may explain it, but the PTH result alone does not settle the precise cause; the Society guidance warns that familial hypocalciuric hypercalcemia can mimic the pair. The alternatives disregard the elevated PTH or wrongly call the abnormal results normal.",
+          "reviewHref": "#calcium-measurement"
+        }
+      }
+    },
+    "bodyChanges": {
+      "calcium-measurement": {
+        "Let PTH organize the differential": {
+          "before": "Hypercalcemia with an elevated or inappropriately normal PTH suggests a PTH-dependent process such as primary or tertiary hyperparathyroidism, while suppressed PTH shifts attention toward malignancy, vitamin D excess, granulomatous disease, medications, or other causes. In hypocalcemia, measure magnesium, phosphate, kidney function, PTH, and vitamin D to distinguish impaired hormone response, deficiency, sequestration, and loss.",
+          "after": "Interpret calcium and PTH together. Hypercalcemia with an elevated or inappropriately normal PTH suggests a PTH-dependent process such as primary or tertiary hyperparathyroidism. Familial hypocalciuric hypercalcemia can resemble that biochemical pair, so PTH alone does not establish the diagnosis. Suppressed PTH with high calcium shifts attention toward malignancy, vitamin D excess, granulomatous disease, medicines, or other non-PTH causes. For unexplained hypocalcemia, confirm calcium and assess magnesium, phosphate, kidney function, PTH, and vitamin D together; the evaluation should accompany urgent treatment when clinically indicated."
+        }
+      }
+    },
+    "addedBodies": {
+      "mineral-regulation": [
+        {
+          "heading": "Contrast PTH and FGF23 before treating phosphate",
+          "body": "PTH and FGF23 both promote renal phosphate excretion, but their active-vitamin-D effects differ. Endogenous PTH promotes renal calcium reabsorption, phosphate excretion, and active vitamin D synthesis; calcitriol then increases intestinal absorption of calcium and phosphate. FGF23 decreases proximal tubular phosphate reabsorption and reduces calcitriol production. In CKD, elevated FGF23 and reduced calcitriol can contribute to secondary PTH elevation. Read calcium, phosphate, PTH, kidney function, and vitamin D context together. Early phosphate-regulatory changes do not by themselves establish a benefit from phosphate binders: KDIGO bases phosphate-lowering decisions in CKD on progressively or persistently elevated serum phosphate."
+        }
+      ]
+    },
+    "wholeBodies": {
+      "calcium-measurement": [
+        "Let PTH organize the differential"
+      ],
+      "mineral-regulation": [
+        "Contrast PTH and FGF23 before treating phosphate"
+      ]
+    },
+    "figures": [],
+    "checks": {},
+    "references": [],
+    "addedQuestions": [],
+    "metadataNewlyVerified": false,
+    "retainedPendingQuestions": [
+      "calcium-phosphorus-001",
+      "calcium-phosphorus-003",
+      "calcium-phosphorus-006",
+      "calcium-phosphorus-008",
+      "calcium-phosphorus-011",
+      "calcium-phosphorus-012",
+      "calcium-phosphorus-017",
+      "calcium-phosphorus-023",
+      "calcium-phosphorus-035",
+      "calcium-phosphorus-050",
+      "calcium-phosphorus-092",
+      "calcium-phosphorus-095",
+      "calcium-phosphorus-102"
+    ],
+    "retainedCoreBodiesPending": [
+      "Track calcium through the feedback loop",
+      "Separate vitamin D production from effect",
+      "Use FGF23 to explain phosphate control",
+      "Know what the laboratory measured",
+      "Use correction formulas cautiously"
+    ]
+  },
+  "finalSourceComparison": {
+    "status": "passed",
+    "questionReview": [
+      {
+        "id": "calcium-phosphorus-002",
+        "finalWholeQuestion": {
+          "id": "calcium-phosphorus-002",
+          "question": "What is the expected renal phosphate response to increased PTH?",
+          "choices": [
+            "Reduced proximal phosphate reabsorption",
+            "Increased proximal phosphate reabsorption",
+            "Suppressed phosphate excretion because PTH conserves both calcium and phosphate",
+            "Reduced phosphate filtration as its principal direct phosphate action"
+          ],
+          "answer": 0,
+          "rationale": "PTH inhibits proximal tubular phosphate reabsorption and promotes urinary phosphate excretion. Its calcium-conserving action does not mean that phosphate is also retained. The clinical review distinguishes this tubular transport effect from intestinal absorption or a primary reduction in filtration.",
+          "reviewHref": "#mineral-regulation"
+        },
+        "sources": [
+          "Endocrine2012 Background proximal transport",
+          "Yorvipath12.1 endogenous PTH"
+        ],
+        "wholeStemAllAlternativesKeyRationaleAndAnchorCompared": true
+      },
+      {
+        "id": "calcium-phosphorus-004",
+        "finalWholeQuestion": {
+          "id": "calcium-phosphorus-004",
+          "question": "How does calcitriol affect intestinal mineral handling?",
+          "choices": [
+            "It increases absorption of calcium and phosphate",
+            "It reduces intestinal absorption of both calcium and phosphate",
+            "It increases calcium absorption while necessarily blocking phosphate absorption",
+            "It causes renal phosphate excretion with no intestinal mineral effect"
+          ],
+          "answer": 0,
+          "rationale": "Calcitriol increases intestinal absorption of both calcium and phosphate. The book describes its calcium-absorption role, and the phosphate review and endogenous-PTH label explain the phosphate effect. Reduced absorption of both minerals, a mandatory opposing effect on phosphate, or an exclusively renal action does not match this intestinal mechanism.",
+          "reviewHref": "#mineral-regulation"
+        },
+        "sources": [
+          "Book PDF299/printed291 vitamin D",
+          "Endocrine2012 Background intestinal phosphate",
+          "Yorvipath12.1 gut calcium/phosphate"
+        ],
+        "wholeStemAllAlternativesKeyRationaleAndAnchorCompared": true
+      },
+      {
+        "id": "calcium-phosphorus-005",
+        "finalWholeQuestion": {
+          "id": "calcium-phosphorus-005",
+          "question": "Which action is most characteristic of FGF23?",
+          "choices": [
+            "Promote renal phosphate excretion and suppress calcitriol",
+            "Increase proximal renal phosphate reabsorption",
+            "Promote phosphaturia while increasing renal calcitriol production",
+            "Increase intestinal absorption as its only phosphate-regulating effect"
+          ],
+          "answer": 0,
+          "rationale": "FGF23 decreases proximal tubular phosphate reabsorption and reduces active vitamin D production. This promotes phosphate excretion while lowering calcitriol, unlike the active-vitamin-D synthesis effect described for endogenous PTH. Increased renal reabsorption, increased calcitriol production, or an exclusively intestinal mechanism does not describe the FGF23 pathway.",
+          "reviewHref": "#mineral-regulation"
+        },
+        "sources": [
+          "Endocrine2012 Renal FGF23 paragraph",
+          "Yorvipath12.1 endogenous PTH contrast"
+        ],
+        "wholeStemAllAlternativesKeyRationaleAndAnchorCompared": true
+      },
+      {
+        "id": "calcium-phosphorus-007",
+        "finalWholeQuestion": {
+          "id": "calcium-phosphorus-007",
+          "question": "Which pattern is most consistent with secondary hyperparathyroidism in advanced CKD?",
+          "choices": [
+            "Phosphate retention, reduced calcitriol effect, and elevated PTH",
+            "Enhanced renal phosphate clearance, high calcitriol, and suppressed PTH",
+            "High calcium with suppressed PTH as a requirement for secondary hyperparathyroidism",
+            "Low phosphate from increased renal clearance with unchanged calcitriol at every CKD stage"
+          ],
+          "answer": 0,
+          "rationale": "Advanced CKD can impair phosphate clearance and active vitamin D physiology, creating hypocalcemic pressure and secondary PTH elevation. The book and KDIGO describe this linked pattern; it is not a requirement that every value be abnormal in every patient. Modest PTH increases can be adaptive, so assess trends and modifiable factors rather than treating one elevated result automatically.",
+          "reviewHref": "#mineral-regulation"
+        },
+        "sources": [
+          "Book PDF297/printed289 CKD",
+          "Book PDF299/printed291 secondary PTH",
+          "KDIGO PDF34/printed33 4.2.1"
+        ],
+        "wholeStemAllAlternativesKeyRationaleAndAnchorCompared": true
+      },
+      {
+        "id": "calcium-phosphorus-009",
+        "finalWholeQuestion": {
+          "id": "calcium-phosphorus-009",
+          "question": "What does sustained excess PTH generally do to bone mineral flux?",
+          "choices": [
+            "It favors bone resorption and mineral release",
+            "It stops all bone remodeling",
+            "It mobilizes calcium from bone while preventing any phosphate release",
+            "It lowers extracellular calcium by permanently trapping both minerals in bone"
+          ],
+          "answer": 0,
+          "rationale": "Sustained excess PTH can favor bone resorption and mineral release, as the book illustrates in CKD-related secondary hyperparathyroidism. Endogenous PTH stimulates bone turnover to mobilize both calcium and phosphate; its renal phosphate-excretion effect helps explain why serum phosphate does not simply track that release. The statement concerns excess signaling, not a claim that all PTH exposure stops remodeling or has one identical bone effect.",
+          "reviewHref": "#mineral-regulation"
+        },
+        "sources": [
+          "Book PDF297/printed289 CKD bone calcium release",
+          "Yorvipath12.1 bone calcium/phosphate mobilization"
+        ],
+        "wholeStemAllAlternativesKeyRationaleAndAnchorCompared": true
+      },
+      {
+        "id": "calcium-phosphorus-013",
+        "finalWholeQuestion": {
+          "id": "calcium-phosphorus-013",
+          "question": "Hypercalcemia with an elevated PTH most strongly suggests which mechanism?",
+          "choices": [
+            "PTH-dependent hypercalcemia",
+            "A PTH-independent pattern with appropriately suppressed PTH",
+            "Normal feedback that rules out further assessment",
+            "Calcitriol-mediated hypercalcemia with PTH suppression"
+          ],
+          "answer": 0,
+          "rationale": "During hypercalcemia, an elevated or inappropriately unsuppressed PTH points toward a PTH-dependent process. Primary or tertiary hyperparathyroidism may fit, but familial hypocalciuric hypercalcemia can mimic the biochemical pattern, so the calcium-PTH pair is not a complete diagnosis. The alternatives describe suppressed-PTH physiology or incorrectly dismiss the abnormal pair.",
+          "reviewHref": "#calcium-measurement"
+        },
+        "sources": [
+          "Society2016 hypercalcemia Investigation including FHH caveat"
+        ],
+        "wholeStemAllAlternativesKeyRationaleAndAnchorCompared": true
+      },
+      {
+        "id": "calcium-phosphorus-014",
+        "finalWholeQuestion": {
+          "id": "calcium-phosphorus-014",
+          "question": "Hypercalcemia with a suppressed PTH should prompt evaluation for what?",
+          "choices": [
+            "Malignancy, vitamin D mechanisms, medications, and other non-PTH causes",
+            "Primary hyperparathyroidism solely because calcium is elevated",
+            "A normal calcium-PTH pair requiring no further evaluation",
+            "One proven malignant mechanism without additional clinical assessment"
+          ],
+          "answer": 0,
+          "rationale": "High calcium with suppressed PTH redirects evaluation toward malignancy and other non-PTH causes, including vitamin D-related or medication mechanisms. It does not prove one specific malignancy pathway, make the pair normal, or support primary PTH excess solely because calcium is high. Use the clinical history, medicines and additional mineral data to distinguish causes.",
+          "reviewHref": "#calcium-measurement"
+        },
+        "sources": [
+          "Society2016 hypercalcemia Causes and Investigation"
+        ],
+        "wholeStemAllAlternativesKeyRationaleAndAnchorCompared": true
+      },
+      {
+        "id": "calcium-phosphorus-015",
+        "finalWholeQuestion": {
+          "id": "calcium-phosphorus-015",
+          "question": "Which laboratory set best begins evaluation of unexplained hypocalcemia?",
+          "choices": [
+            "Ionized or confirmed calcium, magnesium, phosphate, PTH, kidney function, and vitamin D",
+            "Total calcium alone without albumin or clinical context",
+            "PTH alone while ignoring the phosphate, magnesium, and kidney results",
+            "Vitamin D alone before assessing clinically urgent hypocalcemia"
+          ],
+          "answer": 0,
+          "rationale": "Confirm the calcium abnormality and assess magnesium, phosphate, PTH, kidney function, and vitamin D together. The Society emergency guidance lists this mineral-hormone-renal evaluation, and calcium chloride dosing uses serum ionized calcium in the acute setting. A single isolated test misses important context; evaluation must accompany, rather than delay, urgent stabilization when symptoms warrant it.",
+          "reviewHref": "#calcium-measurement"
+        },
+        "sources": [
+          "Society2016 hypocalcemia Investigations",
+          "FDA chloride2.2 individualized ionized calcium",
+          "Society2016 emergency treatment context"
+        ],
+        "wholeStemAllAlternativesKeyRationaleAndAnchorCompared": true
+      },
+      {
+        "id": "calcium-phosphorus-090",
+        "finalWholeQuestion": {
+          "id": "calcium-phosphorus-090",
+          "question": "Calcium 11.8 mg/dL with an elevated PTH and recurrent nephrolithiasis. Which interpretation or action is most defensible?",
+          "choices": [
+            "PTH-dependent hypercalcemia",
+            "A suppressed-PTH malignancy pattern despite the measured elevated PTH",
+            "Vitamin D intoxication established by recurrent stones without interpreting PTH",
+            "Normal feedback because the calcium is above the reference interval"
+          ],
+          "answer": 0,
+          "rationale": "Calcium 11.8 mg/dL with an elevated PTH is a PTH-dependent biochemical pattern. Primary or tertiary hyperparathyroidism may explain it, but the PTH result alone does not settle the precise cause; the Society guidance warns that familial hypocalciuric hypercalcemia can mimic the pair. The alternatives disregard the elevated PTH or wrongly call the abnormal results normal.",
+          "reviewHref": "#calcium-measurement"
+        },
+        "sources": [
+          "Society2016 hypercalcemia Investigation including FHH caveat"
+        ],
+        "wholeStemAllAlternativesKeyRationaleAndAnchorCompared": true
+      }
+    ],
+    "wholeBodyReview": [
+      {
+        "lesson": "calcium-measurement",
+        "heading": "Let PTH organize the differential",
+        "sources": [
+          "Society2016 calcium Investigation/Causes/hypocalcemia Investigations"
+        ],
+        "allSentencesCompared": true
+      },
+      {
+        "lesson": "mineral-regulation",
+        "heading": "Contrast PTH and FGF23 before treating phosphate",
+        "sources": [
+          "Endocrine2012 Background/Renal FGF23",
+          "Yorvipath12.1",
+          "KDIGO4.1.5 PDF29 and4.2.1 PDF34"
+        ],
+        "allSentencesCompared": true
+      }
+    ],
+    "limits": "No additional whole metadata, check, figure, lesson, parent or cumulative clinical verification. One stem clarified sustained excess PTH. All original correct texts, keys, IDs and anchors preserved. No new calculation or numerical treatment regimen."
+  },
+  "validation": {
+    "productionBuild": {
+      "status": "passed",
+      "exitCode": 0,
+      "pages": 567,
+      "isolatedBaseCommit": "1595adae7b29ca7e6b7726edfd8e1180bdd124c7"
+    },
+    "structure": {
+      "modules": 1,
+      "questions": 108,
+      "hardErrors": [],
+      "sourceGaps": [],
+      "sizeAdvisories": [],
+      "thinLessons": [],
+      "weakestModules": [
+        {
+          "module": "calcium-phosphorus-homeostasis",
+          "lessons": 6,
+          "questions": 108,
+          "minimumLessonCoverage": 8
+        }
+      ]
+    },
+    "objectPreservation": {
+      "status": "passed",
+      "bankBefore": 108,
+      "bankAfter": 108,
+      "wholeQuestionsReconciled": 9,
+      "all108OriginalIdsKeysCorrectTextsAnchorsRelativeOrderPreserved": true,
+      "oneStemClarifiedToSustainedExcessPTH": true,
+      "other99WholeQuestionObjectsUnchanged": true,
+      "oneWholeBodyReconciledOneAdded": true,
+      "allOtherBodiesMetadataChecksFiguresReferencesUnchanged": true,
+      "all1180WholeCumulativeObjectsUnchanged": true,
+      "noReviewedUnitQuestionInOriginalCumulativeSelection": true,
+      "allOtherModuleWholeObjectsUnchanged": true,
+      "wholeParentModuleVerified": false
+    },
+    "browser": {
+      "status": "passed",
+      "results": [
+        {
+          "width": 1440,
+          "module": "calcium-phosphorus-homeostasis",
+          "bodies": 32,
+          "exactMetadata": true,
+          "checkResults": [],
+          "references": 20,
+          "wholeLessonClinicalVerification": false,
+          "bookSupportedQuestionScopeVerified": true,
+          "attempts": [
+            {
+              "target": "calcium-phosphorus-002",
+              "seed": 8,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-086",
+                "calcium-phosphorus-019",
+                "calcium-phosphorus-047",
+                "calcium-phosphorus-061",
+                "calcium-phosphorus-049",
+                "calcium-phosphorus-002",
+                "calcium-phosphorus-neonatal-ceftriaxone-compatibility",
+                "calcium-phosphorus-077",
+                "calcium-phosphorus-iron-repeat-monitoring",
+                "calcium-phosphorus-042"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-002",
+              "seed": 8,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-086",
+                "calcium-phosphorus-019",
+                "calcium-phosphorus-047",
+                "calcium-phosphorus-061",
+                "calcium-phosphorus-049",
+                "calcium-phosphorus-002",
+                "calcium-phosphorus-neonatal-ceftriaxone-compatibility",
+                "calcium-phosphorus-077",
+                "calcium-phosphorus-iron-repeat-monitoring",
+                "calcium-phosphorus-042"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-004",
+              "seed": 1,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-012",
+                "calcium-phosphorus-024",
+                "calcium-phosphorus-iron-persistent-warning",
+                "calcium-phosphorus-019",
+                "calcium-phosphorus-085",
+                "calcium-phosphorus-004",
+                "calcium-phosphorus-102",
+                "calcium-phosphorus-097",
+                "calcium-phosphorus-048",
+                "calcium-phosphorus-090"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-004",
+              "seed": 1,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-012",
+                "calcium-phosphorus-024",
+                "calcium-phosphorus-iron-persistent-warning",
+                "calcium-phosphorus-019",
+                "calcium-phosphorus-085",
+                "calcium-phosphorus-004",
+                "calcium-phosphorus-102",
+                "calcium-phosphorus-097",
+                "calcium-phosphorus-048",
+                "calcium-phosphorus-090"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-005",
+              "seed": 4,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-070",
+                "calcium-phosphorus-010",
+                "calcium-phosphorus-017",
+                "calcium-phosphorus-027",
+                "calcium-phosphorus-042",
+                "calcium-phosphorus-008",
+                "calcium-phosphorus-096",
+                "calcium-phosphorus-005",
+                "calcium-phosphorus-016",
+                "calcium-phosphorus-079"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-005",
+              "seed": 4,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-070",
+                "calcium-phosphorus-010",
+                "calcium-phosphorus-017",
+                "calcium-phosphorus-027",
+                "calcium-phosphorus-042",
+                "calcium-phosphorus-008",
+                "calcium-phosphorus-096",
+                "calcium-phosphorus-005",
+                "calcium-phosphorus-016",
+                "calcium-phosphorus-079"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-007",
+              "seed": 46,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-010",
+                "calcium-phosphorus-025",
+                "calcium-phosphorus-neonatal-ceftriaxone-compatibility",
+                "calcium-phosphorus-017",
+                "calcium-phosphorus-007",
+                "calcium-phosphorus-034",
+                "calcium-phosphorus-104",
+                "calcium-phosphorus-027",
+                "calcium-phosphorus-iron-repeat-monitoring",
+                "calcium-phosphorus-003"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-007",
+              "seed": 46,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-010",
+                "calcium-phosphorus-025",
+                "calcium-phosphorus-neonatal-ceftriaxone-compatibility",
+                "calcium-phosphorus-017",
+                "calcium-phosphorus-007",
+                "calcium-phosphorus-034",
+                "calcium-phosphorus-104",
+                "calcium-phosphorus-027",
+                "calcium-phosphorus-iron-repeat-monitoring",
+                "calcium-phosphorus-003"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-009",
+              "seed": 12,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-005",
+                "calcium-phosphorus-044",
+                "calcium-phosphorus-046",
+                "calcium-phosphorus-neonatal-ceftriaxone-compatibility",
+                "calcium-phosphorus-iron-repeat-monitoring",
+                "calcium-phosphorus-100",
+                "calcium-phosphorus-079",
+                "calcium-phosphorus-016",
+                "calcium-phosphorus-009",
+                "calcium-phosphorus-019"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-009",
+              "seed": 12,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-005",
+                "calcium-phosphorus-044",
+                "calcium-phosphorus-046",
+                "calcium-phosphorus-neonatal-ceftriaxone-compatibility",
+                "calcium-phosphorus-iron-repeat-monitoring",
+                "calcium-phosphorus-100",
+                "calcium-phosphorus-079",
+                "calcium-phosphorus-016",
+                "calcium-phosphorus-009",
+                "calcium-phosphorus-019"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-013",
+              "seed": 7,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-093",
+                "calcium-phosphorus-061",
+                "calcium-phosphorus-046",
+                "calcium-phosphorus-067",
+                "calcium-phosphorus-105",
+                "calcium-phosphorus-013",
+                "calcium-phosphorus-022",
+                "calcium-phosphorus-097",
+                "calcium-phosphorus-038",
+                "calcium-phosphorus-098"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-013",
+              "seed": 7,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-093",
+                "calcium-phosphorus-061",
+                "calcium-phosphorus-046",
+                "calcium-phosphorus-067",
+                "calcium-phosphorus-105",
+                "calcium-phosphorus-013",
+                "calcium-phosphorus-022",
+                "calcium-phosphorus-097",
+                "calcium-phosphorus-038",
+                "calcium-phosphorus-098"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-014",
+              "seed": 9,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-042",
+                "calcium-phosphorus-082",
+                "calcium-phosphorus-070",
+                "calcium-phosphorus-106",
+                "calcium-phosphorus-077",
+                "calcium-phosphorus-016",
+                "calcium-phosphorus-002",
+                "calcium-phosphorus-069",
+                "calcium-phosphorus-014",
+                "calcium-phosphorus-088"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-014",
+              "seed": 9,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-042",
+                "calcium-phosphorus-082",
+                "calcium-phosphorus-070",
+                "calcium-phosphorus-106",
+                "calcium-phosphorus-077",
+                "calcium-phosphorus-016",
+                "calcium-phosphorus-002",
+                "calcium-phosphorus-069",
+                "calcium-phosphorus-014",
+                "calcium-phosphorus-088"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-015",
+              "seed": 31,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-062",
+                "calcium-phosphorus-001",
+                "calcium-phosphorus-021",
+                "calcium-phosphorus-002",
+                "calcium-phosphorus-095",
+                "calcium-phosphorus-072",
+                "calcium-phosphorus-027",
+                "calcium-phosphorus-039",
+                "calcium-phosphorus-015",
+                "calcium-phosphorus-037"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-015",
+              "seed": 31,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-062",
+                "calcium-phosphorus-001",
+                "calcium-phosphorus-021",
+                "calcium-phosphorus-002",
+                "calcium-phosphorus-095",
+                "calcium-phosphorus-072",
+                "calcium-phosphorus-027",
+                "calcium-phosphorus-039",
+                "calcium-phosphorus-015",
+                "calcium-phosphorus-037"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-090",
+              "seed": 1,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-012",
+                "calcium-phosphorus-024",
+                "calcium-phosphorus-iron-persistent-warning",
+                "calcium-phosphorus-019",
+                "calcium-phosphorus-085",
+                "calcium-phosphorus-004",
+                "calcium-phosphorus-102",
+                "calcium-phosphorus-097",
+                "calcium-phosphorus-048",
+                "calcium-phosphorus-090"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-090",
+              "seed": 1,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-012",
+                "calcium-phosphorus-024",
+                "calcium-phosphorus-iron-persistent-warning",
+                "calcium-phosphorus-019",
+                "calcium-phosphorus-085",
+                "calcium-phosphorus-004",
+                "calcium-phosphorus-102",
+                "calcium-phosphorus-097",
+                "calcium-phosphorus-048",
+                "calcium-phosphorus-090"
+              ]
+            }
+          ],
+          "noHorizontalOverflow": true,
+          "unauthenticated": true
+        },
+        {
+          "width": 390,
+          "module": "calcium-phosphorus-homeostasis",
+          "bodies": 32,
+          "exactMetadata": true,
+          "checkResults": [],
+          "references": 20,
+          "wholeLessonClinicalVerification": false,
+          "bookSupportedQuestionScopeVerified": true,
+          "attempts": [
+            {
+              "target": "calcium-phosphorus-002",
+              "seed": 8,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-086",
+                "calcium-phosphorus-019",
+                "calcium-phosphorus-047",
+                "calcium-phosphorus-061",
+                "calcium-phosphorus-049",
+                "calcium-phosphorus-002",
+                "calcium-phosphorus-neonatal-ceftriaxone-compatibility",
+                "calcium-phosphorus-077",
+                "calcium-phosphorus-iron-repeat-monitoring",
+                "calcium-phosphorus-042"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-002",
+              "seed": 8,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-086",
+                "calcium-phosphorus-019",
+                "calcium-phosphorus-047",
+                "calcium-phosphorus-061",
+                "calcium-phosphorus-049",
+                "calcium-phosphorus-002",
+                "calcium-phosphorus-neonatal-ceftriaxone-compatibility",
+                "calcium-phosphorus-077",
+                "calcium-phosphorus-iron-repeat-monitoring",
+                "calcium-phosphorus-042"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-004",
+              "seed": 1,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-012",
+                "calcium-phosphorus-024",
+                "calcium-phosphorus-iron-persistent-warning",
+                "calcium-phosphorus-019",
+                "calcium-phosphorus-085",
+                "calcium-phosphorus-004",
+                "calcium-phosphorus-102",
+                "calcium-phosphorus-097",
+                "calcium-phosphorus-048",
+                "calcium-phosphorus-090"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-004",
+              "seed": 1,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-012",
+                "calcium-phosphorus-024",
+                "calcium-phosphorus-iron-persistent-warning",
+                "calcium-phosphorus-019",
+                "calcium-phosphorus-085",
+                "calcium-phosphorus-004",
+                "calcium-phosphorus-102",
+                "calcium-phosphorus-097",
+                "calcium-phosphorus-048",
+                "calcium-phosphorus-090"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-005",
+              "seed": 4,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-070",
+                "calcium-phosphorus-010",
+                "calcium-phosphorus-017",
+                "calcium-phosphorus-027",
+                "calcium-phosphorus-042",
+                "calcium-phosphorus-008",
+                "calcium-phosphorus-096",
+                "calcium-phosphorus-005",
+                "calcium-phosphorus-016",
+                "calcium-phosphorus-079"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-005",
+              "seed": 4,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-070",
+                "calcium-phosphorus-010",
+                "calcium-phosphorus-017",
+                "calcium-phosphorus-027",
+                "calcium-phosphorus-042",
+                "calcium-phosphorus-008",
+                "calcium-phosphorus-096",
+                "calcium-phosphorus-005",
+                "calcium-phosphorus-016",
+                "calcium-phosphorus-079"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-007",
+              "seed": 46,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-010",
+                "calcium-phosphorus-025",
+                "calcium-phosphorus-neonatal-ceftriaxone-compatibility",
+                "calcium-phosphorus-017",
+                "calcium-phosphorus-007",
+                "calcium-phosphorus-034",
+                "calcium-phosphorus-104",
+                "calcium-phosphorus-027",
+                "calcium-phosphorus-iron-repeat-monitoring",
+                "calcium-phosphorus-003"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-007",
+              "seed": 46,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-010",
+                "calcium-phosphorus-025",
+                "calcium-phosphorus-neonatal-ceftriaxone-compatibility",
+                "calcium-phosphorus-017",
+                "calcium-phosphorus-007",
+                "calcium-phosphorus-034",
+                "calcium-phosphorus-104",
+                "calcium-phosphorus-027",
+                "calcium-phosphorus-iron-repeat-monitoring",
+                "calcium-phosphorus-003"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-009",
+              "seed": 12,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-005",
+                "calcium-phosphorus-044",
+                "calcium-phosphorus-046",
+                "calcium-phosphorus-neonatal-ceftriaxone-compatibility",
+                "calcium-phosphorus-iron-repeat-monitoring",
+                "calcium-phosphorus-100",
+                "calcium-phosphorus-079",
+                "calcium-phosphorus-016",
+                "calcium-phosphorus-009",
+                "calcium-phosphorus-019"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-009",
+              "seed": 12,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-005",
+                "calcium-phosphorus-044",
+                "calcium-phosphorus-046",
+                "calcium-phosphorus-neonatal-ceftriaxone-compatibility",
+                "calcium-phosphorus-iron-repeat-monitoring",
+                "calcium-phosphorus-100",
+                "calcium-phosphorus-079",
+                "calcium-phosphorus-016",
+                "calcium-phosphorus-009",
+                "calcium-phosphorus-019"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-013",
+              "seed": 7,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-093",
+                "calcium-phosphorus-061",
+                "calcium-phosphorus-046",
+                "calcium-phosphorus-067",
+                "calcium-phosphorus-105",
+                "calcium-phosphorus-013",
+                "calcium-phosphorus-022",
+                "calcium-phosphorus-097",
+                "calcium-phosphorus-038",
+                "calcium-phosphorus-098"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-013",
+              "seed": 7,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-093",
+                "calcium-phosphorus-061",
+                "calcium-phosphorus-046",
+                "calcium-phosphorus-067",
+                "calcium-phosphorus-105",
+                "calcium-phosphorus-013",
+                "calcium-phosphorus-022",
+                "calcium-phosphorus-097",
+                "calcium-phosphorus-038",
+                "calcium-phosphorus-098"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-014",
+              "seed": 9,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-042",
+                "calcium-phosphorus-082",
+                "calcium-phosphorus-070",
+                "calcium-phosphorus-106",
+                "calcium-phosphorus-077",
+                "calcium-phosphorus-016",
+                "calcium-phosphorus-002",
+                "calcium-phosphorus-069",
+                "calcium-phosphorus-014",
+                "calcium-phosphorus-088"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-014",
+              "seed": 9,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-042",
+                "calcium-phosphorus-082",
+                "calcium-phosphorus-070",
+                "calcium-phosphorus-106",
+                "calcium-phosphorus-077",
+                "calcium-phosphorus-016",
+                "calcium-phosphorus-002",
+                "calcium-phosphorus-069",
+                "calcium-phosphorus-014",
+                "calcium-phosphorus-088"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-015",
+              "seed": 31,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-062",
+                "calcium-phosphorus-001",
+                "calcium-phosphorus-021",
+                "calcium-phosphorus-002",
+                "calcium-phosphorus-095",
+                "calcium-phosphorus-072",
+                "calcium-phosphorus-027",
+                "calcium-phosphorus-039",
+                "calcium-phosphorus-015",
+                "calcium-phosphorus-037"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-015",
+              "seed": 31,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-062",
+                "calcium-phosphorus-001",
+                "calcium-phosphorus-021",
+                "calcium-phosphorus-002",
+                "calcium-phosphorus-095",
+                "calcium-phosphorus-072",
+                "calcium-phosphorus-027",
+                "calcium-phosphorus-039",
+                "calcium-phosphorus-015",
+                "calcium-phosphorus-037"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-090",
+              "seed": 1,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-012",
+                "calcium-phosphorus-024",
+                "calcium-phosphorus-iron-persistent-warning",
+                "calcium-phosphorus-019",
+                "calcium-phosphorus-085",
+                "calcium-phosphorus-004",
+                "calcium-phosphorus-102",
+                "calcium-phosphorus-097",
+                "calcium-phosphorus-048",
+                "calcium-phosphorus-090"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-090",
+              "seed": 1,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-012",
+                "calcium-phosphorus-024",
+                "calcium-phosphorus-iron-persistent-warning",
+                "calcium-phosphorus-019",
+                "calcium-phosphorus-085",
+                "calcium-phosphorus-004",
+                "calcium-phosphorus-102",
+                "calcium-phosphorus-097",
+                "calcium-phosphorus-048",
+                "calcium-phosphorus-090"
+              ]
+            }
+          ],
+          "noHorizontalOverflow": true,
+          "unauthenticated": true
+        }
+      ],
+      "errors": [],
+      "captures": [
+        "body-module-Contrast-PTH-and-FGF23-before-treating-phosphate-1440.png",
+        "body-module-Let-PTH-organize-the-differential-1440.png",
+        "references-module-1440.png",
+        "question-calcium-phosphorus-002-correct-1440.png",
+        "question-calcium-phosphorus-004-correct-1440.png",
+        "question-calcium-phosphorus-005-correct-1440.png",
+        "question-calcium-phosphorus-007-correct-1440.png",
+        "question-calcium-phosphorus-009-correct-1440.png",
+        "question-calcium-phosphorus-013-correct-1440.png",
+        "question-calcium-phosphorus-014-correct-1440.png",
+        "question-calcium-phosphorus-015-correct-1440.png",
+        "question-calcium-phosphorus-090-correct-1440.png",
+        "body-module-Contrast-PTH-and-FGF23-before-treating-phosphate-390.png",
+        "body-module-Let-PTH-organize-the-differential-390.png",
+        "references-module-390.png",
+        "question-calcium-phosphorus-002-incorrect-390.png",
+        "question-calcium-phosphorus-004-incorrect-390.png",
+        "question-calcium-phosphorus-005-incorrect-390.png",
+        "question-calcium-phosphorus-007-incorrect-390.png",
+        "question-calcium-phosphorus-009-incorrect-390.png",
+        "question-calcium-phosphorus-013-incorrect-390.png",
+        "question-calcium-phosphorus-014-incorrect-390.png",
+        "question-calcium-phosphorus-015-incorrect-390.png",
+        "question-calcium-phosphorus-090-incorrect-390.png"
+      ]
+    },
+    "visualInspection": {
+      "status": "passed",
+      "rawCapturesActuallyInspected": 26,
+      "nativePairsActuallyInspected": 12,
+      "pairs": [
+        {
+          "pair": "pair-body-module-Contrast-PTH-and-FGF23-before-treating-phosphate.png",
+          "originals": [
+            "body-module-Contrast-PTH-and-FGF23-before-treating-phosphate-1440.png",
+            "body-module-Contrast-PTH-and-FGF23-before-treating-phosphate-390.png"
+          ]
+        },
+        {
+          "pair": "pair-body-module-Let-PTH-organize-the-differential.png",
+          "originals": [
+            "body-module-Let-PTH-organize-the-differential-1440.png",
+            "body-module-Let-PTH-organize-the-differential-390.png"
+          ]
+        },
+        {
+          "pair": "pair-question-calcium-phosphorus-002-correct.png",
+          "originals": [
+            "question-calcium-phosphorus-002-correct-1440.png",
+            "question-calcium-phosphorus-002-incorrect-390.png"
+          ]
+        },
+        {
+          "pair": "pair-question-calcium-phosphorus-004-correct.png",
+          "originals": [
+            "question-calcium-phosphorus-004-correct-1440.png",
+            "question-calcium-phosphorus-004-incorrect-390.png"
+          ]
+        },
+        {
+          "pair": "pair-question-calcium-phosphorus-005-correct.png",
+          "originals": [
+            "question-calcium-phosphorus-005-correct-1440.png",
+            "question-calcium-phosphorus-005-incorrect-390.png"
+          ]
+        },
+        {
+          "pair": "pair-question-calcium-phosphorus-007-correct.png",
+          "originals": [
+            "question-calcium-phosphorus-007-correct-1440.png",
+            "question-calcium-phosphorus-007-incorrect-390.png"
+          ]
+        },
+        {
+          "pair": "pair-question-calcium-phosphorus-009-correct.png",
+          "originals": [
+            "question-calcium-phosphorus-009-correct-1440.png",
+            "question-calcium-phosphorus-009-incorrect-390.png"
+          ]
+        },
+        {
+          "pair": "pair-question-calcium-phosphorus-013-correct.png",
+          "originals": [
+            "question-calcium-phosphorus-013-correct-1440.png",
+            "question-calcium-phosphorus-013-incorrect-390.png"
+          ]
+        },
+        {
+          "pair": "pair-question-calcium-phosphorus-014-correct.png",
+          "originals": [
+            "question-calcium-phosphorus-014-correct-1440.png",
+            "question-calcium-phosphorus-014-incorrect-390.png"
+          ]
+        },
+        {
+          "pair": "pair-question-calcium-phosphorus-015-correct.png",
+          "originals": [
+            "question-calcium-phosphorus-015-correct-1440.png",
+            "question-calcium-phosphorus-015-incorrect-390.png"
+          ]
+        },
+        {
+          "pair": "pair-question-calcium-phosphorus-090-correct.png",
+          "originals": [
+            "question-calcium-phosphorus-090-correct-1440.png",
+            "question-calcium-phosphorus-090-incorrect-390.png"
+          ]
+        },
+        {
+          "pair": "pair-references-module.png",
+          "originals": [
+            "references-module-1440.png",
+            "references-module-390.png"
+          ]
+        }
+      ],
+      "additionalViewportCapturesActuallyInspected": [
+        "reference-header-1440.png",
+        "reference-header-390.png"
+      ],
+      "findings": "Both whole body sections and nine whole question cards readable on desktop/mobile, with complete feedback and review links. Sticky navigation obscured reference title in mobile section capture; separate actual viewport verified the title and introduction. All20 reference hrefs verified in DOM. 320px document overflow check passed. Existing layout unchanged."
+    },
+    "numericChecks": "No new calculation question or numerical treatment regimen adopted; preserved existing11.8mg/dL case interpreted against source",
+    "limits": "Unauthenticated isolated preview; unchanged content DOM is technical evidence only. No full lesson/parent/EN/chapter closure or production publication established."
+  },
+  "remainingReview": {
+    "questionIds": [
+      "calcium-phosphorus-001",
+      "calcium-phosphorus-003",
+      "calcium-phosphorus-006",
+      "calcium-phosphorus-008",
+      "calcium-phosphorus-011",
+      "calcium-phosphorus-012",
+      "calcium-phosphorus-017",
+      "calcium-phosphorus-023",
+      "calcium-phosphorus-035",
+      "calcium-phosphorus-050",
+      "calcium-phosphorus-092",
+      "calcium-phosphorus-095",
+      "calcium-phosphorus-102"
+    ],
+    "bodyHeadings": [
+      "Track calcium through the feedback loop",
+      "Separate vitamin D production from effect",
+      "Use FGF23 to explain phosphate control",
+      "Know what the laboratory measured",
+      "Use correction formulas cautiously"
+    ],
+    "nextAction": "Continue the calcium/phosphorus parent with the newly approved additional official guidelines, FDA labels and primary academic clinical references. Resolve chronic hypoparathyroidism/Mg physiology, ionized/pH/correction limits, vitaminD stores, FHH urinary phenotype, hypercalcemia dialysis, aluminum toxicity and remaining acute phosphate body; compare each whole item and verify rendered changes. Then complete calcium parent and enteral reintegration. Sequential checkpoint remains Chapter1 printed7/PDF19 entry15 fluid needs with Chapter11 feeding dependencies. Full82-chapter goal remains active."
+  },
+  "release": {
+    "branch": "audit/rxprep-content-2026-09-24",
+    "commit": null,
+    "push": "pending",
+    "receipt": "enteral-nutrition-broader-mineral-interpretation-release.json",
+    "mainMerge": "not performed",
+    "production": "not verified"
+  },
+  "wholeGoalComplete": false
+}
