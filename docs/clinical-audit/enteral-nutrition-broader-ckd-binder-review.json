@@ -1,0 +1,2590 @@
+{
+  "updated": "2026-10-05T03:17:55.489159+00:00",
+  "unit": "enteral-nutrition:broader-ckd-mineral-bone-and-binder-administration",
+  "status": "Scoped CKD and binder unit verified; full lesson, calcium parent, EN and chapters remain reviewing",
+  "baseCommit": "1c5a5d46bb16f72af4ebe85472bb7a0880ae43cd",
+  "sourcePolicy": {
+    "primary": "Cover-verified supplied RxPrep2023 book; private source files outside Git",
+    "approvalText": "I give approval",
+    "newApprovalScope": [
+      "KDIGO2017CKD-MBD",
+      "EndocrineSocietyhypercalcemiaofmalignancy",
+      "SocietyforEndocrinologyacutehypocalcemia",
+      "SocietyforEndocrinologyacutehypercalcemia"
+    ],
+    "newApprovalUseThisUnit": "KDIGO2017 and Society2016 acute hypercalcemia Causes/Investigation supporting retained PTH diagram label; HCM and acute hypocalcemia sources remain pending review",
+    "previousApprovalUsed": "FDA product labeling for feeding-related administration and interactions",
+    "noGeneralOutsideSourceAuthorizationInferred": true
+  },
+  "sourceReview": {
+    "privateBook": {
+      "pdfPagesTextRenderedActuallyViewed": [
+        297,
+        298,
+        299,
+        814
+      ],
+      "printedFooters": [
+        289,
+        290,
+        291,
+        804
+      ],
+      "completeAdoptedScopes": [
+        "CKD-MBD text and complete diagram/caption",
+        "Complete phosphate-binder table over two pages and interaction section",
+        "Secondary PTH and complete vitaminD/calcimimetic table",
+        "Complete TLS text and figure; no TLS drug dose adopted"
+      ]
+    },
+    "approvedKdigo": {
+      "url": "https://kdigo.org/wp-content/uploads/2018/04/2017-KDIGO-CKD-MBD-GL-Update.pdf",
+      "download": "Official public PDF with standard browser header; 60pages",
+      "printedPagesTextAndOriginalRendersActuallyReviewed": [
+        15,
+        16,
+        17,
+        25,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33
+      ],
+      "recommendations": [
+        "3.1.1-3.1.5",
+        "3.2.1-3.2.3",
+        "3.3.1-3.3.2",
+        "4.1.1-4.1.9",
+        "4.2.1-4.2.4"
+      ],
+      "clinicalScope": "Adult CKD, with explicit nondialysis/dialysis distinction. No universal pediatric restriction or fixed calcium ceiling adopted."
+    },
+    "approvedSocietyFigureScope": {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5314807/",
+      "publication": "October2016;EndocrineConnections5G9-G11",
+      "articleContextTextRead": true,
+      "originalIntroductionCausesInvestigationActuallyViewed": true,
+      "newTreatmentDoseOrCalciumFormulaClaimAdopted": false
+    },
+    "approvedProductLabels": {
+      "fosrenol": {
+        "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f10776b2-2c25-4343-aabe-68f302e5cb54",
+        "revision": "August2024",
+        "completeSectionsActuallyViewed": [
+          "2",
+          "5.1",
+          "7.2",
+          "7.3",
+          "7.4"
+        ],
+        "contraindicationsTextRead": true
+      },
+      "renvela": {
+        "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e6328460-a57b-450b-a48c-6dcd4b476360",
+        "revision": "March2023; DailyMed page updated November2025",
+        "completeSectionsActuallyViewed": [
+          "2.2 includingTable4",
+          "5.1",
+          "7 includingTable5"
+        ],
+        "contraindicationsTextRead": true
+      },
+      "visualCaptureCorrection": "Initial substring2.2 matched12.2; correct complete2.2/table4 recaptured and actually viewed before adoption."
+    }
+  },
+  "coverage": {
+    "evidence": "enteral-nutrition-broader-ckd-binder-review.json",
+    "moduleBankBefore": 102,
+    "moduleBankAfter": 104,
+    "wholeQuestionsVerified": 14,
+    "existingQuestionsNewlyVerified": 12,
+    "newDistinctQuestionsAdded": 2,
+    "sourceVerifiedBankIds": [
+      "calcium-phosphorus-043",
+      "calcium-phosphorus-044",
+      "calcium-phosphorus-045",
+      "calcium-phosphorus-046",
+      "calcium-phosphorus-047",
+      "calcium-phosphorus-048",
+      "calcium-phosphorus-049",
+      "calcium-phosphorus-096",
+      "calcium-phosphorus-099",
+      "calcium-phosphorus-103",
+      "calcium-phosphorus-105",
+      "calcium-phosphorus-109",
+      "calcium-phosphorus-binder-formulation-selection",
+      "calcium-phosphorus-binder-medicine-reconciliation"
+    ],
+    "broaderFeedingBankVerifiedAfter": 261,
+    "wholeBodiesVerified": 6,
+    "retainedWholeBodiesReconciled": 4,
+    "newWholeBodiesAdded": 2,
+    "sourceVerifiedBodyHeadings": [
+      "Treat a pattern, not a single number",
+      "Reduce absorbable phosphate",
+      "Choose binders by patient risk",
+      "Coordinate hormone and dialysis therapy",
+      "Select a binder formulation deliberately",
+      "Check binder interactions before scheduling"
+    ],
+    "embeddedCheckVerified": true,
+    "figureVerified": true,
+    "derivedCumulative109Verified": true,
+    "lessonQuestionsVerified": 14,
+    "lessonQuestionTotal": 15,
+    "remainingQuestionIds": [
+      "calcium-phosphorus-050"
+    ],
+    "remainingBodyHeadings": [
+      "Recognize acute phosphate toxicity"
+    ],
+    "wholeLessonMetadataVerified": false,
+    "wholeLessonVerified": false,
+    "wholeParentModuleVerified": false,
+    "wholeENModuleVerified": false,
+    "wholeChaptersVerified": false,
+    "all102OriginalIdsKeysCorrectTextsAnchorsRelativeOrderPreserved": true,
+    "fiveOriginalCumulativeSelectionsPreserved": true,
+    "other1179CumulativeWholeObjectsUnchanged": true
+  },
+  "changes": {
+    "questions": {
+      "calcium-phosphorus-043": {
+        "before": {
+          "id": "calcium-phosphorus-043",
+          "question": "How does KDIGO recommend making CKD mineral and bone disorder treatment decisions?",
+          "choices": [
+            "Use serial calcium, phosphate, and PTH assessments together",
+            "Use a single phosphate result",
+            "Ignore calcium",
+            "Treat PTH without checking modifiable factors"
+          ],
+          "answer": 0,
+          "rationale": "The guideline emphasizes integrated serial assessment.",
+          "reviewHref": "#hyperphosphatemia-ckd-mbd"
+        },
+        "after": {
+          "id": "calcium-phosphorus-043",
+          "question": "How does KDIGO recommend making CKD mineral and bone disorder treatment decisions?",
+          "choices": [
+            "Use serial calcium, phosphate, and PTH assessments together",
+            "Use a single phosphate result",
+            "Ignore calcium",
+            "Treat PTH without checking modifiable factors"
+          ],
+          "answer": 0,
+          "rationale": "KDIGO recommendation 4.1.1 considers serial calcium, phosphate, and PTH together. A single phosphate result or ignoring calcium loses the treatment context; rising PTH also requires evaluation of modifiable mineral and vitamin D factors.",
+          "reviewHref": "#hyperphosphatemia-ckd-mbd"
+        }
+      },
+      "calcium-phosphorus-044": {
+        "before": {
+          "id": "calcium-phosphorus-044",
+          "question": "Which dietary phosphate source is generally most absorbable?",
+          "choices": [
+            "Inorganic phosphate additive",
+            "Plant phytate",
+            "Unprocessed legume phosphate only",
+            "Fiber"
+          ],
+          "answer": 0,
+          "rationale": "Inorganic additives are highly bioavailable and can contribute a large hidden load.",
+          "reviewHref": "#hyperphosphatemia-ckd-mbd"
+        },
+        "after": {
+          "id": "calcium-phosphorus-044",
+          "question": "Which dietary phosphate source is generally most absorbable?",
+          "choices": [
+            "Inorganic phosphate additive",
+            "Plant phytate",
+            "Unprocessed legume phosphate only",
+            "Fiber"
+          ],
+          "answer": 0,
+          "rationale": "Inorganic phosphate additives are readily absorbed and may be underreported in nutrient databases. Phytate-bound phosphate in plants, including legumes, is less available; fiber is not a competing phosphate source. Reduce highly absorbable additives without compromising adequate protein intake.",
+          "reviewHref": "#hyperphosphatemia-ckd-mbd"
+        }
+      },
+      "calcium-phosphorus-045": {
+        "before": {
+          "id": "calcium-phosphorus-045",
+          "question": "When should most phosphate binders be taken?",
+          "choices": [
+            "With phosphate-containing meals or snacks",
+            "Only at bedtime without food",
+            "One week after the meal",
+            "Only when serum calcium is measured"
+          ],
+          "answer": 0,
+          "rationale": "Binders act within the gastrointestinal tract on dietary phosphate.",
+          "reviewHref": "#hyperphosphatemia-ckd-mbd"
+        },
+        "after": {
+          "id": "calcium-phosphorus-045",
+          "question": "When should most phosphate binders be taken?",
+          "choices": [
+            "With phosphate-containing meals or snacks",
+            "Only at bedtime without food",
+            "One week after the meal",
+            "Only when serum calcium is measured"
+          ],
+          "answer": 0,
+          "rationale": "Binders must be present in the gut with dietary phosphate. A bedtime dose without food, a dose a week later, or a dose linked only to a calcium blood test does not target the phosphate-containing meal. Match prescribed doses to actual meals or snacks.",
+          "reviewHref": "#hyperphosphatemia-ckd-mbd"
+        }
+      },
+      "calcium-phosphorus-046": {
+        "before": {
+          "id": "calcium-phosphorus-046",
+          "question": "What is a major limitation of calcium-based phosphate binders?",
+          "choices": [
+            "They increase calcium load and can contribute to hypercalcemia or calcification risk",
+            "They contain no binding ingredient",
+            "They always cause hypocalcemia",
+            "They work only intravenously"
+          ],
+          "answer": 0,
+          "rationale": "The added calcium burden is a major selection concern.",
+          "reviewHref": "#hyperphosphatemia-ckd-mbd"
+        },
+        "after": {
+          "id": "calcium-phosphorus-046",
+          "question": "What is a major limitation of calcium-based phosphate binders?",
+          "choices": [
+            "They increase calcium load and can contribute to hypercalcemia or calcification risk",
+            "They contain no binding ingredient",
+            "They always cause hypocalcemia",
+            "They work only intravenously"
+          ],
+          "answer": 0,
+          "rationale": "Calcium acetate and calcium carbonate both bind phosphate and add calcium. Hypercalcemia and excess calcium exposure are important selection concerns; KDIGO suggests restricting their dose in adults receiving phosphate-lowering treatment. They are oral agents, do not always cause hypocalcemia, and should not be assumed harmless simply because phosphate falls.",
+          "reviewHref": "#hyperphosphatemia-ckd-mbd"
+        }
+      },
+      "calcium-phosphorus-047": {
+        "before": {
+          "id": "calcium-phosphorus-047",
+          "question": "Which binder can also increase iron indices?",
+          "choices": [
+            "Ferric citrate",
+            "Sevelamer carbonate",
+            "Calcium carbonate only",
+            "Lanthanum carbonate"
+          ],
+          "answer": 0,
+          "rationale": "Ferric citrate contains iron and can alter iron measures, requiring monitoring.",
+          "reviewHref": "#hyperphosphatemia-ckd-mbd"
+        },
+        "after": {
+          "id": "calcium-phosphorus-047",
+          "question": "Which binder can also increase iron indices?",
+          "choices": [
+            "Ferric citrate",
+            "Sevelamer carbonate",
+            "Calcium carbonate only",
+            "Lanthanum carbonate"
+          ],
+          "answer": 0,
+          "rationale": "Iron from ferric citrate can be absorbed and increase iron stores. Follow ferritin and transferrin saturation and reassess other iron therapy. Sevelamer carbonate, calcium carbonate, and lanthanum carbonate do not supply iron; iron effects should not be assumed identical across binders.",
+          "reviewHref": "#hyperphosphatemia-ckd-mbd"
+        }
+      },
+      "calcium-phosphorus-048": {
+        "before": {
+          "id": "calcium-phosphorus-048",
+          "question": "Which modifiable factors should be assessed when PTH rises in CKD?",
+          "choices": [
+            "Phosphate, calcium, phosphate intake, and vitamin D status",
+            "Hair color and height only",
+            "PTH alone",
+            "Serum sodium only"
+          ],
+          "answer": 0,
+          "rationale": "Secondary hyperparathyroidism should be evaluated in the context of its mineral and vitamin D drivers.",
+          "reviewHref": "#hyperphosphatemia-ckd-mbd"
+        },
+        "after": {
+          "id": "calcium-phosphorus-048",
+          "question": "In an adult with CKD G3a-G5 not on dialysis and progressively rising or persistently elevated PTH, which modifiable factors should be assessed?",
+          "choices": [
+            "Phosphate, calcium, phosphate intake, and vitamin D status",
+            "Hair color and height only",
+            "PTH alone",
+            "Serum sodium only"
+          ],
+          "answer": 0,
+          "rationale": "For CKD G3a-G5 not on dialysis with progressively rising or persistently elevated PTH, KDIGO identifies hyperphosphatemia, hypocalcemia, high phosphate intake, and vitamin D deficiency as modifiable factors. PTH alone, sodium alone, or unrelated physical traits do not assess those drivers.",
+          "reviewHref": "#hyperphosphatemia-ckd-mbd"
+        }
+      },
+      "calcium-phosphorus-049": {
+        "before": {
+          "id": "calcium-phosphorus-049",
+          "question": "Why can a patient remain hyperphosphatemic despite receiving a binder prescription?",
+          "choices": [
+            "Poor timing, missed doses, dietary additives, inadequate dialysis, or insufficient regimen",
+            "Binders work after absorption",
+            "Phosphate does not come from food",
+            "Dialysis removes all phosphate permanently"
+          ],
+          "answer": 0,
+          "rationale": "Effective therapy depends on exposure, timing, intake, and dialysis as well as the selected drug.",
+          "reviewHref": "#hyperphosphatemia-ckd-mbd"
+        },
+        "after": {
+          "id": "calcium-phosphorus-049",
+          "question": "Why can a patient remain hyperphosphatemic despite receiving a binder prescription?",
+          "choices": [
+            "Poor timing, missed doses, dietary additives, inadequate dialysis, or insufficient regimen",
+            "Binders work after absorption",
+            "Phosphate does not come from food",
+            "Dialysis removes all phosphate permanently"
+          ],
+          "answer": 0,
+          "rationale": "A prescription does not establish effective phosphate binding. Review actual doses with meals, missed doses, absorbable dietary phosphate, dialytic removal, and regimen adequacy. Binders act before intestinal absorption; food supplies phosphate, and dialysis does not remove the continuing dietary load permanently.",
+          "reviewHref": "#hyperphosphatemia-ckd-mbd"
+        }
+      },
+      "calcium-phosphorus-096": {
+        "before": {
+          "id": "calcium-phosphorus-096",
+          "question": "A patient with CKD has rising phosphate, calcium at the upper limit, and extensive vascular calcification while taking calcium acetate. Which interpretation or action is most defensible?",
+          "choices": [
+            "Reassess calcium load and phosphate-lowering strategy",
+            "Treat the isolated number without evaluating the mechanism",
+            "Ignore kidney function and symptoms",
+            "Delay urgent stabilization until every test returns"
+          ],
+          "answer": 0,
+          "rationale": "KDIGO supports restricting calcium-based binder exposure when calcium load and calcification risk are concerns.",
+          "reviewHref": "#hyperphosphatemia-ckd-mbd"
+        },
+        "after": {
+          "id": "calcium-phosphorus-096",
+          "question": "A patient with CKD has rising phosphate, calcium at the upper limit, and extensive vascular calcification while taking calcium acetate. Which interpretation or action is most defensible?",
+          "choices": [
+            "Reassess calcium load and phosphate-lowering strategy",
+            "Increase calcium acetate automatically because phosphate is elevated",
+            "Stop all phosphate-lowering measures because calcium is within the reference range",
+            "Assume that lowering phosphate eliminates all calcification risk"
+          ],
+          "answer": 0,
+          "rationale": "Reassess calcium exposure, binder selection, food, and phosphate control together. KDIGO suggests restricting calcium-based binder doses in adults receiving phosphate-lowering treatment; calcification makes this concern especially relevant. An automatic increase in calcium acetate ignores its calcium burden, while dropping all phosphate control or assuming risk is eliminated overlooks persistent hyperphosphatemia.",
+          "reviewHref": "#hyperphosphatemia-ckd-mbd"
+        }
+      },
+      "calcium-phosphorus-099": {
+        "before": {
+          "id": "calcium-phosphorus-099",
+          "question": "A dialysis patient takes sevelamer two hours after meals and remains hyperphosphatemic. Which interpretation or action is most defensible?",
+          "choices": [
+            "Move binder dosing to phosphate-containing meals and reassess the full regimen",
+            "Treat the isolated number without evaluating the mechanism",
+            "Ignore kidney function and symptoms",
+            "Delay urgent stabilization until every test returns"
+          ],
+          "answer": 0,
+          "rationale": "Binders must be present in the gastrointestinal tract with dietary phosphate.",
+          "reviewHref": "#hyperphosphatemia-ckd-mbd"
+        },
+        "after": {
+          "id": "calcium-phosphorus-099",
+          "question": "A dialysis patient takes sevelamer two hours after meals and remains hyperphosphatemic. Which interpretation or action is most defensible?",
+          "choices": [
+            "Move binder dosing to phosphate-containing meals and reassess the full regimen",
+            "Keep every dose two hours after food because sevelamer binds absorbed phosphate",
+            "Take all daily doses at bedtime without food",
+            "Eliminate all dietary protein before reviewing binder timing"
+          ],
+          "answer": 0,
+          "rationale": "Sevelamer binds dietary phosphate in the gut and should accompany phosphate-containing food. Move doses to meals and reassess the regimen rather than relying on a late or food-free dose. Reducing all protein indiscriminately can compromise nutrition; assess absorbable phosphate sources and treatment delivery.",
+          "reviewHref": "#hyperphosphatemia-ckd-mbd"
+        }
+      },
+      "calcium-phosphorus-103": {
+        "before": {
+          "id": "calcium-phosphorus-103",
+          "question": "A patient with high phosphate and low calcium after tumor treatment develops rising creatinine and hyperkalemia. What is the best next interpretation or management principle?",
+          "choices": [
+            "Recognize tumor lysis physiology and manage the full emergency",
+            "Normalize one laboratory value without a mechanism",
+            "Use the same fixed plan for every patient",
+            "Ignore medication timing"
+          ],
+          "answer": 0,
+          "rationale": "The linked mineral, potassium, and kidney abnormalities require integrated urgent care.",
+          "reviewHref": "#hyperphosphatemia-ckd-mbd"
+        },
+        "after": {
+          "id": "calcium-phosphorus-103",
+          "question": "A patient with high phosphate and low calcium after tumor treatment develops rising creatinine and hyperkalemia. What is the best next interpretation or management principle?",
+          "choices": [
+            "Recognize tumor lysis physiology and manage the full emergency",
+            "Correct calcium alone and defer assessment of potassium and kidney function",
+            "Treat phosphate as a dietary-adherence problem without urgent evaluation",
+            "Arrange only routine outpatient follow-up because the abnormalities are expected"
+          ],
+          "answer": 0,
+          "rationale": "Tumor cell lysis releases phosphate and potassium, can lower calcium through phosphate binding, and can produce kidney injury. These linked findings require urgent integrated evaluation and management. Correcting only calcium or phosphate, or waiting routinely for spontaneous recovery, misses the potassium and kidney components of the emergency.",
+          "reviewHref": "#hyperphosphatemia-ckd-mbd"
+        }
+      },
+      "calcium-phosphorus-105": {
+        "before": {
+          "id": "calcium-phosphorus-105",
+          "question": "PTH is high in CKD, phosphate is elevated, calcium is low-normal, and 25-hydroxyvitamin D is deficient. What is the best next interpretation or management principle?",
+          "choices": [
+            "Address modifiable phosphate, calcium, intake, and vitamin D factors before labeling autonomous disease",
+            "Normalize one laboratory value without a mechanism",
+            "Use the same fixed plan for every patient",
+            "Ignore medication timing"
+          ],
+          "answer": 0,
+          "rationale": "Secondary hyperparathyroidism must be interpreted through its drivers.",
+          "reviewHref": "#hyperphosphatemia-ckd-mbd"
+        },
+        "after": {
+          "id": "calcium-phosphorus-105",
+          "question": "An adult with nondialysis CKD has persistently high PTH, elevated phosphate, low-normal calcium, and deficient 25-hydroxyvitamin D. What is the best next interpretation or management principle?",
+          "choices": [
+            "Address modifiable phosphate, calcium, intake, and vitamin D factors before labeling autonomous disease",
+            "Diagnose autonomous parathyroid disease from this single PTH result",
+            "Start active vitamin D routinely in every adult with nondialysis CKD and elevated PTH",
+            "Ignore phosphate intake because serum PTH is the only relevant treatment signal"
+          ],
+          "answer": 0,
+          "rationale": "These findings fit modifiable drivers of secondary hyperparathyroidism. In nondialysis CKD, assess trends and correct phosphate, calcium, intake, and vitamin D factors before treating a high PTH value as autonomous disease. Routine active vitamin D in every adult or a plan that ignores phosphate is inconsistent with the KDIGO approach.",
+          "reviewHref": "#hyperphosphatemia-ckd-mbd"
+        }
+      },
+      "calcium-phosphorus-109": {
+        "before": {
+          "id": "calcium-phosphorus-109",
+          "question": "A CKD patient reports taking every binder but often skips meals and takes the tablets at bedtime. What is the best next interpretation or management principle?",
+          "choices": [
+            "Reconcile each dose with actual phosphate-containing food",
+            "Normalize one laboratory value without a mechanism",
+            "Use the same fixed plan for every patient",
+            "Ignore medication timing"
+          ],
+          "answer": 0,
+          "rationale": "Adherence includes correct timing and indication, not tablet count alone.",
+          "reviewHref": "#hyperphosphatemia-ckd-mbd"
+        },
+        "after": {
+          "id": "calcium-phosphorus-109",
+          "question": "A CKD patient reports taking every binder but often skips meals and takes the tablets at bedtime. What is the best next interpretation or management principle?",
+          "choices": [
+            "Reconcile each dose with actual phosphate-containing food",
+            "Take all missed doses at bedtime to bind phosphate absorbed earlier",
+            "Increase the binder dose before checking meals or administration times",
+            "Eliminate all protein-containing food instead of reviewing timing"
+          ],
+          "answer": 0,
+          "rationale": "Taking a tablet is not the same as binding phosphate from a meal. Review actual food intake and match the prescribed binder regimen to phosphate-containing meals or snacks. A bedtime catch-up after absorption, an automatic dose increase, or total protein elimination does not repair the timing problem and can create additional risk.",
+          "reviewHref": "#hyperphosphatemia-ckd-mbd"
+        }
+      },
+      "calcium-phosphorus-binder-formulation-selection": {
+        "before": null,
+        "after": {
+          "id": "calcium-phosphorus-binder-formulation-selection",
+          "question": "A patient taking lanthanum has poor dentition and cannot chew its tablets completely. Which formulation plan is most appropriate?",
+          "choices": [
+            "Consider labeled lanthanum oral powder, prepared with suitable food, after reviewing gastrointestinal safety",
+            "Swallow the chewable tablet intact to preserve its binding effect",
+            "Dissolve lanthanum oral powder completely in water before taking it",
+            "Assume an oral powder is automatically suitable for any feeding tube"
+          ],
+          "answer": 0,
+          "rationale": "Fosrenol tablets must be chewed or crushed completely, not swallowed intact. The powder is an option for difficulty chewing; sprinkle it on a small amount of applesauce or similar food and consume immediately. It is insoluble and should not be dissolved in liquid. Review gastrointestinal risks and the intended route; oral powder availability alone does not establish feeding-tube suitability.",
+          "reviewHref": "#hyperphosphatemia-ckd-mbd",
+          "difficulty": "clinical"
+        }
+      },
+      "calcium-phosphorus-binder-medicine-reconciliation": {
+        "before": null,
+        "after": {
+          "id": "calcium-phosphorus-binder-medicine-reconciliation",
+          "question": "A patient switches from lanthanum to sevelamer while taking oral ciprofloxacin. Which medication-reconciliation principle is safest?",
+          "choices": [
+            "Recheck instructions for the actual binder-antibiotic pair instead of copying a universal separation interval",
+            "Use the same separation interval for every binder because all interactions are identical",
+            "Take ciprofloxacin simultaneously with the binder to improve absorption",
+            "Stop giving the binder with meals so that every oral medicine can be taken together"
+          ],
+          "answer": 0,
+          "rationale": "Fosrenol labeling places oral quinolones at least 1 hour before or 4 hours after lanthanum. Renvela labeling places ciprofloxacin at least 2 hours before or 6 hours after sevelamer. Simultaneous administration can reduce antibiotic absorption. Reconcile both products and the meal schedule rather than imposing one interval or abandoning food-linked binder dosing.",
+          "reviewHref": "#hyperphosphatemia-ckd-mbd",
+          "difficulty": "clinical"
+        }
+      }
+    },
+    "wholeBodies": [
+      "Treat a pattern, not a single number",
+      "Reduce absorbable phosphate",
+      "Choose binders by patient risk",
+      "Coordinate hormone and dialysis therapy",
+      "Select a binder formulation deliberately",
+      "Check binder interactions before scheduling"
+    ],
+    "checks": {
+      "hyperphosphatemia-ckd-mbd": {
+        "before": {
+          "question": "Which plan best reflects KDIGO's approach to CKD mineral and bone disorder?",
+          "choices": [
+            "Base treatment on serial calcium, phosphate, and PTH considered together",
+            "Treat each phosphate result without context",
+            "Use maximum calcium binder doses in every adult",
+            "Ignore dietary phosphate source"
+          ],
+          "answer": 0,
+          "rationale": "CKD mineral and bone disorder is an integrated, evolving pattern rather than an isolated phosphate value.",
+          "reviewHref": "#hyperphosphatemia-ckd-mbd"
+        },
+        "after": {
+          "question": "Which plan best reflects KDIGO's approach to CKD mineral and bone disorder?",
+          "choices": [
+            "Base treatment on serial calcium, phosphate, and PTH considered together",
+            "Treat each phosphate result without context",
+            "Use maximum calcium binder doses in every adult",
+            "Ignore dietary phosphate source"
+          ],
+          "answer": 0,
+          "rationale": "CKD mineral and bone disorder is an integrated, evolving pattern rather than an isolated phosphate value.",
+          "reviewHref": "#hyperphosphatemia-ckd-mbd"
+        }
+      }
+    },
+    "figures": [
+      "hyperphosphatemia-ckd-mbd"
+    ],
+    "bodyChanges": {
+      "Treat a pattern, not a single number": {
+        "before": "KDIGO recommends basing CKD mineral and bone disorder decisions on serial assessments of phosphate, calcium, and PTH considered together. The guideline suggests lowering elevated phosphate toward the normal range and avoiding hypercalcemia, while acknowledging that evidence for hard outcomes remains limited.",
+        "after": "For CKD G3a-G5D, KDIGO bases mineral and bone disorder treatment on serial phosphate, calcium, and PTH assessed together. Phosphate-lowering treatment is guided by progressively or persistently elevated phosphate, rather than started automatically for a normal value. Lower elevated phosphate toward the normal range and avoid hypercalcemia in adults. Evidence that a specific phosphate target improves survival or cardiovascular outcomes remains limited."
+      },
+      "Reduce absorbable phosphate": {
+        "before": "Dietary counseling should consider source as well as total amount. Inorganic phosphate additives are highly absorbable, animal sources are generally more available than plant phytate, and excessive restriction can compromise nutrition. Phosphate binders work in the gastrointestinal tract and must be taken with meals or snacks that contain phosphate.",
+        "after": "Dietary counseling should consider phosphate source as well as total amount. Inorganic additives are highly absorbable; animal phosphate is generally more available than plant phytate. Reduce additive exposure while preserving adequate protein and overall nutrition. Binders act on phosphate in the gastrointestinal tract and are taken with phosphate-containing meals or snacks. If the meal and its absorption have already passed, a late catch-up dose does not bind that earlier phosphate; resume the prescribed dosing with the next meal or snack."
+      },
+      "Choose binders by patient risk": {
+        "before": "Calcium acetate and calcium carbonate add calcium load. Sevelamer, lanthanum, ferric citrate, sucroferric oxyhydroxide, and other options differ in pill burden, adverse effects, iron effects, interactions, and cost. KDIGO suggests restricting calcium-based binder dose in adults receiving phosphate-lowering therapy, especially when calcium load or calcification risk is concerning. Aluminum binders are avoided for long-term use because aluminum can accumulate and cause toxicity.",
+        "after": "Calcium acetate and calcium carbonate add calcium load. KDIGO suggests restricting calcium-based binder doses in adults with CKD G3a-G5D receiving phosphate-lowering treatment; the recommendation is not limited to patients already hypercalcemic. Calcification and total calcium exposure strengthen the reason to reassess the regimen. Sevelamer, lanthanum, ferric citrate, and sucroferric oxyhydroxide differ in formulation, gastrointestinal effects, interactions, iron exposure, pill burden, and cost. Ferric citrate can increase iron stores: monitor iron indices, including ferritin and transferrin saturation, and reassess concurrent iron therapy. Sucroferric oxyhydroxide has minimal iron absorption. Avoid long-term aluminum binders because aluminum can accumulate and cause toxicity."
+      },
+      "Coordinate hormone and dialysis therapy": {
+        "before": "Persistent secondary hyperparathyroidism requires evaluation for hyperphosphatemia, hypocalcemia, high phosphate intake, and vitamin D deficiency. Vitamin D analogs and calcimimetics can alter calcium and phosphate in opposite directions and require monitoring. Dialysis removes phosphate incompletely between treatments, so adherence to dialysis, nutrition, and binder timing all matter.",
+        "after": "In CKD G3a-G5 not on dialysis, progressively rising or persistently elevated PTH prompts assessment of hyperphosphatemia, hypocalcemia, high phosphate intake, and vitamin D deficiency. KDIGO does not recommend routine calcitriol or vitamin D analog use in these adults; severe progressive hyperparathyroidism in CKD G4-G5 is a setting for selected use. In CKD G5D requiring PTH lowering, options include calcimimetics, calcitriol, vitamin D analogs, or combinations. Active vitamin D can raise calcium and phosphate, whereas calcimimetics can lower them; monitor the mineral response. Dialysis is part of phosphate control, and persistent hyperphosphatemia warrants review of dialytic removal together with diet, binder timing, and the regimen."
+      }
+    },
+    "addedBodies": [
+      {
+        "heading": "Select a binder formulation deliberately",
+        "body": "A lanthanum chewable tablet must be chewed or crushed completely before swallowing; do not swallow it intact. For difficulty chewing or poor dentition, consider the labeled oral powder formulation. Sprinkle Fosrenol powder on a small amount of applesauce or similar food and consume immediately; do not try to dissolve it in liquid. For swallowing disorders with sevelamer tablets, consider the oral suspension and follow its preparation instructions. Assess bowel obstruction and significant gastrointestinal symptoms before choosing either product. An oral powder formulation does not by itself establish suitability for a feeding tube; verify the specific product and intended route."
+      },
+      {
+        "heading": "Check binder interactions before scheduling",
+        "body": "Binders can reduce absorption of other oral medicines, including thyroid hormone and certain antibiotics. Reconcile the exact binder, other drug, formulation, meals, and monitoring requirements. Fosrenol labeling places oral quinolones at least 1 hour before or 4 hours after lanthanum, and thyroid hormone at least 2 hours before or after it with TSH monitoring. Renvela labeling places ciprofloxacin at least 2 hours before or 6 hours after sevelamer, and mycophenolate mofetil at least 2 hours before it. Other clinically important interactions may require separation and monitoring of response or drug concentrations. Use the instructions for the actual medicine pair rather than one interval for every binder and every oral drug."
+      }
+    ],
+    "addedQuestions": [
+      "calcium-phosphorus-binder-formulation-selection",
+      "calcium-phosphorus-binder-medicine-reconciliation"
+    ],
+    "references": [
+      {
+        "label": "Fosrenol prescribing information: lanthanum tablets, powder, and interactions (August 2024)",
+        "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f10776b2-2c25-4343-aabe-68f302e5cb54"
+      },
+      {
+        "label": "Renvela prescribing information: sevelamer suspension and interactions (March 2023)",
+        "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e6328460-a57b-450b-a48c-6dcd4b476360"
+      }
+    ],
+    "retainedPendingQuestions": [
+      "calcium-phosphorus-050"
+    ],
+    "retainedPendingBodies": [
+      "Recognize acute phosphate toxicity"
+    ]
+  },
+  "finalSourceComparison": {
+    "status": "passed",
+    "wholeQuestionComparison": [
+      {
+        "final": {
+          "id": "calcium-phosphorus-043",
+          "question": "How does KDIGO recommend making CKD mineral and bone disorder treatment decisions?",
+          "choices": [
+            "Use serial calcium, phosphate, and PTH assessments together",
+            "Use a single phosphate result",
+            "Ignore calcium",
+            "Treat PTH without checking modifiable factors"
+          ],
+          "answer": 0,
+          "rationale": "KDIGO recommendation 4.1.1 considers serial calcium, phosphate, and PTH together. A single phosphate result or ignoring calcium loses the treatment context; rising PTH also requires evaluation of modifiable mineral and vitamin D factors.",
+          "reviewHref": "#hyperphosphatemia-ckd-mbd"
+        },
+        "source": "KDIGO2017 printed16/25 recommendation4.1.1",
+        "stemAllAlternativesKeyRationaleAndAnchorComparedAgainWithSource": true
+      },
+      {
+        "final": {
+          "id": "calcium-phosphorus-044",
+          "question": "Which dietary phosphate source is generally most absorbable?",
+          "choices": [
+            "Inorganic phosphate additive",
+            "Plant phytate",
+            "Unprocessed legume phosphate only",
+            "Fiber"
+          ],
+          "answer": 0,
+          "rationale": "Inorganic phosphate additives are readily absorbed and may be underreported in nutrient databases. Phytate-bound phosphate in plants, including legumes, is less available; fiber is not a competing phosphate source. Reduce highly absorbable additives without compromising adequate protein intake.",
+          "reviewHref": "#hyperphosphatemia-ckd-mbd"
+        },
+        "source": "KDIGO2017 printed31-32 food-source/nutrition rationale",
+        "stemAllAlternativesKeyRationaleAndAnchorComparedAgainWithSource": true
+      },
+      {
+        "final": {
+          "id": "calcium-phosphorus-045",
+          "question": "When should most phosphate binders be taken?",
+          "choices": [
+            "With phosphate-containing meals or snacks",
+            "Only at bedtime without food",
+            "One week after the meal",
+            "Only when serum calcium is measured"
+          ],
+          "answer": 0,
+          "rationale": "Binders must be present in the gut with dietary phosphate. A bedtime dose without food, a dose a week later, or a dose linked only to a calcium blood test does not target the phosphate-containing meal. Match prescribed doses to actual meals or snacks.",
+          "reviewHref": "#hyperphosphatemia-ckd-mbd"
+        },
+        "source": "BookPDF297printed289 binder timing and missed-dose paragraph",
+        "stemAllAlternativesKeyRationaleAndAnchorComparedAgainWithSource": true
+      },
+      {
+        "final": {
+          "id": "calcium-phosphorus-046",
+          "question": "What is a major limitation of calcium-based phosphate binders?",
+          "choices": [
+            "They increase calcium load and can contribute to hypercalcemia or calcification risk",
+            "They contain no binding ingredient",
+            "They always cause hypocalcemia",
+            "They work only intravenously"
+          ],
+          "answer": 0,
+          "rationale": "Calcium acetate and calcium carbonate both bind phosphate and add calcium. Hypercalcemia and excess calcium exposure are important selection concerns; KDIGO suggests restricting their dose in adults receiving phosphate-lowering treatment. They are oral agents, do not always cause hypocalcemia, and should not be assumed harmless simply because phosphate falls.",
+          "reviewHref": "#hyperphosphatemia-ckd-mbd"
+        },
+        "source": "BookPDF297printed289 calcium table;KDIGO2017 printed16/29-30 recommendation4.1.6/rationale",
+        "stemAllAlternativesKeyRationaleAndAnchorComparedAgainWithSource": true
+      },
+      {
+        "final": {
+          "id": "calcium-phosphorus-047",
+          "question": "Which binder can also increase iron indices?",
+          "choices": [
+            "Ferric citrate",
+            "Sevelamer carbonate",
+            "Calcium carbonate only",
+            "Lanthanum carbonate"
+          ],
+          "answer": 0,
+          "rationale": "Iron from ferric citrate can be absorbed and increase iron stores. Follow ferritin and transferrin saturation and reassess other iron therapy. Sevelamer carbonate, calcium carbonate, and lanthanum carbonate do not supply iron; iron effects should not be assumed identical across binders.",
+          "reviewHref": "#hyperphosphatemia-ckd-mbd"
+        },
+        "source": "BookPDF298printed290 complete ferric-citrate warning and monitoring rows",
+        "stemAllAlternativesKeyRationaleAndAnchorComparedAgainWithSource": true
+      },
+      {
+        "final": {
+          "id": "calcium-phosphorus-048",
+          "question": "In an adult with CKD G3a-G5 not on dialysis and progressively rising or persistently elevated PTH, which modifiable factors should be assessed?",
+          "choices": [
+            "Phosphate, calcium, phosphate intake, and vitamin D status",
+            "Hair color and height only",
+            "PTH alone",
+            "Serum sodium only"
+          ],
+          "answer": 0,
+          "rationale": "For CKD G3a-G5 not on dialysis with progressively rising or persistently elevated PTH, KDIGO identifies hyperphosphatemia, hypocalcemia, high phosphate intake, and vitamin D deficiency as modifiable factors. PTH alone, sodium alone, or unrelated physical traits do not assess those drivers.",
+          "reviewHref": "#hyperphosphatemia-ckd-mbd"
+        },
+        "source": "KDIGO2017 printed16/33 recommendation4.2.1/rationale",
+        "stemAllAlternativesKeyRationaleAndAnchorComparedAgainWithSource": true
+      },
+      {
+        "final": {
+          "id": "calcium-phosphorus-049",
+          "question": "Why can a patient remain hyperphosphatemic despite receiving a binder prescription?",
+          "choices": [
+            "Poor timing, missed doses, dietary additives, inadequate dialysis, or insufficient regimen",
+            "Binders work after absorption",
+            "Phosphate does not come from food",
+            "Dialysis removes all phosphate permanently"
+          ],
+          "answer": 0,
+          "rationale": "A prescription does not establish effective phosphate binding. Review actual doses with meals, missed doses, absorbable dietary phosphate, dialytic removal, and regimen adequacy. Binders act before intestinal absorption; food supplies phosphate, and dialysis does not remove the continuing dietary load permanently.",
+          "reviewHref": "#hyperphosphatemia-ckd-mbd"
+        },
+        "source": "BookPDF297printed289 binder paragraph;KDIGO2017printed16/25/31-32 recommendations4.1.1/4.1.8/4.1.9",
+        "stemAllAlternativesKeyRationaleAndAnchorComparedAgainWithSource": true
+      },
+      {
+        "final": {
+          "id": "calcium-phosphorus-096",
+          "question": "A patient with CKD has rising phosphate, calcium at the upper limit, and extensive vascular calcification while taking calcium acetate. Which interpretation or action is most defensible?",
+          "choices": [
+            "Reassess calcium load and phosphate-lowering strategy",
+            "Increase calcium acetate automatically because phosphate is elevated",
+            "Stop all phosphate-lowering measures because calcium is within the reference range",
+            "Assume that lowering phosphate eliminates all calcification risk"
+          ],
+          "answer": 0,
+          "rationale": "Reassess calcium exposure, binder selection, food, and phosphate control together. KDIGO suggests restricting calcium-based binder doses in adults receiving phosphate-lowering treatment; calcification makes this concern especially relevant. An automatic increase in calcium acetate ignores its calcium burden, while dropping all phosphate control or assuming risk is eliminated overlooks persistent hyperphosphatemia.",
+          "reviewHref": "#hyperphosphatemia-ckd-mbd"
+        },
+        "source": "KDIGO2017printed16/29-30recommendations3.3.2/4.1.6 andrationale",
+        "stemAllAlternativesKeyRationaleAndAnchorComparedAgainWithSource": true
+      },
+      {
+        "final": {
+          "id": "calcium-phosphorus-099",
+          "question": "A dialysis patient takes sevelamer two hours after meals and remains hyperphosphatemic. Which interpretation or action is most defensible?",
+          "choices": [
+            "Move binder dosing to phosphate-containing meals and reassess the full regimen",
+            "Keep every dose two hours after food because sevelamer binds absorbed phosphate",
+            "Take all daily doses at bedtime without food",
+            "Eliminate all dietary protein before reviewing binder timing"
+          ],
+          "answer": 0,
+          "rationale": "Sevelamer binds dietary phosphate in the gut and should accompany phosphate-containing food. Move doses to meals and reassess the regimen rather than relying on a late or food-free dose. Reducing all protein indiscriminately can compromise nutrition; assess absorbable phosphate sources and treatment delivery.",
+          "reviewHref": "#hyperphosphatemia-ckd-mbd"
+        },
+        "source": "BookPDF297printed289binder timing;KDIGO2017printed31-32adequateprotein",
+        "stemAllAlternativesKeyRationaleAndAnchorComparedAgainWithSource": true
+      },
+      {
+        "final": {
+          "id": "calcium-phosphorus-103",
+          "question": "A patient with high phosphate and low calcium after tumor treatment develops rising creatinine and hyperkalemia. What is the best next interpretation or management principle?",
+          "choices": [
+            "Recognize tumor lysis physiology and manage the full emergency",
+            "Correct calcium alone and defer assessment of potassium and kidney function",
+            "Treat phosphate as a dietary-adherence problem without urgent evaluation",
+            "Arrange only routine outpatient follow-up because the abnormalities are expected"
+          ],
+          "answer": 0,
+          "rationale": "Tumor cell lysis releases phosphate and potassium, can lower calcium through phosphate binding, and can produce kidney injury. These linked findings require urgent integrated evaluation and management. Correcting only calcium or phosphate, or waiting routinely for spontaneous recovery, misses the potassium and kidney components of the emergency.",
+          "reviewHref": "#hyperphosphatemia-ckd-mbd"
+        },
+        "source": "BookPDF814printed804completeTLStext/figure;individualdrugtherapycontextnotadopted",
+        "stemAllAlternativesKeyRationaleAndAnchorComparedAgainWithSource": true
+      },
+      {
+        "final": {
+          "id": "calcium-phosphorus-105",
+          "question": "An adult with nondialysis CKD has persistently high PTH, elevated phosphate, low-normal calcium, and deficient 25-hydroxyvitamin D. What is the best next interpretation or management principle?",
+          "choices": [
+            "Address modifiable phosphate, calcium, intake, and vitamin D factors before labeling autonomous disease",
+            "Diagnose autonomous parathyroid disease from this single PTH result",
+            "Start active vitamin D routinely in every adult with nondialysis CKD and elevated PTH",
+            "Ignore phosphate intake because serum PTH is the only relevant treatment signal"
+          ],
+          "answer": 0,
+          "rationale": "These findings fit modifiable drivers of secondary hyperparathyroidism. In nondialysis CKD, assess trends and correct phosphate, calcium, intake, and vitamin D factors before treating a high PTH value as autonomous disease. Routine active vitamin D in every adult or a plan that ignores phosphate is inconsistent with the KDIGO approach.",
+          "reviewHref": "#hyperphosphatemia-ckd-mbd"
+        },
+        "source": "KDIGO2017printed16/33recommendation4.2.1/4.2.2",
+        "stemAllAlternativesKeyRationaleAndAnchorComparedAgainWithSource": true
+      },
+      {
+        "final": {
+          "id": "calcium-phosphorus-109",
+          "question": "A CKD patient reports taking every binder but often skips meals and takes the tablets at bedtime. What is the best next interpretation or management principle?",
+          "choices": [
+            "Reconcile each dose with actual phosphate-containing food",
+            "Take all missed doses at bedtime to bind phosphate absorbed earlier",
+            "Increase the binder dose before checking meals or administration times",
+            "Eliminate all protein-containing food instead of reviewing timing"
+          ],
+          "answer": 0,
+          "rationale": "Taking a tablet is not the same as binding phosphate from a meal. Review actual food intake and match the prescribed binder regimen to phosphate-containing meals or snacks. A bedtime catch-up after absorption, an automatic dose increase, or total protein elimination does not repair the timing problem and can create additional risk.",
+          "reviewHref": "#hyperphosphatemia-ckd-mbd"
+        },
+        "source": "BookPDF297printed289binding/missed-doseparagraph;KDIGO2017printed31-32nutrition",
+        "stemAllAlternativesKeyRationaleAndAnchorComparedAgainWithSource": true
+      },
+      {
+        "final": {
+          "id": "calcium-phosphorus-binder-formulation-selection",
+          "question": "A patient taking lanthanum has poor dentition and cannot chew its tablets completely. Which formulation plan is most appropriate?",
+          "choices": [
+            "Consider labeled lanthanum oral powder, prepared with suitable food, after reviewing gastrointestinal safety",
+            "Swallow the chewable tablet intact to preserve its binding effect",
+            "Dissolve lanthanum oral powder completely in water before taking it",
+            "Assume an oral powder is automatically suitable for any feeding tube"
+          ],
+          "answer": 0,
+          "rationale": "Fosrenol tablets must be chewed or crushed completely, not swallowed intact. The powder is an option for difficulty chewing; sprinkle it on a small amount of applesauce or similar food and consume immediately. It is insoluble and should not be dissolved in liquid. Review gastrointestinal risks and the intended route; oral powder availability alone does not establish feeding-tube suitability.",
+          "reviewHref": "#hyperphosphatemia-ckd-mbd",
+          "difficulty": "clinical"
+        },
+        "source": "BookPDF298printed290formulation/table;FosrenolPIsections2/4/5.1;RenvelaPIsections2.2/4/5.1",
+        "stemAllAlternativesKeyRationaleAndAnchorComparedAgainWithSource": true
+      },
+      {
+        "final": {
+          "id": "calcium-phosphorus-binder-medicine-reconciliation",
+          "question": "A patient switches from lanthanum to sevelamer while taking oral ciprofloxacin. Which medication-reconciliation principle is safest?",
+          "choices": [
+            "Recheck instructions for the actual binder-antibiotic pair instead of copying a universal separation interval",
+            "Use the same separation interval for every binder because all interactions are identical",
+            "Take ciprofloxacin simultaneously with the binder to improve absorption",
+            "Stop giving the binder with meals so that every oral medicine can be taken together"
+          ],
+          "answer": 0,
+          "rationale": "Fosrenol labeling places oral quinolones at least 1 hour before or 4 hours after lanthanum. Renvela labeling places ciprofloxacin at least 2 hours before or 6 hours after sevelamer. Simultaneous administration can reduce antibiotic absorption. Reconcile both products and the meal schedule rather than imposing one interval or abandoning food-linked binder dosing.",
+          "reviewHref": "#hyperphosphatemia-ckd-mbd",
+          "difficulty": "clinical"
+        },
+        "source": "BookPDF298printed290wholeinteractionssection;FosrenolPIsections7.2/7.3/7.4;RenvelaPIsection7completeTable5",
+        "stemAllAlternativesKeyRationaleAndAnchorComparedAgainWithSource": true
+      }
+    ],
+    "wholeBodiesComparedAgain": [
+      "Treat a pattern, not a single number",
+      "Reduce absorbable phosphate",
+      "Choose binders by patient risk",
+      "Coordinate hormone and dialysis therapy",
+      "Select a binder formulation deliberately",
+      "Check binder interactions before scheduling"
+    ],
+    "wholeEmbeddedCheckVerified": true,
+    "figureAllSixCardsTitleAndTimeTrendVerified": "BookPDF297printed289CKDMBDdiagram/caption;KDIGO2017printed15-17/25/33 biochemical/bone/vascular/PTHrecommendations; PTH adaptive versus autonomy is an interpretive map, combining KDIGO2017printed33 adaptive PTH with directly approved Society2016 Causes/Investigation primary/tertiary high-PTH/high-Ca differential, including familial-hypocalciuric caveat; no autonomous diagnosis inferred from one PTH.",
+    "noNewNumericDoseAdopted": true,
+    "newSeparationIntervalsMatchActualProductLabels": true,
+    "formulationDoesNotImplyTubeCompatibility": true,
+    "sourceDiscrepancies": [
+      {
+        "source": "BookPDF297printed289table",
+        "issue": "Calcium-based binders labeled first-line with fixed elemental calcium ceiling.",
+        "resolution": "Retainedcalciumloadscope and used explicitlyapprovedKDIGO2017adultrestriction recommendation; did not teach universalfirstline or numericceiling."
+      },
+      {
+        "source": "BookPDF299printed291",
+        "issue": "Broad vitaminD treatmentdescription lacks guideline distinction betweennondialysisadultCKD anddialysis.",
+        "resolution": "Added specificCKDstage/nondialysis/dialysis context fromapprovedKDIGO2017recommendations4.2.1-4.2.4."
+      },
+      {
+        "source": "BookPDF298printed290sevelamerinteractions",
+        "issue": "Book describes quinoloneclass interval.",
+        "resolution": "New comparison teaches Renvela label ciprofloxacin-specific interval;do notgeneralize allquinolonesfromsingleproduct label."
+      }
+    ],
+    "remaining": [
+      {
+        "id": "calcium-phosphorus-050",
+        "issue": "Retainedhematologictoxicity notestablishedbyreviewedbookbinder table or2017update;wholequestionnotmarkedverified."
+      },
+      {
+        "heading": "Recognize acute phosphate toxicity",
+        "issue": "Wholecause list/dialysis/conditionalcalciumrescue needs additional approved-source reconciliation; retainedunchangedandpending."
+      }
+    ],
+    "wholeLessonMetadataVerified": false,
+    "wholeLessonVerified": false,
+    "wholeParentVerified": false,
+    "sourceHashes": {
+      "kdigo2017-full.pdf": "444006972a0441938c3450774ae2461386e0bfe5f0b9874a091f954761767308",
+      "fosrenol.html": "377163500fa3f4942556e916f674e012cb0c5a9d422b8a1261019986b6e2ebbb",
+      "renvela.html": "3baeebac5bfeab68cf5c358aafcfab4388b409e61de05b5954a7224bc8df59e0",
+      "society-hypercalcemia.html": "ef50fa1fcb4e0a7fa7c72131fd15dadeab7d3dd454b24d845b61f35efe7c2516"
+    },
+    "privateSourceFilesOutsideGit": true
+  },
+  "questionReview": [
+    {
+      "before": {
+        "id": "calcium-phosphorus-043",
+        "question": "How does KDIGO recommend making CKD mineral and bone disorder treatment decisions?",
+        "choices": [
+          "Use serial calcium, phosphate, and PTH assessments together",
+          "Use a single phosphate result",
+          "Ignore calcium",
+          "Treat PTH without checking modifiable factors"
+        ],
+        "answer": 0,
+        "rationale": "The guideline emphasizes integrated serial assessment.",
+        "reviewHref": "#hyperphosphatemia-ckd-mbd"
+      },
+      "final": {
+        "id": "calcium-phosphorus-043",
+        "question": "How does KDIGO recommend making CKD mineral and bone disorder treatment decisions?",
+        "choices": [
+          "Use serial calcium, phosphate, and PTH assessments together",
+          "Use a single phosphate result",
+          "Ignore calcium",
+          "Treat PTH without checking modifiable factors"
+        ],
+        "answer": 0,
+        "rationale": "KDIGO recommendation 4.1.1 considers serial calcium, phosphate, and PTH together. A single phosphate result or ignoring calcium loses the treatment context; rising PTH also requires evaluation of modifiable mineral and vitamin D factors.",
+        "reviewHref": "#hyperphosphatemia-ckd-mbd"
+      },
+      "wholeStemAllAlternativesKeyRationaleAnchorVerified": true,
+      "newlyCounted": true
+    },
+    {
+      "before": {
+        "id": "calcium-phosphorus-044",
+        "question": "Which dietary phosphate source is generally most absorbable?",
+        "choices": [
+          "Inorganic phosphate additive",
+          "Plant phytate",
+          "Unprocessed legume phosphate only",
+          "Fiber"
+        ],
+        "answer": 0,
+        "rationale": "Inorganic additives are highly bioavailable and can contribute a large hidden load.",
+        "reviewHref": "#hyperphosphatemia-ckd-mbd"
+      },
+      "final": {
+        "id": "calcium-phosphorus-044",
+        "question": "Which dietary phosphate source is generally most absorbable?",
+        "choices": [
+          "Inorganic phosphate additive",
+          "Plant phytate",
+          "Unprocessed legume phosphate only",
+          "Fiber"
+        ],
+        "answer": 0,
+        "rationale": "Inorganic phosphate additives are readily absorbed and may be underreported in nutrient databases. Phytate-bound phosphate in plants, including legumes, is less available; fiber is not a competing phosphate source. Reduce highly absorbable additives without compromising adequate protein intake.",
+        "reviewHref": "#hyperphosphatemia-ckd-mbd"
+      },
+      "wholeStemAllAlternativesKeyRationaleAnchorVerified": true,
+      "newlyCounted": true
+    },
+    {
+      "before": {
+        "id": "calcium-phosphorus-045",
+        "question": "When should most phosphate binders be taken?",
+        "choices": [
+          "With phosphate-containing meals or snacks",
+          "Only at bedtime without food",
+          "One week after the meal",
+          "Only when serum calcium is measured"
+        ],
+        "answer": 0,
+        "rationale": "Binders act within the gastrointestinal tract on dietary phosphate.",
+        "reviewHref": "#hyperphosphatemia-ckd-mbd"
+      },
+      "final": {
+        "id": "calcium-phosphorus-045",
+        "question": "When should most phosphate binders be taken?",
+        "choices": [
+          "With phosphate-containing meals or snacks",
+          "Only at bedtime without food",
+          "One week after the meal",
+          "Only when serum calcium is measured"
+        ],
+        "answer": 0,
+        "rationale": "Binders must be present in the gut with dietary phosphate. A bedtime dose without food, a dose a week later, or a dose linked only to a calcium blood test does not target the phosphate-containing meal. Match prescribed doses to actual meals or snacks.",
+        "reviewHref": "#hyperphosphatemia-ckd-mbd"
+      },
+      "wholeStemAllAlternativesKeyRationaleAnchorVerified": true,
+      "newlyCounted": true
+    },
+    {
+      "before": {
+        "id": "calcium-phosphorus-046",
+        "question": "What is a major limitation of calcium-based phosphate binders?",
+        "choices": [
+          "They increase calcium load and can contribute to hypercalcemia or calcification risk",
+          "They contain no binding ingredient",
+          "They always cause hypocalcemia",
+          "They work only intravenously"
+        ],
+        "answer": 0,
+        "rationale": "The added calcium burden is a major selection concern.",
+        "reviewHref": "#hyperphosphatemia-ckd-mbd"
+      },
+      "final": {
+        "id": "calcium-phosphorus-046",
+        "question": "What is a major limitation of calcium-based phosphate binders?",
+        "choices": [
+          "They increase calcium load and can contribute to hypercalcemia or calcification risk",
+          "They contain no binding ingredient",
+          "They always cause hypocalcemia",
+          "They work only intravenously"
+        ],
+        "answer": 0,
+        "rationale": "Calcium acetate and calcium carbonate both bind phosphate and add calcium. Hypercalcemia and excess calcium exposure are important selection concerns; KDIGO suggests restricting their dose in adults receiving phosphate-lowering treatment. They are oral agents, do not always cause hypocalcemia, and should not be assumed harmless simply because phosphate falls.",
+        "reviewHref": "#hyperphosphatemia-ckd-mbd"
+      },
+      "wholeStemAllAlternativesKeyRationaleAnchorVerified": true,
+      "newlyCounted": true
+    },
+    {
+      "before": {
+        "id": "calcium-phosphorus-047",
+        "question": "Which binder can also increase iron indices?",
+        "choices": [
+          "Ferric citrate",
+          "Sevelamer carbonate",
+          "Calcium carbonate only",
+          "Lanthanum carbonate"
+        ],
+        "answer": 0,
+        "rationale": "Ferric citrate contains iron and can alter iron measures, requiring monitoring.",
+        "reviewHref": "#hyperphosphatemia-ckd-mbd"
+      },
+      "final": {
+        "id": "calcium-phosphorus-047",
+        "question": "Which binder can also increase iron indices?",
+        "choices": [
+          "Ferric citrate",
+          "Sevelamer carbonate",
+          "Calcium carbonate only",
+          "Lanthanum carbonate"
+        ],
+        "answer": 0,
+        "rationale": "Iron from ferric citrate can be absorbed and increase iron stores. Follow ferritin and transferrin saturation and reassess other iron therapy. Sevelamer carbonate, calcium carbonate, and lanthanum carbonate do not supply iron; iron effects should not be assumed identical across binders.",
+        "reviewHref": "#hyperphosphatemia-ckd-mbd"
+      },
+      "wholeStemAllAlternativesKeyRationaleAnchorVerified": true,
+      "newlyCounted": true
+    },
+    {
+      "before": {
+        "id": "calcium-phosphorus-048",
+        "question": "Which modifiable factors should be assessed when PTH rises in CKD?",
+        "choices": [
+          "Phosphate, calcium, phosphate intake, and vitamin D status",
+          "Hair color and height only",
+          "PTH alone",
+          "Serum sodium only"
+        ],
+        "answer": 0,
+        "rationale": "Secondary hyperparathyroidism should be evaluated in the context of its mineral and vitamin D drivers.",
+        "reviewHref": "#hyperphosphatemia-ckd-mbd"
+      },
+      "final": {
+        "id": "calcium-phosphorus-048",
+        "question": "In an adult with CKD G3a-G5 not on dialysis and progressively rising or persistently elevated PTH, which modifiable factors should be assessed?",
+        "choices": [
+          "Phosphate, calcium, phosphate intake, and vitamin D status",
+          "Hair color and height only",
+          "PTH alone",
+          "Serum sodium only"
+        ],
+        "answer": 0,
+        "rationale": "For CKD G3a-G5 not on dialysis with progressively rising or persistently elevated PTH, KDIGO identifies hyperphosphatemia, hypocalcemia, high phosphate intake, and vitamin D deficiency as modifiable factors. PTH alone, sodium alone, or unrelated physical traits do not assess those drivers.",
+        "reviewHref": "#hyperphosphatemia-ckd-mbd"
+      },
+      "wholeStemAllAlternativesKeyRationaleAnchorVerified": true,
+      "newlyCounted": true
+    },
+    {
+      "before": {
+        "id": "calcium-phosphorus-049",
+        "question": "Why can a patient remain hyperphosphatemic despite receiving a binder prescription?",
+        "choices": [
+          "Poor timing, missed doses, dietary additives, inadequate dialysis, or insufficient regimen",
+          "Binders work after absorption",
+          "Phosphate does not come from food",
+          "Dialysis removes all phosphate permanently"
+        ],
+        "answer": 0,
+        "rationale": "Effective therapy depends on exposure, timing, intake, and dialysis as well as the selected drug.",
+        "reviewHref": "#hyperphosphatemia-ckd-mbd"
+      },
+      "final": {
+        "id": "calcium-phosphorus-049",
+        "question": "Why can a patient remain hyperphosphatemic despite receiving a binder prescription?",
+        "choices": [
+          "Poor timing, missed doses, dietary additives, inadequate dialysis, or insufficient regimen",
+          "Binders work after absorption",
+          "Phosphate does not come from food",
+          "Dialysis removes all phosphate permanently"
+        ],
+        "answer": 0,
+        "rationale": "A prescription does not establish effective phosphate binding. Review actual doses with meals, missed doses, absorbable dietary phosphate, dialytic removal, and regimen adequacy. Binders act before intestinal absorption; food supplies phosphate, and dialysis does not remove the continuing dietary load permanently.",
+        "reviewHref": "#hyperphosphatemia-ckd-mbd"
+      },
+      "wholeStemAllAlternativesKeyRationaleAnchorVerified": true,
+      "newlyCounted": true
+    },
+    {
+      "before": {
+        "id": "calcium-phosphorus-096",
+        "question": "A patient with CKD has rising phosphate, calcium at the upper limit, and extensive vascular calcification while taking calcium acetate. Which interpretation or action is most defensible?",
+        "choices": [
+          "Reassess calcium load and phosphate-lowering strategy",
+          "Treat the isolated number without evaluating the mechanism",
+          "Ignore kidney function and symptoms",
+          "Delay urgent stabilization until every test returns"
+        ],
+        "answer": 0,
+        "rationale": "KDIGO supports restricting calcium-based binder exposure when calcium load and calcification risk are concerns.",
+        "reviewHref": "#hyperphosphatemia-ckd-mbd"
+      },
+      "final": {
+        "id": "calcium-phosphorus-096",
+        "question": "A patient with CKD has rising phosphate, calcium at the upper limit, and extensive vascular calcification while taking calcium acetate. Which interpretation or action is most defensible?",
+        "choices": [
+          "Reassess calcium load and phosphate-lowering strategy",
+          "Increase calcium acetate automatically because phosphate is elevated",
+          "Stop all phosphate-lowering measures because calcium is within the reference range",
+          "Assume that lowering phosphate eliminates all calcification risk"
+        ],
+        "answer": 0,
+        "rationale": "Reassess calcium exposure, binder selection, food, and phosphate control together. KDIGO suggests restricting calcium-based binder doses in adults receiving phosphate-lowering treatment; calcification makes this concern especially relevant. An automatic increase in calcium acetate ignores its calcium burden, while dropping all phosphate control or assuming risk is eliminated overlooks persistent hyperphosphatemia.",
+        "reviewHref": "#hyperphosphatemia-ckd-mbd"
+      },
+      "wholeStemAllAlternativesKeyRationaleAnchorVerified": true,
+      "newlyCounted": true
+    },
+    {
+      "before": {
+        "id": "calcium-phosphorus-099",
+        "question": "A dialysis patient takes sevelamer two hours after meals and remains hyperphosphatemic. Which interpretation or action is most defensible?",
+        "choices": [
+          "Move binder dosing to phosphate-containing meals and reassess the full regimen",
+          "Treat the isolated number without evaluating the mechanism",
+          "Ignore kidney function and symptoms",
+          "Delay urgent stabilization until every test returns"
+        ],
+        "answer": 0,
+        "rationale": "Binders must be present in the gastrointestinal tract with dietary phosphate.",
+        "reviewHref": "#hyperphosphatemia-ckd-mbd"
+      },
+      "final": {
+        "id": "calcium-phosphorus-099",
+        "question": "A dialysis patient takes sevelamer two hours after meals and remains hyperphosphatemic. Which interpretation or action is most defensible?",
+        "choices": [
+          "Move binder dosing to phosphate-containing meals and reassess the full regimen",
+          "Keep every dose two hours after food because sevelamer binds absorbed phosphate",
+          "Take all daily doses at bedtime without food",
+          "Eliminate all dietary protein before reviewing binder timing"
+        ],
+        "answer": 0,
+        "rationale": "Sevelamer binds dietary phosphate in the gut and should accompany phosphate-containing food. Move doses to meals and reassess the regimen rather than relying on a late or food-free dose. Reducing all protein indiscriminately can compromise nutrition; assess absorbable phosphate sources and treatment delivery.",
+        "reviewHref": "#hyperphosphatemia-ckd-mbd"
+      },
+      "wholeStemAllAlternativesKeyRationaleAnchorVerified": true,
+      "newlyCounted": true
+    },
+    {
+      "before": {
+        "id": "calcium-phosphorus-103",
+        "question": "A patient with high phosphate and low calcium after tumor treatment develops rising creatinine and hyperkalemia. What is the best next interpretation or management principle?",
+        "choices": [
+          "Recognize tumor lysis physiology and manage the full emergency",
+          "Normalize one laboratory value without a mechanism",
+          "Use the same fixed plan for every patient",
+          "Ignore medication timing"
+        ],
+        "answer": 0,
+        "rationale": "The linked mineral, potassium, and kidney abnormalities require integrated urgent care.",
+        "reviewHref": "#hyperphosphatemia-ckd-mbd"
+      },
+      "final": {
+        "id": "calcium-phosphorus-103",
+        "question": "A patient with high phosphate and low calcium after tumor treatment develops rising creatinine and hyperkalemia. What is the best next interpretation or management principle?",
+        "choices": [
+          "Recognize tumor lysis physiology and manage the full emergency",
+          "Correct calcium alone and defer assessment of potassium and kidney function",
+          "Treat phosphate as a dietary-adherence problem without urgent evaluation",
+          "Arrange only routine outpatient follow-up because the abnormalities are expected"
+        ],
+        "answer": 0,
+        "rationale": "Tumor cell lysis releases phosphate and potassium, can lower calcium through phosphate binding, and can produce kidney injury. These linked findings require urgent integrated evaluation and management. Correcting only calcium or phosphate, or waiting routinely for spontaneous recovery, misses the potassium and kidney components of the emergency.",
+        "reviewHref": "#hyperphosphatemia-ckd-mbd"
+      },
+      "wholeStemAllAlternativesKeyRationaleAnchorVerified": true,
+      "newlyCounted": true
+    },
+    {
+      "before": {
+        "id": "calcium-phosphorus-105",
+        "question": "PTH is high in CKD, phosphate is elevated, calcium is low-normal, and 25-hydroxyvitamin D is deficient. What is the best next interpretation or management principle?",
+        "choices": [
+          "Address modifiable phosphate, calcium, intake, and vitamin D factors before labeling autonomous disease",
+          "Normalize one laboratory value without a mechanism",
+          "Use the same fixed plan for every patient",
+          "Ignore medication timing"
+        ],
+        "answer": 0,
+        "rationale": "Secondary hyperparathyroidism must be interpreted through its drivers.",
+        "reviewHref": "#hyperphosphatemia-ckd-mbd"
+      },
+      "final": {
+        "id": "calcium-phosphorus-105",
+        "question": "An adult with nondialysis CKD has persistently high PTH, elevated phosphate, low-normal calcium, and deficient 25-hydroxyvitamin D. What is the best next interpretation or management principle?",
+        "choices": [
+          "Address modifiable phosphate, calcium, intake, and vitamin D factors before labeling autonomous disease",
+          "Diagnose autonomous parathyroid disease from this single PTH result",
+          "Start active vitamin D routinely in every adult with nondialysis CKD and elevated PTH",
+          "Ignore phosphate intake because serum PTH is the only relevant treatment signal"
+        ],
+        "answer": 0,
+        "rationale": "These findings fit modifiable drivers of secondary hyperparathyroidism. In nondialysis CKD, assess trends and correct phosphate, calcium, intake, and vitamin D factors before treating a high PTH value as autonomous disease. Routine active vitamin D in every adult or a plan that ignores phosphate is inconsistent with the KDIGO approach.",
+        "reviewHref": "#hyperphosphatemia-ckd-mbd"
+      },
+      "wholeStemAllAlternativesKeyRationaleAnchorVerified": true,
+      "newlyCounted": true
+    },
+    {
+      "before": {
+        "id": "calcium-phosphorus-109",
+        "question": "A CKD patient reports taking every binder but often skips meals and takes the tablets at bedtime. What is the best next interpretation or management principle?",
+        "choices": [
+          "Reconcile each dose with actual phosphate-containing food",
+          "Normalize one laboratory value without a mechanism",
+          "Use the same fixed plan for every patient",
+          "Ignore medication timing"
+        ],
+        "answer": 0,
+        "rationale": "Adherence includes correct timing and indication, not tablet count alone.",
+        "reviewHref": "#hyperphosphatemia-ckd-mbd"
+      },
+      "final": {
+        "id": "calcium-phosphorus-109",
+        "question": "A CKD patient reports taking every binder but often skips meals and takes the tablets at bedtime. What is the best next interpretation or management principle?",
+        "choices": [
+          "Reconcile each dose with actual phosphate-containing food",
+          "Take all missed doses at bedtime to bind phosphate absorbed earlier",
+          "Increase the binder dose before checking meals or administration times",
+          "Eliminate all protein-containing food instead of reviewing timing"
+        ],
+        "answer": 0,
+        "rationale": "Taking a tablet is not the same as binding phosphate from a meal. Review actual food intake and match the prescribed binder regimen to phosphate-containing meals or snacks. A bedtime catch-up after absorption, an automatic dose increase, or total protein elimination does not repair the timing problem and can create additional risk.",
+        "reviewHref": "#hyperphosphatemia-ckd-mbd"
+      },
+      "wholeStemAllAlternativesKeyRationaleAnchorVerified": true,
+      "newlyCounted": true
+    },
+    {
+      "before": null,
+      "final": {
+        "id": "calcium-phosphorus-binder-formulation-selection",
+        "question": "A patient taking lanthanum has poor dentition and cannot chew its tablets completely. Which formulation plan is most appropriate?",
+        "choices": [
+          "Consider labeled lanthanum oral powder, prepared with suitable food, after reviewing gastrointestinal safety",
+          "Swallow the chewable tablet intact to preserve its binding effect",
+          "Dissolve lanthanum oral powder completely in water before taking it",
+          "Assume an oral powder is automatically suitable for any feeding tube"
+        ],
+        "answer": 0,
+        "rationale": "Fosrenol tablets must be chewed or crushed completely, not swallowed intact. The powder is an option for difficulty chewing; sprinkle it on a small amount of applesauce or similar food and consume immediately. It is insoluble and should not be dissolved in liquid. Review gastrointestinal risks and the intended route; oral powder availability alone does not establish feeding-tube suitability.",
+        "reviewHref": "#hyperphosphatemia-ckd-mbd",
+        "difficulty": "clinical"
+      },
+      "wholeStemAllAlternativesKeyRationaleAnchorVerified": true,
+      "newlyCounted": true
+    },
+    {
+      "before": null,
+      "final": {
+        "id": "calcium-phosphorus-binder-medicine-reconciliation",
+        "question": "A patient switches from lanthanum to sevelamer while taking oral ciprofloxacin. Which medication-reconciliation principle is safest?",
+        "choices": [
+          "Recheck instructions for the actual binder-antibiotic pair instead of copying a universal separation interval",
+          "Use the same separation interval for every binder because all interactions are identical",
+          "Take ciprofloxacin simultaneously with the binder to improve absorption",
+          "Stop giving the binder with meals so that every oral medicine can be taken together"
+        ],
+        "answer": 0,
+        "rationale": "Fosrenol labeling places oral quinolones at least 1 hour before or 4 hours after lanthanum. Renvela labeling places ciprofloxacin at least 2 hours before or 6 hours after sevelamer. Simultaneous administration can reduce antibiotic absorption. Reconcile both products and the meal schedule rather than imposing one interval or abandoning food-linked binder dosing.",
+        "reviewHref": "#hyperphosphatemia-ckd-mbd",
+        "difficulty": "clinical"
+      },
+      "wholeStemAllAlternativesKeyRationaleAnchorVerified": true,
+      "newlyCounted": true
+    }
+  ],
+  "cumulativeReview": {
+    "final": {
+      "id": "cumulative-calcium-phosphorus-homeostasis-calcium-phosphorus-109",
+      "question": "A CKD patient reports taking every binder but often skips meals and takes the tablets at bedtime. What is the best next interpretation or management principle?",
+      "choices": [
+        "Reconcile each dose with actual phosphate-containing food",
+        "Take all missed doses at bedtime to bind phosphate absorbed earlier",
+        "Increase the binder dose before checking meals or administration times",
+        "Eliminate all protein-containing food instead of reviewing timing"
+      ],
+      "answer": 0,
+      "rationale": "Taking a tablet is not the same as binding phosphate from a meal. Review actual food intake and match the prescribed binder regimen to phosphate-containing meals or snacks. A bedtime catch-up after absorption, an automatic dose increase, or total protein elimination does not repair the timing problem and can create additional risk.",
+      "reviewHref": "/learn/pharmacy/modules/calcium-phosphorus-homeostasis",
+      "module": "Calcium and Phosphorus Homeostasis"
+    },
+    "allFiveOriginalSelectionIdsPreserved": true,
+    "wholeObjectSourceReviewed": true,
+    "other1179WholeObjectsUnchanged": true
+  },
+  "validation": {
+    "productionBuild": {
+      "status": "passed",
+      "exitCode": 0,
+      "pages": 567,
+      "isolatedBaseCommit": "1c5a5d46bb16f72af4ebe85472bb7a0880ae43cd",
+      "earlierFailures": "First two builds failed from temporary disk capacity; reproduced after deleting only obsolete terminal audit .next outputs. Source/evidence/working drafts preserved."
+    },
+    "structure": {
+      "modules": 1,
+      "questions": 104,
+      "hardErrors": [],
+      "sourceGaps": [],
+      "sizeAdvisories": [],
+      "thinLessons": [],
+      "weakestModules": [
+        {
+          "module": "calcium-phosphorus-homeostasis",
+          "lessons": 6,
+          "questions": 104,
+          "minimumLessonCoverage": 8
+        }
+      ]
+    },
+    "objectPreservation": {
+      "status": "passed",
+      "bankBefore": 102,
+      "bankAfter": 104,
+      "all102OriginalIdsKeysCorrectTextsAnchorsRelativeOrderPreserved": true,
+      "other90WholeQuestionObjectsUnchanged": true,
+      "fourOldBodiesReconciledTwoAdded": true,
+      "untouchedAcuteBodyAndQuestion050Retained": true,
+      "otherLessonMetadataChecksAndFiguresUnchanged": true,
+      "onlyTwoLabelReferencesAdded": true,
+      "fiveOriginalDerivedCumulativeIdsPreserved": true,
+      "cumulative109Reconciled": true,
+      "other1179WholeCumulativeObjectsUnchanged": true,
+      "all1180CumulativeIdsKeysAnchorsOrderPreserved": true,
+      "allOtherModuleWholeObjectsUnchanged": true
+    },
+    "browser": {
+      "status": "passed",
+      "results": [
+        {
+          "width": 1440,
+          "module": "calcium-phosphorus-homeostasis",
+          "bodies": 27,
+          "exactMetadata": true,
+          "checkResults": [
+            {
+              "slug": "hyperphosphatemia-ckd-mbd",
+              "wrong": true,
+              "feedbackAndAnchorVerified": true
+            },
+            {
+              "slug": "hyperphosphatemia-ckd-mbd",
+              "wrong": false,
+              "feedbackAndAnchorVerified": true
+            }
+          ],
+          "references": 16,
+          "wholeLessonClinicalVerification": false,
+          "bookSupportedQuestionScopeVerified": true,
+          "attempts": [
+            {
+              "target": "calcium-phosphorus-binder-formulation-selection",
+              "seed": 4,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-070",
+                "calcium-phosphorus-binder-formulation-selection",
+                "calcium-phosphorus-099",
+                "calcium-phosphorus-002",
+                "calcium-phosphorus-093",
+                "calcium-phosphorus-015",
+                "calcium-phosphorus-076",
+                "calcium-phosphorus-041",
+                "calcium-phosphorus-081",
+                "calcium-phosphorus-061"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-binder-formulation-selection",
+              "seed": 4,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-070",
+                "calcium-phosphorus-binder-formulation-selection",
+                "calcium-phosphorus-099",
+                "calcium-phosphorus-002",
+                "calcium-phosphorus-093",
+                "calcium-phosphorus-015",
+                "calcium-phosphorus-076",
+                "calcium-phosphorus-041",
+                "calcium-phosphorus-081",
+                "calcium-phosphorus-061"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-043",
+              "seed": 9,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-075",
+                "calcium-phosphorus-063",
+                "calcium-phosphorus-015",
+                "calcium-phosphorus-081",
+                "calcium-phosphorus-043",
+                "calcium-phosphorus-079",
+                "calcium-phosphorus-012",
+                "calcium-phosphorus-023",
+                "calcium-phosphorus-068",
+                "calcium-phosphorus-105"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-043",
+              "seed": 9,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-075",
+                "calcium-phosphorus-063",
+                "calcium-phosphorus-015",
+                "calcium-phosphorus-081",
+                "calcium-phosphorus-043",
+                "calcium-phosphorus-079",
+                "calcium-phosphorus-012",
+                "calcium-phosphorus-023",
+                "calcium-phosphorus-068",
+                "calcium-phosphorus-105"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-044",
+              "seed": 7,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-004",
+                "calcium-phosphorus-050",
+                "calcium-phosphorus-044",
+                "calcium-phosphorus-065",
+                "calcium-phosphorus-086",
+                "calcium-phosphorus-064",
+                "calcium-phosphorus-012",
+                "calcium-phosphorus-024",
+                "calcium-phosphorus-078",
+                "calcium-phosphorus-061"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-044",
+              "seed": 7,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-004",
+                "calcium-phosphorus-050",
+                "calcium-phosphorus-044",
+                "calcium-phosphorus-065",
+                "calcium-phosphorus-086",
+                "calcium-phosphorus-064",
+                "calcium-phosphorus-012",
+                "calcium-phosphorus-024",
+                "calcium-phosphorus-078",
+                "calcium-phosphorus-061"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-045",
+              "seed": 16,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-066",
+                "calcium-phosphorus-102",
+                "calcium-phosphorus-027",
+                "calcium-phosphorus-105",
+                "calcium-phosphorus-003",
+                "calcium-phosphorus-089",
+                "calcium-phosphorus-045",
+                "calcium-phosphorus-019",
+                "calcium-phosphorus-040",
+                "calcium-phosphorus-073"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-045",
+              "seed": 16,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-066",
+                "calcium-phosphorus-102",
+                "calcium-phosphorus-027",
+                "calcium-phosphorus-105",
+                "calcium-phosphorus-003",
+                "calcium-phosphorus-089",
+                "calcium-phosphorus-045",
+                "calcium-phosphorus-019",
+                "calcium-phosphorus-040",
+                "calcium-phosphorus-073"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-046",
+              "seed": 19,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-092",
+                "calcium-phosphorus-027",
+                "calcium-phosphorus-025",
+                "calcium-phosphorus-003",
+                "calcium-phosphorus-094",
+                "calcium-phosphorus-100",
+                "calcium-phosphorus-035",
+                "calcium-phosphorus-013",
+                "calcium-phosphorus-046",
+                "calcium-phosphorus-074"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-046",
+              "seed": 19,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-092",
+                "calcium-phosphorus-027",
+                "calcium-phosphorus-025",
+                "calcium-phosphorus-003",
+                "calcium-phosphorus-094",
+                "calcium-phosphorus-100",
+                "calcium-phosphorus-035",
+                "calcium-phosphorus-013",
+                "calcium-phosphorus-046",
+                "calcium-phosphorus-074"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-047",
+              "seed": 8,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-033",
+                "calcium-phosphorus-087",
+                "calcium-phosphorus-binder-formulation-selection",
+                "calcium-phosphorus-064",
+                "calcium-phosphorus-027",
+                "calcium-phosphorus-085",
+                "calcium-phosphorus-002",
+                "calcium-phosphorus-107",
+                "calcium-phosphorus-008",
+                "calcium-phosphorus-047"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-047",
+              "seed": 8,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-033",
+                "calcium-phosphorus-087",
+                "calcium-phosphorus-binder-formulation-selection",
+                "calcium-phosphorus-064",
+                "calcium-phosphorus-027",
+                "calcium-phosphorus-085",
+                "calcium-phosphorus-002",
+                "calcium-phosphorus-107",
+                "calcium-phosphorus-008",
+                "calcium-phosphorus-047"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-048",
+              "seed": 6,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-084",
+                "calcium-phosphorus-019",
+                "calcium-phosphorus-018",
+                "calcium-phosphorus-106",
+                "calcium-phosphorus-048",
+                "calcium-phosphorus-036",
+                "calcium-phosphorus-020",
+                "calcium-phosphorus-029",
+                "calcium-phosphorus-022",
+                "calcium-phosphorus-081"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-048",
+              "seed": 6,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-084",
+                "calcium-phosphorus-019",
+                "calcium-phosphorus-018",
+                "calcium-phosphorus-106",
+                "calcium-phosphorus-048",
+                "calcium-phosphorus-036",
+                "calcium-phosphorus-020",
+                "calcium-phosphorus-029",
+                "calcium-phosphorus-022",
+                "calcium-phosphorus-081"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-049",
+              "seed": 11,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-038",
+                "calcium-phosphorus-048",
+                "calcium-phosphorus-017",
+                "calcium-phosphorus-016",
+                "calcium-phosphorus-070",
+                "calcium-phosphorus-078",
+                "calcium-phosphorus-030",
+                "calcium-phosphorus-049",
+                "calcium-phosphorus-006",
+                "calcium-phosphorus-074"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-049",
+              "seed": 11,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-038",
+                "calcium-phosphorus-048",
+                "calcium-phosphorus-017",
+                "calcium-phosphorus-016",
+                "calcium-phosphorus-070",
+                "calcium-phosphorus-078",
+                "calcium-phosphorus-030",
+                "calcium-phosphorus-049",
+                "calcium-phosphorus-006",
+                "calcium-phosphorus-074"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-096",
+              "seed": 42,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-080",
+                "calcium-phosphorus-106",
+                "calcium-phosphorus-096",
+                "calcium-phosphorus-070",
+                "calcium-phosphorus-084",
+                "calcium-phosphorus-069",
+                "calcium-phosphorus-064",
+                "calcium-phosphorus-031",
+                "calcium-phosphorus-024",
+                "calcium-phosphorus-020"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-096",
+              "seed": 42,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-080",
+                "calcium-phosphorus-106",
+                "calcium-phosphorus-096",
+                "calcium-phosphorus-070",
+                "calcium-phosphorus-084",
+                "calcium-phosphorus-069",
+                "calcium-phosphorus-064",
+                "calcium-phosphorus-031",
+                "calcium-phosphorus-024",
+                "calcium-phosphorus-020"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-099",
+              "seed": 1,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-099",
+                "calcium-phosphorus-021",
+                "calcium-phosphorus-026",
+                "calcium-phosphorus-095",
+                "calcium-phosphorus-107",
+                "calcium-phosphorus-108",
+                "calcium-phosphorus-081",
+                "calcium-phosphorus-072",
+                "calcium-phosphorus-080",
+                "calcium-phosphorus-008"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-099",
+              "seed": 1,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-099",
+                "calcium-phosphorus-021",
+                "calcium-phosphorus-026",
+                "calcium-phosphorus-095",
+                "calcium-phosphorus-107",
+                "calcium-phosphorus-108",
+                "calcium-phosphorus-081",
+                "calcium-phosphorus-072",
+                "calcium-phosphorus-080",
+                "calcium-phosphorus-008"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-103",
+              "seed": 21,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-102",
+                "calcium-phosphorus-073",
+                "calcium-phosphorus-027",
+                "calcium-phosphorus-061",
+                "calcium-phosphorus-020",
+                "calcium-phosphorus-095",
+                "calcium-phosphorus-018",
+                "calcium-phosphorus-103",
+                "calcium-phosphorus-035",
+                "calcium-phosphorus-045"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-103",
+              "seed": 21,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-102",
+                "calcium-phosphorus-073",
+                "calcium-phosphorus-027",
+                "calcium-phosphorus-061",
+                "calcium-phosphorus-020",
+                "calcium-phosphorus-095",
+                "calcium-phosphorus-018",
+                "calcium-phosphorus-103",
+                "calcium-phosphorus-035",
+                "calcium-phosphorus-045"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-105",
+              "seed": 3,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-002",
+                "calcium-phosphorus-094",
+                "calcium-phosphorus-034",
+                "calcium-phosphorus-022",
+                "calcium-phosphorus-012",
+                "calcium-phosphorus-105",
+                "calcium-phosphorus-050",
+                "calcium-phosphorus-084",
+                "calcium-phosphorus-091",
+                "calcium-phosphorus-iron-persistent-warning"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-105",
+              "seed": 3,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-002",
+                "calcium-phosphorus-094",
+                "calcium-phosphorus-034",
+                "calcium-phosphorus-022",
+                "calcium-phosphorus-012",
+                "calcium-phosphorus-105",
+                "calcium-phosphorus-050",
+                "calcium-phosphorus-084",
+                "calcium-phosphorus-091",
+                "calcium-phosphorus-iron-persistent-warning"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-binder-medicine-reconciliation",
+              "seed": 10,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-binder-medicine-reconciliation",
+                "calcium-phosphorus-068",
+                "calcium-phosphorus-063",
+                "calcium-phosphorus-088",
+                "calcium-phosphorus-003",
+                "calcium-phosphorus-038",
+                "calcium-phosphorus-013",
+                "calcium-phosphorus-011",
+                "calcium-phosphorus-067",
+                "calcium-phosphorus-076"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-binder-medicine-reconciliation",
+              "seed": 10,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-binder-medicine-reconciliation",
+                "calcium-phosphorus-068",
+                "calcium-phosphorus-063",
+                "calcium-phosphorus-088",
+                "calcium-phosphorus-003",
+                "calcium-phosphorus-038",
+                "calcium-phosphorus-013",
+                "calcium-phosphorus-011",
+                "calcium-phosphorus-067",
+                "calcium-phosphorus-076"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-109",
+              "seed": 35,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-002",
+                "calcium-phosphorus-074",
+                "calcium-phosphorus-043",
+                "calcium-phosphorus-066",
+                "calcium-phosphorus-047",
+                "calcium-phosphorus-009",
+                "calcium-phosphorus-016",
+                "calcium-phosphorus-031",
+                "calcium-phosphorus-028",
+                "calcium-phosphorus-109"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-109",
+              "seed": 35,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-002",
+                "calcium-phosphorus-074",
+                "calcium-phosphorus-043",
+                "calcium-phosphorus-066",
+                "calcium-phosphorus-047",
+                "calcium-phosphorus-009",
+                "calcium-phosphorus-016",
+                "calcium-phosphorus-031",
+                "calcium-phosphorus-028",
+                "calcium-phosphorus-109"
+              ]
+            }
+          ],
+          "noHorizontalOverflow": true,
+          "unauthenticated": true
+        },
+        {
+          "width": 390,
+          "module": "calcium-phosphorus-homeostasis",
+          "bodies": 27,
+          "exactMetadata": true,
+          "checkResults": [
+            {
+              "slug": "hyperphosphatemia-ckd-mbd",
+              "wrong": true,
+              "feedbackAndAnchorVerified": true
+            },
+            {
+              "slug": "hyperphosphatemia-ckd-mbd",
+              "wrong": false,
+              "feedbackAndAnchorVerified": true
+            }
+          ],
+          "references": 16,
+          "wholeLessonClinicalVerification": false,
+          "bookSupportedQuestionScopeVerified": true,
+          "attempts": [
+            {
+              "target": "calcium-phosphorus-binder-formulation-selection",
+              "seed": 4,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-070",
+                "calcium-phosphorus-binder-formulation-selection",
+                "calcium-phosphorus-099",
+                "calcium-phosphorus-002",
+                "calcium-phosphorus-093",
+                "calcium-phosphorus-015",
+                "calcium-phosphorus-076",
+                "calcium-phosphorus-041",
+                "calcium-phosphorus-081",
+                "calcium-phosphorus-061"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-binder-formulation-selection",
+              "seed": 4,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-070",
+                "calcium-phosphorus-binder-formulation-selection",
+                "calcium-phosphorus-099",
+                "calcium-phosphorus-002",
+                "calcium-phosphorus-093",
+                "calcium-phosphorus-015",
+                "calcium-phosphorus-076",
+                "calcium-phosphorus-041",
+                "calcium-phosphorus-081",
+                "calcium-phosphorus-061"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-043",
+              "seed": 9,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-075",
+                "calcium-phosphorus-063",
+                "calcium-phosphorus-015",
+                "calcium-phosphorus-081",
+                "calcium-phosphorus-043",
+                "calcium-phosphorus-079",
+                "calcium-phosphorus-012",
+                "calcium-phosphorus-023",
+                "calcium-phosphorus-068",
+                "calcium-phosphorus-105"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-043",
+              "seed": 9,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-075",
+                "calcium-phosphorus-063",
+                "calcium-phosphorus-015",
+                "calcium-phosphorus-081",
+                "calcium-phosphorus-043",
+                "calcium-phosphorus-079",
+                "calcium-phosphorus-012",
+                "calcium-phosphorus-023",
+                "calcium-phosphorus-068",
+                "calcium-phosphorus-105"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-044",
+              "seed": 7,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-004",
+                "calcium-phosphorus-050",
+                "calcium-phosphorus-044",
+                "calcium-phosphorus-065",
+                "calcium-phosphorus-086",
+                "calcium-phosphorus-064",
+                "calcium-phosphorus-012",
+                "calcium-phosphorus-024",
+                "calcium-phosphorus-078",
+                "calcium-phosphorus-061"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-044",
+              "seed": 7,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-004",
+                "calcium-phosphorus-050",
+                "calcium-phosphorus-044",
+                "calcium-phosphorus-065",
+                "calcium-phosphorus-086",
+                "calcium-phosphorus-064",
+                "calcium-phosphorus-012",
+                "calcium-phosphorus-024",
+                "calcium-phosphorus-078",
+                "calcium-phosphorus-061"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-045",
+              "seed": 16,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-066",
+                "calcium-phosphorus-102",
+                "calcium-phosphorus-027",
+                "calcium-phosphorus-105",
+                "calcium-phosphorus-003",
+                "calcium-phosphorus-089",
+                "calcium-phosphorus-045",
+                "calcium-phosphorus-019",
+                "calcium-phosphorus-040",
+                "calcium-phosphorus-073"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-045",
+              "seed": 16,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-066",
+                "calcium-phosphorus-102",
+                "calcium-phosphorus-027",
+                "calcium-phosphorus-105",
+                "calcium-phosphorus-003",
+                "calcium-phosphorus-089",
+                "calcium-phosphorus-045",
+                "calcium-phosphorus-019",
+                "calcium-phosphorus-040",
+                "calcium-phosphorus-073"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-046",
+              "seed": 19,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-092",
+                "calcium-phosphorus-027",
+                "calcium-phosphorus-025",
+                "calcium-phosphorus-003",
+                "calcium-phosphorus-094",
+                "calcium-phosphorus-100",
+                "calcium-phosphorus-035",
+                "calcium-phosphorus-013",
+                "calcium-phosphorus-046",
+                "calcium-phosphorus-074"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-046",
+              "seed": 19,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-092",
+                "calcium-phosphorus-027",
+                "calcium-phosphorus-025",
+                "calcium-phosphorus-003",
+                "calcium-phosphorus-094",
+                "calcium-phosphorus-100",
+                "calcium-phosphorus-035",
+                "calcium-phosphorus-013",
+                "calcium-phosphorus-046",
+                "calcium-phosphorus-074"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-047",
+              "seed": 8,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-033",
+                "calcium-phosphorus-087",
+                "calcium-phosphorus-binder-formulation-selection",
+                "calcium-phosphorus-064",
+                "calcium-phosphorus-027",
+                "calcium-phosphorus-085",
+                "calcium-phosphorus-002",
+                "calcium-phosphorus-107",
+                "calcium-phosphorus-008",
+                "calcium-phosphorus-047"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-047",
+              "seed": 8,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-033",
+                "calcium-phosphorus-087",
+                "calcium-phosphorus-binder-formulation-selection",
+                "calcium-phosphorus-064",
+                "calcium-phosphorus-027",
+                "calcium-phosphorus-085",
+                "calcium-phosphorus-002",
+                "calcium-phosphorus-107",
+                "calcium-phosphorus-008",
+                "calcium-phosphorus-047"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-048",
+              "seed": 6,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-084",
+                "calcium-phosphorus-019",
+                "calcium-phosphorus-018",
+                "calcium-phosphorus-106",
+                "calcium-phosphorus-048",
+                "calcium-phosphorus-036",
+                "calcium-phosphorus-020",
+                "calcium-phosphorus-029",
+                "calcium-phosphorus-022",
+                "calcium-phosphorus-081"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-048",
+              "seed": 6,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-084",
+                "calcium-phosphorus-019",
+                "calcium-phosphorus-018",
+                "calcium-phosphorus-106",
+                "calcium-phosphorus-048",
+                "calcium-phosphorus-036",
+                "calcium-phosphorus-020",
+                "calcium-phosphorus-029",
+                "calcium-phosphorus-022",
+                "calcium-phosphorus-081"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-049",
+              "seed": 11,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-038",
+                "calcium-phosphorus-048",
+                "calcium-phosphorus-017",
+                "calcium-phosphorus-016",
+                "calcium-phosphorus-070",
+                "calcium-phosphorus-078",
+                "calcium-phosphorus-030",
+                "calcium-phosphorus-049",
+                "calcium-phosphorus-006",
+                "calcium-phosphorus-074"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-049",
+              "seed": 11,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-038",
+                "calcium-phosphorus-048",
+                "calcium-phosphorus-017",
+                "calcium-phosphorus-016",
+                "calcium-phosphorus-070",
+                "calcium-phosphorus-078",
+                "calcium-phosphorus-030",
+                "calcium-phosphorus-049",
+                "calcium-phosphorus-006",
+                "calcium-phosphorus-074"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-096",
+              "seed": 42,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-080",
+                "calcium-phosphorus-106",
+                "calcium-phosphorus-096",
+                "calcium-phosphorus-070",
+                "calcium-phosphorus-084",
+                "calcium-phosphorus-069",
+                "calcium-phosphorus-064",
+                "calcium-phosphorus-031",
+                "calcium-phosphorus-024",
+                "calcium-phosphorus-020"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-096",
+              "seed": 42,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-080",
+                "calcium-phosphorus-106",
+                "calcium-phosphorus-096",
+                "calcium-phosphorus-070",
+                "calcium-phosphorus-084",
+                "calcium-phosphorus-069",
+                "calcium-phosphorus-064",
+                "calcium-phosphorus-031",
+                "calcium-phosphorus-024",
+                "calcium-phosphorus-020"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-099",
+              "seed": 1,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-099",
+                "calcium-phosphorus-021",
+                "calcium-phosphorus-026",
+                "calcium-phosphorus-095",
+                "calcium-phosphorus-107",
+                "calcium-phosphorus-108",
+                "calcium-phosphorus-081",
+                "calcium-phosphorus-072",
+                "calcium-phosphorus-080",
+                "calcium-phosphorus-008"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-099",
+              "seed": 1,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-099",
+                "calcium-phosphorus-021",
+                "calcium-phosphorus-026",
+                "calcium-phosphorus-095",
+                "calcium-phosphorus-107",
+                "calcium-phosphorus-108",
+                "calcium-phosphorus-081",
+                "calcium-phosphorus-072",
+                "calcium-phosphorus-080",
+                "calcium-phosphorus-008"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-103",
+              "seed": 21,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-102",
+                "calcium-phosphorus-073",
+                "calcium-phosphorus-027",
+                "calcium-phosphorus-061",
+                "calcium-phosphorus-020",
+                "calcium-phosphorus-095",
+                "calcium-phosphorus-018",
+                "calcium-phosphorus-103",
+                "calcium-phosphorus-035",
+                "calcium-phosphorus-045"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-103",
+              "seed": 21,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-102",
+                "calcium-phosphorus-073",
+                "calcium-phosphorus-027",
+                "calcium-phosphorus-061",
+                "calcium-phosphorus-020",
+                "calcium-phosphorus-095",
+                "calcium-phosphorus-018",
+                "calcium-phosphorus-103",
+                "calcium-phosphorus-035",
+                "calcium-phosphorus-045"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-105",
+              "seed": 3,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-002",
+                "calcium-phosphorus-094",
+                "calcium-phosphorus-034",
+                "calcium-phosphorus-022",
+                "calcium-phosphorus-012",
+                "calcium-phosphorus-105",
+                "calcium-phosphorus-050",
+                "calcium-phosphorus-084",
+                "calcium-phosphorus-091",
+                "calcium-phosphorus-iron-persistent-warning"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-105",
+              "seed": 3,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-002",
+                "calcium-phosphorus-094",
+                "calcium-phosphorus-034",
+                "calcium-phosphorus-022",
+                "calcium-phosphorus-012",
+                "calcium-phosphorus-105",
+                "calcium-phosphorus-050",
+                "calcium-phosphorus-084",
+                "calcium-phosphorus-091",
+                "calcium-phosphorus-iron-persistent-warning"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-binder-medicine-reconciliation",
+              "seed": 10,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-binder-medicine-reconciliation",
+                "calcium-phosphorus-068",
+                "calcium-phosphorus-063",
+                "calcium-phosphorus-088",
+                "calcium-phosphorus-003",
+                "calcium-phosphorus-038",
+                "calcium-phosphorus-013",
+                "calcium-phosphorus-011",
+                "calcium-phosphorus-067",
+                "calcium-phosphorus-076"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-binder-medicine-reconciliation",
+              "seed": 10,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-binder-medicine-reconciliation",
+                "calcium-phosphorus-068",
+                "calcium-phosphorus-063",
+                "calcium-phosphorus-088",
+                "calcium-phosphorus-003",
+                "calcium-phosphorus-038",
+                "calcium-phosphorus-013",
+                "calcium-phosphorus-011",
+                "calcium-phosphorus-067",
+                "calcium-phosphorus-076"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-109",
+              "seed": 35,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-002",
+                "calcium-phosphorus-074",
+                "calcium-phosphorus-043",
+                "calcium-phosphorus-066",
+                "calcium-phosphorus-047",
+                "calcium-phosphorus-009",
+                "calcium-phosphorus-016",
+                "calcium-phosphorus-031",
+                "calcium-phosphorus-028",
+                "calcium-phosphorus-109"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-109",
+              "seed": 35,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-002",
+                "calcium-phosphorus-074",
+                "calcium-phosphorus-043",
+                "calcium-phosphorus-066",
+                "calcium-phosphorus-047",
+                "calcium-phosphorus-009",
+                "calcium-phosphorus-016",
+                "calcium-phosphorus-031",
+                "calcium-phosphorus-028",
+                "calcium-phosphorus-109"
+              ]
+            }
+          ],
+          "noHorizontalOverflow": true,
+          "unauthenticated": true
+        },
+        {
+          "width": 1440,
+          "route": "cumulative",
+          "attempts": [
+            {
+              "id": "cumulative-calcium-phosphorus-homeostasis-calcium-phosphorus-109",
+              "wrong": true,
+              "seed": 107,
+              "feedbackAndModuleLinkVerified": true
+            },
+            {
+              "id": "cumulative-calcium-phosphorus-homeostasis-calcium-phosphorus-109",
+              "wrong": false,
+              "seed": 107,
+              "feedbackAndModuleLinkVerified": true
+            }
+          ]
+        },
+        {
+          "width": 390,
+          "route": "cumulative",
+          "attempts": [
+            {
+              "id": "cumulative-calcium-phosphorus-homeostasis-calcium-phosphorus-109",
+              "wrong": true,
+              "seed": 107,
+              "feedbackAndModuleLinkVerified": true
+            },
+            {
+              "id": "cumulative-calcium-phosphorus-homeostasis-calcium-phosphorus-109",
+              "wrong": false,
+              "seed": 107,
+              "feedbackAndModuleLinkVerified": true
+            }
+          ]
+        }
+      ],
+      "errors": [],
+      "captures": [
+        "body-module-Treat-a-pattern,-not-a-single-number-1440.png",
+        "body-module-Reduce-absorbable-phosphate-1440.png",
+        "body-module-Choose-binders-by-patient-risk-1440.png",
+        "body-module-Select-a-binder-formulation-deliberately-1440.png",
+        "body-module-Check-binder-interactions-before-scheduling-1440.png",
+        "body-module-Coordinate-hormone-and-dialysis-therapy-1440.png",
+        "figure-hyperphosphatemia-ckd-mbd-1440.png",
+        "references-module-1440.png",
+        "question-calcium-phosphorus-binder-formulation-selection-correct-1440.png",
+        "question-calcium-phosphorus-043-correct-1440.png",
+        "question-calcium-phosphorus-044-correct-1440.png",
+        "question-calcium-phosphorus-045-correct-1440.png",
+        "question-calcium-phosphorus-046-correct-1440.png",
+        "question-calcium-phosphorus-047-correct-1440.png",
+        "question-calcium-phosphorus-048-correct-1440.png",
+        "question-calcium-phosphorus-049-correct-1440.png",
+        "question-calcium-phosphorus-096-correct-1440.png",
+        "question-calcium-phosphorus-099-correct-1440.png",
+        "question-calcium-phosphorus-103-correct-1440.png",
+        "question-calcium-phosphorus-105-correct-1440.png",
+        "question-calcium-phosphorus-binder-medicine-reconciliation-correct-1440.png",
+        "question-calcium-phosphorus-109-correct-1440.png",
+        "check-hyperphosphatemia-ckd-mbd-incorrect-1440.png",
+        "check-hyperphosphatemia-ckd-mbd-correct-1440.png",
+        "body-module-Treat-a-pattern,-not-a-single-number-390.png",
+        "body-module-Reduce-absorbable-phosphate-390.png",
+        "body-module-Choose-binders-by-patient-risk-390.png",
+        "body-module-Select-a-binder-formulation-deliberately-390.png",
+        "body-module-Check-binder-interactions-before-scheduling-390.png",
+        "body-module-Coordinate-hormone-and-dialysis-therapy-390.png",
+        "figure-hyperphosphatemia-ckd-mbd-390.png",
+        "references-module-390.png",
+        "question-calcium-phosphorus-binder-formulation-selection-incorrect-390.png",
+        "question-calcium-phosphorus-043-incorrect-390.png",
+        "question-calcium-phosphorus-044-incorrect-390.png",
+        "question-calcium-phosphorus-045-incorrect-390.png",
+        "question-calcium-phosphorus-046-incorrect-390.png",
+        "question-calcium-phosphorus-047-incorrect-390.png",
+        "question-calcium-phosphorus-048-incorrect-390.png",
+        "question-calcium-phosphorus-049-incorrect-390.png",
+        "question-calcium-phosphorus-096-incorrect-390.png",
+        "question-calcium-phosphorus-099-incorrect-390.png",
+        "question-calcium-phosphorus-103-incorrect-390.png",
+        "question-calcium-phosphorus-105-incorrect-390.png",
+        "question-calcium-phosphorus-binder-medicine-reconciliation-incorrect-390.png",
+        "question-calcium-phosphorus-109-incorrect-390.png",
+        "check-hyperphosphatemia-ckd-mbd-incorrect-390.png",
+        "check-hyperphosphatemia-ckd-mbd-correct-390.png",
+        "cumulative-109-incorrect-1440.png",
+        "cumulative-109-correct-1440.png",
+        "cumulative-109-incorrect-390.png",
+        "cumulative-109-correct-390.png"
+      ]
+    },
+    "visualInspection": {
+      "status": "passed",
+      "reviewedAt": "2026-10-05T03:17:55.367217+00:00",
+      "all52RawCapturesViewedIn26OriginalSizeDesktopMobileComparisons": true,
+      "comparisonFilesActuallyViewed": [
+        "visual-compare-1.png",
+        "visual-compare-2.png",
+        "visual-compare-3.png",
+        "visual-compare-4.png",
+        "visual-compare-5.png",
+        "visual-compare-6.png",
+        "visual-compare-7.png",
+        "visual-compare-8.png",
+        "visual-compare-9.png",
+        "visual-compare-10.png",
+        "visual-compare-11.png",
+        "visual-compare-12.png",
+        "visual-compare-13.png",
+        "visual-compare-14.png",
+        "visual-compare-15.png",
+        "visual-compare-16.png",
+        "visual-compare-17.png",
+        "visual-compare-18.png",
+        "visual-compare-19.png",
+        "visual-compare-20.png",
+        "visual-compare-21.png",
+        "visual-compare-22.png",
+        "visual-compare-23.png",
+        "visual-compare-24.png",
+        "visual-compare-25.png",
+        "visual-compare-26.png"
+      ],
+      "reviewedScopes": [
+        "Six complete teaching sections",
+        "Fourteen whole module questions with correct desktop and incorrect mobile feedback",
+        "Embedded check both feedback states at both widths",
+        "Complete six-card CKD mineral figure",
+        "Cumulative109 both feedback states at both widths",
+        "References includingtwo added productlabel links"
+      ],
+      "findings": "Reviewed stems, choices, explanations, anchors, teaching text and diagram labels are readable in these captures. No clipped text or horizontal overflow observed at tested widths. Scope is these captures and checked interaction states; does not imply universal scroll-position or production verification.",
+      "actualViewports": [
+        1440,
+        390
+      ],
+      "narrow320OverflowCheckPassed": true,
+      "newHeroOrPdfAuthored": false
+    },
+    "limits": "Unauthenticated isolated preview. Exact untouched DOM is technical evidence only. Whole lesson/parent/EN/chapter closure and production publication are not established."
+  },
+  "remainingReview": {
+    "questionIds": [
+      "calcium-phosphorus-050"
+    ],
+    "bodyHeadings": [
+      "Recognize acute phosphate toxicity"
+    ],
+    "metadataAndWholeLessonPending": true,
+    "nextAction": "Continue the remaining calcium/phosphorus lessons using the directly approved KDIGO2017, Endocrine Society malignancy hypercalcemia and Society for Endocrinology acute hypo/hypercalcemia sources. Reconcile the complete retained acute phosphate paragraph and aluminum question050 hematologic claim before closing the CKD lesson. Do not recount this unit or cumulative109. Then finish calcium parent and EN reintegration. Earliest sequential checkpoint remains Chapter1 printed7/PDF19 formula entry15 fluid needs, with Chapter11 feeding dependencies. The full82-chapter goal remains active."
+  },
+  "release": {
+    "branch": "audit/rxprep-content-2026-09-24",
+    "commit": null,
+    "push": "pending",
+    "receipt": "enteral-nutrition-broader-ckd-binder-release.json",
+    "mainMerge": "not performed",
+    "production": "not verified"
+  },
+  "wholeGoalComplete": false
+}

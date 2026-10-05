@@ -283,3 +283,105 @@ const sourceReviewedCalciumMeasurementQuestions = {
 for (const question of calciumPhosphorusHomeostasisQuestionBank) {
   if (Object.hasOwn(sourceReviewedCalciumMeasurementQuestions, question.id)) Object.assign(question, sourceReviewedCalciumMeasurementQuestions[question.id]);
 }
+
+const sourceReviewedCkdBinderQuestions = {
+  "calcium-phosphorus-043": {
+    "rationale": "KDIGO recommendation 4.1.1 considers serial calcium, phosphate, and PTH together. A single phosphate result or ignoring calcium loses the treatment context; rising PTH also requires evaluation of modifiable mineral and vitamin D factors."
+  },
+  "calcium-phosphorus-044": {
+    "rationale": "Inorganic phosphate additives are readily absorbed and may be underreported in nutrient databases. Phytate-bound phosphate in plants, including legumes, is less available; fiber is not a competing phosphate source. Reduce highly absorbable additives without compromising adequate protein intake."
+  },
+  "calcium-phosphorus-045": {
+    "rationale": "Binders must be present in the gut with dietary phosphate. A bedtime dose without food, a dose a week later, or a dose linked only to a calcium blood test does not target the phosphate-containing meal. Match prescribed doses to actual meals or snacks."
+  },
+  "calcium-phosphorus-046": {
+    "rationale": "Calcium acetate and calcium carbonate both bind phosphate and add calcium. Hypercalcemia and excess calcium exposure are important selection concerns; KDIGO suggests restricting their dose in adults receiving phosphate-lowering treatment. They are oral agents, do not always cause hypocalcemia, and should not be assumed harmless simply because phosphate falls."
+  },
+  "calcium-phosphorus-047": {
+    "rationale": "Iron from ferric citrate can be absorbed and increase iron stores. Follow ferritin and transferrin saturation and reassess other iron therapy. Sevelamer carbonate, calcium carbonate, and lanthanum carbonate do not supply iron; iron effects should not be assumed identical across binders."
+  },
+  "calcium-phosphorus-048": {
+    "question": "In an adult with CKD G3a-G5 not on dialysis and progressively rising or persistently elevated PTH, which modifiable factors should be assessed?",
+    "rationale": "For CKD G3a-G5 not on dialysis with progressively rising or persistently elevated PTH, KDIGO identifies hyperphosphatemia, hypocalcemia, high phosphate intake, and vitamin D deficiency as modifiable factors. PTH alone, sodium alone, or unrelated physical traits do not assess those drivers."
+  },
+  "calcium-phosphorus-049": {
+    "rationale": "A prescription does not establish effective phosphate binding. Review actual doses with meals, missed doses, absorbable dietary phosphate, dialytic removal, and regimen adequacy. Binders act before intestinal absorption; food supplies phosphate, and dialysis does not remove the continuing dietary load permanently."
+  },
+  "calcium-phosphorus-096": {
+    "choices": [
+      "Reassess calcium load and phosphate-lowering strategy",
+      "Increase calcium acetate automatically because phosphate is elevated",
+      "Stop all phosphate-lowering measures because calcium is within the reference range",
+      "Assume that lowering phosphate eliminates all calcification risk"
+    ],
+    "rationale": "Reassess calcium exposure, binder selection, food, and phosphate control together. KDIGO suggests restricting calcium-based binder doses in adults receiving phosphate-lowering treatment; calcification makes this concern especially relevant. An automatic increase in calcium acetate ignores its calcium burden, while dropping all phosphate control or assuming risk is eliminated overlooks persistent hyperphosphatemia."
+  },
+  "calcium-phosphorus-099": {
+    "choices": [
+      "Move binder dosing to phosphate-containing meals and reassess the full regimen",
+      "Keep every dose two hours after food because sevelamer binds absorbed phosphate",
+      "Take all daily doses at bedtime without food",
+      "Eliminate all dietary protein before reviewing binder timing"
+    ],
+    "rationale": "Sevelamer binds dietary phosphate in the gut and should accompany phosphate-containing food. Move doses to meals and reassess the regimen rather than relying on a late or food-free dose. Reducing all protein indiscriminately can compromise nutrition; assess absorbable phosphate sources and treatment delivery."
+  },
+  "calcium-phosphorus-103": {
+    "choices": [
+      "Recognize tumor lysis physiology and manage the full emergency",
+      "Correct calcium alone and defer assessment of potassium and kidney function",
+      "Treat phosphate as a dietary-adherence problem without urgent evaluation",
+      "Arrange only routine outpatient follow-up because the abnormalities are expected"
+    ],
+    "rationale": "Tumor cell lysis releases phosphate and potassium, can lower calcium through phosphate binding, and can produce kidney injury. These linked findings require urgent integrated evaluation and management. Correcting only calcium or phosphate, or waiting routinely for spontaneous recovery, misses the potassium and kidney components of the emergency."
+  },
+  "calcium-phosphorus-105": {
+    "question": "An adult with nondialysis CKD has persistently high PTH, elevated phosphate, low-normal calcium, and deficient 25-hydroxyvitamin D. What is the best next interpretation or management principle?",
+    "choices": [
+      "Address modifiable phosphate, calcium, intake, and vitamin D factors before labeling autonomous disease",
+      "Diagnose autonomous parathyroid disease from this single PTH result",
+      "Start active vitamin D routinely in every adult with nondialysis CKD and elevated PTH",
+      "Ignore phosphate intake because serum PTH is the only relevant treatment signal"
+    ],
+    "rationale": "These findings fit modifiable drivers of secondary hyperparathyroidism. In nondialysis CKD, assess trends and correct phosphate, calcium, intake, and vitamin D factors before treating a high PTH value as autonomous disease. Routine active vitamin D in every adult or a plan that ignores phosphate is inconsistent with the KDIGO approach."
+  },
+  "calcium-phosphorus-109": {
+    "choices": [
+      "Reconcile each dose with actual phosphate-containing food",
+      "Take all missed doses at bedtime to bind phosphate absorbed earlier",
+      "Increase the binder dose before checking meals or administration times",
+      "Eliminate all protein-containing food instead of reviewing timing"
+    ],
+    "rationale": "Taking a tablet is not the same as binding phosphate from a meal. Review actual food intake and match the prescribed binder regimen to phosphate-containing meals or snacks. A bedtime catch-up after absorption, an automatic dose increase, or total protein elimination does not repair the timing problem and can create additional risk."
+  }
+};
+for (const question of calciumPhosphorusHomeostasisQuestionBank) {
+  if (Object.hasOwn(sourceReviewedCkdBinderQuestions, question.id)) Object.assign(question, sourceReviewedCkdBinderQuestions[question.id]);
+}
+calciumPhosphorusHomeostasisQuestionBank.splice(calciumPhosphorusHomeostasisQuestionBank.findIndex((question) => question.id === "calcium-phosphorus-026"), 0, {
+  "id": "calcium-phosphorus-binder-formulation-selection",
+  "question": "A patient taking lanthanum has poor dentition and cannot chew its tablets completely. Which formulation plan is most appropriate?",
+  "choices": [
+    "Consider labeled lanthanum oral powder, prepared with suitable food, after reviewing gastrointestinal safety",
+    "Swallow the chewable tablet intact to preserve its binding effect",
+    "Dissolve lanthanum oral powder completely in water before taking it",
+    "Assume an oral powder is automatically suitable for any feeding tube"
+  ],
+  "answer": 0,
+  "rationale": "Fosrenol tablets must be chewed or crushed completely, not swallowed intact. The powder is an option for difficulty chewing; sprinkle it on a small amount of applesauce or similar food and consume immediately. It is insoluble and should not be dissolved in liquid. Review gastrointestinal risks and the intended route; oral powder availability alone does not establish feeding-tube suitability.",
+  "reviewHref": "#hyperphosphatemia-ckd-mbd",
+  "difficulty": "clinical"
+});
+calciumPhosphorusHomeostasisQuestionBank.splice(calciumPhosphorusHomeostasisQuestionBank.findIndex((question) => question.id === "calcium-phosphorus-109"), 0, {
+  "id": "calcium-phosphorus-binder-medicine-reconciliation",
+  "question": "A patient switches from lanthanum to sevelamer while taking oral ciprofloxacin. Which medication-reconciliation principle is safest?",
+  "choices": [
+    "Recheck instructions for the actual binder-antibiotic pair instead of copying a universal separation interval",
+    "Use the same separation interval for every binder because all interactions are identical",
+    "Take ciprofloxacin simultaneously with the binder to improve absorption",
+    "Stop giving the binder with meals so that every oral medicine can be taken together"
+  ],
+  "answer": 0,
+  "rationale": "Fosrenol labeling places oral quinolones at least 1 hour before or 4 hours after lanthanum. Renvela labeling places ciprofloxacin at least 2 hours before or 6 hours after sevelamer. Simultaneous administration can reduce antibiotic absorption. Reconcile both products and the meal schedule rather than imposing one interval or abandoning food-linked binder dosing.",
+  "reviewHref": "#hyperphosphatemia-ckd-mbd",
+  "difficulty": "clinical"
+});

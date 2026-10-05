@@ -130,3 +130,34 @@ export const calciumPhosphorusHomeostasisModule = {
   ],
   questionBank: calciumPhosphorusHomeostasisQuestionBank,
 };
+
+const sourceReviewedCkdBinderLesson = calciumPhosphorusHomeostasisModule.submodules.find((lesson) => lesson.slug === "hyperphosphatemia-ckd-mbd");
+const sourceReviewedCkdBinderBodies = {
+  "Treat a pattern, not a single number": "For CKD G3a-G5D, KDIGO bases mineral and bone disorder treatment on serial phosphate, calcium, and PTH assessed together. Phosphate-lowering treatment is guided by progressively or persistently elevated phosphate, rather than started automatically for a normal value. Lower elevated phosphate toward the normal range and avoid hypercalcemia in adults. Evidence that a specific phosphate target improves survival or cardiovascular outcomes remains limited.",
+  "Reduce absorbable phosphate": "Dietary counseling should consider phosphate source as well as total amount. Inorganic additives are highly absorbable; animal phosphate is generally more available than plant phytate. Reduce additive exposure while preserving adequate protein and overall nutrition. Binders act on phosphate in the gastrointestinal tract and are taken with phosphate-containing meals or snacks. If the meal and its absorption have already passed, a late catch-up dose does not bind that earlier phosphate; resume the prescribed dosing with the next meal or snack.",
+  "Choose binders by patient risk": "Calcium acetate and calcium carbonate add calcium load. KDIGO suggests restricting calcium-based binder doses in adults with CKD G3a-G5D receiving phosphate-lowering treatment; the recommendation is not limited to patients already hypercalcemic. Calcification and total calcium exposure strengthen the reason to reassess the regimen. Sevelamer, lanthanum, ferric citrate, and sucroferric oxyhydroxide differ in formulation, gastrointestinal effects, interactions, iron exposure, pill burden, and cost. Ferric citrate can increase iron stores: monitor iron indices, including ferritin and transferrin saturation, and reassess concurrent iron therapy. Sucroferric oxyhydroxide has minimal iron absorption. Avoid long-term aluminum binders because aluminum can accumulate and cause toxicity.",
+  "Coordinate hormone and dialysis therapy": "In CKD G3a-G5 not on dialysis, progressively rising or persistently elevated PTH prompts assessment of hyperphosphatemia, hypocalcemia, high phosphate intake, and vitamin D deficiency. KDIGO does not recommend routine calcitriol or vitamin D analog use in these adults; severe progressive hyperparathyroidism in CKD G4-G5 is a setting for selected use. In CKD G5D requiring PTH lowering, options include calcimimetics, calcitriol, vitamin D analogs, or combinations. Active vitamin D can raise calcium and phosphate, whereas calcimimetics can lower them; monitor the mineral response. Dialysis is part of phosphate control, and persistent hyperphosphatemia warrants review of dialytic removal together with diet, binder timing, and the regimen."
+};
+for (const section of sourceReviewedCkdBinderLesson.lesson) {
+  if (Object.hasOwn(sourceReviewedCkdBinderBodies, section.heading)) section.body = sourceReviewedCkdBinderBodies[section.heading];
+}
+sourceReviewedCkdBinderLesson.lesson.splice(sourceReviewedCkdBinderLesson.lesson.findIndex((section) => section.heading === "Coordinate hormone and dialysis therapy"), 0, ...[
+  {
+    "heading": "Select a binder formulation deliberately",
+    "body": "A lanthanum chewable tablet must be chewed or crushed completely before swallowing; do not swallow it intact. For difficulty chewing or poor dentition, consider the labeled oral powder formulation. Sprinkle Fosrenol powder on a small amount of applesauce or similar food and consume immediately; do not try to dissolve it in liquid. For swallowing disorders with sevelamer tablets, consider the oral suspension and follow its preparation instructions. Assess bowel obstruction and significant gastrointestinal symptoms before choosing either product. An oral powder formulation does not by itself establish suitability for a feeding tube; verify the specific product and intended route."
+  },
+  {
+    "heading": "Check binder interactions before scheduling",
+    "body": "Binders can reduce absorption of other oral medicines, including thyroid hormone and certain antibiotics. Reconcile the exact binder, other drug, formulation, meals, and monitoring requirements. Fosrenol labeling places oral quinolones at least 1 hour before or 4 hours after lanthanum, and thyroid hormone at least 2 hours before or after it with TSH monitoring. Renvela labeling places ciprofloxacin at least 2 hours before or 6 hours after sevelamer, and mycophenolate mofetil at least 2 hours before it. Other clinically important interactions may require separation and monitoring of response or drug concentrations. Use the instructions for the actual medicine pair rather than one interval for every binder and every oral drug."
+  }
+]);
+calciumPhosphorusHomeostasisModule.references.push(...[
+  {
+    "label": "Fosrenol prescribing information: lanthanum tablets, powder, and interactions (August 2024)",
+    "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f10776b2-2c25-4343-aabe-68f302e5cb54"
+  },
+  {
+    "label": "Renvela prescribing information: sevelamer suspension and interactions (March 2023)",
+    "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e6328460-a57b-450b-a48c-6dcd4b476360"
+  }
+]);
