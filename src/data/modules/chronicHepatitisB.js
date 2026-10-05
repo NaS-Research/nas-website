@@ -436,3 +436,73 @@ chronicHepatitisBModule.references.push({
   "label": "University of Washington: monitoring on and off HBV therapy",
   "href": "https://www.hepatitisb.uw.edu/go/hbv/monitoring-persons-on-hbv-therapy/core-concept/all"
 });
+
+// Source-verified HBV special-populations review.
+Object.assign(chronicHepatitisBModule.submodules.find((lesson) => lesson.slug === "special-populations").lesson.find((body) => body.heading === "Protect kidney and bone"), {
+  "heading": "Protect kidney and bone",
+  "body": "Review kidney function, dialysis type, nephrotoxic medicines, fractures, osteoporosis and glucocorticoid exposure before selecting therapy. TDF can cause proximal tubular injury, phosphate loss, osteomalacia and reduced bone mineral density. TAF has more favorable average renal and bone measures than TDF, but is not free of renal risk. For either tenofovir product, obtain serum creatinine, estimated creatinine clearance, urine glucose and urine protein before and during treatment; add serum phosphorus in chronic kidney disease. Persistent bone pain, weakness or fractures on TDF warrant assessment for tubular injury. Consider bone-density assessment when fracture history or other osteoporosis risks are present."
+});
+Object.assign(chronicHepatitisBModule.submodules.find((lesson) => lesson.slug === "special-populations").lesson.find((body) => body.heading === "Protect HIV treatment"), {
+  "heading": "Protect HIV treatment",
+  "body": "Test for HIV before HBV monotherapy. The September 2026 NIH guideline recommends TAF or TDF plus emtricitabine (FTC) or lamivudine (3TC) within a fully suppressive antiretroviral regimen. FTC or 3TC alone as HBV coverage permits resistance. In selected situations, tenofovir can be the only HBV-active drug while effective combination HIV therapy continues. If tenofovir cannot be used, entecavir may treat HBV only alongside fully suppressive HIV therapy; entecavir alone can select the HIV M184V mutation and compromise FTC/3TC activity. Known or suspected 3TC-resistant HBV makes entecavir unsuitable under this NIH guidance and requires expert selection."
+});
+Object.assign(chronicHepatitisBModule.submodules.find((lesson) => lesson.slug === "special-populations").lesson.find((body) => body.heading === "Find viral coinfection"), {
+  "heading": "Find viral coinfection",
+  "body": "HDV can accelerate liver disease in a person with HBV. WHO favors offering total anti-HDV testing to all HBsAg-positive people with chronic HBV; this is a conditional recommendation supported by very-low-certainty evidence. When universal testing is not feasible, prioritize advanced liver disease, endemic-country origin, relevant exposure risks and low HBV DNA with high ALT. NIH also recommends HDV testing in HBV/HIV coinfection. A positive anti-HDV screen requires HDV RNA testing to establish active infection; antibody alone does not establish ongoing viremia. Refer active HBV/HDV coinfection to a viral-hepatitis specialist. Before HCV direct-acting antivirals, test HBsAg, total anti-HBc and anti-HBs, then HBV DNA if HBsAg-positive."
+});
+Object.assign(chronicHepatitisBModule.submodules.find((lesson) => lesson.slug === "special-populations").lesson.find((body) => body.heading === "Escalate decompensation"), {
+  "heading": "Escalate decompensation",
+  "body": "HBsAg-positive adults with decompensated cirrhosis need prompt specialist-managed antiviral treatment regardless of HBV DNA, ALT or HBeAg, plus assessment for transplantation when eligible. Entecavir or TDF are established options; peginterferon is contraindicated. The Vemlidy label does not recommend TAF in Child-Pugh B or C disease. An older AASLD discussion considers TAF in selected patients with renal or bone disease, but this does not make it routine labeled treatment for decompensation. For entecavir, the adult decompensation starting dose is 1 mg daily before renal adjustment: at CrCl 30 to below 50 mL/min, the label permits 0.5 mg daily or 1 mg every 48 hours. Assess prior resistance and HIV status, monitor renal and hepatic safety closely, and continue indicated liver-cancer surveillance."
+});
+chronicHepatitisBModule.submodules.find((lesson) => lesson.slug === "special-populations").lesson.push({
+  "heading": "Apply the exact renal label",
+  "body": "Adult HBV product rules differ. Viread 300 mg requires a longer dosing interval below CrCl 50 mL/min; entecavir requires a dose or interval adjustment below that threshold, using the correct 0.5-mg or 1-mg starting-dose column. Vemlidy 25 mg daily with food needs no adjustment at CrCl at least 15 mL/min, or below 15 mL/min in adults receiving chronic hemodialysis; give it after dialysis on dialysis days. Below 15 mL/min without chronic hemodialysis, Vemlidy is not recommended. Do not extend this exception to every dialysis modality or assume an HIV fixed-dose combination shares the standalone HBV product label. A more favorable toxicity profile does not remove laboratory monitoring."
+});
+chronicHepatitisBModule.submodules.find((lesson) => lesson.slug === "special-populations").lesson.push({
+  "heading": "Preserve coverage during an HIV switch",
+  "body": "Before starting or changing HIV therapy, verify HBV status and measure quantitative HBV DNA when HBsAg-positive; NIH recommends repeat DNA every 3-6 months. Keep effective HBV treatment when switching to a regimen without tenofovir, such as long-acting cabotegravir/rilpivirine. Islatravir must not be combined with FTC or 3TC: when an islatravir regimen is selected, HBV coverage can use TAF or TDF without FTC/3TC, or eligible entecavir, alongside effective HIV treatment. Prior lamivudine exposure without proven resistance still favors tenofovir and requires careful review; known or suspected resistant HBV rules out entecavir under this NIH guidance. For HBsAg-negative, anti-HBc-positive patients switching to tenofovir-sparing ART, NIH recommends ALT monitoring every 1-3 months for six months and every six months thereafter, regardless of anti-HBs; rising ALT prompts HBV DNA assessment and treatment when indicated."
+});
+chronicHepatitisBModule.submodules.find((lesson) => lesson.slug === "special-populations").lesson.push({
+  "heading": "Plan HBV protection during HCV therapy",
+  "body": "HBsAg positivity does not itself prohibit HCV direct-acting antiviral treatment. If active HBV meets treatment criteria, start HBV therapy before or with the HCV regimen. For HBsAg-positive patients with low or undetectable HBV DNA who do not otherwise need HBV treatment, AASLD/IDSA HCV guidance offers prophylactic HBV therapy through 12 weeks after DAA completion, or HBV DNA monitoring monthly during and immediately after therapy. If monitoring is chosen, start HBV treatment for DNA rising more than tenfold over baseline, or above 1,000 IU/mL when baseline DNA was undetectable or unquantifiable. These are distinct conditions. In HBsAg-negative patients with prior HBV infection, the guidance does not define a uniform DNA-testing schedule; unexplained ALT elevation during or after DAAs should prompt evaluation for reactivation. In HBV/HIV/HCV coinfection, NIH directs adequate HBV-active treatment within the coordinated HIV plan before HCV therapy."
+});
+Object.assign(chronicHepatitisBModule.submodules.find((lesson) => lesson.slug === "special-populations"), {
+  "summary": "Kidney and bone risk, liver compensation, prior resistance and viral coinfections change drug selection, testing and follow-up. Coordinate treatment across the full patient context.",
+  "concepts": [
+    "Renal dosing",
+    "Bone health",
+    "HIV regimen",
+    "HDV testing",
+    "HCV reactivation",
+    "Liver compensation"
+  ],
+  "application": "Build one plan that states the eligible product and renal dose, effective HIV/HBV coverage when needed, coinfection testing, and responsibility for monitoring or specialist referral.",
+  "keyPoints": [
+    "TAF has more favorable renal and bone measures than TDF but still needs renal monitoring.",
+    "Standalone HBV products and HIV combinations have distinct labels.",
+    "Effective HIV treatment and uninterrupted HBV coverage must be coordinated.",
+    "Positive anti-HDV needs RNA confirmation of active infection.",
+    "DAA treatment needs a HBV-status-specific reactivation plan.",
+    "Decompensation requires urgent specialist care and limits drug selection."
+  ]
+});
+Object.assign(chronicHepatitisBModule.submodules.find((lesson) => lesson.slug === "special-populations").check, {
+  "question": "Why must HIV testing precede entecavir monotherapy?",
+  "choices": [
+    "Entecavir can select HIV M184V resistance if HIV is present without suppressive antiretroviral therapy",
+    "A negative HIV test eliminates the need to assess HBV DNA and liver stage",
+    "Entecavir alone is a fully suppressive treatment for HBV/HIV coinfection",
+    "A positive HIV test can be managed by simply increasing the entecavir dose"
+  ],
+  "answer": 0,
+  "rationale": "Entecavir has weak HIV activity and can select M184V when HIV is not suppressed, reducing HIV susceptibility to lamivudine and emtricitabine. HIV testing informs coordinated treatment; HBV staging still matters. Neither entecavir alone nor an increased dose replaces fully suppressive HIV therapy.",
+  "reviewHref": "#special-populations"
+});
+chronicHepatitisBModule.references.push({
+  "label": "NIH September 2026: HBV/HIV coinfection and antiretroviral switches",
+  "href": "https://clinicalinfo.hiv.gov/en/guidelines/hiv-clinical-guidelines-adult-and-adolescent-arv/coinfections-hepatitis-b-virus-hiv"
+});
+chronicHepatitisBModule.references.push({
+  "label": "AASLD/IDSA HCV guidance: monitoring and HBV reactivation",
+  "href": "https://www.hcvguidelines.org/guidance/monitoring-patients-who-are-starting-hcv-treatment-are-on-treatment-or-have-completed-therapy/"
+});

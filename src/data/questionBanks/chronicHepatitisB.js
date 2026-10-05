@@ -638,3 +638,113 @@ Object.assign(chronicHepatitisBQuestionBank.find((question) => question.id === "
   ],
   "rationale": "Progressive ALT increases with bilirubin elevation or hepatic decompensation require immediate discontinuation, not routine continuation. Intensified liver monitoring, post-treatment follow-up and infection assessment are protective actions; flu-like symptoms cannot explain every fever."
 });
+
+// Source-verified HBV special-populations review.
+Object.assign(chronicHepatitisBQuestionBank.find((question) => question.id === "chronic-hepatitis-b-061"), {
+  "choices": [
+    "TAF has more favorable average kidney and bone measures than TDF, but its renal limits and monitoring still apply",
+    "A more favorable average renal profile means TAF cannot cause proximal tubular injury",
+    "Normal ALT rules out TDF-related phosphate loss and bone disease",
+    "All oral HBV antivirals use the same renal dose and dialysis timing"
+  ],
+  "rationale": "The book and current NIH guidance distinguish the average renal and bone effects of TAF from TDF. Both tenofovir labels still require kidney and urine monitoring; the TAF label reports renal injury. ALT does not assess tubular injury, and product-specific renal rules differ."
+});
+Object.assign(chronicHepatitisBQuestionBank.find((question) => question.id === "chronic-hepatitis-b-062"), {
+  "choices": [
+    "Before and during TAF or TDF, assess creatinine, estimated CrCl, urine glucose and protein; add phosphorus in chronic kidney disease",
+    "During TAF, assess renal function only after jaundice develops",
+    "During TDF, use normal ALT as the only evidence that kidney and bone safety are acceptable",
+    "For either tenofovir product, omit renal testing once HBV DNA is undetectable"
+  ],
+  "rationale": "Both tenofovir labels specify creatinine, estimated creatinine clearance, urine glucose and urine protein before and during treatment, with phosphorus in CKD. Jaundice, ALT and viral suppression cannot replace this safety assessment. Follow-up timing is clinically appropriate to the patient and findings."
+});
+Object.assign(chronicHepatitisBQuestionBank.find((question) => question.id === "chronic-hepatitis-b-063"), {
+  "choices": [
+    "For decompensated adult HBV with CrCl 40 mL/min, use the 1-mg entecavir renal column: 0.5 mg daily, after resistance/HIV review and specialist assessment",
+    "For decompensated adult HBV with CrCl 40 mL/min, use the 0.5-mg starting-dose column: 0.25 mg daily, because liver stage does not affect the starting dose",
+    "For decompensated adult HBV with CrCl 40 mL/min, give entecavir 1 mg daily without renal adjustment because no separate hepatic adjustment is required",
+    "For decompensated adult HBV with CrCl 40 mL/min, automatically substitute Vemlidy because its favorable bone profile removes the Child-Pugh B/C restriction"
+  ],
+  "rationale": "Adult entecavir dosing starts at 1 mg daily in decompensated disease. At CrCl 30 to below 50 mL/min, that column permits 0.5 mg daily or 1 mg every 48 hours; the label prefers daily regimens. Selection also depends on resistance and HIV treatment. A statement that no separate hepatic adjustment is needed does not erase the decompensation starting dose or renal adjustment, and Vemlidy is not recommended in Child-Pugh B/C."
+});
+Object.assign(chronicHepatitisBQuestionBank.find((question) => question.id === "chronic-hepatitis-b-064"), {
+  "choices": [
+    "Prescribe Vemlidy at CrCl 12 mL/min in an adult not receiving chronic hemodialysis, assuming TAF needs no renal review",
+    "Check dialysis modality before applying the adult Vemlidy exception below CrCl 15 mL/min",
+    "Give Vemlidy after the session on chronic hemodialysis days when otherwise eligible",
+    "Continue renal and urine monitoring despite a more favorable TAF toxicity profile"
+  ],
+  "rationale": "The unsafe action is prescribing Vemlidy below CrCl 15 mL/min without chronic hemodialysis. Its adult exception is specific to chronic hemodialysis, with dosing after the session. Checking modality and maintaining monitoring are protective actions."
+});
+Object.assign(chronicHepatitisBQuestionBank.find((question) => question.id === "chronic-hepatitis-b-065"), {
+  "choices": [
+    "NIH recommends tenofovir plus FTC or 3TC within fully suppressive HIV therapy, with selected alternatives that still preserve effective HIV and HBV treatment",
+    "Every HBV/HIV regimen must contain FTC or 3TC, including an islatravir-containing regimen",
+    "FTC alone as the HBV-active component provides a high barrier to HBV resistance",
+    "Entecavir alone provides fully suppressive treatment for both HIV and HBV"
+  ],
+  "rationale": "The September 2026 NIH guideline recommends TAF/TDF plus FTC/3TC within suppressive ART, while allowing selected tenofovir-only HBV coverage or eligible entecavir with effective ART. Islatravir must not be combined with FTC/3TC. FTC/3TC-only HBV coverage permits resistance, and entecavir does not replace HIV combination treatment."
+});
+Object.assign(chronicHepatitisBQuestionBank.find((question) => question.id === "chronic-hepatitis-b-066"), {
+  "choices": [
+    "Test for HIV before HBV monotherapy and, if coinfected, coordinate fully suppressive ART with appropriate HBV-active treatment",
+    "Start entecavir alone for newly detected HBV/HIV and defer HIV therapy until HBV DNA is suppressed",
+    "Use an undetectable HBV DNA result to infer HIV suppression without HIV assessment",
+    "When HIV is detected, manage both viruses solely by changing to the HBV dose of lamivudine"
+  ],
+  "rationale": "The book and labels require HIV assessment before HBV monotherapy because drugs with partial HIV activity can select resistance. Coinfection needs an effective ART regimen with appropriate HBV coverage. HBV DNA does not measure HIV suppression, and the HBV lamivudine product or dose is not a complete HIV regimen."
+});
+Object.assign(chronicHepatitisBQuestionBank.find((question) => question.id === "chronic-hepatitis-b-067"), {
+  "choices": [
+    "If tenofovir cannot be used in HBV/HIV, consider entecavir with fully suppressive ART only after excluding known or suspected 3TC-resistant HBV and reviewing renal dosing",
+    "If tenofovir cannot be used in HBV/HIV, use entecavir alone until the next HIV viral-load result",
+    "With confirmed 3TC-resistant HBV/HIV, use entecavir routinely without expert review because a 1-mg dose removes the resistance concern",
+    "After any past lamivudine use in HBV/HIV, assume entecavir and tenofovir have identical resistance barriers and follow-up needs"
+  ],
+  "rationale": "NIH permits entecavir only with fully suppressive ART and does not recommend it for known or suspected 3TC-resistant HBV. Prior 3TC exposure without confirmed resistance is a different situation, but still favors tenofovir and calls for careful review if entecavir is used. Renal dosing remains relevant; increasing the dose does not make confirmed resistance safe to disregard."
+});
+Object.assign(chronicHepatitisBQuestionBank.find((question) => question.id === "chronic-hepatitis-b-068"), {
+  "choices": [
+    "Switch an HBsAg-positive patient with HBV/HIV to long-acting cabotegravir/rilpivirine and stop all HBV-active therapy without replacement",
+    "Check HBV status and quantitative HBV DNA before changing therapy in an HBsAg-positive patient",
+    "Arrange continued HBV-active treatment alongside an otherwise appropriate tenofovir-sparing HIV regimen",
+    "Monitor for reactivation after a tenofovir-sparing switch in an HBsAg-negative, anti-HBc-positive patient even when anti-HBs is positive"
+  ],
+  "rationale": "Stopping all HBV-active therapy during this switch creates avoidable reactivation and severe hepatitis risk. Cabotegravir/rilpivirine is not HBV treatment. The other actions protect against gaps in coverage or missed reactivation; NIH recommends monitoring prior HBV infection regardless of anti-HBs level."
+});
+Object.assign(chronicHepatitisBQuestionBank.find((question) => question.id === "chronic-hepatitis-b-069"), {
+  "choices": [
+    "Positive anti-HDV should be followed by HDV RNA testing to determine whether infection is actively viremic",
+    "Positive anti-HDV alone proves ongoing HDV replication",
+    "Low HBV DNA with high ALT excludes clinically important HDV coinfection",
+    "Undetectable HBV DNA guarantees that HCV DAAs cannot cause HBV reactivation"
+  ],
+  "rationale": "WHO and NIH distinguish anti-HDV screening from RNA confirmation of active infection. Low HBV DNA with high ALT is a reason to consider HDV, not to rule it out. Low or undetectable HBV DNA also does not remove the need for a reactivation plan during HCV treatment."
+});
+Object.assign(chronicHepatitisBQuestionBank.find((question) => question.id === "chronic-hepatitis-b-070"), {
+  "choices": [
+    "Before HCV DAAs, obtain HBsAg, total anti-HBc and anti-HBs; if HBsAg-positive, assess HBV DNA and arrange treatment, prophylaxis or monitoring as appropriate",
+    "Before HCV DAAs, use anti-HBs alone to exclude both current and prior HBV infection",
+    "If HBsAg is positive, permanently withhold HCV DAAs regardless of HBV assessment",
+    "If baseline HBV DNA is undetectable, omit all HBV follow-up during and after HCV DAAs"
+  ],
+  "rationale": "AASLD/IDSA HCV guidance requires HBV-status assessment and DNA testing when HBsAg-positive. Active HBV meeting treatment criteria needs therapy before or with DAAs; low-DNA HBsAg-positive disease needs prophylaxis or a defined monitoring plan. HBsAg positivity itself is not a DAA contraindication, and anti-HBs alone is incomplete screening."
+});
+Object.assign(chronicHepatitisBQuestionBank.find((question) => question.id === "chronic-hepatitis-b-071"), {
+  "choices": [
+    "For HBsAg-positive disease with low HBV DNA that does not otherwise require treatment, choose prophylaxis through 12 weeks after DAAs or monthly HBV DNA monitoring with defined treatment triggers",
+    "For HBsAg-positive disease with low HBV DNA, monitor ALT only and postpone HBV DNA testing until liver failure",
+    "For HBsAg-positive disease with low HBV DNA, use anti-HCV antibody disappearance to decide when HBV prophylaxis can stop",
+    "For HBsAg-positive disease with low HBV DNA, start treatment only when DNA is both more than tenfold higher and above 1,000 IU/mL regardless of baseline detectability"
+  ],
+  "rationale": "The HCV guidance offers prophylaxis or monthly HBV DNA monitoring during and immediately after DAAs in this defined group. Treatment triggers are a rise above tenfold baseline, or DNA above 1,000 IU/mL when baseline was undetectable or unquantifiable; these are separate conditions, not a universal requirement to meet both. ALT-only monitoring and anti-HCV antibody are not substitutes."
+});
+Object.assign(chronicHepatitisBQuestionBank.find((question) => question.id === "chronic-hepatitis-b-072"), {
+  "choices": [
+    "Start HCV DAAs in an HBsAg-positive patient without assessing HBV DNA or arranging any HBV treatment, prophylaxis or monitoring plan",
+    "Start HBV treatment before or with DAAs when the patient meets active HBV treatment criteria",
+    "Use HBV DNA confirmation after a positive HBsAg result to guide the reactivation plan",
+    "Investigate unexplained ALT elevation during or after DAAs in an HBsAg-negative patient with prior HBV infection"
+  ],
+  "rationale": "Beginning DAAs without an HBV assessment and plan creates avoidable reactivation risk, including severe hepatitis. The remaining actions are appropriate protections. Prior infection also warrants reactivation consideration when ALT rises, although the guidance does not prescribe one uniform HBV DNA schedule for that group."
+});
