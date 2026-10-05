@@ -16,9 +16,10 @@ export const cirrhosisDecompensatedVisualTypes = Object.keys(views).map((key) =>
 export default function CirrhosisDecompensatedVisual({ type }) {
   const key = type.replace("cirrhosis-decompensated-", "");
   const labels = views[key] || views["integrated-case"];
-  const reviewed = key === "compensation-portal" || key === "severity-assessment";
+  const reviewed = key === "compensation-portal" || key === "severity-assessment" || key === "ascites-diagnosis";
   const captions = {
     "compensation-portal": "A conceptual map: liver function and portal pressure interact, while decompensation and recovery require clinical assessment.",
+    "ascites-diagnosis": "Fluid sampling answers two questions: whether portal hypertension contributes and whether infection requires immediate treatment.",
     "severity-assessment": "Injury, bilirubin processing, synthesis and clinical trajectory provide complementary information; a score cannot replace the patient assessment."
   };
   return <figure className="chol-visual cirrhosis-decompensated-visual" aria-label={`Cirrhosis visual: ${key.replaceAll("-", " ")}`}>

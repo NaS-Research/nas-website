@@ -229,3 +229,69 @@ cirrhosisDecompensatedLiverDiseaseModule.references.push(...[
     "href": "https://www.hrsa.gov/sites/default/files/hrsa/optn/optn_policies.pdf"
   }
 ]);
+
+// Reconcile the complete ascites diagnosis lesson and its initial/recurrent test distinctions.
+Object.assign(cirrhosisDecompensatedLiverDiseaseModule.submodules.find((lesson) => lesson.slug === "ascites-diagnosis").lesson.find((body) => body.heading === "Collect the right sample"), {
+  "body": "For an initial diagnostic tap, obtain an ascitic cell count with differential, albumin and total protein, plus a paired serum albumin. For hospitalized patients or suspected infection, send an ascitic culture: inoculate fluid into aerobic and anaerobic blood-culture bottles at the bedside before antibiotics when feasible. The PMN count guides immediate infection management; culture identifies organisms and helps tailor therapy. Do not delay urgent antibiotics in an unstable patient while waiting for a procedure or culture result."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseModule.submodules.find((lesson) => lesson.slug === "ascites-diagnosis").lesson.find((body) => body.heading === "Calculate SAAG"), {
+  "body": "The serum-ascites albumin gradient (SAAG) equals serum albumin minus ascitic albumin from samples obtained together. Use matching units. A SAAG of at least 1.1 g/dL supports portal hypertension; it does not prove cirrhosis or exclude a second cause. For serum albumin 3.1 g/dL and ascitic albumin 1.3 g/dL, SAAG = 1.8 g/dL. A result of 11 g/L equals 1.1 g/dL and meets the same threshold. A lower gradient prompts evaluation for other causes, such as peritoneal malignancy or tuberculosis."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseModule.submodules.find((lesson) => lesson.slug === "ascites-diagnosis").lesson.find((body) => body.heading === "Detect SBP"), {
+  "body": "An ascitic absolute polymorphonuclear leukocyte (PMN) count of at least 250 cells/mm³ should prompt empiric treatment for spontaneous bacterial peritonitis (SBP) when there is no identifiable intra-abdominal source requiring separate treatment. A negative culture does not cancel an elevated PMN count. Fever and pain can be absent; acute kidney injury or encephalopathy may be the presenting change. Guarding, polymicrobial culture or an atypical course should raise concern for secondary peritonitis and prompt investigation of an intra-abdominal source."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseModule.submodules.find((lesson) => lesson.slug === "ascites-diagnosis").lesson.find((body) => body.heading === "Search mixed etiologies"), {
+  "body": "Interpret SAAG together with ascitic total protein, history, examination and imaging. With a high SAAG, protein below 2.5 g/dL commonly fits cirrhosis, whereas protein at least 2.5 g/dL should prompt consideration of cardiac or other postsinusoidal disease. These patterns are clues, not definitive diagnoses. Heart failure, malignancy, tuberculosis, pancreatic disease, vascular thrombosis or nephrotic disease can coexist with liver disease. Order targeted testing, such as cytology or amylase, when the clinical context supports it."
+});
+cirrhosisDecompensatedLiverDiseaseModule.submodules.find((lesson) => lesson.slug === "ascites-diagnosis").lesson.push(...[
+  {
+    "heading": "Decide when to sample",
+    "body": "Ascites is fluid in the peritoneal cavity. Evaluate new-onset ascites that is accessible for sampling with diagnostic paracentesis. Patients with cirrhosis and ascites admitted non-electively also need prompt diagnostic sampling, even when the admission is for an unrelated problem and there is no fever or abdominal pain. New deterioration or suspected infection warrants reassessment. A therapeutic tap removes fluid for symptom relief; the decision to drain a large volume does not replace the need for diagnostic fluid testing."
+  },
+  {
+    "heading": "Match testing to the setting",
+    "body": "An initial evaluation also includes history, examination, liver and kidney tests, electrolytes and abdominal ultrasound with Doppler as appropriate. For stable recurrent ascites undergoing routine outpatient therapeutic taps, a cell count with differential remains important, but SAAG and the entire initial panel need not be repeated automatically. Hospital admission or suspected infection calls for cell count and culture. Repeat or extend other tests when the cause is uncertain, prophylaxis decisions require protein measurement or secondary peritonitis is suspected."
+  },
+  {
+    "heading": "Calculate the absolute PMN count",
+    "body": "When the laboratory reports total ascitic leukocytes and a PMN percentage, multiply the count by the percentage as a decimal. For 800 cells/mm³ with 40% PMNs, 800 × 0.40 = 320 PMNs/mm³. For 1,000 cells/mm³ with 25% PMNs, the result is exactly 250 PMNs/mm³ and meets the treatment threshold. One mm³ equals one microliter, so cells/mm³ and cells/µL express the same concentration. Use the absolute PMN count, not total leukocytes alone, to interpret the threshold."
+  }
+]);
+Object.assign(cirrhosisDecompensatedLiverDiseaseModule.submodules.find((lesson) => lesson.slug === "ascites-diagnosis"), {
+  "summary": "Diagnostic paracentesis separates the cause of ascites from the urgent question of infection.",
+  "concepts": [
+    "Sampling indications",
+    "Paired SAAG",
+    "Ascitic protein",
+    "Absolute PMN count",
+    "Bedside culture"
+  ],
+  "application": "Arrange prompt diagnostic sampling for accessible new ascites or non-elective admission with cirrhosis and ascites; interpret paired albumin, PMNs and indicated cultures before choosing the treatment pathway.",
+  "keyPoints": [
+    "New ascites and non-elective admission require diagnostic assessment.",
+    "SAAG ≥1.1 g/dL supports portal hypertension, including cardiac causes.",
+    "Absolute PMNs ≥250 cells/mm³ prompt empiric treatment when no secondary source is identified.",
+    "A negative culture or absence of fever does not exclude SBP.",
+    "Recurrent outpatient taps and initial diagnostic taps require different test panels."
+  ]
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseModule.submodules.find((lesson) => lesson.slug === "ascites-diagnosis").check, {
+  "question": "Ascitic leukocytes are 1,000 cells/mm³ with 25% PMNs. There is no identifiable secondary intra-abdominal source. Which interpretation is correct?",
+  "choices": [
+    "250 PMNs/mm³; the count meets the threshold for empiric SBP treatment.",
+    "25 PMNs/mm³; the count is below the threshold for SBP treatment.",
+    "1,000 PMNs/mm³; all leukocytes should be counted as neutrophils.",
+    "250 PMNs/mm³; treatment requires a count strictly greater than 250."
+  ],
+  "rationale": "1,000 × 0.25 = 250 PMNs/mm³. The inclusive threshold is ≥250, so this result supports empiric SBP treatment in the stated setting. Culture results guide later tailoring but are not required to begin treatment."
+});
+cirrhosisDecompensatedLiverDiseaseModule.references.push(...[
+  {
+    "label": "AASLD 2021: Ascites diagnostic tables and guidance",
+    "href": "https://onlinelibrary.wiley.com/doi/full/10.1002/hep.31884"
+  },
+  {
+    "label": "University of Washington: Ascites diagnosis and fluid analysis",
+    "href": "https://www.hepatitisc.uw.edu/go/management-cirrhosis-related-complications/ascites-diagnosis-management/core-concept/1/1/"
+  }
+]);

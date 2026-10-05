@@ -384,3 +384,85 @@ Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => 
   ],
   "rationale": "Waiting solely for an extreme score can delay evaluation while the disease worsens. The other choices support timely individualized definitive planning and symptom care; referral does not guarantee listing."
 });
+
+// Reconcile every complete ascites diagnosis bank object, retaining IDs, keys and lesson links.
+Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => question.id === "cirrhosis-decompensated-021"), {
+  "question": "A patient with cirrhosis and established ascites is admitted non-electively for a femur fracture. There is no fever or abdominal pain. Which plan is best?",
+  "choices": [
+    "Arrange prompt diagnostic paracentesis to assess for silent infection.",
+    "Defer sampling until fever or abdominal pain develops.",
+    "Skip sampling because the reason for admission is unrelated to the liver.",
+    "Replace diagnostic testing with assessment of serum albumin alone."
+  ],
+  "rationale": "Non-elective admission with cirrhosis and ascites warrants prompt diagnostic paracentesis even for an unrelated problem. SBP may present without fever or pain, so their absence does not justify deferral."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => question.id === "cirrhosis-decompensated-022"), {
+  "question": "An initial diagnostic tap is planned for new accessible ascites. Which test combination best evaluates the fluid cause and neutrophil burden?",
+  "choices": [
+    "Ascitic cell count with differential, albumin and total protein, plus paired serum albumin.",
+    "Ascitic total protein alone, with no paired serum or cell count.",
+    "Serum albumin and liver enzymes alone, without ascitic analysis.",
+    "Ascitic cytology alone in every patient, without cell count or albumin."
+  ],
+  "rationale": "The initial panel includes ascitic cell count with differential, albumin and total protein, plus paired serum albumin for SAAG. Add bedside culture for hospitalization or suspected infection; targeted tests such as cytology depend on the clinical context."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => question.id === "cirrhosis-decompensated-023"), {
+  "question": "A clinically stable outpatient with recurrent ascites of an established cause undergoes a routine therapeutic tap. Which testing plan best matches the setting?",
+  "choices": [
+    "Send a cell count with differential; repeat or extend other tests when clinically indicated.",
+    "Omit all fluid testing because the cause was established previously.",
+    "Automatically repeat SAAG, cytology and amylase at every tap regardless of context.",
+    "Use culture alone to exclude infection without measuring the PMN count."
+  ],
+  "rationale": "Routine recurrent outpatient taps still warrant cell count with differential. The whole initial etiologic panel need not be repeated automatically. Suspected infection requires cultures and further assessment; uncertain cause or other clinical indications justify additional tests."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => question.id === "cirrhosis-decompensated-024"), {
+  "question": "Ascitic PMNs are 320 cells/mm³, the culture is negative, and no secondary intra-abdominal source is identified. Which error poses the greatest avoidable risk?",
+  "choices": [
+    "Withhold empiric SBP therapy solely because the culture is negative.",
+    "Begin empiric SBP therapy while evaluating the clinical course.",
+    "Assess for a secondary source if guarding or an atypical course develops.",
+    "Use subsequent microbiology to tailor therapy when an organism is identified."
+  ],
+  "rationale": "A PMN count of 320 exceeds the ≥250 cells/mm³ threshold. A negative culture does not rule out neutrocytic infection or justify withholding empiric treatment in this setting. The other choices describe appropriate management or reassessment."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => question.id === "cirrhosis-decompensated-025"), {
+  "question": "Paired serum albumin is 3.1 g/dL and ascitic albumin is 1.3 g/dL. What is the SAAG and its interpretation?",
+  "choices": [
+    "1.8 g/dL; it supports portal hypertension.",
+    "4.4 g/dL; it confirms peritoneal malignancy.",
+    "−1.8 g/dL; it proves cardiac ascites.",
+    "0.42 g/dL; it excludes portal hypertension."
+  ],
+  "rationale": "SAAG = serum albumin − ascitic albumin = 3.1 − 1.3 = 1.8 g/dL. This exceeds 1.1 g/dL and supports portal hypertension. It does not identify cirrhosis or cardiac disease by itself; adding, reversing or dividing the albumin values is incorrect."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => question.id === "cirrhosis-decompensated-026"), {
+  "question": "Paired serum albumin is 30 g/L and ascitic albumin is 19 g/L. Which SAAG interpretation is correct?",
+  "choices": [
+    "11 g/L = 1.1 g/dL; it meets the portal-hypertension threshold.",
+    "11 g/L = 0.11 g/dL; it falls below the threshold.",
+    "49 g/L = 4.9 g/dL; sum the albumin concentrations.",
+    "11 g/L = 11 g/dL; the units are interchangeable."
+  ],
+  "rationale": "30 − 19 = 11 g/L. Divide by 10 to convert g/L to g/dL: 11 g/L = 1.1 g/dL. The inclusive ≥1.1 g/dL threshold is met. SAAG is a difference, and matching units are necessary before comparison."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => question.id === "cirrhosis-decompensated-027"), {
+  "question": "An adult has SAAG 1.6 g/dL and ascitic total protein 3.2 g/dL. Which interpretation best guides further assessment?",
+  "choices": [
+    "Consider a cardiac or postsinusoidal cause; combine the pattern with examination and imaging.",
+    "Diagnose cirrhosis as the sole cause because any high SAAG is specific for cirrhosis.",
+    "Exclude portal hypertension because total protein is above 2.5 g/dL.",
+    "Diagnose SBP without a PMN count because ascitic protein is elevated."
+  ],
+  "rationale": "High SAAG supports portal hypertension. In that context, protein ≥2.5 g/dL raises consideration of cardiac or postsinusoidal disease. The pattern is not definitive and mixed causes remain possible. Neither protein nor SAAG substitutes for the PMN count in assessing infection."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => question.id === "cirrhosis-decompensated-028"), {
+  "question": "A patient with a cancer history has SAAG 0.7 g/dL and new ascites. Which error most undermines etiologic assessment?",
+  "choices": [
+    "Classify the cause using ascitic total protein alone and stop further investigation.",
+    "Consider a peritoneal cause because the SAAG is below 1.1 g/dL.",
+    "Order cytology when the clinical picture suggests peritoneal malignancy.",
+    "Review imaging and history for alternative or mixed causes."
+  ],
+  "rationale": "Total protein alone is an inadequate primary classifier. SAAG below 1.1 g/dL prompts evaluation for causes such as peritoneal malignancy or tuberculosis, with targeted tests guided by the clinical context. It does not prove a specific diagnosis; the other plans appropriately refine the cause."
+});
