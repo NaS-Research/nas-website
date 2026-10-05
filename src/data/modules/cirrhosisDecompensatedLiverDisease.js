@@ -583,3 +583,154 @@ cirrhosisDecompensatedLiverDiseaseModule.references.push(...[
     "href": "https://doi.org/10.1016/j.jhep.2024.03.031"
   }
 ]);
+
+// Reconcile complete portal prevention and acute variceal hemorrhage lessons.
+Object.assign(cirrhosisDecompensatedLiverDiseaseModule.submodules.find((lesson) => lesson.slug === "portal-varices"), {
+  "summary": "Confirm clinically significant portal hypertension, select prevention for the liver state and bleeding history, and keep nonselective beta blockade within a safe circulatory window.",
+  "concepts": [
+    "CSPH",
+    "Nonselective beta blockade",
+    "Carvedilol",
+    "Primary versus secondary prevention",
+    "Endoscopic ligation",
+    "Blood pressure and kidney safety"
+  ],
+  "application": "Establish the prevention indication, check contraindications and perfusion, choose a specialist-guided NSBB or endoscopic plan, and reassess as the clinical state changes.",
+  "keyPoints": [
+    "Confirm CSPH before treating compensated cirrhosis for portal prevention.",
+    "Selective beta blockade is not equivalent to NSBB therapy.",
+    "EVL is an alternative for high-risk esophageal varices when NSBBs cannot be used.",
+    "Persistent low pressure or HRS-AKI can require a temporary hold.",
+    "Secondary prevention usually combines an NSBB and EVL."
+  ],
+  "lesson": [
+    {
+      "heading": "Identify the pressure problem",
+      "body": "Scar architecture and vascular tone increase resistance to portal flow. Collateral veins can enlarge into gastroesophageal varices and rupture. In viral- and alcohol-related cirrhosis, clinically significant portal hypertension (CSPH) is defined by a hepatic venous pressure gradient ≥10 mmHg. Clinical findings, varices or collaterals, imaging and validated liver-stiffness/platelet pathways can establish a clinically useful assessment without invasive measurement. Interpret noninvasive thresholds for the method, etiology and population; a normal systemic blood pressure does not exclude CSPH."
+    },
+    {
+      "heading": "Prevent decompensation in compensated CSPH",
+      "body": "Consider a nonselective beta blocker (NSBB) in compensated cirrhosis with CSPH to prevent decompensation. Carvedilol is preferred in Baveno VII for this setting because it combines beta blockade with alpha-1-mediated reduction in intrahepatic resistance. Propranolol and nadolol are traditional NSBB options. Beta-1 blockade reduces cardiac output and beta-2 blockade reduces splanchnic inflow. A beta-1-selective drug such as metoprolol does not provide equivalent portal protection. Do not prescribe an NSBB solely for cirrhosis without evidence of CSPH."
+    },
+    {
+      "heading": "Dose to tolerance and the correct formulation",
+      "body": "For traditional NSBBs, the review book lists immediate-release propranolol 20 mg orally twice daily and nadolol 40 mg orally daily as initial regimens, with a resting heart-rate target of 55 to 60 beats/minute when tolerated. These are starting examples, not mandatory doses for every patient. Check the exact product, organ function, blood pressure, symptoms and concomitant drugs; extended-release propranolol schedules are different. Carvedilol requires its own specialist portal-hypertension dosing plan rather than copying a cardiovascular-label titration. A heart-rate target never overrides hypotension, bradycardia or worsening kidney perfusion."
+    },
+    {
+      "heading": "Choose endoscopy for the indication",
+      "body": "Compensated patients taking an indicated NSBB to prevent decompensation generally do not need screening endoscopy solely to detect varices if its result would not change management. Patients who cannot take NSBBs need an appropriate screening and surveillance pathway. For high-risk esophageal varices with an NSBB contraindication or intolerance, endoscopic variceal ligation (EVL) prevents a first bleed. EVL treats varices locally; it has not been shown to prevent ascites or encephalopathy in the way the broader portal-pressure strategy is intended to do. Gastric-varix management requires its own specialist pathway."
+    },
+    {
+      "heading": "Respect contraindications and adverse effects",
+      "body": "Portal-hypertension use of carvedilol is supported by guidance but is outside its US labeled cardiovascular indications. Its label contraindicates bronchial asthma, severe hepatic impairment, cardiogenic shock, relevant conduction disease and severe bradycardia unless paced where specified. Do not interpret guidance preference as permission to ignore these restrictions. Review hypotension, orthostasis, fluid retention, bronchospasm, peripheral vascular symptoms and drugs that also slow heart rate. Beta blockade may mask early hypoglycemia symptoms such as tachycardia; monitor glucose when relevant. Taking carvedilol with food reduces orthostatic effects."
+    },
+    {
+      "heading": "Reduce or hold when perfusion deteriorates",
+      "body": "Ascites alone is not an automatic reason to stop NSBBs. In patients with ascites, Baveno VII calls for dose reduction or discontinuation with persistently low systolic pressure <90 mmHg, mean arterial pressure <65 mmHg, and/or HRS-AKI. Reassess during acute bleeding, infection or another AKI phenotype according to circulation and clinical severity. After blood pressure returns to baseline and HRS-AKI resolves, therapy can be restarted or retitrated when appropriate; persistent intolerance favors EVL. A planned withdrawal should be tapered when feasible, particularly with coronary disease, but shock or another urgent safety problem requires immediate clinical action."
+    },
+    {
+      "heading": "Separate first-bleed from recurrent-bleed prevention",
+      "body": "After an esophageal variceal bleed is controlled and the patient is stable, first-line secondary prevention combines an NSBB with EVL when both are feasible. This differs from choosing an NSBB or EVL for primary prevention. Rebleeding despite combined therapy prompts TIPS assessment. If one component cannot be used, specialists may continue the feasible component and individualize further treatment, including TIPS for recurrent ascites. Prevention does not replace etiologic treatment, follow-up or transplant assessment in decompensated disease."
+    }
+  ]
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseModule.submodules.find((lesson) => lesson.slug === "portal-varices").check, {
+  "question": "A patient with ascites on carvedilol has persistent systolic pressure of 86 mmHg and new HRS-AKI. Which plan is best?",
+  "choices": [
+    "Reduce or hold the NSBB, assess perfusion and reconsider it after recovery.",
+    "Increase the dose to reach a resting heart rate of 55.",
+    "Continue unchanged because ascites guarantees benefit at every pressure.",
+    "Permanently abandon all variceal prevention without reassessment."
+  ],
+  "rationale": "Persistent systolic pressure <90 mmHg and HRS-AKI meet Baveno VII criteria for reducing or discontinuing NSBBs in ascites. Reassess after recovery and use an endoscopic strategy if intolerance persists. A heart-rate target cannot override organ perfusion."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseModule.submodules.find((lesson) => lesson.slug === "acute-bleeding"), {
+  "summary": "Treat suspected variceal hemorrhage as an emergency: restore perfusion, protect the airway when indicated, start vasoactive treatment and antibiotics promptly, and coordinate endoscopic control with risk-based TIPS escalation.",
+  "concepts": [
+    "Airway and perfusion",
+    "Restrictive transfusion",
+    "Immediate-release IV octreotide",
+    "Antibiotic prophylaxis",
+    "Endoscopy within 12 hours",
+    "Preemptive versus salvage TIPS"
+  ],
+  "application": "Activate urgent gastroenterology and critical care, begin the indicated treatment bundle before confirmation, and establish the definitive control and escalation pathway.",
+  "keyPoints": [
+    "Start vasoactive treatment and antibiotic prophylaxis promptly.",
+    "Use immediate-release IV octreotide, with verified units and pump settings.",
+    "Endoscopy follows resuscitation and should occur within 12 hours.",
+    "Do not routinely give plasma solely to normalize INR.",
+    "Preemptive TIPS is risk-based; salvage TIPS treats failed bleeding control.",
+    "Tamponade and esophageal stents provide a bridge to definitive therapy."
+  ],
+  "lesson": [
+    {
+      "heading": "Stabilize and protect the airway",
+      "body": "Suspected variceal hemorrhage requires urgent hospital care, close hemodynamic monitoring and experienced gastroenterology and critical-care support. Restore tissue perfusion while avoiding unnecessary volume loading. Intubate before endoscopy when consciousness is altered or the patient is actively vomiting blood; airway decisions depend on aspiration risk and physiology. Manage in intensive or intermediate care and reassess for timely extubation once safe. Do not delay resuscitation while awaiting proof that varices are the source."
+    },
+    {
+      "heading": "Transfuse conservatively and individualize",
+      "body": "Baveno VII recommends conservative packed-red-cell transfusion with a hemoglobin target of 7 to 8 g/dL for most patients. Cardiovascular disease, age, hemodynamic instability and ongoing bleeding can require a different decision. The target is not permission to withhold necessary resuscitation during shock, nor a reason to routinely normalize hemoglobin. Excess transfusion and fluid can aggravate portal pressure; assess the whole clinical course rather than an isolated value."
+    },
+    {
+      "heading": "Start vasoactive treatment before confirmation",
+      "body": "Start a recommended vasoactive drug as soon as variceal bleeding is suspected and generally continue for 2 to 5 days. For immediate-release octreotide, the review book gives a usual 50 mcg IV bolus followed by 25 to 50 mcg/hour; 50 mcg/hour is a common regimen within that range. Confirm the local protocol and product. Octreotide reduces splanchnic inflow but does not replace endoscopic hemostasis. The book also lists vasopressin, usually with nitroglycerin because of ischemic risk; it is not a first-line substitute for the recommended octreotide, somatostatin or terlipressin pathways."
+    },
+    {
+      "heading": "Use the correct octreotide product and units",
+      "body": "Acute variceal-bleeding octreotide is a guidance-supported use outside the US injection label indications. Use the immediate-release solution by the prescribed IV route. Sandostatin LAR Depot is a gluteal intramuscular suspension for sustained treatment of other indications; it must not be substituted for the acute IV bolus or infusion despite the brand grouping in the book. Check micrograms rather than milligrams, concentration and pump rate. For a prescribed bag containing 500 mcg in a final volume of 100 mL, concentration is 5 mcg/mL; a 50 mcg/hour infusion requires 10 mL/hour. This calculation does not establish compatibility, stability or a universal preparation protocol."
+    },
+    {
+      "heading": "Monitor octreotide safety",
+      "body": "Monitor heart rate, ECG and blood glucose during acute IV treatment. Bradycardia, conduction abnormalities and hypo- or hyperglycemia can occur; review other drugs that slow heart rate. The injection label advises cardiac monitoring for IV use and notes that safety of continuous IV infusion has not been established for its approved indications; the variceal regimen comes from the bleeding guidance and book. Gallbladder disease, thyroid dysfunction and malabsorption are additional concerns, especially with longer exposure. Reassess treatment if clinically significant adverse effects develop."
+    },
+    {
+      "heading": "Give antibiotics from admission",
+      "body": "Antibiotic prophylaxis is part of treatment for cirrhosis with upper gastrointestinal bleeding and begins at admission. Ceftriaxone 1 g IV every 24 hours is an important option in advanced cirrhosis, prior quinolone prophylaxis or settings with substantial quinolone resistance. Select for allergies, local resistance and antimicrobial policy. The book describes a short course of up to 7 days; reassess the course and indication rather than extending automatically. This prevention regimen is different from treating established SBP or another infection, which requires its own assessment and regimen."
+    },
+    {
+      "heading": "Obtain timely endoscopic control",
+      "body": "After hemodynamic resuscitation, perform upper endoscopy within 12 hours of presentation; if instability persists, perform it as soon as safely possible. EVL is recommended for bleeding esophageal varices. Gastric varices are different: tissue adhesive such as cyanoacrylate or thrombin is recommended for isolated gastric or type 2 gastroesophageal varices, with specialist selection and local expertise; type 1 gastroesophageal varices may be treated with EVL or adhesive. Obtain appropriate abdominal imaging to assess thrombosis, tumor and collateral anatomy. If a PPI was started empirically, stop after endoscopy unless there is a separate strict indication."
+    },
+    {
+      "heading": "Avoid routine correction of an INR number",
+      "body": "Variceal hemorrhage reflects portal hypertension. PT/INR does not reliably describe overall hemostatic balance in advanced liver disease, and routine fresh frozen plasma solely to correct it is not recommended: it may add volume and worsen portal pressure. Platelet or fibrinogen correction in uncontrolled bleeding requires individualized assessment rather than a universal threshold in this lesson. Recombinant factor VIIa and tranexamic acid are not recommended for acute variceal bleeding. Temporarily interrupt anticoagulants during uncontrolled hemorrhage and individualize restart for the indication."
+    },
+    {
+      "heading": "Distinguish preemptive TIPS from salvage",
+      "body": "Baveno VII recommends preemptive covered TIPS within 72 hours, ideally within 24, for bleeding esophageal or type 1/2 gastroesophageal varices in eligible high-risk patients: Child-Pugh C with fewer than 14 points, Child-Pugh B with more than 7 points and active bleeding at initial endoscopy, or HVPG >20 mmHg during hemorrhage. This pathway can apply after initial bleeding control. Failure of combined vasoactive and endoscopic treatment instead calls for salvage covered TIPS. A balloon tamponade device or self-expanding esophageal metal stent is a temporary bridge to definitive therapy in refractory bleeding, not a durable cure; stents are generally safer than balloon tamponade in this setting."
+    },
+    {
+      "heading": "Assess TIPS harms and the recovery pathway",
+      "body": "TIPS decompresses portal pressure but can worsen encephalopathy and heart failure. Assess liver reserve, cardiac and pulmonary function, infection, renal function, cognition and transplant context with experienced teams. Severe heart failure, significant pulmonary hypertension despite treatment, uncontrolled infection or refractory overt encephalopathy can preclude elective TIPS; acute high-risk bleeding requires its own assessment. In patients meeting preemptive criteria, encephalopathy or ACLF at admission alone is not an automatic contraindication. Baveno VII flags possible futility at Child-Pugh ≥14 or MELD >30 together with lactate >12 mmol/L unless near-term transplantation is envisioned, with case-by-case decisions. After stabilization, arrange recurrent-bleed prevention, resume nutrition as soon as safe, treat encephalopathy when present and preserve transplant evaluation."
+    }
+  ]
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseModule.submodules.find((lesson) => lesson.slug === "acute-bleeding").check, {
+  "question": "A patient with cirrhosis presents with suspected variceal hemorrhage. Which initial plan is best?",
+  "choices": [
+    "Resuscitate, protect the airway when needed, start vasoactive treatment and antibiotics, and arrange urgent endoscopy.",
+    "Wait for endoscopic confirmation before starting vasoactive treatment or antibiotics.",
+    "Use oral carvedilol alone to stop active hemorrhage.",
+    "Give an IM octreotide depot injection instead of the IV bleeding regimen."
+  ],
+  "rationale": "The emergency bundle begins on suspicion. Oral NSBB prevention and depot octreotide do not replace acute IV vasoactive treatment, resuscitation, antibiotics or endoscopic control. Endoscopy should follow resuscitation within 12 hours, or as soon as safely possible if instability persists."
+});
+cirrhosisDecompensatedLiverDiseaseModule.references.push(...[
+  {
+    "label": "Baveno VII 2022: first-bleed prevention, acute hemorrhage and secondary prevention",
+    "href": "https://doi.org/10.1016/j.jhep.2021.12.022"
+  },
+  {
+    "label": "US carvedilol label: contraindications and monitoring",
+    "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e68c9b18-e7fd-45f7-a8f5-1d815e32680b"
+  },
+  {
+    "label": "Sandostatin immediate-release injection: US prescribing information",
+    "href": "https://www.novartis.com/us-en/sites/novartis_us/files/sandostatin_inj.pdf"
+  },
+  {
+    "label": "Sandostatin LAR Depot: US formulation and route",
+    "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d0b7fe9e-7000-4b79-ba3b-291ce92c14f9"
+  }
+]);

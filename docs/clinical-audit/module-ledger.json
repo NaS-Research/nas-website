@@ -1334,7 +1334,8 @@
         "enteral-nutrition-broader-cirrhosis-ascites-diagnosis-review.json",
         "enteral-nutrition-broader-cirrhosis-ascites-treatment-review.json",
         "enteral-nutrition-broader-sbp-review.json",
-        "enteral-nutrition-broader-hrs-aki-review.json"
+        "enteral-nutrition-broader-hrs-aki-review.json",
+        "enteral-nutrition-broader-variceal-bleeding-review.json"
       ],
       "latestBookCalculationReview": {
         "evidence": "enteral-nutrition-book-calculations-review.json",
@@ -5411,6 +5412,224 @@
           "otherCirrhosisLexicalQuestionMatches": 0,
           "relatedAlcoholLesson": "cirrhosis-complications",
           "review": "The whole related alcohol lesson was read for context. Its brief HRS distinction does not prescribe an obsolete albumin protocol; broader HE/variceal/HCC teaching remains pending its parent review. No alcohol lesson certified."
+        }
+      },
+      "latestBroaderVaricealBleedingReview": {
+        "evidence": "enteral-nutrition-broader-variceal-bleeding-review.json",
+        "verifiedScope": "Complete portal-varices and acute-bleeding lessons: 17 whole bodies, two whole checks, metadata and figures; all 20 anchored whole questions 065-084.",
+        "wholeLessonsVerified": {
+          "cirrhosis-decompensated-liver-disease": [
+            "portal-varices",
+            "acute-bleeding"
+          ]
+        },
+        "wholeBodiesVerified": 17,
+        "existingWholeBodiesRefined": 8,
+        "newOriginalBodies": 9,
+        "wholeChecksVerified": 2,
+        "wholeMetadataAndFiguresVerified": 2,
+        "wholeBankQuestionIdsVerified": [
+          "cirrhosis-decompensated-065",
+          "cirrhosis-decompensated-066",
+          "cirrhosis-decompensated-067",
+          "cirrhosis-decompensated-068",
+          "cirrhosis-decompensated-069",
+          "cirrhosis-decompensated-070",
+          "cirrhosis-decompensated-071",
+          "cirrhosis-decompensated-072",
+          "cirrhosis-decompensated-073",
+          "cirrhosis-decompensated-074",
+          "cirrhosis-decompensated-075",
+          "cirrhosis-decompensated-076",
+          "cirrhosis-decompensated-077",
+          "cirrhosis-decompensated-078",
+          "cirrhosis-decompensated-079",
+          "cirrhosis-decompensated-080",
+          "cirrhosis-decompensated-081",
+          "cirrhosis-decompensated-082",
+          "cirrhosis-decompensated-083",
+          "cirrhosis-decompensated-084"
+        ],
+        "newUniqueBankQuestionsVerified": 20,
+        "broaderFeedingBankVerifiedBefore": 653,
+        "broaderFeedingBankVerifiedAfter": 673,
+        "sourceVerifiedCirrhosisBankTotalAcrossUnits": 100,
+        "cirrhosisBankTotal": 120,
+        "remainingCirrhosisWholeBankIds": [
+          "cirrhosis-decompensated-085",
+          "cirrhosis-decompensated-086",
+          "cirrhosis-decompensated-087",
+          "cirrhosis-decompensated-088",
+          "cirrhosis-decompensated-089",
+          "cirrhosis-decompensated-090",
+          "cirrhosis-decompensated-091",
+          "cirrhosis-decompensated-092",
+          "cirrhosis-decompensated-093",
+          "cirrhosis-decompensated-094",
+          "cirrhosis-decompensated-095",
+          "cirrhosis-decompensated-096",
+          "cirrhosis-decompensated-113",
+          "cirrhosis-decompensated-114",
+          "cirrhosis-decompensated-115",
+          "cirrhosis-decompensated-116",
+          "cirrhosis-decompensated-117",
+          "cirrhosis-decompensated-118",
+          "cirrhosis-decompensated-119",
+          "cirrhosis-decompensated-120"
+        ],
+        "other100WholeCirrhosisQuestionsUnchanged": true,
+        "other10CirrhosisLessonsUnchanged": true,
+        "other231WholeModulesUnchanged": true,
+        "associatedCumulativeWholeItemsVerified": [],
+        "all1180WholeCumulativeObjectsUnchanged": true,
+        "stableIdsKeysDifficultyAnchorsAndOrderPreserved": true,
+        "newQuestionIdsAdded": 0,
+        "newReferenceCount": 4,
+        "wholeParentModulesVerified": false,
+        "wholeChaptersVerified": false,
+        "committedWholeModulesVerifiedAfter": 58,
+        "committedWholeModulesTotal": 232,
+        "moduleCountPercent": 25.0,
+        "chaptersVerifiedAfter": 6,
+        "chapterTotal": 82,
+        "chapterCountPercent": 7.32,
+        "relatedScope": {
+          "otherModuleLexicalQuestionMatches": 17,
+          "otherModuleWholeQuestionIdsCertifiedInThisUnit": [],
+          "contextualInventory": [
+            {
+              "slug": "coagulation-anticoagulant-pharmacology",
+              "questions": [
+                "coagulation-anticoagulant-pharmacology-019",
+                "coagulation-anticoagulant-pharmacology-043",
+                "coagulation-anticoagulant-pharmacology-063",
+                "coagulation-anticoagulant-pharmacology-111"
+              ],
+              "lessons": []
+            },
+            {
+              "slug": "direct-oral-anticoagulants",
+              "questions": [
+                "direct-oral-anticoagulants-019",
+                "direct-oral-anticoagulants-043",
+                "direct-oral-anticoagulants-063",
+                "direct-oral-anticoagulants-111"
+              ],
+              "lessons": []
+            },
+            {
+              "slug": "pulmonary-arterial-hypertension",
+              "questions": [
+                "pah-014",
+                "pah-038",
+                "pah-090",
+                "pah-114"
+              ],
+              "lessons": [
+                "pah-diagnosis"
+              ]
+            },
+            {
+              "slug": "hepatitis-c",
+              "questions": [
+                "hepatitis-c-042",
+                "hepatitis-c-086",
+                "hepatitis-c-088",
+                "hepatitis-c-093",
+                "hepatitis-c-095"
+              ],
+              "lessons": [
+                "virus-natural-history",
+                "fibrosis-eligibility",
+                "initial-regimens",
+                "svr-follow-up",
+                "cirrhosis-special"
+              ]
+            },
+            {
+              "slug": "metabolic-dysfunction-associated-steatotic-liver-disease",
+              "questions": [],
+              "lessons": [
+                "cirrhosis-boundary"
+              ]
+            },
+            {
+              "slug": "alcohol-associated-liver-disease",
+              "questions": [],
+              "lessons": [
+                "nac-support",
+                "cirrhosis-complications"
+              ]
+            }
+          ],
+          "otherCirrhosisInventory": [
+            {
+              "id": "cirrhosis-decompensated-001",
+              "reviewHref": "#compensation-portal",
+              "previouslyWholeVerified": true
+            },
+            {
+              "id": "cirrhosis-decompensated-002",
+              "reviewHref": "#compensation-portal",
+              "previouslyWholeVerified": true
+            },
+            {
+              "id": "cirrhosis-decompensated-003",
+              "reviewHref": "#compensation-portal",
+              "previouslyWholeVerified": true
+            },
+            {
+              "id": "cirrhosis-decompensated-005",
+              "reviewHref": "#compensation-portal",
+              "previouslyWholeVerified": true
+            },
+            {
+              "id": "cirrhosis-decompensated-006",
+              "reviewHref": "#compensation-portal",
+              "previouslyWholeVerified": true
+            },
+            {
+              "id": "cirrhosis-decompensated-007",
+              "reviewHref": "#compensation-portal",
+              "previouslyWholeVerified": true
+            },
+            {
+              "id": "cirrhosis-decompensated-008",
+              "reviewHref": "#compensation-portal",
+              "previouslyWholeVerified": true
+            },
+            {
+              "id": "cirrhosis-decompensated-025",
+              "reviewHref": "#ascites-diagnosis",
+              "previouslyWholeVerified": true
+            },
+            {
+              "id": "cirrhosis-decompensated-027",
+              "reviewHref": "#ascites-diagnosis",
+              "previouslyWholeVerified": true
+            },
+            {
+              "id": "cirrhosis-decompensated-029",
+              "reviewHref": "#ascites-treatment",
+              "previouslyWholeVerified": true
+            },
+            {
+              "id": "cirrhosis-decompensated-106",
+              "reviewHref": "#longitudinal-care",
+              "previouslyWholeVerified": true
+            },
+            {
+              "id": "cirrhosis-decompensated-107",
+              "reviewHref": "#longitudinal-care",
+              "previouslyWholeVerified": true
+            },
+            {
+              "id": "cirrhosis-decompensated-108",
+              "reviewHref": "#longitudinal-care",
+              "previouslyWholeVerified": true
+            }
+          ],
+          "review": "HCV items retain prior source-reviewed cirrhosis/surveillance teaching; anticoagulation and PAH hits are risk assessment or incidental choices and require their own parent review. Brief ALD/MASLD companion teaching points to full cirrhosis care and does not prescribe a competing acute protocol. No related parent lesson or question newly certified."
         }
       }
     },
@@ -21027,11 +21246,66 @@
         },
         {
           "slug": "portal-varices",
-          "status": "unreviewed"
+          "status": "verified",
+          "wholeLessonVerified": true,
+          "latestScopedEvidence": "enteral-nutrition-broader-variceal-bleeding-review.json",
+          "verifiedSectionHeadings": [
+            "Identify the pressure problem",
+            "Prevent decompensation in compensated CSPH",
+            "Dose to tolerance and the correct formulation",
+            "Choose endoscopy for the indication",
+            "Respect contraindications and adverse effects",
+            "Reduce or hold when perfusion deteriorates",
+            "Separate first-bleed from recurrent-bleed prevention"
+          ],
+          "embeddedCheckVerified": true,
+          "figureVerified": true,
+          "metadataStatus": "Whole lesson metadata source/runtime verified",
+          "verifiedQuestionIds": [
+            "cirrhosis-decompensated-065",
+            "cirrhosis-decompensated-066",
+            "cirrhosis-decompensated-067",
+            "cirrhosis-decompensated-068",
+            "cirrhosis-decompensated-069",
+            "cirrhosis-decompensated-070",
+            "cirrhosis-decompensated-071",
+            "cirrhosis-decompensated-072"
+          ]
         },
         {
           "slug": "acute-bleeding",
-          "status": "unreviewed"
+          "status": "verified",
+          "wholeLessonVerified": true,
+          "latestScopedEvidence": "enteral-nutrition-broader-variceal-bleeding-review.json",
+          "verifiedSectionHeadings": [
+            "Stabilize and protect the airway",
+            "Transfuse conservatively and individualize",
+            "Start vasoactive treatment before confirmation",
+            "Use the correct octreotide product and units",
+            "Monitor octreotide safety",
+            "Give antibiotics from admission",
+            "Obtain timely endoscopic control",
+            "Avoid routine correction of an INR number",
+            "Distinguish preemptive TIPS from salvage",
+            "Assess TIPS harms and the recovery pathway"
+          ],
+          "embeddedCheckVerified": true,
+          "figureVerified": true,
+          "metadataStatus": "Whole lesson metadata source/runtime verified",
+          "verifiedQuestionIds": [
+            "cirrhosis-decompensated-073",
+            "cirrhosis-decompensated-074",
+            "cirrhosis-decompensated-075",
+            "cirrhosis-decompensated-076",
+            "cirrhosis-decompensated-077",
+            "cirrhosis-decompensated-078",
+            "cirrhosis-decompensated-079",
+            "cirrhosis-decompensated-080",
+            "cirrhosis-decompensated-081",
+            "cirrhosis-decompensated-082",
+            "cirrhosis-decompensated-083",
+            "cirrhosis-decompensated-084"
+          ]
         },
         {
           "slug": "encephalopathy",
@@ -21059,7 +21333,8 @@
         "enteral-nutrition-broader-cirrhosis-ascites-diagnosis-review.json",
         "enteral-nutrition-broader-cirrhosis-ascites-treatment-review.json",
         "enteral-nutrition-broader-sbp-review.json",
-        "enteral-nutrition-broader-hrs-aki-review.json"
+        "enteral-nutrition-broader-hrs-aki-review.json",
+        "enteral-nutrition-broader-variceal-bleeding-review.json"
       ],
       "broaderEnteralAdministrationReview": {
         "evidence": "enteral-nutrition-broader-hepatic-nutrition-review.json",
@@ -21841,6 +22116,224 @@
           "otherCirrhosisLexicalQuestionMatches": 0,
           "relatedAlcoholLesson": "cirrhosis-complications",
           "review": "The whole related alcohol lesson was read for context. Its brief HRS distinction does not prescribe an obsolete albumin protocol; broader HE/variceal/HCC teaching remains pending its parent review. No alcohol lesson certified."
+        }
+      },
+      "latestBroaderVaricealBleedingReview": {
+        "evidence": "enteral-nutrition-broader-variceal-bleeding-review.json",
+        "verifiedScope": "Complete portal-varices and acute-bleeding lessons: 17 whole bodies, two whole checks, metadata and figures; all 20 anchored whole questions 065-084.",
+        "wholeLessonsVerified": {
+          "cirrhosis-decompensated-liver-disease": [
+            "portal-varices",
+            "acute-bleeding"
+          ]
+        },
+        "wholeBodiesVerified": 17,
+        "existingWholeBodiesRefined": 8,
+        "newOriginalBodies": 9,
+        "wholeChecksVerified": 2,
+        "wholeMetadataAndFiguresVerified": 2,
+        "wholeBankQuestionIdsVerified": [
+          "cirrhosis-decompensated-065",
+          "cirrhosis-decompensated-066",
+          "cirrhosis-decompensated-067",
+          "cirrhosis-decompensated-068",
+          "cirrhosis-decompensated-069",
+          "cirrhosis-decompensated-070",
+          "cirrhosis-decompensated-071",
+          "cirrhosis-decompensated-072",
+          "cirrhosis-decompensated-073",
+          "cirrhosis-decompensated-074",
+          "cirrhosis-decompensated-075",
+          "cirrhosis-decompensated-076",
+          "cirrhosis-decompensated-077",
+          "cirrhosis-decompensated-078",
+          "cirrhosis-decompensated-079",
+          "cirrhosis-decompensated-080",
+          "cirrhosis-decompensated-081",
+          "cirrhosis-decompensated-082",
+          "cirrhosis-decompensated-083",
+          "cirrhosis-decompensated-084"
+        ],
+        "newUniqueBankQuestionsVerified": 20,
+        "broaderFeedingBankVerifiedBefore": 653,
+        "broaderFeedingBankVerifiedAfter": 673,
+        "sourceVerifiedCirrhosisBankTotalAcrossUnits": 100,
+        "cirrhosisBankTotal": 120,
+        "remainingCirrhosisWholeBankIds": [
+          "cirrhosis-decompensated-085",
+          "cirrhosis-decompensated-086",
+          "cirrhosis-decompensated-087",
+          "cirrhosis-decompensated-088",
+          "cirrhosis-decompensated-089",
+          "cirrhosis-decompensated-090",
+          "cirrhosis-decompensated-091",
+          "cirrhosis-decompensated-092",
+          "cirrhosis-decompensated-093",
+          "cirrhosis-decompensated-094",
+          "cirrhosis-decompensated-095",
+          "cirrhosis-decompensated-096",
+          "cirrhosis-decompensated-113",
+          "cirrhosis-decompensated-114",
+          "cirrhosis-decompensated-115",
+          "cirrhosis-decompensated-116",
+          "cirrhosis-decompensated-117",
+          "cirrhosis-decompensated-118",
+          "cirrhosis-decompensated-119",
+          "cirrhosis-decompensated-120"
+        ],
+        "other100WholeCirrhosisQuestionsUnchanged": true,
+        "other10CirrhosisLessonsUnchanged": true,
+        "other231WholeModulesUnchanged": true,
+        "associatedCumulativeWholeItemsVerified": [],
+        "all1180WholeCumulativeObjectsUnchanged": true,
+        "stableIdsKeysDifficultyAnchorsAndOrderPreserved": true,
+        "newQuestionIdsAdded": 0,
+        "newReferenceCount": 4,
+        "wholeParentModulesVerified": false,
+        "wholeChaptersVerified": false,
+        "committedWholeModulesVerifiedAfter": 58,
+        "committedWholeModulesTotal": 232,
+        "moduleCountPercent": 25.0,
+        "chaptersVerifiedAfter": 6,
+        "chapterTotal": 82,
+        "chapterCountPercent": 7.32,
+        "relatedScope": {
+          "otherModuleLexicalQuestionMatches": 17,
+          "otherModuleWholeQuestionIdsCertifiedInThisUnit": [],
+          "contextualInventory": [
+            {
+              "slug": "coagulation-anticoagulant-pharmacology",
+              "questions": [
+                "coagulation-anticoagulant-pharmacology-019",
+                "coagulation-anticoagulant-pharmacology-043",
+                "coagulation-anticoagulant-pharmacology-063",
+                "coagulation-anticoagulant-pharmacology-111"
+              ],
+              "lessons": []
+            },
+            {
+              "slug": "direct-oral-anticoagulants",
+              "questions": [
+                "direct-oral-anticoagulants-019",
+                "direct-oral-anticoagulants-043",
+                "direct-oral-anticoagulants-063",
+                "direct-oral-anticoagulants-111"
+              ],
+              "lessons": []
+            },
+            {
+              "slug": "pulmonary-arterial-hypertension",
+              "questions": [
+                "pah-014",
+                "pah-038",
+                "pah-090",
+                "pah-114"
+              ],
+              "lessons": [
+                "pah-diagnosis"
+              ]
+            },
+            {
+              "slug": "hepatitis-c",
+              "questions": [
+                "hepatitis-c-042",
+                "hepatitis-c-086",
+                "hepatitis-c-088",
+                "hepatitis-c-093",
+                "hepatitis-c-095"
+              ],
+              "lessons": [
+                "virus-natural-history",
+                "fibrosis-eligibility",
+                "initial-regimens",
+                "svr-follow-up",
+                "cirrhosis-special"
+              ]
+            },
+            {
+              "slug": "metabolic-dysfunction-associated-steatotic-liver-disease",
+              "questions": [],
+              "lessons": [
+                "cirrhosis-boundary"
+              ]
+            },
+            {
+              "slug": "alcohol-associated-liver-disease",
+              "questions": [],
+              "lessons": [
+                "nac-support",
+                "cirrhosis-complications"
+              ]
+            }
+          ],
+          "otherCirrhosisInventory": [
+            {
+              "id": "cirrhosis-decompensated-001",
+              "reviewHref": "#compensation-portal",
+              "previouslyWholeVerified": true
+            },
+            {
+              "id": "cirrhosis-decompensated-002",
+              "reviewHref": "#compensation-portal",
+              "previouslyWholeVerified": true
+            },
+            {
+              "id": "cirrhosis-decompensated-003",
+              "reviewHref": "#compensation-portal",
+              "previouslyWholeVerified": true
+            },
+            {
+              "id": "cirrhosis-decompensated-005",
+              "reviewHref": "#compensation-portal",
+              "previouslyWholeVerified": true
+            },
+            {
+              "id": "cirrhosis-decompensated-006",
+              "reviewHref": "#compensation-portal",
+              "previouslyWholeVerified": true
+            },
+            {
+              "id": "cirrhosis-decompensated-007",
+              "reviewHref": "#compensation-portal",
+              "previouslyWholeVerified": true
+            },
+            {
+              "id": "cirrhosis-decompensated-008",
+              "reviewHref": "#compensation-portal",
+              "previouslyWholeVerified": true
+            },
+            {
+              "id": "cirrhosis-decompensated-025",
+              "reviewHref": "#ascites-diagnosis",
+              "previouslyWholeVerified": true
+            },
+            {
+              "id": "cirrhosis-decompensated-027",
+              "reviewHref": "#ascites-diagnosis",
+              "previouslyWholeVerified": true
+            },
+            {
+              "id": "cirrhosis-decompensated-029",
+              "reviewHref": "#ascites-treatment",
+              "previouslyWholeVerified": true
+            },
+            {
+              "id": "cirrhosis-decompensated-106",
+              "reviewHref": "#longitudinal-care",
+              "previouslyWholeVerified": true
+            },
+            {
+              "id": "cirrhosis-decompensated-107",
+              "reviewHref": "#longitudinal-care",
+              "previouslyWholeVerified": true
+            },
+            {
+              "id": "cirrhosis-decompensated-108",
+              "reviewHref": "#longitudinal-care",
+              "previouslyWholeVerified": true
+            }
+          ],
+          "review": "HCV items retain prior source-reviewed cirrhosis/surveillance teaching; anticoagulation and PAH hits are risk assessment or incidental choices and require their own parent review. Brief ALD/MASLD companion teaching points to full cirrhosis care and does not prescribe a competing acute protocol. No related parent lesson or question newly certified."
         }
       }
     },

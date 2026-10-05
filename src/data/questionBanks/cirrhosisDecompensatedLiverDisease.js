@@ -832,3 +832,205 @@ Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => 
   ],
   "rationale": "Ongoing mesenteric, coronary or peripheral ischemia is a labeled contraindication. Vasoconstriction can cause further ischemic harm, and treatment should stop if ischemic adverse reactions develop. Respiratory assessment and transplant-aware monitoring are necessary parts of care."
 });
+
+// Review complete variceal-prevention and bleeding cases; preserve stable assessment identities.
+Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => question.id === "cirrhosis-decompensated-065"), {
+  "question": "A patient has compensated cirrhosis with established CSPH and no NSBB contraindication. Which drug is preferred by Baveno VII for preventing decompensation?",
+  "choices": [
+    "Carvedilol",
+    "Metoprolol",
+    "Amlodipine",
+    "Hydrochlorothiazide"
+  ],
+  "rationale": "Carvedilol is the preferred NSBB in compensated CSPH. It reduces portal inflow through beta blockade and intrahepatic resistance through alpha-1 effects. The other drugs do not provide equivalent NSBB portal protection; treatment still requires dosing and safety assessment."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => question.id === "cirrhosis-decompensated-066"), {
+  "question": "A compensated patient has high-risk esophageal varices and a contraindication to NSBB therapy. Which first-bleed prevention is appropriate?",
+  "choices": [
+    "Endoscopic variceal ligation",
+    "Metoprolol as equivalent portal therapy",
+    "Daily IV octreotide indefinitely",
+    "Routine TIPS solely because varices exist"
+  ],
+  "rationale": "EVL is recommended to prevent a first bleed from high-risk esophageal varices when NSBBs cannot be used. A selective beta blocker is not equivalent, the acute IV vasoactive regimen is not chronic prevention, and routine primary-prophylaxis TIPS is not the indicated pathway."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => question.id === "cirrhosis-decompensated-067"), {
+  "question": "An eligible patient is already taking an NSBB for compensated CSPH. Screening endoscopy would not change management. Which approach is best?",
+  "choices": [
+    "Continue indicated treatment and follow-up without screening solely to detect varices.",
+    "Stop the NSBB until all varices are visualized.",
+    "Add ligation universally even if there is no endoscopic indication.",
+    "Replace the NSBB with a PPI for portal-pressure reduction."
+  ],
+  "rationale": "Baveno VII says screening solely for varices is unnecessary in compensated patients already receiving an NSBB to prevent decompensation when findings would not change management. This does not remove endoscopy for bleeding or another indication, or routine clinical follow-up."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => question.id === "cirrhosis-decompensated-068"), {
+  "question": "After a controlled esophageal variceal bleed, a stable patient can tolerate an NSBB and EVL. Which secondary-prevention plan is first line?",
+  "choices": [
+    "Combine an NSBB with endoscopic variceal ligation.",
+    "Use a PPI alone.",
+    "Use monthly octreotide depot alone.",
+    "Stop prevention once hemoglobin recovers."
+  ],
+  "rationale": "Combined NSBB and EVL is first-line secondary prevention when both are feasible. This differs from primary prevention with an NSBB or EVL. PPI or depot octreotide alone and ending prevention after hemoglobin recovery do not address the recurrent-bleed risk."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => question.id === "cirrhosis-decompensated-069"), {
+  "question": "A patient with ascites has persistent systolic pressure of 86 mmHg while taking an NSBB. Which action is best?",
+  "choices": [
+    "Reduce or discontinue the NSBB and assess circulation.",
+    "Increase the dose to reach the heart-rate target.",
+    "Continue unchanged because low pressure proves efficacy.",
+    "Replace it with metoprolol for equivalent portal protection."
+  ],
+  "rationale": "Persistent systolic pressure <90 mmHg is a Baveno VII reason to reduce or stop NSBBs in ascites. Assess the cause and reconsider treatment after recovery. A heart-rate goal cannot override hypotension, and metoprolol is not equivalent portal therapy."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => question.id === "cirrhosis-decompensated-070"), {
+  "question": "NSBB therapy was held during HRS-AKI. Blood pressure has returned to baseline and HRS-AKI has resolved. Which plan is reasonable?",
+  "choices": [
+    "Reassess eligibility and restart or retitrate the NSBB if tolerated.",
+    "Treat the hold as a permanent ban regardless of recovery.",
+    "Resume the maximum prior dose without checking circulation.",
+    "Abandon variceal prevention permanently."
+  ],
+  "rationale": "Baveno VII permits reinitiation or retitration after recovery. Check current contraindications, pressure, kidney function and tolerance. If intolerance persists, EVL can provide prevention; an acute hold should not automatically end all preventive care."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => question.id === "cirrhosis-decompensated-071"), {
+  "question": "A patient considered for carvedilol has bronchial asthma. Which interpretation of guidance preference is correct?",
+  "choices": [
+    "The US label contraindication still applies; choose an appropriate alternative prevention strategy.",
+    "Portal guidance removes every labeled contraindication.",
+    "Carvedilol is beta-1 selective, so bronchospasm is impossible.",
+    "A normal pulse eliminates asthma-related risk."
+  ],
+  "rationale": "Carvedilol is nonselective and its US label contraindicates bronchial asthma. Guidance-supported off-label portal use does not erase that restriction. For high-risk esophageal varices, EVL is an alternative when NSBBs cannot be used."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => question.id === "cirrhosis-decompensated-072"), {
+  "question": "Which proposal creates the greatest avoidable risk in NSBB management?",
+  "choices": [
+    "Escalate through shock solely to reach a resting heart rate of 55 to 60.",
+    "Reassess blood pressure and kidney function before titration.",
+    "Consider EVL if a prevention-indicated patient cannot tolerate NSBBs.",
+    "Check current liver state and the prevention indication."
+  ],
+  "rationale": "Escalating through shock can worsen perfusion. The traditional resting heart-rate target applies only when tolerated; pressure, kidney function and contraindications take priority. The other choices support appropriate assessment and prevention."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => question.id === "cirrhosis-decompensated-073"), {
+  "question": "Variceal hemorrhage is suspected in a patient with cirrhosis. Which treatment should begin before endoscopic confirmation?",
+  "choices": [
+    "Indicated resuscitation, vasoactive therapy and antibiotic prophylaxis.",
+    "Oral beta blockade as the sole hemostatic treatment.",
+    "IM octreotide depot as the acute IV replacement.",
+    "Observation until cultures confirm infection."
+  ],
+  "rationale": "The acute bundle starts on suspicion. Antibiotics are prophylactic in this bleeding context and do not wait for positive cultures. Oral NSBBs and IM depot octreotide are not substitutes for acute IV treatment and urgent endoscopic control."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => question.id === "cirrhosis-decompensated-074"), {
+  "question": "A patient with suspected variceal hemorrhage is actively vomiting blood and has altered consciousness. Which airway plan is best?",
+  "choices": [
+    "Intubate before endoscopy with urgent critical-care support.",
+    "Proceed with unprotected endoscopy regardless of aspiration risk.",
+    "Delay all stabilization until a morning elective procedure.",
+    "Give an oral NSBB to protect the airway."
+  ],
+  "rationale": "Baveno VII recommends intubation before endoscopy with altered consciousness or active hematemesis. Stabilization and endoscopy require coordinated urgent care. Neither delaying care nor oral beta blockade addresses aspiration risk."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => question.id === "cirrhosis-decompensated-075"), {
+  "question": "A verified octreotide infusion contains 500 mcg in a final volume of 100 mL. The prescribed rate is 50 mcg/hour. What pump rate is correct?",
+  "choices": [
+    "10 mL/hour",
+    "1 mL/hour",
+    "50 mL/hour",
+    "100 mL/hour"
+  ],
+  "rationale": "Concentration = 500 mcg ÷ 100 mL = 5 mcg/mL. Rate = 50 mcg/hour ÷ 5 mcg/mL = 10 mL/hour. Confirm the immediate-release IV product and preparation protocol; this arithmetic does not establish compatibility or stability."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => question.id === "cirrhosis-decompensated-076"), {
+  "question": "A hemodynamically stabilized patient with variceal bleeding has no cardiovascular reason for a higher target. Which Baveno VII red-cell strategy is appropriate?",
+  "choices": [
+    "Use a conservative hemoglobin target of 7 to 8 g/dL.",
+    "Routinely transfuse to at least 12 g/dL.",
+    "Withhold resuscitation even if shock recurs.",
+    "Transfuse only to normalize INR."
+  ],
+  "rationale": "The usual Baveno VII hemoglobin target is 7 to 8 g/dL, with individualization for cardiovascular disease, age, instability and ongoing bleeding. It is not a rule to withhold necessary resuscitation. Red cells do not normalize INR, and routine overtransfusion can aggravate portal pressure."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => question.id === "cirrhosis-decompensated-077"), {
+  "question": "A patient with Child-Pugh C cirrhosis scored 12 has an esophageal variceal bleed initially controlled with drugs and EVL. Which TIPS pathway should be assessed?",
+  "choices": [
+    "Preemptive covered TIPS within 72 hours, ideally within 24.",
+    "Wait for another uncontrolled bleed before considering TIPS.",
+    "Routine outpatient primary-prophylaxis TIPS months later.",
+    "Balloon tamponade as permanent definitive treatment."
+  ],
+  "rationale": "Child-Pugh C below 14 points meets a Baveno VII high-risk preemptive criterion. This pathway can apply after initial hemostasis and differs from salvage TIPS for failed control. Candidacy still requires expert evaluation; tamponade is a bridge."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => question.id === "cirrhosis-decompensated-078"), {
+  "question": "Bleeding continues despite vasoactive therapy and endoscopic control attempts. Which escalation is best?",
+  "choices": [
+    "Activate salvage covered-TIPS assessment; use a temporary bridge if needed.",
+    "Repeat transfusions indefinitely without definitive escalation.",
+    "Use an esophageal balloon as a permanent cure.",
+    "Switch to oral carvedilol as the sole emergency treatment."
+  ],
+  "rationale": "Failure of combined pharmacologic and endoscopic therapy calls for salvage covered TIPS in an appropriate candidate. Balloon tamponade or a self-expanding esophageal stent can bridge to definitive care; neither replaces it. Delayed escalation permits continued hemorrhage."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => question.id === "cirrhosis-decompensated-079"), {
+  "question": "A patient scored Child-Pugh B 8 has active variceal bleeding at initial endoscopy. Which interpretation is correct?",
+  "choices": [
+    "The score and active bleeding meet a Baveno VII preemptive-TIPS criterion.",
+    "Any Child-Pugh B score qualifies regardless of active bleeding.",
+    "Only failure of all endoscopic therapy allows TIPS assessment.",
+    "A score of 8 alone mandates permanent balloon tamponade."
+  ],
+  "rationale": "Baveno VII includes Child-Pugh B >7 with active bleeding at initial endoscopy as a preemptive criterion. Child-Pugh B 7 or a higher B score without that finding does not meet this particular criterion. Other eligibility pathways and contraindication assessment remain relevant."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => question.id === "cirrhosis-decompensated-080"), {
+  "question": "A patient with acute variceal bleeding has an elevated INR from cirrhosis. Which proposal creates the greatest avoidable risk?",
+  "choices": [
+    "Give routine large-volume plasma solely to normalize INR.",
+    "Treat portal pressure and obtain indicated endoscopic control.",
+    "Individualize hemostatic support if bleeding remains uncontrolled.",
+    "Assess ongoing bleeding and perfusion alongside laboratory trends."
+  ],
+  "rationale": "Routine plasma solely to correct INR is not recommended in acute variceal bleeding; INR does not capture the full hemostatic balance and plasma can worsen volume and portal pressure. This does not prohibit individualized hemostatic support when clinically indicated."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => question.id === "cirrhosis-decompensated-081"), {
+  "question": "Which complication should be discussed when counseling about TIPS?",
+  "choices": [
+    "Worsening hepatic encephalopathy or heart failure.",
+    "Guaranteed elimination of transplant need.",
+    "Universal improvement in cardiac function.",
+    "Permanent cure of the underlying cirrhosis."
+  ],
+  "rationale": "TIPS lowers portal pressure but can increase encephalopathy and cardiac decompensation risk. It does not cure the liver disease or guarantee that transplantation is unnecessary. Select candidates and plan follow-up with the specialist team."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => question.id === "cirrhosis-decompensated-082"), {
+  "question": "A patient is being considered for elective TIPS and has severe symptomatic heart failure. Which plan is best?",
+  "choices": [
+    "Obtain specialist cardiopulmonary assessment because severe heart failure can preclude elective TIPS.",
+    "Place TIPS without cardiac evaluation because it only affects portal veins.",
+    "Assume a normal serum sodium excludes cardiac risk.",
+    "Use the esophageal-varix size alone to establish procedural safety."
+  ],
+  "rationale": "North American TIPS guidance lists severe heart failure as a contraindication to elective TIPS and recommends cardiopulmonary assessment. Increased venous return can precipitate cardiac decompensation. Varix size or sodium does not establish cardiac safety."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => question.id === "cirrhosis-decompensated-083"), {
+  "question": "A high-risk bleeding patient meets preemptive-TIPS criteria but has hepatic encephalopathy at admission. Which interpretation is best?",
+  "choices": [
+    "Admission encephalopathy alone is not an automatic contraindication to the preemptive pathway.",
+    "Any encephalopathy permanently prohibits every TIPS indication.",
+    "Encephalopathy proves that all contraindications are absent.",
+    "The encephalopathy makes tamponade a durable cure."
+  ],
+  "rationale": "Baveno VII distinguishes admission encephalopathy in eligible high-risk acute bleeding from refractory overt encephalopathy in elective selection. Admission HE alone does not automatically exclude preemptive TIPS, but the team must still assess risk and treat the encephalopathy."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => question.id === "cirrhosis-decompensated-084"), {
+  "question": "A patient rebleeds despite tolerated NSBB therapy and EVL. Which next strategy is supported?",
+  "choices": [
+    "Assess TIPS with the multidisciplinary team.",
+    "Stop all preventive treatment because the combination was attempted.",
+    "Use a PPI alone as definitive portal prevention.",
+    "Treat a balloon tamponade device as permanent outpatient therapy."
+  ],
+  "rationale": "Baveno VII recommends TIPS for recurrent variceal hemorrhage despite NSBB plus EVL. Assess liver and cardiopulmonary risk and the transplant pathway. PPI monotherapy and permanent tamponade do not provide the indicated definitive portal strategy."
+});
