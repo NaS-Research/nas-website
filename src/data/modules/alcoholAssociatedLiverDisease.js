@@ -15,3 +15,118 @@ export const alcoholAssociatedLiverDiseaseModule={slug:"alcohol-associated-liver
   s("transplant-ethics","Select Transplant Candidates With Evidence, Not a Calendar","Early transplant can be lifesaving for selected severe-AH nonresponders, and modern evaluation is multidimensional.",["Early transplant","Relapse risk","Support","Insight","Equity"],"Assess medical urgency and sustained recovery capacity without using stigma or a rigid abstinence duration as a shortcut.",[["Move beyond six months alone","A fixed six-month abstinence rule does not accurately predict relapse and can exclude patients who will die before reaching it."],["Use multidisciplinary evidence","Evaluate prior treatment, relapse pattern, insight, psychiatric disease, other substances, social support, housing, adherence, coping, and willingness to engage."],["Plan post-transplant recovery","Continue AUD medication when appropriate, behavioral care, biomarker monitoring with transparency, family support, and rapid intervention for recurrence."],["Protect equity","Apply documented center criteria consistently and separate moral judgment from medical and psychosocial risk assessment."]],["Time alone predicts poorly.","Selection is multidisciplinary.","Recovery care continues after transplant.","Consistency protects equity."],q("What should transplant candidacy not depend on alone?",["A rigid six-month abstinence interval","Medical urgency","Multidisciplinary assessment","Recovery support"],"Current practice considers broader relapse and support evidence.","transplant-ethics")),
   s("integrated-case","Build a Closed-Loop Liver and Recovery Plan","The highest-quality plan treats withdrawal, AUD, liver injury, nutrition, complications, and social conditions as one system.",["Withdrawal","AUD medication","Liver state","Nutrition","Follow-up"],"Name the acute risk, disease driver, exact treatment, safety monitoring, ownership, and next contact before transition.",[["Stabilize immediate risk","Assess withdrawal, suicidality, intoxication, trauma, infection, bleeding, glucose, electrolytes, thiamine need, and level of care."],["Define liver disease","Document AH confidence, fibrosis, compensation, MELD, organ failures, infection, HCC status, and transplant indication."],["Start recovery treatment","Choose medication through liver, kidney, opioid, cognition, and goal context. Add behavioral care and practical support before discharge."],["Measure what matters","Track alcohol goals, adherence, recurrence, liver function, nutrition, complications, quality of life, and re-entry without punitive discharge."]],["Withdrawal is not AUD treatment.","Liver and addiction care share ownership.","Medication needs organ-specific selection.","Recurrence invites intensification."],q("Which discharge plan is strongest after alcohol withdrawal with ALD?",["AUD medication, behavioral care, liver follow-up, nutrition, safety monitoring, and a warm handoff","Detoxification only","A warning without treatment","Discharge from care after recurrence"],"Closed-loop care treats both the driver and the organ disease.","integrated-case")),
 ],references:[{label:"2024 ACG Clinical Guideline for Alcohol-Associated Liver Disease",href:"https://pmc.ncbi.nlm.nih.gov/articles/PMC11040545/"},{label:"AASLD Alcohol-Associated Liver Disease Practice Guidance",href:"https://www.aasld.org/practice-guidelines/alcohol-associated-liver-disease"},{label:"ASAM Alcohol Withdrawal Management Guideline",href:"https://www.asam.org/quality-care/clinical-guidelines/alcohol-withdrawal-management-guideline"},{label:"AASLD Steroids, Maddrey, and Lille Review",href:"https://www.aasld.org/liver-fellow-network/core-series/why-series/why-do-we-use-steroids-maddreys-discriminant-function"},{label:"Current CAMPRAL Prescribing Information",href:"https://www.accessdata.fda.gov/drugsatfda_docs/label/2004/21431lbl.pdf"}],disclaimer:"This module supports advanced education about alcohol-associated liver disease and alcohol use disorder. It reconciles a brief 2023 course source with the 2024 ACG guideline, the 2019 AASLD guidance, the 2020 ASAM withdrawal guideline, and current labeling. Some guidance documents remain older but active, and care requires current protocols, specialist consultation, and patient-specific evidence.",questionBank:alcoholAssociatedLiverDiseaseQuestionBank};
+
+
+// Source-reconciled cirrhosis care continues alongside alcohol recovery.
+const verifiedAldCirrhosisLesson = {
+  "metadata": {
+    "summary": "Alcohol recovery improves prognosis while ascites, infection, bleeding, HE, kidney injury and HCC risk still require indication-specific cirrhosis care.",
+    "concepts": [
+      "Recovery care",
+      "Ascites and infection",
+      "Bleeding and HE",
+      "Medication safety",
+      "HCC surveillance"
+    ],
+    "application": "Coordinate liver and AUD care, reconcile every product, and assign complication monitoring, surveillance and referral without waiting for a fixed abstinence interval.",
+    "keyPoints": [
+      "Abstinence and complication care continue together.",
+      "Infection can present without fever.",
+      "Kidney function, electrolytes and cognition govern medicine safety.",
+      "HCC surveillance depends on treatment eligibility, not AST alone."
+    ]
+  },
+  "bodies": [
+    {
+      "heading": "Continue recovery and cirrhosis care together",
+      "body": "Sustained alcohol abstinence and treatment of alcohol use disorder improve the disease course, but stopping alcohol does not immediately remove established portal hypertension, ascites, infection, encephalopathy or cancer risk. Coordinate hepatology and addiction care while treating each complication according to its current indication. Reassess prevention medicines as the disease state changes; neither the end of withdrawal nor a report of abstinence independently authorizes stopping cirrhosis care."
+    },
+    {
+      "heading": "Manage ascites without sacrificing nutrition",
+      "body": "Evaluate new ascites and perform prompt diagnostic paracentesis in a patient with cirrhotic ascites admitted urgently, even without fever. A sodium plan around 2 g/day and spironolactone with or without furosemide are usual first-line measures for moderate ascites. Monitor weight, blood pressure, creatinine, sodium and potassium; avoid excessive diuresis and balance sodium restriction against poor intake. Fluid restriction is not routine ascites treatment and should follow an individualized hyponatremia assessment. Tense or refractory ascites may need large-volume paracentesis. After removal of more than 5 L, give protocol-directed albumin, commonly 6 to 8 g per liter of the total fluid removed: a 7 L procedure corresponds to 42 to 56 g, not just replacement for the volume beyond 5 L. Repeated drainage provides relief while advanced liver options are assessed."
+    },
+    {
+      "heading": "Keep infection treatment and prevention distinct",
+      "body": "SBP may first present as confusion, kidney injury or hypotension without fever. Sample ascitic fluid for cell count, differential and culture when indicated and start active treatment promptly when SBP is suspected; sampling must not delay urgent antibiotics in an unstable patient. Assess albumin and a secondary abdominal source as appropriate. A survivor of SBP with ongoing risk needs an individualized secondary-prophylaxis plan, including review of resistance, adverse effects and continuing indication. Acute gastrointestinal bleeding has a separate short-term antibiotic-prevention indication. These indications must not be confused with giving antibiotics universally for severe alcohol-associated hepatitis or with assuming HE-dose rifaximin substitutes for active SBP treatment."
+    },
+    {
+      "heading": "Prevent bleeding and recognize an emergency",
+      "body": "Assess clinically significant portal hypertension and variceal risk. Nonselective beta blockers can prevent decompensation in compensated cirrhosis with clinically significant portal hypertension and prevent variceal bleeding when indicated. An endoscopic prevention strategy is needed when appropriate, including persistent intolerance to beta blockade. Ascites alone is not an automatic permanent contraindication, but hypotension or kidney deterioration requires prompt dose and hemodynamic reassessment. Hematemesis, melena with instability or suspected acute variceal hemorrhage requires urgent monitored care, resuscitation and airway assessment, early vasoactive therapy and short-term antibiotic prophylaxis, followed by timely endoscopy; esophageal variceal band ligation is the recommended endoscopic treatment. An outpatient beta blocker alone is not the acute bleeding bundle."
+    },
+    {
+      "heading": "Protect cognition and examine competing causes",
+      "body": "Evaluate altered mental status clinically rather than attributing all confusion to either alcohol withdrawal or HE. Infection, bleeding, dehydration, electrolyte abnormalities, sedatives, neurological disease and Wernicke encephalopathy may contribute; withdrawal and HE can coexist. Severe impaired consciousness needs urgent airway and treatment-route assessment. Treat HE precipitants and use lactulose, titrated to about 2 to 3 soft stools daily without harmful diarrhea. Rifaximin 550 mg orally twice daily is used for adult overt HE recurrence prevention and is added for recurrent episodes despite tolerated lactulose maintenance. Clinical cognition, function, recurrence, adherence and bowel safety guide follow-up; an ammonia value alone should not determine treatment. Do not replace HE care with routine protein restriction."
+    },
+    {
+      "heading": "Investigate kidney deterioration promptly",
+      "body": "New kidney injury calls for assessment of volume loss, infection, bleeding, shock, nephrotoxic medicines and intrinsic kidney disease. Do not diagnose HRS-AKI from one creatinine result or automatically continue every previous diuretic and blood-pressure medicine. HRS physiology and other kidney injuries can coexist, and the liver team should apply the current diagnostic and treatment pathway. Review potassium and sodium as well as creatinine, blood pressure, weight and intake. Hyperkalemia during spironolactone therapy requires prompt treatment assessment and dose reduction or discontinuation by the treating team, not automatic continuation. Systemic NSAIDs, ACE inhibitors and ARBs should be avoided in cirrhosis with ascites because of renal-perfusion risk; indication-specific diuretics and beta blockers require reassessment rather than indiscriminate permanent discontinuation."
+    },
+    {
+      "heading": "Choose pain treatment through the liver-safety plan",
+      "body": "Reconcile prescriptions, over-the-counter products and supplements at each transition. Systemic NSAIDs can worsen kidney function, bleeding and ascites and should be avoided in cirrhosis. AASLD guidance favors local measures for localized pain and, when systemic treatment is appropriate, acetaminophen up to 2 g/day in most patients with cirrhosis. Count acetaminophen in every combination product. For example, 500 mg four times daily already totals 2,000 mg; adding two 650 mg doses produces 3,300 mg/day and exceeds that plan. Active alcohol use, malnutrition, acute liver injury and other patient factors require individual review; a general cirrhosis ceiling is not permission to self-treat an overdose or ignore a lower prescribed limit."
+    },
+    {
+      "heading": "Separate supervised withdrawal care from routine sedative use",
+      "body": "Benzodiazepines can precipitate or worsen HE, sedation and falls, but monitored benzodiazepine therapy can still be necessary for severe alcohol withdrawal. Review the actual indication, timing, dose, hepatic and renal function, other sedatives and mental status. A newly added bedtime sedative in a patient with prior HE and increasing drowsiness needs prompt clinical and medication assessment, including competing precipitants, rather than automatic dose escalation. Chronic benzodiazepines are generally avoided for sleep in decompensated cirrhosis; dependence and withdrawal risk require a supervised change. Selected end-of-life comfort goals may justify a different risk-benefit decision. Cirrhosis does not create a universal ban on every sedative in every setting."
+    },
+    {
+      "heading": "Continue appropriate HCC surveillance",
+      "body": "In established alcohol-associated cirrhosis, abstinence alone is not a reason to end hepatocellular carcinoma surveillance. AASLD recommends ultrasound plus alpha-fetoprotein about every 6 months in eligible patients, with a different imaging plan when ultrasound visualization is inadequate. Surveillance is intended for patients who could benefit from HCC-directed treatment: Child-Pugh C patients who are not transplant eligible and people with life-limiting comorbidity that cannot be remedied by transplantation or directed therapy generally do not benefit. Confirm eligibility, the next surveillance date and who follows the result. A normal AST does not replace surveillance, and AFP alone is not the routine surveillance strategy."
+    },
+    {
+      "heading": "Maintain supportive care and timely referral",
+      "body": "Assess nutritional intake and muscle loss, maintain adequate individualized protein, reduce prolonged fasting and correct identified vitamin or mineral deficiencies, including thiamine risk. Review vaccination status and age- and risk-appropriate immunizations, and assess bone health. Continue medication stewardship and caregiver education with clear instructions for new confusion, bleeding, fever, poor intake or reduced urine output. Decompensated alcohol-associated cirrhosis, recurrent or refractory ascites and other medically significant complications warrant timely hepatology and transplant evaluation while AUD treatment continues. Referral is not guaranteed eligibility, and a single abstinence report does not substitute for multidisciplinary medical and psychosocial assessment."
+    }
+  ],
+  "check": {
+    "question": "An abstinent patient has established Child-Pugh B alcohol-associated cirrhosis and remains eligible for HCC-directed treatment. What surveillance plan is best?",
+    "choices": [
+      "Continue ultrasound plus AFP about every 6 months under the liver-care plan.",
+      "End surveillance immediately because alcohol use has stopped.",
+      "Obtain surveillance only when AST rises.",
+      "Use AFP alone as the routine surveillance strategy."
+    ],
+    "rationale": "Abstinence improves prognosis but does not itself remove HCC risk in established cirrhosis. AASLD recommends ultrasound plus AFP at approximately six-month intervals in eligible patients. AST is not a surveillance gate, and AFP alone is insufficient; limited ultrasound visualization may require alternative imaging."
+  }
+};
+for (const lesson of alcoholAssociatedLiverDiseaseModule.submodules) {
+  if (lesson.slug === "cirrhosis-complications") {
+    Object.assign(lesson, verifiedAldCirrhosisLesson.metadata);
+    lesson.lesson = verifiedAldCirrhosisLesson.bodies;
+    Object.assign(lesson.check, verifiedAldCirrhosisLesson.check);
+  }
+}
+alcoholAssociatedLiverDiseaseModule.references.push(...[
+  {
+    "label": "NIDDK official cirrhosis complications: bone health and nutrition.",
+    "href": "https://www.niddk.nih.gov/health-information/liver-disease/cirrhosis/definition-facts"
+  },
+  {
+    "label": "ADQI-ICA primary AKI and HRS consensus (2024).",
+    "href": "https://doi.org/10.1016/j.jhep.2024.03.031"
+  },
+  {
+    "label": "Spironolactone CaroSpir US label: potassium and renal precautions.",
+    "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c4f70a04-7d89-4b73-8b02-17d43471bf08"
+  },
+  {
+    "label": "AASLD 2021 primary ascites, SBP and HRS practice guidance.",
+    "href": "https://doi.org/10.1002/hep.31884"
+  },
+  {
+    "label": "Baveno VII primary consensus on portal hypertension (2022).",
+    "href": "https://doi.org/10.1016/j.jhep.2021.12.022"
+  },
+  {
+    "label": "ACG primary hepatic encephalopathy guideline (2026).",
+    "href": "https://doi.org/10.14309/ajg.0000000000003899"
+  },
+  {
+    "label": "AASLD primary HCC surveillance guidance (2023).",
+    "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10663390/"
+  },
+  {
+    "label": "AASLD primary palliative and symptom-management guidance (2022).",
+    "href": "https://doi.org/10.1002/hep.32378"
+  }
+]);

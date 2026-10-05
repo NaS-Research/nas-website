@@ -134,3 +134,51 @@ Object.assign(alcoholAssociatedLiverDiseaseQuestionBank.find((question) => quest
   ],
   "rationale": "Abstinence improves long-term outcomes but does not instantly remove established cirrhosis risks. Care and surveillance should be reassessed from the patient’s clinical state, with recovery support and appropriate referral. Automatic discontinuation leaves unresolved disease unmanaged."
 });
+
+
+// Distinct medication-safety cases retain stable IDs, keys and lesson anchors.
+const verifiedAldCirrhosisQuestions = {
+  "alcohol-associated-liver-disease-105": {
+    "question": "An adult with alcohol-associated cirrhosis, ascites and knee pain plans to start oral ibuprofen without review. Which advice best follows cirrhosis guidance?",
+    "choices": [
+      "Avoid the systemic NSAID and arrange an individualized pain plan, starting with suitable local measures.",
+      "Use ibuprofen because over-the-counter status eliminates renal and bleeding risks.",
+      "Replace ibuprofen with oral naproxen because systemic NSAIDs cannot worsen ascites.",
+      "Assume alcohol abstinence makes any analgesic dose safe."
+    ],
+    "rationale": "Systemic NSAIDs can cause renal injury, bleeding and worsening ascites in cirrhosis; naproxen shares these risks. Local measures are preferred for localized pain when suitable. Over-the-counter availability and abstinence do not remove the safety problem; the clinician should assess the cause and choose patient-specific therapy."
+  },
+  "alcohol-associated-liver-disease-106": {
+    "question": "A cirrhosis pain plan allows at most 2 g/day of acetaminophen from all products. The patient takes 500 mg four times daily plus two 650 mg doses from a cold medicine. What is the total daily amount?",
+    "choices": [
+      "3,300 mg, exceeding the stated plan by 1,300 mg.",
+      "2,000 mg, because combination-product acetaminophen does not count.",
+      "1,300 mg, because only the cold medicine counts.",
+      "5,200 mg, exceeding the stated plan by 3,200 mg."
+    ],
+    "rationale": "The scheduled tablets contribute 500 mg × 4 = 2,000 mg. The cold medicine adds 650 mg × 2 = 1,300 mg, for 3,300 mg total: 1,300 mg above the stated 2,000 mg ceiling. Every product counts. AASLD generally limits acetaminophen to 2 g/day in cirrhosis, with individualized review and lower prescribed limits when appropriate; a calculation does not establish that an excessive exposure is harmless."
+  },
+  "alcohol-associated-liver-disease-107": {
+    "question": "A patient with cirrhotic ascites taking spironolactone and losartan develops new AKI and potassium of 5.8 mEq/L. Which plan is safest?",
+    "choices": [
+      "Arrange prompt clinical review of potassium, kidney function and the medication plan, including potassium-raising and renal-perfusion risks.",
+      "Continue all doses without review because the patient has stopped alcohol use.",
+      "Increase spironolactone solely to preserve the previous ascites plan despite the new potassium value.",
+      "Diagnose HRS-AKI with certainty from this creatinine change and omit review of volume, infection and other causes."
+    ],
+    "rationale": "New AKI and hyperkalemia require prompt assessment, a treatment plan and medication review. The spironolactone label directs dose reduction or discontinuation and treatment of hyperkalemia when it occurs. Spironolactone can raise potassium, especially with impaired kidney function; an ARB is inappropriate to continue automatically in cirrhosis with ascites because of renal-perfusion risk. Current physiology governs adjustment. Abstinence does not neutralize toxicity, and AKI has competing or coexisting causes that must be assessed before assigning HRS-AKI."
+  },
+  "alcohol-associated-liver-disease-108": {
+    "question": "A patient with decompensated cirrhosis and prior HE becomes increasingly drowsy after diazepam is newly prescribed for sleep. No active withdrawal indication is identified. Which response is best?",
+    "choices": [
+      "Promptly assess consciousness, competing precipitants and sedative exposure, and have the treating team reassess the sleep prescription.",
+      "Escalate diazepam because increasing drowsiness proves the liver is recovering.",
+      "Wait for an elevated ammonia result before evaluating the drowsiness or medication.",
+      "Declare that benzodiazepines can never be used for monitored severe alcohol withdrawal in any patient with cirrhosis."
+    ],
+    "rationale": "Benzodiazepines are generally avoided for sleep in decompensated cirrhosis because of sedation, respiratory, cognitive and fall risks. Worsening drowsiness warrants prompt clinical and medication assessment; severe impairment needs urgent airway care. Ammonia alone is not a gate for evaluation. This sleep-use concern does not prohibit carefully monitored benzodiazepines for severe withdrawal or selected comfort care; dependence and withdrawal risk govern any supervised change."
+  }
+};
+for (const item of alcoholAssociatedLiverDiseaseQuestionBank) {
+  if (verifiedAldCirrhosisQuestions[item.id]) Object.assign(item, verifiedAldCirrhosisQuestions[item.id]);
+}
