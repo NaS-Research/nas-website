@@ -734,3 +734,102 @@ cirrhosisDecompensatedLiverDiseaseModule.references.push(...[
     "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d0b7fe9e-7000-4b79-ba3b-291ce92c14f9"
   }
 ]);
+
+// Reconcile the complete hepatic encephalopathy lesson with the book, current guidance and labels.
+Object.assign(cirrhosisDecompensatedLiverDiseaseModule.submodules.find((lesson) => lesson.slug === "encephalopathy"), {
+  "summary": "Diagnose HE clinically, reverse its triggers and protect the airway. Titrate lactulose safely and distinguish rifaximin guidance from its labeled recurrence indication.",
+  "concepts": [
+    "Clinical diagnosis",
+    "West Haven",
+    "Precipitants",
+    "Lactulose",
+    "Rifaximin",
+    "Nutrition"
+  ],
+  "application": "Assess cognition, airway, glucose and triggers; select a safe route, prevent excess diarrhea and plan recurrence prevention with the caregiver.",
+  "keyPoints": [
+    "Grade HE with the examination, not ammonia.",
+    "Correct the precipitant alongside treatment.",
+    "Target 2 to 3 soft stools without dehydration.",
+    "Separate acute rifaximin guidance from labeled recurrence prevention.",
+    "Protect nutrition and plan follow-up."
+  ],
+  "lesson": [
+    {
+      "heading": "Diagnose clinically",
+      "body": "Hepatic encephalopathy is brain dysfunction related to liver impairment or portosystemic shunting. Reduced clearance and shunting allow gut-derived substances, including ammonia, to contribute to cognitive and motor changes. In cirrhosis, the diagnosis requires clinical assessment and exclusion of competing causes. Obtain baseline cognition and the time course from the patient and caregiver; assess attention, orientation, behavior, sleep, consciousness and asterixis. Asterixis alone is not enough to diagnose overt HE and also occurs in other metabolic disorders."
+    },
+    {
+      "heading": "Grade severity and protect the airway",
+      "body": "Covert HE includes minimal HE detected with appropriate cognitive testing and West Haven grade 1. Overt HE is grade 2 or higher: temporal disorientation and lethargy in grade 2, marked confusion and somnolence in grade 3, and coma in grade 4. Grade the clinical examination rather than an ammonia concentration; Glasgow Coma Scale can supplement high-grade assessment. Severe impaired consciousness or aspiration risk requires urgent monitored care and airway assessment. Do not give an unprotected, obtunded patient oral medication simply because lactulose is indicated."
+    },
+    {
+      "heading": "Find precipitants and dangerous mimics",
+      "body": "Check glucose promptly and assess infection, gastrointestinal bleeding, constipation, dehydration or excessive diuresis, kidney dysfunction, electrolyte abnormalities and sedating drugs. Review opioids, benzodiazepines, gabapentinoids, sleep medicines, alcohol and other exposures. Infection, metabolic encephalopathy and HE can coexist. Evaluate new focal deficits, seizures or head trauma urgently for neurological disease; routine brain imaging is not needed for every typical recurrent HE episode without concerning findings. In a hospitalized patient with ascites and suspected infection, diagnostic paracentesis helps detect SBP. Treat the identified cause alongside HE therapy."
+    },
+    {
+      "heading": "Do not chase ammonia",
+      "body": "Ammonia contributes to pathophysiology but is not a stand-alone diagnostic, severity or dosing test for cirrhosis-associated HE. An elevated value does not prove that confusion is HE, and serial values should not determine lactulose escalation. If a measured value is normal, reconsider competing diagnoses rather than automatically excluding HE. Follow the clinical examination, stool frequency and consistency, hydration, electrolytes and precipitant control. Acute liver failure and urea-cycle disorders require their own specialist pathways; the role of ammonia there should not be extrapolated to routine cirrhosis management."
+    },
+    {
+      "heading": "Use lactulose to response",
+      "body": "Lactulose is a poorly absorbed disaccharide whose colonic metabolism acidifies the lumen, favors trapping ammonia as ammonium and promotes its elimination in stool. It is first-line for overt HE and recurrence prevention after an initial episode. For the verified 10 g/15 mL solution, 20 g equals 30 mL and 30 g equals 45 mL. The book and solution label describe 30 to 45 mL three or four times daily, adjusted to response; initial hourly doses may be used for rapid laxation under monitored acute care. ACG 2026 instead describes 10 to 20 g (15 to 30 mL) every 2 hours until two soft stools for acute grade 2 HE. Use the selected clinical protocol and titrate rather than combining the schedules. Reduce that acute schedule after laxation and titrate maintenance to about 2 to 3 soft stools daily, without continuing hourly dosing automatically."
+    },
+    {
+      "heading": "Select a safe administration route",
+      "body": "Route depends on consciousness, airway protection and gastrointestinal access. Severe aspiration risk requires airway management and a supervised enteral or rectal plan. The verified solution label describes an adult retention enema of 300 mL lactulose solution mixed with 700 mL water or normal saline, retained for 30 to 60 minutes and repeated every 4 to 6 hours when indicated. This is a 1,000 mL mixture; a soap or alkaline cleansing enema is not interchangeable. Resume the prescribed oral regimen when safe, with transition overlap according to the label and clinical plan. Do not treat an enteral tube alone as protection against aspiration."
+    },
+    {
+      "heading": "Recognize excess catharsis and product restrictions",
+      "body": "More diarrhea is not better HE control. Excess lactulose can cause dehydration, hypokalemia and hypernatremia, which can themselves precipitate worsening encephalopathy. Reassess dosing and obtain care for profuse diarrhea, weakness, rising sodium, low potassium or inability to maintain intake. Distinguish usual gas or bloating from severe complications. The verified solution contains galactose and is contraindicated when a low-galactose diet is required; confirm the actual product rather than assuming every formulation has identical excipients. Monitor cognition, bowel quality, fluid status and electrolytes."
+    },
+    {
+      "heading": "Add rifaximin for recurrence",
+      "body": "The US Xifaxan label indicates rifaximin 550 mg orally twice daily to reduce overt HE recurrence in adults, with or without food. Lactulose remains first-line outpatient prevention after an initial episode. The 2026 ACG guideline recommends adding rifaximin for recurrent episodes despite lactulose maintenance and also suggests outpatient rifaximin for recurrence prevention. Assess adherence, adequate stool response, medication access and recurrent triggers. Rifaximin does not eliminate the need for lactulose titration, trigger correction or liver follow-up, and the HE schedule differs from the 550 mg three-times-daily 14-day IBS-D regimen."
+    },
+    {
+      "heading": "Separate acute guidance from the labeled indication",
+      "body": "The 2026 ACG guideline conditionally suggests adding rifaximin to lactulose for acute overt HE, with low-certainty evidence. This is a guidance-supported use distinct from the US labeled recurrence-prevention indication; it does not replace stabilization or treatment of precipitants. The book lists a historical acute rifaximin regimen, so do not present that regimen as the only current pathway. High-volume PEG preparations are another conditional inpatient alternative in selected patients, not an instruction to substitute a routine constipation dose at home. The book also lists neomycin and metronidazole; their hearing/kidney toxicity and prolonged-treatment neuropathy concerns make them poor automatic substitutes for the current lactulose/rifaximin pathway."
+    },
+    {
+      "heading": "Review rifaximin safety and interactions",
+      "body": "Rifaximin is contraindicated with hypersensitivity to rifaximin, rifamycin antibiotics or product components. Severe Child-Pugh C impairment increases exposure and requires caution; it is not the same as a blanket labeled contraindication. P-glycoprotein inhibitors such as cyclosporine can further raise exposure. Monitor INR and prothrombin time with warfarin, adjusting warfarin when required. Consider C. difficile when diarrhea is new, persistent or worsening rather than assigning every stool change to lactulose. Stop rifaximin and obtain urgent evaluation for a severe skin reaction or hypersensitivity; the current label includes postmarketing SJS/TEN in cirrhosis."
+    },
+    {
+      "heading": "Protect nutrition and muscle",
+      "body": "Do not routinely restrict protein to treat HE. Muscle loss impairs ammonia handling and worsens frailty. Current ACG guidance targets 1.2 to 1.5 g/kg/day protein in outpatients with HE, with an individualized nutrition plan, adequate intake and a late-night snack. Vegetable and dairy sources may help tolerance; they should not become a reason to underfeed. BCAA supplementation can help when food alone cannot meet protein needs. Zinc is an adjunct to consider for documented low zinc with persistent symptoms despite lactulose and rifaximin, not a replacement for standard therapy or a universal unqualified dose."
+    },
+    {
+      "heading": "Reassess nonresponse and shunts",
+      "body": "Do not wait for a fixed interval if the patient deteriorates. If cognition has not recovered after 48 to 72 hours of adequate therapy and precipitant treatment, reassess missed infection, drugs, electrolyte or renal abnormalities and alternative neurological disease. Persistent or recurrent HE can reflect spontaneous portosystemic shunts or a prior TIPS; specialists may evaluate imaging and selected shunt interventions. For elective TIPS in decompensated cirrhosis, ACG 2026 recommends rifaximin beginning 14 days beforehand and continuing at least 6 months, with or without previous overt HE. This prophylactic guidance has a different population and timing from emergency treatment."
+    },
+    {
+      "heading": "Make the discharge plan usable",
+      "body": "Give patients and caregivers a written plan for lactulose adjustment, soft-stool goals, medication supply, trigger prevention and whom to contact for worsening confusion, bleeding, fever, profuse diarrhea or inability to take medication. Reconcile sedating and unnecessary medicines and arrange liver and nutrition follow-up. Recent overt HE warrants advice to avoid driving; functional safety requires clinical reassessment rather than clearance by an ammonia result. Recurrent or severe HE should prompt timely transplant evaluation, even when the MELD score appears modest. Support caregivers and reassess long-term therapy with the treating team if the liver disease clinically recompensates."
+    }
+  ]
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseModule.submodules.find((lesson) => lesson.slug === "encephalopathy").check, {
+  "question": "A patient taking lactulose has eight watery stools, rising sodium and weakness. Which response is best?",
+  "choices": [
+    "Reassess excess catharsis, reduce the regimen as indicated and address hydration, electrolytes and cognition.",
+    "Continue hourly lactulose indefinitely because more stools always improve HE.",
+    "Escalate lactulose solely to normalize the latest ammonia value.",
+    "Ignore the diarrhea because rifaximin prevents all dehydration-related recurrence."
+  ],
+  "rationale": "Excess catharsis can cause fluid loss, hypernatremia and hypokalemia and precipitate HE. Reassess the patient and dosing promptly; the goal is soft stools with safe hydration and clinical recovery. An ammonia result or concurrent rifaximin does not justify uncorrected diarrhea."
+});
+cirrhosisDecompensatedLiverDiseaseModule.references.push(...[
+  {
+    "label": "ACG 2026 hepatic encephalopathy guideline: diagnosis, treatment and prevention",
+    "href": "https://doi.org/10.14309/ajg.0000000000003899"
+  },
+  {
+    "label": "Lactulose 10 g/15 mL solution: US oral and rectal label",
+    "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a89835c9-8ce5-4627-8d7d-70ff175b2e07"
+  },
+  {
+    "label": "Xifaxan: current US prescribing information and safety",
+    "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c5e8e2fd-7087-4b78-9181-cc259c0be2f1"
+  }
+]);

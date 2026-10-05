@@ -16,8 +16,9 @@ export const cirrhosisDecompensatedVisualTypes = Object.keys(views).map((key) =>
 export default function CirrhosisDecompensatedVisual({ type }) {
   const key = type.replace("cirrhosis-decompensated-", "");
   const labels = views[key] || views["integrated-case"];
-  const reviewed = key === "compensation-portal" || key === "severity-assessment" || key === "ascites-diagnosis" || key === "ascites-treatment" || key === "paracentesis-refractory" || key === "sbp" || key === "hrs-aki" || key === "portal-varices" || key === "acute-bleeding";
+  const reviewed = key === "compensation-portal" || key === "severity-assessment" || key === "ascites-diagnosis" || key === "ascites-treatment" || key === "paracentesis-refractory" || key === "sbp" || key === "hrs-aki" || key === "portal-varices" || key === "acute-bleeding" || key === "encephalopathy";
   const captions = {
+    encephalopathy: "Assess clinical severity and triggers, titrate lactulose safely and plan appropriate rifaximin treatment and recurrence prevention.",
     "portal-varices": "Confirm the portal-prevention indication, assess NSBB tolerance and use the appropriate endoscopic strategy.",
     "acute-bleeding": "Resuscitation, vasoactive treatment, antibiotics and endoscopy form the emergency bundle; persistent bleeding and high-risk cases require TIPS assessment.",
     "hrs-aki": "Assess kidney injury and volume, select treatment for the clinical phenotype, and follow oxygenation, ischemia and transplant needs.",

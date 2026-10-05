@@ -1034,3 +1034,125 @@ Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => 
   ],
   "rationale": "Baveno VII recommends TIPS for recurrent variceal hemorrhage despite NSBB plus EVL. Assess liver and cardiopulmonary risk and the transplant pathway. PPI monotherapy and permanent tamponade do not provide the indicated definitive portal strategy."
 });
+
+// Review complete hepatic encephalopathy cases; preserve stable assessment identities.
+Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => question.id === "cirrhosis-decompensated-085"), {
+  "question": "A patient with cirrhosis develops confusion. Which approach best establishes whether overt HE is responsible?",
+  "choices": [
+    "Assess cognition and competing causes while searching for precipitants.",
+    "Diagnose HE solely from an elevated ammonia value.",
+    "Exclude HE solely because a measured ammonia value is normal.",
+    "Diagnose overt HE from isolated asterixis without altered behavior or alertness."
+  ],
+  "rationale": "HE is a clinical diagnosis in the appropriate setting after evaluating competing causes. Elevated ammonia is not diagnostic; a normal value prompts reconsideration rather than automatic exclusion. Isolated asterixis is insufficient to establish overt HE."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => question.id === "cirrhosis-decompensated-086"), {
+  "question": "A patient with recurrent HE presents with fever, abdominal discomfort and ascites. Which plan is best?",
+  "choices": [
+    "Evaluate infection, including diagnostic paracentesis, and treat HE and the identified trigger.",
+    "Treat constipation alone and defer infection assessment until ammonia normalizes.",
+    "Assume all confusion is caused by lactulose nonadherence without reviewing the history.",
+    "Stop investigation once the ammonia concentration is found to be elevated."
+  ],
+  "rationale": "Infection, including SBP, can precipitate HE and can independently alter mental status. Hospitalized ascites with suspected infection warrants diagnostic paracentesis and appropriate infection care. HE treatment proceeds alongside trigger evaluation; ammonia does not exclude other causes."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => question.id === "cirrhosis-decompensated-087"), {
+  "question": "A confused patient with cirrhosis has a new unilateral arm weakness. Which plan is safest?",
+  "choices": [
+    "Obtain urgent neurological assessment and indicated brain imaging while evaluating HE.",
+    "Attribute the focal deficit to HE and omit neurological evaluation.",
+    "Wait for serial ammonia values before assessing possible stroke or bleeding.",
+    "Treat with lactulose alone until the focal deficit resolves."
+  ],
+  "rationale": "New focal findings suggest a neurological emergency or coexisting disease and require urgent evaluation. Guidance against routine imaging in typical HE without focal findings does not apply here. HE and another disorder can coexist."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => question.id === "cirrhosis-decompensated-088"), {
+  "question": "After 60 hours of adequate HE therapy and initial trigger treatment, a patient remains markedly confused. Which approach is best?",
+  "choices": [
+    "Reassess alternative causes, missed precipitants and possible portosystemic shunts.",
+    "Escalate catharsis indefinitely despite adequate soft stools and falling intake.",
+    "Use persistent ammonia elevation as the only explanation for nonresponse.",
+    "Assume a TIPS history eliminates the need to look for infection."
+  ],
+  "rationale": "The ACG guideline calls for reassessment after 48 to 72 hours of adequate treatment without mental recovery. Missed infection, medications, metabolic problems, neurological disease or shunts may explain persistent symptoms. Deterioration requires immediate assessment rather than waiting for that interval."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => question.id === "cirrhosis-decompensated-089"), {
+  "question": "A prescription calls for 30 g lactulose using a verified 10 g/15 mL oral solution. What volume provides that dose?",
+  "choices": [
+    "45 mL",
+    "15 mL",
+    "30 mL",
+    "90 mL"
+  ],
+  "rationale": "Volume = 30 g × 15 mL ÷ 10 g = 45 mL. Confirm the product, route and prescribed frequency. Maintenance dosing is adjusted to about 2 to 3 soft stools daily and clinical response; this calculation does not authorize continuing an acute hourly schedule."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => question.id === "cirrhosis-decompensated-090"), {
+  "question": "A caregiver asks how to adjust maintenance lactulose after recovery from overt HE. Which instruction is best?",
+  "choices": [
+    "Follow the prescribed plan for about 2 to 3 soft stools daily and report profuse diarrhea, weakness or recurrent confusion.",
+    "Increase the dose until every bowel movement is watery.",
+    "Use the ammonia concentration alone to decide each dose.",
+    "Stop prevention immediately after the first day of normal cognition."
+  ],
+  "rationale": "Stool consistency and frequency, cognition, hydration and electrolytes guide the plan. Excess diarrhea can precipitate dehydration and HE. Recurrence prevention is not automatically stopped after early recovery, and ammonia does not provide a maintenance titration target."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => question.id === "cirrhosis-decompensated-091"), {
+  "question": "An obtunded patient with severe HE cannot swallow safely. Which administration plan is appropriate?",
+  "choices": [
+    "Assess airway protection and use a supervised enteral or labeled rectal lactulose plan as appropriate.",
+    "Force the oral solution despite aspiration risk.",
+    "Assume a nasogastric tube alone prevents aspiration.",
+    "Replace lactulose with a soap cleansing enema because all enemas are equivalent."
+  ],
+  "rationale": "Route selection must account for airway and aspiration risk. Supervised enteral administration or a labeled lactulose retention enema can be selected after assessment; neither an unprotected oral dose nor a tube alone guarantees safety. Soap or alkaline cleansing enemas are not interchangeable."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => question.id === "cirrhosis-decompensated-092"), {
+  "question": "A patient on lactulose has profuse diarrhea, hypernatremia and hypokalemia. Which interpretation is correct?",
+  "choices": [
+    "Excess catharsis can worsen dehydration and precipitate recurrent HE.",
+    "These findings prove that the lactulose dose should always be increased.",
+    "Watery stool guarantees adequate hydration and excludes HE recurrence.",
+    "A normal ammonia value makes electrolyte correction unnecessary."
+  ],
+  "rationale": "The book and lactulose label describe fluid loss, hypernatremia and hypokalemia with excessive dosing. Reassess dosing and correct the clinical problem. Stool output or ammonia cannot establish safe hydration or remove the need for electrolyte care."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => question.id === "cirrhosis-decompensated-093"), {
+  "question": "An adult has recurrent overt HE despite an appropriate lactulose maintenance plan. Which rifaximin schedule matches the US labeled HE indication?",
+  "choices": [
+    "550 mg orally twice daily for recurrence-risk reduction.",
+    "550 mg orally three times daily for a fixed 14-day HE course.",
+    "200 mg orally three times daily for a fixed 3-day HE course.",
+    "400 mg intravenously every 8 hours for labeled adult HE prevention."
+  ],
+  "rationale": "The US HE recurrence-prevention dose is 550 mg orally twice daily. The 550 mg three-times-daily 14-day schedule is for IBS-D and the 200 mg three-times-daily 3-day schedule is for travelers’ diarrhea. Rifaximin is an oral tablet, not the proposed IV regimen."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => question.id === "cirrhosis-decompensated-094"), {
+  "question": "A clinician proposes adding rifaximin to lactulose during acute overt HE. How should the evidence be described?",
+  "choices": [
+    "ACG 2026 conditionally suggests the combination; acute treatment is distinct from the US labeled recurrence-prevention indication.",
+    "The US label approves rifaximin as the sole emergency replacement for stabilization.",
+    "ACG 2026 prohibits rifaximin during every acute HE episode.",
+    "The combination removes the need to assess infection or bleeding."
+  ],
+  "rationale": "ACG 2026 conditionally suggests adding rifaximin for acute overt HE with low-certainty evidence. The US label addresses adult recurrence-risk reduction. The combination does not replace airway assessment, lactulose titration or treatment of precipitants."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => question.id === "cirrhosis-decompensated-095"), {
+  "question": "A patient with Child-Pugh C cirrhosis takes rifaximin and cyclosporine. Which assessment is best?",
+  "choices": [
+    "Recognize increased rifaximin exposure and review the combined risk with the treating team.",
+    "Assume low usual absorption rules out any clinically relevant interaction.",
+    "Describe Child-Pugh C as an absolute rifaximin label contraindication.",
+    "Switch automatically to long-term neomycin without reviewing hearing or kidney risk."
+  ],
+  "rationale": "Severe hepatic impairment increases rifaximin exposure and requires caution; P-glycoprotein inhibition by cyclosporine can further increase exposure. The label does not make Child-Pugh C an absolute contraindication. An automatic long-term neomycin substitution introduces its own substantial toxicity concerns."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => question.id === "cirrhosis-decompensated-096"), {
+  "question": "An adult takes rifaximin with warfarin for separate indications. Which monitoring plan is appropriate?",
+  "choices": [
+    "Monitor INR and prothrombin time and adjust warfarin if required.",
+    "Stop INR monitoring because rifaximin is usually minimally absorbed.",
+    "Double warfarin automatically whenever rifaximin is prescribed.",
+    "Replace INR monitoring with serial ammonia concentrations."
+  ],
+  "rationale": "The rifaximin label reports INR changes with warfarin and recommends INR/prothrombin-time monitoring and warfarin adjustment when needed. There is no universal automatic dose change. Ammonia does not measure anticoagulation intensity."
+});
