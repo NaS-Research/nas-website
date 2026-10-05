@@ -878,3 +878,221 @@ Object.assign(hepatitisCQuestionBank.find((question) => question.id === "hepatit
   ],
   "rationale": "Treating a simplified exclusion as a universal treatment prohibition is the harmful action. The other choices establish an appropriate alternative assessment without assuming eligibility or safety."
 });
+
+// Repair whole HCV mechanisms, cirrhosis and retreatment assessments.
+Object.assign(hepatitisCQuestionBank.find((question) => question.id === "hepatitis-c-025"), {
+  "choices": [
+    "Previr drugs target NS3/4A, asvir drugs target NS5A, and sofosbuvir targets NS5B",
+    "Sofosbuvir is an NS3/4A protease inhibitor",
+    "Pibrentasvir is an NS5B polymerase inhibitor",
+    "Voxilaprevir is an NS5A inhibitor"
+  ],
+  "rationale": "Drug stems help map HCV targets: glecaprevir and voxilaprevir inhibit NS3/4A; pibrentasvir and velpatasvir inhibit NS5A; sofosbuvir inhibits NS5B. Target recognition does not by itself establish regimen eligibility."
+});
+Object.assign(hepatitisCQuestionBank.find((question) => question.id === "hepatitis-c-026"), {
+  "choices": [
+    "Identify each component’s target, then verify the full regimen’s hepatic eligibility and interactions",
+    "Accept sofosbuvir alone as a complete HCV regimen",
+    "Choose two NS5A inhibitors alone because two drug names imply complementary targets",
+    "Treat ritonavir as the HCV-active antiviral in a boosted combination"
+  ],
+  "rationale": "Use target mapping within a recommended, patient-appropriate combination. Sofosbuvir monotherapy and two NS5A drugs alone are incomplete choices; ritonavir boosts paritaprevir exposure in older combinations and is not an HCV-active DAA."
+});
+Object.assign(hepatitisCQuestionBank.find((question) => question.id === "hepatitis-c-027"), {
+  "choices": [
+    "Recognize glecaprevir/pibrentasvir as NS3/4A plus NS5A, and separately assess liver-state safety",
+    "Classify glecaprevir and pibrentasvir as two NS5B inhibitors",
+    "Assume a complementary combination remains appropriate after hepatic decompensation",
+    "Use the previr stem as proof that the regimen fits every liver state"
+  ],
+  "rationale": "Glecaprevir and pibrentasvir have complementary targets, but that does not override Mavyret’s contraindications for Child-Pugh B or C and any prior hepatic decompensation. Mechanism and clinical eligibility are separate checks."
+});
+Object.assign(hepatitisCQuestionBank.find((question) => question.id === "hepatitis-c-028"), {
+  "choices": [
+    "Treat sofosbuvir alone as a complete DAA regimen",
+    "Identify every HCV-active component and target",
+    "Verify a recommended full combination for the patient",
+    "Check hepatic restrictions and interacting medicines"
+  ],
+  "rationale": "Using a single sofosbuvir component as the full HCV regimen is the harmful error. The other actions establish a complete and eligible combination rather than inferring completeness from one active drug."
+});
+Object.assign(hepatitisCQuestionBank.find((question) => question.id === "hepatitis-c-029"), {
+  "choices": [
+    "Recommended DAA combinations pair distinct viral targets, while clinical eligibility still determines whether the regimen can be used",
+    "Any two drugs ending in asvir constitute a complete recommended HCV regimen",
+    "Different drug names always imply different viral targets",
+    "Pangenotypic activity makes hepatic restrictions irrelevant"
+  ],
+  "rationale": "Glecaprevir/pibrentasvir and sofosbuvir/velpatasvir combine different targets. Drug count or distinct names alone cannot establish a recommended regimen; sofosbuvir and dasabuvir both target NS5B, and hepatic restrictions still apply."
+});
+Object.assign(hepatitisCQuestionBank.find((question) => question.id === "hepatitis-c-030"), {
+  "choices": [
+    "Map sofosbuvir/velpatasvir to NS5B plus NS5A, then apply its pathway, genotype and interaction requirements",
+    "Replace velpatasvir with dasabuvir solely because both drug names differ from sofosbuvir",
+    "Remove velpatasvir because sofosbuvir alone is an adequate complete regimen",
+    "Skip genotype-specific requirements whenever a regimen is called pangenotypic"
+  ],
+  "rationale": "Sofosbuvir/velpatasvir combines NS5B and NS5A. Pangenotypic activity does not remove defined genotype checks, liver-state requirements or interaction review, and sofosbuvir plus dasabuvir is not an appropriate substitute complete regimen."
+});
+Object.assign(hepatitisCQuestionBank.find((question) => question.id === "hepatitis-c-031"), {
+  "choices": [
+    "Use a recommended complementary combination and distinguish an HCV-active DAA from a pharmacokinetic booster",
+    "Count ritonavir as the HCV-active DAA that completes sofosbuvir monotherapy",
+    "Assume that adding a second NS5A inhibitor makes every NS5A-only course complete",
+    "Accept any combination with two distinct drug names without reviewing targets or safety"
+  ],
+  "rationale": "A full regimen requires appropriate HCV-active components and patient eligibility. Ritonavir boosts paritaprevir in older combinations; it is not an HCV-active DAA. Neither drug count nor distinct names establish complementary activity or safety."
+});
+Object.assign(hepatitisCQuestionBank.find((question) => question.id === "hepatitis-c-032"), {
+  "choices": [
+    "Replace a recommended combination with two NS5A inhibitors alone",
+    "Identify complementary targets in the complete recommended regimen",
+    "Review prior DAA failure before selecting a combination",
+    "Check the actual regimen’s hepatic restrictions and interactions"
+  ],
+  "rationale": "Substituting two NS5A drugs alone creates an incomplete, unrecommended course. The other choices support appropriate combination selection; complementary targets still do not override contraindications or prior-failure requirements."
+});
+Object.assign(hepatitisCQuestionBank.find((question) => question.id === "hepatitis-c-041"), {
+  "choices": [
+    "Current or prior hepatic decompensation excludes NS3-inhibitor regimens; the exact label distinguishes contraindicated from not recommended",
+    "Child-Pugh B is eligible for Mavyret whenever the renal dose needs no adjustment",
+    "Vosevi becomes appropriate after prior decompensation solely because the current CTP score improves",
+    "A normal bilirubin alone proves that every protease-inhibitor regimen is safe"
+  ],
+  "rationale": "AASLD/IDSA advises against NS3 inhibitors with current or prior decompensation or current CTP score of seven or more. Mavyret contraindicates Child-Pugh B/C or prior decompensation; Vosevi is not recommended in those settings. Renal instructions and one normal result do not override hepatic restrictions."
+});
+Object.assign(hepatitisCQuestionBank.find((question) => question.id === "hepatitis-c-042"), {
+  "choices": [
+    "Calculate current CTP status and review prior ascites, encephalopathy and variceal bleeding before considering an NS3-inhibitor regimen",
+    "Use a normal bilirubin alone to clear every NS3-inhibitor regimen",
+    "Ignore prior ascites once the current CTP score improves",
+    "Apply renal dosing instructions as permission to use Mavyret in Child-Pugh B"
+  ],
+  "rationale": "Current liver state and prior decompensation both matter. Ascites, encephalopathy and variceal bleeding can establish relevant history even after improvement; bilirubin alone and renal dosing instructions cannot clear hepatic contraindications."
+});
+Object.assign(hepatitisCQuestionBank.find((question) => question.id === "hepatitis-c-043"), {
+  "choices": [
+    "Exclude a protease-inhibitor regimen after prior decompensation even when the current score is Child-Pugh A",
+    "Erase prior decompensation from the history when ascites resolves",
+    "Use Vosevi in Child-Pugh C because it contains three antiviral targets",
+    "Infer hepatic safety solely from preserved kidney function"
+  ],
+  "rationale": "A currently improved score does not erase prior hepatic decompensation. Mavyret contraindicates that history, and Vosevi is not recommended with prior decompensation or Child-Pugh B/C; extra targets and renal function do not remove the hepatic restriction."
+});
+Object.assign(hepatitisCQuestionBank.find((question) => question.id === "hepatitis-c-044"), {
+  "choices": [
+    "Start a voxilaprevir-containing regimen in Child-Pugh C cirrhosis",
+    "Review current CTP status and prior decompensation",
+    "Use the decompensated-cirrhosis treatment guidance",
+    "Arrange assessment by an experienced cirrhosis clinician"
+  ],
+  "rationale": "Voxilaprevir is an NS3/4A inhibitor, and Vosevi is not recommended in Child-Pugh C. The other actions establish the appropriate hepatic pathway and expert treatment assessment."
+});
+Object.assign(hepatitisCQuestionBank.find((question) => question.id === "hepatitis-c-089"), {
+  "choices": [
+    "HCV antibody can remain reactive after cure, so RNA is used to detect recurrent viremia",
+    "A reactive antibody after cure alone proves reinfection",
+    "SVR gives permanent immunity against HCV reinfection",
+    "Every recurrent RNA result automatically requires the same salvage regimen"
+  ],
+  "rationale": "Antibody is expected to remain reactive after clearance; RNA assesses recurrent viremia. Assess the prior response and new exposure to distinguish failure from reinfection. Cure does not confer immunity, and confirmed new reinfection follows initial-treatment guidance."
+});
+Object.assign(hepatitisCQuestionBank.find((question) => question.id === "hepatitis-c-090"), {
+  "choices": [
+    "Use RNA after cure and provide prevention services, including at least annual RNA testing with recent injection drug use",
+    "Repeat antibody alone to determine whether reinfection has occurred",
+    "Withhold every DAA solely because injection drug use continues",
+    "Omit RNA follow-up because prior SVR prevents a new infection"
+  ],
+  "rationale": "Guidance recommends at least annual RNA testing after clearance or successful treatment in people who inject drugs with recent use. Offer harm reduction and assess new exposure or clinical concern promptly; active drug use or reinfection concern alone is not a DAA contraindication."
+});
+Object.assign(hepatitisCQuestionBank.find((question) => question.id === "hepatitis-c-091"), {
+  "choices": [
+    "Confirm recurrent viremia with RNA, review the cure and exposure timeline, and use initial-treatment guidance for confirmed new reinfection",
+    "Classify reinfection from persistent antibody reactivity alone",
+    "Assign every recurrence to prior-treatment-failure salvage without reviewing the timeline",
+    "Require abstinence as a universal condition for DAA treatment"
+  ],
+  "rationale": "RNA detects recurrence, while prior response and subsequent exposure help distinguish reinfection from failure. Confirmed new reinfection follows initial-treatment guidance; active or recent drug use alone does not exclude treatment."
+});
+Object.assign(hepatitisCQuestionBank.find((question) => question.id === "hepatitis-c-092"), {
+  "choices": [
+    "Use reactive antibody alone to diagnose reinfection after cure",
+    "Assess recurrent infection with HCV RNA",
+    "Review prior cure and subsequent exposure",
+    "Offer harm reduction and repeat RNA testing when indicated"
+  ],
+  "rationale": "Antibody can remain reactive after cure and cannot diagnose reinfection by itself. RNA, the prior-response/exposure timeline and ongoing prevention services are appropriate actions."
+});
+Object.assign(hepatitisCQuestionBank.find((question) => question.id === "hepatitis-c-093"), {
+  "choices": [
+    "Decompensated cirrhosis needs expert nonprotease treatment, with sofosbuvir/velpatasvir duration determined by ribavirin eligibility and prior failure",
+    "Every decompensated patient receives twelve weeks of sofosbuvir/velpatasvir without ribavirin",
+    "Child-Pugh C permits a voxilaprevir-containing regimen if genotype is known",
+    "Viral cure guarantees resolution of portal hypertension and transplant need"
+  ],
+  "rationale": "AASLD/IDSA recommends twelve weeks of sofosbuvir/velpatasvir plus ribavirin when eligible, or twenty-four weeks without ribavirin when ineligible; prior sofosbuvir/NS5A failure has a separate twenty-four-week plus-ribavirin recommendation. Expert care and continued cirrhosis management remain necessary."
+});
+Object.assign(hepatitisCQuestionBank.find((question) => question.id === "hepatitis-c-094"), {
+  "choices": [
+    "Refer to an experienced cirrhosis clinician and assess CTP status, ribavirin eligibility, anemia, renal function and transplant needs",
+    "Choose the standard simplified pathway despite Child-Pugh C",
+    "Add a protease inhibitor solely to shorten a decompensated-cirrhosis course",
+    "Stop HCC surveillance once RNA becomes undetectable"
+  ],
+  "rationale": "Child-Pugh B/C disease needs expert care, ideally at a transplant center. Ribavirin eligibility and prior failure change treatment; avoid NS3 inhibitors and maintain cirrhosis surveillance after SVR."
+});
+Object.assign(hepatitisCQuestionBank.find((question) => question.id === "hepatitis-c-095"), {
+  "choices": [
+    "Match the decompensated regimen to ribavirin eligibility and prior failure, and continue complication and transplant assessment",
+    "Give every decompensated patient the same twelve-week ribavirin-free course",
+    "Apply the noncirrhotic simplified regimen solely because HCV is curable",
+    "Assume SVR ends the need to manage ascites, encephalopathy and varices"
+  ],
+  "rationale": "The decompensated pathway distinguishes twelve weeks with ribavirin from twenty-four weeks without it and separately addresses prior sofosbuvir/NS5A failure. Cure does not necessarily restore liver function or remove ongoing complication and transplant needs."
+});
+Object.assign(hepatitisCQuestionBank.find((question) => question.id === "hepatitis-c-096"), {
+  "choices": [
+    "Give a glecaprevir-containing regimen to a patient with current Child-Pugh B decompensation",
+    "Assess suitability for an expert-directed nonprotease regimen",
+    "Review anemia, renal function and pregnancy-related risks before ribavirin",
+    "Coordinate continuing cirrhosis care and transplant assessment"
+  ],
+  "rationale": "Mavyret is contraindicated in Child-Pugh B/C and with any prior hepatic decompensation. Expert nonprotease therapy, ribavirin safety assessment and ongoing cirrhosis care are appropriate protective actions."
+});
+Object.assign(hepatitisCQuestionBank.find((question) => question.id === "hepatitis-c-097"), {
+  "choices": [
+    "Prior DAA failure is evaluated by the failed regimen, RNA response, adherence, interactions, genotype and liver state before salvage selection",
+    "Every recurrence after prior treatment is automatically failure of that regimen",
+    "Prior NS5A exposure makes every later NS5A-containing salvage regimen ineffective",
+    "All DAA failures can be managed by blindly repeating the prior course"
+  ],
+  "rationale": "Reconstruct the course and distinguish failure from reinfection. Guidance is categorized by failed regimen; NS5A resistance context may matter, but it does not make all NS5A-containing salvage combinations ineffective or justify blind repetition."
+});
+Object.assign(hepatitisCQuestionBank.find((question) => question.id === "hepatitis-c-098"), {
+  "choices": [
+    "Use the specific failed-regimen guidance and verify liver eligibility before an indicated salvage course",
+    "Prescribe Vosevi for every recurrence regardless of prior regimen or hepatic decompensation",
+    "Use antibody reactivity alone to decide that salvage is required",
+    "Repeat the failed regimen automatically without reviewing response or interactions"
+  ],
+  "rationale": "Salvage depends on prior agents and current and prior liver state. Vosevi has defined adult indications and is not recommended with Child-Pugh B/C or prior decompensation; confirmed new reinfection follows initial-treatment guidance."
+});
+Object.assign(hepatitisCQuestionBank.find((question) => question.id === "hepatitis-c-099"), {
+  "choices": [
+    "Recognize that salvage can require different combinations, ribavirin or duration according to the failed regimen and cirrhosis",
+    "Use a universal twelve-week Vosevi-only course for all treatment failures",
+    "Use a glecaprevir-containing salvage regimen despite prior decompensation",
+    "Assume that a resistance assay is mandatory before every possible salvage regimen"
+  ],
+  "rationale": "Failed-regimen guidance has specific exceptions: genotype 3 with cirrhosis after sofosbuvir-based failure adds ribavirin when appropriate, and glecaprevir/pibrentasvir failure has distinct options. Decompensation changes the pathway; resistance testing is not universally required for every salvage course."
+});
+Object.assign(hepatitisCQuestionBank.find((question) => question.id === "hepatitis-c-100"), {
+  "choices": [
+    "Repeat a failed NS5A-containing course automatically without reviewing the prior regimen and RNA response",
+    "Reconstruct prior agents, adherence, interactions and RNA timing",
+    "Distinguish new reinfection from failure of the original course",
+    "Apply the relevant salvage guidance and hepatic restrictions"
+  ],
+  "rationale": "Blind repetition bypasses the failed-regimen assessment and can select an inappropriate course. Review the prior drugs, response, exposure and liver state, and use the guidance for failure or reinfection as appropriate."
+});

@@ -499,3 +499,147 @@ hepatitisCModule.references.push({
   "label": "Blackard et al.: HCV quasispecies, 2010",
   "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3020841/"
 });
+
+// Reconcile HCV mechanisms, special cirrhosis and retreatment with approved sources.
+Object.assign(hepatitisCModule.submodules.find((lesson) => lesson.slug === "daa-mechanisms").lesson.find((body) => body.heading === "Block protease"), {
+  "heading": "Block protease",
+  "body": "Glecaprevir, grazoprevir and voxilaprevir inhibit HCV NS3/4A protease, which cleaves the viral polyprotein into proteins needed for replication. The previr stem is a target clue, not proof of regimen eligibility. Review current Child-Pugh status and any prior hepatic decompensation before an NS3 inhibitor regimen; a currently improved score does not erase prior decompensation. Identify the full combination rather than treating the protease inhibitor alone as a complete course."
+});
+Object.assign(hepatitisCModule.submodules.find((lesson) => lesson.slug === "daa-mechanisms").lesson.find((body) => body.heading === "Block the replication complex"), {
+  "heading": "Block the replication complex",
+  "body": "Pibrentasvir, velpatasvir and ledipasvir inhibit NS5A, a protein involved in viral RNA replication and assembly. The asvir stem helps distinguish this class from protease and polymerase inhibitors. Prior DAA exposure can select resistance-associated substitutions, especially in NS5A. Reconstruct the failed regimen and use its retreatment guidance; prior NS5A exposure does not mean that all subsequent NS5A-containing combinations are ineffective or that every salvage course requires a resistance assay."
+});
+Object.assign(hepatitisCModule.submodules.find((lesson) => lesson.slug === "daa-mechanisms").lesson.find((body) => body.heading === "Block polymerase"), {
+  "heading": "Block polymerase",
+  "body": "Sofosbuvir is a nucleotide analog NS5B polymerase inhibitor: its active intracellular triphosphate is incorporated into viral RNA and terminates the chain. Dasabuvir is a nonnucleoside NS5B inhibitor, illustrated in older combinations. Both target NS5B; different drug names do not make sofosbuvir plus dasabuvir an appropriate complete regimen. Sofosbuvir is used with other indicated agents, not as HCV monotherapy. In older ritonavir-boosted combinations, ritonavir increases exposure to paritaprevir and is not an HCV-active DAA."
+});
+Object.assign(hepatitisCModule.submodules.find((lesson) => lesson.slug === "daa-mechanisms").lesson.find((body) => body.heading === "Prefer pangenotypic design"), {
+  "heading": "Prefer pangenotypic design",
+  "body": "Glecaprevir/pibrentasvir pairs NS3/4A and NS5A inhibition; sofosbuvir/velpatasvir pairs NS5B and NS5A inhibition. These pangenotypic combinations treat multiple HCV genotypes, but their eligibility, food instructions and duration still differ. Genotype testing remains relevant in defined settings, including the compensated-cirrhosis simplified pathway when sofosbuvir/velpatasvir is selected and in retreatment. Complementary targets do not override contraindications, prior failure or interactions; choose a recommended full regimen for the actual patient."
+});
+Object.assign(hepatitisCModule.submodules.find((lesson) => lesson.slug === "daa-mechanisms"), {
+  "summary": "Map each HCV-active component to NS3/4A, NS5A or NS5B, then confirm that the complete combination fits the patient.",
+  "application": "Explain the distinct targets in a recommended combination, and check liver state, prior treatment and interactions before accepting it.",
+  "keyPoints": [
+    "Previr identifies an NS3/4A protease inhibitor.",
+    "Asvir identifies an NS5A inhibitor.",
+    "Sofosbuvir and dasabuvir both target NS5B.",
+    "Complementary targets still require a safe, recommended regimen."
+  ]
+});
+Object.assign(hepatitisCModule.submodules.find((lesson) => lesson.slug === "daa-mechanisms").check, {
+  "question": "Which listed option combines an NS3/4A inhibitor with an NS5A inhibitor?",
+  "choices": [
+    "Glecaprevir plus pibrentasvir",
+    "Sofosbuvir alone",
+    "Two NS5A inhibitors alone",
+    "Ribavirin alone"
+  ],
+  "answer": 0,
+  "rationale": "Glecaprevir inhibits NS3/4A and pibrentasvir inhibits NS5A. Sofosbuvir targets NS5B; neither a single agent nor two drugs from the same NS5A class constitute this complementary pairing. Regimen eligibility still requires liver-state and interaction review.",
+  "reviewHref": "#daa-mechanisms"
+});
+Object.assign(hepatitisCModule.submodules.find((lesson) => lesson.slug === "cirrhosis-special").lesson.find((body) => body.heading === "Treat compensated disease carefully"), {
+  "heading": "Treat compensated disease carefully",
+  "body": "Treatment-naive adults with Child-Pugh A cirrhosis can use the compensated-cirrhosis simplified pathway only when every eligibility requirement is met. Calculate the current Child-Turcotte-Pugh score, document any prior ascites, encephalopathy or variceal bleeding, and obtain the required laboratory and ultrasound assessment. Genotype-specific testing applies when choosing sofosbuvir/velpatasvir. Prior decompensation requires another pathway even if the current score has improved; a normal bilirubin alone does not establish compensation or exclude cirrhosis."
+});
+Object.assign(hepatitisCModule.submodules.find((lesson) => lesson.slug === "cirrhosis-special").lesson.find((body) => body.heading === "Exclude protease inhibitors"), {
+  "heading": "Exclude protease inhibitors",
+  "body": "Do not use NS3/4A protease-inhibitor regimens such as glecaprevir-, grazoprevir- or voxilaprevir-containing therapy in decompensated cirrhosis. AASLD/IDSA also advises against these regimens with prior decompensation or a current CTP score of seven or more. Product wording matters: Mavyret contraindicates Child-Pugh B or C and any prior hepatic decompensation, while Vosevi is not recommended in those settings. Renal dosing instructions do not override hepatic restrictions. Use the decompensated-cirrhosis guidance and expert care."
+});
+Object.assign(hepatitisCModule.submodules.find((lesson) => lesson.slug === "cirrhosis-special").lesson.find((body) => body.heading === "Use expert decompensated regimens"), {
+  "heading": "Use expert decompensated regimens",
+  "body": "Refer Child-Pugh B or C disease to a clinician experienced in decompensated cirrhosis, ideally at a transplant center. AASLD/IDSA recommends sofosbuvir 400 mg/velpatasvir 100 mg daily with weight-based ribavirin for twelve weeks when ribavirin eligible, or twenty-four weeks without ribavirin when ineligible. For Child-Pugh C, start ribavirin at 600 mg/day and increase as tolerated under expert supervision. Prior sofosbuvir- or NS5A-based failure has a separate twenty-four-week sofosbuvir/velpatasvir-plus-ribavirin recommendation. Review renal function, anemia and pregnancy-related ribavirin risks; these are distinct pathways, not one universal twelve-week course."
+});
+Object.assign(hepatitisCModule.submodules.find((lesson) => lesson.slug === "cirrhosis-special").lesson.find((body) => body.heading === "Maintain surveillance"), {
+  "heading": "Maintain surveillance",
+  "body": "Assess for hepatocellular carcinoma before therapy and continue cirrhosis surveillance after sustained virologic response. Cure does not necessarily resolve portal hypertension, ascites, encephalopathy or transplant need. Continue management of these complications, varices, nutrition and medicine safety alongside antiviral care. Transplant assessment and treatment timing need expert coordination; do not assume that viral clearance guarantees recovery of liver function or permits an NS3 inhibitor after prior decompensation."
+});
+Object.assign(hepatitisCModule.submodules.find((lesson) => lesson.slug === "cirrhosis-special"), {
+  "summary": "Current compensation and any prior decompensation govern hepatic safety. Decompensated disease needs expert care and a regimen matched to ribavirin eligibility and prior failure.",
+  "application": "Document current CTP status and prior decompensation, apply the correct hepatic restriction, and coordinate antiviral treatment with continuing cirrhosis care.",
+  "keyPoints": [
+    "Child-Pugh A requires full simplified-pathway eligibility.",
+    "Current or prior decompensation excludes NS3-inhibitor regimens.",
+    "Ribavirin eligibility and prior failure change the regimen and duration.",
+    "SVR does not end cirrhosis surveillance or transplant assessment."
+  ]
+});
+Object.assign(hepatitisCModule.submodules.find((lesson) => lesson.slug === "cirrhosis-special").check, {
+  "question": "Which listed choice should be avoided in Child-Pugh C cirrhosis?",
+  "choices": [
+    "A voxilaprevir-containing regimen",
+    "Expert-directed sofosbuvir/velpatasvir treatment",
+    "Assessment of ribavirin eligibility and anemia risk",
+    "Transplant-center evaluation"
+  ],
+  "answer": 0,
+  "rationale": "Voxilaprevir is an NS3/4A protease inhibitor, and Vosevi is not recommended in Child-Pugh B or C or with prior hepatic decompensation. Expert-directed nonprotease treatment, ribavirin assessment and transplant evaluation are appropriate parts of care.",
+  "reviewHref": "#cirrhosis-special"
+});
+Object.assign(hepatitisCModule.submodules.find((lesson) => lesson.slug === "retreatment-prevention").lesson.find((body) => body.heading === "Reconstruct the first course"), {
+  "heading": "Reconstruct the first course",
+  "body": "Confirm the RNA result and reconstruct every prior HCV agent, duration, start and stop date, missed doses, interruption, food instructions, acid suppression and other interacting medicines. Review genotype, fibrosis, current and prior hepatic decompensation, and the timing of RNA responses, documented cure and subsequent exposures. Recurrent viremia can represent relapse or reinfection; reactive antibody alone cannot distinguish them. A new reinfection after cure follows initial-treatment guidance rather than automatically becoming a prior-DAA-failure salvage case."
+});
+Object.assign(hepatitisCModule.submodules.find((lesson) => lesson.slug === "retreatment-prevention").lesson.find((body) => body.heading === "Use current salvage guidance"), {
+  "heading": "Use current salvage guidance",
+  "body": "Vosevi contains sofosbuvir 400 mg, velpatasvir 100 mg and voxilaprevir 100 mg in one daily tablet taken with food. Its twelve-week adult label covers genotype 1 through 6 after an NS5A-containing regimen, or genotype 1a or 3 after sofosbuvir without an NS5A inhibitor, without cirrhosis or with Child-Pugh A cirrhosis. AASLD/IDSA recommendations are categorized by the failed regimen and may add ribavirin or use another combination. For example, genotype 3 with cirrhosis after sofosbuvir-based failure adds weight-based ribavirin unless contraindicated. Vosevi is not recommended with Child-Pugh B or C or any prior hepatic decompensation."
+});
+Object.assign(hepatitisCModule.submodules.find((lesson) => lesson.slug === "retreatment-prevention").lesson.find((body) => body.heading === "Do not repeat blindly"), {
+  "heading": "Do not repeat blindly",
+  "body": "Use the specific failed-regimen guidance rather than automatically repeating the same course or assigning Vosevi to every recurrence. After glecaprevir/pibrentasvir failure without decompensation, guidance includes glecaprevir/pibrentasvir plus sofosbuvir and weight-based ribavirin for sixteen weeks, or sofosbuvir/velpatasvir/voxilaprevir for twelve weeks; the latter adds ribavirin with compensated cirrhosis. Resistance context can matter, especially after multiple DAA failures, but a resistance assay is not universally required for every salvage regimen. Seek expert assessment for complex failure, decompensation, contraindications or uncertain duration."
+});
+Object.assign(hepatitisCModule.submodules.find((lesson) => lesson.slug === "retreatment-prevention").lesson.find((body) => body.heading === "Prevent reinfection"), {
+  "heading": "Prevent reinfection",
+  "body": "Use HCV RNA to assess reinfection after clearance because antibody is expected to remain reactive. Guidance recommends at least annual RNA testing after clearance or successful treatment in people who inject drugs with recent injection use, with earlier assessment when new exposure or clinical concern warrants it. Offer sterile injection equipment, syringe services, medications for opioid use disorder, naloxone and safer-sex counseling; vaccinate against HAV and HBV when susceptible. Active or recent drug use or concern about reinfection is not a contraindication to DAA treatment. Treat confirmed reinfection through the appropriate initial-treatment pathway."
+});
+Object.assign(hepatitisCModule.submodules.find((lesson) => lesson.slug === "retreatment-prevention"), {
+  "summary": "Recurrent viremia needs an RNA-based assessment of prior response and new exposure. Salvage after DAA failure and treatment of reinfection follow different guidance.",
+  "application": "Build the treatment and RNA-response timeline, distinguish failure from reinfection, and match therapy to the relevant guidance while providing prevention services.",
+  "keyPoints": [
+    "Reconstruct agents, interactions, adherence and RNA response.",
+    "Salvage recommendations depend on the failed regimen and liver state.",
+    "Reinfection after cure uses initial-treatment guidance.",
+    "RNA testing and harm reduction continue; drug use alone does not exclude treatment."
+  ]
+});
+Object.assign(hepatitisCModule.submodules.find((lesson) => lesson.slug === "retreatment-prevention").check, {
+  "question": "What is the appropriate first assessment after RNA-confirmed recurrence following a DAA course?",
+  "choices": [
+    "Review prior agents, adherence, interactions, liver state, RNA response and subsequent exposure",
+    "Repeat the same regimen automatically",
+    "Use reactive antibody alone to classify relapse versus reinfection",
+    "Stop follow-up because a DAA course was completed"
+  ],
+  "answer": 0,
+  "rationale": "Reconstruct the prior course and RNA-response timeline, and assess new exposure and liver state. Failure and reinfection require different pathways; reactive antibody can persist after cure and cannot classify recurrence. Do not repeat a course or abandon follow-up without that assessment.",
+  "reviewHref": "#retreatment-prevention"
+});
+hepatitisCModule.references.push({
+  "label": "AASLD/IDSA: decompensated cirrhosis",
+  "href": "https://www.hcvguidelines.org/guidance/patients-with-decompensated-cirrhosis/"
+});
+hepatitisCModule.references.push({
+  "label": "AASLD/IDSA: retreatment after prior therapy failure",
+  "href": "https://www.hcvguidelines.org/guidance/retreatment-of-persons-in-whom-prior-therapy-failed/"
+});
+hepatitisCModule.references.push({
+  "label": "AASLD/IDSA: sofosbuvir-based treatment failures",
+  "href": "https://www.hcvguidelines.org/guidance/sofosbuvir-based-and-elbasvir-grazoprevir-treatment-failures/"
+});
+hepatitisCModule.references.push({
+  "label": "AASLD/IDSA: glecaprevir/pibrentasvir treatment failures",
+  "href": "https://www.hcvguidelines.org/guidance/glecaprevir-pibrentasvir-treatment-failures/"
+});
+hepatitisCModule.references.push({
+  "label": "AASLD/IDSA: HCV care for people who inject drugs",
+  "href": "https://www.hcvguidelines.org/guidance/key-populations-identification-and-management-of-hcv-in-people-who-inject-drugs/"
+});
+hepatitisCModule.references.push({
+  "label": "Viekira Pak: archived FDA label, mechanism section (2019)",
+  "href": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2019/206619s020lbl.pdf"
+});
+Object.assign(hepatitisCModule.references.find((reference) => reference.href === "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=17ffc094-8ca7-45d2-80d8-fd043bc9a221&type=display"), {
+  "label": "Vosevi: U.S. label revised November 2019",
+  "href": "https://www.gilead.com/-/media/files/pdfs/medicines/liver-disease/vosevi/vosevi_pi.pdf"
+});

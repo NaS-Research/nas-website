@@ -2,14 +2,14 @@ const views = {
   "virus-natural-history": ["RNA", "NS5B", "Fibrosis", "Cirrhosis"],
   "screening-diagnosis": ["Antibody", "RNA", "Viremia", "Linkage"],
   "fibrosis-eligibility": ["FIB-4", "Stiffness", "CTP", "Pathway"],
-  "daa-mechanisms": ["NS3/4A", "NS5A", "NS5B", "Pangenotypic"],
+  "daa-mechanisms": ["NS3/4A", "NS5A", "NS5B", "Combine"],
   "initial-regimens": ["Mavyret", "Epclusa", "Food", "Duration"],
   "pretreatment-safety": ["Medicines", "HBV", "HIV", "Pregnancy"],
   "interaction-engineering": ["Acid", "Inducers", "Statins", "Amiodarone"],
   "monitoring-delivery": ["Adherence", "Glucose", "INR", "Liver injury"],
   "svr-follow-up": ["RNA timing", "Cure test", "Cure", "Reinfection"],
-  "cirrhosis-special": ["Compensated", "Decompensated", "HCC", "Transplant"],
-  "retreatment-prevention": ["Prior DAA", "Resistance", "Salvage", "Harm reduction"],
+  "cirrhosis-special": ["CTP A", "CTP B/C", "HCC", "Referral"],
+  "retreatment-prevention": ["Prior DAA", "RAS", "Salvage", "Prevent"],
   "integrated-case": ["Diagnose", "Stage", "Treat", "Cure test"],
 };
 export const hepatitisCVisualTypes = Object.keys(views).map((key) => `hepatitis-c-${key}`);
@@ -17,6 +17,9 @@ export default function HepatitisCVisual({ type }) {
   const key = type.replace("hepatitis-c-", "");
   const labels = views[key] || views["integrated-case"];
   const reviewedCaptions = {
+    "daa-mechanisms": "Map complementary viral targets and verify the complete regimen’s eligibility.",
+    "cirrhosis-special": "Use current and prior liver state to guide therapy and continuing cirrhosis care.",
+    "retreatment-prevention": "Review prior response, distinguish reinfection, and pair therapy with prevention.",
     "virus-natural-history": "Connect the RNA virus and replication targets with progressive liver injury.",
     "screening-diagnosis": "Use RNA to identify current viremia and link the result to care.",
     "fibrosis-eligibility": "Integrate fibrosis evidence and compensation before choosing the pathway.",
