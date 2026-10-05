@@ -1,0 +1,1368 @@
+{
+  "updated": "2026-10-05T01:36:25.380178+00:00",
+  "unit": "enteral-nutrition:broader-icu-approved2024stress-ulcer-guidance",
+  "status": "Approved2024scoped content verified;full lesson/parent/EN/chapters reviewing",
+  "baseCommit": "32acd9bcbe008bc3cba7f66bebe4d3f8a0db4207",
+  "sourceAuthorization": {
+    "directApproval": "I give approval",
+    "approvalRecord": "sequential-resume.json approvedAdultAdrenalAndIcuGuidelineException",
+    "approvedSource": "2024SCCM/ASHPstress-ulcer guidance",
+    "additional2026SourceQuestionPending": true,
+    "pendingSourceNames": [
+      "2026Saudi/Nordicstress-ulcer guideline",
+      "2026Surviving Sepsis Campaign"
+    ],
+    "noGeneralOutsideSourcePermissionInferred": true
+  },
+  "sourceReview": {
+    "primarySource": {
+      "name": "SCCM/ASHP prevention of stress-related upper gastrointestinal bleeding guideline (2024)",
+      "url": "https://sccm.org/clinical-resources/guidelines/guidelines/sccm-ashp-guideline-prevention-of-ugib",
+      "published": "2024-07-15",
+      "doi": "10.1097/CCM.0000000000006330",
+      "completeOfficialRecommendationsAndRemarksRead": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "all13OriginalHtmlCardsRenderedAndVisuallyInspected": true,
+      "htmlSha256": "afafe8dff109fee3d216aed4138488119016d5227bb695a08997c166cdabe176",
+      "sourceBoundary": "Official complete recommendation/remark table supports adopted scope directly. Publisher full journal article returned402; underlying article evidence sections and additional article tables not read or claimed. No secondary source used to replace them. Historic ranitidine/sucralfate dose categories read but not adopted as current product/first-line advice."
+    },
+    "privateBook": {
+      "identity": "Cover-verifiedRxPrep2023,1032pages",
+      "pdfPagesTextReadAndImagesViewed": [
+        726,
+        913,
+        914,
+        915
+      ],
+      "printedFootersFullyRead": [
+        718,
+        905
+      ],
+      "inferredPrintedPages": [
+        903,
+        904
+      ],
+      "paginationNote": "PDF913/914printed903/904 inferred between source chapter/table and clear905footer; edge-cropped digits not treated as fully read. Chapter72whole boundaries not verified.",
+      "completeAdoptedScopes": "Stress-ulcer risk box and monitoring paragraph; GERD treatment algorithm; H2RA/PPI administration/product/formulation tables; maintenance/risk text. Unrelated anesthetic/antacid material read for page context but not adopted by this unit.",
+      "privateSourceFilesOutsideGit": true
+    },
+    "priorEvidence": "enteral-nutrition-broader-adrenal-perioperative-review.json"
+  },
+  "sourceReconciliation": [
+    {
+      "issue": "Book lists ventilation>48hours and broaderhistoricalrisks; newer retained lesson compares2024/2026sources",
+      "resolution": "Book risk box read in full. Approved2024risk/dose/fed/neuro/route/stopping scope verified. Complete2026comparison retained unchanged and pending authorization rather than silently removing source scope."
+    },
+    {
+      "issue": "Fed/neuro teaching and rationales could conceal recommendation uncertainty",
+      "resolution": "Conditional recommendations and very-lowcertainty explicit; possible pneumonia risk qualified, no individual causation inferred."
+    },
+    {
+      "issue": "Agent/route statement could imply unqualified equivalence or dual therapy",
+      "resolution": "Moderatecertaintyfirst-linePPIorH2RA and lowcertaintyenteral/IV distinguished; routine combination is not a guideline recommendation."
+    },
+    {
+      "issue": "Stopping ICU prevention could stop justified acid treatment",
+      "resolution": "Independent indication and benefit/interaction/route review retained; before-transfer prevention review explicit."
+    },
+    {
+      "issue": "Preventive40mg category could be treated as a universal or activebleeding prescription",
+      "resolution": "All four alternatives independently compared with≤40mgdailycategory; treatment/product/patient boundaries retained."
+    }
+  ],
+  "questionReview": [
+    {
+      "id": "periop-sup-fed-risk",
+      "before": {
+        "id": "periop-sup-fed-risk",
+        "question": "An enterally fed ICU patient still has significant coagulopathy. Does feeding alone justify stopping stress-ulcer prophylaxis?",
+        "choices": [
+          "Yes; feeding removes bleeding risk",
+          "No; reassess the persistent risk and continue appropriate prophylaxis",
+          "Yes; replace the PPI with no preventive therapy regardless of risk",
+          "No; add an H2RA to every PPI"
+        ],
+        "answer": 1,
+        "rationale": "Feeding reduces risk but does not erase coagulopathy. Guidance supports prophylaxis in fed adults who remain at risk.",
+        "reviewHref": "#perioperative-stress-ulcer",
+        "difficulty": "clinical"
+      },
+      "after": {
+        "id": "periop-sup-fed-risk",
+        "question": "An enterally fed ICU patient still has significant coagulopathy. Does feeding alone justify stopping stress-ulcer prophylaxis?",
+        "choices": [
+          "Yes; feeding removes bleeding risk",
+          "No; reassess the persistent risk and continue appropriate prophylaxis",
+          "Yes; replace the PPI with no preventive therapy regardless of risk",
+          "No; add an H2RA to every PPI"
+        ],
+        "answer": 1,
+        "rationale": "No. Coagulopathy remains a guideline-recognized bleeding risk despite enteral feeding. SCCM/ASHP conditionally suggests prophylaxis for fed critically ill adults who retain risk factors, with very low-certainty evidence. Reassess the actual risk and use an appropriate low-dose agent; feeding alone does not justify stopping, and the recommendation does not require adding an H2RA to every PPI.",
+        "reviewHref": "#perioperative-stress-ulcer",
+        "difficulty": "clinical"
+      },
+      "wholeStemAllAlternativesKeyExplanationAndAnchorVerified": true,
+      "officialRecommendationCardNumbers": [
+        1,
+        2,
+        6,
+        7,
+        8,
+        10
+      ],
+      "privateBookSupport": "PDF726and914/915class/formulationboundaries;new2024claim supported by approvedprimarysource",
+      "newlyCounted": true
+    },
+    {
+      "id": "periop-sup-neuro",
+      "before": {
+        "id": "periop-sup-neuro",
+        "question": "How should the 2024 SCCM/ASHP recommendation for neurocritical-care adults be represented?",
+        "choices": [
+          "A strong recommendation based on high-certainty evidence",
+          "A prohibition on acid suppression",
+          "A suggestion to use prophylaxis, supported by very low-certainty evidence",
+          "Proof that all neurologic outpatients need a PPI"
+        ],
+        "answer": 2,
+        "rationale": "The recommendation is conditional and the evidence is very uncertain; its population is neurocritical-care adults.",
+        "reviewHref": "#perioperative-stress-ulcer",
+        "difficulty": "clinical"
+      },
+      "after": {
+        "id": "periop-sup-neuro",
+        "question": "How should the 2024 SCCM/ASHP recommendation for neurocritical-care adults be represented?",
+        "choices": [
+          "A strong recommendation based on high-certainty evidence",
+          "A prohibition on acid suppression",
+          "A suggestion to use prophylaxis, supported by very low-certainty evidence",
+          "Proof that all neurologic outpatients need a PPI"
+        ],
+        "answer": 2,
+        "rationale": "SCCM/ASHP conditionally suggests prophylaxis for neurocritical-care adults compared with no prophylaxis, with very low-certainty evidence. This is neither a strong high-certainty recommendation nor a prohibition. Its ICU population does not establish routine PPI treatment for every neurologic outpatient.",
+        "reviewHref": "#perioperative-stress-ulcer",
+        "difficulty": "clinical"
+      },
+      "wholeStemAllAlternativesKeyExplanationAndAnchorVerified": true,
+      "officialRecommendationCardNumbers": [
+        5
+      ],
+      "privateBookSupport": "PDF726and914/915class/formulationboundaries;new2024claim supported by approvedprimarysource",
+      "newlyCounted": true
+    },
+    {
+      "id": "periop-sup-dose",
+      "before": {
+        "id": "periop-sup-dose",
+        "question": "Which pantoprazole daily total falls within the SCCM/ASHP low-dose category for stress-ulcer prophylaxis?",
+        "choices": [
+          "40 mg",
+          "80 mg",
+          "120 mg",
+          "192 mg"
+        ],
+        "answer": 0,
+        "rationale": "The guideline defines this category as no more than 40 mg daily. An active bleeding regimen addresses a different indication.",
+        "reviewHref": "#perioperative-stress-ulcer",
+        "difficulty": "clinical"
+      },
+      "after": {
+        "id": "periop-sup-dose",
+        "question": "Which pantoprazole daily total falls within the SCCM/ASHP low-dose category for stress-ulcer prophylaxis?",
+        "choices": [
+          "40 mg",
+          "80 mg",
+          "120 mg",
+          "192 mg"
+        ],
+        "answer": 0,
+        "rationale": "The low-dose category permits a pantoprazole daily total of no more than 40 mg. Thus 40 mg meets the category; 80, 120 and 192 mg exceed it. This preventive ceiling is not a universal prescription or an active gastrointestinal bleeding regimen. Verify the patient, indication and actual product before selecting treatment.",
+        "reviewHref": "#perioperative-stress-ulcer",
+        "difficulty": "clinical"
+      },
+      "wholeStemAllAlternativesKeyExplanationAndAnchorVerified": true,
+      "officialRecommendationCardNumbers": [
+        10
+      ],
+      "privateBookSupport": "PDF726and914/915class/formulationboundaries;new2024claim supported by approvedprimarysource",
+      "newlyCounted": true
+    },
+    {
+      "id": "periop-sup-reconcile",
+      "before": {
+        "id": "periop-sup-reconcile",
+        "question": "An ICU patient no longer has stress-ulcer risk factors but was taking a PPI for documented erosive esophagitis before admission. What is the best reconciliation?",
+        "choices": [
+          "Stop every acid-suppressive medicine at ICU transfer",
+          "Add famotidine to replace the treatment indication",
+          "Continue ICU prophylaxis indefinitely without a diagnosis",
+          "Review and retain therapy appropriate for the independent esophageal indication"
+        ],
+        "answer": 3,
+        "rationale": "Stopping unnecessary prophylaxis does not mean stopping justified treatment of another condition.",
+        "reviewHref": "#perioperative-stress-ulcer",
+        "difficulty": "clinical"
+      },
+      "after": {
+        "id": "periop-sup-reconcile",
+        "question": "An ICU patient no longer has stress-ulcer risk factors but was taking a PPI for documented erosive esophagitis before admission. What is the best reconciliation?",
+        "choices": [
+          "Stop every acid-suppressive medicine at ICU transfer",
+          "Add famotidine to replace the treatment indication",
+          "Continue ICU prophylaxis indefinitely without a diagnosis",
+          "Review and retain therapy appropriate for the independent esophageal indication"
+        ],
+        "answer": 3,
+        "rationale": "Review and retain treatment appropriate for documented erosive esophagitis while reassessing the regimen. SCCM/ASHP distinguishes the pre-ICU acid-treatment indication from temporary stress-ulcer prophylaxis; the book also describes PPI treatment to heal erosions and regular review of maintenance need. Do not automatically stop justified therapy at transfer, add famotidine without a reason or continue undocumented ICU prophylaxis indefinitely.",
+        "reviewHref": "#perioperative-stress-ulcer",
+        "difficulty": "clinical"
+      },
+      "wholeStemAllAlternativesKeyExplanationAndAnchorVerified": true,
+      "officialRecommendationCardNumbers": [
+        11,
+        12,
+        13
+      ],
+      "privateBookSupport": "PDF913/914erosionhealing/maintenance",
+      "newlyCounted": false
+    },
+    {
+      "id": "periop-sup-route",
+      "before": {
+        "id": "periop-sup-route",
+        "question": "A high-risk ICU patient cannot receive enteral medication and has no class-specific contraindication. Which plan fits SCCM/ASHP guidance?",
+        "choices": [
+          "Defer prophylaxis until oral intake resumes",
+          "Use a high-dose infusion solely because the patient is in the ICU",
+          "Use an appropriate low-dose IV PPI or H2RA with daily reassessment",
+          "Use both drug classes routinely"
+        ],
+        "answer": 2,
+        "rationale": "IV therapy is acceptable when indicated and enteral delivery is impractical. Organ function, interactions and the indication guide selection.",
+        "reviewHref": "#perioperative-stress-ulcer",
+        "difficulty": "clinical"
+      },
+      "after": {
+        "id": "periop-sup-route",
+        "question": "A high-risk ICU patient cannot receive enteral medication and has no class-specific contraindication. Which plan fits SCCM/ASHP guidance?",
+        "choices": [
+          "Defer prophylaxis until oral intake resumes",
+          "Use a high-dose infusion solely because the patient is in the ICU",
+          "Use an appropriate low-dose IV PPI or H2RA with daily reassessment",
+          "Use both drug classes routinely"
+        ],
+        "answer": 2,
+        "rationale": "SCCM/ASHP conditionally accepts either enteral or IV prophylaxis in at-risk critically ill adults, with low-certainty evidence. When enteral delivery is impractical, an appropriate low-dose IV agent can be used after checking organ function, interactions and the indication. The route does not itself justify delaying indicated prevention, increasing the preventive dose or combining both drug classes routinely.",
+        "reviewHref": "#perioperative-stress-ulcer",
+        "difficulty": "clinical"
+      },
+      "wholeStemAllAlternativesKeyExplanationAndAnchorVerified": true,
+      "officialRecommendationCardNumbers": [
+        4,
+        8,
+        9,
+        10,
+        11,
+        13
+      ],
+      "privateBookSupport": "PDF726and914/915class/formulationboundaries;new2024claim supported by approvedprimarysource",
+      "newlyCounted": true
+    }
+  ],
+  "bodyReview": [
+    {
+      "heading": "Choose a low-dose preventive regimen",
+      "finalBody": "For critically ill adults with bleeding risk factors, the 2024 SCCM/ASHP guideline conditionally suggests either a proton pump inhibitor or a histamine-2 receptor antagonist as first-line prophylaxis, with moderate-certainty evidence. It also accepts enteral or intravenous delivery, with low-certainty evidence. Choose one appropriate low-dose agent and route after checking organ function, interactions, enteral access and the original indication; these recommendations do not call for routine combined PPI and H2RA therapy.",
+      "wholeBodyVerified": true,
+      "sourceScope": [
+        4,
+        8,
+        9,
+        10,
+        12,
+        13
+      ],
+      "newlyVerified": true
+    },
+    {
+      "heading": "Define low dose and distinguish active bleeding",
+      "finalBody": "SCCM/ASHP defines low-dose daily totals as at most 40 mg for pantoprazole, omeprazole or esomeprazole; 30 mg for lansoprazole; and 40 mg for famotidine. These are preventive dose categories, not a universal prescription: renal function and product-specific administration still matter. Active gastrointestinal bleeding requires its own evaluation and treatment pathway.",
+      "wholeBodyVerified": true,
+      "sourceScope": [
+        10
+      ],
+      "newlyVerified": true
+    },
+    {
+      "heading": "Account for feeding and neurologic illness",
+      "finalBody": "Enteral nutrition probably reduces clinically important stress-related upper gastrointestinal bleeding, but feeding does not remove persistent risk such as coagulopathy. SCCM/ASHP conditionally suggests prophylaxis for fed adults who remain at risk and separately for neurocritical-care adults; both recommendations have very low-certainty evidence. It suggests avoiding prophylaxis in low-risk, fed adults, also with very low certainty, and notes that concurrent prophylaxis and feeding may increase pneumonia risk. Keep population, bleeding risk and uncertainty explicit.",
+      "wholeBodyVerified": true,
+      "sourceScope": [
+        1,
+        2,
+        5,
+        6,
+        7
+      ],
+      "newlyVerified": true
+    },
+    {
+      "heading": "Monitor the selected acid-suppressive treatment",
+      "finalBody": "The book describes thrombocytopenia and mental-status changes with H2 receptor antagonists, particularly in older patients or those with renal impairment, and notes that tolerance to their effect can occur. Its PPI tables list C. difficile-associated diarrhea and other adverse effects; fracture warnings concern high doses or prolonged exposure. Review new symptoms, renal function and the continuing indication. Reported associations with infection or pneumonia do not establish that acid suppression caused an individual patient's illness.",
+      "wholeBodyVerified": true,
+      "sourceScope": "RxPrepPDF726/914/915;SCCMremark7for qualified pneumonia possibility",
+      "newlyVerified": false
+    },
+    {
+      "heading": "Preserve an independent treatment indication",
+      "finalBody": "A PPI used before ICU admission may be treating recent upper gastrointestinal bleeding, erosive esophagitis, a hypersecretory condition or H. pylori eradication. Reconcile that independent indication before stopping it, weighing benefit, adverse effects, interactions and the available route. If the history is unclear, clarify it instead of assuming the drug was started solely for ICU prophylaxis. Resolution of stress-ulcer risk alone does not establish that the other treatment should end.",
+      "wholeBodyVerified": true,
+      "sourceScope": [
+        11,
+        12,
+        13
+      ],
+      "newlyVerified": true
+    },
+    {
+      "heading": "Stop when the reason ends",
+      "finalBody": "Assess the indication daily and discontinue stress-ulcer prophylaxis when its risk factors are no longer present. SCCM/ASHP specifically calls for review and discontinuation of unnecessary prophylaxis before transfer out of the ICU to prevent inappropriate continuation. Its suggestion against prophylaxis in low-risk, enterally fed adults has very low-certainty evidence. Reconcile any separate acid-treatment indication so that a prophylaxis stop rule does not remove justified treatment.",
+      "wholeBodyVerified": true,
+      "sourceScope": [
+        7,
+        11,
+        12
+      ],
+      "newlyVerified": true
+    }
+  ],
+  "embeddedCheckReview": {
+    "finalQuestion": {
+      "question": "An extubated, stable, enterally fed ICU patient has no neurologic critical illness, coagulopathy, shock, chronic liver disease, or separate acid indication. What is the best action?",
+      "choices": [
+        "Discontinue routine stress-ulcer prophylaxis",
+        "Continue lifelong prophylaxis because the patient was ventilated",
+        "Double the acid-suppressive dose",
+        "Combine a PPI and H2RA"
+      ],
+      "answer": 0,
+      "rationale": "This low-risk, enterally fed patient has no remaining stated bleeding risk or independent acid-treatment indication. SCCM/ASHP conditionally suggests avoiding prophylaxis in this population, with very low-certainty evidence, and calls for stopping it when risk factors resolve. Prior ventilation does not justify lifelong treatment, a higher dose or routine combined PPI and H2RA therapy. Reassess if the clinical risk changes.",
+      "reviewHref": "#perioperative-stress-ulcer"
+    },
+    "wholeStemAlternativesKeyRationaleAnchorVerified": true,
+    "sourceRecommendationCards": [
+      1,
+      5,
+      7,
+      8,
+      10,
+      11,
+      12
+    ]
+  },
+  "figureReview": {
+    "unchanged": true,
+    "whole11TextItemsAndSourceMeaningVerified": true,
+    "sourceRecommendationCards": [
+      1,
+      4,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "exactDomComparedAndDesktopMobileInspected": true
+  },
+  "changes": {
+    "questions": {
+      "periop-sup-fed-risk": {
+        "before": {
+          "id": "periop-sup-fed-risk",
+          "question": "An enterally fed ICU patient still has significant coagulopathy. Does feeding alone justify stopping stress-ulcer prophylaxis?",
+          "choices": [
+            "Yes; feeding removes bleeding risk",
+            "No; reassess the persistent risk and continue appropriate prophylaxis",
+            "Yes; replace the PPI with no preventive therapy regardless of risk",
+            "No; add an H2RA to every PPI"
+          ],
+          "answer": 1,
+          "rationale": "Feeding reduces risk but does not erase coagulopathy. Guidance supports prophylaxis in fed adults who remain at risk.",
+          "reviewHref": "#perioperative-stress-ulcer",
+          "difficulty": "clinical"
+        },
+        "after": {
+          "id": "periop-sup-fed-risk",
+          "question": "An enterally fed ICU patient still has significant coagulopathy. Does feeding alone justify stopping stress-ulcer prophylaxis?",
+          "choices": [
+            "Yes; feeding removes bleeding risk",
+            "No; reassess the persistent risk and continue appropriate prophylaxis",
+            "Yes; replace the PPI with no preventive therapy regardless of risk",
+            "No; add an H2RA to every PPI"
+          ],
+          "answer": 1,
+          "rationale": "No. Coagulopathy remains a guideline-recognized bleeding risk despite enteral feeding. SCCM/ASHP conditionally suggests prophylaxis for fed critically ill adults who retain risk factors, with very low-certainty evidence. Reassess the actual risk and use an appropriate low-dose agent; feeding alone does not justify stopping, and the recommendation does not require adding an H2RA to every PPI.",
+          "reviewHref": "#perioperative-stress-ulcer",
+          "difficulty": "clinical"
+        }
+      },
+      "periop-sup-neuro": {
+        "before": {
+          "id": "periop-sup-neuro",
+          "question": "How should the 2024 SCCM/ASHP recommendation for neurocritical-care adults be represented?",
+          "choices": [
+            "A strong recommendation based on high-certainty evidence",
+            "A prohibition on acid suppression",
+            "A suggestion to use prophylaxis, supported by very low-certainty evidence",
+            "Proof that all neurologic outpatients need a PPI"
+          ],
+          "answer": 2,
+          "rationale": "The recommendation is conditional and the evidence is very uncertain; its population is neurocritical-care adults.",
+          "reviewHref": "#perioperative-stress-ulcer",
+          "difficulty": "clinical"
+        },
+        "after": {
+          "id": "periop-sup-neuro",
+          "question": "How should the 2024 SCCM/ASHP recommendation for neurocritical-care adults be represented?",
+          "choices": [
+            "A strong recommendation based on high-certainty evidence",
+            "A prohibition on acid suppression",
+            "A suggestion to use prophylaxis, supported by very low-certainty evidence",
+            "Proof that all neurologic outpatients need a PPI"
+          ],
+          "answer": 2,
+          "rationale": "SCCM/ASHP conditionally suggests prophylaxis for neurocritical-care adults compared with no prophylaxis, with very low-certainty evidence. This is neither a strong high-certainty recommendation nor a prohibition. Its ICU population does not establish routine PPI treatment for every neurologic outpatient.",
+          "reviewHref": "#perioperative-stress-ulcer",
+          "difficulty": "clinical"
+        }
+      },
+      "periop-sup-dose": {
+        "before": {
+          "id": "periop-sup-dose",
+          "question": "Which pantoprazole daily total falls within the SCCM/ASHP low-dose category for stress-ulcer prophylaxis?",
+          "choices": [
+            "40 mg",
+            "80 mg",
+            "120 mg",
+            "192 mg"
+          ],
+          "answer": 0,
+          "rationale": "The guideline defines this category as no more than 40 mg daily. An active bleeding regimen addresses a different indication.",
+          "reviewHref": "#perioperative-stress-ulcer",
+          "difficulty": "clinical"
+        },
+        "after": {
+          "id": "periop-sup-dose",
+          "question": "Which pantoprazole daily total falls within the SCCM/ASHP low-dose category for stress-ulcer prophylaxis?",
+          "choices": [
+            "40 mg",
+            "80 mg",
+            "120 mg",
+            "192 mg"
+          ],
+          "answer": 0,
+          "rationale": "The low-dose category permits a pantoprazole daily total of no more than 40 mg. Thus 40 mg meets the category; 80, 120 and 192 mg exceed it. This preventive ceiling is not a universal prescription or an active gastrointestinal bleeding regimen. Verify the patient, indication and actual product before selecting treatment.",
+          "reviewHref": "#perioperative-stress-ulcer",
+          "difficulty": "clinical"
+        }
+      },
+      "periop-sup-reconcile": {
+        "before": {
+          "id": "periop-sup-reconcile",
+          "question": "An ICU patient no longer has stress-ulcer risk factors but was taking a PPI for documented erosive esophagitis before admission. What is the best reconciliation?",
+          "choices": [
+            "Stop every acid-suppressive medicine at ICU transfer",
+            "Add famotidine to replace the treatment indication",
+            "Continue ICU prophylaxis indefinitely without a diagnosis",
+            "Review and retain therapy appropriate for the independent esophageal indication"
+          ],
+          "answer": 3,
+          "rationale": "Stopping unnecessary prophylaxis does not mean stopping justified treatment of another condition.",
+          "reviewHref": "#perioperative-stress-ulcer",
+          "difficulty": "clinical"
+        },
+        "after": {
+          "id": "periop-sup-reconcile",
+          "question": "An ICU patient no longer has stress-ulcer risk factors but was taking a PPI for documented erosive esophagitis before admission. What is the best reconciliation?",
+          "choices": [
+            "Stop every acid-suppressive medicine at ICU transfer",
+            "Add famotidine to replace the treatment indication",
+            "Continue ICU prophylaxis indefinitely without a diagnosis",
+            "Review and retain therapy appropriate for the independent esophageal indication"
+          ],
+          "answer": 3,
+          "rationale": "Review and retain treatment appropriate for documented erosive esophagitis while reassessing the regimen. SCCM/ASHP distinguishes the pre-ICU acid-treatment indication from temporary stress-ulcer prophylaxis; the book also describes PPI treatment to heal erosions and regular review of maintenance need. Do not automatically stop justified therapy at transfer, add famotidine without a reason or continue undocumented ICU prophylaxis indefinitely.",
+          "reviewHref": "#perioperative-stress-ulcer",
+          "difficulty": "clinical"
+        }
+      },
+      "periop-sup-route": {
+        "before": {
+          "id": "periop-sup-route",
+          "question": "A high-risk ICU patient cannot receive enteral medication and has no class-specific contraindication. Which plan fits SCCM/ASHP guidance?",
+          "choices": [
+            "Defer prophylaxis until oral intake resumes",
+            "Use a high-dose infusion solely because the patient is in the ICU",
+            "Use an appropriate low-dose IV PPI or H2RA with daily reassessment",
+            "Use both drug classes routinely"
+          ],
+          "answer": 2,
+          "rationale": "IV therapy is acceptable when indicated and enteral delivery is impractical. Organ function, interactions and the indication guide selection.",
+          "reviewHref": "#perioperative-stress-ulcer",
+          "difficulty": "clinical"
+        },
+        "after": {
+          "id": "periop-sup-route",
+          "question": "A high-risk ICU patient cannot receive enteral medication and has no class-specific contraindication. Which plan fits SCCM/ASHP guidance?",
+          "choices": [
+            "Defer prophylaxis until oral intake resumes",
+            "Use a high-dose infusion solely because the patient is in the ICU",
+            "Use an appropriate low-dose IV PPI or H2RA with daily reassessment",
+            "Use both drug classes routinely"
+          ],
+          "answer": 2,
+          "rationale": "SCCM/ASHP conditionally accepts either enteral or IV prophylaxis in at-risk critically ill adults, with low-certainty evidence. When enteral delivery is impractical, an appropriate low-dose IV agent can be used after checking organ function, interactions and the indication. The route does not itself justify delaying indicated prevention, increasing the preventive dose or combining both drug classes routinely.",
+          "reviewHref": "#perioperative-stress-ulcer",
+          "difficulty": "clinical"
+        }
+      }
+    },
+    "bodies": {
+      "Choose a low-dose preventive regimen": {
+        "before": "The 2024 SCCM/ASHP guideline accepts either a proton pump inhibitor or histamine-2 receptor antagonist for adults who remain at risk. Enteral and intravenous routes are both acceptable when clinically feasible. Drug interactions, kidney function, enteral access, prior acid disease, and local protocol should determine the exact regimen.",
+        "after": "For critically ill adults with bleeding risk factors, the 2024 SCCM/ASHP guideline conditionally suggests either a proton pump inhibitor or a histamine-2 receptor antagonist as first-line prophylaxis, with moderate-certainty evidence. It also accepts enteral or intravenous delivery, with low-certainty evidence. Choose one appropriate low-dose agent and route after checking organ function, interactions, enteral access and the original indication; these recommendations do not call for routine combined PPI and H2RA therapy."
+      },
+      "Account for feeding and neurologic illness": {
+        "before": "Enteral feeding does not cancel persistent bleeding risk. SCCM/ASHP suggests prophylaxis for at-risk adults even when fed, and separately suggests it in neurocritical-care adults, with very low certainty for both recommendations. A low-risk, fed patient is a different case from a fed patient with coagulopathy.",
+        "after": "Enteral nutrition probably reduces clinically important stress-related upper gastrointestinal bleeding, but feeding does not remove persistent risk such as coagulopathy. SCCM/ASHP conditionally suggests prophylaxis for fed adults who remain at risk and separately for neurocritical-care adults; both recommendations have very low-certainty evidence. It suggests avoiding prophylaxis in low-risk, fed adults, also with very low certainty, and notes that concurrent prophylaxis and feeding may increase pneumonia risk. Keep population, bleeding risk and uncertainty explicit."
+      },
+      "Preserve an independent treatment indication": {
+        "before": "A PPI used before ICU admission may be treating recent bleeding, erosive esophagitis, a hypersecretory condition or active H. pylori infection. Reconcile that indication before stopping it. If the history is unclear, clarify it instead of assuming the drug was started solely for ICU prophylaxis.",
+        "after": "A PPI used before ICU admission may be treating recent upper gastrointestinal bleeding, erosive esophagitis, a hypersecretory condition or H. pylori eradication. Reconcile that independent indication before stopping it, weighing benefit, adverse effects, interactions and the available route. If the history is unclear, clarify it instead of assuming the drug was started solely for ICU prophylaxis. Resolution of stress-ulcer risk alone does not establish that the other treatment should end."
+      },
+      "Stop when the reason ends": {
+        "before": "Enteral nutrition probably reduces bleeding risk, and low-risk patients receiving enteral nutrition should not receive routine prophylaxis. Review the indication daily, discontinue when the risk factor resolves, and avoid carrying prophylaxis through ICU transfer or discharge unless a separate indication remains.",
+        "after": "Assess the indication daily and discontinue stress-ulcer prophylaxis when its risk factors are no longer present. SCCM/ASHP specifically calls for review and discontinuation of unnecessary prophylaxis before transfer out of the ICU to prevent inappropriate continuation. Its suggestion against prophylaxis in low-risk, enterally fed adults has very low-certainty evidence. Reconcile any separate acid-treatment indication so that a prophylaxis stop rule does not remove justified treatment."
+      }
+    },
+    "checks": {
+      "perioperative-stress-ulcer": {
+        "before": {
+          "question": "An extubated, stable, enterally fed ICU patient has no neurologic critical illness, coagulopathy, shock, chronic liver disease, or separate acid indication. What is the best action?",
+          "choices": [
+            "Discontinue routine stress-ulcer prophylaxis",
+            "Continue lifelong prophylaxis because the patient was ventilated",
+            "Double the acid-suppressive dose",
+            "Combine a PPI and H2RA"
+          ],
+          "answer": 0,
+          "rationale": "Current guidance discourages prophylaxis in low-risk enterally fed adults and emphasizes stopping when risk resolves.",
+          "reviewHref": "#perioperative-stress-ulcer"
+        },
+        "after": {
+          "question": "An extubated, stable, enterally fed ICU patient has no neurologic critical illness, coagulopathy, shock, chronic liver disease, or separate acid indication. What is the best action?",
+          "choices": [
+            "Discontinue routine stress-ulcer prophylaxis",
+            "Continue lifelong prophylaxis because the patient was ventilated",
+            "Double the acid-suppressive dose",
+            "Combine a PPI and H2RA"
+          ],
+          "answer": 0,
+          "rationale": "This low-risk, enterally fed patient has no remaining stated bleeding risk or independent acid-treatment indication. SCCM/ASHP conditionally suggests avoiding prophylaxis in this population, with very low-certainty evidence, and calls for stopping it when risk factors resolve. Prior ventilation does not justify lifelong treatment, a higher dose or routine combined PPI and H2RA therapy. Reassess if the clinical risk changes.",
+          "reviewHref": "#perioperative-stress-ulcer"
+        }
+      }
+    },
+    "wholeLessons": [],
+    "wholeBodies": [
+      "Choose a low-dose preventive regimen",
+      "Define low dose and distinguish active bleeding",
+      "Account for feeding and neurologic illness",
+      "Monitor the selected acid-suppressive treatment",
+      "Preserve an independent treatment indication",
+      "Stop when the reason ends"
+    ],
+    "figures": [
+      "perioperative-stress-ulcer"
+    ],
+    "addedReferences": [],
+    "remainingBodies": [
+      "Separate ICU location from bleeding risk",
+      "Apply sepsis-specific guidance"
+    ],
+    "remainingQuestions": [
+      "periop-sup-ventilation",
+      "periop-sup-sepsis"
+    ]
+  },
+  "coverage": {
+    "evidence": "enteral-nutrition-broader-icu-stress-ulcer-review.json",
+    "committedModuleBank": 81,
+    "wholeBodiesVerified": 6,
+    "newWholeBodiesVerifiedAgainstApproved2024Source": 5,
+    "previousBookBodyRechecked": 1,
+    "correctedBodies": 4,
+    "sourceVerifiedBodyHeadings": [
+      "Choose a low-dose preventive regimen",
+      "Define low dose and distinguish active bleeding",
+      "Account for feeding and neurologic illness",
+      "Monitor the selected acid-suppressive treatment",
+      "Preserve an independent treatment indication",
+      "Stop when the reason ends"
+    ],
+    "wholeQuestionsVerifiedThisUnit": 5,
+    "sourceVerifiedBankIds": [
+      "periop-sup-fed-risk",
+      "periop-sup-neuro",
+      "periop-sup-dose",
+      "periop-sup-reconcile",
+      "periop-sup-route"
+    ],
+    "newFullQuestionsVerified": 4,
+    "recheckedPreviouslyCountedQuestions": 1,
+    "broaderFeedingBankVerifiedAfter": 226,
+    "embeddedChecksVerified": 1,
+    "figuresVerified": 1,
+    "wholeLessonMetadataVerified": false,
+    "wholeLessonVerified": false,
+    "wholeParentModuleVerified": false,
+    "wholeENModuleVerified": false,
+    "wholeChaptersVerified": false,
+    "remainingBodyHeadings": [
+      "Separate ICU location from bleeding risk",
+      "Apply sepsis-specific guidance"
+    ],
+    "remainingQuestionIds": [
+      "periop-sup-ventilation",
+      "periop-sup-sepsis"
+    ],
+    "all81IdsStemsChoicesKeysAnchorsPreserved": true,
+    "all1180CumulativeObjectsUnchanged": true,
+    "noNewQuestionIds": true,
+    "retained2026ClinicalScopeNotRemoved": true
+  },
+  "validation": {
+    "productionBuild": {
+      "status": "passed",
+      "exitCode": 0,
+      "pages": 567,
+      "isolatedExactBase": "32acd9bcbe008bc3cba7f66bebe4d3f8a0db4207"
+    },
+    "structure": {
+      "status": "passed",
+      "questions": 81,
+      "hardErrors": [],
+      "sourceGaps": [],
+      "advisories": "Fixed question-count advisories do not establish clinical completeness; no duplicate items added."
+    },
+    "objectPreservation": {
+      "status": "passed",
+      "moduleQuestionCount": 81,
+      "all81StableIdsStemsChoicesKeysAnchorsPreserved": true,
+      "onlyFiveRationalesChanged": true,
+      "all1180CumulativeObjectsUnchanged": true,
+      "allOtherModulesUnchanged": true,
+      "onlyFourBodiesAndOneCheckRationaleChanged": true,
+      "noQuestionIdsAdded": true,
+      "remainingTwo2026BodiesAndQuestionsUnchanged": true,
+      "pantoprazoleCategoryCheck": {
+        "40": true,
+        "80": false,
+        "120": false,
+        "192": false
+      }
+    },
+    "browser": {
+      "status": "passed",
+      "results": [
+        {
+          "width": 1440,
+          "module": "perioperative-critical-care-pharmacology",
+          "bodies": 82,
+          "exactMetadata": true,
+          "checkResults": [
+            {
+              "slug": "perioperative-stress-ulcer",
+              "wrong": true,
+              "feedbackAndAnchorVerified": true
+            },
+            {
+              "slug": "perioperative-stress-ulcer",
+              "wrong": false,
+              "feedbackAndAnchorVerified": true
+            }
+          ],
+          "references": 30,
+          "wholeLessonClinicalVerification": false,
+          "approved2024ScopedContentVerified": true,
+          "attempts": [
+            {
+              "target": "periop-sup-fed-risk",
+              "seed": 7,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "periop-nmb-mechanism",
+                "periop-antifib-urinary",
+                "periop-etomidate-infusion",
+                "periop-last-rate",
+                "periop-last-ceiling",
+                "periop-sup-fed-risk",
+                "periop-etomidate-airway",
+                "periop-pediatric-reversal-2",
+                "periop-antifib-dilution",
+                "periop-sugammadex-icu-evidence"
+              ]
+            },
+            {
+              "target": "periop-sup-fed-risk",
+              "seed": 7,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "periop-nmb-mechanism",
+                "periop-antifib-urinary",
+                "periop-etomidate-infusion",
+                "periop-last-rate",
+                "periop-last-ceiling",
+                "periop-sup-fed-risk",
+                "periop-etomidate-airway",
+                "periop-pediatric-reversal-2",
+                "periop-antifib-dilution",
+                "periop-sugammadex-icu-evidence"
+              ]
+            },
+            {
+              "target": "periop-sup-neuro",
+              "seed": 4,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "periop-nmba-sepsis",
+                "periop-sup-neuro",
+                "periop-propofol-asepsis",
+                "periop-reversal-case-4",
+                "periop-sup-sepsis",
+                "periop-ketamine-procedure",
+                "periop-reversal-case-5",
+                "periop-pancuronium-reversal-boundary",
+                "periop-rocuronium-rsi-scope",
+                "periop-pediatric-reversal-1"
+              ]
+            },
+            {
+              "target": "periop-sup-neuro",
+              "seed": 4,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "periop-nmba-sepsis",
+                "periop-sup-neuro",
+                "periop-propofol-asepsis",
+                "periop-reversal-case-4",
+                "periop-sup-sepsis",
+                "periop-ketamine-procedure",
+                "periop-reversal-case-5",
+                "periop-pancuronium-reversal-boundary",
+                "periop-rocuronium-rsi-scope",
+                "periop-pediatric-reversal-1"
+              ]
+            },
+            {
+              "target": "periop-sup-dose",
+              "seed": 3,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "periop-local-route",
+                "periop-antifib-rate",
+                "periop-nmb-prolonged-apnea",
+                "periop-neostigmine-obstruction",
+                "periop-sup-dose",
+                "periop-last-observation",
+                "periop-safety-label",
+                "periop-antifib-urinary",
+                "periop-nmb-denervation",
+                "periop-pph-prophylaxis"
+              ]
+            },
+            {
+              "target": "periop-sup-dose",
+              "seed": 3,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "periop-local-route",
+                "periop-antifib-rate",
+                "periop-nmb-prolonged-apnea",
+                "periop-neostigmine-obstruction",
+                "periop-sup-dose",
+                "periop-last-observation",
+                "periop-safety-label",
+                "periop-antifib-urinary",
+                "periop-nmb-denervation",
+                "periop-pph-prophylaxis"
+              ]
+            },
+            {
+              "target": "periop-sup-reconcile",
+              "seed": 10,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "periop-antifib-seizure",
+                "periop-safety-eye-care",
+                "periop-propofol-calories",
+                "periop-mh-label",
+                "periop-sup-ventilation",
+                "periop-etomidate-analgesia",
+                "periop-agent-cirrhosis",
+                "periop-sup-fed-risk",
+                "periop-ketamine-interaction",
+                "periop-sup-reconcile"
+              ]
+            },
+            {
+              "target": "periop-sup-reconcile",
+              "seed": 10,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "periop-antifib-seizure",
+                "periop-safety-eye-care",
+                "periop-propofol-calories",
+                "periop-mh-label",
+                "periop-sup-ventilation",
+                "periop-etomidate-analgesia",
+                "periop-agent-cirrhosis",
+                "periop-sup-fed-risk",
+                "periop-ketamine-interaction",
+                "periop-sup-reconcile"
+              ]
+            },
+            {
+              "target": "periop-sup-route",
+              "seed": 22,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "periop-safety-eye-care",
+                "periop-sup-route",
+                "periop-nmb-pediatric-reserve",
+                "periop-sup-reconcile",
+                "periop-ketamine-recurrent",
+                "periop-last-rate",
+                "periop-pediatric-reversal-2",
+                "periop-etomidate-analgesia",
+                "periop-nmb-prolonged-apnea",
+                "periop-agent-magnesium"
+              ]
+            },
+            {
+              "target": "periop-sup-route",
+              "seed": 22,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "periop-safety-eye-care",
+                "periop-sup-route",
+                "periop-nmb-pediatric-reserve",
+                "periop-sup-reconcile",
+                "periop-ketamine-recurrent",
+                "periop-last-rate",
+                "periop-pediatric-reversal-2",
+                "periop-etomidate-analgesia",
+                "periop-nmb-prolonged-apnea",
+                "periop-agent-magnesium"
+              ]
+            }
+          ],
+          "noHorizontalOverflow": true,
+          "unauthenticated": true
+        },
+        {
+          "width": 390,
+          "module": "perioperative-critical-care-pharmacology",
+          "bodies": 82,
+          "exactMetadata": true,
+          "checkResults": [
+            {
+              "slug": "perioperative-stress-ulcer",
+              "wrong": true,
+              "feedbackAndAnchorVerified": true
+            },
+            {
+              "slug": "perioperative-stress-ulcer",
+              "wrong": false,
+              "feedbackAndAnchorVerified": true
+            }
+          ],
+          "references": 30,
+          "wholeLessonClinicalVerification": false,
+          "approved2024ScopedContentVerified": true,
+          "attempts": [
+            {
+              "target": "periop-sup-fed-risk",
+              "seed": 7,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "periop-nmb-mechanism",
+                "periop-antifib-urinary",
+                "periop-etomidate-infusion",
+                "periop-last-rate",
+                "periop-last-ceiling",
+                "periop-sup-fed-risk",
+                "periop-etomidate-airway",
+                "periop-pediatric-reversal-2",
+                "periop-antifib-dilution",
+                "periop-sugammadex-icu-evidence"
+              ]
+            },
+            {
+              "target": "periop-sup-fed-risk",
+              "seed": 7,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "periop-nmb-mechanism",
+                "periop-antifib-urinary",
+                "periop-etomidate-infusion",
+                "periop-last-rate",
+                "periop-last-ceiling",
+                "periop-sup-fed-risk",
+                "periop-etomidate-airway",
+                "periop-pediatric-reversal-2",
+                "periop-antifib-dilution",
+                "periop-sugammadex-icu-evidence"
+              ]
+            },
+            {
+              "target": "periop-sup-neuro",
+              "seed": 4,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "periop-nmba-sepsis",
+                "periop-sup-neuro",
+                "periop-propofol-asepsis",
+                "periop-reversal-case-4",
+                "periop-sup-sepsis",
+                "periop-ketamine-procedure",
+                "periop-reversal-case-5",
+                "periop-pancuronium-reversal-boundary",
+                "periop-rocuronium-rsi-scope",
+                "periop-pediatric-reversal-1"
+              ]
+            },
+            {
+              "target": "periop-sup-neuro",
+              "seed": 4,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "periop-nmba-sepsis",
+                "periop-sup-neuro",
+                "periop-propofol-asepsis",
+                "periop-reversal-case-4",
+                "periop-sup-sepsis",
+                "periop-ketamine-procedure",
+                "periop-reversal-case-5",
+                "periop-pancuronium-reversal-boundary",
+                "periop-rocuronium-rsi-scope",
+                "periop-pediatric-reversal-1"
+              ]
+            },
+            {
+              "target": "periop-sup-dose",
+              "seed": 3,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "periop-local-route",
+                "periop-antifib-rate",
+                "periop-nmb-prolonged-apnea",
+                "periop-neostigmine-obstruction",
+                "periop-sup-dose",
+                "periop-last-observation",
+                "periop-safety-label",
+                "periop-antifib-urinary",
+                "periop-nmb-denervation",
+                "periop-pph-prophylaxis"
+              ]
+            },
+            {
+              "target": "periop-sup-dose",
+              "seed": 3,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "periop-local-route",
+                "periop-antifib-rate",
+                "periop-nmb-prolonged-apnea",
+                "periop-neostigmine-obstruction",
+                "periop-sup-dose",
+                "periop-last-observation",
+                "periop-safety-label",
+                "periop-antifib-urinary",
+                "periop-nmb-denervation",
+                "periop-pph-prophylaxis"
+              ]
+            },
+            {
+              "target": "periop-sup-reconcile",
+              "seed": 10,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "periop-antifib-seizure",
+                "periop-safety-eye-care",
+                "periop-propofol-calories",
+                "periop-mh-label",
+                "periop-sup-ventilation",
+                "periop-etomidate-analgesia",
+                "periop-agent-cirrhosis",
+                "periop-sup-fed-risk",
+                "periop-ketamine-interaction",
+                "periop-sup-reconcile"
+              ]
+            },
+            {
+              "target": "periop-sup-reconcile",
+              "seed": 10,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "periop-antifib-seizure",
+                "periop-safety-eye-care",
+                "periop-propofol-calories",
+                "periop-mh-label",
+                "periop-sup-ventilation",
+                "periop-etomidate-analgesia",
+                "periop-agent-cirrhosis",
+                "periop-sup-fed-risk",
+                "periop-ketamine-interaction",
+                "periop-sup-reconcile"
+              ]
+            },
+            {
+              "target": "periop-sup-route",
+              "seed": 22,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "periop-safety-eye-care",
+                "periop-sup-route",
+                "periop-nmb-pediatric-reserve",
+                "periop-sup-reconcile",
+                "periop-ketamine-recurrent",
+                "periop-last-rate",
+                "periop-pediatric-reversal-2",
+                "periop-etomidate-analgesia",
+                "periop-nmb-prolonged-apnea",
+                "periop-agent-magnesium"
+              ]
+            },
+            {
+              "target": "periop-sup-route",
+              "seed": 22,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "periop-safety-eye-care",
+                "periop-sup-route",
+                "periop-nmb-pediatric-reserve",
+                "periop-sup-reconcile",
+                "periop-ketamine-recurrent",
+                "periop-last-rate",
+                "periop-pediatric-reversal-2",
+                "periop-etomidate-analgesia",
+                "periop-nmb-prolonged-apnea",
+                "periop-agent-magnesium"
+              ]
+            }
+          ],
+          "noHorizontalOverflow": true,
+          "unauthenticated": true
+        }
+      ],
+      "errors": [],
+      "captures": [
+        "body-module-Choose-a-low-dose-preventive-regimen-1440.png",
+        "body-module-Define-low-dose-and-distinguish-active-bleeding-1440.png",
+        "body-module-Account-for-feeding-and-neurologic-illness-1440.png",
+        "body-module-Monitor-the-selected-acid-suppressive-treatment-1440.png",
+        "body-module-Preserve-an-independent-treatment-indication-1440.png",
+        "body-module-Stop-when-the-reason-ends-1440.png",
+        "figure-perioperative-stress-ulcer-1440.png",
+        "references-module-1440.png",
+        "question-periop-sup-fed-risk-correct-1440.png",
+        "question-periop-sup-neuro-correct-1440.png",
+        "question-periop-sup-dose-correct-1440.png",
+        "question-periop-sup-reconcile-correct-1440.png",
+        "question-periop-sup-route-correct-1440.png",
+        "check-perioperative-stress-ulcer-incorrect-1440.png",
+        "check-perioperative-stress-ulcer-correct-1440.png",
+        "body-module-Choose-a-low-dose-preventive-regimen-390.png",
+        "body-module-Define-low-dose-and-distinguish-active-bleeding-390.png",
+        "body-module-Account-for-feeding-and-neurologic-illness-390.png",
+        "body-module-Monitor-the-selected-acid-suppressive-treatment-390.png",
+        "body-module-Preserve-an-independent-treatment-indication-390.png",
+        "body-module-Stop-when-the-reason-ends-390.png",
+        "figure-perioperative-stress-ulcer-390.png",
+        "references-module-390.png",
+        "question-periop-sup-fed-risk-incorrect-390.png",
+        "question-periop-sup-neuro-incorrect-390.png",
+        "question-periop-sup-dose-incorrect-390.png",
+        "question-periop-sup-reconcile-incorrect-390.png",
+        "question-periop-sup-route-incorrect-390.png",
+        "check-perioperative-stress-ulcer-incorrect-390.png",
+        "check-perioperative-stress-ulcer-correct-390.png"
+      ]
+    },
+    "visualInspection": {
+      "status": "passed",
+      "rawCapturesInspected": 30,
+      "nativeComparisonFiles": 15,
+      "comparisonsActuallyViewedDirectly": 14,
+      "referenceComparisonInspectedViaThreeNativeCrops": true,
+      "allSixReviewedBodyCapturesReadable": true,
+      "allFiveQuestionCapturesReadable": true,
+      "checkBothStatesAndFigureReadable": true,
+      "sourceCardsOriginalHtmlVisuallyInspected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "privateBookPagesViewed": [
+        726,
+        913,
+        914,
+        915
+      ],
+      "limitation": "Existing sticky module navigation obscures the reference heading in the mobile full-reference capture; floating tools also appear in the reference capture. All changed body/question/check and retained figure captures are readable. Reference labels/hrefs and full metadata were separately compared against exact DOM; no claim every scroll position is unobstructed."
+    },
+    "visualManifest": [
+      {
+        "comparison": "visual-compare-1.png",
+        "rawCaptures": [
+          "body-module-Account-for-feeding-and-neurologic-illness-1440.png",
+          "body-module-Account-for-feeding-and-neurologic-illness-390.png"
+        ],
+        "nativePixelsPreserved": true,
+        "canvasDimensions": [
+          1305,
+          505
+        ]
+      },
+      {
+        "comparison": "visual-compare-2.png",
+        "rawCaptures": [
+          "body-module-Choose-a-low-dose-preventive-regimen-1440.png",
+          "body-module-Choose-a-low-dose-preventive-regimen-390.png"
+        ],
+        "nativePixelsPreserved": true,
+        "canvasDimensions": [
+          1305,
+          450
+        ]
+      },
+      {
+        "comparison": "visual-compare-3.png",
+        "rawCaptures": [
+          "body-module-Define-low-dose-and-distinguish-active-bleeding-1440.png",
+          "body-module-Define-low-dose-and-distinguish-active-bleeding-390.png"
+        ],
+        "nativePixelsPreserved": true,
+        "canvasDimensions": [
+          1305,
+          368
+        ]
+      },
+      {
+        "comparison": "visual-compare-4.png",
+        "rawCaptures": [
+          "body-module-Monitor-the-selected-acid-suppressive-treatment-1440.png",
+          "body-module-Monitor-the-selected-acid-suppressive-treatment-390.png"
+        ],
+        "nativePixelsPreserved": true,
+        "canvasDimensions": [
+          1305,
+          505
+        ]
+      },
+      {
+        "comparison": "visual-compare-5.png",
+        "rawCaptures": [
+          "body-module-Preserve-an-independent-treatment-indication-1440.png",
+          "body-module-Preserve-an-independent-treatment-indication-390.png"
+        ],
+        "nativePixelsPreserved": true,
+        "canvasDimensions": [
+          1305,
+          450
+        ]
+      },
+      {
+        "comparison": "visual-compare-6.png",
+        "rawCaptures": [
+          "body-module-Stop-when-the-reason-ends-1440.png",
+          "body-module-Stop-when-the-reason-ends-390.png"
+        ],
+        "nativePixelsPreserved": true,
+        "canvasDimensions": [
+          1305,
+          451
+        ]
+      },
+      {
+        "comparison": "visual-compare-7.png",
+        "rawCaptures": [
+          "references-module-1440.png",
+          "references-module-390.png"
+        ],
+        "nativePixelsPreserved": true,
+        "canvasDimensions": [
+          1305,
+          2321
+        ]
+      },
+      {
+        "comparison": "visual-compare-8.png",
+        "rawCaptures": [
+          "question-periop-sup-dose-correct-1440.png",
+          "question-periop-sup-dose-incorrect-390.png"
+        ],
+        "nativePixelsPreserved": true,
+        "canvasDimensions": [
+          1305,
+          708
+        ]
+      },
+      {
+        "comparison": "visual-compare-9.png",
+        "rawCaptures": [
+          "question-periop-sup-fed-risk-correct-1440.png",
+          "question-periop-sup-fed-risk-incorrect-390.png"
+        ],
+        "nativePixelsPreserved": true,
+        "canvasDimensions": [
+          1305,
+          763
+        ]
+      },
+      {
+        "comparison": "visual-compare-10.png",
+        "rawCaptures": [
+          "question-periop-sup-neuro-correct-1440.png",
+          "question-periop-sup-neuro-incorrect-390.png"
+        ],
+        "nativePixelsPreserved": true,
+        "canvasDimensions": [
+          1305,
+          724
+        ]
+      },
+      {
+        "comparison": "visual-compare-11.png",
+        "rawCaptures": [
+          "question-periop-sup-reconcile-correct-1440.png",
+          "question-periop-sup-reconcile-incorrect-390.png"
+        ],
+        "nativePixelsPreserved": true,
+        "canvasDimensions": [
+          1305,
+          861
+        ]
+      },
+      {
+        "comparison": "visual-compare-12.png",
+        "rawCaptures": [
+          "question-periop-sup-route-correct-1440.png",
+          "question-periop-sup-route-incorrect-390.png"
+        ],
+        "nativePixelsPreserved": true,
+        "canvasDimensions": [
+          1305,
+          807
+        ]
+      },
+      {
+        "comparison": "visual-compare-13.png",
+        "rawCaptures": [
+          "check-perioperative-stress-ulcer-correct-1440.png",
+          "check-perioperative-stress-ulcer-correct-390.png"
+        ],
+        "nativePixelsPreserved": true,
+        "canvasDimensions": [
+          1305,
+          790
+        ]
+      },
+      {
+        "comparison": "visual-compare-14.png",
+        "rawCaptures": [
+          "check-perioperative-stress-ulcer-incorrect-1440.png",
+          "check-perioperative-stress-ulcer-incorrect-390.png"
+        ],
+        "nativePixelsPreserved": true,
+        "canvasDimensions": [
+          1305,
+          790
+        ]
+      },
+      {
+        "comparison": "visual-compare-15.png",
+        "rawCaptures": [
+          "figure-perioperative-stress-ulcer-1440.png",
+          "figure-perioperative-stress-ulcer-390.png"
+        ],
+        "nativePixelsPreserved": true,
+        "canvasDimensions": [
+          1305,
+          619
+        ]
+      }
+    ],
+    "limits": "Unauthenticated local preview only; complete DOM text checks are technical, not clinical verification of other module content. No main merge or production verification. Existing reference-heading overlap recorded."
+  },
+  "remainingReview": {
+    "two2026BodiesAndQuestionsPending": true,
+    "wholeLessonMetadataNotSourceReconciled": true,
+    "allOther76QuestionObjectsUnchanged": true,
+    "wholeParentReintegrationRequired": true,
+    "nextAction": "If direct approval arrives for the retained2026Saudi/Nordic stress-ulcer guideline and2026Surviving Sepsis Campaign, read their complete relevant scopes/evidence/tables and reconcile remaining stress-ulcer bodies1/3 and ventilation/sepsis questions, then verify full lesson metadata and assembled lesson. Approval question is pending, not inferred from elapsed time. Meanwhile continue independent book/previously approved broader feeding inventory and remaining phosphate bodies/questions/figures/metadata; do not delete retained2026scope to obtain closure. Whole adrenal/ICU parent reintegration/source-policy reconciliation still required. Earliest sequential checkpoint remains Chapter1printed7/PDF19formulaentry15fluidneeds with Chapter11feeding dependencies; preserve full82chaptergoal."
+  },
+  "release": {
+    "branch": "audit/rxprep-content-2026-09-24",
+    "commit": null,
+    "push": "pending",
+    "receipt": "enteral-nutrition-broader-icu-stress-ulcer-release.json",
+    "mainMerge": "not performed",
+    "production": "not verified"
+  },
+  "wholeGoalComplete": false
+}

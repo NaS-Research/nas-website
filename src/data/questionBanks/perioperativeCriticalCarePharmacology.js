@@ -489,7 +489,7 @@ perioperativeCriticalCarePharmacologyQuestionBank.push(...[
       "No; add an H2RA to every PPI"
     ],
     "answer": 1,
-    "rationale": "Feeding reduces risk but does not erase coagulopathy. Guidance supports prophylaxis in fed adults who remain at risk.",
+    "rationale": "No. Coagulopathy remains a guideline-recognized bleeding risk despite enteral feeding. SCCM/ASHP conditionally suggests prophylaxis for fed critically ill adults who retain risk factors, with very low-certainty evidence. Reassess the actual risk and use an appropriate low-dose agent; feeding alone does not justify stopping, and the recommendation does not require adding an H2RA to every PPI.",
     "reviewHref": "#perioperative-stress-ulcer",
     "difficulty": "clinical"
   },
@@ -503,7 +503,7 @@ perioperativeCriticalCarePharmacologyQuestionBank.push(...[
       "Proof that all neurologic outpatients need a PPI"
     ],
     "answer": 2,
-    "rationale": "The recommendation is conditional and the evidence is very uncertain; its population is neurocritical-care adults.",
+    "rationale": "SCCM/ASHP conditionally suggests prophylaxis for neurocritical-care adults compared with no prophylaxis, with very low-certainty evidence. This is neither a strong high-certainty recommendation nor a prohibition. Its ICU population does not establish routine PPI treatment for every neurologic outpatient.",
     "reviewHref": "#perioperative-stress-ulcer",
     "difficulty": "clinical"
   },
@@ -517,7 +517,7 @@ perioperativeCriticalCarePharmacologyQuestionBank.push(...[
       "192 mg"
     ],
     "answer": 0,
-    "rationale": "The guideline defines this category as no more than 40 mg daily. An active bleeding regimen addresses a different indication.",
+    "rationale": "The low-dose category permits a pantoprazole daily total of no more than 40 mg. Thus 40 mg meets the category; 80, 120 and 192 mg exceed it. This preventive ceiling is not a universal prescription or an active gastrointestinal bleeding regimen. Verify the patient, indication and actual product before selecting treatment.",
     "reviewHref": "#perioperative-stress-ulcer",
     "difficulty": "clinical"
   },
@@ -531,7 +531,7 @@ perioperativeCriticalCarePharmacologyQuestionBank.push(...[
       "Review and retain therapy appropriate for the independent esophageal indication"
     ],
     "answer": 3,
-    "rationale": "Stopping unnecessary prophylaxis does not mean stopping justified treatment of another condition.",
+    "rationale": "Review and retain treatment appropriate for documented erosive esophagitis while reassessing the regimen. SCCM/ASHP distinguishes the pre-ICU acid-treatment indication from temporary stress-ulcer prophylaxis; the book also describes PPI treatment to heal erosions and regular review of maintenance need. Do not automatically stop justified therapy at transfer, add famotidine without a reason or continue undocumented ICU prophylaxis indefinitely.",
     "reviewHref": "#perioperative-stress-ulcer",
     "difficulty": "clinical"
   },
@@ -559,7 +559,7 @@ perioperativeCriticalCarePharmacologyQuestionBank.push(...[
       "Use both drug classes routinely"
     ],
     "answer": 2,
-    "rationale": "IV therapy is acceptable when indicated and enteral delivery is impractical. Organ function, interactions and the indication guide selection.",
+    "rationale": "SCCM/ASHP conditionally accepts either enteral or IV prophylaxis in at-risk critically ill adults, with low-certainty evidence. When enteral delivery is impractical, an appropriate low-dose IV agent can be used after checking organ function, interactions and the indication. The route does not itself justify delaying indicated prevention, increasing the preventive dose or combining both drug classes routinely.",
     "reviewHref": "#perioperative-stress-ulcer",
     "difficulty": "clinical"
   }

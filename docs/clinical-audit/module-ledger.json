@@ -8351,9 +8351,34 @@
         {
           "slug": "perioperative-stress-ulcer",
           "status": "reviewing",
-          "latestScopedEvidence": "enteral-nutrition-broader-adrenal-perioperative-review.json",
-          "embeddedCheckVerified": false,
-          "wholeLessonVerified": false
+          "latestScopedEvidence": "enteral-nutrition-broader-icu-stress-ulcer-review.json",
+          "embeddedCheckVerified": true,
+          "wholeLessonVerified": false,
+          "figureVerified": true,
+          "metadataVerified": false,
+          "verifiedBodyHeadings": [
+            "Choose a low-dose preventive regimen",
+            "Define low dose and distinguish active bleeding",
+            "Account for feeding and neurologic illness",
+            "Monitor the selected acid-suppressive treatment",
+            "Preserve an independent treatment indication",
+            "Stop when the reason ends"
+          ],
+          "verifiedQuestionIds": [
+            "periop-sup-fed-risk",
+            "periop-sup-neuro",
+            "periop-sup-dose",
+            "periop-sup-reconcile",
+            "periop-sup-route"
+          ],
+          "remainingBodyHeadings": [
+            "Separate ICU location from bleeding risk",
+            "Apply sepsis-specific guidance"
+          ],
+          "remainingQuestionIds": [
+            "periop-sup-ventilation",
+            "periop-sup-sepsis"
+          ]
         },
         {
           "slug": "local-anesthetic-pharmacology",
@@ -8404,7 +8429,8 @@
         "2026-09-27: reviewed actual reversal-question output; replaced16 repetitive generated items with8 original cases, retaining4 prior originals.12 targeted reversal questions;108 total. Actual desktop/mobile recovery visual inspected. See toxicology-review.json.",
         "2026-09-27: targeted actual-content reviews now cover all11lessons;74original questions,zero generated. Detailed sources/corrections/validation in toxicology-review.json. Lesson statuses updated to reviewing; final assembled clinical audit and open discrepancies remain before verification.",
         "2026-09-27: complete actual-content review, guideline/label/book discrepancies and original81-question bank reconciled. Build86665 exit0; structural noharderrors/sourcegaps; desktop/mobile and complete10-question practice interaction passed. See perioperative-completion-review.json for evidence, arithmetic, scope and limitations.",
-        "enteral-nutrition-broader-adrenal-perioperative-review.json"
+        "enteral-nutrition-broader-adrenal-perioperative-review.json",
+        "enteral-nutrition-broader-icu-stress-ulcer-review.json"
       ],
       "broaderEnteralAdministrationReview": {
         "evidence": "enteral-nutrition-broader-adrenal-perioperative-review.json",
@@ -8428,6 +8454,52 @@
         "wholeModuleVerified": false,
         "figuresVerified": 0,
         "metadataVerified": false
+      },
+      "latestIcuStressUlcerGuidelineReview": {
+        "evidence": "enteral-nutrition-broader-icu-stress-ulcer-review.json",
+        "committedModuleBank": 81,
+        "wholeBodiesVerified": 6,
+        "newWholeBodiesVerifiedAgainstApproved2024Source": 5,
+        "previousBookBodyRechecked": 1,
+        "correctedBodies": 4,
+        "sourceVerifiedBodyHeadings": [
+          "Choose a low-dose preventive regimen",
+          "Define low dose and distinguish active bleeding",
+          "Account for feeding and neurologic illness",
+          "Monitor the selected acid-suppressive treatment",
+          "Preserve an independent treatment indication",
+          "Stop when the reason ends"
+        ],
+        "wholeQuestionsVerifiedThisUnit": 5,
+        "sourceVerifiedBankIds": [
+          "periop-sup-fed-risk",
+          "periop-sup-neuro",
+          "periop-sup-dose",
+          "periop-sup-reconcile",
+          "periop-sup-route"
+        ],
+        "newFullQuestionsVerified": 4,
+        "recheckedPreviouslyCountedQuestions": 1,
+        "broaderFeedingBankVerifiedAfter": 226,
+        "embeddedChecksVerified": 1,
+        "figuresVerified": 1,
+        "wholeLessonMetadataVerified": false,
+        "wholeLessonVerified": false,
+        "wholeParentModuleVerified": false,
+        "wholeENModuleVerified": false,
+        "wholeChaptersVerified": false,
+        "remainingBodyHeadings": [
+          "Separate ICU location from bleeding risk",
+          "Apply sepsis-specific guidance"
+        ],
+        "remainingQuestionIds": [
+          "periop-sup-ventilation",
+          "periop-sup-sepsis"
+        ],
+        "all81IdsStemsChoicesKeysAnchorsPreserved": true,
+        "all1180CumulativeObjectsUnchanged": true,
+        "noNewQuestionIds": true,
+        "retained2026ClinicalScopeNotRemoved": true
       }
     },
     {
