@@ -80,3 +80,174 @@ const cases = [
 ].map((item, index) => ({ ...item, id: `rifaximin-pharmacology-${String(generated.length + index + 1).padStart(3, "0")}`, reviewHref: `#${item.lesson}` }));
 
 export const rifaximinPharmacologyQuestionBank = [...generated, ...cases];
+
+
+// Distinct HE cases preserve established IDs, keys, lesson links and ordering.
+const verifiedRifaximinHeQuestions = {
+  "rifaximin-pharmacology-049": {
+    "question": "An adult recovering from recurrent overt HE asks what the US rifaximin indication promises. Which statement is accurate?",
+    "choices": [
+      "It reduces the risk of another overt HE episode.",
+      "It establishes HE as the cause of every future episode of confusion.",
+      "It reverses cirrhosis and removes the need for liver follow-up.",
+      "It replaces systemic antibiotics when sepsis triggers confusion."
+    ],
+    "rationale": "The labeled adult HE outcome is reduced overt recurrence risk. It is not a diagnostic test or a cure for liver disease. Low systemic exposure also makes it unsuitable as sole treatment of sepsis; the precipitant and underlying liver disease still require care."
+  },
+  "rifaximin-pharmacology-050": {
+    "question": "A 30-day prescription specifies one rifaximin 550 mg tablet twice daily for HE prevention. What quantity supplies the prescribed regimen?",
+    "choices": [
+      "60 tablets",
+      "30 tablets",
+      "42 tablets",
+      "90 tablets"
+    ],
+    "rationale": "Two tablets/day × 30 days = 60 tablets, providing 1,100 mg/day. Thirty tablets would supply 15 days; 42 supplies 21 days and 90 supplies 45 days at this frequency. The calculation does not impose a 30-day stopping point on longer-term HE prevention."
+  },
+  "rifaximin-pharmacology-051": {
+    "question": "The pivotal HE trial reported 22% breakthrough episodes with rifaximin and 46% with placebo, plus a 58% time-to-event risk reduction. Which interpretation is best?",
+    "choices": [
+      "The reported time-to-event reduction differs from the absolute difference in observed event proportions.",
+      "Rifaximin produced a 58-percentage-point absolute reduction.",
+      "The trial showed that every patient avoided recurrence.",
+      "The result established the same benefit in patients with MELD above 25."
+    ],
+    "rationale": "The observed rounded proportions differ by about 24 percentage points; the label reports 58% from its time-to-event comparison. These measures are not interchangeable, and recurrence still occurred. No patients had MELD above 25, so that subgroup was not established by this trial."
+  },
+  "rifaximin-pharmacology-052": {
+    "question": "In the label's six-month open-label HE trial, the hazard ratio for rifaximin alone versus rifaximin plus lactulose was 1.98. Which statement is correct?",
+    "choices": [
+      "Monotherapy had a higher breakthrough-HE hazard than combination therapy in that trial.",
+      "Monotherapy had a 98-percentage-point lower recurrence rate.",
+      "The groups had identical breakthrough-HE outcomes.",
+      "The trial proved that no patient can ever use rifaximin without lactulose."
+    ],
+    "rationale": "A hazard ratio of 1.98 for monotherapy versus combination indicates approximately 98% higher breakthrough hazard over the studied period; the 95% CI was 1.06 to 3.7. Observed events were 28/113 (25%) versus 15/109 (14%). This open-label comparison supports retaining tolerated lactulose but does not create an absolute prohibition on individualized monotherapy."
+  },
+  "rifaximin-pharmacology-053": {
+    "question": "A patient tolerates maintenance lactulose and is starting rifaximin for recurrent overt HE. Which bowel-plan advice is best?",
+    "choices": [
+      "Continue and titrate tolerated lactulose under the care plan rather than stopping it automatically.",
+      "Stop lactulose solely because rifaximin has been prescribed.",
+      "Replace lactulose with a rifaximin blood-level target.",
+      "Increase lactulose until every stool is watery regardless of hydration."
+    ],
+    "rationale": "The pivotal placebo-controlled evidence largely included lactulose, and the active-controlled label trial favored combination over rifaximin alone. Retain tolerated lactulose with a goal of about 2 to 3 soft stools daily. Drug levels and excessive watery stools are not prevention targets; significant intolerance warrants reassessment."
+  },
+  "rifaximin-pharmacology-054": {
+    "question": "An adult has recurrent overt HE despite adherence to a tolerated lactulose maintenance regimen. Which addition matches ACG guidance and the US prevention dose?",
+    "choices": [
+      "Rifaximin 550 mg orally twice daily, with continued trigger and bowel-plan review.",
+      "Rifaximin 200 mg orally three times daily for three days as the HE maintenance regimen.",
+      "Rifaximin 550 mg orally three times daily for fourteen days as the HE maintenance regimen.",
+      "Rifaximin 400 mg orally every eight hours for five days as the labeled HE prevention regimen."
+    ],
+    "rationale": "ACG recommends adding rifaximin for recurrent episodes despite lactulose maintenance; the US prevention dose is 550 mg twice daily. The 200 mg three-times-daily three-day regimen is for qualifying travelers' diarrhea and the 550 mg three-times-daily fourteen-day regimen is for IBS-D. The book's older acute off-label schedule is not labeled HE prevention."
+  },
+  "rifaximin-pharmacology-055": {
+    "question": "A patient taking lactulose and rifaximin develops eight watery stools daily, weakness and rising sodium. Which response is best?",
+    "choices": [
+      "Reassess excess catharsis, hydration, electrolytes, cognition and lactulose dosing promptly.",
+      "Increase lactulose because watery diarrhea proves adequate HE control.",
+      "Ignore the fluid loss because rifaximin prevents dehydration-related recurrence.",
+      "Adjust rifaximin solely to normalize the ammonia concentration."
+    ],
+    "rationale": "Excess lactulose can cause dehydration and electrolyte abnormalities that precipitate HE. The bowel goal is soft stools without harmful fluid loss. Rifaximin does not neutralize these complications and ammonia alone should not drive dosing; persistent or worsening diarrhea also requires consideration of other causes, including C. difficile."
+  },
+  "rifaximin-pharmacology-056": {
+    "question": "A team proposes rifaximin added to lactulose during acute overt HE. How should its evidence and indication be described?",
+    "choices": [
+      "ACG 2026 conditionally supports acute add-on use with low-certainty evidence, distinct from the US recurrence label.",
+      "The US label specifically establishes rifaximin as stand-alone acute stabilization.",
+      "The recommendation means airway and precipitant assessment can be omitted.",
+      "The acute setting requires automatic substitution of the IBS-D fourteen-day schedule."
+    ],
+    "rationale": "The ACG recommendation for acute add-on rifaximin is conditional with low-certainty evidence. The US HE label addresses reduction in overt recurrence risk. Neither supports omitting airway and trigger care, using rifaximin alone as stabilization or importing the IBS-D regimen."
+  },
+  "rifaximin-pharmacology-057": {
+    "question": "A hospitalized patient on rifaximin prevention develops confusion, fever and abdominal discomfort with ascites. Which plan is best?",
+    "choices": [
+      "Evaluate infection, including diagnostic paracentesis, while addressing HE and the identified precipitant.",
+      "Assume rifaximin prevents SBP and defer infection assessment.",
+      "Wait for ammonia normalization before investigating infection.",
+      "Treat suspected sepsis with oral rifaximin alone because it is an antibiotic."
+    ],
+    "rationale": "Infection, including SBP, can precipitate HE and independently affect cognition. Hospitalized ascites with suspected infection warrants diagnostic paracentesis and appropriate infection care. Rifaximin prevention does not exclude infection or provide adequate systemic sepsis treatment; ammonia does not determine whether to investigate."
+  },
+  "rifaximin-pharmacology-058": {
+    "question": "A patient with prior HE develops confusion and new unilateral arm weakness while taking rifaximin. Which response is safest?",
+    "choices": [
+      "Obtain urgent neurological evaluation and indicated imaging alongside HE assessment.",
+      "Attribute the focal deficit to HE without assessing stroke or bleeding.",
+      "Wait for a rifaximin concentration before evaluating the deficit.",
+      "Omit imaging because guidance discourages it in every patient with cirrhosis."
+    ],
+    "rationale": "New focal findings require urgent evaluation for neurological disease. Guidance against routine imaging in typical confusion without new focal deficits does not apply here. Rifaximin levels do not resolve the differential, and HE and a neurological emergency can coexist."
+  },
+  "rifaximin-pharmacology-059": {
+    "question": "An obtunded patient with suspected severe HE cannot swallow safely. What takes priority before giving oral rifaximin?",
+    "choices": [
+      "Urgent airway protection and a supervised assessment of treatment route and precipitants.",
+      "Forcing the tablet orally to avoid delaying the prevention regimen.",
+      "Using a feeding tube as proof that aspiration is impossible.",
+      "Waiting for outpatient refill authorization before addressing consciousness."
+    ],
+    "rationale": "Severe impaired consciousness requires monitored care and airway assessment. Oral drug administration must account for aspiration risk; a feeding tube alone does not protect the airway. Acute stabilization and treatment of precipitants take priority over routine prevention dispensing."
+  },
+  "rifaximin-pharmacology-060": {
+    "question": "A patient on HE prevention becomes confused and an obtained ammonia value is normal. Which interpretation is best?",
+    "choices": [
+      "Reconsider competing causes in addition to HE and use the clinical assessment to guide care.",
+      "Exclude HE with certainty solely because ammonia is normal.",
+      "Diagnose HE only if a later ammonia value becomes elevated.",
+      "Escalate rifaximin solely to reach an ammonia target."
+    ],
+    "rationale": "A normal result prompts consideration of other diagnoses rather than automatic exclusion of HE. An elevated result alone would not establish HE either. Clinical examination, time course, precipitants and treatment response guide care; ammonia should not be a stand-alone rifaximin titration target."
+  },
+  "rifaximin-pharmacology-061": {
+    "question": "Which follow-up best evaluates whether rifaximin prevention is helping an adult with recurrent overt HE?",
+    "choices": [
+      "Track recurrent episodes, cognition, function, falls, admissions, adherence and bowel safety.",
+      "Use routine rifaximin concentrations as the sole effectiveness outcome.",
+      "Judge success only by normalization of ammonia despite worsening cognition.",
+      "Count dispensed tablets without assessing whether the patient takes them."
+    ],
+    "rationale": "Clinical recurrence and function are the meaningful prevention outcomes. Bowel quality, hydration, adherence and access affect the safety and success of the regimen. Neither routine rifaximin levels, ammonia alone nor dispensing counts replace assessment of the patient."
+  },
+  "rifaximin-pharmacology-062": {
+    "question": "A caregiver reports that rifaximin will run out before the post-discharge visit because the prescription is unaffordable. Which plan is best?",
+    "choices": [
+      "Resolve access with the care team, arrange supply and a written recurrence plan, and assign follow-up responsibility.",
+      "Wait for another admission before addressing the medication gap.",
+      "Replace the prescription with the travelers' diarrhea three-day schedule without review.",
+      "Stop all HE prevention once discharge cognition is normal."
+    ],
+    "rationale": "An effective plan requires accessible medicines, caregiver instructions and a clear monitoring owner. Address a foreseeable lapse before it occurs; the schedule remains indication-specific. Recovery at discharge does not automatically end recurrence prevention."
+  },
+  "rifaximin-pharmacology-063": {
+    "question": "An outpatient with recurrent HE, muscle loss and MELD below 15 asks whether severe protein restriction will replace rifaximin and liver follow-up. Which response is best?",
+    "choices": [
+      "Maintain adequate individualized protein intake and arrange HE and transplant assessment rather than substituting protein restriction.",
+      "Use severe protein restriction as the primary recurrence-prevention treatment.",
+      "Defer transplant evaluation solely because MELD is below 15.",
+      "Stop rifaximin permanently whenever confusion improves for one day."
+    ],
+    "rationale": "ACG recommends 1.2 to 1.5 g/kg/day protein in outpatients with HE and advises against routine protein restriction. Recurrent HE warrants liver and transplant assessment; ACG suggests considering living-donor candidacy with multiple episodes despite MELD below 15. Nutrition and temporary cognitive recovery do not independently authorize stopping prevention."
+  },
+  "rifaximin-pharmacology-064": {
+    "question": "A patient with Child-Pugh C cirrhosis needs rifaximin prevention and takes cyclosporine. Which safety assessment is correct?",
+    "choices": [
+      "Severe hepatic impairment and P-gp inhibition can increase exposure and require careful review and caution.",
+      "Minimal usual absorption makes the combination free of interaction risk.",
+      "Child-Pugh C impairment is an absolute labeled contraindication equivalent to rifamycin allergy.",
+      "The label requires an automatic unvalidated dose reduction based solely on Child-Pugh class."
+    ],
+    "rationale": "The label cautions in severe hepatic impairment and with P-gp inhibitors such as cyclosporine, which may further increase systemic exposure. It recommends no routine hepatic dose adjustment because of local action. Severe impairment is a caution, while rifaximin/rifamycin/product hypersensitivity is a contraindication; patient-specific review is still needed."
+  },
+  "rifaximin-pharmacology-160": {
+    "rationale": "Adult overt HE recurrence prevention uses 550 mg twice daily. The 200 mg three-times-daily three-day regimen is for qualifying travelers' diarrhea, and 550 mg three times daily for fourteen days is the IBS-D regimen. A 400 mg three-times-daily twenty-day course belongs to a distinct off-label recurrent-CDI sequence. Continue the individualized lactulose, precipitant and follow-up plan; the HE label does not specify a fixed short course."
+  }
+};
+for (const item of rifaximinPharmacologyQuestionBank) {
+  if (verifiedRifaximinHeQuestions[item.id]) Object.assign(item, verifiedRifaximinHeQuestions[item.id]);
+}
