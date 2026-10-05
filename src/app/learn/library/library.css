@@ -12,6 +12,7 @@
 @media(max-width:600px){.learning-catalog-page .learning-filter{flex:1 1 100%}}
 
 @media(min-width:768px){
+  .learning-catalog-page .learning-result{grid-template-columns:minmax(0,1fr) 10rem}
   .learning-catalog-page .learning-toolbar{grid-template-columns:minmax(220px,1fr) minmax(180px,260px) minmax(140px,180px)}
 }
 @media(max-width:767px){

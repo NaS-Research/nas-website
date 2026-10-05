@@ -22,9 +22,8 @@ export default function LearningCatalog({ entries }) {
       <label className="learning-filter"><span className="sr-only">Subject</span><select value={subject} onChange={event => { setSubject(event.target.value); setLimit(12); }}><option value="">All subjects</option>{subjects.map(name => <option key={name}>{name}</option>)}</select></label>
       <label className="learning-filter"><span className="sr-only">Content type</span><select value={type} onChange={event => { setType(event.target.value); setLimit(12); }}><option value="">All formats</option><option>Module</option><option>Study guide</option></select></label>
     </div>
-    <div className="learning-library__meta" aria-live="polite"><span>{results.length} results · Showing {Math.min(limit, results.length)}</span>{(query || subject || type) && <button onClick={reset}>Clear filters</button>}</div>
-    <div className="learning-results">{results.slice(0, limit).map((entry, index) => <Link className="learning-result" key={entry.href} href={entry.href}>
-      <div className="learning-result__number">{String(index + 1).padStart(2, "0")}</div>
+    {(query || subject || type) && <div className="learning-library__meta"><button onClick={reset}>Clear filters</button></div>}
+    <div className="learning-results">{results.slice(0, limit).map(entry => <Link className="learning-result" key={entry.href} href={entry.href}>
       <div className="learning-result__body"><p>{entry.subject}</p><h2>{entry.title}</h2><span>{entry.description}</span></div>
       <div className="learning-result__details"><span>{entry.type}</span><span>{entry.detail}</span><strong>Explore ↗</strong></div>
     </Link>)}</div>
