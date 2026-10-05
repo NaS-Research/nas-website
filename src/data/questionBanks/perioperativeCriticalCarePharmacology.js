@@ -1181,3 +1181,12 @@ perioperativeCriticalCarePharmacologyQuestionBank.push(...[
     "difficulty": "application"
   }
 ]);
+
+// Source-reconciled 2026 ICU guidance: preserve stable question identities.
+const approved2026StressUlcerRationales = {
+  "periop-sup-ventilation": "Assess the ventilated adult individually using the full bleeding-risk profile and the benefit-risk balance. The 2024 uncertainty about ventilation as an independent risk factor is not proof that no ventilated patient benefits. The 2026 Saudi/Kuwait/Nordic contextualized guideline places this individualized assessment in its practical considerations, rather than a separate graded mandate for every ventilated patient. Neither source makes past ventilation a lifelong indication or bases prophylaxis on ventilator model.",
+  "periop-sup-sepsis": "Coagulopathy is a recognized bleeding risk in this adult with septic shock. The 2026 Surviving Sepsis Campaign conditionally suggests PPI prophylaxis over no prophylaxis for at-risk adults, with moderate-certainty evidence. That comparator does not itself prove head-to-head superiority over H2 blockers. The guideline rationale separately cites earlier comparative evidence favoring PPIs for bleeding prevention and permits H2 blockers as a reasonable alternative when PPIs are unavailable. It does not contraindicate H2 blockers in every septic patient or require lifelong treatment for all sepsis; reassess risk and the stopping rule."
+};
+for (const question of perioperativeCriticalCarePharmacologyQuestionBank) {
+  if (Object.hasOwn(approved2026StressUlcerRationales, question.id)) question.rationale = approved2026StressUlcerRationales[question.id];
+}

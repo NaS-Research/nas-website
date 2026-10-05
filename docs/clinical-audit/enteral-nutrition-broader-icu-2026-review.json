@@ -1,0 +1,934 @@
+{
+  "updated": "2026-10-05T02:33:07.056759+00:00",
+  "unit": "enteral-nutrition:broader-icu-2026-whole-stress-ulcer-lesson",
+  "status": "Whole stress-ulcer lesson verified; parent/EN/chapters reviewing",
+  "baseCommit": "c9b0ca316db6891366fc4ddff486adc1f071a72c",
+  "sourceAuthorization": {
+    "approvalText": "I give approval",
+    "approvedSources": [
+      "2026 Saudi/Nordic contextualized stress-ulcer guideline",
+      "2026 Surviving Sepsis Campaign"
+    ],
+    "record": "sequential-resume.json pendingIcu2026SourceAuthorization",
+    "noApprovalInferredFromElapsedTime": true
+  },
+  "sourceReview": {
+    "contextualized2026": {
+      "doi": "10.1111/aas.70201",
+      "url": "https://onlinelibrary.wiley.com/doi/full/10.1111/aas.70201",
+      "primaryFullTextMirror": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12883282/",
+      "published": "2026-02-08",
+      "population": "Adult ICUs in Saudi Arabia, Kuwait and Nordic countries; excludes children and non-ICU populations",
+      "completeAdoptedScopesRead": [
+        "Introduction",
+        "Methods including population, GRADE-ADOLOPMENT, search through July 27 2025 and recommendation definitions",
+        "PICO1 through PICO5 complete recommendations, practical considerations, remarks and rationales",
+        "Table1 all rows/footnote",
+        "Table2 all rows/footnotes",
+        "Table3 all rows/footnotes as text",
+        "Discussion4.1 and4.2"
+      ],
+      "originalSourceTablesRenderedAndVisuallyInspected": [
+        "Table1 complete in two overlapping crops",
+        "Table2 complete in three overlapping crops"
+      ],
+      "sourceRenderingNote": "Original saved PMC HTML cells/text rendered at readable 1400px table width; floating site navigation hidden. No table content rewritten or values transcribed into teaching.",
+      "originalFigureActuallyViewed": "Figure1 complete native original image and caption",
+      "htmlSha256": "ba082afa11726437cbd1ac37f7850c23189b838806367cb02b145505cd749d6e",
+      "limits": "Table3 text read but not visually inspected; no numerical outcome rates, risk thresholds, comparative dose regimens or cost-effectiveness claims newly adopted. Additional implementation graphic/supplements and full future-priorities section not claimed read. Ordinary PDF request returned HTML; no valid source PDF verified. Publisher direct fetch403; official PMC primary text used, without bypass."
+    },
+    "SurvivingSepsis2026": {
+      "doi": "10.1007/s00134-026-08361-1",
+      "url": "https://link.springer.com/article/10.1007/s00134-026-08361-1",
+      "officialRecommendationsUrl": "https://www.sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026",
+      "completeAdoptedScopesRead": [
+        "Complete official SCCM recommendation87 card including comparator, strength and certainty",
+        "Journal stress-ulcer recommendation87 and all three rationale paragraphs"
+      ],
+      "originalRecommendationCardRenderedAndActuallyViewed": true,
+      "journalHtmlSha256": "f9841736476440b8a490db6988f11cba9e9068229ddc16645147b4d459c33c98",
+      "officialHtmlSha256": "f25c3e8e752989be216826012afd14950ac8e915e32f75419a234adf9466321b",
+      "evidenceLimits": "Trials not specifically in sepsis/septic shock; indirectness downgrade. No mortality, infection, ventilation-duration or comparative numerical effects newly taught. Earlier NMA is cited by the guideline rationale; not independently reanalyzed or claimed head-to-head trial proof. Entire SSC paper not reviewed."
+    },
+    "prior2024AndPrivateBookEvidence": "enteral-nutrition-broader-icu-stress-ulcer-review.json",
+    "privateSourceFilesOutsideGit": true
+  },
+  "sourceReconciliation": [
+    {
+      "issue": "Ventilation practical consideration could be mistaken for a standalone graded mandate.",
+      "resolution": "Explicit regional adult ICU scope and may-consider individualized practical assessment; retained 2024 independent-risk uncertainty without claiming no benefit."
+    },
+    {
+      "issue": "Recommendation comparator could be confused with comparative drug superiority or no comparative evidence whatsoever.",
+      "resolution": "PPI-versus-no-prophylaxis recommendation distinguished from guideline rationale citing earlier comparative evidence; H2RA availability alternative retained."
+    },
+    {
+      "issue": "Source journal C. difficile RR0.19 falls outside published95%CI0.75–1.87; GI-bleeding upper CI printed078.",
+      "resolution": "Unresolved source numerical anomalies documented; no guessed repair, numeric teaching or downstream calculation adopted. Qualitative recommendation independently confirmed by official card and full rationale."
+    }
+  ],
+  "changes": {
+    "bodies": {
+      "Separate ICU location from bleeding risk": {
+        "before": "The 2024 SCCM and ASHP guideline identifies coagulopathy, shock, and chronic liver disease as likely risk factors for clinically important stress-related upper gastrointestinal bleeding. Its evidence review did not establish ventilation alone as an independent risk factor. The 2026 Saudi/Nordic contextualized guideline incorporates newer evidence and advises individualized assessment of ventilated patients as potentially at risk. Do not interpret the earlier uncertainty as proof that ventilated patients cannot benefit.",
+        "after": "The 2024 SCCM and ASHP guideline identifies coagulopathy, shock, and chronic liver disease as likely risk factors for clinically important stress-related upper gastrointestinal bleeding. Its evidence review did not establish ventilation alone as an independent risk factor. The 2026 contextualized guideline for adult ICUs in Saudi Arabia, Kuwait, and the Nordic countries incorporates newer evidence. Its practical considerations say clinicians may consider mechanically ventilated patients potentially at risk and assess them individually. This is not a separate graded recommendation requiring prophylaxis for every ventilated patient. Earlier uncertainty does not prove that ventilated patients cannot benefit."
+      },
+      "Apply sepsis-specific guidance": {
+        "before": "For adults with sepsis or septic shock and gastrointestinal bleeding risk factors, the 2026 Surviving Sepsis Campaign conditionally suggests PPI prophylaxis rather than no prophylaxis, with moderate-certainty evidence. This comparison does not establish PPI superiority over H2 blockers or make prophylaxis automatic for every patient with sepsis. Keep risk assessment, dose selection and stopping rules explicit.",
+        "after": "For adults with sepsis or septic shock and gastrointestinal bleeding risk factors, the 2026 Surviving Sepsis Campaign conditionally suggests PPI prophylaxis rather than no prophylaxis, with moderate-certainty evidence. This recommendation compares PPI with no prophylaxis; it does not itself prove PPI superiority over H2 blockers or make prophylaxis automatic for every patient with sepsis. The rationale cites earlier comparative evidence favoring PPIs for bleeding prevention and identifies H2 blockers as a reasonable alternative when PPIs are unavailable. Keep risk assessment, dose selection and stopping rules explicit."
+      }
+    },
+    "questions": {
+      "periop-sup-ventilation": {
+        "before": {
+          "id": "periop-sup-ventilation",
+          "question": "What follows from the 2024 uncertainty about ventilation as an independent bleeding risk factor and the newer 2026 contextualized guidance?",
+          "choices": [
+            "No ventilated patient benefits from prophylaxis",
+            "Assess the ventilated patient individually, considering the full bleeding-risk profile",
+            "Every ventilated patient needs lifelong PPI therapy",
+            "Choose therapy solely by the ventilator model"
+          ],
+          "answer": 1,
+          "rationale": "Uncertainty about an independent risk factor is not proof of no treatment benefit. The newer guidance calls for individualized assessment.",
+          "reviewHref": "#perioperative-stress-ulcer",
+          "difficulty": "clinical"
+        },
+        "after": {
+          "id": "periop-sup-ventilation",
+          "question": "What follows from the 2024 uncertainty about ventilation as an independent bleeding risk factor and the newer 2026 contextualized guidance?",
+          "choices": [
+            "No ventilated patient benefits from prophylaxis",
+            "Assess the ventilated patient individually, considering the full bleeding-risk profile",
+            "Every ventilated patient needs lifelong PPI therapy",
+            "Choose therapy solely by the ventilator model"
+          ],
+          "answer": 1,
+          "rationale": "Assess the ventilated adult individually using the full bleeding-risk profile and the benefit-risk balance. The 2024 uncertainty about ventilation as an independent risk factor is not proof that no ventilated patient benefits. The 2026 Saudi/Kuwait/Nordic contextualized guideline places this individualized assessment in its practical considerations, rather than a separate graded mandate for every ventilated patient. Neither source makes past ventilation a lifelong indication or bases prophylaxis on ventilator model.",
+          "reviewHref": "#perioperative-stress-ulcer",
+          "difficulty": "clinical"
+        }
+      },
+      "periop-sup-sepsis": {
+        "before": {
+          "id": "periop-sup-sepsis",
+          "question": "An adult with septic shock and coagulopathy is being assessed for stress-ulcer prevention. Which statement accurately describes the 2026 Surviving Sepsis Campaign recommendation?",
+          "choices": [
+            "All patients with sepsis require lifelong acid suppression",
+            "H2 blockers are contraindicated in every septic patient",
+            "PPI prophylaxis is conditionally suggested over no prophylaxis when GI bleeding risk factors are present",
+            "The recommendation proves that PPIs are superior to H2 blockers"
+          ],
+          "answer": 2,
+          "rationale": "The recommendation addresses PPI versus no prophylaxis in adults with sepsis or septic shock and GI bleeding risk. It is conditional with moderate-certainty evidence; it is not a head-to-head PPI-versus-H2-blocker conclusion.",
+          "reviewHref": "#perioperative-stress-ulcer",
+          "difficulty": "advanced"
+        },
+        "after": {
+          "id": "periop-sup-sepsis",
+          "question": "An adult with septic shock and coagulopathy is being assessed for stress-ulcer prevention. Which statement accurately describes the 2026 Surviving Sepsis Campaign recommendation?",
+          "choices": [
+            "All patients with sepsis require lifelong acid suppression",
+            "H2 blockers are contraindicated in every septic patient",
+            "PPI prophylaxis is conditionally suggested over no prophylaxis when GI bleeding risk factors are present",
+            "The recommendation proves that PPIs are superior to H2 blockers"
+          ],
+          "answer": 2,
+          "rationale": "Coagulopathy is a recognized bleeding risk in this adult with septic shock. The 2026 Surviving Sepsis Campaign conditionally suggests PPI prophylaxis over no prophylaxis for at-risk adults, with moderate-certainty evidence. That comparator does not itself prove head-to-head superiority over H2 blockers. The guideline rationale separately cites earlier comparative evidence favoring PPIs for bleeding prevention and permits H2 blockers as a reasonable alternative when PPIs are unavailable. It does not contraindicate H2 blockers in every septic patient or require lifelong treatment for all sepsis; reassess risk and the stopping rule.",
+          "reviewHref": "#perioperative-stress-ulcer",
+          "difficulty": "advanced"
+        }
+      }
+    },
+    "addedBodies": [],
+    "addedReferences": [],
+    "wholeBodies": [
+      "Separate ICU location from bleeding risk",
+      "Choose a low-dose preventive regimen",
+      "Apply sepsis-specific guidance",
+      "Define low dose and distinguish active bleeding",
+      "Account for feeding and neurologic illness",
+      "Monitor the selected acid-suppressive treatment",
+      "Preserve an independent treatment indication",
+      "Stop when the reason ends"
+    ],
+    "figures": [
+      "perioperative-stress-ulcer"
+    ],
+    "checks": {
+      "perioperative-stress-ulcer": {
+        "before": {
+          "question": "An extubated, stable, enterally fed ICU patient has no neurologic critical illness, coagulopathy, shock, chronic liver disease, or separate acid indication. What is the best action?",
+          "choices": [
+            "Discontinue routine stress-ulcer prophylaxis",
+            "Continue lifelong prophylaxis because the patient was ventilated",
+            "Double the acid-suppressive dose",
+            "Combine a PPI and H2RA"
+          ],
+          "answer": 0,
+          "rationale": "This low-risk, enterally fed patient has no remaining stated bleeding risk or independent acid-treatment indication. SCCM/ASHP conditionally suggests avoiding prophylaxis in this population, with very low-certainty evidence, and calls for stopping it when risk factors resolve. Prior ventilation does not justify lifelong treatment, a higher dose or routine combined PPI and H2RA therapy. Reassess if the clinical risk changes.",
+          "reviewHref": "#perioperative-stress-ulcer"
+        },
+        "after": {
+          "question": "An extubated, stable, enterally fed ICU patient has no neurologic critical illness, coagulopathy, shock, chronic liver disease, or separate acid indication. What is the best action?",
+          "choices": [
+            "Discontinue routine stress-ulcer prophylaxis",
+            "Continue lifelong prophylaxis because the patient was ventilated",
+            "Double the acid-suppressive dose",
+            "Combine a PPI and H2RA"
+          ],
+          "answer": 0,
+          "rationale": "This low-risk, enterally fed patient has no remaining stated bleeding risk or independent acid-treatment indication. SCCM/ASHP conditionally suggests avoiding prophylaxis in this population, with very low-certainty evidence, and calls for stopping it when risk factors resolve. Prior ventilation does not justify lifelong treatment, a higher dose or routine combined PPI and H2RA therapy. Reassess if the clinical risk changes.",
+          "reviewHref": "#perioperative-stress-ulcer"
+        }
+      }
+    }
+  },
+  "coverage": {
+    "evidence": "enteral-nutrition-broader-icu-2026-review.json",
+    "moduleQuestions": 81,
+    "wholeQuestionsReconciled": 7,
+    "newWholeQuestionsVerified": 2,
+    "newVerifiedBankIds": [
+      "periop-sup-ventilation",
+      "periop-sup-sepsis"
+    ],
+    "previouslyVerifiedQuestionsRecheckedWithoutDoubleCounting": 5,
+    "broaderFeedingBankVerifiedAfter": 235,
+    "wholeBodiesNewlyVerified": 2,
+    "wholeBodiesReconciled": 8,
+    "wholeStressUlcerLessonVerified": true,
+    "wholeLessonMetadataVerified": true,
+    "figureVerified": true,
+    "embeddedCheckVerified": true,
+    "sourceVerifiedBankIds": [
+      "periop-sup-fed-risk",
+      "periop-sup-neuro",
+      "periop-sup-dose",
+      "periop-sup-reconcile",
+      "periop-sup-ventilation",
+      "periop-sup-route",
+      "periop-sup-sepsis"
+    ],
+    "wholeParentModuleVerified": false,
+    "wholeENModuleVerified": false,
+    "wholeChaptersVerified": false,
+    "all81IdsStemsChoicesKeysAnchorsAndOrderUnchanged": true,
+    "all1180CumulativeObjectsUnchanged": true
+  },
+  "wholeBodyReview": [
+    {
+      "heading": "Separate ICU location from bleeding risk",
+      "finalBody": "The 2024 SCCM and ASHP guideline identifies coagulopathy, shock, and chronic liver disease as likely risk factors for clinically important stress-related upper gastrointestinal bleeding. Its evidence review did not establish ventilation alone as an independent risk factor. The 2026 contextualized guideline for adult ICUs in Saudi Arabia, Kuwait, and the Nordic countries incorporates newer evidence. Its practical considerations say clinicians may consider mechanically ventilated patients potentially at risk and assess them individually. This is not a separate graded recommendation requiring prophylaxis for every ventilated patient. Earlier uncertainty does not prove that ventilated patients cannot benefit.",
+      "wholeBodyVerified": true,
+      "sourceEvidence": "enteral-nutrition-broader-icu-2026-review.json"
+    },
+    {
+      "heading": "Choose a low-dose preventive regimen",
+      "finalBody": "For critically ill adults with bleeding risk factors, the 2024 SCCM/ASHP guideline conditionally suggests either a proton pump inhibitor or a histamine-2 receptor antagonist as first-line prophylaxis, with moderate-certainty evidence. It also accepts enteral or intravenous delivery, with low-certainty evidence. Choose one appropriate low-dose agent and route after checking organ function, interactions, enteral access and the original indication; these recommendations do not call for routine combined PPI and H2RA therapy.",
+      "wholeBodyVerified": true,
+      "sourceEvidence": "enteral-nutrition-broader-icu-stress-ulcer-review.json"
+    },
+    {
+      "heading": "Apply sepsis-specific guidance",
+      "finalBody": "For adults with sepsis or septic shock and gastrointestinal bleeding risk factors, the 2026 Surviving Sepsis Campaign conditionally suggests PPI prophylaxis rather than no prophylaxis, with moderate-certainty evidence. This recommendation compares PPI with no prophylaxis; it does not itself prove PPI superiority over H2 blockers or make prophylaxis automatic for every patient with sepsis. The rationale cites earlier comparative evidence favoring PPIs for bleeding prevention and identifies H2 blockers as a reasonable alternative when PPIs are unavailable. Keep risk assessment, dose selection and stopping rules explicit.",
+      "wholeBodyVerified": true,
+      "sourceEvidence": "enteral-nutrition-broader-icu-2026-review.json"
+    },
+    {
+      "heading": "Define low dose and distinguish active bleeding",
+      "finalBody": "SCCM/ASHP defines low-dose daily totals as at most 40 mg for pantoprazole, omeprazole or esomeprazole; 30 mg for lansoprazole; and 40 mg for famotidine. These are preventive dose categories, not a universal prescription: renal function and product-specific administration still matter. Active gastrointestinal bleeding requires its own evaluation and treatment pathway.",
+      "wholeBodyVerified": true,
+      "sourceEvidence": "enteral-nutrition-broader-icu-stress-ulcer-review.json"
+    },
+    {
+      "heading": "Account for feeding and neurologic illness",
+      "finalBody": "Enteral nutrition probably reduces clinically important stress-related upper gastrointestinal bleeding, but feeding does not remove persistent risk such as coagulopathy. SCCM/ASHP conditionally suggests prophylaxis for fed adults who remain at risk and separately for neurocritical-care adults; both recommendations have very low-certainty evidence. It suggests avoiding prophylaxis in low-risk, fed adults, also with very low certainty, and notes that concurrent prophylaxis and feeding may increase pneumonia risk. Keep population, bleeding risk and uncertainty explicit.",
+      "wholeBodyVerified": true,
+      "sourceEvidence": "enteral-nutrition-broader-icu-stress-ulcer-review.json"
+    },
+    {
+      "heading": "Monitor the selected acid-suppressive treatment",
+      "finalBody": "The book describes thrombocytopenia and mental-status changes with H2 receptor antagonists, particularly in older patients or those with renal impairment, and notes that tolerance to their effect can occur. Its PPI tables list C. difficile-associated diarrhea and other adverse effects; fracture warnings concern high doses or prolonged exposure. Review new symptoms, renal function and the continuing indication. Reported associations with infection or pneumonia do not establish that acid suppression caused an individual patient's illness.",
+      "wholeBodyVerified": true,
+      "sourceEvidence": "enteral-nutrition-broader-icu-stress-ulcer-review.json"
+    },
+    {
+      "heading": "Preserve an independent treatment indication",
+      "finalBody": "A PPI used before ICU admission may be treating recent upper gastrointestinal bleeding, erosive esophagitis, a hypersecretory condition or H. pylori eradication. Reconcile that independent indication before stopping it, weighing benefit, adverse effects, interactions and the available route. If the history is unclear, clarify it instead of assuming the drug was started solely for ICU prophylaxis. Resolution of stress-ulcer risk alone does not establish that the other treatment should end.",
+      "wholeBodyVerified": true,
+      "sourceEvidence": "enteral-nutrition-broader-icu-stress-ulcer-review.json"
+    },
+    {
+      "heading": "Stop when the reason ends",
+      "finalBody": "Assess the indication daily and discontinue stress-ulcer prophylaxis when its risk factors are no longer present. SCCM/ASHP specifically calls for review and discontinuation of unnecessary prophylaxis before transfer out of the ICU to prevent inappropriate continuation. Its suggestion against prophylaxis in low-risk, enterally fed adults has very low-certainty evidence. Reconcile any separate acid-treatment indication so that a prophylaxis stop rule does not remove justified treatment.",
+      "wholeBodyVerified": true,
+      "sourceEvidence": "enteral-nutrition-broader-icu-stress-ulcer-review.json"
+    }
+  ],
+  "metadataReview": {
+    "wholeLessonMetadataVerified": true,
+    "final": {
+      "slug": "perioperative-stress-ulcer",
+      "title": "Use Stress-Ulcer Prophylaxis Only While Risk Persists",
+      "visual": "periop-stress-ulcer",
+      "summary": "Stress-related mucosal bleeding prevention is a temporary risk intervention. Coagulopathy, shock, and chronic liver disease are the clearest current risk factors, while enteral nutrition, ventilation, neurologic illness, and preexisting acid disease also inform the decision.",
+      "concepts": [
+        "Risk stratification",
+        "PPI",
+        "H2RA",
+        "Enteral nutrition",
+        "Deprescribing"
+      ],
+      "application": "Write the current risk factor, route, agent, reassessment date, stop rule, and any independent long-term acid indication.",
+      "keyPoints": [
+        "Risk factors drive prophylaxis.",
+        "Assess ventilated patients individually; do not equate uncertain independent risk with no benefit.",
+        "Either low-dose PPI or H2RA can be used.",
+        "Daily discontinuation review is part of the prescription."
+      ]
+    },
+    "scope": "Title/summary/concepts/application/keypoints checked against temporary prevention, risk assessment, selected low-dose agent/route, feeding/neurologic considerations, daily stopping review and independent indication. First-line either-agent statement carries explicit 2024 scope in body; sepsis2026 distinction explicit in separate body."
+  },
+  "figureReview": {
+    "wholeFigureVerified": true,
+    "unchanged": true,
+    "visual": "periop-stress-ulcer",
+    "sourceEvidence": "enteral-nutrition-broader-icu-stress-ulcer-review.json",
+    "scope": "All three assess/prevent/stop nodes and captions rechecked against whole lesson and primary guidance; qualitative clinical map, no observed outcome data."
+  },
+  "embeddedCheckReview": {
+    "final": {
+      "question": "An extubated, stable, enterally fed ICU patient has no neurologic critical illness, coagulopathy, shock, chronic liver disease, or separate acid indication. What is the best action?",
+      "choices": [
+        "Discontinue routine stress-ulcer prophylaxis",
+        "Continue lifelong prophylaxis because the patient was ventilated",
+        "Double the acid-suppressive dose",
+        "Combine a PPI and H2RA"
+      ],
+      "answer": 0,
+      "rationale": "This low-risk, enterally fed patient has no remaining stated bleeding risk or independent acid-treatment indication. SCCM/ASHP conditionally suggests avoiding prophylaxis in this population, with very low-certainty evidence, and calls for stopping it when risk factors resolve. Prior ventilation does not justify lifelong treatment, a higher dose or routine combined PPI and H2RA therapy. Reassess if the clinical risk changes.",
+      "reviewHref": "#perioperative-stress-ulcer"
+    },
+    "wholeCheckVerified": true,
+    "unchanged": true,
+    "sourceEvidence": "enteral-nutrition-broader-icu-stress-ulcer-review.json",
+    "bothFeedbackStatesDesktopMobileVerified": true
+  },
+  "questionReview": [
+    {
+      "final": {
+        "id": "periop-sup-fed-risk",
+        "question": "An enterally fed ICU patient still has significant coagulopathy. Does feeding alone justify stopping stress-ulcer prophylaxis?",
+        "choices": [
+          "Yes; feeding removes bleeding risk",
+          "No; reassess the persistent risk and continue appropriate prophylaxis",
+          "Yes; replace the PPI with no preventive therapy regardless of risk",
+          "No; add an H2RA to every PPI"
+        ],
+        "answer": 1,
+        "rationale": "No. Coagulopathy remains a guideline-recognized bleeding risk despite enteral feeding. SCCM/ASHP conditionally suggests prophylaxis for fed critically ill adults who retain risk factors, with very low-certainty evidence. Reassess the actual risk and use an appropriate low-dose agent; feeding alone does not justify stopping, and the recommendation does not require adding an H2RA to every PPI.",
+        "reviewHref": "#perioperative-stress-ulcer",
+        "difficulty": "clinical"
+      },
+      "wholeStemAlternativesKeyRationaleAndAnchorVerified": true,
+      "sourceEvidence": "enteral-nutrition-broader-icu-stress-ulcer-review.json",
+      "newlyCounted": false
+    },
+    {
+      "final": {
+        "id": "periop-sup-neuro",
+        "question": "How should the 2024 SCCM/ASHP recommendation for neurocritical-care adults be represented?",
+        "choices": [
+          "A strong recommendation based on high-certainty evidence",
+          "A prohibition on acid suppression",
+          "A suggestion to use prophylaxis, supported by very low-certainty evidence",
+          "Proof that all neurologic outpatients need a PPI"
+        ],
+        "answer": 2,
+        "rationale": "SCCM/ASHP conditionally suggests prophylaxis for neurocritical-care adults compared with no prophylaxis, with very low-certainty evidence. This is neither a strong high-certainty recommendation nor a prohibition. Its ICU population does not establish routine PPI treatment for every neurologic outpatient.",
+        "reviewHref": "#perioperative-stress-ulcer",
+        "difficulty": "clinical"
+      },
+      "wholeStemAlternativesKeyRationaleAndAnchorVerified": true,
+      "sourceEvidence": "enteral-nutrition-broader-icu-stress-ulcer-review.json",
+      "newlyCounted": false
+    },
+    {
+      "final": {
+        "id": "periop-sup-dose",
+        "question": "Which pantoprazole daily total falls within the SCCM/ASHP low-dose category for stress-ulcer prophylaxis?",
+        "choices": [
+          "40 mg",
+          "80 mg",
+          "120 mg",
+          "192 mg"
+        ],
+        "answer": 0,
+        "rationale": "The low-dose category permits a pantoprazole daily total of no more than 40 mg. Thus 40 mg meets the category; 80, 120 and 192 mg exceed it. This preventive ceiling is not a universal prescription or an active gastrointestinal bleeding regimen. Verify the patient, indication and actual product before selecting treatment.",
+        "reviewHref": "#perioperative-stress-ulcer",
+        "difficulty": "clinical"
+      },
+      "wholeStemAlternativesKeyRationaleAndAnchorVerified": true,
+      "sourceEvidence": "enteral-nutrition-broader-icu-stress-ulcer-review.json",
+      "newlyCounted": false
+    },
+    {
+      "final": {
+        "id": "periop-sup-reconcile",
+        "question": "An ICU patient no longer has stress-ulcer risk factors but was taking a PPI for documented erosive esophagitis before admission. What is the best reconciliation?",
+        "choices": [
+          "Stop every acid-suppressive medicine at ICU transfer",
+          "Add famotidine to replace the treatment indication",
+          "Continue ICU prophylaxis indefinitely without a diagnosis",
+          "Review and retain therapy appropriate for the independent esophageal indication"
+        ],
+        "answer": 3,
+        "rationale": "Review and retain treatment appropriate for documented erosive esophagitis while reassessing the regimen. SCCM/ASHP distinguishes the pre-ICU acid-treatment indication from temporary stress-ulcer prophylaxis; the book also describes PPI treatment to heal erosions and regular review of maintenance need. Do not automatically stop justified therapy at transfer, add famotidine without a reason or continue undocumented ICU prophylaxis indefinitely.",
+        "reviewHref": "#perioperative-stress-ulcer",
+        "difficulty": "clinical"
+      },
+      "wholeStemAlternativesKeyRationaleAndAnchorVerified": true,
+      "sourceEvidence": "enteral-nutrition-broader-icu-stress-ulcer-review.json",
+      "newlyCounted": false
+    },
+    {
+      "final": {
+        "id": "periop-sup-ventilation",
+        "question": "What follows from the 2024 uncertainty about ventilation as an independent bleeding risk factor and the newer 2026 contextualized guidance?",
+        "choices": [
+          "No ventilated patient benefits from prophylaxis",
+          "Assess the ventilated patient individually, considering the full bleeding-risk profile",
+          "Every ventilated patient needs lifelong PPI therapy",
+          "Choose therapy solely by the ventilator model"
+        ],
+        "answer": 1,
+        "rationale": "Assess the ventilated adult individually using the full bleeding-risk profile and the benefit-risk balance. The 2024 uncertainty about ventilation as an independent risk factor is not proof that no ventilated patient benefits. The 2026 Saudi/Kuwait/Nordic contextualized guideline places this individualized assessment in its practical considerations, rather than a separate graded mandate for every ventilated patient. Neither source makes past ventilation a lifelong indication or bases prophylaxis on ventilator model.",
+        "reviewHref": "#perioperative-stress-ulcer",
+        "difficulty": "clinical"
+      },
+      "wholeStemAlternativesKeyRationaleAndAnchorVerified": true,
+      "sourceEvidence": "enteral-nutrition-broader-icu-2026-review.json",
+      "newlyCounted": true
+    },
+    {
+      "final": {
+        "id": "periop-sup-route",
+        "question": "A high-risk ICU patient cannot receive enteral medication and has no class-specific contraindication. Which plan fits SCCM/ASHP guidance?",
+        "choices": [
+          "Defer prophylaxis until oral intake resumes",
+          "Use a high-dose infusion solely because the patient is in the ICU",
+          "Use an appropriate low-dose IV PPI or H2RA with daily reassessment",
+          "Use both drug classes routinely"
+        ],
+        "answer": 2,
+        "rationale": "SCCM/ASHP conditionally accepts either enteral or IV prophylaxis in at-risk critically ill adults, with low-certainty evidence. When enteral delivery is impractical, an appropriate low-dose IV agent can be used after checking organ function, interactions and the indication. The route does not itself justify delaying indicated prevention, increasing the preventive dose or combining both drug classes routinely.",
+        "reviewHref": "#perioperative-stress-ulcer",
+        "difficulty": "clinical"
+      },
+      "wholeStemAlternativesKeyRationaleAndAnchorVerified": true,
+      "sourceEvidence": "enteral-nutrition-broader-icu-stress-ulcer-review.json",
+      "newlyCounted": false
+    },
+    {
+      "final": {
+        "id": "periop-sup-sepsis",
+        "question": "An adult with septic shock and coagulopathy is being assessed for stress-ulcer prevention. Which statement accurately describes the 2026 Surviving Sepsis Campaign recommendation?",
+        "choices": [
+          "All patients with sepsis require lifelong acid suppression",
+          "H2 blockers are contraindicated in every septic patient",
+          "PPI prophylaxis is conditionally suggested over no prophylaxis when GI bleeding risk factors are present",
+          "The recommendation proves that PPIs are superior to H2 blockers"
+        ],
+        "answer": 2,
+        "rationale": "Coagulopathy is a recognized bleeding risk in this adult with septic shock. The 2026 Surviving Sepsis Campaign conditionally suggests PPI prophylaxis over no prophylaxis for at-risk adults, with moderate-certainty evidence. That comparator does not itself prove head-to-head superiority over H2 blockers. The guideline rationale separately cites earlier comparative evidence favoring PPIs for bleeding prevention and permits H2 blockers as a reasonable alternative when PPIs are unavailable. It does not contraindicate H2 blockers in every septic patient or require lifelong treatment for all sepsis; reassess risk and the stopping rule.",
+        "reviewHref": "#perioperative-stress-ulcer",
+        "difficulty": "advanced"
+      },
+      "wholeStemAlternativesKeyRationaleAndAnchorVerified": true,
+      "sourceEvidence": "enteral-nutrition-broader-icu-2026-review.json",
+      "newlyCounted": true
+    }
+  ],
+  "calculations": {
+    "newCalculationsAdded": 0,
+    "retainedDoseQuestionIndependentlyRechecked": "40mg≤40mg ceiling;80/120/192mg all exceed; no universal or active-bleeding prescription implied. Prior full dose-category verification retained."
+  },
+  "validation": {
+    "productionBuild": {
+      "status": "passed",
+      "exitCode": 0,
+      "pages": 567,
+      "isolatedBaseCommit": "c9b0ca316db6891366fc4ddff486adc1f071a72c"
+    },
+    "structure": {
+      "status": "passed",
+      "questions": 81,
+      "hardErrors": [],
+      "sourceGaps": [],
+      "wholeOtherLessonsNotClinicallyVerifiedByStructuralPass": true
+    },
+    "objectPreservation": {
+      "status": "passed",
+      "all81QuestionIdsStemsChoicesKeysAnchorsAndOrderUnchanged": true,
+      "other79QuestionWholeObjectsUnchanged": true,
+      "all1180CumulativeWholeObjectsUnchanged": true,
+      "allOtherModuleWholeObjectsUnchanged": true,
+      "onlyTwoBodiesAndTwoRationalesChanged": true,
+      "lessonBodies": 8,
+      "lessonQuestions": 7
+    },
+    "browser": {
+      "status": "passed",
+      "results": [
+        {
+          "width": 1440,
+          "module": "perioperative-critical-care-pharmacology",
+          "bodies": 82,
+          "exactMetadata": true,
+          "checkResults": [
+            {
+              "slug": "perioperative-stress-ulcer",
+              "wrong": true,
+              "feedbackAndAnchorVerified": true
+            },
+            {
+              "slug": "perioperative-stress-ulcer",
+              "wrong": false,
+              "feedbackAndAnchorVerified": true
+            }
+          ],
+          "references": 30,
+          "wholeLessonClinicalVerification": true,
+          "approved2026SourcesReconciled": true,
+          "attempts": [
+            {
+              "target": "periop-sup-ventilation",
+              "seed": 10,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "periop-antifib-seizure",
+                "periop-safety-eye-care",
+                "periop-propofol-calories",
+                "periop-mh-label",
+                "periop-sup-ventilation",
+                "periop-etomidate-analgesia",
+                "periop-agent-cirrhosis",
+                "periop-sup-fed-risk",
+                "periop-ketamine-interaction",
+                "periop-sup-reconcile"
+              ]
+            },
+            {
+              "target": "periop-sup-ventilation",
+              "seed": 10,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "periop-antifib-seizure",
+                "periop-safety-eye-care",
+                "periop-propofol-calories",
+                "periop-mh-label",
+                "periop-sup-ventilation",
+                "periop-etomidate-analgesia",
+                "periop-agent-cirrhosis",
+                "periop-sup-fed-risk",
+                "periop-ketamine-interaction",
+                "periop-sup-reconcile"
+              ]
+            },
+            {
+              "target": "periop-sup-sepsis",
+              "seed": 4,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "periop-nmba-sepsis",
+                "periop-sup-neuro",
+                "periop-propofol-asepsis",
+                "periop-reversal-case-4",
+                "periop-sup-sepsis",
+                "periop-ketamine-procedure",
+                "periop-reversal-case-5",
+                "periop-pancuronium-reversal-boundary",
+                "periop-rocuronium-rsi-scope",
+                "periop-pediatric-reversal-1"
+              ]
+            },
+            {
+              "target": "periop-sup-sepsis",
+              "seed": 4,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "periop-nmba-sepsis",
+                "periop-sup-neuro",
+                "periop-propofol-asepsis",
+                "periop-reversal-case-4",
+                "periop-sup-sepsis",
+                "periop-ketamine-procedure",
+                "periop-reversal-case-5",
+                "periop-pancuronium-reversal-boundary",
+                "periop-rocuronium-rsi-scope",
+                "periop-pediatric-reversal-1"
+              ]
+            }
+          ],
+          "noHorizontalOverflow": true,
+          "unauthenticated": true
+        },
+        {
+          "width": 390,
+          "module": "perioperative-critical-care-pharmacology",
+          "bodies": 82,
+          "exactMetadata": true,
+          "checkResults": [
+            {
+              "slug": "perioperative-stress-ulcer",
+              "wrong": true,
+              "feedbackAndAnchorVerified": true
+            },
+            {
+              "slug": "perioperative-stress-ulcer",
+              "wrong": false,
+              "feedbackAndAnchorVerified": true
+            }
+          ],
+          "references": 30,
+          "wholeLessonClinicalVerification": true,
+          "approved2026SourcesReconciled": true,
+          "attempts": [
+            {
+              "target": "periop-sup-ventilation",
+              "seed": 10,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "periop-antifib-seizure",
+                "periop-safety-eye-care",
+                "periop-propofol-calories",
+                "periop-mh-label",
+                "periop-sup-ventilation",
+                "periop-etomidate-analgesia",
+                "periop-agent-cirrhosis",
+                "periop-sup-fed-risk",
+                "periop-ketamine-interaction",
+                "periop-sup-reconcile"
+              ]
+            },
+            {
+              "target": "periop-sup-ventilation",
+              "seed": 10,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "periop-antifib-seizure",
+                "periop-safety-eye-care",
+                "periop-propofol-calories",
+                "periop-mh-label",
+                "periop-sup-ventilation",
+                "periop-etomidate-analgesia",
+                "periop-agent-cirrhosis",
+                "periop-sup-fed-risk",
+                "periop-ketamine-interaction",
+                "periop-sup-reconcile"
+              ]
+            },
+            {
+              "target": "periop-sup-sepsis",
+              "seed": 4,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "periop-nmba-sepsis",
+                "periop-sup-neuro",
+                "periop-propofol-asepsis",
+                "periop-reversal-case-4",
+                "periop-sup-sepsis",
+                "periop-ketamine-procedure",
+                "periop-reversal-case-5",
+                "periop-pancuronium-reversal-boundary",
+                "periop-rocuronium-rsi-scope",
+                "periop-pediatric-reversal-1"
+              ]
+            },
+            {
+              "target": "periop-sup-sepsis",
+              "seed": 4,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "periop-nmba-sepsis",
+                "periop-sup-neuro",
+                "periop-propofol-asepsis",
+                "periop-reversal-case-4",
+                "periop-sup-sepsis",
+                "periop-ketamine-procedure",
+                "periop-reversal-case-5",
+                "periop-pancuronium-reversal-boundary",
+                "periop-rocuronium-rsi-scope",
+                "periop-pediatric-reversal-1"
+              ]
+            }
+          ],
+          "noHorizontalOverflow": true,
+          "unauthenticated": true
+        }
+      ],
+      "errors": [],
+      "captures": [
+        "body-module-Separate-ICU-location-from-bleeding-risk-1440.png",
+        "body-module-Choose-a-low-dose-preventive-regimen-1440.png",
+        "body-module-Apply-sepsis-specific-guidance-1440.png",
+        "body-module-Define-low-dose-and-distinguish-active-bleeding-1440.png",
+        "body-module-Account-for-feeding-and-neurologic-illness-1440.png",
+        "body-module-Monitor-the-selected-acid-suppressive-treatment-1440.png",
+        "body-module-Preserve-an-independent-treatment-indication-1440.png",
+        "body-module-Stop-when-the-reason-ends-1440.png",
+        "figure-perioperative-stress-ulcer-1440.png",
+        "references-module-1440.png",
+        "question-periop-sup-ventilation-correct-1440.png",
+        "question-periop-sup-sepsis-correct-1440.png",
+        "check-perioperative-stress-ulcer-incorrect-1440.png",
+        "check-perioperative-stress-ulcer-correct-1440.png",
+        "body-module-Separate-ICU-location-from-bleeding-risk-390.png",
+        "body-module-Choose-a-low-dose-preventive-regimen-390.png",
+        "body-module-Apply-sepsis-specific-guidance-390.png",
+        "body-module-Define-low-dose-and-distinguish-active-bleeding-390.png",
+        "body-module-Account-for-feeding-and-neurologic-illness-390.png",
+        "body-module-Monitor-the-selected-acid-suppressive-treatment-390.png",
+        "body-module-Preserve-an-independent-treatment-indication-390.png",
+        "body-module-Stop-when-the-reason-ends-390.png",
+        "figure-perioperative-stress-ulcer-390.png",
+        "references-module-390.png",
+        "question-periop-sup-ventilation-incorrect-390.png",
+        "question-periop-sup-sepsis-incorrect-390.png",
+        "check-perioperative-stress-ulcer-incorrect-390.png",
+        "check-perioperative-stress-ulcer-correct-390.png"
+      ]
+    },
+    "visualInspection": {
+      "status": "passed",
+      "rawCapturesInspected": 29,
+      "nativeComparisonFiles": 14,
+      "comparisonsActuallyViewedDirectly": 13,
+      "referenceComparisonInspectedViaThreeNativeCrops": true,
+      "supplementalDesktopStopBodyActuallyViewed": true,
+      "allEightReviewedBodiesInspected": true,
+      "bothChangedQuestionCapturesReadable": true,
+      "checkBothStatesAndFigureReadable": true,
+      "sourceTablesCompleteOriginalHtmlVisuallyInspected": [
+        "Nordic Table1 two overlapping crops",
+        "Nordic Table2 three overlapping crops"
+      ],
+      "sourceOfficialSccmRecommendation87CardActuallyViewed": true,
+      "sourceFigure1NativeOriginalActuallyViewed": true,
+      "limitation": "Existing sticky module navigation obscures the mobile reference heading. Reference labels/hrefs separately match exact DOM. A clipped initial desktop stopping-rule letter in the row capture was resolved with a fully readable supplementary paragraph capture. No claim every scroll position is unobstructed."
+    },
+    "visualManifest": [
+      {
+        "comparison": "visual-compare-1.png",
+        "rawCaptures": [
+          "body-module-Separate-ICU-location-from-bleeding-risk-1440.png",
+          "body-module-Separate-ICU-location-from-bleeding-risk-390.png"
+        ],
+        "nativePixelsPreserved": true,
+        "canvasDimensions": [
+          1309,
+          575
+        ]
+      },
+      {
+        "comparison": "visual-compare-2.png",
+        "rawCaptures": [
+          "body-module-Choose-a-low-dose-preventive-regimen-1440.png",
+          "body-module-Choose-a-low-dose-preventive-regimen-390.png"
+        ],
+        "nativePixelsPreserved": true,
+        "canvasDimensions": [
+          1309,
+          438
+        ]
+      },
+      {
+        "comparison": "visual-compare-3.png",
+        "rawCaptures": [
+          "body-module-Apply-sepsis-specific-guidance-1440.png",
+          "body-module-Apply-sepsis-specific-guidance-390.png"
+        ],
+        "nativePixelsPreserved": true,
+        "canvasDimensions": [
+          1309,
+          521
+        ]
+      },
+      {
+        "comparison": "visual-compare-4.png",
+        "rawCaptures": [
+          "body-module-Define-low-dose-and-distinguish-active-bleeding-1440.png",
+          "body-module-Define-low-dose-and-distinguish-active-bleeding-390.png"
+        ],
+        "nativePixelsPreserved": true,
+        "canvasDimensions": [
+          1309,
+          356
+        ]
+      },
+      {
+        "comparison": "visual-compare-5.png",
+        "rawCaptures": [
+          "body-module-Account-for-feeding-and-neurologic-illness-1440.png",
+          "body-module-Account-for-feeding-and-neurologic-illness-390.png"
+        ],
+        "nativePixelsPreserved": true,
+        "canvasDimensions": [
+          1309,
+          493
+        ]
+      },
+      {
+        "comparison": "visual-compare-6.png",
+        "rawCaptures": [
+          "body-module-Monitor-the-selected-acid-suppressive-treatment-1440.png",
+          "body-module-Monitor-the-selected-acid-suppressive-treatment-390.png"
+        ],
+        "nativePixelsPreserved": true,
+        "canvasDimensions": [
+          1309,
+          492
+        ]
+      },
+      {
+        "comparison": "visual-compare-7.png",
+        "rawCaptures": [
+          "body-module-Preserve-an-independent-treatment-indication-1440.png",
+          "body-module-Preserve-an-independent-treatment-indication-390.png"
+        ],
+        "nativePixelsPreserved": true,
+        "canvasDimensions": [
+          1309,
+          438
+        ]
+      },
+      {
+        "comparison": "visual-compare-8.png",
+        "rawCaptures": [
+          "body-module-Stop-when-the-reason-ends-1440.png",
+          "body-module-Stop-when-the-reason-ends-390.png"
+        ],
+        "nativePixelsPreserved": true,
+        "canvasDimensions": [
+          1309,
+          438
+        ]
+      },
+      {
+        "comparison": "visual-compare-9.png",
+        "rawCaptures": [
+          "figure-perioperative-stress-ulcer-1440.png",
+          "figure-perioperative-stress-ulcer-390.png"
+        ],
+        "nativePixelsPreserved": true,
+        "canvasDimensions": [
+          1309,
+          607
+        ]
+      },
+      {
+        "comparison": "visual-compare-10.png",
+        "rawCaptures": [
+          "references-module-1440.png",
+          "references-module-390.png"
+        ],
+        "nativePixelsPreserved": true,
+        "canvasDimensions": [
+          1309,
+          2309
+        ]
+      },
+      {
+        "comparison": "visual-compare-11.png",
+        "rawCaptures": [
+          "question-periop-sup-ventilation-correct-1440.png",
+          "question-periop-sup-ventilation-incorrect-390.png"
+        ],
+        "nativePixelsPreserved": true,
+        "canvasDimensions": [
+          1309,
+          834
+        ]
+      },
+      {
+        "comparison": "visual-compare-12.png",
+        "rawCaptures": [
+          "question-periop-sup-sepsis-correct-1440.png",
+          "question-periop-sup-sepsis-incorrect-390.png"
+        ],
+        "nativePixelsPreserved": true,
+        "canvasDimensions": [
+          1309,
+          950
+        ]
+      },
+      {
+        "comparison": "visual-compare-13.png",
+        "rawCaptures": [
+          "check-perioperative-stress-ulcer-incorrect-1440.png",
+          "check-perioperative-stress-ulcer-incorrect-390.png"
+        ],
+        "nativePixelsPreserved": true,
+        "canvasDimensions": [
+          1309,
+          777
+        ]
+      },
+      {
+        "comparison": "visual-compare-14.png",
+        "rawCaptures": [
+          "check-perioperative-stress-ulcer-correct-1440.png",
+          "check-perioperative-stress-ulcer-correct-390.png"
+        ],
+        "nativePixelsPreserved": true,
+        "canvasDimensions": [
+          1309,
+          777
+        ]
+      }
+    ],
+    "limits": "Unauthenticated isolated local preview. Other five stress-ulcer questions retain prior verified browser evidence; whole objects rechecked unchanged. Technical DOM checks of other module lessons are not their clinical closure. Existing reference-heading overlay preserved and recorded; no main merge or production verification.",
+    "draftPreservation": {
+      "status": "passed",
+      "baselinePathsChecked": 809,
+      "allOtherDraftBytesAndDeletionsPreserved": true,
+      "dirtyProductBaselineSha256RecoveredByReverseScopedEdits": true,
+      "workingLedgerPriorFieldsPreservedExceptScopedLesson": true,
+      "otherCommittedLedgerEntriesPreserved": true,
+      "candidateHeadDerivedProductBytesStagedOrCommitted": true,
+      "unverifiedDraftIcuAndOtherAdditionsExcluded": true,
+      "scope": [
+        "src/data/modules/perioperativeCriticalCarePharmacology.js",
+        "src/data/questionBanks/perioperativeCriticalCarePharmacology.js",
+        "docs/clinical-audit/enteral-nutrition-broader-icu-2026-review.json",
+        "docs/clinical-audit/module-ledger.json",
+        "docs/clinical-audit/chapter-ledger.json",
+        "docs/clinical-audit/sequential-resume.json"
+      ]
+    }
+  },
+  "remainingReview": {
+    "wholeParentModuleVerified": false,
+    "wholeENModuleVerified": false,
+    "wholeChaptersVerified": false,
+    "nextAction": "Continue broader feeding inventory and whole-parent reintegration/source-policy reconciliation, beginning with remaining calcium/phosphorus lessons and adrenal/ICU assembled-parent coverage. Stress-ulcer and hypophosphatemia lessons are verified; do not recount their questions. Earliest sequential checkpoint remains Chapter 1 printed 7 / PDF 19, formula entry 15 fluid needs, with Chapter 11 feeding dependencies. Full 82-chapter goal remains active."
+  },
+  "release": {
+    "branch": "audit/rxprep-content-2026-09-24",
+    "commit": null,
+    "push": "pending",
+    "receipt": "enteral-nutrition-broader-icu-2026-release.json",
+    "mainMerge": "not performed",
+    "production": "not verified"
+  },
+  "wholeGoalComplete": false
+}

@@ -8441,14 +8441,16 @@
       "lessons": [
         {
           "slug": "perioperative-stress-ulcer",
-          "status": "reviewing",
-          "latestScopedEvidence": "enteral-nutrition-broader-icu-stress-ulcer-review.json",
+          "status": "verified",
+          "latestScopedEvidence": "enteral-nutrition-broader-icu-2026-review.json",
           "embeddedCheckVerified": true,
-          "wholeLessonVerified": false,
+          "wholeLessonVerified": true,
           "figureVerified": true,
-          "metadataVerified": false,
+          "metadataVerified": true,
           "verifiedBodyHeadings": [
+            "Separate ICU location from bleeding risk",
             "Choose a low-dose preventive regimen",
+            "Apply sepsis-specific guidance",
             "Define low dose and distinguish active bleeding",
             "Account for feeding and neurologic illness",
             "Monitor the selected acid-suppressive treatment",
@@ -8460,16 +8462,12 @@
             "periop-sup-neuro",
             "periop-sup-dose",
             "periop-sup-reconcile",
-            "periop-sup-route"
-          ],
-          "remainingBodyHeadings": [
-            "Separate ICU location from bleeding risk",
-            "Apply sepsis-specific guidance"
-          ],
-          "remainingQuestionIds": [
             "periop-sup-ventilation",
+            "periop-sup-route",
             "periop-sup-sepsis"
-          ]
+          ],
+          "remainingBodyHeadings": [],
+          "remainingQuestionIds": []
         },
         {
           "slug": "local-anesthetic-pharmacology",
@@ -8521,7 +8519,8 @@
         "2026-09-27: targeted actual-content reviews now cover all11lessons;74original questions,zero generated. Detailed sources/corrections/validation in toxicology-review.json. Lesson statuses updated to reviewing; final assembled clinical audit and open discrepancies remain before verification.",
         "2026-09-27: complete actual-content review, guideline/label/book discrepancies and original81-question bank reconciled. Build86665 exit0; structural noharderrors/sourcegaps; desktop/mobile and complete10-question practice interaction passed. See perioperative-completion-review.json for evidence, arithmetic, scope and limitations.",
         "enteral-nutrition-broader-adrenal-perioperative-review.json",
-        "enteral-nutrition-broader-icu-stress-ulcer-review.json"
+        "enteral-nutrition-broader-icu-stress-ulcer-review.json",
+        "enteral-nutrition-broader-icu-2026-review.json"
       ],
       "broaderEnteralAdministrationReview": {
         "evidence": "enteral-nutrition-broader-adrenal-perioperative-review.json",
@@ -8591,6 +8590,38 @@
         "all1180CumulativeObjectsUnchanged": true,
         "noNewQuestionIds": true,
         "retained2026ClinicalScopeNotRemoved": true
+      },
+      "latestIcu2026Review": {
+        "evidence": "enteral-nutrition-broader-icu-2026-review.json",
+        "moduleQuestions": 81,
+        "wholeQuestionsReconciled": 7,
+        "newWholeQuestionsVerified": 2,
+        "newVerifiedBankIds": [
+          "periop-sup-ventilation",
+          "periop-sup-sepsis"
+        ],
+        "previouslyVerifiedQuestionsRecheckedWithoutDoubleCounting": 5,
+        "broaderFeedingBankVerifiedAfter": 235,
+        "wholeBodiesNewlyVerified": 2,
+        "wholeBodiesReconciled": 8,
+        "wholeStressUlcerLessonVerified": true,
+        "wholeLessonMetadataVerified": true,
+        "figureVerified": true,
+        "embeddedCheckVerified": true,
+        "sourceVerifiedBankIds": [
+          "periop-sup-fed-risk",
+          "periop-sup-neuro",
+          "periop-sup-dose",
+          "periop-sup-reconcile",
+          "periop-sup-ventilation",
+          "periop-sup-route",
+          "periop-sup-sepsis"
+        ],
+        "wholeParentModuleVerified": false,
+        "wholeENModuleVerified": false,
+        "wholeChaptersVerified": false,
+        "all81IdsStemsChoicesKeysAnchorsAndOrderUnchanged": true,
+        "all1180CumulativeObjectsUnchanged": true
       }
     },
     {
