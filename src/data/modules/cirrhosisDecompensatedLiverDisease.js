@@ -419,3 +419,82 @@ cirrhosisDecompensatedLiverDiseaseModule.references.push(...[
     "href": "https://doi.org/10.1016/j.cgh.2021.07.018"
   }
 ]);
+
+// Reconcile the complete SBP lesson with diagnostic timing, response and indication-specific prevention.
+Object.assign(cirrhosisDecompensatedLiverDiseaseModule.submodules.find((lesson) => lesson.slug === "sbp"), {
+  "summary": "Recognize infected ascites even without fever, treat a PMN count of at least 250 cells/mm³ promptly, protect kidney perfusion with albumin, and distinguish treatment from selected prophylaxis.",
+  "concepts": [
+    "Diagnostic paracentesis",
+    "PMN ≥250 cells/mm³",
+    "Acquisition and resistance",
+    "Adjunctive albumin",
+    "Secondary peritonitis",
+    "Selected prophylaxis"
+  ],
+  "application": "Sample ascites promptly, begin active empiric antibiotics without awaiting culture, assess albumin and clinical response, investigate secondary-source clues in parallel, and document an individualized prevention plan after recovery.",
+  "lesson": [
+    {
+      "heading": "Sample promptly, even without fever",
+      "body": "SBP can present with abdominal pain or fever, but new encephalopathy, AKI, hypotension or otherwise unexplained deterioration may be the first clue. Perform diagnostic paracentesis promptly in patients with cirrhosis and ascites admitted urgently or non-electively, even if abdominal symptoms are absent. Obtain ascitic cell count with differential and culture before antibiotics when feasible; inoculate blood-culture bottles at the bedside and obtain blood cultures. Sampling must not delay urgent active therapy in an unstable patient."
+    },
+    {
+      "heading": "Treat neutrocytic ascites",
+      "body": "Use the absolute ascitic polymorphonuclear leukocyte count, not the total white-cell count or neutrophil percentage alone. A PMN count ≥250 cells/mm³ warrants prompt empiric treatment for suspected SBP while evaluating for other causes and a surgically treatable source. Culture-negative neutrocytic ascites is treated similarly. A negative culture, absence of fever or pending susceptibility report does not justify withholding treatment."
+    },
+    {
+      "heading": "Interpret culture-positive low-PMN fluid",
+      "body": "A positive culture with PMNs below 250 cells/mm³ requires clinical context. An asymptomatic patient with monomicrobial bacterascites may be observed with prompt repeat paracentesis and clinical reassessment, rather than automatic immediate antibiotics or dismissal of the result. Fever, abdominal pain, unexplained encephalopathy or other concerning infection findings justify empiric treatment even below the usual PMN threshold. Worsening physiology requires urgent reassessment."
+    },
+    {
+      "heading": "Choose context-aware coverage",
+      "body": "For community-acquired SBP without major resistance risk, an IV third-generation cephalosporin is a common initial choice; ceftriaxone 2 g every 24 hours is one academic-guidance regimen. A usual course is 5 to 7 days, individualized to organism and response. Hospital acquisition, critical illness, recent antibiotics, prior resistant isolates or prophylaxis can require broader local coverage. Review allergy, kidney function and susceptibility results, then narrow when appropriate. A prophylactic oral dose is not treatment for active SBP."
+    },
+    {
+      "heading": "Use albumin when indicated",
+      "body": "IV albumin is an adjunct to active antibiotics that reduces circulatory and kidney complications; AASLD guidance recommends albumin with SBP treatment, with particular benefit in patients with AKI or marked jaundice. The established regimen is 1.5 g/kg on day 1 and 1 g/kg on day 3. For an 80 kg patient using the stated dosing weight, those doses are 120 g and 80 g. Confirm the protocol and dosing weight and monitor respiratory and volume status. This regimen differs from albumin dosing per liter after large-volume paracentesis and does not replace antibiotics."
+    },
+    {
+      "heading": "Reassess antibiotic response",
+      "body": "Follow symptoms, blood pressure, kidney function, cultures and overall trajectory. Repeat ascitic PMNs at about 48 hours when response is uncertain or resistance or secondary peritonitis is a concern. A decline of less than 25% from the pretreatment count suggests failure and calls for reassessment of active coverage and a secondary source. Repeat tapping may be unnecessary when the patient improves and a recovered organism is susceptible to the administered drug. A falling count alone does not override clinical deterioration."
+    },
+    {
+      "heading": "Exclude a secondary source",
+      "body": "SBP has no surgically treatable intra-abdominal source. Focal peritoneal findings, polymicrobial growth, free air, very high PMNs or poor response should prompt urgent imaging and procedural consultation while antibiotics and stabilization continue. Ascitic protein >1 g/dL, glucose <50 mg/dL and LDH above the serum upper limit are supporting clues when at least two are present; they neither prove a perforation nor reliably exclude one when absent. A perforation or abscess may need source control and antimicrobial coverage including anaerobes."
+    },
+    {
+      "heading": "Prevent recurrence deliberately",
+      "body": "After recovery from SBP, arrange specialist-directed secondary prophylaxis, with individual review of resistance, adverse effects and whether ascites persists. Common US oral options are ciprofloxacin 500 mg daily or trimethoprim-sulfamethoxazole one double-strength tablet daily; select and adjust the regimen to the patient and local guidance. Primary prophylaxis without prior SBP is considered only in selected high-risk patients, such as ascitic protein <1.5 g/dL together with renal dysfunction or advanced liver failure. Low protein alone is not an instruction to treat every patient indefinitely. Reassess the indication and monitor antibiotic harms."
+    },
+    {
+      "heading": "Separate bleeding prophylaxis from long-term prevention",
+      "body": "Cirrhosis with acute upper gastrointestinal hemorrhage is a distinct short-course prophylaxis indication. IV ceftriaxone 1 g every 24 hours for up to 7 days is an AASLD regimen. This preventive dose and duration should not be confused with treatment of established SBP or long-term daily oral secondary prophylaxis. Alcohol-associated hepatitis alone does not justify universal prophylactic antibiotics, but a separate SBP or bleeding indication must still be recognized."
+    }
+  ],
+  "keyPoints": [
+    "Treat suspected SBP with PMNs ≥250 cells/mm³ before culture certainty.",
+    "Sample promptly; absent fever does not exclude infection.",
+    "Albumin supports kidney and circulatory protection alongside antibiotics.",
+    "Poor response or secondary-source clues require renewed evaluation.",
+    "Distinguish active treatment, short-course bleeding prophylaxis and selected long-term prevention."
+  ]
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseModule.submodules.find((lesson) => lesson.slug === "sbp").check, {
+  "question": "A patient with cirrhosis has ascitic PMNs of 310 cells/mm³; cultures are pending and no secondary source is apparent. Which action is best?",
+  "choices": [
+    "Begin active empiric antibiotics promptly and assess adjunctive albumin.",
+    "Wait for a positive ascitic culture before starting antibiotics.",
+    "Use only a prophylactic oral antibiotic dose.",
+    "Withhold antibiotics because fever is absent."
+  ],
+  "rationale": "PMNs ≥250 cells/mm³ warrant prompt treatment of suspected SBP. Culture results guide later adjustment; they are not a prerequisite. Assess albumin alongside treatment. A preventive oral dose or absence of fever does not provide adequate management of this episode."
+});
+cirrhosisDecompensatedLiverDiseaseModule.references.push(...[
+  {
+    "label": "University of Washington: SBP recognition and management (2024)",
+    "href": "https://www.hepatitisc.uw.edu/go/management-cirrhosis-related-complications/spontaneous-bacterial-peritonitis-recognition-management/core-concept/all/"
+  },
+  {
+    "label": "AASLD: SBP prophylaxis benefits, uncertainties and harms (2025)",
+    "href": "https://www.aasld.org/liver-fellow-network/core-series/why-series/antibiotics-sbp-prophylaxis-why-or-why-not"
+  }
+]);

@@ -628,3 +628,125 @@ Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => 
   ],
   "rationale": "Temporary symptom relief does not remove the prognostic importance of refractory ascites. Continue relief while evaluating transplant and selected advanced options. Delaying that assessment indefinitely can miss an appropriate treatment pathway."
 });
+
+// Reconcile complete clinical cases while preserving existing IDs, keys, difficulty and lesson links.
+Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => question.id === "cirrhosis-decompensated-045"), {
+  "question": "A patient with cirrhosis has ascitic PMNs of exactly 250 cells/mm³. Culture is pending and no secondary source is apparent. Which interpretation is best?",
+  "choices": [
+    "The treatment threshold for suspected SBP is met.",
+    "The count must exceed 500 cells/mm³ before treatment.",
+    "A positive culture is required before treatment.",
+    "The threshold is based on serum rather than ascitic neutrophils."
+  ],
+  "rationale": "The threshold is inclusive: ascitic PMNs ≥250 cells/mm³ warrant prompt treatment of suspected SBP. Culture guides later adjustment, and evaluation for other causes or a secondary source continues."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => question.id === "cirrhosis-decompensated-046"), {
+  "question": "A patient with cirrhosis and ascites is admitted urgently for new AKI but has no fever or abdominal pain. Which infection assessment is best?",
+  "choices": [
+    "Perform prompt diagnostic paracentesis despite absent abdominal symptoms.",
+    "Exclude SBP because fever is absent.",
+    "Tap only if the ascites becomes tense enough for therapeutic drainage.",
+    "Wait until antibiotics are finished before collecting ascitic fluid."
+  ],
+  "rationale": "SBP may present with AKI or no obvious abdominal symptoms. Cirrhosis with ascites and an urgent admission warrants prompt diagnostic sampling. Therapeutic drainage need and fever are not prerequisites; obtain cultures before antibiotics when feasible without delaying urgent therapy."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => question.id === "cirrhosis-decompensated-047"), {
+  "question": "Ascitic PMNs are 420 cells/mm³ and the patient is receiving active antibiotics for suspected SBP. Culture later shows no growth. Which plan is best?",
+  "choices": [
+    "Continue an appropriate treatment course while reassessing response and alternative causes.",
+    "Stop antibiotics solely because the culture is negative.",
+    "Replace treatment with a low-dose prophylaxis regimen immediately.",
+    "Require a positive blood culture before continuing therapy."
+  ],
+  "rationale": "Culture-negative neutrocytic ascites warrants treatment similarly to culture-positive SBP when other explanations are excluded. Clinical response and the source evaluation guide care. Negative ascitic or blood cultures alone do not justify stopping active treatment."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => question.id === "cirrhosis-decompensated-048"), {
+  "question": "Ascitic culture grows one organism, PMNs are 120 cells/mm³, and the patient has fever and new abdominal pain. Which action is best?",
+  "choices": [
+    "Treat the suspected infection promptly despite the PMN count being below 250.",
+    "Observe without antibiotics solely because PMNs are below 250.",
+    "Dismiss the positive culture as contamination without reassessment.",
+    "Give only albumin because bacterial growth does not require antibiotics."
+  ],
+  "rationale": "Symptomatic culture-positive low-PMN fluid requires empiric treatment. Observation with repeat sampling applies to an asymptomatic, clinically stable patient with monomicrobial bacterascites; a numeric threshold must not override concerning infection findings."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => question.id === "cirrhosis-decompensated-049"), {
+  "question": "A patient has community-acquired SBP without major resistance risk or a severe beta-lactam allergy. Which initial approach is appropriate?",
+  "choices": [
+    "An active IV third-generation cephalosporin, adjusted later to culture and response.",
+    "Ciprofloxacin 500 mg orally once daily as the sole treatment because it is a prophylaxis option.",
+    "Albumin alone until a culture result is available.",
+    "No antibiotics unless abdominal rigidity develops."
+  ],
+  "rationale": "Ceftriaxone or cefotaxime is common initial community-acquired treatment. Active infection requires treatment exposure, not a preventive oral dose. Albumin is adjunctive, and rigid peritoneal signs are not required for SBP."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => question.id === "cirrhosis-decompensated-050"), {
+  "question": "An 80 kg patient is prescribed SBP albumin using 1.5 g/kg on day 1 and 1 g/kg on day 3. What are the doses?",
+  "choices": [
+    "120 g on day 1 and 80 g on day 3.",
+    "80 g on day 1 and 120 g on day 3.",
+    "120 g every day for three days.",
+    "8 g on day 1 and 8 g on day 3."
+  ],
+  "rationale": "Day 1: 80 × 1.5 = 120 g. Day 3: 80 × 1 = 80 g. Use the confirmed dosing weight and protocol. This is an adjunct to antibiotics and is not the per-liter regimen used after large-volume paracentesis."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => question.id === "cirrhosis-decompensated-051"), {
+  "question": "After 48 hours of SBP antibiotics, ascitic PMNs fall from 1,000 to 850 cells/mm³ and symptoms persist. Which assessment is best?",
+  "choices": [
+    "The 15% decline suggests failure; reassess resistance and a secondary source.",
+    "The 15% decline proves adequate response because any fall is sufficient.",
+    "The count has fallen by 85%, so no further evaluation is needed.",
+    "Stop treatment because the count is below its starting value."
+  ],
+  "rationale": "The decline is (1,000 − 850) ÷ 1,000 × 100 = 15%. A decline below 25% at about 48 hours with persistent illness suggests failure. Reassess active coverage and investigate secondary peritonitis; any numerical fall is not proof of recovery."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => question.id === "cirrhosis-decompensated-052"), {
+  "question": "SBP develops during a hospital stay after recent broad-spectrum antibiotics and a prior resistant isolate. Which plan is best?",
+  "choices": [
+    "Choose empiric coverage using acquisition, prior exposure, prior isolates and local resistance, then narrow when possible.",
+    "Use the same narrow regimen for every patient without checking resistance risk.",
+    "Continue the existing oral prophylaxis dose as treatment.",
+    "Delay antibiotics until all susceptibility data return."
+  ],
+  "rationale": "Hospital acquisition and prior antimicrobial or resistant-organism exposure may make a routine community regimen inadequate. Begin active empiric coverage informed by local guidance and refine with reliable culture data. Prior prophylaxis is not adequate treatment, and urgent therapy should not wait."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => question.id === "cirrhosis-decompensated-053"), {
+  "question": "A patient has recovered from a first SBP episode and still has ascites. Which prevention plan is best?",
+  "choices": [
+    "Arrange individualized daily secondary prophylaxis with monitoring and reassessment.",
+    "Wait for three more SBP episodes before discussing prevention.",
+    "Use no follow-up because treatment removed future SBP risk.",
+    "Automatically repeat a full IV treatment course every month."
+  ],
+  "rationale": "A prior SBP episode is a secondary-prophylaxis indication. Select a daily regimen with the specialist, considering resistance, adverse effects, organ function and persistent ascites. Prevention differs from repeated full treatment courses and requires ongoing review."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => question.id === "cirrhosis-decompensated-054"), {
+  "question": "A patient has ascitic protein 1.0 g/dL, no previous SBP and no GI bleeding. Kidney function and liver severity are not yet known. Which prophylaxis decision is best?",
+  "choices": [
+    "Assess renal and liver risk before deciding whether primary prophylaxis is justified.",
+    "Start indefinite antibiotics solely from the protein value.",
+    "Use the protein value to diagnose active SBP.",
+    "Assume primary prophylaxis can never be considered without a prior SBP episode."
+  ],
+  "rationale": "Low ascitic protein alone does not establish active infection or automatically mandate primary prophylaxis. Guidance reserves consideration for selected patients with additional renal dysfunction or advanced liver failure, after reviewing risks and benefits. Prior SBP defines secondary prevention."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => question.id === "cirrhosis-decompensated-055"), {
+  "question": "A patient with cirrhosis has acute upper GI bleeding but no established SBP. Which antibiotic plan matches the short-course preventive indication?",
+  "choices": [
+    "Ceftriaxone 1 g IV every 24 hours for up to 7 days, with reassessment.",
+    "Ceftriaxone indefinitely solely because cirrhosis persists.",
+    "Albumin alone as the antibiotic preventive regimen.",
+    "Withhold prophylaxis unless ascitic culture becomes positive."
+  ],
+  "rationale": "AASLD recommends short-course ceftriaxone prophylaxis for cirrhosis with upper GI hemorrhage, for a maximum of 7 days. A positive culture is not required for this preventive indication. The dose and duration differ from active SBP treatment and long-term oral secondary prevention."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => question.id === "cirrhosis-decompensated-056"), {
+  "question": "A patient taking spironolactone is being considered for trimethoprim-sulfamethoxazole SBP prophylaxis. Which safety plan is best?",
+  "choices": [
+    "Review kidney function, potassium, interactions and the ongoing indication before choosing and monitoring the regimen.",
+    "Assume preventive dosing cannot cause hyperkalemia.",
+    "Skip electrolyte monitoring because ascites is present.",
+    "Choose a fixed regimen regardless of allergy or renal function."
+  ],
+  "rationale": "Trimethoprim-sulfamethoxazole can cause hyperkalemia and needs renal and medication review; spironolactone adds potassium risk. Prophylaxis should be individualized and monitored, including its continued indication. A preventive dose does not eliminate adverse effects."
+});

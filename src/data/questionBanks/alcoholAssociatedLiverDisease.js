@@ -52,3 +52,85 @@ export const alcoholAssociatedLiverDiseaseQuestionBank = concepts.flatMap(([slug
   const choices = dimension === "hazard" ? [hazard, principle, action, generic[(conceptIndex + dimensionIndex) % 3]] : [correct, hazard, generic[(conceptIndex + dimensionIndex) % 3], generic[(conceptIndex + dimensionIndex + 1) % 3]];
   return {id:`alcohol-associated-liver-disease-${String(conceptIndex*4+dimensionIndex+1).padStart(3,"0")}`,question:`${stem} Focus: ${slug.replaceAll("-"," ")}.`,choices,answer:0,rationale:`${principle} ${action}`,reviewHref:`#${reviewLessonByConcept[slug]}`,difficulty:dimensionIndex<2?"foundational":"advanced"};
 }));
+
+// Reconcile complete clinical cases while preserving existing IDs, keys, difficulty and lesson links.
+Object.assign(alcoholAssociatedLiverDiseaseQuestionBank.find((question) => question.id === "alcohol-associated-liver-disease-097"), {
+  "question": "A patient is hospitalized with severe alcohol-associated hepatitis, without infection, GI bleeding or another antibiotic-prophylaxis indication. Which antibiotic plan is best?",
+  "choices": [
+    "Avoid universal prophylactic antibiotics solely because severe hepatitis is present; continue clinical surveillance.",
+    "Start indefinite broad-spectrum antibiotics for every severe hepatitis admission.",
+    "Treat every elevated white-cell count as proof of bacterial infection.",
+    "Stop all infection assessment because initial cultures are negative."
+  ],
+  "rationale": "ACG recommends against universal prophylactic antibiotics for severe alcohol-associated hepatitis. This does not remove the need to look for and treat suspected infection or recognize separate cirrhosis-related indications. A white-cell count alone is not proof of infection, and negative initial cultures do not eliminate later risk."
+});
+Object.assign(alcoholAssociatedLiverDiseaseQuestionBank.find((question) => question.id === "alcohol-associated-liver-disease-098"), {
+  "question": "A patient with alcohol-associated hepatitis and cirrhotic ascites has new abdominal pain and ascitic PMNs of 480 cells/mm³. Which plan is best?",
+  "choices": [
+    "Treat suspected SBP promptly and assess albumin and secondary-source clues.",
+    "Withhold antibiotics because universal hepatitis prophylaxis is discouraged.",
+    "Wait for a positive culture before treating the elevated PMN count.",
+    "Manage alcohol recovery alone until the abdominal pain resolves."
+  ],
+  "rationale": "The recommendation against universal hepatitis prophylaxis does not apply to treatment of suspected SBP. PMNs ≥250 cells/mm³ support prompt active antibiotics, with albumin assessment and source evaluation. Recovery care continues alongside complication management."
+});
+Object.assign(alcoholAssociatedLiverDiseaseQuestionBank.find((question) => question.id === "alcohol-associated-liver-disease-099"), {
+  "question": "A patient with severe alcohol-associated hepatitis has an uncontrolled bacterial infection when corticosteroids are considered. Which plan is best?",
+  "choices": [
+    "Treat and control the infection, then reassess steroid eligibility and other contraindications.",
+    "Start corticosteroids immediately because infection never affects eligibility.",
+    "Treat the infection as a permanent ban on steroids even after control.",
+    "Use steroid therapy as a substitute for active antibiotics."
+  ],
+  "rationale": "Active infection is a corticosteroid contraindication in ACG guidance, but eligibility may be reconsidered after adequate control. Infection treatment is urgent and distinct from universal prophylaxis. Neither automatic immediate steroids nor an irreversible ban reflects this reassessment process."
+});
+Object.assign(alcoholAssociatedLiverDiseaseQuestionBank.find((question) => question.id === "alcohol-associated-liver-disease-100"), {
+  "question": "Which decision creates the greatest avoidable infection risk in severe alcohol-associated hepatitis with ascites?",
+  "choices": [
+    "Exclude SBP solely because the patient is afebrile despite new AKI and confusion.",
+    "Assess new organ dysfunction for infection and other causes.",
+    "Perform prompt diagnostic paracentesis when indicated.",
+    "Treat documented or strongly suspected bacterial infection promptly."
+  ],
+  "rationale": "SBP can present without fever and with AKI or encephalopathy. New deterioration requires assessment, including indicated ascitic sampling, while urgent treatment proceeds as needed. The other plans support timely recognition and treatment rather than universal preventive antibiotics."
+});
+Object.assign(alcoholAssociatedLiverDiseaseQuestionBank.find((question) => question.id === "alcohol-associated-liver-disease-101"), {
+  "question": "A patient with alcohol-associated cirrhosis has stopped alcohol use but still has ascites after a prior SBP episode. Which statement is best?",
+  "choices": [
+    "Sustained abstinence improves the disease course, but SBP risk and its prevention plan still require assessment.",
+    "Stopping alcohol immediately eliminates the prior-SBP prophylaxis indication.",
+    "Abstinence proves ascites has resolved without reassessment.",
+    "Cirrhosis complications no longer need follow-up once withdrawal ends."
+  ],
+  "rationale": "Alcohol abstinence is a central disease-modifying goal but does not prove immediate reversal of established cirrhosis or persistent ascites. Prior SBP requires a specialist-directed prevention and monitoring plan, reassessed as the clinical state changes. Withdrawal treatment is only part of recovery care."
+});
+Object.assign(alcoholAssociatedLiverDiseaseQuestionBank.find((question) => question.id === "alcohol-associated-liver-disease-102"), {
+  "question": "A patient with alcohol-associated cirrhosis and recurrent ascites begins sustained recovery treatment. Which follow-up plan is best?",
+  "choices": [
+    "Coordinate AUD recovery care with ascites, kidney, infection and other cirrhosis care.",
+    "Defer all cirrhosis care until a fixed abstinence interval has passed.",
+    "Treat every recurrent ascites episode as infection without fluid assessment.",
+    "Stop portal-hypertension follow-up solely because alcohol use has stopped."
+  ],
+  "rationale": "Integrated care addresses both alcohol use disorder and established liver disease. Complication-specific assessment continues while abstinence is supported. Neither a fixed delay nor an assumption that every fluid recurrence is infected is appropriate."
+});
+Object.assign(alcoholAssociatedLiverDiseaseQuestionBank.find((question) => question.id === "alcohol-associated-liver-disease-103"), {
+  "question": "A patient with alcohol-associated cirrhosis needs repeated paracentesis despite ongoing recovery care. Which coordinated plan is best?",
+  "choices": [
+    "Continue recovery and symptom care while assessing transplant and appropriate advanced options.",
+    "Assume each successful tap removes the need for transplant assessment.",
+    "Stop AUD care because the patient is being referred for transplant.",
+    "Guarantee transplant eligibility solely from a single abstinence report."
+  ],
+  "rationale": "Recurrent or refractory ascites warrants advanced liver assessment while symptom relief and AUD treatment continue. ACG recommends integrated care and transplant referral when medically indicated. A tap provides relief without proving recovery, and transplant eligibility requires a full evaluation."
+});
+Object.assign(alcoholAssociatedLiverDiseaseQuestionBank.find((question) => question.id === "alcohol-associated-liver-disease-104"), {
+  "question": "Which change creates the greatest avoidable risk after a patient with established cirrhosis stops alcohol use?",
+  "choices": [
+    "Immediately discontinue all cirrhosis complication care without reassessing persistent disease or risk.",
+    "Continue coordinated liver and AUD follow-up.",
+    "Reassess prevention regimens as ascites and clinical status change.",
+    "Refer for advanced liver evaluation when decompensation warrants it."
+  ],
+  "rationale": "Abstinence improves long-term outcomes but does not instantly remove established cirrhosis risks. Care and surveillance should be reassessed from the patient’s clinical state, with recovery support and appropriate referral. Automatic discontinuation leaves unresolved disease unmanaged."
+});

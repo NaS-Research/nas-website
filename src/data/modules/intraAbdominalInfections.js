@@ -15,3 +15,83 @@ section("biliary-infections","Pair Antimicrobials With Definitive Biliary Care",
 section("spontaneous-bacterial-peritonitis","Separate Infected Ascites From a Surgical Abdomen","SBP is infected ascites without a surgically treatable source. Its PMN threshold, albumin strategy, secondary-peritonitis warning signs, and prophylaxis risks make it a distinct pathway.",["PMN at least 250","Bedside inoculation","Third-generation cephalosporin","Albumin","Secondary peritonitis"],"Perform early paracentesis, treat neutrocytic ascites, support kidney perfusion, and image urgently when the fluid or course suggests a secondary source.",[["Diagnose from the PMN count","An ascitic PMN count at least 250 cells per cubic millimeter supports SBP treatment even if culture remains negative."],["Improve culture yield","Inoculate ascitic fluid at bedside into aerobic and anaerobic blood culture bottles and send cell count, differential, protein, glucose, and LDH when secondary disease is a concern."],["Treat and protect kidneys","Use cefotaxime or ceftriaxone for common community SBP while adapting to prior prophylaxis and healthcare resistance. Give albumin 1.5 g/kg on day 1 and 1 g/kg on day 3 when indicated."],["Find secondary peritonitis","Polymicrobial culture, focal rigidity, free air, very high PMNs, high protein and LDH, low glucose, or poor response requires urgent imaging and surgical evaluation."],["Use prophylaxis narrowly","Prior SBP, selected low-protein ascites with advanced disease, and cirrhosis with upper GI bleeding can qualify. Reassess resistance, C. difficile, adverse effects, and ongoing indication."]],["PMN at least 250 can be culture-negative SBP.","Bedside bottle inoculation improves yield.","Albumin complements antibiotics.","Polymicrobial ascites suggests a source."],check("What ascitic finding supports SBP treatment before culture results?",["PMN count at least 250 cells per cubic millimeter","Protein above 10 g/dL alone","One epithelial cell","Negative blood cultures"],"The ascitic PMN threshold identifies neutrocytic ascites requiring treatment.","spontaneous-bacterial-peritonitis")),
 section("special-populations-stewardship","Keep the Plan Safe as the Patient Changes","Allergy labels, dynamic organ function, pregnancy, age, absorption, and discharge access can alter regimen safety without changing the need for prompt source control.",["Allergy phenotype","Kidney function","Liver disease","Pregnancy and pediatrics","Stewardship"],"Recalculate the regimen and delivery plan daily while preserving active exposure, source control, short duration, and a credible failure pathway.",[["Clarify beta-lactam allergy","Distinguish intolerance, remote unknown reaction, immediate allergy, and severe delayed injury. Preserve appropriate cephalosporin or carbapenem options when safely possible."],["Follow changing clearance","Use current kidney trajectory, urine output, dialysis timing, weight, liver reserve, and interacting nephrotoxins rather than one static admission estimate."],["Treat pregnancy without delay","Choose ultrasound or MRI when appropriate and pregnancy-compatible drugs, but do not withhold necessary imaging, antibiotics, drainage, or surgery for maternal abdominal sepsis."],["Use weight-based pediatric systems","Integrate age, weight, organ maturation, imaging sequence, dose ceilings, procedural timing, and family communication."],["Close every antimicrobial indication","Document spectrum target, cultures, source control, dose, route, stop date, IV-to-oral criteria, and the clinician responsible for stopping or reassessing."]],["Allergy phenotype preserves options.","Septic clearance changes quickly.","Pregnancy changes design, not urgency.","Every drug needs a stop owner."],check("What should happen when kidney function changes rapidly during cIAI treatment?",["Recalculate exposure and dosing using the current trajectory and dialysis context","Keep the admission dose indefinitely","Stop source control","Add fourteen days automatically"],"Dynamic clearance can cause underexposure or toxicity and requires repeated dose assessment.","special-populations-stewardship")),
 ],references:[{label:"IDSA 2024 Complicated Intra-Abdominal Infection Update",href:"https://www.idsociety.org/practice-guideline/intra-abdominal-infections/"},{label:"Surgical Infection Society 2024 Update",href:"https://journals.sagepub.com/doi/10.1089/sur.2024.137"},{label:"STOP-IT Trial",href:"https://pubmed.ncbi.nlm.nih.gov/25992746/"},{label:"IDSA and ASM 2024 Microbiology Laboratory Guide",href:"https://www.idsociety.org/practice-guideline/laboratory-diagnosis-of-infectious-diseases/"},{label:"AASLD Ascites and SBP Practice Guidance",href:"https://www.aasld.org/practice-guidelines/diagnosis-evaluation-and-management-ascites-spontaneous-bacterial-peritonitis"}],questionBank:intraAbdominalInfectionsQuestionBank};
+
+// Reconcile the complete SBP lesson with diagnostic timing, response and indication-specific prevention.
+Object.assign(intraAbdominalInfectionsModule.submodules.find((lesson) => lesson.slug === "spontaneous-bacterial-peritonitis"), {
+  "summary": "Use prompt ascitic sampling and an absolute PMN threshold to treat suspected SBP, protect kidney perfusion, and investigate clues to a perforation or other correctable source.",
+  "concepts": [
+    "PMN ≥250 cells/mm³",
+    "Bedside culture inoculation",
+    "Context-aware IV antibiotics",
+    "Adjunctive albumin",
+    "48-hour response",
+    "Secondary-source clues",
+    "Selected prophylaxis"
+  ],
+  "application": "Collect actionable ascitic and blood cultures without delaying urgent therapy, treat neutrocytic ascites before culture results, assess albumin and response, and activate imaging and source-control evaluation when secondary peritonitis is plausible.",
+  "lesson": [
+    {
+      "heading": "Diagnose from the PMN count",
+      "body": "In cirrhosis with ascites, perform diagnostic paracentesis promptly for an urgent or non-elective admission or new infection findings, AKI, encephalopathy or otherwise unexplained deterioration. An absolute ascitic PMN count ≥250 cells/mm³ warrants empiric treatment for suspected SBP, with or without a positive culture, while evaluating other causes and a secondary source. The total white-cell count is not the PMN count: 600 white cells/mm³ with 50% neutrophils gives 300 PMNs/mm³. Lack of fever does not exclude infection."
+    },
+    {
+      "heading": "Improve culture yield",
+      "body": "Obtain ascitic fluid before antibiotics when feasible and inoculate aerobic and anaerobic blood-culture bottles immediately at the bedside, using the laboratory’s bottle-volume instructions; guidance describes at least 10 mL of ascitic fluid for culture. Send a separate specimen for cell count and differential and obtain blood cultures. Add fluid protein, glucose and LDH when secondary peritonitis is suspected. Cultures help refine therapy, but collection or culture results must not delay urgent antibiotics in an unstable patient."
+    },
+    {
+      "heading": "Interpret bacterascites and bloody taps",
+      "body": "An asymptomatic patient with one organism recovered but PMNs <250 cells/mm³ may have monomicrobial bacterascites: repeat paracentesis and reassess rather than automatically treating or dismissing it. Treat concerning symptomatic infection even when PMNs are below 250. A traumatic, bloody tap may require subtracting one PMN for each 250 red cells/mm³. For 25,000 red cells/mm³ and 400 measured PMNs/mm³, the correction is 100, leaving 300 PMNs/mm³. The corrected count still supports treatment; clinical urgency remains decisive."
+    },
+    {
+      "heading": "Treat and protect kidneys",
+      "body": "Use active IV antibiotics promptly. Ceftriaxone or cefotaxime is common for community-acquired SBP; one ceftriaxone regimen is 2 g every 24 hours, with a usual treatment course of 5 to 7 days. Adapt coverage to hospital acquisition, critical illness, prior prophylaxis or antibiotics, local resistance and prior isolates, and narrow with reliable susceptibility data. AASLD recommends adjunctive IV albumin for SBP, especially important with AKI or marked jaundice: 1.5 g/kg on day 1 and 1 g/kg on day 3. Monitor volume and respiratory status; albumin does not treat the organism."
+    },
+    {
+      "heading": "Check the response at about 48 hours",
+      "body": "Reassess clinical trajectory, kidney function and cultures. Repeat ascitic cell count when response is uncertain or a resistant or secondary source is possible. A PMN decline of less than 25% from baseline suggests failure. A fall from 1,000 to 850 cells/mm³ is only 15%, so reassess active coverage and investigate secondary peritonitis. An improving patient with a susceptible recovered organism may not need repeat tapping. Clinical deterioration requires action even if the cell count falls."
+    },
+    {
+      "heading": "Find secondary peritonitis",
+      "body": "Polymicrobial growth, focal rigidity, free air, very high PMNs or poor response raises concern for a correctable source. At least two of ascitic protein >1 g/dL, glucose <50 mg/dL and LDH above the serum upper limit are additional clues. These findings support urgent imaging and surgical or interventional review; they are not a stand-alone definitive test. Continue stabilization and antibiotics with appropriate anaerobic coverage while assessing source control. Do not postpone this evaluation until another antibiotic course fails."
+    },
+    {
+      "heading": "Use prophylaxis narrowly",
+      "body": "After SBP recovery, consider specialist-directed daily secondary prophylaxis with reassessment of benefit, resistance and harms. Common US oral regimens are ciprofloxacin 500 mg daily or trimethoprim-sulfamethoxazole one double-strength tablet daily, individualized for allergy, organ function, interactions and local guidance. Primary prophylaxis is considered for selected high-risk patients with ascitic protein <1.5 g/dL plus renal dysfunction or advanced liver failure. Review potassium and kidney risks with trimethoprim-sulfamethoxazole and fluoroquinolone adverse effects and C. difficile risk. Ascites alone does not justify indefinite antibiotics."
+    },
+    {
+      "heading": "Recognize the short-course bleeding indication",
+      "body": "Cirrhosis with acute upper gastrointestinal hemorrhage warrants a distinct short prophylaxis course; AASLD recommends IV ceftriaxone 1 g every 24 hours for a maximum of 7 days. This differs from ceftriaxone treatment of established SBP and from long-term oral secondary prevention. Do not extend a bleeding-only course indefinitely merely because cirrhosis persists. Severe alcohol-associated hepatitis alone is not an indication for universal antibiotic prophylaxis, but separate infection or cirrhosis-related indications still require care."
+    }
+  ],
+  "keyPoints": [
+    "Use the absolute PMN count and treat suspected SBP at ≥250 cells/mm³.",
+    "Bedside inoculation improves culture yield; urgent therapy must not wait.",
+    "Albumin is adjunctive kidney and circulatory support.",
+    "Poor response and secondary-source clues require imaging and source-control assessment.",
+    "Give prophylaxis for a defined indication with an explicit reassessment plan."
+  ]
+});
+Object.assign(intraAbdominalInfectionsModule.submodules.find((lesson) => lesson.slug === "spontaneous-bacterial-peritonitis").check, {
+  "question": "Ascitic fluid has 600 white cells/mm³ with 50% neutrophils. Culture is pending and no secondary source is apparent. Which interpretation is best?",
+  "choices": [
+    "The absolute PMN count is 300 cells/mm³, supporting prompt treatment of suspected SBP.",
+    "The PMN count is 50 cells/mm³, so infection is excluded.",
+    "The PMN count is 600 cells/mm³ because every white cell is a neutrophil.",
+    "Treatment must wait for culture even though the PMN threshold is met."
+  ],
+  "rationale": "Multiply total white cells by the neutrophil fraction: 600 × 0.50 = 300 PMNs/mm³. This exceeds the ≥250 threshold and supports treatment before culture returns. The percentage alone is not an absolute count; not all white cells are neutrophils."
+});
+intraAbdominalInfectionsModule.references.push(...[
+  {
+    "label": "AASLD 2021 ascites and SBP practice guidance: primary article",
+    "href": "https://onlinelibrary.wiley.com/doi/full/10.1002/hep.31884"
+  },
+  {
+    "label": "University of Washington: SBP recognition and management (2024)",
+    "href": "https://www.hepatitisc.uw.edu/go/management-cirrhosis-related-complications/spontaneous-bacterial-peritonitis-recognition-management/core-concept/all/"
+  },
+  {
+    "label": "AASLD: SBP prophylaxis benefits, uncertainties and harms (2025)",
+    "href": "https://www.aasld.org/liver-fellow-network/core-series/why-series/antibiotics-sbp-prophylaxis-why-or-why-not"
+  }
+]);

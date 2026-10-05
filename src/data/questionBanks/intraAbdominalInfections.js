@@ -66,3 +66,225 @@ const cases=[
 ].map((item,index)=>({id:`intra-abdominal-infections-${String(generated.length+index+1).padStart(3,"0")}`,lesson:item[0],question:item[1],choices:item[2],answer:0,rationale:item[3],reviewHref:`#${item[0]}`}));
 export const intraAbdominalInfectionsQuestionBank=[...generated,...cases];
 if(intraAbdominalInfectionsQuestionBank.length<100)throw new Error(`Intra-abdominal infections question bank must contain at least 100 questions, found ${intraAbdominalInfectionsQuestionBank.length}.`);
+
+// Reconcile complete clinical cases while preserving existing IDs, keys, difficulty and lesson links.
+Object.assign(intraAbdominalInfectionsQuestionBank.find((question) => question.id === "intra-abdominal-infections-129"), {
+  "question": "Ascitic PMNs are 280 cells/mm³ and culture is pending, without an apparent secondary source. Which action is best?",
+  "choices": [
+    "Begin active empiric antibiotics for suspected SBP promptly.",
+    "Wait for a positive culture.",
+    "Use only an oral prophylaxis dose.",
+    "Exclude infection because serum neutrophils are normal."
+  ],
+  "rationale": "Ascitic PMNs ≥250 cells/mm³ support prompt empiric treatment of suspected SBP. Culture guides later narrowing; a serum count or preventive oral dose does not replace treatment. Evaluate other explanations and secondary sources as appropriate."
+});
+Object.assign(intraAbdominalInfectionsQuestionBank.find((question) => question.id === "intra-abdominal-infections-130"), {
+  "question": "An afebrile patient with cirrhosis and ascites is admitted urgently for new encephalopathy. Which test should be part of the prompt infection evaluation?",
+  "choices": [
+    "Diagnostic paracentesis with ascitic cell count, differential and culture.",
+    "Therapeutic drainage only if visible ascites causes severe pressure.",
+    "No ascitic testing because fever is absent.",
+    "Ascitic culture only after an entire antibiotic course."
+  ],
+  "rationale": "An urgent admission or otherwise unexplained encephalopathy can reveal occult SBP. Prompt diagnostic paracentesis is appropriate despite absent fever. Obtain actionable samples before antibiotics when feasible; do not delay urgent treatment in instability."
+});
+Object.assign(intraAbdominalInfectionsQuestionBank.find((question) => question.id === "intra-abdominal-infections-131"), {
+  "question": "Ascitic fluid has 600 white cells/mm³ and 50% neutrophils. What is the absolute PMN count?",
+  "choices": [
+    "300 cells/mm³.",
+    "50 cells/mm³.",
+    "600 cells/mm³.",
+    "1,200 cells/mm³."
+  ],
+  "rationale": "Absolute PMNs = total white cells × neutrophil fraction = 600 × 0.50 = 300 cells/mm³. This meets the ≥250 treatment threshold in suspected SBP. Percentage alone and total white cells alone are not the absolute PMN count."
+});
+Object.assign(intraAbdominalInfectionsQuestionBank.find((question) => question.id === "intra-abdominal-infections-132"), {
+  "question": "A traumatic ascitic tap has 25,000 red cells/mm³ and 400 measured PMNs/mm³. Using one PMN subtracted per 250 red cells, what is the corrected PMN count?",
+  "choices": [
+    "300 cells/mm³.",
+    "100 cells/mm³.",
+    "400 cells/mm³.",
+    "500 cells/mm³."
+  ],
+  "rationale": "Subtract 25,000 ÷ 250 = 100 PMNs from 400, leaving 300 cells/mm³. The corrected value remains ≥250 and supports treatment in the appropriate clinical context. The correction is subtraction, not addition, and must not override urgent clinical findings."
+});
+Object.assign(intraAbdominalInfectionsQuestionBank.find((question) => question.id === "intra-abdominal-infections-133"), {
+  "question": "Before SBP antibiotics, which collection approach best supports ascitic culture yield?",
+  "choices": [
+    "Inoculate blood-culture bottles with ascitic fluid immediately at the bedside.",
+    "Leave fluid in a syringe for delayed inoculation after transport.",
+    "Collect only a superficial abdominal skin swab.",
+    "Wait until antibiotics have finished before collecting ascitic fluid."
+  ],
+  "rationale": "Immediate bedside inoculation improves recovery from low-organism-density ascitic fluid. Use the laboratory’s bottle and volume instructions, with a separate cell-count specimen and blood cultures. Sampling is valuable before antibiotics but must not delay urgent therapy."
+});
+Object.assign(intraAbdominalInfectionsQuestionBank.find((question) => question.id === "intra-abdominal-infections-134"), {
+  "question": "During diagnostic paracentesis for suspected SBP, which specimen plan is best?",
+  "choices": [
+    "Send separate ascitic cell count and differential, bedside-inoculated cultures and blood cultures.",
+    "Send only a culture and omit the cell count.",
+    "Send only a cell count and discard all culture material.",
+    "Replace ascitic testing with a urine culture alone."
+  ],
+  "rationale": "Cell count and differential provide the immediate PMN result; ascitic and blood cultures help identify organisms and narrow therapy. Each answers a different question. A urine culture can investigate another source but cannot replace ascitic evaluation."
+});
+Object.assign(intraAbdominalInfectionsQuestionBank.find((question) => question.id === "intra-abdominal-infections-135"), {
+  "question": "Ascitic cultures remain negative but PMNs are 450 cells/mm³ and no alternative source is identified. Which conclusion is best?",
+  "choices": [
+    "Culture-negative neutrocytic ascites still warrants an appropriate antibiotic course.",
+    "Negative culture proves antibiotics are unnecessary.",
+    "A blood culture must be positive before treatment can continue.",
+    "The PMN count cannot be interpreted until culture grows."
+  ],
+  "rationale": "A negative culture does not exclude SBP. Neutrocytic ascites meeting the threshold is treated similarly when other explanations are excluded. Follow the clinical course and source assessment; culture positivity is not required for interpreting the count."
+});
+Object.assign(intraAbdominalInfectionsQuestionBank.find((question) => question.id === "intra-abdominal-infections-136"), {
+  "question": "A clinically stable, asymptomatic patient has one ascitic organism recovered and PMNs of 100 cells/mm³. Which plan is best?",
+  "choices": [
+    "Repeat paracentesis promptly and reassess for progression or symptoms.",
+    "Ignore the culture permanently because PMNs are below 250.",
+    "Diagnose a perforation solely because one organism grew.",
+    "Give indefinite IV broad-spectrum therapy without reassessment."
+  ],
+  "rationale": "Asymptomatic monomicrobial bacterascites may be transient and does not automatically require immediate antibiotics. It needs repeat sampling and clinical reassessment. New symptoms or deterioration change the treatment decision; a single organism does not prove a surgical source."
+});
+Object.assign(intraAbdominalInfectionsQuestionBank.find((question) => question.id === "intra-abdominal-infections-137"), {
+  "question": "Which ceftriaxone order is a common academic-guidance treatment regimen for community-acquired SBP without major resistance risk?",
+  "choices": [
+    "2 g IV every 24 hours, with duration and narrowing guided by response and cultures.",
+    "1 g IV every 24 hours indefinitely because this is the GI-bleeding prevention dose.",
+    "Ciprofloxacin 500 mg orally daily as the sole treatment.",
+    "One IV dose followed only by albumin regardless of response."
+  ],
+  "rationale": "Ceftriaxone 2 g IV every 24 hours is one accepted community-acquired treatment regimen, usually for 5 to 7 days as clinically appropriate. The 1 g daily short-course bleeding regimen is prophylaxis; oral preventive dosing is not active SBP treatment, and albumin is adjunctive."
+});
+Object.assign(intraAbdominalInfectionsQuestionBank.find((question) => question.id === "intra-abdominal-infections-138"), {
+  "question": "An 80 kg patient needs the established SBP albumin schedule. Which regimen uses the stated dosing weight correctly?",
+  "choices": [
+    "120 g on day 1 and 80 g on day 3.",
+    "80 g on day 1 and 120 g on day 3.",
+    "8 g per day because SBP uses the paracentesis per-liter rule.",
+    "120 g every day indefinitely."
+  ],
+  "rationale": "The regimen is 1.5 g/kg on day 1 and 1 g/kg on day 3: 80 × 1.5 = 120 g and 80 × 1 = 80 g. Confirm dosing weight and protocol and monitor volume status. SBP dosing is not based on liters drained."
+});
+Object.assign(intraAbdominalInfectionsQuestionBank.find((question) => question.id === "intra-abdominal-infections-139"), {
+  "question": "A patient has hospital-acquired SBP after recent antibiotics and remains hypotensive. Which treatment assessment is best?",
+  "choices": [
+    "Review resistance, prior isolates and exposure, organ function and local guidance while giving active therapy.",
+    "Use the community regimen automatically regardless of acquisition or prior isolates.",
+    "Wait for culture certainty before any antibiotics.",
+    "Use the long-term oral prophylaxis dose to treat shock."
+  ],
+  "rationale": "Hospital acquisition, critical illness and antimicrobial exposure raise concern for resistant organisms. Initial coverage must be active in the local context and later narrowed when possible. Organ function and allergy also affect selection; shock requires urgent therapy rather than preventive dosing or culture delay."
+});
+Object.assign(intraAbdominalInfectionsQuestionBank.find((question) => question.id === "intra-abdominal-infections-140"), {
+  "question": "Which proposed SBP treatment creates the greatest avoidable risk?",
+  "choices": [
+    "Use albumin alone while withholding active antibiotics.",
+    "Give active antibiotics and assess adjunctive albumin.",
+    "Follow kidney function and blood pressure during treatment.",
+    "Narrow antibiotics when reliable susceptibility results permit."
+  ],
+  "rationale": "Albumin supports circulation and kidney protection but does not eradicate bacterial infection. Withholding active antibiotics in suspected SBP is hazardous. Adjunctive albumin, organ monitoring and appropriate culture-directed narrowing are compatible with treatment."
+});
+Object.assign(intraAbdominalInfectionsQuestionBank.find((question) => question.id === "intra-abdominal-infections-141"), {
+  "question": "An ascitic culture grows several organisms, pain is focal and the patient worsens on SBP treatment. Which concern is most important?",
+  "choices": [
+    "Secondary peritonitis from a potentially correctable intra-abdominal source.",
+    "Recovery established by the culture result.",
+    "Uncomplicated SBP proved solely by an elevated PMN count.",
+    "A need for prophylaxis without further diagnostic evaluation."
+  ],
+  "rationale": "Polymicrobial growth, focal findings and poor response should trigger urgent evaluation for secondary peritonitis. An elevated PMN count does not establish that the infection is spontaneous. Imaging and source-control assessment proceed with stabilization and active antibiotics."
+});
+Object.assign(intraAbdominalInfectionsQuestionBank.find((question) => question.id === "intra-abdominal-infections-142"), {
+  "question": "CT shows free air and a suspected bowel perforation in a patient initially treated for infected ascites. Which plan is best?",
+  "choices": [
+    "Urgent surgical/source-control evaluation with stabilization and antibiotics including appropriate anaerobic coverage.",
+    "Repeat the same SBP-only regimen and defer procedural assessment until next week.",
+    "Treat the perforation with albumin alone.",
+    "Stop antibiotics because the infection is no longer called spontaneous."
+  ],
+  "rationale": "A perforation can require urgent definitive source control. Continue active antimicrobial therapy and stabilization, including appropriate anaerobic coverage, while activating procedural care. Renaming the syndrome does not remove the need for antibiotics or justify delay."
+});
+Object.assign(intraAbdominalInfectionsQuestionBank.find((question) => question.id === "intra-abdominal-infections-143"), {
+  "question": "Ascitic protein is 1.4 g/dL, glucose is 35 mg/dL and LDH exceeds the serum upper limit. How should these results be used?",
+  "choices": [
+    "They are supporting secondary-peritonitis clues that warrant urgent source evaluation in context.",
+    "They prove a perforation without imaging or clinical assessment.",
+    "They exclude a secondary source because protein is below 1.5 g/dL.",
+    "They determine the antibiotic stop date independently of the clinical course."
+  ],
+  "rationale": "Protein >1 g/dL, glucose <50 mg/dL and high LDH are secondary-source clues; at least two raise concern. They do not definitively establish a perforation. The 1.5 g/dL primary-prophylaxis protein threshold serves a different purpose and does not exclude secondary infection."
+});
+Object.assign(intraAbdominalInfectionsQuestionBank.find((question) => question.id === "intra-abdominal-infections-144"), {
+  "question": "After 48 hours, SBP PMNs fall from 1,000 to 850 cells/mm³ and pain persists. Which plan is best?",
+  "choices": [
+    "Reassess resistant infection and a secondary source because the decline is only 15%.",
+    "Declare adequate response because any decrease is sufficient.",
+    "Stop antibiotics because the count is now below 1,000.",
+    "Use the count to exclude a perforation without further evaluation."
+  ],
+  "rationale": "The decline is 150 ÷ 1,000 = 15%, below the expected 25% decline used to assess response. Persistent illness calls for renewed coverage and source evaluation. Neither a small decline nor a lower absolute count excludes a surgically treatable cause."
+});
+Object.assign(intraAbdominalInfectionsQuestionBank.find((question) => question.id === "intra-abdominal-infections-145"), {
+  "question": "Which patient most clearly has a secondary SBP prophylaxis indication?",
+  "choices": [
+    "A patient who has recovered from SBP and still has ascites.",
+    "A patient with ascites alone and no prior SBP or other high-risk indication.",
+    "A patient with active SBP needing immediate treatment instead of prophylaxis alone.",
+    "A patient without cirrhosis or ascites after uncomplicated cystitis."
+  ],
+  "rationale": "Prior SBP defines secondary prevention, with a daily regimen selected and reassessed by the clinical team. Ascites alone does not automatically justify prophylaxis. Active SBP requires treatment first; an unrelated resolved infection is not an SBP indication."
+});
+Object.assign(intraAbdominalInfectionsQuestionBank.find((question) => question.id === "intra-abdominal-infections-146"), {
+  "question": "A patient is discharged after SBP recovery on ciprofloxacin prevention. Which common US regimen should be distinguished from active treatment?",
+  "choices": [
+    "500 mg orally daily, individualized and monitored as long-term secondary prophylaxis.",
+    "Ciprofloxacin 750 mg orally once weekly as the preferred regimen for every patient.",
+    "A single dose followed by no reassessment of persistent ascites.",
+    "1 g IV daily indefinitely solely because GI bleeding occurred once."
+  ],
+  "rationale": "Ciprofloxacin 500 mg orally daily is a common secondary-prophylaxis option. Select and monitor it for patient and local risks. Daily prophylaxis is generally preferred to intermittent dosing; the other orders confuse the regimen or the separate short-course bleeding indication; prevention is not the regimen for active SBP."
+});
+Object.assign(intraAbdominalInfectionsQuestionBank.find((question) => question.id === "intra-abdominal-infections-147"), {
+  "question": "A patient on spironolactone is considered for trimethoprim-sulfamethoxazole SBP prevention. Which review is especially relevant?",
+  "choices": [
+    "Kidney function, potassium and interacting medications before selection and during follow-up.",
+    "Only the ascites volume because preventive antibiotics have no electrolyte effects.",
+    "Blood pressure alone because preventive dosing eliminates potassium risk.",
+    "No follow-up laboratory testing because the dose is preventive."
+  ],
+  "rationale": "Trimethoprim-sulfamethoxazole can cause hyperkalemia and requires renal and interaction review; concurrent spironolactone adds potassium risk. Prophylaxis does not eliminate adverse effects. Confirm regimen and indication and arrange monitoring."
+});
+Object.assign(intraAbdominalInfectionsQuestionBank.find((question) => question.id === "intra-abdominal-infections-148"), {
+  "question": "Which plan creates the greatest avoidable risk when considering SBP prophylaxis?",
+  "choices": [
+    "Prescribe indefinite antibiotics to every patient with ascites without a defined indication or reassessment.",
+    "Review a prior SBP episode before selecting secondary prevention.",
+    "Assess renal and liver severity before considering primary prevention in low-protein ascites.",
+    "Use a time-limited ceftriaxone course for cirrhosis with acute upper GI bleeding."
+  ],
+  "rationale": "Prophylaxis is indication-specific and carries resistance, C. difficile and drug risks. Ascites alone does not justify indefinite exposure. Prior SBP, selected low-protein/high-risk ascites and acute upper GI bleeding are separate clinical contexts that require appropriate regimen and duration review."
+});
+Object.assign(intraAbdominalInfectionsQuestionBank.find((question) => question.id === "intra-abdominal-infections-170"), {
+  "question": "Ascitic PMNs are 480 cells/mm³ and cultures are pending. A secondary source has not yet been fully assessed. Which response is best?",
+  "choices": [
+    "Begin active empiric antibiotics promptly while evaluating secondary-source clues in parallel.",
+    "Wait for complete imaging and a positive culture before antibiotics.",
+    "Use only oral prophylaxis because the culture is pending.",
+    "Schedule elective colonoscopy before treating the suspected infection."
+  ],
+  "rationale": "The PMN threshold is met, so treatment should not wait for culture or a completed secondary-source evaluation. Stabilization, active antibiotics and source assessment proceed in parallel. A correctable source can change coverage and require procedural care."
+});
+Object.assign(intraAbdominalInfectionsQuestionBank.find((question) => question.id === "intra-abdominal-infections-171"), {
+  "question": "What is the established albumin schedule used alongside SBP antibiotics when prescribed?",
+  "choices": [
+    "1.5 g/kg on day 1 and 1 g/kg on day 3.",
+    "1 g once after discharge.",
+    "1.5 g/kg daily indefinitely.",
+    "6 to 8 g per liter drained as the SBP schedule regardless of weight."
+  ],
+  "rationale": "SBP albumin uses a weight-based day 1/day 3 regimen as an adjunct to antibiotics. The per-liter replacement regimen belongs to large-volume paracentesis. Confirm the dosing weight and protocol and monitor volume and respiratory status."
+});
