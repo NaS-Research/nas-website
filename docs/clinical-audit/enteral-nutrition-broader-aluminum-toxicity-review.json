@@ -1,0 +1,442 @@
+{
+  "updated": "2026-10-05T05:11:02.713995+00:00",
+  "unit": "enteral-nutrition:broader-aluminum-toxicity",
+  "status": "Scoped aluminum unit verified; acute phosphate body, whole CKD lesson, calcium parent and EN remain reviewing",
+  "baseCommit": "38588b9d9d40c8b3ca005dcc8f5a5ba4ea536f3a",
+  "sourcePolicy": {
+    "primary": "Supplied cover-verified RxPrep2023; private source extracts/images outside Git",
+    "approval": {
+      "status": "approved by direct user message: I give approval",
+      "scope": "Official guidelines, FDA labels and primary academic clinical references where the book cannot verify retained content; includes pending calcium, dialysis, aluminum and mineral physiology scopes",
+      "primarySourceRemains": "Supplied cover-verified RxPrep2023 book",
+      "approvalContext": "Response to pending asynchronous request for this additional authoritative source policy",
+      "usedNewlyAuthorizedSourcesInThisUnit": false
+    },
+    "newlyAuthorizedSourceUsed": "NKF KDOQI2003 adultCKD Guideline11 for retained hematologic aluminum toxicity claim"
+  },
+  "sourceReview": {
+    "book": {
+      "pdfPageActuallyViewed": 297,
+      "printedPage": 289,
+      "scope": "Whole CKD mineral/PTH figure and full aluminum binder table row. Book covers CNS/bone toxicity and4week duration; does not establish retained hematologic claim."
+    },
+    "NKF": {
+      "url": "https://kidneyfoundation.cachefly.net/professionals/KDOQI/guidelines_bone/guide11.htm",
+      "publication": "2003; historical toxicity guidance",
+      "retrieval": "Fresh HTTPS via system curl with certificate validation enabled",
+      "sha256": "114bcb164259a362d5ed5a6ab8e930a3fcaf180e6a20d09dfc34b28e112e51ae",
+      "fullGuidelineTextReadViaPrimaryWebPage": true,
+      "originalParagraphsActuallyViewed": [
+        {
+          "file": "kdoqi-avoid.png",
+          "wholeOriginalParagraphReadAndViewed": true,
+          "privateEvidenceSha256": "80dca16ac52d17c8957c7caca1a1f29c7742ac0025359aceb604059a510cac67"
+        },
+        {
+          "file": "kdoqi-rationale.png",
+          "wholeOriginalParagraphReadAndViewed": true,
+          "privateEvidenceSha256": "f8df9daa10c390184c920308dea5676fe7e1245ea038d7f35ccc9bcb0f64b728"
+        }
+      ],
+      "completeOriginalTableActuallyViewed": {
+        "url": "https://kidneyfoundation.cachefly.net/professionals/KDOQI/guidelines_bone/images/table31l.jpg",
+        "table": "31 Aluminum-Related Disorders: Features, Causes and Considerations for Therapy",
+        "allRowsColumnsAndFootnotesViewed": true,
+        "file": "table31-original.jpg",
+        "sha256": "a1a07ae108c4ef20bc49d5e25005c8e1b8cec57acbbbb1e709dbc9389e608d71"
+      },
+      "adoptedScope": "Reduced renal aluminum excretion/accumulation and neurologic, bone and microcytic-anemia toxicity, which can occur without iron deficiency. No historical DFO dose, dialysate threshold, monitoring frequency or aluminum exposure allowance adopted."
+    },
+    "KDIGO": {
+      "url": "https://kdigo.org/wp-content/uploads/2018/04/2017-KDIGO-CKD-MBD-GL-Update.pdf",
+      "pdfPageActuallyViewed": 17,
+      "printedPage": 16,
+      "adoptedRecommendation": "4.1.7 avoids long-term aluminum-containing binders in CKDG3a-G5D"
+    }
+  },
+  "coverage": {
+    "evidence": "enteral-nutrition-broader-aluminum-toxicity-review.json",
+    "moduleBankBefore": 108,
+    "moduleBankAfter": 108,
+    "wholeQuestionsVerified": 1,
+    "existingQuestionsNewlyVerified": 1,
+    "newDistinctQuestionsAdded": 0,
+    "sourceVerifiedBankIds": [
+      "calcium-phosphorus-050"
+    ],
+    "broaderFeedingBankVerifiedAfter": 309,
+    "wholeBodiesVerified": 1,
+    "retainedWholeBodiesReconciled": 0,
+    "newWholeBodiesAdded": 1,
+    "sourceVerifiedBodyHeadings": {
+      "hyperphosphatemia-ckd-mbd": [
+        "Recognize aluminum accumulation beyond phosphate control"
+      ]
+    },
+    "moduleWholeQuestionsVerifiedAfter": 96,
+    "moduleQuestionTotal": 108,
+    "remainingQuestionIds": [
+      "calcium-phosphorus-001",
+      "calcium-phosphorus-003",
+      "calcium-phosphorus-006",
+      "calcium-phosphorus-008",
+      "calcium-phosphorus-011",
+      "calcium-phosphorus-012",
+      "calcium-phosphorus-017",
+      "calcium-phosphorus-023",
+      "calcium-phosphorus-035",
+      "calcium-phosphorus-092",
+      "calcium-phosphorus-095",
+      "calcium-phosphorus-102"
+    ],
+    "remainingCKDBodyHeadings": [
+      "Recognize acute phosphate toxicity"
+    ],
+    "newWholeMetadataChecksFiguresVerified": false,
+    "newlyCountedCumulativeQuestions": 0,
+    "wholeLessonsVerified": false,
+    "wholeParentModuleVerified": false,
+    "wholeENModuleVerified": false,
+    "wholeChaptersVerified": false,
+    "all108OriginalIdsKeysCorrectTextsAnchorsRelativeOrderPreserved": true,
+    "all1180CumulativeWholeObjectsUnchanged": true
+  },
+  "changes": {
+    "questions": {
+      "calcium-phosphorus-050": {
+        "before": {
+          "id": "calcium-phosphorus-050",
+          "question": "Why are aluminum phosphate binders avoided for long-term therapy?",
+          "choices": [
+            "Aluminum can accumulate and cause neurologic, bone, and hematologic toxicity",
+            "They contain no phosphate-binding activity",
+            "They always cause immediate hypophosphatemia",
+            "They permanently suppress PTH after one dose"
+          ],
+          "answer": 0,
+          "rationale": "Long-term aluminum exposure can accumulate, especially in kidney disease, and cause serious toxicity.",
+          "reviewHref": "#hyperphosphatemia-ckd-mbd"
+        },
+        "after": {
+          "id": "calcium-phosphorus-050",
+          "question": "Why are aluminum phosphate binders avoided for long-term therapy?",
+          "choices": [
+            "Aluminum can accumulate and cause neurologic, bone, and hematologic toxicity",
+            "Their phosphate-binding effect prevents any tissue accumulation",
+            "Their long-term limitation is calcium loading alone, without aluminum toxicity",
+            "Their exposure is restricted to the gut even when kidney function is reduced"
+          ],
+          "answer": 0,
+          "rationale": "Aluminum binders can lower phosphate, but reduced renal clearance allows absorbed aluminum to accumulate. The book identifies nervous-system and bone toxicity; NKF KDOQI also describes microcytic anemia without iron deficiency. KDIGO recommends avoiding long-term aluminum-containing phosphate binders. Binding phosphate does not prevent tissue accumulation, and the concern extends beyond calcium loading.",
+          "reviewHref": "#hyperphosphatemia-ckd-mbd"
+        }
+      }
+    },
+    "bodyChanges": {},
+    "addedBodies": {
+      "hyperphosphatemia-ckd-mbd": [
+        {
+          "heading": "Recognize aluminum accumulation beyond phosphate control",
+          "body": "Avoid long-term aluminum-containing phosphate binders in CKD. Reduced kidney clearance can allow absorbed aluminum to accumulate even though the binder lowers phosphate in the gut. The toxicity pattern includes neurologic injury, bone disease, and microcytic anemia that can occur without iron deficiency. KDIGO recommends avoiding long-term aluminum binders; the earlier NKF KDOQI guideline describes the neurologic, skeletal, and hematologic manifestations. A phosphate-lowering effect does not establish safety for continued exposure."
+        }
+      ]
+    },
+    "wholeBodies": {
+      "hyperphosphatemia-ckd-mbd": [
+        "Recognize aluminum accumulation beyond phosphate control"
+      ]
+    },
+    "figures": [],
+    "checks": {},
+    "references": [
+      {
+        "label": "NKF KDOQI aluminum overload and toxicity in CKD (2003; historical toxicity guidance)",
+        "href": "https://kidneyfoundation.cachefly.net/professionals/KDOQI/guidelines_bone/guide11.htm"
+      }
+    ],
+    "addedQuestions": [],
+    "metadataNewlyVerified": false,
+    "retainedPendingQuestions": [
+      "calcium-phosphorus-001",
+      "calcium-phosphorus-003",
+      "calcium-phosphorus-006",
+      "calcium-phosphorus-008",
+      "calcium-phosphorus-011",
+      "calcium-phosphorus-012",
+      "calcium-phosphorus-017",
+      "calcium-phosphorus-023",
+      "calcium-phosphorus-035",
+      "calcium-phosphorus-092",
+      "calcium-phosphorus-095",
+      "calcium-phosphorus-102"
+    ],
+    "retainedCoreBodiesPending": [
+      "Recognize acute phosphate toxicity"
+    ]
+  },
+  "finalSourceComparison": {
+    "status": "passed",
+    "questionReview": [
+      {
+        "id": "calcium-phosphorus-050",
+        "finalWholeQuestion": {
+          "id": "calcium-phosphorus-050",
+          "question": "Why are aluminum phosphate binders avoided for long-term therapy?",
+          "choices": [
+            "Aluminum can accumulate and cause neurologic, bone, and hematologic toxicity",
+            "Their phosphate-binding effect prevents any tissue accumulation",
+            "Their long-term limitation is calcium loading alone, without aluminum toxicity",
+            "Their exposure is restricted to the gut even when kidney function is reduced"
+          ],
+          "answer": 0,
+          "rationale": "Aluminum binders can lower phosphate, but reduced renal clearance allows absorbed aluminum to accumulate. The book identifies nervous-system and bone toxicity; NKF KDOQI also describes microcytic anemia without iron deficiency. KDIGO recommends avoiding long-term aluminum-containing phosphate binders. Binding phosphate does not prevent tissue accumulation, and the concern extends beyond calcium loading.",
+          "reviewHref": "#hyperphosphatemia-ckd-mbd"
+        },
+        "wholeStemAllAlternativesKeyRationaleAndAnchorCompared": true,
+        "sources": [
+          "RxPrep2023 PDF297/printed289 complete aluminum binder row",
+          "NKF KDOQI2003 Guideline11 full Rationale paragraph and complete Table31",
+          "KDIGO2017 4.1.7 PDF17/printed16"
+        ]
+      }
+    ],
+    "wholeBodyReview": [
+      {
+        "lesson": "hyperphosphatemia-ckd-mbd",
+        "heading": "Recognize aluminum accumulation beyond phosphate control",
+        "allSentencesCompared": true,
+        "sources": [
+          "NKF KDOQI2003 Guideline11 Rationale and Table31",
+          "KDIGO2017 4.1.7"
+        ]
+      }
+    ],
+    "limits": "No new dosage, numeric threshold, treatment regimen, whole metadata/check/figure/lesson/parent/cumulative verification. Historical NKF toxicity evidence identified by date; KDIGO used for long-term binder recommendation."
+  },
+  "validation": {
+    "productionBuild": {
+      "status": "passed",
+      "exitCode": 0,
+      "pages": 567,
+      "isolatedBaseCommit": "38588b9d9d40c8b3ca005dcc8f5a5ba4ea536f3a",
+      "bundler": "webpack",
+      "initialTurbopackAttempt": "Rejected external node_modules symlink before successful established webpack build; no source change required"
+    },
+    "structure": {
+      "modules": 1,
+      "questions": 108,
+      "hardErrors": [],
+      "sourceGaps": [],
+      "sizeAdvisories": [],
+      "thinLessons": [],
+      "weakestModules": [
+        {
+          "module": "calcium-phosphorus-homeostasis",
+          "lessons": 6,
+          "questions": 108,
+          "minimumLessonCoverage": 8
+        }
+      ]
+    },
+    "objectPreservation": {
+      "status": "passed",
+      "bankBefore": 108,
+      "bankAfter": 108,
+      "wholeQuestionsReconciled": 1,
+      "all108OriginalIdsKeysCorrectTextsAnchorsRelativeOrderPreserved": true,
+      "originalWholeStemPreserved": true,
+      "other107WholeQuestionObjectsUnchanged": true,
+      "oneWholeBodyAdded": true,
+      "allOriginalBodiesMetadataChecksFiguresReferencesUnchanged": true,
+      "oneHistoricalSourceReferenceAdded": true,
+      "all1180WholeCumulativeObjectsUnchanged": true,
+      "noReviewedUnitQuestionInOriginalCumulativeSelection": true,
+      "allOtherModuleWholeObjectsUnchanged": true,
+      "wholeParentModuleVerified": false
+    },
+    "browser": {
+      "status": "passed",
+      "results": [
+        {
+          "width": 1440,
+          "module": "calcium-phosphorus-homeostasis",
+          "bodies": 33,
+          "exactMetadata": true,
+          "checkResults": [],
+          "references": 21,
+          "wholeLessonClinicalVerification": false,
+          "bookSupportedQuestionScopeVerified": true,
+          "attempts": [
+            {
+              "target": "calcium-phosphorus-050",
+              "seed": 5,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-062",
+                "calcium-phosphorus-087",
+                "calcium-phosphorus-043",
+                "calcium-phosphorus-074",
+                "calcium-phosphorus-044",
+                "calcium-phosphorus-097",
+                "calcium-phosphorus-032",
+                "calcium-phosphorus-050",
+                "calcium-phosphorus-088",
+                "calcium-phosphorus-030"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-050",
+              "seed": 5,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-062",
+                "calcium-phosphorus-087",
+                "calcium-phosphorus-043",
+                "calcium-phosphorus-074",
+                "calcium-phosphorus-044",
+                "calcium-phosphorus-097",
+                "calcium-phosphorus-032",
+                "calcium-phosphorus-050",
+                "calcium-phosphorus-088",
+                "calcium-phosphorus-030"
+              ]
+            }
+          ],
+          "noHorizontalOverflow": true,
+          "unauthenticated": true
+        },
+        {
+          "width": 390,
+          "module": "calcium-phosphorus-homeostasis",
+          "bodies": 33,
+          "exactMetadata": true,
+          "checkResults": [],
+          "references": 21,
+          "wholeLessonClinicalVerification": false,
+          "bookSupportedQuestionScopeVerified": true,
+          "attempts": [
+            {
+              "target": "calcium-phosphorus-050",
+              "seed": 5,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-062",
+                "calcium-phosphorus-087",
+                "calcium-phosphorus-043",
+                "calcium-phosphorus-074",
+                "calcium-phosphorus-044",
+                "calcium-phosphorus-097",
+                "calcium-phosphorus-032",
+                "calcium-phosphorus-050",
+                "calcium-phosphorus-088",
+                "calcium-phosphorus-030"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-050",
+              "seed": 5,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-062",
+                "calcium-phosphorus-087",
+                "calcium-phosphorus-043",
+                "calcium-phosphorus-074",
+                "calcium-phosphorus-044",
+                "calcium-phosphorus-097",
+                "calcium-phosphorus-032",
+                "calcium-phosphorus-050",
+                "calcium-phosphorus-088",
+                "calcium-phosphorus-030"
+              ]
+            }
+          ],
+          "noHorizontalOverflow": true,
+          "unauthenticated": true
+        }
+      ],
+      "errors": [],
+      "captures": [
+        "body-module-Recognize-aluminum-accumulation-beyond-phosphate-control-1440.png",
+        "references-module-1440.png",
+        "question-calcium-phosphorus-050-correct-1440.png",
+        "body-module-Recognize-aluminum-accumulation-beyond-phosphate-control-390.png",
+        "references-module-390.png",
+        "question-calcium-phosphorus-050-incorrect-390.png"
+      ]
+    },
+    "visualInspection": {
+      "status": "passed",
+      "rawCapturesActuallyInspected": 8,
+      "nativePairsActuallyInspected": 3,
+      "pairs": [
+        {
+          "pair": "pair-body-module-Recognize-aluminum-accumulation-beyond-phosphate-control.png",
+          "originals": [
+            "body-module-Recognize-aluminum-accumulation-beyond-phosphate-control-1440.png",
+            "body-module-Recognize-aluminum-accumulation-beyond-phosphate-control-390.png"
+          ]
+        },
+        {
+          "pair": "pair-question-calcium-phosphorus-050-correct.png",
+          "originals": [
+            "question-calcium-phosphorus-050-correct-1440.png",
+            "question-calcium-phosphorus-050-incorrect-390.png"
+          ]
+        },
+        {
+          "pair": "pair-references-module.png",
+          "originals": [
+            "references-module-1440.png",
+            "references-module-390.png"
+          ]
+        }
+      ],
+      "additionalViewportCapturesActuallyInspected": [
+        "reference-header-1440.png",
+        "reference-header-390.png"
+      ],
+      "findings": "Whole aluminum teaching section and complete050 question/feedback readable on desktop/mobile. All21 exact reference hrefs verified; historical source label wraps legibly. Actual reference title/intro viewport supplements inspected due sticky header in mobile section capture.320px no document horizontal overflow."
+    },
+    "baselineFullStructureRun": "First CLI call omitted--module, so inspected all232 modules and reported preexisting unrelated typography errors. Correct scoped108-question module check passed; unrelated content untouched.",
+    "numericChecks": "No new calculation, dose, numeric threshold or treatment regimen added",
+    "limits": "Unauthenticated isolated preview; unchanged DOM is technical evidence only. No full lesson/parent/EN/chapter closure or production publication."
+  },
+  "remainingReview": {
+    "questionIds": [
+      "calcium-phosphorus-001",
+      "calcium-phosphorus-003",
+      "calcium-phosphorus-006",
+      "calcium-phosphorus-008",
+      "calcium-phosphorus-011",
+      "calcium-phosphorus-012",
+      "calcium-phosphorus-017",
+      "calcium-phosphorus-023",
+      "calcium-phosphorus-035",
+      "calcium-phosphorus-092",
+      "calcium-phosphorus-095",
+      "calcium-phosphorus-102"
+    ],
+    "bodyHeadings": [
+      "Recognize acute phosphate toxicity"
+    ],
+    "nextAction": "Continue calcium/phosphorus using the approved authoritative source policy. Resolve whole acute phosphate toxicity body; chronic hypoparathyroidism and magnesium/PTH physiology; ionized calcium/pH/correction limits; vitaminD stores; FHH urinary phenotype; hypercalcemia dialysis. Check guideline editions and document discrepancies rather than adopting historical treatment regimens automatically. Complete calcium parent and enteral reintegration before Chapter1 fluid-needs checkpoint closes. Earliest sequential checkpoint remains Chapter1 printed7/PDF19 entry15 with Chapter11 feeding dependencies. Full82-chapter goal remains active."
+  },
+  "release": {
+    "branch": "audit/rxprep-content-2026-09-24",
+    "commit": null,
+    "push": "pending",
+    "receipt": "enteral-nutrition-broader-aluminum-toxicity-release.json",
+    "mainMerge": "not performed",
+    "production": "not verified"
+  },
+  "wholeGoalComplete": false,
+  "sourceEvidenceStorage": {
+    "rawSourceParagraphsAndScreenshots": "Private temporary source evidence; public audit records carry original document URLs, private evidence hashes and read/viewed manifests",
+    "priorMineralReviewManifestRefinement": "docs/clinical-audit/enteral-nutrition-broader-mineral-interpretation-review.json",
+    "onlyPriorOriginalSourceTextFieldsReplacedByReadViewedFlagsAndPrivateHashes": true
+  }
+}

@@ -228,3 +228,12 @@ calciumPhosphorusHomeostasisModule.submodules.find((lesson) => lesson.slug === "
   "heading": "Contrast PTH and FGF23 before treating phosphate",
   "body": "PTH and FGF23 both promote renal phosphate excretion, but their active-vitamin-D effects differ. Endogenous PTH promotes renal calcium reabsorption, phosphate excretion, and active vitamin D synthesis; calcitriol then increases intestinal absorption of calcium and phosphate. FGF23 decreases proximal tubular phosphate reabsorption and reduces calcitriol production. In CKD, elevated FGF23 and reduced calcitriol can contribute to secondary PTH elevation. Read calcium, phosphate, PTH, kidney function, and vitamin D context together. Early phosphate-regulatory changes do not by themselves establish a benefit from phosphate binders: KDIGO bases phosphate-lowering decisions in CKD on progressively or persistently elevated serum phosphate."
 });
+
+calciumPhosphorusHomeostasisModule.submodules.find((lesson) => lesson.slug === "hyperphosphatemia-ckd-mbd").lesson.push({
+  "heading": "Recognize aluminum accumulation beyond phosphate control",
+  "body": "Avoid long-term aluminum-containing phosphate binders in CKD. Reduced kidney clearance can allow absorbed aluminum to accumulate even though the binder lowers phosphate in the gut. The toxicity pattern includes neurologic injury, bone disease, and microcytic anemia that can occur without iron deficiency. KDIGO recommends avoiding long-term aluminum binders; the earlier NKF KDOQI guideline describes the neurologic, skeletal, and hematologic manifestations. A phosphate-lowering effect does not establish safety for continued exposure."
+});
+calciumPhosphorusHomeostasisModule.references.push({
+  "label": "NKF KDOQI aluminum overload and toxicity in CKD (2003; historical toxicity guidance)",
+  "href": "https://kidneyfoundation.cachefly.net/professionals/KDOQI/guidelines_bone/guide11.htm"
+});

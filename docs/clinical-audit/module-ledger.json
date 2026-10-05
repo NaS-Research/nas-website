@@ -312,7 +312,7 @@
         {
           "slug": "hyperphosphatemia-ckd-mbd",
           "status": "reviewing",
-          "latestScopedEvidence": "enteral-nutrition-broader-ckd-binder-review.json",
+          "latestScopedEvidence": "enteral-nutrition-broader-aluminum-toxicity-review.json",
           "wholeLessonVerified": false,
           "verifiedQuestionIds": [
             "calcium-phosphorus-043",
@@ -328,18 +328,18 @@
             "calcium-phosphorus-105",
             "calcium-phosphorus-109",
             "calcium-phosphorus-binder-formulation-selection",
-            "calcium-phosphorus-binder-medicine-reconciliation"
-          ],
-          "remainingQuestionIds": [
+            "calcium-phosphorus-binder-medicine-reconciliation",
             "calcium-phosphorus-050"
           ],
+          "remainingQuestionIds": [],
           "verifiedBodyHeadings": [
             "Treat a pattern, not a single number",
             "Reduce absorbable phosphate",
             "Choose binders by patient risk",
             "Coordinate hormone and dialysis therapy",
             "Select a binder formulation deliberately",
-            "Check binder interactions before scheduling"
+            "Check binder interactions before scheduling",
+            "Recognize aluminum accumulation beyond phosphate control"
           ],
           "remainingBodyHeadings": [
             "Recognize acute phosphate toxicity"
@@ -359,7 +359,8 @@
         "enteral-nutrition-broader-ckd-binder-review.json",
         "enteral-nutrition-broader-acute-hypocalcemia-review.json",
         "enteral-nutrition-broader-hypercalcemia-review.json",
-        "enteral-nutrition-broader-mineral-interpretation-review.json"
+        "enteral-nutrition-broader-mineral-interpretation-review.json",
+        "enteral-nutrition-broader-aluminum-toxicity-review.json"
       ],
       "latestPhosphateRouteLabelReview": {
         "evidence": "enteral-nutrition-broader-phosphate-route-label-review.json",
@@ -776,6 +777,53 @@
           "Use FGF23 to explain phosphate control",
           "Know what the laboratory measured",
           "Use correction formulas cautiously"
+        ],
+        "newWholeMetadataChecksFiguresVerified": false,
+        "newlyCountedCumulativeQuestions": 0,
+        "wholeLessonsVerified": false,
+        "wholeParentModuleVerified": false,
+        "wholeENModuleVerified": false,
+        "wholeChaptersVerified": false,
+        "all108OriginalIdsKeysCorrectTextsAnchorsRelativeOrderPreserved": true,
+        "all1180CumulativeWholeObjectsUnchanged": true
+      },
+      "latestAluminumToxicityReview": {
+        "evidence": "enteral-nutrition-broader-aluminum-toxicity-review.json",
+        "moduleBankBefore": 108,
+        "moduleBankAfter": 108,
+        "wholeQuestionsVerified": 1,
+        "existingQuestionsNewlyVerified": 1,
+        "newDistinctQuestionsAdded": 0,
+        "sourceVerifiedBankIds": [
+          "calcium-phosphorus-050"
+        ],
+        "broaderFeedingBankVerifiedAfter": 309,
+        "wholeBodiesVerified": 1,
+        "retainedWholeBodiesReconciled": 0,
+        "newWholeBodiesAdded": 1,
+        "sourceVerifiedBodyHeadings": {
+          "hyperphosphatemia-ckd-mbd": [
+            "Recognize aluminum accumulation beyond phosphate control"
+          ]
+        },
+        "moduleWholeQuestionsVerifiedAfter": 96,
+        "moduleQuestionTotal": 108,
+        "remainingQuestionIds": [
+          "calcium-phosphorus-001",
+          "calcium-phosphorus-003",
+          "calcium-phosphorus-006",
+          "calcium-phosphorus-008",
+          "calcium-phosphorus-011",
+          "calcium-phosphorus-012",
+          "calcium-phosphorus-017",
+          "calcium-phosphorus-023",
+          "calcium-phosphorus-035",
+          "calcium-phosphorus-092",
+          "calcium-phosphorus-095",
+          "calcium-phosphorus-102"
+        ],
+        "remainingCKDBodyHeadings": [
+          "Recognize acute phosphate toxicity"
         ],
         "newWholeMetadataChecksFiguresVerified": false,
         "newlyCountedCumulativeQuestions": 0,

@@ -695,3 +695,13 @@ const sourceReviewedMineralInterpretationQuestions = {
 for (const question of calciumPhosphorusHomeostasisQuestionBank) {
   if (Object.hasOwn(sourceReviewedMineralInterpretationQuestions, question.id)) Object.assign(question, sourceReviewedMineralInterpretationQuestions[question.id]);
 }
+
+Object.assign(calciumPhosphorusHomeostasisQuestionBank.find((question) => question.id === "calcium-phosphorus-050"), {
+  "choices": [
+    "Aluminum can accumulate and cause neurologic, bone, and hematologic toxicity",
+    "Their phosphate-binding effect prevents any tissue accumulation",
+    "Their long-term limitation is calcium loading alone, without aluminum toxicity",
+    "Their exposure is restricted to the gut even when kidney function is reduced"
+  ],
+  "rationale": "Aluminum binders can lower phosphate, but reduced renal clearance allows absorbed aluminum to accumulate. The book identifies nervous-system and bone toxicity; NKF KDOQI also describes microcytic anemia without iron deficiency. KDIGO recommends avoiding long-term aluminum-containing phosphate binders. Binding phosphate does not prevent tissue accumulation, and the concern extends beyond calcium loading."
+});
