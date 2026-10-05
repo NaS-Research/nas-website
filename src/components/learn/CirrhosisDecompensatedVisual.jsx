@@ -16,8 +16,10 @@ export const cirrhosisDecompensatedVisualTypes = Object.keys(views).map((key) =>
 export default function CirrhosisDecompensatedVisual({ type }) {
   const key = type.replace("cirrhosis-decompensated-", "");
   const labels = views[key] || views["integrated-case"];
-  const reviewed = key === "compensation-portal" || key === "severity-assessment" || key === "ascites-diagnosis" || key === "ascites-treatment" || key === "paracentesis-refractory" || key === "sbp" || key === "hrs-aki" || key === "portal-varices" || key === "acute-bleeding" || key === "encephalopathy";
+  const reviewed = key === "compensation-portal" || key === "severity-assessment" || key === "ascites-diagnosis" || key === "ascites-treatment" || key === "paracentesis-refractory" || key === "sbp" || key === "hrs-aki" || key === "portal-varices" || key === "acute-bleeding" || key === "encephalopathy" || key === "longitudinal-care" || key === "integrated-case";
   const captions = {
+    "longitudinal-care": "Protect nutrition and muscle, review medicines, maintain indicated surveillance and plan liver follow-up.",
+    "integrated-case": "Connect acute safety, indication-specific prevention, accessible medicines and responsible follow-up with definitive and supportive care.",
     encephalopathy: "Assess clinical severity and triggers, titrate lactulose safely and plan appropriate rifaximin treatment and recurrence prevention.",
     "portal-varices": "Confirm the portal-prevention indication, assess NSBB tolerance and use the appropriate endoscopic strategy.",
     "acute-bleeding": "Resuscitation, vasoactive treatment, antibiotics and endoscopy form the emergency bundle; persistent bleeding and high-risk cases require TIPS assessment.",

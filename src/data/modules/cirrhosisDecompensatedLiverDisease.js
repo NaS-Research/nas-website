@@ -833,3 +833,121 @@ cirrhosisDecompensatedLiverDiseaseModule.references.push(...[
     "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c5e8e2fd-7087-4b78-9181-cc259c0be2f1"
   }
 ]);
+
+// Complete longitudinal and integrated cirrhosis care with dated primary sources.
+Object.assign(cirrhosisDecompensatedLiverDiseaseModule.submodules.find((lesson) => lesson.slug === "longitudinal-care"), {
+  "summary": "Longitudinal care links nutrition, medication stewardship, prevention, indicated HCC surveillance, and reliable access.",
+  "concepts": [
+    "Protein",
+    "Sarcopenia",
+    "NSAIDs",
+    "HCC",
+    "Vaccines"
+  ],
+  "application": "Turn every outpatient visit into a review of muscle, food, medication, fluid, cognition, bleeding, cancer, infection, and referral risk.",
+  "keyPoints": [
+    "Do not routinely restrict protein for hepatic encephalopathy.",
+    "Muscle supports nutritional and metabolic reserve.",
+    "Medication review can reduce avoidable harm.",
+    "Continue indicated surveillance after etiologic control."
+  ],
+  "lesson": [
+    {
+      "heading": "Feed the patient",
+      "body": "Avoid routine protein restriction for hepatic encephalopathy. For clinically stable adults with cirrhosis, AASLD recommends 1.2 to 1.5 g/kg ideal body weight/day protein alongside adequate energy; assess the weight basis rather than using an ascites-increased scale weight indiscriminately. Encourage varied protein sources, including vegetable and dairy options, and reduce prolonged fasting with an individualized late-evening snack. Review muscle loss, actual intake, food access, sodium-related palatability, alcohol, micronutrient risks and barriers to safe eating with the nutrition team. Swallowing symptoms require appropriate assessment. Obesity does not exclude malnutrition; these stable-adult targets are not a universal prescription for children or critical illness."
+    },
+    {
+      "heading": "Deprescribe harm",
+      "body": "Avoid systemic NSAIDs because they can worsen kidney function, bleeding and ascites. Review benzodiazepines and other sedatives, nephrotoxins, supplements, sodium-containing products and each medicine’s current renal and hepatic dosing guidance with the treating team. Chronic benzodiazepines are generally avoided in decompensated cirrhosis, although selected indications require individualized care. Do not stop essential medicines indiscriminately. An elevated INR from cirrhosis does not establish protection from thrombosis or measure bleeding risk by itself: both procoagulant and anticoagulant factors change."
+    },
+    {
+      "heading": "Continue prevention",
+      "body": "For patients with cirrhosis who could benefit from HCC treatment, AASLD recommends ultrasound plus AFP about every six months. Continue indicated surveillance after HCV cure or other etiologic control; AFP alone does not replace imaging. Child-Pugh C patients generally require transplant eligibility for surveillance, and life-limiting comorbidities can make surveillance inappropriate. Coordinate specialist review of inadequate imaging or abnormal findings. Review current vaccination indications and prior doses, bone and micronutrient health, variceal prevention, alcohol cessation and metabolic care rather than treating a normal liver-enzyme result as resolution of risk."
+    },
+    {
+      "heading": "Teach the escalation signs",
+      "body": "Give the patient and caregiver an explicit contact and emergency plan. Vomiting blood, black tarry stools, new marked confusion or inappropriate sleepiness, and fever or severe new abdominal pain with ascites require emergency assessment. Promptly report reduced urine, rapid weight gain, worsening dyspnea, jaundice, severe diarrhea or interrupted medicines; severity and the agreed plan determine urgency. Excess lactulose-related diarrhea can cause dehydration and worsen encephalopathy. Review adherence and prescribed adjustments with the team instead of assuming that more diarrhea means better treatment."
+    },
+    {
+      "heading": "Address alcohol-associated malnutrition",
+      "body": "Alcohol cessation and adequate nutrition belong in the same plan. Review vitamin and trace-mineral needs, including thiamine, folate, pyridoxine, vitamins A and D, and zinc. Thiamine deficiency can cause Wernicke’s encephalopathy or Korsakoff syndrome; thiamine is used to prevent and treat these complications."
+    }
+  ]
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseModule.submodules.find((lesson) => lesson.slug === "longitudinal-care").check, {
+  "question": "Which nutrition plan is most appropriate for many adults with cirrhosis?",
+  "choices": [
+    "Adequate energy and roughly 1.2 to 1.5 g/kg ideal body weight/day protein in stable adults, with minimized fasting",
+    "Severe protein restriction whenever hepatic encephalopathy is present",
+    "Long overnight fasting despite inadequate daytime intake",
+    "Vitamin supplementation in place of adequate calories and protein"
+  ],
+  "rationale": "For clinically stable adults, identify the weight basis and preserve adequate protein and energy. Routine restriction can worsen muscle loss; shorter fasting and individualized snacks support intake. Vitamins do not replace calories or protein."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseModule.submodules.find((lesson) => lesson.slug === "integrated-case"), {
+  "summary": "Connect acute safety, indication-specific recurrence prevention, medication access, follow-up ownership and transplant or symptom support.",
+  "concepts": [
+    "Precipitants",
+    "Hemodynamics",
+    "Recurrence",
+    "Medication access",
+    "Follow-up",
+    "Transplant"
+  ],
+  "application": "Write a plan that states what needs urgent care, what each medicine is for, how it will be obtained, who reviews results and when to escalate.",
+  "keyPoints": [
+    "Reassess circulation and kidney risk before increasing diuresis.",
+    "Give each prevention regimen its own indication and review plan.",
+    "Confirm supply and caregiver understanding before handoff.",
+    "Assign follow-up and result-review ownership.",
+    "Transplant evaluation and palliative support can coexist."
+  ],
+  "lesson": [
+    {
+      "heading": "Name the liver state",
+      "body": "Begin with the cause of cirrhosis and its treatment, prior and current decompensation, liver reserve, kidney function and trajectory. Child-Pugh and MELD describe different aspects of risk; record the model used and do not let a modest score erase recurrent HE, ascites, bleeding or frailty. Review portal hypertension, HCC surveillance eligibility, transplant evaluation and the patient’s goals. Normal aminotransferases or HCV cure do not by themselves establish that cirrhosis and its complications have resolved."
+    },
+    {
+      "heading": "Map active complications",
+      "body": "For each problem, document its trigger, current treatment, response, toxicity and recurrence plan. Ascites with infection concern needs diagnostic evaluation for SBP; confusion requires clinical HE assessment and exclusion of mimics; bleeding requires its acute pathway. Infection, bleeding, diarrhea, excessive diuresis and kidney dysfunction can precipitate one another. Reassess the entire patient when a new event occurs rather than treating each complication as an isolated medication order."
+    },
+    {
+      "heading": "Protect circulation and kidney function",
+      "body": "Consider an adult with tense ascites, falling blood pressure, rising creatinine and recent systemic NSAID use. More diuresis is not an automatic response to visible fluid. Promptly assess hemodynamics, effective volume, infection, bleeding, nephrotoxins and kidney injury; review whether diuretics and other pressure-lowering medicines need to be held or adjusted. Albumin and fluids must match the clinical indication and volume assessment. Contemporary HRS-AKI evaluation does not require an indiscriminate 48-hour albumin challenge in every patient, especially with congestion. Use the detailed ascites and HRS lessons for indication-specific treatment."
+    },
+    {
+      "heading": "Separate recurrence plans and treatment courses",
+      "body": "List why each medicine is being used and when it should be reviewed or stopped. Lactulose adjustment and indicated rifaximin support HE recurrence prevention; diuretics require kidney, electrolyte and volume reassessment; variceal secondary prevention has its own endoscopic and drug plan. Short-course antibiotic prophylaxis during acute gastrointestinal bleeding is not automatically lifelong SBP prophylaxis. A previous SBP episode creates a separate secondary-prevention question, and primary SBP prophylaxis requires its own eligibility and local resistance assessment. Do not copy one antibiotic indication into every later encounter."
+    },
+    {
+      "heading": "Protect transitions",
+      "body": "Reconcile the medicines the patient actually takes, including nonprescription drugs and supplements, with the intended discharge regimen. Confirm that the prescribed supply can be obtained and that the patient or caregiver understands its use. A rifaximin prescription that cannot be filled is an unresolved access problem, not secured recurrence prevention; contact the treating team to arrange supply or an explicit interim plan. Recheck lactulose instructions, diuretic changes, indicated prophylaxis and antiviral therapy. Avoid routine systemic NSAIDs and review sedating or nephrotoxic medicines without abruptly stopping every essential treatment."
+    },
+    {
+      "heading": "Give a usable home and escalation plan",
+      "body": "Provide individualized written instructions for weight and fluid symptoms, bowel frequency and consistency, intake, medication adjustments and whom to contact. Maintenance lactulose generally targets about 2 to 3 soft stools daily; profuse diarrhea can worsen hydration, electrolytes and cognition. Use caregiver teach-back, including what to do when doses are missed or access fails. Hematemesis, melena, marked new confusion or sleepiness, or fever and severe abdominal pain with ascites require urgent assessment according to the emergency plan. Serial ammonia alone cannot certify recovery, safe dosing or readiness for home care."
+    },
+    {
+      "heading": "Close the loop",
+      "body": "Name the clinician or team responsible for each laboratory result, medication reassessment, imaging study and referral, and give the patient the agreed timing and contact details. After AKI or a diuretic change, individualize kidney, electrolyte and volume follow-up rather than imposing one universal interval. Arrange liver clinic care, indicated HCC surveillance, variceal follow-up, nutrition and muscle assessment, and prevention appropriate to history. For eligible patients with cirrhosis who can benefit from HCC treatment, ultrasound plus AFP approximately every 6 months continues after HCV cure. An order without a result-review and action plan leaves the clinical task unfinished."
+    },
+    {
+      "heading": "Link definitive care and symptom support",
+      "body": "Recurrent decompensation warrants timely hepatology and transplant evaluation rather than waiting for a single high MELD value. Address alcohol or metabolic contributors, adequate energy and protein, frailty, food access and caregiver needs alongside complication treatment. Discuss prognosis, decision makers and goals as the illness changes. Palliative care can support symptoms and patients’ and caregivers’ needs concurrently with disease-directed treatment and transplant evaluation; it is not synonymous with hospice. Eligibility and treatment decisions remain patient-specific."
+    }
+  ]
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseModule.submodules.find((lesson) => lesson.slug === "integrated-case").check, {
+  "question": "An adult is recovering from HE, ascites and AKI. Which discharge plan best closes the clinical loop?",
+  "choices": [
+    "Reconcile accessible medicines, teach stool and emergency instructions, and assign dated follow-up and result-review responsibilities.",
+    "Provide only a medication list, with no contact details or result-review plan.",
+    "Use serial ammonia values as the only measure of recovery and dosing safety.",
+    "Delay every liver, nutrition and transplant assessment until MELD becomes very high."
+  ],
+  "rationale": "Safe transition requires the intended medicines to be obtainable and understood, individualized monitoring, an escalation plan and an identified team that reviews results and acts on them. Ammonia alone cannot assess HE recovery or dosing safety, and recurrent decompensation may justify transplant evaluation despite a modest MELD score."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseModule, {
+  "source": "Supplied RxPrep 2023 liver-disease teaching, reconciled with selected dated primary guidance and US labels: AASLD materials, Baveno VII (2022), ALTA TIPS recommendations (2022), ADQI-ICA AKI consensus (2024) and ACG hepatic encephalopathy guideline (2026).",
+  "disclaimer": "This module supports advanced education about cirrhosis and its complications; it does not provide patient-specific medical advice. It reconciles a 2023 course source with the selected dated guidance and US labeling identified in the references, including the 2026 ACG hepatic encephalopathy guideline. Patient care requires current guidance, local protocols and resistance data, specialist consultation and patient-specific evidence."
+});

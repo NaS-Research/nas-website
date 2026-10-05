@@ -1156,3 +1156,85 @@ Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => 
   ],
   "rationale": "The rifaximin label reports INR changes with warfarin and recommends INR/prothrombin-time monitoring and warfarin adjustment when needed. There is no universal automatic dose change. Ammonia does not measure anticoagulation intensity."
 });
+
+// Distinct integrated cases; preserve stable assessment identities.
+Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => question.id === "cirrhosis-decompensated-113"), {
+  "question": "An adult with cirrhosis has worsening ascites, falling blood pressure, rising creatinine and recent systemic NSAID use. What is the best next approach?",
+  "choices": [
+    "Promptly reassess circulation, volume, infection and nephrotoxins and review diuretic safety.",
+    "Automatically double diuretics because ascites always proves adequate kidney perfusion.",
+    "Give every patient 48 hours of albumin regardless of congestion or the clinical assessment.",
+    "Continue the NSAID because an elevated INR prevents kidney injury."
+  ],
+  "rationale": "Visible ascites does not establish adequate effective circulating volume or exclude AKI. Reassess triggers, hemodynamics, nephrotoxins and treatment safety. Contemporary HRS-AKI evaluation does not mandate indiscriminate 48-hour albumin exposure, and INR does not protect the kidney from NSAIDs."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => question.id === "cirrhosis-decompensated-114"), {
+  "question": "After recovery from overt HE, a caregiver asks what belongs in the home plan. Which answer is best?",
+  "choices": [
+    "Written lactulose and soft-stool instructions, hydration and emergency warnings, accessible medicines and assigned follow-up.",
+    "Only an ammonia testing schedule, without clinical or stool assessment.",
+    "A rule to continue hourly lactulose indefinitely whenever cognition is normal.",
+    "Immediate withdrawal of all recurrence prevention after the first normal conversation."
+  ],
+  "rationale": "The transition plan connects clinical cognition, about 2 to 3 soft stools daily, safe hydration, medication access, caregiver understanding and follow-up. Excess diarrhea can precipitate HE. Ammonia alone cannot guide maintenance dosing or justify stopping prevention."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => question.id === "cirrhosis-decompensated-115"), {
+  "question": "An adult received short-course antibiotic prophylaxis during an acute variceal bleed. No prior SBP or separate qualifying primary-prevention indication has been established. Which discharge interpretation is correct?",
+  "choices": [
+    "Review the bleeding-course stop plan and assess SBP prophylaxis as a separate indication.",
+    "Continue the bleeding antibiotic lifelong solely because the patient has cirrhosis.",
+    "Assume bleeding prophylaxis proves that the patient previously had SBP.",
+    "Use chronic SBP prophylaxis as a replacement for variceal secondary prevention."
+  ],
+  "rationale": "Antibiotics during acute gastrointestinal bleeding and long-term SBP prevention have different indications. A prior SBP episode or qualifying primary-prevention assessment requires a separate plan that considers local resistance and patient factors. Neither substitutes for indicated variceal secondary prevention."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => question.id === "cirrhosis-decompensated-116"), {
+  "question": "An adult with cirrhosis develops hematemesis and shock. Which plan takes priority?",
+  "choices": [
+    "Emergency stabilization with the acute bleeding pathway, early vasoactive and antibiotic treatment and urgent endoscopic planning.",
+    "Manage the event at home using only the usual oral nonselective beta blocker.",
+    "Wait for an outpatient surveillance ultrasound before addressing circulation.",
+    "Increase lactulose alone because any acute event in cirrhosis is necessarily HE."
+  ],
+  "rationale": "Hematemesis with shock requires emergency assessment, resuscitation, airway review when indicated and the acute variceal bleeding pathway. Early vasoactive therapy and antibiotic prophylaxis accompany endoscopic care. Maintenance medicines, surveillance and HE therapy cannot substitute for stabilization."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => question.id === "cirrhosis-decompensated-117"), {
+  "question": "Rifaximin is prescribed for HE recurrence prevention, but the patient cannot obtain it because coverage is unresolved. What is the best transition action?",
+  "choices": [
+    "Contact the treating team to secure access or document an explicit interim prevention plan and caregiver instructions.",
+    "Document the prescription as proof that the patient has a reliable supply.",
+    "Replace the drug automatically with long-term neomycin without clinical review.",
+    "Stop the entire lactulose plan while waiting for insurance, without contacting the team."
+  ],
+  "rationale": "A prescription and an obtainable supply are different steps. Resolve access with the treating team or establish an explicit interim plan; continue individualized HE and trigger management. Automatic substitution or withdrawal introduces clinical risk and does not close the handoff."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => question.id === "cirrhosis-decompensated-118"), {
+  "question": "After AKI improves, an individualized diuretic plan and laboratory follow-up are ordered. What remaining gap most directly threatens continuity?",
+  "choices": [
+    "No named team will review the results, contact the patient or adjust treatment.",
+    "The patient has written emergency contact details.",
+    "The regimen includes a patient-specific kidney and electrolyte reassessment plan.",
+    "The caregiver can explain the intended medicines and warning signs."
+  ],
+  "rationale": "An order alone does not establish result review or action. Assign responsibility and agreed timing so kidney, electrolyte and volume findings lead to patient contact and appropriate treatment decisions. The other options describe protective transition steps."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => question.id === "cirrhosis-decompensated-119"), {
+  "question": "An adult with established cirrhosis has achieved HCV cure and remains eligible to benefit from HCC treatment. Which surveillance plan is appropriate?",
+  "choices": [
+    "Continue ultrasound plus AFP approximately every 6 months.",
+    "Stop all HCC surveillance solely because HCV is cured.",
+    "Use AFP alone as a complete substitute for surveillance imaging.",
+    "Delay surveillance until aminotransferases rise or cancer symptoms occur."
+  ],
+  "rationale": "HCV cure reduces risk but does not erase the HCC risk of established cirrhosis. Eligible patients continue semiannual ultrasound plus AFP surveillance; AFP alone and symptom-triggered testing do not replace that plan. Surveillance benefit and eligibility must remain under review."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => question.id === "cirrhosis-decompensated-120"), {
+  "question": "An adult with recurrent HE and ascites has a modest MELD score and substantial caregiver burden. Which comprehensive plan is best?",
+  "choices": [
+    "Arrange timely hepatology and transplant evaluation with nutrition, symptom support and goals-of-care discussions.",
+    "Defer every transplant assessment until one fixed high MELD threshold is reached.",
+    "Exclude palliative support solely because transplant evaluation is being considered.",
+    "Replace complication treatment with goals-of-care discussion alone."
+  ],
+  "rationale": "Recurrent decompensation can justify transplant evaluation despite a modest MELD score. Nutrition, frailty and caregiver support remain part of care. Palliative support can accompany disease-directed treatment and transplant evaluation; neither a score nor a goals discussion replaces patient-specific complication management."
+});
