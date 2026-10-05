@@ -385,3 +385,101 @@ calciumPhosphorusHomeostasisQuestionBank.splice(calciumPhosphorusHomeostasisQues
   "reviewHref": "#hyperphosphatemia-ckd-mbd",
   "difficulty": "clinical"
 });
+
+const sourceReviewedAcuteCalciumQuestions = {
+  "calcium-phosphorus-018": {
+    "rationale": "The acute hypocalcemia guidance identifies QT prolongation and arrhythmia. QT shortening is associated with the opposite calcium disturbance; fixed ST elevation and a universal delta wave are not characteristic hypocalcemia findings. Interpret the ECG with symptoms and the calcium trend."
+  },
+  "calcium-phosphorus-019": {
+    "rationale": "Laryngospasm threatens the airway and is a recognized severe hypocalcemia manifestation requiring urgent monitored treatment. Stable fatigue or chronic nail changes do not carry the same immediate airway risk. Low albumin alone does not establish symptomatic hypocalcemia."
+  },
+  "calcium-phosphorus-020": {
+    "rationale": "The reviewed calcium gluconate label specifies acute symptomatic hypocalcemia in adults and pediatric patients. It does not establish long-term osteoporosis monotherapy or treatment of high phosphate or high calcium; long-term safety has not been established."
+  },
+  "calcium-phosphorus-021": {
+    "rationale": "The reviewed 10% product contains 100 mg of calcium gluconate salt per mL, providing 9.3 mg (0.465 mEq) elemental calcium. Salt mass is not elemental calcium mass. The 93 mg value is the elemental content of 10 mL, not 1 mL."
+  },
+  "calcium-phosphorus-022": {
+    "rationale": "Emergency guidance specifies central access for calcium chloride because it is more irritating. The reviewed chloride label specifies slow infusion in a central or deep vein and warns of tissue necrosis with infiltration. It contains elemental calcium, is administered intravenously, and can cause cardiac adverse effects; do not treat it as interchangeable with gluconate by volume."
+  },
+  "calcium-phosphorus-024": {
+    "rationale": "PTH facilitates active vitamin D synthesis; deficient signaling can leave renal activation insufficient. Acute guidance includes calcitriol for postoperative hypoparathyroidism. Calcitriol supports calcium absorption rather than blocking it; nutritional vitamin D is not phosphate, and intestinal glucose absorption is not the reason for active vitamin D treatment."
+  },
+  "calcium-phosphorus-025": {
+    "rationale": "The gluconate label prohibits mixing with bicarbonate or phosphate-containing fluids because precipitation can occur. A secure line, ECG monitoring during urgent administration, and repeat calcium assessment are safeguards rather than the unsafe practice. Assess exact product and infusion compatibility before giving calcium."
+  },
+  "calcium-phosphorus-026": {
+    "rationale": "Urgent IV calcium requires assessment of clinical response, ECG risk, calcium, IV-site injury, and the underlying cause. The label also requires vitals and calcium monitoring during administration. A first dose does not end reassessment; LDL testing alone and discharge before response assessment miss acute risks."
+  },
+  "calcium-phosphorus-042": {
+    "rationale": "Yorvipath is indicated for adult hypoparathyroidism and requires individualized calcium monitoring. It was not studied for acute post-surgical hypoparathyroidism and is not a substitute for emergency calcium treatment. Serious hypercalcemia can occur with initiation or dose increases and serious hypocalcemia with abrupt interruption; calcium assessment remains necessary."
+  },
+  "calcium-phosphorus-070": {},
+  "calcium-phosphorus-071": {},
+  "calcium-phosphorus-072": {},
+  "calcium-phosphorus-073": {},
+  "calcium-phosphorus-074": {},
+  "calcium-phosphorus-075": {},
+  "calcium-phosphorus-076": {},
+  "calcium-phosphorus-077": {},
+  "calcium-phosphorus-078": {},
+  "calcium-phosphorus-079": {},
+  "calcium-phosphorus-093": {
+    "choices": [
+      "Urgent monitored calcium with postoperative hypoparathyroidism management",
+      "Use oral maintenance therapy alone despite falling calcium and ECG abnormalities",
+      "Wait for all etiologic results before beginning monitored stabilization",
+      "Treat phosphate alone without addressing the calcium and ECG findings"
+    ],
+    "rationale": "Post-thyroidectomy parathyroid disruption can cause acute hypocalcemia. Falling calcium with low PTH and QT prolongation warrants urgent monitored stabilization plus cause-directed postoperative management. Oral maintenance alone, waiting for every etiologic result, or treating phosphate without addressing calcium and ECG risk does not manage the immediate problem."
+  },
+  "calcium-phosphorus-101": {
+    "choices": [
+      "Give urgent calcium as indicated, assess magnesium and vitamin D, and monitor for prolonged recurrence",
+      "End calcium monitoring as soon as one measurement normalizes",
+      "Use an identical replacement plan regardless of CKD-MBD or the denosumab product",
+      "Exclude denosumab from the medication review because it was given earlier"
+    ],
+    "rationale": "Denosumab products can cause severe hypocalcemia, with greater risk in advanced CKD. Prolia labeling reports postmarketing hypocalcemia lasting weeks or months and requires continued monitoring; do not assume one corrected result ends the risk. Stabilize symptomatic hypocalcemia as indicated, assess magnesium, vitamin D and CKD-MBD, and review the actual denosumab product and follow-up plan. The Prolia monitoring instructions must not be copied automatically to every denosumab regimen."
+  },
+  "calcium-phosphorus-108": {
+    "choices": [
+      "Postoperative hypoparathyroidism is likely",
+      "Vitamin D deficiency alone explains the suppressed PTH response",
+      "An appropriate secondary PTH rise from phosphate retention explains the low PTH",
+      "Severe magnesium deficiency is established by the normal magnesium result"
+    ],
+    "rationale": "Neck surgery can disrupt parathyroid function. Low PTH with low calcium and high phosphate supports postoperative hypoparathyroidism: PTH normally promotes renal calcium reabsorption, phosphate excretion, and active vitamin D synthesis. Normal magnesium makes severe magnesium deficiency a less fitting explanation for this case; vitamin D deficiency alone or phosphate retention with an appropriate PTH rise does not match the low PTH pattern."
+  }
+};
+for (const question of calciumPhosphorusHomeostasisQuestionBank) {
+  if (Object.hasOwn(sourceReviewedAcuteCalciumQuestions, question.id)) Object.assign(question, sourceReviewedAcuteCalciumQuestions[question.id]);
+}
+calciumPhosphorusHomeostasisQuestionBank.splice(calciumPhosphorusHomeostasisQuestionBank.findIndex((question) => question.id === "calcium-phosphorus-050"), 0, {
+  "id": "calcium-phosphorus-iv-product-content-reconciliation",
+  "question": "A prescription specifies elemental calcium, and the available 10% calcium gluconate is replaced with 10% calcium chloride. Which reconciliation is essential?",
+  "choices": [
+    "Recalculate from the exact elemental content; the reviewed products contain 9.3 and 27 mg elemental calcium per mL, respectively",
+    "Use the same volume because both products are labeled 10%",
+    "Treat 100 mg of calcium salt as 100 mg elemental calcium for either product",
+    "Carry over the gluconate route and rate without reviewing the chloride label"
+  ],
+  "answer": 0,
+  "rationale": "The percentage describes calcium salt concentration, not equal elemental content. The reviewed gluconate product provides 9.3 mg elemental calcium/mL and chloride provides 27 mg/mL. Reconcile elemental dose, volume, access, and administration instructions; equal volumes and copied rates are unsafe assumptions. This is product reconciliation, not a recommended replacement dose.",
+  "reviewHref": "#hypocalcemia",
+  "difficulty": "clinical"
+});
+calciumPhosphorusHomeostasisQuestionBank.splice(calciumPhosphorusHomeostasisQuestionBank.findIndex((question) => question.id === "calcium-phosphorus-079"), 0, {
+  "id": "calcium-phosphorus-neonatal-ceftriaxone-compatibility",
+  "question": "A 20-day-old neonate is receiving ceftriaxone and requires IV calcium. Which compatibility principle applies?",
+  "choices": [
+    "Concomitant ceftriaxone and IV calcium-containing products are contraindicated in neonates 28 days old or younger",
+    "Give the two concurrently through separate lines because the neonatal restriction applies only to a Y-site",
+    "Use the older-patient sequential flushing exception for every neonate",
+    "Mix ceftriaxone with calcium gluconate after diluting both in saline"
+  ],
+  "answer": 0,
+  "rationale": "The reviewed gluconate label contraindicates concomitant ceftriaxone and IV calcium-containing products in neonates 28 days old or younger. Separate lines do not remove that contraindication. The sequential administration exception with thorough compatible-fluid flushing applies to patients older than 28 days. Simultaneous Y-site administration and mixing are prohibited; the treating team must reconcile the treatment plan.",
+  "reviewHref": "#hypocalcemia",
+  "difficulty": "clinical"
+});

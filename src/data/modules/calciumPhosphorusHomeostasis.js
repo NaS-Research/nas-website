@@ -161,3 +161,37 @@ calciumPhosphorusHomeostasisModule.references.push(...[
     "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e6328460-a57b-450b-a48c-6dcd4b476360"
   }
 ]);
+
+const sourceReviewedAcuteCalciumLesson = calciumPhosphorusHomeostasisModule.submodules.find((lesson) => lesson.slug === "hypocalcemia");
+const sourceReviewedAcuteCalciumBodies = {
+  "Recognize a calcium emergency": "Perioral or digital paresthesia, carpopedal spasm, tetany, laryngospasm, seizure, prolonged QT, and arrhythmia can signal clinically important hypocalcemia. Severity depends on symptoms and the speed of decline as well as the calcium result. Severe symptomatic hypocalcemia is an emergency: begin urgent monitored treatment while investigating the cause rather than waiting for every etiologic result. After thyroid or parathyroid surgery, disrupted parathyroid function is an important possible cause; assess calcium, phosphate, PTH, magnesium, vitamin D, and kidney function together.",
+  "Administer IV calcium safely": "Calcium gluconate injection is labeled for acute symptomatic hypocalcemia in adults and children; its long-term safety has not been established. The reviewed 10% gluconate product contains 100 mg of the salt but only 9.3 mg (0.465 mEq) elemental calcium per mL. The reviewed 10% calcium chloride product contains 27 mg elemental calcium per mL, so equal volumes do not deliver equal calcium. Check the exact product, salt-versus-elemental units, dilution, route, and rate before administration. Gluconate requires dilution and a secure IV line with controlled administration. Chloride is more irritating; emergency guidance specifies central access, and its label specifies slow infusion in a central or deep vein rather than a bolus. Renal impairment requires cautious dosing and closer monitoring; do not apply a standard large-volume emergency infusion automatically to a patient with end-stage kidney failure or receiving dialysis.",
+  "Prevent treatment complications": "Monitor symptoms, ECG, calcium, magnesium, phosphate, kidney function, and the IV site during stabilization. Rapid IV calcium can cause hypotension, bradycardia, arrhythmia, syncope, or cardiac arrest. Both products can cause tissue injury and calcinosis; stop administration at the affected site if extravasation or calcinosis develops. Calcium gluconate labeling calls for calcium measurements every 4 to 6 hours during intermittent infusions and every 1 to 4 hours during continuous infusion; renal impairment has a separate every-4-hour instruction. Review cardiac glycosides such as digoxin: avoid concomitant IV calcium when possible, and use close ECG monitoring if necessary. Follow the actual product and patient-specific plan rather than one monitoring schedule for every setting."
+};
+for (const section of sourceReviewedAcuteCalciumLesson.lesson) {
+  if (Object.hasOwn(sourceReviewedAcuteCalciumBodies, section.heading)) section.body = sourceReviewedAcuteCalciumBodies[section.heading];
+}
+sourceReviewedAcuteCalciumLesson.lesson.push(...[
+  {
+    "heading": "Review compatibility by drug and age",
+    "body": "Calcium gluconate must not be mixed with bicarbonate or phosphate-containing fluids because precipitation can occur. Do not mix it with ceftriaxone or administer the two simultaneously through a Y-site at any age. In neonates 28 days old or younger, concomitant ceftriaxone and IV calcium-containing products are contraindicated. For patients older than 28 days, sequential administration is permitted only with thorough line flushing between infusions using compatible fluid. A separate line does not remove the neonatal contraindication. Review the entire infusion schedule and exact product compatibility before treatment."
+  },
+  {
+    "heading": "Separate PTH replacement from emergency rescue",
+    "body": "Palopegteriparatide (Yorvipath) is an individualized PTH replacement option for adults with hypoparathyroidism. It was not studied for acute post-surgical hypoparathyroidism and does not replace urgent IV calcium for a hypocalcemic emergency. Check serum calcium 7 to 10 days after the first dose and after changes in Yorvipath, active vitamin D, or calcium supplements; during maintenance, check at least every 4 to 6 weeks and as indicated by symptoms. Serious hypercalcemia is most likely when starting or increasing the dose, while abrupt discontinuation increases the risk of serious hypocalcemia. Monitor symptoms daily and coordinate changes in replacement, calcium, and active vitamin D with the treating team."
+  }
+]);
+calciumPhosphorusHomeostasisModule.references.push(...[
+  {
+    "label": "Calcium chloride prescribing information: concentration and IV safety (December 2025)",
+    "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7649c84f-f1c2-4169-962d-ccbac56523a9"
+  },
+  {
+    "label": "Yorvipath prescribing information: adult hypoparathyroidism and calcium monitoring (October 2025)",
+    "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a1fa23fd-c434-443e-9a17-5750578c8602"
+  },
+  {
+    "label": "Prolia prescribing information: severe hypocalcemia and advanced CKD",
+    "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=49e5afe9-a0c7-40c4-af9f-f287a80c5c88"
+  }
+]);

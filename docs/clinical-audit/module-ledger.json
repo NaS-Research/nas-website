@@ -151,7 +151,54 @@
         },
         {
           "slug": "hypocalcemia",
-          "status": "unreviewed"
+          "status": "reviewing",
+          "latestScopedEvidence": "enteral-nutrition-broader-acute-hypocalcemia-review.json",
+          "wholeLessonVerified": false,
+          "verifiedQuestionIds": [
+            "calcium-phosphorus-018",
+            "calcium-phosphorus-019",
+            "calcium-phosphorus-020",
+            "calcium-phosphorus-021",
+            "calcium-phosphorus-022",
+            "calcium-phosphorus-024",
+            "calcium-phosphorus-025",
+            "calcium-phosphorus-026",
+            "calcium-phosphorus-042",
+            "calcium-phosphorus-070",
+            "calcium-phosphorus-071",
+            "calcium-phosphorus-072",
+            "calcium-phosphorus-073",
+            "calcium-phosphorus-074",
+            "calcium-phosphorus-075",
+            "calcium-phosphorus-076",
+            "calcium-phosphorus-077",
+            "calcium-phosphorus-078",
+            "calcium-phosphorus-079",
+            "calcium-phosphorus-093",
+            "calcium-phosphorus-101",
+            "calcium-phosphorus-108",
+            "calcium-phosphorus-iv-product-content-reconciliation",
+            "calcium-phosphorus-neonatal-ceftriaxone-compatibility"
+          ],
+          "remainingQuestionIds": [
+            "calcium-phosphorus-008",
+            "calcium-phosphorus-023",
+            "calcium-phosphorus-095"
+          ],
+          "verifiedBodyHeadings": [
+            "Recognize a calcium emergency",
+            "Administer IV calcium safely",
+            "Prevent treatment complications",
+            "Review compatibility by drug and age",
+            "Separate PTH replacement from emergency rescue"
+          ],
+          "remainingBodyHeadings": [
+            "Correct the mechanism",
+            "Protect the kidney during chronic therapy"
+          ],
+          "embeddedCheckVerified": true,
+          "figureVerified": true,
+          "metadataVerified": false
         },
         {
           "slug": "hypercalcemia",
@@ -246,7 +293,8 @@
         "enteral-nutrition-broader-phosphate-mechanism-safety-review.json",
         "enteral-nutrition-broader-phosphate-physiology-review.json",
         "enteral-nutrition-broader-calcium-measurement-book-review.json",
-        "enteral-nutrition-broader-ckd-binder-review.json"
+        "enteral-nutrition-broader-ckd-binder-review.json",
+        "enteral-nutrition-broader-acute-hypocalcemia-review.json"
       ],
       "latestPhosphateRouteLabelReview": {
         "evidence": "enteral-nutrition-broader-phosphate-route-label-review.json",
@@ -485,6 +533,73 @@
         "wholeENModuleVerified": false,
         "wholeChaptersVerified": false,
         "all102OriginalIdsKeysCorrectTextsAnchorsRelativeOrderPreserved": true,
+        "fiveOriginalCumulativeSelectionsPreserved": true,
+        "other1179CumulativeWholeObjectsUnchanged": true
+      },
+      "latestAcuteHypocalcemiaReview": {
+        "evidence": "enteral-nutrition-broader-acute-hypocalcemia-review.json",
+        "moduleBankBefore": 104,
+        "moduleBankAfter": 106,
+        "wholeQuestionsVerified": 24,
+        "existingQuestionsNewlyVerified": 22,
+        "newDistinctQuestionsAdded": 2,
+        "sourceVerifiedBankIds": [
+          "calcium-phosphorus-018",
+          "calcium-phosphorus-019",
+          "calcium-phosphorus-020",
+          "calcium-phosphorus-021",
+          "calcium-phosphorus-022",
+          "calcium-phosphorus-024",
+          "calcium-phosphorus-025",
+          "calcium-phosphorus-026",
+          "calcium-phosphorus-042",
+          "calcium-phosphorus-070",
+          "calcium-phosphorus-071",
+          "calcium-phosphorus-072",
+          "calcium-phosphorus-073",
+          "calcium-phosphorus-074",
+          "calcium-phosphorus-075",
+          "calcium-phosphorus-076",
+          "calcium-phosphorus-077",
+          "calcium-phosphorus-078",
+          "calcium-phosphorus-079",
+          "calcium-phosphorus-093",
+          "calcium-phosphorus-101",
+          "calcium-phosphorus-108",
+          "calcium-phosphorus-iv-product-content-reconciliation",
+          "calcium-phosphorus-neonatal-ceftriaxone-compatibility"
+        ],
+        "broaderFeedingBankVerifiedAfter": 285,
+        "wholeBodiesVerified": 5,
+        "retainedWholeBodiesReconciled": 3,
+        "newWholeBodiesAdded": 2,
+        "sourceVerifiedBodyHeadings": [
+          "Recognize a calcium emergency",
+          "Administer IV calcium safely",
+          "Prevent treatment complications",
+          "Review compatibility by drug and age",
+          "Separate PTH replacement from emergency rescue"
+        ],
+        "embeddedCheckVerified": true,
+        "figureVerified": true,
+        "derivedCumulative026Verified": true,
+        "lessonQuestionsVerified": 24,
+        "lessonQuestionTotal": 27,
+        "remainingQuestionIds": [
+          "calcium-phosphorus-008",
+          "calcium-phosphorus-023",
+          "calcium-phosphorus-095"
+        ],
+        "remainingBodyHeadings": [
+          "Correct the mechanism",
+          "Protect the kidney during chronic therapy"
+        ],
+        "wholeLessonMetadataVerified": false,
+        "wholeLessonVerified": false,
+        "wholeParentModuleVerified": false,
+        "wholeENModuleVerified": false,
+        "wholeChaptersVerified": false,
+        "all104OriginalIdsKeysCorrectTextsAnchorsRelativeOrderPreserved": true,
         "fiveOriginalCumulativeSelectionsPreserved": true,
         "other1179CumulativeWholeObjectsUnchanged": true
       }

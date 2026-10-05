@@ -1,0 +1,4201 @@
+{
+  "updated": "2026-10-05T03:40:39.852533+00:00",
+  "unit": "enteral-nutrition:broader-acute-hypocalcemia-and-calcium-product-safety",
+  "status": "Scoped acute unit verified; chronic/mechanism claims, whole lesson, calcium parent, EN and chapters remain reviewing",
+  "baseCommit": "c87487571fa007d0a7bbae4c3d9fde336c769c12",
+  "sourcePolicy": {
+    "primary": "Cover-verified supplied RxPrep2023; private source text/images remain outside Git",
+    "directApprovalUsed": "I give approval: specifically requested Society acute hypocalcemia guidance; prior FDA labeling approval for feeding-related administration/products",
+    "noGeneralOutsideSourceAuthorizationInferred": true,
+    "new2022ChronicHypoparathyroidismRequest": "pending direct approval; not used"
+  },
+  "sourceReview": {
+    "book": {
+      "pdfPageActuallyViewed": 168,
+      "printedPage": 160,
+      "scope": "Complete calcium page including example33 and calcium/phosphate text, no new corrected-calcium or PN-solubility claim adopted."
+    },
+    "society": {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5314808/",
+      "publication": "2016",
+      "articleContextTextRead": true,
+      "completeOriginalHtmlSectionsActuallyViewed": [
+        "Clinical presentation",
+        "Potential causes",
+        "Investigations",
+        "Mild hypocalcemia",
+        "Severe hypocalcemia",
+        "Hazards of IV calcium"
+      ],
+      "adultEmergencyScope": true,
+      "historicalFixedDoseProtocolNotAdopted": true
+    },
+    "products": {
+      "gluconate": {
+        "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=13d7cfc9-ff7a-437e-8c21-d9709ac07d48",
+        "piRevision": "May2026",
+        "completeOriginalSectionsActuallyViewed": [
+          "1",
+          "2.1",
+          "2.3",
+          "2.4",
+          "2.5",
+          "5.1",
+          "5.3",
+          "5.4"
+        ]
+      },
+      "chloride": {
+        "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7649c84f-f1c2-4169-962d-ccbac56523a9",
+        "piRevision": "December2025",
+        "completeOriginalSectionsActuallyViewed": [
+          "2.1",
+          "3",
+          "5.2",
+          "5.3",
+          "5.4"
+        ],
+        "descriptionTextRead": true,
+        "chemicalStructureImageNotLoadedAndNotAdopted": true
+      },
+      "yorvipath": {
+        "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a1fa23fd-c434-443e-9a17-5750578c8602",
+        "piRevision": "October2025",
+        "dailyMedEffectiveDate": "August2026",
+        "completeOriginalSectionsActuallyViewed": [
+          "1",
+          "2.1",
+          "5.3",
+          "5.4",
+          "12.1"
+        ],
+        "prior2025PdfNotTreatedAsWholeRenderedOrCurrentNumbering": true
+      },
+      "prolia": {
+        "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=49e5afe9-a0c7-40c4-af9f-f287a80c5c88",
+        "completeOriginalSectionsActuallyViewed": [
+          "5.1"
+        ],
+        "productIdentity": "Prolia distinct from retained Xgeva reference; no dose or cross-product monitoring interval adopted"
+      }
+    }
+  },
+  "coverage": {
+    "evidence": "enteral-nutrition-broader-acute-hypocalcemia-review.json",
+    "moduleBankBefore": 104,
+    "moduleBankAfter": 106,
+    "wholeQuestionsVerified": 24,
+    "existingQuestionsNewlyVerified": 22,
+    "newDistinctQuestionsAdded": 2,
+    "sourceVerifiedBankIds": [
+      "calcium-phosphorus-018",
+      "calcium-phosphorus-019",
+      "calcium-phosphorus-020",
+      "calcium-phosphorus-021",
+      "calcium-phosphorus-022",
+      "calcium-phosphorus-024",
+      "calcium-phosphorus-025",
+      "calcium-phosphorus-026",
+      "calcium-phosphorus-042",
+      "calcium-phosphorus-070",
+      "calcium-phosphorus-071",
+      "calcium-phosphorus-072",
+      "calcium-phosphorus-073",
+      "calcium-phosphorus-074",
+      "calcium-phosphorus-075",
+      "calcium-phosphorus-076",
+      "calcium-phosphorus-077",
+      "calcium-phosphorus-078",
+      "calcium-phosphorus-079",
+      "calcium-phosphorus-093",
+      "calcium-phosphorus-101",
+      "calcium-phosphorus-108",
+      "calcium-phosphorus-iv-product-content-reconciliation",
+      "calcium-phosphorus-neonatal-ceftriaxone-compatibility"
+    ],
+    "broaderFeedingBankVerifiedAfter": 285,
+    "wholeBodiesVerified": 5,
+    "retainedWholeBodiesReconciled": 3,
+    "newWholeBodiesAdded": 2,
+    "sourceVerifiedBodyHeadings": [
+      "Recognize a calcium emergency",
+      "Administer IV calcium safely",
+      "Prevent treatment complications",
+      "Review compatibility by drug and age",
+      "Separate PTH replacement from emergency rescue"
+    ],
+    "embeddedCheckVerified": true,
+    "figureVerified": true,
+    "derivedCumulative026Verified": true,
+    "lessonQuestionsVerified": 24,
+    "lessonQuestionTotal": 27,
+    "remainingQuestionIds": [
+      "calcium-phosphorus-008",
+      "calcium-phosphorus-023",
+      "calcium-phosphorus-095"
+    ],
+    "remainingBodyHeadings": [
+      "Correct the mechanism",
+      "Protect the kidney during chronic therapy"
+    ],
+    "wholeLessonMetadataVerified": false,
+    "wholeLessonVerified": false,
+    "wholeParentModuleVerified": false,
+    "wholeENModuleVerified": false,
+    "wholeChaptersVerified": false,
+    "all104OriginalIdsKeysCorrectTextsAnchorsRelativeOrderPreserved": true,
+    "fiveOriginalCumulativeSelectionsPreserved": true,
+    "other1179CumulativeWholeObjectsUnchanged": true
+  },
+  "changes": {
+    "questions": {
+      "calcium-phosphorus-018": {
+        "before": {
+          "id": "calcium-phosphorus-018",
+          "question": "Which ECG change is classically associated with hypocalcemia?",
+          "choices": [
+            "QT prolongation",
+            "QT shortening",
+            "Fixed ST elevation",
+            "Delta wave in every case"
+          ],
+          "answer": 0,
+          "rationale": "Hypocalcemia can prolong ventricular repolarization and the QT interval.",
+          "reviewHref": "#hypocalcemia"
+        },
+        "after": {
+          "id": "calcium-phosphorus-018",
+          "question": "Which ECG change is classically associated with hypocalcemia?",
+          "choices": [
+            "QT prolongation",
+            "QT shortening",
+            "Fixed ST elevation",
+            "Delta wave in every case"
+          ],
+          "answer": 0,
+          "rationale": "The acute hypocalcemia guidance identifies QT prolongation and arrhythmia. QT shortening is associated with the opposite calcium disturbance; fixed ST elevation and a universal delta wave are not characteristic hypocalcemia findings. Interpret the ECG with symptoms and the calcium trend.",
+          "reviewHref": "#hypocalcemia"
+        }
+      },
+      "calcium-phosphorus-019": {
+        "before": {
+          "id": "calcium-phosphorus-019",
+          "question": "Which symptom makes hypocalcemia an immediate emergency?",
+          "choices": [
+            "Laryngospasm",
+            "Stable mild fatigue only",
+            "Chronic nail change",
+            "Asymptomatic low albumin"
+          ],
+          "answer": 0,
+          "rationale": "Laryngospasm threatens the airway and requires urgent treatment.",
+          "reviewHref": "#hypocalcemia"
+        },
+        "after": {
+          "id": "calcium-phosphorus-019",
+          "question": "Which symptom makes hypocalcemia an immediate emergency?",
+          "choices": [
+            "Laryngospasm",
+            "Stable mild fatigue only",
+            "Chronic nail change",
+            "Asymptomatic low albumin"
+          ],
+          "answer": 0,
+          "rationale": "Laryngospasm threatens the airway and is a recognized severe hypocalcemia manifestation requiring urgent monitored treatment. Stable fatigue or chronic nail changes do not carry the same immediate airway risk. Low albumin alone does not establish symptomatic hypocalcemia.",
+          "reviewHref": "#hypocalcemia"
+        }
+      },
+      "calcium-phosphorus-020": {
+        "before": {
+          "id": "calcium-phosphorus-020",
+          "question": "What is the FDA-labeled indication for calcium gluconate injection?",
+          "choices": [
+            "Acute symptomatic hypocalcemia",
+            "Long-term osteoporosis monotherapy",
+            "Asymptomatic hyperphosphatemia",
+            "Chronic hypercalcemia"
+          ],
+          "answer": 0,
+          "rationale": "Current labeling indicates IV calcium gluconate for acute symptomatic hypocalcemia.",
+          "reviewHref": "#hypocalcemia"
+        },
+        "after": {
+          "id": "calcium-phosphorus-020",
+          "question": "What is the FDA-labeled indication for calcium gluconate injection?",
+          "choices": [
+            "Acute symptomatic hypocalcemia",
+            "Long-term osteoporosis monotherapy",
+            "Asymptomatic hyperphosphatemia",
+            "Chronic hypercalcemia"
+          ],
+          "answer": 0,
+          "rationale": "The reviewed calcium gluconate label specifies acute symptomatic hypocalcemia in adults and pediatric patients. It does not establish long-term osteoporosis monotherapy or treatment of high phosphate or high calcium; long-term safety has not been established.",
+          "reviewHref": "#hypocalcemia"
+        }
+      },
+      "calcium-phosphorus-021": {
+        "before": {
+          "id": "calcium-phosphorus-021",
+          "question": "How much elemental calcium is present in each mL of 10 percent calcium gluconate injection?",
+          "choices": [
+            "9.3 mg",
+            "100 mg",
+            "1 mg",
+            "93 mg"
+          ],
+          "answer": 0,
+          "rationale": "The current label states 9.3 mg, or 0.465 mEq, elemental calcium per mL.",
+          "reviewHref": "#hypocalcemia"
+        },
+        "after": {
+          "id": "calcium-phosphorus-021",
+          "question": "How much elemental calcium is present in each mL of 10 percent calcium gluconate injection?",
+          "choices": [
+            "9.3 mg",
+            "100 mg",
+            "1 mg",
+            "93 mg"
+          ],
+          "answer": 0,
+          "rationale": "The reviewed 10% product contains 100 mg of calcium gluconate salt per mL, providing 9.3 mg (0.465 mEq) elemental calcium. Salt mass is not elemental calcium mass. The 93 mg value is the elemental content of 10 mL, not 1 mL.",
+          "reviewHref": "#hypocalcemia"
+        }
+      },
+      "calcium-phosphorus-022": {
+        "before": {
+          "id": "calcium-phosphorus-022",
+          "question": "Why is calcium chloride generally restricted to central access for replacement?",
+          "choices": [
+            "It is more irritating and extravasation can cause severe tissue injury",
+            "It contains no elemental calcium",
+            "It must be given orally",
+            "It cannot affect the heart"
+          ],
+          "answer": 0,
+          "rationale": "Calcium chloride is more irritating to veins and poses greater tissue injury risk with extravasation.",
+          "reviewHref": "#hypocalcemia"
+        },
+        "after": {
+          "id": "calcium-phosphorus-022",
+          "question": "Why is calcium chloride generally restricted to central access for replacement?",
+          "choices": [
+            "It is more irritating and extravasation can cause severe tissue injury",
+            "It contains no elemental calcium",
+            "It must be given orally",
+            "It cannot affect the heart"
+          ],
+          "answer": 0,
+          "rationale": "Emergency guidance specifies central access for calcium chloride because it is more irritating. The reviewed chloride label specifies slow infusion in a central or deep vein and warns of tissue necrosis with infiltration. It contains elemental calcium, is administered intravenously, and can cause cardiac adverse effects; do not treat it as interchangeable with gluconate by volume.",
+          "reviewHref": "#hypocalcemia"
+        }
+      },
+      "calcium-phosphorus-024": {
+        "before": {
+          "id": "calcium-phosphorus-024",
+          "question": "Why might hypoparathyroidism require calcitriol rather than relying only on nutritional vitamin D?",
+          "choices": [
+            "Low PTH reduces renal activation of vitamin D",
+            "Calcitriol blocks calcium absorption",
+            "Nutritional vitamin D contains phosphate",
+            "PTH is required for intestinal glucose absorption"
+          ],
+          "answer": 0,
+          "rationale": "Without adequate PTH signaling, renal generation of active vitamin D may be insufficient.",
+          "reviewHref": "#hypocalcemia"
+        },
+        "after": {
+          "id": "calcium-phosphorus-024",
+          "question": "Why might hypoparathyroidism require calcitriol rather than relying only on nutritional vitamin D?",
+          "choices": [
+            "Low PTH reduces renal activation of vitamin D",
+            "Calcitriol blocks calcium absorption",
+            "Nutritional vitamin D contains phosphate",
+            "PTH is required for intestinal glucose absorption"
+          ],
+          "answer": 0,
+          "rationale": "PTH facilitates active vitamin D synthesis; deficient signaling can leave renal activation insufficient. Acute guidance includes calcitriol for postoperative hypoparathyroidism. Calcitriol supports calcium absorption rather than blocking it; nutritional vitamin D is not phosphate, and intestinal glucose absorption is not the reason for active vitamin D treatment.",
+          "reviewHref": "#hypocalcemia"
+        }
+      },
+      "calcium-phosphorus-025": {
+        "before": {
+          "id": "calcium-phosphorus-025",
+          "question": "Which administration practice is unsafe with IV calcium?",
+          "choices": [
+            "Co-infusing with an incompatible bicarbonate or phosphate solution",
+            "Using a secure IV line",
+            "Monitoring the ECG during urgent therapy",
+            "Repeating calcium measurements"
+          ],
+          "answer": 0,
+          "rationale": "Calcium can precipitate with bicarbonate or phosphate and requires compatibility review.",
+          "reviewHref": "#hypocalcemia"
+        },
+        "after": {
+          "id": "calcium-phosphorus-025",
+          "question": "Which administration practice is unsafe with IV calcium?",
+          "choices": [
+            "Co-infusing with an incompatible bicarbonate or phosphate solution",
+            "Using a secure IV line",
+            "Monitoring the ECG during urgent therapy",
+            "Repeating calcium measurements"
+          ],
+          "answer": 0,
+          "rationale": "The gluconate label prohibits mixing with bicarbonate or phosphate-containing fluids because precipitation can occur. A secure line, ECG monitoring during urgent administration, and repeat calcium assessment are safeguards rather than the unsafe practice. Assess exact product and infusion compatibility before giving calcium.",
+          "reviewHref": "#hypocalcemia"
+        }
+      },
+      "calcium-phosphorus-026": {
+        "before": {
+          "id": "calcium-phosphorus-026",
+          "question": "What should accompany urgent IV calcium administration?",
+          "choices": [
+            "ECG, symptoms, calcium, IV site, and cause monitoring",
+            "No monitoring after the first dose",
+            "LDL testing only",
+            "Routine discharge before reassessment"
+          ],
+          "answer": 0,
+          "rationale": "Therapeutic response, arrhythmia, extravasation, and the underlying mechanism all require follow-up.",
+          "reviewHref": "#hypocalcemia"
+        },
+        "after": {
+          "id": "calcium-phosphorus-026",
+          "question": "What should accompany urgent IV calcium administration?",
+          "choices": [
+            "ECG, symptoms, calcium, IV site, and cause monitoring",
+            "No monitoring after the first dose",
+            "LDL testing only",
+            "Routine discharge before reassessment"
+          ],
+          "answer": 0,
+          "rationale": "Urgent IV calcium requires assessment of clinical response, ECG risk, calcium, IV-site injury, and the underlying cause. The label also requires vitals and calcium monitoring during administration. A first dose does not end reassessment; LDL testing alone and discharge before response assessment miss acute risks.",
+          "reviewHref": "#hypocalcemia"
+        }
+      },
+      "calcium-phosphorus-042": {
+        "before": {
+          "id": "calcium-phosphorus-042",
+          "question": "Which statement best describes palopegteriparatide in hypoparathyroidism?",
+          "choices": [
+            "It is an adult PTH replacement option that requires individualized calcium monitoring",
+            "It is the first treatment for an acute hypocalcemic seizure",
+            "It eliminates all need for calcium assessment",
+            "It is approved only for hyperparathyroidism"
+          ],
+          "answer": 0,
+          "rationale": "Palopegteriparatide is approved for adults with hypoparathyroidism, but it is not an acute rescue treatment and can cause hypercalcemia or hypocalcemia during titration.",
+          "reviewHref": "#hypocalcemia"
+        },
+        "after": {
+          "id": "calcium-phosphorus-042",
+          "question": "Which statement best describes palopegteriparatide in hypoparathyroidism?",
+          "choices": [
+            "It is an adult PTH replacement option that requires individualized calcium monitoring",
+            "It is the first treatment for an acute hypocalcemic seizure",
+            "It eliminates all need for calcium assessment",
+            "It is approved only for hyperparathyroidism"
+          ],
+          "answer": 0,
+          "rationale": "Yorvipath is indicated for adult hypoparathyroidism and requires individualized calcium monitoring. It was not studied for acute post-surgical hypoparathyroidism and is not a substitute for emergency calcium treatment. Serious hypercalcemia can occur with initiation or dose increases and serious hypocalcemia with abrupt interruption; calcium assessment remains necessary.",
+          "reviewHref": "#hypocalcemia"
+        }
+      },
+      "calcium-phosphorus-070": {
+        "before": {
+          "id": "calcium-phosphorus-070",
+          "question": "A calcium gluconate solution contains 9.3 mg elemental calcium per mL. How much elemental calcium is present in 5 mL?",
+          "choices": [
+            "46.5 mg",
+            "500 mg",
+            "2.3 mg",
+            "0.5 mg"
+          ],
+          "answer": 0,
+          "rationale": "5 mL multiplied by 9.3 mg/mL equals 46.5 mg elemental calcium. This is a content calculation, not an administration recommendation.",
+          "reviewHref": "#hypocalcemia"
+        },
+        "after": {
+          "id": "calcium-phosphorus-070",
+          "question": "A calcium gluconate solution contains 9.3 mg elemental calcium per mL. How much elemental calcium is present in 5 mL?",
+          "choices": [
+            "46.5 mg",
+            "500 mg",
+            "2.3 mg",
+            "0.5 mg"
+          ],
+          "answer": 0,
+          "rationale": "5 mL multiplied by 9.3 mg/mL equals 46.5 mg elemental calcium. This is a content calculation, not an administration recommendation.",
+          "reviewHref": "#hypocalcemia"
+        }
+      },
+      "calcium-phosphorus-071": {
+        "before": {
+          "id": "calcium-phosphorus-071",
+          "question": "A calcium gluconate solution contains 9.3 mg elemental calcium per mL. How much elemental calcium is present in 10 mL?",
+          "choices": [
+            "93 mg",
+            "1000 mg",
+            "4.7 mg",
+            "0.9 mg"
+          ],
+          "answer": 0,
+          "rationale": "10 mL multiplied by 9.3 mg/mL equals 93 mg elemental calcium. This is a content calculation, not an administration recommendation.",
+          "reviewHref": "#hypocalcemia"
+        },
+        "after": {
+          "id": "calcium-phosphorus-071",
+          "question": "A calcium gluconate solution contains 9.3 mg elemental calcium per mL. How much elemental calcium is present in 10 mL?",
+          "choices": [
+            "93 mg",
+            "1000 mg",
+            "4.7 mg",
+            "0.9 mg"
+          ],
+          "answer": 0,
+          "rationale": "10 mL multiplied by 9.3 mg/mL equals 93 mg elemental calcium. This is a content calculation, not an administration recommendation.",
+          "reviewHref": "#hypocalcemia"
+        }
+      },
+      "calcium-phosphorus-072": {
+        "before": {
+          "id": "calcium-phosphorus-072",
+          "question": "A calcium gluconate solution contains 9.3 mg elemental calcium per mL. How much elemental calcium is present in 15 mL?",
+          "choices": [
+            "139.5 mg",
+            "1500 mg",
+            "7 mg",
+            "1.4 mg"
+          ],
+          "answer": 0,
+          "rationale": "15 mL multiplied by 9.3 mg/mL equals 139.5 mg elemental calcium. This is a content calculation, not an administration recommendation.",
+          "reviewHref": "#hypocalcemia"
+        },
+        "after": {
+          "id": "calcium-phosphorus-072",
+          "question": "A calcium gluconate solution contains 9.3 mg elemental calcium per mL. How much elemental calcium is present in 15 mL?",
+          "choices": [
+            "139.5 mg",
+            "1500 mg",
+            "7 mg",
+            "1.4 mg"
+          ],
+          "answer": 0,
+          "rationale": "15 mL multiplied by 9.3 mg/mL equals 139.5 mg elemental calcium. This is a content calculation, not an administration recommendation.",
+          "reviewHref": "#hypocalcemia"
+        }
+      },
+      "calcium-phosphorus-073": {
+        "before": {
+          "id": "calcium-phosphorus-073",
+          "question": "A calcium gluconate solution contains 9.3 mg elemental calcium per mL. How much elemental calcium is present in 20 mL?",
+          "choices": [
+            "186 mg",
+            "2000 mg",
+            "9.3 mg",
+            "1.9 mg"
+          ],
+          "answer": 0,
+          "rationale": "20 mL multiplied by 9.3 mg/mL equals 186 mg elemental calcium. This is a content calculation, not an administration recommendation.",
+          "reviewHref": "#hypocalcemia"
+        },
+        "after": {
+          "id": "calcium-phosphorus-073",
+          "question": "A calcium gluconate solution contains 9.3 mg elemental calcium per mL. How much elemental calcium is present in 20 mL?",
+          "choices": [
+            "186 mg",
+            "2000 mg",
+            "9.3 mg",
+            "1.9 mg"
+          ],
+          "answer": 0,
+          "rationale": "20 mL multiplied by 9.3 mg/mL equals 186 mg elemental calcium. This is a content calculation, not an administration recommendation.",
+          "reviewHref": "#hypocalcemia"
+        }
+      },
+      "calcium-phosphorus-074": {
+        "before": {
+          "id": "calcium-phosphorus-074",
+          "question": "A calcium gluconate solution contains 9.3 mg elemental calcium per mL. How much elemental calcium is present in 25 mL?",
+          "choices": [
+            "232.5 mg",
+            "2500 mg",
+            "11.6 mg",
+            "2.3 mg"
+          ],
+          "answer": 0,
+          "rationale": "25 mL multiplied by 9.3 mg/mL equals 232.5 mg elemental calcium. This is a content calculation, not an administration recommendation.",
+          "reviewHref": "#hypocalcemia"
+        },
+        "after": {
+          "id": "calcium-phosphorus-074",
+          "question": "A calcium gluconate solution contains 9.3 mg elemental calcium per mL. How much elemental calcium is present in 25 mL?",
+          "choices": [
+            "232.5 mg",
+            "2500 mg",
+            "11.6 mg",
+            "2.3 mg"
+          ],
+          "answer": 0,
+          "rationale": "25 mL multiplied by 9.3 mg/mL equals 232.5 mg elemental calcium. This is a content calculation, not an administration recommendation.",
+          "reviewHref": "#hypocalcemia"
+        }
+      },
+      "calcium-phosphorus-075": {
+        "before": {
+          "id": "calcium-phosphorus-075",
+          "question": "A calcium gluconate solution contains 9.3 mg elemental calcium per mL. How much elemental calcium is present in 30 mL?",
+          "choices": [
+            "279 mg",
+            "3000 mg",
+            "14 mg",
+            "2.8 mg"
+          ],
+          "answer": 0,
+          "rationale": "30 mL multiplied by 9.3 mg/mL equals 279 mg elemental calcium. This is a content calculation, not an administration recommendation.",
+          "reviewHref": "#hypocalcemia"
+        },
+        "after": {
+          "id": "calcium-phosphorus-075",
+          "question": "A calcium gluconate solution contains 9.3 mg elemental calcium per mL. How much elemental calcium is present in 30 mL?",
+          "choices": [
+            "279 mg",
+            "3000 mg",
+            "14 mg",
+            "2.8 mg"
+          ],
+          "answer": 0,
+          "rationale": "30 mL multiplied by 9.3 mg/mL equals 279 mg elemental calcium. This is a content calculation, not an administration recommendation.",
+          "reviewHref": "#hypocalcemia"
+        }
+      },
+      "calcium-phosphorus-076": {
+        "before": {
+          "id": "calcium-phosphorus-076",
+          "question": "A calcium gluconate solution contains 9.3 mg elemental calcium per mL. How much elemental calcium is present in 35 mL?",
+          "choices": [
+            "325.5 mg",
+            "3500 mg",
+            "16.3 mg",
+            "3.3 mg"
+          ],
+          "answer": 0,
+          "rationale": "35 mL multiplied by 9.3 mg/mL equals 325.5 mg elemental calcium. This is a content calculation, not an administration recommendation.",
+          "reviewHref": "#hypocalcemia"
+        },
+        "after": {
+          "id": "calcium-phosphorus-076",
+          "question": "A calcium gluconate solution contains 9.3 mg elemental calcium per mL. How much elemental calcium is present in 35 mL?",
+          "choices": [
+            "325.5 mg",
+            "3500 mg",
+            "16.3 mg",
+            "3.3 mg"
+          ],
+          "answer": 0,
+          "rationale": "35 mL multiplied by 9.3 mg/mL equals 325.5 mg elemental calcium. This is a content calculation, not an administration recommendation.",
+          "reviewHref": "#hypocalcemia"
+        }
+      },
+      "calcium-phosphorus-077": {
+        "before": {
+          "id": "calcium-phosphorus-077",
+          "question": "A calcium gluconate solution contains 9.3 mg elemental calcium per mL. How much elemental calcium is present in 40 mL?",
+          "choices": [
+            "372 mg",
+            "4000 mg",
+            "18.6 mg",
+            "3.7 mg"
+          ],
+          "answer": 0,
+          "rationale": "40 mL multiplied by 9.3 mg/mL equals 372 mg elemental calcium. This is a content calculation, not an administration recommendation.",
+          "reviewHref": "#hypocalcemia"
+        },
+        "after": {
+          "id": "calcium-phosphorus-077",
+          "question": "A calcium gluconate solution contains 9.3 mg elemental calcium per mL. How much elemental calcium is present in 40 mL?",
+          "choices": [
+            "372 mg",
+            "4000 mg",
+            "18.6 mg",
+            "3.7 mg"
+          ],
+          "answer": 0,
+          "rationale": "40 mL multiplied by 9.3 mg/mL equals 372 mg elemental calcium. This is a content calculation, not an administration recommendation.",
+          "reviewHref": "#hypocalcemia"
+        }
+      },
+      "calcium-phosphorus-078": {
+        "before": {
+          "id": "calcium-phosphorus-078",
+          "question": "A calcium gluconate solution contains 9.3 mg elemental calcium per mL. How much elemental calcium is present in 50 mL?",
+          "choices": [
+            "465 mg",
+            "5000 mg",
+            "23.3 mg",
+            "4.7 mg"
+          ],
+          "answer": 0,
+          "rationale": "50 mL multiplied by 9.3 mg/mL equals 465 mg elemental calcium. This is a content calculation, not an administration recommendation.",
+          "reviewHref": "#hypocalcemia"
+        },
+        "after": {
+          "id": "calcium-phosphorus-078",
+          "question": "A calcium gluconate solution contains 9.3 mg elemental calcium per mL. How much elemental calcium is present in 50 mL?",
+          "choices": [
+            "465 mg",
+            "5000 mg",
+            "23.3 mg",
+            "4.7 mg"
+          ],
+          "answer": 0,
+          "rationale": "50 mL multiplied by 9.3 mg/mL equals 465 mg elemental calcium. This is a content calculation, not an administration recommendation.",
+          "reviewHref": "#hypocalcemia"
+        }
+      },
+      "calcium-phosphorus-079": {
+        "before": {
+          "id": "calcium-phosphorus-079",
+          "question": "A calcium gluconate solution contains 9.3 mg elemental calcium per mL. How much elemental calcium is present in 100 mL?",
+          "choices": [
+            "930 mg",
+            "10000 mg",
+            "46.5 mg",
+            "9.3 mg"
+          ],
+          "answer": 0,
+          "rationale": "100 mL multiplied by 9.3 mg/mL equals 930 mg elemental calcium. This is a content calculation, not an administration recommendation.",
+          "reviewHref": "#hypocalcemia"
+        },
+        "after": {
+          "id": "calcium-phosphorus-079",
+          "question": "A calcium gluconate solution contains 9.3 mg elemental calcium per mL. How much elemental calcium is present in 100 mL?",
+          "choices": [
+            "930 mg",
+            "10000 mg",
+            "46.5 mg",
+            "9.3 mg"
+          ],
+          "answer": 0,
+          "rationale": "100 mL multiplied by 9.3 mg/mL equals 930 mg elemental calcium. This is a content calculation, not an administration recommendation.",
+          "reviewHref": "#hypocalcemia"
+        }
+      },
+      "calcium-phosphorus-093": {
+        "before": {
+          "id": "calcium-phosphorus-093",
+          "question": "After thyroidectomy, a patient has falling calcium, low PTH, and prolonged QT. Which interpretation or action is most defensible?",
+          "choices": [
+            "Urgent monitored calcium with postoperative hypoparathyroidism management",
+            "Treat the isolated number without evaluating the mechanism",
+            "Ignore kidney function and symptoms",
+            "Delay urgent stabilization until every test returns"
+          ],
+          "answer": 0,
+          "rationale": "The pattern supports clinically important hypoparathyroidism and electrical risk.",
+          "reviewHref": "#hypocalcemia"
+        },
+        "after": {
+          "id": "calcium-phosphorus-093",
+          "question": "After thyroidectomy, a patient has falling calcium, low PTH, and prolonged QT. Which interpretation or action is most defensible?",
+          "choices": [
+            "Urgent monitored calcium with postoperative hypoparathyroidism management",
+            "Use oral maintenance therapy alone despite falling calcium and ECG abnormalities",
+            "Wait for all etiologic results before beginning monitored stabilization",
+            "Treat phosphate alone without addressing the calcium and ECG findings"
+          ],
+          "answer": 0,
+          "rationale": "Post-thyroidectomy parathyroid disruption can cause acute hypocalcemia. Falling calcium with low PTH and QT prolongation warrants urgent monitored stabilization plus cause-directed postoperative management. Oral maintenance alone, waiting for every etiologic result, or treating phosphate without addressing calcium and ECG risk does not manage the immediate problem.",
+          "reviewHref": "#hypocalcemia"
+        }
+      },
+      "calcium-phosphorus-101": {
+        "before": {
+          "id": "calcium-phosphorus-101",
+          "question": "A patient received denosumab and develops symptomatic hypocalcemia with advanced CKD. What is the best next interpretation or management principle?",
+          "choices": [
+            "Give urgent calcium as indicated, assess magnesium and vitamin D, and monitor for prolonged recurrence",
+            "Normalize one laboratory value without a mechanism",
+            "Use the same fixed plan for every patient",
+            "Ignore medication timing"
+          ],
+          "answer": 0,
+          "rationale": "Denosumab effect can persist and kidney disease increases mineral risk.",
+          "reviewHref": "#hypocalcemia"
+        },
+        "after": {
+          "id": "calcium-phosphorus-101",
+          "question": "A patient received denosumab and develops symptomatic hypocalcemia with advanced CKD. What is the best next interpretation or management principle?",
+          "choices": [
+            "Give urgent calcium as indicated, assess magnesium and vitamin D, and monitor for prolonged recurrence",
+            "End calcium monitoring as soon as one measurement normalizes",
+            "Use an identical replacement plan regardless of CKD-MBD or the denosumab product",
+            "Exclude denosumab from the medication review because it was given earlier"
+          ],
+          "answer": 0,
+          "rationale": "Denosumab products can cause severe hypocalcemia, with greater risk in advanced CKD. Prolia labeling reports postmarketing hypocalcemia lasting weeks or months and requires continued monitoring; do not assume one corrected result ends the risk. Stabilize symptomatic hypocalcemia as indicated, assess magnesium, vitamin D and CKD-MBD, and review the actual denosumab product and follow-up plan. The Prolia monitoring instructions must not be copied automatically to every denosumab regimen.",
+          "reviewHref": "#hypocalcemia"
+        }
+      },
+      "calcium-phosphorus-108": {
+        "before": {
+          "id": "calcium-phosphorus-108",
+          "question": "A patient has low calcium, high phosphate, low PTH, and normal magnesium after neck surgery. What is the best next interpretation or management principle?",
+          "choices": [
+            "Postoperative hypoparathyroidism is likely",
+            "Normalize one laboratory value without a mechanism",
+            "Use the same fixed plan for every patient",
+            "Ignore medication timing"
+          ],
+          "answer": 0,
+          "rationale": "Low PTH fails to conserve calcium or promote phosphate excretion.",
+          "reviewHref": "#hypocalcemia"
+        },
+        "after": {
+          "id": "calcium-phosphorus-108",
+          "question": "A patient has low calcium, high phosphate, low PTH, and normal magnesium after neck surgery. What is the best next interpretation or management principle?",
+          "choices": [
+            "Postoperative hypoparathyroidism is likely",
+            "Vitamin D deficiency alone explains the suppressed PTH response",
+            "An appropriate secondary PTH rise from phosphate retention explains the low PTH",
+            "Severe magnesium deficiency is established by the normal magnesium result"
+          ],
+          "answer": 0,
+          "rationale": "Neck surgery can disrupt parathyroid function. Low PTH with low calcium and high phosphate supports postoperative hypoparathyroidism: PTH normally promotes renal calcium reabsorption, phosphate excretion, and active vitamin D synthesis. Normal magnesium makes severe magnesium deficiency a less fitting explanation for this case; vitamin D deficiency alone or phosphate retention with an appropriate PTH rise does not match the low PTH pattern.",
+          "reviewHref": "#hypocalcemia"
+        }
+      },
+      "calcium-phosphorus-iv-product-content-reconciliation": {
+        "before": null,
+        "after": {
+          "id": "calcium-phosphorus-iv-product-content-reconciliation",
+          "question": "A prescription specifies elemental calcium, and the available 10% calcium gluconate is replaced with 10% calcium chloride. Which reconciliation is essential?",
+          "choices": [
+            "Recalculate from the exact elemental content; the reviewed products contain 9.3 and 27 mg elemental calcium per mL, respectively",
+            "Use the same volume because both products are labeled 10%",
+            "Treat 100 mg of calcium salt as 100 mg elemental calcium for either product",
+            "Carry over the gluconate route and rate without reviewing the chloride label"
+          ],
+          "answer": 0,
+          "rationale": "The percentage describes calcium salt concentration, not equal elemental content. The reviewed gluconate product provides 9.3 mg elemental calcium/mL and chloride provides 27 mg/mL. Reconcile elemental dose, volume, access, and administration instructions; equal volumes and copied rates are unsafe assumptions. This is product reconciliation, not a recommended replacement dose.",
+          "reviewHref": "#hypocalcemia",
+          "difficulty": "clinical"
+        }
+      },
+      "calcium-phosphorus-neonatal-ceftriaxone-compatibility": {
+        "before": null,
+        "after": {
+          "id": "calcium-phosphorus-neonatal-ceftriaxone-compatibility",
+          "question": "A 20-day-old neonate is receiving ceftriaxone and requires IV calcium. Which compatibility principle applies?",
+          "choices": [
+            "Concomitant ceftriaxone and IV calcium-containing products are contraindicated in neonates 28 days old or younger",
+            "Give the two concurrently through separate lines because the neonatal restriction applies only to a Y-site",
+            "Use the older-patient sequential flushing exception for every neonate",
+            "Mix ceftriaxone with calcium gluconate after diluting both in saline"
+          ],
+          "answer": 0,
+          "rationale": "The reviewed gluconate label contraindicates concomitant ceftriaxone and IV calcium-containing products in neonates 28 days old or younger. Separate lines do not remove that contraindication. The sequential administration exception with thorough compatible-fluid flushing applies to patients older than 28 days. Simultaneous Y-site administration and mixing are prohibited; the treating team must reconcile the treatment plan.",
+          "reviewHref": "#hypocalcemia",
+          "difficulty": "clinical"
+        }
+      }
+    },
+    "wholeBodies": [
+      "Recognize a calcium emergency",
+      "Administer IV calcium safely",
+      "Prevent treatment complications",
+      "Review compatibility by drug and age",
+      "Separate PTH replacement from emergency rescue"
+    ],
+    "checks": {
+      "hypocalcemia": {
+        "before": {
+          "question": "A patient with hypocalcemia has tetany and a prolonged QT interval. What is the immediate priority?",
+          "choices": [
+            "Monitored IV calcium with cause-directed evaluation",
+            "Wait for a routine outpatient repeat",
+            "Give an oral phosphate binder",
+            "Restrict calcium intake"
+          ],
+          "answer": 0,
+          "rationale": "Symptomatic hypocalcemia with ECG effects is a medical emergency requiring monitored calcium administration.",
+          "reviewHref": "#hypocalcemia"
+        },
+        "after": {
+          "question": "A patient with hypocalcemia has tetany and a prolonged QT interval. What is the immediate priority?",
+          "choices": [
+            "Monitored IV calcium with cause-directed evaluation",
+            "Wait for a routine outpatient repeat",
+            "Give an oral phosphate binder",
+            "Restrict calcium intake"
+          ],
+          "answer": 0,
+          "rationale": "Symptomatic hypocalcemia with ECG effects is a medical emergency requiring monitored calcium administration.",
+          "reviewHref": "#hypocalcemia"
+        }
+      }
+    },
+    "figures": [
+      "hypocalcemia"
+    ],
+    "bodyChanges": {
+      "Recognize a calcium emergency": {
+        "before": "Perioral or digital paresthesia, carpopedal spasm, tetany, laryngospasm, seizure, prolonged QT, and arrhythmia can signal clinically important hypocalcemia. Symptoms depend on ionized calcium and speed of decline. Severe symptoms require urgent monitored treatment even before every etiologic result is available.",
+        "after": "Perioral or digital paresthesia, carpopedal spasm, tetany, laryngospasm, seizure, prolonged QT, and arrhythmia can signal clinically important hypocalcemia. Severity depends on symptoms and the speed of decline as well as the calcium result. Severe symptomatic hypocalcemia is an emergency: begin urgent monitored treatment while investigating the cause rather than waiting for every etiologic result. After thyroid or parathyroid surgery, disrupted parathyroid function is an important possible cause; assess calcium, phosphate, PTH, magnesium, vitamin D, and kidney function together."
+      },
+      "Administer IV calcium safely": {
+        "before": "Current calcium gluconate labeling indicates it for acute symptomatic hypocalcemia and requires dilution, a secure IV line, controlled administration, and monitoring. Ten percent calcium gluconate contains 9.3 mg of elemental calcium per mL. Calcium chloride provides more elemental calcium per volume but is more irritating and generally requires central access when used for calcium replacement.",
+        "after": "Calcium gluconate injection is labeled for acute symptomatic hypocalcemia in adults and children; its long-term safety has not been established. The reviewed 10% gluconate product contains 100 mg of the salt but only 9.3 mg (0.465 mEq) elemental calcium per mL. The reviewed 10% calcium chloride product contains 27 mg elemental calcium per mL, so equal volumes do not deliver equal calcium. Check the exact product, salt-versus-elemental units, dilution, route, and rate before administration. Gluconate requires dilution and a secure IV line with controlled administration. Chloride is more irritating; emergency guidance specifies central access, and its label specifies slow infusion in a central or deep vein rather than a bolus. Renal impairment requires cautious dosing and closer monitoring; do not apply a standard large-volume emergency infusion automatically to a patient with end-stage kidney failure or receiving dialysis."
+      },
+      "Prevent treatment complications": {
+        "before": "Follow symptoms, ECG, ionized or total calcium as appropriate, magnesium, phosphate, kidney function, and the IV site. Rapid calcium administration can cause hypotension or arrhythmia. Calcium can precipitate with bicarbonate or phosphate in the same line, so compatibility and line management require explicit review.",
+        "after": "Monitor symptoms, ECG, calcium, magnesium, phosphate, kidney function, and the IV site during stabilization. Rapid IV calcium can cause hypotension, bradycardia, arrhythmia, syncope, or cardiac arrest. Both products can cause tissue injury and calcinosis; stop administration at the affected site if extravasation or calcinosis develops. Calcium gluconate labeling calls for calcium measurements every 4 to 6 hours during intermittent infusions and every 1 to 4 hours during continuous infusion; renal impairment has a separate every-4-hour instruction. Review cardiac glycosides such as digoxin: avoid concomitant IV calcium when possible, and use close ECG monitoring if necessary. Follow the actual product and patient-specific plan rather than one monitoring schedule for every setting."
+      }
+    },
+    "addedBodies": [
+      {
+        "heading": "Review compatibility by drug and age",
+        "body": "Calcium gluconate must not be mixed with bicarbonate or phosphate-containing fluids because precipitation can occur. Do not mix it with ceftriaxone or administer the two simultaneously through a Y-site at any age. In neonates 28 days old or younger, concomitant ceftriaxone and IV calcium-containing products are contraindicated. For patients older than 28 days, sequential administration is permitted only with thorough line flushing between infusions using compatible fluid. A separate line does not remove the neonatal contraindication. Review the entire infusion schedule and exact product compatibility before treatment."
+      },
+      {
+        "heading": "Separate PTH replacement from emergency rescue",
+        "body": "Palopegteriparatide (Yorvipath) is an individualized PTH replacement option for adults with hypoparathyroidism. It was not studied for acute post-surgical hypoparathyroidism and does not replace urgent IV calcium for a hypocalcemic emergency. Check serum calcium 7 to 10 days after the first dose and after changes in Yorvipath, active vitamin D, or calcium supplements; during maintenance, check at least every 4 to 6 weeks and as indicated by symptoms. Serious hypercalcemia is most likely when starting or increasing the dose, while abrupt discontinuation increases the risk of serious hypocalcemia. Monitor symptoms daily and coordinate changes in replacement, calcium, and active vitamin D with the treating team."
+      }
+    ],
+    "addedQuestions": [
+      "calcium-phosphorus-iv-product-content-reconciliation",
+      "calcium-phosphorus-neonatal-ceftriaxone-compatibility"
+    ],
+    "references": [
+      {
+        "label": "Calcium chloride prescribing information: concentration and IV safety (December 2025)",
+        "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7649c84f-f1c2-4169-962d-ccbac56523a9"
+      },
+      {
+        "label": "Yorvipath prescribing information: adult hypoparathyroidism and calcium monitoring (October 2025)",
+        "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a1fa23fd-c434-443e-9a17-5750578c8602"
+      },
+      {
+        "label": "Prolia prescribing information: severe hypocalcemia and advanced CKD",
+        "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=49e5afe9-a0c7-40c4-af9f-f287a80c5c88"
+      }
+    ],
+    "retainedPendingQuestions": [
+      "calcium-phosphorus-008",
+      "calcium-phosphorus-023",
+      "calcium-phosphorus-095"
+    ],
+    "retainedPendingBodies": [
+      "Correct the mechanism",
+      "Protect the kidney during chronic therapy"
+    ]
+  },
+  "questionReview": [
+    {
+      "before": {
+        "id": "calcium-phosphorus-018",
+        "question": "Which ECG change is classically associated with hypocalcemia?",
+        "choices": [
+          "QT prolongation",
+          "QT shortening",
+          "Fixed ST elevation",
+          "Delta wave in every case"
+        ],
+        "answer": 0,
+        "rationale": "Hypocalcemia can prolong ventricular repolarization and the QT interval.",
+        "reviewHref": "#hypocalcemia"
+      },
+      "final": {
+        "id": "calcium-phosphorus-018",
+        "question": "Which ECG change is classically associated with hypocalcemia?",
+        "choices": [
+          "QT prolongation",
+          "QT shortening",
+          "Fixed ST elevation",
+          "Delta wave in every case"
+        ],
+        "answer": 0,
+        "rationale": "The acute hypocalcemia guidance identifies QT prolongation and arrhythmia. QT shortening is associated with the opposite calcium disturbance; fixed ST elevation and a universal delta wave are not characteristic hypocalcemia findings. Interpret the ECG with symptoms and the calcium trend.",
+        "reviewHref": "#hypocalcemia"
+      },
+      "wholeStemAllAlternativesKeyRationaleAnchorVerified": true,
+      "newlyCounted": true
+    },
+    {
+      "before": {
+        "id": "calcium-phosphorus-019",
+        "question": "Which symptom makes hypocalcemia an immediate emergency?",
+        "choices": [
+          "Laryngospasm",
+          "Stable mild fatigue only",
+          "Chronic nail change",
+          "Asymptomatic low albumin"
+        ],
+        "answer": 0,
+        "rationale": "Laryngospasm threatens the airway and requires urgent treatment.",
+        "reviewHref": "#hypocalcemia"
+      },
+      "final": {
+        "id": "calcium-phosphorus-019",
+        "question": "Which symptom makes hypocalcemia an immediate emergency?",
+        "choices": [
+          "Laryngospasm",
+          "Stable mild fatigue only",
+          "Chronic nail change",
+          "Asymptomatic low albumin"
+        ],
+        "answer": 0,
+        "rationale": "Laryngospasm threatens the airway and is a recognized severe hypocalcemia manifestation requiring urgent monitored treatment. Stable fatigue or chronic nail changes do not carry the same immediate airway risk. Low albumin alone does not establish symptomatic hypocalcemia.",
+        "reviewHref": "#hypocalcemia"
+      },
+      "wholeStemAllAlternativesKeyRationaleAnchorVerified": true,
+      "newlyCounted": true
+    },
+    {
+      "before": {
+        "id": "calcium-phosphorus-020",
+        "question": "What is the FDA-labeled indication for calcium gluconate injection?",
+        "choices": [
+          "Acute symptomatic hypocalcemia",
+          "Long-term osteoporosis monotherapy",
+          "Asymptomatic hyperphosphatemia",
+          "Chronic hypercalcemia"
+        ],
+        "answer": 0,
+        "rationale": "Current labeling indicates IV calcium gluconate for acute symptomatic hypocalcemia.",
+        "reviewHref": "#hypocalcemia"
+      },
+      "final": {
+        "id": "calcium-phosphorus-020",
+        "question": "What is the FDA-labeled indication for calcium gluconate injection?",
+        "choices": [
+          "Acute symptomatic hypocalcemia",
+          "Long-term osteoporosis monotherapy",
+          "Asymptomatic hyperphosphatemia",
+          "Chronic hypercalcemia"
+        ],
+        "answer": 0,
+        "rationale": "The reviewed calcium gluconate label specifies acute symptomatic hypocalcemia in adults and pediatric patients. It does not establish long-term osteoporosis monotherapy or treatment of high phosphate or high calcium; long-term safety has not been established.",
+        "reviewHref": "#hypocalcemia"
+      },
+      "wholeStemAllAlternativesKeyRationaleAnchorVerified": true,
+      "newlyCounted": true
+    },
+    {
+      "before": {
+        "id": "calcium-phosphorus-021",
+        "question": "How much elemental calcium is present in each mL of 10 percent calcium gluconate injection?",
+        "choices": [
+          "9.3 mg",
+          "100 mg",
+          "1 mg",
+          "93 mg"
+        ],
+        "answer": 0,
+        "rationale": "The current label states 9.3 mg, or 0.465 mEq, elemental calcium per mL.",
+        "reviewHref": "#hypocalcemia"
+      },
+      "final": {
+        "id": "calcium-phosphorus-021",
+        "question": "How much elemental calcium is present in each mL of 10 percent calcium gluconate injection?",
+        "choices": [
+          "9.3 mg",
+          "100 mg",
+          "1 mg",
+          "93 mg"
+        ],
+        "answer": 0,
+        "rationale": "The reviewed 10% product contains 100 mg of calcium gluconate salt per mL, providing 9.3 mg (0.465 mEq) elemental calcium. Salt mass is not elemental calcium mass. The 93 mg value is the elemental content of 10 mL, not 1 mL.",
+        "reviewHref": "#hypocalcemia"
+      },
+      "wholeStemAllAlternativesKeyRationaleAnchorVerified": true,
+      "newlyCounted": true
+    },
+    {
+      "before": {
+        "id": "calcium-phosphorus-022",
+        "question": "Why is calcium chloride generally restricted to central access for replacement?",
+        "choices": [
+          "It is more irritating and extravasation can cause severe tissue injury",
+          "It contains no elemental calcium",
+          "It must be given orally",
+          "It cannot affect the heart"
+        ],
+        "answer": 0,
+        "rationale": "Calcium chloride is more irritating to veins and poses greater tissue injury risk with extravasation.",
+        "reviewHref": "#hypocalcemia"
+      },
+      "final": {
+        "id": "calcium-phosphorus-022",
+        "question": "Why is calcium chloride generally restricted to central access for replacement?",
+        "choices": [
+          "It is more irritating and extravasation can cause severe tissue injury",
+          "It contains no elemental calcium",
+          "It must be given orally",
+          "It cannot affect the heart"
+        ],
+        "answer": 0,
+        "rationale": "Emergency guidance specifies central access for calcium chloride because it is more irritating. The reviewed chloride label specifies slow infusion in a central or deep vein and warns of tissue necrosis with infiltration. It contains elemental calcium, is administered intravenously, and can cause cardiac adverse effects; do not treat it as interchangeable with gluconate by volume.",
+        "reviewHref": "#hypocalcemia"
+      },
+      "wholeStemAllAlternativesKeyRationaleAnchorVerified": true,
+      "newlyCounted": true
+    },
+    {
+      "before": {
+        "id": "calcium-phosphorus-024",
+        "question": "Why might hypoparathyroidism require calcitriol rather than relying only on nutritional vitamin D?",
+        "choices": [
+          "Low PTH reduces renal activation of vitamin D",
+          "Calcitriol blocks calcium absorption",
+          "Nutritional vitamin D contains phosphate",
+          "PTH is required for intestinal glucose absorption"
+        ],
+        "answer": 0,
+        "rationale": "Without adequate PTH signaling, renal generation of active vitamin D may be insufficient.",
+        "reviewHref": "#hypocalcemia"
+      },
+      "final": {
+        "id": "calcium-phosphorus-024",
+        "question": "Why might hypoparathyroidism require calcitriol rather than relying only on nutritional vitamin D?",
+        "choices": [
+          "Low PTH reduces renal activation of vitamin D",
+          "Calcitriol blocks calcium absorption",
+          "Nutritional vitamin D contains phosphate",
+          "PTH is required for intestinal glucose absorption"
+        ],
+        "answer": 0,
+        "rationale": "PTH facilitates active vitamin D synthesis; deficient signaling can leave renal activation insufficient. Acute guidance includes calcitriol for postoperative hypoparathyroidism. Calcitriol supports calcium absorption rather than blocking it; nutritional vitamin D is not phosphate, and intestinal glucose absorption is not the reason for active vitamin D treatment.",
+        "reviewHref": "#hypocalcemia"
+      },
+      "wholeStemAllAlternativesKeyRationaleAnchorVerified": true,
+      "newlyCounted": true
+    },
+    {
+      "before": {
+        "id": "calcium-phosphorus-025",
+        "question": "Which administration practice is unsafe with IV calcium?",
+        "choices": [
+          "Co-infusing with an incompatible bicarbonate or phosphate solution",
+          "Using a secure IV line",
+          "Monitoring the ECG during urgent therapy",
+          "Repeating calcium measurements"
+        ],
+        "answer": 0,
+        "rationale": "Calcium can precipitate with bicarbonate or phosphate and requires compatibility review.",
+        "reviewHref": "#hypocalcemia"
+      },
+      "final": {
+        "id": "calcium-phosphorus-025",
+        "question": "Which administration practice is unsafe with IV calcium?",
+        "choices": [
+          "Co-infusing with an incompatible bicarbonate or phosphate solution",
+          "Using a secure IV line",
+          "Monitoring the ECG during urgent therapy",
+          "Repeating calcium measurements"
+        ],
+        "answer": 0,
+        "rationale": "The gluconate label prohibits mixing with bicarbonate or phosphate-containing fluids because precipitation can occur. A secure line, ECG monitoring during urgent administration, and repeat calcium assessment are safeguards rather than the unsafe practice. Assess exact product and infusion compatibility before giving calcium.",
+        "reviewHref": "#hypocalcemia"
+      },
+      "wholeStemAllAlternativesKeyRationaleAnchorVerified": true,
+      "newlyCounted": true
+    },
+    {
+      "before": {
+        "id": "calcium-phosphorus-026",
+        "question": "What should accompany urgent IV calcium administration?",
+        "choices": [
+          "ECG, symptoms, calcium, IV site, and cause monitoring",
+          "No monitoring after the first dose",
+          "LDL testing only",
+          "Routine discharge before reassessment"
+        ],
+        "answer": 0,
+        "rationale": "Therapeutic response, arrhythmia, extravasation, and the underlying mechanism all require follow-up.",
+        "reviewHref": "#hypocalcemia"
+      },
+      "final": {
+        "id": "calcium-phosphorus-026",
+        "question": "What should accompany urgent IV calcium administration?",
+        "choices": [
+          "ECG, symptoms, calcium, IV site, and cause monitoring",
+          "No monitoring after the first dose",
+          "LDL testing only",
+          "Routine discharge before reassessment"
+        ],
+        "answer": 0,
+        "rationale": "Urgent IV calcium requires assessment of clinical response, ECG risk, calcium, IV-site injury, and the underlying cause. The label also requires vitals and calcium monitoring during administration. A first dose does not end reassessment; LDL testing alone and discharge before response assessment miss acute risks.",
+        "reviewHref": "#hypocalcemia"
+      },
+      "wholeStemAllAlternativesKeyRationaleAnchorVerified": true,
+      "newlyCounted": true
+    },
+    {
+      "before": {
+        "id": "calcium-phosphorus-042",
+        "question": "Which statement best describes palopegteriparatide in hypoparathyroidism?",
+        "choices": [
+          "It is an adult PTH replacement option that requires individualized calcium monitoring",
+          "It is the first treatment for an acute hypocalcemic seizure",
+          "It eliminates all need for calcium assessment",
+          "It is approved only for hyperparathyroidism"
+        ],
+        "answer": 0,
+        "rationale": "Palopegteriparatide is approved for adults with hypoparathyroidism, but it is not an acute rescue treatment and can cause hypercalcemia or hypocalcemia during titration.",
+        "reviewHref": "#hypocalcemia"
+      },
+      "final": {
+        "id": "calcium-phosphorus-042",
+        "question": "Which statement best describes palopegteriparatide in hypoparathyroidism?",
+        "choices": [
+          "It is an adult PTH replacement option that requires individualized calcium monitoring",
+          "It is the first treatment for an acute hypocalcemic seizure",
+          "It eliminates all need for calcium assessment",
+          "It is approved only for hyperparathyroidism"
+        ],
+        "answer": 0,
+        "rationale": "Yorvipath is indicated for adult hypoparathyroidism and requires individualized calcium monitoring. It was not studied for acute post-surgical hypoparathyroidism and is not a substitute for emergency calcium treatment. Serious hypercalcemia can occur with initiation or dose increases and serious hypocalcemia with abrupt interruption; calcium assessment remains necessary.",
+        "reviewHref": "#hypocalcemia"
+      },
+      "wholeStemAllAlternativesKeyRationaleAnchorVerified": true,
+      "newlyCounted": true
+    },
+    {
+      "before": {
+        "id": "calcium-phosphorus-070",
+        "question": "A calcium gluconate solution contains 9.3 mg elemental calcium per mL. How much elemental calcium is present in 5 mL?",
+        "choices": [
+          "46.5 mg",
+          "500 mg",
+          "2.3 mg",
+          "0.5 mg"
+        ],
+        "answer": 0,
+        "rationale": "5 mL multiplied by 9.3 mg/mL equals 46.5 mg elemental calcium. This is a content calculation, not an administration recommendation.",
+        "reviewHref": "#hypocalcemia"
+      },
+      "final": {
+        "id": "calcium-phosphorus-070",
+        "question": "A calcium gluconate solution contains 9.3 mg elemental calcium per mL. How much elemental calcium is present in 5 mL?",
+        "choices": [
+          "46.5 mg",
+          "500 mg",
+          "2.3 mg",
+          "0.5 mg"
+        ],
+        "answer": 0,
+        "rationale": "5 mL multiplied by 9.3 mg/mL equals 46.5 mg elemental calcium. This is a content calculation, not an administration recommendation.",
+        "reviewHref": "#hypocalcemia"
+      },
+      "wholeStemAllAlternativesKeyRationaleAnchorVerified": true,
+      "newlyCounted": true
+    },
+    {
+      "before": {
+        "id": "calcium-phosphorus-071",
+        "question": "A calcium gluconate solution contains 9.3 mg elemental calcium per mL. How much elemental calcium is present in 10 mL?",
+        "choices": [
+          "93 mg",
+          "1000 mg",
+          "4.7 mg",
+          "0.9 mg"
+        ],
+        "answer": 0,
+        "rationale": "10 mL multiplied by 9.3 mg/mL equals 93 mg elemental calcium. This is a content calculation, not an administration recommendation.",
+        "reviewHref": "#hypocalcemia"
+      },
+      "final": {
+        "id": "calcium-phosphorus-071",
+        "question": "A calcium gluconate solution contains 9.3 mg elemental calcium per mL. How much elemental calcium is present in 10 mL?",
+        "choices": [
+          "93 mg",
+          "1000 mg",
+          "4.7 mg",
+          "0.9 mg"
+        ],
+        "answer": 0,
+        "rationale": "10 mL multiplied by 9.3 mg/mL equals 93 mg elemental calcium. This is a content calculation, not an administration recommendation.",
+        "reviewHref": "#hypocalcemia"
+      },
+      "wholeStemAllAlternativesKeyRationaleAnchorVerified": true,
+      "newlyCounted": true
+    },
+    {
+      "before": {
+        "id": "calcium-phosphorus-072",
+        "question": "A calcium gluconate solution contains 9.3 mg elemental calcium per mL. How much elemental calcium is present in 15 mL?",
+        "choices": [
+          "139.5 mg",
+          "1500 mg",
+          "7 mg",
+          "1.4 mg"
+        ],
+        "answer": 0,
+        "rationale": "15 mL multiplied by 9.3 mg/mL equals 139.5 mg elemental calcium. This is a content calculation, not an administration recommendation.",
+        "reviewHref": "#hypocalcemia"
+      },
+      "final": {
+        "id": "calcium-phosphorus-072",
+        "question": "A calcium gluconate solution contains 9.3 mg elemental calcium per mL. How much elemental calcium is present in 15 mL?",
+        "choices": [
+          "139.5 mg",
+          "1500 mg",
+          "7 mg",
+          "1.4 mg"
+        ],
+        "answer": 0,
+        "rationale": "15 mL multiplied by 9.3 mg/mL equals 139.5 mg elemental calcium. This is a content calculation, not an administration recommendation.",
+        "reviewHref": "#hypocalcemia"
+      },
+      "wholeStemAllAlternativesKeyRationaleAnchorVerified": true,
+      "newlyCounted": true
+    },
+    {
+      "before": {
+        "id": "calcium-phosphorus-073",
+        "question": "A calcium gluconate solution contains 9.3 mg elemental calcium per mL. How much elemental calcium is present in 20 mL?",
+        "choices": [
+          "186 mg",
+          "2000 mg",
+          "9.3 mg",
+          "1.9 mg"
+        ],
+        "answer": 0,
+        "rationale": "20 mL multiplied by 9.3 mg/mL equals 186 mg elemental calcium. This is a content calculation, not an administration recommendation.",
+        "reviewHref": "#hypocalcemia"
+      },
+      "final": {
+        "id": "calcium-phosphorus-073",
+        "question": "A calcium gluconate solution contains 9.3 mg elemental calcium per mL. How much elemental calcium is present in 20 mL?",
+        "choices": [
+          "186 mg",
+          "2000 mg",
+          "9.3 mg",
+          "1.9 mg"
+        ],
+        "answer": 0,
+        "rationale": "20 mL multiplied by 9.3 mg/mL equals 186 mg elemental calcium. This is a content calculation, not an administration recommendation.",
+        "reviewHref": "#hypocalcemia"
+      },
+      "wholeStemAllAlternativesKeyRationaleAnchorVerified": true,
+      "newlyCounted": true
+    },
+    {
+      "before": {
+        "id": "calcium-phosphorus-074",
+        "question": "A calcium gluconate solution contains 9.3 mg elemental calcium per mL. How much elemental calcium is present in 25 mL?",
+        "choices": [
+          "232.5 mg",
+          "2500 mg",
+          "11.6 mg",
+          "2.3 mg"
+        ],
+        "answer": 0,
+        "rationale": "25 mL multiplied by 9.3 mg/mL equals 232.5 mg elemental calcium. This is a content calculation, not an administration recommendation.",
+        "reviewHref": "#hypocalcemia"
+      },
+      "final": {
+        "id": "calcium-phosphorus-074",
+        "question": "A calcium gluconate solution contains 9.3 mg elemental calcium per mL. How much elemental calcium is present in 25 mL?",
+        "choices": [
+          "232.5 mg",
+          "2500 mg",
+          "11.6 mg",
+          "2.3 mg"
+        ],
+        "answer": 0,
+        "rationale": "25 mL multiplied by 9.3 mg/mL equals 232.5 mg elemental calcium. This is a content calculation, not an administration recommendation.",
+        "reviewHref": "#hypocalcemia"
+      },
+      "wholeStemAllAlternativesKeyRationaleAnchorVerified": true,
+      "newlyCounted": true
+    },
+    {
+      "before": {
+        "id": "calcium-phosphorus-075",
+        "question": "A calcium gluconate solution contains 9.3 mg elemental calcium per mL. How much elemental calcium is present in 30 mL?",
+        "choices": [
+          "279 mg",
+          "3000 mg",
+          "14 mg",
+          "2.8 mg"
+        ],
+        "answer": 0,
+        "rationale": "30 mL multiplied by 9.3 mg/mL equals 279 mg elemental calcium. This is a content calculation, not an administration recommendation.",
+        "reviewHref": "#hypocalcemia"
+      },
+      "final": {
+        "id": "calcium-phosphorus-075",
+        "question": "A calcium gluconate solution contains 9.3 mg elemental calcium per mL. How much elemental calcium is present in 30 mL?",
+        "choices": [
+          "279 mg",
+          "3000 mg",
+          "14 mg",
+          "2.8 mg"
+        ],
+        "answer": 0,
+        "rationale": "30 mL multiplied by 9.3 mg/mL equals 279 mg elemental calcium. This is a content calculation, not an administration recommendation.",
+        "reviewHref": "#hypocalcemia"
+      },
+      "wholeStemAllAlternativesKeyRationaleAnchorVerified": true,
+      "newlyCounted": true
+    },
+    {
+      "before": {
+        "id": "calcium-phosphorus-076",
+        "question": "A calcium gluconate solution contains 9.3 mg elemental calcium per mL. How much elemental calcium is present in 35 mL?",
+        "choices": [
+          "325.5 mg",
+          "3500 mg",
+          "16.3 mg",
+          "3.3 mg"
+        ],
+        "answer": 0,
+        "rationale": "35 mL multiplied by 9.3 mg/mL equals 325.5 mg elemental calcium. This is a content calculation, not an administration recommendation.",
+        "reviewHref": "#hypocalcemia"
+      },
+      "final": {
+        "id": "calcium-phosphorus-076",
+        "question": "A calcium gluconate solution contains 9.3 mg elemental calcium per mL. How much elemental calcium is present in 35 mL?",
+        "choices": [
+          "325.5 mg",
+          "3500 mg",
+          "16.3 mg",
+          "3.3 mg"
+        ],
+        "answer": 0,
+        "rationale": "35 mL multiplied by 9.3 mg/mL equals 325.5 mg elemental calcium. This is a content calculation, not an administration recommendation.",
+        "reviewHref": "#hypocalcemia"
+      },
+      "wholeStemAllAlternativesKeyRationaleAnchorVerified": true,
+      "newlyCounted": true
+    },
+    {
+      "before": {
+        "id": "calcium-phosphorus-077",
+        "question": "A calcium gluconate solution contains 9.3 mg elemental calcium per mL. How much elemental calcium is present in 40 mL?",
+        "choices": [
+          "372 mg",
+          "4000 mg",
+          "18.6 mg",
+          "3.7 mg"
+        ],
+        "answer": 0,
+        "rationale": "40 mL multiplied by 9.3 mg/mL equals 372 mg elemental calcium. This is a content calculation, not an administration recommendation.",
+        "reviewHref": "#hypocalcemia"
+      },
+      "final": {
+        "id": "calcium-phosphorus-077",
+        "question": "A calcium gluconate solution contains 9.3 mg elemental calcium per mL. How much elemental calcium is present in 40 mL?",
+        "choices": [
+          "372 mg",
+          "4000 mg",
+          "18.6 mg",
+          "3.7 mg"
+        ],
+        "answer": 0,
+        "rationale": "40 mL multiplied by 9.3 mg/mL equals 372 mg elemental calcium. This is a content calculation, not an administration recommendation.",
+        "reviewHref": "#hypocalcemia"
+      },
+      "wholeStemAllAlternativesKeyRationaleAnchorVerified": true,
+      "newlyCounted": true
+    },
+    {
+      "before": {
+        "id": "calcium-phosphorus-078",
+        "question": "A calcium gluconate solution contains 9.3 mg elemental calcium per mL. How much elemental calcium is present in 50 mL?",
+        "choices": [
+          "465 mg",
+          "5000 mg",
+          "23.3 mg",
+          "4.7 mg"
+        ],
+        "answer": 0,
+        "rationale": "50 mL multiplied by 9.3 mg/mL equals 465 mg elemental calcium. This is a content calculation, not an administration recommendation.",
+        "reviewHref": "#hypocalcemia"
+      },
+      "final": {
+        "id": "calcium-phosphorus-078",
+        "question": "A calcium gluconate solution contains 9.3 mg elemental calcium per mL. How much elemental calcium is present in 50 mL?",
+        "choices": [
+          "465 mg",
+          "5000 mg",
+          "23.3 mg",
+          "4.7 mg"
+        ],
+        "answer": 0,
+        "rationale": "50 mL multiplied by 9.3 mg/mL equals 465 mg elemental calcium. This is a content calculation, not an administration recommendation.",
+        "reviewHref": "#hypocalcemia"
+      },
+      "wholeStemAllAlternativesKeyRationaleAnchorVerified": true,
+      "newlyCounted": true
+    },
+    {
+      "before": {
+        "id": "calcium-phosphorus-079",
+        "question": "A calcium gluconate solution contains 9.3 mg elemental calcium per mL. How much elemental calcium is present in 100 mL?",
+        "choices": [
+          "930 mg",
+          "10000 mg",
+          "46.5 mg",
+          "9.3 mg"
+        ],
+        "answer": 0,
+        "rationale": "100 mL multiplied by 9.3 mg/mL equals 930 mg elemental calcium. This is a content calculation, not an administration recommendation.",
+        "reviewHref": "#hypocalcemia"
+      },
+      "final": {
+        "id": "calcium-phosphorus-079",
+        "question": "A calcium gluconate solution contains 9.3 mg elemental calcium per mL. How much elemental calcium is present in 100 mL?",
+        "choices": [
+          "930 mg",
+          "10000 mg",
+          "46.5 mg",
+          "9.3 mg"
+        ],
+        "answer": 0,
+        "rationale": "100 mL multiplied by 9.3 mg/mL equals 930 mg elemental calcium. This is a content calculation, not an administration recommendation.",
+        "reviewHref": "#hypocalcemia"
+      },
+      "wholeStemAllAlternativesKeyRationaleAnchorVerified": true,
+      "newlyCounted": true
+    },
+    {
+      "before": {
+        "id": "calcium-phosphorus-093",
+        "question": "After thyroidectomy, a patient has falling calcium, low PTH, and prolonged QT. Which interpretation or action is most defensible?",
+        "choices": [
+          "Urgent monitored calcium with postoperative hypoparathyroidism management",
+          "Treat the isolated number without evaluating the mechanism",
+          "Ignore kidney function and symptoms",
+          "Delay urgent stabilization until every test returns"
+        ],
+        "answer": 0,
+        "rationale": "The pattern supports clinically important hypoparathyroidism and electrical risk.",
+        "reviewHref": "#hypocalcemia"
+      },
+      "final": {
+        "id": "calcium-phosphorus-093",
+        "question": "After thyroidectomy, a patient has falling calcium, low PTH, and prolonged QT. Which interpretation or action is most defensible?",
+        "choices": [
+          "Urgent monitored calcium with postoperative hypoparathyroidism management",
+          "Use oral maintenance therapy alone despite falling calcium and ECG abnormalities",
+          "Wait for all etiologic results before beginning monitored stabilization",
+          "Treat phosphate alone without addressing the calcium and ECG findings"
+        ],
+        "answer": 0,
+        "rationale": "Post-thyroidectomy parathyroid disruption can cause acute hypocalcemia. Falling calcium with low PTH and QT prolongation warrants urgent monitored stabilization plus cause-directed postoperative management. Oral maintenance alone, waiting for every etiologic result, or treating phosphate without addressing calcium and ECG risk does not manage the immediate problem.",
+        "reviewHref": "#hypocalcemia"
+      },
+      "wholeStemAllAlternativesKeyRationaleAnchorVerified": true,
+      "newlyCounted": true
+    },
+    {
+      "before": {
+        "id": "calcium-phosphorus-101",
+        "question": "A patient received denosumab and develops symptomatic hypocalcemia with advanced CKD. What is the best next interpretation or management principle?",
+        "choices": [
+          "Give urgent calcium as indicated, assess magnesium and vitamin D, and monitor for prolonged recurrence",
+          "Normalize one laboratory value without a mechanism",
+          "Use the same fixed plan for every patient",
+          "Ignore medication timing"
+        ],
+        "answer": 0,
+        "rationale": "Denosumab effect can persist and kidney disease increases mineral risk.",
+        "reviewHref": "#hypocalcemia"
+      },
+      "final": {
+        "id": "calcium-phosphorus-101",
+        "question": "A patient received denosumab and develops symptomatic hypocalcemia with advanced CKD. What is the best next interpretation or management principle?",
+        "choices": [
+          "Give urgent calcium as indicated, assess magnesium and vitamin D, and monitor for prolonged recurrence",
+          "End calcium monitoring as soon as one measurement normalizes",
+          "Use an identical replacement plan regardless of CKD-MBD or the denosumab product",
+          "Exclude denosumab from the medication review because it was given earlier"
+        ],
+        "answer": 0,
+        "rationale": "Denosumab products can cause severe hypocalcemia, with greater risk in advanced CKD. Prolia labeling reports postmarketing hypocalcemia lasting weeks or months and requires continued monitoring; do not assume one corrected result ends the risk. Stabilize symptomatic hypocalcemia as indicated, assess magnesium, vitamin D and CKD-MBD, and review the actual denosumab product and follow-up plan. The Prolia monitoring instructions must not be copied automatically to every denosumab regimen.",
+        "reviewHref": "#hypocalcemia"
+      },
+      "wholeStemAllAlternativesKeyRationaleAnchorVerified": true,
+      "newlyCounted": true
+    },
+    {
+      "before": {
+        "id": "calcium-phosphorus-108",
+        "question": "A patient has low calcium, high phosphate, low PTH, and normal magnesium after neck surgery. What is the best next interpretation or management principle?",
+        "choices": [
+          "Postoperative hypoparathyroidism is likely",
+          "Normalize one laboratory value without a mechanism",
+          "Use the same fixed plan for every patient",
+          "Ignore medication timing"
+        ],
+        "answer": 0,
+        "rationale": "Low PTH fails to conserve calcium or promote phosphate excretion.",
+        "reviewHref": "#hypocalcemia"
+      },
+      "final": {
+        "id": "calcium-phosphorus-108",
+        "question": "A patient has low calcium, high phosphate, low PTH, and normal magnesium after neck surgery. What is the best next interpretation or management principle?",
+        "choices": [
+          "Postoperative hypoparathyroidism is likely",
+          "Vitamin D deficiency alone explains the suppressed PTH response",
+          "An appropriate secondary PTH rise from phosphate retention explains the low PTH",
+          "Severe magnesium deficiency is established by the normal magnesium result"
+        ],
+        "answer": 0,
+        "rationale": "Neck surgery can disrupt parathyroid function. Low PTH with low calcium and high phosphate supports postoperative hypoparathyroidism: PTH normally promotes renal calcium reabsorption, phosphate excretion, and active vitamin D synthesis. Normal magnesium makes severe magnesium deficiency a less fitting explanation for this case; vitamin D deficiency alone or phosphate retention with an appropriate PTH rise does not match the low PTH pattern.",
+        "reviewHref": "#hypocalcemia"
+      },
+      "wholeStemAllAlternativesKeyRationaleAnchorVerified": true,
+      "newlyCounted": true
+    },
+    {
+      "before": null,
+      "final": {
+        "id": "calcium-phosphorus-iv-product-content-reconciliation",
+        "question": "A prescription specifies elemental calcium, and the available 10% calcium gluconate is replaced with 10% calcium chloride. Which reconciliation is essential?",
+        "choices": [
+          "Recalculate from the exact elemental content; the reviewed products contain 9.3 and 27 mg elemental calcium per mL, respectively",
+          "Use the same volume because both products are labeled 10%",
+          "Treat 100 mg of calcium salt as 100 mg elemental calcium for either product",
+          "Carry over the gluconate route and rate without reviewing the chloride label"
+        ],
+        "answer": 0,
+        "rationale": "The percentage describes calcium salt concentration, not equal elemental content. The reviewed gluconate product provides 9.3 mg elemental calcium/mL and chloride provides 27 mg/mL. Reconcile elemental dose, volume, access, and administration instructions; equal volumes and copied rates are unsafe assumptions. This is product reconciliation, not a recommended replacement dose.",
+        "reviewHref": "#hypocalcemia",
+        "difficulty": "clinical"
+      },
+      "wholeStemAllAlternativesKeyRationaleAnchorVerified": true,
+      "newlyCounted": true
+    },
+    {
+      "before": null,
+      "final": {
+        "id": "calcium-phosphorus-neonatal-ceftriaxone-compatibility",
+        "question": "A 20-day-old neonate is receiving ceftriaxone and requires IV calcium. Which compatibility principle applies?",
+        "choices": [
+          "Concomitant ceftriaxone and IV calcium-containing products are contraindicated in neonates 28 days old or younger",
+          "Give the two concurrently through separate lines because the neonatal restriction applies only to a Y-site",
+          "Use the older-patient sequential flushing exception for every neonate",
+          "Mix ceftriaxone with calcium gluconate after diluting both in saline"
+        ],
+        "answer": 0,
+        "rationale": "The reviewed gluconate label contraindicates concomitant ceftriaxone and IV calcium-containing products in neonates 28 days old or younger. Separate lines do not remove that contraindication. The sequential administration exception with thorough compatible-fluid flushing applies to patients older than 28 days. Simultaneous Y-site administration and mixing are prohibited; the treating team must reconcile the treatment plan.",
+        "reviewHref": "#hypocalcemia",
+        "difficulty": "clinical"
+      },
+      "wholeStemAllAlternativesKeyRationaleAnchorVerified": true,
+      "newlyCounted": true
+    }
+  ],
+  "finalSourceComparison": {
+    "status": "passed",
+    "comparedFinalWholeBodiesAndWholeQuestionsAgain": true,
+    "wholeBodies": {
+      "Recognize a calcium emergency": {
+        "wholeTextReviewed": true,
+        "sources": [
+          "Society clinical presentation/causes/investigations/severe"
+        ]
+      },
+      "Administer IV calcium safely": {
+        "wholeTextReviewed": true,
+        "sources": [
+          "Gluconate1/2.1/2.4",
+          "Chloride2.1/3/5.4",
+          "Society severe, including ESRD warning"
+        ]
+      },
+      "Prevent treatment complications": {
+        "wholeTextReviewed": true,
+        "sources": [
+          "Gluconate2.3/2.4/5.1/5.3/5.4",
+          "Society hazards"
+        ]
+      },
+      "Review compatibility by drug and age": {
+        "wholeTextReviewed": true,
+        "sources": [
+          "Gluconate2.5"
+        ]
+      },
+      "Separate PTH replacement from emergency rescue": {
+        "wholeTextReviewed": true,
+        "sources": [
+          "CurrentYorvipath1/2.1/5.3/5.4",
+          "Society severe"
+        ]
+      }
+    },
+    "wholeQuestions": {
+      "calcium-phosphorus-018": {
+        "wholeStemAllAlternativesCorrectKeyRationaleAnchorReviewed": true,
+        "sources": [
+          "Society presentation"
+        ]
+      },
+      "calcium-phosphorus-019": {
+        "wholeStemAllAlternativesCorrectKeyRationaleAnchorReviewed": true,
+        "sources": [
+          "Society presentation/severe"
+        ]
+      },
+      "calcium-phosphorus-020": {
+        "wholeStemAllAlternativesCorrectKeyRationaleAnchorReviewed": true,
+        "sources": [
+          "Gluconate1"
+        ]
+      },
+      "calcium-phosphorus-021": {
+        "wholeStemAllAlternativesCorrectKeyRationaleAnchorReviewed": true,
+        "sources": [
+          "Gluconate2.1"
+        ]
+      },
+      "calcium-phosphorus-022": {
+        "wholeStemAllAlternativesCorrectKeyRationaleAnchorReviewed": true,
+        "sources": [
+          "Society severe",
+          "Chloride2.1/5.4"
+        ]
+      },
+      "calcium-phosphorus-024": {
+        "wholeStemAllAlternativesCorrectKeyRationaleAnchorReviewed": true,
+        "sources": [
+          "CurrentYorvipath12.1",
+          "Society severe activeD"
+        ]
+      },
+      "calcium-phosphorus-025": {
+        "wholeStemAllAlternativesCorrectKeyRationaleAnchorReviewed": true,
+        "sources": [
+          "Gluconate2.5"
+        ]
+      },
+      "calcium-phosphorus-026": {
+        "wholeStemAllAlternativesCorrectKeyRationaleAnchorReviewed": true,
+        "sources": [
+          "Gluconate2.1/2.3/5.3/5.4",
+          "Society investigations/hazards"
+        ]
+      },
+      "calcium-phosphorus-042": {
+        "wholeStemAllAlternativesCorrectKeyRationaleAnchorReviewed": true,
+        "sources": [
+          "CurrentYorvipath1/2.1/5.3/5.4"
+        ]
+      },
+      "calcium-phosphorus-070": {
+        "wholeStemAllAlternativesCorrectKeyRationaleAnchorReviewed": true,
+        "sources": [
+          "Gluconate2.1 and independently checked arithmetic"
+        ]
+      },
+      "calcium-phosphorus-071": {
+        "wholeStemAllAlternativesCorrectKeyRationaleAnchorReviewed": true,
+        "sources": [
+          "Gluconate2.1 and independently checked arithmetic"
+        ]
+      },
+      "calcium-phosphorus-072": {
+        "wholeStemAllAlternativesCorrectKeyRationaleAnchorReviewed": true,
+        "sources": [
+          "Gluconate2.1 and independently checked arithmetic"
+        ]
+      },
+      "calcium-phosphorus-073": {
+        "wholeStemAllAlternativesCorrectKeyRationaleAnchorReviewed": true,
+        "sources": [
+          "Gluconate2.1 and independently checked arithmetic"
+        ]
+      },
+      "calcium-phosphorus-074": {
+        "wholeStemAllAlternativesCorrectKeyRationaleAnchorReviewed": true,
+        "sources": [
+          "Gluconate2.1 and independently checked arithmetic"
+        ]
+      },
+      "calcium-phosphorus-075": {
+        "wholeStemAllAlternativesCorrectKeyRationaleAnchorReviewed": true,
+        "sources": [
+          "Gluconate2.1 and independently checked arithmetic"
+        ]
+      },
+      "calcium-phosphorus-076": {
+        "wholeStemAllAlternativesCorrectKeyRationaleAnchorReviewed": true,
+        "sources": [
+          "Gluconate2.1 and independently checked arithmetic"
+        ]
+      },
+      "calcium-phosphorus-077": {
+        "wholeStemAllAlternativesCorrectKeyRationaleAnchorReviewed": true,
+        "sources": [
+          "Gluconate2.1 and independently checked arithmetic"
+        ]
+      },
+      "calcium-phosphorus-078": {
+        "wholeStemAllAlternativesCorrectKeyRationaleAnchorReviewed": true,
+        "sources": [
+          "Gluconate2.1 and independently checked arithmetic"
+        ]
+      },
+      "calcium-phosphorus-079": {
+        "wholeStemAllAlternativesCorrectKeyRationaleAnchorReviewed": true,
+        "sources": [
+          "Gluconate2.1 and independently checked arithmetic"
+        ]
+      },
+      "calcium-phosphorus-093": {
+        "wholeStemAllAlternativesCorrectKeyRationaleAnchorReviewed": true,
+        "sources": [
+          "Society causes/severe"
+        ]
+      },
+      "calcium-phosphorus-101": {
+        "wholeStemAllAlternativesCorrectKeyRationaleAnchorReviewed": true,
+        "sources": [
+          "Prolia5.1",
+          "Society severe"
+        ]
+      },
+      "calcium-phosphorus-108": {
+        "wholeStemAllAlternativesCorrectKeyRationaleAnchorReviewed": true,
+        "sources": [
+          "Society causes",
+          "CurrentYorvipath12.1"
+        ]
+      },
+      "calcium-phosphorus-iv-product-content-reconciliation": {
+        "wholeStemAllAlternativesCorrectKeyRationaleAnchorReviewed": true,
+        "sources": [
+          "Gluconate2.1",
+          "Chloride3/2.1"
+        ]
+      },
+      "calcium-phosphorus-neonatal-ceftriaxone-compatibility": {
+        "wholeStemAllAlternativesCorrectKeyRationaleAnchorReviewed": true,
+        "sources": [
+          "Gluconate2.5"
+        ]
+      }
+    },
+    "sourceImagesActuallyViewed": [
+      "society-hypocalcemia-sec2.png",
+      "society-hypocalcemia-sec3.png",
+      "society-hypocalcemia-sec4.png",
+      "society-hypocalcemia-sec7.png",
+      "society-hypocalcemia-sec8.png",
+      "gluconate-1.png",
+      "gluconate-2-1.png",
+      "gluconate-2-3.png",
+      "gluconate-2-4.png",
+      "gluconate-2-5.png",
+      "gluconate-5-1.png",
+      "gluconate-5-3.png",
+      "gluconate-5-4.png",
+      "chloride-2-1.png",
+      "chloride-5-2.png",
+      "chloride-5-3.png",
+      "palopegteriparatide-current-1.png",
+      "palopegteriparatide-current-2-1.png",
+      "palopegteriparatide-current-5-3.png",
+      "palopegteriparatide-current-5-4.png",
+      "palopegteriparatide-current-12-1.png",
+      "prolia-5-1.png",
+      "society-hypocalcemia-sec6.png",
+      "chloride-3.png",
+      "chloride-5-4.png",
+      "chloride-11.png"
+    ],
+    "privateBookPdf168Printed160ActuallyViewed": true,
+    "sourceLimitations": [
+      "Chloride description chemical image did not load in saved HTML; no structure claim adopted, concentration independently verified from complete section3.",
+      "Historical2025 FDA Yorvipath PDF not used for current section numbering or treated as completely rendered. Current October2025 PI HTML reviewed.",
+      "Society2016 adult emergency scope; no universal dose protocol or neonatal treatment dose adopted.",
+      "Existing Xgeva reference does not establish Prolia-specific recurrence duration; added directly reviewed Prolia5.1 label.",
+      "Chronic hypoparathyroidism, urinary-calcium/thiazide claims and retained magnesium-PTH mechanism remain pending; no whole-lesson closure."
+    ],
+    "calculations": {
+      "status": "passed",
+      "tenContentCalculations": [
+        {
+          "id": "calcium-phosphorus-070",
+          "mL": 5,
+          "elementalMg": "46.5",
+          "allAlternativesIndependentlyChecked": true
+        },
+        {
+          "id": "calcium-phosphorus-071",
+          "mL": 10,
+          "elementalMg": "93.0",
+          "allAlternativesIndependentlyChecked": true
+        },
+        {
+          "id": "calcium-phosphorus-072",
+          "mL": 15,
+          "elementalMg": "139.5",
+          "allAlternativesIndependentlyChecked": true
+        },
+        {
+          "id": "calcium-phosphorus-073",
+          "mL": 20,
+          "elementalMg": "186.0",
+          "allAlternativesIndependentlyChecked": true
+        },
+        {
+          "id": "calcium-phosphorus-074",
+          "mL": 25,
+          "elementalMg": "232.5",
+          "allAlternativesIndependentlyChecked": true
+        },
+        {
+          "id": "calcium-phosphorus-075",
+          "mL": 30,
+          "elementalMg": "279.0",
+          "allAlternativesIndependentlyChecked": true
+        },
+        {
+          "id": "calcium-phosphorus-076",
+          "mL": 35,
+          "elementalMg": "325.5",
+          "allAlternativesIndependentlyChecked": true
+        },
+        {
+          "id": "calcium-phosphorus-077",
+          "mL": 40,
+          "elementalMg": "372.0",
+          "allAlternativesIndependentlyChecked": true
+        },
+        {
+          "id": "calcium-phosphorus-078",
+          "mL": 50,
+          "elementalMg": "465.0",
+          "allAlternativesIndependentlyChecked": true
+        },
+        {
+          "id": "calcium-phosphorus-079",
+          "mL": 100,
+          "elementalMg": "930.0",
+          "allAlternativesIndependentlyChecked": true
+        }
+      ],
+      "bookExample33": {
+        "mEq": 8,
+        "mEqPerMl": "0.465",
+        "mL": "17.20430107526881720430107527",
+        "roundedMl": 17,
+        "notNewlyCountedQuestion": true
+      }
+    },
+    "embeddedCheck": "Complete stem, four choices, key, rationale and anchor supported by Society severe hypocalcemia guidance and gluconate label.",
+    "figure": "All five sequence steps and caption supported by approved Society investigations, severe treatment, cause correction and hazards; no new dosing figure."
+  },
+  "cumulativeReview": {
+    "final": {
+      "id": "cumulative-calcium-phosphorus-homeostasis-calcium-phosphorus-026",
+      "question": "What should accompany urgent IV calcium administration?",
+      "choices": [
+        "ECG, symptoms, calcium, IV site, and cause monitoring",
+        "No monitoring after the first dose",
+        "LDL testing only",
+        "Routine discharge before reassessment"
+      ],
+      "answer": 0,
+      "rationale": "Urgent IV calcium requires assessment of clinical response, ECG risk, calcium, IV-site injury, and the underlying cause. The label also requires vitals and calcium monitoring during administration. A first dose does not end reassessment; LDL testing alone and discharge before response assessment miss acute risks.",
+      "reviewHref": "/learn/pharmacy/modules/calcium-phosphorus-homeostasis",
+      "module": "Calcium and Phosphorus Homeostasis"
+    },
+    "wholeObjectReviewed": true,
+    "allFiveSelectionIdsPreserved": true,
+    "other1179WholeObjectsUnchanged": true
+  },
+  "validation": {
+    "productionBuild": {
+      "status": "passed",
+      "exitCode": 0,
+      "pages": 567,
+      "isolatedBaseCommit": "c87487571fa007d0a7bbae4c3d9fde336c769c12",
+      "earlierCorrection": "The structure script returned exit0 with two prohibited en-dash hardErrors. Both corrected, full structure report asserted clean, candidate rebuilt before browser verification. An earlier insertion would shift cumulative060; caught and corrected before browser or release."
+    },
+    "structure": {
+      "modules": 1,
+      "questions": 106,
+      "hardErrors": [],
+      "sourceGaps": [],
+      "sizeAdvisories": [],
+      "thinLessons": [],
+      "weakestModules": [
+        {
+          "module": "calcium-phosphorus-homeostasis",
+          "lessons": 6,
+          "questions": 106,
+          "minimumLessonCoverage": 8
+        }
+      ]
+    },
+    "calculations": {
+      "status": "passed",
+      "tenContentCalculations": [
+        {
+          "id": "calcium-phosphorus-070",
+          "mL": 5,
+          "elementalMg": "46.5",
+          "allAlternativesIndependentlyChecked": true
+        },
+        {
+          "id": "calcium-phosphorus-071",
+          "mL": 10,
+          "elementalMg": "93.0",
+          "allAlternativesIndependentlyChecked": true
+        },
+        {
+          "id": "calcium-phosphorus-072",
+          "mL": 15,
+          "elementalMg": "139.5",
+          "allAlternativesIndependentlyChecked": true
+        },
+        {
+          "id": "calcium-phosphorus-073",
+          "mL": 20,
+          "elementalMg": "186.0",
+          "allAlternativesIndependentlyChecked": true
+        },
+        {
+          "id": "calcium-phosphorus-074",
+          "mL": 25,
+          "elementalMg": "232.5",
+          "allAlternativesIndependentlyChecked": true
+        },
+        {
+          "id": "calcium-phosphorus-075",
+          "mL": 30,
+          "elementalMg": "279.0",
+          "allAlternativesIndependentlyChecked": true
+        },
+        {
+          "id": "calcium-phosphorus-076",
+          "mL": 35,
+          "elementalMg": "325.5",
+          "allAlternativesIndependentlyChecked": true
+        },
+        {
+          "id": "calcium-phosphorus-077",
+          "mL": 40,
+          "elementalMg": "372.0",
+          "allAlternativesIndependentlyChecked": true
+        },
+        {
+          "id": "calcium-phosphorus-078",
+          "mL": 50,
+          "elementalMg": "465.0",
+          "allAlternativesIndependentlyChecked": true
+        },
+        {
+          "id": "calcium-phosphorus-079",
+          "mL": 100,
+          "elementalMg": "930.0",
+          "allAlternativesIndependentlyChecked": true
+        }
+      ],
+      "bookExample33": {
+        "mEq": 8,
+        "mEqPerMl": "0.465",
+        "mL": "17.20430107526881720430107527",
+        "roundedMl": 17,
+        "notNewlyCountedQuestion": true
+      }
+    },
+    "objectPreservation": {
+      "status": "passed",
+      "bankBefore": 104,
+      "bankAfter": 106,
+      "all104OriginalIdsKeysCorrectTextsAnchorsRelativeOrderPreserved": true,
+      "other82WholeQuestionObjectsUnchanged": true,
+      "threeOldBodiesReconciledTwoAdded": true,
+      "untouchedChronicAndMagnesiumMechanismClaimsRetainedPending": true,
+      "otherLessonMetadataChecksAndFiguresUnchanged": true,
+      "onlyThreeLabelReferencesAdded": true,
+      "fiveOriginalDerivedCumulativeIdsPreserved": true,
+      "cumulative026Reconciled": true,
+      "other1179WholeCumulativeObjectsUnchanged": true,
+      "all1180CumulativeIdsKeysAnchorsOrderPreserved": true,
+      "allOtherModuleWholeObjectsUnchanged": true
+    },
+    "browser": {
+      "status": "passed",
+      "results": [
+        {
+          "width": 1440,
+          "module": "calcium-phosphorus-homeostasis",
+          "bodies": 29,
+          "exactMetadata": true,
+          "checkResults": [
+            {
+              "slug": "hypocalcemia",
+              "wrong": true,
+              "feedbackAndAnchorVerified": true
+            },
+            {
+              "slug": "hypocalcemia",
+              "wrong": false,
+              "feedbackAndAnchorVerified": true
+            }
+          ],
+          "references": 19,
+          "wholeLessonClinicalVerification": false,
+          "bookSupportedQuestionScopeVerified": true,
+          "attempts": [
+            {
+              "target": "calcium-phosphorus-018",
+              "seed": 1,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-089",
+                "calcium-phosphorus-076",
+                "calcium-phosphorus-018",
+                "calcium-phosphorus-047",
+                "calcium-phosphorus-096",
+                "calcium-phosphorus-065",
+                "calcium-phosphorus-068",
+                "calcium-phosphorus-008",
+                "calcium-phosphorus-041",
+                "calcium-phosphorus-004"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-018",
+              "seed": 1,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-089",
+                "calcium-phosphorus-076",
+                "calcium-phosphorus-018",
+                "calcium-phosphorus-047",
+                "calcium-phosphorus-096",
+                "calcium-phosphorus-065",
+                "calcium-phosphorus-068",
+                "calcium-phosphorus-008",
+                "calcium-phosphorus-041",
+                "calcium-phosphorus-004"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-019",
+              "seed": 2,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-004",
+                "calcium-phosphorus-071",
+                "calcium-phosphorus-014",
+                "calcium-phosphorus-019",
+                "calcium-phosphorus-009",
+                "calcium-phosphorus-070",
+                "calcium-phosphorus-067",
+                "calcium-phosphorus-035",
+                "calcium-phosphorus-107",
+                "calcium-phosphorus-082"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-019",
+              "seed": 2,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-004",
+                "calcium-phosphorus-071",
+                "calcium-phosphorus-014",
+                "calcium-phosphorus-019",
+                "calcium-phosphorus-009",
+                "calcium-phosphorus-070",
+                "calcium-phosphorus-067",
+                "calcium-phosphorus-035",
+                "calcium-phosphorus-107",
+                "calcium-phosphorus-082"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-020",
+              "seed": 4,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-020",
+                "calcium-phosphorus-086",
+                "calcium-phosphorus-012",
+                "calcium-phosphorus-069",
+                "calcium-phosphorus-015",
+                "calcium-phosphorus-026",
+                "calcium-phosphorus-099",
+                "calcium-phosphorus-077",
+                "calcium-phosphorus-iron-repeat-monitoring",
+                "calcium-phosphorus-029"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-020",
+              "seed": 4,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-020",
+                "calcium-phosphorus-086",
+                "calcium-phosphorus-012",
+                "calcium-phosphorus-069",
+                "calcium-phosphorus-015",
+                "calcium-phosphorus-026",
+                "calcium-phosphorus-099",
+                "calcium-phosphorus-077",
+                "calcium-phosphorus-iron-repeat-monitoring",
+                "calcium-phosphorus-029"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-021",
+              "seed": 9,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-024",
+                "calcium-phosphorus-003",
+                "calcium-phosphorus-016",
+                "calcium-phosphorus-079",
+                "calcium-phosphorus-013",
+                "calcium-phosphorus-021",
+                "calcium-phosphorus-025",
+                "calcium-phosphorus-015",
+                "calcium-phosphorus-082",
+                "calcium-phosphorus-098"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-021",
+              "seed": 9,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-024",
+                "calcium-phosphorus-003",
+                "calcium-phosphorus-016",
+                "calcium-phosphorus-079",
+                "calcium-phosphorus-013",
+                "calcium-phosphorus-021",
+                "calcium-phosphorus-025",
+                "calcium-phosphorus-015",
+                "calcium-phosphorus-082",
+                "calcium-phosphorus-098"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-022",
+              "seed": 13,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-109",
+                "calcium-phosphorus-083",
+                "calcium-phosphorus-017",
+                "calcium-phosphorus-087",
+                "calcium-phosphorus-037",
+                "calcium-phosphorus-084",
+                "calcium-phosphorus-022",
+                "calcium-phosphorus-033",
+                "calcium-phosphorus-074",
+                "calcium-phosphorus-iv-product-content-reconciliation"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-022",
+              "seed": 13,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-109",
+                "calcium-phosphorus-083",
+                "calcium-phosphorus-017",
+                "calcium-phosphorus-087",
+                "calcium-phosphorus-037",
+                "calcium-phosphorus-084",
+                "calcium-phosphorus-022",
+                "calcium-phosphorus-033",
+                "calcium-phosphorus-074",
+                "calcium-phosphorus-iv-product-content-reconciliation"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-024",
+              "seed": 9,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-024",
+                "calcium-phosphorus-003",
+                "calcium-phosphorus-016",
+                "calcium-phosphorus-079",
+                "calcium-phosphorus-013",
+                "calcium-phosphorus-021",
+                "calcium-phosphorus-025",
+                "calcium-phosphorus-015",
+                "calcium-phosphorus-082",
+                "calcium-phosphorus-098"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-024",
+              "seed": 9,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-024",
+                "calcium-phosphorus-003",
+                "calcium-phosphorus-016",
+                "calcium-phosphorus-079",
+                "calcium-phosphorus-013",
+                "calcium-phosphorus-021",
+                "calcium-phosphorus-025",
+                "calcium-phosphorus-015",
+                "calcium-phosphorus-082",
+                "calcium-phosphorus-098"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-025",
+              "seed": 5,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-098",
+                "calcium-phosphorus-047",
+                "calcium-phosphorus-086",
+                "calcium-phosphorus-094",
+                "calcium-phosphorus-087",
+                "calcium-phosphorus-025",
+                "calcium-phosphorus-085",
+                "calcium-phosphorus-iv-product-content-reconciliation",
+                "calcium-phosphorus-012",
+                "calcium-phosphorus-iron-persistent-warning"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-025",
+              "seed": 5,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-098",
+                "calcium-phosphorus-047",
+                "calcium-phosphorus-086",
+                "calcium-phosphorus-094",
+                "calcium-phosphorus-087",
+                "calcium-phosphorus-025",
+                "calcium-phosphorus-085",
+                "calcium-phosphorus-iv-product-content-reconciliation",
+                "calcium-phosphorus-012",
+                "calcium-phosphorus-iron-persistent-warning"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-026",
+              "seed": 4,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-020",
+                "calcium-phosphorus-086",
+                "calcium-phosphorus-012",
+                "calcium-phosphorus-069",
+                "calcium-phosphorus-015",
+                "calcium-phosphorus-026",
+                "calcium-phosphorus-099",
+                "calcium-phosphorus-077",
+                "calcium-phosphorus-iron-repeat-monitoring",
+                "calcium-phosphorus-029"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-026",
+              "seed": 4,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-020",
+                "calcium-phosphorus-086",
+                "calcium-phosphorus-012",
+                "calcium-phosphorus-069",
+                "calcium-phosphorus-015",
+                "calcium-phosphorus-026",
+                "calcium-phosphorus-099",
+                "calcium-phosphorus-077",
+                "calcium-phosphorus-iron-repeat-monitoring",
+                "calcium-phosphorus-029"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-042",
+              "seed": 17,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-094",
+                "calcium-phosphorus-087",
+                "calcium-phosphorus-108",
+                "calcium-phosphorus-032",
+                "calcium-phosphorus-006",
+                "calcium-phosphorus-101",
+                "calcium-phosphorus-081",
+                "calcium-phosphorus-042",
+                "calcium-phosphorus-105",
+                "calcium-phosphorus-044"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-042",
+              "seed": 17,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-094",
+                "calcium-phosphorus-087",
+                "calcium-phosphorus-108",
+                "calcium-phosphorus-032",
+                "calcium-phosphorus-006",
+                "calcium-phosphorus-101",
+                "calcium-phosphorus-081",
+                "calcium-phosphorus-042",
+                "calcium-phosphorus-105",
+                "calcium-phosphorus-044"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-iv-product-content-reconciliation",
+              "seed": 5,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-098",
+                "calcium-phosphorus-047",
+                "calcium-phosphorus-086",
+                "calcium-phosphorus-094",
+                "calcium-phosphorus-087",
+                "calcium-phosphorus-025",
+                "calcium-phosphorus-085",
+                "calcium-phosphorus-iv-product-content-reconciliation",
+                "calcium-phosphorus-012",
+                "calcium-phosphorus-iron-persistent-warning"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-iv-product-content-reconciliation",
+              "seed": 5,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-098",
+                "calcium-phosphorus-047",
+                "calcium-phosphorus-086",
+                "calcium-phosphorus-094",
+                "calcium-phosphorus-087",
+                "calcium-phosphorus-025",
+                "calcium-phosphorus-085",
+                "calcium-phosphorus-iv-product-content-reconciliation",
+                "calcium-phosphorus-012",
+                "calcium-phosphorus-iron-persistent-warning"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-070",
+              "seed": 2,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-004",
+                "calcium-phosphorus-071",
+                "calcium-phosphorus-014",
+                "calcium-phosphorus-019",
+                "calcium-phosphorus-009",
+                "calcium-phosphorus-070",
+                "calcium-phosphorus-067",
+                "calcium-phosphorus-035",
+                "calcium-phosphorus-107",
+                "calcium-phosphorus-082"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-070",
+              "seed": 2,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-004",
+                "calcium-phosphorus-071",
+                "calcium-phosphorus-014",
+                "calcium-phosphorus-019",
+                "calcium-phosphorus-009",
+                "calcium-phosphorus-070",
+                "calcium-phosphorus-067",
+                "calcium-phosphorus-035",
+                "calcium-phosphorus-107",
+                "calcium-phosphorus-082"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-071",
+              "seed": 2,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-004",
+                "calcium-phosphorus-071",
+                "calcium-phosphorus-014",
+                "calcium-phosphorus-019",
+                "calcium-phosphorus-009",
+                "calcium-phosphorus-070",
+                "calcium-phosphorus-067",
+                "calcium-phosphorus-035",
+                "calcium-phosphorus-107",
+                "calcium-phosphorus-082"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-071",
+              "seed": 2,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-004",
+                "calcium-phosphorus-071",
+                "calcium-phosphorus-014",
+                "calcium-phosphorus-019",
+                "calcium-phosphorus-009",
+                "calcium-phosphorus-070",
+                "calcium-phosphorus-067",
+                "calcium-phosphorus-035",
+                "calcium-phosphorus-107",
+                "calcium-phosphorus-082"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-072",
+              "seed": 12,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-018",
+                "calcium-phosphorus-085",
+                "calcium-phosphorus-066",
+                "calcium-phosphorus-032",
+                "calcium-phosphorus-084",
+                "calcium-phosphorus-045",
+                "calcium-phosphorus-089",
+                "calcium-phosphorus-043",
+                "calcium-phosphorus-072",
+                "calcium-phosphorus-040"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-072",
+              "seed": 12,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-018",
+                "calcium-phosphorus-085",
+                "calcium-phosphorus-066",
+                "calcium-phosphorus-032",
+                "calcium-phosphorus-084",
+                "calcium-phosphorus-045",
+                "calcium-phosphorus-089",
+                "calcium-phosphorus-043",
+                "calcium-phosphorus-072",
+                "calcium-phosphorus-040"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-073",
+              "seed": 10,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-014",
+                "calcium-phosphorus-060",
+                "calcium-phosphorus-011",
+                "calcium-phosphorus-039",
+                "calcium-phosphorus-neonatal-ceftriaxone-compatibility",
+                "calcium-phosphorus-109",
+                "calcium-phosphorus-073",
+                "calcium-phosphorus-012",
+                "calcium-phosphorus-077",
+                "calcium-phosphorus-088"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-073",
+              "seed": 10,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-014",
+                "calcium-phosphorus-060",
+                "calcium-phosphorus-011",
+                "calcium-phosphorus-039",
+                "calcium-phosphorus-neonatal-ceftriaxone-compatibility",
+                "calcium-phosphorus-109",
+                "calcium-phosphorus-073",
+                "calcium-phosphorus-012",
+                "calcium-phosphorus-077",
+                "calcium-phosphorus-088"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-074",
+              "seed": 13,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-109",
+                "calcium-phosphorus-083",
+                "calcium-phosphorus-017",
+                "calcium-phosphorus-087",
+                "calcium-phosphorus-037",
+                "calcium-phosphorus-084",
+                "calcium-phosphorus-022",
+                "calcium-phosphorus-033",
+                "calcium-phosphorus-074",
+                "calcium-phosphorus-iv-product-content-reconciliation"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-074",
+              "seed": 13,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-109",
+                "calcium-phosphorus-083",
+                "calcium-phosphorus-017",
+                "calcium-phosphorus-087",
+                "calcium-phosphorus-037",
+                "calcium-phosphorus-084",
+                "calcium-phosphorus-022",
+                "calcium-phosphorus-033",
+                "calcium-phosphorus-074",
+                "calcium-phosphorus-iv-product-content-reconciliation"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-075",
+              "seed": 19,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-070",
+                "calcium-phosphorus-090",
+                "calcium-phosphorus-iv-product-content-reconciliation",
+                "calcium-phosphorus-036",
+                "calcium-phosphorus-066",
+                "calcium-phosphorus-003",
+                "calcium-phosphorus-023",
+                "calcium-phosphorus-075",
+                "calcium-phosphorus-041",
+                "calcium-phosphorus-103"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-075",
+              "seed": 19,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-070",
+                "calcium-phosphorus-090",
+                "calcium-phosphorus-iv-product-content-reconciliation",
+                "calcium-phosphorus-036",
+                "calcium-phosphorus-066",
+                "calcium-phosphorus-003",
+                "calcium-phosphorus-023",
+                "calcium-phosphorus-075",
+                "calcium-phosphorus-041",
+                "calcium-phosphorus-103"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-076",
+              "seed": 1,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-089",
+                "calcium-phosphorus-076",
+                "calcium-phosphorus-018",
+                "calcium-phosphorus-047",
+                "calcium-phosphorus-096",
+                "calcium-phosphorus-065",
+                "calcium-phosphorus-068",
+                "calcium-phosphorus-008",
+                "calcium-phosphorus-041",
+                "calcium-phosphorus-004"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-076",
+              "seed": 1,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-089",
+                "calcium-phosphorus-076",
+                "calcium-phosphorus-018",
+                "calcium-phosphorus-047",
+                "calcium-phosphorus-096",
+                "calcium-phosphorus-065",
+                "calcium-phosphorus-068",
+                "calcium-phosphorus-008",
+                "calcium-phosphorus-041",
+                "calcium-phosphorus-004"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-077",
+              "seed": 4,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-020",
+                "calcium-phosphorus-086",
+                "calcium-phosphorus-012",
+                "calcium-phosphorus-069",
+                "calcium-phosphorus-015",
+                "calcium-phosphorus-026",
+                "calcium-phosphorus-099",
+                "calcium-phosphorus-077",
+                "calcium-phosphorus-iron-repeat-monitoring",
+                "calcium-phosphorus-029"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-077",
+              "seed": 4,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-020",
+                "calcium-phosphorus-086",
+                "calcium-phosphorus-012",
+                "calcium-phosphorus-069",
+                "calcium-phosphorus-015",
+                "calcium-phosphorus-026",
+                "calcium-phosphorus-099",
+                "calcium-phosphorus-077",
+                "calcium-phosphorus-iron-repeat-monitoring",
+                "calcium-phosphorus-029"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-078",
+              "seed": 3,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-060",
+                "calcium-phosphorus-049",
+                "calcium-phosphorus-023",
+                "calcium-phosphorus-063",
+                "calcium-phosphorus-012",
+                "calcium-phosphorus-090",
+                "calcium-phosphorus-084",
+                "calcium-phosphorus-002",
+                "calcium-phosphorus-102",
+                "calcium-phosphorus-078"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-078",
+              "seed": 3,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-060",
+                "calcium-phosphorus-049",
+                "calcium-phosphorus-023",
+                "calcium-phosphorus-063",
+                "calcium-phosphorus-012",
+                "calcium-phosphorus-090",
+                "calcium-phosphorus-084",
+                "calcium-phosphorus-002",
+                "calcium-phosphorus-102",
+                "calcium-phosphorus-078"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-neonatal-ceftriaxone-compatibility",
+              "seed": 10,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-014",
+                "calcium-phosphorus-060",
+                "calcium-phosphorus-011",
+                "calcium-phosphorus-039",
+                "calcium-phosphorus-neonatal-ceftriaxone-compatibility",
+                "calcium-phosphorus-109",
+                "calcium-phosphorus-073",
+                "calcium-phosphorus-012",
+                "calcium-phosphorus-077",
+                "calcium-phosphorus-088"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-neonatal-ceftriaxone-compatibility",
+              "seed": 10,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-014",
+                "calcium-phosphorus-060",
+                "calcium-phosphorus-011",
+                "calcium-phosphorus-039",
+                "calcium-phosphorus-neonatal-ceftriaxone-compatibility",
+                "calcium-phosphorus-109",
+                "calcium-phosphorus-073",
+                "calcium-phosphorus-012",
+                "calcium-phosphorus-077",
+                "calcium-phosphorus-088"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-079",
+              "seed": 9,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-024",
+                "calcium-phosphorus-003",
+                "calcium-phosphorus-016",
+                "calcium-phosphorus-079",
+                "calcium-phosphorus-013",
+                "calcium-phosphorus-021",
+                "calcium-phosphorus-025",
+                "calcium-phosphorus-015",
+                "calcium-phosphorus-082",
+                "calcium-phosphorus-098"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-079",
+              "seed": 9,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-024",
+                "calcium-phosphorus-003",
+                "calcium-phosphorus-016",
+                "calcium-phosphorus-079",
+                "calcium-phosphorus-013",
+                "calcium-phosphorus-021",
+                "calcium-phosphorus-025",
+                "calcium-phosphorus-015",
+                "calcium-phosphorus-082",
+                "calcium-phosphorus-098"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-093",
+              "seed": 7,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-045",
+                "calcium-phosphorus-085",
+                "calcium-phosphorus-089",
+                "calcium-phosphorus-071",
+                "calcium-phosphorus-012",
+                "calcium-phosphorus-093",
+                "calcium-phosphorus-061",
+                "calcium-phosphorus-060",
+                "calcium-phosphorus-038",
+                "calcium-phosphorus-064"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-093",
+              "seed": 7,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-045",
+                "calcium-phosphorus-085",
+                "calcium-phosphorus-089",
+                "calcium-phosphorus-071",
+                "calcium-phosphorus-012",
+                "calcium-phosphorus-093",
+                "calcium-phosphorus-061",
+                "calcium-phosphorus-060",
+                "calcium-phosphorus-038",
+                "calcium-phosphorus-064"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-101",
+              "seed": 16,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-064",
+                "calcium-phosphorus-099",
+                "calcium-phosphorus-095",
+                "calcium-phosphorus-046",
+                "calcium-phosphorus-014",
+                "calcium-phosphorus-101",
+                "calcium-phosphorus-062",
+                "calcium-phosphorus-041",
+                "calcium-phosphorus-022",
+                "calcium-phosphorus-iron-repeat-monitoring"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-101",
+              "seed": 16,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-064",
+                "calcium-phosphorus-099",
+                "calcium-phosphorus-095",
+                "calcium-phosphorus-046",
+                "calcium-phosphorus-014",
+                "calcium-phosphorus-101",
+                "calcium-phosphorus-062",
+                "calcium-phosphorus-041",
+                "calcium-phosphorus-022",
+                "calcium-phosphorus-iron-repeat-monitoring"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-108",
+              "seed": 17,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-094",
+                "calcium-phosphorus-087",
+                "calcium-phosphorus-108",
+                "calcium-phosphorus-032",
+                "calcium-phosphorus-006",
+                "calcium-phosphorus-101",
+                "calcium-phosphorus-081",
+                "calcium-phosphorus-042",
+                "calcium-phosphorus-105",
+                "calcium-phosphorus-044"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-108",
+              "seed": 17,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-094",
+                "calcium-phosphorus-087",
+                "calcium-phosphorus-108",
+                "calcium-phosphorus-032",
+                "calcium-phosphorus-006",
+                "calcium-phosphorus-101",
+                "calcium-phosphorus-081",
+                "calcium-phosphorus-042",
+                "calcium-phosphorus-105",
+                "calcium-phosphorus-044"
+              ]
+            }
+          ],
+          "noHorizontalOverflow": true,
+          "unauthenticated": true
+        },
+        {
+          "width": 390,
+          "module": "calcium-phosphorus-homeostasis",
+          "bodies": 29,
+          "exactMetadata": true,
+          "checkResults": [
+            {
+              "slug": "hypocalcemia",
+              "wrong": true,
+              "feedbackAndAnchorVerified": true
+            },
+            {
+              "slug": "hypocalcemia",
+              "wrong": false,
+              "feedbackAndAnchorVerified": true
+            }
+          ],
+          "references": 19,
+          "wholeLessonClinicalVerification": false,
+          "bookSupportedQuestionScopeVerified": true,
+          "attempts": [
+            {
+              "target": "calcium-phosphorus-018",
+              "seed": 1,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-089",
+                "calcium-phosphorus-076",
+                "calcium-phosphorus-018",
+                "calcium-phosphorus-047",
+                "calcium-phosphorus-096",
+                "calcium-phosphorus-065",
+                "calcium-phosphorus-068",
+                "calcium-phosphorus-008",
+                "calcium-phosphorus-041",
+                "calcium-phosphorus-004"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-018",
+              "seed": 1,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-089",
+                "calcium-phosphorus-076",
+                "calcium-phosphorus-018",
+                "calcium-phosphorus-047",
+                "calcium-phosphorus-096",
+                "calcium-phosphorus-065",
+                "calcium-phosphorus-068",
+                "calcium-phosphorus-008",
+                "calcium-phosphorus-041",
+                "calcium-phosphorus-004"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-019",
+              "seed": 2,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-004",
+                "calcium-phosphorus-071",
+                "calcium-phosphorus-014",
+                "calcium-phosphorus-019",
+                "calcium-phosphorus-009",
+                "calcium-phosphorus-070",
+                "calcium-phosphorus-067",
+                "calcium-phosphorus-035",
+                "calcium-phosphorus-107",
+                "calcium-phosphorus-082"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-019",
+              "seed": 2,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-004",
+                "calcium-phosphorus-071",
+                "calcium-phosphorus-014",
+                "calcium-phosphorus-019",
+                "calcium-phosphorus-009",
+                "calcium-phosphorus-070",
+                "calcium-phosphorus-067",
+                "calcium-phosphorus-035",
+                "calcium-phosphorus-107",
+                "calcium-phosphorus-082"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-020",
+              "seed": 4,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-020",
+                "calcium-phosphorus-086",
+                "calcium-phosphorus-012",
+                "calcium-phosphorus-069",
+                "calcium-phosphorus-015",
+                "calcium-phosphorus-026",
+                "calcium-phosphorus-099",
+                "calcium-phosphorus-077",
+                "calcium-phosphorus-iron-repeat-monitoring",
+                "calcium-phosphorus-029"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-020",
+              "seed": 4,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-020",
+                "calcium-phosphorus-086",
+                "calcium-phosphorus-012",
+                "calcium-phosphorus-069",
+                "calcium-phosphorus-015",
+                "calcium-phosphorus-026",
+                "calcium-phosphorus-099",
+                "calcium-phosphorus-077",
+                "calcium-phosphorus-iron-repeat-monitoring",
+                "calcium-phosphorus-029"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-021",
+              "seed": 9,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-024",
+                "calcium-phosphorus-003",
+                "calcium-phosphorus-016",
+                "calcium-phosphorus-079",
+                "calcium-phosphorus-013",
+                "calcium-phosphorus-021",
+                "calcium-phosphorus-025",
+                "calcium-phosphorus-015",
+                "calcium-phosphorus-082",
+                "calcium-phosphorus-098"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-021",
+              "seed": 9,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-024",
+                "calcium-phosphorus-003",
+                "calcium-phosphorus-016",
+                "calcium-phosphorus-079",
+                "calcium-phosphorus-013",
+                "calcium-phosphorus-021",
+                "calcium-phosphorus-025",
+                "calcium-phosphorus-015",
+                "calcium-phosphorus-082",
+                "calcium-phosphorus-098"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-022",
+              "seed": 13,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-109",
+                "calcium-phosphorus-083",
+                "calcium-phosphorus-017",
+                "calcium-phosphorus-087",
+                "calcium-phosphorus-037",
+                "calcium-phosphorus-084",
+                "calcium-phosphorus-022",
+                "calcium-phosphorus-033",
+                "calcium-phosphorus-074",
+                "calcium-phosphorus-iv-product-content-reconciliation"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-022",
+              "seed": 13,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-109",
+                "calcium-phosphorus-083",
+                "calcium-phosphorus-017",
+                "calcium-phosphorus-087",
+                "calcium-phosphorus-037",
+                "calcium-phosphorus-084",
+                "calcium-phosphorus-022",
+                "calcium-phosphorus-033",
+                "calcium-phosphorus-074",
+                "calcium-phosphorus-iv-product-content-reconciliation"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-024",
+              "seed": 9,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-024",
+                "calcium-phosphorus-003",
+                "calcium-phosphorus-016",
+                "calcium-phosphorus-079",
+                "calcium-phosphorus-013",
+                "calcium-phosphorus-021",
+                "calcium-phosphorus-025",
+                "calcium-phosphorus-015",
+                "calcium-phosphorus-082",
+                "calcium-phosphorus-098"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-024",
+              "seed": 9,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-024",
+                "calcium-phosphorus-003",
+                "calcium-phosphorus-016",
+                "calcium-phosphorus-079",
+                "calcium-phosphorus-013",
+                "calcium-phosphorus-021",
+                "calcium-phosphorus-025",
+                "calcium-phosphorus-015",
+                "calcium-phosphorus-082",
+                "calcium-phosphorus-098"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-025",
+              "seed": 5,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-098",
+                "calcium-phosphorus-047",
+                "calcium-phosphorus-086",
+                "calcium-phosphorus-094",
+                "calcium-phosphorus-087",
+                "calcium-phosphorus-025",
+                "calcium-phosphorus-085",
+                "calcium-phosphorus-iv-product-content-reconciliation",
+                "calcium-phosphorus-012",
+                "calcium-phosphorus-iron-persistent-warning"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-025",
+              "seed": 5,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-098",
+                "calcium-phosphorus-047",
+                "calcium-phosphorus-086",
+                "calcium-phosphorus-094",
+                "calcium-phosphorus-087",
+                "calcium-phosphorus-025",
+                "calcium-phosphorus-085",
+                "calcium-phosphorus-iv-product-content-reconciliation",
+                "calcium-phosphorus-012",
+                "calcium-phosphorus-iron-persistent-warning"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-026",
+              "seed": 4,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-020",
+                "calcium-phosphorus-086",
+                "calcium-phosphorus-012",
+                "calcium-phosphorus-069",
+                "calcium-phosphorus-015",
+                "calcium-phosphorus-026",
+                "calcium-phosphorus-099",
+                "calcium-phosphorus-077",
+                "calcium-phosphorus-iron-repeat-monitoring",
+                "calcium-phosphorus-029"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-026",
+              "seed": 4,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-020",
+                "calcium-phosphorus-086",
+                "calcium-phosphorus-012",
+                "calcium-phosphorus-069",
+                "calcium-phosphorus-015",
+                "calcium-phosphorus-026",
+                "calcium-phosphorus-099",
+                "calcium-phosphorus-077",
+                "calcium-phosphorus-iron-repeat-monitoring",
+                "calcium-phosphorus-029"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-042",
+              "seed": 17,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-094",
+                "calcium-phosphorus-087",
+                "calcium-phosphorus-108",
+                "calcium-phosphorus-032",
+                "calcium-phosphorus-006",
+                "calcium-phosphorus-101",
+                "calcium-phosphorus-081",
+                "calcium-phosphorus-042",
+                "calcium-phosphorus-105",
+                "calcium-phosphorus-044"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-042",
+              "seed": 17,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-094",
+                "calcium-phosphorus-087",
+                "calcium-phosphorus-108",
+                "calcium-phosphorus-032",
+                "calcium-phosphorus-006",
+                "calcium-phosphorus-101",
+                "calcium-phosphorus-081",
+                "calcium-phosphorus-042",
+                "calcium-phosphorus-105",
+                "calcium-phosphorus-044"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-iv-product-content-reconciliation",
+              "seed": 5,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-098",
+                "calcium-phosphorus-047",
+                "calcium-phosphorus-086",
+                "calcium-phosphorus-094",
+                "calcium-phosphorus-087",
+                "calcium-phosphorus-025",
+                "calcium-phosphorus-085",
+                "calcium-phosphorus-iv-product-content-reconciliation",
+                "calcium-phosphorus-012",
+                "calcium-phosphorus-iron-persistent-warning"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-iv-product-content-reconciliation",
+              "seed": 5,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-098",
+                "calcium-phosphorus-047",
+                "calcium-phosphorus-086",
+                "calcium-phosphorus-094",
+                "calcium-phosphorus-087",
+                "calcium-phosphorus-025",
+                "calcium-phosphorus-085",
+                "calcium-phosphorus-iv-product-content-reconciliation",
+                "calcium-phosphorus-012",
+                "calcium-phosphorus-iron-persistent-warning"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-070",
+              "seed": 2,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-004",
+                "calcium-phosphorus-071",
+                "calcium-phosphorus-014",
+                "calcium-phosphorus-019",
+                "calcium-phosphorus-009",
+                "calcium-phosphorus-070",
+                "calcium-phosphorus-067",
+                "calcium-phosphorus-035",
+                "calcium-phosphorus-107",
+                "calcium-phosphorus-082"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-070",
+              "seed": 2,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-004",
+                "calcium-phosphorus-071",
+                "calcium-phosphorus-014",
+                "calcium-phosphorus-019",
+                "calcium-phosphorus-009",
+                "calcium-phosphorus-070",
+                "calcium-phosphorus-067",
+                "calcium-phosphorus-035",
+                "calcium-phosphorus-107",
+                "calcium-phosphorus-082"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-071",
+              "seed": 2,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-004",
+                "calcium-phosphorus-071",
+                "calcium-phosphorus-014",
+                "calcium-phosphorus-019",
+                "calcium-phosphorus-009",
+                "calcium-phosphorus-070",
+                "calcium-phosphorus-067",
+                "calcium-phosphorus-035",
+                "calcium-phosphorus-107",
+                "calcium-phosphorus-082"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-071",
+              "seed": 2,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-004",
+                "calcium-phosphorus-071",
+                "calcium-phosphorus-014",
+                "calcium-phosphorus-019",
+                "calcium-phosphorus-009",
+                "calcium-phosphorus-070",
+                "calcium-phosphorus-067",
+                "calcium-phosphorus-035",
+                "calcium-phosphorus-107",
+                "calcium-phosphorus-082"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-072",
+              "seed": 12,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-018",
+                "calcium-phosphorus-085",
+                "calcium-phosphorus-066",
+                "calcium-phosphorus-032",
+                "calcium-phosphorus-084",
+                "calcium-phosphorus-045",
+                "calcium-phosphorus-089",
+                "calcium-phosphorus-043",
+                "calcium-phosphorus-072",
+                "calcium-phosphorus-040"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-072",
+              "seed": 12,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-018",
+                "calcium-phosphorus-085",
+                "calcium-phosphorus-066",
+                "calcium-phosphorus-032",
+                "calcium-phosphorus-084",
+                "calcium-phosphorus-045",
+                "calcium-phosphorus-089",
+                "calcium-phosphorus-043",
+                "calcium-phosphorus-072",
+                "calcium-phosphorus-040"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-073",
+              "seed": 10,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-014",
+                "calcium-phosphorus-060",
+                "calcium-phosphorus-011",
+                "calcium-phosphorus-039",
+                "calcium-phosphorus-neonatal-ceftriaxone-compatibility",
+                "calcium-phosphorus-109",
+                "calcium-phosphorus-073",
+                "calcium-phosphorus-012",
+                "calcium-phosphorus-077",
+                "calcium-phosphorus-088"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-073",
+              "seed": 10,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-014",
+                "calcium-phosphorus-060",
+                "calcium-phosphorus-011",
+                "calcium-phosphorus-039",
+                "calcium-phosphorus-neonatal-ceftriaxone-compatibility",
+                "calcium-phosphorus-109",
+                "calcium-phosphorus-073",
+                "calcium-phosphorus-012",
+                "calcium-phosphorus-077",
+                "calcium-phosphorus-088"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-074",
+              "seed": 13,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-109",
+                "calcium-phosphorus-083",
+                "calcium-phosphorus-017",
+                "calcium-phosphorus-087",
+                "calcium-phosphorus-037",
+                "calcium-phosphorus-084",
+                "calcium-phosphorus-022",
+                "calcium-phosphorus-033",
+                "calcium-phosphorus-074",
+                "calcium-phosphorus-iv-product-content-reconciliation"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-074",
+              "seed": 13,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-109",
+                "calcium-phosphorus-083",
+                "calcium-phosphorus-017",
+                "calcium-phosphorus-087",
+                "calcium-phosphorus-037",
+                "calcium-phosphorus-084",
+                "calcium-phosphorus-022",
+                "calcium-phosphorus-033",
+                "calcium-phosphorus-074",
+                "calcium-phosphorus-iv-product-content-reconciliation"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-075",
+              "seed": 19,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-070",
+                "calcium-phosphorus-090",
+                "calcium-phosphorus-iv-product-content-reconciliation",
+                "calcium-phosphorus-036",
+                "calcium-phosphorus-066",
+                "calcium-phosphorus-003",
+                "calcium-phosphorus-023",
+                "calcium-phosphorus-075",
+                "calcium-phosphorus-041",
+                "calcium-phosphorus-103"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-075",
+              "seed": 19,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-070",
+                "calcium-phosphorus-090",
+                "calcium-phosphorus-iv-product-content-reconciliation",
+                "calcium-phosphorus-036",
+                "calcium-phosphorus-066",
+                "calcium-phosphorus-003",
+                "calcium-phosphorus-023",
+                "calcium-phosphorus-075",
+                "calcium-phosphorus-041",
+                "calcium-phosphorus-103"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-076",
+              "seed": 1,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-089",
+                "calcium-phosphorus-076",
+                "calcium-phosphorus-018",
+                "calcium-phosphorus-047",
+                "calcium-phosphorus-096",
+                "calcium-phosphorus-065",
+                "calcium-phosphorus-068",
+                "calcium-phosphorus-008",
+                "calcium-phosphorus-041",
+                "calcium-phosphorus-004"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-076",
+              "seed": 1,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-089",
+                "calcium-phosphorus-076",
+                "calcium-phosphorus-018",
+                "calcium-phosphorus-047",
+                "calcium-phosphorus-096",
+                "calcium-phosphorus-065",
+                "calcium-phosphorus-068",
+                "calcium-phosphorus-008",
+                "calcium-phosphorus-041",
+                "calcium-phosphorus-004"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-077",
+              "seed": 4,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-020",
+                "calcium-phosphorus-086",
+                "calcium-phosphorus-012",
+                "calcium-phosphorus-069",
+                "calcium-phosphorus-015",
+                "calcium-phosphorus-026",
+                "calcium-phosphorus-099",
+                "calcium-phosphorus-077",
+                "calcium-phosphorus-iron-repeat-monitoring",
+                "calcium-phosphorus-029"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-077",
+              "seed": 4,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-020",
+                "calcium-phosphorus-086",
+                "calcium-phosphorus-012",
+                "calcium-phosphorus-069",
+                "calcium-phosphorus-015",
+                "calcium-phosphorus-026",
+                "calcium-phosphorus-099",
+                "calcium-phosphorus-077",
+                "calcium-phosphorus-iron-repeat-monitoring",
+                "calcium-phosphorus-029"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-078",
+              "seed": 3,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-060",
+                "calcium-phosphorus-049",
+                "calcium-phosphorus-023",
+                "calcium-phosphorus-063",
+                "calcium-phosphorus-012",
+                "calcium-phosphorus-090",
+                "calcium-phosphorus-084",
+                "calcium-phosphorus-002",
+                "calcium-phosphorus-102",
+                "calcium-phosphorus-078"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-078",
+              "seed": 3,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-060",
+                "calcium-phosphorus-049",
+                "calcium-phosphorus-023",
+                "calcium-phosphorus-063",
+                "calcium-phosphorus-012",
+                "calcium-phosphorus-090",
+                "calcium-phosphorus-084",
+                "calcium-phosphorus-002",
+                "calcium-phosphorus-102",
+                "calcium-phosphorus-078"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-neonatal-ceftriaxone-compatibility",
+              "seed": 10,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-014",
+                "calcium-phosphorus-060",
+                "calcium-phosphorus-011",
+                "calcium-phosphorus-039",
+                "calcium-phosphorus-neonatal-ceftriaxone-compatibility",
+                "calcium-phosphorus-109",
+                "calcium-phosphorus-073",
+                "calcium-phosphorus-012",
+                "calcium-phosphorus-077",
+                "calcium-phosphorus-088"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-neonatal-ceftriaxone-compatibility",
+              "seed": 10,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-014",
+                "calcium-phosphorus-060",
+                "calcium-phosphorus-011",
+                "calcium-phosphorus-039",
+                "calcium-phosphorus-neonatal-ceftriaxone-compatibility",
+                "calcium-phosphorus-109",
+                "calcium-phosphorus-073",
+                "calcium-phosphorus-012",
+                "calcium-phosphorus-077",
+                "calcium-phosphorus-088"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-079",
+              "seed": 9,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-024",
+                "calcium-phosphorus-003",
+                "calcium-phosphorus-016",
+                "calcium-phosphorus-079",
+                "calcium-phosphorus-013",
+                "calcium-phosphorus-021",
+                "calcium-phosphorus-025",
+                "calcium-phosphorus-015",
+                "calcium-phosphorus-082",
+                "calcium-phosphorus-098"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-079",
+              "seed": 9,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-024",
+                "calcium-phosphorus-003",
+                "calcium-phosphorus-016",
+                "calcium-phosphorus-079",
+                "calcium-phosphorus-013",
+                "calcium-phosphorus-021",
+                "calcium-phosphorus-025",
+                "calcium-phosphorus-015",
+                "calcium-phosphorus-082",
+                "calcium-phosphorus-098"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-093",
+              "seed": 7,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-045",
+                "calcium-phosphorus-085",
+                "calcium-phosphorus-089",
+                "calcium-phosphorus-071",
+                "calcium-phosphorus-012",
+                "calcium-phosphorus-093",
+                "calcium-phosphorus-061",
+                "calcium-phosphorus-060",
+                "calcium-phosphorus-038",
+                "calcium-phosphorus-064"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-093",
+              "seed": 7,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-045",
+                "calcium-phosphorus-085",
+                "calcium-phosphorus-089",
+                "calcium-phosphorus-071",
+                "calcium-phosphorus-012",
+                "calcium-phosphorus-093",
+                "calcium-phosphorus-061",
+                "calcium-phosphorus-060",
+                "calcium-phosphorus-038",
+                "calcium-phosphorus-064"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-101",
+              "seed": 16,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-064",
+                "calcium-phosphorus-099",
+                "calcium-phosphorus-095",
+                "calcium-phosphorus-046",
+                "calcium-phosphorus-014",
+                "calcium-phosphorus-101",
+                "calcium-phosphorus-062",
+                "calcium-phosphorus-041",
+                "calcium-phosphorus-022",
+                "calcium-phosphorus-iron-repeat-monitoring"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-101",
+              "seed": 16,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-064",
+                "calcium-phosphorus-099",
+                "calcium-phosphorus-095",
+                "calcium-phosphorus-046",
+                "calcium-phosphorus-014",
+                "calcium-phosphorus-101",
+                "calcium-phosphorus-062",
+                "calcium-phosphorus-041",
+                "calcium-phosphorus-022",
+                "calcium-phosphorus-iron-repeat-monitoring"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-108",
+              "seed": 17,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-094",
+                "calcium-phosphorus-087",
+                "calcium-phosphorus-108",
+                "calcium-phosphorus-032",
+                "calcium-phosphorus-006",
+                "calcium-phosphorus-101",
+                "calcium-phosphorus-081",
+                "calcium-phosphorus-042",
+                "calcium-phosphorus-105",
+                "calcium-phosphorus-044"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-108",
+              "seed": 17,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-094",
+                "calcium-phosphorus-087",
+                "calcium-phosphorus-108",
+                "calcium-phosphorus-032",
+                "calcium-phosphorus-006",
+                "calcium-phosphorus-101",
+                "calcium-phosphorus-081",
+                "calcium-phosphorus-042",
+                "calcium-phosphorus-105",
+                "calcium-phosphorus-044"
+              ]
+            }
+          ],
+          "noHorizontalOverflow": true,
+          "unauthenticated": true
+        },
+        {
+          "width": 1440,
+          "route": "cumulative",
+          "attempts": [
+            {
+              "id": "cumulative-calcium-phosphorus-homeostasis-calcium-phosphorus-026",
+              "wrong": true,
+              "seed": 86,
+              "feedbackAndModuleLinkVerified": true
+            },
+            {
+              "id": "cumulative-calcium-phosphorus-homeostasis-calcium-phosphorus-026",
+              "wrong": false,
+              "seed": 86,
+              "feedbackAndModuleLinkVerified": true
+            }
+          ]
+        },
+        {
+          "width": 390,
+          "route": "cumulative",
+          "attempts": [
+            {
+              "id": "cumulative-calcium-phosphorus-homeostasis-calcium-phosphorus-026",
+              "wrong": true,
+              "seed": 86,
+              "feedbackAndModuleLinkVerified": true
+            },
+            {
+              "id": "cumulative-calcium-phosphorus-homeostasis-calcium-phosphorus-026",
+              "wrong": false,
+              "seed": 86,
+              "feedbackAndModuleLinkVerified": true
+            }
+          ]
+        }
+      ],
+      "errors": [],
+      "captures": [
+        "body-module-Recognize-a-calcium-emergency-1440.png",
+        "body-module-Administer-IV-calcium-safely-1440.png",
+        "body-module-Prevent-treatment-complications-1440.png",
+        "body-module-Review-compatibility-by-drug-and-age-1440.png",
+        "body-module-Separate-PTH-replacement-from-emergency-rescue-1440.png",
+        "figure-hypocalcemia-1440.png",
+        "references-module-1440.png",
+        "question-calcium-phosphorus-018-correct-1440.png",
+        "question-calcium-phosphorus-019-correct-1440.png",
+        "question-calcium-phosphorus-020-correct-1440.png",
+        "question-calcium-phosphorus-021-correct-1440.png",
+        "question-calcium-phosphorus-022-correct-1440.png",
+        "question-calcium-phosphorus-024-correct-1440.png",
+        "question-calcium-phosphorus-025-correct-1440.png",
+        "question-calcium-phosphorus-026-correct-1440.png",
+        "question-calcium-phosphorus-042-correct-1440.png",
+        "question-calcium-phosphorus-iv-product-content-reconciliation-correct-1440.png",
+        "question-calcium-phosphorus-070-correct-1440.png",
+        "question-calcium-phosphorus-071-correct-1440.png",
+        "question-calcium-phosphorus-072-correct-1440.png",
+        "question-calcium-phosphorus-073-correct-1440.png",
+        "question-calcium-phosphorus-074-correct-1440.png",
+        "question-calcium-phosphorus-075-correct-1440.png",
+        "question-calcium-phosphorus-076-correct-1440.png",
+        "question-calcium-phosphorus-077-correct-1440.png",
+        "question-calcium-phosphorus-078-correct-1440.png",
+        "question-calcium-phosphorus-neonatal-ceftriaxone-compatibility-correct-1440.png",
+        "question-calcium-phosphorus-079-correct-1440.png",
+        "question-calcium-phosphorus-093-correct-1440.png",
+        "question-calcium-phosphorus-101-correct-1440.png",
+        "question-calcium-phosphorus-108-correct-1440.png",
+        "check-hypocalcemia-incorrect-1440.png",
+        "check-hypocalcemia-correct-1440.png",
+        "body-module-Recognize-a-calcium-emergency-390.png",
+        "body-module-Administer-IV-calcium-safely-390.png",
+        "body-module-Prevent-treatment-complications-390.png",
+        "body-module-Review-compatibility-by-drug-and-age-390.png",
+        "body-module-Separate-PTH-replacement-from-emergency-rescue-390.png",
+        "figure-hypocalcemia-390.png",
+        "references-module-390.png",
+        "question-calcium-phosphorus-018-incorrect-390.png",
+        "question-calcium-phosphorus-019-incorrect-390.png",
+        "question-calcium-phosphorus-020-incorrect-390.png",
+        "question-calcium-phosphorus-021-incorrect-390.png",
+        "question-calcium-phosphorus-022-incorrect-390.png",
+        "question-calcium-phosphorus-024-incorrect-390.png",
+        "question-calcium-phosphorus-025-incorrect-390.png",
+        "question-calcium-phosphorus-026-incorrect-390.png",
+        "question-calcium-phosphorus-042-incorrect-390.png",
+        "question-calcium-phosphorus-iv-product-content-reconciliation-incorrect-390.png",
+        "question-calcium-phosphorus-070-incorrect-390.png",
+        "question-calcium-phosphorus-071-incorrect-390.png",
+        "question-calcium-phosphorus-072-incorrect-390.png",
+        "question-calcium-phosphorus-073-incorrect-390.png",
+        "question-calcium-phosphorus-074-incorrect-390.png",
+        "question-calcium-phosphorus-075-incorrect-390.png",
+        "question-calcium-phosphorus-076-incorrect-390.png",
+        "question-calcium-phosphorus-077-incorrect-390.png",
+        "question-calcium-phosphorus-078-incorrect-390.png",
+        "question-calcium-phosphorus-neonatal-ceftriaxone-compatibility-incorrect-390.png",
+        "question-calcium-phosphorus-079-incorrect-390.png",
+        "question-calcium-phosphorus-093-incorrect-390.png",
+        "question-calcium-phosphorus-101-incorrect-390.png",
+        "question-calcium-phosphorus-108-incorrect-390.png",
+        "check-hypocalcemia-incorrect-390.png",
+        "check-hypocalcemia-correct-390.png",
+        "cumulative-026-incorrect-1440.png",
+        "cumulative-026-correct-1440.png",
+        "cumulative-026-incorrect-390.png",
+        "cumulative-026-correct-390.png"
+      ]
+    },
+    "visualInspection": {
+      "status": "passed",
+      "rawCapturesActuallyViewed": 72,
+      "nativeSizeComparisonsActuallyViewed": 35,
+      "pairs": [
+        {
+          "pair": "pair-body-module-Administer-IV-calcium-safely.png",
+          "originals": [
+            "body-module-Administer-IV-calcium-safely-1440.png",
+            "body-module-Administer-IV-calcium-safely-390.png"
+          ]
+        },
+        {
+          "pair": "pair-body-module-Prevent-treatment-complications.png",
+          "originals": [
+            "body-module-Prevent-treatment-complications-1440.png",
+            "body-module-Prevent-treatment-complications-390.png"
+          ]
+        },
+        {
+          "pair": "pair-body-module-Recognize-a-calcium-emergency.png",
+          "originals": [
+            "body-module-Recognize-a-calcium-emergency-1440.png",
+            "body-module-Recognize-a-calcium-emergency-390.png"
+          ]
+        },
+        {
+          "pair": "pair-body-module-Review-compatibility-by-drug-and-age.png",
+          "originals": [
+            "body-module-Review-compatibility-by-drug-and-age-1440.png",
+            "body-module-Review-compatibility-by-drug-and-age-390.png"
+          ]
+        },
+        {
+          "pair": "pair-body-module-Separate-PTH-replacement-from-emergency-rescue.png",
+          "originals": [
+            "body-module-Separate-PTH-replacement-from-emergency-rescue-1440.png",
+            "body-module-Separate-PTH-replacement-from-emergency-rescue-390.png"
+          ]
+        },
+        {
+          "pair": "pair-check-hypocalcemia-correct.png",
+          "originals": [
+            "check-hypocalcemia-correct-1440.png",
+            "check-hypocalcemia-correct-390.png"
+          ]
+        },
+        {
+          "pair": "pair-check-hypocalcemia-incorrect.png",
+          "originals": [
+            "check-hypocalcemia-incorrect-1440.png",
+            "check-hypocalcemia-incorrect-390.png"
+          ]
+        },
+        {
+          "pair": "pair-cumulative-026-correct.png",
+          "originals": [
+            "cumulative-026-correct-1440.png",
+            "cumulative-026-correct-390.png"
+          ]
+        },
+        {
+          "pair": "pair-cumulative-026-incorrect.png",
+          "originals": [
+            "cumulative-026-incorrect-1440.png",
+            "cumulative-026-incorrect-390.png"
+          ]
+        },
+        {
+          "pair": "pair-figure-hypocalcemia.png",
+          "originals": [
+            "figure-hypocalcemia-1440.png",
+            "figure-hypocalcemia-390.png"
+          ]
+        },
+        {
+          "pair": "pair-question-calcium-phosphorus-018-correct.png",
+          "originals": [
+            "question-calcium-phosphorus-018-correct-1440.png",
+            "question-calcium-phosphorus-018-incorrect-390.png"
+          ]
+        },
+        {
+          "pair": "pair-question-calcium-phosphorus-019-correct.png",
+          "originals": [
+            "question-calcium-phosphorus-019-correct-1440.png",
+            "question-calcium-phosphorus-019-incorrect-390.png"
+          ]
+        },
+        {
+          "pair": "pair-question-calcium-phosphorus-020-correct.png",
+          "originals": [
+            "question-calcium-phosphorus-020-correct-1440.png",
+            "question-calcium-phosphorus-020-incorrect-390.png"
+          ]
+        },
+        {
+          "pair": "pair-question-calcium-phosphorus-021-correct.png",
+          "originals": [
+            "question-calcium-phosphorus-021-correct-1440.png",
+            "question-calcium-phosphorus-021-incorrect-390.png"
+          ]
+        },
+        {
+          "pair": "pair-question-calcium-phosphorus-022-correct.png",
+          "originals": [
+            "question-calcium-phosphorus-022-correct-1440.png",
+            "question-calcium-phosphorus-022-incorrect-390.png"
+          ]
+        },
+        {
+          "pair": "pair-question-calcium-phosphorus-024-correct.png",
+          "originals": [
+            "question-calcium-phosphorus-024-correct-1440.png",
+            "question-calcium-phosphorus-024-incorrect-390.png"
+          ]
+        },
+        {
+          "pair": "pair-question-calcium-phosphorus-025-correct.png",
+          "originals": [
+            "question-calcium-phosphorus-025-correct-1440.png",
+            "question-calcium-phosphorus-025-incorrect-390.png"
+          ]
+        },
+        {
+          "pair": "pair-question-calcium-phosphorus-026-correct.png",
+          "originals": [
+            "question-calcium-phosphorus-026-correct-1440.png",
+            "question-calcium-phosphorus-026-incorrect-390.png"
+          ]
+        },
+        {
+          "pair": "pair-question-calcium-phosphorus-042-correct.png",
+          "originals": [
+            "question-calcium-phosphorus-042-correct-1440.png",
+            "question-calcium-phosphorus-042-incorrect-390.png"
+          ]
+        },
+        {
+          "pair": "pair-question-calcium-phosphorus-070-correct.png",
+          "originals": [
+            "question-calcium-phosphorus-070-correct-1440.png",
+            "question-calcium-phosphorus-070-incorrect-390.png"
+          ]
+        },
+        {
+          "pair": "pair-question-calcium-phosphorus-071-correct.png",
+          "originals": [
+            "question-calcium-phosphorus-071-correct-1440.png",
+            "question-calcium-phosphorus-071-incorrect-390.png"
+          ]
+        },
+        {
+          "pair": "pair-question-calcium-phosphorus-072-correct.png",
+          "originals": [
+            "question-calcium-phosphorus-072-correct-1440.png",
+            "question-calcium-phosphorus-072-incorrect-390.png"
+          ]
+        },
+        {
+          "pair": "pair-question-calcium-phosphorus-073-correct.png",
+          "originals": [
+            "question-calcium-phosphorus-073-correct-1440.png",
+            "question-calcium-phosphorus-073-incorrect-390.png"
+          ]
+        },
+        {
+          "pair": "pair-question-calcium-phosphorus-074-correct.png",
+          "originals": [
+            "question-calcium-phosphorus-074-correct-1440.png",
+            "question-calcium-phosphorus-074-incorrect-390.png"
+          ]
+        },
+        {
+          "pair": "pair-question-calcium-phosphorus-075-correct.png",
+          "originals": [
+            "question-calcium-phosphorus-075-correct-1440.png",
+            "question-calcium-phosphorus-075-incorrect-390.png"
+          ]
+        },
+        {
+          "pair": "pair-question-calcium-phosphorus-076-correct.png",
+          "originals": [
+            "question-calcium-phosphorus-076-correct-1440.png",
+            "question-calcium-phosphorus-076-incorrect-390.png"
+          ]
+        },
+        {
+          "pair": "pair-question-calcium-phosphorus-077-correct.png",
+          "originals": [
+            "question-calcium-phosphorus-077-correct-1440.png",
+            "question-calcium-phosphorus-077-incorrect-390.png"
+          ]
+        },
+        {
+          "pair": "pair-question-calcium-phosphorus-078-correct.png",
+          "originals": [
+            "question-calcium-phosphorus-078-correct-1440.png",
+            "question-calcium-phosphorus-078-incorrect-390.png"
+          ]
+        },
+        {
+          "pair": "pair-question-calcium-phosphorus-079-correct.png",
+          "originals": [
+            "question-calcium-phosphorus-079-correct-1440.png",
+            "question-calcium-phosphorus-079-incorrect-390.png"
+          ]
+        },
+        {
+          "pair": "pair-question-calcium-phosphorus-093-correct.png",
+          "originals": [
+            "question-calcium-phosphorus-093-correct-1440.png",
+            "question-calcium-phosphorus-093-incorrect-390.png"
+          ]
+        },
+        {
+          "pair": "pair-question-calcium-phosphorus-101-correct.png",
+          "originals": [
+            "question-calcium-phosphorus-101-correct-1440.png",
+            "question-calcium-phosphorus-101-incorrect-390.png"
+          ]
+        },
+        {
+          "pair": "pair-question-calcium-phosphorus-108-correct.png",
+          "originals": [
+            "question-calcium-phosphorus-108-correct-1440.png",
+            "question-calcium-phosphorus-108-incorrect-390.png"
+          ]
+        },
+        {
+          "pair": "pair-question-calcium-phosphorus-iv-product-content-reconciliation-correct.png",
+          "originals": [
+            "question-calcium-phosphorus-iv-product-content-reconciliation-correct-1440.png",
+            "question-calcium-phosphorus-iv-product-content-reconciliation-incorrect-390.png"
+          ]
+        },
+        {
+          "pair": "pair-question-calcium-phosphorus-neonatal-ceftriaxone-compatibility-correct.png",
+          "originals": [
+            "question-calcium-phosphorus-neonatal-ceftriaxone-compatibility-correct-1440.png",
+            "question-calcium-phosphorus-neonatal-ceftriaxone-compatibility-incorrect-390.png"
+          ]
+        },
+        {
+          "pair": "pair-references-module.png",
+          "originals": [
+            "references-module-1440.png",
+            "references-module-390.png"
+          ]
+        }
+      ],
+      "supplementalViewportCapturesActuallyViewed": [
+        "reference-header-1440.png",
+        "reference-header-390.png"
+      ],
+      "inspection": "All scoped teaching, complete five-step figure,24whole question stems/options/feedback,check bothstates,cumulative026 bothstates and source links inspected at native desktop/mobile size. No clipped scoped teaching,answer text,feedback or diagram labels;320px overflow check passed.",
+      "captureCorrection": "Mobile full-section reference screenshot placed its heading under existing sticky navigation. Two actual viewport captures verified the whole reference heading and introduction separately;all link rows readable in full-section capture. No UI hidden for QA.",
+      "untouchedContent": "Other teaching/metadata exactDOM checks provide technical preservation only, not new clinical verification."
+    },
+    "limits": "Unauthenticated isolated preview. Untouched DOM is technical evidence only; full lesson/parent/EN/chapter or production publication not established."
+  },
+  "remainingReview": {
+    "questionIds": [
+      "calcium-phosphorus-008",
+      "calcium-phosphorus-023",
+      "calcium-phosphorus-095"
+    ],
+    "bodyHeadings": [
+      "Correct the mechanism",
+      "Protect the kidney during chronic therapy"
+    ],
+    "metadataAndWholeLessonPending": true,
+    "nextAction": "Continue remaining calcium/phosphorus claims. The2022International Task Force chronic hypoparathyroidism source request is pending direct approval; chronic kidney-monitoring/hypercalciuria/thiazide and magnesium-PTH mechanism claims are not verified by this acute unit. Review other already approved calcium sources independently while awaiting that answer. Preserve the three pending hypocalcemia questions008/023/095, two bodies and chronic key point. Also reconcile remaining acute phosphate body and aluminum question050 before CKD closure. Then finish calcium parent and EN reintegration. Earliest sequential checkpoint remains Chapter1 printed7/PDF19 formula entry15 fluid needs, with Chapter11 feeding dependencies. Full82-chapter goal remains active."
+  },
+  "release": {
+    "branch": "audit/rxprep-content-2026-09-24",
+    "commit": null,
+    "push": "pending",
+    "receipt": "enteral-nutrition-broader-acute-hypocalcemia-release.json",
+    "mainMerge": "not performed",
+    "production": "not verified"
+  },
+  "wholeGoalComplete": false
+}
