@@ -1,0 +1,220 @@
+{
+  "verifiedAt": "2026-10-05T13:12:07.768870+00:00",
+  "unit": "enteral-nutrition:broader-hcv-safety-cure",
+  "contentCommit": "db17be3b6134c77e5eccfa1db2c71f3fcc129346",
+  "remoteBranch": "audit/rxprep-content-2026-09-24",
+  "remoteHashObserved": "db17be3b6134c77e5eccfa1db2c71f3fcc129346",
+  "exactRemoteObservedByTool": true,
+  "coverage": {
+    "evidence": "enteral-nutrition-broader-hcv-safety-cure-review.json",
+    "verifiedScope": "Whole pretreatment-safety, svr-follow-up and integrated-case lessons: 12 bodies, 3 checks, metadata and figures; 24 whole bank questions 045-052/081-088/101-108 and 2 inherited cumulative items.",
+    "moduleQuestionTotal": 108,
+    "individuallyReviewedCurrentWholeBankIds": [
+      "hepatitis-c-045",
+      "hepatitis-c-046",
+      "hepatitis-c-047",
+      "hepatitis-c-048",
+      "hepatitis-c-049",
+      "hepatitis-c-050",
+      "hepatitis-c-051",
+      "hepatitis-c-052",
+      "hepatitis-c-081",
+      "hepatitis-c-082",
+      "hepatitis-c-083",
+      "hepatitis-c-084",
+      "hepatitis-c-085",
+      "hepatitis-c-086",
+      "hepatitis-c-087",
+      "hepatitis-c-088",
+      "hepatitis-c-101",
+      "hepatitis-c-102",
+      "hepatitis-c-103",
+      "hepatitis-c-104",
+      "hepatitis-c-105",
+      "hepatitis-c-106",
+      "hepatitis-c-107",
+      "hepatitis-c-108"
+    ],
+    "newUniqueBankQuestionsVerified": 24,
+    "broaderFeedingBankVerifiedBefore": 375,
+    "broaderFeedingBankVerifiedAfter": 399,
+    "wholeBodiesVerified": 12,
+    "wholeEmbeddedChecksVerified": 3,
+    "wholeLessonMetadataAndFiguresVerified": 3,
+    "associatedCumulativeWholeItemsVerified": [
+      "cumulative-hepatitis-c-hepatitis-c-081",
+      "cumulative-hepatitis-c-hepatitis-c-108"
+    ],
+    "cumulativeUniqueCountLimit": "Inherited items are not additional independent questions beyond their module source IDs.",
+    "allSixSelectedHCVLessonsVerified": true,
+    "HCVWholeBankQuestionsVerifiedAcrossTwoUnits": 60,
+    "remainingHCVWholeLessons": 6,
+    "remainingHCVWholeBankQuestions": 48,
+    "other84WholeBankObjectsUnchangedThisUnit": true,
+    "other37WholeBodiesNineChecksMetadataUnchangedThisUnit": true,
+    "other1178CumulativeObjectsUnchanged": true,
+    "referencesAfter": 10,
+    "priorSelectedHepatic64WholeQuestionsRemainVerified": true,
+    "historicalLexicalInventoryRemaining": 157,
+    "historicalLexicalLimit": "Prior count retained; no fresh blanket lexical reclassification or exhaustive semantic-coverage claim.",
+    "wholeHCVParentModuleVerified": false,
+    "wholeENModuleVerified": false,
+    "wholeChaptersVerified": false,
+    "committedWholeModulesVerifiedAfter": 56,
+    "committedWholeModulesTotal": 232,
+    "moduleCountPercent": 24.14,
+    "chaptersVerifiedAfter": 6,
+    "chapterTotal": 82,
+    "chapterCountPercent": 7.32
+  },
+  "validation": {
+    "productionBuild": {
+      "status": "passed",
+      "exitCode": 0,
+      "pages": 567,
+      "bundler": "webpack",
+      "baseCommit": "2aadf2f3e3d1161c3e614b1894d864c28c623756"
+    },
+    "structureQuestions": 108,
+    "changedWholeBankItemsCorrectAndIncorrectBothWidthsVerified": 24,
+    "wholeTeachingBodiesVerified": 12,
+    "threeRevisedChecksAllOptionsVerifiedBothWidths": true,
+    "twoAssociatedCumulativeItemsCorrectAndIncorrectBothWidthsVerified": true,
+    "all10ReferenceLinksMatchData": true,
+    "threeScopedFiguresVerifiedWidths": [
+      320,
+      390,
+      639,
+      640,
+      1440
+    ],
+    "otherNineFigureLabelsCaptionsAndFontRulesPreserved": true,
+    "rawCapturesActuallyInspectedThroughNativePairs": 126,
+    "nativePairsActuallyInspected": 63,
+    "sourceVisualCoverage": {
+      "bookNativePages": 5,
+      "monitorNativePages": 11,
+      "allRelevantMonitoringTablesAndFootnotesViewed": true,
+      "cdcTextTableReviewed": true
+    },
+    "browserStatus": "passed",
+    "objectPreservation": {
+      "status": "passed",
+      "moduleTotal": 232,
+      "questions": 108,
+      "bodies": 49,
+      "lessonsAndChecks": 12,
+      "stableIdsStemsKeysDifficultyAnchorsAndOrderPreserved": true,
+      "harmfulActionKeysRepaired": [
+        48,
+        52,
+        84,
+        88,
+        104,
+        108
+      ],
+      "other84WholeBankObjectsUnchanged": true,
+      "other37WholeBodiesNineChecksMetadataUnchanged": true,
+      "other231WholeModulesUnchanged": true,
+      "other1178CumulativeObjectsUnchanged": true,
+      "associatedCumulativeObjectsRefined": [
+        {
+          "before": {
+            "id": "cumulative-hepatitis-c-hepatitis-c-081",
+            "question": "Which statement is most accurate? Focus: svr cure.",
+            "choices": [
+              "Sustained virologic response is confirmed by undetectable HCV RNA at least 12 weeks after therapy and represents virologic cure.",
+              "End-of-treatment RNA alone does not establish SVR12.",
+              "Stop follow-up when the last tablet is taken without confirming SVR12 or planning cirrhosis surveillance.",
+              "Use one result without reviewing fibrosis, prior treatment, interactions, coinfection, or liver compensation."
+            ],
+            "answer": 0,
+            "rationale": "Sustained virologic response is confirmed by undetectable HCV RNA at least 12 weeks after therapy and represents virologic cure. Order the RNA and hepatic panel, investigate persistent transaminase elevation, and document the result.",
+            "reviewHref": "/learn/pharmacy/modules/hepatitis-c",
+            "difficulty": "foundational",
+            "module": "Hepatitis C"
+          },
+          "after": {
+            "id": "cumulative-hepatitis-c-hepatitis-c-081",
+            "question": "Which statement is most accurate? Focus: svr cure.",
+            "choices": [
+              "Undetectable or nonquantifiable HCV RNA twelve or more weeks after treatment documents SVR12",
+              "Reactive antibody at twelve weeks proves virologic cure",
+              "Normal bilirubin alone establishes SVR12",
+              "End-of-treatment RNA alone establishes SVR12"
+            ],
+            "answer": 0,
+            "rationale": "SVR12 uses a sensitive post-treatment RNA test. Current guidance permits a limited SVR4 alternative without cirrhosis or prior DAA exposure, especially when barriers threaten SVR12 assessment; this does not redefine an end-of-treatment test as cure.",
+            "reviewHref": "/learn/pharmacy/modules/hepatitis-c",
+            "difficulty": "foundational",
+            "module": "Hepatitis C"
+          }
+        },
+        {
+          "before": {
+            "id": "cumulative-hepatitis-c-hepatitis-c-108",
+            "question": "Which error creates the greatest avoidable risk? Focus: transition ownership.",
+            "choices": [
+              "Finishing or interrupting tablets without transferred ownership for SVR12 and cirrhosis surveillance leaves cure and residual risk unresolved.",
+              "HCV cure pathways can fail when medication access, a new prescription, pregnancy, incarceration, hospitalization, insurance, or a change in clinician interrupts treatment or loses the SVR12 plan.",
+              "At every transition, reconcile the complete regimen, remaining supply, interaction changes, adherence gaps, fibrosis status, cure-test date, and named follow-up owner.",
+              "Stop follow-up when the last tablet is taken without confirming SVR12 or planning cirrhosis surveillance."
+            ],
+            "answer": 0,
+            "rationale": "HCV cure pathways can fail when medication access, a new prescription, pregnancy, incarceration, hospitalization, insurance, or a change in clinician interrupts treatment or loses the SVR12 plan. At every transition, reconcile the complete regimen, remaining supply, interaction changes, adherence gaps, fibrosis status, cure-test date, and named follow-up owner.",
+            "reviewHref": "/learn/pharmacy/modules/hepatitis-c",
+            "difficulty": "advanced",
+            "module": "Hepatitis C"
+          },
+          "after": {
+            "id": "cumulative-hepatitis-c-hepatitis-c-108",
+            "question": "Which error creates the greatest avoidable risk? Focus: transition ownership.",
+            "choices": [
+              "Transfer care without assigning responsibility for pending cure testing and indicated cirrhosis surveillance",
+              "Record the regimen and remaining medicine supply",
+              "Communicate adherence gaps and interaction changes",
+              "Document the receiving clinician and planned follow-up dates"
+            ],
+            "answer": 0,
+            "rationale": "The omitted follow-up responsibility is the harmful action. Communicating supply, interruptions, interactions and dates helps implement the guideline pathway; those protective actions do not substitute for the test result itself.",
+            "reviewHref": "/learn/pharmacy/modules/hepatitis-c",
+            "difficulty": "advanced",
+            "module": "Hepatitis C"
+          }
+        }
+      ],
+      "wholeReviewedQuestions": 24,
+      "wholeReviewedBodies": 12,
+      "wholeReviewedChecks": 3,
+      "referencesAfter": 10,
+      "newIds": 0
+    }
+  },
+  "preservation": {
+    "status": "passed",
+    "baselinePathsChecked": 809,
+    "bothProductFilesOriginallyCleanAtBase": true,
+    "allUnrelatedDraftBytesAndDeletionsPreserved": true,
+    "bothProductPreexistingBytesRecoveredByRemovingExactScopedTails": true,
+    "allOtherWorkingLedgerFieldsIncludingDraftStatusPreserved": true,
+    "allOtherCommittedLedgerEntriesPreserved": true,
+    "onlyHeadDerivedVerifiedProductsStagedOrCommitted": true,
+    "originallyCleanComponentExactScopedPatchPreserved": true,
+    "scope": [
+      "src/data/modules/hepatitisC.js",
+      "src/data/questionBanks/hepatitisC.js",
+      "src/components/learn/HepatitisCVisual.jsx",
+      "docs/clinical-audit/enteral-nutrition-broader-hcv-safety-cure-review.json",
+      "docs/clinical-audit/module-ledger.json",
+      "docs/clinical-audit/chapter-ledger.json",
+      "docs/clinical-audit/sequential-resume.json"
+    ]
+  },
+  "publication": {
+    "mainMerge": "not performed",
+    "production": "not verified"
+  },
+  "wholeGoalComplete": false,
+  "nextAction": "Continue full HCV parent reconciliation: remaining six lessons virus-natural-history, screening-diagnosis, fibrosis-eligibility, daa-mechanisms, cirrhosis-special and retreatment-prevention, covering 48 bank questions plus associated cumulative content, metadata and figures. Current cure/SVR4 reconciliation in the selected lessons is complete; verify all remaining parent references/outcomes and consistency before parent closure. Then continue full enteral-nutrition/fluid parents and remaining broader dependencies. Whole HBV/cirrhosis/enteral/fluid parents, Chapters 11/19 and Chapter 1 printed 7/PDF 19 entry 15 remain open. Historical 157 lexical candidates need review or incidental classification and are not exhaustive semantic coverage. Continue the full 82-chapter goal.",
+  "receiptCommit": "This receipt follows the exact verified content commit; its own remote hash is verified separately in execution output."
+}
