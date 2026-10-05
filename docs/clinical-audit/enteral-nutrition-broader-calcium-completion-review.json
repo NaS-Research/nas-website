@@ -1,7 +1,7 @@
 {
   "updated": "2026-10-05T08:10:05.178942+00:00",
   "unit": "enteral-nutrition:broader-calcium-completion",
-  "status": "Whole committed calcium module source, clinical, numeric and rendered verification complete; push pending.",
+  "status": "Complete committed calcium and phosphorus module clinically and visually verified; exact audit-branch content push verified.",
   "baseCommit": "2276e50cf167aa77368ea84a6a704c99a9a09888",
   "sourcePolicy": {
     "primary": "Cover-verified supplied RxPrep2023;private extracts andscreens outside Git",
@@ -8364,11 +8364,14 @@
   },
   "release": {
     "branch": "audit/rxprep-content-2026-09-24",
-    "commit": null,
-    "push": "pending",
+    "commit": "296ec937d38411a3f3facda1dbae27bbc8766bd0",
+    "push": "verified",
     "receipt": "enteral-nutrition-broader-calcium-completion-release.json",
     "mainMerge": "not performed",
-    "production": "not verified"
+    "production": "not verified",
+    "remoteHashObserved": "296ec937d38411a3f3facda1dbae27bbc8766bd0",
+    "exactRemoteObservedByTool": true,
+    "remoteVerifiedAt": "2026-10-05T08:13:58.315337+00:00"
   },
   "wholeGoalComplete": false,
   "privateSourceFilesInGit": false
