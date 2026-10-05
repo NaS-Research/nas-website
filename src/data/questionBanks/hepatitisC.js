@@ -442,3 +442,221 @@ Object.assign(hepatitisCQuestionBank.find((question) => question.id === "hepatit
   ],
   "rationale": "Delaying evaluation of possible hepatic decompensation is the harmful action. New jaundice, ascites, encephalopathy or worsening liver tests require prompt specialist assessment. Baseline-relative ALT guidance and the additional anemia and reproductive safety requirements of ribavirin are protective actions."
 });
+
+// Repair whole pretreatment, cure and care-transition assessments.
+Object.assign(hepatitisCQuestionBank.find((question) => question.id === "hepatitis-c-045"), {
+  "choices": [
+    "Pretreatment review includes current infection, fibrosis, prior treatment, appropriate laboratories, medications, HIV, HBV and pregnancy context",
+    "A reactive antibody alone establishes current HCV infection and the regimen",
+    "Every patient needs identical testing regardless of the selected pathway",
+    "HBV assessment can always wait until after DAAs"
+  ],
+  "rationale": "Confirm infection and fibrosis, then follow the selected pathway’s testing and eligibility rules. General guidance includes CBC, INR, hepatic panel and eGFR within six months; simplified pathways have different requirements. Review coinfections, medicines and delivery before treatment."
+});
+Object.assign(hepatitisCQuestionBank.find((question) => question.id === "hepatitis-c-046"), {
+  "choices": [
+    "Resolve the applicable eligibility, testing and interaction issues before DAAs",
+    "Dispense DAAs before asking about prescribed or nonprescription medicines",
+    "Treat normal ALT as proof that cirrhosis is absent",
+    "Use the same regimen and duration for every prior treatment history"
+  ],
+  "rationale": "Pretreatment review informs the actual regimen and monitoring plan. An antibody result or normal ALT cannot replace RNA confirmation, fibrosis assessment, treatment history and interaction review."
+});
+Object.assign(hepatitisCQuestionBank.find((question) => question.id === "hepatitis-c-047"), {
+  "choices": [
+    "Use the selected pathway’s laboratory windows and genotype or resistance requirements",
+    "Order genotype and INR in every simplified noncirrhotic patient because all pathways require them",
+    "Skip kidney-function assessment because Epclusa has no renal dose adjustment",
+    "Ignore a prior decompensation episode when the current score improves"
+  ],
+  "rationale": "Testing is pathway-specific. The general six-month CBC/INR/hepatic/eGFR recommendation is not identical to every simplified pathway, and genotype or RAS needs depend on regimen and context. Renal dose instructions do not eliminate pretreatment assessment."
+});
+Object.assign(hepatitisCQuestionBank.find((question) => question.id === "hepatitis-c-048"), {
+  "choices": [
+    "Start DAAs before reviewing the medication list and resolving important interactions",
+    "Review prescribed medicines, supplements and nonprescription products",
+    "Verify current infection and fibrosis before pathway selection",
+    "Coordinate a formulation, food and medication-access plan"
+  ],
+  "rationale": "Starting without review is the harmful action. The other choices support appropriate pathway selection and delivery. Important interactions can reduce antiviral exposure or increase toxicity and require a concrete plan."
+});
+Object.assign(hepatitisCQuestionBank.find((question) => question.id === "hepatitis-c-049"), {
+  "choices": [
+    "DAAs can reactivate HBV, so assess HBsAg, total anti-HBc and anti-HBs before treatment",
+    "HBsAg positivity permanently contraindicates every DAA",
+    "Resolved HBV infection can never be relevant to unexplained ALT elevation",
+    "Anti-HBs alone replaces all other HBV testing"
+  ],
+  "rationale": "The book warns about HBV reactivation before DAAs; current guidance specifies the three-marker assessment. HBsAg-positive patients need HBV DNA and a plan, while unexplained aminotransferase elevation can raise concern for reactivation in resolved or isolated-core infection."
+});
+Object.assign(hepatitisCQuestionBank.find((question) => question.id === "hepatitis-c-050"), {
+  "choices": [
+    "Obtain HBV DNA when HBsAg is positive and arrange indicated treatment, prophylaxis or monitoring",
+    "Ignore HBV because the regimen treats HCV",
+    "Use HBsAg positivity as proof that HCV must never be treated",
+    "Wait for symptomatic hepatic failure before creating an HBV plan"
+  ],
+  "rationale": "HBsAg positivity excludes simplified HCV treatment but is not a DAA contraindication. Start indicated HBV treatment before or with DAAs; low or undetectable DNA below treatment criteria permits a coordinated prophylaxis or monitoring approach."
+});
+Object.assign(hepatitisCQuestionBank.find((question) => question.id === "hepatitis-c-051"), {
+  "choices": [
+    "For eligible HBsAg-positive patients below HBV treatment criteria, choose prophylaxis through twelve weeks after DAAs or monthly HBV DNA monitoring with defined treatment triggers",
+    "Stop prophylaxis on the last DAA day regardless of the plan",
+    "Wait for a greater-than-tenfold ALT rise as the sole HBV DNA treatment trigger",
+    "Apply one mandatory monthly DNA schedule to every person with resolved HBV infection"
+  ],
+  "rationale": "The prophylaxis and monitoring alternatives apply to HBsAg-positive patients with low or undetectable DNA who do not otherwise meet treatment criteria. With monitoring, treat for DNA greater than tenfold above baseline or above 1,000 IU/mL when baseline was undetectable or unquantifiable. These are HBV DNA criteria, distinct from DAA ALT stopping criteria; resolved infection has no established universal DNA schedule."
+});
+Object.assign(hepatitisCQuestionBank.find((question) => question.id === "hepatitis-c-052"), {
+  "choices": [
+    "Begin DAAs in an HBsAg-positive patient without assessing HBV DNA or planning HBV care",
+    "Start indicated HBV treatment before or with DAAs",
+    "Coordinate prophylaxis or HBV DNA monitoring when applicable",
+    "Consider HBV reactivation with unexplained liver-test elevations"
+  ],
+  "rationale": "Omitting HBV assessment and the care plan is the harmful action. HBsAg positivity itself does not prohibit HCV treatment. The other choices protect against a recognized reactivation risk during or after DAAs."
+});
+Object.assign(hepatitisCQuestionBank.find((question) => question.id === "hepatitis-c-081"), {
+  "choices": [
+    "Undetectable or nonquantifiable HCV RNA twelve or more weeks after treatment documents SVR12",
+    "Reactive antibody at twelve weeks proves virologic cure",
+    "Normal bilirubin alone establishes SVR12",
+    "End-of-treatment RNA alone establishes SVR12"
+  ],
+  "rationale": "SVR12 uses a sensitive post-treatment RNA test. Current guidance permits a limited SVR4 alternative without cirrhosis or prior DAA exposure, especially when barriers threaten SVR12 assessment; this does not redefine an end-of-treatment test as cure."
+});
+Object.assign(hepatitisCQuestionBank.find((question) => question.id === "hepatitis-c-082"), {
+  "choices": [
+    "Schedule post-treatment RNA assessment, review the result and evaluate persistent liver-test abnormalities",
+    "Use antibody testing alone to document cure",
+    "Document cure when the prescription is dispensed",
+    "Cancel post-treatment testing because every completed course succeeds"
+  ],
+  "rationale": "RNA twelve or more weeks after treatment documents SVR12, and simplified pathways also assess the hepatic panel. The limited SVR4 alternative must fit the patient; treatment completion alone leaves cure unconfirmed."
+});
+Object.assign(hepatitisCQuestionBank.find((question) => question.id === "hepatitis-c-083"), {
+  "choices": [
+    "Consider SVR4 for a patient without cirrhosis or prior DAA exposure when barriers may prevent SVR12 follow-up",
+    "Use SVR4 as a universal replacement after any prior DAA failure",
+    "Use a four-week RNA result to cancel all cirrhosis surveillance",
+    "Define SVR4 as a negative RNA result on the last treatment day"
+  ],
+  "rationale": "The current SVR4 alternative is restricted to patients without cirrhosis and without prior DAA exposure, particularly when follow-up barriers matter. Four weeks refers to time after treatment; repeat RNA can be considered beyond SVR4 if ALT rises above normal."
+});
+Object.assign(hepatitisCQuestionBank.find((question) => question.id === "hepatitis-c-084"), {
+  "choices": [
+    "Declare cure from end-of-treatment RNA and omit the planned post-treatment assessment",
+    "Use quantitative RNA twelve or more weeks after treatment for SVR12",
+    "Evaluate persistent transaminase elevation after documented cure",
+    "Consider the defined SVR4 option when eligible follow-up barriers warrant it"
+  ],
+  "rationale": "An end-of-treatment result alone is not the post-treatment cure endpoint. SVR12 and the limited SVR4 alternative require post-treatment assessment; the other choices are appropriate clinical actions."
+});
+Object.assign(hepatitisCQuestionBank.find((question) => question.id === "hepatitis-c-085"), {
+  "choices": [
+    "Noncirrhotic cure usually returns the patient to standard care, while cirrhosis, other liver disease or ongoing exposure can require continued follow-up",
+    "Cure guarantees that HCC risk disappears in cirrhosis",
+    "Every noncirrhotic patient needs lifelong HCC ultrasound solely because of previous HCV",
+    "A negative RNA excludes alcohol-related or steatotic liver disease"
+  ],
+  "rationale": "Current guidance separates standard care after noncirrhotic cure from cirrhosis surveillance and follow-up for other liver disease or exposure. Cure lowers risk but does not erase these distinct conditions."
+});
+Object.assign(hepatitisCQuestionBank.find((question) => question.id === "hepatitis-c-086"), {
+  "choices": [
+    "Continue indicated cirrhosis care, evaluate other liver disease and use RNA at least annually with ongoing exposure risk",
+    "Stop HCC surveillance solely because SVR12 was achieved",
+    "Use HCV antibody annually to diagnose reinfection",
+    "Dismiss persistent liver-test abnormalities after a negative RNA"
+  ],
+  "rationale": "People with cirrhosis continue HCC and indicated variceal surveillance. Persistently abnormal liver tests need evaluation for other causes; ongoing exposure requires RNA-based recurrence assessment because antibody usually remains positive."
+});
+Object.assign(hepatitisCQuestionBank.find((question) => question.id === "hepatitis-c-087"), {
+  "choices": [
+    "Use the liver state and ongoing exposure to assign surveillance and recurrence testing after cure",
+    "Apply the same HCC surveillance plan to every cured patient regardless of cirrhosis",
+    "Wait until the next annual test despite a new aminotransferase flare",
+    "Treat cure as immunity against reinfection"
+  ],
+  "rationale": "Cirrhosis, other liver disease and exposure determine follow-up. Test RNA at least annually with ongoing risk; unexplained hepatic dysfunction or a new aminotransferase flare needs prompt evaluation rather than waiting for the calendar."
+});
+Object.assign(hepatitisCQuestionBank.find((question) => question.id === "hepatitis-c-088"), {
+  "choices": [
+    "Cancel HCC and indicated variceal surveillance because HCV was cured in a patient with cirrhosis",
+    "Continue cirrhosis surveillance after SVR",
+    "Evaluate other causes of persistently abnormal liver tests",
+    "Use RNA rather than antibody when assessing recurrence"
+  ],
+  "rationale": "Stopping indicated cirrhosis surveillance is the harmful action. HCV Guidance retains six-month ultrasound-based HCC surveillance and current portal-hypertension guidance after cure; the other choices support appropriate continuing care."
+});
+Object.assign(hepatitisCQuestionBank.find((question) => question.id === "hepatitis-c-101"), {
+  "choices": [
+    "Complete care links RNA-confirmed infection, fibrosis, regimen delivery, safety monitoring, post-treatment cure testing and risk-based follow-up",
+    "A prescription proves that infection was cured",
+    "A reactive antibody after treatment establishes cure",
+    "Early negative RNA eliminates all later cirrhosis care"
+  ],
+  "rationale": "The book supports combination therapy, liver-state assessment and safety monitoring; current guidance adds the connected pretreatment and post-treatment pathway. SVR12 is standard, with a limited SVR4 alternative; cirrhosis and exposure still require appropriate follow-up."
+});
+Object.assign(hepatitisCQuestionBank.find((question) => question.id === "hepatitis-c-102"), {
+  "choices": [
+    "Assign a clinician and date for pending tests, medication changes, supply problems, cure assessment and indicated surveillance",
+    "Transfer care without the regimen or remaining supply",
+    "Leave post-treatment RNA unassigned because a prescription was written",
+    "Cancel follow-up when an interaction is identified"
+  ],
+  "rationale": "This operational plan implements the guideline’s testing, administration, adherence and follow-up requirements. A named clinician and date support continuity; they do not themselves establish cure or resolve an interaction."
+});
+Object.assign(hepatitisCQuestionBank.find((question) => question.id === "hepatitis-c-103"), {
+  "choices": [
+    "Transfer the documented regimen, monitoring needs, pending results and appropriate cure-test plan when care changes",
+    "Use a single generic follow-up plan for every cirrhosis state",
+    "Treat a negative antibody as the required proof of cure",
+    "Repeat a failed DAA course without reviewing the prior therapy"
+  ],
+  "rationale": "Care transitions should preserve the patient-specific pathway and required follow-up. Cure assessment uses RNA, and liver state and treatment history continue to govern management."
+});
+Object.assign(hepatitisCQuestionBank.find((question) => question.id === "hepatitis-c-104"), {
+  "choices": [
+    "End care after writing a DAA prescription without arranging post-treatment cure assessment",
+    "Confirm infection with RNA and stage fibrosis",
+    "Review interactions and support medication access",
+    "Plan appropriate cure testing and continuing cirrhosis care"
+  ],
+  "rationale": "Ending care without the post-treatment assessment leaves cure unknown. The other actions connect diagnosis, treatment delivery and follow-up. A defined SVR4 option still requires an actual post-treatment RNA result."
+});
+Object.assign(hepatitisCQuestionBank.find((question) => question.id === "hepatitis-c-105"), {
+  "choices": [
+    "A care transition can lose medication supply, interaction or monitoring information, or the post-treatment cure-test plan",
+    "Moving to a new clinician proves the original regimen failed",
+    "Hospitalization makes all new medicines compatible with DAAs",
+    "An insurance change converts HCV antibody into a cure marker"
+  ],
+  "rationale": "The transition concern is continuity of delivery and follow-up, not proof of virologic failure. Reconcile the actual regimen, interruption, medicines and testing plan; do not infer cure or failure from an administrative event."
+});
+Object.assign(hepatitisCQuestionBank.find((question) => question.id === "hepatitis-c-106"), {
+  "choices": [
+    "Reconcile remaining supply, missed treatment, new medicines, liver state, pending tests and the clinician responsible for follow-up",
+    "Restart every interrupted course with an identical duration",
+    "Wait until the final visit to ask about missing medicine",
+    "Assume the receiving clinician already has every pending result"
+  ],
+  "rationale": "Transfer the concrete treatment and follow-up information. Interruption management depends on the actual gap, regimen and patient context; neither a universal restart nor assumed handoff ownership is supported."
+});
+Object.assign(hepatitisCQuestionBank.find((question) => question.id === "hepatitis-c-107"), {
+  "choices": [
+    "Document the appropriate post-treatment RNA date and transfer cirrhosis surveillance and exposure-based testing plans",
+    "Use SVR4 regardless of cirrhosis or prior DAA exposure",
+    "Use antibody as the sole cure and reinfection test",
+    "Remove follow-up responsibility after the last tablet"
+  ],
+  "rationale": "Preserve RNA-based cure testing and risk-based care at transitions. SVR4 is a limited alternative, and cure does not remove surveillance in cirrhosis or RNA assessment with continuing exposure risk."
+});
+Object.assign(hepatitisCQuestionBank.find((question) => question.id === "hepatitis-c-108"), {
+  "choices": [
+    "Transfer care without assigning responsibility for pending cure testing and indicated cirrhosis surveillance",
+    "Record the regimen and remaining medicine supply",
+    "Communicate adherence gaps and interaction changes",
+    "Document the receiving clinician and planned follow-up dates"
+  ],
+  "rationale": "The omitted follow-up responsibility is the harmful action. Communicating supply, interruptions, interactions and dates helps implement the guideline pathway; those protective actions do not substitute for the test result itself."
+});

@@ -4,19 +4,22 @@ const views = {
   "fibrosis-eligibility": ["FIB-4", "Elastography", "Child-Pugh", "Pathway"],
   "daa-mechanisms": ["NS3/4A", "NS5A", "NS5B", "Pangenotypic"],
   "initial-regimens": ["Mavyret", "Epclusa", "Food", "Duration"],
-  "pretreatment-safety": ["Medication list", "HBV", "HIV", "Pregnancy"],
+  "pretreatment-safety": ["Medicines", "HBV", "HIV", "Pregnancy"],
   "interaction-engineering": ["Acid", "Inducers", "Statins", "Amiodarone"],
   "monitoring-delivery": ["Adherence", "Glucose", "INR", "Liver injury"],
-  "svr-follow-up": ["End therapy", "SVR12", "Cure", "Reinfection"],
+  "svr-follow-up": ["RNA timing", "Cure test", "Cure", "Reinfection"],
   "cirrhosis-special": ["Compensated", "Decompensated", "HCC", "Transplant"],
   "retreatment-prevention": ["Prior DAA", "Resistance", "Salvage", "Harm reduction"],
-  "integrated-case": ["Diagnose", "Stage", "Treat", "Confirm cure"],
+  "integrated-case": ["Diagnose", "Stage", "Treat", "Cure test"],
 };
 export const hepatitisCVisualTypes = Object.keys(views).map((key) => `hepatitis-c-${key}`);
 export default function HepatitisCVisual({ type }) {
   const key = type.replace("hepatitis-c-", "");
   const labels = views[key] || views["integrated-case"];
   const reviewedCaptions = {
+    "pretreatment-safety": "Connect baseline testing, medicines, coinfections, and pregnancy context.",
+    "svr-follow-up": "Confirm cure with post-treatment RNA and preserve risk-based follow-up.",
+    "integrated-case": "Connect diagnosis, staging, treatment delivery, and documented cure.",
     "initial-regimens": "Connect combination therapy, food, duration, and liver eligibility.",
     "interaction-engineering": "Review acidity, induction, concomitant medicines, and cardiac safety.",
     "monitoring-delivery": "Support adherence and review glucose, INR, and liver injury.",
