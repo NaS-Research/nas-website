@@ -224,3 +224,62 @@ const sourceReviewedPhosphatePhysiologyRationales = {
 for (const question of calciumPhosphorusHomeostasisQuestionBank) {
   if (sourceReviewedPhosphatePhysiologyRationales[question.id]) question.rationale = sourceReviewedPhosphatePhysiologyRationales[question.id];
 }
+
+// Book-reconciled albumin-adjusted total calcium and exact decimal arithmetic.
+const sourceReviewedCalciumMeasurementQuestions = {
+  "calcium-phosphorus-010": {
+    "rationale": "Low albumin can lower the protein-bound calcium component and therefore the total calcium result without necessarily lowering ionized calcium. The book distinguishes albumin-adjusted total calcium from a directly measured unbound calcium result. PTH testing does not explain this binding effect; ionized calcium is the unbound fraction, and phosphate does not always raise albumin."
+  },
+  "calcium-phosphorus-016": {
+    "choices": [
+      "It gives an albumin-adjusted total-calcium estimate, not a measured ionized-calcium result",
+      "It cannot use arithmetic",
+      "It is accurate only when albumin is exactly 4",
+      "It measures phosphate instead"
+    ],
+    "rationale": "The book equation estimates total calcium as if albumin were 4 g/dL; it does not measure the ionized fraction. Use total calcium in mg/dL and albumin in g/dL. The equation uses ordinary arithmetic, accepts albumin values below 4, and does not measure phosphate. The book separately states that a directly measured ionized-calcium result does not require an albumin correction."
+  },
+  "calcium-phosphorus-060": {
+    "question": "Using total calcium + 0.8(4 - albumin), what is the estimated corrected calcium for total calcium 7.2 mg/dL and albumin 2 g/dL? Round to the nearest tenth.",
+    "rationale": "Use total calcium in mg/dL and albumin in g/dL: 7.2 + 0.8(4 - 2) = 7.2 + 1.6 = 8.8 mg/dL, or 8.8 mg/dL rounded to the nearest tenth. The other choices do not equal this rounded result. This is an albumin-adjusted total-calcium estimate, not a directly measured ionized-calcium result."
+  },
+  "calcium-phosphorus-061": {
+    "question": "Using total calcium + 0.8(4 - albumin), what is the estimated corrected calcium for total calcium 8 mg/dL and albumin 2.5 g/dL? Round to the nearest tenth.",
+    "rationale": "Use total calcium in mg/dL and albumin in g/dL: 8 + 0.8(4 - 2.5) = 8 + 1.2 = 9.2 mg/dL, or 9.2 mg/dL rounded to the nearest tenth. The other choices do not equal this rounded result. This is an albumin-adjusted total-calcium estimate, not a directly measured ionized-calcium result."
+  },
+  "calcium-phosphorus-062": {
+    "question": "Using total calcium + 0.8(4 - albumin), what is the estimated corrected calcium for total calcium 9.1 mg/dL and albumin 3 g/dL? Round to the nearest tenth.",
+    "rationale": "Use total calcium in mg/dL and albumin in g/dL: 9.1 + 0.8(4 - 3) = 9.1 + 0.8 = 9.9 mg/dL, or 9.9 mg/dL rounded to the nearest tenth. The other choices do not equal this rounded result. This is an albumin-adjusted total-calcium estimate, not a directly measured ionized-calcium result."
+  },
+  "calcium-phosphorus-063": {
+    "question": "Using total calcium + 0.8(4 - albumin), what is the estimated corrected calcium for total calcium 10.4 mg/dL and albumin 2.2 g/dL? Round to the nearest tenth.",
+    "rationale": "Use total calcium in mg/dL and albumin in g/dL: 10.4 + 0.8(4 - 2.2) = 10.4 + 1.44 = 11.84 mg/dL, or 11.8 mg/dL rounded to the nearest tenth. The other choices do not equal this rounded result. This is an albumin-adjusted total-calcium estimate, not a directly measured ionized-calcium result."
+  },
+  "calcium-phosphorus-064": {
+    "question": "Using total calcium + 0.8(4 - albumin), what is the estimated corrected calcium for total calcium 6.8 mg/dL and albumin 1.5 g/dL? Round to the nearest tenth.",
+    "rationale": "Use total calcium in mg/dL and albumin in g/dL: 6.8 + 0.8(4 - 1.5) = 6.8 + 2 = 8.8 mg/dL, or 8.8 mg/dL rounded to the nearest tenth. The other choices do not equal this rounded result. This is an albumin-adjusted total-calcium estimate, not a directly measured ionized-calcium result."
+  },
+  "calcium-phosphorus-065": {
+    "question": "Using total calcium + 0.8(4 - albumin), what is the estimated corrected calcium for total calcium 8.7 mg/dL and albumin 3.4 g/dL? Round to the nearest tenth.",
+    "rationale": "Use total calcium in mg/dL and albumin in g/dL: 8.7 + 0.8(4 - 3.4) = 8.7 + 0.48 = 9.18 mg/dL, or 9.2 mg/dL rounded to the nearest tenth. The other choices do not equal this rounded result. This is an albumin-adjusted total-calcium estimate, not a directly measured ionized-calcium result."
+  },
+  "calcium-phosphorus-066": {
+    "question": "Using total calcium + 0.8(4 - albumin), what is the estimated corrected calcium for total calcium 9.6 mg/dL and albumin 2.8 g/dL? Round to the nearest tenth.",
+    "rationale": "Use total calcium in mg/dL and albumin in g/dL: 9.6 + 0.8(4 - 2.8) = 9.6 + 0.96 = 10.56 mg/dL, or 10.6 mg/dL rounded to the nearest tenth. The other choices do not equal this rounded result. This is an albumin-adjusted total-calcium estimate, not a directly measured ionized-calcium result."
+  },
+  "calcium-phosphorus-067": {
+    "question": "Using total calcium + 0.8(4 - albumin), what is the estimated corrected calcium for total calcium 7.9 mg/dL and albumin 1.8 g/dL? Round to the nearest tenth.",
+    "rationale": "Use total calcium in mg/dL and albumin in g/dL: 7.9 + 0.8(4 - 1.8) = 7.9 + 1.76 = 9.66 mg/dL, or 9.7 mg/dL rounded to the nearest tenth. The other choices do not equal this rounded result. This is an albumin-adjusted total-calcium estimate, not a directly measured ionized-calcium result."
+  },
+  "calcium-phosphorus-068": {
+    "question": "Using total calcium + 0.8(4 - albumin), what is the estimated corrected calcium for total calcium 10.8 mg/dL and albumin 3.1 g/dL? Round to the nearest tenth.",
+    "rationale": "Use total calcium in mg/dL and albumin in g/dL: 10.8 + 0.8(4 - 3.1) = 10.8 + 0.72 = 11.52 mg/dL, or 11.5 mg/dL rounded to the nearest tenth. The other choices do not equal this rounded result. This is an albumin-adjusted total-calcium estimate, not a directly measured ionized-calcium result."
+  },
+  "calcium-phosphorus-069": {
+    "question": "Using total calcium + 0.8(4 - albumin), what is the estimated corrected calcium for total calcium 8.3 mg/dL and albumin 2.3 g/dL? Round to the nearest tenth.",
+    "rationale": "Use total calcium in mg/dL and albumin in g/dL: 8.3 + 0.8(4 - 2.3) = 8.3 + 1.36 = 9.66 mg/dL, or 9.7 mg/dL rounded to the nearest tenth. The other choices do not equal this rounded result. This is an albumin-adjusted total-calcium estimate, not a directly measured ionized-calcium result."
+  }
+};
+for (const question of calciumPhosphorusHomeostasisQuestionBank) {
+  if (Object.hasOwn(sourceReviewedCalciumMeasurementQuestions, question.id)) Object.assign(question, sourceReviewedCalciumMeasurementQuestions[question.id]);
+}

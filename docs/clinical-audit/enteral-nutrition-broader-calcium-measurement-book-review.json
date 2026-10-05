@@ -1,0 +1,2440 @@
+{
+  "updated": "2026-10-05T02:50:34.712856+00:00",
+  "unit": "enteral-nutrition:broader-calcium-measurement-book-arithmetic",
+  "status": "Twelve whole questions and one cumulative derivative verified; full lesson/parent/EN/chapters reviewing",
+  "baseCommit": "4dbcca90dc3ceb90a3750e9e38039ac37abedfb8",
+  "sourcePolicy": {
+    "privateBookOnlyForNewClaims": true,
+    "noNewOutsideSourceOpenedOrClaimAdopted": true,
+    "separateExistingGuidelineAuthorizationQuestionPending": true
+  },
+  "sourceReview": {
+    "privateBook": {
+      "identity": "Cover-verified RxPrep2023;1032PDFpages",
+      "pdfPagesTextReadRenderedAndActuallyViewed": [
+        79,
+        168,
+        968
+      ],
+      "verifiedPrintedFooters": [
+        69,
+        160,
+        958
+      ],
+      "completeAdoptedScopes": [
+        "PDF79 complete calcium total/ionized row and footnotes",
+        "PDF168 complete Calcium section, displayed formula and complete worked example32 and caption",
+        "PDF968 complete Distribution section including albumin adjustment and unbound calcium paragraph"
+      ],
+      "sourceContextReadNotNewlyAdopted": [
+        "PDF168calciumgluconateexample33 and calcium/phosphate solubility bullet list",
+        "PDF79 other complete lab rows",
+        "PDF968 bioavailability context"
+      ],
+      "sourcePage968Header": "Chapter78 visually confirmed; embedded OCR incorrectly reads76; visual header governs mapping",
+      "sourceFormula": "Albumin-adjusted total calcium(mg/dL)=total calcium(mg/dL)+0.8×[4-albumin(g/dL)]",
+      "sourceFilesOutsideGit": true
+    },
+    "additionalBookMappingEvidenceNotClinicalClosure": {
+      "pdfPages297And299TextReadRenderedActuallyViewed": true,
+      "printedFooters": [
+        289,
+        291
+      ],
+      "scopes": "Complete CKD-MBD calcium/phosphate/PTH diagram/caption and binder table; vitaminD/secondaryPTH text/table. Supports next mineral/CKD lesson mapping; does not independently verify their full modern teaching."
+    }
+  },
+  "sourceReconciliation": [
+    {
+      "issue": "Question016 keyed wording could imply the formula estimates ionized calcium; explanation used unverified general misclassification claim.",
+      "resolution": "Correct choice and full rationale specify albumin-adjusted total estimate versus directly measured ionized fraction, consistent with complete book sections. No claim this question establishes modern critical-illness/pH/CKD accuracy limits; those remain pending in full lesson."
+    },
+    {
+      "issue": "Ten arithmetic stems omit explicit rounding, while some answers are rounded and rationale shows binary floating-point tails.",
+      "resolution": "Specified final rounding to nearest tenth, retained original values/all answer keys and choices, and used independently recomputed exact decimal differences/terms/results in explanations. No inferred therapeutic dose or replacement decision."
+    },
+    {
+      "issue": "Book describes correction as required before treatment and labels albumin-low total calcium falsely low.",
+      "resolution": "Adopted formula and albumin/unbound distinction for conditional arithmetic; did not teach mandatory replacement based solely on corrected calcium. Original broader critical-illness/pH/reliability teaching retained unchanged and pending separate source reconciliation."
+    }
+  ],
+  "changes": {
+    "questions": {
+      "calcium-phosphorus-010": {
+        "before": {
+          "id": "calcium-phosphorus-010",
+          "question": "Why can total calcium be low when ionized calcium is normal?",
+          "choices": [
+            "Low albumin reduces the protein-bound fraction",
+            "PTH cannot be measured",
+            "Ionized calcium is part of albumin",
+            "Phosphate always raises albumin"
+          ],
+          "answer": 0,
+          "rationale": "A lower albumin concentration lowers bound calcium and therefore total calcium without necessarily lowering the active fraction.",
+          "reviewHref": "#calcium-measurement"
+        },
+        "after": {
+          "id": "calcium-phosphorus-010",
+          "question": "Why can total calcium be low when ionized calcium is normal?",
+          "choices": [
+            "Low albumin reduces the protein-bound fraction",
+            "PTH cannot be measured",
+            "Ionized calcium is part of albumin",
+            "Phosphate always raises albumin"
+          ],
+          "answer": 0,
+          "rationale": "Low albumin can lower the protein-bound calcium component and therefore the total calcium result without necessarily lowering ionized calcium. The book distinguishes albumin-adjusted total calcium from a directly measured unbound calcium result. PTH testing does not explain this binding effect; ionized calcium is the unbound fraction, and phosphate does not always raise albumin.",
+          "reviewHref": "#calcium-measurement"
+        }
+      },
+      "calcium-phosphorus-016": {
+        "before": {
+          "id": "calcium-phosphorus-016",
+          "question": "What is the central limitation of an albumin-corrected calcium equation?",
+          "choices": [
+            "It estimates rather than directly measures ionized calcium",
+            "It cannot use arithmetic",
+            "It is accurate only when albumin is exactly 4",
+            "It measures phosphate instead"
+          ],
+          "answer": 0,
+          "rationale": "The correction is an approximation and can misclassify patients in important clinical settings.",
+          "reviewHref": "#calcium-measurement"
+        },
+        "after": {
+          "id": "calcium-phosphorus-016",
+          "question": "What is the central limitation of an albumin-corrected calcium equation?",
+          "choices": [
+            "It gives an albumin-adjusted total-calcium estimate, not a measured ionized-calcium result",
+            "It cannot use arithmetic",
+            "It is accurate only when albumin is exactly 4",
+            "It measures phosphate instead"
+          ],
+          "answer": 0,
+          "rationale": "The book equation estimates total calcium as if albumin were 4 g/dL; it does not measure the ionized fraction. Use total calcium in mg/dL and albumin in g/dL. The equation uses ordinary arithmetic, accepts albumin values below 4, and does not measure phosphate. The book separately states that a directly measured ionized-calcium result does not require an albumin correction.",
+          "reviewHref": "#calcium-measurement"
+        }
+      },
+      "calcium-phosphorus-060": {
+        "before": {
+          "id": "calcium-phosphorus-060",
+          "question": "Using total calcium + 0.8(4 - albumin), what is the estimated corrected calcium for total calcium 7.2 mg/dL and albumin 2 g/dL?",
+          "choices": [
+            "8.8 mg/dL",
+            "7.2 mg/dL",
+            "5.6 mg/dL",
+            "9.2 mg/dL"
+          ],
+          "answer": 0,
+          "rationale": "The estimate is 7.2 + 0.8(2) = 8.8 mg/dL. It does not replace ionized calcium when precision matters.",
+          "reviewHref": "#calcium-measurement"
+        },
+        "after": {
+          "id": "calcium-phosphorus-060",
+          "question": "Using total calcium + 0.8(4 - albumin), what is the estimated corrected calcium for total calcium 7.2 mg/dL and albumin 2 g/dL? Round to the nearest tenth.",
+          "choices": [
+            "8.8 mg/dL",
+            "7.2 mg/dL",
+            "5.6 mg/dL",
+            "9.2 mg/dL"
+          ],
+          "answer": 0,
+          "rationale": "Use total calcium in mg/dL and albumin in g/dL: 7.2 + 0.8(4 - 2) = 7.2 + 1.6 = 8.8 mg/dL, or 8.8 mg/dL rounded to the nearest tenth. The other choices do not equal this rounded result. This is an albumin-adjusted total-calcium estimate, not a directly measured ionized-calcium result.",
+          "reviewHref": "#calcium-measurement"
+        }
+      },
+      "calcium-phosphorus-061": {
+        "before": {
+          "id": "calcium-phosphorus-061",
+          "question": "Using total calcium + 0.8(4 - albumin), what is the estimated corrected calcium for total calcium 8 mg/dL and albumin 2.5 g/dL?",
+          "choices": [
+            "9.2 mg/dL",
+            "8 mg/dL",
+            "6.8 mg/dL",
+            "9.5 mg/dL"
+          ],
+          "answer": 0,
+          "rationale": "The estimate is 8 + 0.8(1.5) = 9.2 mg/dL. It does not replace ionized calcium when precision matters.",
+          "reviewHref": "#calcium-measurement"
+        },
+        "after": {
+          "id": "calcium-phosphorus-061",
+          "question": "Using total calcium + 0.8(4 - albumin), what is the estimated corrected calcium for total calcium 8 mg/dL and albumin 2.5 g/dL? Round to the nearest tenth.",
+          "choices": [
+            "9.2 mg/dL",
+            "8 mg/dL",
+            "6.8 mg/dL",
+            "9.5 mg/dL"
+          ],
+          "answer": 0,
+          "rationale": "Use total calcium in mg/dL and albumin in g/dL: 8 + 0.8(4 - 2.5) = 8 + 1.2 = 9.2 mg/dL, or 9.2 mg/dL rounded to the nearest tenth. The other choices do not equal this rounded result. This is an albumin-adjusted total-calcium estimate, not a directly measured ionized-calcium result.",
+          "reviewHref": "#calcium-measurement"
+        }
+      },
+      "calcium-phosphorus-062": {
+        "before": {
+          "id": "calcium-phosphorus-062",
+          "question": "Using total calcium + 0.8(4 - albumin), what is the estimated corrected calcium for total calcium 9.1 mg/dL and albumin 3 g/dL?",
+          "choices": [
+            "9.9 mg/dL",
+            "9.1 mg/dL",
+            "8.3 mg/dL",
+            "10.1 mg/dL"
+          ],
+          "answer": 0,
+          "rationale": "The estimate is 9.1 + 0.8(1) = 9.9 mg/dL. It does not replace ionized calcium when precision matters.",
+          "reviewHref": "#calcium-measurement"
+        },
+        "after": {
+          "id": "calcium-phosphorus-062",
+          "question": "Using total calcium + 0.8(4 - albumin), what is the estimated corrected calcium for total calcium 9.1 mg/dL and albumin 3 g/dL? Round to the nearest tenth.",
+          "choices": [
+            "9.9 mg/dL",
+            "9.1 mg/dL",
+            "8.3 mg/dL",
+            "10.1 mg/dL"
+          ],
+          "answer": 0,
+          "rationale": "Use total calcium in mg/dL and albumin in g/dL: 9.1 + 0.8(4 - 3) = 9.1 + 0.8 = 9.9 mg/dL, or 9.9 mg/dL rounded to the nearest tenth. The other choices do not equal this rounded result. This is an albumin-adjusted total-calcium estimate, not a directly measured ionized-calcium result.",
+          "reviewHref": "#calcium-measurement"
+        }
+      },
+      "calcium-phosphorus-063": {
+        "before": {
+          "id": "calcium-phosphorus-063",
+          "question": "Using total calcium + 0.8(4 - albumin), what is the estimated corrected calcium for total calcium 10.4 mg/dL and albumin 2.2 g/dL?",
+          "choices": [
+            "11.8 mg/dL",
+            "10.4 mg/dL",
+            "9 mg/dL",
+            "12.2 mg/dL"
+          ],
+          "answer": 0,
+          "rationale": "The estimate is 10.4 + 0.8(1.7999999999999998) = 11.8 mg/dL. It does not replace ionized calcium when precision matters.",
+          "reviewHref": "#calcium-measurement"
+        },
+        "after": {
+          "id": "calcium-phosphorus-063",
+          "question": "Using total calcium + 0.8(4 - albumin), what is the estimated corrected calcium for total calcium 10.4 mg/dL and albumin 2.2 g/dL? Round to the nearest tenth.",
+          "choices": [
+            "11.8 mg/dL",
+            "10.4 mg/dL",
+            "9 mg/dL",
+            "12.2 mg/dL"
+          ],
+          "answer": 0,
+          "rationale": "Use total calcium in mg/dL and albumin in g/dL: 10.4 + 0.8(4 - 2.2) = 10.4 + 1.44 = 11.84 mg/dL, or 11.8 mg/dL rounded to the nearest tenth. The other choices do not equal this rounded result. This is an albumin-adjusted total-calcium estimate, not a directly measured ionized-calcium result.",
+          "reviewHref": "#calcium-measurement"
+        }
+      },
+      "calcium-phosphorus-064": {
+        "before": {
+          "id": "calcium-phosphorus-064",
+          "question": "Using total calcium + 0.8(4 - albumin), what is the estimated corrected calcium for total calcium 6.8 mg/dL and albumin 1.5 g/dL?",
+          "choices": [
+            "8.8 mg/dL",
+            "6.8 mg/dL",
+            "4.8 mg/dL",
+            "9.3 mg/dL"
+          ],
+          "answer": 0,
+          "rationale": "The estimate is 6.8 + 0.8(2.5) = 8.8 mg/dL. It does not replace ionized calcium when precision matters.",
+          "reviewHref": "#calcium-measurement"
+        },
+        "after": {
+          "id": "calcium-phosphorus-064",
+          "question": "Using total calcium + 0.8(4 - albumin), what is the estimated corrected calcium for total calcium 6.8 mg/dL and albumin 1.5 g/dL? Round to the nearest tenth.",
+          "choices": [
+            "8.8 mg/dL",
+            "6.8 mg/dL",
+            "4.8 mg/dL",
+            "9.3 mg/dL"
+          ],
+          "answer": 0,
+          "rationale": "Use total calcium in mg/dL and albumin in g/dL: 6.8 + 0.8(4 - 1.5) = 6.8 + 2 = 8.8 mg/dL, or 8.8 mg/dL rounded to the nearest tenth. The other choices do not equal this rounded result. This is an albumin-adjusted total-calcium estimate, not a directly measured ionized-calcium result.",
+          "reviewHref": "#calcium-measurement"
+        }
+      },
+      "calcium-phosphorus-065": {
+        "before": {
+          "id": "calcium-phosphorus-065",
+          "question": "Using total calcium + 0.8(4 - albumin), what is the estimated corrected calcium for total calcium 8.7 mg/dL and albumin 3.4 g/dL?",
+          "choices": [
+            "9.2 mg/dL",
+            "8.7 mg/dL",
+            "8.2 mg/dL",
+            "9.3 mg/dL"
+          ],
+          "answer": 0,
+          "rationale": "The estimate is 8.7 + 0.8(0.6000000000000001) = 9.2 mg/dL. It does not replace ionized calcium when precision matters.",
+          "reviewHref": "#calcium-measurement"
+        },
+        "after": {
+          "id": "calcium-phosphorus-065",
+          "question": "Using total calcium + 0.8(4 - albumin), what is the estimated corrected calcium for total calcium 8.7 mg/dL and albumin 3.4 g/dL? Round to the nearest tenth.",
+          "choices": [
+            "9.2 mg/dL",
+            "8.7 mg/dL",
+            "8.2 mg/dL",
+            "9.3 mg/dL"
+          ],
+          "answer": 0,
+          "rationale": "Use total calcium in mg/dL and albumin in g/dL: 8.7 + 0.8(4 - 3.4) = 8.7 + 0.48 = 9.18 mg/dL, or 9.2 mg/dL rounded to the nearest tenth. The other choices do not equal this rounded result. This is an albumin-adjusted total-calcium estimate, not a directly measured ionized-calcium result.",
+          "reviewHref": "#calcium-measurement"
+        }
+      },
+      "calcium-phosphorus-066": {
+        "before": {
+          "id": "calcium-phosphorus-066",
+          "question": "Using total calcium + 0.8(4 - albumin), what is the estimated corrected calcium for total calcium 9.6 mg/dL and albumin 2.8 g/dL?",
+          "choices": [
+            "10.6 mg/dL",
+            "9.6 mg/dL",
+            "8.6 mg/dL",
+            "10.8 mg/dL"
+          ],
+          "answer": 0,
+          "rationale": "The estimate is 9.6 + 0.8(1.2000000000000002) = 10.6 mg/dL. It does not replace ionized calcium when precision matters.",
+          "reviewHref": "#calcium-measurement"
+        },
+        "after": {
+          "id": "calcium-phosphorus-066",
+          "question": "Using total calcium + 0.8(4 - albumin), what is the estimated corrected calcium for total calcium 9.6 mg/dL and albumin 2.8 g/dL? Round to the nearest tenth.",
+          "choices": [
+            "10.6 mg/dL",
+            "9.6 mg/dL",
+            "8.6 mg/dL",
+            "10.8 mg/dL"
+          ],
+          "answer": 0,
+          "rationale": "Use total calcium in mg/dL and albumin in g/dL: 9.6 + 0.8(4 - 2.8) = 9.6 + 0.96 = 10.56 mg/dL, or 10.6 mg/dL rounded to the nearest tenth. The other choices do not equal this rounded result. This is an albumin-adjusted total-calcium estimate, not a directly measured ionized-calcium result.",
+          "reviewHref": "#calcium-measurement"
+        }
+      },
+      "calcium-phosphorus-067": {
+        "before": {
+          "id": "calcium-phosphorus-067",
+          "question": "Using total calcium + 0.8(4 - albumin), what is the estimated corrected calcium for total calcium 7.9 mg/dL and albumin 1.8 g/dL?",
+          "choices": [
+            "9.7 mg/dL",
+            "7.9 mg/dL",
+            "6.1 mg/dL",
+            "10.1 mg/dL"
+          ],
+          "answer": 0,
+          "rationale": "The estimate is 7.9 + 0.8(2.2) = 9.7 mg/dL. It does not replace ionized calcium when precision matters.",
+          "reviewHref": "#calcium-measurement"
+        },
+        "after": {
+          "id": "calcium-phosphorus-067",
+          "question": "Using total calcium + 0.8(4 - albumin), what is the estimated corrected calcium for total calcium 7.9 mg/dL and albumin 1.8 g/dL? Round to the nearest tenth.",
+          "choices": [
+            "9.7 mg/dL",
+            "7.9 mg/dL",
+            "6.1 mg/dL",
+            "10.1 mg/dL"
+          ],
+          "answer": 0,
+          "rationale": "Use total calcium in mg/dL and albumin in g/dL: 7.9 + 0.8(4 - 1.8) = 7.9 + 1.76 = 9.66 mg/dL, or 9.7 mg/dL rounded to the nearest tenth. The other choices do not equal this rounded result. This is an albumin-adjusted total-calcium estimate, not a directly measured ionized-calcium result.",
+          "reviewHref": "#calcium-measurement"
+        }
+      },
+      "calcium-phosphorus-068": {
+        "before": {
+          "id": "calcium-phosphorus-068",
+          "question": "Using total calcium + 0.8(4 - albumin), what is the estimated corrected calcium for total calcium 10.8 mg/dL and albumin 3.1 g/dL?",
+          "choices": [
+            "11.5 mg/dL",
+            "10.8 mg/dL",
+            "10.1 mg/dL",
+            "11.7 mg/dL"
+          ],
+          "answer": 0,
+          "rationale": "The estimate is 10.8 + 0.8(0.8999999999999999) = 11.5 mg/dL. It does not replace ionized calcium when precision matters.",
+          "reviewHref": "#calcium-measurement"
+        },
+        "after": {
+          "id": "calcium-phosphorus-068",
+          "question": "Using total calcium + 0.8(4 - albumin), what is the estimated corrected calcium for total calcium 10.8 mg/dL and albumin 3.1 g/dL? Round to the nearest tenth.",
+          "choices": [
+            "11.5 mg/dL",
+            "10.8 mg/dL",
+            "10.1 mg/dL",
+            "11.7 mg/dL"
+          ],
+          "answer": 0,
+          "rationale": "Use total calcium in mg/dL and albumin in g/dL: 10.8 + 0.8(4 - 3.1) = 10.8 + 0.72 = 11.52 mg/dL, or 11.5 mg/dL rounded to the nearest tenth. The other choices do not equal this rounded result. This is an albumin-adjusted total-calcium estimate, not a directly measured ionized-calcium result.",
+          "reviewHref": "#calcium-measurement"
+        }
+      },
+      "calcium-phosphorus-069": {
+        "before": {
+          "id": "calcium-phosphorus-069",
+          "question": "Using total calcium + 0.8(4 - albumin), what is the estimated corrected calcium for total calcium 8.3 mg/dL and albumin 2.3 g/dL?",
+          "choices": [
+            "9.7 mg/dL",
+            "8.3 mg/dL",
+            "6.9 mg/dL",
+            "10 mg/dL"
+          ],
+          "answer": 0,
+          "rationale": "The estimate is 8.3 + 0.8(1.7000000000000002) = 9.7 mg/dL. It does not replace ionized calcium when precision matters.",
+          "reviewHref": "#calcium-measurement"
+        },
+        "after": {
+          "id": "calcium-phosphorus-069",
+          "question": "Using total calcium + 0.8(4 - albumin), what is the estimated corrected calcium for total calcium 8.3 mg/dL and albumin 2.3 g/dL? Round to the nearest tenth.",
+          "choices": [
+            "9.7 mg/dL",
+            "8.3 mg/dL",
+            "6.9 mg/dL",
+            "10 mg/dL"
+          ],
+          "answer": 0,
+          "rationale": "Use total calcium in mg/dL and albumin in g/dL: 8.3 + 0.8(4 - 2.3) = 8.3 + 1.36 = 9.66 mg/dL, or 9.7 mg/dL rounded to the nearest tenth. The other choices do not equal this rounded result. This is an albumin-adjusted total-calcium estimate, not a directly measured ionized-calcium result.",
+          "reviewHref": "#calcium-measurement"
+        }
+      }
+    },
+    "wholeBodies": [],
+    "figures": [],
+    "checks": {}
+  },
+  "coverage": {
+    "evidence": "enteral-nutrition-broader-calcium-measurement-book-review.json",
+    "moduleQuestions": 102,
+    "wholeQuestionsVerified": 12,
+    "newVerifiedBankIds": [
+      "calcium-phosphorus-010",
+      "calcium-phosphorus-016",
+      "calcium-phosphorus-060",
+      "calcium-phosphorus-061",
+      "calcium-phosphorus-062",
+      "calcium-phosphorus-063",
+      "calcium-phosphorus-064",
+      "calcium-phosphorus-065",
+      "calcium-phosphorus-066",
+      "calcium-phosphorus-067",
+      "calcium-phosphorus-068",
+      "calcium-phosphorus-069"
+    ],
+    "newQuestionIdsAdded": 0,
+    "broaderFeedingBankVerifiedAfter": 247,
+    "independentlyRecomputedModuleCalculations": 10,
+    "derivedCumulative060Verified": true,
+    "calciumMeasurementQuestionTotal": 21,
+    "calciumMeasurementRemainingQuestionIds": [
+      "calcium-phosphorus-011",
+      "calcium-phosphorus-012",
+      "calcium-phosphorus-013",
+      "calcium-phosphorus-014",
+      "calcium-phosphorus-015",
+      "calcium-phosphorus-017",
+      "calcium-phosphorus-090",
+      "calcium-phosphorus-092",
+      "calcium-phosphorus-102"
+    ],
+    "wholeLessonBodiesNewlyVerified": 0,
+    "wholeLessonMetadataNewlyVerified": false,
+    "wholeCalciumMeasurementLessonVerified": false,
+    "wholeParentModuleVerified": false,
+    "wholeENModuleVerified": false,
+    "wholeChaptersVerified": false,
+    "all102QuestionIdsKeysAnchorsOrderPreserved": true,
+    "all1180CumulativeIdsKeysAnchorsOrderPreserved": true,
+    "other1179CumulativeWholeObjectsUnchanged": true
+  },
+  "questionReview": [
+    {
+      "before": {
+        "id": "calcium-phosphorus-010",
+        "question": "Why can total calcium be low when ionized calcium is normal?",
+        "choices": [
+          "Low albumin reduces the protein-bound fraction",
+          "PTH cannot be measured",
+          "Ionized calcium is part of albumin",
+          "Phosphate always raises albumin"
+        ],
+        "answer": 0,
+        "rationale": "A lower albumin concentration lowers bound calcium and therefore total calcium without necessarily lowering the active fraction.",
+        "reviewHref": "#calcium-measurement"
+      },
+      "final": {
+        "id": "calcium-phosphorus-010",
+        "question": "Why can total calcium be low when ionized calcium is normal?",
+        "choices": [
+          "Low albumin reduces the protein-bound fraction",
+          "PTH cannot be measured",
+          "Ionized calcium is part of albumin",
+          "Phosphate always raises albumin"
+        ],
+        "answer": 0,
+        "rationale": "Low albumin can lower the protein-bound calcium component and therefore the total calcium result without necessarily lowering ionized calcium. The book distinguishes albumin-adjusted total calcium from a directly measured unbound calcium result. PTH testing does not explain this binding effect; ionized calcium is the unbound fraction, and phosphate does not always raise albumin.",
+        "reviewHref": "#calcium-measurement"
+      },
+      "wholeStemAllAlternativesKeyRationaleAndAnchorVerified": true,
+      "sourceScope": "PDF168completeformula/example32 plusPDF79calciumrow andPDF968unbound/albumin Distribution section",
+      "newlyCounted": true
+    },
+    {
+      "before": {
+        "id": "calcium-phosphorus-016",
+        "question": "What is the central limitation of an albumin-corrected calcium equation?",
+        "choices": [
+          "It estimates rather than directly measures ionized calcium",
+          "It cannot use arithmetic",
+          "It is accurate only when albumin is exactly 4",
+          "It measures phosphate instead"
+        ],
+        "answer": 0,
+        "rationale": "The correction is an approximation and can misclassify patients in important clinical settings.",
+        "reviewHref": "#calcium-measurement"
+      },
+      "final": {
+        "id": "calcium-phosphorus-016",
+        "question": "What is the central limitation of an albumin-corrected calcium equation?",
+        "choices": [
+          "It gives an albumin-adjusted total-calcium estimate, not a measured ionized-calcium result",
+          "It cannot use arithmetic",
+          "It is accurate only when albumin is exactly 4",
+          "It measures phosphate instead"
+        ],
+        "answer": 0,
+        "rationale": "The book equation estimates total calcium as if albumin were 4 g/dL; it does not measure the ionized fraction. Use total calcium in mg/dL and albumin in g/dL. The equation uses ordinary arithmetic, accepts albumin values below 4, and does not measure phosphate. The book separately states that a directly measured ionized-calcium result does not require an albumin correction.",
+        "reviewHref": "#calcium-measurement"
+      },
+      "wholeStemAllAlternativesKeyRationaleAndAnchorVerified": true,
+      "sourceScope": "PDF168completeformula/example32 plusPDF79calciumrow andPDF968unbound/albumin Distribution section",
+      "newlyCounted": true
+    },
+    {
+      "before": {
+        "id": "calcium-phosphorus-060",
+        "question": "Using total calcium + 0.8(4 - albumin), what is the estimated corrected calcium for total calcium 7.2 mg/dL and albumin 2 g/dL?",
+        "choices": [
+          "8.8 mg/dL",
+          "7.2 mg/dL",
+          "5.6 mg/dL",
+          "9.2 mg/dL"
+        ],
+        "answer": 0,
+        "rationale": "The estimate is 7.2 + 0.8(2) = 8.8 mg/dL. It does not replace ionized calcium when precision matters.",
+        "reviewHref": "#calcium-measurement"
+      },
+      "final": {
+        "id": "calcium-phosphorus-060",
+        "question": "Using total calcium + 0.8(4 - albumin), what is the estimated corrected calcium for total calcium 7.2 mg/dL and albumin 2 g/dL? Round to the nearest tenth.",
+        "choices": [
+          "8.8 mg/dL",
+          "7.2 mg/dL",
+          "5.6 mg/dL",
+          "9.2 mg/dL"
+        ],
+        "answer": 0,
+        "rationale": "Use total calcium in mg/dL and albumin in g/dL: 7.2 + 0.8(4 - 2) = 7.2 + 1.6 = 8.8 mg/dL, or 8.8 mg/dL rounded to the nearest tenth. The other choices do not equal this rounded result. This is an albumin-adjusted total-calcium estimate, not a directly measured ionized-calcium result.",
+        "reviewHref": "#calcium-measurement"
+      },
+      "wholeStemAllAlternativesKeyRationaleAndAnchorVerified": true,
+      "sourceScope": "PDF168completeformula/example32 plusPDF79calciumrow andPDF968unbound/albumin Distribution section",
+      "newlyCounted": true
+    },
+    {
+      "before": {
+        "id": "calcium-phosphorus-061",
+        "question": "Using total calcium + 0.8(4 - albumin), what is the estimated corrected calcium for total calcium 8 mg/dL and albumin 2.5 g/dL?",
+        "choices": [
+          "9.2 mg/dL",
+          "8 mg/dL",
+          "6.8 mg/dL",
+          "9.5 mg/dL"
+        ],
+        "answer": 0,
+        "rationale": "The estimate is 8 + 0.8(1.5) = 9.2 mg/dL. It does not replace ionized calcium when precision matters.",
+        "reviewHref": "#calcium-measurement"
+      },
+      "final": {
+        "id": "calcium-phosphorus-061",
+        "question": "Using total calcium + 0.8(4 - albumin), what is the estimated corrected calcium for total calcium 8 mg/dL and albumin 2.5 g/dL? Round to the nearest tenth.",
+        "choices": [
+          "9.2 mg/dL",
+          "8 mg/dL",
+          "6.8 mg/dL",
+          "9.5 mg/dL"
+        ],
+        "answer": 0,
+        "rationale": "Use total calcium in mg/dL and albumin in g/dL: 8 + 0.8(4 - 2.5) = 8 + 1.2 = 9.2 mg/dL, or 9.2 mg/dL rounded to the nearest tenth. The other choices do not equal this rounded result. This is an albumin-adjusted total-calcium estimate, not a directly measured ionized-calcium result.",
+        "reviewHref": "#calcium-measurement"
+      },
+      "wholeStemAllAlternativesKeyRationaleAndAnchorVerified": true,
+      "sourceScope": "PDF168completeformula/example32 plusPDF79calciumrow andPDF968unbound/albumin Distribution section",
+      "newlyCounted": true
+    },
+    {
+      "before": {
+        "id": "calcium-phosphorus-062",
+        "question": "Using total calcium + 0.8(4 - albumin), what is the estimated corrected calcium for total calcium 9.1 mg/dL and albumin 3 g/dL?",
+        "choices": [
+          "9.9 mg/dL",
+          "9.1 mg/dL",
+          "8.3 mg/dL",
+          "10.1 mg/dL"
+        ],
+        "answer": 0,
+        "rationale": "The estimate is 9.1 + 0.8(1) = 9.9 mg/dL. It does not replace ionized calcium when precision matters.",
+        "reviewHref": "#calcium-measurement"
+      },
+      "final": {
+        "id": "calcium-phosphorus-062",
+        "question": "Using total calcium + 0.8(4 - albumin), what is the estimated corrected calcium for total calcium 9.1 mg/dL and albumin 3 g/dL? Round to the nearest tenth.",
+        "choices": [
+          "9.9 mg/dL",
+          "9.1 mg/dL",
+          "8.3 mg/dL",
+          "10.1 mg/dL"
+        ],
+        "answer": 0,
+        "rationale": "Use total calcium in mg/dL and albumin in g/dL: 9.1 + 0.8(4 - 3) = 9.1 + 0.8 = 9.9 mg/dL, or 9.9 mg/dL rounded to the nearest tenth. The other choices do not equal this rounded result. This is an albumin-adjusted total-calcium estimate, not a directly measured ionized-calcium result.",
+        "reviewHref": "#calcium-measurement"
+      },
+      "wholeStemAllAlternativesKeyRationaleAndAnchorVerified": true,
+      "sourceScope": "PDF168completeformula/example32 plusPDF79calciumrow andPDF968unbound/albumin Distribution section",
+      "newlyCounted": true
+    },
+    {
+      "before": {
+        "id": "calcium-phosphorus-063",
+        "question": "Using total calcium + 0.8(4 - albumin), what is the estimated corrected calcium for total calcium 10.4 mg/dL and albumin 2.2 g/dL?",
+        "choices": [
+          "11.8 mg/dL",
+          "10.4 mg/dL",
+          "9 mg/dL",
+          "12.2 mg/dL"
+        ],
+        "answer": 0,
+        "rationale": "The estimate is 10.4 + 0.8(1.7999999999999998) = 11.8 mg/dL. It does not replace ionized calcium when precision matters.",
+        "reviewHref": "#calcium-measurement"
+      },
+      "final": {
+        "id": "calcium-phosphorus-063",
+        "question": "Using total calcium + 0.8(4 - albumin), what is the estimated corrected calcium for total calcium 10.4 mg/dL and albumin 2.2 g/dL? Round to the nearest tenth.",
+        "choices": [
+          "11.8 mg/dL",
+          "10.4 mg/dL",
+          "9 mg/dL",
+          "12.2 mg/dL"
+        ],
+        "answer": 0,
+        "rationale": "Use total calcium in mg/dL and albumin in g/dL: 10.4 + 0.8(4 - 2.2) = 10.4 + 1.44 = 11.84 mg/dL, or 11.8 mg/dL rounded to the nearest tenth. The other choices do not equal this rounded result. This is an albumin-adjusted total-calcium estimate, not a directly measured ionized-calcium result.",
+        "reviewHref": "#calcium-measurement"
+      },
+      "wholeStemAllAlternativesKeyRationaleAndAnchorVerified": true,
+      "sourceScope": "PDF168completeformula/example32 plusPDF79calciumrow andPDF968unbound/albumin Distribution section",
+      "newlyCounted": true
+    },
+    {
+      "before": {
+        "id": "calcium-phosphorus-064",
+        "question": "Using total calcium + 0.8(4 - albumin), what is the estimated corrected calcium for total calcium 6.8 mg/dL and albumin 1.5 g/dL?",
+        "choices": [
+          "8.8 mg/dL",
+          "6.8 mg/dL",
+          "4.8 mg/dL",
+          "9.3 mg/dL"
+        ],
+        "answer": 0,
+        "rationale": "The estimate is 6.8 + 0.8(2.5) = 8.8 mg/dL. It does not replace ionized calcium when precision matters.",
+        "reviewHref": "#calcium-measurement"
+      },
+      "final": {
+        "id": "calcium-phosphorus-064",
+        "question": "Using total calcium + 0.8(4 - albumin), what is the estimated corrected calcium for total calcium 6.8 mg/dL and albumin 1.5 g/dL? Round to the nearest tenth.",
+        "choices": [
+          "8.8 mg/dL",
+          "6.8 mg/dL",
+          "4.8 mg/dL",
+          "9.3 mg/dL"
+        ],
+        "answer": 0,
+        "rationale": "Use total calcium in mg/dL and albumin in g/dL: 6.8 + 0.8(4 - 1.5) = 6.8 + 2 = 8.8 mg/dL, or 8.8 mg/dL rounded to the nearest tenth. The other choices do not equal this rounded result. This is an albumin-adjusted total-calcium estimate, not a directly measured ionized-calcium result.",
+        "reviewHref": "#calcium-measurement"
+      },
+      "wholeStemAllAlternativesKeyRationaleAndAnchorVerified": true,
+      "sourceScope": "PDF168completeformula/example32 plusPDF79calciumrow andPDF968unbound/albumin Distribution section",
+      "newlyCounted": true
+    },
+    {
+      "before": {
+        "id": "calcium-phosphorus-065",
+        "question": "Using total calcium + 0.8(4 - albumin), what is the estimated corrected calcium for total calcium 8.7 mg/dL and albumin 3.4 g/dL?",
+        "choices": [
+          "9.2 mg/dL",
+          "8.7 mg/dL",
+          "8.2 mg/dL",
+          "9.3 mg/dL"
+        ],
+        "answer": 0,
+        "rationale": "The estimate is 8.7 + 0.8(0.6000000000000001) = 9.2 mg/dL. It does not replace ionized calcium when precision matters.",
+        "reviewHref": "#calcium-measurement"
+      },
+      "final": {
+        "id": "calcium-phosphorus-065",
+        "question": "Using total calcium + 0.8(4 - albumin), what is the estimated corrected calcium for total calcium 8.7 mg/dL and albumin 3.4 g/dL? Round to the nearest tenth.",
+        "choices": [
+          "9.2 mg/dL",
+          "8.7 mg/dL",
+          "8.2 mg/dL",
+          "9.3 mg/dL"
+        ],
+        "answer": 0,
+        "rationale": "Use total calcium in mg/dL and albumin in g/dL: 8.7 + 0.8(4 - 3.4) = 8.7 + 0.48 = 9.18 mg/dL, or 9.2 mg/dL rounded to the nearest tenth. The other choices do not equal this rounded result. This is an albumin-adjusted total-calcium estimate, not a directly measured ionized-calcium result.",
+        "reviewHref": "#calcium-measurement"
+      },
+      "wholeStemAllAlternativesKeyRationaleAndAnchorVerified": true,
+      "sourceScope": "PDF168completeformula/example32 plusPDF79calciumrow andPDF968unbound/albumin Distribution section",
+      "newlyCounted": true
+    },
+    {
+      "before": {
+        "id": "calcium-phosphorus-066",
+        "question": "Using total calcium + 0.8(4 - albumin), what is the estimated corrected calcium for total calcium 9.6 mg/dL and albumin 2.8 g/dL?",
+        "choices": [
+          "10.6 mg/dL",
+          "9.6 mg/dL",
+          "8.6 mg/dL",
+          "10.8 mg/dL"
+        ],
+        "answer": 0,
+        "rationale": "The estimate is 9.6 + 0.8(1.2000000000000002) = 10.6 mg/dL. It does not replace ionized calcium when precision matters.",
+        "reviewHref": "#calcium-measurement"
+      },
+      "final": {
+        "id": "calcium-phosphorus-066",
+        "question": "Using total calcium + 0.8(4 - albumin), what is the estimated corrected calcium for total calcium 9.6 mg/dL and albumin 2.8 g/dL? Round to the nearest tenth.",
+        "choices": [
+          "10.6 mg/dL",
+          "9.6 mg/dL",
+          "8.6 mg/dL",
+          "10.8 mg/dL"
+        ],
+        "answer": 0,
+        "rationale": "Use total calcium in mg/dL and albumin in g/dL: 9.6 + 0.8(4 - 2.8) = 9.6 + 0.96 = 10.56 mg/dL, or 10.6 mg/dL rounded to the nearest tenth. The other choices do not equal this rounded result. This is an albumin-adjusted total-calcium estimate, not a directly measured ionized-calcium result.",
+        "reviewHref": "#calcium-measurement"
+      },
+      "wholeStemAllAlternativesKeyRationaleAndAnchorVerified": true,
+      "sourceScope": "PDF168completeformula/example32 plusPDF79calciumrow andPDF968unbound/albumin Distribution section",
+      "newlyCounted": true
+    },
+    {
+      "before": {
+        "id": "calcium-phosphorus-067",
+        "question": "Using total calcium + 0.8(4 - albumin), what is the estimated corrected calcium for total calcium 7.9 mg/dL and albumin 1.8 g/dL?",
+        "choices": [
+          "9.7 mg/dL",
+          "7.9 mg/dL",
+          "6.1 mg/dL",
+          "10.1 mg/dL"
+        ],
+        "answer": 0,
+        "rationale": "The estimate is 7.9 + 0.8(2.2) = 9.7 mg/dL. It does not replace ionized calcium when precision matters.",
+        "reviewHref": "#calcium-measurement"
+      },
+      "final": {
+        "id": "calcium-phosphorus-067",
+        "question": "Using total calcium + 0.8(4 - albumin), what is the estimated corrected calcium for total calcium 7.9 mg/dL and albumin 1.8 g/dL? Round to the nearest tenth.",
+        "choices": [
+          "9.7 mg/dL",
+          "7.9 mg/dL",
+          "6.1 mg/dL",
+          "10.1 mg/dL"
+        ],
+        "answer": 0,
+        "rationale": "Use total calcium in mg/dL and albumin in g/dL: 7.9 + 0.8(4 - 1.8) = 7.9 + 1.76 = 9.66 mg/dL, or 9.7 mg/dL rounded to the nearest tenth. The other choices do not equal this rounded result. This is an albumin-adjusted total-calcium estimate, not a directly measured ionized-calcium result.",
+        "reviewHref": "#calcium-measurement"
+      },
+      "wholeStemAllAlternativesKeyRationaleAndAnchorVerified": true,
+      "sourceScope": "PDF168completeformula/example32 plusPDF79calciumrow andPDF968unbound/albumin Distribution section",
+      "newlyCounted": true
+    },
+    {
+      "before": {
+        "id": "calcium-phosphorus-068",
+        "question": "Using total calcium + 0.8(4 - albumin), what is the estimated corrected calcium for total calcium 10.8 mg/dL and albumin 3.1 g/dL?",
+        "choices": [
+          "11.5 mg/dL",
+          "10.8 mg/dL",
+          "10.1 mg/dL",
+          "11.7 mg/dL"
+        ],
+        "answer": 0,
+        "rationale": "The estimate is 10.8 + 0.8(0.8999999999999999) = 11.5 mg/dL. It does not replace ionized calcium when precision matters.",
+        "reviewHref": "#calcium-measurement"
+      },
+      "final": {
+        "id": "calcium-phosphorus-068",
+        "question": "Using total calcium + 0.8(4 - albumin), what is the estimated corrected calcium for total calcium 10.8 mg/dL and albumin 3.1 g/dL? Round to the nearest tenth.",
+        "choices": [
+          "11.5 mg/dL",
+          "10.8 mg/dL",
+          "10.1 mg/dL",
+          "11.7 mg/dL"
+        ],
+        "answer": 0,
+        "rationale": "Use total calcium in mg/dL and albumin in g/dL: 10.8 + 0.8(4 - 3.1) = 10.8 + 0.72 = 11.52 mg/dL, or 11.5 mg/dL rounded to the nearest tenth. The other choices do not equal this rounded result. This is an albumin-adjusted total-calcium estimate, not a directly measured ionized-calcium result.",
+        "reviewHref": "#calcium-measurement"
+      },
+      "wholeStemAllAlternativesKeyRationaleAndAnchorVerified": true,
+      "sourceScope": "PDF168completeformula/example32 plusPDF79calciumrow andPDF968unbound/albumin Distribution section",
+      "newlyCounted": true
+    },
+    {
+      "before": {
+        "id": "calcium-phosphorus-069",
+        "question": "Using total calcium + 0.8(4 - albumin), what is the estimated corrected calcium for total calcium 8.3 mg/dL and albumin 2.3 g/dL?",
+        "choices": [
+          "9.7 mg/dL",
+          "8.3 mg/dL",
+          "6.9 mg/dL",
+          "10 mg/dL"
+        ],
+        "answer": 0,
+        "rationale": "The estimate is 8.3 + 0.8(1.7000000000000002) = 9.7 mg/dL. It does not replace ionized calcium when precision matters.",
+        "reviewHref": "#calcium-measurement"
+      },
+      "final": {
+        "id": "calcium-phosphorus-069",
+        "question": "Using total calcium + 0.8(4 - albumin), what is the estimated corrected calcium for total calcium 8.3 mg/dL and albumin 2.3 g/dL? Round to the nearest tenth.",
+        "choices": [
+          "9.7 mg/dL",
+          "8.3 mg/dL",
+          "6.9 mg/dL",
+          "10 mg/dL"
+        ],
+        "answer": 0,
+        "rationale": "Use total calcium in mg/dL and albumin in g/dL: 8.3 + 0.8(4 - 2.3) = 8.3 + 1.36 = 9.66 mg/dL, or 9.7 mg/dL rounded to the nearest tenth. The other choices do not equal this rounded result. This is an albumin-adjusted total-calcium estimate, not a directly measured ionized-calcium result.",
+        "reviewHref": "#calcium-measurement"
+      },
+      "wholeStemAllAlternativesKeyRationaleAndAnchorVerified": true,
+      "sourceScope": "PDF168completeformula/example32 plusPDF79calciumrow andPDF968unbound/albumin Distribution section",
+      "newlyCounted": true
+    }
+  ],
+  "cumulativeReview": {
+    "final": {
+      "id": "cumulative-calcium-phosphorus-homeostasis-calcium-phosphorus-060",
+      "question": "Using total calcium + 0.8(4 - albumin), what is the estimated corrected calcium for total calcium 7.2 mg/dL and albumin 2 g/dL? Round to the nearest tenth.",
+      "choices": [
+        "8.8 mg/dL",
+        "7.2 mg/dL",
+        "5.6 mg/dL",
+        "9.2 mg/dL"
+      ],
+      "answer": 0,
+      "rationale": "Use total calcium in mg/dL and albumin in g/dL: 7.2 + 0.8(4 - 2) = 7.2 + 1.6 = 8.8 mg/dL, or 8.8 mg/dL rounded to the nearest tenth. The other choices do not equal this rounded result. This is an albumin-adjusted total-calcium estimate, not a directly measured ionized-calcium result.",
+      "reviewHref": "/learn/pharmacy/modules/calcium-phosphorus-homeostasis",
+      "module": "Calcium and Phosphorus Homeostasis"
+    },
+    "wholeStemAlternativesKeyRationaleAndModuleLinkVerified": true,
+    "sourceModuleQuestionId": "calcium-phosphorus-060",
+    "derivedObjectReconciled": true,
+    "desktopMobileBothFeedbackStatesVerified": true
+  },
+  "calculations": {
+    "status": "passed",
+    "method": "Independent Python Decimal recomputation; exact differences/terms retained, ROUND_HALF_UP at final tenth; all four alternatives checked",
+    "moduleCalculations": [
+      {
+        "id": "calcium-phosphorus-060",
+        "calciumMgDl": "7.2",
+        "albuminGDl": "2",
+        "albuminDifference": "2",
+        "correctionTermMgDl": "1.6",
+        "exactEstimateMgDl": "8.8",
+        "roundedTenthMgDl": "8.8",
+        "keyedChoice": "8.8 mg/dL",
+        "allFourAlternativesChecked": true
+      },
+      {
+        "id": "calcium-phosphorus-061",
+        "calciumMgDl": "8",
+        "albuminGDl": "2.5",
+        "albuminDifference": "1.5",
+        "correctionTermMgDl": "1.20",
+        "exactEstimateMgDl": "9.20",
+        "roundedTenthMgDl": "9.2",
+        "keyedChoice": "9.2 mg/dL",
+        "allFourAlternativesChecked": true
+      },
+      {
+        "id": "calcium-phosphorus-062",
+        "calciumMgDl": "9.1",
+        "albuminGDl": "3",
+        "albuminDifference": "1",
+        "correctionTermMgDl": "0.8",
+        "exactEstimateMgDl": "9.9",
+        "roundedTenthMgDl": "9.9",
+        "keyedChoice": "9.9 mg/dL",
+        "allFourAlternativesChecked": true
+      },
+      {
+        "id": "calcium-phosphorus-063",
+        "calciumMgDl": "10.4",
+        "albuminGDl": "2.2",
+        "albuminDifference": "1.8",
+        "correctionTermMgDl": "1.44",
+        "exactEstimateMgDl": "11.84",
+        "roundedTenthMgDl": "11.8",
+        "keyedChoice": "11.8 mg/dL",
+        "allFourAlternativesChecked": true
+      },
+      {
+        "id": "calcium-phosphorus-064",
+        "calciumMgDl": "6.8",
+        "albuminGDl": "1.5",
+        "albuminDifference": "2.5",
+        "correctionTermMgDl": "2.00",
+        "exactEstimateMgDl": "8.80",
+        "roundedTenthMgDl": "8.8",
+        "keyedChoice": "8.8 mg/dL",
+        "allFourAlternativesChecked": true
+      },
+      {
+        "id": "calcium-phosphorus-065",
+        "calciumMgDl": "8.7",
+        "albuminGDl": "3.4",
+        "albuminDifference": "0.6",
+        "correctionTermMgDl": "0.48",
+        "exactEstimateMgDl": "9.18",
+        "roundedTenthMgDl": "9.2",
+        "keyedChoice": "9.2 mg/dL",
+        "allFourAlternativesChecked": true
+      },
+      {
+        "id": "calcium-phosphorus-066",
+        "calciumMgDl": "9.6",
+        "albuminGDl": "2.8",
+        "albuminDifference": "1.2",
+        "correctionTermMgDl": "0.96",
+        "exactEstimateMgDl": "10.56",
+        "roundedTenthMgDl": "10.6",
+        "keyedChoice": "10.6 mg/dL",
+        "allFourAlternativesChecked": true
+      },
+      {
+        "id": "calcium-phosphorus-067",
+        "calciumMgDl": "7.9",
+        "albuminGDl": "1.8",
+        "albuminDifference": "2.2",
+        "correctionTermMgDl": "1.76",
+        "exactEstimateMgDl": "9.66",
+        "roundedTenthMgDl": "9.7",
+        "keyedChoice": "9.7 mg/dL",
+        "allFourAlternativesChecked": true
+      },
+      {
+        "id": "calcium-phosphorus-068",
+        "calciumMgDl": "10.8",
+        "albuminGDl": "3.1",
+        "albuminDifference": "0.9",
+        "correctionTermMgDl": "0.72",
+        "exactEstimateMgDl": "11.52",
+        "roundedTenthMgDl": "11.5",
+        "keyedChoice": "11.5 mg/dL",
+        "allFourAlternativesChecked": true
+      },
+      {
+        "id": "calcium-phosphorus-069",
+        "calciumMgDl": "8.3",
+        "albuminGDl": "2.3",
+        "albuminDifference": "1.7",
+        "correctionTermMgDl": "1.36",
+        "exactEstimateMgDl": "9.66",
+        "roundedTenthMgDl": "9.7",
+        "keyedChoice": "9.7 mg/dL",
+        "allFourAlternativesChecked": true
+      }
+    ],
+    "sourceWorkedExample32": {
+      "totalCalciumMgDl": "7.6",
+      "albuminGDl": "1.5",
+      "estimateMgDl": "9.6",
+      "recomputed": "7.6+0.8*(4-1.5)=9.6"
+    },
+    "calciumGluconatePNExample33": "Read for source context, not newly adopted dosing or newly taught calculation."
+  },
+  "validation": {
+    "productionBuild": {
+      "status": "passed",
+      "exitCode": 0,
+      "pages": 567,
+      "isolatedBaseCommit": "4dbcca90dc3ceb90a3750e9e38039ac37abedfb8"
+    },
+    "structure": {
+      "status": "passed",
+      "questions": 102,
+      "hardErrors": [],
+      "sourceGaps": [],
+      "notClinicalClosureOfWholeModule": true
+    },
+    "objectPreservation": {
+      "status": "passed",
+      "all102StableIdsAnswerKeysAnchorsAndOrderPreserved": true,
+      "onlyTenStemsGainExplicitRounding": true,
+      "onlyQuestion016CorrectChoiceClarified": true,
+      "onlyTwelveRationalesChanged": true,
+      "other90QuestionWholeObjectsUnchanged": true,
+      "allLessonBodiesMetadataFiguresChecksReferencesUnchanged": true,
+      "oneDerivedCumulative060Reconciled": true,
+      "other1179CumulativeWholeObjectsUnchanged": true,
+      "all1180CumulativeIdsKeysAnchorsOrderPreserved": true,
+      "allOtherModuleWholeObjectsUnchanged": true
+    },
+    "finalSourceComparison": {
+      "status": "passed",
+      "finalFullQuestionObjectsComparedAgain": 12,
+      "bookCalciumFormulaAndUnitsComparedAgain": true,
+      "bookWorkedExample32Recomputed": true,
+      "ionizedVersusAlbuminAdjustedTotalReconciledWithCompleteBookScopes": true,
+      "sourcePage968ChapterHeaderVisuallyResolvedAs78": true,
+      "OCRTextMisread78As76NotUsedForChapterMapping": true,
+      "noNewClaimOfClinicalFormulaAccuracyInCriticalIllnessOrKidneyDisease": true,
+      "broaderLessonStillPending": true
+    },
+    "browser": {
+      "status": "passed",
+      "results": [
+        {
+          "width": 1440,
+          "module": "calcium-phosphorus-homeostasis",
+          "bodies": 25,
+          "exactMetadata": true,
+          "checkResults": [],
+          "references": 14,
+          "wholeLessonClinicalVerification": false,
+          "bookSupportedQuestionScopeVerified": true,
+          "attempts": [
+            {
+              "target": "calcium-phosphorus-010",
+              "seed": 8,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-029",
+                "calcium-phosphorus-072",
+                "calcium-phosphorus-050",
+                "calcium-phosphorus-024",
+                "calcium-phosphorus-049",
+                "calcium-phosphorus-045",
+                "calcium-phosphorus-034",
+                "calcium-phosphorus-109",
+                "calcium-phosphorus-010",
+                "calcium-phosphorus-032"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-010",
+              "seed": 8,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-029",
+                "calcium-phosphorus-072",
+                "calcium-phosphorus-050",
+                "calcium-phosphorus-024",
+                "calcium-phosphorus-049",
+                "calcium-phosphorus-045",
+                "calcium-phosphorus-034",
+                "calcium-phosphorus-109",
+                "calcium-phosphorus-010",
+                "calcium-phosphorus-032"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-016",
+              "seed": 20,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-004",
+                "calcium-phosphorus-031",
+                "calcium-phosphorus-020",
+                "calcium-phosphorus-023",
+                "calcium-phosphorus-016",
+                "calcium-phosphorus-038",
+                "calcium-phosphorus-013",
+                "calcium-phosphorus-094",
+                "calcium-phosphorus-028",
+                "calcium-phosphorus-105"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-016",
+              "seed": 20,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-004",
+                "calcium-phosphorus-031",
+                "calcium-phosphorus-020",
+                "calcium-phosphorus-023",
+                "calcium-phosphorus-016",
+                "calcium-phosphorus-038",
+                "calcium-phosphorus-013",
+                "calcium-phosphorus-094",
+                "calcium-phosphorus-028",
+                "calcium-phosphorus-105"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-060",
+              "seed": 15,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-106",
+                "calcium-phosphorus-070",
+                "calcium-phosphorus-024",
+                "calcium-phosphorus-092",
+                "calcium-phosphorus-011",
+                "calcium-phosphorus-072",
+                "calcium-phosphorus-005",
+                "calcium-phosphorus-090",
+                "calcium-phosphorus-075",
+                "calcium-phosphorus-060"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-060",
+              "seed": 15,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-106",
+                "calcium-phosphorus-070",
+                "calcium-phosphorus-024",
+                "calcium-phosphorus-092",
+                "calcium-phosphorus-011",
+                "calcium-phosphorus-072",
+                "calcium-phosphorus-005",
+                "calcium-phosphorus-090",
+                "calcium-phosphorus-075",
+                "calcium-phosphorus-060"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-061",
+              "seed": 27,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-061",
+                "calcium-phosphorus-043",
+                "calcium-phosphorus-098",
+                "calcium-phosphorus-073",
+                "calcium-phosphorus-106",
+                "calcium-phosphorus-064",
+                "calcium-phosphorus-011",
+                "calcium-phosphorus-046",
+                "calcium-phosphorus-103",
+                "calcium-phosphorus-iron-repeat-monitoring"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-061",
+              "seed": 27,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-061",
+                "calcium-phosphorus-043",
+                "calcium-phosphorus-098",
+                "calcium-phosphorus-073",
+                "calcium-phosphorus-106",
+                "calcium-phosphorus-064",
+                "calcium-phosphorus-011",
+                "calcium-phosphorus-046",
+                "calcium-phosphorus-103",
+                "calcium-phosphorus-iron-repeat-monitoring"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-062",
+              "seed": 3,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-089",
+                "calcium-phosphorus-007",
+                "calcium-phosphorus-002",
+                "calcium-phosphorus-094",
+                "calcium-phosphorus-084",
+                "calcium-phosphorus-104",
+                "calcium-phosphorus-020",
+                "calcium-phosphorus-100",
+                "calcium-phosphorus-062",
+                "calcium-phosphorus-034"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-062",
+              "seed": 3,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-089",
+                "calcium-phosphorus-007",
+                "calcium-phosphorus-002",
+                "calcium-phosphorus-094",
+                "calcium-phosphorus-084",
+                "calcium-phosphorus-104",
+                "calcium-phosphorus-020",
+                "calcium-phosphorus-100",
+                "calcium-phosphorus-062",
+                "calcium-phosphorus-034"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-063",
+              "seed": 25,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-063",
+                "calcium-phosphorus-108",
+                "calcium-phosphorus-040",
+                "calcium-phosphorus-008",
+                "calcium-phosphorus-025",
+                "calcium-phosphorus-045",
+                "calcium-phosphorus-018",
+                "calcium-phosphorus-107",
+                "calcium-phosphorus-087",
+                "calcium-phosphorus-077"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-063",
+              "seed": 25,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-063",
+                "calcium-phosphorus-108",
+                "calcium-phosphorus-040",
+                "calcium-phosphorus-008",
+                "calcium-phosphorus-025",
+                "calcium-phosphorus-045",
+                "calcium-phosphorus-018",
+                "calcium-phosphorus-107",
+                "calcium-phosphorus-087",
+                "calcium-phosphorus-077"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-064",
+              "seed": 19,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-043",
+                "calcium-phosphorus-074",
+                "calcium-phosphorus-012",
+                "calcium-phosphorus-018",
+                "calcium-phosphorus-013",
+                "calcium-phosphorus-064",
+                "calcium-phosphorus-078",
+                "calcium-phosphorus-099",
+                "calcium-phosphorus-007",
+                "calcium-phosphorus-084"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-064",
+              "seed": 19,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-043",
+                "calcium-phosphorus-074",
+                "calcium-phosphorus-012",
+                "calcium-phosphorus-018",
+                "calcium-phosphorus-013",
+                "calcium-phosphorus-064",
+                "calcium-phosphorus-078",
+                "calcium-phosphorus-099",
+                "calcium-phosphorus-007",
+                "calcium-phosphorus-084"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-065",
+              "seed": 10,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-109",
+                "calcium-phosphorus-003",
+                "calcium-phosphorus-107",
+                "calcium-phosphorus-049",
+                "calcium-phosphorus-065",
+                "calcium-phosphorus-069",
+                "calcium-phosphorus-104",
+                "calcium-phosphorus-103",
+                "calcium-phosphorus-092",
+                "calcium-phosphorus-030"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-065",
+              "seed": 10,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-109",
+                "calcium-phosphorus-003",
+                "calcium-phosphorus-107",
+                "calcium-phosphorus-049",
+                "calcium-phosphorus-065",
+                "calcium-phosphorus-069",
+                "calcium-phosphorus-104",
+                "calcium-phosphorus-103",
+                "calcium-phosphorus-092",
+                "calcium-phosphorus-030"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-066",
+              "seed": 7,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-086",
+                "calcium-phosphorus-019",
+                "calcium-phosphorus-043",
+                "calcium-phosphorus-066",
+                "calcium-phosphorus-027",
+                "calcium-phosphorus-077",
+                "calcium-phosphorus-109",
+                "calcium-phosphorus-071",
+                "calcium-phosphorus-011",
+                "calcium-phosphorus-095"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-066",
+              "seed": 7,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-086",
+                "calcium-phosphorus-019",
+                "calcium-phosphorus-043",
+                "calcium-phosphorus-066",
+                "calcium-phosphorus-027",
+                "calcium-phosphorus-077",
+                "calcium-phosphorus-109",
+                "calcium-phosphorus-071",
+                "calcium-phosphorus-011",
+                "calcium-phosphorus-095"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-067",
+              "seed": 17,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-076",
+                "calcium-phosphorus-080",
+                "calcium-phosphorus-067",
+                "calcium-phosphorus-083",
+                "calcium-phosphorus-iron-persistent-warning",
+                "calcium-phosphorus-005",
+                "calcium-phosphorus-032",
+                "calcium-phosphorus-098",
+                "calcium-phosphorus-100",
+                "calcium-phosphorus-106"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-067",
+              "seed": 17,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-076",
+                "calcium-phosphorus-080",
+                "calcium-phosphorus-067",
+                "calcium-phosphorus-083",
+                "calcium-phosphorus-iron-persistent-warning",
+                "calcium-phosphorus-005",
+                "calcium-phosphorus-032",
+                "calcium-phosphorus-098",
+                "calcium-phosphorus-100",
+                "calcium-phosphorus-106"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-068",
+              "seed": 13,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-047",
+                "calcium-phosphorus-041",
+                "calcium-phosphorus-039",
+                "calcium-phosphorus-075",
+                "calcium-phosphorus-062",
+                "calcium-phosphorus-014",
+                "calcium-phosphorus-091",
+                "calcium-phosphorus-068",
+                "calcium-phosphorus-083",
+                "calcium-phosphorus-048"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-068",
+              "seed": 13,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-047",
+                "calcium-phosphorus-041",
+                "calcium-phosphorus-039",
+                "calcium-phosphorus-075",
+                "calcium-phosphorus-062",
+                "calcium-phosphorus-014",
+                "calcium-phosphorus-091",
+                "calcium-phosphorus-068",
+                "calcium-phosphorus-083",
+                "calcium-phosphorus-048"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-069",
+              "seed": 10,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-109",
+                "calcium-phosphorus-003",
+                "calcium-phosphorus-107",
+                "calcium-phosphorus-049",
+                "calcium-phosphorus-065",
+                "calcium-phosphorus-069",
+                "calcium-phosphorus-104",
+                "calcium-phosphorus-103",
+                "calcium-phosphorus-092",
+                "calcium-phosphorus-030"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-069",
+              "seed": 10,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-109",
+                "calcium-phosphorus-003",
+                "calcium-phosphorus-107",
+                "calcium-phosphorus-049",
+                "calcium-phosphorus-065",
+                "calcium-phosphorus-069",
+                "calcium-phosphorus-104",
+                "calcium-phosphorus-103",
+                "calcium-phosphorus-092",
+                "calcium-phosphorus-030"
+              ]
+            }
+          ],
+          "noHorizontalOverflow": true,
+          "unauthenticated": true
+        },
+        {
+          "width": 390,
+          "module": "calcium-phosphorus-homeostasis",
+          "bodies": 25,
+          "exactMetadata": true,
+          "checkResults": [],
+          "references": 14,
+          "wholeLessonClinicalVerification": false,
+          "bookSupportedQuestionScopeVerified": true,
+          "attempts": [
+            {
+              "target": "calcium-phosphorus-010",
+              "seed": 8,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-029",
+                "calcium-phosphorus-072",
+                "calcium-phosphorus-050",
+                "calcium-phosphorus-024",
+                "calcium-phosphorus-049",
+                "calcium-phosphorus-045",
+                "calcium-phosphorus-034",
+                "calcium-phosphorus-109",
+                "calcium-phosphorus-010",
+                "calcium-phosphorus-032"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-010",
+              "seed": 8,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-029",
+                "calcium-phosphorus-072",
+                "calcium-phosphorus-050",
+                "calcium-phosphorus-024",
+                "calcium-phosphorus-049",
+                "calcium-phosphorus-045",
+                "calcium-phosphorus-034",
+                "calcium-phosphorus-109",
+                "calcium-phosphorus-010",
+                "calcium-phosphorus-032"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-016",
+              "seed": 20,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-004",
+                "calcium-phosphorus-031",
+                "calcium-phosphorus-020",
+                "calcium-phosphorus-023",
+                "calcium-phosphorus-016",
+                "calcium-phosphorus-038",
+                "calcium-phosphorus-013",
+                "calcium-phosphorus-094",
+                "calcium-phosphorus-028",
+                "calcium-phosphorus-105"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-016",
+              "seed": 20,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-004",
+                "calcium-phosphorus-031",
+                "calcium-phosphorus-020",
+                "calcium-phosphorus-023",
+                "calcium-phosphorus-016",
+                "calcium-phosphorus-038",
+                "calcium-phosphorus-013",
+                "calcium-phosphorus-094",
+                "calcium-phosphorus-028",
+                "calcium-phosphorus-105"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-060",
+              "seed": 15,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-106",
+                "calcium-phosphorus-070",
+                "calcium-phosphorus-024",
+                "calcium-phosphorus-092",
+                "calcium-phosphorus-011",
+                "calcium-phosphorus-072",
+                "calcium-phosphorus-005",
+                "calcium-phosphorus-090",
+                "calcium-phosphorus-075",
+                "calcium-phosphorus-060"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-060",
+              "seed": 15,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-106",
+                "calcium-phosphorus-070",
+                "calcium-phosphorus-024",
+                "calcium-phosphorus-092",
+                "calcium-phosphorus-011",
+                "calcium-phosphorus-072",
+                "calcium-phosphorus-005",
+                "calcium-phosphorus-090",
+                "calcium-phosphorus-075",
+                "calcium-phosphorus-060"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-061",
+              "seed": 27,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-061",
+                "calcium-phosphorus-043",
+                "calcium-phosphorus-098",
+                "calcium-phosphorus-073",
+                "calcium-phosphorus-106",
+                "calcium-phosphorus-064",
+                "calcium-phosphorus-011",
+                "calcium-phosphorus-046",
+                "calcium-phosphorus-103",
+                "calcium-phosphorus-iron-repeat-monitoring"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-061",
+              "seed": 27,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-061",
+                "calcium-phosphorus-043",
+                "calcium-phosphorus-098",
+                "calcium-phosphorus-073",
+                "calcium-phosphorus-106",
+                "calcium-phosphorus-064",
+                "calcium-phosphorus-011",
+                "calcium-phosphorus-046",
+                "calcium-phosphorus-103",
+                "calcium-phosphorus-iron-repeat-monitoring"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-062",
+              "seed": 3,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-089",
+                "calcium-phosphorus-007",
+                "calcium-phosphorus-002",
+                "calcium-phosphorus-094",
+                "calcium-phosphorus-084",
+                "calcium-phosphorus-104",
+                "calcium-phosphorus-020",
+                "calcium-phosphorus-100",
+                "calcium-phosphorus-062",
+                "calcium-phosphorus-034"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-062",
+              "seed": 3,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-089",
+                "calcium-phosphorus-007",
+                "calcium-phosphorus-002",
+                "calcium-phosphorus-094",
+                "calcium-phosphorus-084",
+                "calcium-phosphorus-104",
+                "calcium-phosphorus-020",
+                "calcium-phosphorus-100",
+                "calcium-phosphorus-062",
+                "calcium-phosphorus-034"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-063",
+              "seed": 25,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-063",
+                "calcium-phosphorus-108",
+                "calcium-phosphorus-040",
+                "calcium-phosphorus-008",
+                "calcium-phosphorus-025",
+                "calcium-phosphorus-045",
+                "calcium-phosphorus-018",
+                "calcium-phosphorus-107",
+                "calcium-phosphorus-087",
+                "calcium-phosphorus-077"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-063",
+              "seed": 25,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-063",
+                "calcium-phosphorus-108",
+                "calcium-phosphorus-040",
+                "calcium-phosphorus-008",
+                "calcium-phosphorus-025",
+                "calcium-phosphorus-045",
+                "calcium-phosphorus-018",
+                "calcium-phosphorus-107",
+                "calcium-phosphorus-087",
+                "calcium-phosphorus-077"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-064",
+              "seed": 19,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-043",
+                "calcium-phosphorus-074",
+                "calcium-phosphorus-012",
+                "calcium-phosphorus-018",
+                "calcium-phosphorus-013",
+                "calcium-phosphorus-064",
+                "calcium-phosphorus-078",
+                "calcium-phosphorus-099",
+                "calcium-phosphorus-007",
+                "calcium-phosphorus-084"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-064",
+              "seed": 19,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-043",
+                "calcium-phosphorus-074",
+                "calcium-phosphorus-012",
+                "calcium-phosphorus-018",
+                "calcium-phosphorus-013",
+                "calcium-phosphorus-064",
+                "calcium-phosphorus-078",
+                "calcium-phosphorus-099",
+                "calcium-phosphorus-007",
+                "calcium-phosphorus-084"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-065",
+              "seed": 10,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-109",
+                "calcium-phosphorus-003",
+                "calcium-phosphorus-107",
+                "calcium-phosphorus-049",
+                "calcium-phosphorus-065",
+                "calcium-phosphorus-069",
+                "calcium-phosphorus-104",
+                "calcium-phosphorus-103",
+                "calcium-phosphorus-092",
+                "calcium-phosphorus-030"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-065",
+              "seed": 10,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-109",
+                "calcium-phosphorus-003",
+                "calcium-phosphorus-107",
+                "calcium-phosphorus-049",
+                "calcium-phosphorus-065",
+                "calcium-phosphorus-069",
+                "calcium-phosphorus-104",
+                "calcium-phosphorus-103",
+                "calcium-phosphorus-092",
+                "calcium-phosphorus-030"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-066",
+              "seed": 7,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-086",
+                "calcium-phosphorus-019",
+                "calcium-phosphorus-043",
+                "calcium-phosphorus-066",
+                "calcium-phosphorus-027",
+                "calcium-phosphorus-077",
+                "calcium-phosphorus-109",
+                "calcium-phosphorus-071",
+                "calcium-phosphorus-011",
+                "calcium-phosphorus-095"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-066",
+              "seed": 7,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-086",
+                "calcium-phosphorus-019",
+                "calcium-phosphorus-043",
+                "calcium-phosphorus-066",
+                "calcium-phosphorus-027",
+                "calcium-phosphorus-077",
+                "calcium-phosphorus-109",
+                "calcium-phosphorus-071",
+                "calcium-phosphorus-011",
+                "calcium-phosphorus-095"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-067",
+              "seed": 17,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-076",
+                "calcium-phosphorus-080",
+                "calcium-phosphorus-067",
+                "calcium-phosphorus-083",
+                "calcium-phosphorus-iron-persistent-warning",
+                "calcium-phosphorus-005",
+                "calcium-phosphorus-032",
+                "calcium-phosphorus-098",
+                "calcium-phosphorus-100",
+                "calcium-phosphorus-106"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-067",
+              "seed": 17,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-076",
+                "calcium-phosphorus-080",
+                "calcium-phosphorus-067",
+                "calcium-phosphorus-083",
+                "calcium-phosphorus-iron-persistent-warning",
+                "calcium-phosphorus-005",
+                "calcium-phosphorus-032",
+                "calcium-phosphorus-098",
+                "calcium-phosphorus-100",
+                "calcium-phosphorus-106"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-068",
+              "seed": 13,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-047",
+                "calcium-phosphorus-041",
+                "calcium-phosphorus-039",
+                "calcium-phosphorus-075",
+                "calcium-phosphorus-062",
+                "calcium-phosphorus-014",
+                "calcium-phosphorus-091",
+                "calcium-phosphorus-068",
+                "calcium-phosphorus-083",
+                "calcium-phosphorus-048"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-068",
+              "seed": 13,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-047",
+                "calcium-phosphorus-041",
+                "calcium-phosphorus-039",
+                "calcium-phosphorus-075",
+                "calcium-phosphorus-062",
+                "calcium-phosphorus-014",
+                "calcium-phosphorus-091",
+                "calcium-phosphorus-068",
+                "calcium-phosphorus-083",
+                "calcium-phosphorus-048"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-069",
+              "seed": 10,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-109",
+                "calcium-phosphorus-003",
+                "calcium-phosphorus-107",
+                "calcium-phosphorus-049",
+                "calcium-phosphorus-065",
+                "calcium-phosphorus-069",
+                "calcium-phosphorus-104",
+                "calcium-phosphorus-103",
+                "calcium-phosphorus-092",
+                "calcium-phosphorus-030"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-069",
+              "seed": 10,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-109",
+                "calcium-phosphorus-003",
+                "calcium-phosphorus-107",
+                "calcium-phosphorus-049",
+                "calcium-phosphorus-065",
+                "calcium-phosphorus-069",
+                "calcium-phosphorus-104",
+                "calcium-phosphorus-103",
+                "calcium-phosphorus-092",
+                "calcium-phosphorus-030"
+              ]
+            }
+          ],
+          "noHorizontalOverflow": true,
+          "unauthenticated": true
+        },
+        {
+          "width": 1440,
+          "route": "cumulative",
+          "attempts": [
+            {
+              "id": "cumulative-calcium-phosphorus-homeostasis-calcium-phosphorus-060",
+              "wrong": true,
+              "seed": 437,
+              "feedbackAndModuleLinkVerified": true
+            },
+            {
+              "id": "cumulative-calcium-phosphorus-homeostasis-calcium-phosphorus-060",
+              "wrong": false,
+              "seed": 437,
+              "feedbackAndModuleLinkVerified": true
+            }
+          ]
+        },
+        {
+          "width": 390,
+          "route": "cumulative",
+          "attempts": [
+            {
+              "id": "cumulative-calcium-phosphorus-homeostasis-calcium-phosphorus-060",
+              "wrong": true,
+              "seed": 437,
+              "feedbackAndModuleLinkVerified": true
+            },
+            {
+              "id": "cumulative-calcium-phosphorus-homeostasis-calcium-phosphorus-060",
+              "wrong": false,
+              "seed": 437,
+              "feedbackAndModuleLinkVerified": true
+            }
+          ]
+        }
+      ],
+      "errors": [],
+      "captures": [
+        "references-module-1440.png",
+        "question-calcium-phosphorus-010-correct-1440.png",
+        "question-calcium-phosphorus-016-correct-1440.png",
+        "question-calcium-phosphorus-060-correct-1440.png",
+        "question-calcium-phosphorus-061-correct-1440.png",
+        "question-calcium-phosphorus-062-correct-1440.png",
+        "question-calcium-phosphorus-063-correct-1440.png",
+        "question-calcium-phosphorus-064-correct-1440.png",
+        "question-calcium-phosphorus-065-correct-1440.png",
+        "question-calcium-phosphorus-066-correct-1440.png",
+        "question-calcium-phosphorus-067-correct-1440.png",
+        "question-calcium-phosphorus-068-correct-1440.png",
+        "question-calcium-phosphorus-069-correct-1440.png",
+        "references-module-390.png",
+        "question-calcium-phosphorus-010-incorrect-390.png",
+        "question-calcium-phosphorus-016-incorrect-390.png",
+        "question-calcium-phosphorus-060-incorrect-390.png",
+        "question-calcium-phosphorus-061-incorrect-390.png",
+        "question-calcium-phosphorus-062-incorrect-390.png",
+        "question-calcium-phosphorus-063-incorrect-390.png",
+        "question-calcium-phosphorus-064-incorrect-390.png",
+        "question-calcium-phosphorus-065-incorrect-390.png",
+        "question-calcium-phosphorus-066-incorrect-390.png",
+        "question-calcium-phosphorus-067-incorrect-390.png",
+        "question-calcium-phosphorus-068-incorrect-390.png",
+        "question-calcium-phosphorus-069-incorrect-390.png",
+        "cumulative-060-incorrect-1440.png",
+        "cumulative-060-correct-1440.png",
+        "cumulative-060-incorrect-390.png",
+        "cumulative-060-correct-390.png"
+      ]
+    },
+    "browserSupplement": {
+      "status": "passed",
+      "results": [
+        {
+          "width": 1440,
+          "module": "calcium-phosphorus-homeostasis",
+          "bodies": 25,
+          "exactMetadata": true,
+          "checkResults": [],
+          "references": 14,
+          "wholeLessonClinicalVerification": false,
+          "bookSupportedQuestionScopeVerified": true,
+          "attempts": [
+            {
+              "target": "calcium-phosphorus-062",
+              "seed": 3,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-089",
+                "calcium-phosphorus-007",
+                "calcium-phosphorus-002",
+                "calcium-phosphorus-094",
+                "calcium-phosphorus-084",
+                "calcium-phosphorus-104",
+                "calcium-phosphorus-020",
+                "calcium-phosphorus-100",
+                "calcium-phosphorus-062",
+                "calcium-phosphorus-034"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-063",
+              "seed": 25,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-063",
+                "calcium-phosphorus-108",
+                "calcium-phosphorus-040",
+                "calcium-phosphorus-008",
+                "calcium-phosphorus-025",
+                "calcium-phosphorus-045",
+                "calcium-phosphorus-018",
+                "calcium-phosphorus-107",
+                "calcium-phosphorus-087",
+                "calcium-phosphorus-077"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-065",
+              "seed": 10,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-109",
+                "calcium-phosphorus-003",
+                "calcium-phosphorus-107",
+                "calcium-phosphorus-049",
+                "calcium-phosphorus-065",
+                "calcium-phosphorus-069",
+                "calcium-phosphorus-104",
+                "calcium-phosphorus-103",
+                "calcium-phosphorus-092",
+                "calcium-phosphorus-030"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-067",
+              "seed": 17,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-076",
+                "calcium-phosphorus-080",
+                "calcium-phosphorus-067",
+                "calcium-phosphorus-083",
+                "calcium-phosphorus-iron-persistent-warning",
+                "calcium-phosphorus-005",
+                "calcium-phosphorus-032",
+                "calcium-phosphorus-098",
+                "calcium-phosphorus-100",
+                "calcium-phosphorus-106"
+              ]
+            }
+          ],
+          "noHorizontalOverflow": true,
+          "unauthenticated": true
+        },
+        {
+          "width": 390,
+          "module": "calcium-phosphorus-homeostasis",
+          "bodies": 25,
+          "exactMetadata": true,
+          "checkResults": [],
+          "references": 14,
+          "wholeLessonClinicalVerification": false,
+          "bookSupportedQuestionScopeVerified": true,
+          "attempts": [
+            {
+              "target": "calcium-phosphorus-062",
+              "seed": 3,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-089",
+                "calcium-phosphorus-007",
+                "calcium-phosphorus-002",
+                "calcium-phosphorus-094",
+                "calcium-phosphorus-084",
+                "calcium-phosphorus-104",
+                "calcium-phosphorus-020",
+                "calcium-phosphorus-100",
+                "calcium-phosphorus-062",
+                "calcium-phosphorus-034"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-063",
+              "seed": 25,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-063",
+                "calcium-phosphorus-108",
+                "calcium-phosphorus-040",
+                "calcium-phosphorus-008",
+                "calcium-phosphorus-025",
+                "calcium-phosphorus-045",
+                "calcium-phosphorus-018",
+                "calcium-phosphorus-107",
+                "calcium-phosphorus-087",
+                "calcium-phosphorus-077"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-065",
+              "seed": 10,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-109",
+                "calcium-phosphorus-003",
+                "calcium-phosphorus-107",
+                "calcium-phosphorus-049",
+                "calcium-phosphorus-065",
+                "calcium-phosphorus-069",
+                "calcium-phosphorus-104",
+                "calcium-phosphorus-103",
+                "calcium-phosphorus-092",
+                "calcium-phosphorus-030"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-067",
+              "seed": 17,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-076",
+                "calcium-phosphorus-080",
+                "calcium-phosphorus-067",
+                "calcium-phosphorus-083",
+                "calcium-phosphorus-iron-persistent-warning",
+                "calcium-phosphorus-005",
+                "calcium-phosphorus-032",
+                "calcium-phosphorus-098",
+                "calcium-phosphorus-100",
+                "calcium-phosphorus-106"
+              ]
+            }
+          ],
+          "noHorizontalOverflow": true,
+          "unauthenticated": true
+        }
+      ],
+      "errors": [],
+      "captures": [
+        "recapture-question-calcium-phosphorus-062-correct-1440.png",
+        "recapture-question-calcium-phosphorus-063-correct-1440.png",
+        "recapture-question-calcium-phosphorus-065-correct-1440.png",
+        "recapture-question-calcium-phosphorus-067-correct-1440.png",
+        "recapture-question-calcium-phosphorus-062-incorrect-390.png",
+        "recapture-question-calcium-phosphorus-063-incorrect-390.png",
+        "recapture-question-calcium-phosphorus-065-incorrect-390.png",
+        "recapture-question-calcium-phosphorus-067-incorrect-390.png"
+      ]
+    },
+    "visualInspection": {
+      "status": "passed",
+      "rawCapturesInspected": 38,
+      "initialRawCaptures": 30,
+      "supplementalRawCaptures": 8,
+      "nativeComparisonFiles": 19,
+      "comparisonsActuallyViewedDirectly": 18,
+      "referenceComparisonInspectedViaTwoNativeCrops": true,
+      "question063MobileHeaderNativeCropActuallyViewed": true,
+      "allTwelveModuleQuestionStemsChoicesFeedbackAndReviewLinksInspected": true,
+      "oneCumulativeDerivativeBothStatesBothSizesInspected": true,
+      "privateBookPagesActuallyViewed": [
+        79,
+        168,
+        968
+      ],
+      "additionalBookMappingPagesViewed": [
+        297,
+        299
+      ],
+      "limits": "Some initial question captures showed clipped portions; farther-offset supplemental captures and the native063mobileheader crop provide complete readable text. No claim every scroll position is unobstructed. Reference labels/hrefs unchanged and technically compared, not fresh clinical-source authorization or verification."
+    },
+    "visualManifest": [
+      {
+        "comparison": "visual-compare-1.png",
+        "rawCaptures": [
+          "references-module-1440.png",
+          "references-module-390.png"
+        ],
+        "nativePixelsPreserved": true,
+        "canvasDimensions": [
+          1309,
+          1325
+        ]
+      },
+      {
+        "comparison": "visual-compare-2.png",
+        "rawCaptures": [
+          "question-calcium-phosphorus-010-correct-1440.png",
+          "question-calcium-phosphorus-010-incorrect-390.png"
+        ],
+        "nativePixelsPreserved": true,
+        "canvasDimensions": [
+          1309,
+          709
+        ]
+      },
+      {
+        "comparison": "visual-compare-3.png",
+        "rawCaptures": [
+          "question-calcium-phosphorus-016-correct-1440.png",
+          "question-calcium-phosphorus-016-incorrect-390.png"
+        ],
+        "nativePixelsPreserved": true,
+        "canvasDimensions": [
+          1309,
+          727
+        ]
+      },
+      {
+        "comparison": "visual-compare-4.png",
+        "rawCaptures": [
+          "question-calcium-phosphorus-060-correct-1440.png",
+          "question-calcium-phosphorus-060-incorrect-390.png"
+        ],
+        "nativePixelsPreserved": true,
+        "canvasDimensions": [
+          1309,
+          701
+        ]
+      },
+      {
+        "comparison": "visual-compare-5.png",
+        "rawCaptures": [
+          "question-calcium-phosphorus-061-correct-1440.png",
+          "question-calcium-phosphorus-061-incorrect-390.png"
+        ],
+        "nativePixelsPreserved": true,
+        "canvasDimensions": [
+          1309,
+          700
+        ]
+      },
+      {
+        "comparison": "visual-compare-6.png",
+        "rawCaptures": [
+          "question-calcium-phosphorus-062-correct-1440.png",
+          "question-calcium-phosphorus-062-incorrect-390.png"
+        ],
+        "nativePixelsPreserved": true,
+        "canvasDimensions": [
+          1309,
+          700
+        ]
+      },
+      {
+        "comparison": "visual-compare-7.png",
+        "rawCaptures": [
+          "question-calcium-phosphorus-063-correct-1440.png",
+          "question-calcium-phosphorus-063-incorrect-390.png"
+        ],
+        "nativePixelsPreserved": true,
+        "canvasDimensions": [
+          1309,
+          700
+        ]
+      },
+      {
+        "comparison": "visual-compare-8.png",
+        "rawCaptures": [
+          "question-calcium-phosphorus-064-correct-1440.png",
+          "question-calcium-phosphorus-064-incorrect-390.png"
+        ],
+        "nativePixelsPreserved": true,
+        "canvasDimensions": [
+          1309,
+          701
+        ]
+      },
+      {
+        "comparison": "visual-compare-9.png",
+        "rawCaptures": [
+          "question-calcium-phosphorus-065-correct-1440.png",
+          "question-calcium-phosphorus-065-incorrect-390.png"
+        ],
+        "nativePixelsPreserved": true,
+        "canvasDimensions": [
+          1309,
+          701
+        ]
+      },
+      {
+        "comparison": "visual-compare-10.png",
+        "rawCaptures": [
+          "question-calcium-phosphorus-066-correct-1440.png",
+          "question-calcium-phosphorus-066-incorrect-390.png"
+        ],
+        "nativePixelsPreserved": true,
+        "canvasDimensions": [
+          1309,
+          700
+        ]
+      },
+      {
+        "comparison": "visual-compare-11.png",
+        "rawCaptures": [
+          "question-calcium-phosphorus-067-correct-1440.png",
+          "question-calcium-phosphorus-067-incorrect-390.png"
+        ],
+        "nativePixelsPreserved": true,
+        "canvasDimensions": [
+          1309,
+          700
+        ]
+      },
+      {
+        "comparison": "visual-compare-12.png",
+        "rawCaptures": [
+          "question-calcium-phosphorus-068-correct-1440.png",
+          "question-calcium-phosphorus-068-incorrect-390.png"
+        ],
+        "nativePixelsPreserved": true,
+        "canvasDimensions": [
+          1309,
+          701
+        ]
+      },
+      {
+        "comparison": "visual-compare-13.png",
+        "rawCaptures": [
+          "question-calcium-phosphorus-069-correct-1440.png",
+          "question-calcium-phosphorus-069-incorrect-390.png"
+        ],
+        "nativePixelsPreserved": true,
+        "canvasDimensions": [
+          1309,
+          700
+        ]
+      },
+      {
+        "comparison": "visual-compare-14.png",
+        "rawCaptures": [
+          "cumulative-060-incorrect-1440.png",
+          "cumulative-060-incorrect-390.png"
+        ],
+        "nativePixelsPreserved": true,
+        "canvasDimensions": [
+          1411,
+          701
+        ]
+      },
+      {
+        "comparison": "visual-compare-15.png",
+        "rawCaptures": [
+          "cumulative-060-correct-1440.png",
+          "cumulative-060-correct-390.png"
+        ],
+        "nativePixelsPreserved": true,
+        "canvasDimensions": [
+          1411,
+          701
+        ]
+      }
+    ],
+    "visualSupplementManifest": [
+      {
+        "comparison": "visual-supplement-1.png",
+        "rawCaptures": [
+          "recapture-question-calcium-phosphorus-062-correct-1440.png",
+          "recapture-question-calcium-phosphorus-062-incorrect-390.png"
+        ],
+        "nativePixelsPreserved": true
+      },
+      {
+        "comparison": "visual-supplement-2.png",
+        "rawCaptures": [
+          "recapture-question-calcium-phosphorus-063-correct-1440.png",
+          "recapture-question-calcium-phosphorus-063-incorrect-390.png"
+        ],
+        "nativePixelsPreserved": true
+      },
+      {
+        "comparison": "visual-supplement-3.png",
+        "rawCaptures": [
+          "recapture-question-calcium-phosphorus-065-correct-1440.png",
+          "recapture-question-calcium-phosphorus-065-incorrect-390.png"
+        ],
+        "nativePixelsPreserved": true
+      },
+      {
+        "comparison": "visual-supplement-4.png",
+        "rawCaptures": [
+          "recapture-question-calcium-phosphorus-067-correct-1440.png",
+          "recapture-question-calcium-phosphorus-067-incorrect-390.png"
+        ],
+        "nativePixelsPreserved": true
+      }
+    ],
+    "limits": "Unauthenticated isolated local preview. Exact DOM checks do not establish clinical verification of untouched lesson content. No main merge or production verification.",
+    "draftPreservation": {
+      "status": "passed",
+      "baselinePathsChecked": 809,
+      "allUnrelatedDraftBytesAndDeletionsPreserved": true,
+      "dirtyQuestionBankBaselineRecoveredByRemovingExactScopedTail": true,
+      "allOtherWorkingLedgerFieldsPreserved": true,
+      "allOtherCommittedLedgerEntriesPreserved": true,
+      "onlyHeadDerivedVerifiedProductStagedOrCommitted": true,
+      "scope": [
+        "src/data/questionBanks/calciumPhosphorusHomeostasis.js",
+        "docs/clinical-audit/enteral-nutrition-broader-calcium-measurement-book-review.json",
+        "docs/clinical-audit/module-ledger.json",
+        "docs/clinical-audit/chapter-ledger.json",
+        "docs/clinical-audit/sequential-resume.json"
+      ]
+    }
+  },
+  "remainingReview": {
+    "calciumMeasurementRemainingQuestionIds": [
+      "calcium-phosphorus-011",
+      "calcium-phosphorus-012",
+      "calcium-phosphorus-013",
+      "calcium-phosphorus-014",
+      "calcium-phosphorus-015",
+      "calcium-phosphorus-017",
+      "calcium-phosphorus-090",
+      "calcium-phosphorus-092",
+      "calcium-phosphorus-102"
+    ],
+    "wholeLessonBodiesFigureCheckMetadataPending": true,
+    "wholeParentModuleVerified": false,
+    "wholeENModuleVerified": false,
+    "wholeChaptersVerified": false,
+    "nextAction": "Continue remaining calcium/phosphorus whole lessons and parent reintegration. Source question for existing KDIGO2017, Endocrine Society hypercalcemia-of-malignancy and Society for Endocrinology acute hypo/hypercalcemia guidance remains pending unless direct approval arrives; do not infer approval from elapsed time. Meanwhile continue book-supported calcium/mineral/phosphate source mapping and other approved feeding dependencies. Do not recount twelve calcium questions or derived cumulative060. Earliest sequential checkpoint stays Chapter1printed7/PDF19entry15fluidneeds withChapter11feedingdependencies; full82chaptergoalactive."
+  },
+  "release": {
+    "branch": "audit/rxprep-content-2026-09-24",
+    "commit": null,
+    "push": "pending",
+    "receipt": "enteral-nutrition-broader-calcium-measurement-book-release.json",
+    "mainMerge": "not performed",
+    "production": "not verified"
+  },
+  "wholeGoalComplete": false
+}
