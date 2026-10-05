@@ -1,0 +1,1214 @@
+{
+  "updated": "2026-10-05T00:36:05.203832+00:00",
+  "unit": "enteral-nutrition:broader-hydrocortisone-formulation-label-dependencies",
+  "status": "four complete questions and three complete product bodies verified;whole lesson/module/chapters reviewing",
+  "baseCommit": "54e32bbee79982de9d4a4508b4d959b2a9aa318a",
+  "sourceAuthorization": {
+    "authorized": true,
+    "approvalText": "I approve all. continue working",
+    "scope": "Previously approved primary FDA product-label evidence;latest I give approval retained for IDSA monitoring only. No unrestricted outside clinical-guideline authorization inferred."
+  },
+  "sourceReview": {
+    "sources": [
+      {
+        "name": "ALKINDI SPRINKLE current FDA labeling",
+        "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=26c13a5f-7119-4c6a-bf10-fda4e07d7682",
+        "splUpdated": "2026-04-21",
+        "piRevised": "April2026",
+        "medicationGuideAndIfuRevised": "March2026",
+        "pdfSha256": "31024b957494cf015b5d17850437bd8884704b32481db012dc073e913ef6f17a",
+        "adoptedCompleteScopes": [
+          "2.2/2.3 administration/switching",
+          "5.1 inability to retain dose as product-specific context",
+          "16storage",
+          "17counseling",
+          "MedicationGuidePDF18-22",
+          "InstructionsForUsePDF23-25"
+        ],
+        "sourcePagesActuallyViewed": [
+          1,
+          4,
+          5,
+          6,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25
+        ],
+        "limits": "No numeric pediatric dosing or new adult replacement/stress taper regimen."
+      },
+      {
+        "name": "SOLU-CORTEF Pharmacia&Upjohn/Pfizer manufacturer FDA labeling",
+        "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=65eefd58-b166-4d71-ade6-45c8fdf86922",
+        "splUpdated": "2025-09-05",
+        "piRevised": "July2024",
+        "labelCode": "LAB-0424-16.0",
+        "pdfSha256": "1fc70152a645467f83dd95fddf484a75e3755415604d5f044adfa9b4a78ac727",
+        "adoptedCompleteScopes": [
+          "Description all four strengths and packaged diluent distinction",
+          "Preparation of Solutions",
+          "Directions for Using the Act-O-Vial System",
+          "How Supplied and Storage"
+        ],
+        "sourcePagesActuallyViewed": [
+          1,
+          13,
+          14,
+          15
+        ],
+        "limits": "Not a new clinical crisis dose,home IV technique instruction,plain-vial fixed final volume or generic beyond-use date for every repackaged product."
+      }
+    ],
+    "privateBook": {
+      "identity": "RxPrep2023",
+      "printedPages": [
+        634,
+        635,
+        636,
+        637
+      ],
+      "pdfPages": [
+        642,
+        643,
+        644,
+        645
+      ],
+      "allFourPagesFreshlyExtractedRenderedAndActuallyViewed": true,
+      "limits": "Steroid replacement context,formulation table and food/timing;does not establish Alkindi granule methods,Act-O-Vial preparation/concentrations or full modern adult replacement strategy."
+    },
+    "sourceFilesOutsideGit": true,
+    "priorVerifiedEvidence": "enteral-nutrition-broader-adrenal-perioperative-review.json",
+    "limits": "Complete adopted product scopes read and visual tables/IFU checked;no claim every label page or whole source chapter completed."
+  },
+  "sourceDiscrepancies": [
+    {
+      "issue": "Older repackager label has a different unused solution interval",
+      "source": "DailyMedsetid74f84173-a43f-7788-e053-2991aa0a8fb2updatedFebruary2024 carriesOctober2016LAB-0424-9.0 andthree-day text",
+      "resolution": "Use dated manufacturerJuly2024LAB-0424-16.0 updatedSeptember2025:12hcontrolledroomtemperature or24hrefrigerated,with discarded remainder,current-product microbiological precautions and prompt use. Do not generalize older repackager holdtime."
+    },
+    {
+      "issue": "Same nominal total daily milligrams can produce different exposure after switching manipulated hydrocortisone preparations",
+      "resolution": "Retain same-total initial label instruction and close monitoring;do not assert equal bioavailability or unexplained conversion."
+    },
+    {
+      "issue": "Return demonstration is not a named FDA-mandated competency test",
+      "resolution": "Explicit operational educational synthesis of actual labeled steps;does not prove emergency readiness from possession or expiration."
+    },
+    {
+      "issue": "Pediatric product label cannot close entire adult stress/replacement transition regimen",
+      "resolution": "Whole transition body,other generic oral/liquid bodies,figure/check/metadata remain pending."
+    }
+  ],
+  "questionReview": [
+    {
+      "id": "adrenal-insufficiency-21-case",
+      "before": {
+        "id": "adrenal-insufficiency-21-case",
+        "question": "A child changes from tablets to granules and the caregiver has not received administration teaching. Which response is best?",
+        "choices": [
+          "Provide product-specific counseling and observe a return demonstration before relying on the new regimen.",
+          "Assume granules always use the same preparation method as crushed tablets.",
+          "Change the dose without reviewing the product instructions.",
+          "Skip counseling because the parent drug name is unchanged."
+        ],
+        "answer": 0,
+        "rationale": "The formulation changes the administration steps even when the prescribed milligram dose is unchanged.",
+        "reviewHref": "#formulations-administration",
+        "difficulty": "application"
+      },
+      "after": {
+        "id": "adrenal-insufficiency-21-case",
+        "question": "A child changes from tablets to granules and the caregiver has not received administration teaching. Which response is best?",
+        "choices": [
+          "Provide product-specific counseling and observe a return demonstration before relying on the new regimen.",
+          "Assume granules always use the same preparation method as crushed tablets.",
+          "Change the dose without reviewing the product instructions.",
+          "Skip counseling because the parent drug name is unchanged."
+        ],
+        "answer": 0,
+        "rationale": "Teach and check the exact granule instructions before relying on the switch. For Alkindi Sprinkle, open the capsule, keep the capsule dry, give all granules directly or by the labeled spoon or soft-food method, do not crush or chew them, and follow promptly with fluid. The label calls for close monitoring after a switch because prior manipulated preparations may have delivered a different exposure despite the same total daily milligrams. Return demonstration checks understanding of these steps; it is an educational safeguard rather than a claim that FDA mandates a particular competency test. Ingredient identity does not make preparation methods interchangeable, remove the need for counseling, or justify an unexplained dose change.",
+        "reviewHref": "#formulations-administration",
+        "difficulty": "application"
+      },
+      "status": "full original stem,key,all alternatives and rationale individually reconciled",
+      "allOriginalIdStemChoicesKeyAndAnchorPreserved": true,
+      "sourceScopes": "Alkindi2.2/2.3andIFU for21/granule-tube;Solu-CortefDirections/Description/Preparation for22/volume;fractional dose calculations independent."
+    },
+    {
+      "id": "adrenal-insufficiency-22-case",
+      "before": {
+        "id": "adrenal-insufficiency-22-case",
+        "question": "A patient's kit is unexpired, but neither the patient nor family can activate the vial system. Which response is best?",
+        "choices": [
+          "Rely on the unexpired date as proof that the kit can be used correctly.",
+          "Retrain with the dispensed device and confirm successful return demonstration.",
+          "Wait until a crisis to learn how to activate the vial.",
+          "Substitute a written prescription for a return demonstration."
+        ],
+        "answer": 1,
+        "rationale": "Time-critical emergency treatment depends on operational skill, not possession alone.",
+        "reviewHref": "#formulations-administration",
+        "difficulty": "application"
+      },
+      "after": {
+        "id": "adrenal-insufficiency-22-case",
+        "question": "A patient's kit is unexpired, but neither the patient nor family can activate the vial system. Which response is best?",
+        "choices": [
+          "Rely on the unexpired date as proof that the kit can be used correctly.",
+          "Retrain with the dispensed device and confirm successful return demonstration.",
+          "Wait until a crisis to learn how to activate the vial.",
+          "Substitute a written prescription for a return demonstration."
+        ],
+        "answer": 1,
+        "rationale": "An unexpired vial is not proof that the patient or caregiver can prepare the prescribed injection. For the dispensed Act-O-Vial, check that training covers activation, gentle mixing, exposure and disinfection of the stopper, and withdrawal of the verified dose. Return demonstration checks the labeled preparation steps before an emergency; a written prescription or waiting for crisis does not establish that skill. Use the actual device, strength, route and current storage instructions. This is a practical training safeguard, not a claim that the label requires a named assessment method or that possession of the kit guarantees timely treatment.",
+        "reviewHref": "#formulations-administration",
+        "difficulty": "application"
+      },
+      "status": "full original stem,key,all alternatives and rationale individually reconciled",
+      "allOriginalIdStemChoicesKeyAndAnchorPreserved": true,
+      "sourceScopes": "Alkindi2.2/2.3andIFU for21/granule-tube;Solu-CortefDirections/Description/Preparation for22/volume;fractional dose calculations independent."
+    },
+    {
+      "id": "adrenal-insufficiency-granule-tube",
+      "before": {
+        "id": "adrenal-insufficiency-granule-tube",
+        "question": "A caregiver plans to mix Alkindi Sprinkle granules into liquid and deliver them through a gastric tube. Which correction follows the label?",
+        "choices": [
+          "Proceed because every hydrocortisone formulation is tube-compatible",
+          "Crush the granules first",
+          "Do not use this method; arrange a suitable product and administration plan",
+          "Swallow the intact capsule instead"
+        ],
+        "answer": 2,
+        "rationale": "The granules should not be mixed into liquid or delivered through nasogastric or gastric tubes. Product-specific selection is needed to preserve dose delivery and avoid tube blockage.",
+        "reviewHref": "#formulations-administration",
+        "difficulty": "clinical"
+      },
+      "after": {
+        "id": "adrenal-insufficiency-granule-tube",
+        "question": "A caregiver plans to mix Alkindi Sprinkle granules into liquid and deliver them through a gastric tube. Which correction follows the label?",
+        "choices": [
+          "Proceed because every hydrocortisone formulation is tube-compatible",
+          "Crush the granules first",
+          "Do not use this method; arrange a suitable product and administration plan",
+          "Swallow the intact capsule instead"
+        ],
+        "answer": 2,
+        "rationale": "Alkindi Sprinkle labeling prohibits mixing the granules into liquid because the delivered dose can be reduced and the taste-masking cover can dissolve. It also prohibits nasogastric or gastric tube administration because granules may block the tube. Crushing the granules and swallowing the capsule shell are also contrary to the instructions. A sip of fluid after giving the granules is permitted; making a liquid mixture before administration is a different method. Arrange an appropriate product and route with the treating team rather than improvising a tube protocol or assuming every hydrocortisone product is compatible.",
+        "reviewHref": "#formulations-administration",
+        "difficulty": "clinical"
+      },
+      "status": "full original stem,key,all alternatives and rationale individually reconciled",
+      "allOriginalIdStemChoicesKeyAndAnchorPreserved": true,
+      "sourceScopes": "Alkindi2.2/2.3andIFU for21/granule-tube;Solu-CortefDirections/Description/Preparation for22/volume;fractional dose calculations independent."
+    },
+    {
+      "id": "adrenal-insufficiency-actovial-volume",
+      "before": {
+        "id": "adrenal-insufficiency-actovial-volume",
+        "question": "A prepared 100 mg Solu-Cortef Act-O-Vial contains 2 mL. A verified order calls for 25 mg. What volume corresponds to that dose?",
+        "choices": [
+          "0.25 mL",
+          "1 mL",
+          "2 mL",
+          "0.5 mL"
+        ],
+        "answer": 3,
+        "rationale": "The concentration is 100 mg divided by 2 mL, or 50 mg/mL. A 25 mg dose therefore occupies 0.5 mL. Confirm the actual product concentration; other presentations differ.",
+        "reviewHref": "#formulations-administration",
+        "difficulty": "clinical"
+      },
+      "after": {
+        "id": "adrenal-insufficiency-actovial-volume",
+        "question": "A prepared 100 mg Solu-Cortef Act-O-Vial contains 2 mL. A verified order calls for 25 mg. What volume corresponds to that dose?",
+        "choices": [
+          "0.25 mL",
+          "1 mL",
+          "2 mL",
+          "0.5 mL"
+        ],
+        "answer": 3,
+        "rationale": "The manufacturer label identifies the mixed 100 mg Act-O-Vial as 100 mg hydrocortisone equivalent in 2 mL: 100 mg / 2 mL = 50 mg/mL. A verified 25 mg order requires 25 mg / 50 mg/mL = 0.5 mL. At this concentration, 0.25 mL supplies 12.5 mg, 1 mL supplies 50 mg, and 2 mL supplies 100 mg. Confirm the actual presentation and complete labeled activation before withdrawal; the plain vial has no packaged diluent, and other Act-O-Vial strengths have different concentrations. The stated dose is a verified order for this calculation, not a new clinical dosing recommendation. No additional salt-to-hydrocortisone conversion is needed.",
+        "reviewHref": "#formulations-administration",
+        "difficulty": "clinical"
+      },
+      "status": "full original stem,key,all alternatives and rationale individually reconciled",
+      "allOriginalIdStemChoicesKeyAndAnchorPreserved": true,
+      "sourceScopes": "Alkindi2.2/2.3andIFU for21/granule-tube;Solu-CortefDirections/Description/Preparation for22/volume;fractional dose calculations independent."
+    }
+  ],
+  "teachingReview": [
+    {
+      "heading": "Administer Alkindi Sprinkle correctly",
+      "before": "Open the capsule; do not swallow its shell or crush or chew the granules. Give the granules directly, from a spoon, or on a small spoonful of cool soft food, and swallow within five minutes. Follow with fluid, but do not mix the granules into liquid or administer through nasogastric or gastric tubes. Contact the care team if the full dose is not retained. Switching oral formulations requires close monitoring for under-replacement even when the initial total daily milligram dose is unchanged.",
+      "after": "Open the capsule; do not swallow its shell or crush or chew the granules. Give the granules directly, from a spoon, or on a small spoonful of cool soft food, and swallow within five minutes. Follow with fluid, but do not mix the granules into liquid or administer through nasogastric or gastric tubes. Contact the care team if the full dose is not retained. Switching oral formulations requires close monitoring for under-replacement even when the initial total daily milligram dose is unchanged. Hold the printed strength at the top, tap the granules into the lower half, gently squeeze the lower half and twist off the top. Keep the capsule dry and tap out all granules. The soft food should be cold or at room temperature, such as yogurt or fruit puree; give it right away. A sip of water, milk, breastmilk or formula follows administration immediately. If granules are regurgitated or vomited, contact the healthcare provider because a repeat dose may be needed. Granules seen in stool do not mean the medicine failed and are not a reason to give another dose. Check the bottle expiration, retain the original bottle to protect from light, and use the capsules within 60 days after opening. The initial same-total-daily-dose instruction when switching to Alkindi does not establish identical exposure from previously split or crushed tablets or compounded preparations; monitor closely and let the treating team adjust therapy if adrenal-insufficiency symptoms occur.",
+      "wholeBodyVerified": true,
+      "source": "Complete relevant FDA product-label scopes;return-demonstration teaching is qualified operational synthesis."
+    },
+    {
+      "heading": "Prepare the emergency route",
+      "before": "Emergency hydrocortisone sodium succinate may require activation or reconstitution before IV or IM administration. Training should use the exact device dispensed, cover expiration and storage checks, and end with a return demonstration by the patient and a close contact.",
+      "after": "Emergency hydrocortisone sodium succinate may require activation or reconstitution before IV or IM administration. Training should use the exact device dispensed, cover expiration and storage checks, and end with a return demonstration by the patient and a close contact. For Solu-Cortef, distinguish the 100 mg plain vial from the Act-O-Vial before practicing: the former has no supplied diluent, while the latter has a separate diluent compartment. Practice activation, gentle mixing, stopper preparation and withdrawal of the verified dose under appropriate training. A return demonstration checks these labeled steps; it does not replace route-specific professional instruction or establish readiness from an expiration date alone. The manufacturer label requires clear solution, protection from light and storage appropriate to the prepared product. It specifies use within 12 hours at controlled room temperature or no more than 24 hours under refrigeration, with unused solution discarded after the applicable limit. This is not permission to delay emergency treatment or reuse a single-dose vial. Check the current label for the dispensed product rather than transferring an older repackager's storage interval.",
+      "wholeBodyVerified": true,
+      "source": "Complete relevant FDA product-label scopes;return-demonstration teaching is qualified operational synthesis."
+    },
+    {
+      "heading": "Distinguish the injection presentations",
+      "before": "A Solu-Cortef plain vial needs a separate compatible diluent; an Act-O-Vial contains its diluent in another compartment. For the 100 mg Act-O-Vial, the mixed volume is 2 mL (50 mg/mL). Activate the compartments, gently mix to dissolve, expose and disinfect the stopper, then withdraw the prescribed dose with the trained aseptic technique. Check the actual strength and instructions; this concentration must not be assumed for other presentations. Reconstitution is not an extra conversion from salt weight to hydrocortisone dose.",
+      "after": "A Solu-Cortef plain vial needs a separate compatible diluent; an Act-O-Vial contains its diluent in another compartment. For the 100 mg Act-O-Vial, the mixed volume is 2 mL (50 mg/mL). Activate the compartments, gently mix to dissolve, expose and disinfect the stopper, then withdraw the prescribed dose with the trained aseptic technique. Check the actual strength and instructions; this concentration must not be assumed for other presentations. Reconstitution is not an extra conversion from salt weight to hydrocortisone dose. The manufacturer table expresses the sodium succinate amount as its hydrocortisone equivalent, so the prescribed hydrocortisone milligrams are already the basis of the dose. The 250 mg Act-O-Vial is also 2 mL when mixed, while the 500 mg and 1,000 mg presentations are 4 mL and 8 mL; each of those is 125 mg/mL rather than the 100 mg product's 50 mg/mL. For Act-O-Vial, press the plastic activator to move diluent into the lower compartment, gently agitate until dissolved, remove the plastic tab, disinfect the stopper, insert the needle squarely through its center, invert and withdraw the verified dose. Further dilution is not necessary for the labeled IV or IM injection; an IV infusion has separate dilution instructions. The 100 mg plain vial requires the compatible diluent specified for the intended route and has no packaged diluent. Do not infer that every plain-vial preparation has exactly the Act-O-Vial's final concentration.",
+      "wholeBodyVerified": true,
+      "source": "Complete relevant FDA product-label scopes;return-demonstration teaching is qualified operational synthesis."
+    }
+  ],
+  "retainedPriorEvidence": {
+    "questionIds": [
+      "adrenal-insufficiency-20-case",
+      "adrenal-insufficiency-23-case"
+    ],
+    "exactPriorVerifiedObjectsRechecked": true,
+    "foodBodyExactPriorVerifiedTextRechecked": {
+      "module": "adrenal-insufficiency-crisis",
+      "lesson": "formulations-administration",
+      "heading": "Check food and timing instructions",
+      "body": "The book advises taking oral systemic steroid doses with food to reduce gastrointestinal upset. For a once-daily schedule, it places the dose between 7 and 8 AM to approximate natural cortisol timing. Keep the prescribed replacement schedule and the actual product instructions: this once-daily teaching does not replace divided hydrocortisone dosing or the separate preparation rules for pediatric granules.",
+      "status": "verified",
+      "review": "New source-supported food/once-daily timing or acid-suppressant adverse-effect teaching; qualifications prevent applying it as a granule protocol, divided replacement schedule or individual causal attribution."
+    },
+    "noDuplicateNewQuestionsCounted": true
+  },
+  "referenceReview": {
+    "addedReference": {
+      "label": "DailyMed manufacturer Solu-Cortef label, revised July 2024; updated September 2025",
+      "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=65eefd58-b166-4d71-ade6-45c8fdf86922"
+    },
+    "all11PreviousReferencesUnchanged": true,
+    "oldReferencesNotUsedToOverrideDatedManufacturerStorage": true
+  },
+  "coverage": {
+    "evidence": "enteral-nutrition-broader-adrenal-formulation-label-review.json",
+    "moduleBank": 35,
+    "sourceVerifiedBankIds": [
+      "adrenal-insufficiency-21-case",
+      "adrenal-insufficiency-22-case",
+      "adrenal-insufficiency-granule-tube",
+      "adrenal-insufficiency-actovial-volume"
+    ],
+    "newFullQuestionsVerified": 4,
+    "broaderFeedingBankVerifiedAfter": 205,
+    "wholeBodiesVerifiedThisUnit": 3,
+    "formulationsLessonQuestionTotal": 6,
+    "priorTwoQuestionsExactRechecked": [
+      "adrenal-insufficiency-20-case",
+      "adrenal-insufficiency-23-case"
+    ],
+    "allSixFormulationsQuestionsSourceVerified": true,
+    "wholeFormulationsLessonVerified": false,
+    "formulationsWholeBodiesVerifiedIncludingPriorFoodBody": 4,
+    "formulationsBodyTotal": 7,
+    "remainingBodyHeadings": [
+      "Choose an oral product deliberately",
+      "Prevent measurement errors",
+      "Transition after stabilization"
+    ],
+    "embeddedCheckNewlyVerified": false,
+    "figureNewlyVerified": false,
+    "metadataNewlyVerified": false,
+    "wholeParentModuleVerified": false,
+    "wholeENModuleVerified": false,
+    "wholeChaptersVerified": false,
+    "all1180CumulativeObjectsUnchanged": true,
+    "all35OriginalIdsStemsKeysChoicesAndAnchorsPreserved": true,
+    "noNewQuestionIds": true,
+    "originalClinicalScopeRetained": true,
+    "unrelatedDraftsPreserved": true
+  },
+  "validation": {
+    "productionBuild": {
+      "status": "passed",
+      "exitCode": 0,
+      "pages": 567,
+      "isolatedExactBase": "54e32bbee79982de9d4a4508b4d959b2a9aa318a"
+    },
+    "assessmentStructure": {
+      "modules": 1,
+      "questions": 35,
+      "hardErrors": [],
+      "sourceGaps": [],
+      "sizeAdvisories": [
+        {
+          "module": "adrenal-insufficiency-crisis",
+          "questions": 35,
+          "review": "Confirm topic coverage in the clinical audit ledger"
+        }
+      ],
+      "thinLessons": [
+        {
+          "module": "adrenal-insufficiency-crisis",
+          "lesson": "levels-of-failure",
+          "count": 2
+        },
+        {
+          "module": "adrenal-insufficiency-crisis",
+          "lesson": "clinical-patterns",
+          "count": 2
+        },
+        {
+          "module": "adrenal-insufficiency-crisis",
+          "lesson": "special-populations-follow-up",
+          "count": 2
+        },
+        {
+          "module": "adrenal-insufficiency-crisis",
+          "lesson": "primary-adrenal-insufficiency",
+          "count": 3
+        },
+        {
+          "module": "adrenal-insufficiency-crisis",
+          "lesson": "central-glucocorticoid-induced",
+          "count": 3
+        },
+        {
+          "module": "adrenal-insufficiency-crisis",
+          "lesson": "glucocorticoid-replacement",
+          "count": 3
+        },
+        {
+          "module": "adrenal-insufficiency-crisis",
+          "lesson": "mineralocorticoid-replacement",
+          "count": 3
+        },
+        {
+          "module": "adrenal-insufficiency-crisis",
+          "lesson": "sick-day-preparedness",
+          "count": 3
+        },
+        {
+          "module": "adrenal-insufficiency-crisis",
+          "lesson": "adrenal-crisis",
+          "count": 3
+        },
+        {
+          "module": "adrenal-insufficiency-crisis",
+          "lesson": "morning-cortisol-testing",
+          "count": 5
+        },
+        {
+          "module": "adrenal-insufficiency-crisis",
+          "lesson": "formulations-administration",
+          "count": 6
+        }
+      ],
+      "weakestModules": [
+        {
+          "module": "adrenal-insufficiency-crisis",
+          "lessons": 11,
+          "questions": 35,
+          "minimumLessonCoverage": 2
+        }
+      ]
+    },
+    "objectPreservation": {
+      "status": "passed",
+      "all232ModulesPreserved": true,
+      "other231ModulesExactUnchanged": true,
+      "bankTotal": 35,
+      "newFullQuestionIds": [
+        "adrenal-insufficiency-21-case",
+        "adrenal-insufficiency-22-case",
+        "adrenal-insufficiency-granule-tube",
+        "adrenal-insufficiency-actovial-volume"
+      ],
+      "other31QuestionsExactUnchanged": true,
+      "all35OriginalIdsStemsChoicesKeysAndAnchorsPreserved": true,
+      "other39Bodies11ChecksAllMetadataAndFigureComponentsUnchanged": true,
+      "all1180CumulativeObjectsExactUnchanged": true,
+      "prior11ReferencesUnchanged": true,
+      "addedDatedManufacturerReference": {
+        "label": "DailyMed manufacturer Solu-Cortef label, revised July 2024; updated September 2025",
+        "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=65eefd58-b166-4d71-ade6-45c8fdf86922"
+      },
+      "independentExactFractionCalculations": {
+        "100/2": "50",
+        "25/50": "1/2",
+        "250/2": "125",
+        "500/4": "125",
+        "1000/8": "125",
+        "0.25*50": "25/2",
+        "1*50": "50",
+        "2*50": "100"
+      },
+      "wholeLessonVerified": false
+    },
+    "browser": {
+      "status": "passed",
+      "results": [
+        {
+          "width": 1440,
+          "module": "adrenal-insufficiency-crisis",
+          "bodies": 42,
+          "exactMetadata": true,
+          "references": 12,
+          "wholeLessonVerified": false,
+          "attempts": [
+            {
+              "target": "adrenal-insufficiency-21-case",
+              "seed": 1,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "adrenal-insufficiency-24-case",
+                "adrenal-insufficiency-25-case",
+                "adrenal-insufficiency-actovial-volume",
+                "adrenal-insufficiency-03-case",
+                "adrenal-insufficiency-28-case",
+                "adrenal-insufficiency-21-case",
+                "adrenal-insufficiency-08-case",
+                "adrenal-insufficiency-10-case",
+                "adrenal-insufficiency-18-case",
+                "adrenal-insufficiency-22-case"
+              ]
+            },
+            {
+              "target": "adrenal-insufficiency-21-case",
+              "seed": 1,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "adrenal-insufficiency-24-case",
+                "adrenal-insufficiency-25-case",
+                "adrenal-insufficiency-actovial-volume",
+                "adrenal-insufficiency-03-case",
+                "adrenal-insufficiency-28-case",
+                "adrenal-insufficiency-21-case",
+                "adrenal-insufficiency-08-case",
+                "adrenal-insufficiency-10-case",
+                "adrenal-insufficiency-18-case",
+                "adrenal-insufficiency-22-case"
+              ]
+            },
+            {
+              "target": "adrenal-insufficiency-22-case",
+              "seed": 1,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "adrenal-insufficiency-24-case",
+                "adrenal-insufficiency-25-case",
+                "adrenal-insufficiency-actovial-volume",
+                "adrenal-insufficiency-03-case",
+                "adrenal-insufficiency-28-case",
+                "adrenal-insufficiency-21-case",
+                "adrenal-insufficiency-08-case",
+                "adrenal-insufficiency-10-case",
+                "adrenal-insufficiency-18-case",
+                "adrenal-insufficiency-22-case"
+              ]
+            },
+            {
+              "target": "adrenal-insufficiency-22-case",
+              "seed": 1,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "adrenal-insufficiency-24-case",
+                "adrenal-insufficiency-25-case",
+                "adrenal-insufficiency-actovial-volume",
+                "adrenal-insufficiency-03-case",
+                "adrenal-insufficiency-28-case",
+                "adrenal-insufficiency-21-case",
+                "adrenal-insufficiency-08-case",
+                "adrenal-insufficiency-10-case",
+                "adrenal-insufficiency-18-case",
+                "adrenal-insufficiency-22-case"
+              ]
+            },
+            {
+              "target": "adrenal-insufficiency-granule-tube",
+              "seed": 3,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "adrenal-insufficiency-08-case",
+                "adrenal-insufficiency-granule-tube",
+                "adrenal-insufficiency-03-case",
+                "adrenal-insufficiency-10-case",
+                "adrenal-insufficiency-14-case",
+                "adrenal-insufficiency-18-case",
+                "adrenal-insufficiency-21-case",
+                "adrenal-insufficiency-02-case",
+                "adrenal-insufficiency-28-case",
+                "adrenal-insufficiency-27-case"
+              ]
+            },
+            {
+              "target": "adrenal-insufficiency-granule-tube",
+              "seed": 3,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "adrenal-insufficiency-08-case",
+                "adrenal-insufficiency-granule-tube",
+                "adrenal-insufficiency-03-case",
+                "adrenal-insufficiency-10-case",
+                "adrenal-insufficiency-14-case",
+                "adrenal-insufficiency-18-case",
+                "adrenal-insufficiency-21-case",
+                "adrenal-insufficiency-02-case",
+                "adrenal-insufficiency-28-case",
+                "adrenal-insufficiency-27-case"
+              ]
+            },
+            {
+              "target": "adrenal-insufficiency-actovial-volume",
+              "seed": 1,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "adrenal-insufficiency-24-case",
+                "adrenal-insufficiency-25-case",
+                "adrenal-insufficiency-actovial-volume",
+                "adrenal-insufficiency-03-case",
+                "adrenal-insufficiency-28-case",
+                "adrenal-insufficiency-21-case",
+                "adrenal-insufficiency-08-case",
+                "adrenal-insufficiency-10-case",
+                "adrenal-insufficiency-18-case",
+                "adrenal-insufficiency-22-case"
+              ]
+            },
+            {
+              "target": "adrenal-insufficiency-actovial-volume",
+              "seed": 1,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "adrenal-insufficiency-24-case",
+                "adrenal-insufficiency-25-case",
+                "adrenal-insufficiency-actovial-volume",
+                "adrenal-insufficiency-03-case",
+                "adrenal-insufficiency-28-case",
+                "adrenal-insufficiency-21-case",
+                "adrenal-insufficiency-08-case",
+                "adrenal-insufficiency-10-case",
+                "adrenal-insufficiency-18-case",
+                "adrenal-insufficiency-22-case"
+              ]
+            }
+          ],
+          "noHorizontalOverflow": true,
+          "unauthenticated": true
+        },
+        {
+          "width": 390,
+          "module": "adrenal-insufficiency-crisis",
+          "bodies": 42,
+          "exactMetadata": true,
+          "references": 12,
+          "wholeLessonVerified": false,
+          "attempts": [
+            {
+              "target": "adrenal-insufficiency-21-case",
+              "seed": 1,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "adrenal-insufficiency-24-case",
+                "adrenal-insufficiency-25-case",
+                "adrenal-insufficiency-actovial-volume",
+                "adrenal-insufficiency-03-case",
+                "adrenal-insufficiency-28-case",
+                "adrenal-insufficiency-21-case",
+                "adrenal-insufficiency-08-case",
+                "adrenal-insufficiency-10-case",
+                "adrenal-insufficiency-18-case",
+                "adrenal-insufficiency-22-case"
+              ]
+            },
+            {
+              "target": "adrenal-insufficiency-21-case",
+              "seed": 1,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "adrenal-insufficiency-24-case",
+                "adrenal-insufficiency-25-case",
+                "adrenal-insufficiency-actovial-volume",
+                "adrenal-insufficiency-03-case",
+                "adrenal-insufficiency-28-case",
+                "adrenal-insufficiency-21-case",
+                "adrenal-insufficiency-08-case",
+                "adrenal-insufficiency-10-case",
+                "adrenal-insufficiency-18-case",
+                "adrenal-insufficiency-22-case"
+              ]
+            },
+            {
+              "target": "adrenal-insufficiency-22-case",
+              "seed": 1,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "adrenal-insufficiency-24-case",
+                "adrenal-insufficiency-25-case",
+                "adrenal-insufficiency-actovial-volume",
+                "adrenal-insufficiency-03-case",
+                "adrenal-insufficiency-28-case",
+                "adrenal-insufficiency-21-case",
+                "adrenal-insufficiency-08-case",
+                "adrenal-insufficiency-10-case",
+                "adrenal-insufficiency-18-case",
+                "adrenal-insufficiency-22-case"
+              ]
+            },
+            {
+              "target": "adrenal-insufficiency-22-case",
+              "seed": 1,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "adrenal-insufficiency-24-case",
+                "adrenal-insufficiency-25-case",
+                "adrenal-insufficiency-actovial-volume",
+                "adrenal-insufficiency-03-case",
+                "adrenal-insufficiency-28-case",
+                "adrenal-insufficiency-21-case",
+                "adrenal-insufficiency-08-case",
+                "adrenal-insufficiency-10-case",
+                "adrenal-insufficiency-18-case",
+                "adrenal-insufficiency-22-case"
+              ]
+            },
+            {
+              "target": "adrenal-insufficiency-granule-tube",
+              "seed": 3,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "adrenal-insufficiency-08-case",
+                "adrenal-insufficiency-granule-tube",
+                "adrenal-insufficiency-03-case",
+                "adrenal-insufficiency-10-case",
+                "adrenal-insufficiency-14-case",
+                "adrenal-insufficiency-18-case",
+                "adrenal-insufficiency-21-case",
+                "adrenal-insufficiency-02-case",
+                "adrenal-insufficiency-28-case",
+                "adrenal-insufficiency-27-case"
+              ]
+            },
+            {
+              "target": "adrenal-insufficiency-granule-tube",
+              "seed": 3,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "adrenal-insufficiency-08-case",
+                "adrenal-insufficiency-granule-tube",
+                "adrenal-insufficiency-03-case",
+                "adrenal-insufficiency-10-case",
+                "adrenal-insufficiency-14-case",
+                "adrenal-insufficiency-18-case",
+                "adrenal-insufficiency-21-case",
+                "adrenal-insufficiency-02-case",
+                "adrenal-insufficiency-28-case",
+                "adrenal-insufficiency-27-case"
+              ]
+            },
+            {
+              "target": "adrenal-insufficiency-actovial-volume",
+              "seed": 1,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "adrenal-insufficiency-24-case",
+                "adrenal-insufficiency-25-case",
+                "adrenal-insufficiency-actovial-volume",
+                "adrenal-insufficiency-03-case",
+                "adrenal-insufficiency-28-case",
+                "adrenal-insufficiency-21-case",
+                "adrenal-insufficiency-08-case",
+                "adrenal-insufficiency-10-case",
+                "adrenal-insufficiency-18-case",
+                "adrenal-insufficiency-22-case"
+              ]
+            },
+            {
+              "target": "adrenal-insufficiency-actovial-volume",
+              "seed": 1,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "adrenal-insufficiency-24-case",
+                "adrenal-insufficiency-25-case",
+                "adrenal-insufficiency-actovial-volume",
+                "adrenal-insufficiency-03-case",
+                "adrenal-insufficiency-28-case",
+                "adrenal-insufficiency-21-case",
+                "adrenal-insufficiency-08-case",
+                "adrenal-insufficiency-10-case",
+                "adrenal-insufficiency-18-case",
+                "adrenal-insufficiency-22-case"
+              ]
+            }
+          ],
+          "noHorizontalOverflow": true,
+          "unauthenticated": true
+        }
+      ],
+      "errors": [],
+      "captures": [
+        "body-module-Administer-1440.png",
+        "body-module-Prepare-1440.png",
+        "body-module-Distinguish-1440.png",
+        "references-module-1440.png",
+        "question-adrenal-insufficiency-21-case-incorrect-1440.png",
+        "question-adrenal-insufficiency-21-case-correct-1440.png",
+        "question-adrenal-insufficiency-22-case-incorrect-1440.png",
+        "question-adrenal-insufficiency-22-case-correct-1440.png",
+        "question-adrenal-insufficiency-granule-tube-incorrect-1440.png",
+        "question-adrenal-insufficiency-granule-tube-correct-1440.png",
+        "question-adrenal-insufficiency-actovial-volume-incorrect-1440.png",
+        "question-adrenal-insufficiency-actovial-volume-correct-1440.png",
+        "body-module-Administer-390.png",
+        "body-module-Prepare-390.png",
+        "body-module-Distinguish-390.png",
+        "references-module-390.png",
+        "question-adrenal-insufficiency-21-case-incorrect-390.png",
+        "question-adrenal-insufficiency-21-case-correct-390.png",
+        "question-adrenal-insufficiency-22-case-incorrect-390.png",
+        "question-adrenal-insufficiency-22-case-correct-390.png",
+        "question-adrenal-insufficiency-granule-tube-incorrect-390.png",
+        "question-adrenal-insufficiency-granule-tube-correct-390.png",
+        "question-adrenal-insufficiency-actovial-volume-incorrect-390.png",
+        "question-adrenal-insufficiency-actovial-volume-correct-390.png"
+      ]
+    },
+    "visualInspection": {
+      "status": "passed",
+      "all24FinalCapturesActuallyViewed": true,
+      "12NativeComparisonsActuallyViewed": true,
+      "captureRepaintIssue": "Initial correct-state captures omitted the anonymous text in the legend while exact DOM tests passed. A one-pixel viewport height round trip triggered browser repaint without product changes;final unique-filename captures show complete stems and feedback. Allfinal24 captures individually compareddesktop/mobile.",
+      "result": "All three whole product bodies,references,four correct/incorrect question paths legible;no clipping/overlap.320px overflow passed.",
+      "captureHashes": {
+        "body-module-Administer-1440.png": "5b92601116ff2a655ad166ab34e5c5feb428596cb7c9d63a06d17e78fea44288",
+        "body-module-Prepare-1440.png": "d88ec86e1cb609dde54ff04ef22766c4e1b03178fdff58f7949833e3ef5accc3",
+        "body-module-Distinguish-1440.png": "b55a26d1125a51c68c6233a3d5ae60ddacac27ebee19669ffba9dd4e2ecda594",
+        "references-module-1440.png": "5d4accc51a203e75b9045cf5b0a5e586bb49e08c687c95c63f6fed8c67dfa72d",
+        "question-adrenal-insufficiency-21-case-incorrect-1440.png": "cf046d2d114bd5a9b7f9ecf8c2e141303fd16f22f458da96e3ee7ca847a8ae3d",
+        "question-adrenal-insufficiency-21-case-correct-1440.png": "2877e43de3110ac6bbdf25103abf7be9d648fee7fe2dbb67c6bc403d7875af1a",
+        "question-adrenal-insufficiency-22-case-incorrect-1440.png": "57f4e94a59397f6660c06899ff3d49fdeab7de8c0f06bf563c00f892bc716919",
+        "question-adrenal-insufficiency-22-case-correct-1440.png": "3848a4774716a66434744bae0f5f83e222043c631bcd21b4f1077af1e224034f",
+        "question-adrenal-insufficiency-granule-tube-incorrect-1440.png": "db89f4e044198ba0647ac8ff7b62316279468dbc19fc0ade3a29671a65dbcd47",
+        "question-adrenal-insufficiency-granule-tube-correct-1440.png": "d32ef60c478228dd7ed4b8bdda9a5c0c1ef4b94a647c41656cee72664166b044",
+        "question-adrenal-insufficiency-actovial-volume-incorrect-1440.png": "f89957b73ac0076de37bab9a4fa8f7cb690b9ae26b9b4b65a2bb178790be7711",
+        "question-adrenal-insufficiency-actovial-volume-correct-1440.png": "8350e31fcb79713deeedd48923692f742d5965cad4ca1d31c48b3b326e9a1238",
+        "body-module-Administer-390.png": "3a33735719e385151776920a481a4d833cd15a250832962877da33e6c72365b8",
+        "body-module-Prepare-390.png": "4dfbffd426a2bb5a5f2d834f26b1b2e538bcb8273516b5bd5b37fb7ba898797a",
+        "body-module-Distinguish-390.png": "8fde53c3052d6a5147765c1edf7d91bc0aa51400861bac54c41f0645b0eba948",
+        "references-module-390.png": "d856a3bbf98e27c5b78565e946f056a90449941b19f3042f88ae67c04cb14b2f",
+        "question-adrenal-insufficiency-21-case-incorrect-390.png": "2e7e0e1235eb2f0cbe19713a6157d694dfcef67247c9696a5dccff517c432e61",
+        "question-adrenal-insufficiency-21-case-correct-390.png": "82056c5d8bd2080961fd811abdfacd5fd3820e5015e261c59c7f1c53247aa368",
+        "question-adrenal-insufficiency-22-case-incorrect-390.png": "678ef592051ea46fe2123d4b28bcf19434c9919de01f2e6ff7fe942257cd5a40",
+        "question-adrenal-insufficiency-22-case-correct-390.png": "0334ecfd0f20650b8a9d46fec6a454a88f1e96c2e6f9a0950225759bacca5535",
+        "question-adrenal-insufficiency-granule-tube-incorrect-390.png": "ca22296397df01e2a438d4f57017365bdf3fe3e6143f9e97bee5094adf11b0ff",
+        "question-adrenal-insufficiency-granule-tube-correct-390.png": "7dca91ea63ef43969a9124f66dcf90911ed207ba69bcbb99291bcde482c93a4d",
+        "question-adrenal-insufficiency-actovial-volume-incorrect-390.png": "5fdce008d92559a23b5803812ad0d66f2266be569c0c156649710333a1217b29",
+        "question-adrenal-insufficiency-actovial-volume-correct-390.png": "5b5eb93ac4bf0cc08b1010ce0f6c9fd5f90544c9fca724888915be46282272b9"
+      }
+    },
+    "visualManifest": [
+      {
+        "comparison": "final-compare-1.png",
+        "originalCaptures": [
+          "body-module-Administer-1440.png",
+          "body-module-Administer-390.png"
+        ],
+        "originalDimensions": [
+          [
+            923,
+            653
+          ],
+          [
+            350,
+            941
+          ]
+        ],
+        "rescaled": false
+      },
+      {
+        "comparison": "final-compare-2.png",
+        "originalCaptures": [
+          "body-module-Prepare-1440.png",
+          "body-module-Prepare-390.png"
+        ],
+        "originalDimensions": [
+          [
+            923,
+            562
+          ],
+          [
+            350,
+            805
+          ]
+        ],
+        "rescaled": false
+      },
+      {
+        "comparison": "final-compare-3.png",
+        "originalCaptures": [
+          "body-module-Distinguish-1440.png",
+          "body-module-Distinguish-390.png"
+        ],
+        "originalDimensions": [
+          [
+            923,
+            684
+          ],
+          [
+            350,
+            941
+          ]
+        ],
+        "rescaled": false
+      },
+      {
+        "comparison": "final-compare-4.png",
+        "originalCaptures": [
+          "references-module-1440.png",
+          "references-module-390.png"
+        ],
+        "originalDimensions": [
+          [
+            923,
+            1048
+          ],
+          [
+            350,
+            1102
+          ]
+        ],
+        "rescaled": false
+      },
+      {
+        "comparison": "final-compare-5.png",
+        "originalCaptures": [
+          "question-adrenal-insufficiency-21-case-incorrect-1440.png",
+          "question-adrenal-insufficiency-21-case-incorrect-390.png"
+        ],
+        "originalDimensions": [
+          [
+            923,
+            536
+          ],
+          [
+            350,
+            898
+          ]
+        ],
+        "rescaled": false
+      },
+      {
+        "comparison": "final-compare-6.png",
+        "originalCaptures": [
+          "question-adrenal-insufficiency-21-case-correct-1440.png",
+          "question-adrenal-insufficiency-21-case-correct-390.png"
+        ],
+        "originalDimensions": [
+          [
+            923,
+            536
+          ],
+          [
+            350,
+            898
+          ]
+        ],
+        "rescaled": false
+      },
+      {
+        "comparison": "final-compare-7.png",
+        "originalCaptures": [
+          "question-adrenal-insufficiency-22-case-incorrect-1440.png",
+          "question-adrenal-insufficiency-22-case-incorrect-390.png"
+        ],
+        "originalDimensions": [
+          [
+            923,
+            499
+          ],
+          [
+            350,
+            841
+          ]
+        ],
+        "rescaled": false
+      },
+      {
+        "comparison": "final-compare-8.png",
+        "originalCaptures": [
+          "question-adrenal-insufficiency-22-case-correct-1440.png",
+          "question-adrenal-insufficiency-22-case-correct-390.png"
+        ],
+        "originalDimensions": [
+          [
+            923,
+            499
+          ],
+          [
+            350,
+            841
+          ]
+        ],
+        "rescaled": false
+      },
+      {
+        "comparison": "final-compare-9.png",
+        "originalCaptures": [
+          "question-adrenal-insufficiency-granule-tube-incorrect-1440.png",
+          "question-adrenal-insufficiency-granule-tube-incorrect-390.png"
+        ],
+        "originalDimensions": [
+          [
+            923,
+            499
+          ],
+          [
+            350,
+            830
+          ]
+        ],
+        "rescaled": false
+      },
+      {
+        "comparison": "final-compare-10.png",
+        "originalCaptures": [
+          "question-adrenal-insufficiency-granule-tube-correct-1440.png",
+          "question-adrenal-insufficiency-granule-tube-correct-390.png"
+        ],
+        "originalDimensions": [
+          [
+            923,
+            499
+          ],
+          [
+            350,
+            830
+          ]
+        ],
+        "rescaled": false
+      },
+      {
+        "comparison": "final-compare-11.png",
+        "originalCaptures": [
+          "question-adrenal-insufficiency-actovial-volume-incorrect-1440.png",
+          "question-adrenal-insufficiency-actovial-volume-incorrect-390.png"
+        ],
+        "originalDimensions": [
+          [
+            923,
+            482
+          ],
+          [
+            350,
+            770
+          ]
+        ],
+        "rescaled": false
+      },
+      {
+        "comparison": "final-compare-12.png",
+        "originalCaptures": [
+          "question-adrenal-insufficiency-actovial-volume-correct-1440.png",
+          "question-adrenal-insufficiency-actovial-volume-correct-390.png"
+        ],
+        "originalDimensions": [
+          [
+            923,
+            482
+          ],
+          [
+            350,
+            770
+          ]
+        ],
+        "rescaled": false
+      }
+    ],
+    "limits": "Isolated unauthenticated localpreview;account persistence/mainmerge/productionpublication not established. Repaint stabilization applied to capture only;no UI product alteration."
+  },
+  "remainingReview": {
+    "wholeFinalFormulationsLesson": {
+      "slug": "formulations-administration",
+      "title": "Formulations and Safe Administration",
+      "visual": "ai-formulations",
+      "summary": "Replacement succeeds only when the prescribed product, measured dose, administration route, and emergency technique deliver the intended hydrocortisone exposure.",
+      "concepts": [
+        "Hydrocortisone tablets",
+        "Granules and liquid",
+        "Dose measurement",
+        "Emergency injection",
+        "Route transition"
+      ],
+      "application": "Match the dosage form to the patient, verify product-specific instructions, and rehearse the emergency route before it is needed.",
+      "lesson": [
+        {
+          "heading": "Choose an oral product deliberately",
+          "body": "Tablets support flexible divided dosing for many adults. Pediatric granules and compounded or marketed liquid formulations may support smaller doses or swallowing needs, but concentrations, measuring devices, storage, and preparation instructions are product specific and are not interchangeable by volume."
+        },
+        {
+          "heading": "Prevent measurement errors",
+          "body": "Write the dose in milligrams and confirm the concentration whenever a liquid is used. Use the supplied oral syringe or an appropriate calibrated device rather than household spoons. Granules should be administered according to their labeling, and caregivers should demonstrate the complete technique."
+        },
+        {
+          "heading": "Administer Alkindi Sprinkle correctly",
+          "body": "Open the capsule; do not swallow its shell or crush or chew the granules. Give the granules directly, from a spoon, or on a small spoonful of cool soft food, and swallow within five minutes. Follow with fluid, but do not mix the granules into liquid or administer through nasogastric or gastric tubes. Contact the care team if the full dose is not retained. Switching oral formulations requires close monitoring for under-replacement even when the initial total daily milligram dose is unchanged. Hold the printed strength at the top, tap the granules into the lower half, gently squeeze the lower half and twist off the top. Keep the capsule dry and tap out all granules. The soft food should be cold or at room temperature, such as yogurt or fruit puree; give it right away. A sip of water, milk, breastmilk or formula follows administration immediately. If granules are regurgitated or vomited, contact the healthcare provider because a repeat dose may be needed. Granules seen in stool do not mean the medicine failed and are not a reason to give another dose. Check the bottle expiration, retain the original bottle to protect from light, and use the capsules within 60 days after opening. The initial same-total-daily-dose instruction when switching to Alkindi does not establish identical exposure from previously split or crushed tablets or compounded preparations; monitor closely and let the treating team adjust therapy if adrenal-insufficiency symptoms occur."
+        },
+        {
+          "heading": "Check food and timing instructions",
+          "body": "The book advises taking oral systemic steroid doses with food to reduce gastrointestinal upset. For a once-daily schedule, it places the dose between 7 and 8 AM to approximate natural cortisol timing. Keep the prescribed replacement schedule and the actual product instructions: this once-daily teaching does not replace divided hydrocortisone dosing or the separate preparation rules for pediatric granules."
+        },
+        {
+          "heading": "Prepare the emergency route",
+          "body": "Emergency hydrocortisone sodium succinate may require activation or reconstitution before IV or IM administration. Training should use the exact device dispensed, cover expiration and storage checks, and end with a return demonstration by the patient and a close contact. For Solu-Cortef, distinguish the 100 mg plain vial from the Act-O-Vial before practicing: the former has no supplied diluent, while the latter has a separate diluent compartment. Practice activation, gentle mixing, stopper preparation and withdrawal of the verified dose under appropriate training. A return demonstration checks these labeled steps; it does not replace route-specific professional instruction or establish readiness from an expiration date alone. The manufacturer label requires clear solution, protection from light and storage appropriate to the prepared product. It specifies use within 12 hours at controlled room temperature or no more than 24 hours under refrigeration, with unused solution discarded after the applicable limit. This is not permission to delay emergency treatment or reuse a single-dose vial. Check the current label for the dispensed product rather than transferring an older repackager's storage interval."
+        },
+        {
+          "heading": "Distinguish the injection presentations",
+          "body": "A Solu-Cortef plain vial needs a separate compatible diluent; an Act-O-Vial contains its diluent in another compartment. For the 100 mg Act-O-Vial, the mixed volume is 2 mL (50 mg/mL). Activate the compartments, gently mix to dissolve, expose and disinfect the stopper, then withdraw the prescribed dose with the trained aseptic technique. Check the actual strength and instructions; this concentration must not be assumed for other presentations. Reconstitution is not an extra conversion from salt weight to hydrocortisone dose. The manufacturer table expresses the sodium succinate amount as its hydrocortisone equivalent, so the prescribed hydrocortisone milligrams are already the basis of the dose. The 250 mg Act-O-Vial is also 2 mL when mixed, while the 500 mg and 1,000 mg presentations are 4 mL and 8 mL; each of those is 125 mg/mL rather than the 100 mg product's 50 mg/mL. For Act-O-Vial, press the plastic activator to move diluent into the lower compartment, gently agitate until dissolved, remove the plastic tab, disinfect the stopper, insert the needle squarely through its center, invert and withdraw the verified dose. Further dilution is not necessary for the labeled IV or IM injection; an IV infusion has separate dilution instructions. The 100 mg plain vial requires the compatible diluent specified for the intended route and has no packaged diluent. Do not infer that every plain-vial preparation has exactly the Act-O-Vial's final concentration."
+        },
+        {
+          "heading": "Transition after stabilization",
+          "body": "Parenteral stress dosing continues while oral absorption or hemodynamics remain unreliable. Once the trigger is controlled and the patient is stable and absorbing medication, the regimen can step down toward oral stress dosing and then physiologic replacement under the treating team's direction."
+        }
+      ],
+      "keyPoints": [
+        "Express liquid doses in milligrams and verify concentration.",
+        "Household spoons are not dosing devices.",
+        "Emergency technique must match the dispensed product.",
+        "Oral therapy resumes only when absorption and clinical stability are reliable."
+      ],
+      "check": {
+        "question": "What is the safest way to prescribe a liquid hydrocortisone dose?",
+        "choices": [
+          "Specify milligrams, verify the concentration, and use a calibrated device",
+          "Specify only a volume without naming the concentration",
+          "Measure with a household teaspoon",
+          "Assume every liquid has the same concentration"
+        ],
+        "answer": 0,
+        "rationale": "A milligram dose linked to a verified concentration and calibrated device reduces formulation and measurement errors.",
+        "reviewHref": "#formulations-administration"
+      }
+    },
+    "allSixFinalQuestionObjects": [
+      {
+        "id": "adrenal-insufficiency-20-case",
+        "question": "A caregiver receives a new liquid hydrocortisone concentration but continues the old milliliter volume. Which response is best?",
+        "choices": [
+          "Keep the old volume because hydrocortisone concentrations are interchangeable.",
+          "Choose a household spoon and estimate the volume.",
+          "Adjust the prescribed milligram dose solely to preserve the old volume.",
+          "Stop and recalculate the volume from the prescribed milligram dose and new concentration."
+        ],
+        "answer": 3,
+        "rationale": "The same volume can deliver a different dose when the concentration changes.",
+        "reviewHref": "#formulations-administration",
+        "difficulty": "application"
+      },
+      {
+        "id": "adrenal-insufficiency-21-case",
+        "question": "A child changes from tablets to granules and the caregiver has not received administration teaching. Which response is best?",
+        "choices": [
+          "Provide product-specific counseling and observe a return demonstration before relying on the new regimen.",
+          "Assume granules always use the same preparation method as crushed tablets.",
+          "Change the dose without reviewing the product instructions.",
+          "Skip counseling because the parent drug name is unchanged."
+        ],
+        "answer": 0,
+        "rationale": "Teach and check the exact granule instructions before relying on the switch. For Alkindi Sprinkle, open the capsule, keep the capsule dry, give all granules directly or by the labeled spoon or soft-food method, do not crush or chew them, and follow promptly with fluid. The label calls for close monitoring after a switch because prior manipulated preparations may have delivered a different exposure despite the same total daily milligrams. Return demonstration checks understanding of these steps; it is an educational safeguard rather than a claim that FDA mandates a particular competency test. Ingredient identity does not make preparation methods interchangeable, remove the need for counseling, or justify an unexplained dose change.",
+        "reviewHref": "#formulations-administration",
+        "difficulty": "application"
+      },
+      {
+        "id": "adrenal-insufficiency-22-case",
+        "question": "A patient's kit is unexpired, but neither the patient nor family can activate the vial system. Which response is best?",
+        "choices": [
+          "Rely on the unexpired date as proof that the kit can be used correctly.",
+          "Retrain with the dispensed device and confirm successful return demonstration.",
+          "Wait until a crisis to learn how to activate the vial.",
+          "Substitute a written prescription for a return demonstration."
+        ],
+        "answer": 1,
+        "rationale": "An unexpired vial is not proof that the patient or caregiver can prepare the prescribed injection. For the dispensed Act-O-Vial, check that training covers activation, gentle mixing, exposure and disinfection of the stopper, and withdrawal of the verified dose. Return demonstration checks the labeled preparation steps before an emergency; a written prescription or waiting for crisis does not establish that skill. Use the actual device, strength, route and current storage instructions. This is a practical training safeguard, not a claim that the label requires a named assessment method or that possession of the kit guarantees timely treatment.",
+        "reviewHref": "#formulations-administration",
+        "difficulty": "application"
+      },
+      {
+        "id": "adrenal-insufficiency-23-case",
+        "question": "A patient treated for adrenal crisis remains nauseated and cannot retain fluids despite improved blood pressure. Which response is best?",
+        "choices": [
+          "Switch to tablets solely because blood pressure has improved.",
+          "Stop glucocorticoid coverage until nausea resolves.",
+          "Continue parenteral coverage until oral absorption is dependable.",
+          "Use fludrocortisone alone while oral absorption is unreliable."
+        ],
+        "answer": 2,
+        "rationale": "A swallowed dose cannot protect the patient when it is not retained or absorbed.",
+        "reviewHref": "#formulations-administration",
+        "difficulty": "application"
+      },
+      {
+        "id": "adrenal-insufficiency-granule-tube",
+        "question": "A caregiver plans to mix Alkindi Sprinkle granules into liquid and deliver them through a gastric tube. Which correction follows the label?",
+        "choices": [
+          "Proceed because every hydrocortisone formulation is tube-compatible",
+          "Crush the granules first",
+          "Do not use this method; arrange a suitable product and administration plan",
+          "Swallow the intact capsule instead"
+        ],
+        "answer": 2,
+        "rationale": "Alkindi Sprinkle labeling prohibits mixing the granules into liquid because the delivered dose can be reduced and the taste-masking cover can dissolve. It also prohibits nasogastric or gastric tube administration because granules may block the tube. Crushing the granules and swallowing the capsule shell are also contrary to the instructions. A sip of fluid after giving the granules is permitted; making a liquid mixture before administration is a different method. Arrange an appropriate product and route with the treating team rather than improvising a tube protocol or assuming every hydrocortisone product is compatible.",
+        "reviewHref": "#formulations-administration",
+        "difficulty": "clinical"
+      },
+      {
+        "id": "adrenal-insufficiency-actovial-volume",
+        "question": "A prepared 100 mg Solu-Cortef Act-O-Vial contains 2 mL. A verified order calls for 25 mg. What volume corresponds to that dose?",
+        "choices": [
+          "0.25 mL",
+          "1 mL",
+          "2 mL",
+          "0.5 mL"
+        ],
+        "answer": 3,
+        "rationale": "The manufacturer label identifies the mixed 100 mg Act-O-Vial as 100 mg hydrocortisone equivalent in 2 mL: 100 mg / 2 mL = 50 mg/mL. A verified 25 mg order requires 25 mg / 50 mg/mL = 0.5 mL. At this concentration, 0.25 mL supplies 12.5 mg, 1 mL supplies 50 mg, and 2 mL supplies 100 mg. Confirm the actual presentation and complete labeled activation before withdrawal; the plain vial has no packaged diluent, and other Act-O-Vial strengths have different concentrations. The stated dose is a verified order for this calculation, not a new clinical dosing recommendation. No additional salt-to-hydrocortisone conversion is needed.",
+        "reviewHref": "#formulations-administration",
+        "difficulty": "clinical"
+      }
+    ],
+    "pendingBodyHeadings": [
+      "Choose an oral product deliberately",
+      "Prevent measurement errors",
+      "Transition after stabilization"
+    ],
+    "checkAndFigureAndMetadataPending": true,
+    "adultGlucocorticoidReplacementQuestions15And16Pending": true,
+    "broaderDependenciesPending": true,
+    "nextAction": "Continue remaining broader feeding dependencies and reconcile historical lexical inventory against current complete verified evidence. Hydrocortisone formulations now has six whole questions source verified,including two retained prior questions;three full bodies,embeddedcheck,figure and metadata still pending before whole lesson closure. Do not substitute pediatric product labeling for adult physiologic replacement/stress transition guidance. Continue dependencies before completing Chapter1printed7/PDF19formulaentry15fluidneeds. Full82chaptergoal remains active."
+  },
+  "release": {
+    "branch": "audit/rxprep-content-2026-09-24",
+    "commit": null,
+    "push": "pending",
+    "receipt": "enteral-nutrition-broader-adrenal-formulation-label-release.json",
+    "mainMerge": "not performed",
+    "production": "not verified"
+  },
+  "wholeGoalComplete": false,
+  "privateSourceFilesInGit": false
+}

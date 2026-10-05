@@ -278,4 +278,20 @@ const sourceReviewedReplacementQuestions = {
     "rationale": "Exogenous glucocorticoids can produce Cushing-like effects, including weight gain and fragile skin that bruises easily. The book also lists increased blood pressure and directs monitoring of weight and blood pressure. These findings warrant review of the replacement exposure and clinical adverse effects before any dose escalation; an appropriate reduction must preserve needed cortisol replacement."
   }
 };
-export const adrenalInsufficiencyQuestionBank = originalAdrenalInsufficiencyQuestionBank.map((question) => sourceReviewedReplacementQuestions[question.id] ? { ...question, ...sourceReviewedReplacementQuestions[question.id] } : question);
+const priorFormulationReviewQuestionBank = originalAdrenalInsufficiencyQuestionBank.map((question) => sourceReviewedReplacementQuestions[question.id] ? { ...question, ...sourceReviewedReplacementQuestions[question.id] } : question);
+
+const sourceReviewedHydrocortisoneFormulationQuestions = {
+  "adrenal-insufficiency-21-case": {
+    "rationale": "Teach and check the exact granule instructions before relying on the switch. For Alkindi Sprinkle, open the capsule, keep the capsule dry, give all granules directly or by the labeled spoon or soft-food method, do not crush or chew them, and follow promptly with fluid. The label calls for close monitoring after a switch because prior manipulated preparations may have delivered a different exposure despite the same total daily milligrams. Return demonstration checks understanding of these steps; it is an educational safeguard rather than a claim that FDA mandates a particular competency test. Ingredient identity does not make preparation methods interchangeable, remove the need for counseling, or justify an unexplained dose change."
+  },
+  "adrenal-insufficiency-22-case": {
+    "rationale": "An unexpired vial is not proof that the patient or caregiver can prepare the prescribed injection. For the dispensed Act-O-Vial, check that training covers activation, gentle mixing, exposure and disinfection of the stopper, and withdrawal of the verified dose. Return demonstration checks the labeled preparation steps before an emergency; a written prescription or waiting for crisis does not establish that skill. Use the actual device, strength, route and current storage instructions. This is a practical training safeguard, not a claim that the label requires a named assessment method or that possession of the kit guarantees timely treatment."
+  },
+  "adrenal-insufficiency-granule-tube": {
+    "rationale": "Alkindi Sprinkle labeling prohibits mixing the granules into liquid because the delivered dose can be reduced and the taste-masking cover can dissolve. It also prohibits nasogastric or gastric tube administration because granules may block the tube. Crushing the granules and swallowing the capsule shell are also contrary to the instructions. A sip of fluid after giving the granules is permitted; making a liquid mixture before administration is a different method. Arrange an appropriate product and route with the treating team rather than improvising a tube protocol or assuming every hydrocortisone product is compatible."
+  },
+  "adrenal-insufficiency-actovial-volume": {
+    "rationale": "The manufacturer label identifies the mixed 100 mg Act-O-Vial as 100 mg hydrocortisone equivalent in 2 mL: 100 mg / 2 mL = 50 mg/mL. A verified 25 mg order requires 25 mg / 50 mg/mL = 0.5 mL. At this concentration, 0.25 mL supplies 12.5 mg, 1 mL supplies 50 mg, and 2 mL supplies 100 mg. Confirm the actual presentation and complete labeled activation before withdrawal; the plain vial has no packaged diluent, and other Act-O-Vial strengths have different concentrations. The stated dose is a verified order for this calculation, not a new clinical dosing recommendation. No additional salt-to-hydrocortisone conversion is needed."
+  }
+};
+export const adrenalInsufficiencyQuestionBank = priorFormulationReviewQuestionBank.map((question) => sourceReviewedHydrocortisoneFormulationQuestions[question.id] ? { ...question, ...sourceReviewedHydrocortisoneFormulationQuestions[question.id] } : question);

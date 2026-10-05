@@ -7460,9 +7460,30 @@
         {
           "slug": "formulations-administration",
           "status": "reviewing",
-          "latestScopedEvidence": "enteral-nutrition-broader-adrenal-perioperative-review.json",
+          "latestScopedEvidence": "enteral-nutrition-broader-adrenal-formulation-label-review.json",
           "embeddedCheckVerified": false,
-          "wholeLessonVerified": false
+          "wholeLessonVerified": false,
+          "verifiedBodyHeadings": [
+            "Check food and timing instructions",
+            "Administer Alkindi Sprinkle correctly",
+            "Prepare the emergency route",
+            "Distinguish the injection presentations"
+          ],
+          "figureVerified": false,
+          "metadataVerified": false,
+          "verifiedQuestionIds": [
+            "adrenal-insufficiency-20-case",
+            "adrenal-insufficiency-21-case",
+            "adrenal-insufficiency-22-case",
+            "adrenal-insufficiency-23-case",
+            "adrenal-insufficiency-granule-tube",
+            "adrenal-insufficiency-actovial-volume"
+          ],
+          "remainingBodyHeadings": [
+            "Choose an oral product deliberately",
+            "Prevent measurement errors",
+            "Transition after stabilization"
+          ]
         },
         {
           "slug": "sick-day-preparedness",
@@ -7482,7 +7503,8 @@
       "evidence": [
         "adrenal-insufficiency.md",
         "adrenal-pharmacology.md",
-        "enteral-nutrition-broader-adrenal-perioperative-review.json"
+        "enteral-nutrition-broader-adrenal-perioperative-review.json",
+        "enteral-nutrition-broader-adrenal-formulation-label-review.json"
       ],
       "verificationNotes": "All 11 lessons/checks/figures and 35 focused cases reviewed; diagnostic/recovery and adult/pediatric boundaries, label-specific administration, sick-day/fluid and mineralocorticoid guidance reconciled. Desktop/mobile figures and interactions, scoring/reset, readability, structural audit and production build passed. See adrenal-insufficiency.md for source scope and sitewide floating-control limitation.",
       "broaderEnteralAdministrationReview": {
@@ -7511,6 +7533,44 @@
         "wholeModuleVerified": false,
         "figuresVerified": 0,
         "metadataVerified": false
+      },
+      "latestHydrocortisoneFormulationLabelReview": {
+        "evidence": "enteral-nutrition-broader-adrenal-formulation-label-review.json",
+        "moduleBank": 35,
+        "sourceVerifiedBankIds": [
+          "adrenal-insufficiency-21-case",
+          "adrenal-insufficiency-22-case",
+          "adrenal-insufficiency-granule-tube",
+          "adrenal-insufficiency-actovial-volume"
+        ],
+        "newFullQuestionsVerified": 4,
+        "broaderFeedingBankVerifiedAfter": 205,
+        "wholeBodiesVerifiedThisUnit": 3,
+        "formulationsLessonQuestionTotal": 6,
+        "priorTwoQuestionsExactRechecked": [
+          "adrenal-insufficiency-20-case",
+          "adrenal-insufficiency-23-case"
+        ],
+        "allSixFormulationsQuestionsSourceVerified": true,
+        "wholeFormulationsLessonVerified": false,
+        "formulationsWholeBodiesVerifiedIncludingPriorFoodBody": 4,
+        "formulationsBodyTotal": 7,
+        "remainingBodyHeadings": [
+          "Choose an oral product deliberately",
+          "Prevent measurement errors",
+          "Transition after stabilization"
+        ],
+        "embeddedCheckNewlyVerified": false,
+        "figureNewlyVerified": false,
+        "metadataNewlyVerified": false,
+        "wholeParentModuleVerified": false,
+        "wholeENModuleVerified": false,
+        "wholeChaptersVerified": false,
+        "all1180CumulativeObjectsUnchanged": true,
+        "all35OriginalIdsStemsKeysChoicesAndAnchorsPreserved": true,
+        "noNewQuestionIds": true,
+        "originalClinicalScopeRetained": true,
+        "unrelatedDraftsPreserved": true
       }
     },
     {
