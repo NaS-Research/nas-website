@@ -1,0 +1,103 @@
+{
+  "verifiedAt": "2026-10-05T02:52:13.530624+00:00",
+  "unit": "enteral-nutrition:broader-calcium-measurement-book-arithmetic",
+  "contentCommit": "53fd29291f429d3d398e07679a6b459a673510de",
+  "remoteBranch": "audit/rxprep-content-2026-09-24",
+  "remoteHashObserved": "53fd29291f429d3d398e07679a6b459a673510de",
+  "exactRemoteObservedByTool": true,
+  "coverage": {
+    "evidence": "enteral-nutrition-broader-calcium-measurement-book-review.json",
+    "moduleQuestions": 102,
+    "wholeQuestionsVerified": 12,
+    "newVerifiedBankIds": [
+      "calcium-phosphorus-010",
+      "calcium-phosphorus-016",
+      "calcium-phosphorus-060",
+      "calcium-phosphorus-061",
+      "calcium-phosphorus-062",
+      "calcium-phosphorus-063",
+      "calcium-phosphorus-064",
+      "calcium-phosphorus-065",
+      "calcium-phosphorus-066",
+      "calcium-phosphorus-067",
+      "calcium-phosphorus-068",
+      "calcium-phosphorus-069"
+    ],
+    "newQuestionIdsAdded": 0,
+    "broaderFeedingBankVerifiedAfter": 247,
+    "independentlyRecomputedModuleCalculations": 10,
+    "derivedCumulative060Verified": true,
+    "calciumMeasurementQuestionTotal": 21,
+    "calciumMeasurementRemainingQuestionIds": [
+      "calcium-phosphorus-011",
+      "calcium-phosphorus-012",
+      "calcium-phosphorus-013",
+      "calcium-phosphorus-014",
+      "calcium-phosphorus-015",
+      "calcium-phosphorus-017",
+      "calcium-phosphorus-090",
+      "calcium-phosphorus-092",
+      "calcium-phosphorus-102"
+    ],
+    "wholeLessonBodiesNewlyVerified": 0,
+    "wholeLessonMetadataNewlyVerified": false,
+    "wholeCalciumMeasurementLessonVerified": false,
+    "wholeParentModuleVerified": false,
+    "wholeENModuleVerified": false,
+    "wholeChaptersVerified": false,
+    "all102QuestionIdsKeysAnchorsOrderPreserved": true,
+    "all1180CumulativeIdsKeysAnchorsOrderPreserved": true,
+    "other1179CumulativeWholeObjectsUnchanged": true
+  },
+  "validation": {
+    "productionBuild": {
+      "status": "passed",
+      "exitCode": 0,
+      "pages": 567,
+      "isolatedBaseCommit": "4dbcca90dc3ceb90a3750e9e38039ac37abedfb8"
+    },
+    "browserStatus": "passed",
+    "structureQuestions": 102,
+    "rawCapturesInspected": 38,
+    "nativeComparisons": 19,
+    "referenceCropsActuallyViewed": 2,
+    "oneDerivedCumulative060Reconciled": true,
+    "other1179CumulativeObjectsUnchanged": true,
+    "objectPreservation": {
+      "status": "passed",
+      "all102StableIdsAnswerKeysAnchorsAndOrderPreserved": true,
+      "onlyTenStemsGainExplicitRounding": true,
+      "onlyQuestion016CorrectChoiceClarified": true,
+      "onlyTwelveRationalesChanged": true,
+      "other90QuestionWholeObjectsUnchanged": true,
+      "allLessonBodiesMetadataFiguresChecksReferencesUnchanged": true,
+      "oneDerivedCumulative060Reconciled": true,
+      "other1179CumulativeWholeObjectsUnchanged": true,
+      "all1180CumulativeIdsKeysAnchorsOrderPreserved": true,
+      "allOtherModuleWholeObjectsUnchanged": true
+    }
+  },
+  "preservation": {
+    "status": "passed",
+    "baselinePathsChecked": 809,
+    "allUnrelatedDraftBytesAndDeletionsPreserved": true,
+    "dirtyQuestionBankBaselineRecoveredByRemovingExactScopedTail": true,
+    "allOtherWorkingLedgerFieldsPreserved": true,
+    "allOtherCommittedLedgerEntriesPreserved": true,
+    "onlyHeadDerivedVerifiedProductStagedOrCommitted": true,
+    "scope": [
+      "src/data/questionBanks/calciumPhosphorusHomeostasis.js",
+      "docs/clinical-audit/enteral-nutrition-broader-calcium-measurement-book-review.json",
+      "docs/clinical-audit/module-ledger.json",
+      "docs/clinical-audit/chapter-ledger.json",
+      "docs/clinical-audit/sequential-resume.json"
+    ]
+  },
+  "publication": {
+    "mainMerge": "not performed",
+    "production": "not verified"
+  },
+  "wholeGoalComplete": false,
+  "nextAction": "Continue remaining calcium/phosphorus whole lessons and parent reintegration. Source question for existing KDIGO2017, Endocrine Society hypercalcemia-of-malignancy and Society for Endocrinology acute hypo/hypercalcemia guidance remains pending unless direct approval arrives; do not infer approval from elapsed time. Meanwhile continue book-supported calcium/mineral/phosphate source mapping and other approved feeding dependencies. Do not recount twelve calcium questions or derived cumulative060. Earliest sequential checkpoint stays Chapter1printed7/PDF19entry15fluidneeds withChapter11feedingdependencies; full82chaptergoalactive.",
+  "receiptCommit": "This receipt follows the exact verified content commit;its own remote hash is verified separately in execution output."
+}
