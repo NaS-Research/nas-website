@@ -367,3 +367,135 @@ Object.assign(hepatitisCModule.submodules.find((lesson) => lesson.slug === "inte
   "rationale": "Treatment completion alone does not prove cure. Plan post-treatment RNA assessment, evaluate ongoing liver disease and exposure risk, and continue indicated cirrhosis surveillance. A limited SVR4 option does not remove those follow-up responsibilities.",
   "reviewHref": "#integrated-case"
 });
+
+// Reconcile HCV diagnosis, natural history and staging with approved sources.
+Object.assign(hepatitisCModule.submodules.find((lesson) => lesson.slug === "virus-natural-history").lesson.find((body) => body.heading === "Map replication"), {
+  "heading": "Map replication",
+  "body": "HCV has a positive-sense, single-stranded RNA genome translated into a polyprotein. NS3/4A protease processes viral proteins, NS5A supports RNA replication and virion assembly, and NS5B is the RNA-dependent RNA polymerase. Error-prone copying produces closely related variants within a host, termed quasispecies. These distinct targets explain combination DAA therapy; genetic diversity alone does not establish the patient’s fibrosis stage or prognosis."
+});
+Object.assign(hepatitisCModule.submodules.find((lesson) => lesson.slug === "virus-natural-history").lesson.find((body) => body.heading === "Map transmission"), {
+  "heading": "Map transmission",
+  "body": "HCV is transmitted primarily through blood exposure, particularly shared injection equipment. Perinatal, occupational, unsafe health-care procedures and some sexual exposures also transmit infection. There is no HCV vaccine. Pair diagnosis and treatment with sterile equipment, blood-exposure precautions, prevention services and repeat testing when exposure continues; cure does not confer immunity."
+});
+Object.assign(hepatitisCModule.submodules.find((lesson) => lesson.slug === "virus-natural-history").lesson.find((body) => body.heading === "Map progression"), {
+  "heading": "Map progression",
+  "body": "Acute infection may clear spontaneously or persist. Persistent infection can cause inflammation and progressive fibrosis, leading to cirrhosis, portal hypertension, decompensation and hepatocellular carcinoma. Progression varies and is not necessarily linear; alcohol, metabolic disease or steatosis, HIV coinfection, immunosuppression and older age at infection can increase risk. Normal ALT or absence of symptoms does not exclude significant fibrosis, and the HCV RNA level does not measure liver-disease severity."
+});
+Object.assign(hepatitisCModule.submodules.find((lesson) => lesson.slug === "virus-natural-history").lesson.find((body) => body.heading === "Treat acute infection"), {
+  "heading": "Treat acute infection",
+  "body": "For acute HCV with quantifiable RNA, AASLD/IDSA recommends treatment without waiting solely for spontaneous clearance. Select a regimen recommended for chronic infection that fits the patient’s liver state and other eligibility criteria; do not shorten the course merely because infection is acute. Assess hepatic severity, counsel about transmission and link promptly to treatment and prevention services. A single undetectable RNA result does not establish spontaneous clearance when acute infection is suspected, because viremia may be transiently suppressed."
+});
+Object.assign(hepatitisCModule.submodules.find((lesson) => lesson.slug === "virus-natural-history"), {
+  "summary": "HCV is a positive-sense RNA virus with related variants within a host. Acute infection can clear, while persistent infection can cause progressive liver injury.",
+  "application": "Connect exposure history and serial testing with fibrosis and clinical context. Treat confirmed acute viremia through an appropriate pathway rather than waiting solely for clearance.",
+  "keyPoints": [
+    "NS5B copies viral RNA; NS3/4A and NS5A have different functions.",
+    "No HCV vaccine exists, and cure does not confer immunity.",
+    "Symptoms, ALT and viral load cannot substitute for fibrosis assessment.",
+    "Confirmed acute viremia uses treatment without a clearance waiting period."
+  ]
+});
+Object.assign(hepatitisCModule.submodules.find((lesson) => lesson.slug === "virus-natural-history").check, {
+  "question": "Which HCV protein is the RNA-dependent RNA polymerase?",
+  "choices": [
+    "NS5B",
+    "NS5A, which supports replication and assembly",
+    "NS3/4A, which processes viral proteins",
+    "HBsAg, a hepatitis B surface marker"
+  ],
+  "answer": 0,
+  "rationale": "NS5B copies the HCV RNA genome. NS3/4A is a protease, NS5A supports replication and assembly, and HBsAg is an HBV marker rather than the HCV polymerase.",
+  "reviewHref": "#virus-natural-history"
+});
+Object.assign(hepatitisCModule.submodules.find((lesson) => lesson.slug === "screening-diagnosis").lesson.find((body) => body.heading === "Screen broadly"), {
+  "heading": "Screen broadly",
+  "body": "CDC recommends at least one HCV screen for adults aged eighteen or older and screening during every pregnancy, except in settings where HCV RNA prevalence is below 0.1%. Test people with specified risk factors regardless of setting prevalence. Repeat testing periodically with ongoing risk, including current sharing of injection equipment or maintenance hemodialysis, and test anyone who requests it. Begin routine screening with antibody and reflex RNA when reactive; recent exposure and impaired antibody response can require RNA directly."
+});
+Object.assign(hepatitisCModule.submodules.find((lesson) => lesson.slug === "screening-diagnosis").lesson.find((body) => body.heading === "Use reflex diagnosis"), {
+  "heading": "Use reflex diagnosis",
+  "body": "Automatically perform HCV RNA nucleic-acid testing after a reactive antibody result, ideally from a sample collected at the same visit. Reactive antibody can reflect current infection, resolved infection or a biologic false-positive result. Detectable RNA establishes current infection and prompts linkage to care; CDC recommends confirming RNA positivity in a subsequent blood sample before antiviral treatment. Reactive antibody with undetectable RNA means no current infection in most cases. Repeat RNA when recent exposure, clinical disease or specimen concerns warrant it; a different antibody assay can help distinguish resolved infection from false positivity when needed."
+});
+Object.assign(hepatitisCModule.submodules.find((lesson) => lesson.slug === "screening-diagnosis").lesson.find((body) => body.heading === "Handle early exposure"), {
+  "heading": "Handle early exposure",
+  "body": "RNA usually becomes detectable about one to two weeks after exposure; antibody commonly takes eight to eleven weeks. With possible exposure in the past six months, obtain RNA even if antibody is negative, and consider RNA when immunocompromise could impair antibody detection. RNA positivity with negative antibody or documented antibody seroconversion supports acute infection; RNA positivity alone does not distinguish acute from chronic infection. Repeat RNA if suspicion remains despite a negative result, because early infection can show fluctuating or transiently undetectable viremia."
+});
+Object.assign(hepatitisCModule.submodules.find((lesson) => lesson.slug === "screening-diagnosis").lesson.find((body) => body.heading === "Diagnose reinfection with RNA"), {
+  "heading": "Diagnose reinfection with RNA",
+  "body": "Antibody usually remains reactive after spontaneous clearance or cure. Use RNA to evaluate reinfection after a new exposure or unexplained liver-test elevation. Arrange at least annual RNA testing when exposure risk continues after cure, with earlier evaluation for a new aminotransferase flare or hepatic dysfunction. A persistently reactive antibody is neither proof of reinfection nor evidence that treatment failed."
+});
+Object.assign(hepatitisCModule.submodules.find((lesson) => lesson.slug === "screening-diagnosis"), {
+  "summary": "Reactive antibody may indicate current infection, resolved infection or false positivity. RNA identifies current viremia; timing and prior tests help establish acute infection.",
+  "application": "Arrange reflex RNA and follow the result through care linkage. Use exposure timing, immune status and prior results to decide when a negative test needs repeat RNA.",
+  "keyPoints": [
+    "Reactive antibody alone does not confirm current infection.",
+    "RNA can precede antibody after recent exposure.",
+    "RNA positivity alone does not distinguish acute from chronic infection.",
+    "Use RNA to evaluate reinfection after clearance or cure."
+  ]
+});
+Object.assign(hepatitisCModule.submodules.find((lesson) => lesson.slug === "screening-diagnosis").check, {
+  "question": "What establishes current HCV infection after a reactive antibody result?",
+  "choices": [
+    "Detectable HCV RNA",
+    "A second reactive antibody without RNA testing",
+    "Normal ALT without RNA testing",
+    "HBsAg positivity without HCV RNA testing"
+  ],
+  "answer": 0,
+  "rationale": "Detectable HCV RNA establishes current infection. Reactive antibody can reflect resolved infection or false positivity; CDC recommends repeat RNA in a subsequent sample before antiviral therapy. RNA positivity alone does not establish whether infection is acute or chronic.",
+  "reviewHref": "#screening-diagnosis"
+});
+Object.assign(hepatitisCModule.submodules.find((lesson) => lesson.slug === "fibrosis-eligibility").lesson.find((body) => body.heading === "Calculate FIB-4"), {
+  "heading": "Calculate FIB-4",
+  "body": "FIB-4 = age in years × AST in U/L ÷ (platelet count in 10^9/L × √ALT in U/L). For age sixty, AST sixty-five, ALT sixty-four and platelets 150 × 10^9/L, the result is 60 × 65 ÷ (150 × 8) = 3.25. The simplified algorithms presume cirrhosis when FIB-4 is greater than 3.25; equality does not meet that specific criterion. A value at or below the threshold does not exclude cirrhosis established by other evidence. Use the correct platelet units and assess the result in context."
+});
+Object.assign(hepatitisCModule.submodules.find((lesson) => lesson.slug === "fibrosis-eligibility").lesson.find((body) => body.heading === "Integrate cirrhosis evidence"), {
+  "heading": "Integrate cirrhosis evidence",
+  "body": "The simplified algorithms presume cirrhosis from FIB-4 greater than 3.25 or other evidence: transient-elastography stiffness greater than 12.5 kPa, a proprietary serum test above its cirrhosis cutoff, imaging nodularity or splenomegaly, platelets below 150,000/mm³, or prior biopsy showing cirrhosis. These are alternative qualifying findings, not a requirement that every test be positive. Biopsy is not routinely required. Normal bilirubin or a low FIB-4 cannot override documented cirrhosis evidence."
+});
+Object.assign(hepatitisCModule.submodules.find((lesson) => lesson.slug === "fibrosis-eligibility").lesson.find((body) => body.heading === "Separate compensation"), {
+  "heading": "Separate compensation",
+  "body": "Assess both the current Child-Turcotte-Pugh score and any history of hepatic decompensation. Child-Pugh A can qualify for the compensated-cirrhosis simplified pathway when other criteria are met; current or prior decompensation or a score of seven or more excludes that pathway. AASLD/IDSA advises against NS3 protease-inhibitor regimens with current or prior decompensation or a current score of seven or more. Mavyret specifically contraindicates Child-Pugh B or C and any prior hepatic decompensation. A currently improved score does not erase a history of ascites, hepatic encephalopathy or variceal bleeding."
+});
+Object.assign(hepatitisCModule.submodules.find((lesson) => lesson.slug === "fibrosis-eligibility").lesson.find((body) => body.heading === "Read exclusions correctly"), {
+  "heading": "Read exclusions correctly",
+  "body": "Choose the exact simplified pathway before applying its exclusions. Prior HCV treatment, current pregnancy, HBsAg positivity, known or suspected HCC and prior liver transplant require another approach. The compensated-cirrhosis simplified algorithm also excludes eGFR below 30 mL/min/1.73 m²; both simplified algorithms require another approach for HIV treated with a tenofovir disoproxil fumarate-containing regimen when eGFR is below 60. These pathway limits are not universal DAA renal contraindications: Mavyret needs no renal dose adjustment, including dialysis. Route excluded patients to the relevant guidance and specialist assessment rather than assuming HCV cannot be treated."
+});
+Object.assign(hepatitisCModule.submodules.find((lesson) => lesson.slug === "fibrosis-eligibility"), {
+  "summary": "Fibrosis evidence, current compensation and prior decompensation determine the appropriate treatment pathway and continuing liver care.",
+  "application": "Calculate FIB-4 with correct units, integrate other cirrhosis evidence, and document why the chosen pathway applies. Arrange an alternative assessment for exclusions.",
+  "keyPoints": [
+    "FIB-4 greater than 3.25 is one cirrhosis criterion.",
+    "Other evidence can establish cirrhosis despite a lower FIB-4.",
+    "Current and prior decompensation matter for protease inhibitors.",
+    "A simplified-pathway exclusion does not prohibit all HCV treatment."
+  ]
+});
+Object.assign(hepatitisCModule.submodules.find((lesson) => lesson.slug === "fibrosis-eligibility").check, {
+  "question": "Which finding excludes Mavyret even if the current Child-Pugh score is in class A?",
+  "choices": [
+    "A history of hepatic decompensation",
+    "Reactive HCV antibody alone",
+    "Normal platelet count alone",
+    "Noncirrhotic status"
+  ],
+  "answer": 0,
+  "rationale": "Mavyret is contraindicated with any prior hepatic decompensation as well as current Child-Pugh B or C. Current improvement does not erase that history; antibody reactivity, normal platelets and noncirrhotic status are not those contraindications.",
+  "reviewHref": "#fibrosis-eligibility"
+});
+hepatitisCModule.references.push({
+  "label": "AASLD/IDSA: management of acute HCV infection",
+  "href": "https://www.hcvguidelines.org/guidance/management-of-acute-hcv-infection/"
+});
+hepatitisCModule.references.push({
+  "label": "AASLD/IDSA: treatment timing and fibrosis progression",
+  "href": "https://www.hcvguidelines.org/guidance/when-and-in-whom-to-initiate-hcv-therapy/"
+});
+hepatitisCModule.references.push({
+  "label": "University of Washington: HCV RNA genome",
+  "href": "https://www.hepatitisc.uw.edu/page/structure/hcv-rna"
+});
+hepatitisCModule.references.push({
+  "label": "Blackard et al.: HCV quasispecies, 2010",
+  "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3020841/"
+});

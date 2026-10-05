@@ -1,7 +1,7 @@
 const views = {
-  "virus-natural-history": ["RNA genome", "Replication", "Inflammation", "Fibrosis"],
-  "screening-diagnosis": ["Antibody", "Reflex RNA", "Current infection", "Linkage"],
-  "fibrosis-eligibility": ["FIB-4", "Elastography", "Child-Pugh", "Pathway"],
+  "virus-natural-history": ["RNA", "NS5B", "Fibrosis", "Cirrhosis"],
+  "screening-diagnosis": ["Antibody", "RNA", "Viremia", "Linkage"],
+  "fibrosis-eligibility": ["FIB-4", "Stiffness", "CTP", "Pathway"],
   "daa-mechanisms": ["NS3/4A", "NS5A", "NS5B", "Pangenotypic"],
   "initial-regimens": ["Mavyret", "Epclusa", "Food", "Duration"],
   "pretreatment-safety": ["Medicines", "HBV", "HIV", "Pregnancy"],
@@ -17,6 +17,9 @@ export default function HepatitisCVisual({ type }) {
   const key = type.replace("hepatitis-c-", "");
   const labels = views[key] || views["integrated-case"];
   const reviewedCaptions = {
+    "virus-natural-history": "Connect the RNA virus and replication targets with progressive liver injury.",
+    "screening-diagnosis": "Use RNA to identify current viremia and link the result to care.",
+    "fibrosis-eligibility": "Integrate fibrosis evidence and compensation before choosing the pathway.",
     "pretreatment-safety": "Connect baseline testing, medicines, coinfections, and pregnancy context.",
     "svr-follow-up": "Confirm cure with post-treatment RNA and preserve risk-based follow-up.",
     "integrated-case": "Connect diagnosis, staging, treatment delivery, and documented cure.",

@@ -660,3 +660,221 @@ Object.assign(hepatitisCQuestionBank.find((question) => question.id === "hepatit
   ],
   "rationale": "The omitted follow-up responsibility is the harmful action. Communicating supply, interruptions, interactions and dates helps implement the guideline pathway; those protective actions do not substitute for the test result itself."
 });
+
+// Repair whole HCV natural-history, diagnosis and staging assessments.
+Object.assign(hepatitisCQuestionBank.find((question) => question.id === "hepatitis-c-001"), {
+  "choices": [
+    "HCV has a positive-sense RNA genome, and persistent infection can cause progressive fibrosis and cirrhosis",
+    "HCV is a DNA virus that must be diagnosed with HBV DNA",
+    "Normal ALT excludes clinically significant HCV-related fibrosis",
+    "The RNA concentration alone establishes the degree of cirrhosis"
+  ],
+  "rationale": "HCV is an RNA virus. Persistent infection can cause progressive liver injury, but progression varies; symptoms, ALT and viral load do not replace fibrosis staging. Genetic diversity is not itself a clinical fibrosis score."
+});
+Object.assign(hepatitisCQuestionBank.find((question) => question.id === "hepatitis-c-002"), {
+  "choices": [
+    "Assess fibrosis and clinical risk factors even when HCV infection is asymptomatic",
+    "Defer fibrosis assessment until jaundice develops",
+    "Use the viral load as the only measure of liver-disease severity",
+    "Assume normal ALT guarantees that fibrosis is absent"
+  ],
+  "rationale": "Asymptomatic infection and normal ALT can coexist with significant fibrosis. Assess liver state alongside duration, age at infection, alcohol, metabolic disease, HIV and immune context rather than relying on symptoms or RNA level."
+});
+Object.assign(hepatitisCQuestionBank.find((question) => question.id === "hepatitis-c-003"), {
+  "choices": [
+    "Integrate fibrosis evidence with duration and host risks rather than predicting progression from RNA level alone",
+    "Predict identical fibrosis progression for every person with HCV",
+    "Exclude cirrhosis solely because the patient reports no symptoms",
+    "Infer severe fibrosis directly from a high viral load without staging"
+  ],
+  "rationale": "Progression is variable and can be nonlinear. The RNA level does not correlate reliably with fibrosis stage; clinical risk factors inform assessment but do not replace objective liver evaluation."
+});
+Object.assign(hepatitisCQuestionBank.find((question) => question.id === "hepatitis-c-004"), {
+  "choices": [
+    "Dismiss asymptomatic HCV as harmless and omit fibrosis assessment and treatment linkage",
+    "Assess fibrosis despite absent symptoms",
+    "Review alcohol, metabolic disease and HIV context",
+    "Arrange an appropriate treatment assessment for confirmed infection"
+  ],
+  "rationale": "The harmful omission is dismissing infection because symptoms are absent. The other choices support evaluation of a potentially progressive but curable infection."
+});
+Object.assign(hepatitisCQuestionBank.find((question) => question.id === "hepatitis-c-005"), {
+  "choices": [
+    "HCV is transmitted primarily through blood exposure, especially shared injection equipment",
+    "HCV is transmitted only through respiratory droplets",
+    "A successful HCV treatment course prevents all future infection",
+    "An available HCV vaccine replaces blood-exposure precautions"
+  ],
+  "rationale": "Blood exposure predominates, with additional perinatal, occupational, unsafe-procedure and selected sexual risks. No HCV vaccine exists, and cure does not confer immunity."
+});
+Object.assign(hepatitisCQuestionBank.find((question) => question.id === "hepatitis-c-006"), {
+  "choices": [
+    "Pair treatment with sterile injection equipment, blood-exposure precautions and ongoing-risk testing",
+    "Stop prevention counseling after the first negative RNA result",
+    "Recommend an HCV vaccine instead of exposure prevention",
+    "Assume shared equipment is safe after one participant was cured"
+  ],
+  "rationale": "Treatment and prevention address different needs. Cure does not protect against reinfection, so exposure reduction and appropriate repeat testing remain necessary."
+});
+Object.assign(hepatitisCQuestionBank.find((question) => question.id === "hepatitis-c-007"), {
+  "choices": [
+    "Support treatment access and prevention services, with RNA testing for recurrence when risk continues after cure",
+    "Withhold all treatment until reinfection risk is permanently eliminated",
+    "Use antibody testing alone to diagnose reinfection after cure",
+    "Assume a previously cured patient cannot reacquire HCV"
+  ],
+  "rationale": "Prevention services complement treatment; potential reinfection does not make cure futile. Antibody commonly remains reactive after cure, so recurrence assessment uses RNA."
+});
+Object.assign(hepatitisCQuestionBank.find((question) => question.id === "hepatitis-c-008"), {
+  "choices": [
+    "Tell a cured patient that shared injection equipment is safe because cure provides immunity",
+    "Explain that reinfection remains possible",
+    "Offer access to sterile equipment and prevention services",
+    "Arrange RNA-based testing when ongoing exposure warrants it"
+  ],
+  "rationale": "Claiming immunity after cure encourages a preventable exposure. The other choices address continuing reinfection risk; there is no HCV vaccine."
+});
+Object.assign(hepatitisCQuestionBank.find((question) => question.id === "hepatitis-c-009"), {
+  "choices": [
+    "Routine HCV screening uses antibody with reflex RNA when reactive; CDC recommends at least one adult screen and testing each pregnancy, with a low-prevalence-setting exception",
+    "Every reactive antibody result proves current HCV infection without RNA",
+    "A negative antibody rules out infection immediately after every exposure",
+    "Only symptomatic adults qualify for CDC HCV testing"
+  ],
+  "rationale": "CDC recommends screening adults aged eighteen or older and during each pregnancy except settings with HCV RNA prevalence below 0.1%. Risk-based testing applies regardless of setting prevalence, and recent exposure can require RNA despite negative antibody."
+});
+Object.assign(hepatitisCQuestionBank.find((question) => question.id === "hepatitis-c-010"), {
+  "choices": [
+    "Arrange reflex RNA after reactive antibody and interpret the RNA result before labeling current infection",
+    "Diagnose active infection from reactive antibody alone",
+    "Use normal ALT instead of RNA to decide whether infection is current",
+    "Use HBsAg instead of HCV RNA for HCV confirmation"
+  ],
+  "rationale": "Reactive antibody can reflect current infection, resolved infection or false positivity. RNA identifies current viremia; before antivirals, CDC recommends confirming RNA positivity in a subsequent blood sample."
+});
+Object.assign(hepatitisCQuestionBank.find((question) => question.id === "hepatitis-c-011"), {
+  "choices": [
+    "Use RNA after recent exposure despite negative antibody, and repeat RNA when suspicion remains",
+    "Rule out recent infection permanently after one negative antibody",
+    "Classify every positive RNA result as acute infection without prior-test or exposure context",
+    "Declare spontaneous clearance from one negative RNA during suspected acute infection"
+  ],
+  "rationale": "RNA can precede antibody and can fluctuate in acute infection. Exposure history, seroconversion and serial tests help establish acute infection; RNA positivity alone cannot distinguish acute from chronic disease."
+});
+Object.assign(hepatitisCQuestionBank.find((question) => question.id === "hepatitis-c-012"), {
+  "choices": [
+    "Label reactive antibody as active HCV and start treatment without RNA confirmation",
+    "Arrange reflex RNA testing after reactive antibody",
+    "Use RNA when recent exposure could precede antibody detection",
+    "Consider follow-up RNA when clinical suspicion remains after a negative result"
+  ],
+  "rationale": "The harmful action substitutes antibody reactivity for current viremia. The other actions apply the diagnostic sequence and its early-exposure exceptions."
+});
+Object.assign(hepatitisCQuestionBank.find((question) => question.id === "hepatitis-c-013"), {
+  "choices": [
+    "Confirmed acute HCV with quantifiable RNA is treated without waiting solely for spontaneous clearance, using an eligible chronic-infection regimen",
+    "Every suspected exposure needs DAA prophylaxis before RNA testing",
+    "All acute infections should receive a shorter DAA course solely because they are acute",
+    "One undetectable RNA result always proves spontaneous clearance"
+  ],
+  "rationale": "AASLD/IDSA recommends test and treat after acute viremia is diagnosed. Use the appropriate chronic-infection regimen and duration; prophylaxis is not recommended, and transient RNA suppression can occur."
+});
+Object.assign(hepatitisCQuestionBank.find((question) => question.id === "hepatitis-c-014"), {
+  "choices": [
+    "Confirm viremia, assess hepatic severity and eligibility, and link acute infection directly to treatment",
+    "Wait for spontaneous clearance as a required step before offering treatment",
+    "Choose an abbreviated course solely from the recent exposure date",
+    "Treat exposure alone as proof of current infection without testing"
+  ],
+  "rationale": "For confirmed acute viremia, guidance supports treatment without a clearance waiting period. Liver state and the selected regimen’s eligibility still govern treatment, and exposure history alone is not proof of infection."
+});
+Object.assign(hepatitisCQuestionBank.find((question) => question.id === "hepatitis-c-015"), {
+  "choices": [
+    "Use exposure history and serial results to establish acute context, then treat confirmed viremia through an appropriate pathway",
+    "Use RNA positivity alone to prove the infection is acute",
+    "Dismiss acute infection after a single transiently negative RNA",
+    "Ignore fibrosis and hepatic severity because infection is recent"
+  ],
+  "rationale": "RNA positivity establishes current infection but not its duration. Seroconversion or RNA positivity before antibody supports acute infection; serial testing can be needed, and treatment selection still requires appropriate assessment."
+});
+Object.assign(hepatitisCQuestionBank.find((question) => question.id === "hepatitis-c-016"), {
+  "choices": [
+    "Delay treatment of confirmed acute viremia solely to wait for spontaneous clearance",
+    "Assess hepatic severity and the treatment pathway",
+    "Counsel about transmission and prevention services",
+    "Use an eligible chronic-infection regimen and its recommended duration"
+  ],
+  "rationale": "The avoidable error is imposing a spontaneous-clearance waiting period after confirmed acute viremia. The other choices support the guideline’s test-and-treat approach."
+});
+Object.assign(hepatitisCQuestionBank.find((question) => question.id === "hepatitis-c-017"), {
+  "choices": [
+    "Fibrosis staging changes treatment-pathway eligibility and the need for continuing cirrhosis care",
+    "Normal bilirubin excludes compensated cirrhosis in every patient",
+    "All simplified patients must undergo liver biopsy",
+    "A low FIB-4 always overrides imaging or prior biopsy showing cirrhosis"
+  ],
+  "rationale": "Cirrhosis evidence affects treatment and follow-up. Simplified algorithms accept noninvasive evidence without routine biopsy; a normal bilirubin or lower FIB-4 cannot override other cirrhosis findings."
+});
+Object.assign(hepatitisCQuestionBank.find((question) => question.id === "hepatitis-c-018"), {
+  "choices": [
+    "Calculate FIB-4 with correct platelet units and integrate other cirrhosis evidence",
+    "Require FIB-4, elastography, imaging and biopsy all to be positive before recognizing cirrhosis",
+    "Omit the square root of ALT from the FIB-4 formula",
+    "Use a platelet count of 150,000 directly where the formula requires 150 in 10^9/L"
+  ],
+  "rationale": "FIB-4 = (age × AST) ÷ (platelets in 10^9/L × √ALT). The simplified algorithms presume cirrhosis from FIB-4 greater than 3.25 or other qualifying evidence; all tests need not agree."
+});
+Object.assign(hepatitisCQuestionBank.find((question) => question.id === "hepatitis-c-019"), {
+  "choices": [
+    "Treat FIB-4 of exactly 3.25 as not meeting the strict greater-than criterion while reviewing other evidence for cirrhosis",
+    "Round exactly 3.25 upward and declare that it exceeds 3.25",
+    "Use exactly 3.25 as proof that cirrhosis is absent",
+    "Ignore elastography above 12.5 kPa because FIB-4 is not above 3.25"
+  ],
+  "rationale": "The worked example gives 3.25 exactly, which does not meet a criterion of greater than 3.25. It does not exclude cirrhosis; other evidence can independently qualify under the simplified algorithms."
+});
+Object.assign(hepatitisCQuestionBank.find((question) => question.id === "hepatitis-c-020"), {
+  "choices": [
+    "Skip cirrhosis assessment because bilirubin is normal or FIB-4 is low",
+    "Integrate elastography, imaging and platelet evidence",
+    "Review a prior biopsy showing cirrhosis",
+    "Assess current compensation and prior hepatic decompensation"
+  ],
+  "rationale": "The harmful omission is treating one reassuring result as a substitute for staging. Other evidence can establish cirrhosis, and current or prior decompensation changes pathway and protease-inhibitor eligibility."
+});
+Object.assign(hepatitisCQuestionBank.find((question) => question.id === "hepatitis-c-021"), {
+  "choices": [
+    "Simplified pathways apply to defined treatment-naive groups and have pathway-specific exclusions",
+    "A simplified-pathway exclusion means that every DAA is contraindicated",
+    "Prior hepatic decompensation can be ignored when the current Child-Pugh score improves",
+    "HBsAg positivity proves that HCV must never be treated"
+  ],
+  "rationale": "Apply the exact pathway’s criteria. Prior treatment, current pregnancy, HBV, HCC, transplant and decompensation can require another approach; those findings do not establish a universal prohibition on HCV therapy."
+});
+Object.assign(hepatitisCQuestionBank.find((question) => question.id === "hepatitis-c-022"), {
+  "choices": [
+    "Route patients outside simplified criteria to the relevant treatment guidance and specialist assessment",
+    "Deny all HCV therapy solely because a simplified criterion is not met",
+    "Use the noncirrhotic algorithm despite documented cirrhosis",
+    "Start Mavyret despite a history of hepatic decompensation"
+  ],
+  "rationale": "Simplified eligibility and treatment eligibility differ. Choose the appropriate guidance section and evaluate actual regimen safety, including Mavyret’s contraindication with prior hepatic decompensation."
+});
+Object.assign(hepatitisCQuestionBank.find((question) => question.id === "hepatitis-c-023"), {
+  "choices": [
+    "Distinguish the compensated-pathway eGFR exclusion from the renal dosing instructions of the selected DAA",
+    "Declare all DAAs contraindicated when eGFR is below 30",
+    "Assume no renal dose adjustment means all simplified pathways apply",
+    "Ignore tenofovir disoproxil fumarate and renal function in HIV coinfection"
+  ],
+  "rationale": "The compensated-cirrhosis simplified pathway excludes eGFR below 30, and TDF-containing HIV regimens with eGFR below 60 require another approach in both simplified pathways. These are pathway and monitoring limits; Mavyret has no renal dose adjustment, including dialysis."
+});
+Object.assign(hepatitisCQuestionBank.find((question) => question.id === "hepatitis-c-024"), {
+  "choices": [
+    "Withhold every HCV treatment solely because the patient is outside simplified-pathway criteria",
+    "Identify the relevant alternative guidance section",
+    "Assess the exact DAA’s contraindications and interactions",
+    "Arrange appropriate specialty evaluation for the exclusion"
+  ],
+  "rationale": "Treating a simplified exclusion as a universal treatment prohibition is the harmful action. The other choices establish an appropriate alternative assessment without assuming eligibility or safety."
+});
