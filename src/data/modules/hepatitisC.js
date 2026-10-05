@@ -105,3 +105,149 @@ export const hepatitisCModule={
   disclaimer:"This module supports advanced education about hepatitis C. Regimens and eligibility change rapidly, so treatment requires the current AASLD and IDSA HCV Guidance, current labeling, specialist input when excluded from simplified care, and patient-specific evidence.",
   questionBank:hepatitisCQuestionBank,
 };
+
+// Reconcile whole HCV treatment, interaction and monitoring lessons with dated primary sources.
+Object.assign(hepatitisCModule.submodules.find((lesson) => lesson.slug === "initial-regimens").lesson.find((body) => body.heading === "Use Mavyret correctly"), {
+  "heading": "Use Mavyret correctly",
+  "body": "Each adult Mavyret tablet contains glecaprevir 100 mg and pibrentasvir 40 mg. Take three tablets together once daily with food, for a total of 300 mg/120 mg. Eligible treatment-naive adults in the simplified chronic-HCV pathways use eight weeks. The June 2025 U.S. label also includes acute infection and patients aged three years or older without cirrhosis or with Child-Pugh A; pediatric formulation and dosing are age- and weight-specific. Prior treatment and transplant contexts require their own duration review. The label defines treatment-naive for the current infection, whereas the simplified adult pathway excludes prior HCV treatment; assess the applicable pathway rather than treating these definitions as interchangeable."
+});
+Object.assign(hepatitisCModule.submodules.find((lesson) => lesson.slug === "initial-regimens").lesson.find((body) => body.heading === "Use Epclusa correctly"), {
+  "heading": "Use Epclusa correctly",
+  "body": "Epclusa combines the NS5B nucleotide prodrug sofosbuvir with the NS5A inhibitor velpatasvir. Adults take one 400 mg/100 mg tablet once daily with or without food; eligible simplified chronic-HCV treatment uses twelve weeks. Genotype 3 compensated cirrhosis requires baseline NS5A resistance-associated substitution testing when choosing Epclusa: without Y93H, twelve weeks fits the simplified pathway; if Y93H is present, follow the other guidance recommendations. Epclusa needs no renal dose adjustment, including dialysis, but this does not establish simplified-pathway eligibility or ribavirin dosing."
+});
+Object.assign(hepatitisCModule.submodules.find((lesson) => lesson.slug === "initial-regimens").lesson.find((body) => body.heading === "Respect liver boundaries"), {
+  "heading": "Respect liver boundaries",
+  "body": "Mavyret is contraindicated in Child-Pugh B or C and with any prior hepatic decompensation, even if the current liver score improves. In compensated cirrhosis or advanced liver disease, use clinically indicated hepatic laboratory monitoring and review new jaundice, ascites, encephalopathy or variceal bleeding promptly. The Epclusa label includes combination treatment with ribavirin for decompensated cirrhosis; this requires expert assessment of ribavirin eligibility, renal function, anemia, reproductive safety and the overall care plan."
+});
+Object.assign(hepatitisCModule.submodules.find((lesson) => lesson.slug === "initial-regimens").lesson.find((body) => body.heading === "Do not preserve retired clutter"), {
+  "heading": "Do not preserve retired clutter",
+  "body": "The book’s older interferon and Viekira-era regimens provide historical context. The reviewed simplified adult pathways instead specify glecaprevir/pibrentasvir or sofosbuvir/velpatasvir for eligible initial treatment. Do not use an older table or pangenotypic activity alone to establish a current default regimen, retreatment plan or duration. Match the patient to the applicable guidance and the exact product label."
+});
+Object.assign(hepatitisCModule.submodules.find((lesson) => lesson.slug === "initial-regimens"), {
+  "summary": "Eligible treatment-naive adults with chronic HCV can use defined simplified glecaprevir/pibrentasvir or sofosbuvir/velpatasvir pathways; liver state, prior treatment and product instructions still govern the choice.",
+  "application": "Verify the applicable pathway, exact formulation, dose, food rule, duration, liver history, interactions and medication supply before treatment.",
+  "keyPoints": [
+    "Adult Mavyret is three tablets together daily with food.",
+    "Simplified Mavyret and Epclusa durations are eight and twelve weeks, respectively.",
+    "Genotype 3 compensated cirrhosis needs Epclusa resistance review.",
+    "Any prior decompensation excludes Mavyret."
+  ]
+});
+Object.assign(hepatitisCModule.submodules.find((lesson) => lesson.slug === "initial-regimens").check, {
+  "question": "What is the adult Mavyret administration rule?",
+  "choices": [
+    "Three tablets together once daily with food",
+    "One tablet weekly fasting",
+    "Three tablets divided without food",
+    "Sofosbuvir monotherapy"
+  ],
+  "answer": 0,
+  "rationale": "Three adult tablets containing 100 mg glecaprevir and 40 mg pibrentasvir each are taken together once daily with food, totaling 300 mg/120 mg. Pediatric dose and formulation require age- and weight-specific review.",
+  "reviewHref": "#initial-regimens"
+});
+Object.assign(hepatitisCModule.submodules.find((lesson) => lesson.slug === "interaction-engineering").lesson.find((body) => body.heading === "Control gastric pH"), {
+  "heading": "Control gastric pH",
+  "body": "Raised gastric pH lowers ledipasvir and velpatasvir solubility and can reduce antiviral exposure. Harvoni and Epclusa both separate antacids by four hours and permit H2 blockers simultaneously or twelve hours apart up to a famotidine 40 mg twice-daily equivalent. Their PPI rules differ: Epclusa coadministration is not recommended; if medically necessary, take Epclusa with food four hours before omeprazole 20 mg, and other PPIs have not been studied. Harvoni permits a PPI dose up to omeprazole 20 mg equivalent simultaneously under fasted conditions. Review the exact products before writing the schedule."
+});
+Object.assign(hepatitisCModule.submodules.find((lesson) => lesson.slug === "interaction-engineering").lesson.find((body) => body.heading === "Remove strong inducers"), {
+  "heading": "Remove strong inducers",
+  "body": "Rifampin, carbamazepine, phenytoin, phenobarbital and St. John’s wort can lower exposure to specified DAAs through induction of transporters or metabolic enzymes. Epclusa does not recommend these combinations. Mavyret contraindicates rifampin and does not recommend carbamazepine; other combinations require exact-label review. These systemic effects explain why antacid-style dose spacing is not an established solution. Coordinate an alternative medication or HCV regimen with the treating team; do not independently stop essential therapy or invent a universal washout interval."
+});
+Object.assign(hepatitisCModule.submodules.find((lesson) => lesson.slug === "interaction-engineering").lesson.find((body) => body.heading === "Protect interacting drugs"), {
+  "heading": "Protect interacting drugs",
+  "body": "Read each product’s interaction table rather than applying one rule to all statins, transplant drugs, antiretrovirals or anticoagulants. Mavyret and Epclusa limit rosuvastatin to 10 mg, whereas Harvoni does not recommend it. Mavyret is not recommended with stable cyclosporine doses above 100 mg/day; this is not a blanket restriction on every dose or calcineurin inhibitor. Epclusa can raise tenofovir exposure with TDF-containing regimens, requiring renal safety review. Direct pharmacokinetic effects differ from changes in medication response during hepatic recovery, which may still require glucose, INR or selected drug-level monitoring."
+});
+Object.assign(hepatitisCModule.submodules.find((lesson) => lesson.slug === "interaction-engineering").lesson.find((body) => body.heading === "Avoid the bradycardia stack"), {
+  "heading": "Avoid the bradycardia stack",
+  "body": "Sofosbuvir-containing therapy with amiodarone can cause serious symptomatic bradycardia; the mechanism is unknown. Beta blockers, underlying cardiac disease and advanced liver disease can increase risk. Epclusa coadministration is not recommended. If no viable alternative exists, its label recommends inpatient cardiac monitoring for the first 48 hours, then daily outpatient or self-monitoring of heart rate through at least the first two weeks; symptoms require immediate medical evaluation. Amiodarone persists after stopping: AASLD/IDSA advises at least six months off it before sofosbuvir, while the label also describes monitoring after recent discontinuation. Coordinate the choice and monitoring with the treating teams."
+});
+Object.assign(hepatitisCModule.submodules.find((lesson) => lesson.slug === "interaction-engineering"), {
+  "summary": "Gastric pH and transporter or enzyme effects require exact-product interaction plans; changes accompanying hepatic recovery also affect concomitant-medication monitoring.",
+  "application": "Check the exact DAA and concomitant products, then coordinate the indicated alternative, dose, timing or monitoring plan with the treating team.",
+  "keyPoints": [
+    "Epclusa and Harvoni have different PPI instructions.",
+    "Inducer interactions are not solved by antacid-style spacing.",
+    "Statin and transplant-drug restrictions depend on the combination.",
+    "Amiodarone with sofosbuvir requires avoidance or a specialist cardiac plan."
+  ]
+});
+Object.assign(hepatitisCModule.submodules.find((lesson) => lesson.slug === "interaction-engineering").check, {
+  "question": "Why is separating carbamazepine from Epclusa by four hours inadequate?",
+  "choices": [
+    "Carbamazepine induces transporters or enzymes that can lower antiviral exposure; the Epclusa label does not recommend the combination",
+    "Carbamazepine binds Epclusa locally, so every four-hour gap fully prevents the interaction",
+    "Epclusa contains no active antiviral medicine",
+    "The presence of food guarantees that the combination is safe"
+  ],
+  "answer": 0,
+  "rationale": "The label identifies induction that can lower sofosbuvir or velpatasvir concentrations and does not recommend carbamazepine coadministration. Systemic induction explains why the antacid four-hour separation rule is not an established solution. Coordinate alternatives with the treating team.",
+  "reviewHref": "#interaction-engineering"
+});
+Object.assign(hepatitisCModule.submodules.find((lesson) => lesson.slug === "monitoring-delivery").lesson.find((body) => body.heading === "Support adherence"), {
+  "heading": "Support adherence",
+  "body": "Review administration, missed doses, medication access, symptoms and new products without judgment, and address barriers as they occur. For an interruption, record its timing and length and use the applicable guidance rather than automatically declaring failure or restarting every course. The AASLD/IDSA panel considers a gap shorter than seven days unlikely to affect SVR12 in the stated treatment-naive acute or chronic HCV context without cirrhosis or with compensated cirrhosis, receiving glecaprevir/pibrentasvir or sofosbuvir/velpatasvir. Evidence is limited; prior DAA treatment, other regimens, transplant and decompensated disease need expert input."
+});
+Object.assign(hepatitisCModule.submodules.find((lesson) => lesson.slug === "monitoring-delivery").lesson.find((body) => body.heading === "Monitor metabolic change"), {
+  "heading": "Monitor metabolic change",
+  "body": "HCV clearance can change hepatic function and the response to concomitant medicines. Patients taking diabetes medicines can develop hypoglycemia and may need changes to glucose-lowering treatment. Patients taking warfarin need INR monitoring for subtherapeutic anticoagulation. Counsel and monitor during and after DAA therapy, with individualized dose decisions based on measured results. These changes do not automatically establish a direct DAA enzyme interaction or a universal dose reduction."
+});
+Object.assign(hepatitisCModule.submodules.find((lesson) => lesson.slug === "monitoring-delivery").lesson.find((body) => body.heading === "Respond to liver injury"), {
+  "heading": "Respond to liver injury",
+  "body": "AASLD/IDSA recommends discontinuation for an ALT rise of at least tenfold from that patient’s baseline. A smaller rise accompanied by weakness, nausea, vomiting, jaundice or significantly increased bilirubin, alkaline phosphatase or INR also prompts discontinuation. An asymptomatic rise below tenfold from baseline calls for repeat testing every two weeks; persistent elevation prompts consideration of discontinuation. These are baseline-relative thresholds, not one universal multiple of the upper limit of normal. New jaundice, ascites, encephalopathy or other decompensation findings need urgent evaluation and specialist care."
+});
+Object.assign(hepatitisCModule.submodules.find((lesson) => lesson.slug === "monitoring-delivery").lesson.find((body) => body.heading === "Monitor ribavirin separately"), {
+  "heading": "Monitor ribavirin separately",
+  "body": "When ribavirin is used in selected specialist regimens, add CBC and hemoglobin assessment because hemolytic anemia is a central risk. Reproductive safety requires review of the exact ribavirin product’s contraindications, pregnancy testing and prevention instructions for the patient and relevant partner. Kidney function can require ribavirin dose changes even when Epclusa itself needs no renal adjustment. Do not transfer a ribavirin-free simplified monitoring plan to a ribavirin-containing regimen or invent one universal renal dose or contraception schedule."
+});
+Object.assign(hepatitisCModule.submodules.find((lesson) => lesson.slug === "monitoring-delivery"), {
+  "summary": "Eligible simplified noncirrhotic patients generally need no other routine on-treatment laboratory monitoring beyond indicated glucose or INR review; cirrhosis, ribavirin, HBV and other clinical risks change the plan.",
+  "application": "Support adherence and medication access, review new products, arrange risk-based monitoring, and act promptly on liver injury or decompensation.",
+  "keyPoints": [
+    "Assess the actual gap before deciding how to manage missed treatment.",
+    "Monitor glucose and INR during and after treatment when indicated.",
+    "ALT stopping thresholds use the patient’s baseline.",
+    "Ribavirin adds anemia and reproductive safety requirements."
+  ]
+});
+Object.assign(hepatitisCModule.submodules.find((lesson) => lesson.slug === "monitoring-delivery").check, {
+  "question": "Which patient needs proactive glucose review during DAA therapy?",
+  "choices": [
+    "A patient using insulin",
+    "A patient taking only an antacid without diabetes",
+    "A patient without diabetes who uses no glucose-lowering medicines",
+    "No patient because HCV clearance cannot change glucose control"
+  ],
+  "answer": 0,
+  "rationale": "Patients taking diabetes medicines, including insulin, can develop hypoglycemia as HCV clearance changes hepatic function and glucose control. Counsel and monitor during and after treatment, and coordinate medication adjustment according to the measured response.",
+  "reviewHref": "#monitoring-delivery"
+});
+Object.assign(hepatitisCModule.references.find((reference) => reference.label === "May 2026 Initial Treatment Guidance"), {
+  "label": "AASLD/IDSA: initial treatment, reviewed January 2025",
+  "href": "https://www.hcvguidelines.org/wp-content/uploads/2026/05/AASLD-IDSA_HCVGuidance_InitTreat_20260513_protected.pdf"
+});
+Object.assign(hepatitisCModule.references.find((reference) => reference.label === "Current MAVYRET Prescribing Information"), {
+  "label": "Mavyret: U.S. label revised June 2025",
+  "href": "https://www.rxabbvie.com/pdf/mavyret_pi.pdf"
+});
+Object.assign(hepatitisCModule.references.find((reference) => reference.label === "Current EPCLUSA Prescribing Information"), {
+  "label": "Epclusa: U.S. label revised April 2022",
+  "href": "https://www.gilead.com/-/media/files/pdfs/medicines/liver-disease/epclusa/epclusa_pi.pdf"
+});
+hepatitisCModule.references.push(...[
+  {
+    "label": "Harvoni: U.S. label revised December 2024",
+    "href": "https://www.gilead.com/-/media/files/pdfs/medicines/liver-disease/harvoni/harvoni_pi.pdf"
+  },
+  {
+    "label": "AASLD/IDSA: simplified treatment without cirrhosis",
+    "href": "https://www.hcvguidelines.org/guidance/simplified-hcv-treatment-for-treatment-naive-adults-without-cirrhosis/"
+  },
+  {
+    "label": "AASLD/IDSA: simplified treatment with compensated cirrhosis",
+    "href": "https://www.hcvguidelines.org/guidance/simplified-hcv-treatment-algorithm-for-treatment-naive-adults-with-compensated-cirrhosis/"
+  },
+  {
+    "label": "AASLD/IDSA: treatment monitoring and incomplete adherence",
+    "href": "https://www.hcvguidelines.org/guidance/monitoring-patients-who-are-starting-hcv-treatment-are-on-treatment-or-have-completed-therapy/"
+  }
+]);
