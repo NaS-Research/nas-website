@@ -92,3 +92,77 @@ Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => 
   ],
   "rationale": "The error is protein restriction: it can worsen catabolism and muscle loss. Muscle contributes to ammonia disposal, so restriction is not a reliable way to improve encephalopathy. Adequate nutrition, assessment and an individualized meal schedule are beneficial actions."
 });
+
+// Reconcile whole medication-safety and surveillance assessments.
+Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => question.id === "cirrhosis-decompensated-101"), {
+  "choices": [
+    "Systemic NSAIDs, sedating medicines, nephrotoxins, excess sodium from products, and inappropriate dosing can worsen bleeding, kidney injury, fluid retention or encephalopathy in cirrhosis.",
+    "An elevated INR caused by cirrhosis proves protection from venous thrombosis",
+    "Over-the-counter products do not need review if the prescription list is complete",
+    "Use the same dose-reduction percentage for every hepatically cleared medicine"
+  ],
+  "rationale": "Review each product, indication, dose and route alongside renal and hepatic function. Systemic NSAIDs can impair kidney function, promote fluid retention and increase bleeding risk; sedatives can impair cognition. INR does not measure the full balance of clotting and anticoagulant factors."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => question.id === "cirrhosis-decompensated-102"), {
+  "choices": [
+    "Reconcile prescriptions, over-the-counter products, supplements, alcohol, renal function, and hepatic labeling at every transition.",
+    "Exclude herbal supplements and over-the-counter sleep aids from reconciliation",
+    "Use INR alone to decide whether the patient is protected from thrombosis",
+    "Continue every previous dose without review after new kidney injury"
+  ],
+  "rationale": "Reconcile all products and exposures at transitions, then review current product-specific renal and hepatic dosing and continued need. Over-the-counter medicines and supplements can cause harm or interact. New kidney injury changes medication risk; INR alone cannot resolve it."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => question.id === "cirrhosis-decompensated-103"), {
+  "choices": [
+    "Reconcile prescriptions, over-the-counter products, supplements, alcohol, renal function, and hepatic labeling at every transition.",
+    "Automatically discontinue every medicine when jaundice appears, without contacting the treating team",
+    "Ignore product-specific labeling because one liver-function result is normal",
+    "Assume a high INR makes anticoagulant and bleeding-risk review unnecessary"
+  ],
+  "rationale": "Use a complete list, current organ function and product labeling to individualize decisions with the treating team. Review sedative, nephrotoxic and sodium exposures and explain medication changes. Neither a normal isolated liver test nor a high INR replaces clinical assessment; abrupt withdrawal of some medicines can cause harm."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => question.id === "cirrhosis-decompensated-104"), {
+  "choices": [
+    "Treat a cirrhosis-related elevated INR as proof that the patient is protected from thrombosis",
+    "Reconcile prescriptions, over-the-counter products, supplements, alcohol, renal function, and hepatic labeling at every transition.",
+    "Review systemic NSAID and sedative exposure with the treating team",
+    "Check current renal and hepatic dosing recommendations for each medicine"
+  ],
+  "rationale": "Cirrhosis changes both procoagulant and anticoagulant factors, creating a fragile balance in which bleeding and thrombosis can occur. INR alone does not represent that balance. The other choices are useful medication-safety actions; assess bleeding, clotting, organ function and medication risks together."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => question.id === "cirrhosis-decompensated-105"), {
+  "choices": [
+    "Eligible patients with cirrhosis need ultrasound plus AFP about every six months for HCC surveillance, even after control of the underlying liver disease.",
+    "Successful HCV treatment eliminates the need for surveillance in every patient with established cirrhosis",
+    "A normal AFP result alone excludes HCC and replaces imaging",
+    "Screen every patient with Child-Pugh C cirrhosis even when transplantation is not an option"
+  ],
+  "rationale": "AASLD recommends ultrasound plus AFP approximately every six months for eligible patients with cirrhosis. HCV cure reduces risk but does not eliminate established cirrhosis-related HCC risk. Surveillance is intended for patients who could benefit from HCC treatment; Child-Pugh C patients need transplant eligibility, and life-limiting comorbidity may remove benefit."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => question.id === "cirrhosis-decompensated-106"), {
+  "choices": [
+    "Coordinate indicated HCC surveillance, vaccinations, bone and nutrition review, variceal prevention, etiologic treatment, and specialist follow-up.",
+    "Stop all HCC and variceal follow-up once liver enzymes normalize",
+    "Use AFP alone instead of the indicated surveillance imaging",
+    "Postpone vaccination and bone-risk assessment until cancer symptoms occur"
+  ],
+  "rationale": "Build prevention around treatment eligibility, cirrhosis complications and the patient’s needs. Continue indicated ultrasound-plus-AFP surveillance and review vaccination history, bone health, nutrition and variceal strategy. A normal enzyme result or absence of symptoms does not remove these risks."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => question.id === "cirrhosis-decompensated-107"), {
+  "choices": [
+    "Coordinate indicated HCC surveillance, vaccinations, bone and nutrition review, variceal prevention, etiologic treatment, and specialist follow-up.",
+    "Assume alcohol abstinence removes every remaining cancer and portal-hypertension risk",
+    "Replace the surveillance plan with an AFP test only when symptoms develop",
+    "Use a fixed prevention plan without reviewing transplant eligibility or patient goals"
+  ],
+  "rationale": "Etiologic treatment and abstinence are important but do not erase every established cirrhosis risk. Review treatment and transplant eligibility, goals, scheduled HCC surveillance, variceal prevention, vaccines, bone health and nutrition together. Screening while eligible aims to detect disease before symptoms; AFP alone is insufficient."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => question.id === "cirrhosis-decompensated-108"), {
+  "choices": [
+    "Stop indicated HCC surveillance after viral cure because established cirrhosis is assumed to carry no remaining cancer risk",
+    "Eligible patients with cirrhosis need ultrasound plus AFP about every six months for HCC surveillance, even after control of the underlying liver disease.",
+    "Coordinate indicated HCC surveillance, vaccinations, bone and nutrition review, variceal prevention, etiologic treatment, and specialist follow-up.",
+    "Reassess treatment and transplant eligibility as liver disease and patient goals change"
+  ],
+  "rationale": "The error is abandoning indicated surveillance because the cause is controlled. In patients with cirrhosis, HCC risk can persist after HCV cure; surveillance eligibility still depends on whether HCC-directed treatment or transplantation could provide benefit. The other choices support individualized continued care."
+});

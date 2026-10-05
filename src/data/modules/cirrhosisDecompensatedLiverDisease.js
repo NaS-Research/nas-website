@@ -65,3 +65,52 @@ cirrhosisDecompensatedLiverDiseaseModule.references.push(...[
     "href": "https://www.espen.org/files/ESPEN-Guidelines/ESPEN_guideline_on_hospital_nutrition.pdf"
   }
 ]);
+
+// Reconcile longitudinal medication stewardship, prevention and escalation teaching.
+Object.assign(cirrhosisDecompensatedLiverDiseaseModule.submodules.find((lesson) => lesson.slug === "longitudinal-care").lesson.find((body) => body.heading === "Deprescribe harm"), {
+  "heading": "Deprescribe harm",
+  "body": "Avoid systemic NSAIDs because they can worsen kidney function, bleeding and ascites. Review benzodiazepines and other sedatives, nephrotoxins, supplements, sodium-containing products and each medicine’s current renal and hepatic dosing guidance with the treating team. Chronic benzodiazepines are generally avoided in decompensated cirrhosis, although selected indications require individualized care. Do not stop essential medicines indiscriminately. An elevated INR from cirrhosis does not establish protection from thrombosis or measure bleeding risk by itself: both procoagulant and anticoagulant factors change."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseModule.submodules.find((lesson) => lesson.slug === "longitudinal-care").lesson.find((body) => body.heading === "Continue prevention"), {
+  "heading": "Continue prevention",
+  "body": "For patients with cirrhosis who could benefit from HCC treatment, AASLD recommends ultrasound plus AFP about every six months. Continue indicated surveillance after HCV cure or other etiologic control; AFP alone does not replace imaging. Child-Pugh C patients generally require transplant eligibility for surveillance, and life-limiting comorbidities can make surveillance inappropriate. Coordinate specialist review of inadequate imaging or abnormal findings. Review current vaccination indications and prior doses, bone and micronutrient health, variceal prevention, alcohol cessation and metabolic care rather than treating a normal liver-enzyme result as resolution of risk."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseModule.submodules.find((lesson) => lesson.slug === "longitudinal-care").lesson.find((body) => body.heading === "Teach the escalation signs"), {
+  "heading": "Teach the escalation signs",
+  "body": "Give the patient and caregiver an explicit contact and emergency plan. Vomiting blood, black tarry stools, new marked confusion or inappropriate sleepiness, and fever or severe new abdominal pain with ascites require emergency assessment. Promptly report reduced urine, rapid weight gain, worsening dyspnea, jaundice, severe diarrhea or interrupted medicines; severity and the agreed plan determine urgency. Excess lactulose-related diarrhea can cause dehydration and worsen encephalopathy. Review adherence and prescribed adjustments with the team instead of assuming that more diarrhea means better treatment."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseModule.submodules.find((lesson) => lesson.slug === "longitudinal-care"), {
+  "summary": "Longitudinal care links nutrition, medication stewardship, prevention, indicated HCC surveillance, and reliable access.",
+  "keyPoints": [
+    "Do not routinely restrict protein for hepatic encephalopathy.",
+    "Muscle supports nutritional and metabolic reserve.",
+    "Medication review can reduce avoidable harm.",
+    "Continue indicated surveillance after etiologic control."
+  ]
+});
+cirrhosisDecompensatedLiverDiseaseModule.references.push(...[
+  {
+    "label": "AASLD 2023: HCC surveillance guidance",
+    "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10663390/"
+  },
+  {
+    "label": "AASLD 2022: Symptom and medication safety",
+    "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9942270/"
+  },
+  {
+    "label": "AASLD 2024: INR and bleeding-risk assessment",
+    "href": "https://www.aasld.org/liver-fellow-network/core-series/clinical-pearls/peri-procedural-management-bleeding-risk-cirrhosis"
+  },
+  {
+    "label": "AASLD 2024: Coagulation in cirrhosis",
+    "href": "https://www.aasld.org/liver-fellow-network/core-series/back-basics/back-basics-conundrum-coagulopathy-cirrhosis"
+  },
+  {
+    "label": "CDC: Adult vaccination indications",
+    "href": "https://www.cdc.gov/vaccines/hcp/imz-schedules/adult-notes.html"
+  },
+  {
+    "label": "Michigan Medicine 2022: Cirrhosis toolkit",
+    "href": "https://www.uofmhealth.org/sites/default/files/2025-05/CirrhosisToolkit.pdf"
+  }
+]);

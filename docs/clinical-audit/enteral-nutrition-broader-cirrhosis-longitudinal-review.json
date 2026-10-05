@@ -1,0 +1,2815 @@
+{
+  "updated": "2026-10-05T10:16:56.365751+00:00",
+  "unit": "enteral-nutrition:broader-cirrhosis-longitudinal",
+  "status": "Eight whole questions and3 original whole teaching bodies clinically and visually verified; push pending.",
+  "baseCommit": "9fc3f8575abd871cb94103d9d42f58f59a208e31",
+  "sourcePolicy": {
+    "primary": "Cover-verified supplied RxPrep2023; private sources outside Git",
+    "approvedAuthoritativeSources": {
+      "status": "approved by direct user message: I give approval",
+      "scope": "Official guidelines, FDA labels and primary academic clinical references where the book cannot verify retained content; includes pending calcium, dialysis, aluminum and mineral physiology scopes",
+      "primarySourceRemains": "Supplied cover-verified RxPrep2023 book",
+      "approvalContext": "Response to pending asynchronous request for this additional authoritative source policy",
+      "usedNewlyAuthorizedSourcesInThisUnit": true,
+      "latestEvidence": "enteral-nutrition-broader-cirrhosis-nutrition-review.json"
+    },
+    "currentApprovalUsed": true
+  },
+  "coverage": {
+    "evidence": "enteral-nutrition-broader-cirrhosis-longitudinal-review.json",
+    "verifiedScope": "Eight whole medication-safety/surveillance bank questions101–108,3 original complete longitudinal bodies, refined summary/key points and6 dated primary references. Prior nutrition objects retained.",
+    "moduleQuestionTotal": 120,
+    "individuallyReviewedCurrentWholeBankIds": [
+      "cirrhosis-decompensated-101",
+      "cirrhosis-decompensated-102",
+      "cirrhosis-decompensated-103",
+      "cirrhosis-decompensated-104",
+      "cirrhosis-decompensated-105",
+      "cirrhosis-decompensated-106",
+      "cirrhosis-decompensated-107",
+      "cirrhosis-decompensated-108"
+    ],
+    "newUniqueBankQuestionsVerified": 8,
+    "broaderFeedingBankVerifiedBefore": 327,
+    "broaderFeedingBankVerifiedAfter": 335,
+    "originalWholeBodiesRefinedAndVerified": 3,
+    "wholeEmbeddedChecksRefinedAndVerified": 0,
+    "previouslyVerifiedNutritionCheckAllOptionsRuntimeVerified": true,
+    "other112WholeBankObjectsUnchanged": true,
+    "other49WholeBodiesAll12ChecksAndAllFiguresUnchanged": true,
+    "newReferences": 6,
+    "referencesAfter": 15,
+    "remainingSelectedHepaticQuestions": 40,
+    "remainingSelectedOriginalHepaticBodies": 16,
+    "remainingSelectedHepaticChecks": 2,
+    "wholeParentModuleVerified": false,
+    "wholeLongitudinalLessonClaimedComplete": false,
+    "wholeENModuleVerified": false,
+    "wholeChaptersVerified": false,
+    "committedWholeModulesVerifiedAfter": 56,
+    "committedWholeModulesTotal": 232,
+    "moduleCountPercent": 24.14,
+    "chaptersVerifiedAfter": 6,
+    "chapterTotal": 82,
+    "chapterCountPercent": 7.32,
+    "all1180CumulativeObjectsUnchanged": true,
+    "newUniqueCumulativeQuestionsCounted": 0
+  },
+  "changes": {
+    "questions": {
+      "cirrhosis-decompensated-101": {
+        "before": {
+          "id": "cirrhosis-decompensated-101",
+          "question": "Which statement is most accurate? Focus: medication safety.",
+          "choices": [
+            "NSAIDs, sedatives, nephrotoxins, duplicate sodium, and poorly adjusted drugs can precipitate bleeding, AKI, ascites, or encephalopathy.",
+            "Treating an elevated INR in cirrhosis as proof of auto-anticoagulation misreads rebalanced hemostasis.",
+            "Assume symptom improvement removes the need for surveillance, prevention, and transplant-aware follow-up.",
+            "Apply a historical textbook algorithm without checking current guidance, labeling, resistance, or patient-specific risk."
+          ],
+          "answer": 0,
+          "rationale": "NSAIDs, sedatives, nephrotoxins, duplicate sodium, and poorly adjusted drugs can precipitate bleeding, AKI, ascites, or encephalopathy. Reconcile prescriptions, over-the-counter products, supplements, alcohol, renal function, and hepatic labeling at every transition.",
+          "reviewHref": "#longitudinal-care",
+          "difficulty": "foundational"
+        },
+        "after": {
+          "id": "cirrhosis-decompensated-101",
+          "question": "Which statement is most accurate? Focus: medication safety.",
+          "choices": [
+            "Systemic NSAIDs, sedating medicines, nephrotoxins, excess sodium from products, and inappropriate dosing can worsen bleeding, kidney injury, fluid retention or encephalopathy in cirrhosis.",
+            "An elevated INR caused by cirrhosis proves protection from venous thrombosis",
+            "Over-the-counter products do not need review if the prescription list is complete",
+            "Use the same dose-reduction percentage for every hepatically cleared medicine"
+          ],
+          "answer": 0,
+          "rationale": "Review each product, indication, dose and route alongside renal and hepatic function. Systemic NSAIDs can impair kidney function, promote fluid retention and increase bleeding risk; sedatives can impair cognition. INR does not measure the full balance of clotting and anticoagulant factors.",
+          "reviewHref": "#longitudinal-care",
+          "difficulty": "foundational"
+        }
+      },
+      "cirrhosis-decompensated-102": {
+        "before": {
+          "id": "cirrhosis-decompensated-102",
+          "question": "Which action best applies the evidence? Focus: medication safety.",
+          "choices": [
+            "Reconcile prescriptions, over-the-counter products, supplements, alcohol, renal function, and hepatic labeling at every transition.",
+            "Treating an elevated INR in cirrhosis as proof of auto-anticoagulation misreads rebalanced hemostasis.",
+            "Apply a historical textbook algorithm without checking current guidance, labeling, resistance, or patient-specific risk.",
+            "Use one isolated value without reviewing the trajectory, clinical state, medications, or competing causes."
+          ],
+          "answer": 0,
+          "rationale": "NSAIDs, sedatives, nephrotoxins, duplicate sodium, and poorly adjusted drugs can precipitate bleeding, AKI, ascites, or encephalopathy. Reconcile prescriptions, over-the-counter products, supplements, alcohol, renal function, and hepatic labeling at every transition.",
+          "reviewHref": "#longitudinal-care",
+          "difficulty": "foundational"
+        },
+        "after": {
+          "id": "cirrhosis-decompensated-102",
+          "question": "Which action best applies the evidence? Focus: medication safety.",
+          "choices": [
+            "Reconcile prescriptions, over-the-counter products, supplements, alcohol, renal function, and hepatic labeling at every transition.",
+            "Exclude herbal supplements and over-the-counter sleep aids from reconciliation",
+            "Use INR alone to decide whether the patient is protected from thrombosis",
+            "Continue every previous dose without review after new kidney injury"
+          ],
+          "answer": 0,
+          "rationale": "Reconcile all products and exposures at transitions, then review current product-specific renal and hepatic dosing and continued need. Over-the-counter medicines and supplements can cause harm or interact. New kidney injury changes medication risk; INR alone cannot resolve it.",
+          "reviewHref": "#longitudinal-care",
+          "difficulty": "foundational"
+        }
+      },
+      "cirrhosis-decompensated-103": {
+        "before": {
+          "id": "cirrhosis-decompensated-103",
+          "question": "Which plan demonstrates the strongest clinical reasoning? Focus: medication safety.",
+          "choices": [
+            "Reconcile prescriptions, over-the-counter products, supplements, alcohol, renal function, and hepatic labeling at every transition.",
+            "Treating an elevated INR in cirrhosis as proof of auto-anticoagulation misreads rebalanced hemostasis.",
+            "Use one isolated value without reviewing the trajectory, clinical state, medications, or competing causes.",
+            "Assume symptom improvement removes the need for surveillance, prevention, and transplant-aware follow-up."
+          ],
+          "answer": 0,
+          "rationale": "NSAIDs, sedatives, nephrotoxins, duplicate sodium, and poorly adjusted drugs can precipitate bleeding, AKI, ascites, or encephalopathy. Reconcile prescriptions, over-the-counter products, supplements, alcohol, renal function, and hepatic labeling at every transition.",
+          "reviewHref": "#longitudinal-care",
+          "difficulty": "advanced"
+        },
+        "after": {
+          "id": "cirrhosis-decompensated-103",
+          "question": "Which plan demonstrates the strongest clinical reasoning? Focus: medication safety.",
+          "choices": [
+            "Reconcile prescriptions, over-the-counter products, supplements, alcohol, renal function, and hepatic labeling at every transition.",
+            "Automatically discontinue every medicine when jaundice appears, without contacting the treating team",
+            "Ignore product-specific labeling because one liver-function result is normal",
+            "Assume a high INR makes anticoagulant and bleeding-risk review unnecessary"
+          ],
+          "answer": 0,
+          "rationale": "Use a complete list, current organ function and product labeling to individualize decisions with the treating team. Review sedative, nephrotoxic and sodium exposures and explain medication changes. Neither a normal isolated liver test nor a high INR replaces clinical assessment; abrupt withdrawal of some medicines can cause harm.",
+          "reviewHref": "#longitudinal-care",
+          "difficulty": "advanced"
+        }
+      },
+      "cirrhosis-decompensated-104": {
+        "before": {
+          "id": "cirrhosis-decompensated-104",
+          "question": "Which error creates the greatest avoidable risk? Focus: medication safety.",
+          "choices": [
+            "Treating an elevated INR in cirrhosis as proof of auto-anticoagulation misreads rebalanced hemostasis.",
+            "NSAIDs, sedatives, nephrotoxins, duplicate sodium, and poorly adjusted drugs can precipitate bleeding, AKI, ascites, or encephalopathy.",
+            "Reconcile prescriptions, over-the-counter products, supplements, alcohol, renal function, and hepatic labeling at every transition.",
+            "Assume symptom improvement removes the need for surveillance, prevention, and transplant-aware follow-up."
+          ],
+          "answer": 0,
+          "rationale": "NSAIDs, sedatives, nephrotoxins, duplicate sodium, and poorly adjusted drugs can precipitate bleeding, AKI, ascites, or encephalopathy. Reconcile prescriptions, over-the-counter products, supplements, alcohol, renal function, and hepatic labeling at every transition.",
+          "reviewHref": "#longitudinal-care",
+          "difficulty": "advanced"
+        },
+        "after": {
+          "id": "cirrhosis-decompensated-104",
+          "question": "Which error creates the greatest avoidable risk? Focus: medication safety.",
+          "choices": [
+            "Treat a cirrhosis-related elevated INR as proof that the patient is protected from thrombosis",
+            "Reconcile prescriptions, over-the-counter products, supplements, alcohol, renal function, and hepatic labeling at every transition.",
+            "Review systemic NSAID and sedative exposure with the treating team",
+            "Check current renal and hepatic dosing recommendations for each medicine"
+          ],
+          "answer": 0,
+          "rationale": "Cirrhosis changes both procoagulant and anticoagulant factors, creating a fragile balance in which bleeding and thrombosis can occur. INR alone does not represent that balance. The other choices are useful medication-safety actions; assess bleeding, clotting, organ function and medication risks together.",
+          "reviewHref": "#longitudinal-care",
+          "difficulty": "advanced"
+        }
+      },
+      "cirrhosis-decompensated-105": {
+        "before": {
+          "id": "cirrhosis-decompensated-105",
+          "question": "Which statement is most accurate? Focus: surveillance.",
+          "choices": [
+            "Cirrhosis requires HCC surveillance about every 6 months and prevention care despite control of the original liver disease.",
+            "Viral cure or abstinence does not reverse every established cirrhosis risk.",
+            "Apply a historical textbook algorithm without checking current guidance, labeling, resistance, or patient-specific risk.",
+            "Use one isolated value without reviewing the trajectory, clinical state, medications, or competing causes."
+          ],
+          "answer": 0,
+          "rationale": "Cirrhosis requires HCC surveillance about every 6 months and prevention care despite control of the original liver disease. Coordinate ultrasound with AFP when appropriate, vaccines, bone and nutrition review, variceal strategy, etiologic treatment, and cancer follow-up.",
+          "reviewHref": "#longitudinal-care",
+          "difficulty": "foundational"
+        },
+        "after": {
+          "id": "cirrhosis-decompensated-105",
+          "question": "Which statement is most accurate? Focus: surveillance.",
+          "choices": [
+            "Eligible patients with cirrhosis need ultrasound plus AFP about every six months for HCC surveillance, even after control of the underlying liver disease.",
+            "Successful HCV treatment eliminates the need for surveillance in every patient with established cirrhosis",
+            "A normal AFP result alone excludes HCC and replaces imaging",
+            "Screen every patient with Child-Pugh C cirrhosis even when transplantation is not an option"
+          ],
+          "answer": 0,
+          "rationale": "AASLD recommends ultrasound plus AFP approximately every six months for eligible patients with cirrhosis. HCV cure reduces risk but does not eliminate established cirrhosis-related HCC risk. Surveillance is intended for patients who could benefit from HCC treatment; Child-Pugh C patients need transplant eligibility, and life-limiting comorbidity may remove benefit.",
+          "reviewHref": "#longitudinal-care",
+          "difficulty": "foundational"
+        }
+      },
+      "cirrhosis-decompensated-106": {
+        "before": {
+          "id": "cirrhosis-decompensated-106",
+          "question": "Which action best applies the evidence? Focus: surveillance.",
+          "choices": [
+            "Coordinate ultrasound with AFP when appropriate, vaccines, bone and nutrition review, variceal strategy, etiologic treatment, and cancer follow-up.",
+            "Viral cure or abstinence does not reverse every established cirrhosis risk.",
+            "Use one isolated value without reviewing the trajectory, clinical state, medications, or competing causes.",
+            "Assume symptom improvement removes the need for surveillance, prevention, and transplant-aware follow-up."
+          ],
+          "answer": 0,
+          "rationale": "Cirrhosis requires HCC surveillance about every 6 months and prevention care despite control of the original liver disease. Coordinate ultrasound with AFP when appropriate, vaccines, bone and nutrition review, variceal strategy, etiologic treatment, and cancer follow-up.",
+          "reviewHref": "#longitudinal-care",
+          "difficulty": "foundational"
+        },
+        "after": {
+          "id": "cirrhosis-decompensated-106",
+          "question": "Which action best applies the evidence? Focus: surveillance.",
+          "choices": [
+            "Coordinate indicated HCC surveillance, vaccinations, bone and nutrition review, variceal prevention, etiologic treatment, and specialist follow-up.",
+            "Stop all HCC and variceal follow-up once liver enzymes normalize",
+            "Use AFP alone instead of the indicated surveillance imaging",
+            "Postpone vaccination and bone-risk assessment until cancer symptoms occur"
+          ],
+          "answer": 0,
+          "rationale": "Build prevention around treatment eligibility, cirrhosis complications and the patient’s needs. Continue indicated ultrasound-plus-AFP surveillance and review vaccination history, bone health, nutrition and variceal strategy. A normal enzyme result or absence of symptoms does not remove these risks.",
+          "reviewHref": "#longitudinal-care",
+          "difficulty": "foundational"
+        }
+      },
+      "cirrhosis-decompensated-107": {
+        "before": {
+          "id": "cirrhosis-decompensated-107",
+          "question": "Which plan demonstrates the strongest clinical reasoning? Focus: surveillance.",
+          "choices": [
+            "Coordinate ultrasound with AFP when appropriate, vaccines, bone and nutrition review, variceal strategy, etiologic treatment, and cancer follow-up.",
+            "Viral cure or abstinence does not reverse every established cirrhosis risk.",
+            "Assume symptom improvement removes the need for surveillance, prevention, and transplant-aware follow-up.",
+            "Apply a historical textbook algorithm without checking current guidance, labeling, resistance, or patient-specific risk."
+          ],
+          "answer": 0,
+          "rationale": "Cirrhosis requires HCC surveillance about every 6 months and prevention care despite control of the original liver disease. Coordinate ultrasound with AFP when appropriate, vaccines, bone and nutrition review, variceal strategy, etiologic treatment, and cancer follow-up.",
+          "reviewHref": "#longitudinal-care",
+          "difficulty": "advanced"
+        },
+        "after": {
+          "id": "cirrhosis-decompensated-107",
+          "question": "Which plan demonstrates the strongest clinical reasoning? Focus: surveillance.",
+          "choices": [
+            "Coordinate indicated HCC surveillance, vaccinations, bone and nutrition review, variceal prevention, etiologic treatment, and specialist follow-up.",
+            "Assume alcohol abstinence removes every remaining cancer and portal-hypertension risk",
+            "Replace the surveillance plan with an AFP test only when symptoms develop",
+            "Use a fixed prevention plan without reviewing transplant eligibility or patient goals"
+          ],
+          "answer": 0,
+          "rationale": "Etiologic treatment and abstinence are important but do not erase every established cirrhosis risk. Review treatment and transplant eligibility, goals, scheduled HCC surveillance, variceal prevention, vaccines, bone health and nutrition together. Screening while eligible aims to detect disease before symptoms; AFP alone is insufficient.",
+          "reviewHref": "#longitudinal-care",
+          "difficulty": "advanced"
+        }
+      },
+      "cirrhosis-decompensated-108": {
+        "before": {
+          "id": "cirrhosis-decompensated-108",
+          "question": "Which error creates the greatest avoidable risk? Focus: surveillance.",
+          "choices": [
+            "Viral cure or abstinence does not reverse every established cirrhosis risk.",
+            "Cirrhosis requires HCC surveillance about every 6 months and prevention care despite control of the original liver disease.",
+            "Coordinate ultrasound with AFP when appropriate, vaccines, bone and nutrition review, variceal strategy, etiologic treatment, and cancer follow-up.",
+            "Apply a historical textbook algorithm without checking current guidance, labeling, resistance, or patient-specific risk."
+          ],
+          "answer": 0,
+          "rationale": "Cirrhosis requires HCC surveillance about every 6 months and prevention care despite control of the original liver disease. Coordinate ultrasound with AFP when appropriate, vaccines, bone and nutrition review, variceal strategy, etiologic treatment, and cancer follow-up.",
+          "reviewHref": "#longitudinal-care",
+          "difficulty": "advanced"
+        },
+        "after": {
+          "id": "cirrhosis-decompensated-108",
+          "question": "Which error creates the greatest avoidable risk? Focus: surveillance.",
+          "choices": [
+            "Stop indicated HCC surveillance after viral cure because established cirrhosis is assumed to carry no remaining cancer risk",
+            "Eligible patients with cirrhosis need ultrasound plus AFP about every six months for HCC surveillance, even after control of the underlying liver disease.",
+            "Coordinate indicated HCC surveillance, vaccinations, bone and nutrition review, variceal prevention, etiologic treatment, and specialist follow-up.",
+            "Reassess treatment and transplant eligibility as liver disease and patient goals change"
+          ],
+          "answer": 0,
+          "rationale": "The error is abandoning indicated surveillance because the cause is controlled. In patients with cirrhosis, HCC risk can persist after HCV cure; surveillance eligibility still depends on whether HCC-directed treatment or transplantation could provide benefit. The other choices support individualized continued care.",
+          "reviewHref": "#longitudinal-care",
+          "difficulty": "advanced"
+        }
+      }
+    },
+    "bodies": {
+      "Deprescribe harm": {
+        "before": {
+          "heading": "Deprescribe harm",
+          "body": "Avoid NSAIDs, minimize benzodiazepines and sedatives, adjust renally and hepatically cleared drugs, and inspect supplements and hidden sodium."
+        },
+        "after": {
+          "heading": "Deprescribe harm",
+          "body": "Avoid systemic NSAIDs because they can worsen kidney function, bleeding and ascites. Review benzodiazepines and other sedatives, nephrotoxins, supplements, sodium-containing products and each medicine’s current renal and hepatic dosing guidance with the treating team. Chronic benzodiazepines are generally avoided in decompensated cirrhosis, although selected indications require individualized care. Do not stop essential medicines indiscriminately. An elevated INR from cirrhosis does not establish protection from thrombosis or measure bleeding risk by itself: both procoagulant and anticoagulant factors change."
+        }
+      },
+      "Continue prevention": {
+        "before": {
+          "heading": "Continue prevention",
+          "body": "Use ultrasound with AFP about every six months when indicated, current vaccination guidance, bone and micronutrient assessment, and alcohol and metabolic care."
+        },
+        "after": {
+          "heading": "Continue prevention",
+          "body": "For patients with cirrhosis who could benefit from HCC treatment, AASLD recommends ultrasound plus AFP about every six months. Continue indicated surveillance after HCV cure or other etiologic control; AFP alone does not replace imaging. Child-Pugh C patients generally require transplant eligibility for surveillance, and life-limiting comorbidities can make surveillance inappropriate. Coordinate specialist review of inadequate imaging or abnormal findings. Review current vaccination indications and prior doses, bone and micronutrient health, variceal prevention, alcohol cessation and metabolic care rather than treating a normal liver-enzyme result as resolution of risk."
+        }
+      },
+      "Teach the escalation signs": {
+        "before": {
+          "heading": "Teach the escalation signs",
+          "body": "New confusion, bleeding, fever, reduced urine, rapid weight gain, dyspnea, severe diarrhea, jaundice, or medication interruption requires prompt action."
+        },
+        "after": {
+          "heading": "Teach the escalation signs",
+          "body": "Give the patient and caregiver an explicit contact and emergency plan. Vomiting blood, black tarry stools, new marked confusion or inappropriate sleepiness, and fever or severe new abdominal pain with ascites require emergency assessment. Promptly report reduced urine, rapid weight gain, worsening dyspnea, jaundice, severe diarrhea or interrupted medicines; severity and the agreed plan determine urgency. Excess lactulose-related diarrhea can cause dehydration and worsen encephalopathy. Review adherence and prescribed adjustments with the team instead of assuming that more diarrhea means better treatment."
+        }
+      }
+    },
+    "metadata": {
+      "summary": {
+        "before": "Survival and function depend on nutrition, medication stewardship, prevention, HCC surveillance, and reliable access.",
+        "after": "Longitudinal care links nutrition, medication stewardship, prevention, indicated HCC surveillance, and reliable access."
+      },
+      "keyPoints": {
+        "before": [
+          "Protein restriction is outdated.",
+          "Muscle is metabolic reserve.",
+          "Medication review prevents decompensation.",
+          "Surveillance continues after etiologic control."
+        ],
+        "after": [
+          "Do not routinely restrict protein for hepatic encephalopathy.",
+          "Muscle supports nutritional and metabolic reserve.",
+          "Medication review can reduce avoidable harm.",
+          "Continue indicated surveillance after etiologic control."
+        ]
+      }
+    },
+    "newReferences": [
+      {
+        "label": "AASLD 2023: HCC surveillance guidance",
+        "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10663390/"
+      },
+      {
+        "label": "AASLD 2022: Symptom and medication safety",
+        "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9942270/"
+      },
+      {
+        "label": "AASLD 2024: INR and bleeding-risk assessment",
+        "href": "https://www.aasld.org/liver-fellow-network/core-series/clinical-pearls/peri-procedural-management-bleeding-risk-cirrhosis"
+      },
+      {
+        "label": "AASLD 2024: Coagulation in cirrhosis",
+        "href": "https://www.aasld.org/liver-fellow-network/core-series/back-basics/back-basics-conundrum-coagulopathy-cirrhosis"
+      },
+      {
+        "label": "CDC: Adult vaccination indications",
+        "href": "https://www.cdc.gov/vaccines/hcp/imz-schedules/adult-notes.html"
+      },
+      {
+        "label": "Michigan Medicine 2022: Cirrhosis toolkit",
+        "href": "https://www.uofmhealth.org/sites/default/files/2025-05/CirrhosisToolkit.pdf"
+      }
+    ]
+  },
+  "finalSourceComparison": {
+    "status": "passed",
+    "primaryBook": {
+      "identity": "Cover-verified RxPrep2023 despite filename NAPLEX2024.pdf",
+      "completePdfPagesReadAndNativePagesViewed": [
+        310,
+        311,
+        312,
+        313,
+        314,
+        315
+      ],
+      "printedPages": "302–307",
+      "scope": "Whole liver disease/DILI, variceal, HE, ascites, SBP/HRS and counseling source contexts read, including native tables/figures. Whole final edited objects compared again with relevant source passages. No new unrelated drug-table doses adopted."
+    },
+    "approvedPrimarySources": [
+      {
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10663390/",
+        "identity": "AASLD2023 HCC practice guidance; PMC availability2024 is not a new2024 edition",
+        "doi": "10.1097/HEP.0000000000000466",
+        "scope": "Complete relevant surveillance target population, risks/benefits, tests, interval and guidance statements; complete Tables1/2 and Figure4 actually read and visually viewed. Treatment eligibility, Child-Pugh C/transplant limitation, life-limiting comorbidity, post-SVR cirrhosis risk and ultrasound-plus-AFP approximately6mo compared against final objects. No new diagnostic threshold or tumor-treatment protocol."
+      },
+      {
+        "url": "https://www.aasld.org/practice-guidelines/management-hepatocellular-carcinoma",
+        "identity": "Official landing lists2025 critical update; primary-society-participating reproduction at https://www.guidelinecentral.com/guideline/10743/ inspected",
+        "doi": "10.1097/HEP.0000000000001269",
+        "scope": "Complete reproduced critical-update introduction/revised Guidance32 read. Update revises adjuvant systemic-treatment recommendation. Full update paper and Figure11 inaccessible/not inspected; no adjuvant treatment claim adopted. Does not certify the whole2023 or2025 guidance."
+      },
+      {
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9942270/",
+        "identity": "AASLD2022 palliative/symptom guidance, DOI10.1002/hep.32378; PMC2023 availability not a new edition",
+        "scope": "Relevant pain and complete sleep contexts/guidance statements read; whole Table5 including route/renal/comfort caveats read and native HTML viewed. Systemic NSAID avoidance and chronic benzodiazepines generally avoided with selected individualized indications; no blanket ban on all routes/indications or new dose adopted."
+      },
+      {
+        "url": "https://www.aasld.org/liver-fellow-network/core-series/back-basics/back-basics-outpatient-management-cirrhosis",
+        "identity": "AASLD educational overview February15,2024",
+        "scope": "Relevant full outpatient body read: HCC, medication/fluid risk, HE excessive lactulose diarrhea/dehydration, bone/micronutrients/vaccination and prevention. Its figures/tables were not all inspected; no claim of whole guidance certification. More specific HCC guidance controls eligibility and default test."
+      },
+      {
+        "url": "https://www.aasld.org/liver-fellow-network/core-series/clinical-pearls/peri-procedural-management-bleeding-risk-cirrhosis",
+        "identity": "AASLD educational case July1,2024",
+        "scope": "Complete relevant INR/procoagulant-anticoagulant discussion read; INR alone does not represent bleeding risk. Table1 not visually inspected; no procedure/product/platelet threshold adopted."
+      },
+      {
+        "url": "https://www.aasld.org/liver-fellow-network/core-series/back-basics/back-basics-conundrum-coagulopathy-cirrhosis",
+        "identity": "AASLD educational post June5,2024",
+        "scope": "Relevant rebalanced hemostasis/INR/periprocedure context read; native complete Figures1/2 actually viewed. Bleeding and clotting risk both possible. Figure2 procedural thresholds not adopted as universal treatment rules."
+      },
+      {
+        "url": "https://www.cdc.gov/vaccines/hcp/imz-schedules/adult-notes.html",
+        "identity": "Current retrieved adult notes,2025 schedule/addendum; retrieval date is not a2026 guideline edition",
+        "scope": "Complete HepA/HepB adult chronic-liver-disease and age/history contexts read. Teaching only reviews current indications/prior doses; no new brands/doses/schedules."
+      },
+      {
+        "url": "https://www.niddk.nih.gov/health-information/liver-disease/cirrhosis/treatment",
+        "identity": "NIDDK treatment information last reviewed June2023",
+        "scope": "Whole relevant body read; medicine/OTC/supplement review and hematemesis/melena emergency context. No standalone source claim for every symptom."
+      },
+      {
+        "url": "https://www.uofmhealth.org/sites/default/files/2025-05/CirrhosisToolkit.pdf",
+        "identity": "Michigan Medicine39-page patient/caregiver toolkit, last revised02/2022;2025 host path not a2025 edition",
+        "completeTextPagesRead": [
+          13,
+          16,
+          17,
+          18,
+          19,
+          30,
+          31,
+          32,
+          33,
+          34,
+          39
+        ],
+        "wholeNativePagesActuallyViewed": [
+          13,
+          16,
+          17,
+          18,
+          19,
+          32,
+          33,
+          34
+        ],
+        "scope": "Complete HE diagram and caregiver escalation table/footnotes viewed. Supports updated medication lists, marked confusion/sleepiness, ascites fever/severe abdominal pain, rapid fluid gain and diarrhea contact. Original paraphrase; no source image/text published."
+      }
+    ],
+    "wholeQuestions": [
+      {
+        "id": "cirrhosis-decompensated-101",
+        "wholeFinalObject": {
+          "id": "cirrhosis-decompensated-101",
+          "question": "Which statement is most accurate? Focus: medication safety.",
+          "choices": [
+            "Systemic NSAIDs, sedating medicines, nephrotoxins, excess sodium from products, and inappropriate dosing can worsen bleeding, kidney injury, fluid retention or encephalopathy in cirrhosis.",
+            "An elevated INR caused by cirrhosis proves protection from venous thrombosis",
+            "Over-the-counter products do not need review if the prescription list is complete",
+            "Use the same dose-reduction percentage for every hepatically cleared medicine"
+          ],
+          "answer": 0,
+          "rationale": "Review each product, indication, dose and route alongside renal and hepatic function. Systemic NSAIDs can impair kidney function, promote fluid retention and increase bleeding risk; sedatives can impair cognition. INR does not measure the full balance of clotting and anticoagulant factors.",
+          "reviewHref": "#longitudinal-care",
+          "difficulty": "foundational"
+        },
+        "allOptionsKeyStemRationaleAnchorClinicallyReviewed": true,
+        "decision": "Single best answer; competing true alternatives replaced with distinct incorrect actions.",
+        "sourceMap": [
+          "BookPDF310–315 product/organ-function and complication context",
+          "AASLD2022 systemicNSAID/sedative qualifications and2024 rebalancedhemostasis"
+        ]
+      },
+      {
+        "id": "cirrhosis-decompensated-102",
+        "wholeFinalObject": {
+          "id": "cirrhosis-decompensated-102",
+          "question": "Which action best applies the evidence? Focus: medication safety.",
+          "choices": [
+            "Reconcile prescriptions, over-the-counter products, supplements, alcohol, renal function, and hepatic labeling at every transition.",
+            "Exclude herbal supplements and over-the-counter sleep aids from reconciliation",
+            "Use INR alone to decide whether the patient is protected from thrombosis",
+            "Continue every previous dose without review after new kidney injury"
+          ],
+          "answer": 0,
+          "rationale": "Reconcile all products and exposures at transitions, then review current product-specific renal and hepatic dosing and continued need. Over-the-counter medicines and supplements can cause harm or interact. New kidney injury changes medication risk; INR alone cannot resolve it.",
+          "reviewHref": "#longitudinal-care",
+          "difficulty": "foundational"
+        },
+        "allOptionsKeyStemRationaleAnchorClinicallyReviewed": true,
+        "decision": "Single best answer; competing true alternatives replaced with distinct incorrect actions.",
+        "sourceMap": [
+          "BookPDF310–315 product/organ-function and complication context",
+          "AASLD2022 systemicNSAID/sedative qualifications and2024 rebalancedhemostasis"
+        ]
+      },
+      {
+        "id": "cirrhosis-decompensated-103",
+        "wholeFinalObject": {
+          "id": "cirrhosis-decompensated-103",
+          "question": "Which plan demonstrates the strongest clinical reasoning? Focus: medication safety.",
+          "choices": [
+            "Reconcile prescriptions, over-the-counter products, supplements, alcohol, renal function, and hepatic labeling at every transition.",
+            "Automatically discontinue every medicine when jaundice appears, without contacting the treating team",
+            "Ignore product-specific labeling because one liver-function result is normal",
+            "Assume a high INR makes anticoagulant and bleeding-risk review unnecessary"
+          ],
+          "answer": 0,
+          "rationale": "Use a complete list, current organ function and product labeling to individualize decisions with the treating team. Review sedative, nephrotoxic and sodium exposures and explain medication changes. Neither a normal isolated liver test nor a high INR replaces clinical assessment; abrupt withdrawal of some medicines can cause harm.",
+          "reviewHref": "#longitudinal-care",
+          "difficulty": "advanced"
+        },
+        "allOptionsKeyStemRationaleAnchorClinicallyReviewed": true,
+        "decision": "Single best answer; competing true alternatives replaced with distinct incorrect actions.",
+        "sourceMap": [
+          "BookPDF310–315 product/organ-function and complication context",
+          "AASLD2022 systemicNSAID/sedative qualifications and2024 rebalancedhemostasis"
+        ]
+      },
+      {
+        "id": "cirrhosis-decompensated-104",
+        "wholeFinalObject": {
+          "id": "cirrhosis-decompensated-104",
+          "question": "Which error creates the greatest avoidable risk? Focus: medication safety.",
+          "choices": [
+            "Treat a cirrhosis-related elevated INR as proof that the patient is protected from thrombosis",
+            "Reconcile prescriptions, over-the-counter products, supplements, alcohol, renal function, and hepatic labeling at every transition.",
+            "Review systemic NSAID and sedative exposure with the treating team",
+            "Check current renal and hepatic dosing recommendations for each medicine"
+          ],
+          "answer": 0,
+          "rationale": "Cirrhosis changes both procoagulant and anticoagulant factors, creating a fragile balance in which bleeding and thrombosis can occur. INR alone does not represent that balance. The other choices are useful medication-safety actions; assess bleeding, clotting, organ function and medication risks together.",
+          "reviewHref": "#longitudinal-care",
+          "difficulty": "advanced"
+        },
+        "allOptionsKeyStemRationaleAnchorClinicallyReviewed": true,
+        "decision": "Harmful action now uniquely answers error stem.",
+        "sourceMap": [
+          "BookPDF310–315 product/organ-function and complication context",
+          "AASLD2022 systemicNSAID/sedative qualifications and2024 rebalancedhemostasis"
+        ]
+      },
+      {
+        "id": "cirrhosis-decompensated-105",
+        "wholeFinalObject": {
+          "id": "cirrhosis-decompensated-105",
+          "question": "Which statement is most accurate? Focus: surveillance.",
+          "choices": [
+            "Eligible patients with cirrhosis need ultrasound plus AFP about every six months for HCC surveillance, even after control of the underlying liver disease.",
+            "Successful HCV treatment eliminates the need for surveillance in every patient with established cirrhosis",
+            "A normal AFP result alone excludes HCC and replaces imaging",
+            "Screen every patient with Child-Pugh C cirrhosis even when transplantation is not an option"
+          ],
+          "answer": 0,
+          "rationale": "AASLD recommends ultrasound plus AFP approximately every six months for eligible patients with cirrhosis. HCV cure reduces risk but does not eliminate established cirrhosis-related HCC risk. Surveillance is intended for patients who could benefit from HCC treatment; Child-Pugh C patients need transplant eligibility, and life-limiting comorbidity may remove benefit.",
+          "reviewHref": "#longitudinal-care",
+          "difficulty": "foundational"
+        },
+        "allOptionsKeyStemRationaleAnchorClinicallyReviewed": true,
+        "decision": "Single best answer; competing true alternatives replaced with distinct incorrect actions.",
+        "sourceMap": [
+          "BookPDF310–315 product/organ-function and complication context",
+          "AASLD2023 full surveillance population/tests/interval context;2025 update scope checked; AASLD2024 outpatient and CDC vaccination review context"
+        ]
+      },
+      {
+        "id": "cirrhosis-decompensated-106",
+        "wholeFinalObject": {
+          "id": "cirrhosis-decompensated-106",
+          "question": "Which action best applies the evidence? Focus: surveillance.",
+          "choices": [
+            "Coordinate indicated HCC surveillance, vaccinations, bone and nutrition review, variceal prevention, etiologic treatment, and specialist follow-up.",
+            "Stop all HCC and variceal follow-up once liver enzymes normalize",
+            "Use AFP alone instead of the indicated surveillance imaging",
+            "Postpone vaccination and bone-risk assessment until cancer symptoms occur"
+          ],
+          "answer": 0,
+          "rationale": "Build prevention around treatment eligibility, cirrhosis complications and the patient’s needs. Continue indicated ultrasound-plus-AFP surveillance and review vaccination history, bone health, nutrition and variceal strategy. A normal enzyme result or absence of symptoms does not remove these risks.",
+          "reviewHref": "#longitudinal-care",
+          "difficulty": "foundational"
+        },
+        "allOptionsKeyStemRationaleAnchorClinicallyReviewed": true,
+        "decision": "Single best answer; competing true alternatives replaced with distinct incorrect actions.",
+        "sourceMap": [
+          "BookPDF310–315 product/organ-function and complication context",
+          "AASLD2023 full surveillance population/tests/interval context;2025 update scope checked; AASLD2024 outpatient and CDC vaccination review context"
+        ]
+      },
+      {
+        "id": "cirrhosis-decompensated-107",
+        "wholeFinalObject": {
+          "id": "cirrhosis-decompensated-107",
+          "question": "Which plan demonstrates the strongest clinical reasoning? Focus: surveillance.",
+          "choices": [
+            "Coordinate indicated HCC surveillance, vaccinations, bone and nutrition review, variceal prevention, etiologic treatment, and specialist follow-up.",
+            "Assume alcohol abstinence removes every remaining cancer and portal-hypertension risk",
+            "Replace the surveillance plan with an AFP test only when symptoms develop",
+            "Use a fixed prevention plan without reviewing transplant eligibility or patient goals"
+          ],
+          "answer": 0,
+          "rationale": "Etiologic treatment and abstinence are important but do not erase every established cirrhosis risk. Review treatment and transplant eligibility, goals, scheduled HCC surveillance, variceal prevention, vaccines, bone health and nutrition together. Screening while eligible aims to detect disease before symptoms; AFP alone is insufficient.",
+          "reviewHref": "#longitudinal-care",
+          "difficulty": "advanced"
+        },
+        "allOptionsKeyStemRationaleAnchorClinicallyReviewed": true,
+        "decision": "Single best answer; competing true alternatives replaced with distinct incorrect actions.",
+        "sourceMap": [
+          "BookPDF310–315 product/organ-function and complication context",
+          "AASLD2023 full surveillance population/tests/interval context;2025 update scope checked; AASLD2024 outpatient and CDC vaccination review context"
+        ]
+      },
+      {
+        "id": "cirrhosis-decompensated-108",
+        "wholeFinalObject": {
+          "id": "cirrhosis-decompensated-108",
+          "question": "Which error creates the greatest avoidable risk? Focus: surveillance.",
+          "choices": [
+            "Stop indicated HCC surveillance after viral cure because established cirrhosis is assumed to carry no remaining cancer risk",
+            "Eligible patients with cirrhosis need ultrasound plus AFP about every six months for HCC surveillance, even after control of the underlying liver disease.",
+            "Coordinate indicated HCC surveillance, vaccinations, bone and nutrition review, variceal prevention, etiologic treatment, and specialist follow-up.",
+            "Reassess treatment and transplant eligibility as liver disease and patient goals change"
+          ],
+          "answer": 0,
+          "rationale": "The error is abandoning indicated surveillance because the cause is controlled. In patients with cirrhosis, HCC risk can persist after HCV cure; surveillance eligibility still depends on whether HCC-directed treatment or transplantation could provide benefit. The other choices support individualized continued care.",
+          "reviewHref": "#longitudinal-care",
+          "difficulty": "advanced"
+        },
+        "allOptionsKeyStemRationaleAnchorClinicallyReviewed": true,
+        "decision": "Harmful action now uniquely answers error stem.",
+        "sourceMap": [
+          "BookPDF310–315 product/organ-function and complication context",
+          "AASLD2023 full surveillance population/tests/interval context;2025 update scope checked; AASLD2024 outpatient and CDC vaccination review context"
+        ]
+      }
+    ],
+    "wholeBodies": [
+      {
+        "heading": "Deprescribe harm",
+        "body": "Avoid systemic NSAIDs because they can worsen kidney function, bleeding and ascites. Review benzodiazepines and other sedatives, nephrotoxins, supplements, sodium-containing products and each medicine’s current renal and hepatic dosing guidance with the treating team. Chronic benzodiazepines are generally avoided in decompensated cirrhosis, although selected indications require individualized care. Do not stop essential medicines indiscriminately. An elevated INR from cirrhosis does not establish protection from thrombosis or measure bleeding risk by itself: both procoagulant and anticoagulant factors change."
+      },
+      {
+        "heading": "Continue prevention",
+        "body": "For patients with cirrhosis who could benefit from HCC treatment, AASLD recommends ultrasound plus AFP about every six months. Continue indicated surveillance after HCV cure or other etiologic control; AFP alone does not replace imaging. Child-Pugh C patients generally require transplant eligibility for surveillance, and life-limiting comorbidities can make surveillance inappropriate. Coordinate specialist review of inadequate imaging or abnormal findings. Review current vaccination indications and prior doses, bone and micronutrient health, variceal prevention, alcohol cessation and metabolic care rather than treating a normal liver-enzyme result as resolution of risk."
+      },
+      {
+        "heading": "Teach the escalation signs",
+        "body": "Give the patient and caregiver an explicit contact and emergency plan. Vomiting blood, black tarry stools, new marked confusion or inappropriate sleepiness, and fever or severe new abdominal pain with ascites require emergency assessment. Promptly report reduced urine, rapid weight gain, worsening dyspnea, jaundice, severe diarrhea or interrupted medicines; severity and the agreed plan determine urgency. Excess lactulose-related diarrhea can cause dehydration and worsen encephalopathy. Review adherence and prescribed adjustments with the team instead of assuming that more diarrhea means better treatment."
+      }
+    ],
+    "metadata": {
+      "summary": {
+        "before": "Survival and function depend on nutrition, medication stewardship, prevention, HCC surveillance, and reliable access.",
+        "after": "Longitudinal care links nutrition, medication stewardship, prevention, indicated HCC surveillance, and reliable access."
+      },
+      "keyPoints": {
+        "before": [
+          "Protein restriction is outdated.",
+          "Muscle is metabolic reserve.",
+          "Medication review prevents decompensation.",
+          "Surveillance continues after etiologic control."
+        ],
+        "after": [
+          "Do not routinely restrict protein for hepatic encephalopathy.",
+          "Muscle supports nutritional and metabolic reserve.",
+          "Medication review can reduce avoidable harm.",
+          "Continue indicated surveillance after etiologic control."
+        ]
+      }
+    },
+    "claimComparison": {
+      "medicationSafety": "Systemic NSAID kidney/fluid/bleeding risk; individualized sedatives/renal-hepatic product review. High INR does not establish auto-anticoagulation. No automatic universal dose reduction or automatic withdrawal of all medicines.",
+      "surveillance": "Qualify treatment benefit, Child-Pugh C transplant eligibility and life-limiting comorbidity. Continue indicated surveillance after viral cure; approximately6mo ultrasound+AFP, not AFP alone. Inadequate imaging/abnormal findings require specialist review.",
+      "escalation": "Explicit caregiver emergency plan for hematemesis/melena, new marked confusion/sleepiness and ascites with fever/severe new abdominal pain. Other signs promptly reported with severity/agreed plan controlling urgency; no new numeric trigger or unsupervised dose adjustment.",
+      "metadata": "Medication review can reduce avoidable harm; indicated surveillance qualification. Original general prevention/application/figure reused, not all remaining parent claims newly certified."
+    },
+    "sourceDiscrepanciesAndLimits": [
+      "Michigan caregiver table calls tablespoon20mL and uses2–4 stool target; standard tablespoon15mL and book/AASLD2–3 differ. No tablespoon conversion, new stool target or automatic dose adjustment adopted.",
+      "Michigan nutrition1g/kg differs prior approved AASLD2021 stableadult1.2–1.5g/kg ideal-body-weight target. Previous verified nutrition teaching/check unchanged.",
+      "Michigan ascites simplification does not establish complete fluid causal model; no new fluid restriction or weight-change threshold adopted.",
+      "Official VA source unavailable; obsolete Michigan host returned HTML, not PDF. Valid current39-page PDF used.",
+      "2025 HCC update full paper/figure not inspected; GuidelineCentral primary-society reproduction confirms limited adjuvant scope. No claim all2025 guidelines or unselected parent regimens certified.",
+      "No new numeric dose, anticoagulation prescription, platelet cutoff, AFP diagnostic threshold, BCAA regimen or calculation exercise."
+    ],
+    "sourceVisualCoverage": {
+      "actuallyViewedCapturesThisUnit": 20,
+      "completeNativeBookPages": 6,
+      "completeNativeMichiganPages": 8,
+      "completePrimaryHtmlTables": 3,
+      "completePrimaryFigures": 3,
+      "captureHashes": {
+        "book-310.png": "22a5194d2144a3e37528be5f5c7b417c6139d39892ee6a71fe64e7be9338c033",
+        "book-311.png": "696edfc575b558950ea9709fe101dffac50a9126d303bbf7484a2d8f1c334b2f",
+        "book-312.png": "f643fa8642a84937d0d23f18cb6fedcb8eed7a6a93f5dfad18853aa3602989f0",
+        "book-313.png": "546b91a6c97fcefc095d7a2924d39ae3f71f51fdfb518894805ab86763f27b89",
+        "book-314.png": "463f5998fc7586086e2bbfff35906476085bc80ead5f8bb8811f56dbd8b3370a",
+        "book-315.png": "8f27faebc786aa358dd0729ff8d2c6fd8404ab06b8c5f61f06df93fb65ca39f3",
+        "michigan-13.png": "bbaf1a3c0c687abc66258c57fc3b02c95554115473115f3beeafe560eef0dc75",
+        "michigan-16.png": "9c372ed9d3665d6decdc425d05cd3c3c3f89685d89c22aa80d1b498471020782",
+        "michigan-17.png": "3f19b196ff66783eb232e5f369627c1724b44311d959f85f5d848e1f6e3c30ac",
+        "michigan-18.png": "687b873351ed605be144734493bc24ad43e89ae483047aadbda1c600f42bfd41",
+        "michigan-19.png": "8a761b7af3a1fe35ecda051e47a34db535543bec59e057e6b76b82b3832f3fe0",
+        "michigan-32.png": "9fc5f300a7925494a9c8725be6f3e1c2bb0e0ad32a080bd5f9ab5427105ed6e4",
+        "michigan-33.png": "5627b64258aadafcae86b90d6b05b0323ea6818d82e657c150b771ca946d00b6",
+        "michigan-34.png": "dfe7de959e8067bb4b66a5c42685a7f5eda73bf3dce3d1e64e6daa9f7cf7939e",
+        "hcc-T1.png": "da04a9c79f0ae10e56d2d5c3db20213890a5ffe99e49de84302b338f2f9af1aa",
+        "hcc-T2.png": "ad590eadd5151f03375d6cc20b2dbac91b3b5d95b41797fd7e3a8a953b2aab83",
+        "hcc-F4.png": "422860701eca86a6bf6bf700a537953b73db3533d0a5538753b5bcb1897df051",
+        "palliative-T5.png": "0bf4783de4d1152007b85a8331751b005cb5c7b48636ceba65203df1ac36d6c0",
+        "coagulation-figure1.jpg": "1cbb90eee3908e387252b4fabc515027a6f5369d349294354c59814fb49e576c",
+        "coagulation-figure2.png": "3f95624156da38cab0bfbca166376812ec1fea6204c050dcdf980d9b1c50dbb8"
+      },
+      "doesNotClaimEverySourcePageOrFigureInspected": true
+    },
+    "privateSourcesOutsideGit": true
+  },
+  "hepaticDependencyReconciliation": {
+    "status": "passed",
+    "questionReview": [
+      {
+        "module": "cirrhosis-decompensated-liver-disease",
+        "id": "cirrhosis-decompensated-097",
+        "question": "Which statement is most accurate? Focus: nutrition.",
+        "choices": [
+          "Clinically stable adults with cirrhosis generally need adequate energy and 1.2 to 1.5 g/kg ideal body weight/day protein, with minimized fasting and no routine protein restriction for hepatic encephalopathy.",
+          "Routinely restrict protein to treat hepatic encephalopathy until the ammonia concentration normalizes",
+          "Use ascites-increased scale weight without identifying the weight basis for the protein prescription",
+          "Recommend a late-evening snack only when the patient is visibly underweight"
+        ],
+        "answer": 0,
+        "rationale": "AASLD specifies ideal body weight for this adult protein target. Routine restriction can accelerate protein breakdown; adequate intake and shorter fasting periods support nutrition. Fluid retention can distort scale weight, and a normal or high BMI does not rule out malnutrition.",
+        "reviewHref": "#longitudinal-care",
+        "difficulty": "foundational",
+        "status": "verified prior unit",
+        "evidence": "enteral-nutrition-broader-cirrhosis-nutrition-review.json",
+        "priorEvidence": "enteral-nutrition-broader-cirrhosis-nutrition-review.json",
+        "scope": "Exact whole-object continuity only; previous clinical review and remaining scope retained."
+      },
+      {
+        "module": "cirrhosis-decompensated-liver-disease",
+        "id": "cirrhosis-decompensated-098",
+        "question": "Which action best applies the evidence? Focus: nutrition.",
+        "choices": [
+          "Assess sarcopenia, food access, sodium burden, alcohol, vitamins, swallowing, obesity, and late-evening nutrition with a dietitian.",
+          "Wait for visible wasting before reviewing food access or meal timing",
+          "Reduce protein whenever encephalopathy occurs, without reviewing actual intake",
+          "Omit micronutrient and alcohol-use assessment once calorie intake seems adequate"
+        ],
+        "answer": 0,
+        "rationale": "Review intake, muscle loss, access to food, dietary restrictions, alcohol and micronutrient risks with the nutrition team. Ask about barriers to safe eating, including swallowing difficulty, and involve the appropriate professional when indicated. Adequate calories alone do not establish an adequate nutrition plan.",
+        "reviewHref": "#longitudinal-care",
+        "difficulty": "foundational",
+        "status": "verified prior unit",
+        "evidence": "enteral-nutrition-broader-cirrhosis-nutrition-review.json",
+        "priorEvidence": "enteral-nutrition-broader-cirrhosis-nutrition-review.json",
+        "scope": "Exact whole-object continuity only; previous clinical review and remaining scope retained."
+      },
+      {
+        "module": "cirrhosis-decompensated-liver-disease",
+        "id": "cirrhosis-decompensated-099",
+        "question": "Which plan demonstrates the strongest clinical reasoning? Focus: nutrition.",
+        "choices": [
+          "Assess sarcopenia, food access, sodium burden, alcohol, vitamins, swallowing, obesity, and late-evening nutrition with a dietitian.",
+          "Treat a high BMI or ascites-increased weight as proof that muscle and nutrition are adequate",
+          "Tighten dietary restrictions despite falling intake, without reassessing nutritional targets",
+          "Replace adequate food and protein with vitamin supplements alone"
+        ],
+        "answer": 0,
+        "rationale": "Obesity and fluid retention can conceal muscle loss. Assess the whole nutrition pattern and barriers, including swallowing when relevant; tailor energy, protein and meal timing with a dietitian. Restrictive diets that reduce intake require reassessment, and micronutrients cannot replace macronutrients.",
+        "reviewHref": "#longitudinal-care",
+        "difficulty": "advanced",
+        "status": "verified prior unit",
+        "evidence": "enteral-nutrition-broader-cirrhosis-nutrition-review.json",
+        "priorEvidence": "enteral-nutrition-broader-cirrhosis-nutrition-review.json",
+        "scope": "Exact whole-object continuity only; previous clinical review and remaining scope retained."
+      },
+      {
+        "module": "cirrhosis-decompensated-liver-disease",
+        "id": "cirrhosis-decompensated-100",
+        "question": "Which error creates the greatest avoidable risk? Focus: nutrition.",
+        "choices": [
+          "Severely restrict dietary protein to treat hepatic encephalopathy despite ongoing muscle loss",
+          "Clinically stable adults with cirrhosis generally need adequate energy and 1.2 to 1.5 g/kg ideal body weight/day protein, with minimized fasting and no routine protein restriction for hepatic encephalopathy.",
+          "Assess sarcopenia, food access, sodium burden, alcohol, vitamins, swallowing, obesity, and late-evening nutrition with a dietitian.",
+          "Shorten overnight fasting with an individualized late-evening snack"
+        ],
+        "answer": 0,
+        "rationale": "The error is protein restriction: it can worsen catabolism and muscle loss. Muscle contributes to ammonia disposal, so restriction is not a reliable way to improve encephalopathy. Adequate nutrition, assessment and an individualized meal schedule are beneficial actions.",
+        "reviewHref": "#longitudinal-care",
+        "difficulty": "advanced",
+        "status": "verified prior unit",
+        "evidence": "enteral-nutrition-broader-cirrhosis-nutrition-review.json",
+        "priorEvidence": "enteral-nutrition-broader-cirrhosis-nutrition-review.json",
+        "scope": "Exact whole-object continuity only; previous clinical review and remaining scope retained."
+      },
+      {
+        "module": "cirrhosis-decompensated-liver-disease",
+        "id": "cirrhosis-decompensated-101",
+        "question": "Which statement is most accurate? Focus: medication safety.",
+        "choices": [
+          "Systemic NSAIDs, sedating medicines, nephrotoxins, excess sodium from products, and inappropriate dosing can worsen bleeding, kidney injury, fluid retention or encephalopathy in cirrhosis.",
+          "An elevated INR caused by cirrhosis proves protection from venous thrombosis",
+          "Over-the-counter products do not need review if the prescription list is complete",
+          "Use the same dose-reduction percentage for every hepatically cleared medicine"
+        ],
+        "answer": 0,
+        "rationale": "Review each product, indication, dose and route alongside renal and hepatic function. Systemic NSAIDs can impair kidney function, promote fluid retention and increase bleeding risk; sedatives can impair cognition. INR does not measure the full balance of clotting and anticoagulant factors.",
+        "reviewHref": "#longitudinal-care",
+        "difficulty": "foundational",
+        "status": "verified this unit",
+        "priorEvidence": "enteral-nutrition-broader-hepatic-nutrition-review.json",
+        "priorReview": "NSAID/nephrotoxin/hidden sodium/hepatic dosing review partial. Full sedative precipitant scope, rebalanced hemostasis/INRauto-anticoagulation and current full medication context not established; original question unchanged.",
+        "scope": "Whole final object clinically compared against complete relevant source contexts; desktop/mobile verified.",
+        "evidence": "enteral-nutrition-broader-cirrhosis-longitudinal-review.json"
+      },
+      {
+        "module": "cirrhosis-decompensated-liver-disease",
+        "id": "cirrhosis-decompensated-102",
+        "question": "Which action best applies the evidence? Focus: medication safety.",
+        "choices": [
+          "Reconcile prescriptions, over-the-counter products, supplements, alcohol, renal function, and hepatic labeling at every transition.",
+          "Exclude herbal supplements and over-the-counter sleep aids from reconciliation",
+          "Use INR alone to decide whether the patient is protected from thrombosis",
+          "Continue every previous dose without review after new kidney injury"
+        ],
+        "answer": 0,
+        "rationale": "Reconcile all products and exposures at transitions, then review current product-specific renal and hepatic dosing and continued need. Over-the-counter medicines and supplements can cause harm or interact. New kidney injury changes medication risk; INR alone cannot resolve it.",
+        "reviewHref": "#longitudinal-care",
+        "difficulty": "foundational",
+        "status": "verified this unit",
+        "priorEvidence": "enteral-nutrition-broader-hepatic-nutrition-review.json",
+        "priorReview": "NSAID/nephrotoxin/hidden sodium/hepatic dosing review partial. Full sedative precipitant scope, rebalanced hemostasis/INRauto-anticoagulation and current full medication context not established; original question unchanged.",
+        "scope": "Whole final object clinically compared against complete relevant source contexts; desktop/mobile verified.",
+        "evidence": "enteral-nutrition-broader-cirrhosis-longitudinal-review.json"
+      },
+      {
+        "module": "cirrhosis-decompensated-liver-disease",
+        "id": "cirrhosis-decompensated-103",
+        "question": "Which plan demonstrates the strongest clinical reasoning? Focus: medication safety.",
+        "choices": [
+          "Reconcile prescriptions, over-the-counter products, supplements, alcohol, renal function, and hepatic labeling at every transition.",
+          "Automatically discontinue every medicine when jaundice appears, without contacting the treating team",
+          "Ignore product-specific labeling because one liver-function result is normal",
+          "Assume a high INR makes anticoagulant and bleeding-risk review unnecessary"
+        ],
+        "answer": 0,
+        "rationale": "Use a complete list, current organ function and product labeling to individualize decisions with the treating team. Review sedative, nephrotoxic and sodium exposures and explain medication changes. Neither a normal isolated liver test nor a high INR replaces clinical assessment; abrupt withdrawal of some medicines can cause harm.",
+        "reviewHref": "#longitudinal-care",
+        "difficulty": "advanced",
+        "status": "verified this unit",
+        "priorEvidence": "enteral-nutrition-broader-hepatic-nutrition-review.json",
+        "priorReview": "NSAID/nephrotoxin/hidden sodium/hepatic dosing review partial. Full sedative precipitant scope, rebalanced hemostasis/INRauto-anticoagulation and current full medication context not established; original question unchanged.",
+        "scope": "Whole final object clinically compared against complete relevant source contexts; desktop/mobile verified.",
+        "evidence": "enteral-nutrition-broader-cirrhosis-longitudinal-review.json"
+      },
+      {
+        "module": "cirrhosis-decompensated-liver-disease",
+        "id": "cirrhosis-decompensated-104",
+        "question": "Which error creates the greatest avoidable risk? Focus: medication safety.",
+        "choices": [
+          "Treat a cirrhosis-related elevated INR as proof that the patient is protected from thrombosis",
+          "Reconcile prescriptions, over-the-counter products, supplements, alcohol, renal function, and hepatic labeling at every transition.",
+          "Review systemic NSAID and sedative exposure with the treating team",
+          "Check current renal and hepatic dosing recommendations for each medicine"
+        ],
+        "answer": 0,
+        "rationale": "Cirrhosis changes both procoagulant and anticoagulant factors, creating a fragile balance in which bleeding and thrombosis can occur. INR alone does not represent that balance. The other choices are useful medication-safety actions; assess bleeding, clotting, organ function and medication risks together.",
+        "reviewHref": "#longitudinal-care",
+        "difficulty": "advanced",
+        "status": "verified this unit",
+        "priorEvidence": "enteral-nutrition-broader-hepatic-nutrition-review.json",
+        "priorReview": "NSAID/nephrotoxin/hidden sodium/hepatic dosing review partial. Full sedative precipitant scope, rebalanced hemostasis/INRauto-anticoagulation and current full medication context not established; original question unchanged.",
+        "scope": "Whole final object clinically compared against complete relevant source contexts; desktop/mobile verified.",
+        "evidence": "enteral-nutrition-broader-cirrhosis-longitudinal-review.json"
+      },
+      {
+        "module": "cirrhosis-decompensated-liver-disease",
+        "id": "cirrhosis-decompensated-105",
+        "question": "Which statement is most accurate? Focus: surveillance.",
+        "choices": [
+          "Eligible patients with cirrhosis need ultrasound plus AFP about every six months for HCC surveillance, even after control of the underlying liver disease.",
+          "Successful HCV treatment eliminates the need for surveillance in every patient with established cirrhosis",
+          "A normal AFP result alone excludes HCC and replaces imaging",
+          "Screen every patient with Child-Pugh C cirrhosis even when transplantation is not an option"
+        ],
+        "answer": 0,
+        "rationale": "AASLD recommends ultrasound plus AFP approximately every six months for eligible patients with cirrhosis. HCV cure reduces risk but does not eliminate established cirrhosis-related HCC risk. Surveillance is intended for patients who could benefit from HCC treatment; Child-Pugh C patients need transplant eligibility, and life-limiting comorbidity may remove benefit.",
+        "reviewHref": "#longitudinal-care",
+        "difficulty": "foundational",
+        "status": "verified this unit",
+        "priorEvidence": "enteral-nutrition-broader-hepatic-nutrition-review.json",
+        "priorReview": "Complete six-monthHCC/AFP/vaccine/bone/metabolic prevention and residual risk after cure not established. Also108 keys a true warning as an error; whole question requires repair when fullsource scope established.",
+        "scope": "Whole final object clinically compared against complete relevant source contexts; desktop/mobile verified.",
+        "evidence": "enteral-nutrition-broader-cirrhosis-longitudinal-review.json"
+      },
+      {
+        "module": "cirrhosis-decompensated-liver-disease",
+        "id": "cirrhosis-decompensated-106",
+        "question": "Which action best applies the evidence? Focus: surveillance.",
+        "choices": [
+          "Coordinate indicated HCC surveillance, vaccinations, bone and nutrition review, variceal prevention, etiologic treatment, and specialist follow-up.",
+          "Stop all HCC and variceal follow-up once liver enzymes normalize",
+          "Use AFP alone instead of the indicated surveillance imaging",
+          "Postpone vaccination and bone-risk assessment until cancer symptoms occur"
+        ],
+        "answer": 0,
+        "rationale": "Build prevention around treatment eligibility, cirrhosis complications and the patient’s needs. Continue indicated ultrasound-plus-AFP surveillance and review vaccination history, bone health, nutrition and variceal strategy. A normal enzyme result or absence of symptoms does not remove these risks.",
+        "reviewHref": "#longitudinal-care",
+        "difficulty": "foundational",
+        "status": "verified this unit",
+        "priorEvidence": "enteral-nutrition-broader-hepatic-nutrition-review.json",
+        "priorReview": "Complete six-monthHCC/AFP/vaccine/bone/metabolic prevention and residual risk after cure not established. Also108 keys a true warning as an error; whole question requires repair when fullsource scope established.",
+        "scope": "Whole final object clinically compared against complete relevant source contexts; desktop/mobile verified.",
+        "evidence": "enteral-nutrition-broader-cirrhosis-longitudinal-review.json"
+      },
+      {
+        "module": "cirrhosis-decompensated-liver-disease",
+        "id": "cirrhosis-decompensated-107",
+        "question": "Which plan demonstrates the strongest clinical reasoning? Focus: surveillance.",
+        "choices": [
+          "Coordinate indicated HCC surveillance, vaccinations, bone and nutrition review, variceal prevention, etiologic treatment, and specialist follow-up.",
+          "Assume alcohol abstinence removes every remaining cancer and portal-hypertension risk",
+          "Replace the surveillance plan with an AFP test only when symptoms develop",
+          "Use a fixed prevention plan without reviewing transplant eligibility or patient goals"
+        ],
+        "answer": 0,
+        "rationale": "Etiologic treatment and abstinence are important but do not erase every established cirrhosis risk. Review treatment and transplant eligibility, goals, scheduled HCC surveillance, variceal prevention, vaccines, bone health and nutrition together. Screening while eligible aims to detect disease before symptoms; AFP alone is insufficient.",
+        "reviewHref": "#longitudinal-care",
+        "difficulty": "advanced",
+        "status": "verified this unit",
+        "priorEvidence": "enteral-nutrition-broader-hepatic-nutrition-review.json",
+        "priorReview": "Complete six-monthHCC/AFP/vaccine/bone/metabolic prevention and residual risk after cure not established. Also108 keys a true warning as an error; whole question requires repair when fullsource scope established.",
+        "scope": "Whole final object clinically compared against complete relevant source contexts; desktop/mobile verified.",
+        "evidence": "enteral-nutrition-broader-cirrhosis-longitudinal-review.json"
+      },
+      {
+        "module": "cirrhosis-decompensated-liver-disease",
+        "id": "cirrhosis-decompensated-108",
+        "question": "Which error creates the greatest avoidable risk? Focus: surveillance.",
+        "choices": [
+          "Stop indicated HCC surveillance after viral cure because established cirrhosis is assumed to carry no remaining cancer risk",
+          "Eligible patients with cirrhosis need ultrasound plus AFP about every six months for HCC surveillance, even after control of the underlying liver disease.",
+          "Coordinate indicated HCC surveillance, vaccinations, bone and nutrition review, variceal prevention, etiologic treatment, and specialist follow-up.",
+          "Reassess treatment and transplant eligibility as liver disease and patient goals change"
+        ],
+        "answer": 0,
+        "rationale": "The error is abandoning indicated surveillance because the cause is controlled. In patients with cirrhosis, HCC risk can persist after HCV cure; surveillance eligibility still depends on whether HCC-directed treatment or transplantation could provide benefit. The other choices support individualized continued care.",
+        "reviewHref": "#longitudinal-care",
+        "difficulty": "advanced",
+        "status": "verified this unit",
+        "priorEvidence": "enteral-nutrition-broader-hepatic-nutrition-review.json",
+        "priorReview": "Complete six-monthHCC/AFP/vaccine/bone/metabolic prevention and residual risk after cure not established. Also108 keys a true warning as an error; whole question requires repair when fullsource scope established.",
+        "scope": "Whole final object clinically compared against complete relevant source contexts; desktop/mobile verified.",
+        "evidence": "enteral-nutrition-broader-cirrhosis-longitudinal-review.json"
+      },
+      {
+        "module": "chronic-hepatitis-b",
+        "id": "chronic-hepatitis-b-037",
+        "question": "Which statement is most accurate? Focus: tenofovir disoproxil.",
+        "choices": [
+          "TDF is a high-barrier HBV polymerase inhibitor with strong antiviral activity and important renal tubular and bone toxicity considerations.",
+          "Ignoring renal and bone context can turn effective suppression into preventable toxicity.",
+          "Use one isolated laboratory value without reviewing the full serology pattern, fibrosis, treatment history, or current guidance.",
+          "Assume viral suppression removes every need for monitoring, vaccination, or cancer surveillance."
+        ],
+        "answer": 0,
+        "rationale": "TDF is a high-barrier HBV polymerase inhibitor with strong antiviral activity and important renal tubular and bone toxicity considerations. Review kidney function, urine markers when indicated, bone risk, nephrotoxins, dosing, adherence, and post-treatment flare planning.",
+        "reviewHref": "#polymerase-therapy",
+        "difficulty": "foundational",
+        "status": "pending",
+        "priorEvidence": "enteral-nutrition-broader-cirrhosis-nutrition-review.json",
+        "priorReview": "TDFclass/renal/bone partial; full high-resistance-barrier assertion not established by reviewed chapter.",
+        "scope": "Exact whole-object continuity only; previous clinical review and remaining scope retained."
+      },
+      {
+        "module": "chronic-hepatitis-b",
+        "id": "chronic-hepatitis-b-038",
+        "question": "Which action best applies the evidence? Focus: tenofovir disoproxil.",
+        "choices": [
+          "Review kidney function, urine markers when indicated, bone risk, nephrotoxins, dosing, adherence, and post-treatment flare planning.",
+          "Ignoring renal and bone context can turn effective suppression into preventable toxicity.",
+          "Assume viral suppression removes every need for monitoring, vaccination, or cancer surveillance.",
+          "Select therapy from drug name alone without kidney, bone, liver, pregnancy, resistance, coinfection, or adherence context."
+        ],
+        "answer": 0,
+        "rationale": "TDF is a high-barrier HBV polymerase inhibitor with strong antiviral activity and important renal tubular and bone toxicity considerations. Review kidney function, urine markers when indicated, bone risk, nephrotoxins, dosing, adherence, and post-treatment flare planning.",
+        "reviewHref": "#polymerase-therapy",
+        "difficulty": "foundational",
+        "status": "pending",
+        "priorEvidence": "enteral-nutrition-broader-cirrhosis-nutrition-review.json",
+        "priorReview": "Renal/bone/flare support partial; whole urine-marker/monitoring-adherence assessment and rationale high-barrier claim not established.",
+        "scope": "Exact whole-object continuity only; previous clinical review and remaining scope retained."
+      },
+      {
+        "module": "chronic-hepatitis-b",
+        "id": "chronic-hepatitis-b-039",
+        "question": "Which plan demonstrates the strongest clinical reasoning? Focus: tenofovir disoproxil.",
+        "choices": [
+          "Review kidney function, urine markers when indicated, bone risk, nephrotoxins, dosing, adherence, and post-treatment flare planning.",
+          "Ignoring renal and bone context can turn effective suppression into preventable toxicity.",
+          "Select therapy from drug name alone without kidney, bone, liver, pregnancy, resistance, coinfection, or adherence context.",
+          "Use one isolated laboratory value without reviewing the full serology pattern, fibrosis, treatment history, or current guidance."
+        ],
+        "answer": 0,
+        "rationale": "TDF is a high-barrier HBV polymerase inhibitor with strong antiviral activity and important renal tubular and bone toxicity considerations. Review kidney function, urine markers when indicated, bone risk, nephrotoxins, dosing, adherence, and post-treatment flare planning.",
+        "reviewHref": "#polymerase-therapy",
+        "difficulty": "advanced",
+        "status": "pending",
+        "priorEvidence": "enteral-nutrition-broader-cirrhosis-nutrition-review.json",
+        "priorReview": "Renal/bone/flare support partial; whole urine-marker/monitoring-adherence assessment and rationale high-barrier claim not established.",
+        "scope": "Exact whole-object continuity only; previous clinical review and remaining scope retained."
+      },
+      {
+        "module": "chronic-hepatitis-b",
+        "id": "chronic-hepatitis-b-040",
+        "question": "Which error creates the greatest avoidable risk? Focus: tenofovir disoproxil.",
+        "choices": [
+          "Ignoring renal and bone context can turn effective suppression into preventable toxicity.",
+          "Review renal function and bone risk before choosing or dosing TDF.",
+          "Check for interacting nephrotoxic drugs during TDF treatment.",
+          "Plan monitoring for HBV worsening if antiviral treatment is stopped."
+        ],
+        "answer": 0,
+        "rationale": "TDF can cause renal toxicity, including Fanconi syndrome, and loss of bone mineral density. Ignoring these risks can cause preventable harm. Kidney-based dosing, review of nephrotoxins, and monitoring after discontinuation address the book’s safety concerns.",
+        "reviewHref": "#polymerase-therapy",
+        "difficulty": "advanced",
+        "status": "verified",
+        "priorEvidence": "enteral-nutrition-broader-cirrhosis-nutrition-review.json",
+        "priorReview": "Whole keyed original topic/answer retained. Alternatives and explanation individually repaired against complete source. Two HCV stems clarified because correct safety statements had been described as errors. No new contemporary dosing/label exception inferred.",
+        "scope": "Exact whole-object continuity only; previous clinical review and remaining scope retained."
+      },
+      {
+        "module": "chronic-hepatitis-b",
+        "id": "chronic-hepatitis-b-041",
+        "question": "Which statement is most accurate? Focus: tenofovir alafenamide.",
+        "choices": [
+          "TAF delivers more tenofovir intracellularly with lower plasma exposure than TDF and generally less renal and bone toxicity, but product labeling and hepatic status matter.",
+          "Substituting any TAF-containing HIV combination for single-agent HBV therapy without a complete HIV plan is unsafe.",
+          "Assume viral suppression removes every need for monitoring, vaccination, or cancer surveillance.",
+          "Select therapy from drug name alone without kidney, bone, liver, pregnancy, resistance, coinfection, or adherence context."
+        ],
+        "answer": 0,
+        "rationale": "TAF delivers more tenofovir intracellularly with lower plasma exposure than TDF and generally less renal and bone toxicity, but product labeling and hepatic status matter. Use current Vemlidy age, weight, food, renal, dialysis, and compensated-liver labeling rather than assuming every HIV TAF product is interchangeable.",
+        "reviewHref": "#polymerase-therapy",
+        "difficulty": "foundational",
+        "status": "pending",
+        "priorEvidence": "enteral-nutrition-broader-cirrhosis-nutrition-review.json",
+        "priorReview": "TAFless renal/bone toxicity explicit; intracellular/plasma pharmacology and full hepatic labeling not established.",
+        "scope": "Exact whole-object continuity only; previous clinical review and remaining scope retained."
+      },
+      {
+        "module": "chronic-hepatitis-b",
+        "id": "chronic-hepatitis-b-042",
+        "question": "Which action best applies the evidence? Focus: tenofovir alafenamide.",
+        "choices": [
+          "Use current Vemlidy age, weight, food, renal, dialysis, and compensated-liver labeling rather than assuming every HIV TAF product is interchangeable.",
+          "Substituting any TAF-containing HIV combination for single-agent HBV therapy without a complete HIV plan is unsafe.",
+          "Select therapy from drug name alone without kidney, bone, liver, pregnancy, resistance, coinfection, or adherence context.",
+          "Use one isolated laboratory value without reviewing the full serology pattern, fibrosis, treatment history, or current guidance."
+        ],
+        "answer": 0,
+        "rationale": "TAF delivers more tenofovir intracellularly with lower plasma exposure than TDF and generally less renal and bone toxicity, but product labeling and hepatic status matter. Use current Vemlidy age, weight, food, renal, dialysis, and compensated-liver labeling rather than assuming every HIV TAF product is interchangeable.",
+        "reviewHref": "#polymerase-therapy",
+        "difficulty": "foundational",
+        "status": "pending",
+        "priorEvidence": "enteral-nutrition-broader-cirrhosis-nutrition-review.json",
+        "priorReview": "TAFfood/product distinction partial; full contemporary pediatric age/weight/dialysis/compensated liver labeling and all alternatives not established.",
+        "scope": "Exact whole-object continuity only; previous clinical review and remaining scope retained."
+      },
+      {
+        "module": "chronic-hepatitis-b",
+        "id": "chronic-hepatitis-b-043",
+        "question": "Which plan demonstrates the strongest clinical reasoning? Focus: tenofovir alafenamide.",
+        "choices": [
+          "Use current Vemlidy age, weight, food, renal, dialysis, and compensated-liver labeling rather than assuming every HIV TAF product is interchangeable.",
+          "Substituting any TAF-containing HIV combination for single-agent HBV therapy without a complete HIV plan is unsafe.",
+          "Use one isolated laboratory value without reviewing the full serology pattern, fibrosis, treatment history, or current guidance.",
+          "Assume viral suppression removes every need for monitoring, vaccination, or cancer surveillance."
+        ],
+        "answer": 0,
+        "rationale": "TAF delivers more tenofovir intracellularly with lower plasma exposure than TDF and generally less renal and bone toxicity, but product labeling and hepatic status matter. Use current Vemlidy age, weight, food, renal, dialysis, and compensated-liver labeling rather than assuming every HIV TAF product is interchangeable.",
+        "reviewHref": "#polymerase-therapy",
+        "difficulty": "advanced",
+        "status": "pending",
+        "priorEvidence": "enteral-nutrition-broader-cirrhosis-nutrition-review.json",
+        "priorReview": "TAFfood/product distinction partial; full contemporary pediatric age/weight/dialysis/compensated liver labeling and all alternatives not established.",
+        "scope": "Exact whole-object continuity only; previous clinical review and remaining scope retained."
+      },
+      {
+        "module": "chronic-hepatitis-b",
+        "id": "chronic-hepatitis-b-044",
+        "question": "Which error creates the greatest avoidable risk? Focus: tenofovir alafenamide.",
+        "choices": [
+          "Substituting any TAF-containing HIV combination for single-agent HBV therapy without a complete HIV plan is unsafe.",
+          "Verify the exact single-agent HBV product before dispensing.",
+          "Test for HIV before starting HBV antiviral therapy.",
+          "Choose therapy that appropriately treats both viruses when HIV and HBV coexist."
+        ],
+        "answer": 0,
+        "rationale": "The book distinguishes Vemlidy for HBV from TAF-containing HIV combination products. It also requires HIV testing before HBV treatment and an appropriate plan for both viruses in coinfection. A product substitution without that plan is unsafe; a shared ingredient does not establish interchangeability.",
+        "reviewHref": "#polymerase-therapy",
+        "difficulty": "advanced",
+        "status": "verified",
+        "priorEvidence": "enteral-nutrition-broader-cirrhosis-nutrition-review.json",
+        "priorReview": "Whole keyed original topic/answer retained. Alternatives and explanation individually repaired against complete source. Two HCV stems clarified because correct safety statements had been described as errors. No new contemporary dosing/label exception inferred.",
+        "scope": "Exact whole-object continuity only; previous clinical review and remaining scope retained."
+      },
+      {
+        "module": "chronic-hepatitis-b",
+        "id": "chronic-hepatitis-b-045",
+        "question": "Which statement is most accurate? Focus: entecavir.",
+        "choices": [
+          "Entecavir is a potent high-barrier HBV nucleoside analog in nucleoside-naive infection, with fasting administration and renal dose adjustment.",
+          "Entecavir monotherapy in unrecognized HIV can select HIV resistance.",
+          "Select therapy from drug name alone without kidney, bone, liver, pregnancy, resistance, coinfection, or adherence context.",
+          "Use one isolated laboratory value without reviewing the full serology pattern, fibrosis, treatment history, or current guidance."
+        ],
+        "answer": 0,
+        "rationale": "Entecavir is a potent high-barrier HBV nucleoside analog in nucleoside-naive infection, with fasting administration and renal dose adjustment. Test for HIV first, assess prior lamivudine resistance, calculate kidney function, and preserve the correct 0.5 or 1 mg context.",
+        "reviewHref": "#polymerase-therapy",
+        "difficulty": "foundational",
+        "status": "pending",
+        "priorEvidence": "enteral-nutrition-broader-cirrhosis-nutrition-review.json",
+        "priorReview": "Entecavir fasting/naive dose/renal adjustment partial; whole potent/high-resistance-barrier assertion not established.",
+        "scope": "Exact whole-object continuity only; previous clinical review and remaining scope retained."
+      },
+      {
+        "module": "chronic-hepatitis-b",
+        "id": "chronic-hepatitis-b-046",
+        "question": "Which action best applies the evidence? Focus: entecavir.",
+        "choices": [
+          "Test for HIV first, assess prior lamivudine resistance, calculate kidney function, and preserve the correct 0.5 or 1 mg context.",
+          "Give the same entecavir dose regardless of prior lamivudine resistance.",
+          "Start HBV antiviral therapy without testing for HIV.",
+          "Keep the dose unchanged despite kidney impairment requiring adjustment."
+        ],
+        "answer": 0,
+        "rationale": "Before entecavir, test for HIV and review prior treatment and kidney function. The book gives 0.5 mg daily for nucleoside-treatment-naive patients and 1 mg daily for lamivudine-resistant patients, with renal adjustment when needed. These are distinct dose contexts, not interchangeable strengths.",
+        "reviewHref": "#polymerase-therapy",
+        "difficulty": "foundational",
+        "status": "verified",
+        "priorEvidence": "enteral-nutrition-broader-cirrhosis-nutrition-review.json",
+        "priorReview": "Whole keyed original topic/answer retained. Alternatives and explanation individually repaired against complete source. Two HCV stems clarified because correct safety statements had been described as errors. No new contemporary dosing/label exception inferred.",
+        "scope": "Exact whole-object continuity only; previous clinical review and remaining scope retained."
+      },
+      {
+        "module": "chronic-hepatitis-b",
+        "id": "chronic-hepatitis-b-047",
+        "question": "Which plan demonstrates the strongest clinical reasoning? Focus: entecavir.",
+        "choices": [
+          "Test for HIV first, assess prior lamivudine resistance, calculate kidney function, and preserve the correct 0.5 or 1 mg context.",
+          "Give the same entecavir dose regardless of prior lamivudine resistance.",
+          "Start HBV antiviral therapy without testing for HIV.",
+          "Keep the dose unchanged despite kidney impairment requiring adjustment."
+        ],
+        "answer": 0,
+        "rationale": "Before entecavir, test for HIV and review prior treatment and kidney function. The book gives 0.5 mg daily for nucleoside-treatment-naive patients and 1 mg daily for lamivudine-resistant patients, with renal adjustment when needed. These are distinct dose contexts, not interchangeable strengths.",
+        "reviewHref": "#polymerase-therapy",
+        "difficulty": "advanced",
+        "status": "verified",
+        "priorEvidence": "enteral-nutrition-broader-cirrhosis-nutrition-review.json",
+        "priorReview": "Whole keyed original topic/answer retained. Alternatives and explanation individually repaired against complete source. Two HCV stems clarified because correct safety statements had been described as errors. No new contemporary dosing/label exception inferred.",
+        "scope": "Exact whole-object continuity only; previous clinical review and remaining scope retained."
+      },
+      {
+        "module": "chronic-hepatitis-b",
+        "id": "chronic-hepatitis-b-048",
+        "question": "Which error creates the greatest avoidable risk? Focus: entecavir.",
+        "choices": [
+          "Entecavir monotherapy in unrecognized HIV can select HIV resistance.",
+          "Test for HIV before choosing the HBV antiviral regimen.",
+          "Account for kidney function when dosing entecavir.",
+          "Use the stated lamivudine-resistance context to distinguish 0.5 mg from 1 mg."
+        ],
+        "answer": 0,
+        "rationale": "HBV antivirals can select HIV resistance when HIV infection is unrecognized or untreated. HIV testing and an appropriate regimen for coinfection must precede therapy; the other choices address the book’s dosing and safety requirements.",
+        "reviewHref": "#polymerase-therapy",
+        "difficulty": "advanced",
+        "status": "verified",
+        "priorEvidence": "enteral-nutrition-broader-cirrhosis-nutrition-review.json",
+        "priorReview": "Whole keyed original topic/answer retained. Alternatives and explanation individually repaired against complete source. Two HCV stems clarified because correct safety statements had been described as errors. No new contemporary dosing/label exception inferred.",
+        "scope": "Exact whole-object continuity only; previous clinical review and remaining scope retained."
+      },
+      {
+        "module": "chronic-hepatitis-b",
+        "id": "chronic-hepatitis-b-049",
+        "question": "Which statement is most accurate? Focus: legacy resistance.",
+        "choices": [
+          "Lamivudine, adefovir, and telbivudine have historical or selected roles but lower resistance barriers or toxicity disadvantages compared with preferred agents.",
+          "Restarting lamivudine alone after documented resistance can recreate virologic failure.",
+          "Use one isolated laboratory value without reviewing the full serology pattern, fibrosis, treatment history, or current guidance.",
+          "Assume viral suppression removes every need for monitoring, vaccination, or cancer surveillance."
+        ],
+        "answer": 0,
+        "rationale": "Lamivudine, adefovir, and telbivudine have historical or selected roles but lower resistance barriers or toxicity disadvantages compared with preferred agents. Reconstruct prior exposure and resistance before choosing salvage therapy, and favor a high-barrier tenofovir strategy when guidance supports it.",
+        "reviewHref": "#polymerase-therapy",
+        "difficulty": "foundational",
+        "status": "pending",
+        "priorEvidence": "enteral-nutrition-broader-cirrhosis-nutrition-review.json",
+        "priorReview": "Complete legacytelbivudine/lowerresistancebarrier/priorresistance/salvagetenofovir selection and alternative scope not established.",
+        "scope": "Exact whole-object continuity only; previous clinical review and remaining scope retained."
+      },
+      {
+        "module": "chronic-hepatitis-b",
+        "id": "chronic-hepatitis-b-050",
+        "question": "Which action best applies the evidence? Focus: legacy resistance.",
+        "choices": [
+          "Reconstruct prior exposure and resistance before choosing salvage therapy, and favor a high-barrier tenofovir strategy when guidance supports it.",
+          "Restarting lamivudine alone after documented resistance can recreate virologic failure.",
+          "Assume viral suppression removes every need for monitoring, vaccination, or cancer surveillance.",
+          "Select therapy from drug name alone without kidney, bone, liver, pregnancy, resistance, coinfection, or adherence context."
+        ],
+        "answer": 0,
+        "rationale": "Lamivudine, adefovir, and telbivudine have historical or selected roles but lower resistance barriers or toxicity disadvantages compared with preferred agents. Reconstruct prior exposure and resistance before choosing salvage therapy, and favor a high-barrier tenofovir strategy when guidance supports it.",
+        "reviewHref": "#polymerase-therapy",
+        "difficulty": "foundational",
+        "status": "pending",
+        "priorEvidence": "enteral-nutrition-broader-cirrhosis-nutrition-review.json",
+        "priorReview": "Complete legacytelbivudine/lowerresistancebarrier/priorresistance/salvagetenofovir selection and alternative scope not established.",
+        "scope": "Exact whole-object continuity only; previous clinical review and remaining scope retained."
+      },
+      {
+        "module": "chronic-hepatitis-b",
+        "id": "chronic-hepatitis-b-051",
+        "question": "Which plan demonstrates the strongest clinical reasoning? Focus: legacy resistance.",
+        "choices": [
+          "Reconstruct prior exposure and resistance before choosing salvage therapy, and favor a high-barrier tenofovir strategy when guidance supports it.",
+          "Restarting lamivudine alone after documented resistance can recreate virologic failure.",
+          "Select therapy from drug name alone without kidney, bone, liver, pregnancy, resistance, coinfection, or adherence context.",
+          "Use one isolated laboratory value without reviewing the full serology pattern, fibrosis, treatment history, or current guidance."
+        ],
+        "answer": 0,
+        "rationale": "Lamivudine, adefovir, and telbivudine have historical or selected roles but lower resistance barriers or toxicity disadvantages compared with preferred agents. Reconstruct prior exposure and resistance before choosing salvage therapy, and favor a high-barrier tenofovir strategy when guidance supports it.",
+        "reviewHref": "#polymerase-therapy",
+        "difficulty": "advanced",
+        "status": "pending",
+        "priorEvidence": "enteral-nutrition-broader-cirrhosis-nutrition-review.json",
+        "priorReview": "Complete legacytelbivudine/lowerresistancebarrier/priorresistance/salvagetenofovir selection and alternative scope not established.",
+        "scope": "Exact whole-object continuity only; previous clinical review and remaining scope retained."
+      },
+      {
+        "module": "chronic-hepatitis-b",
+        "id": "chronic-hepatitis-b-052",
+        "question": "Which error creates the greatest avoidable risk? Focus: legacy resistance.",
+        "choices": [
+          "Restarting lamivudine alone after documented resistance can recreate virologic failure.",
+          "Lamivudine, adefovir, and telbivudine have historical or selected roles but lower resistance barriers or toxicity disadvantages compared with preferred agents.",
+          "Reconstruct prior exposure and resistance before choosing salvage therapy, and favor a high-barrier tenofovir strategy when guidance supports it.",
+          "Use one isolated laboratory value without reviewing the full serology pattern, fibrosis, treatment history, or current guidance."
+        ],
+        "answer": 0,
+        "rationale": "Lamivudine, adefovir, and telbivudine have historical or selected roles but lower resistance barriers or toxicity disadvantages compared with preferred agents. Reconstruct prior exposure and resistance before choosing salvage therapy, and favor a high-barrier tenofovir strategy when guidance supports it.",
+        "reviewHref": "#polymerase-therapy",
+        "difficulty": "advanced",
+        "status": "pending",
+        "priorEvidence": "enteral-nutrition-broader-cirrhosis-nutrition-review.json",
+        "priorReview": "Complete legacytelbivudine/lowerresistancebarrier/priorresistance/salvagetenofovir selection and alternative scope not established.",
+        "scope": "Exact whole-object continuity only; previous clinical review and remaining scope retained."
+      },
+      {
+        "module": "hepatitis-c",
+        "id": "hepatitis-c-033",
+        "question": "Which statement is most accurate? Focus: glecaprevir pibrentasvir.",
+        "choices": [
+          "Glecaprevir and pibrentasvir combines an NS3/4A protease inhibitor with an NS5A inhibitor and is taken as three adult tablets together once daily with food.",
+          "Glecaprevir and pibrentasvir are both NS5B polymerase inhibitors.",
+          "The adult tablet regimen is three tablets divided across separate fasting doses.",
+          "Food instructions can be copied unchanged from every other HCV protease-inhibitor combination."
+        ],
+        "answer": 0,
+        "rationale": "Glecaprevir targets NS3/4A protease and pibrentasvir targets the NS5A replication complex. The adult tablet regimen is three tablets together once daily with food. Meal instructions are product-specific: elbasvir/grazoprevir is an exception to the protease-inhibitor-with-food mnemonic.",
+        "reviewHref": "#initial-regimens",
+        "difficulty": "foundational",
+        "status": "verified",
+        "priorEvidence": "enteral-nutrition-broader-cirrhosis-nutrition-review.json",
+        "priorReview": "Whole keyed original topic/answer retained. Alternatives and explanation individually repaired against complete source. Two HCV stems clarified because correct safety statements had been described as errors. No new contemporary dosing/label exception inferred.",
+        "scope": "Exact whole-object continuity only; previous clinical review and remaining scope retained."
+      },
+      {
+        "module": "hepatitis-c",
+        "id": "hepatitis-c-034",
+        "question": "Which action best applies the evidence? Focus: glecaprevir pibrentasvir.",
+        "choices": [
+          "Verify duration, age and formulation, compensated liver status, interactions, prior treatment, and adherence.",
+          "Any prior hepatic decompensation excludes Mavyret even if the current Child-Pugh score appears improved.",
+          "Use one result without reviewing fibrosis, prior treatment, interactions, coinfection, or liver compensation.",
+          "Assume every DAA combination, genotype, and cirrhosis state is interchangeable."
+        ],
+        "answer": 0,
+        "rationale": "Glecaprevir and pibrentasvir combines an NS3/4A protease inhibitor with an NS5A inhibitor and is taken as three adult tablets together once daily with food. Verify duration, age and formulation, compensated liver status, interactions, prior treatment, and adherence.",
+        "reviewHref": "#initial-regimens",
+        "difficulty": "foundational",
+        "status": "pending",
+        "priorEvidence": "enteral-nutrition-broader-cirrhosis-nutrition-review.json",
+        "priorReview": "Mavyretmechanism/food/Child-PughB/C/prior decompensation supported; full age/formulation/duration/currentselection and assessment not established.",
+        "scope": "Exact whole-object continuity only; previous clinical review and remaining scope retained."
+      },
+      {
+        "module": "hepatitis-c",
+        "id": "hepatitis-c-035",
+        "question": "Which plan demonstrates the strongest clinical reasoning? Focus: glecaprevir pibrentasvir.",
+        "choices": [
+          "Verify duration, age and formulation, compensated liver status, interactions, prior treatment, and adherence.",
+          "Any prior hepatic decompensation excludes Mavyret even if the current Child-Pugh score appears improved.",
+          "Assume every DAA combination, genotype, and cirrhosis state is interchangeable.",
+          "Stop follow-up when the last tablet is taken without confirming SVR12 or planning cirrhosis surveillance."
+        ],
+        "answer": 0,
+        "rationale": "Glecaprevir and pibrentasvir combines an NS3/4A protease inhibitor with an NS5A inhibitor and is taken as three adult tablets together once daily with food. Verify duration, age and formulation, compensated liver status, interactions, prior treatment, and adherence.",
+        "reviewHref": "#initial-regimens",
+        "difficulty": "advanced",
+        "status": "pending",
+        "priorEvidence": "enteral-nutrition-broader-cirrhosis-nutrition-review.json",
+        "priorReview": "Mavyretmechanism/food/Child-PughB/C/prior decompensation supported; full age/formulation/duration/currentselection and assessment not established.",
+        "scope": "Exact whole-object continuity only; previous clinical review and remaining scope retained."
+      },
+      {
+        "module": "hepatitis-c",
+        "id": "hepatitis-c-036",
+        "question": "Which hepatic exclusion must be respected when considering glecaprevir/pibrentasvir?",
+        "choices": [
+          "Any prior hepatic decompensation excludes Mavyret even if the current Child-Pugh score appears improved.",
+          "Current improvement in Child-Pugh class erases any history of hepatic decompensation.",
+          "A prior decompensation episode can be ignored if the patient can take tablets with food.",
+          "The meal requirement replaces review of hepatic contraindications."
+        ],
+        "answer": 0,
+        "rationale": "The book contraindicates Mavyret in Child-Pugh B or C and in patients with a history of hepatic decompensation. An improved current score does not remove that historical exclusion. Taking tablets with food addresses administration, not eligibility.",
+        "reviewHref": "#initial-regimens",
+        "difficulty": "advanced",
+        "status": "verified",
+        "priorEvidence": "enteral-nutrition-broader-cirrhosis-nutrition-review.json",
+        "priorReview": "Whole keyed original topic/answer retained. Alternatives and explanation individually repaired against complete source. Two HCV stems clarified because correct safety statements had been described as errors. No new contemporary dosing/label exception inferred.",
+        "scope": "Exact whole-object continuity only; previous clinical review and remaining scope retained."
+      },
+      {
+        "module": "hepatitis-c",
+        "id": "hepatitis-c-037",
+        "question": "Which statement is most accurate? Focus: sofosbuvir velpatasvir.",
+        "choices": [
+          "Sofosbuvir and velpatasvir combines an NS5B nucleotide polymerase inhibitor with an NS5A inhibitor and is a pangenotypic once-daily regimen.",
+          "Sofosbuvir alone is not a complete HCV regimen.",
+          "Use one result without reviewing fibrosis, prior treatment, interactions, coinfection, or liver compensation.",
+          "Assume every DAA combination, genotype, and cirrhosis state is interchangeable."
+        ],
+        "answer": 0,
+        "rationale": "Sofosbuvir and velpatasvir combines an NS5B nucleotide polymerase inhibitor with an NS5A inhibitor and is a pangenotypic once-daily regimen. Review acid suppression, P-gp and enzyme inducers, amiodarone, renal context, genotype 3 cirrhosis details, and adherence.",
+        "reviewHref": "#initial-regimens",
+        "difficulty": "foundational",
+        "status": "pending",
+        "priorEvidence": "enteral-nutrition-broader-cirrhosis-nutrition-review.json",
+        "priorReview": "NS5B/NS5A/pangenotypic/once daily partial; specific nucleotide mechanism and full rationale genotype3/renal/P-gp/selection not established.",
+        "scope": "Exact whole-object continuity only; previous clinical review and remaining scope retained."
+      },
+      {
+        "module": "hepatitis-c",
+        "id": "hepatitis-c-038",
+        "question": "Which action best applies the evidence? Focus: sofosbuvir velpatasvir.",
+        "choices": [
+          "Review acid suppression, P-gp and enzyme inducers, amiodarone, renal context, genotype 3 cirrhosis details, and adherence.",
+          "Sofosbuvir alone is not a complete HCV regimen.",
+          "Assume every DAA combination, genotype, and cirrhosis state is interchangeable.",
+          "Stop follow-up when the last tablet is taken without confirming SVR12 or planning cirrhosis surveillance."
+        ],
+        "answer": 0,
+        "rationale": "Sofosbuvir and velpatasvir combines an NS5B nucleotide polymerase inhibitor with an NS5A inhibitor and is a pangenotypic once-daily regimen. Review acid suppression, P-gp and enzyme inducers, amiodarone, renal context, genotype 3 cirrhosis details, and adherence.",
+        "reviewHref": "#initial-regimens",
+        "difficulty": "foundational",
+        "status": "pending",
+        "priorEvidence": "enteral-nutrition-broader-cirrhosis-nutrition-review.json",
+        "priorReview": "Acid/inducers/amiodarone partial; completeP-gp/renal/genotype3cirrhosis assessment not established.",
+        "scope": "Exact whole-object continuity only; previous clinical review and remaining scope retained."
+      },
+      {
+        "module": "hepatitis-c",
+        "id": "hepatitis-c-039",
+        "question": "Which plan demonstrates the strongest clinical reasoning? Focus: sofosbuvir velpatasvir.",
+        "choices": [
+          "Review acid suppression, P-gp and enzyme inducers, amiodarone, renal context, genotype 3 cirrhosis details, and adherence.",
+          "Sofosbuvir alone is not a complete HCV regimen.",
+          "Stop follow-up when the last tablet is taken without confirming SVR12 or planning cirrhosis surveillance.",
+          "Use one result without reviewing fibrosis, prior treatment, interactions, coinfection, or liver compensation."
+        ],
+        "answer": 0,
+        "rationale": "Sofosbuvir and velpatasvir combines an NS5B nucleotide polymerase inhibitor with an NS5A inhibitor and is a pangenotypic once-daily regimen. Review acid suppression, P-gp and enzyme inducers, amiodarone, renal context, genotype 3 cirrhosis details, and adherence.",
+        "reviewHref": "#initial-regimens",
+        "difficulty": "advanced",
+        "status": "pending",
+        "priorEvidence": "enteral-nutrition-broader-cirrhosis-nutrition-review.json",
+        "priorReview": "Acid/inducers/amiodarone partial; completeP-gp/renal/genotype3cirrhosis assessment not established.",
+        "scope": "Exact whole-object continuity only; previous clinical review and remaining scope retained."
+      },
+      {
+        "module": "hepatitis-c",
+        "id": "hepatitis-c-040",
+        "question": "Which limitation must be recognized when choosing a sofosbuvir regimen?",
+        "choices": [
+          "Sofosbuvir alone is not a complete HCV regimen.",
+          "Sofosbuvir monotherapy is a complete substitute for a combination regimen.",
+          "Two drugs with the same NS5B polymerase target are the preferred way to build every HCV regimen.",
+          "Meal instructions alone determine whether an HCV antiviral combination is appropriate."
+        ],
+        "answer": 0,
+        "rationale": "Sofosbuvir monotherapy is not effective or recommended. HCV regimens combine agents acting at different targets; the book contrasts a preferred sofosbuvir/velpatasvir combination with the inappropriate pairing of two NS5B-targeting agents.",
+        "reviewHref": "#initial-regimens",
+        "difficulty": "advanced",
+        "status": "verified",
+        "priorEvidence": "enteral-nutrition-broader-cirrhosis-nutrition-review.json",
+        "priorReview": "Whole keyed original topic/answer retained. Alternatives and explanation individually repaired against complete source. Two HCV stems clarified because correct safety statements had been described as errors. No new contemporary dosing/label exception inferred.",
+        "scope": "Exact whole-object continuity only; previous clinical review and remaining scope retained."
+      },
+      {
+        "module": "hepatitis-c",
+        "id": "hepatitis-c-053",
+        "question": "Which statement is most accurate? Focus: acid suppression.",
+        "choices": [
+          "Reduced gastric acidity lowers absorption of ledipasvir and velpatasvir, with product-specific antacid, H2 blocker, and PPI rules.",
+          "Acid-reducing medicines always increase ledipasvir and velpatasvir exposure.",
+          "Every antacid, H2 blocker and PPI uses the same timing rule with every DAA.",
+          "The presence of food removes the need to review acid suppression."
+        ],
+        "answer": 0,
+        "rationale": "Antacids, H2 blockers and PPIs can lower ledipasvir or velpatasvir concentrations. The book gives different instructions for these acid-reducing classes and specifically says PPIs are not recommended with Epclusa. Review the exact product and timing rather than applying one universal spacing rule; this does not establish a current label-specific exception.",
+        "reviewHref": "#interaction-engineering",
+        "difficulty": "foundational",
+        "status": "verified",
+        "priorEvidence": "enteral-nutrition-broader-cirrhosis-nutrition-review.json",
+        "priorReview": "Whole keyed original topic/answer retained. Alternatives and explanation individually repaired against complete source. Two HCV stems clarified because correct safety statements had been described as errors. No new contemporary dosing/label exception inferred.",
+        "scope": "Exact whole-object continuity only; previous clinical review and remaining scope retained."
+      },
+      {
+        "module": "hepatitis-c",
+        "id": "hepatitis-c-054",
+        "question": "Which action best applies the evidence? Focus: acid suppression.",
+        "choices": [
+          "Use the exact label and timing rather than one class-wide separation rule.",
+          "Apply one identical separation rule to all antacids, H2 blockers and PPIs.",
+          "Add an over-the-counter PPI to Epclusa without reviewing the combination.",
+          "Treat the food instruction as a substitute for acid-suppression review."
+        ],
+        "answer": 0,
+        "rationale": "Antacids, H2 blockers and PPIs can lower ledipasvir or velpatasvir concentrations. The book gives different instructions for these acid-reducing classes and specifically says PPIs are not recommended with Epclusa. Review the exact product and timing rather than applying one universal spacing rule; this does not establish a current label-specific exception.",
+        "reviewHref": "#interaction-engineering",
+        "difficulty": "foundational",
+        "status": "verified",
+        "priorEvidence": "enteral-nutrition-broader-cirrhosis-nutrition-review.json",
+        "priorReview": "Whole keyed original topic/answer retained. Alternatives and explanation individually repaired against complete source. Two HCV stems clarified because correct safety statements had been described as errors. No new contemporary dosing/label exception inferred.",
+        "scope": "Exact whole-object continuity only; previous clinical review and remaining scope retained."
+      },
+      {
+        "module": "hepatitis-c",
+        "id": "hepatitis-c-055",
+        "question": "Which plan demonstrates the strongest clinical reasoning? Focus: acid suppression.",
+        "choices": [
+          "Use the exact label and timing rather than one class-wide separation rule.",
+          "Apply one identical separation rule to all antacids, H2 blockers and PPIs.",
+          "Add an over-the-counter PPI to Epclusa without reviewing the combination.",
+          "Treat the food instruction as a substitute for acid-suppression review."
+        ],
+        "answer": 0,
+        "rationale": "Antacids, H2 blockers and PPIs can lower ledipasvir or velpatasvir concentrations. The book gives different instructions for these acid-reducing classes and specifically says PPIs are not recommended with Epclusa. Review the exact product and timing rather than applying one universal spacing rule; this does not establish a current label-specific exception.",
+        "reviewHref": "#interaction-engineering",
+        "difficulty": "advanced",
+        "status": "verified",
+        "priorEvidence": "enteral-nutrition-broader-cirrhosis-nutrition-review.json",
+        "priorReview": "Whole keyed original topic/answer retained. Alternatives and explanation individually repaired against complete source. Two HCV stems clarified because correct safety statements had been described as errors. No new contemporary dosing/label exception inferred.",
+        "scope": "Exact whole-object continuity only; previous clinical review and remaining scope retained."
+      },
+      {
+        "module": "hepatitis-c",
+        "id": "hepatitis-c-056",
+        "question": "Which error creates the greatest avoidable risk? Focus: acid suppression.",
+        "choices": [
+          "Adding an over-the-counter PPI without review can reduce DAA exposure.",
+          "Review the exact DAA and acid-reducing product before changing administration.",
+          "Keep antacid, H2 blocker and PPI instructions distinct.",
+          "Reconcile nonprescription acid-reducing medicines before treatment."
+        ],
+        "answer": 0,
+        "rationale": "Antacids, H2 blockers and PPIs can lower ledipasvir or velpatasvir concentrations. The book gives different instructions for these acid-reducing classes and specifically says PPIs are not recommended with Epclusa. Review the exact product and timing rather than applying one universal spacing rule; this does not establish a current label-specific exception.",
+        "reviewHref": "#interaction-engineering",
+        "difficulty": "advanced",
+        "status": "verified",
+        "priorEvidence": "enteral-nutrition-broader-cirrhosis-nutrition-review.json",
+        "priorReview": "Whole keyed original topic/answer retained. Alternatives and explanation individually repaired against complete source. Two HCV stems clarified because correct safety statements had been described as errors. No new contemporary dosing/label exception inferred.",
+        "scope": "Exact whole-object continuity only; previous clinical review and remaining scope retained."
+      },
+      {
+        "module": "hepatitis-c",
+        "id": "hepatitis-c-057",
+        "question": "Which statement is most accurate? Focus: inducers.",
+        "choices": [
+          "Strong P-gp or enzyme inducers such as rifampin, carbamazepine, phenytoin, phenobarbital, and St. John's wort can markedly reduce many DAA concentrations.",
+          "Simply separating an inducer by a few hours does not eliminate enzyme induction.",
+          "Stop follow-up when the last tablet is taken without confirming SVR12 or planning cirrhosis surveillance.",
+          "Use one result without reviewing fibrosis, prior treatment, interactions, coinfection, or liver compensation."
+        ],
+        "answer": 0,
+        "rationale": "Strong P-gp or enzyme inducers such as rifampin, carbamazepine, phenytoin, phenobarbital, and St. John's wort can markedly reduce many DAA concentrations. Replace or redesign the interacting therapy before HCV treatment when possible and verify the exact product interaction.",
+        "reviewHref": "#interaction-engineering",
+        "difficulty": "foundational",
+        "status": "pending",
+        "priorEvidence": "enteral-nutrition-broader-cirrhosis-nutrition-review.json",
+        "priorReview": "CYP3A4inducer avoidance partial. Full P-gp/persistent-induction mechanism and all original alternatives/rationale not established; keep original harder induction questions.",
+        "scope": "Exact whole-object continuity only; previous clinical review and remaining scope retained."
+      },
+      {
+        "module": "hepatitis-c",
+        "id": "hepatitis-c-058",
+        "question": "Which action best applies the evidence? Focus: inducers.",
+        "choices": [
+          "Replace or redesign the interacting therapy before HCV treatment when possible and verify the exact product interaction.",
+          "Simply separating an inducer by a few hours does not eliminate enzyme induction.",
+          "Use one result without reviewing fibrosis, prior treatment, interactions, coinfection, or liver compensation.",
+          "Assume every DAA combination, genotype, and cirrhosis state is interchangeable."
+        ],
+        "answer": 0,
+        "rationale": "Strong P-gp or enzyme inducers such as rifampin, carbamazepine, phenytoin, phenobarbital, and St. John's wort can markedly reduce many DAA concentrations. Replace or redesign the interacting therapy before HCV treatment when possible and verify the exact product interaction.",
+        "reviewHref": "#interaction-engineering",
+        "difficulty": "foundational",
+        "status": "pending",
+        "priorEvidence": "enteral-nutrition-broader-cirrhosis-nutrition-review.json",
+        "priorReview": "CYP3A4inducer avoidance partial. Full P-gp/persistent-induction mechanism and all original alternatives/rationale not established; keep original harder induction questions.",
+        "scope": "Exact whole-object continuity only; previous clinical review and remaining scope retained."
+      },
+      {
+        "module": "hepatitis-c",
+        "id": "hepatitis-c-059",
+        "question": "Which plan demonstrates the strongest clinical reasoning? Focus: inducers.",
+        "choices": [
+          "Replace or redesign the interacting therapy before HCV treatment when possible and verify the exact product interaction.",
+          "Simply separating an inducer by a few hours does not eliminate enzyme induction.",
+          "Assume every DAA combination, genotype, and cirrhosis state is interchangeable.",
+          "Stop follow-up when the last tablet is taken without confirming SVR12 or planning cirrhosis surveillance."
+        ],
+        "answer": 0,
+        "rationale": "Strong P-gp or enzyme inducers such as rifampin, carbamazepine, phenytoin, phenobarbital, and St. John's wort can markedly reduce many DAA concentrations. Replace or redesign the interacting therapy before HCV treatment when possible and verify the exact product interaction.",
+        "reviewHref": "#interaction-engineering",
+        "difficulty": "advanced",
+        "status": "pending",
+        "priorEvidence": "enteral-nutrition-broader-cirrhosis-nutrition-review.json",
+        "priorReview": "CYP3A4inducer avoidance partial. Full P-gp/persistent-induction mechanism and all original alternatives/rationale not established; keep original harder induction questions.",
+        "scope": "Exact whole-object continuity only; previous clinical review and remaining scope retained."
+      },
+      {
+        "module": "hepatitis-c",
+        "id": "hepatitis-c-060",
+        "question": "Which error creates the greatest avoidable risk? Focus: inducers.",
+        "choices": [
+          "Simply separating an inducer by a few hours does not eliminate enzyme induction.",
+          "Strong P-gp or enzyme inducers such as rifampin, carbamazepine, phenytoin, phenobarbital, and St. John's wort can markedly reduce many DAA concentrations.",
+          "Replace or redesign the interacting therapy before HCV treatment when possible and verify the exact product interaction.",
+          "Stop follow-up when the last tablet is taken without confirming SVR12 or planning cirrhosis surveillance."
+        ],
+        "answer": 0,
+        "rationale": "Strong P-gp or enzyme inducers such as rifampin, carbamazepine, phenytoin, phenobarbital, and St. John's wort can markedly reduce many DAA concentrations. Replace or redesign the interacting therapy before HCV treatment when possible and verify the exact product interaction.",
+        "reviewHref": "#interaction-engineering",
+        "difficulty": "advanced",
+        "status": "pending",
+        "priorEvidence": "enteral-nutrition-broader-cirrhosis-nutrition-review.json",
+        "priorReview": "CYP3A4inducer avoidance partial. Full P-gp/persistent-induction mechanism and all original alternatives/rationale not established; keep original harder induction questions.",
+        "scope": "Exact whole-object continuity only; previous clinical review and remaining scope retained."
+      },
+      {
+        "module": "hepatitis-c",
+        "id": "hepatitis-c-061",
+        "question": "Which statement is most accurate? Focus: statins transporters.",
+        "choices": [
+          "DAAs can alter transporter and enzyme handling of statins, immunosuppressants, antiretrovirals, anticoagulants, and other narrow-therapeutic-index drugs.",
+          "Assuming a medication is safe because it is common can cause myopathy or graft-drug toxicity.",
+          "Use one result without reviewing fibrosis, prior treatment, interactions, coinfection, or liver compensation.",
+          "Assume every DAA combination, genotype, and cirrhosis state is interchangeable."
+        ],
+        "answer": 0,
+        "rationale": "DAAs can alter transporter and enzyme handling of statins, immunosuppressants, antiretrovirals, anticoagulants, and other narrow-therapeutic-index drugs. Use a validated interaction checker and specify hold, substitution, dose limit, or monitoring.",
+        "reviewHref": "#interaction-engineering",
+        "difficulty": "foundational",
+        "status": "pending",
+        "priorEvidence": "enteral-nutrition-broader-cirrhosis-nutrition-review.json",
+        "priorReview": "Statins and selected immunosuppressant/ARV interactions partial; full anticoagulant/transporter/graft-drug assessment/validated checker strategy not established.",
+        "scope": "Exact whole-object continuity only; previous clinical review and remaining scope retained."
+      },
+      {
+        "module": "hepatitis-c",
+        "id": "hepatitis-c-062",
+        "question": "Which action best applies the evidence? Focus: statins transporters.",
+        "choices": [
+          "Use a validated interaction checker and specify hold, substitution, dose limit, or monitoring.",
+          "Assuming a medication is safe because it is common can cause myopathy or graft-drug toxicity.",
+          "Assume every DAA combination, genotype, and cirrhosis state is interchangeable.",
+          "Stop follow-up when the last tablet is taken without confirming SVR12 or planning cirrhosis surveillance."
+        ],
+        "answer": 0,
+        "rationale": "DAAs can alter transporter and enzyme handling of statins, immunosuppressants, antiretrovirals, anticoagulants, and other narrow-therapeutic-index drugs. Use a validated interaction checker and specify hold, substitution, dose limit, or monitoring.",
+        "reviewHref": "#interaction-engineering",
+        "difficulty": "foundational",
+        "status": "pending",
+        "priorEvidence": "enteral-nutrition-broader-cirrhosis-nutrition-review.json",
+        "priorReview": "Statins and selected immunosuppressant/ARV interactions partial; full anticoagulant/transporter/graft-drug assessment/validated checker strategy not established.",
+        "scope": "Exact whole-object continuity only; previous clinical review and remaining scope retained."
+      },
+      {
+        "module": "hepatitis-c",
+        "id": "hepatitis-c-063",
+        "question": "Which plan demonstrates the strongest clinical reasoning? Focus: statins transporters.",
+        "choices": [
+          "Use a validated interaction checker and specify hold, substitution, dose limit, or monitoring.",
+          "Assuming a medication is safe because it is common can cause myopathy or graft-drug toxicity.",
+          "Stop follow-up when the last tablet is taken without confirming SVR12 or planning cirrhosis surveillance.",
+          "Use one result without reviewing fibrosis, prior treatment, interactions, coinfection, or liver compensation."
+        ],
+        "answer": 0,
+        "rationale": "DAAs can alter transporter and enzyme handling of statins, immunosuppressants, antiretrovirals, anticoagulants, and other narrow-therapeutic-index drugs. Use a validated interaction checker and specify hold, substitution, dose limit, or monitoring.",
+        "reviewHref": "#interaction-engineering",
+        "difficulty": "advanced",
+        "status": "pending",
+        "priorEvidence": "enteral-nutrition-broader-cirrhosis-nutrition-review.json",
+        "priorReview": "Statins and selected immunosuppressant/ARV interactions partial; full anticoagulant/transporter/graft-drug assessment/validated checker strategy not established.",
+        "scope": "Exact whole-object continuity only; previous clinical review and remaining scope retained."
+      },
+      {
+        "module": "hepatitis-c",
+        "id": "hepatitis-c-064",
+        "question": "Which error creates the greatest avoidable risk? Focus: statins transporters.",
+        "choices": [
+          "Assuming a medication is safe because it is common can cause myopathy or graft-drug toxicity.",
+          "DAAs can alter transporter and enzyme handling of statins, immunosuppressants, antiretrovirals, anticoagulants, and other narrow-therapeutic-index drugs.",
+          "Use a validated interaction checker and specify hold, substitution, dose limit, or monitoring.",
+          "Use one result without reviewing fibrosis, prior treatment, interactions, coinfection, or liver compensation."
+        ],
+        "answer": 0,
+        "rationale": "DAAs can alter transporter and enzyme handling of statins, immunosuppressants, antiretrovirals, anticoagulants, and other narrow-therapeutic-index drugs. Use a validated interaction checker and specify hold, substitution, dose limit, or monitoring.",
+        "reviewHref": "#interaction-engineering",
+        "difficulty": "advanced",
+        "status": "pending",
+        "priorEvidence": "enteral-nutrition-broader-cirrhosis-nutrition-review.json",
+        "priorReview": "Statins and selected immunosuppressant/ARV interactions partial; full anticoagulant/transporter/graft-drug assessment/validated checker strategy not established.",
+        "scope": "Exact whole-object continuity only; previous clinical review and remaining scope retained."
+      },
+      {
+        "module": "hepatitis-c",
+        "id": "hepatitis-c-065",
+        "question": "Which statement is most accurate? Focus: amiodarone.",
+        "choices": [
+          "Sofosbuvir-containing regimens can cause serious symptomatic bradycardia with amiodarone, especially with other rate-lowering factors.",
+          "An outpatient start without a cardiac plan can be life threatening.",
+          "Assume every DAA combination, genotype, and cirrhosis state is interchangeable.",
+          "Stop follow-up when the last tablet is taken without confirming SVR12 or planning cirrhosis surveillance."
+        ],
+        "answer": 0,
+        "rationale": "Sofosbuvir-containing regimens can cause serious symptomatic bradycardia with amiodarone, especially with other rate-lowering factors. Avoid the combination when possible or use label-directed specialist monitoring when no alternative exists.",
+        "reviewHref": "#interaction-engineering",
+        "difficulty": "foundational",
+        "status": "pending",
+        "priorEvidence": "enteral-nutrition-broader-cirrhosis-nutrition-review.json",
+        "priorReview": "Sofosbuvir/amiodarone serious bradycardia supported, but rate-lowering modifiers/current exception specialist monitoring and original full outpatient hazard not established.",
+        "scope": "Exact whole-object continuity only; previous clinical review and remaining scope retained."
+      },
+      {
+        "module": "hepatitis-c",
+        "id": "hepatitis-c-066",
+        "question": "Which action best applies the evidence? Focus: amiodarone.",
+        "choices": [
+          "Avoid the combination when possible or use label-directed specialist monitoring when no alternative exists.",
+          "An outpatient start without a cardiac plan can be life threatening.",
+          "Stop follow-up when the last tablet is taken without confirming SVR12 or planning cirrhosis surveillance.",
+          "Use one result without reviewing fibrosis, prior treatment, interactions, coinfection, or liver compensation."
+        ],
+        "answer": 0,
+        "rationale": "Sofosbuvir-containing regimens can cause serious symptomatic bradycardia with amiodarone, especially with other rate-lowering factors. Avoid the combination when possible or use label-directed specialist monitoring when no alternative exists.",
+        "reviewHref": "#interaction-engineering",
+        "difficulty": "foundational",
+        "status": "pending",
+        "priorEvidence": "enteral-nutrition-broader-cirrhosis-nutrition-review.json",
+        "priorReview": "Sofosbuvir/amiodarone serious bradycardia supported, but rate-lowering modifiers/current exception specialist monitoring and original full outpatient hazard not established.",
+        "scope": "Exact whole-object continuity only; previous clinical review and remaining scope retained."
+      },
+      {
+        "module": "hepatitis-c",
+        "id": "hepatitis-c-067",
+        "question": "Which plan demonstrates the strongest clinical reasoning? Focus: amiodarone.",
+        "choices": [
+          "Avoid the combination when possible or use label-directed specialist monitoring when no alternative exists.",
+          "An outpatient start without a cardiac plan can be life threatening.",
+          "Use one result without reviewing fibrosis, prior treatment, interactions, coinfection, or liver compensation.",
+          "Assume every DAA combination, genotype, and cirrhosis state is interchangeable."
+        ],
+        "answer": 0,
+        "rationale": "Sofosbuvir-containing regimens can cause serious symptomatic bradycardia with amiodarone, especially with other rate-lowering factors. Avoid the combination when possible or use label-directed specialist monitoring when no alternative exists.",
+        "reviewHref": "#interaction-engineering",
+        "difficulty": "advanced",
+        "status": "pending",
+        "priorEvidence": "enteral-nutrition-broader-cirrhosis-nutrition-review.json",
+        "priorReview": "Sofosbuvir/amiodarone serious bradycardia supported, but rate-lowering modifiers/current exception specialist monitoring and original full outpatient hazard not established.",
+        "scope": "Exact whole-object continuity only; previous clinical review and remaining scope retained."
+      },
+      {
+        "module": "hepatitis-c",
+        "id": "hepatitis-c-068",
+        "question": "Which error creates the greatest avoidable risk? Focus: amiodarone.",
+        "choices": [
+          "An outpatient start without a cardiac plan can be life threatening.",
+          "Sofosbuvir-containing regimens can cause serious symptomatic bradycardia with amiodarone, especially with other rate-lowering factors.",
+          "Avoid the combination when possible or use label-directed specialist monitoring when no alternative exists.",
+          "Assume every DAA combination, genotype, and cirrhosis state is interchangeable."
+        ],
+        "answer": 0,
+        "rationale": "Sofosbuvir-containing regimens can cause serious symptomatic bradycardia with amiodarone, especially with other rate-lowering factors. Avoid the combination when possible or use label-directed specialist monitoring when no alternative exists.",
+        "reviewHref": "#interaction-engineering",
+        "difficulty": "advanced",
+        "status": "pending",
+        "priorEvidence": "enteral-nutrition-broader-cirrhosis-nutrition-review.json",
+        "priorReview": "Sofosbuvir/amiodarone serious bradycardia supported, but rate-lowering modifiers/current exception specialist monitoring and original full outpatient hazard not established.",
+        "scope": "Exact whole-object continuity only; previous clinical review and remaining scope retained."
+      },
+      {
+        "module": "hepatitis-c",
+        "id": "hepatitis-c-069",
+        "question": "Which statement is most accurate? Focus: diabetes warfarin.",
+        "choices": [
+          "Rapid virologic response can change glucose control and warfarin response, producing hypoglycemia or INR changes.",
+          "Stable pre-DAA doses do not guarantee stable exposure after hepatic recovery.",
+          "Stop follow-up when the last tablet is taken without confirming SVR12 or planning cirrhosis surveillance.",
+          "Use one result without reviewing fibrosis, prior treatment, interactions, coinfection, or liver compensation."
+        ],
+        "answer": 0,
+        "rationale": "Rapid virologic response can change glucose control and warfarin response, producing hypoglycemia or INR changes. Warn patients and arrange active glucose or INR monitoring during and after therapy.",
+        "reviewHref": "#monitoring-delivery",
+        "difficulty": "foundational",
+        "status": "pending",
+        "priorEvidence": "enteral-nutrition-broader-cirrhosis-nutrition-review.json",
+        "priorReview": "Insulin/hypoglycemia supported; complete warfarin response/INR and during-after recovery scope not established. No substitution of easier insulin-only question.",
+        "scope": "Exact whole-object continuity only; previous clinical review and remaining scope retained."
+      },
+      {
+        "module": "hepatitis-c",
+        "id": "hepatitis-c-070",
+        "question": "Which action best applies the evidence? Focus: diabetes warfarin.",
+        "choices": [
+          "Warn patients and arrange active glucose or INR monitoring during and after therapy.",
+          "Stable pre-DAA doses do not guarantee stable exposure after hepatic recovery.",
+          "Use one result without reviewing fibrosis, prior treatment, interactions, coinfection, or liver compensation.",
+          "Assume every DAA combination, genotype, and cirrhosis state is interchangeable."
+        ],
+        "answer": 0,
+        "rationale": "Rapid virologic response can change glucose control and warfarin response, producing hypoglycemia or INR changes. Warn patients and arrange active glucose or INR monitoring during and after therapy.",
+        "reviewHref": "#monitoring-delivery",
+        "difficulty": "foundational",
+        "status": "pending",
+        "priorEvidence": "enteral-nutrition-broader-cirrhosis-nutrition-review.json",
+        "priorReview": "Insulin/hypoglycemia supported; complete warfarin response/INR and during-after recovery scope not established. No substitution of easier insulin-only question.",
+        "scope": "Exact whole-object continuity only; previous clinical review and remaining scope retained."
+      },
+      {
+        "module": "hepatitis-c",
+        "id": "hepatitis-c-071",
+        "question": "Which plan demonstrates the strongest clinical reasoning? Focus: diabetes warfarin.",
+        "choices": [
+          "Warn patients and arrange active glucose or INR monitoring during and after therapy.",
+          "Stable pre-DAA doses do not guarantee stable exposure after hepatic recovery.",
+          "Assume every DAA combination, genotype, and cirrhosis state is interchangeable.",
+          "Stop follow-up when the last tablet is taken without confirming SVR12 or planning cirrhosis surveillance."
+        ],
+        "answer": 0,
+        "rationale": "Rapid virologic response can change glucose control and warfarin response, producing hypoglycemia or INR changes. Warn patients and arrange active glucose or INR monitoring during and after therapy.",
+        "reviewHref": "#monitoring-delivery",
+        "difficulty": "advanced",
+        "status": "pending",
+        "priorEvidence": "enteral-nutrition-broader-cirrhosis-nutrition-review.json",
+        "priorReview": "Insulin/hypoglycemia supported; complete warfarin response/INR and during-after recovery scope not established. No substitution of easier insulin-only question.",
+        "scope": "Exact whole-object continuity only; previous clinical review and remaining scope retained."
+      },
+      {
+        "module": "hepatitis-c",
+        "id": "hepatitis-c-072",
+        "question": "Which error creates the greatest avoidable risk? Focus: diabetes warfarin.",
+        "choices": [
+          "Stable pre-DAA doses do not guarantee stable exposure after hepatic recovery.",
+          "Rapid virologic response can change glucose control and warfarin response, producing hypoglycemia or INR changes.",
+          "Warn patients and arrange active glucose or INR monitoring during and after therapy.",
+          "Stop follow-up when the last tablet is taken without confirming SVR12 or planning cirrhosis surveillance."
+        ],
+        "answer": 0,
+        "rationale": "Rapid virologic response can change glucose control and warfarin response, producing hypoglycemia or INR changes. Warn patients and arrange active glucose or INR monitoring during and after therapy.",
+        "reviewHref": "#monitoring-delivery",
+        "difficulty": "advanced",
+        "status": "pending",
+        "priorEvidence": "enteral-nutrition-broader-cirrhosis-nutrition-review.json",
+        "priorReview": "Insulin/hypoglycemia supported; complete warfarin response/INR and during-after recovery scope not established. No substitution of easier insulin-only question.",
+        "scope": "Exact whole-object continuity only; previous clinical review and remaining scope retained."
+      },
+      {
+        "module": "hepatitis-c",
+        "id": "hepatitis-c-073",
+        "question": "Which statement is most accurate? Focus: adherence delivery.",
+        "choices": [
+          "Short-course cure still requires uninterrupted access, correct food and acid rules, and management of new medications.",
+          "A short course is not forgiving of unrecognized access gaps.",
+          "Use one result without reviewing fibrosis, prior treatment, interactions, coinfection, or liver compensation.",
+          "Assume every DAA combination, genotype, and cirrhosis state is interchangeable."
+        ],
+        "answer": 0,
+        "rationale": "Short-course cure still requires uninterrupted access, correct food and acid rules, and management of new medications. Confirm the complete supply, daily routine, missed-dose plan, interaction contact, and follow-up RNA date.",
+        "reviewHref": "#monitoring-delivery",
+        "difficulty": "foundational",
+        "status": "pending",
+        "priorEvidence": "enteral-nutrition-broader-cirrhosis-nutrition-review.json",
+        "priorReview": "Food/acid/product interactions and treatment-course concepts partial; full supply/missed-dose/adherence-gap cure/follow-up RNA scope not established.",
+        "scope": "Exact whole-object continuity only; previous clinical review and remaining scope retained."
+      },
+      {
+        "module": "hepatitis-c",
+        "id": "hepatitis-c-074",
+        "question": "Which action best applies the evidence? Focus: adherence delivery.",
+        "choices": [
+          "Confirm the complete supply, daily routine, missed-dose plan, interaction contact, and follow-up RNA date.",
+          "A short course is not forgiving of unrecognized access gaps.",
+          "Assume every DAA combination, genotype, and cirrhosis state is interchangeable.",
+          "Stop follow-up when the last tablet is taken without confirming SVR12 or planning cirrhosis surveillance."
+        ],
+        "answer": 0,
+        "rationale": "Short-course cure still requires uninterrupted access, correct food and acid rules, and management of new medications. Confirm the complete supply, daily routine, missed-dose plan, interaction contact, and follow-up RNA date.",
+        "reviewHref": "#monitoring-delivery",
+        "difficulty": "foundational",
+        "status": "pending",
+        "priorEvidence": "enteral-nutrition-broader-cirrhosis-nutrition-review.json",
+        "priorReview": "Food/acid/product interactions and treatment-course concepts partial; full supply/missed-dose/adherence-gap cure/follow-up RNA scope not established.",
+        "scope": "Exact whole-object continuity only; previous clinical review and remaining scope retained."
+      },
+      {
+        "module": "hepatitis-c",
+        "id": "hepatitis-c-075",
+        "question": "Which plan demonstrates the strongest clinical reasoning? Focus: adherence delivery.",
+        "choices": [
+          "Confirm the complete supply, daily routine, missed-dose plan, interaction contact, and follow-up RNA date.",
+          "A short course is not forgiving of unrecognized access gaps.",
+          "Stop follow-up when the last tablet is taken without confirming SVR12 or planning cirrhosis surveillance.",
+          "Use one result without reviewing fibrosis, prior treatment, interactions, coinfection, or liver compensation."
+        ],
+        "answer": 0,
+        "rationale": "Short-course cure still requires uninterrupted access, correct food and acid rules, and management of new medications. Confirm the complete supply, daily routine, missed-dose plan, interaction contact, and follow-up RNA date.",
+        "reviewHref": "#monitoring-delivery",
+        "difficulty": "advanced",
+        "status": "pending",
+        "priorEvidence": "enteral-nutrition-broader-cirrhosis-nutrition-review.json",
+        "priorReview": "Food/acid/product interactions and treatment-course concepts partial; full supply/missed-dose/adherence-gap cure/follow-up RNA scope not established.",
+        "scope": "Exact whole-object continuity only; previous clinical review and remaining scope retained."
+      },
+      {
+        "module": "hepatitis-c",
+        "id": "hepatitis-c-076",
+        "question": "Which error creates the greatest avoidable risk? Focus: adherence delivery.",
+        "choices": [
+          "A short course is not forgiving of unrecognized access gaps.",
+          "Short-course cure still requires uninterrupted access, correct food and acid rules, and management of new medications.",
+          "Confirm the complete supply, daily routine, missed-dose plan, interaction contact, and follow-up RNA date.",
+          "Use one result without reviewing fibrosis, prior treatment, interactions, coinfection, or liver compensation."
+        ],
+        "answer": 0,
+        "rationale": "Short-course cure still requires uninterrupted access, correct food and acid rules, and management of new medications. Confirm the complete supply, daily routine, missed-dose plan, interaction contact, and follow-up RNA date.",
+        "reviewHref": "#monitoring-delivery",
+        "difficulty": "advanced",
+        "status": "pending",
+        "priorEvidence": "enteral-nutrition-broader-cirrhosis-nutrition-review.json",
+        "priorReview": "Food/acid/product interactions and treatment-course concepts partial; full supply/missed-dose/adherence-gap cure/follow-up RNA scope not established.",
+        "scope": "Exact whole-object continuity only; previous clinical review and remaining scope retained."
+      },
+      {
+        "module": "hepatitis-c",
+        "id": "hepatitis-c-077",
+        "question": "Which statement is most accurate? Focus: on treatment safety.",
+        "choices": [
+          "Most uncomplicated ribavirin-free patients need focused clinical follow-up rather than excessive routine laboratory testing, while cirrhosis and selected drugs require more monitoring.",
+          "A marked ALT rise or signs of decompensation should not wait until end of therapy.",
+          "Assume every DAA combination, genotype, and cirrhosis state is interchangeable.",
+          "Stop follow-up when the last tablet is taken without confirming SVR12 or planning cirrhosis surveillance."
+        ],
+        "answer": 0,
+        "rationale": "Most uncomplicated ribavirin-free patients need focused clinical follow-up rather than excessive routine laboratory testing, while cirrhosis and selected drugs require more monitoring. Monitor adherence, new interactions, symptoms, glucose, INR, and liver injury according to patient and regimen.",
+        "reviewHref": "#monitoring-delivery",
+        "difficulty": "foundational",
+        "status": "pending",
+        "priorEvidence": "enteral-nutrition-broader-cirrhosis-nutrition-review.json",
+        "priorReview": "Source requiresLFT/HCVRNA monitoring and warns hepatic injury. Full current ribavirin-free minimal-laboratory algorithm/INR/tenfoldALT/urgent contemporarystop thresholds and all alternatives not established.",
+        "scope": "Exact whole-object continuity only; previous clinical review and remaining scope retained."
+      },
+      {
+        "module": "hepatitis-c",
+        "id": "hepatitis-c-078",
+        "question": "Which action best applies the evidence? Focus: on treatment safety.",
+        "choices": [
+          "Monitor adherence, new interactions, symptoms, glucose, INR, and liver injury according to patient and regimen.",
+          "A marked ALT rise or signs of decompensation should not wait until end of therapy.",
+          "Stop follow-up when the last tablet is taken without confirming SVR12 or planning cirrhosis surveillance.",
+          "Use one result without reviewing fibrosis, prior treatment, interactions, coinfection, or liver compensation."
+        ],
+        "answer": 0,
+        "rationale": "Most uncomplicated ribavirin-free patients need focused clinical follow-up rather than excessive routine laboratory testing, while cirrhosis and selected drugs require more monitoring. Monitor adherence, new interactions, symptoms, glucose, INR, and liver injury according to patient and regimen.",
+        "reviewHref": "#monitoring-delivery",
+        "difficulty": "foundational",
+        "status": "pending",
+        "priorEvidence": "enteral-nutrition-broader-cirrhosis-nutrition-review.json",
+        "priorReview": "Source requiresLFT/HCVRNA monitoring and warns hepatic injury. Full current ribavirin-free minimal-laboratory algorithm/INR/tenfoldALT/urgent contemporarystop thresholds and all alternatives not established.",
+        "scope": "Exact whole-object continuity only; previous clinical review and remaining scope retained."
+      },
+      {
+        "module": "hepatitis-c",
+        "id": "hepatitis-c-079",
+        "question": "Which plan demonstrates the strongest clinical reasoning? Focus: on treatment safety.",
+        "choices": [
+          "Monitor adherence, new interactions, symptoms, glucose, INR, and liver injury according to patient and regimen.",
+          "A marked ALT rise or signs of decompensation should not wait until end of therapy.",
+          "Use one result without reviewing fibrosis, prior treatment, interactions, coinfection, or liver compensation.",
+          "Assume every DAA combination, genotype, and cirrhosis state is interchangeable."
+        ],
+        "answer": 0,
+        "rationale": "Most uncomplicated ribavirin-free patients need focused clinical follow-up rather than excessive routine laboratory testing, while cirrhosis and selected drugs require more monitoring. Monitor adherence, new interactions, symptoms, glucose, INR, and liver injury according to patient and regimen.",
+        "reviewHref": "#monitoring-delivery",
+        "difficulty": "advanced",
+        "status": "pending",
+        "priorEvidence": "enteral-nutrition-broader-cirrhosis-nutrition-review.json",
+        "priorReview": "Source requiresLFT/HCVRNA monitoring and warns hepatic injury. Full current ribavirin-free minimal-laboratory algorithm/INR/tenfoldALT/urgent contemporarystop thresholds and all alternatives not established.",
+        "scope": "Exact whole-object continuity only; previous clinical review and remaining scope retained."
+      },
+      {
+        "module": "hepatitis-c",
+        "id": "hepatitis-c-080",
+        "question": "Which error creates the greatest avoidable risk? Focus: on treatment safety.",
+        "choices": [
+          "A marked ALT rise or signs of decompensation should not wait until end of therapy.",
+          "Most uncomplicated ribavirin-free patients need focused clinical follow-up rather than excessive routine laboratory testing, while cirrhosis and selected drugs require more monitoring.",
+          "Monitor adherence, new interactions, symptoms, glucose, INR, and liver injury according to patient and regimen.",
+          "Assume every DAA combination, genotype, and cirrhosis state is interchangeable."
+        ],
+        "answer": 0,
+        "rationale": "Most uncomplicated ribavirin-free patients need focused clinical follow-up rather than excessive routine laboratory testing, while cirrhosis and selected drugs require more monitoring. Monitor adherence, new interactions, symptoms, glucose, INR, and liver injury according to patient and regimen.",
+        "reviewHref": "#monitoring-delivery",
+        "difficulty": "advanced",
+        "status": "pending",
+        "priorEvidence": "enteral-nutrition-broader-cirrhosis-nutrition-review.json",
+        "priorReview": "Source requiresLFT/HCVRNA monitoring and warns hepatic injury. Full current ribavirin-free minimal-laboratory algorithm/INR/tenfoldALT/urgent contemporarystop thresholds and all alternatives not established.",
+        "scope": "Exact whole-object continuity only; previous clinical review and remaining scope retained."
+      }
+    ],
+    "teachingReview": [
+      {
+        "module": "cirrhosis-decompensated-liver-disease",
+        "lesson": "longitudinal-care",
+        "heading": "Feed the patient",
+        "body": "Avoid routine protein restriction for hepatic encephalopathy. For clinically stable adults with cirrhosis, AASLD recommends 1.2 to 1.5 g/kg ideal body weight/day protein alongside adequate energy; assess the weight basis rather than using an ascites-increased scale weight indiscriminately. Encourage varied protein sources, including vegetable and dairy options, and reduce prolonged fasting with an individualized late-evening snack. Review muscle loss, actual intake, food access, sodium-related palatability, alcohol, micronutrient risks and barriers to safe eating with the nutrition team. Swallowing symptoms require appropriate assessment. Obesity does not exclude malnutrition; these stable-adult targets are not a universal prescription for children or critical illness.",
+        "status": "verified prior unit",
+        "evidence": "enteral-nutrition-broader-cirrhosis-nutrition-review.json",
+        "scope": "Exact whole-object continuity only; previous clinical review and remaining scope retained.",
+        "priorReview": "Whole original currentguideline/protein/fasting/monitoring/rate-lowering/INR/P-gp/genotype3/pediatric/label exception scope not established; preserved pending.",
+        "new": false,
+        "expanded": false,
+        "appendedSourceVerifiedText": null,
+        "priorEvidence": "enteral-nutrition-broader-cirrhosis-nutrition-review.json"
+      },
+      {
+        "module": "cirrhosis-decompensated-liver-disease",
+        "lesson": "longitudinal-care",
+        "heading": "Deprescribe harm",
+        "body": "Avoid systemic NSAIDs because they can worsen kidney function, bleeding and ascites. Review benzodiazepines and other sedatives, nephrotoxins, supplements, sodium-containing products and each medicine’s current renal and hepatic dosing guidance with the treating team. Chronic benzodiazepines are generally avoided in decompensated cirrhosis, although selected indications require individualized care. Do not stop essential medicines indiscriminately. An elevated INR from cirrhosis does not establish protection from thrombosis or measure bleeding risk by itself: both procoagulant and anticoagulant factors change.",
+        "status": "verified this unit",
+        "evidence": "enteral-nutrition-broader-cirrhosis-longitudinal-review.json",
+        "scope": "Whole final object clinically compared against complete relevant source contexts; desktop/mobile verified.",
+        "priorReview": "Whole original currentguideline/protein/fasting/monitoring/rate-lowering/INR/P-gp/genotype3/pediatric/label exception scope not established; preserved pending.",
+        "new": false,
+        "expanded": false,
+        "appendedSourceVerifiedText": null
+      },
+      {
+        "module": "cirrhosis-decompensated-liver-disease",
+        "lesson": "longitudinal-care",
+        "heading": "Continue prevention",
+        "body": "For patients with cirrhosis who could benefit from HCC treatment, AASLD recommends ultrasound plus AFP about every six months. Continue indicated surveillance after HCV cure or other etiologic control; AFP alone does not replace imaging. Child-Pugh C patients generally require transplant eligibility for surveillance, and life-limiting comorbidities can make surveillance inappropriate. Coordinate specialist review of inadequate imaging or abnormal findings. Review current vaccination indications and prior doses, bone and micronutrient health, variceal prevention, alcohol cessation and metabolic care rather than treating a normal liver-enzyme result as resolution of risk.",
+        "status": "verified this unit",
+        "evidence": "enteral-nutrition-broader-cirrhosis-longitudinal-review.json",
+        "scope": "Whole final object clinically compared against complete relevant source contexts; desktop/mobile verified.",
+        "priorReview": "Whole original currentguideline/protein/fasting/monitoring/rate-lowering/INR/P-gp/genotype3/pediatric/label exception scope not established; preserved pending.",
+        "new": false,
+        "expanded": false,
+        "appendedSourceVerifiedText": null
+      },
+      {
+        "module": "cirrhosis-decompensated-liver-disease",
+        "lesson": "longitudinal-care",
+        "heading": "Teach the escalation signs",
+        "body": "Give the patient and caregiver an explicit contact and emergency plan. Vomiting blood, black tarry stools, new marked confusion or inappropriate sleepiness, and fever or severe new abdominal pain with ascites require emergency assessment. Promptly report reduced urine, rapid weight gain, worsening dyspnea, jaundice, severe diarrhea or interrupted medicines; severity and the agreed plan determine urgency. Excess lactulose-related diarrhea can cause dehydration and worsen encephalopathy. Review adherence and prescribed adjustments with the team instead of assuming that more diarrhea means better treatment.",
+        "status": "verified this unit",
+        "evidence": "enteral-nutrition-broader-cirrhosis-longitudinal-review.json",
+        "scope": "Whole final object clinically compared against complete relevant source contexts; desktop/mobile verified.",
+        "priorReview": "Whole original currentguideline/protein/fasting/monitoring/rate-lowering/INR/P-gp/genotype3/pediatric/label exception scope not established; preserved pending.",
+        "new": false,
+        "expanded": false,
+        "appendedSourceVerifiedText": null
+      },
+      {
+        "module": "cirrhosis-decompensated-liver-disease",
+        "lesson": "longitudinal-care",
+        "heading": "Address alcohol-associated malnutrition",
+        "body": "Alcohol cessation and adequate nutrition belong in the same plan. Review vitamin and trace-mineral needs, including thiamine, folate, pyridoxine, vitamins A and D, and zinc. Thiamine deficiency can cause Wernicke’s encephalopathy or Korsakoff syndrome; thiamine is used to prevent and treat these complications.",
+        "status": "verified",
+        "evidence": "enteral-nutrition-broader-hepatic-nutrition-review.json",
+        "scope": "Exact whole-object continuity only; previous clinical review and remaining scope retained.",
+        "priorReview": "Whole new original body supported by311alcohol/nutrition/thiamine text.",
+        "new": true,
+        "expanded": false,
+        "appendedSourceVerifiedText": null,
+        "priorEvidence": "enteral-nutrition-broader-cirrhosis-nutrition-review.json"
+      },
+      {
+        "module": "chronic-hepatitis-b",
+        "lesson": "polymerase-therapy",
+        "heading": "Use TDF deliberately",
+        "body": "TDF 300 mg daily is potent and high barrier, but requires renal dose adjustment and surveillance for proximal tubular injury, kidney decline, and bone effects.",
+        "status": "pending",
+        "evidence": "enteral-nutrition-broader-hepatic-nutrition-review.json",
+        "scope": "Exact whole-object continuity only; previous clinical review and remaining scope retained.",
+        "priorReview": "Whole original currentguideline/protein/fasting/monitoring/rate-lowering/INR/P-gp/genotype3/pediatric/label exception scope not established; preserved pending.",
+        "new": false,
+        "expanded": false,
+        "appendedSourceVerifiedText": null,
+        "priorEvidence": "enteral-nutrition-broader-cirrhosis-nutrition-review.json"
+      },
+      {
+        "module": "chronic-hepatitis-b",
+        "lesson": "polymerase-therapy",
+        "heading": "Use TAF within its label",
+        "body": "Vemlidy 25 mg daily with food has lower plasma tenofovir exposure and generally less renal and bone toxicity. Current U.S. labeling covers compensated liver disease and defined pediatric age and weight criteria.",
+        "status": "pending",
+        "evidence": "enteral-nutrition-broader-hepatic-nutrition-review.json",
+        "scope": "Exact whole-object continuity only; previous clinical review and remaining scope retained.",
+        "priorReview": "Whole original currentguideline/protein/fasting/monitoring/rate-lowering/INR/P-gp/genotype3/pediatric/label exception scope not established; preserved pending.",
+        "new": false,
+        "expanded": false,
+        "appendedSourceVerifiedText": null,
+        "priorEvidence": "enteral-nutrition-broader-cirrhosis-nutrition-review.json"
+      },
+      {
+        "module": "chronic-hepatitis-b",
+        "lesson": "polymerase-therapy",
+        "heading": "Use entecavir correctly",
+        "body": "Nucleoside-naive adults generally receive 0.5 mg daily on an empty stomach. Lamivudine resistance or decompensated disease uses a different 1 mg context, and kidney impairment requires adjustment. Keep entecavir at least 2 hours before or after a meal. Food reduces its exposure, so the fasting instruction must be built into the daily schedule separately from dose selection.",
+        "status": "pending",
+        "evidence": "enteral-nutrition-broader-hepatic-nutrition-review.json",
+        "scope": "Exact whole-object continuity only; previous clinical review and remaining scope retained.",
+        "priorReview": "Appended2hour fasting instruction supported by309315. Whole originaldecompensated1mg context is not established; retained original body remains pending.",
+        "new": false,
+        "expanded": true,
+        "appendedSourceVerifiedText": " Keep entecavir at least 2 hours before or after a meal. Food reduces its exposure, so the fasting instruction must be built into the daily schedule separately from dose selection.",
+        "priorEvidence": "enteral-nutrition-broader-cirrhosis-nutrition-review.json"
+      },
+      {
+        "module": "chronic-hepatitis-b",
+        "lesson": "polymerase-therapy",
+        "heading": "Avoid low-barrier shortcuts",
+        "body": "Lamivudine, adefovir, and telbivudine have resistance or toxicity disadvantages. Prior exposure and resistance must shape salvage therapy.",
+        "status": "pending",
+        "evidence": "enteral-nutrition-broader-hepatic-nutrition-review.json",
+        "scope": "Exact whole-object continuity only; previous clinical review and remaining scope retained.",
+        "priorReview": "Whole original currentguideline/protein/fasting/monitoring/rate-lowering/INR/P-gp/genotype3/pediatric/label exception scope not established; preserved pending.",
+        "new": false,
+        "expanded": false,
+        "appendedSourceVerifiedText": null,
+        "priorEvidence": "enteral-nutrition-broader-cirrhosis-nutrition-review.json"
+      },
+      {
+        "module": "hepatitis-c",
+        "lesson": "initial-regimens",
+        "heading": "Use Mavyret correctly",
+        "body": "Adults generally take three 100 mg and 40 mg tablets together once daily with food. Current labeling includes acute or chronic genotypes 1 through 6 in patients age 3 years or older without cirrhosis or with Child-Pugh A, using age-appropriate formulation.",
+        "status": "pending",
+        "evidence": "enteral-nutrition-broader-hepatic-nutrition-review.json",
+        "scope": "Exact whole-object continuity only; previous clinical review and remaining scope retained.",
+        "priorReview": "Whole original currentguideline/protein/fasting/monitoring/rate-lowering/INR/P-gp/genotype3/pediatric/label exception scope not established; preserved pending.",
+        "new": false,
+        "expanded": false,
+        "appendedSourceVerifiedText": null,
+        "priorEvidence": "enteral-nutrition-broader-cirrhosis-nutrition-review.json"
+      },
+      {
+        "module": "hepatitis-c",
+        "lesson": "initial-regimens",
+        "heading": "Use Epclusa correctly",
+        "body": "Adults generally take one 400 mg and 100 mg tablet daily with or without food for 12 weeks in simplified treatment. Genotype 3 with compensated cirrhosis requires baseline NS5A resistance context.",
+        "status": "pending",
+        "evidence": "enteral-nutrition-broader-hepatic-nutrition-review.json",
+        "scope": "Exact whole-object continuity only; previous clinical review and remaining scope retained.",
+        "priorReview": "Whole original currentguideline/protein/fasting/monitoring/rate-lowering/INR/P-gp/genotype3/pediatric/label exception scope not established; preserved pending.",
+        "new": false,
+        "expanded": false,
+        "appendedSourceVerifiedText": null,
+        "priorEvidence": "enteral-nutrition-broader-cirrhosis-nutrition-review.json"
+      },
+      {
+        "module": "hepatitis-c",
+        "lesson": "initial-regimens",
+        "heading": "Respect liver boundaries",
+        "body": "Mavyret is contraindicated with Child-Pugh B or C or any prior hepatic decompensation. Sofosbuvir and velpatasvir can be used with ribavirin in selected decompensated disease under expert care.",
+        "status": "pending",
+        "evidence": "enteral-nutrition-broader-hepatic-nutrition-review.json",
+        "scope": "Exact whole-object continuity only; previous clinical review and remaining scope retained.",
+        "priorReview": "Whole original currentguideline/protein/fasting/monitoring/rate-lowering/INR/P-gp/genotype3/pediatric/label exception scope not established; preserved pending.",
+        "new": false,
+        "expanded": false,
+        "appendedSourceVerifiedText": null,
+        "priorEvidence": "enteral-nutrition-broader-cirrhosis-nutrition-review.json"
+      },
+      {
+        "module": "hepatitis-c",
+        "lesson": "initial-regimens",
+        "heading": "Do not preserve retired clutter",
+        "body": "Viekira Pak and interferon-era combinations from older course material are not routine current initial regimens. Teach them as historical context, not default choices.",
+        "status": "pending",
+        "evidence": "enteral-nutrition-broader-hepatic-nutrition-review.json",
+        "scope": "Exact whole-object continuity only; previous clinical review and remaining scope retained.",
+        "priorReview": "Whole original currentguideline/protein/fasting/monitoring/rate-lowering/INR/P-gp/genotype3/pediatric/label exception scope not established; preserved pending.",
+        "new": false,
+        "expanded": false,
+        "appendedSourceVerifiedText": null,
+        "priorEvidence": "enteral-nutrition-broader-cirrhosis-nutrition-review.json"
+      },
+      {
+        "module": "hepatitis-c",
+        "lesson": "initial-regimens",
+        "heading": "Keep meal instructions tied to the product",
+        "body": "For adult tablets, glecaprevir/pibrentasvir is taken as three tablets together once daily with food, whereas sofosbuvir/velpatasvir and ledipasvir/sofosbuvir can be taken with or without food. Elbasvir/grazoprevir is another exception to the protease-inhibitor-with-food mnemonic. These oral tablet instructions do not establish crushing, feeding-tube delivery, or a pediatric formulation method.",
+        "status": "verified",
+        "evidence": "enteral-nutrition-broader-hepatic-nutrition-review.json",
+        "scope": "Exact whole-object continuity only; previous clinical review and remaining scope retained.",
+        "priorReview": "Whole new original oral-tablet/meal/product-exception body supported by305306315; no tube/crushing/pediatric method inferred.",
+        "new": true,
+        "expanded": false,
+        "appendedSourceVerifiedText": null,
+        "priorEvidence": "enteral-nutrition-broader-cirrhosis-nutrition-review.json"
+      },
+      {
+        "module": "hepatitis-c",
+        "lesson": "interaction-engineering",
+        "heading": "Control gastric pH",
+        "body": "Ledipasvir and velpatasvir need an acidic environment. Antacid separation and H2 blocker or PPI rules are product-specific, so do not invent one universal schedule.",
+        "status": "pending",
+        "evidence": "enteral-nutrition-broader-hepatic-nutrition-review.json",
+        "scope": "Exact whole-object continuity only; previous clinical review and remaining scope retained.",
+        "priorReview": "Whole original currentguideline/protein/fasting/monitoring/rate-lowering/INR/P-gp/genotype3/pediatric/label exception scope not established; preserved pending.",
+        "new": false,
+        "expanded": false,
+        "appendedSourceVerifiedText": null,
+        "priorEvidence": "enteral-nutrition-broader-cirrhosis-nutrition-review.json"
+      },
+      {
+        "module": "hepatitis-c",
+        "lesson": "interaction-engineering",
+        "heading": "Remove strong inducers",
+        "body": "Rifampin, carbamazepine, phenytoin, phenobarbital, and St. John's wort can reduce exposure. Time separation does not reverse persistent induction.",
+        "status": "pending",
+        "evidence": "enteral-nutrition-broader-hepatic-nutrition-review.json",
+        "scope": "Exact whole-object continuity only; previous clinical review and remaining scope retained.",
+        "priorReview": "Whole original currentguideline/protein/fasting/monitoring/rate-lowering/INR/P-gp/genotype3/pediatric/label exception scope not established; preserved pending.",
+        "new": false,
+        "expanded": false,
+        "appendedSourceVerifiedText": null,
+        "priorEvidence": "enteral-nutrition-broader-cirrhosis-nutrition-review.json"
+      },
+      {
+        "module": "hepatitis-c",
+        "lesson": "interaction-engineering",
+        "heading": "Protect interacting drugs",
+        "body": "Statins, calcineurin inhibitors, antiretrovirals, anticoagulants, and other transporter or enzyme substrates may need a hold, substitution, dose limit, or intensified monitoring.",
+        "status": "pending",
+        "evidence": "enteral-nutrition-broader-hepatic-nutrition-review.json",
+        "scope": "Exact whole-object continuity only; previous clinical review and remaining scope retained.",
+        "priorReview": "Whole original currentguideline/protein/fasting/monitoring/rate-lowering/INR/P-gp/genotype3/pediatric/label exception scope not established; preserved pending.",
+        "new": false,
+        "expanded": false,
+        "appendedSourceVerifiedText": null,
+        "priorEvidence": "enteral-nutrition-broader-cirrhosis-nutrition-review.json"
+      },
+      {
+        "module": "hepatitis-c",
+        "lesson": "interaction-engineering",
+        "heading": "Avoid the bradycardia stack",
+        "body": "Sofosbuvir with amiodarone can cause serious symptomatic bradycardia. Avoid when possible or use label-directed specialist monitoring if no alternative exists.",
+        "status": "pending",
+        "evidence": "enteral-nutrition-broader-hepatic-nutrition-review.json",
+        "scope": "Exact whole-object continuity only; previous clinical review and remaining scope retained.",
+        "priorReview": "Whole original currentguideline/protein/fasting/monitoring/rate-lowering/INR/P-gp/genotype3/pediatric/label exception scope not established; preserved pending.",
+        "new": false,
+        "expanded": false,
+        "appendedSourceVerifiedText": null,
+        "priorEvidence": "enteral-nutrition-broader-cirrhosis-nutrition-review.json"
+      },
+      {
+        "module": "hepatitis-c",
+        "lesson": "monitoring-delivery",
+        "heading": "Support adherence",
+        "body": "Review administration, missed doses, access, nausea, fatigue, new products, and injection or housing barriers without judgment. Do not wait until the end to discover a gap.",
+        "status": "pending",
+        "evidence": "enteral-nutrition-broader-hepatic-nutrition-review.json",
+        "scope": "Exact whole-object continuity only; previous clinical review and remaining scope retained.",
+        "priorReview": "Whole original currentguideline/protein/fasting/monitoring/rate-lowering/INR/P-gp/genotype3/pediatric/label exception scope not established; preserved pending.",
+        "new": false,
+        "expanded": false,
+        "appendedSourceVerifiedText": null,
+        "priorEvidence": "enteral-nutrition-broader-cirrhosis-nutrition-review.json"
+      },
+      {
+        "module": "hepatitis-c",
+        "lesson": "monitoring-delivery",
+        "heading": "Monitor metabolic change",
+        "body": "Improved hepatic function can lower glucose requirements and change warfarin response. Warn patients and actively monitor glucose or INR during and after treatment.",
+        "status": "pending",
+        "evidence": "enteral-nutrition-broader-hepatic-nutrition-review.json",
+        "scope": "Exact whole-object continuity only; previous clinical review and remaining scope retained.",
+        "priorReview": "Whole original currentguideline/protein/fasting/monitoring/rate-lowering/INR/P-gp/genotype3/pediatric/label exception scope not established; preserved pending.",
+        "new": false,
+        "expanded": false,
+        "appendedSourceVerifiedText": null,
+        "priorEvidence": "enteral-nutrition-broader-cirrhosis-nutrition-review.json"
+      },
+      {
+        "module": "hepatitis-c",
+        "lesson": "monitoring-delivery",
+        "heading": "Respond to liver injury",
+        "body": "A tenfold ALT rise, symptomatic hepatitis, increasing bilirubin or INR, jaundice, ascites, or encephalopathy requires urgent evaluation and guidance-directed interruption or escalation.",
+        "status": "pending",
+        "evidence": "enteral-nutrition-broader-hepatic-nutrition-review.json",
+        "scope": "Exact whole-object continuity only; previous clinical review and remaining scope retained.",
+        "priorReview": "Whole original currentguideline/protein/fasting/monitoring/rate-lowering/INR/P-gp/genotype3/pediatric/label exception scope not established; preserved pending.",
+        "new": false,
+        "expanded": false,
+        "appendedSourceVerifiedText": null,
+        "priorEvidence": "enteral-nutrition-broader-cirrhosis-nutrition-review.json"
+      },
+      {
+        "module": "hepatitis-c",
+        "lesson": "monitoring-delivery",
+        "heading": "Monitor ribavirin separately",
+        "body": "When used in selected decompensated or retreatment cases, ribavirin requires CBC and reproductive safety planning because hemolytic anemia and teratogenicity are central risks.",
+        "status": "pending",
+        "evidence": "enteral-nutrition-broader-hepatic-nutrition-review.json",
+        "scope": "Exact whole-object continuity only; previous clinical review and remaining scope retained.",
+        "priorReview": "Whole original currentguideline/protein/fasting/monitoring/rate-lowering/INR/P-gp/genotype3/pediatric/label exception scope not established; preserved pending.",
+        "new": false,
+        "expanded": false,
+        "appendedSourceVerifiedText": null,
+        "priorEvidence": "enteral-nutrition-broader-cirrhosis-nutrition-review.json"
+      }
+    ],
+    "embeddedCheckReview": [
+      {
+        "module": "cirrhosis-decompensated-liver-disease",
+        "lesson": "longitudinal-care",
+        "question": "Which nutrition plan is most appropriate for many adults with cirrhosis?",
+        "choices": [
+          "Adequate energy and roughly 1.2 to 1.5 g/kg ideal body weight/day protein in stable adults, with minimized fasting",
+          "Severe protein restriction whenever hepatic encephalopathy is present",
+          "Long overnight fasting despite inadequate daytime intake",
+          "Vitamin supplementation in place of adequate calories and protein"
+        ],
+        "answer": 0,
+        "rationale": "For clinically stable adults, identify the weight basis and preserve adequate protein and energy. Routine restriction can worsen muscle loss; shorter fasting and individualized snacks support intake. Vitamins do not replace calories or protein.",
+        "reviewHref": "#longitudinal-care",
+        "status": "verified prior unit",
+        "evidence": "enteral-nutrition-broader-cirrhosis-nutrition-review.json",
+        "priorReview": "Whole protein1.2-1.5/compensatedTAFlabel/persistentenzyme-transporterinduction scope not established; retained pending.",
+        "scope": "Exact whole-object continuity only; previous clinical review and remaining scope retained.",
+        "priorEvidence": "enteral-nutrition-broader-cirrhosis-nutrition-review.json"
+      },
+      {
+        "module": "chronic-hepatitis-b",
+        "lesson": "polymerase-therapy",
+        "question": "Which factor most strongly favors considering TAF over TDF?",
+        "choices": [
+          "High renal and bone toxicity risk with compensated liver disease",
+          "A desire to ignore kidney function",
+          "Need for an HIV regimen without other agents",
+          "Decompensated disease outside the label"
+        ],
+        "answer": 0,
+        "rationale": "TAF generally reduces renal and bone exposure concerns, while current labeling still defines its use.",
+        "reviewHref": "#polymerase-therapy",
+        "status": "pending unchanged",
+        "evidence": "enteral-nutrition-broader-hepatic-nutrition-review.json",
+        "priorReview": "Whole protein1.2-1.5/compensatedTAFlabel/persistentenzyme-transporterinduction scope not established; retained pending.",
+        "scope": "Exact whole-object continuity only; previous clinical review and remaining scope retained.",
+        "priorEvidence": "enteral-nutrition-broader-cirrhosis-nutrition-review.json"
+      },
+      {
+        "module": "hepatitis-c",
+        "lesson": "initial-regimens",
+        "question": "What is the adult Mavyret administration rule?",
+        "choices": [
+          "Three tablets together once daily with food",
+          "One tablet weekly fasting",
+          "Three tablets divided without food",
+          "Sofosbuvir monotherapy"
+        ],
+        "answer": 0,
+        "rationale": "The adult daily dose is taken together with food.",
+        "reviewHref": "#initial-regimens",
+        "status": "verified unchanged",
+        "evidence": "enteral-nutrition-broader-hepatic-nutrition-review.json",
+        "priorReview": "Complete prompt/key/allalternatives/explanation supported by306Mavyretadulttable or306307insulin/glucose warning.",
+        "scope": "Exact whole-object continuity only; previous clinical review and remaining scope retained.",
+        "priorEvidence": "enteral-nutrition-broader-cirrhosis-nutrition-review.json"
+      },
+      {
+        "module": "hepatitis-c",
+        "lesson": "interaction-engineering",
+        "question": "Why is separating carbamazepine from Epclusa by four hours inadequate?",
+        "choices": [
+          "Enzyme and transporter induction persists beyond the dosing window",
+          "Carbamazepine raises gastric acidity",
+          "Epclusa is injected",
+          "The drugs never interact"
+        ],
+        "answer": 0,
+        "rationale": "Induction is not a local absorption event that simple separation fixes.",
+        "reviewHref": "#interaction-engineering",
+        "status": "pending unchanged",
+        "evidence": "enteral-nutrition-broader-hepatic-nutrition-review.json",
+        "priorReview": "Whole protein1.2-1.5/compensatedTAFlabel/persistentenzyme-transporterinduction scope not established; retained pending.",
+        "scope": "Exact whole-object continuity only; previous clinical review and remaining scope retained.",
+        "priorEvidence": "enteral-nutrition-broader-cirrhosis-nutrition-review.json"
+      },
+      {
+        "module": "hepatitis-c",
+        "lesson": "monitoring-delivery",
+        "question": "Which patient needs proactive glucose review during DAA therapy?",
+        "choices": [
+          "A patient using insulin",
+          "A patient with no medications",
+          "Only a patient taking an antacid",
+          "No one because DAAs cannot affect glycemia"
+        ],
+        "answer": 0,
+        "rationale": "Rapid viral response can improve glucose metabolism and cause hypoglycemia.",
+        "reviewHref": "#monitoring-delivery",
+        "status": "verified unchanged",
+        "evidence": "enteral-nutrition-broader-hepatic-nutrition-review.json",
+        "priorReview": "Complete prompt/key/allalternatives/explanation supported by306Mavyretadulttable or306307insulin/glucose warning.",
+        "scope": "Exact whole-object continuity only; previous clinical review and remaining scope retained.",
+        "priorEvidence": "enteral-nutrition-broader-cirrhosis-nutrition-review.json"
+      }
+    ],
+    "currentWholeQuestionsSelected": 64,
+    "previouslyVerifiedSelectedQuestions": 16,
+    "newlyVerifiedSelectedQuestions": 8,
+    "remainingWholeQuestions": 40,
+    "remainingOriginalTeachingBodies": 16,
+    "remainingEmbeddedChecks": 2,
+    "allOtherSelectedCurrentWholeObjectsExactContinuityOnly": true,
+    "scopeLimits": "Selected hepatic inventory is not all parent questions or teaching. Original pending bodies16 and checks2 remain; full parents and chapters remain open. Longitudinal nutrition objects retain earlier evidence; no whole parent or chapter closure.",
+    "historicalLexicalInventory": "Historical233-row lexical inventory has no cirrhosis rows. Eight newly verified semantic questions do not reduce157 remaining lexical review/classification candidates. Lexical inventory is not exhaustive semantic scope."
+  },
+  "validation": {
+    "productionBuild": {
+      "status": "passed",
+      "exitCode": 0,
+      "pages": 567,
+      "bundler": "webpack",
+      "baseCommit": "9fc3f8575abd871cb94103d9d42f58f59a208e31",
+      "initialFailure": "Initial build failed ENOSPC; disposable previous audit .next caches removed, then full rerun passed."
+    },
+    "structure": {
+      "modules": 1,
+      "questions": 120,
+      "hardErrors": [],
+      "sourceGaps": [],
+      "sizeAdvisories": [],
+      "thinLessons": [],
+      "weakestModules": [
+        {
+          "module": "cirrhosis-decompensated-liver-disease",
+          "lessons": 12,
+          "questions": 120,
+          "minimumLessonCoverage": 8
+        }
+      ]
+    },
+    "objectPreservation": {
+      "status": "passed",
+      "moduleTotal": 232,
+      "questions": 120,
+      "bodies": 52,
+      "lessonsAndChecks": 12,
+      "stableIdsStemsKeysDifficultyAnchorsAndOrderPreserved": true,
+      "twoErrorQuestionKeysCorrectedToHarmfulActions": true,
+      "other112WholeBankObjectsUnchanged": true,
+      "other49WholeBodiesAll12ChecksAndAllFiguresUnchanged": true,
+      "onlyLongitudinalSummaryAndKeyPointsChanged": true,
+      "other231ModulesExactUnchanged": true,
+      "all1180WholeCumulativeObjectsUnchanged": true,
+      "referencesAfter": 15,
+      "newQuestionIds": 0,
+      "newDrugDosesOrCalculationExercises": 0
+    },
+    "browser": {
+      "status": "passed",
+      "results": [
+        {
+          "width": 1440,
+          "bodiesExact": 52,
+          "all12LessonMetadataExact": true,
+          "all15ReferencesExact": true,
+          "allFourOptionsOfPreviouslyVerifiedCheckGradedAndFeedbackExact": true,
+          "allEightChangedQuestionsShuffledChoicesCorrectAndIncorrectGradingFeedbackKeysAnchorsVerified": true,
+          "noHorizontalOverflow": true,
+          "attemptSeeds": [
+            6315,
+            67769
+          ]
+        },
+        {
+          "width": 390,
+          "bodiesExact": 52,
+          "all12LessonMetadataExact": true,
+          "all15ReferencesExact": true,
+          "allFourOptionsOfPreviouslyVerifiedCheckGradedAndFeedbackExact": true,
+          "allEightChangedQuestionsShuffledChoicesCorrectAndIncorrectGradingFeedbackKeysAnchorsVerified": true,
+          "noHorizontalOverflow": true,
+          "attemptSeeds": [
+            6315,
+            67769
+          ]
+        }
+      ],
+      "captures": [
+        "body-0-1440.png",
+        "body-1-1440.png",
+        "body-2-1440.png",
+        "body-3-1440.png",
+        "body-4-1440.png",
+        "summary-1440.png",
+        "keypoints-application-1440.png",
+        "figure-1440.png",
+        "references-1440.png",
+        "check-option-0-1440.png",
+        "check-option-1-1440.png",
+        "check-option-2-1440.png",
+        "check-option-3-1440.png",
+        "bank-cirrhosis-decompensated-102-1440.png",
+        "bank-cirrhosis-decompensated-104-1440.png",
+        "bank-cirrhosis-decompensated-103-1440.png",
+        "bank-cirrhosis-decompensated-101-1440.png",
+        "bank-cirrhosis-decompensated-108-1440.png",
+        "bank-cirrhosis-decompensated-106-1440.png",
+        "bank-cirrhosis-decompensated-105-1440.png",
+        "bank-cirrhosis-decompensated-107-1440.png",
+        "body-0-390.png",
+        "body-1-390.png",
+        "body-2-390.png",
+        "body-3-390.png",
+        "body-4-390.png",
+        "summary-390.png",
+        "keypoints-application-390.png",
+        "figure-390.png",
+        "references-390.png",
+        "check-option-0-390.png",
+        "check-option-1-390.png",
+        "check-option-2-390.png",
+        "check-option-3-390.png",
+        "bank-cirrhosis-decompensated-102-390.png",
+        "bank-cirrhosis-decompensated-104-390.png",
+        "bank-cirrhosis-decompensated-103-390.png",
+        "bank-cirrhosis-decompensated-101-390.png",
+        "bank-cirrhosis-decompensated-108-390.png",
+        "bank-cirrhosis-decompensated-106-390.png",
+        "bank-cirrhosis-decompensated-105-390.png",
+        "bank-cirrhosis-decompensated-107-390.png"
+      ],
+      "errors": []
+    },
+    "visualInspection": {
+      "status": "passed",
+      "nativePairsActuallyInspected": 21,
+      "rawCapturesActuallyInspectedThroughNativePairs": 42,
+      "desktopWidth": 1440,
+      "mobileWidth": 390,
+      "observations": "All5whole longitudinal bodies, summary, keypoints, complete reused figure/caption,15reference labels, all4 priornutritioncheck options and8whole revised bank questions including every option/fullfeedback actually visually inspected as native desktop/mobile pairs. No text clipping or overlapping choices/feedback in changed scope. Existing symbolic figure retained, not redesigned or presented as measured anatomy. Application text DOM verified; not included in keypoints capture despite filename. Other parent scope remains open.",
+      "pairs": [
+        {
+          "pair": "pair-body-0.png",
+          "originals": [
+            "body-0-1440.png",
+            "body-0-390.png"
+          ],
+          "width": 1297,
+          "height": 594,
+          "sha256": "5410c85838af641ab1e60c00332202570a88a6a0e42ec49ecacfb1c3e7a8ec2f",
+          "originalHashes": {
+            "body-0-1440.png": "1e6e3107ca875bf2ae61acde271afbdfa5d8c15c1f4837b2b3e9a968a7f2e969",
+            "body-0-390.png": "35aac61e5b96f9e0f8d9090af43b6ae327386ef8fe857aaa982179c2cf872adf"
+          }
+        },
+        {
+          "pair": "pair-body-1.png",
+          "originals": [
+            "body-1-1440.png",
+            "body-1-390.png"
+          ],
+          "width": 1297,
+          "height": 513,
+          "sha256": "74437d8425b0de0ed9b984d50f44c4708c7b7d87e3ad31a37b061d4e6c73451b",
+          "originalHashes": {
+            "body-1-1440.png": "c9e388b28318aaa05a5c1a52153f7bd09265ab908eece8266ea9f4ccbc041044",
+            "body-1-390.png": "b815eeab2922d908444d56fa642aa360d7bb588129ce8b73b6c5ecb2a476046e"
+          }
+        },
+        {
+          "pair": "pair-body-2.png",
+          "originals": [
+            "body-2-1440.png",
+            "body-2-390.png"
+          ],
+          "width": 1297,
+          "height": 539,
+          "sha256": "8cc59b4fdad7ad5c899bd4962300118c3ef3d6e7424e33bc7e2fcefabaa03d95",
+          "originalHashes": {
+            "body-2-1440.png": "1ebd0d66c5081366a5d780f260f9f5c69683816dcf648d162e394797a774988e",
+            "body-2-390.png": "f03d8ae2353356cab772426a0232ad818877bee4b56a9d3832d9529a45d26b2a"
+          }
+        },
+        {
+          "pair": "pair-body-3.png",
+          "originals": [
+            "body-3-1440.png",
+            "body-3-390.png"
+          ],
+          "width": 1297,
+          "height": 513,
+          "sha256": "b6916d905826add5efbbece037b8af55286f180e9f94f3fd23fd307fb850b273",
+          "originalHashes": {
+            "body-3-1440.png": "64baf8ac9bf95e92d8f4ca02625a788c6f6fd9d2267c6b3da8a1a50726dc5741",
+            "body-3-390.png": "1c66a863794aa6e3ff84a646c73119170f8bf4db3bf71687b2427d08d7d52360"
+          }
+        },
+        {
+          "pair": "pair-body-4.png",
+          "originals": [
+            "body-4-1440.png",
+            "body-4-390.png"
+          ],
+          "width": 1297,
+          "height": 320,
+          "sha256": "8f5ac9919d366e1fe305efcd4fc9e1dc4697e02427d478e845a1df209695c901",
+          "originalHashes": {
+            "body-4-1440.png": "fdddc1574f340e0f39d094ded840bfc558c803385a8ac581211b5c68719e80bd",
+            "body-4-390.png": "e7889a9f74e085533596f5e49e27edd61c09c68a2dbcf33612ad7847ba412f52"
+          }
+        },
+        {
+          "pair": "pair-summary.png",
+          "originals": [
+            "summary-1440.png",
+            "summary-390.png"
+          ],
+          "width": 1111,
+          "height": 123,
+          "sha256": "8bcd5c6ba01da294d2731bacb15e9fffef22e6a169e2824997003a4470371c41",
+          "originalHashes": {
+            "summary-1440.png": "d6bdb173925b36a77790de54536d85a7e334fbf63fd0f537ae8d29c7a0ae7491",
+            "summary-390.png": "741a7def80e5050e5dd03ef9f68870566aab8998d14cf19868993f2b242568df"
+          }
+        },
+        {
+          "pair": "pair-keypoints-application.png",
+          "originals": [
+            "keypoints-application-1440.png",
+            "keypoints-application-390.png"
+          ],
+          "width": 1297,
+          "height": 262,
+          "sha256": "386fdcb8b2d26efb2bb03fbe455a74a61da7da2c15d6801c51fba4504b405d2e",
+          "originalHashes": {
+            "keypoints-application-1440.png": "8cc4c25728fd85e51c53cabfec4400032b351770c37eb18f7be403cb9a68f2de",
+            "keypoints-application-390.png": "0854dc0e545cf4dc9264075c8522fd0031a31e0687884b13c82147e2471b0fcc"
+          }
+        },
+        {
+          "pair": "pair-figure.png",
+          "originals": [
+            "figure-1440.png",
+            "figure-390.png"
+          ],
+          "width": 1297,
+          "height": 651,
+          "sha256": "dabe645149c7b7d9048b9ef1f1e6b678ca6235737b524ff1eb2dcb3bbeb3e62e",
+          "originalHashes": {
+            "figure-1440.png": "8b261a40a8756138cbd1c56d08cd03c3b7ae85b5718c1ca1661bc4f4414e52e4",
+            "figure-390.png": "57f48e8db475df0d32778f4ee0008fc0b0678fc4b76f63be62683e5f2d65f610"
+          }
+        },
+        {
+          "pair": "pair-references.png",
+          "originals": [
+            "references-1440.png",
+            "references-390.png"
+          ],
+          "width": 1297,
+          "height": 1249,
+          "sha256": "e3222d982d46e487fe92a49d3694fe5664b207d5200e5b41c4c25eff512b4d9c",
+          "originalHashes": {
+            "references-1440.png": "fcee09133e69841697a82a2a0047d5ee74b97446bd10f2d6755f0854966dd1b6",
+            "references-390.png": "86192b68fefc08c2597d490a9686fa91756a4d4c243df67c97a415305f15162a"
+          }
+        },
+        {
+          "pair": "pair-check-option-0.png",
+          "originals": [
+            "check-option-0-1440.png",
+            "check-option-0-390.png"
+          ],
+          "width": 1297,
+          "height": 713,
+          "sha256": "fc10583daf0e14315adb8546e4a58d380da336bcf59af63ffba3b65102532b0c",
+          "originalHashes": {
+            "check-option-0-1440.png": "eda34e337ad963edce7fc570beab35a9cc4fd53ee28545755cccc060cc9d6cd0",
+            "check-option-0-390.png": "c0da65e97f841590ec4f82b01c388ac7886c579372a7d4276015616374a16b2e"
+          }
+        },
+        {
+          "pair": "pair-check-option-1.png",
+          "originals": [
+            "check-option-1-1440.png",
+            "check-option-1-390.png"
+          ],
+          "width": 1297,
+          "height": 713,
+          "sha256": "3726521912f9ebfd0b6e66f8a2e98d491bbd44bdd17bc11ea80e852421a97d25",
+          "originalHashes": {
+            "check-option-1-1440.png": "7291f04ded8d413535f0bd7a38e12f66865487fafaac17cce26a0c961a2a2d61",
+            "check-option-1-390.png": "9ac247e58594472070e2cf7669097cf324691608b9df9517f9a955069ec6b121"
+          }
+        },
+        {
+          "pair": "pair-check-option-2.png",
+          "originals": [
+            "check-option-2-1440.png",
+            "check-option-2-390.png"
+          ],
+          "width": 1297,
+          "height": 713,
+          "sha256": "4e5951f96cb6de9dbc874a79e6fd5f08265820a5ce59783db8e52c230dd4bfd1",
+          "originalHashes": {
+            "check-option-2-1440.png": "fe28f06b0b56fd8b037331ef7f7b1d535f790147ad168b6d64f4e9235fa11107",
+            "check-option-2-390.png": "a8b543ef34d65edc375b00a529d12237d40c643f4940822574144d64ea873dde"
+          }
+        },
+        {
+          "pair": "pair-check-option-3.png",
+          "originals": [
+            "check-option-3-1440.png",
+            "check-option-3-390.png"
+          ],
+          "width": 1297,
+          "height": 713,
+          "sha256": "e52dfd6061dd6a1db2ca57e5f1e8b449e66d7f4573e816bf5946130f75729464",
+          "originalHashes": {
+            "check-option-3-1440.png": "7073634d81d7e1c6eab826ee4e369248d73fb47a125131edf82159b5bd331d51",
+            "check-option-3-390.png": "4e20ff3cdff587d237a44badfe1f4db1d417d13aa4f0ebe7f8e7a2749e1967ff"
+          }
+        },
+        {
+          "pair": "pair-bank-cirrhosis-decompensated-102.png",
+          "originals": [
+            "bank-cirrhosis-decompensated-102-1440.png",
+            "bank-cirrhosis-decompensated-102-390.png"
+          ],
+          "width": 1297,
+          "height": 733,
+          "sha256": "071c604119dcfecd6d044dba3e9fa93b17bcdffe700bf1d06c71b786a341b3bb",
+          "originalHashes": {
+            "bank-cirrhosis-decompensated-102-1440.png": "ad1ee20bdf67be8e8b5672f6f9758dcb5334648497d44ce91579ccd6a2263f50",
+            "bank-cirrhosis-decompensated-102-390.png": "b15a4eed6db060e25ea7744a3246fa6624bfcd231649cdf79eed5ccd6298b280"
+          }
+        },
+        {
+          "pair": "pair-bank-cirrhosis-decompensated-104.png",
+          "originals": [
+            "bank-cirrhosis-decompensated-104-1440.png",
+            "bank-cirrhosis-decompensated-104-390.png"
+          ],
+          "width": 1297,
+          "height": 752,
+          "sha256": "b71c9def67618233268b63ac4043166d0c15d751bd722d12409bbc9700fefaea",
+          "originalHashes": {
+            "bank-cirrhosis-decompensated-104-1440.png": "9e8b74703f63a7534a4a4cf4943574457eb961a2ba6f42093683f2537c666ae3",
+            "bank-cirrhosis-decompensated-104-390.png": "a5576b7bca2b23335f7ee5e22ad70bf7333b400dee7a6517346d5ad386601466"
+          }
+        },
+        {
+          "pair": "pair-bank-cirrhosis-decompensated-103.png",
+          "originals": [
+            "bank-cirrhosis-decompensated-103-1440.png",
+            "bank-cirrhosis-decompensated-103-390.png"
+          ],
+          "width": 1297,
+          "height": 770,
+          "sha256": "f2701014df5177a963d7cb0be6fb1362c3c471ab0ab3e2a04058f2acf448830b",
+          "originalHashes": {
+            "bank-cirrhosis-decompensated-103-1440.png": "d7bdfa7928664f1f8e7976d3761a3b20d656fd9f33ac6d684b4f1a786f1da449",
+            "bank-cirrhosis-decompensated-103-390.png": "4b481ecd5712247a9ac841b0a05fff1dd427fcc412c2ed641501d4e5f0736b6b"
+          }
+        },
+        {
+          "pair": "pair-bank-cirrhosis-decompensated-101.png",
+          "originals": [
+            "bank-cirrhosis-decompensated-101-1440.png",
+            "bank-cirrhosis-decompensated-101-390.png"
+          ],
+          "width": 1297,
+          "height": 767,
+          "sha256": "f8d89bdd6e2d8a7df07d4f3063d1d44da198fd6d571510bce2b04d231656aa45",
+          "originalHashes": {
+            "bank-cirrhosis-decompensated-101-1440.png": "0f8545fe4f608e2c6775bc35e6f200dc3097f20b1b29ec2db374e2932d24b434",
+            "bank-cirrhosis-decompensated-101-390.png": "229e80d61afce3ff3a638933bb48dc694561b71cee130c5b1e1ffbc229182135"
+          }
+        },
+        {
+          "pair": "pair-bank-cirrhosis-decompensated-108.png",
+          "originals": [
+            "bank-cirrhosis-decompensated-108-1440.png",
+            "bank-cirrhosis-decompensated-108-390.png"
+          ],
+          "width": 1297,
+          "height": 823,
+          "sha256": "5a9885164612b7cd656a2bfa0de6861621be8fcf898a3bf676a7ebc7b9205475",
+          "originalHashes": {
+            "bank-cirrhosis-decompensated-108-1440.png": "9f0612c5d3cf769a0602cef064e32d0920f2f11a7211a21d9ef199231a11d929",
+            "bank-cirrhosis-decompensated-108-390.png": "defbbbce514c9c80aecf995c0b297f81da31ab807ffce42fefa1e6dd70da2744"
+          }
+        },
+        {
+          "pair": "pair-bank-cirrhosis-decompensated-106.png",
+          "originals": [
+            "bank-cirrhosis-decompensated-106-1440.png",
+            "bank-cirrhosis-decompensated-106-390.png"
+          ],
+          "width": 1297,
+          "height": 750,
+          "sha256": "3026646c960e355087586a072ceb7ff19e8e8ee1f4e24cd6798ad9d343d5ac9f",
+          "originalHashes": {
+            "bank-cirrhosis-decompensated-106-1440.png": "0c954053643bec8b148e844231a8a910aef14664d690aef730fc6537cdb4802d",
+            "bank-cirrhosis-decompensated-106-390.png": "0602f7a49adf7ddd7dc786491133a9500d3f2c9bb2c2488699510000692cf6fa"
+          }
+        },
+        {
+          "pair": "pair-bank-cirrhosis-decompensated-105.png",
+          "originals": [
+            "bank-cirrhosis-decompensated-105-1440.png",
+            "bank-cirrhosis-decompensated-105-390.png"
+          ],
+          "width": 1297,
+          "height": 825,
+          "sha256": "59a3b838a67242ff2d4a3416f4336c2dd2d903e72c7f684cdc4514b9bbcdb471",
+          "originalHashes": {
+            "bank-cirrhosis-decompensated-105-1440.png": "8d51cf889b6fa45f4e45d56ec8b300f7937cf4ec75b6995d70d36f6caefb45ae",
+            "bank-cirrhosis-decompensated-105-390.png": "16fb5bafa6f00626ade75bd583f1ea71050d7fea7d52226d5ed8a584cb0d15cc"
+          }
+        },
+        {
+          "pair": "pair-bank-cirrhosis-decompensated-107.png",
+          "originals": [
+            "bank-cirrhosis-decompensated-107-1440.png",
+            "bank-cirrhosis-decompensated-107-390.png"
+          ],
+          "width": 1297,
+          "height": 770,
+          "sha256": "73fe7ee082d26969a8fca56cbdf7610fef359f9d9a76e092bd3918f12fa64137",
+          "originalHashes": {
+            "bank-cirrhosis-decompensated-107-1440.png": "a2d06d4bd69fba64628013bc0bbf9fb7e76e8e86a92cfc195d83f20cd571ad2b",
+            "bank-cirrhosis-decompensated-107-390.png": "6521ff659bbf97fba4517c881206a0e08d2128a2161d0e7da0d2d00ef53be741"
+          }
+        }
+      ]
+    },
+    "limits": "Isolated unauthenticated production-build preview. Eight changed bank questions graded shuffled correct/incorrect at1440/390 via two groups. Previously verified nutrition check all4options runtime verified; other sampled bank items runtime-only. All52body/12lessonmetadata/15references DOM exact; visual scope is recorded captures only.320px overflow checked. No fullparent/wholechapter closure."
+  },
+  "remainingReview": {
+    "nextAction": "Continue remaining HBV11 and HCV29 selected whole questions,16selected original hepatic bodies and2checks with complete book sections plus approved official current guidance/labels; include relevant metadata, fullfigures and unselected parent scope. Full cirrhosis/enteral/fluid parents, Chapters11/19 and Chapter1printed7/PDF19entry15 remain open. Chapter11printed161/PDF169 context revisited. Historical157 lexical candidates still need review or incidental classification and are not exhaustive semantic scope. Continue full82chapter goal.",
+    "wholeCirrhosisParentPending": true,
+    "wholeEnteralParentPending": true,
+    "hepaticWholeQuestionPending": 40
+  },
+  "release": {
+    "branch": "audit/rxprep-content-2026-09-24",
+    "commit": null,
+    "push": "pending",
+    "receipt": "enteral-nutrition-broader-cirrhosis-longitudinal-release.json",
+    "mainMerge": "not performed",
+    "production": "not verified"
+  },
+  "wholeGoalComplete": false,
+  "privateSourceFilesInGit": false
+}
