@@ -105,8 +105,8 @@
     "branch": "audit/rxprep-content-2026-09-24",
     "baseCommit": "38588b9d9d40c8b3ca005dcc8f5a5ba4ea536f3a",
     "remoteVerifiedAtStart": true,
-    "commit": null,
-    "push": "pending",
+    "commit": "9503938ffe953a461980e237cbcf4cd2fd3b543e",
+    "push": "verified",
     "production": "not verified",
     "receipt": "enteral-nutrition-broader-aluminum-toxicity-release.json",
     "contentCommits": [
@@ -192,13 +192,14 @@
       "f550f8a374a88d9c63454e0ac79d7e339dee2c5a",
       "57a9aeb4518db68fc89ee7342521fabaa7fb2990",
       "8868c68641ec27028e2ee802032c10d081c7ff18",
-      "0d8e1bf60578b0cb663d0aba5f1281ff14d80caf"
+      "0d8e1bf60578b0cb663d0aba5f1281ff14d80caf",
+      "9503938ffe953a461980e237cbcf4cd2fd3b543e"
     ],
     "previousVerifiedContentCommit": "65ac22e809246ba35e196493eedaa0bea3b0898b",
     "baseReceipt": "aca4501d4b775c9e5dbb74a1c3e7c337e6ebb87e",
-    "remoteHashObserved": null,
-    "exactRemoteObservedByTool": false,
-    "remoteVerifiedAt": null,
+    "remoteHashObserved": "9503938ffe953a461980e237cbcf4cd2fd3b543e",
+    "exactRemoteObservedByTool": true,
+    "remoteVerifiedAt": "2026-10-05T05:12:55.839650+00:00",
     "mainMerge": "not performed"
   },
   "openIssues": [
@@ -7039,7 +7040,7 @@
     }
   },
   "pendingCalciumGuidelineSourceAuthorization": {
-    "status": "approved; KDIGO2017 scoped, Society2016 acute hypocalcemia and hypercalcemia/HCM treatment scopes verified; broader/chronic items remain pending separate requests",
+    "status": "approved; additional official guidelines, FDA labels and primary academic clinical references authorized by direct user response. Remaining whole clinical items still require source review and verification.",
     "question": "May I use existing KDIGO2017CKD-MBD, Endocrine Society hypercalcemia-of-malignancy, and Society for Endocrinology acute hypo/hypercalcemia sources toverify retainedcalciumclaims notcoveredbybook?",
     "reason": "Originalbook-onlyrequestrequires explicitauthorization foradditionaleducational sources.",
     "bookSupportedWorkContinued": true,
@@ -7052,7 +7053,8 @@
     ],
     "approvalText": "I give approval",
     "approvalRecordedAt": "2026-10-05T03:17:55.489159+00:00",
-    "reviewEvidence": "enteral-nutrition-broader-ckd-binder-review.json"
+    "reviewEvidence": "enteral-nutrition-broader-ckd-binder-review.json",
+    "additionalSourceApprovalEvidence": "additionalAuthoritativeClinicalSourceAuthorization"
   },
   "latestEnteralBroaderCkdBinderReview": {
     "evidence": "enteral-nutrition-broader-ckd-binder-review.json",
@@ -7422,6 +7424,17 @@
     "wholeENModuleVerified": false,
     "wholeChaptersVerified": false,
     "all108OriginalIdsKeysCorrectTextsAnchorsRelativeOrderPreserved": true,
-    "all1180CumulativeWholeObjectsUnchanged": true
+    "all1180CumulativeWholeObjectsUnchanged": true,
+    "release": {
+      "branch": "audit/rxprep-content-2026-09-24",
+      "commit": "9503938ffe953a461980e237cbcf4cd2fd3b543e",
+      "push": "verified",
+      "receipt": "enteral-nutrition-broader-aluminum-toxicity-release.json",
+      "mainMerge": "not performed",
+      "production": "not verified",
+      "remoteHashObserved": "9503938ffe953a461980e237cbcf4cd2fd3b543e",
+      "exactRemoteObservedByTool": true,
+      "remoteVerifiedAt": "2026-10-05T05:12:55.839650+00:00"
+    }
   }
 }

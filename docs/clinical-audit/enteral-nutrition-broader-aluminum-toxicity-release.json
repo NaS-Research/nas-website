@@ -1,0 +1,112 @@
+{
+  "verifiedAt": "2026-10-05T05:12:55.839650+00:00",
+  "unit": "enteral-nutrition:broader-aluminum-toxicity",
+  "contentCommit": "9503938ffe953a461980e237cbcf4cd2fd3b543e",
+  "remoteBranch": "audit/rxprep-content-2026-09-24",
+  "remoteHashObserved": "9503938ffe953a461980e237cbcf4cd2fd3b543e",
+  "exactRemoteObservedByTool": true,
+  "coverage": {
+    "evidence": "enteral-nutrition-broader-aluminum-toxicity-review.json",
+    "moduleBankBefore": 108,
+    "moduleBankAfter": 108,
+    "wholeQuestionsVerified": 1,
+    "existingQuestionsNewlyVerified": 1,
+    "newDistinctQuestionsAdded": 0,
+    "sourceVerifiedBankIds": [
+      "calcium-phosphorus-050"
+    ],
+    "broaderFeedingBankVerifiedAfter": 309,
+    "wholeBodiesVerified": 1,
+    "retainedWholeBodiesReconciled": 0,
+    "newWholeBodiesAdded": 1,
+    "sourceVerifiedBodyHeadings": {
+      "hyperphosphatemia-ckd-mbd": [
+        "Recognize aluminum accumulation beyond phosphate control"
+      ]
+    },
+    "moduleWholeQuestionsVerifiedAfter": 96,
+    "moduleQuestionTotal": 108,
+    "remainingQuestionIds": [
+      "calcium-phosphorus-001",
+      "calcium-phosphorus-003",
+      "calcium-phosphorus-006",
+      "calcium-phosphorus-008",
+      "calcium-phosphorus-011",
+      "calcium-phosphorus-012",
+      "calcium-phosphorus-017",
+      "calcium-phosphorus-023",
+      "calcium-phosphorus-035",
+      "calcium-phosphorus-092",
+      "calcium-phosphorus-095",
+      "calcium-phosphorus-102"
+    ],
+    "remainingCKDBodyHeadings": [
+      "Recognize acute phosphate toxicity"
+    ],
+    "newWholeMetadataChecksFiguresVerified": false,
+    "newlyCountedCumulativeQuestions": 0,
+    "wholeLessonsVerified": false,
+    "wholeParentModuleVerified": false,
+    "wholeENModuleVerified": false,
+    "wholeChaptersVerified": false,
+    "all108OriginalIdsKeysCorrectTextsAnchorsRelativeOrderPreserved": true,
+    "all1180CumulativeWholeObjectsUnchanged": true
+  },
+  "validation": {
+    "productionBuild": {
+      "status": "passed",
+      "exitCode": 0,
+      "pages": 567,
+      "isolatedBaseCommit": "38588b9d9d40c8b3ca005dcc8f5a5ba4ea536f3a",
+      "bundler": "webpack",
+      "initialTurbopackAttempt": "Rejected external node_modules symlink before successful established webpack build; no source change required"
+    },
+    "browserStatus": "passed",
+    "structureQuestions": 108,
+    "rawCapturesInspected": 8,
+    "nativeComparisons": 3,
+    "noReviewedQuestionCumulativeDerivativeInOriginalSelection": true,
+    "all1180CumulativeObjectsUnchanged": true,
+    "objectPreservation": {
+      "status": "passed",
+      "bankBefore": 108,
+      "bankAfter": 108,
+      "wholeQuestionsReconciled": 1,
+      "all108OriginalIdsKeysCorrectTextsAnchorsRelativeOrderPreserved": true,
+      "originalWholeStemPreserved": true,
+      "other107WholeQuestionObjectsUnchanged": true,
+      "oneWholeBodyAdded": true,
+      "allOriginalBodiesMetadataChecksFiguresReferencesUnchanged": true,
+      "oneHistoricalSourceReferenceAdded": true,
+      "all1180WholeCumulativeObjectsUnchanged": true,
+      "noReviewedUnitQuestionInOriginalCumulativeSelection": true,
+      "allOtherModuleWholeObjectsUnchanged": true,
+      "wholeParentModuleVerified": false
+    }
+  },
+  "preservation": {
+    "status": "passed",
+    "baselinePathsChecked": 809,
+    "allUnrelatedDraftBytesAndDeletionsPreserved": true,
+    "bothProductBaselineDraftsRecoveredByRemovingExactScopedTails": true,
+    "allOtherWorkingLedgerFieldsPreserved": true,
+    "allOtherCommittedLedgerEntriesPreserved": true,
+    "onlyHeadDerivedVerifiedProductsStagedOrCommitted": true,
+    "scope": [
+      "src/data/modules/calciumPhosphorusHomeostasis.js",
+      "src/data/questionBanks/calciumPhosphorusHomeostasis.js",
+      "docs/clinical-audit/enteral-nutrition-broader-aluminum-toxicity-review.json",
+      "docs/clinical-audit/module-ledger.json",
+      "docs/clinical-audit/chapter-ledger.json",
+      "docs/clinical-audit/sequential-resume.json",
+      "docs/clinical-audit/enteral-nutrition-broader-mineral-interpretation-review.json"
+    ]
+  },
+  "publication": {
+    "mainMerge": "not performed",
+    "production": "not verified"
+  },
+  "wholeGoalComplete": false,
+  "nextAction": "Continue calcium/phosphorus using the approved authoritative source policy. Resolve whole acute phosphate toxicity body; chronic hypoparathyroidism and magnesium/PTH physiology; ionized calcium/pH/correction limits; vitaminD stores; FHH urinary phenotype; hypercalcemia dialysis. Check guideline editions and document discrepancies rather than adopting historical treatment regimens automatically. Complete calcium parent and enteral reintegration before Chapter1 fluid-needs checkpoint closes. Earliest sequential checkpoint remains Chapter1 printed7/PDF19 entry15 with Chapter11 feeding dependencies. Full82-chapter goal remains active.",
+  "receiptCommit": "This receipt follows the exact verified content commit;its own remote hash is verified separately in execution output."
+}
