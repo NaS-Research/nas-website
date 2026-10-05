@@ -270,3 +270,51 @@ const verifiedAldNutritionQuestions = {
 for (const item of alcoholAssociatedLiverDiseaseQuestionBank) {
   if (verifiedAldNutritionQuestions[item.id]) Object.assign(item, verifiedAldNutritionQuestions[item.id]);
 }
+
+
+// Distinct NAC cases retain stable IDs, keys and lesson anchors.
+const verifiedAldNacQuestions = {
+  "alcohol-associated-liver-disease-089": {
+    "question": "An adult with confirmed severe alcohol-associated hepatitis is eligible for corticosteroids after specialist assessment. Which NAC plan best matches the 2024 ACG guideline?",
+    "choices": [
+      "Use a verified short course of IV NAC as an adjunct to corticosteroids while nutrition and AUD care continue.",
+      "Use NAC alone as a proven cure and omit other disease treatment.",
+      "Replace the prescribed IV course with an oral supplement because formulations are interchangeable.",
+      "Omit nutrition and infection monitoring once NAC is started."
+    ],
+    "rationale": "ACG recommends IV NAC as an adjunct to corticosteroids in severe AH and describes a five-day course within specialist care. Eligibility, nutrition, infection management and AUD treatment remain necessary. Neither NAC monotherapy as a cure nor an unreviewed change of formulation follows this evidence."
+  },
+  "alcohol-associated-liver-disease-090": {
+    "question": "A verified severe-AH protocol order specifies NAC 100 mg/kg for day 2 in a 70 kg adult. The injectable concentrate is 200 mg/mL. How much concentrate is required before dilution?",
+    "choices": [
+      "35 mL.",
+      "7 mL.",
+      "70 mL.",
+      "350 mL."
+    ],
+    "rationale": "The dose is 70 kg × 100 mg/kg = 7,000 mg. At 200 mg/mL, draw 7,000 mg ÷ 200 mg/mL = 35 mL of concentrate. The 100 mg/kg/day dose on days 2 through 5 was used in the primary AH trial; this case supplies a verified protocol order. The 35 mL is not the final infusion volume: IV NAC must be diluted with the rate, compatible diluent and total fluid plan independently verified."
+  },
+  "alcohol-associated-liver-disease-091": {
+    "question": "During an IV NAC infusion for severe AH, a patient develops urticaria, wheezing and hypotension. Which immediate response is safest?",
+    "choices": [
+      "Stop the infusion immediately and initiate urgent appropriate treatment for a serious hypersensitivity reaction.",
+      "Continue at the same rate because favorable trial safety rules out a serious reaction.",
+      "Restart immediately while wheezing and hypotension continue.",
+      "Attribute all symptoms to hepatic encephalopathy and defer infusion assessment."
+    ],
+    "rationale": "The acetylcysteine label warns of serious and potentially life-threatening hypersensitivity, including hypotension and wheezing. Stop the infusion immediately and treat appropriately; unresolved respiratory or circulatory symptoms require urgent care. Favorable average trial safety does not exclude an individual serious reaction. Any later treatment decision requires supervised review after treatment and symptom resolution."
+  },
+  "alcohol-associated-liver-disease-092": {
+    "question": "A learner says the primary Nguyen-Khac trial proves that adding five days of IV NAC to prednisolone improves six-month survival in severe AH. Which correction is most accurate?",
+    "choices": [
+      "One-month survival improved, but the primary six-month survival outcome was not significantly improved.",
+      "The trial established a guaranteed six-month survival benefit for every treated patient.",
+      "The trial proved NAC monotherapy is superior to all corticosteroid strategies.",
+      "The trial established that nutrition and AUD follow-up can be omitted after NAC."
+    ],
+    "rationale": "The randomized trial reported a one-month survival benefit for the combination, but did not significantly improve its primary six-month survival outcome. ACG describes divergent adjunctive-study results and supports a qualified adjunctive role. The trial does not establish guaranteed individual benefit, NAC monotherapy superiority or replacement of nutrition and recovery care."
+  }
+};
+for (const item of alcoholAssociatedLiverDiseaseQuestionBank) {
+  if (verifiedAldNacQuestions[item.id]) Object.assign(item, verifiedAldNacQuestions[item.id]);
+}

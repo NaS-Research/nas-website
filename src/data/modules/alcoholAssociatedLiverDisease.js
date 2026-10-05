@@ -229,3 +229,98 @@ alcoholAssociatedLiverDiseaseModule.references.push(...[
     "href": "https://www.gov.uk/guidance/clinical-guidelines-for-alcohol-treatment/16-alcohol-care-in-acute-hospitals"
   }
 ]);
+
+
+// Source-reconciled NAC adjunct, infusion safety and coordinated organ support.
+const verifiedAldNacLesson = {
+  "metadata": {
+    "summary": "Use NAC with an eligible severe-hepatitis plan while protecting nutrition, infusion safety, infection care and organ function.",
+    "concepts": [
+      "Adjunctive NAC",
+      "Indication and dilution",
+      "Infusion safety",
+      "Nutrition and infection",
+      "Response and recovery"
+    ],
+    "application": "Reconcile the disease-treatment order and fluid plan, measure intake, evaluate deterioration, and assign response monitoring and recovery follow-up.",
+    "keyPoints": [
+      "NAC is a specialist-managed adjunct, with qualified survival evidence.",
+      "Concentrate volume is not final infusion volume.",
+      "Serious infusion reactions require immediate treatment.",
+      "Nutrition, infection care and response assessment proceed together."
+    ]
+  },
+  "bodies": [
+    {
+      "heading": "Confirm eligibility before adding an adjunct",
+      "body": "Severe alcohol-associated hepatitis (AH) requires hospital assessment of the syndrome, competing causes and organ function. The 2024 ACG guideline uses MELD greater than 20 to identify severe AH and recommends corticosteroids when no contraindication is present. Active infection, uncontrolled diabetes, gastrointestinal bleeding and severe renal failure require assessment and control before steroid eligibility is reconsidered. Adding N-acetylcysteine (NAC) does not make an unsafe steroid plan acceptable."
+    },
+    {
+      "heading": "Use IV NAC alongside selected disease therapy",
+      "body": "ACG recommends intravenous NAC as an adjunct to corticosteroids in severe AH; its guidance describes a five-day infusion course within specialist management. NAC does not replace corticosteroid eligibility assessment, nutrition, infection treatment or alcohol use disorder (AUD) care. Oral supplement products and inhaled preparations are not interchangeable substitutes for a prescribed IV regimen. A patient ineligible for corticosteroids needs an individualized liver-team plan rather than an assumption that NAC alone is established definitive treatment."
+    },
+    {
+      "heading": "Explain the survival evidence accurately",
+      "body": "In the 2011 randomized trial by Nguyen-Khac and colleagues, five days of IV NAC added to prednisolone improved one-month survival, but the primary outcome of six-month survival was not significantly improved. ACG also describes divergent adjunctive-study results and limitations in their interpretation. This supports an evidence-qualified adjunctive role rather than a claim of proven durable survival benefit, a guaranteed individual response or a cure. NAC monotherapy has not demonstrated the same established role as the guideline-recommended combination."
+    },
+    {
+      "heading": "Match the infusion to its indication",
+      "body": "The US ACETADOTE label concerns prevention or reduction of hepatic injury after potentially toxic acetaminophen ingestion. Its overdose regimens and stopping rules should not automatically replace a severe-AH protocol. AH use is outside that labeled indication. Confirm the clinical purpose, weight, product concentration, dose, infusion schedule, compatible diluent and total fluid plan with the prescribing team and pharmacy. The original AH trial used five days of IV NAC, including 100 mg/kg/day on days 2 through 5; a historical trial is not an instruction to copy every preparation or infusion rate into every patient."
+    },
+    {
+      "heading": "Calculate concentrate separately from final fluid",
+      "body": "Worked example: a verified severe-AH protocol order specifies NAC 100 mg/kg for day 2 in a 70 kg adult. The available injectable concentrate is 200 mg/mL. The daily dose is 70 kg × 100 mg/kg = 7,000 mg; the volume drawn from the concentrate is 7,000 mg ÷ 200 mg/mL = 35 mL. That is not the final infusion volume. IV NAC requires dilution and a verified rate. Pharmacy should reconcile the protocol with product instructions and the individual fluid plan, especially if fluid restriction is required; cirrhosis or ascites alone does not establish that restriction."
+    },
+    {
+      "heading": "Monitor infusion reactions and fluid safety",
+      "body": "Check the product contraindications and reaction history before treatment: ACETADOTE lists previous hypersensitivity to acetylcysteine as a contraindication. Observe during and after infusion; asthma requires close monitoring. New urticaria with wheezing or hypotension can signal a serious hypersensitivity reaction. Immediately stop the infusion and initiate urgent appropriate treatment. Do not merely slow the pump and wait or restart during unresolved acute symptoms. Any later regimen decision needs supervised reassessment after treatment and symptom resolution. Include NAC diluent in total IV fluid accounting and monitor fluid balance and sodium; excessive volume can cause dangerous hyponatremia."
+    },
+    {
+      "heading": "Feed according to intake and clinical safety",
+      "body": "Measure actual intake and involve the nutrition team. Add oral nutrition supplements when food alone is insufficient; use enteral support when requirements remain unmet and the gastrointestinal route is feasible. Esophageal varices alone are not an absolute contraindication to an enteric feeding tube. Active bleeding requires urgent assessment; if a tube is required after recent variceal banding, AASLD advises close monitoring for rebleeding rather than a blanket permanent prohibition. Assess airway and aspiration safety, minimize avoidable fasting, provide indicated thiamine and micronutrients, and follow the individualized refeeding plan. Reserve parenteral nutrition for situations in which oral and enteral routes are insufficient or cannot be used."
+    },
+    {
+      "heading": "Distinguish infection treatment from prevention",
+      "body": "Do not give prophylactic antibiotics universally just because severe AH is present. Continue infection surveillance and treat documented or strongly suspected infection promptly. Cirrhotic ascites with new pain, AKI or confusion warrants prompt SBP assessment even without fever. Ascitic PMNs at least 250 cells/mm³ support active antibiotics without waiting for a positive culture; assess albumin, local resistance and clues to a secondary abdominal source. Obtain indicated samples promptly, without delaying urgent treatment in an unstable patient. Acute gastrointestinal bleeding and secondary prevention after prior SBP have separate antibiotic indications. Control an active infection before the team reassesses corticosteroid eligibility."
+    },
+    {
+      "heading": "Reassess organ function, response and recovery together",
+      "body": "Track blood pressure, oxygenation, mental status, bleeding, kidney function, electrolytes, fluid balance, intake and liver trajectory. New kidney injury needs review of infection, volume loss, bleeding, shock and medicine toxicity; one creatinine result does not establish HRS-AKI. Review response to corticosteroids with the Lille score at day 4 or 7; ACG recommends stopping corticosteroids in nonresponders with a score greater than 0.45. Organ deterioration may require intensive care and timely hepatology or transplant assessment. Goals-of-care and symptom support should reflect prognosis, eligibility and patient preferences. Continue AUD treatment and a concrete recovery and nutrition follow-up plan after the acute infusion ends."
+    }
+  ],
+  "check": {
+    "question": "A severe-AH order specifies a five-day IV NAC adjunctive course. A handoff proposes stopping solely because 21 hours have elapsed, citing the acetaminophen-overdose label. What is the best response?",
+    "choices": [
+      "Clarify the indication and verified AH protocol with the prescribing team and pharmacy, while reviewing current safety and eligibility.",
+      "Automatically stop every AH course at 21 hours because all NAC indications share one regimen.",
+      "Continue indefinitely because NAC guarantees long-term survival.",
+      "Replace the infusion with an oral supplement without reviewing the order."
+    ],
+    "rationale": "AH adjunctive treatment and labeled acetaminophen-overdose treatment have different clinical purposes and regimens. ACG describes a five-day IV adjunctive course in severe AH; the overdose label does not automatically govern that course. Reconcile the order with the team, patient safety and protocol rather than changing treatment by assumption. NAC does not guarantee durable survival, and oral supplements do not substitute for a prescribed IV preparation."
+  }
+};
+for (const lesson of alcoholAssociatedLiverDiseaseModule.submodules) {
+  if (lesson.slug === "nac-support") {
+    Object.assign(lesson, verifiedAldNacLesson.metadata);
+    lesson.lesson = verifiedAldNacLesson.bodies;
+    Object.assign(lesson.check, verifiedAldNacLesson.check);
+  }
+}
+alcoholAssociatedLiverDiseaseModule.references.push(...[
+  {
+    "label": "Primary randomized trial of prednisolone plus NAC in severe AH (2011).",
+    "href": "https://www.nejm.org/doi/full/10.1056/NEJMoa1101214"
+  },
+  {
+    "label": "ACETADOTE US prescribing information: indication, dilution and infusion safety.",
+    "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=472f158a-5ab9-4308-8e49-1116e6ea3d39"
+  },
+  {
+    "label": "ACG official 2024 ALD guideline highlights: five-day NAC adjunct and response assessment.",
+    "href": "https://webfiles.gi.org/links/journals/ACG-Alcohol-Associated-Liver-Disease-Guidelines-Highlights-2024.pdf"
+  },
+  {
+    "label": "AASLD official clinical teaching: prompt paracentesis and the inclusive SBP PMN threshold.",
+    "href": "https://www.aasld.org/liver-fellow-network/core-series/why-series/why-timing-matters-paracentesis-admission-cirrhosis"
+  }
+]);
