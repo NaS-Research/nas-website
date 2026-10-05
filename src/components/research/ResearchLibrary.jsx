@@ -98,12 +98,11 @@ export default function ResearchLibrary({ items, types }) {
         </div>
       </div>
 
-      <div className="research-results-meta" aria-live="polite">
-        <span>{Math.min(limit, filteredItems.length)} of {filteredItems.length} entries</span>
-        {(activeType !== "All" || area !== "All areas" || query) && (
+      {(activeType !== "All" || area !== "All areas" || query) && (
+        <div className="research-results-meta">
           <button type="button" onClick={clearFilters}>Clear filters</button>
-        )}
-      </div>
+        </div>
+      )}
 
       {filteredItems.length ? (
         <div className={`research-results research-results--${view}`}>
