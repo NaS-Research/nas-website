@@ -105,8 +105,8 @@
     "branch": "audit/rxprep-content-2026-09-24",
     "baseCommit": "32acd9bcbe008bc3cba7f66bebe4d3f8a0db4207",
     "remoteVerifiedAtStart": true,
-    "commit": null,
-    "push": "pending",
+    "commit": "2580f8928729bb813b434c2a99323c76c2af3419",
+    "push": "verified",
     "production": "not verified",
     "receipt": "enteral-nutrition-broader-icu-stress-ulcer-release.json",
     "contentCommits": [
@@ -183,13 +183,14 @@
       "afd9ddb34407a6cf2b68e36b250870b414e99d94",
       "65ac22e809246ba35e196493eedaa0bea3b0898b",
       "5b1fc9f67323f7aaf4217cf1d31a63e955155282",
-      "2c93600fb8bdfff0d28276cad3d719da7eef02e3"
+      "2c93600fb8bdfff0d28276cad3d719da7eef02e3",
+      "2580f8928729bb813b434c2a99323c76c2af3419"
     ],
     "previousVerifiedContentCommit": "65ac22e809246ba35e196493eedaa0bea3b0898b",
     "baseReceipt": "aca4501d4b775c9e5dbb74a1c3e7c337e6ebb87e",
-    "remoteHashObserved": null,
-    "exactRemoteObservedByTool": false,
-    "remoteVerifiedAt": null,
+    "remoteHashObserved": "2580f8928729bb813b434c2a99323c76c2af3419",
+    "exactRemoteObservedByTool": true,
+    "remoteVerifiedAt": "2026-10-05T01:39:09.477135+00:00",
     "mainMerge": "not performed"
   },
   "openIssues": [
@@ -6243,7 +6244,18 @@
     "all81IdsStemsChoicesKeysAnchorsPreserved": true,
     "all1180CumulativeObjectsUnchanged": true,
     "noNewQuestionIds": true,
-    "retained2026ClinicalScopeNotRemoved": true
+    "retained2026ClinicalScopeNotRemoved": true,
+    "release": {
+      "branch": "audit/rxprep-content-2026-09-24",
+      "commit": "2580f8928729bb813b434c2a99323c76c2af3419",
+      "push": "verified",
+      "receipt": "enteral-nutrition-broader-icu-stress-ulcer-release.json",
+      "mainMerge": "not performed",
+      "production": "not verified",
+      "remoteHashObserved": "2580f8928729bb813b434c2a99323c76c2af3419",
+      "exactRemoteObservedByTool": true,
+      "remoteVerifiedAt": "2026-10-05T01:39:09.477135+00:00"
+    }
   },
   "pendingIcu2026SourceAuthorization": {
     "status": "question pending; no answer observed",
