@@ -1,0 +1,107 @@
+{
+  "verifiedAt": "2026-10-05T00:37:29.629778+00:00",
+  "unit": "enteral-nutrition:broader-hydrocortisone-formulation-label-dependencies",
+  "contentCommit": "65ac22e809246ba35e196493eedaa0bea3b0898b",
+  "remoteBranch": "audit/rxprep-content-2026-09-24",
+  "remoteHashObserved": "65ac22e809246ba35e196493eedaa0bea3b0898b",
+  "exactRemoteObservedByTool": true,
+  "coverage": {
+    "evidence": "enteral-nutrition-broader-adrenal-formulation-label-review.json",
+    "moduleBank": 35,
+    "sourceVerifiedBankIds": [
+      "adrenal-insufficiency-21-case",
+      "adrenal-insufficiency-22-case",
+      "adrenal-insufficiency-granule-tube",
+      "adrenal-insufficiency-actovial-volume"
+    ],
+    "newFullQuestionsVerified": 4,
+    "broaderFeedingBankVerifiedAfter": 205,
+    "wholeBodiesVerifiedThisUnit": 3,
+    "formulationsLessonQuestionTotal": 6,
+    "priorTwoQuestionsExactRechecked": [
+      "adrenal-insufficiency-20-case",
+      "adrenal-insufficiency-23-case"
+    ],
+    "allSixFormulationsQuestionsSourceVerified": true,
+    "wholeFormulationsLessonVerified": false,
+    "formulationsWholeBodiesVerifiedIncludingPriorFoodBody": 4,
+    "formulationsBodyTotal": 7,
+    "remainingBodyHeadings": [
+      "Choose an oral product deliberately",
+      "Prevent measurement errors",
+      "Transition after stabilization"
+    ],
+    "embeddedCheckNewlyVerified": false,
+    "figureNewlyVerified": false,
+    "metadataNewlyVerified": false,
+    "wholeParentModuleVerified": false,
+    "wholeENModuleVerified": false,
+    "wholeChaptersVerified": false,
+    "all1180CumulativeObjectsUnchanged": true,
+    "all35OriginalIdsStemsKeysChoicesAndAnchorsPreserved": true,
+    "noNewQuestionIds": true,
+    "originalClinicalScopeRetained": true,
+    "unrelatedDraftsPreserved": true
+  },
+  "validation": {
+    "productionBuild": {
+      "status": "passed",
+      "exitCode": 0,
+      "pages": 567,
+      "isolatedExactBase": "54e32bbee79982de9d4a4508b4d959b2a9aa318a"
+    },
+    "browserStatus": "passed",
+    "structureQuestions": 35,
+    "rawCapturesActuallyViewed": 24,
+    "nativeComparisons": 12,
+    "all1180CumulativeObjectsUnchanged": true,
+    "objectPreservation": {
+      "status": "passed",
+      "all232ModulesPreserved": true,
+      "other231ModulesExactUnchanged": true,
+      "bankTotal": 35,
+      "newFullQuestionIds": [
+        "adrenal-insufficiency-21-case",
+        "adrenal-insufficiency-22-case",
+        "adrenal-insufficiency-granule-tube",
+        "adrenal-insufficiency-actovial-volume"
+      ],
+      "other31QuestionsExactUnchanged": true,
+      "all35OriginalIdsStemsChoicesKeysAndAnchorsPreserved": true,
+      "other39Bodies11ChecksAllMetadataAndFigureComponentsUnchanged": true,
+      "all1180CumulativeObjectsExactUnchanged": true,
+      "prior11ReferencesUnchanged": true,
+      "addedDatedManufacturerReference": {
+        "label": "DailyMed manufacturer Solu-Cortef label, revised July 2024; updated September 2025",
+        "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=65eefd58-b166-4d71-ade6-45c8fdf86922"
+      },
+      "independentExactFractionCalculations": {
+        "100/2": "50",
+        "25/50": "1/2",
+        "250/2": "125",
+        "500/4": "125",
+        "1000/8": "125",
+        "0.25*50": "25/2",
+        "1*50": "50",
+        "2*50": "100"
+      },
+      "wholeLessonVerified": false
+    }
+  },
+  "preservation": {
+    "status": "passed",
+    "baselinePathsChecked": 809,
+    "allUnrelatedDraftBytesAndDeletionsPreserved": true,
+    "workingLedgerPriorFieldsUnchanged": true,
+    "otherCommittedLedgerEntriesUnchanged": true,
+    "candidateProductBytesExactMatchCommittedAndWorking": true,
+    "indexEmpty": true
+  },
+  "publication": {
+    "mainMerge": "not performed",
+    "production": "not verified"
+  },
+  "wholeGoalComplete": false,
+  "nextAction": "Continue remaining broader feeding dependencies and reconcile historical lexical inventory against current complete verified evidence. Hydrocortisone formulations now has six whole questions source verified,including two retained prior questions;three full bodies,embeddedcheck,figure and metadata still pending before whole lesson closure. Do not substitute pediatric product labeling for adult physiologic replacement/stress transition guidance. Continue dependencies before completing Chapter1printed7/PDF19formulaentry15fluidneeds. Full82chaptergoal remains active.",
+  "receiptCommit": "This receipt follows the exact verified content commit;its own remote hash is verified separately in execution output."
+}
