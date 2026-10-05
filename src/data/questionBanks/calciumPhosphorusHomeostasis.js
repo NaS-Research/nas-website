@@ -217,3 +217,10 @@ calciumPhosphorusHomeostasisQuestionBank.splice(calciumPhosphorusHomeostasisQues
   "reviewHref": "#hypophosphatemia",
   "difficulty": "clinical"
 });
+
+const sourceReviewedPhosphatePhysiologyRationales = {
+  "calcium-phosphorus-041": "Ferric carboxymaltose is the product identified by the current Injectafer warning. A randomized trial and its physiological substudy support increased biologically active FGF23 and renal phosphate wasting after this product; that mechanism should not be generalized to every iron formulation. The current label reports severe or prolonged symptomatic hypophosphatemia, including osteomalacia and fractures, after single or repeated exposure. Repeated exposure is therefore not required. Ferrous sulfate and carbonyl iron are oral products; the alternative claiming hypophosphatemia from iron sucrose in every patient is not defensible. Review the current label for phosphate testing and management."
+};
+for (const question of calciumPhosphorusHomeostasisQuestionBank) {
+  if (sourceReviewedPhosphatePhysiologyRationales[question.id]) question.rationale = sourceReviewedPhosphatePhysiologyRationales[question.id];
+}

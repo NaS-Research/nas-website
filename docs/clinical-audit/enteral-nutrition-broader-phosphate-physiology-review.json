@@ -1,0 +1,1019 @@
+{
+  "updated": "2026-10-05T02:12:19.721480+00:00",
+  "unit": "enteral-nutrition:broader-phosphate-physiology-whole-lesson",
+  "status": "Hypophosphatemia lesson verified;parentmodule/EN/chaptersreviewing",
+  "baseCommit": "8a34362e9ec2014a28f69c91737fba0b724247fc",
+  "sourceAuthorization": {
+    "approvalText": "I give approval",
+    "approvedSources": [
+      "2012EndocrineSocietyApproach to the Hypophosphatemic Patient",
+      "2018JCIInsightRandomized trial of intravenous iron-induced hypophosphatemia"
+    ],
+    "previouslyApprovedSourcesCarriedForward": [
+      "ASPEN2020refeedingsyndrome consensus",
+      "FDAcurrentphosphateproductlabels",
+      "FDAAugust2026Injectaferlabel"
+    ],
+    "approvalNotInferredFromElapsedTime": true
+  },
+  "sourceReview": {
+    "Endocrine2012": {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3319220/",
+      "doi": "10.1210/jc.2011-1319",
+      "sourceType": "Clinical review, not new randomized evidence or contemporary dosing guideline",
+      "completeAdoptedScopesRead": [
+        "Background",
+        "ClinicalPresentation",
+        "three-mechanismclassification",
+        "renalmechanismPTH/FGF23/tubulopathycontext",
+        "completeNonrenal section",
+        "Laboratoryassessment firstrenal-versus-nonrenal evaluation paragraph",
+        "Table1allrowsandreferencefootnote"
+      ],
+      "originalTable1RenderedAndActuallyViewed": true,
+      "htmlSha256": "51d6ec97244d47cfca1d644b170aaeefe0978bc636cbe27dd6da2757f4f7e3c3",
+      "limits": "No historical treatment regimens, pediatric thresholds, rare disease-treatment tables or nomogram calculations newly adopted."
+    },
+    "JCI2018": {
+      "url": "https://insight.jci.org/articles/view/124486",
+      "doi": "10.1172/jci.insight.124486",
+      "sourceType": "Randomized trial secondary analyses and nested physiological substudy",
+      "completeSectionsRead": [
+        "Abstract",
+        "Introduction",
+        "Results",
+        "Discussion",
+        "Methods",
+        "funding",
+        "authorcontributions",
+        "acknowledgments",
+        "conflictsofinterest"
+      ],
+      "renderedOriginalSourceFigureAndTableActuallyViewed": [
+        "Figure3all8panelslegendandcaption",
+        "Table3allrowsandfootnote"
+      ],
+      "htmlSha256": "4d0690086d871e4c6ad47de21ea2787b1c72e95c0262fd2c6e89ede9042e61d8",
+      "limits": "Only product-specific intactFGF23/renalwasting mechanism adopted. No comparative rates, iron dosing, universal class effect, molecular cleavage mechanism or trial-proven fractureoutcome taught. Trialfollow-up5weeks;pregnant/dialysispatientsexcluded;differenttotalirondoses;AMAGfunding andauthorsconflicts reviewed. Osteomalacia/fracture safety teaching supported separately by FDA."
+    },
+    "ASPEN2020": {
+      "url": "https://aspenjournals.onlinelibrary.wiley.com/doi/full/10.1002/ncp.10474",
+      "retainedEvidence": "enteral-nutrition-broader-phosphate-mechanism-safety-review.json",
+      "Table2CompleteTextRechecked": true,
+      "freshTable2VisualVerification": false,
+      "browserResult": "Publisherbrowserchallenge;nochallengebypassattempted",
+      "Table2NotNewlyAdoptedInFinalBody": true
+    },
+    "bookAndProductLabelEvidenceRetained": [
+      "enteral-nutrition-broader-phosphate-route-label-review.json",
+      "enteral-nutrition-broader-phosphate-mechanism-safety-review.json"
+    ],
+    "privateSourceFilesOutsideGit": true
+  },
+  "sourceReconciliation": [
+    {
+      "issue": "Retained platelet dysfunction statement is not established by approved2012review or reviewedbook;ASPENTable2lists thrombocytopenia, a distinct finding.",
+      "resolution": "Retained the source-supported hematologic complication hemolysis; revised the broader complication list to supported manifestations and explicit frequency limits. No claim that platelet dysfunction is biologically impossible. Did not substitute a fresh unrenderedtable-dependent thrombocytopenia teaching claim. Unverified specific platelet statement recorded here rather than declared verified."
+    },
+    {
+      "issue": "FCMmechanism and regulatory clinical outcomes previously collapsed; repeatedexposure qualification could imply single-dose exclusion.",
+      "resolution": "Distinguished randomized-trialFGF23/renalwasting mechanism from FDAsafety osteomalacia/fractures;current warning includes single/repeated exposure. No class-wide or exact molecular cleavage claim."
+    },
+    {
+      "issue": "Possible mechanisms may coexist and urine phosphate needs context.",
+      "resolution": "Added coexistence and renal phosphate handling evaluation. No unsupportedurinarycutoff or newdiagnosticformula."
+    }
+  ],
+  "changes": {
+    "bodies": {
+      "Classify the mechanism": {
+        "before": "Insulin, respiratory alkalosis, catecholamines, and refeeding can shift phosphate into cells. Poor intake, malabsorption, antacids, or binders can reduce absorption. Hyperparathyroidism, tubular disorders, and selected medications can increase renal loss. Urine phosphate assessment can help when the mechanism remains unclear. Ferric carboxymaltose can produce FGF23-mediated renal phosphate wasting, including serious symptomatic hypophosphatemia after repeated exposure.",
+        "after": "Insulin, respiratory alkalosis, catecholamines and refeeding can shift phosphate into cells. Poor intake, malabsorption, antacids or binders can reduce phosphate availability. Hyperparathyroidism, tubular disorders and selected medications can increase renal loss; multiple mechanisms may coexist. Assess renal phosphate handling when the cause is unclear. Ferric carboxymaltose can increase biologically active FGF23 and promote renal phosphate wasting. Its current safety warning includes single and repeated exposure; use the label-specific monitoring and symptom assessment described below."
+      },
+      "Recognize severe depletion": {
+        "before": "Profound hypophosphatemia can cause weakness, respiratory failure, rhabdomyolysis, encephalopathy, seizures, hemolysis, platelet dysfunction, and impaired myocardial performance. A laboratory threshold should never replace assessment of symptoms, duration, organ function, and concurrent potassium, magnesium, and calcium abnormalities.",
+        "after": "Severe acute hypophosphatemia can cause weakness, respiratory failure, rhabdomyolysis, encephalopathy, seizures or hemolysis and can impair cardiac function. These complications are not present in every patient, and neurological symptoms are uncommon presentations overall. Assess symptoms, duration, organ function and concurrent potassium, magnesium and calcium abnormalities alongside the phosphate result."
+      }
+    },
+    "questions": {
+      "calcium-phosphorus-041": {
+        "before": {
+          "id": "calcium-phosphorus-041",
+          "question": "Which iron product has a current label warning for serious symptomatic hypophosphatemia, especially after repeated exposure?",
+          "choices": [
+            "Ferric carboxymaltose",
+            "Ferrous sulfate",
+            "Iron sucrose in every patient",
+            "Oral carbonyl iron"
+          ],
+          "answer": 0,
+          "rationale": "Ferric carboxymaltose can increase FGF23 activity and cause renal phosphate wasting, osteomalacia, or fracture after repeated exposure.",
+          "reviewHref": "#hypophosphatemia"
+        },
+        "after": {
+          "id": "calcium-phosphorus-041",
+          "question": "Which iron product has a current label warning for serious symptomatic hypophosphatemia, especially after repeated exposure?",
+          "choices": [
+            "Ferric carboxymaltose",
+            "Ferrous sulfate",
+            "Iron sucrose in every patient",
+            "Oral carbonyl iron"
+          ],
+          "answer": 0,
+          "rationale": "Ferric carboxymaltose is the product identified by the current Injectafer warning. A randomized trial and its physiological substudy support increased biologically active FGF23 and renal phosphate wasting after this product; that mechanism should not be generalized to every iron formulation. The current label reports severe or prolonged symptomatic hypophosphatemia, including osteomalacia and fractures, after single or repeated exposure. Repeated exposure is therefore not required. Ferrous sulfate and carbonyl iron are oral products; the alternative claiming hypophosphatemia from iron sucrose in every patient is not defensible. Review the current label for phosphate testing and management.",
+          "reviewHref": "#hypophosphatemia"
+        }
+      }
+    },
+    "wholeBodies": [
+      "Classify the mechanism",
+      "Recognize severe depletion"
+    ],
+    "addedBodies": [],
+    "addedQuestions": [],
+    "addedReferences": [
+      {
+        "label": "Endocrine Society review: Approach to the Hypophosphatemic Patient (2012)",
+        "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3319220/"
+      },
+      {
+        "label": "Randomized trial of intravenous iron-induced hypophosphatemia (2018)",
+        "href": "https://insight.jci.org/articles/view/124486"
+      }
+    ],
+    "checks": {
+      "hypophosphatemia": {
+        "before": {
+          "question": "A patient with severe hypophosphatemia also has hyperkalemia and requires IV replacement. Which product characteristic matters most?",
+          "choices": [
+            "Avoid potassium phosphate; assess a non-potassium plan and its sodium, renal and calcium limits",
+            "Use potassium phosphate because phosphate is low",
+            "Combine calcium and phosphate in one line",
+            "Ignore kidney function"
+          ],
+          "answer": 0,
+          "rationale": "Potassium phosphates injection is contraindicated in hyperkalemia. Sodium phosphate avoids additional potassium but adds sodium and is not automatically suitable: review sodium, calcium, phosphate, kidney function and the actual label before choosing a replacement plan. Giving potassium solely because phosphate is low, co-infusing with calcium, or ignoring kidney function is unsafe.",
+          "reviewHref": "#hypophosphatemia"
+        },
+        "after": {
+          "question": "A patient with severe hypophosphatemia also has hyperkalemia and requires IV replacement. Which product characteristic matters most?",
+          "choices": [
+            "Avoid potassium phosphate; assess a non-potassium plan and its sodium, renal and calcium limits",
+            "Use potassium phosphate because phosphate is low",
+            "Combine calcium and phosphate in one line",
+            "Ignore kidney function"
+          ],
+          "answer": 0,
+          "rationale": "Potassium phosphates injection is contraindicated in hyperkalemia. Sodium phosphate avoids additional potassium but adds sodium and is not automatically suitable: review sodium, calcium, phosphate, kidney function and the actual label before choosing a replacement plan. Giving potassium solely because phosphate is low, co-infusing with calcium, or ignoring kidney function is unsafe.",
+          "reviewHref": "#hypophosphatemia"
+        },
+        "retainedUnchanged": true
+      }
+    },
+    "figures": [
+      "hypophosphatemia"
+    ],
+    "wholeLessons": []
+  },
+  "coverage": {
+    "evidence": "enteral-nutrition-broader-phosphate-physiology-review.json",
+    "moduleQuestions": 102,
+    "wholeQuestionsReconciled": 22,
+    "newWholeQuestionsVerified": 1,
+    "newVerifiedBankIds": [
+      "calcium-phosphorus-041"
+    ],
+    "previouslyVerifiedQuestionsRecheckedWithoutDoubleCounting": 21,
+    "broaderFeedingBankVerifiedAfter": 233,
+    "wholeBodiesNewlyVerified": 2,
+    "wholeBodiesReconciled": 5,
+    "wholeHypophosphatemiaLessonVerified": true,
+    "wholeLessonMetadataVerified": true,
+    "figureVerified": true,
+    "embeddedCheckVerified": true,
+    "sourceVerifiedBankIds": [
+      "calcium-phosphorus-036",
+      "calcium-phosphorus-037",
+      "calcium-phosphorus-038",
+      "calcium-phosphorus-039",
+      "calcium-phosphorus-040",
+      "calcium-phosphorus-041",
+      "calcium-phosphorus-iron-repeat-monitoring",
+      "calcium-phosphorus-iron-persistent-warning",
+      "calcium-phosphorus-080",
+      "calcium-phosphorus-081",
+      "calcium-phosphorus-082",
+      "calcium-phosphorus-083",
+      "calcium-phosphorus-084",
+      "calcium-phosphorus-085",
+      "calcium-phosphorus-086",
+      "calcium-phosphorus-087",
+      "calcium-phosphorus-088",
+      "calcium-phosphorus-089",
+      "calcium-phosphorus-094",
+      "calcium-phosphorus-098",
+      "calcium-phosphorus-104",
+      "calcium-phosphorus-107"
+    ],
+    "wholeParentModuleVerified": false,
+    "wholeENModuleVerified": false,
+    "wholeChaptersVerified": false,
+    "all102IdsStemsChoicesKeysAnchorsAndRelativeOrderUnchanged": true,
+    "all1180CumulativeObjectsUnchanged": true
+  },
+  "wholeBodyReview": [
+    {
+      "heading": "Classify the mechanism",
+      "finalBody": "Insulin, respiratory alkalosis, catecholamines and refeeding can shift phosphate into cells. Poor intake, malabsorption, antacids or binders can reduce phosphate availability. Hyperparathyroidism, tubular disorders and selected medications can increase renal loss; multiple mechanisms may coexist. Assess renal phosphate handling when the cause is unclear. Ferric carboxymaltose can increase biologically active FGF23 and promote renal phosphate wasting. Its current safety warning includes single and repeated exposure; use the label-specific monitoring and symptom assessment described below.",
+      "wholeBodyVerified": true,
+      "sourceEvidence": "enteral-nutrition-broader-phosphate-physiology-review.json"
+    },
+    {
+      "heading": "Review ferric carboxymaltose safety",
+      "finalBody": "The August 2026 Injectafer label carries a boxed warning for severe, prolonged symptomatic hypophosphatemia, including hospitalization, osteomalacia and fractures. It can occur after a single dose or repeated doses, with normal baseline phosphate and without apparent risk factors. Correct pre-existing hypophosphatemia before treatment. Check phosphate before a repeat course in at-risk patients and in anyone receiving a repeat course within three months; monitor patients at risk for chronic low phosphate. Evaluate new weakness, fatigue, muscle or bone pain, treat hypophosphatemia as indicated, and consider permanent discontinuation for severe symptomatic or persistent hypophosphatemia.",
+      "wholeBodyVerified": true,
+      "sourceEvidence": "Previously verified full route-label or August2026safety body;unchanged and rechecked."
+    },
+    {
+      "heading": "Recognize severe depletion",
+      "finalBody": "Severe acute hypophosphatemia can cause weakness, respiratory failure, rhabdomyolysis, encephalopathy, seizures or hemolysis and can impair cardiac function. These complications are not present in every patient, and neurological symptoms are uncommon presentations overall. Assess symptoms, duration, organ function and concurrent potassium, magnesium and calcium abnormalities alongside the phosphate result.",
+      "wholeBodyVerified": true,
+      "sourceEvidence": "enteral-nutrition-broader-phosphate-physiology-review.json"
+    },
+    {
+      "heading": "Choose route and product deliberately",
+      "finalBody": "Oral replacement is preferred for stable, less severe depletion when absorption is reliable. Severe symptomatic depletion can require IV replacement. The potassium-phosphates label also permits IV correction when oral or enteral replacement is not possible, insufficient or contraindicated; IV use is not limited to severity alone. Select the actual product and an individualized institutional plan. Potassium phosphate adds potassium and is contraindicated in hyperkalemia and severe renal impairment; sodium phosphate adds sodium and requires caution in renal impairment and sodium-retaining states. Sodium phosphate is not automatically safe: high sodium, high phosphate and low calcium are contraindications in its label. Review potassium, sodium, phosphate, calcium, kidney function, other intake, access, dilution and infusion rate. Concentrated phosphate injection must be diluted before administration.",
+      "wholeBodyVerified": true,
+      "sourceEvidence": "Previously verified full route-label or August2026safety body;unchanged and rechecked."
+    },
+    {
+      "heading": "Monitor for overcorrection",
+      "finalBody": "IV phosphate can cause hypocalcemia, hypotension, acute kidney injury, hyperphosphatemia and calcium-phosphate precipitation. Follow phosphate, calcium, potassium, magnesium and kidney function and reassess before additional doses. The potassium-phosphates label prohibits infusion with calcium-containing IV fluids; obtain a safe access plan rather than co-infusing through a shared calcium line. Separately compounded parenteral nutrition requires its own evaluation of calcium-phosphate ratios, concentrations, pH, temperature, compatibility and stability. That admixture assessment does not authorize shared-line replacement infusions. Dilution, product-specific concentration and rate limits, and repeat laboratory assessment protect against overcorrection; do not transfer one product’s instructions to another.",
+      "wholeBodyVerified": true,
+      "sourceEvidence": "Previously verified full route-label or August2026safety body;unchanged and rechecked."
+    }
+  ],
+  "metadataReview": {
+    "wholeLessonMetadataVerified": true,
+    "final": {
+      "slug": "hypophosphatemia",
+      "title": "Hypophosphatemia",
+      "summary": "Low phosphate may reflect redistribution, reduced absorption, or renal loss. Severe depletion can impair respiratory, cardiac, neurologic, and hematologic function.",
+      "concepts": [
+        "Redistribution and refeeding",
+        "Renal and gastrointestinal loss",
+        "Oral versus IV replacement",
+        "Potassium and sodium phosphate selection"
+      ],
+      "visual": "phosphate-balance",
+      "application": "Before replacing phosphate, identify why it is low, whether the patient is symptomatic, which accompanying cation is appropriate, and what kidney function permits.",
+      "keyPoints": [
+        "Refeeding and respiratory alkalosis can lower phosphate rapidly.",
+        "Respiratory weakness is a dangerous manifestation.",
+        "Choose sodium or potassium phosphate based on the entire electrolyte pattern.",
+        "IV phosphate requires close mineral and kidney monitoring."
+      ]
+    },
+    "scope": "Title/summary/concepts/application/keypoints/visualbinding assessed against supported redistribution/absorption/renal mechanisms, severe dysfunction and prior route-label safety evidence."
+  },
+  "figureReview": {
+    "path": "src/components/learn/CalciumPhosphorusVisual.jsx",
+    "type": "phosphate-balance",
+    "wholeFigureVerified": true,
+    "unchanged": true,
+    "sourceScope": "All3mechanismcategories andnineexamples aligned to Endocrine2012Table1/Nonrenalsection;bottompatient/route/cation/renalquestions to prior label evidence. Qualitative clinical map;no empirical rates or measuredmolecularstructures."
+  },
+  "embeddedCheckReview": {
+    "final": {
+      "question": "A patient with severe hypophosphatemia also has hyperkalemia and requires IV replacement. Which product characteristic matters most?",
+      "choices": [
+        "Avoid potassium phosphate; assess a non-potassium plan and its sodium, renal and calcium limits",
+        "Use potassium phosphate because phosphate is low",
+        "Combine calcium and phosphate in one line",
+        "Ignore kidney function"
+      ],
+      "answer": 0,
+      "rationale": "Potassium phosphates injection is contraindicated in hyperkalemia. Sodium phosphate avoids additional potassium but adds sodium and is not automatically suitable: review sodium, calcium, phosphate, kidney function and the actual label before choosing a replacement plan. Giving potassium solely because phosphate is low, co-infusing with calcium, or ignoring kidney function is unsafe.",
+      "reviewHref": "#hypophosphatemia"
+    },
+    "wholeCheckVerified": true,
+    "unchanged": true,
+    "sourceEvidence": "Prior potassium/sodiumphosphatelabel review;newdesktopmobilebothfeedbackstates verified"
+  },
+  "questionReview": [
+    {
+      "id": "calcium-phosphorus-036",
+      "question": "Which mechanism commonly lowers phosphate during refeeding?",
+      "choices": [
+        "Insulin-driven intracellular uptake",
+        "Immediate renal failure",
+        "Complete intestinal blockade by glucose",
+        "PTH suppression alone"
+      ],
+      "answer": 0,
+      "rationale": "After carbohydrate reintroduction, rising insulin promotes intracellular phosphate uptake for metabolism and can rapidly lower serum phosphate in a depleted patient. Potassium can fall too; the mechanism for the accompanying magnesium decline is less well established. This is not explained by immediate kidney failure, complete blockade of intestinal glucose absorption or PTH suppression alone. Assess all three electrolytes and the clinical nutrition exposure.",
+      "reviewHref": "#hypophosphatemia",
+      "wholeStemAlternativesAnswerExplanationAndAnchorVerified": true,
+      "sourceScope": "Prior mechanism-label evidence and final unchanged question rechecked.",
+      "newlyCounted": false
+    },
+    {
+      "id": "calcium-phosphorus-037",
+      "question": "Why can severe hypophosphatemia cause respiratory failure?",
+      "choices": [
+        "ATP depletion weakens respiratory muscles",
+        "It always causes bronchospasm",
+        "It raises hemoglobin oxygen affinity only",
+        "It blocks albumin production immediately"
+      ],
+      "answer": 0,
+      "rationale": "Phosphate is required for ATP production, and severe depletion can impair respiratory muscle function enough to cause respiratory failure. The book identifies weakness and respiratory failure; ASPEN describes the energy and muscle link. Bronchospasm is not an inevitable effect. Increased hemoglobin oxygen affinity and impaired tissue oxygen release can also occur, but that is not the only mechanism and does not replace assessment of respiratory muscle weakness. Immediate blockade of albumin production is not the explanation.",
+      "reviewHref": "#hypophosphatemia",
+      "wholeStemAlternativesAnswerExplanationAndAnchorVerified": true,
+      "sourceScope": "Prior mechanism-label evidence and final unchanged question rechecked.",
+      "newlyCounted": false
+    },
+    {
+      "id": "calcium-phosphorus-038",
+      "question": "Which presentation supports IV rather than oral phosphate replacement?",
+      "choices": [
+        "Severe symptomatic depletion with unreliable enteral absorption",
+        "Stable mild asymptomatic depletion with a working gut",
+        "Normal phosphate",
+        "Hyperphosphatemia"
+      ],
+      "answer": 0,
+      "rationale": "Severe symptomatic depletion with unreliable enteral absorption supports monitored IV replacement. The supplied book describes IV treatment for severe depletion; the potassium-phosphates label permits IV correction when oral or enteral replacement is not possible, insufficient or contraindicated. Severity is therefore not the only route criterion. Stable mild depletion with a functioning gut favors oral replacement, while normal or high phosphate does not justify replacement. Product choice, kidney function, accompanying potassium or sodium, calcium, dilution and monitoring still require assessment.",
+      "reviewHref": "#hypophosphatemia",
+      "wholeStemAlternativesAnswerExplanationAndAnchorVerified": true,
+      "sourceScope": "Prior route-label whole-question evidence; final unchanged object rechecked.",
+      "newlyCounted": false
+    },
+    {
+      "id": "calcium-phosphorus-039",
+      "question": "Why must potassium be reviewed before selecting potassium phosphate?",
+      "choices": [
+        "The product adds clinically important potassium",
+        "Potassium phosphate contains no phosphate",
+        "Potassium never changes in illness",
+        "It prevents all arrhythmias"
+      ],
+      "answer": 0,
+      "rationale": "Potassium phosphates injection supplies both phosphate and potassium: the reviewed concentrate contains 3 mmol phosphorus and 4.4 mEq potassium per mL. Its potassium load must be counted with other sources and can worsen hyperkalemia; the product is contraindicated in hyperkalemia. It contains phosphate, illness can change potassium, and adding potassium does not prevent every arrhythmia. A concurrent potassium deficit may influence selection only after the complete product and patient safety review.",
+      "reviewHref": "#hypophosphatemia",
+      "wholeStemAlternativesAnswerExplanationAndAnchorVerified": true,
+      "sourceScope": "Prior route-label whole-question evidence; final unchanged object rechecked.",
+      "newlyCounted": false
+    },
+    {
+      "id": "calcium-phosphorus-040",
+      "question": "Which complication can follow overly aggressive IV phosphate?",
+      "choices": [
+        "Hypocalcemia and calcium-phosphate precipitation",
+        "Permanent hypermagnesemia in every patient",
+        "Isolated low LDL",
+        "Respiratory alkalosis in every patient"
+      ],
+      "answer": 0,
+      "rationale": "IV phosphate can cause hyperphosphatemia, hypocalcemia and calcium-phosphate precipitation, with kidney injury and serious infusion complications. Excessive or rapid administration increases risk. Follow phosphate, calcium, potassium, magnesium and kidney function and use the labeled diluted infusion. The potassium product must not be infused with calcium-containing IV fluids. Permanent hypermagnesemia and respiratory alkalosis are not inevitable consequences, and an isolated LDL change is not the relevant phosphate-infusion hazard.",
+      "reviewHref": "#hypophosphatemia",
+      "wholeStemAlternativesAnswerExplanationAndAnchorVerified": true,
+      "sourceScope": "Prior route-label whole-question evidence; final unchanged object rechecked.",
+      "newlyCounted": false
+    },
+    {
+      "id": "calcium-phosphorus-041",
+      "question": "Which iron product has a current label warning for serious symptomatic hypophosphatemia, especially after repeated exposure?",
+      "choices": [
+        "Ferric carboxymaltose",
+        "Ferrous sulfate",
+        "Iron sucrose in every patient",
+        "Oral carbonyl iron"
+      ],
+      "answer": 0,
+      "rationale": "Ferric carboxymaltose is the product identified by the current Injectafer warning. A randomized trial and its physiological substudy support increased biologically active FGF23 and renal phosphate wasting after this product; that mechanism should not be generalized to every iron formulation. The current label reports severe or prolonged symptomatic hypophosphatemia, including osteomalacia and fractures, after single or repeated exposure. Repeated exposure is therefore not required. Ferrous sulfate and carbonyl iron are oral products; the alternative claiming hypophosphatemia from iron sucrose in every patient is not defensible. Review the current label for phosphate testing and management.",
+      "reviewHref": "#hypophosphatemia",
+      "wholeStemAlternativesAnswerExplanationAndAnchorVerified": true,
+      "sourceScope": "August2026Injectaferboxedwarning/5.1 plus 2018JCI trial results,Discussion,Methods,Figure3/Table3; differential alternatives evaluated as written. Clinical osteomalacia/fractures are regulatory safety findings, not trial endpoints.",
+      "newlyCounted": true
+    },
+    {
+      "id": "calcium-phosphorus-iron-repeat-monitoring",
+      "question": "An adult with normal baseline phosphate and no apparent risk factors is scheduled for a repeat Injectafer course eight weeks after the prior course. Which step matches the August 2026 label?",
+      "choices": [
+        "Check serum phosphate before the repeat course",
+        "Skip testing because the baseline level was normal",
+        "Test only after a fracture occurs",
+        "Assume one prior course excludes later hypophosphatemia"
+      ],
+      "answer": 0,
+      "rationale": "Eight weeks is within three months. The label calls for checking phosphate before a repeat course within that interval even when no apparent risk factors are present. Normal baseline phosphate does not exclude the adverse effect. Waiting for a fracture or assuming a previous course removes risk can miss severe or prolonged hypophosphatemia. Correct any pre-existing hypophosphatemia before further treatment.",
+      "reviewHref": "#hypophosphatemia",
+      "difficulty": "clinical",
+      "wholeStemAlternativesAnswerExplanationAndAnchorVerified": true,
+      "sourceScope": "Prior mechanism-label evidence and final unchanged question rechecked.",
+      "newlyCounted": false
+    },
+    {
+      "id": "calcium-phosphorus-iron-persistent-warning",
+      "question": "After Injectafer, an adult develops persistent hypophosphatemia and new bone pain. Which response follows its August 2026 warning?",
+      "choices": [
+        "Continue repeat courses without reassessing phosphate",
+        "Treat the hypophosphatemia and consider permanent discontinuation",
+        "Attribute every symptom to anemia without evaluation",
+        "Assume hypophosphatemia can occur only after multiple doses"
+      ],
+      "answer": 1,
+      "rationale": "Assess the symptoms and phosphate abnormality, treat as medically indicated, and consider permanently discontinuing Injectafer for severe symptomatic or persistent hypophosphatemia. This is a clinical consideration, not an automatic mandate in every mild transient case. The warning includes single-dose events, normal baseline phosphate and patients without apparent risk factors; anemia-like symptoms should not prevent evaluation.",
+      "reviewHref": "#hypophosphatemia",
+      "difficulty": "clinical",
+      "wholeStemAlternativesAnswerExplanationAndAnchorVerified": true,
+      "sourceScope": "Prior mechanism-label evidence and final unchanged question rechecked.",
+      "newlyCounted": false
+    },
+    {
+      "id": "calcium-phosphorus-080",
+      "question": "A local protocol specifies 0.08 mmol/kg for a hypothetical phosphate replacement calculation. What amount corresponds to 50 kg before all clinical adjustments?",
+      "choices": [
+        "4 mmol",
+        "625 mmol",
+        "50.08 mmol",
+        "4 mEq calcium"
+      ],
+      "answer": 0,
+      "rationale": "For the explicitly hypothetical protocol in the stem, 50 kg × 0.08 mmol/kg = 4 mmol phosphate; kg cancels. Dividing weight by the factor or adding the two values does not calculate the stated dose. mEq calcium is a different substance and unit. The book contains these historical phosphate factors, but this arithmetic exercise does not select a current product dose, dilution, route or infusion rate. Current product labeling and the patient’s phosphate, potassium, calcium, kidney function and other intake determine the actual prescription.",
+      "reviewHref": "#hypophosphatemia",
+      "wholeStemAlternativesAnswerExplanationAndAnchorVerified": true,
+      "sourceScope": "Prior route-label whole-question evidence; final unchanged object rechecked.",
+      "newlyCounted": false
+    },
+    {
+      "id": "calcium-phosphorus-081",
+      "question": "A local protocol specifies 0.08 mmol/kg for a hypothetical phosphate replacement calculation. What amount corresponds to 62 kg before all clinical adjustments?",
+      "choices": [
+        "4.96 mmol",
+        "775 mmol",
+        "62.08 mmol",
+        "5 mEq calcium"
+      ],
+      "answer": 0,
+      "rationale": "For the explicitly hypothetical protocol in the stem, 62 kg × 0.08 mmol/kg = 4.96 mmol phosphate; kg cancels. Dividing weight by the factor or adding the two values does not calculate the stated dose. mEq calcium is a different substance and unit. The book contains these historical phosphate factors, but this arithmetic exercise does not select a current product dose, dilution, route or infusion rate. Current product labeling and the patient’s phosphate, potassium, calcium, kidney function and other intake determine the actual prescription.",
+      "reviewHref": "#hypophosphatemia",
+      "wholeStemAlternativesAnswerExplanationAndAnchorVerified": true,
+      "sourceScope": "Prior route-label whole-question evidence; final unchanged object rechecked.",
+      "newlyCounted": false
+    },
+    {
+      "id": "calcium-phosphorus-082",
+      "question": "A local protocol specifies 0.08 mmol/kg for a hypothetical phosphate replacement calculation. What amount corresponds to 70 kg before all clinical adjustments?",
+      "choices": [
+        "5.6 mmol",
+        "875 mmol",
+        "70.08 mmol",
+        "5.6 mEq calcium"
+      ],
+      "answer": 0,
+      "rationale": "For the explicitly hypothetical protocol in the stem, 70 kg × 0.08 mmol/kg = 5.6 mmol phosphate; kg cancels. Dividing weight by the factor or adding the two values does not calculate the stated dose. mEq calcium is a different substance and unit. The book contains these historical phosphate factors, but this arithmetic exercise does not select a current product dose, dilution, route or infusion rate. Current product labeling and the patient’s phosphate, potassium, calcium, kidney function and other intake determine the actual prescription.",
+      "reviewHref": "#hypophosphatemia",
+      "wholeStemAlternativesAnswerExplanationAndAnchorVerified": true,
+      "sourceScope": "Prior route-label whole-question evidence; final unchanged object rechecked.",
+      "newlyCounted": false
+    },
+    {
+      "id": "calcium-phosphorus-083",
+      "question": "A local protocol specifies 0.08 mmol/kg for a hypothetical phosphate replacement calculation. What amount corresponds to 85 kg before all clinical adjustments?",
+      "choices": [
+        "6.8 mmol",
+        "1062.5 mmol",
+        "85.08 mmol",
+        "6.8 mEq calcium"
+      ],
+      "answer": 0,
+      "rationale": "For the explicitly hypothetical protocol in the stem, 85 kg × 0.08 mmol/kg = 6.8 mmol phosphate; kg cancels. Dividing weight by the factor or adding the two values does not calculate the stated dose. mEq calcium is a different substance and unit. The book contains these historical phosphate factors, but this arithmetic exercise does not select a current product dose, dilution, route or infusion rate. Current product labeling and the patient’s phosphate, potassium, calcium, kidney function and other intake determine the actual prescription.",
+      "reviewHref": "#hypophosphatemia",
+      "wholeStemAlternativesAnswerExplanationAndAnchorVerified": true,
+      "sourceScope": "Prior route-label whole-question evidence; final unchanged object rechecked.",
+      "newlyCounted": false
+    },
+    {
+      "id": "calcium-phosphorus-084",
+      "question": "A local protocol specifies 0.08 mmol/kg for a hypothetical phosphate replacement calculation. What amount corresponds to 100 kg before all clinical adjustments?",
+      "choices": [
+        "8 mmol",
+        "1250 mmol",
+        "100.08 mmol",
+        "8 mEq calcium"
+      ],
+      "answer": 0,
+      "rationale": "For the explicitly hypothetical protocol in the stem, 100 kg × 0.08 mmol/kg = 8 mmol phosphate; kg cancels. Dividing weight by the factor or adding the two values does not calculate the stated dose. mEq calcium is a different substance and unit. The book contains these historical phosphate factors, but this arithmetic exercise does not select a current product dose, dilution, route or infusion rate. Current product labeling and the patient’s phosphate, potassium, calcium, kidney function and other intake determine the actual prescription.",
+      "reviewHref": "#hypophosphatemia",
+      "wholeStemAlternativesAnswerExplanationAndAnchorVerified": true,
+      "sourceScope": "Prior route-label whole-question evidence; final unchanged object rechecked.",
+      "newlyCounted": false
+    },
+    {
+      "id": "calcium-phosphorus-085",
+      "question": "A local protocol specifies 0.16 mmol/kg for a hypothetical phosphate replacement calculation. What amount corresponds to 50 kg before all clinical adjustments?",
+      "choices": [
+        "8 mmol",
+        "312.5 mmol",
+        "50.16 mmol",
+        "8 mEq calcium"
+      ],
+      "answer": 0,
+      "rationale": "For the explicitly hypothetical protocol in the stem, 50 kg × 0.16 mmol/kg = 8 mmol phosphate; kg cancels. Dividing weight by the factor or adding the two values does not calculate the stated dose. mEq calcium is a different substance and unit. The book contains these historical phosphate factors, but this arithmetic exercise does not select a current product dose, dilution, route or infusion rate. Current product labeling and the patient’s phosphate, potassium, calcium, kidney function and other intake determine the actual prescription.",
+      "reviewHref": "#hypophosphatemia",
+      "wholeStemAlternativesAnswerExplanationAndAnchorVerified": true,
+      "sourceScope": "Prior route-label whole-question evidence; final unchanged object rechecked.",
+      "newlyCounted": false
+    },
+    {
+      "id": "calcium-phosphorus-086",
+      "question": "A local protocol specifies 0.16 mmol/kg for a hypothetical phosphate replacement calculation. What amount corresponds to 62 kg before all clinical adjustments?",
+      "choices": [
+        "9.92 mmol",
+        "387.5 mmol",
+        "62.16 mmol",
+        "9.9 mEq calcium"
+      ],
+      "answer": 0,
+      "rationale": "For the explicitly hypothetical protocol in the stem, 62 kg × 0.16 mmol/kg = 9.92 mmol phosphate; kg cancels. Dividing weight by the factor or adding the two values does not calculate the stated dose. mEq calcium is a different substance and unit. The book contains these historical phosphate factors, but this arithmetic exercise does not select a current product dose, dilution, route or infusion rate. Current product labeling and the patient’s phosphate, potassium, calcium, kidney function and other intake determine the actual prescription.",
+      "reviewHref": "#hypophosphatemia",
+      "wholeStemAlternativesAnswerExplanationAndAnchorVerified": true,
+      "sourceScope": "Prior route-label whole-question evidence; final unchanged object rechecked.",
+      "newlyCounted": false
+    },
+    {
+      "id": "calcium-phosphorus-087",
+      "question": "A local protocol specifies 0.16 mmol/kg for a hypothetical phosphate replacement calculation. What amount corresponds to 70 kg before all clinical adjustments?",
+      "choices": [
+        "11.2 mmol",
+        "437.5 mmol",
+        "70.16 mmol",
+        "11.2 mEq calcium"
+      ],
+      "answer": 0,
+      "rationale": "For the explicitly hypothetical protocol in the stem, 70 kg × 0.16 mmol/kg = 11.2 mmol phosphate; kg cancels. Dividing weight by the factor or adding the two values does not calculate the stated dose. mEq calcium is a different substance and unit. The book contains these historical phosphate factors, but this arithmetic exercise does not select a current product dose, dilution, route or infusion rate. Current product labeling and the patient’s phosphate, potassium, calcium, kidney function and other intake determine the actual prescription.",
+      "reviewHref": "#hypophosphatemia",
+      "wholeStemAlternativesAnswerExplanationAndAnchorVerified": true,
+      "sourceScope": "Prior route-label whole-question evidence; final unchanged object rechecked.",
+      "newlyCounted": false
+    },
+    {
+      "id": "calcium-phosphorus-088",
+      "question": "A local protocol specifies 0.16 mmol/kg for a hypothetical phosphate replacement calculation. What amount corresponds to 85 kg before all clinical adjustments?",
+      "choices": [
+        "13.6 mmol",
+        "531.3 mmol",
+        "85.16 mmol",
+        "13.6 mEq calcium"
+      ],
+      "answer": 0,
+      "rationale": "For the explicitly hypothetical protocol in the stem, 85 kg × 0.16 mmol/kg = 13.6 mmol phosphate; kg cancels. Dividing weight by the factor or adding the two values does not calculate the stated dose. mEq calcium is a different substance and unit. The book contains these historical phosphate factors, but this arithmetic exercise does not select a current product dose, dilution, route or infusion rate. Current product labeling and the patient’s phosphate, potassium, calcium, kidney function and other intake determine the actual prescription.",
+      "reviewHref": "#hypophosphatemia",
+      "wholeStemAlternativesAnswerExplanationAndAnchorVerified": true,
+      "sourceScope": "Prior route-label whole-question evidence; final unchanged object rechecked.",
+      "newlyCounted": false
+    },
+    {
+      "id": "calcium-phosphorus-089",
+      "question": "A local protocol specifies 0.16 mmol/kg for a hypothetical phosphate replacement calculation. What amount corresponds to 100 kg before all clinical adjustments?",
+      "choices": [
+        "16 mmol",
+        "625 mmol",
+        "100.16 mmol",
+        "16 mEq calcium"
+      ],
+      "answer": 0,
+      "rationale": "For the explicitly hypothetical protocol in the stem, 100 kg × 0.16 mmol/kg = 16 mmol phosphate; kg cancels. Dividing weight by the factor or adding the two values does not calculate the stated dose. mEq calcium is a different substance and unit. The book contains these historical phosphate factors, but this arithmetic exercise does not select a current product dose, dilution, route or infusion rate. Current product labeling and the patient’s phosphate, potassium, calcium, kidney function and other intake determine the actual prescription.",
+      "reviewHref": "#hypophosphatemia",
+      "wholeStemAlternativesAnswerExplanationAndAnchorVerified": true,
+      "sourceScope": "Prior route-label whole-question evidence; final unchanged object rechecked.",
+      "newlyCounted": false
+    },
+    {
+      "id": "calcium-phosphorus-094",
+      "question": "A malnourished patient begins nutrition and develops weakness with a rapid phosphate fall. Which interpretation or action is most defensible?",
+      "choices": [
+        "Refeeding-related intracellular phosphate shift",
+        "Treat the isolated number without evaluating the mechanism",
+        "Ignore kidney function and symptoms",
+        "Delay urgent stabilization until every test returns"
+      ],
+      "answer": 0,
+      "rationale": "The timing after nutrition begins and rapid phosphate fall make refeeding-related intracellular shift a defensible concern, rather than proof that every other cause is excluded. Assess the patient promptly, review potassium and magnesium, kidney function and energy delivery, and treat the electrolyte abnormality. ASPEN recommends reassessing and reducing energy exposure when electrolytes fall precipitously or are difficult to correct; individualize the response. Do not treat the number alone, ignore organ function or delay stabilization for every diagnostic result.",
+      "reviewHref": "#hypophosphatemia",
+      "wholeStemAlternativesAnswerExplanationAndAnchorVerified": true,
+      "sourceScope": "Prior mechanism-label evidence and final unchanged question rechecked.",
+      "newlyCounted": false
+    },
+    {
+      "id": "calcium-phosphorus-098",
+      "question": "A patient with severe hypophosphatemia has potassium 5.8 mEq/L and oliguric kidney injury. Which interpretation or action is most defensible?",
+      "choices": [
+        "Avoid automatic potassium phosphate and obtain specialist protocol guidance",
+        "Treat the isolated number without evaluating the mechanism",
+        "Ignore kidney function and symptoms",
+        "Delay urgent stabilization until every test returns"
+      ],
+      "answer": 0,
+      "rationale": "A potassium of 5.8 mEq/L is hyperkalemia, and potassium phosphates injection is contraindicated in hyperkalemia. Oliguric acute kidney injury further requires an urgent individualized replacement and monitoring plan; a low phosphate alone does not make potassium phosphate safe. Sodium phosphate avoids that potassium load but adds sodium, has its own high-sodium, high-phosphate and low-calcium contraindications, and requires caution in renal impairment. Do not ignore kidney function, use a fixed plan from one laboratory value, or delay necessary reassessment. The question does not establish a specific replacement dose or a safe sodium-phosphate regimen.",
+      "reviewHref": "#hypophosphatemia",
+      "wholeStemAlternativesAnswerExplanationAndAnchorVerified": true,
+      "sourceScope": "Prior route-label whole-question evidence; final unchanged object rechecked.",
+      "newlyCounted": false
+    },
+    {
+      "id": "calcium-phosphorus-104",
+      "question": "Phosphate is low after several days of antacid and binder use, with chronic diarrhea. What is the best next interpretation or management principle?",
+      "choices": [
+        "Stop or adjust contributors and replace according to severity and route",
+        "Normalize one laboratory value without a mechanism",
+        "Use the same fixed plan for every patient",
+        "Ignore medication timing"
+      ],
+      "answer": 0,
+      "rationale": "Phosphate-binding drugs can reduce intestinal phosphate availability, and diarrhea can add gastrointestinal electrolyte losses. Review the actual antacid or binder and whether it is still indicated; adjust contributors and choose replacement according to severity, symptoms, absorption and kidney function. The book distinguishes less severe oral replacement from severe depletion requiring IV treatment; the product label adds route and safety limits. A fixed plan for everyone, correction without evaluating the cause or ignoring medication timing misses relevant contributors.",
+      "reviewHref": "#hypophosphatemia",
+      "wholeStemAlternativesAnswerExplanationAndAnchorVerified": true,
+      "sourceScope": "Prior mechanism-label evidence and final unchanged question rechecked.",
+      "newlyCounted": false
+    },
+    {
+      "id": "calcium-phosphorus-107",
+      "question": "A patient needs IV phosphate and is receiving a calcium infusion through the only available peripheral line. What is the best next interpretation or management principle?",
+      "choices": [
+        "Do not co-infuse potassium phosphate with calcium-containing IV fluids; obtain a safe access plan",
+        "Normalize one laboratory value without a mechanism",
+        "Use the same fixed plan for every patient",
+        "Ignore medication timing"
+      ],
+      "answer": 0,
+      "rationale": "Do not share the calcium infusion for potassium-phosphate replacement: the reviewed potassium-phosphates label explicitly prohibits infusion with calcium-containing IV fluids. Arrange a safe access and administration plan with the treating team rather than treating an unspecified compatibility check as permission to co-infuse. Separately compounded parenteral nutrition has its own validated calcium-phosphate compatibility and stability assessment and does not authorize this shared-line infusion. Precipitation can harm the patient; a single laboratory value, a fixed plan for every patient and ignoring administration timing do not resolve this access hazard.",
+      "reviewHref": "#hypophosphatemia",
+      "wholeStemAlternativesAnswerExplanationAndAnchorVerified": true,
+      "sourceScope": "Prior route-label whole-question evidence; final unchanged object rechecked.",
+      "newlyCounted": false
+    }
+  ],
+  "calculations": [
+    {
+      "id": "calcium-phosphorus-080",
+      "weightKg": 50,
+      "hypotheticalMmolPerKg": 0.08,
+      "independentlyRecomputedMmol": 4.0,
+      "notCurrentPrescribingRegimen": true
+    },
+    {
+      "id": "calcium-phosphorus-081",
+      "weightKg": 62,
+      "hypotheticalMmolPerKg": 0.08,
+      "independentlyRecomputedMmol": 4.96,
+      "notCurrentPrescribingRegimen": true
+    },
+    {
+      "id": "calcium-phosphorus-082",
+      "weightKg": 70,
+      "hypotheticalMmolPerKg": 0.08,
+      "independentlyRecomputedMmol": 5.6,
+      "notCurrentPrescribingRegimen": true
+    },
+    {
+      "id": "calcium-phosphorus-083",
+      "weightKg": 85,
+      "hypotheticalMmolPerKg": 0.08,
+      "independentlyRecomputedMmol": 6.8,
+      "notCurrentPrescribingRegimen": true
+    },
+    {
+      "id": "calcium-phosphorus-084",
+      "weightKg": 100,
+      "hypotheticalMmolPerKg": 0.08,
+      "independentlyRecomputedMmol": 8.0,
+      "notCurrentPrescribingRegimen": true
+    },
+    {
+      "id": "calcium-phosphorus-085",
+      "weightKg": 50,
+      "hypotheticalMmolPerKg": 0.16,
+      "independentlyRecomputedMmol": 8.0,
+      "notCurrentPrescribingRegimen": true
+    },
+    {
+      "id": "calcium-phosphorus-086",
+      "weightKg": 62,
+      "hypotheticalMmolPerKg": 0.16,
+      "independentlyRecomputedMmol": 9.92,
+      "notCurrentPrescribingRegimen": true
+    },
+    {
+      "id": "calcium-phosphorus-087",
+      "weightKg": 70,
+      "hypotheticalMmolPerKg": 0.16,
+      "independentlyRecomputedMmol": 11.2,
+      "notCurrentPrescribingRegimen": true
+    },
+    {
+      "id": "calcium-phosphorus-088",
+      "weightKg": 85,
+      "hypotheticalMmolPerKg": 0.16,
+      "independentlyRecomputedMmol": 13.6,
+      "notCurrentPrescribingRegimen": true
+    },
+    {
+      "id": "calcium-phosphorus-089",
+      "weightKg": 100,
+      "hypotheticalMmolPerKg": 0.16,
+      "independentlyRecomputedMmol": 16.0,
+      "notCurrentPrescribingRegimen": true
+    }
+  ],
+  "validation": {
+    "productionBuild": {
+      "status": "passed",
+      "exitCode": 0,
+      "pages": 567,
+      "isolatedBaseCommit": "8a34362e9ec2014a28f69c91737fba0b724247fc"
+    },
+    "structure": {
+      "status": "passed",
+      "questions": 102,
+      "hardErrors": [],
+      "sourceGaps": []
+    },
+    "objectPreservation": {
+      "status": "passed",
+      "all102IdsStemsChoicesKeysAnchorsAndRelativeOrderUnchanged": true,
+      "oneRationaleChanged": true,
+      "twoBodyTextsChanged": true,
+      "allOther101QuestionsUnchanged": true,
+      "otherThreeBodiesCheckFigureAndMetadataUnchanged": true,
+      "twoApprovedSourceReferencesAdded": true,
+      "all1180CumulativeObjectsUnchanged": true,
+      "allOtherModulesUnchanged": true,
+      "tenHypotheticalCalculationsIndependentlyRecomputed": true
+    },
+    "browser": {
+      "status": "passed",
+      "results": [
+        {
+          "width": 1440,
+          "module": "calcium-phosphorus-homeostasis",
+          "bodies": 25,
+          "exactMetadata": true,
+          "checkResults": [
+            {
+              "slug": "hypophosphatemia",
+              "wrong": true,
+              "feedbackAndAnchorVerified": true
+            },
+            {
+              "slug": "hypophosphatemia",
+              "wrong": false,
+              "feedbackAndAnchorVerified": true
+            }
+          ],
+          "references": 14,
+          "wholeLessonClinicalVerificationPendingEvidenceRecord": true,
+          "approvedPhosphateSourcesUsed": true,
+          "attempts": [
+            {
+              "target": "calcium-phosphorus-041",
+              "seed": 1,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-094",
+                "calcium-phosphorus-071",
+                "calcium-phosphorus-023",
+                "calcium-phosphorus-075",
+                "calcium-phosphorus-041",
+                "calcium-phosphorus-105",
+                "calcium-phosphorus-019",
+                "calcium-phosphorus-088",
+                "calcium-phosphorus-007",
+                "calcium-phosphorus-097"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-041",
+              "seed": 1,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-094",
+                "calcium-phosphorus-071",
+                "calcium-phosphorus-023",
+                "calcium-phosphorus-075",
+                "calcium-phosphorus-041",
+                "calcium-phosphorus-105",
+                "calcium-phosphorus-019",
+                "calcium-phosphorus-088",
+                "calcium-phosphorus-007",
+                "calcium-phosphorus-097"
+              ]
+            }
+          ],
+          "noHorizontalOverflow": true,
+          "unauthenticated": true
+        },
+        {
+          "width": 390,
+          "module": "calcium-phosphorus-homeostasis",
+          "bodies": 25,
+          "exactMetadata": true,
+          "checkResults": [
+            {
+              "slug": "hypophosphatemia",
+              "wrong": true,
+              "feedbackAndAnchorVerified": true
+            },
+            {
+              "slug": "hypophosphatemia",
+              "wrong": false,
+              "feedbackAndAnchorVerified": true
+            }
+          ],
+          "references": 14,
+          "wholeLessonClinicalVerificationPendingEvidenceRecord": true,
+          "approvedPhosphateSourcesUsed": true,
+          "attempts": [
+            {
+              "target": "calcium-phosphorus-041",
+              "seed": 1,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-094",
+                "calcium-phosphorus-071",
+                "calcium-phosphorus-023",
+                "calcium-phosphorus-075",
+                "calcium-phosphorus-041",
+                "calcium-phosphorus-105",
+                "calcium-phosphorus-019",
+                "calcium-phosphorus-088",
+                "calcium-phosphorus-007",
+                "calcium-phosphorus-097"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-041",
+              "seed": 1,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-094",
+                "calcium-phosphorus-071",
+                "calcium-phosphorus-023",
+                "calcium-phosphorus-075",
+                "calcium-phosphorus-041",
+                "calcium-phosphorus-105",
+                "calcium-phosphorus-019",
+                "calcium-phosphorus-088",
+                "calcium-phosphorus-007",
+                "calcium-phosphorus-097"
+              ]
+            }
+          ],
+          "noHorizontalOverflow": true,
+          "unauthenticated": true
+        }
+      ],
+      "errors": [],
+      "captures": [
+        "body-module-Classify-the-mechanism-1440.png",
+        "body-module-Recognize-severe-depletion-1440.png",
+        "figure-hypophosphatemia-1440.png",
+        "references-module-1440.png",
+        "question-calcium-phosphorus-041-correct-1440.png",
+        "check-hypophosphatemia-incorrect-1440.png",
+        "check-hypophosphatemia-correct-1440.png",
+        "body-module-Classify-the-mechanism-390.png",
+        "body-module-Recognize-severe-depletion-390.png",
+        "figure-hypophosphatemia-390.png",
+        "references-module-390.png",
+        "question-calcium-phosphorus-041-incorrect-390.png",
+        "check-hypophosphatemia-incorrect-390.png",
+        "check-hypophosphatemia-correct-390.png"
+      ]
+    },
+    "visualInspection": {
+      "status": "passed",
+      "rawCapturesActuallyInspected": 14,
+      "nativeComparisonsActuallyViewed": 7,
+      "comparisons": [
+        "visual-compare-1.png",
+        "visual-compare-2.png",
+        "visual-compare-3.png",
+        "visual-compare-4.png",
+        "visual-compare-5.png",
+        "visual-compare-6.png",
+        "visual-compare-7.png"
+      ],
+      "findings": "Both corrected bodies, source references, FGF23 question in correct desktop and incorrect mobile states, retained embedded check in both feedback states at both widths, and complete qualitative phosphate-balance figure legible without overlapping changed content.",
+      "limits": "Actual inspected captures only;not every scroll position or production."
+    },
+    "visualManifest": [
+      {
+        "comparison": "visual-compare-1.png",
+        "rawCaptures": [
+          "body-module-Classify-the-mechanism-1440.png",
+          "body-module-Classify-the-mechanism-390.png"
+        ],
+        "nativePixelsPreserved": true,
+        "canvasDimensions": [
+          1305,
+          532
+        ]
+      },
+      {
+        "comparison": "visual-compare-2.png",
+        "rawCaptures": [
+          "body-module-Recognize-severe-depletion-1440.png",
+          "body-module-Recognize-severe-depletion-390.png"
+        ],
+        "nativePixelsPreserved": true,
+        "canvasDimensions": [
+          1305,
+          395
+        ]
+      },
+      {
+        "comparison": "visual-compare-3.png",
+        "rawCaptures": [
+          "references-module-1440.png",
+          "references-module-390.png"
+        ],
+        "nativePixelsPreserved": true,
+        "canvasDimensions": [
+          1305,
+          1337
+        ]
+      },
+      {
+        "comparison": "visual-compare-4.png",
+        "rawCaptures": [
+          "question-calcium-phosphorus-041-correct-1440.png",
+          "question-calcium-phosphorus-041-incorrect-390.png"
+        ],
+        "nativePixelsPreserved": true,
+        "canvasDimensions": [
+          1305,
+          846
+        ]
+      },
+      {
+        "comparison": "visual-compare-5.png",
+        "rawCaptures": [
+          "check-hypophosphatemia-correct-1440.png",
+          "check-hypophosphatemia-correct-390.png"
+        ],
+        "nativePixelsPreserved": true,
+        "canvasDimensions": [
+          1305,
+          781
+        ]
+      },
+      {
+        "comparison": "visual-compare-6.png",
+        "rawCaptures": [
+          "check-hypophosphatemia-incorrect-1440.png",
+          "check-hypophosphatemia-incorrect-390.png"
+        ],
+        "nativePixelsPreserved": true,
+        "canvasDimensions": [
+          1305,
+          781
+        ]
+      },
+      {
+        "comparison": "visual-compare-7.png",
+        "rawCaptures": [
+          "figure-hypophosphatemia-1440.png",
+          "figure-hypophosphatemia-390.png"
+        ],
+        "nativePixelsPreserved": true,
+        "canvasDimensions": [
+          1305,
+          540
+        ]
+      }
+    ],
+    "limits": "Unauthenticatedlocalpreview;unchanged21questionsretainpriorbrowser evidence;mainmerge/productionnotverified."
+  },
+  "remainingReview": {
+    "wholeParentModuleVerified": false,
+    "wholeENModuleVerified": false,
+    "wholeChaptersVerified": false,
+    "nextAction": "Continue newly approved2026Saudi/Nordicstress-ulcer and2026SurvivingSepsisCampaign sources: read complete relevant recommendations, evidence/remarks and rendered tables; reconcile two retained ICU bodies/questions, figure/metadata and whole stress-ulcer lesson. Then broaderfeedingparent reintegration. Earliest sequentialcheckpoint remainsChapter1printed7/PDF19entry15fluidneeds andChapter11feedingdependencies;full82chaptergoalactive."
+  },
+  "release": {
+    "branch": "audit/rxprep-content-2026-09-24",
+    "commit": null,
+    "push": "pending",
+    "receipt": "enteral-nutrition-broader-phosphate-physiology-release.json",
+    "mainMerge": "not performed",
+    "production": "not verified"
+  },
+  "wholeGoalComplete": false
+}

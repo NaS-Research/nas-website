@@ -128,23 +128,28 @@
         },
         {
           "slug": "hypophosphatemia",
-          "status": "reviewing",
-          "latestScopedEvidence": "enteral-nutrition-broader-phosphate-mechanism-safety-review.json",
-          "wholeLessonVerified": false,
+          "status": "verified",
+          "latestScopedEvidence": "enteral-nutrition-broader-phosphate-physiology-review.json",
+          "wholeLessonVerified": true,
           "verifiedBodyHeadings": [
+            "Classify the mechanism",
+            "Review ferric carboxymaltose safety",
+            "Recognize severe depletion",
             "Choose route and product deliberately",
-            "Monitor for overcorrection",
-            "Review ferric carboxymaltose safety"
+            "Monitor for overcorrection"
           ],
           "embeddedCheckVerified": true,
-          "figureVerified": false,
-          "metadataVerified": false,
+          "figureVerified": true,
+          "metadataVerified": true,
           "verifiedQuestionIds": [
+            "calcium-phosphorus-036",
+            "calcium-phosphorus-037",
             "calcium-phosphorus-038",
             "calcium-phosphorus-039",
             "calcium-phosphorus-040",
-            "calcium-phosphorus-098",
-            "calcium-phosphorus-107",
+            "calcium-phosphorus-041",
+            "calcium-phosphorus-iron-repeat-monitoring",
+            "calcium-phosphorus-iron-persistent-warning",
             "calcium-phosphorus-080",
             "calcium-phosphorus-081",
             "calcium-phosphorus-082",
@@ -155,20 +160,13 @@
             "calcium-phosphorus-087",
             "calcium-phosphorus-088",
             "calcium-phosphorus-089",
-            "calcium-phosphorus-036",
-            "calcium-phosphorus-037",
             "calcium-phosphorus-094",
+            "calcium-phosphorus-098",
             "calcium-phosphorus-104",
-            "calcium-phosphorus-iron-repeat-monitoring",
-            "calcium-phosphorus-iron-persistent-warning"
+            "calcium-phosphorus-107"
           ],
-          "remainingBodyHeadings": [
-            "Classify the mechanism",
-            "Recognize severe depletion"
-          ],
-          "remainingQuestionIds": [
-            "calcium-phosphorus-041"
-          ]
+          "remainingBodyHeadings": [],
+          "remainingQuestionIds": []
         },
         {
           "slug": "hyperphosphatemia-ckd-mbd",
@@ -179,7 +177,8 @@
       "status": "reviewing",
       "evidence": [
         "enteral-nutrition-broader-phosphate-route-label-review.json",
-        "enteral-nutrition-broader-phosphate-mechanism-safety-review.json"
+        "enteral-nutrition-broader-phosphate-mechanism-safety-review.json",
+        "enteral-nutrition-broader-phosphate-physiology-review.json"
       ],
       "latestPhosphateRouteLabelReview": {
         "evidence": "enteral-nutrition-broader-phosphate-route-label-review.json",
@@ -275,6 +274,52 @@
         "all1180CumulativeObjectsUnchanged": true,
         "originalFiveDerivedCumulativeIdsPreserved": true,
         "originalRetainedPhysiologyNotRemoved": true
+      },
+      "latestPhosphatePhysiologyReview": {
+        "evidence": "enteral-nutrition-broader-phosphate-physiology-review.json",
+        "moduleQuestions": 102,
+        "wholeQuestionsReconciled": 22,
+        "newWholeQuestionsVerified": 1,
+        "newVerifiedBankIds": [
+          "calcium-phosphorus-041"
+        ],
+        "previouslyVerifiedQuestionsRecheckedWithoutDoubleCounting": 21,
+        "broaderFeedingBankVerifiedAfter": 233,
+        "wholeBodiesNewlyVerified": 2,
+        "wholeBodiesReconciled": 5,
+        "wholeHypophosphatemiaLessonVerified": true,
+        "wholeLessonMetadataVerified": true,
+        "figureVerified": true,
+        "embeddedCheckVerified": true,
+        "sourceVerifiedBankIds": [
+          "calcium-phosphorus-036",
+          "calcium-phosphorus-037",
+          "calcium-phosphorus-038",
+          "calcium-phosphorus-039",
+          "calcium-phosphorus-040",
+          "calcium-phosphorus-041",
+          "calcium-phosphorus-iron-repeat-monitoring",
+          "calcium-phosphorus-iron-persistent-warning",
+          "calcium-phosphorus-080",
+          "calcium-phosphorus-081",
+          "calcium-phosphorus-082",
+          "calcium-phosphorus-083",
+          "calcium-phosphorus-084",
+          "calcium-phosphorus-085",
+          "calcium-phosphorus-086",
+          "calcium-phosphorus-087",
+          "calcium-phosphorus-088",
+          "calcium-phosphorus-089",
+          "calcium-phosphorus-094",
+          "calcium-phosphorus-098",
+          "calcium-phosphorus-104",
+          "calcium-phosphorus-107"
+        ],
+        "wholeParentModuleVerified": false,
+        "wholeENModuleVerified": false,
+        "wholeChaptersVerified": false,
+        "all102IdsStemsChoicesKeysAnchorsAndRelativeOrderUnchanged": true,
+        "all1180CumulativeObjectsUnchanged": true
       }
     },
     {
