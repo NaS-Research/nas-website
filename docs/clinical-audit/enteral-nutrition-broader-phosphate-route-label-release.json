@@ -1,0 +1,250 @@
+{
+  "verifiedAt": "2026-10-05T01:00:14.835902+00:00",
+  "unit": "enteral-nutrition:broader-phosphate-route-and-product-label-dependencies",
+  "contentCommit": "5b1fc9f67323f7aaf4217cf1d31a63e955155282",
+  "remoteBranch": "audit/rxprep-content-2026-09-24",
+  "remoteHashObserved": "5b1fc9f67323f7aaf4217cf1d31a63e955155282",
+  "exactRemoteObservedByTool": true,
+  "coverage": {
+    "evidence": "enteral-nutrition-broader-phosphate-route-label-review.json",
+    "moduleBank": 100,
+    "sourceVerifiedBankIds": [
+      "calcium-phosphorus-038",
+      "calcium-phosphorus-039",
+      "calcium-phosphorus-040",
+      "calcium-phosphorus-098",
+      "calcium-phosphorus-107",
+      "calcium-phosphorus-080",
+      "calcium-phosphorus-081",
+      "calcium-phosphorus-082",
+      "calcium-phosphorus-083",
+      "calcium-phosphorus-084",
+      "calcium-phosphorus-085",
+      "calcium-phosphorus-086",
+      "calcium-phosphorus-087",
+      "calcium-phosphorus-088",
+      "calcium-phosphorus-089"
+    ],
+    "newFullQuestionsVerified": 15,
+    "clinicalQuestionsVerified": 5,
+    "conditionalArithmeticQuestionsVerified": 10,
+    "broaderFeedingBankVerifiedAfter": 220,
+    "wholeBodiesVerifiedThisUnit": 2,
+    "wholeEmbeddedChecksVerifiedThisUnit": 1,
+    "hypophosphatemiaLessonQuestionTotal": 20,
+    "hypophosphatemiaRemainingQuestionIds": [
+      "calcium-phosphorus-036",
+      "calcium-phosphorus-037",
+      "calcium-phosphorus-041",
+      "calcium-phosphorus-094",
+      "calcium-phosphorus-104"
+    ],
+    "remainingBodyHeadings": [
+      "Classify the mechanism",
+      "Recognize severe depletion"
+    ],
+    "wholeHypophosphatemiaLessonVerified": false,
+    "figureNewlyVerified": false,
+    "metadataNewlyVerified": false,
+    "wholeParentModuleVerified": false,
+    "wholeENModuleVerified": false,
+    "wholeChaptersVerified": false,
+    "cumulativeTotal": 1180,
+    "derivedCumulative084Verified": true,
+    "other1179CumulativeObjectsUnchanged": true,
+    "all100OriginalIdsStemsKeysAndAnchorsPreserved": true,
+    "question107CorrectChoiceClarified": true,
+    "noNewQuestionIds": true,
+    "originalClinicalScopeRetained": true,
+    "unrelatedDraftsPreserved": true
+  },
+  "validation": {
+    "productionBuild": {
+      "status": "passed",
+      "exitCode": 0,
+      "pages": 567,
+      "isolatedExactBase": "aca4501d4b775c9e5dbb74a1c3e7c337e6ebb87e"
+    },
+    "browserStatus": "passed",
+    "structureQuestions": 100,
+    "rawCapturesActuallyViewed": 44,
+    "nativeComparisons": 22,
+    "derivedCumulative084Verified": true,
+    "other1179CumulativeObjectsUnchanged": true,
+    "objectPreservation": {
+      "status": "passed",
+      "all232ModulePathsAndStableIdsPreserved": true,
+      "other231ModulesExactUnchanged": true,
+      "bankTotal": 100,
+      "wholeQuestionsReviewed": [
+        "calcium-phosphorus-038",
+        "calcium-phosphorus-039",
+        "calcium-phosphorus-040",
+        "calcium-phosphorus-098",
+        "calcium-phosphorus-107",
+        "calcium-phosphorus-080",
+        "calcium-phosphorus-081",
+        "calcium-phosphorus-082",
+        "calcium-phosphorus-083",
+        "calcium-phosphorus-084",
+        "calcium-phosphorus-085",
+        "calcium-phosphorus-086",
+        "calcium-phosphorus-087",
+        "calcium-phosphorus-088",
+        "calcium-phosphorus-089"
+      ],
+      "other85QuestionsExactUnchanged": true,
+      "all100OriginalIdsStemsKeysAndAnchorsPreserved": true,
+      "originalQuestion107CorrectTextClarified": true,
+      "other99QuestionChoicesUnchanged": true,
+      "onlyTwoBodiesOneEmbeddedCheckAndTwoReferencesChanged": true,
+      "allMetadataOtherBodiesFiveChecksAndFigureComponentsUnchanged": true,
+      "priorNineReferencesExactUnchanged": true,
+      "cumulativeTotal": 1180,
+      "oneDerived084RationaleChanged": [
+        {
+          "before": {
+            "id": "cumulative-calcium-phosphorus-homeostasis-calcium-phosphorus-084",
+            "question": "A local protocol specifies 0.08 mmol/kg for a hypothetical phosphate replacement calculation. What amount corresponds to 100 kg before all clinical adjustments?",
+            "choices": [
+              "8 mmol",
+              "1250 mmol",
+              "100.08 mmol",
+              "8 mEq calcium"
+            ],
+            "answer": 0,
+            "rationale": "100 kg multiplied by 0.08 mmol/kg equals 8 mmol. Product, cation, kidney function, route, rate, and monitoring still require protocol review.",
+            "reviewHref": "/learn/pharmacy/modules/calcium-phosphorus-homeostasis",
+            "module": "Calcium and Phosphorus Homeostasis"
+          },
+          "after": {
+            "id": "cumulative-calcium-phosphorus-homeostasis-calcium-phosphorus-084",
+            "question": "A local protocol specifies 0.08 mmol/kg for a hypothetical phosphate replacement calculation. What amount corresponds to 100 kg before all clinical adjustments?",
+            "choices": [
+              "8 mmol",
+              "1250 mmol",
+              "100.08 mmol",
+              "8 mEq calcium"
+            ],
+            "answer": 0,
+            "rationale": "For the explicitly hypothetical protocol in the stem, 100 kg × 0.08 mmol/kg = 8 mmol phosphate; kg cancels. Dividing weight by the factor or adding the two values does not calculate the stated dose. mEq calcium is a different substance and unit. The book contains these historical phosphate factors, but this arithmetic exercise does not select a current product dose, dilution, route or infusion rate. Current product labeling and the patient’s phosphate, potassium, calcium, kidney function and other intake determine the actual prescription.",
+            "reviewHref": "/learn/pharmacy/modules/calcium-phosphorus-homeostasis",
+            "module": "Calcium and Phosphorus Homeostasis"
+          }
+        }
+      ],
+      "other1179CumulativeObjectsExactUnchanged": true,
+      "independentDecimalCalculations": [
+        {
+          "id": "calcium-phosphorus-080",
+          "weightKg": "50",
+          "hypotheticalFactorMmolKg": "0.08",
+          "answerMmol": "4.00",
+          "wrongDivision": "625 mmol",
+          "wrongAddition": "50.08 mmol",
+          "wrongSubstanceAndUnit": "4 mEq calcium"
+        },
+        {
+          "id": "calcium-phosphorus-081",
+          "weightKg": "62",
+          "hypotheticalFactorMmolKg": "0.08",
+          "answerMmol": "4.96",
+          "wrongDivision": "775 mmol",
+          "wrongAddition": "62.08 mmol",
+          "wrongSubstanceAndUnit": "5 mEq calcium"
+        },
+        {
+          "id": "calcium-phosphorus-082",
+          "weightKg": "70",
+          "hypotheticalFactorMmolKg": "0.08",
+          "answerMmol": "5.60",
+          "wrongDivision": "875 mmol",
+          "wrongAddition": "70.08 mmol",
+          "wrongSubstanceAndUnit": "5.6 mEq calcium"
+        },
+        {
+          "id": "calcium-phosphorus-083",
+          "weightKg": "85",
+          "hypotheticalFactorMmolKg": "0.08",
+          "answerMmol": "6.80",
+          "wrongDivision": "1062.5 mmol",
+          "wrongAddition": "85.08 mmol",
+          "wrongSubstanceAndUnit": "6.8 mEq calcium"
+        },
+        {
+          "id": "calcium-phosphorus-084",
+          "weightKg": "100",
+          "hypotheticalFactorMmolKg": "0.08",
+          "answerMmol": "8.00",
+          "wrongDivision": "1250 mmol",
+          "wrongAddition": "100.08 mmol",
+          "wrongSubstanceAndUnit": "8 mEq calcium"
+        },
+        {
+          "id": "calcium-phosphorus-085",
+          "weightKg": "50",
+          "hypotheticalFactorMmolKg": "0.16",
+          "answerMmol": "8.00",
+          "wrongDivision": "312.5 mmol",
+          "wrongAddition": "50.16 mmol",
+          "wrongSubstanceAndUnit": "8 mEq calcium"
+        },
+        {
+          "id": "calcium-phosphorus-086",
+          "weightKg": "62",
+          "hypotheticalFactorMmolKg": "0.16",
+          "answerMmol": "9.92",
+          "wrongDivision": "387.5 mmol",
+          "wrongAddition": "62.16 mmol",
+          "wrongSubstanceAndUnit": "9.9 mEq calcium"
+        },
+        {
+          "id": "calcium-phosphorus-087",
+          "weightKg": "70",
+          "hypotheticalFactorMmolKg": "0.16",
+          "answerMmol": "11.20",
+          "wrongDivision": "437.5 mmol",
+          "wrongAddition": "70.16 mmol",
+          "wrongSubstanceAndUnit": "11.2 mEq calcium"
+        },
+        {
+          "id": "calcium-phosphorus-088",
+          "weightKg": "85",
+          "hypotheticalFactorMmolKg": "0.16",
+          "answerMmol": "13.60",
+          "wrongDivision": "531.3 mmol",
+          "wrongAddition": "85.16 mmol",
+          "wrongSubstanceAndUnit": "13.6 mEq calcium"
+        },
+        {
+          "id": "calcium-phosphorus-089",
+          "weightKg": "100",
+          "hypotheticalFactorMmolKg": "0.16",
+          "answerMmol": "16.00",
+          "wrongDivision": "625 mmol",
+          "wrongAddition": "100.16 mmol",
+          "wrongSubstanceAndUnit": "16 mEq calcium"
+        }
+      ],
+      "wholeLessonVerified": false
+    }
+  },
+  "preservation": {
+    "status": "passed",
+    "baselinePathsChecked": 809,
+    "allUnrelatedDraftBytesAndDeletionsPreserved": true,
+    "priorDirtyProductBytesPreservedByReverseScopedPatch": true,
+    "ferricCarboxymaltoseDraftExcluded": true,
+    "workingLedgerPriorFieldsUnchanged": true,
+    "otherCommittedLedgerEntriesUnchanged": true,
+    "candidateProductBytesExactMatchCommitted": true,
+    "indexEmpty": true
+  },
+  "publication": {
+    "mainMerge": "not performed",
+    "production": "not verified"
+  },
+  "wholeGoalComplete": false,
+  "nextAction": "Continue approved Endocrine Society primary-adrenal-insufficiency and SCCM/ASHP stress-related-bleeding guidance for retained steroid-transition and feeding-related ICU claims. Approval is recorded; read full relevant guideline scopes and tables before adoption. Hydrocortisone formulations has three remaining bodies plus check/figure/metadata before whole lesson closure. Reconcile remaining broader feeding dependencies with original lexical inventory and full retained scope. Calcium/phosphorus hypophosphatemia lesson still has two bodies, remaining question IDs, metadata and figure pending. Continue dependencies before completing Chapter1printed7/PDF19formulaentry15fluidneeds; full82chaptergoal remains active.",
+  "receiptCommit": "This receipt follows the exact verified content commit;its own remote hash is verified separately in execution output."
+}
