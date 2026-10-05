@@ -463,5 +463,44 @@ const sourceReviewedExposureQuestions = {
     "rationale": "Audit the full delivery and disease context rather than assuming resistance. Conventional posaconazole suspension has product-specific dosing and meal requirements, and acid suppression, poor intake, severe diarrhea or vomiting, administration problems and missed doses can undermine the plan. Review concentration in relation to the actual product and dose history; no universal target is supplied here. Establish organism and susceptibility, infected site and immune status with the clinical, radiologic and mycologic evidence. The book calls for tailoring to culture and susceptibility, and the label describes high-risk prophylaxis populations and diagnosis using those evidence domains. Neither a screening result alone nor unchanged prophylaxis without diagnostic review addresses the problem. The label's oral Candida resistance observations cannot establish mold resistance in this patient, and a composite trial failure endpoint is not itself proof of breakthrough infection or resistance."
   }
 };
-export const triazoleAntifungalPharmacologyQuestionBank = priorExposureReviewQuestionBank.map((question) => sourceReviewedExposureQuestions[question.id] ? { ...question, ...sourceReviewedExposureQuestions[question.id] } : question);
+const priorTdmReviewQuestionBank = priorExposureReviewQuestionBank.map((question) => sourceReviewedExposureQuestions[question.id] ? { ...question, ...sourceReviewedExposureQuestions[question.id] } : question);
+const sourceReviewedItraconazoleTdmQuestions = {
+  "triazole-pharmacology-061": {
+    "choices": [
+      "Variable absorption and an active hydroxy metabolite make concentration monitoring clinically useful",
+      "An active hydroxy metabolite makes measuring itraconazole exposure unnecessary",
+      "A conventional capsule dose predicts the same exposure in every patient regardless of gastric acidity",
+      "A concentration result proves clinical success even when infection is progressing"
+    ],
+    "rationale": "Variable absorption and active hydroxyitraconazole support exposure monitoring. IDSA recommends TDM for specified itraconazole treatment contexts, with concentration interpreted alongside response, toxicity and interacting medicines. An active metabolite does not remove variability. A fixed dose does not establish exposure, and a result alone cannot establish treatment success. Confirm which analytes and assay the laboratory reports."
+  },
+  "triazole-pharmacology-062": {
+    "choices": [
+      "Obtain an interpretable concentration after loading or a meaningful change and act on efficacy or toxicity risk",
+      "Treat a sample taken immediately after the first loading dose as a definitive steady-state result",
+      "Keep the original monitoring plan after a major absorption or interaction change without reassessment",
+      "Change the dose from a concentration alone without checking timing, assay or clinical response"
+    ],
+    "rationale": "Plan the sample around the indication, loading history and time needed for an interpretable concentration, then act on efficacy or toxicity risk. IDSA aspergillosis guidance recommends monitoring at steady state and patient-specific repeat monitoring; severe-histoplasmosis guidance specifies assessment after 1 to 2 weeks of itraconazole. After a meaningful change, reassess the need and timing rather than treating a first-dose sample as steady state. Check the assay, administration and clinical course before a dose decision; these guidelines do not establish one schedule for every use."
+  },
+  "triazole-pharmacology-063": {
+    "choices": [
+      "Assess product, dose, timing, itraconazole assay, hydroxyitraconazole, adherence, interactions, and response",
+      "Check only the prescribed milligrams and ignore the actual formulation and adherence",
+      "Interpret a combined parent-plus-metabolite result using a parent-only target without checking the assay",
+      "Treat the concentration as a substitute for evaluating response, toxicity and interacting medicines"
+    ],
+    "rationale": "Interpret the exact product, dose and loading history, sampling time, measured analytes, adherence, interactions and clinical response together. Hydroxyitraconazole is active. A parent-only chromatographic result and a combined result are different measurements, and indication-specific targets cannot be transferred without context. Prescribed milligrams alone do not establish the delivered exposure. The concentration supplements assessment of efficacy and toxicity rather than replacing it."
+  },
+  "triazole-pharmacology-064": {
+    "choices": [
+      "Comparing a combined concentration to an itraconazole-only target without assay context",
+      "Confirming whether the laboratory reports itraconazole alone or parent plus hydroxyitraconazole",
+      "Checking sampling time and choosing guidance for the infection being treated",
+      "Reviewing adherence, administration, interactions and response before adjusting the dose"
+    ],
+    "rationale": "Applying an itraconazole-only target to a combined concentration without assay context is the hazard. IDSA guidance distinguishes analytes and infection-specific interpretation; its histoplasmosis guidance notes that an established combined cutoff is lacking. Historical FDA assay information also distinguishes parent-specific HPLC from a bioassay influenced by active hydroxyitraconazole. Checking analytes, timing, clinical indication and the delivered regimen are appropriate safeguards. No universal conversion factor or combined target is established here."
+  }
+};
+export const triazoleAntifungalPharmacologyQuestionBank = priorTdmReviewQuestionBank.map((question) => sourceReviewedItraconazoleTdmQuestions[question.id] ? { ...question, ...sourceReviewedItraconazoleTdmQuestions[question.id] } : question);
 if(triazoleAntifungalPharmacologyQuestionBank.length<100)throw new Error(`Triazole pharmacology bank must contain at least 100 questions, found ${triazoleAntifungalPharmacologyQuestionBank.length}.`);

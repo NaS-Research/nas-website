@@ -14365,17 +14365,18 @@
         },
         {
           "slug": "itraconazole-formulations",
-          "status": "reviewing",
-          "latestScopedEvidence": "enteral-nutrition-broader-itraconazole-label-review.json",
+          "status": "verified",
+          "latestScopedEvidence": "enteral-nutrition-broader-itraconazole-tdm-review.json",
           "verifiedBodyHeadings": [
             "Name the complete product",
             "Teach opposing administration rules",
-            "Protect the heart"
+            "Protect the heart",
+            "Interpret the assay correctly"
           ],
           "embeddedCheckVerified": true,
-          "wholeLessonVerified": false,
+          "wholeLessonVerified": true,
           "figureVerified": true,
-          "metadataStatementsVerified": 9,
+          "metadataStatementsVerified": 12,
           "metadataStatementsPending": 3,
           "verifiedQuestionIds": [
             "triazole-pharmacology-049",
@@ -14390,16 +14391,15 @@
             "triazole-pharmacology-058",
             "triazole-pharmacology-059",
             "triazole-pharmacology-060",
-            "triazole-pharmacology-165",
-            "triazole-pharmacology-166"
-          ],
-          "remainingBody": "Interpret the assay correctly",
-          "remainingQuestionIds": [
             "triazole-pharmacology-061",
             "triazole-pharmacology-062",
             "triazole-pharmacology-063",
-            "triazole-pharmacology-064"
+            "triazole-pharmacology-064",
+            "triazole-pharmacology-165",
+            "triazole-pharmacology-166"
           ],
+          "remainingBody": null,
+          "remainingQuestionIds": [],
           "remainingMetadata": [
             "application",
             "concepts[4]",
@@ -14479,7 +14479,8 @@
         "enteral-nutrition-broader-antifungal-formulations-review.json",
         "enteral-nutrition-broader-posaconazole-label-review.json",
         "enteral-nutrition-broader-itraconazole-label-review.json",
-        "enteral-nutrition-broader-antifungal-exposure-review.json"
+        "enteral-nutrition-broader-antifungal-exposure-review.json",
+        "enteral-nutrition-broader-itraconazole-tdm-review.json"
       ],
       "broaderEnteralFormulationReview": {
         "evidence": "enteral-nutrition-broader-antifungal-formulations-review.json",
@@ -14665,6 +14666,53 @@
         "all1180CumulativeObjectsUnchanged": true,
         "noNewCumulativeClosureClaimed": true,
         "all360QuestionIdsStemsKeysOriginalCorrectTextsAndAnchorsPreserved": true,
+        "noNewQuestionIds": true,
+        "originalClinicalScopeRetained": true,
+        "unrelatedDraftsPreserved": true
+      },
+      "latestItraconazoleTdmReview": {
+        "evidence": "enteral-nutrition-broader-itraconazole-tdm-review.json",
+        "moduleBank": 176,
+        "sourceVerifiedBankIds": [
+          "triazole-pharmacology-061",
+          "triazole-pharmacology-062",
+          "triazole-pharmacology-063",
+          "triazole-pharmacology-064"
+        ],
+        "newFullQuestionsVerified": 4,
+        "broaderFeedingBankVerifiedAfter": 201,
+        "wholeNewBodiesVerified": 1,
+        "wholeItraconazoleLessonVerified": true,
+        "itraconazoleLessonQuestionTotal": 18,
+        "prior14QuestionsExactRechecked": [
+          "triazole-pharmacology-049",
+          "triazole-pharmacology-050",
+          "triazole-pharmacology-051",
+          "triazole-pharmacology-052",
+          "triazole-pharmacology-053",
+          "triazole-pharmacology-054",
+          "triazole-pharmacology-055",
+          "triazole-pharmacology-056",
+          "triazole-pharmacology-057",
+          "triazole-pharmacology-058",
+          "triazole-pharmacology-059",
+          "triazole-pharmacology-060",
+          "triazole-pharmacology-165",
+          "triazole-pharmacology-166"
+        ],
+        "itraconazoleWholeBodiesVerified": 4,
+        "itraconazoleMetadataStatementsVerified": 12,
+        "previouslyPendingMetadataNowVerified": [
+          "application",
+          "concepts[4]",
+          "keyPoints[3]"
+        ],
+        "retainedWholeFigureAndCheckRechecked": true,
+        "wholeParentModuleVerified": false,
+        "wholeENModuleVerified": false,
+        "wholeChaptersVerified": false,
+        "all1180CumulativeObjectsUnchanged": true,
+        "all176IdsStemsKeysCorrectTextsAndAnchorsPreserved": true,
         "noNewQuestionIds": true,
         "originalClinicalScopeRetained": true,
         "unrelatedDraftsPreserved": true

@@ -1,0 +1,1205 @@
+{
+  "updated": "2026-10-05T00:17:57.697425+00:00",
+  "unit": "enteral-nutrition:broader-itraconazole-tdm-and-whole-formulation-lesson",
+  "status": "whole itraconazole-formulations lesson verified;parent modules/EN/chapters reviewing",
+  "baseCommit": "4dfe86d2c9fb807fc9d775ec8d3f3ff2cbff7ba7",
+  "sourceAuthorization": {
+    "authorized": true,
+    "latestUserApproval": "I give approval",
+    "approvedQuestion": "May I use current IDSA histoplasmosis and aspergillosis guidelines to verify the remaining itraconazole monitoring lesson,four questions,and related metadata?",
+    "scope": "IDSA histoplasmosis/aspergillosis for these preserved monitoring claims;previous approved book/FDA scope retained",
+    "noOtherNewClinicalSourcesAdopted": true
+  },
+  "sourceReview": {
+    "sources": [
+      {
+        "name": "IDSA aspergillosis",
+        "url": "https://www.idsociety.org/practice-guideline/aspergillosis/",
+        "htmlSha256": "894649938326b3dde52b5fc166db055369e2933e8c21ab89e12b295a5df51af1",
+        "completeAdoptedScopes": [
+          "2016 itraconazole pharmacology,Recommendations21/22 and complete TDM evidence through itraconazole subsection",
+          "PDF19,21-23:active hydroxy/variable absorption;completeTables2/3 as interaction/monitoring context"
+        ],
+        "wholeGuidelineVerified": false
+      },
+      {
+        "name": "IDSA histoplasmosis",
+        "url": "https://www.idsociety.org/practice-guideline/histoplasmosis",
+        "htmlSha256": "8a1d440b5a8f41ea06188ef985951309cb45b50da8fb36944fc240f5c7d16e2e",
+        "completeAdoptedScopes": [
+          "March2025 mild/moderate pulmonary histoplasmosis TDM remarks:parent/combined assay distinction,unestablished combined cutoff,random-sample context",
+          "September16,2026 severe-histoplasmosis consensus remarks:monitor after1-2weeks;complete Table2 and footnote context"
+        ],
+        "wholeGuidelineVerified": false
+      },
+      {
+        "name": "FDA SPORANOX2012 historical assay information",
+        "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2012/020083s048s049s050lbl.pdf",
+        "pdfSha256": "b68656fefa2dd395507b3f6bb1d05069ced3910ef6356c965f9a0fc3528e451f",
+        "completeAdoptedScope": "PDF2 full parent-specific HPLC versus metabolite-sensitive bioassay NOTE",
+        "limits": "Historical assay distinction only;not current dosage authority or universal bioassay-to-HPLC conversion."
+      }
+    ],
+    "privateBook": "RxPrep2023PDF399/printed391 re-read and viewed for formulation context;book alone does not close clinical TDM strategy. Private files outside Git.",
+    "priorVerifiedEvidence": "enteral-nutrition-broader-itraconazole-label-review.json",
+    "priorContentCommit": "a9b9a2489b61aab36cef0c628d5ba3e2bc7dfc6a",
+    "sourceInspection": {
+      "status": "complete adopted scopes read and compared",
+      "actualFreshSourceImagesViewed": [
+        "aspergillosis-19.png",
+        "aspergillosis-21.png",
+        "aspergillosis-22.png",
+        "aspergillosis-23.png",
+        "histoplasmosis-table-1.png",
+        "fda-historical-2.png",
+        "prior-private-book-399.png"
+      ],
+      "limits": "Relevant itraconazole pharmacology,TDM recommendations/evidence and complete tables2/3 visually inspected as source context;no full60-page guideline or unrelated agent table claim. Histoplasmosis complete relevant dated monitoring remarks read as HTML text;complete Table2 inspected. Prior labels/14questions/threebodies retained from exact prior verified unit."
+    },
+    "limits": "No whole Chapter24/60-page guideline/full labels or general dosing review;no universal target,conversion,protocol or efficacy estimate."
+  },
+  "sourceDiscrepancies": [
+    {
+      "issue": "Monitoring intervals and targets differ by infection,assay and guideline date",
+      "resolution": "Retain indication-specific interpretation.2016aspergillosis discusses first4-7days at steady state;2026severe-histoplasmosis specifies1-2weeks;currentcapsule PK reaches steady state generally~15days. No universal clock after loading;only named severe-histoplasmosis timing added."
+    },
+    {
+      "issue": "2025histoplasmosis combined cutoff not established;2016aspergillosis discusses a different combined trough interpretation",
+      "resolution": "Do not merge into a universal target or claim no combined guidance exists for all indications. No numeric concentration target added."
+    },
+    {
+      "issue": "Histoplasmosis2026table dosing,off-label pediatric use and acid-beverage wording differ from exact FDA product labeling",
+      "resolution": "Read as context;no new dose,conversion,pediatric or universal beverage instruction adopted. Prior product-specific FDA administration remains exact unchanged."
+    },
+    {
+      "issue": "Histoplasmosis2026severe statement is expert consensus amid insufficient robust trial evidence",
+      "resolution": "Describe as IDSAguidance,not a proven universal regimen;do not assert efficacy estimates or certainty beyond source."
+    }
+  ],
+  "questionReview": [
+    {
+      "id": "triazole-pharmacology-061",
+      "before": {
+        "id": "triazole-pharmacology-061",
+        "lesson": "itraconazole-formulations",
+        "question": "Which principle best characterizes itraconazole TDM?",
+        "choices": [
+          "Variable absorption and an active hydroxy metabolite make concentration monitoring clinically useful",
+          "Adult therapy uses 372 mg isavuconazonium every 8 hours for 6 doses followed by 372 mg once daily",
+          "Azole reproductive decisions require current agent-specific narrative data, syndrome severity, dose and duration, and alternatives",
+          "Fluconazole has useful yeast activity but no reliable Aspergillus or Mucorales activity"
+        ],
+        "answer": 0,
+        "rationale": "Targets depend on what the laboratory reports",
+        "reviewHref": "#itraconazole-formulations"
+      },
+      "after": {
+        "id": "triazole-pharmacology-061",
+        "lesson": "itraconazole-formulations",
+        "question": "Which principle best characterizes itraconazole TDM?",
+        "choices": [
+          "Variable absorption and an active hydroxy metabolite make concentration monitoring clinically useful",
+          "An active hydroxy metabolite makes measuring itraconazole exposure unnecessary",
+          "A conventional capsule dose predicts the same exposure in every patient regardless of gastric acidity",
+          "A concentration result proves clinical success even when infection is progressing"
+        ],
+        "answer": 0,
+        "rationale": "Variable absorption and active hydroxyitraconazole support exposure monitoring. IDSA recommends TDM for specified itraconazole treatment contexts, with concentration interpreted alongside response, toxicity and interacting medicines. An active metabolite does not remove variability. A fixed dose does not establish exposure, and a result alone cannot establish treatment success. Confirm which analytes and assay the laboratory reports.",
+        "reviewHref": "#itraconazole-formulations"
+      },
+      "status": "full original stem,key,all alternatives and rationale individually source-reconciled",
+      "originalStemKeyCorrectTextAndClinicalScopePreserved": true,
+      "sourceScopes": "IDSA2016Recommendations21/22,TDM evidence/Table3/itraconazole;IDSA2025/2026histoplasmosis monitoring remarks;FDA2012assay NOTE as applicable"
+    },
+    {
+      "id": "triazole-pharmacology-062",
+      "before": {
+        "id": "triazole-pharmacology-062",
+        "lesson": "itraconazole-formulations",
+        "question": "Which clinical action best applies to itraconazole TDM?",
+        "choices": [
+          "Obtain an interpretable concentration after loading or a meaningful change and act on efficacy or toxicity risk",
+          "Complete the loading sequence and start maintenance 12 to 24 hours after the last loading dose",
+          "Use current labeling and specialist input rather than obsolete pregnancy letters",
+          "Use mold-active triazoles only when their organism and syndrome evidence supports them"
+        ],
+        "answer": 0,
+        "rationale": "Targets depend on what the laboratory reports",
+        "reviewHref": "#itraconazole-formulations"
+      },
+      "after": {
+        "id": "triazole-pharmacology-062",
+        "lesson": "itraconazole-formulations",
+        "question": "Which clinical action best applies to itraconazole TDM?",
+        "choices": [
+          "Obtain an interpretable concentration after loading or a meaningful change and act on efficacy or toxicity risk",
+          "Treat a sample taken immediately after the first loading dose as a definitive steady-state result",
+          "Keep the original monitoring plan after a major absorption or interaction change without reassessment",
+          "Change the dose from a concentration alone without checking timing, assay or clinical response"
+        ],
+        "answer": 0,
+        "rationale": "Plan the sample around the indication, loading history and time needed for an interpretable concentration, then act on efficacy or toxicity risk. IDSA aspergillosis guidance recommends monitoring at steady state and patient-specific repeat monitoring; severe-histoplasmosis guidance specifies assessment after 1 to 2 weeks of itraconazole. After a meaningful change, reassess the need and timing rather than treating a first-dose sample as steady state. Check the assay, administration and clinical course before a dose decision; these guidelines do not establish one schedule for every use.",
+        "reviewHref": "#itraconazole-formulations"
+      },
+      "status": "full original stem,key,all alternatives and rationale individually source-reconciled",
+      "originalStemKeyCorrectTextAndClinicalScopePreserved": true,
+      "sourceScopes": "IDSA2016Recommendations21/22,TDM evidence/Table3/itraconazole;IDSA2025/2026histoplasmosis monitoring remarks;FDA2012assay NOTE as applicable"
+    },
+    {
+      "id": "triazole-pharmacology-063",
+      "before": {
+        "id": "triazole-pharmacology-063",
+        "lesson": "itraconazole-formulations",
+        "question": "Which assessment is most appropriate for itraconazole TDM?",
+        "choices": [
+          "Assess product, dose, timing, itraconazole assay, hydroxyitraconazole, adherence, interactions, and response",
+          "Assess dose count, timing, missed doses, oral or intravenous route, and transition",
+          "Assess gestational timing, systemic versus local exposure, maternal disease, fetal risk, lactation, alternatives, and shared decision making",
+          "Assess yeast or mold morphology, species, host risk, imaging, culture, galactomannan, and prior prophylaxis"
+        ],
+        "answer": 0,
+        "rationale": "Targets depend on what the laboratory reports",
+        "reviewHref": "#itraconazole-formulations"
+      },
+      "after": {
+        "id": "triazole-pharmacology-063",
+        "lesson": "itraconazole-formulations",
+        "question": "Which assessment is most appropriate for itraconazole TDM?",
+        "choices": [
+          "Assess product, dose, timing, itraconazole assay, hydroxyitraconazole, adherence, interactions, and response",
+          "Check only the prescribed milligrams and ignore the actual formulation and adherence",
+          "Interpret a combined parent-plus-metabolite result using a parent-only target without checking the assay",
+          "Treat the concentration as a substitute for evaluating response, toxicity and interacting medicines"
+        ],
+        "answer": 0,
+        "rationale": "Interpret the exact product, dose and loading history, sampling time, measured analytes, adherence, interactions and clinical response together. Hydroxyitraconazole is active. A parent-only chromatographic result and a combined result are different measurements, and indication-specific targets cannot be transferred without context. Prescribed milligrams alone do not establish the delivered exposure. The concentration supplements assessment of efficacy and toxicity rather than replacing it.",
+        "reviewHref": "#itraconazole-formulations"
+      },
+      "status": "full original stem,key,all alternatives and rationale individually source-reconciled",
+      "originalStemKeyCorrectTextAndClinicalScopePreserved": true,
+      "sourceScopes": "IDSA2016Recommendations21/22,TDM evidence/Table3/itraconazole;IDSA2025/2026histoplasmosis monitoring remarks;FDA2012assay NOTE as applicable"
+    },
+    {
+      "id": "triazole-pharmacology-064",
+      "before": {
+        "id": "triazole-pharmacology-064",
+        "lesson": "itraconazole-formulations",
+        "question": "Which reasoning hazard is most important to prevent with itraconazole TDM?",
+        "choices": [
+          "Comparing a combined concentration to an itraconazole-only target without assay context",
+          "Stopping loading after one dose",
+          "Applying one pregnancy rule to every azole and every dose",
+          "Using fluconazole for invasive aspergillosis"
+        ],
+        "answer": 0,
+        "rationale": "Targets depend on what the laboratory reports",
+        "reviewHref": "#itraconazole-formulations"
+      },
+      "after": {
+        "id": "triazole-pharmacology-064",
+        "lesson": "itraconazole-formulations",
+        "question": "Which reasoning hazard is most important to prevent with itraconazole TDM?",
+        "choices": [
+          "Comparing a combined concentration to an itraconazole-only target without assay context",
+          "Confirming whether the laboratory reports itraconazole alone or parent plus hydroxyitraconazole",
+          "Checking sampling time and choosing guidance for the infection being treated",
+          "Reviewing adherence, administration, interactions and response before adjusting the dose"
+        ],
+        "answer": 0,
+        "rationale": "Applying an itraconazole-only target to a combined concentration without assay context is the hazard. IDSA guidance distinguishes analytes and infection-specific interpretation; its histoplasmosis guidance notes that an established combined cutoff is lacking. Historical FDA assay information also distinguishes parent-specific HPLC from a bioassay influenced by active hydroxyitraconazole. Checking analytes, timing, clinical indication and the delivered regimen are appropriate safeguards. No universal conversion factor or combined target is established here.",
+        "reviewHref": "#itraconazole-formulations"
+      },
+      "status": "full original stem,key,all alternatives and rationale individually source-reconciled",
+      "originalStemKeyCorrectTextAndClinicalScopePreserved": true,
+      "sourceScopes": "IDSA2016Recommendations21/22,TDM evidence/Table3/itraconazole;IDSA2025/2026histoplasmosis monitoring remarks;FDA2012assay NOTE as applicable"
+    }
+  ],
+  "teachingReview": [
+    {
+      "heading": "Interpret the assay correctly",
+      "before": "Variable absorption and active hydroxyitraconazole make concentration monitoring useful. Targets depend on timing, indication, formulation, and whether the laboratory reports parent drug alone or a combined value.",
+      "after": "Variable absorption and active hydroxyitraconazole make concentration monitoring useful. Targets depend on timing, indication, formulation, and whether the laboratory reports parent drug alone or a combined value. Plan sampling using the infection-specific guidance, loading history and time needed for an interpretable result. IDSA aspergillosis guidance recommends TDM at steady state and patient-specific repeat monitoring when clinical status, absorption, adherence or interactions warrant it. The September 2026 severe-histoplasmosis guidance specifies monitoring after 1 to 2 weeks of itraconazole. A first loading dose is not itself proof of steady state. Check the exact product, administered doses, sampling time, interacting medicines, response and toxicity before changing therapy. Confirm whether the reported result measures itraconazole alone or includes hydroxyitraconazole. The histoplasmosis guidance notes that an established combined cutoff is lacking; aspergillosis guidance discusses different, indication-specific exposure interpretations. Historical FDA labeling also distinguishes parent-specific HPLC from a bioassay influenced by the active metabolite. Do not apply a parent-only target to a combined result or use one numerical target, conversion factor or sampling schedule for every infection.",
+      "wholeBodyVerified": true
+    }
+  ],
+  "wholeItraconazoleLessonReview": {
+    "status": "verified",
+    "wholeFinalLesson": {
+      "slug": "itraconazole-formulations",
+      "title": "Treat Itraconazole Formulation as the Drug",
+      "visual": "triazole-antifungal-itraconazole-formulations",
+      "summary": "Conventional capsules, oral solution, and newer enhanced-absorption products differ in exposure and cannot be treated as interchangeable containers.",
+      "concepts": [
+        "Capsules",
+        "Solution",
+        "Food and pH",
+        "Heart failure",
+        "TDM"
+      ],
+      "application": "Prescribe the exact product, administration conditions, indication, cardiac plan, and concentration strategy.",
+      "lesson": [
+        {
+          "heading": "Name the complete product",
+          "body": "Conventional capsules, oral solution, and enhanced-absorption products differ in bioavailability and approved use. Milligram-for-milligram substitution without review can destabilize exposure. Conventional SPORANOX capsules contain 100 mg; oral solution contains 10 mg/mL and gives greater exposure than capsules at the same dose. The US SUBA formulation TOLSURA contains 65 mg per capsule in a polymer matrix and is explicitly not interchangeable or substitutable with other itraconazole products. Its adult indications are blastomycosis, histoplasmosis, and aspergillosis when amphotericin B is not tolerated or has failed; it is not indicated for onychomycosis. Conventional SPORANOX capsules also have labeled onychomycosis use in non-immunocompromised patients, while the solution is indicated for oropharyngeal and esophageal candidiasis. Enhanced absorption does not establish better clinical outcomes or a universal dose-conversion ratio."
+        },
+        {
+          "heading": "Teach opposing administration rules",
+          "body": "Conventional capsules are taken with a full meal and depend on gastric acidity. Oral solution is taken without food when possible. Swallow conventional capsules whole immediately after a full meal; PPIs, H2 blockers and acid-neutralizing medicines can reduce their absorption. Separate acid-neutralizing medicines by at least two hours before or after the capsule. The capsule label describes increased absorption with non-diet cola in specific fasting, low-acidity studies; this does not establish a universal replacement for the full meal. For oropharyngeal or esophageal candidiasis, vigorously swish the solution in the mouth, 10 mL at a time, for several seconds and swallow. TOLSURA must be swallowed whole with food; do not chew, crush or break it. Its label describes increased exposure with acid-reducing medicines, including omeprazole, requiring adverse-reaction monitoring and possible dose reduction. Acid suppression, gastric surgery, nausea and tube feeding require product-specific intake and delivery assessment. Altered anatomy or a feeding tube does not establish one pharmacokinetic effect, capsule manipulation permission, or a universal feed-hold protocol."
+        },
+        {
+          "heading": "Protect the heart",
+          "body": "Itraconazole has negative inotropic potential and a boxed warning for congestive heart failure and cardiac effects. New edema, dyspnea, rapid weight gain, or exercise intolerance requires prompt evaluation and treatment reassessment. Do not use conventional SPORANOX capsules for onychomycosis in ventricular dysfunction or a history of heart failure. For other conventional-capsule indications, ventricular dysfunction requires a benefit that clearly outweighs the risk; oral solution is restricted in this setting to life-threatening or other serious infections. TOLSURA retains careful benefit-risk review and is not a cardiac-safety workaround. Patient instructions advise stopping itraconazole and contacting the healthcare provider immediately for heart-failure symptoms. Conventional capsule clinical labeling calls for discontinuation; solution and TOLSURA clinical warnings require reassessment of continued therapy and alternatives. Review interacting negative inotropes, including calcium channel blockers; felodipine and nisoldipine are contraindicated combinations."
+        },
+        {
+          "heading": "Interpret the assay correctly",
+          "body": "Variable absorption and active hydroxyitraconazole make concentration monitoring useful. Targets depend on timing, indication, formulation, and whether the laboratory reports parent drug alone or a combined value. Plan sampling using the infection-specific guidance, loading history and time needed for an interpretable result. IDSA aspergillosis guidance recommends TDM at steady state and patient-specific repeat monitoring when clinical status, absorption, adherence or interactions warrant it. The September 2026 severe-histoplasmosis guidance specifies monitoring after 1 to 2 weeks of itraconazole. A first loading dose is not itself proof of steady state. Check the exact product, administered doses, sampling time, interacting medicines, response and toxicity before changing therapy. Confirm whether the reported result measures itraconazole alone or includes hydroxyitraconazole. The histoplasmosis guidance notes that an established combined cutoff is lacking; aspergillosis guidance discusses different, indication-specific exposure interpretations. Historical FDA labeling also distinguishes parent-specific HPLC from a bioassay influenced by the active metabolite. Do not apply a parent-only target to a combined result or use one numerical target, conversion factor or sampling schedule for every infection."
+        }
+      ],
+      "keyPoints": [
+        "Itraconazole products are not interchangeable.",
+        "Food instructions depend on formulation.",
+        "Heart failure symptoms are a hard safety signal.",
+        "TDM requires assay context."
+      ],
+      "check": {
+        "question": "A patient takes conventional itraconazole capsules fasting with a proton pump inhibitor. What is the main concern?",
+        "choices": [
+          "Reduced and variable absorption with treatment failure risk",
+          "Food omission and acid suppression reliably increase conventional capsule exposure",
+          "Identical exposure because conventional capsules and oral solution contain the same ingredient",
+          "No concern because every itraconazole product is independent of gastric pH"
+        ],
+        "answer": 0,
+        "rationale": "Fasting and proton pump inhibition can reduce conventional capsule absorption and threaten efficacy; they do not guarantee either failure or toxic exposure in an individual patient. Verify the full-meal, whole-capsule instructions and review the acid-suppressing medicine. Oral solution is not dose-for-dose interchangeable, and TOLSURA has different food and pH instructions. Shared ingredients do not establish equal exposure or one pH rule.",
+        "reviewHref": "#itraconazole-formulations"
+      }
+    },
+    "all18FinalQuestionObjects": [
+      {
+        "id": "triazole-pharmacology-049",
+        "lesson": "itraconazole-formulations",
+        "question": "Which principle best characterizes itraconazole formulation?",
+        "choices": [
+          "Itraconazole capsules, oral solution, and SUBA products differ in bioavailability and are not interchangeable",
+          "All itraconazole products are interchangeable at the same milligram dose",
+          "TOLSURA is simply a conventional 100 mg capsule with a different brand name",
+          "Oral solution and conventional capsules have identical exposure and approved uses"
+        ],
+        "answer": 0,
+        "rationale": "Conventional capsules, oral solution and the US SUBA product TOLSURA are distinct products. The solution gives greater exposure than conventional capsules at the same dose and has different approved uses. TOLSURA contains 65 mg per capsule and is explicitly not interchangeable or substitutable with other itraconazole products. A shared ingredient or brand change does not establish a dose-for-dose conversion; enhanced absorption does not guarantee clinical superiority.",
+        "reviewHref": "#itraconazole-formulations"
+      },
+      {
+        "id": "triazole-pharmacology-050",
+        "lesson": "itraconazole-formulations",
+        "question": "Which clinical action best applies to itraconazole formulation?",
+        "choices": [
+          "Prescribe and teach the exact product rather than the ingredient alone",
+          "Specify only itraconazole because capsule and solution instructions are equivalent",
+          "Copy the capsule meal instruction to every itraconazole product",
+          "Switch from capsules to solution at the same dose without reviewing absorption"
+        ],
+        "answer": 0,
+        "rationale": "Prescribe and counsel for the exact product and indication. Conventional capsules are swallowed whole immediately after a full meal; oral solution is taken without food when possible; TOLSURA is swallowed whole with food and has its own regimen. Ingredient-only orders, one meal instruction for every product, and an unchecked same-dose switch omit clinically important formulation differences.",
+        "reviewHref": "#itraconazole-formulations"
+      },
+      {
+        "id": "triazole-pharmacology-051",
+        "lesson": "itraconazole-formulations",
+        "question": "Which assessment is most appropriate for itraconazole formulation?",
+        "choices": [
+          "Assess capsule or solution, product strength, food, gastric pH, indication, swallowing, and concentration",
+          "Assess the ingredient but omit strength, dosage form and approved indication",
+          "Check food timing alone and assume gastric pH and swallowing do not matter",
+          "Assume the same milligram dose and measured concentration describe every itraconazole product"
+        ],
+        "answer": 0,
+        "rationale": "Verify the exact capsule or solution, product strength, approved indication, meal instructions and relevant pH-altering medicines. Confirm the patient can use the prescribed dosage form; both conventional and TOLSURA capsules must be swallowed whole. Formulation changes can alter exposure, and any concentration must be identified by its timing and reported analyte. Ingredient-only, food-only and same-milligram assumptions omit those checks; no universal concentration target or tube conversion follows from this assessment.",
+        "reviewHref": "#itraconazole-formulations"
+      },
+      {
+        "id": "triazole-pharmacology-052",
+        "lesson": "itraconazole-formulations",
+        "question": "Which reasoning hazard is most important to prevent with itraconazole formulation?",
+        "choices": [
+          "Substituting solution and capsules milligram for milligram without review",
+          "Confirm the exact formulation before counseling about food",
+          "Review acid-suppressing medicines when conventional capsules are used",
+          "Recheck formulation-specific dosing before changing products"
+        ],
+        "answer": 0,
+        "rationale": "Conventional capsules and oral solution must not be used interchangeably, and TOLSURA is not substitutable with other itraconazole products. Copying a milligram dose without reviewing product-specific dosing can change exposure. Confirming the formulation, reviewing acid-suppressing medicines and checking the new regimen are appropriate actions rather than additional hazards.",
+        "reviewHref": "#itraconazole-formulations"
+      },
+      {
+        "id": "triazole-pharmacology-053",
+        "lesson": "itraconazole-formulations",
+        "question": "Which principle best characterizes itraconazole food and pH?",
+        "choices": [
+          "Conventional capsules are taken with a full meal and depend on gastric acidity, while oral solution is taken without food when possible",
+          "All itraconazole products should be given fasting because they have the same food effect",
+          "Oral solution must always be given after a full meal like conventional capsules",
+          "A proton pump inhibitor has the same absorption effect on conventional capsules and TOLSURA"
+        ],
+        "answer": 0,
+        "rationale": "Conventional capsules are swallowed whole immediately after a full meal, and reduced gastric acidity can reduce their absorption. Oral solution is taken without food when possible. TOLSURA also requires food, but its label describes increased exposure with acid-reducing medicines, including omeprazole. Universal fasting, applying the capsule meal rule to solution, or assuming one pH effect for every product gives the wrong instruction.",
+        "reviewHref": "#itraconazole-formulations"
+      },
+      {
+        "id": "triazole-pharmacology-054",
+        "lesson": "itraconazole-formulations",
+        "question": "Which clinical action best applies to itraconazole food and pH?",
+        "choices": [
+          "Write product-specific administration and reassess acid suppression",
+          "Assume a proton pump inhibitor improves conventional capsule absorption",
+          "Use fasting administration for every itraconazole product",
+          "Review the ingredient but omit the formulation and meal instructions"
+        ],
+        "answer": 0,
+        "rationale": "Write the exact product's administration instructions and review acid suppression. PPIs and H2 blockers can reduce conventional capsule absorption; this is not the TOLSURA interaction, for which increased exposure and adverse-reaction monitoring are labeled. Conventional capsules require a full meal, solution is taken without food when possible, and TOLSURA requires food. Omitting the product or giving every formulation fasting bypasses those rules.",
+        "reviewHref": "#itraconazole-formulations"
+      },
+      {
+        "id": "triazole-pharmacology-055",
+        "lesson": "itraconazole-formulations",
+        "question": "Which assessment is most appropriate for itraconazole food and pH?",
+        "choices": [
+          "Assess meal timing, proton pump inhibitor, H2 blocker, antacid, gastric surgery, tube feeds, and product",
+          "Assess the ingredient and ignore the timing of food and antacids",
+          "Treat a PPI, an H2 blocker and an antacid as irrelevant to conventional capsules",
+          "Assume gastric surgery or a feeding tube makes all itraconazole products interchangeable"
+        ],
+        "answer": 0,
+        "rationale": "Assess the exact product, meal timing and pH-altering medicines. For conventional capsules, reduced acidity can lower absorption; separate acid-neutralizing medicines by at least two hours before or after the capsule. TOLSURA has a different labeled pH interaction. Gastric surgery and tube feeding prompt assessment of anatomy, nutrition and dosage-form feasibility, not an assumed universal exposure change or permission to manipulate a capsule. Ingredient-only review and automatic tube substitution omit those requirements.",
+        "reviewHref": "#itraconazole-formulations"
+      },
+      {
+        "id": "triazole-pharmacology-056",
+        "lesson": "itraconazole-formulations",
+        "question": "Which reasoning hazard is most important to prevent with itraconazole food and pH?",
+        "choices": [
+          "Giving one administration rule for every itraconazole formulation",
+          "Distinguishing capsule food instructions from solution food instructions",
+          "Identifying acid-suppressing medicines before reviewing capsule absorption",
+          "Confirming the exact product before planning administration"
+        ],
+        "answer": 0,
+        "rationale": "One ingredient-level administration rule can confuse conventional capsules, oral solution and TOLSURA. Their food and pH instructions must be checked separately. Distinguishing the products, identifying acid-suppressing medicines and confirming the prescribed formulation are appropriate checks; they do not replace the product-specific regimen.",
+        "reviewHref": "#itraconazole-formulations"
+      },
+      {
+        "id": "triazole-pharmacology-057",
+        "lesson": "itraconazole-formulations",
+        "question": "Which principle best characterizes itraconazole heart failure?",
+        "choices": [
+          "Itraconazole has negative inotropic potential and a boxed warning for congestive heart failure and cardiac effects",
+          "Enhanced-absorption itraconazole removes the risk of heart failure",
+          "Cardiac toxicity occurs only at high doses, so lower doses need no symptom review",
+          "New peripheral edema cannot be related to itraconazole treatment"
+        ],
+        "answer": 0,
+        "rationale": "Itraconazole can cause or worsen heart failure and has negative inotropic effects described in its boxed warnings. Conventional capsules, oral solution and TOLSURA retain cardiac precautions. Heart failure has also been reported at lower doses, and edema may be a warning sign; an enhanced-absorption product or a lower dose does not remove the need for cardiac assessment.",
+        "reviewHref": "#itraconazole-formulations"
+      },
+      {
+        "id": "triazole-pharmacology-058",
+        "lesson": "itraconazole-formulations",
+        "question": "Which clinical action best applies to itraconazole heart failure?",
+        "choices": [
+          "Avoid onychomycosis use in ventricular dysfunction and reassess systemic therapy if heart failure symptoms occur",
+          "Use conventional capsules for onychomycosis despite a history of heart failure",
+          "Continue unchanged when new dyspnea and edema appear",
+          "Substitute TOLSURA for nail treatment because its absorption eliminates cardiac risk"
+        ],
+        "answer": 0,
+        "rationale": "Do not use conventional SPORANOX capsules for onychomycosis in ventricular dysfunction or a history of heart failure. New heart-failure symptoms require urgent evaluation and product-specific treatment action: conventional capsule labeling calls for discontinuation, while the solution and TOLSURA clinical warnings require careful reassessment of continued therapy. Their patient instructions advise stopping and contacting the healthcare provider immediately. TOLSURA is not indicated for onychomycosis and does not eliminate cardiac risk.",
+        "reviewHref": "#itraconazole-formulations"
+      },
+      {
+        "id": "triazole-pharmacology-059",
+        "lesson": "itraconazole-formulations",
+        "question": "Which assessment is most appropriate for itraconazole heart failure?",
+        "choices": [
+          "Assess ejection fraction, edema, dyspnea, weight, cardiac history, interacting negative inotropes, and indication",
+          "Assess only the prescribed milligrams and ignore cardiac history",
+          "Treat a normal previous ejection fraction as proof that new edema is harmless",
+          "Add a calcium channel blocker without reviewing cardiac effects and interactions"
+        ],
+        "answer": 0,
+        "rationale": "Review the cardiac history, indication, new edema or dyspnea, weight change, and ventricular function when clinically indicated. The labels describe negative inotropic effects and additive cardiac risk with calcium channel blockers; felodipine and nisoldipine are contraindicated combinations. Milligrams alone, an old normal ejection fraction or an unchecked additional negative inotrope does not resolve a new safety signal. This assessment does not mandate routine echocardiography for every patient.",
+        "reviewHref": "#itraconazole-formulations"
+      },
+      {
+        "id": "triazole-pharmacology-060",
+        "lesson": "itraconazole-formulations",
+        "question": "Which reasoning hazard is most important to prevent with itraconazole heart failure?",
+        "choices": [
+          "Treating new edema as a minor cosmetic effect",
+          "Promptly evaluate edema with dyspnea or sudden weight gain",
+          "Review the exact product and cardiac warning when symptoms appear",
+          "Check ventricular dysfunction and interacting negative inotropes before treatment"
+        ],
+        "answer": 0,
+        "rationale": "New edema should not be dismissed as cosmetic, particularly with dyspnea or sudden weight gain during itraconazole therapy. These are labeled heart-failure warning symptoms. Prompt evaluation, review of the product's treatment action, and assessment of ventricular dysfunction and interacting negative inotropes are appropriate safeguards rather than reasoning hazards.",
+        "reviewHref": "#itraconazole-formulations"
+      },
+      {
+        "id": "triazole-pharmacology-061",
+        "lesson": "itraconazole-formulations",
+        "question": "Which principle best characterizes itraconazole TDM?",
+        "choices": [
+          "Variable absorption and an active hydroxy metabolite make concentration monitoring clinically useful",
+          "An active hydroxy metabolite makes measuring itraconazole exposure unnecessary",
+          "A conventional capsule dose predicts the same exposure in every patient regardless of gastric acidity",
+          "A concentration result proves clinical success even when infection is progressing"
+        ],
+        "answer": 0,
+        "rationale": "Variable absorption and active hydroxyitraconazole support exposure monitoring. IDSA recommends TDM for specified itraconazole treatment contexts, with concentration interpreted alongside response, toxicity and interacting medicines. An active metabolite does not remove variability. A fixed dose does not establish exposure, and a result alone cannot establish treatment success. Confirm which analytes and assay the laboratory reports.",
+        "reviewHref": "#itraconazole-formulations"
+      },
+      {
+        "id": "triazole-pharmacology-062",
+        "lesson": "itraconazole-formulations",
+        "question": "Which clinical action best applies to itraconazole TDM?",
+        "choices": [
+          "Obtain an interpretable concentration after loading or a meaningful change and act on efficacy or toxicity risk",
+          "Treat a sample taken immediately after the first loading dose as a definitive steady-state result",
+          "Keep the original monitoring plan after a major absorption or interaction change without reassessment",
+          "Change the dose from a concentration alone without checking timing, assay or clinical response"
+        ],
+        "answer": 0,
+        "rationale": "Plan the sample around the indication, loading history and time needed for an interpretable concentration, then act on efficacy or toxicity risk. IDSA aspergillosis guidance recommends monitoring at steady state and patient-specific repeat monitoring; severe-histoplasmosis guidance specifies assessment after 1 to 2 weeks of itraconazole. After a meaningful change, reassess the need and timing rather than treating a first-dose sample as steady state. Check the assay, administration and clinical course before a dose decision; these guidelines do not establish one schedule for every use.",
+        "reviewHref": "#itraconazole-formulations"
+      },
+      {
+        "id": "triazole-pharmacology-063",
+        "lesson": "itraconazole-formulations",
+        "question": "Which assessment is most appropriate for itraconazole TDM?",
+        "choices": [
+          "Assess product, dose, timing, itraconazole assay, hydroxyitraconazole, adherence, interactions, and response",
+          "Check only the prescribed milligrams and ignore the actual formulation and adherence",
+          "Interpret a combined parent-plus-metabolite result using a parent-only target without checking the assay",
+          "Treat the concentration as a substitute for evaluating response, toxicity and interacting medicines"
+        ],
+        "answer": 0,
+        "rationale": "Interpret the exact product, dose and loading history, sampling time, measured analytes, adherence, interactions and clinical response together. Hydroxyitraconazole is active. A parent-only chromatographic result and a combined result are different measurements, and indication-specific targets cannot be transferred without context. Prescribed milligrams alone do not establish the delivered exposure. The concentration supplements assessment of efficacy and toxicity rather than replacing it.",
+        "reviewHref": "#itraconazole-formulations"
+      },
+      {
+        "id": "triazole-pharmacology-064",
+        "lesson": "itraconazole-formulations",
+        "question": "Which reasoning hazard is most important to prevent with itraconazole TDM?",
+        "choices": [
+          "Comparing a combined concentration to an itraconazole-only target without assay context",
+          "Confirming whether the laboratory reports itraconazole alone or parent plus hydroxyitraconazole",
+          "Checking sampling time and choosing guidance for the infection being treated",
+          "Reviewing adherence, administration, interactions and response before adjusting the dose"
+        ],
+        "answer": 0,
+        "rationale": "Applying an itraconazole-only target to a combined concentration without assay context is the hazard. IDSA guidance distinguishes analytes and infection-specific interpretation; its histoplasmosis guidance notes that an established combined cutoff is lacking. Historical FDA assay information also distinguishes parent-specific HPLC from a bioassay influenced by active hydroxyitraconazole. Checking analytes, timing, clinical indication and the delivered regimen are appropriate safeguards. No universal conversion factor or combined target is established here.",
+        "reviewHref": "#itraconazole-formulations"
+      },
+      {
+        "id": "triazole-pharmacology-165",
+        "lesson": "itraconazole-formulations",
+        "question": "A patient takes conventional itraconazole capsules with a proton pump inhibitor and no food. What is the main concern?",
+        "choices": [
+          "Reduced and variable absorption with treatment failure risk",
+          "Food omission and acid suppression reliably increase conventional capsule exposure",
+          "Identical exposure because conventional capsules and oral solution contain the same ingredient",
+          "No concern because every itraconazole product is independent of gastric pH"
+        ],
+        "answer": 0,
+        "rationale": "Fasting and proton pump inhibition can reduce conventional capsule absorption and threaten efficacy; they do not guarantee either failure or toxic exposure in an individual patient. Verify the full-meal, whole-capsule instructions and review the acid-suppressing medicine. Oral solution is not dose-for-dose interchangeable, and TOLSURA has different food and pH instructions. Shared ingredients do not establish equal exposure or one pH rule.",
+        "reviewHref": "#itraconazole-formulations"
+      },
+      {
+        "id": "triazole-pharmacology-166",
+        "lesson": "itraconazole-formulations",
+        "question": "A patient on itraconazole develops new edema, dyspnea, and rapid weight gain. What is the best response?",
+        "choices": [
+          "Urgently assess possible itraconazole-associated heart failure and reassess therapy",
+          "Reassure without evaluation",
+          "Increase the dose",
+          "Add a negative inotrope without review"
+        ],
+        "answer": 0,
+        "rationale": "New edema, dyspnea and rapid weight gain warrant urgent assessment for possible itraconazole-associated heart failure. Patient instructions advise stopping the medicine and contacting the healthcare provider immediately; clinicians then apply the exact product's warning and benefit-risk decision. Reassurance without evaluation, increasing the dose, or adding an unchecked negative inotrope fails to address this cardiac signal.",
+        "reviewHref": "#itraconazole-formulations"
+      }
+    ],
+    "retained14QuestionsThreeBodiesCheckExactMatchPriorVerifiedAfter": true,
+    "priorEvidence": "enteral-nutrition-broader-itraconazole-label-review.json",
+    "priorCompleteFigureReview": {
+      "wholeFigureVerified": true,
+      "completeClaimStrings": 14,
+      "retainedDiagram": [
+        "Treat formulation as the drug",
+        "Product",
+        "Food and pH",
+        "Concentration",
+        "Cardiac safety"
+      ],
+      "fourSteps": [
+        [
+          "Verify the exact formulation",
+          "Conventional capsule, solution and TOLSURA have distinct strengths, indications and regimens."
+        ],
+        [
+          "Write food and pH instructions",
+          "Use the full-meal capsule rule, fasting solution instruction or TOLSURA food and interaction plan."
+        ],
+        [
+          "Identify the reported analyte",
+          "Parent itraconazole and metabolite-sensitive measurements are different quantities; keep assay context visible."
+        ],
+        [
+          "Act on heart-failure symptoms",
+          "Promptly assess edema, dyspnea or sudden weight gain and apply the exact product warning."
+        ]
+      ],
+      "source": "Current product descriptions/indications/administration/pH/cardiac patient warning; qualitative parent-versus-metabolite assay distinction from explicitly historical2012FDA NOTE.",
+      "limits": "Ordinal planning figure; no measured PK curve, universal clinical concentration target, dose conversion or guaranteed outcome.",
+      "otherNineFiguresUnchanged": true,
+      "priorPosaconazoleFigureExactRetained": true,
+      "desktopMobileActuallyViewed": true
+    },
+    "newMetadataReview": [
+      {
+        "location": "application",
+        "text": "Prescribe the exact product, administration conditions, indication, cardiac plan, and concentration strategy.",
+        "source": "PriorFDAcompleteproduct/cardiac review+approvedIDSAconcentration strategy"
+      },
+      {
+        "location": "concepts[4]",
+        "text": "TDM",
+        "source": "IDSARecommendations21/22 andhistoplasmosisremarks"
+      },
+      {
+        "location": "keyPoints[3]",
+        "text": "TDM requires assay context.",
+        "source": "IDSAtarget/analyte distinctions andhistoricalFDAassay NOTE"
+      }
+    ]
+  },
+  "referenceReview": {
+    "datedChanges": [
+      [
+        "label:\"IDSA Aspergillosis Guideline\"",
+        "label:\"IDSA Aspergillosis Guideline, 2016\""
+      ],
+      [
+        "label:\"IDSA Histoplasmosis Guideline, 2025\",href:\"https://www.idsociety.org/practice-guideline/histoplasmosis-2025/\"",
+        "label:\"IDSA Histoplasmosis Guideline, 2025 and September 2026 update\",href:\"https://www.idsociety.org/practice-guideline/histoplasmosis\""
+      ]
+    ],
+    "remaining12ReferencesUnchanged": true,
+    "priorDraftHistoplasmosisHrefMatchesAuthorizedCurrentCanonicalHref": true
+  },
+  "coverage": {
+    "evidence": "enteral-nutrition-broader-itraconazole-tdm-review.json",
+    "moduleBank": 176,
+    "sourceVerifiedBankIds": [
+      "triazole-pharmacology-061",
+      "triazole-pharmacology-062",
+      "triazole-pharmacology-063",
+      "triazole-pharmacology-064"
+    ],
+    "newFullQuestionsVerified": 4,
+    "broaderFeedingBankVerifiedAfter": 201,
+    "wholeNewBodiesVerified": 1,
+    "wholeItraconazoleLessonVerified": true,
+    "itraconazoleLessonQuestionTotal": 18,
+    "prior14QuestionsExactRechecked": [
+      "triazole-pharmacology-049",
+      "triazole-pharmacology-050",
+      "triazole-pharmacology-051",
+      "triazole-pharmacology-052",
+      "triazole-pharmacology-053",
+      "triazole-pharmacology-054",
+      "triazole-pharmacology-055",
+      "triazole-pharmacology-056",
+      "triazole-pharmacology-057",
+      "triazole-pharmacology-058",
+      "triazole-pharmacology-059",
+      "triazole-pharmacology-060",
+      "triazole-pharmacology-165",
+      "triazole-pharmacology-166"
+    ],
+    "itraconazoleWholeBodiesVerified": 4,
+    "itraconazoleMetadataStatementsVerified": 12,
+    "previouslyPendingMetadataNowVerified": [
+      "application",
+      "concepts[4]",
+      "keyPoints[3]"
+    ],
+    "retainedWholeFigureAndCheckRechecked": true,
+    "wholeParentModuleVerified": false,
+    "wholeENModuleVerified": false,
+    "wholeChaptersVerified": false,
+    "all1180CumulativeObjectsUnchanged": true,
+    "all176IdsStemsKeysCorrectTextsAndAnchorsPreserved": true,
+    "noNewQuestionIds": true,
+    "originalClinicalScopeRetained": true,
+    "unrelatedDraftsPreserved": true
+  },
+  "validation": {
+    "productionBuild": {
+      "status": "passed",
+      "exitCode": 0,
+      "pages": 567,
+      "isolatedExactBase": "4dfe86d2c9fb807fc9d775ec8d3f3ff2cbff7ba7"
+    },
+    "assessmentStructure": {
+      "modules": 1,
+      "questions": 176,
+      "hardErrors": [],
+      "sourceGaps": [],
+      "sizeAdvisories": [],
+      "thinLessons": [],
+      "weakestModules": [
+        {
+          "module": "triazole-antifungal-pharmacology",
+          "lessons": 10,
+          "questions": 176,
+          "minimumLessonCoverage": 17
+        }
+      ]
+    },
+    "objectPreservation": {
+      "status": "passed",
+      "232ModulesPreserved": true,
+      "bankTotal": 176,
+      "newFullQuestionIds": [
+        "triazole-pharmacology-061",
+        "triazole-pharmacology-062",
+        "triazole-pharmacology-063",
+        "triazole-pharmacology-064"
+      ],
+      "other172QuestionsExactUnchanged": true,
+      "allIdsStemsKeysCorrectChoicesAndAnchorsPreserved": true,
+      "all1180CumulativeObjectsExactUnchanged": true,
+      "other231ModulesExactUnchanged": true,
+      "other40BodiesAll10ChecksAndAllMetadataExactUnchanged": true,
+      "prior14VerifiedLessonQuestionsExactRechecked": true,
+      "wholeItraconazoleLessonQuestions": 18,
+      "wholeItraconazoleLessonBodies": 4,
+      "wholeItraconazoleLessonMetadata": 12,
+      "priorFigureSourceComponentUnchanged": true
+    },
+    "browser": {
+      "status": "passed",
+      "results": [
+        {
+          "width": 1440,
+          "module": "triazole-antifungal-pharmacology",
+          "bodies": 41,
+          "exactMetadata": true,
+          "references": 14,
+          "wholePosaconazoleFigureAndCheck": true,
+          "attempts": [
+            {
+              "target": "triazole-pharmacology-061",
+              "seed": 2,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "triazole-pharmacology-008",
+                "triazole-pharmacology-015",
+                "triazole-pharmacology-016",
+                "triazole-pharmacology-100",
+                "triazole-pharmacology-054",
+                "triazole-pharmacology-146",
+                "triazole-pharmacology-005",
+                "triazole-pharmacology-161",
+                "triazole-pharmacology-061",
+                "triazole-pharmacology-010"
+              ]
+            },
+            {
+              "target": "triazole-pharmacology-061",
+              "seed": 2,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "triazole-pharmacology-008",
+                "triazole-pharmacology-015",
+                "triazole-pharmacology-016",
+                "triazole-pharmacology-100",
+                "triazole-pharmacology-054",
+                "triazole-pharmacology-146",
+                "triazole-pharmacology-005",
+                "triazole-pharmacology-161",
+                "triazole-pharmacology-061",
+                "triazole-pharmacology-010"
+              ]
+            },
+            {
+              "target": "triazole-pharmacology-062",
+              "seed": 13,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "triazole-pharmacology-062",
+                "triazole-pharmacology-147",
+                "triazole-pharmacology-025",
+                "triazole-pharmacology-135",
+                "triazole-pharmacology-167",
+                "triazole-pharmacology-096",
+                "triazole-pharmacology-111",
+                "triazole-pharmacology-049",
+                "triazole-pharmacology-015",
+                "triazole-pharmacology-114"
+              ]
+            },
+            {
+              "target": "triazole-pharmacology-062",
+              "seed": 13,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "triazole-pharmacology-062",
+                "triazole-pharmacology-147",
+                "triazole-pharmacology-025",
+                "triazole-pharmacology-135",
+                "triazole-pharmacology-167",
+                "triazole-pharmacology-096",
+                "triazole-pharmacology-111",
+                "triazole-pharmacology-049",
+                "triazole-pharmacology-015",
+                "triazole-pharmacology-114"
+              ]
+            },
+            {
+              "target": "triazole-pharmacology-063",
+              "seed": 87,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "triazole-pharmacology-022",
+                "triazole-pharmacology-138",
+                "triazole-pharmacology-091",
+                "triazole-pharmacology-065",
+                "triazole-pharmacology-146",
+                "triazole-pharmacology-112",
+                "triazole-pharmacology-103",
+                "triazole-pharmacology-081",
+                "triazole-pharmacology-063",
+                "triazole-pharmacology-131"
+              ]
+            },
+            {
+              "target": "triazole-pharmacology-063",
+              "seed": 87,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "triazole-pharmacology-022",
+                "triazole-pharmacology-138",
+                "triazole-pharmacology-091",
+                "triazole-pharmacology-065",
+                "triazole-pharmacology-146",
+                "triazole-pharmacology-112",
+                "triazole-pharmacology-103",
+                "triazole-pharmacology-081",
+                "triazole-pharmacology-063",
+                "triazole-pharmacology-131"
+              ]
+            },
+            {
+              "target": "triazole-pharmacology-064",
+              "seed": 33,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "triazole-pharmacology-158",
+                "triazole-pharmacology-069",
+                "triazole-pharmacology-072",
+                "triazole-pharmacology-112",
+                "triazole-pharmacology-076",
+                "triazole-pharmacology-064",
+                "triazole-pharmacology-168",
+                "triazole-pharmacology-036",
+                "triazole-pharmacology-098",
+                "triazole-pharmacology-173"
+              ]
+            },
+            {
+              "target": "triazole-pharmacology-064",
+              "seed": 33,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "triazole-pharmacology-158",
+                "triazole-pharmacology-069",
+                "triazole-pharmacology-072",
+                "triazole-pharmacology-112",
+                "triazole-pharmacology-076",
+                "triazole-pharmacology-064",
+                "triazole-pharmacology-168",
+                "triazole-pharmacology-036",
+                "triazole-pharmacology-098",
+                "triazole-pharmacology-173"
+              ]
+            }
+          ],
+          "noHorizontalOverflow": true,
+          "unauthenticated": true
+        },
+        {
+          "width": 390,
+          "module": "triazole-antifungal-pharmacology",
+          "bodies": 41,
+          "exactMetadata": true,
+          "references": 14,
+          "wholePosaconazoleFigureAndCheck": true,
+          "attempts": [
+            {
+              "target": "triazole-pharmacology-061",
+              "seed": 2,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "triazole-pharmacology-008",
+                "triazole-pharmacology-015",
+                "triazole-pharmacology-016",
+                "triazole-pharmacology-100",
+                "triazole-pharmacology-054",
+                "triazole-pharmacology-146",
+                "triazole-pharmacology-005",
+                "triazole-pharmacology-161",
+                "triazole-pharmacology-061",
+                "triazole-pharmacology-010"
+              ]
+            },
+            {
+              "target": "triazole-pharmacology-061",
+              "seed": 2,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "triazole-pharmacology-008",
+                "triazole-pharmacology-015",
+                "triazole-pharmacology-016",
+                "triazole-pharmacology-100",
+                "triazole-pharmacology-054",
+                "triazole-pharmacology-146",
+                "triazole-pharmacology-005",
+                "triazole-pharmacology-161",
+                "triazole-pharmacology-061",
+                "triazole-pharmacology-010"
+              ]
+            },
+            {
+              "target": "triazole-pharmacology-062",
+              "seed": 13,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "triazole-pharmacology-062",
+                "triazole-pharmacology-147",
+                "triazole-pharmacology-025",
+                "triazole-pharmacology-135",
+                "triazole-pharmacology-167",
+                "triazole-pharmacology-096",
+                "triazole-pharmacology-111",
+                "triazole-pharmacology-049",
+                "triazole-pharmacology-015",
+                "triazole-pharmacology-114"
+              ]
+            },
+            {
+              "target": "triazole-pharmacology-062",
+              "seed": 13,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "triazole-pharmacology-062",
+                "triazole-pharmacology-147",
+                "triazole-pharmacology-025",
+                "triazole-pharmacology-135",
+                "triazole-pharmacology-167",
+                "triazole-pharmacology-096",
+                "triazole-pharmacology-111",
+                "triazole-pharmacology-049",
+                "triazole-pharmacology-015",
+                "triazole-pharmacology-114"
+              ]
+            },
+            {
+              "target": "triazole-pharmacology-063",
+              "seed": 87,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "triazole-pharmacology-022",
+                "triazole-pharmacology-138",
+                "triazole-pharmacology-091",
+                "triazole-pharmacology-065",
+                "triazole-pharmacology-146",
+                "triazole-pharmacology-112",
+                "triazole-pharmacology-103",
+                "triazole-pharmacology-081",
+                "triazole-pharmacology-063",
+                "triazole-pharmacology-131"
+              ]
+            },
+            {
+              "target": "triazole-pharmacology-063",
+              "seed": 87,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "triazole-pharmacology-022",
+                "triazole-pharmacology-138",
+                "triazole-pharmacology-091",
+                "triazole-pharmacology-065",
+                "triazole-pharmacology-146",
+                "triazole-pharmacology-112",
+                "triazole-pharmacology-103",
+                "triazole-pharmacology-081",
+                "triazole-pharmacology-063",
+                "triazole-pharmacology-131"
+              ]
+            },
+            {
+              "target": "triazole-pharmacology-064",
+              "seed": 33,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "triazole-pharmacology-158",
+                "triazole-pharmacology-069",
+                "triazole-pharmacology-072",
+                "triazole-pharmacology-112",
+                "triazole-pharmacology-076",
+                "triazole-pharmacology-064",
+                "triazole-pharmacology-168",
+                "triazole-pharmacology-036",
+                "triazole-pharmacology-098",
+                "triazole-pharmacology-173"
+              ]
+            },
+            {
+              "target": "triazole-pharmacology-064",
+              "seed": 33,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "triazole-pharmacology-158",
+                "triazole-pharmacology-069",
+                "triazole-pharmacology-072",
+                "triazole-pharmacology-112",
+                "triazole-pharmacology-076",
+                "triazole-pharmacology-064",
+                "triazole-pharmacology-168",
+                "triazole-pharmacology-036",
+                "triazole-pharmacology-098",
+                "triazole-pharmacology-173"
+              ]
+            }
+          ],
+          "noHorizontalOverflow": true,
+          "unauthenticated": true
+        }
+      ],
+      "errors": [],
+      "captures": [
+        "body-module-Name-1440.png",
+        "body-module-Teach-1440.png",
+        "body-module-Protect-1440.png",
+        "body-module-Interpret-1440.png",
+        "figure-posaconazole-1440.png",
+        "keypoints-posaconazole-1440.png",
+        "embedded-posaconazole-incorrect-1440.png",
+        "embedded-posaconazole-correct-1440.png",
+        "references-module-1440.png",
+        "question-triazole-pharmacology-061-incorrect-1440.png",
+        "question-triazole-pharmacology-061-correct-1440.png",
+        "question-triazole-pharmacology-062-incorrect-1440.png",
+        "question-triazole-pharmacology-062-correct-1440.png",
+        "question-triazole-pharmacology-063-incorrect-1440.png",
+        "question-triazole-pharmacology-063-correct-1440.png",
+        "question-triazole-pharmacology-064-incorrect-1440.png",
+        "question-triazole-pharmacology-064-correct-1440.png",
+        "body-module-Name-390.png",
+        "body-module-Teach-390.png",
+        "body-module-Protect-390.png",
+        "body-module-Interpret-390.png",
+        "figure-posaconazole-390.png",
+        "keypoints-posaconazole-390.png",
+        "embedded-posaconazole-incorrect-390.png",
+        "embedded-posaconazole-correct-390.png",
+        "references-module-390.png",
+        "question-triazole-pharmacology-061-incorrect-390.png",
+        "question-triazole-pharmacology-061-correct-390.png",
+        "question-triazole-pharmacology-062-incorrect-390.png",
+        "question-triazole-pharmacology-062-correct-390.png",
+        "question-triazole-pharmacology-063-incorrect-390.png",
+        "question-triazole-pharmacology-063-correct-390.png",
+        "question-triazole-pharmacology-064-incorrect-390.png",
+        "question-triazole-pharmacology-064-correct-390.png"
+      ]
+    },
+    "visualInspection": {
+      "status": "passed",
+      "all34OriginalCapturesActuallyViewed": true,
+      "17NativeComparisonsActuallyViewed": true,
+      "result": "Four whole lesson bodies,whole figure,key points,correct/incorrect embedded check,references and four full question grading paths legible desktop/mobile;no clipping/overlap.320px overflow check passed."
+    },
+    "visualManifest": [
+      {
+        "comparison": "compare-1.png",
+        "originals": [
+          "body-module-Name-1440.png",
+          "body-module-Name-390.png"
+        ],
+        "nativePixelsPreserved": true
+      },
+      {
+        "comparison": "compare-2.png",
+        "originals": [
+          "body-module-Teach-1440.png",
+          "body-module-Teach-390.png"
+        ],
+        "nativePixelsPreserved": true
+      },
+      {
+        "comparison": "compare-3.png",
+        "originals": [
+          "body-module-Protect-1440.png",
+          "body-module-Protect-390.png"
+        ],
+        "nativePixelsPreserved": true
+      },
+      {
+        "comparison": "compare-4.png",
+        "originals": [
+          "body-module-Interpret-1440.png",
+          "body-module-Interpret-390.png"
+        ],
+        "nativePixelsPreserved": true
+      },
+      {
+        "comparison": "compare-5.png",
+        "originals": [
+          "figure-posaconazole-1440.png",
+          "figure-posaconazole-390.png"
+        ],
+        "nativePixelsPreserved": true
+      },
+      {
+        "comparison": "compare-6.png",
+        "originals": [
+          "keypoints-posaconazole-1440.png",
+          "keypoints-posaconazole-390.png"
+        ],
+        "nativePixelsPreserved": true
+      },
+      {
+        "comparison": "compare-7.png",
+        "originals": [
+          "embedded-posaconazole-incorrect-1440.png",
+          "embedded-posaconazole-incorrect-390.png"
+        ],
+        "nativePixelsPreserved": true
+      },
+      {
+        "comparison": "compare-8.png",
+        "originals": [
+          "embedded-posaconazole-correct-1440.png",
+          "embedded-posaconazole-correct-390.png"
+        ],
+        "nativePixelsPreserved": true
+      },
+      {
+        "comparison": "compare-9.png",
+        "originals": [
+          "references-module-1440.png",
+          "references-module-390.png"
+        ],
+        "nativePixelsPreserved": true
+      },
+      {
+        "comparison": "compare-10.png",
+        "originals": [
+          "question-triazole-pharmacology-061-incorrect-1440.png",
+          "question-triazole-pharmacology-061-incorrect-390.png"
+        ],
+        "nativePixelsPreserved": true
+      },
+      {
+        "comparison": "compare-11.png",
+        "originals": [
+          "question-triazole-pharmacology-061-correct-1440.png",
+          "question-triazole-pharmacology-061-correct-390.png"
+        ],
+        "nativePixelsPreserved": true
+      },
+      {
+        "comparison": "compare-12.png",
+        "originals": [
+          "question-triazole-pharmacology-062-incorrect-1440.png",
+          "question-triazole-pharmacology-062-incorrect-390.png"
+        ],
+        "nativePixelsPreserved": true
+      },
+      {
+        "comparison": "compare-13.png",
+        "originals": [
+          "question-triazole-pharmacology-062-correct-1440.png",
+          "question-triazole-pharmacology-062-correct-390.png"
+        ],
+        "nativePixelsPreserved": true
+      },
+      {
+        "comparison": "compare-14.png",
+        "originals": [
+          "question-triazole-pharmacology-063-incorrect-1440.png",
+          "question-triazole-pharmacology-063-incorrect-390.png"
+        ],
+        "nativePixelsPreserved": true
+      },
+      {
+        "comparison": "compare-15.png",
+        "originals": [
+          "question-triazole-pharmacology-063-correct-1440.png",
+          "question-triazole-pharmacology-063-correct-390.png"
+        ],
+        "nativePixelsPreserved": true
+      },
+      {
+        "comparison": "compare-16.png",
+        "originals": [
+          "question-triazole-pharmacology-064-incorrect-1440.png",
+          "question-triazole-pharmacology-064-incorrect-390.png"
+        ],
+        "nativePixelsPreserved": true
+      },
+      {
+        "comparison": "compare-17.png",
+        "originals": [
+          "question-triazole-pharmacology-064-correct-1440.png",
+          "question-triazole-pharmacology-064-correct-390.png"
+        ],
+        "nativePixelsPreserved": true
+      }
+    ],
+    "limits": "Unauthenticated isolated local build;prior14questionpaths previously verified and exact unchanged,not repeated here. Account persistence,main merge and production publication not established."
+  },
+  "remainingReview": {
+    "itraconazoleLessonPending": false,
+    "broaderDependenciesPending": true,
+    "nextAction": "Continue remaining broader feeding dependencies and reconcile historical lexical inventory against current complete verified question evidence;do not treat feeding-clause-only or incidental nonfeeding matches as whole-question closure. Itraconazole-formulations and posaconazole-delivery are now whole verified lessons;parent triazole/foundations modules,EN and Chapter11 remain reviewing. Continue all remaining dependencies before completing Chapter1printed7/PDF19formulaentry15fluidneeds. Full82-chapter goal remains active."
+  },
+  "release": {
+    "branch": "audit/rxprep-content-2026-09-24",
+    "commit": null,
+    "push": "pending",
+    "receipt": "enteral-nutrition-broader-itraconazole-tdm-release.json",
+    "mainMerge": "not performed",
+    "production": "not verified"
+  },
+  "wholeGoalComplete": false,
+  "privateSourceFilesInGit": false
+}
