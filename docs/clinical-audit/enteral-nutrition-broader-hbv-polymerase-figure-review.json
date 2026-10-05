@@ -1,0 +1,463 @@
+{
+  "updated": "2026-10-05T10:49:20.625174+00:00",
+  "unit": "enteral-nutrition:broader-hbv-polymerase-figure",
+  "status": "Scoped diagram readability correction verified; audit-branch push pending.",
+  "baseCommit": "ccb47bc233cddfa26136aef591e64a5b02e9aa72",
+  "coverage": {
+    "evidence": "enteral-nutrition-broader-hbv-polymerase-figure-review.json",
+    "verifiedScope": "Scoped polymerase lesson closure: prior verified four whole teaching bodies, one embedded check and 16 whole questions, plus unchanged metadata and the corrected responsive diagram labels. Whole HBV parent remains open.",
+    "scopedPolymeraseLessonVerified": true,
+    "wholeParentModuleVerified": false,
+    "existingFigureMobileLegibilityPending": false,
+    "diagramLabelsCorrected": 4,
+    "diagramsChanged": 1,
+    "sourceTeachingAndQuestionEvidence": "enteral-nutrition-broader-hbv-polymerase-review.json",
+    "individuallyReviewedCurrentWholeBankIds": [
+      "chronic-hepatitis-b-037",
+      "chronic-hepatitis-b-038",
+      "chronic-hepatitis-b-039",
+      "chronic-hepatitis-b-040",
+      "chronic-hepatitis-b-041",
+      "chronic-hepatitis-b-042",
+      "chronic-hepatitis-b-043",
+      "chronic-hepatitis-b-044",
+      "chronic-hepatitis-b-045",
+      "chronic-hepatitis-b-046",
+      "chronic-hepatitis-b-047",
+      "chronic-hepatitis-b-048",
+      "chronic-hepatitis-b-049",
+      "chronic-hepatitis-b-050",
+      "chronic-hepatitis-b-051",
+      "chronic-hepatitis-b-052"
+    ],
+    "newUniqueBankQuestionsVerified": 0,
+    "broaderFeedingBankVerifiedAfter": 346,
+    "all232ModuleObjectsExactUnchanged": true,
+    "all1180CumulativeObjectsExactUnchanged": true,
+    "allOtherComponentBytesExactUnchanged": true,
+    "remainingSelectedHepaticQuestions": 29,
+    "remainingSelectedOriginalHepaticBodies": 12,
+    "remainingSelectedHepaticChecks": 1,
+    "committedWholeModulesVerifiedAfter": 56,
+    "committedWholeModulesTotal": 232,
+    "moduleCountPercent": 24.14,
+    "chaptersVerifiedAfter": 6,
+    "chapterTotal": 82,
+    "chapterCountPercent": 7.32
+  },
+  "changes": {
+    "old": "<text x={p[0]} y={p[1]-15} textAnchor=\"middle\" fill=\"#f3eee6\" fontSize=\"14\">{label}</text>",
+    "new": "<text x={p[0]} y={p[1]-15} textAnchor=\"middle\" fill=\"#f3eee6\" fontSize=\"14\" className={key === \"polymerase-therapy\" ? \"[font-size:32px] sm:[font-size:14px]\" : undefined}>{label}</text>"
+  },
+  "sourceComparison": {
+    "status": "passed",
+    "priorTeachingQuestionsAndSourceEvidence": "enteral-nutrition-broader-hbv-polymerase-review.json",
+    "sourceContentCommit": "b9de3f526a7ce52440c6d6c9a757511e00bc4563",
+    "allCurrentModuleContentMatchesPriorVerifiedObjectsExactly": true,
+    "newClinicalClaims": 0,
+    "newDoseArithmetic": 0,
+    "metadata": {
+      "title": "Choose a High-Barrier Polymerase Inhibitor",
+      "summary": "TDF, TAF, and entecavir are central oral options. Their shared antiviral goal does not make their renal, bone, food, liver, resistance, or coinfection profiles interchangeable.",
+      "concepts": [
+        "TDF",
+        "TAF",
+        "Entecavir",
+        "Polymerase",
+        "Resistance barrier"
+      ],
+      "application": "Name the exact product, dose context, administration, organ constraints, prior resistance, and HIV plan.",
+      "keyPoints": [
+        "TDF has renal and bone liabilities.",
+        "TAF is not every TAF product.",
+        "Entecavir uses fasting administration.",
+        "Prior resistance changes selection."
+      ]
+    },
+    "figure": "Existing symbolic liver diagram and all four labels/caption retained. Only polymerase label font receives a conditional responsive class. Source meaning and graphical positions are unchanged.",
+    "sourceVisualCoveragePreviouslyVerified": {
+      "actuallyViewedCapturesThisUnit": 17,
+      "completeNativeBookPages": 3,
+      "completeNativeLabelPages": 10,
+      "completeNativeAASLDEducationalSlides": 2,
+      "completePrimaryHtmlTables": 2,
+      "captureHashes": {
+        "book-308.png": "d90b35d96fb036e7b3e7c15a75bcd172712ec3edac2916798241174f99a6db57",
+        "book-309.png": "29f952bdb0ec02d957f2ea61e9c8b5616a54d8ad4e9a8845a21cdc304725d85f",
+        "book-310.png": "28296a03b2738b3b2e8920758fb9df255539b1fa6c8baf2f94d90294a28d7141",
+        "vemlidy-3.png": "6da91162c8454e734e001ebc123d7aeb4fb4204dbf0429f5f160629ff6c8b649",
+        "vemlidy-4.png": "7c001f0a3f3726d7ffc8f09d50064574aa63b9c423a44d1f378d0c14d9e9815b",
+        "vemlidy-5.png": "9a8b01dc1c8fd2bb4d34d437e49035fb5084469660023517c647d331bb57cf76",
+        "vemlidy-7.png": "ec54c76760ea3736299e173ef7cebb1dcd33e175a741b70bee217a6224073217",
+        "viread-3.png": "75c8d10f987260256b249465d88782f0b08aeece8165ead6f754e4bb1b367954",
+        "viread-4.png": "8ffc0edb7a3489b86766b29626efc699c4c6a0835fa442d2e3627145ffa4ff65",
+        "viread-5.png": "f36a62d5965477760435f40e1e28563b50fc7e4a57b72309c6b93760f089100b",
+        "viread-6.png": "6464190c4ed001c69d55309a0cff0242e11996070ee74c97edf326ee41bc736a",
+        "viread-7.png": "75dec0761f7ac062f75ac1d6d362a3e7fbd75037aeb6f876c4616a03790f44c4",
+        "baraclude-2.png": "368a15f9c533d9d2176106f051de34eb7cda0b5555fa5148fd164557c5cb17d1",
+        "aasld2025slides-5.png": "c10df3014938706844d14e74e8f0c7f575576f9b88dfc688c11c95ca851ff6d8",
+        "aasld2025slides-6.png": "5ebfd21781053b4047dc6207af602813860947d01f19a7b39dd695481393f098",
+        "aasld2018-T1.png": "357483191b629f39fb70fd6f3fa5ff2dae762fa4216f6cc2500e0d366086111a",
+        "aasld2018-T8.png": "764a66b2fdae82a35b8c54cf3ae4ae2835e30e992980fdb14603445d13781370"
+      },
+      "doesNotClaimEverySourcePageOrFigureInspected": true
+    },
+    "limits": "Source captures were inspected in the immediately preceding content unit; not claimed newly re-read or re-captured in this styling unit. No full parent module or chapter certification."
+  },
+  "validation": {
+    "productionBuild": {
+      "status": "passed",
+      "exitCode": 0,
+      "pages": 567,
+      "bundler": "webpack"
+    },
+    "objectPreservation": {
+      "status": "passed",
+      "all232ModuleObjectsExactUnchanged": true,
+      "all1180CumulativeObjectsExactUnchanged": true,
+      "allOtherComponentBytesExactUnchanged": true,
+      "scopedLessonOnly": "polymerase-therapy",
+      "onlyProductChange": "Conditional responsive SVG label font class; no new claims, figures, metadata, questions or numeric calculations."
+    },
+    "browser": {
+      "status": "passed",
+      "results": [
+        {
+          "width": 320,
+          "all48BodiesAndAll12LessonMetadataExact": true,
+          "other11DiagramsComputedFontsAndNoClassUnchanged": true,
+          "all4EmbeddedCheckOptionsGradedExact": true,
+          "allLabelsInsideSvg": true,
+          "noHorizontalOverflow": true,
+          "metrics": [
+            {
+              "label": "TDF",
+              "fontSizeSvg": 32,
+              "screenFontPixels": 14.45,
+              "bounds": {
+                "left": 25.639060974121094,
+                "right": 52.029685974121094,
+                "top": 4.513671875,
+                "bottom": 21.513671875
+              },
+              "insideSvg": true
+            },
+            {
+              "label": "TAF",
+              "fontSizeSvg": 32,
+              "screenFontPixels": 14.45,
+              "bounds": {
+                "left": 228.96249389648438,
+                "right": 253.30621337890625,
+                "top": 4.513671875,
+                "bottom": 21.513671875
+              },
+              "insideSvg": true
+            },
+            {
+              "label": "Entecavir",
+              "fontSizeSvg": 32,
+              "screenFontPixels": 14.45,
+              "bounds": {
+                "left": 9.990623474121094,
+                "right": 67.6781234741211,
+                "top": 90.7626953125,
+                "bottom": 107.7626953125
+              },
+              "insideSvg": true
+            },
+            {
+              "label": "Resistance",
+              "fontSizeSvg": 32,
+              "screenFontPixels": 14.45,
+              "bounds": {
+                "left": 207.11093139648438,
+                "right": 275.1578063964844,
+                "top": 90.7626953125,
+                "bottom": 107.7626953125
+              },
+              "insideSvg": true
+            }
+          ]
+        },
+        {
+          "width": 390,
+          "all48BodiesAndAll12LessonMetadataExact": true,
+          "other11DiagramsComputedFontsAndNoClassUnchanged": true,
+          "all4EmbeddedCheckOptionsGradedExact": true,
+          "allLabelsInsideSvg": true,
+          "noHorizontalOverflow": true,
+          "metrics": [
+            {
+              "label": "TDF",
+              "fontSizeSvg": 32,
+              "screenFontPixels": 18.06290322580645,
+              "bounds": {
+                "left": 32.05186462402344,
+                "right": 65.03623962402344,
+                "top": 6.1455078125,
+                "bottom": 27.1455078125
+              },
+              "insideSvg": true
+            },
+            {
+              "label": "TAF",
+              "fontSizeSvg": 32,
+              "screenFontPixels": 18.06290322580645,
+              "bounds": {
+                "left": 286.2059326171875,
+                "right": 316.6434326171875,
+                "top": 6.1455078125,
+                "bottom": 27.1455078125
+              },
+              "insideSvg": true
+            },
+            {
+              "label": "Entecavir",
+              "fontSizeSvg": 32,
+              "screenFontPixels": 18.06290322580645,
+              "bounds": {
+                "left": 12.489364624023438,
+                "right": 84.59873962402344,
+                "top": 113.9580078125,
+                "bottom": 134.9580078125
+              },
+              "insideSvg": true
+            },
+            {
+              "label": "Resistance",
+              "fontSizeSvg": 32,
+              "screenFontPixels": 18.06290322580645,
+              "bounds": {
+                "left": 258.9012451171875,
+                "right": 343.9481201171875,
+                "top": 113.9580078125,
+                "bottom": 134.9580078125
+              },
+              "insideSvg": true
+            }
+          ]
+        },
+        {
+          "width": 639,
+          "all48BodiesAndAll12LessonMetadataExact": true,
+          "other11DiagramsComputedFontsAndNoClassUnchanged": true,
+          "all4EmbeddedCheckOptionsGradedExact": true,
+          "allLabelsInsideSvg": true,
+          "noHorizontalOverflow": true,
+          "metrics": [
+            {
+              "label": "TDF",
+              "fontSizeSvg": 32,
+              "screenFontPixels": 30.341129032258063,
+              "bounds": {
+                "left": 53.83866882324219,
+                "right": 109.24491882324219,
+                "top": 9.876953125,
+                "bottom": 44.876953125
+              },
+              "insideSvg": true
+            },
+            {
+              "label": "TAF",
+              "fontSizeSvg": 32,
+              "screenFontPixels": 30.341129032258063,
+              "bounds": {
+                "left": 480.7550964355469,
+                "right": 531.8800659179688,
+                "top": 9.876953125,
+                "bottom": 44.876953125
+              },
+              "insideSvg": true
+            },
+            {
+              "label": "Entecavir",
+              "fontSizeSvg": 32,
+              "screenFontPixels": 30.341129032258063,
+              "bounds": {
+                "left": 20.979293823242188,
+                "right": 142.1042938232422,
+                "top": 190.9755859375,
+                "bottom": 225.9755859375
+              },
+              "insideSvg": true
+            },
+            {
+              "label": "Resistance",
+              "fontSizeSvg": 32,
+              "screenFontPixels": 30.341129032258063,
+              "bounds": {
+                "left": 434.88787841796875,
+                "right": 577.7472534179688,
+                "top": 190.9755859375,
+                "bottom": 225.9755859375
+              },
+              "insideSvg": true
+            }
+          ]
+        },
+        {
+          "width": 640,
+          "all48BodiesAndAll12LessonMetadataExact": true,
+          "other11DiagramsComputedFontsAndNoClassUnchanged": true,
+          "all4EmbeddedCheckOptionsGradedExact": true,
+          "allLabelsInsideSvg": true,
+          "noHorizontalOverflow": true,
+          "metrics": [
+            {
+              "label": "TDF",
+              "fontSizeSvg": 14,
+              "screenFontPixels": 13.294707661290323,
+              "bounds": {
+                "left": 69.03467559814453,
+                "right": 94.30030059814453,
+                "top": 25.9365234375,
+                "bottom": 41.9365234375
+              },
+              "insideSvg": true
+            },
+            {
+              "label": "TAF",
+              "fontSizeSvg": 14,
+              "screenFontPixels": 13.294707661290323,
+              "bounds": {
+                "left": 495.37158203125,
+                "right": 518.82470703125,
+                "top": 25.9365234375,
+                "bottom": 41.9365234375
+              },
+              "insideSvg": true
+            },
+            {
+              "label": "Entecavir",
+              "fontSizeSvg": 14,
+              "screenFontPixels": 13.294707661290323,
+              "bounds": {
+                "left": 53.27687072753906,
+                "right": 110.05812072753906,
+                "top": 207.314453125,
+                "bottom": 223.314453125
+              },
+              "insideSvg": true
+            },
+            {
+              "label": "Resistance",
+              "fontSizeSvg": 14,
+              "screenFontPixels": 13.294707661290323,
+              "bounds": {
+                "left": 473.7309875488281,
+                "right": 540.4653930664062,
+                "top": 207.314453125,
+                "bottom": 223.314453125
+              },
+              "insideSvg": true
+            }
+          ]
+        },
+        {
+          "width": 1440,
+          "all48BodiesAndAll12LessonMetadataExact": true,
+          "other11DiagramsComputedFontsAndNoClassUnchanged": true,
+          "all4EmbeddedCheckOptionsGradedExact": true,
+          "allLabelsInsideSvg": true,
+          "noHorizontalOverflow": true,
+          "metrics": [
+            {
+              "label": "TDF",
+              "fontSizeSvg": 14,
+              "screenFontPixels": 20.810181451612902,
+              "bounds": {
+                "left": 108.052734375,
+                "right": 147.615234375,
+                "top": 40.9462890625,
+                "bottom": 64.9462890625
+              },
+              "insideSvg": true
+            },
+            {
+              "label": "TAF",
+              "fontSizeSvg": 14,
+              "screenFontPixels": 20.810181451612902,
+              "bounds": {
+                "left": 775.392578125,
+                "right": 812.126953125,
+                "top": 40.9462890625,
+                "bottom": 64.9462890625
+              },
+              "insideSvg": true
+            },
+            {
+              "label": "Entecavir",
+              "fontSizeSvg": 14,
+              "screenFontPixels": 20.810181451612902,
+              "bounds": {
+                "left": 83.388671875,
+                "right": 172.279296875,
+                "top": 324.857421875,
+                "bottom": 348.857421875
+              },
+              "insideSvg": true
+            },
+            {
+              "label": "Resistance",
+              "fontSizeSvg": 14,
+              "screenFontPixels": 20.810181451612902,
+              "bounds": {
+                "left": 741.509765625,
+                "right": 846.009765625,
+                "top": 324.857421875,
+                "bottom": 348.857421875
+              },
+              "insideSvg": true
+            }
+          ]
+        }
+      ],
+      "captures": [
+        "figure-320.png",
+        "figure-390.png",
+        "figure-1440.png"
+      ],
+      "errors": []
+    },
+    "visualInspection": {
+      "status": "passed",
+      "checkedAt": "2026-10-05T10:49:20.463871+00:00",
+      "rawCapturesActuallyViewed": 3,
+      "viewportsActuallyInspected": [
+        320,
+        390,
+        1440
+      ],
+      "captureHashes": {
+        "figure-320.png": "4c2fd78eb5a72b2771850bac4c55f682357dd17ac496c0b62da73a1929dd83f3",
+        "figure-390.png": "ab4d68c4ec0f0ac37d896fcb26ee91c330ab1ed7f13c9a9eb597f34e16562115",
+        "figure-1440.png": "01e19997963c201bccf96cc2e90c6f8fc01afcbaf5a274e4fef25f1ee74e9eb4"
+      },
+      "observations": [
+        "All four labels are readable at both native mobile sizes, with complete caption and no clipped edges.",
+        "Rendered label font is approximately 14.45 px at 320 and 18.06 px at 390.",
+        "Desktop preserves the existing 14 SVG-unit font, approximately 20.81 rendered px.",
+        "Labels remain separated from one another and fit around the existing liver drawing. Colors, caption, positions and scientific meaning are unchanged.",
+        "Breakpoint widths 639 and 640 verified by DOM font and bounds checks; no claim their captures were visually inspected."
+      ]
+    },
+    "limits": "Isolated unauthenticated production-build preview. Every option of the existing check regraded at five widths, all 48 bodies/all 12 lesson metadata DOM exact, other 11 diagram fonts unchanged; no newly counted question objects."
+  },
+  "remainingReview": {
+    "nextAction": "Continue the remaining HCV 29 selected whole questions, 12 selected original teaching bodies and one interaction check using complete book sections and approved official guidance/product labels. Include relevant metadata, full diagrams and unselected parent scope. Whole HBV, cirrhosis, enteral and fluid parents, Chapters 11/19 and Chapter 1 printed 7/PDF 19 entry 15 remain open. Historical 157 lexical candidates still need review or incidental classification and are not exhaustive semantic scope. Continue the full 82-chapter goal.",
+    "wholeHBVParentPending": true,
+    "wholeEnteralParentPending": true,
+    "hepaticWholeQuestionPending": 29
+  },
+  "release": {
+    "branch": "audit/rxprep-content-2026-09-24",
+    "commit": null,
+    "push": "pending",
+    "receipt": "enteral-nutrition-broader-hbv-polymerase-figure-release.json",
+    "mainMerge": "not performed",
+    "production": "not verified"
+  },
+  "wholeGoalComplete": false,
+  "privateSourcesOutsideGit": true
+}
