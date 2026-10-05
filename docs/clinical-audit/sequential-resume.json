@@ -105,8 +105,8 @@
     "branch": "audit/rxprep-content-2026-09-24",
     "baseCommit": "4dfe86d2c9fb807fc9d775ec8d3f3ff2cbff7ba7",
     "remoteVerifiedAtStart": true,
-    "commit": null,
-    "push": "pending",
+    "commit": "afd9ddb34407a6cf2b68e36b250870b414e99d94",
+    "push": "verified",
     "production": "not verified",
     "receipt": "enteral-nutrition-broader-itraconazole-tdm-release.json",
     "contentCommits": [
@@ -179,13 +179,14 @@
       "f45fcac88b5a562e8caf2f89a6b82af178dc7f48",
       "27578f7fbe880cbcb9b136a8168d3074cbb8b62d",
       "a9b9a2489b61aab36cef0c628d5ba3e2bc7dfc6a",
-      "28ffa9eb9974e1f7ab95f991a36b91edf1c4bd27"
+      "28ffa9eb9974e1f7ab95f991a36b91edf1c4bd27",
+      "afd9ddb34407a6cf2b68e36b250870b414e99d94"
     ],
     "previousVerifiedContentCommit": "28ffa9eb9974e1f7ab95f991a36b91edf1c4bd27",
     "baseReceipt": "4dfe86d2c9fb807fc9d775ec8d3f3ff2cbff7ba7",
-    "remoteHashObserved": null,
-    "exactRemoteObservedByTool": false,
-    "remoteVerifiedAt": null,
+    "remoteHashObserved": "afd9ddb34407a6cf2b68e36b250870b414e99d94",
+    "exactRemoteObservedByTool": true,
+    "remoteVerifiedAt": "2026-10-05T00:20:07.886853+00:00",
     "mainMerge": "not performed"
   },
   "openIssues": [
@@ -5798,7 +5799,18 @@
     "all176IdsStemsKeysCorrectTextsAndAnchorsPreserved": true,
     "noNewQuestionIds": true,
     "originalClinicalScopeRetained": true,
-    "unrelatedDraftsPreserved": true
+    "unrelatedDraftsPreserved": true,
+    "release": {
+      "branch": "audit/rxprep-content-2026-09-24",
+      "commit": "afd9ddb34407a6cf2b68e36b250870b414e99d94",
+      "push": "verified",
+      "receipt": "enteral-nutrition-broader-itraconazole-tdm-release.json",
+      "mainMerge": "not performed",
+      "production": "not verified",
+      "remoteHashObserved": "afd9ddb34407a6cf2b68e36b250870b414e99d94",
+      "exactRemoteObservedByTool": true,
+      "remoteVerifiedAt": "2026-10-05T00:20:07.886853+00:00"
+    }
   },
   "approvedItraconazoleIdsaSourceException": {
     "status": "authorized and scoped verification complete",
