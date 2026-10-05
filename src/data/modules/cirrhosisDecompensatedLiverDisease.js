@@ -114,3 +114,118 @@ cirrhosisDecompensatedLiverDiseaseModule.references.push(...[
     "href": "https://www.uofmhealth.org/sites/default/files/2025-05/CirrhosisToolkit.pdf"
   }
 ]);
+
+// Reconcile compensation, portal mechanisms and severity assessment.
+Object.assign(cirrhosisDecompensatedLiverDiseaseModule.submodules.find((lesson) => lesson.slug === "compensation-portal").lesson.find((body) => body.heading === "Start with normal liver work"), {
+  "body": "The liver makes albumin, procoagulant and anticoagulant proteins, and bile; processes medicines and metabolic waste; and helps regulate and store nutrients and energy. Cirrhosis replaces normal architecture with fibrosis and disrupts these functions unevenly. Albumin synthesis, bilirubin excretion, hepatocyte injury and portal pressure require different assessments; no single blood test describes the entire organ."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseModule.submodules.find((lesson) => lesson.slug === "compensation-portal").lesson.find((body) => body.heading === "Define the states"), {
+  "body": "Compensated cirrhosis has not yet produced a decompensating event. Cirrhosis-related ascites, overt hepatic encephalopathy or variceal hemorrhage marks decompensation. Varices without bleeding can occur during compensation. Record the prior event and the current clinical state: resolution on medicines does not by itself establish recompensation, and historical severity alone does not describe the current trajectory."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseModule.submodules.find((lesson) => lesson.slug === "compensation-portal").lesson.find((body) => body.heading === "Explain portal pressure"), {
+  "body": "Fibrosis and increased intrahepatic vascular tone resist portal flow. Collateral vessels develop, while splanchnic vasodilation lowers effective arterial filling despite excess total-body fluid. Neurohormonal responses promote sodium and water retention. Systemic blood pressure measures a different circulation and cannot rule out portal hypertension."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseModule.submodules.find((lesson) => lesson.slug === "compensation-portal").lesson.find((body) => body.heading === "Connect the complications"), {
+  "body": "Collateral flow produces gastroesophageal varices; rupture can cause life-threatening bleeding. Portal pressure and sodium retention contribute to ascites. Liver insufficiency and portosystemic shunting contribute to encephalopathy. Severe circulatory dysfunction can reduce kidney perfusion and lead to HRS-AKI. These mechanisms interact; a new complication requires evaluation rather than attribution to one laboratory value."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseModule.submodules.find((lesson) => lesson.slug === "compensation-portal").lesson.find((body) => body.heading === "Treat the cause in parallel"), {
+  "body": "Treat the underlying disease while managing its complications. HCV cure, sustained HBV suppression and sustained alcohol abstinence can improve the course, although the degree of recovery varies. Address metabolic disease, autoimmune disease and hepatotoxic exposures as appropriate. Improvement does not automatically remove residual portal or cancer risk; continue prevention and surveillance according to the current specialist assessment."
+});
+cirrhosisDecompensatedLiverDiseaseModule.submodules.find((lesson) => lesson.slug === "compensation-portal").lesson.push(...[
+  {
+    "heading": "Recognize and confirm liver disease",
+    "body": "Fatigue, appetite loss, nausea, right-upper-quadrant discomfort, jaundice, dark urine or pale stools can prompt investigation but do not individually diagnose cirrhosis. Combine history, examination, laboratory patterns and imaging, including elastography when appropriate. Biopsy can resolve uncertain diagnosis or cause; it is not mandatory in every patient. Identify viral, alcohol, metabolic, autoimmune and medicine-related causes."
+  },
+  {
+    "heading": "Establish portal-hypertension evidence",
+    "body": "In viral or alcohol-related cirrhosis, a hepatic venous pressure gradient (HVPG) of at least 10 mmHg defines clinically significant portal hypertension. Validated noninvasive assessment also uses transient elastography and platelets, with imaging or endoscopic evidence as appropriate. Thresholds depend on method, etiology and patient population; a generic stiffness cutoff is not universal. Varices and portosystemic collaterals are important evidence even when systemic pressure is normal."
+  },
+  {
+    "heading": "Assess recompensation explicitly",
+    "body": "Baveno VII defines recompensation by expert consensus: control of the primary cause; ascites resolved off diuretics and encephalopathy resolved off lactulose/rifaximin, with no recurrent variceal hemorrhage for at least 12 months; and sustained improvement in albumin, INR and bilirubin. Symptom control alone is insufficient. Portal hypertension can persist after recompensation. Recovery alone is not a reason to stop nonselective beta blockers while clinically significant portal hypertension persists; reassess safety and tolerance with the treating team."
+  }
+]);
+Object.assign(cirrhosisDecompensatedLiverDiseaseModule.submodules.find((lesson) => lesson.slug === "compensation-portal"), {
+  "keyPoints": [
+    "Assess liver function and portal pressure separately.",
+    "Record both prior decompensation and the current state.",
+    "Systemic pressure does not exclude portal hypertension.",
+    "Recompensation requires more than symptom control."
+  ]
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseModule.submodules.find((lesson) => lesson.slug === "compensation-portal").check, {
+  "rationale": "Cirrhosis-related ascites establishes a history of decompensation. A mild ALT elevation, normal ultrasound or viral cure does not do so. Record the history and current state; later recompensation requires explicit criteria rather than symptom improvement alone."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseModule.submodules.find((lesson) => lesson.slug === "severity-assessment").lesson.find((body) => body.heading === "Separate injury from function"), {
+  "body": "ALT and AST primarily reflect hepatocellular injury, not remaining synthetic reserve. AST also has extrahepatic sources. ALP and GGT help identify a cholestatic pattern; an isolated ALP rise may originate in bone, so clarify the source. Albumin and PT/INR inform synthesis, while bilirubin reflects processing and excretion. Interpret the pattern and trend with symptoms, medicines and competing causes; enzyme height alone does not measure severity."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseModule.submodules.find((lesson) => lesson.slug === "severity-assessment").lesson.find((body) => body.heading === "Trace bilirubin before interpreting it"), {
+  "body": "Heme breakdown produces water-insoluble unconjugated bilirubin, transported mainly bound to albumin. The liver conjugates it into a water-soluble form for biliary excretion. Conjugated bilirubin in blood can appear in urine; unconjugated bilirubin is not normally excreted in urine. Hemolysis or impaired uptake/conjugation can raise the indirect fraction. Impaired hepatic excretion or biliary obstruction can raise the direct fraction. Fractionate an isolated elevation; dark urine and pale stools help guide further assessment."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseModule.submodules.find((lesson) => lesson.slug === "severity-assessment").lesson.find((body) => body.heading === "Read synthetic function in context"), {
+  "body": "Low albumin can reflect reduced liver synthesis, inflammation, malnutrition, protein loss or fluid dilution. A prolonged INR can reflect liver disease, vitamin K deficiency, anticoagulants or other coagulation disorders. Review these causes and the trajectory before assigning the result to cirrhosis. Cirrhosis changes both clotting and anticlotting proteins; INR alone neither measures bleeding risk nor establishes protection from thrombosis."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseModule.submodules.find((lesson) => lesson.slug === "severity-assessment").lesson.find((body) => body.heading === "Use Child-Pugh carefully"), {
+  "body": "Child-Pugh assigns 1 to 3 points to each of five components: bilirubin, albumin, PT prolongation or INR, ascites and encephalopathy. Use one validated version and do not count PT and INR twice. Total scores are 5 to 15: class A is 5 to 6, B is 7 to 9 and C is 10 to 15. Clinical grading is partly subjective and treatment-dependent. Drug decisions require the medicine\u2019s own current hepatic-impairment instructions, not an automatic dose reduction for every drug."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseModule.submodules.find((lesson) => lesson.slug === "severity-assessment").lesson.find((body) => body.heading === "Use MELD 3.0 correctly"), {
+  "body": "Use the current OPTN calculator for allocation-related MELD. It requires bilirubin and creatinine in mg/dL, INR, sodium in mEq/L, albumin in g/dL, age at registration and sex for adult registration. Confirm recent dialysis and the applicable age formula. OPTN applies input limits and dialysis rules, then rounds the calculated score within 6 to 40. MELD estimates mortality risk and informs allocation; it does not fully describe symptoms, recurrent complications or nutritional and functional burden."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseModule.submodules.find((lesson) => lesson.slug === "severity-assessment").lesson.find((body) => body.heading === "Refer from events, not score alone"), {
+  "body": "Decompensation should prompt timely hepatology and transplant consideration, including clinically significant ascites, encephalopathy or variceal bleeding. Review HRS-AKI, jaundice, HCC, recurrent admissions and functional decline as part of the trajectory. Evaluation is not guaranteed listing. Stabilize urgent bleeding, infection, encephalopathy and kidney injury while referral proceeds; do not await an extreme MELD score."
+});
+cirrhosisDecompensatedLiverDiseaseModule.submodules.find((lesson) => lesson.slug === "severity-assessment").lesson.push(...[
+  {
+    "heading": "Work a Child-Pugh example",
+    "body": "Using the standard INR-based table, bilirubin 2.5 mg/dL earns 2 points, albumin 3.0 g/dL earns 2, INR 1.8 earns 2, mild diuretic-responsive ascites earns 2 and absent encephalopathy earns 1. The total is 2 + 2 + 2 + 2 + 1 = 9, class B. The laboratory middle bands are bilirubin 2 to 3, albumin 2.8 to 3.5 and INR 1.7 to 2.3 in these units. Specify the ascites and encephalopathy grades rather than inferring them from a lab value."
+  },
+  {
+    "heading": "Pair definitive planning with symptom care",
+    "body": "Palliative care can begin alongside disease-directed treatment and transplant evaluation. Address symptoms, psychosocial needs, caregiver burden and the patient\u2019s goals; it is not synonymous with hospice or withdrawal of treatment. Discuss and document preferences and a surrogate decision maker, and revisit them as illness changes. Coordinate support for treatment access and follow-up rather than assuming a referral alone closes the loop."
+  }
+]);
+Object.assign(cirrhosisDecompensatedLiverDiseaseModule.submodules.find((lesson) => lesson.slug === "severity-assessment"), {
+  "keyPoints": [
+    "Injury, synthesis and excretion are different measurements.",
+    "Child-Pugh scores run from 5 to 15.",
+    "Use current MELD inputs, units and dialysis rules.",
+    "Referral and symptom care can proceed together."
+  ]
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseModule.submodules.find((lesson) => lesson.slug === "severity-assessment").check, {
+  "rationale": "ALT primarily reflects hepatocellular injury. Albumin and clotting-factor production reflected by INR provide information about synthesis; bilirubin reflects processing and excretion. Each result still requires clinical context and assessment of other causes."
+});
+cirrhosisDecompensatedLiverDiseaseModule.references.push(...[
+  {
+    "label": "Baveno VII 2022: Portal hypertension and recompensation",
+    "href": "https://apef.com.pt/wp-content/uploads/2021/07/PIIS0168827821022996.pdf"
+  },
+  {
+    "label": "NIDDK 2023: Diagnosis of cirrhosis",
+    "href": "https://www.niddk.nih.gov/health-information/liver-disease/cirrhosis/diagnosis"
+  },
+  {
+    "label": "NIDDK 2023: Treating cirrhosis and its causes",
+    "href": "https://www.niddk.nih.gov/health-information/liver-disease/cirrhosis/treatment"
+  },
+  {
+    "label": "AASLD 2025: Interpreting liver enzymes",
+    "href": "https://www.aasld.org/liver-fellow-network/core-series/back-basics/how-approach-elevated-liver-enzymes"
+  },
+  {
+    "label": "Merck Manual 2025: Liver tests and bilirubin",
+    "href": "https://www.merckmanuals.com/professional/hepatic-and-biliary-disorders/testing-for-hepatic-and-biliary-disorders/laboratory-tests-of-the-liver-and-gallbladder"
+  },
+  {
+    "label": "University of Washington: Child-Pugh calculator",
+    "href": "https://www.hepatitisc.uw.edu/page/clinical-calculators/ctp"
+  },
+  {
+    "label": "HRSA/OPTN: Current MELD calculator",
+    "href": "https://www.hrsa.gov/optn/data-calculators/allocation-calculators/meld-calculator"
+  },
+  {
+    "label": "OPTN policies, October 1, 2026: MELD section 9.1.D",
+    "href": "https://www.hrsa.gov/sites/default/files/hrsa/optn/optn_policies.pdf"
+  }
+]);

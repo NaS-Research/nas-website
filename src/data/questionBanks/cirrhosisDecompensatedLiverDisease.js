@@ -166,3 +166,221 @@ Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => 
   ],
   "rationale": "The error is abandoning indicated surveillance because the cause is controlled. In patients with cirrhosis, HCC risk can persist after HCV cure; surveillance eligibility still depends on whether HCC-directed treatment or transplantation could provide benefit. The other choices support individualized continued care."
 });
+
+// Reconcile the full compensation, portal, laboratory, scoring and referral item set.
+Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => question.id === "cirrhosis-decompensated-001"), {
+  "choices": [
+    "Cirrhosis-related ascites, overt encephalopathy or variceal hemorrhage marks decompensation; prior events and the current state both matter.",
+    "Nonbleeding varices alone always establish decompensation.",
+    "Any mild ALT elevation establishes decompensated cirrhosis.",
+    "Control of ascites on diuretics automatically proves recompensation."
+  ],
+  "rationale": "Ascites, overt encephalopathy and variceal hemorrhage are defining events. Nonbleeding varices can occur before decompensation, and ALT is an injury marker. Treatment-controlled ascites alone does not satisfy formal recompensation criteria."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => question.id === "cirrhosis-decompensated-002"), {
+  "choices": [
+    "After ascites resolves on diuretics, retain the decompensation history and reassess the current state and continued prevention needs.",
+    "After ascites resolves on diuretics, erase the prior event from the clinical assessment.",
+    "After ascites resolves on diuretics, assume all portal hypertension has disappeared.",
+    "After ascites resolves on diuretics, label formal recompensation without reviewing etiology or liver function."
+  ],
+  "rationale": "Resolution while taking diuretics shows treatment response, not formal recompensation by itself. History remains relevant, while current findings and trajectory guide reassessment. Neither portal-risk resolution nor cause control can be presumed."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => question.id === "cirrhosis-decompensated-003"), {
+  "choices": [
+    "Assess cause control, ascites off diuretics, HE off lactulose/rifaximin, absence of recurrent variceal bleeding for at least 12 months and stable improvement in liver function.",
+    "Confirm recompensation from viral suppression alone even with persistent ascites.",
+    "Confirm recompensation from normal ALT alone despite recurrent overt encephalopathy.",
+    "Confirm recompensation from symptom control alone despite unchanged synthetic function."
+  ],
+  "rationale": "Baveno VII requires the combined etiologic, clinical and functional criteria. A single favorable result is insufficient. This is an expert-consensus definition; reassess residual portal hypertension and prevention even after criteria are met."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => question.id === "cirrhosis-decompensated-004"), {
+  "choices": [
+    "Erase a prior cirrhosis-related ascites episode because it is currently controlled by diuretics.",
+    "Record previous decompensation alongside the present treatment response.",
+    "Review formal recompensation criteria after sustained cause control.",
+    "Reassess portal and cancer prevention according to the current clinical state."
+  ],
+  "rationale": "Erasing the prior event conceals important disease history. The other choices preserve history while assessing recovery and residual risk. Controlled ascites alone does not establish formal recompensation."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => question.id === "cirrhosis-decompensated-005"), {
+  "choices": [
+    "Intrahepatic resistance and altered splanchnic circulation can produce portal hypertension even when systemic blood pressure is normal.",
+    "Normal systemic blood pressure excludes all portal hypertension.",
+    "Collateral veins eliminate the risk of gastroesophageal varices.",
+    "Ascites always means the effective arterial circulation is overfilled."
+  ],
+  "rationale": "Portal and systemic pressures describe different circulations. Collaterals include varices, while splanchnic vasodilation can reduce effective arterial filling despite excess total-body fluid. Normal blood pressure does not exclude portal disease."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => question.id === "cirrhosis-decompensated-006"), {
+  "choices": [
+    "Use validated liver-stiffness and platelet criteria, with imaging or endoscopic evidence and specialist assessment as appropriate.",
+    "Infer absence of portal hypertension from one normal arm blood-pressure reading.",
+    "Apply any stiffness cutoff identically to every etiology and body habitus.",
+    "Dismiss visible portosystemic collaterals because ALT has normalized."
+  ],
+  "rationale": "Validated noninvasive criteria must match the method and population. Clinical and imaging evidence remains relevant; systemic pressure and ALT cannot independently rule out portal hypertension. Invasive testing is individualized rather than required for every patient."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => question.id === "cirrhosis-decompensated-007"), {
+  "choices": [
+    "In viral or alcohol-related cirrhosis, interpret HVPG of at least 10 mmHg as clinically significant portal hypertension and assess its clinical consequences.",
+    "In viral or alcohol-related cirrhosis, define clinically significant portal hypertension only when arm systolic pressure exceeds 140 mmHg.",
+    "In viral or alcohol-related cirrhosis, exclude clinically significant portal hypertension whenever HVPG is below 20 mmHg.",
+    "Use the viral/alcohol HVPG definition to exclude every presinusoidal cause of portal hypertension."
+  ],
+  "rationale": "Baveno VII defines CSPH at HVPG at least 10 mmHg for viral/alcohol cirrhosis. Arm pressure is not the criterion. HVPG can underestimate presinusoidal disease, and the interpretation must account for etiology rather than applying a universal exclusion rule."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => question.id === "cirrhosis-decompensated-008"), {
+  "choices": [
+    "Stop evaluating portal risk because systemic blood pressure is normal despite documented varices.",
+    "Assess varices and other portal-hypertension evidence independently of arm blood pressure.",
+    "Use population-appropriate noninvasive criteria with specialist review.",
+    "Continue indicated prevention while assessing response to etiologic treatment."
+  ],
+  "rationale": "The error is treating normal systemic pressure as proof that documented portal disease is absent. The other choices assess the relevant circulation and preserve appropriate prevention while recovery is evaluated."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => question.id === "cirrhosis-decompensated-009"), {
+  "choices": [
+    "ALT and AST mainly reflect hepatocellular injury; albumin and PT/INR inform synthesis, while bilirubin informs processing and excretion.",
+    "ALT directly measures clotting-factor synthesis.",
+    "Albumin concentration directly measures acute hepatocyte injury without confounders.",
+    "Direct bilirubin is a clotting protein synthesized by the liver."
+  ],
+  "rationale": "These measurements assess different processes. Albumin and INR also have nonhepatic influences; bilirubin is a metabolized pigment, not a clotting protein. Avoid treating all liver-associated tests as interchangeable measures of reserve."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => question.id === "cirrhosis-decompensated-010"), {
+  "choices": [
+    "For low albumin, assess liver synthesis together with inflammation, nutrition, protein loss and dilution.",
+    "For low albumin, diagnose cirrhosis as the only possible cause.",
+    "For low albumin, infer acute hepatocyte injury directly from its concentration.",
+    "For low albumin, ignore fluid status because dilution cannot affect the result."
+  ],
+  "rationale": "Low albumin is nonspecific. Inflammation, poor nutrition, protein loss and fluid overload may contribute, so interpret the result alongside the history, other liver measurements and trend."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => question.id === "cirrhosis-decompensated-011"), {
+  "choices": [
+    "For prolonged INR, review liver disease, anticoagulants, vitamin K status and other coagulation disorders before assigning a cause.",
+    "For prolonged INR, conclude that the patient cannot develop thrombosis.",
+    "For prolonged INR, infer the exact bleeding risk from INR alone.",
+    "For prolonged INR, rule out all nonhepatic causes because the patient has cirrhosis."
+  ],
+  "rationale": "Cirrhosis alters both procoagulant and anticoagulant factors. INR can be affected by other disorders and medicines; it neither quantifies cirrhosis-related bleeding risk alone nor establishes protection from thrombosis."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => question.id === "cirrhosis-decompensated-012"), {
+  "choices": [
+    "Treat a normal ALT as proof of preserved liver reserve despite ascites and worsening INR.",
+    "Review ascites, bilirubin, albumin and INR alongside injury markers.",
+    "Consider medicine and nonhepatic influences on abnormal results.",
+    "Assess the direction of change and current symptoms rather than one enzyme result."
+  ],
+  "rationale": "A normal injury marker cannot override decompensation or worsening functional findings. The other actions integrate different measurements and possible confounders instead of assuming normal ALT means recovery."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => question.id === "cirrhosis-decompensated-013"), {
+  "choices": [
+    "Unconjugated bilirubin is transported mainly bound to albumin; conjugation increases water solubility and supports biliary excretion.",
+    "Unconjugated bilirubin is freely excreted in urine before liver uptake.",
+    "Conjugation makes bilirubin less water-soluble.",
+    "Conjugated bilirubin normally cannot enter urine when present in blood."
+  ],
+  "rationale": "Albumin binding and water insolubility prevent normal urinary excretion of unconjugated bilirubin. Conjugated bilirubin is water-soluble and can appear in urine when circulating levels rise."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => question.id === "cirrhosis-decompensated-014"), {
+  "choices": [
+    "Fractionate an isolated bilirubin elevation and evaluate hemolysis or impaired uptake/conjugation when the indirect fraction predominates.",
+    "Diagnose extrahepatic obstruction from every isolated indirect bilirubin rise.",
+    "Use a negative urine bilirubin test to exclude all indirect hyperbilirubinemia.",
+    "Treat total bilirubin alone as proof of the site and cause of dysfunction."
+  ],
+  "rationale": "An indirect rise can reflect increased production or impaired uptake/conjugation. Fractionation guides further investigation but does not establish the complete diagnosis. Unconjugated bilirubin is not normally excreted in urine, so a negative urine result does not exclude an indirect rise."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => question.id === "cirrhosis-decompensated-015"), {
+  "choices": [
+    "With jaundice, dark urine and a direct bilirubin rise, assess hepatic excretion and possible biliary obstruction using the laboratory pattern and appropriate imaging.",
+    "With a direct bilirubin rise, diagnose hemolysis as the only possible cause.",
+    "With a direct bilirubin rise, assume dark urine must represent unconjugated bilirubin.",
+    "With jaundice and pale stools, dismiss biliary causes without reviewing the laboratory pattern."
+  ],
+  "rationale": "Direct bilirubin elevation can arise from impaired hepatic excretion or obstruction. Dark urine may contain conjugated bilirubin and pale stools suggest reduced pigment reaching the bowel; combine these clues with other findings and imaging rather than declaring one cause."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => question.id === "cirrhosis-decompensated-016"), {
+  "choices": [
+    "Exclude unconjugated hyperbilirubinemia solely because urine bilirubin is negative.",
+    "Review bilirubin fractions and hemolysis evidence when appropriate.",
+    "Recognize that unconjugated bilirubin is not normally excreted in urine.",
+    "Use urine findings as one clue alongside serum tests and the clinical picture."
+  ],
+  "rationale": "A negative urine bilirubin result cannot exclude an indirect rise because unconjugated bilirubin is not normally excreted in urine. The other choices correctly interpret solubility and the limits of an isolated test."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => question.id === "cirrhosis-decompensated-017"), {
+  "choices": [
+    "Child-Pugh includes ascites and encephalopathy; current MELD uses different inputs, and neither replaces clinical assessment.",
+    "Child-Pugh assigns zero points when all five findings are normal.",
+    "MELD 3.0 directly includes an ascites grade and an encephalopathy grade.",
+    "Child-Pugh class alone determines an identical dose reduction for every medicine."
+  ],
+  "rationale": "Child-Pugh assigns at least one point per component, so its minimum is 5. MELD uses laboratory and demographic inputs rather than these clinical grades. Medicines require their own hepatic-impairment guidance, and scores must be interpreted with the patient\u2019s condition."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => question.id === "cirrhosis-decompensated-018"), {
+  "choices": [
+    "For bilirubin 2.5 mg/dL, albumin 3.0 g/dL, INR 1.8, mild diuretic-responsive ascites and no HE, calculate Child-Pugh 9, class B.",
+    "For those same stated findings, calculate Child-Pugh 4, class A.",
+    "For those same stated findings, calculate Child-Pugh 9, class C.",
+    "For those same stated findings, calculate Child-Pugh 12 by counting PT and INR as separate components."
+  ],
+  "rationale": "In the standard INR-based table, the five components earn 2, 2, 2, 2 and 1 points: total 9, class B. Class C begins at 10. PT and INR are alternatives for one component, not two separately counted components."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => question.id === "cirrhosis-decompensated-019"), {
+  "choices": [
+    "Use the current OPTN MELD calculator with verified units, age-at-registration formula, albumin, adult sex input and recent dialysis history.",
+    "Use only bilirubin, INR and creatinine and label the result MELD 3.0.",
+    "Enter bilirubin in micromol/L into a field requiring mg/dL without conversion.",
+    "Ignore qualifying recent dialysis whenever measured creatinine is below 3 mg/dL."
+  ],
+  "rationale": "Current MELD includes sodium and albumin, with the adult sex term determined by registration age. Units and dialysis history change calculation: OPTN uses creatinine 3 mg/dL for qualifying dialysis. An older three-variable formula is not current MELD 3.0."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => question.id === "cirrhosis-decompensated-020"), {
+  "choices": [
+    "Delay urgent evaluation of active bleeding or kidney injury until a high MELD score is calculated.",
+    "Stabilize urgent complications while current severity assessment proceeds.",
+    "Review current score inputs and their units before interpreting the result.",
+    "Use decompensation and clinical trajectory to inform timely referral."
+  ],
+  "rationale": "A score must not delay urgent assessment and treatment. The other actions combine accurate scoring with stabilization and referral. A low or unavailable score does not make active complications safe to ignore."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => question.id === "cirrhosis-decompensated-109"), {
+  "choices": [
+    "Palliative care can address symptoms and caregiver needs during transplant evaluation and disease-directed treatment.",
+    "Palliative care automatically excludes transplantation.",
+    "Palliative care is available only after all liver-directed medicines are stopped.",
+    "Palliative care and hospice are identical in timing and purpose."
+  ],
+  "rationale": "AASLD supports concurrent palliative and disease-directed care. Palliative care addresses serious-illness needs at any stage; it does not automatically establish hospice enrollment or remove transplant consideration."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => question.id === "cirrhosis-decompensated-110"), {
+  "choices": [
+    "After decompensation, arrange timely specialist/transplant assessment and symptom support based on the patient\u2019s condition and goals.",
+    "After decompensation, defer all referral until MELD reaches 40.",
+    "After decompensation, guarantee transplant listing without evaluating eligibility.",
+    "After decompensation, stop symptom care whenever transplant evaluation is requested."
+  ],
+  "rationale": "Decompensation warrants timely consideration of transplantation, with continued symptom care. Evaluation and listing are distinct; candidacy requires individualized assessment. Waiting for the maximum score or withholding supportive care can miss needs and opportunities."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => question.id === "cirrhosis-decompensated-111"), {
+  "choices": [
+    "Discuss goals, document preferences and a surrogate, review caregiver and access barriers, and revisit the plan as the disease changes.",
+    "Treat transplant referral as a substitute for discussing patient preferences.",
+    "Assume one goals discussion remains sufficient after every major clinical change.",
+    "Exclude caregivers and access barriers from the care plan despite the patient\u2019s wishes and needs."
+  ],
+  "rationale": "Advance care planning is a continuing process. AASLD includes patient values, preferences and surrogate decision makers; symptom and caregiver support can coexist with transplant planning. Revisit the plan as circumstances change."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => question.id === "cirrhosis-decompensated-112"), {
+  "choices": [
+    "Wait through repeated decompensation solely because MELD has not reached an extreme value.",
+    "Consider timely transplant evaluation after decompensation.",
+    "Provide palliative symptom support alongside disease-directed treatment.",
+    "Review eligibility, goals and follow-up barriers with the patient and team."
+  ],
+  "rationale": "Waiting solely for an extreme score can delay evaluation while the disease worsens. The other choices support timely individualized definitive planning and symptom care; referral does not guarantee listing."
+});
