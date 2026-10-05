@@ -522,8 +522,8 @@ export default async function PharmacyModulePage({ params }) {
               {pelvicOrganProlapseFistulaCareVisualTypes.includes(submodule.visual) && <PelvicOrganProlapseFistulaCareVisual type={submodule.visual} />}
               {genderAffirmingHormoneCareVisualTypes.includes(submodule.visual) && <GenderAffirmingHormoneCareVisual type={submodule.visual} />}
               {immunoglobulinTherapyVisualTypes.includes(submodule.visual) && <ImmunoglobulinTherapyVisual type={submodule.visual} />}
-              {anemiaVisualTypes.includes(submodule.visual) && <AnemiaVisual type={submodule.visual} />}
-              {sickleCellDiseaseVisualTypes.includes(submodule.visual) && <SickleCellDiseaseVisual type={submodule.visual} />}
+              {module.slug === "anemia" && anemiaVisualTypes.includes(submodule.visual) && <AnemiaVisual type={submodule.visual} />}
+              {module.slug === "sickle-cell-disease" && sickleCellDiseaseVisualTypes.includes(submodule.visual) && <SickleCellDiseaseVisual type={submodule.visual} />}
               {coughCommonColdVisualTypes.includes(submodule.visual) && <CoughCommonColdVisual type={submodule.visual} />}
               {commonEyeConditionsVisualTypes.includes(submodule.visual) && <CommonEyeConditionsVisual type={submodule.visual} />}
               {commonEarConditionsVisualTypes.includes(submodule.visual) && <CommonEarConditionsVisual type={submodule.visual} />}
@@ -538,7 +538,7 @@ export default async function PharmacyModulePage({ params }) {
               {topicalCorticosteroidVisualTypes.includes(submodule.visual) && <TopicalCorticosteroidVisual type={submodule.visual} />}
               {urticariaVisualTypes.includes(submodule.visual) && <UrticariaVisual type={submodule.visual} />}
               {envenomationVisualTypes.includes(submodule.visual) && <EnvenomationVisual type={submodule.visual} />}
-              {sunscreenPhotoprotectionVisualTypes.includes(submodule.visual) && <SunscreenPhotoprotectionVisual type={submodule.visual} />}
+              {module.slug === "sunscreen-photoprotection" && sunscreenPhotoprotectionVisualTypes.includes(submodule.visual) && <SunscreenPhotoprotectionVisual type={submodule.visual} />}
               {herpesLabialisVisualTypes.includes(submodule.visual) && <HerpesLabialisVisual type={submodule.visual} />}
               {seborrheicDermatitisVisualTypes.includes(submodule.visual) && <SeborrheicDermatitisVisual type={submodule.visual} />}
               {alopeciaVisualTypes.includes(submodule.visual) && <AlopeciaVisual type={submodule.visual} />}
