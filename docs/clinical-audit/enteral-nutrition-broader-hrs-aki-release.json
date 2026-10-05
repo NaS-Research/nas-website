@@ -1,0 +1,816 @@
+{
+  "verifiedAt": "2026-10-05T20:32:51.564135+00:00",
+  "unit": "enteral-nutrition:broader-hrs-aki",
+  "contentCommit": "8ea95bb106139e5f5052556ef0a6d278e95fbe0a",
+  "remoteBranch": "audit/rxprep-content-2026-09-24",
+  "remoteHashObserved": "8ea95bb106139e5f5052556ef0a6d278e95fbe0a",
+  "exactRemoteObservedByTool": true,
+  "coverage": {
+    "evidence": "enteral-nutrition-broader-hrs-aki-review.json",
+    "verifiedScope": "Complete HRS-AKI lesson with 11 whole bodies, one whole check, metadata and figure; eight whole anchored questions and one derived cumulative question.",
+    "wholeLessonsVerified": {
+      "cirrhosis-decompensated-liver-disease": [
+        "hrs-aki"
+      ]
+    },
+    "wholeBodiesVerified": 11,
+    "existingWholeBodiesRefined": 4,
+    "newOriginalBodies": 7,
+    "wholeChecksVerified": 1,
+    "wholeMetadataAndFiguresVerified": 1,
+    "wholeBankQuestionIdsVerified": [
+      "cirrhosis-decompensated-057",
+      "cirrhosis-decompensated-058",
+      "cirrhosis-decompensated-059",
+      "cirrhosis-decompensated-060",
+      "cirrhosis-decompensated-061",
+      "cirrhosis-decompensated-062",
+      "cirrhosis-decompensated-063",
+      "cirrhosis-decompensated-064"
+    ],
+    "newUniqueBankQuestionsVerified": 8,
+    "broaderFeedingBankVerifiedBefore": 645,
+    "broaderFeedingBankVerifiedAfter": 653,
+    "sourceVerifiedCirrhosisBankTotalAcrossUnits": 80,
+    "cirrhosisBankTotal": 120,
+    "remainingCirrhosisWholeBankIds": [
+      "cirrhosis-decompensated-065",
+      "cirrhosis-decompensated-066",
+      "cirrhosis-decompensated-067",
+      "cirrhosis-decompensated-068",
+      "cirrhosis-decompensated-069",
+      "cirrhosis-decompensated-070",
+      "cirrhosis-decompensated-071",
+      "cirrhosis-decompensated-072",
+      "cirrhosis-decompensated-073",
+      "cirrhosis-decompensated-074",
+      "cirrhosis-decompensated-075",
+      "cirrhosis-decompensated-076",
+      "cirrhosis-decompensated-077",
+      "cirrhosis-decompensated-078",
+      "cirrhosis-decompensated-079",
+      "cirrhosis-decompensated-080",
+      "cirrhosis-decompensated-081",
+      "cirrhosis-decompensated-082",
+      "cirrhosis-decompensated-083",
+      "cirrhosis-decompensated-084",
+      "cirrhosis-decompensated-085",
+      "cirrhosis-decompensated-086",
+      "cirrhosis-decompensated-087",
+      "cirrhosis-decompensated-088",
+      "cirrhosis-decompensated-089",
+      "cirrhosis-decompensated-090",
+      "cirrhosis-decompensated-091",
+      "cirrhosis-decompensated-092",
+      "cirrhosis-decompensated-093",
+      "cirrhosis-decompensated-094",
+      "cirrhosis-decompensated-095",
+      "cirrhosis-decompensated-096",
+      "cirrhosis-decompensated-113",
+      "cirrhosis-decompensated-114",
+      "cirrhosis-decompensated-115",
+      "cirrhosis-decompensated-116",
+      "cirrhosis-decompensated-117",
+      "cirrhosis-decompensated-118",
+      "cirrhosis-decompensated-119",
+      "cirrhosis-decompensated-120"
+    ],
+    "other112WholeCirrhosisQuestionsUnchanged": true,
+    "other11CirrhosisLessonsUnchanged": true,
+    "other231WholeModulesUnchanged": true,
+    "associatedCumulativeWholeItemsVerified": [
+      "cumulative-cirrhosis-decompensated-liver-disease-cirrhosis-decompensated-061"
+    ],
+    "other1179WholeCumulativeObjectsUnchanged": true,
+    "stableIdsKeysDifficultyAnchorsAndOrderPreserved": true,
+    "newQuestionIdsAdded": 0,
+    "newReferenceCount": 1,
+    "wholeParentModulesVerified": false,
+    "wholeChaptersVerified": false,
+    "committedWholeModulesVerifiedAfter": 58,
+    "committedWholeModulesTotal": 232,
+    "moduleCountPercent": 25.0,
+    "chaptersVerifiedAfter": 6,
+    "chapterTotal": 82,
+    "chapterCountPercent": 7.32,
+    "relatedScope": {
+      "otherModuleLexicalQuestionMatches": 0,
+      "otherCirrhosisLexicalQuestionMatches": 0,
+      "relatedAlcoholLesson": "cirrhosis-complications",
+      "review": "The whole related alcohol lesson was read for context. Its brief HRS distinction does not prescribe an obsolete albumin protocol; broader HE/variceal/HCC teaching remains pending its parent review. No alcohol lesson certified."
+    }
+  },
+  "validation": {
+    "productionBuild": {
+      "status": "passed",
+      "exitCode": 0,
+      "pages": 567,
+      "bundler": "webpack"
+    },
+    "structure": {
+      "modules": 1,
+      "questions": 120,
+      "hardErrors": [],
+      "sourceGaps": [],
+      "sizeAdvisories": [],
+      "thinLessons": [],
+      "weakestModules": [
+        {
+          "module": "cirrhosis-decompensated-liver-disease",
+          "lessons": 12,
+          "questions": 120,
+          "minimumLessonCoverage": 8
+        }
+      ]
+    },
+    "objectPreservation": {
+      "status": "passed",
+      "wholeBankIds": [
+        "cirrhosis-decompensated-057",
+        "cirrhosis-decompensated-058",
+        "cirrhosis-decompensated-059",
+        "cirrhosis-decompensated-060",
+        "cirrhosis-decompensated-061",
+        "cirrhosis-decompensated-062",
+        "cirrhosis-decompensated-063",
+        "cirrhosis-decompensated-064"
+      ],
+      "wholeLesson": "hrs-aki",
+      "wholeBodies": 11,
+      "wholeChecks": 1,
+      "other231WholeModulesUnchanged": true,
+      "other112CirrhosisWholeQuestionsUnchanged": true,
+      "other11CirrhosisLessonsUnchanged": true,
+      "cumulativeIds": [
+        "cumulative-cirrhosis-decompensated-liver-disease-cirrhosis-decompensated-061"
+      ],
+      "other1179WholeCumulativeObjectsUnchanged": true,
+      "stableIdsAnswerIndexesDifficultyReviewHrefsAndOrderPreserved": true,
+      "onlyOneScopedFigureChanged": true,
+      "independentCalculations": {
+        "creatinineAbsoluteRiseMgDl": 0.3,
+        "creatinineRelativeRisePercent": 37.5,
+        "day4CreatinineDeclinePercent": 30,
+        "day4ThirtyPercentInclusive": true,
+        "twoVialDoseMg": 1.7,
+        "reconstitutedMgPerMl": 0.17
+      }
+    },
+    "browser": {
+      "status": "passed",
+      "results": [
+        {
+          "width": 1440,
+          "exactWholeBodies": 11,
+          "wholeChecksAllFourOptionsGraded": 1,
+          "wholeQuestionsShuffledCorrectIncorrectFeedbackAndAnchorsVerified": 8,
+          "cumulativeItem": "cumulative-cirrhosis-decompensated-liver-disease-cirrhosis-decompensated-061",
+          "allReferencesExact": 31,
+          "noHorizontalOverflow": true,
+          "diagrams": [
+            {
+              "width": 1440,
+              "slug": "cirrhosis-decompensated-liver-disease",
+              "labels": [
+                {
+                  "text": "AKI causes",
+                  "font": "14px",
+                  "screenSize": 20.810181451612902,
+                  "inside": true
+                },
+                {
+                  "text": "Volume",
+                  "font": "14px",
+                  "screenSize": 20.810181451612902,
+                  "inside": true
+                },
+                {
+                  "text": "Treatment",
+                  "font": "14px",
+                  "screenSize": 20.810181451612902,
+                  "inside": true
+                },
+                {
+                  "text": "Oxygenation",
+                  "font": "14px",
+                  "screenSize": 20.810181451612902,
+                  "inside": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "width": 390,
+          "exactWholeBodies": 11,
+          "wholeChecksAllFourOptionsGraded": 1,
+          "wholeQuestionsShuffledCorrectIncorrectFeedbackAndAnchorsVerified": 8,
+          "cumulativeItem": "cumulative-cirrhosis-decompensated-liver-disease-cirrhosis-decompensated-061",
+          "allReferencesExact": 31,
+          "noHorizontalOverflow": true,
+          "diagrams": [
+            {
+              "width": 320,
+              "slug": "cirrhosis-decompensated-liver-disease",
+              "labels": [
+                {
+                  "text": "AKI causes",
+                  "font": "32px",
+                  "screenSize": 14.45,
+                  "inside": true
+                },
+                {
+                  "text": "Volume",
+                  "font": "32px",
+                  "screenSize": 14.45,
+                  "inside": true
+                },
+                {
+                  "text": "Treatment",
+                  "font": "32px",
+                  "screenSize": 14.45,
+                  "inside": true
+                },
+                {
+                  "text": "Oxygenation",
+                  "font": "32px",
+                  "screenSize": 14.45,
+                  "inside": true
+                }
+              ]
+            },
+            {
+              "width": 390,
+              "slug": "cirrhosis-decompensated-liver-disease",
+              "labels": [
+                {
+                  "text": "AKI causes",
+                  "font": "32px",
+                  "screenSize": 18.06290322580645,
+                  "inside": true
+                },
+                {
+                  "text": "Volume",
+                  "font": "32px",
+                  "screenSize": 18.06290322580645,
+                  "inside": true
+                },
+                {
+                  "text": "Treatment",
+                  "font": "32px",
+                  "screenSize": 18.06290322580645,
+                  "inside": true
+                },
+                {
+                  "text": "Oxygenation",
+                  "font": "32px",
+                  "screenSize": 18.06290322580645,
+                  "inside": true
+                }
+              ]
+            },
+            {
+              "width": 639,
+              "slug": "cirrhosis-decompensated-liver-disease",
+              "labels": [
+                {
+                  "text": "AKI causes",
+                  "font": "32px",
+                  "screenSize": 30.341129032258063,
+                  "inside": true
+                },
+                {
+                  "text": "Volume",
+                  "font": "32px",
+                  "screenSize": 30.341129032258063,
+                  "inside": true
+                },
+                {
+                  "text": "Treatment",
+                  "font": "32px",
+                  "screenSize": 30.341129032258063,
+                  "inside": true
+                },
+                {
+                  "text": "Oxygenation",
+                  "font": "32px",
+                  "screenSize": 30.341129032258063,
+                  "inside": true
+                }
+              ]
+            },
+            {
+              "width": 640,
+              "slug": "cirrhosis-decompensated-liver-disease",
+              "labels": [
+                {
+                  "text": "AKI causes",
+                  "font": "14px",
+                  "screenSize": 13.294707661290323,
+                  "inside": true
+                },
+                {
+                  "text": "Volume",
+                  "font": "14px",
+                  "screenSize": 13.294707661290323,
+                  "inside": true
+                },
+                {
+                  "text": "Treatment",
+                  "font": "14px",
+                  "screenSize": 13.294707661290323,
+                  "inside": true
+                },
+                {
+                  "text": "Oxygenation",
+                  "font": "14px",
+                  "screenSize": 13.294707661290323,
+                  "inside": true
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "captures": [
+        "hero-cirrhosis-decompensated-liver-disease-1440.png",
+        "body-cirrhosis-decompensated-liver-disease-0-1440.png",
+        "body-cirrhosis-decompensated-liver-disease-1-1440.png",
+        "body-cirrhosis-decompensated-liver-disease-2-1440.png",
+        "body-cirrhosis-decompensated-liver-disease-3-1440.png",
+        "body-cirrhosis-decompensated-liver-disease-4-1440.png",
+        "body-cirrhosis-decompensated-liver-disease-5-1440.png",
+        "body-cirrhosis-decompensated-liver-disease-6-1440.png",
+        "body-cirrhosis-decompensated-liver-disease-7-1440.png",
+        "body-cirrhosis-decompensated-liver-disease-8-1440.png",
+        "body-cirrhosis-decompensated-liver-disease-9-1440.png",
+        "body-cirrhosis-decompensated-liver-disease-10-1440.png",
+        "summary-cirrhosis-decompensated-liver-disease-1440.png",
+        "concepts-cirrhosis-decompensated-liver-disease-1440.png",
+        "keypoints-cirrhosis-decompensated-liver-disease-1440.png",
+        "application-cirrhosis-decompensated-liver-disease-1440.png",
+        "figure-cirrhosis-decompensated-liver-disease-1440.png",
+        "check-cirrhosis-decompensated-liver-disease-1440.png",
+        "references-cirrhosis-decompensated-liver-disease-1440.png",
+        "bank-cirrhosis-decompensated-059-1440.png",
+        "bank-cirrhosis-decompensated-057-1440.png",
+        "bank-cirrhosis-decompensated-062-1440.png",
+        "bank-cirrhosis-decompensated-060-1440.png",
+        "bank-cirrhosis-decompensated-058-1440.png",
+        "bank-cirrhosis-decompensated-063-1440.png",
+        "bank-cirrhosis-decompensated-061-1440.png",
+        "bank-cirrhosis-decompensated-064-1440.png",
+        "cumulative-cumulative-cirrhosis-decompensated-liver-disease-cirrhosis-decompensated-061-1440.png",
+        "hero-cirrhosis-decompensated-liver-disease-390.png",
+        "body-cirrhosis-decompensated-liver-disease-0-390.png",
+        "body-cirrhosis-decompensated-liver-disease-1-390.png",
+        "body-cirrhosis-decompensated-liver-disease-2-390.png",
+        "body-cirrhosis-decompensated-liver-disease-3-390.png",
+        "body-cirrhosis-decompensated-liver-disease-4-390.png",
+        "body-cirrhosis-decompensated-liver-disease-5-390.png",
+        "body-cirrhosis-decompensated-liver-disease-6-390.png",
+        "body-cirrhosis-decompensated-liver-disease-7-390.png",
+        "body-cirrhosis-decompensated-liver-disease-8-390.png",
+        "body-cirrhosis-decompensated-liver-disease-9-390.png",
+        "body-cirrhosis-decompensated-liver-disease-10-390.png",
+        "summary-cirrhosis-decompensated-liver-disease-390.png",
+        "concepts-cirrhosis-decompensated-liver-disease-390.png",
+        "keypoints-cirrhosis-decompensated-liver-disease-390.png",
+        "application-cirrhosis-decompensated-liver-disease-390.png",
+        "figure-cirrhosis-decompensated-liver-disease-390.png",
+        "check-cirrhosis-decompensated-liver-disease-390.png",
+        "references-cirrhosis-decompensated-liver-disease-390.png",
+        "bank-cirrhosis-decompensated-059-390.png",
+        "bank-cirrhosis-decompensated-057-390.png",
+        "bank-cirrhosis-decompensated-062-390.png",
+        "bank-cirrhosis-decompensated-060-390.png",
+        "bank-cirrhosis-decompensated-058-390.png",
+        "bank-cirrhosis-decompensated-063-390.png",
+        "bank-cirrhosis-decompensated-061-390.png",
+        "bank-cirrhosis-decompensated-064-390.png",
+        "cumulative-cumulative-cirrhosis-decompensated-liver-disease-cirrhosis-decompensated-061-390.png"
+      ],
+      "errors": []
+    },
+    "visualInspection": {
+      "status": "passed",
+      "inspectedAt": "2026-10-05T20:29:58.429580+00:00",
+      "method": "All 10 lossless desktop/mobile comparison boards viewed with native image inspection at original detail.",
+      "boardsInspected": 10,
+      "desktopMobilePairsInspected": 28,
+      "rawCapturesInspected": 56,
+      "viewports": [
+        1440,
+        390
+      ],
+      "findings": "Complete paragraphs, numeric thresholds, equations, drug doses, question options, feedback and scoped figure are legible without clipping or overflow. All 31 references render correctly.",
+      "scope": "One whole HRS-AKI lesson with 11 bodies, one check, metadata and figure, eight whole bank questions and one inherited cumulative question. Other parent teaching remains pending.",
+      "files": [
+        {
+          "file": "board-00.png",
+          "sha256": "15f3bb3294238605aa0eb8da0d84e1890b71f10e18caa4e37e080885a0fc0d42"
+        },
+        {
+          "file": "board-01.png",
+          "sha256": "b4ba61ce0477570b874b5dcac283ae834074b2a518c965881296c350e8d4e5e6"
+        },
+        {
+          "file": "board-02.png",
+          "sha256": "aff6243590213bfce03da833cfb26e633bcfcfe6a0fec319132466265a7b3ca6"
+        },
+        {
+          "file": "board-03.png",
+          "sha256": "e1edf7fbb6c96147cebbdbcaca78e21cde18ec1b4eb6b6ce1616f31ffc3234b0"
+        },
+        {
+          "file": "board-04.png",
+          "sha256": "176b7d1fa4c16bdc7c3e204bf6697e1efc06af0a323b9c7d52d00faa5cd0be17"
+        },
+        {
+          "file": "board-05.png",
+          "sha256": "f84f00dbf8dd8d64e8aab6a530f910a8398310c10a32f2589a42d43510825c0b"
+        },
+        {
+          "file": "board-06.png",
+          "sha256": "3b4028993a73d3f442f4908da415c4803c79b5f1c6f0c23a65177b09a7ad61a6"
+        },
+        {
+          "file": "board-07.png",
+          "sha256": "a7cea1e55f6c9eef3be6fcac27bc3d159ef4fecece19a760923b7724fbd2e821"
+        },
+        {
+          "file": "board-08.png",
+          "sha256": "92337dc83e2b130089469c793fb4dae453fde4b299b717222e0c1321f73155c4"
+        },
+        {
+          "file": "board-09.png",
+          "sha256": "3406adecdaa13c58351d02d00f7d0cf199fe1eb2593b8ccc7732772b839b4bf2"
+        },
+        {
+          "file": "pair-hero-cirrhosis-decompensated-liver-disease.png",
+          "sha256": "8d08d62efc3adb4836a1250b60319f1501cda17d7ef9f914f721b3b2494ce2ab"
+        },
+        {
+          "file": "pair-body-cirrhosis-decompensated-liver-disease-0.png",
+          "sha256": "507c9aede83c18c9118f0386e636bf64c95c28428b7802b257074b53ac2fb5c7"
+        },
+        {
+          "file": "pair-body-cirrhosis-decompensated-liver-disease-1.png",
+          "sha256": "5c409768e028b232f9eb63a3a57974d9182f96663579c37da57cfcd1383fa4b0"
+        },
+        {
+          "file": "pair-body-cirrhosis-decompensated-liver-disease-2.png",
+          "sha256": "c5430ac6fde39e4755e70bbe483ea5b8f45c8d9e9c434d9c44c9739901d51100"
+        },
+        {
+          "file": "pair-body-cirrhosis-decompensated-liver-disease-3.png",
+          "sha256": "a45f88fb6480382ac923b50df974860c67ce29da757c7720b478155a1349be80"
+        },
+        {
+          "file": "pair-body-cirrhosis-decompensated-liver-disease-4.png",
+          "sha256": "5b7c737a25252286f176fd7f6915b5a7d77f2457e41e2138507513de3525da14"
+        },
+        {
+          "file": "pair-body-cirrhosis-decompensated-liver-disease-5.png",
+          "sha256": "6e32ef5ab891d2a55e5803486edfecaeb4e4985496cbd1342bdd3a4285f95951"
+        },
+        {
+          "file": "pair-body-cirrhosis-decompensated-liver-disease-6.png",
+          "sha256": "6656bc087c1420c167b26fc6faeb66098cbbedd6c4135d0bb9e06c243b1fc076"
+        },
+        {
+          "file": "pair-body-cirrhosis-decompensated-liver-disease-7.png",
+          "sha256": "4bfdec985fe8d38dc0c12c6c134bcf169b8739c8f6f5d9d664848cae5561a14d"
+        },
+        {
+          "file": "pair-body-cirrhosis-decompensated-liver-disease-8.png",
+          "sha256": "5fb68b3a32004eb7d8fefb04a36550eda9257a01b1be6c9d9ded50673a788a4d"
+        },
+        {
+          "file": "pair-body-cirrhosis-decompensated-liver-disease-9.png",
+          "sha256": "f2a115af611529769ec9f0d9faa31954595871cece67347e757005fe4aa2187e"
+        },
+        {
+          "file": "pair-body-cirrhosis-decompensated-liver-disease-10.png",
+          "sha256": "07e4322dc66ccbbf2bf3d036b1dc4adbb31efbed4d4fdb4c6072d30da7ae0c8b"
+        },
+        {
+          "file": "pair-summary-cirrhosis-decompensated-liver-disease.png",
+          "sha256": "10b17f584f0763c266552db039286b9ee167eaa183ea7ac2a471c20aac16d10d"
+        },
+        {
+          "file": "pair-concepts-cirrhosis-decompensated-liver-disease.png",
+          "sha256": "85d0a718db549d681b0b7f0513167d5dc714391f5580a98b267f98a07b853760"
+        },
+        {
+          "file": "pair-keypoints-cirrhosis-decompensated-liver-disease.png",
+          "sha256": "fa0176a07c70a52162cacaf2e46c018dcf98f5b2bada82722d6b02a9e91b0e55"
+        },
+        {
+          "file": "pair-application-cirrhosis-decompensated-liver-disease.png",
+          "sha256": "47014aaa8e5b097bf263259843522e9d05020d70ff2cddfb7232530ed195941a"
+        },
+        {
+          "file": "pair-figure-cirrhosis-decompensated-liver-disease.png",
+          "sha256": "b373f3365c2c76b39f99aac5c305e3429a477ca81b6a4fc8be0e21d3532a2e55"
+        },
+        {
+          "file": "pair-check-cirrhosis-decompensated-liver-disease.png",
+          "sha256": "cabe98792753c6b553675b1eade4df4e9f1cea205ae62e29db5f74733bd23814"
+        },
+        {
+          "file": "pair-references-cirrhosis-decompensated-liver-disease.png",
+          "sha256": "f15398f6fa4468d3445c8e6ca0f34f50537ee8aec2d92546d2fee56d967d9316"
+        },
+        {
+          "file": "pair-bank-cirrhosis-decompensated-059.png",
+          "sha256": "d4a0ad20268173e71eb20a430d0252c6402e497c68dfcb0e9244e1262a525b31"
+        },
+        {
+          "file": "pair-bank-cirrhosis-decompensated-057.png",
+          "sha256": "af1e49915f9e3dff4c66b179cee35ba498c95630b2fab39e063096206e1e04cd"
+        },
+        {
+          "file": "pair-bank-cirrhosis-decompensated-062.png",
+          "sha256": "576918d2dbe379117c34a1fb32c74c03a2a1d407bc097b66233e13d5dfbfeba7"
+        },
+        {
+          "file": "pair-bank-cirrhosis-decompensated-060.png",
+          "sha256": "ecbe1e1defd78adee33173d87bc750ef6d33482df6a4f5d81f214491c8eee133"
+        },
+        {
+          "file": "pair-bank-cirrhosis-decompensated-058.png",
+          "sha256": "a9134c093589be10fd916a15317952db5dfd8cafd10be6392c9d1fbde62ef737"
+        },
+        {
+          "file": "pair-bank-cirrhosis-decompensated-063.png",
+          "sha256": "8d2a24bbe99245b9c91f6d0098a83486d662d12b9c5e0f9abf139a3a265cef00"
+        },
+        {
+          "file": "pair-bank-cirrhosis-decompensated-061.png",
+          "sha256": "f22f85418e9511c1dda10b0cdeb459292a43acd848397156374b0f7d3334803f"
+        },
+        {
+          "file": "pair-bank-cirrhosis-decompensated-064.png",
+          "sha256": "5ba354fe625e3ed77b563c1e765e98d712bde511d893c307ec84094cee9aaf6b"
+        },
+        {
+          "file": "pair-cumulative-cumulative-cirrhosis-decompensated-liver-disease-cirrhosis-decompensated-061.png",
+          "sha256": "3406adecdaa13c58351d02d00f7d0cf199fe1eb2593b8ccc7732772b839b4bf2"
+        },
+        {
+          "file": "hero-cirrhosis-decompensated-liver-disease-1440.png",
+          "sha256": "dae298df47161abb91b9e549f05531370911ce4f5376a48387ed8bdeeb813c0f"
+        },
+        {
+          "file": "body-cirrhosis-decompensated-liver-disease-0-1440.png",
+          "sha256": "69164adf88bc42da1ddcc9d3f207ddbc6371f9bff29e6c8a86b46292f08b315a"
+        },
+        {
+          "file": "body-cirrhosis-decompensated-liver-disease-1-1440.png",
+          "sha256": "5df3f6b9782b787efc5989a5ea95ec434a91ad1dbe7c529ba7b1007a1e35c220"
+        },
+        {
+          "file": "body-cirrhosis-decompensated-liver-disease-2-1440.png",
+          "sha256": "51008977f58786927b6a8da6e1c96d82569de8918757715dd9f2cce34022e62a"
+        },
+        {
+          "file": "body-cirrhosis-decompensated-liver-disease-3-1440.png",
+          "sha256": "5d2d5d0119e7faf7e83d03ef63d3427c5fcedade5ad69053d495532eb0b5231d"
+        },
+        {
+          "file": "body-cirrhosis-decompensated-liver-disease-4-1440.png",
+          "sha256": "b7d952f2d59eea25aa8ef8bc28ab624227433b5bef32c4457ee5b615c06e5629"
+        },
+        {
+          "file": "body-cirrhosis-decompensated-liver-disease-5-1440.png",
+          "sha256": "b412fc2adb7990896b951f9ede29292fa5ef2c97d238a5fbacddd64d83569b86"
+        },
+        {
+          "file": "body-cirrhosis-decompensated-liver-disease-6-1440.png",
+          "sha256": "13b8442b33698833433dfcb13273e3e887397d3148a87d61e359bc7070a11b6d"
+        },
+        {
+          "file": "body-cirrhosis-decompensated-liver-disease-7-1440.png",
+          "sha256": "cc26ea65d6e59977ced22472d632dbe3d5aeb55694831e0aea168ba331ce30be"
+        },
+        {
+          "file": "body-cirrhosis-decompensated-liver-disease-8-1440.png",
+          "sha256": "49ff4b56cd62701a4fc903361c08f1f4b292c80d36b6bc8c13e3c1e07827e62c"
+        },
+        {
+          "file": "body-cirrhosis-decompensated-liver-disease-9-1440.png",
+          "sha256": "903674911b2c3309e146e3f5ed1a25a26a6b40b3c748cf7bc3a5d0d165c2a2ac"
+        },
+        {
+          "file": "body-cirrhosis-decompensated-liver-disease-10-1440.png",
+          "sha256": "7768bb99f2946d9f4b20383729cd0150a6c2e5f2e221a83beaf0304688e9963e"
+        },
+        {
+          "file": "summary-cirrhosis-decompensated-liver-disease-1440.png",
+          "sha256": "2c29d2b3a186c73707a6ac4212248370b9407b121015d522b59ce710cac6b8e0"
+        },
+        {
+          "file": "concepts-cirrhosis-decompensated-liver-disease-1440.png",
+          "sha256": "56d82f2ba77a7ce04830f2fd9eb5e4d524e6927099095ea30c46e61f117fb440"
+        },
+        {
+          "file": "keypoints-cirrhosis-decompensated-liver-disease-1440.png",
+          "sha256": "6cb6bcab030180d6e2180e16e721804615149f67687f82d9bfda7556890416b4"
+        },
+        {
+          "file": "application-cirrhosis-decompensated-liver-disease-1440.png",
+          "sha256": "ff7c29b46c74493b4818766701544f5f6f012c0e82316657f49a10ac667f48df"
+        },
+        {
+          "file": "figure-cirrhosis-decompensated-liver-disease-1440.png",
+          "sha256": "512f498eb4f93bf9216d71bc033dc2c89d70781b2b518cf931cbc302acac06d3"
+        },
+        {
+          "file": "check-cirrhosis-decompensated-liver-disease-1440.png",
+          "sha256": "1d1de54ec61744469167662f0ab1d634187f27c59c018b0ccc2e9d7f30997717"
+        },
+        {
+          "file": "references-cirrhosis-decompensated-liver-disease-1440.png",
+          "sha256": "f1c6261f3a93f4ca8c60a64ebde0d413a983abb47b6b6c52eef0687ebd448f8d"
+        },
+        {
+          "file": "bank-cirrhosis-decompensated-059-1440.png",
+          "sha256": "91e17fa6eba664020be3c3c1cfeb354e578c52fc13743e7d80854127aca3d966"
+        },
+        {
+          "file": "bank-cirrhosis-decompensated-057-1440.png",
+          "sha256": "539ab1825db756898f9681e09fc9f19b4e02ce2b397c93032f588ea83f31e010"
+        },
+        {
+          "file": "bank-cirrhosis-decompensated-062-1440.png",
+          "sha256": "9fa3b16a479039e6f4c50cec40c872e674aa2b7e505ef50aa4d7fc003e44a13c"
+        },
+        {
+          "file": "bank-cirrhosis-decompensated-060-1440.png",
+          "sha256": "623b99e78ed2ce17d7dcd85906cfb5501f66563c1a1bb8f87a3b3ceca614e02a"
+        },
+        {
+          "file": "bank-cirrhosis-decompensated-058-1440.png",
+          "sha256": "50a2adc6efb66cd3d0845012de0bad310e365a8d28c6f8ef3b91239930d42a48"
+        },
+        {
+          "file": "bank-cirrhosis-decompensated-063-1440.png",
+          "sha256": "3b85c3b5bec59dc412571ef4a13582fe505688ce908c61821ff7d6daa3dd83cf"
+        },
+        {
+          "file": "bank-cirrhosis-decompensated-061-1440.png",
+          "sha256": "4436658f5c8d0ceaf14f1e2d6983292214f75a113d4f8cbdae2843e7c56f6f8a"
+        },
+        {
+          "file": "bank-cirrhosis-decompensated-064-1440.png",
+          "sha256": "5b732d13648960e334f480e6097b1fa1468286c4333bae201c27da499a7639ec"
+        },
+        {
+          "file": "cumulative-cumulative-cirrhosis-decompensated-liver-disease-cirrhosis-decompensated-061-1440.png",
+          "sha256": "16bad5f46014418cff46c8248fd4e0e303b226d131c431db44fff48aa52d0e78"
+        },
+        {
+          "file": "hero-cirrhosis-decompensated-liver-disease-390.png",
+          "sha256": "acf17e99492b2b00b5a3c382eb8bb39ef7f336c1271a56354073e55b982b95d7"
+        },
+        {
+          "file": "body-cirrhosis-decompensated-liver-disease-0-390.png",
+          "sha256": "5c67599ce1b8e3e814657d42f0566eef338ffd9e4d8a53f32c98fdfb30a38e36"
+        },
+        {
+          "file": "body-cirrhosis-decompensated-liver-disease-1-390.png",
+          "sha256": "09c2a3320599e259f00c9603ee70a06a1ebea5918e283beee6b6b4913a347dd6"
+        },
+        {
+          "file": "body-cirrhosis-decompensated-liver-disease-2-390.png",
+          "sha256": "4383aa462a5deedde9ae4ce0334fd97d29c3dc908ade6ca6c90468b60fb7a4af"
+        },
+        {
+          "file": "body-cirrhosis-decompensated-liver-disease-3-390.png",
+          "sha256": "10418c53e4c6bb6ffa37e814aeb8f14aa85afa8c3aa9f7d37f9143688898b58a"
+        },
+        {
+          "file": "body-cirrhosis-decompensated-liver-disease-4-390.png",
+          "sha256": "6f03397cbec5958fe442ca49bb2130b013a1baf063a5d6bc60aac33a66a7a393"
+        },
+        {
+          "file": "body-cirrhosis-decompensated-liver-disease-5-390.png",
+          "sha256": "34ea7c123705e96fb146f35b58846643702e701957a7ae1519779e8b9b05535d"
+        },
+        {
+          "file": "body-cirrhosis-decompensated-liver-disease-6-390.png",
+          "sha256": "e197fb85a2efcf7e82084a3c1deb89a42c238aeb7f569485a2d16744707d6e5b"
+        },
+        {
+          "file": "body-cirrhosis-decompensated-liver-disease-7-390.png",
+          "sha256": "94bcde01738aa9ac222eb017186956bd8dcd02b0825e56bacbe5bda74d456c30"
+        },
+        {
+          "file": "body-cirrhosis-decompensated-liver-disease-8-390.png",
+          "sha256": "e65e6ece24e0e4b722098c2649d1d3db968b864c5b40498b1ff8cd0743c11e62"
+        },
+        {
+          "file": "body-cirrhosis-decompensated-liver-disease-9-390.png",
+          "sha256": "4df1745f91eb1a6768f73682f3bba4c1b7cde7a3e693da6bc961952c2a0e2e84"
+        },
+        {
+          "file": "body-cirrhosis-decompensated-liver-disease-10-390.png",
+          "sha256": "33bddf41beee74a4ea58d3bda8c19dd95aa21851e87b1163d3c6b9acb424d31e"
+        },
+        {
+          "file": "summary-cirrhosis-decompensated-liver-disease-390.png",
+          "sha256": "1f81305cab11af37d43327cebb249bfa6f15ce62e847c96a8c16a6aebdec0f09"
+        },
+        {
+          "file": "concepts-cirrhosis-decompensated-liver-disease-390.png",
+          "sha256": "485196b6b7b5ee19a73c840f2aade5f5954510f28f815abf8e3fa5ee4acf3c4f"
+        },
+        {
+          "file": "keypoints-cirrhosis-decompensated-liver-disease-390.png",
+          "sha256": "ed035c6bb1b7bf1bab45bf72e018bfdce6b4f9ba3d7f798022c16a21da51ccfb"
+        },
+        {
+          "file": "application-cirrhosis-decompensated-liver-disease-390.png",
+          "sha256": "52004d93ded52c4662a37d6f500445fad7390f16f1c348f89ee9c5e9ae4644c2"
+        },
+        {
+          "file": "figure-cirrhosis-decompensated-liver-disease-390.png",
+          "sha256": "291af08c4691ea25da1b24d44fe2fccada510798e64bc5437bbc83707f642c91"
+        },
+        {
+          "file": "check-cirrhosis-decompensated-liver-disease-390.png",
+          "sha256": "f56f2734212bc90b776538313f24634466164bed711f1cfe7f128dfe59ff0a09"
+        },
+        {
+          "file": "references-cirrhosis-decompensated-liver-disease-390.png",
+          "sha256": "cdb5249838f7a5ae5f544f38f31d9d0c0b8cd17d0793e9d14abce16321053769"
+        },
+        {
+          "file": "bank-cirrhosis-decompensated-059-390.png",
+          "sha256": "2e094ed0fd202a75d790ca475e6af81209c9ca23432699eb583b97afb29ed427"
+        },
+        {
+          "file": "bank-cirrhosis-decompensated-057-390.png",
+          "sha256": "b915b9c41817893632be138647a0d08e8775ee27d535b89a058f898956f6fec5"
+        },
+        {
+          "file": "bank-cirrhosis-decompensated-062-390.png",
+          "sha256": "5d38d68f0e9fcc080a0db0476fe090b354f681176a1b472cc429b400e059b511"
+        },
+        {
+          "file": "bank-cirrhosis-decompensated-060-390.png",
+          "sha256": "4897e2571b13b0869a2af4f2d7a37613c2434ed41431fed61dd67919dfafb074"
+        },
+        {
+          "file": "bank-cirrhosis-decompensated-058-390.png",
+          "sha256": "61092ecb04036628e8eaae2779e063624228486cb5e513d032d9efceb09be28c"
+        },
+        {
+          "file": "bank-cirrhosis-decompensated-063-390.png",
+          "sha256": "3f44f7ccb1d6968be4d14d319fc90f5dfd55a7b162438aaefcea12b2fba04217"
+        },
+        {
+          "file": "bank-cirrhosis-decompensated-061-390.png",
+          "sha256": "2ee8276e255906ef149a001dcdd2888413d6a29bc67a7b0d4db43a9c996406ab"
+        },
+        {
+          "file": "bank-cirrhosis-decompensated-064-390.png",
+          "sha256": "d26ba5bb1e31b6a277d65924a9c2b583be165ad670d78874a5ba7abf09a4bd87"
+        },
+        {
+          "file": "cumulative-cumulative-cirrhosis-decompensated-liver-disease-cirrhosis-decompensated-061-390.png",
+          "sha256": "5818f93fff411016ddbe661a874ac438219697603559d65391d91788e16f5c16"
+        }
+      ]
+    },
+    "limits": "Isolated unauthenticated built local preview. Certification limited to one whole HRS-AKI lesson with 11 bodies, one check, metadata and figure, eight whole questions and one derived cumulative question. All four check choices graded and all eight questions exercised with shuffled correct/incorrect choices at 1440/390. Figure bounds verified at 320/390/639/640/1440. No other lesson, parent module or chapter certified."
+  },
+  "preservation": {
+    "status": "passed",
+    "baselinePathsChecked": 1939,
+    "allUnrelatedDraftBytesAndDeletionsPreserved": true,
+    "preexistingContentBytesRecoveredByRemovingExactScopedTails": true,
+    "allOtherWorkingLedgerFieldsAndEntriesPreserved": true,
+    "allOtherCommittedLedgerFieldsAndEntriesPreserved": true,
+    "oneScopedHrsLessonStatusUpdatedOnlyAfterAllGatesPassed": true,
+    "onlyVerifiedHeadDerivedContentStagedOrCommitted": true,
+    "onlyOneScopedFigureChangedAndCumulativeSelectorUnchanged": true,
+    "scope": [
+      "src/data/modules/cirrhosisDecompensatedLiverDisease.js",
+      "src/data/questionBanks/cirrhosisDecompensatedLiverDisease.js",
+      "src/components/learn/CirrhosisDecompensatedVisual.jsx",
+      "docs/clinical-audit/enteral-nutrition-broader-hrs-aki-review.json",
+      "docs/clinical-audit/module-ledger.json",
+      "docs/clinical-audit/chapter-ledger.json",
+      "docs/clinical-audit/sequential-resume.json"
+    ]
+  },
+  "publication": {
+    "mainMerge": "not performed",
+    "production": "not verified"
+  },
+  "wholeGoalComplete": false,
+  "nextAction": "Continue the complete portal-varices and acute-bleeding lessons against Chapter 19 printed 303-304 / PDF 311-312 and approved current Baveno/AASLD guidance and applicable labels. Then complete encephalopathy, remaining longitudinal care and integrated cases. Cirrhosis has 40 remaining whole bank objects; preserve all 80 prior verified objects and seven complete lessons. Remaining cirrhosis lessons: portal-varices, acute-bleeding, encephalopathy, longitudinal-care and integrated-case. Other intra-abdominal/alcohol parents remain open, with the prior SBP and ascites dependency inventories preserved. Finish broader enteral/fluid parents, then return to Chapter 11 printed 161 / PDF 169. Chapters 11/19 and Chapter 1 printed 7 / PDF 19 checklist entry 15 remain open. Continue the full 82-chapter goal.",
+  "receiptCommit": "Receipt follows exact verified content commit; its own remote hash separately verified in execution output."
+}
