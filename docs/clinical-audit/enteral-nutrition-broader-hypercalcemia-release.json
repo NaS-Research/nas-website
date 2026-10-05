@@ -1,0 +1,118 @@
+{
+  "verifiedAt": "2026-10-05T04:11:39.696142+00:00",
+  "unit": "enteral-nutrition:broader-hypercalcemia-and-HCM-treatment",
+  "contentCommit": "8868c68641ec27028e2ee802032c10d081c7ff18",
+  "remoteBranch": "audit/rxprep-content-2026-09-24",
+  "remoteHashObserved": "8868c68641ec27028e2ee802032c10d081c7ff18",
+  "exactRemoteObservedByTool": true,
+  "coverage": {
+    "evidence": "enteral-nutrition-broader-hypercalcemia-review.json",
+    "moduleBankBefore": 106,
+    "moduleBankAfter": 108,
+    "wholeQuestionsVerified": 14,
+    "existingQuestionsNewlyVerified": 12,
+    "newDistinctQuestionsAdded": 2,
+    "sourceVerifiedBankIds": [
+      "calcium-phosphorus-027",
+      "calcium-phosphorus-028",
+      "calcium-phosphorus-029",
+      "calcium-phosphorus-030",
+      "calcium-phosphorus-031",
+      "calcium-phosphorus-032",
+      "calcium-phosphorus-033",
+      "calcium-phosphorus-034",
+      "calcium-phosphorus-091",
+      "calcium-phosphorus-097",
+      "calcium-phosphorus-100",
+      "calcium-phosphorus-106",
+      "calcium-phosphorus-malignancy-product-regimen",
+      "calcium-phosphorus-malignancy-renal-regimen"
+    ],
+    "broaderFeedingBankVerifiedAfter": 299,
+    "wholeBodiesVerified": 5,
+    "retainedWholeBodiesReconciled": 3,
+    "newWholeBodiesAdded": 2,
+    "sourceVerifiedBodyHeadings": [
+      "Determine severity and mechanism",
+      "Match onset to the clinical need",
+      "Treat the source",
+      "Reconcile the product and indication before dosing",
+      "Plan safety and reassess recurrent disease"
+    ],
+    "embeddedCheckVerified": true,
+    "figureVerified": true,
+    "derivedHypercalcemiaCumulativePresent": false,
+    "newlyCountedCumulativeQuestions": 0,
+    "lessonQuestionsVerified": 14,
+    "lessonQuestionTotal": 15,
+    "remainingQuestionIds": [
+      "calcium-phosphorus-035"
+    ],
+    "remainingBodyHeadings": [
+      "Restore volume thoughtfully"
+    ],
+    "wholeLessonMetadataVerified": true,
+    "wholeLessonVerified": false,
+    "wholeParentModuleVerified": false,
+    "wholeENModuleVerified": false,
+    "wholeChaptersVerified": false,
+    "all106OriginalIdsKeysCorrectTextsAnchorsRelativeOrderPreserved": true,
+    "fiveOriginalCumulativeSelectionsPreserved": true,
+    "all1180CumulativeWholeObjectsUnchanged": true
+  },
+  "validation": {
+    "productionBuild": {
+      "status": "passed",
+      "exitCode": 0,
+      "pages": 567,
+      "isolatedBaseCommit": "55a40151dd29c05e6824322b967e1de5a43bea47"
+    },
+    "browserStatus": "passed",
+    "structureQuestions": 108,
+    "rawCapturesInspected": 57,
+    "nativeComparisons": 25,
+    "noHypercalcemiaCumulativeDerivativeInOriginalSelection": true,
+    "all1180CumulativeObjectsUnchanged": true,
+    "026CumulativeTechnicalSmokeOnly": true,
+    "objectPreservation": {
+      "status": "passed",
+      "bankBefore": 106,
+      "bankAfter": 108,
+      "all106OriginalIdsKeysCorrectTextsAnchorsRelativeOrderPreserved": true,
+      "other94WholeQuestionObjectsUnchanged": true,
+      "threeOldBodiesReconciledTwoAdded": true,
+      "untouchedBroaderDialysisClaimsRetainedPending": true,
+      "otherLessonMetadataChecksAndFiguresUnchanged": true,
+      "onlyFullGuidelineReferenceAdded": true,
+      "fiveOriginalDerivedCumulativeIdsPreserved": true,
+      "noHypercalcemiaDerivativeInExistingCumulativeSelection": true,
+      "all1180WholeCumulativeObjectsUnchanged": true,
+      "all1180CumulativeIdsKeysAnchorsOrderPreserved": true,
+      "allOtherModuleWholeObjectsUnchanged": true
+    }
+  },
+  "preservation": {
+    "status": "passed",
+    "baselinePathsChecked": 809,
+    "allUnrelatedDraftBytesAndDeletionsPreserved": true,
+    "bothProductBaselineDraftsRecoveredByRemovingExactScopedTails": true,
+    "allOtherWorkingLedgerFieldsPreserved": true,
+    "allOtherCommittedLedgerEntriesPreserved": true,
+    "onlyHeadDerivedVerifiedProductsStagedOrCommitted": true,
+    "scope": [
+      "src/data/modules/calciumPhosphorusHomeostasis.js",
+      "src/data/questionBanks/calciumPhosphorusHomeostasis.js",
+      "docs/clinical-audit/enteral-nutrition-broader-hypercalcemia-review.json",
+      "docs/clinical-audit/module-ledger.json",
+      "docs/clinical-audit/chapter-ledger.json",
+      "docs/clinical-audit/sequential-resume.json"
+    ]
+  },
+  "publication": {
+    "mainMerge": "not performed",
+    "production": "not verified"
+  },
+  "wholeGoalComplete": false,
+  "nextAction": "Continue calcium/phosphorus review. Additional primary nephrology source authorization for retained hypercalcemia dialysis/fluids-intolerance claim remains pending; question035 and Restore volume thoughtfully body remain unverified as whole items. The earlier2022International Task Force chronic hypoparathyroidism source request also remains pending direct approval; preserve pending hypocalcemia008/023/095, Correct the mechanism and Protect the kidney during chronic therapy bodies and chronic key point. Continue independent approved/book-supported work: reconcile remaining acute phosphate body and aluminum question050 before CKD closure, then finish calcium parent and EN reintegration. Earliest sequential checkpoint remains Chapter1 printed7/PDF19 formula entry15 fluid needs with Chapter11 feeding dependencies. Full82-chapter goal remains active.",
+  "receiptCommit": "This receipt follows the exact verified content commit;its own remote hash is verified separately in execution output."
+}
