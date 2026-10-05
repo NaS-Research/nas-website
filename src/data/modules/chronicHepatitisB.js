@@ -307,3 +307,60 @@ chronicHepatitisBModule.references.push(...[
     "href": "https://www.hepatitisb.uw.edu/go/hbv/hepatitis-b-reactivation-setting-immunosuppression/core-concept/all"
   }
 ]);
+
+// Source-verified HBV treatment-decision review.
+Object.assign(chronicHepatitisBModule.submodules.find((lesson) => lesson.slug === "treatment-decision").lesson.find((body) => body.heading === "Treat advanced disease"), {
+  "heading": "Treat advanced disease",
+  "body": "Assess cirrhosis and decompensation before applying noncirrhotic laboratory thresholds. AASLD recommends indefinite oral antiviral therapy for HBsAg-positive adults with decompensated cirrhosis regardless of HBV DNA, HBeAg or ALT, alongside transplant evaluation when eligible. Compensated cirrhosis with low-level viremia also supports treatment despite normal ALT. Peginterferon is contraindicated in decompensation. Choose the oral product using renal function, prior resistance and hepatic labeling; suppression does not remove the need for indicated cancer surveillance."
+});
+Object.assign(chronicHepatitisBModule.submodules.find((lesson) => lesson.slug === "treatment-decision").lesson.find((body) => body.heading === "Treat immune-active disease"), {
+  "heading": "Treat immune-active disease",
+  "body": "The AASLD framework uses ALT upper limits of 35 U/L for males and 25 U/L for females. Without cirrhosis, immune-active patterns include ALT at least twice that limit with HBV DNA at least 20,000 IU/mL when HBeAg-positive or at least 2,000 IU/mL when HBeAg-negative. Significant histologic disease can also support treatment. These sufficient patterns do not exclude treatment below their thresholds: assess fibrosis, other causes of liver injury and additional indications."
+});
+Object.assign(chronicHepatitisBModule.submodules.find((lesson) => lesson.slug === "treatment-decision").lesson.find((body) => body.heading === "Handle indeterminate disease"), {
+  "heading": "Handle indeterminate disease",
+  "body": "For HBsAg-positive, HBeAg-negative adults without cirrhosis in an indeterminate phase, the 2025 AASLD/IDSA guideline conditionally suggests treatment through shared decision-making; evidence certainty is very low. Discuss fibrosis, age, sex, treatment burden and follow-up. If treatment is deferred, reassess at each visit. The recommendation text specifies ALT and HBV DNA every 3-6 months in the first year, then every six months; its diagram uses three-month testing initially for the elevated-DNA subgroup."
+});
+Object.assign(chronicHepatitisBModule.submodules.find((lesson) => lesson.slug === "treatment-decision").lesson.find((body) => body.heading === "Use prevention indications"), {
+  "heading": "Use prevention indications",
+  "body": "Separate treatment for liver disease from antiviral prophylaxis. Pregnancy, HIV coinfection and immunosuppression require their own coordinated pathways. For a viremic person without a liver-disease indication, AASLD conditionally supports discussing antivirals in selected high-risk horizontal-transmission settings. This does not make ordinary household contact a treatment requirement. Vaccination of susceptible contacts, safer exposure practices and appropriate infant protection remain necessary."
+});
+chronicHepatitisBModule.submodules.find((lesson) => lesson.slug === "treatment-decision").lesson.push({
+  "heading": "Set measurable treatment goals",
+  "body": "Oral nucleos(t)ide analogs inhibit HBV polymerase. Follow HBV DNA suppression and biochemical response while aiming to reduce liver complications. Suppression does not establish eradication of the persistent nuclear cccDNA reservoir, guarantee elimination of cancer risk or authorize stopping therapy. Explain the expected duration, adherence, product-specific monitoring and ongoing surveillance when indicated before starting treatment."
+});
+chronicHepatitisBModule.submodules.find((lesson) => lesson.slug === "treatment-decision").lesson.push({
+  "heading": "Revisit immune-tolerant eligibility",
+  "body": "In a persistently HBeAg-positive pattern with HBV DNA above 10 million IU/mL and normal ALT, 2025 AASLD/IDSA Recommendation 3 suggests treatment when age is over 40, inflammation is at least grade 2, or fibrosis is at least F2. These are alternative considerations. This is conditional guidance with very low-certainty evidence. Younger patients may also discuss earlier treatment; observation requires continued monitoring."
+});
+chronicHepatitisBModule.submodules.find((lesson) => lesson.slug === "treatment-decision").lesson.push({
+  "heading": "Keep the WHO pathway distinct",
+  "body": "The WHO 2024 criteria, retained in its 2026 handbook, recommend treatment for adults and adolescents aged at least 12 with significant fibrosis or cirrhosis regardless of ALT or DNA; HBV DNA above 2,000 IU/mL plus ALT above the WHO upper limit; or qualifying coinfection, family history, immunosuppression, comorbidity or extrahepatic disease. WHO uses ALT upper limits of 30 U/L for males and 19 U/L for females. When DNA testing is unavailable, persistently abnormal ALT is another conditional pathway. Adult fibrosis markers include APRI above 0.5 or elastography above 7 kPa for significant fibrosis; these cutoffs are not fully validated in children or adolescents. Apply the named framework and local protocol, then select a suitable regimen."
+});
+Object.assign(chronicHepatitisBModule.submodules.find((lesson) => lesson.slug === "treatment-decision"), {
+  "summary": "Treatment decisions combine viral activity, liver stage, host risk and prevention goals. Identify the AASLD/IDSA or WHO framework before applying its thresholds.",
+  "application": "Document the indication, the named framework, fibrosis and viral findings, patient preferences, regimen constraints, and the follow-up plan if treatment is deferred.",
+  "keyPoints": [
+    "Decompensated cirrhosis warrants treatment regardless of HBV DNA or ALT.",
+    "AASLD immune-tolerant age, inflammation and fibrosis considerations use OR.",
+    "Shared decisions include treatment burden and continued monitoring.",
+    "WHO and AASLD use different ALT thresholds.",
+    "DNA suppression does not prove eradication or end indicated surveillance."
+  ]
+});
+Object.assign(chronicHepatitisBModule.submodules.find((lesson) => lesson.slug === "treatment-decision").check, {
+  "question": "An HBsAg-positive adult has decompensated cirrhosis, normal ALT and low HBV DNA. Which treatment decision is best?",
+  "choices": [
+    "Arrange potent oral antiviral treatment and specialist care, including transplant evaluation when eligible",
+    "Defer therapy until ALT reaches twice the upper limit of normal",
+    "Use peginterferon to avoid long-term oral treatment",
+    "Exclude treatment because HBeAg is negative"
+  ],
+  "answer": 0,
+  "rationale": "AASLD recommends indefinite oral antiviral therapy in HBsAg-positive adults with decompensated cirrhosis regardless of HBV DNA, HBeAg or ALT. Peginterferon is contraindicated. Normal ALT and low DNA do not justify deferral; choose the oral agent for the patient and coordinate specialist care.",
+  "reviewHref": "#treatment-decision"
+});
+chronicHepatitisBModule.references.push({
+  "label": "WHO 2026: consolidated viral hepatitis implementation handbook",
+  "href": "https://www.who.int/publications/i/item/9789240119529"
+});

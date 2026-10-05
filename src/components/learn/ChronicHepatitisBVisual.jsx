@@ -2,7 +2,7 @@ const views = {
   "virus-natural-history": ["HBV entry", "cccDNA", "Host injury", "Fibrosis"],
   "screening-serology": ["HBsAg", "Anti-HBs", "Total core", "Context"],
   "phase-staging": ["ALT trend", "DNA trend", "HBeAg", "Fibrosis"],
-  "treatment-decision": ["Cirrhosis", "Immune active", "Indeterminate", "Shared decision"],
+  "treatment-decision": ["Cirrhosis", "Activity", "Risk", "Goals"],
   "polymerase-therapy": ["TDF", "TAF", "Entecavir", "Resistance"],
   "peginterferon-selection": ["Finite course", "Immune effect", "Toxicity", "Compensation"],
   "special-populations": ["Kidney", "Bone", "HIV", "Coinfection"],
@@ -13,6 +13,7 @@ const views = {
   "integrated-case": ["Screen", "Stage", "Treat", "Follow"],
 };
 const reviewedViews = {
+  "treatment-decision": "Identify the treatment framework, then combine liver stage, viral activity, host risk and patient goals.",
   "virus-natural-history": "A persistent nuclear reservoir, host injury and fibrosis explain continuing risk despite suppressed serum DNA.",
   "screening-serology": "Read surface antigen, surface antibody and total core antibody together; timing and immune status guide follow-up.",
   "phase-staging": "Combine trends in ALT and HBV DNA with HBeAg and fibrosis; no single marker defines the whole phase.",

@@ -1,0 +1,3300 @@
+{
+  "updated": "2026-10-05T15:48:57.260972+00:00",
+  "unit": "enteral-nutrition:broader-hbv-treatment-decision",
+  "status": "One whole HBV treatment lesson clinically and visually verified; push pending.",
+  "baseCommit": "dd68375005a5a1910975db097821d73dd19bc503",
+  "sourcePolicy": {
+    "primary": "Supplied private cover-verified RxPrep 2023 book",
+    "approvedAuthoritativeSources": {
+      "status": "approved by direct user message: I give approval",
+      "scope": "Official guidelines, FDA labels and primary academic clinical references where the book cannot verify retained content; includes pending calcium, dialysis, aluminum and mineral physiology scopes",
+      "primarySourceRemains": "Supplied cover-verified RxPrep2023 book",
+      "approvalContext": "Response to pending asynchronous request for this additional authoritative source policy",
+      "usedNewlyAuthorizedSourcesInThisUnit": true,
+      "latestEvidence": "enteral-nutrition-broader-hbv-serology-staging-review.json"
+    },
+    "currentApprovalUsed": true
+  },
+  "coverage": {
+    "evidence": "enteral-nutrition-broader-hbv-treatment-decision-review.json",
+    "verifiedScope": "One whole HBV treatment-decision lesson: 4 existing bodies, 3 gap-specific new bodies, one check/metadata/figure, 8 whole bank questions 029-036 and one inherited cumulative item.",
+    "moduleQuestionTotal": 112,
+    "moduleBodiesAfter": 54,
+    "individuallyReviewedCurrentWholeBankIds": [
+      "chronic-hepatitis-b-029",
+      "chronic-hepatitis-b-030",
+      "chronic-hepatitis-b-031",
+      "chronic-hepatitis-b-032",
+      "chronic-hepatitis-b-033",
+      "chronic-hepatitis-b-034",
+      "chronic-hepatitis-b-035",
+      "chronic-hepatitis-b-036"
+    ],
+    "newUniqueBankQuestionsVerified": 8,
+    "broaderFeedingBankVerifiedBefore": 487,
+    "broaderFeedingBankVerifiedAfter": 495,
+    "wholeBodiesVerified": 7,
+    "existingBodiesVerified": 4,
+    "newTeachingBodiesVerified": 3,
+    "wholeEmbeddedChecksVerified": 1,
+    "wholeLessonMetadataAndFiguresVerified": 1,
+    "associatedCumulativeWholeItemsVerified": [
+      "cumulative-chronic-hepatitis-b-chronic-hepatitis-b-029"
+    ],
+    "cumulativeUniqueCountLimit": "Inherited items are not additional independent questions beyond their module source IDs.",
+    "other104WholeBankObjectsUnchangedThisUnit": true,
+    "other47WholeBodiesElevenChecksMetadataUnchangedThisUnit": true,
+    "other231WholeModulesUnchanged": true,
+    "other1179CumulativeObjectsUnchanged": true,
+    "referencesAfter": 15,
+    "priorHBVPolymeraseAndEarlyThreeLessonsRemainVerified": true,
+    "HBVBankVerifiedAcrossPriorAndCurrentUnits": 52,
+    "HBVBankRemainingOutsideThoseUnits": 60,
+    "HBVWholeLessonsVerifiedAcrossPriorAndCurrentUnits": 5,
+    "HBVWholeLessonsRemaining": 7,
+    "historicalLexicalInventoryRemaining": 157,
+    "historicalLexicalLimit": "Historical count preserved, not exhaustive semantic coverage.",
+    "wholeHBVParentModuleVerified": false,
+    "wholeENModuleVerified": false,
+    "wholeChaptersVerified": false,
+    "committedWholeModulesVerifiedAfter": 57,
+    "committedWholeModulesTotal": 232,
+    "moduleCountPercent": 24.57,
+    "chaptersVerifiedAfter": 6,
+    "chapterTotal": 82,
+    "chapterCountPercent": 7.32
+  },
+  "changes": {
+    "questions": {
+      "chronic-hepatitis-b-029": {
+        "before": {
+          "id": "chronic-hepatitis-b-029",
+          "question": "Which statement is most accurate? Focus: treatment goals.",
+          "choices": [
+            "Current nucleos(t)ide analog therapy suppresses HBV replication and reduces progression risk but rarely eradicates covalently closed circular DNA.",
+            "Promising a routine short curative course can encourage unsafe discontinuation.",
+            "Assume viral suppression removes every need for monitoring, vaccination, or cancer surveillance.",
+            "Select therapy from drug name alone without kidney, bone, liver, pregnancy, resistance, coinfection, or adherence context."
+          ],
+          "answer": 0,
+          "rationale": "Current nucleos(t)ide analog therapy suppresses HBV replication and reduces progression risk but rarely eradicates covalently closed circular DNA. Set goals for durable DNA suppression, biochemical improvement, fibrosis protection, and prevention of cirrhosis, decompensation, transmission, and cancer.",
+          "reviewHref": "#treatment-decision",
+          "difficulty": "foundational"
+        },
+        "after": {
+          "id": "chronic-hepatitis-b-029",
+          "question": "Which statement is most accurate? Focus: treatment goals.",
+          "choices": [
+            "Oral nucleos(t)ide analogs suppress replication; undetectable serum HBV DNA does not prove elimination of nuclear cccDNA",
+            "An undetectable serum HBV DNA result proves all infected hepatocytes have been cleared",
+            "Polymerase inhibition routinely produces rapid sterilizing cure of chronic HBV",
+            "Normal ALT after treatment establishes that HBV-related cancer risk is zero"
+          ],
+          "answer": 0,
+          "rationale": "Polymerase inhibition can suppress replication while the nuclear reservoir persists. Serum DNA, ALT and liver-risk assessment describe different outcomes; none alone establishes eradication or freedom from every future liver complication.",
+          "reviewHref": "#treatment-decision",
+          "difficulty": "foundational"
+        }
+      },
+      "chronic-hepatitis-b-030": {
+        "before": {
+          "id": "chronic-hepatitis-b-030",
+          "question": "Which action best applies the evidence? Focus: treatment goals.",
+          "choices": [
+            "Set goals for durable DNA suppression, biochemical improvement, fibrosis protection, and prevention of cirrhosis, decompensation, transmission, and cancer.",
+            "Promising a routine short curative course can encourage unsafe discontinuation.",
+            "Select therapy from drug name alone without kidney, bone, liver, pregnancy, resistance, coinfection, or adherence context.",
+            "Use one isolated laboratory value without reviewing the full serology pattern, fibrosis, treatment history, or current guidance."
+          ],
+          "answer": 0,
+          "rationale": "Current nucleos(t)ide analog therapy suppresses HBV replication and reduces progression risk but rarely eradicates covalently closed circular DNA. Set goals for durable DNA suppression, biochemical improvement, fibrosis protection, and prevention of cirrhosis, decompensation, transmission, and cancer.",
+          "reviewHref": "#treatment-decision",
+          "difficulty": "foundational"
+        },
+        "after": {
+          "id": "chronic-hepatitis-b-030",
+          "question": "Which action best applies the evidence? Focus: treatment goals.",
+          "choices": [
+            "Agree on virologic and liver-health goals, adherence, product-specific monitoring and expected treatment duration",
+            "Promise that the first undetectable DNA result will allow treatment discontinuation",
+            "Use disappearance of symptoms as the only treatment target",
+            "Measure ALT alone to establish virologic suppression"
+          ],
+          "answer": 0,
+          "rationale": "A useful plan measures antiviral response and protects liver health while supporting safe ongoing therapy. ALT is an injury marker, not a substitute for HBV DNA, and symptom improvement does not establish treatment completion.",
+          "reviewHref": "#treatment-decision",
+          "difficulty": "foundational"
+        }
+      },
+      "chronic-hepatitis-b-031": {
+        "before": {
+          "id": "chronic-hepatitis-b-031",
+          "question": "Which plan demonstrates the strongest clinical reasoning? Focus: treatment goals.",
+          "choices": [
+            "Set goals for durable DNA suppression, biochemical improvement, fibrosis protection, and prevention of cirrhosis, decompensation, transmission, and cancer.",
+            "Promising a routine short curative course can encourage unsafe discontinuation.",
+            "Use one isolated laboratory value without reviewing the full serology pattern, fibrosis, treatment history, or current guidance.",
+            "Assume viral suppression removes every need for monitoring, vaccination, or cancer surveillance."
+          ],
+          "answer": 0,
+          "rationale": "Current nucleos(t)ide analog therapy suppresses HBV replication and reduces progression risk but rarely eradicates covalently closed circular DNA. Set goals for durable DNA suppression, biochemical improvement, fibrosis protection, and prevention of cirrhosis, decompensation, transmission, and cancer.",
+          "reviewHref": "#treatment-decision",
+          "difficulty": "advanced"
+        },
+        "after": {
+          "id": "chronic-hepatitis-b-031",
+          "question": "Which plan demonstrates the strongest clinical reasoning? Focus: treatment goals.",
+          "choices": [
+            "Assess DNA response, ALT, adherence and toxicity while continuing indicated liver-cancer surveillance",
+            "Discharge a patient with cirrhosis from follow-up once HBV DNA is undetectable",
+            "Stop therapy whenever symptoms resolve, without a planned monitoring pathway",
+            "Infer that an ALT response removes the need to assess drug toxicity"
+          ],
+          "answer": 0,
+          "rationale": "A strong plan separates virologic response, biochemical response, safety and residual liver risk. Effective antiviral treatment does not eliminate cancer risk in cirrhosis or justify an unplanned interruption.",
+          "reviewHref": "#treatment-decision",
+          "difficulty": "advanced"
+        }
+      },
+      "chronic-hepatitis-b-032": {
+        "before": {
+          "id": "chronic-hepatitis-b-032",
+          "question": "Which error creates the greatest avoidable risk? Focus: treatment goals.",
+          "choices": [
+            "Promising a routine short curative course can encourage unsafe discontinuation.",
+            "Current nucleos(t)ide analog therapy suppresses HBV replication and reduces progression risk but rarely eradicates covalently closed circular DNA.",
+            "Set goals for durable DNA suppression, biochemical improvement, fibrosis protection, and prevention of cirrhosis, decompensation, transmission, and cancer.",
+            "Assume viral suppression removes every need for monitoring, vaccination, or cancer surveillance."
+          ],
+          "answer": 0,
+          "rationale": "Current nucleos(t)ide analog therapy suppresses HBV replication and reduces progression risk but rarely eradicates covalently closed circular DNA. Set goals for durable DNA suppression, biochemical improvement, fibrosis protection, and prevention of cirrhosis, decompensation, transmission, and cancer.",
+          "reviewHref": "#treatment-decision",
+          "difficulty": "advanced"
+        },
+        "after": {
+          "id": "chronic-hepatitis-b-032",
+          "question": "Which error creates the greatest avoidable risk? Focus: treatment goals.",
+          "choices": [
+            "Stop oral HBV therapy after one undetectable DNA result without a stopping plan or follow-up",
+            "Explain that DNA suppression can coexist with a persistent viral reservoir",
+            "Continue surveillance when liver-cancer risk warrants it",
+            "Arrange medication access and adherence support before treatment begins"
+          ],
+          "answer": 0,
+          "rationale": "An unplanned stop based on suppression alone can lead to severe HBV exacerbation. Counseling about persistent infection, indicated surveillance and continuity of treatment supports safer care.",
+          "reviewHref": "#treatment-decision",
+          "difficulty": "advanced"
+        }
+      },
+      "chronic-hepatitis-b-033": {
+        "before": {
+          "id": "chronic-hepatitis-b-033",
+          "question": "Which statement is most accurate? Focus: who to treat.",
+          "choices": [
+            "Current guidance expands treatment beyond older narrow ALT and HBV DNA thresholds, especially with cirrhosis, fibrosis, immune-active disease, pregnancy transmission risk, coinfection, or high-risk context.",
+            "Copying the 2023 book's simplified first-line table without current eligibility criteria can undertreat patients.",
+            "Select therapy from drug name alone without kidney, bone, liver, pregnancy, resistance, coinfection, or adherence context.",
+            "Use one isolated laboratory value without reviewing the full serology pattern, fibrosis, treatment history, or current guidance."
+          ],
+          "answer": 0,
+          "rationale": "Current guidance expands treatment beyond older narrow ALT and HBV DNA thresholds, especially with cirrhosis, fibrosis, immune-active disease, pregnancy transmission risk, coinfection, or high-risk context. Apply the current AASLD or WHO pathway that fits the setting and use shared decision-making for indeterminate cases.",
+          "reviewHref": "#treatment-decision",
+          "difficulty": "foundational"
+        },
+        "after": {
+          "id": "chronic-hepatitis-b-033",
+          "question": "Which statement is most accurate? Focus: who to treat.",
+          "choices": [
+            "AASLD immune-tolerant treatment consideration uses age over 40 OR significant inflammation OR fibrosis, with shared decision-making",
+            "AASLD requires both age over 40 and F2 fibrosis before anyone in an immune-tolerant pattern can discuss therapy",
+            "HBeAg negativity excludes treatment regardless of cirrhosis",
+            "Normal ALT excludes treatment in every HBV clinical setting"
+          ],
+          "answer": 0,
+          "rationale": "Recommendation 3 treats age, inflammation and fibrosis as alternative considerations. Its recommendation is conditional with very low-certainty evidence; eligibility is not limited to one ALT or HBeAg result.",
+          "reviewHref": "#treatment-decision",
+          "difficulty": "foundational"
+        }
+      },
+      "chronic-hepatitis-b-034": {
+        "before": {
+          "id": "chronic-hepatitis-b-034",
+          "question": "Which action best applies the evidence? Focus: who to treat.",
+          "choices": [
+            "Apply the current AASLD or WHO pathway that fits the setting and use shared decision-making for indeterminate cases.",
+            "Copying the 2023 book's simplified first-line table without current eligibility criteria can undertreat patients.",
+            "Use one isolated laboratory value without reviewing the full serology pattern, fibrosis, treatment history, or current guidance.",
+            "Assume viral suppression removes every need for monitoring, vaccination, or cancer surveillance."
+          ],
+          "answer": 0,
+          "rationale": "Current guidance expands treatment beyond older narrow ALT and HBV DNA thresholds, especially with cirrhosis, fibrosis, immune-active disease, pregnancy transmission risk, coinfection, or high-risk context. Apply the current AASLD or WHO pathway that fits the setting and use shared decision-making for indeterminate cases.",
+          "reviewHref": "#treatment-decision",
+          "difficulty": "foundational"
+        },
+        "after": {
+          "id": "chronic-hepatitis-b-034",
+          "question": "Which action best applies the evidence? Focus: who to treat.",
+          "choices": [
+            "Apply a named framework: WHO permits treatment for significant fibrosis regardless of ALT or HBV DNA",
+            "Combine the WHO ALT upper limit with the AASLD DNA thresholds and call the result one guideline",
+            "Require elevated ALT before treating cirrhosis under every framework",
+            "Apply the adult WHO elastography cutoffs to children as fully validated values"
+          ],
+          "answer": 0,
+          "rationale": "WHO includes an independent significant-fibrosis or cirrhosis pathway. Its ALT/DNA pathway is a separate option, and pediatric validation limits matter. Mixing thresholds from different frameworks creates an unsupported rule.",
+          "reviewHref": "#treatment-decision",
+          "difficulty": "foundational"
+        }
+      },
+      "chronic-hepatitis-b-035": {
+        "before": {
+          "id": "chronic-hepatitis-b-035",
+          "question": "Which plan demonstrates the strongest clinical reasoning? Focus: who to treat.",
+          "choices": [
+            "Apply the current AASLD or WHO pathway that fits the setting and use shared decision-making for indeterminate cases.",
+            "Copying the 2023 book's simplified first-line table without current eligibility criteria can undertreat patients.",
+            "Assume viral suppression removes every need for monitoring, vaccination, or cancer surveillance.",
+            "Select therapy from drug name alone without kidney, bone, liver, pregnancy, resistance, coinfection, or adherence context."
+          ],
+          "answer": 0,
+          "rationale": "Current guidance expands treatment beyond older narrow ALT and HBV DNA thresholds, especially with cirrhosis, fibrosis, immune-active disease, pregnancy transmission risk, coinfection, or high-risk context. Apply the current AASLD or WHO pathway that fits the setting and use shared decision-making for indeterminate cases.",
+          "reviewHref": "#treatment-decision",
+          "difficulty": "advanced"
+        },
+        "after": {
+          "id": "chronic-hepatitis-b-035",
+          "question": "Which plan demonstrates the strongest clinical reasoning? Focus: who to treat.",
+          "choices": [
+            "Discuss treatment for a 35-year-old with a persistently immune-tolerant pattern and confirmed F2 fibrosis instead of waiting for age over 40",
+            "Require the same patient to reach age over 40 before discussing treatment despite confirmed F2 fibrosis",
+            "Dismiss confirmed fibrosis because the same patient has normal ALT",
+            "Use HBeAg positivity alone to determine the exact oral drug and dose"
+          ],
+          "answer": 0,
+          "rationale": "Confirmed F2 fibrosis independently supports treatment consideration in the AASLD immune-tolerant recommendation. A younger age does not cancel that finding. Discuss risks, benefits and monitoring, then select therapy using the full patient context.",
+          "reviewHref": "#treatment-decision",
+          "difficulty": "advanced"
+        }
+      },
+      "chronic-hepatitis-b-036": {
+        "before": {
+          "id": "chronic-hepatitis-b-036",
+          "question": "Which error creates the greatest avoidable risk? Focus: who to treat.",
+          "choices": [
+            "Copying the 2023 book's simplified first-line table without current eligibility criteria can undertreat patients.",
+            "Current guidance expands treatment beyond older narrow ALT and HBV DNA thresholds, especially with cirrhosis, fibrosis, immune-active disease, pregnancy transmission risk, coinfection, or high-risk context.",
+            "Apply the current AASLD or WHO pathway that fits the setting and use shared decision-making for indeterminate cases.",
+            "Select therapy from drug name alone without kidney, bone, liver, pregnancy, resistance, coinfection, or adherence context."
+          ],
+          "answer": 0,
+          "rationale": "Current guidance expands treatment beyond older narrow ALT and HBV DNA thresholds, especially with cirrhosis, fibrosis, immune-active disease, pregnancy transmission risk, coinfection, or high-risk context. Apply the current AASLD or WHO pathway that fits the setting and use shared decision-making for indeterminate cases.",
+          "reviewHref": "#treatment-decision",
+          "difficulty": "advanced"
+        },
+        "after": {
+          "id": "chronic-hepatitis-b-036",
+          "question": "Which error creates the greatest avoidable risk? Focus: who to treat.",
+          "choices": [
+            "Dismiss treatment in decompensated HBV cirrhosis because ALT is normal",
+            "Arrange oral antiviral treatment and specialist assessment for decompensated HBV cirrhosis",
+            "Evaluate other causes of elevated ALT when HBV DNA is low",
+            "Discuss treatment burden and follow-up when applying a conditional recommendation"
+          ],
+          "answer": 0,
+          "rationale": "Normal ALT does not negate the treatment indication in decompensated HBV cirrhosis. Oral antiviral treatment and specialist care address that indication; evaluating other injury causes and discussing treatment burden support appropriate care.",
+          "reviewHref": "#treatment-decision",
+          "difficulty": "advanced"
+        }
+      }
+    },
+    "bodies": {
+      "treatment-decision": {
+        "Treat advanced disease": {
+          "before": {
+            "heading": "Treat advanced disease",
+            "body": "Cirrhosis with detectable HBV DNA and significant fibrosis generally favor therapy even when ALT is not elevated. Decompensation requires specialist treatment and transplant-aware care."
+          },
+          "after": {
+            "heading": "Treat advanced disease",
+            "body": "Assess cirrhosis and decompensation before applying noncirrhotic laboratory thresholds. AASLD recommends indefinite oral antiviral therapy for HBsAg-positive adults with decompensated cirrhosis regardless of HBV DNA, HBeAg or ALT, alongside transplant evaluation when eligible. Compensated cirrhosis with low-level viremia also supports treatment despite normal ALT. Peginterferon is contraindicated in decompensation. Choose the oral product using renal function, prior resistance and hepatic labeling; suppression does not remove the need for indicated cancer surveillance."
+          }
+        },
+        "Treat immune-active disease": {
+          "before": {
+            "heading": "Treat immune-active disease",
+            "body": "HBV DNA, ALT, inflammation, and fibrosis support treatment. Exact thresholds and special populations differ across AASLD and WHO settings."
+          },
+          "after": {
+            "heading": "Treat immune-active disease",
+            "body": "The AASLD framework uses ALT upper limits of 35 U/L for males and 25 U/L for females. Without cirrhosis, immune-active patterns include ALT at least twice that limit with HBV DNA at least 20,000 IU/mL when HBeAg-positive or at least 2,000 IU/mL when HBeAg-negative. Significant histologic disease can also support treatment. These sufficient patterns do not exclude treatment below their thresholds: assess fibrosis, other causes of liver injury and additional indications."
+          }
+        },
+        "Handle indeterminate disease": {
+          "before": {
+            "heading": "Handle indeterminate disease",
+            "body": "Current AASLD guidance emphasizes age, fibrosis, inflammation, family history, comorbidity, and shared decision-making rather than passive indefinite observation."
+          },
+          "after": {
+            "heading": "Handle indeterminate disease",
+            "body": "For HBsAg-positive, HBeAg-negative adults without cirrhosis in an indeterminate phase, the 2025 AASLD/IDSA guideline conditionally suggests treatment through shared decision-making; evidence certainty is very low. Discuss fibrosis, age, sex, treatment burden and follow-up. If treatment is deferred, reassess at each visit. The recommendation text specifies ALT and HBV DNA every 3-6 months in the first year, then every six months; its diagram uses three-month testing initially for the elevated-DNA subgroup."
+          }
+        },
+        "Use prevention indications": {
+          "before": {
+            "heading": "Use prevention indications",
+            "body": "Pregnancy with high HBV DNA, HIV coinfection, immunosuppression, household or horizontal transmission risk, and selected pediatric contexts can create treatment or prophylaxis indications."
+          },
+          "after": {
+            "heading": "Use prevention indications",
+            "body": "Separate treatment for liver disease from antiviral prophylaxis. Pregnancy, HIV coinfection and immunosuppression require their own coordinated pathways. For a viremic person without a liver-disease indication, AASLD conditionally supports discussing antivirals in selected high-risk horizontal-transmission settings. This does not make ordinary household contact a treatment requirement. Vaccination of susceptible contacts, safer exposure practices and appropriate infant protection remain necessary."
+          }
+        }
+      }
+    },
+    "checks": {
+      "treatment-decision": {
+        "before": {
+          "question": "What is the best treatment decision method for chronic HBV?",
+          "choices": [
+            "Apply current guidance to HBV DNA, ALT, fibrosis, cirrhosis, age, coinfection, and patient goals",
+            "Use ALT alone",
+            "Treat only HBeAg-positive disease",
+            "Follow a 2023 table without checking updates"
+          ],
+          "answer": 0,
+          "rationale": "Treatment eligibility requires a current, multidimensional framework.",
+          "reviewHref": "#treatment-decision"
+        },
+        "after": {
+          "question": "An HBsAg-positive adult has decompensated cirrhosis, normal ALT and low HBV DNA. Which treatment decision is best?",
+          "choices": [
+            "Arrange potent oral antiviral treatment and specialist care, including transplant evaluation when eligible",
+            "Defer therapy until ALT reaches twice the upper limit of normal",
+            "Use peginterferon to avoid long-term oral treatment",
+            "Exclude treatment because HBeAg is negative"
+          ],
+          "answer": 0,
+          "rationale": "AASLD recommends indefinite oral antiviral therapy in HBsAg-positive adults with decompensated cirrhosis regardless of HBV DNA, HBeAg or ALT. Peginterferon is contraindicated. Normal ALT and low DNA do not justify deferral; choose the oral agent for the patient and coordinate specialist care.",
+          "reviewHref": "#treatment-decision"
+        }
+      }
+    },
+    "metadata": {
+      "treatment-decision": {
+        "before": {
+          "summary": "The 2025 AASLD and 2024 WHO frameworks expanded and clarified treatment decisions beyond the compact 2023 textbook table.",
+          "application": "State which current framework applies, then show how viral activity, fibrosis, host risk, and prevention goals produce the decision.",
+          "keyPoints": [
+            "Cirrhosis lowers the treatment threshold.",
+            "Current guidance is broader than RxPrep 2023.",
+            "Indeterminate does not mean irrelevant.",
+            "Prevention can be a treatment goal."
+          ]
+        },
+        "after": {
+          "summary": "Treatment decisions combine viral activity, liver stage, host risk and prevention goals. Identify the AASLD/IDSA or WHO framework before applying its thresholds.",
+          "application": "Document the indication, the named framework, fibrosis and viral findings, patient preferences, regimen constraints, and the follow-up plan if treatment is deferred.",
+          "keyPoints": [
+            "Decompensated cirrhosis warrants treatment regardless of HBV DNA or ALT.",
+            "AASLD immune-tolerant age, inflammation and fibrosis considerations use OR.",
+            "Shared decisions include treatment burden and continued monitoring.",
+            "WHO and AASLD use different ALT thresholds.",
+            "DNA suppression does not prove eradication or end indicated surveillance."
+          ]
+        }
+      }
+    },
+    "newBodies": {
+      "treatment-decision": [
+        {
+          "heading": "Set measurable treatment goals",
+          "body": "Oral nucleos(t)ide analogs inhibit HBV polymerase. Follow HBV DNA suppression and biochemical response while aiming to reduce liver complications. Suppression does not establish eradication of the persistent nuclear cccDNA reservoir, guarantee elimination of cancer risk or authorize stopping therapy. Explain the expected duration, adherence, product-specific monitoring and ongoing surveillance when indicated before starting treatment."
+        },
+        {
+          "heading": "Revisit immune-tolerant eligibility",
+          "body": "In a persistently HBeAg-positive pattern with HBV DNA above 10 million IU/mL and normal ALT, 2025 AASLD/IDSA Recommendation 3 suggests treatment when age is over 40, inflammation is at least grade 2, or fibrosis is at least F2. These are alternative considerations. This is conditional guidance with very low-certainty evidence. Younger patients may also discuss earlier treatment; observation requires continued monitoring."
+        },
+        {
+          "heading": "Keep the WHO pathway distinct",
+          "body": "The WHO 2024 criteria, retained in its 2026 handbook, recommend treatment for adults and adolescents aged at least 12 with significant fibrosis or cirrhosis regardless of ALT or DNA; HBV DNA above 2,000 IU/mL plus ALT above the WHO upper limit; or qualifying coinfection, family history, immunosuppression, comorbidity or extrahepatic disease. WHO uses ALT upper limits of 30 U/L for males and 19 U/L for females. When DNA testing is unavailable, persistently abnormal ALT is another conditional pathway. Adult fibrosis markers include APRI above 0.5 or elastography above 7 kPa for significant fibrosis; these cutoffs are not fully validated in children or adolescents. Apply the named framework and local protocol, then select a suitable regimen."
+        }
+      ]
+    },
+    "newReferences": [
+      {
+        "label": "WHO 2026: consolidated viral hepatitis implementation handbook",
+        "href": "https://www.who.int/publications/i/item/9789240119529"
+      }
+    ],
+    "figure": {
+      "before": "const views = {\n  \"virus-natural-history\": [\"HBV entry\", \"cccDNA\", \"Host injury\", \"Fibrosis\"],\n  \"screening-serology\": [\"HBsAg\", \"Anti-HBs\", \"Total core\", \"Context\"],\n  \"phase-staging\": [\"ALT trend\", \"DNA trend\", \"HBeAg\", \"Fibrosis\"],\n  \"treatment-decision\": [\"Cirrhosis\", \"Immune active\", \"Indeterminate\", \"Shared decision\"],\n  \"polymerase-therapy\": [\"TDF\", \"TAF\", \"Entecavir\", \"Resistance\"],\n  \"peginterferon-selection\": [\"Finite course\", \"Immune effect\", \"Toxicity\", \"Compensation\"],\n  \"special-populations\": [\"Kidney\", \"Bone\", \"HIV\", \"Coinfection\"],\n  \"pregnancy-infant\": [\"Maternal DNA\", \"Antiviral\", \"Vaccine and HBIG\", \"PVST\"],\n  \"monitoring-stopping\": [\"DNA suppression\", \"Safety\", \"Adherence\", \"Flare\"],\n  \"reactivation\": [\"Triple panel\", \"Immunosuppression\", \"Prophylaxis\", \"Monitoring\"],\n  \"prevention-surveillance\": [\"Vaccination\", \"Contacts\", \"HCC surveillance\", \"Linkage\"],\n  \"integrated-case\": [\"Screen\", \"Stage\", \"Treat\", \"Follow\"],\n};\nconst reviewedViews = {\n  \"virus-natural-history\": \"A persistent nuclear reservoir, host injury and fibrosis explain continuing risk despite suppressed serum DNA.\",\n  \"screening-serology\": \"Read surface antigen, surface antibody and total core antibody together; timing and immune status guide follow-up.\",\n  \"phase-staging\": \"Combine trends in ALT and HBV DNA with HBeAg and fibrosis; no single marker defines the whole phase.\",\n};\nexport const chronicHepatitisBVisualTypes = Object.keys(views).map((key) => `chronic-hepatitis-b-${key}`);\nexport default function ChronicHepatitisBVisual({ type }) {\n  const key = type.replace(\"chronic-hepatitis-b-\", \"\");\n  const labels = views[key] || views[\"integrated-case\"];\n  return <figure className=\"chol-visual chronic-hepatitis-b-visual\" aria-label={`Chronic hepatitis B visual: ${key.replaceAll(\"-\", \" \")}`}>\n    <div className=\"chol-visual__copy\"><span>Viral liver disease</span><h3>{key.replaceAll(\"-\", \" \")}</h3><p>{reviewedViews[key] || \"Connect viral replication, immune injury, fibrosis, treatment, prevention, and long-term surveillance.\"}</p></div>\n    <div className=\"chol-visual__stage\" aria-hidden=\"true\"><svg viewBox=\"0 0 620 300\">\n      <defs><radialGradient id={`hbv-${key}`}><stop stopColor=\"#e7bd79\" stopOpacity=\".55\"/><stop offset=\"1\" stopColor=\"#6b342e\" stopOpacity=\".04\"/></radialGradient></defs>\n      <path d=\"M222 65 C286 44 390 68 426 121 C462 175 419 233 340 242 C270 250 199 226 175 180 C154 140 166 86 222 65Z\" fill={`url(#hbv-${key})`} stroke=\"#d1a061\" strokeOpacity=\".34\"/>\n      <path d=\"M295 71 C306 112 307 176 294 232\" fill=\"none\" stroke=\"#d7a667\" strokeOpacity=\".35\"/>\n      {[0,1,2,3,4,5,6].map((index)=><g key={index} transform={`translate(${230 + (index%4)*48} ${106 + Math.floor(index/4)*72})`}><circle r=\"15\" fill=\"#9f4a43\" fillOpacity=\".54\" stroke=\"#efca8e\" strokeOpacity=\".46\"/><circle r=\"5\" fill=\"#efd19a\"/><path d=\"M-18 0H18M0-18V18\" stroke=\"#d8aa6e\" strokeOpacity=\".28\"/></g>)}\n      {labels.map((label,index)=>{const p=[[86,56],[534,56],[86,247],[534,247]][index];return <g key={label}><line x1={p[0]} y1={p[1]} x2=\"310\" y2=\"150\" stroke=\"#c99a62\" strokeOpacity=\".22\"/><circle cx={p[0]} cy={p[1]} r=\"5\" fill={index===0?\"#efd19a\":\"#9f4a43\"}/><text x={p[0]} y={p[1]-15} textAnchor=\"middle\" fill=\"#f3eee6\" fontSize=\"14\" className={(key === \"polymerase-therapy\" || key in reviewedViews) ? \"[font-size:32px] sm:[font-size:14px]\" : undefined}>{label}</text></g>})}\n    </svg></div>\n  </figure>;\n}\n",
+      "after": "const views = {\n  \"virus-natural-history\": [\"HBV entry\", \"cccDNA\", \"Host injury\", \"Fibrosis\"],\n  \"screening-serology\": [\"HBsAg\", \"Anti-HBs\", \"Total core\", \"Context\"],\n  \"phase-staging\": [\"ALT trend\", \"DNA trend\", \"HBeAg\", \"Fibrosis\"],\n  \"treatment-decision\": [\"Cirrhosis\", \"Activity\", \"Risk\", \"Goals\"],\n  \"polymerase-therapy\": [\"TDF\", \"TAF\", \"Entecavir\", \"Resistance\"],\n  \"peginterferon-selection\": [\"Finite course\", \"Immune effect\", \"Toxicity\", \"Compensation\"],\n  \"special-populations\": [\"Kidney\", \"Bone\", \"HIV\", \"Coinfection\"],\n  \"pregnancy-infant\": [\"Maternal DNA\", \"Antiviral\", \"Vaccine and HBIG\", \"PVST\"],\n  \"monitoring-stopping\": [\"DNA suppression\", \"Safety\", \"Adherence\", \"Flare\"],\n  \"reactivation\": [\"Triple panel\", \"Immunosuppression\", \"Prophylaxis\", \"Monitoring\"],\n  \"prevention-surveillance\": [\"Vaccination\", \"Contacts\", \"HCC surveillance\", \"Linkage\"],\n  \"integrated-case\": [\"Screen\", \"Stage\", \"Treat\", \"Follow\"],\n};\nconst reviewedViews = {\n  \"treatment-decision\": \"Identify the treatment framework, then combine liver stage, viral activity, host risk and patient goals.\",\n  \"virus-natural-history\": \"A persistent nuclear reservoir, host injury and fibrosis explain continuing risk despite suppressed serum DNA.\",\n  \"screening-serology\": \"Read surface antigen, surface antibody and total core antibody together; timing and immune status guide follow-up.\",\n  \"phase-staging\": \"Combine trends in ALT and HBV DNA with HBeAg and fibrosis; no single marker defines the whole phase.\",\n};\nexport const chronicHepatitisBVisualTypes = Object.keys(views).map((key) => `chronic-hepatitis-b-${key}`);\nexport default function ChronicHepatitisBVisual({ type }) {\n  const key = type.replace(\"chronic-hepatitis-b-\", \"\");\n  const labels = views[key] || views[\"integrated-case\"];\n  return <figure className=\"chol-visual chronic-hepatitis-b-visual\" aria-label={`Chronic hepatitis B visual: ${key.replaceAll(\"-\", \" \")}`}>\n    <div className=\"chol-visual__copy\"><span>Viral liver disease</span><h3>{key.replaceAll(\"-\", \" \")}</h3><p>{reviewedViews[key] || \"Connect viral replication, immune injury, fibrosis, treatment, prevention, and long-term surveillance.\"}</p></div>\n    <div className=\"chol-visual__stage\" aria-hidden=\"true\"><svg viewBox=\"0 0 620 300\">\n      <defs><radialGradient id={`hbv-${key}`}><stop stopColor=\"#e7bd79\" stopOpacity=\".55\"/><stop offset=\"1\" stopColor=\"#6b342e\" stopOpacity=\".04\"/></radialGradient></defs>\n      <path d=\"M222 65 C286 44 390 68 426 121 C462 175 419 233 340 242 C270 250 199 226 175 180 C154 140 166 86 222 65Z\" fill={`url(#hbv-${key})`} stroke=\"#d1a061\" strokeOpacity=\".34\"/>\n      <path d=\"M295 71 C306 112 307 176 294 232\" fill=\"none\" stroke=\"#d7a667\" strokeOpacity=\".35\"/>\n      {[0,1,2,3,4,5,6].map((index)=><g key={index} transform={`translate(${230 + (index%4)*48} ${106 + Math.floor(index/4)*72})`}><circle r=\"15\" fill=\"#9f4a43\" fillOpacity=\".54\" stroke=\"#efca8e\" strokeOpacity=\".46\"/><circle r=\"5\" fill=\"#efd19a\"/><path d=\"M-18 0H18M0-18V18\" stroke=\"#d8aa6e\" strokeOpacity=\".28\"/></g>)}\n      {labels.map((label,index)=>{const p=[[86,56],[534,56],[86,247],[534,247]][index];return <g key={label}><line x1={p[0]} y1={p[1]} x2=\"310\" y2=\"150\" stroke=\"#c99a62\" strokeOpacity=\".22\"/><circle cx={p[0]} cy={p[1]} r=\"5\" fill={index===0?\"#efd19a\":\"#9f4a43\"}/><text x={p[0]} y={p[1]-15} textAnchor=\"middle\" fill=\"#f3eee6\" fontSize=\"14\" className={(key === \"polymerase-therapy\" || key in reviewedViews) ? \"[font-size:32px] sm:[font-size:14px]\" : undefined}>{label}</text></g>})}\n    </svg></div>\n  </figure>;\n}\n"
+    }
+  },
+  "finalSourceComparison": {
+    "status": "passed",
+    "method": "Manual clinical judgments recorded for each complete scoped body, all answer choices/keys/rationales, metadata/check/figure and inherited cumulative object; scripts verify scope preservation and arithmetic, not medical certification.",
+    "sources": {
+      "book": {
+        "identity": "Supplied PDF cover verified as RxPrep 2023",
+        "printedPage": 301,
+        "PDFPage": 309,
+        "comparison": "Complete drug-treatment page, table and notes read and native image viewed; supports polymerase inhibition, HIV-aware selection and post-discontinuation exacerbation. It does not contain the detailed treatment-eligibility pathways taught here.",
+        "private": true
+      },
+      "AASLD2018": {
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5975958/",
+        "sections": "Immune-active treatment definition/technical remarks; cirrhosis recommendations 7A/7B and all associated remarks. Text reviewed in full for these sections. 2025 guideline states unaddressed 2018 recommendations remain applicable.",
+        "qualification": "No old immune-tolerant rule substituted for 2025 Recommendation 3; current product labeling remains controlling for selection."
+      },
+      "AASLD2025": {
+        "url": "https://www.aasld.org/practice-guidelines/hepatitis-b",
+        "primaryDOI": "10.1097/HEP.0000000000001549",
+        "primaryFullTextMirror": "https://www.natap.org/2025/AASLD/aasld_isda_practice_guideline_on_treatment_of.24.pdf",
+        "provenance": "AASLD official practice page links publisher DOI; publisher retrieval failed. Full article copy verified by title, authors, DOI and publisher copyright; not a secondary summary.",
+        "PDFPagesRead": [
+          2,
+          3,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "nativePagesViewed": [
+          9,
+          10,
+          11,
+          12
+        ],
+        "sections": "Core concepts; PICO 2 and Table 2; full Recommendations 3/4, implementation considerations and Figures 2/3 with complete captions; evidence uncertainty."
+      },
+      "AASLD2025slides": {
+        "url": "https://www.aasld.org/sites/default/files/2025-11/CHB%20Educational%20Slide%20Set%20Final%202.pdf",
+        "nativeSlidesViewed": [
+          20,
+          21
+        ],
+        "sections": "Recommendation 3 and HBeAg-positive treatment diagram; full text and figure reviewed. Direct recommendation reconciled against guideline."
+      },
+      "WHO2024": {
+        "url": "https://www.who.int/publications/i/item/9789240090903",
+        "PDFPagesReadAndNativeViewed": [
+          83,
+          84,
+          85
+        ],
+        "sections": "Chapter 5 who to treat: complete recommendation, algorithm and all footnotes; age, ALT, DNA, fibrosis and special indication pathways."
+      },
+      "WHO2026": {
+        "url": "https://www.who.int/publications/i/item/9789240119529",
+        "date": "2026-02-15",
+        "PDFPagesReadAndNativeViewed": [
+          69,
+          70
+        ],
+        "printedPages": [
+          45,
+          46
+        ],
+        "sections": "Figure 5.1 complete adult/adolescent algorithm and continuation footnotes; confirms retained 2024 eligibility pathways and ALT/fibrosis limits."
+      },
+      "priorBiology": {
+        "evidence": "enteral-nutrition-broader-hbv-serology-staging-review.json",
+        "source": "Approved UW HBV persistence/reactivation biology and CDC biology",
+        "limit": "Persistent cccDNA and suppression distinction already verified in the preceding unit; retained here with source-aligned treatment goals."
+      }
+    },
+    "wholeBodyComparisons": [
+      {
+        "wholeBody": {
+          "heading": "Treat advanced disease",
+          "body": "Assess cirrhosis and decompensation before applying noncirrhotic laboratory thresholds. AASLD recommends indefinite oral antiviral therapy for HBsAg-positive adults with decompensated cirrhosis regardless of HBV DNA, HBeAg or ALT, alongside transplant evaluation when eligible. Compensated cirrhosis with low-level viremia also supports treatment despite normal ALT. Peginterferon is contraindicated in decompensation. Choose the oral product using renal function, prior resistance and hepatic labeling; suppression does not remove the need for indicated cancer surveillance."
+        },
+        "sourceKeys": [
+          "AASLD2018"
+        ],
+        "comparison": "Decompensated adult HBsAg-positive disease: indefinite treatment regardless of DNA/HBeAg/ALT, transplant consideration and IFN exclusion accurate. Compensated low-viremia/normal-ALT indication and ongoing HCC risk retained. Product label differences not flattened.",
+        "status": "passed"
+      },
+      {
+        "wholeBody": {
+          "heading": "Treat immune-active disease",
+          "body": "The AASLD framework uses ALT upper limits of 35 U/L for males and 25 U/L for females. Without cirrhosis, immune-active patterns include ALT at least twice that limit with HBV DNA at least 20,000 IU/mL when HBeAg-positive or at least 2,000 IU/mL when HBeAg-negative. Significant histologic disease can also support treatment. These sufficient patterns do not exclude treatment below their thresholds: assess fibrosis, other causes of liver injury and additional indications."
+        },
+        "sourceKeys": [
+          "AASLD2018",
+          "AASLD2025"
+        ],
+        "comparison": "AASLD 35/25 ALT upper limits and 20,000/2,000 HBeAg-specific DNA values accurate. 2025 diagram uses inclusive DNA cutoffs; 2018 prose uses above cutoffs. No boundary-value question is created. Histologic disease and nonabsolute sufficient thresholds retained.",
+        "status": "passed"
+      },
+      {
+        "wholeBody": {
+          "heading": "Handle indeterminate disease",
+          "body": "For HBsAg-positive, HBeAg-negative adults without cirrhosis in an indeterminate phase, the 2025 AASLD/IDSA guideline conditionally suggests treatment through shared decision-making; evidence certainty is very low. Discuss fibrosis, age, sex, treatment burden and follow-up. If treatment is deferred, reassess at each visit. The recommendation text specifies ALT and HBV DNA every 3-6 months in the first year, then every six months; its diagram uses three-month testing initially for the elevated-DNA subgroup."
+        },
+        "sourceKeys": [
+          "AASLD2025"
+        ],
+        "comparison": "Explicitly applies Recommendation 4 to HBeAg-negative adults without cirrhosis, conditional/very-low evidence. Treatment burden and fibrosis/age/sex context retained. Primary prose 3-6-month first-year versus Figure 3 three-month high-DNA subgroup recorded rather than silently flattened.",
+        "status": "passed"
+      },
+      {
+        "wholeBody": {
+          "heading": "Use prevention indications",
+          "body": "Separate treatment for liver disease from antiviral prophylaxis. Pregnancy, HIV coinfection and immunosuppression require their own coordinated pathways. For a viremic person without a liver-disease indication, AASLD conditionally supports discussing antivirals in selected high-risk horizontal-transmission settings. This does not make ordinary household contact a treatment requirement. Vaccination of susceptible contacts, safer exposure practices and appropriate infant protection remain necessary."
+        },
+        "sourceKeys": [
+          "AASLD2025",
+          "WHO2026",
+          "book"
+        ],
+        "comparison": "Separate disease treatment, maternal/immune prophylaxis and coordinated HIV plans; selected high-risk horizontal use is qualified. No general casual-contact treatment rule or new infant dose/timing policy asserted.",
+        "status": "passed"
+      },
+      {
+        "wholeBody": {
+          "heading": "Set measurable treatment goals",
+          "body": "Oral nucleos(t)ide analogs inhibit HBV polymerase. Follow HBV DNA suppression and biochemical response while aiming to reduce liver complications. Suppression does not establish eradication of the persistent nuclear cccDNA reservoir, guarantee elimination of cancer risk or authorize stopping therapy. Explain the expected duration, adherence, product-specific monitoring and ongoing surveillance when indicated before starting treatment."
+        },
+        "sourceKeys": [
+          "book",
+          "priorBiology",
+          "AASLD2018"
+        ],
+        "comparison": "Polymerase/DNA response, biochemical response and persistent cccDNA separated. No cure guarantee or automatic stop; HCC surveillance and safety monitoring remain indicated.",
+        "status": "passed"
+      },
+      {
+        "wholeBody": {
+          "heading": "Revisit immune-tolerant eligibility",
+          "body": "In a persistently HBeAg-positive pattern with HBV DNA above 10 million IU/mL and normal ALT, 2025 AASLD/IDSA Recommendation 3 suggests treatment when age is over 40, inflammation is at least grade 2, or fibrosis is at least F2. These are alternative considerations. This is conditional guidance with very low-certainty evidence. Younger patients may also discuss earlier treatment; observation requires continued monitoring."
+        },
+        "sourceKeys": [
+          "AASLD2025",
+          "AASLD2025slides"
+        ],
+        "comparison": "Direct Recommendation 3 uses OR for age over 40, grade >=2 inflammation, F2 fibrosis. Normal ALT must be persistent; high-DNA HBeAg-positive context retained. Under-40 discussion and evidence uncertainty explicit.",
+        "status": "passed"
+      },
+      {
+        "wholeBody": {
+          "heading": "Keep the WHO pathway distinct",
+          "body": "The WHO 2024 criteria, retained in its 2026 handbook, recommend treatment for adults and adolescents aged at least 12 with significant fibrosis or cirrhosis regardless of ALT or DNA; HBV DNA above 2,000 IU/mL plus ALT above the WHO upper limit; or qualifying coinfection, family history, immunosuppression, comorbidity or extrahepatic disease. WHO uses ALT upper limits of 30 U/L for males and 19 U/L for females. When DNA testing is unavailable, persistently abnormal ALT is another conditional pathway. Adult fibrosis markers include APRI above 0.5 or elastography above 7 kPa for significant fibrosis; these cutoffs are not fully validated in children or adolescents. Apply the named framework and local protocol, then select a suitable regimen."
+        },
+        "sourceKeys": [
+          "WHO2024",
+          "WHO2026"
+        ],
+        "comparison": "All four independent eligibility options retained. Age >=12, ALT 30/19 and DNA >2,000 distinct from AASLD; adult F2 APRI >0.5/elastography >7 and pediatric-validation caveat accurate. No-access DNA/abnormal-ALT pathway identified as conditional.",
+        "status": "passed"
+      }
+    ],
+    "wholeQuestionComparisons": [
+      {
+        "wholeQuestion": {
+          "id": "chronic-hepatitis-b-029",
+          "question": "Which statement is most accurate? Focus: treatment goals.",
+          "choices": [
+            "Oral nucleos(t)ide analogs suppress replication; undetectable serum HBV DNA does not prove elimination of nuclear cccDNA",
+            "An undetectable serum HBV DNA result proves all infected hepatocytes have been cleared",
+            "Polymerase inhibition routinely produces rapid sterilizing cure of chronic HBV",
+            "Normal ALT after treatment establishes that HBV-related cancer risk is zero"
+          ],
+          "answer": 0,
+          "rationale": "Polymerase inhibition can suppress replication while the nuclear reservoir persists. Serum DNA, ALT and liver-risk assessment describe different outcomes; none alone establishes eradication or freedom from every future liver complication.",
+          "reviewHref": "#treatment-decision",
+          "difficulty": "foundational"
+        },
+        "sourceKeys": [
+          "book",
+          "priorBiology"
+        ],
+        "singleBestAnswerComparison": "Only suppression-with-persistence is accurate; DNA eradication, routine sterilizing cure and zero-risk inference are false.",
+        "status": "passed"
+      },
+      {
+        "wholeQuestion": {
+          "id": "chronic-hepatitis-b-030",
+          "question": "Which action best applies the evidence? Focus: treatment goals.",
+          "choices": [
+            "Agree on virologic and liver-health goals, adherence, product-specific monitoring and expected treatment duration",
+            "Promise that the first undetectable DNA result will allow treatment discontinuation",
+            "Use disappearance of symptoms as the only treatment target",
+            "Measure ALT alone to establish virologic suppression"
+          ],
+          "answer": 0,
+          "rationale": "A useful plan measures antiviral response and protects liver health while supporting safe ongoing therapy. ALT is an injury marker, not a substitute for HBV DNA, and symptom improvement does not establish treatment completion.",
+          "reviewHref": "#treatment-decision",
+          "difficulty": "foundational"
+        },
+        "sourceKeys": [
+          "book",
+          "AASLD2018"
+        ],
+        "singleBestAnswerComparison": "Response and safety/continuity goals are the unique appropriate action. Single suppressed DNA, symptoms-only and ALT-only targets are insufficient.",
+        "status": "passed"
+      },
+      {
+        "wholeQuestion": {
+          "id": "chronic-hepatitis-b-031",
+          "question": "Which plan demonstrates the strongest clinical reasoning? Focus: treatment goals.",
+          "choices": [
+            "Assess DNA response, ALT, adherence and toxicity while continuing indicated liver-cancer surveillance",
+            "Discharge a patient with cirrhosis from follow-up once HBV DNA is undetectable",
+            "Stop therapy whenever symptoms resolve, without a planned monitoring pathway",
+            "Infer that an ALT response removes the need to assess drug toxicity"
+          ],
+          "answer": 0,
+          "rationale": "A strong plan separates virologic response, biochemical response, safety and residual liver risk. Effective antiviral treatment does not eliminate cancer risk in cirrhosis or justify an unplanned interruption.",
+          "reviewHref": "#treatment-decision",
+          "difficulty": "advanced"
+        },
+        "sourceKeys": [
+          "AASLD2018"
+        ],
+        "singleBestAnswerComparison": "Combined response, adherence, safety and indicated surveillance is best; cirrhosis discharge, unplanned stop and ignored toxicity are incorrect.",
+        "status": "passed"
+      },
+      {
+        "wholeQuestion": {
+          "id": "chronic-hepatitis-b-032",
+          "question": "Which error creates the greatest avoidable risk? Focus: treatment goals.",
+          "choices": [
+            "Stop oral HBV therapy after one undetectable DNA result without a stopping plan or follow-up",
+            "Explain that DNA suppression can coexist with a persistent viral reservoir",
+            "Continue surveillance when liver-cancer risk warrants it",
+            "Arrange medication access and adherence support before treatment begins"
+          ],
+          "answer": 0,
+          "rationale": "An unplanned stop based on suppression alone can lead to severe HBV exacerbation. Counseling about persistent infection, indicated surveillance and continuity of treatment supports safer care.",
+          "reviewHref": "#treatment-decision",
+          "difficulty": "advanced"
+        },
+        "sourceKeys": [
+          "book",
+          "priorBiology"
+        ],
+        "singleBestAnswerComparison": "The keyed choice is now the actual unplanned-stop action, not a true sentence describing risk. All three other choices are protective.",
+        "status": "passed"
+      },
+      {
+        "wholeQuestion": {
+          "id": "chronic-hepatitis-b-033",
+          "question": "Which statement is most accurate? Focus: who to treat.",
+          "choices": [
+            "AASLD immune-tolerant treatment consideration uses age over 40 OR significant inflammation OR fibrosis, with shared decision-making",
+            "AASLD requires both age over 40 and F2 fibrosis before anyone in an immune-tolerant pattern can discuss therapy",
+            "HBeAg negativity excludes treatment regardless of cirrhosis",
+            "Normal ALT excludes treatment in every HBV clinical setting"
+          ],
+          "answer": 0,
+          "rationale": "Recommendation 3 treats age, inflammation and fibrosis as alternative considerations. Its recommendation is conditional with very low-certainty evidence; eligibility is not limited to one ALT or HBeAg result.",
+          "reviewHref": "#treatment-decision",
+          "difficulty": "foundational"
+        },
+        "sourceKeys": [
+          "AASLD2025"
+        ],
+        "singleBestAnswerComparison": "Only OR-based conditional eligibility is correct. Requiring both age and fibrosis is too restrictive; HBeAg negativity and normal ALT do not universally exclude treatment.",
+        "status": "passed"
+      },
+      {
+        "wholeQuestion": {
+          "id": "chronic-hepatitis-b-034",
+          "question": "Which action best applies the evidence? Focus: who to treat.",
+          "choices": [
+            "Apply a named framework: WHO permits treatment for significant fibrosis regardless of ALT or HBV DNA",
+            "Combine the WHO ALT upper limit with the AASLD DNA thresholds and call the result one guideline",
+            "Require elevated ALT before treating cirrhosis under every framework",
+            "Apply the adult WHO elastography cutoffs to children as fully validated values"
+          ],
+          "answer": 0,
+          "rationale": "WHO includes an independent significant-fibrosis or cirrhosis pathway. Its ALT/DNA pathway is a separate option, and pediatric validation limits matter. Mixing thresholds from different frameworks creates an unsupported rule.",
+          "reviewHref": "#treatment-decision",
+          "difficulty": "foundational"
+        },
+        "sourceKeys": [
+          "WHO2024",
+          "WHO2026"
+        ],
+        "singleBestAnswerComparison": "Named WHO fibrosis pathway is correct; mixed guidelines, mandatory ALT rise for cirrhosis and fully validated pediatric thresholds are false.",
+        "status": "passed"
+      },
+      {
+        "wholeQuestion": {
+          "id": "chronic-hepatitis-b-035",
+          "question": "Which plan demonstrates the strongest clinical reasoning? Focus: who to treat.",
+          "choices": [
+            "Discuss treatment for a 35-year-old with a persistently immune-tolerant pattern and confirmed F2 fibrosis instead of waiting for age over 40",
+            "Require the same patient to reach age over 40 before discussing treatment despite confirmed F2 fibrosis",
+            "Dismiss confirmed fibrosis because the same patient has normal ALT",
+            "Use HBeAg positivity alone to determine the exact oral drug and dose"
+          ],
+          "answer": 0,
+          "rationale": "Confirmed F2 fibrosis independently supports treatment consideration in the AASLD immune-tolerant recommendation. A younger age does not cancel that finding. Discuss risks, benefits and monitoring, then select therapy using the full patient context.",
+          "reviewHref": "#treatment-decision",
+          "difficulty": "advanced"
+        },
+        "sourceKeys": [
+          "AASLD2025slides",
+          "AASLD2025"
+        ],
+        "singleBestAnswerComparison": "Age 35 does not cancel confirmed F2; treatment discussion is best. Waiting for 40, normal-ALT dismissal and HBeAg-only dosing are wrong.",
+        "status": "passed"
+      },
+      {
+        "wholeQuestion": {
+          "id": "chronic-hepatitis-b-036",
+          "question": "Which error creates the greatest avoidable risk? Focus: who to treat.",
+          "choices": [
+            "Dismiss treatment in decompensated HBV cirrhosis because ALT is normal",
+            "Arrange oral antiviral treatment and specialist assessment for decompensated HBV cirrhosis",
+            "Evaluate other causes of elevated ALT when HBV DNA is low",
+            "Discuss treatment burden and follow-up when applying a conditional recommendation"
+          ],
+          "answer": 0,
+          "rationale": "Normal ALT does not negate the treatment indication in decompensated HBV cirrhosis. Oral antiviral treatment and specialist care address that indication; evaluating other injury causes and discussing treatment burden support appropriate care.",
+          "reviewHref": "#treatment-decision",
+          "difficulty": "advanced"
+        },
+        "sourceKeys": [
+          "AASLD2018"
+        ],
+        "singleBestAnswerComparison": "Normal-ALT dismissal in decompensation is an actual harmful action. All alternatives are protective assessment or care decisions.",
+        "status": "passed"
+      }
+    ],
+    "metadataAndCheck": {
+      "wholeLesson": {
+        "slug": "treatment-decision",
+        "title": "Treat Risk, Not One Threshold",
+        "visual": "chronic-hepatitis-b-treatment-decision",
+        "summary": "Treatment decisions combine viral activity, liver stage, host risk and prevention goals. Identify the AASLD/IDSA or WHO framework before applying its thresholds.",
+        "concepts": [
+          "Cirrhosis",
+          "Immune active",
+          "Indeterminate",
+          "Transmission",
+          "Shared decision"
+        ],
+        "application": "Document the indication, the named framework, fibrosis and viral findings, patient preferences, regimen constraints, and the follow-up plan if treatment is deferred.",
+        "keyPoints": [
+          "Decompensated cirrhosis warrants treatment regardless of HBV DNA or ALT.",
+          "AASLD immune-tolerant age, inflammation and fibrosis considerations use OR.",
+          "Shared decisions include treatment burden and continued monitoring.",
+          "WHO and AASLD use different ALT thresholds.",
+          "DNA suppression does not prove eradication or end indicated surveillance."
+        ],
+        "check": {
+          "question": "An HBsAg-positive adult has decompensated cirrhosis, normal ALT and low HBV DNA. Which treatment decision is best?",
+          "choices": [
+            "Arrange potent oral antiviral treatment and specialist care, including transplant evaluation when eligible",
+            "Defer therapy until ALT reaches twice the upper limit of normal",
+            "Use peginterferon to avoid long-term oral treatment",
+            "Exclude treatment because HBeAg is negative"
+          ],
+          "answer": 0,
+          "rationale": "AASLD recommends indefinite oral antiviral therapy in HBsAg-positive adults with decompensated cirrhosis regardless of HBV DNA, HBeAg or ALT. Peginterferon is contraindicated. Normal ALT and low DNA do not justify deferral; choose the oral agent for the patient and coordinate specialist care.",
+          "reviewHref": "#treatment-decision"
+        }
+      },
+      "comparison": "Clinical summary/application/key points align with seven teaching bodies. Embedded case has only the oral-antiviral/specialist option correct; threshold deferral, IFN and HBeAg exclusion are wrong. Correct answer remains 0; stable anchor preserved.",
+      "status": "passed"
+    },
+    "figure": {
+      "slug": "treatment-decision",
+      "caption": "Identify the treatment framework, then combine liver stage, viral activity, host risk and patient goals.",
+      "labels": [
+        "Cirrhosis",
+        "Activity",
+        "Risk",
+        "Goals"
+      ],
+      "meaning": "Conceptual summary of decision inputs, not an observed molecular structure or replacement for the guideline algorithm; other eleven labels/captions unchanged.",
+      "status": "source-aligned; rendered checks recorded separately"
+    },
+    "cumulativeComparisons": [
+      {
+        "before": {
+          "id": "cumulative-chronic-hepatitis-b-chronic-hepatitis-b-029",
+          "question": "Which statement is most accurate? Focus: treatment goals.",
+          "choices": [
+            "Current nucleos(t)ide analog therapy suppresses HBV replication and reduces progression risk but rarely eradicates covalently closed circular DNA.",
+            "Promising a routine short curative course can encourage unsafe discontinuation.",
+            "Assume viral suppression removes every need for monitoring, vaccination, or cancer surveillance.",
+            "Select therapy from drug name alone without kidney, bone, liver, pregnancy, resistance, coinfection, or adherence context."
+          ],
+          "answer": 0,
+          "rationale": "Current nucleos(t)ide analog therapy suppresses HBV replication and reduces progression risk but rarely eradicates covalently closed circular DNA. Set goals for durable DNA suppression, biochemical improvement, fibrosis protection, and prevention of cirrhosis, decompensation, transmission, and cancer.",
+          "reviewHref": "/learn/pharmacy/modules/chronic-hepatitis-b",
+          "difficulty": "foundational",
+          "module": "Chronic Hepatitis B"
+        },
+        "after": {
+          "id": "cumulative-chronic-hepatitis-b-chronic-hepatitis-b-029",
+          "question": "Which statement is most accurate? Focus: treatment goals.",
+          "choices": [
+            "Oral nucleos(t)ide analogs suppress replication; undetectable serum HBV DNA does not prove elimination of nuclear cccDNA",
+            "An undetectable serum HBV DNA result proves all infected hepatocytes have been cleared",
+            "Polymerase inhibition routinely produces rapid sterilizing cure of chronic HBV",
+            "Normal ALT after treatment establishes that HBV-related cancer risk is zero"
+          ],
+          "answer": 0,
+          "rationale": "Polymerase inhibition can suppress replication while the nuclear reservoir persists. Serum DNA, ALT and liver-risk assessment describe different outcomes; none alone establishes eradication or freedom from every future liver complication.",
+          "reviewHref": "/learn/pharmacy/modules/chronic-hepatitis-b",
+          "difficulty": "foundational",
+          "module": "Chronic Hepatitis B"
+        }
+      }
+    ],
+    "discrepancies": [
+      {
+        "topic": "Immune-tolerant age/fibrosis",
+        "secondary": "UW treatment prose says age over 40 AND significant inflammation/fibrosis, but its table says OR.",
+        "resolution": "Primary 2025 Recommendation 3 and official slide 20 use OR. Teach alternatives; do not reproduce restrictive summary."
+      },
+      {
+        "topic": "Exact age-40 boundary",
+        "primary": "2025 Recommendation 3 says over 40, while Figure 2 uses >=40.",
+        "resolution": "Lesson identifies the recommendation text. No age-exactly-40 quiz assertion. Boundary remains a guideline wording discrepancy for clinician judgment, not an invented unified threshold."
+      },
+      {
+        "topic": "Indeterminate monitoring interval",
+        "primary": "Recommendation 4 prose says 3-6 months first year; Figure 3 elevated-DNA subgroup uses 3 months.",
+        "resolution": "Teach both scopes explicitly."
+      },
+      {
+        "topic": "WHO current source",
+        "resolution": "2026 handbook Figure 5.1 retains 2024 eligibility. Original teaching added with current reference; module parent still awaits whole audit."
+      },
+      {
+        "topic": "Book coverage",
+        "resolution": "Printed 301/PDF309 is the HBV drug page, not a complete treatment-eligibility guideline. New pathways use user-approved primary sources with original teaching."
+      }
+    ],
+    "arithmetic": {
+      "status": "passed",
+      "AASLDTwiceALTULN": {
+        "male": 70,
+        "female": 50
+      },
+      "youngF2Case": "35 < 40; F2 qualifies independently",
+      "newDrugDoseCalculation": false
+    },
+    "scope": "One whole HBV treatment lesson, seven bodies, one check/metadata/figure, eight existing bank items and one inherited cumulative item. Full HBV/enteral/cirrhosis/fluid parents and Chapters 11/19 open.",
+    "privateSourcesOutsideGit": true
+  },
+  "priorEvidence": [
+    "enteral-nutrition-broader-hbv-polymerase-figure-review.json",
+    "enteral-nutrition-broader-hbv-serology-staging-review.json"
+  ],
+  "validation": {
+    "productionBuild": {
+      "status": "passed",
+      "exitCode": 0,
+      "pages": 567,
+      "bundler": "webpack",
+      "baseCommit": "dd68375005a5a1910975db097821d73dd19bc503"
+    },
+    "structure": {
+      "modules": 1,
+      "questions": 112,
+      "hardErrors": [],
+      "sourceGaps": [],
+      "sizeAdvisories": [],
+      "thinLessons": [],
+      "weakestModules": [
+        {
+          "module": "chronic-hepatitis-b",
+          "lessons": 12,
+          "questions": 112,
+          "minimumLessonCoverage": 8
+        }
+      ]
+    },
+    "objectPreservation": {
+      "status": "passed",
+      "moduleTotal": 232,
+      "questions": 112,
+      "bodies": 54,
+      "lessonsAndChecks": 12,
+      "stableIdsStemsKeysDifficultyAnchorsAndOrderPreserved": true,
+      "harmfulActionKeysRepaired": [
+        32,
+        36
+      ],
+      "other104WholeBankObjectsUnchanged": true,
+      "other47WholeBodiesElevenChecksMetadataUnchanged": true,
+      "other231WholeModulesUnchanged": true,
+      "other1179CumulativeObjectsUnchanged": true,
+      "associatedCumulativeObjectsRefined": [
+        {
+          "before": {
+            "id": "cumulative-chronic-hepatitis-b-chronic-hepatitis-b-029",
+            "question": "Which statement is most accurate? Focus: treatment goals.",
+            "choices": [
+              "Current nucleos(t)ide analog therapy suppresses HBV replication and reduces progression risk but rarely eradicates covalently closed circular DNA.",
+              "Promising a routine short curative course can encourage unsafe discontinuation.",
+              "Assume viral suppression removes every need for monitoring, vaccination, or cancer surveillance.",
+              "Select therapy from drug name alone without kidney, bone, liver, pregnancy, resistance, coinfection, or adherence context."
+            ],
+            "answer": 0,
+            "rationale": "Current nucleos(t)ide analog therapy suppresses HBV replication and reduces progression risk but rarely eradicates covalently closed circular DNA. Set goals for durable DNA suppression, biochemical improvement, fibrosis protection, and prevention of cirrhosis, decompensation, transmission, and cancer.",
+            "reviewHref": "/learn/pharmacy/modules/chronic-hepatitis-b",
+            "difficulty": "foundational",
+            "module": "Chronic Hepatitis B"
+          },
+          "after": {
+            "id": "cumulative-chronic-hepatitis-b-chronic-hepatitis-b-029",
+            "question": "Which statement is most accurate? Focus: treatment goals.",
+            "choices": [
+              "Oral nucleos(t)ide analogs suppress replication; undetectable serum HBV DNA does not prove elimination of nuclear cccDNA",
+              "An undetectable serum HBV DNA result proves all infected hepatocytes have been cleared",
+              "Polymerase inhibition routinely produces rapid sterilizing cure of chronic HBV",
+              "Normal ALT after treatment establishes that HBV-related cancer risk is zero"
+            ],
+            "answer": 0,
+            "rationale": "Polymerase inhibition can suppress replication while the nuclear reservoir persists. Serum DNA, ALT and liver-risk assessment describe different outcomes; none alone establishes eradication or freedom from every future liver complication.",
+            "reviewHref": "/learn/pharmacy/modules/chronic-hepatitis-b",
+            "difficulty": "foundational",
+            "module": "Chronic Hepatitis B"
+          }
+        }
+      ],
+      "wholeReviewedQuestions": 8,
+      "wholeReviewedBodies": 7,
+      "wholeReviewedChecks": 1,
+      "referencesAfter": 15,
+      "newIds": 0
+    },
+    "browser": {
+      "status": "passed",
+      "results": [
+        {
+          "width": 1440,
+          "bodiesExact": 54,
+          "all12LessonMetadataExact": true,
+          "all15ReferencesExact": true,
+          "allFourOptionsOfOneCheckGradedAndFeedbackExact": true,
+          "all8AnchoredWholeQuestionsShuffledChoicesCorrectAndIncorrectGradingFeedbackKeysAnchorsVerified": true,
+          "oneCumulativeQuestionCorrectIncorrectGradedAndExactBothWidths": true,
+          "cumulativeSeeds": [
+            {
+              "id": "cumulative-chronic-hepatitis-b-chronic-hepatitis-b-029",
+              "seed": 59
+            }
+          ],
+          "noHorizontalOverflow": true,
+          "attemptSeeds": [
+            47167,
+            33158
+          ],
+          "diagramResults": [
+            {
+              "width": 1440,
+              "diagrams": [
+                {
+                  "name": "Chronic hepatitis B visual: virus natural history",
+                  "caption": "A persistent nuclear reservoir, host injury and fibrosis explain continuing risk despite suppressed serum DNA.",
+                  "labels": [
+                    {
+                      "text": "HBV entry",
+                      "font": "14px",
+                      "class": "[font-size:32px] sm:[font-size:14px]",
+                      "screenSize": 20.810181451612902,
+                      "inside": true
+                    },
+                    {
+                      "text": "cccDNA",
+                      "font": "14px",
+                      "class": "[font-size:32px] sm:[font-size:14px]",
+                      "screenSize": 20.810181451612902,
+                      "inside": true
+                    },
+                    {
+                      "text": "Host injury",
+                      "font": "14px",
+                      "class": "[font-size:32px] sm:[font-size:14px]",
+                      "screenSize": 20.810181451612902,
+                      "inside": true
+                    },
+                    {
+                      "text": "Fibrosis",
+                      "font": "14px",
+                      "class": "[font-size:32px] sm:[font-size:14px]",
+                      "screenSize": 20.810181451612902,
+                      "inside": true
+                    }
+                  ]
+                },
+                {
+                  "name": "Chronic hepatitis B visual: screening serology",
+                  "caption": "Read surface antigen, surface antibody and total core antibody together; timing and immune status guide follow-up.",
+                  "labels": [
+                    {
+                      "text": "HBsAg",
+                      "font": "14px",
+                      "class": "[font-size:32px] sm:[font-size:14px]",
+                      "screenSize": 20.810181451612902,
+                      "inside": true
+                    },
+                    {
+                      "text": "Anti-HBs",
+                      "font": "14px",
+                      "class": "[font-size:32px] sm:[font-size:14px]",
+                      "screenSize": 20.810181451612902,
+                      "inside": true
+                    },
+                    {
+                      "text": "Total core",
+                      "font": "14px",
+                      "class": "[font-size:32px] sm:[font-size:14px]",
+                      "screenSize": 20.810181451612902,
+                      "inside": true
+                    },
+                    {
+                      "text": "Context",
+                      "font": "14px",
+                      "class": "[font-size:32px] sm:[font-size:14px]",
+                      "screenSize": 20.810181451612902,
+                      "inside": true
+                    }
+                  ]
+                },
+                {
+                  "name": "Chronic hepatitis B visual: phase staging",
+                  "caption": "Combine trends in ALT and HBV DNA with HBeAg and fibrosis; no single marker defines the whole phase.",
+                  "labels": [
+                    {
+                      "text": "ALT trend",
+                      "font": "14px",
+                      "class": "[font-size:32px] sm:[font-size:14px]",
+                      "screenSize": 20.810181451612902,
+                      "inside": true
+                    },
+                    {
+                      "text": "DNA trend",
+                      "font": "14px",
+                      "class": "[font-size:32px] sm:[font-size:14px]",
+                      "screenSize": 20.810181451612902,
+                      "inside": true
+                    },
+                    {
+                      "text": "HBeAg",
+                      "font": "14px",
+                      "class": "[font-size:32px] sm:[font-size:14px]",
+                      "screenSize": 20.810181451612902,
+                      "inside": true
+                    },
+                    {
+                      "text": "Fibrosis",
+                      "font": "14px",
+                      "class": "[font-size:32px] sm:[font-size:14px]",
+                      "screenSize": 20.810181451612902,
+                      "inside": true
+                    }
+                  ]
+                },
+                {
+                  "name": "Chronic hepatitis B visual: treatment decision",
+                  "caption": "Identify the treatment framework, then combine liver stage, viral activity, host risk and patient goals.",
+                  "labels": [
+                    {
+                      "text": "Cirrhosis",
+                      "font": "14px",
+                      "class": "[font-size:32px] sm:[font-size:14px]",
+                      "screenSize": 20.810181451612902,
+                      "inside": true
+                    },
+                    {
+                      "text": "Activity",
+                      "font": "14px",
+                      "class": "[font-size:32px] sm:[font-size:14px]",
+                      "screenSize": 20.810181451612902,
+                      "inside": true
+                    },
+                    {
+                      "text": "Risk",
+                      "font": "14px",
+                      "class": "[font-size:32px] sm:[font-size:14px]",
+                      "screenSize": 20.810181451612902,
+                      "inside": true
+                    },
+                    {
+                      "text": "Goals",
+                      "font": "14px",
+                      "class": "[font-size:32px] sm:[font-size:14px]",
+                      "screenSize": 20.810181451612902,
+                      "inside": true
+                    }
+                  ]
+                },
+                {
+                  "name": "Chronic hepatitis B visual: polymerase therapy",
+                  "caption": "Connect viral replication, immune injury, fibrosis, treatment, prevention, and long-term surveillance.",
+                  "labels": [
+                    {
+                      "text": "TDF",
+                      "font": "14px",
+                      "class": "[font-size:32px] sm:[font-size:14px]",
+                      "screenSize": 20.810181451612902,
+                      "inside": true
+                    },
+                    {
+                      "text": "TAF",
+                      "font": "14px",
+                      "class": "[font-size:32px] sm:[font-size:14px]",
+                      "screenSize": 20.810181451612902,
+                      "inside": true
+                    },
+                    {
+                      "text": "Entecavir",
+                      "font": "14px",
+                      "class": "[font-size:32px] sm:[font-size:14px]",
+                      "screenSize": 20.810181451612902,
+                      "inside": true
+                    },
+                    {
+                      "text": "Resistance",
+                      "font": "14px",
+                      "class": "[font-size:32px] sm:[font-size:14px]",
+                      "screenSize": 20.810181451612902,
+                      "inside": true
+                    }
+                  ]
+                },
+                {
+                  "name": "Chronic hepatitis B visual: peginterferon selection",
+                  "caption": "Connect viral replication, immune injury, fibrosis, treatment, prevention, and long-term surveillance.",
+                  "labels": [
+                    {
+                      "text": "Finite course",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 20.810181451612902,
+                      "inside": true
+                    },
+                    {
+                      "text": "Immune effect",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 20.810181451612902,
+                      "inside": true
+                    },
+                    {
+                      "text": "Toxicity",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 20.810181451612902,
+                      "inside": true
+                    },
+                    {
+                      "text": "Compensation",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 20.810181451612902,
+                      "inside": true
+                    }
+                  ]
+                },
+                {
+                  "name": "Chronic hepatitis B visual: special populations",
+                  "caption": "Connect viral replication, immune injury, fibrosis, treatment, prevention, and long-term surveillance.",
+                  "labels": [
+                    {
+                      "text": "Kidney",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 20.810181451612902,
+                      "inside": true
+                    },
+                    {
+                      "text": "Bone",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 20.810181451612902,
+                      "inside": true
+                    },
+                    {
+                      "text": "HIV",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 20.810181451612902,
+                      "inside": true
+                    },
+                    {
+                      "text": "Coinfection",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 20.810181451612902,
+                      "inside": true
+                    }
+                  ]
+                },
+                {
+                  "name": "Chronic hepatitis B visual: pregnancy infant",
+                  "caption": "Connect viral replication, immune injury, fibrosis, treatment, prevention, and long-term surveillance.",
+                  "labels": [
+                    {
+                      "text": "Maternal DNA",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 20.810181451612902,
+                      "inside": true
+                    },
+                    {
+                      "text": "Antiviral",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 20.810181451612902,
+                      "inside": true
+                    },
+                    {
+                      "text": "Vaccine and HBIG",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 20.810181451612902,
+                      "inside": true
+                    },
+                    {
+                      "text": "PVST",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 20.810181451612902,
+                      "inside": true
+                    }
+                  ]
+                },
+                {
+                  "name": "Chronic hepatitis B visual: monitoring stopping",
+                  "caption": "Connect viral replication, immune injury, fibrosis, treatment, prevention, and long-term surveillance.",
+                  "labels": [
+                    {
+                      "text": "DNA suppression",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 20.810181451612902,
+                      "inside": true
+                    },
+                    {
+                      "text": "Safety",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 20.810181451612902,
+                      "inside": true
+                    },
+                    {
+                      "text": "Adherence",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 20.810181451612902,
+                      "inside": true
+                    },
+                    {
+                      "text": "Flare",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 20.810181451612902,
+                      "inside": true
+                    }
+                  ]
+                },
+                {
+                  "name": "Chronic hepatitis B visual: reactivation",
+                  "caption": "Connect viral replication, immune injury, fibrosis, treatment, prevention, and long-term surveillance.",
+                  "labels": [
+                    {
+                      "text": "Triple panel",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 20.810181451612902,
+                      "inside": true
+                    },
+                    {
+                      "text": "Immunosuppression",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 20.810181451612902,
+                      "inside": true
+                    },
+                    {
+                      "text": "Prophylaxis",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 20.810181451612902,
+                      "inside": true
+                    },
+                    {
+                      "text": "Monitoring",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 20.810181451612902,
+                      "inside": true
+                    }
+                  ]
+                },
+                {
+                  "name": "Chronic hepatitis B visual: prevention surveillance",
+                  "caption": "Connect viral replication, immune injury, fibrosis, treatment, prevention, and long-term surveillance.",
+                  "labels": [
+                    {
+                      "text": "Vaccination",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 20.810181451612902,
+                      "inside": true
+                    },
+                    {
+                      "text": "Contacts",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 20.810181451612902,
+                      "inside": true
+                    },
+                    {
+                      "text": "HCC surveillance",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 20.810181451612902,
+                      "inside": true
+                    },
+                    {
+                      "text": "Linkage",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 20.810181451612902,
+                      "inside": true
+                    }
+                  ]
+                },
+                {
+                  "name": "Chronic hepatitis B visual: integrated case",
+                  "caption": "Connect viral replication, immune injury, fibrosis, treatment, prevention, and long-term surveillance.",
+                  "labels": [
+                    {
+                      "text": "Screen",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 20.810181451612902,
+                      "inside": true
+                    },
+                    {
+                      "text": "Stage",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 20.810181451612902,
+                      "inside": true
+                    },
+                    {
+                      "text": "Treat",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 20.810181451612902,
+                      "inside": true
+                    },
+                    {
+                      "text": "Follow",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 20.810181451612902,
+                      "inside": true
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "width": 390,
+          "bodiesExact": 54,
+          "all12LessonMetadataExact": true,
+          "all15ReferencesExact": true,
+          "allFourOptionsOfOneCheckGradedAndFeedbackExact": true,
+          "all8AnchoredWholeQuestionsShuffledChoicesCorrectAndIncorrectGradingFeedbackKeysAnchorsVerified": true,
+          "oneCumulativeQuestionCorrectIncorrectGradedAndExactBothWidths": true,
+          "cumulativeSeeds": [
+            {
+              "id": "cumulative-chronic-hepatitis-b-chronic-hepatitis-b-029",
+              "seed": 59
+            }
+          ],
+          "noHorizontalOverflow": true,
+          "attemptSeeds": [
+            47167,
+            33158
+          ],
+          "diagramResults": [
+            {
+              "width": 320,
+              "diagrams": [
+                {
+                  "name": "Chronic hepatitis B visual: virus natural history",
+                  "caption": "A persistent nuclear reservoir, host injury and fibrosis explain continuing risk despite suppressed serum DNA.",
+                  "labels": [
+                    {
+                      "text": "HBV entry",
+                      "font": "32px",
+                      "class": "[font-size:32px] sm:[font-size:14px]",
+                      "screenSize": 14.45,
+                      "inside": true
+                    },
+                    {
+                      "text": "cccDNA",
+                      "font": "32px",
+                      "class": "[font-size:32px] sm:[font-size:14px]",
+                      "screenSize": 14.45,
+                      "inside": true
+                    },
+                    {
+                      "text": "Host injury",
+                      "font": "32px",
+                      "class": "[font-size:32px] sm:[font-size:14px]",
+                      "screenSize": 14.45,
+                      "inside": true
+                    },
+                    {
+                      "text": "Fibrosis",
+                      "font": "32px",
+                      "class": "[font-size:32px] sm:[font-size:14px]",
+                      "screenSize": 14.45,
+                      "inside": true
+                    }
+                  ]
+                },
+                {
+                  "name": "Chronic hepatitis B visual: screening serology",
+                  "caption": "Read surface antigen, surface antibody and total core antibody together; timing and immune status guide follow-up.",
+                  "labels": [
+                    {
+                      "text": "HBsAg",
+                      "font": "32px",
+                      "class": "[font-size:32px] sm:[font-size:14px]",
+                      "screenSize": 14.45,
+                      "inside": true
+                    },
+                    {
+                      "text": "Anti-HBs",
+                      "font": "32px",
+                      "class": "[font-size:32px] sm:[font-size:14px]",
+                      "screenSize": 14.45,
+                      "inside": true
+                    },
+                    {
+                      "text": "Total core",
+                      "font": "32px",
+                      "class": "[font-size:32px] sm:[font-size:14px]",
+                      "screenSize": 14.45,
+                      "inside": true
+                    },
+                    {
+                      "text": "Context",
+                      "font": "32px",
+                      "class": "[font-size:32px] sm:[font-size:14px]",
+                      "screenSize": 14.45,
+                      "inside": true
+                    }
+                  ]
+                },
+                {
+                  "name": "Chronic hepatitis B visual: phase staging",
+                  "caption": "Combine trends in ALT and HBV DNA with HBeAg and fibrosis; no single marker defines the whole phase.",
+                  "labels": [
+                    {
+                      "text": "ALT trend",
+                      "font": "32px",
+                      "class": "[font-size:32px] sm:[font-size:14px]",
+                      "screenSize": 14.45,
+                      "inside": true
+                    },
+                    {
+                      "text": "DNA trend",
+                      "font": "32px",
+                      "class": "[font-size:32px] sm:[font-size:14px]",
+                      "screenSize": 14.45,
+                      "inside": true
+                    },
+                    {
+                      "text": "HBeAg",
+                      "font": "32px",
+                      "class": "[font-size:32px] sm:[font-size:14px]",
+                      "screenSize": 14.45,
+                      "inside": true
+                    },
+                    {
+                      "text": "Fibrosis",
+                      "font": "32px",
+                      "class": "[font-size:32px] sm:[font-size:14px]",
+                      "screenSize": 14.45,
+                      "inside": true
+                    }
+                  ]
+                },
+                {
+                  "name": "Chronic hepatitis B visual: treatment decision",
+                  "caption": "Identify the treatment framework, then combine liver stage, viral activity, host risk and patient goals.",
+                  "labels": [
+                    {
+                      "text": "Cirrhosis",
+                      "font": "32px",
+                      "class": "[font-size:32px] sm:[font-size:14px]",
+                      "screenSize": 14.45,
+                      "inside": true
+                    },
+                    {
+                      "text": "Activity",
+                      "font": "32px",
+                      "class": "[font-size:32px] sm:[font-size:14px]",
+                      "screenSize": 14.45,
+                      "inside": true
+                    },
+                    {
+                      "text": "Risk",
+                      "font": "32px",
+                      "class": "[font-size:32px] sm:[font-size:14px]",
+                      "screenSize": 14.45,
+                      "inside": true
+                    },
+                    {
+                      "text": "Goals",
+                      "font": "32px",
+                      "class": "[font-size:32px] sm:[font-size:14px]",
+                      "screenSize": 14.45,
+                      "inside": true
+                    }
+                  ]
+                },
+                {
+                  "name": "Chronic hepatitis B visual: polymerase therapy",
+                  "caption": "Connect viral replication, immune injury, fibrosis, treatment, prevention, and long-term surveillance.",
+                  "labels": [
+                    {
+                      "text": "TDF",
+                      "font": "32px",
+                      "class": "[font-size:32px] sm:[font-size:14px]",
+                      "screenSize": 14.45,
+                      "inside": true
+                    },
+                    {
+                      "text": "TAF",
+                      "font": "32px",
+                      "class": "[font-size:32px] sm:[font-size:14px]",
+                      "screenSize": 14.45,
+                      "inside": true
+                    },
+                    {
+                      "text": "Entecavir",
+                      "font": "32px",
+                      "class": "[font-size:32px] sm:[font-size:14px]",
+                      "screenSize": 14.45,
+                      "inside": true
+                    },
+                    {
+                      "text": "Resistance",
+                      "font": "32px",
+                      "class": "[font-size:32px] sm:[font-size:14px]",
+                      "screenSize": 14.45,
+                      "inside": true
+                    }
+                  ]
+                },
+                {
+                  "name": "Chronic hepatitis B visual: peginterferon selection",
+                  "caption": "Connect viral replication, immune injury, fibrosis, treatment, prevention, and long-term surveillance.",
+                  "labels": [
+                    {
+                      "text": "Finite course",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 6.3218749999999995,
+                      "inside": true
+                    },
+                    {
+                      "text": "Immune effect",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 6.3218749999999995,
+                      "inside": true
+                    },
+                    {
+                      "text": "Toxicity",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 6.3218749999999995,
+                      "inside": true
+                    },
+                    {
+                      "text": "Compensation",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 6.3218749999999995,
+                      "inside": true
+                    }
+                  ]
+                },
+                {
+                  "name": "Chronic hepatitis B visual: special populations",
+                  "caption": "Connect viral replication, immune injury, fibrosis, treatment, prevention, and long-term surveillance.",
+                  "labels": [
+                    {
+                      "text": "Kidney",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 6.3218749999999995,
+                      "inside": true
+                    },
+                    {
+                      "text": "Bone",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 6.3218749999999995,
+                      "inside": true
+                    },
+                    {
+                      "text": "HIV",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 6.3218749999999995,
+                      "inside": true
+                    },
+                    {
+                      "text": "Coinfection",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 6.3218749999999995,
+                      "inside": true
+                    }
+                  ]
+                },
+                {
+                  "name": "Chronic hepatitis B visual: pregnancy infant",
+                  "caption": "Connect viral replication, immune injury, fibrosis, treatment, prevention, and long-term surveillance.",
+                  "labels": [
+                    {
+                      "text": "Maternal DNA",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 6.3218749999999995,
+                      "inside": true
+                    },
+                    {
+                      "text": "Antiviral",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 6.3218749999999995,
+                      "inside": true
+                    },
+                    {
+                      "text": "Vaccine and HBIG",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 6.3218749999999995,
+                      "inside": true
+                    },
+                    {
+                      "text": "PVST",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 6.3218749999999995,
+                      "inside": true
+                    }
+                  ]
+                },
+                {
+                  "name": "Chronic hepatitis B visual: monitoring stopping",
+                  "caption": "Connect viral replication, immune injury, fibrosis, treatment, prevention, and long-term surveillance.",
+                  "labels": [
+                    {
+                      "text": "DNA suppression",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 6.3218749999999995,
+                      "inside": true
+                    },
+                    {
+                      "text": "Safety",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 6.3218749999999995,
+                      "inside": true
+                    },
+                    {
+                      "text": "Adherence",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 6.3218749999999995,
+                      "inside": true
+                    },
+                    {
+                      "text": "Flare",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 6.3218749999999995,
+                      "inside": true
+                    }
+                  ]
+                },
+                {
+                  "name": "Chronic hepatitis B visual: reactivation",
+                  "caption": "Connect viral replication, immune injury, fibrosis, treatment, prevention, and long-term surveillance.",
+                  "labels": [
+                    {
+                      "text": "Triple panel",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 6.3218749999999995,
+                      "inside": true
+                    },
+                    {
+                      "text": "Immunosuppression",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 6.3218749999999995,
+                      "inside": true
+                    },
+                    {
+                      "text": "Prophylaxis",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 6.3218749999999995,
+                      "inside": true
+                    },
+                    {
+                      "text": "Monitoring",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 6.3218749999999995,
+                      "inside": true
+                    }
+                  ]
+                },
+                {
+                  "name": "Chronic hepatitis B visual: prevention surveillance",
+                  "caption": "Connect viral replication, immune injury, fibrosis, treatment, prevention, and long-term surveillance.",
+                  "labels": [
+                    {
+                      "text": "Vaccination",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 6.3218749999999995,
+                      "inside": true
+                    },
+                    {
+                      "text": "Contacts",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 6.3218749999999995,
+                      "inside": true
+                    },
+                    {
+                      "text": "HCC surveillance",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 6.3218749999999995,
+                      "inside": true
+                    },
+                    {
+                      "text": "Linkage",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 6.3218749999999995,
+                      "inside": true
+                    }
+                  ]
+                },
+                {
+                  "name": "Chronic hepatitis B visual: integrated case",
+                  "caption": "Connect viral replication, immune injury, fibrosis, treatment, prevention, and long-term surveillance.",
+                  "labels": [
+                    {
+                      "text": "Screen",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 6.3218749999999995,
+                      "inside": true
+                    },
+                    {
+                      "text": "Stage",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 6.3218749999999995,
+                      "inside": true
+                    },
+                    {
+                      "text": "Treat",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 6.3218749999999995,
+                      "inside": true
+                    },
+                    {
+                      "text": "Follow",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 6.3218749999999995,
+                      "inside": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "width": 390,
+              "diagrams": [
+                {
+                  "name": "Chronic hepatitis B visual: virus natural history",
+                  "caption": "A persistent nuclear reservoir, host injury and fibrosis explain continuing risk despite suppressed serum DNA.",
+                  "labels": [
+                    {
+                      "text": "HBV entry",
+                      "font": "32px",
+                      "class": "[font-size:32px] sm:[font-size:14px]",
+                      "screenSize": 18.06290322580645,
+                      "inside": true
+                    },
+                    {
+                      "text": "cccDNA",
+                      "font": "32px",
+                      "class": "[font-size:32px] sm:[font-size:14px]",
+                      "screenSize": 18.06290322580645,
+                      "inside": true
+                    },
+                    {
+                      "text": "Host injury",
+                      "font": "32px",
+                      "class": "[font-size:32px] sm:[font-size:14px]",
+                      "screenSize": 18.06290322580645,
+                      "inside": true
+                    },
+                    {
+                      "text": "Fibrosis",
+                      "font": "32px",
+                      "class": "[font-size:32px] sm:[font-size:14px]",
+                      "screenSize": 18.06290322580645,
+                      "inside": true
+                    }
+                  ]
+                },
+                {
+                  "name": "Chronic hepatitis B visual: screening serology",
+                  "caption": "Read surface antigen, surface antibody and total core antibody together; timing and immune status guide follow-up.",
+                  "labels": [
+                    {
+                      "text": "HBsAg",
+                      "font": "32px",
+                      "class": "[font-size:32px] sm:[font-size:14px]",
+                      "screenSize": 18.06290322580645,
+                      "inside": true
+                    },
+                    {
+                      "text": "Anti-HBs",
+                      "font": "32px",
+                      "class": "[font-size:32px] sm:[font-size:14px]",
+                      "screenSize": 18.06290322580645,
+                      "inside": true
+                    },
+                    {
+                      "text": "Total core",
+                      "font": "32px",
+                      "class": "[font-size:32px] sm:[font-size:14px]",
+                      "screenSize": 18.06290322580645,
+                      "inside": true
+                    },
+                    {
+                      "text": "Context",
+                      "font": "32px",
+                      "class": "[font-size:32px] sm:[font-size:14px]",
+                      "screenSize": 18.06290322580645,
+                      "inside": true
+                    }
+                  ]
+                },
+                {
+                  "name": "Chronic hepatitis B visual: phase staging",
+                  "caption": "Combine trends in ALT and HBV DNA with HBeAg and fibrosis; no single marker defines the whole phase.",
+                  "labels": [
+                    {
+                      "text": "ALT trend",
+                      "font": "32px",
+                      "class": "[font-size:32px] sm:[font-size:14px]",
+                      "screenSize": 18.06290322580645,
+                      "inside": true
+                    },
+                    {
+                      "text": "DNA trend",
+                      "font": "32px",
+                      "class": "[font-size:32px] sm:[font-size:14px]",
+                      "screenSize": 18.06290322580645,
+                      "inside": true
+                    },
+                    {
+                      "text": "HBeAg",
+                      "font": "32px",
+                      "class": "[font-size:32px] sm:[font-size:14px]",
+                      "screenSize": 18.06290322580645,
+                      "inside": true
+                    },
+                    {
+                      "text": "Fibrosis",
+                      "font": "32px",
+                      "class": "[font-size:32px] sm:[font-size:14px]",
+                      "screenSize": 18.06290322580645,
+                      "inside": true
+                    }
+                  ]
+                },
+                {
+                  "name": "Chronic hepatitis B visual: treatment decision",
+                  "caption": "Identify the treatment framework, then combine liver stage, viral activity, host risk and patient goals.",
+                  "labels": [
+                    {
+                      "text": "Cirrhosis",
+                      "font": "32px",
+                      "class": "[font-size:32px] sm:[font-size:14px]",
+                      "screenSize": 18.06290322580645,
+                      "inside": true
+                    },
+                    {
+                      "text": "Activity",
+                      "font": "32px",
+                      "class": "[font-size:32px] sm:[font-size:14px]",
+                      "screenSize": 18.06290322580645,
+                      "inside": true
+                    },
+                    {
+                      "text": "Risk",
+                      "font": "32px",
+                      "class": "[font-size:32px] sm:[font-size:14px]",
+                      "screenSize": 18.06290322580645,
+                      "inside": true
+                    },
+                    {
+                      "text": "Goals",
+                      "font": "32px",
+                      "class": "[font-size:32px] sm:[font-size:14px]",
+                      "screenSize": 18.06290322580645,
+                      "inside": true
+                    }
+                  ]
+                },
+                {
+                  "name": "Chronic hepatitis B visual: polymerase therapy",
+                  "caption": "Connect viral replication, immune injury, fibrosis, treatment, prevention, and long-term surveillance.",
+                  "labels": [
+                    {
+                      "text": "TDF",
+                      "font": "32px",
+                      "class": "[font-size:32px] sm:[font-size:14px]",
+                      "screenSize": 18.06290322580645,
+                      "inside": true
+                    },
+                    {
+                      "text": "TAF",
+                      "font": "32px",
+                      "class": "[font-size:32px] sm:[font-size:14px]",
+                      "screenSize": 18.06290322580645,
+                      "inside": true
+                    },
+                    {
+                      "text": "Entecavir",
+                      "font": "32px",
+                      "class": "[font-size:32px] sm:[font-size:14px]",
+                      "screenSize": 18.06290322580645,
+                      "inside": true
+                    },
+                    {
+                      "text": "Resistance",
+                      "font": "32px",
+                      "class": "[font-size:32px] sm:[font-size:14px]",
+                      "screenSize": 18.06290322580645,
+                      "inside": true
+                    }
+                  ]
+                },
+                {
+                  "name": "Chronic hepatitis B visual: peginterferon selection",
+                  "caption": "Connect viral replication, immune injury, fibrosis, treatment, prevention, and long-term surveillance.",
+                  "labels": [
+                    {
+                      "text": "Finite course",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 7.902520161290322,
+                      "inside": true
+                    },
+                    {
+                      "text": "Immune effect",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 7.902520161290322,
+                      "inside": true
+                    },
+                    {
+                      "text": "Toxicity",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 7.902520161290322,
+                      "inside": true
+                    },
+                    {
+                      "text": "Compensation",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 7.902520161290322,
+                      "inside": true
+                    }
+                  ]
+                },
+                {
+                  "name": "Chronic hepatitis B visual: special populations",
+                  "caption": "Connect viral replication, immune injury, fibrosis, treatment, prevention, and long-term surveillance.",
+                  "labels": [
+                    {
+                      "text": "Kidney",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 7.902520161290322,
+                      "inside": true
+                    },
+                    {
+                      "text": "Bone",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 7.902520161290322,
+                      "inside": true
+                    },
+                    {
+                      "text": "HIV",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 7.902520161290322,
+                      "inside": true
+                    },
+                    {
+                      "text": "Coinfection",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 7.902520161290322,
+                      "inside": true
+                    }
+                  ]
+                },
+                {
+                  "name": "Chronic hepatitis B visual: pregnancy infant",
+                  "caption": "Connect viral replication, immune injury, fibrosis, treatment, prevention, and long-term surveillance.",
+                  "labels": [
+                    {
+                      "text": "Maternal DNA",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 7.902520161290322,
+                      "inside": true
+                    },
+                    {
+                      "text": "Antiviral",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 7.902520161290322,
+                      "inside": true
+                    },
+                    {
+                      "text": "Vaccine and HBIG",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 7.902520161290322,
+                      "inside": true
+                    },
+                    {
+                      "text": "PVST",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 7.902520161290322,
+                      "inside": true
+                    }
+                  ]
+                },
+                {
+                  "name": "Chronic hepatitis B visual: monitoring stopping",
+                  "caption": "Connect viral replication, immune injury, fibrosis, treatment, prevention, and long-term surveillance.",
+                  "labels": [
+                    {
+                      "text": "DNA suppression",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 7.902520161290322,
+                      "inside": true
+                    },
+                    {
+                      "text": "Safety",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 7.902520161290322,
+                      "inside": true
+                    },
+                    {
+                      "text": "Adherence",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 7.902520161290322,
+                      "inside": true
+                    },
+                    {
+                      "text": "Flare",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 7.902520161290322,
+                      "inside": true
+                    }
+                  ]
+                },
+                {
+                  "name": "Chronic hepatitis B visual: reactivation",
+                  "caption": "Connect viral replication, immune injury, fibrosis, treatment, prevention, and long-term surveillance.",
+                  "labels": [
+                    {
+                      "text": "Triple panel",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 7.902520161290322,
+                      "inside": true
+                    },
+                    {
+                      "text": "Immunosuppression",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 7.902520161290322,
+                      "inside": true
+                    },
+                    {
+                      "text": "Prophylaxis",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 7.902520161290322,
+                      "inside": true
+                    },
+                    {
+                      "text": "Monitoring",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 7.902520161290322,
+                      "inside": true
+                    }
+                  ]
+                },
+                {
+                  "name": "Chronic hepatitis B visual: prevention surveillance",
+                  "caption": "Connect viral replication, immune injury, fibrosis, treatment, prevention, and long-term surveillance.",
+                  "labels": [
+                    {
+                      "text": "Vaccination",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 7.902520161290322,
+                      "inside": true
+                    },
+                    {
+                      "text": "Contacts",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 7.902520161290322,
+                      "inside": true
+                    },
+                    {
+                      "text": "HCC surveillance",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 7.902520161290322,
+                      "inside": true
+                    },
+                    {
+                      "text": "Linkage",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 7.902520161290322,
+                      "inside": true
+                    }
+                  ]
+                },
+                {
+                  "name": "Chronic hepatitis B visual: integrated case",
+                  "caption": "Connect viral replication, immune injury, fibrosis, treatment, prevention, and long-term surveillance.",
+                  "labels": [
+                    {
+                      "text": "Screen",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 7.902520161290322,
+                      "inside": true
+                    },
+                    {
+                      "text": "Stage",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 7.902520161290322,
+                      "inside": true
+                    },
+                    {
+                      "text": "Treat",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 7.902520161290322,
+                      "inside": true
+                    },
+                    {
+                      "text": "Follow",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 7.902520161290322,
+                      "inside": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "width": 639,
+              "diagrams": [
+                {
+                  "name": "Chronic hepatitis B visual: virus natural history",
+                  "caption": "A persistent nuclear reservoir, host injury and fibrosis explain continuing risk despite suppressed serum DNA.",
+                  "labels": [
+                    {
+                      "text": "HBV entry",
+                      "font": "32px",
+                      "class": "[font-size:32px] sm:[font-size:14px]",
+                      "screenSize": 30.341129032258063,
+                      "inside": true
+                    },
+                    {
+                      "text": "cccDNA",
+                      "font": "32px",
+                      "class": "[font-size:32px] sm:[font-size:14px]",
+                      "screenSize": 30.341129032258063,
+                      "inside": true
+                    },
+                    {
+                      "text": "Host injury",
+                      "font": "32px",
+                      "class": "[font-size:32px] sm:[font-size:14px]",
+                      "screenSize": 30.341129032258063,
+                      "inside": true
+                    },
+                    {
+                      "text": "Fibrosis",
+                      "font": "32px",
+                      "class": "[font-size:32px] sm:[font-size:14px]",
+                      "screenSize": 30.341129032258063,
+                      "inside": true
+                    }
+                  ]
+                },
+                {
+                  "name": "Chronic hepatitis B visual: screening serology",
+                  "caption": "Read surface antigen, surface antibody and total core antibody together; timing and immune status guide follow-up.",
+                  "labels": [
+                    {
+                      "text": "HBsAg",
+                      "font": "32px",
+                      "class": "[font-size:32px] sm:[font-size:14px]",
+                      "screenSize": 30.341129032258063,
+                      "inside": true
+                    },
+                    {
+                      "text": "Anti-HBs",
+                      "font": "32px",
+                      "class": "[font-size:32px] sm:[font-size:14px]",
+                      "screenSize": 30.341129032258063,
+                      "inside": true
+                    },
+                    {
+                      "text": "Total core",
+                      "font": "32px",
+                      "class": "[font-size:32px] sm:[font-size:14px]",
+                      "screenSize": 30.341129032258063,
+                      "inside": true
+                    },
+                    {
+                      "text": "Context",
+                      "font": "32px",
+                      "class": "[font-size:32px] sm:[font-size:14px]",
+                      "screenSize": 30.341129032258063,
+                      "inside": true
+                    }
+                  ]
+                },
+                {
+                  "name": "Chronic hepatitis B visual: phase staging",
+                  "caption": "Combine trends in ALT and HBV DNA with HBeAg and fibrosis; no single marker defines the whole phase.",
+                  "labels": [
+                    {
+                      "text": "ALT trend",
+                      "font": "32px",
+                      "class": "[font-size:32px] sm:[font-size:14px]",
+                      "screenSize": 30.341129032258063,
+                      "inside": true
+                    },
+                    {
+                      "text": "DNA trend",
+                      "font": "32px",
+                      "class": "[font-size:32px] sm:[font-size:14px]",
+                      "screenSize": 30.341129032258063,
+                      "inside": true
+                    },
+                    {
+                      "text": "HBeAg",
+                      "font": "32px",
+                      "class": "[font-size:32px] sm:[font-size:14px]",
+                      "screenSize": 30.341129032258063,
+                      "inside": true
+                    },
+                    {
+                      "text": "Fibrosis",
+                      "font": "32px",
+                      "class": "[font-size:32px] sm:[font-size:14px]",
+                      "screenSize": 30.341129032258063,
+                      "inside": true
+                    }
+                  ]
+                },
+                {
+                  "name": "Chronic hepatitis B visual: treatment decision",
+                  "caption": "Identify the treatment framework, then combine liver stage, viral activity, host risk and patient goals.",
+                  "labels": [
+                    {
+                      "text": "Cirrhosis",
+                      "font": "32px",
+                      "class": "[font-size:32px] sm:[font-size:14px]",
+                      "screenSize": 30.341129032258063,
+                      "inside": true
+                    },
+                    {
+                      "text": "Activity",
+                      "font": "32px",
+                      "class": "[font-size:32px] sm:[font-size:14px]",
+                      "screenSize": 30.341129032258063,
+                      "inside": true
+                    },
+                    {
+                      "text": "Risk",
+                      "font": "32px",
+                      "class": "[font-size:32px] sm:[font-size:14px]",
+                      "screenSize": 30.341129032258063,
+                      "inside": true
+                    },
+                    {
+                      "text": "Goals",
+                      "font": "32px",
+                      "class": "[font-size:32px] sm:[font-size:14px]",
+                      "screenSize": 30.341129032258063,
+                      "inside": true
+                    }
+                  ]
+                },
+                {
+                  "name": "Chronic hepatitis B visual: polymerase therapy",
+                  "caption": "Connect viral replication, immune injury, fibrosis, treatment, prevention, and long-term surveillance.",
+                  "labels": [
+                    {
+                      "text": "TDF",
+                      "font": "32px",
+                      "class": "[font-size:32px] sm:[font-size:14px]",
+                      "screenSize": 30.341129032258063,
+                      "inside": true
+                    },
+                    {
+                      "text": "TAF",
+                      "font": "32px",
+                      "class": "[font-size:32px] sm:[font-size:14px]",
+                      "screenSize": 30.341129032258063,
+                      "inside": true
+                    },
+                    {
+                      "text": "Entecavir",
+                      "font": "32px",
+                      "class": "[font-size:32px] sm:[font-size:14px]",
+                      "screenSize": 30.341129032258063,
+                      "inside": true
+                    },
+                    {
+                      "text": "Resistance",
+                      "font": "32px",
+                      "class": "[font-size:32px] sm:[font-size:14px]",
+                      "screenSize": 30.341129032258063,
+                      "inside": true
+                    }
+                  ]
+                },
+                {
+                  "name": "Chronic hepatitis B visual: peginterferon selection",
+                  "caption": "Connect viral replication, immune injury, fibrosis, treatment, prevention, and long-term surveillance.",
+                  "labels": [
+                    {
+                      "text": "Finite course",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 13.274243951612902,
+                      "inside": true
+                    },
+                    {
+                      "text": "Immune effect",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 13.274243951612902,
+                      "inside": true
+                    },
+                    {
+                      "text": "Toxicity",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 13.274243951612902,
+                      "inside": true
+                    },
+                    {
+                      "text": "Compensation",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 13.274243951612902,
+                      "inside": true
+                    }
+                  ]
+                },
+                {
+                  "name": "Chronic hepatitis B visual: special populations",
+                  "caption": "Connect viral replication, immune injury, fibrosis, treatment, prevention, and long-term surveillance.",
+                  "labels": [
+                    {
+                      "text": "Kidney",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 13.274243951612902,
+                      "inside": true
+                    },
+                    {
+                      "text": "Bone",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 13.274243951612902,
+                      "inside": true
+                    },
+                    {
+                      "text": "HIV",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 13.274243951612902,
+                      "inside": true
+                    },
+                    {
+                      "text": "Coinfection",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 13.274243951612902,
+                      "inside": true
+                    }
+                  ]
+                },
+                {
+                  "name": "Chronic hepatitis B visual: pregnancy infant",
+                  "caption": "Connect viral replication, immune injury, fibrosis, treatment, prevention, and long-term surveillance.",
+                  "labels": [
+                    {
+                      "text": "Maternal DNA",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 13.274243951612902,
+                      "inside": true
+                    },
+                    {
+                      "text": "Antiviral",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 13.274243951612902,
+                      "inside": true
+                    },
+                    {
+                      "text": "Vaccine and HBIG",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 13.274243951612902,
+                      "inside": true
+                    },
+                    {
+                      "text": "PVST",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 13.274243951612902,
+                      "inside": true
+                    }
+                  ]
+                },
+                {
+                  "name": "Chronic hepatitis B visual: monitoring stopping",
+                  "caption": "Connect viral replication, immune injury, fibrosis, treatment, prevention, and long-term surveillance.",
+                  "labels": [
+                    {
+                      "text": "DNA suppression",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 13.274243951612902,
+                      "inside": true
+                    },
+                    {
+                      "text": "Safety",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 13.274243951612902,
+                      "inside": true
+                    },
+                    {
+                      "text": "Adherence",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 13.274243951612902,
+                      "inside": true
+                    },
+                    {
+                      "text": "Flare",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 13.274243951612902,
+                      "inside": true
+                    }
+                  ]
+                },
+                {
+                  "name": "Chronic hepatitis B visual: reactivation",
+                  "caption": "Connect viral replication, immune injury, fibrosis, treatment, prevention, and long-term surveillance.",
+                  "labels": [
+                    {
+                      "text": "Triple panel",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 13.274243951612902,
+                      "inside": true
+                    },
+                    {
+                      "text": "Immunosuppression",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 13.274243951612902,
+                      "inside": true
+                    },
+                    {
+                      "text": "Prophylaxis",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 13.274243951612902,
+                      "inside": true
+                    },
+                    {
+                      "text": "Monitoring",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 13.274243951612902,
+                      "inside": true
+                    }
+                  ]
+                },
+                {
+                  "name": "Chronic hepatitis B visual: prevention surveillance",
+                  "caption": "Connect viral replication, immune injury, fibrosis, treatment, prevention, and long-term surveillance.",
+                  "labels": [
+                    {
+                      "text": "Vaccination",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 13.274243951612902,
+                      "inside": true
+                    },
+                    {
+                      "text": "Contacts",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 13.274243951612902,
+                      "inside": true
+                    },
+                    {
+                      "text": "HCC surveillance",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 13.274243951612902,
+                      "inside": true
+                    },
+                    {
+                      "text": "Linkage",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 13.274243951612902,
+                      "inside": true
+                    }
+                  ]
+                },
+                {
+                  "name": "Chronic hepatitis B visual: integrated case",
+                  "caption": "Connect viral replication, immune injury, fibrosis, treatment, prevention, and long-term surveillance.",
+                  "labels": [
+                    {
+                      "text": "Screen",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 13.274243951612902,
+                      "inside": true
+                    },
+                    {
+                      "text": "Stage",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 13.274243951612902,
+                      "inside": true
+                    },
+                    {
+                      "text": "Treat",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 13.274243951612902,
+                      "inside": true
+                    },
+                    {
+                      "text": "Follow",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 13.274243951612902,
+                      "inside": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "width": 640,
+              "diagrams": [
+                {
+                  "name": "Chronic hepatitis B visual: virus natural history",
+                  "caption": "A persistent nuclear reservoir, host injury and fibrosis explain continuing risk despite suppressed serum DNA.",
+                  "labels": [
+                    {
+                      "text": "HBV entry",
+                      "font": "14px",
+                      "class": "[font-size:32px] sm:[font-size:14px]",
+                      "screenSize": 13.294707661290323,
+                      "inside": true
+                    },
+                    {
+                      "text": "cccDNA",
+                      "font": "14px",
+                      "class": "[font-size:32px] sm:[font-size:14px]",
+                      "screenSize": 13.294707661290323,
+                      "inside": true
+                    },
+                    {
+                      "text": "Host injury",
+                      "font": "14px",
+                      "class": "[font-size:32px] sm:[font-size:14px]",
+                      "screenSize": 13.294707661290323,
+                      "inside": true
+                    },
+                    {
+                      "text": "Fibrosis",
+                      "font": "14px",
+                      "class": "[font-size:32px] sm:[font-size:14px]",
+                      "screenSize": 13.294707661290323,
+                      "inside": true
+                    }
+                  ]
+                },
+                {
+                  "name": "Chronic hepatitis B visual: screening serology",
+                  "caption": "Read surface antigen, surface antibody and total core antibody together; timing and immune status guide follow-up.",
+                  "labels": [
+                    {
+                      "text": "HBsAg",
+                      "font": "14px",
+                      "class": "[font-size:32px] sm:[font-size:14px]",
+                      "screenSize": 13.294707661290323,
+                      "inside": true
+                    },
+                    {
+                      "text": "Anti-HBs",
+                      "font": "14px",
+                      "class": "[font-size:32px] sm:[font-size:14px]",
+                      "screenSize": 13.294707661290323,
+                      "inside": true
+                    },
+                    {
+                      "text": "Total core",
+                      "font": "14px",
+                      "class": "[font-size:32px] sm:[font-size:14px]",
+                      "screenSize": 13.294707661290323,
+                      "inside": true
+                    },
+                    {
+                      "text": "Context",
+                      "font": "14px",
+                      "class": "[font-size:32px] sm:[font-size:14px]",
+                      "screenSize": 13.294707661290323,
+                      "inside": true
+                    }
+                  ]
+                },
+                {
+                  "name": "Chronic hepatitis B visual: phase staging",
+                  "caption": "Combine trends in ALT and HBV DNA with HBeAg and fibrosis; no single marker defines the whole phase.",
+                  "labels": [
+                    {
+                      "text": "ALT trend",
+                      "font": "14px",
+                      "class": "[font-size:32px] sm:[font-size:14px]",
+                      "screenSize": 13.294707661290323,
+                      "inside": true
+                    },
+                    {
+                      "text": "DNA trend",
+                      "font": "14px",
+                      "class": "[font-size:32px] sm:[font-size:14px]",
+                      "screenSize": 13.294707661290323,
+                      "inside": true
+                    },
+                    {
+                      "text": "HBeAg",
+                      "font": "14px",
+                      "class": "[font-size:32px] sm:[font-size:14px]",
+                      "screenSize": 13.294707661290323,
+                      "inside": true
+                    },
+                    {
+                      "text": "Fibrosis",
+                      "font": "14px",
+                      "class": "[font-size:32px] sm:[font-size:14px]",
+                      "screenSize": 13.294707661290323,
+                      "inside": true
+                    }
+                  ]
+                },
+                {
+                  "name": "Chronic hepatitis B visual: treatment decision",
+                  "caption": "Identify the treatment framework, then combine liver stage, viral activity, host risk and patient goals.",
+                  "labels": [
+                    {
+                      "text": "Cirrhosis",
+                      "font": "14px",
+                      "class": "[font-size:32px] sm:[font-size:14px]",
+                      "screenSize": 13.294707661290323,
+                      "inside": true
+                    },
+                    {
+                      "text": "Activity",
+                      "font": "14px",
+                      "class": "[font-size:32px] sm:[font-size:14px]",
+                      "screenSize": 13.294707661290323,
+                      "inside": true
+                    },
+                    {
+                      "text": "Risk",
+                      "font": "14px",
+                      "class": "[font-size:32px] sm:[font-size:14px]",
+                      "screenSize": 13.294707661290323,
+                      "inside": true
+                    },
+                    {
+                      "text": "Goals",
+                      "font": "14px",
+                      "class": "[font-size:32px] sm:[font-size:14px]",
+                      "screenSize": 13.294707661290323,
+                      "inside": true
+                    }
+                  ]
+                },
+                {
+                  "name": "Chronic hepatitis B visual: polymerase therapy",
+                  "caption": "Connect viral replication, immune injury, fibrosis, treatment, prevention, and long-term surveillance.",
+                  "labels": [
+                    {
+                      "text": "TDF",
+                      "font": "14px",
+                      "class": "[font-size:32px] sm:[font-size:14px]",
+                      "screenSize": 13.294707661290323,
+                      "inside": true
+                    },
+                    {
+                      "text": "TAF",
+                      "font": "14px",
+                      "class": "[font-size:32px] sm:[font-size:14px]",
+                      "screenSize": 13.294707661290323,
+                      "inside": true
+                    },
+                    {
+                      "text": "Entecavir",
+                      "font": "14px",
+                      "class": "[font-size:32px] sm:[font-size:14px]",
+                      "screenSize": 13.294707661290323,
+                      "inside": true
+                    },
+                    {
+                      "text": "Resistance",
+                      "font": "14px",
+                      "class": "[font-size:32px] sm:[font-size:14px]",
+                      "screenSize": 13.294707661290323,
+                      "inside": true
+                    }
+                  ]
+                },
+                {
+                  "name": "Chronic hepatitis B visual: peginterferon selection",
+                  "caption": "Connect viral replication, immune injury, fibrosis, treatment, prevention, and long-term surveillance.",
+                  "labels": [
+                    {
+                      "text": "Finite course",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 13.294707661290323,
+                      "inside": true
+                    },
+                    {
+                      "text": "Immune effect",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 13.294707661290323,
+                      "inside": true
+                    },
+                    {
+                      "text": "Toxicity",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 13.294707661290323,
+                      "inside": true
+                    },
+                    {
+                      "text": "Compensation",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 13.294707661290323,
+                      "inside": true
+                    }
+                  ]
+                },
+                {
+                  "name": "Chronic hepatitis B visual: special populations",
+                  "caption": "Connect viral replication, immune injury, fibrosis, treatment, prevention, and long-term surveillance.",
+                  "labels": [
+                    {
+                      "text": "Kidney",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 13.294707661290323,
+                      "inside": true
+                    },
+                    {
+                      "text": "Bone",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 13.294707661290323,
+                      "inside": true
+                    },
+                    {
+                      "text": "HIV",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 13.294707661290323,
+                      "inside": true
+                    },
+                    {
+                      "text": "Coinfection",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 13.294707661290323,
+                      "inside": true
+                    }
+                  ]
+                },
+                {
+                  "name": "Chronic hepatitis B visual: pregnancy infant",
+                  "caption": "Connect viral replication, immune injury, fibrosis, treatment, prevention, and long-term surveillance.",
+                  "labels": [
+                    {
+                      "text": "Maternal DNA",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 13.294707661290323,
+                      "inside": true
+                    },
+                    {
+                      "text": "Antiviral",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 13.294707661290323,
+                      "inside": true
+                    },
+                    {
+                      "text": "Vaccine and HBIG",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 13.294707661290323,
+                      "inside": true
+                    },
+                    {
+                      "text": "PVST",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 13.294707661290323,
+                      "inside": true
+                    }
+                  ]
+                },
+                {
+                  "name": "Chronic hepatitis B visual: monitoring stopping",
+                  "caption": "Connect viral replication, immune injury, fibrosis, treatment, prevention, and long-term surveillance.",
+                  "labels": [
+                    {
+                      "text": "DNA suppression",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 13.294707661290323,
+                      "inside": true
+                    },
+                    {
+                      "text": "Safety",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 13.294707661290323,
+                      "inside": true
+                    },
+                    {
+                      "text": "Adherence",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 13.294707661290323,
+                      "inside": true
+                    },
+                    {
+                      "text": "Flare",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 13.294707661290323,
+                      "inside": true
+                    }
+                  ]
+                },
+                {
+                  "name": "Chronic hepatitis B visual: reactivation",
+                  "caption": "Connect viral replication, immune injury, fibrosis, treatment, prevention, and long-term surveillance.",
+                  "labels": [
+                    {
+                      "text": "Triple panel",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 13.294707661290323,
+                      "inside": true
+                    },
+                    {
+                      "text": "Immunosuppression",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 13.294707661290323,
+                      "inside": true
+                    },
+                    {
+                      "text": "Prophylaxis",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 13.294707661290323,
+                      "inside": true
+                    },
+                    {
+                      "text": "Monitoring",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 13.294707661290323,
+                      "inside": true
+                    }
+                  ]
+                },
+                {
+                  "name": "Chronic hepatitis B visual: prevention surveillance",
+                  "caption": "Connect viral replication, immune injury, fibrosis, treatment, prevention, and long-term surveillance.",
+                  "labels": [
+                    {
+                      "text": "Vaccination",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 13.294707661290323,
+                      "inside": true
+                    },
+                    {
+                      "text": "Contacts",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 13.294707661290323,
+                      "inside": true
+                    },
+                    {
+                      "text": "HCC surveillance",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 13.294707661290323,
+                      "inside": true
+                    },
+                    {
+                      "text": "Linkage",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 13.294707661290323,
+                      "inside": true
+                    }
+                  ]
+                },
+                {
+                  "name": "Chronic hepatitis B visual: integrated case",
+                  "caption": "Connect viral replication, immune injury, fibrosis, treatment, prevention, and long-term surveillance.",
+                  "labels": [
+                    {
+                      "text": "Screen",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 13.294707661290323,
+                      "inside": true
+                    },
+                    {
+                      "text": "Stage",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 13.294707661290323,
+                      "inside": true
+                    },
+                    {
+                      "text": "Treat",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 13.294707661290323,
+                      "inside": true
+                    },
+                    {
+                      "text": "Follow",
+                      "font": "14px",
+                      "class": null,
+                      "screenSize": 13.294707661290323,
+                      "inside": true
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "captures": [
+        "body-treatment-decision-0-1440.png",
+        "body-treatment-decision-1-1440.png",
+        "body-treatment-decision-2-1440.png",
+        "body-treatment-decision-3-1440.png",
+        "body-treatment-decision-4-1440.png",
+        "body-treatment-decision-5-1440.png",
+        "body-treatment-decision-6-1440.png",
+        "summary-treatment-decision-1440.png",
+        "keypoints-treatment-decision-1440.png",
+        "application-treatment-decision-1440.png",
+        "figure-treatment-decision-1440.png",
+        "check-treatment-decision-option-0-1440.png",
+        "check-treatment-decision-option-1-1440.png",
+        "check-treatment-decision-option-2-1440.png",
+        "check-treatment-decision-option-3-1440.png",
+        "references-1440.png",
+        "bank-chronic-hepatitis-b-031-1440.png",
+        "bank-chronic-hepatitis-b-029-1440.png",
+        "bank-chronic-hepatitis-b-032-1440.png",
+        "bank-chronic-hepatitis-b-030-1440.png",
+        "bank-chronic-hepatitis-b-034-1440.png",
+        "bank-chronic-hepatitis-b-033-1440.png",
+        "bank-chronic-hepatitis-b-035-1440.png",
+        "bank-chronic-hepatitis-b-036-1440.png",
+        "cumulative-cumulative-chronic-hepatitis-b-chronic-hepatitis-b-029-1440.png",
+        "body-treatment-decision-0-390.png",
+        "body-treatment-decision-1-390.png",
+        "body-treatment-decision-2-390.png",
+        "body-treatment-decision-3-390.png",
+        "body-treatment-decision-4-390.png",
+        "body-treatment-decision-5-390.png",
+        "body-treatment-decision-6-390.png",
+        "summary-treatment-decision-390.png",
+        "keypoints-treatment-decision-390.png",
+        "application-treatment-decision-390.png",
+        "figure-treatment-decision-390.png",
+        "check-treatment-decision-option-0-390.png",
+        "check-treatment-decision-option-1-390.png",
+        "check-treatment-decision-option-2-390.png",
+        "check-treatment-decision-option-3-390.png",
+        "references-390.png",
+        "bank-chronic-hepatitis-b-031-390.png",
+        "bank-chronic-hepatitis-b-029-390.png",
+        "bank-chronic-hepatitis-b-032-390.png",
+        "bank-chronic-hepatitis-b-030-390.png",
+        "bank-chronic-hepatitis-b-034-390.png",
+        "bank-chronic-hepatitis-b-033-390.png",
+        "bank-chronic-hepatitis-b-035-390.png",
+        "bank-chronic-hepatitis-b-036-390.png",
+        "cumulative-cumulative-chronic-hepatitis-b-chronic-hepatitis-b-029-390.png"
+      ],
+      "errors": []
+    },
+    "visualInspection": {
+      "status": "passed",
+      "method": "Actually viewed all nine lossless boards in original detail, containing 25 desktop/mobile pairs. After the two rationale-only edits, reran full browser verification and viewed fresh native pairs for questions032 and036. Other scoped text/metadata/figures unchanged.",
+      "rawCaptureNamesInspected": 50,
+      "initialNativePairsInspected": 25,
+      "initialLosslessBoardsInspected": 9,
+      "finalRevisedQuestionNativePairsInspected": 2,
+      "desktopMobileWidths": [
+        1440,
+        390
+      ],
+      "figureBoundsMeasuredWidths": [
+        320,
+        390,
+        639,
+        640,
+        1440
+      ],
+      "observations": [
+        "All seven complete lesson bodies readable with preserved desktop/mobile hierarchy.",
+        "Summary, key points and application align with lesson and fit.",
+        "Four diagram labels readable and within the SVG at measured widths; lesson-specific caption fits.",
+        "All four check-option feedback states and all eight bank questions displayed with readable choices, feedback and review links.",
+        "Inherited cumulative029 displays and grades consistently.",
+        "All15 reference labels and links fit.",
+        "No horizontal overflow or browser console/page errors."
+      ],
+      "boards": [
+        {
+          "file": "board-00.png",
+          "pairs": [
+            "pair-body-treatment-decision-0.png",
+            "pair-body-treatment-decision-1.png",
+            "pair-body-treatment-decision-2.png"
+          ],
+          "dimensions": [
+            1295,
+            1381
+          ]
+        },
+        {
+          "file": "board-01.png",
+          "pairs": [
+            "pair-body-treatment-decision-3.png",
+            "pair-body-treatment-decision-4.png",
+            "pair-body-treatment-decision-5.png"
+          ],
+          "dimensions": [
+            1295,
+            1271
+          ]
+        },
+        {
+          "file": "board-02.png",
+          "pairs": [
+            "pair-body-treatment-decision-6.png",
+            "pair-summary-treatment-decision.png",
+            "pair-keypoints-treatment-decision.png"
+          ],
+          "dimensions": [
+            1295,
+            1115
+          ]
+        },
+        {
+          "file": "board-03.png",
+          "pairs": [
+            "pair-application-treatment-decision.png",
+            "pair-figure-treatment-decision.png",
+            "pair-check-treatment-decision-option-0.png"
+          ],
+          "dimensions": [
+            1295,
+            1634
+          ]
+        },
+        {
+          "file": "board-04.png",
+          "pairs": [
+            "pair-check-treatment-decision-option-1.png",
+            "pair-check-treatment-decision-option-2.png",
+            "pair-check-treatment-decision-option-3.png"
+          ],
+          "dimensions": [
+            1295,
+            2251
+          ]
+        },
+        {
+          "file": "board-05.png",
+          "pairs": [
+            "pair-references.png",
+            "pair-bank-chronic-hepatitis-b-031.png",
+            "pair-bank-chronic-hepatitis-b-029.png"
+          ],
+          "dimensions": [
+            1295,
+            2764
+          ]
+        },
+        {
+          "file": "board-06.png",
+          "pairs": [
+            "pair-bank-chronic-hepatitis-b-032.png",
+            "pair-bank-chronic-hepatitis-b-030.png",
+            "pair-bank-chronic-hepatitis-b-034.png"
+          ],
+          "dimensions": [
+            1295,
+            2174
+          ]
+        },
+        {
+          "file": "board-07.png",
+          "pairs": [
+            "pair-bank-chronic-hepatitis-b-033.png",
+            "pair-bank-chronic-hepatitis-b-035.png",
+            "pair-bank-chronic-hepatitis-b-036.png"
+          ],
+          "dimensions": [
+            1295,
+            2227
+          ]
+        },
+        {
+          "file": "board-08.png",
+          "pairs": [
+            "pair-cumulative-cumulative-chronic-hepatitis-b-chronic-hepatitis-b-029.png"
+          ],
+          "dimensions": [
+            1398,
+            711
+          ]
+        }
+      ],
+      "finalPairs": [
+        "final-pair-bank-chronic-hepatitis-b-032.png",
+        "final-pair-bank-chronic-hepatitis-b-036.png"
+      ],
+      "limit": "Scoped lesson only; no full HBV/chapter/goal or production certification."
+    },
+    "limits": "Isolated unauthenticated production-build preview. Scoped clinical review only; equality elsewhere is preservation evidence, not parent certification. No account-progress or production verification claim."
+  },
+  "remainingReview": {
+    "nextAction": "Continue full HBV audit with peginterferon-selection (bank 053-060) and special-populations (061-072), reviewing entire teaching/check/metadata/figures and question objects. Use source book printed 300-301/PDF308-309 plus approved current PEGASYS HBV label and guidance; separate HBV monotherapy from HCV/ribavirin restrictions. Then pregnancy/infant, monitoring/stopping, reactivation, prevention/surveillance and integrated case. Verify current official CDC infant policy; retain 2026 WHO handbook as a distinct global pathway. Preserve five already-verified HBV lessons and bank 001-052. Exact-age-40 AASLD recommendation/figure discrepancy is documented, not silently unified. Whole HBV/cirrhosis/enteral/fluid parents, Chapters 11/19 and Chapter 1 printed 7/PDF 19 entry 15 remain open. Historical 157 lexical candidates are not exhaustive semantic coverage. Continue full 82-chapter goal.",
+    "wholeHBVParentPending": true,
+    "HBVWholeLessonsPending": 7,
+    "HBVWholeQuestionPending": 60,
+    "wholeEnteralParentPending": true
+  },
+  "release": {
+    "branch": "audit/rxprep-content-2026-09-24",
+    "commit": null,
+    "push": "pending",
+    "receipt": "enteral-nutrition-broader-hbv-treatment-decision-release.json",
+    "mainMerge": "not performed",
+    "production": "not verified"
+  },
+  "wholeGoalComplete": false,
+  "privateSourceFilesInGit": false
+}

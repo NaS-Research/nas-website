@@ -490,3 +490,77 @@ Object.assign(chronicHepatitisBQuestionBank.find((question) => question.id === "
   ],
   "rationale": "Normal ALT does not remove cirrhosis-related risk or treatment indications. The other choices assess severity, treatment and surveillance rather than dismissing established liver disease on one biochemical result."
 });
+
+// Source-verified HBV treatment-decision review.
+Object.assign(chronicHepatitisBQuestionBank.find((question) => question.id === "chronic-hepatitis-b-029"), {
+  "choices": [
+    "Oral nucleos(t)ide analogs suppress replication; undetectable serum HBV DNA does not prove elimination of nuclear cccDNA",
+    "An undetectable serum HBV DNA result proves all infected hepatocytes have been cleared",
+    "Polymerase inhibition routinely produces rapid sterilizing cure of chronic HBV",
+    "Normal ALT after treatment establishes that HBV-related cancer risk is zero"
+  ],
+  "rationale": "Polymerase inhibition can suppress replication while the nuclear reservoir persists. Serum DNA, ALT and liver-risk assessment describe different outcomes; none alone establishes eradication or freedom from every future liver complication."
+});
+Object.assign(chronicHepatitisBQuestionBank.find((question) => question.id === "chronic-hepatitis-b-030"), {
+  "choices": [
+    "Agree on virologic and liver-health goals, adherence, product-specific monitoring and expected treatment duration",
+    "Promise that the first undetectable DNA result will allow treatment discontinuation",
+    "Use disappearance of symptoms as the only treatment target",
+    "Measure ALT alone to establish virologic suppression"
+  ],
+  "rationale": "A useful plan measures antiviral response and protects liver health while supporting safe ongoing therapy. ALT is an injury marker, not a substitute for HBV DNA, and symptom improvement does not establish treatment completion."
+});
+Object.assign(chronicHepatitisBQuestionBank.find((question) => question.id === "chronic-hepatitis-b-031"), {
+  "choices": [
+    "Assess DNA response, ALT, adherence and toxicity while continuing indicated liver-cancer surveillance",
+    "Discharge a patient with cirrhosis from follow-up once HBV DNA is undetectable",
+    "Stop therapy whenever symptoms resolve, without a planned monitoring pathway",
+    "Infer that an ALT response removes the need to assess drug toxicity"
+  ],
+  "rationale": "A strong plan separates virologic response, biochemical response, safety and residual liver risk. Effective antiviral treatment does not eliminate cancer risk in cirrhosis or justify an unplanned interruption."
+});
+Object.assign(chronicHepatitisBQuestionBank.find((question) => question.id === "chronic-hepatitis-b-032"), {
+  "choices": [
+    "Stop oral HBV therapy after one undetectable DNA result without a stopping plan or follow-up",
+    "Explain that DNA suppression can coexist with a persistent viral reservoir",
+    "Continue surveillance when liver-cancer risk warrants it",
+    "Arrange medication access and adherence support before treatment begins"
+  ],
+  "rationale": "An unplanned stop based on suppression alone can lead to severe HBV exacerbation. Counseling about persistent infection, indicated surveillance and continuity of treatment supports safer care."
+});
+Object.assign(chronicHepatitisBQuestionBank.find((question) => question.id === "chronic-hepatitis-b-033"), {
+  "choices": [
+    "AASLD immune-tolerant treatment consideration uses age over 40 OR significant inflammation OR fibrosis, with shared decision-making",
+    "AASLD requires both age over 40 and F2 fibrosis before anyone in an immune-tolerant pattern can discuss therapy",
+    "HBeAg negativity excludes treatment regardless of cirrhosis",
+    "Normal ALT excludes treatment in every HBV clinical setting"
+  ],
+  "rationale": "Recommendation 3 treats age, inflammation and fibrosis as alternative considerations. Its recommendation is conditional with very low-certainty evidence; eligibility is not limited to one ALT or HBeAg result."
+});
+Object.assign(chronicHepatitisBQuestionBank.find((question) => question.id === "chronic-hepatitis-b-034"), {
+  "choices": [
+    "Apply a named framework: WHO permits treatment for significant fibrosis regardless of ALT or HBV DNA",
+    "Combine the WHO ALT upper limit with the AASLD DNA thresholds and call the result one guideline",
+    "Require elevated ALT before treating cirrhosis under every framework",
+    "Apply the adult WHO elastography cutoffs to children as fully validated values"
+  ],
+  "rationale": "WHO includes an independent significant-fibrosis or cirrhosis pathway. Its ALT/DNA pathway is a separate option, and pediatric validation limits matter. Mixing thresholds from different frameworks creates an unsupported rule."
+});
+Object.assign(chronicHepatitisBQuestionBank.find((question) => question.id === "chronic-hepatitis-b-035"), {
+  "choices": [
+    "Discuss treatment for a 35-year-old with a persistently immune-tolerant pattern and confirmed F2 fibrosis instead of waiting for age over 40",
+    "Require the same patient to reach age over 40 before discussing treatment despite confirmed F2 fibrosis",
+    "Dismiss confirmed fibrosis because the same patient has normal ALT",
+    "Use HBeAg positivity alone to determine the exact oral drug and dose"
+  ],
+  "rationale": "Confirmed F2 fibrosis independently supports treatment consideration in the AASLD immune-tolerant recommendation. A younger age does not cancel that finding. Discuss risks, benefits and monitoring, then select therapy using the full patient context."
+});
+Object.assign(chronicHepatitisBQuestionBank.find((question) => question.id === "chronic-hepatitis-b-036"), {
+  "choices": [
+    "Dismiss treatment in decompensated HBV cirrhosis because ALT is normal",
+    "Arrange oral antiviral treatment and specialist assessment for decompensated HBV cirrhosis",
+    "Evaluate other causes of elevated ALT when HBV DNA is low",
+    "Discuss treatment burden and follow-up when applying a conditional recommendation"
+  ],
+  "rationale": "Normal ALT does not negate the treatment indication in decompensated HBV cirrhosis. Oral antiviral treatment and specialist care address that indication; evaluating other injury causes and discussing treatment burden support appropriate care."
+});
