@@ -105,3 +105,55 @@ export const chronicHepatitisBModule={
   disclaimer:"This module supports advanced education about chronic hepatitis B. It reconciles an older 2023 course source with current screening, treatment, pregnancy, vaccination, and surveillance guidance. Decisions require current guidelines, current labeling, local resources, specialist consultation, and patient-specific evidence.",
   questionBank:chronicHepatitisBQuestionBank,
 };
+
+// Reconcile full HBV polymerase lesson bodies and product-specific dosing limits.
+Object.assign(chronicHepatitisBModule.submodules.find((lesson) => lesson.slug === "polymerase-therapy").lesson.find((body) => body.heading === "Use TDF deliberately"), {
+  "heading": "Use TDF deliberately",
+  "body": "TDF is a high-resistance-barrier HBV polymerase inhibitor. The usual adult Viread tablet dose is 300 mg once daily without regard to food when creatinine clearance is at least 50 mL/min; lower clearance requires label-directed interval adjustment. Before and during therapy, assess serum creatinine, estimated creatinine clearance, urine glucose and urine protein, adding phosphorus in chronic kidney disease. Review nephrotoxins, proximal tubular symptoms and bone risk; consider bone-density assessment when fracture history or other risk warrants it. Viral suppression does not replace toxicity monitoring. Avoid unplanned discontinuation and arrange close liver follow-up if treatment stops."
+});
+Object.assign(chronicHepatitisBModule.submodules.find((lesson) => lesson.slug === "polymerase-therapy").lesson.find((body) => body.heading === "Use TAF within its label"), {
+  "heading": "Use TAF within its label",
+  "body": "Vemlidy is single-agent TAF for chronic HBV with compensated liver disease in adults and children at least six years old weighing at least 25 kg: 25 mg once daily with food. TAF achieves efficient hepatocyte delivery with lower systemic exposure than TDF; HBV trials generally show smaller renal biomarker and bone-density changes, not an absence of toxicity. Adult renal labeling permits use at estimated creatinine clearance at least 15 mL/min or with ESRD receiving chronic hemodialysis, with dosing after dialysis on dialysis days. It is not recommended in ESRD without chronic hemodialysis or Child-Pugh B or C hepatic impairment. Pediatric renal dosing is not established. Continue renal monitoring and HIV/product review."
+});
+Object.assign(chronicHepatitisBModule.submodules.find((lesson) => lesson.slug === "polymerase-therapy").lesson.find((body) => body.heading === "Use entecavir correctly"), {
+  "heading": "Use entecavir correctly",
+  "body": "For nucleoside-naive adults with compensated disease and creatinine clearance at least 50 mL/min, the usual entecavir dose is 0.5 mg daily. The label specifies 1 mg daily for defined lamivudine-refractory or resistant infection and for adult decompensated liver disease, with renal adjustment below 50 mL/min. This dose distinction does not establish preferred drug selection: lamivudine or telbivudine resistance raises entecavir resistance risk, and AASLD favors a tenofovir strategy in those patterns. Take entecavir at least two hours after a meal and two hours before the next meal. Test for HIV and avoid entecavir monotherapy in untreated HIV coinfection."
+});
+Object.assign(chronicHepatitisBModule.submodules.find((lesson) => lesson.slug === "polymerase-therapy").lesson.find((body) => body.heading === "Avoid low-barrier shortcuts"), {
+  "heading": "Avoid low-barrier shortcuts",
+  "body": "Lamivudine, adefovir and telbivudine are nonpreferred oral HBV options because of resistance or toxicity disadvantages. Reconstruct prior antiviral exposure and check adherence before attributing rising HBV DNA to resistance. AASLD resistance guidance favors a high-barrier tenofovir strategy for several resistant patterns, including lamivudine resistance; account for cross-resistance, renal and liver status, and HIV treatment with specialist input. Do not restart lamivudine alone after documented resistance or assume that increasing entecavir to its labeled 1 mg dose resolves lamivudine-related cross-resistance."
+});
+Object.assign(chronicHepatitisBModule.submodules.find((lesson) => lesson.slug === "polymerase-therapy").check, {
+  "question": "Which factor most strongly favors considering TAF over TDF?",
+  "choices": [
+    "High renal and bone toxicity risk in a patient eligible for Vemlidy under its hepatic and renal labeling",
+    "A desire to eliminate all kidney monitoring",
+    "A need to treat HIV with Vemlidy alone",
+    "An assumption that Vemlidy is routinely labeled for Child-Pugh B or C hepatic impairment"
+  ],
+  "answer": 0,
+  "rationale": "TAF may be considered when renal or bone risk makes TDF less suitable, provided the exact product and patient fit the label. HBV trials generally show smaller renal biomarker and bone-density changes, while long-term clinical significance is uncertain. Renal monitoring remains necessary; HIV coinfection requires an appropriate combination regimen.",
+  "reviewHref": "#polymerase-therapy"
+});
+Object.assign(chronicHepatitisBModule.references.find((reference) => reference.label === "Current VEMLIDY Prescribing Information"), {
+  "label": "Vemlidy: U.S. label revised March 2024",
+  "href": "https://www.gilead.com/-/media/files/pdfs/medicines/liver-disease/vemlidy/vemlidy_pi.pdf"
+});
+Object.assign(chronicHepatitisBModule.references.find((reference) => reference.label === "Current VIREAD Prescribing Information"), {
+  "label": "Viread: U.S. label revised April 2019",
+  "href": "https://www.gilead.com/-/media/files/pdfs/medicines/hiv/viread/viread_pi.pdf"
+});
+chronicHepatitisBModule.references.push(...[
+  {
+    "label": "Baraclude: U.S. label revised November 2019",
+    "href": "https://packageinserts.bms.com/pi/pi_baraclude.pdf"
+  },
+  {
+    "label": "AASLD 2018: HBV drug and resistance guidance",
+    "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5975958/"
+  },
+  {
+    "label": "AASLD 2025: HBV treatment teaching slides",
+    "href": "https://www.aasld.org/sites/default/files/2025-11/CHB%20Educational%20Slide%20Set%20Final%202.pdf"
+  }
+]);

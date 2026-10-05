@@ -100,3 +100,139 @@ export const chronicHepatitisBQuestionBank = concepts.flatMap(([slug, principle,
   const choices = dimension === "hazard" ? [hazard, principle, action, generic[(conceptIndex + dimensionIndex) % 3]] : [correct, hazard, generic[(conceptIndex + dimensionIndex) % 3], generic[(conceptIndex + dimensionIndex + 1) % 3]];
   return { id: `chronic-hepatitis-b-${String(conceptIndex * 4 + dimensionIndex + 1).padStart(3, "0")}`, question: `${stem} Focus: ${slug.replaceAll("-", " ")}.`, choices, answer: 0, rationale: `${principle} ${action}`, reviewHref: `#${reviewLessonByConcept[slug]}`, difficulty: dimensionIndex < 2 ? "foundational" : "advanced" };
 })).map(question => bookAdministrationRepairs[question.id] ? { ...question, ...bookAdministrationRepairs[question.id] } : question);
+
+// Reconcile complete HBV polymerase-therapy assessments against book and approved primary sources.
+Object.assign(chronicHepatitisBQuestionBank.find((question) => question.id === "chronic-hepatitis-b-037"), {
+  "choices": [
+    "TDF is a high-resistance-barrier HBV polymerase inhibitor, but renal tubular and bone risks require individualized review.",
+    "TDF has no renal toxicity because HBV suppression protects the kidneys",
+    "One normal creatinine result removes the need for subsequent renal monitoring",
+    "Every adult should receive the same TDF interval regardless of creatinine clearance"
+  ],
+  "rationale": "TDF suppresses HBV replication and has a high barrier to resistance, but kidney injury, Fanconi syndrome and bone effects can occur. Review estimated creatinine clearance, urine markers, bone risk and nephrotoxins; renal impairment can require a longer dosing interval."
+});
+Object.assign(chronicHepatitisBQuestionBank.find((question) => question.id === "chronic-hepatitis-b-038"), {
+  "choices": [
+    "Review kidney function, urine markers when indicated, bone risk, nephrotoxins, dosing, adherence, and post-treatment flare planning.",
+    "Omit urine glucose and urine protein monitoring because serum creatinine is sufficient",
+    "Continue the same dosing interval after kidney function falls below the label threshold",
+    "Stop TDF when HBV DNA becomes undetectable without arranging follow-up"
+  ],
+  "rationale": "The Viread label calls for serum creatinine, estimated creatinine clearance, urine glucose and urine protein before and during treatment; assess phosphorus in chronic kidney disease. Review bone symptoms and risk, nephrotoxins, adherence and dosing. Discontinuation can cause severe hepatitis flare and needs clinical and laboratory follow-up."
+});
+Object.assign(chronicHepatitisBQuestionBank.find((question) => question.id === "chronic-hepatitis-b-039"), {
+  "choices": [
+    "Review kidney function, urine markers when indicated, bone risk, nephrotoxins, dosing, adherence, and post-treatment flare planning.",
+    "Use the same TDF interval for every adult, including those with substantial renal impairment",
+    "Replace toxicity monitoring with an undetectable HBV DNA result",
+    "Treat a refill interruption as a medication holiday that needs no liver follow-up"
+  ],
+  "rationale": "Combine antiviral effectiveness with renal and bone safety, dosing and uninterrupted access. A high resistance barrier does not remove toxicity or adherence concerns. Review the exact product and renal dosing, and plan close clinical and laboratory monitoring if treatment is discontinued."
+});
+Object.assign(chronicHepatitisBQuestionBank.find((question) => question.id === "chronic-hepatitis-b-040"), {
+  "choices": [
+    "Ignore renal function and bone risk when choosing and dosing TDF",
+    "Review renal function and bone risk before choosing or dosing TDF.",
+    "Check for interacting nephrotoxic drugs during TDF treatment.",
+    "Plan monitoring for HBV worsening if antiviral treatment is stopped."
+  ],
+  "rationale": "Ignoring renal and bone risk is the harmful action. TDF can cause proximal tubular injury, kidney impairment and bone effects; kidney-based dosing, nephrotoxin review and post-discontinuation flare monitoring are protective actions."
+});
+Object.assign(chronicHepatitisBQuestionBank.find((question) => question.id === "chronic-hepatitis-b-041"), {
+  "choices": [
+    "TAF delivers tenofovir to hepatocytes efficiently with lower systemic exposure than TDF and generally smaller renal biomarker and bone-density changes in HBV trials.",
+    "TAF eliminates the possibility of renal injury and removes the need for monitoring",
+    "Vemlidy is labeled for all stages of decompensated hepatic impairment",
+    "Every TAF-containing HIV combination is interchangeable with single-agent Vemlidy"
+  ],
+  "rationale": "AASLD describes efficient hepatocyte delivery with lower systemic exposure. HBV trials show generally smaller renal biomarker and bone-density changes with TAF than TDF, while long-term clinical significance is uncertain. Vemlidy still requires product-specific renal, hepatic and HIV review."
+});
+Object.assign(chronicHepatitisBQuestionBank.find((question) => question.id === "chronic-hepatitis-b-042"), {
+  "choices": [
+    "Use current Vemlidy age, weight, food, renal, dialysis, and compensated-liver labeling rather than assuming every HIV TAF product is interchangeable.",
+    "Use Vemlidy in any child regardless of age or weight",
+    "Exclude renal monitoring after selecting TAF instead of TDF",
+    "Replace Vemlidy with any HIV combination containing TAF without reviewing the complete regimen"
+  ],
+  "rationale": "The retrieved U.S. Vemlidy label specifies age at least six years and weight at least 25 kg, compensated liver disease, once-daily dosing with food, and renal and dialysis conditions. Pediatric renal impairment lacks dosing data. A shared ingredient does not establish product interchangeability or an adequate HIV regimen."
+});
+Object.assign(chronicHepatitisBQuestionBank.find((question) => question.id === "chronic-hepatitis-b-043"), {
+  "choices": [
+    "Use current Vemlidy age, weight, food, renal, dialysis, and compensated-liver labeling rather than assuming every HIV TAF product is interchangeable.",
+    "Reject every patient below 15 mL/min creatinine clearance without reviewing chronic hemodialysis status",
+    "Give Vemlidy before dialysis because its timing never matters",
+    "Use Vemlidy routinely in Child-Pugh B or C hepatic impairment without reviewing the label"
+  ],
+  "rationale": "Adult renal labeling permits Vemlidy without dose adjustment at estimated creatinine clearance at least 15 mL/min or in ESRD receiving chronic hemodialysis; give it after dialysis on dialysis days. It is not recommended in ESRD without chronic hemodialysis or in decompensated Child-Pugh B or C hepatic impairment. Pediatric renal dosing is not established."
+});
+Object.assign(chronicHepatitisBQuestionBank.find((question) => question.id === "chronic-hepatitis-b-044"), {
+  "choices": [
+    "Substitute a TAF-containing HIV combination for Vemlidy without reviewing the complete HIV and HBV treatment plan",
+    "Verify the exact single-agent HBV product before dispensing.",
+    "Test for HIV before starting HBV antiviral therapy.",
+    "Choose therapy that appropriately treats both viruses when HIV and HBV coexist."
+  ],
+  "rationale": "The harmful action is making a product substitution without an appropriate plan for both viruses. Vemlidy alone is not an adequate HIV regimen. Testing for HIV, identifying the exact product and coordinating appropriate combination antiretroviral treatment are protective actions."
+});
+Object.assign(chronicHepatitisBQuestionBank.find((question) => question.id === "chronic-hepatitis-b-045"), {
+  "choices": [
+    "Entecavir has a high resistance barrier in nucleoside-naive HBV infection, requires fasting administration, and needs renal dose review.",
+    "Entecavir has the same resistance barrier after lamivudine resistance as in nucleoside-naive infection",
+    "Food does not affect entecavir administration instructions",
+    "The same entecavir dose is appropriate for every patient regardless of kidney function or treatment history"
+  ],
+  "rationale": "Entecavir has low resistance rates in nucleoside-naive infection, but lamivudine resistance increases subsequent entecavir resistance risk. Give it at least two hours after a meal and two hours before the next meal, and review renal dosing. Its labeled dose contexts do not override resistance-based drug selection."
+});
+Object.assign(chronicHepatitisBQuestionBank.find((question) => question.id === "chronic-hepatitis-b-048"), {
+  "choices": [
+    "Use entecavir alone for HBV in a patient with untreated HIV infection",
+    "Test for HIV before choosing the HBV antiviral regimen.",
+    "Account for kidney function when dosing entecavir.",
+    "Use the stated lamivudine-resistance context to distinguish 0.5 mg from 1 mg."
+  ],
+  "rationale": "The error is using entecavir without effective HIV treatment in coinfection, which can select HIV resistance. The other choices are useful assessment actions. A labeled 1 mg entecavir dose for lamivudine-refractory infection does not make it the preferred resistance strategy; review specialist guidance and alternative agents."
+});
+Object.assign(chronicHepatitisBQuestionBank.find((question) => question.id === "chronic-hepatitis-b-049"), {
+  "choices": [
+    "Lamivudine, adefovir and telbivudine are nonpreferred HBV options because of resistance or toxicity disadvantages relative to high-barrier agents.",
+    "Lamivudine resistance leaves entecavir resistance risk unchanged",
+    "All virologic breakthrough proves resistance without an adherence assessment",
+    "Adefovir has no renal toxicity considerations"
+  ],
+  "rationale": "AASLD identifies TDF, TAF and entecavir as preferred high-barrier oral agents. Older agents have resistance or toxicity disadvantages, and lamivudine or telbivudine resistance increases concern for entecavir cross-resistance. Check adherence, prior exposure and resistance before selecting a specialist-directed salvage plan."
+});
+Object.assign(chronicHepatitisBQuestionBank.find((question) => question.id === "chronic-hepatitis-b-050"), {
+  "choices": [
+    "Reconstruct prior exposure and resistance before choosing salvage therapy, and favor a high-barrier tenofovir strategy when guidance supports it.",
+    "Restart lamivudine alone after documented lamivudine resistance",
+    "Choose entecavir solely by increasing its dose after lamivudine resistance",
+    "Assume a rising HBV DNA result always proves resistance rather than checking adherence"
+  ],
+  "rationale": "Reconstruct prior exposure and assess adherence before interpreting virologic failure. AASLD resistance guidance favors tenofovir for several resistant HBV patterns, including lamivudine resistance; the exact agent and plan still require renal, hepatic, HIV and resistance review. Do not substitute a universal salvage algorithm for specialist assessment."
+});
+Object.assign(chronicHepatitisBQuestionBank.find((question) => question.id === "chronic-hepatitis-b-051"), {
+  "choices": [
+    "Reconstruct prior exposure and resistance before choosing salvage therapy, and favor a high-barrier tenofovir strategy when guidance supports it.",
+    "Sequentially cycle through low-barrier monotherapies without resistance review",
+    "Ignore prior lamivudine resistance because the entecavir label lists a 1 mg dose",
+    "Choose the next medicine without assessing kidney function, HIV status or treatment adherence"
+  ],
+  "rationale": "A resistance plan needs the prior drug history, adherence, HBV DNA trajectory and cross-resistance context. Tenofovir is a high-barrier option in AASLD resistance guidance, but renal, hepatic and coinfection constraints still matter. The labeled entecavir dose does not establish that it is preferred after lamivudine resistance."
+});
+Object.assign(chronicHepatitisBQuestionBank.find((question) => question.id === "chronic-hepatitis-b-052"), {
+  "choices": [
+    "Restart lamivudine alone after documented lamivudine resistance",
+    "Reconstruct prior antiviral exposure and resistance before choosing salvage therapy",
+    "Check adherence before concluding that virologic breakthrough reflects resistance",
+    "Review kidney, liver and HIV context when considering a tenofovir strategy"
+  ],
+  "rationale": "Restarting a drug alone despite documented resistance is the harmful action. Review adherence, prior treatment and cross-resistance, then coordinate a high-barrier strategy that fits the patient. The other alternatives are useful assessment and treatment-selection actions."
+});
+
+// Distinguish labeled entecavir dose contexts from resistance-based agent selection.
+Object.assign(chronicHepatitisBQuestionBank.find((question) => question.id === "chronic-hepatitis-b-046"), {
+  "rationale": "Test for HIV and review kidney function, prior treatment and resistance before selecting entecavir. The usual adult dose is 0.5 mg daily for nucleoside-naive compensated infection; the label specifies 1 mg for defined lamivudine-refractory or resistant infection and adult decompensated disease, with renal adjustment. A labeled dose does not make entecavir preferred after lamivudine resistance; AASLD favors a tenofovir strategy in that pattern."
+});
+Object.assign(chronicHepatitisBQuestionBank.find((question) => question.id === "chronic-hepatitis-b-047"), {
+  "rationale": "Test for HIV and review kidney function, prior treatment and resistance before selecting entecavir. The usual adult dose is 0.5 mg daily for nucleoside-naive compensated infection; the label specifies 1 mg for defined lamivudine-refractory or resistant infection and adult decompensated disease, with renal adjustment. A labeled dose does not make entecavir preferred after lamivudine resistance; AASLD favors a tenofovir strategy in that pattern."
+});
