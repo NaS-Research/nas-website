@@ -1,0 +1,2731 @@
+{
+  "updated": "2026-10-05T00:58:10.384361+00:00",
+  "unit": "enteral-nutrition:broader-phosphate-route-and-product-label-dependencies",
+  "status": "15completequestions/twocompletebodies/onecompletecheck/derivedcumulative084 verified;wholelesson/module/chaptersreviewing",
+  "baseCommit": "aca4501d4b775c9e5dbb74a1c3e7c337e6ebb87e",
+  "sourceAuthorization": {
+    "authorized": true,
+    "scope": "Previously approved FDA product labeling for EN dependencies; supplied book remains primary. New approval covers only the two requested guideline sources recorded in sequential resume, not unrestricted outside resources."
+  },
+  "sourceReview": {
+    "sources": [
+      {
+        "name": "Fresenius Kabi potassium phosphates FDA prescribing information",
+        "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2024/212832s002lbl.pdf",
+        "piRevised": "August2024",
+        "referenceId": "5439713",
+        "pdfSha256": "12cd0ef1b2e5fa86b1e5647935034098c340ee63bf4dba45c9c5d13ae0e842d7",
+        "sourcePagesActuallyViewed": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "completeAdoptedScopes": [
+          "1indications",
+          "2.1preparation/administration",
+          "2.2dose context andmonitoring",
+          "2.3PNadmixturecompatibility",
+          "3strengths",
+          "4contraindications",
+          "5.1-5.8warnings",
+          "6adverseeffects",
+          "7.1potassiumraisingdrugs",
+          "8.6renalimpairment"
+        ],
+        "limits": "Current dose/rate tables read for discrepancy context; no new clinical dose/rate recommended by this unit."
+      },
+      {
+        "name": "Glenmark current potassium phosphates DailyMed label",
+        "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=70c7710c-a354-4941-bd46-e64d6ea6b5dc",
+        "splUpdated": "2026-03-20",
+        "role": "Fresh current corroboration of concentration, indications, contraindications, no-calcium-fluid infusion instruction and persistent serum-potassium unit discrepancy; no claim all label pages reviewed."
+      },
+      {
+        "name": "Hospira sodium phosphates DailyMed label",
+        "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6f044d16-295e-43ff-72a3-b045c387bc5c",
+        "splUpdated": "2026-05-11",
+        "piRevised": "January2018",
+        "labelCode": "LAB-1044-3.0",
+        "pdfSha256": "83c7c925475e190742f2704428ea934c0e782e07275c91a0accb107425ef31e4",
+        "sourcePagesActuallyViewed": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "completeAdoptedScopes": [
+          "description",
+          "indications",
+          "contraindications",
+          "warnings/precautions",
+          "adverseeffects",
+          "dosage/administration",
+          "how supplied"
+        ],
+        "limits": "PI revision differs from SPL update; no new sodium-phosphate therapeutic dose adopted."
+      }
+    ],
+    "privateBook": {
+      "identity": "RxPrep2023",
+      "printedPage": 707,
+      "pdfPage": 717,
+      "pageExtractedRenderedAndActuallyViewed": true,
+      "completeRelevantSectionRead": "Phosphorus",
+      "limits": "Other sections on page are context only; not whole Chapter53 review. Pagination verified visually rather than inferred from earlier chapter offsets."
+    },
+    "sourceFilesOutsideGit": true
+  },
+  "sourceDiscrepancies": [
+    {
+      "issue": "Book severe-hypophosphatemia example uses0.08-0.16mmol/kg; reviewed current potassium-phosphate label dose table differs",
+      "resolution": "Retain existing explicitlyhypotheticalprotocol arithmetic only. Do not teach the book factor as an FDA/current bedside regimen. No clinical dilution or rate follows from these arithmetic questions."
+    },
+    {
+      "issue": "Reviewed FDA potassium-phosphate label prints serum-potassium eligibility cutoff withmEq/dL; currentMarch2026DailyMed repeats it",
+      "priorEvidence": [
+        "fluid-electrolyte-coverage-review.md",
+        "fluid-electrolyte-checkpoint.json"
+      ],
+      "resolution": "Unresolved apparent source-unit discrepancy. Do not silently convert, endorse or teach that numeric cutoff. Explicit hyperkalemia contraindication independently supports the5.8mEq/Lcase. No manufacturer correction obtained."
+    },
+    {
+      "issue": "Unspecified compatibility wording could imply permission to share calcium infusion",
+      "resolution": "Question107 andteachingnow expressly follow reviewed potassium-phosphate prohibition; evaluated PNadmixture is a separate preparation."
+    },
+    {
+      "issue": "Choosing sodiumphosphate because potassium is high could imply automatic safety",
+      "resolution": "Whole embedded check androutebodyrequireitsown sodium, phosphate, calcium andrenal review."
+    }
+  ],
+  "questionReview": [
+    {
+      "id": "calcium-phosphorus-038",
+      "before": {
+        "id": "calcium-phosphorus-038",
+        "question": "Which presentation supports IV rather than oral phosphate replacement?",
+        "choices": [
+          "Severe symptomatic depletion with unreliable enteral absorption",
+          "Stable mild asymptomatic depletion with a working gut",
+          "Normal phosphate",
+          "Hyperphosphatemia"
+        ],
+        "answer": 0,
+        "rationale": "IV therapy is reserved for severe, symptomatic, or enterally inaccessible cases under protocol.",
+        "reviewHref": "#hypophosphatemia"
+      },
+      "after": {
+        "id": "calcium-phosphorus-038",
+        "question": "Which presentation supports IV rather than oral phosphate replacement?",
+        "choices": [
+          "Severe symptomatic depletion with unreliable enteral absorption",
+          "Stable mild asymptomatic depletion with a working gut",
+          "Normal phosphate",
+          "Hyperphosphatemia"
+        ],
+        "answer": 0,
+        "rationale": "Severe symptomatic depletion with unreliable enteral absorption supports monitored IV replacement. The supplied book describes IV treatment for severe depletion; the potassium-phosphates label permits IV correction when oral or enteral replacement is not possible, insufficient or contraindicated. Severity is therefore not the only route criterion. Stable mild depletion with a functioning gut favors oral replacement, while normal or high phosphate does not justify replacement. Product choice, kidney function, accompanying potassium or sodium, calcium, dilution and monitoring still require assessment.",
+        "reviewHref": "#hypophosphatemia"
+      },
+      "status": "verified whole original stem,key,all alternatives and explanation",
+      "sourceScopes": "Book printed707/PDF717 andFDA Kphosphate1/2/3/4/5/6/8.6; sodiumlabelcontraindications/warnings forroute/electrolytechoice. Arithmetic:book historical factor context,independent Decimal multiplication/distractors; explicitlyhypothetical.",
+      "originalIdStemKeyAndAnchorPreserved": true
+    },
+    {
+      "id": "calcium-phosphorus-039",
+      "before": {
+        "id": "calcium-phosphorus-039",
+        "question": "Why must potassium be reviewed before selecting potassium phosphate?",
+        "choices": [
+          "The product adds clinically important potassium",
+          "Potassium phosphate contains no phosphate",
+          "Potassium never changes in illness",
+          "It prevents all arrhythmias"
+        ],
+        "answer": 0,
+        "rationale": "The accompanying cation can worsen hyperkalemia or help correct a concurrent deficit.",
+        "reviewHref": "#hypophosphatemia"
+      },
+      "after": {
+        "id": "calcium-phosphorus-039",
+        "question": "Why must potassium be reviewed before selecting potassium phosphate?",
+        "choices": [
+          "The product adds clinically important potassium",
+          "Potassium phosphate contains no phosphate",
+          "Potassium never changes in illness",
+          "It prevents all arrhythmias"
+        ],
+        "answer": 0,
+        "rationale": "Potassium phosphates injection supplies both phosphate and potassium: the reviewed concentrate contains 3 mmol phosphorus and 4.4 mEq potassium per mL. Its potassium load must be counted with other sources and can worsen hyperkalemia; the product is contraindicated in hyperkalemia. It contains phosphate, illness can change potassium, and adding potassium does not prevent every arrhythmia. A concurrent potassium deficit may influence selection only after the complete product and patient safety review.",
+        "reviewHref": "#hypophosphatemia"
+      },
+      "status": "verified whole original stem,key,all alternatives and explanation",
+      "sourceScopes": "Book printed707/PDF717 andFDA Kphosphate1/2/3/4/5/6/8.6; sodiumlabelcontraindications/warnings forroute/electrolytechoice. Arithmetic:book historical factor context,independent Decimal multiplication/distractors; explicitlyhypothetical.",
+      "originalIdStemKeyAndAnchorPreserved": true
+    },
+    {
+      "id": "calcium-phosphorus-040",
+      "before": {
+        "id": "calcium-phosphorus-040",
+        "question": "Which complication can follow overly aggressive IV phosphate?",
+        "choices": [
+          "Hypocalcemia and calcium-phosphate precipitation",
+          "Permanent hypermagnesemia in every patient",
+          "Isolated low LDL",
+          "Respiratory alkalosis in every patient"
+        ],
+        "answer": 0,
+        "rationale": "Rapid phosphate administration can lower calcium and promote precipitation and kidney injury.",
+        "reviewHref": "#hypophosphatemia"
+      },
+      "after": {
+        "id": "calcium-phosphorus-040",
+        "question": "Which complication can follow overly aggressive IV phosphate?",
+        "choices": [
+          "Hypocalcemia and calcium-phosphate precipitation",
+          "Permanent hypermagnesemia in every patient",
+          "Isolated low LDL",
+          "Respiratory alkalosis in every patient"
+        ],
+        "answer": 0,
+        "rationale": "IV phosphate can cause hyperphosphatemia, hypocalcemia and calcium-phosphate precipitation, with kidney injury and serious infusion complications. Excessive or rapid administration increases risk. Follow phosphate, calcium, potassium, magnesium and kidney function and use the labeled diluted infusion. The potassium product must not be infused with calcium-containing IV fluids. Permanent hypermagnesemia and respiratory alkalosis are not inevitable consequences, and an isolated LDL change is not the relevant phosphate-infusion hazard.",
+        "reviewHref": "#hypophosphatemia"
+      },
+      "status": "verified whole original stem,key,all alternatives and explanation",
+      "sourceScopes": "Book printed707/PDF717 andFDA Kphosphate1/2/3/4/5/6/8.6; sodiumlabelcontraindications/warnings forroute/electrolytechoice. Arithmetic:book historical factor context,independent Decimal multiplication/distractors; explicitlyhypothetical.",
+      "originalIdStemKeyAndAnchorPreserved": true
+    },
+    {
+      "id": "calcium-phosphorus-098",
+      "before": {
+        "id": "calcium-phosphorus-098",
+        "question": "A patient with severe hypophosphatemia has potassium 5.8 mEq/L and oliguric kidney injury. Which interpretation or action is most defensible?",
+        "choices": [
+          "Avoid automatic potassium phosphate and obtain specialist protocol guidance",
+          "Treat the isolated number without evaluating the mechanism",
+          "Ignore kidney function and symptoms",
+          "Delay urgent stabilization until every test returns"
+        ],
+        "answer": 0,
+        "rationale": "The cation and impaired elimination make routine replacement hazardous.",
+        "reviewHref": "#hypophosphatemia"
+      },
+      "after": {
+        "id": "calcium-phosphorus-098",
+        "question": "A patient with severe hypophosphatemia has potassium 5.8 mEq/L and oliguric kidney injury. Which interpretation or action is most defensible?",
+        "choices": [
+          "Avoid automatic potassium phosphate and obtain specialist protocol guidance",
+          "Treat the isolated number without evaluating the mechanism",
+          "Ignore kidney function and symptoms",
+          "Delay urgent stabilization until every test returns"
+        ],
+        "answer": 0,
+        "rationale": "A potassium of 5.8 mEq/L is hyperkalemia, and potassium phosphates injection is contraindicated in hyperkalemia. Oliguric acute kidney injury further requires an urgent individualized replacement and monitoring plan; a low phosphate alone does not make potassium phosphate safe. Sodium phosphate avoids that potassium load but adds sodium, has its own high-sodium, high-phosphate and low-calcium contraindications, and requires caution in renal impairment. Do not ignore kidney function, use a fixed plan from one laboratory value, or delay necessary reassessment. The question does not establish a specific replacement dose or a safe sodium-phosphate regimen.",
+        "reviewHref": "#hypophosphatemia"
+      },
+      "status": "verified whole original stem,key,all alternatives and explanation",
+      "sourceScopes": "Book printed707/PDF717 andFDA Kphosphate1/2/3/4/5/6/8.6; sodiumlabelcontraindications/warnings forroute/electrolytechoice. Arithmetic:book historical factor context,independent Decimal multiplication/distractors; explicitlyhypothetical.",
+      "originalIdStemKeyAndAnchorPreserved": true
+    },
+    {
+      "id": "calcium-phosphorus-107",
+      "before": {
+        "id": "calcium-phosphorus-107",
+        "question": "A patient needs IV phosphate and is receiving a calcium infusion through the only available peripheral line. What is the best next interpretation or management principle?",
+        "choices": [
+          "Do not co-infuse without verified compatibility and obtain safe access planning",
+          "Normalize one laboratory value without a mechanism",
+          "Use the same fixed plan for every patient",
+          "Ignore medication timing"
+        ],
+        "answer": 0,
+        "rationale": "Calcium-phosphate precipitation can obstruct the line or harm the patient.",
+        "reviewHref": "#hypophosphatemia"
+      },
+      "after": {
+        "id": "calcium-phosphorus-107",
+        "question": "A patient needs IV phosphate and is receiving a calcium infusion through the only available peripheral line. What is the best next interpretation or management principle?",
+        "choices": [
+          "Do not co-infuse potassium phosphate with calcium-containing IV fluids; obtain a safe access plan",
+          "Normalize one laboratory value without a mechanism",
+          "Use the same fixed plan for every patient",
+          "Ignore medication timing"
+        ],
+        "answer": 0,
+        "rationale": "Do not share the calcium infusion for potassium-phosphate replacement: the reviewed potassium-phosphates label explicitly prohibits infusion with calcium-containing IV fluids. Arrange a safe access and administration plan with the treating team rather than treating an unspecified compatibility check as permission to co-infuse. Separately compounded parenteral nutrition has its own validated calcium-phosphate compatibility and stability assessment and does not authorize this shared-line infusion. Precipitation can harm the patient; a single laboratory value, a fixed plan for every patient and ignoring administration timing do not resolve this access hazard.",
+        "reviewHref": "#hypophosphatemia"
+      },
+      "status": "verified whole original stem,key,all alternatives and explanation",
+      "sourceScopes": "Book printed707/PDF717 andFDA Kphosphate1/2/3/4/5/6/8.6; sodiumlabelcontraindications/warnings forroute/electrolytechoice. Arithmetic:book historical factor context,independent Decimal multiplication/distractors; explicitlyhypothetical.",
+      "originalIdStemKeyAndAnchorPreserved": true
+    },
+    {
+      "id": "calcium-phosphorus-080",
+      "before": {
+        "id": "calcium-phosphorus-080",
+        "question": "A local protocol specifies 0.08 mmol/kg for a hypothetical phosphate replacement calculation. What amount corresponds to 50 kg before all clinical adjustments?",
+        "choices": [
+          "4 mmol",
+          "625 mmol",
+          "50.08 mmol",
+          "4 mEq calcium"
+        ],
+        "answer": 0,
+        "rationale": "50 kg multiplied by 0.08 mmol/kg equals 4 mmol. Product, cation, kidney function, route, rate, and monitoring still require protocol review.",
+        "reviewHref": "#hypophosphatemia"
+      },
+      "after": {
+        "id": "calcium-phosphorus-080",
+        "question": "A local protocol specifies 0.08 mmol/kg for a hypothetical phosphate replacement calculation. What amount corresponds to 50 kg before all clinical adjustments?",
+        "choices": [
+          "4 mmol",
+          "625 mmol",
+          "50.08 mmol",
+          "4 mEq calcium"
+        ],
+        "answer": 0,
+        "rationale": "For the explicitly hypothetical protocol in the stem, 50 kg × 0.08 mmol/kg = 4 mmol phosphate; kg cancels. Dividing weight by the factor or adding the two values does not calculate the stated dose. mEq calcium is a different substance and unit. The book contains these historical phosphate factors, but this arithmetic exercise does not select a current product dose, dilution, route or infusion rate. Current product labeling and the patient’s phosphate, potassium, calcium, kidney function and other intake determine the actual prescription.",
+        "reviewHref": "#hypophosphatemia"
+      },
+      "status": "verified whole original stem,key,all alternatives and explanation",
+      "sourceScopes": "Supplied book factor context andindependentDecimal calculation;FDA2.2 current-dose distinction andpatient/productqualification. All alternatives checked forwrongoperation/substance/unit.",
+      "originalIdStemKeyAndAnchorPreserved": true
+    },
+    {
+      "id": "calcium-phosphorus-081",
+      "before": {
+        "id": "calcium-phosphorus-081",
+        "question": "A local protocol specifies 0.08 mmol/kg for a hypothetical phosphate replacement calculation. What amount corresponds to 62 kg before all clinical adjustments?",
+        "choices": [
+          "4.96 mmol",
+          "775 mmol",
+          "62.08 mmol",
+          "5 mEq calcium"
+        ],
+        "answer": 0,
+        "rationale": "62 kg multiplied by 0.08 mmol/kg equals 4.96 mmol. Product, cation, kidney function, route, rate, and monitoring still require protocol review.",
+        "reviewHref": "#hypophosphatemia"
+      },
+      "after": {
+        "id": "calcium-phosphorus-081",
+        "question": "A local protocol specifies 0.08 mmol/kg for a hypothetical phosphate replacement calculation. What amount corresponds to 62 kg before all clinical adjustments?",
+        "choices": [
+          "4.96 mmol",
+          "775 mmol",
+          "62.08 mmol",
+          "5 mEq calcium"
+        ],
+        "answer": 0,
+        "rationale": "For the explicitly hypothetical protocol in the stem, 62 kg × 0.08 mmol/kg = 4.96 mmol phosphate; kg cancels. Dividing weight by the factor or adding the two values does not calculate the stated dose. mEq calcium is a different substance and unit. The book contains these historical phosphate factors, but this arithmetic exercise does not select a current product dose, dilution, route or infusion rate. Current product labeling and the patient’s phosphate, potassium, calcium, kidney function and other intake determine the actual prescription.",
+        "reviewHref": "#hypophosphatemia"
+      },
+      "status": "verified whole original stem,key,all alternatives and explanation",
+      "sourceScopes": "Supplied book factor context andindependentDecimal calculation;FDA2.2 current-dose distinction andpatient/productqualification. All alternatives checked forwrongoperation/substance/unit.",
+      "originalIdStemKeyAndAnchorPreserved": true
+    },
+    {
+      "id": "calcium-phosphorus-082",
+      "before": {
+        "id": "calcium-phosphorus-082",
+        "question": "A local protocol specifies 0.08 mmol/kg for a hypothetical phosphate replacement calculation. What amount corresponds to 70 kg before all clinical adjustments?",
+        "choices": [
+          "5.6 mmol",
+          "875 mmol",
+          "70.08 mmol",
+          "5.6 mEq calcium"
+        ],
+        "answer": 0,
+        "rationale": "70 kg multiplied by 0.08 mmol/kg equals 5.6 mmol. Product, cation, kidney function, route, rate, and monitoring still require protocol review.",
+        "reviewHref": "#hypophosphatemia"
+      },
+      "after": {
+        "id": "calcium-phosphorus-082",
+        "question": "A local protocol specifies 0.08 mmol/kg for a hypothetical phosphate replacement calculation. What amount corresponds to 70 kg before all clinical adjustments?",
+        "choices": [
+          "5.6 mmol",
+          "875 mmol",
+          "70.08 mmol",
+          "5.6 mEq calcium"
+        ],
+        "answer": 0,
+        "rationale": "For the explicitly hypothetical protocol in the stem, 70 kg × 0.08 mmol/kg = 5.6 mmol phosphate; kg cancels. Dividing weight by the factor or adding the two values does not calculate the stated dose. mEq calcium is a different substance and unit. The book contains these historical phosphate factors, but this arithmetic exercise does not select a current product dose, dilution, route or infusion rate. Current product labeling and the patient’s phosphate, potassium, calcium, kidney function and other intake determine the actual prescription.",
+        "reviewHref": "#hypophosphatemia"
+      },
+      "status": "verified whole original stem,key,all alternatives and explanation",
+      "sourceScopes": "Supplied book factor context andindependentDecimal calculation;FDA2.2 current-dose distinction andpatient/productqualification. All alternatives checked forwrongoperation/substance/unit.",
+      "originalIdStemKeyAndAnchorPreserved": true
+    },
+    {
+      "id": "calcium-phosphorus-083",
+      "before": {
+        "id": "calcium-phosphorus-083",
+        "question": "A local protocol specifies 0.08 mmol/kg for a hypothetical phosphate replacement calculation. What amount corresponds to 85 kg before all clinical adjustments?",
+        "choices": [
+          "6.8 mmol",
+          "1062.5 mmol",
+          "85.08 mmol",
+          "6.8 mEq calcium"
+        ],
+        "answer": 0,
+        "rationale": "85 kg multiplied by 0.08 mmol/kg equals 6.8 mmol. Product, cation, kidney function, route, rate, and monitoring still require protocol review.",
+        "reviewHref": "#hypophosphatemia"
+      },
+      "after": {
+        "id": "calcium-phosphorus-083",
+        "question": "A local protocol specifies 0.08 mmol/kg for a hypothetical phosphate replacement calculation. What amount corresponds to 85 kg before all clinical adjustments?",
+        "choices": [
+          "6.8 mmol",
+          "1062.5 mmol",
+          "85.08 mmol",
+          "6.8 mEq calcium"
+        ],
+        "answer": 0,
+        "rationale": "For the explicitly hypothetical protocol in the stem, 85 kg × 0.08 mmol/kg = 6.8 mmol phosphate; kg cancels. Dividing weight by the factor or adding the two values does not calculate the stated dose. mEq calcium is a different substance and unit. The book contains these historical phosphate factors, but this arithmetic exercise does not select a current product dose, dilution, route or infusion rate. Current product labeling and the patient’s phosphate, potassium, calcium, kidney function and other intake determine the actual prescription.",
+        "reviewHref": "#hypophosphatemia"
+      },
+      "status": "verified whole original stem,key,all alternatives and explanation",
+      "sourceScopes": "Supplied book factor context andindependentDecimal calculation;FDA2.2 current-dose distinction andpatient/productqualification. All alternatives checked forwrongoperation/substance/unit.",
+      "originalIdStemKeyAndAnchorPreserved": true
+    },
+    {
+      "id": "calcium-phosphorus-084",
+      "before": {
+        "id": "calcium-phosphorus-084",
+        "question": "A local protocol specifies 0.08 mmol/kg for a hypothetical phosphate replacement calculation. What amount corresponds to 100 kg before all clinical adjustments?",
+        "choices": [
+          "8 mmol",
+          "1250 mmol",
+          "100.08 mmol",
+          "8 mEq calcium"
+        ],
+        "answer": 0,
+        "rationale": "100 kg multiplied by 0.08 mmol/kg equals 8 mmol. Product, cation, kidney function, route, rate, and monitoring still require protocol review.",
+        "reviewHref": "#hypophosphatemia"
+      },
+      "after": {
+        "id": "calcium-phosphorus-084",
+        "question": "A local protocol specifies 0.08 mmol/kg for a hypothetical phosphate replacement calculation. What amount corresponds to 100 kg before all clinical adjustments?",
+        "choices": [
+          "8 mmol",
+          "1250 mmol",
+          "100.08 mmol",
+          "8 mEq calcium"
+        ],
+        "answer": 0,
+        "rationale": "For the explicitly hypothetical protocol in the stem, 100 kg × 0.08 mmol/kg = 8 mmol phosphate; kg cancels. Dividing weight by the factor or adding the two values does not calculate the stated dose. mEq calcium is a different substance and unit. The book contains these historical phosphate factors, but this arithmetic exercise does not select a current product dose, dilution, route or infusion rate. Current product labeling and the patient’s phosphate, potassium, calcium, kidney function and other intake determine the actual prescription.",
+        "reviewHref": "#hypophosphatemia"
+      },
+      "status": "verified whole original stem,key,all alternatives and explanation",
+      "sourceScopes": "Supplied book factor context andindependentDecimal calculation;FDA2.2 current-dose distinction andpatient/productqualification. All alternatives checked forwrongoperation/substance/unit.",
+      "originalIdStemKeyAndAnchorPreserved": true
+    },
+    {
+      "id": "calcium-phosphorus-085",
+      "before": {
+        "id": "calcium-phosphorus-085",
+        "question": "A local protocol specifies 0.16 mmol/kg for a hypothetical phosphate replacement calculation. What amount corresponds to 50 kg before all clinical adjustments?",
+        "choices": [
+          "8 mmol",
+          "312.5 mmol",
+          "50.16 mmol",
+          "8 mEq calcium"
+        ],
+        "answer": 0,
+        "rationale": "50 kg multiplied by 0.16 mmol/kg equals 8 mmol. Product, cation, kidney function, route, rate, and monitoring still require protocol review.",
+        "reviewHref": "#hypophosphatemia"
+      },
+      "after": {
+        "id": "calcium-phosphorus-085",
+        "question": "A local protocol specifies 0.16 mmol/kg for a hypothetical phosphate replacement calculation. What amount corresponds to 50 kg before all clinical adjustments?",
+        "choices": [
+          "8 mmol",
+          "312.5 mmol",
+          "50.16 mmol",
+          "8 mEq calcium"
+        ],
+        "answer": 0,
+        "rationale": "For the explicitly hypothetical protocol in the stem, 50 kg × 0.16 mmol/kg = 8 mmol phosphate; kg cancels. Dividing weight by the factor or adding the two values does not calculate the stated dose. mEq calcium is a different substance and unit. The book contains these historical phosphate factors, but this arithmetic exercise does not select a current product dose, dilution, route or infusion rate. Current product labeling and the patient’s phosphate, potassium, calcium, kidney function and other intake determine the actual prescription.",
+        "reviewHref": "#hypophosphatemia"
+      },
+      "status": "verified whole original stem,key,all alternatives and explanation",
+      "sourceScopes": "Supplied book factor context andindependentDecimal calculation;FDA2.2 current-dose distinction andpatient/productqualification. All alternatives checked forwrongoperation/substance/unit.",
+      "originalIdStemKeyAndAnchorPreserved": true
+    },
+    {
+      "id": "calcium-phosphorus-086",
+      "before": {
+        "id": "calcium-phosphorus-086",
+        "question": "A local protocol specifies 0.16 mmol/kg for a hypothetical phosphate replacement calculation. What amount corresponds to 62 kg before all clinical adjustments?",
+        "choices": [
+          "9.92 mmol",
+          "387.5 mmol",
+          "62.16 mmol",
+          "9.9 mEq calcium"
+        ],
+        "answer": 0,
+        "rationale": "62 kg multiplied by 0.16 mmol/kg equals 9.92 mmol. Product, cation, kidney function, route, rate, and monitoring still require protocol review.",
+        "reviewHref": "#hypophosphatemia"
+      },
+      "after": {
+        "id": "calcium-phosphorus-086",
+        "question": "A local protocol specifies 0.16 mmol/kg for a hypothetical phosphate replacement calculation. What amount corresponds to 62 kg before all clinical adjustments?",
+        "choices": [
+          "9.92 mmol",
+          "387.5 mmol",
+          "62.16 mmol",
+          "9.9 mEq calcium"
+        ],
+        "answer": 0,
+        "rationale": "For the explicitly hypothetical protocol in the stem, 62 kg × 0.16 mmol/kg = 9.92 mmol phosphate; kg cancels. Dividing weight by the factor or adding the two values does not calculate the stated dose. mEq calcium is a different substance and unit. The book contains these historical phosphate factors, but this arithmetic exercise does not select a current product dose, dilution, route or infusion rate. Current product labeling and the patient’s phosphate, potassium, calcium, kidney function and other intake determine the actual prescription.",
+        "reviewHref": "#hypophosphatemia"
+      },
+      "status": "verified whole original stem,key,all alternatives and explanation",
+      "sourceScopes": "Supplied book factor context andindependentDecimal calculation;FDA2.2 current-dose distinction andpatient/productqualification. All alternatives checked forwrongoperation/substance/unit.",
+      "originalIdStemKeyAndAnchorPreserved": true
+    },
+    {
+      "id": "calcium-phosphorus-087",
+      "before": {
+        "id": "calcium-phosphorus-087",
+        "question": "A local protocol specifies 0.16 mmol/kg for a hypothetical phosphate replacement calculation. What amount corresponds to 70 kg before all clinical adjustments?",
+        "choices": [
+          "11.2 mmol",
+          "437.5 mmol",
+          "70.16 mmol",
+          "11.2 mEq calcium"
+        ],
+        "answer": 0,
+        "rationale": "70 kg multiplied by 0.16 mmol/kg equals 11.2 mmol. Product, cation, kidney function, route, rate, and monitoring still require protocol review.",
+        "reviewHref": "#hypophosphatemia"
+      },
+      "after": {
+        "id": "calcium-phosphorus-087",
+        "question": "A local protocol specifies 0.16 mmol/kg for a hypothetical phosphate replacement calculation. What amount corresponds to 70 kg before all clinical adjustments?",
+        "choices": [
+          "11.2 mmol",
+          "437.5 mmol",
+          "70.16 mmol",
+          "11.2 mEq calcium"
+        ],
+        "answer": 0,
+        "rationale": "For the explicitly hypothetical protocol in the stem, 70 kg × 0.16 mmol/kg = 11.2 mmol phosphate; kg cancels. Dividing weight by the factor or adding the two values does not calculate the stated dose. mEq calcium is a different substance and unit. The book contains these historical phosphate factors, but this arithmetic exercise does not select a current product dose, dilution, route or infusion rate. Current product labeling and the patient’s phosphate, potassium, calcium, kidney function and other intake determine the actual prescription.",
+        "reviewHref": "#hypophosphatemia"
+      },
+      "status": "verified whole original stem,key,all alternatives and explanation",
+      "sourceScopes": "Supplied book factor context andindependentDecimal calculation;FDA2.2 current-dose distinction andpatient/productqualification. All alternatives checked forwrongoperation/substance/unit.",
+      "originalIdStemKeyAndAnchorPreserved": true
+    },
+    {
+      "id": "calcium-phosphorus-088",
+      "before": {
+        "id": "calcium-phosphorus-088",
+        "question": "A local protocol specifies 0.16 mmol/kg for a hypothetical phosphate replacement calculation. What amount corresponds to 85 kg before all clinical adjustments?",
+        "choices": [
+          "13.6 mmol",
+          "531.3 mmol",
+          "85.16 mmol",
+          "13.6 mEq calcium"
+        ],
+        "answer": 0,
+        "rationale": "85 kg multiplied by 0.16 mmol/kg equals 13.6 mmol. Product, cation, kidney function, route, rate, and monitoring still require protocol review.",
+        "reviewHref": "#hypophosphatemia"
+      },
+      "after": {
+        "id": "calcium-phosphorus-088",
+        "question": "A local protocol specifies 0.16 mmol/kg for a hypothetical phosphate replacement calculation. What amount corresponds to 85 kg before all clinical adjustments?",
+        "choices": [
+          "13.6 mmol",
+          "531.3 mmol",
+          "85.16 mmol",
+          "13.6 mEq calcium"
+        ],
+        "answer": 0,
+        "rationale": "For the explicitly hypothetical protocol in the stem, 85 kg × 0.16 mmol/kg = 13.6 mmol phosphate; kg cancels. Dividing weight by the factor or adding the two values does not calculate the stated dose. mEq calcium is a different substance and unit. The book contains these historical phosphate factors, but this arithmetic exercise does not select a current product dose, dilution, route or infusion rate. Current product labeling and the patient’s phosphate, potassium, calcium, kidney function and other intake determine the actual prescription.",
+        "reviewHref": "#hypophosphatemia"
+      },
+      "status": "verified whole original stem,key,all alternatives and explanation",
+      "sourceScopes": "Supplied book factor context andindependentDecimal calculation;FDA2.2 current-dose distinction andpatient/productqualification. All alternatives checked forwrongoperation/substance/unit.",
+      "originalIdStemKeyAndAnchorPreserved": true
+    },
+    {
+      "id": "calcium-phosphorus-089",
+      "before": {
+        "id": "calcium-phosphorus-089",
+        "question": "A local protocol specifies 0.16 mmol/kg for a hypothetical phosphate replacement calculation. What amount corresponds to 100 kg before all clinical adjustments?",
+        "choices": [
+          "16 mmol",
+          "625 mmol",
+          "100.16 mmol",
+          "16 mEq calcium"
+        ],
+        "answer": 0,
+        "rationale": "100 kg multiplied by 0.16 mmol/kg equals 16 mmol. Product, cation, kidney function, route, rate, and monitoring still require protocol review.",
+        "reviewHref": "#hypophosphatemia"
+      },
+      "after": {
+        "id": "calcium-phosphorus-089",
+        "question": "A local protocol specifies 0.16 mmol/kg for a hypothetical phosphate replacement calculation. What amount corresponds to 100 kg before all clinical adjustments?",
+        "choices": [
+          "16 mmol",
+          "625 mmol",
+          "100.16 mmol",
+          "16 mEq calcium"
+        ],
+        "answer": 0,
+        "rationale": "For the explicitly hypothetical protocol in the stem, 100 kg × 0.16 mmol/kg = 16 mmol phosphate; kg cancels. Dividing weight by the factor or adding the two values does not calculate the stated dose. mEq calcium is a different substance and unit. The book contains these historical phosphate factors, but this arithmetic exercise does not select a current product dose, dilution, route or infusion rate. Current product labeling and the patient’s phosphate, potassium, calcium, kidney function and other intake determine the actual prescription.",
+        "reviewHref": "#hypophosphatemia"
+      },
+      "status": "verified whole original stem,key,all alternatives and explanation",
+      "sourceScopes": "Supplied book factor context andindependentDecimal calculation;FDA2.2 current-dose distinction andpatient/productqualification. All alternatives checked forwrongoperation/substance/unit.",
+      "originalIdStemKeyAndAnchorPreserved": true
+    }
+  ],
+  "teachingReview": [
+    {
+      "heading": "Choose route and product deliberately",
+      "before": "Oral replacement is preferred for stable, less severe disease when absorption is reliable. IV replacement is reserved for severe, symptomatic, or enterally inaccessible cases and follows institutional protocols. Potassium phosphate adds potassium, while sodium phosphate adds sodium. The patient's potassium, sodium, kidney function, access, infusion rate, and calcium concentration determine the safer choice.",
+      "after": "Oral replacement is preferred for stable, less severe depletion when absorption is reliable. Severe symptomatic depletion can require IV replacement. The potassium-phosphates label also permits IV correction when oral or enteral replacement is not possible, insufficient or contraindicated; IV use is not limited to severity alone. Select the actual product and an individualized institutional plan. Potassium phosphate adds potassium and is contraindicated in hyperkalemia and severe renal impairment; sodium phosphate adds sodium and requires caution in renal impairment and sodium-retaining states. Sodium phosphate is not automatically safe: high sodium, high phosphate and low calcium are contraindications in its label. Review potassium, sodium, phosphate, calcium, kidney function, other intake, access, dilution and infusion rate. Concentrated phosphate injection must be diluted before administration.",
+      "wholeBodyVerified": true,
+      "source": "Book Phosphorus;complete adoptedFDA potassium andsodiumproduct scopes"
+    },
+    {
+      "heading": "Monitor for overcorrection",
+      "before": "IV phosphate can cause hypocalcemia, hypotension, acute kidney injury, hyperphosphatemia, and calcium-phosphate precipitation. Repeat phosphate, calcium, potassium, magnesium, and kidney function at an acuity-matched interval. Avoid co-infusing calcium and phosphate through the same line without verified compatibility.",
+      "after": "IV phosphate can cause hypocalcemia, hypotension, acute kidney injury, hyperphosphatemia and calcium-phosphate precipitation. Follow phosphate, calcium, potassium, magnesium and kidney function and reassess before additional doses. The potassium-phosphates label prohibits infusion with calcium-containing IV fluids; obtain a safe access plan rather than co-infusing through a shared calcium line. Separately compounded parenteral nutrition requires its own evaluation of calcium-phosphate ratios, concentrations, pH, temperature, compatibility and stability. That admixture assessment does not authorize shared-line replacement infusions. Dilution, product-specific concentration and rate limits, and repeat laboratory assessment protect against overcorrection; do not transfer one product’s instructions to another.",
+      "wholeBodyVerified": true,
+      "source": "Book Phosphorus;complete adoptedFDA potassium andsodiumproduct scopes"
+    }
+  ],
+  "embeddedCheckReview": {
+    "hypophosphatemia": {
+      "before": {
+        "question": "A patient with severe hypophosphatemia also has hyperkalemia and requires IV replacement. Which product characteristic matters most?",
+        "choices": [
+          "Avoid adding unnecessary potassium and consider sodium phosphate per protocol",
+          "Use potassium phosphate because phosphate is low",
+          "Combine calcium and phosphate in one line",
+          "Ignore kidney function"
+        ],
+        "answer": 0,
+        "rationale": "The accompanying cation matters. Potassium phosphate can worsen hyperkalemia.",
+        "reviewHref": "#hypophosphatemia"
+      },
+      "after": {
+        "question": "A patient with severe hypophosphatemia also has hyperkalemia and requires IV replacement. Which product characteristic matters most?",
+        "choices": [
+          "Avoid potassium phosphate; assess a non-potassium plan and its sodium, renal and calcium limits",
+          "Use potassium phosphate because phosphate is low",
+          "Combine calcium and phosphate in one line",
+          "Ignore kidney function"
+        ],
+        "answer": 0,
+        "rationale": "Potassium phosphates injection is contraindicated in hyperkalemia. Sodium phosphate avoids additional potassium but adds sodium and is not automatically suitable: review sodium, calcium, phosphate, kidney function and the actual label before choosing a replacement plan. Giving potassium solely because phosphate is low, co-infusing with calcium, or ignoring kidney function is unsafe.",
+        "reviewHref": "#hypophosphatemia"
+      }
+    }
+  },
+  "cumulativeReview": [
+    {
+      "before": {
+        "id": "cumulative-calcium-phosphorus-homeostasis-calcium-phosphorus-084",
+        "question": "A local protocol specifies 0.08 mmol/kg for a hypothetical phosphate replacement calculation. What amount corresponds to 100 kg before all clinical adjustments?",
+        "choices": [
+          "8 mmol",
+          "1250 mmol",
+          "100.08 mmol",
+          "8 mEq calcium"
+        ],
+        "answer": 0,
+        "rationale": "100 kg multiplied by 0.08 mmol/kg equals 8 mmol. Product, cation, kidney function, route, rate, and monitoring still require protocol review.",
+        "reviewHref": "/learn/pharmacy/modules/calcium-phosphorus-homeostasis",
+        "module": "Calcium and Phosphorus Homeostasis"
+      },
+      "after": {
+        "id": "cumulative-calcium-phosphorus-homeostasis-calcium-phosphorus-084",
+        "question": "A local protocol specifies 0.08 mmol/kg for a hypothetical phosphate replacement calculation. What amount corresponds to 100 kg before all clinical adjustments?",
+        "choices": [
+          "8 mmol",
+          "1250 mmol",
+          "100.08 mmol",
+          "8 mEq calcium"
+        ],
+        "answer": 0,
+        "rationale": "For the explicitly hypothetical protocol in the stem, 100 kg × 0.08 mmol/kg = 8 mmol phosphate; kg cancels. Dividing weight by the factor or adding the two values does not calculate the stated dose. mEq calcium is a different substance and unit. The book contains these historical phosphate factors, but this arithmetic exercise does not select a current product dose, dilution, route or infusion rate. Current product labeling and the patient’s phosphate, potassium, calcium, kidney function and other intake determine the actual prescription.",
+        "reviewHref": "/learn/pharmacy/modules/calcium-phosphorus-homeostasis",
+        "module": "Calcium and Phosphorus Homeostasis"
+      }
+    }
+  ],
+  "referenceReview": {
+    "added": [
+      {
+        "label": "FDA potassium phosphates injection prescribing information, revised August 2024",
+        "href": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2024/212832s002lbl.pdf"
+      },
+      {
+        "label": "DailyMed Hospira sodium phosphates injection label, PI revised January 2018; updated May 2026",
+        "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6f044d16-295e-43ff-72a3-b045c387bc5c"
+      }
+    ],
+    "allNinePriorReferencesUnchanged": true,
+    "ferricCarboxymaltoseDraftExcluded": true
+  },
+  "coverage": {
+    "evidence": "enteral-nutrition-broader-phosphate-route-label-review.json",
+    "moduleBank": 100,
+    "sourceVerifiedBankIds": [
+      "calcium-phosphorus-038",
+      "calcium-phosphorus-039",
+      "calcium-phosphorus-040",
+      "calcium-phosphorus-098",
+      "calcium-phosphorus-107",
+      "calcium-phosphorus-080",
+      "calcium-phosphorus-081",
+      "calcium-phosphorus-082",
+      "calcium-phosphorus-083",
+      "calcium-phosphorus-084",
+      "calcium-phosphorus-085",
+      "calcium-phosphorus-086",
+      "calcium-phosphorus-087",
+      "calcium-phosphorus-088",
+      "calcium-phosphorus-089"
+    ],
+    "newFullQuestionsVerified": 15,
+    "clinicalQuestionsVerified": 5,
+    "conditionalArithmeticQuestionsVerified": 10,
+    "broaderFeedingBankVerifiedAfter": 220,
+    "wholeBodiesVerifiedThisUnit": 2,
+    "wholeEmbeddedChecksVerifiedThisUnit": 1,
+    "hypophosphatemiaLessonQuestionTotal": 20,
+    "hypophosphatemiaRemainingQuestionIds": [
+      "calcium-phosphorus-036",
+      "calcium-phosphorus-037",
+      "calcium-phosphorus-041",
+      "calcium-phosphorus-094",
+      "calcium-phosphorus-104"
+    ],
+    "remainingBodyHeadings": [
+      "Classify the mechanism",
+      "Recognize severe depletion"
+    ],
+    "wholeHypophosphatemiaLessonVerified": false,
+    "figureNewlyVerified": false,
+    "metadataNewlyVerified": false,
+    "wholeParentModuleVerified": false,
+    "wholeENModuleVerified": false,
+    "wholeChaptersVerified": false,
+    "cumulativeTotal": 1180,
+    "derivedCumulative084Verified": true,
+    "other1179CumulativeObjectsUnchanged": true,
+    "all100OriginalIdsStemsKeysAndAnchorsPreserved": true,
+    "question107CorrectChoiceClarified": true,
+    "noNewQuestionIds": true,
+    "originalClinicalScopeRetained": true,
+    "unrelatedDraftsPreserved": true
+  },
+  "validation": {
+    "productionBuild": {
+      "status": "passed",
+      "exitCode": 0,
+      "pages": 567,
+      "isolatedExactBase": "aca4501d4b775c9e5dbb74a1c3e7c337e6ebb87e"
+    },
+    "assessmentStructure": {
+      "status": "passed",
+      "modules": 1,
+      "questions": 100,
+      "hardErrors": [],
+      "sourceGaps": []
+    },
+    "objectPreservation": {
+      "status": "passed",
+      "all232ModulePathsAndStableIdsPreserved": true,
+      "other231ModulesExactUnchanged": true,
+      "bankTotal": 100,
+      "wholeQuestionsReviewed": [
+        "calcium-phosphorus-038",
+        "calcium-phosphorus-039",
+        "calcium-phosphorus-040",
+        "calcium-phosphorus-098",
+        "calcium-phosphorus-107",
+        "calcium-phosphorus-080",
+        "calcium-phosphorus-081",
+        "calcium-phosphorus-082",
+        "calcium-phosphorus-083",
+        "calcium-phosphorus-084",
+        "calcium-phosphorus-085",
+        "calcium-phosphorus-086",
+        "calcium-phosphorus-087",
+        "calcium-phosphorus-088",
+        "calcium-phosphorus-089"
+      ],
+      "other85QuestionsExactUnchanged": true,
+      "all100OriginalIdsStemsKeysAndAnchorsPreserved": true,
+      "originalQuestion107CorrectTextClarified": true,
+      "other99QuestionChoicesUnchanged": true,
+      "onlyTwoBodiesOneEmbeddedCheckAndTwoReferencesChanged": true,
+      "allMetadataOtherBodiesFiveChecksAndFigureComponentsUnchanged": true,
+      "priorNineReferencesExactUnchanged": true,
+      "cumulativeTotal": 1180,
+      "oneDerived084RationaleChanged": [
+        {
+          "before": {
+            "id": "cumulative-calcium-phosphorus-homeostasis-calcium-phosphorus-084",
+            "question": "A local protocol specifies 0.08 mmol/kg for a hypothetical phosphate replacement calculation. What amount corresponds to 100 kg before all clinical adjustments?",
+            "choices": [
+              "8 mmol",
+              "1250 mmol",
+              "100.08 mmol",
+              "8 mEq calcium"
+            ],
+            "answer": 0,
+            "rationale": "100 kg multiplied by 0.08 mmol/kg equals 8 mmol. Product, cation, kidney function, route, rate, and monitoring still require protocol review.",
+            "reviewHref": "/learn/pharmacy/modules/calcium-phosphorus-homeostasis",
+            "module": "Calcium and Phosphorus Homeostasis"
+          },
+          "after": {
+            "id": "cumulative-calcium-phosphorus-homeostasis-calcium-phosphorus-084",
+            "question": "A local protocol specifies 0.08 mmol/kg for a hypothetical phosphate replacement calculation. What amount corresponds to 100 kg before all clinical adjustments?",
+            "choices": [
+              "8 mmol",
+              "1250 mmol",
+              "100.08 mmol",
+              "8 mEq calcium"
+            ],
+            "answer": 0,
+            "rationale": "For the explicitly hypothetical protocol in the stem, 100 kg × 0.08 mmol/kg = 8 mmol phosphate; kg cancels. Dividing weight by the factor or adding the two values does not calculate the stated dose. mEq calcium is a different substance and unit. The book contains these historical phosphate factors, but this arithmetic exercise does not select a current product dose, dilution, route or infusion rate. Current product labeling and the patient’s phosphate, potassium, calcium, kidney function and other intake determine the actual prescription.",
+            "reviewHref": "/learn/pharmacy/modules/calcium-phosphorus-homeostasis",
+            "module": "Calcium and Phosphorus Homeostasis"
+          }
+        }
+      ],
+      "other1179CumulativeObjectsExactUnchanged": true,
+      "independentDecimalCalculations": [
+        {
+          "id": "calcium-phosphorus-080",
+          "weightKg": "50",
+          "hypotheticalFactorMmolKg": "0.08",
+          "answerMmol": "4.00",
+          "wrongDivision": "625 mmol",
+          "wrongAddition": "50.08 mmol",
+          "wrongSubstanceAndUnit": "4 mEq calcium"
+        },
+        {
+          "id": "calcium-phosphorus-081",
+          "weightKg": "62",
+          "hypotheticalFactorMmolKg": "0.08",
+          "answerMmol": "4.96",
+          "wrongDivision": "775 mmol",
+          "wrongAddition": "62.08 mmol",
+          "wrongSubstanceAndUnit": "5 mEq calcium"
+        },
+        {
+          "id": "calcium-phosphorus-082",
+          "weightKg": "70",
+          "hypotheticalFactorMmolKg": "0.08",
+          "answerMmol": "5.60",
+          "wrongDivision": "875 mmol",
+          "wrongAddition": "70.08 mmol",
+          "wrongSubstanceAndUnit": "5.6 mEq calcium"
+        },
+        {
+          "id": "calcium-phosphorus-083",
+          "weightKg": "85",
+          "hypotheticalFactorMmolKg": "0.08",
+          "answerMmol": "6.80",
+          "wrongDivision": "1062.5 mmol",
+          "wrongAddition": "85.08 mmol",
+          "wrongSubstanceAndUnit": "6.8 mEq calcium"
+        },
+        {
+          "id": "calcium-phosphorus-084",
+          "weightKg": "100",
+          "hypotheticalFactorMmolKg": "0.08",
+          "answerMmol": "8.00",
+          "wrongDivision": "1250 mmol",
+          "wrongAddition": "100.08 mmol",
+          "wrongSubstanceAndUnit": "8 mEq calcium"
+        },
+        {
+          "id": "calcium-phosphorus-085",
+          "weightKg": "50",
+          "hypotheticalFactorMmolKg": "0.16",
+          "answerMmol": "8.00",
+          "wrongDivision": "312.5 mmol",
+          "wrongAddition": "50.16 mmol",
+          "wrongSubstanceAndUnit": "8 mEq calcium"
+        },
+        {
+          "id": "calcium-phosphorus-086",
+          "weightKg": "62",
+          "hypotheticalFactorMmolKg": "0.16",
+          "answerMmol": "9.92",
+          "wrongDivision": "387.5 mmol",
+          "wrongAddition": "62.16 mmol",
+          "wrongSubstanceAndUnit": "9.9 mEq calcium"
+        },
+        {
+          "id": "calcium-phosphorus-087",
+          "weightKg": "70",
+          "hypotheticalFactorMmolKg": "0.16",
+          "answerMmol": "11.20",
+          "wrongDivision": "437.5 mmol",
+          "wrongAddition": "70.16 mmol",
+          "wrongSubstanceAndUnit": "11.2 mEq calcium"
+        },
+        {
+          "id": "calcium-phosphorus-088",
+          "weightKg": "85",
+          "hypotheticalFactorMmolKg": "0.16",
+          "answerMmol": "13.60",
+          "wrongDivision": "531.3 mmol",
+          "wrongAddition": "85.16 mmol",
+          "wrongSubstanceAndUnit": "13.6 mEq calcium"
+        },
+        {
+          "id": "calcium-phosphorus-089",
+          "weightKg": "100",
+          "hypotheticalFactorMmolKg": "0.16",
+          "answerMmol": "16.00",
+          "wrongDivision": "625 mmol",
+          "wrongAddition": "100.16 mmol",
+          "wrongSubstanceAndUnit": "16 mEq calcium"
+        }
+      ],
+      "wholeLessonVerified": false
+    },
+    "browser": {
+      "status": "passed",
+      "results": [
+        {
+          "width": 1440,
+          "module": "calcium-phosphorus-homeostasis",
+          "bodies": 24,
+          "exactMetadata": true,
+          "checkResults": [
+            {
+              "slug": "hypophosphatemia",
+              "wrong": true,
+              "feedbackAndAnchorVerified": true
+            },
+            {
+              "slug": "hypophosphatemia",
+              "wrong": false,
+              "feedbackAndAnchorVerified": true
+            }
+          ],
+          "references": 11,
+          "wholeLessonVerified": false,
+          "attempts": [
+            {
+              "target": "calcium-phosphorus-038",
+              "seed": 5,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-022",
+                "calcium-phosphorus-042",
+                "calcium-phosphorus-038",
+                "calcium-phosphorus-025",
+                "calcium-phosphorus-012",
+                "calcium-phosphorus-091",
+                "calcium-phosphorus-077",
+                "calcium-phosphorus-048",
+                "calcium-phosphorus-072",
+                "calcium-phosphorus-060"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-038",
+              "seed": 5,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-022",
+                "calcium-phosphorus-042",
+                "calcium-phosphorus-038",
+                "calcium-phosphorus-025",
+                "calcium-phosphorus-012",
+                "calcium-phosphorus-091",
+                "calcium-phosphorus-077",
+                "calcium-phosphorus-048",
+                "calcium-phosphorus-072",
+                "calcium-phosphorus-060"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-039",
+              "seed": 2,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-033",
+                "calcium-phosphorus-007",
+                "calcium-phosphorus-065",
+                "calcium-phosphorus-066",
+                "calcium-phosphorus-003",
+                "calcium-phosphorus-074",
+                "calcium-phosphorus-030",
+                "calcium-phosphorus-039",
+                "calcium-phosphorus-041",
+                "calcium-phosphorus-083"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-039",
+              "seed": 2,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-033",
+                "calcium-phosphorus-007",
+                "calcium-phosphorus-065",
+                "calcium-phosphorus-066",
+                "calcium-phosphorus-003",
+                "calcium-phosphorus-074",
+                "calcium-phosphorus-030",
+                "calcium-phosphorus-039",
+                "calcium-phosphorus-041",
+                "calcium-phosphorus-083"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-040",
+              "seed": 16,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-079",
+                "calcium-phosphorus-007",
+                "calcium-phosphorus-003",
+                "calcium-phosphorus-013",
+                "calcium-phosphorus-040",
+                "calcium-phosphorus-081",
+                "calcium-phosphorus-067",
+                "calcium-phosphorus-012",
+                "calcium-phosphorus-098",
+                "calcium-phosphorus-036"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-040",
+              "seed": 16,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-079",
+                "calcium-phosphorus-007",
+                "calcium-phosphorus-003",
+                "calcium-phosphorus-013",
+                "calcium-phosphorus-040",
+                "calcium-phosphorus-081",
+                "calcium-phosphorus-067",
+                "calcium-phosphorus-012",
+                "calcium-phosphorus-098",
+                "calcium-phosphorus-036"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-080",
+              "seed": 9,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-031",
+                "calcium-phosphorus-016",
+                "calcium-phosphorus-084",
+                "calcium-phosphorus-011",
+                "calcium-phosphorus-083",
+                "calcium-phosphorus-066",
+                "calcium-phosphorus-080",
+                "calcium-phosphorus-020",
+                "calcium-phosphorus-039",
+                "calcium-phosphorus-013"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-080",
+              "seed": 9,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-031",
+                "calcium-phosphorus-016",
+                "calcium-phosphorus-084",
+                "calcium-phosphorus-011",
+                "calcium-phosphorus-083",
+                "calcium-phosphorus-066",
+                "calcium-phosphorus-080",
+                "calcium-phosphorus-020",
+                "calcium-phosphorus-039",
+                "calcium-phosphorus-013"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-081",
+              "seed": 13,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-063",
+                "calcium-phosphorus-034",
+                "calcium-phosphorus-083",
+                "calcium-phosphorus-081",
+                "calcium-phosphorus-047",
+                "calcium-phosphorus-019",
+                "calcium-phosphorus-021",
+                "calcium-phosphorus-050",
+                "calcium-phosphorus-038",
+                "calcium-phosphorus-004"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-081",
+              "seed": 13,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-063",
+                "calcium-phosphorus-034",
+                "calcium-phosphorus-083",
+                "calcium-phosphorus-081",
+                "calcium-phosphorus-047",
+                "calcium-phosphorus-019",
+                "calcium-phosphorus-021",
+                "calcium-phosphorus-050",
+                "calcium-phosphorus-038",
+                "calcium-phosphorus-004"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-082",
+              "seed": 14,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-023",
+                "calcium-phosphorus-086",
+                "calcium-phosphorus-082",
+                "calcium-phosphorus-069",
+                "calcium-phosphorus-070",
+                "calcium-phosphorus-049",
+                "calcium-phosphorus-076",
+                "calcium-phosphorus-073",
+                "calcium-phosphorus-013",
+                "calcium-phosphorus-079"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-082",
+              "seed": 14,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-023",
+                "calcium-phosphorus-086",
+                "calcium-phosphorus-082",
+                "calcium-phosphorus-069",
+                "calcium-phosphorus-070",
+                "calcium-phosphorus-049",
+                "calcium-phosphorus-076",
+                "calcium-phosphorus-073",
+                "calcium-phosphorus-013",
+                "calcium-phosphorus-079"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-083",
+              "seed": 2,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-033",
+                "calcium-phosphorus-007",
+                "calcium-phosphorus-065",
+                "calcium-phosphorus-066",
+                "calcium-phosphorus-003",
+                "calcium-phosphorus-074",
+                "calcium-phosphorus-030",
+                "calcium-phosphorus-039",
+                "calcium-phosphorus-041",
+                "calcium-phosphorus-083"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-083",
+              "seed": 2,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-033",
+                "calcium-phosphorus-007",
+                "calcium-phosphorus-065",
+                "calcium-phosphorus-066",
+                "calcium-phosphorus-003",
+                "calcium-phosphorus-074",
+                "calcium-phosphorus-030",
+                "calcium-phosphorus-039",
+                "calcium-phosphorus-041",
+                "calcium-phosphorus-083"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-084",
+              "seed": 9,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-031",
+                "calcium-phosphorus-016",
+                "calcium-phosphorus-084",
+                "calcium-phosphorus-011",
+                "calcium-phosphorus-083",
+                "calcium-phosphorus-066",
+                "calcium-phosphorus-080",
+                "calcium-phosphorus-020",
+                "calcium-phosphorus-039",
+                "calcium-phosphorus-013"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-084",
+              "seed": 9,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-031",
+                "calcium-phosphorus-016",
+                "calcium-phosphorus-084",
+                "calcium-phosphorus-011",
+                "calcium-phosphorus-083",
+                "calcium-phosphorus-066",
+                "calcium-phosphorus-080",
+                "calcium-phosphorus-020",
+                "calcium-phosphorus-039",
+                "calcium-phosphorus-013"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-085",
+              "seed": 8,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-099",
+                "calcium-phosphorus-010",
+                "calcium-phosphorus-072",
+                "calcium-phosphorus-085",
+                "calcium-phosphorus-083",
+                "calcium-phosphorus-032",
+                "calcium-phosphorus-109",
+                "calcium-phosphorus-086",
+                "calcium-phosphorus-071",
+                "calcium-phosphorus-049"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-085",
+              "seed": 8,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-099",
+                "calcium-phosphorus-010",
+                "calcium-phosphorus-072",
+                "calcium-phosphorus-085",
+                "calcium-phosphorus-083",
+                "calcium-phosphorus-032",
+                "calcium-phosphorus-109",
+                "calcium-phosphorus-086",
+                "calcium-phosphorus-071",
+                "calcium-phosphorus-049"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-086",
+              "seed": 4,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-034",
+                "calcium-phosphorus-086",
+                "calcium-phosphorus-062",
+                "calcium-phosphorus-067",
+                "calcium-phosphorus-107",
+                "calcium-phosphorus-035",
+                "calcium-phosphorus-002",
+                "calcium-phosphorus-001",
+                "calcium-phosphorus-076",
+                "calcium-phosphorus-018"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-086",
+              "seed": 4,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-034",
+                "calcium-phosphorus-086",
+                "calcium-phosphorus-062",
+                "calcium-phosphorus-067",
+                "calcium-phosphorus-107",
+                "calcium-phosphorus-035",
+                "calcium-phosphorus-002",
+                "calcium-phosphorus-001",
+                "calcium-phosphorus-076",
+                "calcium-phosphorus-018"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-087",
+              "seed": 12,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-079",
+                "calcium-phosphorus-106",
+                "calcium-phosphorus-085",
+                "calcium-phosphorus-015",
+                "calcium-phosphorus-078",
+                "calcium-phosphorus-107",
+                "calcium-phosphorus-041",
+                "calcium-phosphorus-072",
+                "calcium-phosphorus-087",
+                "calcium-phosphorus-077"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-087",
+              "seed": 12,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-079",
+                "calcium-phosphorus-106",
+                "calcium-phosphorus-085",
+                "calcium-phosphorus-015",
+                "calcium-phosphorus-078",
+                "calcium-phosphorus-107",
+                "calcium-phosphorus-041",
+                "calcium-phosphorus-072",
+                "calcium-phosphorus-087",
+                "calcium-phosphorus-077"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-088",
+              "seed": 10,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-011",
+                "calcium-phosphorus-076",
+                "calcium-phosphorus-023",
+                "calcium-phosphorus-101",
+                "calcium-phosphorus-008",
+                "calcium-phosphorus-070",
+                "calcium-phosphorus-083",
+                "calcium-phosphorus-103",
+                "calcium-phosphorus-088",
+                "calcium-phosphorus-074"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-088",
+              "seed": 10,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-011",
+                "calcium-phosphorus-076",
+                "calcium-phosphorus-023",
+                "calcium-phosphorus-101",
+                "calcium-phosphorus-008",
+                "calcium-phosphorus-070",
+                "calcium-phosphorus-083",
+                "calcium-phosphorus-103",
+                "calcium-phosphorus-088",
+                "calcium-phosphorus-074"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-089",
+              "seed": 3,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-027",
+                "calcium-phosphorus-029",
+                "calcium-phosphorus-094",
+                "calcium-phosphorus-065",
+                "calcium-phosphorus-070",
+                "calcium-phosphorus-089",
+                "calcium-phosphorus-022",
+                "calcium-phosphorus-031",
+                "calcium-phosphorus-061",
+                "calcium-phosphorus-002"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-089",
+              "seed": 3,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-027",
+                "calcium-phosphorus-029",
+                "calcium-phosphorus-094",
+                "calcium-phosphorus-065",
+                "calcium-phosphorus-070",
+                "calcium-phosphorus-089",
+                "calcium-phosphorus-022",
+                "calcium-phosphorus-031",
+                "calcium-phosphorus-061",
+                "calcium-phosphorus-002"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-098",
+              "seed": 1,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-008",
+                "calcium-phosphorus-094",
+                "calcium-phosphorus-066",
+                "calcium-phosphorus-095",
+                "calcium-phosphorus-043",
+                "calcium-phosphorus-042",
+                "calcium-phosphorus-035",
+                "calcium-phosphorus-098",
+                "calcium-phosphorus-074",
+                "calcium-phosphorus-070"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-098",
+              "seed": 1,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-008",
+                "calcium-phosphorus-094",
+                "calcium-phosphorus-066",
+                "calcium-phosphorus-095",
+                "calcium-phosphorus-043",
+                "calcium-phosphorus-042",
+                "calcium-phosphorus-035",
+                "calcium-phosphorus-098",
+                "calcium-phosphorus-074",
+                "calcium-phosphorus-070"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-107",
+              "seed": 4,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-034",
+                "calcium-phosphorus-086",
+                "calcium-phosphorus-062",
+                "calcium-phosphorus-067",
+                "calcium-phosphorus-107",
+                "calcium-phosphorus-035",
+                "calcium-phosphorus-002",
+                "calcium-phosphorus-001",
+                "calcium-phosphorus-076",
+                "calcium-phosphorus-018"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-107",
+              "seed": 4,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-034",
+                "calcium-phosphorus-086",
+                "calcium-phosphorus-062",
+                "calcium-phosphorus-067",
+                "calcium-phosphorus-107",
+                "calcium-phosphorus-035",
+                "calcium-phosphorus-002",
+                "calcium-phosphorus-001",
+                "calcium-phosphorus-076",
+                "calcium-phosphorus-018"
+              ]
+            }
+          ],
+          "noHorizontalOverflow": true,
+          "unauthenticated": true
+        },
+        {
+          "width": 390,
+          "module": "calcium-phosphorus-homeostasis",
+          "bodies": 24,
+          "exactMetadata": true,
+          "checkResults": [
+            {
+              "slug": "hypophosphatemia",
+              "wrong": true,
+              "feedbackAndAnchorVerified": true
+            },
+            {
+              "slug": "hypophosphatemia",
+              "wrong": false,
+              "feedbackAndAnchorVerified": true
+            }
+          ],
+          "references": 11,
+          "wholeLessonVerified": false,
+          "attempts": [
+            {
+              "target": "calcium-phosphorus-038",
+              "seed": 5,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-022",
+                "calcium-phosphorus-042",
+                "calcium-phosphorus-038",
+                "calcium-phosphorus-025",
+                "calcium-phosphorus-012",
+                "calcium-phosphorus-091",
+                "calcium-phosphorus-077",
+                "calcium-phosphorus-048",
+                "calcium-phosphorus-072",
+                "calcium-phosphorus-060"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-038",
+              "seed": 5,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-022",
+                "calcium-phosphorus-042",
+                "calcium-phosphorus-038",
+                "calcium-phosphorus-025",
+                "calcium-phosphorus-012",
+                "calcium-phosphorus-091",
+                "calcium-phosphorus-077",
+                "calcium-phosphorus-048",
+                "calcium-phosphorus-072",
+                "calcium-phosphorus-060"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-039",
+              "seed": 2,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-033",
+                "calcium-phosphorus-007",
+                "calcium-phosphorus-065",
+                "calcium-phosphorus-066",
+                "calcium-phosphorus-003",
+                "calcium-phosphorus-074",
+                "calcium-phosphorus-030",
+                "calcium-phosphorus-039",
+                "calcium-phosphorus-041",
+                "calcium-phosphorus-083"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-039",
+              "seed": 2,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-033",
+                "calcium-phosphorus-007",
+                "calcium-phosphorus-065",
+                "calcium-phosphorus-066",
+                "calcium-phosphorus-003",
+                "calcium-phosphorus-074",
+                "calcium-phosphorus-030",
+                "calcium-phosphorus-039",
+                "calcium-phosphorus-041",
+                "calcium-phosphorus-083"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-040",
+              "seed": 16,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-079",
+                "calcium-phosphorus-007",
+                "calcium-phosphorus-003",
+                "calcium-phosphorus-013",
+                "calcium-phosphorus-040",
+                "calcium-phosphorus-081",
+                "calcium-phosphorus-067",
+                "calcium-phosphorus-012",
+                "calcium-phosphorus-098",
+                "calcium-phosphorus-036"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-040",
+              "seed": 16,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-079",
+                "calcium-phosphorus-007",
+                "calcium-phosphorus-003",
+                "calcium-phosphorus-013",
+                "calcium-phosphorus-040",
+                "calcium-phosphorus-081",
+                "calcium-phosphorus-067",
+                "calcium-phosphorus-012",
+                "calcium-phosphorus-098",
+                "calcium-phosphorus-036"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-080",
+              "seed": 9,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-031",
+                "calcium-phosphorus-016",
+                "calcium-phosphorus-084",
+                "calcium-phosphorus-011",
+                "calcium-phosphorus-083",
+                "calcium-phosphorus-066",
+                "calcium-phosphorus-080",
+                "calcium-phosphorus-020",
+                "calcium-phosphorus-039",
+                "calcium-phosphorus-013"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-080",
+              "seed": 9,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-031",
+                "calcium-phosphorus-016",
+                "calcium-phosphorus-084",
+                "calcium-phosphorus-011",
+                "calcium-phosphorus-083",
+                "calcium-phosphorus-066",
+                "calcium-phosphorus-080",
+                "calcium-phosphorus-020",
+                "calcium-phosphorus-039",
+                "calcium-phosphorus-013"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-081",
+              "seed": 13,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-063",
+                "calcium-phosphorus-034",
+                "calcium-phosphorus-083",
+                "calcium-phosphorus-081",
+                "calcium-phosphorus-047",
+                "calcium-phosphorus-019",
+                "calcium-phosphorus-021",
+                "calcium-phosphorus-050",
+                "calcium-phosphorus-038",
+                "calcium-phosphorus-004"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-081",
+              "seed": 13,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-063",
+                "calcium-phosphorus-034",
+                "calcium-phosphorus-083",
+                "calcium-phosphorus-081",
+                "calcium-phosphorus-047",
+                "calcium-phosphorus-019",
+                "calcium-phosphorus-021",
+                "calcium-phosphorus-050",
+                "calcium-phosphorus-038",
+                "calcium-phosphorus-004"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-082",
+              "seed": 14,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-023",
+                "calcium-phosphorus-086",
+                "calcium-phosphorus-082",
+                "calcium-phosphorus-069",
+                "calcium-phosphorus-070",
+                "calcium-phosphorus-049",
+                "calcium-phosphorus-076",
+                "calcium-phosphorus-073",
+                "calcium-phosphorus-013",
+                "calcium-phosphorus-079"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-082",
+              "seed": 14,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-023",
+                "calcium-phosphorus-086",
+                "calcium-phosphorus-082",
+                "calcium-phosphorus-069",
+                "calcium-phosphorus-070",
+                "calcium-phosphorus-049",
+                "calcium-phosphorus-076",
+                "calcium-phosphorus-073",
+                "calcium-phosphorus-013",
+                "calcium-phosphorus-079"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-083",
+              "seed": 2,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-033",
+                "calcium-phosphorus-007",
+                "calcium-phosphorus-065",
+                "calcium-phosphorus-066",
+                "calcium-phosphorus-003",
+                "calcium-phosphorus-074",
+                "calcium-phosphorus-030",
+                "calcium-phosphorus-039",
+                "calcium-phosphorus-041",
+                "calcium-phosphorus-083"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-083",
+              "seed": 2,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-033",
+                "calcium-phosphorus-007",
+                "calcium-phosphorus-065",
+                "calcium-phosphorus-066",
+                "calcium-phosphorus-003",
+                "calcium-phosphorus-074",
+                "calcium-phosphorus-030",
+                "calcium-phosphorus-039",
+                "calcium-phosphorus-041",
+                "calcium-phosphorus-083"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-084",
+              "seed": 9,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-031",
+                "calcium-phosphorus-016",
+                "calcium-phosphorus-084",
+                "calcium-phosphorus-011",
+                "calcium-phosphorus-083",
+                "calcium-phosphorus-066",
+                "calcium-phosphorus-080",
+                "calcium-phosphorus-020",
+                "calcium-phosphorus-039",
+                "calcium-phosphorus-013"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-084",
+              "seed": 9,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-031",
+                "calcium-phosphorus-016",
+                "calcium-phosphorus-084",
+                "calcium-phosphorus-011",
+                "calcium-phosphorus-083",
+                "calcium-phosphorus-066",
+                "calcium-phosphorus-080",
+                "calcium-phosphorus-020",
+                "calcium-phosphorus-039",
+                "calcium-phosphorus-013"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-085",
+              "seed": 8,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-099",
+                "calcium-phosphorus-010",
+                "calcium-phosphorus-072",
+                "calcium-phosphorus-085",
+                "calcium-phosphorus-083",
+                "calcium-phosphorus-032",
+                "calcium-phosphorus-109",
+                "calcium-phosphorus-086",
+                "calcium-phosphorus-071",
+                "calcium-phosphorus-049"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-085",
+              "seed": 8,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-099",
+                "calcium-phosphorus-010",
+                "calcium-phosphorus-072",
+                "calcium-phosphorus-085",
+                "calcium-phosphorus-083",
+                "calcium-phosphorus-032",
+                "calcium-phosphorus-109",
+                "calcium-phosphorus-086",
+                "calcium-phosphorus-071",
+                "calcium-phosphorus-049"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-086",
+              "seed": 4,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-034",
+                "calcium-phosphorus-086",
+                "calcium-phosphorus-062",
+                "calcium-phosphorus-067",
+                "calcium-phosphorus-107",
+                "calcium-phosphorus-035",
+                "calcium-phosphorus-002",
+                "calcium-phosphorus-001",
+                "calcium-phosphorus-076",
+                "calcium-phosphorus-018"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-086",
+              "seed": 4,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-034",
+                "calcium-phosphorus-086",
+                "calcium-phosphorus-062",
+                "calcium-phosphorus-067",
+                "calcium-phosphorus-107",
+                "calcium-phosphorus-035",
+                "calcium-phosphorus-002",
+                "calcium-phosphorus-001",
+                "calcium-phosphorus-076",
+                "calcium-phosphorus-018"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-087",
+              "seed": 12,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-079",
+                "calcium-phosphorus-106",
+                "calcium-phosphorus-085",
+                "calcium-phosphorus-015",
+                "calcium-phosphorus-078",
+                "calcium-phosphorus-107",
+                "calcium-phosphorus-041",
+                "calcium-phosphorus-072",
+                "calcium-phosphorus-087",
+                "calcium-phosphorus-077"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-087",
+              "seed": 12,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-079",
+                "calcium-phosphorus-106",
+                "calcium-phosphorus-085",
+                "calcium-phosphorus-015",
+                "calcium-phosphorus-078",
+                "calcium-phosphorus-107",
+                "calcium-phosphorus-041",
+                "calcium-phosphorus-072",
+                "calcium-phosphorus-087",
+                "calcium-phosphorus-077"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-088",
+              "seed": 10,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-011",
+                "calcium-phosphorus-076",
+                "calcium-phosphorus-023",
+                "calcium-phosphorus-101",
+                "calcium-phosphorus-008",
+                "calcium-phosphorus-070",
+                "calcium-phosphorus-083",
+                "calcium-phosphorus-103",
+                "calcium-phosphorus-088",
+                "calcium-phosphorus-074"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-088",
+              "seed": 10,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-011",
+                "calcium-phosphorus-076",
+                "calcium-phosphorus-023",
+                "calcium-phosphorus-101",
+                "calcium-phosphorus-008",
+                "calcium-phosphorus-070",
+                "calcium-phosphorus-083",
+                "calcium-phosphorus-103",
+                "calcium-phosphorus-088",
+                "calcium-phosphorus-074"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-089",
+              "seed": 3,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-027",
+                "calcium-phosphorus-029",
+                "calcium-phosphorus-094",
+                "calcium-phosphorus-065",
+                "calcium-phosphorus-070",
+                "calcium-phosphorus-089",
+                "calcium-phosphorus-022",
+                "calcium-phosphorus-031",
+                "calcium-phosphorus-061",
+                "calcium-phosphorus-002"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-089",
+              "seed": 3,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-027",
+                "calcium-phosphorus-029",
+                "calcium-phosphorus-094",
+                "calcium-phosphorus-065",
+                "calcium-phosphorus-070",
+                "calcium-phosphorus-089",
+                "calcium-phosphorus-022",
+                "calcium-phosphorus-031",
+                "calcium-phosphorus-061",
+                "calcium-phosphorus-002"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-098",
+              "seed": 1,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-008",
+                "calcium-phosphorus-094",
+                "calcium-phosphorus-066",
+                "calcium-phosphorus-095",
+                "calcium-phosphorus-043",
+                "calcium-phosphorus-042",
+                "calcium-phosphorus-035",
+                "calcium-phosphorus-098",
+                "calcium-phosphorus-074",
+                "calcium-phosphorus-070"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-098",
+              "seed": 1,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-008",
+                "calcium-phosphorus-094",
+                "calcium-phosphorus-066",
+                "calcium-phosphorus-095",
+                "calcium-phosphorus-043",
+                "calcium-phosphorus-042",
+                "calcium-phosphorus-035",
+                "calcium-phosphorus-098",
+                "calcium-phosphorus-074",
+                "calcium-phosphorus-070"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-107",
+              "seed": 4,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-034",
+                "calcium-phosphorus-086",
+                "calcium-phosphorus-062",
+                "calcium-phosphorus-067",
+                "calcium-phosphorus-107",
+                "calcium-phosphorus-035",
+                "calcium-phosphorus-002",
+                "calcium-phosphorus-001",
+                "calcium-phosphorus-076",
+                "calcium-phosphorus-018"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-107",
+              "seed": 4,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-034",
+                "calcium-phosphorus-086",
+                "calcium-phosphorus-062",
+                "calcium-phosphorus-067",
+                "calcium-phosphorus-107",
+                "calcium-phosphorus-035",
+                "calcium-phosphorus-002",
+                "calcium-phosphorus-001",
+                "calcium-phosphorus-076",
+                "calcium-phosphorus-018"
+              ]
+            }
+          ],
+          "noHorizontalOverflow": true,
+          "unauthenticated": true
+        },
+        {
+          "width": 1440,
+          "route": "cumulative",
+          "attempts": [
+            {
+              "id": "cumulative-calcium-phosphorus-homeostasis-calcium-phosphorus-084",
+              "wrong": true,
+              "seed": 1,
+              "feedbackAndModuleLinkVerified": true
+            },
+            {
+              "id": "cumulative-calcium-phosphorus-homeostasis-calcium-phosphorus-084",
+              "wrong": false,
+              "seed": 1,
+              "feedbackAndModuleLinkVerified": true
+            }
+          ]
+        },
+        {
+          "width": 390,
+          "route": "cumulative",
+          "attempts": [
+            {
+              "id": "cumulative-calcium-phosphorus-homeostasis-calcium-phosphorus-084",
+              "wrong": true,
+              "seed": 1,
+              "feedbackAndModuleLinkVerified": true
+            },
+            {
+              "id": "cumulative-calcium-phosphorus-homeostasis-calcium-phosphorus-084",
+              "wrong": false,
+              "seed": 1,
+              "feedbackAndModuleLinkVerified": true
+            }
+          ]
+        }
+      ],
+      "errors": [],
+      "captures": [
+        "body-module-Choose-1440.png",
+        "body-module-Monitor-1440.png",
+        "references-module-1440.png",
+        "question-calcium-phosphorus-038-correct-1440.png",
+        "question-calcium-phosphorus-039-correct-1440.png",
+        "question-calcium-phosphorus-040-correct-1440.png",
+        "question-calcium-phosphorus-080-correct-1440.png",
+        "question-calcium-phosphorus-081-correct-1440.png",
+        "question-calcium-phosphorus-082-correct-1440.png",
+        "question-calcium-phosphorus-083-correct-1440.png",
+        "question-calcium-phosphorus-084-correct-1440.png",
+        "question-calcium-phosphorus-085-correct-1440.png",
+        "question-calcium-phosphorus-086-correct-1440.png",
+        "question-calcium-phosphorus-087-correct-1440.png",
+        "question-calcium-phosphorus-088-correct-1440.png",
+        "question-calcium-phosphorus-089-correct-1440.png",
+        "question-calcium-phosphorus-098-correct-1440.png",
+        "question-calcium-phosphorus-107-correct-1440.png",
+        "check-hypophosphatemia-incorrect-1440.png",
+        "check-hypophosphatemia-correct-1440.png",
+        "body-module-Choose-390.png",
+        "body-module-Monitor-390.png",
+        "references-module-390.png",
+        "question-calcium-phosphorus-038-incorrect-390.png",
+        "question-calcium-phosphorus-039-incorrect-390.png",
+        "question-calcium-phosphorus-040-incorrect-390.png",
+        "question-calcium-phosphorus-080-incorrect-390.png",
+        "question-calcium-phosphorus-081-incorrect-390.png",
+        "question-calcium-phosphorus-082-incorrect-390.png",
+        "question-calcium-phosphorus-083-incorrect-390.png",
+        "question-calcium-phosphorus-084-incorrect-390.png",
+        "question-calcium-phosphorus-085-incorrect-390.png",
+        "question-calcium-phosphorus-086-incorrect-390.png",
+        "question-calcium-phosphorus-087-incorrect-390.png",
+        "question-calcium-phosphorus-088-incorrect-390.png",
+        "question-calcium-phosphorus-089-incorrect-390.png",
+        "question-calcium-phosphorus-098-incorrect-390.png",
+        "question-calcium-phosphorus-107-incorrect-390.png",
+        "check-hypophosphatemia-incorrect-390.png",
+        "check-hypophosphatemia-correct-390.png",
+        "cumulative-084-incorrect-1440.png",
+        "cumulative-084-correct-1440.png",
+        "cumulative-084-incorrect-390.png",
+        "cumulative-084-correct-390.png"
+      ]
+    },
+    "visualInspection": {
+      "status": "passed",
+      "rawCapturesActuallyViewed": 44,
+      "nativeComparisonsActuallyViewed": 22,
+      "observations": "Both full revised bodies,allreferences,15 module questions,check andderivedcumulative084 legibledesktop/mobile;correctandincorrect feedback/reviewlinkschecked. No clipping or horizontaloverflow. Existing UI preserved.",
+      "browserHarnessCorrection": "Cumulative questions selected by stable input/question ID because stems canrepeat;no productchangeforthisharnessfix."
+    },
+    "visualManifest": [
+      {
+        "comparison": "visual-compare-1.png",
+        "rawCaptures": [
+          "body-module-Choose-1440.png",
+          "body-module-Choose-390.png"
+        ],
+        "nativePixelsPreserved": true,
+        "canvasDimensions": [
+          1305,
+          696
+        ]
+      },
+      {
+        "comparison": "visual-compare-2.png",
+        "rawCaptures": [
+          "body-module-Monitor-1440.png",
+          "body-module-Monitor-390.png"
+        ],
+        "nativePixelsPreserved": true,
+        "canvasDimensions": [
+          1305,
+          670
+        ]
+      },
+      {
+        "comparison": "visual-compare-3.png",
+        "rawCaptures": [
+          "references-module-1440.png",
+          "references-module-390.png"
+        ],
+        "nativePixelsPreserved": true,
+        "canvasDimensions": [
+          1305,
+          1120
+        ]
+      },
+      {
+        "comparison": "visual-compare-4.png",
+        "rawCaptures": [
+          "question-calcium-phosphorus-038-correct-1440.png",
+          "question-calcium-phosphorus-038-incorrect-390.png"
+        ],
+        "nativePixelsPreserved": true,
+        "canvasDimensions": [
+          1305,
+          838
+        ]
+      },
+      {
+        "comparison": "visual-compare-5.png",
+        "rawCaptures": [
+          "question-calcium-phosphorus-039-correct-1440.png",
+          "question-calcium-phosphorus-039-incorrect-390.png"
+        ],
+        "nativePixelsPreserved": true,
+        "canvasDimensions": [
+          1305,
+          780
+        ]
+      },
+      {
+        "comparison": "visual-compare-6.png",
+        "rawCaptures": [
+          "question-calcium-phosphorus-040-correct-1440.png",
+          "question-calcium-phosphorus-040-incorrect-390.png"
+        ],
+        "nativePixelsPreserved": true,
+        "canvasDimensions": [
+          1305,
+          800
+        ]
+      },
+      {
+        "comparison": "visual-compare-7.png",
+        "rawCaptures": [
+          "question-calcium-phosphorus-080-correct-1440.png",
+          "question-calcium-phosphorus-080-incorrect-390.png"
+        ],
+        "nativePixelsPreserved": true,
+        "canvasDimensions": [
+          1305,
+          811
+        ]
+      },
+      {
+        "comparison": "visual-compare-8.png",
+        "rawCaptures": [
+          "question-calcium-phosphorus-081-correct-1440.png",
+          "question-calcium-phosphorus-081-incorrect-390.png"
+        ],
+        "nativePixelsPreserved": true,
+        "canvasDimensions": [
+          1305,
+          811
+        ]
+      },
+      {
+        "comparison": "visual-compare-9.png",
+        "rawCaptures": [
+          "question-calcium-phosphorus-082-correct-1440.png",
+          "question-calcium-phosphorus-082-incorrect-390.png"
+        ],
+        "nativePixelsPreserved": true,
+        "canvasDimensions": [
+          1305,
+          811
+        ]
+      },
+      {
+        "comparison": "visual-compare-10.png",
+        "rawCaptures": [
+          "question-calcium-phosphorus-083-correct-1440.png",
+          "question-calcium-phosphorus-083-incorrect-390.png"
+        ],
+        "nativePixelsPreserved": true,
+        "canvasDimensions": [
+          1305,
+          811
+        ]
+      },
+      {
+        "comparison": "visual-compare-11.png",
+        "rawCaptures": [
+          "question-calcium-phosphorus-084-correct-1440.png",
+          "question-calcium-phosphorus-084-incorrect-390.png"
+        ],
+        "nativePixelsPreserved": true,
+        "canvasDimensions": [
+          1305,
+          810
+        ]
+      },
+      {
+        "comparison": "visual-compare-12.png",
+        "rawCaptures": [
+          "question-calcium-phosphorus-085-correct-1440.png",
+          "question-calcium-phosphorus-085-incorrect-390.png"
+        ],
+        "nativePixelsPreserved": true,
+        "canvasDimensions": [
+          1305,
+          811
+        ]
+      },
+      {
+        "comparison": "visual-compare-13.png",
+        "rawCaptures": [
+          "question-calcium-phosphorus-086-correct-1440.png",
+          "question-calcium-phosphorus-086-incorrect-390.png"
+        ],
+        "nativePixelsPreserved": true,
+        "canvasDimensions": [
+          1305,
+          810
+        ]
+      },
+      {
+        "comparison": "visual-compare-14.png",
+        "rawCaptures": [
+          "question-calcium-phosphorus-087-correct-1440.png",
+          "question-calcium-phosphorus-087-incorrect-390.png"
+        ],
+        "nativePixelsPreserved": true,
+        "canvasDimensions": [
+          1305,
+          811
+        ]
+      },
+      {
+        "comparison": "visual-compare-15.png",
+        "rawCaptures": [
+          "question-calcium-phosphorus-088-correct-1440.png",
+          "question-calcium-phosphorus-088-incorrect-390.png"
+        ],
+        "nativePixelsPreserved": true,
+        "canvasDimensions": [
+          1305,
+          811
+        ]
+      },
+      {
+        "comparison": "visual-compare-16.png",
+        "rawCaptures": [
+          "question-calcium-phosphorus-089-correct-1440.png",
+          "question-calcium-phosphorus-089-incorrect-390.png"
+        ],
+        "nativePixelsPreserved": true,
+        "canvasDimensions": [
+          1305,
+          811
+        ]
+      },
+      {
+        "comparison": "visual-compare-17.png",
+        "rawCaptures": [
+          "question-calcium-phosphorus-098-correct-1440.png",
+          "question-calcium-phosphorus-098-incorrect-390.png"
+        ],
+        "nativePixelsPreserved": true,
+        "canvasDimensions": [
+          1305,
+          923
+        ]
+      },
+      {
+        "comparison": "visual-compare-18.png",
+        "rawCaptures": [
+          "question-calcium-phosphorus-107-correct-1440.png",
+          "question-calcium-phosphorus-107-incorrect-390.png"
+        ],
+        "nativePixelsPreserved": true,
+        "canvasDimensions": [
+          1305,
+          923
+        ]
+      },
+      {
+        "comparison": "visual-compare-19.png",
+        "rawCaptures": [
+          "check-hypophosphatemia-correct-1440.png",
+          "check-hypophosphatemia-correct-390.png"
+        ],
+        "nativePixelsPreserved": true,
+        "canvasDimensions": [
+          1305,
+          781
+        ]
+      },
+      {
+        "comparison": "visual-compare-20.png",
+        "rawCaptures": [
+          "check-hypophosphatemia-incorrect-1440.png",
+          "check-hypophosphatemia-incorrect-390.png"
+        ],
+        "nativePixelsPreserved": true,
+        "canvasDimensions": [
+          1305,
+          781
+        ]
+      },
+      {
+        "comparison": "visual-compare-21.png",
+        "rawCaptures": [
+          "cumulative-084-correct-1440.png",
+          "cumulative-084-correct-390.png"
+        ],
+        "nativePixelsPreserved": true,
+        "canvasDimensions": [
+          1407,
+          810
+        ]
+      },
+      {
+        "comparison": "visual-compare-22.png",
+        "rawCaptures": [
+          "cumulative-084-incorrect-1440.png",
+          "cumulative-084-incorrect-390.png"
+        ],
+        "nativePixelsPreserved": true,
+        "canvasDimensions": [
+          1407,
+          810
+        ]
+      }
+    ],
+    "limits": "Unauthenticated isolated localpreview; no account persistence,main merge orproduction verification. Capture viewportrepaint doesnot alterproductUI."
+  },
+  "remainingReview": {
+    "wholeFinalHypophosphatemiaLesson": {
+      "slug": "hypophosphatemia",
+      "title": "Hypophosphatemia",
+      "summary": "Low phosphate may reflect redistribution, reduced absorption, or renal loss. Severe depletion can impair respiratory, cardiac, neurologic, and hematologic function.",
+      "concepts": [
+        "Redistribution and refeeding",
+        "Renal and gastrointestinal loss",
+        "Oral versus IV replacement",
+        "Potassium and sodium phosphate selection"
+      ],
+      "visual": "phosphate-balance",
+      "application": "Before replacing phosphate, identify why it is low, whether the patient is symptomatic, which accompanying cation is appropriate, and what kidney function permits.",
+      "lesson": [
+        {
+          "heading": "Classify the mechanism",
+          "body": "Insulin, respiratory alkalosis, catecholamines, and refeeding can shift phosphate into cells. Poor intake, malabsorption, antacids, or binders can reduce absorption. Hyperparathyroidism, tubular disorders, and selected medications can increase renal loss. Urine phosphate assessment can help when the mechanism remains unclear. Ferric carboxymaltose can produce FGF23-mediated renal phosphate wasting, including serious symptomatic hypophosphatemia after repeated exposure."
+        },
+        {
+          "heading": "Recognize severe depletion",
+          "body": "Profound hypophosphatemia can cause weakness, respiratory failure, rhabdomyolysis, encephalopathy, seizures, hemolysis, platelet dysfunction, and impaired myocardial performance. A laboratory threshold should never replace assessment of symptoms, duration, organ function, and concurrent potassium, magnesium, and calcium abnormalities."
+        },
+        {
+          "heading": "Choose route and product deliberately",
+          "body": "Oral replacement is preferred for stable, less severe depletion when absorption is reliable. Severe symptomatic depletion can require IV replacement. The potassium-phosphates label also permits IV correction when oral or enteral replacement is not possible, insufficient or contraindicated; IV use is not limited to severity alone. Select the actual product and an individualized institutional plan. Potassium phosphate adds potassium and is contraindicated in hyperkalemia and severe renal impairment; sodium phosphate adds sodium and requires caution in renal impairment and sodium-retaining states. Sodium phosphate is not automatically safe: high sodium, high phosphate and low calcium are contraindications in its label. Review potassium, sodium, phosphate, calcium, kidney function, other intake, access, dilution and infusion rate. Concentrated phosphate injection must be diluted before administration."
+        },
+        {
+          "heading": "Monitor for overcorrection",
+          "body": "IV phosphate can cause hypocalcemia, hypotension, acute kidney injury, hyperphosphatemia and calcium-phosphate precipitation. Follow phosphate, calcium, potassium, magnesium and kidney function and reassess before additional doses. The potassium-phosphates label prohibits infusion with calcium-containing IV fluids; obtain a safe access plan rather than co-infusing through a shared calcium line. Separately compounded parenteral nutrition requires its own evaluation of calcium-phosphate ratios, concentrations, pH, temperature, compatibility and stability. That admixture assessment does not authorize shared-line replacement infusions. Dilution, product-specific concentration and rate limits, and repeat laboratory assessment protect against overcorrection; do not transfer one product’s instructions to another."
+        }
+      ],
+      "keyPoints": [
+        "Refeeding and respiratory alkalosis can lower phosphate rapidly.",
+        "Respiratory weakness is a dangerous manifestation.",
+        "Choose sodium or potassium phosphate based on the entire electrolyte pattern.",
+        "IV phosphate requires close mineral and kidney monitoring."
+      ],
+      "check": {
+        "question": "A patient with severe hypophosphatemia also has hyperkalemia and requires IV replacement. Which product characteristic matters most?",
+        "choices": [
+          "Avoid potassium phosphate; assess a non-potassium plan and its sodium, renal and calcium limits",
+          "Use potassium phosphate because phosphate is low",
+          "Combine calcium and phosphate in one line",
+          "Ignore kidney function"
+        ],
+        "answer": 0,
+        "rationale": "Potassium phosphates injection is contraindicated in hyperkalemia. Sodium phosphate avoids additional potassium but adds sodium and is not automatically suitable: review sodium, calcium, phosphate, kidney function and the actual label before choosing a replacement plan. Giving potassium solely because phosphate is low, co-infusing with calcium, or ignoring kidney function is unsafe.",
+        "reviewHref": "#hypophosphatemia"
+      }
+    },
+    "allFinalLessonQuestionObjects": [
+      {
+        "id": "calcium-phosphorus-036",
+        "question": "Which mechanism commonly lowers phosphate during refeeding?",
+        "choices": [
+          "Insulin-driven intracellular uptake",
+          "Immediate renal failure",
+          "Complete intestinal blockade by glucose",
+          "PTH suppression alone"
+        ],
+        "answer": 0,
+        "rationale": "Carbohydrate delivery raises insulin and shifts phosphate, potassium, and magnesium into cells.",
+        "reviewHref": "#hypophosphatemia"
+      },
+      {
+        "id": "calcium-phosphorus-037",
+        "question": "Why can severe hypophosphatemia cause respiratory failure?",
+        "choices": [
+          "ATP depletion weakens respiratory muscles",
+          "It always causes bronchospasm",
+          "It raises hemoglobin oxygen affinity only",
+          "It blocks albumin production immediately"
+        ],
+        "answer": 0,
+        "rationale": "Phosphate depletion impairs cellular energy and muscle function.",
+        "reviewHref": "#hypophosphatemia"
+      },
+      {
+        "id": "calcium-phosphorus-038",
+        "question": "Which presentation supports IV rather than oral phosphate replacement?",
+        "choices": [
+          "Severe symptomatic depletion with unreliable enteral absorption",
+          "Stable mild asymptomatic depletion with a working gut",
+          "Normal phosphate",
+          "Hyperphosphatemia"
+        ],
+        "answer": 0,
+        "rationale": "Severe symptomatic depletion with unreliable enteral absorption supports monitored IV replacement. The supplied book describes IV treatment for severe depletion; the potassium-phosphates label permits IV correction when oral or enteral replacement is not possible, insufficient or contraindicated. Severity is therefore not the only route criterion. Stable mild depletion with a functioning gut favors oral replacement, while normal or high phosphate does not justify replacement. Product choice, kidney function, accompanying potassium or sodium, calcium, dilution and monitoring still require assessment.",
+        "reviewHref": "#hypophosphatemia"
+      },
+      {
+        "id": "calcium-phosphorus-039",
+        "question": "Why must potassium be reviewed before selecting potassium phosphate?",
+        "choices": [
+          "The product adds clinically important potassium",
+          "Potassium phosphate contains no phosphate",
+          "Potassium never changes in illness",
+          "It prevents all arrhythmias"
+        ],
+        "answer": 0,
+        "rationale": "Potassium phosphates injection supplies both phosphate and potassium: the reviewed concentrate contains 3 mmol phosphorus and 4.4 mEq potassium per mL. Its potassium load must be counted with other sources and can worsen hyperkalemia; the product is contraindicated in hyperkalemia. It contains phosphate, illness can change potassium, and adding potassium does not prevent every arrhythmia. A concurrent potassium deficit may influence selection only after the complete product and patient safety review.",
+        "reviewHref": "#hypophosphatemia"
+      },
+      {
+        "id": "calcium-phosphorus-040",
+        "question": "Which complication can follow overly aggressive IV phosphate?",
+        "choices": [
+          "Hypocalcemia and calcium-phosphate precipitation",
+          "Permanent hypermagnesemia in every patient",
+          "Isolated low LDL",
+          "Respiratory alkalosis in every patient"
+        ],
+        "answer": 0,
+        "rationale": "IV phosphate can cause hyperphosphatemia, hypocalcemia and calcium-phosphate precipitation, with kidney injury and serious infusion complications. Excessive or rapid administration increases risk. Follow phosphate, calcium, potassium, magnesium and kidney function and use the labeled diluted infusion. The potassium product must not be infused with calcium-containing IV fluids. Permanent hypermagnesemia and respiratory alkalosis are not inevitable consequences, and an isolated LDL change is not the relevant phosphate-infusion hazard.",
+        "reviewHref": "#hypophosphatemia"
+      },
+      {
+        "id": "calcium-phosphorus-041",
+        "question": "Which iron product has a current label warning for serious symptomatic hypophosphatemia, especially after repeated exposure?",
+        "choices": [
+          "Ferric carboxymaltose",
+          "Ferrous sulfate",
+          "Iron sucrose in every patient",
+          "Oral carbonyl iron"
+        ],
+        "answer": 0,
+        "rationale": "Ferric carboxymaltose can increase FGF23 activity and cause renal phosphate wasting, osteomalacia, or fracture after repeated exposure.",
+        "reviewHref": "#hypophosphatemia"
+      },
+      {
+        "id": "calcium-phosphorus-080",
+        "question": "A local protocol specifies 0.08 mmol/kg for a hypothetical phosphate replacement calculation. What amount corresponds to 50 kg before all clinical adjustments?",
+        "choices": [
+          "4 mmol",
+          "625 mmol",
+          "50.08 mmol",
+          "4 mEq calcium"
+        ],
+        "answer": 0,
+        "rationale": "For the explicitly hypothetical protocol in the stem, 50 kg × 0.08 mmol/kg = 4 mmol phosphate; kg cancels. Dividing weight by the factor or adding the two values does not calculate the stated dose. mEq calcium is a different substance and unit. The book contains these historical phosphate factors, but this arithmetic exercise does not select a current product dose, dilution, route or infusion rate. Current product labeling and the patient’s phosphate, potassium, calcium, kidney function and other intake determine the actual prescription.",
+        "reviewHref": "#hypophosphatemia"
+      },
+      {
+        "id": "calcium-phosphorus-081",
+        "question": "A local protocol specifies 0.08 mmol/kg for a hypothetical phosphate replacement calculation. What amount corresponds to 62 kg before all clinical adjustments?",
+        "choices": [
+          "4.96 mmol",
+          "775 mmol",
+          "62.08 mmol",
+          "5 mEq calcium"
+        ],
+        "answer": 0,
+        "rationale": "For the explicitly hypothetical protocol in the stem, 62 kg × 0.08 mmol/kg = 4.96 mmol phosphate; kg cancels. Dividing weight by the factor or adding the two values does not calculate the stated dose. mEq calcium is a different substance and unit. The book contains these historical phosphate factors, but this arithmetic exercise does not select a current product dose, dilution, route or infusion rate. Current product labeling and the patient’s phosphate, potassium, calcium, kidney function and other intake determine the actual prescription.",
+        "reviewHref": "#hypophosphatemia"
+      },
+      {
+        "id": "calcium-phosphorus-082",
+        "question": "A local protocol specifies 0.08 mmol/kg for a hypothetical phosphate replacement calculation. What amount corresponds to 70 kg before all clinical adjustments?",
+        "choices": [
+          "5.6 mmol",
+          "875 mmol",
+          "70.08 mmol",
+          "5.6 mEq calcium"
+        ],
+        "answer": 0,
+        "rationale": "For the explicitly hypothetical protocol in the stem, 70 kg × 0.08 mmol/kg = 5.6 mmol phosphate; kg cancels. Dividing weight by the factor or adding the two values does not calculate the stated dose. mEq calcium is a different substance and unit. The book contains these historical phosphate factors, but this arithmetic exercise does not select a current product dose, dilution, route or infusion rate. Current product labeling and the patient’s phosphate, potassium, calcium, kidney function and other intake determine the actual prescription.",
+        "reviewHref": "#hypophosphatemia"
+      },
+      {
+        "id": "calcium-phosphorus-083",
+        "question": "A local protocol specifies 0.08 mmol/kg for a hypothetical phosphate replacement calculation. What amount corresponds to 85 kg before all clinical adjustments?",
+        "choices": [
+          "6.8 mmol",
+          "1062.5 mmol",
+          "85.08 mmol",
+          "6.8 mEq calcium"
+        ],
+        "answer": 0,
+        "rationale": "For the explicitly hypothetical protocol in the stem, 85 kg × 0.08 mmol/kg = 6.8 mmol phosphate; kg cancels. Dividing weight by the factor or adding the two values does not calculate the stated dose. mEq calcium is a different substance and unit. The book contains these historical phosphate factors, but this arithmetic exercise does not select a current product dose, dilution, route or infusion rate. Current product labeling and the patient’s phosphate, potassium, calcium, kidney function and other intake determine the actual prescription.",
+        "reviewHref": "#hypophosphatemia"
+      },
+      {
+        "id": "calcium-phosphorus-084",
+        "question": "A local protocol specifies 0.08 mmol/kg for a hypothetical phosphate replacement calculation. What amount corresponds to 100 kg before all clinical adjustments?",
+        "choices": [
+          "8 mmol",
+          "1250 mmol",
+          "100.08 mmol",
+          "8 mEq calcium"
+        ],
+        "answer": 0,
+        "rationale": "For the explicitly hypothetical protocol in the stem, 100 kg × 0.08 mmol/kg = 8 mmol phosphate; kg cancels. Dividing weight by the factor or adding the two values does not calculate the stated dose. mEq calcium is a different substance and unit. The book contains these historical phosphate factors, but this arithmetic exercise does not select a current product dose, dilution, route or infusion rate. Current product labeling and the patient’s phosphate, potassium, calcium, kidney function and other intake determine the actual prescription.",
+        "reviewHref": "#hypophosphatemia"
+      },
+      {
+        "id": "calcium-phosphorus-085",
+        "question": "A local protocol specifies 0.16 mmol/kg for a hypothetical phosphate replacement calculation. What amount corresponds to 50 kg before all clinical adjustments?",
+        "choices": [
+          "8 mmol",
+          "312.5 mmol",
+          "50.16 mmol",
+          "8 mEq calcium"
+        ],
+        "answer": 0,
+        "rationale": "For the explicitly hypothetical protocol in the stem, 50 kg × 0.16 mmol/kg = 8 mmol phosphate; kg cancels. Dividing weight by the factor or adding the two values does not calculate the stated dose. mEq calcium is a different substance and unit. The book contains these historical phosphate factors, but this arithmetic exercise does not select a current product dose, dilution, route or infusion rate. Current product labeling and the patient’s phosphate, potassium, calcium, kidney function and other intake determine the actual prescription.",
+        "reviewHref": "#hypophosphatemia"
+      },
+      {
+        "id": "calcium-phosphorus-086",
+        "question": "A local protocol specifies 0.16 mmol/kg for a hypothetical phosphate replacement calculation. What amount corresponds to 62 kg before all clinical adjustments?",
+        "choices": [
+          "9.92 mmol",
+          "387.5 mmol",
+          "62.16 mmol",
+          "9.9 mEq calcium"
+        ],
+        "answer": 0,
+        "rationale": "For the explicitly hypothetical protocol in the stem, 62 kg × 0.16 mmol/kg = 9.92 mmol phosphate; kg cancels. Dividing weight by the factor or adding the two values does not calculate the stated dose. mEq calcium is a different substance and unit. The book contains these historical phosphate factors, but this arithmetic exercise does not select a current product dose, dilution, route or infusion rate. Current product labeling and the patient’s phosphate, potassium, calcium, kidney function and other intake determine the actual prescription.",
+        "reviewHref": "#hypophosphatemia"
+      },
+      {
+        "id": "calcium-phosphorus-087",
+        "question": "A local protocol specifies 0.16 mmol/kg for a hypothetical phosphate replacement calculation. What amount corresponds to 70 kg before all clinical adjustments?",
+        "choices": [
+          "11.2 mmol",
+          "437.5 mmol",
+          "70.16 mmol",
+          "11.2 mEq calcium"
+        ],
+        "answer": 0,
+        "rationale": "For the explicitly hypothetical protocol in the stem, 70 kg × 0.16 mmol/kg = 11.2 mmol phosphate; kg cancels. Dividing weight by the factor or adding the two values does not calculate the stated dose. mEq calcium is a different substance and unit. The book contains these historical phosphate factors, but this arithmetic exercise does not select a current product dose, dilution, route or infusion rate. Current product labeling and the patient’s phosphate, potassium, calcium, kidney function and other intake determine the actual prescription.",
+        "reviewHref": "#hypophosphatemia"
+      },
+      {
+        "id": "calcium-phosphorus-088",
+        "question": "A local protocol specifies 0.16 mmol/kg for a hypothetical phosphate replacement calculation. What amount corresponds to 85 kg before all clinical adjustments?",
+        "choices": [
+          "13.6 mmol",
+          "531.3 mmol",
+          "85.16 mmol",
+          "13.6 mEq calcium"
+        ],
+        "answer": 0,
+        "rationale": "For the explicitly hypothetical protocol in the stem, 85 kg × 0.16 mmol/kg = 13.6 mmol phosphate; kg cancels. Dividing weight by the factor or adding the two values does not calculate the stated dose. mEq calcium is a different substance and unit. The book contains these historical phosphate factors, but this arithmetic exercise does not select a current product dose, dilution, route or infusion rate. Current product labeling and the patient’s phosphate, potassium, calcium, kidney function and other intake determine the actual prescription.",
+        "reviewHref": "#hypophosphatemia"
+      },
+      {
+        "id": "calcium-phosphorus-089",
+        "question": "A local protocol specifies 0.16 mmol/kg for a hypothetical phosphate replacement calculation. What amount corresponds to 100 kg before all clinical adjustments?",
+        "choices": [
+          "16 mmol",
+          "625 mmol",
+          "100.16 mmol",
+          "16 mEq calcium"
+        ],
+        "answer": 0,
+        "rationale": "For the explicitly hypothetical protocol in the stem, 100 kg × 0.16 mmol/kg = 16 mmol phosphate; kg cancels. Dividing weight by the factor or adding the two values does not calculate the stated dose. mEq calcium is a different substance and unit. The book contains these historical phosphate factors, but this arithmetic exercise does not select a current product dose, dilution, route or infusion rate. Current product labeling and the patient’s phosphate, potassium, calcium, kidney function and other intake determine the actual prescription.",
+        "reviewHref": "#hypophosphatemia"
+      },
+      {
+        "id": "calcium-phosphorus-094",
+        "question": "A malnourished patient begins nutrition and develops weakness with a rapid phosphate fall. Which interpretation or action is most defensible?",
+        "choices": [
+          "Refeeding-related intracellular phosphate shift",
+          "Treat the isolated number without evaluating the mechanism",
+          "Ignore kidney function and symptoms",
+          "Delay urgent stabilization until every test returns"
+        ],
+        "answer": 0,
+        "rationale": "Insulin-driven uptake during refeeding can rapidly deplete extracellular phosphate.",
+        "reviewHref": "#hypophosphatemia"
+      },
+      {
+        "id": "calcium-phosphorus-098",
+        "question": "A patient with severe hypophosphatemia has potassium 5.8 mEq/L and oliguric kidney injury. Which interpretation or action is most defensible?",
+        "choices": [
+          "Avoid automatic potassium phosphate and obtain specialist protocol guidance",
+          "Treat the isolated number without evaluating the mechanism",
+          "Ignore kidney function and symptoms",
+          "Delay urgent stabilization until every test returns"
+        ],
+        "answer": 0,
+        "rationale": "A potassium of 5.8 mEq/L is hyperkalemia, and potassium phosphates injection is contraindicated in hyperkalemia. Oliguric acute kidney injury further requires an urgent individualized replacement and monitoring plan; a low phosphate alone does not make potassium phosphate safe. Sodium phosphate avoids that potassium load but adds sodium, has its own high-sodium, high-phosphate and low-calcium contraindications, and requires caution in renal impairment. Do not ignore kidney function, use a fixed plan from one laboratory value, or delay necessary reassessment. The question does not establish a specific replacement dose or a safe sodium-phosphate regimen.",
+        "reviewHref": "#hypophosphatemia"
+      },
+      {
+        "id": "calcium-phosphorus-104",
+        "question": "Phosphate is low after several days of antacid and binder use, with chronic diarrhea. What is the best next interpretation or management principle?",
+        "choices": [
+          "Stop or adjust contributors and replace according to severity and route",
+          "Normalize one laboratory value without a mechanism",
+          "Use the same fixed plan for every patient",
+          "Ignore medication timing"
+        ],
+        "answer": 0,
+        "rationale": "Reduced absorption and gastrointestinal loss are plausible and should be corrected.",
+        "reviewHref": "#hypophosphatemia"
+      },
+      {
+        "id": "calcium-phosphorus-107",
+        "question": "A patient needs IV phosphate and is receiving a calcium infusion through the only available peripheral line. What is the best next interpretation or management principle?",
+        "choices": [
+          "Do not co-infuse potassium phosphate with calcium-containing IV fluids; obtain a safe access plan",
+          "Normalize one laboratory value without a mechanism",
+          "Use the same fixed plan for every patient",
+          "Ignore medication timing"
+        ],
+        "answer": 0,
+        "rationale": "Do not share the calcium infusion for potassium-phosphate replacement: the reviewed potassium-phosphates label explicitly prohibits infusion with calcium-containing IV fluids. Arrange a safe access and administration plan with the treating team rather than treating an unspecified compatibility check as permission to co-infuse. Separately compounded parenteral nutrition has its own validated calcium-phosphate compatibility and stability assessment and does not authorize this shared-line infusion. Precipitation can harm the patient; a single laboratory value, a fixed plan for every patient and ignoring administration timing do not resolve this access hazard.",
+        "reviewHref": "#hypophosphatemia"
+      }
+    ],
+    "pendingQuestionIds": [
+      "calcium-phosphorus-036",
+      "calcium-phosphorus-037",
+      "calcium-phosphorus-041",
+      "calcium-phosphorus-094",
+      "calcium-phosphorus-104"
+    ],
+    "pendingBodyHeadings": [
+      "Classify the mechanism",
+      "Recognize severe depletion"
+    ],
+    "checkVerified": true,
+    "figureAndMetadataPending": true,
+    "noWholeLessonClosure": true,
+    "nextAction": "Continue approved Endocrine Society primary-adrenal-insufficiency and SCCM/ASHP stress-related-bleeding guidance for retained steroid-transition and feeding-related ICU claims. Approval is recorded; read full relevant guideline scopes and tables before adoption. Hydrocortisone formulations has three remaining bodies plus check/figure/metadata before whole lesson closure. Reconcile remaining broader feeding dependencies with original lexical inventory and full retained scope. Calcium/phosphorus hypophosphatemia lesson still has two bodies, remaining question IDs, metadata and figure pending. Continue dependencies before completing Chapter1printed7/PDF19formulaentry15fluidneeds; full82chaptergoal remains active."
+  },
+  "release": {
+    "branch": "audit/rxprep-content-2026-09-24",
+    "commit": null,
+    "push": "pending",
+    "receipt": "enteral-nutrition-broader-phosphate-route-label-release.json",
+    "mainMerge": "not performed",
+    "production": "not verified"
+  },
+  "wholeGoalComplete": false,
+  "privateSourceFilesInGit": false
+}

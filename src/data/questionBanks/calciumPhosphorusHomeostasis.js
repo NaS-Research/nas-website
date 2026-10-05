@@ -110,7 +110,7 @@ const integrationCases = [
   ["A CKD patient reports taking every binder but often skips meals and takes the tablets at bedtime.", "Reconcile each dose with actual phosphate-containing food", "Adherence includes correct timing and indication, not tablet count alone.", "hyperphosphatemia-ckd-mbd"],
 ].map(([caseText, correct, rationale, lesson], index) => q(`10${index}`, `${caseText} What is the best next interpretation or management principle?`, [correct, "Normalize one laboratory value without a mechanism", "Use the same fixed plan for every patient", "Ignore medication timing"], 0, rationale, lesson));
 
-export const calciumPhosphorusHomeostasisQuestionBank = [
+const priorPhosphateRouteQuestionBank = [
   ...core,
   ...correctedCalciumCases,
   ...elementalCalciumCases,
@@ -118,6 +118,61 @@ export const calciumPhosphorusHomeostasisQuestionBank = [
   ...diagnosticCases,
   ...integrationCases,
 ];
+
+const sourceReviewedPhosphateRouteQuestions = {
+  "calcium-phosphorus-038": {
+    "rationale": "Severe symptomatic depletion with unreliable enteral absorption supports monitored IV replacement. The supplied book describes IV treatment for severe depletion; the potassium-phosphates label permits IV correction when oral or enteral replacement is not possible, insufficient or contraindicated. Severity is therefore not the only route criterion. Stable mild depletion with a functioning gut favors oral replacement, while normal or high phosphate does not justify replacement. Product choice, kidney function, accompanying potassium or sodium, calcium, dilution and monitoring still require assessment."
+  },
+  "calcium-phosphorus-039": {
+    "rationale": "Potassium phosphates injection supplies both phosphate and potassium: the reviewed concentrate contains 3 mmol phosphorus and 4.4 mEq potassium per mL. Its potassium load must be counted with other sources and can worsen hyperkalemia; the product is contraindicated in hyperkalemia. It contains phosphate, illness can change potassium, and adding potassium does not prevent every arrhythmia. A concurrent potassium deficit may influence selection only after the complete product and patient safety review."
+  },
+  "calcium-phosphorus-040": {
+    "rationale": "IV phosphate can cause hyperphosphatemia, hypocalcemia and calcium-phosphate precipitation, with kidney injury and serious infusion complications. Excessive or rapid administration increases risk. Follow phosphate, calcium, potassium, magnesium and kidney function and use the labeled diluted infusion. The potassium product must not be infused with calcium-containing IV fluids. Permanent hypermagnesemia and respiratory alkalosis are not inevitable consequences, and an isolated LDL change is not the relevant phosphate-infusion hazard."
+  },
+  "calcium-phosphorus-098": {
+    "rationale": "A potassium of 5.8 mEq/L is hyperkalemia, and potassium phosphates injection is contraindicated in hyperkalemia. Oliguric acute kidney injury further requires an urgent individualized replacement and monitoring plan; a low phosphate alone does not make potassium phosphate safe. Sodium phosphate avoids that potassium load but adds sodium, has its own high-sodium, high-phosphate and low-calcium contraindications, and requires caution in renal impairment. Do not ignore kidney function, use a fixed plan from one laboratory value, or delay necessary reassessment. The question does not establish a specific replacement dose or a safe sodium-phosphate regimen."
+  },
+  "calcium-phosphorus-107": {
+    "rationale": "Do not share the calcium infusion for potassium-phosphate replacement: the reviewed potassium-phosphates label explicitly prohibits infusion with calcium-containing IV fluids. Arrange a safe access and administration plan with the treating team rather than treating an unspecified compatibility check as permission to co-infuse. Separately compounded parenteral nutrition has its own validated calcium-phosphate compatibility and stability assessment and does not authorize this shared-line infusion. Precipitation can harm the patient; a single laboratory value, a fixed plan for every patient and ignoring administration timing do not resolve this access hazard.",
+    "choices": [
+      "Do not co-infuse potassium phosphate with calcium-containing IV fluids; obtain a safe access plan",
+      "Normalize one laboratory value without a mechanism",
+      "Use the same fixed plan for every patient",
+      "Ignore medication timing"
+    ]
+  },
+  "calcium-phosphorus-080": {
+    "rationale": "For the explicitly hypothetical protocol in the stem, 50 kg × 0.08 mmol/kg = 4 mmol phosphate; kg cancels. Dividing weight by the factor or adding the two values does not calculate the stated dose. mEq calcium is a different substance and unit. The book contains these historical phosphate factors, but this arithmetic exercise does not select a current product dose, dilution, route or infusion rate. Current product labeling and the patient’s phosphate, potassium, calcium, kidney function and other intake determine the actual prescription."
+  },
+  "calcium-phosphorus-081": {
+    "rationale": "For the explicitly hypothetical protocol in the stem, 62 kg × 0.08 mmol/kg = 4.96 mmol phosphate; kg cancels. Dividing weight by the factor or adding the two values does not calculate the stated dose. mEq calcium is a different substance and unit. The book contains these historical phosphate factors, but this arithmetic exercise does not select a current product dose, dilution, route or infusion rate. Current product labeling and the patient’s phosphate, potassium, calcium, kidney function and other intake determine the actual prescription."
+  },
+  "calcium-phosphorus-082": {
+    "rationale": "For the explicitly hypothetical protocol in the stem, 70 kg × 0.08 mmol/kg = 5.6 mmol phosphate; kg cancels. Dividing weight by the factor or adding the two values does not calculate the stated dose. mEq calcium is a different substance and unit. The book contains these historical phosphate factors, but this arithmetic exercise does not select a current product dose, dilution, route or infusion rate. Current product labeling and the patient’s phosphate, potassium, calcium, kidney function and other intake determine the actual prescription."
+  },
+  "calcium-phosphorus-083": {
+    "rationale": "For the explicitly hypothetical protocol in the stem, 85 kg × 0.08 mmol/kg = 6.8 mmol phosphate; kg cancels. Dividing weight by the factor or adding the two values does not calculate the stated dose. mEq calcium is a different substance and unit. The book contains these historical phosphate factors, but this arithmetic exercise does not select a current product dose, dilution, route or infusion rate. Current product labeling and the patient’s phosphate, potassium, calcium, kidney function and other intake determine the actual prescription."
+  },
+  "calcium-phosphorus-084": {
+    "rationale": "For the explicitly hypothetical protocol in the stem, 100 kg × 0.08 mmol/kg = 8 mmol phosphate; kg cancels. Dividing weight by the factor or adding the two values does not calculate the stated dose. mEq calcium is a different substance and unit. The book contains these historical phosphate factors, but this arithmetic exercise does not select a current product dose, dilution, route or infusion rate. Current product labeling and the patient’s phosphate, potassium, calcium, kidney function and other intake determine the actual prescription."
+  },
+  "calcium-phosphorus-085": {
+    "rationale": "For the explicitly hypothetical protocol in the stem, 50 kg × 0.16 mmol/kg = 8 mmol phosphate; kg cancels. Dividing weight by the factor or adding the two values does not calculate the stated dose. mEq calcium is a different substance and unit. The book contains these historical phosphate factors, but this arithmetic exercise does not select a current product dose, dilution, route or infusion rate. Current product labeling and the patient’s phosphate, potassium, calcium, kidney function and other intake determine the actual prescription."
+  },
+  "calcium-phosphorus-086": {
+    "rationale": "For the explicitly hypothetical protocol in the stem, 62 kg × 0.16 mmol/kg = 9.92 mmol phosphate; kg cancels. Dividing weight by the factor or adding the two values does not calculate the stated dose. mEq calcium is a different substance and unit. The book contains these historical phosphate factors, but this arithmetic exercise does not select a current product dose, dilution, route or infusion rate. Current product labeling and the patient’s phosphate, potassium, calcium, kidney function and other intake determine the actual prescription."
+  },
+  "calcium-phosphorus-087": {
+    "rationale": "For the explicitly hypothetical protocol in the stem, 70 kg × 0.16 mmol/kg = 11.2 mmol phosphate; kg cancels. Dividing weight by the factor or adding the two values does not calculate the stated dose. mEq calcium is a different substance and unit. The book contains these historical phosphate factors, but this arithmetic exercise does not select a current product dose, dilution, route or infusion rate. Current product labeling and the patient’s phosphate, potassium, calcium, kidney function and other intake determine the actual prescription."
+  },
+  "calcium-phosphorus-088": {
+    "rationale": "For the explicitly hypothetical protocol in the stem, 85 kg × 0.16 mmol/kg = 13.6 mmol phosphate; kg cancels. Dividing weight by the factor or adding the two values does not calculate the stated dose. mEq calcium is a different substance and unit. The book contains these historical phosphate factors, but this arithmetic exercise does not select a current product dose, dilution, route or infusion rate. Current product labeling and the patient’s phosphate, potassium, calcium, kidney function and other intake determine the actual prescription."
+  },
+  "calcium-phosphorus-089": {
+    "rationale": "For the explicitly hypothetical protocol in the stem, 100 kg × 0.16 mmol/kg = 16 mmol phosphate; kg cancels. Dividing weight by the factor or adding the two values does not calculate the stated dose. mEq calcium is a different substance and unit. The book contains these historical phosphate factors, but this arithmetic exercise does not select a current product dose, dilution, route or infusion rate. Current product labeling and the patient’s phosphate, potassium, calcium, kidney function and other intake determine the actual prescription."
+  }
+};
+export const calciumPhosphorusHomeostasisQuestionBank = priorPhosphateRouteQuestionBank.map((question) => sourceReviewedPhosphateRouteQuestions[question.id] ? { ...question, ...sourceReviewedPhosphateRouteQuestions[question.id] } : question);
 
 if (calciumPhosphorusHomeostasisQuestionBank.length !== 100) {
   throw new Error(`Calcium and phosphorus question bank must contain 100 questions, found ${calciumPhosphorusHomeostasisQuestionBank.length}.`);
