@@ -129,11 +129,12 @@
         {
           "slug": "hypophosphatemia",
           "status": "reviewing",
-          "latestScopedEvidence": "enteral-nutrition-broader-phosphate-route-label-review.json",
+          "latestScopedEvidence": "enteral-nutrition-broader-phosphate-mechanism-safety-review.json",
           "wholeLessonVerified": false,
           "verifiedBodyHeadings": [
             "Choose route and product deliberately",
-            "Monitor for overcorrection"
+            "Monitor for overcorrection",
+            "Review ferric carboxymaltose safety"
           ],
           "embeddedCheckVerified": true,
           "figureVerified": false,
@@ -153,18 +154,20 @@
             "calcium-phosphorus-086",
             "calcium-phosphorus-087",
             "calcium-phosphorus-088",
-            "calcium-phosphorus-089"
+            "calcium-phosphorus-089",
+            "calcium-phosphorus-036",
+            "calcium-phosphorus-037",
+            "calcium-phosphorus-094",
+            "calcium-phosphorus-104",
+            "calcium-phosphorus-iron-repeat-monitoring",
+            "calcium-phosphorus-iron-persistent-warning"
           ],
           "remainingBodyHeadings": [
             "Classify the mechanism",
             "Recognize severe depletion"
           ],
           "remainingQuestionIds": [
-            "calcium-phosphorus-036",
-            "calcium-phosphorus-037",
-            "calcium-phosphorus-041",
-            "calcium-phosphorus-094",
-            "calcium-phosphorus-104"
+            "calcium-phosphorus-041"
           ]
         },
         {
@@ -172,10 +175,11 @@
           "status": "unreviewed"
         }
       ],
-      "questions": 100,
+      "questions": 102,
       "status": "reviewing",
       "evidence": [
-        "enteral-nutrition-broader-phosphate-route-label-review.json"
+        "enteral-nutrition-broader-phosphate-route-label-review.json",
+        "enteral-nutrition-broader-phosphate-mechanism-safety-review.json"
       ],
       "latestPhosphateRouteLabelReview": {
         "evidence": "enteral-nutrition-broader-phosphate-route-label-review.json",
@@ -229,6 +233,48 @@
         "noNewQuestionIds": true,
         "originalClinicalScopeRetained": true,
         "unrelatedDraftsPreserved": true
+      },
+      "latestPhosphateMechanismSafetyReview": {
+        "evidence": "enteral-nutrition-broader-phosphate-mechanism-safety-review.json",
+        "committedModuleBankBefore": 100,
+        "committedModuleBankAfter": 102,
+        "wholeQuestionsVerifiedThisUnit": 6,
+        "sourceVerifiedBankIds": [
+          "calcium-phosphorus-036",
+          "calcium-phosphorus-037",
+          "calcium-phosphorus-094",
+          "calcium-phosphorus-104",
+          "calcium-phosphorus-iron-repeat-monitoring",
+          "calcium-phosphorus-iron-persistent-warning"
+        ],
+        "newFullQuestionsVerified": 6,
+        "existingQuestionsNewlyVerified": 4,
+        "newDistinctQuestionsAdded": 2,
+        "broaderFeedingBankVerifiedAfter": 232,
+        "newWholeSourceVerifiedBodies": 1,
+        "addedWholeBodyHeadings": [
+          "Review ferric carboxymaltose safety"
+        ],
+        "hypophosphatemiaQuestionTotal": 22,
+        "hypophosphatemiaQuestionsVerifiedWithPriorEvidence": 21,
+        "remainingQuestionIds": [
+          "calcium-phosphorus-041"
+        ],
+        "remainingBodyHeadings": [
+          "Classify the mechanism",
+          "Recognize severe depletion"
+        ],
+        "wholeHypophosphatemiaLessonVerified": false,
+        "wholeLessonMetadataVerified": false,
+        "figureNewlyVerified": false,
+        "embeddedCheckNewlyVerified": false,
+        "wholeParentModuleVerified": false,
+        "wholeENModuleVerified": false,
+        "wholeChaptersVerified": false,
+        "all100OriginalQuestionIdsStemsChoicesKeysAnchorsAndRelativeOrderPreserved": true,
+        "all1180CumulativeObjectsUnchanged": true,
+        "originalFiveDerivedCumulativeIdsPreserved": true,
+        "originalRetainedPhysiologyNotRemoved": true
       }
     },
     {

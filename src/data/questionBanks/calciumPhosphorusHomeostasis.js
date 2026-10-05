@@ -177,3 +177,43 @@ export const calciumPhosphorusHomeostasisQuestionBank = priorPhosphateRouteQuest
 if (calciumPhosphorusHomeostasisQuestionBank.length !== 100) {
   throw new Error(`Calcium and phosphorus question bank must contain 100 questions, found ${calciumPhosphorusHomeostasisQuestionBank.length}.`);
 }
+
+const sourceReviewedPhosphateMechanismRationales = {
+  "calcium-phosphorus-036": "After carbohydrate reintroduction, rising insulin promotes intracellular phosphate uptake for metabolism and can rapidly lower serum phosphate in a depleted patient. Potassium can fall too; the mechanism for the accompanying magnesium decline is less well established. This is not explained by immediate kidney failure, complete blockade of intestinal glucose absorption or PTH suppression alone. Assess all three electrolytes and the clinical nutrition exposure.",
+  "calcium-phosphorus-037": "Phosphate is required for ATP production, and severe depletion can impair respiratory muscle function enough to cause respiratory failure. The book identifies weakness and respiratory failure; ASPEN describes the energy and muscle link. Bronchospasm is not an inevitable effect. Increased hemoglobin oxygen affinity and impaired tissue oxygen release can also occur, but that is not the only mechanism and does not replace assessment of respiratory muscle weakness. Immediate blockade of albumin production is not the explanation.",
+  "calcium-phosphorus-094": "The timing after nutrition begins and rapid phosphate fall make refeeding-related intracellular shift a defensible concern, rather than proof that every other cause is excluded. Assess the patient promptly, review potassium and magnesium, kidney function and energy delivery, and treat the electrolyte abnormality. ASPEN recommends reassessing and reducing energy exposure when electrolytes fall precipitously or are difficult to correct; individualize the response. Do not treat the number alone, ignore organ function or delay stabilization for every diagnostic result.",
+  "calcium-phosphorus-104": "Phosphate-binding drugs can reduce intestinal phosphate availability, and diarrhea can add gastrointestinal electrolyte losses. Review the actual antacid or binder and whether it is still indicated; adjust contributors and choose replacement according to severity, symptoms, absorption and kidney function. The book distinguishes less severe oral replacement from severe depletion requiring IV treatment; the product label adds route and safety limits. A fixed plan for everyone, correction without evaluating the cause or ignoring medication timing misses relevant contributors."
+};
+for (const question of calciumPhosphorusHomeostasisQuestionBank) {
+  if (sourceReviewedPhosphateMechanismRationales[question.id]) question.rationale = sourceReviewedPhosphateMechanismRationales[question.id];
+}
+
+calciumPhosphorusHomeostasisQuestionBank.splice(calciumPhosphorusHomeostasisQuestionBank.findIndex((question) => question.id === "calcium-phosphorus-041") + 1, 0, {
+  "id": "calcium-phosphorus-iron-repeat-monitoring",
+  "question": "An adult with normal baseline phosphate and no apparent risk factors is scheduled for a repeat Injectafer course eight weeks after the prior course. Which step matches the August 2026 label?",
+  "choices": [
+    "Check serum phosphate before the repeat course",
+    "Skip testing because the baseline level was normal",
+    "Test only after a fracture occurs",
+    "Assume one prior course excludes later hypophosphatemia"
+  ],
+  "answer": 0,
+  "rationale": "Eight weeks is within three months. The label calls for checking phosphate before a repeat course within that interval even when no apparent risk factors are present. Normal baseline phosphate does not exclude the adverse effect. Waiting for a fracture or assuming a previous course removes risk can miss severe or prolonged hypophosphatemia. Correct any pre-existing hypophosphatemia before further treatment.",
+  "reviewHref": "#hypophosphatemia",
+  "difficulty": "clinical"
+});
+
+calciumPhosphorusHomeostasisQuestionBank.splice(calciumPhosphorusHomeostasisQuestionBank.findIndex((question) => question.id === "calcium-phosphorus-080"), 0, {
+  "id": "calcium-phosphorus-iron-persistent-warning",
+  "question": "After Injectafer, an adult develops persistent hypophosphatemia and new bone pain. Which response follows its August 2026 warning?",
+  "choices": [
+    "Continue repeat courses without reassessing phosphate",
+    "Treat the hypophosphatemia and consider permanent discontinuation",
+    "Attribute every symptom to anemia without evaluation",
+    "Assume hypophosphatemia can occur only after multiple doses"
+  ],
+  "answer": 1,
+  "rationale": "Assess the symptoms and phosphate abnormality, treat as medically indicated, and consider permanently discontinuing Injectafer for severe symptomatic or persistent hypophosphatemia. This is a clinical consideration, not an automatic mandate in every mild transient case. The warning includes single-dose events, normal baseline phosphate and patients without apparent risk factors; anemia-like symptoms should not prevent evaluation.",
+  "reviewHref": "#hypophosphatemia",
+  "difficulty": "clinical"
+});
