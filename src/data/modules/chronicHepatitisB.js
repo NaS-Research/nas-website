@@ -588,3 +588,121 @@ chronicHepatitisBModule.references.push({
   "label": "CDC/ACIP: infant PVST and revaccination recommendations",
   "href": "https://www.cdc.gov/mmwr/volumes/67/rr/rr6701a1.htm"
 });
+
+// Source-verified HBV monitoring and prevention review.
+Object.assign(chronicHepatitisBModule.submodules.find((lesson) => lesson.slug === "monitoring-stopping").lesson.find((body) => body.heading === "Monitor effectiveness"), {
+  "heading": "Monitor effectiveness",
+  "body": "On oral nucleos(t)ide analog therapy, AASLD recommends HBV DNA testing about every three months until undetectable, then every three to six months. Check ALT and liver function alongside the virologic response and review clinical status. In people initially HBeAg-positive, follow HBeAg/anti-HBe transitions; assess HBsAg loss when appropriate. An ALT response and a DNA response measure different outcomes. Neither alone establishes eradication or ends indicated cancer surveillance."
+});
+Object.assign(chronicHepatitisBModule.submodules.find((lesson) => lesson.slug === "monitoring-stopping").lesson.find((body) => body.heading === "Monitor safety"), {
+  "heading": "Monitor safety",
+  "body": "TDF and TAF labeling requires serum creatinine, estimated creatinine clearance, urine glucose and urine protein before starting and during therapy on a clinically appropriate schedule; add phosphorus in chronic kidney disease. AASLD recommends TDF renal safety testing at least annually, more often with renal risk. Consider TDF bone-density assessment for fracture history or osteoporosis risk, and investigate persistent bone pain or muscle weakness for tubulopathy. TAF has a better renal/bone profile than TDF but still requires renal monitoring. Peginterferon needs its own blood-count, thyroid, liver and symptom monitoring."
+});
+Object.assign(chronicHepatitisBModule.submodules.find((lesson) => lesson.slug === "monitoring-stopping").lesson.find((body) => body.heading === "Prevent treatment gaps"), {
+  "heading": "Prevent treatment gaps",
+  "body": "Check refills, cost, travel supply, hospitalization and transitions before doses are missed. Coordinate any HIV regimen change with the team managing both infections. The book and U.S. labels warn that withdrawing HBV-active therapy can cause a severe hepatitis exacerbation; the Viread label identifies decompensation and liver failure as possible consequences. If a gap occurs, promptly contact the care team for clinical and laboratory assessment and a continuity plan rather than waiting for symptoms."
+});
+Object.assign(chronicHepatitisBModule.submodules.find((lesson) => lesson.slug === "monitoring-stopping").lesson.find((body) => body.heading === "Stop only through a guideline pathway"), {
+  "heading": "Stop only through a guideline pathway",
+  "body": "For HBeAg-negative adults without cirrhosis and with sustained undetectable HBV DNA on oral therapy, 2025 AASLD/IDSA Recommendation 5 conditionally suggests continuing until HBsAg loss; evidence certainty is very low. A strongly preferred earlier stop requires a specialist-led shared decision and all of the restrictive selection conditions below. Suppression, normal ALT or an insurance lapse alone is insufficient. Planned completion of peginterferon or pregnancy-only prophylaxis follows its own pathway and still requires follow-up."
+});
+chronicHepatitisBModule.submodules.find((lesson) => lesson.slug === "monitoring-stopping").lesson.push({
+  "heading": "Distinguish persistent viremia from breakthrough",
+  "body": "AASLD describes persistent viremia on entecavir, TDF or TAF as a plateau in DNA decline or failure to become undetectable after 96 weeks. Persistent low-level DNA below 2,000 IU/mL generally supports continuing that monotherapy, with adherence assessment; evidence certainty is very low. Breakthrough means a rise greater than 1 log10 from the nadir, or DNA at least 100 IU/mL after prior suppression below 10 IU/mL. Confirm the result, assess adherence and interactions, then evaluate resistance and an appropriate regimen change with specialist guidance. Do not switch solely for one detectable result."
+});
+chronicHepatitisBModule.submodules.find((lesson) => lesson.slug === "monitoring-stopping").lesson.push({
+  "heading": "Check every condition before an exceptional stop",
+  "body": "AASLD requires no history of advanced fibrosis/cirrhosis, decompensation, HCC or extrahepatic HBV complications; no HIV or HDV coinfection; quantitative HBsAg below 100 IU/mL; DNA undetectable for at least two years; and willingness to attend frequent follow-up. If initially HBeAg-positive, HBeAg-negative/anti-HBe-positive seroconversion must have persisted for at least one year. These are cumulative conditions, not interchangeable options. A low quantitative HBsAg value reduces risk but does not guarantee a safe stop."
+});
+chronicHepatitisBModule.submodules.find((lesson) => lesson.slug === "monitoring-stopping").lesson.push({
+  "heading": "Schedule monitoring after withdrawal",
+  "body": "After a supervised oral-therapy withdrawal, AASLD recommends ALT and HBV DNA every one to three months for the first six months, every three months for the following six to twelve months, then every three to six months according to the results. Review symptoms and liver status as well as laboratory values. Assign responsibility for receiving and acting on results before stopping. A patient unable to sustain that follow-up does not meet the exceptional-stop conditions."
+});
+chronicHepatitisBModule.submodules.find((lesson) => lesson.slug === "monitoring-stopping").lesson.push({
+  "heading": "Act promptly on a restart trigger",
+  "body": "The 2025 AASLD implementation text calls for immediate restart if any one occurs: HBV DNA at least 10,000 IU/mL regardless of ALT; ALT at least five times the upper limit regardless of DNA; total bilirubin above 2.5 mg/dL; or hepatic decompensation. Its table uses greater than five times for ALT, so do not wait beyond the text threshold. Personal preference, extrahepatic complications or renewed treatment eligibility can also justify restarting. One trigger is enough; do not wait for all to appear."
+});
+chronicHepatitisBModule.submodules.find((lesson) => lesson.slug === "monitoring-stopping").lesson.push({
+  "heading": "Keep the WHO monitoring pathway distinct",
+  "body": "The WHO 2026 handbook recommends at least annual on-treatment ALT, viral and serologic assessment, fibrosis assessment and regular adherence review, with three-to-six-month monitoring during the first year in specified higher-risk circumstances. It requires lifelong therapy in cirrhosis. Exceptional discontinuation requires no cirrhosis or evidence suggesting advanced fibrosis, reliable long-term follow-up, persistently normal ALT and undetectable DNA when available, and at least one further treatment year after HBeAg-to-anti-HBe seroconversion if initially HBeAg-positive. When DNA testing is unavailable, WHO instead describes persistent HBsAg loss plus at least one further year. Do not substitute this resource-adapted pathway for AASLD selection or post-withdrawal monitoring."
+});
+Object.assign(chronicHepatitisBModule.submodules.find((lesson) => lesson.slug === "monitoring-stopping"), {
+  "summary": "Monitor viral response, medication safety and treatment continuity. A planned oral-therapy stop requires restrictive selection, frequent follow-up and prompt action on relapse.",
+  "application": "Document the regimen, the named monitoring pathway, laboratory due dates and result owner. Before any supervised stop, record eligibility, the follow-up schedule and independent restart triggers.",
+  "keyPoints": [
+    "HBV DNA and ALT measure different responses.",
+    "Confirm breakthrough and assess adherence before changing therapy.",
+    "TDF and TAF both require renal monitoring.",
+    "AASLD usually favors continuing oral therapy until HBsAg loss.",
+    "Exceptional-stop selection requires all conditions; restart requires only one trigger.",
+    "A treatment-access gap needs prompt action."
+  ]
+});
+Object.assign(chronicHepatitisBModule.submodules.find((lesson) => lesson.slug === "monitoring-stopping").check, {
+  "question": "What is the safest response to an impending HBV medication access gap?",
+  "choices": [
+    "Resolve continuity before doses are missed and contact the care team promptly if interruption occurs",
+    "Take a planned holiday whenever the latest HBV DNA is undetectable",
+    "Wait for jaundice before reporting missed HBV-active doses",
+    "Use normal ALT as proof that interruption cannot cause a flare"
+  ],
+  "answer": 0,
+  "rationale": "Unplanned withdrawal can cause severe hepatitis exacerbation, decompensation and liver failure. Arrange access before a gap and prompt clinical/laboratory follow-up if one occurs. Suppressed DNA or normal ALT does not establish a safe stopping pathway.",
+  "reviewHref": "#monitoring-stopping"
+});
+Object.assign(chronicHepatitisBModule.submodules.find((lesson) => lesson.slug === "prevention-surveillance").lesson.find((body) => body.heading === "Vaccinate susceptible people"), {
+  "heading": "Vaccinate susceptible people",
+  "body": "CDC recommends hepatitis B vaccination for unvaccinated children younger than 19, adults aged 19-59, and adults at least 60 with risk factors; adults at least 60 without known risk may also receive it for protection. Offer triple-panel screening to adults not previously screened and test household and sexual contacts, then vaccinate those susceptible. Testing should not block vaccination when it is unavailable or declined. Vaccination prevents new infection; it does not replace treatment for established HBV."
+});
+Object.assign(chronicHepatitisBModule.submodules.find((lesson) => lesson.slug === "prevention-surveillance").lesson.find((body) => body.heading === "Use the current infant schedule"), {
+  "heading": "Use the current infant schedule",
+  "body": "Use the currently posted CDC schedule and the maternal-status/birth-weight pathway. HBsAg-positive-parent infants receive single-antigen vaccine and HBIG in separate limbs within 12 hours regardless of weight. When status is unknown, all receive vaccine within 12 hours; those below 2,000 g also receive HBIG then, while those at least 2,000 g need urgent maternal testing and HBIG as soon as possible, no later than day seven, if positive. Other evidence of maternal HBV means using the positive-status pathway. For confirmed-negative parents, medically stable infants at least 2,000 g receive vaccine within 24 hours; those below 2,000 g receive it at one month or discharge, whichever is earlier. Complete the appropriate series and exposed-infant testing as detailed in the pregnancy-infant lesson."
+});
+Object.assign(chronicHepatitisBModule.submodules.find((lesson) => lesson.slug === "prevention-surveillance").lesson.find((body) => body.heading === "Reduce exposure"), {
+  "heading": "Reduce exposure",
+  "body": "Cover cuts, avoid sharing injection equipment, toothbrushes, razors or glucose-testing equipment, and use barrier protection when a sexual partner is not immune. Clean blood spills with an appropriate bleach disinfectant and use blood-exposure precautions. HBV is not spread by ordinary casual contact: sharing food or utensils is permitted, and infection alone does not justify exclusion from school or routine activities. Arrange testing, vaccination and care linkage for contacts without implying that suppressed DNA makes every exposure safe."
+});
+Object.assign(chronicHepatitisBModule.submodules.find((lesson) => lesson.slug === "prevention-surveillance").lesson.find((body) => body.heading === "Continue HCC surveillance"), {
+  "heading": "Continue HCC surveillance",
+  "body": "When indicated, AASLD recommends liver ultrasound with serum AFP approximately every six months, including during antiviral suppression. Decide eligibility from liver stage, demographic and family risk, coinfection and HBsAg-loss history. For cirrhosis, the target groups include Child-Pugh A/B and transplant-eligible Child-Pugh C. AFP alone is not the standard combined surveillance plan. Schedule the next examination and assign responsibility for reviewing it; symptoms and ALT testing do not replace surveillance."
+});
+chronicHepatitisBModule.submodules.find((lesson) => lesson.slug === "prevention-surveillance").lesson.push({
+  "heading": "Match the vaccine product and series",
+  "body": "Verify the current product, age indication and series before administering a dose. CDC lists Heplisav-B for adults at least 18 as a two-dose product, while Engerix-B and Recombivax HB use their age- and dialysis-specific schedules. PreHevbrio was recalled in November 2024 after its manufacturer stopped operations; do not use remaining stock. Previously valid doses do not require restarting the series: complete an appropriate schedule with an available licensed product. Dialysis and pregnancy require product-specific selection, not one universal adult regimen."
+});
+chronicHepatitisBModule.submodules.find((lesson) => lesson.slug === "prevention-surveillance").lesson.push({
+  "heading": "Identify higher-risk groups without cirrhosis",
+  "body": "AASLD 2025 Table 4 includes men from an HBV-endemic country older than 40, women from an endemic country older than 50, people from Africa at an earlier age, family history of HCC and a PAGE-B score at least 10. Endemic here means chronic HBV prevalence at least 2%; the African pathway may begin as early as the third decade. PAGE-B was validated in people receiving antiviral treatment, so interpret a score in its intended setting. These criteria identify surveillance candidates even without cirrhosis; choose the applicable pathway rather than requiring every risk factor together."
+});
+chronicHepatitisBModule.submodules.find((lesson) => lesson.slug === "prevention-surveillance").lesson.push({
+  "heading": "Reassess surveillance after HBsAg loss or coinfection",
+  "body": "AASLD 2025 conditionally suggests continued surveillance after HBsAg loss for cirrhosis, family history of HCC, men who lost HBsAg after age 40 and women after age 50; evidence certainty is very low. It also suggests surveillance for all adults with HBV/HDV and for HBV/HIV in men at least 18 and women at least 40, even without cirrhosis. HBV/HCV follows HBV monoinfection risk criteria and HCV treatment guidance. Unknown timing of HBsAg loss and pediatric HDV require individualized decisions. In multiple coinfections, use the pathway with the highest associated risk."
+});
+Object.assign(chronicHepatitisBModule.submodules.find((lesson) => lesson.slug === "prevention-surveillance"), {
+  "summary": "Vaccinate susceptible people, protect contacts and newborns, and continue liver-cancer surveillance for eligible patients despite viral suppression.",
+  "application": "Use the current CDC product and infant pathways. Document AASLD surveillance eligibility, the next ultrasound/AFP date and who will review results; arrange contact testing and vaccination.",
+  "keyPoints": [
+    "Screening should not block vaccination of susceptible people.",
+    "Infant prophylaxis depends on maternal status and birth weight.",
+    "Use current vaccine products and complete a valid series.",
+    "Ordinary casual contact does not require isolation.",
+    "Cancer surveillance can remain necessary after DNA suppression or HBsAg loss.",
+    "Eligible patients need ultrasound with AFP about every six months."
+  ]
+});
+Object.assign(chronicHepatitisBModule.submodules.find((lesson) => lesson.slug === "prevention-surveillance").check, {
+  "question": "Which patient still needs HCC surveillance despite undetectable HBV DNA?",
+  "choices": [
+    "A patient with chronic HBV and Child-Pugh A cirrhosis",
+    "Every vaccinated adolescent regardless of infection or liver risk",
+    "Every susceptible person with negative HBV serology",
+    "No patient once viral suppression is achieved"
+  ],
+  "answer": 0,
+  "rationale": "Child-Pugh A cirrhosis is an AASLD surveillance target despite antiviral response. DNA suppression does not remove cancer risk. Vaccination or susceptibility alone is not an HCC-surveillance indication; eligible patients generally receive ultrasound with AFP about every six months.",
+  "reviewHref": "#prevention-surveillance"
+});
+chronicHepatitisBModule.references.push({
+  "label": "CDC: hepatitis B vaccine eligibility, products and series completion",
+  "href": "https://www.cdc.gov/hepatitis-b/hcp/vaccine-administration/index.html"
+});

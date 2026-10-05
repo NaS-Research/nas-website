@@ -7,12 +7,14 @@ const views = {
   "peginterferon-selection": ["Weekly", "Response", "Safety", "Liver"],
   "special-populations": ["Kidney", "Bone", "HIV", "HDV/HCV"],
   "pregnancy-infant": ["HBV DNA", "Therapy", "Vax/HBIG", "PVST"],
-  "monitoring-stopping": ["DNA suppression", "Safety", "Adherence", "Flare"],
+  "monitoring-stopping": ["HBV DNA", "Safety", "Refills", "Flare"],
   "reactivation": ["Triple panel", "Immunosuppression", "Prophylaxis", "Monitoring"],
-  "prevention-surveillance": ["Vaccination", "Contacts", "HCC surveillance", "Linkage"],
+  "prevention-surveillance": ["Vaccine", "Contacts", "HCC", "Follow-up"],
   "integrated-case": ["Screen", "Stage", "Treat", "Follow"],
 };
 const reviewedViews = {
+  "monitoring-stopping": "Follow viral response, medication safety and continuity, with a defined plan before any supervised withdrawal.",
+  "prevention-surveillance": "Prevent new infection, protect contacts and maintain cancer surveillance when liver and host risk warrant it.",
   "pregnancy-infant": "Coordinate maternal assessment and therapy with newborn vaccine/HBIG, series completion and serologic follow-up.",
   "special-populations": "Check organ function, liver stage and viral coinfections to coordinate drug selection, testing and follow-up.",
   "peginterferon-selection": "Select for liver stage and response likelihood, verify weekly dosing, and monitor safety during and after the course.",

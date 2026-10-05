@@ -822,3 +822,149 @@ Object.assign(chronicHepatitisBQuestionBank.find((question) => question.id === "
   ],
   "rationale": "Delaying all prophylaxis exposes this infant to avoidable transmission risk. The one-month or discharge delay applies to an infant below 2,000 g with a documented HBsAg-negative parent. Positive maternal HBsAg requires vaccine plus HBIG within 12 hours regardless of weight, followed by three additional doses and appropriately timed PVST."
 });
+
+// Source-verified HBV monitoring and prevention review.
+Object.assign(chronicHepatitisBQuestionBank.find((question) => question.id === "chronic-hepatitis-b-081"), {
+  "choices": [
+    "CDC recommends HepB vaccination for adults aged 19-59 and for adults at least 60 with risk; older adults without known risk may also receive it",
+    "CDC excludes every adult aged 60 or older from hepatitis B vaccination",
+    "Hepatitis B vaccination treats established chronic HBV infection",
+    "A completed childhood vaccine series eliminates every possible need for adult HBV screening"
+  ],
+  "rationale": "The CDC adult vaccination pathway covers ages 19-59 and risk-based vaccination at age 60 or older, with protection available to older adults without identified risk. Vaccination prevents infection and does not treat established HBV. Screening and vaccination answer different questions."
+});
+Object.assign(chronicHepatitisBQuestionBank.find((question) => question.id === "chronic-hepatitis-b-082"), {
+  "choices": [
+    "Offer vaccination to a susceptible adult when screening is unavailable or declined, and offer testing again later",
+    "Defer all vaccination until the adult agrees to triple-panel testing",
+    "Give HBIG instead of a vaccine series for routine adult immunization",
+    "Use the adult vaccine to suppress the DNA of established chronic HBV"
+  ],
+  "rationale": "CDC states that prevaccination testing should not be a barrier. Offer screening and vaccination as appropriate, but lack of testing should not prevent a susceptible person from being vaccinated. HBIG is not a routine series substitute, and vaccine does not treat chronic infection."
+});
+Object.assign(chronicHepatitisBQuestionBank.find((question) => question.id === "chronic-hepatitis-b-083"), {
+  "choices": [
+    "For an adult who received one valid PreHevbrio dose before recall, complete an appropriate schedule with an available licensed HepB product",
+    "Restart the entire series solely because the prior valid PreHevbrio product is unavailable",
+    "Use remaining recalled PreHevbrio stock so all doses have the same manufacturer",
+    "Treat one prior PreHevbrio dose as a complete hepatitis B series"
+  ],
+  "rationale": "CDC directs providers to stop using remaining recalled PreHevbrio and complete started series with an appropriate available product. A previously valid dose does not become a reason to restart. Product and interval rules still matter; one dose does not complete that series."
+});
+Object.assign(chronicHepatitisBQuestionBank.find((question) => question.id === "chronic-hepatitis-b-084"), {
+  "choices": [
+    "Defer the birth dose solely because the parent is confirmed HBsAg-negative in a medically stable 2,300-g newborn",
+    "Give vaccine and HBIG within 12 hours to a newborn of an HBsAg-positive parent",
+    "Offer vaccination to a susceptible 45-year-old who declines screening",
+    "Complete a valid pre-recall PreHevbrio series with an appropriate available licensed product"
+  ],
+  "rationale": "The currently posted CDC schedule gives medically stable infants at least 2,000 g of confirmed-negative parents a dose within 24 hours. Routine deferral solely for that negative status is the error. The other choices apply exposed-infant prophylaxis, remove a testing barrier or complete a valid series using current products."
+});
+Object.assign(chronicHepatitisBQuestionBank.find((question) => question.id === "chronic-hepatitis-b-085"), {
+  "choices": [
+    "On oral HBV therapy, DNA tracks viral suppression while ALT helps track liver injury; both need follow-up",
+    "ALT normalization proves that serum HBV DNA is undetectable",
+    "An undetectable DNA result rules out all drug toxicity",
+    "One suppressed DNA result establishes eradication of the nuclear HBV reservoir"
+  ],
+  "rationale": "HBV DNA and ALT describe different responses. AASLD recommends continued virologic monitoring, while medication safety and liver risk still need assessment. ALT alone does not quantify viral suppression, and DNA suppression does not establish eradication."
+});
+Object.assign(chronicHepatitisBQuestionBank.find((question) => question.id === "chronic-hepatitis-b-086"), {
+  "choices": [
+    "Arrange HBV DNA about every three months until undetectable, then every three to six months, with liver and regimen-specific safety review",
+    "Stop HBV DNA testing permanently after the first undetectable result",
+    "Use symptoms alone to decide whether oral antiviral treatment is effective",
+    "Apply annual-only testing to every patient regardless of the selected guideline or disease risk"
+  ],
+  "rationale": "The AASLD oral-treatment monitoring approach uses three-month DNA testing until undetectable and three-to-six-month testing thereafter. Pair it with liver and safety assessment. The WHO resource-adapted annual minimum is a distinct pathway, with more frequent testing in specified circumstances."
+});
+Object.assign(chronicHepatitisBQuestionBank.find((question) => question.id === "chronic-hepatitis-b-087"), {
+  "choices": [
+    "For a rise from a nadir of 20 to 400 IU/mL during therapy, repeat HBV DNA and assess adherence and interactions before deciding on a regimen change",
+    "Change the antiviral immediately after that one result without confirmation or adherence review",
+    "Dismiss the rise because ALT is normal",
+    "Conclude that every low-level detectable DNA result proves drug resistance"
+  ],
+  "rationale": "A rise from 20 to 400 IU/mL is twentyfold, exceeding the AASLD greater-than-one-log breakthrough criterion. Confirmatory testing and adherence assessment are needed before a treatment change. Normal ALT does not exclude a virologic problem; detectable DNA alone does not prove resistance."
+});
+Object.assign(chronicHepatitisBQuestionBank.find((question) => question.id === "chronic-hepatitis-b-088"), {
+  "choices": [
+    "Omit TAF renal monitoring because its renal/bone profile is better than TDF",
+    "Assess creatinine, estimated clearance and urine glucose/protein during TAF treatment as clinically appropriate",
+    "Add serum phosphorus assessment in a patient with chronic kidney disease receiving TAF",
+    "Investigate persistent bone pain or muscle weakness for possible tubulopathy in an at-risk TDF patient"
+  ],
+  "rationale": "The harmful error is treating lower relative toxicity as absence of monitoring need. TAF labeling still requires renal assessment; phosphorus is included for chronic kidney disease. The remaining choices reflect label-directed renal or symptom evaluation."
+});
+Object.assign(chronicHepatitisBQuestionBank.find((question) => question.id === "chronic-hepatitis-b-089"), {
+  "choices": [
+    "Stopping oral HBV therapy can cause a severe hepatitis flare even after DNA suppression, so any supervised stop needs selection and follow-up",
+    "An undetectable HBV DNA result guarantees that a treatment stop cannot cause relapse",
+    "Quantitative HBsAg below 100 IU/mL guarantees a safe stop without monitoring",
+    "Normal ALT alone is sufficient to authorize oral-therapy withdrawal"
+  ],
+  "rationale": "The book and labels warn of exacerbation after withdrawal, and AASLD requires restrictive selection with frequent follow-up for exceptional stopping. Neither suppression, normal ALT nor a low quantitative HBsAg value guarantees safety."
+});
+Object.assign(chronicHepatitisBQuestionBank.find((question) => question.id === "chronic-hepatitis-b-090"), {
+  "choices": [
+    "For an HBeAg-negative adult without cirrhosis and with sustained DNA suppression, generally continue oral therapy until HBsAg loss under AASLD 2025",
+    "Stop automatically after two years of undetectable DNA regardless of other findings",
+    "Permit an exceptional stop whenever just one of the AASLD selection criteria is met",
+    "Use completion of a 48-week peginterferon course as the stopping rule for every oral agent"
+  ],
+  "rationale": "AASLD Recommendation 5 conditionally favors continued oral therapy until HBsAg loss, with very low-certainty evidence. A desired earlier stop requires a shared decision and all selection conditions, not suppression alone. Finite peginterferon treatment is a separate pathway."
+});
+Object.assign(chronicHepatitisBQuestionBank.find((question) => question.id === "chronic-hepatitis-b-091"), {
+  "choices": [
+    "After a supervised oral-therapy stop, plan ALT/DNA every one to three months for six months and restart promptly for DNA at least 10,000 IU/mL even if ALT is normal",
+    "After the same stop, wait for both DNA at least 10,000 IU/mL and jaundice before restarting",
+    "After the same stop, test DNA only if symptoms develop",
+    "After the same stop, defer all laboratory follow-up for one year"
+  ],
+  "rationale": "The AASLD post-withdrawal plan monitors ALT and DNA every one to three months initially, then every three months for the following six to twelve months and every three to six months thereafter. DNA at least 10,000 IU/mL independently triggers immediate restart; jaundice or a second threshold is not required."
+});
+Object.assign(chronicHepatitisBQuestionBank.find((question) => question.id === "chronic-hepatitis-b-092"), {
+  "choices": [
+    "Treat an HBV medication-access lapse as a harmless holiday and wait for jaundice before seeking care",
+    "Arrange refills and access support before a potential gap",
+    "Document all AASLD exceptional-stop conditions before a shared stopping decision",
+    "Assign responsibility for laboratory review and independent restart triggers before a supervised withdrawal"
+  ],
+  "rationale": "Unplanned withdrawal can cause severe hepatitis exacerbation and liver failure. Waiting for jaundice is the harmful error. Advance access planning and a documented supervised-stop pathway are protective actions, leaving one keyed error."
+});
+Object.assign(chronicHepatitisBQuestionBank.find((question) => question.id === "chronic-hepatitis-b-101"), {
+  "choices": [
+    "Eligible HBV patients continue ultrasound with AFP about every six months despite antiviral DNA suppression",
+    "DNA suppression eliminates HCC risk in every patient with HBV cirrhosis",
+    "ALT testing alone replaces indicated HCC surveillance",
+    "Vaccination status alone determines HCC surveillance eligibility"
+  ],
+  "rationale": "AASLD surveillance depends on liver and host risk, and suppression does not eliminate that risk. The usual indicated pathway combines ultrasound and AFP at approximately six-month intervals. ALT and vaccination status do not replace risk assessment or imaging."
+});
+Object.assign(chronicHepatitisBQuestionBank.find((question) => question.id === "chronic-hepatitis-b-102"), {
+  "choices": [
+    "For chronic HBV with Child-Pugh A cirrhosis, arrange ultrasound with AFP about every six months despite undetectable DNA",
+    "For the same patient, stop surveillance because the latest DNA is undetectable",
+    "For the same patient, use ALT alone as the cancer-screening test",
+    "For the same patient, wait for abdominal symptoms before considering surveillance"
+  ],
+  "rationale": "Child-Pugh A cirrhosis is an AASLD surveillance target. Effective antiviral therapy does not discharge the patient from that pathway; biochemical testing or symptom-triggered care cannot replace scheduled surveillance."
+});
+Object.assign(chronicHepatitisBQuestionBank.find((question) => question.id === "chronic-hepatitis-b-103"), {
+  "choices": [
+    "Continue surveillance in a man who lost HBsAg at age 45, applying the AASLD post-HBsAg-loss pathway",
+    "Stop surveillance in that man solely because HBsAg is now negative",
+    "Require that man to have both cirrhosis and a family history before any surveillance is considered",
+    "Apply the same post-loss age threshold to men and women without checking the guideline"
+  ],
+  "rationale": "AASLD 2025 conditionally suggests continued surveillance for men who lose HBsAg after age 40 and women after age 50, as well as people with cirrhosis or a family history of HCC. These are alternative risk groups; HBsAg loss alone does not remove the indication."
+});
+Object.assign(chronicHepatitisBQuestionBank.find((question) => question.id === "chronic-hepatitis-b-104"), {
+  "choices": [
+    "Stop indicated HCC surveillance in a patient with HBV and Child-Pugh A cirrhosis solely because HBV DNA is undetectable",
+    "Schedule ultrasound with AFP at about six-month intervals for that patient",
+    "Review family history, coinfection and liver stage when deciding surveillance eligibility",
+    "Continue surveillance after HBsAg loss when the applicable AASLD risk criteria remain met"
+  ],
+  "rationale": "Suppressed DNA does not eliminate HCC risk in cirrhosis, so stopping indicated surveillance solely for suppression is harmful. The other options maintain scheduled surveillance or correctly reassess residual risk."
+});
