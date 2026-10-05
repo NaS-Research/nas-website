@@ -113,7 +113,7 @@
         {
           "slug": "mineral-regulation",
           "status": "reviewing",
-          "latestScopedEvidence": "enteral-nutrition-broader-calcium-physiology-review.json",
+          "latestScopedEvidence": "enteral-nutrition-broader-calcium-metadata-review.json",
           "wholeLessonVerified": false,
           "verifiedQuestionIds": [
             "calcium-phosphorus-002",
@@ -133,12 +133,15 @@
           ],
           "remainingQuestionIds": [],
           "remainingBodyHeadings": [],
-          "wholeBodiesVerified": true
+          "wholeBodiesVerified": true,
+          "metadataVerified": true,
+          "embeddedCheckVerified": true,
+          "figureVerified": true
         },
         {
           "slug": "calcium-measurement",
           "status": "reviewing",
-          "latestScopedEvidence": "enteral-nutrition-broader-calcium-physiology-review.json",
+          "latestScopedEvidence": "enteral-nutrition-broader-calcium-metadata-review.json",
           "wholeLessonVerified": false,
           "verifiedQuestionIds": [
             "calcium-phosphorus-010",
@@ -165,9 +168,9 @@
           ],
           "remainingQuestionIds": [],
           "wholeBodiesVerified": true,
-          "embeddedCheckVerified": false,
-          "figureVerified": false,
-          "metadataVerified": false,
+          "embeddedCheckVerified": true,
+          "figureVerified": true,
+          "metadataVerified": true,
           "verifiedBodyHeadings": [
             "Let PTH organize the differential",
             "Know what the laboratory measured",
@@ -180,7 +183,7 @@
         {
           "slug": "hypocalcemia",
           "status": "reviewing",
-          "latestScopedEvidence": "enteral-nutrition-broader-calcium-physiology-review.json",
+          "latestScopedEvidence": "enteral-nutrition-broader-calcium-metadata-review.json",
           "wholeLessonVerified": false,
           "verifiedQuestionIds": [
             "calcium-phosphorus-018",
@@ -224,7 +227,7 @@
           "remainingBodyHeadings": [],
           "embeddedCheckVerified": true,
           "figureVerified": true,
-          "metadataVerified": false,
+          "metadataVerified": true,
           "wholeBodiesVerified": true
         },
         {
@@ -309,7 +312,7 @@
         {
           "slug": "hyperphosphatemia-ckd-mbd",
           "status": "reviewing",
-          "latestScopedEvidence": "enteral-nutrition-broader-calcium-physiology-review.json",
+          "latestScopedEvidence": "enteral-nutrition-broader-calcium-metadata-review.json",
           "wholeLessonVerified": false,
           "verifiedQuestionIds": [
             "calcium-phosphorus-043",
@@ -342,11 +345,11 @@
           "remainingBodyHeadings": [],
           "embeddedCheckVerified": true,
           "figureVerified": true,
-          "metadataVerified": false,
+          "metadataVerified": true,
           "wholeBodiesVerified": true
         }
       ],
-      "questions": 102,
+      "questions": 108,
       "status": "reviewing",
       "evidence": [
         "enteral-nutrition-broader-phosphate-route-label-review.json",
@@ -358,7 +361,8 @@
         "enteral-nutrition-broader-hypercalcemia-review.json",
         "enteral-nutrition-broader-mineral-interpretation-review.json",
         "enteral-nutrition-broader-aluminum-toxicity-review.json",
-        "enteral-nutrition-broader-calcium-physiology-review.json"
+        "enteral-nutrition-broader-calcium-physiology-review.json",
+        "enteral-nutrition-broader-calcium-metadata-review.json"
       ],
       "latestPhosphateRouteLabelReview": {
         "evidence": "enteral-nutrition-broader-phosphate-route-label-review.json",
@@ -895,7 +899,38 @@
         "wholeENModuleVerified": false,
         "wholeChaptersVerified": false,
         "all108OriginalIdsKeysCorrectTextsAnchorsRelativeOrderPreserved": true
-      }
+      },
+      "latestCalciumMetadataReview": {
+        "evidence": "enteral-nutrition-broader-calcium-metadata-review.json",
+        "moduleQuestionTotal": 108,
+        "newWholeBankQuestionsVerified": 0,
+        "broaderFeedingBankVerifiedAfter": 321,
+        "newWholeBodiesVerified": 0,
+        "newWholeModuleMetadataVerified": true,
+        "newWholeLessonMetadataVerified": [
+          "mineral-regulation",
+          "calcium-measurement",
+          "hypocalcemia",
+          "hyperphosphatemia-ckd-mbd"
+        ],
+        "newWholeEmbeddedChecksVerified": [
+          "mineral-regulation",
+          "calcium-measurement"
+        ],
+        "newWholeFiguresVerified": [
+          "mineral-regulation",
+          "calcium-measurement"
+        ],
+        "all108WholeBankObjectsUnchanged": true,
+        "all35WholeTeachingBodiesUnchanged": true,
+        "all1180WholeCumulativeObjectsUnchanged": true,
+        "allSixMetadataAndCheckFigureScopesSourceCoveredWithPriorEvidence": true,
+        "wholeLessonsNewlyVerified": false,
+        "wholeParentModuleVerified": false,
+        "wholeENModuleVerified": false,
+        "wholeChapterVerified": false
+      },
+      "moduleMetadataVerified": true
     },
     {
       "slug": "enteral-nutrition",

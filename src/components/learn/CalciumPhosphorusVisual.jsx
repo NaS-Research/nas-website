@@ -4,7 +4,7 @@ const cards = {
     content: <div className="mineral-visual__regulation">
       <div><span>Parathyroid</span><strong>PTH</strong><small>Responds to ionized calcium and changes kidney and bone handling.</small></div>
       <i aria-hidden="true">↘</i>
-      <div><span>Kidney</span><strong>Retain Ca · Excrete PO₄</strong><small>Activates vitamin D and sets the final urinary balance.</small></div>
+      <div><span>Kidney</span><strong>PTH: Retain Ca · Excrete PO₄</strong><small>Forms calcitriol; PTH promotes calcium reabsorption and phosphate loss.</small></div>
       <div><span>Intestine</span><strong>Absorb Ca + PO₄</strong><small>Calcitriol increases delivery from the diet.</small></div>
       <i aria-hidden="true">↖</i>
       <div><span>Bone</span><strong>Store · Release · Signal</strong><small>Mineral reservoir and source of FGF23.</small></div>

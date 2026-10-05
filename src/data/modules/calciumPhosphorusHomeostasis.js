@@ -305,3 +305,45 @@ calciumPhosphorusHomeostasisModule.references.push(...[
     "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3437249/"
   }
 ]);
+
+// Reconcile mineral metadata and embedded checks with approved sources.
+calciumPhosphorusHomeostasisModule.source = "NaS synthesis of mineral homeostasis guidance and product labeling";
+calciumPhosphorusHomeostasisModule.submodules.find((lesson) => lesson.slug === "mineral-regulation").keyPoints = [
+  "PTH raises calcium while promoting renal phosphate loss.",
+  "Calcitriol increases intestinal absorption of both calcium and phosphate.",
+  "FGF23 promotes phosphaturia and suppresses calcitriol.",
+  "Marked magnesium deficiency can impair both PTH secretion and PTH action."
+];
+calciumPhosphorusHomeostasisModule.submodules.find((lesson) => lesson.slug === "calcium-measurement").summary = "Ionized calcium is the clinically active fraction. Albumin affects total calcium; pH, complexing anions, and the measurement context affect binding and interpretation.";
+calciumPhosphorusHomeostasisModule.submodules.find((lesson) => lesson.slug === "hypocalcemia").application = "For severe symptomatic hypocalcemia or ECG toxicity, stabilize promptly with monitored calcium, evaluate the cause, and plan the transition to durable mineral and hormone correction.";
+calciumPhosphorusHomeostasisModule.submodules.find((lesson) => lesson.slug === "hypocalcemia").keyPoints = [
+  "Symptoms and ECG toxicity can make hypocalcemia an emergency.",
+  "Calcium gluconate must be diluted and administered through a secure line.",
+  "Correct magnesium deficiency alongside urgent calcium care; do not delay stabilization.",
+  "During chronic hypoparathyroidism care, control symptoms and limit hypercalciuria."
+];
+calciumPhosphorusHomeostasisModule.submodules.find((lesson) => lesson.slug === "hyperphosphatemia-ckd-mbd").application = "During CKD mineral and bone disorder management, integrate serial calcium, phosphate, PTH, alkaline phosphatase, vitamin D, CKD stage, diet, binder adherence, dialysis, and calcification risk. Acute phosphate toxicity also requires prompt cause-directed assessment.";
+calciumPhosphorusHomeostasisModule.submodules.find((lesson) => lesson.slug === "mineral-regulation").check = {
+  "question": "Which response is expected when ionized calcium falls in a patient with intact parathyroid and kidney function?",
+  "choices": [
+    "PTH rises and renal phosphate reabsorption falls",
+    "PTH rises and renal phosphate reabsorption increases",
+    "PTH falls while renal calcium reabsorption increases",
+    "PTH rises while renal calcitriol production decreases"
+  ],
+  "answer": 0,
+  "rationale": "A fall in ionized calcium stimulates PTH release. With intact kidney function, PTH promotes calcium reabsorption, reduces phosphate reabsorption, and stimulates calcitriol formation. Increased phosphate reabsorption, suppressed PTH, or decreased calcitriol production does not match this expected feedback response.",
+  "reviewHref": "#mineral-regulation"
+};
+calciumPhosphorusHomeostasisModule.submodules.find((lesson) => lesson.slug === "calcium-measurement").check = {
+  "question": "A critically ill patient has low albumin, alkalemia, neuromuscular irritability, and a borderline corrected calcium. Which next measurement is most informative?",
+  "choices": [
+    "Ionized calcium",
+    "Repeat total calcium alone",
+    "Albumin-adjusted calcium calculated again from the same results",
+    "25-hydroxyvitamin D as the sole immediate calcium assessment"
+  ],
+  "answer": 0,
+  "rationale": "Direct ionized calcium is most informative when critical illness, low albumin, and abnormal pH make total or albumin-adjusted calcium uncertain. Alkalemia can increase albumin binding and lower the active fraction. Repeating total calcium or recalculating the same estimate does not resolve that binding uncertainty; vitamin D status can help evaluate the cause but does not measure the active calcium fraction. Assess symptoms and urgency alongside the measurement.",
+  "reviewHref": "#calcium-measurement"
+};
