@@ -1,0 +1,35 @@
+.feature { padding-top: 2rem; padding-bottom: clamp(4rem, 7vw, 7rem); }
+.heading { display: flex; align-items: end; justify-content: space-between; gap: 2rem; margin-bottom: 2.5rem; }
+.heading h2 { margin: 1rem 0; color: #f5f5f5; font-size: clamp(2rem, 4vw, 3.5rem); font-weight: 500; letter-spacing: -.055em; line-height: 1.05; }
+.heading > div > p:last-child { color: #999; font-size: 1.1rem; }
+.collectionLink { color: #e7d0a5; white-space: nowrap; padding-bottom: .3rem; }
+.collectionLink span { margin-left: 1rem; }
+.grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2rem; }
+.card { min-width: 0; }
+.videoLink { display: flex; flex-direction: column; color: #f5f5f5; text-decoration: none; height: 100%; }
+.thumbnail { position: relative; aspect-ratio: 16 / 9; overflow: hidden; background: #151515; }
+.thumbnail img { object-fit: cover; transition: transform .4s ease; }
+.videoLink:hover .thumbnail img { transform: scale(1.025); }
+.play { position: absolute; bottom: 1rem; left: 1rem; width: 2.5rem; height: 2.5rem; border-radius: 50%; background: #111c; display: grid; place-items: center; font-size: .85rem; padding-left: .12rem; }
+.duration { position: absolute; right: .75rem; bottom: .75rem; background: #111e; color: #fff; padding: .2rem .4rem; font-size: .8rem; border-radius: .2rem; font-variant-numeric: tabular-nums; }
+.subject { margin: 1.4rem 0 .65rem; color: #bba47d; font-size: .75rem; letter-spacing: .1em; text-transform: uppercase; }
+.card h3 { font-size: clamp(1.3rem, 2vw, 1.7rem); font-weight: 500; line-height: 1.22; letter-spacing: -.04em; margin: 0 0 1rem; }
+.description { color: #999; font-size: .95rem; line-height: 1.65; margin: 0 0 1.5rem; }
+.watchLink { margin-top: auto; font-size: .85rem; color: #ccc; }
+.watchLink span { margin-left: .5rem; }
+.videoLink:hover .watchLink, .collectionLink:hover { color: #fff; }
+.videoLink:focus-visible, .collectionLink:focus-visible, .filters input:focus-visible, .filters select:focus-visible, .clear:focus-visible, .more:focus-visible { outline: 2px solid #e7d0a5; outline-offset: 5px; }
+.collection { padding-top: 3rem; padding-bottom: clamp(3rem, 6vw, 6rem); }
+.filters { display: flex; gap: 2rem; justify-content: space-between; border-top: 1px solid #292929; border-bottom: 1px solid #292929; padding: 1.3rem 0; margin-bottom: 2.5rem; }
+.search { display: flex; align-items: center; gap: 1rem; flex: 1; min-width: 0; color: #999; }
+.search input { width: 100%; color: #fff; background: transparent; border: 0; font: inherit; padding: .5rem; }
+.search input::placeholder { color: #999; }
+.select select { color: #ddd; background: #111; border: 1px solid #333; border-radius: 2rem; padding: .7rem 2rem .7rem 1rem; font: inherit; }
+.clear { display: block; background: none; border: 0; color: #e7d0a5; font: inherit; padding: 0; margin: -1rem 0 2rem; cursor: pointer; }
+.empty { padding: 3rem 0; color: #aaa; }
+.empty h2 { color: #fff; font-weight: 500; }
+.more { background: #e7d0a5; color: #17120c; border: 0; padding: 1rem 1.7rem; border-radius: 2rem; margin-top: 3rem; font: inherit; cursor: pointer; }
+.srOnly { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+@media (max-width: 1000px) { .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 640px) { .grid { grid-template-columns: minmax(0, 1fr); gap: 2.5rem; } .heading { display: block; } .collectionLink { display: inline-block; margin-top: 1rem; } .filters { flex-direction: column; gap: 1rem; } .select select { width: 100%; } .feature { padding-top: 1rem; } }
+@media (prefers-reduced-motion: reduce) { .thumbnail img { transition: none; } .videoLink:hover .thumbnail img { transform: none; } }

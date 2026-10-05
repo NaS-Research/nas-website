@@ -25,7 +25,7 @@ module.exports = {
       { source: "/nicole", destination: "/research", permanent: false },
     ];
   },
-  images: { remotePatterns: [] },
+  images: { remotePatterns: [{ protocol: "https", hostname: "i.ytimg.com", port: "", pathname: "/vi/*/hq720.jpg", search: "" }] },
   async headers() {
     return [{ source: "/:path*", headers: [
       { key: "Content-Security-Policy", value: csp },

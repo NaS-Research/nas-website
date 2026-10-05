@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Footer from "@/components/Footer";
 import LearningCinema from "@/components/learn/LearningCinema";
+import LearnVideos from "@/components/learn/LearnVideos";
 import LearnDrugLibrary from "@/components/learn/LearnDrugLibrary";
 import styles from "@/components/learn/LearnDrugLibrary.module.css";
 
@@ -41,6 +42,8 @@ export default function LearningPage() {
         </section>
 
         <LearningCinema />
+
+        <LearnVideos />
 
         <LearnDrugLibrary />
 
