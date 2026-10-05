@@ -16,6 +16,7 @@ import PublicationActions from "@/components/research/PublicationActions";
 import EvidenceFigure from "@/components/research/EvidenceFigure";
 import { Fragment } from "react";
 import { getResearchItem, researchItems, researchDrafts } from "@/data/researchLibrary";
+import { getResearchPdfUrl } from "@/data/researchTaxonomy.mjs";
 
 function SourceReferences({ references = [] }) {
   if (!references.length) return null;
@@ -96,6 +97,7 @@ export default async function ResearchPublicationPage({ params }) {
   if (!item) notFound();
 
   const isResearchPublication = ["Research Report", "Research Note", "White Paper"].includes(item.type) || Boolean(item.citable);
+  const pdfUrl = getResearchPdfUrl(item);
   const isPaperArticle = item.variant === "paper";
   const isOriginStory = item.variant === "institutional-origin";
   const hasHeroVideo = Boolean(item.heroVideo);
@@ -165,7 +167,7 @@ export default async function ResearchPublicationPage({ params }) {
               {item.updatedDate ? ` · Updated ${item.updatedDate}` : ""}
             </p>
           </div>
-          <PublicationActions citation={isResearchPublication ? citation : undefined} pdfUrl={item.pdfUrl} />
+          <PublicationActions citation={isResearchPublication ? citation : undefined} pdfUrl={pdfUrl} />
           {item.reviewState && <p className="publication-review-state">{item.reviewState}</p>}
           {item.reproducibilityUrl && <a className="publication-reproduce" href={item.reproducibilityUrl}>Download data and analysis ↗</a>}
         </div>
@@ -275,7 +277,7 @@ export default async function ResearchPublicationPage({ params }) {
             <p className="publication-section-label">Publication details</p>
             <h2>Cite this work</h2>
             <p className="publication-citation__text">{citation}</p>
-            <PublicationActions citation={citation} pdfUrl={item.pdfUrl}  />
+            <PublicationActions citation={citation} pdfUrl={pdfUrl}  />
             {publicationArtwork[item.slug]?.creditUrl && <p className="publication-note"><a href={publicationArtwork[item.slug].creditUrl}>Artwork credits and license ↗</a></p>}
             {item.reproducibilityUrl && <a className="publication-resource-link" href={item.reproducibilityUrl}>Download data and analysis <span aria-hidden="true">↗</span></a>}
             <p className="publication-note">
