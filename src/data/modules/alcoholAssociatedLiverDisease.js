@@ -130,3 +130,102 @@ alcoholAssociatedLiverDiseaseModule.references.push(...[
     "href": "https://doi.org/10.1002/hep.32378"
   }
 ]);
+
+
+// Purpose-specific thiamine and individualized, monitored nutrition support.
+const verifiedAldNutritionLesson = {
+  "metadata": {
+    "summary": "Recognize Wernicke risk, distinguish preventive and treatment regimens, and rebuild nutrition through individualized goals and monitored feeding.",
+    "concepts": [
+      "Wernicke assessment",
+      "Purpose-specific thiamine",
+      "Magnesium and phosphate",
+      "Energy and protein",
+      "Refeeding monitoring"
+    ],
+    "application": "Treat neurological and glucose emergencies promptly, calculate the prescribed nutrition goal, and coordinate monitored feeding and recovery follow-up.",
+    "keyPoints": [
+      "A missing classic finding does not exclude Wernicke encephalopathy.",
+      "A preventive thiamine dose does not establish adequate neurological treatment.",
+      "Urgent glucose must not wait for thiamine.",
+      "An eventual calorie goal is not a first-day refeeding prescription."
+    ]
+  },
+  "bodies": [
+    {
+      "heading": "Recognize risk before the full triad appears",
+      "body": "Thiamine deficiency can injure the brain in people with prolonged poor intake and alcohol dependence, including those who are still drinking. Confusion, gait ataxia and abnormal eye movements are important Wernicke encephalopathy findings, but absence of one finding does not exclude the condition. New confusion with malnutrition or ataxia warrants urgent assessment and parenteral thiamine when Wernicke encephalopathy is suspected. Evaluate hypoglycemia, withdrawal, HE, infection, medicines and other neurological causes at the same time; do not attribute every altered mental state to one liver diagnosis or wait for all three classic findings."
+    },
+    {
+      "heading": "Separate prevention from neurological treatment",
+      "body": "The route and regimen depend on the purpose, nutritional risk and ability to absorb oral treatment. ASAM withdrawal guidance prefers IV or IM thiamine for poor nutrition, malabsorption or severe withdrawal complications and describes a typical preventive regimen of 100 mg IV or IM daily for 3 to 5 days; oral thiamine can also be offered in appropriate circumstances. This preventive example is not an adequate-treatment rule for newly suspected Wernicke encephalopathy. Other hospital guidance uses higher preventive doses for high-risk patients. Follow the relevant hospital protocol and reassess risk and symptoms rather than applying one dose to every patient."
+    },
+    {
+      "heading": "Treat suspected Wernicke encephalopathy promptly",
+      "body": "Suspected Wernicke encephalopathy requires hospital care and a parenteral treatment regimen, usually IV, with daily neurological review. As one clearly identified treatment example, UK alcohol-care guidance published in 2025 recommends IV thiamine 300 to 500 mg three times daily for 3 to 5 days, with further parenteral therapy when symptoms persist and improvement continues. NICE CG100 recommends at least 5 days of parenteral treatment unless Wernicke encephalopathy is excluded, followed by oral thiamine. These are purpose-specific guideline examples, not instructions to combine protocols or stop automatically on day 3. Use the treating service’s regimen, assess competing causes and administer parenteral therapy where trained staff can manage hypersensitivity reactions."
+    },
+    {
+      "heading": "Do not delay urgent glucose",
+      "body": "Symptomatic hypoglycemia needs prompt glucose treatment. ASAM permits glucose and thiamine in either order or concurrently; waiting for a thiamine dose must not postpone urgently needed glucose. Give thiamine promptly as well, particularly when malnutrition or Wernicke risk is present. Thiamine is not a substitute for glucose, and correcting the glucose value does not complete vitamin or nutrition care. For planned feeding, arrange thiamine support before and during nutrition when feasible under the refeeding protocol, while keeping emergency hypoglycemia treatment immediate."
+    },
+    {
+      "heading": "Correct electrolyte partners with monitoring",
+      "body": "Check and recheck magnesium when Wernicke encephalopathy is suspected: low magnesium can impair activation and effectiveness of thiamine. Correct documented deficiency with the treating team and monitor kidney function and the clinical response. Review potassium and phosphate as well, especially during nutrition initiation. Replacement dose, route and monitoring depend on severity, renal function and the care setting. This is a reason to identify and treat deficiencies, not to administer unrestricted magnesium to every patient or to stop thiamine because early improvement is incomplete."
+    },
+    {
+      "heading": "Assess nutrition beyond the albumin value",
+      "body": "Assess current intake, recent weight change, fluid retention, muscle loss, function and the ability to swallow and obtain food. Involve a dietitian and address nausea, confusion and other barriers to eating. Ascites and edema can distort measured weight; low albumin reflects disease and does not independently measure protein intake or nutritional recovery. Thiamine, vitamin B12 and zinc deficits are common in alcohol-associated hepatitis; evaluate and replete clinically relevant deficiencies. Vitamins and minerals do not provide the calories and protein needed to rebuild reserve, and a generic supplement list does not establish a safe dose for every patient."
+    },
+    {
+      "heading": "Calculate a qualified nutrition goal",
+      "body": "ACG recommends a goal of 35 kcal/kg/day and 1.2 to 1.5 g/kg/day of protein for alcohol-associated hepatitis. AASLD adult cirrhosis guidance also recommends 1.2 to 1.5 g/kg/day of protein and uses ideal body weight pragmatically for protein calculations; energy needs depend on the patient, body composition and illness. For a worked non-obese example, assume the dietitian has selected 70 kg as the appropriate weight for both prescribed calculations: 35 × 70 = 2,450 kcal/day, and 1.2 × 70 to 1.5 × 70 = 84 to 105 g protein/day. This is the eventual prescribed goal, not an automatic first-day feed in a depleted patient. Fluid overload, obesity, critical illness, kidney disease and measured energy expenditure can require a different individualized plan."
+    },
+    {
+      "heading": "Preserve protein and shorten fasting",
+      "body": "Do not routinely restrict protein because a patient with cirrhosis has HE. Maintain the individualized protein goal while treating HE and its precipitants; restriction can worsen muscle catabolism. Encourage varied protein sources, including vegetable and dairy foods, rather than imposing a universal meat ban. Small meals or snacks about every 3 to 4 waking hours and an early breakfast or late-evening snack can reduce long fasting periods. Match the snack and meal plan to intake needs and tolerance; branched-chain amino acid products are not a universal substitute for adequate daily protein."
+    },
+    {
+      "heading": "Recognize and monitor refeeding risk",
+      "body": "Prolonged negligible intake, substantial weight loss and low phosphate, potassium or magnesium before feeding identify refeeding risk. NICE includes little or no intake for more than 10 days or low baseline electrolytes among its high-risk criteria. Use a trained nutrition team and the relevant refeeding protocol to select the initial intake and advance it with monitoring, rather than immediately delivering the eventual full calorie target. Provide thiamine and appropriate micronutrients, assess fluid balance and check electrolytes, glucose and kidney function at baseline and frequently during initiation; NICE recommends daily phosphate and magnesium checks when refeeding risk is present, with frequency adapted to clinical instability. New weakness, an arrhythmia, worsening fluid overload or falling phosphate needs prompt assessment and correction, not automatic feed escalation. Refeeding problems can occur with oral, enteral or parenteral nutrition."
+    },
+    {
+      "heading": "Escalate support and assign follow-up",
+      "body": "When safe oral intake cannot meet the plan, add oral nutritional supplements and measure whether intake improves. For alcohol-associated hepatitis, ACG recommends enteral nutrition when oral intake remains inadequate despite supplements. The team should assess gastrointestinal function, swallowing and airway safety, hemodynamic stability and suitable access; ALD alone does not mandate parenteral nutrition or exclude enteral feeding. Plan nutrition support through the appropriate service when the gastrointestinal route is insufficient or unusable. Before discharge, assign follow-up for intake, weight interpreted with fluid status, electrolytes, vitamin therapy and access to food alongside continuing liver and AUD care. Completion of withdrawal is not completion of recovery treatment."
+    }
+  ],
+  "check": {
+    "question": "A malnourished adult with alcohol dependence is confused and has symptomatic hypoglycemia. IV glucose is ready, but thiamine has not yet arrived. Which action is best?",
+    "choices": [
+      "Treat the hypoglycemia promptly and administer thiamine as soon as possible.",
+      "Wait for thiamine before giving any glucose, despite the symptomatic hypoglycemia.",
+      "Give thiamine alone because it directly replaces the missing glucose.",
+      "Give glucose now and omit further thiamine assessment because glucose correction excludes Wernicke risk."
+    ],
+    "rationale": "Treat symptomatic hypoglycemia without delay. ASAM permits glucose and thiamine in either order or concurrently, so waiting for thiamine must not postpone emergency glucose. Give thiamine promptly as well. Thiamine does not replace glucose, and glucose correction does not remove the patient’s nutritional or Wernicke risk."
+  }
+};
+for (const lesson of alcoholAssociatedLiverDiseaseModule.submodules) {
+  if (lesson.slug === "thiamine-nutrition") {
+    Object.assign(lesson, verifiedAldNutritionLesson.metadata);
+    lesson.lesson = verifiedAldNutritionLesson.bodies;
+    Object.assign(lesson.check, verifiedAldNutritionLesson.check);
+  }
+}
+alcoholAssociatedLiverDiseaseModule.references.push(...[
+  {
+    "label": "AASLD primary malnutrition, frailty and sarcopenia guidance (2021).",
+    "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9134787/"
+  },
+  {
+    "label": "NICE CG100: Wernicke prevention and parenteral treatment.",
+    "href": "https://www.nice.org.uk/guidance/cg100/resources/alcoholuse-disorders-diagnosis-and-management-of-physical-complications-pdf-35109322251973"
+  },
+  {
+    "label": "NICE CG32: nutrition support, refeeding risk and monitoring.",
+    "href": "https://www.nice.org.uk/guidance/cg32/resources/nutrition-support-for-adults-oral-nutrition-support-enteral-tube-feeding-and-parenteral-nutrition-pdf-975383198917"
+  },
+  {
+    "label": "UK alcohol-care guidance: purpose-specific thiamine and magnesium assessment.",
+    "href": "https://www.gov.uk/guidance/clinical-guidelines-for-alcohol-treatment/16-alcohol-care-in-acute-hospitals"
+  }
+]);

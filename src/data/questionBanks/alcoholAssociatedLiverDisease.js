@@ -182,3 +182,91 @@ const verifiedAldCirrhosisQuestions = {
 for (const item of alcoholAssociatedLiverDiseaseQuestionBank) {
   if (verifiedAldCirrhosisQuestions[item.id]) Object.assign(item, verifiedAldCirrhosisQuestions[item.id]);
 }
+
+
+// Distinct neurological and nutrition cases preserve stable IDs and anchors.
+const verifiedAldNutritionQuestions = {
+  "alcohol-associated-liver-disease-045": {
+    "question": "A patient with alcohol dependence, weeks of poor intake and new confusion has an unsteady gait but no documented eye-movement abnormality. Which response is best?",
+    "choices": [
+      "Urgently assess suspected Wernicke encephalopathy and give protocol-directed parenteral thiamine while evaluating other causes.",
+      "Exclude Wernicke encephalopathy because all three classic findings are not present.",
+      "Treat presumed HE alone and wait for persistent eye findings before considering thiamine.",
+      "Use an oral multivitamin as the sole response to the new neurological findings."
+    ],
+    "rationale": "Confusion with poor nutrition and ataxia supports urgent Wernicke assessment even without ocular findings. Suspected Wernicke encephalopathy needs parenteral thiamine and clinical review in hospital. The full triad is not required; HE, withdrawal, hypoglycemia and other causes should be evaluated concurrently rather than replacing vitamin treatment with one presumed diagnosis. An oral multivitamin alone is not the neurological treatment regimen."
+  },
+  "alcohol-associated-liver-disease-046": {
+    "question": "A malnourished adult with alcohol dependence has a glucose of 38 mg/dL, sweating and confusion. IV access and glucose are available, but the thiamine dose is being prepared. What is the best sequence?",
+    "choices": [
+      "Give urgent glucose now and administer thiamine promptly, in either order or concurrently as feasible.",
+      "Withhold glucose until thiamine is administered, regardless of the hypoglycemic symptoms.",
+      "Give thiamine alone and wait for it to correct the low glucose.",
+      "Correct the glucose and permanently omit thiamine because the patient no longer has vitamin-deficiency risk."
+    ],
+    "rationale": "The symptomatic glucose of 38 mg/dL requires immediate treatment. ASAM permits glucose and thiamine in either order or concurrently, so emergency glucose must not wait. Thiamine should still be given promptly according to risk and purpose; it is not a glucose substitute. Correcting hypoglycemia does not erase malnutrition or Wernicke risk."
+  },
+  "alcohol-associated-liver-disease-047": {
+    "question": "A hospitalized patient was receiving thiamine 100 mg IV daily for withdrawal prophylaxis but now develops confusion and gait ataxia. Which interpretation is best?",
+    "choices": [
+      "Reassess urgently for Wernicke encephalopathy and move to the hospital’s parenteral treatment pathway if suspected.",
+      "The preventive 100 mg daily regimen guarantees adequate treatment of any newly developing Wernicke encephalopathy.",
+      "Switch to an oral multivitamin alone because new neurological findings prove parenteral thiamine is unnecessary.",
+      "Stop thiamine because prevention and treatment always use an identical regimen."
+    ],
+    "rationale": "ASAM describes 100 mg IV or IM daily for 3 to 5 days as a typical preventive withdrawal regimen, not a guarantee of adequate neurological treatment. New confusion and ataxia require urgent assessment, competing-cause evaluation and purpose-specific parenteral treatment when Wernicke encephalopathy is suspected. Oral multivitamins alone do not replace that pathway, and prevention and treatment are not interchangeable."
+  },
+  "alcohol-associated-liver-disease-048": {
+    "question": "During parenteral treatment for suspected Wernicke encephalopathy, a patient has documented hypomagnesemia and incomplete early neurological improvement. Which action is most appropriate?",
+    "choices": [
+      "Continue clinical reassessment and thiamine treatment while correcting low magnesium with renal and electrolyte monitoring.",
+      "Declare thiamine ineffective and stop it without reviewing magnesium or competing causes.",
+      "Give unrestricted magnesium to every patient regardless of the value or kidney function.",
+      "Wait until a fixed thiamine course ends before assessing the documented magnesium deficiency."
+    ],
+    "rationale": "Magnesium supports conversion of thiamine to its active form, and hypomagnesemia can impair response. Recheck and correct the documented deficiency while continuing appropriate thiamine treatment and reviewing other causes. Replacement must account for kidney function, severity and monitoring; neither unrestricted magnesium nor delaying assessment until a fixed course ends is appropriate."
+  },
+  "alcohol-associated-liver-disease-093": {
+    "question": "For a non-obese patient with alcohol-associated hepatitis, the dietitian selects 70 kg for both calculations and prescribes an eventual goal of 35 kcal/kg/day plus 1.2 to 1.5 g/kg/day protein. Which daily goal matches that prescription?",
+    "choices": [
+      "2,450 kcal and 84 to 105 g protein.",
+      "2,450 kcal and 42 to 52.5 g protein.",
+      "3,500 kcal and 84 to 105 g protein.",
+      "2,450 kcal and 120 to 150 g protein."
+    ],
+    "rationale": "Energy is 35 kcal/kg × 70 kg = 2,450 kcal/day. Protein is 1.2 × 70 = 84 g through 1.5 × 70 = 105 g/day. The other options halve protein, use 100 kg for energy or omit the prescribed weight in the protein calculation. These are the eventual goals for the stated individualized prescription; refeeding risk can require a lower initial intake and monitored advancement."
+  },
+  "alcohol-associated-liver-disease-094": {
+    "question": "A patient with cirrhosis and HE has poor intake and muscle loss. Which nutrition plan best follows adult cirrhosis guidance?",
+    "choices": [
+      "Maintain an individualized protein goal while treating HE, addressing intake barriers and reducing prolonged fasting.",
+      "Remove all protein until an ammonia result returns to the reference range.",
+      "Use routine severe protein restriction as the primary strategy for restoring muscle.",
+      "Ban all animal protein in every patient and replace the full nutrition plan with a vitamin tablet."
+    ],
+    "rationale": "AASLD recommends adequate individualized protein and no routine protein restriction for HE. Restriction can worsen muscle catabolism; HE treatment and nutritional support should proceed together. Use varied sources, including vegetable and dairy protein, with small frequent meals and a suitable late snack or early breakfast. Ammonia is not a gate for resuming all protein, a universal meat ban is not required, and vitamins cannot replace calories and protein."
+  },
+  "alcohol-associated-liver-disease-095": {
+    "question": "A patient has taken almost no food for 12 days and has low phosphate before feeding. After nutrition starts, phosphate falls further and new weakness develops. Which response is best?",
+    "choices": [
+      "Promptly assess possible refeeding problems, correct deficiencies and reassess feed advancement under a monitored nutrition protocol.",
+      "Immediately increase intake to the full eventual calorie goal without electrolyte review.",
+      "Use albumin alone to decide that the feed is safe despite the phosphate trend and weakness.",
+      "Exclude refeeding problems because the nutrition is enteral rather than parenteral."
+    ],
+    "rationale": "More than 10 days of negligible intake and low baseline phosphate identify high refeeding risk in NICE CG32. Falling phosphate and new weakness require prompt clinical and electrolyte assessment, correction and review of feeding advancement. Provide thiamine and monitor other electrolytes, glucose, kidney function and fluid status. Albumin alone cannot establish nutrition safety, and oral or enteral feeding does not eliminate refeeding risk."
+  },
+  "alcohol-associated-liver-disease-096": {
+    "question": "A patient with alcohol-associated hepatitis still cannot meet nutrition needs despite oral supplements. The gastrointestinal tract is usable, and the team has assessed airway safety, stability and access. Which next step best follows ACG guidance?",
+    "choices": [
+      "Arrange an individualized enteral nutrition plan with the nutrition team.",
+      "Use parenteral nutrition automatically because alcohol-associated hepatitis excludes gastrointestinal feeding.",
+      "Replace calorie and protein support with larger vitamin doses alone.",
+      "Continue the inadequate intake indefinitely because starting oral supplements proves nutrition needs are met."
+    ],
+    "rationale": "ACG recommends enteral nutrition for alcohol-associated hepatitis when oral intake remains inadequate despite supplements. The route requires individual assessment, including gastrointestinal function, airway safety, stability and access. ALD alone does not require parenteral nutrition; vitamins do not replace macronutrients, and a supplement order must be followed by assessment of actual intake."
+  }
+};
+for (const item of alcoholAssociatedLiverDiseaseQuestionBank) {
+  if (verifiedAldNutritionQuestions[item.id]) Object.assign(item, verifiedAldNutritionQuestions[item.id]);
+}
