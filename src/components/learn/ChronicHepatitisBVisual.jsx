@@ -8,11 +8,13 @@ const views = {
   "special-populations": ["Kidney", "Bone", "HIV", "HDV/HCV"],
   "pregnancy-infant": ["HBV DNA", "Therapy", "Vax/HBIG", "PVST"],
   "monitoring-stopping": ["HBV DNA", "Safety", "Refills", "Flare"],
-  "reactivation": ["Triple panel", "Immunosuppression", "Prophylaxis", "Monitoring"],
+  "reactivation": ["Serology", "Regimen", "Antiviral", "Follow-up"],
   "prevention-surveillance": ["Vaccine", "Contacts", "HCC", "Follow-up"],
   "integrated-case": ["Screen", "Stage", "Treat", "Follow"],
 };
 const reviewedViews = {
+  "reactivation": "Combine prior infection and immune-regimen risk, then assign antiviral prevention or reliable monitoring and later follow-up.",
+  "integrated-case": "Carry infection classification, suitable treatment, prevention and liver-risk follow-up through each transfer of care.",
   "monitoring-stopping": "Follow viral response, medication safety and continuity, with a defined plan before any supervised withdrawal.",
   "prevention-surveillance": "Prevent new infection, protect contacts and maintain cancer surveillance when liver and host risk warrant it.",
   "pregnancy-infant": "Coordinate maternal assessment and therapy with newborn vaccine/HBIG, series completion and serologic follow-up.",

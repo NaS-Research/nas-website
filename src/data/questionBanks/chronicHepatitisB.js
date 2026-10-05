@@ -968,3 +968,149 @@ Object.assign(chronicHepatitisBQuestionBank.find((question) => question.id === "
   ],
   "rationale": "Suppressed DNA does not eliminate HCC risk in cirrhosis, so stopping indicated surveillance solely for suppression is harmful. The other options maintain scheduled surveillance or correctly reassess residual risk."
 });
+
+// Source-verified HBV reactivation and integrated-case review.
+Object.assign(chronicHepatitisBQuestionBank.find((question) => question.id === "chronic-hepatitis-b-093"), {
+  "choices": [
+    "Resolved HBV can reactivate during anti-CD20 therapy even with positive anti-HBs and undetectable baseline DNA",
+    "Positive anti-HBs eliminates reactivation risk during rituximab",
+    "Only currently HBsAg-positive patients can reactivate",
+    "Every immune-modifying regimen has the same HBV risk"
+  ],
+  "rationale": "Past natural HBV infection remains relevant during B-cell depletion. Neither surface antibody nor baseline DNA suppression cancels the AASLD prophylaxis indication. Risk depends on both serostatus and the exact immune regimen."
+});
+Object.assign(chronicHepatitisBQuestionBank.find((question) => question.id === "chronic-hepatitis-b-094"), {
+  "choices": [
+    "Before immune treatment, obtain the triple panel and use serostatus, baseline DNA/ALT and the exact regimen to plan prevention",
+    "Check HBsAg alone and omit core antibody in every patient",
+    "Wait until jaundice develops before testing HBV status",
+    "Select prophylaxis solely from the latest ALT result"
+  ],
+  "rationale": "Screening must identify current and prior infection. HBsAg alone misses anti-HBc-positive past HBV; ALT alone neither identifies infection nor classifies regimen risk. Arrange the prevention decision before immune treatment when feasible."
+});
+Object.assign(chronicHepatitisBQuestionBank.find((question) => question.id === "chronic-hepatitis-b-095"), {
+  "choices": [
+    "For HBsAg-negative/anti-HBc-positive past HBV before rituximab, start a suitable high-barrier antiviral under the AASLD prophylaxis pathway",
+    "For that patient, omit prophylaxis solely because anti-HBs is positive",
+    "For that patient, substitute vaccine alone for the indicated antiviral",
+    "For that patient, wait for an ALT flare before making a prevention plan"
+  ],
+  "rationale": "AASLD recommends prophylaxis for anti-CD20 therapy in past HBV. Entecavir, TDF or TAF can be selected with patient and label review; antibody positivity and absent baseline viremia do not remove the indication."
+});
+Object.assign(chronicHepatitisBQuestionBank.find((question) => question.id === "chronic-hepatitis-b-096"), {
+  "choices": [
+    "Rely on HBsAg alone and miss anti-HBc-positive past HBV before rituximab",
+    "Obtain HBsAg, total anti-HBc and anti-HBs before immune treatment",
+    "Review baseline DNA and the specific immune regimen when HBV markers are positive",
+    "Arrange indicated high-barrier prophylaxis before or with anti-CD20 therapy"
+  ],
+  "rationale": "The keyed error misses a group in which AASLD recommends prevention. The other actions identify prior infection, characterize risk or provide timely prophylaxis, leaving one harmful action."
+});
+Object.assign(chronicHepatitisBQuestionBank.find((question) => question.id === "chronic-hepatitis-b-097"), {
+  "choices": [
+    "AASLD prophylaxis continues during immune treatment and at least six months afterward, with at least twelve months after anti-CD20 therapy",
+    "Stop indicated prophylaxis automatically on the day of the last immune-treatment dose",
+    "Use the same six-month stop date for every anti-CD20 patient",
+    "Treat the minimum duration as a guarantee that delayed reactivation cannot occur"
+  ],
+  "rationale": "AASLD specifies minimum durations of six months after most finite immune treatment and twelve months after anti-CD20 therapy. Late reactivation and independent chronic-HBV treatment needs require an individualized later plan."
+});
+Object.assign(chronicHepatitisBQuestionBank.find((question) => question.id === "chronic-hepatitis-b-098"), {
+  "choices": [
+    "Document the named pathway, start date, minimum duration, later monitoring and the clinician who will act on results",
+    "Wait until the antiviral runs out before assigning a follow-up clinician",
+    "Assume the end of chemotherapy automatically ends every HBV-care obligation",
+    "Use one universal stop date for finite therapy, anti-CD20 treatment and ongoing transplant immunosuppression"
+  ],
+  "rationale": "A completed handoff makes prevention executable across teams. Immune regimen, serostatus, delayed risk and ordinary HBV treatment indications determine the later plan; finite-course minimums are not universal stop dates."
+});
+Object.assign(chronicHepatitisBQuestionBank.find((question) => question.id === "chronic-hepatitis-b-099"), {
+  "choices": [
+    "For past HBV managed without prophylaxis under AASLD, arrange DNA every one to three months with ALT/HBsAg review and rapid treatment if reactivation appears",
+    "For the same patient, use annual-only DNA testing during immune treatment",
+    "For the same patient, wait for jaundice before reviewing detectable DNA",
+    "For the same patient, conclude that undetectable baseline DNA makes later testing unnecessary"
+  ],
+  "rationale": "AASLD monitoring without prophylaxis requires frequent DNA assessment and reliable action. Detectable DNA or reappearance of HBsAg is reactivation in past HBV. Symptoms and normal baseline results do not replace that surveillance."
+});
+Object.assign(chronicHepatitisBQuestionBank.find((question) => question.id === "chronic-hepatitis-b-100"), {
+  "choices": [
+    "End prophylaxis and follow-up automatically with the last rituximab dose in a patient with past HBV",
+    "Plan at least twelve months of prophylaxis after anti-CD20 therapy under AASLD and individualize subsequent care",
+    "Assign a clinician and dates for laboratory follow-up after immune treatment",
+    "Reassess ongoing HBV treatment needs before deciding whether prophylaxis can stop"
+  ],
+  "rationale": "Prematurely ending prevention with the last immune-treatment dose ignores delayed risk. The other options preserve the AASLD minimum and continued assessment, giving one defensible harmful answer."
+});
+Object.assign(chronicHepatitisBQuestionBank.find((question) => question.id === "chronic-hepatitis-b-105"), {
+  "choices": [
+    "Complete HBV care connects infection classification, liver stage, treatment indication, exact regimen, prevention and dated follow-up",
+    "A drug prescription alone completes care after the first suppressed DNA result",
+    "Vaccine alone treats established chronic HBV",
+    "Positive anti-HBs makes all future immune-regimen reviews unnecessary"
+  ],
+  "rationale": "HBV care combines viral, liver, medication and prevention decisions. A prescription or a single marker does not establish eradication, remove liver risk or replace follow-up; vaccination prevents new infection."
+});
+Object.assign(chronicHepatitisBQuestionBank.find((question) => question.id === "chronic-hepatitis-b-106"), {
+  "choices": [
+    "Assign a clinician and date to each pending DNA result, safety test, indicated surveillance study, refill and prevention task",
+    "Document only that results were ordered without assigning result review",
+    "Stop reviewing safety after one undetectable DNA result",
+    "Schedule HCC surveillance only when a patient with cirrhosis develops symptoms"
+  ],
+  "rationale": "A closed loop includes both the task and responsibility for the result or next action. Viral response does not remove drug safety or cirrhosis-related surveillance needs."
+});
+Object.assign(chronicHepatitisBQuestionBank.find((question) => question.id === "chronic-hepatitis-b-107"), {
+  "choices": [
+    "For the nucleoside-naive, HIV-negative worked-case man with compensated cirrhosis and CrCl 80 mL/min, use a suitable antiviral and retain labs, contact prevention and six-month ultrasound/AFP",
+    "For that patient, defer all HBV therapy solely because he has no symptoms",
+    "For that patient, cancel surveillance after viral suppression",
+    "For that patient, select the regimen without reviewing HIV status or kidney function"
+  ],
+  "rationale": "The worked case has a treatment indication and an HCC-surveillance indication from cirrhosis. A suitable regimen still requires product and patient review, and suppression does not discharge either longitudinal plan."
+});
+Object.assign(chronicHepatitisBQuestionBank.find((question) => question.id === "chronic-hepatitis-b-108"), {
+  "choices": [
+    "Issue a prescription with no arrangement for result review, refills or indicated surveillance",
+    "State the drug, dose, food instructions and treatment indication",
+    "Assign owners and dates for viral/safety results and imaging",
+    "Reconcile HIV status, liver stage, kidney function and interactions before prescribing"
+  ],
+  "rationale": "An isolated prescription leaves necessary decisions and follow-up unfinished. Each other action supports an executable patient-specific plan, leaving one keyed error."
+});
+Object.assign(chronicHepatitisBQuestionBank.find((question) => question.id === "chronic-hepatitis-b-109"), {
+  "choices": [
+    "Transitions can interrupt HBV-active treatment or indicated surveillance, so the regimen and pending tasks need reconciliation",
+    "Hospital transfer makes an active HBV prescription unnecessary",
+    "A new clinician should stop HBV therapy until jaundice proves a need",
+    "Undetectable DNA removes the need to carry forward cirrhosis surveillance"
+  ],
+  "rationale": "The book and labels identify flares after treatment withdrawal. Clinical transitions must preserve suitable therapy, monitoring and liver-risk follow-up; viral suppression alone does not justify abandoning them."
+});
+Object.assign(chronicHepatitisBQuestionBank.find((question) => question.id === "chronic-hepatitis-b-110"), {
+  "choices": [
+    "At transfer, confirm the exact product, dose, administration, next supply, pending tests and the receiving clinician",
+    "Transfer only the drug class without a dose or food rule",
+    "Assume the receiving team will discover every pending result without communication",
+    "Cancel the next surveillance study solely because the patient is changing practices"
+  ],
+  "rationale": "Transfer reconciliation keeps the medication and follow-up plan connected. Product and administration details, available supply, pending results and assigned ownership are all relevant to continuity."
+});
+Object.assign(chronicHepatitisBQuestionBank.find((question) => question.id === "chronic-hepatitis-b-111"), {
+  "choices": [
+    "For the cirrhosis case with suppressed DNA, preserve entecavir access and patient-specific monitoring and hand over the next ultrasound/AFP date",
+    "For that patient, stop entecavir automatically after the first suppressed DNA result",
+    "For that patient, replace scheduled HCC surveillance with symptom-only review",
+    "For that patient, wait until medication is exhausted to identify the receiving prescriber"
+  ],
+  "rationale": "The worked case links ongoing suitable therapy, viral and safety assessment and cirrhosis surveillance. A transfer should preserve these tasks with dated ownership instead of waiting for symptoms or missed doses."
+});
+Object.assign(chronicHepatitisBQuestionBank.find((question) => question.id === "chronic-hepatitis-b-112"), {
+  "choices": [
+    "Allow a transfer to create an unplanned antiviral gap or lose indicated cirrhosis surveillance without follow-up",
+    "Confirm medication supply before the next dose is due",
+    "Carry the next ultrasound/AFP date and pending results to the receiving clinician",
+    "Reconcile the exact product, kidney/liver context and interaction list during transfer"
+  ],
+  "rationale": "The harmful error is losing treatment continuity or indicated surveillance without a plan. The other choices prevent that failure. The book and labels warn about withdrawal flares, and suppression does not erase cirrhosis-related HCC risk."
+});

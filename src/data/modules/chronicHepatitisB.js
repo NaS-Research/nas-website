@@ -706,3 +706,123 @@ chronicHepatitisBModule.references.push({
   "label": "CDC: hepatitis B vaccine eligibility, products and series completion",
   "href": "https://www.cdc.gov/hepatitis-b/hcp/vaccine-administration/index.html"
 });
+
+// Source-verified HBV reactivation and integrated-case review.
+Object.assign(chronicHepatitisBModule.submodules.find((lesson) => lesson.slug === "reactivation").lesson.find((body) => body.heading === "Screen with the triple panel"), {
+  "heading": "Screen with the triple panel",
+  "body": "Before immunosuppression, obtain HBsAg, total anti-HBc and anti-HBs and review prior HBV results. HBsAg-negative, anti-HBc-positive patients retain reactivation risk even when anti-HBs is positive or baseline HBV DNA is undetectable. Anti-HBs does not cancel a prophylaxis indication. If surface antigen or core antibody is positive, assess HBV DNA, ALT, liver stage and the planned regimen. ASCO recommends screening before or at the start of systemic cancer therapy while avoiding delay of anticancer treatment for test results; arrange prompt coordinated review."
+});
+Object.assign(chronicHepatitisBModule.submodules.find((lesson) => lesson.slug === "reactivation").lesson.find((body) => body.heading === "Rank regimen risk"), {
+  "heading": "Rank regimen risk",
+  "body": "Combine serostatus with the exact immune-modifying regimen, including combinations, dose and duration. Anti-CD20 agents such as rituximab and stem-cell transplantation are important prophylaxis settings even after resolved HBV. The book also identifies reactivation with anti-TNF drugs, chemotherapy and selected kinase inhibitors. Corticosteroid risk depends on dose, duration and other therapies. These exposures do not all have equal risk, and specialty frameworks can classify them differently. Reassess whenever the immune regimen changes; use a named current framework rather than assigning one risk category to every immunosuppressant."
+});
+Object.assign(chronicHepatitisBModule.submodules.find((lesson) => lesson.slug === "reactivation").lesson.find((body) => body.heading === "Choose prophylaxis or monitoring"), {
+  "heading": "Choose prophylaxis or monitoring",
+  "body": "AASLD recommends antiviral prophylaxis for HBsAg-positive/anti-HBc-positive patients receiving immunosuppressive or cytotoxic therapy. In HBsAg-negative/anti-HBc-positive patients, AASLD recommends prophylaxis for anti-CD20 treatment or stem-cell transplantation; other settings may permit reliable close monitoring with rapid on-demand treatment. Prefer a high-resistance-barrier agent: entecavir, TDF or TAF. Review HIV status, prior resistance, kidney function, liver stage, interactions and product labeling before selecting and dosing it. Vaccine is not a substitute for indicated antiviral prophylaxis."
+});
+Object.assign(chronicHepatitisBModule.submodules.find((lesson) => lesson.slug === "reactivation").lesson.find((body) => body.heading === "Continue beyond immunosuppression"), {
+  "heading": "Continue beyond immunosuppression",
+  "body": "Start indicated prophylaxis as soon as possible before immunosuppression, or at the latest simultaneously. AASLD continues it during the immune treatment and for at least six months afterward, extending that minimum to at least twelve months after anti-CD20 therapy. These are minimums, not automatic stop dates. Reactivation beyond twelve months has been reported, especially after B-cell depletion. Chronic immunosuppression, transplantation or an independent indication for long-term HBV treatment requires an individualized duration and follow-up plan rather than a finite-course stop rule."
+});
+chronicHepatitisBModule.submodules.find((lesson) => lesson.slug === "reactivation").lesson.push({
+  "heading": "Make monitoring an executable alternative",
+  "body": "For the AASLD pathway without prophylaxis, schedule HBV DNA every one to three months with ALT and HBsAg assessment. Assign the clinician receiving results, the next test date and the rapid-treatment plan before choosing monitoring. For baseline HBsAg-negative/anti-HBc-positive patients, detectable HBV DNA or reappearance of HBsAg is evidence of reactivation; do not wait for jaundice or an ALT flare to recognize it. If frequent testing and timely action are unreliable, reassess the prevention strategy. AASLD also specifies monitoring for up to twelve months after anti-HBV therapy ends, with longer follow-up considered for delayed-risk settings."
+});
+chronicHepatitisBModule.submodules.find((lesson) => lesson.slug === "reactivation").lesson.push({
+  "heading": "Recognize reactivation and associated hepatitis",
+  "body": "AASLD defines reactivation in an initially HBsAg-positive patient by any one of: DNA rising at least 100-fold from baseline; DNA at least 1,000 IU/mL after prior undetectability; or DNA at least 10,000 IU/mL when baseline is unknown. In an initially HBsAg-negative/anti-HBc-positive patient, detectable DNA or HBsAg reappearance is sufficient. A hepatitis flare is a separate finding: ALT at least three times baseline and above 100 U/L. Reactivation plus a flare defines HBV-associated hepatitis. These are not the on-treatment breakthrough criteria or the supervised-withdrawal restart thresholds taught in the monitoring lesson."
+});
+chronicHepatitisBModule.submodules.find((lesson) => lesson.slug === "reactivation").lesson.push({
+  "heading": "Apply the definitions to a result handoff",
+  "body": "An HBsAg-positive patient receiving immunosuppression has HBV DNA rising from 50 to 5,000 IU/mL and ALT rising from 30 to 120 U/L. DNA has risen 5,000 / 50 = 100-fold, or 2 log10, meeting the AASLD reactivation definition. ALT has risen 120 / 30 = fourfold and exceeds 100 U/L, meeting the separate flare definition. Together they establish HBV-associated hepatitis by those criteria. Promptly route the result to the responsible team for antiviral and liver-status assessment; do not defer action until symptoms or the next routine visit."
+});
+chronicHepatitisBModule.submodules.find((lesson) => lesson.slug === "reactivation").lesson.push({
+  "heading": "Keep the cancer-specific pathway explicit",
+  "body": "ASCO 2020 recommends prophylaxis during systemic anticancer treatment and for at least twelve months afterward for chronic HBV, and for past HBV receiving anti-CD20 treatment or stem-cell transplantation. Hormonal therapy alone follows ordinary HBV care, with reassessment if systemic therapy is added. ASCO describes a closely supervised monitoring alternative for selected past-HBV patients able to maintain consistent follow-up; its cancer-specific testing and action thresholds differ from AASLD. Record which pathway governs the plan. After cancer treatment, reassess whether ordinary chronic-HBV indications require continued therapy rather than stopping at the prophylaxis minimum."
+});
+Object.assign(chronicHepatitisBModule.submodules.find((lesson) => lesson.slug === "reactivation"), {
+  "summary": "Current and resolved HBV can reactivate during immune-modifying therapy. Serostatus, the exact regimen and reliable follow-up determine prevention.",
+  "concepts": [
+    "Triple panel",
+    "Anti-CD20",
+    "High-barrier antiviral",
+    "DNA monitoring",
+    "Delayed flare"
+  ],
+  "application": "Before immune treatment, document serology and baseline DNA/ALT, the named prevention pathway, antiviral start and minimum duration or monitoring dates, action triggers and the responsible clinician.",
+  "keyPoints": [
+    "Positive anti-HBs does not remove core-antibody-associated risk.",
+    "AASLD recommends prophylaxis for past HBV with anti-CD20 treatment or stem-cell transplantation.",
+    "Start indicated prophylaxis before or no later than the first immune-treatment dose.",
+    "Minimum prophylaxis duration and post-treatment follow-up are different decisions."
+  ]
+});
+Object.assign(chronicHepatitisBModule.submodules.find((lesson) => lesson.slug === "reactivation").check, {
+  "question": "An HBsAg-negative, anti-HBc-positive, anti-HBs-positive patient with undetectable DNA is starting rituximab. Which AASLD plan is best?",
+  "choices": [
+    "Start a suitable high-barrier antiviral before or with rituximab and plan extended prophylaxis and follow-up",
+    "Omit prevention because anti-HBs is positive",
+    "Wait for jaundice before considering HBV treatment",
+    "Use vaccine alone instead of antiviral prophylaxis"
+  ],
+  "answer": 0,
+  "rationale": "Past HBV can reactivate despite anti-HBs and undetectable baseline DNA. AASLD recommends prophylaxis for anti-CD20 therapy, continued during treatment and for at least twelve months afterward, with individualized later monitoring and stopping decisions.",
+  "reviewHref": "#reactivation"
+});
+Object.assign(chronicHepatitisBModule.submodules.find((lesson) => lesson.slug === "integrated-case").lesson.find((body) => body.heading === "Define infection and phase"), {
+  "heading": "Define infection and phase",
+  "body": "Interpret all three screening markers, prior tests and the time course before calling infection chronic or resolved. Then assess HBV DNA, HBeAg/anti-HBe, serial ALT and liver function, fibrosis/cirrhosis, symptoms and HCC risk. Check HIV and assess HCV/HDV, pregnancy and planned immunosuppression. A suppressed DNA result does not establish viral eradication, and positive anti-HBs does not eliminate reactivation risk after natural infection. Carry this interpretation into the treatment and prevention plan rather than treating the serology as an isolated result."
+});
+Object.assign(chronicHepatitisBModule.submodules.find((lesson) => lesson.slug === "integrated-case").lesson.find((body) => body.heading === "Engineer treatment"), {
+  "heading": "Engineer treatment",
+  "body": "State the named guideline indication or the reason for monitored deferral. Verify the exact product, patient-specific dose, kidney adjustment, food instructions, liver restrictions, prior resistance and interactions. The book highlights HIV testing, tenofovir renal/bone toxicity, entecavir fasting administration and withdrawal flares. Use the fully reviewed label distinctions in the drug lessons rather than assuming all HBV-active products have interchangeable dosing or HIV coverage. Include the patient's preferences, affordability, refill plan and the clinician who will reassess response and safety."
+});
+Object.assign(chronicHepatitisBModule.submodules.find((lesson) => lesson.slug === "integrated-case").lesson.find((body) => body.heading === "Engineer prevention"), {
+  "heading": "Engineer prevention",
+  "body": "Test and vaccinate susceptible household and sexual contacts, counsel about blood and sexual exposure, and assess pregnancy intentions. Link a maternal plan to infant vaccine/HBIG timing, series completion and postvaccination testing when indicated. Before immune-modifying therapy, reassess surface antigen, core antibody and regimen-specific reactivation prevention even when infection appears resolved. Vaccination prevents new infection; it does not treat established HBV or replace an indicated reactivation antiviral. Maintain indicated HCC surveillance despite DNA suppression."
+});
+Object.assign(chronicHepatitisBModule.submodules.find((lesson) => lesson.slug === "integrated-case").lesson.find((body) => body.heading === "Engineer continuity"), {
+  "heading": "Engineer continuity",
+  "body": "Set dates and owners for viral and safety results, indicated imaging, refills and transfers. At an insurance change, hospitalization, dialysis transition, new pregnancy, cancer treatment or HIV-regimen switch, reconcile the exact HBV-active treatment and any pending tasks. Confirm medication availability before the next dose is due and communicate the prevention and surveillance plan to the receiving team. New jaundice, ascites, confusion or another suspected decompensation needs urgent assessment; an unexpected laboratory rise or treatment interruption also needs prompt review rather than symptom-only follow-up."
+});
+chronicHepatitisBModule.submodules.find((lesson) => lesson.slug === "integrated-case").lesson.push({
+  "heading": "Work a chronic-HBV case",
+  "body": "A 55-year-old man has HBsAg persisting for eight months, positive total anti-HBc, negative anti-HBs, HBV DNA 6,500 IU/mL and compensated Child-Pugh A cirrhosis. Cirrhosis provides a treatment indication; suppression alone will not remove his HCC-surveillance indication. Assume he is nucleoside-naive, HIV-negative, has creatinine clearance 80 mL/min and has no relevant interacting drug. One label-consistent oral option is entecavir 0.5 mg daily, at least two hours after a meal and two hours before the next meal. Arrange response and safety review, ultrasound with AFP about every six months, contact protection and a refill plan. Recheck suitability if the assumptions change."
+});
+chronicHepatitisBModule.submodules.find((lesson) => lesson.slug === "integrated-case").lesson.push({
+  "heading": "Close the case at a transfer",
+  "body": "For that patient, a transfer note should name the receiving clinician, verify that the next entecavir supply is available, record the latest DNA/liver results and set the next tests. Under the AASLD oral-treatment monitoring pathway, check DNA about every three months until undetectable, then every three to six months. Carry forward the next ultrasound/AFP date, contact-vaccination needs and any unresolved results. Do not stop the antiviral or cancel surveillance because DNA becomes undetectable. If immunosuppression is later proposed, coordinate a new reactivation plan before it starts."
+});
+Object.assign(chronicHepatitisBModule.submodules.find((lesson) => lesson.slug === "integrated-case"), {
+  "summary": "Build a patient-specific HBV plan, then test whether treatment, prevention, results and follow-up remain connected across a real transfer of care.",
+  "concepts": [
+    "Serology and liver stage",
+    "Exact regimen",
+    "Prevention",
+    "Surveillance",
+    "Transfer ownership"
+  ],
+  "application": "Use the worked cirrhosis case to write the indication, exact regimen, lab and imaging dates, next medication supply and receiving clinician; reassess the plan when patient conditions change.",
+  "keyPoints": [
+    "Chronicity and liver stage determine more than one DNA result.",
+    "Exact product, dose and food instructions belong in the handoff.",
+    "Contact, infant and reactivation prevention require different plans.",
+    "DNA suppression does not authorize stopping treatment or indicated HCC surveillance."
+  ]
+});
+Object.assign(chronicHepatitisBModule.submodules.find((lesson) => lesson.slug === "integrated-case").check, {
+  "question": "The worked-case patient with Child-Pugh A cirrhosis has undetectable DNA on entecavir and is changing clinicians. Which handoff is best?",
+  "choices": [
+    "Confirm uninterrupted medication supply, the receiving clinician, next labs and six-month ultrasound/AFP surveillance",
+    "Stop entecavir because DNA is now undetectable",
+    "Cancel HCC surveillance because treatment is effective",
+    "Send only the drug name with no dose, food rule or follow-up dates"
+  ],
+  "answer": 0,
+  "rationale": "Cirrhosis remains relevant after suppression. A complete transfer preserves the suitable regimen, exact administration, medication access, monitoring and indicated HCC surveillance with a responsible receiving clinician.",
+  "reviewHref": "#integrated-case"
+});
+chronicHepatitisBModule.references.push({
+  "label": "ASCO 2020: HBV screening and prevention during systemic cancer therapy",
+  "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11828660/"
+});
