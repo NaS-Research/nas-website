@@ -105,8 +105,8 @@
     "branch": "audit/rxprep-content-2026-09-24",
     "baseCommit": "c9aec13cc89a935b13ec1667ba11f6d6f1e35411",
     "remoteVerifiedAtStart": true,
-    "commit": null,
-    "push": "pending",
+    "commit": "439e56a05d0e0db0166d763da1df84b1a04da760",
+    "push": "verified",
     "production": "not verified",
     "receipt": "enteral-nutrition-broader-cirrhosis-ascites-treatment-release.json",
     "contentCommits": [
@@ -216,13 +216,14 @@
       "4dc08c0e6d3e03c5f4fa9f00c5183cad4cad4efc",
       "f4136f65a121ea5f4faa4a5c586c08d5b1b7bba6",
       "fe89dad78422925ce3b094093dedca8caf0bdb95",
-      "addf4aea77ffd11aff9c885b295fcc7c9eb7adb4"
+      "addf4aea77ffd11aff9c885b295fcc7c9eb7adb4",
+      "439e56a05d0e0db0166d763da1df84b1a04da760"
     ],
     "previousVerifiedContentCommit": "65ac22e809246ba35e196493eedaa0bea3b0898b",
     "baseReceipt": "aca4501d4b775c9e5dbb74a1c3e7c337e6ebb87e",
-    "remoteHashObserved": null,
-    "exactRemoteObservedByTool": false,
-    "remoteVerifiedAt": null,
+    "remoteHashObserved": "439e56a05d0e0db0166d763da1df84b1a04da760",
+    "exactRemoteObservedByTool": true,
+    "remoteVerifiedAt": "2026-10-05T19:42:36.035099+00:00",
     "mainMerge": "not performed"
   },
   "openIssues": [
@@ -11655,6 +11656,17 @@
         "tigecycline-pharmacology"
       ],
       "status": "Candidate lexical hits remain pending contextual whole-object review in their dependency or sequential parent units; shared distractors can produce incidental hits. No other module certified in this unit. Preserve prior verified feeding/volume objects and reconcile SBP-related infection/alcohol-liver objects during next dependency."
+    },
+    "release": {
+      "branch": "audit/rxprep-content-2026-09-24",
+      "commit": "439e56a05d0e0db0166d763da1df84b1a04da760",
+      "push": "verified",
+      "receipt": "enteral-nutrition-broader-cirrhosis-ascites-treatment-release.json",
+      "mainMerge": "not performed",
+      "production": "not verified",
+      "remoteHashObserved": "439e56a05d0e0db0166d763da1df84b1a04da760",
+      "exactRemoteObservedByTool": true,
+      "remoteVerifiedAt": "2026-10-05T19:42:36.035099+00:00"
     }
   }
 }
