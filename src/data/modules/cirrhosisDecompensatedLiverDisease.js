@@ -33,3 +33,35 @@ export const cirrhosisDecompensatedLiverDiseaseModule={
   disclaimer:"This module supports advanced education about cirrhosis and its complications. It reconciles a 2023 course source with current AASLD materials and current FDA labeling. The formal AASLD hepatic encephalopathy guideline is from 2014, so current clinical updates and labeling are identified separately. Patient care requires current guidance, local resistance data, specialist consultation, and patient-specific evidence.",
   questionBank:cirrhosisDecompensatedLiverDiseaseQuestionBank,
 };
+
+// Reconcile the complete nutrition body and embedded assessment.
+Object.assign(cirrhosisDecompensatedLiverDiseaseModule.submodules.find((lesson) => lesson.slug === "longitudinal-care").lesson.find((body) => body.heading === "Feed the patient"), {
+  "heading": "Feed the patient",
+  "body": "Avoid routine protein restriction for hepatic encephalopathy. For clinically stable adults with cirrhosis, AASLD recommends 1.2 to 1.5 g/kg ideal body weight/day protein alongside adequate energy; assess the weight basis rather than using an ascites-increased scale weight indiscriminately. Encourage varied protein sources, including vegetable and dairy options, and reduce prolonged fasting with an individualized late-evening snack. Review muscle loss, actual intake, food access, sodium-related palatability, alcohol, micronutrient risks and barriers to safe eating with the nutrition team. Swallowing symptoms require appropriate assessment. Obesity does not exclude malnutrition; these stable-adult targets are not a universal prescription for children or critical illness."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseModule.submodules.find((lesson) => lesson.slug === "longitudinal-care").check, {
+  "question": "Which nutrition plan is most appropriate for many adults with cirrhosis?",
+  "choices": [
+    "Adequate energy and roughly 1.2 to 1.5 g/kg ideal body weight/day protein in stable adults, with minimized fasting",
+    "Severe protein restriction whenever hepatic encephalopathy is present",
+    "Long overnight fasting despite inadequate daytime intake",
+    "Vitamin supplementation in place of adequate calories and protein"
+  ],
+  "answer": 0,
+  "rationale": "For clinically stable adults, identify the weight basis and preserve adequate protein and energy. Routine restriction can worsen muscle loss; shorter fasting and individualized snacks support intake. Vitamins do not replace calories or protein.",
+  "reviewHref": "#longitudinal-care"
+});
+cirrhosisDecompensatedLiverDiseaseModule.references.push(...[
+  {
+    "label": "AASLD 2021: Malnutrition, frailty and sarcopenia",
+    "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9134787/"
+  },
+  {
+    "label": "ACG 2025: Nutrition in liver disease",
+    "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12191863/"
+  },
+  {
+    "label": "ESPEN 2021: Nutrition and swallowing assessment",
+    "href": "https://www.espen.org/files/ESPEN-Guidelines/ESPEN_guideline_on_hospital_nutrition.pdf"
+  }
+]);

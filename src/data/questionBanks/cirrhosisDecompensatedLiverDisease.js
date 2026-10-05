@@ -54,3 +54,41 @@ export const cirrhosisDecompensatedLiverDiseaseQuestionBank = concepts.flatMap((
   const choices = dimension === "hazard" ? [hazard, principle, action, generic[(conceptIndex + dimensionIndex) % 3]] : [correct, hazard, generic[(conceptIndex + dimensionIndex) % 3], generic[(conceptIndex + dimensionIndex + 1) % 3]];
   return { id: `cirrhosis-decompensated-${String(conceptIndex * 4 + dimensionIndex + 1).padStart(3, "0")}`, question: `${stem} Focus: ${slug.replaceAll("-", " ")}.`, choices, answer: 0, rationale: `${principle} ${action}`, reviewHref: `#${reviewLessonByConcept[slug]}`, difficulty: dimensionIndex < 2 ? "foundational" : "advanced" };
 }));
+
+// Reconcile cirrhosis nutrition choices and weight-specific feedback.
+Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => question.id === "cirrhosis-decompensated-097"), {
+  "choices": [
+    "Clinically stable adults with cirrhosis generally need adequate energy and 1.2 to 1.5 g/kg ideal body weight/day protein, with minimized fasting and no routine protein restriction for hepatic encephalopathy.",
+    "Routinely restrict protein to treat hepatic encephalopathy until the ammonia concentration normalizes",
+    "Use ascites-increased scale weight without identifying the weight basis for the protein prescription",
+    "Recommend a late-evening snack only when the patient is visibly underweight"
+  ],
+  "rationale": "AASLD specifies ideal body weight for this adult protein target. Routine restriction can accelerate protein breakdown; adequate intake and shorter fasting periods support nutrition. Fluid retention can distort scale weight, and a normal or high BMI does not rule out malnutrition."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => question.id === "cirrhosis-decompensated-098"), {
+  "choices": [
+    "Assess sarcopenia, food access, sodium burden, alcohol, vitamins, swallowing, obesity, and late-evening nutrition with a dietitian.",
+    "Wait for visible wasting before reviewing food access or meal timing",
+    "Reduce protein whenever encephalopathy occurs, without reviewing actual intake",
+    "Omit micronutrient and alcohol-use assessment once calorie intake seems adequate"
+  ],
+  "rationale": "Review intake, muscle loss, access to food, dietary restrictions, alcohol and micronutrient risks with the nutrition team. Ask about barriers to safe eating, including swallowing difficulty, and involve the appropriate professional when indicated. Adequate calories alone do not establish an adequate nutrition plan."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => question.id === "cirrhosis-decompensated-099"), {
+  "choices": [
+    "Assess sarcopenia, food access, sodium burden, alcohol, vitamins, swallowing, obesity, and late-evening nutrition with a dietitian.",
+    "Treat a high BMI or ascites-increased weight as proof that muscle and nutrition are adequate",
+    "Tighten dietary restrictions despite falling intake, without reassessing nutritional targets",
+    "Replace adequate food and protein with vitamin supplements alone"
+  ],
+  "rationale": "Obesity and fluid retention can conceal muscle loss. Assess the whole nutrition pattern and barriers, including swallowing when relevant; tailor energy, protein and meal timing with a dietitian. Restrictive diets that reduce intake require reassessment, and micronutrients cannot replace macronutrients."
+});
+Object.assign(cirrhosisDecompensatedLiverDiseaseQuestionBank.find((question) => question.id === "cirrhosis-decompensated-100"), {
+  "choices": [
+    "Severely restrict dietary protein to treat hepatic encephalopathy despite ongoing muscle loss",
+    "Clinically stable adults with cirrhosis generally need adequate energy and 1.2 to 1.5 g/kg ideal body weight/day protein, with minimized fasting and no routine protein restriction for hepatic encephalopathy.",
+    "Assess sarcopenia, food access, sodium burden, alcohol, vitamins, swallowing, obesity, and late-evening nutrition with a dietitian.",
+    "Shorten overnight fasting with an individualized late-evening snack"
+  ],
+  "rationale": "The error is protein restriction: it can worsen catabolism and muscle loss. Muscle contributes to ammonia disposal, so restriction is not a reliable way to improve encephalopathy. Adequate nutrition, assessment and an individualized meal schedule are beneficial actions."
+});
