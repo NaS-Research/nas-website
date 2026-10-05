@@ -806,3 +806,230 @@ Object.assign(calciumPhosphorusHomeostasisQuestionBank.find((question) => questi
 });
 
 calciumPhosphorusHomeostasisQuestionBank.find((question) => question.id === "calcium-phosphorus-023").question = "Which coexisting abnormality can impair PTH release and action, reducing the response to calcium replacement?";
+
+// Final whole-module reconciliation: clinically meaningful distractors and feedback.
+Object.assign(calciumPhosphorusHomeostasisQuestionBank.find((question) => question.id === "calcium-phosphorus-009"), {
+  "choices": [
+    "It favors bone resorption and mineral release",
+    "It favors net mineral deposition, as with intermittent therapeutic PTH",
+    "It releases calcium from bone while retaining phosphate in bone",
+    "It reduces bone turnover while increasing renal phosphate retention"
+  ],
+  "rationale": "Sustained excess PTH can favor bone resorption and release of both calcium and phosphate. Its renal phosphate-excretion effect helps explain why serum phosphate does not simply track release from bone. Intermittent therapeutic PTH can have a different skeletal effect; that pattern should not be substituted for sustained excess signaling. Renal phosphate loss also does not mean phosphate remains trapped in bone."
+});
+Object.assign(calciumPhosphorusHomeostasisQuestionBank.find((question) => question.id === "calcium-phosphorus-010"), {
+  "choices": [
+    "Low albumin reduces the protein-bound fraction",
+    "Low albumin lowers only the ionized fraction",
+    "The total-calcium assay measures only free calcium",
+    "Protein-bound calcium is excluded from the total-calcium result"
+  ],
+  "rationale": "Total calcium includes ionized, protein-bound and complexed fractions. Low albumin can reduce the protein-bound component and therefore total calcium while ionized calcium remains normal. Total calcium does not measure only the free fraction or exclude protein-bound calcium. Low albumin alone does not establish an ionized-calcium deficit."
+});
+Object.assign(calciumPhosphorusHomeostasisQuestionBank.find((question) => question.id === "calcium-phosphorus-016"), {
+  "choices": [
+    "It gives an albumin-adjusted total-calcium estimate, not a measured ionized-calcium result",
+    "It directly measures free calcium after adjusting for albumin",
+    "It corrects both albumin binding and the patient’s pH",
+    "A normal corrected result excludes an ionized-calcium abnormality"
+  ],
+  "rationale": "The equation estimates total calcium as if albumin were 4 g/dL; it does not measure ionized calcium or correct for pH. Use total calcium in mg/dL and albumin in g/dL. Its performance can be unreliable in critical illness, kidney disease and marked hypoalbuminemia, so a normal estimate does not exclude an ionized-calcium abnormality. Obtain direct ionized calcium when that distinction changes care."
+});
+Object.assign(calciumPhosphorusHomeostasisQuestionBank.find((question) => question.id === "calcium-phosphorus-018"), {
+  "choices": [
+    "QT prolongation",
+    "QT shortening",
+    "A shortened ST segment as the defining calcium finding",
+    "A delta wave as the characteristic calcium finding"
+  ],
+  "rationale": "Acute hypocalcemia guidance identifies QT prolongation and arrhythmia. QT shortening and a shortened ST segment do not describe the characteristic low-calcium pattern, and a delta wave is not its defining finding. Interpret the ECG with symptoms and the calcium trend."
+});
+Object.assign(calciumPhosphorusHomeostasisQuestionBank.find((question) => question.id === "calcium-phosphorus-022"), {
+  "choices": [
+    "It is more irritating and extravasation can cause severe tissue injury",
+    "Central access makes chloride interchangeable with gluconate by volume",
+    "Central access removes the need for dilution, rate and cardiac review",
+    "The access restriction is based on chloride containing less elemental calcium per mL"
+  ],
+  "rationale": "Emergency guidance specifies central access for calcium chloride because it is more irritating. The reviewed label specifies slow infusion in a central or deep vein and warns of tissue necrosis with infiltration. Access does not remove administration or cardiac precautions. The reviewed 10% chloride product contains 27 mg elemental calcium per mL, compared with 9.3 mg per mL for the reviewed 10% gluconate product; equal volumes are not interchangeable."
+});
+Object.assign(calciumPhosphorusHomeostasisQuestionBank.find((question) => question.id === "calcium-phosphorus-024"), {
+  "choices": [
+    "Low PTH reduces renal activation of vitamin D",
+    "25-hydroxyvitamin D is already the final active hormone",
+    "Low PTH increases renal conversion of nutritional vitamin D",
+    "Calcitriol is selected because it reduces intestinal calcium absorption"
+  ],
+  "rationale": "PTH facilitates renal active-vitamin-D synthesis; deficient signaling can make activation insufficient. Calcitriol provides active vitamin D and supports intestinal calcium absorption. The liver product 25-hydroxyvitamin D is not the final active hormone, and low PTH does not increase renal activation. Treatment is individualized to the cause, calcium response and kidney safety."
+});
+Object.assign(calciumPhosphorusHomeostasisQuestionBank.find((question) => question.id === "calcium-phosphorus-026"), {
+  "choices": [
+    "ECG, symptoms, calcium, IV site, and cause monitoring",
+    "A calcium result alone, with ECG and IV-site review only if the result remains low",
+    "IV-site observation alone, with calcium reassessed only after symptoms recur",
+    "A single pretreatment ECG, with further monitoring deferred until discharge"
+  ],
+  "rationale": "Urgent IV calcium requires reassessment of symptoms, ECG risk, calcium, IV-site injury and the underlying cause. The label also requires vital-sign and calcium monitoring during administration. A serum result alone misses cardiac and tissue risks, site observation alone misses the mineral response, and a pretreatment ECG does not replace monitoring during administration. Follow the exact product and patient-specific plan."
+});
+Object.assign(calciumPhosphorusHomeostasisQuestionBank.find((question) => question.id === "calcium-phosphorus-028"), {
+  "choices": [
+    "QT shortening",
+    "QT prolongation",
+    "A prolonged ST segment as the characteristic high-calcium finding",
+    "A delta wave as the characteristic high-calcium finding"
+  ],
+  "rationale": "Acute hypercalcemia guidance identifies QT shortening and dysrhythmia. QT prolongation is the contrasting hypocalcemia pattern; a prolonged ST segment or delta wave is not the characteristic high-calcium finding. Assess the ECG with symptoms and severity rather than diagnosing the cause from the tracing alone."
+});
+Object.assign(calciumPhosphorusHomeostasisQuestionBank.find((question) => question.id === "calcium-phosphorus-032"), {
+  "choices": [
+    "An IV bisphosphonate or denosumab",
+    "Calcitonin as the sole durable calcium-lowering treatment",
+    "Hydration alone as the complete treatment after volume depletion resolves",
+    "Glucocorticoids as the routine cause-directed treatment for every HCM mechanism"
+  ],
+  "rationale": "Recommendation 1 strongly recommends an IV bisphosphonate or denosumab for adults with malignancy-associated hypercalcemia. Recommendation 2 conditionally suggests denosumab over an IV bisphosphonate, based on very low-certainty, largely indirect evidence. Calcitonin is a short bridge and hydration supports volume restoration; neither is the complete durable antiresorptive plan. Glucocorticoids target calcitriol-mediated disease rather than every HCM mechanism."
+});
+Object.assign(calciumPhosphorusHomeostasisQuestionBank.find((question) => question.id === "calcium-phosphorus-033"), {
+  "choices": [
+    "Glucocorticoid therapy",
+    "Calcitonin alone as the durable cause-directed treatment",
+    "Additional calcitriol to restore vitamin D signaling",
+    "Loop diuresis before correcting volume depletion"
+  ],
+  "rationale": "Glucocorticoids reduce active-vitamin-D production in lymphoma and granulomatous mechanisms. Calcitonin can provide short-term calcium lowering but does not replace treatment of excess calcitriol production; additional calcitriol worsens the provoking exposure. Loop diuretics are not routine initial treatment before volume correction. Persistent severe or symptomatic calcitriol-associated malignancy hypercalcemia despite glucocorticoids may require an added antiresorptive."
+});
+Object.assign(calciumPhosphorusHomeostasisQuestionBank.find((question) => question.id === "calcium-phosphorus-036"), {
+  "choices": [
+    "Insulin-driven intracellular uptake",
+    "Reduced renal phosphate excretion as insulin rises",
+    "Increased intestinal phosphate absorption after carbohydrate reintroduction",
+    "Reduced PTH-driven urinary phosphate loss alone"
+  ],
+  "rationale": "After carbohydrate reintroduction, rising insulin promotes intracellular phosphate uptake for metabolism and can rapidly lower serum phosphate in a depleted patient. Reduced urinary phosphate loss or increased intestinal absorption does not explain this characteristic shift. Potassium can fall too; the mechanism for the accompanying magnesium decline is less well established. Assess all three electrolytes and the clinical nutrition exposure."
+});
+Object.assign(calciumPhosphorusHomeostasisQuestionBank.find((question) => question.id === "calcium-phosphorus-037"), {
+  "choices": [
+    "ATP depletion weakens respiratory muscles",
+    "Increased ATP availability suppresses respiratory muscle contraction",
+    "Phosphate depletion improves muscle energy delivery but reduces albumin binding",
+    "Respiratory muscle weakness is excluded if hemoglobin concentration is normal"
+  ],
+  "rationale": "Phosphate is required for ATP production, and severe depletion can impair respiratory muscle function enough to cause respiratory failure. The book identifies weakness and respiratory failure; ASPEN describes the energy and muscle link. Depletion does not improve ATP availability or muscle energy delivery. A normal hemoglobin concentration does not exclude respiratory muscle dysfunction, and altered tissue oxygen delivery can also contribute."
+});
+Object.assign(calciumPhosphorusHomeostasisQuestionBank.find((question) => question.id === "calcium-phosphorus-039"), {
+  "choices": [
+    "The product adds clinically important potassium",
+    "Each mmol of phosphate necessarily supplies exactly one mEq of potassium",
+    "Diluting the concentrate removes its potassium load",
+    "Only potassium from oral medicines contributes to the patient’s total intake"
+  ],
+  "rationale": "Potassium phosphates injection supplies both phosphate and potassium: the reviewed concentrate contains 3 mmol phosphorus and 4.4 mEq potassium per mL. Those amounts are not numerically interchangeable. Dilution changes concentration, not the total potassium delivered; count IV and oral sources. The product can worsen hyperkalemia and is contraindicated in that setting. A potassium deficit can influence selection only after the complete safety review."
+});
+Object.assign(calciumPhosphorusHomeostasisQuestionBank.find((question) => question.id === "calcium-phosphorus-040"), {
+  "choices": [
+    "Hypocalcemia and calcium-phosphate precipitation",
+    "Ionized calcium rises because phosphate prevents mineral precipitation",
+    "Phosphate excess protects kidney function by retaining calcium in solution",
+    "Dilution makes repeat mineral measurements unnecessary"
+  ],
+  "rationale": "IV phosphate can cause hyperphosphatemia, hypocalcemia and calcium-phosphate precipitation, with kidney injury and serious infusion complications. Excessive or rapid administration increases risk; phosphate excess does not protect calcium availability or kidney function. Dilution is required but does not replace repeat phosphate, calcium, potassium, magnesium and kidney assessment. The potassium product must not be infused with calcium-containing IV fluids."
+});
+Object.assign(calciumPhosphorusHomeostasisQuestionBank.find((question) => question.id === "calcium-phosphorus-041"), {
+  "choices": [
+    "Ferric carboxymaltose",
+    "Ferrous sulfate",
+    "Iron sucrose",
+    "Oral carbonyl iron"
+  ],
+  "rationale": "Ferric carboxymaltose is the product identified by the current Injectafer warning. A randomized trial and its physiological substudy support increased biologically active FGF23 and renal phosphate wasting after this product; the mechanism and warning should not be generalized to every iron formulation. Severe or prolonged symptomatic hypophosphatemia, including osteomalacia and fractures, can follow single or repeated exposure. Repeated exposure is not required. Review the current product-specific label for phosphate testing and management."
+});
+Object.assign(calciumPhosphorusHomeostasisQuestionBank.find((question) => question.id === "calcium-phosphorus-043"), {
+  "choices": [
+    "Use serial calcium, phosphate, and PTH assessments together",
+    "Use the latest phosphate result as the sole treatment trigger",
+    "Apply one fixed PTH target regardless of CKD stage or serial mineral values",
+    "Start a phosphate binder for elevated PTH despite normal phosphate without reviewing the pattern"
+  ],
+  "rationale": "KDIGO recommendation 4.1.1 considers serial calcium, phosphate and PTH together. Phosphate-lowering decisions depend on progressively or persistently elevated phosphate, rather than PTH alone with normal phosphate. CKD stage and modifiable factors matter; one isolated value or a fixed PTH target across all stages does not establish the integrated treatment plan."
+});
+Object.assign(calciumPhosphorusHomeostasisQuestionBank.find((question) => question.id === "calcium-phosphorus-044"), {
+  "choices": [
+    "Inorganic phosphate additive",
+    "Phytate-bound phosphate in whole grains",
+    "Organic phosphate in unprocessed animal protein",
+    "Phytate-bound phosphate in legumes"
+  ],
+  "rationale": "Inorganic phosphate additives are readily absorbed and may be underreported in nutrient databases. Animal phosphate is generally more available than plant phytate, but additives are the most absorbable source among these choices. Whole grains and legumes contain phytate-bound phosphate. Reduce highly absorbable additives while preserving adequate protein and overall nutrition."
+});
+Object.assign(calciumPhosphorusHomeostasisQuestionBank.find((question) => question.id === "calcium-phosphorus-045"), {
+  "choices": [
+    "With phosphate-containing meals or snacks",
+    "At bedtime regardless of whether phosphate-containing food is eaten",
+    "Several hours after the phosphate-containing meal has been absorbed",
+    "All daily doses together in the morning regardless of meal timing"
+  ],
+  "rationale": "Binders must be present in the gut with dietary phosphate. A dose at bedtime without relevant food, after the meal has been absorbed, or bundled in the morning regardless of meals does not match that purpose. Reconcile the prescribed regimen with actual phosphate-containing meals or snacks and the specific product instructions."
+});
+Object.assign(calciumPhosphorusHomeostasisQuestionBank.find((question) => question.id === "calcium-phosphorus-046"), {
+  "choices": [
+    "They increase calcium load and can contribute to hypercalcemia or calcification risk",
+    "A lower phosphate result establishes that their calcium exposure is harmless",
+    "Binding phosphate eliminates the calcium supplied by the product",
+    "Calcium acetate and carbonate supply identical elemental calcium for every tablet strength"
+  ],
+  "rationale": "Calcium acetate and calcium carbonate both bind phosphate and add calcium. Hypercalcemia and total calcium exposure are important selection concerns; KDIGO suggests restricting calcium-based binder doses in adults receiving phosphate-lowering treatment. A lower phosphate result does not establish calcium safety. Binding does not eliminate the supplied calcium, and elemental calcium depends on the salt and actual product strength."
+});
+Object.assign(calciumPhosphorusHomeostasisQuestionBank.find((question) => question.id === "calcium-phosphorus-048"), {
+  "choices": [
+    "Phosphate, calcium, phosphate intake, and vitamin D status",
+    "Phosphate and diet alone, without calcium or vitamin D assessment",
+    "Calcium alone, without phosphate intake or vitamin D review",
+    "Vitamin D status alone, with the remaining mineral results deferred"
+  ],
+  "rationale": "For CKD G3a-G5 not on dialysis with progressively rising or persistently elevated PTH, KDIGO identifies hyperphosphatemia, hypocalcemia, high phosphate intake and vitamin D deficiency as modifiable factors. A review restricted to phosphate and diet, calcium alone, or vitamin D alone omits other relevant drivers. Assess the pattern before selecting PTH-lowering treatment."
+});
+Object.assign(calciumPhosphorusHomeostasisQuestionBank.find((question) => question.id === "calcium-phosphorus-049"), {
+  "choices": [
+    "Poor timing, missed doses, dietary additives, inadequate dialysis, or insufficient regimen",
+    "The binder should remove phosphate already absorbed, so meal timing cannot explain failure",
+    "Attendance at scheduled dialysis establishes that phosphate removal is adequate",
+    "A prescription record establishes the dose was taken with phosphate-containing food"
+  ],
+  "rationale": "A prescription does not establish effective phosphate binding. Review actual doses with meals, missed doses, absorbable dietary phosphate, dialytic removal and regimen adequacy. Binders act before intestinal absorption, so timing matters. Dialysis attendance alone does not establish adequate phosphate removal, and the medication list does not prove how doses were taken."
+});
+Object.assign(calciumPhosphorusHomeostasisQuestionBank.find((question) => question.id === "calcium-phosphorus-094"), {
+  "choices": [
+    "Refeeding-related intracellular phosphate shift",
+    "New phosphate retention from kidney failure is the primary explanation for the rapid fall",
+    "Increased intestinal phosphate absorption is the primary explanation for the rapid fall",
+    "Phosphate replacement permits energy delivery to continue unchanged without reassessing the electrolyte trend"
+  ],
+  "rationale": "The timing after nutrition begins and rapid phosphate fall make refeeding-related intracellular shift a defensible concern, rather than proof that every other cause is excluded. Renal retention or increased absorption does not explain the characteristic fall. Assess promptly, review potassium, magnesium, kidney function and energy delivery, and treat the abnormality. ASPEN recommends reassessing and reducing energy exposure when electrolytes fall precipitously or are difficult to correct; replacement alone does not establish that the prior energy plan is safe."
+});
+Object.assign(calciumPhosphorusHomeostasisQuestionBank.find((question) => question.id === "calcium-phosphorus-098"), {
+  "choices": [
+    "Avoid automatic potassium phosphate and obtain specialist protocol guidance",
+    "Select potassium phosphate because severe depletion outweighs the potassium result",
+    "Select sodium phosphate and repeat it without reassessing sodium, calcium or kidney function",
+    "Use the same replacement amount as a patient with normal kidney function because phosphate is low"
+  ],
+  "rationale": "Potassium 5.8 mEq/L is hyperkalemia, and potassium phosphates injection is contraindicated in hyperkalemia. Oliguric kidney injury requires an urgent individualized replacement and monitoring plan. Sodium phosphate avoids that potassium load but adds sodium, has high-sodium, high-phosphate and low-calcium contraindications, and requires caution in renal impairment. Neither severe depletion nor a non-potassium product establishes a fixed safe regimen. The stem does not select a replacement dose."
+});
+Object.assign(calciumPhosphorusHomeostasisQuestionBank.find((question) => question.id === "calcium-phosphorus-104"), {
+  "choices": [
+    "Stop or adjust contributors and replace according to severity and route",
+    "Continue the binders unchanged and replace phosphate without checking their indication",
+    "Assume renal phosphate wasting is established and disregard the gastrointestinal exposures",
+    "Use repeated IV phosphate as the default despite stable symptoms and reliable oral absorption"
+  ],
+  "rationale": "Phosphate-binding drugs can reduce intestinal availability, and diarrhea can add gastrointestinal electrolyte losses. Review the actual antacid or binder and whether it remains indicated; adjust contributors and choose replacement according to severity, symptoms, absorption and kidney function. These exposures do not establish renal wasting. Stable patients with reliable absorption may use oral replacement; IV treatment is selected for the clinical need and exact product limits rather than used automatically."
+});
+Object.assign(calciumPhosphorusHomeostasisQuestionBank.find((question) => question.id === "calcium-phosphorus-107"), {
+  "choices": [
+    "Do not co-infuse potassium phosphate with calcium-containing IV fluids; obtain a safe access plan",
+    "Co-infuse through a Y-site after separately diluting both products",
+    "Use a parenteral-nutrition compatibility chart to authorize the shared replacement line",
+    "Administer the phosphate rapidly through the running calcium line to minimize contact time"
+  ],
+  "rationale": "The potassium-phosphates label prohibits infusion with calcium-containing IV fluids. Separate dilution or shorter contact time does not authorize a shared Y-site or rapid administration. Obtain a safe access and administration plan. Separately compounded parenteral nutrition has its own validated calcium-phosphate compatibility and stability assessment; that does not authorize shared-line replacement infusions. Precipitation can harm the patient."
+});

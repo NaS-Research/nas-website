@@ -347,3 +347,59 @@ calciumPhosphorusHomeostasisModule.submodules.find((lesson) => lesson.slug === "
   "rationale": "Direct ionized calcium is most informative when critical illness, low albumin, and abnormal pH make total or albumin-adjusted calcium uncertain. Alkalemia can increase albumin binding and lower the active fraction. Repeating total calcium or recalculating the same estimate does not resolve that binding uncertainty; vitamin D status can help evaluate the cause but does not measure the active calcium fraction. Assess symptoms and urgency alongside the measurement.",
   "reviewHref": "#calcium-measurement"
 };
+
+// Reconcile emergency and CKD embedded checks with the complete mineral audit.
+calciumPhosphorusHomeostasisModule.submodules.find((lesson) => lesson.slug === "hypocalcemia").check = {
+  "question": "A patient with hypocalcemia has tetany and a prolonged QT interval. What is the immediate priority?",
+  "choices": [
+    "Monitored IV calcium with cause-directed evaluation",
+    "Oral calcium alone with immediate evaluation deferred until tomorrow",
+    "Complete the full hormone workup before starting calcium treatment",
+    "Correct magnesium first and delay calcium until the magnesium result normalizes"
+  ],
+  "answer": 0,
+  "rationale": "Tetany with QT prolongation requires urgent monitored calcium while the cause is evaluated. Oral treatment alone or waiting for a full hormone workup does not meet the immediate stabilization need. Correct magnesium deficiency alongside calcium when present; do not delay emergency calcium until magnesium normalizes.",
+  "reviewHref": "#hypocalcemia"
+};
+calciumPhosphorusHomeostasisModule.submodules.find((lesson) => lesson.slug === "hypercalcemia").check = {
+  "question": "Why is calcitonin paired with a longer-acting antiresorptive in severe hypercalcemia of malignancy?",
+  "choices": [
+    "Calcitonin acts quickly but loses effect within days",
+    "Calcitonin and the antiresorptive have the same onset and duration",
+    "Calcitonin becomes the durable treatment after the antiresorptive is stopped",
+    "The antiresorptive acts first and calcitonin supplies the slower maintenance effect"
+  ],
+  "answer": 0,
+  "rationale": "Calcitonin provides rapid calcium lowering while a slower antiresorptive effect develops. Tachyphylaxis limits calcitonin to 48 to 72 hours in this guideline context. The agents do not have the same onset and duration, and calcitonin does not supply durable maintenance or replace the antiresorptive.",
+  "reviewHref": "#hypercalcemia"
+};
+calciumPhosphorusHomeostasisModule.submodules.find((lesson) => lesson.slug === "hypophosphatemia").check = {
+  "question": "A patient with severe hypophosphatemia also has hyperkalemia and requires IV replacement. Which product characteristic matters most?",
+  "choices": [
+    "Avoid potassium phosphate; assess a non-potassium plan and its sodium, renal and calcium limits",
+    "Dilution makes potassium phosphate suitable despite hyperkalemia",
+    "Sodium phosphate is automatically safe whenever potassium is high",
+    "Severe depletion removes the need to assess calcium and kidney function"
+  ],
+  "answer": 0,
+  "rationale": "Potassium phosphates injection is contraindicated in hyperkalemia; dilution does not remove its potassium load. Sodium phosphate avoids added potassium but adds sodium and is not automatically suitable. Review sodium, calcium, phosphate, kidney function and the exact label before choosing a replacement plan. Severity does not remove product-specific contraindications or monitoring needs.",
+  "reviewHref": "#hypophosphatemia"
+};
+calciumPhosphorusHomeostasisModule.submodules.find((lesson) => lesson.slug === "hyperphosphatemia-ckd-mbd").check = {
+  "question": "Which plan best reflects KDIGO's approach to CKD mineral and bone disorder?",
+  "choices": [
+    "Base treatment on serial calcium, phosphate, and PTH considered together",
+    "Use the latest phosphate result alone to select and escalate treatment",
+    "Begin a phosphate binder for elevated PTH even when serial phosphate remains normal",
+    "Use one fixed PTH target and calcium-binder dose across all CKD stages"
+  ],
+  "answer": 0,
+  "rationale": "KDIGO considers serial calcium, phosphate and PTH together. Phosphate-lowering decisions depend on progressively or persistently elevated phosphate; elevated PTH with normal phosphate does not by itself establish a binder indication. CKD stage, calcium exposure and modifiable factors matter, so a single result or fixed plan across all stages is insufficient.",
+  "reviewHref": "#hyperphosphatemia-ckd-mbd"
+};
+calciumPhosphorusHomeostasisModule.references.find((reference) => reference.href === "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=628f0998-1206-4001-aeee-18133aa9f3bf").label = "Xgeva prescribing information: denosumab for bisphosphonate-refractory hypercalcemia of malignancy";
+
+Object.assign(calciumPhosphorusHomeostasisModule.references.find((reference) => reference.href === "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=517b4a19-45b3-4286-9f6a-ced4e10447de&version=29"), {
+  "label": "FDA Injectafer prescribing information: ferric carboxymaltose, revised August 2026",
+  "href": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/203565s030lbl.pdf"
+});
