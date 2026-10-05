@@ -1096,3 +1096,189 @@ Object.assign(hepatitisCQuestionBank.find((question) => question.id === "hepatit
   ],
   "rationale": "Blind repetition bypasses the failed-regimen assessment and can select an inappropriate course. Review the prior drugs, response, exposure and liver state, and use the guidance for failure or reinfection as appropriate."
 });
+
+// Original product-specific safety and historical-context assessments.
+Object.assign(hepatitisCQuestionBank.find((question) => question.id === "hepatitis-c-033"), {
+  "choices": [
+    "Glecaprevir/pibrentasvir combines an NS3/4A protease inhibitor with an NS5A inhibitor and is taken as three adult tablets together once daily with food.",
+    "Glecaprevir and pibrentasvir are both NS5B polymerase inhibitors.",
+    "The adult tablet regimen is three tablets divided across separate fasting doses.",
+    "Food instructions can be copied unchanged from every other HCV protease-inhibitor combination."
+  ]
+});
+Object.assign(hepatitisCQuestionBank.find((question) => question.id === "hepatitis-c-037"), {
+  "choices": [
+    "Sofosbuvir/velpatasvir combines an NS5B nucleotide polymerase inhibitor with an NS5A inhibitor and is a pangenotypic once-daily regimen.",
+    "Sofosbuvir and velpatasvir are both NS3/4A protease inhibitors",
+    "Epclusa contains only sofosbuvir and is a monotherapy regimen",
+    "All genotypes with cirrhosis use Epclusa without any resistance or liver-state review"
+  ]
+});
+hepatitisCQuestionBank.push({
+  "id": "hepatitis-c-109",
+  "question": "Which counseling instruction fits the reviewed oral ribavirin capsule product?",
+  "choices": [
+    "Open the capsules and give ribavirin alone as a complete HCV course",
+    "Take the capsules with food as part of the prescribed combination, without opening, crushing or breaking them",
+    "Give every adult the same dose regardless of renal function and weight",
+    "Apply a DAA partner’s renal instructions to ribavirin without checking its label"
+  ],
+  "answer": 1,
+  "rationale": "The reviewed capsules are taken with food and must not be opened, crushed or broken. Ribavirin is an adjunct; the product, regimen, renal function and patient context determine dosing.",
+  "reviewHref": "#ribavirin-safety",
+  "difficulty": "foundational"
+});
+hepatitisCQuestionBank.push({
+  "id": "hepatitis-c-110",
+  "question": "An adult without cardiac disease has hemoglobin 8.2 g/dL while taking ribavirin. Which action follows the reviewed adult labels?",
+  "choices": [
+    "Continue unchanged because there is no cardiac history",
+    "Wait until hemoglobin is below 6 g/dL",
+    "Discontinue ribavirin and assess the anemia and treatment plan promptly",
+    "Increase ribavirin to compensate for reduced red-cell mass"
+  ],
+  "answer": 2,
+  "rationale": "For an adult without cardiac disease, the reviewed labels require discontinuation below 8.5 g/dL. A result of 8.2 meets that threshold; assess symptoms and the complete regimen rather than continuing or escalating.",
+  "reviewHref": "#ribavirin-safety",
+  "difficulty": "advanced"
+});
+hepatitisCQuestionBank.push({
+  "id": "hepatitis-c-111",
+  "question": "With stable cardiac disease, hemoglobin falls from 13.1 to 10.9 g/dL over four weeks of ribavirin. Which conclusion fits the reviewed labels?",
+  "choices": [
+    "The 2.2 g/dL fall reaches the stable-cardiac reduction trigger even though hemoglobin remains above 10 g/dL",
+    "No change is needed until hemoglobin is below 8.5 g/dL",
+    "The fall is only 1.2 g/dL and does not reach a labeled trigger",
+    "Stable cardiac disease uses only the no-cardiac absolute threshold"
+  ],
+  "answer": 0,
+  "rationale": "13.1 minus 10.9 equals 2.2 g/dL. A fall of at least 2 g/dL during any four-week period triggers reduction with stable cardiac disease. Use the actual product/combination schedule and clinical assessment; below 12 after four weeks at reduced dose requires discontinuation.",
+  "reviewHref": "#ribavirin-safety",
+  "difficulty": "advanced"
+});
+hepatitisCQuestionBank.push({
+  "id": "hepatitis-c-112",
+  "question": "At CrCl 40 mL/min, which comparison correctly describes the reviewed July 2023 Aurobindo capsules and May 2023 Aurobindo tablets?",
+  "choices": [
+    "Both products have unrestricted dosing because the DAA needs no renal adjustment",
+    "Both products universally require 300 mg every day",
+    "The capsules permit normal dosing, but the tablets are contraindicated",
+    "The capsules contraindicate CrCl below 50; the tablet label specifies alternating 200 mg and 400 mg on successive days for CrCl 30 to 50"
+  ],
+  "answer": 3,
+  "rationale": "The reviewed capsule label contraindicates CrCl below 50 mL/min. The reviewed tablet label provides the stated alternating-day regimen at 30 to 50, with a different 200 mg daily instruction below 30 or during hemodialysis. Verify the actual product, combination and expert plan; the alternating regimen is not 300 mg every day.",
+  "reviewHref": "#ribavirin-safety",
+  "difficulty": "advanced"
+});
+hepatitisCQuestionBank.push({
+  "id": "hepatitis-c-113",
+  "question": "Which post-treatment pregnancy-avoidance periods appear in the reviewed July 2023 Aurobindo ribavirin capsule label?",
+  "choices": [
+    "Six months for every person taking every ribavirin formulation",
+    "Nine months for female patients and six months for female partners of male patients",
+    "One month for female patients and none for partners",
+    "No post-treatment interval once HCV RNA is undetectable"
+  ],
+  "answer": 1,
+  "rationale": "That exact capsule label specifies nine months for female patients and six months for female partners of male patients, with effective contraception and periodic testing during the required period. The reviewed tablet label differs; do not universalize one manufacturer/formulation’s precautions.",
+  "reviewHref": "#ribavirin-safety",
+  "difficulty": "foundational"
+});
+hepatitisCQuestionBank.push({
+  "id": "hepatitis-c-114",
+  "question": "Which ribavirin interaction is contraindicated because increased active-metabolite exposure can cause fatal hepatic failure, pancreatitis and lactic acidosis?",
+  "choices": [
+    "Every statin solely because it treats lipids",
+    "Every nucleoside antiretroviral without product review",
+    "Didanosine",
+    "A noninteracting medicine merely because it is taken twice daily"
+  ],
+  "answer": 2,
+  "rationale": "Didanosine plus ribavirin is contraindicated. Zidovudine-associated anemia/neutropenia during peginterferon/ribavirin is a different risk needing a specific HIV treatment and blood-count plan; it does not justify calling every nucleoside antiretroviral contraindicated.",
+  "reviewHref": "#ribavirin-safety",
+  "difficulty": "foundational"
+});
+hepatitisCQuestionBank.push({
+  "id": "hepatitis-c-115",
+  "question": "Which statement accurately separates historical interferon treatment from current HCV care?",
+  "choices": [
+    "Interferon-based treatment could achieve sustained virologic response, while current initial-treatment pathways generally favor interferon-free DAAs",
+    "Interferon never achieved sustained HCV response in any patient",
+    "A historical twenty-four-week trial follow-up replaces every current cure-testing pathway",
+    "Cost alone makes peginterferon the automatic first choice for all HCV patients"
+  ],
+  "answer": 0,
+  "rationale": "Historical Pegasys studies documented sustained response using an RNA endpoint twenty-four weeks after treatment. Current guidance generally favors interferon-free DAA regimens; historical trials do not establish the current default or follow-up plan.",
+  "reviewHref": "#interferon-context",
+  "difficulty": "foundational"
+});
+hepatitisCQuestionBank.push({
+  "id": "hepatitis-c-116",
+  "question": "A patient develops severe depression with suicidal thoughts during peginterferon treatment. What is the appropriate response?",
+  "choices": [
+    "Treat it as routine flu-like intolerance and continue unchanged",
+    "Wait until the next RNA result before assessing psychiatric safety",
+    "Increase interferon because the symptom proves antiviral response",
+    "Arrange immediate clinical and psychiatric intervention; the reviewed Pegasys label calls for immediate withdrawal in severe cases"
+  ],
+  "answer": 3,
+  "rationale": "Severe psychiatric toxicity is a serious interferon warning. Immediate clinical and psychiatric intervention and the labeled withdrawal action are required; virologic results do not determine whether urgent psychiatric care is needed.",
+  "reviewHref": "#interferon-context",
+  "difficulty": "advanced"
+});
+hepatitisCQuestionBank.push({
+  "id": "hepatitis-c-117",
+  "question": "A treatment-naive adult with genotype 1a is being evaluated for Zepatier. How does the reviewed label use baseline NS5A substitutions?",
+  "choices": [
+    "They are irrelevant because Zepatier is pangenotypic",
+    "Defined substitutions at positions 28, 30, 31 or 93 change the labeled course from twelve weeks to sixteen weeks plus ribavirin",
+    "They automatically permit Zepatier after any prior DAA failure",
+    "Any substitution requires sofosbuvir monotherapy"
+  ],
+  "answer": 1,
+  "rationale": "For the specified treatment-naive or prior peginterferon/ribavirin-experienced genotype 1a pathway, the Zepatier label uses baseline NS5A assessment and distinguishes twelve weeks without the defined substitutions from sixteen weeks plus ribavirin with them. Full hepatic eligibility and ribavirin safety still apply.",
+  "reviewHref": "#other-daa-products",
+  "difficulty": "advanced"
+});
+hepatitisCQuestionBank.push({
+  "id": "hepatitis-c-118",
+  "question": "Which ethinyl estradiol instruction belongs to the archived December 2019 Viekira Pak label?",
+  "choices": [
+    "Continue every ethinyl estradiol product throughout treatment",
+    "Restart the hormone immediately after the first antiviral dose",
+    "Stop before treatment and consider restarting approximately two weeks after completion, with suitable alternative contraception",
+    "Apply a universal nine-month hormone prohibition to every DAA"
+  ],
+  "answer": 2,
+  "rationale": "The archived Viekira Pak label contraindicates ethinyl estradiol-containing products during treatment because of ALT-elevation risk and permits restart approximately two weeks after completion. This historical product rule differs from current Mavyret dose-specific instructions; ribavirin reproductive precautions remain separate.",
+  "reviewHref": "#other-daa-products",
+  "difficulty": "advanced"
+});
+hepatitisCQuestionBank.push({
+  "id": "hepatitis-c-119",
+  "question": "A patient taking Mavyret uses a product containing 30 mcg of ethinyl estradiol. Which action matches the reviewed June 2025 Mavyret label?",
+  "choices": [
+    "Coordinate an alternative because doses above 20 mcg are not recommended; do not assume every estrogen product has the same rule",
+    "Continue solely because all estrogen products are unrestricted",
+    "Treat doses of 20 mcg or less as contraindicated in every patient",
+    "Apply the archived Viekira Pak two-week restart rule as the only Mavyret instruction"
+  ],
+  "answer": 0,
+  "rationale": "The reviewed Mavyret label permits ethinyl estradiol doses of 20 mcg or less and does not recommend doses above 20 mcg because of ALT-elevation risk. Identify the actual hormone and dose, coordinate changes, and preserve any separate ribavirin pregnancy-prevention plan.",
+  "reviewHref": "#interaction-engineering",
+  "difficulty": "advanced"
+});
+hepatitisCQuestionBank.push({
+  "id": "hepatitis-c-120",
+  "question": "Which action matches the reviewed Zepatier label when tacrolimus is part of the patient’s regimen?",
+  "choices": [
+    "Treat tacrolimus as having no interaction or monitoring need",
+    "Apply the archived Viekira Pak tacrolimus contraindication to every DAA",
+    "Stop all transplant medicines without specialist coordination",
+    "Use frequent tacrolimus whole-blood concentrations, renal-function assessment and adverse-effect monitoring"
+  ],
+  "answer": 3,
+  "rationale": "The reviewed Zepatier label calls for frequent tacrolimus concentrations and monitoring of renal function and adverse reactions. Other DAAs can have different rules, including the archived Viekira Pak contraindication; coordinate the actual transplant and antiviral plan.",
+  "reviewHref": "#other-daa-products",
+  "difficulty": "advanced"
+});

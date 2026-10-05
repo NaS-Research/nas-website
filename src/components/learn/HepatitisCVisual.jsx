@@ -1,4 +1,7 @@
 const views = {
+  "other-daa-products": ["Product", "Genotype", "Liver", "Label"],
+  "ribavirin-safety": ["Hb", "Kidney", "Pregnancy", "Product"],
+  "interferon-context": ["Host", "Weekly", "Risk", "RNA"],
   "virus-natural-history": ["RNA", "NS5B", "Fibrosis", "Cirrhosis"],
   "screening-diagnosis": ["Antibody", "RNA", "Viremia", "Linkage"],
   "fibrosis-eligibility": ["FIB-4", "Stiffness", "CTP", "Pathway"],
@@ -17,6 +20,9 @@ export default function HepatitisCVisual({ type }) {
   const key = type.replace("hepatitis-c-", "");
   const labels = views[key] || views["integrated-case"];
   const reviewedCaptions = {
+    "other-daa-products": "Match each complete product to genotype, liver state and its precise label.",
+    "ribavirin-safety": "Connect hemoglobin, kidney function and reproductive precautions to the product.",
+    "interferon-context": "Distinguish historical host-response treatment, weekly exposure and serious risks.",
     "daa-mechanisms": "Map complementary viral targets and verify the complete regimen’s eligibility.",
     "cirrhosis-special": "Use current and prior liver state to guide therapy and continuing cirrhosis care.",
     "retreatment-prevention": "Review prior response, distinguish reinfection, and pair therapy with prevention.",

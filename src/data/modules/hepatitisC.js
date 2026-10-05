@@ -643,3 +643,258 @@ Object.assign(hepatitisCModule.references.find((reference) => reference.href ===
   "label": "Vosevi: U.S. label revised November 2019",
   "href": "https://www.gilead.com/-/media/files/pdfs/medicines/liver-disease/vosevi/vosevi_pi.pdf"
 });
+
+// Product-specific ribavirin safety and historical HCV treatment context.
+hepatitisCModule.submodules.splice(hepatitisCModule.submodules.findIndex((lesson) => lesson.slug === "initial-regimens") + 1, 0, {
+  "slug": "other-daa-products",
+  "title": "Identify Other DAA Products and Their Limits",
+  "visual": "hepatitis-c-other-daa-products",
+  "summary": "The complete product, genotype, treatment history and liver state govern use. Distinguish currently labeled products from historical regimen examples.",
+  "concepts": [
+    "Harvoni",
+    "Sovaldi",
+    "Zepatier",
+    "Viekira Pak",
+    "Product labels"
+  ],
+  "application": "Verify the full combination and its precise label before applying a dose, resistance test or interaction rule.",
+  "lesson": [
+    {
+      "heading": "Distinguish a combination from one component",
+      "body": "Harvoni combines ledipasvir 90 mg, an NS5A inhibitor, with sofosbuvir 400 mg, an NS5B inhibitor, in the usual adult tablet taken once daily with or without food. Sovaldi supplies sofosbuvir 400 mg once daily with or without food as one component of an indicated combination; it is not a complete HCV monotherapy regimen. The Sovaldi label retains older genotype-specific ribavirin and interferon combinations. Those labeled historical courses do not replace current AASLD/IDSA initial-treatment recommendations or establish a universal duration."
+    },
+    {
+      "heading": "Apply Zepatier genotype and resistance requirements",
+      "body": "Zepatier pairs elbasvir, an NS5A inhibitor, with grazoprevir, an NS3/4A inhibitor. The adult 50 mg/100 mg tablet is taken once daily with or without food for indicated genotype 1 or 4 infection; it is not pangenotypic. Before genotype 1a treatment, assess baseline NS5A resistance-associated substitutions at positions 28, 30, 31 and 93. For treatment-naive or prior peginterferon/ribavirin-experienced genotype 1a adults, the label specifies twelve weeks without these substitutions, or sixteen weeks plus ribavirin when present. This defined label pathway is not a universal salvage plan after any DAA failure."
+    },
+    {
+      "heading": "Keep Zepatier safety specific",
+      "body": "Zepatier is contraindicated in Child-Pugh B or C and with any history of hepatic decompensation. It needs no renal dose adjustment, including during hemodialysis, but accompanying ribavirin has separate renal restrictions. Obtain hepatic tests before treatment and at week eight; a sixteen-week course adds week-twelve testing. Contraindicated combinations include OATP1B1/3 inhibitors such as cyclosporine and specified HIV protease inhibitors, strong CYP3A inducers and efavirenz. Tacrolimus is a different case: the label calls for frequent whole-blood concentrations, renal-function assessment and adverse-effect monitoring. Do not convert every interaction into the same avoidance rule."
+    },
+    {
+      "heading": "Recognize historical Viekira Pak administration",
+      "body": "The archived December 2019 Viekira Pak label describes a genotype 1 regimen with two ombitasvir/paritaprevir/ritonavir 12.5 mg/75 mg/50 mg tablets each morning and one dasabuvir 250 mg tablet twice daily, taken with meals. Ombitasvir inhibits NS5A, paritaprevir inhibits NS3/4A, and dasabuvir is a nonnucleoside NS5B inhibitor; ritonavir boosts paritaprevir exposure. Genotype, cirrhosis and prior treatment determine whether ribavirin and a longer course are required. Recognize this older combination without inferring present market availability or making it a default initial regimen."
+    },
+    {
+      "heading": "Interpret historical Viekira interactions precisely",
+      "body": "The archived Viekira Pak label contraindicates Child-Pugh B or C, ethinyl estradiol-containing products, gemfibrozil and specified interacting drugs. Ethinyl estradiol is stopped before the course and may be restarted approximately two weeks after completion; arrange suitable alternative contraception, particularly if ribavirin is used. Gemfibrozil strongly inhibits CYP2C8 and increases dasabuvir exposure. CYP3A-related examples include oral midazolam, triazolam, selected statins and sildenafil used for pulmonary arterial hypertension; the colchicine contraindication applies with renal or hepatic impairment. These product-specific historical rules do not establish a universal ban on every estrogen, statin or CYP3A substrate."
+    }
+  ],
+  "keyPoints": [
+    "Harvoni is a combination; Sovaldi is one component.",
+    "Zepatier genotype 1a requires the defined baseline NS5A assessment.",
+    "Zepatier tacrolimus use requires frequent monitoring.",
+    "Historical Viekira Pak instructions remain product specific."
+  ],
+  "check": {
+    "question": "Which listed adult product has a once-daily tablet that may be taken with or without food and requires baseline NS5A assessment in genotype 1a?",
+    "choices": [
+      "Elbasvir/grazoprevir (Zepatier)",
+      "Sofosbuvir alone as complete monotherapy",
+      "Glecaprevir/pibrentasvir without food",
+      "The archived Viekira Pak regimen as one once-daily tablet"
+    ],
+    "answer": 0,
+    "rationale": "Zepatier is elbasvir/grazoprevir, taken once daily with or without food. Its genotype 1a pathway requires baseline NS5A resistance assessment. The other choices misstate regimen completeness, food requirements or historical Viekira Pak administration.",
+    "reviewHref": "#other-daa-products"
+  }
+});
+hepatitisCModule.submodules.splice(hepatitisCModule.submodules.findIndex((lesson) => lesson.slug === "monitoring-delivery") + 1, 0, {
+  "slug": "ribavirin-safety",
+  "title": "Match Ribavirin Safety to the Actual Product",
+  "visual": "hepatitis-c-ribavirin-safety",
+  "summary": "Ribavirin is an adjunct with early hemolysis and serious reproductive risks. The reviewed tablet and capsule labels have different renal and post-treatment pregnancy instructions.",
+  "concepts": [
+    "Hemolysis",
+    "Hemoglobin",
+    "CrCl",
+    "Pregnancy",
+    "Product identity"
+  ],
+  "application": "Identify the dispensed product, cardiac history, hemoglobin trend and renal function; document the exact dose and pregnancy-prevention plan.",
+  "lesson": [
+    {
+      "heading": "Use an adjunct with product-specific administration",
+      "body": "Oral ribavirin is a nucleoside analog used with other indicated HCV agents, not as HCV monotherapy. Its clinical mechanism in combination treatment is not fully understood; do not classify it as a substitute complete NS5B regimen. Take the reviewed tablets or capsules with food, and do not open, crush or break the reviewed capsules. Dose depends on the actual product, regimen, weight, renal function and tolerance. Peginterferon-combination contraindications must not be transferred uncritically to expert-directed DAA plus ribavirin treatment of selected decompensated patients."
+    },
+    {
+      "heading": "Detect early hemolysis",
+      "body": "Ribavirin can cause hemolytic anemia within the first one to two weeks and aggravate cardiac disease. Check hemoglobin before treatment and at weeks two and four, with further testing as clinically indicated. In the reviewed adult labels, patients without cardiac disease require dose reduction when hemoglobin is below 10 g/dL and discontinuation below 8.5 g/dL. Apply the exact product and regimen reduction schedule rather than guessing a new dose. Significant or unstable cardiac disease is a reason not to treat with ribavirin; hemoglobinopathies such as sickle-cell anemia or thalassemia are contraindications. New chest pain or other concerning symptoms need prompt assessment."
+    },
+    {
+      "heading": "Use the separate stable-cardiac thresholds",
+      "body": "For an adult with a history of stable cardiac disease, the reviewed labels use a hemoglobin fall of at least 2 g/dL during any four-week treatment period as a dose-reduction trigger. Hemoglobin below 12 g/dL despite four weeks at the reduced dose requires discontinuation. A fall from 13.1 to 10.9 g/dL is 2.2 g/dL and reaches the reduction trigger even though the result remains above 10 g/dL. Verify the product and combination instructions for the actual reduction; do not apply the no-cardiac threshold alone to this patient."
+    },
+    {
+      "heading": "Resolve the renal formulation difference",
+      "body": "The reviewed Aurobindo capsule label revised July 2023 contraindicates creatinine clearance below 50 mL/min. The reviewed Aurobindo tablet label revised May 2023 instead specifies a reduced dose when clearance is 50 mL/min or less: for 30 to 50 mL/min, alternate 200 mg one day with 400 mg the next; below 30 mL/min or during hemodialysis, use 200 mg daily under the labeled combination plan and close monitoring. Alternating 200 and 400 mg is not an instruction to give 300 mg every day. Identify the prescribed product and expert regimen before reconciling these instructions; a DAA partner needing no renal adjustment does not clear ribavirin."
+    },
+    {
+      "heading": "Document the exact reproductive precautions",
+      "body": "Ribavirin is embryotoxic and teratogenic and is contraindicated in pregnant patients and male patients whose partners are pregnant. Establish a negative pregnancy test immediately before treatment. The reviewed May 2023 Aurobindo tablet label requires at least two reliable contraceptive methods and monthly pregnancy testing during treatment and for six months afterward. The reviewed July 2023 Aurobindo capsule label requires effective contraception and periodic pregnancy testing during treatment, with nine months of avoidance after treatment for female patients and six months for female partners of male patients. These are exact reviewed-product instructions, not interchangeable rules for all manufacturers. Resolve differences with the current dispensed ribavirin label and specialist; do not automatically shorten a nine-month requirement using an older partner-drug label."
+    },
+    {
+      "heading": "Review didanosine and overlapping toxicity",
+      "body": "Didanosine with ribavirin is contraindicated: increased exposure to its active metabolite can cause fatal hepatic failure, peripheral neuropathy, pancreatitis and symptomatic hyperlactatemia or lactic acidosis. Zidovudine is a different interaction, associated with more severe anemia and neutropenia during peginterferon/ribavirin therapy; consider an appropriate alternative antiretroviral plan and monitor blood counts with the HIV clinician. The reviewed tablet label also warns of azathioprine-related myelotoxicity and pancytopenia. Review the actual co-treatment and clinical state rather than calling every nucleoside antiretroviral contraindicated."
+    }
+  ],
+  "keyPoints": [
+    "Early hemolysis needs baseline and early hemoglobin testing.",
+    "Stable cardiac disease has a separate hemoglobin-trend rule.",
+    "The reviewed capsules and tablets differ in renal instructions.",
+    "Pregnancy avoidance depends on the exact ribavirin product.",
+    "Didanosine is contraindicated; other overlapping toxicities require specific review."
+  ],
+  "check": {
+    "question": "An adult without cardiac disease has hemoglobin 9.4 g/dL during a reviewed ribavirin combination course. Which action follows the labeled threshold?",
+    "choices": [
+      "Arrange the product-specific ribavirin dose reduction and continued assessment",
+      "Continue the original dose solely because hemoglobin exceeds 8.5 g/dL",
+      "Replace HCV RNA testing with antibody to diagnose the anemia",
+      "Use the stable-cardiac four-week rule as the only criterion"
+    ],
+    "answer": 0,
+    "rationale": "Below 10 g/dL triggers dose reduction for adults without cardiac disease in the reviewed labels; below 8.5 g/dL triggers discontinuation. The exact product and combination determine the reduction schedule. Cardiac-history rules and virologic testing do not replace this anemia assessment.",
+    "reviewHref": "#ribavirin-safety"
+  }
+});
+hepatitisCModule.submodules.splice(hepatitisCModule.submodules.findIndex((lesson) => lesson.slug === "ribavirin-safety") + 1, 0, {
+  "slug": "interferon-context",
+  "title": "Understand Interferon Without Making It the Default",
+  "visual": "hepatitis-c-interferon-context",
+  "summary": "Peginterferon teaches host antiviral signaling and a distinct toxicity profile. Historical sustained response is possible, while current HCV pathways generally favor interferon-free DAAs.",
+  "concepts": [
+    "Host response",
+    "Pegylation",
+    "Weekly injection",
+    "Neuropsychiatric risk",
+    "Blood counts"
+  ],
+  "application": "Distinguish historical interferon use from the current DAA pathway and recognize monitoring and urgent toxicity actions.",
+  "lesson": [
+    {
+      "heading": "Connect host signaling and pegylation",
+      "body": "Interferon alfa stimulates host antiviral responses rather than directly inhibiting an HCV NS3, NS5A or NS5B target. Attaching polyethylene glycol prolongs exposure and permits weekly administration compared with more frequent historical nonpegylated injections. The reviewed Pegasys label lists the usual adult chronic-hepatitis-C dose as peginterferon alfa-2a 180 mcg subcutaneously once weekly, with patient-specific modifications and combination requirements. This label example does not establish a current first-line HCV regimen or a universal dose for every interferon product, child or renal state."
+    },
+    {
+      "heading": "Recognize historical sustained response",
+      "body": "Interferon-based HCV treatment could achieve sustained virologic response. The reviewed Pegasys clinical-study tables used RNA response sustained twenty-four weeks after treatment; a blanket statement that interferon cannot produce cure is inaccurate. Current AASLD/IDSA initial-treatment pathways generally use interferon-free DAA combinations. Historical trial durations and cure assessments do not replace current regimen selection or the current RNA-based follow-up plan. Cost or older course notes alone do not justify substituting an interferon regimen without a patient-specific specialist assessment."
+    },
+    {
+      "heading": "Act on serious toxicity",
+      "body": "Peginterferon can cause or worsen serious neuropsychiatric, autoimmune, ischemic and infectious disorders. Flu-like symptoms, fatigue and injection-related effects can occur, but severe depression, suicidal thoughts or other severe psychiatric symptoms require immediate clinical intervention; the reviewed Pegasys label calls for immediate withdrawal and psychiatric intervention in severe cases. Autoimmune hepatitis, hepatic decompensation in cirrhosis, specified hypersensitivity and use in neonates or infants are contraindications. A ribavirin-containing combination adds ribavirin contraindications and reproductive precautions. Do not dismiss persistent fever, bleeding, new visual symptoms or worsening liver function as ordinary flu-like intolerance."
+    },
+    {
+      "heading": "Monitor beyond flu-like symptoms",
+      "body": "Before peginterferon, assess CBC with differential and platelets, biochemical and hepatic tests, renal function, thyroid and glucose status, relevant psychiatric and autoimmune history, and pregnancy status when applicable. The reviewed label calls for hematological tests at weeks two and four and biochemical tests at week four, followed by periodic testing. Thyroid, glucose, ocular and other reassessment depends on the label, baseline risks and symptoms; a trial measurement schedule is not automatically a universal clinical interval. New visual symptoms warrant prompt ophthalmic evaluation. Continue RNA-response assessment and evaluate serious infection, marrow suppression, thyroid dysfunction, pancreatitis or hepatic decompensation when suspected."
+    }
+  ],
+  "keyPoints": [
+    "Peginterferon acts through host antiviral responses.",
+    "Pegylation supports weekly administration.",
+    "Historical interferon-based therapy could achieve sustained response.",
+    "Current HCV pathways generally favor interferon-free DAAs.",
+    "Severe psychiatric toxicity requires urgent action."
+  ],
+  "check": {
+    "question": "What best explains why pegylated interferon can be administered weekly?",
+    "choices": [
+      "Polyethylene glycol prolongs exposure to the host-response treatment",
+      "Pegylation turns interferon into a direct NS5A inhibitor",
+      "Weekly injection eliminates neuropsychiatric risk",
+      "Pegylation makes every HCV course a single injection"
+    ],
+    "answer": 0,
+    "rationale": "Pegylation prolongs exposure and supports weekly dosing. It does not turn interferon into a DAA, remove serious adverse effects or make one injection a complete HCV course.",
+    "reviewHref": "#interferon-context"
+  }
+});
+hepatitisCModule.submodules.find((lesson) => lesson.slug === "initial-regimens").lesson.push({
+  "heading": "Explain expected effects and warning symptoms",
+  "body": "Headache and fatigue are common in the reviewed modern DAA labels; gastrointestinal effects and other adverse reactions depend on the regimen and population. Ribavirin-containing treatment adds important anemia risk and may change tolerability. Counsel using the actual combination rather than comparing percentages across unrelated trials. Jaundice, new abdominal swelling, confusion, unusual bleeding or other worsening-liver symptoms need prompt assessment, particularly with advanced liver disease; do not dismiss them as routine fatigue."
+});
+hepatitisCModule.submodules.find((lesson) => lesson.slug === "initial-regimens").lesson.push({
+  "heading": "Preserve product-specific storage",
+  "body": "The reviewed Harvoni, Epclusa, Vosevi and Sovaldi adult tablet labels specify storage below 30 degrees C in the original container. The reviewed Mavyret label specifies at or below 30 degrees C and lists multiple tablet package presentations, including wallets and a bottle. Follow the exact dispensed product instructions rather than inventing a universal blister-only rule. Oral pellets have their own packaging and administration instructions. Temperature and container counseling does not establish that tablets may be crushed or given through a feeding tube."
+});
+hepatitisCModule.submodules.find((lesson) => lesson.slug === "interaction-engineering").lesson.push({
+  "heading": "Distinguish Mavyret estrogen doses",
+  "body": "The reviewed June 2025 Mavyret label permits use with products containing 20 mcg or less of ethinyl estradiol; products containing more than 20 mcg are not recommended because of ALT-elevation risk. Do not translate this into a ban on every estrogen product or import the archived Viekira Pak rule. Verify the actual hormone, dose and product, coordinate an appropriate alternative when necessary, and maintain the exact ribavirin pregnancy-prevention requirements if ribavirin is used."
+});
+hepatitisCModule.submodules.find((lesson) => lesson.slug === "interaction-engineering").lesson.push({
+  "heading": "Differentiate Mavyret HIV and statin rules",
+  "body": "With Mavyret, atazanavir is contraindicated, whereas darunavir, lopinavir, ritonavir and efavirenz are not recommended in the reviewed label. Atorvastatin, lovastatin and simvastatin are not recommended because increased statin exposure can cause myopathy or rhabdomyolysis; pravastatin requires a 50 percent dose reduction, and rosuvastatin must not exceed 10 mg daily. These are named product-specific actions. Coordinate HIV and lipid-treatment changes with the responsible clinician rather than stopping effective co-treatment without a plan or calling every agent contraindicated."
+});
+Object.assign(hepatitisCModule.submodules.find((lesson) => lesson.slug === "initial-regimens").lesson.find((body) => body.heading === "Do not preserve retired clutter"), {
+  "heading": "Separate historical and current use",
+  "body": "The book’s older interferon and Viekira-era regimens provide historical context. The reviewed simplified adult pathways instead specify glecaprevir/pibrentasvir or sofosbuvir/velpatasvir for eligible initial treatment. Do not use an older table or pangenotypic activity alone to establish a current default regimen, retreatment plan or duration. Match the patient to the applicable guidance and the exact product label."
+});
+Object.assign(hepatitisCModule, {
+  "description": "Move from reflex diagnosis and fibrosis staging to pangenotypic therapy, interaction engineering, sustained virologic response, cirrhosis surveillance, retreatment, and reinfection prevention. Includes product-specific ribavirin safety and carefully distinguished historical interferon and DAA examples.",
+  "topics": [
+    "HCV RNA",
+    "FIB-4",
+    "NS3/4A",
+    "NS5A",
+    "NS5B",
+    "Mavyret",
+    "Epclusa",
+    "Drug interactions",
+    "SVR12",
+    "Cirrhosis",
+    "Retreatment",
+    "Reinfection",
+    "Other DAA products",
+    "Ribavirin hemolysis",
+    "Ribavirin product precautions",
+    "Interferon context"
+  ],
+  "outcomes": [
+    "Explain HCV replication, transmission, and natural history.",
+    "Diagnose current infection with reflex RNA testing.",
+    "Stage fibrosis and liver compensation before treatment.",
+    "Identify simplified-treatment eligibility and exclusions.",
+    "Connect DAA name stems to viral targets.",
+    "Select and administer current pangenotypic regimens.",
+    "Engineer a safe pretreatment interaction plan.",
+    "Monitor adherence, safety, glucose, and anticoagulation.",
+    "Confirm cure with SVR12 testing.",
+    "Continue cirrhosis surveillance after cure.",
+    "Recognize retreatment and special-population pathways.",
+    "Build a closed-loop prevention and follow-up plan.",
+    "Distinguish complete DAA combinations, individual components and historical examples.",
+    "Apply ribavirin anemia, cardiac, renal and reproductive precautions to the exact product.",
+    "Recognize peginterferon host-response activity, historical sustained response and serious toxicity."
+  ],
+  "cumulativeQuestionIds": [
+    "hepatitis-c-001",
+    "hepatitis-c-028",
+    "hepatitis-c-055",
+    "hepatitis-c-081",
+    "hepatitis-c-108"
+  ]
+});
+hepatitisCModule.references.push({
+  "label": "Ribavirin tablets: Aurobindo U.S. label revised May 2023",
+  "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=eee304d0-c2ea-44f4-97d9-92a414d31b6c"
+});
+hepatitisCModule.references.push({
+  "label": "Ribavirin capsules: Aurobindo U.S. label revised July 2023",
+  "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=35f99f76-f2ef-4a81-91ff-285419664be3"
+});
+hepatitisCModule.references.push({
+  "label": "Pegasys: U.S. label revised December 2023",
+  "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d9290e5b-6d40-2318-e053-2995a90a9916"
+});
+hepatitisCModule.references.push({
+  "label": "Zepatier: U.S. label revised March 2026",
+  "href": "https://www.merck.com/product/usa/pi_circulars/z/zepatier/zepatier_pi.pdf"
+});
+hepatitisCModule.references.push({
+  "label": "Sovaldi: U.S. label revised December 2024",
+  "href": "https://www.gilead.com/-/media/files/pdfs/medicines/liver-disease/sovaldi/sovaldi_pi.pdf"
+});
+Object.assign(hepatitisCModule.references.find((reference) => reference.href === "https://www.accessdata.fda.gov/drugsatfda_docs/label/2019/206619s020lbl.pdf"), {
+  "label": "Viekira Pak: archived FDA historical regimen and mechanisms label (2019)",
+  "href": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2019/206619s020lbl.pdf"
+});
