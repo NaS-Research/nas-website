@@ -1,0 +1,138 @@
+{
+  "verifiedAt": "2026-10-05T06:36:06.637226+00:00",
+  "unit": "enteral-nutrition:broader-calcium-physiology",
+  "contentCommit": "f59583ecb6666d4bfa04f3fcdf05e63250e338fc",
+  "remoteBranch": "audit/rxprep-content-2026-09-24",
+  "remoteHashObserved": "f59583ecb6666d4bfa04f3fcdf05e63250e338fc",
+  "exactRemoteObservedByTool": true,
+  "coverage": {
+    "evidence": "enteral-nutrition-broader-calcium-physiology-review.json",
+    "moduleBankBefore": 108,
+    "moduleBankAfter": 108,
+    "wholeQuestionsVerified": 12,
+    "existingQuestionsNewlyVerified": 12,
+    "newDistinctQuestionsAdded": 0,
+    "sourceVerifiedBankIds": [
+      "calcium-phosphorus-001",
+      "calcium-phosphorus-003",
+      "calcium-phosphorus-006",
+      "calcium-phosphorus-008",
+      "calcium-phosphorus-011",
+      "calcium-phosphorus-012",
+      "calcium-phosphorus-017",
+      "calcium-phosphorus-023",
+      "calcium-phosphorus-035",
+      "calcium-phosphorus-092",
+      "calcium-phosphorus-095",
+      "calcium-phosphorus-102"
+    ],
+    "broaderFeedingBankVerifiedAfter": 321,
+    "wholeBodiesVerified": 11,
+    "retainedWholeBodiesReconciled": 9,
+    "newWholeBodiesAdded": 2,
+    "sourceVerifiedBodyHeadings": {
+      "mineral-regulation": [
+        "Track calcium through the feedback loop",
+        "Separate vitamin D production from effect",
+        "Use FGF23 to explain phosphate control"
+      ],
+      "calcium-measurement": [
+        "Know what the laboratory measured",
+        "Use correction formulas cautiously",
+        "Interpret low urinary calcium as a clue",
+        "Work the estimate, then check its limits"
+      ],
+      "hypocalcemia": [
+        "Correct the mechanism",
+        "Protect the kidney during chronic therapy"
+      ],
+      "hypercalcemia": [
+        "Restore volume thoughtfully"
+      ],
+      "hyperphosphatemia-ckd-mbd": [
+        "Recognize acute phosphate toxicity"
+      ]
+    },
+    "moduleWholeQuestionsVerifiedAfter": 108,
+    "moduleQuestionTotal": 108,
+    "remainingQuestionIds": [],
+    "remainingOriginalWholeBodyHeadings": [],
+    "newWholeMetadataChecksFiguresVerified": false,
+    "newlyCountedCumulativeQuestions": 1,
+    "sourceVerifiedCumulativeIds": [
+      "cumulative-calcium-phosphorus-homeostasis-calcium-phosphorus-001"
+    ],
+    "other1179WholeCumulativeObjectsUnchanged": true,
+    "wholeLessonsVerified": false,
+    "wholeParentModuleVerified": false,
+    "wholeENModuleVerified": false,
+    "wholeChaptersVerified": false,
+    "all108OriginalIdsKeysCorrectTextsAnchorsRelativeOrderPreserved": true
+  },
+  "validation": {
+    "productionBuild": {
+      "status": "passed",
+      "exitCode": 0,
+      "pages": 567,
+      "isolatedBaseCommit": "0e5525197d393c8fadbaa1eb31d44d80e052de67",
+      "bundler": "webpack",
+      "finalSourceBuild": true,
+      "initialAttempt": "Compilation passed but static generation failed ENOSPC. Old audit-only .next caches removed while all source/evidence preserved;successful final build after final023 stem clarification."
+    },
+    "browserStatus": "passed",
+    "structureQuestions": 108,
+    "rawCapturesInspected": 54,
+    "nativeComparisons": 26,
+    "oneInheritedCumulativeRationaleVerified": true,
+    "other1179CumulativeWholeObjectsUnchanged": true,
+    "objectPreservation": {
+      "status": "passed",
+      "bankBefore": 108,
+      "bankAfter": 108,
+      "wholeQuestionsReconciled": 12,
+      "all108OriginalIdsKeysCorrectTextsAnchorsRelativeOrderPreserved": true,
+      "threeStemsClarifiedOnSameTopics": [
+        "calcium-phosphorus-003",
+        "calcium-phosphorus-023",
+        "calcium-phosphorus-102"
+      ],
+      "other105StemsUnchanged": true,
+      "other96WholeQuestionObjectsUnchanged": true,
+      "nineRetainedWholeBodiesReconciled": true,
+      "twoWholeBodiesAdded": true,
+      "allOriginalMetadataChecksFiguresUnchanged": true,
+      "sevenPrimarySourceReferencesAdded": true,
+      "oneDerivedCumulativeRationaleUpdated": [
+        "cumulative-calcium-phosphorus-homeostasis-calcium-phosphorus-001"
+      ],
+      "other1179WholeCumulativeObjectsUnchanged": true,
+      "all1180CumulativeIdsStemsChoicesKeysAnchorsPreserved": true,
+      "allOtherModuleWholeObjectsUnchanged": true,
+      "wholeParentModuleVerified": false
+    }
+  },
+  "preservation": {
+    "status": "passed",
+    "baselinePathsChecked": 809,
+    "allUnrelatedDraftBytesAndDeletionsPreserved": true,
+    "bothProductBaselineDraftsRecoveredByRemovingExactScopedTails": true,
+    "allOtherWorkingLedgerFieldsPreserved": true,
+    "allOtherCommittedLedgerEntriesPreserved": true,
+    "onlyHeadDerivedVerifiedProductsStagedOrCommitted": true,
+    "scope": [
+      "src/data/modules/calciumPhosphorusHomeostasis.js",
+      "src/data/questionBanks/calciumPhosphorusHomeostasis.js",
+      "docs/clinical-audit/enteral-nutrition-broader-calcium-physiology-review.json",
+      "docs/clinical-audit/module-ledger.json",
+      "docs/clinical-audit/chapter-ledger.json",
+      "docs/clinical-audit/sequential-resume.json"
+    ]
+  },
+  "publication": {
+    "mainMerge": "not performed",
+    "production": "not verified"
+  },
+  "wholeGoalComplete": false,
+  "nextAction": "Finish calcium parent reconciliation: verify remaining module/lesson metadata, the mineral-regulation and calcium-measurement embedded checks and complete figures, and reconcile every current question/body/check/figure/cumulative object against the existing source-verified evidence. Reuse retained private current-source assets only with matching hashes; do not count a full parent from question coverage alone. Then complete enteral reintegration and Chapter11 feeding dependencies before closing Chapter1 printed7/PDF19 entry15. Next Chapter11 source page remains PDF169/printed161. Full82-chapter goal remains active.",
+  "receiptCommit": "This receipt follows the exact verified content commit;its own remote hash is verified separately in execution output."
+}

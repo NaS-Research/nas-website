@@ -1,7 +1,7 @@
 {
   "updated": "2026-10-05T06:27:40.767920+00:00",
   "unit": "enteral-nutrition:broader-calcium-physiology",
-  "status": "Scoped clinical and local validation complete;branch push pending. Whole calcium parent andEN remain reviewing.",
+  "status": "Scoped clinical and rendered validation complete; exact audit-branch push verified. Whole calcium parent and EN remain reviewing.",
   "baseCommit": "0e5525197d393c8fadbaa1eb31d44d80e052de67",
   "sourcePolicy": {
     "primary": "Supplied cover-verified RxPrep2023;private extracts/images outside Git",
@@ -10,7 +10,7 @@
       "scope": "Official guidelines, FDA labels and primary academic clinical references where the book cannot verify retained content; includes pending calcium, dialysis, aluminum and mineral physiology scopes",
       "primarySourceRemains": "Supplied cover-verified RxPrep2023 book",
       "approvalContext": "Response to pending asynchronous request for this additional authoritative source policy",
-      "usedNewlyAuthorizedSourcesInThisUnit": false
+      "usedNewlyAuthorizedSourcesInThisUnit": true
     },
     "newlyAuthorizedSourcesUsed": true
   },
@@ -2571,11 +2571,14 @@
   },
   "release": {
     "branch": "audit/rxprep-content-2026-09-24",
-    "commit": null,
-    "push": "pending",
+    "commit": "f59583ecb6666d4bfa04f3fcdf05e63250e338fc",
+    "push": "verified",
     "receipt": "enteral-nutrition-broader-calcium-physiology-release.json",
     "mainMerge": "not performed",
-    "production": "not verified"
+    "production": "not verified",
+    "remoteHashObserved": "f59583ecb6666d4bfa04f3fcdf05e63250e338fc",
+    "exactRemoteObservedByTool": true,
+    "remoteVerifiedAt": "2026-10-05T06:36:06.637226+00:00"
   },
   "wholeGoalComplete": false
 }
