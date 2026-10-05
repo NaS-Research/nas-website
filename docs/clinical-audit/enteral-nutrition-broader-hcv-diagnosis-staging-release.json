@@ -1,0 +1,192 @@
+{
+  "verifiedAt": "2026-10-05T13:44:42.568205+00:00",
+  "unit": "enteral-nutrition:broader-hcv-diagnosis-staging",
+  "contentCommit": "c6f91ac962b6b4daa94c9a8dc6a2895a7114c6bb",
+  "remoteBranch": "audit/rxprep-content-2026-09-24",
+  "remoteHashObserved": "c6f91ac962b6b4daa94c9a8dc6a2895a7114c6bb",
+  "exactRemoteObservedByTool": true,
+  "coverage": {
+    "evidence": "enteral-nutrition-broader-hcv-diagnosis-staging-review.json",
+    "verifiedScope": "Whole virus-natural-history, screening-diagnosis and fibrosis-eligibility lessons: 12 bodies, 3 checks, metadata and figures; 24 whole bank questions 001-024 and one inherited cumulative item.",
+    "moduleQuestionTotal": 108,
+    "individuallyReviewedCurrentWholeBankIds": [
+      "hepatitis-c-001",
+      "hepatitis-c-002",
+      "hepatitis-c-003",
+      "hepatitis-c-004",
+      "hepatitis-c-005",
+      "hepatitis-c-006",
+      "hepatitis-c-007",
+      "hepatitis-c-008",
+      "hepatitis-c-009",
+      "hepatitis-c-010",
+      "hepatitis-c-011",
+      "hepatitis-c-012",
+      "hepatitis-c-013",
+      "hepatitis-c-014",
+      "hepatitis-c-015",
+      "hepatitis-c-016",
+      "hepatitis-c-017",
+      "hepatitis-c-018",
+      "hepatitis-c-019",
+      "hepatitis-c-020",
+      "hepatitis-c-021",
+      "hepatitis-c-022",
+      "hepatitis-c-023",
+      "hepatitis-c-024"
+    ],
+    "newUniqueBankQuestionsVerified": 24,
+    "broaderFeedingBankVerifiedBefore": 399,
+    "broaderFeedingBankVerifiedAfter": 423,
+    "wholeBodiesVerified": 12,
+    "wholeEmbeddedChecksVerified": 3,
+    "wholeLessonMetadataAndFiguresVerified": 3,
+    "associatedCumulativeWholeItemsVerified": [
+      "cumulative-hepatitis-c-hepatitis-c-001"
+    ],
+    "cumulativeUniqueCountLimit": "Inherited items are not additional independent questions beyond their module source IDs.",
+    "allNineSelectedHCVLessonsVerified": true,
+    "HCVWholeBankQuestionsVerifiedAcrossThreeUnits": 84,
+    "remainingHCVWholeLessons": 3,
+    "remainingHCVWholeBankQuestions": 24,
+    "other84WholeBankObjectsUnchangedThisUnit": true,
+    "other37WholeBodiesNineChecksMetadataUnchangedThisUnit": true,
+    "other1179CumulativeObjectsUnchanged": true,
+    "referencesAfter": 14,
+    "priorSelectedHepatic64WholeQuestionsRemainVerified": true,
+    "historicalLexicalInventoryRemaining": 157,
+    "historicalLexicalLimit": "Prior count retained; no fresh blanket lexical reclassification or exhaustive semantic-coverage claim.",
+    "wholeHCVParentModuleVerified": false,
+    "wholeENModuleVerified": false,
+    "wholeChaptersVerified": false,
+    "committedWholeModulesVerifiedAfter": 56,
+    "committedWholeModulesTotal": 232,
+    "moduleCountPercent": 24.14,
+    "chaptersVerifiedAfter": 6,
+    "chapterTotal": 82,
+    "chapterCountPercent": 7.32
+  },
+  "validation": {
+    "productionBuild": {
+      "status": "passed",
+      "exitCode": 0,
+      "pages": 567,
+      "bundler": "webpack",
+      "baseCommit": "2f6c0893415a59c18be33a77a1ccf9e835a33f95"
+    },
+    "structureQuestions": 108,
+    "changedWholeBankItemsCorrectAndIncorrectBothWidthsVerified": 24,
+    "wholeTeachingBodiesVerified": 12,
+    "threeRevisedChecksAllOptionsVerifiedBothWidths": true,
+    "oneAssociatedCumulativeItemCorrectAndIncorrectBothWidthsVerified": true,
+    "all14ReferenceLinksMatchData": true,
+    "threeScopedFiguresVerifiedWidths": [
+      320,
+      390,
+      639,
+      640,
+      1440
+    ],
+    "otherNineFigureLabelsCaptionsAndFontRulesPreserved": true,
+    "rawCapturesActuallyInspectedThroughNativePairs": 124,
+    "nativePairsActuallyInspected": 62,
+    "sourceVisualCoverage": {
+      "bookNativePages": 2,
+      "simplifiedAlgorithmNativePages": 9,
+      "acuteNativePages": 6,
+      "progressionNativePages": 3,
+      "NS3CriterionNativePages": 2,
+      "FDASelectedNativePages": 5,
+      "CDCNativeSequenceFigure": 1,
+      "allRelevantSelectedTablesAndContinuationFootnotesViewed": true,
+      "fullSupplementalStudiesOrGuidanceNotClaimed": true
+    },
+    "browserStatus": "passed",
+    "objectPreservation": {
+      "status": "passed",
+      "moduleTotal": 232,
+      "questions": 108,
+      "bodies": 49,
+      "lessonsAndChecks": 12,
+      "stableIdsStemsKeysDifficultyAnchorsAndOrderPreserved": true,
+      "harmfulActionKeysRepaired": [
+        4,
+        8,
+        12,
+        16,
+        20,
+        24
+      ],
+      "other84WholeBankObjectsUnchanged": true,
+      "other37WholeBodiesNineChecksMetadataUnchanged": true,
+      "other231WholeModulesUnchanged": true,
+      "other1179CumulativeObjectsUnchanged": true,
+      "associatedCumulativeObjectsRefined": [
+        {
+          "before": {
+            "id": "cumulative-hepatitis-c-hepatitis-c-001",
+            "question": "Which statement is most accurate? Focus: virus natural history.",
+            "choices": [
+              "HCV is an enveloped positive-sense RNA virus whose error-prone replication creates diversity, chronic infection, fibrosis, cirrhosis, and hepatocellular carcinoma risk.",
+              "Assuming asymptomatic infection is harmless delays curative therapy.",
+              "Use one result without reviewing fibrosis, prior treatment, interactions, coinfection, or liver compensation.",
+              "Assume every DAA combination, genotype, and cirrhosis state is interchangeable."
+            ],
+            "answer": 0,
+            "rationale": "HCV is an enveloped positive-sense RNA virus whose error-prone replication creates diversity, chronic infection, fibrosis, cirrhosis, and hepatocellular carcinoma risk. Connect duration, fibrosis, alcohol, metabolic disease, HIV, age, and treatment history to progression risk.",
+            "reviewHref": "/learn/pharmacy/modules/hepatitis-c",
+            "difficulty": "foundational",
+            "module": "Hepatitis C"
+          },
+          "after": {
+            "id": "cumulative-hepatitis-c-hepatitis-c-001",
+            "question": "Which statement is most accurate? Focus: virus natural history.",
+            "choices": [
+              "HCV has a positive-sense RNA genome, and persistent infection can cause progressive fibrosis and cirrhosis",
+              "HCV is a DNA virus that must be diagnosed with HBV DNA",
+              "Normal ALT excludes clinically significant HCV-related fibrosis",
+              "The RNA concentration alone establishes the degree of cirrhosis"
+            ],
+            "answer": 0,
+            "rationale": "HCV is an RNA virus. Persistent infection can cause progressive liver injury, but progression varies; symptoms, ALT and viral load do not replace fibrosis staging. Genetic diversity is not itself a clinical fibrosis score.",
+            "reviewHref": "/learn/pharmacy/modules/hepatitis-c",
+            "difficulty": "foundational",
+            "module": "Hepatitis C"
+          }
+        }
+      ],
+      "wholeReviewedQuestions": 24,
+      "wholeReviewedBodies": 12,
+      "wholeReviewedChecks": 3,
+      "referencesAfter": 14,
+      "newIds": 0
+    }
+  },
+  "preservation": {
+    "status": "passed",
+    "baselinePathsChecked": 809,
+    "bothProductFilesOriginallyCleanAtBase": true,
+    "allUnrelatedDraftBytesAndDeletionsPreserved": true,
+    "bothProductPreexistingBytesRecoveredByRemovingExactScopedTails": true,
+    "allOtherWorkingLedgerFieldsIncludingDraftStatusPreserved": true,
+    "allOtherCommittedLedgerEntriesPreserved": true,
+    "onlyHeadDerivedVerifiedProductsStagedOrCommitted": true,
+    "originallyCleanComponentExactScopedPatchPreserved": true,
+    "scope": [
+      "src/data/modules/hepatitisC.js",
+      "src/data/questionBanks/hepatitisC.js",
+      "src/components/learn/HepatitisCVisual.jsx",
+      "docs/clinical-audit/enteral-nutrition-broader-hcv-diagnosis-staging-review.json",
+      "docs/clinical-audit/module-ledger.json",
+      "docs/clinical-audit/chapter-ledger.json",
+      "docs/clinical-audit/sequential-resume.json"
+    ]
+  },
+  "publication": {
+    "mainMerge": "not performed",
+    "production": "not verified"
+  },
+  "wholeGoalComplete": false,
+  "nextAction": "Continue full HCV reconciliation: remaining three lessons daa-mechanisms, cirrhosis-special and retreatment-prevention, with 24 bank questions and associated cumulative content, metadata and figures. Verify all parent outcomes, references and cross-lesson consistency before HCV closure. Then continue full enteral-nutrition/fluid parents and remaining broader dependencies. Whole HBV/cirrhosis/enteral/fluid parents, Chapters 11/19 and Chapter 1 printed 7/PDF 19 entry 15 remain open. Historical 157 lexical candidates need review or incidental classification and are not exhaustive semantic coverage. Continue the full 82-chapter goal.",
+  "receiptCommit": "This receipt follows the exact verified content commit; its own remote hash is verified separately in execution output."
+}
