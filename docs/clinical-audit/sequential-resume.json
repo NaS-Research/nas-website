@@ -105,8 +105,8 @@
     "branch": "audit/rxprep-content-2026-09-24",
     "baseCommit": "2b3afaa684c58730949f5819fc4581d07186dadb",
     "remoteVerifiedAtStart": true,
-    "commit": null,
-    "push": "pending",
+    "commit": "c55abc714a843714036a350f3c0369ec6facb74b",
+    "push": "verified",
     "production": "not verified",
     "receipt": "enteral-nutrition-broader-phosphate-mechanism-safety-release.json",
     "contentCommits": [
@@ -184,13 +184,14 @@
       "65ac22e809246ba35e196493eedaa0bea3b0898b",
       "5b1fc9f67323f7aaf4217cf1d31a63e955155282",
       "2c93600fb8bdfff0d28276cad3d719da7eef02e3",
-      "2580f8928729bb813b434c2a99323c76c2af3419"
+      "2580f8928729bb813b434c2a99323c76c2af3419",
+      "c55abc714a843714036a350f3c0369ec6facb74b"
     ],
     "previousVerifiedContentCommit": "65ac22e809246ba35e196493eedaa0bea3b0898b",
     "baseReceipt": "aca4501d4b775c9e5dbb74a1c3e7c337e6ebb87e",
-    "remoteHashObserved": null,
-    "exactRemoteObservedByTool": false,
-    "remoteVerifiedAt": null,
+    "remoteHashObserved": "c55abc714a843714036a350f3c0369ec6facb74b",
+    "exactRemoteObservedByTool": true,
+    "remoteVerifiedAt": "2026-10-05T01:59:32.975098+00:00",
     "mainMerge": "not performed"
   },
   "openIssues": [
@@ -6358,7 +6359,18 @@
     "all100OriginalQuestionIdsStemsChoicesKeysAnchorsAndRelativeOrderPreserved": true,
     "all1180CumulativeObjectsUnchanged": true,
     "originalFiveDerivedCumulativeIdsPreserved": true,
-    "originalRetainedPhysiologyNotRemoved": true
+    "originalRetainedPhysiologyNotRemoved": true,
+    "release": {
+      "branch": "audit/rxprep-content-2026-09-24",
+      "commit": "c55abc714a843714036a350f3c0369ec6facb74b",
+      "push": "verified",
+      "receipt": "enteral-nutrition-broader-phosphate-mechanism-safety-release.json",
+      "mainMerge": "not performed",
+      "production": "not verified",
+      "remoteHashObserved": "c55abc714a843714036a350f3c0369ec6facb74b",
+      "exactRemoteObservedByTool": true,
+      "remoteVerifiedAt": "2026-10-05T01:59:32.975098+00:00"
+    }
   },
   "pendingPhosphateMechanismSourceAuthorization": {
     "status": "approved;source review pending",

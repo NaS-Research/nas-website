@@ -1,0 +1,108 @@
+{
+  "verifiedAt": "2026-10-05T01:59:32.975098+00:00",
+  "unit": "enteral-nutrition:broader-phosphate-feeding-mechanism-and-label-safety",
+  "contentCommit": "c55abc714a843714036a350f3c0369ec6facb74b",
+  "remoteBranch": "audit/rxprep-content-2026-09-24",
+  "remoteHashObserved": "c55abc714a843714036a350f3c0369ec6facb74b",
+  "exactRemoteObservedByTool": true,
+  "coverage": {
+    "evidence": "enteral-nutrition-broader-phosphate-mechanism-safety-review.json",
+    "committedModuleBankBefore": 100,
+    "committedModuleBankAfter": 102,
+    "wholeQuestionsVerifiedThisUnit": 6,
+    "sourceVerifiedBankIds": [
+      "calcium-phosphorus-036",
+      "calcium-phosphorus-037",
+      "calcium-phosphorus-094",
+      "calcium-phosphorus-104",
+      "calcium-phosphorus-iron-repeat-monitoring",
+      "calcium-phosphorus-iron-persistent-warning"
+    ],
+    "newFullQuestionsVerified": 6,
+    "existingQuestionsNewlyVerified": 4,
+    "newDistinctQuestionsAdded": 2,
+    "broaderFeedingBankVerifiedAfter": 232,
+    "newWholeSourceVerifiedBodies": 1,
+    "addedWholeBodyHeadings": [
+      "Review ferric carboxymaltose safety"
+    ],
+    "hypophosphatemiaQuestionTotal": 22,
+    "hypophosphatemiaQuestionsVerifiedWithPriorEvidence": 21,
+    "remainingQuestionIds": [
+      "calcium-phosphorus-041"
+    ],
+    "remainingBodyHeadings": [
+      "Classify the mechanism",
+      "Recognize severe depletion"
+    ],
+    "wholeHypophosphatemiaLessonVerified": false,
+    "wholeLessonMetadataVerified": false,
+    "figureNewlyVerified": false,
+    "embeddedCheckNewlyVerified": false,
+    "wholeParentModuleVerified": false,
+    "wholeENModuleVerified": false,
+    "wholeChaptersVerified": false,
+    "all100OriginalQuestionIdsStemsChoicesKeysAnchorsAndRelativeOrderPreserved": true,
+    "all1180CumulativeObjectsUnchanged": true,
+    "originalFiveDerivedCumulativeIdsPreserved": true,
+    "originalRetainedPhysiologyNotRemoved": true
+  },
+  "validation": {
+    "productionBuild": {
+      "status": "passed",
+      "exitCode": 0,
+      "pages": 567,
+      "isolatedExactBase": "2b3afaa684c58730949f5819fc4581d07186dadb",
+      "finalBuildIncludesAddedASPENReference": true
+    },
+    "browserStatus": "passed",
+    "structureQuestions": 102,
+    "rawCapturesInspected": 16,
+    "nativeComparisons": 8,
+    "referenceCropsActuallyViewed": 0,
+    "all1180CumulativeObjectsUnchanged": true,
+    "objectPreservation": {
+      "status": "passed",
+      "originalQuestionCount": 100,
+      "finalQuestionCount": 102,
+      "all100OriginalIdsStemsChoicesKeysAnchorsAndRelativeOrderPreserved": true,
+      "fourExistingRationalesChanged": true,
+      "twoDistinctNewQuestionIds": [
+        "calcium-phosphorus-iron-repeat-monitoring",
+        "calcium-phosphorus-iron-persistent-warning"
+      ],
+      "all1180CumulativeObjectsUnchanged": true,
+      "originalFiveDerivedCumulativeIdsUnchanged": true,
+      "allOtherModulesUnchanged": true,
+      "allFourOriginalBodiesCheckFigureMetadataAndPriorReferencesUnchanged": true,
+      "oneApprovedPrimaryReferenceAdded": true,
+      "oneCompleteSourceSupportedBodyAdded": true,
+      "retainedPhysiologyNotRemovedOrClaimedVerified": true
+    }
+  },
+  "preservation": {
+    "status": "passed",
+    "baselinePathsChecked": 809,
+    "allOtherDraftBytesAndDeletionsPreserved": true,
+    "dirtyProductBaselineSha256RecoveredByReverseScopedEdits": true,
+    "workingLedgerPriorFieldsPreservedExceptScopedLesson": true,
+    "otherCommittedLedgerEntriesPreserved": true,
+    "candidateHeadDerivedProductBytesStagedOrCommitted": true,
+    "unverifiedDraftPhysiologyAndOtherAdditionsExcluded": true,
+    "scope": [
+      "src/data/modules/calciumPhosphorusHomeostasis.js",
+      "src/data/questionBanks/calciumPhosphorusHomeostasis.js",
+      "docs/clinical-audit/enteral-nutrition-broader-phosphate-mechanism-safety-review.json",
+      "docs/clinical-audit/module-ledger.json",
+      "docs/clinical-audit/chapter-ledger.json",
+      "docs/clinical-audit/sequential-resume.json"
+    ]
+  },
+  "publication": {
+    "mainMerge": "not performed",
+    "production": "not verified"
+  },
+  "wholeGoalComplete": false,
+  "nextAction": "User approval received: use2012EndocrineSocietyApproach to the Hypophosphatemic Patient and2018JCIInsightIV-ironhypophosphatemiatrial, read complete relevant scopes/evidence/tables and reconcile retainedhypophosphatemiamechanism/severe-depletion bodies,FGF23question041,figure andfullmetadata;thenassemblefull lessonverification. Additional2026ICUsourcesalso approved; read and reconcile before clinical closure. Preserve retainedclinicalscope. Continue independentbook/previouslyapprovedbroaderfeedinginventory and whole-parentreintegration where possible. Earliest sequentialcheckpoint staysChapter1printed7/PDF19entry15fluidneeds,Chapter11feedingdependencies;full82chaptergoalactive.",
+  "receiptCommit": "This receipt follows the exact verified content commit;its own remote hash is verified separately in execution output."
+}
