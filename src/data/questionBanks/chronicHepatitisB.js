@@ -1114,3 +1114,50 @@ Object.assign(chronicHepatitisBQuestionBank.find((question) => question.id === "
   ],
   "rationale": "The harmful error is losing treatment continuity or indicated surveillance without a plan. The other choices prevent that failure. The book and labels warn about withdrawal flares, and suppression does not erase cirrhosis-related HCC risk."
 });
+
+// Final whole-module reconciliation: distinct, source-supported assessment applications.
+Object.assign(chronicHepatitisBQuestionBank.find((question) => question.id === "chronic-hepatitis-b-039"), {
+  "choices": [
+    "For an eligible adult taking Viread tablets, retain the original moisture-protective container, renal/bone monitoring and uninterrupted supply",
+    "Repackage Viread tablets in an open container because viral suppression removes storage requirements",
+    "Replace Viread with any TAF-containing HIV combination without product or regimen review",
+    "Omit renal follow-up after one undetectable HBV DNA result"
+  ],
+  "rationale": "Viread labeling and the book require the original container, kept tightly closed. Storage does not replace renal and bone safety or continuity. Shared antiviral ingredients do not establish product interchangeability, and suppressed DNA does not remove monitoring."
+});
+Object.assign(chronicHepatitisBQuestionBank.find((question) => question.id === "chronic-hepatitis-b-040"), {
+  "choices": [
+    "Continue TDF despite findings suggestive of lactic acidosis or pronounced hepatotoxicity solely because HBV DNA is suppressed",
+    "Arrange urgent assessment and clinician-directed treatment suspension for suspected severe metabolic toxicity",
+    "Review renal function, tubular markers and bone risk while prescribing TDF",
+    "Plan liver follow-up and an appropriate antiviral strategy when a safety-directed interruption is necessary"
+  ],
+  "rationale": "Continuing despite suspected lactic acidosis or pronounced hepatotoxicity is the harmful action. The Viread label directs suspension and assessment; marked transaminase elevation is not required. Viral suppression cannot override toxicity, while an interruption still requires management of HBV withdrawal risk."
+});
+Object.assign(chronicHepatitisBQuestionBank.find((question) => question.id === "chronic-hepatitis-b-043"), {
+  "choices": [
+    "For an otherwise eligible Vemlidy patient taking phenytoin, arrange interaction and regimen review because the combination is not recommended",
+    "For that patient, ignore phenytoin because TAF is unaffected by transport-protein induction",
+    "For that patient, automatically use two Vemlidy tablets by applying the carbamazepine exception to phenytoin",
+    "For that patient, replace interaction review with a normal ALT result"
+  ],
+  "rationale": "Phenytoin can lower TAF exposure through induction; Vemlidy labeling does not recommend the combination. Its two-tablet instruction is specific to carbamazepine and must not be transferred to another inducer. Normal ALT does not exclude an absorption interaction."
+});
+Object.assign(chronicHepatitisBQuestionBank.find((question) => question.id === "chronic-hepatitis-b-047"), {
+  "choices": [
+    "For a nucleoside-naive, HIV-negative adult with compensated HBV and CrCl 35 mL/min, use the 0.5-mg renal column: 0.25 mg daily as 5 mL of 0.05-mg/mL solution, with fasting administration",
+    "For that same adult, give 0.5 mg daily because compensation removes the need for renal adjustment",
+    "For that same adult, use the decompensation starting-dose column despite compensated disease",
+    "For that same adult, give 0.25 mL of the 0.05-mg/mL solution to deliver 0.25 mg"
+  ],
+  "rationale": "The entecavir adult renal table permits 0.25 mg daily or 0.5 mg every 48 hours at CrCl 30 to below 50 in the usual 0.5-mg starting-dose column. Daily regimens are preferred and oral solution is recommended below 0.5 mg. Volume is 0.25 mg / 0.05 mg/mL = 5 mL; the empty-stomach rule still applies."
+});
+Object.assign(chronicHepatitisBQuestionBank.find((question) => question.id === "chronic-hepatitis-b-051"), {
+  "choices": [
+    "When a prior medication list says Epivir-HBV, verify the HBV dose, HIV status and resistance history rather than assuming it is interchangeable with Epivir for HIV",
+    "Replace Epivir used in an HIV regimen with Epivir-HBV 100 mg daily because both contain lamivudine",
+    "Treat the HBV dose of lamivudine alone as fully suppressive treatment for both viruses",
+    "Presume that a prior lamivudine prescription cannot affect later entecavir resistance risk"
+  ],
+  "rationale": "Epivir-HBV is the lower-dose HBV product, not a substitute for the HIV formulation or effective combination ART. The book and reviewed FDA label emphasize this distinction. Prior lamivudine exposure and resistance also matter when choosing a high-barrier HBV strategy; matching ingredient names is insufficient."
+});

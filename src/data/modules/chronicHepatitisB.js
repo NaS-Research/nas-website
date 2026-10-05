@@ -826,3 +826,37 @@ chronicHepatitisBModule.references.push({
   "label": "ASCO 2020: HBV screening and prevention during systemic cancer therapy",
   "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11828660/"
 });
+
+// Final whole-module source reconciliation: targeted missing teaching and source qualification.
+chronicHepatitisBModule.submodules.find((lesson) => lesson.slug === "polymerase-therapy").lesson.push(...[
+  {
+    "heading": "Recognize severe metabolic toxicity",
+    "body": "The book and oral antiviral labels warn about lactic acidosis and severe hepatomegaly with steatosis, including fatal cases. The TDF, TAF and entecavir labels direct treatment suspension when clinical or laboratory findings suggest lactic acidosis or pronounced hepatotoxicity; major transaminase elevation need not be present. Arrange urgent assessment and a clinician-directed HBV treatment plan rather than continuing solely because DNA is suppressed. This safety-directed interruption is different from an elective medication holiday and still needs management of withdrawal risk."
+  },
+  {
+    "heading": "Review transport and renal interactions",
+    "body": "Vemlidy is a P-glycoprotein and BCRP substrate. Inducers can lower TAF exposure and threaten efficacy; the label does not recommend combination with oxcarbazepine, phenobarbital, phenytoin, rifampin, rifabutin, rifapentine or St. John's wort. Carbamazepine is a distinct labeled exception requiring two 25-mg tablets once daily, not a rule to double the dose with every inducer. P-gp/BCRP inhibitors can increase exposure. Tenofovir and entecavir also require review of medicines that impair renal function or compete for tubular secretion. Do not combine adefovir with a tenofovir product. The book additionally flags reduced lamivudine excretion with trimethoprim/sulfamethoxazole; assess the exact product, renal function and interaction rather than assuming an automatic dose change."
+  },
+  {
+    "heading": "Distinguish older doses and products",
+    "body": "The book lists lamivudine 100 mg once daily for HBV and adefovir 10 mg once daily before renal adjustment. These older agents remain nonpreferred because of resistance or toxicity; their dose entries are not a reason to replace a suitable high-barrier regimen. The reviewed 2018 FDA Epivir-HBV label confirms the 100-mg adult dose at creatinine clearance at least 50 mL/min and lower doses with renal impairment. Epivir-HBV contains a lower lamivudine dose than Epivir used for HIV; its tablets and oral solution are not substitutes for the HIV product or a complete HIV regimen. Confirm HIV status and the full coordinated regimen before selecting any HBV-only product."
+  },
+  {
+    "heading": "Preserve the correct package",
+    "body": "Protect Viread tablets and Vemlidy from moisture and dispense them in their original containers, kept tightly closed, as the book and labels specify. The labels use different storage limits: Viread is stored at 25°C with permitted excursions to 15-30°C; Vemlidy is stored below 30°C. Verify the exact formulation and its instructions rather than treating a tablet, oral powder, solution or HIV fixed-dose combination as interchangeable. Include food instructions, storage, uninterrupted refills and the response to a missed supply in counseling."
+  }
+]);
+chronicHepatitisBModule.submodules.find((lesson) => lesson.slug === "peginterferon-selection").lesson.push(...[
+  {
+    "heading": "Prepare for symptoms without dismissing toxicity",
+    "body": "Flu-like effects such as fatigue, fever, chills, muscle aches and headache are common with peginterferon; gastrointestinal upset and mild hair loss can also occur. Agree on suitable symptom treatment before injections. The book describes acetaminophen and an antihistamine, while the label advises identifying appropriate over-the-counter medicines; select these with the prescriber in the context of liver disease and other medicines. Symptoms must not replace scheduled laboratory review. Severe skin reactions, persistent fever, new eye symptoms or major psychiatric change need prompt assessment, and the label also warns about serious ischemic, infectious and autoimmune disorders. A predictable post-injection syndrome does not make every new symptom benign."
+  }
+]);
+Object.assign(chronicHepatitisBModule.submodules.find((lesson) => lesson.slug === "monitoring-stopping").lesson.find((body) => body.heading === "Check every condition before an exceptional stop"), {
+  "heading": "Check every condition before an exceptional stop",
+  "body": "AASLD Recommendation 5 implementation text and Table 3 require no history of advanced fibrosis/cirrhosis, decompensation, HCC or extrahepatic HBV complications; no HIV or HDV coinfection; quantitative HBsAg below 100 IU/mL; DNA undetectable for at least two years; and willingness to attend frequent follow-up. If initially HBeAg-positive, HBeAg-negative/anti-HBe-positive seroconversion must have persisted for at least one year. These are cumulative conditions, not interchangeable options. A low quantitative HBsAg value reduces risk but does not guarantee a safe stop. Figure 4's caption instead describes at least three years of DNA suppression. This wording discrepancy does not create an automatic stopping permission: reconcile the selected specialist pathway, overall treatment duration and all eligibility conditions before a decision."
+});
+chronicHepatitisBModule.references.push({
+  "label": "FDA 2018: Epivir-HBV dose and product distinctions",
+  "href": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2018/021003s020lbl.pdf"
+});
