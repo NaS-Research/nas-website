@@ -8,8 +8,6 @@ export default function LearningVideoCard({ video }) {
       <a className={styles.videoLink} href={videoWatchUrl(video.id)} target="_blank" rel="noopener noreferrer" aria-label={`Watch ${video.title} on YouTube (opens in a new tab)`}>
         <div className={styles.thumbnail}>
           <Image src={`https://i.ytimg.com/vi/${video.id}/hq720.jpg`} alt="" fill sizes="(max-width: 640px) 100vw, (max-width: 1000px) 50vw, 33vw" />
-          <span className={styles.play} aria-hidden="true">▶</span>
-          {video.duration && <span className={styles.duration}><span className={styles.srOnly}>Duration: </span>{video.duration}</span>}
         </div>
         <p className={styles.subject}>{video.subject}</p>
         <h3>{video.title}</h3>

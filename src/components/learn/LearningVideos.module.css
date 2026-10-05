@@ -10,8 +10,6 @@
 .thumbnail { position: relative; aspect-ratio: 16 / 9; overflow: hidden; background: #151515; }
 .thumbnail img { object-fit: cover; transition: transform .4s ease; }
 .videoLink:hover .thumbnail img { transform: scale(1.025); }
-.play { position: absolute; bottom: 1rem; left: 1rem; width: 2.5rem; height: 2.5rem; border-radius: 50%; background: #111c; display: grid; place-items: center; font-size: .85rem; padding-left: .12rem; }
-.duration { position: absolute; right: .75rem; bottom: .75rem; background: #111e; color: #fff; padding: .2rem .4rem; font-size: .8rem; border-radius: .2rem; font-variant-numeric: tabular-nums; }
 .subject { margin: 1.4rem 0 .65rem; color: #bba47d; font-size: .75rem; letter-spacing: .1em; text-transform: uppercase; }
 .card h3 { font-size: clamp(1.3rem, 2vw, 1.7rem); font-weight: 500; line-height: 1.22; letter-spacing: -.04em; margin: 0 0 1rem; }
 .description { color: #999; font-size: .95rem; line-height: 1.65; margin: 0 0 1.5rem; }
