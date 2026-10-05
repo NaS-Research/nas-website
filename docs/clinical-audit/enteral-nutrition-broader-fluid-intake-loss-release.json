@@ -1,0 +1,93 @@
+{
+  "verifiedAt": "2026-10-05T08:39:59.359347+00:00",
+  "unit": "enteral-nutrition:broader-fluid-intake-loss",
+  "contentCommit": "8ef54c4bdac410a9872bd1e2bad437cc7c479da6",
+  "remoteBranch": "audit/rxprep-content-2026-09-24",
+  "remoteHashObserved": "8ef54c4bdac410a9872bd1e2bad437cc7c479da6",
+  "exactRemoteObservedByTool": true,
+  "coverage": {
+    "evidence": "enteral-nutrition-broader-fluid-intake-loss-review.json",
+    "verifiedScope": "Two whole feeding-related questions and one distinct complete new teaching body in the committed fluid module; original unverified parent material and working drafts remain separate.",
+    "moduleQuestionTotal": 100,
+    "individuallyReviewedCurrentWholeBankIds": [
+      "fluid-electrolyte-016",
+      "fluid-electrolyte-083"
+    ],
+    "newUniqueBankQuestionsVerified": 2,
+    "broaderFeedingBankVerifiedBefore": 321,
+    "broaderFeedingBankVerifiedAfter": 323,
+    "existingQuestionDistractorsAndRationalesRefined": 2,
+    "newOriginalBodiesVerified": 1,
+    "newBodyHeading": "Count intake and replace abnormal losses",
+    "allOriginal21BodiesUnchanged": true,
+    "allSixChecksAndFiguresUnchanged": true,
+    "newReferences": 1,
+    "referencesAfter": 9,
+    "wholeParentModuleVerified": false,
+    "wholeENModuleVerified": false,
+    "wholeChaptersVerified": false,
+    "committedWholeModulesVerifiedAfter": 56,
+    "committedWholeModulesTotal": 232,
+    "moduleCountPercent": 24.14,
+    "chaptersVerifiedAfter": 6,
+    "chapterTotal": 82,
+    "chapterCountPercent": 7.32,
+    "all1180CumulativeObjectsUnchanged": true,
+    "newUniqueCumulativeQuestionsCounted": 0
+  },
+  "validation": {
+    "productionBuild": {
+      "status": "passed",
+      "exitCode": 0,
+      "pages": 567,
+      "bundler": "webpack",
+      "baseCommit": "7b59eb3566f8a539acc5ad9ce4749c519cc9892e"
+    },
+    "structureQuestions": 100,
+    "changedWholeBankItemsCorrectAndIncorrectBothWidthsVerified": 2,
+    "wholeNewTeachingBodiesVerified": 1,
+    "newOfficialReferencesVerified": 1,
+    "rawCapturesActuallyInspectedThroughNativePairs": 8,
+    "nativePairsActuallyInspected": 4,
+    "freshCompleteSourcePageCapturesActuallyInspected": 10,
+    "additionalCompleteSourceAlgorithmCropsInspected": 1,
+    "browserStatus": "passed",
+    "objectPreservation": {
+      "status": "passed",
+      "moduleTotal": 232,
+      "questions": 100,
+      "stableIdsStemsKeysCorrectTextsAnchorsAndOrderPreserved": true,
+      "other98WholeBankObjectsUnchanged": true,
+      "allOriginalBodiesChecksFiguresAndMetadataUnchanged": true,
+      "distinctNewBodyExactlyOnce": true,
+      "oneOfficialReferenceAdded": true,
+      "other231ModulesExactUnchanged": true,
+      "all1180WholeCumulativeObjectsExactUnchanged": true,
+      "noNewRegimenDoseOrNumericTarget": true
+    }
+  },
+  "preservation": {
+    "status": "passed",
+    "baselinePathsChecked": 809,
+    "allUnrelatedDraftBytesAndDeletionsPreserved": true,
+    "bothProductDraftsRecoveredByRemovingExactScopedTails": true,
+    "allOtherWorkingLedgerFieldsIncludingDraftStatusPreserved": true,
+    "allOtherCommittedLedgerEntriesPreserved": true,
+    "onlyHeadDerivedVerifiedProductsStagedOrCommitted": true,
+    "scope": [
+      "src/data/modules/fluidElectrolyteTherapy.js",
+      "src/data/questionBanks/fluidElectrolyteTherapy.js",
+      "docs/clinical-audit/enteral-nutrition-broader-fluid-intake-loss-review.json",
+      "docs/clinical-audit/module-ledger.json",
+      "docs/clinical-audit/chapter-ledger.json",
+      "docs/clinical-audit/sequential-resume.json"
+    ]
+  },
+  "publication": {
+    "mainMerge": "not performed",
+    "production": "not verified"
+  },
+  "wholeGoalComplete": false,
+  "nextAction": "Continue remaining feeding dependencies before whole enteral parent closure. Start the 52 pending whole hepatic questions and 20 previously selected original teaching bodies, plus relevant checks and metadata, in the recorded hepatic nutrition evidence; use complete book sections and approved authoritative sources. Historical lexical matches require clinical review or incidental-clause classification and are not an exhaustive semantic inventory. Chapter 11 printed161/PDF169 context has been revisited; keep Chapter11, enteral parent, full fluid parent and Chapter1 printed7/PDF19 entry15 determining fluid needs open. Continue the full82-chapter goal.",
+  "receiptCommit": "This receipt follows the exact verified content commit; its own remote hash is verified separately in execution output."
+}
