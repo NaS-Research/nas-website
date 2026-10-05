@@ -1,0 +1,2581 @@
+{
+  "updated": "2026-10-05T06:27:40.767920+00:00",
+  "unit": "enteral-nutrition:broader-calcium-physiology",
+  "status": "Scoped clinical and local validation complete;branch push pending. Whole calcium parent andEN remain reviewing.",
+  "baseCommit": "0e5525197d393c8fadbaa1eb31d44d80e052de67",
+  "sourcePolicy": {
+    "primary": "Supplied cover-verified RxPrep2023;private extracts/images outside Git",
+    "approval": {
+      "status": "approved by direct user message: I give approval",
+      "scope": "Official guidelines, FDA labels and primary academic clinical references where the book cannot verify retained content; includes pending calcium, dialysis, aluminum and mineral physiology scopes",
+      "primarySourceRemains": "Supplied cover-verified RxPrep2023 book",
+      "approvalContext": "Response to pending asynchronous request for this additional authoritative source policy",
+      "usedNewlyAuthorizedSourcesInThisUnit": false
+    },
+    "newlyAuthorizedSourcesUsed": true
+  },
+  "sourceReview": {
+    "primaryReferences": [
+      {
+        "url": "https://www.endotext.org/wp-content/uploads/pdfs/approach-to-hypercalcemia.pdf",
+        "edition": "Updated March18,2026;DavidGoltzman",
+        "scopeRead": "Full regulation/vitaminD sections, FHH section, management section;Figure1,Figure8 andTable3 viewed. New dose/preparation details not adopted.",
+        "privateFileSha256": "85eabc508cb5670bf719c4555806ef779fd61dc1f44666cef39dbf10499fb8bc"
+      },
+      {
+        "url": "https://www.endotext.org/wp-content/uploads/pdfs/hypocalcemia.pdf",
+        "edition": "September9,2026;Rao andShoback",
+        "scopeRead": "Full diagnostic/etiologic, magnesium and chronic-treatment sections;Tables1-5 viewed. Existing FDA product instructions retained;no new infusion regimen adopted.",
+        "privateFileSha256": "abb23a6eb9bdc6aa46e786925304c49835e43bb84047edf8e46a208f8a3bc91e"
+      },
+      {
+        "url": "https://academic.oup.com/ejendo/article/193/5/G83/8321487",
+        "edition": "EJE2025;193:G83-G112;DOI10.1093/ejendo/lvaf222",
+        "scopeRead": "Complete relevant recommendations/rationale R1.1,R2.1/R2.3-R2.5,R3.3/R3.6/R3.8,R4.2-R4.5 and complete Table6 with continued page/footnotes read. No new numerical targets,doses or monitoring intervals adopted.",
+        "privateFileSha256": "1a41578ac40543c06181742c024d269bbcf87a39952702a3e44649b67485963d"
+      },
+      {
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2488254/",
+        "edition": "Gauci etal.2008;primary CKD3-5 research",
+        "scopeRead": "Full abstract,introduction,discussion and methods;complete Table3. Qualitative measurement limitations adopted with study population identified.",
+        "privateFileSha256": "c12ef7eba8ab3a0fd40088101fa775e6bf41869e9b4cb0a5ae7f457991737deb"
+      },
+      {
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4491294/",
+        "edition": "Blaine,Chonchol,Levi;2015 renal physiology review",
+        "scopeRead": "Full FGF23,CKD compensation and secondary PTH paragraphs;original Figure8 and complete caption. Historical CKD treatment list not adopted.",
+        "privateFileSha256": "74f89033fa17eb421c2f780a24fe387f862804ec1de0622052dbd60ef848c463"
+      },
+      {
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5990060/",
+        "edition": "Basok etal.2018;BMJ case report",
+        "scopeRead": "Full case,treatment,outcome,discussion read. Selected rescue role only;case evidence qualified, no universal calcium trigger or dialysis recipe adopted.",
+        "privateFileSha256": "a15d943d7a82574703bb88e23c458b7ffe0bb475e97e039a8f525410a927c16e"
+      },
+      {
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3437249/",
+        "edition": "Howard,Jones,Pui;NEJM2011;DOI10.1056/NEJMra0904569",
+        "scopeRead": "Full relevant pathophysiology/management/monitoring sections and original Figure1/caption. Symptomatic calcium-toxicity and renal-replacement context adopted;historical doses/thresholds not adopted.",
+        "privateFileSha256": "49f261dcce07356b0d75d87378d9aed4ec10e8bf7c23a4ed8288bd20f72f8e2f"
+      }
+    ],
+    "retrievalNotes": {
+      "Endotext": "NCBI Books page displayed a challenge;no bypass attempted. Unmodified original publisher PDFs retrieved instead.",
+      "ESE2025": "Final publisher PDF retrieved from professional society SIOMMMS mirror;title,DOI,pagination and publisher footer matched. Publisher link retained in product references.",
+      "ESEMirrorUrl": "https://www.siommms.it/wp-content/uploads/2026/03/251027-revised-european-society-of-endocrinology-clinical-practice-guideline.pdf"
+    },
+    "originalSourceInspectionManifest": {
+      "originalPdfPagesActuallyViewed": [
+        {
+          "file": "endotext-hypercalcemia-1.png",
+          "source": "endotext-hypercalcemia",
+          "pdfPage": 1,
+          "sha256": "d33e2ec81f1b2aa24dd8482371cc7c4f5d44264eafd66e25890ecf69b433381a"
+        },
+        {
+          "file": "endotext-hypercalcemia-2.png",
+          "source": "endotext-hypercalcemia",
+          "pdfPage": 2,
+          "sha256": "24405c2af3effb2f7a4836f0ea16db26cdaf7ce798d14d2b196cbdf08ed37ece"
+        },
+        {
+          "file": "endotext-hypercalcemia-3.png",
+          "source": "endotext-hypercalcemia",
+          "pdfPage": 3,
+          "sha256": "92f21ec5bbce82472752890e30317f2549c4cbaec26819ea8714237b626fb038"
+        },
+        {
+          "file": "endotext-hypercalcemia-4.png",
+          "source": "endotext-hypercalcemia",
+          "pdfPage": 4,
+          "sha256": "81ac1c4b70bb7524073afc41a2f95e03535102455419afce38ca931597a598d4"
+        },
+        {
+          "file": "endotext-hypercalcemia-5.png",
+          "source": "endotext-hypercalcemia",
+          "pdfPage": 5,
+          "sha256": "05dada847ed2eb00ff9448e195ea2bb67e818c3470779294dac109e373bcee93"
+        },
+        {
+          "file": "endotext-hypercalcemia-6.png",
+          "source": "endotext-hypercalcemia",
+          "pdfPage": 6,
+          "sha256": "7aca3a705329fd4d10b7954c75209fe978944603fadb8ecd73b069b74ef1a39b"
+        },
+        {
+          "file": "endotext-hypercalcemia-7.png",
+          "source": "endotext-hypercalcemia",
+          "pdfPage": 7,
+          "sha256": "201f43acd4c0e4807268141722721ffdd47c55843443d2fbfd7adde093f42e8e"
+        },
+        {
+          "file": "endotext-hypercalcemia-21.png",
+          "source": "endotext-hypercalcemia",
+          "pdfPage": 21,
+          "sha256": "f136a5575345849f35dbb04f82941298936a97dfc79beca0858bb94c6c9a36db"
+        },
+        {
+          "file": "endotext-hypercalcemia-22.png",
+          "source": "endotext-hypercalcemia",
+          "pdfPage": 22,
+          "sha256": "cc0728aaa68ecc20122737ce1f0d6deeccb2f272f168ac45da06a29d78b3ab30"
+        },
+        {
+          "file": "endotext-hypercalcemia-37.png",
+          "source": "endotext-hypercalcemia",
+          "pdfPage": 37,
+          "sha256": "76f7782b46f9967cc430b1940eb5d6aff6fb2206b53049289da414232a3489f2"
+        },
+        {
+          "file": "endotext-hypercalcemia-38.png",
+          "source": "endotext-hypercalcemia",
+          "pdfPage": 38,
+          "sha256": "8832b25a38efb9883451ba3d5c4b825f95c7dcbb8b98f6153ad1d4e64922b865"
+        },
+        {
+          "file": "endotext-hypercalcemia-39.png",
+          "source": "endotext-hypercalcemia",
+          "pdfPage": 39,
+          "sha256": "58e1579c342be548d1564c055c29f7c2f082356ff4c4c36db36c1b28570216db"
+        },
+        {
+          "file": "endotext-hypocalcemia-1.png",
+          "source": "endotext-hypocalcemia",
+          "pdfPage": 1,
+          "sha256": "aac8a526ee59cd88b8d191b2e5fe6ad12b57940e3f9f0cc36d7ddfb55617bca7"
+        },
+        {
+          "file": "endotext-hypocalcemia-2.png",
+          "source": "endotext-hypocalcemia",
+          "pdfPage": 2,
+          "sha256": "1798c8d80f726387b01719f3d3f3529c24076ed8ed54a17a570da3361bd34d24"
+        },
+        {
+          "file": "endotext-hypocalcemia-3.png",
+          "source": "endotext-hypocalcemia",
+          "pdfPage": 3,
+          "sha256": "49df13bc4d6f94f4db9c29a395ded396e46abf2910d388d16539a8273be5d87f"
+        },
+        {
+          "file": "endotext-hypocalcemia-4.png",
+          "source": "endotext-hypocalcemia",
+          "pdfPage": 4,
+          "sha256": "6b41186e8bf22f7d8dd5a2823f5d0bc278f5733db22ab6bad4fc46b806a5b6bb"
+        },
+        {
+          "file": "endotext-hypocalcemia-5.png",
+          "source": "endotext-hypocalcemia",
+          "pdfPage": 5,
+          "sha256": "7c069102c44d37769ff70857e2d3ed496060d6b3d4dacdd3ef75175c74e53554"
+        },
+        {
+          "file": "endotext-hypocalcemia-6.png",
+          "source": "endotext-hypocalcemia",
+          "pdfPage": 6,
+          "sha256": "6caeabcc20d06a6a205f76b1173b594f9b91631c5f9b831babdf76dd79f32bca"
+        },
+        {
+          "file": "ese2025-1.png",
+          "source": "ese2025",
+          "pdfPage": 1,
+          "sha256": "5b1a4d40b4e5eb3da63414ee270422e7971f625a60396236ac077e45ed2ab9f9"
+        },
+        {
+          "file": "ese2025-2.png",
+          "source": "ese2025",
+          "pdfPage": 2,
+          "sha256": "92e008a1d6553b021f9b4b865d234000cba6b70474d4985f2a72668039b04448"
+        },
+        {
+          "file": "ese2025-3.png",
+          "source": "ese2025",
+          "pdfPage": 3,
+          "sha256": "d90d0fc7516e1306f99dd947666aee5dc3552238ba9c1de85b2067fdc09d7d34"
+        },
+        {
+          "file": "ese2025-11.png",
+          "source": "ese2025",
+          "pdfPage": 11,
+          "sha256": "d81090a49a6ec6922f57e1cb3e0cdfea05b291165c2b350a4a71f3ff56ab0ad5"
+        },
+        {
+          "file": "ese2025-12.png",
+          "source": "ese2025",
+          "pdfPage": 12,
+          "sha256": "e0bbfd7c998b396ff57d07fe2d7c0bf92b293971ff9929a868436cf72cc00043"
+        },
+        {
+          "file": "ese2025-13.png",
+          "source": "ese2025",
+          "pdfPage": 13,
+          "sha256": "a09716c534ca67ea84e1c2b09e58da268e8ade126af5872e6507880d1af0cf04"
+        },
+        {
+          "file": "ese2025-14.png",
+          "source": "ese2025",
+          "pdfPage": 14,
+          "sha256": "832a15966da06af86ce3cc1df81f7625452b617b7dcd1448a5b34bfd2a36c6f4"
+        },
+        {
+          "file": "ese2025-18.png",
+          "source": "ese2025",
+          "pdfPage": 18,
+          "sha256": "20cc7c64aa318614de5589cb432b7c52eb822adab79bebda2ab7d26711147f43"
+        },
+        {
+          "file": "ese2025-19.png",
+          "source": "ese2025",
+          "pdfPage": 19,
+          "sha256": "a01142578f2b887946e3718d5f95dcb2842942a7a555d595923e932940fcdcab"
+        },
+        {
+          "file": "ese2025-20.png",
+          "source": "ese2025",
+          "pdfPage": 20,
+          "sha256": "0c3307e004a3ea87b0764287998eba8fe9ea0b05c1e1ba827e3b0e4c5d3a2cc9"
+        },
+        {
+          "file": "ese2025-21.png",
+          "source": "ese2025",
+          "pdfPage": 21,
+          "sha256": "13baf5c206447a197f8507bc0d1e57101456a7f21471aa96e3a35052cbe9c0b8"
+        }
+      ],
+      "bookPagesActuallyViewed": [
+        {
+          "pdfPage": 168,
+          "printedPage": 160,
+          "file": "book-168.png",
+          "fullCalciumSourceSectionFormulaAndSourceTableViewed": true
+        },
+        {
+          "pdfPage": 717,
+          "printedPage": 705,
+          "file": "book-717.png",
+          "fullMagnesiumSectionReadAndViewed": true,
+          "printedPageVisuallyConfirmedInAdditionalFooterCapture": "book-717-footer.png",
+          "ocrPageNumber": "701;notusedbecauseactualprintedfooter705"
+        }
+      ],
+      "originalHtmlParagraphsOrTableActuallyViewed": [
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2488254/",
+          "file": "calcium-CKD2008-source-0.png",
+          "sha256": "d82bc3ec308a7b827770b60e5a86f1e0e0b6663a7c9bad5faefce562e5393a1c",
+          "originalTextSha256": "ed77aa762c49eeed0eb7d995e5569725f6ccb6b37b80f4a3e958de36c6fdd9ef",
+          "wholeOriginalTextReadAndViewed": true
+        },
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2488254/",
+          "file": "calcium-CKD2008-source-1.png",
+          "sha256": "db4e108686aaf40a369b4df50c0bcf7ab8d7a716751ad2ff87fc492a168330de",
+          "originalTextSha256": "f464999acc43f5e8e4e0a18c84da7bb16870de3d676c333d8e90a3a40990fb23",
+          "wholeOriginalTextReadAndViewed": true
+        },
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2488254/",
+          "file": "calcium-CKD2008-source-2.png",
+          "sha256": "5e0d914e5e27dd02f761198cfe9cdae6c787c6140152d89a83becb3a24a0a877",
+          "originalTextSha256": "82fe75a3934e7d540ec121a4857c0b3c69736b29188995b36c8bcacafe01184e",
+          "wholeOriginalTextReadAndViewed": true
+        },
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2488254/",
+          "file": "calcium-CKD2008-table3.png",
+          "sha256": "cb0e7c821a39f04c6a15977d00aa34a7520e4789e8bcf106010e3f034a8f43f1",
+          "originalTextSha256": "c043767cc2525bb7c72cb7d8dd0dd912f895613142c9b3793bf132ed7e2c0753",
+          "wholeOriginalTextReadAndViewed": true
+        },
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4491294/",
+          "file": "renal-minerals2015-source-0.png",
+          "sha256": "49255917b0255429bb432c02448403c55498e14b3466f551e4774ced46afcf62",
+          "originalTextSha256": "220b874853f8c57cbac31524f32eaa3e6c95a0d9666a990479a714c06b7329f4",
+          "wholeOriginalTextReadAndViewed": true
+        },
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4491294/",
+          "file": "renal-minerals2015-source-1.png",
+          "sha256": "4106e20fbc75030834565e795a14c8dc8b345725c4dea69efce7cea1a1faa249",
+          "originalTextSha256": "9154f61b80f58e2b88cac23f8071e2d17e2a7bd30bdedf42b27efb1fd8bf0647",
+          "wholeOriginalTextReadAndViewed": true
+        },
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5990060/",
+          "file": "dialysis2018-source-0.png",
+          "sha256": "5b64bb7a69e7867ad89cac51ca21d344427bdb4c916487e0fcf1ac950c66e578",
+          "originalTextSha256": "9807ec2f6c6897786618ca6b1c046cee32de9faf5e4f2bbde20856fcea105129",
+          "wholeOriginalTextReadAndViewed": true
+        },
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5990060/",
+          "file": "dialysis2018-source-1.png",
+          "sha256": "4032edbed45e2d08bf23db5870c94afacff748bfee3c7a8ce09bd6d2fdb7bae1",
+          "originalTextSha256": "7de28bbc951e7d10c691cd7d28fda46718247a2e300e8ad2ad3613138e84fda5",
+          "wholeOriginalTextReadAndViewed": true
+        },
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3437249/",
+          "file": "TLS2011-source-0.png",
+          "sha256": "e9e3c6750fb3654fa3cc0d4de36626616290b70eaee71471dc6f1083c2d93f1f",
+          "originalTextSha256": "30af5a0e0f9bd9ecaa4fe8c7a3c39840c737e64e5ee16b269b9477d1b5c4eeba",
+          "wholeOriginalTextReadAndViewed": true
+        },
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3437249/",
+          "file": "TLS2011-source-1.png",
+          "sha256": "bd7b71af4db5a9bf947f2321c75429c893ff891d292e6527c41737e766109016",
+          "originalTextSha256": "82237c0453054d4fd48fc3dd104b49ee8a5c3571d53012c155e1d31374bf4307",
+          "wholeOriginalTextReadAndViewed": true
+        },
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3437249/",
+          "file": "TLS2011-source-2.png",
+          "sha256": "a477c0bc65ba3ba22e03ba7ea7cc22bd089054e52b53486e368b9150197b60b5",
+          "originalTextSha256": "3bda2599a6ea7f76cc83a65e562f3f49164944477d366a11221c03a37a5613ac",
+          "wholeOriginalTextReadAndViewed": true
+        }
+      ],
+      "nativeOriginalFiguresActuallyViewed": [
+        {
+          "source": "Blaine2015",
+          "url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/37b1/4491294/28b974bcd25b/CJN.09750913f8.jpg",
+          "file": "renal-minerals2015-original-figure.png",
+          "completeOriginalFigureAndCaptionRead": true
+        },
+        {
+          "source": "Howard2011",
+          "url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/f016/3437249/de740d1d4a17/nihms370895f1.jpg",
+          "file": "TLS2011-original-figure.png",
+          "completeOriginalFigureViewedAndFullCaptionTextRead": true,
+          "captionNativeScreenshotNotClaimed": true
+        }
+      ],
+      "privateSourceMaterialCommitted": false
+    },
+    "bookPrimaryScope": "PDF168/printed160 full calcium formula/source example/table;PDF717/printed705 full magnesium section. Actual printed705 footer confirmed rather than corrupted OCR701. No new book Mg replacement course adopted."
+  },
+  "coverage": {
+    "evidence": "enteral-nutrition-broader-calcium-physiology-review.json",
+    "moduleBankBefore": 108,
+    "moduleBankAfter": 108,
+    "wholeQuestionsVerified": 12,
+    "existingQuestionsNewlyVerified": 12,
+    "newDistinctQuestionsAdded": 0,
+    "sourceVerifiedBankIds": [
+      "calcium-phosphorus-001",
+      "calcium-phosphorus-003",
+      "calcium-phosphorus-006",
+      "calcium-phosphorus-008",
+      "calcium-phosphorus-011",
+      "calcium-phosphorus-012",
+      "calcium-phosphorus-017",
+      "calcium-phosphorus-023",
+      "calcium-phosphorus-035",
+      "calcium-phosphorus-092",
+      "calcium-phosphorus-095",
+      "calcium-phosphorus-102"
+    ],
+    "broaderFeedingBankVerifiedAfter": 321,
+    "wholeBodiesVerified": 11,
+    "retainedWholeBodiesReconciled": 9,
+    "newWholeBodiesAdded": 2,
+    "sourceVerifiedBodyHeadings": {
+      "mineral-regulation": [
+        "Track calcium through the feedback loop",
+        "Separate vitamin D production from effect",
+        "Use FGF23 to explain phosphate control"
+      ],
+      "calcium-measurement": [
+        "Know what the laboratory measured",
+        "Use correction formulas cautiously",
+        "Interpret low urinary calcium as a clue",
+        "Work the estimate, then check its limits"
+      ],
+      "hypocalcemia": [
+        "Correct the mechanism",
+        "Protect the kidney during chronic therapy"
+      ],
+      "hypercalcemia": [
+        "Restore volume thoughtfully"
+      ],
+      "hyperphosphatemia-ckd-mbd": [
+        "Recognize acute phosphate toxicity"
+      ]
+    },
+    "moduleWholeQuestionsVerifiedAfter": 108,
+    "moduleQuestionTotal": 108,
+    "remainingQuestionIds": [],
+    "remainingOriginalWholeBodyHeadings": [],
+    "newWholeMetadataChecksFiguresVerified": false,
+    "newlyCountedCumulativeQuestions": 1,
+    "sourceVerifiedCumulativeIds": [
+      "cumulative-calcium-phosphorus-homeostasis-calcium-phosphorus-001"
+    ],
+    "other1179WholeCumulativeObjectsUnchanged": true,
+    "wholeLessonsVerified": false,
+    "wholeParentModuleVerified": false,
+    "wholeENModuleVerified": false,
+    "wholeChaptersVerified": false,
+    "all108OriginalIdsKeysCorrectTextsAnchorsRelativeOrderPreserved": true
+  },
+  "changes": {
+    "questions": {
+      "calcium-phosphorus-001": {
+        "before": {
+          "id": "calcium-phosphorus-001",
+          "question": "Which extracellular calcium fraction directly activates the calcium-sensing receptor?",
+          "choices": [
+            "Ionized calcium",
+            "Albumin-bound calcium",
+            "Calcium bound to citrate only",
+            "Total calcium regardless of binding"
+          ],
+          "answer": 0,
+          "rationale": "Ionized calcium is the biologically active fraction sensed by the calcium-sensing receptor.",
+          "reviewHref": "#mineral-regulation"
+        },
+        "after": {
+          "id": "calcium-phosphorus-001",
+          "question": "Which extracellular calcium fraction directly activates the calcium-sensing receptor?",
+          "choices": [
+            "Ionized calcium",
+            "Albumin-bound calcium",
+            "Calcium bound to citrate only",
+            "Total calcium regardless of binding"
+          ],
+          "answer": 0,
+          "rationale": "The calcium-sensing receptor responds to extracellular ionized calcium. Albumin-bound and complexed calcium contribute to total calcium but are not the free calcium signal. A change in binding can therefore alter the signal without the same change in total calcium.",
+          "reviewHref": "#mineral-regulation"
+        }
+      },
+      "calcium-phosphorus-003": {
+        "before": {
+          "id": "calcium-phosphorus-003",
+          "question": "Which vitamin D measurement best reflects body vitamin D stores in routine evaluation?",
+          "choices": [
+            "25-hydroxyvitamin D",
+            "1,25-dihydroxyvitamin D",
+            "Unbound cholecalciferol",
+            "Urine calcitriol"
+          ],
+          "answer": 0,
+          "rationale": "25-hydroxyvitamin D is the principal circulating marker used to assess stores.",
+          "reviewHref": "#mineral-regulation"
+        },
+        "after": {
+          "id": "calcium-phosphorus-003",
+          "question": "Which vitamin D measurement best reflects vitamin D status in routine evaluation?",
+          "choices": [
+            "25-hydroxyvitamin D",
+            "1,25-dihydroxyvitamin D",
+            "Unbound cholecalciferol",
+            "Urine calcitriol"
+          ],
+          "answer": 0,
+          "rationale": "25-hydroxyvitamin D is the major circulating metabolite used to assess vitamin D status and reflects contributions from skin and dietary sources. Active 1,25-dihydroxyvitamin D is regulated by PTH, kidney function, and phosphate signaling; it is not the routine marker of vitamin D sufficiency.",
+          "reviewHref": "#mineral-regulation"
+        }
+      },
+      "calcium-phosphorus-006": {
+        "before": {
+          "id": "calcium-phosphorus-006",
+          "question": "Why can severe magnesium deficiency cause hypocalcemia?",
+          "choices": [
+            "It can impair PTH secretion and tissue response",
+            "It always increases calcitriol",
+            "It releases calcium from albumin",
+            "It permanently destroys bone"
+          ],
+          "answer": 0,
+          "rationale": "Magnesium is required for normal PTH release and action.",
+          "reviewHref": "#mineral-regulation"
+        },
+        "after": {
+          "id": "calcium-phosphorus-006",
+          "question": "Why can severe magnesium deficiency cause hypocalcemia?",
+          "choices": [
+            "It can impair PTH secretion and tissue response",
+            "It increases renal phosphate excretion enough to restore calcium",
+            "It raises albumin binding without altering PTH function",
+            "It increases intestinal calcium absorption through calcitriol"
+          ],
+          "answer": 0,
+          "rationale": "Marked magnesium deficiency can impair both PTH secretion and its action in target tissues, causing functional hypoparathyroidism and hypocalcemia. This mechanism differs from a binding-only change or a beneficial increase in calcitriol. Assess and correct magnesium while addressing the calcium disorder.",
+          "reviewHref": "#mineral-regulation"
+        }
+      },
+      "calcium-phosphorus-008": {
+        "before": {
+          "id": "calcium-phosphorus-008",
+          "question": "Which treatment principle is essential in chronic hypoparathyroidism?",
+          "choices": [
+            "Control symptoms while avoiding hypercalciuria",
+            "Normalize calcium by maximizing urinary calcium",
+            "Stop kidney monitoring after symptoms improve",
+            "Use IV calcium as lifelong maintenance"
+          ],
+          "answer": 0,
+          "rationale": "Chronic therapy balances symptom and calcium control against hypercalciuria, nephrolithiasis, and kidney injury.",
+          "reviewHref": "#hypocalcemia"
+        },
+        "after": {
+          "id": "calcium-phosphorus-008",
+          "question": "Which treatment principle is essential in chronic hypoparathyroidism?",
+          "choices": [
+            "Control symptoms while avoiding hypercalciuria",
+            "Aim for upper-normal calcium regardless of urine calcium",
+            "Use the serum calcium result as the only renal safety measure",
+            "Stop surveillance once paresthesia resolves"
+          ],
+          "answer": 0,
+          "rationale": "Chronic hypoparathyroidism treatment aims for symptom relief and individualized calcium control, generally in the lower part of or slightly below the reference range, while addressing excessive urinary calcium. Serum calcium alone cannot establish urine calcium or renal safety. The 2025 ESE guideline recommends biochemical follow-up and urine calcium assessment during conventional therapy; evidence that urine-lowering interventions prevent renal complications remains limited.",
+          "reviewHref": "#hypocalcemia"
+        }
+      },
+      "calcium-phosphorus-011": {
+        "before": {
+          "id": "calcium-phosphorus-011",
+          "question": "How can acute alkalemia affect ionized calcium?",
+          "choices": [
+            "It can lower ionized calcium by increasing albumin binding",
+            "It always raises ionized calcium",
+            "It removes albumin from plasma",
+            "It has no effect on binding"
+          ],
+          "answer": 0,
+          "rationale": "Higher pH increases calcium binding to albumin and can lower the ionized fraction.",
+          "reviewHref": "#calcium-measurement"
+        },
+        "after": {
+          "id": "calcium-phosphorus-011",
+          "question": "How can acute alkalemia affect ionized calcium?",
+          "choices": [
+            "It can lower ionized calcium by increasing albumin binding",
+            "It raises ionized calcium by reducing albumin binding",
+            "It lowers total calcium only, leaving the free fraction unchanged",
+            "It changes PTH secretion only, without affecting protein binding"
+          ],
+          "answer": 0,
+          "rationale": "Alkalemia increases calcium binding to albumin and can decrease the free, biologically active fraction. Acidemia has the opposite binding effect. Total calcium may remain normal during a symptomatic fall in ionized calcium, so a normal total result does not exclude this mechanism.",
+          "reviewHref": "#calcium-measurement"
+        }
+      },
+      "calcium-phosphorus-012": {
+        "before": {
+          "id": "calcium-phosphorus-012",
+          "question": "When is direct ionized calcium particularly valuable?",
+          "choices": [
+            "Critical illness or abnormal pH when an accurate result changes care",
+            "Every stable patient with normal albumin",
+            "Only when LDL is high",
+            "Only after calcium treatment is complete"
+          ],
+          "answer": 0,
+          "rationale": "Binding abnormalities make total and corrected calcium less dependable in critical illness and abnormal pH.",
+          "reviewHref": "#calcium-measurement"
+        },
+        "after": {
+          "id": "calcium-phosphorus-012",
+          "question": "When is direct ionized calcium particularly valuable?",
+          "choices": [
+            "Critical illness or abnormal pH when an accurate result changes care",
+            "Stable albumin and pH with a total result consistent with symptoms",
+            "A vitamin D status assessment without a calcium-binding concern",
+            "A phosphate trend review without discordant calcium findings"
+          ],
+          "answer": 0,
+          "rationale": "Ionized calcium measures the active fraction directly and is particularly useful when abnormal pH, protein binding, or critical illness makes total or albumin-adjusted calcium unreliable. It is not a substitute for a vitamin D status or phosphate evaluation. Interpret the result at the patient's actual pH and follow the laboratory's collection and handling requirements.",
+          "reviewHref": "#calcium-measurement"
+        }
+      },
+      "calcium-phosphorus-017": {
+        "before": {
+          "id": "calcium-phosphorus-017",
+          "question": "Which pattern suggests familial hypocalciuric hypercalcemia rather than primary hyperparathyroidism?",
+          "choices": [
+            "Mild lifelong hypercalcemia with relatively low urinary calcium",
+            "Severe hypocalcemia after thyroid surgery",
+            "Suppressed PTH with high PTH-related peptide",
+            "High urinary calcium after loop diuresis only"
+          ],
+          "answer": 0,
+          "rationale": "FHH is commonly mild and associated with low renal calcium excretion relative to the serum calcium.",
+          "reviewHref": "#calcium-measurement"
+        },
+        "after": {
+          "id": "calcium-phosphorus-017",
+          "question": "Which pattern suggests familial hypocalciuric hypercalcemia rather than primary hyperparathyroidism?",
+          "choices": [
+            "Mild lifelong hypercalcemia with relatively low urinary calcium",
+            "Recent hypercalcemia with clearly increased urinary calcium",
+            "New severe hypercalcemia with suppressed PTH",
+            "Low serum calcium with absent PTH after neck surgery"
+          ],
+          "answer": 0,
+          "rationale": "Lifelong, usually mild hypercalcemia with urinary calcium that is inappropriately low relative to serum calcium suggests familial hypocalciuric hypercalcemia. PTH can be normal or elevated, so it can resemble primary hyperparathyroidism. The patterns overlap; the urine finding and history support further evaluation rather than establish the diagnosis by themselves.",
+          "reviewHref": "#calcium-measurement"
+        }
+      },
+      "calcium-phosphorus-023": {
+        "before": {
+          "id": "calcium-phosphorus-023",
+          "question": "Which coexisting abnormality can make calcium replacement appear ineffective?",
+          "choices": [
+            "Hypomagnesemia",
+            "Mild hypernatremia only",
+            "High HDL",
+            "Low uric acid"
+          ],
+          "answer": 0,
+          "rationale": "Magnesium deficiency can reduce PTH secretion and action.",
+          "reviewHref": "#hypocalcemia"
+        },
+        "after": {
+          "id": "calcium-phosphorus-023",
+          "question": "Which coexisting abnormality can impair PTH release and action, reducing the response to calcium replacement?",
+          "choices": [
+            "Hypomagnesemia",
+            "Hypoalbuminemia with a normal ionized calcium result",
+            "A normal magnesium concentration after adequate repletion",
+            "A binding change that has resolved with normalization of pH"
+          ],
+          "answer": 0,
+          "rationale": "Magnesium deficiency can reduce PTH secretion and tissue response, so calcium treatment may have an inadequate effect until magnesium is addressed. A low total calcium from hypoalbuminemia with normal ionized calcium is a different problem. Correct magnesium alongside clinically indicated calcium treatment; urgent symptomatic hypocalcemia should not wait for magnesium normalization.",
+          "reviewHref": "#hypocalcemia"
+        }
+      },
+      "calcium-phosphorus-035": {
+        "before": {
+          "id": "calcium-phosphorus-035",
+          "question": "When may dialysis be considered for hypercalcemia?",
+          "choices": [
+            "Severe refractory disease with kidney failure or inability to tolerate fluids",
+            "Every mild asymptomatic case",
+            "Only after calcium normalizes",
+            "Never"
+          ],
+          "answer": 0,
+          "rationale": "Dialysis is a selected rescue strategy when conventional clearance and fluid therapy are unsafe or ineffective.",
+          "reviewHref": "#hypercalcemia"
+        },
+        "after": {
+          "id": "calcium-phosphorus-035",
+          "question": "When may dialysis be considered for hypercalcemia?",
+          "choices": [
+            "Severe refractory disease with kidney failure or inability to tolerate fluids",
+            "Mild stable hypercalcemia that responds to oral hydration",
+            "A normal calcium result with isolated low albumin",
+            "An uncomplicated initial episode before assessing volume or kidney function"
+          ],
+          "answer": 0,
+          "rationale": "Dialysis can be considered with specialist assessment for selected severe hypercalcemia when other treatment is ineffective, renal function is impaired, or adequate hydration cannot be given safely. Endotext describes refractory disease and renal insufficiency; published case evidence also describes cardiac or renal limits on hydration. That evidence supports a selected rescue option, not a universal trigger based on one calcium value.",
+          "reviewHref": "#hypercalcemia"
+        }
+      },
+      "calcium-phosphorus-092": {
+        "before": {
+          "id": "calcium-phosphorus-092",
+          "question": "A patient develops paresthesia and carpopedal spasm during acute respiratory alkalosis, with normal total calcium. Which interpretation or action is most defensible?",
+          "choices": [
+            "Measure ionized calcium",
+            "Treat the isolated number without evaluating the mechanism",
+            "Ignore kidney function and symptoms",
+            "Delay urgent stabilization until every test returns"
+          ],
+          "answer": 0,
+          "rationale": "Alkalemia can lower ionized calcium through increased albumin binding despite a normal total value.",
+          "reviewHref": "#calcium-measurement"
+        },
+        "after": {
+          "id": "calcium-phosphorus-092",
+          "question": "A patient develops paresthesia and carpopedal spasm during acute respiratory alkalosis, with normal total calcium. Which interpretation or action is most defensible?",
+          "choices": [
+            "Measure ionized calcium",
+            "Exclude a calcium mechanism because total calcium is normal",
+            "Use an albumin correction to account fully for the pH change",
+            "Diagnose chronic PTH deficiency from the spasm alone"
+          ],
+          "answer": 0,
+          "rationale": "Respiratory alkalosis can increase albumin binding and lower ionized calcium despite a normal total result, explaining paresthesia and carpopedal spasm. Direct ionized calcium at actual pH helps assess this mechanism; an albumin correction does not correct the pH effect. Assess and stabilize clinically significant symptoms while evaluating the cause.",
+          "reviewHref": "#calcium-measurement"
+        }
+      },
+      "calcium-phosphorus-095": {
+        "before": {
+          "id": "calcium-phosphorus-095",
+          "question": "A patient has hypocalcemia that persists despite calcium, with magnesium 0.7 mg/dL. Which interpretation or action is most defensible?",
+          "choices": [
+            "Correct severe magnesium deficiency",
+            "Treat the isolated number without evaluating the mechanism",
+            "Ignore kidney function and symptoms",
+            "Delay urgent stabilization until every test returns"
+          ],
+          "answer": 0,
+          "rationale": "Low magnesium can impair PTH secretion and response.",
+          "reviewHref": "#hypocalcemia"
+        },
+        "after": {
+          "id": "calcium-phosphorus-095",
+          "question": "A patient has hypocalcemia that persists despite calcium, with magnesium 0.7 mg/dL. Which interpretation or action is most defensible?",
+          "choices": [
+            "Correct severe magnesium deficiency",
+            "Escalate calcium alone without addressing magnesium",
+            "Treat the magnesium result as unrelated to PTH function",
+            "Wait for magnesium normalization before any urgent calcium treatment"
+          ],
+          "answer": 0,
+          "rationale": "Magnesium 0.7 mg/dL indicates marked deficiency in this case. Low magnesium can impair PTH secretion and tissue response, contributing to persistent hypocalcemia despite calcium replacement. Correct magnesium and reassess the cause and calcium response. Continue urgent monitored calcium treatment when clinically indicated rather than waiting for magnesium to normalize.",
+          "reviewHref": "#hypocalcemia"
+        }
+      },
+      "calcium-phosphorus-102": {
+        "before": {
+          "id": "calcium-phosphorus-102",
+          "question": "Total calcium is 7.4 mg/dL, albumin 1.8 g/dL, pH 7.18, and the patient has no symptoms. What is the best next interpretation or management principle?",
+          "choices": [
+            "Obtain ionized calcium before assuming true hypocalcemia",
+            "Normalize one laboratory value without a mechanism",
+            "Use the same fixed plan for every patient",
+            "Ignore medication timing"
+          ],
+          "answer": 0,
+          "rationale": "Both low albumin and acidemia alter the relationship between total and ionized calcium.",
+          "reviewHref": "#calcium-measurement"
+        },
+        "after": {
+          "id": "calcium-phosphorus-102",
+          "question": "Total calcium is 7.4 mg/dL, albumin 1.8 g/dL, pH 7.18, and the patient has no symptoms. What is the best next calcium-specific interpretation or management principle?",
+          "choices": [
+            "Obtain ionized calcium before assuming true hypocalcemia",
+            "Diagnose biologically active hypocalcemia from total calcium alone",
+            "Assume an albumin-adjusted result proves the ionized fraction is normal",
+            "Give calcium solely to normalize total calcium without confirming the active fraction"
+          ],
+          "answer": 0,
+          "rationale": "Low albumin and acidemia change the relationship between total and ionized calcium. The conventional albumin estimate is 7.4 + 0.8 x (4 - 1.8) = 9.16 mg/dL, but it does not correct the pH effect or establish the active calcium concentration. Obtain ionized calcium at actual pH to guide the calcium-specific interpretation and assess the acid-base disorder separately.",
+          "reviewHref": "#calcium-measurement"
+        }
+      }
+    },
+    "bodyChanges": {
+      "mineral-regulation": {
+        "Track calcium through the feedback loop": {
+          "before": "A fall in ionized calcium stimulates parathyroid hormone secretion. PTH increases renal calcium reabsorption, promotes phosphate excretion, stimulates renal formation of calcitriol, and supports release of mineral from bone when sustained. The calcium-sensing receptor helps the parathyroid gland and kidney detect extracellular calcium.",
+          "after": "A fall in extracellular ionized calcium stimulates parathyroid hormone secretion. PTH promotes renal calcium conservation and phosphate excretion, stimulates renal calcitriol formation, and increases coupled bone turnover. Sustained excess PTH favors mineral release from bone; intermittent therapeutic PTH can have a different skeletal effect. The calcium-sensing receptor responds to extracellular free calcium in the parathyroid gland and kidney. Interpret the feedback signal using ionized calcium rather than treating all calcium fractions as equivalent."
+        },
+        "Separate vitamin D production from effect": {
+          "before": "Vitamin D is hydroxylated first in the liver to 25-hydroxyvitamin D, the principal marker of body stores, then in the kidney to active 1,25-dihydroxyvitamin D. Calcitriol increases intestinal absorption of calcium and phosphate. Kidney disease, low substrate, magnesium deficiency, and abnormal PTH signaling can disrupt the pathway at different points.",
+          "after": "Vitamin D from skin and dietary sources is first hydroxylated in the liver to 25-hydroxyvitamin D, the major circulating marker used to assess vitamin D status. The kidney is the main source of circulating active 1,25-dihydroxyvitamin D, or calcitriol; some other tissues can also produce it. Calcitriol increases intestinal absorption of calcium and phosphate. Reduced kidney function, low vitamin D availability, and impaired PTH signaling can disrupt this system. Marked magnesium deficiency can impair both PTH secretion and tissue response, so assess magnesium when the calcium response does not fit the expected mechanism."
+        },
+        "Use FGF23 to explain phosphate control": {
+          "before": "FGF23 is released mainly by osteocytes when phosphate load or calcitriol signaling rises. It lowers renal phosphate reabsorption and suppresses calcitriol production. In chronic kidney disease, phosphate retention, FGF23 elevation, low calcitriol, hypocalcemic pressure, and secondary hyperparathyroidism can coexist before serum phosphate becomes markedly high.",
+          "after": "Bone cells, including osteocytes, release FGF23 in response to phosphate and calcitriol signals. FGF23 reduces proximal tubular phosphate reabsorption and lowers calcitriol through reduced synthesis and increased degradation. As kidney function declines, PTH and FGF23 can initially increase phosphate excretion per remaining nephron and help keep serum phosphate from rising. These compensatory mechanisms can become insufficient with further loss of function. Elevated FGF23, reduced calcitriol, and secondary PTH elevation therefore need to be interpreted together; an isolated hormone value does not establish a phosphate-binder indication."
+        }
+      },
+      "calcium-measurement": {
+        "Know what the laboratory measured": {
+          "before": "Roughly half of circulating calcium is ionized and biologically active. The remainder is protein bound or complexed. Total calcium can look low when albumin is low even if ionized calcium is normal. Alkalemia increases albumin binding and can lower ionized calcium, while acidemia can increase the ionized fraction.",
+          "after": "Roughly half of circulating calcium is ionized and biologically active; the remainder is protein bound or complexed with other anions. The proportions are approximate and change with the binding environment. Low albumin can lower total calcium even when ionized calcium is normal. Alkalemia increases protein binding and can lower the ionized fraction, whereas acidemia can increase it. During an acid-base disturbance, check whether the laboratory reports ionized calcium at the actual pH or a value adjusted to pH 7.4; the adjusted result may not reflect the active fraction in the patient."
+        },
+        "Use correction formulas cautiously": {
+          "before": "A common estimate in mg/dL adds 0.8 times the difference between 4 g/dL and measured albumin to total calcium. The equation can be inaccurate in critical illness, kidney disease, marked hypoalbuminemia, and abnormal pH. Direct ionized calcium is preferred when precision matters or the estimate conflicts with the clinical picture.",
+          "after": "A conventional estimate is corrected calcium (mg/dL) = measured total calcium (mg/dL) + 0.8 x [4 - albumin (g/dL)]. This is an estimate of total calcium adjusted for albumin, not a measurement of ionized calcium and not a correction for pH. It can be unreliable in critical illness, kidney disease, and marked hypoalbuminemia. In a study of adults with CKD stages 3 to 5, albumin correction did not improve prediction of abnormal ionized calcium over uncorrected total calcium. Obtain direct ionized calcium when binding or pH makes the result clinically uncertain; follow the laboratory collection and handling instructions."
+        }
+      },
+      "hypocalcemia": {
+        "Correct the mechanism": {
+          "before": "Stable or mild disease may be managed with oral calcium and vitamin D according to cause and local protocol. Hypoparathyroidism may require active vitamin D because renal activation is insufficient without PTH signaling. Vitamin D deficiency requires repletion. Hypomagnesemia must be corrected because it can suppress PTH release and produce resistance to PTH.",
+          "after": "For stable or mild hypocalcemia, oral calcium and vitamin D treatment depend on the cause and clinical plan. Vitamin D deficiency requires repletion; chronic hypoparathyroidism often requires activated vitamin D because absent PTH reduces renal calcitriol formation. Marked magnesium deficiency can impair PTH secretion and tissue response and must be corrected. Address magnesium alongside calcium when urgent calcium treatment is indicated; do not delay stabilization of severe symptomatic hypocalcemia while waiting for magnesium correction or the full etiologic workup."
+        },
+        "Protect the kidney during chronic therapy": {
+          "before": "Chronic hypoparathyroidism care aims to control symptoms without driving excessive urinary calcium. Follow serum calcium, phosphate, magnesium, kidney function, and urinary calcium as appropriate. A thiazide can reduce urinary calcium in selected patients. Palopegteriparatide is an FDA-approved PTH replacement option for adults with hypoparathyroidism, but it is not an acute rescue treatment and requires individualized calcium monitoring during titration.",
+          "after": "Chronic hypoparathyroidism treatment aims for symptom relief and individualized calcium control, generally in the lower part of or slightly below the reference range. Follow calcium, phosphate, magnesium, kidney function, and symptoms; assess urinary calcium during conventional therapy because a serum result cannot predict urine calcium. For hypercalciuria, selected changes in calcium or activated vitamin D doses, lower sodium intake, or a thiazide may reduce urinary calcium, with monitoring of electrolytes, kidney function, and blood pressure. Evidence that thiazides prevent renal complications in this condition is lacking. Palopegteriparatide is a PTH replacement option for adults whose care requires it; it requires individualized titration and calcium monitoring and does not replace emergency calcium rescue."
+        }
+      },
+      "hypercalcemia": {
+        "Restore volume thoughtfully": {
+          "before": "Isotonic crystalloid can correct volume depletion and improve renal calcium clearance, but the amount and rate must reflect heart and kidney function. Loop diuretics are not routine calcium-lowering therapy and are generally reserved for fluid overload after adequate volume has been restored. Dialysis is considered for selected severe cases with kidney failure, refractory disease, or inability to tolerate fluids.",
+          "after": "Isotonic saline can correct volume depletion and improve renal calcium clearance, but the volume and rate must reflect cardiac function, kidney function, and ongoing losses. Monitor for overload rather than applying one large-volume plan to every patient. Loop diuretics are not routine initial calcium-lowering treatment; emergency guidance generally reserves them for fluid overload, and selected calciuresis is considered only after rehydration with monitoring of potassium and kidney function. Dialysis may be considered with specialist assessment for selected severe refractory hypercalcemia, renal insufficiency, or circumstances where adequate hydration cannot be given safely. Published case evidence supports this rescue role but does not define a universal calcium threshold or one dialysis regimen."
+        }
+      },
+      "hyperphosphatemia-ckd-mbd": {
+        "Recognize acute phosphate toxicity": {
+          "before": "Tumor lysis, rhabdomyolysis, severe tissue injury, exogenous phosphate, kidney failure, and hypoparathyroidism can raise phosphate. Acute hyperphosphatemia may lower ionized calcium and promote calcium-phosphate deposition. Treat the cause, assess kidney function and ECG risk, and use dialysis when severe toxicity and kidney failure warrant it. Give calcium for clinically important hypocalcemic toxicity, but avoid indiscriminate calcium loading when precipitation risk is high.",
+          "after": "Cell breakdown in tumor lysis or rhabdomyolysis, exogenous phosphate, kidney failure, and absent PTH-mediated phosphate excretion can raise phosphate. Marked hyperphosphatemia can lower ionized calcium and promote calcium-phosphate deposition in organs and soft tissues. Evaluate the cause, kidney function, symptoms, ECG risk, and the other metabolic abnormalities rather than treating phosphate in isolation. In tumor lysis syndrome, treat symptomatic hypocalcemia with the minimum calcium needed to relieve toxicity; asymptomatic hypocalcemia does not itself call for calcium loading, which can worsen precipitation. Severe acute kidney injury or phosphate-associated symptomatic hypocalcemia may warrant renal replacement therapy. These tumor-lysis recommendations require the acute clinical context and specialist assessment."
+        }
+      }
+    },
+    "addedBodies": {
+      "calcium-measurement": [
+        {
+          "heading": "Interpret low urinary calcium as a clue",
+          "body": "Familial hypocalciuric hypercalcemia is typically lifelong and mild, with urinary calcium that is inappropriately low relative to the serum calcium. PTH may be normal or elevated, so the biochemical pattern can resemble primary hyperparathyroidism. Use the clinical and family history with the calcium, PTH, and urine findings. Urinary patterns overlap, and selected patients need further specialist or genetic evaluation. Do not establish primary hyperparathyroidism or a surgical indication from the serum calcium and PTH pair alone."
+        },
+        {
+          "heading": "Work the estimate, then check its limits",
+          "body": "For total calcium 7.4 mg/dL and albumin 1.8 g/dL, the conventional estimate is 7.4 + 0.8 x (4 - 1.8) = 9.16 mg/dL. The arithmetic estimates albumin-adjusted total calcium; it does not show that ionized calcium is normal. With pH 7.18, acidemia changes protein binding, so obtain ionized calcium at actual pH when the calcium interpretation will guide care. Assess the acid-base disorder separately and use symptoms and the full clinical picture when determining urgency."
+        }
+      ]
+    },
+    "wholeBodies": {
+      "mineral-regulation": [
+        "Track calcium through the feedback loop",
+        "Separate vitamin D production from effect",
+        "Use FGF23 to explain phosphate control"
+      ],
+      "calcium-measurement": [
+        "Know what the laboratory measured",
+        "Use correction formulas cautiously",
+        "Interpret low urinary calcium as a clue",
+        "Work the estimate, then check its limits"
+      ],
+      "hypocalcemia": [
+        "Correct the mechanism",
+        "Protect the kidney during chronic therapy"
+      ],
+      "hypercalcemia": [
+        "Restore volume thoughtfully"
+      ],
+      "hyperphosphatemia-ckd-mbd": [
+        "Recognize acute phosphate toxicity"
+      ]
+    },
+    "figures": [],
+    "checks": {},
+    "references": [
+      {
+        "label": "Endotext: Approach to Hypercalcemia (March 2026)",
+        "href": "https://www.endotext.org/wp-content/uploads/pdfs/approach-to-hypercalcemia.pdf"
+      },
+      {
+        "label": "Endotext: Hypocalcemia (September 2026)",
+        "href": "https://www.endotext.org/wp-content/uploads/pdfs/hypocalcemia.pdf"
+      },
+      {
+        "label": "ESE revised guideline: chronic hypoparathyroidism in adults (2025)",
+        "href": "https://academic.oup.com/ejendo/article/193/5/G83/8321487"
+      },
+      {
+        "label": "Gauci et al.: calcium measurement in CKD (2008)",
+        "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2488254/"
+      },
+      {
+        "label": "Blaine et al.: renal calcium, phosphate, and magnesium physiology (2015)",
+        "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4491294/"
+      },
+      {
+        "label": "Basok et al.: dialysis for extreme hypercalcemia (2018 case report)",
+        "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5990060/"
+      },
+      {
+        "label": "Howard et al.: Tumor Lysis Syndrome (2011 clinical review)",
+        "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3437249/"
+      }
+    ],
+    "addedQuestions": [],
+    "metadataNewlyVerified": false,
+    "retainedPendingQuestions": [],
+    "retainedCoreBodiesPending": []
+  },
+  "finalSourceComparison": {
+    "status": "passed",
+    "questionReview": [
+      {
+        "id": "calcium-phosphorus-001",
+        "finalWholeQuestion": {
+          "id": "calcium-phosphorus-001",
+          "question": "Which extracellular calcium fraction directly activates the calcium-sensing receptor?",
+          "choices": [
+            "Ionized calcium",
+            "Albumin-bound calcium",
+            "Calcium bound to citrate only",
+            "Total calcium regardless of binding"
+          ],
+          "answer": 0,
+          "rationale": "The calcium-sensing receptor responds to extracellular ionized calcium. Albumin-bound and complexed calcium contribute to total calcium but are not the free calcium signal. A change in binding can therefore alter the signal without the same change in total calcium.",
+          "reviewHref": "#mineral-regulation"
+        },
+        "wholeStemAllAlternativesKeyRationaleAndAnchorCompared": true,
+        "sources": [
+          "Endotext Hypercalcemia2026 PDF2-5:CaSR/PTH;fullFigure1"
+        ]
+      },
+      {
+        "id": "calcium-phosphorus-003",
+        "finalWholeQuestion": {
+          "id": "calcium-phosphorus-003",
+          "question": "Which vitamin D measurement best reflects vitamin D status in routine evaluation?",
+          "choices": [
+            "25-hydroxyvitamin D",
+            "1,25-dihydroxyvitamin D",
+            "Unbound cholecalciferol",
+            "Urine calcitriol"
+          ],
+          "answer": 0,
+          "rationale": "25-hydroxyvitamin D is the major circulating metabolite used to assess vitamin D status and reflects contributions from skin and dietary sources. Active 1,25-dihydroxyvitamin D is regulated by PTH, kidney function, and phosphate signaling; it is not the routine marker of vitamin D sufficiency.",
+          "reviewHref": "#mineral-regulation"
+        },
+        "wholeStemAllAlternativesKeyRationaleAndAnchorCompared": true,
+        "sources": [
+          "Endotext Hypercalcemia2026 PDF6-7:vitaminD production/status/action"
+        ]
+      },
+      {
+        "id": "calcium-phosphorus-006",
+        "finalWholeQuestion": {
+          "id": "calcium-phosphorus-006",
+          "question": "Why can severe magnesium deficiency cause hypocalcemia?",
+          "choices": [
+            "It can impair PTH secretion and tissue response",
+            "It increases renal phosphate excretion enough to restore calcium",
+            "It raises albumin binding without altering PTH function",
+            "It increases intestinal calcium absorption through calcitriol"
+          ],
+          "answer": 0,
+          "rationale": "Marked magnesium deficiency can impair both PTH secretion and its action in target tissues, causing functional hypoparathyroidism and hypocalcemia. This mechanism differs from a binding-only change or a beneficial increase in calcitriol. Assess and correct magnesium while addressing the calcium disorder.",
+          "reviewHref": "#mineral-regulation"
+        },
+        "wholeStemAllAlternativesKeyRationaleAndAnchorCompared": true,
+        "sources": [
+          "Endotext Hypocalcemia2026 PDF4-6",
+          "ESE2025 R1.1 andR2.5"
+        ]
+      },
+      {
+        "id": "calcium-phosphorus-008",
+        "finalWholeQuestion": {
+          "id": "calcium-phosphorus-008",
+          "question": "Which treatment principle is essential in chronic hypoparathyroidism?",
+          "choices": [
+            "Control symptoms while avoiding hypercalciuria",
+            "Aim for upper-normal calcium regardless of urine calcium",
+            "Use the serum calcium result as the only renal safety measure",
+            "Stop surveillance once paresthesia resolves"
+          ],
+          "answer": 0,
+          "rationale": "Chronic hypoparathyroidism treatment aims for symptom relief and individualized calcium control, generally in the lower part of or slightly below the reference range, while addressing excessive urinary calcium. Serum calcium alone cannot establish urine calcium or renal safety. The 2025 ESE guideline recommends biochemical follow-up and urine calcium assessment during conventional therapy; evidence that urine-lowering interventions prevent renal complications remains limited.",
+          "reviewHref": "#hypocalcemia"
+        },
+        "wholeStemAllAlternativesKeyRationaleAndAnchorCompared": true,
+        "sources": [
+          "ESE2025 R2.1/R2.3/R3.6/R4.2-R4.5;fullrationale andTable6"
+        ]
+      },
+      {
+        "id": "calcium-phosphorus-011",
+        "finalWholeQuestion": {
+          "id": "calcium-phosphorus-011",
+          "question": "How can acute alkalemia affect ionized calcium?",
+          "choices": [
+            "It can lower ionized calcium by increasing albumin binding",
+            "It raises ionized calcium by reducing albumin binding",
+            "It lowers total calcium only, leaving the free fraction unchanged",
+            "It changes PTH secretion only, without affecting protein binding"
+          ],
+          "answer": 0,
+          "rationale": "Alkalemia increases calcium binding to albumin and can decrease the free, biologically active fraction. Acidemia has the opposite binding effect. Total calcium may remain normal during a symptomatic fall in ionized calcium, so a normal total result does not exclude this mechanism.",
+          "reviewHref": "#calcium-measurement"
+        },
+        "wholeStemAllAlternativesKeyRationaleAndAnchorCompared": true,
+        "sources": [
+          "Endotext Hypercalcemia2026 PDF2",
+          "ESE2025 Table6 completecontinuedpages13-14"
+        ]
+      },
+      {
+        "id": "calcium-phosphorus-012",
+        "finalWholeQuestion": {
+          "id": "calcium-phosphorus-012",
+          "question": "When is direct ionized calcium particularly valuable?",
+          "choices": [
+            "Critical illness or abnormal pH when an accurate result changes care",
+            "Stable albumin and pH with a total result consistent with symptoms",
+            "A vitamin D status assessment without a calcium-binding concern",
+            "A phosphate trend review without discordant calcium findings"
+          ],
+          "answer": 0,
+          "rationale": "Ionized calcium measures the active fraction directly and is particularly useful when abnormal pH, protein binding, or critical illness makes total or albumin-adjusted calcium unreliable. It is not a substitute for a vitamin D status or phosphate evaluation. Interpret the result at the patient's actual pH and follow the laboratory's collection and handling requirements.",
+          "reviewHref": "#calcium-measurement"
+        },
+        "wholeStemAllAlternativesKeyRationaleAndAnchorCompared": true,
+        "sources": [
+          "Endotext Hypocalcemia2026 PDF5",
+          "Gauci2008 fullAbstract/Discussion/Methods/Table3"
+        ]
+      },
+      {
+        "id": "calcium-phosphorus-017",
+        "finalWholeQuestion": {
+          "id": "calcium-phosphorus-017",
+          "question": "Which pattern suggests familial hypocalciuric hypercalcemia rather than primary hyperparathyroidism?",
+          "choices": [
+            "Mild lifelong hypercalcemia with relatively low urinary calcium",
+            "Recent hypercalcemia with clearly increased urinary calcium",
+            "New severe hypercalcemia with suppressed PTH",
+            "Low serum calcium with absent PTH after neck surgery"
+          ],
+          "answer": 0,
+          "rationale": "Lifelong, usually mild hypercalcemia with urinary calcium that is inappropriately low relative to serum calcium suggests familial hypocalciuric hypercalcemia. PTH can be normal or elevated, so it can resemble primary hyperparathyroidism. The patterns overlap; the urine finding and history support further evaluation rather than establish the diagnosis by themselves.",
+          "reviewHref": "#calcium-measurement"
+        },
+        "wholeStemAllAlternativesKeyRationaleAndAnchorCompared": true,
+        "sources": [
+          "Endotext Hypercalcemia2026 fullFHH sectionPDF21-22"
+        ]
+      },
+      {
+        "id": "calcium-phosphorus-023",
+        "finalWholeQuestion": {
+          "id": "calcium-phosphorus-023",
+          "question": "Which coexisting abnormality can impair PTH release and action, reducing the response to calcium replacement?",
+          "choices": [
+            "Hypomagnesemia",
+            "Hypoalbuminemia with a normal ionized calcium result",
+            "A normal magnesium concentration after adequate repletion",
+            "A binding change that has resolved with normalization of pH"
+          ],
+          "answer": 0,
+          "rationale": "Magnesium deficiency can reduce PTH secretion and tissue response, so calcium treatment may have an inadequate effect until magnesium is addressed. A low total calcium from hypoalbuminemia with normal ionized calcium is a different problem. Correct magnesium alongside clinically indicated calcium treatment; urgent symptomatic hypocalcemia should not wait for magnesium normalization.",
+          "reviewHref": "#hypocalcemia"
+        },
+        "wholeStemAllAlternativesKeyRationaleAndAnchorCompared": true,
+        "sources": [
+          "Endotext Hypocalcemia2026 PDF4-6",
+          "ESE2025 R1.1/R2.5/R3.8"
+        ]
+      },
+      {
+        "id": "calcium-phosphorus-035",
+        "finalWholeQuestion": {
+          "id": "calcium-phosphorus-035",
+          "question": "When may dialysis be considered for hypercalcemia?",
+          "choices": [
+            "Severe refractory disease with kidney failure or inability to tolerate fluids",
+            "Mild stable hypercalcemia that responds to oral hydration",
+            "A normal calcium result with isolated low albumin",
+            "An uncomplicated initial episode before assessing volume or kidney function"
+          ],
+          "answer": 0,
+          "rationale": "Dialysis can be considered with specialist assessment for selected severe hypercalcemia when other treatment is ineffective, renal function is impaired, or adequate hydration cannot be given safely. Endotext describes refractory disease and renal insufficiency; published case evidence also describes cardiac or renal limits on hydration. That evidence supports a selected rescue option, not a universal trigger based on one calcium value.",
+          "reviewHref": "#hypercalcemia"
+        },
+        "wholeStemAllAlternativesKeyRationaleAndAnchorCompared": true,
+        "sources": [
+          "Endotext Hypercalcemia2026 PDF37-39 fullmanagement section/Table3",
+          "Basok2018 fullCase/Treatment/Outcome/Discussion;caseevidencequalified"
+        ]
+      },
+      {
+        "id": "calcium-phosphorus-092",
+        "finalWholeQuestion": {
+          "id": "calcium-phosphorus-092",
+          "question": "A patient develops paresthesia and carpopedal spasm during acute respiratory alkalosis, with normal total calcium. Which interpretation or action is most defensible?",
+          "choices": [
+            "Measure ionized calcium",
+            "Exclude a calcium mechanism because total calcium is normal",
+            "Use an albumin correction to account fully for the pH change",
+            "Diagnose chronic PTH deficiency from the spasm alone"
+          ],
+          "answer": 0,
+          "rationale": "Respiratory alkalosis can increase albumin binding and lower ionized calcium despite a normal total result, explaining paresthesia and carpopedal spasm. Direct ionized calcium at actual pH helps assess this mechanism; an albumin correction does not correct the pH effect. Assess and stabilize clinically significant symptoms while evaluating the cause.",
+          "reviewHref": "#calcium-measurement"
+        },
+        "wholeStemAllAlternativesKeyRationaleAndAnchorCompared": true,
+        "sources": [
+          "Endotext Hypercalcemia2026 PDF2",
+          "ESE2025 Table6 fullpHfootnotes"
+        ]
+      },
+      {
+        "id": "calcium-phosphorus-095",
+        "finalWholeQuestion": {
+          "id": "calcium-phosphorus-095",
+          "question": "A patient has hypocalcemia that persists despite calcium, with magnesium 0.7 mg/dL. Which interpretation or action is most defensible?",
+          "choices": [
+            "Correct severe magnesium deficiency",
+            "Escalate calcium alone without addressing magnesium",
+            "Treat the magnesium result as unrelated to PTH function",
+            "Wait for magnesium normalization before any urgent calcium treatment"
+          ],
+          "answer": 0,
+          "rationale": "Magnesium 0.7 mg/dL indicates marked deficiency in this case. Low magnesium can impair PTH secretion and tissue response, contributing to persistent hypocalcemia despite calcium replacement. Correct magnesium and reassess the cause and calcium response. Continue urgent monitored calcium treatment when clinically indicated rather than waiting for magnesium to normalize.",
+          "reviewHref": "#hypocalcemia"
+        },
+        "wholeStemAllAlternativesKeyRationaleAndAnchorCompared": true,
+        "sources": [
+          "RxPrep2023 PDF717 printed705 fullmagnesium section",
+          "Endotext Hypocalcemia2026 PDF4-6",
+          "ESE2025 R1.1/R2.5/R3.8"
+        ]
+      },
+      {
+        "id": "calcium-phosphorus-102",
+        "finalWholeQuestion": {
+          "id": "calcium-phosphorus-102",
+          "question": "Total calcium is 7.4 mg/dL, albumin 1.8 g/dL, pH 7.18, and the patient has no symptoms. What is the best next calcium-specific interpretation or management principle?",
+          "choices": [
+            "Obtain ionized calcium before assuming true hypocalcemia",
+            "Diagnose biologically active hypocalcemia from total calcium alone",
+            "Assume an albumin-adjusted result proves the ionized fraction is normal",
+            "Give calcium solely to normalize total calcium without confirming the active fraction"
+          ],
+          "answer": 0,
+          "rationale": "Low albumin and acidemia change the relationship between total and ionized calcium. The conventional albumin estimate is 7.4 + 0.8 x (4 - 1.8) = 9.16 mg/dL, but it does not correct the pH effect or establish the active calcium concentration. Obtain ionized calcium at actual pH to guide the calcium-specific interpretation and assess the acid-base disorder separately.",
+          "reviewHref": "#calcium-measurement"
+        },
+        "wholeStemAllAlternativesKeyRationaleAndAnchorCompared": true,
+        "sources": [
+          "RxPrep2023 PDF168 printed160 fullcalcium formula/example",
+          "Endotext Hypocalcemia2026 PDF5",
+          "ESE2025 Table6 actualpHfootnotes",
+          "Gauci2008 fullDiscussion/Methods"
+        ]
+      }
+    ],
+    "wholeBodyReview": [
+      {
+        "lesson": "mineral-regulation",
+        "heading": "Track calcium through the feedback loop",
+        "allSentencesCompared": true,
+        "sources": [
+          "Endotext Hypercalcemia2026 PDF2-7 fullregulation/vitaminD sections/Figure1",
+          "Blaine2015 completeFGF23/CKDcompensation/secondaryHPT paragraphs;Figure8 andcaption"
+        ]
+      },
+      {
+        "lesson": "mineral-regulation",
+        "heading": "Separate vitamin D production from effect",
+        "allSentencesCompared": true,
+        "sources": [
+          "Endotext Hypercalcemia2026 PDF2-7 fullregulation/vitaminD sections/Figure1",
+          "Blaine2015 completeFGF23/CKDcompensation/secondaryHPT paragraphs;Figure8 andcaption"
+        ]
+      },
+      {
+        "lesson": "mineral-regulation",
+        "heading": "Use FGF23 to explain phosphate control",
+        "allSentencesCompared": true,
+        "sources": [
+          "Endotext Hypercalcemia2026 PDF2-7 fullregulation/vitaminD sections/Figure1",
+          "Blaine2015 completeFGF23/CKDcompensation/secondaryHPT paragraphs;Figure8 andcaption"
+        ]
+      },
+      {
+        "lesson": "calcium-measurement",
+        "heading": "Know what the laboratory measured",
+        "allSentencesCompared": true,
+        "sources": [
+          "RxPrep2023 PDF168 printed160;equation/sourceexample",
+          "Endotext Hypercalcemia2026 PDF1-2 andfullFHH section21-22",
+          "Endotext Hypocalcemia2026 PDF5",
+          "Gauci2008 fullAbstract/Discussion/Methods;completeTable3",
+          "ESE2025 completeTable6pHrowsandfootnotes"
+        ]
+      },
+      {
+        "lesson": "calcium-measurement",
+        "heading": "Use correction formulas cautiously",
+        "allSentencesCompared": true,
+        "sources": [
+          "RxPrep2023 PDF168 printed160;equation/sourceexample",
+          "Endotext Hypercalcemia2026 PDF1-2 andfullFHH section21-22",
+          "Endotext Hypocalcemia2026 PDF5",
+          "Gauci2008 fullAbstract/Discussion/Methods;completeTable3",
+          "ESE2025 completeTable6pHrowsandfootnotes"
+        ]
+      },
+      {
+        "lesson": "calcium-measurement",
+        "heading": "Interpret low urinary calcium as a clue",
+        "allSentencesCompared": true,
+        "sources": [
+          "RxPrep2023 PDF168 printed160;equation/sourceexample",
+          "Endotext Hypercalcemia2026 PDF1-2 andfullFHH section21-22",
+          "Endotext Hypocalcemia2026 PDF5",
+          "Gauci2008 fullAbstract/Discussion/Methods;completeTable3",
+          "ESE2025 completeTable6pHrowsandfootnotes"
+        ]
+      },
+      {
+        "lesson": "calcium-measurement",
+        "heading": "Work the estimate, then check its limits",
+        "allSentencesCompared": true,
+        "sources": [
+          "RxPrep2023 PDF168 printed160;equation/sourceexample",
+          "Endotext Hypercalcemia2026 PDF1-2 andfullFHH section21-22",
+          "Endotext Hypocalcemia2026 PDF5",
+          "Gauci2008 fullAbstract/Discussion/Methods;completeTable3",
+          "ESE2025 completeTable6pHrowsandfootnotes"
+        ]
+      },
+      {
+        "lesson": "hypocalcemia",
+        "heading": "Correct the mechanism",
+        "allSentencesCompared": true,
+        "sources": [
+          "Endotext Hypocalcemia2026 PDF4-6",
+          "ESE2025 R1.1/R2.1/R2.3/R2.5/R3.3/R3.6/R3.8/R4.2-R4.5 fullrecommendationsandrationale",
+          "PreviouslyverifiedYorvipathFDA2025 indication/monitoring retained;no new product dose orinterval"
+        ]
+      },
+      {
+        "lesson": "hypocalcemia",
+        "heading": "Protect the kidney during chronic therapy",
+        "allSentencesCompared": true,
+        "sources": [
+          "Endotext Hypocalcemia2026 PDF4-6",
+          "ESE2025 R1.1/R2.1/R2.3/R2.5/R3.3/R3.6/R3.8/R4.2-R4.5 fullrecommendationsandrationale",
+          "PreviouslyverifiedYorvipathFDA2025 indication/monitoring retained;no new product dose orinterval"
+        ]
+      },
+      {
+        "lesson": "hypercalcemia",
+        "heading": "Restore volume thoughtfully",
+        "allSentencesCompared": true,
+        "sources": [
+          "PreviouslyapprovedSocietyforEndocrinology2016 fluid/loop guidance",
+          "Endotext Hypercalcemia2026 PDF37-39 fullmanagement/Table3",
+          "Basok2018 fullcaseanddiscussion qualifiedasnoncomparativecaseevidence"
+        ]
+      },
+      {
+        "lesson": "hyperphosphatemia-ckd-mbd",
+        "heading": "Recognize acute phosphate toxicity",
+        "allSentencesCompared": true,
+        "sources": [
+          "Endotext Hypocalcemia2026 PDF2/4-5",
+          "ESE2025 R2.4 fullrationale",
+          "Howard2011 fullPathophysiology/Management/cardiac-hypocalcemia/AKI/monitoring sections andFigure1/caption"
+        ]
+      }
+    ],
+    "cumulativeReview": [
+      {
+        "finalWholeQuestion": {
+          "id": "cumulative-calcium-phosphorus-homeostasis-calcium-phosphorus-001",
+          "question": "Which extracellular calcium fraction directly activates the calcium-sensing receptor?",
+          "choices": [
+            "Ionized calcium",
+            "Albumin-bound calcium",
+            "Calcium bound to citrate only",
+            "Total calcium regardless of binding"
+          ],
+          "answer": 0,
+          "rationale": "The calcium-sensing receptor responds to extracellular ionized calcium. Albumin-bound and complexed calcium contribute to total calcium but are not the free calcium signal. A change in binding can therefore alter the signal without the same change in total calcium.",
+          "reviewHref": "/learn/pharmacy/modules/calcium-phosphorus-homeostasis",
+          "module": "Calcium and Phosphorus Homeostasis"
+        },
+        "allFieldsCompared": true,
+        "sameClinicalScopeAs": "calcium-phosphorus-001",
+        "wholeModuleReviewLinkPreserved": true,
+        "sources": [
+          "Endotext Hypercalcemia2026 PDF2-5:CaSR/PTH;fullFigure1"
+        ]
+      }
+    ],
+    "numericCheck": {
+      "status": "passed",
+      "scenario": "Total calcium 7.4 mg/dL;albumin1.8g/dL;pH7.18",
+      "decimalAlbuminEstimateMgDl": "9.16",
+      "independentFractionRecalculationMatched": true,
+      "formulaSource": "RxPrep supplied book plus Endotext Hypocalcemia2026 PDF5",
+      "clinicalLimit": "Does not establish ionized calcium or correct pH",
+      "distinctNewQuestionCalculationsCounted": 0,
+      "originalWorkedTeachingExamplesVerified": 1
+    },
+    "sourceDiscrepancies": [
+      {
+        "source": "RxPrep2023 PDF168/printed160",
+        "issue": "Book directs albumin correction before any calcium replacement. Current approved sources establish limits in critical illness,CKD andabnormalpH.",
+        "resolution": "Retain conventional formula as estimate;actualpH ionized measurement preferred wherebinding makesresultuncertain. Do notdelayurgent symptom-based treatment."
+      },
+      {
+        "source": "Endotext Hypercalcemia2026 PDF2",
+        "issue": "Printed mg/dL formula has ambiguous multiplication parentheses;its surrounding prose defines0.8per1g/dL below4.",
+        "resolution": "Use verified RxPrep andEndotextHypocalcemiaPDF5 parentheses;independentlyrecalculate9.16mg/dL."
+      },
+      {
+        "source": "Endotext Hypercalcemia2026 PDF1 versusFDAchloride12.3",
+        "issue": "Approximatefractions45/45/10 versus50/40/8-10 differ.",
+        "resolution": "New body says roughlyhalf, notesbindingchanges. No new fixedfractionnumbersorfigure verificationcount inthisunit."
+      },
+      {
+        "source": "Endotext Hypercalcemia2026 PDF38 andBasok2018 historicalregimens",
+        "issue": "Some preparation,durationanddose details differfrom reviewedFDA labels/currentHCMguidance.",
+        "resolution": "No new zoledronatedilution,denosumabdose,calcitonin5daycourse,zero-calciumbath,dialysisrecipeorMg IVdose adopted. Retain prior verifiedproduct/guidelineinstructions."
+      },
+      {
+        "source": "ESE2025 R3.6",
+        "issue": "Thiazides lowerurinarycalcium;preventionofrenalcomplications isnotestablished.",
+        "resolution": "Explicitlyqualifyevidence ratherthanclaimrenalprotectionproved."
+      }
+    ],
+    "limits": "No new whole metadata/check/figure/lesson/parent/chapter closure. All12 remaining retained questions and11whole bodies sourcecompared;one inheritedcumulative rationale compared. No new fixed clinical threshold or dosing regimen."
+  },
+  "validation": {
+    "productionBuild": {
+      "status": "passed",
+      "exitCode": 0,
+      "pages": 567,
+      "isolatedBaseCommit": "0e5525197d393c8fadbaa1eb31d44d80e052de67",
+      "bundler": "webpack",
+      "finalSourceBuild": true,
+      "initialAttempt": "Compilation passed but static generation failed ENOSPC. Old audit-only .next caches removed while all source/evidence preserved;successful final build after final023 stem clarification."
+    },
+    "structure": {
+      "modules": 1,
+      "questions": 108,
+      "hardErrors": [],
+      "sourceGaps": [],
+      "sizeAdvisories": [],
+      "thinLessons": [],
+      "weakestModules": [
+        {
+          "module": "calcium-phosphorus-homeostasis",
+          "lessons": 6,
+          "questions": 108,
+          "minimumLessonCoverage": 8
+        }
+      ]
+    },
+    "objectPreservation": {
+      "status": "passed",
+      "bankBefore": 108,
+      "bankAfter": 108,
+      "wholeQuestionsReconciled": 12,
+      "all108OriginalIdsKeysCorrectTextsAnchorsRelativeOrderPreserved": true,
+      "threeStemsClarifiedOnSameTopics": [
+        "calcium-phosphorus-003",
+        "calcium-phosphorus-023",
+        "calcium-phosphorus-102"
+      ],
+      "other105StemsUnchanged": true,
+      "other96WholeQuestionObjectsUnchanged": true,
+      "nineRetainedWholeBodiesReconciled": true,
+      "twoWholeBodiesAdded": true,
+      "allOriginalMetadataChecksFiguresUnchanged": true,
+      "sevenPrimarySourceReferencesAdded": true,
+      "oneDerivedCumulativeRationaleUpdated": [
+        "cumulative-calcium-phosphorus-homeostasis-calcium-phosphorus-001"
+      ],
+      "other1179WholeCumulativeObjectsUnchanged": true,
+      "all1180CumulativeIdsStemsChoicesKeysAnchorsPreserved": true,
+      "allOtherModuleWholeObjectsUnchanged": true,
+      "wholeParentModuleVerified": false
+    },
+    "browser": {
+      "status": "passed",
+      "results": [
+        {
+          "width": 1440,
+          "module": "calcium-phosphorus-homeostasis",
+          "bodies": 35,
+          "exactMetadata": true,
+          "checkResults": [],
+          "references": 28,
+          "wholeLessonClinicalVerification": false,
+          "bookSupportedQuestionScopeVerified": true,
+          "attempts": [
+            {
+              "target": "calcium-phosphorus-001",
+              "seed": 31,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-062",
+                "calcium-phosphorus-001",
+                "calcium-phosphorus-021",
+                "calcium-phosphorus-002",
+                "calcium-phosphorus-095",
+                "calcium-phosphorus-072",
+                "calcium-phosphorus-027",
+                "calcium-phosphorus-039",
+                "calcium-phosphorus-015",
+                "calcium-phosphorus-037"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-001",
+              "seed": 31,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-062",
+                "calcium-phosphorus-001",
+                "calcium-phosphorus-021",
+                "calcium-phosphorus-002",
+                "calcium-phosphorus-095",
+                "calcium-phosphorus-072",
+                "calcium-phosphorus-027",
+                "calcium-phosphorus-039",
+                "calcium-phosphorus-015",
+                "calcium-phosphorus-037"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-003",
+              "seed": 2,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-038",
+                "calcium-phosphorus-098",
+                "calcium-phosphorus-073",
+                "calcium-phosphorus-003",
+                "calcium-phosphorus-087",
+                "calcium-phosphorus-093",
+                "calcium-phosphorus-108",
+                "calcium-phosphorus-097",
+                "calcium-phosphorus-103",
+                "calcium-phosphorus-071"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-003",
+              "seed": 2,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-038",
+                "calcium-phosphorus-098",
+                "calcium-phosphorus-073",
+                "calcium-phosphorus-003",
+                "calcium-phosphorus-087",
+                "calcium-phosphorus-093",
+                "calcium-phosphorus-108",
+                "calcium-phosphorus-097",
+                "calcium-phosphorus-103",
+                "calcium-phosphorus-071"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-006",
+              "seed": 6,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-090",
+                "calcium-phosphorus-074",
+                "calcium-phosphorus-006",
+                "calcium-phosphorus-malignancy-renal-regimen",
+                "calcium-phosphorus-061",
+                "calcium-phosphorus-031",
+                "calcium-phosphorus-021",
+                "calcium-phosphorus-101",
+                "calcium-phosphorus-064",
+                "calcium-phosphorus-020"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-006",
+              "seed": 6,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-090",
+                "calcium-phosphorus-074",
+                "calcium-phosphorus-006",
+                "calcium-phosphorus-malignancy-renal-regimen",
+                "calcium-phosphorus-061",
+                "calcium-phosphorus-031",
+                "calcium-phosphorus-021",
+                "calcium-phosphorus-101",
+                "calcium-phosphorus-064",
+                "calcium-phosphorus-020"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-008",
+              "seed": 4,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-070",
+                "calcium-phosphorus-010",
+                "calcium-phosphorus-017",
+                "calcium-phosphorus-027",
+                "calcium-phosphorus-042",
+                "calcium-phosphorus-008",
+                "calcium-phosphorus-096",
+                "calcium-phosphorus-005",
+                "calcium-phosphorus-016",
+                "calcium-phosphorus-079"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-008",
+              "seed": 4,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-070",
+                "calcium-phosphorus-010",
+                "calcium-phosphorus-017",
+                "calcium-phosphorus-027",
+                "calcium-phosphorus-042",
+                "calcium-phosphorus-008",
+                "calcium-phosphorus-096",
+                "calcium-phosphorus-005",
+                "calcium-phosphorus-016",
+                "calcium-phosphorus-079"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-011",
+              "seed": 13,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-017",
+                "calcium-phosphorus-049",
+                "calcium-phosphorus-094",
+                "calcium-phosphorus-014",
+                "calcium-phosphorus-071",
+                "calcium-phosphorus-075",
+                "calcium-phosphorus-malignancy-renal-regimen",
+                "calcium-phosphorus-038",
+                "calcium-phosphorus-023",
+                "calcium-phosphorus-011"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-011",
+              "seed": 13,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-017",
+                "calcium-phosphorus-049",
+                "calcium-phosphorus-094",
+                "calcium-phosphorus-014",
+                "calcium-phosphorus-071",
+                "calcium-phosphorus-075",
+                "calcium-phosphorus-malignancy-renal-regimen",
+                "calcium-phosphorus-038",
+                "calcium-phosphorus-023",
+                "calcium-phosphorus-011"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-012",
+              "seed": 1,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-012",
+                "calcium-phosphorus-024",
+                "calcium-phosphorus-iron-persistent-warning",
+                "calcium-phosphorus-019",
+                "calcium-phosphorus-085",
+                "calcium-phosphorus-004",
+                "calcium-phosphorus-102",
+                "calcium-phosphorus-097",
+                "calcium-phosphorus-048",
+                "calcium-phosphorus-090"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-012",
+              "seed": 1,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-012",
+                "calcium-phosphorus-024",
+                "calcium-phosphorus-iron-persistent-warning",
+                "calcium-phosphorus-019",
+                "calcium-phosphorus-085",
+                "calcium-phosphorus-004",
+                "calcium-phosphorus-102",
+                "calcium-phosphorus-097",
+                "calcium-phosphorus-048",
+                "calcium-phosphorus-090"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-017",
+              "seed": 4,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-070",
+                "calcium-phosphorus-010",
+                "calcium-phosphorus-017",
+                "calcium-phosphorus-027",
+                "calcium-phosphorus-042",
+                "calcium-phosphorus-008",
+                "calcium-phosphorus-096",
+                "calcium-phosphorus-005",
+                "calcium-phosphorus-016",
+                "calcium-phosphorus-079"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-017",
+              "seed": 4,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-070",
+                "calcium-phosphorus-010",
+                "calcium-phosphorus-017",
+                "calcium-phosphorus-027",
+                "calcium-phosphorus-042",
+                "calcium-phosphorus-008",
+                "calcium-phosphorus-096",
+                "calcium-phosphorus-005",
+                "calcium-phosphorus-016",
+                "calcium-phosphorus-079"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-023",
+              "seed": 13,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-017",
+                "calcium-phosphorus-049",
+                "calcium-phosphorus-094",
+                "calcium-phosphorus-014",
+                "calcium-phosphorus-071",
+                "calcium-phosphorus-075",
+                "calcium-phosphorus-malignancy-renal-regimen",
+                "calcium-phosphorus-038",
+                "calcium-phosphorus-023",
+                "calcium-phosphorus-011"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-023",
+              "seed": 13,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-017",
+                "calcium-phosphorus-049",
+                "calcium-phosphorus-094",
+                "calcium-phosphorus-014",
+                "calcium-phosphorus-071",
+                "calcium-phosphorus-075",
+                "calcium-phosphorus-malignancy-renal-regimen",
+                "calcium-phosphorus-038",
+                "calcium-phosphorus-023",
+                "calcium-phosphorus-011"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-035",
+              "seed": 3,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-102",
+                "calcium-phosphorus-035",
+                "calcium-phosphorus-032",
+                "calcium-phosphorus-061",
+                "calcium-phosphorus-044",
+                "calcium-phosphorus-103",
+                "calcium-phosphorus-037",
+                "calcium-phosphorus-089",
+                "calcium-phosphorus-106",
+                "calcium-phosphorus-024"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-035",
+              "seed": 3,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-102",
+                "calcium-phosphorus-035",
+                "calcium-phosphorus-032",
+                "calcium-phosphorus-061",
+                "calcium-phosphorus-044",
+                "calcium-phosphorus-103",
+                "calcium-phosphorus-037",
+                "calcium-phosphorus-089",
+                "calcium-phosphorus-106",
+                "calcium-phosphorus-024"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-092",
+              "seed": 19,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-085",
+                "calcium-phosphorus-020",
+                "calcium-phosphorus-iron-persistent-warning",
+                "calcium-phosphorus-003",
+                "calcium-phosphorus-neonatal-ceftriaxone-compatibility",
+                "calcium-phosphorus-028",
+                "calcium-phosphorus-092",
+                "calcium-phosphorus-024",
+                "calcium-phosphorus-008",
+                "calcium-phosphorus-050"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-092",
+              "seed": 19,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-085",
+                "calcium-phosphorus-020",
+                "calcium-phosphorus-iron-persistent-warning",
+                "calcium-phosphorus-003",
+                "calcium-phosphorus-neonatal-ceftriaxone-compatibility",
+                "calcium-phosphorus-028",
+                "calcium-phosphorus-092",
+                "calcium-phosphorus-024",
+                "calcium-phosphorus-008",
+                "calcium-phosphorus-050"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-095",
+              "seed": 20,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-047",
+                "calcium-phosphorus-039",
+                "calcium-phosphorus-095",
+                "calcium-phosphorus-012",
+                "calcium-phosphorus-045",
+                "calcium-phosphorus-024",
+                "calcium-phosphorus-018",
+                "calcium-phosphorus-023",
+                "calcium-phosphorus-061",
+                "calcium-phosphorus-105"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-095",
+              "seed": 20,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-047",
+                "calcium-phosphorus-039",
+                "calcium-phosphorus-095",
+                "calcium-phosphorus-012",
+                "calcium-phosphorus-045",
+                "calcium-phosphorus-024",
+                "calcium-phosphorus-018",
+                "calcium-phosphorus-023",
+                "calcium-phosphorus-061",
+                "calcium-phosphorus-105"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-102",
+              "seed": 1,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-012",
+                "calcium-phosphorus-024",
+                "calcium-phosphorus-iron-persistent-warning",
+                "calcium-phosphorus-019",
+                "calcium-phosphorus-085",
+                "calcium-phosphorus-004",
+                "calcium-phosphorus-102",
+                "calcium-phosphorus-097",
+                "calcium-phosphorus-048",
+                "calcium-phosphorus-090"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-102",
+              "seed": 1,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-012",
+                "calcium-phosphorus-024",
+                "calcium-phosphorus-iron-persistent-warning",
+                "calcium-phosphorus-019",
+                "calcium-phosphorus-085",
+                "calcium-phosphorus-004",
+                "calcium-phosphorus-102",
+                "calcium-phosphorus-097",
+                "calcium-phosphorus-048",
+                "calcium-phosphorus-090"
+              ]
+            }
+          ],
+          "noHorizontalOverflow": true,
+          "unauthenticated": true
+        },
+        {
+          "width": 390,
+          "module": "calcium-phosphorus-homeostasis",
+          "bodies": 35,
+          "exactMetadata": true,
+          "checkResults": [],
+          "references": 28,
+          "wholeLessonClinicalVerification": false,
+          "bookSupportedQuestionScopeVerified": true,
+          "attempts": [
+            {
+              "target": "calcium-phosphorus-001",
+              "seed": 31,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-062",
+                "calcium-phosphorus-001",
+                "calcium-phosphorus-021",
+                "calcium-phosphorus-002",
+                "calcium-phosphorus-095",
+                "calcium-phosphorus-072",
+                "calcium-phosphorus-027",
+                "calcium-phosphorus-039",
+                "calcium-phosphorus-015",
+                "calcium-phosphorus-037"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-001",
+              "seed": 31,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-062",
+                "calcium-phosphorus-001",
+                "calcium-phosphorus-021",
+                "calcium-phosphorus-002",
+                "calcium-phosphorus-095",
+                "calcium-phosphorus-072",
+                "calcium-phosphorus-027",
+                "calcium-phosphorus-039",
+                "calcium-phosphorus-015",
+                "calcium-phosphorus-037"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-003",
+              "seed": 2,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-038",
+                "calcium-phosphorus-098",
+                "calcium-phosphorus-073",
+                "calcium-phosphorus-003",
+                "calcium-phosphorus-087",
+                "calcium-phosphorus-093",
+                "calcium-phosphorus-108",
+                "calcium-phosphorus-097",
+                "calcium-phosphorus-103",
+                "calcium-phosphorus-071"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-003",
+              "seed": 2,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-038",
+                "calcium-phosphorus-098",
+                "calcium-phosphorus-073",
+                "calcium-phosphorus-003",
+                "calcium-phosphorus-087",
+                "calcium-phosphorus-093",
+                "calcium-phosphorus-108",
+                "calcium-phosphorus-097",
+                "calcium-phosphorus-103",
+                "calcium-phosphorus-071"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-006",
+              "seed": 6,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-090",
+                "calcium-phosphorus-074",
+                "calcium-phosphorus-006",
+                "calcium-phosphorus-malignancy-renal-regimen",
+                "calcium-phosphorus-061",
+                "calcium-phosphorus-031",
+                "calcium-phosphorus-021",
+                "calcium-phosphorus-101",
+                "calcium-phosphorus-064",
+                "calcium-phosphorus-020"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-006",
+              "seed": 6,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-090",
+                "calcium-phosphorus-074",
+                "calcium-phosphorus-006",
+                "calcium-phosphorus-malignancy-renal-regimen",
+                "calcium-phosphorus-061",
+                "calcium-phosphorus-031",
+                "calcium-phosphorus-021",
+                "calcium-phosphorus-101",
+                "calcium-phosphorus-064",
+                "calcium-phosphorus-020"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-008",
+              "seed": 4,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-070",
+                "calcium-phosphorus-010",
+                "calcium-phosphorus-017",
+                "calcium-phosphorus-027",
+                "calcium-phosphorus-042",
+                "calcium-phosphorus-008",
+                "calcium-phosphorus-096",
+                "calcium-phosphorus-005",
+                "calcium-phosphorus-016",
+                "calcium-phosphorus-079"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-008",
+              "seed": 4,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-070",
+                "calcium-phosphorus-010",
+                "calcium-phosphorus-017",
+                "calcium-phosphorus-027",
+                "calcium-phosphorus-042",
+                "calcium-phosphorus-008",
+                "calcium-phosphorus-096",
+                "calcium-phosphorus-005",
+                "calcium-phosphorus-016",
+                "calcium-phosphorus-079"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-011",
+              "seed": 13,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-017",
+                "calcium-phosphorus-049",
+                "calcium-phosphorus-094",
+                "calcium-phosphorus-014",
+                "calcium-phosphorus-071",
+                "calcium-phosphorus-075",
+                "calcium-phosphorus-malignancy-renal-regimen",
+                "calcium-phosphorus-038",
+                "calcium-phosphorus-023",
+                "calcium-phosphorus-011"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-011",
+              "seed": 13,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-017",
+                "calcium-phosphorus-049",
+                "calcium-phosphorus-094",
+                "calcium-phosphorus-014",
+                "calcium-phosphorus-071",
+                "calcium-phosphorus-075",
+                "calcium-phosphorus-malignancy-renal-regimen",
+                "calcium-phosphorus-038",
+                "calcium-phosphorus-023",
+                "calcium-phosphorus-011"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-012",
+              "seed": 1,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-012",
+                "calcium-phosphorus-024",
+                "calcium-phosphorus-iron-persistent-warning",
+                "calcium-phosphorus-019",
+                "calcium-phosphorus-085",
+                "calcium-phosphorus-004",
+                "calcium-phosphorus-102",
+                "calcium-phosphorus-097",
+                "calcium-phosphorus-048",
+                "calcium-phosphorus-090"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-012",
+              "seed": 1,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-012",
+                "calcium-phosphorus-024",
+                "calcium-phosphorus-iron-persistent-warning",
+                "calcium-phosphorus-019",
+                "calcium-phosphorus-085",
+                "calcium-phosphorus-004",
+                "calcium-phosphorus-102",
+                "calcium-phosphorus-097",
+                "calcium-phosphorus-048",
+                "calcium-phosphorus-090"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-017",
+              "seed": 4,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-070",
+                "calcium-phosphorus-010",
+                "calcium-phosphorus-017",
+                "calcium-phosphorus-027",
+                "calcium-phosphorus-042",
+                "calcium-phosphorus-008",
+                "calcium-phosphorus-096",
+                "calcium-phosphorus-005",
+                "calcium-phosphorus-016",
+                "calcium-phosphorus-079"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-017",
+              "seed": 4,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-070",
+                "calcium-phosphorus-010",
+                "calcium-phosphorus-017",
+                "calcium-phosphorus-027",
+                "calcium-phosphorus-042",
+                "calcium-phosphorus-008",
+                "calcium-phosphorus-096",
+                "calcium-phosphorus-005",
+                "calcium-phosphorus-016",
+                "calcium-phosphorus-079"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-023",
+              "seed": 13,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-017",
+                "calcium-phosphorus-049",
+                "calcium-phosphorus-094",
+                "calcium-phosphorus-014",
+                "calcium-phosphorus-071",
+                "calcium-phosphorus-075",
+                "calcium-phosphorus-malignancy-renal-regimen",
+                "calcium-phosphorus-038",
+                "calcium-phosphorus-023",
+                "calcium-phosphorus-011"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-023",
+              "seed": 13,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-017",
+                "calcium-phosphorus-049",
+                "calcium-phosphorus-094",
+                "calcium-phosphorus-014",
+                "calcium-phosphorus-071",
+                "calcium-phosphorus-075",
+                "calcium-phosphorus-malignancy-renal-regimen",
+                "calcium-phosphorus-038",
+                "calcium-phosphorus-023",
+                "calcium-phosphorus-011"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-035",
+              "seed": 3,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-102",
+                "calcium-phosphorus-035",
+                "calcium-phosphorus-032",
+                "calcium-phosphorus-061",
+                "calcium-phosphorus-044",
+                "calcium-phosphorus-103",
+                "calcium-phosphorus-037",
+                "calcium-phosphorus-089",
+                "calcium-phosphorus-106",
+                "calcium-phosphorus-024"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-035",
+              "seed": 3,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-102",
+                "calcium-phosphorus-035",
+                "calcium-phosphorus-032",
+                "calcium-phosphorus-061",
+                "calcium-phosphorus-044",
+                "calcium-phosphorus-103",
+                "calcium-phosphorus-037",
+                "calcium-phosphorus-089",
+                "calcium-phosphorus-106",
+                "calcium-phosphorus-024"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-092",
+              "seed": 19,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-085",
+                "calcium-phosphorus-020",
+                "calcium-phosphorus-iron-persistent-warning",
+                "calcium-phosphorus-003",
+                "calcium-phosphorus-neonatal-ceftriaxone-compatibility",
+                "calcium-phosphorus-028",
+                "calcium-phosphorus-092",
+                "calcium-phosphorus-024",
+                "calcium-phosphorus-008",
+                "calcium-phosphorus-050"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-092",
+              "seed": 19,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-085",
+                "calcium-phosphorus-020",
+                "calcium-phosphorus-iron-persistent-warning",
+                "calcium-phosphorus-003",
+                "calcium-phosphorus-neonatal-ceftriaxone-compatibility",
+                "calcium-phosphorus-028",
+                "calcium-phosphorus-092",
+                "calcium-phosphorus-024",
+                "calcium-phosphorus-008",
+                "calcium-phosphorus-050"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-095",
+              "seed": 20,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-047",
+                "calcium-phosphorus-039",
+                "calcium-phosphorus-095",
+                "calcium-phosphorus-012",
+                "calcium-phosphorus-045",
+                "calcium-phosphorus-024",
+                "calcium-phosphorus-018",
+                "calcium-phosphorus-023",
+                "calcium-phosphorus-061",
+                "calcium-phosphorus-105"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-095",
+              "seed": 20,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-047",
+                "calcium-phosphorus-039",
+                "calcium-phosphorus-095",
+                "calcium-phosphorus-012",
+                "calcium-phosphorus-045",
+                "calcium-phosphorus-024",
+                "calcium-phosphorus-018",
+                "calcium-phosphorus-023",
+                "calcium-phosphorus-061",
+                "calcium-phosphorus-105"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-102",
+              "seed": 1,
+              "grade": "9/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-012",
+                "calcium-phosphorus-024",
+                "calcium-phosphorus-iron-persistent-warning",
+                "calcium-phosphorus-019",
+                "calcium-phosphorus-085",
+                "calcium-phosphorus-004",
+                "calcium-phosphorus-102",
+                "calcium-phosphorus-097",
+                "calcium-phosphorus-048",
+                "calcium-phosphorus-090"
+              ]
+            },
+            {
+              "target": "calcium-phosphorus-102",
+              "seed": 1,
+              "grade": "10/10",
+              "feedbackAndAnchorVerified": true,
+              "ids": [
+                "calcium-phosphorus-012",
+                "calcium-phosphorus-024",
+                "calcium-phosphorus-iron-persistent-warning",
+                "calcium-phosphorus-019",
+                "calcium-phosphorus-085",
+                "calcium-phosphorus-004",
+                "calcium-phosphorus-102",
+                "calcium-phosphorus-097",
+                "calcium-phosphorus-048",
+                "calcium-phosphorus-090"
+              ]
+            }
+          ],
+          "noHorizontalOverflow": true,
+          "unauthenticated": true
+        },
+        {
+          "width": 1440,
+          "route": "cumulative",
+          "attempts": [
+            {
+              "id": "cumulative-calcium-phosphorus-homeostasis-calcium-phosphorus-001",
+              "wrong": true,
+              "seed": 4,
+              "feedbackAndModuleLinkVerified": true
+            },
+            {
+              "id": "cumulative-calcium-phosphorus-homeostasis-calcium-phosphorus-001",
+              "wrong": false,
+              "seed": 4,
+              "feedbackAndModuleLinkVerified": true
+            }
+          ]
+        },
+        {
+          "width": 390,
+          "route": "cumulative",
+          "attempts": [
+            {
+              "id": "cumulative-calcium-phosphorus-homeostasis-calcium-phosphorus-001",
+              "wrong": true,
+              "seed": 4,
+              "feedbackAndModuleLinkVerified": true
+            },
+            {
+              "id": "cumulative-calcium-phosphorus-homeostasis-calcium-phosphorus-001",
+              "wrong": false,
+              "seed": 4,
+              "feedbackAndModuleLinkVerified": true
+            }
+          ]
+        }
+      ],
+      "errors": [],
+      "captures": [
+        "body-module-Track-calcium-through-the-feedback-loop-1440.png",
+        "body-module-Separate-vitamin-D-production-from-effect-1440.png",
+        "body-module-Use-FGF23-to-explain-phosphate-control-1440.png",
+        "body-module-Know-what-the-laboratory-measured-1440.png",
+        "body-module-Use-correction-formulas-cautiously-1440.png",
+        "body-module-Interpret-low-urinary-calcium-as-a-clue-1440.png",
+        "body-module-Work-the-estimate,-then-check-its-limits-1440.png",
+        "body-module-Correct-the-mechanism-1440.png",
+        "body-module-Protect-the-kidney-during-chronic-therapy-1440.png",
+        "body-module-Restore-volume-thoughtfully-1440.png",
+        "body-module-Recognize-acute-phosphate-toxicity-1440.png",
+        "references-module-1440.png",
+        "question-calcium-phosphorus-001-correct-1440.png",
+        "question-calcium-phosphorus-003-correct-1440.png",
+        "question-calcium-phosphorus-006-correct-1440.png",
+        "question-calcium-phosphorus-008-correct-1440.png",
+        "question-calcium-phosphorus-011-correct-1440.png",
+        "question-calcium-phosphorus-012-correct-1440.png",
+        "question-calcium-phosphorus-017-correct-1440.png",
+        "question-calcium-phosphorus-023-correct-1440.png",
+        "question-calcium-phosphorus-035-correct-1440.png",
+        "question-calcium-phosphorus-092-correct-1440.png",
+        "question-calcium-phosphorus-095-correct-1440.png",
+        "question-calcium-phosphorus-102-correct-1440.png",
+        "body-module-Track-calcium-through-the-feedback-loop-390.png",
+        "body-module-Separate-vitamin-D-production-from-effect-390.png",
+        "body-module-Use-FGF23-to-explain-phosphate-control-390.png",
+        "body-module-Know-what-the-laboratory-measured-390.png",
+        "body-module-Use-correction-formulas-cautiously-390.png",
+        "body-module-Interpret-low-urinary-calcium-as-a-clue-390.png",
+        "body-module-Work-the-estimate,-then-check-its-limits-390.png",
+        "body-module-Correct-the-mechanism-390.png",
+        "body-module-Protect-the-kidney-during-chronic-therapy-390.png",
+        "body-module-Restore-volume-thoughtfully-390.png",
+        "body-module-Recognize-acute-phosphate-toxicity-390.png",
+        "references-module-390.png",
+        "question-calcium-phosphorus-001-incorrect-390.png",
+        "question-calcium-phosphorus-003-incorrect-390.png",
+        "question-calcium-phosphorus-006-incorrect-390.png",
+        "question-calcium-phosphorus-008-incorrect-390.png",
+        "question-calcium-phosphorus-011-incorrect-390.png",
+        "question-calcium-phosphorus-012-incorrect-390.png",
+        "question-calcium-phosphorus-017-incorrect-390.png",
+        "question-calcium-phosphorus-023-incorrect-390.png",
+        "question-calcium-phosphorus-035-incorrect-390.png",
+        "question-calcium-phosphorus-092-incorrect-390.png",
+        "question-calcium-phosphorus-095-incorrect-390.png",
+        "question-calcium-phosphorus-102-incorrect-390.png",
+        "cumulative-001-incorrect-1440.png",
+        "cumulative-001-correct-1440.png",
+        "cumulative-001-incorrect-390.png",
+        "cumulative-001-correct-390.png"
+      ]
+    },
+    "visualInspection": {
+      "status": "passed",
+      "rawCapturesActuallyInspected": 54,
+      "nativePairsActuallyInspected": 26,
+      "pairs": [
+        {
+          "pair": "pair-body-module-Correct-the-mechanism.png",
+          "originals": [
+            "body-module-Correct-the-mechanism-1440.png",
+            "body-module-Correct-the-mechanism-390.png"
+          ]
+        },
+        {
+          "pair": "pair-body-module-Interpret-low-urinary-calcium-as-a-clue.png",
+          "originals": [
+            "body-module-Interpret-low-urinary-calcium-as-a-clue-1440.png",
+            "body-module-Interpret-low-urinary-calcium-as-a-clue-390.png"
+          ]
+        },
+        {
+          "pair": "pair-body-module-Know-what-the-laboratory-measured.png",
+          "originals": [
+            "body-module-Know-what-the-laboratory-measured-1440.png",
+            "body-module-Know-what-the-laboratory-measured-390.png"
+          ]
+        },
+        {
+          "pair": "pair-body-module-Protect-the-kidney-during-chronic-therapy.png",
+          "originals": [
+            "body-module-Protect-the-kidney-during-chronic-therapy-1440.png",
+            "body-module-Protect-the-kidney-during-chronic-therapy-390.png"
+          ]
+        },
+        {
+          "pair": "pair-body-module-Recognize-acute-phosphate-toxicity.png",
+          "originals": [
+            "body-module-Recognize-acute-phosphate-toxicity-1440.png",
+            "body-module-Recognize-acute-phosphate-toxicity-390.png"
+          ]
+        },
+        {
+          "pair": "pair-body-module-Restore-volume-thoughtfully.png",
+          "originals": [
+            "body-module-Restore-volume-thoughtfully-1440.png",
+            "body-module-Restore-volume-thoughtfully-390.png"
+          ]
+        },
+        {
+          "pair": "pair-body-module-Separate-vitamin-D-production-from-effect.png",
+          "originals": [
+            "body-module-Separate-vitamin-D-production-from-effect-1440.png",
+            "body-module-Separate-vitamin-D-production-from-effect-390.png"
+          ]
+        },
+        {
+          "pair": "pair-body-module-Track-calcium-through-the-feedback-loop.png",
+          "originals": [
+            "body-module-Track-calcium-through-the-feedback-loop-1440.png",
+            "body-module-Track-calcium-through-the-feedback-loop-390.png"
+          ]
+        },
+        {
+          "pair": "pair-body-module-Use-FGF23-to-explain-phosphate-control.png",
+          "originals": [
+            "body-module-Use-FGF23-to-explain-phosphate-control-1440.png",
+            "body-module-Use-FGF23-to-explain-phosphate-control-390.png"
+          ]
+        },
+        {
+          "pair": "pair-body-module-Use-correction-formulas-cautiously.png",
+          "originals": [
+            "body-module-Use-correction-formulas-cautiously-1440.png",
+            "body-module-Use-correction-formulas-cautiously-390.png"
+          ]
+        },
+        {
+          "pair": "pair-body-module-Work-the-estimate,-then-check-its-limits.png",
+          "originals": [
+            "body-module-Work-the-estimate,-then-check-its-limits-1440.png",
+            "body-module-Work-the-estimate,-then-check-its-limits-390.png"
+          ]
+        },
+        {
+          "pair": "pair-cumulative-001-correct.png",
+          "originals": [
+            "cumulative-001-correct-1440.png",
+            "cumulative-001-correct-390.png"
+          ]
+        },
+        {
+          "pair": "pair-cumulative-001-incorrect.png",
+          "originals": [
+            "cumulative-001-incorrect-1440.png",
+            "cumulative-001-incorrect-390.png"
+          ]
+        },
+        {
+          "pair": "pair-question-calcium-phosphorus-001-correct.png",
+          "originals": [
+            "question-calcium-phosphorus-001-correct-1440.png",
+            "question-calcium-phosphorus-001-incorrect-390.png"
+          ]
+        },
+        {
+          "pair": "pair-question-calcium-phosphorus-003-correct.png",
+          "originals": [
+            "question-calcium-phosphorus-003-correct-1440.png",
+            "question-calcium-phosphorus-003-incorrect-390.png"
+          ]
+        },
+        {
+          "pair": "pair-question-calcium-phosphorus-006-correct.png",
+          "originals": [
+            "question-calcium-phosphorus-006-correct-1440.png",
+            "question-calcium-phosphorus-006-incorrect-390.png"
+          ]
+        },
+        {
+          "pair": "pair-question-calcium-phosphorus-008-correct.png",
+          "originals": [
+            "question-calcium-phosphorus-008-correct-1440.png",
+            "question-calcium-phosphorus-008-incorrect-390.png"
+          ]
+        },
+        {
+          "pair": "pair-question-calcium-phosphorus-011-correct.png",
+          "originals": [
+            "question-calcium-phosphorus-011-correct-1440.png",
+            "question-calcium-phosphorus-011-incorrect-390.png"
+          ]
+        },
+        {
+          "pair": "pair-question-calcium-phosphorus-012-correct.png",
+          "originals": [
+            "question-calcium-phosphorus-012-correct-1440.png",
+            "question-calcium-phosphorus-012-incorrect-390.png"
+          ]
+        },
+        {
+          "pair": "pair-question-calcium-phosphorus-017-correct.png",
+          "originals": [
+            "question-calcium-phosphorus-017-correct-1440.png",
+            "question-calcium-phosphorus-017-incorrect-390.png"
+          ]
+        },
+        {
+          "pair": "pair-question-calcium-phosphorus-023-correct.png",
+          "originals": [
+            "question-calcium-phosphorus-023-correct-1440.png",
+            "question-calcium-phosphorus-023-incorrect-390.png"
+          ]
+        },
+        {
+          "pair": "pair-question-calcium-phosphorus-035-correct.png",
+          "originals": [
+            "question-calcium-phosphorus-035-correct-1440.png",
+            "question-calcium-phosphorus-035-incorrect-390.png"
+          ]
+        },
+        {
+          "pair": "pair-question-calcium-phosphorus-092-correct.png",
+          "originals": [
+            "question-calcium-phosphorus-092-correct-1440.png",
+            "question-calcium-phosphorus-092-incorrect-390.png"
+          ]
+        },
+        {
+          "pair": "pair-question-calcium-phosphorus-095-correct.png",
+          "originals": [
+            "question-calcium-phosphorus-095-correct-1440.png",
+            "question-calcium-phosphorus-095-incorrect-390.png"
+          ]
+        },
+        {
+          "pair": "pair-question-calcium-phosphorus-102-correct.png",
+          "originals": [
+            "question-calcium-phosphorus-102-correct-1440.png",
+            "question-calcium-phosphorus-102-incorrect-390.png"
+          ]
+        },
+        {
+          "pair": "pair-references-module.png",
+          "originals": [
+            "references-module-1440.png",
+            "references-module-390.png"
+          ]
+        }
+      ],
+      "additionalViewportCapturesActuallyInspected": [
+        "reference-header-1440.png",
+        "reference-header-390.png"
+      ],
+      "findings": "All 11 whole teaching sections and 12 complete question/feedback cards readable on desktop/mobile. Both feedback states of cumulative001 inspected on both widths. All28 exact reference hrefs verified; actual reference heading/introduction also inspected in viewport supplements. No document horizontal overflow at320px."
+    },
+    "numericChecks": {
+      "status": "passed",
+      "scenario": "Total calcium 7.4 mg/dL;albumin1.8g/dL;pH7.18",
+      "decimalAlbuminEstimateMgDl": "9.16",
+      "independentFractionRecalculationMatched": true,
+      "formulaSource": "RxPrep supplied book plus Endotext Hypocalcemia2026 PDF5",
+      "clinicalLimit": "Does not establish ionized calcium or correct pH",
+      "distinctNewQuestionCalculationsCounted": 0,
+      "originalWorkedTeachingExamplesVerified": 1
+    },
+    "limits": "Unauthenticated isolated preview. Unchanged metadata DOM equality is technical evidence only; no new whole metadata/check/figure/lesson/parent/chapter closure or production publication."
+  },
+  "remainingReview": {
+    "questionIds": [],
+    "originalWholeBodyHeadings": [],
+    "remainingScope": [
+      "Remaining module/lesson metadata",
+      "Mineral-regulation and calcium-measurement embedded checks",
+      "Mineral-regulation and calcium-fractions figures",
+      "Final complete parent and cumulative reconciliation"
+    ],
+    "nextAction": "Finish calcium parent reconciliation: verify remaining module/lesson metadata, the mineral-regulation and calcium-measurement embedded checks and complete figures, and reconcile every current question/body/check/figure/cumulative object against the existing source-verified evidence. Reuse retained private current-source assets only with matching hashes; do not count a full parent from question coverage alone. Then complete enteral reintegration and Chapter11 feeding dependencies before closing Chapter1 printed7/PDF19 entry15. Next Chapter11 source page remains PDF169/printed161. Full82-chapter goal remains active."
+  },
+  "release": {
+    "branch": "audit/rxprep-content-2026-09-24",
+    "commit": null,
+    "push": "pending",
+    "receipt": "enteral-nutrition-broader-calcium-physiology-release.json",
+    "mainMerge": "not performed",
+    "production": "not verified"
+  },
+  "wholeGoalComplete": false
+}

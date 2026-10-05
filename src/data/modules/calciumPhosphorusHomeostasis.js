@@ -237,3 +237,71 @@ calciumPhosphorusHomeostasisModule.references.push({
   "label": "NKF KDOQI aluminum overload and toxicity in CKD (2003; historical toxicity guidance)",
   "href": "https://kidneyfoundation.cachefly.net/professionals/KDOQI/guidelines_bone/guide11.htm"
 });
+
+const sourceReviewedRemainingCalciumBodies = {
+  "mineral-regulation": {
+    "Track calcium through the feedback loop": "A fall in extracellular ionized calcium stimulates parathyroid hormone secretion. PTH promotes renal calcium conservation and phosphate excretion, stimulates renal calcitriol formation, and increases coupled bone turnover. Sustained excess PTH favors mineral release from bone; intermittent therapeutic PTH can have a different skeletal effect. The calcium-sensing receptor responds to extracellular free calcium in the parathyroid gland and kidney. Interpret the feedback signal using ionized calcium rather than treating all calcium fractions as equivalent.",
+    "Separate vitamin D production from effect": "Vitamin D from skin and dietary sources is first hydroxylated in the liver to 25-hydroxyvitamin D, the major circulating marker used to assess vitamin D status. The kidney is the main source of circulating active 1,25-dihydroxyvitamin D, or calcitriol; some other tissues can also produce it. Calcitriol increases intestinal absorption of calcium and phosphate. Reduced kidney function, low vitamin D availability, and impaired PTH signaling can disrupt this system. Marked magnesium deficiency can impair both PTH secretion and tissue response, so assess magnesium when the calcium response does not fit the expected mechanism.",
+    "Use FGF23 to explain phosphate control": "Bone cells, including osteocytes, release FGF23 in response to phosphate and calcitriol signals. FGF23 reduces proximal tubular phosphate reabsorption and lowers calcitriol through reduced synthesis and increased degradation. As kidney function declines, PTH and FGF23 can initially increase phosphate excretion per remaining nephron and help keep serum phosphate from rising. These compensatory mechanisms can become insufficient with further loss of function. Elevated FGF23, reduced calcitriol, and secondary PTH elevation therefore need to be interpreted together; an isolated hormone value does not establish a phosphate-binder indication."
+  },
+  "calcium-measurement": {
+    "Know what the laboratory measured": "Roughly half of circulating calcium is ionized and biologically active; the remainder is protein bound or complexed with other anions. The proportions are approximate and change with the binding environment. Low albumin can lower total calcium even when ionized calcium is normal. Alkalemia increases protein binding and can lower the ionized fraction, whereas acidemia can increase it. During an acid-base disturbance, check whether the laboratory reports ionized calcium at the actual pH or a value adjusted to pH 7.4; the adjusted result may not reflect the active fraction in the patient.",
+    "Use correction formulas cautiously": "A conventional estimate is corrected calcium (mg/dL) = measured total calcium (mg/dL) + 0.8 x [4 - albumin (g/dL)]. This is an estimate of total calcium adjusted for albumin, not a measurement of ionized calcium and not a correction for pH. It can be unreliable in critical illness, kidney disease, and marked hypoalbuminemia. In a study of adults with CKD stages 3 to 5, albumin correction did not improve prediction of abnormal ionized calcium over uncorrected total calcium. Obtain direct ionized calcium when binding or pH makes the result clinically uncertain; follow the laboratory collection and handling instructions."
+  },
+  "hypocalcemia": {
+    "Correct the mechanism": "For stable or mild hypocalcemia, oral calcium and vitamin D treatment depend on the cause and clinical plan. Vitamin D deficiency requires repletion; chronic hypoparathyroidism often requires activated vitamin D because absent PTH reduces renal calcitriol formation. Marked magnesium deficiency can impair PTH secretion and tissue response and must be corrected. Address magnesium alongside calcium when urgent calcium treatment is indicated; do not delay stabilization of severe symptomatic hypocalcemia while waiting for magnesium correction or the full etiologic workup.",
+    "Protect the kidney during chronic therapy": "Chronic hypoparathyroidism treatment aims for symptom relief and individualized calcium control, generally in the lower part of or slightly below the reference range. Follow calcium, phosphate, magnesium, kidney function, and symptoms; assess urinary calcium during conventional therapy because a serum result cannot predict urine calcium. For hypercalciuria, selected changes in calcium or activated vitamin D doses, lower sodium intake, or a thiazide may reduce urinary calcium, with monitoring of electrolytes, kidney function, and blood pressure. Evidence that thiazides prevent renal complications in this condition is lacking. Palopegteriparatide is a PTH replacement option for adults whose care requires it; it requires individualized titration and calcium monitoring and does not replace emergency calcium rescue."
+  },
+  "hypercalcemia": {
+    "Restore volume thoughtfully": "Isotonic saline can correct volume depletion and improve renal calcium clearance, but the volume and rate must reflect cardiac function, kidney function, and ongoing losses. Monitor for overload rather than applying one large-volume plan to every patient. Loop diuretics are not routine initial calcium-lowering treatment; emergency guidance generally reserves them for fluid overload, and selected calciuresis is considered only after rehydration with monitoring of potassium and kidney function. Dialysis may be considered with specialist assessment for selected severe refractory hypercalcemia, renal insufficiency, or circumstances where adequate hydration cannot be given safely. Published case evidence supports this rescue role but does not define a universal calcium threshold or one dialysis regimen."
+  },
+  "hyperphosphatemia-ckd-mbd": {
+    "Recognize acute phosphate toxicity": "Cell breakdown in tumor lysis or rhabdomyolysis, exogenous phosphate, kidney failure, and absent PTH-mediated phosphate excretion can raise phosphate. Marked hyperphosphatemia can lower ionized calcium and promote calcium-phosphate deposition in organs and soft tissues. Evaluate the cause, kidney function, symptoms, ECG risk, and the other metabolic abnormalities rather than treating phosphate in isolation. In tumor lysis syndrome, treat symptomatic hypocalcemia with the minimum calcium needed to relieve toxicity; asymptomatic hypocalcemia does not itself call for calcium loading, which can worsen precipitation. Severe acute kidney injury or phosphate-associated symptomatic hypocalcemia may warrant renal replacement therapy. These tumor-lysis recommendations require the acute clinical context and specialist assessment."
+  }
+};
+for (const [slug, bodies] of Object.entries(sourceReviewedRemainingCalciumBodies)) {
+  const lesson = calciumPhosphorusHomeostasisModule.submodules.find((lesson) => lesson.slug === slug);
+  for (const section of lesson.lesson) {
+    if (Object.hasOwn(bodies, section.heading)) section.body = bodies[section.heading];
+  }
+}
+calciumPhosphorusHomeostasisModule.submodules.find((lesson) => lesson.slug === "calcium-measurement").lesson.push(...[
+  {
+    "heading": "Interpret low urinary calcium as a clue",
+    "body": "Familial hypocalciuric hypercalcemia is typically lifelong and mild, with urinary calcium that is inappropriately low relative to the serum calcium. PTH may be normal or elevated, so the biochemical pattern can resemble primary hyperparathyroidism. Use the clinical and family history with the calcium, PTH, and urine findings. Urinary patterns overlap, and selected patients need further specialist or genetic evaluation. Do not establish primary hyperparathyroidism or a surgical indication from the serum calcium and PTH pair alone."
+  },
+  {
+    "heading": "Work the estimate, then check its limits",
+    "body": "For total calcium 7.4 mg/dL and albumin 1.8 g/dL, the conventional estimate is 7.4 + 0.8 x (4 - 1.8) = 9.16 mg/dL. The arithmetic estimates albumin-adjusted total calcium; it does not show that ionized calcium is normal. With pH 7.18, acidemia changes protein binding, so obtain ionized calcium at actual pH when the calcium interpretation will guide care. Assess the acid-base disorder separately and use symptoms and the full clinical picture when determining urgency."
+  }
+]);
+calciumPhosphorusHomeostasisModule.references.push(...[
+  {
+    "label": "Endotext: Approach to Hypercalcemia (March 2026)",
+    "href": "https://www.endotext.org/wp-content/uploads/pdfs/approach-to-hypercalcemia.pdf"
+  },
+  {
+    "label": "Endotext: Hypocalcemia (September 2026)",
+    "href": "https://www.endotext.org/wp-content/uploads/pdfs/hypocalcemia.pdf"
+  },
+  {
+    "label": "ESE revised guideline: chronic hypoparathyroidism in adults (2025)",
+    "href": "https://academic.oup.com/ejendo/article/193/5/G83/8321487"
+  },
+  {
+    "label": "Gauci et al.: calcium measurement in CKD (2008)",
+    "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2488254/"
+  },
+  {
+    "label": "Blaine et al.: renal calcium, phosphate, and magnesium physiology (2015)",
+    "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4491294/"
+  },
+  {
+    "label": "Basok et al.: dialysis for extreme hypercalcemia (2018 case report)",
+    "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5990060/"
+  },
+  {
+    "label": "Howard et al.: Tumor Lysis Syndrome (2011 clinical review)",
+    "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3437249/"
+  }
+]);

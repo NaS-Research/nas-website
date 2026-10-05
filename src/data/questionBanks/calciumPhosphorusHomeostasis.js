@@ -705,3 +705,104 @@ Object.assign(calciumPhosphorusHomeostasisQuestionBank.find((question) => questi
   ],
   "rationale": "Aluminum binders can lower phosphate, but reduced renal clearance allows absorbed aluminum to accumulate. The book identifies nervous-system and bone toxicity; NKF KDOQI also describes microcytic anemia without iron deficiency. KDIGO recommends avoiding long-term aluminum-containing phosphate binders. Binding phosphate does not prevent tissue accumulation, and the concern extends beyond calcium loading."
 });
+
+Object.assign(calciumPhosphorusHomeostasisQuestionBank.find((question) => question.id === "calcium-phosphorus-001"), {
+  "rationale": "The calcium-sensing receptor responds to extracellular ionized calcium. Albumin-bound and complexed calcium contribute to total calcium but are not the free calcium signal. A change in binding can therefore alter the signal without the same change in total calcium."
+});
+Object.assign(calciumPhosphorusHomeostasisQuestionBank.find((question) => question.id === "calcium-phosphorus-003"), {
+  "question": "Which vitamin D measurement best reflects vitamin D status in routine evaluation?",
+  "rationale": "25-hydroxyvitamin D is the major circulating metabolite used to assess vitamin D status and reflects contributions from skin and dietary sources. Active 1,25-dihydroxyvitamin D is regulated by PTH, kidney function, and phosphate signaling; it is not the routine marker of vitamin D sufficiency."
+});
+Object.assign(calciumPhosphorusHomeostasisQuestionBank.find((question) => question.id === "calcium-phosphorus-006"), {
+  "choices": [
+    "It can impair PTH secretion and tissue response",
+    "It increases renal phosphate excretion enough to restore calcium",
+    "It raises albumin binding without altering PTH function",
+    "It increases intestinal calcium absorption through calcitriol"
+  ],
+  "rationale": "Marked magnesium deficiency can impair both PTH secretion and its action in target tissues, causing functional hypoparathyroidism and hypocalcemia. This mechanism differs from a binding-only change or a beneficial increase in calcitriol. Assess and correct magnesium while addressing the calcium disorder."
+});
+Object.assign(calciumPhosphorusHomeostasisQuestionBank.find((question) => question.id === "calcium-phosphorus-008"), {
+  "choices": [
+    "Control symptoms while avoiding hypercalciuria",
+    "Aim for upper-normal calcium regardless of urine calcium",
+    "Use the serum calcium result as the only renal safety measure",
+    "Stop surveillance once paresthesia resolves"
+  ],
+  "rationale": "Chronic hypoparathyroidism treatment aims for symptom relief and individualized calcium control, generally in the lower part of or slightly below the reference range, while addressing excessive urinary calcium. Serum calcium alone cannot establish urine calcium or renal safety. The 2025 ESE guideline recommends biochemical follow-up and urine calcium assessment during conventional therapy; evidence that urine-lowering interventions prevent renal complications remains limited."
+});
+Object.assign(calciumPhosphorusHomeostasisQuestionBank.find((question) => question.id === "calcium-phosphorus-011"), {
+  "choices": [
+    "It can lower ionized calcium by increasing albumin binding",
+    "It raises ionized calcium by reducing albumin binding",
+    "It lowers total calcium only, leaving the free fraction unchanged",
+    "It changes PTH secretion only, without affecting protein binding"
+  ],
+  "rationale": "Alkalemia increases calcium binding to albumin and can decrease the free, biologically active fraction. Acidemia has the opposite binding effect. Total calcium may remain normal during a symptomatic fall in ionized calcium, so a normal total result does not exclude this mechanism."
+});
+Object.assign(calciumPhosphorusHomeostasisQuestionBank.find((question) => question.id === "calcium-phosphorus-012"), {
+  "choices": [
+    "Critical illness or abnormal pH when an accurate result changes care",
+    "Stable albumin and pH with a total result consistent with symptoms",
+    "A vitamin D status assessment without a calcium-binding concern",
+    "A phosphate trend review without discordant calcium findings"
+  ],
+  "rationale": "Ionized calcium measures the active fraction directly and is particularly useful when abnormal pH, protein binding, or critical illness makes total or albumin-adjusted calcium unreliable. It is not a substitute for a vitamin D status or phosphate evaluation. Interpret the result at the patient's actual pH and follow the laboratory's collection and handling requirements."
+});
+Object.assign(calciumPhosphorusHomeostasisQuestionBank.find((question) => question.id === "calcium-phosphorus-017"), {
+  "choices": [
+    "Mild lifelong hypercalcemia with relatively low urinary calcium",
+    "Recent hypercalcemia with clearly increased urinary calcium",
+    "New severe hypercalcemia with suppressed PTH",
+    "Low serum calcium with absent PTH after neck surgery"
+  ],
+  "rationale": "Lifelong, usually mild hypercalcemia with urinary calcium that is inappropriately low relative to serum calcium suggests familial hypocalciuric hypercalcemia. PTH can be normal or elevated, so it can resemble primary hyperparathyroidism. The patterns overlap; the urine finding and history support further evaluation rather than establish the diagnosis by themselves."
+});
+Object.assign(calciumPhosphorusHomeostasisQuestionBank.find((question) => question.id === "calcium-phosphorus-023"), {
+  "choices": [
+    "Hypomagnesemia",
+    "Hypoalbuminemia with a normal ionized calcium result",
+    "A normal magnesium concentration after adequate repletion",
+    "A binding change that has resolved with normalization of pH"
+  ],
+  "rationale": "Magnesium deficiency can reduce PTH secretion and tissue response, so calcium treatment may have an inadequate effect until magnesium is addressed. A low total calcium from hypoalbuminemia with normal ionized calcium is a different problem. Correct magnesium alongside clinically indicated calcium treatment; urgent symptomatic hypocalcemia should not wait for magnesium normalization."
+});
+Object.assign(calciumPhosphorusHomeostasisQuestionBank.find((question) => question.id === "calcium-phosphorus-035"), {
+  "choices": [
+    "Severe refractory disease with kidney failure or inability to tolerate fluids",
+    "Mild stable hypercalcemia that responds to oral hydration",
+    "A normal calcium result with isolated low albumin",
+    "An uncomplicated initial episode before assessing volume or kidney function"
+  ],
+  "rationale": "Dialysis can be considered with specialist assessment for selected severe hypercalcemia when other treatment is ineffective, renal function is impaired, or adequate hydration cannot be given safely. Endotext describes refractory disease and renal insufficiency; published case evidence also describes cardiac or renal limits on hydration. That evidence supports a selected rescue option, not a universal trigger based on one calcium value."
+});
+Object.assign(calciumPhosphorusHomeostasisQuestionBank.find((question) => question.id === "calcium-phosphorus-092"), {
+  "choices": [
+    "Measure ionized calcium",
+    "Exclude a calcium mechanism because total calcium is normal",
+    "Use an albumin correction to account fully for the pH change",
+    "Diagnose chronic PTH deficiency from the spasm alone"
+  ],
+  "rationale": "Respiratory alkalosis can increase albumin binding and lower ionized calcium despite a normal total result, explaining paresthesia and carpopedal spasm. Direct ionized calcium at actual pH helps assess this mechanism; an albumin correction does not correct the pH effect. Assess and stabilize clinically significant symptoms while evaluating the cause."
+});
+Object.assign(calciumPhosphorusHomeostasisQuestionBank.find((question) => question.id === "calcium-phosphorus-095"), {
+  "choices": [
+    "Correct severe magnesium deficiency",
+    "Escalate calcium alone without addressing magnesium",
+    "Treat the magnesium result as unrelated to PTH function",
+    "Wait for magnesium normalization before any urgent calcium treatment"
+  ],
+  "rationale": "Magnesium 0.7 mg/dL indicates marked deficiency in this case. Low magnesium can impair PTH secretion and tissue response, contributing to persistent hypocalcemia despite calcium replacement. Correct magnesium and reassess the cause and calcium response. Continue urgent monitored calcium treatment when clinically indicated rather than waiting for magnesium to normalize."
+});
+Object.assign(calciumPhosphorusHomeostasisQuestionBank.find((question) => question.id === "calcium-phosphorus-102"), {
+  "question": "Total calcium is 7.4 mg/dL, albumin 1.8 g/dL, pH 7.18, and the patient has no symptoms. What is the best next calcium-specific interpretation or management principle?",
+  "choices": [
+    "Obtain ionized calcium before assuming true hypocalcemia",
+    "Diagnose biologically active hypocalcemia from total calcium alone",
+    "Assume an albumin-adjusted result proves the ionized fraction is normal",
+    "Give calcium solely to normalize total calcium without confirming the active fraction"
+  ],
+  "rationale": "Low albumin and acidemia change the relationship between total and ionized calcium. The conventional albumin estimate is 7.4 + 0.8 x (4 - 1.8) = 9.16 mg/dL, but it does not correct the pH effect or establish the active calcium concentration. Obtain ionized calcium at actual pH to guide the calcium-specific interpretation and assess the acid-base disorder separately."
+});
+
+calciumPhosphorusHomeostasisQuestionBank.find((question) => question.id === "calcium-phosphorus-023").question = "Which coexisting abnormality can impair PTH release and action, reducing the response to calcium replacement?";
