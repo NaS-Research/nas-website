@@ -564,3 +564,77 @@ Object.assign(chronicHepatitisBQuestionBank.find((question) => question.id === "
   ],
   "rationale": "Normal ALT does not negate the treatment indication in decompensated HBV cirrhosis. Oral antiviral treatment and specialist care address that indication; evaluating other injury causes and discussing treatment burden support appropriate care."
 });
+
+// Source-verified HBV peginterferon review.
+Object.assign(chronicHepatitisBQuestionBank.find((question) => question.id === "chronic-hepatitis-b-053"), {
+  "choices": [
+    "Peginterferon can provide a finite immune-based HBV course in selected compensated patients, but response is variable and toxicity is substantial",
+    "A 48-week peginterferon course reliably eradicates every HBV reservoir",
+    "Peginterferon directly inhibits HBV polymerase in the same way as entecavir",
+    "HBeAg-negative chronic HBV is excluded from the adult PEGASYS indication"
+  ],
+  "rationale": "Peginterferon stimulates antiviral immune activity and can be used in selected HBeAg-positive or HBeAg-negative adults with compensated disease. Finite duration does not imply guaranteed response or sterilizing cure, and its mechanism differs from polymerase inhibition."
+});
+Object.assign(chronicHepatitisBQuestionBank.find((question) => question.id === "chronic-hepatitis-b-054"), {
+  "choices": [
+    "For an eligible adult with creatinine clearance 25 mL/min, verify a PEGASYS dose of 135 mcg subcutaneously once weekly and monitor closely",
+    "For the same adult, use 180 mcg daily because renal impairment shortens the dosing interval",
+    "For the same adult, use 180 mcg weekly without assessing renal function or toxicity",
+    "For the same adult, prescribe 135 mg weekly as the standard renal adjustment"
+  ],
+  "rationale": "The adult label recommends 135 mcg once weekly when creatinine clearance is below 30 mL/min, including hemodialysis. Micrograms and weekly frequency matter. The usual 180-mcg adult dose is reduced in this renal category, and renal impairment still requires close safety monitoring."
+});
+Object.assign(chronicHepatitisBQuestionBank.find((question) => question.id === "chronic-hepatitis-b-055"), {
+  "choices": [
+    "Discuss response predictors and safety in a compensated patient, then verify the weekly dose, actual device concentration and follow-up plan",
+    "Choose peginterferon solely because the patient wants a fixed stop date",
+    "Administer 1 mL from a 180 mcg/0.5 mL prefilled syringe to deliver the usual 180-mcg dose",
+    "Promise that a favorable HBV genotype guarantees an off-treatment cure"
+  ],
+  "rationale": "Selection combines liver stage, expected benefit, contraindications and monitoring capacity. For 180 mcg, the vial volume is 1 mL but the prefilled-syringe volume is 0.5 mL. A finite preference and favorable predictors support discussion, not a promise of cure or an unchecked prescription."
+});
+Object.assign(chronicHepatitisBQuestionBank.find((question) => question.id === "chronic-hepatitis-b-056"), {
+  "choices": [
+    "Start peginterferon in decompensated cirrhosis to avoid long-term oral therapy",
+    "Exclude autoimmune hepatitis before considering peginterferon",
+    "Discuss an oral antiviral alternative when psychiatric risk makes peginterferon unsuitable",
+    "Verify liver compensation, renal function and monitoring capacity before the first dose"
+  ],
+  "rationale": "Starting peginterferon in decompensated cirrhosis violates a labeled contraindication and can cause serious harm. Each alternative is a protective selection step. The appeal of a finite course cannot override liver-stage safety."
+});
+Object.assign(chronicHepatitisBQuestionBank.find((question) => question.id === "chronic-hepatitis-b-057"), {
+  "choices": [
+    "Peginterferon requires early blood-count checks plus continuing laboratory, psychiatric and symptom monitoring despite its finite duration",
+    "Normal baseline blood counts eliminate the need for CBC monitoring on treatment",
+    "Flu-like symptoms are the only adverse effects that need discussion before treatment",
+    "Completing 48 weeks automatically ends all HBV follow-up and indicated cancer surveillance"
+  ],
+  "rationale": "The label calls for hematologic testing at weeks 2 and 4, biochemical testing at week 4 and subsequent periodic testing. Serious psychiatric, marrow, hepatic, endocrine, autoimmune, infectious and eye effects require active review. HBV follow-up continues after a finite course."
+});
+Object.assign(chronicHepatitisBQuestionBank.find((question) => question.id === "chronic-hepatitis-b-058"), {
+  "choices": [
+    "Arrange baseline CBC, hepatic and renal panels, thyroid and virologic testing, mental-health review and eye examination, then schedule early and ongoing checks",
+    "Postpone the first blood count until the end of the 48-week course",
+    "Monitor ALT alone because it detects psychiatric and eye toxicity",
+    "Wait for visible jaundice before checking hepatic safety"
+  ],
+  "rationale": "Baseline assessment and planned follow-up detect risks that symptoms or ALT alone cannot capture. The label specifies early hematologic checks and a baseline eye examination. Subsequent monitoring addresses laboratory changes, mood and other organ toxicity as well as antiviral response."
+});
+Object.assign(chronicHepatitisBQuestionBank.find((question) => question.id === "chronic-hepatitis-b-059"), {
+  "choices": [
+    "Stop peginterferon and obtain urgent psychiatric evaluation for severe new depression or suicidal thoughts rather than waiting for the next routine visit",
+    "Continue peginterferon unchanged until all 48 weeks are complete despite severe new depression",
+    "Treat severe new depression as an expected flu-like effect requiring no assessment",
+    "Use a falling HBV DNA level to dismiss severe new depression"
+  ],
+  "rationale": "Severe neuropsychiatric toxicity requires immediate treatment cessation and psychiatric intervention under the label. Virologic improvement does not make serious toxicity acceptable, and a planned treatment duration does not override a stopping indication."
+});
+Object.assign(chronicHepatitisBQuestionBank.find((question) => question.id === "chronic-hepatitis-b-060"), {
+  "choices": [
+    "Continue peginterferon unchanged despite progressive ALT increases accompanied by rising bilirubin or hepatic decompensation",
+    "Arrange more frequent liver testing during an HBV ALT flare",
+    "Plan HBV DNA and liver follow-up after the last injection",
+    "Investigate persistent high fever for infection, especially when neutrophils are low"
+  ],
+  "rationale": "Progressive ALT increases with bilirubin elevation or hepatic decompensation require immediate discontinuation, not routine continuation. Intensified liver monitoring, post-treatment follow-up and infection assessment are protective actions; flu-like symptoms cannot explain every fever."
+});

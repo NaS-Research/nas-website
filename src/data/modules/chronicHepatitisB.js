@@ -364,3 +364,75 @@ chronicHepatitisBModule.references.push({
   "label": "WHO 2026: consolidated viral hepatitis implementation handbook",
   "href": "https://www.who.int/publications/i/item/9789240119529"
 });
+
+// Source-verified HBV peginterferon review.
+Object.assign(chronicHepatitisBModule.submodules.find((lesson) => lesson.slug === "peginterferon-selection").lesson.find((body) => body.heading === "Explain the mechanism"), {
+  "heading": "Explain the mechanism",
+  "body": "Peginterferon alfa-2a induces antiviral immune activity; interferons also have antiproliferative effects. Attaching polyethylene glycol prolongs exposure and permits weekly injection. This immune-based approach differs from direct HBV polymerase inhibition. A finite course is possible, but it does not guarantee a sustained response or elimination of the persistent viral reservoir."
+});
+Object.assign(chronicHepatitisBModule.submodules.find((lesson) => lesson.slug === "peginterferon-selection").lesson.find((body) => body.heading === "Select the phenotype"), {
+  "heading": "Select the phenotype",
+  "body": "PEGASYS is labeled for adults with HBeAg-positive or HBeAg-negative chronic HBV, compensated liver disease, viral replication and liver inflammation. Consider response likelihood, reliable follow-up and patient preference with a specialist. Higher ALT, lower HBV DNA and genotypes A or B are associated with better response; they do not guarantee success. A preference for finite therapy cannot override contraindications or make peginterferon the best choice for every compensated patient."
+});
+Object.assign(chronicHepatitisBModule.submodules.find((lesson) => lesson.slug === "peginterferon-selection").lesson.find((body) => body.heading === "Screen exclusions"), {
+  "heading": "Screen exclusions",
+  "body": "The label contraindicates PEGASYS in autoimmune hepatitis, decompensated cirrhosis, relevant hypersensitivity, and neonates or infants. Severe psychiatric illness, marrow suppression, other autoimmune disease, poorly controlled seizures and cardiopulmonary disease are important clinical exclusions or precautions. Do not start with thyroid or glucose disorders that cannot be controlled with medication. Interferon is not advised for HBV during pregnancy; the label warns of fetal harm and requires pretreatment pregnancy testing and effective contraception during therapy. Ribavirin is not part of this HBV regimen; its combination-specific pregnancy restrictions must not be imported as an HBV dosing plan."
+});
+Object.assign(chronicHepatitisBModule.submodules.find((lesson) => lesson.slug === "peginterferon-selection").lesson.find((body) => body.heading === "Monitor the whole patient"), {
+  "heading": "Monitor the whole patient",
+  "body": "Before treatment, assess CBC with differential and platelets, hepatic and renal panels, thyroid function, HBV DNA and HBeAg/anti-HBe; screen for coinfections, review mental health and obtain a baseline eye examination. The label specifies hematologic testing at weeks 2 and 4 and biochemical testing at week 4, followed by periodic testing. UW HBV guidance describes ongoing CBC every 1-2 months, ALT every 1-3 months and TSH every three months, with closer testing for abnormalities. These ongoing intervals do not replace the early label checks. Review mood, sleep, infection, autoimmune symptoms, glucose and vision, alongside virologic response."
+});
+chronicHepatitisBModule.submodules.find((lesson) => lesson.slug === "peginterferon-selection").lesson.push({
+  "heading": "Verify the dose and presentation",
+  "body": "For adult HBV, the labeled dose is 180 mcg subcutaneously in the thigh or abdomen once weekly for 48 weeks. At creatinine clearance below 30 mL/min, including hemodialysis, the recommended dose is 135 mcg weekly; 30-50 mL/min retains 180 mcg with careful monitoring. Toxicity may require further adjustment or discontinuation. Verify concentration: 180 mcg is 1 mL from the 180 mcg/mL vial, but 0.5 mL from the 180 mcg/0.5 mL prefilled syringe. Train for the specific device, discard unused single-dose product, refrigerate at 2-8°C, protect from light and do not freeze or shake."
+});
+chronicHepatitisBModule.submodules.find((lesson) => lesson.slug === "peginterferon-selection").lesson.push({
+  "heading": "Act on serious toxicity",
+  "body": "Common flu-like symptoms do not explain every fever or new symptom. Persistent high fever requires infection assessment, especially with neutropenia. Severe depression or suicidal thoughts require immediate cessation and psychiatric intervention. New or worsening eye disorders require stopping treatment and prompt evaluation. For HBV ALT above five times the upper limit of normal, intensify liver monitoring and consider dose reduction or a temporary hold. Discontinue immediately for hepatic decompensation, ALT that keeps rising despite a dose reduction, or an ALT increase accompanied by a bilirubin rise. Apply the product tables for cytopenias and other dose changes rather than improvising a schedule."
+});
+chronicHepatitisBModule.submodules.find((lesson) => lesson.slug === "peginterferon-selection").lesson.push({
+  "heading": "Plan response and follow-up",
+  "body": "Assess HBV DNA and serologic response during treatment and after completion. HBeAg loss with anti-HBe development is a response only in a patient initially HBeAg-positive. Sustained HBsAg loss with undetectable HBV DNA off therapy is a functional-cure outcome; it is uncommon and does not establish sterilizing eradication. A sustained off-treatment peginterferon virologic response is generally defined as HBV DNA below 2,000 IU/mL for at least 12 months. Hepatitis flares can occur after the last dose, so arrange follow-up and continue liver-cancer surveillance when indicated."
+});
+Object.assign(chronicHepatitisBModule.submodules.find((lesson) => lesson.slug === "peginterferon-selection"), {
+  "summary": "Peginterferon alfa-2a offers a finite weekly course for selected patients with compensated HBV. Response is variable, and monitoring must address serious toxicity during and after treatment.",
+  "concepts": [
+    "Immune activity",
+    "Patient selection",
+    "Weekly dosing",
+    "Safety monitoring",
+    "Off-treatment response"
+  ],
+  "application": "Assess eligibility and response likelihood, verify the dose and device, and agree on laboratory visits, symptom escalation and follow-up before the first injection.",
+  "keyPoints": [
+    "Adult HBV dosing is weekly, usually for 48 weeks.",
+    "Decompensated cirrhosis and autoimmune hepatitis are contraindications.",
+    "Severe renal impairment requires a lower starting dose.",
+    "Early blood-count checks complement ongoing laboratory and symptom reviews.",
+    "Finite treatment does not guarantee cure or end indicated surveillance."
+  ]
+});
+Object.assign(chronicHepatitisBModule.submodules.find((lesson) => lesson.slug === "peginterferon-selection").check, {
+  "question": "Which adult HBV patient is the poorest peginterferon candidate?",
+  "choices": [
+    "A patient with decompensated cirrhosis and uncontrolled depression",
+    "A compensated patient with genotype A and dependable monitoring",
+    "A compensated patient with higher ALT, lower HBV DNA and no identified contraindication",
+    "A compensated patient discussing a finite course with a specialist"
+  ],
+  "answer": 0,
+  "rationale": "Decompensated cirrhosis is a labeled contraindication, and uncontrolled depression adds serious neuropsychiatric risk. The other patients may discuss peginterferon after full eligibility assessment; favorable predictors or a treatment preference do not guarantee response.",
+  "reviewHref": "#peginterferon-selection"
+});
+chronicHepatitisBModule.references.push({
+  "label": "PEGASYS: current U.S. prescribing information and device instructions",
+  "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d9290e5b-6d40-2318-e053-2995a90a9916"
+});
+chronicHepatitisBModule.references.push({
+  "label": "University of Washington: choosing an HBV regimen",
+  "href": "https://www.hepatitisb.uw.edu/go/hbv/medications-used-to-treat-hbv/core-concept/all"
+});
+chronicHepatitisBModule.references.push({
+  "label": "University of Washington: monitoring on and off HBV therapy",
+  "href": "https://www.hepatitisb.uw.edu/go/hbv/monitoring-persons-on-hbv-therapy/core-concept/all"
+});

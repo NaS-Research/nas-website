@@ -4,7 +4,7 @@ const views = {
   "phase-staging": ["ALT trend", "DNA trend", "HBeAg", "Fibrosis"],
   "treatment-decision": ["Cirrhosis", "Activity", "Risk", "Goals"],
   "polymerase-therapy": ["TDF", "TAF", "Entecavir", "Resistance"],
-  "peginterferon-selection": ["Finite course", "Immune effect", "Toxicity", "Compensation"],
+  "peginterferon-selection": ["Weekly", "Response", "Safety", "Liver"],
   "special-populations": ["Kidney", "Bone", "HIV", "Coinfection"],
   "pregnancy-infant": ["Maternal DNA", "Antiviral", "Vaccine and HBIG", "PVST"],
   "monitoring-stopping": ["DNA suppression", "Safety", "Adherence", "Flare"],
@@ -13,6 +13,7 @@ const views = {
   "integrated-case": ["Screen", "Stage", "Treat", "Follow"],
 };
 const reviewedViews = {
+  "peginterferon-selection": "Select for liver stage and response likelihood, verify weekly dosing, and monitor safety during and after the course.",
   "treatment-decision": "Identify the treatment framework, then combine liver stage, viral activity, host risk and patient goals.",
   "virus-natural-history": "A persistent nuclear reservoir, host injury and fibrosis explain continuing risk despite suppressed serum DNA.",
   "screening-serology": "Read surface antigen, surface antibody and total core antibody together; timing and immune status guide follow-up.",
