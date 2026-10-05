@@ -506,3 +506,85 @@ chronicHepatitisBModule.references.push({
   "label": "AASLD/IDSA HCV guidance: monitoring and HBV reactivation",
   "href": "https://www.hcvguidelines.org/guidance/monitoring-patients-who-are-starting-hcv-treatment-are-on-treatment-or-have-completed-therapy/"
 });
+
+// Source-verified HBV pregnancy and infant prevention review.
+Object.assign(chronicHepatitisBModule.submodules.find((lesson) => lesson.slug === "pregnancy-infant").lesson.find((body) => body.heading === "Screen every pregnancy"), {
+  "heading": "Screen every pregnancy",
+  "body": "Screen for HBsAg during every pregnancy, preferably in the first trimester, regardless of prior vaccination or testing. If HBsAg is positive, obtain quantitative HBV DNA and assess ALT, HBeAg and maternal liver disease with the treating team. Distinguish treatment needed for maternal health from temporary prophylaxis to reduce transmission. Refer to the Perinatal Hepatitis B Prevention Program and send the original positive laboratory report to the delivery facility and infant clinician. A documented handoff matters even when maternal HBV DNA becomes suppressed."
+});
+Object.assign(chronicHepatitisBModule.submodules.find((lesson) => lesson.slug === "pregnancy-infant").lesson.find((body) => body.heading === "Use maternal prophylaxis when indicated"), {
+  "heading": "Use maternal prophylaxis when indicated",
+  "body": "The 2025 AASLD/IDSA guideline recommends TDF or TAF at gestational week 28 when HBV DNA exceeds 200,000 IU/mL at any time during pregnancy, regardless of HBeAg. TDF has the more extensive pregnancy safety record. If an eligible patient presents after week 28, initiate prophylaxis promptly rather than treating the usual start week as a missed deadline. Continue established TDF/TAF treatment; a patient taking entecavir or another HBV antiviral needs a specialist-directed switch to TDF or TAF. Kidney function, HIV status, other medicines and maternal liver disease still affect the coordinated regimen."
+});
+Object.assign(chronicHepatitisBModule.submodules.find((lesson) => lesson.slug === "pregnancy-infant").lesson.find((body) => body.heading === "Protect the newborn immediately"), {
+  "heading": "Protect the newborn immediately",
+  "body": "In the CDC pathway, an infant born to an HBsAg-positive parent needs single-antigen hepatitis B vaccine and hepatitis B immune globulin (HBIG) in separate limbs within 12 hours of birth, regardless of birth weight or maternal antiviral use. Vaccine provides active immunity; HBIG provides immediate passive protection. Maternal viral suppression does not replace either newborn intervention. Record both products and administration times, and communicate receipt when the infant transfers to another facility. A missed HBIG dose requires urgent action; the CDC tipsheet permits administration up to seven days after birth, with benefit unlikely beyond that window. Continue vaccination and follow-up even if HBIG was missed."
+});
+Object.assign(chronicHepatitisBModule.submodules.find((lesson) => lesson.slug === "pregnancy-infant").lesson.find((body) => body.heading === "Prove protection"), {
+  "heading": "Prove protection",
+  "body": "For infants whose parent is HBsAg-positive or whose status remains unknown, complete post-vaccination serologic testing (PVST) with HBsAg and quantitative anti-HBs only at age 9-12 months, or 1-2 months after the final vaccine dose if the series is delayed; do not test before nine months. Earlier testing can detect passive anti-HBs from HBIG or miss late infection. Do not order infant anti-HBc for PVST because maternal antibody may persist up to 24 months. Testing immediately after vaccination can also produce transient HBsAg positivity. Schedule the visit, track the result and report it to the perinatal prevention program."
+});
+chronicHepatitisBModule.submodules.find((lesson) => lesson.slug === "pregnancy-infant").lesson.push({
+  "heading": "Keep the WHO pathway distinct",
+  "body": "WHO recommendations retained in the 2026 handbook use TDF for HBsAg-positive pregnancy with HBV DNA at least 200,000 IU/mL or positive HBeAg, preferably from the second trimester until at least delivery or completion of the infant vaccine series. When neither HBV DNA nor HBeAg testing is available, WHO conditionally recommends TDF for all HBsAg-positive pregnant patients; this has low-certainty evidence. Assess long-term maternal treatment eligibility without delaying prophylaxis. WHO pairs maternal prophylaxis with a timely infant vaccine birth dose, preferably within 24 hours, and at least three total vaccine doses. Apply the national pathway rather than mixing its timing with the U.S. CDC exposed-infant 12-hour plan."
+});
+chronicHepatitisBModule.submodules.find((lesson) => lesson.slug === "pregnancy-infant").lesson.push({
+  "heading": "Plan postpartum care before delivery",
+  "body": "AASLD allows TDF/TAF to stop at delivery when the sole indication is perinatal prophylaxis and there is no continuing maternal treatment need. Cirrhosis or another ongoing indication requires continued therapy. After a planned stop, monitor HBV DNA and ALT every 1-3 months for up to six months; AASLD directs treatment reinitiation for a significant withdrawal flare, defined here as ALT at least five times the upper limit of normal. Arrange responsibility for results and urgent assessment of worsening disease. AASLD supports TDF or TAF during breastfeeding. Earlier prophylaxis may be appropriate with preterm-labor risk or anticipated invasive procedures; if infant HBIG is unavailable, AASLD advises starting at week 16 in high-viremia pregnancy with subsequent infant vaccination. This access-dependent pathway requires expert coordination."
+});
+chronicHepatitisBModule.submodules.find((lesson) => lesson.slug === "pregnancy-infant").lesson.push({
+  "heading": "Resolve unknown maternal status",
+  "body": "If maternal HBsAg documentation is unavailable at delivery, draw and test it urgently. With no other evidence of maternal HBV infection, a newborn weighing at least 2,000 g needs single-antigen vaccine within 12 hours while the result is pending; if the parent tests positive, give HBIG as soon as possible and no later than seven days of age. Below 2,000 g, give vaccine and HBIG within 12 hours when status is unknown. If maternal HBV DNA, positive HBeAg or known chronic HBV already indicates infection, treat the infant as exposed to an HBsAg-positive parent regardless of a missing HBsAg report. If status remains unknown, retain the exposed-infant series and PVST plan."
+});
+chronicHepatitisBModule.submodules.find((lesson) => lesson.slug === "pregnancy-infant").lesson.push({
+  "heading": "Complete the birth-weight-specific series",
+  "body": "For an exposed infant weighing at least 2,000 g, the CDC single-antigen schedule is birth, 1-2 months and six months; an appropriate combination-vaccine schedule after the single-antigen birth dose may produce four total doses. Below 2,000 g with positive or unknown maternal status, the birth dose does not count toward the primary series: give three additional doses beginning at one month, for four total doses. The final dose has a minimum age of 24 weeks; observe the product schedule and minimum intervals. For a documented HBsAg-negative parent, the currently posted CDC schedule gives medically stable infants at least 2,000 g vaccine within 24 hours; below 2,000 g, give the first dose at one month or hospital discharge, whichever is earlier. These negative-status rules do not justify delaying prophylaxis in an exposed infant."
+});
+chronicHepatitisBModule.submodules.find((lesson) => lesson.slug === "pregnancy-infant").lesson.push({
+  "heading": "Act on the PVST result",
+  "body": "After a documented complete series, HBsAg-negative infants with anti-HBs at least 10 mIU/mL are protected and need no additional HBV vaccine follow-up. If HBsAg is negative and anti-HBs is below 10 mIU/mL, ACIP recommends one additional vaccine dose and repeat PVST 1-2 months later. If anti-HBs remains below 10, give two more doses to complete the second series and retest 1-2 months after its final dose. A complete second three-dose series followed by retesting is an alternative based on clinical circumstances or family preference. Further doses have no demonstrated benefit after two complete series without response. HBsAg positivity requires infection follow-up, not a routine nonresponse vaccination pathway."
+});
+Object.assign(chronicHepatitisBModule.submodules.find((lesson) => lesson.slug === "pregnancy-infant"), {
+  "summary": "Coordinate maternal screening and indicated tenofovir with a documented newborn prophylaxis, vaccine-series and serologic follow-up plan. Maternal and infant interventions serve different purposes.",
+  "concepts": [
+    "Maternal HBV DNA",
+    "TDF and TAF",
+    "HBIG",
+    "Birth weight",
+    "Vaccine series",
+    "PVST"
+  ],
+  "application": "Build a dated plan from prenatal screening through postpartum maternal monitoring and infant PVST. State maternal treatment purpose, delivery status and birth weight, product timing, series completion, result interpretation and follow-up ownership.",
+  "keyPoints": [
+    "Screen HBsAg during every pregnancy and assess HBV DNA when positive.",
+    "AASLD and WHO use distinct prophylaxis thresholds and timing.",
+    "Positive maternal HBsAg requires infant vaccine plus HBIG within 12 hours regardless of weight.",
+    "Unknown maternal status requires an urgent test and a birth-weight-specific infant plan.",
+    "PVST uses HBsAg and anti-HBs at the correct age; omit infant anti-HBc.",
+    "A postpartum antiviral stop needs maternal eligibility review and monitored follow-up."
+  ]
+});
+Object.assign(chronicHepatitisBModule.submodules.find((lesson) => lesson.slug === "pregnancy-infant").check, {
+  "question": "What does an infant born to an HBsAg-positive parent need within 12 hours?",
+  "choices": [
+    "Single-antigen hepatitis B vaccine and HBIG in separate limbs",
+    "Single-antigen hepatitis B vaccine alone because HBIG can always wait until the routine visit",
+    "HBIG alone, followed by vaccination only if the infant develops symptoms",
+    "HBsAg and anti-HBs testing before deciding whether to give prophylaxis"
+  ],
+  "answer": 0,
+  "rationale": "An infant born to an HBsAg-positive parent requires vaccine and HBIG within 12 hours, regardless of birth weight or maternal antiviral use. They provide active and passive protection. Vaccine-only or HBIG-only plans omit part of recommended prophylaxis; waiting for symptoms or serology loses the prevention window. PVST belongs after the completed vaccine series at the recommended age.",
+  "reviewHref": "#pregnancy-infant"
+});
+chronicHepatitisBModule.references.push({
+  "label": "CDC: infant hepatitis B schedules by birth weight and maternal status",
+  "href": "https://www.cdc.gov/hepatitis-b/hcp/perinatal-provider-overview/vaccine-administration.html"
+});
+chronicHepatitisBModule.references.push({
+  "label": "CDC: currently posted child immunization schedule notes",
+  "href": "https://www.cdc.gov/vaccines/hcp/imz-schedules/child-adolescent-notes.html"
+});
+chronicHepatitisBModule.references.push({
+  "label": "CDC/ACIP: infant PVST and revaccination recommendations",
+  "href": "https://www.cdc.gov/mmwr/volumes/67/rr/rr6701a1.htm"
+});

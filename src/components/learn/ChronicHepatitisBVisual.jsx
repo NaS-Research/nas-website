@@ -6,13 +6,14 @@ const views = {
   "polymerase-therapy": ["TDF", "TAF", "Entecavir", "Resistance"],
   "peginterferon-selection": ["Weekly", "Response", "Safety", "Liver"],
   "special-populations": ["Kidney", "Bone", "HIV", "HDV/HCV"],
-  "pregnancy-infant": ["Maternal DNA", "Antiviral", "Vaccine and HBIG", "PVST"],
+  "pregnancy-infant": ["HBV DNA", "Therapy", "Vax/HBIG", "PVST"],
   "monitoring-stopping": ["DNA suppression", "Safety", "Adherence", "Flare"],
   "reactivation": ["Triple panel", "Immunosuppression", "Prophylaxis", "Monitoring"],
   "prevention-surveillance": ["Vaccination", "Contacts", "HCC surveillance", "Linkage"],
   "integrated-case": ["Screen", "Stage", "Treat", "Follow"],
 };
 const reviewedViews = {
+  "pregnancy-infant": "Coordinate maternal assessment and therapy with newborn vaccine/HBIG, series completion and serologic follow-up.",
   "special-populations": "Check organ function, liver stage and viral coinfections to coordinate drug selection, testing and follow-up.",
   "peginterferon-selection": "Select for liver stage and response likelihood, verify weekly dosing, and monitor safety during and after the course.",
   "treatment-decision": "Identify the treatment framework, then combine liver stage, viral activity, host risk and patient goals.",
