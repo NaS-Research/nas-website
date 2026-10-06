@@ -845,4 +845,217 @@ const diagnosisAirwayPulmonaryCases = [
     "reviewHref": "#cf-pulmonary-assessment"
   }
 ];
-export const cysticFibrosisQuestionBank = [...originalCysticFibrosisQuestionBank.map((question) => ({ ...question, ...(sourceReviewedEnzymeSafetyQuestions[question.id] || {}), ...(reviewedNutritionSystemicQuestions[question.id] || {}), ...(reviewedDiagnosisAirwayPulmonaryQuestions[question.id] || {}) })), ...nutritionSystemicCases, ...diagnosisAirwayPulmonaryCases];
+const reviewedInfectionQuestions = {
+  "cf-041": {
+    "choices": [
+      "Serial organism history, clinical trajectory, and sample type are more informative than one isolated culture.",
+      "A single negative throat culture excludes any continuing lower-airway infection",
+      "Only susceptibility results matter, regardless of symptoms or prior response",
+      "Every organism recovered from a respiratory specimen has identical clinical significance"
+    ],
+    "rationale": "Serial history combines microbiology, sample limitations, and the clinical trajectory. A negative throat sample cannot rule out all lower-airway disease, susceptibility alone does not predict the entire response, and different organisms require different interpretation."
+  },
+  "cf-042": {
+    "choices": [
+      "Trend microbiology and obtain the best feasible respiratory sample at recommended intervals and during deterioration.",
+      "Wait for severe symptoms before obtaining any follow-up culture",
+      "Replace all CF respiratory specimens with routine oropharyngeal swabs for NTM screening",
+      "Choose the easiest specimen without documenting its type or limitations"
+    ],
+    "rationale": "Surveillance and sampling during deterioration inform longitudinal care. Waiting for severe symptoms discards routine surveillance; oropharyngeal swabs are not recommended for NTM screening; undocumented sample limitations weaken interpretation."
+  },
+  "cf-043": {
+    "choices": [
+      "Review specimen type, organism history, density, phenotype, susceptibility, symptoms, spirometry, imaging, antibiotics, and response.",
+      "Review only the newest organism name and ignore prior antibiotics",
+      "Review spirometry alone because microbiology does not inform treatment",
+      "Review the culture report without symptoms, specimen type, or response history"
+    ],
+    "rationale": "The stated broad assessment connects microbiologic findings to sample quality and clinical relevance. The alternatives omit either organism history, microbiology itself, or the clinical and specimen context needed to interpret a culture."
+  },
+  "cf-044": {
+    "choices": [
+      "Treating every recovered organism identically ignores colonization, chronic infection, resistance, and clinical relevance.",
+      "Using previous cultures alongside the current clinical trajectory",
+      "Checking whether the sample is sputum or an oropharyngeal swab",
+      "Distinguishing Aspergillus sensitization or ABPA from a fungal culture alone"
+    ],
+    "rationale": "Treating all organisms identically ignores distinct infection states and treatment needs. Prior-culture review, specimen identification, and distinguishing allergic disease from fungal recovery are protective reasoning steps rather than hazards."
+  },
+  "cf-045": {
+    "choices": [
+      "New Pseudomonas acquisition should prompt an established eradication regimen and follow-up cultures.",
+      "New Pseudomonas growth must first become chronic before eradication is considered",
+      "A negative culture is an indication for routine antipseudomonal prophylaxis",
+      "Improved symptoms after treatment prove microbiologic eradication without cultures"
+    ],
+    "rationale": "Initial or new growth supports prompt eradication and follow-up cultures. Waiting for chronic infection misses this opportunity, routine acquisition prophylaxis is discouraged, and symptoms cannot substitute for microbiologic reassessment."
+  },
+  "cf-046": {
+    "choices": [
+      "Begin a center protocol, commonly inhaled tobramycin, then document microbiologic response.",
+      "Use inhaled corticosteroid alone to clear the organism",
+      "Automatically begin indefinite IV aminoglycoside treatment",
+      "Treat a negative surveillance culture with antipseudomonal prophylaxis"
+    ],
+    "rationale": "A CF-center eradication protocol, commonly tobramycin 300 mg twice daily for 28 days, addresses new growth and is followed by cultures. Corticosteroid alone does not eradicate Pseudomonas, indefinite IV therapy is not automatic, and prophylaxis for negative cultures is discouraged."
+  },
+  "cf-047": {
+    "choices": [
+      "Review first versus recurrent isolation, symptoms, prior antibiotics, inhaled technique, renal and auditory risk, cultures, and adherence.",
+      "Review the first culture only and disregard any previous eradication attempts",
+      "Review symptoms without assessing the nebulizer or treatment delivery",
+      "Review the dose without considering hearing, renal risk, or follow-up cultures"
+    ],
+    "rationale": "New or recurrent isolation, prior treatment, delivery, toxicity risks, cultures, and adherence all inform eradication. The alternatives omit recurrence history, actual inhaled delivery, or the safety and microbiologic assessment needed to judge the course."
+  },
+  "cf-048": {
+    "choices": [
+      "Waiting until Pseudomonas becomes chronic reduces the opportunity for successful eradication.",
+      "Starting an established protocol after new growth",
+      "Obtaining cultures after the eradication course",
+      "Checking whether the patient can complete the prescribed inhalations"
+    ],
+    "rationale": "Waiting for chronic infection delays the early eradication opportunity. Prompt protocol treatment, microbiologic follow-up, and checking actual delivery are appropriate safeguards rather than hazards."
+  },
+  "cf-049": {
+    "choices": [
+      "Inhaled antibiotic suppression uses high airway exposure through product-specific continuous or cyclic regimens.",
+      "All inhaled antibiotic products use the same dose, device, and schedule",
+      "Inhaled aminoglycosides cannot cause hearing or renal adverse effects",
+      "Chronic suppression always replaces evaluation and treatment of an acute exacerbation"
+    ],
+    "rationale": "Suppression requires product-specific delivery and a prescribed cycle or specialist regimen. Doses and devices are not interchangeable, inhalation does not eliminate aminoglycoside toxicity risk, and acute deterioration still needs separate clinical evaluation."
+  },
+  "cf-050": {
+    "choices": [
+      "Match molecule, device, schedule, and cycling to chronic infection history, tolerance, response, and current labeling.",
+      "Convert every product to a twice-daily schedule regardless of its label",
+      "Use any available nebulizer because the molecule alone determines delivery",
+      "Continue indefinitely without reviewing the cycle calendar or response"
+    ],
+    "rationale": "Match the product and delivery system to the chronic infection plan. CAYSTON is three times daily rather than twice daily, labeled devices matter, and unreviewed indefinite use ignores the prescribed cycle and outcomes."
+  },
+  "cf-051": {
+    "choices": [
+      "Review organism, exacerbations, lung function, dose cycle, device, bronchospasm, voice, renal and auditory status, resistance, and access.",
+      "Review only whether a prescription was dispensed",
+      "Review culture susceptibility while ignoring delivery and clinical response",
+      "Review lung function while ignoring bronchospasm, hearing, renal risk, and access"
+    ],
+    "rationale": "Effective suppression depends on infection state, actual delivery, response, tolerability, and access. Dispensing does not establish administration; susceptibility alone misses response and implementation; lung function alone misses safety and the ability to obtain treatment."
+  },
+  "cf-052": {
+    "choices": [
+      "Treating inhaled tobramycin, aztreonam, and other products as schedule-interchangeable can create incorrect use.",
+      "Keeping a product-specific treatment and off-cycle calendar",
+      "Verifying the specified nebulizer and compressor",
+      "Checking each product's dose spacing and missed-dose instructions"
+    ],
+    "rationale": "Assuming schedule interchangeability creates errors: inhaled tobramycin is twice daily with at least 6 hours between doses, whereas CAYSTON is three times daily with at least 4 hours. The other choices actively prevent such errors."
+  },
+  "cf-053": {
+    "choices": [
+      "Chronic azithromycin can reduce CF pulmonary exacerbations but must be coordinated with nontuberculous mycobacterial surveillance.",
+      "Azithromycin is a substitute for all inhaled antipseudomonal suppression",
+      "NTM screening is unnecessary when respiratory symptoms are stable",
+      "Azithromycin alone is an appropriate regimen for confirmed NTM pulmonary disease"
+    ],
+    "rationale": "Chronic azithromycin can reduce CF exacerbations but requires NTM surveillance. It does not replace all inhaled therapy, stability does not remove screening recommendations, and macrolide monotherapy for NTM disease risks resistance."
+  },
+  "cf-054": {
+    "choices": [
+      "Screen for NTM before and during long-term use and withhold chronic azithromycin while a positive NTM culture is evaluated.",
+      "Continue chronic azithromycin after a positive NTM culture until disease is definitively confirmed",
+      "Use a routine oropharyngeal swab to exclude NTM disease",
+      "Treat every positive NTM culture as confirmed disease and start macrolide monotherapy"
+    ],
+    "rationale": "Screening precedes and accompanies chronic treatment. Hold azithromycin after a positive NTM culture while disease is evaluated to avoid selecting resistance. Continuing until confirmation is too late for this safeguard, throat swabs are unsuitable for NTM screening, and culture positivity alone does not establish disease or justify monotherapy."
+  },
+  "cf-055": {
+    "choices": [
+      "Review NTM cultures, symptoms, imaging, QT, hearing, liver function, interactions, adherence, Pseudomonas, and exacerbations.",
+      "Review Pseudomonas cultures alone and omit NTM evaluation",
+      "Review respiratory benefit without QT, interaction, hearing, or hepatic assessment",
+      "Review tolerability alone and assume positive NTM cultures require no action"
+    ],
+    "rationale": "NTM findings, pulmonary benefit, drug interactions, QT risk, hearing and hepatic status all affect continued azithromycin use. The alternatives omit NTM surveillance, medication safety, or the need to hold chronic azithromycin during a positive-culture evaluation."
+  },
+  "cf-056": {
+    "choices": [
+      "Macrolide monotherapy during unrecognized NTM disease can select macrolide resistance and compromise treatment.",
+      "Withholding chronic azithromycin while a positive NTM culture is evaluated",
+      "Using clinical, radiographic, and microbiologic criteria to assess NTM pulmonary disease",
+      "Obtaining specialist input for an organism-specific multidrug regimen"
+    ],
+    "rationale": "Macrolide monotherapy during unrecognized NTM disease can select resistance and compromise treatment. Holding chronic azithromycin during evaluation, integrating diagnostic criteria, and obtaining specialist multidrug planning reduce this hazard."
+  }
+};
+const infectionCases = [
+  {
+    "id": "cf-podhaler-cycle-supply",
+    "question": "TOBI Podhaler is prescribed as four 28 mg capsules per dose, twice daily for a 28-day treatment period. How many capsules and how much nominal capsule drug content are required?",
+    "choices": [
+      "224 capsules containing 6,272 mg",
+      "112 capsules containing 3,136 mg",
+      "56 capsules containing 1,568 mg",
+      "224 capsules containing 224 mg"
+    ],
+    "answer": 0,
+    "rationale": "4 capsules per dose times 2 doses per day times 28 days equals 224 capsules. 224 times 28 mg equals 6,272 mg. 112 and 56 capsules cover only 14 and 7 days; 224 mg incorrectly treats each capsule as 1 mg. Capsule content does not measure lung deposition.",
+    "reviewHref": "#cf-infection-exacerbations"
+  },
+  {
+    "id": "cf-tobramycin-ampule-concentration",
+    "question": "A CF prescription changes from TOBI 300 mg/5 mL to BETHKIS 300 mg/4 mL. Which dose and concentration statement is correct?",
+    "choices": [
+      "Both doses use the full ampule; TOBI is 60 mg/mL and BETHKIS is 75 mg/mL",
+      "BETHKIS requires 5 mL because all inhaled tobramycin doses have that volume",
+      "BETHKIS requires half the ampule because its concentration is higher",
+      "Both concentrations are 300 mg/mL because the dose is 300 mg"
+    ],
+    "answer": 0,
+    "rationale": "300 divided by 5 equals 60 mg/mL and 300 divided by 4 equals 75 mg/mL. Both full ampules provide 300 mg. Using 5 mL exceeds the BETHKIS ampule volume, half the ampule provides only 150 mg, and dose mass is not concentration. Verify the product-specific nebulizer and compressor as well.",
+    "reviewHref": "#cf-infection-exacerbations"
+  },
+  {
+    "id": "cf-cayston-missed-dose-spacing",
+    "question": "A patient misses the 2 p.m. CAYSTON dose and remembers at 5 p.m.; the next dose is planned for 8 p.m. Which response respects the label if the CF team retains that next-dose time?",
+    "choices": [
+      "Skip the missed dose rather than giving doses only 3 hours apart",
+      "Take the missed dose at 5 p.m. and the next at 8 p.m.",
+      "Combine two vials into one 8 p.m. nebulizer dose",
+      "Use the missed vial by intravenous injection"
+    ],
+    "answer": 0,
+    "rationale": "5 p.m. to 8 p.m. is 3 hours, below CAYSTON's minimum 4-hour spacing. The label allows a missed dose only when the spacing requirement can be maintained. Combining vials is not the prescribed single dose, and CAYSTON is for inhalation through Altera, not injection. Ask the CF team about a revised schedule when needed.",
+    "reviewHref": "#cf-infection-exacerbations"
+  },
+  {
+    "id": "cf-ntm-positive-culture-hold",
+    "question": "A clinically stable person taking chronic azithromycin has a new positive NTM sputum culture. NTM pulmonary disease has not yet been established. What is the appropriate immediate medication step?",
+    "choices": [
+      "Withhold chronic azithromycin while specialist evaluation for NTM pulmonary disease proceeds",
+      "Continue azithromycin until all diagnostic criteria are fulfilled",
+      "Treat the culture result as definite disease and use azithromycin alone",
+      "Dismiss the result because the person feels stable"
+    ],
+    "answer": 0,
+    "rationale": "CF Foundation guidance calls for withholding chronic azithromycin during a positive NTM culture evaluation to avoid resistance selection. Confirmation is not required before holding it, but culture positivity alone does not establish disease. Stability does not justify dismissal, and macrolide monotherapy is not the treatment for established disease.",
+    "reviewHref": "#cf-infection-exacerbations"
+  },
+  {
+    "id": "cf-bethkis-room-temperature-limit",
+    "question": "Unexpired BETHKIS ampules stayed in their foil pouches at 24 degrees C for 29 days. They appear clear. What follows the product label?",
+    "choices": [
+      "Do not use: room-temperature storage has exceeded 28 days",
+      "Use because the printed refrigerated expiration has not passed",
+      "Use because clear solution overrides the storage limit",
+      "Refrigerate overnight to restart the 28-day allowance"
+    ],
+    "answer": 0,
+    "rationale": "24 degrees C is within the allowed temperature ceiling, but 29 days exceeds the 28-day duration. Refrigerated expiry and clear appearance do not override that limit, and returning the ampules to the refrigerator does not erase the previous exposure.",
+    "reviewHref": "#cf-infection-exacerbations"
+  }
+];
+export const cysticFibrosisQuestionBank = [...originalCysticFibrosisQuestionBank.map((question) => ({ ...question, ...(sourceReviewedEnzymeSafetyQuestions[question.id] || {}), ...(reviewedNutritionSystemicQuestions[question.id] || {}), ...(reviewedDiagnosisAirwayPulmonaryQuestions[question.id] || {}), ...(reviewedInfectionQuestions[question.id] || {}) })), ...nutritionSystemicCases, ...diagnosisAirwayPulmonaryCases, ...infectionCases];

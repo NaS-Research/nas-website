@@ -11,8 +11,8 @@ const diagrams={
 export default function CysticFibrosisVisual({type}) {
   const d=diagrams[type];
   if(!d)return null;
-  const labelStyle=["cf-nutrition","cf-systemic","cf-biology","cf-airway","cf-pulmonary"].includes(type) ? {fontSize:"1rem",lineHeight:1.55} : undefined;
-  const gridStyle=["cf-biology","cf-airway","cf-pulmonary"].includes(type) ? {gridTemplateColumns:"repeat(auto-fit, minmax(min(100%, 14rem), 1fr))"} : undefined;
+  const labelStyle=["cf-nutrition","cf-systemic","cf-biology","cf-airway","cf-pulmonary","cf-infection"].includes(type) ? {fontSize:"1rem",lineHeight:1.55} : undefined;
+  const gridStyle=["cf-biology","cf-airway","cf-pulmonary","cf-infection"].includes(type) ? {gridTemplateColumns:"repeat(auto-fit, minmax(min(100%, 14rem), 1fr))"} : undefined;
   return <figure className="chol-visual" style={{"--chol-accent":d.accent}} aria-label={d.title}>
     <figcaption><span>{d.eyebrow}</span><strong>{d.title}</strong></figcaption>
     <div className="chol-visual__grid" style={gridStyle}>{d.columns.map(([n,m,e],i)=><div key={n}>

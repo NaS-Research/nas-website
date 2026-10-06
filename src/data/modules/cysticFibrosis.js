@@ -193,18 +193,75 @@ export const cysticFibrosisModule = {
       }
     },
     {
-      slug:"cf-infection-exacerbations",title:"Airway Microbiology and Antimicrobial Strategy",visual:"cf-infection",
-      summary:"CF airway infection changes across age and time. Culture history and clinical response guide eradication, chronic suppression, and acute treatment more reliably than one isolated susceptibility report.",
-      concepts:["Culture surveillance","Initial Pseudomonas eradication","Chronic inhaled antibiotics","Azithromycin and NTM safety","Pulmonary exacerbations"],
-      application:"Compare current symptoms and lung function with baseline, retrieve the longitudinal microbiology record, distinguish new acquisition from chronic infection, and design a culture-informed plan with a response checkpoint.",
-      lesson:[
-        {heading:"Read microbiology longitudinally",body:"Staphylococcus aureus, Haemophilus influenzae, Pseudomonas aeruginosa, Burkholderia cepacia complex, Achromobacter, Stenotrophomonas, fungi, and nontuberculous mycobacteria can have different implications. Oropharyngeal, sputum, induced, or bronchoscopy samples have different strengths. Trend organism, density, phenotype, susceptibility, symptoms, imaging, and lung function."},
-        {heading:"Eradicate new Pseudomonas promptly",body:"Newly acquired Pseudomonas generally triggers an eradication protocol, commonly inhaled tobramycin under center guidance. Routine prophylactic antipseudomonal antibiotic use in culture-negative patients is not the same strategy. Confirm follow-up cultures and avoid declaring eradication solely because symptoms improve."},
-        {heading:"Suppress chronic infection by route and cycle",body:"Inhaled tobramycin, aztreonam lysine, and other center-directed regimens deliver high airway exposure for chronic Pseudomonas, with product-specific continuous or cyclic schedules. Monitor bronchospasm, voice change, resistance, renal and auditory risk when systemic aminoglycoside exposure occurs, technique, equipment, and adherence. Azithromycin can reduce exacerbations but requires NTM screening and should be withheld with active NTM disease."},
-        {heading:"Treat each organism in clinical context",body:"Methicillin-resistant Staphylococcus aureus, Burkholderia cepacia complex, Achromobacter, Stenotrophomonas, fungi, and nontuberculous mycobacteria require organism-specific interpretation and specialist input. Distinguish acquisition, chronic infection, colonization, allergic disease, and invasive disease. Antibiotic choice must preserve future options while treating the current clinical problem."},
+      "slug": "cf-infection-exacerbations",
+      "title": "Airway Microbiology and Antimicrobial Strategy",
+      "visual": "cf-infection",
+      "summary": "CF airway infection changes across age and time. Culture history and clinical response guide eradication, chronic suppression, and acute treatment more reliably than one isolated susceptibility report.",
+      "concepts": [
+        "Longitudinal cultures and specimen choice",
+        "New Pseudomonas eradication",
+        "Product-specific inhaled antibiotic delivery",
+        "Dose intervals, cycles, and storage",
+        "Azithromycin and positive NTM cultures"
       ],
-      keyPoints:["One culture is not the whole infection history.","New Pseudomonas prompts eradication.","Inhaled antibiotics require product-specific cycling.","Azithromycin requires NTM awareness."],
-      check:{question:"What is an appropriate response to a new Pseudomonas aeruginosa airway acquisition in CF?",choices:["Begin an established eradication protocol and obtain follow-up cultures","Wait for chronic infection before treating","Start lifelong systemic aminoglycoside therapy automatically","Use an inhaled corticosteroid as eradication therapy"],answer:0,rationale:"Early eradication aims to prevent establishment of chronic Pseudomonas infection.",reviewHref:"#cf-infection-exacerbations"},
+      "application": "For a new Pseudomonas culture, distinguish eradication from chronic suppression, then verify the exact product, device, dose, interval, cycle, and safety risks. For a positive NTM culture, address chronic azithromycin immediately while specialist diagnostic evaluation proceeds.",
+      "lesson": [
+        {
+          "heading": "Read microbiology longitudinally",
+          "body": "CF airway surveillance follows organism history together with symptoms, lung function, prior antibiotics, and clinical response. Staphylococcus aureus and Haemophilus influenzae are common early organisms; Pseudomonas aeruginosa becomes an important chronic pathogen. Tell the laboratory that the sample is from a person with CF so appropriate processing is used. Sputum, induced sputum, or other specimens have different strengths; use the best feasible respiratory sample under the center plan. Routine oropharyngeal cultures are appropriate for Pseudomonas surveillance in people who cannot expectorate, but oropharyngeal swabs are not recommended for NTM screening. One negative or positive culture does not replace the longitudinal history."
+        },
+        {
+          "heading": "Eradicate new Pseudomonas promptly",
+          "body": "Initial or new Pseudomonas growth should prompt an established eradication protocol and follow-up cultures. CF Foundation guidance strongly recommends inhaled tobramycin 300 mg twice daily for 28 days for initial or new growth; review the patient's age, delivery system, and individual risks with the CF center. This early eradication course is distinct from ongoing suppressive cycles for chronic infection. Do not give antipseudomonal prophylaxis solely to prevent acquisition when cultures remain negative. Persistent or recurrent growth requires specialist reassessment rather than assuming that symptom improvement proves eradication."
+        },
+        {
+          "heading": "Suppress chronic infection by route and cycle",
+          "body": "Inhaled tobramycin or aztreonam can reduce the burden of chronic Pseudomonas infection. The products below have labeled 28-day treatment periods followed by 28 days off; use a written cycle calendar. Some centers prescribe individualized alternating or continuous regimens, which require an explicit specialist plan rather than treating all antibiotics as schedule-interchangeable. Assess the delivered dose, device, adherence, bronchospasm, voice symptoms, response, and access. Inhalation does not eliminate aminoglycoside ototoxicity or nephrotoxicity risk: review hearing, tinnitus, renal disease, concurrent systemic aminoglycosides, and the need for individualized monitoring. Known aminoglycoside hypersensitivity is a contraindication to these tobramycin products. A randomized continuous-alternating trial was underpowered and did not establish superiority; its existence does not justify a universal regimen."
+        },
+        {
+          "heading": "Treat each organism in clinical context",
+          "body": "MRSA, Burkholderia cepacia complex, fungi, and NTM can have different consequences and need organism-specific specialist evaluation. Distinguish recovery of an organism from clinically significant infection, and distinguish Aspergillus-related allergic bronchopulmonary aspergillosis from a fungal culture alone. During deterioration, select the treatment setting, route, and antimicrobial regimen from severity, current and prior cultures, susceptibility, allergies, organ function, and previous response. A chronic inhaled suppression prescription does not automatically provide sufficient treatment for an acute exacerbation. Increase appropriate airway clearance and reassess recovery against the person's stable baseline; susceptibility alone does not fully predict clinical response."
+        },
+        {
+          "heading": "Give the full tobramycin solution dose with its device",
+          "body": "For labeled CF treatment in patients at least 6 years old, TOBI and KITABIS PAK contain 300 mg in 5 mL, whereas BETHKIS contains 300 mg in 4 mL. Each dose uses the entire single-dose ampule twice daily, as close to 12 hours apart as possible and never less than 6 hours apart, for 28 days on and 28 days off. The solutions have different concentrations: 60 mg/mL versus 75 mg/mL. Do not infer a smaller dose from the smaller ampule volume. TOBI uses a PARI LC PLUS nebulizer with a DeVilbiss Pulmo-Aide compressor; KITABIS PAK includes its PARI LC PLUS nebulizer and specifies the DeVilbiss Pulmo-Aide compressor. BETHKIS specifies a PARI LC PLUS nebulizer with a PARI Vios compressor. These are inhaled solutions, not injectable products. Do not dilute them or mix them with dornase or other medicines in the nebulizer; follow the product's administration instructions and the center's inhaled-treatment order."
+        },
+        {
+          "heading": "Keep Podhaler capsules out of the mouth",
+          "body": "TOBI Podhaler is labeled for CF with Pseudomonas in patients at least 6 years old. A dose is four 28 mg capsules, or 112 mg, inhaled through the Podhaler device twice daily, as close to 12 hours apart as possible and at least 6 hours apart. Use 28 days on and 28 days off. The capsules must not be swallowed or placed in a nebulizer. Remove each capsule from its blister immediately before use, use only the specified device, and follow its instructions to complete each capsule's inhalation. Four capsules per dose times two doses per day equals eight capsules daily; a 28-day treatment period requires 224 capsules, containing 6,272 mg in total. This nominal capsule content is not a calculation of the amount deposited in the lungs. Replace the device with the new one supplied in each weekly pack."
+        },
+        {
+          "heading": "Prepare and space aztreonam separately",
+          "body": "CAYSTON is inhaled aztreonam for CF patients at least 7 years old with Pseudomonas. Reconstitute one 75 mg vial with the supplied 1 mL of 0.17% sodium chloride and administer it promptly through the Altera nebulizer system only. Do not substitute injectable aztreonam, a different diluent, or another nebulizer. Give 75 mg three times daily for 28 days, followed by 28 days off, with at least 4 hours between doses. An 8 a.m., 2 p.m., and 8 p.m. schedule illustrates three waking-hour doses spaced 6 hours apart; the label does not require waking overnight to achieve exact 8-hour intervals. Use a prescribed bronchodilator before CAYSTON, give other prescribed inhaled mucolytics first, and give CAYSTON last in that sequence. Do not mix it with other drugs or prepare multiple doses in advance. A missed dose may be taken if subsequent doses can still remain at least 4 hours apart. Watch for allergy and bronchospasm even after bronchodilator pretreatment; known aztreonam allergy is a contraindication."
+        },
+        {
+          "heading": "Protect the formulation during storage",
+          "body": "TOBI, KITABIS PAK solution, and BETHKIS ampules normally require refrigeration at 2 to 8 degrees C, with foil and protection from intense light. Their labels allow room-temperature storage up to 25 degrees C for up to 28 days. Do not use a product beyond its refrigerated expiry or after more than 28 days at room temperature, or if solution is cloudy or contains particles. Yellowing alone can occur without loss of quality when storage conditions remain within the label. Podhaler capsules instead remain in their blister, protected from moisture, at labeled room temperature: 25 degrees C, with permitted excursions from 15 to 30 degrees C. CAYSTON powder and diluent are refrigerated at 2 to 8 degrees C, kept together and protected from light; they may be kept up to 25 degrees C for up to 28 days. Reconstitute CAYSTON immediately before use rather than storing a prepared dose. Record the product and exposure history when planning travel; one inhaled drug's storage allowance does not transfer to another."
+        },
+        {
+          "heading": "Hold azithromycin during a positive NTM evaluation",
+          "body": "Chronic oral azithromycin can reduce CF pulmonary exacerbations; this CF maintenance use is off label and follows the specialist plan. CF Foundation chronic-medication guidance recommends NTM screening before starting and at 6- or 12-month intervals; the NTM guideline recommends annual culture for stable people who spontaneously expectorate. Symptoms or clinical concern require additional evaluation rather than waiting for a routine interval. A positive NTM culture in someone taking chronic azithromycin calls for withholding it while NTM pulmonary disease is evaluated. Do not wait for confirmed disease before addressing the risk of selecting macrolide resistance. A positive culture alone does not establish NTM pulmonary disease: integrate symptoms, imaging, and microbiologic criteria. Confirmed disease needs a specialist multidrug regimen, not macrolide monotherapy. Review azithromycin-related QT risk and interacting drugs, hearing symptoms, liver status, allergies, and adherence; prior azithromycin-associated cholestatic jaundice or hepatic dysfunction is a contraindication, and signs of hepatitis require stopping the drug and assessment."
+        }
+      ],
+      "keyPoints": [
+        "Separate new acquisition, chronic suppression, and an acute exacerbation.",
+        "Give the full formulation-specific dose through its labeled device.",
+        "Tobramycin doses need at least 6 hours; CAYSTON doses need at least 4.",
+        "Use each product's own cycle and storage instructions.",
+        "Withhold chronic azithromycin during evaluation of a positive NTM culture."
+      ],
+      "check": {
+        "question": "What is an appropriate response to a new Pseudomonas aeruginosa airway acquisition in CF?",
+        "choices": [
+          "Begin an established eradication protocol and obtain follow-up cultures",
+          "Wait until Pseudomonas becomes chronic before considering eradication",
+          "Start lifelong systemic aminoglycoside treatment automatically",
+          "Use inhaled corticosteroid alone to eradicate Pseudomonas"
+        ],
+        "answer": 0,
+        "rationale": "New growth supports prompt eradication under an established CF-center protocol, with follow-up cultures to assess response. Waiting for chronic infection loses the early eradication opportunity. Lifelong systemic aminoglycoside therapy is not an automatic response and adds substantial toxicity; an inhaled corticosteroid is not an antipseudomonal eradication treatment.",
+        "reviewHref": "#cf-infection-exacerbations"
+      }
     },
     {
       slug:"cftr-modulators",title:"CFTR Modulator Pharmacology and Safety",visual:"cf-modulators",
@@ -362,6 +419,15 @@ export const cysticFibrosisModule = {
   ],
   questionBank:cysticFibrosisQuestionBank,
   references:[
+    {"label": "CF Foundation: initial Pseudomonas eradication", "href": "https://www.cff.org/medical-professionals/eradication-initial-p-aeruginosa-clinical-care-guidelines"},
+    {"label": "CF Foundation: NTM screening and positive-culture azithromycin hold", "href": "https://www.cff.org/medical-professionals/nontuberculous-mycobacteria-clinical-care-guidelines"},
+    {"label": "DailyMed: TOBI solution full US prescribing information", "href": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=6a3c3871-1d3a-44d6-8be3-526b30123ef7"},
+    {"label": "DailyMed: KITABIS PAK full US prescribing information", "href": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=da1e5afd-d707-4af1-8935-8195ba6d769f"},
+    {"label": "DailyMed: BETHKIS full US prescribing information", "href": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=1cd3d47b-025f-4705-9daf-cf07725ec223"},
+    {"label": "DailyMed: TOBI Podhaler full US prescribing information", "href": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=c4b5bb1f-e158-4ac1-9c35-e98a416c743a"},
+    {"label": "DailyMed: CAYSTON full US prescribing information", "href": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=67300ca3-8c53-4ce4-8e86-2c03be1f9b8a"},
+    {"label": "DailyMed: oral Zithromax safety and interactions", "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=db52b91e-79f7-4cc1-9564-f2eee8e31c45"},
+    {"label": "CF Foundation: continuous alternating antibiotic trial and evidence limits", "href": "https://apps.cff.org/Trials/Finder/details/295/Aztreonam-for-Inhalation-Solution-AZLI-taken-in-a-Continuous-Alternating-Therapy-Regimen-for-the-Treatment-of-Chronic-Pseudomonas-aeruginosa-lung-infections-in-people-with-CF"},
     {"label": "CF Foundation: diagnosis consensus and current review", "href": "https://www.cff.org/medical-professionals/cf-diagnosis-clinical-care-guidelines"},
     {"label": "CF Foundation: quantitative sweat testing and quality", "href": "https://www.cff.org/medical-professionals/sweat-test-clinical-care-guidelines"},
     {"label": "CF Foundation: 2024 CRMS/CFSPID management guidance", "href": "https://www.cff.org/medical-professionals/cystic-fibrosis-foundation-evidence-based-guidelines-management-crms-cfspid"},
