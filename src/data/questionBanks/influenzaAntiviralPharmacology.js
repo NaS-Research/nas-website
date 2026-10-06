@@ -404,3 +404,248 @@ for (const [id, updates] of Object.entries({
 })) {
   Object.assign(influenzaAntiviralPharmacologyQuestionBank.find((question) => question.id === id), updates);
 }
+
+
+// Whole influenza triage questions reviewed, with stable IDs and keyed indices.
+for (const [id, updates] of Object.entries({
+  "influenza-antiviral-pharmacology-001": {
+    "id": "influenza-antiviral-pharmacology-001",
+    "lesson": "influenza-biology-triage",
+    "question": "Which statement best describes influenza A and B for initial clinical triage?",
+    "choices": [
+      "Either type can cause an acute respiratory illness that becomes severe, especially in a high-risk host",
+      "Influenza B cannot cause hospitalization or severe respiratory illness",
+      "Influenza requires fever in every patient before it can be suspected",
+      "A typical influenza symptom pattern excludes every other respiratory pathogen"
+    ],
+    "answer": 0,
+    "rationale": "The book identifies both A and B as causes of potentially severe illness. Symptoms vary, fever can be absent, and mimics or coinfections remain possible.",
+    "reviewHref": "#influenza-biology-triage"
+  },
+  "influenza-antiviral-pharmacology-002": {
+    "id": "influenza-antiviral-pharmacology-002",
+    "lesson": "influenza-biology-triage",
+    "question": "Which approach best guides initial assessment of suspected influenza?",
+    "choices": [
+      "Assess onset, severity, host risk, care setting and competing respiratory diagnoses",
+      "Choose treatment from cough intensity alone without assessing the host",
+      "Treat a positive SARS-CoV-2 result as proof that influenza is absent",
+      "Exclude influenza solely because the patient received this season's vaccine"
+    ],
+    "answer": 0,
+    "rationale": "Triage connects illness probability and trajectory to treatment urgency. Neither SARS-CoV-2 detection nor prior influenza vaccination excludes influenza infection.",
+    "reviewHref": "#influenza-biology-triage"
+  },
+  "influenza-antiviral-pharmacology-003": {
+    "id": "influenza-antiviral-pharmacology-003",
+    "lesson": "influenza-biology-triage",
+    "question": "Which assessment best identifies the influenza decision state?",
+    "choices": [
+      "Assess respiratory symptoms, oxygenation, hydration, mental status, onset and high-risk conditions",
+      "Assess only the measured temperature and stop if fever is absent",
+      "Record only a rapid antigen test result and omit the clinical examination",
+      "Assess age alone and ignore pregnancy, immune status and chronic disease"
+    ],
+    "answer": 0,
+    "rationale": "Symptoms, severity and host factors jointly determine the decision. Fever and rapid antigen results cannot independently exclude influenza or define treatment urgency.",
+    "reviewHref": "#influenza-biology-triage"
+  },
+  "influenza-antiviral-pharmacology-004": {
+    "id": "influenza-antiviral-pharmacology-004",
+    "lesson": "influenza-biology-triage",
+    "question": "Which interpretation of respiratory symptoms is most likely to cause a triage error?",
+    "choices": [
+      "Treating every respiratory illness as influenza without considering mimics or coinfection",
+      "Considering COVID-19 when influenza and SARS-CoV-2 are circulating",
+      "Assessing oxygenation when a patient reports breathing difficulty",
+      "Reviewing chronic disease and pregnancy when estimating complication risk"
+    ],
+    "answer": 0,
+    "rationale": "Influenza overlaps with other respiratory infections and can coexist with them. The other actions retain appropriate differential and risk assessment.",
+    "reviewHref": "#influenza-biology-triage"
+  },
+  "influenza-antiviral-pharmacology-005": {
+    "id": "influenza-antiviral-pharmacology-005",
+    "lesson": "influenza-biology-triage",
+    "question": "Which statement correctly defines priority influenza treatment groups?",
+    "choices": [
+      "Hospitalization, severe or progressive illness, or high complication risk supports treatment as soon as possible",
+      "A priority patient must always have a positive rapid antigen test before treatment",
+      "Only otherwise healthy adults with symptoms for less than 24 hours qualify",
+      "Symptoms beyond 48 hours exclude treatment in every hospitalized patient"
+    ],
+    "answer": 0,
+    "rationale": "The book and CDC retain hospitalized, severely ill and high-risk patients for treatment even after 48 hours. CDC also directs empiric treatment without waiting for confirmation.",
+    "reviewHref": "#influenza-biology-triage"
+  },
+  "influenza-antiviral-pharmacology-006": {
+    "id": "influenza-antiviral-pharmacology-006",
+    "lesson": "influenza-biology-triage",
+    "question": "A hospitalized patient has suspected influenza and a negative rapid antigen test. What best fits current guidance?",
+    "choices": [
+      "Start empiric antiviral treatment promptly and arrange molecular influenza testing",
+      "Withhold treatment because a negative rapid antigen result excludes influenza",
+      "Wait for molecular confirmation before giving any influenza antiviral",
+      "Stop infection-control measures because the antigen result is negative"
+    ],
+    "answer": 0,
+    "rationale": "CDC recommends molecular testing in hospitalized patients and prompt empiric treatment. A negative rapid antigen result does not exclude influenza or remove infection-control needs.",
+    "reviewHref": "#influenza-biology-triage"
+  },
+  "influenza-antiviral-pharmacology-007": {
+    "id": "influenza-antiviral-pharmacology-007",
+    "lesson": "influenza-biology-triage",
+    "question": "Which host assessment best identifies a patient needing prompt influenza treatment consideration?",
+    "choices": [
+      "Review pregnancy or recent postpartum status, age, chronic disease, immune status and illness severity",
+      "Classify every adult younger than 65 as low risk regardless of other history",
+      "Exclude every vaccinated person from high-risk assessment",
+      "Use symptom duration alone and omit hospitalization or worsening illness"
+    ],
+    "answer": 0,
+    "rationale": "Host risk includes more than older age. Pregnancy, the early postpartum period, immunocompromise and relevant chronic disease matter, alongside severity and care setting.",
+    "reviewHref": "#influenza-biology-triage"
+  },
+  "influenza-antiviral-pharmacology-008": {
+    "id": "influenza-antiviral-pharmacology-008",
+    "lesson": "influenza-biology-triage",
+    "question": "Which action is the clearest avoidable delay in a high-risk patient with suspected influenza?",
+    "choices": [
+      "Waiting for laboratory confirmation before starting indicated empiric treatment",
+      "Collecting a respiratory specimen while treatment is started",
+      "Reviewing renal function when choosing an oseltamivir regimen",
+      "Reassessing hypoxemia and a competing diagnosis while treating influenza"
+    ],
+    "answer": 0,
+    "rationale": "CDC advises treatment as soon as possible without waiting for laboratory confirmation in priority groups. Testing, dosing review and parallel complication evaluation remain appropriate.",
+    "reviewHref": "#influenza-biology-triage"
+  },
+  "influenza-antiviral-pharmacology-009": {
+    "id": "influenza-antiviral-pharmacology-009",
+    "lesson": "influenza-biology-triage",
+    "question": "Which statement correctly describes bacterial coinfection during influenza?",
+    "choices": [
+      "Bacterial infection can coexist with influenza or appear later despite antiviral treatment",
+      "A positive influenza result excludes simultaneous bacterial pneumonia",
+      "An influenza antiviral directly treats the usual bacterial causes of pneumonia",
+      "Finishing an antiviral course guarantees that secondary bacterial infection cannot occur"
+    ],
+    "answer": 0,
+    "rationale": "The book directs attention to secondary bacterial infection. IDSA confirms coinfection may be present initially or emerge later; influenza antiviral exposure does not treat bacterial disease or exclude it.",
+    "reviewHref": "#influenza-biology-triage"
+  },
+  "influenza-antiviral-pharmacology-010": {
+    "id": "influenza-antiviral-pharmacology-010",
+    "lesson": "influenza-biology-triage",
+    "question": "A patient treated for influenza improves, then develops recurrent fever, dyspnea and worsening oxygenation. What is the best next action?",
+    "choices": [
+      "Urgently reassess and investigate bacterial coinfection and other complications, adding antibacterial treatment when indicated",
+      "Assume expected recovery and defer evaluation until the antiviral course ends",
+      "Automatically double the antiviral dose instead of investigating the decline",
+      "Exclude bacterial disease because the patient has already received an influenza antiviral"
+    ],
+    "answer": 0,
+    "rationale": "Deterioration after initial improvement warrants prompt investigation and empiric treatment of bacterial coinfection under IDSA guidance, while other causes and influenza treatment are assessed.",
+    "reviewHref": "#influenza-biology-triage"
+  },
+  "influenza-antiviral-pharmacology-011": {
+    "id": "influenza-antiviral-pharmacology-011",
+    "lesson": "influenza-biology-triage",
+    "question": "Which assessment best addresses possible bacterial pneumonia complicating influenza?",
+    "choices": [
+      "Assess illness trajectory, respiratory and circulatory severity, chest examination, and indicated imaging or microbiology",
+      "Use sputum color alone as definitive proof of a bacterial cause",
+      "Use a positive influenza test as proof that chest imaging is never relevant",
+      "Assess antiviral adherence alone and omit new oxygenation or blood-pressure changes"
+    ],
+    "answer": 0,
+    "rationale": "Coinfection evaluation follows the severity and course of illness. Neither sputum appearance nor viral detection settles the diagnosis; examination and appropriate investigations inform management.",
+    "reviewHref": "#influenza-biology-triage"
+  },
+  "influenza-antiviral-pharmacology-012": {
+    "id": "influenza-antiviral-pharmacology-012",
+    "lesson": "influenza-biology-triage",
+    "question": "Which assumption most risks missing bacterial coinfection in influenza?",
+    "choices": [
+      "Assuming antiviral treatment excludes bacterial pneumonia",
+      "Investigating bacterial infection when severe pneumonia and hypotension are present",
+      "Reassessing fever that returns after initial improvement",
+      "Considering another cause when illness deteriorates during antiviral treatment"
+    ],
+    "answer": 0,
+    "rationale": "Antivirals act against influenza, not bacterial pathogens. IDSA recommends investigation and treatment in severe initial disease or deterioration after improvement, with broader cause evaluation as needed.",
+    "reviewHref": "#influenza-biology-triage"
+  },
+  "influenza-antiviral-pharmacology-013": {
+    "id": "influenza-antiviral-pharmacology-013",
+    "lesson": "influenza-biology-triage",
+    "question": "Which statement correctly describes the relationship between influenza antivirals and vaccination?",
+    "choices": [
+      "Treatment and prophylaxis complement seasonal vaccination rather than replacing it",
+      "A completed treatment course supplies permanent influenza immunity",
+      "Prophylaxis removes the need for future seasonal vaccination",
+      "Influenza vaccination guarantees that later respiratory illness cannot be influenza"
+    ],
+    "answer": 0,
+    "rationale": "The book identifies seasonal vaccination as the principal prevention measure. Drug exposure is limited in duration, and vaccination does not completely exclude infection.",
+    "reviewHref": "#influenza-biology-triage"
+  },
+  "influenza-antiviral-pharmacology-014": {
+    "id": "influenza-antiviral-pharmacology-014",
+    "lesson": "influenza-biology-triage",
+    "question": "What prevention plan best fits an adult being treated for influenza?",
+    "choices": [
+      "Retain seasonal vaccination planning and appropriate respiratory infection-control measures",
+      "Replace future seasonal vaccination with the current antiviral course",
+      "Stop respiratory precautions as soon as the first antiviral dose is taken",
+      "Assume vaccine history makes assessment of current influenza unnecessary"
+    ],
+    "answer": 0,
+    "rationale": "Antivirals do not replace vaccination or appropriate infection-control measures. The book describes transmission around symptom onset, and vaccination history does not rule out current influenza.",
+    "reviewHref": "#influenza-biology-triage"
+  },
+  "influenza-antiviral-pharmacology-015": {
+    "id": "influenza-antiviral-pharmacology-015",
+    "lesson": "influenza-biology-triage",
+    "question": "Which history best informs influenza vaccination and antiviral counseling?",
+    "choices": [
+      "Review vaccine product and timing, antiviral exposure, immune status and relevant contraindications",
+      "Record only that a vaccine was given and assume all product timing rules are identical",
+      "Treat live intranasal vaccine and inactivated vaccine as having identical antiviral interactions",
+      "Omit vaccine history because the patient has started an antiviral"
+    ],
+    "answer": 0,
+    "rationale": "The live intranasal product has antiviral timing concerns. Product-specific history is therefore needed; treatment does not remove the need to preserve seasonal prevention.",
+    "reviewHref": "#influenza-biology-triage"
+  },
+  "influenza-antiviral-pharmacology-016": {
+    "id": "influenza-antiviral-pharmacology-016",
+    "lesson": "influenza-biology-triage",
+    "question": "Which prevention claim should be corrected after an influenza antiviral course?",
+    "choices": [
+      "The completed course is a permanent substitute for seasonal influenza vaccination",
+      "Seasonal vaccination remains part of prevention when there is no contraindication",
+      "A vaccinated patient can still develop influenza",
+      "Antiviral treatment is an adjunct to influenza vaccination"
+    ],
+    "answer": 0,
+    "rationale": "Antiviral exposure does not confer permanent seasonal protection. Vaccination remains central, while incomplete protection means symptomatic vaccinated patients still require appropriate assessment.",
+    "reviewHref": "#influenza-biology-triage"
+  },
+  "influenza-antiviral-pharmacology-177": {
+    "id": "influenza-antiviral-pharmacology-177",
+    "lesson": "influenza-biology-triage",
+    "question": "A pregnant patient at high risk presents with suspected influenza. Testing will take hours. What is the priority?",
+    "choices": [
+      "Start empiric oseltamivir as soon as possible",
+      "Wait for confirmation before treating",
+      "Use baloxavir monotherapy",
+      "Use an adamantane"
+    ],
+    "answer": 0,
+    "rationale": "Pregnancy is a high-risk state; the book and CDC prefer oseltamivir and CDC recommends prompt empiric treatment without waiting for confirmation. CDC does not recommend baloxavir in pregnancy, and adamantanes are not recommended for influenza because of resistance.",
+    "reviewHref": "#influenza-biology-triage"
+  }
+})) {
+  Object.assign(influenzaAntiviralPharmacologyQuestionBank.find((question) => question.id === id), updates);
+}

@@ -191,3 +191,82 @@ for (const [slug, updates] of Object.entries({
 })) {
   Object.assign(influenzaAntiviralPharmacologyModule.submodules.find((lesson) => lesson.slug === slug), updates);
 }
+
+
+// Complete influenza biology and triage reconciliation against authorized sources.
+Object.assign(influenzaAntiviralPharmacologyModule.submodules.find((lesson) => lesson.slug === "influenza-biology-triage"), {
+  "slug": "influenza-biology-triage",
+  "title": "Recognize the Influenza Decision State",
+  "visual": "influenza-antiviral-influenza-biology-triage",
+  "summary": "Recognize suspected influenza, identify priority treatment groups, interpret testing limits and reassess complications while preserving seasonal prevention.",
+  "concepts": [
+    "Influenza A and B syndrome",
+    "High-risk host and severity",
+    "Empiric treatment",
+    "Testing and coinfection",
+    "Deterioration and prevention"
+  ],
+  "application": "Record onset, host risk, illness trajectory and care setting; arrange prompt treatment and testing without delaying evaluation of respiratory or circulatory danger.",
+  "lesson": [
+    {
+      "heading": "Recognize the syndrome",
+      "body": "Influenza A and B commonly cause human seasonal influenza and can each cause severe respiratory illness. Abrupt fever or chills, cough, myalgia, headache, fatigue and sore throat support the syndrome, but fever may be absent. COVID-19 and other respiratory infections can resemble or coexist with influenza. The book describes contagiousness beginning about one day before symptoms and lasting five to seven days after illness begins; do not use that summary as an individualized isolation order."
+    },
+    {
+      "heading": "Identify the high-risk host",
+      "body": "The book highlights pregnancy, immunocompromise, children younger than 5 years, adults 65 years or older, diabetes, asthma and cardiovascular disease. CDC further emphasizes children younger than 2 years and risk through two weeks after pregnancy ends. Its risk groups also include chronic lung, neurologic, blood, endocrine, renal, hepatic or metabolic disease; severe obesity with BMI at least 40 kg/m2; long-term salicylate use below age 19; long-term-care residence; and conditions that impair coughing, swallowing or airway clearance. Assess the actual history rather than age alone."
+    },
+    {
+      "heading": "Treat priority patients now",
+      "body": "Hospitalization, severe or complicated or progressive illness, and high risk for complications support empiric antiviral treatment as soon as possible when influenza is suspected. Do not wait for laboratory confirmation. The greatest benefit is with early treatment, but passing 48 hours does not exclude these priority patients. CDC recommends oral or enteric oseltamivir for hospitalized patients and prefers oral oseltamivir during pregnancy. A stable, otherwise healthy outpatient within two days can be considered for treatment by clinical judgment; that is a different decision from the priority groups."
+    },
+    {
+      "heading": "Interpret testing without delaying care",
+      "body": "The book distinguishes molecular assays from antigen detection. A negative rapid antigen test does not exclude influenza, especially during high community activity; a rapid antigen test is not the same as a rapid molecular assay. Hospitalized patients should have molecular influenza testing while empiric treatment proceeds. During influenza and SARS-CoV-2 co-circulation, a positive result for either virus does not exclude the other. Symptoms, vaccination history and a single negative rapid antigen result must not replace assessment of risk, severity and competing diagnoses."
+    },
+    {
+      "heading": "Detect deterioration",
+      "body": "Breathing difficulty, hypoxemia, persistent chest pain, confusion, dehydration or circulatory instability needs urgent clinical reassessment. Fever or cough that improves and then returns or worsens can signal a complication. Influenza pneumonia can be viral, bacterial or mixed; an antiviral does not treat bacterial infection. IDSA recommends investigating and empirically treating bacterial coinfection when influenza presents with severe disease or when a patient deteriorates after initial improvement, alongside influenza treatment. Consider bacterial investigation if improvement fails after three to five antiviral-treatment days. Select examination, imaging and microbiology for the clinical setting; no single symptom proves a bacterial cause."
+    },
+    {
+      "heading": "Preserve prevention",
+      "body": "Seasonal vaccination remains the main prevention measure and is recommended from age 6 months when there is no contraindication. An antiviral course does not provide permanent immunity, and prior vaccination does not rule out influenza in a symptomatic patient. Continue respiratory hygiene and appropriate infection-control or outbreak measures. Confirm the vaccine product and antiviral timing because live intranasal vaccine has interaction concerns; do not assume the same timing rule applies to every vaccine product."
+    }
+  ],
+  "keyPoints": [
+    "Treat suspected influenza promptly in hospitalized, severe, progressive or high-risk patients.",
+    "A negative rapid antigen test and prior vaccination do not rule out influenza.",
+    "New deterioration requires evaluation for bacterial disease and other complications.",
+    "Antivirals complement seasonal vaccination and infection-control measures."
+  ],
+  "check": {
+    "question": "Which patient has a priority indication for prompt empiric influenza treatment while confirmatory testing is arranged?",
+    "choices": [
+      "A hospitalized patient with suspected influenza whose test result is pending",
+      "A healthy asymptomatic adult without known influenza exposure",
+      "A low-risk adult whose only symptom is unchanged chronic allergic rhinitis",
+      "A recovered adult asking for an antiviral course as a substitute for seasonal vaccination"
+    ],
+    "answer": 0,
+    "rationale": "Suspected influenza in a hospitalized patient warrants prompt treatment without waiting for confirmation. The other scenarios do not establish a priority treatment indication.",
+    "reviewHref": "#influenza-biology-triage"
+  }
+});
+influenzaAntiviralPharmacologyModule.references.push(...[
+  {
+    "label": "CDC Signs and Symptoms of Flu",
+    "href": "https://www.cdc.gov/flu/signs-symptoms/index.html"
+  },
+  {
+    "label": "CDC People at Increased Risk for Flu Complications",
+    "href": "https://www.cdc.gov/flu/highrisk/index.htm"
+  },
+  {
+    "label": "CDC Rapid Influenza Diagnostic Tests, June 2026",
+    "href": "https://www.cdc.gov/flu/hcp/testing-methods/clinician_guidance_ridt.html"
+  },
+  {
+    "label": "IDSA Seasonal Influenza Guideline, 2018: bacterial coinfection",
+    "href": "https://www.idsociety.org/practice-guideline/influenza/"
+  }
+]);

@@ -17,7 +17,7 @@ const diagrams = {
     eyebrow: "Clinical state",
     title: "Recognize who cannot wait",
     nodes: ["Syndrome", "Host risk", "Severity", "Complication"],
-    notes: ["Influenza A or B", "Priority treatment", "Setting and trajectory", "Urgent reassessment"],
+    notes: ["Consider mimics", "Priority treatment", "Setting and trajectory", "Urgent reassessment"],
   },
   "influenza-life-cycle-targets": {
     eyebrow: "Viral life cycle",
@@ -96,8 +96,8 @@ export default function InfluenzaAntiviralPharmacologyVisual({ type }) {
           <div key={label}>
             <span>{String(index + 1).padStart(2, "0")}</span>
             <strong>{label}</strong>
-            <em style={type === "influenza-antiviral-oseltamivir-dosing-administration" ? { fontSize: "14px" } : undefined}>{data.notes[index]}</em>
-            <p style={type === "influenza-antiviral-oseltamivir-dosing-administration" ? { fontSize: "14px" } : undefined}>{index < data.nodes.length - 1 ? "Carry the verified input forward." : "Own the next clinical action."}</p>
+            <em style={(type === "influenza-antiviral-oseltamivir-dosing-administration" || type === "influenza-antiviral-influenza-biology-triage") ? { fontSize: "14px" } : undefined}>{data.notes[index]}</em>
+            <p style={(type === "influenza-antiviral-oseltamivir-dosing-administration" || type === "influenza-antiviral-influenza-biology-triage") ? { fontSize: "14px" } : undefined}>{index < data.nodes.length - 1 ? "Carry the verified input forward." : "Own the next clinical action."}</p>
           </div>
         ))}
       </div>
