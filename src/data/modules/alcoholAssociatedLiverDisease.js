@@ -324,3 +324,82 @@ alcoholAssociatedLiverDiseaseModule.references.push(...[
     "href": "https://www.aasld.org/liver-fellow-network/core-series/why-series/why-timing-matters-paracentesis-admission-cirrhosis"
   }
 ]);
+
+
+// Source-reconciled AH diagnosis, confidence and competing-cause assessment.
+const verifiedAldDiagnosisLesson = {
+  "metadata": {
+    "summary": "Diagnose the recent-jaundice syndrome, evaluate competing causes, distinguish confidence from severity, and coordinate urgent care.",
+    "concepts": [
+      "Exposure and jaundice timeline",
+      "Supportive laboratory pattern",
+      "Competing causes",
+      "Diagnostic confidence",
+      "Severity and acute care"
+    ],
+    "application": "Explain why a presentation supports probable or possible AH, identify the remaining differential, and decide whether selective confirmation would change management.",
+    "keyPoints": [
+      "An AST:ALT ratio supports AH but does not prove it.",
+      "Infection and AH can coexist.",
+      "Biopsy is selective when diagnostic uncertainty matters.",
+      "Severity assessment follows diagnosis and does not establish the cause."
+    ]
+  },
+  "bodies": [
+    {
+      "heading": "Recognize the acute clinical syndrome",
+      "body": "Alcohol-associated hepatitis (AH) is a clinical syndrome of recent onset or worsening jaundice in a person with a compatible history of heavy alcohol exposure. It differs from alcohol-related steatosis and from the chronic structural changes of cirrhosis, although these conditions can coexist. Established cirrhosis or every feature of decompensation is not required for AH. First establish the time course and evaluate the patient, rather than assigning the diagnosis from the presence of alcohol use alone."
+    },
+    {
+      "heading": "Reconstruct the exposure and jaundice timeline",
+      "body": "Ask respectfully about the amount and duration of alcohol use, the last drink and the onset of jaundice. The 2024 ACG guideline Table 5 describes probable AH using recent jaundice within 60 days of heavy use, more than 50 g of alcohol per day for at least six months, the compatible laboratory pattern and no other cause of acute hepatitis. Earlier AASLD guidance describes the original consensus exposure thresholds as more than 40 g/day for women or 60 g/day for men, with less than 60 days of abstinence before jaundice. Identify the definition being applied rather than blending these criteria. These diagnostic criteria do not define a safe amount of alcohol for a person with liver disease. An uncertain exposure history lowers diagnostic confidence and deserves further evaluation."
+    },
+    {
+      "heading": "Interpret the pattern and its limitations",
+      "body": "The ACG probable-AH pattern includes bilirubin greater than 3 mg/dL, AST 50 to 400 U/L and an AST:ALT ratio greater than 1.5. Worked example: AST 180 U/L and ALT 90 U/L give 180 ÷ 90 = 2, a supportive ratio. With recent jaundice, bilirubin 6 mg/dL, compatible exposure and no competing cause, this supports probable AH. The ratio alone does not prove the diagnosis. AST and ALT reflect injury; bilirubin, INR, albumin and the clinical course provide different information about liver function and illness. Markedly atypical aminotransferases, such as values in the thousands, require evaluation for alternative or additional causes rather than an automatic AH label."
+    },
+    {
+      "heading": "Actively evaluate competing causes",
+      "body": "Review prescribed drugs, recent changes, nonprescription medicines, supplements and toxins. Evaluate viral hepatitis, biliary obstruction, ischemic injury and autoimmune disease when indicated by the history, examination and investigations. Consider other vascular or metabolic causes in the appropriate context. Recent shock or a temporally plausible drug exposure can confound the diagnosis; neither alcohol history nor an abnormal ratio removes that possibility. Obtain indicated laboratory testing and imaging, and document which alternatives have been assessed and which remain unresolved."
+    },
+    {
+      "heading": "Search for infection and acute complications",
+      "body": "AH can produce systemic inflammatory features without infection, and infection can also coexist. Leukocytosis, tachycardia or a negative initial culture does not settle that distinction. Examine for infection sources and obtain indicated cultures, imaging and other investigations while reassessing the patient. Cirrhosis with ascites requires particular attention: new AKI, confusion or an emergent admission may warrant prompt diagnostic paracentesis even without fever. Address bleeding, encephalopathy, kidney injury, unstable circulation and poor intake urgently. Do not postpone necessary treatment of a strongly suspected infection in an unstable patient while waiting for every result."
+    },
+    {
+      "heading": "Assign confidence and use biopsy selectively",
+      "body": "Probable AH is a compatible clinical syndrome without a major diagnostic confounder. Possible AH has an uncertain exposure history, atypical findings or another plausible cause that limits confidence. Definite AH adds compatible histologic confirmation to the clinical diagnosis. A classic presentation without confounders does not require routine liver biopsy. When uncertainty persists and confirmation could change a treatment decision, discuss selective biopsy with hepatology; the ACG algorithm uses transjugular biopsy in this setting. Biopsy is part of clinical correlation and does not replace the exposure history or the assessment of competing causes."
+    },
+    {
+      "heading": "Assess severity after establishing the syndrome",
+      "body": "Diagnostic confidence and severity answer different questions. The 2024 ACG guideline classifies AH as severe with an original MELD score greater than 20 and moderate at 20 or below. A supplied original MELD of 21 therefore falls in the severe group; 20 does not cross that threshold. Confirm the score version and the correct laboratory units instead of treating MELD, MELD-Na and other versions as automatically interchangeable. A severity score does not establish the cause of hepatitis or make corticosteroids automatically appropriate. Severe AH requires assessment of contraindications, infection and organ function before the liver team selects disease-directed therapy."
+    },
+    {
+      "heading": "Communicate a coordinated initial plan",
+      "body": "A useful handoff states the jaundice and exposure timeline, laboratory pattern, diagnostic confidence, competing causes, severity and urgent complications. Arrange nutrition assessment, indicated supplementation and alcohol use disorder treatment alongside the acute liver evaluation. Continue serial assessment of mental status, circulation, kidney function, electrolytes, liver trajectory and intake. Uncertainty about the final cause does not suspend supportive care or treatment of acute complications. Recovery follow-up should include hepatology, nutrition and a concrete alcohol cessation and AUD care plan."
+    }
+  ],
+  "check": {
+    "question": "In a patient being evaluated for AH, AST falls while INR rises and kidney function worsens. Which interpretation is most appropriate?",
+    "choices": [
+      "Reassess liver function, organ deterioration and complications; a falling injury marker alone does not establish recovery.",
+      "Declare recovery solely because AST has fallen.",
+      "Disregard kidney function because it is unrelated to severity assessment.",
+      "Use the AST decline to exclude every competing cause of hepatitis."
+    ],
+    "rationale": "AST is an injury marker and its trajectory cannot independently establish recovery. INR, kidney function and the clinical course provide separate information relevant to function and severity. Worsening organ function warrants prompt reassessment of complications and competing causes. Neither the AST trend nor one isolated laboratory result excludes the differential."
+  }
+};
+for (const lesson of alcoholAssociatedLiverDiseaseModule.submodules) {
+  if (lesson.slug === "hepatitis-diagnosis") {
+    Object.assign(lesson, verifiedAldDiagnosisLesson.metadata);
+    lesson.lesson = verifiedAldDiagnosisLesson.bodies;
+    Object.assign(lesson.check, verifiedAldDiagnosisLesson.check);
+  }
+}
+alcoholAssociatedLiverDiseaseModule.references.push(...[
+  {
+    "label": "AASLD primary ALD practice guidance (2019): AH diagnostic confidence and selective biopsy.",
+    "href": "https://doi.org/10.1002/hep.30866"
+  }
+]);

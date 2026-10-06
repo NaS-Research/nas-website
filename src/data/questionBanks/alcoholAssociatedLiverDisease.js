@@ -318,3 +318,91 @@ const verifiedAldNacQuestions = {
 for (const item of alcoholAssociatedLiverDiseaseQuestionBank) {
   if (verifiedAldNacQuestions[item.id]) Object.assign(item, verifiedAldNacQuestions[item.id]);
 }
+
+
+// Distinct diagnosis cases retain stable IDs, keys and lesson anchors.
+const verifiedAldDiagnosisQuestions = {
+  "alcohol-associated-liver-disease-069": {
+    "question": "A man reports 80 g of alcohol daily for two years, last used two weeks ago. Jaundice began one week ago. Bilirubin is 6 mg/dL, AST 180 U/L and ALT 90 U/L; evaluation identifies no competing acute cause. Which assessment best fits the 2024 ACG criteria?",
+    "choices": [
+      "Probable AH based on the compatible clinical syndrome, without mandatory routine biopsy.",
+      "Definite AH established by the AST:ALT ratio alone.",
+      "AH is excluded because cirrhosis has not already been proven.",
+      "AH requires bilirubin below 3 mg/dL."
+    ],
+    "rationale": "The exposure and recent-jaundice timeline, bilirubin above 3 mg/dL, AST 50 to 400 U/L, ratio 180/90 = 2 and absence of a competing cause support probable AH. Histologic confirmation would be needed for the definite category; the ratio alone does not establish it. Established cirrhosis is not a prerequisite, and a bilirubin below 3 mg/dL does not match this probable-AH criterion."
+  },
+  "alcohol-associated-liver-disease-070": {
+    "question": "AST is 180 U/L and ALT 90 U/L, but the jaundice timeline and alcohol exposure history have not been obtained. What can the laboratory ratio establish at this stage?",
+    "choices": [
+      "The ratio is 2 and can support a compatible pattern, but cannot establish AH by itself.",
+      "The ratio is 0.5 and proves AH independently of history.",
+      "The ratio is 2 and eliminates the need to assess competing causes.",
+      "The ratio is 270 and establishes definite AH without biopsy."
+    ],
+    "rationale": "Dividing AST by ALT gives 180/90 = 2. A ratio above 1.5 is one component of the ACG probable-AH pattern, interpreted with jaundice, exposure, bilirubin, AST range and the differential. It does not independently establish the clinical syndrome or exclude alternatives. Addition of the enzyme values is not the ratio."
+  },
+  "alcohol-associated-liver-disease-071": {
+    "question": "A patient with heavy alcohol exposure develops jaundice after circulatory shock. AST is 2,500 U/L and ALT 2,200 U/L. What is the best diagnostic approach?",
+    "choices": [
+      "Evaluate ischemic injury and other competing or additional causes before assigning AH as the explanation.",
+      "Diagnose probable AH solely because heavy alcohol exposure is present.",
+      "Treat the markedly elevated enzymes as the typical ACG probable-AH pattern.",
+      "Exclude all additional causes whenever jaundice follows alcohol exposure."
+    ],
+    "rationale": "Shock is an important diagnostic confounder, and enzymes in the thousands are outside the ACG probable-AH AST pattern of 50 to 400 U/L. Evaluate ischemic injury and other alternatives rather than attributing the presentation to alcohol history alone. This does not assert that coexisting alcohol-related disease is impossible."
+  },
+  "alcohol-associated-liver-disease-072": {
+    "question": "A jaundiced patient reports heavy alcohol use and recently started a potentially hepatotoxic medicine. The cause remains uncertain. Which next step best protects diagnostic accuracy?",
+    "choices": [
+      "Review the medication and supplement timeline and investigate drug-related and other competing causes.",
+      "Declare definite drug-induced injury solely because a new medicine was started.",
+      "Ignore the new exposure because heavy alcohol use proves AH.",
+      "Use the AST:ALT ratio to exclude all medication-related injury."
+    ],
+    "rationale": "A temporally plausible medication exposure can confound an AH diagnosis and warrants a careful timeline and differential. Neither the new medicine alone nor alcohol history alone proves the cause. The AST:ALT ratio does not exclude drug-related injury; further clinical evaluation determines confidence and management."
+  },
+  "alcohol-associated-liver-disease-073": {
+    "question": "A compatible AH clinical syndrome is supported by a liver biopsy interpreted with the exposure history and competing-cause evaluation. Which diagnostic-confidence category applies?",
+    "choices": [
+      "Definite AH with compatible histologic confirmation.",
+      "Possible AH solely because a biopsy was performed.",
+      "Probable AH is the only category that permits any histology.",
+      "Definite AH requires no compatible clinical syndrome."
+    ],
+    "rationale": "In the guidance framework, definite AH combines the compatible clinical diagnosis with histologic confirmation. Probable AH is a compatible clinical syndrome without important confounders and without requiring biopsy. Possible AH reflects uncertainty or confounding. Histology still requires clinical correlation; it does not erase the need for the history and differential."
+  },
+  "alcohol-associated-liver-disease-074": {
+    "question": "A patient has new jaundice but an uncertain alcohol exposure history and another plausible cause of hepatitis. The choice of disease-directed treatment depends on the cause after initial evaluation. Which plan is best?",
+    "choices": [
+      "Discuss selective biopsy with hepatology if confirmation could change management, while continuing urgent complication care.",
+      "Automatically give corticosteroids because any jaundice establishes severe AH.",
+      "Require biopsy in every classic AH presentation before evaluating infection.",
+      "Abandon evaluation of the competing cause because AH is always histologically obvious."
+    ],
+    "rationale": "Uncertain exposure or a plausible alternative cause fits possible AH. If diagnostic confirmation will affect treatment, guidance supports selective biopsy with the liver team; the ACG algorithm describes the transjugular route. Biopsy is not mandatory for every classic unconfounded presentation, and diagnostic work should proceed alongside urgent supportive and complication care."
+  },
+  "alcohol-associated-liver-disease-075": {
+    "question": "A patient has a compatible AH diagnosis and a correctly calculated original MELD score of 21. Which statement matches the 2024 ACG severity framework?",
+    "choices": [
+      "The score is above the severe-AH threshold of 20; treatment still requires assessment of eligibility and complications.",
+      "A score of 21 is moderate because severe AH requires a score above 32.",
+      "The score itself establishes alcohol as the cause of hepatitis.",
+      "The score guarantees that corticosteroids are appropriate without further assessment."
+    ],
+    "rationale": "ACG classifies AH as severe with original MELD greater than 20; a score of 20 or below is moderate in this framework. The historic modified discriminant-function threshold of 32 should not be substituted as a MELD threshold. Severity does not prove etiology or remove the need to assess infection, contraindications and organ function before disease-directed therapy."
+  },
+  "alcohol-associated-liver-disease-076": {
+    "question": "During an AH evaluation, a patient has leukocytosis and tachycardia. Initial cultures are negative. Which interpretation is most appropriate?",
+    "choices": [
+      "AH can cause systemic inflammation without infection, but infection may coexist and still requires clinical source evaluation.",
+      "Leukocytosis proves infection, regardless of the rest of the evaluation.",
+      "Negative initial cultures rule out every infection source and end surveillance.",
+      "AH excludes infection, so evaluating both is unnecessary."
+    ],
+    "rationale": "Systemic inflammatory features can occur in AH without infection, and infection may coexist. Leukocytosis and tachycardia are not independently diagnostic of infection; negative initial cultures also do not end the clinical assessment. Continue indicated source evaluation, surveillance and treatment when clinically warranted."
+  }
+};
+for (const item of alcoholAssociatedLiverDiseaseQuestionBank) {
+  if (verifiedAldDiagnosisQuestions[item.id]) Object.assign(item, verifiedAldDiagnosisQuestions[item.id]);
+}
