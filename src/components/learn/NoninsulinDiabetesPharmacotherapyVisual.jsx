@@ -113,8 +113,8 @@ export default function NoninsulinDiabetesPharmacotherapyVisual({ type }) {
           <div key={label}>
             <span>{String(index + 1).padStart(2, "0")}</span>
             <strong>{label}</strong>
-            <em style={type === "noninsulin-selection" ? { fontSize: "14px", lineHeight: 1.55 } : undefined}>{mechanism}</em>
-            <p style={type === "noninsulin-selection" ? { fontSize: "14px", lineHeight: 1.65 } : undefined}>{explanation}</p>
+            <em style={(type === "noninsulin-selection" || type === "noninsulin-metformin") ? { fontSize: "14px", lineHeight: 1.55 } : undefined}>{mechanism}</em>
+            <p style={(type === "noninsulin-selection" || type === "noninsulin-metformin") ? { fontSize: "14px", lineHeight: 1.65 } : undefined}>{explanation}</p>
           </div>
         ))}
       </div>

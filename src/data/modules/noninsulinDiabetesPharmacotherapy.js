@@ -259,3 +259,106 @@ Object.assign(noninsulinDiabetesPharmacotherapyModule.submodules.find(item => it
     "reviewHref": "#noninsulin-selection-architecture"
   }
 });
+
+
+// Complete metformin lesson source-reviewed with its linked assessment items.
+Object.assign(noninsulinDiabetesPharmacotherapyModule.submodules.find(item => item.slug === "metformin-pharmacotherapy"), {
+  "slug": "metformin-pharmacotherapy",
+  "title": "Metformin",
+  "visual": "noninsulin-metformin",
+  "summary": "Metformin lowers glucose without directly stimulating insulin secretion. Choose the exact formulation, titrate for tolerance, and reassess kidney function, vitamin B12 and conditions that increase lactic-acidosis risk.",
+  "concepts": [
+    "Hepatic glucose production",
+    "Product-specific dosing and handling",
+    "Renal and acute-illness safeguards",
+    "FDA and ACR contrast protocols",
+    "Vitamin B12 and lactic-acidosis risk"
+  ],
+  "application": "Confirm the product, dose and renal eligibility before prescribing. Teach meals, titration, formulation handling and illness precautions; document the contrast protocol and how safety and response will be reassessed.",
+  "lesson": [
+    {
+      "heading": "Connect the mechanism to glucose control",
+      "body": "Metformin reduces hepatic glucose production, decreases intestinal glucose absorption and improves peripheral insulin sensitivity. It does not directly stimulate insulin secretion, so hypoglycemia risk is low when used alone; insulin or a secretagogue can still cause hypoglycemia when combined with it. It is commonly used for type 2 diabetes alongside nutrition and activity, with an approximate A1C reduction of 1 to 2 percentage points rather than a guaranteed individual response. Weight is usually neutral or may decrease modestly. Selected prediabetes prevention use is separate from its labeled type 2 diabetes indication."
+    },
+    {
+      "heading": "Dose immediate-release metformin with meals",
+      "body": "For the referenced immediate-release tablet label, the adult starting dose is 500 mg twice daily or 850 mg once daily with meals. Increase by 500 mg weekly or 850 mg every two weeks according to glucose response and tolerance, up to 2,550 mg/day in divided doses. Doses above 2,000 mg/day may be better tolerated across three meals. For children aged 10 years or older with type 2 diabetes, this IR label starts at 500 mg twice daily, increases by 500 mg weekly, and limits treatment to 2,000 mg/day divided twice daily. Adult and pediatric ceilings differ; neither is a target everyone must reach."
+    },
+    {
+      "heading": "Check the extended-release product before switching",
+      "body": "The referenced Ascend ER tablet starts at 500 mg once daily with the evening meal and increases by 500 mg weekly to 2,000 mg once daily. Its label permits a trial of 1,000 mg twice daily if 2,000 mg once daily is inadequate. GLUMETZA starts at 500 mg with the evening meal, increases by 500 mg every one to two weeks, and has a 2,000 mg once-daily ceiling. An IR-to-ER switch can use the same total daily dose when the selected label permits it and the dose is within its ceiling; the cited once-daily switches are limited to 2,000 mg. Do not transfer the IR 2,550 mg ceiling or one ER product’s divided-dose instruction to every ER product. Swallow ER tablets whole without crushing, cutting or chewing. An inactive shell or soft mass may appear in stool without loss of the therapeutic effect; do not take an extra dose for it."
+    },
+    {
+      "heading": "Distinguish the oral solution from the ER suspension",
+      "body": "RIOMET immediate-release solution contains 500 mg/5 mL, or 100 mg/mL. Its adult starting and titration schedules follow the referenced IR label, with a 2,550 mg/day ceiling in divided doses. RIOMET ER is a separate suspension: after reconstitution it also contains 500 mg/5 mL, but starts at 500 mg once daily with the evening meal and increases by 500 mg weekly to 2,000 mg once daily. Its adult label permits a 1,000 mg twice-daily trial when 2,000 mg once daily is inadequate; pediatric dosing from age 10 has a 2,000 mg once-daily ceiling. For either 100 mg/mL liquid, a prescribed 1,000 mg dose equals 10 mL: 1,000 mg divided by 100 mg/mL. Equal concentration does not establish equal release or frequency. Use the supplied product-specific dosing cup. The pharmacist reconstitutes RIOMET ER with its accompanying diluent before dispensing; shake it for at least 10 seconds before each dose. Keep the reconstituted suspension in its original bottle at 20 to 25°C, and discard unused suspension after 100 days."
+    },
+    {
+      "heading": "Respond to intolerance without overlooking illness",
+      "body": "Nausea, diarrhea, gas and abdominal discomfort are common, especially during initiation or rapid escalation. Taking doses with food and increasing gradually can help; a suitable ER product may improve tolerance. Reassess the dose and formulation when symptoms interfere with use rather than pushing through escalation. Persistent vomiting, diarrhea, poor intake or dehydration calls for prompt clinical and kidney assessment and a temporary interruption when volume depletion or renal impairment is a concern. Mild early gastrointestinal intolerance alone does not diagnose lactic acidosis, and severe systemic symptoms must not be dismissed as routine intolerance."
+    },
+    {
+      "heading": "Separate initiation from continued renal use",
+      "body": "Obtain eGFR before treatment and at least annually during use, more often with older age or other risk for kidney decline. The cited labels contraindicate metformin below eGFR 30 mL/min/1.73 m² and do not recommend initiating it at eGFR 30 to 45. If a person already taking it later falls below 45, reassess the benefit and risk of continuing; a stable value of 38 is not the same decision as starting treatment at 38. Discontinue if eGFR falls below 30. Acute or chronic metabolic acidosis, including DKA, and hypersensitivity are also contraindications. A small A1C improvement does not override any of these restrictions."
+    },
+    {
+      "heading": "State which contrast protocol applies",
+      "body": "FDA labeling calls for interruption at or before iodinated contrast when eGFR is 30 to 60 mL/min/1.73 m², with a history of liver disease, alcoholism or heart failure, or for intra-arterial iodinated contrast. Recheck eGFR after 48 hours and restart only if renal function is stable and use remains appropriate. ACR guidance is less restrictive: with no AKI and eGFR at least 30, IV iodinated contrast does not itself require holding metformin or an obligatory renal recheck. ACR calls for interruption for AKI, eGFR below 30, or arterial catheter studies that may embolize the renal arteries, with a 48-hour hold and renal reassessment before resumption. Persistent eGFR below 30 remains a metformin contraindication. Usual-dose gadolinium does not itself require a metformin hold under ACR guidance. Specify FDA-label or ACR-based institutional policy and coordinate the instructions; a blanket rule for every contrast study hides these differences."
+    },
+    {
+      "heading": "Monitor vitamin B12 as well as glycemia",
+      "body": "Metformin can lower vitamin B12 absorption. The cited labels recommend annual hematologic testing and B12 measurement every two to three years, with abnormalities managed. New anemia or sensory symptoms require evaluation sooner; do not attribute every neuropathy automatically to diabetes or wait for the next scheduled interval. Deficiency can contribute to anemia and neurologic problems and can be treated with B12 replacement. Monitoring and treatment of identified deficiency are more precise than assuming that every long-term user needs an identical supplement plan. Reassess glucose response and tolerance alongside these safety checks."
+    },
+    {
+      "heading": "Interrupt treatment when clearance or oxygen delivery fails",
+      "body": "Acute kidney injury, shock, sepsis, hypoxemia and acute heart failure with hypoperfusion can increase accumulation or lactic-acidosis risk. Stop metformin during such unstable illness and reassess clinical recovery and renal eligibility before restarting. Restricted food and fluid intake around procedures can also require temporary interruption. Avoid use with hepatic impairment and warn against excessive alcohol intake. Current labels do not recommend metformin in mitochondrial diseases such as MELAS or maternally inherited diabetes and deafness (MIDD). Unexplained malaise, muscle pain, respiratory distress, unusual somnolence or abdominal pain, especially with risk factors, warrants prompt assessment. Suspected metformin-associated lactic acidosis requires immediate discontinuation and hospital treatment; the label recommends prompt hemodialysis for diagnosis or strong suspicion. Do not diagnose it from one symptom alone."
+    },
+    {
+      "heading": "Review interactions that change different risks",
+      "body": "Topiramate and other carbonic anhydrase inhibitors can disturb acid-base balance and increase lactic-acidosis risk; consider more frequent monitoring. Drugs that reduce renal tubular metformin clearance, including cimetidine, dolutegravir, ranolazine and vandetanib, can increase exposure; assess the combination’s benefits, risks and current product instructions. These interactions are different from insulin or secretagogues, for which a lower concomitant dose may be needed to reduce hypoglycemia. Review medicines and alcohol whenever the regimen changes, rather than treating every adverse-effect risk as the same mechanism."
+    }
+  ],
+  "keyPoints": [
+    "Use the exact product’s titration and dose ceiling.",
+    "Do not use below eGFR 30; reassess continued use below 45.",
+    "Name the contrast protocol before advising a hold.",
+    "Monitor B12 and distinguish intolerance from urgent systemic illness."
+  ],
+  "check": {
+    "question": "A metformin user has stable eGFR 52 mL/min/1.73 m² and no AKI. The imaging service follows FDA labeling for IV iodinated contrast. Which plan matches that protocol?",
+    "choices": [
+      "Hold at or before contrast; recheck eGFR after 48 hours and restart only if renal function is stable and use remains appropriate.",
+      "Continue without a hold because the ACR IV-contrast threshold must override the stated FDA-label protocol.",
+      "Restart automatically after 24 hours without reassessing renal function.",
+      "Permanently stop metformin solely because eGFR is below 60."
+    ],
+    "answer": 0,
+    "rationale": "The FDA-label iodinated-contrast hold includes eGFR 30 to 60. It requires a 48-hour renal reassessment before restart. ACR is less restrictive for IV contrast without AKI, but this question specifies FDA labeling; stable eGFR 52 alone is not a permanent contraindication.",
+    "reviewHref": "#metformin-pharmacotherapy"
+  }
+});
+noninsulinDiabetesPharmacotherapyModule.references.push(...[
+  {
+    "label": "DailyMed metformin IR tablet prescribing information",
+    "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4ac6d01a-af26-44e7-ae2e-3618de0080aa"
+  },
+  {
+    "label": "DailyMed Ascend metformin ER tablet prescribing information",
+    "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a944a167-e3ac-4084-af1c-22b48713471c"
+  },
+  {
+    "label": "DailyMed GLUMETZA prescribing information",
+    "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fb832474-88d9-4e29-95cd-fbc446944cc4"
+  },
+  {
+    "label": "DailyMed RIOMET oral solution prescribing information",
+    "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=05d4df4b-dfe8-4828-b423-a3d4f2c4114a"
+  },
+  {
+    "label": "FDA RIOMET ER prescribing information, August 2026",
+    "href": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/212595s002lbl.pdf"
+  },
+  {
+    "label": "ACR Manual on Contrast Media: metformin guidance",
+    "href": "https://www.acr.org/Clinical-Resources/Clinical-Tools-and-Reference/Contrast-Manual"
+  }
+]);

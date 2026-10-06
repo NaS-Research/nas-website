@@ -581,3 +581,131 @@ const verifiedSelectionQuestions = {
 for (const item of noninsulinDiabetesPharmacotherapyQuestionBank) {
   if (verifiedSelectionQuestions[item.id]) Object.assign(item, verifiedSelectionQuestions[item.id]);
 }
+
+
+// Focused metformin cases preserve existing IDs, keys and review anchors.
+const verifiedMetforminQuestions = {
+  "noninsulin-diabetes-03-principle": {
+    "question": "Which mechanism best explains metformin’s low intrinsic hypoglycemia risk?",
+    "choices": [
+      "It reduces hepatic glucose output and improves insulin sensitivity without directly stimulating insulin secretion.",
+      "It forces pancreatic insulin release regardless of glucose.",
+      "It lowers glucose by blocking renal SGLT2.",
+      "It blocks intestinal alpha-glucosidase activity."
+    ],
+    "rationale": "Metformin does not directly stimulate insulin secretion. Forced insulin release, renal SGLT2 blockade and intestinal alpha-glucosidase inhibition describe other glucose-lowering mechanisms, not metformin’s mechanism."
+  },
+  "noninsulin-diabetes-03-application": {
+    "question": "An eligible adult starts the referenced metformin IR tablet at 500 mg twice daily with meals. Which titration matches its label if glucose and tolerance support escalation?",
+    "choices": [
+      "Increase the total daily dose by 500 mg weekly, within the 2,550 mg/day divided-dose ceiling.",
+      "Increase by 500 mg every day until 2,550 mg/day.",
+      "Use the adult 2,550 mg/day ceiling for every child aged 10 or older.",
+      "Require 2,550 mg/day even when a lower dose meets the treatment goal."
+    ],
+    "rationale": "The IR adult label permits 500 mg weekly increments based on response and tolerance. Daily escalation is too rapid; the pediatric ceiling is 2,000 mg/day, and a ceiling is not a mandatory dose."
+  },
+  "noninsulin-diabetes-03-safety": {
+    "question": "An adult taking metformin IR 1,000 mg twice daily is switching to GLUMETZA. Which prescription matches the cited GLUMETZA switching instruction?",
+    "choices": [
+      "GLUMETZA 2,000 mg once daily with the evening meal, after confirming suitability.",
+      "GLUMETZA 2,550 mg once daily because that is the IR adult ceiling.",
+      "GLUMETZA 1,000 mg twice daily because every ER formulation permits that schedule.",
+      "GLUMETZA 2,000 mg once daily crushed into food."
+    ],
+    "rationale": "The daily IR total is 2,000 mg, within GLUMETZA’s same-total-dose once-daily switch limit. Its ceiling is not 2,550 mg; another ER product’s divided-dose option does not establish GLUMETZA dosing, and its tablets must remain whole."
+  },
+  "noninsulin-diabetes-03-case": {
+    "question": "An adult stopped metformin IR after diarrhea during rapid escalation. There is no dehydration, AKI or other contraindication. Which response is best?",
+    "choices": [
+      "Reassess the regimen and consider slower titration with meals and an appropriate ER product.",
+      "Restart at the maximum IR dose on an empty stomach.",
+      "Crush an ER tablet to improve tolerance.",
+      "Diagnose lactic acidosis solely from mild diarrhea without further assessment."
+    ],
+    "rationale": "Food, gradual titration and a suitable ER formulation can improve GI tolerance. Maximum-dose fasting use worsens the tolerability problem; ER tablets must remain whole, and mild diarrhea alone does not establish lactic acidosis."
+  },
+  "noninsulin-diabetes-04-principle": {
+    "question": "Which renal decision agrees with the cited metformin labels?",
+    "choices": [
+      "Do not initiate at eGFR 30 to 45; reassess continued use if it later falls below 45; discontinue below 30 mL/min/1.73 m².",
+      "Initiate routinely at eGFR 38 because the value is above 30.",
+      "Continue at eGFR 27 whenever A1C improves.",
+      "Treat every stable eGFR below 60 as a permanent contraindication."
+    ],
+    "rationale": "Initiation at 30 to 45 is not recommended, continued use below 45 needs benefit-risk review, and below 30 is contraindicated. Neither improved A1C nor a threshold of 60 changes those rules."
+  },
+  "noninsulin-diabetes-04-application": {
+    "question": "A metformin user has no AKI and stable eGFR 52 mL/min/1.73 m². Under an explicitly ACR-based protocol, what does IV iodinated contrast alone require?",
+    "choices": [
+      "No metformin interruption or obligatory postprocedure renal recheck for this Category I situation.",
+      "A universal 48-hour metformin hold because every contrast protocol is identical.",
+      "Permanent discontinuation because eGFR is below 60.",
+      "Hold metformin only after contrast and restart before renal reassessment."
+    ],
+    "rationale": "ACR Category I permits continued metformin with no AKI and eGFR at least 30 for IV iodinated contrast. FDA labeling is stricter, so the protocol must be specified. Permanent withdrawal and a postprocedure-only hold with early restart do not match this Category I guidance."
+  },
+  "noninsulin-diabetes-04-safety": {
+    "question": "A metformin user develops sepsis, hypotension, hypoxia and an abrupt creatinine rise. Which action best addresses the immediate safety problem?",
+    "choices": [
+      "Hold metformin during the unstable illness and reassess clinical recovery and renal eligibility before restart.",
+      "Continue metformin unchanged because it does not directly stimulate insulin.",
+      "Continue at a reduced dose until the next routine kidney check.",
+      "Restart on a fixed date regardless of persistent AKI or hypoxia."
+    ],
+    "rationale": "Sepsis, hypoxia and impaired clearance increase lactic-acidosis risk. The low intrinsic hypoglycemia risk does not resolve this risk; reduced-dose continuation can still leave accumulation risk during unstable illness, and restart depends on recovery rather than the calendar."
+  },
+  "noninsulin-diabetes-04-case": {
+    "question": "A person’s eGFR remains 27 mL/min/1.73 m² 48 hours after an arterial catheter study. Which metformin plan is appropriate?",
+    "choices": [
+      "Keep metformin discontinued because persistent eGFR below 30 is a contraindication.",
+      "Restart automatically because the 48-hour interval has elapsed.",
+      "Restart at a lower dose because every level of renal impairment can be managed by dose reduction.",
+      "Use an improving A1C as the only restart criterion."
+    ],
+    "rationale": "A 48-hour contrast hold is not automatic permission to restart. Persistent eGFR 27 is below the labeled contraindication threshold; dose reduction or A1C improvement cannot establish eligibility below the contraindication threshold."
+  },
+  "noninsulin-diabetes-05-principle": {
+    "question": "Which routine monitoring schedule is specified in the cited metformin labels?",
+    "choices": [
+      "Hematologic testing annually and vitamin B12 every two to three years, with earlier evaluation of concerning symptoms.",
+      "B12 only after ten years of exposure, regardless of anemia or sensory symptoms.",
+      "A1C alone, because metformin cannot affect vitamin absorption.",
+      "The same mandatory supplement dose for every user without assessment."
+    ],
+    "rationale": "The labels specify annual hematologic parameters and B12 every two to three years, with abnormalities managed. Symptoms warrant earlier assessment; A1C alone misses B12 effects, and this labeling does not prescribe a universal supplement dose."
+  },
+  "noninsulin-diabetes-05-application": {
+    "question": "A prescription is for RIOMET IR solution 1,000 mg per dose. The concentration is 500 mg/5 mL. Which volume is correct?",
+    "choices": [
+      "10 mL, measured with the supplied product-specific dosing cup.",
+      "5 mL, measured with the supplied product-specific dosing cup.",
+      "20 mL, measured with the supplied product-specific dosing cup.",
+      "1 mL, measured with the supplied product-specific dosing cup."
+    ],
+    "rationale": "500 mg divided by 5 mL equals 100 mg/mL; 1,000 mg divided by 100 mg/mL equals 10 mL. Five mL supplies 500 mg, 20 mL supplies 2,000 mg, and 1 mL supplies 100 mg."
+  },
+  "noninsulin-diabetes-05-safety": {
+    "question": "Which statement best explains the safety review when topiramate is added to metformin?",
+    "choices": [
+      "Carbonic anhydrase inhibition can lower bicarbonate and increase lactic-acidosis risk with metformin.",
+      "Separating the medicines by two hours eliminates the interaction.",
+      "Normal baseline eGFR removes the need to reassess acid-base effects.",
+      "The main concern is glucose-independent insulin release caused by metformin."
+    ],
+    "rationale": "Topiramate is a carbonic anhydrase inhibitor that can produce metabolic acidosis and increase metformin-associated lactic-acidosis risk; labeling advises considering more frequent monitoring. Dose separation does not remove the acid-base effect, normal baseline kidney function does not eliminate it, and metformin does not directly stimulate insulin release."
+  },
+  "noninsulin-diabetes-05-case": {
+    "question": "A long-term metformin user develops macrocytic anemia and worsening symmetric sensory symptoms. What should be included in the evaluation?",
+    "choices": [
+      "Vitamin B12 status, rather than automatically assigning the symptoms to diabetic neuropathy.",
+      "Waiting for the next routine B12 interval despite new symptoms.",
+      "Assuming diabetes explains every anemia and sensory symptom.",
+      "Treating with folic acid alone without evaluating vitamin B12 status."
+    ],
+    "rationale": "Metformin can lower B12, and deficiency can contribute to anemia and neurologic problems. New symptoms warrant assessment now; neither an automatic diabetes attribution nor folate alone evaluates possible B12 deficiency."
+  }
+};
+for (const item of noninsulinDiabetesPharmacotherapyQuestionBank) {
+  if (verifiedMetforminQuestions[item.id]) Object.assign(item, verifiedMetforminQuestions[item.id]);
+}
