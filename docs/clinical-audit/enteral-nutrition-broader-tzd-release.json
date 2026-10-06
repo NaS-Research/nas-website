@@ -1,0 +1,915 @@
+{
+  "verifiedAt": "2026-10-06T10:09:33.304397+00:00",
+  "unit": "enteral-nutrition:broader-tzd",
+  "contentCommit": "156a409adc3ee0e70646d538ef1b561f1a594e94",
+  "remoteBranch": "audit/rxprep-content-2026-09-24",
+  "remoteHashObserved": "156a409adc3ee0e70646d538ef1b561f1a594e94",
+  "exactRemoteObservedByTool": true,
+  "coverage": {
+    "evidence": "enteral-nutrition-broader-tzd-review.json",
+    "verifiedScope": "One complete audit-branch thiazolidinedione lesson: fifteen whole teaching bodies, metadata, corrected embedded check, reviewed mechanism figure, eight linked whole questions and one derived cumulative item.",
+    "wholeLessonsVerified": {
+      "noninsulin-diabetes-pharmacotherapy": [
+        "thiazolidinedione-pharmacotherapy"
+      ]
+    },
+    "wholeBodiesVerified": 15,
+    "changedWholeQuestions": 8,
+    "existingBodiesExpanded": 4,
+    "newOriginalBodies": 11,
+    "wholeChecksVerified": 1,
+    "wholeMetadataAndFiguresVerified": 1,
+    "wholeBankQuestionIdsVerified": [
+      "noninsulin-diabetes-16-principle",
+      "noninsulin-diabetes-16-application",
+      "noninsulin-diabetes-16-safety",
+      "noninsulin-diabetes-16-case",
+      "noninsulin-diabetes-17-principle",
+      "noninsulin-diabetes-17-application",
+      "noninsulin-diabetes-17-safety",
+      "noninsulin-diabetes-17-case"
+    ],
+    "all32ChoicesIndividuallySourceCompared": true,
+    "newUniqueBankQuestionsVerified": 8,
+    "broaderFeedingBankVerifiedBefore": 1021,
+    "broaderFeedingBankVerifiedAfter": 1029,
+    "sourceVerifiedNoninsulinBankTotalAcrossUnits": 82,
+    "noninsulinAuditBranchBankTotal": 120,
+    "noninsulinAuditBranchLessonTotal": 10,
+    "noninsulinAuditBranchLessonsVerifiedAcrossUnits": 7,
+    "remainingNoninsulinWholeBankIds": [
+      "noninsulin-diabetes-18-principle",
+      "noninsulin-diabetes-18-safety",
+      "noninsulin-diabetes-18-case",
+      "noninsulin-diabetes-19-principle",
+      "noninsulin-diabetes-19-application",
+      "noninsulin-diabetes-19-safety",
+      "noninsulin-diabetes-19-case",
+      "noninsulin-diabetes-20-principle",
+      "noninsulin-diabetes-20-application",
+      "noninsulin-diabetes-20-safety",
+      "noninsulin-diabetes-20-case",
+      "noninsulin-diabetes-21-principle",
+      "noninsulin-diabetes-21-application",
+      "noninsulin-diabetes-21-safety",
+      "noninsulin-diabetes-21-case",
+      "noninsulin-diabetes-22-principle",
+      "noninsulin-diabetes-22-application",
+      "noninsulin-diabetes-22-safety",
+      "noninsulin-diabetes-22-case",
+      "noninsulin-diabetes-23-principle",
+      "noninsulin-diabetes-23-application",
+      "noninsulin-diabetes-23-safety",
+      "noninsulin-diabetes-23-case",
+      "noninsulin-diabetes-24-principle",
+      "noninsulin-diabetes-24-safety",
+      "noninsulin-diabetes-24-case",
+      "noninsulin-diabetes-25-principle",
+      "noninsulin-diabetes-25-application",
+      "noninsulin-diabetes-25-safety",
+      "noninsulin-diabetes-25-case",
+      "noninsulin-diabetes-26-principle",
+      "noninsulin-diabetes-26-application",
+      "noninsulin-diabetes-26-safety",
+      "noninsulin-diabetes-26-case",
+      "noninsulin-diabetes-30-principle",
+      "noninsulin-diabetes-30-application",
+      "noninsulin-diabetes-30-safety",
+      "noninsulin-diabetes-30-case"
+    ],
+    "remainingNoninsulinAuditBranchLessons": 3,
+    "other112WholeBankQuestionsUnchanged": true,
+    "allPrior74VerifiedNoninsulinQuestionsUnchanged": true,
+    "otherNineWholeLessonsUnchanged": true,
+    "other231WholeModulesUnchanged": true,
+    "associatedCumulativeWholeItemsVerified": [
+      "cumulative-noninsulin-diabetes-pharmacotherapy-noninsulin-diabetes-16-principle"
+    ],
+    "other1179WholeCumulativeObjectsUnchanged": true,
+    "stableIdsKeysDifficultyAnchorsOrderPreserved": true,
+    "newQuestionIdsAdded": 0,
+    "cumulativeSelectorUnchanged": true,
+    "all36ExistingReferencesRetainedAndRuntimeChecked": true,
+    "fivePrimaryReferencesAddedAndRuntimeChecked": true,
+    "wholeParentModuleVerified": false,
+    "enteralParentVerified": false,
+    "wholeChaptersVerified": false,
+    "committedWholeModulesVerifiedAfter": 61,
+    "committedWholeModulesTotal": 232,
+    "moduleCountPercent": 26.29,
+    "chaptersVerifiedAfter": 6,
+    "chapterTotal": 82,
+    "chapterCountPercent": 7.32,
+    "workingDraftBoundary": "Working draft contains eleven lessons and ninety-two different authored questions. Prior bytes and reviewing statuses are preserved. This certificate applies to the isolated HEAD-derived audit-branch lesson and eight stable question IDs; certification of other working-draft variants is not inferred."
+  },
+  "validation": {
+    "productionBuild": {
+      "status": "passed",
+      "exit_code": 0,
+      "actualTerminalCompletionObserved": true,
+      "staticRoutes": 567,
+      "log": "build.log",
+      "productionBuild": "Next.js16.3.5 webpack isolated audit candidate"
+    },
+    "structure": {
+      "modules": 1,
+      "questions": 120,
+      "hardErrors": [],
+      "sourceGaps": [],
+      "sizeAdvisories": [],
+      "thinLessons": [],
+      "weakestModules": [
+        {
+          "module": "noninsulin-diabetes-pharmacotherapy",
+          "lessons": 10,
+          "questions": 120,
+          "minimumLessonCoverage": 8
+        }
+      ]
+    },
+    "objectPreservation": {
+      "status": "passed",
+      "modules": 232,
+      "otherWholeModulesUnchanged": 231,
+      "wholeQuestionBankTotal": 120,
+      "wholeQuestionsReviewed": 8,
+      "changedWholeQuestions": 8,
+      "other112WholeQuestionsUnchanged": true,
+      "allPrior74VerifiedNoninsulinWholeQuestionsUnchanged": true,
+      "otherNineWholeLessonsUnchanged": true,
+      "stableKeysIdsDifficultyAnchorsOrder": true,
+      "associatedDerivedCumulative": [
+        "cumulative-noninsulin-diabetes-pharmacotherapy-noninsulin-diabetes-16-principle"
+      ],
+      "oneDerivedWholeCumulativeItemChangedAndVerified": true,
+      "other1179WholeCumulativeObjectsUnchanged": true,
+      "existingReferencesRetained": 36,
+      "fivePrimaryReferencesAdded": true
+    },
+    "browser": {
+      "status": "passed",
+      "results": [
+        {
+          "width": 1440,
+          "exactWholeBodies": 15,
+          "wholeChecksAllFourOptionsGraded": 1,
+          "wholeQuestionsShuffledCorrectIncorrectFeedbackAndAnchorsVerified": 8,
+          "associatedCumulativeItems": [
+            "cumulative-noninsulin-diabetes-pharmacotherapy-noninsulin-diabetes-16-principle"
+          ],
+          "associatedCumulativeWholeCasesShuffledCorrectIncorrectAndReviewLinksVerified": 1,
+          "other1179CumulativeObjectsUnchanged": true,
+          "allReferencesExact": 41,
+          "noHorizontalOverflow": true,
+          "diagrams": [
+            {
+              "width": 1440,
+              "slug": "noninsulin-diabetes-pharmacotherapy",
+              "lessonKey": "thiazolidinedione-pharmacotherapy",
+              "labels": [
+                {
+                  "tag": "SPAN",
+                  "text": "Insulin sensitization",
+                  "overflow": false,
+                  "fontSize": 10.88
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Transcription improves sensitivity but can retain fluid",
+                  "overflow": false,
+                  "fontSize": 37.6
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "01",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Activate",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "PPAR-gamma",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Change gene expression in adipose and insulin-responsive tissue",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "02",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Wait",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Delayed effect",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Assess response over weeks rather than correcting the dose each day",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "03",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Protect",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Heart and bone",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Monitor edema, weight, heart failure, fracture, eye, liver, and bladder risk",
+                  "overflow": false,
+                  "fontSize": 14
+                }
+              ],
+              "allTextWithinBounds": true
+            }
+          ]
+        },
+        {
+          "width": 390,
+          "exactWholeBodies": 15,
+          "wholeChecksAllFourOptionsGraded": 1,
+          "wholeQuestionsShuffledCorrectIncorrectFeedbackAndAnchorsVerified": 8,
+          "associatedCumulativeItems": [
+            "cumulative-noninsulin-diabetes-pharmacotherapy-noninsulin-diabetes-16-principle"
+          ],
+          "associatedCumulativeWholeCasesShuffledCorrectIncorrectAndReviewLinksVerified": 1,
+          "other1179CumulativeObjectsUnchanged": true,
+          "allReferencesExact": 41,
+          "noHorizontalOverflow": true,
+          "diagrams": [
+            {
+              "width": 320,
+              "slug": "noninsulin-diabetes-pharmacotherapy",
+              "lessonKey": "thiazolidinedione-pharmacotherapy",
+              "labels": [
+                {
+                  "tag": "SPAN",
+                  "text": "Insulin sensitization",
+                  "overflow": false,
+                  "fontSize": 10.88
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Transcription improves sensitivity but can retain fluid",
+                  "overflow": false,
+                  "fontSize": 23.2
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "01",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Activate",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "PPAR-gamma",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Change gene expression in adipose and insulin-responsive tissue",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "02",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Wait",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Delayed effect",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Assess response over weeks rather than correcting the dose each day",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "03",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Protect",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Heart and bone",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Monitor edema, weight, heart failure, fracture, eye, liver, and bladder risk",
+                  "overflow": false,
+                  "fontSize": 14
+                }
+              ],
+              "allTextWithinBounds": true
+            },
+            {
+              "width": 390,
+              "slug": "noninsulin-diabetes-pharmacotherapy",
+              "lessonKey": "thiazolidinedione-pharmacotherapy",
+              "labels": [
+                {
+                  "tag": "SPAN",
+                  "text": "Insulin sensitization",
+                  "overflow": false,
+                  "fontSize": 10.88
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Transcription improves sensitivity but can retain fluid",
+                  "overflow": false,
+                  "fontSize": 23.2
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "01",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Activate",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "PPAR-gamma",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Change gene expression in adipose and insulin-responsive tissue",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "02",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Wait",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Delayed effect",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Assess response over weeks rather than correcting the dose each day",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "03",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Protect",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Heart and bone",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Monitor edema, weight, heart failure, fracture, eye, liver, and bladder risk",
+                  "overflow": false,
+                  "fontSize": 14
+                }
+              ],
+              "allTextWithinBounds": true
+            },
+            {
+              "width": 639,
+              "slug": "noninsulin-diabetes-pharmacotherapy",
+              "lessonKey": "thiazolidinedione-pharmacotherapy",
+              "labels": [
+                {
+                  "tag": "SPAN",
+                  "text": "Insulin sensitization",
+                  "overflow": false,
+                  "fontSize": 10.88
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Transcription improves sensitivity but can retain fluid",
+                  "overflow": false,
+                  "fontSize": 23.2
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "01",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Activate",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "PPAR-gamma",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Change gene expression in adipose and insulin-responsive tissue",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "02",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Wait",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Delayed effect",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Assess response over weeks rather than correcting the dose each day",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "03",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Protect",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Heart and bone",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Monitor edema, weight, heart failure, fracture, eye, liver, and bladder risk",
+                  "overflow": false,
+                  "fontSize": 14
+                }
+              ],
+              "allTextWithinBounds": true
+            },
+            {
+              "width": 640,
+              "slug": "noninsulin-diabetes-pharmacotherapy",
+              "lessonKey": "thiazolidinedione-pharmacotherapy",
+              "labels": [
+                {
+                  "tag": "SPAN",
+                  "text": "Insulin sensitization",
+                  "overflow": false,
+                  "fontSize": 10.88
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Transcription improves sensitivity but can retain fluid",
+                  "overflow": false,
+                  "fontSize": 23.2
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "01",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Activate",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "PPAR-gamma",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Change gene expression in adipose and insulin-responsive tissue",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "02",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Wait",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Delayed effect",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Assess response over weeks rather than correcting the dose each day",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "03",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Protect",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Heart and bone",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Monitor edema, weight, heart failure, fracture, eye, liver, and bladder risk",
+                  "overflow": false,
+                  "fontSize": 14
+                }
+              ],
+              "allTextWithinBounds": true
+            }
+          ]
+        }
+      ],
+      "captures": [
+        "hero-noninsulin-diabetes-pharmacotherapy-1440.png",
+        "body-thiazolidinedione-pharmacotherapy-0-1440.png",
+        "body-thiazolidinedione-pharmacotherapy-1-1440.png",
+        "body-thiazolidinedione-pharmacotherapy-2-1440.png",
+        "body-thiazolidinedione-pharmacotherapy-3-1440.png",
+        "body-thiazolidinedione-pharmacotherapy-4-1440.png",
+        "body-thiazolidinedione-pharmacotherapy-5-1440.png",
+        "body-thiazolidinedione-pharmacotherapy-6-1440.png",
+        "body-thiazolidinedione-pharmacotherapy-7-1440.png",
+        "body-thiazolidinedione-pharmacotherapy-8-1440.png",
+        "body-thiazolidinedione-pharmacotherapy-9-1440.png",
+        "body-thiazolidinedione-pharmacotherapy-10-1440.png",
+        "body-thiazolidinedione-pharmacotherapy-11-1440.png",
+        "body-thiazolidinedione-pharmacotherapy-12-1440.png",
+        "body-thiazolidinedione-pharmacotherapy-13-1440.png",
+        "body-thiazolidinedione-pharmacotherapy-14-1440.png",
+        "summary-thiazolidinedione-pharmacotherapy-1440.png",
+        "concepts-thiazolidinedione-pharmacotherapy-1440.png",
+        "keypoints-thiazolidinedione-pharmacotherapy-1440.png",
+        "application-thiazolidinedione-pharmacotherapy-1440.png",
+        "figure-thiazolidinedione-pharmacotherapy-1440.png",
+        "check-thiazolidinedione-pharmacotherapy-1440.png",
+        "references-noninsulin-diabetes-pharmacotherapy-1440.png",
+        "bank-noninsulin-diabetes-16-principle-1440.png",
+        "bank-noninsulin-diabetes-17-application-1440.png",
+        "bank-noninsulin-diabetes-16-application-1440.png",
+        "bank-noninsulin-diabetes-17-safety-1440.png",
+        "bank-noninsulin-diabetes-16-safety-1440.png",
+        "bank-noninsulin-diabetes-17-principle-1440.png",
+        "bank-noninsulin-diabetes-17-case-1440.png",
+        "bank-noninsulin-diabetes-16-case-1440.png",
+        "cumulative-cumulative-noninsulin-diabetes-pharmacotherapy-noninsulin-diabetes-16-principle-1440.png",
+        "hero-noninsulin-diabetes-pharmacotherapy-390.png",
+        "body-thiazolidinedione-pharmacotherapy-0-390.png",
+        "body-thiazolidinedione-pharmacotherapy-1-390.png",
+        "body-thiazolidinedione-pharmacotherapy-2-390.png",
+        "body-thiazolidinedione-pharmacotherapy-3-390.png",
+        "body-thiazolidinedione-pharmacotherapy-4-390.png",
+        "body-thiazolidinedione-pharmacotherapy-5-390.png",
+        "body-thiazolidinedione-pharmacotherapy-6-390.png",
+        "body-thiazolidinedione-pharmacotherapy-7-390.png",
+        "body-thiazolidinedione-pharmacotherapy-8-390.png",
+        "body-thiazolidinedione-pharmacotherapy-9-390.png",
+        "body-thiazolidinedione-pharmacotherapy-10-390.png",
+        "body-thiazolidinedione-pharmacotherapy-11-390.png",
+        "body-thiazolidinedione-pharmacotherapy-12-390.png",
+        "body-thiazolidinedione-pharmacotherapy-13-390.png",
+        "body-thiazolidinedione-pharmacotherapy-14-390.png",
+        "summary-thiazolidinedione-pharmacotherapy-390.png",
+        "concepts-thiazolidinedione-pharmacotherapy-390.png",
+        "keypoints-thiazolidinedione-pharmacotherapy-390.png",
+        "application-thiazolidinedione-pharmacotherapy-390.png",
+        "figure-thiazolidinedione-pharmacotherapy-390.png",
+        "check-thiazolidinedione-pharmacotherapy-390.png",
+        "references-noninsulin-diabetes-pharmacotherapy-390.png",
+        "bank-noninsulin-diabetes-16-principle-390.png",
+        "bank-noninsulin-diabetes-17-application-390.png",
+        "bank-noninsulin-diabetes-16-application-390.png",
+        "bank-noninsulin-diabetes-17-safety-390.png",
+        "bank-noninsulin-diabetes-16-safety-390.png",
+        "bank-noninsulin-diabetes-17-principle-390.png",
+        "bank-noninsulin-diabetes-17-case-390.png",
+        "bank-noninsulin-diabetes-16-case-390.png",
+        "cumulative-cumulative-noninsulin-diabetes-pharmacotherapy-noninsulin-diabetes-16-principle-390.png",
+        "native-figure-320.png",
+        "native-figure-640.png"
+      ],
+      "errors": []
+    },
+    "visualInspection": {
+      "status": "passed",
+      "inspectedAt": "2026-10-06T10:07:53.538816+00:00",
+      "method": "Actual original-detail visual inspection of eleven paired desktop/mobile boards and two native narrow/breakpoint figure captures. Source-page inspection is separately recorded in sources.json.",
+      "boardsViewed": [
+        {
+          "file": "board-00.png",
+          "pairs": [
+            "pair-hero-noninsulin-diabetes-pharmacotherapy.png",
+            "pair-body-thiazolidinedione-pharmacotherapy-0.png",
+            "pair-body-thiazolidinedione-pharmacotherapy-1.png"
+          ],
+          "dimensions": [
+            1870,
+            2389
+          ]
+        },
+        {
+          "file": "board-01.png",
+          "pairs": [
+            "pair-body-thiazolidinedione-pharmacotherapy-2.png",
+            "pair-body-thiazolidinedione-pharmacotherapy-3.png",
+            "pair-body-thiazolidinedione-pharmacotherapy-4.png"
+          ],
+          "dimensions": [
+            1312,
+            1663
+          ]
+        },
+        {
+          "file": "board-02.png",
+          "pairs": [
+            "pair-body-thiazolidinedione-pharmacotherapy-5.png",
+            "pair-body-thiazolidinedione-pharmacotherapy-6.png",
+            "pair-body-thiazolidinedione-pharmacotherapy-7.png"
+          ],
+          "dimensions": [
+            1312,
+            1691
+          ]
+        },
+        {
+          "file": "board-03.png",
+          "pairs": [
+            "pair-body-thiazolidinedione-pharmacotherapy-8.png",
+            "pair-body-thiazolidinedione-pharmacotherapy-9.png",
+            "pair-body-thiazolidinedione-pharmacotherapy-10.png"
+          ],
+          "dimensions": [
+            1312,
+            1609
+          ]
+        },
+        {
+          "file": "board-04.png",
+          "pairs": [
+            "pair-body-thiazolidinedione-pharmacotherapy-11.png",
+            "pair-body-thiazolidinedione-pharmacotherapy-12.png",
+            "pair-body-thiazolidinedione-pharmacotherapy-13.png"
+          ],
+          "dimensions": [
+            1312,
+            1719
+          ]
+        },
+        {
+          "file": "board-05.png",
+          "pairs": [
+            "pair-body-thiazolidinedione-pharmacotherapy-14.png",
+            "pair-summary-thiazolidinedione-pharmacotherapy.png",
+            "pair-concepts-thiazolidinedione-pharmacotherapy.png"
+          ],
+          "dimensions": [
+            1312,
+            1131
+          ]
+        },
+        {
+          "file": "board-06.png",
+          "pairs": [
+            "pair-keypoints-thiazolidinedione-pharmacotherapy.png",
+            "pair-application-thiazolidinedione-pharmacotherapy.png",
+            "pair-figure-thiazolidinedione-pharmacotherapy.png"
+          ],
+          "dimensions": [
+            1312,
+            1459
+          ]
+        },
+        {
+          "file": "board-07.png",
+          "pairs": [
+            "pair-check-thiazolidinedione-pharmacotherapy.png",
+            "pair-references-noninsulin-diabetes-pharmacotherapy.png",
+            "pair-bank-noninsulin-diabetes-16-principle.png"
+          ],
+          "dimensions": [
+            1312,
+            4729
+          ]
+        },
+        {
+          "file": "board-08.png",
+          "pairs": [
+            "pair-bank-noninsulin-diabetes-17-application.png",
+            "pair-bank-noninsulin-diabetes-16-application.png",
+            "pair-bank-noninsulin-diabetes-17-safety.png"
+          ],
+          "dimensions": [
+            1312,
+            2424
+          ]
+        },
+        {
+          "file": "board-09.png",
+          "pairs": [
+            "pair-bank-noninsulin-diabetes-16-safety.png",
+            "pair-bank-noninsulin-diabetes-17-principle.png",
+            "pair-bank-noninsulin-diabetes-17-case.png"
+          ],
+          "dimensions": [
+            1312,
+            2385
+          ]
+        },
+        {
+          "file": "board-10.png",
+          "pairs": [
+            "pair-bank-noninsulin-diabetes-16-case.png",
+            "pair-cumulative-cumulative-noninsulin-diabetes-pharmacotherapy-noninsulin-diabetes-16-principle.png"
+          ],
+          "dimensions": [
+            1414,
+            1572
+          ]
+        }
+      ],
+      "pairedDesktopMobileCapturesViewed": 32,
+      "browserScreenshotsCaptured": 66,
+      "nativeFigureWidthsViewed": [
+        320,
+        640
+      ],
+      "wholeTeachingBodiesVisuallyChecked": 15,
+      "wholeMetadataCheckFigureEightBankCasesAndOneCumulativeCaseVisuallyChecked": true,
+      "referencesVisuallyChecked": 41,
+      "findings": "Readable typography, complete text and choices, intact margins and feedback, clear fourteen-label conceptual figure. No clipping or horizontal overflow found. Desktop correct and mobile incorrect shuffled feedback visible for every bank case and cumulative item.",
+      "runtimeFigureBoundsWidthsPassed": [
+        320,
+        390,
+        639,
+        640,
+        1440
+      ],
+      "viewedImageSha256": {
+        "board-00.png": "395cf4587c58f2e8d40d4781475543aa551efb5c9f0968a4b25bc843b6df0de6",
+        "board-01.png": "2d01a1ecb7edc7a8ab7b1be682eae86bfae27b0bf3649d1817ddf452a0a42f78",
+        "board-02.png": "a7128546290506098e3788201f9a22db87cfcf4f1989b6e5fbcd9e054cea1dc0",
+        "board-03.png": "0c089bc1419df79757cae7331c6f686ebb1b4c729bf6e4a76b9370284180bc2d",
+        "board-04.png": "1c330d71dda3aac1b610d19025a348d6ee30ca9aed3baa67ec96d64707005472",
+        "board-05.png": "d16e2a4081ed3b835c68da8f6a4f4863d9375bd24d16e77c4904e6bd9ecaea24",
+        "board-06.png": "8bc105035636a0188ff5597e2a54ba3fcf7f2a45c7d220ca06be7c1d5ffe56ab",
+        "board-07.png": "421c76e7b6202536e6ac9e8abd130974bad0c87aa7924c6db83db628f7b40824",
+        "board-08.png": "14bb67550e1909e582de84d5fa27b343e93e7a8791d7fc6eebf4e128651a5431",
+        "board-09.png": "6607e0b528d8e8a383f92fe18d2237b855e54939a34174c1c2b7d0acaa1c0b54",
+        "board-10.png": "3dfe73d1e410ee7b5c496b6bccdb2a75dc52d7dd06b0c078c750796c211c4a0c",
+        "native-figure-320.png": "3eec45065c25c38730a60ff18dd6345fc67a7d90885ce058444164b2c2a455c0",
+        "native-figure-640.png": "e92dabafb128d4558f7fad82f6a9a792b52a34c223da679a288f84182afe97c0"
+      }
+    },
+    "limits": "Isolated unauthenticated production preview. Complete lesson, all four embedded-check choices and eight bank cases in correct/incorrect shuffled attempts at1440/390; figure bounds at five widths. One derived cumulative item graded correctly and incorrectly with its module review link;1179 other cumulative objects unchanged. Remaining three lessons,thirty-eight questions, working draft variants, parent chapters and full goal not certified."
+  },
+  "preservation": {
+    "status": "passed",
+    "baselinePathsChecked": 2010,
+    "allUnrelatedDraftBytesAndDeletionsPreservedAtRelease": true,
+    "observedConcurrentUnrelatedChangesRetainedAndExcluded": {},
+    "otherUnrelatedPathsMatchInitialBaseline": true,
+    "preexistingContentBytesRecoveredByRemovingExactScopedTails": true,
+    "allOtherWorkingLedgerFieldsAndEntriesPreserved": true,
+    "allOtherCommittedLedgerFieldsAndEntriesPreserved": true,
+    "oneAuditBranchLessonVerifiedAndWorkingDraftStatusPreserved": true,
+    "onlyVerifiedHeadDerivedContentStagedOrCommitted": true,
+    "onlyTwoTzdTypographyLinesChangedAndCumulativeSelectorUnchanged": true,
+    "preexistingWorkingRenalCaptionRetainedVerbatim": true,
+    "scope": [
+      "src/data/modules/noninsulinDiabetesPharmacotherapy.js",
+      "src/data/questionBanks/noninsulinDiabetesPharmacotherapy.js",
+      "src/components/learn/NoninsulinDiabetesPharmacotherapyVisual.jsx",
+      "docs/clinical-audit/enteral-nutrition-broader-tzd-review.json",
+      "docs/clinical-audit/module-ledger.json",
+      "docs/clinical-audit/chapter-ledger.json",
+      "docs/clinical-audit/sequential-resume.json"
+    ]
+  },
+  "publication": {
+    "mainMerge": "not performed",
+    "production": "not verified"
+  },
+  "wholeGoalComplete": false,
+  "nextAction": "Continue noninsulin-diabetes-pharmacotherapy in audit-branch lesson order at other-noninsulin-agents, including every anchored whole question and derived cumulative item. Read the exact book and approved primary sources. Preserve all seven verified lessons and eighty-two verified bank question IDs;three lessons and38questions remain open. Preserve the separate working draft of eleven lessons and ninety-two authored questions without inferring certification. Whole MASLD and ALD parents are verified;rifaximin HE is verified, with nine other lessons/147questions reserved for Chapter22 parent audit. Preserve the245-match contextual inventory,four HIV PI choices,prior ICU withdrawal and all feeding dependencies. Return to Chapter11 printed161/PDF169 after broader feeding dependencies. Chapters11/19/22/44 and Chapter1 printed7/PDF19 checklist15 remain open;full82-chapter goal continues.",
+  "receiptCommit": "Receipt follows exact verified content commit; its own remote hash separately verified in execution output."
+}
