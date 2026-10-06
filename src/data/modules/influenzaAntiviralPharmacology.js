@@ -757,3 +757,88 @@ Object.assign(influenzaAntiviralPharmacologyModule.submodules.find((lesson) => l
     "reviewHref": "#baloxavir-target-dosing"
   }
 });
+
+
+// Complete presentation-specific baloxavir administration and safety reconciliation.
+Object.assign(influenzaAntiviralPharmacologyModule.submodules.find((lesson) => lesson.slug === "baloxavir-administration-safety"), {
+  "slug": "baloxavir-administration-safety",
+  "title": "Protect the Baloxavir Single Dose",
+  "visual": "influenza-antiviral-baloxavir-administration-safety",
+  "summary": "Protect the single dose by checking cation exposure, the exact bottle or packet instructions, allergy history, age, illness setting and population-specific evidence.",
+  "concepts": [
+    "Cation exposure",
+    "Bottle versus packet",
+    "Complete delivery",
+    "Serious reactions",
+    "Patient and vaccine fit"
+  ],
+  "application": "Confirm the prescribed presentation and deliver its complete dose with the correct preparation and storage instructions; reassess reactions or worsening illness without automatically repeating baloxavir.",
+  "lesson": [
+    {
+      "heading": "Avoid cation coadministration",
+      "body": "Baloxavir may be taken with or without food, but avoid coadministration with dairy products, calcium-fortified beverages and polyvalent cation-containing laxatives, antacids or oral supplements, including calcium, iron, magnesium, selenium and zinc. Check the actual ingredients in medicines, supplements and planned intake rather than only the product category. Chelation can decrease baloxavir exposure and may reduce efficacy. The label\u2019s cation pharmacokinetic evidence includes an animal study; it does not give a human probability of treatment failure. The FDA label and CDC summary do not supply one universal two-hour or four-hour separation rule. Follow the coadministration warning and arrange a patient-specific administration plan; do not invent a spacing interval or automatically repeat the single dose after a suspected interaction."
+    },
+    {
+      "heading": "Constitute a bottle correctly",
+      "body": "A healthcare provider prepares bottle suspension at dispensing. Tap the bottle bottom to loosen the granules, add 20 mL of drinking or sterile water and gently swirl until evenly suspended. Do not shake. This produces 40 mg in 20 mL, or 2 mg/mL. Write the preparation date and time and the 10-hour administration limit on the bottle. The suspension contains no preservative. Preparation concentration does not determine every patient\u2019s dose: the prescribed amount may be less than one bottle, one bottle or two bottles. The dose table and the specific ordered volume govern administration."
+    },
+    {
+      "heading": "Measure the prescribed bottle volume",
+      "body": "Before use, gently swirl the prepared bottle well without shaking. Open the child-resistant cap by pushing down and turning; use the supplied oral syringe to withdraw and give the prescribed volume. Repeat withdrawals and delivery as needed to give the entire ordered dose, accounting for syringe capacity and any second bottle. Do not substitute a full bottle for a smaller measured pediatric dose. Close the bottle and discard remaining suspension and the syringe after dosing as instructed. Contact the pharmacist if the supplied product is not liquid or the oral syringe is missing; an expired preparation requires replacement instructions rather than guessing a new dose."
+    },
+    {
+      "heading": "Give the whole packet and its residue",
+      "body": "For packets, wash and dry hands and check the prescribed packet dose, expiration and packaging. Tap granules to one side before opening, then empty every granule into approximately 15 to 20 mL of room-temperature drinking water. Gently swirl for one minute or until fully dispersed. Drink the entire mixture immediately. Refill the container with another 15 to 20 mL of water, swirl to collect residue and drink it immediately; repeat this rinse once more if granules remain. This first residue rinse is part of complete delivery, not an optional substitute for the initial mixture. When two 40 mg packets are prescribed, prepare and take each separately through the same sequence. Discard the packet, wash the container with soap and water and wash hands. Do not store a packet mixture for the bottle\u2019s 10-hour window or withdraw a fractional dose using the bottle\u2019s 2 mg/mL formula."
+    },
+    {
+      "heading": "Complete enteral delivery and rinsing",
+      "body": "Both labeled liquid presentations can use an enteral syringe and a feeding tube of 4 French or larger, with 1 mL of water before and after administration. For a bottle, measure and deliver the prescribed suspension volume. For a packet, prepare the whole mixture as directed, draw it into the enteral syringe immediately before settling causes incomplete transfer, and push it slowly through the tube. Refill the preparation container with 15 to 20 mL of water, swirl to collect residue and use that water to flush the tube; repeat this residue rinse once more if granules remain. The 1 mL pre- and post-flushes do not replace the packet-container residue rinse. Prepare and deliver each packet separately when two are prescribed, and clean the enteral syringe according to its manufacturer\u2019s instructions. As a water-planning example for one packet, 20 mL for mixing plus 20 mL for the required residue rinse plus 1 mL before and 1 mL after equals 42 mL of supplied water. A second 20 mL residue rinse, if needed, raises that example to 62 mL. These totals describe chosen water volumes, not an exact final suspension volume or a universal fluid requirement; reconcile delivery with the patient\u2019s fluid plan."
+    },
+    {
+      "heading": "Use the presentation-specific storage clock",
+      "body": "The book distinguishes oseltamivir suspension storage, 10 days at room temperature or 17 days refrigerated, from baloxavir bottle suspension\u2019s 10-hour interval. Current Xofluza labeling specifies constituted bottles at 20 to 25 degrees C for no more than 10 hours; discard if unused by that limit or stored above 25 degrees C. Refrigeration does not establish an extended labeled clock. Packet mixtures must be given immediately. Before constitution, keep tablets in their original blister and dry bottles or packets in their original packaging at 20 to 25 degrees C; the permitted 15-to-30-degree excursions apply to these unconstituted products, not the constituted bottle. Current labeling describes bottles and packets while CDC states suspension is unavailable in the United States. Verify actual supply and exact presentation before planning liquid delivery."
+    },
+    {
+      "heading": "Recognize hypersensitivity and act",
+      "body": "A history of hypersensitivity to baloxavir marboxil or any ingredient is a labeled contraindication; it is not limited to a prior episode of anaphylaxis. Anaphylaxis, angioedema, urticaria and erythema multiforme have been reported. Breathing difficulty, face, throat or mouth swelling, hives, blistering rash or marked dizziness after administration requires emergency medical help. Initiate appropriate treatment when an allergic-like reaction occurs or is suspected. Do not finish remaining administration or give additional baloxavir while a suspected reaction is being assessed. Because this is usually a single dose, advice to stop an ongoing course alone may miss the need to act after the dose has already been taken."
+    },
+    {
+      "heading": "Interpret adverse reports and worsening illness",
+      "body": "Diarrhea remains a useful book-listed adverse-event counseling point. Adult and adolescent trials also reported bronchitis, nausea, sinusitis and headache; these trial events were recorded regardless of causality and should not all be described as proven drug-caused disease. Vomiting and diarrhea were reported in the pediatric trial. Postmarketing reports include hematochezia, melena and colitis, as well as delirium, abnormal behavior and hallucinations. Voluntary reports from an uncertain population cannot reliably establish their frequency or causal relationship to baloxavir. New bleeding, concerning neurologic symptoms or deterioration requires assessment rather than an assumed drug mechanism or automatic repeat dose. Serious bacterial infection may mimic, coexist with or complicate influenza, and baloxavir has not been shown to prevent it; evaluate and treat a suspected bacterial complication appropriately."
+    },
+    {
+      "heading": "Respect the age and resistance boundary",
+      "body": "Current eligibility starts at age 5. Safety and effectiveness below age 5 have not been established, and the label identifies a higher incidence of treatment-emergent viral substitutions associated with reduced baloxavir susceptibility in younger children. This supports the age boundary without claiming that every younger child develops resistance or that older patients cannot. Weight-based liquid calculations do not erase the age restriction. Being age-eligible also does not establish suitability for every illness severity, pregnancy status or immune condition. Preserve the distinct age, presentation, timing and patient-fit checks instead of treating single-dose convenience as a universal choice."
+    },
+    {
+      "heading": "Keep pregnancy and lactation evidence qualified",
+      "body": "The FDA label lacks adequate well-controlled human pregnancy studies to inform drug-associated risk. Animal findings do not prove zero human risk, and influenza itself poses maternal and fetal risks. CDC does not recommend baloxavir during pregnancy; oral oseltamivir is the preferred influenza treatment in pregnancy. For lactation, human milk concentrations, effects on the breastfed infant and effects on milk production are unknown. Baloxavir and related metabolites were present in rat milk, which neither quantifies human transfer nor proves its absence. CDC also does not recommend baloxavir while breastfeeding because efficacy, safety and human milk data are lacking. Distinguish these evidence-based treatment recommendations from a labeled history-of-allergy contraindication."
+    },
+    {
+      "heading": "Match immune status and illness setting",
+      "body": "CDC does not recommend baloxavir monotherapy in severely immunosuppressed persons: clinical efficacy, safety and resistance data are lacking, and prolonged viral replication raises concern about resistance. This is not a blanket FDA contraindication for every degree of immunocompromise. Current labeling still includes otherwise healthy or high-risk patients aged 5 and older with acute uncomplicated influenza within 48 hours. For hospitalized influenza, CDC recommends oral or enterically administered oseltamivir promptly; baloxavir is not routinely recommended because clinical-benefit data are insufficient. For severe, complicated or progressive outpatient illness, oseltamivir is recommended. Do not transfer evidence supporting later neuraminidase-inhibitor treatment to later baloxavir use in outpatients."
+    },
+    {
+      "heading": "Separate live-vaccine timing from cation exposure",
+      "body": "The FDA label notes that concurrent live attenuated influenza vaccine, LAIV, use with baloxavir has not been studied; an antiviral may inhibit vaccine-virus replication and reduce vaccine effectiveness. CDC supplies the timing rule: do not give LAIV if baloxavir was administered within the preceding 17 days. This is a baloxavir-specific look-back interval, not the oseltamivir 48-hour or peramivir five-day interval. Antivirals administered within two weeks after LAIV may also reduce its effectiveness; CDC advises revaccination with another appropriate vaccine, such as an inactivated or recombinant product. Inactivated influenza vaccine is not a polyvalent-cation exposure, but the Xofluza label says its interactions have not been studied. Do not turn that absence of studies into proof that FDA interaction trials established no effect."
+    }
+  ],
+  "keyPoints": [
+    "Avoid cation coadministration; do not invent a universal separation interval.",
+    "Constituted bottles have a 10-hour limit; packet mixtures and their residue rinses are given immediately.",
+    "Check allergy history, serious symptoms, age, pregnancy, lactation, immune status and illness severity.",
+    "CDC\u2019s LAIV look-back after baloxavir is 17 days; keep evidence gaps distinct from contraindications."
+  ],
+  "check": {
+    "question": "Which exposure should be avoided with the baloxavir dose?",
+    "choices": [
+      "A calcium-containing antacid",
+      "Plain water",
+      "An oral syringe",
+      "An inactivated vaccine"
+    ],
+    "answer": 0,
+    "rationale": "A calcium-containing antacid is a polyvalent-cation exposure to avoid with baloxavir because it may reduce exposure and efficacy. Plain water and a correctly used oral syringe support labeled delivery and do not supply that cation interaction. Inactivated influenza vaccine is not this cation exposure; its interactions with Xofluza have not been studied, while live-vaccine interference is a separate issue.",
+    "reviewHref": "#baloxavir-administration-safety"
+  }
+});

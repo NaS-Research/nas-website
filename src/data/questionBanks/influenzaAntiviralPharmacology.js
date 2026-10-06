@@ -2406,3 +2406,248 @@ for (const [id, updates] of Object.entries({
 })) {
   Object.assign(influenzaAntiviralPharmacologyQuestionBank.find((question) => question.id === id), updates);
 }
+
+
+// Whole baloxavir administration and safety questions retain stable IDs and keyed indices.
+for (const [id, updates] of Object.entries({
+  "influenza-antiviral-pharmacology-145": {
+    "id": "influenza-antiviral-pharmacology-145",
+    "lesson": "baloxavir-administration-safety",
+    "question": "What is the appropriate interpretation of baloxavir cation coadministration?",
+    "choices": [
+      "It may reduce drug exposure and efficacy, so avoid coadministration",
+      "It proves treatment failure in every exposed patient",
+      "It increases absorption and should be used to improve the single dose",
+      "It requires an automatic second baloxavir dose"
+    ],
+    "answer": 0,
+    "rationale": "Cation coadministration may decrease exposure and efficacy, so avoid it. Neither universal clinical failure nor improved absorption is established; the label does not instruct automatic redosing.",
+    "reviewHref": "#baloxavir-administration-safety"
+  },
+  "influenza-antiviral-pharmacology-146": {
+    "id": "influenza-antiviral-pharmacology-146",
+    "lesson": "baloxavir-administration-safety",
+    "question": "Which planned same-time intake conflicts with baloxavir administration advice?",
+    "choices": [
+      "A calcium-fortified beverage",
+      "Plain drinking water for the prescribed packet mixture",
+      "The labeled packet-container water rinse",
+      "The prescribed bottle dose delivered with an oral syringe"
+    ],
+    "answer": 0,
+    "rationale": "Calcium-fortified beverages are specifically included in the coadministration warning. Plain water, the water residue rinse and a correctly measured oral-syringe dose are parts of labeled delivery, not the identified calcium exposure.",
+    "reviewHref": "#baloxavir-administration-safety"
+  },
+  "influenza-antiviral-pharmacology-147": {
+    "id": "influenza-antiviral-pharmacology-147",
+    "lesson": "baloxavir-administration-safety",
+    "question": "A supplement contains iron and zinc. What timing conclusion follows from the FDA label and CDC summary?",
+    "choices": [
+      "Avoid coadministration and arrange a specific plan; these sources do not give one universal spacing interval",
+      "A universal two-hour gap is explicitly guaranteed to prevent the interaction",
+      "A universal four-hour gap is explicitly guaranteed to prevent the interaction",
+      "The warning applies only to dairy, so the supplement may always be taken simultaneously"
+    ],
+    "answer": 0,
+    "rationale": "Iron and zinc supplements are within the polyvalent-cation warning. The cited sources do not supply a universal two- or four-hour spacing guarantee; limiting the warning to dairy misses supplements.",
+    "reviewHref": "#baloxavir-administration-safety"
+  },
+  "influenza-antiviral-pharmacology-148": {
+    "id": "influenza-antiviral-pharmacology-148",
+    "lesson": "baloxavir-administration-safety",
+    "question": "Which counseling statement correctly combines baloxavir food advice with its interaction warning?",
+    "choices": [
+      "It may be taken with or without food, while dairy and calcium-fortified beverages should not be coadministered",
+      "Every type of food is prohibited for the whole treatment day",
+      "Taking it with food removes the need to screen mineral supplements",
+      "Dairy is preferred because a single dose needs extra calcium for absorption"
+    ],
+    "answer": 0,
+    "rationale": "With-or-without-food dosing does not remove the specific dairy, fortified-beverage and cation warning. The label does not prohibit all food for a day, make supplements irrelevant or recommend dairy to enhance absorption.",
+    "reviewHref": "#baloxavir-administration-safety"
+  },
+  "influenza-antiviral-pharmacology-149": {
+    "id": "influenza-antiviral-pharmacology-149",
+    "lesson": "baloxavir-administration-safety",
+    "question": "Which sequence correctly prepares a baloxavir bottle at dispensing?",
+    "choices": [
+      "Loosen granules, add 20 mL of drinking or sterile water, gently swirl without shaking and mark the 10-hour limit",
+      "Add 15 to 20 mL of water and store every resulting bottle mixture indefinitely",
+      "Shake vigorously and label it with the oseltamivir 17-day refrigerated limit",
+      "Add 20 mL of water and give the whole bottle to every child regardless of the ordered dose"
+    ],
+    "answer": 0,
+    "rationale": "The bottle uses 20 mL of water, gentle swirling and a marked 10-hour limit. The 15-to-20 mL range belongs to packets; neither indefinite storage nor an oseltamivir clock applies. Preparation does not replace the patient-specific prescribed volume.",
+    "reviewHref": "#baloxavir-administration-safety"
+  },
+  "influenza-antiviral-pharmacology-150": {
+    "id": "influenza-antiviral-pharmacology-150",
+    "lesson": "baloxavir-administration-safety",
+    "question": "After drinking a freshly mixed baloxavir packet, what delivery step is still required?",
+    "choices": [
+      "Refill the container with 15 to 20 mL water, swirl residue and drink immediately; rinse once more if granules remain",
+      "Discard the container immediately because a residue rinse is never part of the dose",
+      "Refrigerate the residue until the next day and give it as a second scheduled dose",
+      "Use a 1 mL tube pre-flush instead of rinsing the oral preparation container"
+    ],
+    "answer": 0,
+    "rationale": "The packet instructions require the first 15-to-20 mL residue rinse, with one further rinse if granules remain. Discarding residue can lose drug; storing it for a next-day dose is unsupported, and a tube pre-flush does not replace an oral container rinse.",
+    "reviewHref": "#baloxavir-administration-safety"
+  },
+  "influenza-antiviral-pharmacology-151": {
+    "id": "influenza-antiviral-pharmacology-151",
+    "lesson": "baloxavir-administration-safety",
+    "question": "For one packet given through a tube, a plan uses 20 mL mixing water, 20 mL for the required residue rinse and 1 mL before and after delivery. How much supplied water is this before any extra rinse?",
+    "choices": [
+      "42 mL",
+      "20 mL",
+      "22 mL",
+      "40 mL"
+    ],
+    "answer": 0,
+    "rationale": "The supplied water is 20 + 20 + 1 + 1 = 42 mL. Twenty omits the rinse and flushes; twenty-two omits the residue rinse; forty omits both 1 mL flushes. This example totals chosen water volumes, not exact final suspension volume or a universal requirement. A further 20 mL residue rinse would make 62 mL.",
+    "reviewHref": "#baloxavir-administration-safety"
+  },
+  "influenza-antiviral-pharmacology-153": {
+    "id": "influenza-antiviral-pharmacology-153",
+    "lesson": "baloxavir-administration-safety",
+    "question": "Which history is a labeled baloxavir contraindication?",
+    "choices": [
+      "Hypersensitivity to baloxavir marboxil or any ingredient",
+      "Only prior anaphylaxis, with all other ingredient allergies excluded",
+      "Every high-risk condition in an otherwise eligible uncomplicated influenza patient",
+      "Every instance of immunocompromise, regardless of severity or context"
+    ],
+    "answer": 0,
+    "rationale": "The contraindication covers hypersensitivity to baloxavir marboxil or any ingredient, not only anaphylaxis. High-risk uncomplicated influenza is included in labeling; CDC\u2019s specific severe-immunosuppression monotherapy recommendation is not an all-immunocompromise FDA contraindication.",
+    "reviewHref": "#baloxavir-administration-safety"
+  },
+  "influenza-antiviral-pharmacology-154": {
+    "id": "influenza-antiviral-pharmacology-154",
+    "lesson": "baloxavir-administration-safety",
+    "question": "A patient develops breathing difficulty and facial swelling while taking baloxavir. What is the appropriate action?",
+    "choices": [
+      "Stop remaining administration and obtain emergency assessment and appropriate treatment for a suspected serious reaction",
+      "Finish any remaining dose before seeking help because treatment is only once",
+      "Repeat the dose to compensate for suspected incomplete absorption",
+      "Wait for the 10-hour storage window to end before deciding whether symptoms are serious"
+    ],
+    "answer": 0,
+    "rationale": "Breathing difficulty and facial swelling can signal a serious hypersensitivity reaction and require urgent action. Finishing the remaining dose, automatically repeating it or waiting for a storage deadline delays appropriate care.",
+    "reviewHref": "#baloxavir-administration-safety"
+  },
+  "influenza-antiviral-pharmacology-155": {
+    "id": "influenza-antiviral-pharmacology-155",
+    "lesson": "baloxavir-administration-safety",
+    "question": "What can be concluded from voluntary baloxavir postmarketing reports of melena or delirium?",
+    "choices": [
+      "They warrant clinical attention, but reporting cannot reliably establish frequency or causality",
+      "They prove that these events occur in exactly the adult trial percentage for diarrhea",
+      "They establish that baloxavir caused every reported event",
+      "They mean deterioration should always be treated with another baloxavir dose"
+    ],
+    "answer": 0,
+    "rationale": "Voluntary reports from an uncertain population do not reliably establish frequency or causality, although concerning symptoms need assessment. Diarrhea trial percentages cannot be transferred to melena or delirium; neither universal drug causation nor automatic redosing follows.",
+    "reviewHref": "#baloxavir-administration-safety"
+  },
+  "influenza-antiviral-pharmacology-156": {
+    "id": "influenza-antiviral-pharmacology-156",
+    "lesson": "baloxavir-administration-safety",
+    "question": "Which interpretation of the baloxavir age restriction is accurate?",
+    "choices": [
+      "Below age 5, use is not indicated and treatment-emergent resistance incidence was higher, without certainty for every child",
+      "Weight-based bottle calculations authorize every child younger than 5",
+      "Every patient aged 5 or older is protected from resistance",
+      "The age restriction applies only when a child cannot swallow a tablet"
+    ],
+    "answer": 0,
+    "rationale": "The below-5 boundary includes unestablished safety and effectiveness and increased resistance incidence. Weight calculations and swallowing ability do not erase it, and older age does not guarantee freedom from resistance.",
+    "reviewHref": "#baloxavir-administration-safety"
+  },
+  "influenza-antiviral-pharmacology-157": {
+    "id": "influenza-antiviral-pharmacology-157",
+    "lesson": "baloxavir-administration-safety",
+    "question": "Which statement accurately reflects baloxavir pregnancy evidence and CDC guidance?",
+    "choices": [
+      "Human pregnancy data are inadequate, and CDC recommends against baloxavir during pregnancy with oseltamivir preferred for treatment",
+      "Animal findings prove zero human fetal risk and make baloxavir preferred",
+      "A lack of well-controlled human studies is proof of no pregnancy risk",
+      "All influenza treatment should be delayed until pregnancy ends"
+    ],
+    "answer": 0,
+    "rationale": "Inadequate human data do not establish zero risk; CDC does not recommend baloxavir during pregnancy and prefers oseltamivir treatment. Animal findings do not make it preferred, and influenza risk supports timely appropriate treatment rather than delaying every antiviral.",
+    "reviewHref": "#baloxavir-administration-safety"
+  },
+  "influenza-antiviral-pharmacology-158": {
+    "id": "influenza-antiviral-pharmacology-158",
+    "lesson": "baloxavir-administration-safety",
+    "question": "Which lactation conclusion is supported for baloxavir?",
+    "choices": [
+      "Human milk and infant-effect data are lacking; rat milk findings do not quantify human transfer, and CDC does not recommend use while breastfeeding",
+      "No human milk study proves that transfer into milk is zero",
+      "Rat milk concentrations precisely predict the infant\u2019s human dose",
+      "Breastfeeding automatically removes the cation interaction warning"
+    ],
+    "answer": 0,
+    "rationale": "Human milk, infant-effect and milk-production data are lacking, and rat findings cannot quantify human transfer. No study is not proof of zero transfer; breastfeeding does not remove the cation warning. CDC does not recommend baloxavir while breastfeeding.",
+    "reviewHref": "#baloxavir-administration-safety"
+  },
+  "influenza-antiviral-pharmacology-159": {
+    "id": "influenza-antiviral-pharmacology-159",
+    "lesson": "baloxavir-administration-safety",
+    "question": "Which statement correctly describes CDC\u2019s immune-status recommendation for baloxavir?",
+    "choices": [
+      "Baloxavir monotherapy is not recommended in severely immunosuppressed persons because efficacy, safety and resistance data are lacking",
+      "The FDA label absolutely contraindicates every degree of immunocompromise",
+      "Being a high-risk patient always excludes otherwise eligible uncomplicated influenza from labeling",
+      "A single dose makes prolonged replication and resistance irrelevant in severe immunosuppression"
+    ],
+    "answer": 0,
+    "rationale": "CDC specifically advises against monotherapy in severe immunosuppression, with data gaps and prolonged-replication resistance concerns. That is not an all-immunocompromise FDA contraindication; labeling includes eligible high-risk uncomplicated patients, and single-dose frequency does not remove the concern.",
+    "reviewHref": "#baloxavir-administration-safety"
+  },
+  "influenza-antiviral-pharmacology-160": {
+    "id": "influenza-antiviral-pharmacology-160",
+    "lesson": "baloxavir-administration-safety",
+    "question": "According to CDC, what recent baloxavir exposure prevents giving LAIV today?",
+    "choices": [
+      "Baloxavir administered within the preceding 17 days",
+      "Only baloxavir administered within the preceding 48 hours",
+      "Only baloxavir administered within the preceding five days",
+      "No recent baloxavir exposure matters because LAIV is an inactivated vaccine"
+    ],
+    "answer": 0,
+    "rationale": "CDC\u2019s baloxavir-specific LAIV look-back is 17 days. Forty-eight hours and five days are intervals for other antivirals; LAIV is live attenuated, not inactivated, and antiviral interference can reduce vaccine effectiveness.",
+    "reviewHref": "#baloxavir-administration-safety"
+  },
+  "influenza-antiviral-pharmacology-152": {
+    "id": "influenza-antiviral-pharmacology-152",
+    "lesson": "baloxavir-administration-safety",
+    "question": "Which reasoning hazard is most important to prevent with baloxavir suspension handling?",
+    "choices": [
+      "Using oseltamivir suspension storage rules for baloxavir",
+      "Recording the baloxavir preparation time and its ten-hour administration limit",
+      "Keeping the book baloxavir suspension at room temperature within its specified window",
+      "Recognizing that oseltamivir and baloxavir have different suspension storage limits"
+    ],
+    "answer": 0,
+    "rationale": "The hazard is transferring oseltamivir\u2019s storage rules to baloxavir. The book lists oseltamivir suspension for 10 days at room temperature or 17 days refrigerated, while its baloxavir bottle has a 10-hour room-temperature limit. Recording the preparation time, keeping the bottle within its correct time and temperature limits and recognizing the drugs\u2019 different clocks are safeguards, not hazards. Current Xofluza labeling specifies constituted bottles at 20 to 25 degrees C for no more than 10 hours, discarding after that limit or above 25 degrees C; packet mixtures must be given immediately. Refrigeration does not create an extended baloxavir clock.",
+    "reviewHref": "#baloxavir-administration-safety"
+  },
+  "influenza-antiviral-pharmacology-190": {
+    "id": "influenza-antiviral-pharmacology-190",
+    "lesson": "baloxavir-administration-safety",
+    "question": "Which same-time exposure can reduce baloxavir efficacy?",
+    "choices": [
+      "A calcium-containing antacid",
+      "Plain water",
+      "An oral syringe",
+      "An inactivated vaccine"
+    ],
+    "answer": 0,
+    "rationale": "A calcium-containing antacid is a cation exposure that may lower baloxavir exposure and efficacy. Plain water and a correctly used oral syringe are labeled delivery tools and do not supply that interaction. Inactivated influenza vaccine is not this cation exposure; the FDA label states its interactions with Xofluza have not been studied. Live attenuated vaccine interference is a separate issue. A suspected interaction does not by itself establish treatment failure or an automatic repeat dose.",
+    "reviewHref": "#baloxavir-administration-safety"
+  }
+})) {
+  Object.assign(influenzaAntiviralPharmacologyQuestionBank.find((question) => question.id === id), updates);
+}
