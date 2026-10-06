@@ -1,7 +1,7 @@
 {
   "updated": "2026-10-06T21:54:01.157831+00:00",
   "unit": "enteral-nutrition:broader-cystic-fibrosis-nutrition-systemic",
-  "status": "Two complete CF lessons and 32 whole questions clinically, arithmetically, in the browser, and visually verified; exact branch release pending.",
+  "status": "Two complete CF nutrition/systemic lessons verified: 14 bodies, two checks, two figures, 32 whole questions. Exact audit-branch content push verified; full CF, feeding parent, and full book goal remain open. Production not verified.",
   "coverage": {
     "evidence": "enteral-nutrition-broader-cystic-fibrosis-nutrition-systemic-review.json",
     "moduleSlug": "cystic-fibrosis",
@@ -3082,11 +3082,14 @@
   "release": {
     "branch": "audit/rxprep-content-2026-09-24",
     "baseCommit": "49c903c9fc2545a597d15271b74e932ba631d77c",
-    "commit": null,
-    "push": "pending",
+    "commit": "1b8ee4da8452c713ea10d8b13342279fb3cff069",
+    "push": "verified",
     "receipt": "enteral-nutrition-broader-cystic-fibrosis-nutrition-systemic-release.json",
     "mainMerge": "not performed",
-    "production": "not verified"
+    "production": "not verified",
+    "remoteHashObserved": "1b8ee4da8452c713ea10d8b13342279fb3cff069",
+    "exactRemoteObservedByTool": true,
+    "remoteVerifiedAt": "2026-10-06T21:54:41.739777+00:00"
   },
   "remainingReview": "Continue the remaining CF parent from cf-biology-diagnosis: verify all diagnosis and CFTR claims, whole questions, check, figure, and metadata against supplied Chapter 55 PDF739-743 and approved official guidance. Then review airway clearance, pulmonary assessment, infection/exacerbations, CFTR modulators, and longitudinal/advanced care. Preserve the unresolved book tobramycin minimum interval discrepancy (8 hours versus 6 hours) until the exact product label review. Six lessons, 24 original bodies, six checks, six figures, and 92 original questions remain. The nutrition and systemic lessons and their 32 whole questions are verified. Return to the Chapter 11 feeding inventory until all dependencies are resolved; Chapter 1 PDF19 checklist entry 15 remains open.",
   "wholeGoalComplete": false,
