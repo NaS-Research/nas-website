@@ -1,0 +1,1481 @@
+{
+  "verifiedAt": "2026-10-06T18:43:19.829714+00:00",
+  "unit": "enteral-nutrition:broader-adrenal-testing",
+  "contentCommit": "b24745a292d8cc0e3fabd7c60ebff43ff3a56556",
+  "remoteBranch": "audit/rxprep-content-2026-09-24",
+  "remoteHashObserved": "b24745a292d8cc0e3fabd7c60ebff43ff3a56556",
+  "exactRemoteObservedByTool": true,
+  "coverage": {
+    "evidence": "enteral-nutrition-broader-adrenal-testing-review.json",
+    "verifiedScope": "Verified two whole adrenal lessons: clinical recognition/biochemical patterns and morning cortisol/corticotropin testing. Seven original bodies retained and expanded to nine, all metadata, two complete embedded checks and two readable figures. Seven whole questions and all28 choices individually source-compared; all stable IDs/choices/keys retained and case13 suspected-adrenal-crisis context clarified. One cumulative origin10 reconciled and tested, other1179 whole cumulative objects unchanged. Prior five whole lessons and17 questions exactly match detailed reviewed evidence. Seven of eleven adrenal lessons and24 of35 whole bank questions now verified across detailed units; four lessons11questions remain. Broader unique questions1258to1265. Whole parent remains reviewing; committed whole modules63/232 and chapters6/82 unchanged. Count ratios are not weighted overall completion; entire goal open.",
+    "wholeLessonsVerified": {
+      "adrenal-insufficiency-crisis": [
+        "clinical-patterns",
+        "morning-cortisol-testing"
+      ]
+    },
+    "wholeBodiesVerifiedThisUnit": 9,
+    "originalBodiesRetained": 7,
+    "originalBodiesExpanded": 7,
+    "newOriginalBodies": 2,
+    "wholeChecksVerifiedThisUnit": 2,
+    "wholeFiguresVerifiedThisUnit": 2,
+    "wholeLessonMetadataVerified": true,
+    "wholeQuestionsReviewed": 7,
+    "changedWholeQuestions": 7,
+    "all28ChoicesIndividuallySourceCompared": true,
+    "allEightEmbeddedChoicesIndividuallySourceCompared": true,
+    "sixUsefulStemsAndAllChoicesAndKeysPreserved": true,
+    "question13SuspectedCrisisContextClarified": true,
+    "wholeBankQuestionIdsVerified": [
+      "adrenal-insufficiency-09-case",
+      "adrenal-insufficiency-10-case",
+      "adrenal-insufficiency-11-case",
+      "adrenal-insufficiency-12-case",
+      "adrenal-insufficiency-13-case",
+      "adrenal-insufficiency-14-case",
+      "adrenal-insufficiency-diagnosis-versus-recovery"
+    ],
+    "newUniqueBankQuestionsVerified": 7,
+    "newUniqueBankIdsVerified": [
+      "adrenal-insufficiency-09-case",
+      "adrenal-insufficiency-10-case",
+      "adrenal-insufficiency-11-case",
+      "adrenal-insufficiency-12-case",
+      "adrenal-insufficiency-13-case",
+      "adrenal-insufficiency-14-case",
+      "adrenal-insufficiency-diagnosis-versus-recovery"
+    ],
+    "broaderFeedingBankVerifiedBefore": 1258,
+    "broaderFeedingBankVerifiedAfter": 1265,
+    "adrenalWholeBankSourceVerifiedAcrossDetailedUnits": 24,
+    "adrenalBankTotal": 35,
+    "wholeAdrenalLessonsVerifiedAcrossDetailedUnits": 7,
+    "adrenalLessonTotal": 11,
+    "remainingAdrenalWholeBankQuestions": 11,
+    "remainingAdrenalUnverifiedWholeLessons": 4,
+    "priorFiveVerifiedWholeLessonsAnd17QuestionsRetainedExactly": true,
+    "allOther28WholeQuestionsAndNineLessonObjectsUnchanged": true,
+    "associatedCumulativeItems": [
+      "cumulative-adrenal-insufficiency-crisis-adrenal-insufficiency-10-case"
+    ],
+    "wholeCumulativeItemsReviewedThisUnit": 1,
+    "other1179WholeCumulativeObjectsUnchanged": true,
+    "cumulativeSelectorUnchanged": true,
+    "allFourteenExistingReferencesPreservedExactly": true,
+    "newOfficialReferencesAdded": 0,
+    "workedDoseCalculationCases": 0,
+    "threeNumericThresholdComparisonsIndependentlyChecked": true,
+    "wholeParentModuleVerified": false,
+    "enteralParentVerified": false,
+    "wholeChaptersVerified": false,
+    "committedWholeModulesVerifiedBefore": 63,
+    "committedWholeModulesVerifiedAfter": 63,
+    "committedWholeModulesTotal": 232,
+    "moduleCountPercent": 27.16,
+    "chaptersVerifiedAfter": 6,
+    "chapterTotal": 82,
+    "chapterCountPercent": 7.32,
+    "workingBoundary": "Clinical adrenal parent matches committed baseline; selected working objects receive exact verified changes. Other working website drafts remain uncertified."
+  },
+  "validation": {
+    "productionBuild": {
+      "status": "passed",
+      "terminalExitCode": 0,
+      "command": "next build --webpack",
+      "productionCandidate": true
+    },
+    "structure": {
+      "modules": 1,
+      "questions": 35,
+      "hardErrors": [],
+      "sourceGaps": [],
+      "sizeAdvisories": [
+        {
+          "module": "adrenal-insufficiency-crisis",
+          "questions": 35,
+          "review": "Confirm topic coverage in the clinical audit ledger"
+        }
+      ],
+      "thinLessons": [
+        {
+          "module": "adrenal-insufficiency-crisis",
+          "lesson": "levels-of-failure",
+          "count": 2
+        },
+        {
+          "module": "adrenal-insufficiency-crisis",
+          "lesson": "clinical-patterns",
+          "count": 2
+        },
+        {
+          "module": "adrenal-insufficiency-crisis",
+          "lesson": "special-populations-follow-up",
+          "count": 2
+        },
+        {
+          "module": "adrenal-insufficiency-crisis",
+          "lesson": "primary-adrenal-insufficiency",
+          "count": 3
+        },
+        {
+          "module": "adrenal-insufficiency-crisis",
+          "lesson": "central-glucocorticoid-induced",
+          "count": 3
+        },
+        {
+          "module": "adrenal-insufficiency-crisis",
+          "lesson": "glucocorticoid-replacement",
+          "count": 3
+        },
+        {
+          "module": "adrenal-insufficiency-crisis",
+          "lesson": "mineralocorticoid-replacement",
+          "count": 3
+        },
+        {
+          "module": "adrenal-insufficiency-crisis",
+          "lesson": "sick-day-preparedness",
+          "count": 3
+        },
+        {
+          "module": "adrenal-insufficiency-crisis",
+          "lesson": "adrenal-crisis",
+          "count": 3
+        },
+        {
+          "module": "adrenal-insufficiency-crisis",
+          "lesson": "morning-cortisol-testing",
+          "count": 5
+        },
+        {
+          "module": "adrenal-insufficiency-crisis",
+          "lesson": "formulations-administration",
+          "count": 6
+        }
+      ],
+      "weakestModules": [
+        {
+          "module": "adrenal-insufficiency-crisis",
+          "lessons": 11,
+          "questions": 35,
+          "minimumLessonCoverage": 2
+        }
+      ]
+    },
+    "wholeSiteBaselineIssueContinuity": {
+      "status": "passed",
+      "preexistingIssueListsUnchanged": true,
+      "hardErrors": 34,
+      "sizeAdvisories": 37,
+      "thinLessons": 360
+    },
+    "objectPreservation": {
+      "status": "passed",
+      "totalModuleQuestions": 35,
+      "wholeAnchoredQuestionsReviewed": 7,
+      "changedWholeQuestions": 7,
+      "allOther28WholeQuestionsUnchanged": true,
+      "otherNineWholeLessonsUnchanged": true,
+      "priorTwoVerifiedWholeLessonsAndNineQuestionsRetainedExactly": true,
+      "allFourteenReferencesPreservedExactly": true,
+      "newOfficialReferences": 0,
+      "parentMetadataOtherwiseUnchanged": true,
+      "other231WholeModulesUnchanged": true,
+      "associatedCumulativeItems": [
+        "cumulative-adrenal-insufficiency-crisis-adrenal-insufficiency-10-case"
+      ],
+      "other1179WholeCumulativeObjectsUnchanged": true,
+      "cumulativeSelectorUnchanged": true,
+      "allIdsIndicesOrderDifficultyAndAnchorsPreserved": true,
+      "newQuestionIdsAdded": 0,
+      "sixUsefulStemsAndAllChoicesAndKeysPreserved": true,
+      "question13SuspectedCrisisContextClarified": true,
+      "wholeWorkingClinicalParentMatchesBase": true,
+      "priorFiveVerifiedWholeLessonsAnd17QuestionsRetainedExactly": true
+    },
+    "browser": {
+      "status": "passed",
+      "results": [
+        {
+          "width": 1440,
+          "exactWholeBodies": 9,
+          "wholeChecksAllFourOptionsGraded": 2,
+          "wholeQuestionsShuffledCorrectIncorrectFeedbackAndAnchorsVerified": 7,
+          "associatedCumulativeItems": [
+            "cumulative-adrenal-insufficiency-crisis-adrenal-insufficiency-10-case"
+          ],
+          "associatedCumulativeWholeCasesShuffledCorrectIncorrectAndReviewLinksVerified": 1,
+          "other1179CumulativeObjectsUnchanged": true,
+          "allReferencesExact": 14,
+          "noHorizontalOverflow": true,
+          "diagrams": [
+            {
+              "width": 1440,
+              "slug": "adrenal-insufficiency-crisis",
+              "lessonKey": "clinical-patterns",
+              "labels": [
+                {
+                  "tag": "SPAN",
+                  "text": "Pattern recognition",
+                  "overflow": false,
+                  "fontSize": 10.88
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Use physiology to classify the deficit",
+                  "overflow": false,
+                  "fontSize": 37.6
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "01",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Cortisol",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Low stress reserve",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Weakness, nausea, hypotension, and hypoglycemia can appear",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "02",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "ACTH",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "High or low",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "The direction locates confirmed cortisol deficiency",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "03",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "RAAS",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Renin and aldosterone",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Possible mineralocorticoid loss supports primary disease; central aldosterone is usually preserved",
+                  "overflow": false,
+                  "fontSize": 14
+                }
+              ],
+              "allTextWithinBounds": true
+            },
+            {
+              "width": 1440,
+              "slug": "adrenal-insufficiency-crisis",
+              "lessonKey": "morning-cortisol-testing",
+              "labels": [
+                {
+                  "tag": "SPAN",
+                  "text": "Diagnostic sequence",
+                  "overflow": false,
+                  "fontSize": 10.88
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Ask what the test must establish",
+                  "overflow": false,
+                  "fontSize": 37.6
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "01",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Screen",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Morning cortisol",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Interpret through timing, binding, assay, and recent exposure",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "02",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Confirm",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Corticotropin test",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Measure adrenal response when the patient is stable",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "03",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Recover",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Recovery after steroid taper",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "At physiologic dose with valid timing: >10 supports recovery; 5-10 needs follow-up (micrograms/dL)",
+                  "overflow": false,
+                  "fontSize": 14
+                }
+              ],
+              "allTextWithinBounds": true
+            }
+          ]
+        },
+        {
+          "width": 390,
+          "exactWholeBodies": 9,
+          "wholeChecksAllFourOptionsGraded": 2,
+          "wholeQuestionsShuffledCorrectIncorrectFeedbackAndAnchorsVerified": 7,
+          "associatedCumulativeItems": [
+            "cumulative-adrenal-insufficiency-crisis-adrenal-insufficiency-10-case"
+          ],
+          "associatedCumulativeWholeCasesShuffledCorrectIncorrectAndReviewLinksVerified": 1,
+          "other1179CumulativeObjectsUnchanged": true,
+          "allReferencesExact": 14,
+          "noHorizontalOverflow": true,
+          "diagrams": [
+            {
+              "width": 320,
+              "slug": "adrenal-insufficiency-crisis",
+              "lessonKey": "clinical-patterns",
+              "labels": [
+                {
+                  "tag": "SPAN",
+                  "text": "Pattern recognition",
+                  "overflow": false,
+                  "fontSize": 10.88
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Use physiology to classify the deficit",
+                  "overflow": false,
+                  "fontSize": 23.2
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "01",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Cortisol",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Low stress reserve",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Weakness, nausea, hypotension, and hypoglycemia can appear",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "02",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "ACTH",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "High or low",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "The direction locates confirmed cortisol deficiency",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "03",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "RAAS",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Renin and aldosterone",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Possible mineralocorticoid loss supports primary disease; central aldosterone is usually preserved",
+                  "overflow": false,
+                  "fontSize": 14
+                }
+              ],
+              "allTextWithinBounds": true
+            },
+            {
+              "width": 320,
+              "slug": "adrenal-insufficiency-crisis",
+              "lessonKey": "morning-cortisol-testing",
+              "labels": [
+                {
+                  "tag": "SPAN",
+                  "text": "Diagnostic sequence",
+                  "overflow": false,
+                  "fontSize": 10.88
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Ask what the test must establish",
+                  "overflow": false,
+                  "fontSize": 23.2
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "01",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Screen",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Morning cortisol",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Interpret through timing, binding, assay, and recent exposure",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "02",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Confirm",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Corticotropin test",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Measure adrenal response when the patient is stable",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "03",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Recover",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Recovery after steroid taper",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "At physiologic dose with valid timing: >10 supports recovery; 5-10 needs follow-up (micrograms/dL)",
+                  "overflow": false,
+                  "fontSize": 14
+                }
+              ],
+              "allTextWithinBounds": true
+            },
+            {
+              "width": 390,
+              "slug": "adrenal-insufficiency-crisis",
+              "lessonKey": "clinical-patterns",
+              "labels": [
+                {
+                  "tag": "SPAN",
+                  "text": "Pattern recognition",
+                  "overflow": false,
+                  "fontSize": 10.88
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Use physiology to classify the deficit",
+                  "overflow": false,
+                  "fontSize": 23.2
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "01",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Cortisol",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Low stress reserve",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Weakness, nausea, hypotension, and hypoglycemia can appear",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "02",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "ACTH",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "High or low",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "The direction locates confirmed cortisol deficiency",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "03",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "RAAS",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Renin and aldosterone",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Possible mineralocorticoid loss supports primary disease; central aldosterone is usually preserved",
+                  "overflow": false,
+                  "fontSize": 14
+                }
+              ],
+              "allTextWithinBounds": true
+            },
+            {
+              "width": 390,
+              "slug": "adrenal-insufficiency-crisis",
+              "lessonKey": "morning-cortisol-testing",
+              "labels": [
+                {
+                  "tag": "SPAN",
+                  "text": "Diagnostic sequence",
+                  "overflow": false,
+                  "fontSize": 10.88
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Ask what the test must establish",
+                  "overflow": false,
+                  "fontSize": 23.2
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "01",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Screen",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Morning cortisol",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Interpret through timing, binding, assay, and recent exposure",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "02",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Confirm",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Corticotropin test",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Measure adrenal response when the patient is stable",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "03",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Recover",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Recovery after steroid taper",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "At physiologic dose with valid timing: >10 supports recovery; 5-10 needs follow-up (micrograms/dL)",
+                  "overflow": false,
+                  "fontSize": 14
+                }
+              ],
+              "allTextWithinBounds": true
+            },
+            {
+              "width": 719,
+              "slug": "adrenal-insufficiency-crisis",
+              "lessonKey": "clinical-patterns",
+              "labels": [
+                {
+                  "tag": "SPAN",
+                  "text": "Pattern recognition",
+                  "overflow": false,
+                  "fontSize": 10.88
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Use physiology to classify the deficit",
+                  "overflow": false,
+                  "fontSize": 24.446
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "01",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Cortisol",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Low stress reserve",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Weakness, nausea, hypotension, and hypoglycemia can appear",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "02",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "ACTH",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "High or low",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "The direction locates confirmed cortisol deficiency",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "03",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "RAAS",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Renin and aldosterone",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Possible mineralocorticoid loss supports primary disease; central aldosterone is usually preserved",
+                  "overflow": false,
+                  "fontSize": 14
+                }
+              ],
+              "allTextWithinBounds": true
+            },
+            {
+              "width": 719,
+              "slug": "adrenal-insufficiency-crisis",
+              "lessonKey": "morning-cortisol-testing",
+              "labels": [
+                {
+                  "tag": "SPAN",
+                  "text": "Diagnostic sequence",
+                  "overflow": false,
+                  "fontSize": 10.88
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Ask what the test must establish",
+                  "overflow": false,
+                  "fontSize": 24.446
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "01",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Screen",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Morning cortisol",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Interpret through timing, binding, assay, and recent exposure",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "02",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Confirm",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Corticotropin test",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Measure adrenal response when the patient is stable",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "03",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Recover",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Recovery after steroid taper",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "At physiologic dose with valid timing: >10 supports recovery; 5-10 needs follow-up (micrograms/dL)",
+                  "overflow": false,
+                  "fontSize": 14
+                }
+              ],
+              "allTextWithinBounds": true
+            },
+            {
+              "width": 720,
+              "slug": "adrenal-insufficiency-crisis",
+              "lessonKey": "clinical-patterns",
+              "labels": [
+                {
+                  "tag": "SPAN",
+                  "text": "Pattern recognition",
+                  "overflow": false,
+                  "fontSize": 10.88
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Use physiology to classify the deficit",
+                  "overflow": false,
+                  "fontSize": 24.48
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "01",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Cortisol",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Low stress reserve",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Weakness, nausea, hypotension, and hypoglycemia can appear",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "02",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "ACTH",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "High or low",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "The direction locates confirmed cortisol deficiency",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "03",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "RAAS",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Renin and aldosterone",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Possible mineralocorticoid loss supports primary disease; central aldosterone is usually preserved",
+                  "overflow": false,
+                  "fontSize": 14
+                }
+              ],
+              "allTextWithinBounds": true
+            },
+            {
+              "width": 720,
+              "slug": "adrenal-insufficiency-crisis",
+              "lessonKey": "morning-cortisol-testing",
+              "labels": [
+                {
+                  "tag": "SPAN",
+                  "text": "Diagnostic sequence",
+                  "overflow": false,
+                  "fontSize": 10.88
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Ask what the test must establish",
+                  "overflow": false,
+                  "fontSize": 24.48
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "01",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Screen",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Morning cortisol",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Interpret through timing, binding, assay, and recent exposure",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "02",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Confirm",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Corticotropin test",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Measure adrenal response when the patient is stable",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "03",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Recover",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Recovery after steroid taper",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "At physiologic dose with valid timing: >10 supports recovery; 5-10 needs follow-up (micrograms/dL)",
+                  "overflow": false,
+                  "fontSize": 14
+                }
+              ],
+              "allTextWithinBounds": true
+            },
+            {
+              "width": 721,
+              "slug": "adrenal-insufficiency-crisis",
+              "lessonKey": "clinical-patterns",
+              "labels": [
+                {
+                  "tag": "SPAN",
+                  "text": "Pattern recognition",
+                  "overflow": false,
+                  "fontSize": 10.88
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Use physiology to classify the deficit",
+                  "overflow": false,
+                  "fontSize": 24.514
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "01",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Cortisol",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Low stress reserve",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Weakness, nausea, hypotension, and hypoglycemia can appear",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "02",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "ACTH",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "High or low",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "The direction locates confirmed cortisol deficiency",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "03",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "RAAS",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Renin and aldosterone",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Possible mineralocorticoid loss supports primary disease; central aldosterone is usually preserved",
+                  "overflow": false,
+                  "fontSize": 14
+                }
+              ],
+              "allTextWithinBounds": true
+            },
+            {
+              "width": 721,
+              "slug": "adrenal-insufficiency-crisis",
+              "lessonKey": "morning-cortisol-testing",
+              "labels": [
+                {
+                  "tag": "SPAN",
+                  "text": "Diagnostic sequence",
+                  "overflow": false,
+                  "fontSize": 10.88
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Ask what the test must establish",
+                  "overflow": false,
+                  "fontSize": 24.514
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "01",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Screen",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Morning cortisol",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Interpret through timing, binding, assay, and recent exposure",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "02",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Confirm",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Corticotropin test",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Measure adrenal response when the patient is stable",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "03",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Recover",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Recovery after steroid taper",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "At physiologic dose with valid timing: >10 supports recovery; 5-10 needs follow-up (micrograms/dL)",
+                  "overflow": false,
+                  "fontSize": 14
+                }
+              ],
+              "allTextWithinBounds": true
+            }
+          ]
+        }
+      ],
+      "captures": [
+        "hero-adrenal-insufficiency-crisis-1440.png",
+        "body-clinical-patterns-0-1440.png",
+        "body-clinical-patterns-1-1440.png",
+        "body-clinical-patterns-2-1440.png",
+        "body-clinical-patterns-3-1440.png",
+        "summary-clinical-patterns-1440.png",
+        "concepts-clinical-patterns-1440.png",
+        "keypoints-clinical-patterns-1440.png",
+        "application-clinical-patterns-1440.png",
+        "figure-clinical-patterns-1440.png",
+        "check-clinical-patterns-1440.png",
+        "body-morning-cortisol-testing-0-1440.png",
+        "body-morning-cortisol-testing-1-1440.png",
+        "body-morning-cortisol-testing-2-1440.png",
+        "body-morning-cortisol-testing-3-1440.png",
+        "body-morning-cortisol-testing-4-1440.png",
+        "summary-morning-cortisol-testing-1440.png",
+        "concepts-morning-cortisol-testing-1440.png",
+        "keypoints-morning-cortisol-testing-1440.png",
+        "application-morning-cortisol-testing-1440.png",
+        "figure-morning-cortisol-testing-1440.png",
+        "check-morning-cortisol-testing-1440.png",
+        "references-adrenal-insufficiency-crisis-1440.png",
+        "bank-adrenal-insufficiency-13-case-1440.png",
+        "bank-adrenal-insufficiency-12-case-1440.png",
+        "bank-adrenal-insufficiency-14-case-1440.png",
+        "bank-adrenal-insufficiency-10-case-1440.png",
+        "bank-adrenal-insufficiency-11-case-1440.png",
+        "bank-adrenal-insufficiency-diagnosis-versus-recovery-1440.png",
+        "bank-adrenal-insufficiency-09-case-1440.png",
+        "cumulative-cumulative-adrenal-insufficiency-crisis-adrenal-insufficiency-10-case-1440.png",
+        "hero-adrenal-insufficiency-crisis-390.png",
+        "body-clinical-patterns-0-390.png",
+        "body-clinical-patterns-1-390.png",
+        "body-clinical-patterns-2-390.png",
+        "body-clinical-patterns-3-390.png",
+        "summary-clinical-patterns-390.png",
+        "concepts-clinical-patterns-390.png",
+        "keypoints-clinical-patterns-390.png",
+        "application-clinical-patterns-390.png",
+        "figure-clinical-patterns-390.png",
+        "check-clinical-patterns-390.png",
+        "body-morning-cortisol-testing-0-390.png",
+        "body-morning-cortisol-testing-1-390.png",
+        "body-morning-cortisol-testing-2-390.png",
+        "body-morning-cortisol-testing-3-390.png",
+        "body-morning-cortisol-testing-4-390.png",
+        "summary-morning-cortisol-testing-390.png",
+        "concepts-morning-cortisol-testing-390.png",
+        "keypoints-morning-cortisol-testing-390.png",
+        "application-morning-cortisol-testing-390.png",
+        "figure-morning-cortisol-testing-390.png",
+        "check-morning-cortisol-testing-390.png",
+        "references-adrenal-insufficiency-crisis-390.png",
+        "bank-adrenal-insufficiency-13-case-390.png",
+        "bank-adrenal-insufficiency-12-case-390.png",
+        "bank-adrenal-insufficiency-14-case-390.png",
+        "bank-adrenal-insufficiency-10-case-390.png",
+        "bank-adrenal-insufficiency-11-case-390.png",
+        "bank-adrenal-insufficiency-diagnosis-versus-recovery-390.png",
+        "bank-adrenal-insufficiency-09-case-390.png",
+        "cumulative-cumulative-adrenal-insufficiency-crisis-adrenal-insufficiency-10-case-390.png",
+        "native-figure-clinical-patterns-320.png",
+        "native-figure-morning-cortisol-testing-320.png",
+        "native-figure-clinical-patterns-721.png",
+        "native-figure-morning-cortisol-testing-721.png"
+      ],
+      "errors": []
+    },
+    "visualInspection": {
+      "status": "passed",
+      "checkedAt": "2026-10-06T18:42:20.144212+00:00",
+      "all62DesktopMobileCapturesVisuallyReviewedIn31Pairs": true,
+      "all31PairsReviewedInElevenUnscaledBoardsAtOriginalDetail": true,
+      "additionalIndividualPairsViewed": [
+        "pair-bank-adrenal-insufficiency-13-case.png",
+        "pair-bank-adrenal-insufficiency-diagnosis-versus-recovery.png"
+      ],
+      "boardsReviewed": [
+        "board-00.png",
+        "board-01.png",
+        "board-02.png",
+        "board-03.png",
+        "board-04.png",
+        "board-05.png",
+        "board-06.png",
+        "board-07.png",
+        "board-08.png",
+        "board-09.png",
+        "board-10.png"
+      ],
+      "allFourNativeFigureCapturesIndividuallyReviewed": true,
+      "nativeFigureWidthsReviewed": [
+        320,
+        721
+      ],
+      "automatedFigureWidths": [
+        320,
+        390,
+        719,
+        720,
+        721,
+        1440
+      ],
+      "allNineBodiesMetadataTwoChecksFourteenReferencesSevenQuestionsAndOneCumulativeCaseReviewed": true,
+      "legibleTextAndCompleteFeedback": true,
+      "noClippedScopedTextOrHorizontalOverflow": true,
+      "figureFocusAndBodyLabelsAtLeast14px": true,
+      "sourceTablesActuallyViewed": [
+        "endotext-table1-0.png",
+        "endotext-table4-0.png"
+      ],
+      "sourceFigureActuallyViewed": "steroid-figure2.jpg"
+    },
+    "limits": "Owned unauthenticated production preview. Nine complete bodies/metadata/28 choices/feedback/links verified at1440/390; all8 embedded options graded; cumulative10 correct/incorrect and navigation verified. Scoped diagram focus/body labels at least14px, boundaries at320/390/719/720/721/1440 checked. Structural size and thin-coverage advisories retained rather than adding quota questions. Remaining whole parent lessons and questions need review."
+  },
+  "preservation": {
+    "status": "passed",
+    "baselinePathsChecked": 820,
+    "allUnrelatedDraftBytesAndDeletionsPreservedAtRelease": true,
+    "observedConcurrentUnrelatedChangesRetainedAndExcluded": {},
+    "otherUnrelatedPathsMatchInitialBaseline": true,
+    "preexistingContentBytesRecoveredByRemovingExactScopedTails": true,
+    "allOtherWorkingLedgerFieldsAndEntriesPreserved": true,
+    "allOtherCommittedLedgerFieldsAndEntriesPreserved": true,
+    "twoExactSharedScopedLessonsAndReferencesVerifiedOtherWorkingDraftStatusesPreserved": true,
+    "onlyVerifiedHeadDerivedContentStagedOrCommitted": true,
+    "onlyTwoScopedAdrenalFiguresAndFocusTypographyChangedOtherFiguresPreservedCumulativeSelectorUnchanged": true,
+    "scope": [
+      "src/data/modules/adrenalInsufficiency.js",
+      "src/data/questionBanks/adrenalInsufficiency.js",
+      "src/components/learn/AdrenalInsufficiencyVisual.jsx",
+      "docs/clinical-audit/enteral-nutrition-broader-adrenal-testing-review.json",
+      "docs/clinical-audit/module-ledger.json",
+      "docs/clinical-audit/chapter-ledger.json",
+      "docs/clinical-audit/sequential-resume.json"
+    ]
+  },
+  "publication": {
+    "mainMerge": "not performed",
+    "production": "not verified"
+  },
+  "wholeGoalComplete": false,
+  "nextAction": "Continue adrenal-insufficiency-crisis with mineralocorticoid-replacement, sick-day-preparedness, adrenal-crisis and special-populations-follow-up. Read complete relevant source scopes and individually compare every whole lesson, linked question stem/choices/key/rationale/anchor, check, figure and selected cumulative origin. Detailed evidence supports seven of eleven whole adrenal lessons and24/35 bank questions; remaining four lessons11questions require review. Preserve the five previously verified whole lessons17questions and the two newly verified recognition/testing lessons7questions. Then reconcile perioperative-critical-care-pharmacology, whose stress-ulcer lesson has detailed verified evidence while its parent remains open. Preserve four incidental HIV PI matches027/067/111/131 for whole HIV audit,245 cirrhosis contextual matches, and rifaximin nine remaining lessons147questions for Chapter22. Return to Chapter11 printed161/PDF169 after actual feeding dependencies; Chapter1 printed7/PDF19 checklist15 remains open. Continue the full82-chapter goal.",
+  "receiptCommit": "Receipt follows exact verified content commit; its own remote hash separately verified in execution output."
+}
