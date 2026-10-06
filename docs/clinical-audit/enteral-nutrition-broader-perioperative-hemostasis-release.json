@@ -1,0 +1,2159 @@
+{
+  "verifiedAt": "2026-10-06T21:08:33.004579+00:00",
+  "unit": "enteral-nutrition:broader-perioperative-hemostasis",
+  "contentCommit": "0407835c69304d12a45616c101ecc4a0be37f8ae",
+  "remoteBranch": "audit/rxprep-content-2026-09-24",
+  "remoteHashObserved": "0407835c69304d12a45616c101ecc4a0be37f8ae",
+  "exactRemoteObservedByTool": true,
+  "coverage": {
+    "evidence": "enteral-nutrition-broader-perioperative-hemostasis-review.json",
+    "verifiedScope": "Two complete hemostasis lessons verified:24 bodies,2 checks/all8 choices,2 figures and17 anchored whole questions/all68 choices. Four stress-ulcer safety paragraphs and one whole famotidine question/all4 choices freshly verified while original8 SUP bodies/check/metadata retained exactly. Eighteen whole questions/all72 choices reviewed;8 source-reviewed draft cases added,88 original IDs/order/stems/choices/keys preserved. Two associated cumulative rationales updated;other1178 cumulative objects and selector unchanged. Forty-eight references retained,13 official/original references added. Detailed constituent evidence now covers12 committed lessons and96 questions;parent-wide reconciliation still required. Broader unique source-verified questions1347to1365. Whole module64/232 and chapter6/82 counts unchanged;full goal remains active.",
+    "wholeLessonsVerifiedThisUnit": {
+      "perioperative-critical-care-pharmacology": [
+        "antifibrinolytic-hemostasis",
+        "topical-and-factor-hemostasis"
+      ]
+    },
+    "wholeBodiesVerifiedThisUnit": 24,
+    "supplementalStressUlcerBodiesVerified": 4,
+    "originalStressUlcerBodiesPreserved": 8,
+    "wholeChecksVerifiedThisUnit": 2,
+    "wholeFiguresVerifiedThisUnit": 2,
+    "thirdPreviouslyVerifiedStressUlcerCheckAndFigureRuntimeValidated": true,
+    "wholeLessonMetadataVerified": true,
+    "wholeQuestionsReviewedThisUnit": 18,
+    "all72ChoicesIndividuallyCompared": true,
+    "all8HemostasisEmbeddedChoicesIndividuallyCompared": true,
+    "wholeBankQuestionIdsVerifiedThisUnit": [
+      "periop-antifib-route",
+      "periop-antifib-renal",
+      "periop-antifib-rate",
+      "periop-antifib-seizure",
+      "periop-antifib-urinary",
+      "periop-antifib-dilution",
+      "periop-txa-trauma-timing",
+      "periop-txa-postpartum-repeat",
+      "periop-pph-early-recognition",
+      "periop-pph-prophylaxis",
+      "periop-topical-thrombin-route",
+      "periop-bovine-thrombin-antibodies",
+      "periop-factor-vii-inr",
+      "periop-fibrin-spray-distance",
+      "periop-factor-product-match",
+      "periop-feiba-antifibrinolytic",
+      "periop-factor-inhibitor-response",
+      "periop-famotidine-renal-delirium"
+    ],
+    "newUniqueBankIdsVerified": [
+      "periop-antifib-route",
+      "periop-antifib-renal",
+      "periop-antifib-rate",
+      "periop-antifib-seizure",
+      "periop-antifib-urinary",
+      "periop-antifib-dilution",
+      "periop-txa-trauma-timing",
+      "periop-txa-postpartum-repeat",
+      "periop-pph-early-recognition",
+      "periop-pph-prophylaxis",
+      "periop-topical-thrombin-route",
+      "periop-bovine-thrombin-antibodies",
+      "periop-factor-vii-inr",
+      "periop-fibrin-spray-distance",
+      "periop-factor-product-match",
+      "periop-feiba-antifibrinolytic",
+      "periop-factor-inhibitor-response",
+      "periop-famotidine-renal-delirium"
+    ],
+    "newUniqueBankQuestionsVerified": 18,
+    "broaderFeedingBankVerifiedBefore": 1347,
+    "broaderFeedingBankVerifiedAfter": 1365,
+    "committedModuleBankBefore": 88,
+    "committedModuleBankAfter": 96,
+    "existing88IdsOrderStemsChoicesKeysPreserved": true,
+    "sourceVerifiedDraftQuestionsAddedToCommittedBank": 8,
+    "committedWholeLessonsWithDetailedConstituentEvidenceAfter": 12,
+    "committedWholeLessonTotal": 12,
+    "sourceVerifiedQuestionsAcrossDetailedConstituentUnits": 96,
+    "remainingUnauditedParentQuestions": 0,
+    "associatedCumulativeItems": [
+      "cumulative-perioperative-critical-care-pharmacology-periop-antifib-dilution",
+      "cumulative-perioperative-critical-care-pharmacology-periop-pph-prophylaxis"
+    ],
+    "other1178CumulativeObjectsUnchanged": true,
+    "all1180CumulativeIdsOrderStemsChoicesKeysPreserved": true,
+    "all48ReferencesRetained": true,
+    "newReferencesAdded": 13,
+    "wholeParentModuleVerified": false,
+    "parentWideReconciliationRequired": true,
+    "enteralParentVerified": false,
+    "wholeChaptersVerifiedThisUnit": false,
+    "committedWholeModulesVerifiedAfter": 64,
+    "committedWholeModulesTotal": 232,
+    "moduleCountPercent": 27.59,
+    "chaptersVerifiedAfter": 6,
+    "chapterTotal": 82,
+    "chapterCountPercent": 7.32,
+    "workingBoundary": "Two whole hemostasis lessons andfour source-reviewedSUP expansions updated;18 whole questions exact to built candidate. Original working96 questionIDs/order and other9 working lesson objects retained exactly. Original8 committedSUP bodies retained. Parent-wide closure pending."
+  },
+  "validation": {
+    "productionBuild": {
+      "status": "passed",
+      "terminalExitCode": 0,
+      "command": "next build --webpack",
+      "productionCandidate": true
+    },
+    "structure": {
+      "modules": 1,
+      "questions": 96,
+      "hardErrors": [],
+      "sourceGaps": [],
+      "sizeAdvisories": [
+        {
+          "module": "perioperative-critical-care-pharmacology",
+          "questions": 96,
+          "review": "Confirm topic coverage in the clinical audit ledger"
+        }
+      ],
+      "thinLessons": [
+        {
+          "module": "perioperative-critical-care-pharmacology",
+          "lesson": "neuromuscular-blockade-foundations",
+          "count": 4
+        },
+        {
+          "module": "perioperative-critical-care-pharmacology",
+          "lesson": "succinylcholine-safety",
+          "count": 4
+        },
+        {
+          "module": "perioperative-critical-care-pharmacology",
+          "lesson": "local-anesthetic-pharmacology",
+          "count": 6
+        },
+        {
+          "module": "perioperative-critical-care-pharmacology",
+          "lesson": "local-anesthetic-toxicity",
+          "count": 6
+        },
+        {
+          "module": "perioperative-critical-care-pharmacology",
+          "lesson": "neuromuscular-blockade-safety",
+          "count": 6
+        },
+        {
+          "module": "perioperative-critical-care-pharmacology",
+          "lesson": "malignant-hyperthermia",
+          "count": 7
+        },
+        {
+          "module": "perioperative-critical-care-pharmacology",
+          "lesson": "topical-and-factor-hemostasis",
+          "count": 7
+        }
+      ],
+      "weakestModules": [
+        {
+          "module": "perioperative-critical-care-pharmacology",
+          "lessons": 12,
+          "questions": 96,
+          "minimumLessonCoverage": 4
+        }
+      ]
+    },
+    "wholeSiteBaselineIssueContinuity": {
+      "status": "passed",
+      "preexistingHardErrorsAndSourceGapsUnchanged": true,
+      "advisoryIdentitiesAndOtherModuleEntriesUnchanged": true,
+      "scopeBankBefore": 88,
+      "scopeBankAfter": 96,
+      "hardErrors": 34,
+      "sizeAdvisories": 37,
+      "thinLessons": 359,
+      "removedScopeCountAdvisory": [
+        {
+          "module": "perioperative-critical-care-pharmacology",
+          "lesson": "perioperative-stress-ulcer",
+          "count": 7
+        }
+      ],
+      "newSourceScopedLessonCountAdvisory": [
+        {
+          "module": "perioperative-critical-care-pharmacology",
+          "lesson": "topical-and-factor-hemostasis",
+          "count": 7
+        }
+      ]
+    },
+    "objectPreservation": {
+      "status": "passed",
+      "wholeLessonsReviewed": 2,
+      "wholeScopedBodies": 24,
+      "supplementalStressUlcerBodies": 4,
+      "all8PreviouslyVerifiedStressUlcerBodiesRetainedExactly": true,
+      "wholeRenderedBodies": 36,
+      "wholeQuestionsReviewed": 18,
+      "all72QuestionChoicesReviewed": true,
+      "all8HemostasisEmbeddedChoicesReviewed": true,
+      "committedBankBefore": 88,
+      "committedBankAfter": 96,
+      "all88OriginalIdsOrderStemsChoicesKeysPreserved": true,
+      "newPreviouslyDraftedQuestions": 8,
+      "other78CommittedQuestionsUnchanged": true,
+      "other9CommittedLessonsUnchanged": true,
+      "cumulativeCount": 1180,
+      "associatedCumulativeItems": [
+        "cumulative-perioperative-critical-care-pharmacology-periop-antifib-dilution",
+        "cumulative-perioperative-critical-care-pharmacology-periop-pph-prophylaxis"
+      ],
+      "all1178OtherCumulativeObjectsUnchanged": true,
+      "other231ModulesUnchanged": true,
+      "all48ReferencesPreserved": true,
+      "addedReferences": 13,
+      "wholeParentVerified": false
+    },
+    "browser": {
+      "status": "passed",
+      "results": [
+        {
+          "width": 1440,
+          "exactWholeBodies": 36,
+          "wholeChecksAllFourOptionsGraded": 3,
+          "wholeQuestionsShuffledCorrectIncorrectFeedbackAndAnchorsVerified": 18,
+          "associatedCumulativeOriginsVerified": 2,
+          "other1178CumulativeObjectsUnchanged": true,
+          "allReferencesExact": 61,
+          "noHorizontalOverflow": true,
+          "diagrams": [
+            {
+              "width": 1440,
+              "slug": "perioperative-critical-care-pharmacology",
+              "lessonKey": "topical-and-factor-hemostasis",
+              "labels": [
+                {
+                  "tag": "SPAN",
+                  "text": "Hemostatic selection",
+                  "overflow": false,
+                  "fontSize": 10.88
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Product, route and clinical response must agree",
+                  "overflow": false,
+                  "fontSize": 37.6
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "01",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Surface",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Thrombin or fibrin sealant",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Use the product-specific topical delivery method; never inject into the circulation.",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "02",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Systemic",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Replace or bypass",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Match the factor deficiency and inhibitor status to the exact therapy.",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "03",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Reassess",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Bleeding and response",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Assess clinical hemostasis with product-specific laboratory and safety monitoring.",
+                  "overflow": false,
+                  "fontSize": 14
+                }
+              ],
+              "allTextWithinBounds": true
+            },
+            {
+              "width": 1440,
+              "slug": "perioperative-critical-care-pharmacology",
+              "lessonKey": "antifibrinolytic-hemostasis",
+              "labels": [
+                {
+                  "tag": "SPAN",
+                  "text": "Clot preservation",
+                  "overflow": false,
+                  "fontSize": 10.88
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Stabilize fibrin without losing route, renal, or thrombotic control",
+                  "overflow": false,
+                  "fontSize": 37.6
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "01",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Indicate",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Evidence-based bleeding care",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Match the indication and timing; eligible trauma or postpartum treatment need not wait for proof of fibrinolysis.",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "02",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Label",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Intravenous route",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Keep tranexamic acid physically and visually separated from neuraxial drugs.",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "03",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Adjust",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Kidney and exposure",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Renal elimination makes dose and toxicity surveillance patient specific.",
+                  "overflow": false,
+                  "fontSize": 14
+                }
+              ],
+              "allTextWithinBounds": true
+            },
+            {
+              "width": 1440,
+              "slug": "perioperative-critical-care-pharmacology",
+              "lessonKey": "perioperative-stress-ulcer",
+              "labels": [
+                {
+                  "tag": "SPAN",
+                  "text": "Temporary prevention",
+                  "overflow": false,
+                  "fontSize": 10.88
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Risk starts the therapy, and risk resolution stops it",
+                  "overflow": false,
+                  "fontSize": 37.6
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "01",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Assess",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Active risk",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Coagulopathy, shock, and chronic liver disease carry the clearest current signal.",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "02",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Prevent",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "PPI or H2RA",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Use a low-dose enteral or intravenous option when risk justifies exposure.",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "03",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Stop",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Daily review",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Discontinue when risk resolves and avoid an unnecessary discharge medicine.",
+                  "overflow": false,
+                  "fontSize": 14
+                }
+              ],
+              "allTextWithinBounds": true
+            }
+          ]
+        },
+        {
+          "width": 390,
+          "exactWholeBodies": 36,
+          "wholeChecksAllFourOptionsGraded": 3,
+          "wholeQuestionsShuffledCorrectIncorrectFeedbackAndAnchorsVerified": 18,
+          "associatedCumulativeOriginsVerified": 2,
+          "other1178CumulativeObjectsUnchanged": true,
+          "allReferencesExact": 61,
+          "noHorizontalOverflow": true,
+          "diagrams": [
+            {
+              "width": 320,
+              "slug": "perioperative-critical-care-pharmacology",
+              "lessonKey": "topical-and-factor-hemostasis",
+              "labels": [
+                {
+                  "tag": "SPAN",
+                  "text": "Hemostatic selection",
+                  "overflow": false,
+                  "fontSize": 10.88
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Product, route and clinical response must agree",
+                  "overflow": false,
+                  "fontSize": 23.2
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "01",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Surface",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Thrombin or fibrin sealant",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Use the product-specific topical delivery method; never inject into the circulation.",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "02",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Systemic",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Replace or bypass",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Match the factor deficiency and inhibitor status to the exact therapy.",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "03",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Reassess",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Bleeding and response",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Assess clinical hemostasis with product-specific laboratory and safety monitoring.",
+                  "overflow": false,
+                  "fontSize": 14
+                }
+              ],
+              "allTextWithinBounds": true
+            },
+            {
+              "width": 320,
+              "slug": "perioperative-critical-care-pharmacology",
+              "lessonKey": "antifibrinolytic-hemostasis",
+              "labels": [
+                {
+                  "tag": "SPAN",
+                  "text": "Clot preservation",
+                  "overflow": false,
+                  "fontSize": 10.88
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Stabilize fibrin without losing route, renal, or thrombotic control",
+                  "overflow": false,
+                  "fontSize": 23.2
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "01",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Indicate",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Evidence-based bleeding care",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Match the indication and timing; eligible trauma or postpartum treatment need not wait for proof of fibrinolysis.",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "02",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Label",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Intravenous route",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Keep tranexamic acid physically and visually separated from neuraxial drugs.",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "03",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Adjust",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Kidney and exposure",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Renal elimination makes dose and toxicity surveillance patient specific.",
+                  "overflow": false,
+                  "fontSize": 14
+                }
+              ],
+              "allTextWithinBounds": true
+            },
+            {
+              "width": 320,
+              "slug": "perioperative-critical-care-pharmacology",
+              "lessonKey": "perioperative-stress-ulcer",
+              "labels": [
+                {
+                  "tag": "SPAN",
+                  "text": "Temporary prevention",
+                  "overflow": false,
+                  "fontSize": 10.88
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Risk starts the therapy, and risk resolution stops it",
+                  "overflow": false,
+                  "fontSize": 23.2
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "01",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Assess",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Active risk",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Coagulopathy, shock, and chronic liver disease carry the clearest current signal.",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "02",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Prevent",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "PPI or H2RA",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Use a low-dose enteral or intravenous option when risk justifies exposure.",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "03",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Stop",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Daily review",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Discontinue when risk resolves and avoid an unnecessary discharge medicine.",
+                  "overflow": false,
+                  "fontSize": 14
+                }
+              ],
+              "allTextWithinBounds": true
+            },
+            {
+              "width": 390,
+              "slug": "perioperative-critical-care-pharmacology",
+              "lessonKey": "topical-and-factor-hemostasis",
+              "labels": [
+                {
+                  "tag": "SPAN",
+                  "text": "Hemostatic selection",
+                  "overflow": false,
+                  "fontSize": 10.88
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Product, route and clinical response must agree",
+                  "overflow": false,
+                  "fontSize": 23.2
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "01",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Surface",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Thrombin or fibrin sealant",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Use the product-specific topical delivery method; never inject into the circulation.",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "02",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Systemic",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Replace or bypass",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Match the factor deficiency and inhibitor status to the exact therapy.",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "03",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Reassess",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Bleeding and response",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Assess clinical hemostasis with product-specific laboratory and safety monitoring.",
+                  "overflow": false,
+                  "fontSize": 14
+                }
+              ],
+              "allTextWithinBounds": true
+            },
+            {
+              "width": 390,
+              "slug": "perioperative-critical-care-pharmacology",
+              "lessonKey": "antifibrinolytic-hemostasis",
+              "labels": [
+                {
+                  "tag": "SPAN",
+                  "text": "Clot preservation",
+                  "overflow": false,
+                  "fontSize": 10.88
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Stabilize fibrin without losing route, renal, or thrombotic control",
+                  "overflow": false,
+                  "fontSize": 23.2
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "01",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Indicate",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Evidence-based bleeding care",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Match the indication and timing; eligible trauma or postpartum treatment need not wait for proof of fibrinolysis.",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "02",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Label",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Intravenous route",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Keep tranexamic acid physically and visually separated from neuraxial drugs.",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "03",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Adjust",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Kidney and exposure",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Renal elimination makes dose and toxicity surveillance patient specific.",
+                  "overflow": false,
+                  "fontSize": 14
+                }
+              ],
+              "allTextWithinBounds": true
+            },
+            {
+              "width": 390,
+              "slug": "perioperative-critical-care-pharmacology",
+              "lessonKey": "perioperative-stress-ulcer",
+              "labels": [
+                {
+                  "tag": "SPAN",
+                  "text": "Temporary prevention",
+                  "overflow": false,
+                  "fontSize": 10.88
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Risk starts the therapy, and risk resolution stops it",
+                  "overflow": false,
+                  "fontSize": 23.2
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "01",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Assess",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Active risk",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Coagulopathy, shock, and chronic liver disease carry the clearest current signal.",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "02",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Prevent",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "PPI or H2RA",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Use a low-dose enteral or intravenous option when risk justifies exposure.",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "03",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Stop",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Daily review",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Discontinue when risk resolves and avoid an unnecessary discharge medicine.",
+                  "overflow": false,
+                  "fontSize": 14
+                }
+              ],
+              "allTextWithinBounds": true
+            },
+            {
+              "width": 719,
+              "slug": "perioperative-critical-care-pharmacology",
+              "lessonKey": "topical-and-factor-hemostasis",
+              "labels": [
+                {
+                  "tag": "SPAN",
+                  "text": "Hemostatic selection",
+                  "overflow": false,
+                  "fontSize": 10.88
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Product, route and clinical response must agree",
+                  "overflow": false,
+                  "fontSize": 24.446
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "01",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Surface",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Thrombin or fibrin sealant",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Use the product-specific topical delivery method; never inject into the circulation.",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "02",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Systemic",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Replace or bypass",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Match the factor deficiency and inhibitor status to the exact therapy.",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "03",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Reassess",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Bleeding and response",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Assess clinical hemostasis with product-specific laboratory and safety monitoring.",
+                  "overflow": false,
+                  "fontSize": 14
+                }
+              ],
+              "allTextWithinBounds": true
+            },
+            {
+              "width": 719,
+              "slug": "perioperative-critical-care-pharmacology",
+              "lessonKey": "antifibrinolytic-hemostasis",
+              "labels": [
+                {
+                  "tag": "SPAN",
+                  "text": "Clot preservation",
+                  "overflow": false,
+                  "fontSize": 10.88
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Stabilize fibrin without losing route, renal, or thrombotic control",
+                  "overflow": false,
+                  "fontSize": 24.446
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "01",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Indicate",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Evidence-based bleeding care",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Match the indication and timing; eligible trauma or postpartum treatment need not wait for proof of fibrinolysis.",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "02",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Label",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Intravenous route",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Keep tranexamic acid physically and visually separated from neuraxial drugs.",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "03",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Adjust",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Kidney and exposure",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Renal elimination makes dose and toxicity surveillance patient specific.",
+                  "overflow": false,
+                  "fontSize": 14
+                }
+              ],
+              "allTextWithinBounds": true
+            },
+            {
+              "width": 719,
+              "slug": "perioperative-critical-care-pharmacology",
+              "lessonKey": "perioperative-stress-ulcer",
+              "labels": [
+                {
+                  "tag": "SPAN",
+                  "text": "Temporary prevention",
+                  "overflow": false,
+                  "fontSize": 10.88
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Risk starts the therapy, and risk resolution stops it",
+                  "overflow": false,
+                  "fontSize": 24.446
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "01",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Assess",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Active risk",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Coagulopathy, shock, and chronic liver disease carry the clearest current signal.",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "02",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Prevent",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "PPI or H2RA",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Use a low-dose enteral or intravenous option when risk justifies exposure.",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "03",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Stop",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Daily review",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Discontinue when risk resolves and avoid an unnecessary discharge medicine.",
+                  "overflow": false,
+                  "fontSize": 14
+                }
+              ],
+              "allTextWithinBounds": true
+            },
+            {
+              "width": 720,
+              "slug": "perioperative-critical-care-pharmacology",
+              "lessonKey": "topical-and-factor-hemostasis",
+              "labels": [
+                {
+                  "tag": "SPAN",
+                  "text": "Hemostatic selection",
+                  "overflow": false,
+                  "fontSize": 10.88
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Product, route and clinical response must agree",
+                  "overflow": false,
+                  "fontSize": 24.48
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "01",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Surface",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Thrombin or fibrin sealant",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Use the product-specific topical delivery method; never inject into the circulation.",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "02",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Systemic",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Replace or bypass",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Match the factor deficiency and inhibitor status to the exact therapy.",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "03",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Reassess",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Bleeding and response",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Assess clinical hemostasis with product-specific laboratory and safety monitoring.",
+                  "overflow": false,
+                  "fontSize": 14
+                }
+              ],
+              "allTextWithinBounds": true
+            },
+            {
+              "width": 720,
+              "slug": "perioperative-critical-care-pharmacology",
+              "lessonKey": "antifibrinolytic-hemostasis",
+              "labels": [
+                {
+                  "tag": "SPAN",
+                  "text": "Clot preservation",
+                  "overflow": false,
+                  "fontSize": 10.88
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Stabilize fibrin without losing route, renal, or thrombotic control",
+                  "overflow": false,
+                  "fontSize": 24.48
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "01",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Indicate",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Evidence-based bleeding care",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Match the indication and timing; eligible trauma or postpartum treatment need not wait for proof of fibrinolysis.",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "02",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Label",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Intravenous route",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Keep tranexamic acid physically and visually separated from neuraxial drugs.",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "03",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Adjust",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Kidney and exposure",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Renal elimination makes dose and toxicity surveillance patient specific.",
+                  "overflow": false,
+                  "fontSize": 14
+                }
+              ],
+              "allTextWithinBounds": true
+            },
+            {
+              "width": 720,
+              "slug": "perioperative-critical-care-pharmacology",
+              "lessonKey": "perioperative-stress-ulcer",
+              "labels": [
+                {
+                  "tag": "SPAN",
+                  "text": "Temporary prevention",
+                  "overflow": false,
+                  "fontSize": 10.88
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Risk starts the therapy, and risk resolution stops it",
+                  "overflow": false,
+                  "fontSize": 24.48
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "01",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Assess",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Active risk",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Coagulopathy, shock, and chronic liver disease carry the clearest current signal.",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "02",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Prevent",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "PPI or H2RA",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Use a low-dose enteral or intravenous option when risk justifies exposure.",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "03",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Stop",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Daily review",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Discontinue when risk resolves and avoid an unnecessary discharge medicine.",
+                  "overflow": false,
+                  "fontSize": 14
+                }
+              ],
+              "allTextWithinBounds": true
+            },
+            {
+              "width": 721,
+              "slug": "perioperative-critical-care-pharmacology",
+              "lessonKey": "topical-and-factor-hemostasis",
+              "labels": [
+                {
+                  "tag": "SPAN",
+                  "text": "Hemostatic selection",
+                  "overflow": false,
+                  "fontSize": 10.88
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Product, route and clinical response must agree",
+                  "overflow": false,
+                  "fontSize": 24.514
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "01",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Surface",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Thrombin or fibrin sealant",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Use the product-specific topical delivery method; never inject into the circulation.",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "02",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Systemic",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Replace or bypass",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Match the factor deficiency and inhibitor status to the exact therapy.",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "03",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Reassess",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Bleeding and response",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Assess clinical hemostasis with product-specific laboratory and safety monitoring.",
+                  "overflow": false,
+                  "fontSize": 14
+                }
+              ],
+              "allTextWithinBounds": true
+            },
+            {
+              "width": 721,
+              "slug": "perioperative-critical-care-pharmacology",
+              "lessonKey": "antifibrinolytic-hemostasis",
+              "labels": [
+                {
+                  "tag": "SPAN",
+                  "text": "Clot preservation",
+                  "overflow": false,
+                  "fontSize": 10.88
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Stabilize fibrin without losing route, renal, or thrombotic control",
+                  "overflow": false,
+                  "fontSize": 24.514
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "01",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Indicate",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Evidence-based bleeding care",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Match the indication and timing; eligible trauma or postpartum treatment need not wait for proof of fibrinolysis.",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "02",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Label",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Intravenous route",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Keep tranexamic acid physically and visually separated from neuraxial drugs.",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "03",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Adjust",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Kidney and exposure",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Renal elimination makes dose and toxicity surveillance patient specific.",
+                  "overflow": false,
+                  "fontSize": 14
+                }
+              ],
+              "allTextWithinBounds": true
+            },
+            {
+              "width": 721,
+              "slug": "perioperative-critical-care-pharmacology",
+              "lessonKey": "perioperative-stress-ulcer",
+              "labels": [
+                {
+                  "tag": "SPAN",
+                  "text": "Temporary prevention",
+                  "overflow": false,
+                  "fontSize": 10.88
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Risk starts the therapy, and risk resolution stops it",
+                  "overflow": false,
+                  "fontSize": 24.514
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "01",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Assess",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Active risk",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Coagulopathy, shock, and chronic liver disease carry the clearest current signal.",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "02",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Prevent",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "PPI or H2RA",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Use a low-dose enteral or intravenous option when risk justifies exposure.",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "03",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Stop",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Daily review",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Discontinue when risk resolves and avoid an unnecessary discharge medicine.",
+                  "overflow": false,
+                  "fontSize": 14
+                }
+              ],
+              "allTextWithinBounds": true
+            }
+          ]
+        }
+      ],
+      "captures": [
+        "hero-perioperative-critical-care-pharmacology-1440.png",
+        "body-perioperative-stress-ulcer-0-1440.png",
+        "body-perioperative-stress-ulcer-1-1440.png",
+        "body-perioperative-stress-ulcer-2-1440.png",
+        "body-perioperative-stress-ulcer-3-1440.png",
+        "body-perioperative-stress-ulcer-4-1440.png",
+        "body-perioperative-stress-ulcer-5-1440.png",
+        "body-perioperative-stress-ulcer-6-1440.png",
+        "body-perioperative-stress-ulcer-7-1440.png",
+        "body-perioperative-stress-ulcer-8-1440.png",
+        "body-perioperative-stress-ulcer-9-1440.png",
+        "body-perioperative-stress-ulcer-10-1440.png",
+        "body-perioperative-stress-ulcer-11-1440.png",
+        "summary-perioperative-stress-ulcer-1440.png",
+        "concepts-perioperative-stress-ulcer-1440.png",
+        "keypoints-perioperative-stress-ulcer-1440.png",
+        "application-perioperative-stress-ulcer-1440.png",
+        "figure-perioperative-stress-ulcer-1440.png",
+        "check-perioperative-stress-ulcer-1440.png",
+        "body-topical-and-factor-hemostasis-0-1440.png",
+        "body-topical-and-factor-hemostasis-1-1440.png",
+        "body-topical-and-factor-hemostasis-2-1440.png",
+        "body-topical-and-factor-hemostasis-3-1440.png",
+        "body-topical-and-factor-hemostasis-4-1440.png",
+        "body-topical-and-factor-hemostasis-5-1440.png",
+        "body-topical-and-factor-hemostasis-6-1440.png",
+        "body-topical-and-factor-hemostasis-7-1440.png",
+        "body-topical-and-factor-hemostasis-8-1440.png",
+        "body-topical-and-factor-hemostasis-9-1440.png",
+        "body-topical-and-factor-hemostasis-10-1440.png",
+        "body-topical-and-factor-hemostasis-11-1440.png",
+        "summary-topical-and-factor-hemostasis-1440.png",
+        "concepts-topical-and-factor-hemostasis-1440.png",
+        "keypoints-topical-and-factor-hemostasis-1440.png",
+        "application-topical-and-factor-hemostasis-1440.png",
+        "figure-topical-and-factor-hemostasis-1440.png",
+        "check-topical-and-factor-hemostasis-1440.png",
+        "body-antifibrinolytic-hemostasis-0-1440.png",
+        "body-antifibrinolytic-hemostasis-1-1440.png",
+        "body-antifibrinolytic-hemostasis-2-1440.png",
+        "body-antifibrinolytic-hemostasis-3-1440.png",
+        "body-antifibrinolytic-hemostasis-4-1440.png",
+        "body-antifibrinolytic-hemostasis-5-1440.png",
+        "body-antifibrinolytic-hemostasis-6-1440.png",
+        "body-antifibrinolytic-hemostasis-7-1440.png",
+        "body-antifibrinolytic-hemostasis-8-1440.png",
+        "body-antifibrinolytic-hemostasis-9-1440.png",
+        "body-antifibrinolytic-hemostasis-10-1440.png",
+        "body-antifibrinolytic-hemostasis-11-1440.png",
+        "summary-antifibrinolytic-hemostasis-1440.png",
+        "concepts-antifibrinolytic-hemostasis-1440.png",
+        "keypoints-antifibrinolytic-hemostasis-1440.png",
+        "application-antifibrinolytic-hemostasis-1440.png",
+        "figure-antifibrinolytic-hemostasis-1440.png",
+        "check-antifibrinolytic-hemostasis-1440.png",
+        "references-perioperative-critical-care-pharmacology-1440.png",
+        "bank-periop-topical-thrombin-route-1440.png",
+        "bank-periop-antifib-dilution-1440.png",
+        "bank-periop-fibrin-spray-distance-1440.png",
+        "bank-periop-antifib-seizure-1440.png",
+        "bank-periop-factor-inhibitor-response-1440.png",
+        "bank-periop-antifib-route-1440.png",
+        "bank-periop-txa-trauma-timing-1440.png",
+        "bank-periop-factor-vii-inr-1440.png",
+        "bank-periop-bovine-thrombin-antibodies-1440.png",
+        "bank-periop-factor-product-match-1440.png",
+        "bank-periop-txa-postpartum-repeat-1440.png",
+        "bank-periop-pph-prophylaxis-1440.png",
+        "bank-periop-antifib-renal-1440.png",
+        "bank-periop-antifib-rate-1440.png",
+        "bank-periop-feiba-antifibrinolytic-1440.png",
+        "bank-periop-antifib-urinary-1440.png",
+        "bank-periop-pph-early-recognition-1440.png",
+        "bank-periop-famotidine-renal-delirium-1440.png",
+        "cumulative-cumulative-perioperative-critical-care-pharmacology-periop-pph-prophylaxis-1440.png",
+        "cumulative-cumulative-perioperative-critical-care-pharmacology-periop-antifib-dilution-1440.png",
+        "hero-perioperative-critical-care-pharmacology-390.png",
+        "body-perioperative-stress-ulcer-0-390.png",
+        "body-perioperative-stress-ulcer-1-390.png",
+        "body-perioperative-stress-ulcer-2-390.png",
+        "body-perioperative-stress-ulcer-3-390.png",
+        "body-perioperative-stress-ulcer-4-390.png",
+        "body-perioperative-stress-ulcer-5-390.png",
+        "body-perioperative-stress-ulcer-6-390.png",
+        "body-perioperative-stress-ulcer-7-390.png",
+        "body-perioperative-stress-ulcer-8-390.png",
+        "body-perioperative-stress-ulcer-9-390.png",
+        "body-perioperative-stress-ulcer-10-390.png",
+        "body-perioperative-stress-ulcer-11-390.png",
+        "summary-perioperative-stress-ulcer-390.png",
+        "concepts-perioperative-stress-ulcer-390.png",
+        "keypoints-perioperative-stress-ulcer-390.png",
+        "application-perioperative-stress-ulcer-390.png",
+        "figure-perioperative-stress-ulcer-390.png",
+        "check-perioperative-stress-ulcer-390.png",
+        "body-topical-and-factor-hemostasis-0-390.png",
+        "body-topical-and-factor-hemostasis-1-390.png",
+        "body-topical-and-factor-hemostasis-2-390.png",
+        "body-topical-and-factor-hemostasis-3-390.png",
+        "body-topical-and-factor-hemostasis-4-390.png",
+        "body-topical-and-factor-hemostasis-5-390.png",
+        "body-topical-and-factor-hemostasis-6-390.png",
+        "body-topical-and-factor-hemostasis-7-390.png",
+        "body-topical-and-factor-hemostasis-8-390.png",
+        "body-topical-and-factor-hemostasis-9-390.png",
+        "body-topical-and-factor-hemostasis-10-390.png",
+        "body-topical-and-factor-hemostasis-11-390.png",
+        "summary-topical-and-factor-hemostasis-390.png",
+        "concepts-topical-and-factor-hemostasis-390.png",
+        "keypoints-topical-and-factor-hemostasis-390.png",
+        "application-topical-and-factor-hemostasis-390.png",
+        "figure-topical-and-factor-hemostasis-390.png",
+        "check-topical-and-factor-hemostasis-390.png",
+        "body-antifibrinolytic-hemostasis-0-390.png",
+        "body-antifibrinolytic-hemostasis-1-390.png",
+        "body-antifibrinolytic-hemostasis-2-390.png",
+        "body-antifibrinolytic-hemostasis-3-390.png",
+        "body-antifibrinolytic-hemostasis-4-390.png",
+        "body-antifibrinolytic-hemostasis-5-390.png",
+        "body-antifibrinolytic-hemostasis-6-390.png",
+        "body-antifibrinolytic-hemostasis-7-390.png",
+        "body-antifibrinolytic-hemostasis-8-390.png",
+        "body-antifibrinolytic-hemostasis-9-390.png",
+        "body-antifibrinolytic-hemostasis-10-390.png",
+        "body-antifibrinolytic-hemostasis-11-390.png",
+        "summary-antifibrinolytic-hemostasis-390.png",
+        "concepts-antifibrinolytic-hemostasis-390.png",
+        "keypoints-antifibrinolytic-hemostasis-390.png",
+        "application-antifibrinolytic-hemostasis-390.png",
+        "figure-antifibrinolytic-hemostasis-390.png",
+        "check-antifibrinolytic-hemostasis-390.png",
+        "references-perioperative-critical-care-pharmacology-390.png",
+        "bank-periop-topical-thrombin-route-390.png",
+        "bank-periop-antifib-dilution-390.png",
+        "bank-periop-fibrin-spray-distance-390.png",
+        "bank-periop-antifib-seizure-390.png",
+        "bank-periop-factor-inhibitor-response-390.png",
+        "bank-periop-antifib-route-390.png",
+        "bank-periop-txa-trauma-timing-390.png",
+        "bank-periop-factor-vii-inr-390.png",
+        "bank-periop-bovine-thrombin-antibodies-390.png",
+        "bank-periop-factor-product-match-390.png",
+        "bank-periop-txa-postpartum-repeat-390.png",
+        "bank-periop-pph-prophylaxis-390.png",
+        "bank-periop-antifib-renal-390.png",
+        "bank-periop-antifib-rate-390.png",
+        "bank-periop-feiba-antifibrinolytic-390.png",
+        "bank-periop-antifib-urinary-390.png",
+        "bank-periop-pph-early-recognition-390.png",
+        "bank-periop-famotidine-renal-delirium-390.png",
+        "cumulative-cumulative-perioperative-critical-care-pharmacology-periop-pph-prophylaxis-390.png",
+        "cumulative-cumulative-perioperative-critical-care-pharmacology-periop-antifib-dilution-390.png",
+        "native-figure-topical-and-factor-hemostasis-320.png",
+        "native-figure-antifibrinolytic-hemostasis-320.png",
+        "native-figure-perioperative-stress-ulcer-320.png",
+        "native-figure-topical-and-factor-hemostasis-721.png",
+        "native-figure-antifibrinolytic-hemostasis-721.png",
+        "native-figure-perioperative-stress-ulcer-721.png"
+      ],
+      "errors": []
+    },
+    "visualInspection": {
+      "status": "passed",
+      "checkedAt": "2026-10-06T21:07:47.903321+00:00",
+      "desktopMobileCapturesReviewedInNativePairs": 76,
+      "allBoardsActuallyViewedAtOriginalDetail": 26,
+      "boardsReviewed": [
+        "board-00.png",
+        "board-01.png",
+        "board-02.png",
+        "board-03.png",
+        "board-04.png",
+        "board-05.png",
+        "board-06.png",
+        "board-07.png",
+        "board-08.png",
+        "board-09.png",
+        "board-10.png",
+        "board-11.png",
+        "board-12.png",
+        "board-13.png",
+        "board-14.png",
+        "board-15.png",
+        "board-16.png",
+        "board-17.png",
+        "board-18.png",
+        "board-19.png",
+        "board-20.png",
+        "board-21.png",
+        "board-22.png",
+        "board-23.png",
+        "board-24.png",
+        "board-25.png"
+      ],
+      "allSixNativeFiguresIndividuallyViewed": true,
+      "nativeFigureWidthsReviewed": [
+        320,
+        721
+      ],
+      "automatedFigureWidths": [
+        320,
+        390,
+        719,
+        720,
+        721,
+        1440
+      ],
+      "twoWholeHemostasisLessonsFourSUPExpansions36RenderedBodiesThreeChecks18Questions61ReferencesTwoCumulativeOriginsReviewed": true,
+      "legibleTextAndCompleteFeedback": true,
+      "noClippedTextOrHorizontalOverflow": true,
+      "allFigureFocusAndBodyLabelsAtLeast14px": true,
+      "bookPdfPagesActuallyViewed": [
+        728
+      ],
+      "guidelinePdfPagesActuallyViewed": {
+        "who2025": [
+          50,
+          51,
+          52,
+          57,
+          58,
+          62,
+          63,
+          64
+        ]
+      },
+      "finalImagesMatchActuallyInspectedHashes": true
+    },
+    "limits": "Private unauthenticated built candidate:36 rendered bodies across3 lessons,24 hemostasis bodies+4 freshSUP bodies and8 preservedSUP bodies;3 checks/all12 options;18 wholeQs/all72 choices;2 cumulative origins at1440/390. Three figures checked at320/390/719/720/721/1440. No authenticated account,backend or production claim."
+  },
+  "preservation": {
+    "status": "passed",
+    "baselinePathsChecked": 820,
+    "allUnrelatedDraftBytesAndDeletionsPreservedAtRelease": true,
+    "observedConcurrentUnrelatedChangesRetainedAndExcluded": {},
+    "otherUnrelatedPathsMatchInitialBaseline": true,
+    "preexistingContentBytesRecoveredByRemovingExactScopedTails": true,
+    "allOtherWorkingLedgerFieldsAndEntriesPreserved": true,
+    "allOtherCommittedLedgerFieldsAndEntriesPreserved": true,
+    "twoScopedWholeHemostasisLessonsFourSUPExpansions18WholeQuestionsVerifiedOtherWorkingDraftsPreserved": true,
+    "onlyVerifiedHeadDerivedContentStagedOrCommitted": true,
+    "threeScopedFiguresReadableAllUnrelatedDiagramDataAndCumulativeSelectorFunctionUnchanged": true,
+    "scope": [
+      "src/data/modules/perioperativeCriticalCarePharmacology.js",
+      "src/data/questionBanks/perioperativeCriticalCarePharmacology.js",
+      "src/components/learn/PerioperativeCriticalCareVisual.jsx",
+      "src/app/learn/pharmacy/modules/[slug]/page.jsx",
+      "docs/clinical-audit/enteral-nutrition-broader-perioperative-hemostasis-review.json",
+      "docs/clinical-audit/module-ledger.json",
+      "docs/clinical-audit/chapter-ledger.json",
+      "docs/clinical-audit/sequential-resume.json"
+    ]
+  },
+  "publication": {
+    "mainMerge": "not performed",
+    "production": "not verified"
+  },
+  "wholeGoalComplete": false,
+  "nextAction": "Reconcile the entire perioperative parent with all prior detailed evidence,including the four newly reviewed SUP expansions and96 questions. Complete parent-wide source/coverage and rendered validation before certifying perioperative-critical-care-pharmacology. Then return to remaining feeding dependencies and Chapter11 printed161/PDF169;Chapter1 printed7/PDF19 checklist15 stays open. Continue the full82-chapter goal.",
+  "receiptCommit": "Receipt follows exact verified content commit; its own remote hash separately verified in execution output."
+}
