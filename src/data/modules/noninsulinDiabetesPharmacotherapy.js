@@ -1325,3 +1325,224 @@ noninsulinDiabetesPharmacotherapyModule.references.push(...[
     "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12690180/"
   }
 ]);
+
+
+// Parent metadata and references reconciled after complete lesson and question audits.
+Object.assign(noninsulinDiabetesPharmacotherapyModule, {
+  "source": "RxPrep 2023, Chapter 44: Diabetes; reconciled with ADA Standards of Care in Diabetes 2026, product-specific prescribing information and cited primary clinical studies.",
+  "description": "Select, combine, monitor, and deintensify noninsulin glucose-lowering therapy through glycemic efficacy, cardiovascular and kidney outcomes, weight, hypoglycemia, adverse effects, access, and the person who must use the plan.",
+  "topics": [
+    "Treatment selection",
+    "Metformin",
+    "SGLT2 inhibitors",
+    "GLP-1 and dual GIP/GLP-1 therapy",
+    "DPP-4 inhibitors",
+    "Sulfonylureas and meglitinides",
+    "Thiazolidinediones",
+    "Other noninsulin agents",
+    "Cardiorenal, weight and liver outcomes",
+    "Combination, deintensification and transitions"
+  ],
+  "outcomes": [
+    "Build a person-centered treatment plan that separates glucose, cardiovascular, kidney, weight, liver, and heart-failure goals.",
+    "Compare mechanisms, effectiveness, administration, adverse effects, interactions, monitoring, and counseling across noninsulin drug classes.",
+    "Use current kidney function, comorbidity, hypoglycemia risk, cost, and treatment burden to select and dose therapy.",
+    "Apply product-specific safety rules for fasting, procedures, dehydration, gastrointestinal symptoms, and serious adverse reactions.",
+    "Construct rational combinations while avoiding redundant mechanisms and preventable hypoglycemia.",
+    "Recognize when insulin is required and when treatment should be simplified, reduced, or redirected."
+  ],
+  "references": [
+    {
+      "label": "ADA 2026 pharmacologic approaches to glycemic treatment",
+      "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12690185/"
+    },
+    {
+      "label": "ADA 2026 obesity and weight-management standards",
+      "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12690172/"
+    },
+    {
+      "label": "DailyMed metformin IR tablet prescribing information",
+      "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4ac6d01a-af26-44e7-ae2e-3618de0080aa"
+    },
+    {
+      "label": "DailyMed Ascend metformin ER tablet prescribing information",
+      "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a944a167-e3ac-4084-af1c-22b48713471c"
+    },
+    {
+      "label": "DailyMed GLUMETZA prescribing information",
+      "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fb832474-88d9-4e29-95cd-fbc446944cc4"
+    },
+    {
+      "label": "DailyMed RIOMET oral solution prescribing information",
+      "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=05d4df4b-dfe8-4828-b423-a3d4f2c4114a"
+    },
+    {
+      "label": "FDA RIOMET ER prescribing information, August 2026",
+      "href": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/212595s002lbl.pdf"
+    },
+    {
+      "label": "ACR Manual on Contrast Media: metformin guidance",
+      "href": "https://www.acr.org/Clinical-Resources/Clinical-Tools-and-Reference/Contrast-Manual"
+    },
+    {
+      "label": "DailyMed JARDIANCE prescribing information",
+      "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=faf3dd6a-9cd0-39c2-0d2e-232cb3f67565"
+    },
+    {
+      "label": "DailyMed FARXIGA prescribing information",
+      "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=72ad22ae-efe6-4cd6-a302-98aaee423d69"
+    },
+    {
+      "label": "DailyMed INVOKANA prescribing information",
+      "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b9057d3b-b104-4f09-8a61-c61ef9d4a3f3"
+    },
+    {
+      "label": "DailyMed STEGLATRO prescribing information",
+      "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e6f3e718-bb99-48f1-ab94-b9f0af05fed6"
+    },
+    {
+      "label": "Novo Nordisk Ozempic injection prescribing information (May 2026)",
+      "href": "https://www.novo-pi.com/ozempic.pdf"
+    },
+    {
+      "label": "Novo Nordisk Rybelsus and Ozempic tablets prescribing information (January 2026)",
+      "href": "https://www.novo-pi.com/rybelsus.pdf"
+    },
+    {
+      "label": "DailyMed Mounjaro prescribing information (August 2026)",
+      "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d2d7da5d-ad07-4228-955f-cf7e355c8cc0"
+    },
+    {
+      "label": "DailyMed Trulicity prescribing information (revised March 2026)",
+      "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=463050bd-2b1c-40f5-b3c3-0a04bb433309"
+    },
+    {
+      "label": "Novo Nordisk Victoza prescribing information (October 2025)",
+      "href": "https://www.novo-pi.com/victoza.pdf"
+    },
+    {
+      "label": "DailyMed Byetta prescribing information (September 2025)",
+      "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=53d03c03-ebf7-418d-88a8-533eabd2ee4f"
+    },
+    {
+      "label": "DailyMed Bydureon BCise prescribing information (May 2025)",
+      "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2d18cfc4-e0de-4814-a712-c1b7c504bff5"
+    },
+    {
+      "label": "Sanofi Adlyxin prescribing information (June 2022)",
+      "href": "https://products.sanofi.us/Adlyxin/Adlyxin.pdf"
+    },
+    {
+      "label": "Novo Nordisk Wegovy prescribing information (June 2026)",
+      "href": "https://www.novo-pi.com/wegovy.pdf"
+    },
+    {
+      "label": "Merck Januvia prescribing information (July 2023)",
+      "href": "https://www.merck.com/product/usa/pi_circulars/j/januvia/januvia_pi.pdf"
+    },
+    {
+      "label": "DailyMed Tradjenta prescribing information (June 2023)",
+      "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c797ea5c-cab7-494b-9044-27eba0cfe40f"
+    },
+    {
+      "label": "FDA Onglyza prescribing information (October 2024)",
+      "href": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2024/022350s026lbl.pdf"
+    },
+    {
+      "label": "DailyMed Nesina prescribing information (February 2025)",
+      "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a3768c7e-aa4c-44d3-bc53-43bb7346c0b0"
+    },
+    {
+      "label": "Pfizer Glucotrol immediate-release prescribing information (August 2023)",
+      "href": "https://labeling.pfizer.com/ShowLabeling.aspx?format=PDF&id=579"
+    },
+    {
+      "label": "Pfizer Glucotrol XL prescribing information (August 2023)",
+      "href": "https://labeling.pfizer.com/ShowLabeling.aspx?format=PDF&id=585"
+    },
+    {
+      "label": "DailyMed Teva conventional glyburide prescribing information",
+      "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=50d16f1d-c814-4411-8749-62561321ecce"
+    },
+    {
+      "label": "DailyMed Glynase PresTab prescribing information (August 2023)",
+      "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a7fce80a-2f13-43cc-8e1c-561f7d3ec3d5"
+    },
+    {
+      "label": "DailyMed Aurobindo glimepiride prescribing information (March 2026)",
+      "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=28eefc95-d92e-4555-b6c5-2933860b0610"
+    },
+    {
+      "label": "DailyMed Northstar/Macleods repaglinide prescribing information",
+      "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7f3118ce-fcbb-4f8b-b1ba-d8cd95e5b665"
+    },
+    {
+      "label": "DailyMed Rising/USV nateglinide prescribing information (December 2024)",
+      "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b41f4180-96a7-411d-b827-5021e534f556"
+    },
+    {
+      "label": "DailyMed Takeda Actos prescribing information (March 2025)",
+      "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d2ddc491-88a9-4063-9150-443b4fa4330c"
+    },
+    {
+      "label": "FDA Avandia prescribing information (February 2019)",
+      "href": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2019/021071s052lbl.pdf"
+    },
+    {
+      "label": "FDA rosiglitazone REMS removal letter (December 2015)",
+      "href": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2015/021071Orig1s050,021410Orig1s039,021700Orig1s022ltr.pdf"
+    },
+    {
+      "label": "AASLD 2023 practice guidance on NAFLD assessment and management",
+      "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10735173/"
+    },
+    {
+      "label": "IRIS trial: pioglitazone after ischemic stroke or TIA (2016)",
+      "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4887756/"
+    },
+    {
+      "label": "DailyMed acarbose prescribing information (Avet/Heritage, revised April 2024)",
+      "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=29939129-7d09-4c22-bf3e-491a8a97f4c4"
+    },
+    {
+      "label": "DailyMed miglitol prescribing information (Westminster/Orient, revised October 2020)",
+      "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b8da2015-d254-2425-e053-2995a90acf0e"
+    },
+    {
+      "label": "DailyMed Symlin prescribing information and patient guide (AstraZeneca, December 2019)",
+      "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4aea30ff-eb0d-45c1-b114-3127966328ff"
+    },
+    {
+      "label": "DailyMed Welchol prescribing information (Cosette, revised January 2024)",
+      "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=89cbd0a3-2d1b-41db-8c97-35ec67b7b09f"
+    },
+    {
+      "label": "DailyMed Cycloset prescribing information (Avvisto/VeroScience, revised August 2020)",
+      "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e42ba916-16b9-4d1c-8d09-9d2fbb1b6c20"
+    },
+    {
+      "label": "ADA 2026 cardiovascular disease and risk management",
+      "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12690187/"
+    },
+    {
+      "label": "ADA 2026 chronic kidney disease and risk management",
+      "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12690176/"
+    },
+    {
+      "label": "SUMMIT trial: tirzepatide in HFpEF with obesity (2025)",
+      "href": "https://pubmed.ncbi.nlm.nih.gov/39555826/"
+    },
+    {
+      "label": "STEP-HFpEF DM trial: semaglutide in obesity-related HFpEF and type 2 diabetes (2024)",
+      "href": "https://pubmed.ncbi.nlm.nih.gov/38587233/"
+    },
+    {
+      "label": "ADA 2026 older-adult treatment simplification and deintensification",
+      "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12690186/"
+    },
+    {
+      "label": "ADA 2026 hospital, perioperative and discharge diabetes care",
+      "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12690180/"
+    }
+  ]
+});
