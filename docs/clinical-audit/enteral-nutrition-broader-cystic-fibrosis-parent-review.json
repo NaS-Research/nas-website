@@ -1,7 +1,7 @@
 {
   "updated": "2026-10-06T23:49:59.069824+00:00",
   "unit": "enteral-nutrition:broader-cystic-fibrosis-parent",
-  "status": "Whole CF module and Chapter55 clinically reconciled, built and desktop/mobile verified; exact branch release pending.",
+  "status": "Complete CF module and Chapter55 verified:8lessons,63bodies,8checks,8figures,148wholequestions,52references and5cumulative origins. Exact audit-branch content push verified. WholeEN,Chapter11,Chapter1fluid-needs and82chapter goal remainopen. Production not verified.",
   "coverage": {
     "evidence": "enteral-nutrition-broader-cystic-fibrosis-parent-review.json",
     "moduleSlug": "cystic-fibrosis",
@@ -12994,11 +12994,14 @@
   "release": {
     "branch": "audit/rxprep-content-2026-09-24",
     "baseCommit": "1a157a059da693d58cc4f39737b853e69ebef2ca",
-    "commit": null,
-    "push": "pending",
+    "commit": "5bfef4f90c393b5d4795dddff44a6928c4e7a2b6",
+    "push": "verified",
     "receipt": "enteral-nutrition-broader-cystic-fibrosis-parent-release.json",
     "mainMerge": "not performed",
-    "production": "not verified"
+    "production": "not verified",
+    "remoteHashObserved": "5bfef4f90c393b5d4795dddff44a6928c4e7a2b6",
+    "exactRemoteObservedByTool": true,
+    "remoteVerifiedAt": "2026-10-06T23:50:43.554853+00:00"
   },
   "remainingReview": "Return to Chapter11 feeding dependency reconciliation: compare current108 EN questions,79metadata statements andall36bodies/six checks/six figures against final EN and renal-solute review records;resolve stale remaining-031/renal-solute notes using the later approved-source closure,then rebuild current broader feeding-origin inventory against1510exact verified IDs and latest whole-parent evidence. Do not infer nonfeeding parent completion from feeding-item review. Reconcile earliest fluid-electrolyte-therapy parent dependency after the feeding inventory;its whole module remains unverified. Keep Chapter1 PDF19 checklistentry15 determining fluid needs as sequential frontier.",
   "wholeGoalComplete": false,
