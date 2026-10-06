@@ -209,6 +209,33 @@ export default function MasldVisual({type}){
 };
   const lifestyleCardiometabolicView = lifestyleCardiometabolicViews[key];
   if (lifestyleCardiometabolicView) return <figure className="chol-visual masld-visual" aria-label={lifestyleCardiometabolicView.heading}><figcaption><span>{lifestyleCardiometabolicView.eyebrow}</span><strong>{lifestyleCardiometabolicView.heading}</strong></figcaption><div className="chol-visual__grid">{lifestyleCardiometabolicView.nodes.map(([verb,focus,detail],index)=><div key={verb}><span>{String(index+1).padStart(2,"0")}</span><strong>{verb}</strong><em style={{fontSize:"0.875rem"}}>{focus}</em><p style={{fontSize:"0.875rem"}}>{detail}</p></div>)}</div></figure>;
+  const resmetiromView = {
+  "eyebrow": "Resmetirom treatment decisions",
+  "heading": "Confirm, dose, reconcile, monitor",
+  "nodes": [
+    [
+      "Confirm",
+      "Adult noncirrhotic F2-F3 MASH",
+      "Continue nutrition and activity."
+    ],
+    [
+      "Dose",
+      "Actual weight plus CYP2C8",
+      "Clopidogrel changes the daily dose."
+    ],
+    [
+      "Reconcile",
+      "Statin limits and full regimen",
+      "20 mg or 40 mg limits depend on the statin."
+    ],
+    [
+      "Monitor",
+      "Liver and gallbladder safety",
+      "Stop or interrupt as the clinical concern requires."
+    ]
+  ]
+};
+  if (key === "resmetirom") return <figure className="chol-visual masld-visual" aria-label={resmetiromView.heading}><figcaption><span>{resmetiromView.eyebrow}</span><strong>{resmetiromView.heading}</strong></figcaption><div className="chol-visual__grid">{resmetiromView.nodes.map(([verb,focus,detail],index)=><div key={verb}><span>{String(index+1).padStart(2,"0")}</span><strong>{verb}</strong><em style={{fontSize:"0.875rem"}}>{focus}</em><p style={{fontSize:"0.875rem"}}>{detail}</p></div>)}</div></figure>;
   const labels=views[key]||views["integrated-case"];
   return <figure className="chol-visual masld-visual" aria-label={`MASLD visual: ${key.replaceAll("-"," ")}`}>
     <div className="chol-visual__copy"><span>Metabolic liver disease</span><h3>{key.replaceAll("-"," ")}</h3><p>Connect metabolic load, liver injury, fibrosis risk, and treatment as one changing trajectory.</p></div>

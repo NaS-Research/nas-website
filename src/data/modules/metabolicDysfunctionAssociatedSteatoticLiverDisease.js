@@ -509,3 +509,90 @@ metabolicDysfunctionAssociatedSteatoticLiverDiseaseModule.references.push(...[
     "href": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=d2ddc491-88a9-4063-9150-443b4fa4330c&type=display"
   }
 ]);
+
+
+// Whole resmetirom teaching reconciled to the current product label.
+const verifiedMasldResmetiromLesson = {
+  "metadata": {
+    "summary": "Confirm adult noncirrhotic F2-F3 MASH, select the exact weight and interaction-adjusted dose, and monitor liver, gallbladder, statin, and thyroid findings.",
+    "concepts": [
+      "Accelerated approval",
+      "THR-beta partial agonism",
+      "Actual-weight dosing",
+      "CYP2C8 and statin interactions",
+      "Safety and response"
+    ],
+    "application": "Verify indication and stage, reconcile the regimen, document the exact dose and statin limits, and teach administration, missed doses, and symptoms requiring prompt contact.",
+    "keyPoints": [
+      "Use 80 mg daily below 100 kg or 100 mg daily at or above 100 kg before interaction adjustment.",
+      "Clopidogrel requires 60 or 80 mg daily by the same weight boundary.",
+      "Rosuvastatin/simvastatin: at most 20 mg daily; atorvastatin/pravastatin: at most 40 mg daily.",
+      "Suspected hepatotoxicity requires discontinuation; a suspected acute gallbladder event requires interruption.",
+      "Histologic improvement does not guarantee an individual response or confirmed clinical benefit."
+    ]
+  },
+  "bodies": [
+    {
+      "heading": "Confirm the labeled population",
+      "body": "Resmetirom (Rezdiffra) is used with diet and exercise for adults with noncirrhotic MASH and moderate-to-advanced fibrosis consistent with F2-F3. Steatosis on ultrasound alone does not establish this treatment population. Its accelerated approval rests on improvement in MASH and fibrosis; continued approval may depend on confirmation of clinical benefit. Do not describe it as an established treatment for every MASLD stage or as proven to prevent clinical liver events."
+    },
+    {
+      "heading": "Connect mechanism to effect",
+      "body": "Resmetirom is a partial agonist of thyroid hormone receptor beta (THR-beta), the predominant thyroid hormone receptor in the liver. Hepatic THR-beta stimulation reduces intrahepatic triglycerides. Relative preference for this receptor does not mean zero THR-alpha activity or absence of thyroid effects. This is targeted MASH therapy, not routine thyroid hormone replacement or a substitute for indicated cardiovascular treatment."
+    },
+    {
+      "heading": "Dose by actual body weight",
+      "body": "Without a relevant dose-modifying interaction, use 80 mg orally once daily below 100 kg and 100 mg orally once daily at or above 100 kg. Exactly 100 kg belongs in the 100 mg group. Use actual body weight rather than ideal weight or a mg/kg calculation. Tablets are available in 60, 80, and 100 mg strengths; the 60 mg strength supports the reduced-dose regimen."
+    },
+    {
+      "heading": "Teach administration and missed doses",
+      "body": "Take the tablet once daily with or without food and swallow it whole; do not split, crush, or chew it. If a dose is missed, skip that dose and resume at the next scheduled time. Do not double the next dose. Store at controlled room temperature, 20-25 degrees C, and keep medicines out of children’s reach. A patient unable to swallow the tablet needs a suitable treatment plan rather than improvised tablet manipulation."
+    },
+    {
+      "heading": "Screen CYP2C8 interactions",
+      "body": "Resmetirom is a CYP2C8 substrate. Concomitant strong CYP2C8 inhibitors, such as gemfibrozil, are not recommended. If a moderate inhibitor such as clopidogrel is used, reduce resmetirom to 60 mg once daily below 100 kg or 80 mg once daily at or above 100 kg. For example, an eligible 104 kg adult taking clopidogrel receives the reduced 80 mg daily regimen rather than the usual 100 mg daily regimen. Resmetirom is also a weak CYP2C8 inhibitor: monitor susceptible concomitant substrates more frequently for adverse reactions when small exposure changes could cause serious harm."
+    },
+    {
+      "heading": "Reconcile statins and transporter evidence",
+      "body": "Resmetirom increases exposure to atorvastatin, pravastatin, rosuvastatin, and simvastatin. Limit rosuvastatin and simvastatin to 20 mg daily, and atorvastatin and pravastatin to 40 mg daily; monitor for liver-test elevations, myopathy, and rhabdomyolysis. The July 2026 label reports no clinically significant resmetirom pharmacokinetic difference with cyclosporine, an OATP1B1/1B3 and BCRP inhibitor. Do not infer a blanket avoidance rule solely from an in vitro transporter relationship. Reconcile the complete regimen and each medicine’s own risks."
+    },
+    {
+      "heading": "Act on liver and gallbladder symptoms",
+      "body": "Monitor liver tests and symptoms during treatment. If hepatotoxicity is suspected, discontinue resmetirom and continue evaluation and monitoring; jaundice, fatigue, nausea, vomiting, fever, rash, or right upper quadrant pain warrant prompt attention. Restarting after tests return to baseline requires a benefit-risk decision, not an automatic rechallenge. Gallstones, acute cholecystitis, and gallstone-related obstructive pancreatitis occurred more often with treatment. Investigate suspected gallstones; interrupt treatment during a suspected acute gallbladder event until it resolves."
+    },
+    {
+      "heading": "Interpret tolerability and thyroid findings",
+      "body": "Common adverse reactions include diarrhea, nausea, itching, vomiting, constipation, abdominal pain, and dizziness. Diarrhea and nausea often began early and were leading reasons for discontinuation in trials; assess persistent or troublesome symptoms rather than treating every complaint as disease progression. Free T4 fell in the trials, with minimal changes in T3 or TSH and no associated clinical findings. Review the thyroid context and interpret laboratory changes clinically; a free-T4 change alone is not proof of a clinical thyroid disorder. Liver-test changes likewise require assessment rather than automatic reassurance."
+    },
+    {
+      "heading": "Separate renal, hepatic, and reproductive decisions",
+      "body": "The label uses the same recommended dosage in mild, moderate, and severe renal impairment; this does not remove weight-based dosing, interaction adjustments, or monitoring. Avoid use with moderate or severe hepatic impairment (Child-Pugh B or C) and with decompensated cirrhosis. No adjustment for mild hepatic impairment (Child-Pugh A) does not establish safety or effectiveness in MASH cirrhosis. Pediatric safety and effectiveness are not established. Pregnancy outcome data are unavailable, and milk transfer and infant effects are unknown; discuss pregnancy plans and breastfeeding through an individualized benefit-risk assessment and the labeled pregnancy safety study."
+    },
+    {
+      "heading": "Read efficacy without promising cure",
+      "body": "The labeled trial analysis included 888 adults with biopsy-confirmed F2-F3 MASH. At month 12, both doses improved the two histologic endpoints versus placebo: MASH resolution without worsening fibrosis, and at least one stage of fibrosis improvement without worsening MASH. Two pathologists read the biopsies independently. For one reading of MASH resolution, 27% at 80 mg versus 13% with placebo is a 14 percentage-point difference, not proof that every patient responds. Histologic endpoints, lower liver fat, improved stiffness, and a lower ALT are not interchangeable with confirmed long-term clinical benefit. Continue assessment of adherence, tolerability, metabolic care, and liver risk."
+    }
+  ],
+  "check": {
+    "question": "An eligible 104 kg adult with noncirrhotic F3 MASH takes clopidogrel. What resmetirom regimen matches the label?",
+    "choices": [
+      "80 mg orally once daily because the moderate CYP2C8 inhibitor requires dose reduction.",
+      "100 mg once daily without considering the interaction.",
+      "60 mg once weekly because the patient weighs at least 100 kg.",
+      "100 mg twice daily to overcome CYP2C8 inhibition."
+    ],
+    "rationale": "At or above 100 kg, the usual regimen is 100 mg daily, but clopidogrel is a moderate CYP2C8 inhibitor requiring reduction to 80 mg daily. The below-100 kg reduced dose is 60 mg daily. Do not substitute a weekly schedule or increase exposure."
+  }
+};
+for (const lesson of metabolicDysfunctionAssociatedSteatoticLiverDiseaseModule.submodules) {
+  if (lesson.slug === "resmetirom") {
+    Object.assign(lesson, verifiedMasldResmetiromLesson.metadata);
+    lesson.lesson = verifiedMasldResmetiromLesson.bodies;
+    Object.assign(lesson.check, verifiedMasldResmetiromLesson.check);
+  }
+}
+const resmetiromReference = metabolicDysfunctionAssociatedSteatoticLiverDiseaseModule.references.find((reference) => reference.label === "FDA Rezdiffra prescribing information");
+Object.assign(resmetiromReference, {
+  "label": "FDA Rezdiffra prescribing information (July 2026)",
+  "href": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/217785s006lbl.pdf"
+});

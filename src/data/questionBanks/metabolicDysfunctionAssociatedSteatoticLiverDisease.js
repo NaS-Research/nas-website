@@ -708,3 +708,171 @@ const verifiedMasldLifestyleCardiometabolicQuestions = {
 for (const item of metabolicDysfunctionAssociatedSteatoticLiverDiseaseQuestionBank) {
   if (verifiedMasldLifestyleCardiometabolicQuestions[item.id]) Object.assign(item, verifiedMasldLifestyleCardiometabolicQuestions[item.id]);
 }
+
+
+// Distinct whole resmetirom cases preserve stable IDs and review links.
+const verifiedMasldResmetiromQuestions = {
+  "masld-065": {
+    "question": "Which mechanism description best matches resmetirom?",
+    "choices": [
+      "A THR-beta partial agonist that reduces intrahepatic triglycerides through hepatic receptor stimulation.",
+      "A GLP-1 receptor agonist with an identical mechanism to semaglutide.",
+      "A replacement thyroid hormone proven to have no thyroid-related effects.",
+      "A statin whose primary mechanism is HMG-CoA reductase inhibition."
+    ],
+    "rationale": "Resmetirom is a THR-beta partial agonist. Receptor preference does not mean absence of THR-alpha activity or thyroid-related laboratory changes, and its mechanism differs from incretin and statin therapy."
+  },
+  "masld-066": {
+    "question": "Which adult fits the labeled resmetirom treatment population?",
+    "choices": [
+      "Noncirrhotic MASH with fibrosis consistent with F2-F3, alongside diet and exercise.",
+      "Ultrasound steatosis alone with no evidence establishing MASH or qualifying fibrosis.",
+      "MASH with F4 cirrhosis solely because the patient remains asymptomatic.",
+      "Any metabolic risk factor without hepatic steatosis or MASH."
+    ],
+    "rationale": "The indication specifies adults with noncirrhotic MASH and F2-F3 fibrosis, used with diet and exercise. Neither steatosis alone nor compensated cirrhosis establishes that indication."
+  },
+  "masld-067": {
+    "question": "A patient with MASH cirrhosis has Child-Pugh A hepatic impairment. Which label interpretation is correct?",
+    "choices": [
+      "No dose adjustment for mild hepatic impairment does not establish safety or effectiveness in MASH cirrhosis or extend the noncirrhotic indication.",
+      "The Child-Pugh A statement automatically approves treatment of every patient with F4 MASH.",
+      "Child-Pugh A requires the same avoidance statement as Child-Pugh B or C.",
+      "A normal ALT proves cirrhosis is absent."
+    ],
+    "rationale": "Separate the pharmacokinetic dose-adjustment statement from indication and efficacy. The label gives no adjustment for Child-Pugh A, avoids Child-Pugh B/C, and states that safety and effectiveness in MASH cirrhosis are not established."
+  },
+  "masld-068": {
+    "question": "Which conclusion correctly qualifies resmetirom’s accelerated approval?",
+    "choices": [
+      "It is based on MASH and fibrosis improvement, with continued approval potentially dependent on confirmatory clinical benefit.",
+      "Every treated patient is guaranteed to have complete fibrosis resolution.",
+      "Histologic improvement proves prevention of all future liver events.",
+      "Accelerated approval means the drug has no approved treatment indication."
+    ],
+    "rationale": "The drug has an approved specific indication under accelerated approval. Histologic endpoints support that approval, while confirmation of clinical benefit remains distinct; an individual response is not guaranteed."
+  },
+  "masld-069": {
+    "question": "An eligible adult weighs 99.9 kg and has no dose-modifying interaction. What is the labeled resmetirom regimen?",
+    "choices": [
+      "80 mg orally once daily.",
+      "100 mg orally once daily because 99.9 kg is rounded up automatically.",
+      "80 mg orally once weekly.",
+      "80 mg per kg each day."
+    ],
+    "rationale": "Use actual body weight and the specified boundary: below 100 kg receives 80 mg daily. It is a fixed oral daily dose, not a weekly or mg/kg regimen."
+  },
+  "masld-070": {
+    "question": "An eligible adult weighs exactly 100 kg and has no dose-modifying interaction. Which resmetirom regimen is correct?",
+    "choices": [
+      "100 mg orally once daily.",
+      "80 mg once daily because equality belongs below the boundary.",
+      "100 mg twice daily.",
+      "2.4 mg subcutaneously once weekly."
+    ],
+    "rationale": "The label places actual body weight at or above 100 kg in the 100 mg once-daily group. Equality counts; this is an oral drug with a daily schedule."
+  },
+  "masld-071": {
+    "question": "An eligible 90 kg adult continues clopidogrel. Which resmetirom dose matches the interaction-adjusted label?",
+    "choices": [
+      "60 mg orally once daily.",
+      "80 mg once daily without adjustment.",
+      "100 mg once daily to compensate for inhibition.",
+      "60 mg once weekly."
+    ],
+    "rationale": "Clopidogrel is a moderate CYP2C8 inhibitor. Reduce the dose to 60 mg daily below 100 kg or 80 mg daily at or above 100 kg; inhibition increases exposure rather than creating a reason to increase the dose."
+  },
+  "masld-072": {
+    "question": "A patient misses a resmetirom dose and asks about administration. Which instruction is correct?",
+    "choices": [
+      "Skip the missed dose and resume at the next scheduled time; swallow the tablet whole with or without food.",
+      "Double the next dose to replace the missed dose.",
+      "Crush the tablet and take it only while fasting.",
+      "Split every tablet and administer it twice weekly."
+    ],
+    "rationale": "The label directs patients to skip a missed dose and resume the scheduled dose. Tablets must remain whole and may be taken with or without food; doubling or manipulation is inappropriate."
+  },
+  "masld-073": {
+    "question": "A patient being considered for resmetirom takes gemfibrozil. Which interaction assessment is appropriate?",
+    "choices": [
+      "Concomitant use is not recommended because strong CYP2C8 inhibition can increase resmetirom exposure.",
+      "Give twice the usual resmetirom dose because gemfibrozil lowers exposure.",
+      "Use the clopidogrel dose-reduction rule as automatic authorization for gemfibrozil.",
+      "Ignore the combination because both drugs may affect lipids."
+    ],
+    "rationale": "Gemfibrozil is the labeled example of a strong CYP2C8 inhibitor. The label does not recommend concomitant use; the reduced-dose rule for moderate inhibition is a separate instruction."
+  },
+  "masld-074": {
+    "question": "An eligible 110 kg adult taking clopidogrel has been prescribed resmetirom 100 mg daily. Which correction is supported?",
+    "choices": [
+      "Reduce resmetirom to 80 mg once daily because clopidogrel is a moderate CYP2C8 inhibitor.",
+      "Increase resmetirom to 200 mg once daily.",
+      "Reduce to 60 mg once daily using the below-100 kg rule.",
+      "Keep 100 mg solely because the patient weighs more than 100 kg."
+    ],
+    "rationale": "The at-or-above-100 kg dose with a moderate CYP2C8 inhibitor is 80 mg daily. Weight and interaction status must both be applied; the 60 mg adjusted dose belongs below 100 kg."
+  },
+  "masld-075": {
+    "question": "Which cyclosporine-related statement matches the July 2026 resmetirom label?",
+    "choices": [
+      "The label reports no clinically significant resmetirom pharmacokinetic difference with cyclosporine; still reconcile the complete regimen and each drug’s risks.",
+      "Any OATP substrate relationship proves cyclosporine and resmetirom are formally contraindicated together.",
+      "Cyclosporine requires doubling resmetirom because it eliminates hepatic uptake.",
+      "A pharmacokinetic finding guarantees safety of every cyclosporine-containing regimen."
+    ],
+    "rationale": "The current label’s clinical interaction study reports no clinically significant pharmacokinetic difference with cyclosporine. Do not convert an in vitro transporter relationship into a blanket contraindication or treat one study as a universal regimen-safety guarantee."
+  },
+  "masld-076": {
+    "question": "Which daily statin limits match the resmetirom interaction label?",
+    "choices": [
+      "Rosuvastatin and simvastatin: 20 mg; atorvastatin and pravastatin: 40 mg, with adverse-effect monitoring.",
+      "Rosuvastatin and simvastatin: 40 mg; atorvastatin and pravastatin: 80 mg.",
+      "All four statins must always be stopped regardless of cardiovascular indication.",
+      "No statin dose review is needed if ALT is normal."
+    ],
+    "rationale": "Resmetirom increases exposure to these statins. The label limits rosuvastatin/simvastatin to 20 mg daily and atorvastatin/pravastatin to 40 mg daily and calls for monitoring, including liver-test elevations, myopathy, and rhabdomyolysis."
+  },
+  "masld-077": {
+    "question": "A resmetirom-treated patient develops jaundice and a substantial rise in liver tests, raising concern for hepatotoxicity. What is appropriate?",
+    "choices": [
+      "Discontinue resmetirom and continue evaluation and monitoring; any later restart requires benefit-risk assessment.",
+      "Continue without evaluation because all enzyme changes are harmless early effects.",
+      "Immediately restart at a higher dose as soon as one laboratory value improves.",
+      "Assume the change proves MASH progression and exclude drug injury."
+    ],
+    "rationale": "Suspected hepatotoxicity requires discontinuation and continued monitoring. The label describes serious drug-induced injury and calls for a benefit-risk decision if tests return to baseline; automatic reassurance or rechallenge is inappropriate."
+  },
+  "masld-078": {
+    "question": "A patient taking resmetirom is being evaluated for suspected acute cholecystitis. Which drug action matches the label?",
+    "choices": [
+      "Interrupt resmetirom until the acute gallbladder event resolves, with diagnostic evaluation and follow-up.",
+      "Double resmetirom to dissolve gallstones.",
+      "Continue regardless of the acute event because only ALT matters.",
+      "Treat abdominal pain as proof that the drug has cured MASH."
+    ],
+    "rationale": "The label calls for interruption during a suspected acute gallbladder event until resolution. Gallstones and related events need diagnostic evaluation and follow-up rather than dose escalation or dismissal."
+  },
+  "masld-079": {
+    "question": "Which renal-versus-hepatic dosing statement matches the current resmetirom label?",
+    "choices": [
+      "Mild, moderate, and severe renal impairment use the same recommended dose; avoid use with Child-Pugh B/C hepatic impairment and decompensated cirrhosis.",
+      "Severe renal impairment automatically requires the weekly 60 mg regimen.",
+      "All renal and hepatic impairment categories share the same avoidance rule.",
+      "No renal adjustment means weight and drug interactions can be ignored."
+    ],
+    "rationale": "The label gives the same recommended dose across renal impairment categories, while moderate/severe hepatic impairment and decompensated cirrhosis carry avoidance instructions. Weight and interaction adjustments still apply."
+  },
+  "masld-080": {
+    "question": "A patient planning pregnancy asks whether resmetirom is proven safe during pregnancy and breastfeeding. Which response best reflects the label?",
+    "choices": [
+      "Human pregnancy outcome data are unavailable and milk/infant effects are unknown; discuss individualized benefits and risks and the pregnancy safety study.",
+      "Absence of formal labeled contraindications proves safety during pregnancy and breastfeeding.",
+      "The label guarantees zero embryo-fetal risk.",
+      "Breastfeeding must always continue without discussing maternal need or infant risk."
+    ],
+    "rationale": "The label reports insufficient pregnancy and lactation data and describes animal findings. A statement of no formal contraindications does not establish reproductive safety; counseling must consider the patient’s clinical situation and the labeled pregnancy study."
+  }
+};
+for (const item of metabolicDysfunctionAssociatedSteatoticLiverDiseaseQuestionBank) {
+  if (verifiedMasldResmetiromQuestions[item.id]) Object.assign(item, verifiedMasldResmetiromQuestions[item.id]);
+}
