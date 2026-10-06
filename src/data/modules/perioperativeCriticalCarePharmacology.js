@@ -1456,3 +1456,35 @@ perioperativeCriticalCarePharmacologyModule.references.push(...[
     "href": "https://pubmed.ncbi.nlm.nih.gov/38875111/"
   }
 ].filter((reference) => !perioperativeCriticalCarePharmacologyModule.references.some((existing) => existing.href === reference.href)));
+
+
+// Include the reviewed topical and factor-hemostasis lesson in the parent overview.
+Object.assign(perioperativeCriticalCarePharmacologyModule, {
+  "description": "Use anesthetics, neuromuscular blockers, reversal agents, stress-ulcer prophylaxis, and hemostatic therapies through physiology, objective monitoring, and high-reliability medication systems.",
+  "topics": [
+    "Stress-ulcer prophylaxis",
+    "Local anesthetics",
+    "LAST",
+    "Induction",
+    "Malignant hyperthermia",
+    "Neuromuscular blockade",
+    "Succinylcholine",
+    "Quantitative monitoring",
+    "Reversal",
+    "Topical and factor hemostasis",
+    "Antifibrinolytics"
+  ],
+  "outcomes": [
+    "Distinguish topical hemostasis, factor replacement and inhibitor bypass; assess route, antibody, thrombosis and response boundaries.",
+    "Start and stop stress-ulcer prophylaxis from current bleeding risk rather than ICU location alone.",
+    "Connect local-anesthetic ionization, tissue access, sodium-channel block, disposition, and systemic toxicity.",
+    "Recognize and treat local anesthetic systemic toxicity with the current ASRA rescue sequence.",
+    "Choose propofol, etomidate, or ketamine from the induction goal and the patient's physiology.",
+    "Recognize malignant hyperthermia before late hyperthermia and run the MHAUS dantrolene pathway.",
+    "Distinguish depolarizing from nondepolarizing block and explain why paralysis never supplies unconsciousness or analgesia.",
+    "Screen succinylcholine hyperkalemia, pediatric, malignant-hyperthermia, bradycardia, and prolonged-block risks.",
+    "Select nondepolarizing agents through onset, duration, organ function, interaction, and recovery planning.",
+    "Use quantitative adductor-pollicis monitoring and match sugammadex or neostigmine to measured block depth.",
+    "Use tranexamic acid and aminocaproic acid through indication, route, renal function, thrombosis, and seizure safeguards."
+  ]
+});
