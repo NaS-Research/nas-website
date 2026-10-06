@@ -105,8 +105,8 @@
     "branch": "audit/rxprep-content-2026-09-24",
     "baseCommit": "5e85fca5d106ae2379a3e8d69216253f7c727db4",
     "remoteVerifiedAtStart": true,
-    "commit": null,
-    "push": "pending",
+    "commit": "d1cfd7fccd86e873e690553a59ceb7f48275f24f",
+    "push": "verified",
     "production": "not verified",
     "receipt": "enteral-nutrition-broader-ald-integrated-release.json",
     "contentCommits": [
@@ -234,13 +234,14 @@
       "82822c83746bca9ec5ef5108ca061c1722417c8c",
       "5f2051b8e651b7830cecbb4ab6ac3575e5e2b5dc",
       "d65023fbeeb65cd190fc8e0adca4957bff966953",
-      "bd9e05c3a7a1d6603d3ec56e69e0d61d816da9e3"
+      "bd9e05c3a7a1d6603d3ec56e69e0d61d816da9e3",
+      "d1cfd7fccd86e873e690553a59ceb7f48275f24f"
     ],
     "previousVerifiedContentCommit": "65ac22e809246ba35e196493eedaa0bea3b0898b",
     "baseReceipt": "aca4501d4b775c9e5dbb74a1c3e7c337e6ebb87e",
-    "remoteHashObserved": null,
-    "exactRemoteObservedByTool": false,
-    "remoteVerifiedAt": null,
+    "remoteHashObserved": "d1cfd7fccd86e873e690553a59ceb7f48275f24f",
+    "exactRemoteObservedByTool": true,
+    "remoteVerifiedAt": "2026-10-06T03:17:25.630054+00:00",
     "mainMerge": "not performed"
   },
   "openIssues": [
@@ -18689,6 +18690,17 @@
       "focusedWholeCasesContextuallyRead": 32,
       "newOtherModuleIntegratedAldQuestionMatches": 0,
       "interpretation": "Focused stems/keyed-choice contexts comprise anticoagulation1, COPD1, rifaximin3, HBV6, HCV7, cirrhosis6, MASLD7 and NSAID1. These concern disease-specific treatments, medicine safety or already verified hepatic follow-up; none is an additional ALD/AUD integrated-case item. No other-module question newly certified or edited. Pending rifaximin dosing/integration and MASLD work remain open; the raw246 list is not a clinical certificate. Existing245 contextual dependency inventory preserved."
+    },
+    "release": {
+      "branch": "audit/rxprep-content-2026-09-24",
+      "commit": "d1cfd7fccd86e873e690553a59ceb7f48275f24f",
+      "push": "verified",
+      "receipt": "enteral-nutrition-broader-ald-integrated-release.json",
+      "mainMerge": "not performed",
+      "production": "not verified",
+      "remoteHashObserved": "d1cfd7fccd86e873e690553a59ceb7f48275f24f",
+      "exactRemoteObservedByTool": true,
+      "remoteVerifiedAt": "2026-10-06T03:17:25.630054+00:00"
     }
   }
 }
