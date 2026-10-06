@@ -258,3 +258,110 @@ Object.assign(adrenalInsufficiencyModule.submodules.find((lesson) => lesson.slug
     "reviewHref": "#central-glucocorticoid-induced"
   }
 });
+
+
+// Reconcile complete recognition and testing lessons with endocrine guidance.
+Object.assign(adrenalInsufficiencyModule.submodules.find((lesson) => lesson.slug === "clinical-patterns"), {
+  "slug": "clinical-patterns",
+  "title": "Clinical Recognition and Biochemical Patterns",
+  "visual": "ai-patterns",
+  "summary": "Symptoms are often nonspecific, but the combination of hemodynamics, electrolytes, glucose, pigmentation, ACTH, renin, and aldosterone can reveal both severity and level of failure.",
+  "concepts": [
+    "Hypotension",
+    "Hyponatremia and hyperkalemia",
+    "Hypoglycemia",
+    "ACTH",
+    "Renin and aldosterone"
+  ],
+  "application": "Treat the unstable pattern first, then use pre-treatment samples and the mineralocorticoid pattern to classify the disease.",
+  "lesson": [
+    {
+      "heading": "Recognize cortisol deficiency",
+      "body": "Fatigue, anorexia, weight loss, nausea, vomiting, abdominal pain, myalgia, weakness, hypotension, fever, confusion, and hypoglycemia can reflect cortisol deficiency. None is diagnostic alone, so pattern and context matter. The combination and tempo matter more than one nonspecific symptom. Severe hypotension, persistent vomiting, altered mental status or hypoglycemia require urgent assessment; a reassuring potassium does not exclude cortisol deficiency."
+    },
+    {
+      "heading": "Use mineralocorticoid clues",
+      "body": "Hyperkalemia, salt craving, volume depletion, high renin, and low or inappropriately normal aldosterone support primary disease. Hyponatremia can occur in either primary or central disease because cortisol deficiency increases vasopressin and impairs free-water clearance. Aldosterone is usually preserved in central disease because RAAS remains active. Hyperkalemia supports possible mineralocorticoid loss but is not diagnostic by itself, and normal potassium cannot rule out adrenal insufficiency. Interpret electrolytes with volume status, medications and the paired hormonal assessment."
+    },
+    {
+      "heading": "Preserve diagnostic value",
+      "body": "When feasible, obtain cortisol and ACTH before hydrocortisone, plus renin and aldosterone when primary disease is suspected. A diagnostic sample is useful only if collecting it does not delay treatment of hypotension or crisis. This applies to suspected adrenal crisis: draw cortisol and ACTH immediately only if doing so does not delay parenteral hydrocortisone and resuscitation. A post-hydrocortisone cortisol sample cannot be labeled as the untreated baseline. Confirmatory stimulation testing belongs after stabilization, not before emergency treatment."
+    },
+    {
+      "heading": "Locate confirmed deficiency with paired hormones",
+      "body": "In confirmed cortisol deficiency, ACTH greater than twice the laboratory upper reference limit supports primary failure. Low or inappropriately normal ACTH can fit central failure, but an isolated random low-normal ACTH does not establish it. In primary disease, high renin with low or inappropriately normal aldosterone supports mineralocorticoid deficiency. Persistent salt craving or postural symptoms require assessment of blood pressure, electrolytes and the renin/aldosterone pattern rather than repeatedly increasing glucocorticoid alone. These findings guide classification and replacement after the immediate safety assessment."
+    }
+  ],
+  "keyPoints": [
+    "Hyponatremia occurs in primary and central disease.",
+    "Hyperkalemia points toward aldosterone deficiency.",
+    "ACTH locates confirmed cortisol deficiency.",
+    "Diagnostic blood never outranks emergency treatment."
+  ],
+  "check": {
+    "question": "Which laboratory pattern best supports primary adrenal insufficiency?",
+    "choices": [
+      "Low cortisol, high ACTH, high renin, and low aldosterone",
+      "Low cortisol, low ACTH, and normal renin",
+      "High cortisol and low ACTH",
+      "High aldosterone and suppressed renin"
+    ],
+    "answer": 0,
+    "rationale": "Low cortisol with high ACTH and high renin with low aldosterone best supports primary cortical failure with mineralocorticoid loss. Low cortisol with low ACTH and normal renin instead fits central disease, where aldosterone is usually preserved. High cortisol with low ACTH is not the cortisol-deficient pattern asked for. High aldosterone with suppressed renin does not indicate aldosterone deficiency. Confirm the hormonal and clinical context; one electrolyte or isolated cortisol value is not enough.",
+    "reviewHref": "#clinical-patterns"
+  }
+});
+Object.assign(adrenalInsufficiencyModule.submodules.find((lesson) => lesson.slug === "morning-cortisol-testing"), {
+  "slug": "morning-cortisol-testing",
+  "title": "Morning Cortisol and Corticotropin Testing",
+  "visual": "ai-testing",
+  "summary": "Diagnostic testing must answer a specific question: establish cortisol deficiency, classify the level, or demonstrate recovery after glucocorticoid-induced suppression.",
+  "concepts": [
+    "Morning cortisol",
+    "250 microgram corticotropin",
+    "Assay context",
+    "Recovery thresholds",
+    "Testing limits"
+  ],
+  "application": "Choose the least burdensome valid test, interpret it through timing and assay context, and never delay treatment to complete a test.",
+  "lesson": [
+    {
+      "heading": "Start with timed physiology",
+      "body": "Morning cortisol is most informative near the expected circadian peak and before the day's replacement dose. Acute illness, sleep schedule, estrogen, low binding proteins, assay method, and recent glucocorticoids can change interpretation. Oral estrogen and pregnancy can raise cortisol-binding globulin and measured total cortisol; low albumin or binding globulin can lower total cortisol. Night shifts or other disrupted sleep can make a clock-time morning value misleading. Plan medication withholding with the treating clinician. For central-disease evaluation, the 2016 guideline recommends testing at least 18 to 24 hours after hydrocortisone and longer after synthetic glucocorticoids; one fixed interval does not fit every drug."
+    },
+    {
+      "heading": "Test adrenal reserve",
+      "body": "For stable suspected primary disease in adults, the standard 250 microgram corticotropin test measures cortisol response to synthetic ACTH. The stimulated cutoff is assay dependent, and recent-onset central disease can retain an apparently normal adrenal response before atrophy develops. Obtain the planned baseline and stimulated samples, usually at 30 or 60 minutes, and use the laboratory assay-specific interpretation. A historical cutoff from a different cortisol assay is not a universal pass/fail rule. Recent central failure may retain a normal adrenal response before atrophy develops, so a seemingly reassuring test must still be reconciled with disease timing and pretest probability."
+    },
+    {
+      "heading": "Separate central diagnosis from recovery",
+      "body": "For suspected central insufficiency, the hypopituitarism guideline uses an 8-9 AM cortisol: below 3 micrograms/dL supports deficiency, above 15 makes it unlikely, and intermediate results require stimulation testing. These diagnostic guides differ from recovery thresholds after a steroid taper. Assay, sleep schedule and recent steroid exposure still matter; random cortisol is not a routine diagnostic substitute. For example, an unconfounded 8 AM cortisol of 11 micrograms/dL in a stable adult with new pituitary disease remains in the central-diagnostic intermediate range. It cannot be declared normal by borrowing the greater-than-10 recovery guide intended for a different clinical setting. Do not use an unplanned midnight or random sample as the definitive substitute."
+    },
+    {
+      "heading": "Measure glucocorticoid recovery",
+      "body": "For recovery testing after tapering to physiologic dosing, use a clinician-planned 8-9 AM sample at least 24 hours after the last glucocorticoid dose; dexamethasone requires separate planning. A morning cortisol above 10 micrograms per deciliter supports recovery, 5 to 10 is indeterminate and should be repeated after weeks to months, and below 5 supports continued replacement with later reassessment. Dynamic testing is not routine during every taper. These are recovery guides on a continuum, not exact biological boundaries. The paired nmol/L values in the guideline are rounded clinical guides, not exact unit conversions. A measurable cortisol below 5 does not demonstrate recovery, and stopping replacement to force recovery is inappropriate. Persistent intermediate results can justify selected dynamic testing, but stimulation testing is not required for every taper. These outpatient recovery guides do not apply during major acute stress; abnormal binding proteins also require a separate interpretation rather than automatic use of total cortisol cutoffs."
+    },
+    {
+      "heading": "Choose the question and make the follow-up plan",
+      "body": "The 2024 glucocorticoid guideline permits either a gradual supervised taper with clinical monitoring or a morning cortisol test once a physiologic dose is reached and the underlying disease no longer requires glucocorticoid treatment. Routine adrenal testing is not recommended while a supraphysiologic dose is still needed. If recovery testing is chosen, use the specified timing and clinician-directed drug hold, continue necessary physiologic replacement for low or intermediate results, and arrange the repeat measurement. The at-least-24-hour recovery-testing hold excludes dexamethasone, which needs a separate plan. None of these elective outpatient pathways should delay treatment of suspected adrenal crisis."
+    }
+  ],
+  "keyPoints": [
+    "Morning cortisol depends on biologic timing and assay.",
+    "The standard corticotropin test assesses adrenal reserve.",
+    "Recent central disease can be falsely reassuring on stimulation.",
+    "Recovery testing is a continuum, not a universal pass-fail value."
+  ],
+  "check": {
+    "question": "A stable patient at physiologic dosing after chronic prednisone has a valid morning recovery cortisol of 7 micrograms per deciliter. What is the best next step?",
+    "choices": [
+      "Continue physiologic replacement and repeat morning cortisol later",
+      "Stop all coverage immediately",
+      "Start fludrocortisone automatically",
+      "Diagnose primary Addison disease"
+    ],
+    "answer": 0,
+    "rationale": "A properly timed recovery value of 7 micrograms/dL lies between 5 and 10, so continue the physiologic glucocorticoid dose and repeat morning cortisol after an appropriate interval, usually weeks to months. It does not justify stopping all glucocorticoids. Fludrocortisone cannot replace missing cortisol and is not routinely indicated in glucocorticoid-induced disease. An intermediate recovery cortisol alone does not establish primary Addison disease. Apply this recovery pathway only to the stated stable, physiologic-dose, appropriately timed setting.",
+    "reviewHref": "#morning-cortisol-testing"
+  }
+});

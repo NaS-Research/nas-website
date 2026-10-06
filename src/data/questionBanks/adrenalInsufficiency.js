@@ -422,3 +422,108 @@ for (const [id, updates] of Object.entries({
 })) {
   Object.assign(adrenalInsufficiencyQuestionBank.find((question) => question.id === id), updates);
 }
+
+
+// Explain every alternative while preserving stable question IDs and keyed choices.
+for (const [id, updates] of Object.entries({
+  "adrenal-insufficiency-09-case": {
+    "id": "adrenal-insufficiency-09-case",
+    "question": "During recovery testing, morning cortisol is greater than 10 micrograms per deciliter under appropriate conditions. Which response is best?",
+    "choices": [
+      "Treat the result as evidence of HPA recovery and stop replacement when clinically appropriate.",
+      "Require indefinite replacement despite valid evidence of recovery.",
+      "Use this result to diagnose primary adrenal destruction.",
+      "Require routine dynamic testing for every taper regardless of the valid recovery sample."
+    ],
+    "answer": 0,
+    "rationale": "A properly obtained recovery cortisol above 10 micrograms/dL supports HPA-axis recovery in the stated stable patient who has reached a physiologic dose and no longer needs glucocorticoids for the underlying disease. The clinician can use that result to support discontinuation. Indefinite replacement is not automatically required. This result does not prove primary adrenal destruction. Routine dynamic testing for every taper is not recommended; interpret the value with assay, timing and clinical context.",
+    "reviewHref": "#morning-cortisol-testing",
+    "difficulty": "application"
+  },
+  "adrenal-insufficiency-10-case": {
+    "id": "adrenal-insufficiency-10-case",
+    "question": "A stable patient at physiologic dosing has a properly timed recovery cortisol of 7 micrograms per deciliter after a clinician-planned medication hold. Which response is best?",
+    "choices": [
+      "Stop all cortisol coverage immediately because the value exceeds 5.",
+      "Continue physiologic coverage and repeat testing later.",
+      "Diagnose primary Addison disease from the recovery value alone.",
+      "Add fludrocortisone instead of continuing glucocorticoid coverage."
+    ],
+    "answer": 1,
+    "rationale": "The specified recovery cortisol of 7 micrograms/dL is intermediate, between 5 and 10. Continue the physiologic glucocorticoid dose and repeat morning cortisol after an appropriate interval, usually weeks to months. Being above 5 is not sufficient to justify immediate cessation. One recovery value does not establish primary adrenal failure. Fludrocortisone alone cannot provide cortisol replacement and is not routine treatment for glucocorticoid-induced adrenal insufficiency.",
+    "reviewHref": "#morning-cortisol-testing",
+    "difficulty": "application"
+  },
+  "adrenal-insufficiency-11-case": {
+    "id": "adrenal-insufficiency-11-case",
+    "question": "A patient at physiologic hydrocortisone dosing has a properly timed recovery cortisol of 3 micrograms per deciliter after a clinician-planned medication hold. Which response is best?",
+    "choices": [
+      "Stop replacement to force the axis to recover more quickly.",
+      "Interpret the result as confirmed recovery because it is measurable.",
+      "Continue replacement and repeat recovery assessment after additional time.",
+      "Replace hydrocortisone with fludrocortisone alone."
+    ],
+    "answer": 2,
+    "rationale": "A properly timed recovery cortisol of 3 micrograms/dL is below the 5-microgram/dL guide and supports persistent suppression. Continue physiologic glucocorticoid replacement and reassess recovery later, generally after a few months. Stopping replacement to force recovery can leave the patient unprotected. A measurable value is not the same as adequate reserve, and fludrocortisone alone does not replace cortisol. Avoid chronic over-replacement while maintaining a safe clinician-directed recovery plan.",
+    "reviewHref": "#morning-cortisol-testing",
+    "difficulty": "application"
+  },
+  "adrenal-insufficiency-12-case": {
+    "id": "adrenal-insufficiency-12-case",
+    "question": "A stable adult outpatient has compatible symptoms and equivocal basal cortisol testing. Which response is best?",
+    "choices": [
+      "Use an unplanned midnight sample as a direct substitute.",
+      "Treat every basal value as definitive without considering the clinical question.",
+      "Use aldosterone alone to establish cortisol reserve.",
+      "Perform an appropriately interpreted standard corticotropin stimulation test."
+    ],
+    "answer": 3,
+    "rationale": "For this stable adult outpatient with compatible symptoms and an equivocal basal result, a properly planned corticotropin stimulation test assesses adrenal cortisol reserve. An unplanned midnight sample does not substitute for the appropriate assessment. An equivocal basal cortisol is not automatically definitive, and aldosterone testing evaluates mineralocorticoid physiology rather than stimulated cortisol reserve. Interpret the stimulation result with the laboratory assay and disease timing; recent central failure can still produce a normal response before adrenal atrophy.",
+    "reviewHref": "#morning-cortisol-testing",
+    "difficulty": "application"
+  },
+  "adrenal-insufficiency-13-case": {
+    "id": "adrenal-insufficiency-13-case",
+    "question": "Blood can be drawn immediately in a hypotensive patient with suspected adrenal crisis without delaying treatment. Which approach best preserves diagnostic information?",
+    "choices": [
+      "Collect cortisol and ACTH, then give hydrocortisone at once.",
+      "Delay emergency treatment until cortisol results return.",
+      "Give hydrocortisone and later label the post-treatment sample as pretreatment.",
+      "Complete a stimulation test before beginning treatment of hypotension."
+    ],
+    "answer": 0,
+    "rationale": "With suspected adrenal crisis, immediately obtainable pretreatment cortisol and ACTH preserve diagnostic information, but parenteral hydrocortisone and resuscitation must not wait for the results. Delaying treatment until laboratory results return is unsafe. Hydrocortisone can confound a subsequently drawn cortisol, so that sample cannot be labeled pretreatment. Completing stimulation testing before emergency treatment also delays necessary care. Draw useful samples only when doing so is safe and causes no treatment delay.",
+    "reviewHref": "#clinical-patterns",
+    "difficulty": "application"
+  },
+  "adrenal-insufficiency-14-case": {
+    "id": "adrenal-insufficiency-14-case",
+    "question": "A patient has primary adrenal insufficiency, postural symptoms, salt craving, high renin, and low aldosterone. Which response is best?",
+    "choices": [
+      "Increase glucocorticoid indefinitely without assessing aldosterone replacement.",
+      "Begin and titrate fludrocortisone with clinical and biochemical monitoring.",
+      "Use a mineralocorticoid antagonist to correct salt wasting.",
+      "Ignore renin and aldosterone because sodium retention is unrelated to them."
+    ],
+    "answer": 1,
+    "rationale": "Confirmed primary disease with salt craving, postural symptoms, high renin and low aldosterone supports mineralocorticoid deficiency. Start fludrocortisone and titrate with clinical volume status, blood pressure, electrolytes and renin assessment. Repeatedly increasing glucocorticoid alone does not specifically correct the missing aldosterone action. A mineralocorticoid antagonist would oppose the needed action. Ignoring renin and aldosterone loses useful information about this deficiency; monitor for both persistent salt loss and excess replacement.",
+    "reviewHref": "#clinical-patterns",
+    "difficulty": "application"
+  },
+  "adrenal-insufficiency-diagnosis-versus-recovery": {
+    "id": "adrenal-insufficiency-diagnosis-versus-recovery",
+    "question": "A stable adult being evaluated for new pituitary-related adrenal insufficiency has an 8 AM cortisol of 11 micrograms/dL. No recent steroid exposure confounds testing. Which interpretation is appropriate?",
+    "choices": [
+      "Treat it as confirmed recovery using the steroid-taper threshold",
+      "Evaluate adrenal reserve with an appropriately interpreted stimulation test",
+      "Diagnose primary Addison disease from cortisol alone",
+      "Use a random midnight cortisol as definitive confirmation"
+    ],
+    "answer": 1,
+    "rationale": "In this stable adult with new pituitary disease, an unconfounded 8 AM cortisol of 11 micrograms/dL is within the 2016 central-diagnostic intermediate range of 3 to 15, supporting appropriately planned corticotropin testing. The greater-than-10 guide for recovery after a glucocorticoid taper answers a different question and cannot establish recovery here. Cortisol alone does not diagnose primary failure, and an unplanned midnight sample is not a definitive substitute. Use assay-specific stimulated interpretation and remember that recent central disease can retain an apparently normal adrenal response.",
+    "reviewHref": "#morning-cortisol-testing",
+    "difficulty": "clinical"
+  }
+})) {
+  Object.assign(adrenalInsufficiencyQuestionBank.find((question) => question.id === id), updates);
+}
