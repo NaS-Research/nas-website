@@ -870,3 +870,131 @@ const verifiedAldWithdrawalQuestions = {
 for (const item of alcoholAssociatedLiverDiseaseQuestionBank) {
   if (verifiedAldWithdrawalQuestions[item.id]) Object.assign(item, verifiedAldWithdrawalQuestions[item.id]);
 }
+
+
+// Distinct spectrum and mechanism cases retain stable IDs, keys and anchors.
+const verifiedAldSpectrumQuestions = {
+  "alcohol-associated-liver-disease-001": {
+    "question": "Imaging shows hepatic fat in a patient with prolonged heavy alcohol use. No fibrosis or decompensation has been established. Which description is most accurate?",
+    "choices": [
+      "Steatosis is within the ALD spectrum; fibrosis stage and competing causes still require assessment.",
+      "Hepatic fat establishes decompensated cirrhosis.",
+      "Hepatic fat establishes alcohol-associated hepatitis regardless of the clinical syndrome.",
+      "Steatosis excludes any contribution from coexisting metabolic disease."
+    ],
+    "rationale": "Steatosis is fat accumulation in hepatocytes. It can occur early in ALD and may coexist with other causes of liver injury. Imaging evidence of fat alone does not establish hepatitis, fibrosis stage or decompensation."
+  },
+  "alcohol-associated-liver-disease-002": {
+    "question": "A person with long-term harmful alcohol use feels well and reports no liver symptoms. Which inference is justified?",
+    "choices": [
+      "Early ALD can be asymptomatic, so the absence of symptoms does not exclude steatosis or fibrosis.",
+      "The absence of jaundice excludes all ALD.",
+      "Only patients with ascites can have liver fibrosis.",
+      "A symptom-free examination establishes normal liver structure."
+    ],
+    "rationale": "ACG describes early ALD as potentially asymptomatic, including steatosis, steatohepatitis and early fibrosis. Symptoms alone cannot stage or exclude disease; exposure history and liver assessment remain relevant."
+  },
+  "alcohol-associated-liver-disease-003": {
+    "question": "A patient with heavy alcohol use has an elevated AST. A trainee labels this finding alone as alcohol-associated hepatitis. What is the best correction?",
+    "choices": [
+      "Assess the clinical syndrome, recent jaundice, exposure and competing causes; AST alone does not establish alcohol-associated hepatitis.",
+      "Any AST elevation establishes alcohol-associated hepatitis in a person who drinks.",
+      "An AST elevation by itself determines whether cirrhosis is decompensated.",
+      "An AST elevation excludes simultaneous viral or metabolic liver disease."
+    ],
+    "rationale": "Alcohol-associated hepatitis is a clinical syndrome, commonly presenting with rapid onset or worsening jaundice in the appropriate exposure context. Aminotransferase elevation alone does not establish it or exclude other causes of injury."
+  },
+  "alcohol-associated-liver-disease-004": {
+    "question": "A patient with alcohol-associated cirrhosis develops esophageal varices. Which mechanism best connects the scarred liver to this complication?",
+    "choices": [
+      "Scar-related resistance to portal blood flow contributes to portal hypertension and collateral vessels.",
+      "Fat accumulation alone proves that portal pressure is normal.",
+      "Varices primarily reflect excess acetate in the esophageal lumen.",
+      "An isolated increase in NADH directly establishes the presence of varices."
+    ],
+    "rationale": "Advanced fibrosis disrupts hepatic blood flow. Increased portal pressure can redirect blood into collateral vessels, including esophageal varices. A metabolic change or steatosis alone does not establish this structural complication."
+  },
+  "alcohol-associated-liver-disease-005": {
+    "question": "Which reaction is the main ADH step in ethanol clearance?",
+    "choices": [
+      "Ethanol to acetaldehyde.",
+      "Acetaldehyde to acetate.",
+      "Acetate to ethanol.",
+      "Ethanol directly to acetate without an aldehyde intermediate."
+    ],
+    "rationale": "Alcohol dehydrogenase oxidizes ethanol to acetaldehyde while reducing NAD+ to NADH. The subsequent acetaldehyde-to-acetate reaction is carried out by aldehyde dehydrogenase."
+  },
+  "alcohol-associated-liver-disease-006": {
+    "question": "Acetaldehyde has formed during ethanol oxidation. Which enzyme performs the next major clearance step to acetate?",
+    "choices": [
+      "Aldehyde dehydrogenase.",
+      "Alcohol dehydrogenase.",
+      "CYP2E1.",
+      "Lipoprotein lipase."
+    ],
+    "rationale": "ALDH oxidizes acetaldehyde to acetate. ADH and CYP2E1 contribute to forming acetaldehyde from ethanol; lipoprotein lipase is not the enzyme for this aldehyde-to-acetate step."
+  },
+  "alcohol-associated-liver-disease-007": {
+    "question": "During the ADH and ALDH reactions, which cofactor change helps explain the metabolic setting that favors hepatic fat accumulation?",
+    "choices": [
+      "NAD+ is reduced to NADH.",
+      "Both reactions oxidize NADH to NAD+.",
+      "Both reactions reduce NADP+ to NADPH instead of reducing NAD+.",
+      "NAD+ remains unchanged during both oxidative steps."
+    ],
+    "rationale": "Both oxidative steps generate reduced NADH from NAD+. The redox shift contributes to lipid accumulation, while fibrosis reflects ongoing injury and scar formation rather than direct conversion of the cofactor into collagen."
+  },
+  "alcohol-associated-liver-disease-008": {
+    "question": "A learner assumes that induction of CYP2E1 protects the liver because it helps oxidize alcohol. Which observation challenges that assumption?",
+    "choices": [
+      "CYP2E1-mediated oxidation can generate reactive oxygen species and contribute to oxidative injury.",
+      "CYP2E1 converts acetaldehyde directly to acetate without oxidant generation.",
+      "CYP2E1 induction prevents acetaldehyde formation.",
+      "CYP2E1 uses the ADH cofactor reaction and generates no oxidants."
+    ],
+    "rationale": "Alcohol oxidation and tissue protection are different outcomes. CYP2E1 can form acetaldehyde and generate reactive oxygen species, contributing to lipid and mitochondrial injury. Its activity does not guarantee adequate antioxidant defenses or replace the ALDH reaction."
+  },
+  "alcohol-associated-liver-disease-009": {
+    "question": "Two patients report comparable prolonged alcohol intake, but their liver findings differ. Which factor is consistent with known susceptibility differences?",
+    "choices": [
+      "Female sex can confer greater ALD susceptibility at lower intake.",
+      "Comparable reported intake guarantees the same fibrosis stage.",
+      "Male sex excludes alcohol-associated liver injury.",
+      "Adequate dietary intake eliminates the effect of sex and alcohol exposure."
+    ],
+    "rationale": "The book and ACG identify greater susceptibility in women. Amount and duration matter, but host factors and coexisting disease modify risk. None of these factors alone determines an individual patient’s fibrosis stage."
+  },
+  "alcohol-associated-liver-disease-010": {
+    "question": "A patient with metabolic liver disease and type 2 diabetes reports harmful alcohol use. Which assessment is most defensible?",
+    "choices": [
+      "Alcohol and metabolic disease can contribute together; assess both and support abstinence and metabolic care.",
+      "Metabolic liver disease rules out an alcohol contribution.",
+      "Alcohol-associated injury rules out a diabetes-related contribution.",
+      "A change from spirits to wine removes the need to assess liver risk."
+    ],
+    "rationale": "Alcohol can accelerate liver injury in people with metabolic disease, and diabetes or obesity adds concern. Causes can coexist. Beverage substitution does not replace exposure reduction, assessment or management of coexisting disease."
+  },
+  "alcohol-associated-liver-disease-011": {
+    "question": "A clinician asks whether binge drinking without daily heavy use has been established as an independent cause of advanced ALD. What reflects ACG’s evidence statement?",
+    "choices": [
+      "Evidence is insufficient for that specific progression claim; assess the full pattern and do not interpret uncertainty as safety.",
+      "The independent progression risk is established and identical for every patient.",
+      "Insufficient evidence proves that binge drinking cannot cause harm.",
+      "Binge intake is irrelevant whenever the weekly average is recorded."
+    ],
+    "rationale": "ACG distinguishes risk in patients with underlying liver disease from the unresolved question of advanced ALD after binge-only exposure. A complete exposure history and counseling remain appropriate; lack of sufficient evidence is not proof of no harm."
+  },
+  "alcohol-associated-liver-disease-012": {
+    "question": "A susceptibility-associated PNPLA3 variant is reported for a patient at risk of ALD. Which interpretation reflects ACG guidance?",
+    "choices": [
+      "An association with risk does not yet justify including the variant in routine ALD management algorithms.",
+      "The variant determines the patient’s exact fibrosis stage without liver assessment.",
+      "The variant requires a specific approved ALD drug regardless of the clinical syndrome.",
+      "The absence of the variant would exclude progression from harmful alcohol use."
+    ],
+    "rationale": "ACG describes genetic associations but finds insufficient evidence for their inclusion in clinical management algorithms. Genotype does not replace assessment of exposure, coexisting disease, fibrosis and complications or dictate a validated genotype-specific treatment."
+  }
+};
+for (const item of alcoholAssociatedLiverDiseaseQuestionBank) {
+  if (verifiedAldSpectrumQuestions[item.id]) Object.assign(item, verifiedAldSpectrumQuestions[item.id]);
+}

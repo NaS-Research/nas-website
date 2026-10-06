@@ -700,3 +700,93 @@ for (const lesson of alcoholAssociatedLiverDiseaseModule.submodules) {
     Object.assign(lesson.check, verifiedAldWithdrawalLesson.check);
   }
 }
+
+
+// Source-reconciled ALD metabolism, phenotypes and risk limits.
+const verifiedAldSpectrumLesson = {
+  "metadata": {
+    "summary": "Separate ethanol metabolism, fat accumulation, inflammatory injury and fibrosis, then assess the current liver phenotype and the factors that change risk.",
+    "concepts": [
+      "ADH and ALDH reactions",
+      "NADH and steatosis",
+      "Acetaldehyde and oxidative injury",
+      "Gut and inflammatory signaling",
+      "Fibrosis and decompensation",
+      "Exposure and susceptibility"
+    ],
+    "application": "Explain the current liver phenotype from exposure, metabolism, inflammation, fibrosis and coexisting disease while preserving the limits of risk prediction.",
+    "keyPoints": [
+      "ADH produces acetaldehyde; ALDH converts it to acetate.",
+      "The NADH shift favors fat accumulation, not a diagnosis of cirrhosis.",
+      "Steatosis, hepatitis and decompensation are distinct findings.",
+      "Host factors modify risk without guaranteeing an outcome.",
+      "Binge-only progression and genotype-directed care have evidence limits.",
+      "Abstinence supports recovery; established disease still needs follow-up."
+    ]
+  },
+  "bodies": [
+    {
+      "heading": "Separate the two main metabolic reactions",
+      "body": "Most ethanol oxidation occurs in the liver. Alcohol dehydrogenase (ADH) converts ethanol to acetaldehyde, a reactive metabolite. Aldehyde dehydrogenase (ALDH) then converts acetaldehyde to acetate. These are separate steps: ALDH clears acetaldehyde rather than producing it from ethanol. Both reactions reduce NAD+ to NADH. CYP2E1 also contributes to ethanol oxidation, especially at higher alcohol concentrations and after induction by chronic exposure. Keep the substrate, enzyme and product of each step distinct when explaining liver injury."
+    },
+    {
+      "heading": "Connect the redox shift to fat accumulation",
+      "body": "NADH is the reduced form of NAD+. The ADH and ALDH reactions increase its availability and alter the balance between oxidized and reduced cofactors in hepatocytes. This metabolic shift helps favor hepatic lipid accumulation during sustained alcohol exposure. Steatosis means fat within hepatocytes; it does not by itself mean that scar tissue or cirrhosis is present. Redox changes are one contributor to alcohol-associated injury, alongside toxic metabolites, inflammation and other disturbances. Do not treat a biochemical pathway as a patient-specific fibrosis measurement."
+    },
+    {
+      "heading": "Explain toxic metabolites and oxidative injury",
+      "body": "Acetaldehyde can bind to proteins and DNA, forming adducts that disrupt cellular processes and can provoke immune responses. Alcohol oxidation through CYP2E1 contributes to reactive oxygen species. Oxidative stress can damage membrane lipids and mitochondria, and depleted antioxidant defenses can worsen injury. These mechanisms help explain why ethanol metabolism can harm hepatocytes while clearing alcohol. More activity in an oxidative pathway does not necessarily mean less tissue damage, and a mechanism of oxidative injury alone does not establish that an antioxidant supplement treats ALD."
+    },
+    {
+      "heading": "Connect the gut and inflammatory response",
+      "body": "Alcohol and its metabolites can disrupt the intestinal barrier and change the gut microbial community. Bacterial products such as endotoxin can enter the circulation and contribute to inflammatory signaling. Within the liver, proinflammatory cytokines, oxidative stress and cell injury interact; continuing injury can promote fibrosis. Proinflammatory mediators in this response include TNF-alpha, IL-6 and IL-8. These are interacting processes, rather than a single isolated cause. Mechanistic and preclinical observations help explain disease biology but do not alone establish an effective clinical treatment."
+    },
+    {
+      "heading": "Describe the current liver phenotype",
+      "body": "ALD includes steatosis, steatohepatitis, progressive fibrosis and cirrhosis. Early disease may have few or no symptoms. Alcohol-associated hepatitis is a clinical syndrome with recent onset or worsening of jaundice in the appropriate alcohol-exposure context; severe forms may involve acute-on-chronic liver failure. These findings can overlap rather than forming an obligatory sequence that every patient follows. Describe the current syndrome, fibrosis stage, complications and ongoing exposure. Evaluate competing or coexisting causes of liver injury instead of labeling every aminotransferase elevation as alcohol-associated hepatitis."
+    },
+    {
+      "heading": "Distinguish scar formation from decompensation",
+      "body": "Fibrosis is scar formation after ongoing liver injury; cirrhosis is advanced fibrosis with disruption of liver structure. Scar tissue can impede blood flow and contribute to portal hypertension, varices and ascites. Hepatic encephalopathy and impaired synthetic function are other important consequences of advanced disease. A person may have cirrhosis before a decompensating event occurs. Conversely, fat on imaging does not by itself prove cirrhosis. Assess disease stage and complications separately from the presence of steatosis or the size of an AST or ALT elevation."
+    },
+    {
+      "heading": "Assess susceptibility and coexisting injury",
+      "body": "Amount and duration of alcohol exposure are major risk factors, but people with similar reported intake can have different outcomes. Women are more susceptible to ALD at lower intake than men. Obesity, diabetes and coexisting viral or metabolic liver disease add concern; smoking and a history of gastric bypass are also relevant. Genetic variants including PNPLA3, TM6SF2 and MBOAT7 are associated with susceptibility, but ACG finds insufficient evidence to include them in routine clinical management algorithms. Assess nutrition as part of care, without assuming that adequate nutrition removes alcohol-related risk or that a risk factor guarantees cirrhosis."
+    },
+    {
+      "heading": "Ask about the pattern without overstating evidence",
+      "body": "Take a history of amount, duration, frequency and episodic heavy intake rather than relying only on an average daily number. All alcoholic beverage types can contribute to liver risk; switching to beer or wine does not make continuing exposure safe for a patient with liver disease. Daily heavy use and binge use can worsen risk in people with another liver disease, including metabolic or viral disease. ACG notes insufficient evidence to determine whether binge drinking without daily heavy use independently predisposes to advanced ALD. Explain that uncertainty without interpreting it as proof of safety."
+    },
+    {
+      "heading": "Support recovery while reassessing liver disease",
+      "body": "Stopping alcohol exposure is central to preventing progression and improving long-term outcomes. Steatosis may improve with abstinence, and the liver may recover to some extent after the damaging exposure stops. Improvement is not a guarantee that established cirrhosis or its complications have disappeared. Continue fibrosis and complication assessment while providing nutrition support and sustained AUD treatment. Recovery requires an ongoing plan that addresses exposure and coexisting illness; a quieter symptom history or improved liver test alone does not establish that all liver risk has resolved."
+    }
+  ],
+  "check": {
+    "question": "A colleague says that both ADH and ALDH convert ethanol into acetaldehyde. Which correction is accurate?",
+    "choices": [
+      "ADH converts ethanol to acetaldehyde; ALDH then converts acetaldehyde to acetate.",
+      "ALDH converts ethanol to acetaldehyde; ADH then converts it to acetate.",
+      "Both enzymes convert acetate into ethanol as their main clearance pathway.",
+      "Both enzymes prevent NADH formation during alcohol oxidation."
+    ],
+    "rationale": "The two reactions act in sequence on different substrates. ADH forms acetaldehyde from ethanol; ALDH clears acetaldehyde by forming acetate. Both reduce NAD+ to NADH."
+  }
+};
+for (const lesson of alcoholAssociatedLiverDiseaseModule.submodules) {
+  if (lesson.slug === "spectrum-mechanism") {
+    Object.assign(lesson, verifiedAldSpectrumLesson.metadata);
+    lesson.lesson = verifiedAldSpectrumLesson.bodies;
+    Object.assign(lesson.check, verifiedAldSpectrumLesson.check);
+  }
+}
+alcoholAssociatedLiverDiseaseModule.references.push(...[
+  {
+    "label": "NIAAA Alcohol Research: ethanol metabolism enzymes and redox effects (2012).",
+    "href": "https://arcr.niaaa.nih.gov/media/1406/download"
+  },
+  {
+    "label": "NIAAA Alcohol Research: metabolic, oxidative and gut injury mechanisms (2018).",
+    "href": "https://arcr.niaaa.nih.gov/media/631/download"
+  }
+] );
