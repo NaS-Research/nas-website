@@ -1038,3 +1038,76 @@ alcoholAssociatedLiverDiseaseModule.references.push(...[
     "href": "https://www.hrsa.gov/optn/professionals/resources/ethical-considerations/general-considerations-in-assessment-for-transplant-candidacy"
   }
 ] );
+
+
+// Source-reconciled integrated liver and recovery transition case.
+const verifiedAldIntegratedLesson = {
+  "metadata": {
+    "summary": "Connect immediate safety, AUD treatment, liver care, nutrition, and a reachable next clinician into an individual transition plan.",
+    "concepts": [
+      "Immediate safety",
+      "Medication eligibility",
+      "Liver complications",
+      "Nutrition",
+      "Continuity of care"
+    ],
+    "application": "Before transition, resolve medication constraints and access barriers, name the next contact, and assign monitoring and follow-up responsibilities.",
+    "keyPoints": [
+      "Withdrawal stabilization does not complete AUD treatment.",
+      "Medication choice depends on organ function and opioid use.",
+      "Nutrition and liver complications need ongoing care.",
+      "Recurrence calls for reassessment and continued engagement."
+    ]
+  },
+  "bodies": [
+    {
+      "heading": "Stabilize immediate risk",
+      "body": "Assess the timing of alcohol reduction, prior complicated withdrawal, current symptoms, intoxication, trauma, suicide risk, infection, and bleeding. Review mental status, glucose, electrolytes, nutrition, and thiamine needs, and choose a setting that can manage the risks. Confusion in a patient with cirrhosis is not automatically withdrawal: assess hepatic encephalopathy and other causes, recognizing that conditions can coexist. Treat urgent problems while completing the assessment."
+    },
+    {
+      "heading": "Define liver disease",
+      "body": "Establish the ALD phenotype, the confidence of an AH diagnosis when relevant, fibrosis or cirrhosis, and whether decompensation is present. Assess kidney function, infection, and other organ complications. Use an appropriate validated severity score for its intended purpose; an aminotransferase value alone does not define recovery or transplant need. Apply the diagnostic, staging, and treatment criteria from the preceding lessons rather than treating every patient with ALD as a steroid candidate."
+    },
+    {
+      "heading": "Start recovery treatment",
+      "body": "Engage the patient in AUD treatment as cognition permits and choose behavioral care, medication when appropriate, and practical support together. Review liver and kidney function, opioid use, other medications, and the patient’s goals before selecting a drug. Disulfiram should not be used for AUD in ALD. Do not require the same medication for every discharge or wait for liver disease to resolve before arranging addiction care."
+    },
+    {
+      "heading": "Protect nutrition",
+      "body": "Assess actual intake, weight and muscle changes, and vitamin or mineral deficiencies. Individualize energy and protein support, provide purpose-appropriate thiamine, and assess refeeding risk with electrolyte monitoring when indicated. In cirrhosis, do not restrict protein solely because hepatic encephalopathy is present. Vitamins alone do not replace adequate food or nutrition support; escalate support when oral intake remains inadequate."
+    },
+    {
+      "heading": "Treat complications alongside AUD",
+      "body": "Continue indicated treatment for ascites, variceal bleeding risk, hepatic encephalopathy, and other liver complications while providing AUD care. Arrange HCC surveillance for eligible patients with cirrhosis and transplant evaluation when medically indicated. Abstinence is an important treatment goal in ALD, but does not remove the need to treat established complications or follow a patient with cirrhosis."
+    },
+    {
+      "heading": "Work through a transition case",
+      "body": "An adult whose withdrawal has stabilized has decompensated cirrhosis, worsening kidney function, poor intake, and a current opioid analgesic. The patient also cannot reach the proposed follow-up clinic. Naltrexone is contraindicated during current opioid-analgesic treatment. Acamprosate requires a current renal assessment: impairment may require dose reduction or exclude use. Obtain specialist medication review rather than forcing one choice, while continuing behavioral care, liver treatment, nutrition support, and help reaching an appropriate service. Withdrawal stabilization alone does not make the transition plan complete."
+    },
+    {
+      "heading": "Close the handoff",
+      "body": "Reconcile liver and AUD medicines, confirm how the patient can obtain prescribed treatment, and identify the receiving clinician or program and next contact. Specify who will review indicated laboratory monitoring, nutrition, surveillance, and complications. Explain warning symptoms and how to seek urgent care. Recheck access after a transfer, insurance change, or other disruption; a referral or appointment list alone does not confirm that care can be reached."
+    },
+    {
+      "heading": "Measure what matters",
+      "body": "Review alcohol use and goals, treatment engagement, medication safety, nutrition, liver complications, function, and quality of life. When drinking recurs, reassess withdrawal risk, treatment fit, and barriers with the patient, then revise care as needed. Do not automatically discharge the patient from treatment or assume that every recurrence requires the same escalation. If safety or program capacity requires transfer, support continuity with an appropriate receiving service."
+    }
+  ],
+  "check": {
+    "question": "After withdrawal stabilizes, a patient with ALD has poor intake, worsening kidney function, and current opioid-analgesic treatment. Which transition plan is strongest?",
+    "choices": [
+      "Review medication eligibility, continue behavioral and liver care, address nutrition, and confirm an accessible next contact.",
+      "Start naltrexone immediately while the opioid analgesic continues.",
+      "Prescribe standard-dose acamprosate without checking current renal function.",
+      "Treat completed withdrawal management as the end of AUD care."
+    ],
+    "rationale": "The plan must address both AUD and liver disease. Current opioid-analgesic use excludes naltrexone, and acamprosate eligibility and dosing depend on renal function. Nutrition, behavioral care, and an accessible handoff remain necessary while medication selection is reviewed."
+  }
+};
+for (const lesson of alcoholAssociatedLiverDiseaseModule.submodules) {
+  if (lesson.slug === "integrated-case") {
+    Object.assign(lesson, verifiedAldIntegratedLesson.metadata);
+    lesson.lesson = verifiedAldIntegratedLesson.bodies;
+    Object.assign(lesson.check, verifiedAldIntegratedLesson.check);
+  }
+}

@@ -1302,3 +1302,91 @@ const verifiedAldTransplantQuestions = {
 for (const item of alcoholAssociatedLiverDiseaseQuestionBank) {
   if (verifiedAldTransplantQuestions[item.id]) Object.assign(item, verifiedAldTransplantQuestions[item.id]);
 }
+
+
+// Distinct integrated-care cases retain stable IDs, keys and anchors.
+const verifiedAldIntegratedQuestions = {
+  "alcohol-associated-liver-disease-117": {
+    "question": "A patient with ALD has completed withdrawal management. What should the next phase of care include?",
+    "choices": [
+      "Ongoing AUD treatment coordinated with liver care and practical support.",
+      "Only observation until the next withdrawal episode.",
+      "Stopping liver follow-up because withdrawal symptoms have resolved.",
+      "Using withdrawal treatment as a substitute for longitudinal AUD care."
+    ],
+    "rationale": "Withdrawal management treats an acute risk; it does not complete treatment of AUD or established liver disease. Continue individualized addiction and liver care with support for engagement."
+  },
+  "alcohol-associated-liver-disease-118": {
+    "question": "A patient with cirrhosis becomes confused after markedly reducing alcohol intake. Which assessment is appropriate?",
+    "choices": [
+      "Evaluate withdrawal, hepatic encephalopathy, and other causes; more than one condition may be present.",
+      "Diagnose withdrawal solely from the recent reduction in alcohol intake.",
+      "Exclude withdrawal because cirrhosis is present.",
+      "Attribute the confusion to hepatic encephalopathy without assessing other causes."
+    ],
+    "rationale": "Withdrawal and hepatic encephalopathy can coexist. A recent change in alcohol intake is relevant but does not establish the cause of confusion; assess other urgent and reversible causes as well."
+  },
+  "alcohol-associated-liver-disease-119": {
+    "question": "A patient with decompensated ALD takes an opioid analgesic and has worsening kidney function. Which AUD medication decision is appropriate?",
+    "choices": [
+      "Check organ function and opioid constraints with specialist review before selecting medication.",
+      "Start naltrexone while the opioid analgesic continues.",
+      "Use standard-dose acamprosate regardless of current kidney function.",
+      "Select disulfiram because liver disease removes its hepatic risk."
+    ],
+    "rationale": "Current opioid-analgesic treatment is a naltrexone contraindication. Acamprosate requires renal eligibility and dose assessment, and disulfiram should not be used in ALD. No specific alternative is established without an individualized review."
+  },
+  "alcohol-associated-liver-disease-120": {
+    "question": "A patient with ALD, cirrhosis, and poor intake needs a nutrition plan. Which approach is appropriate?",
+    "choices": [
+      "Assess intake and deficiencies, individualize nutrition support, and monitor for refeeding risk when indicated.",
+      "Replace adequate calorie and protein intake with a multivitamin alone.",
+      "Restrict protein solely because the patient has hepatic encephalopathy.",
+      "Ignore nutrition until all liver-test abnormalities have resolved."
+    ],
+    "rationale": "Assessing intake, nutritional status, and deficiencies guides support. Refeeding risk may require monitoring as intake increases. Cirrhosis and hepatic encephalopathy are not reasons for routine protein restriction, and vitamins alone do not meet nutritional needs."
+  },
+  "alcohol-associated-liver-disease-121": {
+    "question": "A patient with ALD and recurrent ascites is engaging in AUD treatment. Which care plan is appropriate?",
+    "choices": [
+      "Continue ascites care and assess transplant indications while maintaining AUD treatment.",
+      "Stop ascites treatment because addiction care has begun.",
+      "Wait for a fixed abstinence interval before considering any transplant referral.",
+      "Assume AUD engagement removes the need for liver follow-up."
+    ],
+    "rationale": "Treatment of the disease driver and established liver complications proceeds together. Ascites requires ongoing care, and medically indicated transplant evaluation should not be withheld solely for a fixed abstinence interval."
+  },
+  "alcohol-associated-liver-disease-122": {
+    "question": "An insurance change interrupts access to a patient’s liver and AUD treatment. What should the care team prioritize?",
+    "choices": [
+      "Reconcile medicines and access, identify a receiving service, and assign follow-up and monitoring ownership.",
+      "Give the same referral list without checking whether the services are accessible.",
+      "Assume an earlier appointment guarantees ongoing medication access.",
+      "Stop all follow-up until the patient independently resolves the coverage problem."
+    ],
+    "rationale": "Transitions can disrupt medication supply and both liver and addiction care. Address practical access and connect the patient to an appropriate receiving team with clear follow-up responsibilities."
+  },
+  "alcohol-associated-liver-disease-123": {
+    "question": "ALT has fallen, but a patient with ALD reports recurrent drinking, poor intake, and missed care visits. What is the most appropriate interpretation?",
+    "choices": [
+      "The laboratory change alone does not establish recovery; reassess alcohol use, nutrition, safety, and care access.",
+      "The lower ALT proves that AUD and liver disease no longer require treatment.",
+      "Poor intake is clinically unimportant once ALT declines.",
+      "Recurrent drinking requires automatic discharge from the treatment program."
+    ],
+    "rationale": "Aminotransferases are only one part of assessment. Alcohol use, nutritional status, complications, function, and engagement remain relevant. Recurrence should prompt collaborative reassessment rather than automatic discharge."
+  },
+  "alcohol-associated-liver-disease-124": {
+    "question": "Which transition practice leaves an important care gap for a patient with ALD and AUD?",
+    "choices": [
+      "Sending a referral without checking medication access, a reachable next contact, or who will review monitoring.",
+      "Reconciling the liver and AUD medicines before transfer.",
+      "Identifying the receiving clinician and addressing barriers to attendance.",
+      "Explaining warning symptoms and assigning responsibility for indicated monitoring."
+    ],
+    "rationale": "A referral alone does not establish continuity. Confirm practical treatment access, the next contact, and monitoring responsibilities; medication reconciliation and safety instructions support the same transition."
+  }
+};
+for (const item of alcoholAssociatedLiverDiseaseQuestionBank) {
+  if (verifiedAldIntegratedQuestions[item.id]) Object.assign(item, verifiedAldIntegratedQuestions[item.id]);
+}
