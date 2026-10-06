@@ -17,46 +17,180 @@ export const cysticFibrosisModule = {
   ],
   submodules: [
     {
-      slug:"cf-biology-diagnosis",title:"CFTR Biology, Genotype, and Diagnosis",visual:"cf-biology",
-      summary:"Cystic fibrosis requires a compatible clinical context and objective evidence of CFTR dysfunction. Genotype helps explain mechanism and treatment eligibility but does not replace phenotype.",
-      concepts:["CFTR channel function","Mutation classes and protein fate","Newborn screening","Sweat chloride","Genotype and functional testing"],
-      application:"Establish the diagnostic context, verify sweat-test quality, interpret two disease-causing variants when present, and refer uncertain states to an accredited CF center rather than forcing a binary label.",
-      lesson:[
-        {heading:"Trace the ion and water defect",body:"CFTR is an epithelial anion channel and regulator that conducts chloride and bicarbonate. Reduced function dehydrates airway surface liquid, impairs mucociliary clearance, acidifies secretions, and changes sodium and water movement. The same defect contributes to pancreatic duct obstruction, intestinal disease, concentrated sweat, hepatobiliary disease, and reproductive tract abnormalities."},
-        {heading:"Connect mutation to protein behavior",body:"Variants can reduce synthesis, processing, channel gating, conductance, quantity, or stability. F508del produces a major folding and trafficking defect plus reduced surface stability. Correctors improve folding and delivery of selected mutant protein, while potentiators increase channel opening at the cell surface. A functional classification helps explain pharmacology, but eligibility follows current product-specific responsive-variant labeling."},
-        {heading:"Use screening to begin, not end, diagnosis",body:"Newborn immunoreactive trypsinogen screening identifies risk, not the final diagnosis. Confirm through a certified sweat test, CFTR genetic analysis, clinical evaluation, and additional functional testing when needed. Symptoms can include recurrent sinopulmonary disease, bronchiectasis, meconium ileus, malabsorption, pancreatitis, salt-loss syndromes, infertility, or a family history."},
-        {heading:"Interpret sweat chloride in context",body:"Sweat chloride at least 60 mmol per L supports CF in the appropriate setting. Values from 30 through 59 require repeat testing and extended evaluation. A result below 30 makes CF less likely but does not absolutely exclude it when genotype or phenotype remains compelling. Quantity-not-sufficient samples require recollection, not estimation."},
+      "slug": "cf-biology-diagnosis",
+      "title": "CFTR Biology, Genotype, and Diagnosis",
+      "visual": "cf-biology",
+      "summary": "Cystic fibrosis requires a compatible clinical context and objective evidence of CFTR dysfunction. Genotype helps explain mechanism and treatment eligibility but does not replace phenotype.",
+      "concepts": [
+        "Epithelial ion transport",
+        "F508del and protein fate",
+        "Newborn-screen confirmation",
+        "Sweat chloride and sample quality",
+        "Genetic phase and inconclusive states"
       ],
-      keyPoints:["Screening is not diagnosis.","Sweat testing remains central.","Intermediate results need structured follow-up.","Product labeling defines modulator eligibility."],
-      check:{question:"What does a positive newborn CF screen establish?",choices:["The need for confirmatory diagnostic evaluation","A definitive CF diagnosis by itself","Automatic eligibility for every CFTR modulator","The presence of two disease-causing CFTR variants"],answer:0,rationale:"Newborn screening identifies risk and must be followed by diagnostic testing.",reviewHref:"#cf-biology-diagnosis"},
+      "application": "Establish the diagnostic context, verify sweat-test quality, interpret two disease-causing variants when present, and refer uncertain states to an accredited CF center rather than forcing a binary label.",
+      "lesson": [
+        {
+          "heading": "Trace the ion and water defect",
+          "body": "CFTR is an epithelial anion channel and regulator that conducts chloride and bicarbonate and helps coordinate salt, water, pH, and secretion. Reduced function dehydrates airway surface liquid and impairs mucociliary clearance, promoting obstruction and infection. The same transport disorder contributes to pancreatic duct obstruction, malabsorption, intestinal and hepatobiliary disease, high sweat chloride, salt loss, and reproductive tract abnormalities. CF is inherited as an autosomal recessive disorder; its clinical manifestations differ across people and organs."
+        },
+        {
+          "heading": "Connect mutation to protein behavior",
+          "body": "Variants can reduce synthesis, processing, gating, conductance, quantity, or stability. F508del causes a major folding and trafficking defect; protein rescued to the surface can also have reduced stability. Correctors improve processing and delivery of selected mutant protein, while potentiators increase opening of responsive channels at the cell surface. These mechanisms explain combination therapy but do not establish eligibility by mutation class alone. Verify the exact current product's genotype, age, formulation, and other requirements."
+        },
+        {
+          "heading": "Use screening to begin, not end, diagnosis",
+          "body": "Newborn immunoreactive trypsinogen screening identifies risk, not a final diagnosis; the screening algorithm can also include CFTR analysis. A positive result needs timely CF-center evaluation and a quantitative sweat chloride test. For screen-positive newborns, bilateral collection when weight is more than 2 kg and corrected gestational age is at least 36 weeks improves the chance of sufficient sweat. Arrange testing as soon as possible after 10 days of age in eligible infants, ideally by 4 weeks. Do not delay needed treatment for presumptive CF while confirmation proceeds. Recurrent sinopulmonary disease, bronchiectasis, meconium ileus, malabsorption, pancreatitis, salt-loss syndromes, infertility, or family history can prompt evaluation even after a negative screen."
+        },
+        {
+          "heading": "Interpret sweat chloride in context",
+          "body": "Sweat chloride of at least 60 mmol/L is consistent with CF in a positive-screen, symptomatic, or family-history context; confirm a positive test on a separate date or with an independent diagnostic method. Values from 30 through 59 mmol/L are intermediate and need repeat testing, generally within 1 to 2 months, and extended genetic or functional evaluation. Below 30 mmol/L makes CF less likely but does not exclude it when phenotype or genotype is compelling. Sweat conductivity or sodium is not an equivalent diagnostic test. A quantity-not-sufficient sample is not a normal result: recollect it rather than estimating chloride or pooling separate samples."
+        },
+        {
+          "heading": "Use genetic evidence without forcing certainty",
+          "body": "Two CF-causing variants on separate alleles support a CF diagnosis, with sweat testing still needed for confirmation. A limited panel that fails to find two CF-causing variants does not exclude CF. Distinguish disease-causing, varying-consequence, uncharacterized, and non-CF-causing variants; two variants reported on the same allele do not establish the same inheritance pattern. Extended sequencing, deletion/duplication analysis, parental testing to resolve phase, or CFTR functional studies may be needed. Nasal potential difference and intestinal current measurement belong in validated reference centers. Offer expert genetic counseling."
+        },
+        {
+          "heading": "Follow inconclusive newborn-screen results",
+          "body": "CRMS/CFSPID describes an inconclusive diagnosis after a positive newborn screen in an infant without CF-defining clinical features. It can involve sweat chloride below 30 mmol/L with two variants, at least one of unclear consequence, or 30 to 59 mmol/L with one or no CF-causing variants. The 2024 CF Foundation guidance recommends at least annual CF-clinician follow-up and repeat sweat testing at 6 months and annually at least through age 8. Review growth, new symptoms, variant interpretation, pancreatic assessment, and selectively obtained cultures. Routine CF airway clearance or CFTR modulators are not recommended solely for CRMS/CFSPID; new symptoms can justify individualized care and diagnostic reassessment. Do not equate uncertainty with either established CF or a guarantee of no future disease."
+        }
+      ],
+      "keyPoints": [
+        "A positive screen requires diagnostic evaluation.",
+        "Interpret sweat chloride with sample quality and clinical context.",
+        "Two variants must be interpreted for consequence and phase.",
+        "CRMS/CFSPID has its own follow-up and treatment guidance."
+      ],
+      "check": {
+        "question": "What does a positive newborn CF screen establish?",
+        "choices": [
+          "The need for confirmatory diagnostic evaluation",
+          "A definitive CF diagnosis by itself",
+          "Automatic eligibility for every CFTR modulator",
+          "The presence of two disease-causing CFTR variants"
+        ],
+        "answer": 0,
+        "rationale": "Newborn screening identifies risk and must be followed by diagnostic testing.",
+        "reviewHref": "#cf-biology-diagnosis"
+      }
     },
     {
-      slug:"cf-airway-clearance",title:"Airway Clearance and Chronic Pulmonary Therapy",visual:"cf-airway",
-      summary:"Airway care combines physical clearance, hydration of secretions, mucus degradation, exercise, inhaled delivery, equipment hygiene, and a sequence the patient can sustain.",
-      concepts:["Individualized airway clearance","Bronchodilator role","Hypertonic saline","Dornase alfa","Treatment order and equipment"],
-      application:"Observe the entire routine, identify the purpose of every step, match technique to age and ability, and simplify burden without silently removing effective treatment.",
-      lesson:[
-        {heading:"Make airway clearance individualized and active",body:"Positive expiratory pressure, oscillatory PEP, chest-wall oscillation, active-cycle breathing, autogenic drainage, percussion, and other methods mobilize secretions. No single method is universally superior. Technique, age, preference, sputum burden, lung function, adherence, and response determine the best plan. Aerobic exercise complements but does not automatically replace prescribed clearance."},
-        {heading:"Hydrate and depolymerize secretions",body:"Inhaled hypertonic saline increases airway surface hydration and can provoke bronchospasm, cough, or salt taste, so a bronchodilator and tolerance assessment may be appropriate. Dornase alfa cleaves extracellular DNA from neutrophils and reduces mucus viscosity. It should not be mixed with other nebulized drugs unless compatibility is established."},
-        {heading:"Sequence inhaled therapy deliberately",body:"A common individualized sequence is bronchodilator when indicated, hypertonic saline with airway clearance, then dornase alfa according to its schedule, followed by inhaled antibiotic after secretions have been mobilized. The exact timing follows the patient's center plan and product instructions. Inhaled corticosteroids are not routine CF therapy without asthma or ABPA."},
-        {heading:"Treat the device as part of the dose",body:"Nebulizer system, particle delivery, cleaning, disinfection, drying, replacement, electrical supply, and separation of equipment affect treatment. Verify preparation, storage, breath pattern, dose completion, and time burden. Escalating medication before correcting a failing device preserves inadequate delivery."},
+      "slug": "cf-airway-clearance",
+      "title": "Airway Clearance and Chronic Pulmonary Therapy",
+      "visual": "cf-airway",
+      "summary": "Airway care combines physical clearance, hydration of secretions, mucus degradation, exercise, inhaled delivery, equipment hygiene, and a sequence the patient can sustain.",
+      "concepts": [
+        "Individualized airway clearance",
+        "Bronchodilator role",
+        "Hypertonic saline",
+        "Dornase alfa",
+        "Treatment order and equipment"
       ],
-      keyPoints:["Airway clearance is individualized.","Dornase targets extracellular DNA.","Hypertonic saline hydrates secretions.","Inhaled antibiotics generally follow clearance."],
-      check:{question:"Why is dornase alfa useful in CF airway disease?",choices:["It cleaves extracellular DNA that contributes to mucus viscosity","It directly corrects every CFTR mutation","It replaces pancreatic enzymes","It eradicates all airway bacteria"],answer:0,rationale:"Neutrophil-derived extracellular DNA is an important contributor to thick CF sputum.",reviewHref:"#cf-airway-clearance"},
+      "application": "Observe the entire routine, identify the purpose of every step, match technique to age and ability, and simplify burden without silently removing effective treatment.",
+      "lesson": [
+        {
+          "heading": "Make airway clearance individualized and active",
+          "body": "Positive expiratory pressure, oscillatory PEP, chest-wall oscillation, active-cycle breathing, autogenic drainage, percussion, and other methods mobilize secretions. CF guidance recommends airway clearance for people with established CF; no single method has been demonstrated superior for everyone. Technique, age, ability, preference, sputum burden, lung function, adherence, and response determine the plan. Observe performance rather than judging by a device prescription alone. Aerobic exercise complements prescribed clearance and does not replace it. CRMS/CFSPID without established CF follows separate guidance."
+        },
+        {
+          "heading": "Hydrate and depolymerize secretions",
+          "body": "Inhaled hypertonic saline draws water into airway secretions and supports mucus clearance. Assess tolerance because cough, sore throat, chest tightness, and bronchospasm can occur; a prescribed bronchodilator is used first. Concentration, volume, frequency, and nebulizer follow the patient's regimen. Dornase alfa cleaves extracellular DNA in purulent sputum and reduces viscosity. It is neither a bronchodilator nor an antibiotic. Do not dilute or mix Pulmozyme with other drugs in the nebulizer; its label gives no compatibility exception."
+        },
+        {
+          "heading": "Sequence inhaled therapy deliberately",
+          "body": "The book's sequence is a prescribed bronchodilator, hypertonic saline, dornase alfa, physical airway clearance, then inhaled antibiotic. This prepares and thins secretions before clearing them and delivering the antibiotic. Current CF Foundation patient guidance also places dornase before physical clearance, while the chronic-medication guideline identifies optimal sequencing as an unresolved question. Follow the individualized center plan and each product's instructions; do not treat one sequence as proven best for every person. Inhaled corticosteroids are not routine CF therapy without asthma or allergic bronchopulmonary aspergillosis."
+        },
+        {
+          "heading": "Treat the device as part of the dose",
+          "body": "Medication, nebulizer, compressor or mesh system, and mouthpiece or mask must work together. Use a system recommended for the exact medication and follow its preparation, cleaning, disinfection, drying, maintenance, and replacement instructions. Observe the breath pattern, fit, completed dose, electrical function, storage, and time burden. People with CF should have their own nebulizer; equipment should not be shared. After use, clean and disinfect compatible parts and allow them to air dry before storage. When cold disinfection is used, rinse disinfectant with sterile water, not tap water. A generic cleaning method can be unsuitable for a specific mesh device."
+        },
+        {
+          "heading": "Give the full dornase dose through the correct system",
+          "body": "Pulmozyme contains 2.5 mg in one 2.5 mL single-dose ampule, or 1 mg/mL. The usual labeled dose is the full ampule inhaled once daily; some patients may benefit from twice-daily administration when prescribed. Use a recommended jet-nebulizer/compressor combination or listed vibrating-mesh system. A mouthpiece-only system is not suitable for a patient who requires a mask. Check for leaks and cloudy or discolored solution; once opened, use the entire contents or discard the remainder. Known hypersensitivity to dornase alfa, Chinese Hamster Ovary cell products, or another component is a contraindication. Monitor voice change, throat irritation, rash, and other treatment symptoms."
+        },
+        {
+          "heading": "Protect dornase during storage and travel",
+          "body": "Keep Pulmozyme at 2 to 8 degrees C in its protective foil, protected from excessive heat and light, including during transport. Return unused ampules to refrigerated foil storage after the pouch is opened. Current US labeling says not to use ampules exposed to room temperature of 22 to 28 degrees C for more than 60 cumulative hours. This limited excursion instruction does not make room temperature the routine storage condition, does not cover hotter temperatures, and does not reset when the medicine returns to the refrigerator. Check expiry and solution appearance; seek product-specific advice when the exposure history is uncertain."
+        }
+      ],
+      "keyPoints": [
+        "Choose and observe an individualized clearance technique.",
+        "Dornase cleaves DNA; hypertonic saline hydrates mucus.",
+        "Do not dilute or mix Pulmozyme with other nebulized drugs.",
+        "Thin and clear secretions before inhaled antibiotic under the center plan.",
+        "The device and cold chain are part of safe delivery."
+      ],
+      "check": {
+        "question": "Why is dornase alfa useful in CF airway disease?",
+        "choices": [
+          "It cleaves extracellular DNA that contributes to mucus viscosity",
+          "It directly corrects every CFTR mutation",
+          "It replaces pancreatic enzymes",
+          "It eradicates all airway bacteria"
+        ],
+        "answer": 0,
+        "rationale": "Neutrophil-derived extracellular DNA is an important contributor to thick CF sputum.",
+        "reviewHref": "#cf-airway-clearance"
+      }
     },
     {
-      slug:"cf-pulmonary-assessment",title:"Pulmonary Assessment and Exacerbation Recovery",visual:"cf-pulmonary",
-      summary:"Pulmonary decisions begin with the patient's own baseline. Symptoms, spirometry, oxygenation, microbiology, treatment implementation, and recovery trajectory determine urgency and response.",
-      concepts:["Personal pulmonary baseline","Spirometry and oxygenation","Exacerbation recognition","Antibiotic pharmacokinetics","Recovery and prevention"],
-      application:"Define the patient's stable baseline, recognize a meaningful change, select the care setting and treatment intensity, then document recovery rather than stopping when symptoms merely begin to improve.",
-      lesson:[
-        {heading:"Build a longitudinal pulmonary baseline",body:"Track cough, sputum, exercise tolerance, sleep, appetite, weight, oxygenation, FEV1, imaging, culture history, exacerbations, treatment burden, and adherence over time. A value that appears acceptable in isolation can represent important decline for a patient whose prior function was higher."},
-        {heading:"Recognize deterioration as a pattern",body:"Increased cough or sputum, dyspnea, fatigue, fever, appetite or weight loss, hemoptysis, oxygen change, new examination findings, and falling spirometry can signal a pulmonary exacerbation. Consider viral illness, asthma, allergic bronchopulmonary aspergillosis, pneumothorax, bleeding, pulmonary embolism, heart disease, and treatment interruption when the pattern is atypical."},
-        {heading:"Match treatment intensity to severity",body:"Select outpatient, inpatient, oral, inhaled, or intravenous treatment from severity, physiology, prior organisms, resistance, allergies, previous clinical response, organ function, access, and ability to deliver therapy. Increase airway clearance during exacerbation when safe. Aminoglycosides and other high-risk agents require individualized exposure and toxicity monitoring."},
-        {heading:"Measure recovery and prevent the next event",body:"Reassess symptoms, weight, oxygen, spirometry, adverse effects, microbiology when useful, and return toward the patient's prior baseline. Failure to recover should trigger evaluation of organism coverage, delivery, adherence, complications, alternate diagnoses, and advanced lung disease. Complete the episode with an updated prevention and home-action plan."},
+      "slug": "cf-pulmonary-assessment",
+      "title": "Pulmonary Assessment and Exacerbation Recovery",
+      "visual": "cf-pulmonary",
+      "summary": "Pulmonary decisions begin with the patient's own baseline. Symptoms, spirometry, oxygenation, microbiology, treatment implementation, and recovery trajectory determine urgency and response.",
+      "concepts": [
+        "Personal pulmonary baseline",
+        "Spirometry and oxygenation",
+        "Exacerbation recognition",
+        "Antibiotic pharmacokinetics",
+        "Recovery and prevention"
       ],
-      keyPoints:["The patient's own baseline defines decline.","Exacerbation is a multidomain clinical pattern.","Antibiotic plans use longitudinal microbiology.","Recovery must be measured."],
-      check:{question:"What is the best way to judge recovery from a CF pulmonary exacerbation?",choices:["Compare symptoms, oxygenation, weight, and spirometry with the patient's prior baseline","Stop assessment when fever resolves","Use one susceptibility report without clinical response","Assume every decline is bacterial infection"],answer:0,rationale:"Recovery is multidimensional and should be measured against the patient's established baseline.",reviewHref:"#cf-pulmonary-assessment"},
+      "application": "Define the patient's stable baseline, recognize a meaningful change, select the care setting and treatment intensity, then document recovery rather than stopping when symptoms merely begin to improve.",
+      "lesson": [
+        {
+          "heading": "Build a longitudinal pulmonary baseline",
+          "body": "Track cough, sputum, exercise tolerance, sleep, appetite, weight, oxygenation, FEV1, imaging when indicated, culture history, exacerbations, treatment burden, and actual treatment delivery over time. A value that appears acceptable in isolation can represent a substantial decline from that person's stable function. Interpret spirometry with test quality and the patient's ability to perform it. Lung function, symptoms, weight, and treatment implementation provide complementary evidence; no single measurement describes the entire pulmonary state."
+        },
+        {
+          "heading": "Recognize deterioration as a pattern",
+          "body": "Increased cough or sputum, dyspnea, fatigue, reduced appetite or weight, hemoptysis, oxygen change, new examination findings, and falling spirometry can signal a pulmonary exacerbation. Fever may occur but is not required. No single universally accepted diagnostic definition or FEV1 cutoff captures every episode. Evaluate treatment interruption, respiratory viral illness, asthma, allergic bronchopulmonary aspergillosis, and complications such as pneumothorax or bleeding; pursue other cardiopulmonary causes when the presentation requires it. Sudden severe breathlessness, chest pain, major bleeding, or respiratory instability needs urgent assessment rather than routine escalation at home."
+        },
+        {
+          "heading": "Match treatment intensity to severity",
+          "body": "Choose the care setting, antimicrobial route and regimen from severity, physiology, current and prior organisms, susceptibility, allergies, previous clinical response, organ function, and the ability to deliver and monitor treatment. Increase airway clearance during an exacerbation when safe and continue appropriate chronic lung-health therapies. IV treatment outside hospital requires resources and support equivalent to hospital care. Aminoglycosides and other high-risk agents require individualized exposure and toxicity monitoring. Susceptibility alone does not fully predict response in a complex, often polymicrobial CF airway."
+        },
+        {
+          "heading": "Measure recovery and prevent the next event",
+          "body": "Reassess symptoms, weight, oxygenation, spirometry, adverse effects, treatment delivery, and microbiology when useful against the prior stable baseline. Early symptom improvement or fever resolution does not establish complete recovery. Persistent decline requires evaluation of organism coverage, delivery, adherence, complications, alternative diagnoses, and advanced lung disease. Agree on follow-up, warning symptoms, and an updated prevention and home-action plan rather than ending assessment at the last antibiotic dose."
+        },
+        {
+          "heading": "Separate percentage points from relative change",
+          "body": "If stable FEV1 is 88% predicted and the current result is 74% predicted, the absolute decline is 14 percentage points. The relative decline is (88 - 74) / 88 x 100, approximately 15.9%. These describe the same change with different denominators. Interpret it with symptoms, oxygenation, weight, microbiology, and test quality; the arithmetic is not a universal diagnostic threshold or a stand-alone antibiotic prescription."
+        },
+        {
+          "heading": "Individualize duration and acknowledge evidence limits",
+          "body": "Do not turn a typical treatment duration into an automatic course for every exacerbation. The STOP2 randomized trial studied adults receiving IV antibiotics and assigned duration after an early symptom and lung-function response assessment: 10 days was noninferior to 14 in early robust responders, while 21 days was not superior to 14 in less robust responders. These findings do not establish a 10-day regimen for children, ICU-level episodes, or every adult, nor a direct comparison of 10 versus 21 days. Choose duration and reassessment with the CF team. Evidence also remains insufficient for routine systemic corticosteroids in exacerbations or for assuming inhaled and IV use of the same antibiotic must always be combined."
+        }
+      ],
+      "keyPoints": [
+        "Compare deterioration and recovery with the personal baseline.",
+        "Fever is not required for an exacerbation.",
+        "Route, setting, and duration depend on clinical context and delivery support.",
+        "Distinguish percentage-point from relative FEV1 change.",
+        "Persistent physiologic loss needs reassessment."
+      ],
+      "check": {
+        "question": "What is the best way to judge recovery from a CF pulmonary exacerbation?",
+        "choices": [
+          "Compare symptoms, oxygenation, weight, and spirometry with the patient's prior baseline",
+          "Stop assessment when fever resolves",
+          "Use one susceptibility report without clinical response",
+          "Assume every decline is bacterial infection"
+        ],
+        "answer": 0,
+        "rationale": "Recovery is multidimensional and should be measured against the patient's established baseline.",
+        "reviewHref": "#cf-pulmonary-assessment"
+      }
     },
     {
       slug:"cf-infection-exacerbations",title:"Airway Microbiology and Antimicrobial Strategy",visual:"cf-infection",
@@ -228,6 +362,20 @@ export const cysticFibrosisModule = {
   ],
   questionBank:cysticFibrosisQuestionBank,
   references:[
+    {"label": "CF Foundation: diagnosis consensus and current review", "href": "https://www.cff.org/medical-professionals/cf-diagnosis-clinical-care-guidelines"},
+    {"label": "CF Foundation: quantitative sweat testing and quality", "href": "https://www.cff.org/medical-professionals/sweat-test-clinical-care-guidelines"},
+    {"label": "CF Foundation: 2024 CRMS/CFSPID management guidance", "href": "https://www.cff.org/medical-professionals/cystic-fibrosis-foundation-evidence-based-guidelines-management-crms-cfspid"},
+    {"label": "CF Foundation: CFTR protein and epithelial transport", "href": "https://www.cff.org/research-clinical-trials/basics-cftr-protein"},
+    {"label": "CF Foundation: types of CFTR mutation and protein fate", "href": "https://www.cff.org/research-clinical-trials/types-cftr-mutations"},
+    {"label": "Valentine et al.: rescued F508del surface instability, cellular study", "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3527949/"},
+    {"label": "CF Foundation: individualized airway clearance", "href": "https://www.cff.org/medical-professionals/cf-airway-clearance-therapies-clinical-care-guidelines"},
+    {"label": "CF Foundation: chronic medications to maintain lung health", "href": "https://www.cff.org/medical-professionals/chronic-medications-maintain-lung-health-clinical-care-guidelines"},
+    {"label": "CF Foundation: mucus thinners and treatment order", "href": "https://www.cff.org/managing-cf/mucus-thinners"},
+    {"label": "DailyMed: Pulmozyme full US prescribing information", "href": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=d8c78a7e-ff99-48f3-8952-643ec2ea0f86"},
+    {"label": "CF Foundation: nebulizer care at home", "href": "https://www.cff.org/managing-cf/nebulizer-care-home"},
+    {"label": "CF Foundation: pulmonary exacerbation care guidance", "href": "https://www.cff.org/medical-professionals/pulmonary-exacerbations-clinical-care-guidelines"},
+    {"label": "Dickinson and Collaco: CF diagnosis, pulmonary care, and complications", "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8972143/"},
+    {"label": "STOP2: randomized adult IV-antibiotic duration trial", "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8786075/"},
     {"label": "CF Foundation pancreatic enzyme guidance", "href": "https://www.cff.org/medical-professionals/pancreatic-enzymes-clinical-care-guidelines"},
     {"label": "CF Foundation enzyme administration", "href": "https://www.cff.org/managing-cf/enzymes"},
     {"label": "CF Foundation nutrition position paper (2023)", "href": "https://www.cff.org/medical-professionals/nutritional-considerations-new-era-cf-foundation-position-paper"},

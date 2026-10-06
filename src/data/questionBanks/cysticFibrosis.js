@@ -344,4 +344,505 @@ const nutritionSystemicCases = [
     "reviewHref": "#cf-systemic-complications"
   }
 ];
-export const cysticFibrosisQuestionBank = [...originalCysticFibrosisQuestionBank.map((question) => ({ ...question, ...(sourceReviewedEnzymeSafetyQuestions[question.id] || {}), ...(reviewedNutritionSystemicQuestions[question.id] || {}) })), ...nutritionSystemicCases];
+const reviewedDiagnosisAirwayPulmonaryQuestions = {
+  "cf-001": {
+    "choices": [
+      "CFTR conducts chloride and bicarbonate and helps coordinate epithelial salt, water, pH, and secretion.",
+      "CFTR is a sodium-only channel with no role in bicarbonate movement.",
+      "CFTR dysfunction is confined to pancreatic digestive enzymes.",
+      "CFTR is a bacterial toxin that blocks airway receptors."
+    ],
+    "rationale": "CFTR transports chloride and bicarbonate and influences epithelial fluid and secretion. A sodium-only description, digestive-enzyme identity, or bacterial-toxin identity does not describe this channel."
+  },
+  "cf-002": {
+    "choices": [
+      "Connect organ findings to altered epithelial transport rather than treating each manifestation as unrelated.",
+      "Treat lung mucus as unrelated to pancreatic malabsorption and sweat salt loss.",
+      "Interpret every organ problem as the same bacterial infection.",
+      "Assess only respiratory symptoms because CFTR is absent from other organs."
+    ],
+    "rationale": "A shared epithelial transport defect links airway, digestive, sweat, liver, and reproductive findings. This does not mean that each manifestation has one identical treatment or that every problem is infection."
+  },
+  "cf-003": {
+    "choices": [
+      "Review airway hydration, sweat salt, pancreatic and intestinal function, liver disease, fertility, genotype, and functional evidence.",
+      "Review lung symptoms alone and omit digestive and salt-loss findings.",
+      "Review body weight alone and omit respiratory function and diagnostic testing.",
+      "Review one genotype report and omit phenotype and functional evidence."
+    ],
+    "rationale": "CFTR physiology is multisystem. Organ findings, genotype, and functional evidence provide complementary information; lung-only, weight-only, and genotype-only assessments omit relevant context."
+  },
+  "cf-004": {
+    "choices": [
+      "Reducing CF to thick lung mucus misses the channel defect across several organs.",
+      "Connecting pancreatic malabsorption and high sweat chloride to epithelial transport",
+      "Reviewing gastrointestinal and reproductive manifestations alongside lung disease",
+      "Using phenotype and functional evidence together in evaluation"
+    ],
+    "rationale": "The hazard is limiting CF to lung mucus. The other choices appropriately connect multiple manifestations or diagnostic evidence rather than making that reduction."
+  },
+  "cf-005": {
+    "choices": [
+      "F508del causes major CFTR folding and trafficking dysfunction with reduced surface stability.",
+      "F508del is only a gating defect in a normally processed, fully stable channel.",
+      "F508del increases the quantity of normal CFTR at the cell surface.",
+      "F508del eliminates the need to interpret the other CFTR allele."
+    ],
+    "rationale": "F508del impairs folding and trafficking; rescued surface protein can also be unstable. It is not simply a normally processed channel with an isolated gate defect, and both alleles remain clinically relevant."
+  },
+  "cf-006": {
+    "choices": [
+      "Use a responsive corrector-potentiator combination under current genotype, age, and product labeling.",
+      "Prescribe potentiator monotherapy for every F508del genotype without checking the product label.",
+      "Choose any corrector combination solely by mutation class and ignore age.",
+      "Exchange fixed combinations by tablet count without reviewing ingredients."
+    ],
+    "rationale": "A responsive corrector-potentiator combination addresses processing and channel activity under exact product eligibility. Mutation class alone, universal monotherapy, or tablet-count substitution does not establish an appropriate regimen."
+  },
+  "cf-007": {
+    "choices": [
+      "Review both variants, responsive-variant table, age, weight, formulation, prior modulator, liver status, interactions, and access.",
+      "Review F508del status alone and omit age, formulation, liver status, and interactions.",
+      "Review the brand name alone and assume all fixed combinations have identical ingredients.",
+      "Review symptoms alone and omit the responsive-variant requirements."
+    ],
+    "rationale": "The mechanism does not establish product eligibility or safe exposure. Genotype, age, formulation, hepatic context, interacting drugs, and the complete regimen must be reviewed before selection."
+  },
+  "cf-008": {
+    "choices": [
+      "Assuming one potentiator can rescue protein that never reaches the surface ignores the processing defect.",
+      "Checking the current responsive-variant requirements before modulator selection",
+      "Distinguishing corrector trafficking effects from potentiator channel-opening effects",
+      "Reviewing the exact fixed combination and age-appropriate formulation"
+    ],
+    "rationale": "A potentiator acts on responsive protein at the surface; it cannot by itself solve every protein-processing defect. The other choices are appropriate mechanistic or product checks."
+  },
+  "cf-009": {
+    "choices": [
+      "An abnormal newborn screen identifies CF risk but does not establish the diagnosis.",
+      "An elevated IRT result alone confirms CF in every infant.",
+      "A positive newborn screen proves that two disease-causing variants are present.",
+      "A negative newborn screen excludes CF in every symptomatic child."
+    ],
+    "rationale": "Screening identifies risk and can produce false-positive or false-negative results. Confirmation uses sweat chloride, genetics, and clinical context; a screen does not automatically prove a particular genotype."
+  },
+  "cf-010": {
+    "choices": [
+      "Arrange timely sweat testing and CF-center evaluation with genetic and clinical interpretation.",
+      "Start every modulator immediately on the basis of IRT alone.",
+      "Wait for severe malabsorption before arranging confirmatory testing.",
+      "Replace sweat chloride measurement with sweat sodium or conductivity."
+    ],
+    "rationale": "A positive screen requires timely diagnostic sweat testing and CF-center interpretation. Neither IRT-based treatment eligibility, waiting for symptoms, nor alternative sweat measurements provides equivalent confirmation."
+  },
+  "cf-011": {
+    "choices": [
+      "Review screening algorithm, age, hydration, sweat quantity, chloride result, genotype, symptoms, family history, and follow-up.",
+      "Review IRT alone and omit sweat quantity, chloride, and genotype.",
+      "Review genotype alone and omit the screening context and clinical findings.",
+      "Review symptoms alone and assume an asymptomatic infant needs no follow-up."
+    ],
+    "rationale": "The screening algorithm, collection quality, quantitative chloride, genetics, clinical context, and follow-up all matter. Asymptomatic infants can still need prompt confirmation, and incomplete samples cannot be interpreted as normal."
+  },
+  "cf-012": {
+    "choices": [
+      "Labeling an infant definitively from immunoreactive trypsinogen alone bypasses confirmatory testing.",
+      "Explaining that a positive newborn screen needs diagnostic confirmation",
+      "Arranging sweat testing at a CF center after a positive screen",
+      "Considering CF evaluation despite a negative screen when symptoms are compelling"
+    ],
+    "rationale": "IRT is a screening marker, not sufficient diagnostic evidence. The other choices preserve the distinction between screening and diagnosis or recognize a possible false-negative screen."
+  },
+  "cf-013": {
+    "choices": [
+      "Sweat chloride at least 60 mmol/L supports CF, 30 to 59 is intermediate, and below 30 makes CF less likely but not impossible.",
+      "Sweat chloride from 30 to 59 mmol/L definitively excludes CF.",
+      "Every sweat chloride result below 60 mmol/L is normal.",
+      "Sweat conductivity has the same diagnostic meaning as quantitative chloride."
+    ],
+    "rationale": "The 30-59 range is intermediate. Below 30 makes CF less likely, but clinical or genetic evidence can still warrant evaluation. Use quantitative sweat chloride, not an interchangeable conductivity value."
+  },
+  "cf-014": {
+    "choices": [
+      "Repeat intermediate or discordant testing at an experienced center and integrate genotype, phenotype, and functional studies.",
+      "Classify every intermediate result as normal and end follow-up.",
+      "Diagnose CF from one quantity-not-sufficient sample by estimating its chloride.",
+      "Pool separate insufficient sweat collections to make a diagnostic specimen."
+    ],
+    "rationale": "Intermediate or discordant results need repeat quality-controlled testing and integrated evaluation. An insufficient specimen is not interpretable and separate samples must not be pooled."
+  },
+  "cf-015": {
+    "choices": [
+      "Review collection quality, quantity, age, chloride, repeat result, genotype, medications, hydration, phenotype, and laboratory certification.",
+      "Review the numeric chloride value alone and omit sample quantity and collection quality.",
+      "Review the first genotype panel alone and omit repeat sweat testing when indicated.",
+      "Review family history alone and omit the current phenotype and functional evidence."
+    ],
+    "rationale": "Diagnostic interpretation depends on a valid collection and clinical and genetic context. A number, limited panel, or family history alone cannot resolve every diagnostic state."
+  },
+  "cf-016": {
+    "choices": [
+      "Treating an intermediate result as either definitively normal or definitively CF loses required diagnostic follow-up.",
+      "Repeating an intermediate chloride result and considering extended testing",
+      "Recollecting sweat after a quantity-not-sufficient report",
+      "Considering CF despite chloride below 30 when phenotype or genotype is compelling"
+    ],
+    "rationale": "An intermediate result does not justify a definitive binary conclusion. Repeat testing, recollection of an insufficient specimen, and evaluation of discordant evidence are appropriate."
+  },
+  "cf-017": {
+    "choices": [
+      "CRMS or CFSPID and other uncertain states require structured follow-up rather than premature disease labeling or dismissal.",
+      "CRMS/CFSPID is a confirmed CF diagnosis that requires every chronic CF medicine.",
+      "CRMS/CFSPID guarantees that CF can never develop.",
+      "Any symptomatic adult with bronchiectasis automatically meets CRMS/CFSPID criteria."
+    ],
+    "rationale": "CRMS/CFSPID is a defined inconclusive newborn-screen state, distinct from established CF or an adult CFTR-related disorder. Follow-up detects evolving evidence without assuming either definite disease or guaranteed lifelong absence."
+  },
+  "cf-018": {
+    "choices": [
+      "Use CF-center surveillance, repeat testing, symptom review, and family counseling according to current guidance.",
+      "Stop all follow-up after one intermediate sweat result.",
+      "Use routine CFTR modulator therapy solely because CRMS/CFSPID is recorded.",
+      "Begin routine daily airway clearance for every asymptomatic person with CRMS/CFSPID."
+    ],
+    "rationale": "Current guidance recommends annual CF-clinician follow-up and repeat sweat testing at 6 months and annually at least through age 8. It recommends against modulators and routine airway clearance solely for this designation; new symptoms require individualized reassessment."
+  },
+  "cf-019": {
+    "choices": [
+      "Review newborn screen, sweat trajectory, variants, penetrance, symptoms, growth, cultures, pancreatic function, family understanding, and follow-up.",
+      "Review only the original screening result and omit the sweat trajectory and growth.",
+      "Review the variant names but ignore clinical consequence and whether they are on separate alleles.",
+      "Review cultures alone and reclassify as CF from one positive culture without integrated assessment."
+    ],
+    "rationale": "Follow the sweat trajectory, variant meaning and phase, growth, symptoms, pancreatic evidence, cultures when selected, and family understanding. No single original screen, variant name, or culture automatically establishes the final diagnosis."
+  },
+  "cf-020": {
+    "choices": [
+      "Assuming uncertainty means no future disease can delay recognition of evolving CFTR dysfunction.",
+      "Maintaining annual follow-up and repeat sweat testing under current guidance",
+      "Explaining diagnostic uncertainty and when new symptoms need reassessment",
+      "Seeking expert interpretation of variant consequence and phase"
+    ],
+    "rationale": "Uncertainty does not mean zero future risk. The other choices provide appropriate surveillance, communication, and diagnostic interpretation without prematurely labeling established CF."
+  },
+  "cf-021": {
+    "choices": [
+      "All people with CF need an individualized clearance strategy, and no single technique is universally superior.",
+      "One chest-wall oscillation device is proven best for every person with CF.",
+      "Aerobic exercise routinely replaces all prescribed airway clearance.",
+      "The established-CF clearance recommendation automatically applies to asymptomatic CRMS/CFSPID."
+    ],
+    "rationale": "Established CF needs individualized airway clearance; no method is universally superior and exercise is an adjunct. CRMS/CFSPID follows separate guidance that recommends against routine clearance solely for that designation."
+  },
+  "cf-022": {
+    "choices": [
+      "Choose and teach a sustainable method around age, ability, preference, sputum, lung function, response, and burden.",
+      "Choose the newest device without evaluating technique, ability, or preference.",
+      "Use the same method and frequency for everyone regardless of response.",
+      "Remove prescribed clearance whenever the patient reports exercising."
+    ],
+    "rationale": "A sustainable method depends on performance, ability, preference, burden, and response. Device novelty, a uniform regimen, and exercise alone do not replace individualized assessment."
+  },
+  "cf-023": {
+    "choices": [
+      "Review technique, frequency, cough, sputum, device, cleaning, exercise, caregiver support, adherence, and clinical response.",
+      "Review the device brand alone and omit observed technique and clinical response.",
+      "Review adherence alone and assume the equipment works correctly.",
+      "Review sputum volume alone and omit frequency, exercise, and caregiver support."
+    ],
+    "rationale": "Effective clearance depends on technique, implementation, equipment, support, and response. A device name, adherence report, or sputum measure alone cannot verify that the regimen works."
+  },
+  "cf-024": {
+    "choices": [
+      "Prescribing a device without observing technique can create treatment time without effective secretion movement.",
+      "Observing the patient perform the prescribed clearance method",
+      "Matching technique to age, ability, response, and preference",
+      "Reviewing device hygiene and caregiver support"
+    ],
+    "rationale": "A prescription without observed performance can leave ineffective treatment unnoticed. The other choices help verify implementation and personalize the regimen."
+  },
+  "cf-025": {
+    "choices": [
+      "Inhaled hypertonic saline osmotically hydrates airway secretions and supports clearance.",
+      "Hypertonic saline directly cleaves extracellular DNA in sputum.",
+      "Hypertonic saline is a genotype-specific CFTR corrector.",
+      "Hypertonic saline directly eradicates chronic Pseudomonas as an antibiotic."
+    ],
+    "rationale": "Hypertonic saline draws water into airway secretions. Dornase cleaves DNA, modulators target CFTR, and antibiotics treat bacteria; these mechanisms are distinct."
+  },
+  "cf-026": {
+    "choices": [
+      "Assess bronchospasm tolerance, use a bronchodilator when indicated, and pair treatment with airway clearance.",
+      "Ignore first-dose chest tightness because saline cannot cause airway reactions.",
+      "Use hypertonic saline as a replacement for every prescribed clearance technique.",
+      "Begin any concentration and nebulizer without checking the prescribed regimen."
+    ],
+    "rationale": "Tolerance and the exact regimen matter because saline can cause cough, tightness, or bronchospasm. It supports clearance rather than replacing technique and product-specific delivery."
+  },
+  "cf-027": {
+    "choices": [
+      "Review concentration, nebulizer, pretreatment, cough, bronchospasm, salt taste, timing, cleaning, adherence, and response.",
+      "Review vial volume alone and omit concentration and nebulizer.",
+      "Review cough alone and omit bronchospasm, pretreatment, and timing.",
+      "Review the prescription alone and omit cleaning and actual dose completion."
+    ],
+    "rationale": "Concentration, equipment, tolerance, timing, hygiene, completion, and response determine delivery. Volume-only, symptom-only, or prescription-only review omits important information."
+  },
+  "cf-028": {
+    "choices": [
+      "Mixing hypertonic saline indiscriminately with another nebulized product can alter compatibility and delivery.",
+      "Administering hypertonic saline separately from Pulmozyme",
+      "Checking the prescribed concentration and recommended delivery system",
+      "Assessing tolerance and using a prescribed bronchodilator first"
+    ],
+    "rationale": "Indiscriminate admixture can compromise delivery and is not authorized by product instructions. The other choices are appropriate administration safeguards."
+  },
+  "cf-029": {
+    "choices": [
+      "Dornase alfa cleaves extracellular DNA and reduces the viscosity of neutrophil-rich CF sputum.",
+      "Dornase alfa opens narrowed airways by stimulating beta-2 receptors.",
+      "Dornase alfa supplies pancreatic lipase for digestion.",
+      "Dornase alfa directly kills all bacteria in CF sputum."
+    ],
+    "rationale": "Dornase is a DNase that cleaves extracellular DNA and reduces sputum viscosity. It does not provide bronchodilation, digestive lipase, or direct broad antibacterial killing."
+  },
+  "cf-030": {
+    "choices": [
+      "Administer through a recommended nebulizer on the prescribed schedule; do not dilute or mix Pulmozyme with other nebulized drugs.",
+      "Dilute Pulmozyme with saline whenever its ampule volume seems small.",
+      "Mix Pulmozyme with inhaled antibiotic to shorten treatment time.",
+      "Use any nebulizer because all systems deliver the same dose."
+    ],
+    "rationale": "Use a recommended nebulizer and the prescribed schedule. The Pulmozyme label prohibits dilution or mixing with other nebulized drugs; no generic compatibility exception or all-device equivalence is provided."
+  },
+  "cf-031": {
+    "choices": [
+      "Review dose, storage, nebulizer, timing, voice change, pharyngitis, adherence, lung response, and sequencing.",
+      "Review the ampule volume alone and omit dose, device, and storage.",
+      "Review cough improvement alone and omit throat or voice symptoms.",
+      "Review refrigeration alone and omit mixing, dose completion, and the nebulizer."
+    ],
+    "rationale": "Dose, compatible equipment, storage, timing, adverse effects, and response are all relevant. Pulmozyme is 2.5 mg per 2.5 mL ampule, must not be mixed, and requires correct cold-chain and device handling."
+  },
+  "cf-032": {
+    "choices": [
+      "Calling dornase a bronchodilator or antibiotic misrepresents its target and expected response.",
+      "Identifying dornase as a DNA-cleaving mucolytic",
+      "Distinguishing dornase from a bronchodilator and an antibiotic",
+      "Reviewing sputum clearance and pulmonary response to prescribed therapy"
+    ],
+    "rationale": "Calling dornase a bronchodilator or antibiotic misstates its mechanism. The other choices correctly identify or assess the mucolytic role."
+  },
+  "cf-033": {
+    "choices": [
+      "A deliberate sequence prepares the airway, mobilizes secretions, and preserves inhaled-antibiotic deposition.",
+      "Treatment sequence is irrelevant because all nebulized drugs act identically.",
+      "Inhaled antibiotic should always be the first step before secretion clearance.",
+      "All inhaled medicines should be combined in one cup to make a single step."
+    ],
+    "rationale": "The sequence prepares and thins secretions, supports clearance, and then antibiotic delivery. Drugs have distinct roles and product instructions; a common sequence is not permission to mix them."
+  },
+  "cf-034": {
+    "choices": [
+      "Follow the individualized center plan: a prescribed bronchodilator, hypertonic saline, dornase, physical clearance, then inhaled antibiotic is the book sequence.",
+      "Give the inhaled antibiotic first, then perform physical clearance and mucus-thinning therapy.",
+      "Combine saline, dornase, and antibiotic in one nebulizer cup.",
+      "Use a bronchodilator only after finishing all secretion-thinning treatments."
+    ],
+    "rationale": "The book and current patient guidance place mucus thinning before physical clearance and antibiotic afterward. Follow center and product instructions; optimal universal sequencing is not established."
+  },
+  "cf-035": {
+    "choices": [
+      "Review every product, purpose, timing, compatibility, device, treatment duration, cleaning, burden, and patient preference.",
+      "Review the number of products alone and omit timing, compatibility, and equipment.",
+      "Review the antibiotic dose alone and omit the preceding clearance steps.",
+      "Review prescribed timing alone and omit burden and actual implementation."
+    ],
+    "rationale": "A useful sequence review covers every product, its role, timing, compatibility, device, and practical implementation. Product count or antibiotic dose alone omits how delivery occurs."
+  },
+  "cf-036": {
+    "choices": [
+      "Delivering inhaled antibiotic before clearing obstructing secretions can reduce deposition to target airways.",
+      "Following the center plan for thinning and physically clearing secretions before antibiotic",
+      "Checking separate nebulizer administration and product instructions",
+      "Reviewing whether the treatment sequence is feasible for the patient"
+    ],
+    "rationale": "The hazard is giving antibiotic before clearing obstructing secretions. The other choices support planned delivery and implementation; the best exact timing remains individualized."
+  },
+  "cf-037": {
+    "choices": [
+      "Nebulizer cleaning, disinfection, drying, storage, and replacement are part of medication safety.",
+      "Correct dosing eliminates the need for nebulizer disinfection.",
+      "Wiping only the outside of the cup is equivalent to cleaning and disinfecting its parts.",
+      "Sharing a cleaned nebulizer is the recommended routine for people with CF in one home."
+    ],
+    "rationale": "The device can carry organisms into the airway and influence dose delivery. Clean and disinfect compatible parts, dry them, and give each person their own equipment; a correct prescription alone is insufficient."
+  },
+  "cf-038": {
+    "choices": [
+      "Observe the full equipment workflow and align it with manufacturer and CF-center infection-prevention instructions.",
+      "Apply one generic disinfection method to every device, including all mesh aerosol heads.",
+      "Skip manufacturer instructions if the patient has used the device before.",
+      "Increase drug dose whenever mist production seems poor without checking the equipment."
+    ],
+    "rationale": "Observe the complete workflow and use manufacturer-compatible infection prevention. Specific devices can prohibit generic methods, and a failing system should be assessed rather than bypassed by dose escalation."
+  },
+  "cf-039": {
+    "choices": [
+      "Review hand hygiene, parts, water source, wash, disinfection, drying, storage, replacement, sharing, and electrical function.",
+      "Review the brand name alone and omit parts, cleaning, drying, and replacement.",
+      "Review cleaning alone and omit disinfection and dry storage.",
+      "Review electrical function alone and omit medication preparation and hygiene."
+    ],
+    "rationale": "Hand hygiene, compatible parts, water, cleaning, disinfection, drying, storage, and function all contribute to safe delivery. Each narrower review misses an important part of the process."
+  },
+  "cf-040": {
+    "choices": [
+      "A correctly prescribed medicine delivered through contaminated or failing equipment can cause infection or underdosing.",
+      "Cleaning and disinfecting compatible parts after use",
+      "Using sterile water to rinse after cold disinfection",
+      "Allowing compatible nebulizer parts to air dry before storage"
+    ],
+    "rationale": "Contamination or equipment failure can undermine a correct prescription. The other choices are appropriate care steps when performed according to the exact device instructions."
+  },
+  "cf-057": {
+    "choices": [
+      "A CF exacerbation is a clinically important change from baseline informed by symptoms, lung function, oxygenation, and prior microbiology.",
+      "Every CF exacerbation requires fever before treatment is considered.",
+      "One population FEV1 threshold diagnoses every exacerbation without clinical context.",
+      "One susceptibility report fully predicts clinical response regardless of previous history."
+    ],
+    "rationale": "Exacerbation recognition combines change from baseline, symptoms, physiology, and microbiology. Fever is not required and neither a universal threshold nor an isolated susceptibility result captures the whole clinical state."
+  },
+  "cf-058": {
+    "choices": [
+      "Choose route and antibiotics from severity and longitudinal culture data, intensify clearance, and measure recovery toward baseline.",
+      "Use an identical oral antibiotic for every decline without reviewing prior organisms.",
+      "Manage IV treatment at home regardless of available monitoring and support.",
+      "Stop all chronic pulmonary therapy and clearance during every exacerbation."
+    ],
+    "rationale": "Severity, microbiology, previous response, treatment delivery, and monitoring determine the plan. Increase clearance when safe and continue appropriate chronic therapy; home IV care needs hospital-equivalent resources and support."
+  },
+  "cf-059": {
+    "choices": [
+      "Review cough, sputum, dyspnea, fever, fatigue, appetite, weight, hemoptysis, FEV1, oxygen, cultures, allergies, prior response, and organ function.",
+      "Review culture results alone and omit symptoms, lung function, and oxygenation.",
+      "Review fever alone and rule out exacerbation if it is absent.",
+      "Review the antibiotic name alone and omit allergy, organ function, and prior response."
+    ],
+    "rationale": "Integrate respiratory and systemic symptoms, physiology, microbiology, and treatment-safety context. Culture-only, fever-only, or prescription-only assessments omit clinically relevant evidence."
+  },
+  "cf-060": {
+    "choices": [
+      "Using susceptibility data without prior clinical response or airway history can oversimplify biofilm and polymicrobial disease.",
+      "Integrating current susceptibility with prior organisms and clinical response",
+      "Reviewing treatment implementation when response is incomplete",
+      "Considering clinical severity alongside microbiology when choosing the care setting"
+    ],
+    "rationale": "Susceptibility alone cannot fully describe a complex CF airway or predict response. The other choices appropriately incorporate clinical history, implementation, and severity."
+  },
+  "cf-061": {
+    "choices": [
+      "CF pulmonary change and recovery are interpreted against the patient's stable symptoms, spirometry, oxygenation, weight, and treatment implementation.",
+      "A value within a broad population range proves recovery despite a large personal decline.",
+      "Recovery is complete as soon as cough begins to improve.",
+      "Recovery assessment is determined only by the current sputum culture."
+    ],
+    "rationale": "Stable personal function and multidomain response provide the comparison for decline and recovery. A population range, early symptom change, or culture alone does not establish return toward baseline."
+  },
+  "cf-062": {
+    "choices": [
+      "Document baseline before decline and reassess all affected domains after treatment rather than relying on fever or one FEV1 value.",
+      "End assessment when fever resolves even if oxygen and spirometry remain below baseline.",
+      "Assess only a single FEV1 value without its prior trajectory or test quality.",
+      "Wait for another exacerbation before reviewing incomplete recovery."
+    ],
+    "rationale": "Document baseline and assess affected domains after treatment. Fever resolution, a single measurement, or deferring review can miss persistent physiologic loss."
+  },
+  "cf-063": {
+    "choices": [
+      "Review symptom trend, FEV1, oxygen, weight, exercise, sleep, microbiology, imaging, treatment delivery, toxicity, and return toward prior function.",
+      "Review one FEV1 value alone and omit symptoms, oxygen, and weight.",
+      "Review symptoms alone and omit drug toxicity and actual treatment delivery.",
+      "Review microbiology alone and omit prior function and the recovery trajectory."
+    ],
+    "rationale": "Recovery combines symptoms, physiology, nutrition, delivery, safety, and trajectory. Each limited alternative misses a domain that can explain incomplete improvement."
+  },
+  "cf-064": {
+    "choices": [
+      "Calling partial symptom improvement full recovery can miss persistent physiologic loss and a need for further evaluation.",
+      "Reassessing spirometry and oxygenation against stable values",
+      "Reviewing delivery, adherence, and complications when recovery is incomplete",
+      "Arranging follow-up after the antibiotic course"
+    ],
+    "rationale": "Partial symptom improvement is not proof of full recovery. The other choices support reassessment and recognition of persistent impairment."
+  }
+};
+const diagnosisAirwayPulmonaryCases = [
+  {
+    "id": "cf-sweat-intermediate-42",
+    "question": "A screen-positive infant has an adequate sweat chloride result of 42 mmol/L. What is the best interpretation and next step?",
+    "choices": [
+      "An intermediate result requiring repeat sweat testing and integrated CF-center genetic and clinical evaluation",
+      "A normal result that ends all diagnostic follow-up",
+      "A definitive CF diagnosis based on sweat chloride alone",
+      "An uninterpretable result solely because chloride is below 60 mmol/L"
+    ],
+    "answer": 0,
+    "rationale": "42 mmol/L falls in the 30-59 intermediate range. Repeat testing and integrated evaluation are needed; it is neither a definitive diagnosis nor a reason to dismiss CF. Adequate collection makes the result interpretable.",
+    "reviewHref": "#cf-biology-diagnosis"
+  },
+  {
+    "id": "cf-crms-sweat-followup",
+    "question": "A well infant has an established CRMS/CFSPID designation. Which planned follow-up matches the 2024 CF Foundation guidance?",
+    "choices": [
+      "At least annual CF-clinician follow-up, with sweat testing at 6 months and annually at least through age 8",
+      "No reassessment unless severe lung disease develops",
+      "Routine CFTR modulator treatment without reclassification or eligibility assessment",
+      "Routine daily airway clearance for every asymptomatic infant with this designation"
+    ],
+    "answer": 0,
+    "rationale": "CRMS/CFSPID requires surveillance while avoiding routine treatment for established CF. Sweat testing at 6 months and annually at least through age 8 accompanies annual specialist follow-up; routine modulators and routine airway clearance are not recommended solely for this designation.",
+    "reviewHref": "#cf-biology-diagnosis"
+  },
+  {
+    "id": "cf-dornase-single-ampule",
+    "question": "Pulmozyme is prescribed at the usual 2.5 mg once-daily dose. The ampule contains 2.5 mg in 2.5 mL. Which preparation is correct?",
+    "choices": [
+      "Use the full 2.5 mL ampule through a recommended nebulizer without dilution or mixing",
+      "Use 1 mL because every liquid dose has a 1 mL volume",
+      "Add saline to make 5 mL because dilution is routinely required",
+      "Use half the ampule and store the opened remainder for tomorrow"
+    ],
+    "answer": 0,
+    "rationale": "At 1 mg/mL, 2.5 mg requires 2.5 mL: the full single-dose ampule. Do not dilute or mix it. Once opened, use the full contents or discard the remainder.",
+    "reviewHref": "#cf-airway-clearance"
+  },
+  {
+    "id": "cf-dornase-cumulative-excursion",
+    "question": "Unopened Pulmozyme ampules remained in their protective foil at 24 degrees C for 32 hours, were refrigerated, then spent another 30 hours at 24 degrees C. What follows current US labeling?",
+    "choices": [
+      "Do not use: the cumulative room-temperature exposure is 62 hours, above the 60-hour limit",
+      "Use: refrigeration resets the excursion clock, so only 30 hours count",
+      "Use: only the first excursion counts, so exposure is 32 hours",
+      "Use: unopened ampules can be kept indefinitely at 24 degrees C"
+    ],
+    "answer": 0,
+    "rationale": "The label limits cumulative exposure at 22-28 degrees C to 60 hours. 32 + 30 = 62 hours; refrigeration does not reset the total. Unopened foil does not authorize indefinite room-temperature storage.",
+    "reviewHref": "#cf-airway-clearance"
+  },
+  {
+    "id": "cf-fev1-baseline-change",
+    "question": "A person with CF has stable FEV1 of 88% predicted and now measures 74% predicted. Which description of the decline is arithmetically correct?",
+    "choices": [
+      "14 percentage points, approximately 15.9% relative to the baseline value",
+      "14% relative decline and 15.9 percentage points",
+      "A 74-percentage-point decline from baseline",
+      "No decline because both results are percentages"
+    ],
+    "answer": 0,
+    "rationale": "88 - 74 = 14 percentage points. Dividing 14 by the baseline 88 and multiplying by 100 gives approximately 15.9%. This calculation describes change; clinical context and test quality remain necessary.",
+    "reviewHref": "#cf-pulmonary-assessment"
+  }
+];
+export const cysticFibrosisQuestionBank = [...originalCysticFibrosisQuestionBank.map((question) => ({ ...question, ...(sourceReviewedEnzymeSafetyQuestions[question.id] || {}), ...(reviewedNutritionSystemicQuestions[question.id] || {}), ...(reviewedDiagnosisAirwayPulmonaryQuestions[question.id] || {}) })), ...nutritionSystemicCases, ...diagnosisAirwayPulmonaryCases];
