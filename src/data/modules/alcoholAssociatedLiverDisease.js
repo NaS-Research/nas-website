@@ -963,3 +963,78 @@ alcoholAssociatedLiverDiseaseModule.references.push(...[
     "href": "https://www.niaaa.nih.gov/sites/default/files/publications/treatment_pub.pdf"
   }
 ] );
+
+
+// Source-reconciled transplant evaluation and ongoing AUD care.
+const verifiedAldTransplantLesson = {
+  "metadata": {
+    "summary": "Evaluate transplant need early, use a multidisciplinary assessment, and continue AUD care after transplantation.",
+    "concepts": [
+      "Early referral",
+      "Selective early transplant",
+      "Psychosocial assessment",
+      "Ongoing AUD care",
+      "Equitable access"
+    ],
+    "application": "Refer when transplant indications arise, assess individualized benefit and risk, and build a feasible recovery and care plan.",
+    "keyPoints": [
+      "A fixed abstinence interval alone does not establish or exclude candidacy.",
+      "Early transplant for severe AH requires careful selection.",
+      "Risk tools support assessment; they do not decide eligibility alone.",
+      "AUD treatment and practical support remain necessary after transplant."
+    ]
+  },
+  "bodies": [
+    {
+      "heading": "Move beyond six months alone",
+      "body": "Record the alcohol-use and abstinence history, but do not make a fixed six-month interval the sole gate to transplant evaluation or listing. AASLD/AST recommends early referral for patients with ALD who have transplant indications so assessment and addiction treatment can begin. Waiting for a calendar threshold can allow a patient with severe liver disease to deteriorate; reaching that threshold alone does not establish candidacy."
+    },
+    {
+      "heading": "Consider early transplant selectively",
+      "body": "For severe alcohol-associated hepatitis with medical nonresponse and a high risk of death, ACG supports considering early liver transplantation in highly selected patients under regional and institutional protocols. This is a conditional recommendation with low-quality evidence. Assess medical benefit, competing illness, and psychosocial readiness through the transplant team; severe AH or a failed treatment course does not automatically establish eligibility."
+    },
+    {
+      "heading": "Use multidisciplinary evidence",
+      "body": "Include transplant clinicians, a trained psychosocial assessor, and addiction expertise. Review treatment and recurrence history, insight, willingness to engage, other substance use, mental health, coping, adherence, and the ability to meet care needs. Identify treatment needs and obtain relevant collateral information. A psychiatric diagnosis alone is not an absolute contraindication; assess control, treatment response, and effects on safe care rather than applying a diagnostic label as an automatic exclusion."
+    },
+    {
+      "heading": "Interpret risk tools as adjuncts",
+      "body": "Structured tools can organize a psychosocial assessment, but they do not replace clinical evaluation or independently determine eligibility. ACG notes that many alcohol-recurrence scores are better at identifying lower-risk patients than confirming who will return to alcohol use. An elevated score or one risk factor is not certainty of recurrence. Use the findings to inform team discussion and a treatment plan, and reassess while the patient is waiting."
+    },
+    {
+      "heading": "Plan post-transplant recovery",
+      "body": "Transplantation treats liver failure but does not cure AUD. Continue coordinated liver, addiction, and behavioral care, with support for sustained abstinence. Explain how self-report and alcohol biomarkers will be used and respond to detected use with timely intervention. Medication may be considered individually with specialist review of organ function and interactions. The ACG 2024 guideline identifies limited transplant-specific medication evidence; effectiveness in general AUD populations does not establish the same benefit in transplant recipients."
+    },
+    {
+      "heading": "Protect equity",
+      "body": "Explain documented center criteria and apply them consistently. Assess practical needs such as transportation, medication management, and postoperative assistance, then work to reduce social and financial barriers. AASLD/AST calls for adequate caregiver support and strategies to address barriers. The OPTN Ethics Committee’s 2021 white paper cautions against making access depend on relationships alone; it is ethical guidance, not binding OPTN policy. Keep decisions grounded in expected medical benefit and individualized risk, without moral judgment about the cause of disease."
+    }
+  ],
+  "check": {
+    "question": "A patient with ALD has a transplant indication but has not reached six months of abstinence. Which referral plan best follows current AASLD/AST guidance?",
+    "choices": [
+      "Refer early for transplant and psychosocial evaluation while establishing addiction treatment goals.",
+      "Withhold referral solely until a six-month interval is reached.",
+      "Promise listing because a transplant indication is present.",
+      "Use abstinence duration as the only measure of psychosocial readiness."
+    ],
+    "rationale": "AASLD/AST recommends early referral when ALD has transplant indications and rejects abstinence length as a listing-exclusion criterion. Referral permits individualized evaluation and treatment planning; it does not promise listing."
+  }
+};
+for (const lesson of alcoholAssociatedLiverDiseaseModule.submodules) {
+  if (lesson.slug === "transplant-ethics") {
+    Object.assign(lesson, verifiedAldTransplantLesson.metadata);
+    lesson.lesson = verifiedAldTransplantLesson.bodies;
+    Object.assign(lesson.check, verifiedAldTransplantLesson.check);
+  }
+}
+alcoholAssociatedLiverDiseaseModule.references.push(...[
+  {
+    "label": "AASLD/AST primary adult liver-transplant candidate-evaluation guideline (2026; online 2025): referral and psychosocial assessment.",
+    "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13070310/"
+  },
+  {
+    "label": "OPTN Ethics Committee white paper (2021): equitable candidacy assessment; informational guidance, not OPTN policy.",
+    "href": "https://www.hrsa.gov/optn/professionals/resources/ethical-considerations/general-considerations-in-assessment-for-transplant-candidacy"
+  }
+] );

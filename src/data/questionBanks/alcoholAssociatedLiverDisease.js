@@ -1214,3 +1214,91 @@ const verifiedAldRecoveryQuestions = {
 for (const item of alcoholAssociatedLiverDiseaseQuestionBank) {
   if (verifiedAldRecoveryQuestions[item.id]) Object.assign(item, verifiedAldRecoveryQuestions[item.id]);
 }
+
+
+// Distinct transplant cases retain stable IDs, keys and anchors.
+const verifiedAldTransplantQuestions = {
+  "alcohol-associated-liver-disease-109": {
+    "question": "A patient with decompensated ALD meets indications for transplant evaluation but has only a short period of abstinence. Which action is appropriate?",
+    "choices": [
+      "Refer for early transplant evaluation and addiction treatment planning.",
+      "Delay referral solely until six months of abstinence have elapsed.",
+      "List the patient immediately without a psychosocial evaluation.",
+      "End liver care because abstinence has been brief."
+    ],
+    "rationale": "Early referral gives the team time to assess medical and psychosocial needs and begin addiction treatment. A fixed abstinence interval should not be an exclusion rule, and referral does not guarantee listing."
+  },
+  "alcohol-associated-liver-disease-110": {
+    "question": "Severe AH has not responded to medical management and the patient has a high risk of death. What does ACG recommend considering?",
+    "choices": [
+      "Early liver transplantation for highly selected patients under regional and institutional protocols.",
+      "Automatic transplantation for every patient with severe AH.",
+      "Using a failed treatment course as the only transplant-selection criterion.",
+      "Withholding transplant evaluation in every case of recent alcohol use."
+    ],
+    "rationale": "ACG conditionally supports early transplantation in carefully selected severe-AH nonresponders with high mortality risk. The recommendation has low-quality evidence and requires protocol-based selection rather than automatic eligibility."
+  },
+  "alcohol-associated-liver-disease-111": {
+    "question": "A psychosocial alcohol-recurrence score is elevated during transplant evaluation. Which interpretation is most appropriate?",
+    "choices": [
+      "Use it as an adjunct to the team assessment and address identified treatment needs.",
+      "Treat it as proof that alcohol recurrence is inevitable.",
+      "Let the score replace the clinical interview and collateral history.",
+      "Use the score alone to determine transplant eligibility."
+    ],
+    "rationale": "Structured tools help organize information. Many recurrence scores are better at identifying low risk than confirming future recurrence, so an elevated score does not establish certainty or independently decide candidacy."
+  },
+  "alcohol-associated-liver-disease-112": {
+    "question": "A transplant candidate has a treated psychiatric disorder with stable symptoms. Which evaluation policy is inappropriate?",
+    "choices": [
+      "Exclude the patient automatically solely because of the psychiatric diagnosis.",
+      "Assess current mental health stability and ability to follow the care plan.",
+      "Arrange continued mental health treatment when needed.",
+      "Review treatment response and practical postoperative support."
+    ],
+    "rationale": "AASLD/AST states that a psychiatric diagnosis alone is not an absolute contraindication. Individual evaluation considers control, treatment response, adherence, and support; the diagnosis is not an automatic exclusion."
+  },
+  "alcohol-associated-liver-disease-113": {
+    "question": "A patient says that successful liver transplantation means AUD treatment is no longer needed. Which response is accurate?",
+    "choices": [
+      "Transplant treats liver failure; AUD still requires ongoing treatment and follow-up.",
+      "A functioning graft permanently removes the risk of recurrent alcohol use.",
+      "Alcohol biomarkers are no longer relevant after transplantation.",
+      "Behavioral care must stop once the graft is functioning."
+    ],
+    "rationale": "Transplantation does not cure AUD. Integrated addiction and liver care with monitoring supports sustained abstinence and detection of recurrent use."
+  },
+  "alcohol-associated-liver-disease-114": {
+    "question": "Which post-transplant alcohol-monitoring plan is most appropriate?",
+    "choices": [
+      "Explain the use of self-report and biomarkers, then offer timely intervention when alcohol use is detected.",
+      "Use testing secretly without explaining its purpose to the patient.",
+      "Ignore reported drinking whenever a single biomarker result is negative.",
+      "Wait for advanced graft injury before offering addiction care."
+    ],
+    "rationale": "ACG supports monitoring to detect alcohol use early and provide intervention. Transparent use of biomarkers supplements clinical inquiry; one result does not replace the wider assessment."
+  },
+  "alcohol-associated-liver-disease-115": {
+    "question": "An AUD medication is effective in general treatment populations. What follows for a liver-transplant recipient?",
+    "choices": [
+      "Consider it individually with specialist review; general AUD evidence does not establish transplant-specific benefit.",
+      "Assume identical benefit and safety in all transplant recipients.",
+      "Prescribe it without considering kidney function or other medications.",
+      "Use it as a substitute for all behavioral care and transplant follow-up."
+    ],
+    "rationale": "The ACG 2024 guideline identifies limited transplant-specific medication evidence. Treatment requires an individual review of organ function and interactions alongside ongoing addiction and transplant care."
+  },
+  "alcohol-associated-liver-disease-116": {
+    "question": "A candidate lacks a traditional family caregiver and has transport and medication-management barriers. What best supports an equitable evaluation?",
+    "choices": [
+      "Assess the actual postoperative care needs and work with the patient to develop feasible assistance.",
+      "Deny evaluation solely because the patient is unmarried.",
+      "Assume the absence of relatives proves future nonadherence.",
+      "Ignore essential postoperative care needs because equity requires no assessment."
+    ],
+    "rationale": "AASLD/AST requires practical caregiver support and efforts to mitigate social and financial barriers. OPTN ethical guidance cautions against relationship status alone determining access. Address functional care needs rather than using a family label as a proxy."
+  }
+};
+for (const item of alcoholAssociatedLiverDiseaseQuestionBank) {
+  if (verifiedAldTransplantQuestions[item.id]) Object.assign(item, verifiedAldTransplantQuestions[item.id]);
+}
