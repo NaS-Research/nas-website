@@ -1346,4 +1346,158 @@ const modulatorCases = [
     "reviewHref": "#cftr-modulators"
   }
 ];
-export const cysticFibrosisQuestionBank = [...originalCysticFibrosisQuestionBank.map((question) => ({ ...question, ...(sourceReviewedEnzymeSafetyQuestions[question.id] || {}), ...(reviewedNutritionSystemicQuestions[question.id] || {}), ...(reviewedDiagnosisAirwayPulmonaryQuestions[question.id] || {}), ...(reviewedInfectionQuestions[question.id] || {}), ...(reviewedModulatorQuestions[question.id] || {}) })), ...nutritionSystemicCases, ...diagnosisAirwayPulmonaryCases, ...infectionCases, ...modulatorCases];
+const reviewedLongitudinalQuestions = {
+  "cf-113": {
+    "choices": [
+      "Fertility, contraception, pregnancy, lactation, genetic counseling, and mental health belong in routine CF care rather than crisis-only conversations.",
+      "Discuss fertility only after an unplanned pregnancy and mood only after hospitalization.",
+      "Assume CF prevents pregnancy and therefore removes the need for contraceptive counseling.",
+      "Treat a modulator response as a reason to stop reproductive and mental health review."
+    ],
+    "rationale": "Routine anticipatory review supports informed decisions and coordinated care. Waiting for pregnancy or hospitalization loses preparation time; CF does not ensure infertility; improved lung function does not remove reproductive or mental health needs."
+  },
+  "cf-114": {
+    "choices": [
+      "Discuss reproductive goals and emotional health proactively, then coordinate medications and support with the CF and specialty teams.",
+      "Wait for a positive pregnancy test before reconciling medication exposure.",
+      "Screen for depression only when the patient volunteers a crisis.",
+      "Stop every CF medication automatically when pregnancy is being considered."
+    ],
+    "rationale": "Proactive discussion connects personal goals, medication assessment, and support. Preconception review should precede a positive test; annual screening begins at age 12 rather than depending on a crisis; pregnancy requires an individual product and clinical benefit-risk plan, not automatic discontinuation of every therapy."
+  },
+  "cf-115": {
+    "choices": [
+      "Review fertility, contraception, pregnancy, lactation, genetics, medication exposure, interactions, mood, anxiety, sleep, support, and patient goals.",
+      "Review fertility alone and omit medication exposure and mental health.",
+      "Review mood alone and assume contraception is unnecessary in CF.",
+      "Review prescriptions alone and omit pregnancy, lactation, support, and patient goals."
+    ],
+    "rationale": "The complete assessment addresses reproduction, exposures, emotional health, implementation, and preferences. Fertility-only review misses interactions and mental health; mood-only review omits pregnancy prevention; a prescription list alone cannot establish reproductive risks or practical support."
+  },
+  "cf-116": {
+    "choices": [
+      "Waiting for pregnancy or a mental health crisis can remove time to optimize therapy, counseling, and support.",
+      "Discussing contraception before a pregnancy occurs.",
+      "Obtaining annual PHQ-9 and GAD-7 screening from age 12.",
+      "Arranging CF and obstetric medication review before conception."
+    ],
+    "rationale": "The hazard is postponing planning until pregnancy or crisis. Contraception discussion, age-appropriate annual screening, and preconception medication review are safeguards that preserve time for informed choices and support."
+  },
+  "cf-117": {
+    "choices": [
+      "Advanced-lung-disease support and transplant referral should begin from trajectory and complications while the patient still has physiologic reserve.",
+      "Refer only after terminal failure because earlier evaluation commits the person to surgery.",
+      "Use the adult FEV1 threshold unchanged for every child.",
+      "Assume improved modulator response permanently removes all transplant indications."
+    ],
+    "rationale": "Trajectory and complications support timely advanced care and referral. Referral does not commit the patient to surgery; under-18 thresholds differ from adult thresholds; modulator response requires reassessment but cannot guarantee that transplantation will never be indicated."
+  },
+  "cf-118": {
+    "choices": [
+      "Coordinate oxygen, ventilation, pulmonary rehabilitation, complication planning, goals of care, and timely transplant evaluation.",
+      "Start oxygen and BiPAP for every patient solely because FEV1 is low.",
+      "Defer rehabilitation and goals-of-care discussion until listing is complete.",
+      "Treat palliative care as a requirement to stop CF treatment and transplant evaluation."
+    ],
+    "rationale": "Coordinate support according to documented physiology, complications, and patient goals. Oxygen addresses hypoxemia and nocturnal NIV may address chronic hypercarbia, with restrictions such as active pneumothorax; rehabilitation and planning need not wait for listing; palliative care can accompany usual treatment and transplant planning."
+  },
+  "cf-119": {
+    "choices": [
+      "Review FEV1 trajectory, exacerbations, oxygen, hypercapnia, ventilation, nutrition, function, hemoptysis, pneumothorax, pulmonary hypertension, contraindications, and goals.",
+      "Review one current FEV1 value and omit trajectory and complications.",
+      "Review oxygen saturation alone and omit carbon dioxide, function, and nutritional status.",
+      "Review transplant barriers alone and assume any unresolved barrier prohibits referral."
+    ],
+    "rationale": "Multidomain review identifies severity and supports shared referral decisions. One FEV1 value misses decline and complications; oxygen alone misses hypercarbia and reserve; barriers need optimization but unresolved barriers do not automatically prohibit referral."
+  },
+  "cf-120": {
+    "choices": [
+      "Waiting for terminal respiratory failure before transplant referral can leave inadequate time for evaluation, optimization, and listing.",
+      "Beginning transplant discussion when FEV1 falls below 50% predicted.",
+      "Evaluating survival markers even when FEV1 has not reached 30% predicted.",
+      "Addressing modifiable barriers while referring to a transplant center."
+    ],
+    "rationale": "Waiting for terminal failure can lose time for evaluation and optimization. Discussion below 50%, assessment of survival markers beyond FEV1, and concurrent barrier reduction are appropriate safeguards; referral is distinct from listing and surgery."
+  }
+};
+const longitudinalCases = [
+  {
+    "id": "cf-clinic-separation-negative-cultures",
+    "question": "Two people with CF from different households attend clinic and both have recent negative respiratory cultures. Which infection-prevention approach applies?",
+    "choices": [
+      "Maintain at least six feet of separation and use the clinic mask and contact-precaution plan",
+      "Permit close contact because both cultures are negative",
+      "Separate them only if both have the same cultured organism",
+      "Apply the same-household exception because they attend the same clinic"
+    ],
+    "answer": 0,
+    "rationale": "The separation rule applies regardless of culture results. Negative cultures do not remove precautions, matching organisms is not a condition for separation, and sharing a clinic does not make two people members of the same household.",
+    "reviewHref": "#cf-longitudinal-advanced-care"
+  },
+  {
+    "id": "cf-annual-adolescent-mental-screen",
+    "question": "A 13-year-old with CF reports no current emotional concerns. Which screening plan follows CF mental health guidance?",
+    "choices": [
+      "Annual PHQ-9 and GAD-7 screening with a pathway for clinical assessment and treatment",
+      "Wait until age 18 to screen",
+      "Screen only if a pulmonary exacerbation requires admission",
+      "Diagnose depression automatically from any nonzero screening score"
+    ],
+    "answer": 0,
+    "rationale": "Annual screening begins at age 12 even without a volunteered concern. Waiting until 18 or hospitalization misses that recommendation. Screening findings require clinical assessment; a nonzero score is not itself a depression diagnosis.",
+    "reviewHref": "#cf-longitudinal-advanced-care"
+  },
+  {
+    "id": "cf-massive-hemoptysis-therapy",
+    "question": "A patient with CF coughs up approximately 300 mL of blood. While arranging urgent hospital care, which therapy modification follows CF complication guidance?",
+    "choices": [
+      "Stop airway clearance and inhaled hypertonic saline, and withhold BiPAP",
+      "Continue all airway clearance because bleeding always improves with secretion movement",
+      "Stop hypertonic saline only and continue BiPAP unchanged",
+      "Manage as scant hemoptysis because the threshold for massive bleeding is 500 mL"
+    ],
+    "answer": 0,
+    "rationale": "300 mL exceeds the greater-than-240-mL massive threshold and requires admission. The guideline stops airway clearance and hypertonic saline and withholds BiPAP. Continuing clearance or BiPAP misses these restrictions, and 500 mL is not the stated threshold. Stabilization and specialist decisions remain urgent.",
+    "reviewHref": "#cf-longitudinal-advanced-care"
+  },
+  {
+    "id": "cf-active-pneumothorax-airway-plan",
+    "question": "A patient with CF has an active pneumothorax and an existing airway regimen including BiPAP, positive expiratory pressure, and nebulized medicines. Which conclusion follows CF complication guidance?",
+    "choices": [
+      "Withhold BiPAP while the pneumothorax persists and avoid positive expiratory pressure; aerosols need not stop solely because of pneumothorax",
+      "Continue BiPAP but stop all nebulized medicines automatically",
+      "Continue positive expiratory pressure because only hemoptysis changes airway therapy",
+      "Treat every airway method and aerosol as subject to the same mandatory stopping rule"
+    ],
+    "answer": 0,
+    "rationale": "Active pneumothorax requires withholding BiPAP and avoiding positive expiratory pressure or intrapulmonary percussive ventilation. The guideline does not require stopping aerosols solely for pneumothorax and lacks consensus on every other clearance method. The alternatives invert those restrictions, ignore pressure-related restrictions, or invent a universal stopping rule.",
+    "reviewHref": "#cf-longitudinal-advanced-care"
+  },
+  {
+    "id": "cf-adult-transplant-exacerbation-trigger",
+    "question": "An adult with CF has FEV1 of 37% predicted and three exacerbations requiring IV antibiotics in the past year. Which referral conclusion follows CF guidance?",
+    "choices": [
+      "Refer for lung transplant evaluation while continuing optimization and shared planning",
+      "Wait until FEV1 is below 30% because exacerbations do not affect referral",
+      "Wait for terminal respiratory failure to prove eligibility",
+      "Refer only if every modifiable barrier has already resolved"
+    ],
+    "answer": 0,
+    "rationale": "FEV1 below 40% with more than two IV-treated exacerbations per year meets a referral recommendation. Waiting for below 30% ignores this trigger, terminal failure risks losing evaluation time, and unresolved modifiable barriers do not automatically prevent referral. Evaluation does not itself mean listing or immediate transplantation.",
+    "reviewHref": "#cf-longitudinal-advanced-care"
+  },
+  {
+    "id": "cf-child-transplant-fev1-threshold",
+    "question": "A 16-year-old with CF has persistent FEV1 of 38% predicted. No additional survival marker has been identified. Which age-specific transplant referral conclusion applies?",
+    "choices": [
+      "Refer no later than FEV1 below 40% predicted for a person under 18",
+      "Apply the adult below-30% threshold and defer referral",
+      "Require an additional survival marker before any referral below 40% in a child",
+      "Defer discussion because FEV1 is still above 30%"
+    ],
+    "answer": 0,
+    "rationale": "For patients under 18, referral is recommended no later than FEV1 below 40% even without an additional marker. The adult below-30% threshold is not the pediatric rule, an extra survival marker is not required at this threshold, and transplant discussion should already occur below 50%.",
+    "reviewHref": "#cf-longitudinal-advanced-care"
+  }
+];
+export const cysticFibrosisQuestionBank = [...originalCysticFibrosisQuestionBank.map((question) => ({ ...question, ...(sourceReviewedEnzymeSafetyQuestions[question.id] || {}), ...(reviewedNutritionSystemicQuestions[question.id] || {}), ...(reviewedDiagnosisAirwayPulmonaryQuestions[question.id] || {}), ...(reviewedInfectionQuestions[question.id] || {}), ...(reviewedModulatorQuestions[question.id] || {}), ...(reviewedLongitudinalQuestions[question.id] || {}) })), ...nutritionSystemicCases, ...diagnosisAirwayPulmonaryCases, ...infectionCases, ...modulatorCases, ...longitudinalCases];

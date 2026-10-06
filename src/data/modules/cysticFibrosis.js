@@ -480,22 +480,86 @@ export const cysticFibrosisModule = {
       }
     },
     {
-      slug:"cf-longitudinal-advanced-care",title:"Longitudinal Safety, Reproductive Health, and Advanced Disease",visual:"cf-longitudinal",
-      summary:"CF care remains multidisciplinary across changing lung function, treatment burden, mental health, fertility, pregnancy, hemoptysis, pneumothorax, transplant, and aging.",
-      concepts:["Quarterly multidisciplinary care","Infection prevention","Hemoptysis and pneumothorax","Reproductive health","Advanced lung disease and transplant"],
-      application:"Maintain a center-based longitudinal record of baseline function, microbiology, medication and device implementation, complications, goals, and referral thresholds, including when modulator response is strong.",
-      lesson:[
-        {heading:"Use an accredited multidisciplinary care model",body:"Pulmonary clinicians, pharmacists, nurses, respiratory therapists, dietitians, social workers, mental-health professionals, genetic counselors, endocrinology, gastroenterology, reproductive specialists, and transplant teams contribute at different stages. Review medication access, treatment burden, adherence, pulmonary function, culture, nutrition, complications, immunization, and goals at regular visits."},
-        {heading:"Prevent cross-infection without social isolation",body:"Hand hygiene, cough etiquette, equipment cleaning, environmental practices, masking and contact precautions in health care settings, and physical separation between people with CF reduce pathogen transmission. Infection prevention should be practical, clearly taught, and balanced with educational, occupational, and psychosocial participation."},
-        {heading:"Recognize complications that interrupt routine therapy",body:"Massive hemoptysis, pneumothorax, severe hypoxemia, respiratory failure, or rapidly falling lung function requires urgent specialist care. Temporarily modify airway clearance, aerosol therapy, positive pressure, anticoagulation, or activity according to the complication and center protocol. Do not apply routine clearance through major bleeding or an untreated pneumothorax without review."},
-        {heading:"Plan reproductive and advanced care early",body:"CF can cause congenital bilateral absence of the vas deferens and reduced fertility through other mechanisms, while modulator therapy may change fertility. Provide contraception, pregnancy, lactation, interaction, and genetic counseling based on current evidence and product labeling. Advanced lung disease care includes oxygen, ventilation, rehabilitation, palliative support, and early transplant referral before a crisis removes options."},
+      "slug": "cf-longitudinal-advanced-care",
+      "title": "Longitudinal Safety, Reproductive Health, and Advanced Disease",
+      "visual": "cf-longitudinal",
+      "summary": "CF care remains multidisciplinary across changing lung function, treatment burden, mental health, fertility, pregnancy, hemoptysis, pneumothorax, transplant, and aging.",
+      "concepts": [
+        "Individualized multidisciplinary follow-up",
+        "Infection prevention",
+        "Hemoptysis and pneumothorax",
+        "Reproductive health",
+        "Advanced lung disease and transplant"
       ],
-      keyPoints:["CF care is multidisciplinary.","Infection prevention is disease treatment.","Major hemoptysis and pneumothorax change airway therapy.","Transplant referral should be early."],
-      check:{question:"Why should lung transplant referral occur before terminal respiratory failure?",choices:["Evaluation, optimization, and listing require time while the patient still has reserve","Referral automatically means immediate surgery","CFTR modulators eliminate every transplant indication","A single low spirometry value is the only criterion"],answer:0,rationale:"Early referral preserves time for evaluation and shared planning before rapid decline or a complication removes options.",reviewHref:"#cf-longitudinal-advanced-care"},
+      "application": "Maintain a center-based longitudinal record of baseline function, microbiology, medication and device implementation, complications, goals, and referral thresholds, including when modulator response is strong.",
+      "lesson": [
+        {
+          "heading": "Use an accredited multidisciplinary care model",
+          "body": "Maintain an individualized plan with a CF-accredited center. The core team includes CF medical providers, a dietitian, pharmacist, respiratory care provider, social worker, mental health coordinator, and genetic counselor; primary care and organ-specific specialists remain essential partners. Review pulmonary trajectory, microbiology, nutrition, medications and devices, treatment burden, access, emotional health, and patient goals. Follow-up intensity and the balance of in-person and telehealth care should match clinical needs and the center plan. Strong modulator response does not eliminate coordinated follow-up."
+        },
+        {
+          "heading": "Prevent cross-infection without social isolation",
+          "body": "Apply hand hygiene and equipment and environmental cleaning. Health care personnel use contact precautions for all people with CF regardless of culture results; people with CF wear surgical masks in health care settings. Keep people with CF at least six feet (two meters) from other people with CF in all settings, regardless of respiratory culture results; this separation rule does not apply to members of the same household. Reduce time in shared clinic waiting areas. Teach practical precautions and address their emotional and social effects rather than prescribing isolation from everyone."
+        },
+        {
+          "heading": "Recognize complications that interrupt routine therapy",
+          "body": "The CF Foundation defines scant hemoptysis as less than 5 mL, mild-to-moderate as 5 through 240 mL, and massive as more than 240 mL. Massive bleeding requires admission: stop airway clearance and inhaled hypertonic saline, and withhold BiPAP. Scant bleeding does not automatically require stopping clearance or aerosols. With pneumothorax, withhold BiPAP while it persists and avoid positive expiratory pressure and intrapulmonary percussive ventilation; aerosols need not be stopped solely because of pneumothorax. Evidence does not support a blanket rule for other clearance methods or every aerosol during intermediate bleeding. Obtain prompt specialist assessment for new bleeding, chest symptoms, or respiratory deterioration, with emergency stabilization for severe events."
+        },
+        {
+          "heading": "Plan reproductive and advanced care early",
+          "body": "Discuss fertility, contraception, genetic counseling, pregnancy, and lactation before a crisis. Most men with CF have congenital bilateral absence of the vas deferens; this obstructs sperm delivery rather than necessarily preventing sperm production. Urologic evaluation and assisted reproduction can permit biological children. Do not assume infertility without testing. Many women with CF are fertile, and pregnancies have become more common with modulators; review contraception when pregnancy is not desired. Advanced-care planning should likewise begin while evaluation and optimization remain feasible."
+        },
+        {
+          "heading": "Assess emotional health and arrange a treatment pathway",
+          "body": "Screen all people with CF from age 12 annually using PHQ-9 and GAD-7. Offer annual screening to at least one primary caregiver of a child or adolescent with CF; the guideline permits several validated brief tools according to center resources. For children aged 7 through 11, obtain clinical assessment when the child, caregiver, or team reports concern, or a caregiver reports elevated depression or anxiety symptoms. A screening score guides further clinical assessment; it is not a diagnosis or an automatic prescription. Coordinate stepped psychological and medication care, reviewing interactions, adverse effects, and response."
+        },
+        {
+          "heading": "Review pregnancy and lactation with the exact treatment plan",
+          "body": "Before pregnancy, assess lung function, nutrition, diabetes, organ disease, medication exposure, and practical support with the CF and obstetric teams. Advanced lung disease warrants high-risk obstetric consultation. Current modulator labels have limited or absent human pregnancy and lactation data; animal findings do not establish safety for a human infant. Assess the exact product and current evidence, maternal treatment needs, potential fetal or infant effects, and breastfeeding benefits with the clinical team. Neither automatic discontinuation nor a guarantee of safety follows from a class name. The CF Foundation’s 2026 reproductive position paper emphasizes anticipatory care across the lifespan."
+        },
+        {
+          "heading": "Use age-specific transplant referral thresholds",
+          "body": "Discuss transplant when FEV1 is below 50% predicted. For adults, refer no later than FEV1 below 50% with a relative decline greater than 20% within 12 months, below 40% with markers of shortened survival, or below 30%. Under age 18, the corresponding thresholds are below 50% with that rapid decline, below 50% with survival markers, or below 40%. Markers such as a six-minute walk below 400 meters, hypoxemia, hypercarbia, or pulmonary hypertension justify evaluation regardless of FEV1. Refer with FEV1 below 40% and more than two IV-treated exacerbations per year, or after an exacerbation requiring positive pressure ventilation regardless of FEV1. Address modifiable barriers during referral; unresolved barriers do not automatically preclude it. Referral, evaluation, listing, and transplantation are separate decisions."
+        },
+        {
+          "heading": "Match advanced support and palliative care to needs",
+          "body": "In advanced CF lung disease, assess exertional and nocturnal hypoxemia, hypercarbia, and pulmonary hypertension. Use supplemental oxygen for documented exertional or nocturnal hypoxemia; consider nocturnal noninvasive ventilation for chronic hypercarbia, with complication-specific restrictions such as active pneumothorax. Coordinate pulmonary rehabilitation, nutrition, toxicity monitoring, caregiver support, and goals of care. Palliative care addresses symptoms and quality of life alongside usual CF treatment throughout the disease course, including transplant planning; it does not require abandoning disease-directed care."
+        }
+      ],
+      "keyPoints": [
+        "CF care remains multidisciplinary across the lifespan.",
+        "Separate people with CF by at least six feet, except within the same household.",
+        "Massive hemoptysis and pneumothorax require different therapy modifications.",
+        "Use age-specific transplant referral thresholds and markers beyond FEV1."
+      ],
+      "check": {
+        "question": "Why should lung transplant referral occur before terminal respiratory failure?",
+        "choices": [
+          "Evaluation, optimization, and listing require time while the patient still has reserve",
+          "Referral automatically means immediate surgery",
+          "CFTR modulators eliminate every transplant indication",
+          "A single low spirometry value is the only criterion"
+        ],
+        "answer": 0,
+        "rationale": "Early referral allows evaluation, barrier reduction, and shared decisions while physiologic reserve remains. Referral does not mean immediate surgery or listing, modulator benefit does not eliminate every indication, and age, trajectory, complications, and survival markers matter beyond a single spirometry value.",
+        "reviewHref": "#cf-longitudinal-advanced-care"
+      }
     },
   ],
   questionBank:cysticFibrosisQuestionBank,
   references:[
+    {"label": "CF Foundation: 2024 care team position paper", "href": "https://www.cff.org/medical-professionals/cystic-fibrosis-foundation-position-paper-redefining-cystic-fibrosis-care"},
+    {"label": "CF Foundation: individualized care model position paper", "href": "https://www.cff.org/medical-professionals/cystic-fibrosis-foundation-position-paper-redefining-care-model"},
+    {"label": "CF Foundation: infection prevention and household exception", "href": "https://www.cff.org/medical-professionals/infection-prevention-and-control-clinical-care-guidelines"},
+    {"label": "CF Foundation: hemoptysis and pneumothorax guidance", "href": "https://www.cff.org/medical-professionals/pneumothorax-and-hemoptysis-clinical-care-guidelines"},
+    {"label": "CF Foundation: depression and anxiety screening and care", "href": "https://www.cff.org/medical-professionals/screening-treating-depression-anxiety-guidelines"},
+    {"label": "CF Foundation: fertility in men", "href": "https://www.cff.org/managing-cf/fertility-men-cf"},
+    {"label": "CF Foundation: fertility in women", "href": "https://www.cff.org/managing-cf/fertility-women-cf"},
+    {"label": "CF Foundation: pregnancy planning", "href": "https://www.cff.org/managing-cf/planning-safe-pregnancy"},
+    {"label": "CF Foundation: 2026 reproductive health position paper summary", "href": "https://www.cff.org/medical-professionals/reproductive-health-guidance-cystic-fibrosis-community"},
+    {"label": "CF Foundation: age-specific transplant referral guidance", "href": "https://www.cff.org/medical-professionals/lung-transplant-referral-guidelines"},
+    {"label": "CF Foundation: advanced lung disease guidance", "href": "https://www.cff.org/medical-professionals/guidelines-care-individuals-advanced-cf-lung-disease"},
+    {"label": "CF Foundation: palliative care throughout the disease course", "href": "https://www.cff.org/medical-professionals/models-palliative-care-delivery-individuals-cystic-fibrosis"},
     {"label": "DailyMed: current Symdeko full US prescribing information", "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=302ae804-37db-44fd-ac2f-3dbdeda9aa4b"},
     {"label": "DailyMed: current Orkambi full US prescribing information", "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3fc1c40e-cfac-47a1-9e1a-61ead3570600"},
     {"label": "CF Foundation: initial Pseudomonas eradication", "href": "https://www.cff.org/medical-professionals/eradication-initial-p-aeruginosa-clinical-care-guidelines"},
