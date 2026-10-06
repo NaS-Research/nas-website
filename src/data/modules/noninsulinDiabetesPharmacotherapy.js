@@ -1123,3 +1123,108 @@ noninsulinDiabetesPharmacotherapyModule.references.push(...[
     "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e42ba916-16b9-4d1c-8d09-9d2fbb1b6c20"
   }
 ]);
+
+
+// Complete cardiorenal and weight lesson reviewed against book, guidelines and labels.
+Object.assign(noninsulinDiabetesPharmacotherapyModule.submodules.find(item => item.slug === "cardiorenal-weight-integration"), {
+  "slug": "cardiorenal-weight-integration",
+  "title": "Cardiorenal, Weight, Liver, and HFpEF Integration",
+  "visual": "noninsulin-outcomes",
+  "summary": "A1C, atherosclerotic events, heart-failure symptoms and events, kidney progression, weight and liver fibrosis are distinct treatment goals. Match the exact product and studied population to each goal, then check eligibility, tolerability and the rest of the care plan.",
+  "concepts": [
+    "ASCVD benefit beyond the A1C target",
+    "SGLT2 therapy across heart-failure ejection fractions",
+    "CKD benefit versus glucose efficacy and renal label limits",
+    "Obesity with symptomatic HFpEF: specific trial outcomes",
+    "Chronic weight treatment and staged MASH care"
+  ],
+  "application": "Build an outcome map before changing treatment: prior vascular events, heart-failure phenotype and symptoms, eGFR and albuminuria, weight goals, liver fibrosis risk and current medicines. Match each proposed product to its evidence and label, correct volume depletion, review hypoglycemia and contraindications, preserve indicated vascular and heart-failure care, and specify what will be reassessed.",
+  "lesson": [
+    {
+      "heading": "Treat ASCVD risk irrespective of A1C",
+      "body": "In adults with type 2 diabetes and established or high-risk atherosclerotic cardiovascular disease, include a GLP-1 receptor agonist and/or SGLT2 inhibitor with demonstrated cardiovascular benefit. A1C describes glucose exposure; it does not erase prior myocardial infarction, stroke or other vascular risk. This treatment decision does not require failure of metformin or an A1C above target. Assess safety, kidney function, heart failure, weight, route, access and the person’s priorities. Continue indicated lipid, blood-pressure, tobacco, antiplatelet, nutrition and physical-activity care; a glucose-lowering medicine does not replace comprehensive vascular prevention."
+    },
+    {
+      "heading": "Match the product to the measured endpoint",
+      "body": "Cardiovascular benefit is product- and population-specific. For example, Ozempic injection is labeled to reduce major adverse cardiovascular events in adults with type 2 diabetes and established cardiovascular disease. Jardiance is labeled to reduce cardiovascular death in adults with type 2 diabetes and established cardiovascular disease, with separate heart-failure and CKD indications. A major-event composite, cardiovascular death and hospitalization for heart failure are different outcomes. Do not transfer one product’s indication to every member of its class or assume that the strongest A1C effect predicts the greatest vascular benefit."
+    },
+    {
+      "heading": "Use SGLT2 inhibition for heart failure",
+      "body": "For adults with type 2 diabetes and heart failure with reduced or preserved ejection fraction, ADA recommends an SGLT2 inhibitor with demonstrated benefit irrespective of A1C. Empagliflozin and dapagliflozin have adult heart-failure indications. The usual outcome doses are 10 mg once daily for each; empagliflozin’s optional increase to 25 mg is for additional glucose control, not a required heart-failure dose. Preserve indicated guideline-directed heart-failure medicines and assess congestion and diuretic needs. SGLT2 treatment complements the heart-failure plan rather than replacing it."
+    },
+    {
+      "heading": "Protect volume and avoid fluid-retaining choices",
+      "body": "Before empagliflozin or dapagliflozin, assess kidney function and volume and correct volume depletion. Older age, reduced kidney function and loop diuretics can increase hypotension or depletion risk. Monitor symptoms, blood pressure and kidney function and plan for illness, reduced intake and fasting-related ketoacidosis risk; glucose can be near normal during ketoacidosis. Pioglitazone can cause or worsen fluid retention and is not recommended in symptomatic heart failure. Initiation is contraindicated in NYHA class III or IV heart failure. Potential glucose or liver benefit does not cancel this restriction or make new edema harmless."
+    },
+    {
+      "heading": "Distinguish obesity-related HFpEF evidence",
+      "body": "In type 2 diabetes with obesity and symptomatic HFpEF, ADA 2026 supports selected GLP-1 or dual GIP/GLP-1 therapy with demonstrated benefit irrespective of A1C. STEP-HFpEF DM found that weekly semaglutide improved symptoms, physical limitations and weight versus placebo. SUMMIT studied tirzepatide in HFpEF with obesity, with or without diabetes, and reduced the composite of cardiovascular death or worsening heart failure, chiefly through fewer worsening-HF events. That result does not establish a separate cardiovascular-mortality reduction. Check the actual population, formulation, dose, label and tolerability, and retain indicated SGLT2 and other heart-failure care."
+    },
+    {
+      "heading": "Preserve kidney function as its own goal",
+      "body": "Assess both estimated glomerular filtration rate and urine albumin-to-creatinine ratio, confirm CKD and follow progression rather than selecting from A1C alone. ADA 2026 recommends an SGLT2 inhibitor or GLP-1 receptor agonist with demonstrated benefit in type 2 diabetes with confirmed eGFR 20-60 mL/min/1.73 m² and/or albuminuria, irrespective of A1C. SGLT2 glucose lowering diminishes as eGFR falls, particularly below 45 mL/min/1.73 m²; kidney and cardiovascular benefits need not decline in parallel. Reassess eligibility and adverse effects, while treating any remaining glucose gap separately."
+    },
+    {
+      "heading": "Keep kidney label thresholds indication-specific",
+      "body": "ADA’s CKD recommendation supports starting an SGLT2 inhibitor at eGFR at least 20 mL/min/1.73 m², but the chosen product’s label still matters. Farxiga initiation for adult heart or kidney indications is not recommended below 25; an established patient whose eGFR later falls below 25 may continue 10 mg daily under its label. Farxiga is not recommended solely for glucose control below 45, while Jardiance’s glucose-control cutoff is below 30. These are different product and indication rules. Do not use one threshold for the whole class or infer suitability in dialysis from a glucose response."
+    },
+    {
+      "heading": "Layer kidney care and monitor potassium",
+      "body": "Glucose-lowering therapy does not replace blood-pressure and kidney care. In nonpregnant adults with diabetes, hypertension and albuminuria, an ACE inhibitor or ARB is recommended at a tolerated dose; do not combine both classes. For eligible type 2 diabetes with albuminuric CKD on maximally tolerated ACE inhibitor or ARB, a nonsteroidal mineralocorticoid receptor antagonist with demonstrated benefit, such as finerenone, can add kidney and cardiovascular protection. Check eGFR, potassium, current medicines and the exact label. ADA specifies eGFR at least 25 mL/min/1.73 m² and potassium monitoring one month after initiation; monitor kidney function and potassium with these therapies."
+    },
+    {
+      "heading": "Use demonstrated GLP-1 kidney benefit",
+      "body": "Ozempic injection has an indication to reduce sustained eGFR decline, end-stage kidney disease and cardiovascular death in adults with type 2 diabetes and CKD. This is a product-specific kidney outcome claim, not an indication shared automatically by every incretin product. ADA prefers a GLP-1 receptor agonist for glucose management in advanced CKD, while renal restrictions differ among agents. Kidney benefit does not remove gastrointestinal, hydration, hypoglycemia or thyroid contraindication checks. In a patient taking insulin or a sulfonylurea, review whether dose reduction is needed to prevent hypoglycemia when therapy improves glucose control."
+    },
+    {
+      "heading": "Treat weight as a continuing outcome",
+      "body": "Weight management is a distinct treatment goal in type 2 diabetes with overweight or obesity. Semaglutide and tirzepatide have high weight-loss efficacy, but select the exact product and indication with nutrition, activity, safety, affordability and a sustainable treatment plan. ADA recommends continuing indicated chronic obesity pharmacotherapy beyond reaching weight goals because stopping often leads to weight recurrence. Individualize titration; the best tolerated effective dose need not be the maximum. Persistent vomiting, reduced intake or dehydration calls for reassessment, not automatic escalation. Revisit other medicines that promote weight gain and monitor whether the plan remains useful."
+    },
+    {
+      "heading": "Treat weight and liver disease intentionally",
+      "body": "MASLD, MASH and advanced fibrosis are related but distinct clinical findings. Establish liver diagnosis and fibrosis risk and involve appropriate liver expertise rather than inferring MASH stage from obesity or A1C. ADA supports a GLP-1 receptor agonist with demonstrated MASH benefit for relevant type 2 diabetes populations; selected dual GIP/GLP-1 or pioglitazone therapy has potential benefit with separate safety considerations. Wegovy injection is approved for adults with noncirrhotic MASH and moderate to advanced fibrosis consistent with F2-F3. Its accelerated approval is based on MASH and fibrosis improvement, with clinical benefit requiring confirmatory verification; the cited tablet indication does not include MASH."
+    },
+    {
+      "heading": "Resolve competing goals in one care plan",
+      "body": "A person with type 2 diabetes, symptomatic heart failure, albuminuric CKD and obesity may need more than one complementary strategy even with A1C at target. Review an eligible SGLT2 product for heart and kidney benefit, GLP-1-based therapy for an applicable weight or other demonstrated outcome, and independent vascular and kidney care. Potential MASH benefit from pioglitazone does not make it appropriate in symptomatic heart failure. Avoid overlapping GLP-1 products, assess burden and hypoglycemia, and set follow-up measures for symptoms, volume, kidney function, potassium, glucose and weight. Reassess benefit and feasibility rather than counting prescriptions as success."
+    }
+  ],
+  "keyPoints": [
+    "An A1C at goal does not remove an independent ASCVD, heart-failure or kidney indication.",
+    "Use an SGLT2 inhibitor with demonstrated heart-failure benefit in eligible patients with HFrEF or HFpEF; assess kidney function and volume.",
+    "A smaller SGLT2 glucose effect at low eGFR does not by itself establish loss of kidney benefit.",
+    "HFpEF symptoms, HF events, cardiovascular mortality and weight loss are different trial outcomes.",
+    "Weight treatment often needs to continue after the goal is reached; titrate to benefit and tolerability.",
+    "Wegovy injection has an accelerated-approval indication for adult noncirrhotic MASH with F2-F3 fibrosis; do not extend it to every formulation or liver stage."
+  ],
+  "check": {
+    "question": "An adult with type 2 diabetes and stable heart failure has A1C at goal. Kidney function and volume status allow an SGLT2 inhibitor. Which principle guides treatment?",
+    "choices": [
+      "An SGLT2 inhibitor with demonstrated heart-failure benefit can be indicated despite A1C being at goal.",
+      "Heart-failure treatment must wait until A1C rises above the glucose target.",
+      "Pioglitazone is preferred for symptomatic heart failure because fluid retention protects the heart.",
+      "A1C at goal removes the need to assess kidney function, volume and other heart-failure medicines."
+    ],
+    "answer": 0,
+    "rationale": "ADA recommends an SGLT2 inhibitor with demonstrated benefit in eligible adults with type 2 diabetes and HFrEF or HFpEF irrespective of A1C. Assess kidney function, volume, safety and the exact product, and preserve indicated heart-failure care. Pioglitazone can worsen fluid retention and is not recommended in symptomatic heart failure; glucose control does not replace these assessments.",
+    "reviewHref": "#cardiorenal-weight-integration"
+  }
+});
+noninsulinDiabetesPharmacotherapyModule.references.push(...[
+  {
+    "label": "ADA 2026 cardiovascular disease and risk management",
+    "href": "https://diabetesjournals.org/care/article/49/Supplement_1/S216/163933/10-Cardiovascular-Disease-and-Risk-Management"
+  },
+  {
+    "label": "ADA 2026 chronic kidney disease and risk management",
+    "href": "https://diabetesjournals.org/care/article/49/Supplement_1/S246/163914/11-Chronic-Kidney-Disease-and-Risk-Management"
+  },
+  {
+    "label": "SUMMIT trial: tirzepatide in HFpEF with obesity (2025)",
+    "href": "https://pubmed.ncbi.nlm.nih.gov/39555826/"
+  },
+  {
+    "label": "STEP-HFpEF DM trial: semaglutide in obesity-related HFpEF and type 2 diabetes (2024)",
+    "href": "https://pubmed.ncbi.nlm.nih.gov/38587233/"
+  }
+]);

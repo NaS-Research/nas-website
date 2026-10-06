@@ -85,8 +85,8 @@ const diagrams = {
     title: "Treat the organ risk even when glucose is near target",
     columns: [
       ["Vessels", "ASCVD", "Use a GLP-1 receptor agonist and/or SGLT2 inhibitor with demonstrated benefit"],
-      ["Pump and filter", "Heart failure and CKD", "Prioritize SGLT2 inhibition and layer product-specific evidence"],
-      ["Metabolism", "Weight and liver", "Choose high-efficacy therapy when obesity or metabolic liver disease is a goal"],
+      ["Pump and filter", "Heart failure and CKD", "Match proven heart and kidney benefit to product eligibility"],
+      ["Metabolism", "Weight and liver", "Match weight and liver treatment to evidence, formulation and liver stage"],
     ],
   },
   "noninsulin-combination": {
@@ -113,8 +113,8 @@ export default function NoninsulinDiabetesPharmacotherapyVisual({ type }) {
           <div key={label}>
             <span>{String(index + 1).padStart(2, "0")}</span>
             <strong>{label}</strong>
-            <em style={(type === "noninsulin-selection" || type === "noninsulin-metformin" || type === "noninsulin-sglt2" || type === "noninsulin-glp1" || type === "noninsulin-dpp4" || type === "noninsulin-secretagogues" || type === "noninsulin-tzd" || type === "noninsulin-other") ? { fontSize: "14px", lineHeight: 1.55 } : undefined}>{mechanism}</em>
-            <p style={(type === "noninsulin-selection" || type === "noninsulin-metformin" || type === "noninsulin-sglt2" || type === "noninsulin-glp1" || type === "noninsulin-dpp4" || type === "noninsulin-secretagogues" || type === "noninsulin-tzd" || type === "noninsulin-other") ? { fontSize: "14px", lineHeight: 1.65 } : undefined}>{explanation}</p>
+            <em style={(type === "noninsulin-selection" || type === "noninsulin-metformin" || type === "noninsulin-sglt2" || type === "noninsulin-glp1" || type === "noninsulin-dpp4" || type === "noninsulin-secretagogues" || type === "noninsulin-tzd" || type === "noninsulin-other" || type === "noninsulin-outcomes") ? { fontSize: "14px", lineHeight: 1.55 } : undefined}>{mechanism}</em>
+            <p style={(type === "noninsulin-selection" || type === "noninsulin-metformin" || type === "noninsulin-sglt2" || type === "noninsulin-glp1" || type === "noninsulin-dpp4" || type === "noninsulin-secretagogues" || type === "noninsulin-tzd" || type === "noninsulin-other" || type === "noninsulin-outcomes") ? { fontSize: "14px", lineHeight: 1.65 } : undefined}>{explanation}</p>
           </div>
         ))}
       </div>

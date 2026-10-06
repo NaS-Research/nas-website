@@ -1337,3 +1337,161 @@ const verifiedOtherNoninsulinQuestions = {
 for (const item of noninsulinDiabetesPharmacotherapyQuestionBank) {
   if (verifiedOtherNoninsulinQuestions[item.id]) Object.assign(item, verifiedOtherNoninsulinQuestions[item.id]);
 }
+
+
+// Whole outcome questions retain stable IDs, keys, difficulty and review anchors.
+const verifiedCardiorenalQuestions = {
+  "noninsulin-diabetes-21-principle": {
+    "question": "Which statement correctly links ASCVD risk to type 2 diabetes medicine selection?",
+    "choices": [
+      "Established or high-risk ASCVD can support a GLP-1 receptor agonist and/or SGLT2 inhibitor with demonstrated cardiovascular benefit even at the A1C target.",
+      "An outcome-directed medicine can be considered only after metformin fails to lower A1C.",
+      "Every GLP-1 product has identical evidence and labeled indications for every cardiovascular endpoint.",
+      "An A1C at target proves that prior myocardial infarction no longer affects medicine selection."
+    ],
+    "rationale": "ASCVD risk is an independent treatment consideration. ADA recommends products with demonstrated benefit irrespective of A1C or background metformin; prior vascular disease remains relevant. Evidence and indications differ among products and endpoints."
+  },
+  "noninsulin-diabetes-21-application": {
+    "question": "A patient with type 2 diabetes and prior myocardial infarction is starting an agent with demonstrated cardiovascular benefit. Which accompanying plan is appropriate?",
+    "choices": [
+      "Continue indicated lipid, blood-pressure, tobacco, antiplatelet, nutrition and activity care while checking product eligibility and tolerability.",
+      "Stop indicated statin treatment once the new medicine lowers A1C.",
+      "Choose the product solely by its maximum A1C reduction and ignore the studied cardiovascular population.",
+      "Use the new prescription as a replacement for all vascular-risk and self-management care."
+    ],
+    "rationale": "Outcome-directed glucose therapy complements comprehensive vascular prevention. A1C improvement neither replaces indicated statin and other risk-factor care nor establishes that a product has the required cardiovascular evidence."
+  },
+  "noninsulin-diabetes-21-safety": {
+    "question": "Which plan incorrectly treats glucose control as a substitute for vascular prevention after myocardial infarction?",
+    "choices": [
+      "Stop indicated lipid and blood-pressure therapy because A1C has reached its target.",
+      "Continue the indicated statin while checking tolerability and lipid response.",
+      "Review an agent’s demonstrated cardiovascular benefit and relevant patient population.",
+      "Address tobacco use, physical activity and the patient’s ability to follow the treatment plan."
+    ],
+    "rationale": "A1C is a glucose measure. Reaching its target does not remove the independent need for indicated lipid, blood-pressure and other vascular prevention. The other plans preserve appropriate risk-factor and product review."
+  },
+  "noninsulin-diabetes-21-case": {
+    "question": "An adult with type 2 diabetes and prior myocardial infarction has A1C 6.8% on metformin, at their individualized target. There is no relevant contraindication. Which reasoning is best?",
+    "choices": [
+      "Consider a product with demonstrated cardiovascular benefit while continuing indicated vascular prevention despite the current A1C.",
+      "Wait for A1C to exceed target before considering cardiovascular benefit.",
+      "Choose any glucose-lowering product because all have identical cardiovascular evidence.",
+      "Remove vascular prevention because the current A1C shows that the infarction risk has resolved."
+    ],
+    "rationale": "Prior myocardial infarction establishes ASCVD. ADA’s outcome-directed selection applies irrespective of A1C, with attention to the specific product, population and safety. Neither equal class-wide benefit nor withdrawal of vascular prevention follows from A1C 6.8%."
+  },
+  "noninsulin-diabetes-22-principle": {
+    "question": "Which statement correctly describes SGLT2 therapy in type 2 diabetes with heart failure?",
+    "choices": [
+      "Use a product with demonstrated heart-failure benefit in eligible patients with HFrEF or HFpEF irrespective of A1C.",
+      "Restrict demonstrated SGLT2 heart-failure benefit to patients with an elevated A1C.",
+      "Treat HFpEF as an automatic exclusion from SGLT2 outcome therapy.",
+      "Assume pioglitazone’s glucose effect establishes the same heart-failure benefit."
+    ],
+    "rationale": "ADA recommends an SGLT2 inhibitor with demonstrated benefit across reduced or preserved ejection fraction irrespective of A1C. Product eligibility still matters; pioglitazone can cause or worsen fluid retention and is not recommended in symptomatic heart failure."
+  },
+  "noninsulin-diabetes-22-application": {
+    "question": "Before starting empagliflozin or dapagliflozin for heart-failure benefit in an adult with type 2 diabetes, which action is appropriate?",
+    "choices": [
+      "Assess kidney function, volume, blood pressure, diuretic context, ketoacidosis risk and the product label while preserving indicated heart-failure care.",
+      "Start despite untreated volume depletion because heart-failure benefit removes hypotension risk.",
+      "Discontinue all other indicated heart-failure medicines because SGLT2 treatment replaces them.",
+      "Omit illness and fasting counseling because ketoacidosis cannot occur near normal glucose."
+    ],
+    "rationale": "The labels require renal and volume assessment and correction of volume depletion before initiation. Loop diuretics can increase depletion risk. SGLT2 therapy complements indicated heart-failure treatment; ketoacidosis can occur without marked hyperglycemia."
+  },
+  "noninsulin-diabetes-22-safety": {
+    "question": "An adult with type 2 diabetes and symptomatic NYHA class III heart failure is being considered for pioglitazone. Which proposed action is unsafe?",
+    "choices": [
+      "Initiate pioglitazone despite the established NYHA class III heart failure.",
+      "Recognize that pioglitazone can cause or worsen fluid retention.",
+      "Consider an eligible SGLT2 product with demonstrated heart-failure benefit.",
+      "Review the current volume status and heart-failure treatment plan."
+    ],
+    "rationale": "Actos initiation is contraindicated in established NYHA class III or IV heart failure and is not recommended in symptomatic heart failure. Its potential glucose or liver benefit does not override that restriction. The other actions support safe selection."
+  },
+  "noninsulin-diabetes-22-case": {
+    "question": "An adult with type 2 diabetes, chronic symptomatic HFrEF and recurrent congestion is now clinically stable and euvolemic. Kidney function permits an SGLT2 inhibitor, and there is no relevant contraindication. Which addition best addresses heart-failure outcomes?",
+    "choices": [
+      "An SGLT2 inhibitor with demonstrated heart-failure benefit alongside indicated heart-failure care.",
+      "Pioglitazone because its fluid retention is protective in symptomatic HFrEF.",
+      "Any sulfonylurea because equivalent A1C lowering proves equivalent heart-failure benefit.",
+      "No outcome-directed medicine unless A1C first rises above target."
+    ],
+    "rationale": "In an eligible stable patient with HFrEF, a product such as empagliflozin or dapagliflozin can provide heart-failure benefit irrespective of A1C. Continue indicated heart-failure care and volume monitoring. Pioglitazone can worsen congestion, and glucose efficacy is not proof of equal outcome benefit."
+  },
+  "noninsulin-diabetes-23-principle": {
+    "question": "Which assessment best supports kidney-directed medicine selection in type 2 diabetes?",
+    "choices": [
+      "Confirm CKD using eGFR and albuminuria, then consider progression risk, demonstrated benefit, the product label and safety separately from A1C.",
+      "Use A1C alone because it measures the degree of kidney fibrosis.",
+      "Assume less glucose lowering at low eGFR means every kidney outcome benefit has disappeared.",
+      "Apply one renal threshold and one dose to every noninsulin medicine regardless of its indication."
+    ],
+    "rationale": "Kidney-directed selection uses eGFR, albuminuria and the relevant evidence and label. A1C does not stage CKD; lower SGLT2 glucose efficacy does not itself negate kidney benefit, and renal instructions differ by product and indication."
+  },
+  "noninsulin-diabetes-23-application": {
+    "question": "A nonpregnant adult with type 2 diabetes, hypertension and albuminuric CKD has an indication for kidney-protective glucose therapy. Which comprehensive approach is appropriate?",
+    "choices": [
+      "Layer eligible outcome therapy with blood-pressure care and an ACE inhibitor or ARB, monitoring kidney function, potassium, volume and albuminuria.",
+      "Replace indicated blood-pressure treatment with glucose therapy alone.",
+      "Combine an ACE inhibitor and an ARB to obtain routine additional kidney protection.",
+      "Add potassium-affecting therapy without checking kidney function or potassium."
+    ],
+    "rationale": "For hypertension with albuminuria, ADA recommends an ACE inhibitor or ARB and appropriate monitoring alongside eligible outcome therapy. Combining ACE inhibitor and ARB is discouraged. Kidney function, potassium and volume checks remain necessary; glucose therapy does not replace blood-pressure care."
+  },
+  "noninsulin-diabetes-23-safety": {
+    "question": "An adult taking dapagliflozin for CKD progression risk has a smaller A1C response as eGFR declines but remains clinically stable and eligible under the kidney indication. Which reasoning is incorrect?",
+    "choices": [
+      "Stop solely because the smaller A1C effect proves there can be no kidney benefit.",
+      "Assess the continuing kidney indication and current renal label instructions.",
+      "Review volume status, adverse effects and the kidney trajectory.",
+      "Address a remaining glucose gap separately while preserving indicated kidney treatment."
+    ],
+    "rationale": "SGLT2 glucose efficacy diminishes with lower eGFR, but kidney benefit can remain. Dapagliflozin has different glucose and kidney-use instructions. A smaller A1C response alone is not a reason to discard otherwise indicated therapy; safety and eligibility still require review."
+  },
+  "noninsulin-diabetes-23-case": {
+    "question": "A stable adult with type 2 diabetes and albuminuric CKD is already taking dapagliflozin 10 mg daily for kidney protection. eGFR falls from 30 to 24 mL/min/1.73 m² without volume depletion, dialysis or another reason to interrupt. Which label-based interpretation is correct?",
+    "choices": [
+      "The label permits continued 10 mg daily for kidney outcomes after eGFR falls below 25; reassess safety and any remaining glucose needs.",
+      "Stop automatically because the below-45 glucose-control restriction prohibits all kidney use.",
+      "Increase to 25 mg daily because that is dapagliflozin’s required kidney dose.",
+      "Treat continuation at 24 as proof that new dapagliflozin initiation below 25 is recommended."
+    ],
+    "rationale": "Farxiga distinguishes initiation from continuation: initiation below eGFR 25 is not recommended, but an established patient may continue 10 mg daily for specified kidney and cardiovascular outcomes after eGFR falls below 25. The below-45 restriction concerns glucose control; 25 mg is not a Farxiga kidney dose."
+  },
+  "noninsulin-diabetes-24-principle": {
+    "question": "Which statement correctly separates weight, HFpEF and metabolic liver outcomes?",
+    "choices": [
+      "Match treatment to demonstrated benefit for the exact outcome, product and population; weight loss, HF symptoms or events and MASH fibrosis findings are distinct.",
+      "Any medicine causing weight loss has proven a separate cardiovascular-mortality reduction in HFpEF.",
+      "An A1C at goal removes the need to address obesity or relevant MASH treatment goals.",
+      "A MASH indication for one injectable product automatically covers every oral formulation and cirrhotic liver stage."
+    ],
+    "rationale": "Weight, HFpEF symptoms/events and MASH histology are distinct endpoints. Product and population evidence matters independently of A1C. For example, SUMMIT’s composite reduction does not establish a separate mortality reduction, and Wegovy injection’s noncirrhotic F2-F3 MASH indication cannot be transferred to every formulation or stage."
+  },
+  "noninsulin-diabetes-24-safety": {
+    "question": "An adult has noncirrhotic MASH with F2-F3 fibrosis and is considering Wegovy injection. Which interpretation overstates the cited approval?",
+    "choices": [
+      "Accelerated approval proves that prevention of liver failure and mortality has already been confirmed.",
+      "The labeled MASH indication applies to adults with noncirrhotic F2-F3 fibrosis.",
+      "Approval is based on improvement in MASH and fibrosis, with clinical benefit needing confirmatory verification.",
+      "Treatment still requires eligibility, tolerability, liver care and the labeled formulation to be checked."
+    ],
+    "rationale": "The Wegovy injection label states that its MASH indication has accelerated approval based on MASH and fibrosis improvement and that continued approval may depend on verifying clinical benefit. This does not establish confirmed prevention of liver failure or mortality. The other interpretations preserve the indication and its limits."
+  },
+  "noninsulin-diabetes-24-case": {
+    "question": "An adult with type 2 diabetes, obesity and symptomatic HFpEF needs improved weight control. A1C is at goal, current HF care remains indicated and no relevant contraindication is found. Which reasoning is best?",
+    "choices": [
+      "Consider selected GLP-1 or dual GIP/GLP-1 therapy with demonstrated benefit for this population, while checking product eligibility and retaining indicated HF care.",
+      "Exclude all such therapy because A1C is at goal.",
+      "Replace all indicated HF medicines with any GLP-1 product regardless of its evidence.",
+      "Select a DPP-4 inhibitor solely because its renal dose proves substantial weight loss and HFpEF symptom benefit."
+    ],
+    "rationale": "ADA 2026 recognizes selected GLP-1 and dual GIP/GLP-1 therapies with demonstrated benefit in type 2 diabetes, obesity and symptomatic HFpEF irrespective of A1C. Exact evidence, label, tolerability and continued heart-failure care matter. A renal dose rule does not demonstrate weight or HFpEF efficacy."
+  }
+};
+for (const item of noninsulinDiabetesPharmacotherapyQuestionBank) {
+  if (verifiedCardiorenalQuestions[item.id]) Object.assign(item, verifiedCardiorenalQuestions[item.id]);
+}

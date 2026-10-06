@@ -1,0 +1,2360 @@
+{
+  "updated": "2026-10-06T10:57:36.056253+00:00",
+  "unit": "enteral-nutrition:broader-cardiorenal",
+  "status": "Complete cardiorenal and weight lesson and sixteen questions clinically, structurally, runtime and visually verified; push pending.",
+  "baseCommit": "2ce66c3f79576ee504b7bd89bd9f3d135e09b280",
+  "sourcePolicy": {
+    "primary": "Cover-verified private RxPrep2023",
+    "approvedAuthoritativeSources": {
+      "status": "approved by direct user message: I give approval",
+      "scope": "Official guidelines, FDA labels and primary academic clinical references where the book cannot verify retained content; includes pending calcium, dialysis, aluminum and mineral physiology scopes",
+      "primarySourceRemains": "Supplied cover-verified RxPrep2023 book",
+      "approvalContext": "Response to pending asynchronous request for this additional authoritative source policy",
+      "usedNewlyAuthorizedSourcesInThisUnit": true,
+      "latestEvidence": "enteral-nutrition-broader-other-noninsulin-review.json"
+    }
+  },
+  "coverage": {
+    "evidence": "enteral-nutrition-broader-cardiorenal-review.json",
+    "verifiedScope": "One complete audit-branch cardiorenal and weight lesson: twelve whole bodies, metadata, corrected embedded check, reviewed mechanism figure and sixteen linked whole questions. Fifteen questions changed; one previously verified question retained exactly.",
+    "wholeLessonsVerified": {
+      "noninsulin-diabetes-pharmacotherapy": [
+        "cardiorenal-weight-integration"
+      ]
+    },
+    "wholeBodiesVerified": 12,
+    "wholeQuestionsReviewed": 16,
+    "changedWholeQuestions": 15,
+    "existingBodiesExpanded": 4,
+    "newOriginalBodies": 8,
+    "wholeChecksVerified": 1,
+    "wholeMetadataAndFiguresVerified": 1,
+    "wholeBankQuestionIdsVerified": [
+      "noninsulin-diabetes-21-principle",
+      "noninsulin-diabetes-21-application",
+      "noninsulin-diabetes-21-safety",
+      "noninsulin-diabetes-21-case",
+      "noninsulin-diabetes-22-principle",
+      "noninsulin-diabetes-22-application",
+      "noninsulin-diabetes-22-safety",
+      "noninsulin-diabetes-22-case",
+      "noninsulin-diabetes-23-principle",
+      "noninsulin-diabetes-23-application",
+      "noninsulin-diabetes-23-safety",
+      "noninsulin-diabetes-23-case",
+      "noninsulin-diabetes-24-principle",
+      "noninsulin-diabetes-24-application",
+      "noninsulin-diabetes-24-safety",
+      "noninsulin-diabetes-24-case"
+    ],
+    "all64ChoicesIndividuallySourceCompared": true,
+    "previouslyVerifiedWholeQuestionRetainedExactly": "noninsulin-diabetes-24-application",
+    "newUniqueBankQuestionsVerified": 15,
+    "broaderFeedingBankVerifiedBefore": 1040,
+    "broaderFeedingBankVerifiedAfter": 1055,
+    "sourceVerifiedNoninsulinBankTotalAcrossUnits": 108,
+    "noninsulinAuditBranchBankTotal": 120,
+    "noninsulinAuditBranchLessonTotal": 10,
+    "noninsulinAuditBranchLessonsVerifiedAcrossUnits": 9,
+    "remainingNoninsulinWholeBankIds": [
+      "noninsulin-diabetes-25-principle",
+      "noninsulin-diabetes-25-application",
+      "noninsulin-diabetes-25-safety",
+      "noninsulin-diabetes-25-case",
+      "noninsulin-diabetes-26-principle",
+      "noninsulin-diabetes-26-application",
+      "noninsulin-diabetes-26-safety",
+      "noninsulin-diabetes-26-case",
+      "noninsulin-diabetes-30-principle",
+      "noninsulin-diabetes-30-application",
+      "noninsulin-diabetes-30-safety",
+      "noninsulin-diabetes-30-case"
+    ],
+    "remainingNoninsulinAuditBranchLessons": 1,
+    "other104WholeBankQuestionsUnchanged": true,
+    "allPrior93VerifiedNoninsulinQuestionsUnchanged": true,
+    "otherNineWholeLessonsUnchanged": true,
+    "other231WholeModulesUnchanged": true,
+    "associatedCumulativeWholeItemsVerified": [
+      "cumulative-noninsulin-diabetes-pharmacotherapy-noninsulin-diabetes-23-application"
+    ],
+    "other1179WholeCumulativeObjectsUnchanged": true,
+    "stableIdsKeysDifficultyAnchorsOrderPreserved": true,
+    "newQuestionIdsAdded": 0,
+    "cumulativeSelectorUnchanged": true,
+    "all46ExistingReferencesRetainedAndRuntimeChecked": true,
+    "fourPrimaryReferencesAddedAndRuntimeChecked": true,
+    "wholeParentModuleVerified": false,
+    "enteralParentVerified": false,
+    "wholeChaptersVerified": false,
+    "committedWholeModulesVerifiedAfter": 61,
+    "committedWholeModulesTotal": 232,
+    "moduleCountPercent": 26.29,
+    "chaptersVerifiedAfter": 6,
+    "chapterTotal": 82,
+    "chapterCountPercent": 7.32,
+    "workingDraftBoundary": "Working draft contains eleven lessons and ninety-two different authored questions. Prior bytes and reviewing statuses are preserved. This certificate applies to the isolated HEAD-derived audit-branch lesson and sixteen stable question IDs; certification of different working-draft variants is not inferred."
+  },
+  "changes": {
+    "noninsulin-diabetes-pharmacotherapy": {
+      "lessons": {
+        "cardiorenal-weight-integration": {
+          "slug": "cardiorenal-weight-integration",
+          "title": "Cardiorenal, Weight, Liver, and HFpEF Integration",
+          "visual": "noninsulin-outcomes",
+          "summary": "A1C, atherosclerotic events, heart-failure symptoms and events, kidney progression, weight and liver fibrosis are distinct treatment goals. Match the exact product and studied population to each goal, then check eligibility, tolerability and the rest of the care plan.",
+          "concepts": [
+            "ASCVD benefit beyond the A1C target",
+            "SGLT2 therapy across heart-failure ejection fractions",
+            "CKD benefit versus glucose efficacy and renal label limits",
+            "Obesity with symptomatic HFpEF: specific trial outcomes",
+            "Chronic weight treatment and staged MASH care"
+          ],
+          "application": "Build an outcome map before changing treatment: prior vascular events, heart-failure phenotype and symptoms, eGFR and albuminuria, weight goals, liver fibrosis risk and current medicines. Match each proposed product to its evidence and label, correct volume depletion, review hypoglycemia and contraindications, preserve indicated vascular and heart-failure care, and specify what will be reassessed.",
+          "lesson": [
+            {
+              "heading": "Treat ASCVD risk irrespective of A1C",
+              "body": "In adults with type 2 diabetes and established or high-risk atherosclerotic cardiovascular disease, include a GLP-1 receptor agonist and/or SGLT2 inhibitor with demonstrated cardiovascular benefit. A1C describes glucose exposure; it does not erase prior myocardial infarction, stroke or other vascular risk. This treatment decision does not require failure of metformin or an A1C above target. Assess safety, kidney function, heart failure, weight, route, access and the person’s priorities. Continue indicated lipid, blood-pressure, tobacco, antiplatelet, nutrition and physical-activity care; a glucose-lowering medicine does not replace comprehensive vascular prevention."
+            },
+            {
+              "heading": "Match the product to the measured endpoint",
+              "body": "Cardiovascular benefit is product- and population-specific. For example, Ozempic injection is labeled to reduce major adverse cardiovascular events in adults with type 2 diabetes and established cardiovascular disease. Jardiance is labeled to reduce cardiovascular death in adults with type 2 diabetes and established cardiovascular disease, with separate heart-failure and CKD indications. A major-event composite, cardiovascular death and hospitalization for heart failure are different outcomes. Do not transfer one product’s indication to every member of its class or assume that the strongest A1C effect predicts the greatest vascular benefit."
+            },
+            {
+              "heading": "Use SGLT2 inhibition for heart failure",
+              "body": "For adults with type 2 diabetes and heart failure with reduced or preserved ejection fraction, ADA recommends an SGLT2 inhibitor with demonstrated benefit irrespective of A1C. Empagliflozin and dapagliflozin have adult heart-failure indications. The usual outcome doses are 10 mg once daily for each; empagliflozin’s optional increase to 25 mg is for additional glucose control, not a required heart-failure dose. Preserve indicated guideline-directed heart-failure medicines and assess congestion and diuretic needs. SGLT2 treatment complements the heart-failure plan rather than replacing it."
+            },
+            {
+              "heading": "Protect volume and avoid fluid-retaining choices",
+              "body": "Before empagliflozin or dapagliflozin, assess kidney function and volume and correct volume depletion. Older age, reduced kidney function and loop diuretics can increase hypotension or depletion risk. Monitor symptoms, blood pressure and kidney function and plan for illness, reduced intake and fasting-related ketoacidosis risk; glucose can be near normal during ketoacidosis. Pioglitazone can cause or worsen fluid retention and is not recommended in symptomatic heart failure. Initiation is contraindicated in NYHA class III or IV heart failure. Potential glucose or liver benefit does not cancel this restriction or make new edema harmless."
+            },
+            {
+              "heading": "Distinguish obesity-related HFpEF evidence",
+              "body": "In type 2 diabetes with obesity and symptomatic HFpEF, ADA 2026 supports selected GLP-1 or dual GIP/GLP-1 therapy with demonstrated benefit irrespective of A1C. STEP-HFpEF DM found that weekly semaglutide improved symptoms, physical limitations and weight versus placebo. SUMMIT studied tirzepatide in HFpEF with obesity, with or without diabetes, and reduced the composite of cardiovascular death or worsening heart failure, chiefly through fewer worsening-HF events. That result does not establish a separate cardiovascular-mortality reduction. Check the actual population, formulation, dose, label and tolerability, and retain indicated SGLT2 and other heart-failure care."
+            },
+            {
+              "heading": "Preserve kidney function as its own goal",
+              "body": "Assess both estimated glomerular filtration rate and urine albumin-to-creatinine ratio, confirm CKD and follow progression rather than selecting from A1C alone. ADA 2026 recommends an SGLT2 inhibitor or GLP-1 receptor agonist with demonstrated benefit in type 2 diabetes with confirmed eGFR 20-60 mL/min/1.73 m² and/or albuminuria, irrespective of A1C. SGLT2 glucose lowering diminishes as eGFR falls, particularly below 45 mL/min/1.73 m²; kidney and cardiovascular benefits need not decline in parallel. Reassess eligibility and adverse effects, while treating any remaining glucose gap separately."
+            },
+            {
+              "heading": "Keep kidney label thresholds indication-specific",
+              "body": "ADA’s CKD recommendation supports starting an SGLT2 inhibitor at eGFR at least 20 mL/min/1.73 m², but the chosen product’s label still matters. Farxiga initiation for adult heart or kidney indications is not recommended below 25; an established patient whose eGFR later falls below 25 may continue 10 mg daily under its label. Farxiga is not recommended solely for glucose control below 45, while Jardiance’s glucose-control cutoff is below 30. These are different product and indication rules. Do not use one threshold for the whole class or infer suitability in dialysis from a glucose response."
+            },
+            {
+              "heading": "Layer kidney care and monitor potassium",
+              "body": "Glucose-lowering therapy does not replace blood-pressure and kidney care. In nonpregnant adults with diabetes, hypertension and albuminuria, an ACE inhibitor or ARB is recommended at a tolerated dose; do not combine both classes. For eligible type 2 diabetes with albuminuric CKD on maximally tolerated ACE inhibitor or ARB, a nonsteroidal mineralocorticoid receptor antagonist with demonstrated benefit, such as finerenone, can add kidney and cardiovascular protection. Check eGFR, potassium, current medicines and the exact label. ADA specifies eGFR at least 25 mL/min/1.73 m² and potassium monitoring one month after initiation; monitor kidney function and potassium with these therapies."
+            },
+            {
+              "heading": "Use demonstrated GLP-1 kidney benefit",
+              "body": "Ozempic injection has an indication to reduce sustained eGFR decline, end-stage kidney disease and cardiovascular death in adults with type 2 diabetes and CKD. This is a product-specific kidney outcome claim, not an indication shared automatically by every incretin product. ADA prefers a GLP-1 receptor agonist for glucose management in advanced CKD, while renal restrictions differ among agents. Kidney benefit does not remove gastrointestinal, hydration, hypoglycemia or thyroid contraindication checks. In a patient taking insulin or a sulfonylurea, review whether dose reduction is needed to prevent hypoglycemia when therapy improves glucose control."
+            },
+            {
+              "heading": "Treat weight as a continuing outcome",
+              "body": "Weight management is a distinct treatment goal in type 2 diabetes with overweight or obesity. Semaglutide and tirzepatide have high weight-loss efficacy, but select the exact product and indication with nutrition, activity, safety, affordability and a sustainable treatment plan. ADA recommends continuing indicated chronic obesity pharmacotherapy beyond reaching weight goals because stopping often leads to weight recurrence. Individualize titration; the best tolerated effective dose need not be the maximum. Persistent vomiting, reduced intake or dehydration calls for reassessment, not automatic escalation. Revisit other medicines that promote weight gain and monitor whether the plan remains useful."
+            },
+            {
+              "heading": "Treat weight and liver disease intentionally",
+              "body": "MASLD, MASH and advanced fibrosis are related but distinct clinical findings. Establish liver diagnosis and fibrosis risk and involve appropriate liver expertise rather than inferring MASH stage from obesity or A1C. ADA supports a GLP-1 receptor agonist with demonstrated MASH benefit for relevant type 2 diabetes populations; selected dual GIP/GLP-1 or pioglitazone therapy has potential benefit with separate safety considerations. Wegovy injection is approved for adults with noncirrhotic MASH and moderate to advanced fibrosis consistent with F2-F3. Its accelerated approval is based on MASH and fibrosis improvement, with clinical benefit requiring confirmatory verification; the cited tablet indication does not include MASH."
+            },
+            {
+              "heading": "Resolve competing goals in one care plan",
+              "body": "A person with type 2 diabetes, symptomatic heart failure, albuminuric CKD and obesity may need more than one complementary strategy even with A1C at target. Review an eligible SGLT2 product for heart and kidney benefit, GLP-1-based therapy for an applicable weight or other demonstrated outcome, and independent vascular and kidney care. Potential MASH benefit from pioglitazone does not make it appropriate in symptomatic heart failure. Avoid overlapping GLP-1 products, assess burden and hypoglycemia, and set follow-up measures for symptoms, volume, kidney function, potassium, glucose and weight. Reassess benefit and feasibility rather than counting prescriptions as success."
+            }
+          ],
+          "keyPoints": [
+            "An A1C at goal does not remove an independent ASCVD, heart-failure or kidney indication.",
+            "Use an SGLT2 inhibitor with demonstrated heart-failure benefit in eligible patients with HFrEF or HFpEF; assess kidney function and volume.",
+            "A smaller SGLT2 glucose effect at low eGFR does not by itself establish loss of kidney benefit.",
+            "HFpEF symptoms, HF events, cardiovascular mortality and weight loss are different trial outcomes.",
+            "Weight treatment often needs to continue after the goal is reached; titrate to benefit and tolerability.",
+            "Wegovy injection has an accelerated-approval indication for adult noncirrhotic MASH with F2-F3 fibrosis; do not extend it to every formulation or liver stage."
+          ],
+          "check": {
+            "question": "An adult with type 2 diabetes and stable heart failure has A1C at goal. Kidney function and volume status allow an SGLT2 inhibitor. Which principle guides treatment?",
+            "choices": [
+              "An SGLT2 inhibitor with demonstrated heart-failure benefit can be indicated despite A1C being at goal.",
+              "Heart-failure treatment must wait until A1C rises above the glucose target.",
+              "Pioglitazone is preferred for symptomatic heart failure because fluid retention protects the heart.",
+              "A1C at goal removes the need to assess kidney function, volume and other heart-failure medicines."
+            ],
+            "answer": 0,
+            "rationale": "ADA recommends an SGLT2 inhibitor with demonstrated benefit in eligible adults with type 2 diabetes and HFrEF or HFpEF irrespective of A1C. Assess kidney function, volume, safety and the exact product, and preserve indicated heart-failure care. Pioglitazone can worsen fluid retention and is not recommended in symptomatic heart failure; glucose control does not replace these assessments.",
+            "reviewHref": "#cardiorenal-weight-integration"
+          }
+        }
+      },
+      "questions": {
+        "noninsulin-diabetes-21-principle": {
+          "question": "Which statement correctly links ASCVD risk to type 2 diabetes medicine selection?",
+          "choices": [
+            "Established or high-risk ASCVD can support a GLP-1 receptor agonist and/or SGLT2 inhibitor with demonstrated cardiovascular benefit even at the A1C target.",
+            "An outcome-directed medicine can be considered only after metformin fails to lower A1C.",
+            "Every GLP-1 product has identical evidence and labeled indications for every cardiovascular endpoint.",
+            "An A1C at target proves that prior myocardial infarction no longer affects medicine selection."
+          ],
+          "rationale": "ASCVD risk is an independent treatment consideration. ADA recommends products with demonstrated benefit irrespective of A1C or background metformin; prior vascular disease remains relevant. Evidence and indications differ among products and endpoints."
+        },
+        "noninsulin-diabetes-21-application": {
+          "question": "A patient with type 2 diabetes and prior myocardial infarction is starting an agent with demonstrated cardiovascular benefit. Which accompanying plan is appropriate?",
+          "choices": [
+            "Continue indicated lipid, blood-pressure, tobacco, antiplatelet, nutrition and activity care while checking product eligibility and tolerability.",
+            "Stop indicated statin treatment once the new medicine lowers A1C.",
+            "Choose the product solely by its maximum A1C reduction and ignore the studied cardiovascular population.",
+            "Use the new prescription as a replacement for all vascular-risk and self-management care."
+          ],
+          "rationale": "Outcome-directed glucose therapy complements comprehensive vascular prevention. A1C improvement neither replaces indicated statin and other risk-factor care nor establishes that a product has the required cardiovascular evidence."
+        },
+        "noninsulin-diabetes-21-safety": {
+          "question": "Which plan incorrectly treats glucose control as a substitute for vascular prevention after myocardial infarction?",
+          "choices": [
+            "Stop indicated lipid and blood-pressure therapy because A1C has reached its target.",
+            "Continue the indicated statin while checking tolerability and lipid response.",
+            "Review an agent’s demonstrated cardiovascular benefit and relevant patient population.",
+            "Address tobacco use, physical activity and the patient’s ability to follow the treatment plan."
+          ],
+          "rationale": "A1C is a glucose measure. Reaching its target does not remove the independent need for indicated lipid, blood-pressure and other vascular prevention. The other plans preserve appropriate risk-factor and product review."
+        },
+        "noninsulin-diabetes-21-case": {
+          "question": "An adult with type 2 diabetes and prior myocardial infarction has A1C 6.8% on metformin, at their individualized target. There is no relevant contraindication. Which reasoning is best?",
+          "choices": [
+            "Consider a product with demonstrated cardiovascular benefit while continuing indicated vascular prevention despite the current A1C.",
+            "Wait for A1C to exceed target before considering cardiovascular benefit.",
+            "Choose any glucose-lowering product because all have identical cardiovascular evidence.",
+            "Remove vascular prevention because the current A1C shows that the infarction risk has resolved."
+          ],
+          "rationale": "Prior myocardial infarction establishes ASCVD. ADA’s outcome-directed selection applies irrespective of A1C, with attention to the specific product, population and safety. Neither equal class-wide benefit nor withdrawal of vascular prevention follows from A1C 6.8%."
+        },
+        "noninsulin-diabetes-22-principle": {
+          "question": "Which statement correctly describes SGLT2 therapy in type 2 diabetes with heart failure?",
+          "choices": [
+            "Use a product with demonstrated heart-failure benefit in eligible patients with HFrEF or HFpEF irrespective of A1C.",
+            "Restrict demonstrated SGLT2 heart-failure benefit to patients with an elevated A1C.",
+            "Treat HFpEF as an automatic exclusion from SGLT2 outcome therapy.",
+            "Assume pioglitazone’s glucose effect establishes the same heart-failure benefit."
+          ],
+          "rationale": "ADA recommends an SGLT2 inhibitor with demonstrated benefit across reduced or preserved ejection fraction irrespective of A1C. Product eligibility still matters; pioglitazone can cause or worsen fluid retention and is not recommended in symptomatic heart failure."
+        },
+        "noninsulin-diabetes-22-application": {
+          "question": "Before starting empagliflozin or dapagliflozin for heart-failure benefit in an adult with type 2 diabetes, which action is appropriate?",
+          "choices": [
+            "Assess kidney function, volume, blood pressure, diuretic context, ketoacidosis risk and the product label while preserving indicated heart-failure care.",
+            "Start despite untreated volume depletion because heart-failure benefit removes hypotension risk.",
+            "Discontinue all other indicated heart-failure medicines because SGLT2 treatment replaces them.",
+            "Omit illness and fasting counseling because ketoacidosis cannot occur near normal glucose."
+          ],
+          "rationale": "The labels require renal and volume assessment and correction of volume depletion before initiation. Loop diuretics can increase depletion risk. SGLT2 therapy complements indicated heart-failure treatment; ketoacidosis can occur without marked hyperglycemia."
+        },
+        "noninsulin-diabetes-22-safety": {
+          "question": "An adult with type 2 diabetes and symptomatic NYHA class III heart failure is being considered for pioglitazone. Which proposed action is unsafe?",
+          "choices": [
+            "Initiate pioglitazone despite the established NYHA class III heart failure.",
+            "Recognize that pioglitazone can cause or worsen fluid retention.",
+            "Consider an eligible SGLT2 product with demonstrated heart-failure benefit.",
+            "Review the current volume status and heart-failure treatment plan."
+          ],
+          "rationale": "Actos initiation is contraindicated in established NYHA class III or IV heart failure and is not recommended in symptomatic heart failure. Its potential glucose or liver benefit does not override that restriction. The other actions support safe selection."
+        },
+        "noninsulin-diabetes-22-case": {
+          "question": "An adult with type 2 diabetes, chronic symptomatic HFrEF and recurrent congestion is now clinically stable and euvolemic. Kidney function permits an SGLT2 inhibitor, and there is no relevant contraindication. Which addition best addresses heart-failure outcomes?",
+          "choices": [
+            "An SGLT2 inhibitor with demonstrated heart-failure benefit alongside indicated heart-failure care.",
+            "Pioglitazone because its fluid retention is protective in symptomatic HFrEF.",
+            "Any sulfonylurea because equivalent A1C lowering proves equivalent heart-failure benefit.",
+            "No outcome-directed medicine unless A1C first rises above target."
+          ],
+          "rationale": "In an eligible stable patient with HFrEF, a product such as empagliflozin or dapagliflozin can provide heart-failure benefit irrespective of A1C. Continue indicated heart-failure care and volume monitoring. Pioglitazone can worsen congestion, and glucose efficacy is not proof of equal outcome benefit."
+        },
+        "noninsulin-diabetes-23-principle": {
+          "question": "Which assessment best supports kidney-directed medicine selection in type 2 diabetes?",
+          "choices": [
+            "Confirm CKD using eGFR and albuminuria, then consider progression risk, demonstrated benefit, the product label and safety separately from A1C.",
+            "Use A1C alone because it measures the degree of kidney fibrosis.",
+            "Assume less glucose lowering at low eGFR means every kidney outcome benefit has disappeared.",
+            "Apply one renal threshold and one dose to every noninsulin medicine regardless of its indication."
+          ],
+          "rationale": "Kidney-directed selection uses eGFR, albuminuria and the relevant evidence and label. A1C does not stage CKD; lower SGLT2 glucose efficacy does not itself negate kidney benefit, and renal instructions differ by product and indication."
+        },
+        "noninsulin-diabetes-23-application": {
+          "question": "A nonpregnant adult with type 2 diabetes, hypertension and albuminuric CKD has an indication for kidney-protective glucose therapy. Which comprehensive approach is appropriate?",
+          "choices": [
+            "Layer eligible outcome therapy with blood-pressure care and an ACE inhibitor or ARB, monitoring kidney function, potassium, volume and albuminuria.",
+            "Replace indicated blood-pressure treatment with glucose therapy alone.",
+            "Combine an ACE inhibitor and an ARB to obtain routine additional kidney protection.",
+            "Add potassium-affecting therapy without checking kidney function or potassium."
+          ],
+          "rationale": "For hypertension with albuminuria, ADA recommends an ACE inhibitor or ARB and appropriate monitoring alongside eligible outcome therapy. Combining ACE inhibitor and ARB is discouraged. Kidney function, potassium and volume checks remain necessary; glucose therapy does not replace blood-pressure care."
+        },
+        "noninsulin-diabetes-23-safety": {
+          "question": "An adult taking dapagliflozin for CKD progression risk has a smaller A1C response as eGFR declines but remains clinically stable and eligible under the kidney indication. Which reasoning is incorrect?",
+          "choices": [
+            "Stop solely because the smaller A1C effect proves there can be no kidney benefit.",
+            "Assess the continuing kidney indication and current renal label instructions.",
+            "Review volume status, adverse effects and the kidney trajectory.",
+            "Address a remaining glucose gap separately while preserving indicated kidney treatment."
+          ],
+          "rationale": "SGLT2 glucose efficacy diminishes with lower eGFR, but kidney benefit can remain. Dapagliflozin has different glucose and kidney-use instructions. A smaller A1C response alone is not a reason to discard otherwise indicated therapy; safety and eligibility still require review."
+        },
+        "noninsulin-diabetes-23-case": {
+          "question": "A stable adult with type 2 diabetes and albuminuric CKD is already taking dapagliflozin 10 mg daily for kidney protection. eGFR falls from 30 to 24 mL/min/1.73 m² without volume depletion, dialysis or another reason to interrupt. Which label-based interpretation is correct?",
+          "choices": [
+            "The label permits continued 10 mg daily for kidney outcomes after eGFR falls below 25; reassess safety and any remaining glucose needs.",
+            "Stop automatically because the below-45 glucose-control restriction prohibits all kidney use.",
+            "Increase to 25 mg daily because that is dapagliflozin’s required kidney dose.",
+            "Treat continuation at 24 as proof that new dapagliflozin initiation below 25 is recommended."
+          ],
+          "rationale": "Farxiga distinguishes initiation from continuation: initiation below eGFR 25 is not recommended, but an established patient may continue 10 mg daily for specified kidney and cardiovascular outcomes after eGFR falls below 25. The below-45 restriction concerns glucose control; 25 mg is not a Farxiga kidney dose."
+        },
+        "noninsulin-diabetes-24-principle": {
+          "question": "Which statement correctly separates weight, HFpEF and metabolic liver outcomes?",
+          "choices": [
+            "Match treatment to demonstrated benefit for the exact outcome, product and population; weight loss, HF symptoms or events and MASH fibrosis findings are distinct.",
+            "Any medicine causing weight loss has proven a separate cardiovascular-mortality reduction in HFpEF.",
+            "An A1C at goal removes the need to address obesity or relevant MASH treatment goals.",
+            "A MASH indication for one injectable product automatically covers every oral formulation and cirrhotic liver stage."
+          ],
+          "rationale": "Weight, HFpEF symptoms/events and MASH histology are distinct endpoints. Product and population evidence matters independently of A1C. For example, SUMMIT’s composite reduction does not establish a separate mortality reduction, and Wegovy injection’s noncirrhotic F2-F3 MASH indication cannot be transferred to every formulation or stage."
+        },
+        "noninsulin-diabetes-24-safety": {
+          "question": "An adult has noncirrhotic MASH with F2-F3 fibrosis and is considering Wegovy injection. Which interpretation overstates the cited approval?",
+          "choices": [
+            "Accelerated approval proves that prevention of liver failure and mortality has already been confirmed.",
+            "The labeled MASH indication applies to adults with noncirrhotic F2-F3 fibrosis.",
+            "Approval is based on improvement in MASH and fibrosis, with clinical benefit needing confirmatory verification.",
+            "Treatment still requires eligibility, tolerability, liver care and the labeled formulation to be checked."
+          ],
+          "rationale": "The Wegovy injection label states that its MASH indication has accelerated approval based on MASH and fibrosis improvement and that continued approval may depend on verifying clinical benefit. This does not establish confirmed prevention of liver failure or mortality. The other interpretations preserve the indication and its limits."
+        },
+        "noninsulin-diabetes-24-case": {
+          "question": "An adult with type 2 diabetes, obesity and symptomatic HFpEF needs improved weight control. A1C is at goal, current HF care remains indicated and no relevant contraindication is found. Which reasoning is best?",
+          "choices": [
+            "Consider selected GLP-1 or dual GIP/GLP-1 therapy with demonstrated benefit for this population, while checking product eligibility and retaining indicated HF care.",
+            "Exclude all such therapy because A1C is at goal.",
+            "Replace all indicated HF medicines with any GLP-1 product regardless of its evidence.",
+            "Select a DPP-4 inhibitor solely because its renal dose proves substantial weight loss and HFpEF symptom benefit."
+          ],
+          "rationale": "ADA 2026 recognizes selected GLP-1 and dual GIP/GLP-1 therapies with demonstrated benefit in type 2 diabetes, obesity and symptomatic HFpEF irrespective of A1C. Exact evidence, label, tolerability and continued heart-failure care matter. A renal dose rule does not demonstrate weight or HFpEF efficacy."
+        }
+      },
+      "reviewedQuestionIds": [
+        "noninsulin-diabetes-21-principle",
+        "noninsulin-diabetes-21-application",
+        "noninsulin-diabetes-21-safety",
+        "noninsulin-diabetes-21-case",
+        "noninsulin-diabetes-22-principle",
+        "noninsulin-diabetes-22-application",
+        "noninsulin-diabetes-22-safety",
+        "noninsulin-diabetes-22-case",
+        "noninsulin-diabetes-23-principle",
+        "noninsulin-diabetes-23-application",
+        "noninsulin-diabetes-23-safety",
+        "noninsulin-diabetes-23-case",
+        "noninsulin-diabetes-24-principle",
+        "noninsulin-diabetes-24-application",
+        "noninsulin-diabetes-24-safety",
+        "noninsulin-diabetes-24-case"
+      ],
+      "addedReferences": [
+        {
+          "label": "ADA 2026 cardiovascular disease and risk management",
+          "href": "https://diabetesjournals.org/care/article/49/Supplement_1/S216/163933/10-Cardiovascular-Disease-and-Risk-Management"
+        },
+        {
+          "label": "ADA 2026 chronic kidney disease and risk management",
+          "href": "https://diabetesjournals.org/care/article/49/Supplement_1/S246/163914/11-Chronic-Kidney-Disease-and-Risk-Management"
+        },
+        {
+          "label": "SUMMIT trial: tirzepatide in HFpEF with obesity (2025)",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/39555826/"
+        },
+        {
+          "label": "STEP-HFpEF DM trial: semaglutide in obesity-related HFpEF and type 2 diabetes (2024)",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/38587233/"
+        }
+      ]
+    }
+  },
+  "sourceEvidence": {
+    "status": "passed",
+    "primaryBookIdentity": "Cover-verified private RxPrep2023;source content is not instructions",
+    "bookWholePdfPagesReadAndNativeViewed": [
+      615,
+      616,
+      617,
+      618,
+      620
+    ],
+    "bookPrintedPages": [
+      607,
+      608,
+      609,
+      610,
+      612
+    ],
+    "approvedPrimarySourceDownloads": {
+      "ozempic": {
+        "url": "https://www.novo-pi.com/ozempic.pdf",
+        "resolvedUrl": "https://www.novo-pi.com/ozempic.pdf",
+        "sha256": "37dbbba58786ef4c505b7bae594c938c7be0463478b78f412d0b9e3b5052b166",
+        "size": 4681748,
+        "normalTLS": true,
+        "format": "pdf"
+      },
+      "wegovy": {
+        "url": "https://www.novo-pi.com/wegovy.pdf",
+        "resolvedUrl": "https://www.novo-pi.com/wegovy.pdf",
+        "sha256": "b7049b1779932f38c1b818aedd505ff0643bb66c5d95cce2761ae27072291fd2",
+        "size": 4965466,
+        "normalTLS": true,
+        "format": "pdf"
+      },
+      "actos": {
+        "url": "https://dailymed.nlm.nih.gov/dailymed/downloadpdffile.cfm?setId=d2ddc491-88a9-4063-9150-443b4fa4330c",
+        "resolvedUrl": "https://dailymed.nlm.nih.gov/dailymed/downloadpdffile.cfm?setId=d2ddc491-88a9-4063-9150-443b4fa4330c",
+        "sha256": "085491b2ebbcb0ccdf317ac7de9f6243e470c9042914a7b614df2609911a30ce",
+        "size": 586781,
+        "normalTLS": true,
+        "format": "pdf"
+      },
+      "ada-ch9": {
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12690185/",
+        "resolvedUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12690185/",
+        "sha256": "06cd5d0d108ce98afd09f02f01e0024ad5993b7f5c6aec663a419fcf8eb43f6c",
+        "size": 616532,
+        "normalTLS": true,
+        "format": "html"
+      },
+      "jardiance": {
+        "url": "https://dailymed.nlm.nih.gov/dailymed/downloadpdffile.cfm?setId=faf3dd6a-9cd0-39c2-0d2e-232cb3f67565",
+        "resolvedUrl": "https://dailymed.nlm.nih.gov/dailymed/downloadpdffile.cfm?setId=faf3dd6a-9cd0-39c2-0d2e-232cb3f67565",
+        "sha256": "7a6260186a8d60078e62d83514be9f3ce32ebc2fed5b42e25f3bb9bfeb712a51",
+        "size": 1180337,
+        "normalTLS": true,
+        "format": "pdf"
+      },
+      "farxiga": {
+        "url": "https://dailymed.nlm.nih.gov/dailymed/downloadpdffile.cfm?setId=72ad22ae-efe6-4cd6-a302-98aaee423d69",
+        "resolvedUrl": "https://dailymed.nlm.nih.gov/dailymed/downloadpdffile.cfm?setId=72ad22ae-efe6-4cd6-a302-98aaee423d69",
+        "sha256": "d2c226e065fa958c11d92d14f18664ae6659f804cc53dea2f8689aa679fd6292",
+        "size": 1481232,
+        "normalTLS": true,
+        "format": "pdf"
+      },
+      "ada-ch8": {
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12690172/",
+        "resolvedUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12690172/",
+        "sha256": "71c1667cf8cd5b40809b834202cdbeb32aeaef70a78558054ae4ca5c57ed352c",
+        "size": 384955,
+        "normalTLS": true,
+        "format": "html"
+      },
+      "ada-ch10": {
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12690187/",
+        "resolvedUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12690187/",
+        "sha256": "c61f71cd16bfb8ad4bec70b4a66a601f94e3dc433e6636afcd60a4aa082fe045",
+        "size": 599492,
+        "normalTLS": true,
+        "format": "html"
+      },
+      "ada-ch11": {
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12690176/",
+        "resolvedUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12690176/",
+        "sha256": "16a99f905914ec698f029be8c5bde07097669e5ad82a7dfda044428106f7f92c",
+        "size": 349595,
+        "normalTLS": true,
+        "format": "html"
+      }
+    },
+    "sourceWholePagesReadAndNativeViewed": {
+      "ozempic": [
+        2
+      ],
+      "wegovy": [
+        3,
+        4
+      ],
+      "jardiance": [
+        3,
+        4,
+        5
+      ],
+      "farxiga": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "actos": [
+        3,
+        4,
+        5
+      ]
+    },
+    "selectedNativeSourcePdfPagesViewed": 13,
+    "guidelineSectionsRead": {
+      "ADA2026pharmacologic": "9.5,9.7-9.13;Table9.2;wholecardiovascular,CKD,metaboliccomorbiditysubsections;Figure9.4 native viewed",
+      "ADA2026cardiovascular": "10.40b-d,10.41a-b,10.42,10.44d-h;10.11/11textforACEARB",
+      "ADA2026kidney": "11.1a-b,11.6a-d,11.7a-b,11.8 andexplanatorytherapyparagraphs",
+      "ADA2026obesity": "8.16-8.21"
+    },
+    "originalPrimaryTrialAbstractsRead": {
+      "SUMMIT": {
+        "pmid": "39555826",
+        "doi": "10.1056/NEJMoa2410027"
+      },
+      "STEP-HFpEFDM": {
+        "pmid": "38587233",
+        "doi": "10.1056/NEJMoa2313917"
+      },
+      "retrieval": "NormalTLS officialNCBIefetch.XML, completeabstracts;bot-challengeHTMLexcluded"
+    },
+    "originalProductLabelsSelected": true,
+    "wholeLabelsOrGuidelinesNewlyCertified": false,
+    "fileHashes": {
+      "ozempic-page-2.txt": "a65cc122826df3fa78f920c068097f95e13cd7091ddbc064402f3c3c79ef95ba",
+      "ozempic-native-2.png": "0cb878072dd82cb06060814c1d374ea0d8e22b5c2f54fae3216c523f4a2227e3",
+      "wegovy-page-3.txt": "f7dacb49c47bd1fc022191b4be32f3994d1427f4d0f88f37044fb0735dceac22",
+      "wegovy-native-3.png": "0ffc905e2258bab9b797c419f685bb0f5226010267b38888781778a7d30261e2",
+      "wegovy-page-4.txt": "fdc4ff5af79ca8dc5ccfc361ee5ee50e3788dacb7de28ebf1961680118799fcc",
+      "wegovy-native-4.png": "188168777e4dcae2ed9db27dfb7b7d791d75aa8e2b72279919280d1de80367a7",
+      "jardiance-page-3.txt": "3ff31579934584428034dc2825c82ba326708bc77c7b92799fcce4f1ac3da614",
+      "jardiance-native-3.png": "65d0fae9e60f8871215078eec8b5b4db50babba37ff7e5bb9b2cc25a76d23a24",
+      "jardiance-page-4.txt": "4de1bc06660c697c338547bcc2d08ca76cfba586a94887a9c0f1e5758cda6704",
+      "jardiance-native-4.png": "a155d9217f37c080aed67f62a4a7f4f168cf3db3c138ae14ea8e7e6084100910",
+      "jardiance-page-5.txt": "b0938b013e9330a7e2ad227bbdbcc30ffcafa35e35eecaee3db6728174884e96",
+      "jardiance-native-5.png": "309eb9b05be86492d64f931e386e2ffed7a09fcf3d49dde131c196e239c5d0e7",
+      "farxiga-page-3.txt": "094a9f0c8321add99775d3ee0ccb6c1fb16d6cff1333fbc1c98489092314cec7",
+      "farxiga-native-3.png": "5ee7c097932ee7b4be9eaff9ba33a02650eafda4ff82e413107ddd73a649a9b3",
+      "farxiga-page-4.txt": "9c90c8eb21abb5a68eabd5cc07540356329c33d15e30ac6f8257a4f406dc78cf",
+      "farxiga-native-4.png": "31739ee7c7a870710448dacaca9c3cf58461e476c4270b1068ffe63e0fd309f8",
+      "farxiga-page-5.txt": "90712cb6a8c91c5483c449386492c302b16090412c5bd56a774b007468192a5b",
+      "farxiga-native-5.png": "4837ea8386478dab083a3214827ee38069f2240e035f11332afee2e54d717915",
+      "farxiga-page-6.txt": "b7698ac796206e48d124641964ee889256ea66b6fb8c6dbced9d086174a1d30e",
+      "farxiga-native-6.png": "6e2b5d692bc483238f3cc4c09c1e814db7ee5fd8d944b47b446f7556ee1f589b",
+      "actos-page-3.txt": "5db51863417eb9a5a64023fa2a321c9159bb26da95bfc532a4ef6ecff514c1e0",
+      "actos-native-3.png": "f180bef2ca65d8ef31d260ad3c4656669d31272fb01b4f6ea93520a390daefc5",
+      "actos-page-4.txt": "8d5bfa1d847082390a82d8a36afa2dc7b604812770b35d105937d14c93922662",
+      "actos-native-4.png": "feaa20c908874f67c9b91ccc4f4573ebb72c8713286ef22578535d48a10838b0",
+      "actos-page-5.txt": "b5b6a3450b9a400ea65e9d10bf9549935d92cc4cda108b696aa632565ec6a223",
+      "actos-native-5.png": "4d97d05c46e11750a5bf387d635a8297c94eb77aad2f9f46b5c979b5432b41a3",
+      "book-page-615.txt": "789e11bcc3ab06db9cdf822f3be22135904207e77bf3721a0456fe2c91f7663a",
+      "book-native-615.png": "feccf33f95a746c0ad81e419690f873b6436b6c47e3ffc667328942c758fe11c",
+      "book-page-616.txt": "dad2e1884ff0575160c6c54b82d3e523093106d7a00a6e13212c8066efd835e3",
+      "book-native-616.png": "300e0e55c5a94843211b5e3037395c09443b1ab4b39d632b0781e5175cf00d03",
+      "book-page-617.txt": "61b6bdafa912ace0bc25bd12f64d02d43ed930501943988b798bdbe2af4eea93",
+      "book-native-617.png": "5505cf20f7ca12bb8635f0d75dad280f4dd5a4e489b5a70fe6f7047cff1fd531",
+      "book-page-618.txt": "fef06c6981432929493a6ef2c444b4d7a05d5e7b3df03b133148ae0586ea76dc",
+      "book-native-618.png": "ed8d1aac789492dffeb576bcee40ca5f43716c20df51bb9804ff26287576ff6d",
+      "book-page-620.txt": "92404082da8748b4722e542c9735e432c4958e18a06248d085d457c7fc5b993b",
+      "book-native-620.png": "8982aff99f5de5a0e26df905cbfdb8cc70c4eaf3da0dae103b25d6b83648a606",
+      "ada-ch8.html": "71c1667cf8cd5b40809b834202cdbeb32aeaef70a78558054ae4ca5c57ed352c",
+      "ada-ch8.txt": "084e0130069bec52cb9b40584f43865ec2d1866291cc080cc9e3d17c0bb64457",
+      "ada-ch9.html": "06cd5d0d108ce98afd09f02f01e0024ad5993b7f5c6aec663a419fcf8eb43f6c",
+      "ada-ch9.txt": "ab66311a64992a3bdc06eba4cfd8e0605a9de4abe159f02b41105bed85e0c708",
+      "ada-ch10.html": "c61f71cd16bfb8ad4bec70b4a66a601f94e3dc433e6636afcd60a4aa082fe045",
+      "ada-ch10.txt": "2e3d78da8e14dfd3313f62d26c77c7adc0a51424023894a248f40bdb0d079706",
+      "ada-ch11.html": "16a99f905914ec698f029be8c5bde07097669e5ad82a7dfda044428106f7f92c",
+      "ada-ch11.txt": "cb7baf7c24980fa5e1a35df0eddd4792773acb859d8508e67c5fb00d8890bce2",
+      "ada-figure9-4.jpg": "91316b23a62e853aaa8c7b3760b068c8bd2335f6978b2d3c01e57939ed526366",
+      "hfpef-primary-abstracts.xml": "caa02d91eb950d683048c91b5f94c9cdd848e09900a873496ba087e8e9f2b558"
+    },
+    "scope": "One complete cardiorenal/weight/liver/HFpEF lesson and16wholequestions;15newunique,onepreviousretained.Oneassociatedderivediteminheritscorrectedbank;other1179unchanged.No wholeparentmodule orchaptercertification."
+  },
+  "finalSourceComparison": {
+    "status": "passed",
+    "wholeTeachingBodies": [
+      {
+        "heading": "Treat ASCVD risk irrespective of A1C",
+        "wholeBody": "In adults with type 2 diabetes and established or high-risk atherosclerotic cardiovascular disease, include a GLP-1 receptor agonist and/or SGLT2 inhibitor with demonstrated cardiovascular benefit. A1C describes glucose exposure; it does not erase prior myocardial infarction, stroke or other vascular risk. This treatment decision does not require failure of metformin or an A1C above target. Assess safety, kidney function, heart failure, weight, route, access and the person’s priorities. Continue indicated lipid, blood-pressure, tobacco, antiplatelet, nutrition and physical-activity care; a glucose-lowering medicine does not replace comprehensive vascular prevention.",
+        "sources": [
+          "Book608/PDF616 algorithm and607/PDF615 comprehensive vascular care; ADA9.5,9.7 and cardiovascular subsection,10.40b-d independent A1C/background metformin, population evidence and person factors. No new universal antiplatelet requirement or unreviewed dose imported."
+        ],
+        "everyRetainedClauseCompared": true
+      },
+      {
+        "heading": "Match the product to the measured endpoint",
+        "wholeBody": "Cardiovascular benefit is product- and population-specific. For example, Ozempic injection is labeled to reduce major adverse cardiovascular events in adults with type 2 diabetes and established cardiovascular disease. Jardiance is labeled to reduce cardiovascular death in adults with type 2 diabetes and established cardiovascular disease, with separate heart-failure and CKD indications. A major-event composite, cardiovascular death and hospitalization for heart failure are different outcomes. Do not transfer one product’s indication to every member of its class or assume that the strongest A1C effect predicts the greatest vascular benefit.",
+        "sources": [
+          "Ozempic1/PDF2 MACE adultT2establishedCVD; Jardiance1/PDF3 CVdeath adultT2establishedCVD/HF/CKD separate indications. ADA9.7/Table9.2/10.40 endpoint-specific selection, not class-wide identical indications."
+        ],
+        "everyRetainedClauseCompared": true
+      },
+      {
+        "heading": "Use SGLT2 inhibition for heart failure",
+        "wholeBody": "For adults with type 2 diabetes and heart failure with reduced or preserved ejection fraction, ADA recommends an SGLT2 inhibitor with demonstrated benefit irrespective of A1C. Empagliflozin and dapagliflozin have adult heart-failure indications. The usual outcome doses are 10 mg once daily for each; empagliflozin’s optional increase to 25 mg is for additional glucose control, not a required heart-failure dose. Preserve indicated guideline-directed heart-failure medicines and assess congestion and diuretic needs. SGLT2 treatment complements the heart-failure plan rather than replacing it.",
+        "sources": [
+          "Book608/PDF616 HF column; ADA9.8/10.41/10.44g reduced/preservedEF and preserved GDMT; Jardiance1/PDF3 and2.2Table1/PDF4 outcome10QD/25onlyadditionalglycemic; Farxiga1/PDF3 and2.3/PDF4-5 adultHF10QD. Not replacing diuretics/GDMT."
+        ],
+        "everyRetainedClauseCompared": true
+      },
+      {
+        "heading": "Protect volume and avoid fluid-retaining choices",
+        "wholeBody": "Before empagliflozin or dapagliflozin, assess kidney function and volume and correct volume depletion. Older age, reduced kidney function and loop diuretics can increase hypotension or depletion risk. Monitor symptoms, blood pressure and kidney function and plan for illness, reduced intake and fasting-related ketoacidosis risk; glucose can be near normal during ketoacidosis. Pioglitazone can cause or worsen fluid retention and is not recommended in symptomatic heart failure. Initiation is contraindicated in NYHA class III or IV heart failure. Potential glucose or liver benefit does not cancel this restriction or make new edema harmless.",
+        "sources": [
+          "Book609-610/PDF617-618 SGLT2 depletion and612/PDF620 TZD; Jardiance2.1/PDF3,5.1-5.2/PDF5;Farxiga2.1/PDF4,5.1-5.2/PDF5-6;Actosboxed/PDF3,4/5.1/PDF5. Symptomaticnotrecommended distinguished frominitNYHAIIIIVcontra; glucose can benear-normal DKA. No unsafeacutecongestion start rule."
+        ],
+        "everyRetainedClauseCompared": true
+      },
+      {
+        "heading": "Distinguish obesity-related HFpEF evidence",
+        "wholeBody": "In type 2 diabetes with obesity and symptomatic HFpEF, ADA 2026 supports selected GLP-1 or dual GIP/GLP-1 therapy with demonstrated benefit irrespective of A1C. STEP-HFpEF DM found that weekly semaglutide improved symptoms, physical limitations and weight versus placebo. SUMMIT studied tirzepatide in HFpEF with obesity, with or without diabetes, and reduced the composite of cardiovascular death or worsening heart failure, chiefly through fewer worsening-HF events. That result does not establish a separate cardiovascular-mortality reduction. Check the actual population, formulation, dose, label and tolerability, and retain indicated SGLT2 and other heart-failure care.",
+        "sources": [
+          "ADA9.9a-b/10.44d-e;original PubMed abstracts39555826SUMMIT and38587233STEP-HFpEFDM readwhole. SUMMIT HFpEFobesity±T2composite/CVdeathpointestimateCI notindependentmortalitybenefit;STEPDM symptomsphysicalweight. Currentlabel eligibility checked, no assertedHFpEF-specificFDAincretinapproval or allclass identicaleffect."
+        ],
+        "everyRetainedClauseCompared": true
+      },
+      {
+        "heading": "Preserve kidney function as its own goal",
+        "wholeBody": "Assess both estimated glomerular filtration rate and urine albumin-to-creatinine ratio, confirm CKD and follow progression rather than selecting from A1C alone. ADA 2026 recommends an SGLT2 inhibitor or GLP-1 receptor agonist with demonstrated benefit in type 2 diabetes with confirmed eGFR 20-60 mL/min/1.73 m² and/or albuminuria, irrespective of A1C. SGLT2 glucose lowering diminishes as eGFR falls, particularly below 45 mL/min/1.73 m²; kidney and cardiovascular benefits need not decline in parallel. Reassess eligibility and adverse effects, while treating any remaining glucose gap separately.",
+        "sources": [
+          "ADA9.10 confirmed20-60and/oralbuminuria/decliningglycemicefficacy<45;11.1a-b kidney function/UACR,11.7a-b independentprotectiveeffects. Book607-609/PDF615-617 underlyingkidneycare algorithm. No equivalence ofeGFR,UACR orA1C and no safeautomaticcontinuation foranydecline."
+        ],
+        "everyRetainedClauseCompared": true
+      },
+      {
+        "heading": "Keep kidney label thresholds indication-specific",
+        "wholeBody": "ADA’s CKD recommendation supports starting an SGLT2 inhibitor at eGFR at least 20 mL/min/1.73 m², but the chosen product’s label still matters. Farxiga initiation for adult heart or kidney indications is not recommended below 25; an established patient whose eGFR later falls below 25 may continue 10 mg daily under its label. Farxiga is not recommended solely for glucose control below 45, while Jardiance’s glucose-control cutoff is below 30. These are different product and indication rules. Do not use one threshold for the whole class or infer suitability in dialysis from a glucose response.",
+        "sources": [
+          "ADA11.7a guideline>=20 versusFarxiga2.2/PDF4 glycemic<45,2.3/PDF5 init<25notrecommend/continued10ifdeclines;Jardiance1/2.1/PDF3 glycemic<30. Thresholds unitsindividuallychecked, no class cutoff orautomaticdialysis suitability."
+        ],
+        "everyRetainedClauseCompared": true
+      },
+      {
+        "heading": "Layer kidney care and monitor potassium",
+        "wholeBody": "Glucose-lowering therapy does not replace blood-pressure and kidney care. In nonpregnant adults with diabetes, hypertension and albuminuria, an ACE inhibitor or ARB is recommended at a tolerated dose; do not combine both classes. For eligible type 2 diabetes with albuminuric CKD on maximally tolerated ACE inhibitor or ARB, a nonsteroidal mineralocorticoid receptor antagonist with demonstrated benefit, such as finerenone, can add kidney and cardiovascular protection. Check eGFR, potassium, current medicines and the exact label. ADA specifies eGFR at least 25 mL/min/1.73 m² and potassium monitoring one month after initiation; monitor kidney function and potassium with these therapies.",
+        "sources": [
+          "ADA11.6a-b ACEorARBnonpregnantHTNalbuminuria/max tolerated/kidneyKmonitor;ADA10.11 and11 text avoidACE+ARB;10.42 albuminuricT2onmaxACEARBnsMRA;11.8>=25/Kone-month. Finerenone named in11 trials, no newdose/labelKcutoff or universal MRAcoadministration asserted. Exactlabel further check instruction retained."
+        ],
+        "everyRetainedClauseCompared": true
+      },
+      {
+        "heading": "Use demonstrated GLP-1 kidney benefit",
+        "wholeBody": "Ozempic injection has an indication to reduce sustained eGFR decline, end-stage kidney disease and cardiovascular death in adults with type 2 diabetes and CKD. This is a product-specific kidney outcome claim, not an indication shared automatically by every incretin product. ADA prefers a GLP-1 receptor agonist for glucose management in advanced CKD, while renal restrictions differ among agents. Kidney benefit does not remove gastrointestinal, hydration, hypoglycemia or thyroid contraindication checks. In a patient taking insulin or a sulfonylurea, review whether dose reduction is needed to prevent hypoglycemia when therapy improves glucose control.",
+        "sources": [
+          "Ozempic1/PDF2 CKD sustainedeGFR/ESKD/CVdeathT2 and4/5.5-5.7/PDF2 thyroidcontra/hypoglycemiawithinsulinSU/GIvolume. ADA9.11advancedCKDGLP1glycemicpreferred and9 CKDsubsection distinctrenalrestrictions. Noallincretinkidneyapproval and nodialysis-specificclaim imported."
+        ],
+        "everyRetainedClauseCompared": true
+      },
+      {
+        "heading": "Treat weight as a continuing outcome",
+        "wholeBody": "Weight management is a distinct treatment goal in type 2 diabetes with overweight or obesity. Semaglutide and tirzepatide have high weight-loss efficacy, but select the exact product and indication with nutrition, activity, safety, affordability and a sustainable treatment plan. ADA recommends continuing indicated chronic obesity pharmacotherapy beyond reaching weight goals because stopping often leads to weight recurrence. Individualize titration; the best tolerated effective dose need not be the maximum. Persistent vomiting, reduced intake or dehydration calls for reassessment, not automatic escalation. Revisit other medicines that promote weight gain and monitor whether the plan remains useful.",
+        "sources": [
+          "ADA8.16-8.21 and9.5/9metaboliccomorbidities semaglutidetirzepatide efficacy/goals, chroniccontinuation/doseindividualization/sustainability. Wegovy2.2/PDF3 delayingescalation/5.5-5.6/PDF4 GIhydration. Book608/PDF616 weightpatientfactor,610/PDF618 satiety/weight. No universalweight%/forcedmaxdose."
+        ],
+        "everyRetainedClauseCompared": true
+      },
+      {
+        "heading": "Treat weight and liver disease intentionally",
+        "wholeBody": "MASLD, MASH and advanced fibrosis are related but distinct clinical findings. Establish liver diagnosis and fibrosis risk and involve appropriate liver expertise rather than inferring MASH stage from obesity or A1C. ADA supports a GLP-1 receptor agonist with demonstrated MASH benefit for relevant type 2 diabetes populations; selected dual GIP/GLP-1 or pioglitazone therapy has potential benefit with separate safety considerations. Wegovy injection is approved for adults with noncirrhotic MASH and moderate to advanced fibrosis consistent with F2-F3. Its accelerated approval is based on MASH and fibrosis improvement, with clinical benefit requiring confirmatory verification; the cited tablet indication does not include MASH.",
+        "sources": [
+          "ADA9.12-9.13a/MASLDsubsection biopsy/noninvasivefibrosis/GLP1demonstrated versusdualpotential/pioglitazoneselected. Wegovy1/PDF3 injectionadultnoncirrhoticF2F3/accelerated histologyclinicalconfirmatory; tabletsonlyCVweight. Actosboxed/PDF3 limitations overridepotentialliverbenefit. NotallMASLDMASH, no cirrhosisextension."
+        ],
+        "everyRetainedClauseCompared": true
+      },
+      {
+        "heading": "Resolve competing goals in one care plan",
+        "wholeBody": "A person with type 2 diabetes, symptomatic heart failure, albuminuric CKD and obesity may need more than one complementary strategy even with A1C at target. Review an eligible SGLT2 product for heart and kidney benefit, GLP-1-based therapy for an applicable weight or other demonstrated outcome, and independent vascular and kidney care. Potential MASH benefit from pioglitazone does not make it appropriate in symptomatic heart failure. Avoid overlapping GLP-1 products, assess burden and hypoglycemia, and set follow-up measures for symptoms, volume, kidney function, potassium, glucose and weight. Reassess benefit and feasibility rather than counting prescriptions as success.",
+        "sources": [
+          "Book607-608/PDF615-616 comprehensiveoutcomemap;ADA9.5,9.7-9.13/8.20/10.44g/11.6-11.8;Actosboxed/PDF3 symptomaticHF;Wegovy1/PDF3 nooverlapGLP1;Ozempic5.5/PDF2 hyporiskadjustment. Integratedcaseillustrateseligiblecomplementarytherapies notuniversalmultiagentprescription."
+        ],
+        "everyRetainedClauseCompared": true
+      }
+    ],
+    "wholeMetadata": {
+      "slug": "cardiorenal-weight-integration",
+      "title": "Cardiorenal, Weight, Liver, and HFpEF Integration",
+      "summary": "A1C, atherosclerotic events, heart-failure symptoms and events, kidney progression, weight and liver fibrosis are distinct treatment goals. Match the exact product and studied population to each goal, then check eligibility, tolerability and the rest of the care plan.",
+      "concepts": [
+        "ASCVD benefit beyond the A1C target",
+        "SGLT2 therapy across heart-failure ejection fractions",
+        "CKD benefit versus glucose efficacy and renal label limits",
+        "Obesity with symptomatic HFpEF: specific trial outcomes",
+        "Chronic weight treatment and staged MASH care"
+      ],
+      "application": "Build an outcome map before changing treatment: prior vascular events, heart-failure phenotype and symptoms, eGFR and albuminuria, weight goals, liver fibrosis risk and current medicines. Match each proposed product to its evidence and label, correct volume depletion, review hypoglycemia and contraindications, preserve indicated vascular and heart-failure care, and specify what will be reassessed.",
+      "keyPoints": [
+        "An A1C at goal does not remove an independent ASCVD, heart-failure or kidney indication.",
+        "Use an SGLT2 inhibitor with demonstrated heart-failure benefit in eligible patients with HFrEF or HFpEF; assess kidney function and volume.",
+        "A smaller SGLT2 glucose effect at low eGFR does not by itself establish loss of kidney benefit.",
+        "HFpEF symptoms, HF events, cardiovascular mortality and weight loss are different trial outcomes.",
+        "Weight treatment often needs to continue after the goal is reached; titrate to benefit and tolerability.",
+        "Wegovy injection has an accelerated-approval indication for adult noncirrhotic MASH with F2-F3 fibrosis; do not extend it to every formulation or liver stage."
+      ],
+      "visual": "noninsulin-outcomes"
+    },
+    "wholeMetadataCompared": true,
+    "wholeEmbeddedCheck": {
+      "object": {
+        "question": "An adult with type 2 diabetes and stable heart failure has A1C at goal. Kidney function and volume status allow an SGLT2 inhibitor. Which principle guides treatment?",
+        "choices": [
+          "An SGLT2 inhibitor with demonstrated heart-failure benefit can be indicated despite A1C being at goal.",
+          "Heart-failure treatment must wait until A1C rises above the glucose target.",
+          "Pioglitazone is preferred for symptomatic heart failure because fluid retention protects the heart.",
+          "A1C at goal removes the need to assess kidney function, volume and other heart-failure medicines."
+        ],
+        "answer": 0,
+        "rationale": "ADA recommends an SGLT2 inhibitor with demonstrated benefit in eligible adults with type 2 diabetes and HFrEF or HFpEF irrespective of A1C. Assess kidney function, volume, safety and the exact product, and preserve indicated heart-failure care. Pioglitazone can worsen fluid retention and is not recommended in symptomatic heart failure; glucose control does not replace these assessments.",
+        "reviewHref": "#cardiorenal-weight-integration"
+      },
+      "fourChoicesSeparatelyCompared": [
+        "ADA9.8 appropriateeligibleHFregardlessA1C.",
+        "ADA9.8 noA1Cwaiting.",
+        "Actosboxed/3 fluidworsensnotprotects.",
+        "Jard/Farx2.1+ADA10.44g kidneyvolume/GDMTstillrequired."
+      ],
+      "wholeRationaleCompared": true
+    },
+    "wholeQuestionObjectsAndEachChoiceCompared": [
+      {
+        "wholeObject": {
+          "id": "noninsulin-diabetes-21-principle",
+          "question": "Which statement correctly links ASCVD risk to type 2 diabetes medicine selection?",
+          "choices": [
+            "Established or high-risk ASCVD can support a GLP-1 receptor agonist and/or SGLT2 inhibitor with demonstrated cardiovascular benefit even at the A1C target.",
+            "An outcome-directed medicine can be considered only after metformin fails to lower A1C.",
+            "Every GLP-1 product has identical evidence and labeled indications for every cardiovascular endpoint.",
+            "An A1C at target proves that prior myocardial infarction no longer affects medicine selection."
+          ],
+          "answer": 0,
+          "rationale": "ASCVD risk is an independent treatment consideration. ADA recommends products with demonstrated benefit irrespective of A1C or background metformin; prior vascular disease remains relevant. Evidence and indications differ among products and endpoints.",
+          "reviewHref": "#cardiorenal-weight-integration",
+          "difficulty": "foundational"
+        },
+        "options": [
+          {
+            "index": 0,
+            "choice": "Established or high-risk ASCVD can support a GLP-1 receptor agonist and/or SGLT2 inhibitor with demonstrated cardiovascular benefit even at the A1C target.",
+            "keyed": true,
+            "independentSourceComparison": "ADA9.7 independentA1CASCVDspecificbenefit."
+          },
+          {
+            "index": 1,
+            "choice": "An outcome-directed medicine can be considered only after metformin fails to lower A1C.",
+            "keyed": false,
+            "independentSourceComparison": "ADA9 cardiovascular subsectionwithorwithoutmetformin;failure notprerequisite."
+          },
+          {
+            "index": 2,
+            "choice": "Every GLP-1 product has identical evidence and labeled indications for every cardiovascular endpoint.",
+            "keyed": false,
+            "independentSourceComparison": "Ozempic1/Jardiance1 differentindications,ADA9Table9.2 heterogeneous."
+          },
+          {
+            "index": 3,
+            "choice": "An A1C at target proves that prior myocardial infarction no longer affects medicine selection.",
+            "keyed": false,
+            "independentSourceComparison": "PriorMI remainsestablishedASCVD,book607/ADA9.7."
+          }
+        ],
+        "wholeRationaleCompared": true,
+        "oneDefensibleBestAnswer": true,
+        "objectChanged": true
+      },
+      {
+        "wholeObject": {
+          "id": "noninsulin-diabetes-21-application",
+          "question": "A patient with type 2 diabetes and prior myocardial infarction is starting an agent with demonstrated cardiovascular benefit. Which accompanying plan is appropriate?",
+          "choices": [
+            "Continue indicated lipid, blood-pressure, tobacco, antiplatelet, nutrition and activity care while checking product eligibility and tolerability.",
+            "Stop indicated statin treatment once the new medicine lowers A1C.",
+            "Choose the product solely by its maximum A1C reduction and ignore the studied cardiovascular population.",
+            "Use the new prescription as a replacement for all vascular-risk and self-management care."
+          ],
+          "answer": 0,
+          "rationale": "Outcome-directed glucose therapy complements comprehensive vascular prevention. A1C improvement neither replaces indicated statin and other risk-factor care nor establishes that a product has the required cardiovascular evidence.",
+          "reviewHref": "#cardiorenal-weight-integration",
+          "difficulty": "application"
+        },
+        "options": [
+          {
+            "index": 0,
+            "choice": "Continue indicated lipid, blood-pressure, tobacco, antiplatelet, nutrition and activity care while checking product eligibility and tolerability.",
+            "keyed": true,
+            "independentSourceComparison": "Book607 comprehensivecare;ADA9.7+10.40 complement."
+          },
+          {
+            "index": 1,
+            "choice": "Stop indicated statin treatment once the new medicine lowers A1C.",
+            "keyed": false,
+            "independentSourceComparison": "A1CnotlipidindicationreplacementBook607."
+          },
+          {
+            "index": 2,
+            "choice": "Choose the product solely by its maximum A1C reduction and ignore the studied cardiovascular population.",
+            "keyed": false,
+            "independentSourceComparison": "Endpoint/populationnecessaryADA9.7/Ozempic1/Jardiance1."
+          },
+          {
+            "index": 3,
+            "choice": "Use the new prescription as a replacement for all vascular-risk and self-management care.",
+            "keyed": false,
+            "independentSourceComparison": "EducationandvascularcarepreservedADA9.5/Fig9.4."
+          }
+        ],
+        "wholeRationaleCompared": true,
+        "oneDefensibleBestAnswer": true,
+        "objectChanged": true
+      },
+      {
+        "wholeObject": {
+          "id": "noninsulin-diabetes-21-safety",
+          "question": "Which plan incorrectly treats glucose control as a substitute for vascular prevention after myocardial infarction?",
+          "choices": [
+            "Stop indicated lipid and blood-pressure therapy because A1C has reached its target.",
+            "Continue the indicated statin while checking tolerability and lipid response.",
+            "Review an agent’s demonstrated cardiovascular benefit and relevant patient population.",
+            "Address tobacco use, physical activity and the patient’s ability to follow the treatment plan."
+          ],
+          "answer": 0,
+          "rationale": "A1C is a glucose measure. Reaching its target does not remove the independent need for indicated lipid, blood-pressure and other vascular prevention. The other plans preserve appropriate risk-factor and product review.",
+          "reviewHref": "#cardiorenal-weight-integration",
+          "difficulty": "advanced"
+        },
+        "options": [
+          {
+            "index": 0,
+            "choice": "Stop indicated lipid and blood-pressure therapy because A1C has reached its target.",
+            "keyed": true,
+            "independentSourceComparison": "A1C doesnotreplacevascularpreventionBook607/ADA9.7."
+          },
+          {
+            "index": 1,
+            "choice": "Continue the indicated statin while checking tolerability and lipid response.",
+            "keyed": false,
+            "independentSourceComparison": "Statincareremainsbook607,notanerror."
+          },
+          {
+            "index": 2,
+            "choice": "Review an agent’s demonstrated cardiovascular benefit and relevant patient population.",
+            "keyed": false,
+            "independentSourceComparison": "SpecificbenefitpopulationADA9.7 appropriate."
+          },
+          {
+            "index": 3,
+            "choice": "Address tobacco use, physical activity and the patient’s ability to follow the treatment plan.",
+            "keyed": false,
+            "independentSourceComparison": "Selfmanagement/Fig9.4 andtobaccoactivitycareappropriate."
+          }
+        ],
+        "wholeRationaleCompared": true,
+        "oneDefensibleBestAnswer": true,
+        "objectChanged": true
+      },
+      {
+        "wholeObject": {
+          "id": "noninsulin-diabetes-21-case",
+          "question": "An adult with type 2 diabetes and prior myocardial infarction has A1C 6.8% on metformin, at their individualized target. There is no relevant contraindication. Which reasoning is best?",
+          "choices": [
+            "Consider a product with demonstrated cardiovascular benefit while continuing indicated vascular prevention despite the current A1C.",
+            "Wait for A1C to exceed target before considering cardiovascular benefit.",
+            "Choose any glucose-lowering product because all have identical cardiovascular evidence.",
+            "Remove vascular prevention because the current A1C shows that the infarction risk has resolved."
+          ],
+          "answer": 0,
+          "rationale": "Prior myocardial infarction establishes ASCVD. ADA’s outcome-directed selection applies irrespective of A1C, with attention to the specific product, population and safety. Neither equal class-wide benefit nor withdrawal of vascular prevention follows from A1C 6.8%.",
+          "reviewHref": "#cardiorenal-weight-integration",
+          "difficulty": "clinical"
+        },
+        "options": [
+          {
+            "index": 0,
+            "choice": "Consider a product with demonstrated cardiovascular benefit while continuing indicated vascular prevention despite the current A1C.",
+            "keyed": true,
+            "independentSourceComparison": "PriorMIestablishedASCVD,ADA9.7irrespectiveA1C."
+          },
+          {
+            "index": 1,
+            "choice": "Wait for A1C to exceed target before considering cardiovascular benefit.",
+            "keyed": false,
+            "independentSourceComparison": "No above-goalpreconditionADA9.7."
+          },
+          {
+            "index": 2,
+            "choice": "Choose any glucose-lowering product because all have identical cardiovascular evidence.",
+            "keyed": false,
+            "independentSourceComparison": "Productbenefitrequiresdemonstratedevidence,notanyequivalence."
+          },
+          {
+            "index": 3,
+            "choice": "Remove vascular prevention because the current A1C shows that the infarction risk has resolved.",
+            "keyed": false,
+            "independentSourceComparison": "A1C6.8notproofMIriskresolvedBook607."
+          }
+        ],
+        "wholeRationaleCompared": true,
+        "oneDefensibleBestAnswer": true,
+        "objectChanged": true
+      },
+      {
+        "wholeObject": {
+          "id": "noninsulin-diabetes-22-principle",
+          "question": "Which statement correctly describes SGLT2 therapy in type 2 diabetes with heart failure?",
+          "choices": [
+            "Use a product with demonstrated heart-failure benefit in eligible patients with HFrEF or HFpEF irrespective of A1C.",
+            "Restrict demonstrated SGLT2 heart-failure benefit to patients with an elevated A1C.",
+            "Treat HFpEF as an automatic exclusion from SGLT2 outcome therapy.",
+            "Assume pioglitazone’s glucose effect establishes the same heart-failure benefit."
+          ],
+          "answer": 0,
+          "rationale": "ADA recommends an SGLT2 inhibitor with demonstrated benefit across reduced or preserved ejection fraction irrespective of A1C. Product eligibility still matters; pioglitazone can cause or worsen fluid retention and is not recommended in symptomatic heart failure.",
+          "reviewHref": "#cardiorenal-weight-integration",
+          "difficulty": "foundational"
+        },
+        "options": [
+          {
+            "index": 0,
+            "choice": "Use a product with demonstrated heart-failure benefit in eligible patients with HFrEF or HFpEF irrespective of A1C.",
+            "keyed": true,
+            "independentSourceComparison": "ADA9.8 HFanyEFirrespectiveA1Cprovenproduct."
+          },
+          {
+            "index": 1,
+            "choice": "Restrict demonstrated SGLT2 heart-failure benefit to patients with an elevated A1C.",
+            "keyed": false,
+            "independentSourceComparison": "A1Cindependence9.8directlycontradicts."
+          },
+          {
+            "index": 2,
+            "choice": "Treat HFpEF as an automatic exclusion from SGLT2 outcome therapy.",
+            "keyed": false,
+            "independentSourceComparison": "HFpEFexplicitincluded9.8."
+          },
+          {
+            "index": 3,
+            "choice": "Assume pioglitazone’s glucose effect establishes the same heart-failure benefit.",
+            "keyed": false,
+            "independentSourceComparison": "Actosboxed3+5.1/5 fluidretentionnotHFprotection."
+          }
+        ],
+        "wholeRationaleCompared": true,
+        "oneDefensibleBestAnswer": true,
+        "objectChanged": true
+      },
+      {
+        "wholeObject": {
+          "id": "noninsulin-diabetes-22-application",
+          "question": "Before starting empagliflozin or dapagliflozin for heart-failure benefit in an adult with type 2 diabetes, which action is appropriate?",
+          "choices": [
+            "Assess kidney function, volume, blood pressure, diuretic context, ketoacidosis risk and the product label while preserving indicated heart-failure care.",
+            "Start despite untreated volume depletion because heart-failure benefit removes hypotension risk.",
+            "Discontinue all other indicated heart-failure medicines because SGLT2 treatment replaces them.",
+            "Omit illness and fasting counseling because ketoacidosis cannot occur near normal glucose."
+          ],
+          "answer": 0,
+          "rationale": "The labels require renal and volume assessment and correction of volume depletion before initiation. Loop diuretics can increase depletion risk. SGLT2 therapy complements indicated heart-failure treatment; ketoacidosis can occur without marked hyperglycemia.",
+          "reviewHref": "#cardiorenal-weight-integration",
+          "difficulty": "application"
+        },
+        "options": [
+          {
+            "index": 0,
+            "choice": "Assess kidney function, volume, blood pressure, diuretic context, ketoacidosis risk and the product label while preserving indicated heart-failure care.",
+            "keyed": true,
+            "independentSourceComparison": "Jardiance2.1/3+5.1-5.2/5 andFarxiga2.1/4+5.1-5.2/6 assessvolume/KD/ketorisks;ADA10.44g preserveGDMT."
+          },
+          {
+            "index": 1,
+            "choice": "Start despite untreated volume depletion because heart-failure benefit removes hypotension risk.",
+            "keyed": false,
+            "independentSourceComparison": "Bothlabelscorrectvolumedepletionbeforestart2.1."
+          },
+          {
+            "index": 2,
+            "choice": "Discontinue all other indicated heart-failure medicines because SGLT2 treatment replaces them.",
+            "keyed": false,
+            "independentSourceComparison": "GDMTcomplementADA10.44g,notreplacement."
+          },
+          {
+            "index": 3,
+            "choice": "Omit illness and fasting counseling because ketoacidosis cannot occur near normal glucose.",
+            "keyed": false,
+            "independentSourceComparison": "Ketoacidosismay<250Jard5.1/5Farx5.1/6."
+          }
+        ],
+        "wholeRationaleCompared": true,
+        "oneDefensibleBestAnswer": true,
+        "objectChanged": true
+      },
+      {
+        "wholeObject": {
+          "id": "noninsulin-diabetes-22-safety",
+          "question": "An adult with type 2 diabetes and symptomatic NYHA class III heart failure is being considered for pioglitazone. Which proposed action is unsafe?",
+          "choices": [
+            "Initiate pioglitazone despite the established NYHA class III heart failure.",
+            "Recognize that pioglitazone can cause or worsen fluid retention.",
+            "Consider an eligible SGLT2 product with demonstrated heart-failure benefit.",
+            "Review the current volume status and heart-failure treatment plan."
+          ],
+          "answer": 0,
+          "rationale": "Actos initiation is contraindicated in established NYHA class III or IV heart failure and is not recommended in symptomatic heart failure. Its potential glucose or liver benefit does not override that restriction. The other actions support safe selection.",
+          "reviewHref": "#cardiorenal-weight-integration",
+          "difficulty": "advanced"
+        },
+        "options": [
+          {
+            "index": 0,
+            "choice": "Initiate pioglitazone despite the established NYHA class III heart failure.",
+            "keyed": true,
+            "independentSourceComparison": "Actosboxed3+contra4/5 initiationNYHAIIIcontra."
+          },
+          {
+            "index": 1,
+            "choice": "Recognize that pioglitazone can cause or worsen fluid retention.",
+            "keyed": false,
+            "independentSourceComparison": "Actos5.1/5 retainingfluidriskaccurate."
+          },
+          {
+            "index": 2,
+            "choice": "Consider an eligible SGLT2 product with demonstrated heart-failure benefit.",
+            "keyed": false,
+            "independentSourceComparison": "ADA9.8 eligibleSGLT2appropriate."
+          },
+          {
+            "index": 3,
+            "choice": "Review the current volume status and heart-failure treatment plan.",
+            "keyed": false,
+            "independentSourceComparison": "Volume/GDMTassessment appropriate2.1/ADA10.44g."
+          }
+        ],
+        "wholeRationaleCompared": true,
+        "oneDefensibleBestAnswer": true,
+        "objectChanged": true
+      },
+      {
+        "wholeObject": {
+          "id": "noninsulin-diabetes-22-case",
+          "question": "An adult with type 2 diabetes, chronic symptomatic HFrEF and recurrent congestion is now clinically stable and euvolemic. Kidney function permits an SGLT2 inhibitor, and there is no relevant contraindication. Which addition best addresses heart-failure outcomes?",
+          "choices": [
+            "An SGLT2 inhibitor with demonstrated heart-failure benefit alongside indicated heart-failure care.",
+            "Pioglitazone because its fluid retention is protective in symptomatic HFrEF.",
+            "Any sulfonylurea because equivalent A1C lowering proves equivalent heart-failure benefit.",
+            "No outcome-directed medicine unless A1C first rises above target."
+          ],
+          "answer": 0,
+          "rationale": "In an eligible stable patient with HFrEF, a product such as empagliflozin or dapagliflozin can provide heart-failure benefit irrespective of A1C. Continue indicated heart-failure care and volume monitoring. Pioglitazone can worsen congestion, and glucose efficacy is not proof of equal outcome benefit.",
+          "reviewHref": "#cardiorenal-weight-integration",
+          "difficulty": "clinical"
+        },
+        "options": [
+          {
+            "index": 0,
+            "choice": "An SGLT2 inhibitor with demonstrated heart-failure benefit alongside indicated heart-failure care.",
+            "keyed": true,
+            "independentSourceComparison": "ADA9.8 andcurrentJard/Farx1 adultHF;stableeuvolemiceligiblecase."
+          },
+          {
+            "index": 1,
+            "choice": "Pioglitazone because its fluid retention is protective in symptomatic HFrEF.",
+            "keyed": false,
+            "independentSourceComparison": "Actosboxed3 symptomaticnotrecommend/fluidharm."
+          },
+          {
+            "index": 2,
+            "choice": "Any sulfonylurea because equivalent A1C lowering proves equivalent heart-failure benefit.",
+            "keyed": false,
+            "independentSourceComparison": "A1CequivalencenotHFoutcomeproofADA9Table9.2."
+          },
+          {
+            "index": 3,
+            "choice": "No outcome-directed medicine unless A1C first rises above target.",
+            "keyed": false,
+            "independentSourceComparison": "HFbenefitirrespectiveA1C9.8."
+          }
+        ],
+        "wholeRationaleCompared": true,
+        "oneDefensibleBestAnswer": true,
+        "objectChanged": true
+      },
+      {
+        "wholeObject": {
+          "id": "noninsulin-diabetes-23-principle",
+          "question": "Which assessment best supports kidney-directed medicine selection in type 2 diabetes?",
+          "choices": [
+            "Confirm CKD using eGFR and albuminuria, then consider progression risk, demonstrated benefit, the product label and safety separately from A1C.",
+            "Use A1C alone because it measures the degree of kidney fibrosis.",
+            "Assume less glucose lowering at low eGFR means every kidney outcome benefit has disappeared.",
+            "Apply one renal threshold and one dose to every noninsulin medicine regardless of its indication."
+          ],
+          "answer": 0,
+          "rationale": "Kidney-directed selection uses eGFR, albuminuria and the relevant evidence and label. A1C does not stage CKD; lower SGLT2 glucose efficacy does not itself negate kidney benefit, and renal instructions differ by product and indication.",
+          "reviewHref": "#cardiorenal-weight-integration",
+          "difficulty": "foundational"
+        },
+        "options": [
+          {
+            "index": 0,
+            "choice": "Confirm CKD using eGFR and albuminuria, then consider progression risk, demonstrated benefit, the product label and safety separately from A1C.",
+            "keyed": true,
+            "independentSourceComparison": "ADA11.1a-b/9.10 confirmkidneyandoutcomelabel."
+          },
+          {
+            "index": 1,
+            "choice": "Use A1C alone because it measures the degree of kidney fibrosis.",
+            "keyed": false,
+            "independentSourceComparison": "A1Cglycemianotfibrosisstage11.1a."
+          },
+          {
+            "index": 2,
+            "choice": "Assume less glucose lowering at low eGFR means every kidney outcome benefit has disappeared.",
+            "keyed": false,
+            "independentSourceComparison": "Independentkidneyvs glucose effects11.7text."
+          },
+          {
+            "index": 3,
+            "choice": "Apply one renal threshold and one dose to every noninsulin medicine regardless of its indication.",
+            "keyed": false,
+            "independentSourceComparison": "Farx2.2/2.3 vsJard1 distinctcutoffs."
+          }
+        ],
+        "wholeRationaleCompared": true,
+        "oneDefensibleBestAnswer": true,
+        "objectChanged": true
+      },
+      {
+        "wholeObject": {
+          "id": "noninsulin-diabetes-23-application",
+          "question": "A nonpregnant adult with type 2 diabetes, hypertension and albuminuric CKD has an indication for kidney-protective glucose therapy. Which comprehensive approach is appropriate?",
+          "choices": [
+            "Layer eligible outcome therapy with blood-pressure care and an ACE inhibitor or ARB, monitoring kidney function, potassium, volume and albuminuria.",
+            "Replace indicated blood-pressure treatment with glucose therapy alone.",
+            "Combine an ACE inhibitor and an ARB to obtain routine additional kidney protection.",
+            "Add potassium-affecting therapy without checking kidney function or potassium."
+          ],
+          "answer": 0,
+          "rationale": "For hypertension with albuminuria, ADA recommends an ACE inhibitor or ARB and appropriate monitoring alongside eligible outcome therapy. Combining ACE inhibitor and ARB is discouraged. Kidney function, potassium and volume checks remain necessary; glucose therapy does not replace blood-pressure care.",
+          "reviewHref": "#cardiorenal-weight-integration",
+          "difficulty": "application"
+        },
+        "options": [
+          {
+            "index": 0,
+            "choice": "Layer eligible outcome therapy with blood-pressure care and an ACE inhibitor or ARB, monitoring kidney function, potassium, volume and albuminuria.",
+            "keyed": true,
+            "independentSourceComparison": "ADA11.6a-b ACEorARBHTNalbuminmonitor and11.7 complementary."
+          },
+          {
+            "index": 1,
+            "choice": "Replace indicated blood-pressure treatment with glucose therapy alone.",
+            "keyed": false,
+            "independentSourceComparison": "BPnotreplaced11.6a/11.5."
+          },
+          {
+            "index": 2,
+            "choice": "Combine an ACE inhibitor and an ARB to obtain routine additional kidney protection.",
+            "keyed": false,
+            "independentSourceComparison": "ADA11 textACE+ARBavoid."
+          },
+          {
+            "index": 3,
+            "choice": "Add potassium-affecting therapy without checking kidney function or potassium.",
+            "keyed": false,
+            "independentSourceComparison": "ADA11.6b and11.8 K/eGFRmonitornecessary."
+          }
+        ],
+        "wholeRationaleCompared": true,
+        "oneDefensibleBestAnswer": true,
+        "objectChanged": true
+      },
+      {
+        "wholeObject": {
+          "id": "noninsulin-diabetes-23-safety",
+          "question": "An adult taking dapagliflozin for CKD progression risk has a smaller A1C response as eGFR declines but remains clinically stable and eligible under the kidney indication. Which reasoning is incorrect?",
+          "choices": [
+            "Stop solely because the smaller A1C effect proves there can be no kidney benefit.",
+            "Assess the continuing kidney indication and current renal label instructions.",
+            "Review volume status, adverse effects and the kidney trajectory.",
+            "Address a remaining glucose gap separately while preserving indicated kidney treatment."
+          ],
+          "answer": 0,
+          "rationale": "SGLT2 glucose efficacy diminishes with lower eGFR, but kidney benefit can remain. Dapagliflozin has different glucose and kidney-use instructions. A smaller A1C response alone is not a reason to discard otherwise indicated therapy; safety and eligibility still require review.",
+          "reviewHref": "#cardiorenal-weight-integration",
+          "difficulty": "advanced"
+        },
+        "options": [
+          {
+            "index": 0,
+            "choice": "Stop solely because the smaller A1C effect proves there can be no kidney benefit.",
+            "keyed": true,
+            "independentSourceComparison": "ADA9.10/11.7 reducedglucoseeffectnotabsentkidneybenefit."
+          },
+          {
+            "index": 1,
+            "choice": "Assess the continuing kidney indication and current renal label instructions.",
+            "keyed": false,
+            "independentSourceComparison": "AppropriatelabelreviewFarx2.3."
+          },
+          {
+            "index": 2,
+            "choice": "Review volume status, adverse effects and the kidney trajectory.",
+            "keyed": false,
+            "independentSourceComparison": "AppropriatevolumesafetyFarx5.2."
+          },
+          {
+            "index": 3,
+            "choice": "Address a remaining glucose gap separately while preserving indicated kidney treatment.",
+            "keyed": false,
+            "independentSourceComparison": "SeparateglucosegoalADA9Fig9.4 appropriate."
+          }
+        ],
+        "wholeRationaleCompared": true,
+        "oneDefensibleBestAnswer": true,
+        "objectChanged": true
+      },
+      {
+        "wholeObject": {
+          "id": "noninsulin-diabetes-23-case",
+          "question": "A stable adult with type 2 diabetes and albuminuric CKD is already taking dapagliflozin 10 mg daily for kidney protection. eGFR falls from 30 to 24 mL/min/1.73 m² without volume depletion, dialysis or another reason to interrupt. Which label-based interpretation is correct?",
+          "choices": [
+            "The label permits continued 10 mg daily for kidney outcomes after eGFR falls below 25; reassess safety and any remaining glucose needs.",
+            "Stop automatically because the below-45 glucose-control restriction prohibits all kidney use.",
+            "Increase to 25 mg daily because that is dapagliflozin’s required kidney dose.",
+            "Treat continuation at 24 as proof that new dapagliflozin initiation below 25 is recommended."
+          ],
+          "answer": 0,
+          "rationale": "Farxiga distinguishes initiation from continuation: initiation below eGFR 25 is not recommended, but an established patient may continue 10 mg daily for specified kidney and cardiovascular outcomes after eGFR falls below 25. The below-45 restriction concerns glucose control; 25 mg is not a Farxiga kidney dose.",
+          "reviewHref": "#cardiorenal-weight-integration",
+          "difficulty": "clinical"
+        },
+        "options": [
+          {
+            "index": 0,
+            "choice": "The label permits continued 10 mg daily for kidney outcomes after eGFR falls below 25; reassess safety and any remaining glucose needs.",
+            "keyed": true,
+            "independentSourceComparison": "Farx2.3/5 establishedbelow25maycontinue10KDindication,24<25andnointerruptreason."
+          },
+          {
+            "index": 1,
+            "choice": "Stop automatically because the below-45 glucose-control restriction prohibits all kidney use.",
+            "keyed": false,
+            "independentSourceComparison": "Farx2.2/4 below45glucoseonlynotallKDuse."
+          },
+          {
+            "index": 2,
+            "choice": "Increase to 25 mg daily because that is dapagliflozin’s required kidney dose.",
+            "keyed": false,
+            "independentSourceComparison": "Farx2.3/4 outcome10not25;labelno25dose."
+          },
+          {
+            "index": 3,
+            "choice": "Treat continuation at 24 as proof that new dapagliflozin initiation below 25 is recommended.",
+            "keyed": false,
+            "independentSourceComparison": "Farx2.3/5 initiationbelow25notrecommendeddistinctcontinuation."
+          }
+        ],
+        "wholeRationaleCompared": true,
+        "oneDefensibleBestAnswer": true,
+        "objectChanged": true
+      },
+      {
+        "wholeObject": {
+          "id": "noninsulin-diabetes-24-principle",
+          "question": "Which statement correctly separates weight, HFpEF and metabolic liver outcomes?",
+          "choices": [
+            "Match treatment to demonstrated benefit for the exact outcome, product and population; weight loss, HF symptoms or events and MASH fibrosis findings are distinct.",
+            "Any medicine causing weight loss has proven a separate cardiovascular-mortality reduction in HFpEF.",
+            "An A1C at goal removes the need to address obesity or relevant MASH treatment goals.",
+            "A MASH indication for one injectable product automatically covers every oral formulation and cirrhotic liver stage."
+          ],
+          "answer": 0,
+          "rationale": "Weight, HFpEF symptoms/events and MASH histology are distinct endpoints. Product and population evidence matters independently of A1C. For example, SUMMIT’s composite reduction does not establish a separate mortality reduction, and Wegovy injection’s noncirrhotic F2-F3 MASH indication cannot be transferred to every formulation or stage.",
+          "reviewHref": "#cardiorenal-weight-integration",
+          "difficulty": "foundational"
+        },
+        "options": [
+          {
+            "index": 0,
+            "choice": "Match treatment to demonstrated benefit for the exact outcome, product and population; weight loss, HF symptoms or events and MASH fibrosis findings are distinct.",
+            "keyed": true,
+            "independentSourceComparison": "ADA9.9a-b/9.12-13 andWegovy1 distinctendpoints/populations."
+          },
+          {
+            "index": 1,
+            "choice": "Any medicine causing weight loss has proven a separate cardiovascular-mortality reduction in HFpEF.",
+            "keyed": false,
+            "independentSourceComparison": "SUMMITabstractCVdeathCI0.52-4.83 notmortalitybenefitproven."
+          },
+          {
+            "index": 2,
+            "choice": "An A1C at goal removes the need to address obesity or relevant MASH treatment goals.",
+            "keyed": false,
+            "independentSourceComparison": "ADA8.16-19/9.9,9.12 goalindependence."
+          },
+          {
+            "index": 3,
+            "choice": "A MASH indication for one injectable product automatically covers every oral formulation and cirrhotic liver stage.",
+            "keyed": false,
+            "independentSourceComparison": "Wegovy1/3 noncirrhoticF2F3injection;notalloral/stages."
+          }
+        ],
+        "wholeRationaleCompared": true,
+        "oneDefensibleBestAnswer": true,
+        "objectChanged": true
+      },
+      {
+        "wholeObject": {
+          "id": "noninsulin-diabetes-24-application",
+          "question": "An adult with type 2 diabetes, obesity, and symptomatic HFpEF is at their A1C goal. Which treatment reasoning best reflects current ADA guidance?",
+          "choices": [
+            "Consider a GLP-1 or dual GIP/GLP-1 agent with demonstrated benefit for the specific HFpEF population, irrespective of A1C, while checking product-specific eligibility and tolerability.",
+            "Exclude all incretin therapy solely because A1C is at goal.",
+            "Assume every incretin product has identical HFpEF evidence and FDA indications.",
+            "Choose a DPP-4 inhibitor’s renal dose solely as proof of improved HFpEF symptoms."
+          ],
+          "answer": 0,
+          "rationale": "ADA 2026 recommendations distinguish selected GLP-1 and dual GIP/GLP-1 therapies with demonstrated benefits for adults with type 2 diabetes, obesity, and symptomatic HFpEF. A1C does not replace the relevant outcome indication; exact product and population evidence, safety, and tolerability matter.",
+          "reviewHref": "#cardiorenal-weight-integration",
+          "difficulty": "application"
+        },
+        "options": [
+          {
+            "index": 0,
+            "choice": "Consider a GLP-1 or dual GIP/GLP-1 agent with demonstrated benefit for the specific HFpEF population, irrespective of A1C, while checking product-specific eligibility and tolerability.",
+            "keyed": true,
+            "independentSourceComparison": "ADA9.9a-b preciseT2obesitysymptomaticHFpEFdemonstratedproductindependentA1C."
+          },
+          {
+            "index": 1,
+            "choice": "Exclude all incretin therapy solely because A1C is at goal.",
+            "keyed": false,
+            "independentSourceComparison": "9.9 A1Cnotexclusion."
+          },
+          {
+            "index": 2,
+            "choice": "Assume every incretin product has identical HFpEF evidence and FDA indications.",
+            "keyed": false,
+            "independentSourceComparison": "EvidenceheterogeneousSTEP/SUMMIT;Wegovy1 separateindications."
+          },
+          {
+            "index": 3,
+            "choice": "Choose a DPP-4 inhibitor’s renal dose solely as proof of improved HFpEF symptoms.",
+            "keyed": false,
+            "independentSourceComparison": "DPP4renalrulebook612 notproofHFpEFefficacy/ADA9Table9.2."
+          }
+        ],
+        "wholeRationaleCompared": true,
+        "oneDefensibleBestAnswer": true,
+        "objectChanged": false
+      },
+      {
+        "wholeObject": {
+          "id": "noninsulin-diabetes-24-safety",
+          "question": "An adult has noncirrhotic MASH with F2-F3 fibrosis and is considering Wegovy injection. Which interpretation overstates the cited approval?",
+          "choices": [
+            "Accelerated approval proves that prevention of liver failure and mortality has already been confirmed.",
+            "The labeled MASH indication applies to adults with noncirrhotic F2-F3 fibrosis.",
+            "Approval is based on improvement in MASH and fibrosis, with clinical benefit needing confirmatory verification.",
+            "Treatment still requires eligibility, tolerability, liver care and the labeled formulation to be checked."
+          ],
+          "answer": 0,
+          "rationale": "The Wegovy injection label states that its MASH indication has accelerated approval based on MASH and fibrosis improvement and that continued approval may depend on verifying clinical benefit. This does not establish confirmed prevention of liver failure or mortality. The other interpretations preserve the indication and its limits.",
+          "reviewHref": "#cardiorenal-weight-integration",
+          "difficulty": "advanced"
+        },
+        "options": [
+          {
+            "index": 0,
+            "choice": "Accelerated approval proves that prevention of liver failure and mortality has already been confirmed.",
+            "keyed": true,
+            "independentSourceComparison": "Wegovy1/3 acceleratedhistologyclinicalbenefitconfirmatory notconfirmedmortalityliverfailure."
+          },
+          {
+            "index": 1,
+            "choice": "The labeled MASH indication applies to adults with noncirrhotic F2-F3 fibrosis.",
+            "keyed": false,
+            "independentSourceComparison": "ExactadultnoncirrhoticF2F3injectionpopulationWegovy1/3."
+          },
+          {
+            "index": 2,
+            "choice": "Approval is based on improvement in MASH and fibrosis, with clinical benefit needing confirmatory verification.",
+            "keyed": false,
+            "independentSourceComparison": "ExactaccelqualificationWegovy1/3."
+          },
+          {
+            "index": 3,
+            "choice": "Treatment still requires eligibility, tolerability, liver care and the labeled formulation to be checked.",
+            "keyed": false,
+            "independentSourceComparison": "LabelcontraGItitration/checkproperformulationWegovy3-4 andADA9.12."
+          }
+        ],
+        "wholeRationaleCompared": true,
+        "oneDefensibleBestAnswer": true,
+        "objectChanged": true
+      },
+      {
+        "wholeObject": {
+          "id": "noninsulin-diabetes-24-case",
+          "question": "An adult with type 2 diabetes, obesity and symptomatic HFpEF needs improved weight control. A1C is at goal, current HF care remains indicated and no relevant contraindication is found. Which reasoning is best?",
+          "choices": [
+            "Consider selected GLP-1 or dual GIP/GLP-1 therapy with demonstrated benefit for this population, while checking product eligibility and retaining indicated HF care.",
+            "Exclude all such therapy because A1C is at goal.",
+            "Replace all indicated HF medicines with any GLP-1 product regardless of its evidence.",
+            "Select a DPP-4 inhibitor solely because its renal dose proves substantial weight loss and HFpEF symptom benefit."
+          ],
+          "answer": 0,
+          "rationale": "ADA 2026 recognizes selected GLP-1 and dual GIP/GLP-1 therapies with demonstrated benefit in type 2 diabetes, obesity and symptomatic HFpEF irrespective of A1C. Exact evidence, label, tolerability and continued heart-failure care matter. A renal dose rule does not demonstrate weight or HFpEF efficacy.",
+          "reviewHref": "#cardiorenal-weight-integration",
+          "difficulty": "clinical"
+        },
+        "options": [
+          {
+            "index": 0,
+            "choice": "Consider selected GLP-1 or dual GIP/GLP-1 therapy with demonstrated benefit for this population, while checking product eligibility and retaining indicated HF care.",
+            "keyed": true,
+            "independentSourceComparison": "ADA9.9a-b/10.44d-e productbenefitHFpEFwithobesityT2 independentA1CplusGDMT."
+          },
+          {
+            "index": 1,
+            "choice": "Exclude all such therapy because A1C is at goal.",
+            "keyed": false,
+            "independentSourceComparison": "A1Cnotexclusion9.9."
+          },
+          {
+            "index": 2,
+            "choice": "Replace all indicated HF medicines with any GLP-1 product regardless of its evidence.",
+            "keyed": false,
+            "independentSourceComparison": "ADA10.44g GDMTnotreplaced,notallGLP1evidence."
+          },
+          {
+            "index": 3,
+            "choice": "Select a DPP-4 inhibitor solely because its renal dose proves substantial weight loss and HFpEF symptom benefit.",
+            "keyed": false,
+            "independentSourceComparison": "DPP4weightneutralbook612/ADA9Table9.2 renalrule notproofweightHFbenefit."
+          }
+        ],
+        "wholeRationaleCompared": true,
+        "oneDefensibleBestAnswer": true,
+        "objectChanged": true
+      }
+    ],
+    "all64ChoicesSeparatelyCompared": true,
+    "previouslyVerifiedQuestionRetainedExactly": "noninsulin-diabetes-24-application",
+    "wholeFigure": {
+      "sourceObject": "\"noninsulin-outcomes\": {\n    accent: \"#c9857c\",\n    eyebrow: \"Outcome integration\",\n    title: \"Treat the organ risk even when glucose is near target\",\n    columns: [\n      [\"Vessels\", \"ASCVD\", \"Use a GLP-1 receptor agonist and/or SGLT2 inhibitor with demonstrated benefit\"],\n      [\"Pump and filter\", \"Heart failure and CKD\", \"Match proven heart and kidney benefit to product eligibility\"],\n      [\"Metabolism\", \"Weight and liver\", \"Match weight and liver treatment to evidence, formulation and liver stage\"],\n    ],\n  },\n  ",
+      "all14LabelsReviewed": true,
+      "twoExplanationLabelsClarified": true,
+      "bodyAndMechanismFonts14px": true,
+      "summaryNotCompleteClinicalAlgorithm": true,
+      "sources": "Book607-610/612;ADA9.7-9.13,11.7;Wegovy1/3 productstage qualification."
+    },
+    "sourceDiscrepancies": {
+      "bookKidney": "Book607 narrower eGFR25/UACR300andfinerenoneonlyifunableSGLT2;currentADA11.7starts>=20productlabelmatters;finerenonecanlayerwithappropriateeligibilityandmonitoring. Historical book not silently treated as current label.",
+      "HFpEF": "Book doesnot establish modernSTEP/SUMMIT claims;currentADA andoriginaltrialabstracts verified. Compositebenefit notseparateCVmortalityproof.",
+      "MASH": "BookselectedpioNASHbenefit doesnot establish currentWegovyinjectionF2F3acceleratedapproval;currentlabeldistinguishesoral andclinicalconfirmation.",
+      "assessments": "Fifteenwholeitems rewritten toremoveunrelatedtruthful distractors/ambiguousunsafechoices andalignrationale;previous24applicationretainedexact."
+    },
+    "numericChecks": {
+      "renalUnits": "mL/min/1.73 m²",
+      "ADAInitiationAtLeast20DistinctFromFarxiga25": true,
+      "farxigaGlucoseBelow45DistinctFromJardianceBelow30": true,
+      "farxigaContinuationCase30To24Checked": true,
+      "twoOutcomeDoses10mgDailyNotRequiredEmpagliflozin25mg": true,
+      "NYHAIIIIVInitiationContraDistinctSymptomaticNotRecommended": true,
+      "MASHF2F3NoncirrhoticAdultsInjection": true,
+      "finerenoneGuideline25AndPotassiumOneMonth": true,
+      "noTrialEffectMagnitudeOrNewCalculationImported": true,
+      "independentlyChecked": true
+    },
+    "associatedCumulativeItems": [
+      {
+        "wholeObject": {
+          "id": "cumulative-noninsulin-diabetes-pharmacotherapy-noninsulin-diabetes-23-application",
+          "question": "A nonpregnant adult with type 2 diabetes, hypertension and albuminuric CKD has an indication for kidney-protective glucose therapy. Which comprehensive approach is appropriate?",
+          "choices": [
+            "Layer eligible outcome therapy with blood-pressure care and an ACE inhibitor or ARB, monitoring kidney function, potassium, volume and albuminuria.",
+            "Replace indicated blood-pressure treatment with glucose therapy alone.",
+            "Combine an ACE inhibitor and an ARB to obtain routine additional kidney protection.",
+            "Add potassium-affecting therapy without checking kidney function or potassium."
+          ],
+          "answer": 0,
+          "rationale": "For hypertension with albuminuria, ADA recommends an ACE inhibitor or ARB and appropriate monitoring alongside eligible outcome therapy. Combining ACE inhibitor and ARB is discouraged. Kidney function, potassium and volume checks remain necessary; glucose therapy does not replace blood-pressure care.",
+          "reviewHref": "/learn/pharmacy/modules/noninsulin-diabetes-pharmacotherapy",
+          "difficulty": "application",
+          "module": "Noninsulin Diabetes Pharmacotherapy"
+        },
+        "allFourChoicesAndRationaleCompared": "Exact wholebank23application inheritance verified above;identicalsource notes",
+        "reviewHref": "Modulepath generated by unchanged cumulative selector;runtime navigation to be verified"
+      }
+    ],
+    "other1179CumulativeObjectsUnchanged": true,
+    "remainingOneLessonAnd12QuestionsNotCertified": true,
+    "wholeParentModuleVerified": false
+  },
+  "validation": {
+    "productionBuild": {
+      "status": "passed",
+      "actualTerminalExitCode": 0,
+      "actualExecSession": 17324,
+      "staticRoutes": 567,
+      "candidateDerivedFromCommit": "2ce66c3f79576ee504b7bd89bd9f3d135e09b280",
+      "productionBuild": true
+    },
+    "structure": {
+      "modules": 1,
+      "questions": 120,
+      "hardErrors": [],
+      "sourceGaps": [],
+      "sizeAdvisories": [],
+      "thinLessons": [],
+      "weakestModules": [
+        {
+          "module": "noninsulin-diabetes-pharmacotherapy",
+          "lessons": 10,
+          "questions": 120,
+          "minimumLessonCoverage": 8
+        }
+      ]
+    },
+    "objectPreservation": {
+      "status": "passed",
+      "modules": 232,
+      "otherWholeModulesUnchanged": 231,
+      "wholeQuestionBankTotal": 120,
+      "wholeQuestionsReviewed": 16,
+      "changedWholeQuestions": 15,
+      "previouslyVerifiedWholeQuestionUnchanged": "noninsulin-diabetes-24-application",
+      "other104WholeQuestionsUnchanged": true,
+      "allPrior93VerifiedNoninsulinWholeQuestionsUnchanged": true,
+      "otherNineWholeLessonsUnchanged": true,
+      "stableKeysIdsDifficultyAnchorsOrder": true,
+      "associatedDerivedCumulative": [
+        "cumulative-noninsulin-diabetes-pharmacotherapy-noninsulin-diabetes-23-application"
+      ],
+      "other1179WholeCumulativeObjectsUnchanged": true,
+      "existingReferencesRetained": 46,
+      "fourPrimaryReferencesAdded": true
+    },
+    "browser": {
+      "status": "passed",
+      "results": [
+        {
+          "width": 1440,
+          "exactWholeBodies": 12,
+          "wholeChecksAllFourOptionsGraded": 1,
+          "wholeQuestionsShuffledCorrectIncorrectFeedbackAndAnchorsVerified": 16,
+          "associatedCumulativeItems": [
+            "cumulative-noninsulin-diabetes-pharmacotherapy-noninsulin-diabetes-23-application"
+          ],
+          "associatedCumulativeWholeCasesShuffledCorrectIncorrectAndReviewLinksVerified": 1,
+          "other1179CumulativeObjectsUnchanged": true,
+          "allReferencesExact": 50,
+          "noHorizontalOverflow": true,
+          "diagrams": [
+            {
+              "width": 1440,
+              "slug": "noninsulin-diabetes-pharmacotherapy",
+              "lessonKey": "cardiorenal-weight-integration",
+              "labels": [
+                {
+                  "tag": "SPAN",
+                  "text": "Outcome integration",
+                  "overflow": false,
+                  "fontSize": 10.88
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Treat the organ risk even when glucose is near target",
+                  "overflow": false,
+                  "fontSize": 37.6
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "01",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Vessels",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "ASCVD",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Use a GLP-1 receptor agonist and/or SGLT2 inhibitor with demonstrated benefit",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "02",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Pump and filter",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Heart failure and CKD",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Match proven heart and kidney benefit to product eligibility",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "03",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Metabolism",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Weight and liver",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Match weight and liver treatment to evidence, formulation and liver stage",
+                  "overflow": false,
+                  "fontSize": 14
+                }
+              ],
+              "allTextWithinBounds": true
+            }
+          ]
+        },
+        {
+          "width": 390,
+          "exactWholeBodies": 12,
+          "wholeChecksAllFourOptionsGraded": 1,
+          "wholeQuestionsShuffledCorrectIncorrectFeedbackAndAnchorsVerified": 16,
+          "associatedCumulativeItems": [
+            "cumulative-noninsulin-diabetes-pharmacotherapy-noninsulin-diabetes-23-application"
+          ],
+          "associatedCumulativeWholeCasesShuffledCorrectIncorrectAndReviewLinksVerified": 1,
+          "other1179CumulativeObjectsUnchanged": true,
+          "allReferencesExact": 50,
+          "noHorizontalOverflow": true,
+          "diagrams": [
+            {
+              "width": 320,
+              "slug": "noninsulin-diabetes-pharmacotherapy",
+              "lessonKey": "cardiorenal-weight-integration",
+              "labels": [
+                {
+                  "tag": "SPAN",
+                  "text": "Outcome integration",
+                  "overflow": false,
+                  "fontSize": 10.88
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Treat the organ risk even when glucose is near target",
+                  "overflow": false,
+                  "fontSize": 23.2
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "01",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Vessels",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "ASCVD",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Use a GLP-1 receptor agonist and/or SGLT2 inhibitor with demonstrated benefit",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "02",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Pump and filter",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Heart failure and CKD",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Match proven heart and kidney benefit to product eligibility",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "03",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Metabolism",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Weight and liver",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Match weight and liver treatment to evidence, formulation and liver stage",
+                  "overflow": false,
+                  "fontSize": 14
+                }
+              ],
+              "allTextWithinBounds": true
+            },
+            {
+              "width": 390,
+              "slug": "noninsulin-diabetes-pharmacotherapy",
+              "lessonKey": "cardiorenal-weight-integration",
+              "labels": [
+                {
+                  "tag": "SPAN",
+                  "text": "Outcome integration",
+                  "overflow": false,
+                  "fontSize": 10.88
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Treat the organ risk even when glucose is near target",
+                  "overflow": false,
+                  "fontSize": 23.2
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "01",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Vessels",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "ASCVD",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Use a GLP-1 receptor agonist and/or SGLT2 inhibitor with demonstrated benefit",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "02",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Pump and filter",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Heart failure and CKD",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Match proven heart and kidney benefit to product eligibility",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "03",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Metabolism",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Weight and liver",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Match weight and liver treatment to evidence, formulation and liver stage",
+                  "overflow": false,
+                  "fontSize": 14
+                }
+              ],
+              "allTextWithinBounds": true
+            },
+            {
+              "width": 639,
+              "slug": "noninsulin-diabetes-pharmacotherapy",
+              "lessonKey": "cardiorenal-weight-integration",
+              "labels": [
+                {
+                  "tag": "SPAN",
+                  "text": "Outcome integration",
+                  "overflow": false,
+                  "fontSize": 10.88
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Treat the organ risk even when glucose is near target",
+                  "overflow": false,
+                  "fontSize": 23.2
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "01",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Vessels",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "ASCVD",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Use a GLP-1 receptor agonist and/or SGLT2 inhibitor with demonstrated benefit",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "02",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Pump and filter",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Heart failure and CKD",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Match proven heart and kidney benefit to product eligibility",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "03",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Metabolism",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Weight and liver",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Match weight and liver treatment to evidence, formulation and liver stage",
+                  "overflow": false,
+                  "fontSize": 14
+                }
+              ],
+              "allTextWithinBounds": true
+            },
+            {
+              "width": 640,
+              "slug": "noninsulin-diabetes-pharmacotherapy",
+              "lessonKey": "cardiorenal-weight-integration",
+              "labels": [
+                {
+                  "tag": "SPAN",
+                  "text": "Outcome integration",
+                  "overflow": false,
+                  "fontSize": 10.88
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Treat the organ risk even when glucose is near target",
+                  "overflow": false,
+                  "fontSize": 23.2
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "01",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Vessels",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "ASCVD",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Use a GLP-1 receptor agonist and/or SGLT2 inhibitor with demonstrated benefit",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "02",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Pump and filter",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Heart failure and CKD",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Match proven heart and kidney benefit to product eligibility",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "03",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Metabolism",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Weight and liver",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Match weight and liver treatment to evidence, formulation and liver stage",
+                  "overflow": false,
+                  "fontSize": 14
+                }
+              ],
+              "allTextWithinBounds": true
+            }
+          ]
+        }
+      ],
+      "captures": [
+        "hero-noninsulin-diabetes-pharmacotherapy-1440.png",
+        "body-cardiorenal-weight-integration-0-1440.png",
+        "body-cardiorenal-weight-integration-1-1440.png",
+        "body-cardiorenal-weight-integration-2-1440.png",
+        "body-cardiorenal-weight-integration-3-1440.png",
+        "body-cardiorenal-weight-integration-4-1440.png",
+        "body-cardiorenal-weight-integration-5-1440.png",
+        "body-cardiorenal-weight-integration-6-1440.png",
+        "body-cardiorenal-weight-integration-7-1440.png",
+        "body-cardiorenal-weight-integration-8-1440.png",
+        "body-cardiorenal-weight-integration-9-1440.png",
+        "body-cardiorenal-weight-integration-10-1440.png",
+        "body-cardiorenal-weight-integration-11-1440.png",
+        "summary-cardiorenal-weight-integration-1440.png",
+        "concepts-cardiorenal-weight-integration-1440.png",
+        "keypoints-cardiorenal-weight-integration-1440.png",
+        "application-cardiorenal-weight-integration-1440.png",
+        "figure-cardiorenal-weight-integration-1440.png",
+        "check-cardiorenal-weight-integration-1440.png",
+        "references-noninsulin-diabetes-pharmacotherapy-1440.png",
+        "bank-noninsulin-diabetes-21-safety-1440.png",
+        "bank-noninsulin-diabetes-23-safety-1440.png",
+        "bank-noninsulin-diabetes-22-principle-1440.png",
+        "bank-noninsulin-diabetes-24-safety-1440.png",
+        "bank-noninsulin-diabetes-22-application-1440.png",
+        "bank-noninsulin-diabetes-21-application-1440.png",
+        "bank-noninsulin-diabetes-23-case-1440.png",
+        "bank-noninsulin-diabetes-24-principle-1440.png",
+        "bank-noninsulin-diabetes-21-case-1440.png",
+        "bank-noninsulin-diabetes-23-principle-1440.png",
+        "bank-noninsulin-diabetes-24-case-1440.png",
+        "bank-noninsulin-diabetes-22-case-1440.png",
+        "bank-noninsulin-diabetes-22-safety-1440.png",
+        "bank-noninsulin-diabetes-23-application-1440.png",
+        "bank-noninsulin-diabetes-24-application-1440.png",
+        "bank-noninsulin-diabetes-21-principle-1440.png",
+        "cumulative-cumulative-noninsulin-diabetes-pharmacotherapy-noninsulin-diabetes-23-application-1440.png",
+        "hero-noninsulin-diabetes-pharmacotherapy-390.png",
+        "body-cardiorenal-weight-integration-0-390.png",
+        "body-cardiorenal-weight-integration-1-390.png",
+        "body-cardiorenal-weight-integration-2-390.png",
+        "body-cardiorenal-weight-integration-3-390.png",
+        "body-cardiorenal-weight-integration-4-390.png",
+        "body-cardiorenal-weight-integration-5-390.png",
+        "body-cardiorenal-weight-integration-6-390.png",
+        "body-cardiorenal-weight-integration-7-390.png",
+        "body-cardiorenal-weight-integration-8-390.png",
+        "body-cardiorenal-weight-integration-9-390.png",
+        "body-cardiorenal-weight-integration-10-390.png",
+        "body-cardiorenal-weight-integration-11-390.png",
+        "summary-cardiorenal-weight-integration-390.png",
+        "concepts-cardiorenal-weight-integration-390.png",
+        "keypoints-cardiorenal-weight-integration-390.png",
+        "application-cardiorenal-weight-integration-390.png",
+        "figure-cardiorenal-weight-integration-390.png",
+        "check-cardiorenal-weight-integration-390.png",
+        "references-noninsulin-diabetes-pharmacotherapy-390.png",
+        "bank-noninsulin-diabetes-21-safety-390.png",
+        "bank-noninsulin-diabetes-23-safety-390.png",
+        "bank-noninsulin-diabetes-22-principle-390.png",
+        "bank-noninsulin-diabetes-24-safety-390.png",
+        "bank-noninsulin-diabetes-22-application-390.png",
+        "bank-noninsulin-diabetes-21-application-390.png",
+        "bank-noninsulin-diabetes-23-case-390.png",
+        "bank-noninsulin-diabetes-24-principle-390.png",
+        "bank-noninsulin-diabetes-21-case-390.png",
+        "bank-noninsulin-diabetes-23-principle-390.png",
+        "bank-noninsulin-diabetes-24-case-390.png",
+        "bank-noninsulin-diabetes-22-case-390.png",
+        "bank-noninsulin-diabetes-22-safety-390.png",
+        "bank-noninsulin-diabetes-23-application-390.png",
+        "bank-noninsulin-diabetes-24-application-390.png",
+        "bank-noninsulin-diabetes-21-principle-390.png",
+        "cumulative-cumulative-noninsulin-diabetes-pharmacotherapy-noninsulin-diabetes-23-application-390.png",
+        "native-figure-320.png",
+        "native-figure-640.png"
+      ],
+      "errors": []
+    },
+    "visualInspection": {
+      "status": "passed",
+      "inspectedAt": "2026-10-06T10:57:21.416266+00:00",
+      "captures": [
+        "hero-noninsulin-diabetes-pharmacotherapy-1440.png",
+        "body-cardiorenal-weight-integration-0-1440.png",
+        "body-cardiorenal-weight-integration-1-1440.png",
+        "body-cardiorenal-weight-integration-2-1440.png",
+        "body-cardiorenal-weight-integration-3-1440.png",
+        "body-cardiorenal-weight-integration-4-1440.png",
+        "body-cardiorenal-weight-integration-5-1440.png",
+        "body-cardiorenal-weight-integration-6-1440.png",
+        "body-cardiorenal-weight-integration-7-1440.png",
+        "body-cardiorenal-weight-integration-8-1440.png",
+        "body-cardiorenal-weight-integration-9-1440.png",
+        "body-cardiorenal-weight-integration-10-1440.png",
+        "body-cardiorenal-weight-integration-11-1440.png",
+        "summary-cardiorenal-weight-integration-1440.png",
+        "concepts-cardiorenal-weight-integration-1440.png",
+        "keypoints-cardiorenal-weight-integration-1440.png",
+        "application-cardiorenal-weight-integration-1440.png",
+        "figure-cardiorenal-weight-integration-1440.png",
+        "check-cardiorenal-weight-integration-1440.png",
+        "references-noninsulin-diabetes-pharmacotherapy-1440.png",
+        "bank-noninsulin-diabetes-21-safety-1440.png",
+        "bank-noninsulin-diabetes-23-safety-1440.png",
+        "bank-noninsulin-diabetes-22-principle-1440.png",
+        "bank-noninsulin-diabetes-24-safety-1440.png",
+        "bank-noninsulin-diabetes-22-application-1440.png",
+        "bank-noninsulin-diabetes-21-application-1440.png",
+        "bank-noninsulin-diabetes-23-case-1440.png",
+        "bank-noninsulin-diabetes-24-principle-1440.png",
+        "bank-noninsulin-diabetes-21-case-1440.png",
+        "bank-noninsulin-diabetes-23-principle-1440.png",
+        "bank-noninsulin-diabetes-24-case-1440.png",
+        "bank-noninsulin-diabetes-22-case-1440.png",
+        "bank-noninsulin-diabetes-22-safety-1440.png",
+        "bank-noninsulin-diabetes-23-application-1440.png",
+        "bank-noninsulin-diabetes-24-application-1440.png",
+        "bank-noninsulin-diabetes-21-principle-1440.png",
+        "cumulative-cumulative-noninsulin-diabetes-pharmacotherapy-noninsulin-diabetes-23-application-1440.png",
+        "hero-noninsulin-diabetes-pharmacotherapy-390.png",
+        "body-cardiorenal-weight-integration-0-390.png",
+        "body-cardiorenal-weight-integration-1-390.png",
+        "body-cardiorenal-weight-integration-2-390.png",
+        "body-cardiorenal-weight-integration-3-390.png",
+        "body-cardiorenal-weight-integration-4-390.png",
+        "body-cardiorenal-weight-integration-5-390.png",
+        "body-cardiorenal-weight-integration-6-390.png",
+        "body-cardiorenal-weight-integration-7-390.png",
+        "body-cardiorenal-weight-integration-8-390.png",
+        "body-cardiorenal-weight-integration-9-390.png",
+        "body-cardiorenal-weight-integration-10-390.png",
+        "body-cardiorenal-weight-integration-11-390.png",
+        "summary-cardiorenal-weight-integration-390.png",
+        "concepts-cardiorenal-weight-integration-390.png",
+        "keypoints-cardiorenal-weight-integration-390.png",
+        "application-cardiorenal-weight-integration-390.png",
+        "figure-cardiorenal-weight-integration-390.png",
+        "check-cardiorenal-weight-integration-390.png",
+        "references-noninsulin-diabetes-pharmacotherapy-390.png",
+        "bank-noninsulin-diabetes-21-safety-390.png",
+        "bank-noninsulin-diabetes-23-safety-390.png",
+        "bank-noninsulin-diabetes-22-principle-390.png",
+        "bank-noninsulin-diabetes-24-safety-390.png",
+        "bank-noninsulin-diabetes-22-application-390.png",
+        "bank-noninsulin-diabetes-21-application-390.png",
+        "bank-noninsulin-diabetes-23-case-390.png",
+        "bank-noninsulin-diabetes-24-principle-390.png",
+        "bank-noninsulin-diabetes-21-case-390.png",
+        "bank-noninsulin-diabetes-23-principle-390.png",
+        "bank-noninsulin-diabetes-24-case-390.png",
+        "bank-noninsulin-diabetes-22-case-390.png",
+        "bank-noninsulin-diabetes-22-safety-390.png",
+        "bank-noninsulin-diabetes-23-application-390.png",
+        "bank-noninsulin-diabetes-24-application-390.png",
+        "bank-noninsulin-diabetes-21-principle-390.png",
+        "cumulative-cumulative-noninsulin-diabetes-pharmacotherapy-noninsulin-diabetes-23-application-390.png",
+        "native-figure-320.png",
+        "native-figure-640.png"
+      ],
+      "captureCount": 76,
+      "desktopMobilePairs": 37,
+      "nativePixelBoardsInspected": [
+        "board-00.png",
+        "board-01.png",
+        "board-02.png",
+        "board-03.png",
+        "board-04.png",
+        "board-05.png",
+        "board-06.png",
+        "board-07.png",
+        "board-08.png",
+        "board-09.png",
+        "board-10.png",
+        "board-11.png",
+        "board-12.png"
+      ],
+      "nativeBoardsCount": 13,
+      "nativeFigureWidthsInspected": [
+        320,
+        640
+      ],
+      "rescaledForInspection": false,
+      "observations": [
+        "Whole twelve teaching bodies, metadata, concept labels, application, key points and embedded-check feedback readable without clipping at desktop and mobile sizes.",
+        "All sixteen whole question cards and the derived CKD cumulative card show readable wrapping, choices, answer feedback and review links.",
+        "All fifty reference titles and link arrows wrap within the desktop and mobile panels.",
+        "Outcome figure text remains within bounds, with explanatory text at least 14px at tested widths; narrow-screen column wrapping inspected."
+      ],
+      "screenshotSha256": {
+        "hero-noninsulin-diabetes-pharmacotherapy-1440.png": "357f1a5978f086dd8d7a0c030d2d0ada0d5d12d31ba9402b4fe7c2ee07295c8c",
+        "body-cardiorenal-weight-integration-0-1440.png": "f42384dbfe6b09cb62467d5ae3f8013b854c5503f7a3e2b2a1e25f28acb7eb2e",
+        "body-cardiorenal-weight-integration-1-1440.png": "bfd4449fc1fc393361a40e53d0516e134c4261378a32a2cdf585c95b39ff7713",
+        "body-cardiorenal-weight-integration-2-1440.png": "8c4f04ee70c5b926a2551968e06d5f727e813ed6ba05afe73cba7073649276bc",
+        "body-cardiorenal-weight-integration-3-1440.png": "57d7b8ae86481baec374256315c403045fd8003ba5c3078f03923321d6930e43",
+        "body-cardiorenal-weight-integration-4-1440.png": "abd60c061a5e6817796f266360f1ab7dbbfa22a3ab30bdec6ddffd71f0dd4428",
+        "body-cardiorenal-weight-integration-5-1440.png": "b26d78833fccdf8c5abc52dbc33cfd25e3b975714400bbf0ac5f931d35ddcaaa",
+        "body-cardiorenal-weight-integration-6-1440.png": "585d06542491f6636134744cbb8980eb2056d0be9daf5bfc054d627f7dee460a",
+        "body-cardiorenal-weight-integration-7-1440.png": "6c921f46d68461ca1b29fcefc2d60fc757d5d9c90fa29ee4d6339ffe0297e0df",
+        "body-cardiorenal-weight-integration-8-1440.png": "5529ccd6486acd80e677026f9432fa475e5f9d09949978a55d3e22ca2127acbd",
+        "body-cardiorenal-weight-integration-9-1440.png": "eea504d11308ac6e69529c6ec7585c4ab7c18b4a448a91db1b76928439c969ea",
+        "body-cardiorenal-weight-integration-10-1440.png": "175cc5ef5b2f73815679a3a3586812b9a0e3191ac22b33b6898b5cb401fcfe16",
+        "body-cardiorenal-weight-integration-11-1440.png": "35f7a79700b89d746cfed5062d40301ef378a042287223a529d3c0655c203971",
+        "summary-cardiorenal-weight-integration-1440.png": "d732033f39d82c488a9cdc3bd980e9dff05f847ee6d6c0ce502fbf1df959a098",
+        "concepts-cardiorenal-weight-integration-1440.png": "d5216ab1db0f034b00daaf5963a3eabdb5011c6ae9c3adb7caaea8f12a576624",
+        "keypoints-cardiorenal-weight-integration-1440.png": "4b95935e9d0de8285849c81937bda15e1e9103215aefb964cc8c0808b3dcf5af",
+        "application-cardiorenal-weight-integration-1440.png": "79c36d76e0a553a343a7a17c55809fc5a2e8b3fc9128e26c572dadd3eb14922d",
+        "figure-cardiorenal-weight-integration-1440.png": "1b6e196ed078841d4e6fc2d87bdbe5cfeb86b82d99320f24e3d2abbb706d3aec",
+        "check-cardiorenal-weight-integration-1440.png": "220810d7dd979d309d8494b0866580d99c635123d46f0664cea3cd6ddeb1beb1",
+        "references-noninsulin-diabetes-pharmacotherapy-1440.png": "8a4b62902177abdfd5559ad49a41158de4db9894870b58dae2f944d84c0076fd",
+        "bank-noninsulin-diabetes-21-safety-1440.png": "c1dd91a28ac5c3d1e758c93fa7ce7337b6923223c62feb385747ac1a409ab49d",
+        "bank-noninsulin-diabetes-23-safety-1440.png": "2684e8e709c0c10ec025e47f60c43c431dd825d86a62ad75cb4bb5debbf6d2fd",
+        "bank-noninsulin-diabetes-22-principle-1440.png": "3fbbda3f2921ce12d8cff4010ac612878d6771c24c10a67d228acef1f1298cdc",
+        "bank-noninsulin-diabetes-24-safety-1440.png": "969bb80555bbe76d21a513de6877f5eef26edda598fbe667c49df1bf56d450cb",
+        "bank-noninsulin-diabetes-22-application-1440.png": "8cdd0ee8cb935d127da37df8cf9a1e3098003f282ff55ece825ff739dfdfe20e",
+        "bank-noninsulin-diabetes-21-application-1440.png": "5150e71d0410dafb1f7ea11acfb10f2552ca7c0a17305c33e7fd5f62bd583111",
+        "bank-noninsulin-diabetes-23-case-1440.png": "67821d13068c6c060aed2e88899c2463c71d8cec4bb73da7e91b2422f811ca05",
+        "bank-noninsulin-diabetes-24-principle-1440.png": "006765b0a87aeada08a47083c73d37c3462444867307e19444a8e0e5337400f6",
+        "bank-noninsulin-diabetes-21-case-1440.png": "604682069f90d57b5cd9d89eb52364703ab47d3730432727264b85ee5dc429d6",
+        "bank-noninsulin-diabetes-23-principle-1440.png": "f1419629365f487b035a1ec5635bc615a6765acfe2d358e283c74bd7b3b63dfb",
+        "bank-noninsulin-diabetes-24-case-1440.png": "69c2a3833a012586fac887a558c81aa8862e4d9dfa8201bcf70aa9ff600e7252",
+        "bank-noninsulin-diabetes-22-case-1440.png": "bbc2da33c939a0888a2f133b097db95401a8de2fccc90d62bbb51162d1fe6c20",
+        "bank-noninsulin-diabetes-22-safety-1440.png": "06e2bc2df3cc98e53c61a6f94b4ed98d9b12b0970d40ad26a8d166692a131adb",
+        "bank-noninsulin-diabetes-23-application-1440.png": "a322653e20c0fba3787028197646a459e07a4bf2959cba98f16cd00bcfcc8872",
+        "bank-noninsulin-diabetes-24-application-1440.png": "5d1987612ff933664108db2622ec41b706aecf9f64e36263f9100f3052ae89f8",
+        "bank-noninsulin-diabetes-21-principle-1440.png": "08a21425c04fe340ea662db060548f0abf2431171a599bdd66dc779ddecf5e22",
+        "cumulative-cumulative-noninsulin-diabetes-pharmacotherapy-noninsulin-diabetes-23-application-1440.png": "6b9e4fbb2591c24686d754a416ef9eb9333a00a9b06d2b8fcfa352ea3e19ed38",
+        "hero-noninsulin-diabetes-pharmacotherapy-390.png": "7605aa62fe153bcdc72584c583e906632fc8401732b9ec703a8e86a1cfed0822",
+        "body-cardiorenal-weight-integration-0-390.png": "3e73893d0f5063d307387713a34745cf64738ca68ad02bad7b56bd9cb5333bea",
+        "body-cardiorenal-weight-integration-1-390.png": "32de4a0262d30c77876fe0d217ab4c6a32d6adb1f231baa2868a584cdb37b823",
+        "body-cardiorenal-weight-integration-2-390.png": "98eacccd4202011de4e09453b29440ffedcb067a37bd2d8ba6a30b7c34f51044",
+        "body-cardiorenal-weight-integration-3-390.png": "9729de6ecf41b4d8148949b87877a479303f117f4b37d1e6af093602984679c1",
+        "body-cardiorenal-weight-integration-4-390.png": "82f90a00c030c8ceb5df4979fd3e4975f30e77e60c01bf7875117844039e372b",
+        "body-cardiorenal-weight-integration-5-390.png": "a79fde227f623a62075df2b5d4ba7f1a35f547619dde81dbb7a8d49212fe10cc",
+        "body-cardiorenal-weight-integration-6-390.png": "0458e968feba906a74e2ccc6bf07fa9bb72f8db44278a97e3ce21efc5d0fd6a0",
+        "body-cardiorenal-weight-integration-7-390.png": "90572efc03f68af6fe35e41b8906547ccb12eb005f09f43ae501e2a3958987be",
+        "body-cardiorenal-weight-integration-8-390.png": "03d5be7498a188638b285dca2385b4a1edc2c322571252b51fec981c4d01ce4d",
+        "body-cardiorenal-weight-integration-9-390.png": "aea76dd4081299febddbb7e11489b8622c19240a20b84ee9ac2b9828cd83dc71",
+        "body-cardiorenal-weight-integration-10-390.png": "8d9089d247cd679f19c1d48753c2bbb9d1edffe8855ba89c652bb35518e6de67",
+        "body-cardiorenal-weight-integration-11-390.png": "a75ac40570712cefc0d8ccee98cf7e277428b71fcdf48a5cdafda078a6bb6e6d",
+        "summary-cardiorenal-weight-integration-390.png": "978e07367a1f5fd4c0174e653beef169984c08f3442d68774cd56d7386ee9e67",
+        "concepts-cardiorenal-weight-integration-390.png": "5f00cb7c76552b8c195d49eaf9da59d60e041c1b97f8b7f8e213b1cb2b8ec2e4",
+        "keypoints-cardiorenal-weight-integration-390.png": "777de922927efde841814eaff996bcf6cb893273c6708c8d264def31f52d76d4",
+        "application-cardiorenal-weight-integration-390.png": "88fd5f94ce41d81b58797e1160d879d39818243f5b970023da0b2cfff6094977",
+        "figure-cardiorenal-weight-integration-390.png": "8e6be8f382eaa3d07fa85512cc05f0e0b72a12c89aae9ad04fb5b0d5a483e620",
+        "check-cardiorenal-weight-integration-390.png": "73628501ac50ae6d64e9ad730452225e50944a92b604e8f436669d104e81ee34",
+        "references-noninsulin-diabetes-pharmacotherapy-390.png": "da6ec1f17799901b231bc029811fc8d5fb05e1b246a760a9dd2fefda37768d4d",
+        "bank-noninsulin-diabetes-21-safety-390.png": "475be7b8d02ee89460165ed2009e7d2baec81a141f01eabe01469d72a6abd46d",
+        "bank-noninsulin-diabetes-23-safety-390.png": "19eba22d1122c3d5cbcc760504b9d92dbb18a6ead02b83084f2d401715692051",
+        "bank-noninsulin-diabetes-22-principle-390.png": "b6eaf63d81ac1dcf62b18244d51ff5c88000ad08ed25f069f3d0e26f0417bd69",
+        "bank-noninsulin-diabetes-24-safety-390.png": "f6f0d81abf1f1a6aedbab3344dc10b7e14ff19d2367d359ac410bc630148b50e",
+        "bank-noninsulin-diabetes-22-application-390.png": "7cc08526caac04518340a864dc37a840ce212bc115ce599663fb96b691674cba",
+        "bank-noninsulin-diabetes-21-application-390.png": "47f58b17e20ea16735194aa669f1a6eb741eec1c2b73465776b7615b656be7f6",
+        "bank-noninsulin-diabetes-23-case-390.png": "69a4bedd3eb9f871522659f47d398bd4935afb69f98e15135e90dbc0a8088af2",
+        "bank-noninsulin-diabetes-24-principle-390.png": "195e062aabef1801ee5a9b110dcfe7a26bee007cdb747bc686b3c52505e23dfc",
+        "bank-noninsulin-diabetes-21-case-390.png": "d427c3e47eadfc2266eb7b37ba7531e5b4bc77a32393852d1facc54303aadfd9",
+        "bank-noninsulin-diabetes-23-principle-390.png": "f3d9cca96d5ddaeb838413eec78cbe8cfa99d47621fff46ca21c19738938001c",
+        "bank-noninsulin-diabetes-24-case-390.png": "7efd3b396662e4e17858ca41bc4cdb5507a65274bed268c4d36021d672ae8497",
+        "bank-noninsulin-diabetes-22-case-390.png": "8a057124b83f44dae474c27c98544c8405436fb66bd65bfcc58cfa91d156e048",
+        "bank-noninsulin-diabetes-22-safety-390.png": "c03a46a742661005a0e20fb161460e9a4b3e8eeb41e71a813488f9d6ca2433b5",
+        "bank-noninsulin-diabetes-23-application-390.png": "1afe1e478b4059d151e6504a349aaa3810e95ed3da8154fd0cf11e876d05f5f2",
+        "bank-noninsulin-diabetes-24-application-390.png": "21bc85ab20d1cd715c04bea3685766866837be93e7ecaa8975ff0a8d2e23abc0",
+        "bank-noninsulin-diabetes-21-principle-390.png": "ff16e6c0a75ee6e462c83864eca6b3b33e3ebf6802cd44afa507548dda788752",
+        "cumulative-cumulative-noninsulin-diabetes-pharmacotherapy-noninsulin-diabetes-23-application-390.png": "6b74aadaa563d28a58f54ba9797854d7f97eb617352e6e07bc883643599f72ae",
+        "native-figure-320.png": "55d837e96ec6c10269b56a90bb5d43461ba1b3a711eef259e999aa61582c5b2f",
+        "native-figure-640.png": "c8c4486e968e96359bd6f467debc594b7dfc68cb65e71d9f500b40ae4950d6f9"
+      },
+      "pairAndBoardSha256": {
+        "pair-hero-noninsulin-diabetes-pharmacotherapy.png": "2f4245c0d7a5cd3b3981f71688284927301a4e0946f18c07c83bc4b5d30c3844",
+        "pair-body-cardiorenal-weight-integration-0.png": "96d352c8992306d0dba1efe64f3b2d14bb9604ec59f62da310f2ae7ff7141651",
+        "pair-body-cardiorenal-weight-integration-1.png": "bb6d544d0731e6ae974c2fcf079806bd4a278a21c7b5a09b5e2651f8bdf620c6",
+        "pair-body-cardiorenal-weight-integration-2.png": "68f310c01dac4dac234495091f18ba7dc031238f677045fc100aca8b6c6aad18",
+        "pair-body-cardiorenal-weight-integration-3.png": "15d86260dcf28fcc129742d5132ed18de37d189ae053ce278309ba4c77b02eb4",
+        "pair-body-cardiorenal-weight-integration-4.png": "ccf0e785398b51ac0941e7444a172ee1cfdfd8ce95d33590248fbd105b6c986a",
+        "pair-body-cardiorenal-weight-integration-5.png": "199c37067fc31156477c70850400355f72913102b5a005c7c1ba12bf9f78dc70",
+        "pair-body-cardiorenal-weight-integration-6.png": "c76b9d15462cb564ec24b545f477529455e7be5c9d05c903f6d0cbc34dbd2f75",
+        "pair-body-cardiorenal-weight-integration-7.png": "364c243f406ad90fabca9028ad9fbc4dfa1a00e747f0eb9af7a4482a9b03bddb",
+        "pair-body-cardiorenal-weight-integration-8.png": "0f6b13d3754bf1425f396859f72259418d8122a3b9a1cf727ea598e5d34741cc",
+        "pair-body-cardiorenal-weight-integration-9.png": "b6a4fbdf80b1ee3a461f3a782526c54bd59bd575e5f9243d173d8ce521c8a4ad",
+        "pair-body-cardiorenal-weight-integration-10.png": "39c5d85f48721488803d595149036c48b8269191cc892f764917c5cd82792312",
+        "pair-body-cardiorenal-weight-integration-11.png": "64c693c07f1b3a94b614efae0cad8fe2a6ab55cb54c9f1d9d3fdea6e612b685a",
+        "pair-summary-cardiorenal-weight-integration.png": "755a7f680b41e28e5287842c12605570e2a23f9e9fe9f96b2855d95292458128",
+        "pair-concepts-cardiorenal-weight-integration.png": "cf353dffe0b3e070f916f61863a95264c52560e52fadf553b9947d7db02487cc",
+        "pair-keypoints-cardiorenal-weight-integration.png": "15e56bc763318c0f4cac59c9ec592692fe5470d8da6a1ff1dbf79e7e6ba96a0d",
+        "pair-application-cardiorenal-weight-integration.png": "fb78d2b8bcf211258192ba65e03cdecfe33078dcc4d62cf1867722e489340a72",
+        "pair-figure-cardiorenal-weight-integration.png": "562a705e52d25a41714299ae3d8175ed1c295d2f77b02c9bf7ce27dd3f5c786a",
+        "pair-check-cardiorenal-weight-integration.png": "8aa141eef4e29c77cfe9d1052a1170263a7d3ed8f04afe6cc7524e36d9f7cbfe",
+        "pair-references-noninsulin-diabetes-pharmacotherapy.png": "d84f4c5ab974f795c74d55e567869156200143c527c38c041f6252373edc3bb5",
+        "pair-bank-noninsulin-diabetes-21-safety.png": "6f81b2fb9197f146768c60706ee00598c47099302180aeb003e56251ee2e3fb7",
+        "pair-bank-noninsulin-diabetes-23-safety.png": "5fb9e2c73815d7be88fb2fac0014f4ef19ca397e8cd201f83cc7e7f9ccb15c58",
+        "pair-bank-noninsulin-diabetes-22-principle.png": "e934dab1f2f2b6fa896bfa695e5d5f0c2ebb859b1b0b6c7686d8df7c625219d6",
+        "pair-bank-noninsulin-diabetes-24-safety.png": "402e1107b7ba362cea20b1db4e867d589f390b1c6eb0438b52801dccb6c588f6",
+        "pair-bank-noninsulin-diabetes-22-application.png": "69640ec8f7b516873907e176f1b825b0ba61af29fcffe587ff863d65a102da71",
+        "pair-bank-noninsulin-diabetes-21-application.png": "f4394184f82507ad100b1bcbbe6b6e6726bb4d5b1e284677e1fba350c806b9f3",
+        "pair-bank-noninsulin-diabetes-23-case.png": "573de248b03a7dcd49b9ae6249e31c1fb7bfa43adf9bc637be27022f3d5d5c8b",
+        "pair-bank-noninsulin-diabetes-24-principle.png": "b9cba3e491c03a957d1fef7e912db71348eac9f79b218be8a175d89a4c6e78ce",
+        "pair-bank-noninsulin-diabetes-21-case.png": "a829012cfda303ce0fc81da46a17a734870a54ec37b8e79c636a6be27abe3d82",
+        "pair-bank-noninsulin-diabetes-23-principle.png": "1d72f73b72f27b6fff82fc6f3f50c0b79045715d4024ed16e1c81230fd6b59d7",
+        "pair-bank-noninsulin-diabetes-24-case.png": "235271410e1448bb0bbc5a6b74cd0a1deb270d6486fb461b5819953d1b4c924a",
+        "pair-bank-noninsulin-diabetes-22-case.png": "1be45c1b7461f5f15f2ab978e5fc62363df5dad7aef8223aa24db4b508af131e",
+        "pair-bank-noninsulin-diabetes-22-safety.png": "b0a64ac10c499322b19795745754f56276645bcaeb007d9826c2af1a4b438dff",
+        "pair-bank-noninsulin-diabetes-23-application.png": "c977db0fa875af784c1b773e871758444bed02b9f18a9eac9c5407d309cd9bb5",
+        "pair-bank-noninsulin-diabetes-24-application.png": "2f0639348bc5c7557c1421b79559ef66164007bbf300bdd66a45b5906c8dd1a9",
+        "pair-bank-noninsulin-diabetes-21-principle.png": "7e05ac671da25e19c49ec165aabac45362831336b3f86addeaf1956bf747cc3f",
+        "pair-cumulative-cumulative-noninsulin-diabetes-pharmacotherapy-noninsulin-diabetes-23-application.png": "2c3272b738fb5e42a8340317bd4a2251238eb598f8f204a9fe39948831deb70b",
+        "board-00.png": "bea5f42ad4b29bf0f2f3e5c93c64686fab4710b8ae239d613a65ded66e2c6877",
+        "board-01.png": "3540bc6748078d3fdcc4a690099cdd2252bee49c85f648a95f24cc69f0254cf2",
+        "board-02.png": "b5b88822f104c2dd0521579908c1545fa2f331e438c809570c8c499cb58025e7",
+        "board-03.png": "aa3be5e5e3d28f26a3569f55f5b907ca5ce832fbb46459f3fa50eefd2946c7ac",
+        "board-04.png": "1fb1b7995919a53c10b057aa6e7f255bfd9a5cedadf4753619bdf6243105e5a7",
+        "board-05.png": "8807a23205628c1d20935ce5a952543f2e635b9781f7190d518beaf0011406cd",
+        "board-06.png": "34a40459d085bd37004bd151fe6067ab4c0f0b9350056869b05a624870127553",
+        "board-07.png": "6c9d81ad4797032451c1047f905f6bb9cb66dc7f1f33065249b3d9e5fcfb4164",
+        "board-08.png": "8881d3e0fc878e67415b91a490b5f5ca15ce8b131c95676b805b7e009b471862",
+        "board-09.png": "de1c2087f9e5e601c39630e3f9e09867ae93124fb5b1350e0b759d0d1b1a6d66",
+        "board-10.png": "e99c6ef17fa287bd2ded77addb400dceb05400ae382b91f12ac65dfa2d9bb6db",
+        "board-11.png": "02bce28f2a08a9d9cee0f78ad9ef17f7191c7c81d7e2124ea5bf6e6cd1dd2593",
+        "board-12.png": "2c3272b738fb5e42a8340317bd4a2251238eb598f8f204a9fe39948831deb70b"
+      },
+      "privateSourceViews": "Five whole book pages, thirteen selected product-label pages and ADA Figure9.4 previously read and viewed at original detail; source hashes recorded separately."
+    },
+    "limits": "Isolated unauthenticated production preview. Complete lesson, all four embedded-check choices and sixteen bank cases in correct/incorrect shuffled attempts at 1440/390; figure bounds at five widths. One associated CKD cumulative item verified; other1179 objects unchanged. One lesson, twelve questions, working draft variants, parent chapters and full goal remain open."
+  },
+  "remainingReview": {
+    "nextAction": "Continue noninsulin-diabetes-pharmacotherapy at combination-deintensification-special-settings, reviewing the whole final lesson, every anchored question and derived cumulative item against the book and approved primary sources. Preserve nine verified lessons and 108 verified bank IDs; one lesson and twelve questions remain open. After its verification, reconcile the full parent module including metadata and complete reference coverage before whole-module certification. Preserve the separate working draft of eleven lessons and ninety-two authored questions without inferring certification. Whole MASLD and ALD parents are verified; rifaximin HE is verified, with nine other lessons/147 questions reserved for the Chapter 22 parent audit. Preserve the 245-match contextual inventory, four HIV PI choices, prior ICU withdrawal and all feeding dependencies. Return to Chapter 11 printed 161/PDF169 after broader feeding dependencies. Chapters 11/19/22/44 and Chapter 1 printed 7/PDF19 checklist 15 remain open; the full 82-chapter goal continues.",
+    "wholeParentModulesPending": true,
+    "remainingNoninsulinAuditBranchLessons": 1,
+    "remainingNoninsulinBankQuestions": 12,
+    "workingDraftVariantsRemainReviewing": true
+  },
+  "release": {
+    "branch": "audit/rxprep-content-2026-09-24",
+    "commit": null,
+    "push": "pending",
+    "receipt": "enteral-nutrition-broader-cardiorenal-release.json",
+    "mainMerge": "not performed",
+    "production": "not verified"
+  },
+  "wholeGoalComplete": false,
+  "privateSourceFilesInGit": false
+}
