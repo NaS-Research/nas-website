@@ -3,7 +3,7 @@ import { cysticFibrosisQuestionBank } from "@/data/questionBanks/cysticFibrosis"
 export const cysticFibrosisModule = {
   slug: "cystic-fibrosis", number: "56", title: "Cystic Fibrosis",
   cumulativeQuestionIds: ["cf-001", "cf-031", "cf-061", "cf-090", "cf-120"],
-  source: "Complete cystic fibrosis chapter, Cystic Fibrosis Foundation guidance, and current US labeling",
+  source: "RxPrep cystic fibrosis chapter, Cystic Fibrosis Foundation guidance, current US labeling, and selected clinical studies",
   description: "Connect CFTR dysfunction to disease across the airway, pancreas, intestine, liver, endocrine system, and reproductive tract, then coordinate airway clearance, infection treatment, genotype-directed modulators, nutrition, and longitudinal safety.",
   topics: ["CFTR biology and diagnosis", "Airway clearance", "Pulmonary assessment", "Respiratory infection", "CFTR modulators", "Nutrition and GI care", "Systemic complications", "Advanced care"],
   outcomes: [
@@ -13,7 +13,8 @@ export const cysticFibrosisModule = {
     "Interpret symptoms, spirometry, oxygenation, imaging, and longitudinal baseline to identify pulmonary deterioration and evaluate recovery.",
     "Use respiratory cultures, prior susceptibility, clinical trajectory, and infection history to guide eradication, suppression, and exacerbation treatment.",
     "Select and monitor a CFTR modulator using genotype, age, weight, product, food, interactions, hepatic status, and current labeling.",
-    "Integrate pancreatic enzymes, nutrition, vitamins, diabetes screening, bone and liver health, reproductive care, and advanced-lung-disease planning.",
+    "Integrate pancreatic enzymes, nutrition, vitamins, diabetes screening, and bone and liver health.",
+    "Coordinate infection precautions, mental health screening, reproductive counseling, and timely advanced-lung-disease and transplant evaluation.",
   ],
   submodules: [
     {
