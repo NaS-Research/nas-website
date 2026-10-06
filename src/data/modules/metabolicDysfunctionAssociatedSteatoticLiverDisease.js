@@ -176,3 +176,191 @@ metabolicDysfunctionAssociatedSteatoticLiverDiseaseModule.references.push(...[
     "href": "https://www.hepatitisc.uw.edu/page/clinical-calculators/fib-4"
   }
 ]);
+
+
+// Source-reconciled adult SLD phenotype, mechanisms and competing causes.
+const verifiedMasldFoundationLessons = {
+  "nomenclature-spectrum": {
+    "metadata": {
+      "summary": "Name the cause of steatosis, distinguish MASH activity from fibrosis, and classify alcohol exposure quantitatively.",
+      "concepts": [
+        "SLD umbrella",
+        "Positive metabolic criteria",
+        "MASH activity",
+        "Fibrosis stage",
+        "MetALD"
+      ],
+      "application": "Describe metabolic criteria, alcohol exposure, inflammatory phenotype, fibrosis evidence, and coexisting liver disease as separate parts of the assessment.",
+      "keyPoints": [
+        "Steatosis plus at least one metabolic criterion supports MASLD.",
+        "MASH and fibrosis describe different features.",
+        "Fibrosis is central to liver-related prognosis.",
+        "Alcohol categories do not define a safe intake."
+      ]
+    },
+    "bodies": [
+      {
+        "heading": "Use current terms",
+        "body": "Steatotic liver disease, SLD, includes several causes of hepatic fat accumulation. MASLD replaces the historical NAFLD name, and MASH replaces NASH. When interpreting an older trial, retain its actual inclusion criteria and alcohol limits; a new name does not expand the population studied or establish treatment eligibility."
+      },
+      {
+        "heading": "Establish the metabolic phenotype",
+        "body": "In an adult with hepatic steatosis, MASLD requires at least one of five cardiometabolic criteria involving adiposity, glucose, blood pressure, triglycerides, or HDL cholesterol. Obesity and diabetes are not both mandatory. Evaluate alcohol exposure and other discernible causes before assigning the final SLD subtype; metabolic and other liver disease can coexist."
+      },
+      {
+        "heading": "Separate activity from stage",
+        "body": "MASH describes steatosis with hepatocellular injury, including ballooning, and inflammation. It can occur with or without fibrosis. Fibrosis describes scar and is the main determinant of liver-related prognosis. Steatosis on imaging or an elevated ALT alone does not establish the full histologic MASH phenotype or a particular fibrosis stage."
+      },
+      {
+        "heading": "Classify alcohol explicitly",
+        "body": "Record grams consumed, drinking pattern, frequency, duration, and changes over time. In the adult nomenclature, MetALD combines metabolic steatotic disease with approximately 140-350 g/week in females or 210-420 g/week in males, corresponding to 20-50 or 30-60 g/day. Higher intake favors primarily alcohol-associated liver disease. These are classification ranges, not safe-drinking limits; lower intake can still contribute to progression."
+      },
+      {
+        "heading": "Name what changes care",
+        "body": "Record fibrosis evidence and its certainty rather than using fatty liver as the complete diagnosis. F3 denotes bridging fibrosis and F4 denotes cirrhosis; cirrhosis can be compensated before decompensation develops. Distinguish inflammation, scar, and complications. Liver-related risk rises with fibrosis, while cardiovascular and other competing risks remain relevant."
+      },
+      {
+        "heading": "Do not use normal enzymes as clearance",
+        "body": "Aminotransferases reflect aspects of injury and may be normal in advanced disease. One normal ALT or the absence of symptoms cannot rule out clinically important fibrosis. Assess fibrosis risk with the appropriate pathway and reconcile any disagreement between laboratory results, imaging, and clinical findings."
+      }
+    ],
+    "check": {
+      "question": "Which feature most strongly informs liver-related prognosis in MASLD?",
+      "choices": [
+        "Fibrosis stage, interpreted with the clinical findings.",
+        "One normal ALT value that permanently excludes progression.",
+        "Ultrasound steatosis alone, which establishes a fibrosis stage.",
+        "Body weight alone, regardless of other findings."
+      ],
+      "rationale": "Fibrosis is the main determinant of liver-related outcomes. ALT, the presence of steatosis, and body weight do not independently establish the amount of scar or exclude advanced disease."
+    }
+  },
+  "pathobiology": {
+    "metadata": {
+      "summary": "Connect fatty-acid supply and lipid handling to hepatocyte stress, immune signaling, and stellate-cell scar formation without assuming uniform progression.",
+      "concepts": [
+        "Substrate supply",
+        "De novo lipogenesis",
+        "Lipid species",
+        "Hepatocyte injury",
+        "Stellate cells"
+      ],
+      "application": "Explain why the liver phenotype reflects metabolic load, tissue responses, and modifying factors rather than the amount of stored triglyceride alone.",
+      "keyPoints": [
+        "Adipose insulin resistance increases fatty-acid delivery.",
+        "Lipid storage and lipotoxic injury differ.",
+        "Immune and stellate-cell responses link injury to scar.",
+        "Progression varies between patients."
+      ]
+    },
+    "bodies": [
+      {
+        "heading": "Build the substrate load",
+        "body": "Adipose insulin resistance impairs normal restraint of lipolysis, increasing free-fatty-acid delivery to the liver. Excess carbohydrate supply can promote hepatic de novo lipogenesis, the synthesis of new fatty acids. The resulting phenotype depends on delivery, utilization, oxidation, storage, and export, not on one pathway acting in isolation."
+      },
+      {
+        "heading": "Distinguish storage from injury",
+        "body": "Triglyceride in lipid droplets represents steatosis but is not equivalent to inflammatory injury or fibrosis. Lipotoxic lipid species and disturbed lipid handling can contribute to hepatocyte stress. Mitochondrial dysfunction, endoplasmic-reticulum stress, and inflammatory signaling are linked pathways; the amount of visible fat alone cannot describe their activity."
+      },
+      {
+        "heading": "Connect injury to scar",
+        "body": "Stressed or injured hepatocytes and resident immune-cell responses contribute to inflammatory signaling and stellate-cell activation. Activated hepatic stellate cells deposit extracellular matrix, linking chronic injury to scar formation. Steatosis, inflammation, and fibrosis are related features, but their presence and severity are not interchangeable."
+      },
+      {
+        "heading": "Recognize heterogeneity",
+        "body": "Genetic variation, visceral adiposity, diabetes, dietary exposures, activity, alcohol, and environmental or social conditions influence disease course. Similar BMI or liver-fat measurements can therefore coexist with different injury and fibrosis risk. MASLD can occur in people without obesity; body size alone does not exclude a metabolic phenotype."
+      },
+      {
+        "heading": "Keep the model within its evidence",
+        "body": "These mechanisms describe interacting contributors, not a fixed timetable through which every patient progresses. AASLD notes that oxidative-stress markers are consistently observed in NASH, while the precise causal role of oxidative stress in humans remains uncertain. Genetic associations do not justify routine gene-based risk stratification for every patient. Use clinical fibrosis assessment rather than inferring a stage from a mechanistic explanation."
+      }
+    ],
+    "check": {
+      "question": "Which cellular response most directly links chronic hepatocyte injury to hepatic scar formation?",
+      "choices": [
+        "Activated hepatic stellate cells depositing extracellular matrix.",
+        "Triglyceride storage alone assigning an F4 stage.",
+        "A single glucose measurement creating a histologic stage.",
+        "Ultrasound brightness measuring stellate-cell activity directly."
+      ],
+      "rationale": "Stellate-cell activation and extracellular-matrix deposition produce scar in the injury response. Stored lipid, glucose values, and ultrasound steatosis do not themselves establish a fibrosis stage."
+    }
+  },
+  "risk-secondary-causes": {
+    "metadata": {
+      "summary": "Measure the adult metabolic criteria, quantify exposures, and investigate plausible competing causes before attributing steatosis or abnormal liver tests to MASLD.",
+      "concepts": [
+        "Five metabolic criteria",
+        "Alcohol history",
+        "Medication timeline",
+        "Initial evaluation",
+        "Atypical phenotype"
+      ],
+      "application": "Build a positive metabolic assessment and a targeted search for additional disease, with clear follow-up for abnormal findings.",
+      "keyPoints": [
+        "At least one metabolic criterion is needed with steatosis.",
+        "Risk criteria are not treatment targets.",
+        "Other causes can coexist.",
+        "Medication exposure requires clinical causal assessment."
+      ]
+    },
+    "bodies": [
+      {
+        "heading": "Inventory metabolic risk",
+        "body": "Assess weight history, central adiposity, blood pressure, glucose status, lipids, sleep-apnea risk, kidney and cardiovascular disease, and family history. Diabetes and multiple metabolic abnormalities increase concern for progressive liver disease. Normal BMI does not exclude MASLD; document the measured metabolic criteria rather than assuming that appearance establishes or rules out disease. Selected endocrine conditions may coexist; hypothyroidism associations remain mixed, and steatosis alone does not justify routine hormone screening."
+      },
+      {
+        "heading": "Apply adiposity and glucose criteria",
+        "body": "The adult adiposity criterion is BMI at least 25 kg/m², or at least 23 kg/m² for Asian populations, or waist circumference above 94 cm in males or 80 cm in females, with ethnicity-adjusted thresholds where appropriate. The glucose criterion includes fasting glucose at least 100 mg/dL, two-hour post-load glucose at least 140 mg/dL, HbA1c at least 5.7%, type 2 diabetes, or its treatment. These are alternatives within each criterion; all measurements need not be abnormal."
+      },
+      {
+        "heading": "Apply blood-pressure and lipid criteria",
+        "body": "The remaining adult criteria are blood pressure at least 130/85 mmHg or specific antihypertensive treatment; triglycerides at least 150 mg/dL or lipid-lowering treatment; and HDL cholesterol at most 40 mg/dL in males or 50 mg/dL in females, or lipid-lowering treatment. Steatosis plus at least one of the five criteria supports the metabolic phenotype. These classification thresholds are not individual treatment targets and do not determine fibrosis stage."
+      },
+      {
+        "heading": "Quantify exposures",
+        "body": "Take an alcohol history in grams as well as beverage amount, pattern, and duration. Reconcile prescribed drugs, nonprescription products, and supplements with start dates, dose changes, indications, and the laboratory timeline. AASLD identifies amiodarone, tamoxifen, methotrexate, corticosteroids, 5-fluorouracil, and irinotecan as potential contributors to steatosis or steatohepatitis. Valproate is another potential hepatotoxic exposure. These exposures can involve different injury mechanisms; a list alone does not establish causality."
+      },
+      {
+        "heading": "Evaluate plausible alternatives",
+        "body": "Initial assessment includes history, examination, a hepatic panel, CBC with platelets, glucose and HbA1c, lipids, kidney assessment, and appropriate viral-hepatitis evaluation. Persistently abnormal liver chemistries or an atypical presentation can support additional autoimmune serologies, transferrin saturation, ceruloplasmin, or alpha-1 antitrypsin testing according to the clinical question. Use the phenotype and test results to refine the evaluation rather than ordering every rare-disease test indiscriminately."
+      },
+      {
+        "heading": "Recognize a nutritional or genetic clue",
+        "body": "Steatosis in a patient with marked malnutrition, short bowel, or prior bypass surgery warrants consideration of nutrient deficiencies such as choline or carnitine. Young age with neuropsychiatric findings and low ceruloplasmin can raise concern for Wilson disease. Marked LDL elevation, low HDL, and unusually early fibrosis can suggest lysosomal acid lipase deficiency. These clues prompt directed testing; they do not establish the diagnosis by themselves."
+      },
+      {
+        "heading": "Assess medicines in context",
+        "body": "A patient with steatosis and a potentially implicated medicine needs a causal assessment, not automatic attribution to MASLD or automatic withdrawal of every drug. Review the timing, biochemical pattern, alternative causes, therapeutic need, and appropriate safety information with the treating clinician. If drug-induced liver injury is suspected, the response depends on its severity and clinical context; do not derive a universal stopping threshold or a class-wide prohibition from a historical list."
+      },
+      {
+        "heading": "Avoid a diagnosis of exclusion only",
+        "body": "MASLD uses positive steatosis and cardiometabolic criteria, but positive criteria do not close the differential diagnosis. Viral hepatitis, alcohol, medications, autoimmune disease, and selected genetic or nutritional conditions may add to the liver phenotype and change management. Record what is established, what remains uncertain, which results need follow-up, and whether findings warrant specialist assessment."
+      }
+    ],
+    "check": {
+      "question": "A patient has hepatic steatosis and elevated liver enzymes. What is the best initial approach?",
+      "choices": [
+        "Define metabolic criteria and exposures, then evaluate plausible competing or coexisting causes.",
+        "Assume MASLD explains every abnormality without reviewing history or medicines.",
+        "Assign a fibrosis stage solely from the ALT concentration.",
+        "Delay evaluation until jaundice or other symptoms appear."
+      ],
+      "rationale": "Positive metabolic criteria support MASLD, while the history, examination, laboratory pattern, and exposure timeline guide evaluation for additional liver injury. ALT alone cannot stage fibrosis, and symptom absence does not close the evaluation."
+    }
+  }
+};
+for (const lesson of metabolicDysfunctionAssociatedSteatoticLiverDiseaseModule.submodules) {
+  const verified = verifiedMasldFoundationLessons[lesson.slug];
+  if (verified) {
+    Object.assign(lesson, verified.metadata);
+    lesson.lesson = verified.bodies;
+    Object.assign(lesson.check, verified.check);
+  }
+}
+metabolicDysfunctionAssociatedSteatoticLiverDiseaseModule.references.push(...[
+  {
+    "label": "AASLD SLD nomenclature and adult cardiometabolic criteria",
+    "href": "https://www.aasld.org/new-masld-nomenclature"
+  }
+] );

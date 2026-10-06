@@ -71,6 +71,88 @@ export default function MasldVisual({type}){
 };
   const fibrosisView = fibrosisViews[key];
   if (fibrosisView) return <figure className="chol-visual masld-visual" aria-label={fibrosisView.heading}><figcaption><span>{fibrosisView.eyebrow}</span><strong>{fibrosisView.heading}</strong></figcaption><div className="chol-visual__grid">{fibrosisView.nodes.map(([verb,focus,detail],index)=><div key={verb}><span>{String(index+1).padStart(2,"0")}</span><strong>{verb}</strong><em style={{fontSize:"0.875rem"}}>{focus}</em><p style={{fontSize:"0.875rem"}}>{detail}</p></div>)}</div></figure>;
+  const foundationViews = {
+  "nomenclature-spectrum": {
+    "eyebrow": "Separate clinical dimensions",
+    "heading": "Name the phenotype and stage",
+    "nodes": [
+      [
+        "Identify",
+        "Steatosis",
+        "Establish hepatic fat."
+      ],
+      [
+        "Classify",
+        "Metabolic criteria",
+        "At least one of five."
+      ],
+      [
+        "Distinguish",
+        "Activity and scar",
+        "MASH is not a fibrosis stage."
+      ],
+      [
+        "Quantify",
+        "Alcohol exposure",
+        "Amount and pattern matter."
+      ]
+    ]
+  },
+  "pathobiology": {
+    "eyebrow": "Interacting mechanisms",
+    "heading": "Connect metabolic load to scar",
+    "nodes": [
+      [
+        "Supply",
+        "Fatty-acid load",
+        "Delivery and synthesis."
+      ],
+      [
+        "Stress",
+        "Lipid handling",
+        "Storage differs from injury."
+      ],
+      [
+        "Respond",
+        "Hepatocytes and immunity",
+        "Cell stress drives signaling."
+      ],
+      [
+        "Deposit",
+        "Extracellular matrix",
+        "Stellate cells form scar."
+      ]
+    ]
+  },
+  "risk-secondary-causes": {
+    "eyebrow": "Structured initial evaluation",
+    "heading": "Confirm, assess and reconcile",
+    "nodes": [
+      [
+        "Confirm",
+        "Positive criteria",
+        "Steatosis and metabolic risk."
+      ],
+      [
+        "Assess",
+        "Whole-patient context",
+        "Glucose, lipids and pressure."
+      ],
+      [
+        "Reconcile",
+        "Exposure timeline",
+        "Alcohol, drugs and supplements."
+      ],
+      [
+        "Investigate",
+        "Additional causes",
+        "Test according to the phenotype."
+      ]
+    ]
+  }
+};
+  const foundationView = foundationViews[key];
+  if (foundationView) return <figure className="chol-visual masld-visual" aria-label={foundationView.heading}><figcaption><span>{foundationView.eyebrow}</span><strong>{foundationView.heading}</strong></figcaption><div className="chol-visual__grid">{foundationView.nodes.map(([verb,focus,detail],index)=><div key={verb}><span>{String(index+1).padStart(2,"0")}</span><strong>{verb}</strong><em style={{fontSize:"0.875rem"}}>{focus}</em><p style={{fontSize:"0.875rem"}}>{detail}</p></div>)}</div></figure>;
   const labels=views[key]||views["integrated-case"];
   return <figure className="chol-visual masld-visual" aria-label={`MASLD visual: ${key.replaceAll("-"," ")}`}>
     <div className="chol-visual__copy"><span>Metabolic liver disease</span><h3>{key.replaceAll("-"," ")}</h3><p>Connect metabolic load, liver injury, fibrosis risk, and treatment as one changing trajectory.</p></div>
