@@ -1126,3 +1126,91 @@ const verifiedAldScreeningQuestions = {
 for (const item of alcoholAssociatedLiverDiseaseQuestionBank) {
   if (verifiedAldScreeningQuestions[item.id]) Object.assign(item, verifiedAldScreeningQuestions[item.id]);
 }
+
+
+// Distinct recovery-care cases retain stable IDs, keys and anchors.
+const verifiedAldRecoveryQuestions = {
+  "alcohol-associated-liver-disease-025": {
+    "question": "Which goal is central to improving outcomes in alcohol-associated liver disease?",
+    "choices": [
+      "Sustained alcohol abstinence with treatment support.",
+      "Continuing the same alcohol exposure while monitoring ALT alone.",
+      "Using a support group as a substitute for all liver care.",
+      "Treating a resolved withdrawal episode as permanent recovery."
+    ],
+    "rationale": "The book identifies alcohol cessation and maintenance of abstinence as central to ALD treatment. Medication, rehabilitation, and support can help sustain that goal; monitoring alone does not remove the exposure."
+  },
+  "alcohol-associated-liver-disease-026": {
+    "question": "A patient is unsure about changing alcohol use. Which brief-intervention approach is appropriate?",
+    "choices": [
+      "Explore goals and readiness collaboratively, offer a chosen next step, and arrange follow-up.",
+      "Confront the patient until they agree with the clinician’s goal.",
+      "End the conversation unless the patient immediately promises abstinence.",
+      "Give risk information but exclude the patient from planning."
+    ],
+    "rationale": "ACG supports empathetic motivational intervention that respects autonomy and includes assistance and follow-up. Confrontation or excluding the patient from planning undermines that approach."
+  },
+  "alcohol-associated-liver-disease-027": {
+    "question": "Withdrawal symptoms have resolved after supervised treatment. Which conclusion is justified?",
+    "choices": [
+      "The acute episode is stabilized; ongoing AUD treatment still needs to be arranged.",
+      "AUD has been cured because acute symptoms ended.",
+      "Behavioral treatment is now contraindicated.",
+      "Further care is useful only if withdrawal recurs."
+    ],
+    "rationale": "Withdrawal management and ongoing AUD treatment address different needs. Resolution of acute symptoms does not replace continuing treatment to support recovery."
+  },
+  "alcohol-associated-liver-disease-028": {
+    "question": "A discharge plan lists addiction clinics, but the patient cannot obtain the prescribed medication or reach the next visit. What best closes this gap?",
+    "choices": [
+      "Confirm a receiving service, reachable follow-up, and medication and transport access.",
+      "Count the list as a completed handoff regardless of access.",
+      "Delay all liver follow-up until the patient independently solves the barriers.",
+      "Stop treatment planning because the patient lacks transportation."
+    ],
+    "rationale": "A transition must address immediate treatment and access needs. A list alone does not establish that follow-up or medication can actually be reached."
+  },
+  "alcohol-associated-liver-disease-029": {
+    "question": "A patient declines one twelve-step group but wants treatment. Which response is appropriate?",
+    "choices": [
+      "Offer other support options and continue individualized professional treatment.",
+      "Require that group before considering any AUD medication.",
+      "Exclude secular groups because they cannot support recovery.",
+      "Cancel liver follow-up until the patient joins the declined group."
+    ],
+    "rationale": "Mutual-support groups vary in approach and can complement professional care. Declining one group does not remove other treatment choices."
+  },
+  "alcohol-associated-liver-disease-030": {
+    "question": "Which description correctly distinguishes two behavioral approaches for AUD?",
+    "choices": [
+      "CBT teaches coping with drinking triggers; motivational enhancement builds motivation and a change plan.",
+      "CBT measures liver stiffness; motivational enhancement measures blood alcohol.",
+      "Both approaches require medication to be stopped before counseling.",
+      "Both approaches replace all clinical evaluation for withdrawal."
+    ],
+    "rationale": "NIAAA describes CBT as skills and trigger-focused care and motivational enhancement as building motivation and planning change. Neither is a liver test or a replacement for withdrawal assessment."
+  },
+  "alcohol-associated-liver-disease-031": {
+    "question": "A patient returns to drinking after a stressful event while receiving AUD care. What is the best response?",
+    "choices": [
+      "Review triggers, safety, treatment response, and support needs, then adjust the plan with the patient.",
+      "Assume every available treatment has failed permanently.",
+      "Continue the identical plan without assessing what changed.",
+      "Require the patient to solve the stressor before offering further treatment."
+    ],
+    "rationale": "Recurrence can identify unmet needs and an opportunity to revise treatment. Continued assessment and follow-up are preferable to declaring recovery impossible or withholding help."
+  },
+  "alcohol-associated-liver-disease-032": {
+    "question": "Which policy conflicts with appropriate recovery care when a patient reports renewed drinking?",
+    "choices": [
+      "Automatically terminate AUD care solely because drinking recurred, without reassessment or transition planning.",
+      "Review immediate safety and whether the current setting can meet care needs.",
+      "Arrange another care setting when safety requires it and address medication continuity.",
+      "Invite a patient who disengaged to return and discuss access barriers."
+    ],
+    "rationale": "ASAM discourages punitive discharge for return to use. Safety concerns can require a different setting, but reassessment, continuity, and re-engagement remain priorities."
+  }
+};
+for (const item of alcoholAssociatedLiverDiseaseQuestionBank) {
+  if (verifiedAldRecoveryQuestions[item.id]) Object.assign(item, verifiedAldRecoveryQuestions[item.id]);
+}

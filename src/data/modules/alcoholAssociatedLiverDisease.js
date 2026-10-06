@@ -880,3 +880,86 @@ alcoholAssociatedLiverDiseaseModule.references.push(...[
     "href": "https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/unhealthy-alcohol-use-in-adolescents-and-adults-screening-and-behavioral-counseling-interventions"
   }
 ] );
+
+
+// Source-reconciled ongoing AUD recovery care and treatment continuity.
+const verifiedAldRecoveryLesson = {
+  "metadata": {
+    "summary": "Plan ongoing AUD treatment alongside liver care, with concrete follow-up and a response to recurrence.",
+    "concepts": [
+      "Abstinence and engagement",
+      "Motivational care",
+      "Medication and behavioral treatment",
+      "Community support",
+      "Care continuity"
+    ],
+    "application": "Build a reachable next step, confirm treatment access, and revise the plan with the patient after recurrence.",
+    "keyPoints": [
+      "Sustained abstinence is central to ALD outcomes.",
+      "Withdrawal care must connect to ongoing AUD treatment.",
+      "Tailor medication, behavioral treatment, and support.",
+      "Confirm access and reassess after recurrence."
+    ]
+  },
+  "bodies": [
+    {
+      "heading": "Center abstinence without blame",
+      "body": "Alcohol cessation and sustained abstinence are central to improving ALD outcomes. Explain the liver benefit and use person-first language. Offer treatment even when a patient has not yet achieved abstinence; ongoing drinking does not make the need for care disappear."
+    },
+    {
+      "heading": "Use brief intervention",
+      "body": "Ask permission to discuss alcohol, connect the discussion to the patient’s goals, and explore readiness without confrontation. Ask about use, advise change, assess willingness, assist with a chosen next step, and arrange follow-up. A warning without assistance or follow-up is not the same as a treatment plan."
+    },
+    {
+      "heading": "Combine treatments",
+      "body": "Offer medication and evidence-based behavioral treatment according to individual needs. Cognitive behavioral therapy develops skills for drinking triggers; motivational enhancement builds motivation and a change plan. Contingency approaches reinforce measurable treatment goals. Address accompanying mental health needs. Medication selection must account for liver and kidney function and other safety constraints discussed in the AUD-medications lesson; general AUD approval does not establish suitability for ALD."
+    },
+    {
+      "heading": "Continue care after withdrawal",
+      "body": "Withdrawal management addresses the acute transition after alcohol reduction or cessation. It does not complete AUD treatment. Connect the patient to ongoing care and choose its intensity from clinical needs, safety, and available support rather than treating every recovery pathway as inpatient detoxification."
+    },
+    {
+      "heading": "Offer a choice of community support",
+      "body": "Peer and mutual-support groups can complement professional care. Discuss options that fit the patient’s preferences, including twelve-step and secular groups and available online meetings. A patient who declines one group can still receive medication, behavioral treatment, and liver care."
+    },
+    {
+      "heading": "Close the handoff",
+      "body": "Name the receiving addiction and liver-care clinicians, arrange the next contact, and confirm access to prescribed medication. Check transportation, cost, food, housing, and other barriers that could interrupt care. Provide a clear contact plan for deterioration or difficulty reaching the next service; a referral list alone does not confirm a completed transition."
+    },
+    {
+      "heading": "Reassess after recurrence",
+      "body": "Return to drinking calls for a review of safety, triggers, treatment fit, and support needs. Reassess withdrawal risk before another cessation attempt and adjust care with the patient. Avoid automatic punitive discharge. If safety or needs beyond a program’s capacity require another setting, arrange a transition and medication continuity; invite re-engagement when care has lapsed."
+    }
+  ],
+  "check": {
+    "question": "After withdrawal is stabilized in a patient with ALD and AUD, which plan best supports continued treatment?",
+    "choices": [
+      "Arrange individualized AUD treatment, liver follow-up, medication access, and a reachable next contact.",
+      "End AUD care because the withdrawal symptoms have resolved.",
+      "Delay all treatment until the patient has completed a required support-group program.",
+      "Give a warning to stop drinking without arranging further care."
+    ],
+    "rationale": "Stabilizing withdrawal does not finish AUD treatment. Continued care should address the alcohol-use disorder and liver disease with patient-specific treatment and accessible follow-up."
+  }
+};
+for (const lesson of alcoholAssociatedLiverDiseaseModule.submodules) {
+  if (lesson.slug === "recovery-system") {
+    Object.assign(lesson, verifiedAldRecoveryLesson.metadata);
+    lesson.lesson = verifiedAldRecoveryLesson.bodies;
+    Object.assign(lesson.check, verifiedAldRecoveryLesson.check);
+  }
+}
+alcoholAssociatedLiverDiseaseModule.references.push(...[
+  {
+    "label": "NIAAA evidence-based AUD treatment options: individualized behavioral care, medication and mutual support.",
+    "href": "https://www.niaaa.nih.gov/health-professionals-communities/core-resource-on-alcohol/recommend-evidence-based-treatment-know-options"
+  },
+  {
+    "label": "ASAM clinical considerations (2024): engagement, retention and care after return to substance use.",
+    "href": "https://www.asam.org/quality-care/clinical-recommendations/asam-clinical-considerations-for-engagement-and-retention-of-non-abstinent-patients-in-treatment"
+  },
+  {
+    "label": "NIAAA treatment guide: behavioral approaches, treatment selection and ongoing recovery care.",
+    "href": "https://www.niaaa.nih.gov/sites/default/files/publications/treatment_pub.pdf"
+  }
+] );
