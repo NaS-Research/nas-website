@@ -406,3 +406,60 @@ Object.assign(influenzaAntiviralPharmacologyModule.submodules.find((lesson) => l
     "reviewHref": "#influenza-selection-timing"
   }
 });
+
+
+// Complete oseltamivir mechanism and pharmacokinetics reconciliation against authorized sources.
+Object.assign(influenzaAntiviralPharmacologyModule.submodules.find((lesson) => lesson.slug === "oseltamivir-mechanism-pk"), {
+  "slug": "oseltamivir-mechanism-pk",
+  "title": "Activate the Oseltamivir Prodrug",
+  "visual": "influenza-antiviral-oseltamivir-mechanism-pk",
+  "summary": "Follow the orally absorbed ester prodrug through hepatic esterase activation, influenza neuraminidase inhibition and renal elimination of oseltamivir carboxylate.",
+  "concepts": [
+    "Ester prodrug activation",
+    "Active carboxylate exposure",
+    "Neuraminidase inhibition",
+    "Filtration and tubular secretion",
+    "Documented interaction boundaries"
+  ],
+  "application": "Identify the active species and its elimination route, then review kidney function, indication and documented interactions without inferring a dose from one pharmacokinetic number.",
+  "lesson": [
+    {
+      "heading": "Read the prodrug and exposure",
+      "body": "Oseltamivir phosphate is an ethyl ester prodrug absorbed from the gastrointestinal tract and converted predominantly by hepatic esterases to oseltamivir carboxylate. The carboxylate is the active neuraminidase inhibitor. Tamiflu labeling reports that at least 75% of an oral dose reaches systemic circulation as the carboxylate, while less than 5% reaches circulation as oseltamivir. These percentages describe fractions of the administered dose, not the percentage of plasma molecules in one sample. Ester hydrolysis, rather than a CYP3A4 conversion, produces the active form."
+    },
+    {
+      "heading": "Connect the active form to the target",
+      "body": "Oseltamivir carboxylate inhibits influenza A and B neuraminidase, affecting release of progeny viral particles. This matches the release mechanism described in the book. It is distinct from baloxavir inhibition of PA endonuclease and from historical M2 inhibition. Blocking further viral release is not a mechanism for immediately repairing established respiratory epithelial injury. Greatest benefit with early treatment does not make two days a universal treatment cutoff; retain the priority-patient and setting assessment in the selection lesson."
+    },
+    {
+      "heading": "Follow active-metabolite elimination",
+      "body": "Oseltamivir carboxylate is not further metabolized and is eliminated unchanged through renal excretion. Its renal clearance includes glomerular filtration and active tubular secretion through an organic anion transport pathway. The label reports renal excretion of more than 99% of the active metabolite; this does not mean every milligram of the administered prodrug is excreted unchanged. Reduced renal function increases active-metabolite exposure. Review the indication and exact renal or dialysis regimen in the dosing lesson instead of transferring a standard schedule to every patient. Label half-lives in most subjects are one to three hours for oseltamivir and six to ten hours for the carboxylate; these ranges alone do not prescribe a treatment schedule."
+    },
+    {
+      "heading": "Separate activation from CYP assumptions",
+      "body": "Tamiflu labeling states that neither oseltamivir nor oseltamivir carboxylate is a substrate for, or inhibitor of, cytochrome P450 isoforms. Do not invent routine CYP3A4-based dose changes or describe the active carboxylate as a CYP product. Hepatic esterase activation also does not mean every degree of liver impairment requires dose reduction: no adjustment is required in mild to moderate hepatic impairment, while severe hepatic impairment has not been evaluated for safety and pharmacokinetics. Lack of a CYP interaction does not exclude transport-mediated or vaccine interactions."
+    },
+    {
+      "heading": "Review food and documented interactions",
+      "body": "Food has no significant effect on active-metabolite exposure in the label\u2019s pharmacokinetic study; administration with food may improve tolerability. Probenecid reduces active anionic tubular secretion and approximately doubles exposure to oseltamivir carboxylate. The label does not require a dose adjustment solely for this coadministration, but kidney function and the independently indicated regimen still require review. Intranasal live attenuated influenza vaccine can be affected by antiviral inhibition of vaccine-virus replication, so check vaccine timing. Inactivated influenza vaccine may be given at any time relative to Tamiflu. A low CYP interaction burden is not permission to omit the medication and formulation review."
+    }
+  ],
+  "keyPoints": [
+    "Hepatic esterases convert oseltamivir phosphate to active oseltamivir carboxylate.",
+    "The carboxylate inhibits neuraminidase-mediated viral-particle release.",
+    "Unchanged active metabolite leaves through renal filtration and tubular secretion.",
+    "CYP findings do not eliminate renal, probenecid or live-vaccine review."
+  ],
+  "check": {
+    "question": "Which species directly inhibits influenza neuraminidase after oral oseltamivir?",
+    "choices": [
+      "Oseltamivir carboxylate",
+      "Oseltamivir phosphate only",
+      "Sorbitol",
+      "A CYP3A4 metabolite"
+    ],
+    "answer": 0,
+    "rationale": "Oseltamivir carboxylate is the active neuraminidase inhibitor formed by esterase hydrolysis of the prodrug. The administered phosphate salt is not the final active species, and activation is not through CYP3A4. Sorbitol is an ingredient in the commercial suspension, not the antiviral metabolite.",
+    "reviewHref": "#oseltamivir-mechanism-pk"
+  }
+});

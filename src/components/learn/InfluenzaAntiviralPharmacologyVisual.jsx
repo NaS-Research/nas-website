@@ -34,10 +34,11 @@ const diagrams = {
     descriptions: ["Two days is not a universal cutoff.", "Oral or enteric is the routine choice.", "Check device, absorption and interactions.", "Convenience does not establish benefit."],
   },
   "oseltamivir-mechanism-pk": {
-    eyebrow: "Prodrug pathway",
+    eyebrow: "Oseltamivir disposition",
     title: "Activate, inhibit, eliminate",
-    nodes: ["Oseltamivir phosphate", "Hepatic esterases", "Active carboxylate", "Renal clearance"],
-    notes: ["Oral ester prodrug", "Hydrolysis", "Neuraminidase inhibition", "Adjust exposure"],
+    nodes: ["Ester prodrug", "Hepatic esterases", "Active carboxylate", "Renal clearance"],
+    notes: ["Oseltamivir phosphate", "Ester hydrolysis", "Neuraminidase inhibition", "Filtration and secretion"],
+    descriptions: ["Absorbed after oral administration.", "Predominantly hepatic activation.", "Limits progeny viral-particle release.", "Review the renal dosing regimen."],
   },
   "oseltamivir-dosing-administration": {
     eyebrow: "Dose system",
@@ -97,9 +98,9 @@ export default function InfluenzaAntiviralPharmacologyVisual({ type }) {
         {data.nodes.map((label, index) => (
           <div key={label}>
             <span>{String(index + 1).padStart(2, "0")}</span>
-            <strong style={(type === "influenza-antiviral-influenza-life-cycle-targets" || type === "influenza-antiviral-influenza-selection-timing") ? { fontSize: "14px" } : undefined}>{label}</strong>
-            <em style={(type === "influenza-antiviral-oseltamivir-dosing-administration" || type === "influenza-antiviral-influenza-biology-triage" || type === "influenza-antiviral-influenza-life-cycle-targets" || type === "influenza-antiviral-influenza-selection-timing") ? { fontSize: "14px" } : undefined}>{data.notes[index]}</em>
-            <p style={(type === "influenza-antiviral-oseltamivir-dosing-administration" || type === "influenza-antiviral-influenza-biology-triage" || type === "influenza-antiviral-influenza-life-cycle-targets" || type === "influenza-antiviral-influenza-selection-timing") ? { fontSize: "14px" } : undefined}>{data.descriptions?.[index] ?? (index < data.nodes.length - 1 ? "Carry the verified input forward." : "Own the next clinical action.")}</p>
+            <strong style={(type === "influenza-antiviral-influenza-life-cycle-targets" || type === "influenza-antiviral-influenza-selection-timing" || type === "influenza-antiviral-oseltamivir-mechanism-pk") ? { fontSize: "14px" } : undefined}>{label}</strong>
+            <em style={(type === "influenza-antiviral-oseltamivir-dosing-administration" || type === "influenza-antiviral-influenza-biology-triage" || type === "influenza-antiviral-influenza-life-cycle-targets" || type === "influenza-antiviral-influenza-selection-timing" || type === "influenza-antiviral-oseltamivir-mechanism-pk") ? { fontSize: "14px" } : undefined}>{data.notes[index]}</em>
+            <p style={(type === "influenza-antiviral-oseltamivir-dosing-administration" || type === "influenza-antiviral-influenza-biology-triage" || type === "influenza-antiviral-influenza-life-cycle-targets" || type === "influenza-antiviral-influenza-selection-timing" || type === "influenza-antiviral-oseltamivir-mechanism-pk") ? { fontSize: "14px" } : undefined}>{data.descriptions?.[index] ?? (index < data.nodes.length - 1 ? "Carry the verified input forward." : "Own the next clinical action.")}</p>
           </div>
         ))}
       </div>

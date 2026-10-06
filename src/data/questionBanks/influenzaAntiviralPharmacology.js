@@ -1139,3 +1139,248 @@ for (const [id, updates] of Object.entries({
 })) {
   Object.assign(influenzaAntiviralPharmacologyQuestionBank.find((question) => question.id === id), updates);
 }
+
+
+// Whole oseltamivir pharmacokinetic questions reviewed with stable IDs and keyed indices.
+for (const [id, updates] of Object.entries({
+  "influenza-antiviral-pharmacology-049": {
+    "id": "influenza-antiviral-pharmacology-049",
+    "lesson": "oseltamivir-mechanism-pk",
+    "question": "Which statement correctly describes oseltamivir activation after oral administration?",
+    "choices": [
+      "The ester prodrug is converted predominantly by hepatic esterases to active oseltamivir carboxylate",
+      "CYP3A4 produces the active carboxylate as the principal activation pathway",
+      "Sorbitol in the suspension is converted into the active antiviral",
+      "The administered phosphate salt remains the only active circulating species"
+    ],
+    "answer": 0,
+    "rationale": "Esterase hydrolysis produces oseltamivir carboxylate. It is not a CYP3A4 product or a sorbitol metabolite, and the administered parent salt should not be equated with the final active form.",
+    "reviewHref": "#oseltamivir-mechanism-pk"
+  },
+  "influenza-antiviral-pharmacology-050": {
+    "id": "influenza-antiviral-pharmacology-050",
+    "lesson": "oseltamivir-mechanism-pk",
+    "question": "How should the label\u2019s at-least-75% systemic carboxylate figure be interpreted?",
+    "choices": [
+      "At least 75% of an oral dose reaches systemic circulation as the active metabolite",
+      "Exactly 75% of the molecules in every plasma sample must be carboxylate",
+      "At least 75% of the oral dose remains unchanged oseltamivir in circulation",
+      "At least 75% of the administered dose is immediately excreted in urine as unchanged prodrug"
+    ],
+    "answer": 0,
+    "rationale": "The label gives a fraction of the oral dose reaching circulation as carboxylate, not a fixed composition of every plasma sample. Less than 5% reaches circulation as parent oseltamivir; the figure is not immediate unchanged-prodrug urine recovery.",
+    "reviewHref": "#oseltamivir-mechanism-pk"
+  },
+  "influenza-antiviral-pharmacology-051": {
+    "id": "influenza-antiviral-pharmacology-051",
+    "lesson": "oseltamivir-mechanism-pk",
+    "question": "Which pairing correctly connects oseltamivir administration to its active species?",
+    "choices": [
+      "Oseltamivir phosphate administration followed by esterase formation of oseltamivir carboxylate",
+      "Oseltamivir phosphate administration followed by formation of active baloxavir",
+      "Oseltamivir carboxylate administration followed by conversion into sorbitol",
+      "Oseltamivir phosphate administration followed by a required CYP3A4 activation step"
+    ],
+    "answer": 0,
+    "rationale": "The oral product supplies the ester prodrug, whose active carboxylate is formed by esterases. Baloxavir is a different drug, sorbitol is an excipient, and CYP3A4 is not the required activation pathway.",
+    "reviewHref": "#oseltamivir-mechanism-pk"
+  },
+  "influenza-antiviral-pharmacology-052": {
+    "id": "influenza-antiviral-pharmacology-052",
+    "lesson": "oseltamivir-mechanism-pk",
+    "question": "Which activation statement should be corrected?",
+    "choices": [
+      "The phosphate salt name identifies the final active circulating metabolite",
+      "The carboxylate is the active neuraminidase inhibitor",
+      "The label describes extensive conversion by predominantly hepatic esterases",
+      "Ester hydrolysis converts the prodrug to its active form"
+    ],
+    "answer": 0,
+    "rationale": "The final active form is oseltamivir carboxylate, not simply the administered phosphate salt. The other statements accurately identify the active species and its esterase-mediated formation.",
+    "reviewHref": "#oseltamivir-mechanism-pk"
+  },
+  "influenza-antiviral-pharmacology-053": {
+    "id": "influenza-antiviral-pharmacology-053",
+    "lesson": "oseltamivir-mechanism-pk",
+    "question": "Which direct antiviral action belongs to oseltamivir carboxylate?",
+    "choices": [
+      "Inhibiting influenza neuraminidase to affect progeny viral-particle release",
+      "Inhibiting PA endonuclease as its principal influenza target",
+      "Blocking the influenza A M2 proton channel as its principal target",
+      "Directly repairing injured respiratory epithelium"
+    ],
+    "answer": 0,
+    "rationale": "The book and label identify neuraminidase-mediated viral-particle release. PA is the baloxavir target, M2 is the historical adamantane target, and inhibition of release is not direct tissue repair.",
+    "reviewHref": "#oseltamivir-mechanism-pk"
+  },
+  "influenza-antiviral-pharmacology-054": {
+    "id": "influenza-antiviral-pharmacology-054",
+    "lesson": "oseltamivir-mechanism-pk",
+    "question": "Which statement best connects oseltamivir\u2019s mechanism to the expected clinical response?",
+    "choices": [
+      "Limiting further viral release does not guarantee immediate reversal of existing respiratory injury",
+      "Neuraminidase inhibition instantly reverses all existing lung injury",
+      "Any persistence of symptoms proves the active metabolite never formed",
+      "Because benefit is greatest early, all treatment must stop being considered after two days"
+    ],
+    "answer": 0,
+    "rationale": "The release mechanism limits new viral spread without guaranteeing immediate repair. Persistent symptoms alone do not prove failed activation, and greatest early benefit is not a universal late-treatment exclusion.",
+    "reviewHref": "#oseltamivir-mechanism-pk"
+  },
+  "influenza-antiviral-pharmacology-055": {
+    "id": "influenza-antiviral-pharmacology-055",
+    "lesson": "oseltamivir-mechanism-pk",
+    "question": "Which target comparison correctly distinguishes oseltamivir carboxylate from baloxavir?",
+    "choices": [
+      "Oseltamivir carboxylate inhibits neuraminidase; baloxavir inhibits PA endonuclease",
+      "Both drugs have PA endonuclease as their direct target",
+      "Both drugs have the M2 proton channel as their direct target",
+      "Oseltamivir carboxylate inhibits PA while baloxavir inhibits neuraminidase"
+    ],
+    "answer": 0,
+    "rationale": "Neuraminidase and PA endonuclease are different targets assigned to oseltamivir carboxylate and baloxavir respectively. Neither pairing is an M2 mechanism, and swapping the targets is incorrect.",
+    "reviewHref": "#oseltamivir-mechanism-pk"
+  },
+  "influenza-antiviral-pharmacology-056": {
+    "id": "influenza-antiviral-pharmacology-056",
+    "lesson": "oseltamivir-mechanism-pk",
+    "question": "Which claim about oseltamivir neuraminidase inhibition should be corrected?",
+    "choices": [
+      "Inhibiting viral-particle release guarantees immediate repair of previously damaged epithelium",
+      "The active carboxylate inhibits influenza neuraminidase",
+      "The release mechanism is distinct from PA endonuclease inhibition",
+      "Timing, host factors and complications still matter when assessing response"
+    ],
+    "answer": 0,
+    "rationale": "Antiviral release inhibition is not a guarantee of tissue repair. The active species, distinct target and need for clinical response assessment are all supported.",
+    "reviewHref": "#oseltamivir-mechanism-pk"
+  },
+  "influenza-antiviral-pharmacology-057": {
+    "id": "influenza-antiviral-pharmacology-057",
+    "lesson": "oseltamivir-mechanism-pk",
+    "question": "Which statement correctly describes oseltamivir carboxylate disposition?",
+    "choices": [
+      "It is not further metabolized and is eliminated unchanged by renal excretion",
+      "It is primarily converted by CYP3A4 into baloxavir",
+      "It is eliminated mainly as unchanged drug through bile",
+      "It must first be converted back into the phosphate prodrug"
+    ],
+    "answer": 0,
+    "rationale": "The label describes unchanged renal elimination without further metabolism of the carboxylate. CYP conversion to another antiviral, predominantly biliary elimination and reconversion to the parent prodrug are incorrect.",
+    "reviewHref": "#oseltamivir-mechanism-pk"
+  },
+  "influenza-antiviral-pharmacology-058": {
+    "id": "influenza-antiviral-pharmacology-058",
+    "lesson": "oseltamivir-mechanism-pk",
+    "question": "Which processes contribute to oseltamivir carboxylate renal clearance?",
+    "choices": [
+      "Glomerular filtration and active tubular secretion",
+      "Glomerular filtration alone with no tubular secretion",
+      "CYP3A4 metabolism followed by biliary clearance only",
+      "Predominant renal conversion into sorbitol"
+    ],
+    "answer": 0,
+    "rationale": "Renal clearance exceeds filtration alone, supporting active organic anion tubular secretion. CYP/biliary elimination and conversion to the suspension excipient do not describe the active metabolite\u2019s disposition.",
+    "reviewHref": "#oseltamivir-mechanism-pk"
+  },
+  "influenza-antiviral-pharmacology-059": {
+    "id": "influenza-antiviral-pharmacology-059",
+    "lesson": "oseltamivir-mechanism-pk",
+    "question": "What is the appropriate consequence of reduced kidney function when reviewing oseltamivir?",
+    "choices": [
+      "Review the indication and exact renal or dialysis regimen because active-metabolite exposure increases",
+      "Use the same standard regimen for every level of renal function",
+      "Assume renal impairment prevents all hepatic esterase activation",
+      "Double the dose automatically to offset slower active-metabolite clearance"
+    ],
+    "answer": 0,
+    "rationale": "Reduced renal clearance raises carboxylate exposure, so the specific regimen requires review. A universal standard regimen or automatic dose doubling is inappropriate, and renal impairment does not by itself establish failure of hepatic activation.",
+    "reviewHref": "#oseltamivir-mechanism-pk"
+  },
+  "influenza-antiviral-pharmacology-060": {
+    "id": "influenza-antiviral-pharmacology-060",
+    "lesson": "oseltamivir-mechanism-pk",
+    "question": "Which interpretation of oseltamivir half-life should be corrected?",
+    "choices": [
+      "The parent-drug half-life alone is sufficient to choose every treatment and prophylaxis schedule",
+      "Parent oseltamivir and active carboxylate have different reported half-life ranges",
+      "Active-metabolite disposition must be considered alongside renal function",
+      "Indication-specific labeled regimens should guide dosing rather than one isolated PK number"
+    ],
+    "answer": 0,
+    "rationale": "One parent-drug half-life cannot prescribe every regimen. The label reports distinct parent and metabolite ranges; kidney function, indication and verified dosing schedules remain relevant.",
+    "reviewHref": "#oseltamivir-mechanism-pk"
+  },
+  "influenza-antiviral-pharmacology-061": {
+    "id": "influenza-antiviral-pharmacology-061",
+    "lesson": "oseltamivir-mechanism-pk",
+    "question": "Which CYP statement matches Tamiflu labeling?",
+    "choices": [
+      "Neither oseltamivir nor oseltamivir carboxylate is a substrate for, or inhibitor of, CYP isoforms",
+      "CYP3A4 activation is required before carboxylate can inhibit neuraminidase",
+      "The active carboxylate is a strong CYP3A4 inhibitor requiring routine dose changes",
+      "The parent prodrug is principally cleared as a CYP2D6 metabolite"
+    ],
+    "answer": 0,
+    "rationale": "The label identifies esterase activation and no CYP substrate/inhibitor role for either species. Required CYP3A4 activation, strong CYP3A4 inhibition and principal CYP2D6 clearance are unsupported.",
+    "reviewHref": "#oseltamivir-mechanism-pk"
+  },
+  "influenza-antiviral-pharmacology-062": {
+    "id": "influenza-antiviral-pharmacology-062",
+    "lesson": "oseltamivir-mechanism-pk",
+    "question": "How should the oseltamivir-probenecid interaction be interpreted?",
+    "choices": [
+      "Probenecid reduces active tubular secretion and approximately doubles carboxylate exposure, but the label requires no dose adjustment solely for coadministration",
+      "Probenecid blocks CYP3A4 activation and prevents active carboxylate formation",
+      "Probenecid lowers carboxylate exposure and always requires doubling oseltamivir",
+      "No CYP interaction means probenecid cannot alter oseltamivir exposure"
+    ],
+    "answer": 0,
+    "rationale": "Probenecid affects renal organic anion secretion rather than CYP activation and increases exposure. The label does not require a dose change for this interaction alone; separate renal and indication requirements still apply.",
+    "reviewHref": "#oseltamivir-mechanism-pk"
+  },
+  "influenza-antiviral-pharmacology-063": {
+    "id": "influenza-antiviral-pharmacology-063",
+    "lesson": "oseltamivir-mechanism-pk",
+    "question": "Which statement correctly distinguishes hepatic activation from hepatic-impairment dosing evidence?",
+    "choices": [
+      "No adjustment is required in mild to moderate hepatic impairment; severe impairment has not been evaluated for safety and PK",
+      "Every degree of liver impairment requires dose reduction because activation is hepatic",
+      "Severe hepatic impairment is proven equivalent to normal hepatic function",
+      "Mild hepatic impairment requires routine CYP3A4-based adjustment"
+    ],
+    "answer": 0,
+    "rationale": "The label does not require adjustment in mild to moderate hepatic impairment and leaves severe impairment unevaluated. Hepatic esterases do not justify a blanket reduction, proof of severe equivalence or an invented CYP dose rule.",
+    "reviewHref": "#oseltamivir-mechanism-pk"
+  },
+  "influenza-antiviral-pharmacology-064": {
+    "id": "influenza-antiviral-pharmacology-064",
+    "lesson": "oseltamivir-mechanism-pk",
+    "question": "Which interaction inference should be corrected?",
+    "choices": [
+      "No CYP substrate or inhibitor role means medication and influenza-vaccine review can be omitted",
+      "Probenecid can alter exposure through renal tubular secretion",
+      "Intranasal live attenuated vaccine timing deserves review during oseltamivir use",
+      "Inactivated influenza vaccine may be given at any time relative to Tamiflu"
+    ],
+    "answer": 0,
+    "rationale": "The CYP finding does not remove transport-mediated or live-vaccine interactions. Probenecid and LAIV need their specific review, while the label permits inactivated influenza vaccine at any relative time.",
+    "reviewHref": "#oseltamivir-mechanism-pk"
+  },
+  "influenza-antiviral-pharmacology-180": {
+    "id": "influenza-antiviral-pharmacology-180",
+    "lesson": "oseltamivir-mechanism-pk",
+    "question": "Which form directly inhibits influenza neuraminidase after oral oseltamivir?",
+    "choices": [
+      "Oseltamivir carboxylate",
+      "Oseltamivir phosphate salt only",
+      "An active CYP3A4 metabolite",
+      "Sorbitol"
+    ],
+    "answer": 0,
+    "rationale": "Esterases located predominantly in the liver convert the prodrug to active oseltamivir carboxylate. The administered phosphate salt is not the final active species, activation is not through CYP3A4, and sorbitol is a suspension ingredient rather than the antiviral metabolite.",
+    "reviewHref": "#oseltamivir-mechanism-pk"
+  }
+})) {
+  Object.assign(influenzaAntiviralPharmacologyQuestionBank.find((question) => question.id === id), updates);
+}
