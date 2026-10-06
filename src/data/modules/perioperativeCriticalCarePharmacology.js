@@ -898,3 +898,561 @@ perioperativeCriticalCarePharmacologyModule.references.push(...[
     "href": "https://pubmed.ncbi.nlm.nih.gov/6098370/"
   }
 ].filter((reference) => !perioperativeCriticalCarePharmacologyModule.references.some((existing) => existing.href === reference.href)));
+
+
+// Reconcile product-specific hemostasis and acid-suppression safety with reviewed sources.
+{
+ const existing = perioperativeCriticalCarePharmacologyModule.submodules.find((lesson) => lesson.slug === "topical-and-factor-hemostasis");
+ if (existing) Object.assign(existing, {
+  "slug": "topical-and-factor-hemostasis",
+  "title": "Match Hemostatic Therapy to the Bleeding Site and Defect",
+  "visual": "periop-hemostatic-route",
+  "summary": "Topical thrombin and fibrin sealants act at a bleeding surface. Systemic factor replacement and inhibitor-bypassing therapies address specific coagulation defects. Match the product and route to the mechanism, then assess both clinical bleeding and the relevant monitoring results.",
+  "concepts": [
+    "Topical thrombin and fibrin",
+    "Factor replacement",
+    "Inhibitor bypass",
+    "Antibodies and thrombosis",
+    "Clinical hemostasis"
+  ],
+  "application": "Confirm the bleeding source, exact product, route, allergy and antibody history, indication and clinical response plan with the procedural or hematology team.",
+  "lesson": [
+    {
+      "heading": "Use topical thrombin for accessible oozing",
+      "body": "RECOTHROM is recombinant thrombin for surface hemostasis when conventional techniques are ineffective or impractical for minor capillary or small-venule bleeding. It is not for massive or brisk arterial bleeding. Keep its transfer syringe and receptacle labeled for topical use; never inject it. The label covers adults and children at least one month old; safety and efficacy are not established in neonates."
+    },
+    {
+      "heading": "Screen recombinant thrombin before use",
+      "body": "RECOTHROM is contraindicated with hypersensitivity to the product, its components or hamster proteins. Entry into the circulation can cause thrombosis. Apply the exact product with its approved delivery system and follow the preparation instructions; a transfer syringe does not establish an injectable route."
+    },
+    {
+      "heading": "Recognize bovine thrombin's antibody risk",
+      "body": "THROMBIN-JMI is bovine topical thrombin. Do not re-expose someone with known or suspected antibodies to bovine thrombin or factor V, and screen for bovine-product hypersensitivity. Antibodies can interfere with hemostasis: factor V antibodies may cross-react with human factor V and cause bleeding. Monitor for abnormal coagulation, bleeding or thrombosis."
+    },
+    {
+      "heading": "Treat a fibrin sealant as its own product",
+      "body": "TISSEEL combines human fibrinogen and thrombin for topical surgical use. Spray delivery can cause fatal gas embolism if pressure or distance is inappropriate. Use the compatible device, gas, pressure and distance specified for that procedure; minimally invasive delivery uses CO2 only. Do not spray if the minimum distance cannot be assured, and never inject intravascularly. Screen for aprotinin-related hypersensitivity. It is not for severe or brisk arterial or venous bleeding or injection into highly vascular tissue such as nasal mucosa. Neurosurgical or other confined-space use is not FDA-approved."
+    },
+    {
+      "heading": "Distinguish skin closure from hemostatic delivery",
+      "body": "An acrylate or adhesive name does not define a safe route or indication. Topical skin adhesives hold suitable wound edges together; FDA guidance advises against their use in ongoing bleeding, infection or incompletely debrided wounds. Internal tissue adhesives and vascular hemostatic devices have different intended uses. Select the exact device and follow its instructions rather than substituting a skin adhesive for a surgical hemostat."
+    },
+    {
+      "heading": "Match replacement to the missing factor",
+      "body": "COAGADEX supplies human factor X for hereditary factor X deficiency, including prophylaxis, bleeding treatment and perioperative management across mild, moderate and severe disease. ADYNOVATE supplies PEGylated recombinant factor VIII for adult and pediatric hemophilia A, including bleeding treatment, perioperative management and prophylaxis; it is not indicated for von Willebrand disease. Their shared role in bleeding care does not make them interchangeable; identify the deficiency and use its specialist dosing and monitoring plan."
+    },
+    {
+      "heading": "Investigate an inadequate replacement response",
+      "body": "For COAGADEX, monitor factor X activity; unexpectedly low activity or continued bleeding despite an appropriate dose warrants factor X inhibitor testing. ADYNOVATE similarly requires factor VIII activity monitoring and inhibitor evaluation when response is inadequate. Check preparation, administration and the bleeding source as well. These factor-specific assessments differ from interpreting INR after recombinant VIIa. Screen replacement-product hypersensitivity: prior life-threatening COAGADEX reactions are contraindications; ADYNOVATE also excludes prior anaphylaxis to the product, ADVATE, mouse or hamster proteins, or its excipients."
+    },
+    {
+      "heading": "Distinguish inhibitor bypass from replacement",
+      "body": "FEIBA is an anti-inhibitor coagulant complex used in hemophilia A or B with inhibitors for bleeding control, perioperative care and prophylaxis. Its label does not indicate it for factor-deficiency bleeding without factor VIII or IX inhibitors. Confirm inhibitor status and the exact hematology plan before substituting a product."
+    },
+    {
+      "heading": "Screen FEIBA combinations before administration",
+      "body": "FEIBA is contraindicated with DIC, acute thrombosis or embolism, or prior severe product hypersensitivity. Its label limits a single dose to 100 units/kg and total daily exposure to 200 units/kg; these ceilings are not starting-dose recommendations. Systemic tranexamic acid or aminocaproic acid is not recommended within approximately 6 to 12 hours after FEIBA because of thrombotic risk. Concurrent emicizumab requires specialist assessment and close monitoring for thrombotic microangiopathy if FEIBA is necessary."
+    },
+    {
+      "heading": "Identify the factor VIIa indication",
+      "body": "IV NOVOSEVEN RT is labeled for bleeding and perioperative care in adults and children with hemophilia A or B with inhibitors, congenital factor VII deficiency, or Glanzmann thrombasthenia refractory to platelet transfusion, with or without platelet antibodies. Acquired hemophilia is an adult indication. These defined populations do not establish routine use for every trauma or anticoagulant-associated bleed."
+    },
+    {
+      "heading": "Treat thrombosis risk as part of selection",
+      "body": "NOVOSEVEN RT carries a boxed warning for serious arterial and venous thrombosis. Review other hemostatic agents and thrombotic risk with the specialist team. New thrombosis or laboratory evidence of intravascular coagulation calls for dose reduction or stopping treatment according to the clinical situation."
+    },
+    {
+      "heading": "Measure bleeding control directly",
+      "body": "After NOVOSEVEN RT, PT/INR, aPTT and factor VII activity do not directly establish hemostatic success. Assess actual bleeding and the patient's response. In congenital factor VII deficiency, laboratory and antibody assessment still has a role when expected response is absent; do not replace clinical assessment with a normalized INR."
+    }
+  ],
+  "keyPoints": [
+    "Topical thrombin must not be injected.",
+    "Factor replacement and inhibitor bypass are not interchangeable.",
+    "Antibody, allergy and thrombosis risks depend on the product.",
+    "Laboratory correction is not proof of bleeding control."
+  ],
+  "check": {
+    "question": "A prepared RECOTHROM transfer syringe is handed over for IV administration. What is the immediate correction?",
+    "choices": [
+      "Stop: this product is for topical application only",
+      "Give it slowly through a central line",
+      "Dilute it to convert it into an IV product",
+      "Use the INR to select its IV dose"
+    ],
+    "answer": 0,
+    "rationale": "A syringe used for product transfer does not change the topical-only route; intravascular exposure can cause thrombosis. A slower rate or central line does not make injection safe. Dilution cannot change its topical-only route, and INR cannot supply a valid IV dose for this product.",
+    "reviewHref": "#topical-and-factor-hemostasis"
+  }
+});
+ else perioperativeCriticalCarePharmacologyModule.submodules.splice(perioperativeCriticalCarePharmacologyModule.submodules.findIndex((lesson) => lesson.slug === "antifibrinolytic-hemostasis"), 0, {
+  "slug": "topical-and-factor-hemostasis",
+  "title": "Match Hemostatic Therapy to the Bleeding Site and Defect",
+  "visual": "periop-hemostatic-route",
+  "summary": "Topical thrombin and fibrin sealants act at a bleeding surface. Systemic factor replacement and inhibitor-bypassing therapies address specific coagulation defects. Match the product and route to the mechanism, then assess both clinical bleeding and the relevant monitoring results.",
+  "concepts": [
+    "Topical thrombin and fibrin",
+    "Factor replacement",
+    "Inhibitor bypass",
+    "Antibodies and thrombosis",
+    "Clinical hemostasis"
+  ],
+  "application": "Confirm the bleeding source, exact product, route, allergy and antibody history, indication and clinical response plan with the procedural or hematology team.",
+  "lesson": [
+    {
+      "heading": "Use topical thrombin for accessible oozing",
+      "body": "RECOTHROM is recombinant thrombin for surface hemostasis when conventional techniques are ineffective or impractical for minor capillary or small-venule bleeding. It is not for massive or brisk arterial bleeding. Keep its transfer syringe and receptacle labeled for topical use; never inject it. The label covers adults and children at least one month old; safety and efficacy are not established in neonates."
+    },
+    {
+      "heading": "Screen recombinant thrombin before use",
+      "body": "RECOTHROM is contraindicated with hypersensitivity to the product, its components or hamster proteins. Entry into the circulation can cause thrombosis. Apply the exact product with its approved delivery system and follow the preparation instructions; a transfer syringe does not establish an injectable route."
+    },
+    {
+      "heading": "Recognize bovine thrombin's antibody risk",
+      "body": "THROMBIN-JMI is bovine topical thrombin. Do not re-expose someone with known or suspected antibodies to bovine thrombin or factor V, and screen for bovine-product hypersensitivity. Antibodies can interfere with hemostasis: factor V antibodies may cross-react with human factor V and cause bleeding. Monitor for abnormal coagulation, bleeding or thrombosis."
+    },
+    {
+      "heading": "Treat a fibrin sealant as its own product",
+      "body": "TISSEEL combines human fibrinogen and thrombin for topical surgical use. Spray delivery can cause fatal gas embolism if pressure or distance is inappropriate. Use the compatible device, gas, pressure and distance specified for that procedure; minimally invasive delivery uses CO2 only. Do not spray if the minimum distance cannot be assured, and never inject intravascularly. Screen for aprotinin-related hypersensitivity. It is not for severe or brisk arterial or venous bleeding or injection into highly vascular tissue such as nasal mucosa. Neurosurgical or other confined-space use is not FDA-approved."
+    },
+    {
+      "heading": "Distinguish skin closure from hemostatic delivery",
+      "body": "An acrylate or adhesive name does not define a safe route or indication. Topical skin adhesives hold suitable wound edges together; FDA guidance advises against their use in ongoing bleeding, infection or incompletely debrided wounds. Internal tissue adhesives and vascular hemostatic devices have different intended uses. Select the exact device and follow its instructions rather than substituting a skin adhesive for a surgical hemostat."
+    },
+    {
+      "heading": "Match replacement to the missing factor",
+      "body": "COAGADEX supplies human factor X for hereditary factor X deficiency, including prophylaxis, bleeding treatment and perioperative management across mild, moderate and severe disease. ADYNOVATE supplies PEGylated recombinant factor VIII for adult and pediatric hemophilia A, including bleeding treatment, perioperative management and prophylaxis; it is not indicated for von Willebrand disease. Their shared role in bleeding care does not make them interchangeable; identify the deficiency and use its specialist dosing and monitoring plan."
+    },
+    {
+      "heading": "Investigate an inadequate replacement response",
+      "body": "For COAGADEX, monitor factor X activity; unexpectedly low activity or continued bleeding despite an appropriate dose warrants factor X inhibitor testing. ADYNOVATE similarly requires factor VIII activity monitoring and inhibitor evaluation when response is inadequate. Check preparation, administration and the bleeding source as well. These factor-specific assessments differ from interpreting INR after recombinant VIIa. Screen replacement-product hypersensitivity: prior life-threatening COAGADEX reactions are contraindications; ADYNOVATE also excludes prior anaphylaxis to the product, ADVATE, mouse or hamster proteins, or its excipients."
+    },
+    {
+      "heading": "Distinguish inhibitor bypass from replacement",
+      "body": "FEIBA is an anti-inhibitor coagulant complex used in hemophilia A or B with inhibitors for bleeding control, perioperative care and prophylaxis. Its label does not indicate it for factor-deficiency bleeding without factor VIII or IX inhibitors. Confirm inhibitor status and the exact hematology plan before substituting a product."
+    },
+    {
+      "heading": "Screen FEIBA combinations before administration",
+      "body": "FEIBA is contraindicated with DIC, acute thrombosis or embolism, or prior severe product hypersensitivity. Its label limits a single dose to 100 units/kg and total daily exposure to 200 units/kg; these ceilings are not starting-dose recommendations. Systemic tranexamic acid or aminocaproic acid is not recommended within approximately 6 to 12 hours after FEIBA because of thrombotic risk. Concurrent emicizumab requires specialist assessment and close monitoring for thrombotic microangiopathy if FEIBA is necessary."
+    },
+    {
+      "heading": "Identify the factor VIIa indication",
+      "body": "IV NOVOSEVEN RT is labeled for bleeding and perioperative care in adults and children with hemophilia A or B with inhibitors, congenital factor VII deficiency, or Glanzmann thrombasthenia refractory to platelet transfusion, with or without platelet antibodies. Acquired hemophilia is an adult indication. These defined populations do not establish routine use for every trauma or anticoagulant-associated bleed."
+    },
+    {
+      "heading": "Treat thrombosis risk as part of selection",
+      "body": "NOVOSEVEN RT carries a boxed warning for serious arterial and venous thrombosis. Review other hemostatic agents and thrombotic risk with the specialist team. New thrombosis or laboratory evidence of intravascular coagulation calls for dose reduction or stopping treatment according to the clinical situation."
+    },
+    {
+      "heading": "Measure bleeding control directly",
+      "body": "After NOVOSEVEN RT, PT/INR, aPTT and factor VII activity do not directly establish hemostatic success. Assess actual bleeding and the patient's response. In congenital factor VII deficiency, laboratory and antibody assessment still has a role when expected response is absent; do not replace clinical assessment with a normalized INR."
+    }
+  ],
+  "keyPoints": [
+    "Topical thrombin must not be injected.",
+    "Factor replacement and inhibitor bypass are not interchangeable.",
+    "Antibody, allergy and thrombosis risks depend on the product.",
+    "Laboratory correction is not proof of bleeding control."
+  ],
+  "check": {
+    "question": "A prepared RECOTHROM transfer syringe is handed over for IV administration. What is the immediate correction?",
+    "choices": [
+      "Stop: this product is for topical application only",
+      "Give it slowly through a central line",
+      "Dilute it to convert it into an IV product",
+      "Use the INR to select its IV dose"
+    ],
+    "answer": 0,
+    "rationale": "A syringe used for product transfer does not change the topical-only route; intravascular exposure can cause thrombosis. A slower rate or central line does not make injection safe. Dilution cannot change its topical-only route, and INR cannot supply a valid IV dose for this product.",
+    "reviewHref": "#topical-and-factor-hemostasis"
+  }
+});
+}
+{
+ const existing = perioperativeCriticalCarePharmacologyModule.submodules.find((lesson) => lesson.slug === "antifibrinolytic-hemostasis");
+ if (existing) Object.assign(existing, {
+  "slug": "antifibrinolytic-hemostasis",
+  "title": "Use Antifibrinolytics With Route and Renal Discipline",
+  "visual": "periop-antifibrinolytic",
+  "summary": "Tranexamic acid and aminocaproic acid reduce fibrinolysis. Their value depends on a bleeding context in which fibrinolysis matters, while kidney clearance, thrombosis, seizure risk, and route errors define the safety boundary.",
+  "concepts": [
+    "Tranexamic acid",
+    "Aminocaproic acid",
+    "Plasminogen",
+    "Renal function",
+    "Route safety"
+  ],
+  "application": "For every antifibrinolytic, document the evidence-based indication, timing, dose, kidney adjustment, route, thrombotic context, neurologic monitoring, and stop rule.",
+  "lesson": [
+    {
+      "heading": "Block fibrinolysis deliberately",
+      "body": "Both agents inhibit fibrinolysis and help preserve formed clot. Tranexamic acid occupies lysine-binding sites involved in plasminogen and plasmin interaction with fibrin; aminocaproic-acid labeling describes inhibition of plasminogen activators and, to a lesser degree, plasmin activity. Neither replaces source control, fibrinogen, platelets, coagulation factors, temperature correction, or treatment of the actual bleeding mechanism."
+    },
+    {
+      "heading": "Make tranexamic-acid route unmistakable",
+      "body": "The FDA injection indication is short-term bleeding reduction in hemophilia during and after tooth extraction; trauma, other surgical, and obstetric regimens require their own evidence and protocols. Adjust for renal impairment. Clearly label the intravenous route and segregate from neuraxial medicines because accidental intrathecal or epidural administration has caused seizures, dysrhythmia, permanent injury, and death."
+    },
+    {
+      "heading": "Keep oral tranexamic acid distinct from injection",
+      "body": "The oral tablet indication is cyclic heavy menstrual bleeding in females of reproductive potential, a different use from IV dental, trauma or postpartum treatment. The cited tablet label contraindicates combined hormonal contraception, active or previous thrombosis or thromboembolism, intrinsic thrombotic risk, and hypersensitivity. Retinal artery or vein occlusion has been reported; new visual or ocular symptoms require stopping treatment and prompt ophthalmic evaluation. Oral and IV dosing and renal tables must not be interchanged."
+    },
+    {
+      "heading": "Identify the labeled tranexamic-acid regimen",
+      "body": "For hemophilia tooth extraction, the injection label uses 10 mg/kg actual body weight before extraction with replacement therapy, then 10 mg/kg three to four times daily for 2 to 8 days. Its dose-reduction instructions apply before and after extraction. For example, serum creatinine 3.5 mg/dL falls in the 2.83 to 5.66 mg/dL band: 10 mg/kg once daily. Do not transfer this dental regimen automatically to another bleeding indication."
+    },
+    {
+      "heading": "Match trauma treatment to the injury clock",
+      "body": "For an adult bleeding or at risk of significant bleeding after trauma, the 2023 European guideline recommends TXA promptly and within 3 hours of injury: 1 g IV over 10 minutes, then 1 g over 8 hours. Do not delay eligible treatment for viscoelastic results. This is a guideline regimen outside the cited U.S. dental indication; continue definitive bleeding control and resuscitation."
+    },
+    {
+      "heading": "Recognize postpartum bleeding early",
+      "body": "WHO 2025 links first-response treatment to objectively measured blood loss: at least 300 mL with an abnormal hemodynamic sign, or at least 500 mL, whichever occurs first within 24 hours of birth. Abnormal signs include pulse over 100/min, systolic pressure below 100 mmHg, diastolic pressure below 60 mmHg, or shock index over 1. Shock index is pulse divided by systolic pressure. Watch especially closely in the first 2 hours. These criteria support prompt treatment and referral; they do not automatically mandate surgery. Evidence is strongest for facility vaginal births, so interpret cesarean measurements and anesthesia-related vital-sign changes clinically."
+    },
+    {
+      "heading": "Separate postpartum treatment from routine prevention",
+      "body": "WHO 2025 advises against routine TXA prophylaxis for all vaginal or cesarean births. It does not replace preventive uterotonics. This population-level recommendation preserves a role for clinical judgment when a high-risk patient is already bleeding before formal diagnostic thresholds are met. Treatment of established postpartum hemorrhage remains recommended. Store TXA separately from bupivacaine to reduce catastrophic neuraxial mix-ups."
+    },
+    {
+      "heading": "Use the postpartum treatment schedule",
+      "body": "WHO recommends early IV TXA alongside standard care for postpartum hemorrhage after vaginal or cesarean birth. Start within 3 hours of birth: 1 g over 10 minutes; repeat 1 g if bleeding persists after 30 minutes or recurs within 24 hours of finishing the first dose. The clock starts at birth, not diagnosis; WHO does not support starting treatment beyond that window. Do not wait to confirm the bleeding source before eligible treatment. Continue uterotonics, resuscitation and source control, and screen for contraindications such as a thromboembolic event during pregnancy. This treatment schedule is not an instruction for routine prophylaxis or an 8-hour trauma infusion."
+    },
+    {
+      "heading": "Read concentration and infusion rate together",
+      "body": "The current 100 mg/mL tranexamic-acid label lists 0.5 mL/min, never exceeding 1 mL/min, for undiluted administration. Its diluted rates are 5 mL/min at 10 mg/mL or 2.5 mL/min at 20 mg/mL. Each listed rate delivers 50 mg/min; the undiluted upper limit is 100 mg/min. Rapid administration can cause hypotension. Do not mix this product with blood or penicillin-containing solutions."
+    },
+    {
+      "heading": "Screen beyond the route",
+      "body": "Tranexamic-acid injection is contraindicated with active intravascular clotting, subarachnoid hemorrhage or hypersensitivity. Avoid concomitant prothrombotic medicines, including factor IX complex and anti-inhibitor coagulant concentrates and hormonal contraception. Seizures can occur even with IV use, especially at high surgical doses or increased exposure; renal adjustment and neurologic monitoring remain necessary."
+    },
+    {
+      "heading": "Use aminocaproic acid only for fibrinolytic bleeding",
+      "body": "Aminocaproic acid is primarily renally eliminated, and its renal clearance approximates endogenous creatinine clearance. Distinguish primary fibrinolysis from disseminated intravascular coagulation before treatment. The label prohibits use with active intravascular clotting and states it must not be used in DIC without concomitant heparin; this is not a routine instruction to treat all DIC with both medicines. Avoid upper-tract hematuria use unless the expected benefit outweighs the risk of obstructing renal or ureteric clots."
+    },
+    {
+      "heading": "Infuse aminocaproic acid deliberately",
+      "body": "For acute bleeding from increased fibrinolysis, the label suggests 4 to 5 g in 250 mL diluent over the first hour, followed by 1 g/hour in 50 mL diluent, ordinarily for about 8 hours or until controlled. The 250 mg/mL stock requires dilution; do not give it as a rapid undiluted IV injection. Avoid concurrent factor IX complex or anti-inhibitor coagulant concentrates because thrombosis risk may increase. Reassess dosing in severe renal failure. With prolonged treatment, monitor CK and muscle symptoms; stop if CK rises."
+    }
+  ],
+  "keyPoints": [
+    "Antifibrinolytics do not replace source control.",
+    "Tranexamic acid is intravenous only in the injection label.",
+    "Renal dysfunction increases exposure risk.",
+    "Aminocaproic acid requires evidence of fibrinolytic bleeding."
+  ],
+  "check": {
+    "question": "A tranexamic-acid syringe is found unlabeled beside epidural medications. What is the correct response?",
+    "choices": [
+      "Remove it and correct intravenous-route labeling and segregation before use",
+      "Leave it because the route is obvious",
+      "Administer it epidurally",
+      "Mix it with the local anesthetic"
+    ],
+    "answer": 0,
+    "rationale": "Current labeling requires clear intravenous-route labeling because neuraxial administration has caused fatal and serious events. An unlabeled syringe must be removed and identified before administration. A clear solution or familiar tray does not establish its contents or route. Epidural administration is contraindicated, and combining it with a local anesthetic creates a dangerous route error.",
+    "reviewHref": "#antifibrinolytic-hemostasis"
+  }
+});
+ else perioperativeCriticalCarePharmacologyModule.submodules.splice(perioperativeCriticalCarePharmacologyModule.submodules.findIndex((lesson) => lesson.slug === "antifibrinolytic-hemostasis"), 0, {
+  "slug": "antifibrinolytic-hemostasis",
+  "title": "Use Antifibrinolytics With Route and Renal Discipline",
+  "visual": "periop-antifibrinolytic",
+  "summary": "Tranexamic acid and aminocaproic acid reduce fibrinolysis. Their value depends on a bleeding context in which fibrinolysis matters, while kidney clearance, thrombosis, seizure risk, and route errors define the safety boundary.",
+  "concepts": [
+    "Tranexamic acid",
+    "Aminocaproic acid",
+    "Plasminogen",
+    "Renal function",
+    "Route safety"
+  ],
+  "application": "For every antifibrinolytic, document the evidence-based indication, timing, dose, kidney adjustment, route, thrombotic context, neurologic monitoring, and stop rule.",
+  "lesson": [
+    {
+      "heading": "Block fibrinolysis deliberately",
+      "body": "Both agents inhibit fibrinolysis and help preserve formed clot. Tranexamic acid occupies lysine-binding sites involved in plasminogen and plasmin interaction with fibrin; aminocaproic-acid labeling describes inhibition of plasminogen activators and, to a lesser degree, plasmin activity. Neither replaces source control, fibrinogen, platelets, coagulation factors, temperature correction, or treatment of the actual bleeding mechanism."
+    },
+    {
+      "heading": "Make tranexamic-acid route unmistakable",
+      "body": "The FDA injection indication is short-term bleeding reduction in hemophilia during and after tooth extraction; trauma, other surgical, and obstetric regimens require their own evidence and protocols. Adjust for renal impairment. Clearly label the intravenous route and segregate from neuraxial medicines because accidental intrathecal or epidural administration has caused seizures, dysrhythmia, permanent injury, and death."
+    },
+    {
+      "heading": "Keep oral tranexamic acid distinct from injection",
+      "body": "The oral tablet indication is cyclic heavy menstrual bleeding in females of reproductive potential, a different use from IV dental, trauma or postpartum treatment. The cited tablet label contraindicates combined hormonal contraception, active or previous thrombosis or thromboembolism, intrinsic thrombotic risk, and hypersensitivity. Retinal artery or vein occlusion has been reported; new visual or ocular symptoms require stopping treatment and prompt ophthalmic evaluation. Oral and IV dosing and renal tables must not be interchanged."
+    },
+    {
+      "heading": "Identify the labeled tranexamic-acid regimen",
+      "body": "For hemophilia tooth extraction, the injection label uses 10 mg/kg actual body weight before extraction with replacement therapy, then 10 mg/kg three to four times daily for 2 to 8 days. Its dose-reduction instructions apply before and after extraction. For example, serum creatinine 3.5 mg/dL falls in the 2.83 to 5.66 mg/dL band: 10 mg/kg once daily. Do not transfer this dental regimen automatically to another bleeding indication."
+    },
+    {
+      "heading": "Match trauma treatment to the injury clock",
+      "body": "For an adult bleeding or at risk of significant bleeding after trauma, the 2023 European guideline recommends TXA promptly and within 3 hours of injury: 1 g IV over 10 minutes, then 1 g over 8 hours. Do not delay eligible treatment for viscoelastic results. This is a guideline regimen outside the cited U.S. dental indication; continue definitive bleeding control and resuscitation."
+    },
+    {
+      "heading": "Recognize postpartum bleeding early",
+      "body": "WHO 2025 links first-response treatment to objectively measured blood loss: at least 300 mL with an abnormal hemodynamic sign, or at least 500 mL, whichever occurs first within 24 hours of birth. Abnormal signs include pulse over 100/min, systolic pressure below 100 mmHg, diastolic pressure below 60 mmHg, or shock index over 1. Shock index is pulse divided by systolic pressure. Watch especially closely in the first 2 hours. These criteria support prompt treatment and referral; they do not automatically mandate surgery. Evidence is strongest for facility vaginal births, so interpret cesarean measurements and anesthesia-related vital-sign changes clinically."
+    },
+    {
+      "heading": "Separate postpartum treatment from routine prevention",
+      "body": "WHO 2025 advises against routine TXA prophylaxis for all vaginal or cesarean births. It does not replace preventive uterotonics. This population-level recommendation preserves a role for clinical judgment when a high-risk patient is already bleeding before formal diagnostic thresholds are met. Treatment of established postpartum hemorrhage remains recommended. Store TXA separately from bupivacaine to reduce catastrophic neuraxial mix-ups."
+    },
+    {
+      "heading": "Use the postpartum treatment schedule",
+      "body": "WHO recommends early IV TXA alongside standard care for postpartum hemorrhage after vaginal or cesarean birth. Start within 3 hours of birth: 1 g over 10 minutes; repeat 1 g if bleeding persists after 30 minutes or recurs within 24 hours of finishing the first dose. The clock starts at birth, not diagnosis; WHO does not support starting treatment beyond that window. Do not wait to confirm the bleeding source before eligible treatment. Continue uterotonics, resuscitation and source control, and screen for contraindications such as a thromboembolic event during pregnancy. This treatment schedule is not an instruction for routine prophylaxis or an 8-hour trauma infusion."
+    },
+    {
+      "heading": "Read concentration and infusion rate together",
+      "body": "The current 100 mg/mL tranexamic-acid label lists 0.5 mL/min, never exceeding 1 mL/min, for undiluted administration. Its diluted rates are 5 mL/min at 10 mg/mL or 2.5 mL/min at 20 mg/mL. Each listed rate delivers 50 mg/min; the undiluted upper limit is 100 mg/min. Rapid administration can cause hypotension. Do not mix this product with blood or penicillin-containing solutions."
+    },
+    {
+      "heading": "Screen beyond the route",
+      "body": "Tranexamic-acid injection is contraindicated with active intravascular clotting, subarachnoid hemorrhage or hypersensitivity. Avoid concomitant prothrombotic medicines, including factor IX complex and anti-inhibitor coagulant concentrates and hormonal contraception. Seizures can occur even with IV use, especially at high surgical doses or increased exposure; renal adjustment and neurologic monitoring remain necessary."
+    },
+    {
+      "heading": "Use aminocaproic acid only for fibrinolytic bleeding",
+      "body": "Aminocaproic acid is primarily renally eliminated, and its renal clearance approximates endogenous creatinine clearance. Distinguish primary fibrinolysis from disseminated intravascular coagulation before treatment. The label prohibits use with active intravascular clotting and states it must not be used in DIC without concomitant heparin; this is not a routine instruction to treat all DIC with both medicines. Avoid upper-tract hematuria use unless the expected benefit outweighs the risk of obstructing renal or ureteric clots."
+    },
+    {
+      "heading": "Infuse aminocaproic acid deliberately",
+      "body": "For acute bleeding from increased fibrinolysis, the label suggests 4 to 5 g in 250 mL diluent over the first hour, followed by 1 g/hour in 50 mL diluent, ordinarily for about 8 hours or until controlled. The 250 mg/mL stock requires dilution; do not give it as a rapid undiluted IV injection. Avoid concurrent factor IX complex or anti-inhibitor coagulant concentrates because thrombosis risk may increase. Reassess dosing in severe renal failure. With prolonged treatment, monitor CK and muscle symptoms; stop if CK rises."
+    }
+  ],
+  "keyPoints": [
+    "Antifibrinolytics do not replace source control.",
+    "Tranexamic acid is intravenous only in the injection label.",
+    "Renal dysfunction increases exposure risk.",
+    "Aminocaproic acid requires evidence of fibrinolytic bleeding."
+  ],
+  "check": {
+    "question": "A tranexamic-acid syringe is found unlabeled beside epidural medications. What is the correct response?",
+    "choices": [
+      "Remove it and correct intravenous-route labeling and segregation before use",
+      "Leave it because the route is obvious",
+      "Administer it epidurally",
+      "Mix it with the local anesthetic"
+    ],
+    "answer": 0,
+    "rationale": "Current labeling requires clear intravenous-route labeling because neuraxial administration has caused fatal and serious events. An unlabeled syringe must be removed and identified before administration. A clear solution or familiar tray does not establish its contents or route. Epidural administration is contraindicated, and combining it with a local anesthetic creates a dangerous route error.",
+    "reviewHref": "#antifibrinolytic-hemostasis"
+  }
+});
+}
+{
+ const existing = perioperativeCriticalCarePharmacologyModule.submodules.find((lesson) => lesson.slug === "perioperative-stress-ulcer");
+ if (existing) Object.assign(existing, {
+  "slug": "perioperative-stress-ulcer",
+  "title": "Use Stress-Ulcer Prophylaxis Only While Risk Persists",
+  "visual": "periop-stress-ulcer",
+  "summary": "Stress-related mucosal bleeding prevention is a temporary risk intervention. Coagulopathy, shock, and chronic liver disease are the clearest current risk factors, while enteral nutrition, ventilation, neurologic illness, and preexisting acid disease also inform the decision.",
+  "concepts": [
+    "Risk stratification",
+    "PPI",
+    "H2RA",
+    "Enteral nutrition",
+    "Deprescribing"
+  ],
+  "application": "Write the current risk factor, route, agent, reassessment date, stop rule, and any independent long-term acid indication.",
+  "lesson": [
+    {
+      "heading": "Separate ICU location from bleeding risk",
+      "body": "The 2024 SCCM and ASHP guideline identifies coagulopathy, shock, and chronic liver disease as likely risk factors for clinically important stress-related upper gastrointestinal bleeding. Its evidence review did not establish ventilation alone as an independent risk factor. The 2026 contextualized guideline for adult ICUs in Saudi Arabia, Kuwait, and the Nordic countries incorporates newer evidence. Its practical considerations say clinicians may consider mechanically ventilated patients potentially at risk and assess them individually. This is not a separate graded recommendation requiring prophylaxis for every ventilated patient. Earlier uncertainty does not prove that ventilated patients cannot benefit."
+    },
+    {
+      "heading": "Choose a low-dose preventive regimen",
+      "body": "For critically ill adults with bleeding risk factors, the 2024 SCCM/ASHP guideline conditionally suggests either a proton pump inhibitor or a histamine-2 receptor antagonist as first-line prophylaxis, with moderate-certainty evidence. It also accepts enteral or intravenous delivery, with low-certainty evidence. Choose one appropriate low-dose agent and route after checking organ function, interactions, enteral access and the original indication; these recommendations do not call for routine combined PPI and H2RA therapy."
+    },
+    {
+      "heading": "Apply sepsis-specific guidance",
+      "body": "For adults with sepsis or septic shock and gastrointestinal bleeding risk factors, the 2026 Surviving Sepsis Campaign conditionally suggests PPI prophylaxis rather than no prophylaxis, with moderate-certainty evidence. This recommendation compares PPI with no prophylaxis; it does not itself prove PPI superiority over H2 blockers or make prophylaxis automatic for every patient with sepsis. The rationale cites earlier comparative evidence favoring PPIs for bleeding prevention and identifies H2 blockers as a reasonable alternative when PPIs are unavailable. Keep risk assessment, dose selection and stopping rules explicit."
+    },
+    {
+      "heading": "Define low dose and distinguish active bleeding",
+      "body": "SCCM/ASHP defines low-dose daily totals as at most 40 mg for pantoprazole, omeprazole or esomeprazole; 30 mg for lansoprazole; and 40 mg for famotidine. These are preventive dose categories, not a universal prescription: renal function and product-specific administration still matter. Active gastrointestinal bleeding requires its own evaluation and treatment pathway."
+    },
+    {
+      "heading": "Reassess famotidine when kidney function or cognition changes",
+      "body": "Famotidine clearance falls with renal impairment. The cited tablet labeling recommends dose reduction below a creatinine clearance of 60 mL/min and warns about CNS reactions and QT prolongation in moderate or severe impairment. New delirium in an older patient warrants medication and renal-dose review alongside other causes. Thrombocytopenia was reported in fewer than 1% of trial patients; a falling platelet count requires evaluation rather than automatic attribution to the H2 blocker."
+    },
+    {
+      "heading": "Put PPI warnings in their exposure context",
+      "body": "Pantoprazole labeling describes observational associations with C. difficile-associated diarrhea and osteoporosis-related fractures. The fracture signal is especially associated with multiple daily doses and treatment for a year or longer; it is not an estimate of fracture risk from a brief ICU course. Investigate persistent diarrhea and use the lowest appropriate dose for the required duration. These cautions reinforce reassessment without replacing the patient's bleeding-risk assessment."
+    },
+    {
+      "heading": "Account for feeding and neurologic illness",
+      "body": "Enteral nutrition probably reduces clinically important stress-related upper gastrointestinal bleeding, but feeding does not remove persistent risk such as coagulopathy. SCCM/ASHP conditionally suggests prophylaxis for fed adults who remain at risk and separately for neurocritical-care adults; both recommendations have very low-certainty evidence. It suggests avoiding prophylaxis in low-risk, fed adults, also with very low certainty, and notes that concurrent prophylaxis and feeding may increase pneumonia risk. Keep population, bleeding risk and uncertainty explicit."
+    },
+    {
+      "heading": "Monitor the selected acid-suppressive treatment",
+      "body": "The book describes thrombocytopenia and mental-status changes with H2 receptor antagonists, particularly in older patients or those with renal impairment, and notes that tolerance to their effect can occur. Its PPI tables list C. difficile-associated diarrhea and other adverse effects; fracture warnings concern high doses or prolonged exposure. Review new symptoms, renal function and the continuing indication. Reported associations with infection or pneumonia do not establish that acid suppression caused an individual patient's illness."
+    },
+    {
+      "heading": "Distinguish acid tolerance from a bleeding outcome",
+      "body": "Repeated H2-blocker dosing can produce tolerance to acid suppression. Randomized volunteer studies documented diminished gastric-pH response over repeated famotidine or ranitidine exposure. That physiologic endpoint does not establish that an individual ICU patient's prophylaxis has failed. Reassess the indication and clinical course instead of automatically escalating beyond the preventive regimen."
+    },
+    {
+      "heading": "Interpret infection concerns alongside randomized evidence",
+      "body": "In the 2024 REVISE trial of invasively ventilated adults, pantoprazole reduced clinically important upper gastrointestinal bleeding compared with placebo. Ventilator-associated pneumonia and C. difficile infection were similar between groups, and mortality was not significantly different. This does not prove zero infection risk, but it does not support presenting pneumonia as an inevitable consequence of a short preventive course. Match the evidence to the patient, indication and exposure duration."
+    },
+    {
+      "heading": "Preserve an independent treatment indication",
+      "body": "A PPI used before ICU admission may be treating recent upper gastrointestinal bleeding, erosive esophagitis, a hypersecretory condition or H. pylori eradication. Reconcile that independent indication before stopping it, weighing benefit, adverse effects, interactions and the available route. If the history is unclear, clarify it instead of assuming the drug was started solely for ICU prophylaxis. Resolution of stress-ulcer risk alone does not establish that the other treatment should end."
+    },
+    {
+      "heading": "Stop when the reason ends",
+      "body": "Assess the indication daily and discontinue stress-ulcer prophylaxis when its risk factors are no longer present. SCCM/ASHP specifically calls for review and discontinuation of unnecessary prophylaxis before transfer out of the ICU to prevent inappropriate continuation. Its suggestion against prophylaxis in low-risk, enterally fed adults has very low-certainty evidence. Reconcile any separate acid-treatment indication so that a prophylaxis stop rule does not remove justified treatment."
+    }
+  ],
+  "keyPoints": [
+    "Risk factors drive prophylaxis.",
+    "Assess ventilated patients individually; do not equate uncertain independent risk with no benefit.",
+    "Either low-dose PPI or H2RA can be used.",
+    "Daily discontinuation review is part of the prescription."
+  ],
+  "check": {
+    "question": "An extubated, stable, enterally fed ICU patient has no neurologic critical illness, coagulopathy, shock, chronic liver disease, or separate acid indication. What is the best action?",
+    "choices": [
+      "Discontinue routine stress-ulcer prophylaxis",
+      "Continue lifelong prophylaxis because the patient was ventilated",
+      "Double the acid-suppressive dose",
+      "Combine a PPI and H2RA"
+    ],
+    "answer": 0,
+    "rationale": "This low-risk, enterally fed patient has no remaining stated bleeding risk or independent acid-treatment indication. SCCM/ASHP conditionally suggests avoiding prophylaxis in this population, with very low-certainty evidence, and calls for stopping it when risk factors resolve. Prior ventilation does not justify lifelong treatment, a higher dose or routine combined PPI and H2RA therapy. Reassess if the clinical risk changes.",
+    "reviewHref": "#perioperative-stress-ulcer"
+  }
+});
+ else perioperativeCriticalCarePharmacologyModule.submodules.splice(perioperativeCriticalCarePharmacologyModule.submodules.findIndex((lesson) => lesson.slug === "antifibrinolytic-hemostasis"), 0, {
+  "slug": "perioperative-stress-ulcer",
+  "title": "Use Stress-Ulcer Prophylaxis Only While Risk Persists",
+  "visual": "periop-stress-ulcer",
+  "summary": "Stress-related mucosal bleeding prevention is a temporary risk intervention. Coagulopathy, shock, and chronic liver disease are the clearest current risk factors, while enteral nutrition, ventilation, neurologic illness, and preexisting acid disease also inform the decision.",
+  "concepts": [
+    "Risk stratification",
+    "PPI",
+    "H2RA",
+    "Enteral nutrition",
+    "Deprescribing"
+  ],
+  "application": "Write the current risk factor, route, agent, reassessment date, stop rule, and any independent long-term acid indication.",
+  "lesson": [
+    {
+      "heading": "Separate ICU location from bleeding risk",
+      "body": "The 2024 SCCM and ASHP guideline identifies coagulopathy, shock, and chronic liver disease as likely risk factors for clinically important stress-related upper gastrointestinal bleeding. Its evidence review did not establish ventilation alone as an independent risk factor. The 2026 contextualized guideline for adult ICUs in Saudi Arabia, Kuwait, and the Nordic countries incorporates newer evidence. Its practical considerations say clinicians may consider mechanically ventilated patients potentially at risk and assess them individually. This is not a separate graded recommendation requiring prophylaxis for every ventilated patient. Earlier uncertainty does not prove that ventilated patients cannot benefit."
+    },
+    {
+      "heading": "Choose a low-dose preventive regimen",
+      "body": "For critically ill adults with bleeding risk factors, the 2024 SCCM/ASHP guideline conditionally suggests either a proton pump inhibitor or a histamine-2 receptor antagonist as first-line prophylaxis, with moderate-certainty evidence. It also accepts enteral or intravenous delivery, with low-certainty evidence. Choose one appropriate low-dose agent and route after checking organ function, interactions, enteral access and the original indication; these recommendations do not call for routine combined PPI and H2RA therapy."
+    },
+    {
+      "heading": "Apply sepsis-specific guidance",
+      "body": "For adults with sepsis or septic shock and gastrointestinal bleeding risk factors, the 2026 Surviving Sepsis Campaign conditionally suggests PPI prophylaxis rather than no prophylaxis, with moderate-certainty evidence. This recommendation compares PPI with no prophylaxis; it does not itself prove PPI superiority over H2 blockers or make prophylaxis automatic for every patient with sepsis. The rationale cites earlier comparative evidence favoring PPIs for bleeding prevention and identifies H2 blockers as a reasonable alternative when PPIs are unavailable. Keep risk assessment, dose selection and stopping rules explicit."
+    },
+    {
+      "heading": "Define low dose and distinguish active bleeding",
+      "body": "SCCM/ASHP defines low-dose daily totals as at most 40 mg for pantoprazole, omeprazole or esomeprazole; 30 mg for lansoprazole; and 40 mg for famotidine. These are preventive dose categories, not a universal prescription: renal function and product-specific administration still matter. Active gastrointestinal bleeding requires its own evaluation and treatment pathway."
+    },
+    {
+      "heading": "Reassess famotidine when kidney function or cognition changes",
+      "body": "Famotidine clearance falls with renal impairment. The cited tablet labeling recommends dose reduction below a creatinine clearance of 60 mL/min and warns about CNS reactions and QT prolongation in moderate or severe impairment. New delirium in an older patient warrants medication and renal-dose review alongside other causes. Thrombocytopenia was reported in fewer than 1% of trial patients; a falling platelet count requires evaluation rather than automatic attribution to the H2 blocker."
+    },
+    {
+      "heading": "Put PPI warnings in their exposure context",
+      "body": "Pantoprazole labeling describes observational associations with C. difficile-associated diarrhea and osteoporosis-related fractures. The fracture signal is especially associated with multiple daily doses and treatment for a year or longer; it is not an estimate of fracture risk from a brief ICU course. Investigate persistent diarrhea and use the lowest appropriate dose for the required duration. These cautions reinforce reassessment without replacing the patient's bleeding-risk assessment."
+    },
+    {
+      "heading": "Account for feeding and neurologic illness",
+      "body": "Enteral nutrition probably reduces clinically important stress-related upper gastrointestinal bleeding, but feeding does not remove persistent risk such as coagulopathy. SCCM/ASHP conditionally suggests prophylaxis for fed adults who remain at risk and separately for neurocritical-care adults; both recommendations have very low-certainty evidence. It suggests avoiding prophylaxis in low-risk, fed adults, also with very low certainty, and notes that concurrent prophylaxis and feeding may increase pneumonia risk. Keep population, bleeding risk and uncertainty explicit."
+    },
+    {
+      "heading": "Monitor the selected acid-suppressive treatment",
+      "body": "The book describes thrombocytopenia and mental-status changes with H2 receptor antagonists, particularly in older patients or those with renal impairment, and notes that tolerance to their effect can occur. Its PPI tables list C. difficile-associated diarrhea and other adverse effects; fracture warnings concern high doses or prolonged exposure. Review new symptoms, renal function and the continuing indication. Reported associations with infection or pneumonia do not establish that acid suppression caused an individual patient's illness."
+    },
+    {
+      "heading": "Distinguish acid tolerance from a bleeding outcome",
+      "body": "Repeated H2-blocker dosing can produce tolerance to acid suppression. Randomized volunteer studies documented diminished gastric-pH response over repeated famotidine or ranitidine exposure. That physiologic endpoint does not establish that an individual ICU patient's prophylaxis has failed. Reassess the indication and clinical course instead of automatically escalating beyond the preventive regimen."
+    },
+    {
+      "heading": "Interpret infection concerns alongside randomized evidence",
+      "body": "In the 2024 REVISE trial of invasively ventilated adults, pantoprazole reduced clinically important upper gastrointestinal bleeding compared with placebo. Ventilator-associated pneumonia and C. difficile infection were similar between groups, and mortality was not significantly different. This does not prove zero infection risk, but it does not support presenting pneumonia as an inevitable consequence of a short preventive course. Match the evidence to the patient, indication and exposure duration."
+    },
+    {
+      "heading": "Preserve an independent treatment indication",
+      "body": "A PPI used before ICU admission may be treating recent upper gastrointestinal bleeding, erosive esophagitis, a hypersecretory condition or H. pylori eradication. Reconcile that independent indication before stopping it, weighing benefit, adverse effects, interactions and the available route. If the history is unclear, clarify it instead of assuming the drug was started solely for ICU prophylaxis. Resolution of stress-ulcer risk alone does not establish that the other treatment should end."
+    },
+    {
+      "heading": "Stop when the reason ends",
+      "body": "Assess the indication daily and discontinue stress-ulcer prophylaxis when its risk factors are no longer present. SCCM/ASHP specifically calls for review and discontinuation of unnecessary prophylaxis before transfer out of the ICU to prevent inappropriate continuation. Its suggestion against prophylaxis in low-risk, enterally fed adults has very low-certainty evidence. Reconcile any separate acid-treatment indication so that a prophylaxis stop rule does not remove justified treatment."
+    }
+  ],
+  "keyPoints": [
+    "Risk factors drive prophylaxis.",
+    "Assess ventilated patients individually; do not equate uncertain independent risk with no benefit.",
+    "Either low-dose PPI or H2RA can be used.",
+    "Daily discontinuation review is part of the prescription."
+  ],
+  "check": {
+    "question": "An extubated, stable, enterally fed ICU patient has no neurologic critical illness, coagulopathy, shock, chronic liver disease, or separate acid indication. What is the best action?",
+    "choices": [
+      "Discontinue routine stress-ulcer prophylaxis",
+      "Continue lifelong prophylaxis because the patient was ventilated",
+      "Double the acid-suppressive dose",
+      "Combine a PPI and H2RA"
+    ],
+    "answer": 0,
+    "rationale": "This low-risk, enterally fed patient has no remaining stated bleeding risk or independent acid-treatment indication. SCCM/ASHP conditionally suggests avoiding prophylaxis in this population, with very low-certainty evidence, and calls for stopping it when risk factors resolve. Prior ventilation does not justify lifelong treatment, a higher dose or routine combined PPI and H2RA therapy. Reassess if the clinical risk changes.",
+    "reviewHref": "#perioperative-stress-ulcer"
+  }
+});
+}
+perioperativeCriticalCarePharmacologyModule.references.push(...[
+  {
+    "label": "DailyMed: RECOTHROM topical route and hypersensitivity",
+    "href": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=54885644-e51e-4263-aadb-366abaeb56a3"
+  },
+  {
+    "label": "DailyMed: THROMBIN-JMI antibody and route warnings",
+    "href": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=ba8fcebf-a924-488f-983d-088892761f0e"
+  },
+  {
+    "label": "DailyMed: TISSEEL product-specific application precautions",
+    "href": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=b3f69e25-1b87-4507-81fa-582ea084673d"
+  },
+  {
+    "label": "DailyMed: COAGADEX factor X replacement and inhibitor monitoring",
+    "href": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=ad20e6ff-98bc-47e6-aa00-7fb441edd2b0"
+  },
+  {
+    "label": "DailyMed: ADYNOVATE factor VIII replacement and inhibitor monitoring",
+    "href": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=ef290433-997f-4e98-86d6-42f6a99d6d18"
+  },
+  {
+    "label": "DailyMed: FEIBA indications and thrombotic interactions",
+    "href": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=752604e5-4ea2-44f4-83ed-1569373f6412"
+  },
+  {
+    "label": "DailyMed: NOVOSEVEN RT indications and clinical hemostasis",
+    "href": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=ea65c32f-8518-4383-b621-17056c0eebc0"
+  },
+  {
+    "label": "DailyMed: Famotidine tablet renal and CNS precautions",
+    "href": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=7b550cf9-221f-4f28-ba99-414ad7d5612f"
+  },
+  {
+    "label": "DailyMed: Pantoprazole exposure-specific safety warnings",
+    "href": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=e17e4a72-d6a4-4a83-a921-88af9ef028a6"
+  },
+  {
+    "label": "DailyMed: Oral tranexamic acid indication and thrombotic contraindications",
+    "href": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=0a843fa7-1266-4666-b23f-22fd313d24a1"
+  },
+  {
+    "label": "FDA: Topical skin adhesive scope and precautions",
+    "href": "https://www.fda.gov/medical-devices/guidance-documents-medical-devices-and-radiation-emitting-products/tissue-adhesive-topical-approximation-skin-class-ii-special-controls-guidance-industry-and-fda-staff"
+  },
+  {
+    "label": "Wilder-Smith et al.: Randomized H2-receptor antagonist tolerance studies (1990)",
+    "href": "https://pubmed.ncbi.nlm.nih.gov/1974493/"
+  },
+  {
+    "label": "Cook et al.: REVISE stress-ulcer prophylaxis trial (2024)",
+    "href": "https://pubmed.ncbi.nlm.nih.gov/38875111/"
+  }
+].filter((reference) => !perioperativeCriticalCarePharmacologyModule.references.some((existing) => existing.href === reference.href)));

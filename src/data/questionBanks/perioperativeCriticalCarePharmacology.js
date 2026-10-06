@@ -2211,3 +2211,264 @@ for (const [id, updates] of Object.entries({
  if (existing) Object.assign(existing, updates);
  else perioperativeCriticalCarePharmacologyQuestionBank.push(updates);
 }
+
+
+// Explain all alternatives in reviewed hemostasis and famotidine cases.
+for (const [id, updates] of Object.entries({
+  "periop-antifib-route": {
+    "id": "periop-antifib-route",
+    "question": "An unlabeled syringe believed to contain tranexamic acid is on an epidural tray. What action is appropriate?",
+    "choices": [
+      "Administer it epidurally at a lower dose",
+      "Use it if the solution is clear",
+      "Remove it from use and correct identification, IV-route labeling and segregation",
+      "Assume the tray establishes the route"
+    ],
+    "answer": 2,
+    "rationale": "Tranexamic-acid injection must not be administered neuraxially; route errors have caused fatal seizures and arrhythmias. Lowering the dose does not make epidural delivery permissible. Clarity does not identify a medicine, and its presence on a tray cannot establish the safe route.",
+    "reviewHref": "#antifibrinolytic-hemostasis",
+    "difficulty": "clinical"
+  },
+  "periop-antifib-renal": {
+    "id": "periop-antifib-renal",
+    "question": "For the labeled hemophilia tooth-extraction indication, which tranexamic-acid schedule corresponds to serum creatinine 3.5 mg/dL?",
+    "choices": [
+      "10 mg/kg IV once daily",
+      "10 mg/kg IV four times daily without adjustment",
+      "10 mg/kg IV every hour",
+      "Use the dental regimen for every trauma patient"
+    ],
+    "answer": 0,
+    "rationale": "The 2.83 to 5.66 mg/dL label band uses 10 mg/kg daily. This is an indication-specific label table, not a universal trauma regimen. Four daily doses without adjustment ignore this renal band. An hourly schedule is not the label regimen. The dental table cannot be substituted for indication-specific trauma treatment.",
+    "reviewHref": "#antifibrinolytic-hemostasis",
+    "difficulty": "clinical"
+  },
+  "periop-antifib-rate": {
+    "id": "periop-antifib-rate",
+    "question": "Tranexamic acid is prepared at 20 mg/mL and administered at the label rate of 2.5 mL/min. What mass rate is delivered?",
+    "choices": [
+      "5 mg/min",
+      "8 mg/min",
+      "100 mg/min",
+      "50 mg/min"
+    ],
+    "answer": 3,
+    "rationale": "20 mg/mL times 2.5 mL/min equals 50 mg/min. Concentration must accompany a volumetric rate. Five mg/min and 8 mg/min do not equal the concentration multiplied by the stated rate. One hundred mg/min is twice this rate; it is the undiluted label upper limit, not the mass rate in this diluted preparation.",
+    "reviewHref": "#antifibrinolytic-hemostasis",
+    "difficulty": "clinical"
+  },
+  "periop-antifib-seizure": {
+    "id": "periop-antifib-seizure",
+    "question": "A patient receiving high-dose IV tranexamic acid develops seizure with impaired renal function. Which assumption should be rejected?",
+    "choices": [
+      "Renal function affects exposure",
+      "Seizure risk exists only after accidental spinal administration",
+      "Dose and indication need reassessment",
+      "Neurologic monitoring is relevant"
+    ],
+    "answer": 1,
+    "rationale": "The label also reports seizures with IV surgical use. Neuraxial errors are a severe additional risk, not the only setting. The rejected statement is the claim that seizure risk exists only with spinal administration. Kidney function affects exposure; reassessing dose and indication and monitoring neurologic status remain appropriate with IV treatment.",
+    "reviewHref": "#antifibrinolytic-hemostasis",
+    "difficulty": "clinical"
+  },
+  "periop-antifib-urinary": {
+    "id": "periop-antifib-urinary",
+    "question": "Aminocaproic acid is proposed for upper-urinary-tract hematuria. Which concern requires review before treatment?",
+    "choices": [
+      "It always dissolves obstructing clots",
+      "Urinary bleeding is unrelated to antifibrinolysis",
+      "Stabilized clots can obstruct the renal pelvis or ureters",
+      "Renal clearance eliminates every safety concern"
+    ],
+    "answer": 2,
+    "rationale": "The label warns against use in upper-tract hematuria unless benefit outweighs the obstruction risk. Aminocaproic acid inhibits fibrinolysis rather than dissolving a clot. Urinary bleeding can involve fibrinolysis, but that does not remove the upper-tract warning. Renal elimination does not prevent obstruction or guarantee safety.",
+    "reviewHref": "#antifibrinolytic-hemostasis",
+    "difficulty": "clinical"
+  },
+  "periop-antifib-dilution": {
+    "id": "periop-antifib-dilution",
+    "question": "A 250 mg/mL aminocaproic-acid vial is supplied for a prescribed 5-g initial dose. Which preparation statement is correct?",
+    "choices": [
+      "Withdraw 20 mL and prepare the prescribed diluted infusion over the first hour",
+      "Inject 20 mL undiluted rapidly",
+      "Withdraw 2 mL for a 5-g dose",
+      "Replace the initial infusion with an intrathecal injection"
+    ],
+    "answer": 0,
+    "rationale": "5 g is 5000 mg; dividing by 250 mg/mL gives 20 mL of stock. The label requires dilution and discourages rapid undiluted IV injection. Two mL supplies only 500 mg, one tenth of 5 g. Rapid undiluted injection can cause hypotension, bradycardia or arrhythmia. Intrathecal injection is not this product’s labeled IV infusion route.",
+    "reviewHref": "#antifibrinolytic-hemostasis",
+    "difficulty": "clinical"
+  },
+  "periop-txa-trauma-timing": {
+    "id": "periop-txa-trauma-timing",
+    "question": "An adult arrives 90 minutes after injury with major bleeding. Under the 2023 European trauma guideline, should TXA wait for viscoelastic confirmation of hyperfibrinolysis?",
+    "choices": [
+      "Yes, always await the result",
+      "No; start the eligible trauma regimen promptly while resuscitation continues",
+      "Use the hemophilia dental schedule instead",
+      "Wait until 3 hours have elapsed"
+    ],
+    "answer": 1,
+    "rationale": "Recommendation 23 supports early TXA within 3 hours of injury and advises against waiting for viscoelastic results. The regimen is 1 g over 10 minutes followed by 1 g over 8 hours. Waiting for the assay or deliberately waiting until three hours delays recommended early treatment. The multiday hemophilia dental regimen is a different indication and is not the trauma schedule.",
+    "reviewHref": "#antifibrinolytic-hemostasis",
+    "difficulty": "clinical"
+  },
+  "periop-txa-postpartum-repeat": {
+    "id": "periop-txa-postpartum-repeat",
+    "question": "TXA 1 g IV was completed for postpartum hemorrhage within 3 hours of birth. Bleeding is still ongoing 40 minutes later despite concurrent care. Which TXA step matches WHO treatment guidance, assuming no contraindication?",
+    "choices": [
+      "Automatically start the 8-hour trauma infusion",
+      "Switch to a multiday dental regimen",
+      "A second 1 g IV dose",
+      "Wait until the next day"
+    ],
+    "answer": 2,
+    "rationale": "WHO permits another 1 g when bleeding persists after 30 minutes or returns within 24 hours of the first dose ending. Maintain the rest of the hemorrhage treatment bundle. The repeat dose is administered over 10 minutes. Neither the trauma infusion nor the multiday dental schedule is the WHO postpartum regimen. Ongoing bleeding after the stated interval does not call for waiting until the next day.",
+    "reviewHref": "#antifibrinolytic-hemostasis",
+    "difficulty": "application"
+  },
+  "periop-pph-early-recognition": {
+    "id": "periop-pph-early-recognition",
+    "question": "After vaginal birth, objectively measured blood loss is 350 mL and pulse is 112/min. Which interpretation fits WHO 2025 first-response criteria?",
+    "choices": [
+      "Wait until blood loss reaches 1000 mL",
+      "The measured loss plus abnormal pulse supports prompt first-response treatment",
+      "The criteria mandate immediate hysterectomy",
+      "TXA alone replaces the treatment bundle"
+    ],
+    "answer": 1,
+    "rationale": "At least 300 mL with an abnormal hemodynamic sign meets the WHO therapeutic threshold. Pulse above 100/min qualifies. Initiate timely care and assess the cause; these criteria do not automatically determine surgery. Waiting for 1000 mL misses this earlier treatment threshold. It does not mandate hysterectomy; escalation depends on the response and cause. TXA is one component of the care bundle, alongside uterotonics, fluids, examination and escalation.",
+    "reviewHref": "#antifibrinolytic-hemostasis",
+    "difficulty": "clinical"
+  },
+  "periop-pph-prophylaxis": {
+    "id": "periop-pph-prophylaxis",
+    "question": "A proposal would add TXA to every uncomplicated vaginal birth to replace prophylactic oxytocin. How does WHO 2025 inform this proposal?",
+    "choices": [
+      "Routine TXA is preferred because it contracts the uterus",
+      "TXA should replace all uterotonics",
+      "WHO advises against routine TXA prophylaxis; retain appropriate uterotonic prevention",
+      "The treatment recommendation proves universal prophylactic benefit"
+    ],
+    "answer": 2,
+    "rationale": "TXA inhibits fibrinolysis and is not a uterotonic. WHO recommends it for PPH treatment but advises against routine prevention at vaginal or cesarean birth. TXA does not contract the uterus and cannot replace uterotonic prevention. Evidence supporting treatment of established hemorrhage does not establish benefit from giving it routinely at every uncomplicated birth.",
+    "reviewHref": "#antifibrinolytic-hemostasis",
+    "difficulty": "application"
+  },
+  "periop-topical-thrombin-route": {
+    "id": "periop-topical-thrombin-route",
+    "question": "A RECOTHROM transfer syringe is placed among IV medicines. What action addresses the error?",
+    "choices": [
+      "Inject it through a filter",
+      "Stop and restore topical-only identification and handling",
+      "Use a lower IV dose",
+      "Wait for the INR before injecting"
+    ],
+    "answer": 1,
+    "rationale": "RECOTHROM must not enter the circulation; the syringe transfers product for surface application. A filter or a lower dose cannot convert topical thrombin into an IV medicine. Waiting for INR does not establish a safe IV route. Its entry into the circulation can cause thrombosis.",
+    "reviewHref": "#topical-and-factor-hemostasis",
+    "difficulty": "clinical"
+  },
+  "periop-bovine-thrombin-antibodies": {
+    "id": "periop-bovine-thrombin-antibodies",
+    "question": "A patient has suspected antibodies to bovine thrombin after prior exposure. Which product requires avoidance of re-exposure?",
+    "choices": [
+      "Every crystalloid solution",
+      "All local anesthetics",
+      "THROMBIN-JMI",
+      "All red-cell products"
+    ],
+    "answer": 2,
+    "rationale": "THROMBIN-JMI labeling prohibits re-exposure with known or suspected antibodies to bovine thrombin or factor V. This restriction belongs to the bovine thrombin product; it is not a blanket prohibition on crystalloids, local anesthetics or red-cell products. Factor V antibodies may cross-react with human factor V and cause bleeding.",
+    "reviewHref": "#topical-and-factor-hemostasis",
+    "difficulty": "clinical"
+  },
+  "periop-factor-vii-inr": {
+    "id": "periop-factor-vii-inr",
+    "question": "After NOVOSEVEN RT, INR normalizes but visible bleeding continues. What should guide assessment?",
+    "choices": [
+      "INR proves treatment success",
+      "Ignore observed blood loss",
+      "Stop monitoring after laboratory correction",
+      "Assess continuing clinical bleeding and the underlying cause"
+    ],
+    "answer": 3,
+    "rationale": "INR correction does not directly predict hemostatic success. Visible bleeding requires continuing assessment despite laboratory correction. Neither ignoring blood loss nor stopping monitoring is appropriate. The label states that these coagulation parameters do not directly predict hemostasis.",
+    "reviewHref": "#topical-and-factor-hemostasis",
+    "difficulty": "clinical"
+  },
+  "periop-fibrin-spray-distance": {
+    "id": "periop-fibrin-spray-distance",
+    "question": "During TISSEEL application, the team cannot assure the device-specific minimum spray distance. What is appropriate?",
+    "choices": [
+      "Increase gas pressure",
+      "Spray closer for stronger adhesion",
+      "Do not spray under these conditions; select a suitable labeled application approach",
+      "Substitute intravascular injection"
+    ],
+    "answer": 2,
+    "rationale": "Unsafe spray conditions can cause gas embolism. Device, gas, pressure and distance requirements are part of administration safety. Raising gas pressure or moving closer can increase rather than solve the hazard. Intravascular injection is contraindicated. Use a suitable approved delivery method rather than spraying without an assured minimum distance.",
+    "reviewHref": "#topical-and-factor-hemostasis",
+    "difficulty": "application"
+  },
+  "periop-factor-product-match": {
+    "id": "periop-factor-product-match",
+    "question": "Which product-to-disorder pairing is correct?",
+    "choices": [
+      "ADYNOVATE for hereditary factor X deficiency",
+      "COAGADEX for hereditary factor X deficiency",
+      "FEIBA as routine replacement without inhibitors",
+      "Topical thrombin as IV factor VIII replacement"
+    ],
+    "answer": 1,
+    "rationale": "COAGADEX is factor X replacement. ADYNOVATE is factor VIII replacement; FEIBA addresses inhibitor-associated hemophilia. ADYNOVATE supplies factor VIII for hemophilia A, not factor X. FEIBA is not labeled for factor-deficiency bleeding without factor VIII or IX inhibitors. Topical thrombin must not be injected and is not factor VIII replacement.",
+    "reviewHref": "#topical-and-factor-hemostasis",
+    "difficulty": "application"
+  },
+  "periop-feiba-antifibrinolytic": {
+    "id": "periop-feiba-antifibrinolytic",
+    "question": "A patient received FEIBA two hours ago. A new order calls for systemic tranexamic acid. Which response best addresses the interaction?",
+    "choices": [
+      "Administer because both agents reduce bleeding",
+      "Clarify with hematology before administration because this interval falls within the label warning",
+      "Use the INR alone to approve the combination",
+      "Switch to aminocaproic acid to eliminate the interaction"
+    ],
+    "answer": 1,
+    "rationale": "The FEIBA label discourages systemic antifibrinolytics within approximately 6 to 12 hours after administration because of thrombosis risk; aminocaproic acid shares this concern. A shared bleeding indication does not establish a safe combination. INR alone cannot resolve thrombotic interaction risk. Switching to aminocaproic acid retains the systemic antifibrinolytic concern.",
+    "reviewHref": "#topical-and-factor-hemostasis",
+    "difficulty": "clinical"
+  },
+  "periop-factor-inhibitor-response": {
+    "id": "periop-factor-inhibitor-response",
+    "question": "After an appropriate COAGADEX dose, factor X activity remains below the expected level and bleeding persists. Which evaluation belongs in the reassessment?",
+    "choices": [
+      "Assume a normal INR excludes further evaluation",
+      "Replace factor X with topical thrombin intravenously",
+      "Evaluate factor X inhibitors along with administration and the bleeding source",
+      "Treat all factor products as interchangeable"
+    ],
+    "answer": 2,
+    "rationale": "Failure to achieve expected factor X activity or control bleeding warrants factor X inhibitor testing. This supplements assessment of delivery and the clinical cause. A normal INR cannot exclude an inhibitor or replace factor X activity assessment. Topical thrombin is not an IV replacement option. Products addressing different factors or inhibitor states are not interchangeable.",
+    "reviewHref": "#topical-and-factor-hemostasis",
+    "difficulty": "clinical"
+  },
+  "periop-famotidine-renal-delirium": {
+    "id": "periop-famotidine-renal-delirium",
+    "question": "An older ICU patient on famotidine develops delirium as creatinine clearance falls to 25 mL/min. What belongs in the immediate medication assessment?",
+    "choices": [
+      "Continue the original dose because H2 blockers have no CNS effects",
+      "Diagnose drug-induced delirium without considering other causes",
+      "Review renal dosing and ongoing indication while evaluating other delirium causes",
+      "Increase famotidine to compensate for reduced clearance"
+    ],
+    "answer": 2,
+    "rationale": "Reduced renal clearance increases famotidine exposure; CNS reactions have been reported in older adults and renal impairment. The medication review complements a broader delirium assessment. Continuing without review ignores reduced clearance and the labeled CNS warning. A medication association alone does not establish the cause of delirium. Increasing the dose when clearance falls can increase exposure rather than compensate for it.",
+    "reviewHref": "#perioperative-stress-ulcer",
+    "difficulty": "clinical"
+  }
+})) {
+ const existing = perioperativeCriticalCarePharmacologyQuestionBank.find((question) => question.id === id);
+ if (existing) Object.assign(existing, updates);
+ else perioperativeCriticalCarePharmacologyQuestionBank.push(updates);
+}

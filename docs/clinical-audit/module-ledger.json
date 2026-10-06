@@ -1385,7 +1385,8 @@
         "enteral-nutrition-broader-adrenal-completion-review.json",
         "enteral-nutrition-broader-perioperative-local-review.json",
         "enteral-nutrition-broader-perioperative-induction-review.json",
-        "enteral-nutrition-broader-perioperative-nmba-review.json"
+        "enteral-nutrition-broader-perioperative-nmba-review.json",
+        "enteral-nutrition-broader-perioperative-hemostasis-review.json"
       ],
       "latestBookCalculationReview": {
         "evidence": "enteral-nutrition-book-calculations-review.json",
@@ -13327,6 +13328,96 @@
         "chapterTotal": 82,
         "chapterCountPercent": 7.32,
         "workingBoundary": "Five complete lessons and39 anchored questions source-verified; other7 working lessons and57 questions preserved exactly. Full96-question/12-lesson working parent remains reviewing."
+      },
+      "latestBroaderPerioperativeHemostasisReview": {
+        "evidence": "enteral-nutrition-broader-perioperative-hemostasis-review.json",
+        "verifiedScope": "Two complete hemostasis lessons verified:24 bodies,2 checks/all8 choices,2 figures and17 anchored whole questions/all68 choices. Four stress-ulcer safety paragraphs and one whole famotidine question/all4 choices freshly verified while original8 SUP bodies/check/metadata retained exactly. Eighteen whole questions/all72 choices reviewed;8 source-reviewed draft cases added,88 original IDs/order/stems/choices/keys preserved. Two associated cumulative rationales updated;other1178 cumulative objects and selector unchanged. Forty-eight references retained,13 official/original references added. Detailed constituent evidence now covers12 committed lessons and96 questions;parent-wide reconciliation still required. Broader unique source-verified questions1347to1365. Whole module64/232 and chapter6/82 counts unchanged;full goal remains active.",
+        "wholeLessonsVerifiedThisUnit": {
+          "perioperative-critical-care-pharmacology": [
+            "antifibrinolytic-hemostasis",
+            "topical-and-factor-hemostasis"
+          ]
+        },
+        "wholeBodiesVerifiedThisUnit": 24,
+        "supplementalStressUlcerBodiesVerified": 4,
+        "originalStressUlcerBodiesPreserved": 8,
+        "wholeChecksVerifiedThisUnit": 2,
+        "wholeFiguresVerifiedThisUnit": 2,
+        "thirdPreviouslyVerifiedStressUlcerCheckAndFigureRuntimeValidated": true,
+        "wholeLessonMetadataVerified": true,
+        "wholeQuestionsReviewedThisUnit": 18,
+        "all72ChoicesIndividuallyCompared": true,
+        "all8HemostasisEmbeddedChoicesIndividuallyCompared": true,
+        "wholeBankQuestionIdsVerifiedThisUnit": [
+          "periop-antifib-route",
+          "periop-antifib-renal",
+          "periop-antifib-rate",
+          "periop-antifib-seizure",
+          "periop-antifib-urinary",
+          "periop-antifib-dilution",
+          "periop-txa-trauma-timing",
+          "periop-txa-postpartum-repeat",
+          "periop-pph-early-recognition",
+          "periop-pph-prophylaxis",
+          "periop-topical-thrombin-route",
+          "periop-bovine-thrombin-antibodies",
+          "periop-factor-vii-inr",
+          "periop-fibrin-spray-distance",
+          "periop-factor-product-match",
+          "periop-feiba-antifibrinolytic",
+          "periop-factor-inhibitor-response",
+          "periop-famotidine-renal-delirium"
+        ],
+        "newUniqueBankIdsVerified": [
+          "periop-antifib-route",
+          "periop-antifib-renal",
+          "periop-antifib-rate",
+          "periop-antifib-seizure",
+          "periop-antifib-urinary",
+          "periop-antifib-dilution",
+          "periop-txa-trauma-timing",
+          "periop-txa-postpartum-repeat",
+          "periop-pph-early-recognition",
+          "periop-pph-prophylaxis",
+          "periop-topical-thrombin-route",
+          "periop-bovine-thrombin-antibodies",
+          "periop-factor-vii-inr",
+          "periop-fibrin-spray-distance",
+          "periop-factor-product-match",
+          "periop-feiba-antifibrinolytic",
+          "periop-factor-inhibitor-response",
+          "periop-famotidine-renal-delirium"
+        ],
+        "newUniqueBankQuestionsVerified": 18,
+        "broaderFeedingBankVerifiedBefore": 1347,
+        "broaderFeedingBankVerifiedAfter": 1365,
+        "committedModuleBankBefore": 88,
+        "committedModuleBankAfter": 96,
+        "existing88IdsOrderStemsChoicesKeysPreserved": true,
+        "sourceVerifiedDraftQuestionsAddedToCommittedBank": 8,
+        "committedWholeLessonsWithDetailedConstituentEvidenceAfter": 12,
+        "committedWholeLessonTotal": 12,
+        "sourceVerifiedQuestionsAcrossDetailedConstituentUnits": 96,
+        "remainingUnauditedParentQuestions": 0,
+        "associatedCumulativeItems": [
+          "cumulative-perioperative-critical-care-pharmacology-periop-antifib-dilution",
+          "cumulative-perioperative-critical-care-pharmacology-periop-pph-prophylaxis"
+        ],
+        "other1178CumulativeObjectsUnchanged": true,
+        "all1180CumulativeIdsOrderStemsChoicesKeysPreserved": true,
+        "all48ReferencesRetained": true,
+        "newReferencesAdded": 13,
+        "wholeParentModuleVerified": false,
+        "parentWideReconciliationRequired": true,
+        "enteralParentVerified": false,
+        "wholeChaptersVerifiedThisUnit": false,
+        "committedWholeModulesVerifiedAfter": 64,
+        "committedWholeModulesTotal": 232,
+        "moduleCountPercent": 27.59,
+        "chaptersVerifiedAfter": 6,
+        "chapterTotal": 82,
+        "chapterCountPercent": 7.32,
+        "workingBoundary": "Two whole hemostasis lessons andfour source-reviewedSUP expansions updated;18 whole questions exact to built candidate. Original working96 questionIDs/order and other9 working lesson objects retained exactly. Original8 committedSUP bodies retained. Parent-wide closure pending."
       }
     },
     {
@@ -21382,7 +21473,22 @@
             "periop-sup-sepsis"
           ],
           "remainingBodyHeadings": [],
-          "remainingQuestionIds": []
+          "remainingQuestionIds": [],
+          "supplementalSafetyReview": {
+            "evidence": "enteral-nutrition-broader-perioperative-hemostasis-review.json",
+            "verifiedBodyHeadings": [
+              "Reassess famotidine when kidney function or cognition changes",
+              "Put PPI warnings in their exposure context",
+              "Distinguish acid tolerance from a bleeding outcome",
+              "Interpret infection concerns alongside randomized evidence"
+            ],
+            "verifiedQuestionIds": [
+              "periop-famotidine-renal-delirium"
+            ],
+            "allFourQuestionChoicesReviewed": true,
+            "original8CommittedBodiesRetainedExactly": true,
+            "parentWideReconciliationPending": true
+          }
         },
         {
           "slug": "local-anesthetic-pharmacology",
@@ -21673,10 +21779,77 @@
         },
         {
           "slug": "antifibrinolytic-hemostasis",
-          "status": "verified"
+          "status": "verified",
+          "wholeLessonVerified": true,
+          "latestScopedEvidence": "enteral-nutrition-broader-perioperative-hemostasis-review.json",
+          "verifiedBodyHeadings": [
+            "Block fibrinolysis deliberately",
+            "Make tranexamic-acid route unmistakable",
+            "Keep oral tranexamic acid distinct from injection",
+            "Identify the labeled tranexamic-acid regimen",
+            "Match trauma treatment to the injury clock",
+            "Recognize postpartum bleeding early",
+            "Separate postpartum treatment from routine prevention",
+            "Use the postpartum treatment schedule",
+            "Read concentration and infusion rate together",
+            "Screen beyond the route",
+            "Use aminocaproic acid only for fibrinolytic bleeding",
+            "Infuse aminocaproic acid deliberately"
+          ],
+          "embeddedCheckVerified": true,
+          "figureVerified": true,
+          "metadataVerified": true,
+          "verifiedQuestionIds": [
+            "periop-antifib-route",
+            "periop-antifib-renal",
+            "periop-antifib-rate",
+            "periop-antifib-seizure",
+            "periop-antifib-urinary",
+            "periop-antifib-dilution",
+            "periop-txa-trauma-timing",
+            "periop-txa-postpartum-repeat",
+            "periop-pph-early-recognition",
+            "periop-pph-prophylaxis"
+          ],
+          "remainingBodyHeadings": [],
+          "remainingQuestionIds": []
+        },
+        {
+          "slug": "topical-and-factor-hemostasis",
+          "status": "verified",
+          "wholeLessonVerified": true,
+          "latestScopedEvidence": "enteral-nutrition-broader-perioperative-hemostasis-review.json",
+          "verifiedBodyHeadings": [
+            "Use topical thrombin for accessible oozing",
+            "Screen recombinant thrombin before use",
+            "Recognize bovine thrombin's antibody risk",
+            "Treat a fibrin sealant as its own product",
+            "Distinguish skin closure from hemostatic delivery",
+            "Match replacement to the missing factor",
+            "Investigate an inadequate replacement response",
+            "Distinguish inhibitor bypass from replacement",
+            "Screen FEIBA combinations before administration",
+            "Identify the factor VIIa indication",
+            "Treat thrombosis risk as part of selection",
+            "Measure bleeding control directly"
+          ],
+          "embeddedCheckVerified": true,
+          "figureVerified": true,
+          "metadataVerified": true,
+          "verifiedQuestionIds": [
+            "periop-topical-thrombin-route",
+            "periop-bovine-thrombin-antibodies",
+            "periop-factor-vii-inr",
+            "periop-fibrin-spray-distance",
+            "periop-factor-product-match",
+            "periop-feiba-antifibrinolytic",
+            "periop-factor-inhibitor-response"
+          ],
+          "remainingBodyHeadings": [],
+          "remainingQuestionIds": []
         }
       ],
-      "questions": 88,
+      "questions": 96,
       "status": "reviewing",
       "evidence": [
         "2026-09-26: targeted pediatric BRIDION update linked from toxicology book-row review; two paragraphs/two original cases. Build43315 exit0, structural11/114 and desktop/mobile paragraph checks passed. Full clinical re-review not established by this change.",
@@ -21689,7 +21862,8 @@
         "enteral-nutrition-broader-icu-2026-review.json",
         "enteral-nutrition-broader-perioperative-local-review.json",
         "enteral-nutrition-broader-perioperative-induction-review.json",
-        "enteral-nutrition-broader-perioperative-nmba-review.json"
+        "enteral-nutrition-broader-perioperative-nmba-review.json",
+        "enteral-nutrition-broader-perioperative-hemostasis-review.json"
       ],
       "broaderEnteralAdministrationReview": {
         "evidence": "enteral-nutrition-broader-adrenal-perioperative-review.json",
@@ -22101,6 +22275,96 @@
         "chapterTotal": 82,
         "chapterCountPercent": 7.32,
         "workingBoundary": "Five complete lessons and39 anchored questions source-verified; other7 working lessons and57 questions preserved exactly. Full96-question/12-lesson working parent remains reviewing."
+      },
+      "latestBroaderPerioperativeHemostasisReview": {
+        "evidence": "enteral-nutrition-broader-perioperative-hemostasis-review.json",
+        "verifiedScope": "Two complete hemostasis lessons verified:24 bodies,2 checks/all8 choices,2 figures and17 anchored whole questions/all68 choices. Four stress-ulcer safety paragraphs and one whole famotidine question/all4 choices freshly verified while original8 SUP bodies/check/metadata retained exactly. Eighteen whole questions/all72 choices reviewed;8 source-reviewed draft cases added,88 original IDs/order/stems/choices/keys preserved. Two associated cumulative rationales updated;other1178 cumulative objects and selector unchanged. Forty-eight references retained,13 official/original references added. Detailed constituent evidence now covers12 committed lessons and96 questions;parent-wide reconciliation still required. Broader unique source-verified questions1347to1365. Whole module64/232 and chapter6/82 counts unchanged;full goal remains active.",
+        "wholeLessonsVerifiedThisUnit": {
+          "perioperative-critical-care-pharmacology": [
+            "antifibrinolytic-hemostasis",
+            "topical-and-factor-hemostasis"
+          ]
+        },
+        "wholeBodiesVerifiedThisUnit": 24,
+        "supplementalStressUlcerBodiesVerified": 4,
+        "originalStressUlcerBodiesPreserved": 8,
+        "wholeChecksVerifiedThisUnit": 2,
+        "wholeFiguresVerifiedThisUnit": 2,
+        "thirdPreviouslyVerifiedStressUlcerCheckAndFigureRuntimeValidated": true,
+        "wholeLessonMetadataVerified": true,
+        "wholeQuestionsReviewedThisUnit": 18,
+        "all72ChoicesIndividuallyCompared": true,
+        "all8HemostasisEmbeddedChoicesIndividuallyCompared": true,
+        "wholeBankQuestionIdsVerifiedThisUnit": [
+          "periop-antifib-route",
+          "periop-antifib-renal",
+          "periop-antifib-rate",
+          "periop-antifib-seizure",
+          "periop-antifib-urinary",
+          "periop-antifib-dilution",
+          "periop-txa-trauma-timing",
+          "periop-txa-postpartum-repeat",
+          "periop-pph-early-recognition",
+          "periop-pph-prophylaxis",
+          "periop-topical-thrombin-route",
+          "periop-bovine-thrombin-antibodies",
+          "periop-factor-vii-inr",
+          "periop-fibrin-spray-distance",
+          "periop-factor-product-match",
+          "periop-feiba-antifibrinolytic",
+          "periop-factor-inhibitor-response",
+          "periop-famotidine-renal-delirium"
+        ],
+        "newUniqueBankIdsVerified": [
+          "periop-antifib-route",
+          "periop-antifib-renal",
+          "periop-antifib-rate",
+          "periop-antifib-seizure",
+          "periop-antifib-urinary",
+          "periop-antifib-dilution",
+          "periop-txa-trauma-timing",
+          "periop-txa-postpartum-repeat",
+          "periop-pph-early-recognition",
+          "periop-pph-prophylaxis",
+          "periop-topical-thrombin-route",
+          "periop-bovine-thrombin-antibodies",
+          "periop-factor-vii-inr",
+          "periop-fibrin-spray-distance",
+          "periop-factor-product-match",
+          "periop-feiba-antifibrinolytic",
+          "periop-factor-inhibitor-response",
+          "periop-famotidine-renal-delirium"
+        ],
+        "newUniqueBankQuestionsVerified": 18,
+        "broaderFeedingBankVerifiedBefore": 1347,
+        "broaderFeedingBankVerifiedAfter": 1365,
+        "committedModuleBankBefore": 88,
+        "committedModuleBankAfter": 96,
+        "existing88IdsOrderStemsChoicesKeysPreserved": true,
+        "sourceVerifiedDraftQuestionsAddedToCommittedBank": 8,
+        "committedWholeLessonsWithDetailedConstituentEvidenceAfter": 12,
+        "committedWholeLessonTotal": 12,
+        "sourceVerifiedQuestionsAcrossDetailedConstituentUnits": 96,
+        "remainingUnauditedParentQuestions": 0,
+        "associatedCumulativeItems": [
+          "cumulative-perioperative-critical-care-pharmacology-periop-antifib-dilution",
+          "cumulative-perioperative-critical-care-pharmacology-periop-pph-prophylaxis"
+        ],
+        "other1178CumulativeObjectsUnchanged": true,
+        "all1180CumulativeIdsOrderStemsChoicesKeysPreserved": true,
+        "all48ReferencesRetained": true,
+        "newReferencesAdded": 13,
+        "wholeParentModuleVerified": false,
+        "parentWideReconciliationRequired": true,
+        "enteralParentVerified": false,
+        "wholeChaptersVerifiedThisUnit": false,
+        "committedWholeModulesVerifiedAfter": 64,
+        "committedWholeModulesTotal": 232,
+        "moduleCountPercent": 27.59,
+        "chaptersVerifiedAfter": 6,
+        "chapterTotal": 82,
+        "chapterCountPercent": 7.32,
+        "workingBoundary": "Two whole hemostasis lessons andfour source-reviewedSUP expansions updated;18 whole questions exact to built candidate. Original working96 questionIDs/order and other9 working lesson objects retained exactly. Original8 committedSUP bodies retained. Parent-wide closure pending."
       }
     },
     {
