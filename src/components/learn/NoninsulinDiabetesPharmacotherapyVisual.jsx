@@ -34,7 +34,7 @@ const diagrams = {
     eyebrow: "Incretin pharmacology",
     title: "Increase glucose-dependent signaling and reduce intake",
     columns: [
-      ["Signal", "Islet and glucagon", "Increase glucose-dependent insulin and reduce inappropriate glucagon"],
+      ["Signal", "GLP-1; dual GIP/GLP-1", "Support glucose-dependent insulin signaling; tirzepatide activates both receptors"],
       ["Slow", "Stomach and appetite", "Delay gastric emptying to varying degrees and strengthen satiety"],
       ["Scale", "Dose and outcome", "Titrate for tolerance and use product-specific cardiovascular or kidney evidence"],
     ],
@@ -113,8 +113,8 @@ export default function NoninsulinDiabetesPharmacotherapyVisual({ type }) {
           <div key={label}>
             <span>{String(index + 1).padStart(2, "0")}</span>
             <strong>{label}</strong>
-            <em style={(type === "noninsulin-selection" || type === "noninsulin-metformin" || type === "noninsulin-sglt2") ? { fontSize: "14px", lineHeight: 1.55 } : undefined}>{mechanism}</em>
-            <p style={(type === "noninsulin-selection" || type === "noninsulin-metformin" || type === "noninsulin-sglt2") ? { fontSize: "14px", lineHeight: 1.65 } : undefined}>{explanation}</p>
+            <em style={(type === "noninsulin-selection" || type === "noninsulin-metformin" || type === "noninsulin-sglt2" || type === "noninsulin-glp1") ? { fontSize: "14px", lineHeight: 1.55 } : undefined}>{mechanism}</em>
+            <p style={(type === "noninsulin-selection" || type === "noninsulin-metformin" || type === "noninsulin-sglt2" || type === "noninsulin-glp1") ? { fontSize: "14px", lineHeight: 1.65 } : undefined}>{explanation}</p>
           </div>
         ))}
       </div>

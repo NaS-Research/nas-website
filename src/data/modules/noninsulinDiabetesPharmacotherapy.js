@@ -473,3 +473,150 @@ noninsulinDiabetesPharmacotherapyModule.references.push(...[
     "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e6f3e718-bb99-48f1-ab94-b9f0af05fed6"
   }
 ]);
+
+
+// Complete GLP-1/GIP lesson reviewed against exact product labels and linked assessments.
+Object.assign(noninsulinDiabetesPharmacotherapyModule.submodules.find(item => item.slug === "glp1-gip-pharmacotherapy"), {
+  "slug": "glp1-gip-pharmacotherapy",
+  "title": "GLP-1 and Dual GIP/GLP-1 Therapy",
+  "visual": "noninsulin-glp1",
+  "summary": "GLP-1 receptor agonists and dual GIP/GLP-1 agonism improve glucose control through incretin signaling. Match the exact product, population, titration, administration and safety instructions; selected outcome indications belong to individual products.",
+  "concepts": [
+    "GLP-1 and dual GIP/GLP-1 signaling",
+    "Product-specific indications and dose escalation",
+    "Oral semaglutide and injection administration",
+    "Renal limits, contraindications and urgent symptoms",
+    "Gastric interactions and complementary combinations"
+  ],
+  "application": "Record the exact brand and formulation, indication, age, starting dose, escalation interval and missed-dose plan. Review kidney function, GI tolerance, hydration, MTC/MEN2 history, vision, oral medicines and contraception; arrange presentation-specific training.",
+  "lesson": [
+    {
+      "heading": "Trace incretin signaling without equating every product",
+      "body": "GLP-1 receptor agonists increase glucose-dependent insulin release, reduce inappropriate glucagon secretion, delay gastric emptying to varying degrees and promote satiety. Tirzepatide activates both GIP and GLP-1 receptors. These effects can improve glucose control and reduce weight, but an individual response is not guaranteed. In adults, intrinsic hypoglycemia risk is low without insulin or a secretagogue; adding these medicines to insulin or a sulfonylurea can require individualized dose reduction and glucose monitoring. Pediatric safety needs separate review: liraglutide labeling reports greater hypoglycemia risk in pediatric patients regardless of concomitant insulin or metformin. Do not turn the adult shorthand into a universal pediatric rule."
+    },
+    {
+      "heading": "Match cardiovascular, kidney and liver outcomes precisely",
+      "body": "Selected cardiovascular indications differ: injectable Ozempic and Victoza reduce major cardiovascular events in adults with type 2 diabetes and established cardiovascular disease; Trulicity includes established disease or multiple risk factors. Current Ozempic tablets, Rybelsus and Mounjaro labels include adults with type 2 diabetes at high cardiovascular risk. Injectable Ozempic also has a kidney-outcome indication in adults with type 2 diabetes and CKD, using its specified maintenance dose. These indications do not transfer automatically to every incretin product. Wegovy injection has a separate indication for adults with noncirrhotic MASH and F2-F3 fibrosis under accelerated approval based on histologic improvement; continued approval depends on confirming clinical benefit. This is not an indication for every GLP-1 product, every fatty liver condition or cirrhosis. Weight-management products and diabetes products require their own indications and schedules."
+    },
+    {
+      "heading": "Use injectable semaglutide’s staged doses",
+      "body": "Ozempic injection starts at 0.25 mg subcutaneously once weekly for four weeks, then 0.5 mg weekly. For additional glucose control, increase to 1 mg after at least four weeks at 0.5 mg and to 2 mg after at least four weeks at 1 mg; the maximum is 2 mg weekly. For the labeled type 2 diabetes and CKD outcome indication, increase to the 1 mg weekly maintenance dose after at least four weeks at 0.5 mg. The initiation dose does not establish the maintenance schedule for every indication. Administer with or without meals. If missed, give within five days; after more than five days, skip and resume on the scheduled day. Injectable and oral Ozempic are different formulations, not interchangeable milligram doses."
+    },
+    {
+      "heading": "Distinguish both diabetes tablet formulations",
+      "body": "Oral semaglutide currently has two diabetes tablet formulations. Rybelsus starts at 3 mg daily on days 1-30, then 7 mg on days 31-60, with 14 mg from day 61 if additional glucose control is needed. Ozempic tablets start at 1.5 mg daily on days 1-30, then 4 mg on days 31-60, with 9 mg from day 61 if needed. The 3 mg and 1.5 mg initiation doses are not effective for glycemic control. The formulations are not substitutable milligram for milligram. After initiation, the labeled daily switch pairs are Rybelsus 7 mg with Ozempic tablets 4 mg and Rybelsus 14 mg with Ozempic tablets 9 mg, starting the replacement the day after stopping the prior tablet. Do not apply these switching instructions during the first 30 days or infer a conversion for every injectable dose."
+    },
+    {
+      "heading": "Protect oral semaglutide absorption",
+      "body": "Take the prescribed diabetes tablet once each morning on an empty stomach with no more than four ounces of plain water. Swallow one tablet whole; do not split, crush, chew or dissolve it. Wait at least 30 minutes before food, beverages or other oral medicines. A missed tablet is skipped, with the next dose taken the following day; do not double it. Review medicines whose effect depends on a narrow concentration range or monitoring threshold. Oral semaglutide increased levothyroxine exposure in the cited interaction study, so clinical monitoring may be needed. Its fasting and water requirements differ from meal-independent injectable semaglutide and cannot be replaced by a generic instruction to take diabetes medicine with breakfast."
+    },
+    {
+      "heading": "Use tirzepatide’s current age-specific schedule",
+      "body": "Mounjaro starts at 2.5 mg subcutaneously once weekly. Its current label permits increases in 2.5 mg increments after at least four weeks at the current dose if additional glycemic control is needed. The maximum is 15 mg weekly in adults and 10 mg weekly in pediatric patients age 10 and older; the cardiovascular indication is adult. Do not transfer the adult maximum to a child or escalate early to meet a target. Give with or without meals. A missed dose can be given within four days, or 96 hours; after more than four days, skip it. If changing the weekly administration day, keep at least 72 hours between doses. These instructions differ from Ozempic’s five-day missed-dose window."
+    },
+    {
+      "heading": "Keep dulaglutide and liraglutide schedules distinct",
+      "body": "Trulicity starts at 0.75 mg subcutaneously once weekly. Adults may increase to 1.5 mg after four weeks; further increases are in 1.5 mg increments after at least four weeks at the current dose, up to 4.5 mg weekly. Pediatric patients age 10 and older have a 1.5 mg weekly maximum. A missed dose can be given only if at least 72 hours remain until the next scheduled dose; otherwise skip it. Victoza is daily: adults start at 0.6 mg for one week, then 1.2 mg; if needed, increase to 1.8 mg after at least another week. Pediatric dosing begins at 0.6 mg and increases in 0.6 mg increments after at least a week when needed, to a 1.8 mg maximum. Both products are meal independent. Skip a missed Victoza dose; if more than three days have elapsed since the last dose, restart at 0.6 mg and arrange appropriate retitration."
+    },
+    {
+      "heading": "Separate immediate-release from extended-release exenatide",
+      "body": "Byetta starts at 5 micrograms subcutaneously twice daily, increasing to 10 micrograms twice daily after one month according to response. Give each dose within 60 minutes before the morning and evening meals or the two main meals approximately six hours or more apart; do not give after a meal. Skip a missed dose and resume at the next scheduled dose. Bydureon BCise instead delivers 2 mg subcutaneously once weekly, with or without meals. If a dose is missed, give it only when at least three days remain before the next scheduled dose; skip when only one or two days remain. Milligrams and micrograms, daily and weekly timing, and the two formulations’ devices must remain distinct. Neither exenatide formulation should be combined with another exenatide product."
+    },
+    {
+      "heading": "Read the book’s lixisenatide entry with its own label",
+      "body": "The Adlyxin label used for the book’s lixisenatide entry starts at 10 micrograms subcutaneously daily for 14 days, then 20 micrograms daily from day 15. Give within one hour before the first meal, preferably the same meal each day. If missed, give within one hour before the next meal. This is a product-specific instruction from the June 2022 label; it does not establish current commercial availability. It also does not justify giving Byetta after meals or applying a weekly missed-dose rule to lixisenatide. Check the prescribed product and current access before choosing treatment."
+    },
+    {
+      "heading": "Distinguish kidney dose adjustment from dehydration safety",
+      "body": "Injectable and oral semaglutide, tirzepatide, dulaglutide and liraglutide do not require dose adjustment for renal impairment under their cited labels, but experience and monitoring precautions still differ; dulaglutide labeling calls for caution in end-stage renal disease. Gastrointestinal fluid loss can cause acute kidney injury even when no routine renal dose adjustment is required. Byetta is not recommended with creatinine clearance below 30 mL/min or end-stage renal disease; Bydureon BCise is not recommended below eGFR 45 mL/min/1.73 m² or in end-stage renal disease. The cited Adlyxin label does not recommend use below eGFR 15; severe impairment has limited experience and needs close monitoring. Do not swap creatinine clearance and eGFR units or assume that all GLP-1 products have one renal boundary."
+    },
+    {
+      "heading": "Apply thyroid contraindications to the exact formulation",
+      "body": "Semaglutide, tirzepatide, dulaglutide, liraglutide and extended-release exenatide carry thyroid C-cell tumor boxed warnings and are contraindicated with a personal or family history of medullary thyroid carcinoma or MEN2. The animal finding does not establish that these medicines cause MTC in humans, and routine calcitonin testing or thyroid ultrasound has uncertain value for early detection. Report a neck mass, persistent hoarseness, trouble swallowing or breathing. Byetta and Adlyxin do not share that boxed warning and MTC/MEN2 contraindication in their cited labels; this does not establish suitability for every patient. Avoid the inaccurate shortcut that every thyroid disorder or every thyroid cancer has the same formal contraindication. Check each product’s serious hypersensitivity contraindication and the complete clinical history."
+    },
+    {
+      "heading": "Respond to pancreatitis and severe gastrointestinal symptoms",
+      "body": "Severe, persistent abdominal pain that can radiate to the back, with or without vomiting, needs prompt evaluation for pancreatitis; stop the suspected medicine when pancreatitis is suspected. Abdominal symptoms can also reflect gallbladder disease and need appropriate evaluation. These symptoms should not be dismissed as routine titration nausea. Severe gastroparesis is a product-specific limitation or reason not to initiate treatment under the cited labels, rather than an indication to slow gastric emptying further. Review persistent vomiting, diarrhea, poor intake, dehydration and kidney function. A history of pancreatitis requires careful product-specific assessment; it is not the same as the formal MTC/MEN2 contraindication."
+    },
+    {
+      "heading": "Titrate with tolerance and nutrition in view",
+      "body": "Start with the exact product’s initiation dose and observe its minimum escalation interval. Reassess tolerability before each planned increase; persistent nausea, vomiting, inability to maintain intake or dehydration warrants clinical review rather than automatic escalation. Smaller meals and stopping when full can reduce meal-related burden, while hydration and adequate nutrition remain essential. Significant hypoglycemia, severe abdominal pain or other urgent symptoms need assessment rather than a diet-only response. For tube-fed or otherwise nutritionally vulnerable patients, review actual intake, gastrointestinal symptoms and the whole glucose-lowering regimen; the gastric effects of an incretin medicine do not establish a universal formula, route or feeding schedule."
+    },
+    {
+      "heading": "Monitor vision and plan anesthesia with the team",
+      "body": "Semaglutide and tirzepatide labels describe retinopathy precautions: rapid improvement in glucose can temporarily worsen diabetic retinopathy, so patients with a history need monitoring and new vision symptoms need evaluation. This is not proof that every change in vision is caused by the drug. Delayed gastric emptying also matters during general anesthesia or deep sedation: aspiration has been reported despite preprocedure fasting. Tell the procedure and anesthesia teams about treatment and follow an individualized plan. The cited labels state that available data are insufficient to establish whether changing fasting instructions or temporarily stopping treatment reduces retained gastric contents. Do not present a fixed class-wide hold duration as a proven label instruction."
+    },
+    {
+      "heading": "Review oral interactions and contraception by product",
+      "body": "Gastric slowing can affect absorption of oral medicines, particularly medicines with a narrow therapeutic index or threshold-dependent effectiveness. For Mounjaro, patients using oral hormonal contraception should switch to a nonoral method or add a barrier method for four weeks after initiation and four weeks after every dose escalation. Simply moving the pill an hour earlier does not satisfy that instruction. Byetta’s threshold-dependent oral medicines, such as contraceptives or antibiotics, should be taken at least one hour before its injection; if food is required, use a meal or snack when Byetta is not being given. Adlyxin’s cited label places oral contraceptives at least one hour before or at least 11 hours after injection. Monitor warfarin and similar narrow-index medicines as required by the exact product; do not assume every incretin raises INR in every patient."
+    },
+    {
+      "heading": "Train for the actual injection presentation",
+      "body": "Use the product’s current instructions for injection sites, preparation, needles, storage and disposal. Do not mix incretin injections with insulin; administer separately and avoid adjacent injection sites when using the same body region. Pens are never shared, even with a new needle. Ozempic has multiple-dose pens and single-dose prefilled syringes; Mounjaro has different pen and vial presentations, including a multiple-dose KwikPen. Dose volume, needle supply and administration steps cannot be inferred from the brand alone. For Bydureon BCise specifically, allow 15 minutes at room temperature before mixing, shake vigorously for at least 15 seconds and inspect for a uniform cloudy suspension with no residual medicine on the inspection window; inject immediately after preparation. This is not a universal warm-up or shaking rule for other products."
+    },
+    {
+      "heading": "Recognize exenatide-specific serious reactions",
+      "body": "Prior exenatide-induced immune-mediated thrombocytopenia is a contraindication for Byetta and Bydureon BCise. Suspected immune-mediated thrombocytopenia requires immediate discontinuation and avoidance of re-exposure to exenatide, rather than merely reducing the dose. Extended-release exenatide also has reports of serious injection-site reactions, including abscess, cellulitis and necrosis. A worsening, painful or infected injection site needs evaluation and should not automatically be dismissed as an expected small nodule. These product-specific warnings do not establish identical reactions or risk estimates for all incretin medicines."
+    },
+    {
+      "heading": "Avoid redundant incretin treatment and review reproductive plans",
+      "body": "Combining a DPP-4 inhibitor with a GLP-1 receptor agonist adds little glucose-lowering benefit because both act through the incretin pathway; reassess the DPP-4 inhibitor rather than keeping it automatically. This redundancy is different from complementary treatment with metformin or an appropriately selected SGLT2 inhibitor. Insulin and sulfonylurea combinations require hypoglycemia review. Discuss pregnancy and breastfeeding using the exact product label: semaglutide should be discontinued at least two months before a planned pregnancy, and oral semaglutide is not recommended during breastfeeding. Those instructions are not a universal washout interval or lactation decision for every GLP-1/GIP medicine."
+    }
+  ],
+  "keyPoints": [
+    "Match brand, formulation, indication, age and exact titration.",
+    "Use product-specific missed-dose, meal and oral-interaction instructions.",
+    "Apply MTC/MEN2 and renal restrictions to the exact product.",
+    "Evaluate severe GI symptoms, dehydration, vision changes and procedure risks."
+  ],
+  "check": {
+    "question": "An adult starts weekly semaglutide while taking sitagliptin. Why should the sitagliptin prescription be reassessed?",
+    "choices": [
+      "The incretin overlap offers little additional glucose lowering and can add treatment burden.",
+      "Sitagliptin is required to prevent semaglutide-related pancreatitis.",
+      "Both medicines must be retained because they lower glucose through unrelated pathways.",
+      "Sitagliptin makes rapid semaglutide dose escalation safe despite persistent vomiting."
+    ],
+    "answer": 0,
+    "rationale": "DPP-4 inhibition and GLP-1 receptor agonism overlap in the incretin pathway, with little added glucose-lowering benefit from the combination. Sitagliptin does not prevent pancreatitis or justify escalating through vomiting; these mechanisms are not unrelated. Reassess its contribution and the whole regimen.",
+    "reviewHref": "#glp1-gip-pharmacotherapy"
+  }
+});
+noninsulinDiabetesPharmacotherapyModule.references.push(...[
+  {
+    "label": "Novo Nordisk Ozempic injection prescribing information (May 2026)",
+    "href": "https://www.novo-pi.com/ozempic.pdf"
+  },
+  {
+    "label": "Novo Nordisk Rybelsus and Ozempic tablets prescribing information (January 2026)",
+    "href": "https://www.novo-pi.com/rybelsus.pdf"
+  },
+  {
+    "label": "DailyMed Mounjaro prescribing information (August 2026)",
+    "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d2d7da5d-ad07-4228-955f-cf7e355c8cc0"
+  },
+  {
+    "label": "DailyMed Trulicity prescribing information (April 2026)",
+    "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=463050bd-2b1c-40f5-b3c3-0a04bb433309"
+  },
+  {
+    "label": "Novo Nordisk Victoza prescribing information (October 2025)",
+    "href": "https://www.novo-pi.com/victoza.pdf"
+  },
+  {
+    "label": "DailyMed Byetta prescribing information (September 2025)",
+    "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=53d03c03-ebf7-418d-88a8-533eabd2ee4f"
+  },
+  {
+    "label": "DailyMed Bydureon BCise prescribing information (May 2025)",
+    "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2d18cfc4-e0de-4814-a712-c1b7c504bff5"
+  },
+  {
+    "label": "Sanofi Adlyxin prescribing information (June 2022)",
+    "href": "https://products.sanofi.us/Adlyxin/Adlyxin.pdf"
+  },
+  {
+    "label": "Novo Nordisk Wegovy prescribing information (June 2026)",
+    "href": "https://www.novo-pi.com/wegovy.pdf"
+  }
+]);

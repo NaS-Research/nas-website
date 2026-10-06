@@ -827,3 +827,131 @@ const verifiedSglt2Questions = {
 for (const item of noninsulinDiabetesPharmacotherapyQuestionBank) {
   if (verifiedSglt2Questions[item.id]) Object.assign(item, verifiedSglt2Questions[item.id]);
 }
+
+
+// Focused incretin cases retain stable IDs, keys, difficulty and lesson anchors.
+const verifiedGlp1Questions = {
+  "noninsulin-diabetes-09-principle": {
+    "question": "Which statement correctly distinguishes tirzepatide from a selective GLP-1 receptor agonist?",
+    "choices": [
+      "Tirzepatide activates both GIP and GLP-1 receptors.",
+      "Tirzepatide lowers glucose by blocking both GIP and GLP-1 receptors.",
+      "Tirzepatide primarily inhibits DPP-4 to preserve native incretins.",
+      "Tirzepatide directly blocks renal SGLT2 to produce glucosuria."
+    ],
+    "rationale": "Tirzepatide is a dual GIP/GLP-1 receptor agonist. Receptor blockade is the opposite action; DPP-4 inhibition and renal SGLT2 inhibition describe other drug classes."
+  },
+  "noninsulin-diabetes-09-application": {
+    "question": "An adult with type 2 diabetes has completed four weeks of Ozempic injection 0.25 mg weekly and is tolerating it. What is its next labeled dose?",
+    "choices": [
+      "0.5 mg subcutaneously once weekly.",
+      "1 mg subcutaneously once weekly, skipping the 0.5 mg stage.",
+      "2 mg subcutaneously once weekly, because the maximum is the starting maintenance dose.",
+      "4 mg orally each day as a milligram-equivalent replacement for the injection."
+    ],
+    "rationale": "Ozempic injection progresses from 0.25 mg weekly for four weeks to 0.5 mg weekly. The 1 mg and 2 mg stages require their preceding doses and minimum intervals; oral Ozempic 4 mg is a different formulation, not a milligram-equivalent replacement."
+  },
+  "noninsulin-diabetes-09-safety": {
+    "question": "A 12-year-old taking Mounjaro for type 2 diabetes is at 10 mg weekly. Additional glucose lowering is needed. Which plan respects its current pediatric label?",
+    "choices": [
+      "Keep within the 10 mg weekly pediatric maximum and reassess other treatment options.",
+      "Increase to 12.5 mg weekly because the adult schedule applies at every age.",
+      "Increase to 15 mg weekly because it is the pediatric maximum.",
+      "Give 10 mg twice each week to avoid changing the labeled single-dose strength."
+    ],
+    "rationale": "The current pediatric Mounjaro maximum is 10 mg once weekly; 15 mg is the adult maximum. Neither 12.5 mg in a child nor doubling weekly frequency follows the pediatric schedule, so reassess another strategy rather than exceeding that limit."
+  },
+  "noninsulin-diabetes-09-case": {
+    "question": "An adult using Mounjaro has persistent vomiting and cannot maintain fluid intake before a planned dose increase. What is the priority?",
+    "choices": [
+      "Obtain clinical assessment of hydration, kidney function and serious GI causes before further escalation.",
+      "Increase immediately because persistent vomiting proves that the initiation dose is ineffective.",
+      "Escalate after one week because symptoms shorten the minimum titration interval.",
+      "Treat the symptoms with meal advice alone and increase regardless of dehydration."
+    ],
+    "rationale": "Persistent vomiting and inadequate fluid intake warrant clinical assessment, including dehydration, kidney injury and serious GI causes. They do not prove inadequate efficacy, shorten the minimum four-week dose interval or make meal advice alone sufficient for automatic escalation."
+  },
+  "noninsulin-diabetes-10-principle": {
+    "question": "Which history is a formal contraindication to Mounjaro under its thyroid C-cell tumor warning?",
+    "choices": [
+      "A personal or family history of medullary thyroid carcinoma or MEN2.",
+      "Any treated hypothyroidism regardless of cause.",
+      "Any benign thyroid nodule regardless of evaluation.",
+      "A normal thyroid test result that eliminates the need to ask about MTC history."
+    ],
+    "rationale": "The formal thyroid contraindication is personal or family MTC or MEN2. Treated hypothyroidism and every benign nodule are not equivalent blanket contraindications; a normal thyroid function result does not erase a relevant cancer or MEN2 history."
+  },
+  "noninsulin-diabetes-10-application": {
+    "question": "An adult using Mounjaro relies on an oral hormonal contraceptive. Which advice follows the cited label?",
+    "choices": [
+      "Switch to a nonoral method or add a barrier method for four weeks after initiation and every dose escalation.",
+      "Take the pill one hour earlier without any additional precaution after initiation or escalation.",
+      "Add a barrier only for the first day after initiation and stop it before the first increase.",
+      "Use an additional method only after reaching 15 mg, regardless of earlier escalation."
+    ],
+    "rationale": "Mounjaro specifies a nonoral contraceptive or added barrier for four weeks after initiation and each dose increase. One-hour spacing, a one-day precaution or waiting for the adult maximum does not meet that instruction."
+  },
+  "noninsulin-diabetes-10-safety": {
+    "question": "An adult using semaglutide develops severe persistent abdominal pain radiating to the back with vomiting. What is the priority?",
+    "choices": [
+      "Stop the suspected medicine and promptly evaluate for pancreatitis and other serious causes.",
+      "Continue the medicine because all abdominal pain is expected during titration.",
+      "Double the next dose to overcome delayed gastric emptying.",
+      "Wait for a routine A1C before investigating the severe pain."
+    ],
+    "rationale": "Severe persistent pain radiating to the back, with or without vomiting, warrants pancreatitis assessment and stopping the suspected medicine. It should not be dismissed as expected nausea; dose escalation or waiting for A1C delays appropriate evaluation."
+  },
+  "noninsulin-diabetes-10-case": {
+    "question": "An adult with a prior medullary thyroid carcinoma asks to start tirzepatide for type 2 diabetes. Which response is appropriate?",
+    "choices": [
+      "Do not start Mounjaro because personal MTC history is a labeled contraindication; review alternatives.",
+      "Start at 2.5 mg because a low initiation dose removes the contraindication.",
+      "Start if the current thyroid function tests are normal.",
+      "Start and use routine ultrasound as a proven method to cancel the contraindication."
+    ],
+    "rationale": "Personal MTC history contraindicates Mounjaro. A low dose and normal thyroid function do not remove that restriction; routine thyroid ultrasound has uncertain screening value and is not a proven way to make contraindicated treatment appropriate."
+  },
+  "noninsulin-diabetes-11-principle": {
+    "question": "Which administration instruction is correct for Rybelsus?",
+    "choices": [
+      "Take one whole tablet on an empty stomach in the morning with at most four ounces of plain water, then wait at least 30 minutes.",
+      "Take it with breakfast and all other oral medicines to improve absorption.",
+      "Crush it into a full glass of juice to reproduce injection exposure.",
+      "Double the next morning’s dose after a missed tablet."
+    ],
+    "rationale": "Rybelsus requires a whole tablet on an empty stomach with at most four ounces of plain water and at least 30 minutes before food, beverages or other oral medicines. Breakfast coadministration, crushing with juice and doubling after a missed dose conflict with those instructions."
+  },
+  "noninsulin-diabetes-11-application": {
+    "question": "An adult who completed oral semaglutide initiation is switching from Rybelsus 7 mg daily to Ozempic tablets. Which labeled switch pair is correct?",
+    "choices": [
+      "Ozempic tablets 4 mg daily, starting the day after stopping Rybelsus.",
+      "Ozempic tablets 7 mg daily as a milligram-for-milligram substitution.",
+      "Ozempic injection 7 mg weekly because the same brand implies dose equivalence.",
+      "Ozempic tablets 1.5 mg and Rybelsus 7 mg together indefinitely."
+    ],
+    "rationale": "After initiation, the labeled switch pair is Rybelsus 7 mg with Ozempic tablets 4 mg, started the next day. The tablets are not milligram-for-milligram substitutes; 7 mg is not the labeled Ozempic tablet or injection dose, and the switch does not call for indefinite duplicate semaglutide."
+  },
+  "noninsulin-diabetes-11-safety": {
+    "question": "An adult with eGFR 38 mL/min/1.73 m² is considering Bydureon BCise. Which interpretation follows its renal-use label?",
+    "choices": [
+      "BCise is not recommended below eGFR 45; review a different appropriate option.",
+      "BCise has the same below-30 creatinine-clearance boundary as Byetta, so 38 always permits use.",
+      "No GLP-1 product has a renal-use restriction, so kidney function can be ignored.",
+      "Reduce BCise to 1 mg weekly because that is its labeled renal-adjusted dose."
+    ],
+    "rationale": "BCise is not recommended below eGFR 45. Byetta has a different creatinine-clearance boundary that cannot be transferred to BCise; renal restrictions are not absent class-wide, and 1 mg is not a labeled BCise renal-adjusted dose."
+  },
+  "noninsulin-diabetes-11-case": {
+    "question": "An adult misses a weekly Ozempic injection and remembers six days later. What is the product-specific instruction?",
+    "choices": [
+      "Skip the missed dose and resume the next dose on the regular scheduled day.",
+      "Give the missed dose now because every weekly GLP-1 product has a seven-day window.",
+      "Give two doses together on the next scheduled day.",
+      "Use the four-day Mounjaro rule to establish identical instructions for all products."
+    ],
+    "rationale": "Ozempic injection permits a missed dose within five days; after six days, skip and resume the regular schedule. There is no universal seven-day window or doubling instruction; Mounjaro has its own four-day window and does not establish class-wide equivalence."
+  }
+};
+for (const item of noninsulinDiabetesPharmacotherapyQuestionBank) {
+  if (verifiedGlp1Questions[item.id]) Object.assign(item, verifiedGlp1Questions[item.id]);
+}
