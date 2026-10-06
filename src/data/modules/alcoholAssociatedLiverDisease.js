@@ -484,3 +484,132 @@ for (const lesson of alcoholAssociatedLiverDiseaseModule.submodules) {
     Object.assign(lesson.check, verifiedAldSteroidLesson.check);
   }
 }
+
+
+// Source-reconciled AUD medication selection, regimens and organ-function precautions.
+const verifiedAldAudLesson = {
+  "metadata": {
+    "summary": "Select AUD medication by liver status, kidney function, opioid exposure, cognition and the recovery plan; verify the exact product and follow-up.",
+    "concepts": [
+      "Abstinence and integrated care",
+      "Acamprosate renal dosing",
+      "Naltrexone and opioid exposure",
+      "Baclofen and CNS safety",
+      "Gabapentin and topiramate",
+      "Disulfiram in ALD"
+    ],
+    "application": "Verify liver compensation, renal function, opioid history and relevant safety risks before selecting a product, dose and follow-up plan.",
+    "keyPoints": [
+      "AUD medication complements behavioral and liver care.",
+      "Acamprosate is contraindicated at CrCl 30 mL/min or less.",
+      "Naltrexone requires opioid and pain-plan review.",
+      "Off-label options need neurologic and renal safeguards.",
+      "Avoid disulfiram throughout ALD."
+    ]
+  },
+  "bodies": [
+    {
+      "heading": "Treat AUD as part of liver care",
+      "body": "Sustained alcohol abstinence is a central goal in ALD. Combine medication with behavioral treatment, supportive follow-up and management of liver complications. First distinguish acute alcohol withdrawal from longer-term AUD treatment: a relapse-prevention prescription does not replace urgent withdrawal assessment. The 2024 ACG recommendations for baclofen, acamprosate, naltrexone, gabapentin and topiramate specify compensated ALD. Decompensated disease or acute AH needs individual specialist review rather than automatic extension of those recommendations. Acamprosate and naltrexone are FDA-approved for alcohol dependence; baclofen, gabapentin and topiramate use for AUD is off label."
+    },
+    {
+      "heading": "Use acamprosate for abstinence support",
+      "body": "Acamprosate is indicated to maintain abstinence in a patient who is already abstinent when treatment starts, after withdrawal has been managed. It is not a treatment for acute alcohol withdrawal and does not cause a disulfiram-like alcohol reaction. Its exact abstinence-support mechanism is not completely understood. It does not undergo hepatic metabolism and is eliminated through the kidneys, so a liver-focused review must still assess kidney function. Pair the prescription with psychosocial treatment and an adherence plan."
+    },
+    {
+      "heading": "Verify the acamprosate dose and renal boundary",
+      "body": "The usual adult oral dose is 666 mg, supplied as two 333 mg delayed-release tablets, three times daily. That is six tablets and 1,998 mg per day. With creatinine clearance above 30 through 50 mL/min, use the labeled reduced dose of 333 mg three times daily. At 30 mL/min or less, acamprosate is contraindicated, including the exact boundary of 30. The label describes moderate impairment as 30 to 50 while separately contraindicating 30 or less; give the contraindication priority. Confirm the actual clearance estimate and reassess changing kidney function rather than inferring suitability from normal liver tests."
+    },
+    {
+      "heading": "Follow acamprosate use over time",
+      "body": "Plan how three daily doses will fit the patient’s routine, assess tolerability and monitor depression or suicidal thinking. The label advises maintaining treatment if alcohol use recurs; recurrence should prompt renewed clinical and psychosocial assessment rather than automatic abandonment of recovery care. Ongoing renal decline can still change eligibility or dose. Neither absence of hepatic metabolism nor a prior response establishes that the same prescription remains appropriate indefinitely."
+    },
+    {
+      "heading": "Select naltrexone within the liver and recovery plan",
+      "body": "Naltrexone blocks opioid receptors and can support reduced alcohol consumption and relapse prevention. ACG allows consideration of oral or extended-release naltrexone in early ALD or compensated cirrhosis and advises avoiding it in decompensated cirrhosis or liver failure. Do not assume established safety for acute AH. Assess liver status, kidney function, concurrent medicines, mood, opioid exposure and foreseeable pain needs. The labels warn about hepatic injury and advise discontinuation with symptoms or signs of acute hepatitis. A compensated diagnosis permits consideration, not a guarantee of suitability."
+    },
+    {
+      "heading": "Verify opioid exposure before naltrexone",
+      "body": "Do not start naltrexone in a patient receiving opioid analgesics, currently dependent on opioids, or in acute opioid withdrawal. Review prescribed and nonprescribed opioids, including tramadol, buprenorphine and methadone. For someone previously dependent on short-acting opioids, the labels recommend an opioid-free interval of at least 7 to 10 days; vulnerability after buprenorphine or methadone may persist for as long as two weeks. A negative urine test or tolerated naloxone challenge does not fully exclude precipitated withdrawal. The prescriber must verify readiness and have an appropriate management plan; this precaution also applies when treating AUD."
+    },
+    {
+      "heading": "Distinguish oral and injectable naltrexone",
+      "body": "The oral label recommends 50 mg once daily for most patients treated for alcohol dependence. VIVITROL is a separate extended-release preparation: 380 mg by deep intramuscular gluteal injection every four weeks or once a month, prepared and administered by a healthcare provider. It must not be given intravenously or subcutaneously. For its alcohol indication, the patient should be able to abstain before initiation and should not be actively drinking at the first injection. Oral pretreatment is not required by that label. Reconcile product, eligibility, administration, access and follow-up rather than choosing solely for convenience."
+    },
+    {
+      "heading": "Plan pain care and naltrexone follow-up",
+      "body": "Explain opioid blockade before treatment and tell the patient to inform clinicians about naltrexone during urgent pain care. Use a coordinated pain plan; opioid analgesia, if required, needs appropriately trained staff and close monitoring. Do not try to overcome blockade with extra opioids. After opioid detoxification, reduced tolerance can increase overdose risk as blockade wanes, after a missed injection or after treatment stops. Discuss access to an opioid overdose reversal agent and emergency response as directed by the product label. Review mood and liver symptoms, and assess concerning VIVITROL injection-site reactions promptly."
+    },
+    {
+      "heading": "Use baclofen deliberately",
+      "body": "Baclofen is a GABA-B receptor agonist used off label for AUD; ACG recommends it as an option in compensated ALD and describes substantial ALD-specific experience. Its guideline regimen begins at 5 mg three times daily, with increases at three- to five-day intervals according to tolerance, up to 15 mg three times daily. This is a specialist-directed AUD approach, not an instruction to titrate every patient to the maximum. Review kidney function because baclofen is predominantly renally excreted and dose reduction may be needed. Assess sedation, balance, cognition and other CNS depressants before escalation."
+    },
+    {
+      "heading": "Recognize baclofen toxicity and discontinuation risks",
+      "body": "New somnolence, impaired balance or cognitive change during baclofen treatment requires reassessment of the medicine, kidney function, coexposures and the patient’s overall condition. Do not label every mental-status change as hepatic encephalopathy or treat favorable liver tests as proof of safety. Baclofen’s CNS effects can add to those of alcohol and other depressants. Except where serious adverse reactions require urgent action, discontinuation should be gradual under the prescriber’s plan: abrupt withdrawal can cause hallucinations or seizures. Explain this distinction when prescribing and at care transitions."
+    },
+    {
+      "heading": "Select gabapentin with renal and respiratory safeguards",
+      "body": "Gabapentin is an off-label AUD option suggested by ACG for selected patients with compensated ALD. Its usual labeled indications do not establish an AUD dose for every patient. Review renal function and choose the regimen deliberately; renal impairment requires adjustment. Monitor dizziness, somnolence, balance and mood. Coexposure to opioids or other CNS depressants, or underlying respiratory impairment, increases concern for respiratory depression. An AUD indication does not cancel this risk. Do not substitute different gabapentin preparations or stop ongoing therapy abruptly without reviewing the product and prescribing plan."
+    },
+    {
+      "heading": "Select topiramate with cognitive and metabolic safeguards",
+      "body": "Topiramate is another off-label option suggested for selected compensated ALD. Choose a gradual, patient-specific plan, accounting for kidney function and other indications; an epilepsy or migraine regimen is not automatically an AUD regimen. The label requires renal dose adjustment and warns about difficulty with concentration, memory or word finding. Check baseline and periodic serum bicarbonate because metabolic acidosis can occur, and reassess persistent abnormalities. Review mood, kidney-stone risk and new visual symptoms; acute eye pain or sudden reduced vision warrants urgent assessment. Topiramate should ordinarily be withdrawn gradually, with medically necessary rapid withdrawal monitored."
+    },
+    {
+      "heading": "Discuss topiramate reproductive risks",
+      "body": "Topiramate can cause fetal harm, including oral clefts and small-for-gestational-age birth. Before an elective off-label AUD plan, discuss pregnancy potential, pregnancy plans, risks and appropriate alternatives with the prescriber. Do not present it as risk-free because the liver disease is compensated or because it also treats migraine. A patient who becomes pregnant needs prompt clinical review, including the indication and ongoing regimen; avoid unsupervised changes, especially when another indication such as epilepsy is present."
+    },
+    {
+      "heading": "Avoid disulfiram throughout ALD",
+      "body": "Disulfiram blocks alcohol metabolism at the acetaldehyde stage and causes an aversive alcohol reaction. Its label also reports severe hepatic injury, including liver failure, in patients with or without previously abnormal liver tests. ACG advises against disulfiram along any spectrum of ALD. A normal transaminase result or compensated disease does not remove that recommendation, and monitoring does not turn it into a preferred ALD option. Review safer suitable AUD options and continue integrated recovery care. FDA approval for alcohol dependence does not mean that every approved drug is appropriate for a patient with liver disease."
+    }
+  ],
+  "check": {
+    "question": "A patient taking extended-release naltrexone needs emergency pain care and proposes using extra opioid doses to overcome the blockade. What is the best response?",
+    "choices": [
+      "Notify the treating team about naltrexone and obtain a coordinated, monitored pain plan; do not self-escalate opioids.",
+      "Increase the home opioid dose until pain stops without telling the team.",
+      "Assume the injection eliminates overdose risk as it wears off.",
+      "Cancel all pain care because regional and non-opioid options are unavailable."
+    ],
+    "rationale": "Naltrexone changes opioid response. The team should know the product and timing and coordinate analgesia, using appropriate expertise and monitoring if opioids are required. Attempts to overcome blockade can be fatal, and reduced opioid tolerance creates risk as blockade wanes. The label permits coordinated regional or non-opioid approaches; treatment does not mean abandoning pain care."
+  }
+};
+for (const lesson of alcoholAssociatedLiverDiseaseModule.submodules) {
+  if (lesson.slug === "aud-medications") {
+    Object.assign(lesson, verifiedAldAudLesson.metadata);
+    lesson.lesson = verifiedAldAudLesson.bodies;
+    Object.assign(lesson.check, verifiedAldAudLesson.check);
+  }
+}
+alcoholAssociatedLiverDiseaseModule.references[4] = {
+  "label": "Acamprosate calcium US prescribing information: abstinence support and renal dosing.",
+  "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=91769a96-3182-4e38-90c3-b22c1beae398"
+};
+alcoholAssociatedLiverDiseaseModule.references.push(...[
+  {
+    "label": "Oral naltrexone US prescribing information: opioid precautions and alcohol-dependence regimen.",
+    "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=69cb8573-08c1-4957-a768-6cd383f6a3f4"
+  },
+  {
+    "label": "VIVITROL US prescribing information: injection, readiness and opioid safety.",
+    "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=cd11c435-b0f0-4bb9-ae78-60f101f3703f"
+  },
+  {
+    "label": "Oral baclofen US prescribing information: renal, CNS and discontinuation precautions.",
+    "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1a9db542-d2b0-141a-e063-6394a90acc11"
+  },
+  {
+    "label": "Gabapentin tablet US prescribing information: renal adjustment and respiratory precautions.",
+    "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=25cf6c40-a239-4dd0-9cad-28da84d285db"
+  },
+  {
+    "label": "Topiramate US prescribing information: cognitive, metabolic and fetal precautions.",
+    "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2f5b1b0b-fd8a-4c4e-a85a-519ca841a0db"
+  },
+  {
+    "label": "Disulfiram US prescribing information: alcohol reaction and hepatic injury.",
+    "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=40f5497f-fe84-43b2-8ff4-32d59edf3917"
+  }
+]);

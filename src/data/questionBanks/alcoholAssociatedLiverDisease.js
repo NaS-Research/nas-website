@@ -534,3 +534,211 @@ const verifiedAldSteroidQuestions = {
 for (const item of alcoholAssociatedLiverDiseaseQuestionBank) {
   if (verifiedAldSteroidQuestions[item.id]) Object.assign(item, verifiedAldSteroidQuestions[item.id]);
 }
+
+
+// Distinct AUD medication cases retain stable IDs, keys and lesson anchors.
+const verifiedAldAudQuestions = {
+  "alcohol-associated-liver-disease-049": {
+    "question": "An abstinent adult with AUD has verified creatinine clearance of 36 mL/min and is otherwise suitable for acamprosate. Which labeled regimen fits this renal function?",
+    "choices": [
+      "333 mg orally three times daily.",
+      "666 mg orally three times daily without reduction.",
+      "333 mg orally once weekly.",
+      "The usual dose is doubled because clearance is reduced."
+    ],
+    "rationale": "The label reduces acamprosate to one 333 mg tablet three times daily for moderate renal impairment. A clearance of 36 is above the contraindicated boundary and within the reduced-dose range. Renal impairment does not justify the full usual dose, a weekly schedule or doubling."
+  },
+  "alcohol-associated-liver-disease-050": {
+    "question": "A proposed acamprosate order is for a patient whose verified creatinine clearance is exactly 30 mL/min. What is the correct boundary decision?",
+    "choices": [
+      "Do not use acamprosate: clearance of 30 mL/min or less is contraindicated.",
+      "Use 666 mg three times daily because 30 is above the contraindicated range.",
+      "Use the reduced dose because the contraindication applies only below 30.",
+      "Ignore the clearance because normal liver tests establish eligibility."
+    ],
+    "rationale": "The label’s contraindication includes the exact value 30 mL/min. Although its moderate-impairment wording also names 30 to 50, the explicit contraindication at 30 or less takes priority. Liver tests do not establish renal eligibility."
+  },
+  "alcohol-associated-liver-disease-051": {
+    "question": "An acamprosate prescription reads two 333 mg tablets orally three times daily. What are the total tablet count and drug amount per day?",
+    "choices": [
+      "Six tablets and 1,998 mg.",
+      "Three tablets and 999 mg.",
+      "Two tablets and 666 mg.",
+      "Six tablets and 666 mg."
+    ],
+    "rationale": "Each administration is two tablets, or 666 mg. Three administrations give six tablets and 666 × 3 = 1,998 mg per day. The other answers omit administrations or confuse the per-dose amount with the daily total."
+  },
+  "alcohol-associated-liver-disease-052": {
+    "question": "A patient develops acute alcohol-withdrawal symptoms. A colleague proposes acamprosate alone to control the withdrawal. What is the best correction?",
+    "choices": [
+      "Assess and treat withdrawal separately; acamprosate supports maintenance of abstinence after withdrawal has been managed.",
+      "Acamprosate reliably stops acute withdrawal seizures as its labeled purpose.",
+      "Double acamprosate until withdrawal resolves.",
+      "Delay withdrawal assessment until an abstinence medicine takes effect."
+    ],
+    "rationale": "The acamprosate label states that it does not eliminate or diminish alcohol-withdrawal symptoms. Its indicated role is maintenance of abstinence with psychosocial care. Acute symptoms require a separate assessment and appropriate treatment; dose escalation or delay is not a substitute."
+  },
+  "alcohol-associated-liver-disease-053": {
+    "question": "A patient receiving maintenance buprenorphine asks to start naltrexone for AUD today. Which response is best?",
+    "choices": [
+      "Do not start naltrexone during current opioid dependence; coordinate specialist review of the AUD and opioid-treatment plans.",
+      "Give naltrexone because an AUD indication makes buprenorphine irrelevant.",
+      "Administer the injection first and evaluate withdrawal later.",
+      "Stop buprenorphine without a transition plan and give naltrexone immediately."
+    ],
+    "rationale": "Naltrexone is contraindicated in current opioid dependence, including treatment with a partial agonist such as buprenorphine. It can precipitate severe withdrawal. The indication for AUD does not remove the interaction, and a transition needs clinical planning rather than abrupt unsupervised changes."
+  },
+  "alcohol-associated-liver-disease-054": {
+    "question": "An adult previously dependent on a short-acting opioid last used it four days ago. A negative urine screen is offered as proof that naltrexone can start. Which correction is best?",
+    "choices": [
+      "Four days is shorter than the recommended minimum 7 to 10 days, and a negative test alone does not establish readiness.",
+      "A negative urine screen guarantees that no precipitated withdrawal is possible.",
+      "The recommended minimum is only one day for every opioid.",
+      "The opioid-free precaution applies only when naltrexone treats opioid use disorder."
+    ],
+    "rationale": "The labels recommend at least 7 to 10 opioid-free days for prior short-acting opioid dependence and warn that no test completely establishes an adequate interval. Four days falls short. These precautions also apply to naltrexone prescribed for alcohol dependence."
+  },
+  "alcohol-associated-liver-disease-055": {
+    "question": "A patient with AUD has decompensated alcohol-associated cirrhosis. Which statement matches the 2024 ACG approach to naltrexone?",
+    "choices": [
+      "Avoid naltrexone in decompensated cirrhosis and obtain an individualized specialist AUD plan.",
+      "Extend the compensated-ALD recommendation automatically to decompensated disease.",
+      "Choose the injectable form because it removes all liver concerns.",
+      "Normal kidney function alone proves that naltrexone is appropriate."
+    ],
+    "rationale": "ACG describes consideration in early ALD or compensated cirrhosis and advises avoidance in decompensated cirrhosis or liver failure. Changing formulation does not erase liver assessment. Continue AUD care with a suitable individualized approach."
+  },
+  "alcohol-associated-liver-disease-056": {
+    "question": "An eligible adult is prescribed oral naltrexone for alcohol dependence. Which regimen is recommended for most patients in the oral label?",
+    "choices": [
+      "50 mg once daily.",
+      "50 mg once monthly by mouth.",
+      "380 mg orally every four weeks as the injectable equivalent.",
+      "50 mg every hour while drinking."
+    ],
+    "rationale": "The oral label recommends 50 mg once daily for most patients treated for alcohol dependence. The 380 mg monthly dose belongs to a separate extended-release injectable preparation. Product, route and frequency cannot be interchanged by assumption."
+  },
+  "alcohol-associated-liver-disease-057": {
+    "question": "A learner says baclofen is FDA-approved for AUD because ACG recommends it as an option in compensated ALD. What is the best correction?",
+    "choices": [
+      "Its use for AUD is off label; a guideline recommendation and regulatory indication are distinct.",
+      "Every guideline recommendation automatically creates an FDA indication.",
+      "Baclofen is only an aversive alcohol-reaction medicine.",
+      "Compensated ALD makes every baclofen dose risk-free."
+    ],
+    "rationale": "The book identifies baclofen among off-label options, and ACG recommends it as an option in compensated ALD. That does not change its regulatory AUD status or remove renal and CNS precautions."
+  },
+  "alcohol-associated-liver-disease-058": {
+    "question": "A patient taking baclofen for AUD develops marked somnolence while kidney function worsens. What is the best approach?",
+    "choices": [
+      "Promptly reassess the regimen, renal function and other causes or CNS depressants before further dosing decisions.",
+      "Escalate automatically because somnolence proves therapeutic benefit.",
+      "Ignore renal function because baclofen is used in liver disease.",
+      "Assume normal transaminases exclude medication toxicity."
+    ],
+    "rationale": "Baclofen is largely renally excreted and can cause CNS depression. Worsening renal function and somnolence warrant clinical reassessment, including other causes and coexposures. Neither an ALD indication nor liver tests establish neurologic safety."
+  },
+  "alcohol-associated-liver-disease-059": {
+    "question": "A stable patient without a serious adverse reaction wants to stop regular baclofen abruptly. Which counseling is best?",
+    "choices": [
+      "Arrange a prescriber-directed gradual discontinuation plan because abrupt withdrawal can cause hallucinations or seizures.",
+      "Abrupt discontinuation cannot cause symptoms because baclofen use for AUD is off label.",
+      "Double the final dose and then stop all doses without review.",
+      "Stop abruptly whenever the liver tests improve, regardless of treatment history."
+    ],
+    "rationale": "The oral baclofen label warns about hallucinations and seizures with abrupt withdrawal and advises slow reduction except where serious adverse reactions require another approach. The prescribing team should plan discontinuation; off-label use does not cancel the warning."
+  },
+  "alcohol-associated-liver-disease-060": {
+    "question": "Which description matches the baclofen AUD approach in the 2024 ACG text, subject to tolerance and specialist review?",
+    "choices": [
+      "Begin at 5 mg three times daily and consider gradual increases at three- to five-day intervals, up to 15 mg three times daily.",
+      "Begin every patient at 15 mg three times daily without a tolerance review.",
+      "Give the entire three-dose daily amount once monthly.",
+      "Escalate every few hours without considering kidney function."
+    ],
+    "rationale": "ACG describes 5 mg three times daily initially, with increases every three to five days based on tolerance, up to 15 mg three times daily. This is a described AUD approach, not a requirement to reach the maximum. Individual renal and CNS risks can alter the plan."
+  },
+  "alcohol-associated-liver-disease-061": {
+    "question": "A patient considered for gabapentin has ongoing opioid analgesic exposure and respiratory impairment. Which issue needs explicit assessment?",
+    "choices": [
+      "Risk of sedation and respiratory depression from the drug and coexposures.",
+      "Gabapentin prevents all opioid-related respiratory depression.",
+      "An off-label AUD indication removes CNS-depressant precautions.",
+      "Only the bilirubin result matters when combining these medicines."
+    ],
+    "rationale": "The gabapentin label warns of respiratory depression with CNS depressants, including opioids, and with respiratory impairment. Assess the combination and clinical state deliberately. Neither an AUD indication nor a liver test removes these risks."
+  },
+  "alcohol-associated-liver-disease-062": {
+    "question": "A proposed gabapentin AUD plan copies a normal-renal-function regimen into a patient with impaired kidney function. What is the best correction?",
+    "choices": [
+      "Review the product, renal function and regimen and adjust dosing deliberately rather than copying it unchanged.",
+      "Ignore renal function because gabapentin is being used for AUD.",
+      "Use any gabapentin preparation at an identical dose and schedule.",
+      "Increase exposure automatically as renal function declines."
+    ],
+    "rationale": "Gabapentin labeling requires renal dose adjustment. Its labeled regimens and formulations do not create one universal off-label AUD prescription. Verify the actual product and indication, and avoid automatic unchanged dosing or escalation during renal decline."
+  },
+  "alcohol-associated-liver-disease-063": {
+    "question": "A patient taking topiramate for AUD reports new difficulty concentrating and finding words. What is the best interpretation and response?",
+    "choices": [
+      "Topiramate can cause cognitive adverse effects; assess the regimen and other causes before further titration.",
+      "These symptoms prove that topiramate is improving cognition.",
+      "Compensated ALD excludes drug-related cognitive effects.",
+      "Increase the dose automatically to overcome the symptoms."
+    ],
+    "rationale": "Topiramate labeling includes concentration, memory and word-finding problems. New symptoms require reassessment of the dose, titration, coexposures and other causes. They are not proof of benefit, and compensated liver status does not exclude an adverse drug effect."
+  },
+  "alcohol-associated-liver-disease-064": {
+    "question": "A topiramate monitoring plan omits serum bicarbonate because there is no current acidosis symptom. Which correction is appropriate?",
+    "choices": [
+      "Obtain baseline and periodic bicarbonate as recommended, and reassess persistent metabolic acidosis.",
+      "Bicarbonate is irrelevant because topiramate cannot cause metabolic acidosis.",
+      "Measure bicarbonate only after permanent neurologic injury occurs.",
+      "A normal liver test guarantees normal bicarbonate throughout treatment."
+    ],
+    "rationale": "Topiramate can cause metabolic acidosis, and its label recommends baseline and periodic serum bicarbonate measurement. Persistent abnormalities require a prescribing review. Absence of symptoms or a normal liver test does not remove this monitoring need."
+  },
+  "alcohol-associated-liver-disease-065": {
+    "question": "An adult with compensated ALD and currently normal transaminases asks for disulfiram. Which recommendation fits ACG guidance?",
+    "choices": [
+      "Avoid disulfiram throughout ALD and select another suitable recovery plan.",
+      "Use disulfiram because normal transaminases remove its hepatic risk.",
+      "Use disulfiram only because liver disease is compensated.",
+      "Treat FDA approval for AUD as proof of suitability for every liver condition."
+    ],
+    "rationale": "ACG advises against disulfiram across the ALD spectrum. Its label reports severe hepatic injury with or without prior abnormal liver tests. Compensation, a normal test result and regulatory approval do not override the ALD-specific recommendation."
+  },
+  "alcohol-associated-liver-disease-066": {
+    "question": "An adult planning pregnancy is considering topiramate solely for off-label AUD treatment. Which discussion is required?",
+    "choices": [
+      "Review fetal risks, pregnancy plans and suitable alternatives with the prescriber before treatment selection.",
+      "Describe topiramate as free of fetal risk because the AUD use is off label.",
+      "Assume a migraine indication removes the need for pregnancy counseling.",
+      "Start treatment and defer reproductive-risk discussion until after delivery."
+    ],
+    "rationale": "Topiramate can cause fetal harm, including oral clefts and small-for-gestational-age birth. The label calls for benefit-risk consideration in people of childbearing potential, especially for conditions without permanent injury or death. The indication does not remove the need for an informed prescribing discussion."
+  },
+  "alcohol-associated-liver-disease-067": {
+    "question": "Which product-dose-route-frequency combination matches VIVITROL labeling for an eligible adult?",
+    "choices": [
+      "380 mg as a deep intramuscular gluteal injection every four weeks or once a month by a healthcare provider.",
+      "380 mg intravenously once a month.",
+      "380 mg subcutaneously once a month.",
+      "50 mg as a monthly gluteal injection copied from the oral dose."
+    ],
+    "rationale": "VIVITROL is the extended-release preparation, 380 mg by deep intramuscular gluteal injection every four weeks or monthly. Its label requires healthcare-provider preparation and administration and excludes IV or subcutaneous administration. Oral naltrexone dosing is not the injectable regimen."
+  },
+  "alcohol-associated-liver-disease-068": {
+    "question": "A patient is still actively drinking and plans a first VIVITROL injection today for alcohol dependence. Which statement matches its product label?",
+    "choices": [
+      "The patient should be able to abstain before initiation and should not be actively drinking at the first injection; reassess readiness and the treatment plan.",
+      "The first injection must be given during active drinking to meet the labeled indication.",
+      "Any daily oral-naltrexone rule can be copied without checking the injectable label.",
+      "The injection replaces psychosocial support and withdrawal assessment."
+    ],
+    "rationale": "For alcohol dependence, VIVITROL labeling requires the ability to abstain in the outpatient setting before initiation and no active drinking at initial administration. It is part of comprehensive care. Product-specific readiness and opioid precautions need review; the injection does not replace withdrawal or psychosocial care."
+  }
+};
+for (const item of alcoholAssociatedLiverDiseaseQuestionBank) {
+  if (verifiedAldAudQuestions[item.id]) Object.assign(item, verifiedAldAudQuestions[item.id]);
+}
