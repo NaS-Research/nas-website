@@ -1043,3 +1043,91 @@ const verifiedDpp4Questions = {
 for (const item of noninsulinDiabetesPharmacotherapyQuestionBank) {
   if (verifiedDpp4Questions[item.id]) Object.assign(item, verifiedDpp4Questions[item.id]);
 }
+
+
+// Focused secretagogue cases preserve existing IDs, keys, difficulty and anchors.
+const verifiedSecretagogueQuestions = {
+  "noninsulin-diabetes-14-principle": {
+    "question": "Which beta-cell action explains sulfonylurea-stimulated insulin release?",
+    "choices": [
+      "Binding sulfonylurea receptors and closing ATP-sensitive potassium channels.",
+      "Opening ATP-sensitive potassium channels to suppress beta-cell depolarization.",
+      "Blocking DPP-4 so that endogenous incretins are degraded more slowly.",
+      "Blocking renal SGLT2 to increase urinary glucose loss."
+    ],
+    "rationale": "Sulfonylureas bind beta-cell sulfonylurea receptors and close ATP-sensitive potassium channels, promoting insulin release. Opening those channels does not describe this action. Incretin preservation and renal SGLT2 blockade are different drug-class mechanisms."
+  },
+  "noninsulin-diabetes-14-application": {
+    "question": "A prescriber orders Glucotrol immediate-release 20 mg daily. Which administration review follows its label?",
+    "choices": [
+      "Review division before adequate meals because doses above 15 mg daily are generally divided.",
+      "Give all 20 mg before breakfast because 40 mg is the recommended single-dose ceiling.",
+      "Automatically change to Glucotrol XL 40 mg once daily using the IR daily ceiling.",
+      "Give all 20 mg at bedtime without food because the product is meal independent."
+    ],
+    "rationale": "For IR glipizide, 15 mg is the maximum recommended once-daily dose; higher daily doses are generally divided before meals with adequate calories. The 40 mg ceiling is total daily IR dosing. XL has a separate 20 mg daily ceiling, and fasting bedtime administration does not follow the IR instructions."
+  },
+  "noninsulin-diabetes-14-safety": {
+    "question": "A patient taking Glucotrol XL needs medicine through a feeding tube. Which response is best?",
+    "choices": [
+      "Review another suitable formulation or regimen because XL must be swallowed whole and not crushed.",
+      "Crush XL into the feeding solution because its outer shell alone controls delivery.",
+      "Divide XL into small pieces because the 20 mg ceiling guarantees controlled release.",
+      "Assume an empty shell in stool proves treatment failure and double the next dose."
+    ],
+    "rationale": "Glucotrol XL must not be crushed, divided, chewed or dissolved. Review an appropriate alternative rather than damage its release system for tube administration. The maximum dose does not make division safe, and an empty shell can normally pass after medicine release without proving failed absorption."
+  },
+  "noninsulin-diabetes-14-case": {
+    "question": "An older adult with CKD taking glyburide reports recurrent overnight lows despite an unchanged meal pattern. What is the best response?",
+    "choices": [
+      "Assess the episodes and reassess the regimen, including stopping or replacing glyburide when appropriate.",
+      "Keep glyburide unchanged and make extra nightly calories the sole ongoing solution.",
+      "Replace conventional glyburide milligram for milligram with micronized Glynase without retitration.",
+      "Increase glyburide because renal impairment prevents a prolonged glucose-lowering effect."
+    ],
+    "rationale": "Older age and kidney impairment increase concern for serious or prolonged sulfonylurea hypoglycemia; recurrent lows warrant assessment and regimen change. Rescue carbohydrate can treat an episode but is not the sole long-term answer. Glyburide formulations are not bioequivalent substitutes, and kidney impairment does not justify a higher dose."
+  },
+  "noninsulin-diabetes-15-principle": {
+    "question": "Which nateglinide administration plan follows its label for an adult near the glycemic goal at initiation?",
+    "choices": [
+      "60 mg three times daily, 1-30 minutes before meals, skipping a dose when its meal is skipped.",
+      "120 mg once daily at bedtime to cover all three meals.",
+      "60 mg three times daily regardless of fasting because glucose dependence removes all hypoglycemia risk.",
+      "120 mg after each meal and a double next dose when a meal is skipped."
+    ],
+    "rationale": "Nateglinide uses 60 mg three times daily when near the goal at initiation, with dosing 1-30 minutes before meals and omission when a meal is skipped. Its usual 120 mg dose is also meal linked, not a bedtime depot. Glucose-dependent release does not eliminate hypoglycemia or justify fasting or doubled doses."
+  },
+  "noninsulin-diabetes-15-application": {
+    "question": "An adult starting repaglinide has creatinine clearance 30 mL/min. Which renal instruction is correct?",
+    "choices": [
+      "Start at 0.5 mg before each meal and titrate carefully.",
+      "Use 4 mg before each meal as the renal starting dose because it is within the general dose range.",
+      "Apply nateglinide’s no-renal-adjustment instruction to repaglinide.",
+      "Assume the same regimen is established for hemodialysis because 30 mL/min is severe impairment."
+    ],
+    "rationale": "Repaglinide specifies a 0.5 mg premeal start at creatinine clearance 20-40 mL/min with careful titration. A general maintenance range does not override this start. Nateglinide has a different renal instruction, and repaglinide studies did not include creatinine clearance below 20 mL/min or hemodialysis."
+  },
+  "noninsulin-diabetes-15-safety": {
+    "question": "Clopidogrel and repaglinide cannot be avoided together after treatment review. Which plan follows the repaglinide label?",
+    "choices": [
+      "Initiate at 0.5 mg before meals, do not exceed 4 mg total daily and monitor glucose more closely.",
+      "Use 4 mg before each meal because the interaction ceiling is per meal.",
+      "Retain the usual 16 mg total daily ceiling and separate doses by two hours.",
+      "Use the cyclosporine limit of 6 mg daily as the clopidogrel limit."
+    ],
+    "rationale": "Avoid the combination when possible. If unavoidable, clopidogrel requires a 0.5 mg premeal start and a maximum total of 4 mg daily with increased monitoring. That is not a per-meal ceiling; dose spacing does not replace it. The 6 mg total daily limit is for cyclosporine, not clopidogrel."
+  },
+  "noninsulin-diabetes-15-case": {
+    "question": "Gemfibrozil is newly prescribed for an adult taking repaglinide. Which response is best?",
+    "choices": [
+      "Resolve the contraindicated combination with the prescriber before concurrent use.",
+      "Keep both and separate their doses by four hours.",
+      "Keep both and halve repaglinide without changing the contraindicated combination.",
+      "Keep both unchanged because a shorter glinide duration excludes serious hypoglycemia."
+    ],
+    "rationale": "Gemfibrozil greatly increases repaglinide exposure and concomitant use is contraindicated. Neither spacing, an empiric dose reduction nor the drug’s short action removes the contraindication. Review an alternative with the prescriber."
+  }
+};
+for (const item of noninsulinDiabetesPharmacotherapyQuestionBank) {
+  if (verifiedSecretagogueQuestions[item.id]) Object.assign(item, verifiedSecretagogueQuestions[item.id]);
+}

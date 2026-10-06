@@ -723,3 +723,130 @@ noninsulinDiabetesPharmacotherapyModule.references.push(...[
     "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a3768c7e-aa4c-44d3-bc53-43bb7346c0b0"
   }
 ]);
+
+
+// Whole secretagogue lesson reviewed against the book and exact product labels.
+Object.assign(noninsulinDiabetesPharmacotherapyModule.submodules.find(item => item.slug === "insulin-secretagogue-pharmacotherapy"), {
+  "slug": "insulin-secretagogue-pharmacotherapy",
+  "title": "Sulfonylureas and Meglitinides",
+  "visual": "noninsulin-secretagogues",
+  "summary": "Sulfonylureas and meglitinides stimulate insulin release from functioning beta cells. Formulation-specific dosing, meal timing, kidney and liver function, and interacting medicines determine their substantial hypoglycemia risk.",
+  "concepts": [
+    "Beta-cell potassium-channel closure and glucose dependence",
+    "Immediate-release versus extended-release glipizide",
+    "Conventional versus micronized glyburide",
+    "Meal-linked glinide dosing and product-specific interactions",
+    "Hypoglycemia prevention, rescue and regimen reassessment"
+  ],
+  "application": "Balance cost and glucose lowering against hypoglycemia, weight gain and meal reliability. Identify the exact product and formulation, reconcile kidney function and interactions, and reduce treatment burden when recurrent lows outweigh benefit.",
+  "lesson": [
+    {
+      "heading": "Stimulate functioning beta cells",
+      "body": "Sulfonylureas bind beta-cell sulfonylurea receptors and close ATP-sensitive potassium channels, stimulating insulin release. Meglitinides also act through beta-cell potassium channels and require functioning beta cells. The repaglinide and nateglinide labels describe their insulin release as glucose dependent and diminished at low glucose; do not describe every secretagogue as equally glucose independent. Both groups nevertheless cause hypoglycemia and weight gain. The book describes declining sulfonylurea effectiveness as beta-cell function falls and faster, shorter meal-linked action with glinides."
+    },
+    {
+      "heading": "Match the treatment purpose and expected response",
+      "body": "These medicines are adjuncts to diet and exercise for glucose control in adults with type 2 diabetes, not substitutes for insulin in type 1 diabetes or diabetic ketoacidosis. The book gives approximate A1C reductions of 1-2 percentage points with sulfonylureas and 0.5-1.5 with glinides; individual response varies. Lower-cost glucose lowering can be useful, but do not infer established cardiorenal outcome benefit from an A1C response. The book advises avoiding older first-generation sulfonylureas such as chlorpropamide, tolazamide and tolbutamide because of prolonged hypoglycemia, and identifies glyburide and glimepiride as unfavorable choices in older adults."
+    },
+    {
+      "heading": "Dose immediate-release glipizide before meals",
+      "body": "Glucotrol immediate-release generally starts at 5 mg about 30 minutes before breakfast; older patients or those with liver disease may start at 2.5 mg. Adjust in 2.5-5 mg increments with at least several days between changes, using glucose response. The maximum recommended once-daily dose is 15 mg. Higher daily doses are generally divided before meals with adequate calories; the maximum total is 40 mg per day. A 20 mg daily prescription therefore requires review of divided administration rather than treating 20 mg as a routine single morning dose. These instructions apply to immediate-release glipizide, not XL."
+    },
+    {
+      "heading": "Keep extended-release glipizide intact",
+      "body": "Glucotrol XL generally starts at 5 mg once daily with breakfast or the first main meal; start at 2.5 mg in patients at increased hypoglycemia risk, including older patients and those with hepatic insufficiency. Its maximum is 20 mg once daily. Swallow the tablet whole: do not divide, chew, crush or dissolve it, including for tube delivery. The empty shell may appear in stool after medicine release and does not by itself indicate failed absorption. Avoid XL in preexisting severe gastrointestinal narrowing. The label permits an IR-to-XL switch at the nearest equivalent total daily dose, but XL’s 20 mg ceiling still applies; the 40 mg IR ceiling is not an XL dose."
+    },
+    {
+      "heading": "Start glimepiride conservatively",
+      "body": "Glimepiride starts at 1 or 2 mg once daily with breakfast or the first main meal. Start at 1 mg in patients at increased hypoglycemia risk, including older adults and those with renal impairment. After reaching 2 mg daily, further increases are 1 or 2 mg no more often than every 1-2 weeks, with conservative titration in high-risk patients. The maximum is 8 mg once daily. Kidney impairment does not make usual initiation appropriate merely because a higher maintenance dose is available. A transition from a long-acting sulfonylurea can produce overlapping effects, so monitor for hypoglycemia."
+    },
+    {
+      "heading": "Distinguish the two glyburide formulations",
+      "body": "Conventional glyburide generally starts at 2.5-5 mg daily with breakfast or the first main meal; patients more sensitive to hypoglycemia may start at 1.25 mg. Its maximum is 20 mg per day. Micronized Glynase PresTab starts at 1.5-3 mg daily, or 0.75 mg in more sensitive patients, with a maximum of 12 mg per day. Conventional and micronized products are not bioequivalent substitutes: reassess and retitrate rather than exchange milligram for milligram. Renal or hepatic insufficiency increases the risk of serious, prolonged hypoglycemia; the book advises avoiding glyburide in older adults. The cited labels describe weak metabolite activity and no significant expected human hypoglycemic contribution, so do not present clinically important active metabolites as a settled explanation for that risk."
+    },
+    {
+      "heading": "Link repaglinide to actual meals",
+      "body": "Repaglinide starts at 0.5 mg before each meal when A1C is below 8%, or 1-2 mg when A1C is at least 8%, unless a renal or interaction restriction requires a lower start. The labeled range is 0.5-4 mg per meal, with a total maximum of 16 mg daily. Allow at least one week to assess each dose change. Take it within 30 minutes before meals; two, three or four daily doses follow the meal pattern. Skip the corresponding dose when a meal is skipped, and reduce dosing when hypoglycemia occurs. Do not add the omitted dose to dinner or take a fasting dose to preserve a fixed daily count. The book’s abbreviated 0.5-2 mg range is not the full labeled per-meal range."
+    },
+    {
+      "heading": "Use repaglinide renal and hepatic limits",
+      "body": "At creatinine clearance 20-40 mL/min, initiate repaglinide at 0.5 mg before each meal and titrate carefully. Initial adjustment is not required for the label’s mild-to-moderate range of 40-80 mL/min. Studies did not include creatinine clearance below 20 mL/min or renal failure requiring hemodialysis, so do not claim unrestricted dialysis use. These are creatinine-clearance criteria in mL/min, not an interchangeable eGFR table. Moderate-to-severe liver impairment can produce higher and more prolonged exposure; use caution and longer intervals between dose adjustments to assess the response."
+    },
+    {
+      "heading": "Give nateglinide before each meal",
+      "body": "Nateglinide is usually 120 mg three times daily before meals, or 60 mg three times daily when the patient is near the glycemic goal at initiation. Take it 1-30 minutes before meals and skip the dose if the meal is skipped. The cited label recommends no dosage adjustment for mild-to-severe renal impairment, but renal impairment can still increase hypoglycemia risk. Mild hepatic impairment requires no adjustment; moderate-to-severe hepatic impairment has not been studied and calls for caution. Do not transfer repaglinide’s renal starting dose or interaction ceilings to nateglinide."
+    },
+    {
+      "heading": "Apply the exact repaglinide interaction rule",
+      "body": "Gemfibrozil markedly increases repaglinide exposure, and the combination is contraindicated; separating administration or merely reducing the dose does not remove that prohibition. Avoid repaglinide with clopidogrel. If that combination cannot be avoided, the label specifies initiation at 0.5 mg before meals, a maximum total of 4 mg daily and increased glucose monitoring. With cyclosporine, the repaglinide maximum total is 6 mg daily with increased monitoring. Other CYP2C8 or CYP3A4 inhibitors and inducers may require dose review and closer monitoring. Distinguish per-meal doses from total daily ceilings."
+    },
+    {
+      "heading": "Check sulfonylurea interactions and warning symptoms",
+      "body": "CYP2C9 inhibition can increase sulfonylurea exposure: fluconazole may increase glimepiride concentrations, whereas rifampin may reduce them and worsen glucose control. Oral miconazole with sulfonylureas has been associated with severe hypoglycemia. Glucotrol XL, glimepiride and glyburide labels specify administration at least four hours before colesevelam to avoid reduced absorption. Alcohol can worsen hypoglycemia risk. Beta-blockers can blunt warning symptoms such as tremor or palpitations, particularly with nonselective agents; the book notes that sweating and hunger can remain. Absence of a racing pulse does not exclude a low glucose value."
+    },
+    {
+      "heading": "Respect product-specific contraindications and G6PD warnings",
+      "body": "Check the exact label and allergy history. Hypersensitivity to the prescribed drug or relevant ingredients is a contraindication. Glucotrol XL and the cited glimepiride label also list hypersensitivity to sulfonamide derivatives; the book’s discussion of unlikely cross-reactivity does not authorize bypassing those product contraindications. Sulfonylureas can cause hemolytic anemia in G6PD deficiency: the XL label says to avoid use, whereas the cited IR glipizide, glimepiride and glyburide labels advise caution and considering a non-sulfonylurea alternative. Glyburide with bosentan is contraindicated because of increased liver-enzyme risk. Suspected serious hypersensitivity requires stopping the suspected medicine and prompt clinical assessment."
+    },
+    {
+      "heading": "Prevent predictable hypoglycemia during disrupted intake",
+      "body": "Review meal timing, food access, alcohol, exercise, kidney and liver function, cognition, symptom awareness, driving and every accompanying glucose-lowering medicine. Glinides are explicitly meal linked: omit the dose when the meal is omitted. A longer-acting sulfonylurea can continue exerting an effect even after a later dose is withheld. Poor intake or interrupted feeding calls for prompt review of dosing and a clear individualized monitoring and restart plan; do not extrapolate one fixed hold interval to every product. Patients and caregivers need a practical recognition and rescue plan, and glucose monitoring becomes especially important when symptoms are blunted."
+    },
+    {
+      "heading": "Treat a low glucose value and anticipate recurrence",
+      "body": "For an alert person who can swallow safely, the book recommends 15-20 g of rapidly absorbed carbohydrate or glucose, followed by a glucose recheck after 15 minutes and repeat treatment if still low. Once glucose normalizes, a meal or snack helps prevent another episode; high-fat foods delay the initial response. Severe hypoglycemia with inability to swallow safely, unconsciousness, seizure or marked neurologic impairment requires emergency treatment with intravenous glucose or an appropriate glucagon product, not oral food or fluid. Secretagogue-related hypoglycemia can recur after apparent recovery, so continued observation and regimen review may be necessary. A brief improvement does not establish lasting resolution."
+    },
+    {
+      "heading": "Reassess benefit, combinations and recurrent lows",
+      "body": "Follow glucose trends, A1C, weight, kidney and liver changes, adverse effects and continued need. Adding more glucose-lowering treatment may require reducing or stopping the secretagogue. Recurrent overnight lows in an older adult taking glyburide call for treatment reassessment and often replacement, rather than routinely adding calories to preserve the same dose. Insulin combinations increase hypoglycemia risk; the book advises avoiding sulfonylurea-insulin and glinide-insulin combinations, but the labels do not make every such combination an identical formal contraindication. Repaglinide specifically is not indicated with NPH insulin because of serious cardiovascular adverse-event signals. Sulfonylurea cardiovascular-mortality label warnings originate from the UGDP tolbutamide study; do not portray its result as an identical trial finding for every modern member."
+    }
+  ],
+  "keyPoints": [
+    "Both groups can cause hypoglycemia and weight gain despite differences in duration and glucose dependence.",
+    "Glucotrol IR and XL have different timing and dose ceilings; swallow XL whole.",
+    "Conventional and micronized glyburide are not bioequivalent substitutes; retitrate when switching.",
+    "Skip a glinide dose when its meal is skipped; repaglinide with gemfibrozil is contraindicated."
+  ],
+  "check": {
+    "question": "An adult skips lunch while taking repaglinide before meals. Which plan best follows its administration instruction?",
+    "choices": [
+      "Skip the repaglinide dose corresponding to lunch.",
+      "Take the lunch dose without food because short action eliminates hypoglycemia risk.",
+      "Add the missed lunch dose to the usual dinner dose.",
+      "Take the lunch dose at bedtime without a meal to preserve three daily doses."
+    ],
+    "answer": 0,
+    "rationale": "Repaglinide is meal linked: skip its dose when the corresponding meal is skipped. Short action does not eliminate hypoglycemia. A skipped dose should not be added to another meal or taken at bedtime without food.",
+    "reviewHref": "#insulin-secretagogue-pharmacotherapy"
+  }
+});
+noninsulinDiabetesPharmacotherapyModule.references.push(...[
+  {
+    "label": "Pfizer Glucotrol immediate-release prescribing information (August 2023)",
+    "href": "https://labeling.pfizer.com/ShowLabeling.aspx?format=PDF&id=579"
+  },
+  {
+    "label": "Pfizer Glucotrol XL prescribing information (August 2023)",
+    "href": "https://labeling.pfizer.com/ShowLabeling.aspx?format=PDF&id=585"
+  },
+  {
+    "label": "DailyMed Teva conventional glyburide prescribing information",
+    "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=50d16f1d-c814-4411-8749-62561321ecce"
+  },
+  {
+    "label": "DailyMed Glynase PresTab prescribing information (August 2023)",
+    "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a7fce80a-2f13-43cc-8e1c-561f7d3ec3d5"
+  },
+  {
+    "label": "DailyMed Aurobindo glimepiride prescribing information (March 2026)",
+    "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=28eefc95-d92e-4555-b6c5-2933860b0610"
+  },
+  {
+    "label": "DailyMed Northstar/Macleods repaglinide prescribing information",
+    "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7f3118ce-fcbb-4f8b-b1ba-d8cd95e5b665"
+  },
+  {
+    "label": "DailyMed Rising/USV nateglinide prescribing information (December 2024)",
+    "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b41f4180-96a7-411d-b827-5021e534f556"
+  }
+]);

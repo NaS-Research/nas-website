@@ -54,7 +54,7 @@ const diagrams = {
     eyebrow: "Beta-cell secretion",
     title: "Rapid glucose lowering carries meal and hypoglycemia risk",
     columns: [
-      ["Close", "KATP channel", "Stimulate insulin secretion with less dependence on current glucose"],
+      ["Close", "KATP channel", "Stimulate beta-cell insulin release; both groups can cause hypoglycemia"],
       ["Time", "Meal exposure", "Match meglitinides to meals and distinguish longer sulfonylurea action"],
       ["Reduce", "Hypoglycemia burden", "Reassess dose with kidney decline, low intake, and stronger add-on therapy"],
     ],
@@ -113,8 +113,8 @@ export default function NoninsulinDiabetesPharmacotherapyVisual({ type }) {
           <div key={label}>
             <span>{String(index + 1).padStart(2, "0")}</span>
             <strong>{label}</strong>
-            <em style={(type === "noninsulin-selection" || type === "noninsulin-metformin" || type === "noninsulin-sglt2" || type === "noninsulin-glp1" || type === "noninsulin-dpp4") ? { fontSize: "14px", lineHeight: 1.55 } : undefined}>{mechanism}</em>
-            <p style={(type === "noninsulin-selection" || type === "noninsulin-metformin" || type === "noninsulin-sglt2" || type === "noninsulin-glp1" || type === "noninsulin-dpp4") ? { fontSize: "14px", lineHeight: 1.65 } : undefined}>{explanation}</p>
+            <em style={(type === "noninsulin-selection" || type === "noninsulin-metformin" || type === "noninsulin-sglt2" || type === "noninsulin-glp1" || type === "noninsulin-dpp4" || type === "noninsulin-secretagogues") ? { fontSize: "14px", lineHeight: 1.55 } : undefined}>{mechanism}</em>
+            <p style={(type === "noninsulin-selection" || type === "noninsulin-metformin" || type === "noninsulin-sglt2" || type === "noninsulin-glp1" || type === "noninsulin-dpp4" || type === "noninsulin-secretagogues") ? { fontSize: "14px", lineHeight: 1.65 } : undefined}>{explanation}</p>
           </div>
         ))}
       </div>
