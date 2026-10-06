@@ -70,8 +70,9 @@ const diagrams = {
   "baloxavir-target-dosing": {
     eyebrow: "Transcription target",
     title: "Stop viral cap snatching",
-    nodes: ["Marboxil prodrug", "Active baloxavir", "PA endonuclease", "Weight dose"],
-    notes: ["Oral delivery", "Hydrolysis", "Block transcription", "Single exposure"],
+    nodes: ["Oral prodrug", "Active baloxavir", "PA endonuclease", "Dose and product"],
+    notes: ["Hydrolysis", "Active metabolite", "Block transcription", "Age 5 and older"],
+    descriptions: ["Marboxil is part of the molecule.", "Use labeled prodrug milligrams.", "Interrupt the cap-snatching step.", "Check tablet, bottle or packet."],
   },
   "baloxavir-administration-safety": {
     eyebrow: "Exposure protection",
@@ -101,9 +102,9 @@ export default function InfluenzaAntiviralPharmacologyVisual({ type }) {
         {data.nodes.map((label, index) => (
           <div key={label}>
             <span>{String(index + 1).padStart(2, "0")}</span>
-            <strong style={(type === "influenza-antiviral-influenza-life-cycle-targets" || type === "influenza-antiviral-influenza-selection-timing" || type === "influenza-antiviral-oseltamivir-mechanism-pk" || type === "influenza-antiviral-oseltamivir-safety-populations" || type === "influenza-antiviral-zanamivir-pharmacology-safety" || type === "influenza-antiviral-peramivir-pharmacology-administration") ? { fontSize: "14px" } : undefined}>{label}</strong>
-            <em style={(type === "influenza-antiviral-oseltamivir-dosing-administration" || type === "influenza-antiviral-influenza-biology-triage" || type === "influenza-antiviral-influenza-life-cycle-targets" || type === "influenza-antiviral-influenza-selection-timing" || type === "influenza-antiviral-oseltamivir-mechanism-pk" || type === "influenza-antiviral-oseltamivir-safety-populations" || type === "influenza-antiviral-zanamivir-pharmacology-safety" || type === "influenza-antiviral-peramivir-pharmacology-administration") ? { fontSize: "14px" } : undefined}>{data.notes[index]}</em>
-            <p style={(type === "influenza-antiviral-oseltamivir-dosing-administration" || type === "influenza-antiviral-influenza-biology-triage" || type === "influenza-antiviral-influenza-life-cycle-targets" || type === "influenza-antiviral-influenza-selection-timing" || type === "influenza-antiviral-oseltamivir-mechanism-pk" || type === "influenza-antiviral-oseltamivir-safety-populations" || type === "influenza-antiviral-zanamivir-pharmacology-safety" || type === "influenza-antiviral-peramivir-pharmacology-administration") ? { fontSize: "14px" } : undefined}>{data.descriptions?.[index] ?? (index < data.nodes.length - 1 ? "Carry the verified input forward." : "Own the next clinical action.")}</p>
+            <strong style={(type === "influenza-antiviral-influenza-life-cycle-targets" || type === "influenza-antiviral-influenza-selection-timing" || type === "influenza-antiviral-oseltamivir-mechanism-pk" || type === "influenza-antiviral-oseltamivir-safety-populations" || type === "influenza-antiviral-zanamivir-pharmacology-safety" || type === "influenza-antiviral-peramivir-pharmacology-administration" || type === "influenza-antiviral-baloxavir-target-dosing") ? { fontSize: "14px" } : undefined}>{label}</strong>
+            <em style={(type === "influenza-antiviral-oseltamivir-dosing-administration" || type === "influenza-antiviral-influenza-biology-triage" || type === "influenza-antiviral-influenza-life-cycle-targets" || type === "influenza-antiviral-influenza-selection-timing" || type === "influenza-antiviral-oseltamivir-mechanism-pk" || type === "influenza-antiviral-oseltamivir-safety-populations" || type === "influenza-antiviral-zanamivir-pharmacology-safety" || type === "influenza-antiviral-peramivir-pharmacology-administration" || type === "influenza-antiviral-baloxavir-target-dosing") ? { fontSize: "14px" } : undefined}>{data.notes[index]}</em>
+            <p style={(type === "influenza-antiviral-oseltamivir-dosing-administration" || type === "influenza-antiviral-influenza-biology-triage" || type === "influenza-antiviral-influenza-life-cycle-targets" || type === "influenza-antiviral-influenza-selection-timing" || type === "influenza-antiviral-oseltamivir-mechanism-pk" || type === "influenza-antiviral-oseltamivir-safety-populations" || type === "influenza-antiviral-zanamivir-pharmacology-safety" || type === "influenza-antiviral-peramivir-pharmacology-administration" || type === "influenza-antiviral-baloxavir-target-dosing") ? { fontSize: "14px" } : undefined}>{data.descriptions?.[index] ?? (index < data.nodes.length - 1 ? "Carry the verified input forward." : "Own the next clinical action.")}</p>
           </div>
         ))}
       </div>

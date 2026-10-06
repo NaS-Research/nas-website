@@ -684,3 +684,76 @@ Object.assign(influenzaAntiviralPharmacologyModule.submodules.find((lesson) => l
     "reviewHref": "#peramivir-pharmacology-administration"
   }
 });
+
+
+// Complete baloxavir target and presentation-specific dosing reconciliation.
+Object.assign(influenzaAntiviralPharmacologyModule.submodules.find((lesson) => lesson.slug === "baloxavir-target-dosing"), {
+  "slug": "baloxavir-target-dosing",
+  "title": "Block Viral Transcription with Baloxavir",
+  "visual": "influenza-antiviral-baloxavir-target-dosing",
+  "summary": "Baloxavir marboxil is a carbonate-containing oral prodrug hydrolyzed to active baloxavir, which inhibits PA cap-dependent endonuclease. Match the eligible patient to the exact tablet, bottle or packet regimen.",
+  "concepts": [
+    "Prodrug activation",
+    "PA endonuclease",
+    "Age and timing",
+    "Product-specific dose",
+    "Resistance boundaries"
+  ],
+  "application": "Verify age, illness or exposure timing, exact weight and the supplied presentation before selecting a dose; distinguish bottle milligrams and milliliters from fixed-dose packets and assess the limits of the evidence.",
+  "lesson": [
+    {
+      "heading": "Activate the prodrug",
+      "body": "Baloxavir marboxil is a lipophilic oral prodrug containing a hydrolyzable carbonate group. Hydrolysis converts it to the active metabolite, baloxavir. Marboxil is part of the prodrug molecule, not a separate inactive excipient in the formulation. This prodrug architecture supports oral delivery of the active antiviral system. The labeled Xofluza dose is expressed in milligrams of baloxavir marboxil; use that product dose rather than inventing an active-baloxavir milligram conversion. Tablets, bottle suspension and packets deliver the same prodrug but have distinct labeled dose and preparation instructions."
+    },
+    {
+      "heading": "Interrupt transcription",
+      "body": "Influenza uses capped host RNA fragments as primers for viral messenger RNA transcription. In this cap-snatching process, the polymerase acidic protein, PA, supplies cap-dependent endonuclease activity. Active baloxavir inhibits that enzyme and interrupts viral RNA transcription. Neuraminidase inhibitors instead interfere with release of new viral particles; M2 blockers act at a different viral step. Baloxavir is not an antibiotic or a proven means of preventing secondary bacterial infection. Laboratory activity against influenza A and B does not establish identical clinical effectiveness for every strain or patient."
+    },
+    {
+      "heading": "Use the current age and timing limits",
+      "body": "Current labeling covers acute uncomplicated influenza in patients aged 5 years and older who are otherwise healthy or at high risk of influenza-related complications and have had symptoms for no more than 48 hours. Post-exposure prophylaxis is also labeled from age 5; give its single dose as soon as possible within 48 hours after contact with an individual who has influenza. The symptom-onset and exposure clocks answer different questions. Both indications use one weight-based dose, rather than borrowing an oseltamivir five-day treatment or daily prophylaxis schedule. The book\u2019s age-12 boundary is historical. Safety and effectiveness below age 5 have not been established, and the label identifies a higher incidence of treatment-emergent resistance in younger children. CDC does not routinely recommend baloxavir for hospitalized, complicated or progressive influenza. Evidence supporting later neuraminidase-inhibitor treatment in priority patients does not establish later baloxavir treatment in outpatients."
+    },
+    {
+      "heading": "Select the tablet weight band",
+      "body": "For an eligible patient weighing 20 kg to less than 80 kg, the tablet dose is 40 mg once. At 80 kg or more, it is 80 mg once. Exactly 20 kg enters the 40 mg band, and exactly 80 kg enters the 80 mg band. A 65 kg eligible patient receives 40 mg once. Current tablets are 40 mg and 80 mg; the book\u2019s older presentation listing must not be treated as the current product description. The tablet table does not provide a below-20 kg regimen. Confirm swallowing ability and the actual product instead of splitting a tablet to invent an unsupported pediatric dose."
+    },
+    {
+      "heading": "Calculate the bottle dose and volume",
+      "body": "Constituted bottle suspension contains 2 mg/mL, with 40 mg in a 20 mL bottle. For an eligible patient below 20 kg, its labeled dose is 2 mg/kg once. A 14 kg child\u2019s prescribed dose is 2 mg/kg \u00d7 14 kg = 28 mg; 28 mg \u00f7 2 mg/mL = 14 mL. This uses less than a full bottle. At 20 kg to less than 80 kg, the bottle dose is 40 mg or 20 mL. At 80 kg or more, it is 80 mg or 40 mL, requiring two constituted bottles. Measure the ordered volume with an oral syringe; more than one withdrawal may be needed depending on syringe capacity. Bottle count and withdrawal count are different checks. A correct milligram calculation is incomplete until concentration, milliliters and the available bottle quantity are verified."
+    },
+    {
+      "heading": "Distinguish packets from bottles",
+      "body": "Packets use fixed doses: 15 kg to less than 20 kg receives one 30 mg packet; 20 kg to less than 80 kg receives one 40 mg packet; 80 kg or more receives two 40 mg packets for 80 mg total. For a patient below 15 kg, the label recommends bottle suspension. In an eligible 16 kg patient, the bottle regimen calculates to 32 mg or 16 mL, while the packet regimen is a fixed 30 mg dose. These are distinct labeled presentation regimens, not a reason to substitute milliliters between them. Mix each packet with approximately 15 to 20 mL of drinking water and administer its entire mixture immediately. When two packets are prescribed, prepare and take each separately. This variable mixing-water volume does not create a standardized 2 mg/mL packet suspension; do not use the bottle formula to withdraw a fraction of a packet mixture."
+    },
+    {
+      "heading": "Verify preparation and actual supply",
+      "body": "The label\u2019s bottle preparation uses 20 mL of drinking or sterile water to produce 2 mg/mL suspension. Gently swirl; do not shake. Use the constituted bottle suspension within 10 hours and discard it after that interval. The ordered dose may be less than one bottle, one bottle or two bottles; do not interpret bottle preparation as an instruction to give every child the entire bottle. Packet mixtures are taken immediately, so the bottle\u2019s 10-hour interval is not a packet storage rule. A labeled presentation does not guarantee local supply. CDC\u2019s current clinician page states that baloxavir suspension is unavailable in the United States, while current labeling describes bottles and packets. Verify actual availability and the exact presentation before planning liquid delivery. The worked calculations explain labeled regimens and do not establish that a product is obtainable."
+    },
+    {
+      "heading": "Keep pharmacokinetic limits explicit",
+      "body": "The active metabolite is primarily metabolized by UGT1A3, with CYP3A4 contributing secondarily. The adult/adolescent pharmacokinetic table reports a mean apparent terminal half-life of 79.1 hours; this is a study estimate, not a promise of the same half-life or clinical response in every patient. Current labeling found no clinically significant pharmacokinetic differences with creatinine clearance of at least 50 mL/min or moderate hepatic impairment, Child-Pugh B. Effects of severe renal or hepatic impairment have not been evaluated. Preserve the book\u2019s caution about limited organ-impairment data: do not turn these findings into an all-severity no-adjustment rule or copy an oseltamivir or peramivir renal table onto baloxavir. Persistent symptoms do not, by themselves, establish a need to repeat the single dose."
+    },
+    {
+      "heading": "Interpret target resistance carefully",
+      "body": "PA substitutions, including I38T, can reduce susceptibility to baloxavir. The label\u2019s higher treatment-emergent resistance incidence in children below age 5 helps explain the age boundary; it does not mean every older patient is protected from resistance or every younger patient develops it. Because the target differs from neuraminidase and M2, cross-resistance with those classes is not expected, but target distinction alone does not prove that every clinical failure will respond to another drug. Consider current susceptibility information, the illness trajectory, delivery and interactions, as well as other causes of worsening illness. Reassess complications and clinical fit rather than automatically repeating baloxavir or escalating its dose. Use the separate clinical-selection and administration/safety lessons for the complete patient-specific comparison."
+    }
+  ],
+  "keyPoints": [
+    "Hydrolysis activates the marboxil prodrug; baloxavir inhibits PA endonuclease and viral transcription.",
+    "Current eligibility begins at age 5, with distinct symptom-onset and post-exposure timing checks.",
+    "Tablet, bottle and packet tables differ; a packet mixture is not the standardized 2 mg/mL bottle suspension.",
+    "Check dose, delivery and actual supply while keeping organ-impairment and resistance evidence qualified."
+  ],
+  "check": {
+    "question": "What current single baloxavir tablet dose applies to a 65 kg eligible patient?",
+    "choices": [
+      "40 mg",
+      "80 mg",
+      "20 mg",
+      "75 mg"
+    ],
+    "answer": 0,
+    "rationale": "An eligible 65 kg patient is in the 20-to-less-than-80 kg tablet band and receives 40 mg once. The 80 mg dose begins at 80 kg; 20 mg is not the current dose for this band, and 75 mg is not a labeled baloxavir tablet dose.",
+    "reviewHref": "#baloxavir-target-dosing"
+  }
+});

@@ -2147,3 +2147,262 @@ for (const [id, updates] of Object.entries({
 })) {
   Object.assign(influenzaAntiviralPharmacologyQuestionBank.find((question) => question.id === id), updates);
 }
+
+
+// Whole baloxavir dosing questions reviewed with stable IDs and keyed indices.
+for (const [id, updates] of Object.entries({
+  "influenza-antiviral-pharmacology-129": {
+    "id": "influenza-antiviral-pharmacology-129",
+    "lesson": "baloxavir-target-dosing",
+    "question": "Which statement correctly describes baloxavir marboxil activation?",
+    "choices": [
+      "Hydrolysis converts the carbonate-containing oral prodrug to active baloxavir",
+      "Marboxil is a separate excipient that remains outside the active drug molecule",
+      "The unchanged prodrug acts as an influenza antibiotic after renal excretion",
+      "Hydrolysis converts baloxavir into the neuraminidase inhibitor oseltamivir"
+    ],
+    "answer": 0,
+    "rationale": "The marboxil prodrug contains a hydrolyzable carbonate group and yields active baloxavir. Marboxil is not a separate excipient; the drug is not an antibiotic and does not become oseltamivir.",
+    "reviewHref": "#baloxavir-target-dosing"
+  },
+  "influenza-antiviral-pharmacology-130": {
+    "id": "influenza-antiviral-pharmacology-130",
+    "lesson": "baloxavir-target-dosing",
+    "question": "What dose expression should be used when dispensing labeled Xofluza?",
+    "choices": [
+      "The labeled baloxavir marboxil milligrams for the exact presentation",
+      "A newly calculated active-baloxavir equivalent substituted for the labeled milligrams",
+      "The milligrams of water added during constitution",
+      "A peramivir dose converted to oral milligrams because both treat influenza"
+    ],
+    "answer": 0,
+    "rationale": "Use the labeled prodrug dose and presentation table. No active-metabolite conversion is called for; added water is not the drug dose, and another antiviral\u2019s dose is not interchangeable.",
+    "reviewHref": "#baloxavir-target-dosing"
+  },
+  "influenza-antiviral-pharmacology-131": {
+    "id": "influenza-antiviral-pharmacology-131",
+    "lesson": "baloxavir-target-dosing",
+    "question": "Which timing statement correctly separates baloxavir treatment from post-exposure prophylaxis?",
+    "choices": [
+      "Treatment uses the symptom-onset clock; prophylaxis uses time since contact, with each labeled window no more than 48 hours",
+      "Both windows begin only when a prophylaxis recipient develops symptoms",
+      "Both windows begin at the date of the laboratory report regardless of onset or exposure",
+      "Evidence for later neuraminidase-inhibitor treatment proves baloxavir treatment at any outpatient onset interval"
+    ],
+    "answer": 0,
+    "rationale": "The label distinguishes symptoms within 48 hours for acute uncomplicated treatment from dosing within 48 hours of contact for prophylaxis. Symptoms are not required to start the exposure clock, and test-report date does not replace either clock. Later-treatment evidence for other drugs is not proof of later baloxavir efficacy.",
+    "reviewHref": "#baloxavir-target-dosing"
+  },
+  "influenza-antiviral-pharmacology-132": {
+    "id": "influenza-antiviral-pharmacology-132",
+    "lesson": "baloxavir-target-dosing",
+    "question": "What does current Xofluza labeling establish for children younger than 5 years?",
+    "choices": [
+      "Use is not indicated, with safety/effectiveness unestablished and increased treatment-emergent resistance incidence",
+      "Every weight-based bottle dose is indicated regardless of age",
+      "Every child younger than 5 develops resistance after one dose",
+      "The historical age-12 cutoff remains the current minimum age"
+    ],
+    "answer": 0,
+    "rationale": "Age and weight must both be checked. Below age 5, use is not indicated and safety/effectiveness are not established; increased resistance incidence is not certainty in every child. The current minimum is 5, rather than the book\u2019s older 12-year boundary.",
+    "reviewHref": "#baloxavir-target-dosing"
+  },
+  "influenza-antiviral-pharmacology-133": {
+    "id": "influenza-antiviral-pharmacology-133",
+    "lesson": "baloxavir-target-dosing",
+    "question": "Which viral target is inhibited by active baloxavir?",
+    "choices": [
+      "PA cap-dependent endonuclease within the influenza polymerase complex",
+      "Neuraminidase responsible for release of new influenza particles",
+      "The influenza A M2 ion channel",
+      "A bacterial cell-wall enzyme responsible for pneumonia"
+    ],
+    "answer": 0,
+    "rationale": "Baloxavir inhibits PA endonuclease. Neuraminidase and M2 belong to different antiviral mechanisms; bacterial cell-wall inhibition is not baloxavir\u2019s action.",
+    "reviewHref": "#baloxavir-target-dosing"
+  },
+  "influenza-antiviral-pharmacology-134": {
+    "id": "influenza-antiviral-pharmacology-134",
+    "lesson": "baloxavir-target-dosing",
+    "question": "Which process is directly interrupted by baloxavir endonuclease inhibition?",
+    "choices": [
+      "Cap snatching needed for viral messenger RNA transcription",
+      "Neuraminidase-mediated release of newly formed virions",
+      "Attachment of an antibiotic to a bacterial ribosome",
+      "Delivery of an influenza vaccine into muscle"
+    ],
+    "answer": 0,
+    "rationale": "PA cleavage supplies capped host RNA primers for viral transcription. Virion release is the neuraminidase step; bacterial ribosome inhibition and vaccine delivery are unrelated to this target.",
+    "reviewHref": "#baloxavir-target-dosing"
+  },
+  "influenza-antiviral-pharmacology-135": {
+    "id": "influenza-antiviral-pharmacology-135",
+    "lesson": "baloxavir-target-dosing",
+    "question": "A patient worsens after baloxavir. Which interpretation of resistance is appropriate?",
+    "choices": [
+      "PA changes can reduce susceptibility, but worsening also requires assessment of delivery, interactions and complications",
+      "Every deterioration proves an I38T substitution without testing or reassessment",
+      "A different target guarantees successful rescue by any other antiviral",
+      "A second identical dose is automatically required whenever symptoms persist"
+    ],
+    "answer": 0,
+    "rationale": "PA substitutions such as I38T can reduce susceptibility, but clinical deterioration alone does not prove a mutation. Target distinction does not guarantee another drug\u2019s success, and persistent symptoms are not an automatic redosing instruction.",
+    "reviewHref": "#baloxavir-target-dosing"
+  },
+  "influenza-antiviral-pharmacology-136": {
+    "id": "influenza-antiviral-pharmacology-136",
+    "lesson": "baloxavir-target-dosing",
+    "question": "Which statement accurately describes the baloxavir organ-function evidence?",
+    "choices": [
+      "No significant PK difference was found at creatinine clearance at least 50 mL/min or Child-Pugh B; severe renal/hepatic effects are unstudied",
+      "The label proves unchanged pharmacokinetics at every severity of renal and hepatic impairment",
+      "The peramivir renal-dose table is also the baloxavir table",
+      "A missing severe-impairment PK study establishes an absolute contraindication"
+    ],
+    "answer": 0,
+    "rationale": "The findings have defined renal and hepatic boundaries. They do not cover all severity levels, establish interchangeability with peramivir\u2019s table or convert a data gap into a labeled absolute contraindication.",
+    "reviewHref": "#baloxavir-target-dosing"
+  },
+  "influenza-antiviral-pharmacology-137": {
+    "id": "influenza-antiviral-pharmacology-137",
+    "lesson": "baloxavir-target-dosing",
+    "question": "An otherwise eligible 5-year-old weighs exactly 20 kg and can take a tablet. What current dose follows the tablet table?",
+    "choices": [
+      "40 mg once",
+      "20 mg once",
+      "80 mg once",
+      "No labeled dose because all patients younger than 12 are excluded"
+    ],
+    "answer": 0,
+    "rationale": "Exactly 20 kg enters the 20-to-less-than-80 kg band: 40 mg once. Neither 20 nor 80 mg matches that band; current age eligibility begins at 5, not 12.",
+    "reviewHref": "#baloxavir-target-dosing"
+  },
+  "influenza-antiviral-pharmacology-138": {
+    "id": "influenza-antiviral-pharmacology-138",
+    "lesson": "baloxavir-target-dosing",
+    "question": "An eligible tablet recipient weighs exactly 80 kg. What single dose follows the current table?",
+    "choices": [
+      "80 mg",
+      "40 mg",
+      "20 mg",
+      "75 mg"
+    ],
+    "answer": 0,
+    "rationale": "Exactly 80 kg belongs to the at-least-80 kg band and receives 80 mg. The 40 mg band stops below 80; 20 and 75 mg are not this labeled dose.",
+    "reviewHref": "#baloxavir-target-dosing"
+  },
+  "influenza-antiviral-pharmacology-139": {
+    "id": "influenza-antiviral-pharmacology-139",
+    "lesson": "baloxavir-target-dosing",
+    "question": "An otherwise eligible patient weighs 14 kg. Which presentation is recommended by the label?",
+    "choices": [
+      "Bottle suspension, because weight is below 15 kg",
+      "One 30 mg packet, because all weights below 20 kg share the packet band",
+      "A divided 40 mg tablet, because the tablet table covers every pediatric weight",
+      "One 80 mg tablet, because a single-dose drug has one universal dose"
+    ],
+    "answer": 0,
+    "rationale": "Below 15 kg, the label recommends bottle suspension. The 30 mg packet band begins at 15 kg; the tablet table begins at 20 kg. Single-dose frequency does not make dose or presentation universal.",
+    "reviewHref": "#baloxavir-target-dosing"
+  },
+  "influenza-antiviral-pharmacology-140": {
+    "id": "influenza-antiviral-pharmacology-140",
+    "lesson": "baloxavir-target-dosing",
+    "question": "An eligible 16 kg patient is prescribed the packet presentation. What is the labeled single dose?",
+    "choices": [
+      "One 30 mg packet",
+      "32 mg withdrawn as 16 mL from the packet mixture",
+      "One 40 mg packet",
+      "One 80 mg packet"
+    ],
+    "answer": 0,
+    "rationale": "The 15-to-less-than-20 kg packet band is a fixed 30 mg dose. The 32 mg/16 mL calculation belongs to 2 mg/mL bottle suspension, not a packet aliquot. The 40 mg packet is for the next band, and there is no labeled 80 mg packet.",
+    "reviewHref": "#baloxavir-target-dosing"
+  },
+  "influenza-antiviral-pharmacology-141": {
+    "id": "influenza-antiviral-pharmacology-141",
+    "lesson": "baloxavir-target-dosing",
+    "question": "An eligible patient weighing 80 kg is prescribed bottle suspension at 2 mg/mL. What quantity delivers the labeled dose?",
+    "choices": [
+      "40 mL, requiring two 20 mL bottles",
+      "20 mL, because every dose uses exactly one bottle",
+      "80 mL, because milligrams equal milliliters",
+      "8 mL, using the 10 mg/mL peramivir stock concentration"
+    ],
+    "answer": 0,
+    "rationale": "The dose is 80 mg: 80 \u00f7 2 = 40 mL, from two 20 mL bottles. One bottle supplies 40 mg; 80 mL supplies 160 mg. Peramivir\u2019s concentration cannot be substituted into a baloxavir calculation.",
+    "reviewHref": "#baloxavir-target-dosing"
+  },
+  "influenza-antiviral-pharmacology-142": {
+    "id": "influenza-antiviral-pharmacology-142",
+    "lesson": "baloxavir-target-dosing",
+    "question": "An eligible patient weighs exactly 20 kg and is prescribed bottle suspension. Which dose and volume follow the table?",
+    "choices": [
+      "40 mg as 20 mL once",
+      "20 mg as 10 mL once",
+      "80 mg as 40 mL once",
+      "40 mg as 40 mL once"
+    ],
+    "answer": 0,
+    "rationale": "Exactly 20 kg enters the 40 mg bottle band, giving 40 \u00f7 2 = 20 mL. 20 mg underdoses that band; 80 mg is for at least 80 kg. 40 mL of 2 mg/mL suspension is 80 mg, not 40 mg.",
+    "reviewHref": "#baloxavir-target-dosing"
+  },
+  "influenza-antiviral-pharmacology-143": {
+    "id": "influenza-antiviral-pharmacology-143",
+    "lesson": "baloxavir-target-dosing",
+    "question": "A plan requires baloxavir suspension. What should be concluded from the current label and CDC availability statement?",
+    "choices": [
+      "Verify actual supply and exact presentation; a labeled regimen does not prove the suspension is obtainable",
+      "The existence of a labeled bottle proves every U.S. pharmacy stocks it",
+      "The CDC availability statement erases every labeled liquid-dose calculation",
+      "Packets and bottles can be substituted using the same measured milliliters"
+    ],
+    "answer": 0,
+    "rationale": "Current labeling describes liquid regimens while CDC states suspension is unavailable in the United States. Verify supply and product. Neither universal stock nor invalidation of a labeled calculation follows; packet and bottle delivery rules differ.",
+    "reviewHref": "#baloxavir-target-dosing"
+  },
+  "influenza-antiviral-pharmacology-144": {
+    "id": "influenza-antiviral-pharmacology-144",
+    "lesson": "baloxavir-target-dosing",
+    "question": "An eligible 16 kg child is prescribed bottle suspension at 2 mg/kg. Its concentration is 2 mg/mL. What single volume is needed?",
+    "choices": [
+      "16 mL",
+      "15 mL",
+      "32 mL",
+      "8 mL"
+    ],
+    "answer": 0,
+    "rationale": "The bottle dose is 2 mg/kg \u00d7 16 kg = 32 mg, and 32 mg \u00f7 2 mg/mL = 16 mL. At this concentration, 15 mL is 30 mg, 32 mL is 64 mg and 8 mL is 16 mg. The separate 30 mg packet regimen for this weight band does not change a specifically prescribed bottle calculation.",
+    "reviewHref": "#baloxavir-target-dosing"
+  },
+  "influenza-antiviral-pharmacology-188": {
+    "id": "influenza-antiviral-pharmacology-188",
+    "lesson": "baloxavir-target-dosing",
+    "question": "A 14 kg child is prescribed baloxavir bottle suspension at 2 mg/kg. The concentration is 2 mg/mL. What volume is needed?",
+    "choices": [
+      "14 mL",
+      "28 mL",
+      "7 mL",
+      "2 mL"
+    ],
+    "answer": 0,
+    "rationale": "For the stated bottle prescription, 2 mg/kg \u00d7 14 kg = 28 mg; 28 mg \u00f7 2 mg/mL = 14 mL. At 2 mg/mL, 28 mL supplies 56 mg, 7 mL supplies 14 mg and 2 mL supplies 4 mg. This calculation assumes an appropriate prescription for an age-eligible child; weight alone does not establish eligibility. The measured 14 mL dose is less than a full bottle.",
+    "reviewHref": "#baloxavir-target-dosing"
+  },
+  "influenza-antiviral-pharmacology-189": {
+    "id": "influenza-antiviral-pharmacology-189",
+    "lesson": "baloxavir-target-dosing",
+    "question": "What is the current baloxavir dose for a 65 kg patient age 12?",
+    "choices": [
+      "40 mg once",
+      "80 mg once",
+      "20 mg once",
+      "75 mg twice daily"
+    ],
+    "answer": 0,
+    "rationale": "For an otherwise eligible 12-year-old weighing 65 kg, the current 20-to-less-than-80 kg tablet band is 40 mg once. The 80 mg dose begins at 80 kg, and 20 mg is not this band\u2019s dose. A 75 mg twice-daily schedule is not the single-dose baloxavir regimen.",
+    "reviewHref": "#baloxavir-target-dosing"
+  }
+})) {
+  Object.assign(influenzaAntiviralPharmacologyQuestionBank.find((question) => question.id === id), updates);
+}
