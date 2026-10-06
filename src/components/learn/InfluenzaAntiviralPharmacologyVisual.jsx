@@ -20,10 +20,11 @@ const diagrams = {
     notes: ["Consider mimics", "Priority treatment", "Setting and trajectory", "Urgent reassessment"],
   },
   "influenza-life-cycle-targets": {
-    eyebrow: "Viral life cycle",
-    title: "Interrupt release or transcription",
-    nodes: ["Host cap", "PA endonuclease", "Virion assembly", "Neuraminidase"],
-    notes: ["Capped RNA fragment", "Baloxavir target", "New progeny", "Oseltamivir class target"],
+    eyebrow: "Viral targets",
+    title: "Distinguish the target from the response",
+    nodes: ["Neuraminidase", "PA endonuclease", "M2 channel", "Clinical response"],
+    notes: ["Virion release", "Viral transcription", "Historical influenza A target", "Reassess before assigning resistance"],
+    descriptions: ["Oseltamivir, zanamivir and peramivir.", "Baloxavir inhibits cap snatching.", "Adamantanes are not recommended.", "Check exposure, host and complications."],
   },
   "influenza-selection-timing": {
     eyebrow: "Selection logic",
@@ -95,9 +96,9 @@ export default function InfluenzaAntiviralPharmacologyVisual({ type }) {
         {data.nodes.map((label, index) => (
           <div key={label}>
             <span>{String(index + 1).padStart(2, "0")}</span>
-            <strong>{label}</strong>
-            <em style={(type === "influenza-antiviral-oseltamivir-dosing-administration" || type === "influenza-antiviral-influenza-biology-triage") ? { fontSize: "14px" } : undefined}>{data.notes[index]}</em>
-            <p style={(type === "influenza-antiviral-oseltamivir-dosing-administration" || type === "influenza-antiviral-influenza-biology-triage") ? { fontSize: "14px" } : undefined}>{index < data.nodes.length - 1 ? "Carry the verified input forward." : "Own the next clinical action."}</p>
+            <strong style={type === "influenza-antiviral-influenza-life-cycle-targets" ? { fontSize: "14px" } : undefined}>{label}</strong>
+            <em style={(type === "influenza-antiviral-oseltamivir-dosing-administration" || type === "influenza-antiviral-influenza-biology-triage" || type === "influenza-antiviral-influenza-life-cycle-targets") ? { fontSize: "14px" } : undefined}>{data.notes[index]}</em>
+            <p style={(type === "influenza-antiviral-oseltamivir-dosing-administration" || type === "influenza-antiviral-influenza-biology-triage" || type === "influenza-antiviral-influenza-life-cycle-targets") ? { fontSize: "14px" } : undefined}>{data.descriptions?.[index] ?? (index < data.nodes.length - 1 ? "Carry the verified input forward." : "Own the next clinical action.")}</p>
           </div>
         ))}
       </div>

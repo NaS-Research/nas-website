@@ -270,3 +270,78 @@ influenzaAntiviralPharmacologyModule.references.push(...[
     "href": "https://www.idsociety.org/practice-guideline/influenza/"
   }
 ]);
+
+
+// Complete influenza life-cycle target reconciliation against authorized sources.
+Object.assign(influenzaAntiviralPharmacologyModule.submodules.find((lesson) => lesson.slug === "influenza-life-cycle-targets"), {
+  "slug": "influenza-life-cycle-targets",
+  "title": "Interrupt Viral Release or Transcription",
+  "visual": "influenza-antiviral-influenza-life-cycle-targets",
+  "summary": "Distinguish neuraminidase-mediated release, PA-dependent transcription and historical M2 inhibition; interpret susceptibility evidence without equating persistent illness with resistance.",
+  "concepts": [
+    "Neuraminidase and sialic acid",
+    "PA endonuclease and cap snatching",
+    "Historical M2 inhibition",
+    "Target-specific susceptibility",
+    "Clinical failure assessment"
+  ],
+  "application": "Identify the viral target and active drug, then assess the patient and actual drug exposure before attributing nonresponse to resistance.",
+  "lesson": [
+    {
+      "heading": "Block progeny release",
+      "body": "Oseltamivir carboxylate, zanamivir and peramivir inhibit influenza A and B neuraminidase. The book emphasizes inhibition of new viral-particle release. Neuraminidase cleaves terminal sialic acid; inhibiting that activity limits release and spread of progeny virions. Oseltamivir phosphate is the administered prodrug, while oseltamivir carboxylate is its active inhibitor. Distinguish this release mechanism from PA-dependent transcription and M2-mediated uncoating."
+    },
+    {
+      "heading": "Block cap snatching",
+      "body": "Baloxavir marboxil is hydrolyzed to active baloxavir, which inhibits the endonuclease activity of the influenza polymerase acidic (PA) protein. During cap snatching, host capped RNA is cleaved to provide primers for viral messenger RNA transcription. Inhibiting PA interrupts this transcription step rather than neuraminidase-mediated release. Both influenza A and B are susceptible targets, but the mechanism alone does not establish eligibility for every patient or care setting."
+    },
+    {
+      "heading": "Retire the adamantanes",
+      "body": "Amantadine and rimantadine inhibit the influenza A M2 proton channel, disrupting a process needed for viral uncoating. They are distinct from neuraminidase inhibitors and baloxavir. The book and current CDC guidance do not recommend adamantanes for seasonal influenza treatment or prophylaxis because of widespread resistance among circulating influenza A viruses. A historical influenza indication or an amantadine prescription for Parkinson disease does not establish current influenza protection."
+    },
+    {
+      "heading": "Place resistance in context",
+      "body": "Changes in neuraminidase can reduce susceptibility to neuraminidase inhibitors, while PA substitutions can reduce susceptibility to baloxavir. The effect depends on the virus, substitution and drug; do not assume every inhibitor of one target has identical susceptibility. Different targets do not guarantee that a virus cannot resist multiple drug classes. Label microbiology describes laboratory susceptibility, whose relationship to an individual clinical outcome may be uncertain; use current surveillance and appropriate testing rather than a universal cross-resistance rule."
+    },
+    {
+      "heading": "Reassess before assigning resistance",
+      "body": "Failure to improve or deterioration does not by itself prove resistant influenza. Reassess the diagnosis, illness trajectory, treatment timing, actual dose, adherence, absorption and delivery, host immune status and complications, including bacterial disease. CDC notes that deterioration during oseltamivir or peramivir treatment is often related to lung injury or other complications. Persistent replication in an immunocompromised host increases concern for resistance, but can also occur without resistance."
+    },
+    {
+      "heading": "Investigate selected resistance concerns",
+      "body": "IDSA supports considering neuraminidase-inhibitor resistance testing for laboratory-confirmed influenza during or immediately after prophylaxis, inadvertent subtherapeutic dosing, or persistent replication with ongoing illness in an immunocompromised or severely ill patient. Its examples of persistent replication use seven to ten days; that is not a reason to postpone urgent reassessment. Review current surveillance and seek appropriate infectious-disease or public-health expertise. Choose any alternative from susceptibility evidence and patient-specific route, safety and indication constraints."
+    }
+  ],
+  "keyPoints": [
+    "Neuraminidase inhibitors limit release and spread of progeny influenza virions.",
+    "Active baloxavir inhibits PA endonuclease required for viral transcription.",
+    "Adamantanes target M2 but are not recommended for seasonal influenza.",
+    "Persistent illness requires reassessment; resistance needs contextual evidence."
+  ],
+  "check": {
+    "question": "Which process is directly inhibited by baloxavir?",
+    "choices": [
+      "PA endonuclease activity required for cap snatching",
+      "Neuraminidase-mediated virion release",
+      "M2 ion conduction only",
+      "Bacterial cell-wall synthesis"
+    ],
+    "answer": 0,
+    "rationale": "Active baloxavir inhibits PA cap-dependent endonuclease and viral transcription. Neuraminidase-mediated release is the target of oseltamivir carboxylate, zanamivir and peramivir; M2 is the historical adamantane target. Influenza antiviral treatment does not inhibit bacterial cell-wall synthesis.",
+    "reviewHref": "#influenza-life-cycle-targets"
+  }
+});
+influenzaAntiviralPharmacologyModule.references.push(...[
+  {
+    "label": "Primary study: influenza cap-snatching endonuclease substrate specificity, 2021",
+    "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7897473/"
+  },
+  {
+    "label": "Primary study: amantadine and the influenza A M2 proton channel, 2007",
+    "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1914427/"
+  },
+  {
+    "label": "Primary study: influenza neuraminidase and progeny release, 2012",
+    "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3445474/"
+  }
+]);

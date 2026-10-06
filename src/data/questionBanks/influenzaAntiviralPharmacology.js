@@ -649,3 +649,248 @@ for (const [id, updates] of Object.entries({
 })) {
   Object.assign(influenzaAntiviralPharmacologyQuestionBank.find((question) => question.id === id), updates);
 }
+
+
+// Whole influenza life-cycle questions reviewed with stable IDs and keyed indices.
+for (const [id, updates] of Object.entries({
+  "influenza-antiviral-pharmacology-017": {
+    "id": "influenza-antiviral-pharmacology-017",
+    "lesson": "influenza-life-cycle-targets",
+    "question": "Which action of influenza neuraminidase supports spread of progeny virions?",
+    "choices": [
+      "Cleaving terminal sialic acid to facilitate release from infected cells",
+      "Cleaving capped host RNA to prime viral messenger RNA transcription",
+      "Conducting protons through the M2 channel during uncoating",
+      "Directly synthesizing the viral RNA genome"
+    ],
+    "answer": 0,
+    "rationale": "Neuraminidase cleaves terminal sialic acid and facilitates progeny release. Host cap cleavage is a PA endonuclease function, proton conductance is an M2 function, and RNA synthesis is a polymerase function.",
+    "reviewHref": "#influenza-life-cycle-targets"
+  },
+  "influenza-antiviral-pharmacology-018": {
+    "id": "influenza-antiviral-pharmacology-018",
+    "lesson": "influenza-life-cycle-targets",
+    "question": "Which set of drugs shares inhibition of influenza neuraminidase?",
+    "choices": [
+      "Oseltamivir carboxylate, zanamivir and peramivir",
+      "Baloxavir, amantadine and rimantadine",
+      "Oseltamivir carboxylate, baloxavir and amantadine",
+      "Zanamivir, baloxavir and rimantadine"
+    ],
+    "answer": 0,
+    "rationale": "The three named neuraminidase inhibitors share the release target. Baloxavir inhibits PA endonuclease; amantadine and rimantadine target M2, so each other set mixes different mechanisms.",
+    "reviewHref": "#influenza-life-cycle-targets"
+  },
+  "influenza-antiviral-pharmacology-019": {
+    "id": "influenza-antiviral-pharmacology-019",
+    "lesson": "influenza-life-cycle-targets",
+    "question": "Which description best distinguishes oseltamivir phosphate from its active inhibitor?",
+    "choices": [
+      "The administered prodrug is hydrolyzed to oseltamivir carboxylate, which inhibits neuraminidase",
+      "Oseltamivir carboxylate is converted into baloxavir before acting",
+      "Oseltamivir phosphate acts by directly blocking host cap binding",
+      "The active metabolite is an M2 proton-channel inhibitor"
+    ],
+    "answer": 0,
+    "rationale": "Tamiflu labeling identifies ester hydrolysis to active oseltamivir carboxylate. It is a neuraminidase inhibitor, not baloxavir, a host cap-binding inhibitor or an M2 inhibitor.",
+    "reviewHref": "#influenza-life-cycle-targets"
+  },
+  "influenza-antiviral-pharmacology-020": {
+    "id": "influenza-antiviral-pharmacology-020",
+    "lesson": "influenza-life-cycle-targets",
+    "question": "Which proposed mechanism of neuraminidase inhibitors should be corrected?",
+    "choices": [
+      "Their principal effect is blocking M2 proton conductance during uncoating",
+      "They inhibit an influenza enzyme involved in progeny release",
+      "Oseltamivir carboxylate inhibits influenza neuraminidase",
+      "Zanamivir and peramivir share a neuraminidase target"
+    ],
+    "answer": 0,
+    "rationale": "M2 proton conductance is the historical adamantane target. The other statements correctly describe neuraminidase inhibition and the release mechanism.",
+    "reviewHref": "#influenza-life-cycle-targets"
+  },
+  "influenza-antiviral-pharmacology-021": {
+    "id": "influenza-antiviral-pharmacology-021",
+    "lesson": "influenza-life-cycle-targets",
+    "question": "What role does PA endonuclease have in influenza cap snatching?",
+    "choices": [
+      "Cleaving host capped RNA to produce primers for viral messenger RNA transcription",
+      "Removing sialic acid from the infected-cell surface to release progeny",
+      "Conducting protons into the virion during uncoating",
+      "Producing a permanent protective antibody response"
+    ],
+    "answer": 0,
+    "rationale": "PA supplies the endonuclease activity used to obtain capped RNA primers. Sialic-acid cleavage belongs to neuraminidase and proton conductance to M2; none of these enzyme functions generates permanent immunity.",
+    "reviewHref": "#influenza-life-cycle-targets"
+  },
+  "influenza-antiviral-pharmacology-022": {
+    "id": "influenza-antiviral-pharmacology-022",
+    "lesson": "influenza-life-cycle-targets",
+    "question": "Which pairing correctly identifies the active inhibitor produced from baloxavir marboxil?",
+    "choices": [
+      "Active baloxavir and PA endonuclease",
+      "Oseltamivir carboxylate and PA endonuclease",
+      "Active baloxavir and neuraminidase",
+      "Rimantadine and neuraminidase"
+    ],
+    "answer": 0,
+    "rationale": "Baloxavir marboxil is hydrolyzed to baloxavir, the PA endonuclease inhibitor. Oseltamivir carboxylate inhibits neuraminidase; rimantadine is a separate adamantane targeting M2.",
+    "reviewHref": "#influenza-life-cycle-targets"
+  },
+  "influenza-antiviral-pharmacology-023": {
+    "id": "influenza-antiviral-pharmacology-023",
+    "lesson": "influenza-life-cycle-targets",
+    "question": "How should the life-cycle position of baloxavir be interpreted?",
+    "choices": [
+      "It interrupts viral transcription, a different step from neuraminidase-mediated progeny release",
+      "It releases viral RNA by stimulating the M2 channel",
+      "It substitutes for neuraminidase by cleaving terminal sialic acid",
+      "It directly stops bacterial cell-wall synthesis"
+    ],
+    "answer": 0,
+    "rationale": "Baloxavir inhibits PA-dependent viral gene transcription. It does not stimulate M2, perform neuraminidase cleavage or treat bacterial pathogens through cell-wall inhibition.",
+    "reviewHref": "#influenza-life-cycle-targets"
+  },
+  "influenza-antiviral-pharmacology-024": {
+    "id": "influenza-antiviral-pharmacology-024",
+    "lesson": "influenza-life-cycle-targets",
+    "question": "Which classification of baloxavir should be corrected?",
+    "choices": [
+      "A neuraminidase inhibitor with the same direct target as zanamivir",
+      "A cap-dependent endonuclease inhibitor",
+      "An inhibitor of the influenza PA protein endonuclease",
+      "An antiviral whose active form interferes with viral transcription"
+    ],
+    "answer": 0,
+    "rationale": "Baloxavir targets PA endonuclease rather than neuraminidase. The other classifications describe its correct mechanism.",
+    "reviewHref": "#influenza-life-cycle-targets"
+  },
+  "influenza-antiviral-pharmacology-025": {
+    "id": "influenza-antiviral-pharmacology-025",
+    "lesson": "influenza-life-cycle-targets",
+    "question": "Which statement correctly identifies the historical adamantane target?",
+    "choices": [
+      "Amantadine and rimantadine inhibit the influenza A M2 proton channel",
+      "Amantadine and rimantadine inhibit influenza PA endonuclease",
+      "Amantadine is converted to oseltamivir carboxylate",
+      "Rimantadine cleaves terminal sialic acid to inhibit influenza"
+    ],
+    "answer": 0,
+    "rationale": "Adamantanes inhibit M2 proton conductance, a process involved in influenza A uncoating. PA and neuraminidase are different targets, and amantadine is not an oseltamivir prodrug.",
+    "reviewHref": "#influenza-life-cycle-targets"
+  },
+  "influenza-antiviral-pharmacology-026": {
+    "id": "influenza-antiviral-pharmacology-026",
+    "lesson": "influenza-life-cycle-targets",
+    "question": "Why should amantadine and rimantadine be excluded from routine seasonal influenza treatment and prophylaxis under current CDC guidance?",
+    "choices": [
+      "High resistance among circulating influenza A viruses makes them nonrecommended choices",
+      "They have become the preferred PA endonuclease inhibitors",
+      "They are preferred for influenza B because they lack M2 activity",
+      "They supply lifelong immunity after one treatment course"
+    ],
+    "answer": 0,
+    "rationale": "CDC does not recommend adamantanes because of resistance. Their historical mechanism is influenza A M2 inhibition, not PA inhibition or a preferred influenza B mechanism; treatment does not confer lifelong immunity.",
+    "reviewHref": "#influenza-life-cycle-targets"
+  },
+  "influenza-antiviral-pharmacology-027": {
+    "id": "influenza-antiviral-pharmacology-027",
+    "lesson": "influenza-life-cycle-targets",
+    "question": "A medication list includes amantadine for Parkinson disease. What should be concluded about seasonal influenza protection?",
+    "choices": [
+      "The prescription does not establish recommended influenza prophylaxis; assess exposure, illness and current guidance",
+      "The prescription guarantees protection against influenza A and B",
+      "The prescription removes the need to assess symptoms after exposure",
+      "The prescription proves the circulating virus is susceptible to adamantanes"
+    ],
+    "answer": 0,
+    "rationale": "The book distinguishes ongoing Parkinson use from the obsolete influenza role. A prescription cannot establish protection, rule out illness or demonstrate viral susceptibility.",
+    "reviewHref": "#influenza-life-cycle-targets"
+  },
+  "influenza-antiviral-pharmacology-028": {
+    "id": "influenza-antiviral-pharmacology-028",
+    "lesson": "influenza-life-cycle-targets",
+    "question": "Which use of an older influenza drug list is most likely to cause an error?",
+    "choices": [
+      "Choosing an adamantane for seasonal influenza because an old list gives it an influenza indication",
+      "Checking current CDC recommendations before selecting a drug",
+      "Distinguishing an M2 inhibitor from a neuraminidase inhibitor",
+      "Recognizing that amantadine has a separate Parkinson disease use"
+    ],
+    "answer": 0,
+    "rationale": "Historical indication does not overcome current resistance-based recommendations. Checking guidance, distinguishing targets and recognizing other indications are appropriate actions.",
+    "reviewHref": "#influenza-life-cycle-targets"
+  },
+  "influenza-antiviral-pharmacology-029": {
+    "id": "influenza-antiviral-pharmacology-029",
+    "lesson": "influenza-life-cycle-targets",
+    "question": "Which interpretation of an influenza resistance-associated substitution is defensible?",
+    "choices": [
+      "Interpret the specific viral protein, substitution, drug and susceptibility evidence together",
+      "Any PA substitution proves resistance to every neuraminidase inhibitor",
+      "Every neuraminidase substitution guarantees resistance to baloxavir",
+      "One drug-class resistance result proves resistance to all influenza antivirals"
+    ],
+    "answer": 0,
+    "rationale": "Susceptibility changes are target-, substitution- and drug-dependent. PA and neuraminidase results cannot be universally extended to the other target or every drug; a virus can also carry separate resistance changes.",
+    "reviewHref": "#influenza-life-cycle-targets"
+  },
+  "influenza-antiviral-pharmacology-030": {
+    "id": "influenza-antiviral-pharmacology-030",
+    "lesson": "influenza-life-cycle-targets",
+    "question": "A hospitalized patient deteriorates during oseltamivir treatment. What is the best next approach?",
+    "choices": [
+      "Reassess illness, drug exposure, host factors and complications while considering resistance when evidence supports it",
+      "Diagnose resistance from deterioration alone and omit investigation of complications",
+      "Assume an adequate prescription proves adequate absorption and delivery",
+      "Exclude bacterial disease because an influenza antiviral has been given"
+    ],
+    "answer": 0,
+    "rationale": "CDC and IDSA support broad reassessment. Deterioration alone does not establish resistance, the prescription does not prove actual exposure, and an antiviral does not exclude bacterial coinfection.",
+    "reviewHref": "#influenza-life-cycle-targets"
+  },
+  "influenza-antiviral-pharmacology-031": {
+    "id": "influenza-antiviral-pharmacology-031",
+    "lesson": "influenza-life-cycle-targets",
+    "question": "Which scenario supports consideration of neuraminidase-inhibitor resistance testing under IDSA guidance?",
+    "choices": [
+      "An immunocompromised patient remains ill with documented persistent influenza replication during treatment",
+      "A fully recovered patient has no evidence of ongoing influenza infection",
+      "A patient has a single uncomplicated symptom without evidence of persistent infection",
+      "A person has no influenza exposure, symptoms or positive test"
+    ],
+    "answer": 0,
+    "rationale": "Persistent replication with ongoing illness in an immunocompromised host is one IDSA testing context. The other scenarios do not establish a resistance-testing indication; urgent clinical reassessment should not wait for a fixed calendar.",
+    "reviewHref": "#influenza-life-cycle-targets"
+  },
+  "influenza-antiviral-pharmacology-032": {
+    "id": "influenza-antiviral-pharmacology-032",
+    "lesson": "influenza-life-cycle-targets",
+    "question": "Which inference about persistent influenza illness should be corrected?",
+    "choices": [
+      "Persistent symptoms prove resistance regardless of diagnosis, exposure or host factors",
+      "Persistent replication can occur in an immunocompromised patient without resistance",
+      "Drug delivery and absorption matter when interpreting nonresponse",
+      "Lung injury and bacterial complications can explain deterioration"
+    ],
+    "answer": 0,
+    "rationale": "Symptoms alone do not prove resistance. IDSA and CDC retain nonresistance explanations, including persistent replication in immunocompromised hosts, inadequate exposure and complications.",
+    "reviewHref": "#influenza-life-cycle-targets"
+  },
+  "influenza-antiviral-pharmacology-178": {
+    "id": "influenza-antiviral-pharmacology-178",
+    "lesson": "influenza-life-cycle-targets",
+    "question": "Which viral process is directly inhibited by baloxavir?",
+    "choices": [
+      "PA endonuclease activity required for cap snatching",
+      "Neuraminidase-mediated virion release",
+      "M2 proton conductance only",
+      "Host ribosomal translation"
+    ],
+    "answer": 0,
+    "rationale": "Baloxavir inhibits PA endonuclease required for cap snatching and viral transcription. Neuraminidase-mediated release is the target of oseltamivir carboxylate, zanamivir and peramivir; M2 proton conductance is the historical adamantane target. Baloxavir does not directly inhibit host ribosomal translation.",
+    "reviewHref": "#influenza-life-cycle-targets"
+  }
+})) {
+  Object.assign(influenzaAntiviralPharmacologyQuestionBank.find((question) => question.id === id), updates);
+}
