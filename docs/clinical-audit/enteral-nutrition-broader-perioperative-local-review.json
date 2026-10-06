@@ -1,0 +1,2807 @@
+{
+  "updated": "2026-10-06T19:37:14.469273+00:00",
+  "unit": "enteral-nutrition:broader-perioperative-local-anesthetics",
+  "status": "Two whole lessons clinically,structurally,runtime and visually verified; exact branch release pending. Parent/full goal remain open.",
+  "baseCommit": "1a06228166f6aa27701a2d4861ebcdf95495deca",
+  "coverage": {
+    "evidence": "enteral-nutrition-broader-perioperative-local-review.json",
+    "verifiedScope": "Two complete local-anesthetic lessons verified:17 bodies,2 checks/all8 choices,2 figures,12 whole bank questions/all48 choices and1 associated cumulative origin. Original ASRA image corrects inclusive epinephrine≤1mcg/kg and lipid continuation≥15min thresholds. Two previously uncommitted lidocaine/product-mixup cases incorporated after fresh source/choice review; original81 IDs/order/stems/choices/keys retained. Explicit existing five module cumulative origins prevent automatic reselection; all1180 cumulative IDs/order retained and other1179 objects unchanged. Thirty references retained,six primary references added. Perioperative parent remains reviewing:3/11 committed lessons now carry detailed whole-lesson evidence,19/83 questions covered across SUP/local units. Broader unique source-verified questions1276to1288. Whole-module count64/232 and chapter count6/82 unchanged; full goal remains open.",
+    "wholeLessonsVerifiedThisUnit": {
+      "perioperative-critical-care-pharmacology": [
+        "local-anesthetic-pharmacology",
+        "local-anesthetic-toxicity"
+      ]
+    },
+    "wholeBodiesVerifiedThisUnit": 17,
+    "originalCommittedBodiesRetainedAndExpanded": 11,
+    "previouslyUncommittedBodySectionsSourceVerified": 2,
+    "newOriginalBodySections": 4,
+    "wholeChecksVerifiedThisUnit": 2,
+    "wholeFiguresVerifiedThisUnit": 2,
+    "wholeLessonMetadataVerified": true,
+    "wholeQuestionsReviewedThisUnit": 12,
+    "all48ChoicesIndividuallyCompared": true,
+    "all8EmbeddedChoicesIndividuallyCompared": true,
+    "wholeBankQuestionIdsVerifiedThisUnit": [
+      "periop-local-additive",
+      "periop-local-hepatic",
+      "periop-local-route",
+      "periop-local-aspiration",
+      "periop-last-recognition",
+      "periop-last-bolus",
+      "periop-last-rate",
+      "periop-last-ceiling",
+      "periop-last-drugs",
+      "periop-last-observation",
+      "periop-lidocaine-combined-exposure",
+      "periop-epinephrine-product-mixup"
+    ],
+    "newUniqueBankIdsVerified": [
+      "periop-local-additive",
+      "periop-local-hepatic",
+      "periop-local-route",
+      "periop-local-aspiration",
+      "periop-last-recognition",
+      "periop-last-bolus",
+      "periop-last-rate",
+      "periop-last-ceiling",
+      "periop-last-drugs",
+      "periop-last-observation",
+      "periop-lidocaine-combined-exposure",
+      "periop-epinephrine-product-mixup"
+    ],
+    "newUniqueBankQuestionsVerified": 12,
+    "broaderFeedingBankVerifiedBefore": 1276,
+    "broaderFeedingBankVerifiedAfter": 1288,
+    "committedModuleBankBefore": 81,
+    "committedModuleBankAfter": 83,
+    "existing81IdsOrderStemsChoicesKeysPreserved": true,
+    "sourceVerifiedDraftQuestionsAddedToCommittedBank": 2,
+    "committedWholeLessonsWithDetailedEvidenceAfter": 3,
+    "committedWholeLessonTotal": 11,
+    "sourceVerifiedQuestionsAcrossSupAndLocalUnits": 19,
+    "remainingCommittedWholeQuestionsForCurrentReview": 64,
+    "associatedCumulativeItems": [
+      "cumulative-perioperative-critical-care-pharmacology-periop-local-hepatic"
+    ],
+    "moduleCumulativeOriginsExplicitlyRetained": [
+      "periop-pediatric-reversal-1",
+      "periop-nmb-exit-plan",
+      "periop-local-hepatic",
+      "periop-antifib-dilution",
+      "periop-pph-prophylaxis"
+    ],
+    "all1180CumulativeIdsAndOrderPreserved": true,
+    "other1179WholeCumulativeObjectsUnchanged": true,
+    "all30ReferencesRetained": true,
+    "newReferencesAdded": 6,
+    "sourceGlyphCorrections": {
+      "epinephrine": "≤1 microgram/kg",
+      "lipidContinuation": "≥15 minutes after stability"
+    },
+    "wholeParentModuleVerified": false,
+    "enteralParentVerified": false,
+    "wholeChaptersVerifiedThisUnit": false,
+    "committedWholeModulesVerifiedAfter": 64,
+    "committedWholeModulesTotal": 232,
+    "moduleCountPercent": 27.59,
+    "chaptersVerifiedAfter": 6,
+    "chapterTotal": 82,
+    "chapterCountPercent": 7.32,
+    "workingBoundary": "Two selected full lessons and12 anchored questions source-verified; remaining current96-question/12-lesson drafts remain unverified by this unit."
+  },
+  "sourcePolicy": {
+    "status": "approved by direct user message: I give approval",
+    "scope": "Official guidelines, FDA labels and primary academic clinical references where the book cannot verify retained content; includes pending calcium, dialysis, aluminum and mineral physiology scopes",
+    "primarySourceRemains": "Supplied cover-verified RxPrep2023 book",
+    "approvalContext": "Response to pending asynchronous request for this additional authoritative source policy",
+    "usedNewlyAuthorizedSourcesInThisUnit": true,
+    "latestEvidence": "enteral-nutrition-broader-perioperative-local-review.json"
+  },
+  "changes": {
+    "perioperative-critical-care-pharmacology": {
+      "lessons": {
+        "local-anesthetic-pharmacology": {
+          "slug": "local-anesthetic-pharmacology",
+          "title": "Map Local Anesthetic Effect and Disposition",
+          "visual": "periop-local-anesthetic",
+          "summary": "Local anesthetics suppress nerve conduction mainly through voltage-gated sodium-channel blockade. For commonly used injectable agents, ionization affects membrane access and channel binding. Tissue pH, lipid solubility, protein binding, perfusion, formulation and metabolism shape effect and systemic risk.",
+          "concepts": [
+            "Sodium channels",
+            "Ionization",
+            "Amides",
+            "Esters",
+            "Additive toxicity"
+          ],
+          "application": "Before administration, reconcile every local-anesthetic product, concentration, planned volume, route, epinephrine content, organ limitation, and rescue readiness.",
+          "lesson": [
+            {
+              "heading": "Connect pH to access and block",
+              "body": "The uncharged fraction crosses lipid membrane, while the protonated form binds within the sodium channel. Inflamed acidic tissue shifts drug toward ionization before membrane entry and can slow or weaken block. Use-dependent binding favors channels that open repeatedly, which explains selective suppression of rapidly firing fibers."
+            },
+            {
+              "heading": "Distinguish disposition families",
+              "body": "Lidocaine, bupivacaine and ropivacaine are amide agents whose clearance depends mainly on hepatic metabolism. Many ester agents undergo plasma cholinesterase hydrolysis; chloroprocaine produces a chlorinated aminobenzoic-acid metabolite. These family patterns do not mean that every agent has the same clearance or that an ester is automatically safe in liver disease: the enzyme is synthesized in the liver, and chloroprocaine labeling calls for caution in hepatic disease. Check the exact agent and the patient rather than using the suffix alone."
+            },
+            {
+              "heading": "Connect onset, potency and duration to the tissue",
+              "body": "The proportion of uncharged drug helps determine membrane entry and onset; acidic inflamed tissue can reduce effective access. Greater lipid solubility generally increases potency, while greater protein binding tends to prolong block. Tissue blood flow and the agent's vasoactivity also affect how rapidly drug leaves the injection site. Epinephrine can reduce local absorption and prolong effect, but its own cardiovascular effects and product-specific precautions must be assessed. None of these properties establishes a safe dose by itself."
+            },
+            {
+              "heading": "Match the formulation to the route",
+              "body": "Standard bupivacaine injection labeling contraindicates intravenous regional anesthesia (Bier block) and obstetrical paracervical block; cardiac arrest and death have occurred with Bier block. The 0.75% concentration is not recommended for obstetrical anesthesia. Avoid preservative-containing multidose vials for epidural or caudal anesthesia. The standard injection product reviewed here is not for intrathecal use; verify the exact formulation and its labeled route rather than substituting it for a spinal preparation."
+            },
+            {
+              "heading": "Adjust exposure and distrust a negative aspiration",
+              "body": "Consider lower doses and closer toxicity monitoring with moderate or severe hepatic impairment, particularly with repeated bupivacaine dosing. Reduced doses are also needed with impaired cardiovascular function. Aspirate and inject incrementally as appropriate, but a negative aspiration cannot exclude intravascular or intrathecal placement. Continue monitoring after each injection."
+            },
+            {
+              "heading": "Reconcile lidocaine across formulations",
+              "body": "The 4% topical-solution label requires counting lidocaine from every formulation used together. Topical exposure is not a separate allowance, and that solution must never be injected. Verify the exact products, timing, absorption site and protocol before combining routes; a total-milligram calculation alone does not establish safety or authorize concurrent IV and regional treatment."
+            },
+            {
+              "heading": "Distinguish epinephrine from the combination product",
+              "body": "Concentrated topical epinephrine 1 mg/mL has been mistaken for local anesthetic with dilute epinephrine, causing fatal injections. Verify the full drug name, concentration and route before preparation and again before administration. A lidocaine/epinephrine product containing epinephrine 0.01 mg/mL is not interchangeable with epinephrine 1 mg/mL."
+            },
+            {
+              "heading": "Treat all exposure as one toxicity budget",
+              "body": "Local-anesthetic systemic toxic effects are additive across products, including different agents and injection sites. Use the lowest effective dose with appropriate aspiration, fractional injection and continuous observation of consciousness, ventilation, rhythm and circulation. Oxygen, resuscitation equipment, skilled personnel and the LAST kit must be immediately available. Adding milligram amounts helps reconcile exposure but does not establish a universal safe combined dose or authorize a mixture; standard bupivacaine labeling does not recommend mixing or prior or intercurrent use of other local anesthetics because clinical data are insufficient."
+            },
+            {
+              "heading": "Keep liposomal bupivacaine product-specific",
+              "body": "EXPAREL is a liposomal suspension and cannot be substituted dose-for-dose for other bupivacaine products, even at the same stated strength. Do not admix it with lidocaine or other non-bupivacaine local anesthetics: direct contact can release unencapsulated bupivacaine rapidly. Its label permits administration after local lidocaine only after a delay of at least 20 minutes. When bupivacaine HCl is admixed or injected immediately beforehand, its milligram dose must not exceed one-half the EXPAREL dose. Follow the indication-specific regimen and the warning to avoid additional local anesthetics within 96 hours afterward; a planned immediate-release block in the labeled perioperative regimen is not permission for unrestricted subsequent dosing."
+            },
+            {
+              "heading": "Recognize a separate oxidant complication",
+              "body": "Local anesthetics, including benzocaine and lidocaine, can cause methemoglobinemia as well as sodium-channel toxicity. Cyanosis, dyspnea, fatigue or an oxygen-saturation discrepancy after exposure needs urgent assessment, even when the presentation does not follow the usual LAST pattern. Stop the implicated oxidizing medicine and arrange oxygen and definitive treatment through the clinical team. G6PD deficiency, cardiopulmonary disease, young infants and other oxidizing drugs can increase vulnerability; methylene-blue selection also requires assessment of G6PD status. Lipid rescue for severe LAST does not replace the methemoglobinemia treatment pathway."
+            }
+          ],
+          "keyPoints": [
+            "Neutral drug crosses membrane.",
+            "Charged drug binds the channel.",
+            "Clearance and route precautions depend on the exact agent and formulation.",
+            "Different local anesthetics still share additive systemic toxicity."
+          ],
+          "check": {
+            "question": "A procedure uses lidocaine infiltration plus a bupivacaine regional block. How should systemic exposure be considered?",
+            "choices": [
+              "As one additive local-anesthetic toxicity burden",
+              "As unrelated because the molecules differ",
+              "Only the bupivacaine dose matters",
+              "Only the lidocaine dose matters"
+            ],
+            "answer": 0,
+            "rationale": "Systemic toxic effects of lidocaine and bupivacaine are additive, so both exposures belong in the assessment. Different molecules do not create independent toxicity allowances. Counting only bupivacaine misses lidocaine exposure; counting only lidocaine misses bupivacaine. Review the actual products, doses, routes, timing and patient factors, and do not treat dose arithmetic as authorization to combine them.",
+            "reviewHref": "#local-anesthetic-pharmacology"
+          }
+        },
+        "local-anesthetic-toxicity": {
+          "slug": "local-anesthetic-toxicity",
+          "title": "Treat Local Anesthetic Systemic Toxicity as a Distinct Arrest Pathway",
+          "visual": "periop-last",
+          "summary": "LAST can begin with perioral symptoms, tinnitus, altered speech, agitation, or seizure, but severe cardiovascular toxicity can appear abruptly. The rescue sequence differs from standard ACLS because several familiar resuscitation drugs can worsen local-anesthetic cardiotoxicity.",
+          "concepts": [
+            "Recognition",
+            "Airway",
+            "Lipid emulsion",
+            "Modified ACLS",
+            "Observation"
+          ],
+          "application": "Place the ASRA checklist and a complete LAST kit wherever potentially toxic doses are used, then rehearse roles before the emergency occurs.",
+          "lesson": [
+            {
+              "heading": "Stop exposure and stabilize physiology",
+              "body": "Stop injection, call for help, secure oxygenation and ventilation, and prevent acidosis, hypoxemia, and hypercapnia that can intensify toxicity. Prefer a benzodiazepine for seizure when available. Do not wait for a complete textbook progression before activating the rescue pathway."
+            },
+            {
+              "heading": "Give 20 percent lipid emulsion early",
+              "body": "For patients under 70 kg, the ASRA checklist uses an approximately 1.5 mL/kg bolus over 2 to 3 minutes followed by about 0.25 mL/kg/min. For patients over 70 kg, it provides approximately 100 mL over 2 to 3 minutes followed by about 250 mL over 15 to 20 minutes. Persistent instability calls for a repeat bolus and doubled infusion while respecting the checklist maximum of 12 mL/kg. These are ASRA checklist regimens rather than a proven optimal dose for every patient; use the current rescue protocol with continuous reassessment."
+            },
+            {
+              "heading": "Keep the bolus, rate and total separate",
+              "body": "For a 60-kg patient, 1.5 mL/kg gives a 90-mL bolus. The initial 0.25 mL/kg/min infusion is 15 mL/min, or 900 mL/hour. The 12 mL/kg cumulative ceiling is 720 mL, counting boluses and infusion together; it is not an initial bolus. Reassess circulation continuously and obtain expert support for persistent instability."
+            },
+            {
+              "heading": "Modify the resuscitation medicines",
+              "body": "When epinephrine is needed, ASRA prefers smaller doses and specifies an initial dose no greater than 1 microgram/kg. Avoid vasopressin, beta blockers, calcium-channel blockers and additional local anesthetics during LAST resuscitation. These instructions modify the medication pathway while airway support, circulation and indicated resuscitation continue. Obtain early expert and extracorporeal-support consultation for refractory cardiogenic shock."
+            },
+            {
+              "heading": "Keep propofol separate from rescue lipid",
+              "body": "Propofol is not a substitute for 20% lipid rescue: delivering the rescue lipid quantity through propofol would produce a dangerous anesthetic exposure. A benzodiazepine is preferred for LAST-associated seizure. If only propofol is available for seizure control, the ASRA checklist specifies low doses, such as 20 mg increments, with attention to its circulatory depressant effects. That limited seizure use is a different purpose from lipid rescue."
+            },
+            {
+              "heading": "Continue treatment and observation",
+              "body": "After hemodynamic stability, continue lipid for at least 15 minutes while respecting the cumulative maximum. The ASRA checklist specifies observation for 2 hours after seizure and 4 to 6 hours after cardiovascular instability; post-arrest monitoring is individualized. Recurrence or persistent abnormalities requires reassessment rather than automatic discharge when an interval ends."
+            },
+            {
+              "heading": "Escalate persistent conduction or circulatory toxicity",
+              "body": "The 2025 AHA guideline considers sodium bicarbonate reasonable for life-threatening wide-complex tachycardia caused by local-anesthetic toxicity. It also considers extracorporeal life support reasonable for refractory cardiogenic shock. These are indication-specific additions to airway, circulation and lipid rescue, supported largely by limited clinical reports and experimental evidence. Seek toxicology and resuscitation expertise rather than delaying initial support while arranging an advanced treatment."
+            }
+          ],
+          "keyPoints": [
+            "LAST can be neurologic, cardiovascular, or both.",
+            "Early airway control and lipid emulsion matter.",
+            "Use smaller epinephrine doses.",
+            "Avoid vasopressin, beta blockers, calcium-channel blockers, and more local anesthetic."
+          ],
+          "check": {
+            "question": "A 60 kg patient develops seizure and hypotension immediately after bupivacaine injection. Which lipid dose begins the ASRA pathway?",
+            "choices": [
+              "About 1.5 mL/kg of 20 percent lipid over 2 to 3 minutes",
+              "One 10 mL vial of 10 percent lipid",
+              "A 12 mL/kg bolus all at once",
+              "No lipid until one hour of standard ACLS"
+            ],
+            "answer": 0,
+            "rationale": "For this 60-kg patient, 1.5 mL/kg gives a 90-mL bolus of 20% lipid over about 2 to 3 minutes, followed by the infusion pathway. A 10-mL vial of 10% lipid is the wrong concentration and quantity. The 12 mL/kg figure is a cumulative maximum across boluses and infusion, not a single bolus. Waiting an hour delays early rescue; LAST resuscitation uses the checklist modifications alongside immediate airway and circulatory support.",
+            "reviewHref": "#local-anesthetic-toxicity"
+          }
+        }
+      },
+      "questions": {
+        "periop-local-additive": {
+          "id": "periop-local-additive",
+          "question": "A team plans lidocaine infiltration and a bupivacaine block in the same patient. Which safety assumption is correct?",
+          "choices": [
+            "Each drug has a completely independent toxicity allowance",
+            "Different injection sites prevent systemic toxicity",
+            "Their systemic toxic effects are additive",
+            "Only the more concentrated product matters"
+          ],
+          "answer": 2,
+          "rationale": "Both drugs contribute additive systemic toxic effects. Different agents do not have independent toxicity allowances, and different injection sites do not prevent systemic absorption. Concentration alone does not identify which product matters: dose, route, timing, absorption and patient factors all contribute. Reconcile the entire exposure and exact products before administration.",
+          "reviewHref": "#local-anesthetic-pharmacology",
+          "difficulty": "clinical"
+        },
+        "periop-local-hepatic": {
+          "id": "periop-local-hepatic",
+          "question": "A patient with severe hepatic impairment needs repeated bupivacaine injections. What adjustment deserves consideration?",
+          "choices": [
+            "Lower exposure with intensified systemic-toxicity monitoring",
+            "A larger dose because metabolism is hepatic",
+            "No reassessment because injection is local",
+            "Switch to an unmonitored continuous infusion"
+          ],
+          "answer": 0,
+          "rationale": "Severe hepatic impairment can reduce bupivacaine metabolism, particularly during repeated dosing, so consider lower exposure and intensified systemic-toxicity monitoring. Increasing the dose can worsen accumulation. Local injection does not prevent systemic absorption or remove the need for reassessment. An unmonitored infusion continues exposure without the required safety surveillance.",
+          "reviewHref": "#local-anesthetic-pharmacology",
+          "difficulty": "clinical"
+        },
+        "periop-local-route": {
+          "id": "periop-local-route",
+          "question": "Which proposed use of standard bupivacaine injection conflicts with a labeled contraindication?",
+          "choices": [
+            "An appropriately selected peripheral nerve block",
+            "A labeled local infiltration technique",
+            "A properly selected epidural formulation",
+            "Intravenous regional anesthesia using a Bier block"
+          ],
+          "answer": 3,
+          "rationale": "Standard bupivacaine injection is contraindicated for intravenous regional anesthesia using a Bier block because cardiac arrest and death have occurred. Appropriately selected peripheral nerve block and local infiltration are labeled uses. Epidural use requires the correct concentration and preservative-free formulation. These appropriately qualified alternatives do not share the Bier-block contraindication; exact-product labeling still governs each technique.",
+          "reviewHref": "#local-anesthetic-pharmacology",
+          "difficulty": "clinical"
+        },
+        "periop-local-aspiration": {
+          "id": "periop-local-aspiration",
+          "question": "No blood is aspirated before a regional injection. Which conclusion is justified?",
+          "choices": [
+            "Systemic toxicity is impossible",
+            "The result does not exclude intravascular injection; continue the safety precautions",
+            "Monitoring can stop immediately",
+            "The full planned dose can always be injected rapidly"
+          ],
+          "answer": 1,
+          "rationale": "A negative aspiration does not exclude intravascular placement or make systemic toxicity impossible. Continue incremental dosing, appropriate aspiration and clinical monitoring. Stopping monitoring loses the opportunity to detect toxicity. Rapidly injecting the full dose increases exposure without the recommended fractional precautions; the negative result does not justify that action.",
+          "reviewHref": "#local-anesthetic-pharmacology",
+          "difficulty": "clinical"
+        },
+        "periop-last-recognition": {
+          "id": "periop-last-recognition",
+          "question": "Immediately after bupivacaine injection a patient develops a ventricular arrhythmia without reporting tinnitus. What is the best response?",
+          "choices": [
+            "Exclude LAST because the neurologic prodrome is missing",
+            "Give another dose to confirm the reaction",
+            "Stop exposure and activate the LAST pathway while supporting airway and circulation",
+            "Wait for seizure before treating"
+          ],
+          "answer": 2,
+          "rationale": "Cardiovascular toxicity can occur without a reported neurologic prodrome, so stop exposure and activate LAST rescue while supporting airway and circulation. Missing tinnitus does not exclude LAST. Another dose adds exposure rather than safely confirming the diagnosis. Waiting for seizure delays treatment of an already dangerous arrhythmia.",
+          "reviewHref": "#local-anesthetic-toxicity",
+          "difficulty": "clinical"
+        },
+        "periop-last-bolus": {
+          "id": "periop-last-bolus",
+          "question": "A 60-kg patient with severe LAST is prescribed the ASRA 1.5 mL/kg initial bolus of 20% lipid. What volume is required?",
+          "choices": [
+            "90 mL",
+            "15 mL",
+            "720 mL",
+            "900 mL"
+          ],
+          "answer": 0,
+          "rationale": "The initial bolus is 1.5 mL/kg × 60 kg = 90 mL of 20% lipid, over approximately 2 to 3 minutes. The 15 figure is the initial infusion rate in mL/min, not the bolus volume. The 720-mL figure is the cumulative maximum, not the first dose. The 900 figure belongs to the hourly infusion rate in mL/hour, not a bolus volume.",
+          "reviewHref": "#local-anesthetic-toxicity",
+          "difficulty": "clinical"
+        },
+        "periop-last-rate": {
+          "id": "periop-last-rate",
+          "question": "For a 60-kg patient, convert the initial 0.25 mL/kg/min lipid infusion to mL/hour.",
+          "choices": [
+            "15 mL/hour",
+            "90 mL/hour",
+            "720 mL/hour",
+            "900 mL/hour"
+          ],
+          "answer": 3,
+          "rationale": "The rate is 0.25 mL/kg/min × 60 kg = 15 mL/min; multiplying by 60 min/hour gives 900 mL/hour. Reporting 15 mL/hour omits the minute-to-hour conversion. The 90-mL bolus and 720-mL cumulative maximum are volumes, and neither is the prescribed hourly rate. Continue protocol-directed reassessment rather than treating the hourly conversion as a fixed one-hour infusion duration.",
+          "reviewHref": "#local-anesthetic-toxicity",
+          "difficulty": "clinical"
+        },
+        "periop-last-ceiling": {
+          "id": "periop-last-ceiling",
+          "question": "A 60-kg patient has already received 390 mL of rescue lipid. How much remains before reaching the ASRA cumulative 12 mL/kg ceiling?",
+          "choices": [
+            "720 mL more",
+            "330 mL",
+            "90 mL",
+            "An unlimited volume if blood pressure remains low"
+          ],
+          "answer": 1,
+          "rationale": "The cumulative maximum is 12 mL/kg × 60 kg = 720 mL; subtracting the 390 mL already given leaves 330 mL. Giving another 720 mL ignores prior exposure. The 90-mL initial bolus is unrelated to the remaining-volume calculation. Persistent hypotension does not remove the maximum or authorize unlimited lipid. This calculation does not instruct the team to administer all remaining volume; reassess and obtain expert support.",
+          "reviewHref": "#local-anesthetic-toxicity",
+          "difficulty": "clinical"
+        },
+        "periop-last-drugs": {
+          "id": "periop-last-drugs",
+          "question": "During suspected LAST, a team prepares vasopressin and lidocaine for cardiovascular collapse. What should the pharmacist do?",
+          "choices": [
+            "Confirm both as preferred LAST rescue drugs",
+            "Replace lipid with a propofol infusion",
+            "Redirect to the LAST checklist, avoiding both and using smaller epinephrine doses when needed",
+            "Delay airway support until lipid arrives"
+          ],
+          "answer": 2,
+          "rationale": "ASRA advises avoiding vasopressin and additional local anesthetics such as lidocaine during LAST resuscitation. Redirect to the checklist and use smaller epinephrine doses when needed, initially no greater than 1 microgram/kg. Neither prepared drug is preferred here. Propofol cannot replace 20% rescue lipid. Airway and circulatory support should proceed immediately alongside rescue rather than waiting for lipid delivery.",
+          "reviewHref": "#local-anesthetic-toxicity",
+          "difficulty": "clinical"
+        },
+        "periop-last-observation": {
+          "id": "periop-last-observation",
+          "question": "A patient stabilizes after LAST-associated hypotension without cardiac arrest. Which ASRA observation interval matches cardiovascular instability?",
+          "choices": [
+            "Discharge as soon as the first lipid bolus ends",
+            "Ten minutes if the ECG normalizes",
+            "Exactly two hours for every LAST event",
+            "Observe for 4 to 6 hours after cardiovascular instability, with reassessment for recurrence"
+          ],
+          "answer": 3,
+          "rationale": "ASRA specifies 4 to 6 hours of observation after cardiovascular instability, with reassessment for recurrence. Neither completion of a bolus nor ten minutes of normal ECG establishes readiness for discharge. Two hours is the checklist interval after seizure, not a universal interval for every LAST event. Cardiac arrest and persistent abnormalities require individualized monitoring.",
+          "reviewHref": "#local-anesthetic-toxicity",
+          "difficulty": "clinical"
+        },
+        "periop-lidocaine-combined-exposure": {
+          "id": "periop-lidocaine-combined-exposure",
+          "question": "For an exposure reconciliation, a patient received 2 mL of 4% topical lidocaine and 5 mL of 1% injectable lidocaine. What total amount was administered? This calculation does not determine whether the regimen was appropriate.",
+          "choices": [
+            "13 mg",
+            "50 mg",
+            "80 mg",
+            "130 mg"
+          ],
+          "answer": 3,
+          "rationale": "A 4% solution contains 40 mg/mL, so 2 mL contributes 80 mg; 1% contains 10 mg/mL, so 5 mL contributes 50 mg. The total is 130 mg. The 13-mg answer is a tenfold unit-conversion error; 50 mg counts only the injection, and 80 mg counts only the topical exposure. This arithmetic does not establish a safe regimen. Verify exact products, route, timing and patient factors; the topical solution must not be injected.",
+          "reviewHref": "#local-anesthetic-pharmacology",
+          "difficulty": "application"
+        },
+        "periop-epinephrine-product-mixup": {
+          "id": "periop-epinephrine-product-mixup",
+          "question": "A procedure calls for lidocaine with epinephrine 0.01 mg/mL. The handed-over container is epinephrine 1 mg/mL intended for topical use. What is the appropriate response?",
+          "choices": [
+            "Stop and obtain the correct labeled product before administration",
+            "Inject it because both products contain epinephrine",
+            "Treat the concentration difference as clinically insignificant",
+            "Assume lidocaine is present even though it is absent from the label"
+          ],
+          "answer": 0,
+          "rationale": "Stop and obtain the correct labeled product. Epinephrine 1 mg/mL is 100 times the specified 0.01 mg/mL concentration and is not the lidocaine combination. Shared epinephrine content does not justify injection of the substituted topical product. The concentration difference is clinically consequential, and lidocaine cannot be assumed present when absent from the label. ISMP Canada reports harm and death after this type of substitution.",
+          "reviewHref": "#local-anesthetic-pharmacology",
+          "difficulty": "clinical"
+        }
+      },
+      "reviewedQuestionIds": [
+        "periop-local-additive",
+        "periop-local-hepatic",
+        "periop-local-route",
+        "periop-local-aspiration",
+        "periop-last-recognition",
+        "periop-last-bolus",
+        "periop-last-rate",
+        "periop-last-ceiling",
+        "periop-last-drugs",
+        "periop-last-observation",
+        "periop-lidocaine-combined-exposure",
+        "periop-epinephrine-product-mixup"
+      ],
+      "newQuestions": [
+        {
+          "id": "periop-lidocaine-combined-exposure",
+          "question": "For an exposure reconciliation, a patient received 2 mL of 4% topical lidocaine and 5 mL of 1% injectable lidocaine. What total amount was administered? This calculation does not determine whether the regimen was appropriate.",
+          "choices": [
+            "13 mg",
+            "50 mg",
+            "80 mg",
+            "130 mg"
+          ],
+          "answer": 3,
+          "rationale": "A 4% solution contains 40 mg/mL, so 2 mL contributes 80 mg; 1% contains 10 mg/mL, so 5 mL contributes 50 mg. The total is 130 mg. The 13-mg answer is a tenfold unit-conversion error; 50 mg counts only the injection, and 80 mg counts only the topical exposure. This arithmetic does not establish a safe regimen. Verify exact products, route, timing and patient factors; the topical solution must not be injected.",
+          "reviewHref": "#local-anesthetic-pharmacology",
+          "difficulty": "application"
+        },
+        {
+          "id": "periop-epinephrine-product-mixup",
+          "question": "A procedure calls for lidocaine with epinephrine 0.01 mg/mL. The handed-over container is epinephrine 1 mg/mL intended for topical use. What is the appropriate response?",
+          "choices": [
+            "Stop and obtain the correct labeled product before administration",
+            "Inject it because both products contain epinephrine",
+            "Treat the concentration difference as clinically insignificant",
+            "Assume lidocaine is present even though it is absent from the label"
+          ],
+          "answer": 0,
+          "rationale": "Stop and obtain the correct labeled product. Epinephrine 1 mg/mL is 100 times the specified 0.01 mg/mL concentration and is not the lidocaine combination. Shared epinephrine content does not justify injection of the substituted topical product. The concentration difference is clinically consequential, and lidocaine cannot be assumed present when absent from the label. ISMP Canada reports harm and death after this type of substitution.",
+          "reviewHref": "#local-anesthetic-pharmacology",
+          "difficulty": "clinical"
+        }
+      ],
+      "addedReferences": [
+        {
+          "label": "Taylor and McLeod: Basic pharmacology of local anaesthetics (2020)",
+          "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7808030/"
+        },
+        {
+          "label": "DailyMed: Chloroprocaine disposition and hepatic precautions",
+          "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=823a2335-05d0-4391-b612-316bfee9b1ea"
+        },
+        {
+          "label": "DailyMed: Lidocaine topical solution 4%, combined exposure and route",
+          "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8f79b023-9bd1-4bd6-8fd0-f9efe88abec0"
+        },
+        {
+          "label": "ISMP Canada: Prevent inadvertent injection of topical epinephrine",
+          "href": "https://www.ismp-canada.org/education/webinars/20100623_Epinephrine/"
+        },
+        {
+          "label": "DailyMed: EXPAREL formulation and compatibility precautions",
+          "href": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=bb5a9e59-0f51-11df-8a39-0800200c9a66"
+        },
+        {
+          "label": "ASRA: Original LAST checklist (2020, version 1.1)",
+          "href": "https://asra.com/docs/default-source/guidelines-articles/local-anesthetic-systemic-toxicity-rgb.pdf?sfvrsn=33b348e_2"
+        }
+      ]
+    }
+  },
+  "sourceEvidence": {
+    "bupivacaine": {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=3c0f567f-b7f8-4ee8-bfb2-61cd82550498",
+      "sha256": "ea186aab57185aa95900e10680fe25dbef553393b267c53920b991d190aaaaf7"
+    },
+    "lidocaine": {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=8f79b023-9bd1-4bd6-8fd0-f9efe88abec0",
+      "sha256": "f759ec93be1cb153ae42c2a1e676b7e7f8fadc6a913ad20828f884be3a740716"
+    },
+    "ismp": {
+      "url": "https://www.ismp-canada.org/education/webinars/20100623_Epinephrine/",
+      "sha256": "eb084f7abc3c28977ad9313bc3b3e3a226c52847b09b72764e216af520c668d2"
+    },
+    "pharmacology": {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7808030/",
+      "sha256": "390c86f277fa633ee7103aa0852406f641a07d3bb531c5b5eeca21e0ea63bc8d"
+    },
+    "chloroprocaine": {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=823a2335-05d0-4391-b612-316bfee9b1ea",
+      "sha256": "277957d69bbe4e297e8d54c3c8328fdc61a111a4e8132e703cc7cf42727bde55"
+    },
+    "aha": {
+      "url": "https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/adult-and-pediatric-special-circumstances-of-resuscitation",
+      "sha256": "a4265868b7676823ed004ae3830b998792cf5b579ca244dddb2e9ef493017dab"
+    },
+    "exparel": {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=bb5a9e59-0f51-11df-8a39-0800200c9a66",
+      "sha256": "1a0ccc8be8dcc94b70e2ccc643982b5f669aeec446c9956b02b4ab8c75693f07"
+    },
+    "asra": {
+      "url": "https://asra.com/docs/default-source/guidelines-articles/local-anesthetic-systemic-toxicity-rgb.pdf?sfvrsn=33b348e_2",
+      "sha256": "49854f19cc3b192c59ae2220036a853665642f9e57069b1287e4ec99d5644a36",
+      "originalOnePageRenderedAndViewed": true,
+      "epinephrineSymbol": "≤1 mcg/kg",
+      "continuationSymbol": "≥15 minutes",
+      "extractionDiscrepancy": "Extracted text omits underlines; source image establishes inclusive thresholds."
+    },
+    "status": "passed",
+    "privateBook": {
+      "pdfPagesReadAndRenderedAndViewed": [
+        726,
+        996
+      ],
+      "mapping": "Chapter53 anesthetic introduction and Chapter81 local-anesthetic antidote row",
+      "privateSourceOutsideGit": true
+    },
+    "retrievalLimits": {
+      "aha": "Direct HTTP returned403; official content obtained through web tool and retained as aha-web.txt.",
+      "pharmacology": "Only relevant pharmacology passages used. Table incorrectly classifies prilocaine as ester; table and dose figures not used."
+    }
+  },
+  "finalSourceComparison": {
+    "status": "passed",
+    "bodyReviews": [
+      {
+        "lesson": "local-anesthetic-pharmacology",
+        "heading": "Connect pH to access and block",
+        "finalBody": "The uncharged fraction crosses lipid membrane, while the protonated form binds within the sodium channel. Inflamed acidic tissue shifts drug toward ionization before membrane entry and can slow or weaken block. Use-dependent binding favors channels that open repeatedly, which explains selective suppression of rapidly firing fibers.",
+        "sourceComparison": [
+          "pharmacology:Mechanism/pKa"
+        ],
+        "finding": "Supported within stated product/clinical qualifiers; retained original useful teaching and resolved omissions."
+      },
+      {
+        "lesson": "local-anesthetic-pharmacology",
+        "heading": "Distinguish disposition families",
+        "finalBody": "Lidocaine, bupivacaine and ropivacaine are amide agents whose clearance depends mainly on hepatic metabolism. Many ester agents undergo plasma cholinesterase hydrolysis; chloroprocaine produces a chlorinated aminobenzoic-acid metabolite. These family patterns do not mean that every agent has the same clearance or that an ester is automatically safe in liver disease: the enzyme is synthesized in the liver, and chloroprocaine labeling calls for caution in hepatic disease. Check the exact agent and the patient rather than using the suffix alone.",
+        "sourceComparison": [
+          "pharmacology:Metabolism",
+          "lidocaine:Clinical pharmacology",
+          "bupivacaine:8.6",
+          "chloroprocaine:Pharmacokinetics/Precautions"
+        ],
+        "finding": "Supported within stated product/clinical qualifiers; retained original useful teaching and resolved omissions."
+      },
+      {
+        "lesson": "local-anesthetic-pharmacology",
+        "heading": "Connect onset, potency and duration to the tissue",
+        "finalBody": "The proportion of uncharged drug helps determine membrane entry and onset; acidic inflamed tissue can reduce effective access. Greater lipid solubility generally increases potency, while greater protein binding tends to prolong block. Tissue blood flow and the agent's vasoactivity also affect how rapidly drug leaves the injection site. Epinephrine can reduce local absorption and prolong effect, but its own cardiovascular effects and product-specific precautions must be assessed. None of these properties establishes a safe dose by itself.",
+        "sourceComparison": [
+          "pharmacology:Properties/Vasoactivity",
+          "chloroprocaine:Pharmacokinetics"
+        ],
+        "finding": "Supported within stated product/clinical qualifiers; retained original useful teaching and resolved omissions."
+      },
+      {
+        "lesson": "local-anesthetic-pharmacology",
+        "heading": "Match the formulation to the route",
+        "finalBody": "Standard bupivacaine injection labeling contraindicates intravenous regional anesthesia (Bier block) and obstetrical paracervical block; cardiac arrest and death have occurred with Bier block. The 0.75% concentration is not recommended for obstetrical anesthesia. Avoid preservative-containing multidose vials for epidural or caudal anesthesia. The standard injection product reviewed here is not for intrathecal use; verify the exact formulation and its labeled route rather than substituting it for a spinal preparation.",
+        "sourceComparison": [
+          "bupivacaine:2.1/4/Boxed warning"
+        ],
+        "finding": "Supported within stated product/clinical qualifiers; retained original useful teaching and resolved omissions."
+      },
+      {
+        "lesson": "local-anesthetic-pharmacology",
+        "heading": "Adjust exposure and distrust a negative aspiration",
+        "finalBody": "Consider lower doses and closer toxicity monitoring with moderate or severe hepatic impairment, particularly with repeated bupivacaine dosing. Reduced doses are also needed with impaired cardiovascular function. Aspirate and inject incrementally as appropriate, but a negative aspiration cannot exclude intravascular or intrathecal placement. Continue monitoring after each injection.",
+        "sourceComparison": [
+          "bupivacaine:2.1/5.11/8.6"
+        ],
+        "finding": "Supported within stated product/clinical qualifiers; retained original useful teaching and resolved omissions."
+      },
+      {
+        "lesson": "local-anesthetic-pharmacology",
+        "heading": "Reconcile lidocaine across formulations",
+        "finalBody": "The 4% topical-solution label requires counting lidocaine from every formulation used together. Topical exposure is not a separate allowance, and that solution must never be injected. Verify the exact products, timing, absorption site and protocol before combining routes; a total-milligram calculation alone does not establish safety or authorize concurrent IV and regional treatment.",
+        "sourceComparison": [
+          "book:PDF726",
+          "lidocaine:Description/Dosage"
+        ],
+        "finding": "Supported within stated product/clinical qualifiers; retained original useful teaching and resolved omissions."
+      },
+      {
+        "lesson": "local-anesthetic-pharmacology",
+        "heading": "Distinguish epinephrine from the combination product",
+        "finalBody": "Concentrated topical epinephrine 1 mg/mL has been mistaken for local anesthetic with dilute epinephrine, causing fatal injections. Verify the full drug name, concentration and route before preparation and again before administration. A lidocaine/epinephrine product containing epinephrine 0.01 mg/mL is not interchangeable with epinephrine 1 mg/mL.",
+        "sourceComparison": [
+          "book:PDF726",
+          "ismp:Primary incident summary"
+        ],
+        "finding": "Supported within stated product/clinical qualifiers; retained original useful teaching and resolved omissions."
+      },
+      {
+        "lesson": "local-anesthetic-pharmacology",
+        "heading": "Treat all exposure as one toxicity budget",
+        "finalBody": "Local-anesthetic systemic toxic effects are additive across products, including different agents and injection sites. Use the lowest effective dose with appropriate aspiration, fractional injection and continuous observation of consciousness, ventilation, rhythm and circulation. Oxygen, resuscitation equipment, skilled personnel and the LAST kit must be immediately available. Adding milligram amounts helps reconcile exposure but does not establish a universal safe combined dose or authorize a mixture; standard bupivacaine labeling does not recommend mixing or prior or intercurrent use of other local anesthetics because clinical data are insufficient.",
+        "sourceComparison": [
+          "bupivacaine:2.1/7.1"
+        ],
+        "finding": "Supported within stated product/clinical qualifiers; retained original useful teaching and resolved omissions."
+      },
+      {
+        "lesson": "local-anesthetic-pharmacology",
+        "heading": "Keep liposomal bupivacaine product-specific",
+        "finalBody": "EXPAREL is a liposomal suspension and cannot be substituted dose-for-dose for other bupivacaine products, even at the same stated strength. Do not admix it with lidocaine or other non-bupivacaine local anesthetics: direct contact can release unencapsulated bupivacaine rapidly. Its label permits administration after local lidocaine only after a delay of at least 20 minutes. When bupivacaine HCl is admixed or injected immediately beforehand, its milligram dose must not exceed one-half the EXPAREL dose. Follow the indication-specific regimen and the warning to avoid additional local anesthetics within 96 hours afterward; a planned immediate-release block in the labeled perioperative regimen is not permission for unrestricted subsequent dosing.",
+        "sourceComparison": [
+          "book:PDF726 formulation listed",
+          "exparel:2.1/2.3/2.5/5.2/7"
+        ],
+        "finding": "Supported within stated product/clinical qualifiers; retained original useful teaching and resolved omissions."
+      },
+      {
+        "lesson": "local-anesthetic-pharmacology",
+        "heading": "Recognize a separate oxidant complication",
+        "finalBody": "Local anesthetics, including benzocaine and lidocaine, can cause methemoglobinemia as well as sodium-channel toxicity. Cyanosis, dyspnea, fatigue or an oxygen-saturation discrepancy after exposure needs urgent assessment, even when the presentation does not follow the usual LAST pattern. Stop the implicated oxidizing medicine and arrange oxygen and definitive treatment through the clinical team. G6PD deficiency, cardiopulmonary disease, young infants and other oxidizing drugs can increase vulnerability; methylene-blue selection also requires assessment of G6PD status. Lipid rescue for severe LAST does not replace the methemoglobinemia treatment pathway.",
+        "sourceComparison": [
+          "lidocaine:Warnings",
+          "aha:21.10"
+        ],
+        "finding": "Supported within stated product/clinical qualifiers; retained original useful teaching and resolved omissions."
+      },
+      {
+        "lesson": "local-anesthetic-toxicity",
+        "heading": "Stop exposure and stabilize physiology",
+        "finalBody": "Stop injection, call for help, secure oxygenation and ventilation, and prevent acidosis, hypoxemia, and hypercapnia that can intensify toxicity. Prefer a benzodiazepine for seizure when available. Do not wait for a complete textbook progression before activating the rescue pathway.",
+        "sourceComparison": [
+          "asra:Checklist",
+          "aha:21.9"
+        ],
+        "finding": "Supported within stated product/clinical qualifiers; retained original useful teaching and resolved omissions."
+      },
+      {
+        "lesson": "local-anesthetic-toxicity",
+        "heading": "Give 20 percent lipid emulsion early",
+        "finalBody": "For patients under 70 kg, the ASRA checklist uses an approximately 1.5 mL/kg bolus over 2 to 3 minutes followed by about 0.25 mL/kg/min. For patients over 70 kg, it provides approximately 100 mL over 2 to 3 minutes followed by about 250 mL over 15 to 20 minutes. Persistent instability calls for a repeat bolus and doubled infusion while respecting the checklist maximum of 12 mL/kg. These are ASRA checklist regimens rather than a proven optimal dose for every patient; use the current rescue protocol with continuous reassessment.",
+        "sourceComparison": [
+          "book:PDF996",
+          "asra:Weight branches",
+          "aha:21.9 dosing evidence limits"
+        ],
+        "finding": "Supported within stated product/clinical qualifiers; retained original useful teaching and resolved omissions."
+      },
+      {
+        "lesson": "local-anesthetic-toxicity",
+        "heading": "Keep the bolus, rate and total separate",
+        "finalBody": "For a 60-kg patient, 1.5 mL/kg gives a 90-mL bolus. The initial 0.25 mL/kg/min infusion is 15 mL/min, or 900 mL/hour. The 12 mL/kg cumulative ceiling is 720 mL, counting boluses and infusion together; it is not an initial bolus. Reassess circulation continuously and obtain expert support for persistent instability.",
+        "sourceComparison": [
+          "asra:Weight branches/maximum",
+          "Independent Decimal arithmetic"
+        ],
+        "finding": "Supported within stated product/clinical qualifiers; retained original useful teaching and resolved omissions."
+      },
+      {
+        "lesson": "local-anesthetic-toxicity",
+        "heading": "Modify the resuscitation medicines",
+        "finalBody": "When epinephrine is needed, ASRA prefers smaller doses and specifies an initial dose no greater than 1 microgram/kg. Avoid vasopressin, beta blockers, calcium-channel blockers and additional local anesthetics during LAST resuscitation. These instructions modify the medication pathway while airway support, circulation and indicated resuscitation continue. Obtain early expert and extracorporeal-support consultation for refractory cardiogenic shock.",
+        "sourceComparison": [
+          "asra:Original inclusive epinephrine glyph and avoid list",
+          "aha:21.9 ECLS"
+        ],
+        "finding": "Supported within stated product/clinical qualifiers; retained original useful teaching and resolved omissions."
+      },
+      {
+        "lesson": "local-anesthetic-toxicity",
+        "heading": "Keep propofol separate from rescue lipid",
+        "finalBody": "Propofol is not a substitute for 20% lipid rescue: delivering the rescue lipid quantity through propofol would produce a dangerous anesthetic exposure. A benzodiazepine is preferred for LAST-associated seizure. If only propofol is available for seizure control, the ASRA checklist specifies low doses, such as 20 mg increments, with attention to its circulatory depressant effects. That limited seizure use is a different purpose from lipid rescue.",
+        "sourceComparison": [
+          "asra:Seizure branch",
+          "aha:21.9 propofol statement"
+        ],
+        "finding": "Supported within stated product/clinical qualifiers; retained original useful teaching and resolved omissions."
+      },
+      {
+        "lesson": "local-anesthetic-toxicity",
+        "heading": "Continue treatment and observation",
+        "finalBody": "After hemodynamic stability, continue lipid for at least 15 minutes while respecting the cumulative maximum. The ASRA checklist specifies observation for 2 hours after seizure and 4 to 6 hours after cardiovascular instability; post-arrest monitoring is individualized. Recurrence or persistent abnormalities requires reassessment rather than automatic discharge when an interval ends.",
+        "sourceComparison": [
+          "asra:Original inclusive continuation glyph/Observe"
+        ],
+        "finding": "Supported within stated product/clinical qualifiers; retained original useful teaching and resolved omissions."
+      },
+      {
+        "lesson": "local-anesthetic-toxicity",
+        "heading": "Escalate persistent conduction or circulatory toxicity",
+        "finalBody": "The 2025 AHA guideline considers sodium bicarbonate reasonable for life-threatening wide-complex tachycardia caused by local-anesthetic toxicity. It also considers extracorporeal life support reasonable for refractory cardiogenic shock. These are indication-specific additions to airway, circulation and lipid rescue, supported largely by limited clinical reports and experimental evidence. Seek toxicology and resuscitation expertise rather than delaying initial support while arranging an advanced treatment.",
+        "sourceComparison": [
+          "aha:21.9 recommendations3/4 and limited supportive evidence"
+        ],
+        "finding": "Supported within stated product/clinical qualifiers; retained original useful teaching and resolved omissions."
+      }
+    ],
+    "wholeQuestionReviews": [
+      {
+        "id": "periop-local-additive",
+        "finalQuestion": {
+          "id": "periop-local-additive",
+          "question": "A team plans lidocaine infiltration and a bupivacaine block in the same patient. Which safety assumption is correct?",
+          "choices": [
+            "Each drug has a completely independent toxicity allowance",
+            "Different injection sites prevent systemic toxicity",
+            "Their systemic toxic effects are additive",
+            "Only the more concentrated product matters"
+          ],
+          "answer": 2,
+          "rationale": "Both drugs contribute additive systemic toxic effects. Different agents do not have independent toxicity allowances, and different injection sites do not prevent systemic absorption. Concentration alone does not identify which product matters: dose, route, timing, absorption and patient factors all contribute. Reconcile the entire exposure and exact products before administration.",
+          "reviewHref": "#local-anesthetic-pharmacology",
+          "difficulty": "clinical"
+        },
+        "reviewedSources": [
+          "bupivacaine"
+        ],
+        "stemAndSingleBestAnswerReviewed": true,
+        "individualChoices": [
+          {
+            "index": 0,
+            "text": "Each drug has a completely independent toxicity allowance",
+            "correct": false,
+            "assessment": "Incorrect in stated context; independently compared against cited source and explicitly explained in final rationale."
+          },
+          {
+            "index": 1,
+            "text": "Different injection sites prevent systemic toxicity",
+            "correct": false,
+            "assessment": "Incorrect in stated context; independently compared against cited source and explicitly explained in final rationale."
+          },
+          {
+            "index": 2,
+            "text": "Their systemic toxic effects are additive",
+            "correct": true,
+            "assessment": "Correct in stated context; source and final rationale support it."
+          },
+          {
+            "index": 3,
+            "text": "Only the more concentrated product matters",
+            "correct": false,
+            "assessment": "Incorrect in stated context; independently compared against cited source and explicitly explained in final rationale."
+          }
+        ],
+        "rationaleEachAlternativeReconciled": true
+      },
+      {
+        "id": "periop-local-hepatic",
+        "finalQuestion": {
+          "id": "periop-local-hepatic",
+          "question": "A patient with severe hepatic impairment needs repeated bupivacaine injections. What adjustment deserves consideration?",
+          "choices": [
+            "Lower exposure with intensified systemic-toxicity monitoring",
+            "A larger dose because metabolism is hepatic",
+            "No reassessment because injection is local",
+            "Switch to an unmonitored continuous infusion"
+          ],
+          "answer": 0,
+          "rationale": "Severe hepatic impairment can reduce bupivacaine metabolism, particularly during repeated dosing, so consider lower exposure and intensified systemic-toxicity monitoring. Increasing the dose can worsen accumulation. Local injection does not prevent systemic absorption or remove the need for reassessment. An unmonitored infusion continues exposure without the required safety surveillance.",
+          "reviewHref": "#local-anesthetic-pharmacology",
+          "difficulty": "clinical"
+        },
+        "reviewedSources": [
+          "bupivacaine"
+        ],
+        "stemAndSingleBestAnswerReviewed": true,
+        "individualChoices": [
+          {
+            "index": 0,
+            "text": "Lower exposure with intensified systemic-toxicity monitoring",
+            "correct": true,
+            "assessment": "Correct in stated context; source and final rationale support it."
+          },
+          {
+            "index": 1,
+            "text": "A larger dose because metabolism is hepatic",
+            "correct": false,
+            "assessment": "Incorrect in stated context; independently compared against cited source and explicitly explained in final rationale."
+          },
+          {
+            "index": 2,
+            "text": "No reassessment because injection is local",
+            "correct": false,
+            "assessment": "Incorrect in stated context; independently compared against cited source and explicitly explained in final rationale."
+          },
+          {
+            "index": 3,
+            "text": "Switch to an unmonitored continuous infusion",
+            "correct": false,
+            "assessment": "Incorrect in stated context; independently compared against cited source and explicitly explained in final rationale."
+          }
+        ],
+        "rationaleEachAlternativeReconciled": true
+      },
+      {
+        "id": "periop-local-route",
+        "finalQuestion": {
+          "id": "periop-local-route",
+          "question": "Which proposed use of standard bupivacaine injection conflicts with a labeled contraindication?",
+          "choices": [
+            "An appropriately selected peripheral nerve block",
+            "A labeled local infiltration technique",
+            "A properly selected epidural formulation",
+            "Intravenous regional anesthesia using a Bier block"
+          ],
+          "answer": 3,
+          "rationale": "Standard bupivacaine injection is contraindicated for intravenous regional anesthesia using a Bier block because cardiac arrest and death have occurred. Appropriately selected peripheral nerve block and local infiltration are labeled uses. Epidural use requires the correct concentration and preservative-free formulation. These appropriately qualified alternatives do not share the Bier-block contraindication; exact-product labeling still governs each technique.",
+          "reviewHref": "#local-anesthetic-pharmacology",
+          "difficulty": "clinical"
+        },
+        "reviewedSources": [
+          "bupivacaine"
+        ],
+        "stemAndSingleBestAnswerReviewed": true,
+        "individualChoices": [
+          {
+            "index": 0,
+            "text": "An appropriately selected peripheral nerve block",
+            "correct": false,
+            "assessment": "Incorrect in stated context; independently compared against cited source and explicitly explained in final rationale."
+          },
+          {
+            "index": 1,
+            "text": "A labeled local infiltration technique",
+            "correct": false,
+            "assessment": "Incorrect in stated context; independently compared against cited source and explicitly explained in final rationale."
+          },
+          {
+            "index": 2,
+            "text": "A properly selected epidural formulation",
+            "correct": false,
+            "assessment": "Incorrect in stated context; independently compared against cited source and explicitly explained in final rationale."
+          },
+          {
+            "index": 3,
+            "text": "Intravenous regional anesthesia using a Bier block",
+            "correct": true,
+            "assessment": "Correct in stated context; source and final rationale support it."
+          }
+        ],
+        "rationaleEachAlternativeReconciled": true
+      },
+      {
+        "id": "periop-local-aspiration",
+        "finalQuestion": {
+          "id": "periop-local-aspiration",
+          "question": "No blood is aspirated before a regional injection. Which conclusion is justified?",
+          "choices": [
+            "Systemic toxicity is impossible",
+            "The result does not exclude intravascular injection; continue the safety precautions",
+            "Monitoring can stop immediately",
+            "The full planned dose can always be injected rapidly"
+          ],
+          "answer": 1,
+          "rationale": "A negative aspiration does not exclude intravascular placement or make systemic toxicity impossible. Continue incremental dosing, appropriate aspiration and clinical monitoring. Stopping monitoring loses the opportunity to detect toxicity. Rapidly injecting the full dose increases exposure without the recommended fractional precautions; the negative result does not justify that action.",
+          "reviewHref": "#local-anesthetic-pharmacology",
+          "difficulty": "clinical"
+        },
+        "reviewedSources": [
+          "bupivacaine"
+        ],
+        "stemAndSingleBestAnswerReviewed": true,
+        "individualChoices": [
+          {
+            "index": 0,
+            "text": "Systemic toxicity is impossible",
+            "correct": false,
+            "assessment": "Incorrect in stated context; independently compared against cited source and explicitly explained in final rationale."
+          },
+          {
+            "index": 1,
+            "text": "The result does not exclude intravascular injection; continue the safety precautions",
+            "correct": true,
+            "assessment": "Correct in stated context; source and final rationale support it."
+          },
+          {
+            "index": 2,
+            "text": "Monitoring can stop immediately",
+            "correct": false,
+            "assessment": "Incorrect in stated context; independently compared against cited source and explicitly explained in final rationale."
+          },
+          {
+            "index": 3,
+            "text": "The full planned dose can always be injected rapidly",
+            "correct": false,
+            "assessment": "Incorrect in stated context; independently compared against cited source and explicitly explained in final rationale."
+          }
+        ],
+        "rationaleEachAlternativeReconciled": true
+      },
+      {
+        "id": "periop-last-recognition",
+        "finalQuestion": {
+          "id": "periop-last-recognition",
+          "question": "Immediately after bupivacaine injection a patient develops a ventricular arrhythmia without reporting tinnitus. What is the best response?",
+          "choices": [
+            "Exclude LAST because the neurologic prodrome is missing",
+            "Give another dose to confirm the reaction",
+            "Stop exposure and activate the LAST pathway while supporting airway and circulation",
+            "Wait for seizure before treating"
+          ],
+          "answer": 2,
+          "rationale": "Cardiovascular toxicity can occur without a reported neurologic prodrome, so stop exposure and activate LAST rescue while supporting airway and circulation. Missing tinnitus does not exclude LAST. Another dose adds exposure rather than safely confirming the diagnosis. Waiting for seizure delays treatment of an already dangerous arrhythmia.",
+          "reviewHref": "#local-anesthetic-toxicity",
+          "difficulty": "clinical"
+        },
+        "reviewedSources": [
+          "asra",
+          "aha"
+        ],
+        "stemAndSingleBestAnswerReviewed": true,
+        "individualChoices": [
+          {
+            "index": 0,
+            "text": "Exclude LAST because the neurologic prodrome is missing",
+            "correct": false,
+            "assessment": "Incorrect in stated context; independently compared against cited source and explicitly explained in final rationale."
+          },
+          {
+            "index": 1,
+            "text": "Give another dose to confirm the reaction",
+            "correct": false,
+            "assessment": "Incorrect in stated context; independently compared against cited source and explicitly explained in final rationale."
+          },
+          {
+            "index": 2,
+            "text": "Stop exposure and activate the LAST pathway while supporting airway and circulation",
+            "correct": true,
+            "assessment": "Correct in stated context; source and final rationale support it."
+          },
+          {
+            "index": 3,
+            "text": "Wait for seizure before treating",
+            "correct": false,
+            "assessment": "Incorrect in stated context; independently compared against cited source and explicitly explained in final rationale."
+          }
+        ],
+        "rationaleEachAlternativeReconciled": true
+      },
+      {
+        "id": "periop-last-bolus",
+        "finalQuestion": {
+          "id": "periop-last-bolus",
+          "question": "A 60-kg patient with severe LAST is prescribed the ASRA 1.5 mL/kg initial bolus of 20% lipid. What volume is required?",
+          "choices": [
+            "90 mL",
+            "15 mL",
+            "720 mL",
+            "900 mL"
+          ],
+          "answer": 0,
+          "rationale": "The initial bolus is 1.5 mL/kg × 60 kg = 90 mL of 20% lipid, over approximately 2 to 3 minutes. The 15 figure is the initial infusion rate in mL/min, not the bolus volume. The 720-mL figure is the cumulative maximum, not the first dose. The 900 figure belongs to the hourly infusion rate in mL/hour, not a bolus volume.",
+          "reviewHref": "#local-anesthetic-toxicity",
+          "difficulty": "clinical"
+        },
+        "reviewedSources": [
+          "asra",
+          "aha"
+        ],
+        "stemAndSingleBestAnswerReviewed": true,
+        "individualChoices": [
+          {
+            "index": 0,
+            "text": "90 mL",
+            "correct": true,
+            "assessment": "Correct in stated context; source and final rationale support it."
+          },
+          {
+            "index": 1,
+            "text": "15 mL",
+            "correct": false,
+            "assessment": "Incorrect in stated context; independently compared against cited source and explicitly explained in final rationale."
+          },
+          {
+            "index": 2,
+            "text": "720 mL",
+            "correct": false,
+            "assessment": "Incorrect in stated context; independently compared against cited source and explicitly explained in final rationale."
+          },
+          {
+            "index": 3,
+            "text": "900 mL",
+            "correct": false,
+            "assessment": "Incorrect in stated context; independently compared against cited source and explicitly explained in final rationale."
+          }
+        ],
+        "rationaleEachAlternativeReconciled": true
+      },
+      {
+        "id": "periop-last-rate",
+        "finalQuestion": {
+          "id": "periop-last-rate",
+          "question": "For a 60-kg patient, convert the initial 0.25 mL/kg/min lipid infusion to mL/hour.",
+          "choices": [
+            "15 mL/hour",
+            "90 mL/hour",
+            "720 mL/hour",
+            "900 mL/hour"
+          ],
+          "answer": 3,
+          "rationale": "The rate is 0.25 mL/kg/min × 60 kg = 15 mL/min; multiplying by 60 min/hour gives 900 mL/hour. Reporting 15 mL/hour omits the minute-to-hour conversion. The 90-mL bolus and 720-mL cumulative maximum are volumes, and neither is the prescribed hourly rate. Continue protocol-directed reassessment rather than treating the hourly conversion as a fixed one-hour infusion duration.",
+          "reviewHref": "#local-anesthetic-toxicity",
+          "difficulty": "clinical"
+        },
+        "reviewedSources": [
+          "asra",
+          "aha"
+        ],
+        "stemAndSingleBestAnswerReviewed": true,
+        "individualChoices": [
+          {
+            "index": 0,
+            "text": "15 mL/hour",
+            "correct": false,
+            "assessment": "Incorrect in stated context; independently compared against cited source and explicitly explained in final rationale."
+          },
+          {
+            "index": 1,
+            "text": "90 mL/hour",
+            "correct": false,
+            "assessment": "Incorrect in stated context; independently compared against cited source and explicitly explained in final rationale."
+          },
+          {
+            "index": 2,
+            "text": "720 mL/hour",
+            "correct": false,
+            "assessment": "Incorrect in stated context; independently compared against cited source and explicitly explained in final rationale."
+          },
+          {
+            "index": 3,
+            "text": "900 mL/hour",
+            "correct": true,
+            "assessment": "Correct in stated context; source and final rationale support it."
+          }
+        ],
+        "rationaleEachAlternativeReconciled": true
+      },
+      {
+        "id": "periop-last-ceiling",
+        "finalQuestion": {
+          "id": "periop-last-ceiling",
+          "question": "A 60-kg patient has already received 390 mL of rescue lipid. How much remains before reaching the ASRA cumulative 12 mL/kg ceiling?",
+          "choices": [
+            "720 mL more",
+            "330 mL",
+            "90 mL",
+            "An unlimited volume if blood pressure remains low"
+          ],
+          "answer": 1,
+          "rationale": "The cumulative maximum is 12 mL/kg × 60 kg = 720 mL; subtracting the 390 mL already given leaves 330 mL. Giving another 720 mL ignores prior exposure. The 90-mL initial bolus is unrelated to the remaining-volume calculation. Persistent hypotension does not remove the maximum or authorize unlimited lipid. This calculation does not instruct the team to administer all remaining volume; reassess and obtain expert support.",
+          "reviewHref": "#local-anesthetic-toxicity",
+          "difficulty": "clinical"
+        },
+        "reviewedSources": [
+          "asra",
+          "aha"
+        ],
+        "stemAndSingleBestAnswerReviewed": true,
+        "individualChoices": [
+          {
+            "index": 0,
+            "text": "720 mL more",
+            "correct": false,
+            "assessment": "Incorrect in stated context; independently compared against cited source and explicitly explained in final rationale."
+          },
+          {
+            "index": 1,
+            "text": "330 mL",
+            "correct": true,
+            "assessment": "Correct in stated context; source and final rationale support it."
+          },
+          {
+            "index": 2,
+            "text": "90 mL",
+            "correct": false,
+            "assessment": "Incorrect in stated context; independently compared against cited source and explicitly explained in final rationale."
+          },
+          {
+            "index": 3,
+            "text": "An unlimited volume if blood pressure remains low",
+            "correct": false,
+            "assessment": "Incorrect in stated context; independently compared against cited source and explicitly explained in final rationale."
+          }
+        ],
+        "rationaleEachAlternativeReconciled": true
+      },
+      {
+        "id": "periop-last-drugs",
+        "finalQuestion": {
+          "id": "periop-last-drugs",
+          "question": "During suspected LAST, a team prepares vasopressin and lidocaine for cardiovascular collapse. What should the pharmacist do?",
+          "choices": [
+            "Confirm both as preferred LAST rescue drugs",
+            "Replace lipid with a propofol infusion",
+            "Redirect to the LAST checklist, avoiding both and using smaller epinephrine doses when needed",
+            "Delay airway support until lipid arrives"
+          ],
+          "answer": 2,
+          "rationale": "ASRA advises avoiding vasopressin and additional local anesthetics such as lidocaine during LAST resuscitation. Redirect to the checklist and use smaller epinephrine doses when needed, initially no greater than 1 microgram/kg. Neither prepared drug is preferred here. Propofol cannot replace 20% rescue lipid. Airway and circulatory support should proceed immediately alongside rescue rather than waiting for lipid delivery.",
+          "reviewHref": "#local-anesthetic-toxicity",
+          "difficulty": "clinical"
+        },
+        "reviewedSources": [
+          "asra",
+          "aha"
+        ],
+        "stemAndSingleBestAnswerReviewed": true,
+        "individualChoices": [
+          {
+            "index": 0,
+            "text": "Confirm both as preferred LAST rescue drugs",
+            "correct": false,
+            "assessment": "Incorrect in stated context; independently compared against cited source and explicitly explained in final rationale."
+          },
+          {
+            "index": 1,
+            "text": "Replace lipid with a propofol infusion",
+            "correct": false,
+            "assessment": "Incorrect in stated context; independently compared against cited source and explicitly explained in final rationale."
+          },
+          {
+            "index": 2,
+            "text": "Redirect to the LAST checklist, avoiding both and using smaller epinephrine doses when needed",
+            "correct": true,
+            "assessment": "Correct in stated context; source and final rationale support it."
+          },
+          {
+            "index": 3,
+            "text": "Delay airway support until lipid arrives",
+            "correct": false,
+            "assessment": "Incorrect in stated context; independently compared against cited source and explicitly explained in final rationale."
+          }
+        ],
+        "rationaleEachAlternativeReconciled": true
+      },
+      {
+        "id": "periop-last-observation",
+        "finalQuestion": {
+          "id": "periop-last-observation",
+          "question": "A patient stabilizes after LAST-associated hypotension without cardiac arrest. Which ASRA observation interval matches cardiovascular instability?",
+          "choices": [
+            "Discharge as soon as the first lipid bolus ends",
+            "Ten minutes if the ECG normalizes",
+            "Exactly two hours for every LAST event",
+            "Observe for 4 to 6 hours after cardiovascular instability, with reassessment for recurrence"
+          ],
+          "answer": 3,
+          "rationale": "ASRA specifies 4 to 6 hours of observation after cardiovascular instability, with reassessment for recurrence. Neither completion of a bolus nor ten minutes of normal ECG establishes readiness for discharge. Two hours is the checklist interval after seizure, not a universal interval for every LAST event. Cardiac arrest and persistent abnormalities require individualized monitoring.",
+          "reviewHref": "#local-anesthetic-toxicity",
+          "difficulty": "clinical"
+        },
+        "reviewedSources": [
+          "asra",
+          "aha"
+        ],
+        "stemAndSingleBestAnswerReviewed": true,
+        "individualChoices": [
+          {
+            "index": 0,
+            "text": "Discharge as soon as the first lipid bolus ends",
+            "correct": false,
+            "assessment": "Incorrect in stated context; independently compared against cited source and explicitly explained in final rationale."
+          },
+          {
+            "index": 1,
+            "text": "Ten minutes if the ECG normalizes",
+            "correct": false,
+            "assessment": "Incorrect in stated context; independently compared against cited source and explicitly explained in final rationale."
+          },
+          {
+            "index": 2,
+            "text": "Exactly two hours for every LAST event",
+            "correct": false,
+            "assessment": "Incorrect in stated context; independently compared against cited source and explicitly explained in final rationale."
+          },
+          {
+            "index": 3,
+            "text": "Observe for 4 to 6 hours after cardiovascular instability, with reassessment for recurrence",
+            "correct": true,
+            "assessment": "Correct in stated context; source and final rationale support it."
+          }
+        ],
+        "rationaleEachAlternativeReconciled": true
+      },
+      {
+        "id": "periop-lidocaine-combined-exposure",
+        "finalQuestion": {
+          "id": "periop-lidocaine-combined-exposure",
+          "question": "For an exposure reconciliation, a patient received 2 mL of 4% topical lidocaine and 5 mL of 1% injectable lidocaine. What total amount was administered? This calculation does not determine whether the regimen was appropriate.",
+          "choices": [
+            "13 mg",
+            "50 mg",
+            "80 mg",
+            "130 mg"
+          ],
+          "answer": 3,
+          "rationale": "A 4% solution contains 40 mg/mL, so 2 mL contributes 80 mg; 1% contains 10 mg/mL, so 5 mL contributes 50 mg. The total is 130 mg. The 13-mg answer is a tenfold unit-conversion error; 50 mg counts only the injection, and 80 mg counts only the topical exposure. This arithmetic does not establish a safe regimen. Verify exact products, route, timing and patient factors; the topical solution must not be injected.",
+          "reviewHref": "#local-anesthetic-pharmacology",
+          "difficulty": "application"
+        },
+        "reviewedSources": [
+          "lidocaine"
+        ],
+        "stemAndSingleBestAnswerReviewed": true,
+        "individualChoices": [
+          {
+            "index": 0,
+            "text": "13 mg",
+            "correct": false,
+            "assessment": "Incorrect in stated context; independently compared against cited source and explicitly explained in final rationale."
+          },
+          {
+            "index": 1,
+            "text": "50 mg",
+            "correct": false,
+            "assessment": "Incorrect in stated context; independently compared against cited source and explicitly explained in final rationale."
+          },
+          {
+            "index": 2,
+            "text": "80 mg",
+            "correct": false,
+            "assessment": "Incorrect in stated context; independently compared against cited source and explicitly explained in final rationale."
+          },
+          {
+            "index": 3,
+            "text": "130 mg",
+            "correct": true,
+            "assessment": "Correct in stated context; source and final rationale support it."
+          }
+        ],
+        "rationaleEachAlternativeReconciled": true
+      },
+      {
+        "id": "periop-epinephrine-product-mixup",
+        "finalQuestion": {
+          "id": "periop-epinephrine-product-mixup",
+          "question": "A procedure calls for lidocaine with epinephrine 0.01 mg/mL. The handed-over container is epinephrine 1 mg/mL intended for topical use. What is the appropriate response?",
+          "choices": [
+            "Stop and obtain the correct labeled product before administration",
+            "Inject it because both products contain epinephrine",
+            "Treat the concentration difference as clinically insignificant",
+            "Assume lidocaine is present even though it is absent from the label"
+          ],
+          "answer": 0,
+          "rationale": "Stop and obtain the correct labeled product. Epinephrine 1 mg/mL is 100 times the specified 0.01 mg/mL concentration and is not the lidocaine combination. Shared epinephrine content does not justify injection of the substituted topical product. The concentration difference is clinically consequential, and lidocaine cannot be assumed present when absent from the label. ISMP Canada reports harm and death after this type of substitution.",
+          "reviewHref": "#local-anesthetic-pharmacology",
+          "difficulty": "clinical"
+        },
+        "reviewedSources": [
+          "ismp"
+        ],
+        "stemAndSingleBestAnswerReviewed": true,
+        "individualChoices": [
+          {
+            "index": 0,
+            "text": "Stop and obtain the correct labeled product before administration",
+            "correct": true,
+            "assessment": "Correct in stated context; source and final rationale support it."
+          },
+          {
+            "index": 1,
+            "text": "Inject it because both products contain epinephrine",
+            "correct": false,
+            "assessment": "Incorrect in stated context; independently compared against cited source and explicitly explained in final rationale."
+          },
+          {
+            "index": 2,
+            "text": "Treat the concentration difference as clinically insignificant",
+            "correct": false,
+            "assessment": "Incorrect in stated context; independently compared against cited source and explicitly explained in final rationale."
+          },
+          {
+            "index": 3,
+            "text": "Assume lidocaine is present even though it is absent from the label",
+            "correct": false,
+            "assessment": "Incorrect in stated context; independently compared against cited source and explicitly explained in final rationale."
+          }
+        ],
+        "rationaleEachAlternativeReconciled": true
+      }
+    ],
+    "embeddedCheckReviews": [
+      {
+        "lesson": "local-anesthetic-pharmacology",
+        "finalCheck": {
+          "question": "A procedure uses lidocaine infiltration plus a bupivacaine regional block. How should systemic exposure be considered?",
+          "choices": [
+            "As one additive local-anesthetic toxicity burden",
+            "As unrelated because the molecules differ",
+            "Only the bupivacaine dose matters",
+            "Only the lidocaine dose matters"
+          ],
+          "answer": 0,
+          "rationale": "Systemic toxic effects of lidocaine and bupivacaine are additive, so both exposures belong in the assessment. Different molecules do not create independent toxicity allowances. Counting only bupivacaine misses lidocaine exposure; counting only lidocaine misses bupivacaine. Review the actual products, doses, routes, timing and patient factors, and do not treat dose arithmetic as authorization to combine them.",
+          "reviewHref": "#local-anesthetic-pharmacology"
+        },
+        "reviewedSources": [
+          "bupivacaine"
+        ],
+        "allFourChoicesIndividuallyCompared": true,
+        "bestAnswerAndAllAlternativesExplained": true
+      },
+      {
+        "lesson": "local-anesthetic-toxicity",
+        "finalCheck": {
+          "question": "A 60 kg patient develops seizure and hypotension immediately after bupivacaine injection. Which lipid dose begins the ASRA pathway?",
+          "choices": [
+            "About 1.5 mL/kg of 20 percent lipid over 2 to 3 minutes",
+            "One 10 mL vial of 10 percent lipid",
+            "A 12 mL/kg bolus all at once",
+            "No lipid until one hour of standard ACLS"
+          ],
+          "answer": 0,
+          "rationale": "For this 60-kg patient, 1.5 mL/kg gives a 90-mL bolus of 20% lipid over about 2 to 3 minutes, followed by the infusion pathway. A 10-mL vial of 10% lipid is the wrong concentration and quantity. The 12 mL/kg figure is a cumulative maximum across boluses and infusion, not a single bolus. Waiting an hour delays early rescue; LAST resuscitation uses the checklist modifications alongside immediate airway and circulatory support.",
+          "reviewHref": "#local-anesthetic-toxicity"
+        },
+        "reviewedSources": [
+          "asra",
+          "aha"
+        ],
+        "allFourChoicesIndividuallyCompared": true,
+        "bestAnswerAndAllAlternativesExplained": true
+      }
+    ],
+    "wholeLessonMetadataReviews": [
+      {
+        "slug": "local-anesthetic-pharmacology",
+        "titleSummaryConceptsApplicationKeyPointsReviewed": true,
+        "sourceScope": [
+          "pharmacology:Mechanism/pKa"
+        ],
+        "finding": "Teaching scope matches its clinical mechanism/product or recognition/rescue purpose."
+      },
+      {
+        "slug": "local-anesthetic-toxicity",
+        "titleSummaryConceptsApplicationKeyPointsReviewed": true,
+        "sourceScope": [
+          "asra:Checklist",
+          "aha:21.9"
+        ],
+        "finding": "Teaching scope matches its clinical mechanism/product or recognition/rescue purpose."
+      }
+    ],
+    "figureReviews": [
+      {
+        "type": "periop-local-anesthetic",
+        "labelsRead": 14,
+        "source": "pharmacology mechanism/total exposure; bupivacaine label",
+        "finding": "Original conceptual three-stage diagram correctly separates membrane entry, channel block and systemic risk."
+      },
+      {
+        "type": "periop-last",
+        "labelsRead": 14,
+        "source": "ASRA checklist/AHA21.9",
+        "finding": "Airway/seizure,20% lipid,and medication modification clinically agree; illustrates priorities without substituting for full checklist."
+      }
+    ],
+    "bookDiscrepancies": [
+      {
+        "page": 726,
+        "claim": "All anesthesia shares sodium mechanism",
+        "resolution": "Local agents have sodium blockade; general-anesthetic mechanisms remain for induction unit."
+      },
+      {
+        "page": 726,
+        "claim": "Blanket dual-route lidocaine ban",
+        "resolution": "Topical label requires total-dose accounting; teach exact-product and protocol reconciliation without authorizing concurrent IV/regional use."
+      }
+    ],
+    "originalSourceGlyphCorrections": {
+      "url": "https://asra.com/docs/default-source/guidelines-articles/local-anesthetic-systemic-toxicity-rgb.pdf?sfvrsn=33b348e_2",
+      "sha256": "49854f19cc3b192c59ae2220036a853665642f9e57069b1287e4ec99d5644a36",
+      "originalOnePageRenderedAndViewed": true,
+      "epinephrineSymbol": "≤1 mcg/kg",
+      "continuationSymbol": "≥15 minutes",
+      "extractionDiscrepancy": "Extracted text omits underlines; source image establishes inclusive thresholds."
+    },
+    "wholeParentVerified": false,
+    "wholeChapter53or81Verified": false
+  },
+  "independentCalculations": {
+    "status": "passed",
+    "method": "Independent Decimal recomputation from prescribed factors; units distinguished",
+    "results": {
+      "lipidBolus_mL": "90.0",
+      "lipidRate_mL_per_min": "15.00",
+      "lipidRate_mL_per_hour": "900.00",
+      "lipidCumulativeMaximum_mL": "720",
+      "lipidRemaining_mL": "330",
+      "lidocaineTopical_mg": "80",
+      "lidocaineInjectable_mg": "50",
+      "lidocaineTotal_mg": "130",
+      "epinephrineConcentrationRatio": "1E+2",
+      "bupivacaineHClToExparelMaximumFraction": "0.5"
+    },
+    "noArithmeticResultEstablishesClinicalSafety": true
+  },
+  "validation": {
+    "productionBuild": {
+      "status": "passed",
+      "terminalExitCode": 0,
+      "command": "next build --webpack",
+      "productionCandidate": true
+    },
+    "structure": {
+      "modules": 1,
+      "questions": 83,
+      "hardErrors": [],
+      "sourceGaps": [],
+      "sizeAdvisories": [
+        {
+          "module": "perioperative-critical-care-pharmacology",
+          "questions": 83,
+          "review": "Confirm topic coverage in the clinical audit ledger"
+        }
+      ],
+      "thinLessons": [
+        {
+          "module": "perioperative-critical-care-pharmacology",
+          "lesson": "neuromuscular-blockade-foundations",
+          "count": 4
+        },
+        {
+          "module": "perioperative-critical-care-pharmacology",
+          "lesson": "succinylcholine-safety",
+          "count": 4
+        },
+        {
+          "module": "perioperative-critical-care-pharmacology",
+          "lesson": "nondepolarizing-agent-selection",
+          "count": 5
+        },
+        {
+          "module": "perioperative-critical-care-pharmacology",
+          "lesson": "local-anesthetic-pharmacology",
+          "count": 6
+        },
+        {
+          "module": "perioperative-critical-care-pharmacology",
+          "lesson": "local-anesthetic-toxicity",
+          "count": 6
+        },
+        {
+          "module": "perioperative-critical-care-pharmacology",
+          "lesson": "malignant-hyperthermia",
+          "count": 6
+        },
+        {
+          "module": "perioperative-critical-care-pharmacology",
+          "lesson": "neuromuscular-blockade-safety",
+          "count": 6
+        },
+        {
+          "module": "perioperative-critical-care-pharmacology",
+          "lesson": "perioperative-stress-ulcer",
+          "count": 7
+        }
+      ],
+      "weakestModules": [
+        {
+          "module": "perioperative-critical-care-pharmacology",
+          "lessons": 11,
+          "questions": 83,
+          "minimumLessonCoverage": 4
+        }
+      ]
+    },
+    "wholeSiteBaselineIssueContinuity": {
+      "status": "passed",
+      "preexistingHardErrorsAndSourceGapsUnchanged": true,
+      "preexistingAdvisoryIdentitiesAndOtherModuleEntriesUnchanged": true,
+      "scopeSizeCountBefore": 81,
+      "scopeSizeCountAfter": 83,
+      "localPharmacologyThinCountBefore": 4,
+      "localPharmacologyThinCountAfter": 6,
+      "hardErrors": 34,
+      "sizeAdvisories": 37,
+      "thinLessons": 360
+    },
+    "objectPreservation": {
+      "status": "passed",
+      "wholeLessonsReviewed": 2,
+      "wholeScopedBodies": 17,
+      "wholeQuestionsReviewed": 12,
+      "all48QuestionChoicesReviewed": true,
+      "all8EmbeddedChoicesReviewed": true,
+      "committedBankBefore": 81,
+      "committedBankAfter": 83,
+      "existing81IdsOrderStemsChoicesKeysPreserved": true,
+      "newQuestionsFromPreviouslyUncommittedDrafts": 2,
+      "other71WholeCommittedQuestionsUnchanged": true,
+      "otherNineCommittedLessonsUnchanged": true,
+      "other1179CumulativeObjectsUnchanged": true,
+      "associatedCumulativeItems": [
+        "cumulative-perioperative-critical-care-pharmacology-periop-local-hepatic"
+      ],
+      "allParentAssociatedCumulativeItems": [
+        "cumulative-perioperative-critical-care-pharmacology-periop-pediatric-reversal-1",
+        "cumulative-perioperative-critical-care-pharmacology-periop-nmb-exit-plan",
+        "cumulative-perioperative-critical-care-pharmacology-periop-local-hepatic",
+        "cumulative-perioperative-critical-care-pharmacology-periop-antifib-dilution",
+        "cumulative-perioperative-critical-care-pharmacology-periop-pph-prophylaxis"
+      ],
+      "all1180CumulativeIdsAndOrderPreserved": true,
+      "moduleCumulativeOriginsExplicitlyRetained": true,
+      "other231ModulesUnchanged": true,
+      "all30ReferencesPreserved": true,
+      "addedReferences": 6,
+      "workingBankBefore": 96,
+      "workingLessonsBefore": 12,
+      "wholeParentVerified": false
+    },
+    "browser": {
+      "status": "passed",
+      "results": [
+        {
+          "width": 1440,
+          "exactWholeBodies": 17,
+          "wholeChecksAllFourOptionsGraded": 2,
+          "wholeQuestionsShuffledCorrectIncorrectFeedbackAndAnchorsVerified": 12,
+          "oneScopedCumulativeCaseShuffledCorrectIncorrectAndReviewLinkVerified": true,
+          "other1179CumulativeObjectsUnchanged": true,
+          "allReferencesExact": 36,
+          "noHorizontalOverflow": true,
+          "diagrams": [
+            {
+              "width": 1440,
+              "slug": "perioperative-critical-care-pharmacology",
+              "lessonKey": "local-anesthetic-pharmacology",
+              "labels": [
+                {
+                  "tag": "SPAN",
+                  "text": "Regional pharmacology",
+                  "overflow": false,
+                  "fontSize": 10.88
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Membrane access and sodium-channel binding create local block",
+                  "overflow": false,
+                  "fontSize": 37.6
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "01",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Cross",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Neutral fraction",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Uncharged drug moves through tissue and axonal membrane.",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "02",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Bind",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Charged fraction",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Protonated drug reaches the intracellular sodium-channel site.",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "03",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Contain",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Total exposure",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Dose, blood flow, organ function, and every local anesthetic shape systemic risk.",
+                  "overflow": false,
+                  "fontSize": 14
+                }
+              ],
+              "allTextWithinBounds": true
+            },
+            {
+              "width": 1440,
+              "slug": "perioperative-critical-care-pharmacology",
+              "lessonKey": "local-anesthetic-toxicity",
+              "labels": [
+                {
+                  "tag": "SPAN",
+                  "text": "LAST rescue",
+                  "overflow": false,
+                  "fontSize": 10.88
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Stop exposure, protect physiology, and use lipid early",
+                  "overflow": false,
+                  "fontSize": 37.6
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "01",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Stabilize",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Airway and seizure",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Prevent hypoxemia, hypercapnia, and acidosis while controlling seizure.",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "02",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Rescue",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "20 percent lipid",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Use the current ASRA weight-based bolus and infusion pathway.",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "03",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Modify",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Not standard ACLS",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Use smaller epinephrine and avoid vasopressin and other aggravating drugs.",
+                  "overflow": false,
+                  "fontSize": 14
+                }
+              ],
+              "allTextWithinBounds": true
+            }
+          ]
+        },
+        {
+          "width": 390,
+          "exactWholeBodies": 17,
+          "wholeChecksAllFourOptionsGraded": 2,
+          "wholeQuestionsShuffledCorrectIncorrectFeedbackAndAnchorsVerified": 12,
+          "oneScopedCumulativeCaseShuffledCorrectIncorrectAndReviewLinkVerified": true,
+          "other1179CumulativeObjectsUnchanged": true,
+          "allReferencesExact": 36,
+          "noHorizontalOverflow": true,
+          "diagrams": [
+            {
+              "width": 320,
+              "slug": "perioperative-critical-care-pharmacology",
+              "lessonKey": "local-anesthetic-pharmacology",
+              "labels": [
+                {
+                  "tag": "SPAN",
+                  "text": "Regional pharmacology",
+                  "overflow": false,
+                  "fontSize": 10.88
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Membrane access and sodium-channel binding create local block",
+                  "overflow": false,
+                  "fontSize": 23.2
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "01",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Cross",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Neutral fraction",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Uncharged drug moves through tissue and axonal membrane.",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "02",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Bind",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Charged fraction",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Protonated drug reaches the intracellular sodium-channel site.",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "03",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Contain",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Total exposure",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Dose, blood flow, organ function, and every local anesthetic shape systemic risk.",
+                  "overflow": false,
+                  "fontSize": 14
+                }
+              ],
+              "allTextWithinBounds": true
+            },
+            {
+              "width": 320,
+              "slug": "perioperative-critical-care-pharmacology",
+              "lessonKey": "local-anesthetic-toxicity",
+              "labels": [
+                {
+                  "tag": "SPAN",
+                  "text": "LAST rescue",
+                  "overflow": false,
+                  "fontSize": 10.88
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Stop exposure, protect physiology, and use lipid early",
+                  "overflow": false,
+                  "fontSize": 23.2
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "01",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Stabilize",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Airway and seizure",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Prevent hypoxemia, hypercapnia, and acidosis while controlling seizure.",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "02",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Rescue",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "20 percent lipid",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Use the current ASRA weight-based bolus and infusion pathway.",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "03",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Modify",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Not standard ACLS",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Use smaller epinephrine and avoid vasopressin and other aggravating drugs.",
+                  "overflow": false,
+                  "fontSize": 14
+                }
+              ],
+              "allTextWithinBounds": true
+            },
+            {
+              "width": 390,
+              "slug": "perioperative-critical-care-pharmacology",
+              "lessonKey": "local-anesthetic-pharmacology",
+              "labels": [
+                {
+                  "tag": "SPAN",
+                  "text": "Regional pharmacology",
+                  "overflow": false,
+                  "fontSize": 10.88
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Membrane access and sodium-channel binding create local block",
+                  "overflow": false,
+                  "fontSize": 23.2
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "01",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Cross",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Neutral fraction",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Uncharged drug moves through tissue and axonal membrane.",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "02",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Bind",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Charged fraction",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Protonated drug reaches the intracellular sodium-channel site.",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "03",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Contain",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Total exposure",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Dose, blood flow, organ function, and every local anesthetic shape systemic risk.",
+                  "overflow": false,
+                  "fontSize": 14
+                }
+              ],
+              "allTextWithinBounds": true
+            },
+            {
+              "width": 390,
+              "slug": "perioperative-critical-care-pharmacology",
+              "lessonKey": "local-anesthetic-toxicity",
+              "labels": [
+                {
+                  "tag": "SPAN",
+                  "text": "LAST rescue",
+                  "overflow": false,
+                  "fontSize": 10.88
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Stop exposure, protect physiology, and use lipid early",
+                  "overflow": false,
+                  "fontSize": 23.2
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "01",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Stabilize",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Airway and seizure",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Prevent hypoxemia, hypercapnia, and acidosis while controlling seizure.",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "02",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Rescue",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "20 percent lipid",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Use the current ASRA weight-based bolus and infusion pathway.",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "03",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Modify",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Not standard ACLS",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Use smaller epinephrine and avoid vasopressin and other aggravating drugs.",
+                  "overflow": false,
+                  "fontSize": 14
+                }
+              ],
+              "allTextWithinBounds": true
+            },
+            {
+              "width": 719,
+              "slug": "perioperative-critical-care-pharmacology",
+              "lessonKey": "local-anesthetic-pharmacology",
+              "labels": [
+                {
+                  "tag": "SPAN",
+                  "text": "Regional pharmacology",
+                  "overflow": false,
+                  "fontSize": 10.88
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Membrane access and sodium-channel binding create local block",
+                  "overflow": false,
+                  "fontSize": 24.446
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "01",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Cross",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Neutral fraction",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Uncharged drug moves through tissue and axonal membrane.",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "02",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Bind",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Charged fraction",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Protonated drug reaches the intracellular sodium-channel site.",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "03",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Contain",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Total exposure",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Dose, blood flow, organ function, and every local anesthetic shape systemic risk.",
+                  "overflow": false,
+                  "fontSize": 14
+                }
+              ],
+              "allTextWithinBounds": true
+            },
+            {
+              "width": 719,
+              "slug": "perioperative-critical-care-pharmacology",
+              "lessonKey": "local-anesthetic-toxicity",
+              "labels": [
+                {
+                  "tag": "SPAN",
+                  "text": "LAST rescue",
+                  "overflow": false,
+                  "fontSize": 10.88
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Stop exposure, protect physiology, and use lipid early",
+                  "overflow": false,
+                  "fontSize": 24.446
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "01",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Stabilize",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Airway and seizure",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Prevent hypoxemia, hypercapnia, and acidosis while controlling seizure.",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "02",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Rescue",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "20 percent lipid",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Use the current ASRA weight-based bolus and infusion pathway.",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "03",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Modify",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Not standard ACLS",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Use smaller epinephrine and avoid vasopressin and other aggravating drugs.",
+                  "overflow": false,
+                  "fontSize": 14
+                }
+              ],
+              "allTextWithinBounds": true
+            },
+            {
+              "width": 720,
+              "slug": "perioperative-critical-care-pharmacology",
+              "lessonKey": "local-anesthetic-pharmacology",
+              "labels": [
+                {
+                  "tag": "SPAN",
+                  "text": "Regional pharmacology",
+                  "overflow": false,
+                  "fontSize": 10.88
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Membrane access and sodium-channel binding create local block",
+                  "overflow": false,
+                  "fontSize": 24.48
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "01",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Cross",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Neutral fraction",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Uncharged drug moves through tissue and axonal membrane.",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "02",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Bind",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Charged fraction",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Protonated drug reaches the intracellular sodium-channel site.",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "03",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Contain",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Total exposure",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Dose, blood flow, organ function, and every local anesthetic shape systemic risk.",
+                  "overflow": false,
+                  "fontSize": 14
+                }
+              ],
+              "allTextWithinBounds": true
+            },
+            {
+              "width": 720,
+              "slug": "perioperative-critical-care-pharmacology",
+              "lessonKey": "local-anesthetic-toxicity",
+              "labels": [
+                {
+                  "tag": "SPAN",
+                  "text": "LAST rescue",
+                  "overflow": false,
+                  "fontSize": 10.88
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Stop exposure, protect physiology, and use lipid early",
+                  "overflow": false,
+                  "fontSize": 24.48
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "01",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Stabilize",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Airway and seizure",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Prevent hypoxemia, hypercapnia, and acidosis while controlling seizure.",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "02",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Rescue",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "20 percent lipid",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Use the current ASRA weight-based bolus and infusion pathway.",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "03",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Modify",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Not standard ACLS",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Use smaller epinephrine and avoid vasopressin and other aggravating drugs.",
+                  "overflow": false,
+                  "fontSize": 14
+                }
+              ],
+              "allTextWithinBounds": true
+            },
+            {
+              "width": 721,
+              "slug": "perioperative-critical-care-pharmacology",
+              "lessonKey": "local-anesthetic-pharmacology",
+              "labels": [
+                {
+                  "tag": "SPAN",
+                  "text": "Regional pharmacology",
+                  "overflow": false,
+                  "fontSize": 10.88
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Membrane access and sodium-channel binding create local block",
+                  "overflow": false,
+                  "fontSize": 24.514
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "01",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Cross",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Neutral fraction",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Uncharged drug moves through tissue and axonal membrane.",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "02",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Bind",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Charged fraction",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Protonated drug reaches the intracellular sodium-channel site.",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "03",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Contain",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Total exposure",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Dose, blood flow, organ function, and every local anesthetic shape systemic risk.",
+                  "overflow": false,
+                  "fontSize": 14
+                }
+              ],
+              "allTextWithinBounds": true
+            },
+            {
+              "width": 721,
+              "slug": "perioperative-critical-care-pharmacology",
+              "lessonKey": "local-anesthetic-toxicity",
+              "labels": [
+                {
+                  "tag": "SPAN",
+                  "text": "LAST rescue",
+                  "overflow": false,
+                  "fontSize": 10.88
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Stop exposure, protect physiology, and use lipid early",
+                  "overflow": false,
+                  "fontSize": 24.514
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "01",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Stabilize",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Airway and seizure",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Prevent hypoxemia, hypercapnia, and acidosis while controlling seizure.",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "02",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Rescue",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "20 percent lipid",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Use the current ASRA weight-based bolus and infusion pathway.",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "03",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Modify",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Not standard ACLS",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Use smaller epinephrine and avoid vasopressin and other aggravating drugs.",
+                  "overflow": false,
+                  "fontSize": 14
+                }
+              ],
+              "allTextWithinBounds": true
+            }
+          ]
+        }
+      ],
+      "captures": [
+        "hero-perioperative-critical-care-pharmacology-1440.png",
+        "body-local-anesthetic-pharmacology-0-1440.png",
+        "body-local-anesthetic-pharmacology-1-1440.png",
+        "body-local-anesthetic-pharmacology-2-1440.png",
+        "body-local-anesthetic-pharmacology-3-1440.png",
+        "body-local-anesthetic-pharmacology-4-1440.png",
+        "body-local-anesthetic-pharmacology-5-1440.png",
+        "body-local-anesthetic-pharmacology-6-1440.png",
+        "body-local-anesthetic-pharmacology-7-1440.png",
+        "body-local-anesthetic-pharmacology-8-1440.png",
+        "body-local-anesthetic-pharmacology-9-1440.png",
+        "summary-local-anesthetic-pharmacology-1440.png",
+        "concepts-local-anesthetic-pharmacology-1440.png",
+        "keypoints-local-anesthetic-pharmacology-1440.png",
+        "application-local-anesthetic-pharmacology-1440.png",
+        "figure-local-anesthetic-pharmacology-1440.png",
+        "check-local-anesthetic-pharmacology-1440.png",
+        "body-local-anesthetic-toxicity-0-1440.png",
+        "body-local-anesthetic-toxicity-1-1440.png",
+        "body-local-anesthetic-toxicity-2-1440.png",
+        "body-local-anesthetic-toxicity-3-1440.png",
+        "body-local-anesthetic-toxicity-4-1440.png",
+        "body-local-anesthetic-toxicity-5-1440.png",
+        "body-local-anesthetic-toxicity-6-1440.png",
+        "summary-local-anesthetic-toxicity-1440.png",
+        "concepts-local-anesthetic-toxicity-1440.png",
+        "keypoints-local-anesthetic-toxicity-1440.png",
+        "application-local-anesthetic-toxicity-1440.png",
+        "figure-local-anesthetic-toxicity-1440.png",
+        "check-local-anesthetic-toxicity-1440.png",
+        "references-perioperative-critical-care-pharmacology-1440.png",
+        "bank-periop-local-additive-1440.png",
+        "bank-periop-last-recognition-1440.png",
+        "bank-periop-last-observation-1440.png",
+        "bank-periop-last-bolus-1440.png",
+        "bank-periop-last-ceiling-1440.png",
+        "bank-periop-lidocaine-combined-exposure-1440.png",
+        "bank-periop-local-aspiration-1440.png",
+        "bank-periop-epinephrine-product-mixup-1440.png",
+        "bank-periop-local-route-1440.png",
+        "bank-periop-local-hepatic-1440.png",
+        "bank-periop-last-rate-1440.png",
+        "bank-periop-last-drugs-1440.png",
+        "cumulative-cumulative-perioperative-critical-care-pharmacology-periop-local-hepatic-1440.png",
+        "hero-perioperative-critical-care-pharmacology-390.png",
+        "body-local-anesthetic-pharmacology-0-390.png",
+        "body-local-anesthetic-pharmacology-1-390.png",
+        "body-local-anesthetic-pharmacology-2-390.png",
+        "body-local-anesthetic-pharmacology-3-390.png",
+        "body-local-anesthetic-pharmacology-4-390.png",
+        "body-local-anesthetic-pharmacology-5-390.png",
+        "body-local-anesthetic-pharmacology-6-390.png",
+        "body-local-anesthetic-pharmacology-7-390.png",
+        "body-local-anesthetic-pharmacology-8-390.png",
+        "body-local-anesthetic-pharmacology-9-390.png",
+        "summary-local-anesthetic-pharmacology-390.png",
+        "concepts-local-anesthetic-pharmacology-390.png",
+        "keypoints-local-anesthetic-pharmacology-390.png",
+        "application-local-anesthetic-pharmacology-390.png",
+        "figure-local-anesthetic-pharmacology-390.png",
+        "check-local-anesthetic-pharmacology-390.png",
+        "body-local-anesthetic-toxicity-0-390.png",
+        "body-local-anesthetic-toxicity-1-390.png",
+        "body-local-anesthetic-toxicity-2-390.png",
+        "body-local-anesthetic-toxicity-3-390.png",
+        "body-local-anesthetic-toxicity-4-390.png",
+        "body-local-anesthetic-toxicity-5-390.png",
+        "body-local-anesthetic-toxicity-6-390.png",
+        "summary-local-anesthetic-toxicity-390.png",
+        "concepts-local-anesthetic-toxicity-390.png",
+        "keypoints-local-anesthetic-toxicity-390.png",
+        "application-local-anesthetic-toxicity-390.png",
+        "figure-local-anesthetic-toxicity-390.png",
+        "check-local-anesthetic-toxicity-390.png",
+        "references-perioperative-critical-care-pharmacology-390.png",
+        "bank-periop-local-additive-390.png",
+        "bank-periop-last-recognition-390.png",
+        "bank-periop-last-observation-390.png",
+        "bank-periop-last-bolus-390.png",
+        "bank-periop-last-ceiling-390.png",
+        "bank-periop-lidocaine-combined-exposure-390.png",
+        "bank-periop-local-aspiration-390.png",
+        "bank-periop-epinephrine-product-mixup-390.png",
+        "bank-periop-local-route-390.png",
+        "bank-periop-local-hepatic-390.png",
+        "bank-periop-last-rate-390.png",
+        "bank-periop-last-drugs-390.png",
+        "cumulative-cumulative-perioperative-critical-care-pharmacology-periop-local-hepatic-390.png",
+        "native-figure-local-anesthetic-pharmacology-320.png",
+        "native-figure-local-anesthetic-toxicity-320.png",
+        "native-figure-local-anesthetic-pharmacology-721.png",
+        "native-figure-local-anesthetic-toxicity-721.png"
+      ],
+      "errors": []
+    },
+    "visualInspection": {
+      "status": "passed",
+      "checkedAt": "2026-10-06T19:37:01.296463+00:00",
+      "all88DesktopMobileCapturesReviewedIn44UnscaledPairs": true,
+      "all15BoardsViewedAtOriginalDetail": true,
+      "boardsReviewed": [
+        "board-00.png",
+        "board-01.png",
+        "board-02.png",
+        "board-03.png",
+        "board-04.png",
+        "board-05.png",
+        "board-06.png",
+        "board-07.png",
+        "board-08.png",
+        "board-09.png",
+        "board-10.png",
+        "board-11.png",
+        "board-12.png",
+        "board-13.png",
+        "board-14.png"
+      ],
+      "allFourNativeFiguresIndividuallyViewed": true,
+      "nativeFigureWidthsReviewed": [
+        320,
+        721
+      ],
+      "automatedFigureWidths": [
+        320,
+        390,
+        719,
+        720,
+        721,
+        1440
+      ],
+      "twoWholeLessons17BodiesMetadataTwoChecks12QuestionsOneAffectedCumulativeCase36ReferencesReviewed": true,
+      "legibleTextAndCompleteFeedback": true,
+      "noClippedTextOrHorizontalOverflow": true,
+      "allFigureFocusAndBodyLabelsAtLeast14px": true,
+      "bookPdfPagesAndOriginalASRAActuallyViewed": [
+        726,
+        996,
+        "ASRA original one-page checklist"
+      ],
+      "finalImagesMatchActuallyInspectedHashes": true
+    },
+    "limits": "Private unauthenticated built candidate. Runtime checks cover both selected whole lessons and12 anchored questions,all8 check options and1 affected cumulative case,at1440/390. Both diagrams tested at320/390/719/720/721/1440. Other lessons/questions remain under broader review; existing unrelated structural issues remain. No authenticated account/progress backend or production publication claimed."
+  },
+  "release": {
+    "branch": "audit/rxprep-content-2026-09-24",
+    "commit": null,
+    "push": "pending",
+    "receipt": "enteral-nutrition-broader-perioperative-local-release.json",
+    "mainMerge": "not performed",
+    "production": "not verified"
+  },
+  "remainingReview": "Continue perioperative-critical-care-pharmacology with induction-agent-selection,then malignant hyperthermia,NMBA foundations/agent selection/safety,reversal and antifibrinolytic/hemostatic scopes. Preserve all unrelated uncommitted additions including12th hemostatic lesson and ten nonlocal working lesson objects. Compare full current parents and bank against sources before closing them. SUP committed8-body lesson retains its prior exact review; three additional working SUP bodies are not certified here. Return to remaining feeding dependencies,then Chapter11 printed161/PDF169; Chapter1 printed7/PDF19 checklist15 stays open. Continue the full82-chapter goal.",
+  "wholeGoalComplete": false,
+  "privateSourceFilesInGit": false
+}

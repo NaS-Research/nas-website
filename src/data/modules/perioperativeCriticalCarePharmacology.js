@@ -172,3 +172,177 @@ export const perioperativeCriticalCarePharmacologyModule = {
   ],
   questionBank: perioperativeCriticalCarePharmacologyQuestionBank,
 };
+
+
+// Reconcile complete local-anesthetic teaching with product labels and rescue guidance.
+Object.assign(perioperativeCriticalCarePharmacologyModule.submodules.find((lesson) => lesson.slug === "local-anesthetic-pharmacology"), {
+  "slug": "local-anesthetic-pharmacology",
+  "title": "Map Local Anesthetic Effect and Disposition",
+  "visual": "periop-local-anesthetic",
+  "summary": "Local anesthetics suppress nerve conduction mainly through voltage-gated sodium-channel blockade. For commonly used injectable agents, ionization affects membrane access and channel binding. Tissue pH, lipid solubility, protein binding, perfusion, formulation and metabolism shape effect and systemic risk.",
+  "concepts": [
+    "Sodium channels",
+    "Ionization",
+    "Amides",
+    "Esters",
+    "Additive toxicity"
+  ],
+  "application": "Before administration, reconcile every local-anesthetic product, concentration, planned volume, route, epinephrine content, organ limitation, and rescue readiness.",
+  "lesson": [
+    {
+      "heading": "Connect pH to access and block",
+      "body": "The uncharged fraction crosses lipid membrane, while the protonated form binds within the sodium channel. Inflamed acidic tissue shifts drug toward ionization before membrane entry and can slow or weaken block. Use-dependent binding favors channels that open repeatedly, which explains selective suppression of rapidly firing fibers."
+    },
+    {
+      "heading": "Distinguish disposition families",
+      "body": "Lidocaine, bupivacaine and ropivacaine are amide agents whose clearance depends mainly on hepatic metabolism. Many ester agents undergo plasma cholinesterase hydrolysis; chloroprocaine produces a chlorinated aminobenzoic-acid metabolite. These family patterns do not mean that every agent has the same clearance or that an ester is automatically safe in liver disease: the enzyme is synthesized in the liver, and chloroprocaine labeling calls for caution in hepatic disease. Check the exact agent and the patient rather than using the suffix alone."
+    },
+    {
+      "heading": "Connect onset, potency and duration to the tissue",
+      "body": "The proportion of uncharged drug helps determine membrane entry and onset; acidic inflamed tissue can reduce effective access. Greater lipid solubility generally increases potency, while greater protein binding tends to prolong block. Tissue blood flow and the agent's vasoactivity also affect how rapidly drug leaves the injection site. Epinephrine can reduce local absorption and prolong effect, but its own cardiovascular effects and product-specific precautions must be assessed. None of these properties establishes a safe dose by itself."
+    },
+    {
+      "heading": "Match the formulation to the route",
+      "body": "Standard bupivacaine injection labeling contraindicates intravenous regional anesthesia (Bier block) and obstetrical paracervical block; cardiac arrest and death have occurred with Bier block. The 0.75% concentration is not recommended for obstetrical anesthesia. Avoid preservative-containing multidose vials for epidural or caudal anesthesia. The standard injection product reviewed here is not for intrathecal use; verify the exact formulation and its labeled route rather than substituting it for a spinal preparation."
+    },
+    {
+      "heading": "Adjust exposure and distrust a negative aspiration",
+      "body": "Consider lower doses and closer toxicity monitoring with moderate or severe hepatic impairment, particularly with repeated bupivacaine dosing. Reduced doses are also needed with impaired cardiovascular function. Aspirate and inject incrementally as appropriate, but a negative aspiration cannot exclude intravascular or intrathecal placement. Continue monitoring after each injection."
+    },
+    {
+      "heading": "Reconcile lidocaine across formulations",
+      "body": "The 4% topical-solution label requires counting lidocaine from every formulation used together. Topical exposure is not a separate allowance, and that solution must never be injected. Verify the exact products, timing, absorption site and protocol before combining routes; a total-milligram calculation alone does not establish safety or authorize concurrent IV and regional treatment."
+    },
+    {
+      "heading": "Distinguish epinephrine from the combination product",
+      "body": "Concentrated topical epinephrine 1 mg/mL has been mistaken for local anesthetic with dilute epinephrine, causing fatal injections. Verify the full drug name, concentration and route before preparation and again before administration. A lidocaine/epinephrine product containing epinephrine 0.01 mg/mL is not interchangeable with epinephrine 1 mg/mL."
+    },
+    {
+      "heading": "Treat all exposure as one toxicity budget",
+      "body": "Local-anesthetic systemic toxic effects are additive across products, including different agents and injection sites. Use the lowest effective dose with appropriate aspiration, fractional injection and continuous observation of consciousness, ventilation, rhythm and circulation. Oxygen, resuscitation equipment, skilled personnel and the LAST kit must be immediately available. Adding milligram amounts helps reconcile exposure but does not establish a universal safe combined dose or authorize a mixture; standard bupivacaine labeling does not recommend mixing or prior or intercurrent use of other local anesthetics because clinical data are insufficient."
+    },
+    {
+      "heading": "Keep liposomal bupivacaine product-specific",
+      "body": "EXPAREL is a liposomal suspension and cannot be substituted dose-for-dose for other bupivacaine products, even at the same stated strength. Do not admix it with lidocaine or other non-bupivacaine local anesthetics: direct contact can release unencapsulated bupivacaine rapidly. Its label permits administration after local lidocaine only after a delay of at least 20 minutes. When bupivacaine HCl is admixed or injected immediately beforehand, its milligram dose must not exceed one-half the EXPAREL dose. Follow the indication-specific regimen and the warning to avoid additional local anesthetics within 96 hours afterward; a planned immediate-release block in the labeled perioperative regimen is not permission for unrestricted subsequent dosing."
+    },
+    {
+      "heading": "Recognize a separate oxidant complication",
+      "body": "Local anesthetics, including benzocaine and lidocaine, can cause methemoglobinemia as well as sodium-channel toxicity. Cyanosis, dyspnea, fatigue or an oxygen-saturation discrepancy after exposure needs urgent assessment, even when the presentation does not follow the usual LAST pattern. Stop the implicated oxidizing medicine and arrange oxygen and definitive treatment through the clinical team. G6PD deficiency, cardiopulmonary disease, young infants and other oxidizing drugs can increase vulnerability; methylene-blue selection also requires assessment of G6PD status. Lipid rescue for severe LAST does not replace the methemoglobinemia treatment pathway."
+    }
+  ],
+  "keyPoints": [
+    "Neutral drug crosses membrane.",
+    "Charged drug binds the channel.",
+    "Clearance and route precautions depend on the exact agent and formulation.",
+    "Different local anesthetics still share additive systemic toxicity."
+  ],
+  "check": {
+    "question": "A procedure uses lidocaine infiltration plus a bupivacaine regional block. How should systemic exposure be considered?",
+    "choices": [
+      "As one additive local-anesthetic toxicity burden",
+      "As unrelated because the molecules differ",
+      "Only the bupivacaine dose matters",
+      "Only the lidocaine dose matters"
+    ],
+    "answer": 0,
+    "rationale": "Systemic toxic effects of lidocaine and bupivacaine are additive, so both exposures belong in the assessment. Different molecules do not create independent toxicity allowances. Counting only bupivacaine misses lidocaine exposure; counting only lidocaine misses bupivacaine. Review the actual products, doses, routes, timing and patient factors, and do not treat dose arithmetic as authorization to combine them.",
+    "reviewHref": "#local-anesthetic-pharmacology"
+  }
+});
+Object.assign(perioperativeCriticalCarePharmacologyModule.submodules.find((lesson) => lesson.slug === "local-anesthetic-toxicity"), {
+  "slug": "local-anesthetic-toxicity",
+  "title": "Treat Local Anesthetic Systemic Toxicity as a Distinct Arrest Pathway",
+  "visual": "periop-last",
+  "summary": "LAST can begin with perioral symptoms, tinnitus, altered speech, agitation, or seizure, but severe cardiovascular toxicity can appear abruptly. The rescue sequence differs from standard ACLS because several familiar resuscitation drugs can worsen local-anesthetic cardiotoxicity.",
+  "concepts": [
+    "Recognition",
+    "Airway",
+    "Lipid emulsion",
+    "Modified ACLS",
+    "Observation"
+  ],
+  "application": "Place the ASRA checklist and a complete LAST kit wherever potentially toxic doses are used, then rehearse roles before the emergency occurs.",
+  "lesson": [
+    {
+      "heading": "Stop exposure and stabilize physiology",
+      "body": "Stop injection, call for help, secure oxygenation and ventilation, and prevent acidosis, hypoxemia, and hypercapnia that can intensify toxicity. Prefer a benzodiazepine for seizure when available. Do not wait for a complete textbook progression before activating the rescue pathway."
+    },
+    {
+      "heading": "Give 20 percent lipid emulsion early",
+      "body": "For patients under 70 kg, the ASRA checklist uses an approximately 1.5 mL/kg bolus over 2 to 3 minutes followed by about 0.25 mL/kg/min. For patients over 70 kg, it provides approximately 100 mL over 2 to 3 minutes followed by about 250 mL over 15 to 20 minutes. Persistent instability calls for a repeat bolus and doubled infusion while respecting the checklist maximum of 12 mL/kg. These are ASRA checklist regimens rather than a proven optimal dose for every patient; use the current rescue protocol with continuous reassessment."
+    },
+    {
+      "heading": "Keep the bolus, rate and total separate",
+      "body": "For a 60-kg patient, 1.5 mL/kg gives a 90-mL bolus. The initial 0.25 mL/kg/min infusion is 15 mL/min, or 900 mL/hour. The 12 mL/kg cumulative ceiling is 720 mL, counting boluses and infusion together; it is not an initial bolus. Reassess circulation continuously and obtain expert support for persistent instability."
+    },
+    {
+      "heading": "Modify the resuscitation medicines",
+      "body": "When epinephrine is needed, ASRA prefers smaller doses and specifies an initial dose no greater than 1 microgram/kg. Avoid vasopressin, beta blockers, calcium-channel blockers and additional local anesthetics during LAST resuscitation. These instructions modify the medication pathway while airway support, circulation and indicated resuscitation continue. Obtain early expert and extracorporeal-support consultation for refractory cardiogenic shock."
+    },
+    {
+      "heading": "Keep propofol separate from rescue lipid",
+      "body": "Propofol is not a substitute for 20% lipid rescue: delivering the rescue lipid quantity through propofol would produce a dangerous anesthetic exposure. A benzodiazepine is preferred for LAST-associated seizure. If only propofol is available for seizure control, the ASRA checklist specifies low doses, such as 20 mg increments, with attention to its circulatory depressant effects. That limited seizure use is a different purpose from lipid rescue."
+    },
+    {
+      "heading": "Continue treatment and observation",
+      "body": "After hemodynamic stability, continue lipid for at least 15 minutes while respecting the cumulative maximum. The ASRA checklist specifies observation for 2 hours after seizure and 4 to 6 hours after cardiovascular instability; post-arrest monitoring is individualized. Recurrence or persistent abnormalities requires reassessment rather than automatic discharge when an interval ends."
+    },
+    {
+      "heading": "Escalate persistent conduction or circulatory toxicity",
+      "body": "The 2025 AHA guideline considers sodium bicarbonate reasonable for life-threatening wide-complex tachycardia caused by local-anesthetic toxicity. It also considers extracorporeal life support reasonable for refractory cardiogenic shock. These are indication-specific additions to airway, circulation and lipid rescue, supported largely by limited clinical reports and experimental evidence. Seek toxicology and resuscitation expertise rather than delaying initial support while arranging an advanced treatment."
+    }
+  ],
+  "keyPoints": [
+    "LAST can be neurologic, cardiovascular, or both.",
+    "Early airway control and lipid emulsion matter.",
+    "Use smaller epinephrine doses.",
+    "Avoid vasopressin, beta blockers, calcium-channel blockers, and more local anesthetic."
+  ],
+  "check": {
+    "question": "A 60 kg patient develops seizure and hypotension immediately after bupivacaine injection. Which lipid dose begins the ASRA pathway?",
+    "choices": [
+      "About 1.5 mL/kg of 20 percent lipid over 2 to 3 minutes",
+      "One 10 mL vial of 10 percent lipid",
+      "A 12 mL/kg bolus all at once",
+      "No lipid until one hour of standard ACLS"
+    ],
+    "answer": 0,
+    "rationale": "For this 60-kg patient, 1.5 mL/kg gives a 90-mL bolus of 20% lipid over about 2 to 3 minutes, followed by the infusion pathway. A 10-mL vial of 10% lipid is the wrong concentration and quantity. The 12 mL/kg figure is a cumulative maximum across boluses and infusion, not a single bolus. Waiting an hour delays early rescue; LAST resuscitation uses the checklist modifications alongside immediate airway and circulatory support.",
+    "reviewHref": "#local-anesthetic-toxicity"
+  }
+});
+perioperativeCriticalCarePharmacologyModule.references.push(...[
+  {
+    "label": "Taylor and McLeod: Basic pharmacology of local anaesthetics (2020)",
+    "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7808030/"
+  },
+  {
+    "label": "DailyMed: Chloroprocaine disposition and hepatic precautions",
+    "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=823a2335-05d0-4391-b612-316bfee9b1ea"
+  },
+  {
+    "label": "DailyMed: Lidocaine topical solution 4%, combined exposure and route",
+    "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8f79b023-9bd1-4bd6-8fd0-f9efe88abec0"
+  },
+  {
+    "label": "ISMP Canada: Prevent inadvertent injection of topical epinephrine",
+    "href": "https://www.ismp-canada.org/education/webinars/20100623_Epinephrine/"
+  },
+  {
+    "label": "DailyMed: EXPAREL formulation and compatibility precautions",
+    "href": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=bb5a9e59-0f51-11df-8a39-0800200c9a66"
+  },
+  {
+    "label": "ASRA: Original LAST checklist (2020, version 1.1)",
+    "href": "https://asra.com/docs/default-source/guidelines-articles/local-anesthetic-systemic-toxicity-rgb.pdf?sfvrsn=33b348e_2"
+  }
+].filter((reference) => !perioperativeCriticalCarePharmacologyModule.references.some((existing) => existing.href === reference.href)));
+
+// Retain the existing cumulative origins when adding reviewed local-anesthetic cases.
+perioperativeCriticalCarePharmacologyModule.cumulativeQuestionIds = [
+  "periop-pediatric-reversal-1",
+  "periop-nmb-exit-plan",
+  "periop-local-hepatic",
+  "periop-antifib-dilution",
+  "periop-pph-prophylaxis"
+];

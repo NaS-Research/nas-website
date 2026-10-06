@@ -17,6 +17,6 @@ export default function PerioperativeCriticalCareVisual({ type }) {
   if (!diagram) return null;
   return <figure className="chol-visual" style={{ "--chol-accent": diagram.accent }} aria-label={diagram.title}>
     <figcaption><span>{diagram.eyebrow}</span><strong>{diagram.title}</strong></figcaption>
-    <div className="chol-visual__grid">{diagram.columns.map(([name, action, detail], index) => <div key={name}><span>{String(index + 1).padStart(2, "0")}</span><strong>{name}</strong><em>{action}</em><p>{detail}</p></div>)}</div>
+    <div className="chol-visual__grid">{diagram.columns.map(([name, action, detail], index) => <div key={name}><span>{String(index + 1).padStart(2, "0")}</span><strong>{name}</strong><em style={["periop-local-anesthetic", "periop-last"].includes(type) ? { fontSize: "0.875rem", lineHeight: 1.5 } : undefined}>{action}</em><p style={["periop-local-anesthetic", "periop-last"].includes(type) ? { fontSize: "0.875rem", lineHeight: 1.5 } : undefined}>{detail}</p></div>)}</div>
   </figure>;
 }

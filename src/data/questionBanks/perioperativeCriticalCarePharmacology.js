@@ -1190,3 +1190,180 @@ const approved2026StressUlcerRationales = {
 for (const question of perioperativeCriticalCarePharmacologyQuestionBank) {
   if (Object.hasOwn(approved2026StressUlcerRationales, question.id)) question.rationale = approved2026StressUlcerRationales[question.id];
 }
+
+
+// Explain all alternatives in the source-reconciled local-anesthetic cases.
+for (const [id, updates] of Object.entries({
+  "periop-local-additive": {
+    "id": "periop-local-additive",
+    "question": "A team plans lidocaine infiltration and a bupivacaine block in the same patient. Which safety assumption is correct?",
+    "choices": [
+      "Each drug has a completely independent toxicity allowance",
+      "Different injection sites prevent systemic toxicity",
+      "Their systemic toxic effects are additive",
+      "Only the more concentrated product matters"
+    ],
+    "answer": 2,
+    "rationale": "Both drugs contribute additive systemic toxic effects. Different agents do not have independent toxicity allowances, and different injection sites do not prevent systemic absorption. Concentration alone does not identify which product matters: dose, route, timing, absorption and patient factors all contribute. Reconcile the entire exposure and exact products before administration.",
+    "reviewHref": "#local-anesthetic-pharmacology",
+    "difficulty": "clinical"
+  },
+  "periop-local-hepatic": {
+    "id": "periop-local-hepatic",
+    "question": "A patient with severe hepatic impairment needs repeated bupivacaine injections. What adjustment deserves consideration?",
+    "choices": [
+      "Lower exposure with intensified systemic-toxicity monitoring",
+      "A larger dose because metabolism is hepatic",
+      "No reassessment because injection is local",
+      "Switch to an unmonitored continuous infusion"
+    ],
+    "answer": 0,
+    "rationale": "Severe hepatic impairment can reduce bupivacaine metabolism, particularly during repeated dosing, so consider lower exposure and intensified systemic-toxicity monitoring. Increasing the dose can worsen accumulation. Local injection does not prevent systemic absorption or remove the need for reassessment. An unmonitored infusion continues exposure without the required safety surveillance.",
+    "reviewHref": "#local-anesthetic-pharmacology",
+    "difficulty": "clinical"
+  },
+  "periop-local-route": {
+    "id": "periop-local-route",
+    "question": "Which proposed use of standard bupivacaine injection conflicts with a labeled contraindication?",
+    "choices": [
+      "An appropriately selected peripheral nerve block",
+      "A labeled local infiltration technique",
+      "A properly selected epidural formulation",
+      "Intravenous regional anesthesia using a Bier block"
+    ],
+    "answer": 3,
+    "rationale": "Standard bupivacaine injection is contraindicated for intravenous regional anesthesia using a Bier block because cardiac arrest and death have occurred. Appropriately selected peripheral nerve block and local infiltration are labeled uses. Epidural use requires the correct concentration and preservative-free formulation. These appropriately qualified alternatives do not share the Bier-block contraindication; exact-product labeling still governs each technique.",
+    "reviewHref": "#local-anesthetic-pharmacology",
+    "difficulty": "clinical"
+  },
+  "periop-local-aspiration": {
+    "id": "periop-local-aspiration",
+    "question": "No blood is aspirated before a regional injection. Which conclusion is justified?",
+    "choices": [
+      "Systemic toxicity is impossible",
+      "The result does not exclude intravascular injection; continue the safety precautions",
+      "Monitoring can stop immediately",
+      "The full planned dose can always be injected rapidly"
+    ],
+    "answer": 1,
+    "rationale": "A negative aspiration does not exclude intravascular placement or make systemic toxicity impossible. Continue incremental dosing, appropriate aspiration and clinical monitoring. Stopping monitoring loses the opportunity to detect toxicity. Rapidly injecting the full dose increases exposure without the recommended fractional precautions; the negative result does not justify that action.",
+    "reviewHref": "#local-anesthetic-pharmacology",
+    "difficulty": "clinical"
+  },
+  "periop-last-recognition": {
+    "id": "periop-last-recognition",
+    "question": "Immediately after bupivacaine injection a patient develops a ventricular arrhythmia without reporting tinnitus. What is the best response?",
+    "choices": [
+      "Exclude LAST because the neurologic prodrome is missing",
+      "Give another dose to confirm the reaction",
+      "Stop exposure and activate the LAST pathway while supporting airway and circulation",
+      "Wait for seizure before treating"
+    ],
+    "answer": 2,
+    "rationale": "Cardiovascular toxicity can occur without a reported neurologic prodrome, so stop exposure and activate LAST rescue while supporting airway and circulation. Missing tinnitus does not exclude LAST. Another dose adds exposure rather than safely confirming the diagnosis. Waiting for seizure delays treatment of an already dangerous arrhythmia.",
+    "reviewHref": "#local-anesthetic-toxicity",
+    "difficulty": "clinical"
+  },
+  "periop-last-bolus": {
+    "id": "periop-last-bolus",
+    "question": "A 60-kg patient with severe LAST is prescribed the ASRA 1.5 mL/kg initial bolus of 20% lipid. What volume is required?",
+    "choices": [
+      "90 mL",
+      "15 mL",
+      "720 mL",
+      "900 mL"
+    ],
+    "answer": 0,
+    "rationale": "The initial bolus is 1.5 mL/kg × 60 kg = 90 mL of 20% lipid, over approximately 2 to 3 minutes. The 15 figure is the initial infusion rate in mL/min, not the bolus volume. The 720-mL figure is the cumulative maximum, not the first dose. The 900 figure belongs to the hourly infusion rate in mL/hour, not a bolus volume.",
+    "reviewHref": "#local-anesthetic-toxicity",
+    "difficulty": "clinical"
+  },
+  "periop-last-rate": {
+    "id": "periop-last-rate",
+    "question": "For a 60-kg patient, convert the initial 0.25 mL/kg/min lipid infusion to mL/hour.",
+    "choices": [
+      "15 mL/hour",
+      "90 mL/hour",
+      "720 mL/hour",
+      "900 mL/hour"
+    ],
+    "answer": 3,
+    "rationale": "The rate is 0.25 mL/kg/min × 60 kg = 15 mL/min; multiplying by 60 min/hour gives 900 mL/hour. Reporting 15 mL/hour omits the minute-to-hour conversion. The 90-mL bolus and 720-mL cumulative maximum are volumes, and neither is the prescribed hourly rate. Continue protocol-directed reassessment rather than treating the hourly conversion as a fixed one-hour infusion duration.",
+    "reviewHref": "#local-anesthetic-toxicity",
+    "difficulty": "clinical"
+  },
+  "periop-last-ceiling": {
+    "id": "periop-last-ceiling",
+    "question": "A 60-kg patient has already received 390 mL of rescue lipid. How much remains before reaching the ASRA cumulative 12 mL/kg ceiling?",
+    "choices": [
+      "720 mL more",
+      "330 mL",
+      "90 mL",
+      "An unlimited volume if blood pressure remains low"
+    ],
+    "answer": 1,
+    "rationale": "The cumulative maximum is 12 mL/kg × 60 kg = 720 mL; subtracting the 390 mL already given leaves 330 mL. Giving another 720 mL ignores prior exposure. The 90-mL initial bolus is unrelated to the remaining-volume calculation. Persistent hypotension does not remove the maximum or authorize unlimited lipid. This calculation does not instruct the team to administer all remaining volume; reassess and obtain expert support.",
+    "reviewHref": "#local-anesthetic-toxicity",
+    "difficulty": "clinical"
+  },
+  "periop-last-drugs": {
+    "id": "periop-last-drugs",
+    "question": "During suspected LAST, a team prepares vasopressin and lidocaine for cardiovascular collapse. What should the pharmacist do?",
+    "choices": [
+      "Confirm both as preferred LAST rescue drugs",
+      "Replace lipid with a propofol infusion",
+      "Redirect to the LAST checklist, avoiding both and using smaller epinephrine doses when needed",
+      "Delay airway support until lipid arrives"
+    ],
+    "answer": 2,
+    "rationale": "ASRA advises avoiding vasopressin and additional local anesthetics such as lidocaine during LAST resuscitation. Redirect to the checklist and use smaller epinephrine doses when needed, initially no greater than 1 microgram/kg. Neither prepared drug is preferred here. Propofol cannot replace 20% rescue lipid. Airway and circulatory support should proceed immediately alongside rescue rather than waiting for lipid delivery.",
+    "reviewHref": "#local-anesthetic-toxicity",
+    "difficulty": "clinical"
+  },
+  "periop-last-observation": {
+    "id": "periop-last-observation",
+    "question": "A patient stabilizes after LAST-associated hypotension without cardiac arrest. Which ASRA observation interval matches cardiovascular instability?",
+    "choices": [
+      "Discharge as soon as the first lipid bolus ends",
+      "Ten minutes if the ECG normalizes",
+      "Exactly two hours for every LAST event",
+      "Observe for 4 to 6 hours after cardiovascular instability, with reassessment for recurrence"
+    ],
+    "answer": 3,
+    "rationale": "ASRA specifies 4 to 6 hours of observation after cardiovascular instability, with reassessment for recurrence. Neither completion of a bolus nor ten minutes of normal ECG establishes readiness for discharge. Two hours is the checklist interval after seizure, not a universal interval for every LAST event. Cardiac arrest and persistent abnormalities require individualized monitoring.",
+    "reviewHref": "#local-anesthetic-toxicity",
+    "difficulty": "clinical"
+  },
+  "periop-lidocaine-combined-exposure": {
+    "id": "periop-lidocaine-combined-exposure",
+    "question": "For an exposure reconciliation, a patient received 2 mL of 4% topical lidocaine and 5 mL of 1% injectable lidocaine. What total amount was administered? This calculation does not determine whether the regimen was appropriate.",
+    "choices": [
+      "13 mg",
+      "50 mg",
+      "80 mg",
+      "130 mg"
+    ],
+    "answer": 3,
+    "rationale": "A 4% solution contains 40 mg/mL, so 2 mL contributes 80 mg; 1% contains 10 mg/mL, so 5 mL contributes 50 mg. The total is 130 mg. The 13-mg answer is a tenfold unit-conversion error; 50 mg counts only the injection, and 80 mg counts only the topical exposure. This arithmetic does not establish a safe regimen. Verify exact products, route, timing and patient factors; the topical solution must not be injected.",
+    "reviewHref": "#local-anesthetic-pharmacology",
+    "difficulty": "application"
+  },
+  "periop-epinephrine-product-mixup": {
+    "id": "periop-epinephrine-product-mixup",
+    "question": "A procedure calls for lidocaine with epinephrine 0.01 mg/mL. The handed-over container is epinephrine 1 mg/mL intended for topical use. What is the appropriate response?",
+    "choices": [
+      "Stop and obtain the correct labeled product before administration",
+      "Inject it because both products contain epinephrine",
+      "Treat the concentration difference as clinically insignificant",
+      "Assume lidocaine is present even though it is absent from the label"
+    ],
+    "answer": 0,
+    "rationale": "Stop and obtain the correct labeled product. Epinephrine 1 mg/mL is 100 times the specified 0.01 mg/mL concentration and is not the lidocaine combination. Shared epinephrine content does not justify injection of the substituted topical product. The concentration difference is clinically consequential, and lidocaine cannot be assumed present when absent from the label. ISMP Canada reports harm and death after this type of substitution.",
+    "reviewHref": "#local-anesthetic-pharmacology",
+    "difficulty": "clinical"
+  }
+})) {
+  const existing = perioperativeCriticalCarePharmacologyQuestionBank.find((question) => question.id === id);
+  if (existing) Object.assign(existing, updates);
+  else perioperativeCriticalCarePharmacologyQuestionBank.push(updates);
+}
