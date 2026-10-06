@@ -63,4 +63,285 @@ const sourceReviewedEnzymeSafetyQuestions = {
     "rationale": "The book lists abdominal pain as an adverse effect and associates very high lipase exposure with fibrosing colonopathy and colonic strictures. More enzyme is therefore not a safe automatic response to every abdominal symptom. Review dose and the clinical findings before escalation."
   }
 };
-export const cysticFibrosisQuestionBank = originalCysticFibrosisQuestionBank.map((question) => sourceReviewedEnzymeSafetyQuestions[question.id] ? { ...question, ...sourceReviewedEnzymeSafetyQuestions[question.id] } : question);
+const reviewedNutritionSystemicQuestions = {
+  "cf-085": {
+    "choices": [
+      "PERT is dosed in lipase units and taken with every relevant meal, snack, formula, or feed.",
+      "PERT is dosed by protease units, regardless of the stated lipase strength.",
+      "One morning oral dose provides enzyme coverage for every later meal.",
+      "All pancreatic enzyme products can be exchanged by capsule count."
+    ],
+    "rationale": "Lipase units determine PERT dosing. Replacement accompanies relevant intake; continuous feeds need an explicit product and CF-team plan. Protease units, a once-daily oral schedule, and capsule-count substitution do not establish equivalent exposure."
+  },
+  "cf-086": {
+    "choices": [
+      "Give at the start of intake, distribute during prolonged meals when directed, and titrate within safe limits to symptoms and growth.",
+      "Take the entire daily dose before breakfast, including doses intended for later snacks.",
+      "Take meal doses only when steatorrhea appears after eating.",
+      "Crush the delayed-release particles into food to improve release."
+    ],
+    "rationale": "Oral enzymes accompany eating. The CF team may distribute a prolonged-meal dose. Delayed dosing, consolidating separate meal doses, or destroying the coating interferes with appropriate delivery."
+  },
+  "cf-087": {
+    "choices": [
+      "Review lipase units per capsule, weight, meal and snack pattern, fat, timing, swallowing, storage, stool, pain, growth, and adherence.",
+      "Review capsule count alone because every capsule has the same lipase content.",
+      "Review the meal dose but omit snacks from the daily total.",
+      "Review stool symptoms alone and assume normal stools prove adequate absorption."
+    ],
+    "rationale": "Connect strength and intake to weight and total daily exposure, then examine delivery, storage, symptoms, growth, and adherence. Capsule count alone and symptom-only titration omit important dose and outcome information."
+  },
+  "cf-089": {
+    "choices": [
+      "For Creon after 12 months of age, doses above 2,500 lipase units/kg/meal, 10,000 units/kg/day, or 4,000 units/g fat ingested/day require further investigation.",
+      "A meal dose below 2,500 units/kg makes the daily total irrelevant.",
+      "A daily dose below 10,000 units/kg makes the meal dose irrelevant.",
+      "The 4,000-unit fat boundary refers to grams of protein eaten."
+    ],
+    "rationale": "Check all applicable boundaries. A satisfactory meal value does not authorize an excessive daily or fat-based exposure. The fat-based measure uses ingested fat, not protein; doses beyond guidance require investigation and documented justification."
+  },
+  "cf-090": {
+    "choices": [
+      "Audit timing, adherence, storage, diet, acid, constipation, infection, and alternate disease before escalating beyond boundaries.",
+      "Increase PERT automatically for every abdominal complaint.",
+      "Increase PERT until stools look normal without reviewing total exposure.",
+      "Add a proton pump inhibitor to every capsule regimen before reviewing timing or adherence."
+    ],
+    "rationale": "Poor response can reflect delivery, diet, motility, hyperacidity, liver disease, or another gastrointestinal diagnosis. Review these factors before escalating; neither abdominal symptoms nor stool appearance alone establishes a need for more enzyme, and acid suppression is not universal."
+  },
+  "cf-093": {
+    "choices": [
+      "Nutrition plans address energy, protein, fat, salt, vitamins A, D, E, and K, body composition, and changing metabolic risk.",
+      "Nutrition in CF always requires unlimited calories irrespective of weight or modulator response.",
+      "A normal weight excludes fat-soluble vitamin deficiency and ends monitoring.",
+      "An effective modulator makes PERT and vitamin replacement unnecessary without reassessment."
+    ],
+    "rationale": "Nutrition care integrates intake, absorption, vitamin status, and current phenotype. Weight or modulator response alone does not establish adequate micronutrients or restored pancreatic function."
+  },
+  "cf-094": {
+    "choices": [
+      "Individualize intake and replacement from phenotype, labs, growth or weight trajectory, malabsorption, modulator response, and goals.",
+      "Keep the original high-calorie plan indefinitely despite major weight and blood-pressure changes.",
+      "Stop PERT whenever weight rises after modulator therapy.",
+      "Treat nutritional decline by calories alone without reviewing malabsorption or food access."
+    ],
+    "rationale": "Reassess current needs and outcomes. Modulators can alter weight and absorption, but changing PERT needs pancreatic evaluation; a historical calorie prescription or calorie-only response may miss the limiting mechanism."
+  },
+  "cf-095": {
+    "choices": [
+      "Review intake, access, stool, PERT, weight history, growth, strength, body composition, vitamin levels, sodium, glucose, liver, and bone.",
+      "Review current weight alone and omit the trajectory, vitamins, and stool pattern.",
+      "Review the enzyme prescription but omit actual use and access to food.",
+      "Review calorie intake but omit glucose, liver, and bone complications."
+    ],
+    "rationale": "A multidomain assessment connects nutrition with digestion and systemic disease. A weight-only, prescription-only, or calorie-only review leaves important causes and consequences unexamined."
+  },
+  "cf-096": {
+    "choices": [
+      "Preserving a universal unlimited-calorie message after major modulator-associated weight gain can ignore cardiometabolic health.",
+      "Reassessing dietary quality when the weight trajectory changes",
+      "Checking blood pressure and current salt needs after modulator response",
+      "Continuing appropriate vitamin and pancreatic-function assessment"
+    ],
+    "rationale": "An unlimited-calorie message can become inappropriate as phenotype changes. Reviewing quality, salt needs, and vitamin or pancreatic status is appropriate; modulator-associated weight gain does not justify abandoning nutritional surveillance."
+  },
+  "cf-097": {
+    "choices": [
+      "Annual two-hour OGTT begins by age 10, using 1.75 g/kg glucose up to 75 g; A1c alone is insufficient, and established CFRD is treated with insulin.",
+      "A1c alone is the preferred annual screen when CF is clinically stable.",
+      "Annual CFRD screening begins only after weight loss or polyuria appears.",
+      "Oral glucose-lowering drugs routinely replace insulin as first-line CFRD treatment."
+    ],
+    "rationale": "OGTT is the recommended annual screen by age 10, with the pediatric weight-based glucose load capped at 75 g. Screening precedes symptoms. Insulin is the established treatment; A1c alone and routine substitution of oral drugs do not follow this guidance."
+  },
+  "cf-098": {
+    "choices": [
+      "Screen during stable health and monitor glucose more intensively during illness, glucocorticoids, pregnancy, or enteral feeding.",
+      "Use the same annual fasting-only test in every clinical situation.",
+      "Delay glucose assessment until all continuous feeding has been stopped.",
+      "Skip additional assessment during systemic glucocorticoids if A1c is normal."
+    ],
+    "rationale": "Stable-health OGTT does not replace situational monitoring. Acute exacerbation treatment needs fasting and two-hour postprandial measurements, and continuous feeding needs mid- and immediate postfeeding measurements. Pregnancy has additional screening requirements."
+  },
+  "cf-099": {
+    "choices": [
+      "Review age, OGTT, fasting and postprandial glucose, symptoms, A1c limits, weight, lung function, feeds, steroids, pregnancy, and insulin plan.",
+      "Review A1c alone and omit the OGTT and feeding schedule.",
+      "Review fasting glucose alone and omit postprandial readings during acute illness.",
+      "Review the insulin prescription but omit nutritional and pulmonary goals."
+    ],
+    "rationale": "Interpret glucose in its timing and clinical context, with nutritional and treatment information. A1c-only or fasting-only assessment can miss CF dysglycemia; insulin care must preserve appropriate nutrition."
+  },
+  "cf-100": {
+    "choices": [
+      "A normal A1c can falsely reassure because CF dysglycemia may be postprandial and A1c can be deceptively low.",
+      "Using OGTT for annual screening during stable health",
+      "Confirming elevated home-meter readings with laboratory plasma glucose",
+      "Using A1c to help monitor established CFRD without treating it as the sole screening test"
+    ],
+    "rationale": "A normal A1c does not rule out CFRD. OGTT screening and confirmation of meter abnormalities are appropriate. A1c retains a monitoring role after diagnosis, which is distinct from relying on it alone to screen."
+  },
+  "cf-101": {
+    "choices": [
+      "CF bone risk reflects nutrition, vitamin D, inflammation, low weight, inactivity, endocrine disease, glucocorticoids, transplant exposure, and age.",
+      "CF bone loss is caused only by low vitamin D.",
+      "Good pulmonary symptoms eliminate bone risk from steroids or delayed puberty.",
+      "A normal weight makes fracture history irrelevant."
+    ],
+    "rationale": "CF bone risk reflects multiple nutritional, endocrine, inflammatory, activity, and treatment factors. Vitamin D alone, respiratory symptoms alone, or one weight measurement cannot capture that risk."
+  },
+  "cf-102": {
+    "choices": [
+      "Schedule bone-density and laboratory assessment by age and risk, correct reversible causes, and treat established disease when indicated.",
+      "Wait for a fracture before any adult DXA assessment.",
+      "Give vitamin D alone without reviewing fractures, bone density, or endocrine disease.",
+      "Begin identical bisphosphonate treatment for every patient regardless of bone density or risk."
+    ],
+    "rationale": "CF guidance uses age and risk for DXA and combines reversible-factor treatment with density and fracture assessment. Pharmacotherapy requires clinical indications and individual review, not universal treatment or waiting for injury."
+  },
+  "cf-103": {
+    "choices": [
+      "Review fractures, height loss, nutrition, vitamin D, calcium, weight-bearing activity, puberty, hormones, glucocorticoids, transplant, kidney function, and DXA.",
+      "Review vitamin D alone and omit prior fractures and DXA.",
+      "Review DXA alone and omit glucocorticoids, puberty, and nutritional status.",
+      "Review calcium intake alone and omit weight-bearing activity and transplant status."
+    ],
+    "rationale": "Bone surveillance integrates fracture, density, nutrition, activity, endocrine and treatment risks. Each narrower alternative omits factors that can change management."
+  },
+  "cf-104": {
+    "choices": [
+      "Replacing vitamin D without assessing the broader fracture phenotype can leave major drivers of bone loss untreated.",
+      "Reviewing glucocorticoid exposure alongside vitamin status",
+      "Assessing delayed puberty, hypogonadism, and fracture history",
+      "Using age and clinical risk to decide when DXA is needed"
+    ],
+    "rationale": "Vitamin D replacement is one component of prevention and treatment. Steroids, endocrine factors, fracture history and density require assessment; the other choices describe appropriate broader care."
+  },
+  "cf-105": {
+    "choices": [
+      "Liver and kidney surveillance must inform medication selection, dose, toxicity monitoring, and transplant planning throughout CF care.",
+      "Normal transaminases exclude clinically important portal disease.",
+      "A normal creatinine excludes every renal concern regardless of low muscle mass.",
+      "Organ surveillance can be deferred while the drug regimen remains unchanged."
+    ],
+    "rationale": "Structural liver disease and renal trajectory matter to medication safety. Liver enzymes or creatinine in isolation can miss clinically important context; surveillance should not depend only on a medication change."
+  },
+  "cf-106": {
+    "choices": [
+      "Trend organ function and structural disease, then adjust nephrotoxic, hepatotoxic, and renally or hepatically cleared treatment accordingly.",
+      "Continue the same high-risk drug doses despite a major change in kidney function.",
+      "Wait for jaundice before evaluating persistent liver-test abnormalities.",
+      "Interpret a low creatinine as proof of excellent filtration without considering malnutrition."
+    ],
+    "rationale": "Organ function and structural disease must inform exposure and monitoring. Changing renal function, persistent liver abnormalities, and low muscle mass require evaluation rather than a fixed-dose or single-value assumption."
+  },
+  "cf-107": {
+    "choices": [
+      "Review liver chemistry, platelets, imaging, portal signs, creatinine, filtration, hydration, stones, diabetes, aminoglycosides, modulators, and transplant medicines.",
+      "Review AST and ALT alone and omit platelets, cholestatic tests, and imaging.",
+      "Review one creatinine alone and omit prior results, hydration, and nephrotoxic drugs.",
+      "Review modulator adherence alone and omit other medications and liver history."
+    ],
+    "rationale": "Liver assessment includes bilirubin, transaminases, alkaline phosphatase, GGT, platelets, and imaging context. Renal safety requires trajectory and exposure review. Single-domain alternatives omit important evidence."
+  },
+  "cf-108": {
+    "choices": [
+      "Waiting for jaundice or creatinine elevation alone can miss earlier portal disease or cumulative kidney injury.",
+      "Following platelets and liver/spleen imaging when clinically indicated",
+      "Interpreting creatinine alongside nutritional status and renal trajectory",
+      "Reviewing nephrotoxic exposures during antibiotic treatment"
+    ],
+    "rationale": "Waiting for jaundice or creatinine elevation alone can delay recognition. Platelet/imaging assessment and renal trajectory or exposure review are appropriate safeguards."
+  },
+  "cf-109": {
+    "choices": [
+      "Adults with CF need earlier colorectal cancer screening, with additional risk and modified timing after solid-organ transplantation.",
+      "CF uses average-risk colorectal screening without transplant modifications.",
+      "Solid-organ transplantation lowers CF colorectal cancer risk.",
+      "Annual stool testing is an established equivalent to colonoscopy for CF screening."
+    ],
+    "rationale": "CF guidance recommends colonoscopy from age 40 and modified timing after transplant from age 30. Stool testing has insufficient evidence as an equivalent, and transplantation increases rather than reduces risk."
+  },
+  "cf-110": {
+    "choices": [
+      "Apply current CF-specific screening age, interval, and bowel preparation while investigating alarm symptoms diagnostically.",
+      "Apply average-risk screening intervals regardless of CF or prior polyps.",
+      "Use routine bowel preparation without discussing the CF regimen.",
+      "Wait for the next screening date despite new bleeding or obstructive symptoms."
+    ],
+    "rationale": "CF-specific timing, preparation, and prior findings affect surveillance. New alarm symptoms need diagnostic evaluation; the routine schedule is not a reason to defer it."
+  },
+  "cf-111": {
+    "choices": [
+      "Review age, transplant status, prior colonoscopy and preparation, polyps, family history, bleeding, anemia, bowel change, obstruction, and follow-up interval.",
+      "Review age alone and omit transplant history and the last colonoscopy.",
+      "Review a prior colonoscopy date but omit preparation quality and polyp findings.",
+      "Review screening eligibility but omit bleeding, anemia, and bowel change."
+    ],
+    "rationale": "Transplant, prior examination quality and pathology, and current symptoms determine the next evaluation. Age or dates alone cannot establish the correct plan."
+  },
+  "cf-112": {
+    "choices": [
+      "Using average-risk screening timing can delay detection in a population with increased and earlier colorectal cancer risk.",
+      "Planning more intensive CF bowel preparation with the endoscopist",
+      "Using prior adenomatous polyp findings to shorten surveillance",
+      "Evaluating new alarm symptoms before a routine screening date"
+    ],
+    "rationale": "Average-risk timing can delay CF screening. Intensive preparation, polyp-based surveillance, and prompt diagnostic evaluation are appropriate components of the CF plan."
+  }
+};
+const nutritionSystemicCases = [
+  {
+    "id": "cf-pert-daily-exposure",
+    "question": "A 30 kg child takes Creon 24,000: two capsules with each of three meals and one with each of two snacks. What is the total daily lipase exposure?",
+    "choices": [
+      "6,400 units/kg/day",
+      "1,600 units/kg/day",
+      "4,800 units/kg/day",
+      "8,000 units/kg/day"
+    ],
+    "answer": 0,
+    "rationale": "Eight capsules provide 192,000 units/day; dividing by 30 kg gives 6,400 units/kg/day. The 1,600 figure describes one meal, 4,800 omits the snacks, and 8,000 would require ten capsules.",
+    "reviewHref": "#cf-nutrition-gi-endocrine"
+  },
+  {
+    "id": "cf-pert-independent-boundaries",
+    "question": "A 20 kg child takes 2,000 lipase units/kg with each of three meals and 1,000 units/kg with each of five snacks. Which dose review is correct?",
+    "choices": [
+      "Each meal is below 2,500 units/kg, but the daily total is 11,000 units/kg and requires investigation.",
+      "The daily total is 6,000 units/kg because snacks do not count.",
+      "The daily total is 7,000 units/kg because only one snack is counted.",
+      "Every boundary is satisfied because each meal is below 2,500 units/kg."
+    ],
+    "answer": 0,
+    "rationale": "Three meals give 6,000 units/kg/day and five snacks give 5,000, totaling 11,000. This exceeds the daily investigation boundary even though each meal is below its separate limit.",
+    "reviewHref": "#cf-nutrition-gi-endocrine"
+  },
+  {
+    "id": "cf-feeding-glucose-window",
+    "question": "Continuous overnight gastrostomy feeding is initiated in a person with CF without known CFRD. Which glucose-screening plan matches CF guidance?",
+    "choices": [
+      "Measure midway through and immediately after feeding at initiation, then at these times monthly at home; confirm elevated meter readings in the laboratory.",
+      "Measure fasting glucose alone annually and ignore the feeding window.",
+      "Use A1c alone monthly without timed glucose readings.",
+      "Measure only before the feed and diagnose CFRD from any single elevated home-meter reading."
+    ],
+    "answer": 0,
+    "rationale": "Continuous-feed screening targets mid- and immediate postfeeding glucose, initially and monthly thereafter. Fasting-only or A1c-only testing can miss feeding-related dysglycemia, and elevated meter values need laboratory confirmation.",
+    "reviewHref": "#cf-systemic-complications"
+  },
+  {
+    "id": "cf-advanced-liver-early-ogtt",
+    "question": "An 8-year-old with CF is diagnosed with advanced CF liver disease and does not have known diabetes. When should CFRD screening begin?",
+    "choices": [
+      "At the diagnosis of advanced liver disease, then annually",
+      "Only at age 10 regardless of liver disease",
+      "Only after a high A1c or diabetes symptoms appear",
+      "Only after solid-organ transplantation"
+    ],
+    "answer": 0,
+    "rationale": "The 2024 CF hepatobiliary guidance recommends screening from advanced-liver-disease diagnosis, even before age 10, then annually. Waiting for age 10, symptoms, A1c elevation, or transplantation misses that higher-risk recommendation.",
+    "reviewHref": "#cf-systemic-complications"
+  }
+];
+export const cysticFibrosisQuestionBank = [...originalCysticFibrosisQuestionBank.map((question) => ({ ...question, ...(sourceReviewedEnzymeSafetyQuestions[question.id] || {}), ...(reviewedNutritionSystemicQuestions[question.id] || {}) })), ...nutritionSystemicCases];
