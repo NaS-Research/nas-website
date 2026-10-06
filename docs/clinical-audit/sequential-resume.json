@@ -105,8 +105,8 @@
     "branch": "audit/rxprep-content-2026-09-24",
     "baseCommit": "0914360080eb98010e1ac9e8768d36631034161c",
     "remoteVerifiedAtStart": true,
-    "commit": null,
-    "push": "pending",
+    "commit": "52a4493124a583fd8a37474fa04fa176db20eac0",
+    "push": "verified",
     "production": "not verified",
     "receipt": "enteral-nutrition-broader-metformin-release.json",
     "contentCommits": [
@@ -243,13 +243,14 @@
       "918e4fbf5fcf595ebaf5aaaeb0c28e6883416d18",
       "a4d0f096234bd247f1a7ed1e4658cea08c1f46c7",
       "ee26abfd3869d4361f5141d8d9951093daf59bb5",
-      "41a7e941df6313c0dbf8d4d53835bcb0c8a8a154"
+      "41a7e941df6313c0dbf8d4d53835bcb0c8a8a154",
+      "52a4493124a583fd8a37474fa04fa176db20eac0"
     ],
     "previousVerifiedContentCommit": "65ac22e809246ba35e196493eedaa0bea3b0898b",
     "baseReceipt": "aca4501d4b775c9e5dbb74a1c3e7c337e6ebb87e",
-    "remoteHashObserved": null,
-    "exactRemoteObservedByTool": false,
-    "remoteVerifiedAt": null,
+    "remoteHashObserved": "52a4493124a583fd8a37474fa04fa176db20eac0",
+    "exactRemoteObservedByTool": true,
+    "remoteVerifiedAt": "2026-10-06T07:58:57.776374+00:00",
     "mainMerge": "not performed"
   },
   "openIssues": [
@@ -21713,6 +21714,17 @@
     "chaptersVerifiedAfter": 6,
     "chapterTotal": 82,
     "chapterCountPercent": 7.32,
-    "workingDraftBoundary": "Working draft contains eleven lessons and ninety-two different authored questions. Its prior bytes and reviewing statuses are preserved. This certificate applies to the isolated HEAD-derived audit-branch lesson and twelve stable question IDs; certification of other working-draft variants is not inferred."
+    "workingDraftBoundary": "Working draft contains eleven lessons and ninety-two different authored questions. Its prior bytes and reviewing statuses are preserved. This certificate applies to the isolated HEAD-derived audit-branch lesson and twelve stable question IDs; certification of other working-draft variants is not inferred.",
+    "release": {
+      "branch": "audit/rxprep-content-2026-09-24",
+      "commit": "52a4493124a583fd8a37474fa04fa176db20eac0",
+      "push": "verified",
+      "receipt": "enteral-nutrition-broader-metformin-release.json",
+      "mainMerge": "not performed",
+      "production": "not verified",
+      "remoteHashObserved": "52a4493124a583fd8a37474fa04fa176db20eac0",
+      "exactRemoteObservedByTool": true,
+      "remoteVerifiedAt": "2026-10-06T07:58:57.776374+00:00"
+    }
   }
 }
