@@ -1,0 +1,1997 @@
+{
+  "updated": "2026-10-06T11:16:37.168787+00:00",
+  "unit": "enteral-nutrition:broader-combination",
+  "status": "Complete combination lesson and twelve questions clinically, structurally, runtime and visually verified; push pending.",
+  "baseCommit": "51e2ab85fe75dc5d42f8d3a5781a342e3747f625",
+  "sourcePolicy": {
+    "primary": "Cover-verified private RxPrep2023",
+    "approvedAuthoritativeSources": {
+      "status": "approved by direct user message: I give approval",
+      "scope": "Official guidelines, FDA labels and primary academic clinical references where the book cannot verify retained content; includes pending calcium, dialysis, aluminum and mineral physiology scopes",
+      "primarySourceRemains": "Supplied cover-verified RxPrep2023 book",
+      "approvalContext": "Response to pending asynchronous request for this additional authoritative source policy",
+      "usedNewlyAuthorizedSourcesInThisUnit": true,
+      "latestEvidence": "enteral-nutrition-broader-cardiorenal-review.json"
+    }
+  },
+  "coverage": {
+    "evidence": "enteral-nutrition-broader-combination-review.json",
+    "verifiedScope": "One complete audit-branch combination/deintensification/special-settings lesson: twelve whole bodies, metadata, corrected embedded check, reviewed mechanism figure and twelve rewritten whole questions. Parent metadata/reference reconciliation remains open.",
+    "wholeLessonsVerified": {
+      "noninsulin-diabetes-pharmacotherapy": [
+        "combination-deintensification-special-settings"
+      ]
+    },
+    "wholeBodiesVerified": 12,
+    "wholeQuestionsReviewed": 12,
+    "changedWholeQuestions": 12,
+    "existingBodiesExpanded": 5,
+    "newOriginalBodies": 7,
+    "wholeChecksVerified": 1,
+    "wholeMetadataAndFiguresVerified": 1,
+    "wholeBankQuestionIdsVerified": [
+      "noninsulin-diabetes-25-principle",
+      "noninsulin-diabetes-25-application",
+      "noninsulin-diabetes-25-safety",
+      "noninsulin-diabetes-25-case",
+      "noninsulin-diabetes-26-principle",
+      "noninsulin-diabetes-26-application",
+      "noninsulin-diabetes-26-safety",
+      "noninsulin-diabetes-26-case",
+      "noninsulin-diabetes-30-principle",
+      "noninsulin-diabetes-30-application",
+      "noninsulin-diabetes-30-safety",
+      "noninsulin-diabetes-30-case"
+    ],
+    "all48ChoicesIndividuallySourceCompared": true,
+    "newUniqueBankQuestionsVerified": 12,
+    "broaderFeedingBankVerifiedBefore": 1055,
+    "broaderFeedingBankVerifiedAfter": 1067,
+    "sourceVerifiedNoninsulinBankTotalAcrossUnits": 120,
+    "noninsulinAuditBranchBankTotal": 120,
+    "noninsulinAuditBranchLessonTotal": 10,
+    "noninsulinAuditBranchLessonsVerifiedAcrossUnits": 10,
+    "remainingNoninsulinWholeBankIds": [],
+    "remainingNoninsulinAuditBranchLessons": 0,
+    "allPrior108VerifiedNoninsulinQuestionsUnchanged": true,
+    "otherNineWholeLessonsUnchanged": true,
+    "other231WholeModulesUnchanged": true,
+    "associatedCumulativeWholeItemsVerified": [
+      "cumulative-noninsulin-diabetes-pharmacotherapy-noninsulin-diabetes-30-case"
+    ],
+    "other 1179WholeCumulativeObjectsUnchanged": true,
+    "stableIdsKeysDifficultyAnchorsOrderPreserved": true,
+    "newQuestionIdsAdded": 0,
+    "cumulativeSelectorUnchanged": true,
+    "all50ExistingReferencesRetainedAndRuntimeChecked": true,
+    "twoPrimaryReferencesAddedAndRuntimeChecked": true,
+    "wholeParentModuleVerified": false,
+    "parentMetadataAndFullReferenceReconciliationPending": true,
+    "enteralParentVerified": false,
+    "wholeChaptersVerified": false,
+    "committedWholeModulesVerifiedAfter": 61,
+    "committedWholeModulesTotal": 232,
+    "moduleCountPercent": 26.29,
+    "chaptersVerifiedAfter": 6,
+    "chapterTotal": 82,
+    "chapterCountPercent": 7.32,
+    "workingDraftBoundary": "Working draft contains eleven lessons and ninety-two different authored questions. Prior bytes and reviewing statuses are preserved. This certificate applies to the isolated HEAD-derived audit-branch lesson and twelve stable question IDs; certification of different working-draft variants is not inferred."
+  },
+  "changes": {
+    "noninsulin-diabetes-pharmacotherapy": {
+      "lessons": {
+        "combination-deintensification-special-settings": {
+          "slug": "combination-deintensification-special-settings",
+          "title": "Combination Strategy, Deintensification, and Special Settings",
+          "visual": "noninsulin-combination",
+          "summary": "Combine therapies for a defined benefit, remove redundant or harmful treatment, and reassess the plan as intake, organ function, procedures, access and goals change. Safe transitions require product-specific interruption and restart instructions.",
+          "concepts": [
+            "Complementary benefit and fixed combinations",
+            "Incretin redundancy and hypoglycemia",
+            "Procedure-specific interruption and restart",
+            "Simplification versus deintensification",
+            "Insulin escalation and safe transitions"
+          ],
+          "application": "Reconcile active ingredients and the purpose of each medicine. Check glucose patterns, lows, kidney function, intake, procedure plans, affordability and self-management capacity. Record what continues, changes or pauses, the criteria for restart, needed monitoring and who will review the response.",
+          "lesson": [
+            {
+              "heading": "Combine complementary mechanisms",
+              "body": "Initial combination therapy can shorten the time to an individualized glucose goal when one medicine is unlikely to provide enough effect. Choose agents for complementary glucose or demonstrated outcome benefit, with attention to hypoglycemia, organ function, tolerability, access and preferences. Fixed-dose products may reduce pill burden, but their ingredients still need separate review: a required hold or dose change for one ingredient can affect use of the whole product. Check the exact formulation and avoid duplicating an ingredient through another prescription."
+            },
+            {
+              "heading": "Remove mechanistic redundancy",
+              "body": "Do not combine a DPP-4 inhibitor with a GLP-1 receptor agonist or dual GIP/GLP-1 therapy; the combination does not add meaningful glucose lowering beyond GLP-1-based treatment. For example, review discontinuation of sitagliptin when tirzepatide is started. This redundancy differs from combining insulin with GLP-1-based therapy, which can improve glucose and weight outcomes in type 2 diabetes. Reconcile brand names and combination tablets so a hidden DPP-4 ingredient is not inadvertently continued."
+            },
+            {
+              "heading": "Reassess medicines that can cause lows",
+              "body": "When adding or escalating glucose-lowering therapy, reassess the need for and dose of insulin, sulfonylureas and meglitinides. A drug with low intrinsic hypoglycemia risk can still increase lows when combined with these medicines. Tirzepatide labeling advises that reducing insulin or secretagogue exposure can lower this risk. Review glucose patterns, meals, kidney function and the person’s ability to detect and treat lows. Recurrent hypoglycemia needs prompt treatment-plan review rather than simply adding another medicine or preserving every old dose."
+            },
+            {
+              "heading": "Plan for fasting, illness, and procedures",
+              "body": "Prepare a written plan before surgery or prolonged fasting. Empagliflozin labeling specifies interruption for at least three days, if possible; ertugliflozin specifies at least four days. ADA recommends holding SGLT2 inhibitors for three to four days before elective surgery. Restart only when clinical stability and oral intake have returned and relevant ketoacidosis risk has resolved. Nausea, vomiting, abdominal pain or shortness of breath during illness warrants assessment for ketoacidosis even without marked hyperglycemia. Urgent surgery requires monitoring rather than assuming the missed advance hold makes evaluation unnecessary."
+            },
+            {
+              "heading": "Individualize GLP-1 anesthesia planning",
+              "body": "GLP-1 receptor agonists and dual GIP/GLP-1 therapy delay gastric emptying. Ozempic and Mounjaro labels describe rare pulmonary aspiration reports during general anesthesia or deep sedation despite reported fasting. Tell the procedural team about treatment and gastrointestinal symptoms. ADA recommends an individualized plan considering the indication, drug and dose, symptoms, urgency and anesthesia; selected low-risk patients may continue therapy. A fixed one-week hold does not guarantee an empty stomach. If treatment is held, plan glucose management and any needed alternative therapy with the care team."
+            },
+            {
+              "heading": "Separate metformin contrast and illness decisions",
+              "body": "ADA recommends holding metformin and other oral glucose-lowering agents on the day of surgery. Metformin labeling also calls for temporary interruption with restricted food and fluids or hypoxic events, and it is contraindicated when eGFR is below 30 mL/min/1.73 m². For iodinated contrast, the label specifies holding for eGFR 30-60, a history of liver disease, alcoholism or heart failure, or intra-arterial administration; reassess eGFR at 48 hours and restart if renal function is stable. Contrast protocols and procedure instructions must identify the applicable rule rather than use a universal restart time for every illness."
+            },
+            {
+              "heading": "Match secretagogues to actual intake",
+              "body": "Sulfonylureas and meglitinides can cause hypoglycemia when intake is reduced. Repaglinide labeling explicitly instructs patients to skip the scheduled dose when a meal is skipped. Glipizide can cause more serious lows with deficient caloric intake, impaired kidney or liver function, or other glucose-lowering medicines. Review secretagogue interruption during fasting and surgery in the written plan. Meal-linked dose omission is not permission to stop all insulin: people with type 1 diabetes still require basal insulin even when not eating."
+            },
+            {
+              "heading": "Deintensify deliberately",
+              "body": "Reduce or stop therapy when ineffectiveness, recurrent lows, intolerance, a contraindication, expense, burden or revised goals outweigh its benefit. Simplification reduces the complexity of a regimen; deintensification reduces a dose or frequency or discontinues treatment. These decisions can overlap but are not identical. Preferentially review medicines that cause hypoglycemia or burden without a needed ongoing benefit. An A1C at goal alone does not remove an independent cardiovascular or kidney indication. Match the plan to cognition, function, support and access, and document the new goal and follow-up."
+            },
+            {
+              "heading": "Know when noninsulin escalation has ended",
+              "body": "In type 2 diabetes, consider insulin with symptoms of hyperglycemia or very high values, such as A1C above 10% or glucose at least 300 mg/dL. Weight loss, ketosis, dehydration or suspected hyperglycemic crisis requires prompt assessment; another modest oral drug should not delay treatment of metabolic decompensation. Without severe hyperglycemia or crisis, ADA prefers GLP-1-based therapy for initial or add-on glucose treatment. If insulin is added, reassess hypoglycemia-producing drugs while retaining other indicated, tolerated therapies. Glucose toxicity may later resolve enough to permit simplification."
+            },
+            {
+              "heading": "Adapt therapy to the hospital and transplant setting",
+              "body": "Insulin is preferred for most hospitalized patients with hyperglycemia and is given by validated intravenous protocols in critical illness. Outside critical care, the plan depends on intake: basal plus correction insulin for poor or no intake, and basal, prandial and correction components when intake is adequate. Correction-only treatment is discouraged for most patients. Selected stable patients with mild hyperglycemia may use noninsulin therapy. After transplantation, insulin is preferred postoperatively; long-term noninsulin treatment can be appropriate and depends on the organ, comorbidities and response. A postoperative insulin plan is not necessarily a permanent exclusion of noninsulin treatment."
+            },
+            {
+              "heading": "Reconcile treatment at discharge and access changes",
+              "body": "Cross-check home, hospital and combination-product ingredients and explain every continuation, reduction, substitution and temporary hold. Confirm that the person can obtain medicines, monitoring supplies and any rescue treatment and understands meal, illness and restart instructions. Arrange follow-up within one month after hospital hyperglycemia or hypoglycemia; if treatment changes or glucose management remains suboptimal, an appointment in one to two weeks is preferred. Loss of coverage or supply should trigger a reviewed alternative plan rather than an unexplained treatment gap or an assumption that products are interchangeable."
+            },
+            {
+              "heading": "Schedule efficacy and safety reassessment",
+              "body": "Every initiation or change needs a stated goal and a plan to review response, adverse effects, lows, intake, organ function, access and burden. ADA recommends regular review of the medication plan and medication-taking behavior, for example every three to six months, with earlier review when symptoms, safety concerns or transitions require it. Separate poor drug efficacy from missed doses, affordability problems or a plan that the person cannot manage. Decide deliberately whether to continue, titrate, substitute, simplify or deintensify; a prescription count does not measure treatment success."
+            }
+          ],
+          "keyPoints": [
+            "Each medicine needs a distinct, useful contribution; reconcile every ingredient in fixed combinations.",
+            "Avoid DPP-4 plus GLP-1-based redundancy and reassess insulin or secretagogue doses when adding effective therapy.",
+            "SGLT2 holds precede surgery; restart requires recovery criteria, not just an elapsed interval.",
+            "GLP-1 anesthesia decisions are individualized; a one-week hold does not guarantee absence of retained gastric contents.",
+            "Simplification and deintensification are different decisions; preserve independent outcome indications when appropriate.",
+            "Severe hyperglycemia, crisis, critical illness and postoperative care may require insulin; arrange monitoring and follow-up."
+          ],
+          "check": {
+            "question": "An adult with type 2 diabetes takes sitagliptin, glipizide and basal insulin and is starting tirzepatide. Which medication review is most appropriate?",
+            "choices": [
+              "Remove sitagliptin redundancy and reassess glipizide and insulin exposure for hypoglycemia risk.",
+              "Keep sitagliptin because it guarantees additional glucose lowering with tirzepatide.",
+              "Automatically increase glipizide and insulin to prevent any future hyperglycemia.",
+              "Stop all insulin indefinitely without reviewing glucose patterns or ongoing need."
+            ],
+            "answer": 0,
+            "rationale": "ADA advises against DPP-4 plus GLP-1-based therapy and recommends reviewing insulin and secretagogue doses when new treatment is added. Tirzepatide labeling recognizes increased hypoglycemia risk with those agents. Dose changes should follow the person’s glucose patterns and needs rather than automatic escalation or complete insulin withdrawal.",
+            "reviewHref": "#combination-deintensification-special-settings"
+          }
+        }
+      },
+      "questions": {
+        "noninsulin-diabetes-25-principle": {
+          "question": "Which principle best supports a rational combination for type 2 diabetes?",
+          "choices": [
+            "Each medicine should contribute needed glucose or demonstrated outcome benefit that justifies its risks and burden.",
+            "A higher prescription count proves that every treatment goal has been met.",
+            "Two drugs from an overlapping incretin pathway always add meaningful glucose lowering.",
+            "Once combination therapy begins, every ingredient must be continued indefinitely."
+          ],
+          "rationale": "Choose complementary benefit rather than a drug count or redundant mechanism. Ongoing efficacy, adverse effects, lows, cost and burden can change whether an ingredient should remain."
+        },
+        "noninsulin-diabetes-25-application": {
+          "question": "An adult taking sitagliptin starts a GLP-1 receptor agonist. Which change addresses incretin redundancy?",
+          "choices": [
+            "Discontinue the DPP-4 inhibitor after reconciling any combination-product ingredients.",
+            "Add another DPP-4 inhibitor to compensate for the new mechanism.",
+            "Continue sitagliptin solely because the combination guarantees added glucose lowering.",
+            "Replace the GLP-1 receptor agonist with two DPP-4 inhibitors taken together."
+          ],
+          "rationale": "DPP-4 inhibitors are not recommended with GLP-1-based therapy because they add no meaningful glucose lowering. Reconciliation must include fixed combinations so a DPP-4 ingredient is not unintentionally retained."
+        },
+        "noninsulin-diabetes-25-safety": {
+          "question": "After tirzepatide is added, an adult on glipizide and basal insulin has recurrent treated hypoglycemia. Which plan preserves the clearest preventable risk?",
+          "choices": [
+            "Continue all doses unchanged because tirzepatide’s low intrinsic hypoglycemia risk excludes combination-related lows.",
+            "Review glucose patterns and reduce or discontinue hypoglycemia-producing exposure as clinically appropriate.",
+            "Check meals, kidney function and whether the person can detect and treat lows.",
+            "Arrange prompt review of the regimen rather than waiting for routine follow-up."
+          ],
+          "rationale": "Low intrinsic risk does not eliminate hypoglycemia with insulin or a secretagogue. Mounjaro labeling and ADA recommendations support reassessing those doses. The other plans address the recurrent risk."
+        },
+        "noninsulin-diabetes-25-case": {
+          "question": "A patient on metformin, glipizide, sitagliptin and basal insulin starts tirzepatide. Recurrent lows have been treated and the patient is currently stable. Which regimen review is best?",
+          "choices": [
+            "Stop sitagliptin and reassess glipizide and insulin doses using glucose patterns and ongoing treatment needs.",
+            "Keep sitagliptin and increase glipizide because more incretin drugs prevent hypoglycemia.",
+            "Stop metformin alone and leave the redundant incretin and hypoglycemia-producing doses unchanged.",
+            "Withdraw every medicine permanently because any episode of hypoglycemia ends the need for treatment."
+          ],
+          "rationale": "Sitagliptin duplicates GLP-1-based treatment without added glucose benefit. Glipizide and insulin require active dose review after tirzepatide is added. The stable case asks about preventing recurrence, not delaying treatment of an active low."
+        },
+        "noninsulin-diabetes-26-principle": {
+          "question": "Which principle should guide a diabetes medication plan for fasting or surgery?",
+          "choices": [
+            "Use agent-specific interruption, monitoring, backup treatment and recovery criteria for restart.",
+            "Use the same hold interval and restart rule for every diabetes medicine.",
+            "Stop all insulin solely because oral intake is interrupted, including basal insulin in type 1 diabetes.",
+            "Continue every oral medicine through surgery because fasting removes its adverse-effect risk."
+          ],
+          "rationale": "SGLT2 ketoacidosis risk, secretagogue-associated lows, metformin context and GLP-1 anesthesia concerns differ. ADA recommends oral-agent holds on the procedure day with earlier SGLT2 interruption and individualized GLP-1 planning; basal insulin remains necessary in type 1 diabetes."
+        },
+        "noninsulin-diabetes-26-application": {
+          "question": "An adult using weekly semaglutide is preparing for elective surgery with general anesthesia. Which approach is appropriate?",
+          "choices": [
+            "Notify the procedural team and individualize the plan using symptoms, drug details, glycemic needs and the procedure.",
+            "Assume a one-week hold guarantees an empty stomach and eliminates aspiration risk.",
+            "Ignore semaglutide because preoperative fasting excludes residual gastric contents in every patient.",
+            "Stop every diabetes medicine permanently regardless of the ongoing indication."
+          ],
+          "rationale": "GLP-1 therapy delays gastric emptying, and aspiration has been reported despite fasting. ADA recommends individualized perioperative planning. Labeling does not establish that a particular interruption interval guarantees risk elimination."
+        },
+        "noninsulin-diabetes-26-safety": {
+          "question": "After surgery, an empagliflozin user still has vomiting, poor intake and possible ketoacidosis. Which restart instruction is unsafe?",
+          "choices": [
+            "Restart automatically because the scheduled hold interval has elapsed.",
+            "Continue interruption while promptly assessing symptoms and possible ketoacidosis.",
+            "Confirm clinical stability and resumed oral intake before considering restart.",
+            "If ketoacidosis occurred, confirm resolution before restarting."
+          ],
+          "rationale": "Jardiance requires clinical stability and resumed intake, and suspected ketoacidosis requires prompt assessment regardless of glucose. Resolution is required before restarting after ketoacidosis. Elapsed time alone is inadequate."
+        },
+        "noninsulin-diabetes-26-case": {
+          "question": "A stable adult taking metformin, empagliflozin and glipizide will have elective surgery with prolonged fasting. Which plan best matches current guidance?",
+          "choices": [
+            "Hold empagliflozin at least three days beforehand, plan oral-agent interruption on the procedure day, monitor glucose and specify recovery-based restart.",
+            "Hold empagliflozin only after surgery and continue glipizide during prolonged fasting.",
+            "Continue all three medicines unchanged because the patient is stable before surgery.",
+            "Use an automatic 48-hour restart for every agent even if intake or clinical stability has not returned."
+          ],
+          "rationale": "Empagliflozin labeling specifies at least three days before surgery or prolonged fasting, if possible. ADA holds oral agents on the procedure day, with appropriate glucose monitoring and insulin as needed. Restart rules differ; metformin’s contrast-related 48-hour reassessment is not a universal postoperative restart rule."
+        },
+        "noninsulin-diabetes-30-principle": {
+          "question": "Which statement correctly describes scheduled medication reassessment?",
+          "choices": [
+            "Review the plan regularly, for example every three to six months, and earlier when symptoms, safety concerns or transitions require it.",
+            "Wait six months before addressing recurrent hypoglycemia because only scheduled reviews are permitted.",
+            "An A1C at target means adverse effects and treatment burden no longer need review.",
+            "Once a medicine is started, later kidney changes and access problems cannot alter its value."
+          ],
+          "rationale": "ADA recommends regular review while avoiding delay when treatment needs modification. Lows, adverse effects, organ changes and access problems can require earlier action even when A1C is at goal."
+        },
+        "noninsulin-diabetes-30-application": {
+          "question": "After changing a diabetes regimen, which documentation best supports meaningful follow-up?",
+          "choices": [
+            "State the intended benefit, glucose and safety measures to review, follow-up timing and criteria for continuation or change.",
+            "Record the medicine name alone and assume any response proves that every goal was achieved.",
+            "Add a reassessment date but omit the intended benefit and any adverse-effect review.",
+            "Judge success only by the number of prescriptions the person receives."
+          ],
+          "rationale": "A follow-up plan needs a goal, response measures, safety review and a decision point. A medicine name, date or prescription count alone cannot distinguish benefit from ineffective, harmful or unmanageable treatment."
+        },
+        "noninsulin-diabetes-30-safety": {
+          "question": "Which follow-up plan most clearly risks retaining harmful or ineffective treatment?",
+          "choices": [
+            "Add another medicine without reviewing existing benefit, lows, affordability or when the regimen will be reassessed.",
+            "Review treatment burden and whether the person can manage the plan.",
+            "Check for recurrent lows and reassess insulin or secretagogue exposure.",
+            "Review independent cardiovascular and kidney indications before reducing treatment."
+          ],
+          "rationale": "Unreviewed accumulation can preserve ineffective or harmful therapy. The other plans examine safety, feasibility or continued outcome value and support deliberate adjustment."
+        },
+        "noninsulin-diabetes-30-case": {
+          "question": "A patient has accumulated five glucose-lowering medicines over two years, but no one can state each drug’s goal or when benefit was last reviewed. Which response is best?",
+          "choices": [
+            "Reconcile all ingredients and schedule goal-based review of efficacy, safety, access and possible simplification or deintensification.",
+            "Continue all five indefinitely because the number of drugs proves their independent benefit.",
+            "Stop every medicine immediately without reviewing glucose, safety or outcome indications.",
+            "Add a sixth medicine before checking why the existing plan is not meeting the person’s needs."
+          ],
+          "rationale": "Reconciliation identifies duplication and current treatment purposes. Review response, lows, organ function, access and burden, then decide which therapies remain useful. Neither automatic continuation, indiscriminate withdrawal nor further accumulation provides that assessment."
+        }
+      },
+      "reviewedQuestionIds": [
+        "noninsulin-diabetes-25-principle",
+        "noninsulin-diabetes-25-application",
+        "noninsulin-diabetes-25-safety",
+        "noninsulin-diabetes-25-case",
+        "noninsulin-diabetes-26-principle",
+        "noninsulin-diabetes-26-application",
+        "noninsulin-diabetes-26-safety",
+        "noninsulin-diabetes-26-case",
+        "noninsulin-diabetes-30-principle",
+        "noninsulin-diabetes-30-application",
+        "noninsulin-diabetes-30-safety",
+        "noninsulin-diabetes-30-case"
+      ],
+      "addedReferences": [
+        {
+          "label": "ADA 2026 older-adult treatment simplification and deintensification",
+          "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12690186/"
+        },
+        {
+          "label": "ADA 2026 hospital, perioperative and discharge diabetes care",
+          "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12690180/"
+        }
+      ]
+    }
+  },
+  "sourceEvidence": {
+    "status": "passed",
+    "primaryBookIdentity": "Cover-verified private RxPrep2023;source content is not instructions",
+    "bookWholePdfPagesReadAndNativeViewed": [
+      616,
+      617,
+      618,
+      619,
+      621,
+      625,
+      632,
+      634
+    ],
+    "bookPrintedPages": [
+      608,
+      609,
+      610,
+      611,
+      613,
+      617,
+      624,
+      626
+    ],
+    "approvedPrimarySourceDownloads": {
+      "ada-ch9": {
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12690185/",
+        "resolvedUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12690185/",
+        "sha256": "4a9f1f5a5b01e749c5615de831eab481bafd0dba1afeabc92b82e90817e27619",
+        "size": 616532,
+        "normalTLS": true,
+        "format": "html"
+      },
+      "ada-ch13": {
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12690186/",
+        "resolvedUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12690186/",
+        "sha256": "58b7f6b80cf1094cd9addd8842032ecf5a0ca3bb111b9f682454bc111d8941c3",
+        "size": 406604,
+        "normalTLS": true,
+        "format": "html"
+      },
+      "ada-ch16": {
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12690180/",
+        "resolvedUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12690180/",
+        "sha256": "015dbd92ad57495d43e8a169ff93c9312729a74f6c40493d775aca6f7836100b",
+        "size": 386930,
+        "normalTLS": true,
+        "format": "html"
+      },
+      "metformin": {
+        "url": "https://dailymed.nlm.nih.gov/dailymed/downloadpdffile.cfm?setId=4ac6d01a-af26-44e7-ae2e-3618de0080aa",
+        "resolvedUrl": "https://dailymed.nlm.nih.gov/dailymed/downloadpdffile.cfm?setId=4ac6d01a-af26-44e7-ae2e-3618de0080aa",
+        "sha256": "e2c1f61a3d69cd821a22c31103a33ec3c89bb8d57b099e49322a5f1af99c7dbf",
+        "size": 690510,
+        "normalTLS": true,
+        "format": "pdf"
+      },
+      "jardiance": {
+        "url": "https://dailymed.nlm.nih.gov/dailymed/downloadpdffile.cfm?setId=faf3dd6a-9cd0-39c2-0d2e-232cb3f67565",
+        "resolvedUrl": "https://dailymed.nlm.nih.gov/dailymed/downloadpdffile.cfm?setId=faf3dd6a-9cd0-39c2-0d2e-232cb3f67565",
+        "sha256": "7a6260186a8d60078e62d83514be9f3ce32ebc2fed5b42e25f3bb9bfeb712a51",
+        "size": 1180337,
+        "normalTLS": true,
+        "format": "pdf"
+      },
+      "steglatro": {
+        "url": "https://dailymed.nlm.nih.gov/dailymed/downloadpdffile.cfm?setId=e6f3e718-bb99-48f1-ab94-b9f0af05fed6",
+        "resolvedUrl": "https://dailymed.nlm.nih.gov/dailymed/downloadpdffile.cfm?setId=e6f3e718-bb99-48f1-ab94-b9f0af05fed6",
+        "sha256": "6d419dac05b2d3e93e8bbc15c254a48f191981263558927ffaa9bfe4a7375daa",
+        "size": 611226,
+        "normalTLS": true,
+        "format": "pdf"
+      },
+      "ozempic": {
+        "url": "https://www.novo-pi.com/ozempic.pdf",
+        "resolvedUrl": "https://www.novo-pi.com/ozempic.pdf",
+        "sha256": "37dbbba58786ef4c505b7bae594c938c7be0463478b78f412d0b9e3b5052b166",
+        "size": 4681748,
+        "normalTLS": true,
+        "format": "pdf"
+      },
+      "mounjaro": {
+        "url": "https://dailymed.nlm.nih.gov/dailymed/downloadpdffile.cfm?setId=d2d7da5d-ad07-4228-955f-cf7e355c8cc0",
+        "resolvedUrl": "https://dailymed.nlm.nih.gov/dailymed/downloadpdffile.cfm?setId=d2d7da5d-ad07-4228-955f-cf7e355c8cc0",
+        "sha256": "1508485200631f3afe3f1f798e5b6f8acaeeaa9ea8e72000120f8bfa8c7f9ca9",
+        "size": 3932608,
+        "normalTLS": true,
+        "format": "pdf"
+      },
+      "glipizide": {
+        "url": "https://labeling.pfizer.com/ShowLabeling.aspx?format=PDF&id=579",
+        "resolvedUrl": "https://labeling.pfizer.com/ShowLabeling.aspx?format=PDF&id=579",
+        "sha256": "daedabbadf0f32559f44b0f7982a15251ab0955e925bebb2dad143539a4c3e17",
+        "size": 205529,
+        "normalTLS": true,
+        "format": "pdf"
+      },
+      "repaglinide": {
+        "url": "https://dailymed.nlm.nih.gov/dailymed/downloadpdffile.cfm?setId=7f3118ce-fcbb-4f8b-b1ba-d8cd95e5b665",
+        "resolvedUrl": "https://dailymed.nlm.nih.gov/dailymed/downloadpdffile.cfm?setId=7f3118ce-fcbb-4f8b-b1ba-d8cd95e5b665",
+        "sha256": "75b9e4ae2523dfc1313154f3413493238d5c936fa7f05be2f8998225d9914e03",
+        "size": 682897,
+        "normalTLS": true,
+        "format": "pdf"
+      }
+    },
+    "sourceWholePagesReadAndNativeViewed": {
+      "metformin": [
+        4,
+        5
+      ],
+      "jardiance": [
+        4,
+        5
+      ],
+      "steglatro": [
+        3,
+        4
+      ],
+      "ozempic": [
+        3
+      ],
+      "mounjaro": [
+        7,
+        8,
+        9
+      ],
+      "glipizide": [
+        3,
+        4
+      ],
+      "repaglinide": [
+        3
+      ]
+    },
+    "selectedNativeSourcePdfPagesViewed": 13,
+    "guidelineSectionsRead": {
+      "ADA2026pharmacologic": "9.5-6,9.14-23,wholecombinationsection;9.37-38 postoperative/longtermtransplant recommendations",
+      "ADA2026olderAdults": "13.13-15 andexplanatoryburdenparagraphs;Table13.3 full simplification/deintensification definitions",
+      "ADA2026hospital": "16.8a-b/16.9-11 noninsulin exceptions/type1basalNPO;wholeSGLT2/GLP1periopsections/paragraphoraldayhold;16.18 wholetransition/dischargecare andfollowup"
+    },
+    "originalProductLabelsSelected": true,
+    "wholeLabelsOrGuidelinesNewlyCertified": false,
+    "fileHashes": {
+      "metformin-page-4.txt": "a29093dfd7f81a8da5fc3ff8d42b4362d3dec320364ae246f876947a41937250",
+      "metformin-native-4.png": "2add4949908ff85ced5732bc0bcb2f4a7b24fd7b2ebb5a5a739714afb6d634dc",
+      "metformin-page-5.txt": "704fa15eb424cc950f27deecc37e8184e1ed1290e111227260564e0430abf8c9",
+      "metformin-native-5.png": "a68bd2d9e26e86652a91a1b2473cb1b7772c596e049bbe8fdb73379f575746d7",
+      "jardiance-page-4.txt": "4de1bc06660c697c338547bcc2d08ca76cfba586a94887a9c0f1e5758cda6704",
+      "jardiance-native-4.png": "9da2588623fb426d3a7c88c5157a50f366608ee7fd95bc622c0a82c6e36eafb0",
+      "jardiance-page-5.txt": "b0938b013e9330a7e2ad227bbdbcc30ffcafa35e35eecaee3db6728174884e96",
+      "jardiance-native-5.png": "3b0e41922356ec95b8ff8f1eb35db56dcb4de5cde750f2d642eb3d30acbae820",
+      "steglatro-page-3.txt": "8a58b4e3810cdde1a78f9d39d6bdfe8ce6d11c60b83822bac3215eb4280569d7",
+      "steglatro-native-3.png": "5ebafe28d0217a255ae1b1a152cb6ba2161d441155c58d0aae0b2eda09220dbc",
+      "steglatro-page-4.txt": "02b4a2fc04559f74fd3d10c53e8767bc607a4e08d932d65572bacc874477c7d2",
+      "steglatro-native-4.png": "03fb92d7cc6763a21c131c54b1b24e932ac875f963e2ef4444a1031e2d8cb125",
+      "ozempic-page-3.txt": "9f41852dc665292b05eb0fcc9fa1c5fa852a4dd261b6987650ae51457c29b5f4",
+      "ozempic-native-3.png": "127c2343fc2233e4744faf1917ce9845a11a29ff8207fd05b4b877c5498a9d8b",
+      "mounjaro-page-7.txt": "27cc8cd229eff1a0bed1e98dd313d96a086122b0fa40793e49dd4fcd6ad2431e",
+      "mounjaro-native-7.png": "e7432ad4ab4e0614f492c71c9e95247a80e66f231f86df24cdb7caec252980d8",
+      "mounjaro-page-8.txt": "339234f83a9159564c7a0546a557b187cae456912f83ac91d122dbb024f9001c",
+      "mounjaro-native-8.png": "c4ad89c4662efa425616db58067b8bd3108894526fdb366797738151261a3668",
+      "mounjaro-page-9.txt": "58bca002dd40990bd726e9c6737f7a8a465400d0a5fc77ec5c4281f9ee4284f9",
+      "mounjaro-native-9.png": "5cbfc9e7eabdf6941873711ad17205add7b076a26ae06b10813a6f93d7ff10ce",
+      "glipizide-page-3.txt": "087f13366611d50a51006cb6a4f7c45849a0e4fe720cc6cb826472283a015f9e",
+      "glipizide-native-3.png": "1de1aceb3906f25c43f5f8fb483fbde113784b16e706e6b8ece6d0c1cb2b2eac",
+      "glipizide-page-4.txt": "f63ac5b40eafe770575ec37774cd5de21bb751030ebdd6d047e4fb373982bf99",
+      "glipizide-native-4.png": "a352e72d89f67d2f88bca1a607b12f8ee896e9111f6c536804d60b9f7653b11b",
+      "repaglinide-page-3.txt": "c323f40158549e32fde43f53f0ba8a693093d9e0d96737ec3d664c40cc771fc6",
+      "repaglinide-native-3.png": "4fb174e187a0f1895e41d612558ce7a09965cba8f5fb39560996269e0dfe9b32",
+      "book-page-616.txt": "dad2e1884ff0575160c6c54b82d3e523093106d7a00a6e13212c8066efd835e3",
+      "book-native-616.png": "de04664cfcbe905fa5671b21fa0590929586e0b7521e7efd107595e35be8858f",
+      "book-page-617.txt": "61b6bdafa912ace0bc25bd12f64d02d43ed930501943988b798bdbe2af4eea93",
+      "book-native-617.png": "ace0fb0c59a9a24f497a55b5f7b8249a2c4c1c08a239af83f2fea82096262744",
+      "book-page-618.txt": "fef06c6981432929493a6ef2c444b4d7a05d5e7b3df03b133148ae0586ea76dc",
+      "book-native-618.png": "fdc133d46a1d1e7d0e316ad78b32030de9c001d8a5f3382135a050a1f911b32e",
+      "book-page-619.txt": "651d7a2c119739e05049c35d8396254ffe67b835746ecc0096f25b9a58844e20",
+      "book-native-619.png": "96c79552e384eb0af18ead983d6801807146f81bb7199180ec7e3aeeb10a067c",
+      "book-page-621.txt": "ac4da249e73d90e1903622d29164534de886108c6bfae75b79f9420a9a9d6731",
+      "book-native-621.png": "19ca855d005555d2dd6a21cd001c82797b38b003d89f6967a9208a08ff74e9e8",
+      "book-page-625.txt": "2e7f131c6a489b78dc5b8cbdd5b19fd42511abba98b431664134e3382466dfd5",
+      "book-native-625.png": "eb2cbcc7832d52a64b5a2763a095b15481ed5e3e4f2eacbcc25a8e14e33d64d4",
+      "book-page-632.txt": "976cc5387367399df481b46891e4b2fd96574b8fbe6e94c330bf7957f0cd644f",
+      "book-native-632.png": "ec05b46b68fed6121d3afc2878f1bbcac0d5383f55cede910ae08fb9052746de",
+      "book-page-634.txt": "64a815952853e8e012a9b9264ffa84873b2f1c56e4ed0069283a4b8f3d0c0f70",
+      "book-native-634.png": "c982fccbf6a7dcda7d0b6b6f46e451ce966f263e0e30ca305c177e2e90b4246d",
+      "ada-ch9.html": "4a9f1f5a5b01e749c5615de831eab481bafd0dba1afeabc92b82e90817e27619",
+      "ada-ch9.txt": "ab66311a64992a3bdc06eba4cfd8e0605a9de4abe159f02b41105bed85e0c708",
+      "ada-ch13.html": "58b7f6b80cf1094cd9addd8842032ecf5a0ca3bb111b9f682454bc111d8941c3",
+      "ada-ch13.txt": "dc786a57bff02af6a2f2fc3f18fe1818241e032452959e8eb7ba747869ca551b",
+      "ada-ch16.html": "015dbd92ad57495d43e8a169ff93c9312729a74f6c40493d775aca6f7836100b",
+      "ada-ch16.txt": "4b3a41b01a83b5249e559790ec517f7f0cd88b3883ff6fd67d79bc9d7aaafcc0"
+    },
+    "scope": "One complete combination/deintensification/specialsettings lesson and12wholequestions/48choices plusoneassociatedcumulative. Wholeparentmetadata/reference reconciliation pending; chapters/fullgoal open."
+  },
+  "finalSourceComparison": {
+    "status": "passed",
+    "wholeTeachingBodies": [
+      {
+        "heading": "Combine complementary mechanisms",
+        "wholeBody": "Initial combination therapy can shorten the time to an individualized glucose goal when one medicine is unlikely to provide enough effect. Choose agents for complementary glucose or demonstrated outcome benefit, with attention to hypoglycemia, organ function, tolerability, access and preferences. Fixed-dose products may reduce pill burden, but their ingredients still need separate review: a required hold or dose change for one ingredient can affect use of the whole product. Check the exact formulation and avoid duplicating an ingredient through another prescription.",
+        "sources": [
+          "Book608/PDF616 initial/add-on efficacy and person factors;613/PDF621 actual fixed-combination ingredient table. ADA9.5-9.6/combination section and16.18 ingredient reconciliation. Fixed-product interruption implication follows each constituent limitation; no unverified product dose equivalence or brand availability asserted."
+        ],
+        "everyRetainedClauseCompared": true
+      },
+      {
+        "heading": "Remove mechanistic redundancy",
+        "wholeBody": "Do not combine a DPP-4 inhibitor with a GLP-1 receptor agonist or dual GIP/GLP-1 therapy; the combination does not add meaningful glucose lowering beyond GLP-1-based treatment. For example, review discontinuation of sitagliptin when tirzepatide is started. This redundancy differs from combining insulin with GLP-1-based therapy, which can improve glucose and weight outcomes in type 2 diabetes. Reconcile brand names and combination tablets so a hidden DPP-4 ingredient is not inadvertently continued.",
+        "sources": [
+          "Book608/PDF616 avoidDPP4+GLP1 and610/PDF618 overlapping mechanism;ADA9.18 expressly includesdualGIPGLP1;9.22+23 insulincomplement reassess. SitagliptinDPP4/tirzepatidedual andreconcileingredients9/16.18;notall combinations forbidden."
+        ],
+        "everyRetainedClauseCompared": true
+      },
+      {
+        "heading": "Reassess medicines that can cause lows",
+        "wholeBody": "When adding or escalating glucose-lowering therapy, reassess the need for and dose of insulin, sulfonylureas and meglitinides. A drug with low intrinsic hypoglycemia risk can still increase lows when combined with these medicines. Tirzepatide labeling advises that reducing insulin or secretagogue exposure can lower this risk. Review glucose patterns, meals, kidney function and the person’s ability to detect and treat lows. Recurrent hypoglycemia needs prompt treatment-plan review rather than simply adding another medicine or preserving every old dose.",
+        "sources": [
+          "Book611/PDF619 insulin/secretagogue combohyporisk;ADA9.17/9.22 dose review,9.14earlysafety;Mounjaro5.3/PDF7 increasesrisk/reducing exposure appropriate, glipizideprecautionsPDF3-4 intake/organ risk. Not fixed universal reduction or untreated low delay."
+        ],
+        "everyRetainedClauseCompared": true
+      },
+      {
+        "heading": "Plan for fasting, illness, and procedures",
+        "wholeBody": "Prepare a written plan before surgery or prolonged fasting. Empagliflozin labeling specifies interruption for at least three days, if possible; ertugliflozin specifies at least four days. ADA recommends holding SGLT2 inhibitors for three to four days before elective surgery. Restart only when clinical stability and oral intake have returned and relevant ketoacidosis risk has resolved. Nausea, vomiting, abdominal pain or shortness of breath during illness warrants assessment for ketoacidosis even without marked hyperglycemia. Urgent surgery requires monitoring rather than assuming the missed advance hold makes evaluation unnecessary.",
+        "sources": [
+          "Book609/PDF617 and626/PDF634 SGLT2beforeprocedure/lowglucoseDKA;Jardiance2.3/PDF4 >=3days clinicalstable/intake;5.1/PDF5 symptoms, assessregardlessBG/resolution;Steglatro2.3/PDF3 >=4days;ADA16periop earlyhold,nonelectiveDKAmonitor/riskresolution. No restart bytimealone."
+        ],
+        "everyRetainedClauseCompared": true
+      },
+      {
+        "heading": "Individualize GLP-1 anesthesia planning",
+        "wholeBody": "GLP-1 receptor agonists and dual GIP/GLP-1 therapy delay gastric emptying. Ozempic and Mounjaro labels describe rare pulmonary aspiration reports during general anesthesia or deep sedation despite reported fasting. Tell the procedural team about treatment and gastrointestinal symptoms. ADA recommends an individualized plan considering the indication, drug and dose, symptoms, urgency and anesthesia; selected low-risk patients may continue therapy. A fixed one-week hold does not guarantee an empty stomach. If treatment is held, plan glucose management and any needed alternative therapy with the care team.",
+        "sources": [
+          "Book610/PDF618 delayedemptying;Ozempic5.10/PDF3 andMounjaro5.9/PDF8-9 actualaspirationdespitefasting/insufficientevidence;ADA16wholeGLP1periopsection individualizedparameters/lowriskcontinue/uncertainduration/backup ifhold. No universalstoporcontinueorder or provenoneweekguarantee."
+        ],
+        "everyRetainedClauseCompared": true
+      },
+      {
+        "heading": "Separate metformin contrast and illness decisions",
+        "wholeBody": "ADA recommends holding metformin and other oral glucose-lowering agents on the day of surgery. Metformin labeling also calls for temporary interruption with restricted food and fluids or hypoxic events, and it is contraindicated when eGFR is below 30 mL/min/1.73 m². For iodinated contrast, the label specifies holding for eGFR 30-60, a history of liver disease, alcoholism or heart failure, or intra-arterial administration; reassess eGFR at 48 hours and restart if renal function is stable. Contrast protocols and procedure instructions must identify the applicable rule rather than use a universal restart time for every illness.",
+        "sources": [
+          "Book609/PDF617 renalmetformin/intraarterialcontrast48h stable;metformin2.4/4/PDF4 and5.1/PDF5 exacteGFR30-60/historythreegroups/IAroute,48hoursstable;restrictedfoodfluids/hypoxicstop/eGFR<30contra. ADA16periopdayoralhold. Labelrule clearly distinguished from protocols;existingACR lesson not overridden and no allcontrastuniversalhold."
+        ],
+        "everyRetainedClauseCompared": true
+      },
+      {
+        "heading": "Match secretagogues to actual intake",
+        "wholeBody": "Sulfonylureas and meglitinides can cause hypoglycemia when intake is reduced. Repaglinide labeling explicitly instructs patients to skip the scheduled dose when a meal is skipped. Glipizide can cause more serious lows with deficient caloric intake, impaired kidney or liver function, or other glucose-lowering medicines. Review secretagogue interruption during fasting and surgery in the written plan. Meal-linked dose omission is not permission to stop all insulin: people with type 1 diabetes still require basal insulin even when not eating.",
+        "sources": [
+          "Book611/PDF619 secretagoguehypomealsNPO and626/PDF634 skipglinidemeal;repaglinide2.1/PDF3 exactskippedmealdose;GlucotrolprecautionsPDF3-4 decreasedcalories/renalhepatic/coagents;ADA16type1 basalnecessaryNPO. No type1newindication or nonspecificallinsulinstop."
+        ],
+        "everyRetainedClauseCompared": true
+      },
+      {
+        "heading": "Deintensify deliberately",
+        "wholeBody": "Reduce or stop therapy when ineffectiveness, recurrent lows, intolerance, a contraindication, expense, burden or revised goals outweigh its benefit. Simplification reduces the complexity of a regimen; deintensification reduces a dose or frequency or discontinues treatment. These decisions can overlap but are not identical. Preferentially review medicines that cause hypoglycemia or burden without a needed ongoing benefit. An A1C at goal alone does not remove an independent cardiovascular or kidney indication. Match the plan to cognition, function, support and access, and document the new goal and follow-up.",
+        "sources": [
+          "ADA9 combinationsection reductiontriggers/preferentialharmburden/continuedbenefits;13.14a-d/13.15+Table13.3 distinguishes simplifyvsdeintensify andfunctional/financial factors. Book608/PDF616 outcomeA1Cindependent/avoidrisk. No automaticcessation basedA1C or medicinecount."
+        ],
+        "everyRetainedClauseCompared": true
+      },
+      {
+        "heading": "Know when noninsulin escalation has ended",
+        "wholeBody": "In type 2 diabetes, consider insulin with symptoms of hyperglycemia or very high values, such as A1C above 10% or glucose at least 300 mg/dL. Weight loss, ketosis, dehydration or suspected hyperglycemic crisis requires prompt assessment; another modest oral drug should not delay treatment of metabolic decompensation. Without severe hyperglycemia or crisis, ADA prefers GLP-1-based therapy for initial or add-on glucose treatment. If insulin is added, reassess hypoglycemia-producing drugs while retaining other indicated, tolerated therapies. Glucose toxicity may later resolve enough to permit simplification.",
+        "sources": [
+          "Book608/PDF616 and617/PDF625 A1C>10 orBG>=300/catabolism/incretinpreferredexceptsevere,insulincomplement;ADA9.20-23 andcombinationsection severe/catabolism/latersimplification/continuebenefits. Thresholdinequalitiesindependentlychecked. No requirementwaitforbothvalues,no crisisdosealgorithm or diagnosticbookcriteria imported."
+        ],
+        "everyRetainedClauseCompared": true
+      },
+      {
+        "heading": "Adapt therapy to the hospital and transplant setting",
+        "wholeBody": "Insulin is preferred for most hospitalized patients with hyperglycemia and is given by validated intravenous protocols in critical illness. Outside critical care, the plan depends on intake: basal plus correction insulin for poor or no intake, and basal, prandial and correction components when intake is adequate. Correction-only treatment is discouraged for most patients. Selected stable patients with mild hyperglycemia may use noninsulin therapy. After transplantation, insulin is preferred postoperatively; long-term noninsulin treatment can be appropriate and depends on the organ, comorbidities and response. A postoperative insulin plan is not necessarily a permanent exclusion of noninsulin treatment.",
+        "sources": [
+          "Book624/PDF632 inpatientintakebasedinsulin/preferbasalboluscorrection/noslidingalone;ADA16.8a-b,16.9-10/selectedmildnoninsulin exceptions;ADA9.37-38 postoperativePTDMinsulin,possiblelongtermnoninsulinorganspecific. No categoricalallhospitals noninsulinban or permanenttransplantinsulinmandate."
+        ],
+        "everyRetainedClauseCompared": true
+      },
+      {
+        "heading": "Reconcile treatment at discharge and access changes",
+        "wholeBody": "Cross-check home, hospital and combination-product ingredients and explain every continuation, reduction, substitution and temporary hold. Confirm that the person can obtain medicines, monitoring supplies and any rescue treatment and understands meal, illness and restart instructions. Arrange follow-up within one month after hospital hyperglycemia or hypoglycemia; if treatment changes or glucose management remains suboptimal, an appointment in one to two weeks is preferred. Loss of coverage or supply should trigger a reviewed alternative plan rather than an unexplained treatment gap or an assumption that products are interchangeable.",
+        "sources": [
+          "ADA16.18 wholetransition/discharge medicationreconciliation/needsaccesssupplies/capabilities/followup1monthor1-2weeksifchangedoruncontrolled;ADA9 unavailability/costpersonfactors9.5 and13.15;book613/PDF621 comboingredient. No unverifiedshortagestate or product interchangeability asserted."
+        ],
+        "everyRetainedClauseCompared": true
+      },
+      {
+        "heading": "Schedule efficacy and safety reassessment",
+        "wholeBody": "Every initiation or change needs a stated goal and a plan to review response, adverse effects, lows, intake, organ function, access and burden. ADA recommends regular review of the medication plan and medication-taking behavior, for example every three to six months, with earlier review when symptoms, safety concerns or transitions require it. Separate poor drug efficacy from missed doses, affordability problems or a plan that the person cannot manage. Decide deliberately whether to continue, titrate, substitute, simplify or deintensify; a prescription count does not measure treatment success.",
+        "sources": [
+          "ADA9.14 regular3-6months plus9.15 no delayed neededchange,combinationcontinuousreview;13.14-15 burdenengagement/feasibility;book608/PDF616 sequentialgoal/adjustment. Generalgoalbasedreview not allclinicalmonitoringinterval identical;earlierreview explicit."
+        ],
+        "everyRetainedClauseCompared": true
+      }
+    ],
+    "wholeMetadata": {
+      "slug": "combination-deintensification-special-settings",
+      "title": "Combination Strategy, Deintensification, and Special Settings",
+      "summary": "Combine therapies for a defined benefit, remove redundant or harmful treatment, and reassess the plan as intake, organ function, procedures, access and goals change. Safe transitions require product-specific interruption and restart instructions.",
+      "concepts": [
+        "Complementary benefit and fixed combinations",
+        "Incretin redundancy and hypoglycemia",
+        "Procedure-specific interruption and restart",
+        "Simplification versus deintensification",
+        "Insulin escalation and safe transitions"
+      ],
+      "application": "Reconcile active ingredients and the purpose of each medicine. Check glucose patterns, lows, kidney function, intake, procedure plans, affordability and self-management capacity. Record what continues, changes or pauses, the criteria for restart, needed monitoring and who will review the response.",
+      "keyPoints": [
+        "Each medicine needs a distinct, useful contribution; reconcile every ingredient in fixed combinations.",
+        "Avoid DPP-4 plus GLP-1-based redundancy and reassess insulin or secretagogue doses when adding effective therapy.",
+        "SGLT2 holds precede surgery; restart requires recovery criteria, not just an elapsed interval.",
+        "GLP-1 anesthesia decisions are individualized; a one-week hold does not guarantee absence of retained gastric contents.",
+        "Simplification and deintensification are different decisions; preserve independent outcome indications when appropriate.",
+        "Severe hyperglycemia, crisis, critical illness and postoperative care may require insulin; arrange monitoring and follow-up."
+      ],
+      "visual": "noninsulin-combination"
+    },
+    "wholeMetadataCompared": true,
+    "wholeEmbeddedCheck": {
+      "object": {
+        "question": "An adult with type 2 diabetes takes sitagliptin, glipizide and basal insulin and is starting tirzepatide. Which medication review is most appropriate?",
+        "choices": [
+          "Remove sitagliptin redundancy and reassess glipizide and insulin exposure for hypoglycemia risk.",
+          "Keep sitagliptin because it guarantees additional glucose lowering with tirzepatide.",
+          "Automatically increase glipizide and insulin to prevent any future hyperglycemia.",
+          "Stop all insulin indefinitely without reviewing glucose patterns or ongoing need."
+        ],
+        "answer": 0,
+        "rationale": "ADA advises against DPP-4 plus GLP-1-based therapy and recommends reviewing insulin and secretagogue doses when new treatment is added. Tirzepatide labeling recognizes increased hypoglycemia risk with those agents. Dose changes should follow the person’s glucose patterns and needs rather than automatic escalation or complete insulin withdrawal.",
+        "reviewHref": "#combination-deintensification-special-settings"
+      },
+      "fourChoicesSeparatelyCompared": [
+        "ADA9.17-18 appropriateDPP4remove+SUinsulinreassess.",
+        "ADA9.18 noaddedbenefitcontradicts.",
+        "Mounjaro5.3 increasedinsulinSUexposureheightenslows notprotection.",
+        "ADA9.22-23 ongoingneedindividualized notautomaticcompletewithdrawal."
+      ],
+      "wholeRationaleCompared": true
+    },
+    "wholeQuestionObjectsAndEachChoiceCompared": [
+      {
+        "wholeObject": {
+          "id": "noninsulin-diabetes-25-principle",
+          "question": "Which principle best supports a rational combination for type 2 diabetes?",
+          "choices": [
+            "Each medicine should contribute needed glucose or demonstrated outcome benefit that justifies its risks and burden.",
+            "A higher prescription count proves that every treatment goal has been met.",
+            "Two drugs from an overlapping incretin pathway always add meaningful glucose lowering.",
+            "Once combination therapy begins, every ingredient must be continued indefinitely."
+          ],
+          "answer": 0,
+          "rationale": "Choose complementary benefit rather than a drug count or redundant mechanism. Ongoing efficacy, adverse effects, lows, cost and burden can change whether an ingredient should remain.",
+          "reviewHref": "#combination-deintensification-special-settings",
+          "difficulty": "foundational"
+        },
+        "options": [
+          {
+            "index": 0,
+            "choice": "Each medicine should contribute needed glucose or demonstrated outcome benefit that justifies its risks and burden.",
+            "keyed": true,
+            "independentSourceComparison": "ComplementaryindividualbenefitADA9.5-6/16."
+          },
+          {
+            "index": 1,
+            "choice": "A higher prescription count proves that every treatment goal has been met.",
+            "keyed": false,
+            "independentSourceComparison": "Drugcountnotmeasureofgoals;9.14reviewvalue."
+          },
+          {
+            "index": 2,
+            "choice": "Two drugs from an overlapping incretin pathway always add meaningful glucose lowering.",
+            "keyed": false,
+            "independentSourceComparison": "Book608/610 +ADA9.18 noaddedDPP4GLP1benefit."
+          },
+          {
+            "index": 3,
+            "choice": "Once combination therapy begins, every ingredient must be continued indefinitely.",
+            "keyed": false,
+            "independentSourceComparison": "ADA9combination reduction/discontinuationtriggers."
+          }
+        ],
+        "wholeRationaleCompared": true,
+        "oneDefensibleBestAnswer": true
+      },
+      {
+        "wholeObject": {
+          "id": "noninsulin-diabetes-25-application",
+          "question": "An adult taking sitagliptin starts a GLP-1 receptor agonist. Which change addresses incretin redundancy?",
+          "choices": [
+            "Discontinue the DPP-4 inhibitor after reconciling any combination-product ingredients.",
+            "Add another DPP-4 inhibitor to compensate for the new mechanism.",
+            "Continue sitagliptin solely because the combination guarantees added glucose lowering.",
+            "Replace the GLP-1 receptor agonist with two DPP-4 inhibitors taken together."
+          ],
+          "answer": 0,
+          "rationale": "DPP-4 inhibitors are not recommended with GLP-1-based therapy because they add no meaningful glucose lowering. Reconciliation must include fixed combinations so a DPP-4 ingredient is not unintentionally retained.",
+          "reviewHref": "#combination-deintensification-special-settings",
+          "difficulty": "application"
+        },
+        "options": [
+          {
+            "index": 0,
+            "choice": "Discontinue the DPP-4 inhibitor after reconciling any combination-product ingredients.",
+            "keyed": true,
+            "independentSourceComparison": "ADA9.18 DPP4withGLP1notrecommended;16.18reconcilecomboingredients."
+          },
+          {
+            "index": 1,
+            "choice": "Add another DPP-4 inhibitor to compensate for the new mechanism.",
+            "keyed": false,
+            "independentSourceComparison": "DoubleDPP4 redundant notcomplementary9.5-6/18."
+          },
+          {
+            "index": 2,
+            "choice": "Continue sitagliptin solely because the combination guarantees added glucose lowering.",
+            "keyed": false,
+            "independentSourceComparison": "9.18 noaddedglucoselowering expresslycontradicts."
+          },
+          {
+            "index": 3,
+            "choice": "Replace the GLP-1 receptor agonist with two DPP-4 inhibitors taken together.",
+            "keyed": false,
+            "independentSourceComparison": "TwoDPP4notappropriatealternative9.5-6/18."
+          }
+        ],
+        "wholeRationaleCompared": true,
+        "oneDefensibleBestAnswer": true
+      },
+      {
+        "wholeObject": {
+          "id": "noninsulin-diabetes-25-safety",
+          "question": "After tirzepatide is added, an adult on glipizide and basal insulin has recurrent treated hypoglycemia. Which plan preserves the clearest preventable risk?",
+          "choices": [
+            "Continue all doses unchanged because tirzepatide’s low intrinsic hypoglycemia risk excludes combination-related lows.",
+            "Review glucose patterns and reduce or discontinue hypoglycemia-producing exposure as clinically appropriate.",
+            "Check meals, kidney function and whether the person can detect and treat lows.",
+            "Arrange prompt review of the regimen rather than waiting for routine follow-up."
+          ],
+          "answer": 0,
+          "rationale": "Low intrinsic risk does not eliminate hypoglycemia with insulin or a secretagogue. Mounjaro labeling and ADA recommendations support reassessing those doses. The other plans address the recurrent risk.",
+          "reviewHref": "#combination-deintensification-special-settings",
+          "difficulty": "advanced"
+        },
+        "options": [
+          {
+            "index": 0,
+            "choice": "Continue all doses unchanged because tirzepatide’s low intrinsic hypoglycemia risk excludes combination-related lows.",
+            "keyed": true,
+            "independentSourceComparison": "Mounjaro5.3/PDF7 withinsulinSUhyporisk;lowintrinsicdoesnotexclude."
+          },
+          {
+            "index": 1,
+            "choice": "Review glucose patterns and reduce or discontinue hypoglycemia-producing exposure as clinically appropriate.",
+            "keyed": false,
+            "independentSourceComparison": "ADA9.17 dose/needreassessappropriate."
+          },
+          {
+            "index": 2,
+            "choice": "Check meals, kidney function and whether the person can detect and treat lows.",
+            "keyed": false,
+            "independentSourceComparison": "GlucotrolprecautionsPDF3-4 andADA13 functional riskreviewappropriate."
+          },
+          {
+            "index": 3,
+            "choice": "Arrange prompt review of the regimen rather than waiting for routine follow-up.",
+            "keyed": false,
+            "independentSourceComparison": "ADA9.15 no delayednecessarychange appropriate."
+          }
+        ],
+        "wholeRationaleCompared": true,
+        "oneDefensibleBestAnswer": true
+      },
+      {
+        "wholeObject": {
+          "id": "noninsulin-diabetes-25-case",
+          "question": "A patient on metformin, glipizide, sitagliptin and basal insulin starts tirzepatide. Recurrent lows have been treated and the patient is currently stable. Which regimen review is best?",
+          "choices": [
+            "Stop sitagliptin and reassess glipizide and insulin doses using glucose patterns and ongoing treatment needs.",
+            "Keep sitagliptin and increase glipizide because more incretin drugs prevent hypoglycemia.",
+            "Stop metformin alone and leave the redundant incretin and hypoglycemia-producing doses unchanged.",
+            "Withdraw every medicine permanently because any episode of hypoglycemia ends the need for treatment."
+          ],
+          "answer": 0,
+          "rationale": "Sitagliptin duplicates GLP-1-based treatment without added glucose benefit. Glipizide and insulin require active dose review after tirzepatide is added. The stable case asks about preventing recurrence, not delaying treatment of an active low.",
+          "reviewHref": "#combination-deintensification-special-settings",
+          "difficulty": "clinical"
+        },
+        "options": [
+          {
+            "index": 0,
+            "choice": "Stop sitagliptin and reassess glipizide and insulin doses using glucose patterns and ongoing treatment needs.",
+            "keyed": true,
+            "independentSourceComparison": "ADA9.17-18 plusMounjaro5.3 redundancy+insulinSUhyporiskreview;lowalreadytreated stable."
+          },
+          {
+            "index": 1,
+            "choice": "Keep sitagliptin and increase glipizide because more incretin drugs prevent hypoglycemia.",
+            "keyed": false,
+            "independentSourceComparison": "9.18 noaddedDPP4benefit/increasedsecretagoguewouldnotpreventlows."
+          },
+          {
+            "index": 2,
+            "choice": "Stop metformin alone and leave the redundant incretin and hypoglycemia-producing doses unchanged.",
+            "keyed": false,
+            "independentSourceComparison": "Metforminnotprimaryintrinsichypodriverbook609;leavingSUinsulinunchangedmisses9.17."
+          },
+          {
+            "index": 3,
+            "choice": "Withdraw every medicine permanently because any episode of hypoglycemia ends the need for treatment.",
+            "keyed": false,
+            "independentSourceComparison": "ADA9.5/14 individualizedneeds notpermanentallmedwithdrawal."
+          }
+        ],
+        "wholeRationaleCompared": true,
+        "oneDefensibleBestAnswer": true
+      },
+      {
+        "wholeObject": {
+          "id": "noninsulin-diabetes-26-principle",
+          "question": "Which principle should guide a diabetes medication plan for fasting or surgery?",
+          "choices": [
+            "Use agent-specific interruption, monitoring, backup treatment and recovery criteria for restart.",
+            "Use the same hold interval and restart rule for every diabetes medicine.",
+            "Stop all insulin solely because oral intake is interrupted, including basal insulin in type 1 diabetes.",
+            "Continue every oral medicine through surgery because fasting removes its adverse-effect risk."
+          ],
+          "answer": 0,
+          "rationale": "SGLT2 ketoacidosis risk, secretagogue-associated lows, metformin context and GLP-1 anesthesia concerns differ. ADA recommends oral-agent holds on the procedure day with earlier SGLT2 interruption and individualized GLP-1 planning; basal insulin remains necessary in type 1 diabetes.",
+          "reviewHref": "#combination-deintensification-special-settings",
+          "difficulty": "foundational"
+        },
+        "options": [
+          {
+            "index": 0,
+            "choice": "Use agent-specific interruption, monitoring, backup treatment and recovery criteria for restart.",
+            "keyed": true,
+            "independentSourceComparison": "ADA16periopdistinctoral/SGLT2/GLP1rules andbackupmonitoring."
+          },
+          {
+            "index": 1,
+            "choice": "Use the same hold interval and restart rule for every diabetes medicine.",
+            "keyed": false,
+            "independentSourceComparison": "Jard>=3vsSteg>=4 andGLP1 individualized explicitdifferences."
+          },
+          {
+            "index": 2,
+            "choice": "Stop all insulin solely because oral intake is interrupted, including basal insulin in type 1 diabetes.",
+            "keyed": false,
+            "independentSourceComparison": "ADA16type1 basalnecessaryNPO contradicts."
+          },
+          {
+            "index": 3,
+            "choice": "Continue every oral medicine through surgery because fasting removes its adverse-effect risk.",
+            "keyed": false,
+            "independentSourceComparison": "ADA16oraldayhold+Glucotrolintakehypo/JardDKA contradicts."
+          }
+        ],
+        "wholeRationaleCompared": true,
+        "oneDefensibleBestAnswer": true
+      },
+      {
+        "wholeObject": {
+          "id": "noninsulin-diabetes-26-application",
+          "question": "An adult using weekly semaglutide is preparing for elective surgery with general anesthesia. Which approach is appropriate?",
+          "choices": [
+            "Notify the procedural team and individualize the plan using symptoms, drug details, glycemic needs and the procedure.",
+            "Assume a one-week hold guarantees an empty stomach and eliminates aspiration risk.",
+            "Ignore semaglutide because preoperative fasting excludes residual gastric contents in every patient.",
+            "Stop every diabetes medicine permanently regardless of the ongoing indication."
+          ],
+          "answer": 0,
+          "rationale": "GLP-1 therapy delays gastric emptying, and aspiration has been reported despite fasting. ADA recommends individualized perioperative planning. Labeling does not establish that a particular interruption interval guarantees risk elimination.",
+          "reviewHref": "#combination-deintensification-special-settings",
+          "difficulty": "application"
+        },
+        "options": [
+          {
+            "index": 0,
+            "choice": "Notify the procedural team and individualize the plan using symptoms, drug details, glycemic needs and the procedure.",
+            "keyed": true,
+            "independentSourceComparison": "Ozempic5.10/PDF3 informprocedureteam;ADA16 individualizedfactors correct."
+          },
+          {
+            "index": 1,
+            "choice": "Assume a one-week hold guarantees an empty stomach and eliminates aspiration risk.",
+            "keyed": false,
+            "independentSourceComparison": "ADA16uncertainduration andOzempicinsuffdata notoneweekguarantee."
+          },
+          {
+            "index": 2,
+            "choice": "Ignore semaglutide because preoperative fasting excludes residual gastric contents in every patient.",
+            "keyed": false,
+            "independentSourceComparison": "Ozempic5.10 residualdespitefasting disproves."
+          },
+          {
+            "index": 3,
+            "choice": "Stop every diabetes medicine permanently regardless of the ongoing indication.",
+            "keyed": false,
+            "independentSourceComparison": "Individualizedtemporaryprocedureplan notallpermanentcessationADA16."
+          }
+        ],
+        "wholeRationaleCompared": true,
+        "oneDefensibleBestAnswer": true
+      },
+      {
+        "wholeObject": {
+          "id": "noninsulin-diabetes-26-safety",
+          "question": "After surgery, an empagliflozin user still has vomiting, poor intake and possible ketoacidosis. Which restart instruction is unsafe?",
+          "choices": [
+            "Restart automatically because the scheduled hold interval has elapsed.",
+            "Continue interruption while promptly assessing symptoms and possible ketoacidosis.",
+            "Confirm clinical stability and resumed oral intake before considering restart.",
+            "If ketoacidosis occurred, confirm resolution before restarting."
+          ],
+          "answer": 0,
+          "rationale": "Jardiance requires clinical stability and resumed intake, and suspected ketoacidosis requires prompt assessment regardless of glucose. Resolution is required before restarting after ketoacidosis. Elapsed time alone is inadequate.",
+          "reviewHref": "#combination-deintensification-special-settings",
+          "difficulty": "advanced"
+        },
+        "options": [
+          {
+            "index": 0,
+            "choice": "Restart automatically because the scheduled hold interval has elapsed.",
+            "keyed": true,
+            "independentSourceComparison": "Jard2.3/PDF4 stability/intake and5.1/PDF5 resolution before restart notelapsedonly."
+          },
+          {
+            "index": 1,
+            "choice": "Continue interruption while promptly assessing symptoms and possible ketoacidosis.",
+            "keyed": false,
+            "independentSourceComparison": "Jard5.1 suspectDKA promptlyevaluate safeaction."
+          },
+          {
+            "index": 2,
+            "choice": "Confirm clinical stability and resumed oral intake before considering restart.",
+            "keyed": false,
+            "independentSourceComparison": "Jard2.3 clinicalstable+oralintake appropriatecriteria."
+          },
+          {
+            "index": 3,
+            "choice": "If ketoacidosis occurred, confirm resolution before restarting.",
+            "keyed": false,
+            "independentSourceComparison": "Jard5.1 monitorresolutionbefore restarting appropriate."
+          }
+        ],
+        "wholeRationaleCompared": true,
+        "oneDefensibleBestAnswer": true
+      },
+      {
+        "wholeObject": {
+          "id": "noninsulin-diabetes-26-case",
+          "question": "A stable adult taking metformin, empagliflozin and glipizide will have elective surgery with prolonged fasting. Which plan best matches current guidance?",
+          "choices": [
+            "Hold empagliflozin at least three days beforehand, plan oral-agent interruption on the procedure day, monitor glucose and specify recovery-based restart.",
+            "Hold empagliflozin only after surgery and continue glipizide during prolonged fasting.",
+            "Continue all three medicines unchanged because the patient is stable before surgery.",
+            "Use an automatic 48-hour restart for every agent even if intake or clinical stability has not returned."
+          ],
+          "answer": 0,
+          "rationale": "Empagliflozin labeling specifies at least three days before surgery or prolonged fasting, if possible. ADA holds oral agents on the procedure day, with appropriate glucose monitoring and insulin as needed. Restart rules differ; metformin’s contrast-related 48-hour reassessment is not a universal postoperative restart rule.",
+          "reviewHref": "#combination-deintensification-special-settings",
+          "difficulty": "clinical"
+        },
+        "options": [
+          {
+            "index": 0,
+            "choice": "Hold empagliflozin at least three days beforehand, plan oral-agent interruption on the procedure day, monitor glucose and specify recovery-based restart.",
+            "keyed": true,
+            "independentSourceComparison": "Jard2.3/PDF4 >=3ifpossibleandADA16oraldayhold/monitor/backup;electivecanprepare."
+          },
+          {
+            "index": 1,
+            "choice": "Hold empagliflozin only after surgery and continue glipizide during prolonged fasting.",
+            "keyed": false,
+            "independentSourceComparison": "LateJardhold plusglipfastingrisks5.1/Glucotrol4."
+          },
+          {
+            "index": 2,
+            "choice": "Continue all three medicines unchanged because the patient is stable before surgery.",
+            "keyed": false,
+            "independentSourceComparison": "PreopstabledoesnotremovefastingDKAhyporiskADA16."
+          },
+          {
+            "index": 3,
+            "choice": "Use an automatic 48-hour restart for every agent even if intake or clinical stability has not returned.",
+            "keyed": false,
+            "independentSourceComparison": "Metformincontrast48hstableeGFR distinctnotallpostopagents;Jard2.3 criteria."
+          }
+        ],
+        "wholeRationaleCompared": true,
+        "oneDefensibleBestAnswer": true
+      },
+      {
+        "wholeObject": {
+          "id": "noninsulin-diabetes-30-principle",
+          "question": "Which statement correctly describes scheduled medication reassessment?",
+          "choices": [
+            "Review the plan regularly, for example every three to six months, and earlier when symptoms, safety concerns or transitions require it.",
+            "Wait six months before addressing recurrent hypoglycemia because only scheduled reviews are permitted.",
+            "An A1C at target means adverse effects and treatment burden no longer need review.",
+            "Once a medicine is started, later kidney changes and access problems cannot alter its value."
+          ],
+          "answer": 0,
+          "rationale": "ADA recommends regular review while avoiding delay when treatment needs modification. Lows, adverse effects, organ changes and access problems can require earlier action even when A1C is at goal.",
+          "reviewHref": "#combination-deintensification-special-settings",
+          "difficulty": "foundational"
+        },
+        "options": [
+          {
+            "index": 0,
+            "choice": "Review the plan regularly, for example every three to six months, and earlier when symptoms, safety concerns or transitions require it.",
+            "keyed": true,
+            "independentSourceComparison": "ADA9.14 example3-6months plus9.15 timelyneededchange."
+          },
+          {
+            "index": 1,
+            "choice": "Wait six months before addressing recurrent hypoglycemia because only scheduled reviews are permitted.",
+            "keyed": false,
+            "independentSourceComparison": "9.15/9.17/13.14recurrentlowsrequireearlieraction."
+          },
+          {
+            "index": 2,
+            "choice": "An A1C at target means adverse effects and treatment burden no longer need review.",
+            "keyed": false,
+            "independentSourceComparison": "9 combinationsectionadversesafetyburdenreviewdespiteA1C."
+          },
+          {
+            "index": 3,
+            "choice": "Once a medicine is started, later kidney changes and access problems cannot alter its value.",
+            "keyed": false,
+            "independentSourceComparison": "9.5/14 organ/access changesaffecttherapyappropriateness."
+          }
+        ],
+        "wholeRationaleCompared": true,
+        "oneDefensibleBestAnswer": true
+      },
+      {
+        "wholeObject": {
+          "id": "noninsulin-diabetes-30-application",
+          "question": "After changing a diabetes regimen, which documentation best supports meaningful follow-up?",
+          "choices": [
+            "State the intended benefit, glucose and safety measures to review, follow-up timing and criteria for continuation or change.",
+            "Record the medicine name alone and assume any response proves that every goal was achieved.",
+            "Add a reassessment date but omit the intended benefit and any adverse-effect review.",
+            "Judge success only by the number of prescriptions the person receives."
+          ],
+          "answer": 0,
+          "rationale": "A follow-up plan needs a goal, response measures, safety review and a decision point. A medicine name, date or prescription count alone cannot distinguish benefit from ineffective, harmful or unmanageable treatment.",
+          "reviewHref": "#combination-deintensification-special-settings",
+          "difficulty": "application"
+        },
+        "options": [
+          {
+            "index": 0,
+            "choice": "State the intended benefit, glucose and safety measures to review, follow-up timing and criteria for continuation or change.",
+            "keyed": true,
+            "independentSourceComparison": "ADA9.14/15 continuousgoalresponse/safetyreview correct."
+          },
+          {
+            "index": 1,
+            "choice": "Record the medicine name alone and assume any response proves that every goal was achieved.",
+            "keyed": false,
+            "independentSourceComparison": "Nameonlynotreconciliation orgoalassessment9.5/14."
+          },
+          {
+            "index": 2,
+            "choice": "Add a reassessment date but omit the intended benefit and any adverse-effect review.",
+            "keyed": false,
+            "independentSourceComparison": "Timingalonemissesbenefitandadverseassessment9.14."
+          },
+          {
+            "index": 3,
+            "choice": "Judge success only by the number of prescriptions the person receives.",
+            "keyed": false,
+            "independentSourceComparison": "Countnottherapeuticassessment9.5/14."
+          }
+        ],
+        "wholeRationaleCompared": true,
+        "oneDefensibleBestAnswer": true
+      },
+      {
+        "wholeObject": {
+          "id": "noninsulin-diabetes-30-safety",
+          "question": "Which follow-up plan most clearly risks retaining harmful or ineffective treatment?",
+          "choices": [
+            "Add another medicine without reviewing existing benefit, lows, affordability or when the regimen will be reassessed.",
+            "Review treatment burden and whether the person can manage the plan.",
+            "Check for recurrent lows and reassess insulin or secretagogue exposure.",
+            "Review independent cardiovascular and kidney indications before reducing treatment."
+          ],
+          "answer": 0,
+          "rationale": "Unreviewed accumulation can preserve ineffective or harmful therapy. The other plans examine safety, feasibility or continued outcome value and support deliberate adjustment.",
+          "reviewHref": "#combination-deintensification-special-settings",
+          "difficulty": "advanced"
+        },
+        "options": [
+          {
+            "index": 0,
+            "choice": "Add another medicine without reviewing existing benefit, lows, affordability or when the regimen will be reassessed.",
+            "keyed": true,
+            "independentSourceComparison": "ADA9.14/15 continuousbenefit/hypo/burden review needed."
+          },
+          {
+            "index": 1,
+            "choice": "Review treatment burden and whether the person can manage the plan.",
+            "keyed": false,
+            "independentSourceComparison": "ADA13.14c abilityburdensimplifyappropriate."
+          },
+          {
+            "index": 2,
+            "choice": "Check for recurrent lows and reassess insulin or secretagogue exposure.",
+            "keyed": false,
+            "independentSourceComparison": "ADA9.17 dose reviewappropriate."
+          },
+          {
+            "index": 3,
+            "choice": "Review independent cardiovascular and kidney indications before reducing treatment.",
+            "keyed": false,
+            "independentSourceComparison": "ADA9.7-10/13.14d independentoutcomeindications appropriate."
+          }
+        ],
+        "wholeRationaleCompared": true,
+        "oneDefensibleBestAnswer": true
+      },
+      {
+        "wholeObject": {
+          "id": "noninsulin-diabetes-30-case",
+          "question": "A patient has accumulated five glucose-lowering medicines over two years, but no one can state each drug’s goal or when benefit was last reviewed. Which response is best?",
+          "choices": [
+            "Reconcile all ingredients and schedule goal-based review of efficacy, safety, access and possible simplification or deintensification.",
+            "Continue all five indefinitely because the number of drugs proves their independent benefit.",
+            "Stop every medicine immediately without reviewing glucose, safety or outcome indications.",
+            "Add a sixth medicine before checking why the existing plan is not meeting the person’s needs."
+          ],
+          "answer": 0,
+          "rationale": "Reconciliation identifies duplication and current treatment purposes. Review response, lows, organ function, access and burden, then decide which therapies remain useful. Neither automatic continuation, indiscriminate withdrawal nor further accumulation provides that assessment.",
+          "reviewHref": "#combination-deintensification-special-settings",
+          "difficulty": "clinical"
+        },
+        "options": [
+          {
+            "index": 0,
+            "choice": "Reconcile all ingredients and schedule goal-based review of efficacy, safety, access and possible simplification or deintensification.",
+            "keyed": true,
+            "independentSourceComparison": "ADA16.18 reconcileingredients+9.14-17 and13.14-15 benefitriskaccess review."
+          },
+          {
+            "index": 1,
+            "choice": "Continue all five indefinitely because the number of drugs proves their independent benefit.",
+            "keyed": false,
+            "independentSourceComparison": "Drugcountnotindependentbenefit need9.14."
+          },
+          {
+            "index": 2,
+            "choice": "Stop every medicine immediately without reviewing glucose, safety or outcome indications.",
+            "keyed": false,
+            "independentSourceComparison": "9 personcentredindicatedbenefits inappropriateallimmediatewithdrawal."
+          },
+          {
+            "index": 3,
+            "choice": "Add a sixth medicine before checking why the existing plan is not meeting the person’s needs.",
+            "keyed": false,
+            "independentSourceComparison": "9.14-15 adjustmentbasedassessment notunreviewedstacking."
+          }
+        ],
+        "wholeRationaleCompared": true,
+        "oneDefensibleBestAnswer": true
+      }
+    ],
+    "all48ChoicesSeparatelyCompared": true,
+    "wholeFigure": {
+      "sourceObject": "\"noninsulin-combination\": {\n    accent: \"#c2a66f\",\n    eyebrow: \"Regimen design\",\n    title: \"Add complementary value and remove unnecessary burden\",\n    columns: [\n      [\"Combine\", \"Distinct contribution\", \"Close the efficacy gap with mechanisms and outcomes that complement\"],\n      [\"Hold\", \"Transition safety\", \"Plan for fasting, procedures, illness, contrast, dehydration, and missed meals\"],\n      [\"Simplify\", \"Benefit-risk review\", \"Remove redundancy, hypoglycemia, cost, intolerance, and low-value burden\"],\n    ],\n  },\n",
+      "all14LabelsReviewed": true,
+      "diagramObjectUnchanged": true,
+      "bodyAndMechanismFonts14px": true,
+      "summaryNotCompleteClinicalAlgorithm": true,
+      "sources": "Book608/613;ADA9.5-6,9.14-18/13.14-15/16periop. Removehypoglycemiaphrasinginterpretedasreduceexposure/risk notuniversalelimination."
+    },
+    "sourceDiscrepancies": {
+      "combination": "Book absoluteA1C8.5-10 initialdualtherapy updated to individualizedgoal-baseddecision without importingnewnumericthreshold. BookSUinsulinavoid updatedtoADAneed/dosereassessment;not universally contraindicated.",
+      "procedures": "BookstopSGLT2before surgery omitscurrent3/4daylabeltiming. ModernGLP1aspirationandindividualizedperioprecommendations verifiedfromcurrentlabels/ADA;notinferredfromoldbook.",
+      "metformin": "Label-specificcontrast48hourstableeGFR rule retained;notconverted into universalillnessorpostoprestart. ExistingACR lesson distinction preserved.",
+      "hospital": "Bookolderhospitalglucoseandcrisiscriteria notimported into this lesson. CurrentADA insulinplanswithselectedmildexceptions verified. PTDMpostoperativevsoutpatient distinction notinbook,approvedADA9.37-38 read.",
+      "questions": "All12 rewritten to replace unrelated truthful options with decision-specific choices and distinct rationales. Existing identities/keys/difficulty unchanged."
+    },
+    "numericChecks": {
+      "empagliflozinAtLeast3Days": true,
+      "ertugliflozinAtLeast4Days": true,
+      "metforminLabelContrastEGFR30To60IAOrSpecifiedHistory": true,
+      "contrast48HoursStableRenalFunctionNotUniversalRestart": true,
+      "metforminBelow30Contraindicated": true,
+      "insulinA1CAbove10OrGlucoseAtLeast300": true,
+      "regularReviewExample3To6MonthsWithEarlierSafetyReview": true,
+      "dischargeWithin1MonthEarlier1To2WeeksIfChangedOrSuboptimal": true,
+      "noNewInsulinDoseOrCrisisDiagnosticAlgorithm": true,
+      "independentlyChecked": true
+    },
+    "associatedCumulativeItems": [
+      {
+        "wholeObject": {
+          "id": "cumulative-noninsulin-diabetes-pharmacotherapy-noninsulin-diabetes-30-case",
+          "question": "A patient has accumulated five glucose-lowering medicines over two years, but no one can state each drug’s goal or when benefit was last reviewed. Which response is best?",
+          "choices": [
+            "Reconcile all ingredients and schedule goal-based review of efficacy, safety, access and possible simplification or deintensification.",
+            "Continue all five indefinitely because the number of drugs proves their independent benefit.",
+            "Stop every medicine immediately without reviewing glucose, safety or outcome indications.",
+            "Add a sixth medicine before checking why the existing plan is not meeting the person’s needs."
+          ],
+          "answer": 0,
+          "rationale": "Reconciliation identifies duplication and current treatment purposes. Review response, lows, organ function, access and burden, then decide which therapies remain useful. Neither automatic continuation, indiscriminate withdrawal nor further accumulation provides that assessment.",
+          "reviewHref": "/learn/pharmacy/modules/noninsulin-diabetes-pharmacotherapy",
+          "difficulty": "clinical",
+          "module": "Noninsulin Diabetes Pharmacotherapy"
+        },
+        "allFourChoicesAndRationaleCompared": "Whole30casebankinheritance exact;allfourindependentnotesabove.",
+        "reviewHref": "Modulepath generated by unchanged selector;runtime navigation pending."
+      }
+    ],
+    "other1179CumulativeObjectsUnchanged": true,
+    "wholeParentModuleVerified": false,
+    "parentMetadataAndReferenceReconciliationPending": true
+  },
+  "validation": {
+    "productionBuild": {
+      "status": "passed",
+      "actualTerminalExitCode": 0,
+      "actualExecSession": 21557,
+      "staticRoutes": 567,
+      "candidateDerivedFromCommit": "51e2ab85fe75dc5d42f8d3a5781a342e3747f625",
+      "productionBuild": true
+    },
+    "structure": {
+      "modules": 1,
+      "questions": 120,
+      "hardErrors": [],
+      "sourceGaps": [],
+      "sizeAdvisories": [],
+      "thinLessons": [],
+      "weakestModules": [
+        {
+          "module": "noninsulin-diabetes-pharmacotherapy",
+          "lessons": 10,
+          "questions": 120,
+          "minimumLessonCoverage": 8
+        }
+      ]
+    },
+    "objectPreservation": {
+      "status": "passed",
+      "modules": 232,
+      "otherWholeModulesUnchanged": 231,
+      "wholeQuestionBankTotal": 120,
+      "wholeQuestionsReviewed": 12,
+      "changedWholeQuestions": 12,
+      "allPrior108VerifiedNoninsulinWholeQuestionsUnchanged": true,
+      "other108WholeQuestionsUnchanged": true,
+      "otherNineWholeLessonsUnchanged": true,
+      "stableKeysIdsDifficultyAnchorsOrder": true,
+      "associatedDerivedCumulative": [
+        "cumulative-noninsulin-diabetes-pharmacotherapy-noninsulin-diabetes-30-case"
+      ],
+      "other1179WholeCumulativeObjectsUnchanged": true,
+      "existingReferencesRetained": 50,
+      "twoPrimaryReferencesAdded": true
+    },
+    "browser": {
+      "status": "passed",
+      "results": [
+        {
+          "width": 1440,
+          "exactWholeBodies": 12,
+          "wholeChecksAllFourOptionsGraded": 1,
+          "wholeQuestionsShuffledCorrectIncorrectFeedbackAndAnchorsVerified": 12,
+          "associatedCumulativeItems": [
+            "cumulative-noninsulin-diabetes-pharmacotherapy-noninsulin-diabetes-30-case"
+          ],
+          "associatedCumulativeWholeCasesShuffledCorrectIncorrectAndReviewLinksVerified": 1,
+          "other1179CumulativeObjectsUnchanged": true,
+          "allReferencesExact": 52,
+          "noHorizontalOverflow": true,
+          "diagrams": [
+            {
+              "width": 1440,
+              "slug": "noninsulin-diabetes-pharmacotherapy",
+              "lessonKey": "combination-deintensification-special-settings",
+              "labels": [
+                {
+                  "tag": "SPAN",
+                  "text": "Regimen design",
+                  "overflow": false,
+                  "fontSize": 10.88
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Add complementary value and remove unnecessary burden",
+                  "overflow": false,
+                  "fontSize": 37.6
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "01",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Combine",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Distinct contribution",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Close the efficacy gap with mechanisms and outcomes that complement",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "02",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Hold",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Transition safety",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Plan for fasting, procedures, illness, contrast, dehydration, and missed meals",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "03",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Simplify",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Benefit-risk review",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Remove redundancy, hypoglycemia, cost, intolerance, and low-value burden",
+                  "overflow": false,
+                  "fontSize": 14
+                }
+              ],
+              "allTextWithinBounds": true
+            }
+          ]
+        },
+        {
+          "width": 390,
+          "exactWholeBodies": 12,
+          "wholeChecksAllFourOptionsGraded": 1,
+          "wholeQuestionsShuffledCorrectIncorrectFeedbackAndAnchorsVerified": 12,
+          "associatedCumulativeItems": [
+            "cumulative-noninsulin-diabetes-pharmacotherapy-noninsulin-diabetes-30-case"
+          ],
+          "associatedCumulativeWholeCasesShuffledCorrectIncorrectAndReviewLinksVerified": 1,
+          "other1179CumulativeObjectsUnchanged": true,
+          "allReferencesExact": 52,
+          "noHorizontalOverflow": true,
+          "diagrams": [
+            {
+              "width": 320,
+              "slug": "noninsulin-diabetes-pharmacotherapy",
+              "lessonKey": "combination-deintensification-special-settings",
+              "labels": [
+                {
+                  "tag": "SPAN",
+                  "text": "Regimen design",
+                  "overflow": false,
+                  "fontSize": 10.88
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Add complementary value and remove unnecessary burden",
+                  "overflow": false,
+                  "fontSize": 23.2
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "01",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Combine",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Distinct contribution",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Close the efficacy gap with mechanisms and outcomes that complement",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "02",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Hold",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Transition safety",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Plan for fasting, procedures, illness, contrast, dehydration, and missed meals",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "03",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Simplify",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Benefit-risk review",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Remove redundancy, hypoglycemia, cost, intolerance, and low-value burden",
+                  "overflow": false,
+                  "fontSize": 14
+                }
+              ],
+              "allTextWithinBounds": true
+            },
+            {
+              "width": 390,
+              "slug": "noninsulin-diabetes-pharmacotherapy",
+              "lessonKey": "combination-deintensification-special-settings",
+              "labels": [
+                {
+                  "tag": "SPAN",
+                  "text": "Regimen design",
+                  "overflow": false,
+                  "fontSize": 10.88
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Add complementary value and remove unnecessary burden",
+                  "overflow": false,
+                  "fontSize": 23.2
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "01",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Combine",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Distinct contribution",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Close the efficacy gap with mechanisms and outcomes that complement",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "02",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Hold",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Transition safety",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Plan for fasting, procedures, illness, contrast, dehydration, and missed meals",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "03",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Simplify",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Benefit-risk review",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Remove redundancy, hypoglycemia, cost, intolerance, and low-value burden",
+                  "overflow": false,
+                  "fontSize": 14
+                }
+              ],
+              "allTextWithinBounds": true
+            },
+            {
+              "width": 639,
+              "slug": "noninsulin-diabetes-pharmacotherapy",
+              "lessonKey": "combination-deintensification-special-settings",
+              "labels": [
+                {
+                  "tag": "SPAN",
+                  "text": "Regimen design",
+                  "overflow": false,
+                  "fontSize": 10.88
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Add complementary value and remove unnecessary burden",
+                  "overflow": false,
+                  "fontSize": 23.2
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "01",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Combine",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Distinct contribution",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Close the efficacy gap with mechanisms and outcomes that complement",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "02",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Hold",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Transition safety",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Plan for fasting, procedures, illness, contrast, dehydration, and missed meals",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "03",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Simplify",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Benefit-risk review",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Remove redundancy, hypoglycemia, cost, intolerance, and low-value burden",
+                  "overflow": false,
+                  "fontSize": 14
+                }
+              ],
+              "allTextWithinBounds": true
+            },
+            {
+              "width": 640,
+              "slug": "noninsulin-diabetes-pharmacotherapy",
+              "lessonKey": "combination-deintensification-special-settings",
+              "labels": [
+                {
+                  "tag": "SPAN",
+                  "text": "Regimen design",
+                  "overflow": false,
+                  "fontSize": 10.88
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Add complementary value and remove unnecessary burden",
+                  "overflow": false,
+                  "fontSize": 23.2
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "01",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Combine",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Distinct contribution",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Close the efficacy gap with mechanisms and outcomes that complement",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "02",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Hold",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Transition safety",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Plan for fasting, procedures, illness, contrast, dehydration, and missed meals",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "03",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Simplify",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Benefit-risk review",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Remove redundancy, hypoglycemia, cost, intolerance, and low-value burden",
+                  "overflow": false,
+                  "fontSize": 14
+                }
+              ],
+              "allTextWithinBounds": true
+            }
+          ]
+        }
+      ],
+      "captures": [
+        "hero-noninsulin-diabetes-pharmacotherapy-1440.png",
+        "body-combination-deintensification-special-settings-0-1440.png",
+        "body-combination-deintensification-special-settings-1-1440.png",
+        "body-combination-deintensification-special-settings-2-1440.png",
+        "body-combination-deintensification-special-settings-3-1440.png",
+        "body-combination-deintensification-special-settings-4-1440.png",
+        "body-combination-deintensification-special-settings-5-1440.png",
+        "body-combination-deintensification-special-settings-6-1440.png",
+        "body-combination-deintensification-special-settings-7-1440.png",
+        "body-combination-deintensification-special-settings-8-1440.png",
+        "body-combination-deintensification-special-settings-9-1440.png",
+        "body-combination-deintensification-special-settings-10-1440.png",
+        "body-combination-deintensification-special-settings-11-1440.png",
+        "summary-combination-deintensification-special-settings-1440.png",
+        "concepts-combination-deintensification-special-settings-1440.png",
+        "keypoints-combination-deintensification-special-settings-1440.png",
+        "application-combination-deintensification-special-settings-1440.png",
+        "figure-combination-deintensification-special-settings-1440.png",
+        "check-combination-deintensification-special-settings-1440.png",
+        "references-noninsulin-diabetes-pharmacotherapy-1440.png",
+        "bank-noninsulin-diabetes-25-application-1440.png",
+        "bank-noninsulin-diabetes-26-case-1440.png",
+        "bank-noninsulin-diabetes-30-safety-1440.png",
+        "bank-noninsulin-diabetes-26-principle-1440.png",
+        "bank-noninsulin-diabetes-25-principle-1440.png",
+        "bank-noninsulin-diabetes-30-application-1440.png",
+        "bank-noninsulin-diabetes-26-safety-1440.png",
+        "bank-noninsulin-diabetes-30-case-1440.png",
+        "bank-noninsulin-diabetes-25-safety-1440.png",
+        "bank-noninsulin-diabetes-26-application-1440.png",
+        "bank-noninsulin-diabetes-25-case-1440.png",
+        "bank-noninsulin-diabetes-30-principle-1440.png",
+        "cumulative-cumulative-noninsulin-diabetes-pharmacotherapy-noninsulin-diabetes-30-case-1440.png",
+        "hero-noninsulin-diabetes-pharmacotherapy-390.png",
+        "body-combination-deintensification-special-settings-0-390.png",
+        "body-combination-deintensification-special-settings-1-390.png",
+        "body-combination-deintensification-special-settings-2-390.png",
+        "body-combination-deintensification-special-settings-3-390.png",
+        "body-combination-deintensification-special-settings-4-390.png",
+        "body-combination-deintensification-special-settings-5-390.png",
+        "body-combination-deintensification-special-settings-6-390.png",
+        "body-combination-deintensification-special-settings-7-390.png",
+        "body-combination-deintensification-special-settings-8-390.png",
+        "body-combination-deintensification-special-settings-9-390.png",
+        "body-combination-deintensification-special-settings-10-390.png",
+        "body-combination-deintensification-special-settings-11-390.png",
+        "summary-combination-deintensification-special-settings-390.png",
+        "concepts-combination-deintensification-special-settings-390.png",
+        "keypoints-combination-deintensification-special-settings-390.png",
+        "application-combination-deintensification-special-settings-390.png",
+        "figure-combination-deintensification-special-settings-390.png",
+        "check-combination-deintensification-special-settings-390.png",
+        "references-noninsulin-diabetes-pharmacotherapy-390.png",
+        "bank-noninsulin-diabetes-25-application-390.png",
+        "bank-noninsulin-diabetes-26-case-390.png",
+        "bank-noninsulin-diabetes-30-safety-390.png",
+        "bank-noninsulin-diabetes-26-principle-390.png",
+        "bank-noninsulin-diabetes-25-principle-390.png",
+        "bank-noninsulin-diabetes-30-application-390.png",
+        "bank-noninsulin-diabetes-26-safety-390.png",
+        "bank-noninsulin-diabetes-30-case-390.png",
+        "bank-noninsulin-diabetes-25-safety-390.png",
+        "bank-noninsulin-diabetes-26-application-390.png",
+        "bank-noninsulin-diabetes-25-case-390.png",
+        "bank-noninsulin-diabetes-30-principle-390.png",
+        "cumulative-cumulative-noninsulin-diabetes-pharmacotherapy-noninsulin-diabetes-30-case-390.png",
+        "native-figure-320.png",
+        "native-figure-640.png"
+      ],
+      "errors": []
+    },
+    "visualInspection": {
+      "status": "passed",
+      "inspectedAt": "2026-10-06T11:16:20.094164+00:00",
+      "method": "Viewed all eleven original-resolution desktop/mobile boards and native 320/640 figure captures; each pair retains original screenshot pixels.",
+      "captureCount": 68,
+      "pairCount": 33,
+      "boardCount": 11,
+      "captureSha256": {
+        "hero-noninsulin-diabetes-pharmacotherapy-1440.png": "357f1a5978f086dd8d7a0c030d2d0ada0d5d12d31ba9402b4fe7c2ee07295c8c",
+        "body-combination-deintensification-special-settings-0-1440.png": "d47f366cc5e618ea411091835310f475d57e3c6865b9f34ad5e33d2f256c6847",
+        "body-combination-deintensification-special-settings-1-1440.png": "2dc067081fc88bf8e756df53ac7cba4203444e6e1b4dd26b78af92f0669c2125",
+        "body-combination-deintensification-special-settings-2-1440.png": "74a5b8fd808536c5b0b30b3aadcb7c644ec7b3888287a646f1e12abea4b30fee",
+        "body-combination-deintensification-special-settings-3-1440.png": "4ed15d9c28bae8d49fbe53f096c2a8a5168212fbad49865de7921b8cacd41bf4",
+        "body-combination-deintensification-special-settings-4-1440.png": "9b01867d7fd70b18ab972abdb366255aa7a3b5ed62b4b870ff8a95db9bd248de",
+        "body-combination-deintensification-special-settings-5-1440.png": "6196b2595416e6796f1c7b0f53ab5e99414ae45aed265c099be12018e069c3a0",
+        "body-combination-deintensification-special-settings-6-1440.png": "877dd3a05eed81a50bd333a3a66c80a8f441740a6fa227436d5a3400208d7437",
+        "body-combination-deintensification-special-settings-7-1440.png": "22e1da116082433f0a6f2e9fbab4a74c385b11c6174de393087df9b680dea580",
+        "body-combination-deintensification-special-settings-8-1440.png": "89f70d6a1d79158416117c3cb11231180dbc3f6ca5ae6a5d87c3463a877c4e95",
+        "body-combination-deintensification-special-settings-9-1440.png": "582dc2e9298e34cff2bad7b75f713d5d940bfccde1293b06381067202cf468f5",
+        "body-combination-deintensification-special-settings-10-1440.png": "e9b50874709ce0f06972f8fbb7f6294b9d8d80c096a5219b072780384a4e1065",
+        "body-combination-deintensification-special-settings-11-1440.png": "ac6d7f5b6c4c4cd331c6d1a242fb130e358e156599994ae6cf0ce620dcdb6b5d",
+        "summary-combination-deintensification-special-settings-1440.png": "8749726cb036aea010af6175ead53d2800f9a48108aa4d95f8c2139ee010f805",
+        "concepts-combination-deintensification-special-settings-1440.png": "0830a8442c68c1ace0e3f2134f49c3ddbb585ecb49e72f14c49f6ecb756137e5",
+        "keypoints-combination-deintensification-special-settings-1440.png": "5352f6f71e05a4e5f7811d395353209575ea78dfddfd7fd89f31ad4424eababf",
+        "application-combination-deintensification-special-settings-1440.png": "8a75f0956fb5853ee0be438a891ee1b01636030e11d7aba4aa77705faf8b4b32",
+        "figure-combination-deintensification-special-settings-1440.png": "a252ff840b7e925bfdac8f5b8314e9f99cdfa8b8b5589382cb02d7c51871f36e",
+        "check-combination-deintensification-special-settings-1440.png": "fd38b5d8c20adcb0943e6c5bd710fbf66bc294d828b50d3e2c8fbeb615921343",
+        "references-noninsulin-diabetes-pharmacotherapy-1440.png": "419fa8ef21941b6c395d7740b5000c8bb1f86b0b584d6c1d9cf28757cfe7e5d3",
+        "bank-noninsulin-diabetes-25-application-1440.png": "e1391bf138b2d4478f0eeb9bc1232582b5ad8e82899a3bd2e127dbb99d1c92b0",
+        "bank-noninsulin-diabetes-26-case-1440.png": "0f0a30dff8c3fc34884573d42e4f30688cf1a8d379b439f73f859c038f9d8b6b",
+        "bank-noninsulin-diabetes-30-safety-1440.png": "c136f6d9b7e6dbd196da8e9ff0602ce7ffaf948c57d65c5659dd409405c2d520",
+        "bank-noninsulin-diabetes-26-principle-1440.png": "259b7c9ff581283c18a6215c8f5a969cae70b405b4b9e269817327e13b826735",
+        "bank-noninsulin-diabetes-25-principle-1440.png": "03eb77580f9f858dba3a0307c3a43d8d5fd78857a080c5aafd606cb75b5d9685",
+        "bank-noninsulin-diabetes-30-application-1440.png": "7b698f038e62b2ad23b9b6c287a455f3814b5fe8d69a944976cc3a6955d6f7f9",
+        "bank-noninsulin-diabetes-26-safety-1440.png": "664c724af25fa0b78a31a2c3830f7487b9ec4aee8b4cbd6f29caf1aa6df55ca4",
+        "bank-noninsulin-diabetes-30-case-1440.png": "b89e95241ae60a3025b69a8b6a19b5728d4a5f2495c4beede9106b41ea53fd74",
+        "bank-noninsulin-diabetes-25-safety-1440.png": "37ecfc508f949a38bbfa737c9f946d15aec6eabcfe0d2cf9cdc31eae84f3ee4a",
+        "bank-noninsulin-diabetes-26-application-1440.png": "01820d11c283ccb0af7f9a22719fd79c90a069da57d7c49d1dfc8ff288756fac",
+        "bank-noninsulin-diabetes-25-case-1440.png": "f9d728aaec9162f97fee267deb7ee39b421997d357431bb665921f67709ba6d8",
+        "bank-noninsulin-diabetes-30-principle-1440.png": "38233d7b1a9d4e212341d376e1a17e7b6d6d162d7791ab3e219a1aef29ae3977",
+        "cumulative-cumulative-noninsulin-diabetes-pharmacotherapy-noninsulin-diabetes-30-case-1440.png": "5d4027f6b47e16e3af3ae4bc2875aef3cfa548b193a7de062fa861a9f61dea76",
+        "hero-noninsulin-diabetes-pharmacotherapy-390.png": "7605aa62fe153bcdc72584c583e906632fc8401732b9ec703a8e86a1cfed0822",
+        "body-combination-deintensification-special-settings-0-390.png": "d187efc476016b9c6298cf5da7a239202e2ba6fb0841125819166edb4229272a",
+        "body-combination-deintensification-special-settings-1-390.png": "799c6872e3dd310caab470219d3f95238416d684c54cacaca379332febfc2b25",
+        "body-combination-deintensification-special-settings-2-390.png": "db6224bf294893cea66db78ecb2c4b17029a3faf99b35abfb0ee7cd2773bf9f5",
+        "body-combination-deintensification-special-settings-3-390.png": "1e7d01689bc11f6899f952f1b33908a1d01eff218854b1cca3b64853972f8ddd",
+        "body-combination-deintensification-special-settings-4-390.png": "ae5f4c168ab94b3eb33fc8e99533e9133f2ffcd554fb8221705bc7b0472c4457",
+        "body-combination-deintensification-special-settings-5-390.png": "1340b7a0e7c6203ab026a90b4c75e0d642bcb758b942cb0c2a9b0a2eb50c6701",
+        "body-combination-deintensification-special-settings-6-390.png": "d894594f9c8f1aea0f74129d3826c0cef63d90a1e2cf0625e443ce746c9e6e73",
+        "body-combination-deintensification-special-settings-7-390.png": "4f4c222c289afff0ac2a573bbe3bb05788de894694e5c526f7aa9b960a44f737",
+        "body-combination-deintensification-special-settings-8-390.png": "cd5419ec4c7ca1aaaf5ed24db7ddca64a64ba2360018ffb529e69846906c50f4",
+        "body-combination-deintensification-special-settings-9-390.png": "34fc5ae521c4126a56df446f503d13c334c0f8e53e0b19c340c904f44397cc1c",
+        "body-combination-deintensification-special-settings-10-390.png": "f7c93c096ef1824a04565752ae54fa45c3bf8060f6aea44a8e994b23fa277983",
+        "body-combination-deintensification-special-settings-11-390.png": "0fd45c0898fe2c7e24ced30e7d83685795c69dda411055d9579cdab02c428b2d",
+        "summary-combination-deintensification-special-settings-390.png": "6e81fc9d12f6442b9d685048f8770efff7889aedd8c8aa9adb42a4a7774fbb04",
+        "concepts-combination-deintensification-special-settings-390.png": "7cbd98e7d5b485430c54c7519a9146ec61d769ffefa6928e7e2b969208aa3bfc",
+        "keypoints-combination-deintensification-special-settings-390.png": "4ef8b990a5d07a3dc45a71323cf0a358d6632250187d2f20ccfdd9f538548648",
+        "application-combination-deintensification-special-settings-390.png": "b049358e9d20f8f29070a04eba545e5403a9e4b608138ecbb2833c96bbac75b8",
+        "figure-combination-deintensification-special-settings-390.png": "582316e898f988c9dbeaaa9d71c5e79a4ee25322a3a65e0ef46bc6aa41c32804",
+        "check-combination-deintensification-special-settings-390.png": "13e3fa3c0cab5471d6e881876e5d423b066ff173f990f6e2fbdbaca524f238a3",
+        "references-noninsulin-diabetes-pharmacotherapy-390.png": "ee42bd2e69439dcee3dfadcaa66f0924fb429f8d4576e1471bdf7bd14dfce9bf",
+        "bank-noninsulin-diabetes-25-application-390.png": "fc13479a93cc8c08327ac36cbc0a09923716bf0efb0a718cbc23a50068276926",
+        "bank-noninsulin-diabetes-26-case-390.png": "3ccbdf1ff1fbee6e6f1c7348b774e761d3355887706e83d75698b9e4715efc74",
+        "bank-noninsulin-diabetes-30-safety-390.png": "4aeeedfd8e39a08f3352dfdb79a83b93e82ba2d4de9762ea7ad53280b2ff7a99",
+        "bank-noninsulin-diabetes-26-principle-390.png": "116b5cd36e6bfd96d990e6e1522fa1aa1c2b8eac48e08ac3df04431f28892a17",
+        "bank-noninsulin-diabetes-25-principle-390.png": "c5d012fb9dc8303b40faa12ee0e29a5d79b8b74d70038d233cfc3f755757138d",
+        "bank-noninsulin-diabetes-30-application-390.png": "36b5dcb7450a194257c31536012028dc9869fd88d7343dd25c8db8ba56b2f114",
+        "bank-noninsulin-diabetes-26-safety-390.png": "4cee314cfb21ee46d610d3ddeb91a96b525bf9d130a356b4df6f4e047466e192",
+        "bank-noninsulin-diabetes-30-case-390.png": "55be2e07967198bfc8c76f0c61ac9ac7077754c72818bc3e1993b4e3e1531d89",
+        "bank-noninsulin-diabetes-25-safety-390.png": "bc71b8934489dddcbc7fe680384cd1e7e80eaa1fa8a67ac6809fb481ad60d4b2",
+        "bank-noninsulin-diabetes-26-application-390.png": "2f93f779d274d3a460eff00fdcae55bca5e734b83f45e783fab877f2fe9606e1",
+        "bank-noninsulin-diabetes-25-case-390.png": "92ef40d5e0049bb2352c84a80df7ff1fc8f0e76c4c8496ec5188ba26bb943856",
+        "bank-noninsulin-diabetes-30-principle-390.png": "98cdeba9e8c7d0ce4f5208971c7a2ef6e971fb639d783293237b582304aaaf52",
+        "cumulative-cumulative-noninsulin-diabetes-pharmacotherapy-noninsulin-diabetes-30-case-390.png": "0e7c38e5890823812a4a83fd83f3772be0620adddf0af8f8b4ffae93b37f5fa6",
+        "native-figure-320.png": "2b08a0a825b4761b3de142266b985aa74de2d13bf0de9cf7bff4402764b8852d",
+        "native-figure-640.png": "08d28d69a8e081c14a24a57cc4cd06c761071061f440e8ffeae0c1f2d195c93d"
+      },
+      "pairSha256": {
+        "pair-hero-noninsulin-diabetes-pharmacotherapy.png": "2f4245c0d7a5cd3b3981f71688284927301a4e0946f18c07c83bc4b5d30c3844",
+        "pair-body-combination-deintensification-special-settings-0.png": "df2e6988d2ff4a04ca65ae6d8a8e518b5a9cc3c9ac2fd37f9d51815fa5f5dffd",
+        "pair-body-combination-deintensification-special-settings-1.png": "7b4d754029f4c914f72e027252c2dea33eacc9073e12830a958c2d0f004dbe6c",
+        "pair-body-combination-deintensification-special-settings-2.png": "2dfa1f2561d2169ace8e8588adf1e7d8c36bf46e082bc30a2df8840eb631f72b",
+        "pair-body-combination-deintensification-special-settings-3.png": "ea33eb8b1ff74a48d3068807fcb15dc0cd2fe95290e75a75cd575dbd1f41f141",
+        "pair-body-combination-deintensification-special-settings-4.png": "b467d4f85528739c7728989c6e55cbb0478406cd4683aa7259d36354c2a33c52",
+        "pair-body-combination-deintensification-special-settings-5.png": "2bdc1903bc2bdc31737e8cced08ed1d5715915d6b9522410bb075710c1f2134e",
+        "pair-body-combination-deintensification-special-settings-6.png": "f612b3ebade1d1bb0ed9890f598de1b1bbeecc8939f9252b5fa921742dbc742f",
+        "pair-body-combination-deintensification-special-settings-7.png": "b0397f44e18362658aa599ba80c67025ad0227359e1e231a0e60cfd26060bc91",
+        "pair-body-combination-deintensification-special-settings-8.png": "b7b27b4e45a77b35ace329996690761a85a19ad28dda68611eb38e1d3a6348b2",
+        "pair-body-combination-deintensification-special-settings-9.png": "d7d7b06c3ad9d683159ab97ddc58b3d25caedf7d4f0e496361ed109eaac608a8",
+        "pair-body-combination-deintensification-special-settings-10.png": "681ab6a47aca9b997bf17fab266cdb19446a0c37efdd6c6f6dca26cbacec3be8",
+        "pair-body-combination-deintensification-special-settings-11.png": "bf04a83e538b5eb51fc7ac70171982caaca7c075b29057829066e185740e4d4a",
+        "pair-summary-combination-deintensification-special-settings.png": "db4fd396c8d24dc39045c11f78f4990f6d3be75b41187603ef5c49fa46008145",
+        "pair-concepts-combination-deintensification-special-settings.png": "df1e8eb45c5579d5a70b66c4db3994040f08d9ec1def72892bd757cffe4ede74",
+        "pair-keypoints-combination-deintensification-special-settings.png": "2653aa70216aaf58541c9e8d7a17d9a5cd5773b18b7c0ed4a9b6a1611410c3c5",
+        "pair-application-combination-deintensification-special-settings.png": "189d49805929fb05090d64f411b71dda9961165e6aba8afb5982be7914bf3e0d",
+        "pair-figure-combination-deintensification-special-settings.png": "b1af52054d2f70ee46388763bb0fc904ecbdd3853289c5b4b21a4532a67d61dc",
+        "pair-check-combination-deintensification-special-settings.png": "8f6cb6cc6669d31918ad1bc9f2bf4cc435381a0de7e37ddf01c30dff03d71416",
+        "pair-references-noninsulin-diabetes-pharmacotherapy.png": "18198f028aa8834836e106a65a30ce99d0730bbc21c310114183e30791f64422",
+        "pair-bank-noninsulin-diabetes-25-application.png": "4c7fd2b54bc1fc567f25bfe3131500aac2b7e70f01404371e36ffa285ac61c4a",
+        "pair-bank-noninsulin-diabetes-26-case.png": "02a9686d99194e015e4f49c39723235ee2a29ef09b15cac70d1cf13ab31950d4",
+        "pair-bank-noninsulin-diabetes-30-safety.png": "31d7b992aec0dce02dd5e93f478d257b8b7922f680128c5fc85ef23820cb75d3",
+        "pair-bank-noninsulin-diabetes-26-principle.png": "293ff923af29ec00a0d65f95d37adddece8670b65980423a77be1b4fe0a3f74b",
+        "pair-bank-noninsulin-diabetes-25-principle.png": "5de320b12211dc5adb019f451a4b3f1c187e7448cdb237f2c285a15ee76e11cf",
+        "pair-bank-noninsulin-diabetes-30-application.png": "11fbb229a5e18af51d034dc62dffd41966a1e4878989711f0999e018145d6f94",
+        "pair-bank-noninsulin-diabetes-26-safety.png": "6fed6b295336604425bc45fa4b59011ae02336e7044a9ee36123b75055126bce",
+        "pair-bank-noninsulin-diabetes-30-case.png": "31fd60bf31d0cb0ec36e641c253c583bd181b0975449567ab86e648ee5b2f6d7",
+        "pair-bank-noninsulin-diabetes-25-safety.png": "8fcabe198b45dbe93c5daca5eaa26ea1931baf531dedcdf48ec8a4de37758760",
+        "pair-bank-noninsulin-diabetes-26-application.png": "36b1931df6ab6d52020145ca8ba0c55049ec4133de958c2e511baac0dc7a7396",
+        "pair-bank-noninsulin-diabetes-25-case.png": "113704db5c018aa6f4458e39433ab7d5e577a6fc3373135b591f7aa9491a30ce",
+        "pair-bank-noninsulin-diabetes-30-principle.png": "1217fe2ac4974ba9e0ef0959875f56a1de4ed195e22ad8675704758f7ecacc29",
+        "pair-cumulative-cumulative-noninsulin-diabetes-pharmacotherapy-noninsulin-diabetes-30-case.png": "e1f4f7d8d2dab216426d38661f0d1caadc96a92651766b6de6cd443b7606e188"
+      },
+      "boardSha256": {
+        "board-00.png": "fc34a63a108dbfe9b8b05de532b478d25a0e17f0157152e7fe1daf9607c41a03",
+        "board-01.png": "44b490810dcc421598081371f82707edcaef5e3ab60b998135e2481d522fe584",
+        "board-02.png": "80c0de99f541061626e956bb46cf689131d5e4387b58774e8acb1ca14929b194",
+        "board-03.png": "c6e39971e0d889068596439b31b4699ca6c70feb88ac80d754f16d92a64b1bc8",
+        "board-04.png": "11d0a8cfe199f8896eb5f7883b67c842aab66ab74f6e4d24c39ab47ec3334d36",
+        "board-05.png": "665984ce0bcaa9611078112d5b0de75abcc73664f3900b5be419ce51526a8a54",
+        "board-06.png": "2396633234b2e408ac7797478db330efe19ce06f5d03e40576b9a12adfc84bb7",
+        "board-07.png": "cc20700db45ad593b6b5c6530d28e28ce2ecb020bf85592694d4f5f8f4068099",
+        "board-08.png": "eb8344c29648a640b5710d77731104cbaee859fee18169622e45c575a3c5c51e",
+        "board-09.png": "7236db784478206fed378efdbe284aadf44943d2392eaeff5536360eb4cfce6a",
+        "board-10.png": "ce4c632ab0d01bc463a8cbf4567023e78c886e12f2b8a47d6cb6ec3b4544b384"
+      },
+      "findings": [
+        "All twelve teaching bodies, summary, concepts, key points and application legible at desktop and mobile widths.",
+        "Embedded check, all twelve bank questions and associated cumulative question show complete prompts, options, grading feedback and review links.",
+        "All fifty-two reference rows legible; link values separately runtime-checked.",
+        "Fourteen figure labels remain inside layout at all tested widths; original 320/640 captures inspected with no clipping."
+      ],
+      "scope": "Isolated audit-branch candidate only; parent reconciliation and working draft certification remain open."
+    },
+    "limits": "Isolated unauthenticated production preview. Complete lesson, all four embedded-check choices and twelve bank cases in correct/incorrect shuffled attempts at 1440/390; figure bounds at five widths. One associated cumulative item verified; other 1179 objects unchanged. Parent metadata/full reference reconciliation, working draft variants, chapters and full goal remain open."
+  },
+  "remainingReview": {
+    "nextAction": "Reconcile the entire noninsulin-diabetes-pharmacotherapy parent: source attribution, description, topics, all outcomes, all 52 references and consistency across the ten verified lessons/120 verified bank questions and all derived cumulative items. Preserve exact prior verified lesson/question content unless fresh evidence requires correction; do not certify the parent until this complete reconciliation and applicable runtime/build checks pass. Preserve separate working draft of eleven lessons/ninety-two authored questions without inferring certification. Whole MASLD/ALD parents are verified; rifaximin HE is verified with nine other lessons/147 questions reserved for Chapter 22. Preserve the 245-match contextual inventory, four HIV PI choices, prior ICU withdrawal and feeding dependencies. Return to Chapter 11 printed 161/PDF 169 after broader feeding dependencies; Chapter 1 printed 7/PDF 19 checklist 15 and Chapters 11/19/22/44 remain open. The full 82-chapter goal continues.",
+    "wholeParentModulesPending": true,
+    "parentMetadataAndFullReferenceReconciliationPending": true,
+    "workingDraftVariantsRemainReviewing": true
+  },
+  "release": {
+    "branch": "audit/rxprep-content-2026-09-24",
+    "commit": null,
+    "push": "pending",
+    "receipt": "enteral-nutrition-broader-combination-release.json",
+    "mainMerge": "not performed",
+    "production": "not verified"
+  },
+  "wholeGoalComplete": false,
+  "privateSourceFilesInGit": false
+}

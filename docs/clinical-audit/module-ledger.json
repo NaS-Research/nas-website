@@ -1366,7 +1366,8 @@
         "enteral-nutrition-broader-secretagogue-review.json",
         "enteral-nutrition-broader-tzd-review.json",
         "enteral-nutrition-broader-other-noninsulin-review.json",
-        "enteral-nutrition-broader-cardiorenal-review.json"
+        "enteral-nutrition-broader-cardiorenal-review.json",
+        "enteral-nutrition-broader-combination-review.json"
       ],
       "latestBookCalculationReview": {
         "evidence": "enteral-nutrition-book-calculations-review.json",
@@ -10609,6 +10610,69 @@
         "chapterTotal": 82,
         "chapterCountPercent": 7.32,
         "workingDraftBoundary": "Working draft contains eleven lessons and ninety-two different authored questions. Prior bytes and reviewing statuses are preserved. This certificate applies to the isolated HEAD-derived audit-branch lesson and sixteen stable question IDs; certification of different working-draft variants is not inferred."
+      },
+      "latestBroaderCombinationReview": {
+        "evidence": "enteral-nutrition-broader-combination-review.json",
+        "verifiedScope": "One complete audit-branch combination/deintensification/special-settings lesson: twelve whole bodies, metadata, corrected embedded check, reviewed mechanism figure and twelve rewritten whole questions. Parent metadata/reference reconciliation remains open.",
+        "wholeLessonsVerified": {
+          "noninsulin-diabetes-pharmacotherapy": [
+            "combination-deintensification-special-settings"
+          ]
+        },
+        "wholeBodiesVerified": 12,
+        "wholeQuestionsReviewed": 12,
+        "changedWholeQuestions": 12,
+        "existingBodiesExpanded": 5,
+        "newOriginalBodies": 7,
+        "wholeChecksVerified": 1,
+        "wholeMetadataAndFiguresVerified": 1,
+        "wholeBankQuestionIdsVerified": [
+          "noninsulin-diabetes-25-principle",
+          "noninsulin-diabetes-25-application",
+          "noninsulin-diabetes-25-safety",
+          "noninsulin-diabetes-25-case",
+          "noninsulin-diabetes-26-principle",
+          "noninsulin-diabetes-26-application",
+          "noninsulin-diabetes-26-safety",
+          "noninsulin-diabetes-26-case",
+          "noninsulin-diabetes-30-principle",
+          "noninsulin-diabetes-30-application",
+          "noninsulin-diabetes-30-safety",
+          "noninsulin-diabetes-30-case"
+        ],
+        "all48ChoicesIndividuallySourceCompared": true,
+        "newUniqueBankQuestionsVerified": 12,
+        "broaderFeedingBankVerifiedBefore": 1055,
+        "broaderFeedingBankVerifiedAfter": 1067,
+        "sourceVerifiedNoninsulinBankTotalAcrossUnits": 120,
+        "noninsulinAuditBranchBankTotal": 120,
+        "noninsulinAuditBranchLessonTotal": 10,
+        "noninsulinAuditBranchLessonsVerifiedAcrossUnits": 10,
+        "remainingNoninsulinWholeBankIds": [],
+        "remainingNoninsulinAuditBranchLessons": 0,
+        "allPrior108VerifiedNoninsulinQuestionsUnchanged": true,
+        "otherNineWholeLessonsUnchanged": true,
+        "other231WholeModulesUnchanged": true,
+        "associatedCumulativeWholeItemsVerified": [
+          "cumulative-noninsulin-diabetes-pharmacotherapy-noninsulin-diabetes-30-case"
+        ],
+        "other 1179WholeCumulativeObjectsUnchanged": true,
+        "stableIdsKeysDifficultyAnchorsOrderPreserved": true,
+        "newQuestionIdsAdded": 0,
+        "cumulativeSelectorUnchanged": true,
+        "all50ExistingReferencesRetainedAndRuntimeChecked": true,
+        "twoPrimaryReferencesAddedAndRuntimeChecked": true,
+        "wholeParentModuleVerified": false,
+        "parentMetadataAndFullReferenceReconciliationPending": true,
+        "enteralParentVerified": false,
+        "wholeChaptersVerified": false,
+        "committedWholeModulesVerifiedAfter": 61,
+        "committedWholeModulesTotal": 232,
+        "moduleCountPercent": 26.29,
+        "chaptersVerifiedAfter": 6,
+        "chapterTotal": 82,
+        "chapterCountPercent": 7.32,
+        "workingDraftBoundary": "Working draft contains eleven lessons and ninety-two different authored questions. Prior bytes and reviewing statuses are preserved. This certificate applies to the isolated HEAD-derived audit-branch lesson and twelve stable question IDs; certification of different working-draft variants is not inferred."
       }
     },
     {
@@ -15312,7 +15376,40 @@
         },
         {
           "slug": "combination-deintensification-special-settings",
-          "status": "unreviewed"
+          "status": "verified",
+          "wholeLessonVerified": true,
+          "latestScopedEvidence": "enteral-nutrition-broader-combination-review.json",
+          "verifiedSectionHeadings": [
+            "Combine complementary mechanisms",
+            "Remove mechanistic redundancy",
+            "Reassess medicines that can cause lows",
+            "Plan for fasting, illness, and procedures",
+            "Individualize GLP-1 anesthesia planning",
+            "Separate metformin contrast and illness decisions",
+            "Match secretagogues to actual intake",
+            "Deintensify deliberately",
+            "Know when noninsulin escalation has ended",
+            "Adapt therapy to the hospital and transplant setting",
+            "Reconcile treatment at discharge and access changes",
+            "Schedule efficacy and safety reassessment"
+          ],
+          "embeddedCheckVerified": true,
+          "figureVerified": true,
+          "metadataStatus": "Complete lesson metadata/source/runtime/visual verification",
+          "verifiedQuestionIds": [
+            "noninsulin-diabetes-25-principle",
+            "noninsulin-diabetes-25-application",
+            "noninsulin-diabetes-25-safety",
+            "noninsulin-diabetes-25-case",
+            "noninsulin-diabetes-26-principle",
+            "noninsulin-diabetes-26-application",
+            "noninsulin-diabetes-26-safety",
+            "noninsulin-diabetes-26-case",
+            "noninsulin-diabetes-30-principle",
+            "noninsulin-diabetes-30-application",
+            "noninsulin-diabetes-30-safety",
+            "noninsulin-diabetes-30-case"
+          ]
         }
       ],
       "questions": 120,
@@ -15327,7 +15424,8 @@
         "enteral-nutrition-broader-secretagogue-review.json",
         "enteral-nutrition-broader-tzd-review.json",
         "enteral-nutrition-broader-other-noninsulin-review.json",
-        "enteral-nutrition-broader-cardiorenal-review.json"
+        "enteral-nutrition-broader-cardiorenal-review.json",
+        "enteral-nutrition-broader-combination-review.json"
       ],
       "latestBroaderMasldLifestyleCardiometabolicReview": {
         "evidence": "enteral-nutrition-broader-masld-lifestyle-cardiometabolic-review.json",
@@ -16529,6 +16627,69 @@
         "chapterTotal": 82,
         "chapterCountPercent": 7.32,
         "workingDraftBoundary": "Working draft contains eleven lessons and ninety-two different authored questions. Prior bytes and reviewing statuses are preserved. This certificate applies to the isolated HEAD-derived audit-branch lesson and sixteen stable question IDs; certification of different working-draft variants is not inferred."
+      },
+      "latestBroaderCombinationReview": {
+        "evidence": "enteral-nutrition-broader-combination-review.json",
+        "verifiedScope": "One complete audit-branch combination/deintensification/special-settings lesson: twelve whole bodies, metadata, corrected embedded check, reviewed mechanism figure and twelve rewritten whole questions. Parent metadata/reference reconciliation remains open.",
+        "wholeLessonsVerified": {
+          "noninsulin-diabetes-pharmacotherapy": [
+            "combination-deintensification-special-settings"
+          ]
+        },
+        "wholeBodiesVerified": 12,
+        "wholeQuestionsReviewed": 12,
+        "changedWholeQuestions": 12,
+        "existingBodiesExpanded": 5,
+        "newOriginalBodies": 7,
+        "wholeChecksVerified": 1,
+        "wholeMetadataAndFiguresVerified": 1,
+        "wholeBankQuestionIdsVerified": [
+          "noninsulin-diabetes-25-principle",
+          "noninsulin-diabetes-25-application",
+          "noninsulin-diabetes-25-safety",
+          "noninsulin-diabetes-25-case",
+          "noninsulin-diabetes-26-principle",
+          "noninsulin-diabetes-26-application",
+          "noninsulin-diabetes-26-safety",
+          "noninsulin-diabetes-26-case",
+          "noninsulin-diabetes-30-principle",
+          "noninsulin-diabetes-30-application",
+          "noninsulin-diabetes-30-safety",
+          "noninsulin-diabetes-30-case"
+        ],
+        "all48ChoicesIndividuallySourceCompared": true,
+        "newUniqueBankQuestionsVerified": 12,
+        "broaderFeedingBankVerifiedBefore": 1055,
+        "broaderFeedingBankVerifiedAfter": 1067,
+        "sourceVerifiedNoninsulinBankTotalAcrossUnits": 120,
+        "noninsulinAuditBranchBankTotal": 120,
+        "noninsulinAuditBranchLessonTotal": 10,
+        "noninsulinAuditBranchLessonsVerifiedAcrossUnits": 10,
+        "remainingNoninsulinWholeBankIds": [],
+        "remainingNoninsulinAuditBranchLessons": 0,
+        "allPrior108VerifiedNoninsulinQuestionsUnchanged": true,
+        "otherNineWholeLessonsUnchanged": true,
+        "other231WholeModulesUnchanged": true,
+        "associatedCumulativeWholeItemsVerified": [
+          "cumulative-noninsulin-diabetes-pharmacotherapy-noninsulin-diabetes-30-case"
+        ],
+        "other 1179WholeCumulativeObjectsUnchanged": true,
+        "stableIdsKeysDifficultyAnchorsOrderPreserved": true,
+        "newQuestionIdsAdded": 0,
+        "cumulativeSelectorUnchanged": true,
+        "all50ExistingReferencesRetainedAndRuntimeChecked": true,
+        "twoPrimaryReferencesAddedAndRuntimeChecked": true,
+        "wholeParentModuleVerified": false,
+        "parentMetadataAndFullReferenceReconciliationPending": true,
+        "enteralParentVerified": false,
+        "wholeChaptersVerified": false,
+        "committedWholeModulesVerifiedAfter": 61,
+        "committedWholeModulesTotal": 232,
+        "moduleCountPercent": 26.29,
+        "chaptersVerifiedAfter": 6,
+        "chapterTotal": 82,
+        "chapterCountPercent": 7.32,
+        "workingDraftBoundary": "Working draft contains eleven lessons and ninety-two different authored questions. Prior bytes and reviewing statuses are preserved. This certificate applies to the isolated HEAD-derived audit-branch lesson and twelve stable question IDs; certification of different working-draft variants is not inferred."
       }
     },
     {

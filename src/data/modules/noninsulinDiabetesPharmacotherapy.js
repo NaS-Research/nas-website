@@ -1228,3 +1228,100 @@ noninsulinDiabetesPharmacotherapyModule.references.push(...[
     "href": "https://pubmed.ncbi.nlm.nih.gov/38587233/"
   }
 ]);
+
+
+// Whole combination and transition lesson reviewed against book and approved primary sources.
+Object.assign(noninsulinDiabetesPharmacotherapyModule.submodules.find(item => item.slug === "combination-deintensification-special-settings"), {
+  "slug": "combination-deintensification-special-settings",
+  "title": "Combination Strategy, Deintensification, and Special Settings",
+  "visual": "noninsulin-combination",
+  "summary": "Combine therapies for a defined benefit, remove redundant or harmful treatment, and reassess the plan as intake, organ function, procedures, access and goals change. Safe transitions require product-specific interruption and restart instructions.",
+  "concepts": [
+    "Complementary benefit and fixed combinations",
+    "Incretin redundancy and hypoglycemia",
+    "Procedure-specific interruption and restart",
+    "Simplification versus deintensification",
+    "Insulin escalation and safe transitions"
+  ],
+  "application": "Reconcile active ingredients and the purpose of each medicine. Check glucose patterns, lows, kidney function, intake, procedure plans, affordability and self-management capacity. Record what continues, changes or pauses, the criteria for restart, needed monitoring and who will review the response.",
+  "lesson": [
+    {
+      "heading": "Combine complementary mechanisms",
+      "body": "Initial combination therapy can shorten the time to an individualized glucose goal when one medicine is unlikely to provide enough effect. Choose agents for complementary glucose or demonstrated outcome benefit, with attention to hypoglycemia, organ function, tolerability, access and preferences. Fixed-dose products may reduce pill burden, but their ingredients still need separate review: a required hold or dose change for one ingredient can affect use of the whole product. Check the exact formulation and avoid duplicating an ingredient through another prescription."
+    },
+    {
+      "heading": "Remove mechanistic redundancy",
+      "body": "Do not combine a DPP-4 inhibitor with a GLP-1 receptor agonist or dual GIP/GLP-1 therapy; the combination does not add meaningful glucose lowering beyond GLP-1-based treatment. For example, review discontinuation of sitagliptin when tirzepatide is started. This redundancy differs from combining insulin with GLP-1-based therapy, which can improve glucose and weight outcomes in type 2 diabetes. Reconcile brand names and combination tablets so a hidden DPP-4 ingredient is not inadvertently continued."
+    },
+    {
+      "heading": "Reassess medicines that can cause lows",
+      "body": "When adding or escalating glucose-lowering therapy, reassess the need for and dose of insulin, sulfonylureas and meglitinides. A drug with low intrinsic hypoglycemia risk can still increase lows when combined with these medicines. Tirzepatide labeling advises that reducing insulin or secretagogue exposure can lower this risk. Review glucose patterns, meals, kidney function and the person’s ability to detect and treat lows. Recurrent hypoglycemia needs prompt treatment-plan review rather than simply adding another medicine or preserving every old dose."
+    },
+    {
+      "heading": "Plan for fasting, illness, and procedures",
+      "body": "Prepare a written plan before surgery or prolonged fasting. Empagliflozin labeling specifies interruption for at least three days, if possible; ertugliflozin specifies at least four days. ADA recommends holding SGLT2 inhibitors for three to four days before elective surgery. Restart only when clinical stability and oral intake have returned and relevant ketoacidosis risk has resolved. Nausea, vomiting, abdominal pain or shortness of breath during illness warrants assessment for ketoacidosis even without marked hyperglycemia. Urgent surgery requires monitoring rather than assuming the missed advance hold makes evaluation unnecessary."
+    },
+    {
+      "heading": "Individualize GLP-1 anesthesia planning",
+      "body": "GLP-1 receptor agonists and dual GIP/GLP-1 therapy delay gastric emptying. Ozempic and Mounjaro labels describe rare pulmonary aspiration reports during general anesthesia or deep sedation despite reported fasting. Tell the procedural team about treatment and gastrointestinal symptoms. ADA recommends an individualized plan considering the indication, drug and dose, symptoms, urgency and anesthesia; selected low-risk patients may continue therapy. A fixed one-week hold does not guarantee an empty stomach. If treatment is held, plan glucose management and any needed alternative therapy with the care team."
+    },
+    {
+      "heading": "Separate metformin contrast and illness decisions",
+      "body": "ADA recommends holding metformin and other oral glucose-lowering agents on the day of surgery. Metformin labeling also calls for temporary interruption with restricted food and fluids or hypoxic events, and it is contraindicated when eGFR is below 30 mL/min/1.73 m². For iodinated contrast, the label specifies holding for eGFR 30-60, a history of liver disease, alcoholism or heart failure, or intra-arterial administration; reassess eGFR at 48 hours and restart if renal function is stable. Contrast protocols and procedure instructions must identify the applicable rule rather than use a universal restart time for every illness."
+    },
+    {
+      "heading": "Match secretagogues to actual intake",
+      "body": "Sulfonylureas and meglitinides can cause hypoglycemia when intake is reduced. Repaglinide labeling explicitly instructs patients to skip the scheduled dose when a meal is skipped. Glipizide can cause more serious lows with deficient caloric intake, impaired kidney or liver function, or other glucose-lowering medicines. Review secretagogue interruption during fasting and surgery in the written plan. Meal-linked dose omission is not permission to stop all insulin: people with type 1 diabetes still require basal insulin even when not eating."
+    },
+    {
+      "heading": "Deintensify deliberately",
+      "body": "Reduce or stop therapy when ineffectiveness, recurrent lows, intolerance, a contraindication, expense, burden or revised goals outweigh its benefit. Simplification reduces the complexity of a regimen; deintensification reduces a dose or frequency or discontinues treatment. These decisions can overlap but are not identical. Preferentially review medicines that cause hypoglycemia or burden without a needed ongoing benefit. An A1C at goal alone does not remove an independent cardiovascular or kidney indication. Match the plan to cognition, function, support and access, and document the new goal and follow-up."
+    },
+    {
+      "heading": "Know when noninsulin escalation has ended",
+      "body": "In type 2 diabetes, consider insulin with symptoms of hyperglycemia or very high values, such as A1C above 10% or glucose at least 300 mg/dL. Weight loss, ketosis, dehydration or suspected hyperglycemic crisis requires prompt assessment; another modest oral drug should not delay treatment of metabolic decompensation. Without severe hyperglycemia or crisis, ADA prefers GLP-1-based therapy for initial or add-on glucose treatment. If insulin is added, reassess hypoglycemia-producing drugs while retaining other indicated, tolerated therapies. Glucose toxicity may later resolve enough to permit simplification."
+    },
+    {
+      "heading": "Adapt therapy to the hospital and transplant setting",
+      "body": "Insulin is preferred for most hospitalized patients with hyperglycemia and is given by validated intravenous protocols in critical illness. Outside critical care, the plan depends on intake: basal plus correction insulin for poor or no intake, and basal, prandial and correction components when intake is adequate. Correction-only treatment is discouraged for most patients. Selected stable patients with mild hyperglycemia may use noninsulin therapy. After transplantation, insulin is preferred postoperatively; long-term noninsulin treatment can be appropriate and depends on the organ, comorbidities and response. A postoperative insulin plan is not necessarily a permanent exclusion of noninsulin treatment."
+    },
+    {
+      "heading": "Reconcile treatment at discharge and access changes",
+      "body": "Cross-check home, hospital and combination-product ingredients and explain every continuation, reduction, substitution and temporary hold. Confirm that the person can obtain medicines, monitoring supplies and any rescue treatment and understands meal, illness and restart instructions. Arrange follow-up within one month after hospital hyperglycemia or hypoglycemia; if treatment changes or glucose management remains suboptimal, an appointment in one to two weeks is preferred. Loss of coverage or supply should trigger a reviewed alternative plan rather than an unexplained treatment gap or an assumption that products are interchangeable."
+    },
+    {
+      "heading": "Schedule efficacy and safety reassessment",
+      "body": "Every initiation or change needs a stated goal and a plan to review response, adverse effects, lows, intake, organ function, access and burden. ADA recommends regular review of the medication plan and medication-taking behavior, for example every three to six months, with earlier review when symptoms, safety concerns or transitions require it. Separate poor drug efficacy from missed doses, affordability problems or a plan that the person cannot manage. Decide deliberately whether to continue, titrate, substitute, simplify or deintensify; a prescription count does not measure treatment success."
+    }
+  ],
+  "keyPoints": [
+    "Each medicine needs a distinct, useful contribution; reconcile every ingredient in fixed combinations.",
+    "Avoid DPP-4 plus GLP-1-based redundancy and reassess insulin or secretagogue doses when adding effective therapy.",
+    "SGLT2 holds precede surgery; restart requires recovery criteria, not just an elapsed interval.",
+    "GLP-1 anesthesia decisions are individualized; a one-week hold does not guarantee absence of retained gastric contents.",
+    "Simplification and deintensification are different decisions; preserve independent outcome indications when appropriate.",
+    "Severe hyperglycemia, crisis, critical illness and postoperative care may require insulin; arrange monitoring and follow-up."
+  ],
+  "check": {
+    "question": "An adult with type 2 diabetes takes sitagliptin, glipizide and basal insulin and is starting tirzepatide. Which medication review is most appropriate?",
+    "choices": [
+      "Remove sitagliptin redundancy and reassess glipizide and insulin exposure for hypoglycemia risk.",
+      "Keep sitagliptin because it guarantees additional glucose lowering with tirzepatide.",
+      "Automatically increase glipizide and insulin to prevent any future hyperglycemia.",
+      "Stop all insulin indefinitely without reviewing glucose patterns or ongoing need."
+    ],
+    "answer": 0,
+    "rationale": "ADA advises against DPP-4 plus GLP-1-based therapy and recommends reviewing insulin and secretagogue doses when new treatment is added. Tirzepatide labeling recognizes increased hypoglycemia risk with those agents. Dose changes should follow the person’s glucose patterns and needs rather than automatic escalation or complete insulin withdrawal.",
+    "reviewHref": "#combination-deintensification-special-settings"
+  }
+});
+noninsulinDiabetesPharmacotherapyModule.references.push(...[
+  {
+    "label": "ADA 2026 older-adult treatment simplification and deintensification",
+    "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12690186/"
+  },
+  {
+    "label": "ADA 2026 hospital, perioperative and discharge diabetes care",
+    "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12690180/"
+  }
+]);

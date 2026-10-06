@@ -1495,3 +1495,131 @@ const verifiedCardiorenalQuestions = {
 for (const item of noninsulinDiabetesPharmacotherapyQuestionBank) {
   if (verifiedCardiorenalQuestions[item.id]) Object.assign(item, verifiedCardiorenalQuestions[item.id]);
 }
+
+
+// Complete combination and reassessment questions preserve stable identities and keys.
+const verifiedCombinationQuestions = {
+  "noninsulin-diabetes-25-principle": {
+    "question": "Which principle best supports a rational combination for type 2 diabetes?",
+    "choices": [
+      "Each medicine should contribute needed glucose or demonstrated outcome benefit that justifies its risks and burden.",
+      "A higher prescription count proves that every treatment goal has been met.",
+      "Two drugs from an overlapping incretin pathway always add meaningful glucose lowering.",
+      "Once combination therapy begins, every ingredient must be continued indefinitely."
+    ],
+    "rationale": "Choose complementary benefit rather than a drug count or redundant mechanism. Ongoing efficacy, adverse effects, lows, cost and burden can change whether an ingredient should remain."
+  },
+  "noninsulin-diabetes-25-application": {
+    "question": "An adult taking sitagliptin starts a GLP-1 receptor agonist. Which change addresses incretin redundancy?",
+    "choices": [
+      "Discontinue the DPP-4 inhibitor after reconciling any combination-product ingredients.",
+      "Add another DPP-4 inhibitor to compensate for the new mechanism.",
+      "Continue sitagliptin solely because the combination guarantees added glucose lowering.",
+      "Replace the GLP-1 receptor agonist with two DPP-4 inhibitors taken together."
+    ],
+    "rationale": "DPP-4 inhibitors are not recommended with GLP-1-based therapy because they add no meaningful glucose lowering. Reconciliation must include fixed combinations so a DPP-4 ingredient is not unintentionally retained."
+  },
+  "noninsulin-diabetes-25-safety": {
+    "question": "After tirzepatide is added, an adult on glipizide and basal insulin has recurrent treated hypoglycemia. Which plan preserves the clearest preventable risk?",
+    "choices": [
+      "Continue all doses unchanged because tirzepatide’s low intrinsic hypoglycemia risk excludes combination-related lows.",
+      "Review glucose patterns and reduce or discontinue hypoglycemia-producing exposure as clinically appropriate.",
+      "Check meals, kidney function and whether the person can detect and treat lows.",
+      "Arrange prompt review of the regimen rather than waiting for routine follow-up."
+    ],
+    "rationale": "Low intrinsic risk does not eliminate hypoglycemia with insulin or a secretagogue. Mounjaro labeling and ADA recommendations support reassessing those doses. The other plans address the recurrent risk."
+  },
+  "noninsulin-diabetes-25-case": {
+    "question": "A patient on metformin, glipizide, sitagliptin and basal insulin starts tirzepatide. Recurrent lows have been treated and the patient is currently stable. Which regimen review is best?",
+    "choices": [
+      "Stop sitagliptin and reassess glipizide and insulin doses using glucose patterns and ongoing treatment needs.",
+      "Keep sitagliptin and increase glipizide because more incretin drugs prevent hypoglycemia.",
+      "Stop metformin alone and leave the redundant incretin and hypoglycemia-producing doses unchanged.",
+      "Withdraw every medicine permanently because any episode of hypoglycemia ends the need for treatment."
+    ],
+    "rationale": "Sitagliptin duplicates GLP-1-based treatment without added glucose benefit. Glipizide and insulin require active dose review after tirzepatide is added. The stable case asks about preventing recurrence, not delaying treatment of an active low."
+  },
+  "noninsulin-diabetes-26-principle": {
+    "question": "Which principle should guide a diabetes medication plan for fasting or surgery?",
+    "choices": [
+      "Use agent-specific interruption, monitoring, backup treatment and recovery criteria for restart.",
+      "Use the same hold interval and restart rule for every diabetes medicine.",
+      "Stop all insulin solely because oral intake is interrupted, including basal insulin in type 1 diabetes.",
+      "Continue every oral medicine through surgery because fasting removes its adverse-effect risk."
+    ],
+    "rationale": "SGLT2 ketoacidosis risk, secretagogue-associated lows, metformin context and GLP-1 anesthesia concerns differ. ADA recommends oral-agent holds on the procedure day with earlier SGLT2 interruption and individualized GLP-1 planning; basal insulin remains necessary in type 1 diabetes."
+  },
+  "noninsulin-diabetes-26-application": {
+    "question": "An adult using weekly semaglutide is preparing for elective surgery with general anesthesia. Which approach is appropriate?",
+    "choices": [
+      "Notify the procedural team and individualize the plan using symptoms, drug details, glycemic needs and the procedure.",
+      "Assume a one-week hold guarantees an empty stomach and eliminates aspiration risk.",
+      "Ignore semaglutide because preoperative fasting excludes residual gastric contents in every patient.",
+      "Stop every diabetes medicine permanently regardless of the ongoing indication."
+    ],
+    "rationale": "GLP-1 therapy delays gastric emptying, and aspiration has been reported despite fasting. ADA recommends individualized perioperative planning. Labeling does not establish that a particular interruption interval guarantees risk elimination."
+  },
+  "noninsulin-diabetes-26-safety": {
+    "question": "After surgery, an empagliflozin user still has vomiting, poor intake and possible ketoacidosis. Which restart instruction is unsafe?",
+    "choices": [
+      "Restart automatically because the scheduled hold interval has elapsed.",
+      "Continue interruption while promptly assessing symptoms and possible ketoacidosis.",
+      "Confirm clinical stability and resumed oral intake before considering restart.",
+      "If ketoacidosis occurred, confirm resolution before restarting."
+    ],
+    "rationale": "Jardiance requires clinical stability and resumed intake, and suspected ketoacidosis requires prompt assessment regardless of glucose. Resolution is required before restarting after ketoacidosis. Elapsed time alone is inadequate."
+  },
+  "noninsulin-diabetes-26-case": {
+    "question": "A stable adult taking metformin, empagliflozin and glipizide will have elective surgery with prolonged fasting. Which plan best matches current guidance?",
+    "choices": [
+      "Hold empagliflozin at least three days beforehand, plan oral-agent interruption on the procedure day, monitor glucose and specify recovery-based restart.",
+      "Hold empagliflozin only after surgery and continue glipizide during prolonged fasting.",
+      "Continue all three medicines unchanged because the patient is stable before surgery.",
+      "Use an automatic 48-hour restart for every agent even if intake or clinical stability has not returned."
+    ],
+    "rationale": "Empagliflozin labeling specifies at least three days before surgery or prolonged fasting, if possible. ADA holds oral agents on the procedure day, with appropriate glucose monitoring and insulin as needed. Restart rules differ; metformin’s contrast-related 48-hour reassessment is not a universal postoperative restart rule."
+  },
+  "noninsulin-diabetes-30-principle": {
+    "question": "Which statement correctly describes scheduled medication reassessment?",
+    "choices": [
+      "Review the plan regularly, for example every three to six months, and earlier when symptoms, safety concerns or transitions require it.",
+      "Wait six months before addressing recurrent hypoglycemia because only scheduled reviews are permitted.",
+      "An A1C at target means adverse effects and treatment burden no longer need review.",
+      "Once a medicine is started, later kidney changes and access problems cannot alter its value."
+    ],
+    "rationale": "ADA recommends regular review while avoiding delay when treatment needs modification. Lows, adverse effects, organ changes and access problems can require earlier action even when A1C is at goal."
+  },
+  "noninsulin-diabetes-30-application": {
+    "question": "After changing a diabetes regimen, which documentation best supports meaningful follow-up?",
+    "choices": [
+      "State the intended benefit, glucose and safety measures to review, follow-up timing and criteria for continuation or change.",
+      "Record the medicine name alone and assume any response proves that every goal was achieved.",
+      "Add a reassessment date but omit the intended benefit and any adverse-effect review.",
+      "Judge success only by the number of prescriptions the person receives."
+    ],
+    "rationale": "A follow-up plan needs a goal, response measures, safety review and a decision point. A medicine name, date or prescription count alone cannot distinguish benefit from ineffective, harmful or unmanageable treatment."
+  },
+  "noninsulin-diabetes-30-safety": {
+    "question": "Which follow-up plan most clearly risks retaining harmful or ineffective treatment?",
+    "choices": [
+      "Add another medicine without reviewing existing benefit, lows, affordability or when the regimen will be reassessed.",
+      "Review treatment burden and whether the person can manage the plan.",
+      "Check for recurrent lows and reassess insulin or secretagogue exposure.",
+      "Review independent cardiovascular and kidney indications before reducing treatment."
+    ],
+    "rationale": "Unreviewed accumulation can preserve ineffective or harmful therapy. The other plans examine safety, feasibility or continued outcome value and support deliberate adjustment."
+  },
+  "noninsulin-diabetes-30-case": {
+    "question": "A patient has accumulated five glucose-lowering medicines over two years, but no one can state each drug’s goal or when benefit was last reviewed. Which response is best?",
+    "choices": [
+      "Reconcile all ingredients and schedule goal-based review of efficacy, safety, access and possible simplification or deintensification.",
+      "Continue all five indefinitely because the number of drugs proves their independent benefit.",
+      "Stop every medicine immediately without reviewing glucose, safety or outcome indications.",
+      "Add a sixth medicine before checking why the existing plan is not meeting the person’s needs."
+    ],
+    "rationale": "Reconciliation identifies duplication and current treatment purposes. Review response, lows, organ function, access and burden, then decide which therapies remain useful. Neither automatic continuation, indiscriminate withdrawal nor further accumulation provides that assessment."
+  }
+};
+for (const item of noninsulinDiabetesPharmacotherapyQuestionBank) {
+  if (verifiedCombinationQuestions[item.id]) Object.assign(item, verifiedCombinationQuestions[item.id]);
+}
