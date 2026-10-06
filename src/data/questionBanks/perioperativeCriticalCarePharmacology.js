@@ -1656,3 +1656,558 @@ for (const [id, updates] of Object.entries({
   if (existing) Object.assign(existing, updates);
   else perioperativeCriticalCarePharmacologyQuestionBank.push(updates);
 }
+
+
+// Explain each alternative in the source-reviewed NMBA assessment cases.
+for (const [id, updates] of Object.entries({
+  "periop-pediatric-reversal-1": {
+    "id": "periop-pediatric-reversal-1",
+    "question": "A 5 kg infant undergoing surgery has reappearance of T2 after rocuronium. BRIDION has been diluted to 10 mg/mL. What volume provides the labeled 2 mg/kg dose?",
+    "choices": [
+      "1 mL",
+      "0.1 mL",
+      "5 mL",
+      "10 mL"
+    ],
+    "answer": 0,
+    "rationale": "5 kg times 2 mg/kg equals 10 mg. At the stated diluted concentration, 10 mg requires 1 mL. Continue objective recovery and respiratory monitoring. At 10 mg/mL, 0.1 mL gives only 1 mg, 5 mL gives 50 mg and 10 mL gives 100 mg. None equals the ordered 10 mg.",
+    "reviewHref": "#monitoring-and-reversal",
+    "difficulty": "application"
+  },
+  "periop-pediatric-reversal-2": {
+    "id": "periop-pediatric-reversal-2",
+    "question": "A learner assumes that BRIDION approval from birth establishes the adult 16 mg/kg immediate-reversal regimen for infants. What corrects this interpretation?",
+    "choices": [
+      "Pediatric surgical reversal is established, but immediate pediatric reversal has not been studied",
+      "All pediatric use is prohibited",
+      "Sixteen mg/kg reverses every neuromuscular blocker",
+      "Age approval removes the need for ventilation"
+    ],
+    "answer": 0,
+    "rationale": "The pediatric indication and immediate-reversal evidence are distinct. The label specifically states that immediate reversal in pediatric patients has not been studied. The current label permits pediatric surgical reversal, so blanket prohibition is incorrect. The 16 mg/kg scenario targets a specific rocuronium exposure and cannot be extended to every blocker. Pediatric approval does not restore breathing or remove the ventilation requirement.",
+    "reviewHref": "#monitoring-and-reversal",
+    "difficulty": "advanced"
+  },
+  "periop-neostigmine-depth-1": {
+    "id": "periop-neostigmine-depth-1",
+    "question": "An adult weighing 60 kg has a quantitative TOF ratio of 0.5. Under ASA guidance for minimal blockade, what is the upper neostigmine dose for this initial reversal?",
+    "choices": [
+      "2.4 mg",
+      "4.2 mg",
+      "5 mg regardless of weight",
+      "24 mg"
+    ],
+    "answer": 0,
+    "rationale": "The ASA minimal-block limit is 40 micrograms/kg: 60 times 40 = 2400 micrograms = 2.4 mg. The broader product-label ceiling is not the dose target for this scenario. The 4.2 mg answer applies the broader 0.07 mg/kg label ceiling, which is not the ASA initial minimal-block limit. Five mg ignores the depth and weight-based restriction, and 24 mg is tenfold above 2.4 mg.",
+    "reviewHref": "#monitoring-and-reversal",
+    "difficulty": "application"
+  },
+  "periop-neostigmine-depth-2": {
+    "id": "periop-neostigmine-depth-2",
+    "question": "Quantitative adductor-pollicis monitoring confirms spontaneous recovery to a TOF ratio of 0.95. What is the role of routine neostigmine now?",
+    "choices": [
+      "No pharmacologic antagonism is required; separately assess airway and breathing readiness",
+      "Give the maximum label dose to assure recovery",
+      "Give neostigmine until the ratio is exactly 1.0",
+      "Extubate without assessing respiration"
+    ],
+    "answer": 0,
+    "rationale": "ASA identifies spontaneous recovery to at least 0.9 as not requiring antagonism. This measurement does not replace the rest of the extubation assessment. A maximum neostigmine dose is unnecessary after documented spontaneous recovery and can itself cause weakness. A ratio of exactly 1.0 is not the stated antagonism threshold. Extubation still requires adequate airway and respiratory function.",
+    "reviewHref": "#monitoring-and-reversal",
+    "difficulty": "clinical"
+  },
+  "periop-reversal-case-1": {
+    "id": "periop-reversal-case-1",
+    "question": "An adult can lift the head, but the quantitative adductor-pollicis TOF ratio is 0.72. What should determine readiness?",
+    "choices": [
+      "Continue recovery management and confirm at least 0.9 plus airway readiness",
+      "Extubate because head lift excludes residual blockade",
+      "Ignore the ratio when tidal volume is adequate",
+      "Use elapsed time alone"
+    ],
+    "answer": 0,
+    "rationale": "Strength tests cannot exclude residual weakness. Quantitative recovery and airway assessment are both necessary. Head lift and an apparently adequate tidal volume cannot exclude residual block. A ratio of 0.72 remains below 0.9. Elapsed time also cannot establish recovery in an individual patient.",
+    "reviewHref": "#monitoring-and-reversal",
+    "difficulty": "clinical"
+  },
+  "periop-reversal-case-2": {
+    "id": "periop-reversal-case-2",
+    "question": "After rocuronium, a 100 kg adult has two post-tetanic counts and no TOF twitches. What labeled sugammadex dose applies?",
+    "choices": [
+      "400 mg",
+      "200 mg",
+      "40 mg",
+      "1600 mg for every deep block"
+    ],
+    "answer": 0,
+    "rationale": "This measured depth uses 4 mg/kg actual body weight: 100 times 4 = 400 mg. Continue ventilation and recovery monitoring. Two hundred mg supplies 2 mg/kg, the T2 regimen; 40 mg supplies only 0.4 mg/kg. The 1,600 mg answer is 16 mg/kg and belongs to the specified immediate rocuronium-reversal scenario rather than every deep block.",
+    "reviewHref": "#monitoring-and-reversal",
+    "difficulty": "clinical"
+  },
+  "periop-reversal-case-3": {
+    "id": "periop-reversal-case-3",
+    "question": "A 70 kg adult has reappearance of T2 after vecuronium. What labeled sugammadex dose applies?",
+    "choices": [
+      "140 mg",
+      "280 mg",
+      "1120 mg",
+      "14 mg"
+    ],
+    "answer": 0,
+    "rationale": "At T2 reappearance, 2 mg/kg applies: 70 times 2 = 140 mg. The 4 mg/kg regimen corresponds to a different measured depth. Two hundred eighty mg is 4 mg/kg, used at a deeper measured block. The 1,120 mg answer is 16 mg/kg and is not established for this vecuronium scenario. Fourteen mg is tenfold below 140 mg.",
+    "reviewHref": "#monitoring-and-reversal",
+    "difficulty": "clinical"
+  },
+  "periop-reversal-case-4": {
+    "id": "periop-reversal-case-4",
+    "question": "An order uses sugammadex 16 mg/kg three minutes after vecuronium, citing the immediate-reversal label. What is the problem?",
+    "choices": [
+      "That labeled scenario follows rocuronium 1.2 mg/kg, not vecuronium",
+      "Sixteen mg/kg is the routine dose at T2",
+      "Vecuronium requires twice the rocuronium dose",
+      "Drug identity does not matter if weight is known"
+    ],
+    "answer": 0,
+    "rationale": "The immediate 16 mg/kg regimen is tied to the specified rocuronium exposure. It is not established for immediate vecuronium reversal. T2 reappearance uses 2 mg/kg, not 16 mg/kg. There is no labeled rule to double the rocuronium regimen for vecuronium. Actual weight does not remove the need to identify both the blocker and measured depth.",
+    "reviewHref": "#monitoring-and-reversal",
+    "difficulty": "clinical"
+  },
+  "periop-reversal-case-5": {
+    "id": "periop-reversal-case-5",
+    "question": "A surgical patient received cisatracurium. Why is sugammadex an unsuitable reversal choice?",
+    "choices": [
+      "Its labeled blocker targets are rocuronium and vecuronium",
+      "It reverses every blocker except rocuronium",
+      "Doubling the dose makes it appropriate for cisatracurium",
+      "It is suitable whenever the TOF ratio is low"
+    ],
+    "answer": 0,
+    "rationale": "Cisatracurium is outside sugammadex target scope; select a strategy appropriate to the actual blocker and depth. Rocuronium is one of the two labeled targets, so the opposite exclusion is false. Doubling the dose does not make cisatracurium a target. A low TOF ratio identifies residual block but cannot establish that a drug will reverse the administered agent.",
+    "reviewHref": "#monitoring-and-reversal",
+    "difficulty": "clinical"
+  },
+  "periop-reversal-case-6": {
+    "id": "periop-reversal-case-6",
+    "question": "An adult on dialysis received rocuronium. Which BRIDION label limitation must enter the reversal plan?",
+    "choices": [
+      "Use is not recommended in severe renal impairment, including dialysis",
+      "Dialysis mandates the largest dose",
+      "Dialysis removes the need for monitoring",
+      "Renal impairment makes it suitable for every blocker"
+    ],
+    "answer": 0,
+    "rationale": "Severe renal impairment is a labeled limitation. Use an individualized specialist plan, not automatic dose escalation. The dialysis limitation does not mandate the largest dose, waive recovery monitoring or broaden the drug to every blocker. Dose escalation alone does not resolve this labeled limitation.",
+    "reviewHref": "#monitoring-and-reversal",
+    "difficulty": "clinical"
+  },
+  "periop-reversal-case-7": {
+    "id": "periop-reversal-case-7",
+    "question": "Neostigmine reversal is selected for a patient who is already bradycardic. How should muscarinic protection be sequenced?",
+    "choices": [
+      "Give atropine or glycopyrrolate first in a separate syringe",
+      "Wait for worsening bradycardia before protection",
+      "Mix both drugs into the BLOXIVERZ prefilled syringe",
+      "Omit protection because paralysis prevents bradycardia"
+    ],
+    "answer": 0,
+    "rationale": "BLOXIVERZ directs an antimuscarinic before or with reversal; existing bradycardia calls for it first, using a separate syringe. Waiting for worse bradycardia delays the recommended protection. The label directs a separate syringe, and the prefilled syringe must not have another fluid introduced. Paralysis does not prevent neostigmine muscarinic bradycardia.",
+    "reviewHref": "#monitoring-and-reversal",
+    "difficulty": "clinical"
+  },
+  "periop-reversal-case-8": {
+    "id": "periop-reversal-case-8",
+    "question": "For a 50 kg adult, what is the BLOXIVERZ labeled maximum total dose, distinct from the lower dose selected for minimal block?",
+    "choices": [
+      "3.5 mg",
+      "5 mg in every adult",
+      "7 mg",
+      "35 mg"
+    ],
+    "answer": 0,
+    "rationale": "The cap is the lesser of 0.07 mg/kg or 5 mg: 50 times 0.07 = 3.5 mg. A ceiling is not a routine dose target. The 5 mg absolute cap does not override the smaller weight-based cap. Seven mg is twice 3.5 mg, and 35 mg is tenfold too high. The clinically selected dose can be lower than the ceiling.",
+    "reviewHref": "#monitoring-and-reversal",
+    "difficulty": "clinical"
+  },
+  "periop-pancuronium-reversal-boundary": {
+    "id": "periop-pancuronium-reversal-boundary",
+    "question": "A patient remains paralyzed after pancuronium. A trainee proposes sugammadex because pancuronium is a steroidal neuromuscular blocker. Which response is correct?",
+    "choices": [
+      "Use the rocuronium immediate-reversal dose for any steroidal blocker",
+      "Stop ventilation as soon as sugammadex is ordered",
+      "BRIDION labeling limits steroidal-blocker reversal to rocuronium and vecuronium; maintain support and select an agent- and depth-appropriate plan",
+      "Pancuronium is the same drug as vecuronium"
+    ],
+    "answer": 2,
+    "rationale": "BRIDION section 5.14 directs against use for steroidal neuromuscular blockers other than rocuronium or vecuronium. Class membership alone does not justify pancuronium reversal with sugammadex. Ventilation, sedation, and quantitative monitoring remain necessary. The immediate rocuronium regimen cannot be transferred to every steroidal blocker. Ordering reversal does not establish recovery or permit ventilation to stop. Pancuronium and vecuronium are different medicines.",
+    "reviewHref": "#monitoring-and-reversal",
+    "difficulty": "clinical"
+  },
+  "periop-sugammadex-contraception": {
+    "id": "periop-sugammadex-contraception",
+    "question": "A patient using a hormonal contraceptive implant receives sugammadex during surgery. Which discharge instruction follows BRIDION labeling?",
+    "choices": [
+      "No additional contraception because the method is not oral",
+      "Use an additional nonhormonal contraceptive method for seven days",
+      "Remove the implant immediately",
+      "Use backup only until anesthesia wears off"
+    ],
+    "answer": 1,
+    "rationale": "The seven-day backup instruction applies to nonoral as well as oral hormonal contraceptives. An implant is a nonoral hormonal method and still requires seven days of backup. The label does not call for removing it. Anesthesia recovery does not define the duration of this interaction.",
+    "reviewHref": "#monitoring-and-reversal",
+    "difficulty": "application"
+  },
+  "periop-sugammadex-repeat-blockade": {
+    "id": "periop-sugammadex-repeat-blockade",
+    "question": "An adult with moderate renal impairment received sugammadex 4 mg/kg. The team plans repeat vecuronium 0.1 mg/kg four hours later. Which label-based correction is needed?",
+    "choices": [
+      "Four hours is sufficient regardless of renal function",
+      "Use twice the vecuronium dose without waiting",
+      "The recommended interval for this vecuronium regimen is 24 hours; an urgent need requires a different specialist plan",
+      "Prior reversal prevents all future paralysis"
+    ],
+    "answer": 2,
+    "rationale": "Mild or moderate renal impairment extends the wait for vecuronium 0.1 mg/kg or rocuronium 0.6 mg/kg after up to 4 mg/kg sugammadex to 24 hours. Urgent re-blockade requires attention to alternative agent or dose, timing, airway support, and monitoring. The four-hour interval overlooks the renal-impairment qualification. Doubling vecuronium is not the labeled workaround. Sugammadex can affect subsequent steroidal blockade but does not permanently prevent all future paralysis.",
+    "reviewHref": "#monitoring-and-reversal",
+    "difficulty": "clinical"
+  },
+  "periop-neostigmine-obstruction": {
+    "id": "periop-neostigmine-obstruction",
+    "question": "A patient has mechanical intestinal obstruction and residual nondepolarizing blockade. What must be recognized before administering BLOXIVERZ?",
+    "choices": [
+      "Obstruction requires doubling the dose",
+      "Mechanical intestinal obstruction is a labeled contraindication; maintain support and select another suitable recovery plan",
+      "An antimuscarinic removes every neostigmine contraindication",
+      "Ventilation is unnecessary once reversal is considered"
+    ],
+    "answer": 1,
+    "rationale": "The BLOXIVERZ contraindications include mechanical intestinal or urinary obstruction and peritonitis. Antimuscarinic protection does not override these contraindications. Increasing the dose does not resolve a contraindication. Atropine or glycopyrrolate reduces muscarinic effects but does not remove mechanical obstruction. Considering reversal does not restore ventilation; respiratory support must continue as needed.",
+    "reviewHref": "#monitoring-and-reversal",
+    "difficulty": "clinical"
+  },
+  "periop-sugammadex-icu-evidence": {
+    "id": "periop-sugammadex-icu-evidence",
+    "question": "A clinician applies surgical sugammadex evidence to reversal after a prolonged rocuronium infusion in the ICU. Which qualification is required?",
+    "choices": [
+      "All ICU infusions use the 16 mg/kg immediate-reversal regimen",
+      "A normal heart rate proves full recovery",
+      "ICU use removes the need to assess kidney function",
+      "BRIDION labeling states that reversal after ICU administration has not been studied; an individualized specialist plan remains necessary"
+    ],
+    "answer": 3,
+    "rationale": "Surgical approval is not evidence for every ICU exposure. Agent, depth, organ function, ventilatory support and monitoring remain relevant; the label specifically identifies this evidence gap. The adult immediate 16 mg/kg scenario is not a universal ICU regimen. Heart rate cannot establish neuromuscular recovery. ICU care also does not remove the severe-renal-impairment limitation or monitoring requirements.",
+    "reviewHref": "#monitoring-and-reversal",
+    "difficulty": "clinical"
+  },
+  "periop-nmb-awareness": {
+    "id": "periop-nmb-awareness",
+    "question": "A ventilated patient remains motionless after rocuronium, but the sedative infusion has disconnected. What is the priority?",
+    "choices": [
+      "Wait for movement before treating discomfort",
+      "Give more rocuronium to maintain comfort",
+      "Restore adequate sedation and analgesia while maintaining ventilation",
+      "Assume paralysis prevents memory"
+    ],
+    "answer": 2,
+    "rationale": "Rocuronium does not provide unconsciousness or analgesia. Immobility cannot demonstrate adequate anesthesia. Waiting for movement misses awareness concealed by paralysis. More rocuronium further suppresses movement without treating pain. Neuromuscular blockade does not establish amnesia or prevent memory.",
+    "reviewHref": "#neuromuscular-blockade-foundations",
+    "difficulty": "clinical"
+  },
+  "periop-nmb-mechanism": {
+    "id": "periop-nmb-mechanism",
+    "question": "Which pairing correctly distinguishes the initial neuromuscular effects?",
+    "choices": [
+      "Rocuronium activates nicotinic receptors; succinylcholine blocks them competitively",
+      "Succinylcholine depolarizes the end plate; rocuronium competes with acetylcholine",
+      "Both drugs produce unconsciousness before paralysis",
+      "Both drugs inhibit acetylcholinesterase"
+    ],
+    "answer": 1,
+    "rationale": "Depolarizing and competitive blockade differ mechanistically, but neither supplies anesthesia. The pairing that makes rocuronium an agonist reverses the two mechanisms. Neither drug produces unconsciousness or analgesia. They act at nicotinic receptors rather than both inhibiting acetylcholinesterase.",
+    "reviewHref": "#neuromuscular-blockade-foundations",
+    "difficulty": "clinical"
+  },
+  "periop-nmb-phase-one": {
+    "id": "periop-nmb-phase-one",
+    "question": "Monitoring identifies persistent phase I succinylcholine block. Why should neostigmine not be given reflexively?",
+    "choices": [
+      "It can prolong this depolarizing block",
+      "It immediately supplies analgesia",
+      "It cannot affect neuromuscular transmission",
+      "It reverses all block identically"
+    ],
+    "answer": 0,
+    "rationale": "Anticholinesterases can intensify phase I block. Maintain respiratory support and adequate anesthesia while recovery is assessed. Neostigmine does not provide analgesia. Its effect on acetylcholine and cholinesterase can affect neuromuscular transmission, so it is not inert here. Depolarizing phase I and recovering nondepolarizing blocks are not reversed identically.",
+    "reviewHref": "#neuromuscular-blockade-foundations",
+    "difficulty": "clinical"
+  },
+  "periop-nmb-exit-plan": {
+    "id": "periop-nmb-exit-plan",
+    "question": "Before paralysis for a short procedure, which plan addresses recovery risk?",
+    "choices": [
+      "Use procedure duration alone to time extubation",
+      "Select the fastest onset and omit recovery planning",
+      "Assume every blocker has the same antidote",
+      "Confirm ventilation, anesthesia, monitoring, agent-specific reversal and postoperative support"
+    ],
+    "answer": 3,
+    "rationale": "A short procedure does not guarantee rapid drug recovery. Support and reversal must fit the blocker and patient. Procedure duration and fast onset do not predict complete recovery. Blockers differ in disposition, complications and reversal targets. Therefore neither time alone, onset alone nor a presumed universal antidote supplies an adequate exit plan.",
+    "reviewHref": "#neuromuscular-blockade-foundations",
+    "difficulty": "clinical"
+  },
+  "periop-nmb-denervation": {
+    "id": "periop-nmb-denervation",
+    "question": "An adult with spinal-cord injury three weeks earlier requires intubation. Which succinylcholine risk drives agent selection?",
+    "choices": [
+      "Predictable reversal by sugammadex",
+      "Severe hyperkalemia from denervated muscle",
+      "Loss of all anesthetic effect",
+      "Guaranteed brief paralysis"
+    ],
+    "answer": 1,
+    "rationale": "Established denervation increases the risk of dangerous potassium release. Use an appropriate alternative airway plan. Sugammadex does not reverse succinylcholine. Denervation does not cause loss of every anesthetic effect. The usual short duration cannot guarantee brief paralysis or remove the hyperkalemia contraindication.",
+    "reviewHref": "#succinylcholine-safety",
+    "difficulty": "clinical"
+  },
+  "periop-nmb-pediatric-reserve": {
+    "id": "periop-nmb-pediatric-reserve",
+    "question": "Why should succinylcholine not be chosen solely for convenience in an elective pediatric procedure?",
+    "choices": [
+      "It has no pediatric airway use",
+      "All children have proven muscle disease",
+      "Occult myopathy can cause fatal hyperkalemic rhabdomyolysis",
+      "It provides prolonged analgesia"
+    ],
+    "answer": 2,
+    "rationale": "The boxed warning reserves pediatric use for specified urgent-airway situations or intramuscular use when venous access is unavailable. The warning does not prohibit all pediatric airway use or mean every child has proven myopathy. The risk includes occult disease. Succinylcholine produces paralysis without analgesia.",
+    "reviewHref": "#succinylcholine-safety",
+    "difficulty": "clinical"
+  },
+  "periop-nmb-prolonged-apnea": {
+    "id": "periop-nmb-prolonged-apnea",
+    "question": "After a single succinylcholine dose, paralysis persists far beyond expectation. What is appropriate?",
+    "choices": [
+      "Continue ventilation and adequate sedation, monitor recovery and investigate reduced plasma cholinesterase activity",
+      "Awaken the patient because the usual duration has elapsed",
+      "Extubate if blood pressure is normal",
+      "Automatically administer sugammadex"
+    ],
+    "answer": 0,
+    "rationale": "Persistent paralysis requires respiratory support and protection against awareness until recovery. Usual duration is not a reason to permit awareness during persistent paralysis. Normal blood pressure does not establish respiratory-muscle recovery. Sugammadex is not a succinylcholine reversal agent.",
+    "reviewHref": "#succinylcholine-safety",
+    "difficulty": "clinical"
+  },
+  "periop-nmb-phase-two-assessment": {
+    "id": "periop-nmb-phase-two-assessment",
+    "question": "After prolonged succinylcholine exposure, a trainee labels persistent apnea as phase II block without nerve stimulation. What is missing?",
+    "choices": [
+      "An automatic 16 mg/kg sugammadex dose",
+      "Proof that all sedation has stopped",
+      "A fixed elapsed-time rule",
+      "Objective confirmation of block type before considering anticholinesterase reversal"
+    ],
+    "answer": 3,
+    "rationale": "The label requires nerve-stimulator confirmation and appropriate spontaneous recovery before specialist consideration of phase II reversal. Misclassification can worsen phase I block. Sugammadex is not indicated to reverse succinylcholine. Stopping sedation risks awareness while paralysis persists. A fixed time interval alone cannot identify phase II block or meet the nerve-stimulator and spontaneous-recovery conditions.",
+    "reviewHref": "#succinylcholine-safety",
+    "difficulty": "clinical"
+  },
+  "periop-agent-cirrhosis": {
+    "id": "periop-agent-cirrhosis",
+    "question": "An adult with cirrhosis recovers slowly after repeated rocuronium. Which assessment should guide the next step?",
+    "choices": [
+      "The scheduled procedure-end time",
+      "The response to a verbal command alone",
+      "Quantitative neuromuscular recovery plus airway and respiratory readiness",
+      "A fixed interval after the last syringe"
+    ],
+    "answer": 2,
+    "rationale": "Hepatic dysfunction and cumulative exposure can prolong rocuronium effects. Elapsed time does not establish recovery. Procedure timing or a fixed interval cannot demonstrate neuromuscular recovery. A verbal response indicates some consciousness rather than restored muscle function; it cannot replace quantitative recovery and airway assessment.",
+    "reviewHref": "#nondepolarizing-agent-selection",
+    "difficulty": "clinical"
+  },
+  "periop-agent-hofmann": {
+    "id": "periop-agent-hofmann",
+    "question": "Which feature favors considering cisatracurium when kidney and liver dysfunction complicate blocker selection?",
+    "choices": [
+      "Predominantly organ-independent Hofmann elimination of the parent drug",
+      "Complete absence of pharmacologically relevant metabolites",
+      "Reversal by sugammadex regardless of depth",
+      "Guaranteed recovery without monitoring"
+    ],
+    "answer": 0,
+    "rationale": "Hofmann elimination reduces parent-drug dependence on kidney and liver function; pH, temperature and metabolite clearance still matter. Cisatracurium still forms metabolites, including laudanosine, and their elimination depends on kidney and liver function. Sugammadex is not its reversal drug. Organ-independent parent degradation does not guarantee unmonitored recovery.",
+    "reviewHref": "#nondepolarizing-agent-selection",
+    "difficulty": "clinical"
+  },
+  "periop-agent-metabolites": {
+    "id": "periop-agent-metabolites",
+    "question": "Which comparison is accurate during prolonged neuromuscular-blocker exposure?",
+    "choices": [
+      "Both metabolites are established causes of human seizures at all concentrations",
+      "Neither drug forms metabolites",
+      "Laudanosine directly causes residual paralysis",
+      "Vecuronium has an active blocking metabolite; cisatracurium metabolites can accumulate despite largely organ-independent parent elimination"
+    ],
+    "answer": 3,
+    "rationale": "The 3-desacetyl vecuronium metabolite retains blocking activity. Laudanosine lacks blocking activity; animal seizure findings do not establish a human toxic concentration. Both drugs do form metabolites. Laudanosine does not have neuromuscular-blocking activity, and animal seizure findings do not establish seizures in humans at every concentration. Vecuronium metabolite activity must be distinguished from cisatracurium metabolite exposure.",
+    "reviewHref": "#nondepolarizing-agent-selection",
+    "difficulty": "clinical"
+  },
+  "periop-agent-magnesium": {
+    "id": "periop-agent-magnesium",
+    "question": "A patient receiving rocuronium also receives magnesium and a volatile anesthetic. How should this affect recovery planning?",
+    "choices": [
+      "Assume the drugs cancel each other",
+      "Anticipate potentiated blockade and titrate using objective monitoring",
+      "Extubate earlier because onset was rapid",
+      "Replace neuromuscular monitoring with blood pressure checks"
+    ],
+    "answer": 1,
+    "rationale": "Magnesium and volatile anesthetics can enhance rocuronium blockade. Individual monitoring is needed to assess effect and recovery. These exposures can enhance rather than cancel blockade. Fast onset does not justify earlier extubation. Blood pressure checks do not measure residual neuromuscular block.",
+    "reviewHref": "#nondepolarizing-agent-selection",
+    "difficulty": "clinical"
+  },
+  "periop-safety-stock": {
+    "id": "periop-safety-stock",
+    "question": "A ward without routine neuromuscular-blocker use keeps rocuronium beside antibiotics. What is the best system correction?",
+    "choices": [
+      "Add a warning but keep the stock",
+      "Separate the vials in the same open bin",
+      "Remove routine stock; preserve planned emergency access",
+      "Require staff to memorize vial colors"
+    ],
+    "answer": 2,
+    "rationale": "Eliminate unnecessary availability. Where stock is needed, secure segregation and clear warnings remain necessary. A sticker does not justify stock where it is not needed. An open bin fails secure sequestering. Memorizing vial colors is not a reliable substitute for restricting availability, identifying the medicine and verifying administration.",
+    "reviewHref": "#neuromuscular-blockade-safety",
+    "difficulty": "clinical"
+  },
+  "periop-safety-adc": {
+    "id": "periop-safety-adc",
+    "question": "An ICU cabinet displays a dismissible rocuronium warning. Which change best strengthens the removal safeguard?",
+    "choices": [
+      "Require selection of the clinical purpose or ventilation status",
+      "Display the warning only after removal",
+      "Replace the warning with the brand name",
+      "Rely on the vial cap alone"
+    ],
+    "answer": 0,
+    "rationale": "An interactive clinical response creates a deliberate check before release; it supplements secure storage and bedside verification. A warning shown only after removal misses the release safeguard. Brand-name display and a vial cap alone do not require the clinical-purpose or ventilation check. The interactive step supplements rather than replaces other controls.",
+    "reviewHref": "#neuromuscular-blockade-safety",
+    "difficulty": "clinical"
+  },
+  "periop-safety-label": {
+    "id": "periop-safety-label",
+    "question": "A pharmacy-prepared rocuronium syringe has its drug concentration covered by a paralysis sticker. What correction is needed?",
+    "choices": [
+      "Remove all labeling",
+      "Treat the syringe as exempt because anesthesia will use it",
+      "Keep the obscured concentration because the warning is more important",
+      "Retain a visible warning while restoring readable identity and concentration"
+    ],
+    "answer": 3,
+    "rationale": "Essential medication information must remain visible. The anesthesia-prepared syringe exception does not describe a pharmacy-prepared syringe. Removing all labels loses identity and warning information. Pharmacy preparation does not qualify for the anesthesia-prepared syringe exception. Hiding concentration risks a dosing error even if the paralysis warning is prominent.",
+    "reviewHref": "#neuromuscular-blockade-safety",
+    "difficulty": "clinical"
+  },
+  "periop-safety-eye-care": {
+    "id": "periop-safety-eye-care",
+    "question": "A ventilated adult requires continuous neuromuscular blockade. Eyelids remain partly open and there is no scheduled eye-care order. Which plan addresses the missing safeguard?",
+    "choices": [
+      "Wait for the patient to report eye discomfort",
+      "Use scheduled ocular lubrication and eyelid closure with reassessment",
+      "Assume sedation prevents corneal exposure",
+      "Use a train-of-four reading to decide whether lubrication is necessary"
+    ],
+    "answer": 1,
+    "rationale": "Sustained-blockade guidance recommends scheduled eye care including lubrication and eyelid closure. A paralyzed patient cannot reliably signal discomfort or protect exposed eyes. Waiting for reported discomfort fails when paralysis prevents normal protective movement. Sedation does not close exposed eyelids or lubricate the cornea. TOF measures blockade, not whether exposed eyes need protection.",
+    "reviewHref": "#neuromuscular-blockade-safety",
+    "difficulty": "clinical"
+  },
+  "periop-nmba-proning": {
+    "id": "periop-nmba-proning",
+    "question": "An adult with ARDS is proned and is meeting ventilation targets on sedation. A continuous paralytic infusion is proposed solely because of the prone position. What is the best assessment?",
+    "choices": [
+      "Proning always mandates continuous paralysis",
+      "Paralysis replaces sedation during proning",
+      "Proning alone does not establish a need for neuromuscular blockade",
+      "Every proned patient needs sugammadex before ventilation can continue"
+    ],
+    "answer": 2,
+    "rationale": "SCCM 2026 permits either use or nonuse of neuromuscular blockade during proning, with very low certainty. Assess persistent hypoxemia and unmet ventilation targets rather than treating position as an automatic indication. Continuous paralysis is not mandatory solely because of proning. Paralysis does not replace sedation. Sugammadex is a specific reversal agent, not a prerequisite for ongoing ventilation or a universal treatment for proned patients.",
+    "reviewHref": "#neuromuscular-blockade-safety",
+    "difficulty": "clinical"
+  },
+  "periop-nmba-sepsis": {
+    "id": "periop-nmba-sepsis",
+    "question": "Neuromuscular blockade is being considered for an adult with sepsis and moderate-to-severe ARDS. Which regimen comparison reflects the 2026 Surviving Sepsis Campaign?",
+    "choices": [
+      "Intermittent boluses are conditionally favored over continuous infusion",
+      "Continuous infusion is mandatory for all patients",
+      "The guideline prohibits all neuromuscular blockers",
+      "Boluses eliminate the need for analgesia and sedation"
+    ],
+    "answer": 0,
+    "rationale": "The sepsis guideline conditionally favors intermittent boluses, with moderate-certainty evidence. Indication assessment and full supportive care remain necessary. The recommendation neither mandates infusion for everyone nor prohibits all NMBAs. Intermittent boluses still paralyze without supplying analgesia or sedation, so the regimen does not remove those requirements.",
+    "reviewHref": "#neuromuscular-blockade-safety",
+    "difficulty": "application"
+  },
+  "periop-rocuronium-rsi-scope": {
+    "id": "periop-rocuronium-rsi-scope",
+    "question": "A teaching slide states that rocuronium’s general intubation indication establishes labeled rapid-sequence use for every age and for cesarean delivery. What correction is needed?",
+    "choices": [
+      "The label prohibits every use during pregnancy",
+      "Routine pediatric intubation and pediatric rapid-sequence intubation are identical labeled uses",
+      "Sugammadex availability eliminates population-specific limitations",
+      "The label discourages these rapid-sequence uses; distinguish its limitations from specialist obstetric guidance"
+    ],
+    "answer": 3,
+    "rationale": "The cited label does not recommend pediatric rapid-sequence intubation or rapid-sequence induction for cesarean delivery. OAA/DAS obstetric guidance describes rocuronium with prepared sugammadex as an alternative. The lesson must identify the difference rather than claim universal labeling or an absolute pregnancy contraindication. The product label does not prohibit every use in pregnancy. Routine pediatric intubation does not establish rapid-sequence approval. Having sugammadex available also does not erase population-specific labeling or the need for an airway-rescue plan.",
+    "reviewHref": "#nondepolarizing-agent-selection",
+    "difficulty": "advanced"
+  },
+  "periop-atracurium-pathways": {
+    "id": "periop-atracurium-pathways",
+    "question": "Which statement accurately describes atracurium disposition and safety?",
+    "choices": [
+      "It is cleared only by plasma pseudocholinesterase",
+      "Hofmann elimination and nonspecific ester hydrolysis contribute; histamine-related hemodynamic effects still require attention",
+      "Organ-independent degradation eliminates the need for anesthesia",
+      "It supplies analgesia while preventing movement"
+    ],
+    "answer": 1,
+    "rationale": "Atracurium's degradation pathways do not remove its histamine-release risk or the shared need for sedation, ventilation and neuromuscular monitoring. Atracurium duration does not depend on plasma pseudocholinesterase alone. Its degradation pathways do not supply anesthesia or analgesia. Preventing movement therefore does not demonstrate comfort or unconsciousness.",
+    "reviewHref": "#nondepolarizing-agent-selection",
+    "difficulty": "application"
+  },
+  "periop-pancuronium-renal": {
+    "id": "periop-pancuronium-renal",
+    "question": "A patient with kidney failure has prolonged weakness after pancuronium. Which explanation should inform recovery planning?",
+    "choices": [
+      "Renal failure guarantees faster pancuronium recovery",
+      "Normal blood pressure proves the block has resolved",
+      "Pancuronium has the same organ-independent degradation as cisatracurium",
+      "Reduced elimination of pancuronium and its active metabolite can prolong blockade"
+    ],
+    "answer": 3,
+    "rationale": "Pancuronium and an active metabolite depend on renal elimination. Continue appropriate ventilation and anesthesia and assess neuromuscular recovery; elapsed time alone is insufficient. Renal failure can slow, not guarantee faster, recovery. Blood pressure does not quantify residual block. Pancuronium does not share cisatracurium parent-drug Hofmann degradation.",
+    "reviewHref": "#nondepolarizing-agent-selection",
+    "difficulty": "clinical"
+  },
+  "periop-chronic-anticonvulsant-block": {
+    "id": "periop-chronic-anticonvulsant-block",
+    "question": "A patient taking long-term phenytoin has a shorter-than-expected response to rocuronium. Which interpretation best supports the next assessment?",
+    "choices": [
+      "All interacting drugs necessarily prolong rocuronium",
+      "Chronic anticonvulsant exposure can reduce blockade; use measured response to guide dosing",
+      "Phenytoin substitutes for neuromuscular monitoring",
+      "A shorter block eliminates the need for sedation"
+    ],
+    "answer": 1,
+    "rationale": "Chronic phenytoin or carbamazepine can produce resistance with shorter block duration. This differs from potentiating interactions and does not remove sedation or monitoring requirements. Interactions can reduce or enhance blockade; prolongation is not universal. Phenytoin does not measure neuromuscular recovery. A shorter measured block also does not replace adequate sedation and analgesia.",
+    "reviewHref": "#nondepolarizing-agent-selection",
+    "difficulty": "clinical"
+  }
+})) {
+ const existing = perioperativeCriticalCarePharmacologyQuestionBank.find((question) => question.id === id);
+ if (existing) Object.assign(existing, updates);
+ else perioperativeCriticalCarePharmacologyQuestionBank.push(updates);
+}

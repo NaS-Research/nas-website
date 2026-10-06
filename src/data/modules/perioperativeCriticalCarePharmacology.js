@@ -531,3 +531,370 @@ perioperativeCriticalCarePharmacologyModule.references.push(...[
     "href": "https://www.mhaus.org/healthcare-professionals/mhaus-recommendations/masseter-muscle-rigidity-definition-relationship-to-malignant-hyperthermia-and-management/"
   }
 ].filter((reference) => !perioperativeCriticalCarePharmacologyModule.references.some((existing) => existing.href === reference.href)));
+
+
+// Reconcile complete NMBA lessons with product-specific and setting-specific evidence.
+Object.assign(perioperativeCriticalCarePharmacologyModule.submodules.find((lesson) => lesson.slug === "neuromuscular-blockade-foundations"), {
+  "slug": "neuromuscular-blockade-foundations",
+  "title": "Understand Block Before Choosing a Drug",
+  "visual": "periop-nmb-foundations",
+  "summary": "Neuromuscular blockers prevent skeletal-muscle contraction at nicotinic acetylcholine receptors. Succinylcholine depolarizes the end plate, while nondepolarizing agents competitively block receptor activation. Neither mechanism supplies pain relief, amnesia, or unconsciousness.",
+  "concepts": [
+    "Motor end plate",
+    "Depolarizing block",
+    "Competitive block",
+    "No sedation",
+    "Recovery"
+  ],
+  "application": "Document the indication, agent, expected time course, monitoring site, sedation and analgesia, ventilation, reversal plan, and objective recovery threshold before administration.",
+  "lesson": [
+    {
+      "heading": "Read the neuromuscular junction",
+      "body": "Motor neurons release acetylcholine, which binds postsynaptic nicotinic receptors and opens cation channels. A sufficient end-plate potential activates nearby voltage-gated sodium channels and produces muscle contraction. Acetylcholinesterase rapidly terminates the signal."
+    },
+    {
+      "heading": "Separate depolarizing from competitive block",
+      "body": "Succinylcholine initially activates the receptor and produces fasciculation, then persistent depolarization prevents repeated contraction during phase I block. Rocuronium, vecuronium, cisatracurium, and related agents compete with acetylcholine without activating the receptor."
+    },
+    {
+      "heading": "Keep consciousness visible when movement disappears",
+      "body": "Paralysis removes movement and respiratory-muscle function but leaves the brain capable of pain, memory, fear, and awareness. Adequate sedation and analgesia must be established before paralysis and maintained independently throughout its effect."
+    }
+  ],
+  "keyPoints": [
+    "Paralysis is not anesthesia.",
+    "Succinylcholine depolarizes the end plate.",
+    "Nondepolarizers compete with acetylcholine.",
+    "Ventilation and unconsciousness require separate systems."
+  ],
+  "check": {
+    "question": "A motionless patient receiving rocuronium has an interrupted sedative infusion. What is the immediate concern?",
+    "choices": [
+      "Awareness and pain hidden by paralysis",
+      "Automatic analgesia from rocuronium",
+      "Immediate reversal by acetylcholine depletion",
+      "Protection from respiratory arrest"
+    ],
+    "answer": 0,
+    "rationale": "An interrupted sedative infusion can leave awareness and pain hidden by immobility. Rocuronium does not supply analgesia or unconsciousness. Acetylcholine depletion is not its mechanism or an immediate reversal method. Respiratory-muscle paralysis adds a ventilation requirement rather than protecting against respiratory arrest.",
+    "reviewHref": "#neuromuscular-blockade-foundations"
+  }
+});
+Object.assign(perioperativeCriticalCarePharmacologyModule.submodules.find((lesson) => lesson.slug === "succinylcholine-safety"), {
+  "slug": "succinylcholine-safety",
+  "title": "Use Succinylcholine Only After a Risk Screen",
+  "visual": "periop-succinylcholine",
+  "summary": "Succinylcholine has rapid onset and a short usual duration, but its depolarizing mechanism creates distinctive hyperkalemia, bradycardia, malignant-hyperthermia, myalgia, pressure, pediatric, and prolonged-apnea hazards.",
+  "concepts": [
+    "Hyperkalemia",
+    "Pediatric warning",
+    "Bradycardia",
+    "Malignant hyperthermia",
+    "Pseudocholinesterase"
+  ],
+  "application": "Before use, screen trigger susceptibility, potassium and receptor-upregulation states, age and occult myopathy risk, prior exposure, enzyme history, and the ability to ventilate until recovery.",
+  "lesson": [
+    {
+      "heading": "Identify receptor-upregulation risk",
+      "body": "After major burns, denervation, spinal-cord or peripheral-nerve injury, prolonged immobilization, stroke-related paralysis, or neuromuscular disease, extrajunctional receptors can produce dangerous potassium release. The risk evolves over time and cannot be reduced to one universal day count."
+    },
+    {
+      "heading": "Respect the pediatric boxed warning",
+      "body": "Hyperkalemic rhabdomyolysis, ventricular dysrhythmia, arrest, and death have occurred in children with unrecognized skeletal-muscle myopathy. Reserve pediatric succinylcholine for emergency airway control or situations where the airway must be secured immediately. The boxed warning also allows intramuscular use when a suitable vein is inaccessible; this exception does not make elective convenience use appropriate."
+    },
+    {
+      "heading": "Screen contraindications beyond the potassium value",
+      "body": "Known skeletal-muscle myopathy, hypersensitivity to succinylcholine and known or suspected genetic susceptibility to malignant hyperthermia are labeled contraindications. After the acute injury phase, major burns, multiple trauma, extensive denervation or upper-motor-neuron injury are also contraindications because of hyperkalemia risk. A normal baseline potassium result does not override these contraindications. Review prior reactions to other neuromuscular blockers because cross-reactivity has been reported."
+    },
+    {
+      "heading": "Anticipate bradycardia and pressure effects",
+      "body": "Succinylcholine can cause profound bradycardia or rarely asystole, especially in children and after repeat doses in adults or children. Anticholinergic pretreatment such as atropine may reduce this risk; it does not prevent hyperkalemic arrest. Monitor rhythm and reassess the cause of deterioration. The label also cautions about increased intraocular pressure: with penetrating eye injury or narrow-angle glaucoma, use requires a benefit-risk judgment rather than an assumption of harmless short exposure."
+    },
+    {
+      "heading": "Support prolonged block rather than guessing",
+      "body": "Plasma-cholinesterase deficiency, pregnancy, liver disease, malnutrition, organophosphates, and selected medicines can prolong block. Continue controlled ventilation and adequate unconsciousness until quantitative recovery. Phase I block is not treated like shallow nondepolarizing block, and reflexive neostigmine can prolong it."
+    },
+    {
+      "heading": "Confirm phase II before considering reversal",
+      "body": "Prolonged succinylcholine exposure can produce phase II block. The label requires nerve-stimulator confirmation plus at least 20 minutes of spontaneous twitch recovery that has reached a slowly recovering plateau before considering anticholinesterase reversal. This is an anesthesia-specialist decision; phase I misclassification can prolong paralysis. If reversal is selected, provide antimuscarinic protection and observe for recurrent weakness for at least one hour. Continue ventilation and adequate anesthesia as needed."
+    },
+    {
+      "heading": "Distinguish the usual role from every labeled regimen",
+      "body": "The book emphasizes succinylcholine for intubation and discourages continuous blockade. The reviewed product label nevertheless includes adult infusion and intermittent dosing for long surgical procedures, with nerve-stimulator monitoring for overdose, phase II block and recovery. This does not establish routine prolonged ICU use. A fast usual onset or short usual duration does not guarantee timely recovery after repeat exposure or reduced plasma-cholinesterase activity."
+    }
+  ],
+  "keyPoints": [
+    "Screen for receptor upregulation.",
+    "Pediatric elective convenience is not a safe indication.",
+    "Succinylcholine can trigger malignant hyperthermia.",
+    "Prolonged apnea requires ventilation and sedation until recovery."
+  ],
+  "check": {
+    "question": "A patient with a spinal-cord injury from three weeks ago needs urgent intubation. Which succinylcholine concern is most important?",
+    "choices": [
+      "Potentially fatal hyperkalemia from receptor upregulation",
+      "Loss of all local-anesthetic effect",
+      "Direct reversal of sedation",
+      "Elimination by the kidney"
+    ],
+    "answer": 0,
+    "rationale": "Established denervation after spinal-cord injury can cause severe potassium release with succinylcholine. The relevant contraindication is not removed by urgency or a normal baseline potassium. Loss of local-anesthetic effect and direct sedation reversal are not this mechanism. Plasma cholinesterase, rather than kidney clearance alone, is central to succinylcholine breakdown; changing that answer does not address denervation risk.",
+    "reviewHref": "#succinylcholine-safety"
+  }
+});
+Object.assign(perioperativeCriticalCarePharmacologyModule.submodules.find((lesson) => lesson.slug === "nondepolarizing-agent-selection"), {
+  "slug": "nondepolarizing-agent-selection",
+  "title": "Select Nondepolarizing Block With Recovery in Mind",
+  "visual": "periop-nondepolarizing",
+  "summary": "The useful onset of rocuronium, the aminosteroid disposition of rocuronium and vecuronium, and the organ-independent Hofmann elimination of cisatracurium create different tradeoffs. Volatile anesthetics, magnesium, antibiotics, temperature, acid-base state, and cumulative dose can all change duration.",
+  "concepts": [
+    "Rocuronium",
+    "Vecuronium",
+    "Cisatracurium",
+    "Hofmann elimination",
+    "Interactions"
+  ],
+  "application": "Choose the agent only after defining required onset, expected procedure length, organ function, interacting exposures, monitoring, reversal availability, and postoperative ventilatory capacity.",
+  "lesson": [
+    {
+      "heading": "Use rocuronium for rapid onset with a complete exit plan",
+      "body": "Rocuronium is labeled for rapid-sequence and routine intubation plus skeletal-muscle relaxation during surgery or mechanical ventilation. Its duration varies substantially and can be prolonged by organ dysfunction, especially hepatic disease, volatile anesthetics, magnesium, aminoglycosides, and cumulative dosing."
+    },
+    {
+      "heading": "Check the population before applying the indication",
+      "body": "The cited U.S. rocuronium label does not recommend rapid-sequence intubation in pediatric patients or rapid-sequence induction for cesarean delivery. These population-specific limitations should accompany the general intubation indication. They are distinct from the label’s contraindication for known hypersensitivity to rocuronium or other neuromuscular blockers. Pediatric routine intubation and surgical maintenance are separate uses; do not infer pediatric rapid-sequence approval from them."
+    },
+    {
+      "heading": "Reconcile obstetric guidance with labeling",
+      "body": "The OAA/DAS obstetric airway guideline describes rocuronium 1.0 to 1.2 mg/kg with immediately available, preplanned sugammadex as an alternative to succinylcholine. This specialist guidance differs from the cited U.S. product label. Use an obstetric anesthesia protocol that addresses this difference, patient risks, ventilation, and failed-intubation rescue. Reversal availability does not remove the need to maintain oxygenation or prevent aspiration and awareness when intubation fails."
+    },
+    {
+      "heading": "Check whether an interaction prolongs or reduces block",
+      "body": "Rocuronium labeling identifies possible potentiation with aminoglycosides, vancomycin, polymyxins, magnesium, lithium, local anesthetics and procainamide. Quinidine during recovery can permit recurrent paralysis. Chronic carbamazepine or phenytoin can instead shorten blockade and increase dose requirements. Reconcile exposure and measured response; an interaction list is not a universal dose-adjustment formula."
+    },
+    {
+      "heading": "Keep less predictable interactions in the recovery plan",
+      "body": "Verapamil labeling warns that it may potentiate neuromuscular blockers, including reported delayed vecuronium recovery. Older transplant observations also associate cyclosporine exposure with prolonged block or respiratory failure, but do not establish a universal dose adjustment or prove causation. In transplant care, assess organ function, the full anesthetic regimen and measured recovery together; do not attribute persistent weakness to one medicine automatically."
+    },
+    {
+      "heading": "Recognize aminosteroid disposition",
+      "body": "Rocuronium is eliminated mainly through hepatobiliary pathways with some renal contribution. Vecuronium and its active 3-desacetyl metabolite have biliary and renal elimination. Prolonged exposure, especially in the ICU, can create a different recovery problem from a single surgical dose. Kidney and liver function, cumulative exposure and measured recovery must inform the plan."
+    },
+    {
+      "heading": "Distinguish atracurium from cisatracurium",
+      "body": "Atracurium is an intermediate-duration nondepolarizing blocker degraded through both Hofmann elimination and nonspecific ester hydrolysis. Its duration does not track plasma pseudocholinesterase levels. Histamine release and hypotension remain relevant; the label advises a lower initial dose given slowly or in divided doses over one minute for patients with significant cardiovascular disease or increased histamine-release risk. Organ-independent degradation does not eliminate monitoring or anesthesia requirements."
+    },
+    {
+      "heading": "Anticipate pancuronium's longer recovery",
+      "body": "Pancuronium lasts longer than vecuronium at initially equivalent blocking doses. Renal elimination of drug and active metabolite makes recovery slower and more variable in kidney failure; hepatic or biliary disease can also prolong block. Heart rate may rise. Select it with a measured recovery and ventilatory-support plan, rather than expecting the timing of an intermediate-duration agent."
+    },
+    {
+      "heading": "Use cisatracurium when organ-independent elimination fits",
+      "body": "Cisatracurium undergoes Hofmann degradation, reducing dependence on kidney and liver. Temperature and pH still influence degradation, and prolonged use still requires an individualized monitoring plan, full sedation, ventilation, and daily indication review."
+    },
+    {
+      "heading": "Separate parent-drug clearance from metabolite exposure",
+      "body": "Cisatracurium metabolites still require renal and hepatic clearance and can accumulate during prolonged treatment when those organs are impaired. Laudanosine does not cause neuromuscular block, but it has produced seizures in animals; the human concentration-to-CNS-effect relationship is not established. Monitor the degree of blockade and limit unnecessary exposure. Vecuronium differs: its 3-desacetyl metabolite retains neuromuscular-blocking activity and may contribute to prolonged paralysis."
+    }
+  ],
+  "keyPoints": [
+    "Fast onset does not guarantee fast recovery.",
+    "Aminosteroid clearance can vary with organ function.",
+    "Cisatracurium uses Hofmann elimination.",
+    "Interactions can shorten or prolong blockade; measure the response."
+  ],
+  "check": {
+    "question": "Which agent is most directly distinguished by organ-independent Hofmann elimination?",
+    "choices": [
+      "Cisatracurium",
+      "Rocuronium",
+      "Vecuronium",
+      "Succinylcholine"
+    ],
+    "answer": 0,
+    "rationale": "Cisatracurium parent drug is eliminated mainly by pH- and temperature-dependent Hofmann degradation. Rocuronium has hepatobiliary and renal disposition; vecuronium and its active metabolite have biliary and renal disposition. Succinylcholine is broken down by plasma cholinesterase. These distinctions do not remove patient-specific monitoring or the separate need for anesthesia and ventilation.",
+    "reviewHref": "#nondepolarizing-agent-selection"
+  }
+});
+Object.assign(perioperativeCriticalCarePharmacologyModule.submodules.find((lesson) => lesson.slug === "neuromuscular-blockade-safety"), {
+  "slug": "neuromuscular-blockade-safety",
+  "title": "Make Paralysis a High-Reliability System",
+  "visual": "periop-nmb-safety",
+  "summary": "A wrong-vial event can cause silent respiratory arrest, and intended paralysis can hide awareness, pain, seizures, pressure injury, and ventilatory failure. Safe use depends on storage engineering and a bedside care bundle, not on memory alone.",
+  "concepts": [
+    "Segregation",
+    "Paralyzing-agent warning",
+    "Ventilation",
+    "Sedation",
+    "Supportive care"
+  ],
+  "application": "Audit procurement, storage, labeling, barcode use, administration, ventilation verification, sedation, eye care, positioning, thrombosis prevention, and daily indication review as one system.",
+  "lesson": [
+    {
+      "heading": "Prevent accidental selection",
+      "body": "ISMP recommends removing neuromuscular blockers from areas where they are not routinely used. Where needed, secure them in sealed kits or lock-lidded dispensing-cabinet bins. In the pharmacy, separate them from other medicines in lidded refrigerator containers or secure isolated storage. A warning sticker alone does not make unnecessary ward stock appropriate."
+    },
+    {
+      "heading": "Make removal and labeling deliberate",
+      "body": "Configure dispensing cabinets to require a clinical response, such as the indication or ventilation status, before releasing the drug. Final containers and storage locations need conspicuous respiratory-paralysis and ventilation warnings without hiding essential medication information. ISMP exempts anesthesia-prepared syringes from its auxiliary-warning practice; this is not permission to omit the drug identity."
+    },
+    {
+      "heading": "Verify before and after administration",
+      "body": "Use pharmacist-verified profiles when possible, barcode scanning, independent checks for indication and ventilation, labeled syringes, and immediate documentation. Use explicit neuromuscular-blocker and paralyzing-agent terminology in storage and safety communication; a muscle-relaxant label alone can obscure respiratory-arrest risk."
+    },
+    {
+      "heading": "Decide whether ICU blockade is needed",
+      "body": "The 2026 SCCM ARDS guideline conditionally favors neuromuscular blockade when PaO2/FiO2 is below 150 and hypoxemia persists or ventilation targets remain unmet despite sedation. Certainty is low. Prone positioning alone does not require paralysis; assess the actual oxygenation and ventilation problem."
+    },
+    {
+      "heading": "Choose the regimen for the clinical setting",
+      "body": "For adults with sepsis and moderate-to-severe ARDS, the 2026 Surviving Sepsis Campaign conditionally favors intermittent boluses over continuous infusion, with moderate-certainty evidence. A care bundle for an infusion does not establish that every ventilated patient needs one. Reassess indication and exposure as physiology changes."
+    },
+    {
+      "heading": "Separate ICU dosing from surgical recovery",
+      "body": "The SCCM ARDS guideline allows either fixed dosing without block-depth monitoring or titration guided by block depth, with very low certainty. This differs from ASA quantitative monitoring for surgical recovery and extubation. Uncertainty about the best ICU monitoring strategy does not remove the requirement for adequate analgesia, sedation and ventilation; paralysis itself supplies none of them."
+    },
+    {
+      "heading": "Separate secretion control from airway clearance",
+      "body": "Glycopyrrolate can reduce airway secretions during anesthesia, but a drying effect does not clear retained secretions or restore cough during paralysis. Maintain airway assessment and indicated suctioning. Investigate tachycardia before use, because heart rate may increase; consider renal impairment, urinary retention, glaucoma and additive anticholinergic effects when assessing the treatment plan."
+    },
+    {
+      "heading": "Protect the immobilized patient",
+      "body": "Maintain mechanical ventilation, adequate analgesia and sedation, eye lubrication and closure, pressure and skin care, thrombosis prevention, positioning, temperature control, and a setting-specific assessment of blockade and recovery. Scheduled eye care with lubrication and eyelid closure is a specific sustained-blockade recommendation; protection cannot depend on the patient reporting discomfort. Review ongoing need and use the lowest effective exposure."
+    }
+  ],
+  "keyPoints": [
+    "Sequester neuromuscular blockers.",
+    "Label them as paralyzing agents.",
+    "Verify ventilation before administration.",
+    "Protect consciousness, eyes, skin, lungs, and circulation throughout use."
+  ],
+  "check": {
+    "question": "A ward does not routinely use neuromuscular blockers. What should its medication-storage review recommend?",
+    "choices": [
+      "Remove routine rocuronium stock and use the hospital emergency-access plan",
+      "Beside saline flushes for convenience",
+      "In an unlocked drawer with antibiotics",
+      "At every bedside without barcode controls"
+    ],
+    "answer": 0,
+    "rationale": "ISMP recommends removing neuromuscular blockers where they are not routinely used, with planned access when emergencies require them. Keeping rocuronium beside saline, in an unlocked antibiotic drawer or at every bedside invites selection errors. Necessary stock requires secure segregation, conspicuous warnings and administration safeguards.",
+    "reviewHref": "#neuromuscular-blockade-safety"
+  }
+});
+Object.assign(perioperativeCriticalCarePharmacologyModule.submodules.find((lesson) => lesson.slug === "monitoring-and-reversal"), {
+  "slug": "monitoring-and-reversal",
+  "title": "Measure Recovery and Match the Reversal",
+  "visual": "periop-monitoring-reversal",
+  "summary": "Clinical signs and subjective twitch counts miss residual paralysis. Quantitative adductor-pollicis monitoring establishes block depth, selects the reversal approach, and confirms a train-of-four ratio of at least 0.9 before extubation.",
+  "concepts": [
+    "Quantitative TOF",
+    "Sugammadex",
+    "Neostigmine",
+    "Antimuscarinic",
+    "Extubation"
+  ],
+  "application": "Record the blocker, monitoring site, twitch count or post-tetanic count, quantitative ratio, reversal dose and time, airway status, and final ratio before extubation.",
+  "lesson": [
+    {
+      "heading": "Use objective recovery",
+      "body": "The ASA recommends quantitative rather than clinical or qualitative assessment when neuromuscular blockers are used. Monitor at the adductor pollicis and confirm a train-of-four ratio at or above 0.9 before extubation. Head lift, grip, and tidal volume do not reliably exclude residual weakness."
+    },
+    {
+      "heading": "Dose sugammadex from measured depth",
+      "body": "Sugammadex reverses rocuronium and vecuronium. Current labeling uses actual body weight: 2 mg/kg at reappearance of T2, 4 mg/kg with 1 to 2 post-tetanic counts and no train-of-four twitch, and 16 mg/kg for the labeled immediate-reversal scenario about 3 minutes after 1.2 mg/kg rocuronium. It is not recommended in severe renal impairment and does not reverse succinylcholine or cisatracurium."
+    },
+    {
+      "heading": "Do not extend sugammadex to every steroidal blocker",
+      "body": "Pancuronium is not an additional BRIDION target. The label directs against reversal of steroidal blockers other than rocuronium or vecuronium, as well as nonsteroidal blockers. Identify the administered agent before selecting reversal; a shared drug class does not establish interchangeability. Maintain ventilation and sedation while an appropriate recovery plan is made."
+    },
+    {
+      "heading": "Distinguish pediatric reversal from immediate rescue",
+      "body": "BRIDION labeling now includes surgical reversal of rocuronium or vecuronium in pediatric patients from birth. Use the measured-depth regimens rather than an age-based fixed dose. Immediate reversal in children has not been studied; do not present the adult 16 mg/kg rocuronium scenario as established pediatric rescue. The book’s adult-only description does not capture this expanded indication."
+    },
+    {
+      "heading": "Measure small doses accurately",
+      "body": "For pediatric measurement, BRIDION 100 mg/mL may be diluted with 0.9% sodium chloride to 10 mg/mL: add the 200 mg in a 2 mL vial to 18 mL diluent and use immediately. A 5 kg infant at reappearance of T2 requires 10 mg, or 1 mL of this diluted solution. Independently verify concentration and continue ventilation until airway and breathing recovery are adequate."
+    },
+    {
+      "heading": "Monitor the patient after reversal",
+      "body": "Continue ventilatory support until breathing and airway protection are adequate, even after TOF recovery. Sugammadex can cause anaphylaxis or marked bradycardia, including cardiac arrest. Monitor closely and treat clinically significant bradycardia with an anticholinergic such as atropine. Underdosing or interacting drugs can permit recurrent weakness; toremifene can delay recovery."
+    },
+    {
+      "heading": "Respect the studied setting and bleeding context",
+      "body": "BRIDION is labeled for surgical reversal; the label states that reversal after ICU rocuronium or vecuronium use has not been studied. Do not assume that prolonged ICU blockade has the same evidence as surgical dosing. Transient increases in PT/INR and aPTT can occur. Carefully monitor coagulation in known coagulopathy, therapeutic anticoagulation, or other higher-risk situations described in the label. A trial using 4 mg/kg with heparin or low-molecular-weight heparin prophylaxis did not show increased bleeding, but this does not establish safety for every anticoagulant or dose."
+    },
+    {
+      "heading": "Include contraception in discharge counseling",
+      "body": "After sugammadex, patients using hormonal contraception need an additional nonhormonal method for seven days. This applies to oral and nonoral methods. Document counseling before discharge; the interaction is not limited to contraceptive pills."
+    },
+    {
+      "heading": "Plan any repeat blockade from the reversal dose",
+      "body": "After up to 4 mg/kg sugammadex, the label specifies at least five minutes before rocuronium 1.2 mg/kg, or four hours before rocuronium 0.6 mg/kg or vecuronium 0.1 mg/kg. Early rocuronium can act later and wear off sooner. Mild or moderate renal impairment extends the latter two regimens to 24 hours; an earlier plan requires the higher rocuronium regimen. After 16 mg/kg sugammadex, a 24-hour interval is suggested. If blockade is needed before the applicable interval, use a suitable nonsteroidal agent with its own contraindications and monitoring."
+    },
+    {
+      "heading": "Use neostigmine after spontaneous recovery",
+      "body": "ASA considers neostigmine an alternative at minimal blockade, defined by a quantitative TOF ratio of 0.4 to less than 0.9; sugammadex is preferred for deeper rocuronium or vecuronium block. At minimal block, ASA advises no more than 40 micrograms/kg (0.04 mg/kg). A ratio already at least 0.9 does not require pharmacologic antagonism; airway readiness still needs assessment."
+    },
+    {
+      "heading": "Screen before neostigmine reversal",
+      "body": "BLOXIVERZ is contraindicated with neostigmine hypersensitivity, peritonitis, or mechanical intestinal or urinary obstruction. Coronary disease, arrhythmias, recent acute coronary syndrome and myasthenia gravis require caution. Excessive dosing near recovery can itself cause neuromuscular dysfunction; more reversal drug does not necessarily produce stronger muscles. Maintain ventilation and objective monitoring while the team selects a suitable recovery plan."
+    },
+    {
+      "heading": "Separate the label ceiling from depth-based dosing",
+      "body": "BLOXIVERZ labeling gives 0.03 to 0.07 mg/kg IV according to recovery and blocker duration, with a maximum total of the lesser of 0.07 mg/kg or 5 mg. This label ceiling is not the recommended dose for every patient with minimal block. Inject over at least one minute. Give atropine or glycopyrrolate before or with neostigmine in a separate syringe; give the antimuscarinic first when bradycardia is present."
+    }
+  ],
+  "keyPoints": [
+    "Quantitative monitoring replaces guesswork.",
+    "Extubation requires a ratio of at least 0.9.",
+    "Sugammadex dose follows measured depth and agent.",
+    "Neostigmine requires spontaneous recovery and antimuscarinic protection."
+  ],
+  "check": {
+    "question": "After rocuronium, monitoring shows no train-of-four twitch and two post-tetanic counts. Which labeled sugammadex dose applies?",
+    "choices": [
+      "4 mg/kg actual body weight",
+      "2 mg total",
+      "0.07 mg/kg with no antimuscarinic",
+      "16 mg/kg after any blocker"
+    ],
+    "answer": 0,
+    "rationale": "One or two post-tetanic counts with no TOF response after rocuronium corresponds to the labeled 4 mg/kg actual-weight regimen. Two mg total is not the weight-based 2 mg/kg regimen used at T2 reappearance. The neostigmine label ceiling of 0.07 mg/kg is not an unprotected deep-block plan. Sixteen mg/kg is tied to immediate reversal after the specified rocuronium dose, not every blocker.",
+    "reviewHref": "#monitoring-and-reversal"
+  }
+});
+perioperativeCriticalCarePharmacologyModule.references.push(...[
+  {
+    "label": "DailyMed: Atracurium besylate, degradation and histamine precautions",
+    "href": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=efe90ee2-fe9e-421f-9e54-2961085d3b12"
+  },
+  {
+    "label": "FDA: Archived PAVULON pancuronium label (2010)",
+    "href": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2010/017015s023lbl.pdf"
+  },
+  {
+    "label": "DailyMed: Glycopyrrolate injection, anticholinergic precautions",
+    "href": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=cb1ae370-ec4f-4114-9860-8f736f72b545"
+  },
+  {
+    "label": "DailyMed: Verapamil, neuromuscular-blocker interaction",
+    "href": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=adc77fea-db39-aac5-e053-2995a90ad458"
+  },
+  {
+    "label": "Sidi et al.: Transplant neuromuscular recovery and cyclosporine association (1990)",
+    "href": "https://pubmed.ncbi.nlm.nih.gov/1973635/"
+  },
+  {
+    "label": "SCCM: Adult ARDS neuromuscular-blockade implementation toolkit (2026)",
+    "href": "https://www.sccm.org/SCCM/media/SCCM/PDFs/NMBA_Guidelines_Toolkit.pdf"
+  },
+  {
+    "label": "Beam et al.: Sodium channels near the neuromuscular junction (1985)",
+    "href": "https://pubmed.ncbi.nlm.nih.gov/2578630/"
+  },
+  {
+    "label": "Lewis: Cation effects on acetylcholine-activated endplate channels (1984)",
+    "href": "https://pubmed.ncbi.nlm.nih.gov/6098370/"
+  }
+].filter((reference) => !perioperativeCriticalCarePharmacologyModule.references.some((existing) => existing.href === reference.href)));
