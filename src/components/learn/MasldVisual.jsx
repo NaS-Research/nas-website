@@ -263,6 +263,88 @@ export default function MasldVisual({type}){
   ]
 };
   if (key === "semaglutide") return <figure className="chol-visual masld-visual" aria-label={semaglutideView.heading}><figcaption><span>{semaglutideView.eyebrow}</span><strong>{semaglutideView.heading}</strong></figcaption><div className="chol-visual__grid">{semaglutideView.nodes.map(([verb,focus,detail],index)=><div key={verb}><span>{String(index+1).padStart(2,"0")}</span><strong>{verb}</strong><em style={{fontSize:"0.875rem"}}>{focus}</em><p style={{fontSize:"0.875rem"}}>{detail}</p></div>)}</div></figure>;
+  const finalMasldViews = {
+  "selection-monitoring": {
+    "eyebrow": "Select and monitor",
+    "heading": "Eligibility, fit, safety, response",
+    "nodes": [
+      [
+        "Confirm",
+        "Adult noncirrhotic F2-F3 MASH",
+        "Resolve uncertain stage before prescribing."
+      ],
+      [
+        "Choose",
+        "Product and patient fit",
+        "Review goals, route, interactions, and access."
+      ],
+      [
+        "Monitor",
+        "Product-specific safety",
+        "Act on symptoms and concerning results."
+      ],
+      [
+        "Reassess",
+        "A pattern over time",
+        "ALT alone does not establish histologic cure."
+      ]
+    ]
+  },
+  "cirrhosis-boundary": {
+    "eyebrow": "Cirrhosis changes care",
+    "heading": "Recognize F4 and activate its pathway",
+    "nodes": [
+      [
+        "Recognize",
+        "Symptoms may be absent",
+        "Interpret clinical, imaging, and fibrosis evidence."
+      ],
+      [
+        "Surveil",
+        "Eligible patients: HCC care",
+        "Usually ultrasound plus AFP every six months."
+      ],
+      [
+        "Coordinate",
+        "Portal risk and complications",
+        "Plan specialist care and earlier contact."
+      ],
+      [
+        "Distinguish",
+        "Labels and development status",
+        "F2-F3 approval does not establish F4 use."
+      ]
+    ]
+  },
+  "integrated-case": {
+    "eyebrow": "Longitudinal case",
+    "heading": "Calculate, assess, reconcile, follow through",
+    "nodes": [
+      [
+        "Calculate",
+        "FIB-4 = 1.30",
+        "52 x 40 / (200 x square root of 64)."
+      ],
+      [
+        "Assess",
+        "Secondary testing or referral",
+        "The score does not assign a fibrosis stage."
+      ],
+      [
+        "Reconcile",
+        "Exact indication and regimen",
+        "Carry interactions, titration, and pending results."
+      ],
+      [
+        "Follow through",
+        "Dates and named responsibility",
+        "Define earlier contact for concerning changes."
+      ]
+    ]
+  }
+};
+  const finalMasldView = finalMasldViews[key];
+  if (finalMasldView) return <figure className="chol-visual masld-visual" aria-label={finalMasldView.heading}><figcaption><span>{finalMasldView.eyebrow}</span><strong>{finalMasldView.heading}</strong></figcaption><div className="chol-visual__grid">{finalMasldView.nodes.map(([verb,focus,detail],index)=><div key={verb}><span>{String(index+1).padStart(2,"0")}</span><strong>{verb}</strong><em style={{fontSize:"0.875rem"}}>{focus}</em><p style={{fontSize:"0.875rem"}}>{detail}</p></div>)}</div></figure>;
   const labels=views[key]||views["integrated-case"];
   return <figure className="chol-visual masld-visual" aria-label={`MASLD visual: ${key.replaceAll("-"," ")}`}>
     <div className="chol-visual__copy"><span>Metabolic liver disease</span><h3>{key.replaceAll("-"," ")}</h3><p>Connect metabolic load, liver injury, fibrosis risk, and treatment as one changing trajectory.</p></div>

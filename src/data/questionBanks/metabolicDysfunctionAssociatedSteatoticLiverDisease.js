@@ -1004,3 +1004,291 @@ const verifiedMasldSemaglutideQuestions = {
 for (const item of metabolicDysfunctionAssociatedSteatoticLiverDiseaseQuestionBank) {
   if (verifiedMasldSemaglutideQuestions[item.id]) Object.assign(item, verifiedMasldSemaglutideQuestions[item.id]);
 }
+
+
+// Distinct final cases replace ambiguous prompts while preserving stable assessment identities.
+const verifiedMasldFinalQuestions = {
+  "masld-093": {
+    "question": "Which population do the resmetirom and Wegovy injection MASH indications share?",
+    "choices": [
+      "Adults with noncirrhotic MASH and fibrosis consistent with F2-F3.",
+      "Every adult with imaging steatosis, regardless of fibrosis or MASH.",
+      "All children with obesity and an elevated ALT.",
+      "All patients with F4 cirrhosis, including decompensation."
+    ],
+    "rationale": "Both labels specify adult noncirrhotic F2-F3 MASH. Steatosis alone, pediatric obesity, and F4 disease do not establish that indication."
+  },
+  "masld-094": {
+    "question": "An eligible adult compares the routes and mechanisms of the two MASH products. Which statement is accurate?",
+    "choices": [
+      "Resmetirom is an oral THR-beta partial agonist; semaglutide is a weekly injectable GLP-1 receptor agonist for MASH.",
+      "Both are interchangeable oral THR-beta agonists.",
+      "Wegovy tablets are the established MASH regimen.",
+      "Resmetirom is a weekly injectable GLP-1 receptor agonist."
+    ],
+    "rationale": "The mechanisms and routes differ. The Wegovy MASH indication belongs to injection, not the tablet; resmetirom is oral and acts at THR-beta."
+  },
+  "masld-095": {
+    "question": "After confirming F3 MASH, an adult prefers oral treatment and has several interacting medicines. What should guide selection?",
+    "choices": [
+      "Review both product-specific safety and interaction needs alongside preference, metabolic goals, and access.",
+      "Choose an oral drug without reviewing the medication list.",
+      "Treat route preference as proof that there are no contraindications.",
+      "Select either product solely because ALT is elevated."
+    ],
+    "rationale": "Preference informs selection after eligibility, contraindication, interaction, and monitoring review. Neither route nor ALT can replace that review."
+  },
+  "masld-096": {
+    "question": "A clinician compares percentages from separate resmetirom and semaglutide trials to declare a definitive head-to-head winner. What is the best interpretation?",
+    "choices": [
+      "Different trials do not establish comparative superiority without an appropriate direct comparison.",
+      "Any higher percentage in a separate trial proves superiority in every patient.",
+      "The two drugs have identical routes and mechanisms, so comparison is unnecessary.",
+      "Histologic improvement proves permanent cure and makes clinical-outcome confirmation unnecessary."
+    ],
+    "rationale": "Separate trial populations, methods, and endpoints limit cross-trial conclusions. Their accelerated MASH approvals do not promise cure or establish a universal winner."
+  },
+  "masld-097": {
+    "question": "ALT improves during MASH treatment. Which conclusion is defensible?",
+    "choices": [
+      "The change can support response assessment alongside safety, metabolic measures, and fibrosis evidence.",
+      "Fibrosis is proven absent in this individual.",
+      "All future liver follow-up should end immediately.",
+      "HCC surveillance can be canceled in a patient with established cirrhosis."
+    ],
+    "rationale": "ALT is one response measure, not proof of individual histologic cure. It does not remove follow-up or established cirrhosis-care obligations."
+  },
+  "masld-098": {
+    "question": "An eligible patient starts a MASH medicine without a documented baseline or result reviewer. What is the best repair?",
+    "choices": [
+      "Record staging evidence, relevant metabolic and liver measures, medicines and symptoms, and responsibility for follow-up.",
+      "Record ALT alone and omit the selected product.",
+      "Assign a fibrosis stage from body weight alone.",
+      "Leave monitoring responsibility unstated until a complication occurs."
+    ],
+    "rationale": "Baseline and ownership make later changes interpretable and actionable. ALT or weight alone cannot establish stage or a complete safety plan."
+  },
+  "masld-099": {
+    "question": "During Wegovy escalation, a patient develops persistent vomiting and diarrhea. Which response is appropriate?",
+    "choices": [
+      "Assess symptoms and volume status and monitor renal function for dehydration-related injury.",
+      "Ignore the symptoms because GLP-1 therapy cannot affect kidney safety.",
+      "Automatically increase the dose to overcome vomiting.",
+      "Use the symptoms as proof of fibrosis regression."
+    ],
+    "rationale": "GI losses can cause dehydration and acute kidney injury. Clinical and renal assessment are needed; worsening symptoms should not trigger automatic escalation or a cure claim."
+  },
+  "masld-100": {
+    "question": "A resmetirom-treated patient develops findings concerning for hepatotoxicity despite improved LDL. What should the plan do?",
+    "choices": [
+      "Discontinue resmetirom when hepatotoxicity is suspected and evaluate the liver injury.",
+      "Continue without assessment because LDL improved.",
+      "Increase resmetirom to treat the suspected injury.",
+      "Conclude that any liver-test rise is harmless proof of response."
+    ],
+    "rationale": "The label directs discontinuation for suspected hepatotoxicity and clinical evaluation. A lipid response does not override a safety signal."
+  },
+  "masld-101": {
+    "question": "An adult feels well but has concordant imaging and noninvasive evidence of cirrhosis. What follows?",
+    "choices": [
+      "Arrange cirrhosis-based management and specialist assessment, even before biopsy if the evidence supports it.",
+      "Exclude cirrhosis solely because there are no symptoms.",
+      "Assign F2 disease from a normal ALT alone.",
+      "Continue an earlier-stage pathway without surveillance review."
+    ],
+    "rationale": "Compensated cirrhosis can be quiet. AASLD permits cirrhosis management based on clinical, imaging, and noninvasive evidence without mandatory biopsy."
+  },
+  "masld-102": {
+    "question": "A treatment-eligible patient with MASH cirrhosis enters routine HCC surveillance with adequate ultrasound visualization. Which plan matches AASLD?",
+    "choices": [
+      "Ultrasound and AFP approximately every six months.",
+      "ALT alone once yearly.",
+      "AFP alone without surveillance imaging.",
+      "No surveillance unless pain or jaundice appears."
+    ],
+    "rationale": "The routine AASLD approach is ultrasound plus AFP at about six-month intervals for eligible at-risk patients. Symptoms or ALT do not substitute for surveillance."
+  },
+  "masld-103": {
+    "question": "A patient has Child-Pugh C cirrhosis, is not eligible for transplantation, and cannot receive HCC-directed treatment. Which surveillance decision matches AASLD?",
+    "choices": [
+      "Routine HCC surveillance is generally not recommended when treatment benefit cannot be realized.",
+      "Surveillance is mandatory regardless of treatment eligibility.",
+      "AFP alone always restores eligibility for HCC treatment.",
+      "Child-Pugh C automatically qualifies the patient for either noncirrhotic F2-F3 MASH medicine."
+    ],
+    "rationale": "AASLD limits surveillance to patients who can benefit from treatment. Child-Pugh C generally warrants surveillance only with transplantation eligibility; it does not establish an F2-F3 drug indication."
+  },
+  "masld-104": {
+    "question": "An adult has established F3 MASLD without cirrhosis or another HCC-surveillance indication. What does AASLD recommend?",
+    "choices": [
+      "No routine HCC surveillance solely for noncirrhotic advanced MASLD fibrosis; reassess if understaging is suspected.",
+      "Automatically treat all F3 patients as confirmed F4 cirrhosis.",
+      "Begin AFP-only surveillance because imaging is never needed.",
+      "Exclude all future liver reassessment because F3 cannot progress."
+    ],
+    "rationale": "AASLD recommends against routine surveillance for advanced noncirrhotic MASLD. This does not exclude reassessment or individualized review when stage may be underestimated."
+  },
+  "masld-105": {
+    "question": "What was efruxifermin’s status in the sponsor sources reviewed in October 2026?",
+    "choices": [
+      "Investigational, listed in phase 3 development, without U.S. approval.",
+      "FDA approved for all fibrosis stages.",
+      "The same approved product and label as resmetirom.",
+      "An approved routine treatment for decompensated MASH cirrhosis."
+    ],
+    "rationale": "The sponsor identifies phase 3 development and investigational status. Development phase and trial results do not create a U.S. approval or a shared resmetirom label."
+  },
+  "masld-106": {
+    "question": "A report describes improved histology in an investigational MASH trial. What should a clinical summary preserve?",
+    "choices": [
+      "The studied population, endpoint, and regulatory status, without calling the finding an approved routine regimen.",
+      "A claim that every MASLD stage is now an approved indication.",
+      "A claim that phase 3 enrollment itself is FDA approval.",
+      "An assumption that histology proves all long-term clinical benefits."
+    ],
+    "rationale": "Trial evidence must stay within its population and endpoint. Histology and phase are distinct from approval, routine practice, and confirmed long-term benefit."
+  },
+  "masld-107": {
+    "question": "An adult with compensated MASH cirrhosis receives semaglutide for a separate approved indication. Which distinction is correct?",
+    "choices": [
+      "That use needs individualized review and careful monitoring; it does not establish a MASH cirrhosis indication.",
+      "Every semaglutide product automatically has an F4 MASH indication.",
+      "Compensated cirrhosis makes all GLP-1 use universally contraindicated.",
+      "Monitoring is unnecessary because the patient is asymptomatic."
+    ],
+    "rationale": "AASLD distinguishes another approved indication in compensated cirrhosis from treatment of MASH cirrhosis. Careful monitoring remains necessary; neither automatic F4 approval nor a blanket prohibition follows."
+  },
+  "masld-108": {
+    "question": "A prescriber cites no resmetirom dose adjustment in Child-Pugh A as evidence for MASH cirrhosis treatment. What is correct?",
+    "choices": [
+      "A hepatic dosing statement does not expand the noncirrhotic F2-F3 indication to F4 disease.",
+      "No dose adjustment proves an approved F4 MASH indication.",
+      "The same statement authorizes resmetirom in Child-Pugh B and C.",
+      "Child-Pugh class and fibrosis stage are interchangeable numerical scales."
+    ],
+    "rationale": "The label separates dosing in hepatic impairment from indication and states that safety and effectiveness in MASH cirrhosis are not established. Child-Pugh B/C use should be avoided; Child-Pugh class is not a fibrosis stage."
+  },
+  "masld-109": {
+    "question": "A stable 52-year-old has AST 40 U/L, ALT 64 U/L, and platelets 200 x 10^9/L. What is FIB-4?",
+    "choices": [
+      "1.30.",
+      "0.13.",
+      "13.0.",
+      "10.4."
+    ],
+    "rationale": "FIB-4 = 52 x 40 / (200 x square root of 64) = 2080 / 1600 = 1.30. Keep the square root and platelet units in the calculation."
+  },
+  "masld-110": {
+    "question": "The stable 52-year-old’s FIB-4 is exactly 1.30. What is the next step in the AASLD adult pathway?",
+    "choices": [
+      "Secondary fibrosis assessment or referral, without assigning a histologic stage from FIB-4 alone.",
+      "Round below 1.3 and declare fibrosis excluded permanently.",
+      "Start an F2-F3 MASH drug solely from the score.",
+      "Diagnose F4 solely from the score."
+    ],
+    "rationale": "The secondary-assessment boundary is greater than or equal to 1.3. FIB-4 is a risk tool, not a stand-alone MASH diagnosis or histologic stage."
+  },
+  "masld-111": {
+    "question": "Weight falls from 102 kg to 95.88 kg during care. Which interpretation is correct?",
+    "choices": [
+      "The loss is 6.12 kg, or 6%; this does not by itself prove fibrosis resolution.",
+      "The loss is 0.6% and establishes F4 disease.",
+      "The loss is 60% and proves histologic cure.",
+      "The change makes metabolic and liver follow-up unnecessary."
+    ],
+    "rationale": "(102 - 95.88) / 102 x 100 = 6%. Weight improvement is meaningful but differs from individual histologic fibrosis or MASH resolution."
+  },
+  "masld-112": {
+    "question": "An eligible 102 kg adult taking clopidogrel is starting resmetirom while receiving rosuvastatin 40 mg daily. Which reconciliation fits the label?",
+    "choices": [
+      "Use resmetirom 80 mg once daily and limit rosuvastatin to 20 mg daily, with appropriate monitoring.",
+      "Use unmodified resmetirom 100 mg daily and retain rosuvastatin 40 mg without review.",
+      "Use resmetirom 60 mg once weekly and stop all lipid treatment permanently.",
+      "Double resmetirom because clopidogrel lowers its exposure."
+    ],
+    "rationale": "At 100 kg or more, a moderate CYP2C8 inhibitor such as clopidogrel changes resmetirom to 80 mg daily. Rosuvastatin is limited to 20 mg daily with resmetirom; medication changes require review and monitoring."
+  },
+  "masld-113": {
+    "question": "A transfer note says only “continue MASH medicine.” What information most directly repairs the medication handoff?",
+    "choices": [
+      "Indication and stage, exact product and regimen, interaction modifications, last dose or titration step, and safety follow-up.",
+      "Only the word “MASH,” without naming the medicine.",
+      "Only the latest ALT, with no product or dose.",
+      "A statement that all MASH medicines have interchangeable schedules."
+    ],
+    "rationale": "The receiving team needs an actionable exact regimen and its rationale. Diagnosis or ALT alone does not identify formulation, dosing, interactions, or monitoring."
+  },
+  "masld-114": {
+    "question": "A fibrosis assessment has been ordered but not performed before transfer. How should the plan represent it?",
+    "choices": [
+      "As pending, with a named reviewer, completion plan, and communication responsibility.",
+      "As a reassuring completed result because the order exists.",
+      "As proof of noncirrhotic F2-F3 eligibility.",
+      "As a negative result because the patient feels well."
+    ],
+    "rationale": "An order is not a completed assessment. Preserve the unresolved stage question and responsibility for completing, reviewing, and communicating it."
+  },
+  "masld-115": {
+    "question": "An eligible patient cannot yet obtain a selected MASH medicine. Which plan is appropriate?",
+    "choices": [
+      "Address the access barrier while continuing supported nutrition, activity, cardiometabolic care, and planned liver follow-up.",
+      "End all metabolic care until the drug arrives.",
+      "Substitute an investigational drug as an automatically approved alternative.",
+      "Prescribe the selected medicine for F4 solely to satisfy coverage paperwork."
+    ],
+    "rationale": "Access needs an explicit follow-up plan. Foundational care and appropriate reassessment continue; barriers do not justify an invented indication or unapproved routine substitute."
+  },
+  "masld-116": {
+    "question": "A clopidogrel prescription changes in a patient receiving interaction-adjusted resmetirom. What should occur at reconciliation?",
+    "choices": [
+      "Reevaluate the interaction, current weight, exact resmetirom dose, and monitoring plan.",
+      "Keep the old interaction-adjusted regimen indefinitely without review.",
+      "Assume all interacting drugs have identical dose rules.",
+      "Convert once-daily resmetirom into a weekly injection."
+    ],
+    "rationale": "The resmetirom regimen depends on weight and specified interacting drugs. Medication changes require a new review; prior dose adjustments and product schedules should not be copied blindly."
+  },
+  "masld-117": {
+    "question": "A patient previously followed for F3 MASH develops new ascites. What is the best response?",
+    "choices": [
+      "Promptly assess for decompensation and reassess the liver stage and cirrhosis-care pathway.",
+      "Automatically increase the F2-F3 MASH drug dose without assessment.",
+      "Declare cure because abdominal size changed.",
+      "Wait for the next routine annual visit regardless of symptoms."
+    ],
+    "rationale": "New ascites can indicate decompensation and requires prompt evaluation. It changes the clinical context; it is not a reason for automatic dose escalation or deferred review."
+  },
+  "masld-118": {
+    "question": "Fibrosis evidence worsens despite a favorable ALT trend. How should follow-up proceed?",
+    "choices": [
+      "Review the full pattern, competing causes, adherence and safety, and obtain specialist reassessment when indicated.",
+      "Ignore fibrosis evidence because ALT alone proves cure.",
+      "Assign every patient the same automatic drug-stop cutoff without context.",
+      "Cancel all liver reassessment because one marker improved."
+    ],
+    "rationale": "Different measures can diverge. ALT does not override concerning fibrosis evidence; reassessment should examine the pattern and cause rather than apply an invented universal rule."
+  },
+  "masld-119": {
+    "question": "Secondary tests and imaging disagree about whether a patient has F3 or cirrhosis. Which plan is best?",
+    "choices": [
+      "Resolve discordance with specialist assessment and appropriate additional testing before forcing an F2-F3 drug decision.",
+      "Choose the lower stage solely because it permits prescribing.",
+      "Use symptom absence to discard every cirrhosis finding.",
+      "Treat the two stages as identical for all drug indications and surveillance."
+    ],
+    "rationale": "Discordance affects both eligibility and cirrhosis care. AASLD supports specialist evaluation and appropriate additional testing, including biopsy when needed, rather than cherry-picking a stage."
+  },
+  "masld-120": {
+    "question": "Which follow-up entry closes the loop when possible liver progression is being evaluated?",
+    "choices": [
+      "A dated reassessment, named result reviewer, communication plan, and symptoms that require earlier contact.",
+      "“Follow up sometime,” with no clinician or date.",
+      "A prescription refill without reviewing the pending assessment.",
+      "A diagnosis copied forward while all pending results remain unassigned."
+    ],
+    "rationale": "A useful plan makes timing, responsibility, and escalation explicit. Open-ended follow-up or an unreviewed refill can lose a concerning result between visits."
+  }
+};
+for (const item of metabolicDysfunctionAssociatedSteatoticLiverDiseaseQuestionBank) {
+  if (verifiedMasldFinalQuestions[item.id]) Object.assign(item, verifiedMasldFinalQuestions[item.id]);
+}

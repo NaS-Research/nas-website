@@ -699,3 +699,223 @@ Object.assign(semaglutideReference, {
   "label": "FDA Wegovy prescribing information (June 2026)",
   "href": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/215256s025lbl.pdf"
 });
+
+
+// Whole selection, cirrhosis-boundary, and integrated teaching preserves lesson identities.
+const verifiedMasldFinalLessons = {
+  "selection-monitoring": {
+    "metadata": {
+      "summary": "Confirm the noncirrhotic F2-F3 MASH population, choose a product that fits the patient, and judge response alongside safety and metabolic care.",
+      "concepts": [
+        "Eligibility",
+        "Product selection",
+        "Baseline",
+        "Safety monitoring",
+        "Response"
+      ],
+      "application": "Document the evidence for eligibility, the reasons for the selected product, the exact regimen, and a dated plan for symptoms, laboratory results, and fibrosis reassessment.",
+      "keyPoints": [
+        "Both MASH indications require adults with noncirrhotic F2-F3 disease.",
+        "Route, metabolic goals, contraindications, interactions, preference, and access inform selection.",
+        "Monitoring differs by product and clinical circumstances.",
+        "ALT and noninvasive trends inform care but do not prove individual histologic cure."
+      ]
+    },
+    "bodies": [
+      {
+        "heading": "Confirm before prescribing",
+        "body": "Resmetirom and Wegovy injection have MASH indications for adults with noncirrhotic disease and fibrosis consistent with F2-F3, alongside diet and activity. Ultrasound steatosis, obesity, one elevated ALT, or FIB-4 alone does not establish that entire population. Use the specialist assessment and appropriate fibrosis evidence. Resolve indeterminate or discordant findings and competing causes; do not prescribe by selecting whichever test gives the preferred stage."
+      },
+      {
+        "heading": "Use staging evidence in context",
+        "body": "AASLD supports sequential noninvasive assessment and referral rather than mandatory biopsy for every patient. Biopsy can help when noninvasive assessment is indeterminate, findings conflict, or an alternative diagnosis remains possible. Clinical, imaging, and noninvasive evidence can also justify cirrhosis care without waiting for biopsy. The treatment label defines the population; a guidance pathway helps evaluate whether an individual fits it."
+      },
+      {
+        "heading": "Match the product to the patient",
+        "body": "Resmetirom is an oral THR-beta partial agonist; semaglutide is a weekly injectable GLP-1 receptor agonist for this MASH indication. Weight, glycemic, and cardiovascular needs may make semaglutide relevant, but each additional indication has its own criteria. Consider route preference, ability to follow the regimen, adverse effects, contraindications, interacting medicines, and access. A preference for an oral medicine is useful after eligibility and safety review, not a substitute for them."
+      },
+      {
+        "heading": "Avoid unsupported comparisons",
+        "body": "Both MASH indications use accelerated approval based on histologic improvement, with clinical benefit subject to confirmation. Separate trials with different populations, designs, and endpoints do not establish a head-to-head winner. Do not promise cure or routinely combine treatments simply because their mechanisms differ. The November 2025 AASLD update described the resmetirom plus semaglutide 2.4 mg combination as unstudied; any later decision requires current evidence and individualized specialist review."
+      },
+      {
+        "heading": "Make a useful baseline",
+        "body": "Record fibrosis evidence and its date, weight and relevant metabolic measures, liver biochemistry, symptoms, and the complete medication list. Note diabetes treatment, eye disease, thyroid history, pregnancy plans, and renal or gastrointestinal concerns when relevant to the chosen product. Distinguish diagnostic and longitudinal liver assessment from a product-specific safety requirement. Record who will review each result and what finding calls for earlier contact."
+      },
+      {
+        "heading": "Monitor resmetirom-specific risk",
+        "body": "Monitor for liver-test elevations and symptoms of liver injury during resmetirom treatment; discontinue if hepatotoxicity is suspected. Acute gallbladder events call for interruption until resolution. Reconcile CYP2C8 inhibitors and interacting statins, apply the appropriate dose modification or statin limit, and monitor for statin adverse effects, including muscle injury and liver-test elevations. Do not let a favorable LDL response conceal a medication interaction or liver injury."
+      },
+      {
+        "heading": "Monitor semaglutide-specific risk",
+        "body": "Assess tolerability during escalation. Persistent vomiting or diarrhea may cause dehydration and acute kidney injury, requiring clinical and renal assessment. Review glucose and insulin or secretagogue doses in diabetes, retinopathy history, gallbladder or pancreatic symptoms, and resting heart rate. AASLD describes hepatic panels as clinically indicated for semaglutide; the label does not prescribe a universal weekly liver-panel schedule. Severe symptoms need action rather than automatic escalation."
+      },
+      {
+        "heading": "Interpret response as a pattern",
+        "body": "Compare adherence, tolerated dose, weight and metabolic change, liver biochemistry, and appropriate fibrosis assessments with baseline. Improved ALT can support a response assessment but does not prove that one patient has resolved MASH or fibrosis. Noninvasive trends are also not individual histology. Worsening results warrant review of adherence, treatment toxicity, competing causes, and progression, with specialist reassessment as needed. Do not invent a universal stopping threshold or declare cure from one favorable measurement."
+      }
+    ],
+    "check": {
+      "question": "Before choosing resmetirom or Wegovy injection for MASH, what must the plan establish?",
+      "choices": [
+        "Adult noncirrhotic MASH with F2-F3 fibrosis and a product-specific safety review.",
+        "Obesity alone, without establishing MASH or qualifying fibrosis.",
+        "Ultrasound steatosis alone, without fibrosis assessment.",
+        "A single elevated ALT, regardless of the cause or stage."
+      ],
+      "rationale": "The labeled MASH population is adult, noncirrhotic F2-F3 disease. Obesity, steatosis, or ALT alone cannot establish it. Eligibility must be paired with the selected product’s dosing, contraindication, interaction, and monitoring review."
+    }
+  },
+  "cirrhosis-boundary": {
+    "metadata": {
+      "summary": "Recognize F4 disease even without symptoms, activate cirrhosis care, and distinguish earlier-stage labels from other indications and investigational therapies.",
+      "concepts": [
+        "F4 disease",
+        "HCC surveillance",
+        "Portal hypertension",
+        "Decompensation",
+        "Regulatory status"
+      ],
+      "application": "When cirrhosis is suspected, obtain specialist assessment, establish surveillance eligibility and modality, review portal-hypertension and medication risks, and give clear instructions for new complications.",
+      "keyPoints": [
+        "Compensated cirrhosis can be clinically quiet.",
+        "HCC surveillance usually uses ultrasound plus AFP every six months in eligible cirrhosis patients.",
+        "Noncirrhotic F3 is not an automatic routine HCC-surveillance indication under AASLD.",
+        "F2-F3 MASH labels do not establish F4 treatment.",
+        "Trial results and development phase do not establish regulatory approval."
+      ]
+    },
+    "bodies": [
+      {
+        "heading": "Recognize compensated and decompensated disease",
+        "body": "An absence of symptoms or a modest ALT does not exclude cirrhosis. Consider the overall fibrosis evidence, liver morphology, portal-hypertension findings, platelets, synthetic function, and history of complications. Ascites, variceal bleeding, and hepatic encephalopathy mark major clinical complications. Suspected cirrhosis changes the care pathway even before a biopsy result is available; arrange specialist assessment rather than continuing an earlier-stage pathway unchanged."
+      },
+      {
+        "heading": "Set the HCC surveillance boundary",
+        "body": "AASLD recommends HCC surveillance for at-risk cirrhosis patients who would be candidates for HCC treatment, generally with ultrasound and AFP approximately every six months. Child-Pugh C patients generally enter surveillance only when eligible for liver transplantation; life-limiting illness can also remove expected benefit. Routine surveillance is not recommended for MASLD with advanced fibrosis but no cirrhosis. Suspected understaging calls for individualized specialist assessment rather than a blanket F3 rule."
+      },
+      {
+        "heading": "Check the surveillance method and follow-through",
+        "body": "Document the imaging date, visualization quality, AFP result, and next action. When ultrasound visualization is suboptimal, selected patients may need an alternative such as contrast-enhanced MRI. AFP alone does not replace the surveillance imaging plan. An abnormal lesion or concerning AFP trend requires the appropriate diagnostic evaluation; do not simply schedule another routine six-month visit. Assign a clinician to review results and communicate the next step."
+      },
+      {
+        "heading": "Activate the broader cirrhosis plan",
+        "body": "Cirrhosis care includes portal-hypertension and variceal assessment, nutrition and preventive-care review, medication safety, and education about decompensation. Coordinate these with hepatology; a MASH prescription does not cover them. New confusion, gastrointestinal bleeding, jaundice, or abdominal swelling needs prompt assessment, with bleeding or severe altered mental status requiring urgent care. Decompensation also raises the need to consider transplant evaluation in the appropriate patient."
+      },
+      {
+        "heading": "Keep indication separate from hepatic dosing",
+        "body": "Resmetirom and Wegovy injection MASH labels specify noncirrhotic F2-F3 disease. Resmetirom’s lack of a Child-Pugh A dose adjustment does not establish an F4 indication; its safety and effectiveness in MASH cirrhosis are not established, and use should be avoided in Child-Pugh B or C hepatic impairment. Semaglutide for another approved indication in compensated cirrhosis requires careful monitoring and an individualized decision; it is not automatically MASH cirrhosis treatment."
+      },
+      {
+        "heading": "Separate the pipeline from approved treatment",
+        "body": "As reviewed in October 2026, the sponsor lists efruxifermin in phase 3 development and identifies it as investigational and not approved in the United States. This status differs from the approved, accelerated F2-F3 indications of resmetirom and Wegovy injection. A promising histology result, a cirrhosis trial, or a late development phase does not itself create an approved indication. Describe the trial population and endpoint precisely, and recheck regulatory status when using this information later."
+      }
+    ],
+    "check": {
+      "question": "A clinically well adult has concordant findings of MASH cirrhosis. Which plan is appropriate?",
+      "choices": [
+        "Arrange cirrhosis care, including surveillance eligibility and portal-hypertension assessment.",
+        "Use the noncirrhotic F2-F3 drug labels as proof of an F4 indication.",
+        "Exclude cirrhosis because the patient feels well.",
+        "Replace HCC surveillance imaging with ALT alone."
+      ],
+      "rationale": "Compensated cirrhosis may be asymptomatic. F4 requires its own care pathway; symptom absence, ALT, and earlier-stage MASH approvals do not remove surveillance or portal-hypertension needs."
+    }
+  },
+  "integrated-case": {
+    "metadata": {
+      "summary": "Work through a staged case, interpret calculations without overstating them, and carry an exact treatment and follow-up plan across visits.",
+      "concepts": [
+        "FIB-4 calculation",
+        "Sequential assessment",
+        "Weight response",
+        "Reconciliation",
+        "Ownership"
+      ],
+      "application": "For each next action, state the evidence, date, responsible clinician, expected result review, and symptoms or findings that require earlier assessment.",
+      "keyPoints": [
+        "FIB-4 is a risk-assessment step, not a stand-alone MASH or F2-F3 diagnosis.",
+        "The 1.30 boundary in this adult case calls for secondary assessment.",
+        "A 6% weight reduction does not establish fibrosis resolution.",
+        "Carry indications, interaction-adjusted regimens, pending results, and access needs across transitions.",
+        "New complications or worsening evidence require reassessment."
+      ]
+    },
+    "bodies": [
+      {
+        "heading": "Start with an explicit case",
+        "body": "Consider a stable 52-year-old adult with type 2 diabetes, obesity, imaging-detected steatosis, AST 40 U/L, ALT 64 U/L, and platelets 200 x 10^9/L. Document alcohol exposure, competing liver causes, medicines, and cardiovascular risk before assigning a final liver phenotype. These observations justify further assessment but do not, on their own, prove MASH, F2-F3 fibrosis, or eligibility for a MASH medicine."
+      },
+      {
+        "heading": "Calculate before interpreting",
+        "body": "FIB-4 = age x AST / [platelets x square root of ALT]. Here, square root of 64 = 8; the numerator is 52 x 40 = 2080 and the denominator is 200 x 8 = 1600. FIB-4 = 1.30. For this stable adult, AASLD’s pathway calls for secondary assessment or referral at FIB-4 greater than or equal to 1.3. Do not round 1.30 below the boundary or use this result to assign a histologic fibrosis stage."
+      },
+      {
+        "heading": "Resolve stage, then layer treatment",
+        "body": "Arrange appropriate secondary assessment and resolve indeterminate or discordant findings with specialist input. Suppose subsequent assessment establishes noncirrhotic F3 MASH. Continue nutrition, activity, weight support, and cardiometabolic treatment, then consider a disease-directed product after its safety and medication review. If the evidence instead indicates cirrhosis or a competing diagnosis, change the pathway; do not force the patient into the original treatment plan."
+      },
+      {
+        "heading": "Measure weight response without claiming cure",
+        "body": "Suppose weight falls from 102 kg to 95.88 kg. The loss is 6.12 kg, and 6.12 / 102 x 100 = 6%. AASLD notes that modest weight loss can improve steatosis, while greater losses are generally needed for steatohepatitis and fibrosis improvement. This 6% change is meaningful progress, but it does not prove histologic MASH resolution or fibrosis regression. Continue appropriate metabolic and liver assessment rather than ending follow-up."
+      },
+      {
+        "heading": "Reconcile the exact regimen at transitions",
+        "body": "Carry forward the fibrosis evidence, indication, product, dose, frequency, last dose or titration step, interacting medicines, and symptom instructions. At a visit when an eligible patient currently weighs 102 kg and takes clopidogrel, the resmetirom label uses 80 mg once daily rather than the unmodified 100 mg dose; rosuvastatin is limited to 20 mg daily with resmetirom. If current weight later falls below 100 kg while clopidogrel continues, the interaction-adjusted resmetirom dose is 60 mg daily. Changes in current weight or interacting medicines require a fresh regimen review. For Wegovy, preserve the injection formulation and escalation or restart plan rather than copying a dose without context."
+      },
+      {
+        "heading": "Assign dates and owners",
+        "body": "Record who orders and reviews each liver test, metabolic measure, fibrosis assessment, and referral, with the date and a plan to communicate results. An appointment date chosen for this patient is a care-plan decision, not a universal FDA monitoring interval. Track access barriers and missed visits so a pending assessment is not mistaken for a reassuring completed result. Continue supported nutrition and cardiometabolic care while resolving product access."
+      },
+      {
+        "heading": "Define earlier contact and escalation",
+        "body": "Give instructions for symptoms requiring earlier assessment instead of waiting for the next routine visit. New ascites, bleeding, or confusion changes the liver pathway; severe or persistent abdominal pain and vomiting require evaluation for treatment-related or other illness. Worsening fibrosis evidence, discordant tests, intolerance, or suspected liver injury calls for review of diagnosis, safety, and treatment. Carry the pending result and named reviewer across transfers so deterioration is not lost between clinicians."
+      }
+    ],
+    "check": {
+      "question": "In this case, age is 52, AST 40 U/L, ALT 64 U/L, and platelets 200 x 10^9/L. What follows from FIB-4?",
+      "choices": [
+        "The result is 1.30; obtain secondary assessment or referral without assigning a fibrosis stage from it alone.",
+        "The result is 0.13; no additional assessment can ever be needed.",
+        "The result is 13.0; F4 is established by the calculation alone.",
+        "The result is 1.30; this independently proves eligibility for either F2-F3 MASH medicine."
+      ],
+      "rationale": "52 x 40 / (200 x square root of 64) = 2080 / 1600 = 1.30. The greater-than-or-equal-to-1.3 pathway applies to this stable 52-year-old. FIB-4 informs risk and next testing, not a stand-alone MASH diagnosis or histologic stage."
+    }
+  }
+};
+for (const lesson of metabolicDysfunctionAssociatedSteatoticLiverDiseaseModule.submodules) {
+  const verified = verifiedMasldFinalLessons[lesson.slug];
+  if (verified) { Object.assign(lesson, verified.metadata); lesson.lesson = verified.bodies; Object.assign(lesson.check, verified.check); }
+}
+Object.assign(metabolicDysfunctionAssociatedSteatoticLiverDiseaseModule, {
+  "source": "AASLD MASLD guidance and updates, current FDA product labels, and cited primary sources for contemporary assessment, treatment, and cirrhosis care",
+  "topics": [
+    "MASLD",
+    "MASH",
+    "Fibrosis",
+    "FIB-4",
+    "Elastography",
+    "Resmetirom",
+    "Semaglutide",
+    "Cardiometabolic risk",
+    "Cirrhosis care"
+  ]
+});
+metabolicDysfunctionAssociatedSteatoticLiverDiseaseModule.references.push(...[
+  {
+    "label": "AASLD semaglutide practice update (November 2025): selection and monitoring",
+    "href": "https://doi.org/10.1097/HEP.0000000000001608"
+  },
+  {
+    "label": "AASLD HCC practice guidance (2023): surveillance eligibility and method",
+    "href": "https://doi.org/10.1097/HEP.0000000000000466"
+  },
+  {
+    "label": "Novo Nordisk phase 3 pipeline: efruxifermin development status",
+    "href": "https://www.novonordisk.com/science-and-technology/r-d-pipeline.html"
+  },
+  {
+    "label": "Novo Nordisk ADA 2026 announcement: investigational status and U.S. approval distinction",
+    "href": "https://www.novonordisk-us.com/media/press-releases/novo-nordisk-cardiometabolic-pipeline-ada-2026.html"
+  }
+]);
