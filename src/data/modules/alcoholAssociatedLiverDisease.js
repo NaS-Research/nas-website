@@ -1111,3 +1111,25 @@ for (const lesson of alcoholAssociatedLiverDiseaseModule.submodules) {
     Object.assign(lesson.check, verifiedAldIntegratedLesson.check);
   }
 }
+
+
+// Whole-module overview reconciled with the verified lesson/source chain.
+Object.assign(alcoholAssociatedLiverDiseaseModule, {
+  "source": "RxPrep 2023 ALD, withdrawal, AUD medication, and nutrition material, supplemented by the cited liver-disease, addiction, nutrition, transplant, and medication-label sources; individual dates and evidence limits are identified in the lessons and references.",
+  "description": "Connect alcohol-related liver injury with safe withdrawal care, individualized AUD treatment, hepatitis assessment, nutrition, cirrhosis care, transplant evaluation, and ongoing recovery.",
+  "outcomes": [
+    "Explain ethanol metabolism, the ALD spectrum, and coexisting causes of injury.",
+    "Distinguish AUD screening from assessment of liver fibrosis.",
+    "Coordinate individualized medication, behavioral care, and recovery support.",
+    "Assess withdrawal risk, treatment setting, response, and liver-sensitive safeguards.",
+    "Match thiamine to its purpose and plan nutrition with refeeding assessment.",
+    "Select AUD medication within liver, kidney, opioid, and cognitive constraints.",
+    "Evaluate alcohol-associated hepatitis and competing causes of jaundice.",
+    "Separate corticosteroid eligibility from Lille-based response assessment.",
+    "Interpret NAC adjunct evidence and coordinate nutrition and organ support.",
+    "Manage cirrhosis complications and indicated surveillance alongside AUD care.",
+    "Explain individualized transplant evaluation and continuing AUD care.",
+    "Build a transition plan with accessible follow-up and monitoring ownership."
+  ],
+  "disclaimer": "Educational material on alcohol-associated liver disease and alcohol use disorder. The brief RxPrep 2023 foundation is supplemented by the cited clinical guidance, official teaching resources, and US prescribing information. Apply recommendations within current protocols and an individual clinical assessment, with specialist input when needed. Document dates, evidence limits, drug-label requirements, and the scope of ethical guidance matter to these decisions. This is not patient-specific medical advice."
+});
