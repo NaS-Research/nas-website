@@ -373,3 +373,211 @@ const verifiedMasldLifestyleCardiometabolicQuestions = {
 for (const item of noninsulinDiabetesPharmacotherapyQuestionBank) {
   if (verifiedMasldLifestyleCardiometabolicQuestions[item.id]) Object.assign(item, verifiedMasldLifestyleCardiometabolicQuestions[item.id]);
 }
+
+
+// Focused selection cases preserve existing IDs, keys and review anchors.
+const verifiedSelectionQuestions = {
+  "noninsulin-diabetes-01-principle": {
+    "question": "Which statement best describes treatment selection for a stable adult with type 2 diabetes?",
+    "choices": [
+      "Compare glucose and outcome goals with safety, burden, access and the person’s preferences.",
+      "Use A1C alone to rank every treatment benefit.",
+      "Treat route preference as sufficient evidence of cardiovascular protection.",
+      "Use the same regimen for everyone who has the same A1C."
+    ],
+    "rationale": "A1C does not describe every outcome goal. Route and A1C cannot replace comorbidity, efficacy, safety, feasibility and shared decisions."
+  },
+  "noninsulin-diabetes-01-application": {
+    "question": "Before choosing an add-on for a stable adult with type 2 diabetes, which assessment best supports a useful comparison?",
+    "choices": [
+      "Identify the treatment goal, comorbidities, organ function, safety risks, access and preferences.",
+      "Choose the largest advertised A1C reduction before reviewing comorbidities.",
+      "Choose solely from the lowest tablet price before reviewing safety.",
+      "Choose solely from the most convenient schedule before reviewing efficacy."
+    ],
+    "rationale": "Efficacy, cost and schedule matter within a full assessment. Each isolated approach can miss an independent outcome goal or a safety restriction."
+  },
+  "noninsulin-diabetes-01-safety": {
+    "question": "An adult with type 2 diabetes and HF is at A1C goal. Which decision risks leaving the HF treatment objective unaddressed?",
+    "choices": [
+      "Rejecting an otherwise suitable therapy with demonstrated HF benefit solely because A1C is at goal.",
+      "Checking kidney function before selecting therapy.",
+      "Reviewing volume status and concurrent medicines before selecting therapy.",
+      "Discussing coverage and adverse effects before selecting therapy."
+    ],
+    "rationale": "The A1C-only exclusion ignores HF as a separate objective. Kidney, volume, medication, access and safety review help establish suitability rather than create that error."
+  },
+  "noninsulin-diabetes-01-case": {
+    "question": "A stable adult with type 2 diabetes has A1C at goal, established ASCVD and albuminuric CKD. What is the best next treatment discussion?",
+    "choices": [
+      "Review suitable agents with demonstrated cardiovascular and kidney benefit despite the A1C result.",
+      "Exclude outcome-directed agents until A1C rises above goal.",
+      "Replace all medicines with lifestyle advice because A1C is at goal.",
+      "Assume every glucose-lowering class provides equivalent kidney protection."
+    ],
+    "rationale": "Near-target glycemia does not resolve ASCVD or CKD risk. Select evidence-supported treatments for the population and reassess safety; neither treatment withdrawal nor class-wide equivalence follows from this A1C."
+  },
+  "noninsulin-diabetes-02-principle": {
+    "question": "Which finding should prompt consideration of insulin in an adult with type 2 diabetes?",
+    "choices": [
+      "Symptomatic hyperglycemia, A1C above 10%, or glucose at least 300 mg/dL.",
+      "A1C 7.1% alone in an asymptomatic person with a 7.0% goal.",
+      "Preference for an oral medicine alone in a stable person.",
+      "Every single above-target postmeal result, regardless of the overall pattern."
+    ],
+    "rationale": "ADA identifies symptoms and marked hyperglycemia as reasons to consider insulin. A small isolated gap, route preference or one postmeal value does not alone establish that need; crisis requires urgent assessment."
+  },
+  "noninsulin-diabetes-02-application": {
+    "question": "An adult with type 2 diabetes has marked hyperglycemia and unexpected weight loss. Before routine outpatient noninsulin escalation, which assessment has priority?",
+    "choices": [
+      "Assess symptoms, hydration, ketones and acid-base status for metabolic decompensation.",
+      "Compare tablet sizes before reviewing metabolic stability.",
+      "Wait for the next routine A1C before asking about ketosis symptoms.",
+      "Assume noninsulin therapy excludes severe insulin deficiency."
+    ],
+    "rationale": "Catabolism and marked hyperglycemia can signal insulin deficiency or crisis. Tablet convenience does not establish stability, waiting can delay care, and prior noninsulin treatment cannot exclude decompensation."
+  },
+  "noninsulin-diabetes-02-safety": {
+    "question": "An adult with suspected DKA is waiting for treatment. Which plan creates the clearest immediate risk?",
+    "choices": [
+      "Postpone urgent assessment while trying another routine outpatient noninsulin add-on.",
+      "Arrange urgent ketone and acid-base assessment.",
+      "Assess hydration and electrolytes during urgent evaluation.",
+      "Escalate to a setting able to provide crisis stabilization."
+    ],
+    "rationale": "Suspected DKA needs urgent assessment and stabilization. Ketone, acid-base, fluid and electrolyte evaluation and escalation support that care; a routine add-on cannot substitute for it."
+  },
+  "noninsulin-diabetes-02-case": {
+    "question": "An adult taking two oral diabetes agents has polyuria, weight loss, glucose 356 mg/dL and ketones. Which response is best?",
+    "choices": [
+      "Arrange urgent evaluation for hyperglycemic crisis and insulin-based stabilization as indicated.",
+      "Increase a modest-efficacy oral agent and wait three months.",
+      "Exclude crisis because the person already takes two medicines.",
+      "Diagnose HHS solely from the glucose value without further assessment."
+    ],
+    "rationale": "Symptoms, catabolism and ketones require urgent evaluation. Prior medicines do not establish stability, serial outpatient escalation can delay care, and this glucose value alone does not diagnose HHS."
+  },
+  "noninsulin-diabetes-27-principle": {
+    "question": "Which statement correctly describes self-management support after a diabetes medicine is started?",
+    "choices": [
+      "Nutrition, activity, education and appropriate monitoring remain active parts of treatment.",
+      "Medication eliminates the need to understand adverse effects.",
+      "Every person can use the same meal and work-schedule plan.",
+      "A prescription proves that the person can obtain and correctly use the medicine."
+    ],
+    "rationale": "The book treats lifestyle measures as essential with or without medicines. Education, feasibility and individualized support remain necessary; prescribing alone does not establish access or understanding."
+  },
+  "noninsulin-diabetes-27-application": {
+    "question": "A person works rotating shifts and cannot reliably obtain regular meals. Which approach best supports a new diabetes regimen?",
+    "choices": [
+      "Adapt the medication, nutrition, monitoring and follow-up plan to the person’s resources and schedule.",
+      "Use an identical fixed plan without asking about meals or shifts.",
+      "Assume prescription coverage guarantees access to food.",
+      "Provide the prescription without discussing how to use it during changing intake."
+    ],
+    "rationale": "Implementation depends on meals, schedule and resources. Insurance does not guarantee food access, and a rigid or unexplained plan can be unsuitable; shared planning makes the regimen usable."
+  },
+  "noninsulin-diabetes-27-safety": {
+    "question": "Which omission most directly leaves a person unprepared to use a newly prescribed diabetes regimen safely?",
+    "choices": [
+      "Providing no education about use, adverse effects, monitoring or how to obtain help.",
+      "Asking the person to explain how they will use the regimen.",
+      "Discussing practical barriers to obtaining the medicine.",
+      "Setting an individualized follow-up plan."
+    ],
+    "rationale": "Education and self-management support are part of treatment. Checking understanding, access and follow-up helps resolve those risks rather than causing them."
+  },
+  "noninsulin-diabetes-27-case": {
+    "question": "A person receives three new diabetes prescriptions with no discussion of meals, monitoring, illness or follow-up. What should be added?",
+    "choices": [
+      "A practical self-management and follow-up plan matched to the person’s regimen and circumstances.",
+      "An assurance that medicines replace nutrition and activity measures.",
+      "A statement that the next prescription refill is sufficient safety review.",
+      "The same monitoring instructions for every regimen, without checking hypoglycemia risk."
+    ],
+    "rationale": "Prescriptions alone leave implementation and safety gaps. Lifestyle care continues, refill timing is not a complete review, and monitoring must fit the medicines and risks."
+  },
+  "noninsulin-diabetes-28-principle": {
+    "question": "Repeated fasting and postmeal glucose measurements serve which purpose in treatment selection?",
+    "choices": [
+      "They help identify a remaining glycemic pattern while outcome and safety goals are also considered.",
+      "They replace the need to assess heart and kidney comorbidities.",
+      "One high postmeal result proves that every current medicine is ineffective.",
+      "They prove that a class has a cardiovascular outcome indication."
+    ],
+    "rationale": "Patterns help locate the glycemic gap. They cannot replace comorbidity assessment, establish failure from one value or prove outcome benefits."
+  },
+  "noninsulin-diabetes-28-application": {
+    "question": "A stable person’s fasting glucose is near target but postmeal values are repeatedly high. What is the best next assessment?",
+    "choices": [
+      "Review repeated glucose patterns, meals, hypoglycemia and the full regimen before selecting a complementary change.",
+      "Increase all glucose-lowering doses from one postmeal value.",
+      "Ignore postmeal values whenever fasting glucose is near target.",
+      "Stop an otherwise suitable HF-benefit therapy solely because postmeal glucose is high."
+    ],
+    "rationale": "Reviewing the pattern and regimen supports a focused change. A near-target fasting value does not erase postmeal excursions, one value does not justify increasing every dose, and an outcome-directed medicine can still contribute benefit."
+  },
+  "noninsulin-diabetes-28-safety": {
+    "question": "Which approach to a remaining postmeal glucose problem most risks an incomplete treatment decision?",
+    "choices": [
+      "Choose solely from one postmeal value without reviewing low glucose, other patterns, organ function or outcome indications.",
+      "Review repeated glucose measurements before adjusting therapy.",
+      "Check whether treatment is causing low glucose.",
+      "Reassess comorbidities and medication suitability."
+    ],
+    "rationale": "A single glucose result is insufficient for the full decision. Repeated patterns, hypoglycemia and clinical context help prevent an inappropriate or unsafe change."
+  },
+  "noninsulin-diabetes-28-case": {
+    "question": "A stable adult has near-target fasting glucose and repeated postmeal excursions while receiving a tolerated therapy for demonstrated HF benefit. Which approach is best?",
+    "choices": [
+      "Reassess safety and the full regimen, preserve appropriate HF therapy, and address the postmeal gap with a complementary plan.",
+      "Stop HF-directed therapy solely because postmeal glucose remains high.",
+      "Ignore postmeal excursions because fasting glucose is near target.",
+      "Assume the HF-benefit indication guarantees full postmeal control."
+    ],
+    "rationale": "Heart-failure benefit and postmeal control are different goals. Remaining excursions do not automatically cancel outcome benefit or become irrelevant; assess suitability and add complementary value."
+  },
+  "noninsulin-diabetes-29-principle": {
+    "question": "Why should noninsulin classes be compared before selecting an add-on?",
+    "choices": [
+      "They differ in glycemic efficacy, weight effects, hypoglycemia, outcome evidence, safety and burden.",
+      "All classes provide the same A1C reduction in every person.",
+      "Oral administration establishes that a drug provides weight loss.",
+      "The newest drug is always the best option irrespective of access."
+    ],
+    "rationale": "The book and ADA comparison distinguish class effects and clinical fit. Route, novelty and average efficacy cannot establish an identical response or replace safety and access review."
+  },
+  "noninsulin-diabetes-29-application": {
+    "question": "A stable adult has A1C 9.1% and an individualized goal of 7.0%. Which interpretation best supports selection?",
+    "choices": [
+      "The 2.1-percentage-point gap supports considering combination treatment or a more potent agent after reviewing safety and outcome goals.",
+      "The gap is 1.1 percentage points, so it is below the 1.5-point comparison threshold.",
+      "The gap guarantees that any added oral agent will reach the goal.",
+      "The A1C value alone makes insulin mandatory in every case."
+    ],
+    "rationale": "9.1 minus 7.0 equals 2.1 percentage points, exceeding the ADA 1.5-point efficacy discussion threshold. Responses vary, and A1C 9.1% alone does not meet the greater-than-10% insulin-consideration criterion or establish mandatory insulin."
+  },
+  "noninsulin-diabetes-29-safety": {
+    "question": "A stable adult remains well above an individualized A1C goal. Which selection error can prolong inadequate glycemic treatment?",
+    "choices": [
+      "Repeatedly choosing a modest-efficacy option without comparing the required reduction or reassessing response.",
+      "Comparing expected efficacy against the individualized goal.",
+      "Reviewing hypoglycemia and tolerability before choosing an agent.",
+      "Discussing an accessible higher-efficacy option with the person."
+    ],
+    "rationale": "Treatment must offer enough efficacy for the goal and be reassessed. Efficacy, safety and access comparisons support an effective plan; repeatedly ignoring the gap can delay adequate treatment."
+  },
+  "noninsulin-diabetes-29-case": {
+    "question": "An adult needs substantial A1C reduction and weight loss but is offered a modest, weight-neutral agent solely because it is oral. What is the best response?",
+    "choices": [
+      "Compare higher-efficacy and weight-directed options with the person’s route preferences, safety and access.",
+      "Assume every oral drug causes clinically important weight loss.",
+      "Exclude higher-efficacy options without discussing the person’s preferences.",
+      "Treat oral administration as proof that both treatment goals will be met."
+    ],
+    "rationale": "Route preference matters within a shared comparison. A modest weight-neutral option may not meet both goals; oral administration neither proves weight benefit nor resolves the efficacy requirement."
+  }
+};
+for (const item of noninsulinDiabetesPharmacotherapyQuestionBank) {
+  if (verifiedSelectionQuestions[item.id]) Object.assign(item, verifiedSelectionQuestions[item.id]);
+}

@@ -190,3 +190,72 @@ export const noninsulinDiabetesPharmacotherapyModule = {
     { label: "FDA prescribing information database", href: "https://www.accessdata.fda.gov/scripts/cder/daf/" },
   ],
 };
+
+
+// Complete selection lesson source-reviewed with its linked assessment items.
+Object.assign(noninsulinDiabetesPharmacotherapyModule.submodules.find(item => item.slug === "noninsulin-selection-architecture"), {
+  "slug": "noninsulin-selection-architecture",
+  "title": "Person-Centered Selection and Sequencing",
+  "visual": "noninsulin-selection",
+  "summary": "Choose treatment for the person’s glucose and organ-risk goals, then check safety, feasibility and follow-up. A near-target A1C does not settle every treatment decision.",
+  "concepts": [
+    "Glucose and outcome goals",
+    "Comorbidity and product evidence",
+    "Efficacy and combination treatment",
+    "Insulin and crisis boundaries",
+    "Self-management and follow-up"
+  ],
+  "application": "Identify urgent insulin needs first. For a stable adult with type 2 diabetes, name the glucose and outcome goals, compare options with the person, and document how response, safety and access will be reassessed.",
+  "lesson": [
+    {
+      "heading": "Separate the glucose goal from outcome goals",
+      "body": "An A1C target describes average glycemic control. It does not, by itself, establish whether cardiovascular, heart-failure, kidney, weight or liver goals have been addressed. Identify the relevant conditions and choose therapy with evidence for that population. Outcome-directed treatment can be appropriate when A1C is already at goal, but that does not mean every drug in a class has the same evidence, approved indications or eligibility rules. Nutrition, physical activity and diabetes self-management education remain part of care after medication starts."
+    },
+    {
+      "heading": "Let comorbidity guide the next comparison",
+      "body": "For an adult with type 2 diabetes and established or high-risk ASCVD, consider a GLP-1 receptor agonist and/or SGLT2 inhibitor with demonstrated cardiovascular benefit. Heart failure favors an SGLT2 inhibitor with demonstrated benefit. Current ADA guidance also identifies selected GLP-1 or dual GIP/GLP-1 therapies for adults with type 2 diabetes, obesity and symptomatic HFpEF. CKD decisions require current kidney function, albuminuria and product-specific use criteria. A MASH-related choice requires its own liver evidence and safety assessment; a lower A1C alone is not proof of liver benefit."
+    },
+    {
+      "heading": "Place metformin in the clinical context",
+      "body": "Metformin remains a commonly used, inexpensive option when glucose lowering is the principal need and it is suitable for the person. Metformin is often used early, while established heart or kidney indications can support an outcome-directed medicine regardless of A1C, with or without metformin. Do not postpone an indicated outcome-directed medicine solely to demonstrate metformin failure. Check contraindications, kidney function, tolerance and the exact product before prescribing; neither affordability nor a familiar first-line role cancels a safety restriction."
+    },
+    {
+      "heading": "Estimate the gap before choosing an add-on",
+      "body": "Different classes provide different glucose and weight effects. Select GLP-1-based therapies and rational combinations can offer greater glucose lowering than a modest-efficacy option, but route, tolerance, organ function, hypoglycemia risk and access still matter. ADA guidance supports considering combination treatment or a more potent agent when A1C is at least 1.5 percentage points above the individualized goal. For A1C 9.1% and a goal of 7.0%, the gap is 2.1 percentage points: 9.1 minus 7.0. This supports an efficacy discussion, not a promised response or an automatic insulin mandate."
+    },
+    {
+      "heading": "Recognize when noninsulin sequencing must give way",
+      "body": "Consider insulin when hyperglycemic symptoms are present or A1C exceeds 10% or glucose is at least 300 mg/dL. Weight loss, ketosis and other catabolic features increase concern. Suspected DKA or HHS requires urgent assessment and stabilization rather than another routine outpatient add-on; glucose alone does not diagnose either crisis. In stable type 2 diabetes without severe hyperglycemia or crisis, current ADA guidance generally prefers GLP-1-based therapy to insulin for initial or add-on glucose lowering. These thresholds prompt clinical assessment and do not make insulin permanent after recovery. Type 1 diabetes requires insulin."
+    },
+    {
+      "heading": "Use glucose patterns without losing the wider goal",
+      "body": "Review repeated fasting and postmeal measurements or suitable CGM patterns before adjusting treatment. A near-target fasting value can coexist with repeated postmeal excursions; one isolated measurement may misrepresent the overall pattern. Also look for low glucose, meal changes and medicines contributing to hypoglycemia. A therapy used for heart or kidney benefit may remain useful despite a remaining glycemic gap. Reassess its safety and tolerability, then address the gap with a complementary plan instead of assuming that the original therapy has no value."
+    },
+    {
+      "heading": "Make the plan usable with the person",
+      "body": "Discuss the person’s priorities, food access, work schedule, route preferences, dexterity, vision, cognition, gastrointestinal tolerance and capacity to monitor treatment. Confirm coverage, cost and supply before relying on a medicine that cannot be obtained. Pair prescriptions with achievable nutrition and activity goals, glucose monitoring when indicated, practical self-management education and a way to obtain help for adverse effects or illness. Adapt the plan with the person; a medication list alone does not establish that treatment can be implemented."
+    },
+    {
+      "heading": "Set a reassessment point and reduce preventable harm",
+      "body": "Document what each medicine is intended to achieve and when glucose response, adverse effects, hypoglycemia, weight, organ function, access and medication-taking will be reviewed. ADA recommends regular medication-plan reassessment, for example every three to six months, and timely adjustment when goals are unmet. That interval is not permission to wait through serious symptoms or an early safety problem. When adding treatment, reassess insulin or secretagogue doses to reduce hypoglycemia and burden. Intensification, substitution or deintensification should follow the current benefits, risks and the person’s goals."
+    }
+  ],
+  "keyPoints": [
+    "A1C and organ outcomes answer different questions.",
+    "Match efficacy to the individualized gap.",
+    "Suspected crisis needs urgent assessment.",
+    "Access, education and reassessment are treatment decisions."
+  ],
+  "check": {
+    "question": "An adult with type 2 diabetes and symptomatic heart failure has A1C at goal. Which selection approach is appropriate?",
+    "choices": [
+      "Compare an SGLT2 inhibitor with demonstrated HF benefit against the person’s eligibility, safety and access.",
+      "Wait for A1C to rise before considering HF-directed diabetes therapy.",
+      "Assume every noninsulin drug provides the same HF benefit.",
+      "Use an A1C-lowering rank as the sole measure of HF protection."
+    ],
+    "answer": 0,
+    "rationale": "Heart-failure benefit is a separate treatment objective. A near-target A1C does not remove it; evidence and suitability for the exact treatment still matter.",
+    "reviewHref": "#noninsulin-selection-architecture"
+  }
+});
