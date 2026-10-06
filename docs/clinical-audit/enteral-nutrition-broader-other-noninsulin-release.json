@@ -1,0 +1,973 @@
+{
+  "verifiedAt": "2026-10-06T10:32:03.349458+00:00",
+  "unit": "enteral-nutrition:broader-other-noninsulin",
+  "contentCommit": "af5bae31b3b398861eb3caa0a81d57d9bb1e7206",
+  "remoteBranch": "audit/rxprep-content-2026-09-24",
+  "remoteHashObserved": "af5bae31b3b398861eb3caa0a81d57d9bb1e7206",
+  "exactRemoteObservedByTool": true,
+  "coverage": {
+    "evidence": "enteral-nutrition-broader-other-noninsulin-review.json",
+    "verifiedScope": "One complete audit-branch other-agent lesson: twenty-three whole bodies, metadata, corrected embedded check, reviewed mechanism figure and twelve linked whole questions. Eleven questions changed; one previously verified question retained exactly.",
+    "wholeLessonsVerified": {
+      "noninsulin-diabetes-pharmacotherapy": [
+        "other-noninsulin-agents"
+      ]
+    },
+    "wholeBodiesVerified": 23,
+    "wholeQuestionsReviewed": 12,
+    "changedWholeQuestions": 11,
+    "existingBodiesExpanded": 4,
+    "newOriginalBodies": 19,
+    "wholeChecksVerified": 1,
+    "wholeMetadataAndFiguresVerified": 1,
+    "wholeBankQuestionIdsVerified": [
+      "noninsulin-diabetes-18-principle",
+      "noninsulin-diabetes-18-application",
+      "noninsulin-diabetes-18-safety",
+      "noninsulin-diabetes-18-case",
+      "noninsulin-diabetes-19-principle",
+      "noninsulin-diabetes-19-application",
+      "noninsulin-diabetes-19-safety",
+      "noninsulin-diabetes-19-case",
+      "noninsulin-diabetes-20-principle",
+      "noninsulin-diabetes-20-application",
+      "noninsulin-diabetes-20-safety",
+      "noninsulin-diabetes-20-case"
+    ],
+    "all48ChoicesIndividuallySourceCompared": true,
+    "previouslyVerifiedWholeQuestionRetainedExactly": "noninsulin-diabetes-18-application",
+    "newUniqueBankQuestionsVerified": 11,
+    "broaderFeedingBankVerifiedBefore": 1029,
+    "broaderFeedingBankVerifiedAfter": 1040,
+    "sourceVerifiedNoninsulinBankTotalAcrossUnits": 93,
+    "noninsulinAuditBranchBankTotal": 120,
+    "noninsulinAuditBranchLessonTotal": 10,
+    "noninsulinAuditBranchLessonsVerifiedAcrossUnits": 8,
+    "remainingNoninsulinWholeBankIds": [
+      "noninsulin-diabetes-21-principle",
+      "noninsulin-diabetes-21-application",
+      "noninsulin-diabetes-21-safety",
+      "noninsulin-diabetes-21-case",
+      "noninsulin-diabetes-22-principle",
+      "noninsulin-diabetes-22-application",
+      "noninsulin-diabetes-22-safety",
+      "noninsulin-diabetes-22-case",
+      "noninsulin-diabetes-23-principle",
+      "noninsulin-diabetes-23-application",
+      "noninsulin-diabetes-23-safety",
+      "noninsulin-diabetes-23-case",
+      "noninsulin-diabetes-24-principle",
+      "noninsulin-diabetes-24-safety",
+      "noninsulin-diabetes-24-case",
+      "noninsulin-diabetes-25-principle",
+      "noninsulin-diabetes-25-application",
+      "noninsulin-diabetes-25-safety",
+      "noninsulin-diabetes-25-case",
+      "noninsulin-diabetes-26-principle",
+      "noninsulin-diabetes-26-application",
+      "noninsulin-diabetes-26-safety",
+      "noninsulin-diabetes-26-case",
+      "noninsulin-diabetes-30-principle",
+      "noninsulin-diabetes-30-application",
+      "noninsulin-diabetes-30-safety",
+      "noninsulin-diabetes-30-case"
+    ],
+    "remainingNoninsulinAuditBranchLessons": 2,
+    "other108WholeBankQuestionsUnchanged": true,
+    "allPrior82VerifiedNoninsulinQuestionsUnchanged": true,
+    "otherNineWholeLessonsUnchanged": true,
+    "other231WholeModulesUnchanged": true,
+    "associatedCumulativeWholeItemsVerified": [],
+    "all1180WholeCumulativeObjectsUnchanged": true,
+    "stableIdsKeysDifficultyAnchorsOrderPreserved": true,
+    "newQuestionIdsAdded": 0,
+    "cumulativeSelectorUnchanged": true,
+    "all41ExistingReferencesRetainedAndRuntimeChecked": true,
+    "fivePrimaryReferencesAddedAndRuntimeChecked": true,
+    "wholeParentModuleVerified": false,
+    "enteralParentVerified": false,
+    "wholeChaptersVerified": false,
+    "committedWholeModulesVerifiedAfter": 61,
+    "committedWholeModulesTotal": 232,
+    "moduleCountPercent": 26.29,
+    "chaptersVerifiedAfter": 6,
+    "chapterTotal": 82,
+    "chapterCountPercent": 7.32,
+    "workingDraftBoundary": "Working draft contains eleven lessons and ninety-two different authored questions. Prior bytes and reviewing statuses are preserved. This certificate applies to the isolated HEAD-derived audit-branch lesson and twelve stable question IDs; certification of different working-draft variants is not inferred."
+  },
+  "validation": {
+    "productionBuild": {
+      "status": "passed",
+      "exit_code": 0,
+      "actualTerminalCompletionObserved": true,
+      "staticRoutes": 567,
+      "log": "build.log",
+      "productionBuild": "Next.js16.3.5 webpack isolated audit candidate"
+    },
+    "structure": {
+      "modules": 1,
+      "questions": 120,
+      "hardErrors": [],
+      "sourceGaps": [],
+      "sizeAdvisories": [],
+      "thinLessons": [],
+      "weakestModules": [
+        {
+          "module": "noninsulin-diabetes-pharmacotherapy",
+          "lessons": 10,
+          "questions": 120,
+          "minimumLessonCoverage": 8
+        }
+      ]
+    },
+    "objectPreservation": {
+      "status": "passed",
+      "modules": 232,
+      "otherWholeModulesUnchanged": 231,
+      "wholeQuestionBankTotal": 120,
+      "wholeQuestionsReviewed": 12,
+      "changedWholeQuestions": 11,
+      "previouslyVerifiedWholeQuestionUnchanged": "noninsulin-diabetes-18-application",
+      "other108WholeQuestionsUnchanged": true,
+      "allPrior82VerifiedNoninsulinWholeQuestionsUnchanged": true,
+      "otherNineWholeLessonsUnchanged": true,
+      "stableKeysIdsDifficultyAnchorsOrder": true,
+      "associatedDerivedCumulative": [],
+      "all1180WholeCumulativeObjectsUnchanged": true,
+      "existingReferencesRetained": 41,
+      "fivePrimaryReferencesAdded": true
+    },
+    "browser": {
+      "status": "passed",
+      "results": [
+        {
+          "width": 1440,
+          "exactWholeBodies": 23,
+          "wholeChecksAllFourOptionsGraded": 1,
+          "wholeQuestionsShuffledCorrectIncorrectFeedbackAndAnchorsVerified": 12,
+          "associatedCumulativeItems": [],
+          "all1180CumulativeObjectsUnchanged": true,
+          "allReferencesExact": 46,
+          "noHorizontalOverflow": true,
+          "diagrams": [
+            {
+              "width": 1440,
+              "slug": "noninsulin-diabetes-pharmacotherapy",
+              "lessonKey": "other-noninsulin-agents",
+              "labels": [
+                {
+                  "tag": "SPAN",
+                  "text": "Narrow mechanisms",
+                  "overflow": false,
+                  "fontSize": 10.88
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Exact timing turns a niche medicine into useful therapy",
+                  "overflow": false,
+                  "fontSize": 37.6
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "01",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Digest",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Alpha-glucosidase",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Delay carbohydrate absorption with the first bite of a meal",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "02",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Replace",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Amylin",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Pair pramlintide with reduced mealtime insulin and intensive monitoring",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "03",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Target",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Selective use",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Fit colesevelam or bromocriptine-QR to a defined goal and burden",
+                  "overflow": false,
+                  "fontSize": 14
+                }
+              ],
+              "allTextWithinBounds": true
+            }
+          ]
+        },
+        {
+          "width": 390,
+          "exactWholeBodies": 23,
+          "wholeChecksAllFourOptionsGraded": 1,
+          "wholeQuestionsShuffledCorrectIncorrectFeedbackAndAnchorsVerified": 12,
+          "associatedCumulativeItems": [],
+          "all1180CumulativeObjectsUnchanged": true,
+          "allReferencesExact": 46,
+          "noHorizontalOverflow": true,
+          "diagrams": [
+            {
+              "width": 320,
+              "slug": "noninsulin-diabetes-pharmacotherapy",
+              "lessonKey": "other-noninsulin-agents",
+              "labels": [
+                {
+                  "tag": "SPAN",
+                  "text": "Narrow mechanisms",
+                  "overflow": false,
+                  "fontSize": 10.88
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Exact timing turns a niche medicine into useful therapy",
+                  "overflow": false,
+                  "fontSize": 23.2
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "01",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Digest",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Alpha-glucosidase",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Delay carbohydrate absorption with the first bite of a meal",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "02",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Replace",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Amylin",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Pair pramlintide with reduced mealtime insulin and intensive monitoring",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "03",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Target",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Selective use",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Fit colesevelam or bromocriptine-QR to a defined goal and burden",
+                  "overflow": false,
+                  "fontSize": 14
+                }
+              ],
+              "allTextWithinBounds": true
+            },
+            {
+              "width": 390,
+              "slug": "noninsulin-diabetes-pharmacotherapy",
+              "lessonKey": "other-noninsulin-agents",
+              "labels": [
+                {
+                  "tag": "SPAN",
+                  "text": "Narrow mechanisms",
+                  "overflow": false,
+                  "fontSize": 10.88
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Exact timing turns a niche medicine into useful therapy",
+                  "overflow": false,
+                  "fontSize": 23.2
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "01",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Digest",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Alpha-glucosidase",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Delay carbohydrate absorption with the first bite of a meal",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "02",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Replace",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Amylin",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Pair pramlintide with reduced mealtime insulin and intensive monitoring",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "03",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Target",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Selective use",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Fit colesevelam or bromocriptine-QR to a defined goal and burden",
+                  "overflow": false,
+                  "fontSize": 14
+                }
+              ],
+              "allTextWithinBounds": true
+            },
+            {
+              "width": 639,
+              "slug": "noninsulin-diabetes-pharmacotherapy",
+              "lessonKey": "other-noninsulin-agents",
+              "labels": [
+                {
+                  "tag": "SPAN",
+                  "text": "Narrow mechanisms",
+                  "overflow": false,
+                  "fontSize": 10.88
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Exact timing turns a niche medicine into useful therapy",
+                  "overflow": false,
+                  "fontSize": 23.2
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "01",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Digest",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Alpha-glucosidase",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Delay carbohydrate absorption with the first bite of a meal",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "02",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Replace",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Amylin",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Pair pramlintide with reduced mealtime insulin and intensive monitoring",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "03",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Target",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Selective use",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Fit colesevelam or bromocriptine-QR to a defined goal and burden",
+                  "overflow": false,
+                  "fontSize": 14
+                }
+              ],
+              "allTextWithinBounds": true
+            },
+            {
+              "width": 640,
+              "slug": "noninsulin-diabetes-pharmacotherapy",
+              "lessonKey": "other-noninsulin-agents",
+              "labels": [
+                {
+                  "tag": "SPAN",
+                  "text": "Narrow mechanisms",
+                  "overflow": false,
+                  "fontSize": 10.88
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Exact timing turns a niche medicine into useful therapy",
+                  "overflow": false,
+                  "fontSize": 23.2
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "01",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Digest",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Alpha-glucosidase",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Delay carbohydrate absorption with the first bite of a meal",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "02",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Replace",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Amylin",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Pair pramlintide with reduced mealtime insulin and intensive monitoring",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "03",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Target",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Selective use",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Fit colesevelam or bromocriptine-QR to a defined goal and burden",
+                  "overflow": false,
+                  "fontSize": 14
+                }
+              ],
+              "allTextWithinBounds": true
+            }
+          ]
+        }
+      ],
+      "captures": [
+        "hero-noninsulin-diabetes-pharmacotherapy-1440.png",
+        "body-other-noninsulin-agents-0-1440.png",
+        "body-other-noninsulin-agents-1-1440.png",
+        "body-other-noninsulin-agents-2-1440.png",
+        "body-other-noninsulin-agents-3-1440.png",
+        "body-other-noninsulin-agents-4-1440.png",
+        "body-other-noninsulin-agents-5-1440.png",
+        "body-other-noninsulin-agents-6-1440.png",
+        "body-other-noninsulin-agents-7-1440.png",
+        "body-other-noninsulin-agents-8-1440.png",
+        "body-other-noninsulin-agents-9-1440.png",
+        "body-other-noninsulin-agents-10-1440.png",
+        "body-other-noninsulin-agents-11-1440.png",
+        "body-other-noninsulin-agents-12-1440.png",
+        "body-other-noninsulin-agents-13-1440.png",
+        "body-other-noninsulin-agents-14-1440.png",
+        "body-other-noninsulin-agents-15-1440.png",
+        "body-other-noninsulin-agents-16-1440.png",
+        "body-other-noninsulin-agents-17-1440.png",
+        "body-other-noninsulin-agents-18-1440.png",
+        "body-other-noninsulin-agents-19-1440.png",
+        "body-other-noninsulin-agents-20-1440.png",
+        "body-other-noninsulin-agents-21-1440.png",
+        "body-other-noninsulin-agents-22-1440.png",
+        "summary-other-noninsulin-agents-1440.png",
+        "concepts-other-noninsulin-agents-1440.png",
+        "keypoints-other-noninsulin-agents-1440.png",
+        "application-other-noninsulin-agents-1440.png",
+        "figure-other-noninsulin-agents-1440.png",
+        "check-other-noninsulin-agents-1440.png",
+        "references-noninsulin-diabetes-pharmacotherapy-1440.png",
+        "bank-noninsulin-diabetes-19-principle-1440.png",
+        "bank-noninsulin-diabetes-20-principle-1440.png",
+        "bank-noninsulin-diabetes-18-application-1440.png",
+        "bank-noninsulin-diabetes-19-case-1440.png",
+        "bank-noninsulin-diabetes-18-principle-1440.png",
+        "bank-noninsulin-diabetes-20-application-1440.png",
+        "bank-noninsulin-diabetes-20-case-1440.png",
+        "bank-noninsulin-diabetes-19-application-1440.png",
+        "bank-noninsulin-diabetes-18-safety-1440.png",
+        "bank-noninsulin-diabetes-19-safety-1440.png",
+        "bank-noninsulin-diabetes-20-safety-1440.png",
+        "bank-noninsulin-diabetes-18-case-1440.png",
+        "hero-noninsulin-diabetes-pharmacotherapy-390.png",
+        "body-other-noninsulin-agents-0-390.png",
+        "body-other-noninsulin-agents-1-390.png",
+        "body-other-noninsulin-agents-2-390.png",
+        "body-other-noninsulin-agents-3-390.png",
+        "body-other-noninsulin-agents-4-390.png",
+        "body-other-noninsulin-agents-5-390.png",
+        "body-other-noninsulin-agents-6-390.png",
+        "body-other-noninsulin-agents-7-390.png",
+        "body-other-noninsulin-agents-8-390.png",
+        "body-other-noninsulin-agents-9-390.png",
+        "body-other-noninsulin-agents-10-390.png",
+        "body-other-noninsulin-agents-11-390.png",
+        "body-other-noninsulin-agents-12-390.png",
+        "body-other-noninsulin-agents-13-390.png",
+        "body-other-noninsulin-agents-14-390.png",
+        "body-other-noninsulin-agents-15-390.png",
+        "body-other-noninsulin-agents-16-390.png",
+        "body-other-noninsulin-agents-17-390.png",
+        "body-other-noninsulin-agents-18-390.png",
+        "body-other-noninsulin-agents-19-390.png",
+        "body-other-noninsulin-agents-20-390.png",
+        "body-other-noninsulin-agents-21-390.png",
+        "body-other-noninsulin-agents-22-390.png",
+        "summary-other-noninsulin-agents-390.png",
+        "concepts-other-noninsulin-agents-390.png",
+        "keypoints-other-noninsulin-agents-390.png",
+        "application-other-noninsulin-agents-390.png",
+        "figure-other-noninsulin-agents-390.png",
+        "check-other-noninsulin-agents-390.png",
+        "references-noninsulin-diabetes-pharmacotherapy-390.png",
+        "bank-noninsulin-diabetes-19-principle-390.png",
+        "bank-noninsulin-diabetes-20-principle-390.png",
+        "bank-noninsulin-diabetes-18-application-390.png",
+        "bank-noninsulin-diabetes-19-case-390.png",
+        "bank-noninsulin-diabetes-18-principle-390.png",
+        "bank-noninsulin-diabetes-20-application-390.png",
+        "bank-noninsulin-diabetes-20-case-390.png",
+        "bank-noninsulin-diabetes-19-application-390.png",
+        "bank-noninsulin-diabetes-18-safety-390.png",
+        "bank-noninsulin-diabetes-19-safety-390.png",
+        "bank-noninsulin-diabetes-20-safety-390.png",
+        "bank-noninsulin-diabetes-18-case-390.png",
+        "native-figure-320.png",
+        "native-figure-640.png"
+      ],
+      "errors": []
+    },
+    "visualInspection": {
+      "status": "passed",
+      "inspectedAt": "2026-10-06T10:30:15.625798+00:00",
+      "method": "Actual original-detail visual inspection of all fifteen paired desktop/mobile boards and two native narrow/breakpoint figures. All twenty-three source boards and the additional miglitol page10 were also viewed.",
+      "boardsViewed": [
+        {
+          "file": "board-00.png",
+          "pairs": [
+            "pair-hero-noninsulin-diabetes-pharmacotherapy.png",
+            "pair-body-other-noninsulin-agents-0.png",
+            "pair-body-other-noninsulin-agents-1.png"
+          ],
+          "dimensions": [
+            1870,
+            2362
+          ]
+        },
+        {
+          "file": "board-01.png",
+          "pairs": [
+            "pair-body-other-noninsulin-agents-2.png",
+            "pair-body-other-noninsulin-agents-3.png",
+            "pair-body-other-noninsulin-agents-4.png"
+          ],
+          "dimensions": [
+            1312,
+            1717
+          ]
+        },
+        {
+          "file": "board-02.png",
+          "pairs": [
+            "pair-body-other-noninsulin-agents-5.png",
+            "pair-body-other-noninsulin-agents-6.png",
+            "pair-body-other-noninsulin-agents-7.png"
+          ],
+          "dimensions": [
+            1312,
+            1718
+          ]
+        },
+        {
+          "file": "board-03.png",
+          "pairs": [
+            "pair-body-other-noninsulin-agents-8.png",
+            "pair-body-other-noninsulin-agents-9.png",
+            "pair-body-other-noninsulin-agents-10.png"
+          ],
+          "dimensions": [
+            1312,
+            1581
+          ]
+        },
+        {
+          "file": "board-04.png",
+          "pairs": [
+            "pair-body-other-noninsulin-agents-11.png",
+            "pair-body-other-noninsulin-agents-12.png",
+            "pair-body-other-noninsulin-agents-13.png"
+          ],
+          "dimensions": [
+            1312,
+            1663
+          ]
+        },
+        {
+          "file": "board-05.png",
+          "pairs": [
+            "pair-body-other-noninsulin-agents-14.png",
+            "pair-body-other-noninsulin-agents-15.png",
+            "pair-body-other-noninsulin-agents-16.png"
+          ],
+          "dimensions": [
+            1312,
+            1554
+          ]
+        },
+        {
+          "file": "board-06.png",
+          "pairs": [
+            "pair-body-other-noninsulin-agents-17.png",
+            "pair-body-other-noninsulin-agents-18.png",
+            "pair-body-other-noninsulin-agents-19.png"
+          ],
+          "dimensions": [
+            1312,
+            1608
+          ]
+        },
+        {
+          "file": "board-07.png",
+          "pairs": [
+            "pair-body-other-noninsulin-agents-20.png",
+            "pair-body-other-noninsulin-agents-21.png",
+            "pair-body-other-noninsulin-agents-22.png"
+          ],
+          "dimensions": [
+            1312,
+            1773
+          ]
+        },
+        {
+          "file": "board-08.png",
+          "pairs": [
+            "pair-summary-other-noninsulin-agents.png",
+            "pair-concepts-other-noninsulin-agents.png",
+            "pair-keypoints-other-noninsulin-agents.png"
+          ],
+          "dimensions": [
+            1312,
+            1108
+          ]
+        },
+        {
+          "file": "board-09.png",
+          "pairs": [
+            "pair-application-other-noninsulin-agents.png",
+            "pair-figure-other-noninsulin-agents.png",
+            "pair-check-other-noninsulin-agents.png"
+          ],
+          "dimensions": [
+            1312,
+            1860
+          ]
+        },
+        {
+          "file": "board-10.png",
+          "pairs": [
+            "pair-references-noninsulin-diabetes-pharmacotherapy.png",
+            "pair-bank-noninsulin-diabetes-19-principle.png",
+            "pair-bank-noninsulin-diabetes-20-principle.png"
+          ],
+          "dimensions": [
+            1312,
+            5060
+          ]
+        },
+        {
+          "file": "board-11.png",
+          "pairs": [
+            "pair-bank-noninsulin-diabetes-18-application.png",
+            "pair-bank-noninsulin-diabetes-19-case.png",
+            "pair-bank-noninsulin-diabetes-18-principle.png"
+          ],
+          "dimensions": [
+            1312,
+            2308
+          ]
+        },
+        {
+          "file": "board-12.png",
+          "pairs": [
+            "pair-bank-noninsulin-diabetes-20-application.png",
+            "pair-bank-noninsulin-diabetes-20-case.png",
+            "pair-bank-noninsulin-diabetes-19-application.png"
+          ],
+          "dimensions": [
+            1312,
+            2353
+          ]
+        },
+        {
+          "file": "board-13.png",
+          "pairs": [
+            "pair-bank-noninsulin-diabetes-18-safety.png",
+            "pair-bank-noninsulin-diabetes-19-safety.png",
+            "pair-bank-noninsulin-diabetes-20-safety.png"
+          ],
+          "dimensions": [
+            1312,
+            2256
+          ]
+        },
+        {
+          "file": "board-14.png",
+          "pairs": [
+            "pair-bank-noninsulin-diabetes-18-case.png"
+          ],
+          "dimensions": [
+            1312,
+            821
+          ]
+        }
+      ],
+      "pairedDesktopMobileCapturesViewed": 43,
+      "browserScreenshotsCaptured": 88,
+      "nativeFigureWidthsViewed": [
+        320,
+        640
+      ],
+      "wholeTeachingBodiesVisuallyChecked": 23,
+      "wholeMetadataCheckFigureAndTwelveBankCasesVisuallyChecked": true,
+      "referencesVisuallyChecked": 46,
+      "findings": "Readable complete text, all choices and feedback, intact margins and fourteen-label mechanism summary; no clipping or horizontal overflow. Every bank case has desktop correct and mobile incorrect shuffled feedback.",
+      "runtimeFigureBoundsWidthsPassed": [
+        320,
+        390,
+        639,
+        640,
+        1440
+      ],
+      "viewedImageSha256": {
+        "board-00.png": "49c380791aceca4fc01be2f7adecb1ea861395dd7b355d180b744542fe71d788",
+        "board-01.png": "d01b329c0ea839bec0a6ccaa9bf173fd9de78fa74ba34f805ed06549bc371a2d",
+        "board-02.png": "9f519bcb2faa60233d05ce0c43438cda4817c33a8c628682ac539fb0582dcb2d",
+        "board-03.png": "2b97acc96f4fc4284e4699740131602b85a33f196a9b62087aa69abb3d9b0086",
+        "board-04.png": "44e6e7cb06b95d0e8c905195d11fb8de91488288ba4c82b5b41e50c351897f1e",
+        "board-05.png": "36a553bd87d4d74d2c4680fbdbfe65dc72728b65b3c3f7def960162ad824ce58",
+        "board-06.png": "552373a9722a971440a3ae5953bd9335cf4be4f0f58ba2b3da768166b40f5827",
+        "board-07.png": "a30eccb4448a6d0a26f6fd7afb7817b8978cb9fd2a16d3f2964bab956ca112fe",
+        "board-08.png": "467d9b256659169ab92146376fee8b87f0e3aeb7cb6c388fe7f80e859b277751",
+        "board-09.png": "706ef665e01529c08168d558eaafbc29f9cc707dd31d47791299ea7ceca008d7",
+        "board-10.png": "452be52a5f7a86cb549b630f8f358d796d6921632cf02678cf06509961582050",
+        "board-11.png": "f83142b44b3cee952c3c95aae66b012a74b2a90164705be73ed456015b865ddc",
+        "board-12.png": "22a85d6a0f92d80416d7bf05edb8a85f7ab15636ea6d476d89416dadbce0e632",
+        "board-13.png": "883f6ce3ed551210ff6c42f70c24356e2d205da813db114843767803bc50be1b",
+        "board-14.png": "3e8ed1a9189da44b302f8af07d63c23139a43be8d59b5dc112fd5339f0b9d4de",
+        "native-figure-320.png": "c22fff7103fa08c28a7356e17af29c530bb24db92612a44d5b9e718985978589",
+        "native-figure-640.png": "5b33216654db954c61e08cc92b0f66fec1ffe49702f55dd335884c99605e58e3"
+      }
+    },
+    "limits": "Isolated unauthenticated production preview. Complete lesson, all four embedded-check choices and twelve bank cases in correct/incorrect shuffled attempts at 1440/390; figure bounds at five widths. No associated cumulative item; all 1180 cumulative objects unchanged. Two lessons, twenty-seven questions, working draft variants, parent chapters and full goal remain open."
+  },
+  "preservation": {
+    "status": "passed",
+    "baselinePathsChecked": 2012,
+    "allUnrelatedDraftBytesAndDeletionsPreservedAtRelease": true,
+    "observedConcurrentUnrelatedChangesRetainedAndExcluded": {},
+    "otherUnrelatedPathsMatchInitialBaseline": true,
+    "preexistingContentBytesRecoveredByRemovingExactScopedTails": true,
+    "allOtherWorkingLedgerFieldsAndEntriesPreserved": true,
+    "allOtherCommittedLedgerFieldsAndEntriesPreserved": true,
+    "oneAuditBranchLessonVerifiedAndWorkingDraftStatusPreserved": true,
+    "onlyVerifiedHeadDerivedContentStagedOrCommitted": true,
+    "onlyTwoOtherAgentTypographyLinesChangedAndCumulativeSelectorUnchanged": true,
+    "preexistingWorkingRenalCaptionRetainedVerbatim": true,
+    "scope": [
+      "src/data/modules/noninsulinDiabetesPharmacotherapy.js",
+      "src/data/questionBanks/noninsulinDiabetesPharmacotherapy.js",
+      "src/components/learn/NoninsulinDiabetesPharmacotherapyVisual.jsx",
+      "docs/clinical-audit/enteral-nutrition-broader-other-noninsulin-review.json",
+      "docs/clinical-audit/module-ledger.json",
+      "docs/clinical-audit/chapter-ledger.json",
+      "docs/clinical-audit/sequential-resume.json"
+    ]
+  },
+  "publication": {
+    "mainMerge": "not performed",
+    "production": "not verified"
+  },
+  "wholeGoalComplete": false,
+  "nextAction": "Continue noninsulin-diabetes-pharmacotherapy in audit-branch lesson order at cardiorenal-weight-integration, including every anchored whole question and derived cumulative item. Read the exact book and approved primary sources. Preserve all eight verified lessons and ninety-three verified bank question IDs; two lessons and twenty-seven questions remain open. Preserve the separate working draft of eleven lessons and ninety-two authored questions without inferring certification. Whole MASLD and ALD parents are verified; rifaximin HE is verified, with nine other lessons/147 questions reserved for the Chapter 22 parent audit. Preserve the 245-match contextual inventory, four HIV PI choices, prior ICU withdrawal and all feeding dependencies. Return to Chapter 11 printed 161/PDF169 after broader feeding dependencies. Chapters 11/19/22/44 and Chapter 1 printed 7/PDF19 checklist 15 remain open; the full 82-chapter goal continues.",
+  "receiptCommit": "Receipt follows exact verified content commit; its own remote hash separately verified in execution output."
+}
