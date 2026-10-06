@@ -15,6 +15,62 @@ const views={
 export const masldVisualTypes=Object.keys(views).map((key)=>`masld-${key}`);
 export default function MasldVisual({type}){
   const key=type.replace("masld-","");
+  const fibrosisViews = {
+  "fib4-screening": {
+    "eyebrow": "Initial fibrosis assessment",
+    "heading": "Calculate, qualify and reassess",
+    "nodes": [
+      [
+        "Calculate",
+        "Correct inputs",
+        "Use years, U/L and platelets in 10⁹/L."
+      ],
+      [
+        "Qualify",
+        "Age and stability",
+        "Acute illness limits interpretation."
+      ],
+      [
+        "Refine risk",
+        "Secondary assessment",
+        "Follow age-appropriate thresholds."
+      ],
+      [
+        "Reassess",
+        "Continuing risk",
+        "Set follow-up from metabolic risk."
+      ]
+    ]
+  },
+  "secondary-assessment": {
+    "eyebrow": "Sequential fibrosis assessment",
+    "heading": "Measure, reconcile and refer",
+    "nodes": [
+      [
+        "Measure",
+        "VCTE or ELF",
+        "Choose the test in context."
+      ],
+      [
+        "Check",
+        "Reliability and agreement",
+        "Stiffness can rise without scar."
+      ],
+      [
+        "Resolve",
+        "MRE or selective biopsy",
+        "Match the method to uncertainty."
+      ],
+      [
+        "Refer",
+        "Persistent or high risk",
+        "Connect findings with specialist care."
+      ]
+    ]
+  }
+};
+  const fibrosisView = fibrosisViews[key];
+  if (fibrosisView) return <figure className="chol-visual masld-visual" aria-label={fibrosisView.heading}><figcaption><span>{fibrosisView.eyebrow}</span><strong>{fibrosisView.heading}</strong></figcaption><div className="chol-visual__grid">{fibrosisView.nodes.map(([verb,focus,detail],index)=><div key={verb}><span>{String(index+1).padStart(2,"0")}</span><strong>{verb}</strong><em style={{fontSize:"0.875rem"}}>{focus}</em><p style={{fontSize:"0.875rem"}}>{detail}</p></div>)}</div></figure>;
   const labels=views[key]||views["integrated-case"];
   return <figure className="chol-visual masld-visual" aria-label={`MASLD visual: ${key.replaceAll("-"," ")}`}>
     <div className="chol-visual__copy"><span>Metabolic liver disease</span><h3>{key.replaceAll("-"," ")}</h3><p>Connect metabolic load, liver injury, fibrosis risk, and treatment as one changing trajectory.</p></div>

@@ -31,3 +31,148 @@ export const metabolicDysfunctionAssociatedSteatoticLiverDiseaseModule={
     {label:"AASLD noninvasive MASLD assessment",href:"https://www.aasld.org/liver-fellow-network/core-series/clinical-pearls/spare-me-jab-noninvasive-assessment-patients-masld"},
   ],
 };
+
+
+// Source-reconciled adult fibrosis-risk assessment and escalation pathway.
+const verifiedMasldFibrosisLessons = {
+  "fib4-screening": {
+    "metadata": {
+      "summary": "Calculate FIB-4 with the correct units, then qualify the result by age, clinical stability, metabolic risk, and the need for secondary testing.",
+      "concepts": [
+        "Formula and units",
+        "Age limits",
+        "Stable values",
+        "Risk thresholds",
+        "Reassessment"
+      ],
+      "application": "Use the adult MASLD pathway to decide on follow-up, secondary assessment, or referral; do not turn a FIB-4 result into a fibrosis-stage diagnosis.",
+      "keyPoints": [
+        "Use years, U/L, and platelet counts in 10⁹/L.",
+        "FIB-4 is a risk assessment, not a histologic stage.",
+        "Age and acute illness limit interpretation.",
+        "Low risk still requires appropriate follow-up."
+      ]
+    },
+    "bodies": [
+      {
+        "heading": "Calculate correctly",
+        "body": "FIB-4 = [age in years × AST in U/L] ÷ [platelets in 10⁹/L × √(ALT in U/L)]. The platelet value 200 × 10⁹/L is entered as 200, not 200,000. Put the entire platelet-times-square-root product in the denominator. Confirm the units and use values that represent the patient’s stable clinical state."
+      },
+      {
+        "heading": "Use common thresholds",
+        "body": "In a stable adult aged 35 through 65, FIB-4 below 1.3 generally supports follow-up in primary care when clinical findings agree. FIB-4 at least 1.3 calls for secondary fibrosis assessment, usually VCTE or ELF, or referral for risk stratification. FIB-4 above 2.67 supports direct gastroenterology or hepatology referral. These are risk categories, not exact histologic stages; a result alone does not diagnose MASH or cirrhosis."
+      },
+      {
+        "heading": "Adapt for age",
+        "body": "FIB-4 has low accuracy below age 35. Consider secondary assessment in a younger adult with increased metabolic risk or elevated liver chemistries, even when FIB-4 is low. For adults older than 65, the AASLD pathway uses a higher lower cutoff of 2.0, with a value above 2.0 prompting further assessment. Do not apply the usual 1.3 cutoff mechanically across every age or treat an age-adjusted low result as conclusive when clinical concern persists."
+      },
+      {
+        "heading": "Set reassessment cadence",
+        "body": "For a low-risk result consistent with the clinical picture, consider repeating FIB-4 every 1-2 years in patients with prediabetes, type 2 diabetes, or at least two metabolic risk factors. Adults without prediabetes or type 2 diabetes and with fewer than two metabolic risk factors can generally be reassessed every 2-3 years. New clinical concern can warrant earlier evaluation; a low result does not end longitudinal care."
+      },
+      {
+        "heading": "Recognize situations where the score misleads",
+        "body": "Do not use FIB-4 to stage fibrosis during acute illness. Acute changes in aminotransferases or platelets can distort a score built from those variables. Assess the acute problem and revisit fibrosis risk when appropriate. Normal AST or ALT, few symptoms, or a low FIB-4 should not override evidence that raises concern for advanced disease."
+      },
+      {
+        "heading": "Work through a stable-patient calculation",
+        "body": "A stable 50-year-old has AST 60 U/L, ALT 100 U/L, and platelets 200 × 10⁹/L. FIB-4 = (50 × 60) ÷ (200 × √100) = 3,000 ÷ 2,000 = 1.50. In this age group, the result meets the threshold for secondary assessment. It does not establish F2, F3, or F4 disease or make biopsy automatic."
+      },
+      {
+        "heading": "Read the pathway in context",
+        "body": "The thresholds and intervals here follow the adult AASLD 2023 guidance and the subsequent MASLD nomenclature update. Use the fibrosis assessment algorithm for its intended population and setting. A formula reference developed for HIV/HCV may display different interpretation thresholds; verify the MASLD pathway rather than transferring those cutoffs into this lesson."
+      }
+    ],
+    "check": {
+      "question": "A stable 52-year-old with MASLD has FIB-4 of 1.6 and no acute illness. What follows?",
+      "choices": [
+        "Arrange VCTE or ELF, or referral for secondary fibrosis risk assessment.",
+        "Assign cirrhosis solely from the FIB-4 value.",
+        "Stop fibrosis follow-up if ALT is within the laboratory reference range.",
+        "Require liver biopsy before any other risk assessment."
+      ],
+      "rationale": "At age 52, FIB-4 of 1.6 meets the usual 1.3 threshold for secondary assessment. VCTE or ELF, or referral for risk stratification, can refine risk. FIB-4 alone does not establish cirrhosis, normal ALT does not exclude advanced fibrosis, and biopsy is selective."
+    }
+  },
+  "secondary-assessment": {
+    "metadata": {
+      "summary": "Use VCTE or ELF to refine fibrosis risk, check reliability and clinical agreement, and select specialist testing or biopsy when uncertainty matters.",
+      "concepts": [
+        "VCTE and CAP",
+        "ELF purpose",
+        "Test reliability",
+        "MRE",
+        "Selective biopsy"
+      ],
+      "application": "Resolve intermediate, high, or discordant results with an appropriate next test or specialist review; match each cutoff to its test and purpose.",
+      "keyPoints": [
+        "VCTE stiffness and CAP answer different questions.",
+        "Inflammation or congestion can increase stiffness.",
+        "VCTE and MRE cutoffs are not interchangeable.",
+        "Discordance needs resolution; biopsy is selective."
+      ]
+    },
+    "bodies": [
+      {
+        "heading": "Choose a second test",
+        "body": "After an elevated or indeterminate FIB-4, VCTE or ELF is usually an initial secondary assessment in primary care or endocrinology. VCTE measures liver stiffness; its controlled attenuation parameter, CAP, assesses steatosis rather than fibrosis stage. ELF is a blood-based fibrosis-marker panel and can be useful when elastography is unavailable. Choose the method according to access and clinical context."
+      },
+      {
+        "heading": "Check quality and confounders",
+        "body": "Liver stiffness can increase with marked inflammation, passive congestion, or infiltrative disease as well as fibrosis. Check the examination’s technical reliability and whether the result agrees with the patient’s clinical findings. A questionable measurement or an acute confounder should prompt reassessment or another appropriate test rather than a confident stage assignment."
+      },
+      {
+        "heading": "Reserve advanced tools",
+        "body": "MRE can help resolve indeterminate noninvasive tests or persistent suspicion of more advanced disease in specialist care. Its stiffness scale differs from VCTE even though both report kPa; do not transfer a VCTE cutoff directly to MRE. Consider biopsy selectively for indeterminate or discordant assessment, competing diagnoses, persistent liver-chemistry elevation, or when histology will clarify a consequential decision."
+      },
+      {
+        "heading": "Refer deliberately",
+        "body": "Consider direct gastroenterology or hepatology referral for FIB-4 above 2.67 or aminotransferases persistently above normal for more than six months. Refer for further evaluation when secondary testing remains intermediate or high risk, tests are discordant, advanced disease is suspected, or another liver disease may be present. Normal ALT alone does not cancel the need to resolve fibrosis risk."
+      },
+      {
+        "heading": "Interpret VCTE as a risk assessment",
+        "body": "In the AASLD adult pathway, VCTE liver stiffness below 8 kPa helps exclude advanced fibrosis when used sequentially and the clinical picture agrees. Values between 8 and 12 kPa need further interpretation, and values above 12 kPa raise concern for advanced fibrosis. A high stiffness result has limited positive predictive value and must be assessed in context; it is not automatically a diagnosis of cirrhosis."
+      },
+      {
+        "heading": "Keep ELF purpose and cutoff together",
+        "body": "ELF can provide secondary risk assessment, but its thresholds depend on the clinical question. In confirmed or suspected advanced fibrosis, an ELF value at least 11.3 predicts future liver-related events; that prognostic use differs from merely screening for fibrosis. Do not call 11.3 the universal threshold for every ELF decision, or convert the score directly into a histologic stage."
+      },
+      {
+        "heading": "Resolve a discordant case",
+        "body": "A patient’s FIB-4 is low, but other clinical or imaging findings suggest advanced disease. Reconcile the findings with a specialist instead of accepting the low score as definitive. Additional noninvasive testing, including MRE when appropriate, or selective biopsy may resolve uncertainty. Conversely, if cirrhosis is sufficiently supported by noninvasive tests, clinical data, or imaging, cirrhosis-based care can begin without making biopsy mandatory."
+      }
+    ],
+    "check": {
+      "question": "A stable 48-year-old with suspected MASLD has FIB-4 of 1.7. Which initial secondary assessment is appropriate?",
+      "choices": [
+        "VCTE or ELF, interpreted with clinical findings and test limitations.",
+        "Use CAP alone to assign a fibrosis stage.",
+        "Apply VCTE stiffness thresholds directly to an MRE result.",
+        "Assign F4 disease from FIB-4 without further assessment."
+      ],
+      "rationale": "VCTE or ELF can refine risk after this FIB-4 result. CAP assesses steatosis, VCTE and MRE have different stiffness scales, and FIB-4 alone cannot assign F4 disease."
+    }
+  }
+};
+for (const lesson of metabolicDysfunctionAssociatedSteatoticLiverDiseaseModule.submodules) {
+  const verified = verifiedMasldFibrosisLessons[lesson.slug];
+  if (verified) {
+    Object.assign(lesson, verified.metadata);
+    lesson.lesson = verified.bodies;
+    Object.assign(lesson.check, verified.check);
+  }
+}
+metabolicDysfunctionAssociatedSteatoticLiverDiseaseModule.references.push(...[
+  {
+    "label": "AASLD adult NAFLD practice guidance (2023): fibrosis assessment pathway and test interpretation",
+    "href": "https://doi.org/10.1097/HEP.0000000000000323"
+  },
+  {
+    "label": "AASLD MASLD nomenclature update (2024): application of the adult pathway",
+    "href": "https://pubmed.ncbi.nlm.nih.gov/38445559/"
+  },
+  {
+    "label": "University of Washington FIB-4 formula and input units; use MASLD-specific thresholds for this lesson",
+    "href": "https://www.hepatitisc.uw.edu/page/clinical-calculators/fib-4"
+  }
+]);
