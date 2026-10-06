@@ -264,18 +264,95 @@ export const cysticFibrosisModule = {
       }
     },
     {
-      slug:"cftr-modulators",title:"CFTR Modulator Pharmacology and Safety",visual:"cf-modulators",
-      summary:"Modulators act on mutant CFTR protein rather than downstream mucus alone. Product choice is inseparable from genotype, age, weight, formulation, food, interactions, liver monitoring, and current labeling.",
-      concepts:["Potentiators and correctors","Ivacaftor-responsive variants","Elexacaftor combinations","Vanzacaftor combination","CYP3A and hepatic safety"],
-      application:"Verify the exact genotype and product eligibility, prescribe the age and weight formulation, teach fat-containing food and missed-dose rules, reconcile CYP3A drugs and grapefruit, and schedule current-label laboratory monitoring.",
-      lesson:[
-        {heading:"Match molecular strategy to available protein",body:"Ivacaftor potentiates responsive CFTR channels at the cell surface. Tezacaftor, elexacaftor, lumacaftor, and vanzacaftor are correctors that improve processing and trafficking for selected mutant protein. Deutivacaftor is a potentiator engineered for prolonged exposure. Combination corrector and potentiator therapy addresses more than one defect."},
-        {heading:"Use genotype, age, weight, and formulation",body:"Ivacaftor treats patients with at least one responsive variant under its current label. Elexacaftor, tezacaftor, and ivacaftor has broad F508del and other responsive-variant use with age and weight products. Vanzacaftor, tezacaftor, and deutivacaftor is a once-daily option for eligible patients age 6 years and older. Never infer interchangeability from shared ingredients."},
-        {heading:"Control exposure through food and interactions",body:"Administer labeled modulators with fat-containing food to support absorption. Strong or moderate CYP3A inhibitors require product-specific dose modification. Strong or moderate CYP3A inducers can reduce exposure and are generally not recommended. Review rifamycins, anticonvulsants, azoles, macrolides, herbals, grapefruit, hepatic function, and the exact missed-dose instructions."},
-        {heading:"Respect current liver, neurologic, mental-health, and eye safety",body:"Current Alyftrek and Trikafta labeling includes prominent drug-induced liver injury and liver failure warnings and scheduled ALT, AST, alkaline phosphatase, and bilirubin monitoring. Current ivacaftor-containing labels also warn about intracranial hypertension. Unusual headache, blurred or double vision, vision loss, nausea, or vomiting requires prompt evaluation. Alyftrek labeling includes serious mental-health events, so new or worsening anxiety, depression, suicidal thoughts, behavior changes, or sleep disturbance requires immediate clinical review. Pediatric patients require baseline and follow-up ophthalmologic examinations for lens opacities."},
+      "slug": "cftr-modulators",
+      "title": "CFTR Modulator Pharmacology and Safety",
+      "visual": "cf-modulators",
+      "summary": "Modulators act on mutant CFTR protein rather than downstream mucus alone. Product choice is inseparable from genotype, age, weight, formulation, food, interactions, liver monitoring, and current labeling.",
+      "concepts": [
+        "Correctors versus potentiators",
+        "Product-specific genotype and age eligibility",
+        "Age, weight, strength, and daily components",
+        "CYP3A and hepatic dose modifications",
+        "Liver, eye, intracranial, and mental-health monitoring"
       ],
-      keyPoints:["Genotype controls eligibility.","Correctors and potentiators have different jobs.","Fat-containing food and CYP3A matter.","Current labels require active liver monitoring."],
-      check:{question:"What is the primary role of a CFTR corrector?",choices:["Improve folding and trafficking of selected mutant CFTR protein","Directly digest extracellular airway DNA","Replace pancreatic lipase","Eradicate Pseudomonas"],answer:0,rationale:"Correctors increase the amount of selected mutant CFTR protein reaching the cell surface.",reviewHref:"#cftr-modulators"},
+      "application": "Verify the genotype and clinical diagnosis against the exact product indication, calculate the complete age-and-weight regimen, reconcile CYP3A and hepatic changes, and teach product-specific food, missed doses, examinations, and warning symptoms.",
+      "lesson": [
+        {
+          "heading": "Match molecular strategy to available protein",
+          "body": "Ivacaftor and deutivacaftor are potentiators: they improve opening of responsive CFTR channels at the cell surface. Lumacaftor, tezacaftor, elexacaftor, and vanzacaftor are correctors that improve processing and trafficking of selected mutant protein. Elexacaftor plus tezacaftor, or vanzacaftor plus tezacaftor, act at different binding sites and can increase the amount of CFTR reaching the surface; the accompanying potentiator improves its activity. Deutivacaftor is the potentiator in once-daily Alyftrek. A potentiator cannot act on protein that never reaches the surface, and a corrector does not repair every mutation. For individual variants, the size of an in vitro chloride-transport response does not predict the size of a clinical response."
+        },
+        {
+          "heading": "Use genotype, age, weight, and formulation",
+          "body": "Eligibility follows the exact current US label, rather than a shared modulator-class rule. Kalydeco is ivacaftor alone for patients at least 1 month old with at least one ivacaftor-responsive mutation. Orkambi is lumacaftor/ivacaftor for patients at least 1 year old who are homozygous for F508del; one F508del allele alone does not meet that indication. Symdeko is tezacaftor/ivacaftor for patients at least 6 years old who are homozygous for F508del or have at least one mutation responsive to that combination. Current Trikafta, from age 2, and Alyftrek, from age 6, require a clinical diagnosis of CF and at least one CFTR variant that is responsive on clinical or in vitro evidence or results in CFTR protein production. Do not reduce those two current indications to an older list of named responsive variants. Verify the genotype and the product-specific eligibility language; shared ingredients do not make products interchangeable."
+        },
+        {
+          "heading": "Control exposure through food and interactions",
+          "body": "Take each labeled modulator with fat-containing food. Reconcile prescription drugs, herbals, grapefruit, and liver function before starting or changing treatment. Strong CYP3A inducers such as rifampin are not recommended with any of these five products; Alyftrek also advises against moderate inducers. Do not transfer that broader rule to every product: Orkambi specifies no dosage adjustment with moderate or weak inducers. Kalydeco, Symdeko, Trikafta, and Alyftrek have their own inhibitor dose modifications. Orkambi differs because lumacaftor strongly induces CYP3A; starting an inhibitor during established Orkambi treatment differs from starting Orkambi during strong-inhibitor treatment. Avoid grapefruit with Kalydeco, Symdeko, Trikafta, and Alyftrek; Orkambi counseling specifies avoidance during its first treatment week. Follow the exact product instructions rather than applying one universal interval or tablet count."
+        },
+        {
+          "heading": "Respect current liver, neurologic, mental-health, and eye safety",
+          "body": "Trikafta and Alyftrek carry boxed warnings about serious liver injury and liver failure and require an active laboratory plan. The other products also require liver monitoring, but the tests and schedule differ. All five current labels include intracranial-hypertension, neuropsychiatric, hypersensitivity, and pediatric lens-opacity precautions. Establish baseline symptoms and scheduled examinations, and teach which new symptoms require prompt or immediate review. These postmarketing reports support monitoring and individual benefit-risk decisions; they do not prove that every symptom in a treated person is caused by the drug."
+        },
+        {
+          "heading": "Dose Trikafta by age, weight, and both daily components",
+          "body": "Trikafta combines elexacaftor/tezacaftor/ivacaftor in the morning with ivacaftor alone in the evening, approximately 12 hours apart, both with fat-containing food. At ages 2 to less than 6, use one morning granule packet: 80/40/60 mg below 14 kg or 100/50/75 mg at 14 kg or above, followed by evening ivacaftor 59.5 mg or 75 mg respectively. At ages 6 to less than 12 below 30 kg, take two 50/25/37.5 mg combination tablets in the morning, totaling 100/50/75 mg, and ivacaftor 75 mg in the evening. At 30 kg or above in that age group, or from age 12 regardless of weight, take two 100/50/75 mg combination tablets in the morning, totaling 200/100/150 mg, and ivacaftor 150 mg in the evening. An eligible 8-year-old weighing exactly 30 kg therefore receives 300 mg total ivacaftor daily, including both components. Swallow tablets whole. Mix a whole granule packet into one teaspoon (5 mL) of age-appropriate soft food or liquid at or below room temperature, consume it completely within one hour, and give it immediately before or after fat-containing food. Yogurt or milk can be suitable; do not borrow an acidic-food-only rule from pancreatic-enzyme instructions."
+        },
+        {
+          "heading": "Dose Alyftrek once daily without a separate evening potentiator",
+          "body": "Alyftrek contains vanzacaftor/tezacaftor/deutivacaftor and is taken once daily, at about the same time, with fat-containing food. At ages 6 to less than 12 below 40 kg, take three 4/20/50 mg tablets, totaling 12/60/150 mg daily. At 40 kg or above in that age group, or from age 12 regardless of weight, take two 10/50/125 mg tablets, totaling 20/100/250 mg daily. An eligible 8-year-old weighing 39 kg needs 3 tablets daily, or 84 tablets for 28 days. At exactly 40 kg, the usual regimen changes to two tablets of the higher strength, or 56 tablets for 28 days; tablet count alone does not establish equal exposure. Swallow tablets whole. Alyftrek has no separately scheduled evening ivacaftor dose."
+        },
+        {
+          "heading": "Distinguish Kalydeco and Symdeko schedules",
+          "body": "Kalydeco from age 6 is ivacaftor 150 mg every 12 hours with fat-containing food. Below age 6, the granule dose follows both age and weight: 5.8 mg every 12 hours from 1 to less than 2 months at 3 kg or above; 13.4 mg from 2 to less than 4 months at 3 kg or above; 25 mg from 4 to less than 6 months at 5 kg or above. From 6 months to less than 6 years, use 25 mg at 5 to less than 7 kg, 50 mg at 7 to less than 14 kg, or 75 mg at 14 kg or above, every 12 hours. Use in infants aged 1 to less than 6 months born before 37 weeks gestation has not been evaluated. Kalydeco is not recommended below 6 months with any hepatic impairment or with moderate or strong CYP3A inhibitors. Symdeko uses one morning tezacaftor/ivacaftor tablet and one evening ivacaftor tablet approximately 12 hours apart: 50/75 mg then 75 mg at ages 6 to less than 12 below 30 kg; 100/150 mg then 150 mg at 30 kg or above or from age 12. Whole Kalydeco granule packets use the same one-teaspoon, at-or-below-room-temperature, consume-within-one-hour method with fat-containing food; Symdeko is a tablet regimen."
+        },
+        {
+          "heading": "Account for Orkambi-specific exposure and adverse effects",
+          "body": "Orkambi is taken every 12 hours with fat-containing food. Patients aged 6 through 11 take two 100/125 mg lumacaftor/ivacaftor tablets per dose, totaling 200/250 mg per dose. From age 12, two 200/125 mg tablets provide 400/250 mg per dose. Younger eligible patients use the exact age-and-weight granule strength in the label; each dose is a whole packet mixed into one teaspoon (5 mL) of age-appropriate soft food or liquid at or below room temperature and consumed completely within one hour. Lumacaftor induction can reduce exposure to other drugs. Hormonal contraceptives, including oral, injectable, transdermal, and implantable products, should not be relied on for effective contraception with Orkambi; arrange an appropriate alternative with the clinical team. That warning must not be automatically transferred to Symdeko or Trikafta, whose labels do not expect reduced hormonal-contraceptive efficacy. Monitor blood pressure periodically. Chest discomfort or dyspnea may occur during initiation, particularly with advanced lung disease; arrange closer monitoring when percent-predicted FEV1 is below 40. Advanced liver disease requires particular caution and the label-specific reduced-dose plan."
+        },
+        {
+          "heading": "Apply the exact CYP3A inhibitor schedule",
+          "body": "Inhibitor adjustments are product and formulation specific. With a strong CYP3A inhibitor, an adult taking Alyftrek uses one 10/50/125 mg tablet once weekly; with a moderate inhibitor, one such tablet every other day. For eligible children aged 6 to less than 12 below 40 kg, the corresponding Alyftrek dose is two 4/20/50 mg tablets once weekly or every other day. This differs from adult Trikafta: with a strong inhibitor, give the usual two morning combination tablets twice weekly, approximately 3 to 4 days apart, with no evening ivacaftor on any day. With a moderate inhibitor, alternate the usual morning combination dose on day 1 with ivacaftor alone in the morning on day 2, again with no evening dose. Follow its age-and-weight table for pediatric formulations. Symdeko uses its one combination tablet twice weekly for strong inhibition, or alternates the morning combination tablet with morning ivacaftor on successive days for moderate inhibition, with no evening dose. Kalydeco from 6 months uses its usual age-and-weight dose twice weekly with a strong inhibitor or once daily with a moderate inhibitor. For established Orkambi, adding a CYP3A inhibitor does not require a dosage adjustment; starting or restarting Orkambi after an interruption longer than one week while already taking a strong inhibitor requires its first-week reduction: one tablet daily from age 6 or one age-and-weight granule packet every other day below age 6, then the usual regimen. Orkambi can also reduce azole exposure, so review both sides of the interaction."
+        },
+        {
+          "heading": "Separate hepatic dose adjustment from toxicity interruption",
+          "body": "Hepatic impairment changes exposure before treatment-related injury is considered. Trikafta and Alyftrek should not be used in severe Child-Pugh C impairment. Both are not recommended in Child-Pugh B unless there is a clear medical need and the expected benefit outweighs risk; close monitoring is required if used. Trikafta then requires a reduced age-and-formulation schedule from its label. Alyftrek instead uses its usual age-and-weight dose if the exceptional decision to treat is made; do not copy the Trikafta reduction. Child-Pugh A does not require dose adjustment for these two, but liver monitoring remains necessary. Kalydeco and Symdeko have their own reduced regimens for moderate and cautious severe-impairment use; Kalydeco below 6 months is not recommended with any hepatic impairment. Orkambi also has a separate age-and-weight hepatic table. Never substitute a chronic hepatic dose adjustment for interrupting treatment when new significant liver injury develops."
+        },
+        {
+          "heading": "Teach missed doses by product and morning-versus-evening timing",
+          "body": "For Alyftrek, a missed dose remembered within 6 hours is taken with fat-containing food, followed by the usual schedule; more than 6 hours late, skip it and take the next dose the following day. For standard Trikafta, a dose remembered within 6 hours is taken and the schedule continues. If more than 6 hours have passed after a missed morning combination dose, take that morning dose as soon as possible and omit the evening ivacaftor; resume the next morning as usual. If the missed Trikafta dose was the evening ivacaftor and more than 6 hours have passed, skip it and resume the next morning. Never take morning and evening Trikafta doses together. For example, an 8 a.m. dose remembered at 3 p.m. is 7 hours late: usual Trikafta morning-dose instructions call for taking it and omitting that evening dose; usual Alyftrek instructions call for skipping it. Kalydeco, Symdeko, and Orkambi use the within-6-hours take, more-than-6-hours skip rule; do not double a dose. Ask the team about uncertainty during an adjusted inhibitor or hepatic regimen."
+        },
+        {
+          "heading": "Schedule liver tests and recognize interruption thresholds",
+          "body": "Before Trikafta or Alyftrek, obtain ALT, AST, alkaline phosphatase, and bilirubin. Monitor monthly for the first 6 months, every 3 months for the next 12 months, then at least annually; consider more frequent testing with prior liver disease or abnormal tests. Interrupt for ALT or AST above 5 times the upper limit of normal, or above 3 times with bilirubin above 2 times, or signs or symptoms of liver injury such as jaundice, right-upper-quadrant pain, nausea, vomiting, altered mental status, or ascites. ALT at 6 times the upper limit calls for interruption even when bilirubin is normal. Assess promptly, follow tests until resolution, consider hepatology input, and restart only when the expected benefit outweighs risk, with closer monitoring. Alyftrek also calls for close follow-up when prior elexacaftor/tezacaftor/ivacaftor was interrupted or stopped for adverse effects. Kalydeco and Symdeko specify baseline ALT/AST, every 3 months in the first year, then annually; Orkambi includes bilirubin in that schedule. Their own interruption criteria and previous abnormalities still matter. Do not apply the less frequent older-product schedule to Trikafta or Alyftrek."
+        },
+        {
+          "heading": "Monitor lenses, intracranial symptoms, and mental health",
+          "body": "All five products recommend baseline and follow-up ophthalmologic examinations in pediatric patients. Normal reported vision does not replace those examinations; lens opacity may be detected before symptoms. A new unusual headache, blurred or double vision, or vision loss raises concern for intracranial hypertension, which can include papilledema. When suspected, interrupt the product and arrange prompt medical evaluation, then monitor resolution and recurrence; elevated vitamin A levels may increase risk. Do not dismiss these symptoms as routine cataract surveillance. Current labels also call for assessment of baseline neuropsychiatric symptoms and monitoring for new or worsening anxiety, depression, suicidal thoughts or behavior, or sleep disturbance, with or without a prior history. Teach immediate clinical contact for these changes. Interruption and any restart require the individual benefit-risk assessment; automatic permanent cessation for every symptom is not the label instruction. Serious hypersensitivity, including anaphylaxis, requires discontinuation and appropriate urgent treatment."
+        },
+        {
+          "heading": "Reconcile transitions and assess the actual response",
+          "body": "Before a transition, verify the complete component list, the stop-and-start plan, tablet or packet strength, food, interaction modifications, liver and eye follow-up, and access to the full regimen. Do not combine separate modulator products or retain an old ivacaftor prescription automatically: doing so can duplicate a potentiator or create an unstudied regimen. Evaluate clinical response in the CF-center plan; in vitro responsiveness does not guarantee a particular improvement for an individual. Store these products at labeled controlled room temperature, generally 20 to 25 degrees C with permitted excursions to 15 to 30 degrees C. Recheck the current label when prescribing because eligibility, warnings, and dose instructions can change."
+        }
+      ],
+      "keyPoints": [
+        "Confirm current product eligibility and formulation.",
+        "Correct trafficking and potentiate surface-channel opening.",
+        "Alyftrek and Trikafta have different dose and missed-dose rules.",
+        "Orkambi induction affects other drugs and hormonal contraception.",
+        "Schedule the exact label tests and interrupt significant liver injury."
+      ],
+      "check": {
+        "question": "What is the primary role of a CFTR corrector?",
+        "choices": [
+          "Improve folding and trafficking of selected mutant CFTR protein",
+          "Increase opening probability without changing protein trafficking",
+          "Guarantee that every CFTR variant produces functional surface protein",
+          "Replace genotype and product eligibility assessment"
+        ],
+        "answer": 0,
+        "rationale": "Correctors increase delivery of selected mutant CFTR protein to the surface. Increasing channel opening describes a potentiator; a corrector cannot guarantee rescue of every variant and does not remove genotype or product eligibility requirements.",
+        "reviewHref": "#cftr-modulators"
+      }
     },
     {
       "slug": "cf-nutrition-gi-endocrine",
@@ -419,6 +496,8 @@ export const cysticFibrosisModule = {
   ],
   questionBank:cysticFibrosisQuestionBank,
   references:[
+    {"label": "DailyMed: current Symdeko full US prescribing information", "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=302ae804-37db-44fd-ac2f-3dbdeda9aa4b"},
+    {"label": "DailyMed: current Orkambi full US prescribing information", "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3fc1c40e-cfac-47a1-9e1a-61ead3570600"},
     {"label": "CF Foundation: initial Pseudomonas eradication", "href": "https://www.cff.org/medical-professionals/eradication-initial-p-aeruginosa-clinical-care-guidelines"},
     {"label": "CF Foundation: NTM screening and positive-culture azithromycin hold", "href": "https://www.cff.org/medical-professionals/nontuberculous-mycobacteria-clinical-care-guidelines"},
     {"label": "DailyMed: TOBI solution full US prescribing information", "href": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=6a3c3871-1d3a-44d6-8be3-526b30123ef7"},
@@ -455,8 +534,8 @@ export const cysticFibrosisModule = {
     {"label": "Quon et al. CF kidney-risk cohort (2011)", "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3262023/"},
 
     {label:"Cystic Fibrosis Foundation clinical care guidelines",href:"https://www.cff.org/medical-professionals/clinical-care-guidelines"},
-    {label:"FDA Alyftrek prescribing information",href:"https://www.accessdata.fda.gov/drugsatfda_docs/label/2024/218730s000lbl.pdf"},
-    {label:"FDA Trikafta prescribing information",href:"https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/212273s015lbl.pdf"},
-    {label:"FDA Kalydeco prescribing information",href:"https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/203188s041%2C207925s019lbl.pdf"},
+    {"label": "DailyMed: current Alyftrek full US prescribing information", "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7e635909-c6fd-4f0d-ae77-cdff03653a20"},
+    {"label": "DailyMed: current Trikafta full US prescribing information", "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f354423a-85c2-41c3-a9db-0f3aee135d8d"},
+    {"label": "DailyMed: current Kalydeco full US prescribing information", "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0ab0c9f8-3eee-4e0f-9f3f-c1e16aaffe25"},
   ],
 };

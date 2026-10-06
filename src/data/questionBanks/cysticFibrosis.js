@@ -1058,4 +1058,292 @@ const infectionCases = [
     "reviewHref": "#cf-infection-exacerbations"
   }
 ];
-export const cysticFibrosisQuestionBank = [...originalCysticFibrosisQuestionBank.map((question) => ({ ...question, ...(sourceReviewedEnzymeSafetyQuestions[question.id] || {}), ...(reviewedNutritionSystemicQuestions[question.id] || {}), ...(reviewedDiagnosisAirwayPulmonaryQuestions[question.id] || {}), ...(reviewedInfectionQuestions[question.id] || {}) })), ...nutritionSystemicCases, ...diagnosisAirwayPulmonaryCases, ...infectionCases];
+const reviewedModulatorQuestions = {
+  "cf-065": {
+    "choices": [
+      "Ivacaftor and deutivacaftor increase opening of responsive CFTR channels already present at the cell surface.",
+      "They replace the need for CFTR protein at the cell surface",
+      "They primarily improve intracellular folding rather than channel opening",
+      "They guarantee equal clinical benefit for every CFTR mutation"
+    ],
+    "rationale": "Potentiators improve gating of responsive surface channels. They need protein at the surface; processing and trafficking are primarily corrector roles; variant responsiveness and clinical benefit cannot be assumed identical."
+  },
+  "cf-066": {
+    "choices": [
+      "Use only for an eligible genotype within current age, formulation, food, interaction, and monitoring requirements.",
+      "Use the same dose for every age because the target is identical",
+      "Use ivacaftor alone for every genotype with impaired CFTR processing",
+      "Ignore CYP3A inhibitors when the patient takes the drug with fat"
+    ],
+    "rationale": "Eligibility and the exact regimen matter. Age and weight can change the formulation or dose; monotherapy cannot rescue every processing defect; fat-containing food does not cancel CYP3A inhibition."
+  },
+  "cf-067": {
+    "choices": [
+      "Review responsive variant, age, weight, product, fat-containing food, CYP3A drugs, liver tests, eye examination, and adherence.",
+      "Review only the variant name, omitting age and formulation",
+      "Review food and adherence but disregard CYP3A drugs and liver tests",
+      "Review symptoms alone and omit recommended pediatric eye examinations"
+    ],
+    "rationale": "The broad assessment addresses responsiveness, formulation, exposure, safety, and implementation. The alternatives omit dose eligibility, interaction and hepatic risk, or scheduled eye surveillance. A responsive-variant assessment for potentiator therapy is not a claim that every combination uses the same eligibility list."
+  },
+  "cf-068": {
+    "choices": [
+      "Potentiator monotherapy cannot correct every processing mutation or justify off-label genotype assumptions.",
+      "Checking whether the channel is responsive to the specific product",
+      "Checking the pediatric formulation and weight before dispensing",
+      "Scheduling the recommended liver and eye monitoring"
+    ],
+    "rationale": "Assuming monotherapy can rescue every processing mutation is the hazard. Verifying product responsiveness, formulation, and surveillance are safeguards. Surface protein is needed for potentiation, and label eligibility remains product specific."
+  },
+  "cf-069": {
+    "choices": [
+      "Correctors improve processing and trafficking of selected mutant CFTR, while a potentiator improves channel activity.",
+      "Correctors and potentiators have identical molecular roles",
+      "Every corrector repairs every CFTR variant",
+      "A combination eliminates the requirement for CFTR protein production"
+    ],
+    "rationale": "Correctors improve processing and trafficking of selected protein, while potentiators improve its surface-channel activity. Their roles are distinct, rescue is not universal, and availability of CFTR protein still matters."
+  },
+  "cf-070": {
+    "choices": [
+      "Verify the exact fixed combination and prevent duplicate or incomplete ingredients during transitions.",
+      "Retain the old separate ivacaftor prescription automatically after switching",
+      "Substitute any shared-ingredient combination tablet for the prescribed strength",
+      "Add a second complete modulator regimen to supply one missing component"
+    ],
+    "rationale": "Review the complete fixed regimen during transitions. Automatic retained ivacaftor can duplicate exposure; shared ingredients do not establish strength or schedule equivalence; combining complete regimens is not an appropriate way to replace a missing component."
+  },
+  "cf-071": {
+    "choices": [
+      "Review genotype, prior product, component list, age, weight, morning and evening schedule, food, interaction, liver tests, and supply.",
+      "Review only the brand name and omit both daily components",
+      "Review the genotype but disregard weight, strength, and interaction changes",
+      "Review laboratory tests while omitting the ability to obtain the full regimen"
+    ],
+    "rationale": "The comprehensive assessment connects eligibility, components, dosing, exposure, safety, and supply. A brand-only review misses daily components; genotype alone does not determine dose or interactions; laboratory review does not establish access to the prescribed regimen. Alyftrek has one daily dose and no separate evening ivacaftor."
+  },
+  "cf-072": {
+    "choices": [
+      "Combining separate modulator products without specialist direction can duplicate ivacaftor or produce an unstudied regimen.",
+      "Verifying the full component list during a switch",
+      "Documenting a specialist-directed stop-and-start plan",
+      "Checking the prescribed tablet strength and complete daily schedule"
+    ],
+    "rationale": "Uncoordinated mixing can duplicate ivacaftor or create an unstudied regimen. Component verification, an explicit transition plan, and strength and schedule checks prevent that hazard rather than causing it."
+  },
+  "cf-073": {
+    "choices": [
+      "Food fat supports absorption, while CYP3A inhibitors and inducers can substantially change modulator exposure.",
+      "Fat-containing food makes CYP3A inhibition clinically irrelevant",
+      "Every product has the same inhibitor dose adjustment",
+      "All products respond identically to moderate CYP3A induction"
+    ],
+    "rationale": "Food and CYP3A both affect exposure. Food does not neutralize inhibition; dose schedules differ substantially among products; Alyftrek advises against moderate induction, whereas Orkambi specifies no adjustment for moderate or weak inducers."
+  },
+  "cf-074": {
+    "choices": [
+      "Teach the product-specific meal and dose modification and avoid strong or moderate inducers when labeling advises against use.",
+      "Give every product the same once-weekly inhibitor regimen",
+      "Apply the Trikafta missed-morning-dose rule to Alyftrek",
+      "Reduce established Orkambi automatically whenever a CYP3A inhibitor is added"
+    ],
+    "rationale": "Product-specific instructions prevent exposure errors. Once-weekly dosing is not universal, Alyftrek skips a dose more than 6 hours late while Trikafta has a distinct morning rule, and established Orkambi does not require an automatic reduction when an inhibitor is added."
+  },
+  "cf-075": {
+    "choices": [
+      "Review diet, missed doses, azoles, macrolides, rifamycins, anticonvulsants, herbals, grapefruit, liver status, and interaction plan.",
+      "Review azoles only and omit rifamycins and herbals",
+      "Review food alone because missed doses and liver function do not affect exposure",
+      "Review only drugs started before the modulator and ignore later prescriptions"
+    ],
+    "rationale": "The complete review covers administration and medicines that change exposure, including new drugs. Azoles alone miss inducers and herbals; food alone misses timing and hepatic effects; later prescriptions can create clinically important interactions."
+  },
+  "cf-076": {
+    "choices": [
+      "Ignoring a new rifampin prescription can reduce modulator exposure and clinical benefit.",
+      "Reconciling newly prescribed rifampin before coadministration",
+      "Checking whether a new azole requires the exact label adjustment",
+      "Reviewing grapefruit and herbal supplements at follow-up"
+    ],
+    "rationale": "Ignoring rifampin can lower exposure and effectiveness; strong induction is not recommended with these products. Reconciling rifampin, checking azole adjustments, and reviewing grapefruit or herbals are protective actions."
+  },
+  "cf-077": {
+    "choices": [
+      "Current triple-modulator labels require baseline and scheduled ALT, AST, alkaline phosphatase, and bilirubin monitoring for serious liver injury risk.",
+      "Normal baseline tests eliminate the need for later monitoring",
+      "ALT and AST alone fulfill the current triple-product monitoring requirements",
+      "All five products require only annual testing from treatment initiation"
+    ],
+    "rationale": "Trikafta and Alyftrek require all four listed tests at baseline and at scheduled intervals. Normal baseline results do not remove surveillance, transaminases alone omit alkaline phosphatase and bilirubin, and annual-only monitoring misses required early testing."
+  },
+  "cf-078": {
+    "choices": [
+      "Follow the exact product schedule, interrupt for significant abnormalities or symptoms, and reassess benefit before any restart.",
+      "Continue until bilirubin rises even when ALT is above 5 times normal",
+      "Restart automatically at the next scheduled dose after a significant elevation",
+      "Substitute a lower chronic hepatic dose for assessment of new liver injury"
+    ],
+    "rationale": "Follow the exact interruption and restart criteria. ALT or AST above 5 times normal is sufficient for interruption without elevated bilirubin; restart follows resolution and a benefit-risk decision; chronic hepatic dose adjustment does not replace evaluation of new injury."
+  },
+  "cf-079": {
+    "choices": [
+      "Review baseline liver disease, all four tests, symptoms, alcohol, hepatotoxic drugs, trend, timing, interruption criteria, and specialist input.",
+      "Review only a single ALT value without symptoms or a trend",
+      "Review bilirubin alone and assume normal bilirubin excludes liver injury",
+      "Review the prescription dose while omitting baseline disease and hepatotoxic drugs"
+    ],
+    "rationale": "The listed broad assessment supports liver-risk evaluation, especially for Trikafta and Alyftrek, which require all four tests. One isolated ALT omits context; normal bilirubin does not exclude significant transaminase injury; dose review alone misses prior disease and other hepatotoxic exposures. Older products have their own required test panels and schedules."
+  },
+  "cf-080": {
+    "choices": [
+      "Checking transaminases alone can miss cholestatic or bilirubin evidence included in current monitoring requirements.",
+      "Obtaining all four required tests for Trikafta or Alyftrek",
+      "Reviewing jaundice, abdominal symptoms, and laboratory trends",
+      "Following the product-specific interruption and restart criteria"
+    ],
+    "rationale": "Transaminases alone do not complete current Trikafta or Alyftrek monitoring because alkaline phosphatase and bilirubin are also required. The other choices provide the missing panel, clinical context, or appropriate action. This does not assert an identical mandatory panel for every older product."
+  },
+  "cf-081": {
+    "choices": [
+      "Ivacaftor-containing therapy carries a recommendation for baseline and follow-up ophthalmologic examinations in pediatric patients.",
+      "Eye examinations are needed only after visual symptoms begin",
+      "Normal baseline vision eliminates the need for follow-up",
+      "Pediatric lens-opacity precautions apply only to monotherapy"
+    ],
+    "rationale": "Baseline and follow-up examinations are recommended for pediatric ivacaftor-containing regimens. Waiting for symptoms, stopping follow-up after a normal baseline, or limiting surveillance to monotherapy misses the label recommendations. Alyftrek, which contains deutivacaftor, also recommends pediatric examinations."
+  },
+  "cf-082": {
+    "choices": [
+      "Arrange baseline and follow-up ophthalmologic examinations for pediatric patients receiving the exact modulator product.",
+      "Wait for reported blurred vision before arranging any examination",
+      "Use liver tests in place of a baseline lens examination",
+      "Assume the recommendation disappears when ivacaftor is part of a combination"
+    ],
+    "rationale": "Arrange the recommended baseline and follow-up pediatric ophthalmologic examinations for the exact product. Symptom-only surveillance can miss lens findings, liver tests do not examine lenses, and combination therapy retains the recommendation."
+  },
+  "cf-083": {
+    "choices": [
+      "Review age, product, baseline examination, lens findings, visual symptoms, follow-up date, corticosteroid exposure, and access.",
+      "Review only whether the patient currently reports normal vision",
+      "Review age and product but omit baseline findings and the follow-up date",
+      "Review the examination date but disregard new visual symptoms or access barriers"
+    ],
+    "rationale": "The complete review connects recommended surveillance with lens findings, symptoms, additional risk factors, and access. Reported normal vision cannot replace examination, a product review alone misses follow-up, and a date alone does not assess symptoms or the ability to attend."
+  },
+  "cf-084": {
+    "choices": [
+      "Assuming absence of visual symptoms excludes lens opacity can miss an asymptomatic finding.",
+      "Obtaining an examination despite no reported visual symptoms",
+      "Documenting baseline lens findings and the follow-up plan",
+      "Promptly assessing a new unusual headache with double vision"
+    ],
+    "rationale": "Assuming no symptoms means no lens opacity is unsafe; examinations can detect asymptomatic findings. Examination and follow-up are safeguards. New unusual headache with double vision needs prompt assessment for intracranial hypertension rather than dismissal as routine lens surveillance."
+  }
+};
+const modulatorCases = [
+  {
+    "id": "cf-alyftrek-weight-supply",
+    "question": "An eligible 8-year-old weighing 39 kg receives standard Alyftrek with no hepatic or CYP3A modification. Which regimen and 28-day supply are correct?",
+    "choices": [
+      "Three 4/20/50 mg tablets once daily; 84 tablets",
+      "Two 10/50/125 mg tablets once daily; 56 tablets",
+      "Three 4/20/50 mg tablets twice daily; 168 tablets",
+      "One 4/20/50 mg tablet daily; 28 tablets"
+    ],
+    "answer": 0,
+    "rationale": "Below 40 kg at ages 6 to less than 12, three lower-strength tablets total 12/60/150 mg once daily; 3 times 28 equals 84 tablets. Two higher-strength tablets are the standard regimen at 40 kg or above, twice-daily dosing doubles the intended frequency, and one lower-strength tablet is incomplete. Give with fat-containing food.",
+    "reviewHref": "#cftr-modulators"
+  },
+  {
+    "id": "cf-trikafta-thirty-kg-boundary",
+    "question": "An eligible 8-year-old weighs exactly 30 kg and takes standard Trikafta without hepatic or CYP3A modification. What is the complete regimen?",
+    "choices": [
+      "Two 100/50/75 mg combination tablets each morning and ivacaftor 150 mg each evening",
+      "Two 50/25/37.5 mg combination tablets each morning and ivacaftor 75 mg each evening",
+      "Two 100/50/75 mg combination tablets each morning without any evening dose",
+      "One 100/50/75 mg combination tablet morning and evening"
+    ],
+    "answer": 0,
+    "rationale": "Exactly 30 kg belongs to the at-least-30-kg group: the two morning tablets total 200/100/150 mg, followed by 150 mg ivacaftor about 12 hours later, both with fat-containing food. The lower-strength regimen is for below 30 kg, omitting evening ivacaftor is not the standard regimen, and using a combination tablet in the evening changes components and dosing.",
+    "reviewHref": "#cftr-modulators"
+  },
+  {
+    "id": "cf-alyftrek-strong-inhibitor",
+    "question": "An adult taking Alyftrek needs a strong CYP3A inhibitor. No hepatic impairment is present, and the CF team follows the current label adjustment. Which Alyftrek regimen applies?",
+    "choices": [
+      "One 10/50/125 mg tablet once weekly",
+      "Two 10/50/125 mg tablets twice weekly",
+      "Two 10/50/125 mg tablets every day",
+      "One 10/50/125 mg tablet every other day"
+    ],
+    "answer": 0,
+    "rationale": "Adult Alyftrek with strong CYP3A inhibition uses one higher-strength tablet once weekly. Twice-weekly two-tablet dosing copies another product schedule; the usual daily two-tablet regimen fails to adjust exposure; every-other-day one-tablet dosing is the Alyftrek moderate-inhibitor schedule. Give the adjusted dose with fat-containing food.",
+    "reviewHref": "#cftr-modulators"
+  },
+  {
+    "id": "cf-modulator-seven-hour-missed-morning",
+    "question": "Patients on standard Trikafta and standard Alyftrek each miss an 8 a.m. dose and remember at 3 p.m. No interaction or hepatic adjustment applies. Which product-specific counseling is correct?",
+    "choices": [
+      "Take the missed Trikafta morning dose and omit its evening ivacaftor; skip the missed Alyftrek dose",
+      "Skip both doses because they are more than 6 hours late",
+      "Take both missed doses and all originally scheduled later doses",
+      "Take Trikafta morning and evening components together at 3 p.m."
+    ],
+    "answer": 0,
+    "rationale": "3 p.m. minus 8 a.m. is 7 hours. More than 6 hours after a missed Trikafta morning dose, take it and omit evening ivacaftor, then resume next morning. Alyftrek instead skips that missed dose and resumes the next day. Skipping both misapplies the Alyftrek rule, taking all later doses ignores the Trikafta evening omission, and combining morning and evening Trikafta is prohibited.",
+    "reviewHref": "#cftr-modulators"
+  },
+  {
+    "id": "cf-trikafta-alt-interruption",
+    "question": "A person taking Trikafta has ALT at 6 times the upper limit of normal and normal bilirubin. Which medication response follows the liver-safety warning?",
+    "choices": [
+      "Interrupt Trikafta and promptly assess and follow liver tests; reassess benefit and risk before any restart",
+      "Continue unchanged until bilirubin is above 2 times normal",
+      "Continue unchanged because the person has no jaundice",
+      "Restart automatically the next morning after skipping one evening dose"
+    ],
+    "answer": 0,
+    "rationale": "ALT or AST above 5 times normal is sufficient for interruption, even without elevated bilirubin or jaundice. The separate above-3-times threshold with bilirubin above 2 times does not negate that rule. Assess, follow resolution, and make an individual benefit-risk restart decision; an automatic one-dose pause is insufficient.",
+    "reviewHref": "#cftr-modulators"
+  },
+  {
+    "id": "cf-orkambi-contraception-interaction",
+    "question": "A person taking established Orkambi relies on a hormonal contraceptive implant. Which interaction counseling is supported?",
+    "choices": [
+      "Do not rely on the hormonal implant for effective contraception with Orkambi; arrange an appropriate alternative with the team",
+      "An implant is unaffected because it is not an oral contraceptive",
+      "Fat-containing food prevents the interaction",
+      "The warning necessarily means Symdeko and Trikafta also reduce hormonal-contraceptive efficacy"
+    ],
+    "answer": 0,
+    "rationale": "Lumacaftor induction can reduce hormonal-contraceptive exposure; the Orkambi warning includes implants as well as oral, injectable, and transdermal methods. Route and food do not remove the interaction. Symdeko and Trikafta labeling do not expect reduced hormonal-contraceptive efficacy, so do not transfer this product-specific warning automatically.",
+    "reviewHref": "#cftr-modulators"
+  },
+  {
+    "id": "cf-kalydeco-young-infant-inhibitor",
+    "question": "An otherwise eligible 5-month-old receives Kalydeco and is newly prescribed a moderate CYP3A inhibitor. Which conclusion follows the current label?",
+    "choices": [
+      "Concomitant moderate CYP3A inhibition is not recommended below 6 months; obtain a specialist medication plan",
+      "Reduce Kalydeco to once daily by copying the older-child adjustment automatically",
+      "Keep the same dose because fat-containing food cancels inhibition",
+      "Switch automatically to adult tablet strength twice weekly"
+    ],
+    "answer": 0,
+    "rationale": "Kalydeco below 6 months is not recommended with moderate or strong CYP3A inhibitors. The once-daily modification applies from 6 months, food does not cancel increased exposure, and an adult tablet regimen does not apply to this infant. Arrange product-specific specialist review rather than inventing a dose.",
+    "reviewHref": "#cftr-modulators"
+  },
+  {
+    "id": "cf-modulator-headache-diplopia",
+    "question": "A patient taking a CFTR modulator reports a new unusual headache and double vision. Which response follows the current intracranial-hypertension precaution?",
+    "choices": [
+      "If intracranial hypertension is suspected, interrupt the product and arrange prompt medical evaluation",
+      "Wait until the next routine pediatric cataract examination",
+      "Dismiss the symptoms because baseline eye examination was normal",
+      "Increase vitamin A empirically and continue treatment unchanged"
+    ],
+    "answer": 0,
+    "rationale": "Unusual headache with diplopia warrants prompt evaluation for intracranial hypertension. The labels call for interruption when suspected and follow-up for resolution and recurrence. Routine lens surveillance is not an adequate response, a normal baseline examination does not exclude a new event, and elevated vitamin A can increase risk rather than justify empirical supplementation.",
+    "reviewHref": "#cftr-modulators"
+  }
+];
+export const cysticFibrosisQuestionBank = [...originalCysticFibrosisQuestionBank.map((question) => ({ ...question, ...(sourceReviewedEnzymeSafetyQuestions[question.id] || {}), ...(reviewedNutritionSystemicQuestions[question.id] || {}), ...(reviewedDiagnosisAirwayPulmonaryQuestions[question.id] || {}), ...(reviewedInfectionQuestions[question.id] || {}), ...(reviewedModulatorQuestions[question.id] || {}) })), ...nutritionSystemicCases, ...diagnosisAirwayPulmonaryCases, ...infectionCases, ...modulatorCases];
