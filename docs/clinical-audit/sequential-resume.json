@@ -105,8 +105,8 @@
     "branch": "audit/rxprep-content-2026-09-24",
     "baseCommit": "839899685fce4f96e29326362f4c552da6c00e87",
     "remoteVerifiedAtStart": true,
-    "commit": null,
-    "push": "pending",
+    "commit": "bd9e05c3a7a1d6603d3ec56e69e0d61d816da9e3",
+    "push": "verified",
     "production": "not verified",
     "receipt": "enteral-nutrition-broader-ald-transplant-release.json",
     "contentCommits": [
@@ -233,13 +233,14 @@
       "3b55b7160d59be9a55716abc551bd2a49e409637",
       "82822c83746bca9ec5ef5108ca061c1722417c8c",
       "5f2051b8e651b7830cecbb4ab6ac3575e5e2b5dc",
-      "d65023fbeeb65cd190fc8e0adca4957bff966953"
+      "d65023fbeeb65cd190fc8e0adca4957bff966953",
+      "bd9e05c3a7a1d6603d3ec56e69e0d61d816da9e3"
     ],
     "previousVerifiedContentCommit": "65ac22e809246ba35e196493eedaa0bea3b0898b",
     "baseReceipt": "aca4501d4b775c9e5dbb74a1c3e7c337e6ebb87e",
-    "remoteHashObserved": null,
-    "exactRemoteObservedByTool": false,
-    "remoteVerifiedAt": null,
+    "remoteHashObserved": "bd9e05c3a7a1d6603d3ec56e69e0d61d816da9e3",
+    "exactRemoteObservedByTool": true,
+    "remoteVerifiedAt": "2026-10-06T02:56:41.084522+00:00",
     "mainMerge": "not performed"
   },
   "openIssues": [
@@ -18543,6 +18544,17 @@
       "rawOtherModuleTransplantAndAlcoholPsychosocialSupportOrRecurrenceMatches": 54,
       "specificOtherModuleAldTransplantSelectionQuestionMatches": 0,
       "interpretation": "54 raw matches contextually inspected. Cardiac/renal/pulmonary transplantation, drug interactions, infection and oncology contexts, and generic caregiver/recurrence terms are not ALD selection questions. Six previously verified cirrhosis/rifaximin hepatic transplant-care questions remain exact; acute-liver-failure cases concern emergency ALF, not severe AH selection, and remain part of the pending full-book audit. No other-module item newly certified or edited; all231 other modules exact. Existing245-match inventory and MASLD/other feeding dependencies retained."
+    },
+    "release": {
+      "branch": "audit/rxprep-content-2026-09-24",
+      "commit": "bd9e05c3a7a1d6603d3ec56e69e0d61d816da9e3",
+      "push": "verified",
+      "receipt": "enteral-nutrition-broader-ald-transplant-release.json",
+      "mainMerge": "not performed",
+      "production": "not verified",
+      "remoteHashObserved": "bd9e05c3a7a1d6603d3ec56e69e0d61d816da9e3",
+      "exactRemoteObservedByTool": true,
+      "remoteVerifiedAt": "2026-10-06T02:56:41.084522+00:00"
     }
   }
 }

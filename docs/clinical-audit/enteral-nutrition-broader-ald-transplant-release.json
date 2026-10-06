@@ -1,0 +1,1065 @@
+{
+  "verifiedAt": "2026-10-06T02:56:41.084522+00:00",
+  "unit": "enteral-nutrition:broader-ald-transplant",
+  "contentCommit": "bd9e05c3a7a1d6603d3ec56e69e0d61d816da9e3",
+  "remoteBranch": "audit/rxprep-content-2026-09-24",
+  "remoteHashObserved": "bd9e05c3a7a1d6603d3ec56e69e0d61d816da9e3",
+  "exactRemoteObservedByTool": true,
+  "coverage": {
+    "evidence": "enteral-nutrition-broader-ald-transplant-review.json",
+    "verifiedScope": "Complete ALD transplant-ethics lesson: six whole bodies, one check, metadata/figure and eight whole questions109-116.",
+    "wholeLessonsVerified": {
+      "alcohol-associated-liver-disease": [
+        "transplant-ethics"
+      ]
+    },
+    "wholeBodiesVerified": 6,
+    "existingWholeBodiesRefined": 4,
+    "newOriginalBodies": 2,
+    "wholeChecksVerified": 1,
+    "wholeMetadataAndFiguresVerified": 1,
+    "wholeBankQuestionIdsVerified": [
+      "alcohol-associated-liver-disease-109",
+      "alcohol-associated-liver-disease-110",
+      "alcohol-associated-liver-disease-111",
+      "alcohol-associated-liver-disease-112",
+      "alcohol-associated-liver-disease-113",
+      "alcohol-associated-liver-disease-114",
+      "alcohol-associated-liver-disease-115",
+      "alcohol-associated-liver-disease-116"
+    ],
+    "newUniqueBankQuestionsVerified": 8,
+    "associatedBroaderWholeQuestionIdsVerified": [],
+    "previouslyVerifiedWholeQuestionsRechecked": 0,
+    "broaderFeedingBankVerifiedBefore": 811,
+    "broaderFeedingBankVerifiedAfter": 819,
+    "sourceVerifiedAlcoholBankTotalAcrossUnits": 116,
+    "alcoholBankTotal": 124,
+    "remainingAlcoholWholeBankIds": [
+      "alcohol-associated-liver-disease-117",
+      "alcohol-associated-liver-disease-118",
+      "alcohol-associated-liver-disease-119",
+      "alcohol-associated-liver-disease-120",
+      "alcohol-associated-liver-disease-121",
+      "alcohol-associated-liver-disease-122",
+      "alcohol-associated-liver-disease-123",
+      "alcohol-associated-liver-disease-124"
+    ],
+    "remainingAlcoholLessons": 1,
+    "other116WholeAlcoholQuestionsUnchanged": true,
+    "allPriorTenVerifiedLessonsAnd108QuestionsRetainedExactly": true,
+    "other11AlcoholLessonsUnchanged": true,
+    "other231WholeModulesUnchanged": true,
+    "associatedCumulativeWholeItemsVerified": [],
+    "all1180WholeCumulativeObjectsUnchanged": true,
+    "noDerivedCumulativeItemsFromThisLesson": true,
+    "stableIdsKeysFieldPresenceAnchorsAndOrderPreserved": true,
+    "newQuestionIdsAdded": 0,
+    "newReferenceCount": 2,
+    "old35ReferencesRetainedExactly": true,
+    "totalAlcoholReferenceCount": 37,
+    "wholeParentModulesVerified": false,
+    "wholeChaptersVerified": false,
+    "committedWholeModulesVerifiedAfter": 59,
+    "committedWholeModulesTotal": 232,
+    "moduleCountPercent": 25.43,
+    "chaptersVerifiedAfter": 6,
+    "chapterTotal": 82,
+    "chapterCountPercent": 7.32,
+    "relatedScope": {
+      "priorContextualMatchInventoryRetained": 245,
+      "rawOtherModuleTransplantAndAlcoholPsychosocialSupportOrRecurrenceMatches": 54,
+      "specificOtherModuleAldTransplantSelectionQuestionMatches": 0,
+      "interpretation": "54 raw matches contextually inspected. Cardiac/renal/pulmonary transplantation, drug interactions, infection and oncology contexts, and generic caregiver/recurrence terms are not ALD selection questions. Six previously verified cirrhosis/rifaximin hepatic transplant-care questions remain exact; acute-liver-failure cases concern emergency ALF, not severe AH selection, and remain part of the pending full-book audit. No other-module item newly certified or edited; all231 other modules exact. Existing245-match inventory and MASLD/other feeding dependencies retained."
+    }
+  },
+  "validation": {
+    "productionBuild": {
+      "status": "passed",
+      "exitCode": 0,
+      "pages": 567,
+      "bundler": "webpack"
+    },
+    "structure": {
+      "modules": 1,
+      "questions": 124,
+      "hardErrors": [],
+      "sourceGaps": [],
+      "sizeAdvisories": [],
+      "thinLessons": [],
+      "weakestModules": [
+        {
+          "module": "alcohol-associated-liver-disease",
+          "lessons": 12,
+          "questions": 124,
+          "minimumLessonCoverage": 8
+        }
+      ]
+    },
+    "objectPreservation": {
+      "status": "passed",
+      "wholeBankIds": [
+        "alcohol-associated-liver-disease-109",
+        "alcohol-associated-liver-disease-110",
+        "alcohol-associated-liver-disease-111",
+        "alcohol-associated-liver-disease-112",
+        "alcohol-associated-liver-disease-113",
+        "alcohol-associated-liver-disease-114",
+        "alcohol-associated-liver-disease-115",
+        "alcohol-associated-liver-disease-116"
+      ],
+      "wholeLessons": [
+        "transplant-ethics"
+      ],
+      "wholeBodies": 6,
+      "wholeChecks": 1,
+      "other231WholeModulesUnchanged": true,
+      "other116AlcoholWholeQuestionsUnchanged": true,
+      "other11AlcoholLessonsUnchanged": true,
+      "allPriorTenVerifiedLessonsAnd108QuestionsRetainedExactly": true,
+      "associatedCumulativeItems": [],
+      "all1180WholeCumulativeObjectsUnchanged": true,
+      "noDerivedCumulativeItemsFromThisLesson": true,
+      "stableIdsAnswerIndexesDifficultyPresenceReviewHrefsAndOrderPreserved": true,
+      "onlyScopedFigureChanged": true,
+      "old35ReferencesRetainedExactly": true,
+      "newOfficialTransplantReferences": 2,
+      "moduleMetadataFieldsChanged": [],
+      "independentCalculations": {
+        "doseScoreOrRiskArithmeticIntroduced": false,
+        "interpretation": "No new dose schedule, numerical clinical threshold or risk estimate. Source-specific liver and kidney medication precautions remain in the already verified AUD-medications lesson."
+      }
+    },
+    "browser": {
+      "status": "passed",
+      "results": [
+        {
+          "width": 1440,
+          "exactWholeBodies": 6,
+          "wholeChecksAllFourOptionsGraded": 1,
+          "wholeQuestionsShuffledCorrectIncorrectFeedbackAndAnchorsVerified": 8,
+          "associatedCumulativeItems": [],
+          "associatedCumulativeWholeCasesShuffledCorrectIncorrectAndReviewLinksVerified": 0,
+          "all1180CumulativeObjectsUnchanged": true,
+          "allReferencesExact": 37,
+          "noHorizontalOverflow": true,
+          "diagrams": [
+            {
+              "width": 1440,
+              "slug": "alcohol-associated-liver-disease",
+              "lessonKey": "transplant-ethics",
+              "labels": [
+                {
+                  "tag": "SPAN",
+                  "text": "Transplant evaluation and recovery",
+                  "overflow": false,
+                  "fontSize": 10.88
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Refer, assess, support and continue care",
+                  "overflow": false,
+                  "fontSize": 37.6
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "01",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Refer",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Medical indication",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Begin evaluation early.",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "02",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Assess",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Benefit and risk",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Use multidisciplinary review.",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "03",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Support",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Practical care needs",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Address access barriers.",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "04",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Continue",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "AUD and graft care",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Plan ongoing treatment.",
+                  "overflow": false,
+                  "fontSize": 14
+                }
+              ],
+              "allTextWithinBounds": true
+            }
+          ]
+        },
+        {
+          "width": 390,
+          "exactWholeBodies": 6,
+          "wholeChecksAllFourOptionsGraded": 1,
+          "wholeQuestionsShuffledCorrectIncorrectFeedbackAndAnchorsVerified": 8,
+          "associatedCumulativeItems": [],
+          "associatedCumulativeWholeCasesShuffledCorrectIncorrectAndReviewLinksVerified": 0,
+          "all1180CumulativeObjectsUnchanged": true,
+          "allReferencesExact": 37,
+          "noHorizontalOverflow": true,
+          "diagrams": [
+            {
+              "width": 320,
+              "slug": "alcohol-associated-liver-disease",
+              "lessonKey": "transplant-ethics",
+              "labels": [
+                {
+                  "tag": "SPAN",
+                  "text": "Transplant evaluation and recovery",
+                  "overflow": false,
+                  "fontSize": 10.88
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Refer, assess, support and continue care",
+                  "overflow": false,
+                  "fontSize": 23.2
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "01",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Refer",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Medical indication",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Begin evaluation early.",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "02",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Assess",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Benefit and risk",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Use multidisciplinary review.",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "03",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Support",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Practical care needs",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Address access barriers.",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "04",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Continue",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "AUD and graft care",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Plan ongoing treatment.",
+                  "overflow": false,
+                  "fontSize": 14
+                }
+              ],
+              "allTextWithinBounds": true
+            },
+            {
+              "width": 390,
+              "slug": "alcohol-associated-liver-disease",
+              "lessonKey": "transplant-ethics",
+              "labels": [
+                {
+                  "tag": "SPAN",
+                  "text": "Transplant evaluation and recovery",
+                  "overflow": false,
+                  "fontSize": 10.88
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Refer, assess, support and continue care",
+                  "overflow": false,
+                  "fontSize": 23.2
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "01",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Refer",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Medical indication",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Begin evaluation early.",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "02",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Assess",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Benefit and risk",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Use multidisciplinary review.",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "03",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Support",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Practical care needs",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Address access barriers.",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "04",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Continue",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "AUD and graft care",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Plan ongoing treatment.",
+                  "overflow": false,
+                  "fontSize": 14
+                }
+              ],
+              "allTextWithinBounds": true
+            },
+            {
+              "width": 639,
+              "slug": "alcohol-associated-liver-disease",
+              "lessonKey": "transplant-ethics",
+              "labels": [
+                {
+                  "tag": "SPAN",
+                  "text": "Transplant evaluation and recovery",
+                  "overflow": false,
+                  "fontSize": 10.88
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Refer, assess, support and continue care",
+                  "overflow": false,
+                  "fontSize": 23.2
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "01",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Refer",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Medical indication",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Begin evaluation early.",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "02",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Assess",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Benefit and risk",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Use multidisciplinary review.",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "03",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Support",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Practical care needs",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Address access barriers.",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "04",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Continue",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "AUD and graft care",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Plan ongoing treatment.",
+                  "overflow": false,
+                  "fontSize": 14
+                }
+              ],
+              "allTextWithinBounds": true
+            },
+            {
+              "width": 640,
+              "slug": "alcohol-associated-liver-disease",
+              "lessonKey": "transplant-ethics",
+              "labels": [
+                {
+                  "tag": "SPAN",
+                  "text": "Transplant evaluation and recovery",
+                  "overflow": false,
+                  "fontSize": 10.88
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Refer, assess, support and continue care",
+                  "overflow": false,
+                  "fontSize": 23.2
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "01",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Refer",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Medical indication",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Begin evaluation early.",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "02",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Assess",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Benefit and risk",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Use multidisciplinary review.",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "03",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Support",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Practical care needs",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Address access barriers.",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "04",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Continue",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "AUD and graft care",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Plan ongoing treatment.",
+                  "overflow": false,
+                  "fontSize": 14
+                }
+              ],
+              "allTextWithinBounds": true
+            }
+          ]
+        }
+      ],
+      "captures": [
+        "hero-alcohol-associated-liver-disease-1440.png",
+        "body-transplant-ethics-0-1440.png",
+        "body-transplant-ethics-1-1440.png",
+        "body-transplant-ethics-2-1440.png",
+        "body-transplant-ethics-3-1440.png",
+        "body-transplant-ethics-4-1440.png",
+        "body-transplant-ethics-5-1440.png",
+        "summary-transplant-ethics-1440.png",
+        "concepts-transplant-ethics-1440.png",
+        "keypoints-transplant-ethics-1440.png",
+        "application-transplant-ethics-1440.png",
+        "figure-transplant-ethics-1440.png",
+        "check-transplant-ethics-1440.png",
+        "references-alcohol-associated-liver-disease-1440.png",
+        "bank-alcohol-associated-liver-disease-112-1440.png",
+        "bank-alcohol-associated-liver-disease-109-1440.png",
+        "bank-alcohol-associated-liver-disease-116-1440.png",
+        "bank-alcohol-associated-liver-disease-113-1440.png",
+        "bank-alcohol-associated-liver-disease-111-1440.png",
+        "bank-alcohol-associated-liver-disease-115-1440.png",
+        "bank-alcohol-associated-liver-disease-110-1440.png",
+        "bank-alcohol-associated-liver-disease-114-1440.png",
+        "hero-alcohol-associated-liver-disease-390.png",
+        "body-transplant-ethics-0-390.png",
+        "body-transplant-ethics-1-390.png",
+        "body-transplant-ethics-2-390.png",
+        "body-transplant-ethics-3-390.png",
+        "body-transplant-ethics-4-390.png",
+        "body-transplant-ethics-5-390.png",
+        "summary-transplant-ethics-390.png",
+        "concepts-transplant-ethics-390.png",
+        "keypoints-transplant-ethics-390.png",
+        "application-transplant-ethics-390.png",
+        "figure-transplant-ethics-390.png",
+        "check-transplant-ethics-390.png",
+        "references-alcohol-associated-liver-disease-390.png",
+        "bank-alcohol-associated-liver-disease-112-390.png",
+        "bank-alcohol-associated-liver-disease-109-390.png",
+        "bank-alcohol-associated-liver-disease-116-390.png",
+        "bank-alcohol-associated-liver-disease-113-390.png",
+        "bank-alcohol-associated-liver-disease-111-390.png",
+        "bank-alcohol-associated-liver-disease-115-390.png",
+        "bank-alcohol-associated-liver-disease-110-390.png",
+        "bank-alcohol-associated-liver-disease-114-390.png"
+      ],
+      "errors": []
+    },
+    "visualInspection": {
+      "status": "passed",
+      "inspectedAt": "2026-10-06T02:54:55.866264+00:00",
+      "nativeCapturesInspected": 44,
+      "nativePairsInspected": 22,
+      "boardsActuallyInspected": 8,
+      "boardHashes": [
+        {
+          "file": "board-00.png",
+          "sha256": "3bf242f89241762edaf873982694128f19ad59df56cedf5ea72402397aedb280"
+        },
+        {
+          "file": "board-01.png",
+          "sha256": "f855eee745e02e12532d4b7c421346c7bc49fe81a9edebf5d74f6c00c961e73d"
+        },
+        {
+          "file": "board-02.png",
+          "sha256": "27e167607e49601e35c1c19160f3ee3b071bd653d68d68a77e1e9b7e8152b01c"
+        },
+        {
+          "file": "board-03.png",
+          "sha256": "d20e06802f3dcf9e58723ed253a6dc5aa6debcae2590cb9ed991570380f1664e"
+        },
+        {
+          "file": "board-04.png",
+          "sha256": "ffeb159fe6b5517940e8e5d443dcdd22f0452d88fb72097cd283949186aea95e"
+        },
+        {
+          "file": "board-05.png",
+          "sha256": "9e2d0557513a9b32538a7b1e7965cb29f363b3fccd8c5c7670a1b370027be938"
+        },
+        {
+          "file": "board-06.png",
+          "sha256": "7178eda5c2e6f09539ee9686b3536bd6b5d7ec341b49b3ed033ac2c4cf73693a"
+        },
+        {
+          "file": "board-07.png",
+          "sha256": "bb0ed1c04f9cef52559e17180250e4fb819ce6bde23f5781a75a6e07b19987fd"
+        }
+      ],
+      "nativeHashes": [
+        {
+          "file": "hero-alcohol-associated-liver-disease-1440.png",
+          "sha256": "fd88c9a681c37bec6337291a2819ded8f9730bad0e7a181b99132865b963ff5e"
+        },
+        {
+          "file": "body-transplant-ethics-0-1440.png",
+          "sha256": "fb5efd33f634cee403de9e09e19e8dcd44b38cefe98d03ad6ae74ad1f6ae0d67"
+        },
+        {
+          "file": "body-transplant-ethics-1-1440.png",
+          "sha256": "32bba3c16d9dd0008082541903bd5ba44419120c9f0da0075692fed29fe2f6b2"
+        },
+        {
+          "file": "body-transplant-ethics-2-1440.png",
+          "sha256": "7f8d172ffcd4010f25a6c9cac4b43a28ec2cffbe0b7ce29b9db02b3ff3eebfeb"
+        },
+        {
+          "file": "body-transplant-ethics-3-1440.png",
+          "sha256": "4b5c4f6301b94e3d8b0081edad0bae7323450bbf6cc3d47b8b2be50f527961f8"
+        },
+        {
+          "file": "body-transplant-ethics-4-1440.png",
+          "sha256": "0c6996327149d8ea651d20795a2f30e5a283be378bd67cfceb293bd70735048f"
+        },
+        {
+          "file": "body-transplant-ethics-5-1440.png",
+          "sha256": "da62d09bc1888f6a5f5e7574a1d653f071a537924347cb35edd64292c17ffb95"
+        },
+        {
+          "file": "summary-transplant-ethics-1440.png",
+          "sha256": "db020a05e1d43f2ffa8a3f646e09bf38bea96d02ab54226c644d4036e9796907"
+        },
+        {
+          "file": "concepts-transplant-ethics-1440.png",
+          "sha256": "bf8e5cdebc26eb028dfc7a02ad6f23680e7470366bd714ff2df4b28c5b44143a"
+        },
+        {
+          "file": "keypoints-transplant-ethics-1440.png",
+          "sha256": "4dc0b3dd9392c58333c0d70e4526fdfb57c644b1dff17b9547e189a608d1d246"
+        },
+        {
+          "file": "application-transplant-ethics-1440.png",
+          "sha256": "629b538fc51d1925f89614b5c3ad19250a444759b6a7f83963b3ecd71dc53c01"
+        },
+        {
+          "file": "figure-transplant-ethics-1440.png",
+          "sha256": "7b0108ff892499ff104cfa456d08bc1649eab705305b4410e98fabfc35061546"
+        },
+        {
+          "file": "check-transplant-ethics-1440.png",
+          "sha256": "404687ab54dfb98d60d5eb3f32c09118fafd37c24a71de3a02f730e97487aa83"
+        },
+        {
+          "file": "references-alcohol-associated-liver-disease-1440.png",
+          "sha256": "6cd839b821d5e10fd2ac63331a61e48f34a5b13b653b820d089fb866d3ec8945"
+        },
+        {
+          "file": "bank-alcohol-associated-liver-disease-112-1440.png",
+          "sha256": "b7867b33e7abec42ec889c73e4423f24f9a951dd36e087ec2a694ff95af838c0"
+        },
+        {
+          "file": "bank-alcohol-associated-liver-disease-109-1440.png",
+          "sha256": "107f3182c9000644e74e32bd0045df6390ab4cce455f1d0846c7349ef6937a51"
+        },
+        {
+          "file": "bank-alcohol-associated-liver-disease-116-1440.png",
+          "sha256": "0b516038b648ad41d3cbee92d3f4474f324f0b6928d25b30c9341a34a460dd89"
+        },
+        {
+          "file": "bank-alcohol-associated-liver-disease-113-1440.png",
+          "sha256": "4501ea9e9c569c9976b4b9000d02e7d6abf87e9116e16d3b0706636d90837a9e"
+        },
+        {
+          "file": "bank-alcohol-associated-liver-disease-111-1440.png",
+          "sha256": "a877f1c7970532467cc4f798c7ab720d85d7b9fe31d55dcbe0b50201e9eed8d0"
+        },
+        {
+          "file": "bank-alcohol-associated-liver-disease-115-1440.png",
+          "sha256": "a4cb27afd90370de0fda969f2ad6a5ae5736c039f5b0d1ae9588a47a93d8dc76"
+        },
+        {
+          "file": "bank-alcohol-associated-liver-disease-110-1440.png",
+          "sha256": "ffefbbbbf25b39fb4b3b8a34a6d07097258f4913fb374bcced0f125d23864f24"
+        },
+        {
+          "file": "bank-alcohol-associated-liver-disease-114-1440.png",
+          "sha256": "34a5ab0ab052b85cedee5f57f3d95bb90646a537d6b830c2ab4372d735a20735"
+        },
+        {
+          "file": "hero-alcohol-associated-liver-disease-390.png",
+          "sha256": "928f1bbc194e7ed4ce041357facb26449a88c9ac263a956b68739b62becd89ed"
+        },
+        {
+          "file": "body-transplant-ethics-0-390.png",
+          "sha256": "403ea9b8012767e4d87862ccb7f02a0649fa846a52c4b8a98db7a44286682075"
+        },
+        {
+          "file": "body-transplant-ethics-1-390.png",
+          "sha256": "5cb49d217256d8a0f68a48312d97773cda5943b96c2f77ce0c323ddcb78ef577"
+        },
+        {
+          "file": "body-transplant-ethics-2-390.png",
+          "sha256": "ace84c8b3c1be1b0130333676d4445e86e00e1e94bb3827f69651537d62afcfb"
+        },
+        {
+          "file": "body-transplant-ethics-3-390.png",
+          "sha256": "45b6abcc225c73ebf1207394de1f6bca611debb8d3436c95b1918dc7b95dc432"
+        },
+        {
+          "file": "body-transplant-ethics-4-390.png",
+          "sha256": "5ad9fcf6239d23e4534bfcd15fcc32a615bf43631aa8bd841d854f5ab3ef2311"
+        },
+        {
+          "file": "body-transplant-ethics-5-390.png",
+          "sha256": "3871428620dc6287afa3e971ee9db8a3d96349e8ce6f9c275bca7ebadbc09d12"
+        },
+        {
+          "file": "summary-transplant-ethics-390.png",
+          "sha256": "420d9a3c2810127a2823e93d322fc3e2f062eda2fab9b0a9f75b5c2c11aa24f1"
+        },
+        {
+          "file": "concepts-transplant-ethics-390.png",
+          "sha256": "7f6ba8614f6abe527bdd93c6862377293cd35385ca051429f4c748da57a145de"
+        },
+        {
+          "file": "keypoints-transplant-ethics-390.png",
+          "sha256": "c98d81c05ca548fd4937c73cca13069f75826a66077813c8a730fdf40088d755"
+        },
+        {
+          "file": "application-transplant-ethics-390.png",
+          "sha256": "260eef2827e2a0d712ded76279bbd06e45eb6a047b92086c4f0694a9f3bb001b"
+        },
+        {
+          "file": "figure-transplant-ethics-390.png",
+          "sha256": "1113aa997b4eea42431bda220fe63cd0472315cb7de74465f62cff0b129ac442"
+        },
+        {
+          "file": "check-transplant-ethics-390.png",
+          "sha256": "df5717b2622e060b88ab050fe9797f3e0fa8903545474d7943b4246075297fbc"
+        },
+        {
+          "file": "references-alcohol-associated-liver-disease-390.png",
+          "sha256": "b266bd6caf2b143575c65c4155a3e0dd8df3cb0d6b32c3b5acf100a23152eabb"
+        },
+        {
+          "file": "bank-alcohol-associated-liver-disease-112-390.png",
+          "sha256": "c8b8e799b0e085b40139bcb28602f7bc6fc316da7058b988c147511d439e11ff"
+        },
+        {
+          "file": "bank-alcohol-associated-liver-disease-109-390.png",
+          "sha256": "c793036880ad7bd0f0ef372f950f6438926c27c47d90dcc929d5756d9a225233"
+        },
+        {
+          "file": "bank-alcohol-associated-liver-disease-116-390.png",
+          "sha256": "73c03db0ce831bc7b37d839d27389266947941cb351d224d906403cc4c33ab86"
+        },
+        {
+          "file": "bank-alcohol-associated-liver-disease-113-390.png",
+          "sha256": "874d3301871b0e9d37f6d3673c434397093b7ceddbf88b6d113e00f0762fd1e6"
+        },
+        {
+          "file": "bank-alcohol-associated-liver-disease-111-390.png",
+          "sha256": "1f243d05550546d83566480b4eda17603b249728730ea42bf646b730efe53011"
+        },
+        {
+          "file": "bank-alcohol-associated-liver-disease-115-390.png",
+          "sha256": "9da230a3a794ac17585593571f80c09b13ca1ee5d9c05392c5247a705e0796a6"
+        },
+        {
+          "file": "bank-alcohol-associated-liver-disease-110-390.png",
+          "sha256": "af8889f87da164d6e35eca4fb4cd1d46b419c2d219168e00edaf6e72ccda25d3"
+        },
+        {
+          "file": "bank-alcohol-associated-liver-disease-114-390.png",
+          "sha256": "81a887b25e101fec430f67b5dc9cf82641ffcbc1085032333c130f406f0a081f"
+        }
+      ],
+      "selectedNativeImagesActuallyInspected": [
+        {
+          "file": "figure-transplant-ethics-1440.png",
+          "sha256": "7b0108ff892499ff104cfa456d08bc1649eab705305b4410e98fabfc35061546"
+        },
+        {
+          "file": "figure-transplant-ethics-390.png",
+          "sha256": "1113aa997b4eea42431bda220fe63cd0472315cb7de74465f62cff0b129ac442"
+        },
+        {
+          "file": "check-transplant-ethics-390.png",
+          "sha256": "df5717b2622e060b88ab050fe9797f3e0fa8903545474d7943b4246075297fbc"
+        },
+        {
+          "file": "bank-alcohol-associated-liver-disease-116-390.png",
+          "sha256": "73c03db0ce831bc7b37d839d27389266947941cb351d224d906403cc4c33ab86"
+        },
+        {
+          "file": "references-alcohol-associated-liver-disease-390.png",
+          "sha256": "b266bd6caf2b143575c65c4155a3e0dd8df3cb0d6b32c3b5acf100a23152eabb"
+        }
+      ],
+      "findings": "All six whole teaching paragraphs, summary/concepts/key points/application, embedded check and eight bank cases readable in native desktop/mobile pairs. Gold/black semantic diagram labels clear, within bounds atfive widths, clinical labels>=14px. All37reference labels and links exact. No clipped paragraph, overlapping choices, missing rationale or unintended horizontal overflow. Five whole PDF source pages, four primary HTML source captures and original figure reviewed separately. No cumulative question changed in this unit.",
+      "noAdditionalProductRepairNeeded": true
+    },
+    "limits": "Isolated unauthenticated built local preview. Six whole bodies, one check all four choices, metadata/figure and eight shuffled bank cases verified at1440/390. Correct/incorrect grading, rationales and review links tested. All37reference hrefs exact. Figure bounds and clinical fonts checked at320/390/639/640/1440. Five complete native PDF source pages, full primary AASLD/AST HTML psychosocial statements/rationale with four inspected captures and original Figure5, and official clean OPTN ethics HTML reviewed. All1180 cumulative objects unchanged. One ALD lesson8questions and identified MASLD dependencies remain open. No whole-parent/chapter certificate."
+  },
+  "preservation": {
+    "status": "passed",
+    "baselinePathsChecked": 1980,
+    "allUnrelatedDraftBytesAndDeletionsPreservedAtRelease": true,
+    "observedConcurrentUnrelatedChangesRetainedAndExcluded": {},
+    "otherUnrelatedPathsMatchInitialBaseline": true,
+    "preexistingContentBytesRecoveredByRemovingExactScopedTails": true,
+    "allOtherWorkingLedgerFieldsAndEntriesPreserved": true,
+    "allOtherCommittedLedgerFieldsAndEntriesPreserved": true,
+    "oneCompleteLessonMarkedVerifiedAndParentMarkedReviewingOnlyAfterAllGatesPassed": true,
+    "onlyVerifiedHeadDerivedContentStagedOrCommitted": true,
+    "onlyScopedAldFigureChangedAndCumulativeSelectorUnchanged": true,
+    "scope": [
+      "src/data/modules/alcoholAssociatedLiverDisease.js",
+      "src/data/questionBanks/alcoholAssociatedLiverDisease.js",
+      "src/components/learn/AlcoholAssociatedLiverDiseaseVisual.jsx",
+      "docs/clinical-audit/enteral-nutrition-broader-ald-transplant-review.json",
+      "docs/clinical-audit/module-ledger.json",
+      "docs/clinical-audit/chapter-ledger.json",
+      "docs/clinical-audit/sequential-resume.json"
+    ]
+  },
+  "publication": {
+    "mainMerge": "not performed",
+    "production": "not verified"
+  },
+  "wholeGoalComplete": false,
+  "nextAction": "Complete alcohol-associated-liver-disease integrated-case and eight whole questions117-124 including derived cumulative124, then reconcile complete ALD module metadata, references and aggregate source/question coverage before whole-module closure. ALD11/12lessons116/124questions verified; one lesson8questions open. Also complete identified MASLD fib4-screening and secondary-assessment whole lessons and sixteen questions029-044 with formula, age, threshold and secondary-test sources. Preserve245-match contextual inventory, four incidental HIV PI choices, prior verified ICU withdrawal question and all prior hepatic/feeding dependencies. Rifaximin HE verified; other nine lessons147questions remain open. Return to Chapter11 printed161/PDF169 after broader feeding dependencies. Chapters11/19/22 and Chapter1 printed7/PDF19 checklist15 remain open. Continue full82-chapter goal.",
+  "receiptCommit": "Receipt follows exact verified content commit; its own remote hash separately verified in execution output."
+}
