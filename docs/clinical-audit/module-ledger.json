@@ -1379,7 +1379,8 @@
         "enteral-nutrition-broader-peramivir-review.json",
         "enteral-nutrition-broader-baloxavir-dose-review.json",
         "enteral-nutrition-broader-baloxavir-safety-review.json",
-        "enteral-nutrition-broader-influenza-integrated-review.json"
+        "enteral-nutrition-broader-influenza-integrated-review.json",
+        "enteral-nutrition-broader-adrenal-foundations-review.json"
       ],
       "latestBookCalculationReview": {
         "evidence": "enteral-nutrition-book-calculations-review.json",
@@ -12767,6 +12768,82 @@
         "chapterTotal": 82,
         "chapterCountPercent": 7.32,
         "workingBoundary": "Clinical influenza parent equals committed candidate. Aggregator-derived area is omitted by the direct working export. Unrelated working website drafts remain uncertified."
+      },
+      "latestBroaderAdrenalFoundationsReview": {
+        "evidence": "enteral-nutrition-broader-adrenal-foundations-review.json",
+        "verifiedScope": "Verified three whole adrenal foundation lessons: levels of failure, primary insufficiency and central/glucocorticoid-induced insufficiency; nine original bodies retained and expanded to twelve, all metadata, three complete embedded checks and three readable figures. Eight useful whole questions and all32 choices individually source-compared; stable IDs/choices/keys retained and case06 actual febrile stressor clarified. One cumulative origin01 reconciled and tested, other1179 whole cumulative objects unchanged. Prior two verified delivery/replacement lessons and nine whole questions exactly match detailed reviewed evidence. Five of eleven whole adrenal lessons and17 of35 whole bank questions now verified across detailed units; six lessons18questions remain. Broader unique questions1250to1258. Whole parent remains reviewing; committed whole modules63/232 and chapters6/82 unchanged. Count ratios are not weighted overall completion; entire goal open.",
+        "wholeLessonsVerified": {
+          "adrenal-insufficiency-crisis": [
+            "levels-of-failure",
+            "primary-adrenal-insufficiency",
+            "central-glucocorticoid-induced"
+          ]
+        },
+        "wholeBodiesVerifiedThisUnit": 12,
+        "originalBodiesRetained": 9,
+        "originalBodiesExpanded": 8,
+        "newOriginalBodies": 3,
+        "wholeChecksVerifiedThisUnit": 3,
+        "wholeFiguresVerifiedThisUnit": 3,
+        "wholeLessonMetadataVerified": true,
+        "wholeQuestionsReviewed": 8,
+        "changedWholeQuestions": 8,
+        "all32ChoicesIndividuallySourceCompared": true,
+        "all12EmbeddedChoicesIndividuallySourceCompared": true,
+        "sevenUsefulStemsAndAllChoicesAndKeysPreserved": true,
+        "question06ActualStressorClarified": true,
+        "wholeBankQuestionIdsVerified": [
+          "adrenal-insufficiency-01-case",
+          "adrenal-insufficiency-02-case",
+          "adrenal-insufficiency-03-case",
+          "adrenal-insufficiency-04-case",
+          "adrenal-insufficiency-05-case",
+          "adrenal-insufficiency-06-case",
+          "adrenal-insufficiency-07-case",
+          "adrenal-insufficiency-08-case"
+        ],
+        "newUniqueBankQuestionsVerified": 8,
+        "newUniqueBankIdsVerified": [
+          "adrenal-insufficiency-01-case",
+          "adrenal-insufficiency-02-case",
+          "adrenal-insufficiency-03-case",
+          "adrenal-insufficiency-04-case",
+          "adrenal-insufficiency-05-case",
+          "adrenal-insufficiency-06-case",
+          "adrenal-insufficiency-07-case",
+          "adrenal-insufficiency-08-case"
+        ],
+        "broaderFeedingBankVerifiedBefore": 1250,
+        "broaderFeedingBankVerifiedAfter": 1258,
+        "adrenalWholeBankSourceVerifiedAcrossDetailedUnits": 17,
+        "adrenalBankTotal": 35,
+        "wholeAdrenalLessonsVerifiedAcrossDetailedUnits": 5,
+        "adrenalLessonTotal": 11,
+        "remainingAdrenalWholeBankQuestions": 18,
+        "remainingAdrenalUnverifiedWholeLessons": 6,
+        "priorTwoVerifiedWholeLessonsAndNineQuestionsRetainedExactly": true,
+        "allOther27WholeQuestionsAndEightLessonObjectsUnchanged": true,
+        "associatedCumulativeItems": [
+          "cumulative-adrenal-insufficiency-crisis-adrenal-insufficiency-01-case"
+        ],
+        "wholeCumulativeItemsReviewedThisUnit": 1,
+        "other1179WholeCumulativeObjectsUnchanged": true,
+        "cumulativeSelectorUnchanged": true,
+        "allFourteenExistingReferencesPreservedExactly": true,
+        "newOfficialReferencesAdded": 0,
+        "workedDoseCalculationCases": 0,
+        "isolatedSevenDayCourseTemporalComparisonIndependentlyChecked": true,
+        "wholeParentModuleVerified": false,
+        "enteralParentVerified": false,
+        "wholeChaptersVerified": false,
+        "committedWholeModulesVerifiedBefore": 63,
+        "committedWholeModulesVerifiedAfter": 63,
+        "committedWholeModulesTotal": 232,
+        "moduleCountPercent": 27.16,
+        "chaptersVerifiedAfter": 6,
+        "chapterTotal": 82,
+        "chapterCountPercent": 7.32,
+        "workingBoundary": "Clinical adrenal parent matches committed baseline; selected working objects receive exact verified changes. Other working website drafts remain uncertified."
       }
     },
     {
@@ -19427,15 +19504,67 @@
       "lessons": [
         {
           "slug": "levels-of-failure",
-          "status": "verified"
+          "status": "verified",
+          "wholeLessonVerified": true,
+          "latestScopedEvidence": "enteral-nutrition-broader-adrenal-foundations-review.json",
+          "verifiedSectionHeadings": [
+            "Map primary failure",
+            "Map central failure",
+            "Map exogenous suppression",
+            "Interpret the pattern without delaying care"
+          ],
+          "embeddedCheckVerified": true,
+          "figureVerified": true,
+          "metadataStatus": "Whole scoped metadata clinically/runtime/visually verified",
+          "verifiedQuestionIds": [
+            "adrenal-insufficiency-01-case",
+            "adrenal-insufficiency-03-case"
+          ],
+          "verifiedCumulativeItemIds": [
+            "cumulative-adrenal-insufficiency-crisis-adrenal-insufficiency-01-case"
+          ]
         },
         {
           "slug": "primary-adrenal-insufficiency",
-          "status": "verified"
+          "status": "verified",
+          "wholeLessonVerified": true,
+          "latestScopedEvidence": "enteral-nutrition-broader-adrenal-foundations-review.json",
+          "verifiedSectionHeadings": [
+            "Recognize autoimmune disease",
+            "Read the phenotype",
+            "Respect destructive causes",
+            "Confirm disease before assigning its cause"
+          ],
+          "embeddedCheckVerified": true,
+          "figureVerified": true,
+          "metadataStatus": "Whole scoped metadata clinically/runtime/visually verified",
+          "verifiedQuestionIds": [
+            "adrenal-insufficiency-02-case",
+            "adrenal-insufficiency-04-case",
+            "adrenal-insufficiency-05-case"
+          ],
+          "verifiedCumulativeItemIds": []
         },
         {
           "slug": "central-glucocorticoid-induced",
-          "status": "verified"
+          "status": "verified",
+          "wholeLessonVerified": true,
+          "latestScopedEvidence": "enteral-nutrition-broader-adrenal-foundations-review.json",
+          "verifiedSectionHeadings": [
+            "Identify structural central disease",
+            "Use current exposure thresholds",
+            "Count every route and interaction",
+            "Connect stress coverage to an actual stressor"
+          ],
+          "embeddedCheckVerified": true,
+          "figureVerified": true,
+          "metadataStatus": "Whole scoped metadata clinically/runtime/visually verified",
+          "verifiedQuestionIds": [
+            "adrenal-insufficiency-06-case",
+            "adrenal-insufficiency-07-case",
+            "adrenal-insufficiency-08-case"
+          ],
+          "verifiedCumulativeItemIds": []
         },
         {
           "slug": "clinical-patterns",
@@ -19518,7 +19647,8 @@
         "adrenal-pharmacology.md",
         "enteral-nutrition-broader-adrenal-perioperative-review.json",
         "enteral-nutrition-broader-adrenal-formulation-label-review.json",
-        "enteral-nutrition-broader-adrenal-guideline-review.json"
+        "enteral-nutrition-broader-adrenal-guideline-review.json",
+        "enteral-nutrition-broader-adrenal-foundations-review.json"
       ],
       "verificationNotes": "All 11 lessons/checks/figures and 35 focused cases reviewed; diagnostic/recovery and adult/pediatric boundaries, label-specific administration, sick-day/fluid and mineralocorticoid guidance reconciled. Desktop/mobile figures and interactions, scoring/reset, readability, structural audit and production build passed. See adrenal-insufficiency.md for source scope and sitewide floating-control limitation.",
       "broaderEnteralAdministrationReview": {
@@ -19623,6 +19753,82 @@
         "all1180CumulativeObjectsUnchanged": true,
         "noNewQuestionIds": true,
         "originalClinicalScopeRetained": true
+      },
+      "latestBroaderAdrenalFoundationsReview": {
+        "evidence": "enteral-nutrition-broader-adrenal-foundations-review.json",
+        "verifiedScope": "Verified three whole adrenal foundation lessons: levels of failure, primary insufficiency and central/glucocorticoid-induced insufficiency; nine original bodies retained and expanded to twelve, all metadata, three complete embedded checks and three readable figures. Eight useful whole questions and all32 choices individually source-compared; stable IDs/choices/keys retained and case06 actual febrile stressor clarified. One cumulative origin01 reconciled and tested, other1179 whole cumulative objects unchanged. Prior two verified delivery/replacement lessons and nine whole questions exactly match detailed reviewed evidence. Five of eleven whole adrenal lessons and17 of35 whole bank questions now verified across detailed units; six lessons18questions remain. Broader unique questions1250to1258. Whole parent remains reviewing; committed whole modules63/232 and chapters6/82 unchanged. Count ratios are not weighted overall completion; entire goal open.",
+        "wholeLessonsVerified": {
+          "adrenal-insufficiency-crisis": [
+            "levels-of-failure",
+            "primary-adrenal-insufficiency",
+            "central-glucocorticoid-induced"
+          ]
+        },
+        "wholeBodiesVerifiedThisUnit": 12,
+        "originalBodiesRetained": 9,
+        "originalBodiesExpanded": 8,
+        "newOriginalBodies": 3,
+        "wholeChecksVerifiedThisUnit": 3,
+        "wholeFiguresVerifiedThisUnit": 3,
+        "wholeLessonMetadataVerified": true,
+        "wholeQuestionsReviewed": 8,
+        "changedWholeQuestions": 8,
+        "all32ChoicesIndividuallySourceCompared": true,
+        "all12EmbeddedChoicesIndividuallySourceCompared": true,
+        "sevenUsefulStemsAndAllChoicesAndKeysPreserved": true,
+        "question06ActualStressorClarified": true,
+        "wholeBankQuestionIdsVerified": [
+          "adrenal-insufficiency-01-case",
+          "adrenal-insufficiency-02-case",
+          "adrenal-insufficiency-03-case",
+          "adrenal-insufficiency-04-case",
+          "adrenal-insufficiency-05-case",
+          "adrenal-insufficiency-06-case",
+          "adrenal-insufficiency-07-case",
+          "adrenal-insufficiency-08-case"
+        ],
+        "newUniqueBankQuestionsVerified": 8,
+        "newUniqueBankIdsVerified": [
+          "adrenal-insufficiency-01-case",
+          "adrenal-insufficiency-02-case",
+          "adrenal-insufficiency-03-case",
+          "adrenal-insufficiency-04-case",
+          "adrenal-insufficiency-05-case",
+          "adrenal-insufficiency-06-case",
+          "adrenal-insufficiency-07-case",
+          "adrenal-insufficiency-08-case"
+        ],
+        "broaderFeedingBankVerifiedBefore": 1250,
+        "broaderFeedingBankVerifiedAfter": 1258,
+        "adrenalWholeBankSourceVerifiedAcrossDetailedUnits": 17,
+        "adrenalBankTotal": 35,
+        "wholeAdrenalLessonsVerifiedAcrossDetailedUnits": 5,
+        "adrenalLessonTotal": 11,
+        "remainingAdrenalWholeBankQuestions": 18,
+        "remainingAdrenalUnverifiedWholeLessons": 6,
+        "priorTwoVerifiedWholeLessonsAndNineQuestionsRetainedExactly": true,
+        "allOther27WholeQuestionsAndEightLessonObjectsUnchanged": true,
+        "associatedCumulativeItems": [
+          "cumulative-adrenal-insufficiency-crisis-adrenal-insufficiency-01-case"
+        ],
+        "wholeCumulativeItemsReviewedThisUnit": 1,
+        "other1179WholeCumulativeObjectsUnchanged": true,
+        "cumulativeSelectorUnchanged": true,
+        "allFourteenExistingReferencesPreservedExactly": true,
+        "newOfficialReferencesAdded": 0,
+        "workedDoseCalculationCases": 0,
+        "isolatedSevenDayCourseTemporalComparisonIndependentlyChecked": true,
+        "wholeParentModuleVerified": false,
+        "enteralParentVerified": false,
+        "wholeChaptersVerified": false,
+        "committedWholeModulesVerifiedBefore": 63,
+        "committedWholeModulesVerifiedAfter": 63,
+        "committedWholeModulesTotal": 232,
+        "moduleCountPercent": 27.16,
+        "chaptersVerifiedAfter": 6,
+        "chapterTotal": 82,
+        "chapterCountPercent": 7.32,
+        "workingBoundary": "Clinical adrenal parent matches committed baseline; selected working objects receive exact verified changes. Other working website drafts remain uncertified."
       }
     },
     {

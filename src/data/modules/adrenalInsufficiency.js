@@ -105,3 +105,156 @@ export const adrenalInsufficiencyModule = {
     { label: "Current fludrocortisone prescribing information", href: "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bc92f5c6-3a65-4fab-85b3-fd5b84f917c1" },
   ],
 };
+
+
+// Reconcile complete foundation lessons with current endocrine guidance.
+Object.assign(adrenalInsufficiencyModule.submodules.find((lesson) => lesson.slug === "levels-of-failure"), {
+  "slug": "levels-of-failure",
+  "title": "HPA Axis and Levels of Failure",
+  "visual": "ai-levels",
+  "summary": "Adrenal insufficiency is a cortisol-deficiency syndrome whose clinical pattern depends on whether failure begins in the adrenal cortex, pituitary, hypothalamus, or exogenous glucocorticoid feedback loop.",
+  "concepts": [
+    "Primary adrenal insufficiency",
+    "Secondary and tertiary failure",
+    "ACTH",
+    "RAAS",
+    "Aldosterone preservation"
+  ],
+  "application": "Use cortisol and ACTH together to locate confirmed deficiency, assess aldosterone when primary disease is suspected, and prioritize emergency treatment when crisis is possible.",
+  "lesson": [
+    {
+      "heading": "Map primary failure",
+      "body": "Primary adrenal insufficiency damages the adrenal cortex. Cortisol falls, feedback raises ACTH, and aldosterone deficiency may produce high renin, salt craving, postural hypotension, hyponatremia, and hyperkalemia. Aldosterone loss is not universal in primary disease: measure renin and aldosterone together rather than assigning mineralocorticoid replacement from the cortisol result alone."
+    },
+    {
+      "heading": "Map central failure",
+      "body": "Pituitary or hypothalamic disease lowers ACTH drive. Cortisol falls, but the renin-angiotensin-aldosterone system usually preserves mineralocorticoid secretion, so hyperkalemia and severe salt wasting are less characteristic. A normal potassium does not exclude cortisol deficiency. Glucocorticoid replacement addresses the missing cortisol; routine fludrocortisone is not recommended for secondary adrenal insufficiency."
+    },
+    {
+      "heading": "Map exogenous suppression",
+      "body": "Exogenous glucocorticoids suppress CRH and ACTH. After sufficient exposure, the adrenal cortex may not generate the cortisol required for illness, surgery, or abrupt withdrawal even when aldosterone remains intact. This is suppression of the HPA axis rather than proof of primary cortical destruction. Exogenous Cushing features can coexist with poor endogenous stress reserve; appearance alone cannot demonstrate recovery."
+    },
+    {
+      "heading": "Interpret the pattern without delaying care",
+      "body": "ACTH helps locate failure once cortisol deficiency is established; an isolated low cortisol after a suppressive glucocorticoid does not establish primary adrenal disease. In confirmed cortisol deficiency, the primary guideline considers ACTH greater than twice the laboratory upper reference limit consistent with primary failure. Use the assay reference range and clinical context. Assess renin and aldosterone together when mineralocorticoid deficiency is possible. Hypotension, volume depletion, vomiting or severe abdominal symptoms require urgent assessment for crisis. Obtain useful pretreatment samples if safe, but do not delay appropriate parenteral glucocorticoids and fluid resuscitation while waiting for results."
+    }
+  ],
+  "keyPoints": [
+    "Primary disease can remove cortisol and aldosterone action.",
+    "Central disease usually preserves aldosterone.",
+    "ACTH helps locate confirmed cortisol deficiency.",
+    "Exogenous glucocorticoids can create central suppression."
+  ],
+  "check": {
+    "question": "Which finding most strongly favors primary rather than central adrenal insufficiency?",
+    "choices": [
+      "High ACTH with hyperkalemia and salt craving",
+      "Low ACTH with normal potassium",
+      "Normal renin with pituitary surgery",
+      "Isolated low cortisol after dexamethasone"
+    ],
+    "answer": 0,
+    "rationale": "High ACTH in established cortisol deficiency favors primary cortical failure, and hyperkalemia with salt craving supports possible aldosterone loss. Low ACTH with normal potassium and pituitary surgery with normal renin instead fit central disease, where aldosterone is usually preserved. Isolated low cortisol after dexamethasone can reflect suppression and does not establish primary disease. Confirm the hormonal pattern and assess mineralocorticoid function rather than relying on one symptom or electrolyte.",
+    "reviewHref": "#levels-of-failure"
+  }
+});
+Object.assign(adrenalInsufficiencyModule.submodules.find((lesson) => lesson.slug === "primary-adrenal-insufficiency"), {
+  "slug": "primary-adrenal-insufficiency",
+  "title": "Primary Adrenal Insufficiency and Addison Disease",
+  "visual": "ai-primary",
+  "summary": "Addison disease is chronic primary adrenal insufficiency, most often autoimmune in many settings, while infection, hemorrhage, infiltration, metastases, and genetic disorders form important alternative pathways.",
+  "concepts": [
+    "Autoimmune adrenalitis",
+    "21-hydroxylase antibodies",
+    "Polyglandular autoimmunity",
+    "Hemorrhage and infection",
+    "Hyperpigmentation"
+  ],
+  "application": "Use age, tempo, autoimmune history, infection risk, anticoagulation, malignancy, imaging, and antibody findings to explain why the cortex failed.",
+  "lesson": [
+    {
+      "heading": "Recognize autoimmune disease",
+      "body": "Autoimmune adrenalitis can be supported by 21-hydroxylase antibodies and may coexist with autoimmune thyroid disease, type 1 diabetes, celiac disease, vitiligo or premature ovarian insufficiency. For primary disease in which an autoimmune origin has not been excluded, the guideline suggests periodic screening for associated autoimmunity; the optimal interval is unknown, but screening can be done annually. Symptom-driven evaluation remains necessary, and absence of another diagnosed autoimmune condition does not exclude adrenal autoimmunity."
+    },
+    {
+      "heading": "Read the phenotype",
+      "body": "Fatigue, weight loss, nausea, abdominal symptoms, postural dizziness, salt craving, hyponatremia, and hyperkalemia may develop gradually. High POMC-derived ACTH can darken scars, pressure areas, palmar creases, and oral mucosa. These findings prompt hormonal evaluation; pigmentation alone cannot confirm Addison disease, and its absence cannot exclude it."
+    },
+    {
+      "heading": "Respect destructive causes",
+      "body": "Tuberculosis and other infections, bilateral hemorrhage or infarction, metastatic disease, infiltrative disorders, adrenal surgery, and selected genetic conditions can remove cortical reserve. Abrupt pain, sepsis, anticoagulation, or shock raises concern for acute bilateral injury. Shock in this setting requires urgent treatment of possible adrenal crisis while the cause is investigated; waiting for antibody testing can delay life-saving care."
+    },
+    {
+      "heading": "Confirm disease before assigning its cause",
+      "body": "Once primary adrenal insufficiency is confirmed, investigate its etiology rather than assuming replacement makes the workup unnecessary. A validated 21-hydroxylase antibody assay supports autoimmune adrenalitis. A negative result requires consideration of other causes, not an automatic diagnosis of infection. The guideline describes adrenal CT for antibody-negative disease of unclear cause to evaluate infection, infiltration or tumors, but imaging is not invariably specific. Age, family history, disease tempo and exposure history guide additional genetic or other testing. Etiologic testing must not hold up crisis treatment."
+    }
+  ],
+  "keyPoints": [
+    "Addison disease refers to primary adrenal failure.",
+    "Autoimmune adrenalitis can cluster with other autoimmune disease.",
+    "High ACTH can produce hyperpigmentation.",
+    "Acute bilateral adrenal injury can present as crisis."
+  ],
+  "check": {
+    "question": "What explains hyperpigmentation in primary adrenal insufficiency?",
+    "choices": [
+      "Loss of cortisol feedback increases POMC-derived ACTH signaling",
+      "Low renin activates melanocytes",
+      "Fludrocortisone deposits pigment",
+      "Aldosterone converts to melanin"
+    ],
+    "answer": 0,
+    "rationale": "Loss of cortisol feedback increases ACTH and related POMC-derived melanocortin signaling, which can produce skin and mucosal pigmentation in primary disease. Low renin is not the mechanism; aldosterone deficiency can instead raise renin. Fludrocortisone does not explain the characteristic pigment pattern, and aldosterone is not converted to melanin. Pigmentation is a clue that still requires hormonal evaluation.",
+    "reviewHref": "#primary-adrenal-insufficiency"
+  }
+});
+Object.assign(adrenalInsufficiencyModule.submodules.find((lesson) => lesson.slug === "central-glucocorticoid-induced"), {
+  "slug": "central-glucocorticoid-induced",
+  "title": "Central and Glucocorticoid-Induced Adrenal Insufficiency",
+  "visual": "ai-central",
+  "summary": "Pituitary and hypothalamic disease can reduce ACTH drive. Exogenous glucocorticoids are a common cause of central suppression, with clinically important risk during withdrawal or stress before recovery.",
+  "concepts": [
+    "Pituitary disease",
+    "Chronic glucocorticoids",
+    "Multiple routes",
+    "CYP3A4 interactions",
+    "Current risk thresholds"
+  ],
+  "application": "Reconstruct the complete exposure, including injections and local products, before deciding that a patient has recovered or can safely stop therapy.",
+  "lesson": [
+    {
+      "heading": "Identify structural central disease",
+      "body": "Pituitary tumors, surgery, radiation, infarction, trauma, and hypothalamic disorders can reduce ACTH. Other pituitary hormone deficits may provide the clue. Evaluate adrenal function before starting levothyroxine for central hypothyroidism; if timely evaluation is not feasible, the hypopituitarism guideline advises empiric glucocorticoid coverage until definitive assessment."
+    },
+    {
+      "heading": "Use current exposure thresholds",
+      "body": "The 2024 joint guideline expects oral-treatment risk when both thresholds are exceeded: exposure lasting at least three to four weeks and a dose above a physiologic daily equivalent, roughly hydrocortisone 15 to 25 mg or prednisone 4 to 6 mg. These guide risk assessment; they are not proof of recovery or a guarantee that lower exposure is risk free. An isolated short course under three to four weeks usually does not require tapering or testing solely for HPA protection, regardless of dose. This differs from the older book\u2019s blanket fourteen-day taper rule. Long-term tapering should begin only when the underlying disease is controlled and the glucocorticoid is no longer required; do not extend or stop treatment without considering that indication."
+    },
+    {
+      "heading": "Count every route and interaction",
+      "body": "High-dose inhaled or topical therapy, repeated intra-articular injections, multiple formulations, long-acting agents and nighttime dosing can increase suppression risk. Strong CYP3A4 inhibitors can reduce glucocorticoid metabolism and increase systemic exposure; inhaled fluticasone is an important example. Local administration does not guarantee confinement to the treated site. The 2024 guideline specifically calls for awareness after intra-articular injections within the previous two months and during prolonged inhaled or topical treatment. With current or previous glucocorticoid treatment and exogenous Cushing signs, the guideline advises assuming glucocorticoid-induced adrenal insufficiency rather than treating those features as proof of endogenous reserve."
+    },
+    {
+      "heading": "Connect stress coverage to an actual stressor",
+      "body": "Current or recent glucocorticoid users whose adrenal recovery has not been established need stress coverage when exposed to stress. For minor stress, oral glucocorticoids are appropriate when the patient is stable and can retain and absorb them. Moderate or major stress, anesthesia, prolonged inability to take oral medication, hemodynamic instability or prolonged vomiting or diarrhea require parenteral coverage. Suspected crisis requires parenteral glucocorticoids and fluid resuscitation regardless of the prior steroid route. Do not assume that stopping injections restores the axis immediately, or use fludrocortisone as a substitute for cortisol. Aldosterone is generally preserved in glucocorticoid-induced disease, and routine fludrocortisone is not recommended."
+    }
+  ],
+  "keyPoints": [
+    "Glucocorticoid exposure is cumulative across routes.",
+    "Current guidance does not use a universal fourteen-day taper rule.",
+    "CYP3A4 inhibitors can increase systemic steroid exposure.",
+    "Glucocorticoid-induced disease does not require fludrocortisone."
+  ],
+  "check": {
+    "question": "Which exposure most warrants evaluation for glucocorticoid-induced adrenal insufficiency?",
+    "choices": [
+      "Combined high-dose inhaled, topical, and repeated injected steroids with a CYP3A4 inhibitor",
+      "One day of low-dose hydrocortisone",
+      "A saline nasal spray",
+      "An isolated mineralocorticoid dose"
+    ],
+    "answer": 0,
+    "rationale": "Combined high-dose products, repeated joint injections and a strong CYP3A4 inhibitor warrant assessment because systemic exposure can accumulate across routes and metabolism can be inhibited. One day of low-dose hydrocortisone alone does not carry the same prolonged-exposure pattern. Saline nasal spray contains no glucocorticoid. An isolated mineralocorticoid dose does not reproduce this cumulative glucocorticoid exposure. The complete history and clinical features still guide the individual assessment.",
+    "reviewHref": "#central-glucocorticoid-induced"
+  }
+});

@@ -303,3 +303,122 @@ const sourceReviewedAdultReplacementRationales = {
   "adrenal-insufficiency-23-case": "Persistent inability to retain fluids makes oral medication unreliable despite improved blood pressure. Continue the clinically required parenteral glucocorticoid coverage and reassess the patient, cause and fluid needs; the primary-adrenal guideline makes reduction and oral transition depend on clinical state. Do not switch solely for one improved vital sign, stop needed cortisol coverage or substitute fludrocortisone alone. Oral therapy resumes when retention and absorption are dependable, with stress exposure adjusted to the remaining illness."
 };
 export const adrenalInsufficiencyQuestionBank = priorAdultReplacementQuestionBank.map((question) => sourceReviewedAdultReplacementRationales[question.id] ? { ...question, rationale: sourceReviewedAdultReplacementRationales[question.id] } : question);
+
+
+// Preserve stable case IDs and keyed choices while explaining every alternative.
+for (const [id, updates] of Object.entries({
+  "adrenal-insufficiency-01-case": {
+    "id": "adrenal-insufficiency-01-case",
+    "question": "A patient has low cortisol, high ACTH, hyperkalemia, and salt craving. Which response is best?",
+    "choices": [
+      "Classify primary adrenal insufficiency and assess aldosterone deficiency.",
+      "Classify central insufficiency because cortisol is low, without considering ACTH.",
+      "Exclude mineralocorticoid deficiency because ACTH is elevated.",
+      "Treat the pattern as isolated glucocorticoid excess."
+    ],
+    "answer": 0,
+    "rationale": "Low cortisol with high ACTH favors primary cortical failure; hyperkalemia and salt craving support possible mineralocorticoid loss. Assess renin and aldosterone together. Low cortisol alone cannot distinguish primary from central disease, so ignoring ACTH misclassifies the pattern. Elevated ACTH does not exclude aldosterone deficiency. Glucocorticoid excess does not explain this low-cortisol pattern; confirm the clinical and hormonal assessment rather than treating the case as an isolated cortisol value.",
+    "reviewHref": "#levels-of-failure",
+    "difficulty": "application"
+  },
+  "adrenal-insufficiency-02-case": {
+    "id": "adrenal-insufficiency-02-case",
+    "question": "A patient with weight loss and postural symptoms develops darkening of old scars and oral mucosa. Which response is best?",
+    "choices": [
+      "Exclude adrenal disease because pigmentation is a skin finding.",
+      "Prioritize evaluation for primary adrenal insufficiency.",
+      "Confirm Addison disease from pigmentation alone without hormonal evaluation.",
+      "Attribute the pigmentation to low ACTH as the defining mechanism."
+    ],
+    "answer": 1,
+    "rationale": "Weight loss and postural symptoms with scar and oral-mucosal darkening warrant evaluation for primary adrenal insufficiency. Increased ACTH and related melanocortin signaling after loss of cortisol feedback can explain pigmentation. Dismissing it as skin-only disease misses the systemic clues. Pigmentation alone cannot confirm Addison disease, and low ACTH is not its defining mechanism. Arrange hormonal evaluation and assess urgency from the overall presentation.",
+    "reviewHref": "#primary-adrenal-insufficiency",
+    "difficulty": "application"
+  },
+  "adrenal-insufficiency-03-case": {
+    "id": "adrenal-insufficiency-03-case",
+    "question": "A patient with pituitary disease has low cortisol and low ACTH but normal potassium and renin. Which response is best?",
+    "choices": [
+      "Add fludrocortisone automatically to every low-cortisol regimen.",
+      "Use fludrocortisone alone instead of glucocorticoid replacement.",
+      "Replace glucocorticoid without routine fludrocortisone.",
+      "Withhold cortisol replacement because potassium is normal."
+    ],
+    "answer": 2,
+    "rationale": "Pituitary disease with low cortisol and low ACTH supports central adrenal insufficiency. RAAS generally preserves aldosterone, so replace glucocorticoid without routine fludrocortisone. Adding fludrocortisone automatically is inappropriate, and fludrocortisone alone cannot replace cortisol. Normal potassium and renin do not exclude cortisol deficiency or justify withholding needed glucocorticoid replacement.",
+    "reviewHref": "#levels-of-failure",
+    "difficulty": "application"
+  },
+  "adrenal-insufficiency-04-case": {
+    "id": "adrenal-insufficiency-04-case",
+    "question": "A young adult has confirmed primary adrenal insufficiency without infection, hemorrhage, or metastatic disease. Which response is best?",
+    "choices": [
+      "Exclude autoimmunity because no other autoimmune disease is yet diagnosed.",
+      "Assume cortisol replacement removes the need for etiologic evaluation.",
+      "Diagnose infection solely because adrenal insufficiency is present.",
+      "Test for autoimmune adrenalitis and arrange periodic screening for associated autoimmune disease."
+    ],
+    "answer": 3,
+    "rationale": "Investigate autoimmune adrenalitis with a validated 21-hydroxylase antibody assay and arrange periodic assessment for associated autoimmunity when autoimmune origin has not been excluded. Another autoimmune diagnosis need not already be present. Cortisol replacement does not remove the need to establish etiology, and primary insufficiency alone does not prove infection. The guideline permits annual screening but states that the optimal interval is unknown.",
+    "reviewHref": "#primary-adrenal-insufficiency",
+    "difficulty": "application"
+  },
+  "adrenal-insufficiency-05-case": {
+    "id": "adrenal-insufficiency-05-case",
+    "question": "An anticoagulated patient with sepsis develops sudden flank pain, hypotension, hyponatremia, and hyperkalemia. Which response is best?",
+    "choices": [
+      "Treat possible adrenal crisis and evaluate for bilateral adrenal hemorrhage.",
+      "Wait for antibody testing before treating the shock.",
+      "Exclude adrenal injury because the patient is taking an anticoagulant.",
+      "Assume chronic autoimmune disease is the only possible cause."
+    ],
+    "answer": 0,
+    "rationale": "Sepsis and anticoagulation with sudden pain, shock and this electrolyte pattern raise concern for acute bilateral adrenal hemorrhage and possible adrenal crisis. Begin appropriate parenteral glucocorticoids and fluid resuscitation while evaluating the cause; obtain useful samples only if doing so is safe and does not delay treatment. Waiting for antibodies delays urgent care. Anticoagulation does not exclude adrenal injury, and chronic autoimmunity is not the only cause of primary failure. The pattern raises concern; it does not establish hemorrhage without evaluation.",
+    "reviewHref": "#primary-adrenal-insufficiency",
+    "difficulty": "application"
+  },
+  "adrenal-insufficiency-06-case": {
+    "id": "adrenal-insufficiency-06-case",
+    "question": "A patient with unproven adrenal recovery stops repeated joint injections while using high-dose inhaled and potent topical steroids, then develops a febrile illness. The patient is hemodynamically stable and can retain oral medication. Which response is best?",
+    "choices": [
+      "Ignore nonoral products when reconstructing the exposure.",
+      "Assess cumulative glucocorticoid exposure and provide stress coverage when recovery is unproven.",
+      "Assume a local injection can never enter systemic circulation.",
+      "Prescribe fludrocortisone alone as protection against cortisol deficiency."
+    ],
+    "answer": 1,
+    "rationale": "Repeated joint injections plus inhaled and topical steroids can produce cumulative systemic exposure. During the specified febrile illness, current or recent use with unproven adrenal recovery warrants stress coverage; oral coverage is suitable for minor stress when stable and able to retain and absorb medication. More severe stress, instability or impaired oral delivery changes the route to parenteral treatment. Ignoring nonoral products or assuming injections never enter the circulation misses suppression risk. Fludrocortisone alone does not replace missing cortisol.",
+    "reviewHref": "#central-glucocorticoid-induced",
+    "difficulty": "application"
+  },
+  "adrenal-insufficiency-07-case": {
+    "id": "adrenal-insufficiency-07-case",
+    "question": "A patient completes seven days of prednisone without prior chronic exposure or Cushing features. Which response is best?",
+    "choices": [
+      "Extend every seven-day course with a mandatory month-long taper.",
+      "Require stimulation testing before stopping any isolated short course.",
+      "Do not prolong treatment solely to taper for HPA protection.",
+      "Diagnose permanent adrenal failure based on the seven-day duration alone."
+    ],
+    "answer": 2,
+    "rationale": "A seven-day isolated prednisone course falls below the guideline\u2019s three-to-four-week short-course boundary. It usually does not require tapering or stimulation testing solely for HPA protection, regardless of dose, when the treatment indication no longer requires the drug. A mandatory month-long taper and universal stimulation testing add requirements the guideline does not support. Seven days alone does not establish permanent adrenal failure. Prior exposure, clinical features and the underlying disease still matter.",
+    "reviewHref": "#central-glucocorticoid-induced",
+    "difficulty": "application"
+  },
+  "adrenal-insufficiency-08-case": {
+    "id": "adrenal-insufficiency-08-case",
+    "question": "A patient using inhaled fluticasone develops Cushing features after a strong CYP3A4 inhibitor is started. Which response is best?",
+    "choices": [
+      "Assume CYP3A4 inhibition accelerates steroid clearance.",
+      "Exclude HPA suppression because the steroid was inhaled.",
+      "Interpret Cushing features as proof of normal endogenous stress reserve.",
+      "Suspect increased systemic glucocorticoid exposure and HPA suppression."
+    ],
+    "answer": 3,
+    "rationale": "A strong CYP3A4 inhibitor can reduce steroid metabolism, increasing systemic fluticasone exposure and HPA suppression. In a current or previous glucocorticoid user with exogenous Cushing features, the 2024 guideline advises assuming glucocorticoid-induced adrenal insufficiency. Inhibition does not accelerate clearance; inhalation does not eliminate systemic exposure. Cushing features from exogenous treatment do not prove an intact endogenous stress response. Review the interaction, underlying treatment need and adrenal-protection plan rather than abruptly stopping therapy.",
+    "reviewHref": "#central-glucocorticoid-induced",
+    "difficulty": "application"
+  }
+})) {
+  Object.assign(adrenalInsufficiencyQuestionBank.find((question) => question.id === id), updates);
+}
