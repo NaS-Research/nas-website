@@ -1,0 +1,1515 @@
+{
+  "verifiedAt": "2026-10-06T19:38:09.831608+00:00",
+  "unit": "enteral-nutrition:broader-perioperative-local-anesthetics",
+  "contentCommit": "771693f532cee41cab96ac42c4c1d88ccea0ea03",
+  "remoteBranch": "audit/rxprep-content-2026-09-24",
+  "remoteHashObserved": "771693f532cee41cab96ac42c4c1d88ccea0ea03",
+  "exactRemoteObservedByTool": true,
+  "coverage": {
+    "evidence": "enteral-nutrition-broader-perioperative-local-review.json",
+    "verifiedScope": "Two complete local-anesthetic lessons verified:17 bodies,2 checks/all8 choices,2 figures,12 whole bank questions/all48 choices and1 associated cumulative origin. Original ASRA image corrects inclusive epinephrine≤1mcg/kg and lipid continuation≥15min thresholds. Two previously uncommitted lidocaine/product-mixup cases incorporated after fresh source/choice review; original81 IDs/order/stems/choices/keys retained. Explicit existing five module cumulative origins prevent automatic reselection; all1180 cumulative IDs/order retained and other1179 objects unchanged. Thirty references retained,six primary references added. Perioperative parent remains reviewing:3/11 committed lessons now carry detailed whole-lesson evidence,19/83 questions covered across SUP/local units. Broader unique source-verified questions1276to1288. Whole-module count64/232 and chapter count6/82 unchanged; full goal remains open.",
+    "wholeLessonsVerifiedThisUnit": {
+      "perioperative-critical-care-pharmacology": [
+        "local-anesthetic-pharmacology",
+        "local-anesthetic-toxicity"
+      ]
+    },
+    "wholeBodiesVerifiedThisUnit": 17,
+    "originalCommittedBodiesRetainedAndExpanded": 11,
+    "previouslyUncommittedBodySectionsSourceVerified": 2,
+    "newOriginalBodySections": 4,
+    "wholeChecksVerifiedThisUnit": 2,
+    "wholeFiguresVerifiedThisUnit": 2,
+    "wholeLessonMetadataVerified": true,
+    "wholeQuestionsReviewedThisUnit": 12,
+    "all48ChoicesIndividuallyCompared": true,
+    "all8EmbeddedChoicesIndividuallyCompared": true,
+    "wholeBankQuestionIdsVerifiedThisUnit": [
+      "periop-local-additive",
+      "periop-local-hepatic",
+      "periop-local-route",
+      "periop-local-aspiration",
+      "periop-last-recognition",
+      "periop-last-bolus",
+      "periop-last-rate",
+      "periop-last-ceiling",
+      "periop-last-drugs",
+      "periop-last-observation",
+      "periop-lidocaine-combined-exposure",
+      "periop-epinephrine-product-mixup"
+    ],
+    "newUniqueBankIdsVerified": [
+      "periop-local-additive",
+      "periop-local-hepatic",
+      "periop-local-route",
+      "periop-local-aspiration",
+      "periop-last-recognition",
+      "periop-last-bolus",
+      "periop-last-rate",
+      "periop-last-ceiling",
+      "periop-last-drugs",
+      "periop-last-observation",
+      "periop-lidocaine-combined-exposure",
+      "periop-epinephrine-product-mixup"
+    ],
+    "newUniqueBankQuestionsVerified": 12,
+    "broaderFeedingBankVerifiedBefore": 1276,
+    "broaderFeedingBankVerifiedAfter": 1288,
+    "committedModuleBankBefore": 81,
+    "committedModuleBankAfter": 83,
+    "existing81IdsOrderStemsChoicesKeysPreserved": true,
+    "sourceVerifiedDraftQuestionsAddedToCommittedBank": 2,
+    "committedWholeLessonsWithDetailedEvidenceAfter": 3,
+    "committedWholeLessonTotal": 11,
+    "sourceVerifiedQuestionsAcrossSupAndLocalUnits": 19,
+    "remainingCommittedWholeQuestionsForCurrentReview": 64,
+    "associatedCumulativeItems": [
+      "cumulative-perioperative-critical-care-pharmacology-periop-local-hepatic"
+    ],
+    "moduleCumulativeOriginsExplicitlyRetained": [
+      "periop-pediatric-reversal-1",
+      "periop-nmb-exit-plan",
+      "periop-local-hepatic",
+      "periop-antifib-dilution",
+      "periop-pph-prophylaxis"
+    ],
+    "all1180CumulativeIdsAndOrderPreserved": true,
+    "other1179WholeCumulativeObjectsUnchanged": true,
+    "all30ReferencesRetained": true,
+    "newReferencesAdded": 6,
+    "sourceGlyphCorrections": {
+      "epinephrine": "≤1 microgram/kg",
+      "lipidContinuation": "≥15 minutes after stability"
+    },
+    "wholeParentModuleVerified": false,
+    "enteralParentVerified": false,
+    "wholeChaptersVerifiedThisUnit": false,
+    "committedWholeModulesVerifiedAfter": 64,
+    "committedWholeModulesTotal": 232,
+    "moduleCountPercent": 27.59,
+    "chaptersVerifiedAfter": 6,
+    "chapterTotal": 82,
+    "chapterCountPercent": 7.32,
+    "workingBoundary": "Two selected full lessons and12 anchored questions source-verified; remaining current96-question/12-lesson drafts remain unverified by this unit."
+  },
+  "validation": {
+    "productionBuild": {
+      "status": "passed",
+      "terminalExitCode": 0,
+      "command": "next build --webpack",
+      "productionCandidate": true
+    },
+    "structure": {
+      "modules": 1,
+      "questions": 83,
+      "hardErrors": [],
+      "sourceGaps": [],
+      "sizeAdvisories": [
+        {
+          "module": "perioperative-critical-care-pharmacology",
+          "questions": 83,
+          "review": "Confirm topic coverage in the clinical audit ledger"
+        }
+      ],
+      "thinLessons": [
+        {
+          "module": "perioperative-critical-care-pharmacology",
+          "lesson": "neuromuscular-blockade-foundations",
+          "count": 4
+        },
+        {
+          "module": "perioperative-critical-care-pharmacology",
+          "lesson": "succinylcholine-safety",
+          "count": 4
+        },
+        {
+          "module": "perioperative-critical-care-pharmacology",
+          "lesson": "nondepolarizing-agent-selection",
+          "count": 5
+        },
+        {
+          "module": "perioperative-critical-care-pharmacology",
+          "lesson": "local-anesthetic-pharmacology",
+          "count": 6
+        },
+        {
+          "module": "perioperative-critical-care-pharmacology",
+          "lesson": "local-anesthetic-toxicity",
+          "count": 6
+        },
+        {
+          "module": "perioperative-critical-care-pharmacology",
+          "lesson": "malignant-hyperthermia",
+          "count": 6
+        },
+        {
+          "module": "perioperative-critical-care-pharmacology",
+          "lesson": "neuromuscular-blockade-safety",
+          "count": 6
+        },
+        {
+          "module": "perioperative-critical-care-pharmacology",
+          "lesson": "perioperative-stress-ulcer",
+          "count": 7
+        }
+      ],
+      "weakestModules": [
+        {
+          "module": "perioperative-critical-care-pharmacology",
+          "lessons": 11,
+          "questions": 83,
+          "minimumLessonCoverage": 4
+        }
+      ]
+    },
+    "wholeSiteBaselineIssueContinuity": {
+      "status": "passed",
+      "preexistingHardErrorsAndSourceGapsUnchanged": true,
+      "preexistingAdvisoryIdentitiesAndOtherModuleEntriesUnchanged": true,
+      "scopeSizeCountBefore": 81,
+      "scopeSizeCountAfter": 83,
+      "localPharmacologyThinCountBefore": 4,
+      "localPharmacologyThinCountAfter": 6,
+      "hardErrors": 34,
+      "sizeAdvisories": 37,
+      "thinLessons": 360
+    },
+    "objectPreservation": {
+      "status": "passed",
+      "wholeLessonsReviewed": 2,
+      "wholeScopedBodies": 17,
+      "wholeQuestionsReviewed": 12,
+      "all48QuestionChoicesReviewed": true,
+      "all8EmbeddedChoicesReviewed": true,
+      "committedBankBefore": 81,
+      "committedBankAfter": 83,
+      "existing81IdsOrderStemsChoicesKeysPreserved": true,
+      "newQuestionsFromPreviouslyUncommittedDrafts": 2,
+      "other71WholeCommittedQuestionsUnchanged": true,
+      "otherNineCommittedLessonsUnchanged": true,
+      "other1179CumulativeObjectsUnchanged": true,
+      "associatedCumulativeItems": [
+        "cumulative-perioperative-critical-care-pharmacology-periop-local-hepatic"
+      ],
+      "allParentAssociatedCumulativeItems": [
+        "cumulative-perioperative-critical-care-pharmacology-periop-pediatric-reversal-1",
+        "cumulative-perioperative-critical-care-pharmacology-periop-nmb-exit-plan",
+        "cumulative-perioperative-critical-care-pharmacology-periop-local-hepatic",
+        "cumulative-perioperative-critical-care-pharmacology-periop-antifib-dilution",
+        "cumulative-perioperative-critical-care-pharmacology-periop-pph-prophylaxis"
+      ],
+      "all1180CumulativeIdsAndOrderPreserved": true,
+      "moduleCumulativeOriginsExplicitlyRetained": true,
+      "other231ModulesUnchanged": true,
+      "all30ReferencesPreserved": true,
+      "addedReferences": 6,
+      "workingBankBefore": 96,
+      "workingLessonsBefore": 12,
+      "wholeParentVerified": false
+    },
+    "browser": {
+      "status": "passed",
+      "results": [
+        {
+          "width": 1440,
+          "exactWholeBodies": 17,
+          "wholeChecksAllFourOptionsGraded": 2,
+          "wholeQuestionsShuffledCorrectIncorrectFeedbackAndAnchorsVerified": 12,
+          "oneScopedCumulativeCaseShuffledCorrectIncorrectAndReviewLinkVerified": true,
+          "other1179CumulativeObjectsUnchanged": true,
+          "allReferencesExact": 36,
+          "noHorizontalOverflow": true,
+          "diagrams": [
+            {
+              "width": 1440,
+              "slug": "perioperative-critical-care-pharmacology",
+              "lessonKey": "local-anesthetic-pharmacology",
+              "labels": [
+                {
+                  "tag": "SPAN",
+                  "text": "Regional pharmacology",
+                  "overflow": false,
+                  "fontSize": 10.88
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Membrane access and sodium-channel binding create local block",
+                  "overflow": false,
+                  "fontSize": 37.6
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "01",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Cross",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Neutral fraction",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Uncharged drug moves through tissue and axonal membrane.",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "02",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Bind",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Charged fraction",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Protonated drug reaches the intracellular sodium-channel site.",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "03",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Contain",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Total exposure",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Dose, blood flow, organ function, and every local anesthetic shape systemic risk.",
+                  "overflow": false,
+                  "fontSize": 14
+                }
+              ],
+              "allTextWithinBounds": true
+            },
+            {
+              "width": 1440,
+              "slug": "perioperative-critical-care-pharmacology",
+              "lessonKey": "local-anesthetic-toxicity",
+              "labels": [
+                {
+                  "tag": "SPAN",
+                  "text": "LAST rescue",
+                  "overflow": false,
+                  "fontSize": 10.88
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Stop exposure, protect physiology, and use lipid early",
+                  "overflow": false,
+                  "fontSize": 37.6
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "01",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Stabilize",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Airway and seizure",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Prevent hypoxemia, hypercapnia, and acidosis while controlling seizure.",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "02",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Rescue",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "20 percent lipid",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Use the current ASRA weight-based bolus and infusion pathway.",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "03",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Modify",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Not standard ACLS",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Use smaller epinephrine and avoid vasopressin and other aggravating drugs.",
+                  "overflow": false,
+                  "fontSize": 14
+                }
+              ],
+              "allTextWithinBounds": true
+            }
+          ]
+        },
+        {
+          "width": 390,
+          "exactWholeBodies": 17,
+          "wholeChecksAllFourOptionsGraded": 2,
+          "wholeQuestionsShuffledCorrectIncorrectFeedbackAndAnchorsVerified": 12,
+          "oneScopedCumulativeCaseShuffledCorrectIncorrectAndReviewLinkVerified": true,
+          "other1179CumulativeObjectsUnchanged": true,
+          "allReferencesExact": 36,
+          "noHorizontalOverflow": true,
+          "diagrams": [
+            {
+              "width": 320,
+              "slug": "perioperative-critical-care-pharmacology",
+              "lessonKey": "local-anesthetic-pharmacology",
+              "labels": [
+                {
+                  "tag": "SPAN",
+                  "text": "Regional pharmacology",
+                  "overflow": false,
+                  "fontSize": 10.88
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Membrane access and sodium-channel binding create local block",
+                  "overflow": false,
+                  "fontSize": 23.2
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "01",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Cross",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Neutral fraction",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Uncharged drug moves through tissue and axonal membrane.",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "02",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Bind",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Charged fraction",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Protonated drug reaches the intracellular sodium-channel site.",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "03",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Contain",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Total exposure",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Dose, blood flow, organ function, and every local anesthetic shape systemic risk.",
+                  "overflow": false,
+                  "fontSize": 14
+                }
+              ],
+              "allTextWithinBounds": true
+            },
+            {
+              "width": 320,
+              "slug": "perioperative-critical-care-pharmacology",
+              "lessonKey": "local-anesthetic-toxicity",
+              "labels": [
+                {
+                  "tag": "SPAN",
+                  "text": "LAST rescue",
+                  "overflow": false,
+                  "fontSize": 10.88
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Stop exposure, protect physiology, and use lipid early",
+                  "overflow": false,
+                  "fontSize": 23.2
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "01",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Stabilize",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Airway and seizure",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Prevent hypoxemia, hypercapnia, and acidosis while controlling seizure.",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "02",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Rescue",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "20 percent lipid",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Use the current ASRA weight-based bolus and infusion pathway.",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "03",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Modify",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Not standard ACLS",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Use smaller epinephrine and avoid vasopressin and other aggravating drugs.",
+                  "overflow": false,
+                  "fontSize": 14
+                }
+              ],
+              "allTextWithinBounds": true
+            },
+            {
+              "width": 390,
+              "slug": "perioperative-critical-care-pharmacology",
+              "lessonKey": "local-anesthetic-pharmacology",
+              "labels": [
+                {
+                  "tag": "SPAN",
+                  "text": "Regional pharmacology",
+                  "overflow": false,
+                  "fontSize": 10.88
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Membrane access and sodium-channel binding create local block",
+                  "overflow": false,
+                  "fontSize": 23.2
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "01",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Cross",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Neutral fraction",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Uncharged drug moves through tissue and axonal membrane.",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "02",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Bind",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Charged fraction",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Protonated drug reaches the intracellular sodium-channel site.",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "03",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Contain",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Total exposure",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Dose, blood flow, organ function, and every local anesthetic shape systemic risk.",
+                  "overflow": false,
+                  "fontSize": 14
+                }
+              ],
+              "allTextWithinBounds": true
+            },
+            {
+              "width": 390,
+              "slug": "perioperative-critical-care-pharmacology",
+              "lessonKey": "local-anesthetic-toxicity",
+              "labels": [
+                {
+                  "tag": "SPAN",
+                  "text": "LAST rescue",
+                  "overflow": false,
+                  "fontSize": 10.88
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Stop exposure, protect physiology, and use lipid early",
+                  "overflow": false,
+                  "fontSize": 23.2
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "01",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Stabilize",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Airway and seizure",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Prevent hypoxemia, hypercapnia, and acidosis while controlling seizure.",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "02",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Rescue",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "20 percent lipid",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Use the current ASRA weight-based bolus and infusion pathway.",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "03",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Modify",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Not standard ACLS",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Use smaller epinephrine and avoid vasopressin and other aggravating drugs.",
+                  "overflow": false,
+                  "fontSize": 14
+                }
+              ],
+              "allTextWithinBounds": true
+            },
+            {
+              "width": 719,
+              "slug": "perioperative-critical-care-pharmacology",
+              "lessonKey": "local-anesthetic-pharmacology",
+              "labels": [
+                {
+                  "tag": "SPAN",
+                  "text": "Regional pharmacology",
+                  "overflow": false,
+                  "fontSize": 10.88
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Membrane access and sodium-channel binding create local block",
+                  "overflow": false,
+                  "fontSize": 24.446
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "01",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Cross",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Neutral fraction",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Uncharged drug moves through tissue and axonal membrane.",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "02",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Bind",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Charged fraction",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Protonated drug reaches the intracellular sodium-channel site.",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "03",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Contain",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Total exposure",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Dose, blood flow, organ function, and every local anesthetic shape systemic risk.",
+                  "overflow": false,
+                  "fontSize": 14
+                }
+              ],
+              "allTextWithinBounds": true
+            },
+            {
+              "width": 719,
+              "slug": "perioperative-critical-care-pharmacology",
+              "lessonKey": "local-anesthetic-toxicity",
+              "labels": [
+                {
+                  "tag": "SPAN",
+                  "text": "LAST rescue",
+                  "overflow": false,
+                  "fontSize": 10.88
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Stop exposure, protect physiology, and use lipid early",
+                  "overflow": false,
+                  "fontSize": 24.446
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "01",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Stabilize",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Airway and seizure",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Prevent hypoxemia, hypercapnia, and acidosis while controlling seizure.",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "02",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Rescue",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "20 percent lipid",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Use the current ASRA weight-based bolus and infusion pathway.",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "03",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Modify",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Not standard ACLS",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Use smaller epinephrine and avoid vasopressin and other aggravating drugs.",
+                  "overflow": false,
+                  "fontSize": 14
+                }
+              ],
+              "allTextWithinBounds": true
+            },
+            {
+              "width": 720,
+              "slug": "perioperative-critical-care-pharmacology",
+              "lessonKey": "local-anesthetic-pharmacology",
+              "labels": [
+                {
+                  "tag": "SPAN",
+                  "text": "Regional pharmacology",
+                  "overflow": false,
+                  "fontSize": 10.88
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Membrane access and sodium-channel binding create local block",
+                  "overflow": false,
+                  "fontSize": 24.48
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "01",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Cross",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Neutral fraction",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Uncharged drug moves through tissue and axonal membrane.",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "02",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Bind",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Charged fraction",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Protonated drug reaches the intracellular sodium-channel site.",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "03",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Contain",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Total exposure",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Dose, blood flow, organ function, and every local anesthetic shape systemic risk.",
+                  "overflow": false,
+                  "fontSize": 14
+                }
+              ],
+              "allTextWithinBounds": true
+            },
+            {
+              "width": 720,
+              "slug": "perioperative-critical-care-pharmacology",
+              "lessonKey": "local-anesthetic-toxicity",
+              "labels": [
+                {
+                  "tag": "SPAN",
+                  "text": "LAST rescue",
+                  "overflow": false,
+                  "fontSize": 10.88
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Stop exposure, protect physiology, and use lipid early",
+                  "overflow": false,
+                  "fontSize": 24.48
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "01",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Stabilize",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Airway and seizure",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Prevent hypoxemia, hypercapnia, and acidosis while controlling seizure.",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "02",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Rescue",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "20 percent lipid",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Use the current ASRA weight-based bolus and infusion pathway.",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "03",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Modify",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Not standard ACLS",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Use smaller epinephrine and avoid vasopressin and other aggravating drugs.",
+                  "overflow": false,
+                  "fontSize": 14
+                }
+              ],
+              "allTextWithinBounds": true
+            },
+            {
+              "width": 721,
+              "slug": "perioperative-critical-care-pharmacology",
+              "lessonKey": "local-anesthetic-pharmacology",
+              "labels": [
+                {
+                  "tag": "SPAN",
+                  "text": "Regional pharmacology",
+                  "overflow": false,
+                  "fontSize": 10.88
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Membrane access and sodium-channel binding create local block",
+                  "overflow": false,
+                  "fontSize": 24.514
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "01",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Cross",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Neutral fraction",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Uncharged drug moves through tissue and axonal membrane.",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "02",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Bind",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Charged fraction",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Protonated drug reaches the intracellular sodium-channel site.",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "03",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Contain",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Total exposure",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Dose, blood flow, organ function, and every local anesthetic shape systemic risk.",
+                  "overflow": false,
+                  "fontSize": 14
+                }
+              ],
+              "allTextWithinBounds": true
+            },
+            {
+              "width": 721,
+              "slug": "perioperative-critical-care-pharmacology",
+              "lessonKey": "local-anesthetic-toxicity",
+              "labels": [
+                {
+                  "tag": "SPAN",
+                  "text": "LAST rescue",
+                  "overflow": false,
+                  "fontSize": 10.88
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Stop exposure, protect physiology, and use lipid early",
+                  "overflow": false,
+                  "fontSize": 24.514
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "01",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Stabilize",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Airway and seizure",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Prevent hypoxemia, hypercapnia, and acidosis while controlling seizure.",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "02",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Rescue",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "20 percent lipid",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Use the current ASRA weight-based bolus and infusion pathway.",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "03",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Modify",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Not standard ACLS",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Use smaller epinephrine and avoid vasopressin and other aggravating drugs.",
+                  "overflow": false,
+                  "fontSize": 14
+                }
+              ],
+              "allTextWithinBounds": true
+            }
+          ]
+        }
+      ],
+      "captures": [
+        "hero-perioperative-critical-care-pharmacology-1440.png",
+        "body-local-anesthetic-pharmacology-0-1440.png",
+        "body-local-anesthetic-pharmacology-1-1440.png",
+        "body-local-anesthetic-pharmacology-2-1440.png",
+        "body-local-anesthetic-pharmacology-3-1440.png",
+        "body-local-anesthetic-pharmacology-4-1440.png",
+        "body-local-anesthetic-pharmacology-5-1440.png",
+        "body-local-anesthetic-pharmacology-6-1440.png",
+        "body-local-anesthetic-pharmacology-7-1440.png",
+        "body-local-anesthetic-pharmacology-8-1440.png",
+        "body-local-anesthetic-pharmacology-9-1440.png",
+        "summary-local-anesthetic-pharmacology-1440.png",
+        "concepts-local-anesthetic-pharmacology-1440.png",
+        "keypoints-local-anesthetic-pharmacology-1440.png",
+        "application-local-anesthetic-pharmacology-1440.png",
+        "figure-local-anesthetic-pharmacology-1440.png",
+        "check-local-anesthetic-pharmacology-1440.png",
+        "body-local-anesthetic-toxicity-0-1440.png",
+        "body-local-anesthetic-toxicity-1-1440.png",
+        "body-local-anesthetic-toxicity-2-1440.png",
+        "body-local-anesthetic-toxicity-3-1440.png",
+        "body-local-anesthetic-toxicity-4-1440.png",
+        "body-local-anesthetic-toxicity-5-1440.png",
+        "body-local-anesthetic-toxicity-6-1440.png",
+        "summary-local-anesthetic-toxicity-1440.png",
+        "concepts-local-anesthetic-toxicity-1440.png",
+        "keypoints-local-anesthetic-toxicity-1440.png",
+        "application-local-anesthetic-toxicity-1440.png",
+        "figure-local-anesthetic-toxicity-1440.png",
+        "check-local-anesthetic-toxicity-1440.png",
+        "references-perioperative-critical-care-pharmacology-1440.png",
+        "bank-periop-local-additive-1440.png",
+        "bank-periop-last-recognition-1440.png",
+        "bank-periop-last-observation-1440.png",
+        "bank-periop-last-bolus-1440.png",
+        "bank-periop-last-ceiling-1440.png",
+        "bank-periop-lidocaine-combined-exposure-1440.png",
+        "bank-periop-local-aspiration-1440.png",
+        "bank-periop-epinephrine-product-mixup-1440.png",
+        "bank-periop-local-route-1440.png",
+        "bank-periop-local-hepatic-1440.png",
+        "bank-periop-last-rate-1440.png",
+        "bank-periop-last-drugs-1440.png",
+        "cumulative-cumulative-perioperative-critical-care-pharmacology-periop-local-hepatic-1440.png",
+        "hero-perioperative-critical-care-pharmacology-390.png",
+        "body-local-anesthetic-pharmacology-0-390.png",
+        "body-local-anesthetic-pharmacology-1-390.png",
+        "body-local-anesthetic-pharmacology-2-390.png",
+        "body-local-anesthetic-pharmacology-3-390.png",
+        "body-local-anesthetic-pharmacology-4-390.png",
+        "body-local-anesthetic-pharmacology-5-390.png",
+        "body-local-anesthetic-pharmacology-6-390.png",
+        "body-local-anesthetic-pharmacology-7-390.png",
+        "body-local-anesthetic-pharmacology-8-390.png",
+        "body-local-anesthetic-pharmacology-9-390.png",
+        "summary-local-anesthetic-pharmacology-390.png",
+        "concepts-local-anesthetic-pharmacology-390.png",
+        "keypoints-local-anesthetic-pharmacology-390.png",
+        "application-local-anesthetic-pharmacology-390.png",
+        "figure-local-anesthetic-pharmacology-390.png",
+        "check-local-anesthetic-pharmacology-390.png",
+        "body-local-anesthetic-toxicity-0-390.png",
+        "body-local-anesthetic-toxicity-1-390.png",
+        "body-local-anesthetic-toxicity-2-390.png",
+        "body-local-anesthetic-toxicity-3-390.png",
+        "body-local-anesthetic-toxicity-4-390.png",
+        "body-local-anesthetic-toxicity-5-390.png",
+        "body-local-anesthetic-toxicity-6-390.png",
+        "summary-local-anesthetic-toxicity-390.png",
+        "concepts-local-anesthetic-toxicity-390.png",
+        "keypoints-local-anesthetic-toxicity-390.png",
+        "application-local-anesthetic-toxicity-390.png",
+        "figure-local-anesthetic-toxicity-390.png",
+        "check-local-anesthetic-toxicity-390.png",
+        "references-perioperative-critical-care-pharmacology-390.png",
+        "bank-periop-local-additive-390.png",
+        "bank-periop-last-recognition-390.png",
+        "bank-periop-last-observation-390.png",
+        "bank-periop-last-bolus-390.png",
+        "bank-periop-last-ceiling-390.png",
+        "bank-periop-lidocaine-combined-exposure-390.png",
+        "bank-periop-local-aspiration-390.png",
+        "bank-periop-epinephrine-product-mixup-390.png",
+        "bank-periop-local-route-390.png",
+        "bank-periop-local-hepatic-390.png",
+        "bank-periop-last-rate-390.png",
+        "bank-periop-last-drugs-390.png",
+        "cumulative-cumulative-perioperative-critical-care-pharmacology-periop-local-hepatic-390.png",
+        "native-figure-local-anesthetic-pharmacology-320.png",
+        "native-figure-local-anesthetic-toxicity-320.png",
+        "native-figure-local-anesthetic-pharmacology-721.png",
+        "native-figure-local-anesthetic-toxicity-721.png"
+      ],
+      "errors": []
+    },
+    "visualInspection": {
+      "status": "passed",
+      "checkedAt": "2026-10-06T19:37:01.296463+00:00",
+      "all88DesktopMobileCapturesReviewedIn44UnscaledPairs": true,
+      "all15BoardsViewedAtOriginalDetail": true,
+      "boardsReviewed": [
+        "board-00.png",
+        "board-01.png",
+        "board-02.png",
+        "board-03.png",
+        "board-04.png",
+        "board-05.png",
+        "board-06.png",
+        "board-07.png",
+        "board-08.png",
+        "board-09.png",
+        "board-10.png",
+        "board-11.png",
+        "board-12.png",
+        "board-13.png",
+        "board-14.png"
+      ],
+      "allFourNativeFiguresIndividuallyViewed": true,
+      "nativeFigureWidthsReviewed": [
+        320,
+        721
+      ],
+      "automatedFigureWidths": [
+        320,
+        390,
+        719,
+        720,
+        721,
+        1440
+      ],
+      "twoWholeLessons17BodiesMetadataTwoChecks12QuestionsOneAffectedCumulativeCase36ReferencesReviewed": true,
+      "legibleTextAndCompleteFeedback": true,
+      "noClippedTextOrHorizontalOverflow": true,
+      "allFigureFocusAndBodyLabelsAtLeast14px": true,
+      "bookPdfPagesAndOriginalASRAActuallyViewed": [
+        726,
+        996,
+        "ASRA original one-page checklist"
+      ],
+      "finalImagesMatchActuallyInspectedHashes": true
+    },
+    "limits": "Private unauthenticated built candidate. Runtime checks cover both selected whole lessons and12 anchored questions,all8 check options and1 affected cumulative case,at1440/390. Both diagrams tested at320/390/719/720/721/1440. Other lessons/questions remain under broader review; existing unrelated structural issues remain. No authenticated account/progress backend or production publication claimed."
+  },
+  "preservation": {
+    "status": "passed",
+    "baselinePathsChecked": 820,
+    "allUnrelatedDraftBytesAndDeletionsPreservedAtRelease": true,
+    "observedConcurrentUnrelatedChangesRetainedAndExcluded": {},
+    "otherUnrelatedPathsMatchInitialBaseline": true,
+    "preexistingContentBytesRecoveredByRemovingExactScopedTails": true,
+    "allOtherWorkingLedgerFieldsAndEntriesPreserved": true,
+    "allOtherCommittedLedgerFieldsAndEntriesPreserved": true,
+    "twoScopedWholeLessonsAndTwelveQuestionsVerifiedOtherWorkingDraftsPreserved": true,
+    "onlyVerifiedHeadDerivedContentStagedOrCommitted": true,
+    "twoScopedFigureLabelsReadableAllOtherDiagramDataAndCumulativeSelectorFunctionUnchanged": true,
+    "scope": [
+      "src/data/modules/perioperativeCriticalCarePharmacology.js",
+      "src/data/questionBanks/perioperativeCriticalCarePharmacology.js",
+      "src/components/learn/PerioperativeCriticalCareVisual.jsx",
+      "docs/clinical-audit/enteral-nutrition-broader-perioperative-local-review.json",
+      "docs/clinical-audit/module-ledger.json",
+      "docs/clinical-audit/chapter-ledger.json",
+      "docs/clinical-audit/sequential-resume.json"
+    ]
+  },
+  "publication": {
+    "mainMerge": "not performed",
+    "production": "not verified"
+  },
+  "wholeGoalComplete": false,
+  "nextAction": "Continue perioperative-critical-care-pharmacology with induction-agent-selection,then malignant hyperthermia,NMBA foundations/agent selection/safety,reversal and antifibrinolytic/hemostatic scopes. Preserve all unrelated uncommitted additions including12th hemostatic lesson and ten nonlocal working lesson objects. Compare full current parents and bank against sources before closing them. SUP committed8-body lesson retains its prior exact review; three additional working SUP bodies are not certified here. Return to remaining feeding dependencies,then Chapter11 printed161/PDF169; Chapter1 printed7/PDF19 checklist15 stays open. Continue the full82-chapter goal.",
+  "receiptCommit": "Receipt follows exact verified content commit; its own remote hash separately verified in execution output."
+}
