@@ -463,3 +463,74 @@ Object.assign(influenzaAntiviralPharmacologyModule.submodules.find((lesson) => l
     "reviewHref": "#oseltamivir-mechanism-pk"
   }
 });
+
+
+// Complete oseltamivir safety and population reconciliation against authorized sources.
+Object.assign(influenzaAntiviralPharmacologyModule.submodules.find((lesson) => lesson.slug === "oseltamivir-safety-populations"), {
+  "slug": "oseltamivir-safety-populations",
+  "title": "Monitor the Host and Formulation",
+  "visual": "influenza-antiviral-oseltamivir-safety-populations",
+  "summary": "Assess gastrointestinal tolerance, serious hypersensitivity, abnormal behavior, secondary infection and the exact formulation, then apply qualified pregnancy and lactation evidence.",
+  "concepts": [
+    "Gastrointestinal tolerance",
+    "Serious hypersensitivity",
+    "Behavior and infection assessment",
+    "Suspension sorbitol",
+    "Pregnancy and lactation evidence"
+  ],
+  "application": "Separate a mild tolerability problem from a suspected serious reaction, evaluate influenza complications and formulation ingredients, and explain pregnancy or lactation recommendations without claiming zero risk.",
+  "lesson": [
+    {
+      "heading": "Improve gastrointestinal tolerance",
+      "body": "The book lists headache, nausea, vomiting, diarrhea and abdominal pain among oseltamivir adverse effects. In Tamiflu adult and adolescent trials, many common reactions occurred early and resolved within one to two days. Food may improve tolerability, although administration with food is not required. Assess hydration, the ability to retain oral treatment and persistent or severe symptoms rather than assuming every gastrointestinal complaint is either harmless or caused by the drug. A single mild nausea episode without serious reaction findings does not by itself require abandoning treatment."
+    },
+    {
+      "heading": "Stop suspected serious hypersensitivity",
+      "body": "Anaphylaxis and serious skin reactions, including Stevens-Johnson syndrome, toxic epidermal necrolysis and erythema multiforme, have been reported after marketing. Tamiflu labeling directs discontinuation and appropriate treatment if an allergic-like reaction occurs or is suspected. Known serious hypersensitivity to oseltamivir or a product component is a contraindication. A progressive skin or mucosal reaction, facial or tongue swelling, or breathing difficulty warrants prompt assessment and treatment; taking the next dose with food is not the response to suspected serious hypersensitivity."
+    },
+    {
+      "heading": "Monitor behavior without assigning causality",
+      "body": "Influenza itself can cause hallucinations, delirium and abnormal behavior, with or without obvious severe disease or associated encephalitis or encephalopathy. Postmarketing reports during Tamiflu use include abnormal behavior leading to injury, primarily in children. The contribution of oseltamivir has not been established, and voluntary reports cannot provide a reliable event rate. Closely monitor behavior, protect the patient from injury and evaluate the illness and treatment together. Report confusion, seizures or hallucinations to a clinician right away, as directed in the patient information. If neuropsychiatric symptoms occur, assess the risks and benefits of continuing oseltamivir for that individual instead of applying an automatic continuation or withdrawal rule."
+    },
+    {
+      "heading": "Look for bacterial complications",
+      "body": "Oseltamivir acts against influenza viruses and has not been shown to prevent secondary bacterial complications. A bacterial infection may resemble influenza initially, coexist with it or develop during its course. Continued or worsening illness requires assessment for complications and appropriate treatment when identified. An antiviral prescription does not establish that a new bacterial infection is covered, nor does every persistent symptom prove an adverse drug reaction."
+    },
+    {
+      "heading": "Check the exact suspension ingredients",
+      "body": "The labeled commercial Tamiflu powder for oral suspension contains sorbitol. Its label states that a 75 mg dose delivers 2 g of sorbitol, exceeding the stated daily maximum for patients with hereditary fructose intolerance and potentially causing dyspepsia or diarrhea. Screen for hereditary fructose intolerance and review the exact product ingredients before selecting a formulation. This is an excipient warning, not an adverse effect of oseltamivir carboxylate itself or a preference about ordinary dietary sweetness. Do not transfer this amount to every generic or compounded preparation; a substitute formulation and its vehicle require their own ingredient review."
+    },
+    {
+      "heading": "Treat influenza promptly during pregnancy",
+      "body": "The book identifies oseltamivir as preferred during pregnancy. CDC recommends oral oseltamivir for suspected or confirmed influenza of any severity during any trimester and up to two weeks postpartum, including after pregnancy loss, because it has the most supportive human experience. Start promptly without waiting for laboratory confirmation; greatest early benefit does not exclude later treatment in a priority patient. The Tamiflu label describes reassuring observational birth-defect findings but also study limitations that prevent a definitive risk assessment. Explain the treatment benefit and evidence limits using the current narrative pregnancy section rather than treating an old letter category as proof of safety or a contraindication. CDC does not recommend baloxavir during pregnancy because efficacy and safety data are unavailable."
+    },
+    {
+      "heading": "Use qualified lactation evidence",
+      "body": "Tamiflu labeling describes limited published data showing low levels of oseltamivir and its active carboxylate in human milk, considered unlikely to cause infant toxicity. That finding does not mean absent milk transfer or proven safety for every infant, and effects on milk production are unknown. Consider breastfeeding benefits, the mother\u2019s need for treatment and potential effects of the drug or maternal illness on the child. CDC does not recommend baloxavir while breastfeeding because the relevant human milk and infant data are unavailable. Maternal oseltamivir treatment is not a substitute for evaluating or prescribing treatment for an ill infant."
+    }
+  ],
+  "keyPoints": [
+    "Food may improve gastrointestinal tolerance; persistent or severe symptoms still need assessment.",
+    "Stop oseltamivir and treat suspected serious hypersensitivity; assess behavioral symptoms without assuming drug causality.",
+    "Commercial Tamiflu suspension sorbitol requires a hereditary fructose intolerance screen.",
+    "CDC prefers prompt oseltamivir treatment in pregnancy; pregnancy and lactation evidence retain important limits."
+  ],
+  "check": {
+    "question": "Why is oseltamivir preferred for influenza treatment during pregnancy?",
+    "choices": [
+      "It has the greatest supportive human experience and CDC recommends it",
+      "It never reaches systemic circulation",
+      "Pregnancy prevents severe influenza",
+      "Baloxavir has more pregnancy evidence"
+    ],
+    "answer": 0,
+    "rationale": "CDC prefers oseltamivir because it has the most supportive human pregnancy experience and the available benefit-risk evidence favors prompt treatment. It does reach systemic circulation, and pregnancy raises rather than removes the risk of severe influenza. Baloxavir has insufficient pregnancy evidence; supportive oseltamivir data do not establish zero risk.",
+    "reviewHref": "#oseltamivir-safety-populations"
+  }
+});
+influenzaAntiviralPharmacologyModule.references.push(...[
+  {
+    "label": "CDC: antiviral treatment and prevention during pregnancy and postpartum",
+    "href": "https://www.cdc.gov/flu/hcp/antivirals/treatment_obstetric.html"
+  }
+]);

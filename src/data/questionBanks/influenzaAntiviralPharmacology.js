@@ -1384,3 +1384,248 @@ for (const [id, updates] of Object.entries({
 })) {
   Object.assign(influenzaAntiviralPharmacologyQuestionBank.find((question) => question.id === id), updates);
 }
+
+
+// Whole oseltamivir safety questions reviewed with stable IDs and keyed indices.
+for (const [id, updates] of Object.entries({
+  "influenza-antiviral-pharmacology-081": {
+    "id": "influenza-antiviral-pharmacology-081",
+    "lesson": "oseltamivir-safety-populations",
+    "question": "An adult taking oseltamivir has mild early nausea, retains doses and has no allergic findings. What is the best initial counseling?",
+    "choices": [
+      "Taking it with food may improve tolerance while symptoms and hydration are monitored",
+      "Food must be avoided because it eliminates antiviral activity",
+      "One mild nausea episode requires permanent withdrawal as a serious allergy",
+      "Each nausea episode requires an automatic extra oseltamivir dose"
+    ],
+    "answer": 0,
+    "rationale": "Food may improve tolerability and is optional. Mild nausea alone is not a serious hypersensitivity diagnosis. Food does not eliminate activity, and an extra dose should not be given automatically for nausea.",
+    "reviewHref": "#oseltamivir-safety-populations"
+  },
+  "influenza-antiviral-pharmacology-082": {
+    "id": "influenza-antiviral-pharmacology-082",
+    "lesson": "oseltamivir-safety-populations",
+    "question": "Which finding most clearly requires reassessment beyond routine food-with-dose counseling?",
+    "choices": [
+      "Persistent vomiting with difficulty retaining oral treatment",
+      "A single mild nausea episode with normal fluid intake",
+      "A patient asking whether food is permitted",
+      "Mild early nausea that improves with food"
+    ],
+    "answer": 0,
+    "rationale": "Persistent vomiting can compromise hydration and oral treatment and needs assessment. The other situations fit ordinary administration or tolerability counseling without that warning feature.",
+    "reviewHref": "#oseltamivir-safety-populations"
+  },
+  "influenza-antiviral-pharmacology-083": {
+    "id": "influenza-antiviral-pharmacology-083",
+    "lesson": "oseltamivir-safety-populations",
+    "question": "Which statement best interprets gastrointestinal symptoms during oseltamivir treatment?",
+    "choices": [
+      "Evaluate severity, hydration and retained treatment without assuming all symptoms are drug caused",
+      "Every gastrointestinal symptom proves an oseltamivir allergy",
+      "Symptoms are harmless whenever they occur early in treatment",
+      "Vomiting proves treatment succeeded and no assessment is needed"
+    ],
+    "answer": 0,
+    "rationale": "Assess the patient and treatment feasibility. Gastrointestinal symptoms alone do not prove allergy or treatment success, and early timing does not make severe or persistent symptoms harmless.",
+    "reviewHref": "#oseltamivir-safety-populations"
+  },
+  "influenza-antiviral-pharmacology-084": {
+    "id": "influenza-antiviral-pharmacology-084",
+    "lesson": "oseltamivir-safety-populations",
+    "question": "Which oseltamivir tolerability claim should be corrected?",
+    "choices": [
+      "Food is mandatory because oseltamivir cannot work without it",
+      "Food may improve nausea or vomiting tolerance",
+      "Severe or persistent vomiting deserves reassessment",
+      "Mild nausea alone does not establish serious hypersensitivity"
+    ],
+    "answer": 0,
+    "rationale": "Tamiflu may be taken with or without food; food can improve tolerance rather than being required for activity. Assessment of persistent vomiting and distinguishing mild nausea from serious allergy are appropriate.",
+    "reviewHref": "#oseltamivir-safety-populations"
+  },
+  "influenza-antiviral-pharmacology-085": {
+    "id": "influenza-antiviral-pharmacology-085",
+    "lesson": "oseltamivir-safety-populations",
+    "question": "Which interpretation of abnormal behavior during influenza treated with oseltamivir is best supported?",
+    "choices": [
+      "Influenza can cause behavioral symptoms, and the drug\u2019s contribution to reported events is not established",
+      "A temporal report proves oseltamivir caused the behavior",
+      "Influenza cannot cause delirium without oseltamivir",
+      "Every behavioral event proves a serious drug allergy"
+    ],
+    "answer": 0,
+    "rationale": "The label recognizes infection-related behavioral symptoms and uncertain drug contribution. Temporal association is not proof of causality, and delirium is not automatically a hypersensitivity diagnosis.",
+    "reviewHref": "#oseltamivir-safety-populations"
+  },
+  "influenza-antiviral-pharmacology-086": {
+    "id": "influenza-antiviral-pharmacology-086",
+    "lesson": "oseltamivir-safety-populations",
+    "question": "A child with influenza develops abrupt abnormal behavior while taking oseltamivir. What is the best response?",
+    "choices": [
+      "Protect against injury, assess the illness and individually weigh continuation risks and benefits",
+      "Ignore the behavior because the drug\u2019s causal role is uncertain",
+      "Automatically double oseltamivir to suppress the behavior",
+      "Assume a drug cause and permanently label allergy without assessment"
+    ],
+    "answer": 0,
+    "rationale": "Close monitoring, injury protection and individualized continuation assessment match the warning. Uncertain causality does not justify ignoring symptoms, dose doubling or an unassessed permanent allergy label.",
+    "reviewHref": "#oseltamivir-safety-populations"
+  },
+  "influenza-antiviral-pharmacology-087": {
+    "id": "influenza-antiviral-pharmacology-087",
+    "lesson": "oseltamivir-safety-populations",
+    "question": "Which statement correctly describes the evidence behind the oseltamivir neuropsychiatric warning?",
+    "choices": [
+      "Voluntary reports do not provide a reliable event rate or establish the drug\u2019s contribution",
+      "The warning supplies a precise incidence applicable to every child",
+      "All reports establish drug causality because they occurred during treatment",
+      "The warning excludes influenza as a cause of abnormal behavior"
+    ],
+    "answer": 0,
+    "rationale": "Postmarketing voluntary reports have uncertain denominators and do not establish causality. The label also describes behavioral effects of influenza, so a universal incidence or exclusion of infection is unsupported.",
+    "reviewHref": "#oseltamivir-safety-populations"
+  },
+  "influenza-antiviral-pharmacology-088": {
+    "id": "influenza-antiviral-pharmacology-088",
+    "lesson": "oseltamivir-safety-populations",
+    "question": "Which behavioral-monitoring instruction should be corrected?",
+    "choices": [
+      "All neuropsychiatric symptoms require the same automatic decision to continue oseltamivir",
+      "Closely monitor for abnormal behavior during influenza",
+      "Evaluate infection as well as treatment when symptoms occur",
+      "Weigh continuing oseltamivir for the individual patient"
+    ],
+    "answer": 0,
+    "rationale": "The label calls for individual benefit-risk assessment when symptoms occur. Monitoring and considering both illness and treatment are appropriate; neither universal continuation nor universal withdrawal is the stated rule.",
+    "reviewHref": "#oseltamivir-safety-populations"
+  },
+  "influenza-antiviral-pharmacology-089": {
+    "id": "influenza-antiviral-pharmacology-089",
+    "lesson": "oseltamivir-safety-populations",
+    "question": "Which oseltamivir finding calls for discontinuation and appropriate treatment under the serious hypersensitivity warning?",
+    "choices": [
+      "A suspected progressive allergic skin or mucosal reaction",
+      "Mild nausea that improves with food",
+      "A question about optional food administration",
+      "A history of preferring less sweet medicines"
+    ],
+    "answer": 0,
+    "rationale": "Suspected allergic-like reactions require stopping and appropriate treatment. Mild gastrointestinal intolerance, administration questions and taste preferences do not by themselves establish serious hypersensitivity.",
+    "reviewHref": "#oseltamivir-safety-populations"
+  },
+  "influenza-antiviral-pharmacology-090": {
+    "id": "influenza-antiviral-pharmacology-090",
+    "lesson": "oseltamivir-safety-populations",
+    "question": "Which interpretation of the commercial Tamiflu suspension sorbitol warning is correct?",
+    "choices": [
+      "A labeled 75 mg dose delivers 2 g sorbitol, which matters in hereditary fructose intolerance",
+      "The 2 g amount describes the active antiviral dose",
+      "Every capsule contains the same stated sorbitol amount",
+      "The amount is proven identical in every compounded suspension"
+    ],
+    "answer": 0,
+    "rationale": "The label ties 2 g sorbitol to a 75 mg dose of its commercial oral suspension and warns about hereditary fructose intolerance. It is an excipient amount, not antiviral dose, and cannot be assigned to every capsule or compounded preparation.",
+    "reviewHref": "#oseltamivir-safety-populations"
+  },
+  "influenza-antiviral-pharmacology-091": {
+    "id": "influenza-antiviral-pharmacology-091",
+    "lesson": "oseltamivir-safety-populations",
+    "question": "A patient with hereditary fructose intolerance needs an oseltamivir formulation review. Which action is appropriate?",
+    "choices": [
+      "Check the exact product and vehicle ingredients before selecting a formulation",
+      "Assume all liquids are acceptable if called sugar free",
+      "Treat the warning only as a dislike of sweetness",
+      "Infer that carboxylate itself supplies the labeled sorbitol"
+    ],
+    "answer": 0,
+    "rationale": "Review actual excipients and the vehicle. Hereditary fructose intolerance is not a taste preference, a sugar-free description does not establish suitability, and the antiviral metabolite is not sorbitol.",
+    "reviewHref": "#oseltamivir-safety-populations"
+  },
+  "influenza-antiviral-pharmacology-092": {
+    "id": "influenza-antiviral-pharmacology-092",
+    "lesson": "oseltamivir-safety-populations",
+    "question": "Which oseltamivir safety claim should be corrected?",
+    "choices": [
+      "Suspected serious hypersensitivity can be managed solely by taking the next dose with food",
+      "Known serious hypersensitivity to oseltamivir or a component is a contraindication",
+      "Commercial suspension sorbitol deserves review in hereditary fructose intolerance",
+      "Suspected allergic-like reactions require discontinuation and appropriate treatment"
+    ],
+    "answer": 0,
+    "rationale": "Food counseling is for tolerability, not management of suspected serious hypersensitivity. The contraindication, formulation screen and label-directed discontinuation are supported.",
+    "reviewHref": "#oseltamivir-safety-populations"
+  },
+  "influenza-antiviral-pharmacology-093": {
+    "id": "influenza-antiviral-pharmacology-093",
+    "lesson": "oseltamivir-safety-populations",
+    "question": "Which statement best explains oseltamivir\u2019s preferred role in pregnancy?",
+    "choices": [
+      "CDC recommends it on the basis of the most supportive human experience and available benefit-risk evidence",
+      "It is preferred because no active drug reaches systemic circulation",
+      "Pregnancy makes severe influenza unlikely so treatment is unnecessary",
+      "Preference proves there is no possible fetal risk"
+    ],
+    "answer": 0,
+    "rationale": "CDC preference reflects supportive experience and the risk of influenza. Oseltamivir has systemic active exposure; pregnancy increases complications, and observational evidence does not prove zero fetal risk.",
+    "reviewHref": "#oseltamivir-safety-populations"
+  },
+  "influenza-antiviral-pharmacology-094": {
+    "id": "influenza-antiviral-pharmacology-094",
+    "lesson": "oseltamivir-safety-populations",
+    "question": "A pregnant patient has suspected influenza during the first trimester. Which timing principle matches CDC guidance?",
+    "choices": [
+      "Begin recommended treatment promptly without waiting for laboratory confirmation",
+      "Withhold all antiviral treatment until the second trimester",
+      "Wait for laboratory confirmation in every case",
+      "Exclude treatment solely because symptoms began more than 48 hours ago"
+    ],
+    "answer": 0,
+    "rationale": "CDC recommends prompt treatment in any trimester for suspected or confirmed influenza, without a universal testing delay. Greatest early benefit does not make 48 hours a universal exclusion for a priority patient.",
+    "reviewHref": "#oseltamivir-safety-populations"
+  },
+  "influenza-antiviral-pharmacology-095": {
+    "id": "influenza-antiviral-pharmacology-095",
+    "lesson": "oseltamivir-safety-populations",
+    "question": "Which interpretation of oseltamivir lactation evidence is accurate?",
+    "choices": [
+      "Limited data show low milk levels considered unlikely to cause toxicity; clinical benefits and possible infant effects still require consideration",
+      "Neither parent drug nor active metabolite ever appears in milk",
+      "Low milk levels prove safety for every infant",
+      "Effects on milk production have been fully established"
+    ],
+    "answer": 0,
+    "rationale": "The label describes low levels of both species with limited evidence, while milk-production effects remain unknown. Low exposure is not absent transfer or universal proof of infant safety.",
+    "reviewHref": "#oseltamivir-safety-populations"
+  },
+  "influenza-antiviral-pharmacology-096": {
+    "id": "influenza-antiviral-pharmacology-096",
+    "lesson": "oseltamivir-safety-populations",
+    "question": "Which pregnancy or breastfeeding statement should be corrected?",
+    "choices": [
+      "CDC\u2019s decision not to recommend baloxavir in these settings proves an FDA boxed pregnancy contraindication",
+      "Supportive oseltamivir pregnancy experience still has study limitations",
+      "Baloxavir is not CDC recommended because relevant human evidence is lacking",
+      "Lactation decisions consider maternal need and potential effects on the child"
+    ],
+    "answer": 0,
+    "rationale": "A CDC recommendation based on missing evidence is not an FDA boxed contraindication. Qualified oseltamivir evidence, baloxavir data limits and the maternal-infant benefit-risk review are supported.",
+    "reviewHref": "#oseltamivir-safety-populations"
+  },
+  "influenza-antiviral-pharmacology-183": {
+    "id": "influenza-antiviral-pharmacology-183",
+    "lesson": "oseltamivir-safety-populations",
+    "question": "Why is oseltamivir preferred during pregnancy?",
+    "choices": [
+      "It has the greatest supportive human experience and CDC recommends it",
+      "It has no systemic exposure",
+      "Pregnancy eliminates influenza risk",
+      "Baloxavir is contraindicated by an FDA boxed warning"
+    ],
+    "answer": 0,
+    "rationale": "CDC prefers oseltamivir because it has the most supportive human pregnancy experience. Active drug does reach systemic circulation, and pregnancy increases influenza-complication risk. CDC does not recommend baloxavir because pregnancy data are unavailable; this is not an FDA boxed pregnancy warning. Supportive observational oseltamivir findings retain study limitations.",
+    "reviewHref": "#oseltamivir-safety-populations"
+  }
+})) {
+  Object.assign(influenzaAntiviralPharmacologyQuestionBank.find((question) => question.id === id), updates);
+}
