@@ -1,7 +1,7 @@
 {
   "updated": "2026-10-06T22:26:18.439249+00:00",
   "unit": "enteral-nutrition:broader-cystic-fibrosis-diagnosis-airway-pulmonary",
-  "status": "Three complete CF lessons and 53 whole questions clinically, arithmetically, in the browser, and visually verified; exact branch release pending.",
+  "status": "Three complete CF diagnosis/airway/pulmonary lessons verified: 18 bodies, three checks, three figures, 53 whole questions. Exact audit-branch content push verified; full CF, feeding parent, and full book goal remain open. Production not verified.",
   "coverage": {
     "evidence": "enteral-nutrition-broader-cystic-fibrosis-diagnosis-airway-pulmonary-review.json",
     "moduleSlug": "cystic-fibrosis",
@@ -4693,11 +4693,14 @@
   "release": {
     "branch": "audit/rxprep-content-2026-09-24",
     "baseCommit": "968fceecc2eb2b207543a02058154f29bdbf3cdf",
-    "commit": null,
-    "push": "pending",
+    "commit": "70143b1ecdd4324ca9e8b883ca90784fadb0f97e",
+    "push": "verified",
     "receipt": "enteral-nutrition-broader-cystic-fibrosis-diagnosis-airway-pulmonary-release.json",
     "mainMerge": "not performed",
-    "production": "not verified"
+    "production": "not verified",
+    "remoteHashObserved": "70143b1ecdd4324ca9e8b883ca90784fadb0f97e",
+    "exactRemoteObservedByTool": true,
+    "remoteVerifiedAt": "2026-10-06T22:27:30.355590+00:00"
   },
   "remainingReview": "Continue the remaining CF parent from cf-infection-exacerbations: individually verify infection and antimicrobial teaching, all whole questions, embedded check, figure, and exact product labels. Resolve the book tobramycin minimum-interval discrepancy (8 hours versus 6 hours) using the exact formulation label. Then complete CFTR-modulator and longitudinal/advanced-care lessons, all whole questions/checks/figures, parent metadata and original modulator references. Three lessons, 12 original teaching bodies, three checks, three figures, and 44 original questions remain. Five lessons and their 85 whole questions are verified across prior nutrition/systemic and current diagnosis/airway/pulmonary evidence. Return to Chapter 11 feeding inventory until dependencies are resolved; Chapter 1 PDF19 checklist entry 15 remains open.",
   "wholeGoalComplete": false,
