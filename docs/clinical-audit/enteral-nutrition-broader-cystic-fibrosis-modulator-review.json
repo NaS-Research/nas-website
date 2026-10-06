@@ -1,7 +1,7 @@
 {
   "updated": "2026-10-06T23:09:19.267764+00:00",
   "unit": "enteral-nutrition:broader-cystic-fibrosis-modulator",
-  "status": "One complete CFTR modulator lesson and 28 whole questions clinically, arithmetically, in-browser and visually verified; exact branch release pending.",
+  "status": "One complete CFTR modulator lesson verified:14 bodies, one check, one figure,28 whole questions. Exact audit-branch content push verified; full CF, feeding parent, and full book goal remain open. Production not verified.",
   "coverage": {
     "evidence": "enteral-nutrition-broader-cystic-fibrosis-modulator-review.json",
     "moduleSlug": "cystic-fibrosis",
@@ -2456,11 +2456,14 @@
   "release": {
     "branch": "audit/rxprep-content-2026-09-24",
     "baseCommit": "4aae4e55052d1cd9f4f10d9e4ab0e0e0401ceede",
-    "commit": null,
-    "push": "pending",
+    "commit": "75639e9518a77be810875edd45d6b80307faeeec",
+    "push": "verified",
     "receipt": "enteral-nutrition-broader-cystic-fibrosis-modulator-release.json",
     "mainMerge": "not performed",
-    "production": "not verified"
+    "production": "not verified",
+    "remoteHashObserved": "75639e9518a77be810875edd45d6b80307faeeec",
+    "exactRemoteObservedByTool": true,
+    "remoteVerifiedAt": "2026-10-06T23:10:29.965170+00:00"
   },
   "remainingReview": "Continue CF parent at cf-longitudinal-advanced-care: individually verify all four original teaching bodies, eight original questions, embedded check and figure, then the parent metadata and remaining general CFF clinical-guideline reference. The five current modulator labels have been reviewed and three dated FDA bibliography entries replaced with current DailyMed editions; two exact-product references added. One lesson, four original bodies, one check, one figure and eight original questions remain before whole-parent closure. Preserve the verified nutrition, systemic, diagnosis, airway, pulmonary, infection and modulator units. Return to the Chapter11 feeding inventory after dependencies; Chapter1 PDF19 checklist entry15 fluid needs remains open.",
   "wholeGoalComplete": false,
