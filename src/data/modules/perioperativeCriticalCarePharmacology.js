@@ -346,3 +346,188 @@ perioperativeCriticalCarePharmacologyModule.cumulativeQuestionIds = [
   "periop-antifib-dilution",
   "periop-pph-prophylaxis"
 ];
+
+
+// Reconcile induction and MH teaching with exact labels and specialist guidance.
+Object.assign(perioperativeCriticalCarePharmacologyModule.submodules.find((lesson) => lesson.slug === "induction-agent-selection"), {
+  "slug": "induction-agent-selection",
+  "title": "Choose Induction Through Physiology",
+  "visual": "periop-induction",
+  "summary": "Propofol, etomidate, and ketamine can all produce hypnosis, but their cardiovascular, respiratory, endocrine, analgesic, and recovery effects are different. The correct choice begins with the patient's current physiologic constraint and the airway plan.",
+  "concepts": [
+    "Propofol",
+    "Etomidate",
+    "Ketamine",
+    "Hemodynamics",
+    "Airway"
+  ],
+  "application": "Name the desired onset and recovery, the pressure and airway risk, the analgesic need, and the toxicity that the team is prepared to manage before selecting a drug and dose.",
+  "lesson": [
+    {
+      "heading": "Separate local block from general anesthesia",
+      "body": "Voltage-gated sodium-channel blockade explains local anesthetic interruption of nerve conduction; it is not a shared explanation for every general anesthetic. Ketamine primarily antagonizes NMDA glutamate receptors. Propofol labeling describes enhanced inhibitory GABA-A receptor function as its proposed mechanism. Drug selection must still account for the observed clinical effects and patient physiology rather than mechanism alone."
+    },
+    {
+      "heading": "Use propofol when rapid control fits the reserve",
+      "body": "Propofol provides rapid hypnosis and titratable recovery but can cause apnea, vasodilation, myocardial depression, and severe hypotension. Reduce and titrate exposure in older, debilitated, hypovolemic, or unstable patients and ensure immediate ventilatory and circulatory support."
+    },
+    {
+      "heading": "Treat propofol as a contamination-sensitive emulsion",
+      "body": "Use strict aseptic technique and a single-patient preparation. For the cited product, discard unused drug and dedicated tubing at procedure completion or 12 hours, whichever comes first; ICU drug and tubing also require replacement by 12 hours. Ingredients that slow microbial growth do not permit reuse between patients. Check the actual formulation because excipients differ."
+    },
+    {
+      "heading": "Inspect the emulsion and delivery system",
+      "body": "Shake propofol before use and reject an emulsion with phase separation, large droplets or persistent aggregation. Follow the exact product label for syringe, vial and tubing discard times; the Hospira product reviewed here uses a 12-hour limit from opening, with earlier disposal when the anesthetic procedure ends. Its labeling permits filters of at least 5 microns unless compatibility with a smaller filter has been demonstrated. Assess sedation, circulation, breathing and lipid clearance during treatment; the lipid calories do not replace a complete nutrition prescription."
+    },
+    {
+      "heading": "Recognize infusion toxicity and count lipid calories",
+      "body": "New metabolic acidosis, rhabdomyolysis, hyperkalemia or cardiac failure during a propofol infusion raises concern for propofol infusion syndrome. Stop propofol promptly and manage the deterioration with an alternative sedation plan. High doses and prolonged exposure increase risk, but shorter exposure does not exclude it. Monitor lipid tolerance and account for approximately 1.1 kcal per mL in nutrition planning."
+    },
+    {
+      "heading": "Distinguish food allergy from a propofol reaction",
+      "body": "AAAAI guidance states that egg or soy allergy alone does not require special precautions with propofol; food-protein allergy does not establish allergy to its lipid vehicle. The cited product label nevertheless lists egg, soybean and propofol hypersensitivity as contraindications. Document this difference and have the anesthesia team reconcile the specific history, product and local policy. A previous suspected propofol reaction is a separate concern requiring allergy evaluation; do not dismiss it as a food-allergy myth."
+    },
+    {
+      "heading": "Keep pediatric indications distinct",
+      "body": "The cited propofol label supports induction from age 3 years and maintenance from age 2 months. These anesthesia indications do not establish pediatric ICU sedation approval. Pediatric ICU use is not a labeled indication and requires a separate evidence-based specialist decision."
+    },
+    {
+      "heading": "Use etomidate with endocrine honesty",
+      "body": "Etomidate often preserves pressure better during induction but commonly causes injection pain and myoclonus. A single induction dose can reduce cortisol and aldosterone concentrations through adrenal steroid-synthesis inhibition. The clinical tradeoff is limited immediate cardiovascular depression versus a measurable endocrine effect. The book describes cortisol suppression for up to 24 hours; this product label describes reduced cortisol and aldosterone for approximately 6 to 8 hours. Neither duration is a guaranteed patient-specific recovery time. Follow the clinical response, particularly during severe stress, and do not equate one induction dose with proven mortality harm."
+    },
+    {
+      "heading": "Separate etomidate induction from ongoing care",
+      "body": "Etomidate produces hypnosis without analgesia. Plan pain treatment separately and establish ongoing sedation when paralysis or mechanical ventilation continues. Its labeling warns against prolonged infusion because adrenal suppression can persist. Apnea and airway obstruction remain possible; relative cardiovascular stability does not remove the need for rescue equipment or monitoring."
+    },
+    {
+      "heading": "Calculate an individualized induction dose",
+      "body": "The labeled usual etomidate induction dose is 0.3 mg/kg IV over 30 to 60 seconds, individualized within the labeled 0.2 to 0.6 mg/kg range. For a prescribed 0.3 mg/kg dose in a 70 kg adult, 21 mg requires 10.5 mL of the 2 mg/mL solution. Older patients may need less. This calculation checks a specified order; it does not establish the best dose for every patient."
+    },
+    {
+      "heading": "Check etomidate population limits",
+      "body": "The cited etomidate label lacks adequate induction-dose data below age 10 and does not recommend that use. It also does not recommend obstetric use, including cesarean delivery, because data are insufficient. Known hypersensitivity is a contraindication. Older patients may need lower doses and can still develop cardiac depression, particularly with hypertension; relative cardiovascular stability is not a guarantee in severe trauma or hypovolemia."
+    },
+    {
+      "heading": "Use ketamine without calling it fail-safe",
+      "body": "Ketamine adds analgesia and often increases pressure and pulse. Emergence reactions, hypersalivation, airway obstruction, laryngospasm, and respiratory depression after rapid high dosing remain possible. Catecholamine-depleted patients can develop falling pressure or cardiac decompensation, and coadministration with other CNS depressants increases respiratory risk."
+    },
+    {
+      "heading": "Check ketamine concentration before injection",
+      "body": "For this labeled product, 100 mg/mL ketamine requires equal-volume dilution with sterile water, normal saline or D5W before IV induction; use immediately. The resulting concentration is 50 mg/mL. A prescribed 100 mg dose therefore occupies 2 mL after dilution. Slow IV administration matters because rapid dosing increases respiratory and pressor effects."
+    },
+    {
+      "heading": "Screen the procedure and interacting drugs",
+      "body": "Ketamine is contraindicated when a substantial blood-pressure rise would be dangerous. Retained airway reflexes do not prevent aspiration or make ketamine suitable as the sole anesthetic for pharyngeal, laryngeal or bronchial procedures. Theophylline and aminophylline can lower the seizure threshold with ketamine; consider another anesthetic. Reduce stimulation during emergence while continuing monitoring."
+    },
+    {
+      "heading": "Plan emergence and neurologic monitoring",
+      "body": "Ketamine labeling describes emergence reactions that may be reduced with lower recommended doses plus an IV benzodiazepine during anesthesia. Balance that option against additive respiratory depression; a fixed percentage benefit is not assured. Minimize unnecessary stimulation while maintaining observation. For elevated intracranial pressure, the label calls for a monitored setting and frequent neurologic assessments; this warning is not itself a universal contraindication."
+    },
+    {
+      "heading": "Reassess recurrent ketamine exposure",
+      "body": "Recurrent treatment requires baseline and periodic liver tests. The 2026 label adds detail on biliary injury and urinary obstruction: suspected sclerosing cholangitis warrants immediate discontinuation and specialist assessment; severe urinary symptoms or obstruction warrant discontinuation and urgent urological evaluation. These longer-exposure risks differ from immediate induction complications."
+    }
+  ],
+  "keyPoints": [
+    "Propofol can depress circulation and ventilation.",
+    "Etomidate suppresses adrenal steroid synthesis.",
+    "Ketamine often stimulates circulation but can still decompensate it.",
+    "Every induction agent requires an airway and rescue plan."
+  ],
+  "check": {
+    "question": "Which statement best distinguishes etomidate from a physiologically neutral induction drug?",
+    "choices": [
+      "It can reduce cortisol and aldosterone concentrations after induction",
+      "It supplies prolonged postoperative analgesia",
+      "It reverses neuromuscular blockade",
+      "It prevents malignant hyperthermia"
+    ],
+    "answer": 0,
+    "rationale": "Etomidate can reduce cortisol and aldosterone after an induction dose by inhibiting adrenal steroid synthesis. It has no analgesic activity, so it does not supply prolonged postoperative pain relief. It is a hypnotic rather than a neuromuscular-block reversal agent. MHAUS lists it as nontriggering, but this does not mean it prevents MH caused by a separate triggering drug.",
+    "reviewHref": "#induction-agent-selection"
+  }
+});
+Object.assign(perioperativeCriticalCarePharmacologyModule.submodules.find((lesson) => lesson.slug === "malignant-hyperthermia"), {
+  "slug": "malignant-hyperthermia",
+  "title": "Recognize and Interrupt Malignant Hyperthermia",
+  "visual": "periop-mh",
+  "summary": "Malignant hyperthermia is uncontrolled skeletal-muscle calcium release in susceptible patients after volatile anesthetics, succinylcholine, or both. Rising carbon dioxide and rigidity can precede dramatic temperature elevation, so treatment begins from the pattern rather than a late threshold.",
+  "concepts": [
+    "Triggers",
+    "Hypercapnia",
+    "Dantrolene",
+    "Cooling",
+    "Recurrence"
+  ],
+  "application": "Every anesthetizing location using trigger agents needs immediate dantrolene access, a current MHAUS protocol, assigned roles, and a transfer and monitoring pathway.",
+  "lesson": [
+    {
+      "heading": "Identify the specific triggers",
+      "body": "Sevoflurane, desflurane and isoflurane are triggering volatile anesthetics; succinylcholine is also a trigger. Nitrous oxide is an inhaled nonvolatile agent and is not an MH trigger. Local anesthetics, propofol, etomidate and ketamine are also nontriggering for MH. Nontriggering does not mean free of other anesthetic risks."
+    },
+    {
+      "heading": "Recognize the hypermetabolic pattern",
+      "body": "Unexpected rapid carbon-dioxide rise despite ventilation, tachycardia, masseter or generalized rigidity, mixed acidosis, hyperkalemia, rhabdomyolysis, and increasing temperature should activate the crisis response. Stop volatile agents and succinylcholine immediately and call for help and the malignant-hyperthermia cart."
+    },
+    {
+      "heading": "Give dantrolene and oxygen without delay",
+      "body": "Hyperventilate with 100 percent oxygen at high flow, remove or disable volatile delivery, use activated charcoal filters when available, and give dantrolene 2.5 mg/kg intravenously using actual body weight. Repeat rapidly until carbon dioxide, rigidity, rate, temperature, and metabolic instability improve. Under MHAUS guidance, total dosing can exceed 10 mg/kg; persistent nonresponse also requires reassessment for alternative diagnoses. MHAUS recommends true body weight rather than ideal weight; this is an expert dosing recommendation, not a comparative trial result."
+    },
+    {
+      "heading": "Distinguish protocol dosing from product labeling",
+      "body": "The MHAUS crisis pathway starts at 2.5 mg/kg. RYANODEX labeling starts at a minimum of 1 mg/kg and lists a 10 mg/kg cumulative maximum. Escalation beyond that label limit belongs to expert-directed MHAUS crisis management, not an unqualified labeled-dose claim."
+    },
+    {
+      "heading": "Prepare the product actually stocked",
+      "body": "MHAUS lists 20-mg DANTRIUM or REVONTO vials mixed with 60 mL preservative-free sterile water for injection; RYANODEX uses 250 mg with 5 mL of that diluent. Do not interchange their preparation volumes. RYANODEX forms an opaque orange suspension, must be used within 6 hours, and must not be further diluted or transferred to an infusion container. Verify IV patency and watch for extravasation."
+    },
+    {
+      "heading": "Separate calcium treatment from calcium-channel blockers",
+      "body": "Avoid calcium-channel blockers during dantrolene treatment of MH because severe hyperkalemia and cardiovascular collapse have been reported. This does not prohibit IV calcium salts when indicated for life-threatening hyperkalemia. Continue ECG, potassium and glucose monitoring while treating the crisis."
+    },
+    {
+      "heading": "Plan maintenance and a clinical stopping rule",
+      "body": "MHAUS advises dantrolene 1 mg/kg IV every 4 to 6 hours for at least 24 hours, longer if needed. Consider stopping or spacing doses only after 24 hours of metabolic stability, temperature below 38 C, falling CK, resolved rigidity and no ongoing myoglobinuria. Monitor ventilation, swallowing, muscle strength and the IV site; apparent initial recovery is not the end of care."
+    },
+    {
+      "heading": "Correct complications and prevent recurrence",
+      "body": "MHAUS starts cooling above 39 C, or earlier if temperature is rising rapidly, and stops cooling below 38 C. Concurrently treat hyperkalemia and dysrhythmia, and monitor gases, potassium, glucose, CK, urine, coagulation, kidney function, and core temperature. Continue MHAUS-directed dantrolene and intensive observation because recrudescence can occur after apparent control. Once stable, transfer to a postanesthesia care or intensive care setting for at least 24 hours of observation; ongoing instability requires continued crisis care."
+    }
+  ],
+  "keyPoints": [
+    "Do not wait for extreme hyperthermia.",
+    "Stop volatile agents and succinylcholine.",
+    "The MHAUS crisis dose starts at 2.5 mg/kg actual body weight.",
+    "Ongoing monitoring and maintenance treatment address recurrence."
+  ],
+  "check": {
+    "question": "During volatile anesthesia, end-tidal carbon dioxide rises rapidly despite ventilation and generalized rigidity appears. What is the priority?",
+    "choices": [
+      "Stop triggers, hyperventilate with 100 percent oxygen, and give dantrolene",
+      "Wait for a temperature above 42 C",
+      "Give succinylcholine for rigidity",
+      "Use a beta blocker as the only treatment"
+    ],
+    "answer": 0,
+    "rationale": "Hypercapnia and generalized rigidity after a volatile trigger warrant immediate MH treatment: stop triggering agents, call for help, provide 100% oxygen and give dantrolene. Waiting for 42 C delays treatment. Succinylcholine is itself an MH trigger and must not be given to treat this rigidity. Treating heart rate alone does not interrupt the calcium-driven hypermetabolic crisis.",
+    "reviewHref": "#malignant-hyperthermia"
+  }
+});
+perioperativeCriticalCarePharmacologyModule.references.push(...[
+  {
+    "label": "MHAUS: Safe and unsafe anesthetics",
+    "href": "https://www.mhaus.org/healthcare-professionals/be-prepared/safe-and-unsafe-anesthetics/"
+  },
+  {
+    "label": "MHAUS: Actual-weight dantrolene dosing",
+    "href": "https://www.mhaus.org/faqs/do-i-use-actual-weight-or-ideal-weight-to-calculate-dantrolene-dosing/"
+  },
+  {
+    "label": "MHAUS: Malignant hyperthermia mechanism and signs",
+    "href": "https://www.mhaus.org/about/what-is-mh-mhaus/"
+  },
+  {
+    "label": "MHAUS: Masseter rigidity and evolving malignant hyperthermia",
+    "href": "https://www.mhaus.org/healthcare-professionals/mhaus-recommendations/masseter-muscle-rigidity-definition-relationship-to-malignant-hyperthermia-and-management/"
+  }
+].filter((reference) => !perioperativeCriticalCarePharmacologyModule.references.some((existing) => existing.href === reference.href)));

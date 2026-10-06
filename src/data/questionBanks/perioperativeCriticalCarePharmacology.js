@@ -1367,3 +1367,292 @@ for (const [id, updates] of Object.entries({
   if (existing) Object.assign(existing, updates);
   else perioperativeCriticalCarePharmacologyQuestionBank.push(updates);
 }
+
+
+// Explain all alternatives in the source-reconciled induction and MH cases.
+for (const [id, updates] of Object.entries({
+  "periop-mh-recognition": {
+    "id": "periop-mh-recognition",
+    "question": "During sevoflurane anesthesia, end-tidal carbon dioxide rises despite ventilation and generalized rigidity appears before marked fever. Which response is best?",
+    "choices": [
+      "Wait for a temperature above 42 C",
+      "Stop triggers, call for help, give oxygen and initiate dantrolene treatment",
+      "Give succinylcholine to treat the rigidity",
+      "Treat only the heart rate"
+    ],
+    "answer": 1,
+    "rationale": "Hypercapnia and generalized rigidity after sevoflurane warrant immediate MH treatment even before marked fever: stop triggers, call for help, provide oxygen and give dantrolene. Waiting for 42 C delays treatment. Succinylcholine is a trigger and adds danger rather than treating MH rigidity. Treating only heart rate leaves the triggering exposure and hypermetabolic process unaddressed.",
+    "reviewHref": "#malignant-hyperthermia",
+    "difficulty": "clinical"
+  },
+  "periop-mh-volume": {
+    "id": "periop-mh-volume",
+    "question": "A 100-kg adult is prescribed an initial MHAUS dantrolene dose of 2.5 mg/kg using RYANODEX 250 mg reconstituted with 5 mL sterile water. What volume supplies that dose?",
+    "choices": [
+      "60 mL",
+      "2 mL",
+      "5 mL",
+      "30 mL"
+    ],
+    "answer": 2,
+    "rationale": "The prescribed MHAUS dose is 2.5 mg/kg × 100 kg = 250 mg. A RYANODEX vial reconstituted with 5 mL supplies 50 mg/mL, so the dose occupies 5 mL. Two mL supplies only 100 mg; 30 mL would contain 1,500 mg at this concentration. The 60-mL reconstitution volume belongs to different 20-mg dantrolene products, not this 250-mg formulation. The prompt specifies a guideline-based dose; it does not redefine the product label.",
+    "reviewHref": "#malignant-hyperthermia",
+    "difficulty": "clinical"
+  },
+  "periop-mh-label": {
+    "id": "periop-mh-label",
+    "question": "A persistent MH crisis may require more than 10 mg/kg dantrolene under MHAUS guidance. How should this be described relative to RYANODEX labeling?",
+    "choices": [
+      "It exceeds the listed label maximum and requires expert-directed crisis management and diagnostic reassessment",
+      "The label has no cumulative maximum",
+      "It is mandatory for every MH patient",
+      "It proves the diagnosis without reassessment"
+    ],
+    "answer": 0,
+    "rationale": "RYANODEX labeling lists a 10 mg/kg cumulative maximum. MHAUS recognizes that persistent contractures or rigidity can require more and advises alternative-diagnosis review if large doses fail to resolve symptoms. This is expert-directed crisis care beyond the listed limit. The label does have a maximum; exceeding it is not mandatory for every patient, and treatment nonresponse does not prove MH without reassessment.",
+    "reviewHref": "#malignant-hyperthermia",
+    "difficulty": "clinical"
+  },
+  "periop-mh-calcium": {
+    "id": "periop-mh-calcium",
+    "question": "A patient receiving dantrolene has life-threatening hyperkalemia. Which distinction is correct?",
+    "choices": [
+      "All forms of calcium are prohibited",
+      "Verapamil is the preferred calcium replacement",
+      "Calcium-channel blockers and calcium salts are interchangeable",
+      "Avoid calcium-channel blockers; IV calcium salts may still be indicated for hyperkalemia"
+    ],
+    "answer": 3,
+    "rationale": "The dantrolene interaction concerns calcium-channel blockers, which may cause marked hyperkalemia and cardiovascular collapse. MHAUS still includes IV calcium salts for life-threatening hyperkalemia. Therefore, all calcium is not prohibited. Verapamil is a calcium-channel blocker rather than calcium replacement, and calcium-channel blockers are not interchangeable with calcium chloride or gluconate.",
+    "reviewHref": "#malignant-hyperthermia",
+    "difficulty": "clinical"
+  },
+  "periop-mh-maintenance": {
+    "id": "periop-mh-maintenance",
+    "question": "An MH patient improves after initial treatment. Which MHAUS maintenance plan is appropriate?",
+    "choices": [
+      "Stop dantrolene after the first normal temperature",
+      "Give 1 mg/kg IV every 4 to 6 hours for at least 24 hours with continued reassessment",
+      "Give one oral dose and discharge immediately",
+      "Continue the acute 2.5 mg/kg bolus every minute for 24 hours"
+    ],
+    "answer": 1,
+    "rationale": "MHAUS recommends maintenance dantrolene 1 mg/kg IV every 4 to 6 hours for at least 24 hours, with continued assessment for recurrence and longer treatment when indicated. One normal temperature does not establish metabolic stability or satisfy all stopping criteria. An oral dose and immediate discharge do not provide this monitored IV regimen. Repeating acute 2.5 mg/kg boluses every minute for a day is not the maintenance schedule.",
+    "reviewHref": "#malignant-hyperthermia",
+    "difficulty": "clinical"
+  },
+  "periop-mh-stopping": {
+    "id": "periop-mh-stopping",
+    "question": "After 24 hours, an MH patient is afebrile but still has rigidity, rising CK and ongoing myoglobinuria. What follows?",
+    "choices": [
+      "Temperature alone permits stopping therapy",
+      "ICU transfer automatically ends monitoring",
+      "Do not apply the MHAUS stopping criteria yet; continue specialist reassessment and treatment",
+      "Rising CK proves dantrolene allergy"
+    ],
+    "answer": 2,
+    "rationale": "MHAUS stopping or spacing criteria include 24 hours of metabolic stability, temperature below 38 C, decreasing CK, no ongoing myoglobinuria and resolved rigidity. This patient does not meet them. Normal temperature alone is insufficient, and transfer does not end monitoring. Rising CK indicates muscle injury in this context rather than proving dantrolene allergy; continue specialist reassessment and treatment.",
+    "reviewHref": "#malignant-hyperthermia",
+    "difficulty": "clinical"
+  },
+  "periop-etomidate-infusion": {
+    "id": "periop-etomidate-infusion",
+    "question": "Etomidate was selected for induction because blood pressure was marginal. A prolonged infusion is proposed for ongoing ICU sedation. What is the best response?",
+    "choices": [
+      "Continue it because induction tolerability establishes infusion safety",
+      "Choose a different ongoing sedation plan because prolonged etomidate infusion risks sustained adrenal suppression",
+      "Continue it if a neuromuscular blocker prevents movement",
+      "Use it as both the sedative and sole analgesic"
+    ],
+    "answer": 1,
+    "rationale": "The etomidate label warns against prolonged infusion because it can prolong suppression of cortisol and aldosterone. Choose an appropriate ongoing sedation plan. Induction tolerability does not establish prolonged-infusion safety. A neuromuscular blocker conceals movement without removing endocrine risk or supplying sedation. Etomidate also lacks analgesic activity and cannot be the sole pain treatment.",
+    "reviewHref": "#induction-agent-selection",
+    "difficulty": "application"
+  },
+  "periop-etomidate-analgesia": {
+    "id": "periop-etomidate-analgesia",
+    "question": "After etomidate induction, a painful procedure is planned. Which statement correctly addresses analgesia?",
+    "choices": [
+      "Loss of consciousness establishes complete analgesia",
+      "Myoclonus proves analgesia is adequate",
+      "Etomidate has no analgesic activity, so pain treatment needs a separate plan",
+      "Adding paralysis supplies the missing analgesia"
+    ],
+    "answer": 2,
+    "rationale": "Etomidate produces hypnosis without analgesic activity, so a painful procedure needs separate pain treatment. Loss of consciousness is not evidence of complete analgesia. Myoclonus is a recognized adverse effect and does not demonstrate pain control. Neuromuscular blockade suppresses movement without supplying analgesia.",
+    "reviewHref": "#induction-agent-selection",
+    "difficulty": "foundational"
+  },
+  "periop-etomidate-dose": {
+    "id": "periop-etomidate-dose",
+    "question": "A 70 kg adult has an individualized order for etomidate 0.3 mg/kg IV. The vial contains 2 mg/mL. Which preparation and administration matches that order and the labeled usual injection duration?",
+    "choices": [
+      "10.5 mL over 30 to 60 seconds",
+      "21 mL over 30 to 60 seconds",
+      "1.05 mL over 30 to 60 seconds",
+      "10.5 mL as a prolonged maintenance infusion"
+    ],
+    "answer": 0,
+    "rationale": "The ordered dose is 70 kg × 0.3 mg/kg = 21 mg; 21 mg ÷ 2 mg/mL = 10.5 mL. The usual labeled induction injection takes 30 to 60 seconds. A 21-mL preparation doubles the ordered dose; 1.05 mL gives only 2.1 mg, one-tenth of the order. A prolonged maintenance infusion is not this induction administration and is specifically discouraged because of adrenal suppression.",
+    "reviewHref": "#induction-agent-selection",
+    "difficulty": "application"
+  },
+  "periop-etomidate-airway": {
+    "id": "periop-etomidate-airway",
+    "question": "An older patient receives etomidate and develops apnea. Which interpretation should guide the immediate response?",
+    "choices": [
+      "Relative cardiovascular stability excludes an anesthetic complication",
+      "Wait for endocrine testing before providing ventilation",
+      "Treat movement suppression as evidence of adequate ventilation",
+      "Support the airway and ventilation immediately; etomidate can cause apnea"
+    ],
+    "answer": 3,
+    "rationale": "Support airway and ventilation immediately. Apnea and partial upper-airway obstruction are reported with etomidate, even when cardiovascular effects are relatively limited. Cardiovascular stability does not exclude a respiratory complication. Waiting for endocrine tests delays immediate rescue, and absent movement does not establish adequate ventilation.",
+    "reviewHref": "#induction-agent-selection",
+    "difficulty": "clinical"
+  },
+  "periop-ketamine-dilution": {
+    "id": "periop-ketamine-dilution",
+    "question": "A prescribed 100 mg ketamine IV induction dose will be prepared from a 100 mg/mL vial. Which preparation follows the cited product label?",
+    "choices": [
+      "Administer 1 mL undiluted IV",
+      "Dilute 1 mL with 1 mL of a labeled diluent, giving 2 mL at 50 mg/mL",
+      "Dilute 1 mL with 1 mL and administer only 1 mL for the full dose",
+      "Treat 100 mg/mL as the total vial content"
+    ],
+    "answer": 1,
+    "rationale": "One mL of 100 mg/mL contains the ordered 100 mg. Adding an equal 1-mL volume of a labeled diluent gives 2 mL at 50 mg/mL; use immediately after dilution. This product does not permit undiluted 100 mg/mL for IV induction. Giving only 1 mL after dilution supplies 50 mg rather than 100 mg. A concentration in mg/mL is not the total content of an unspecified vial.",
+    "reviewHref": "#induction-agent-selection",
+    "difficulty": "application"
+  },
+  "periop-ketamine-procedure": {
+    "id": "periop-ketamine-procedure",
+    "question": "Ketamine alone is proposed for a procedure involving mechanical stimulation of the pharynx because airway reflexes are retained. What is the best correction?",
+    "choices": [
+      "Retained reflexes exclude laryngospasm",
+      "Retained reflexes eliminate aspiration risk",
+      "Ketamine alone reliably supplies the required muscle relaxation",
+      "Retained reflexes do not establish a safe sole-anesthetic plan for this procedure"
+    ],
+    "answer": 3,
+    "rationale": "Retained pharyngeal and laryngeal reflexes do not establish a safe sole-anesthetic plan for pharyngeal stimulation. The label advises against ketamine alone for pharyngeal, laryngeal or bronchial procedures. Laryngospasm and airway obstruction can occur; vomiting and aspiration remain possible. Ketamine does not reliably supply the required skeletal muscle relaxation, so the complete airway and anesthesia plan must be individualized.",
+    "reviewHref": "#induction-agent-selection",
+    "difficulty": "clinical"
+  },
+  "periop-ketamine-interaction": {
+    "id": "periop-ketamine-interaction",
+    "question": "A patient receiving aminophylline is being assessed for ketamine anesthesia. Which interaction is specifically relevant?",
+    "choices": [
+      "Lower seizure threshold, prompting consideration of an alternative anesthetic",
+      "Complete blockade of ketamine analgesia",
+      "Guaranteed prevention of emergence reactions",
+      "Selective reversal of ketamine respiratory depression"
+    ],
+    "answer": 0,
+    "rationale": "The ketamine label identifies a lower seizure threshold with aminophylline or theophylline and advises considering an alternative anesthetic. It does not identify complete loss of ketamine analgesia, guaranteed prevention of emergence reactions or selective reversal of respiratory depression as the relevant interaction. Assess the medicines and anesthesia plan rather than assuming one drug protects against another adverse effect.",
+    "reviewHref": "#induction-agent-selection",
+    "difficulty": "application"
+  },
+  "periop-ketamine-recurrent": {
+    "id": "periop-ketamine-recurrent",
+    "question": "A patient receiving recurrent ketamine develops severe urinary symptoms with suspected obstruction. What response matches current labeling?",
+    "choices": [
+      "Continue unchanged because urinary toxicity occurs only after overdose",
+      "Treat the symptoms as routine emergence delirium",
+      "Discontinue ketamine and obtain urgent urological evaluation",
+      "Increase the dose to cover pain while postponing assessment"
+    ],
+    "answer": 2,
+    "rationale": "Current ketamine labeling directs discontinuation and urgent urological evaluation for signs of obstruction or severe lower urinary tract symptoms. Serious urinary complications are reported with long-term use and are not restricted to acute overdose. These symptoms are not routine emergence delirium, and increasing the dose while deferring assessment continues exposure instead of addressing the complication.",
+    "reviewHref": "#induction-agent-selection",
+    "difficulty": "clinical"
+  },
+  "periop-propofol-reserve": {
+    "id": "periop-propofol-reserve",
+    "question": "A frail, hypovolemic older adult needs induction. Which approach best addresses propofol risk?",
+    "choices": [
+      "Use the usual healthy-adult dose rapidly because recovery is fast",
+      "Use cautious individualized titration with immediate airway and circulatory support",
+      "Increase the dose to compensate for older age",
+      "Treat absence of movement as proof of adequate ventilation"
+    ],
+    "answer": 1,
+    "rationale": "Use cautious individualized titration with immediate airway and circulatory support. Propofol can cause profound hypotension and apnea; older, debilitated and unstable patients may need lower doses and slower administration. Rapid healthy-adult dosing does not become safe because recovery can be fast. Increasing the dose for older age opposes the label guidance, and absence of movement does not demonstrate ventilation.",
+    "reviewHref": "#induction-agent-selection",
+    "difficulty": "clinical"
+  },
+  "periop-propofol-asepsis": {
+    "id": "periop-propofol-asepsis",
+    "question": "A propofol vial was opened for an anesthetic procedure that has now ended after two hours. Under the cited label, what should happen to the remainder?",
+    "choices": [
+      "Save it for another patient until twelve hours elapse",
+      "Refrigerate it for the next operating list",
+      "Add disinfectant to extend its use",
+      "Discard it and the dedicated administration materials as directed"
+    ],
+    "answer": 3,
+    "rationale": "For the cited Hospira product, discard unused propofol and dedicated administration materials at the end of the anesthetic procedure or 12 hours, whichever comes first. The two-hour procedure-end rule already applies. Saving it for another patient violates single-patient handling. Refrigeration does not extend this use period, and adding disinfectant is not an authorized preparation or preservation method.",
+    "reviewHref": "#induction-agent-selection",
+    "difficulty": "application"
+  },
+  "periop-propofol-syndrome": {
+    "id": "periop-propofol-syndrome",
+    "question": "During a propofol infusion, new unexplained metabolic acidosis, rhabdomyolysis and cardiac dysfunction develop. What is the best immediate medication response?",
+    "choices": [
+      "Stop propofol, provide alternative sedation and urgently evaluate and treat the deterioration",
+      "Increase propofol to reduce metabolic demand",
+      "Wait until forty-eight hours of exposure before considering toxicity",
+      "Treat normal triglycerides as sufficient to exclude propofol toxicity"
+    ],
+    "answer": 0,
+    "rationale": "Stop propofol, provide alternative sedation and urgently evaluate and treat this pattern concerning for propofol infusion syndrome. Increasing the infusion continues a possible cause of the deterioration. The label also reports the syndrome after large-dose short-term surgical infusions, so do not wait for 48 hours. A normal triglyceride result does not exclude a syndrome characterized by metabolic and organ abnormalities, and is not a reason to delay assessment.",
+    "reviewHref": "#induction-agent-selection",
+    "difficulty": "clinical"
+  },
+  "periop-propofol-calories": {
+    "id": "periop-propofol-calories",
+    "question": "A nutrition review finds that propofol ran at 20 mL/hour for 24 hours. Using 1.1 kcal/mL, how much energy did it provide?",
+    "choices": [
+      "48 kcal",
+      "480 kcal",
+      "528 kcal",
+      "5,280 kcal"
+    ],
+    "answer": 2,
+    "rationale": "20 mL/hour × 24 hours = 480 mL; 480 mL × 1.1 kcal/mL = 528 kcal. The 480 answer stops at volume and omits the energy conversion. The 48 answer is tenfold below the infused volume before applying the factor, and 5,280 is tenfold above the correct energy. Include the 528 kcal in the full nutrition review rather than treating propofol as nutritionally negligible.",
+    "reviewHref": "#induction-agent-selection",
+    "difficulty": "application"
+  },
+  "periop-ketamine-neurologic-monitoring": {
+    "id": "periop-ketamine-neurologic-monitoring",
+    "question": "Which statement accurately represents ketamine labeling for a patient with elevated intracranial pressure?",
+    "choices": [
+      "No neurologic monitoring is needed because airway reflexes persist",
+      "The warning itself prohibits every use regardless of context",
+      "Use requires a monitored setting with frequent neurologic assessments and an individualized anesthesia plan",
+      "A benzodiazepine removes all pressure and respiratory risks"
+    ],
+    "answer": 2,
+    "rationale": "The ketamine label reports intracranial-pressure increases and calls for a monitored setting with frequent neurologic assessments in patients with elevated intracranial pressure. This warning is not itself an unconditional contraindication. Retained airway reflexes do not replace neurologic monitoring. A benzodiazepine does not eliminate pressure risk and can add respiratory depression, so individualize the complete anesthesia plan.",
+    "reviewHref": "#induction-agent-selection",
+    "difficulty": "clinical"
+  },
+  "periop-mh-nitrous": {
+    "id": "periop-mh-nitrous",
+    "question": "Which inhaled agent is classified by MHAUS as nontriggering for malignant hyperthermia?",
+    "choices": [
+      "Sevoflurane",
+      "Desflurane",
+      "Nitrous oxide",
+      "Isoflurane"
+    ],
+    "answer": 2,
+    "rationale": "MHAUS classifies nitrous oxide as an inhaled nonvolatile, nontriggering agent. Sevoflurane, desflurane and isoflurane are all listed triggering volatile anesthetics. Thus each of those three alternatives is incorrect. Nontriggering status concerns MH susceptibility and does not eliminate other anesthetic risks.",
+    "reviewHref": "#malignant-hyperthermia",
+    "difficulty": "foundational"
+  }
+})) {
+  const existing = perioperativeCriticalCarePharmacologyQuestionBank.find((question) => question.id === id);
+  if (existing) Object.assign(existing, updates);
+  else perioperativeCriticalCarePharmacologyQuestionBank.push(updates);
+}
