@@ -527,3 +527,164 @@ for (const [id, updates] of Object.entries({
 })) {
   Object.assign(adrenalInsufficiencyQuestionBank.find((question) => question.id === id), updates);
 }
+
+
+// Reconcile every alternative with the specified clinical setting.
+for (const [id, updates] of Object.entries({
+  "adrenal-insufficiency-18-case": {
+    "id": "adrenal-insufficiency-18-case",
+    "question": "A patient with autoimmune primary adrenal insufficiency and confirmed aldosterone deficiency has salt craving, high renin, and postural hypotension. Which response is best?",
+    "choices": [
+      "Stop glucocorticoid replacement once fludrocortisone begins.",
+      "Add fludrocortisone while continuing glucocorticoid replacement.",
+      "Use spironolactone to restore aldosterone action.",
+      "Withhold mineralocorticoid assessment because primary disease never affects aldosterone."
+    ],
+    "answer": 1,
+    "rationale": "Confirmed aldosterone deficiency with salt craving, high renin and postural hypotension calls for fludrocortisone while necessary glucocorticoid replacement continues. Stopping glucocorticoid leaves cortisol deficiency untreated. Spironolactone blocks the mineralocorticoid action that is missing rather than restoring it. Primary cortical disease can affect aldosterone, so withholding mineralocorticoid assessment is inappropriate. Follow symptoms, posture, pressure and electrolytes with renin in the nonpregnant clinical context.",
+    "reviewHref": "#mineralocorticoid-replacement",
+    "difficulty": "application"
+  },
+  "adrenal-insufficiency-19-case": {
+    "id": "adrenal-insufficiency-19-case",
+    "question": "A patient on fludrocortisone develops edema, hypertension, hypokalemia, and suppressed renin. Which response is best?",
+    "choices": [
+      "Increase fludrocortisone to correct the low potassium.",
+      "Ignore the pattern because replacement doses cannot cause toxicity.",
+      "Reduce mineralocorticoid exposure and reassess volume status.",
+      "Stop all cortisol replacement to treat mineralocorticoid excess."
+    ],
+    "answer": 2,
+    "rationale": "Edema, hypertension, hypokalemia and suppressed renin together support excessive mineralocorticoid effect, so reduce excessive fludrocortisone exposure under supervision and reassess volume status and medications. Increasing fludrocortisone can worsen potassium loss. Replacement dosing can still cause excess effects, so the findings cannot be ignored. Stopping necessary cortisol replacement does not safely correct mineralocorticoid excess. Also assess glucocorticoid over-replacement when evaluating hypertension.",
+    "reviewHref": "#mineralocorticoid-replacement",
+    "difficulty": "application"
+  },
+  "adrenal-insufficiency-24-case": {
+    "id": "adrenal-insufficiency-24-case",
+    "question": "A stable patient with known adrenal insufficiency and influenza has fever but can eat, drink, and keep tablets down. Which response is best?",
+    "choices": [
+      "Continue the usual dose without checking the sick-day plan.",
+      "Stop glucocorticoids because fever always indicates steroid toxicity.",
+      "Add only fludrocortisone to replace the stress cortisol requirement.",
+      "Use the prescribed oral sick-day dose and monitor for worsening."
+    ],
+    "answer": 3,
+    "rationale": "In the stated stable patient with known adrenal insufficiency and intact oral delivery, use the prescribed oral sick-day dose and watch for worsening illness or failed absorption. Continuing the usual dose without consulting the plan can leave the stress requirement unmet. Fever does not always indicate steroid toxicity and is not a reason to stop necessary glucocorticoids. Fludrocortisone alone cannot meet the increased cortisol requirement. Instability or inability to retain medication requires escalation to parenteral coverage and urgent assessment.",
+    "reviewHref": "#sick-day-preparedness",
+    "difficulty": "application"
+  },
+  "adrenal-insufficiency-25-case": {
+    "id": "adrenal-insufficiency-25-case",
+    "question": "A patient with known adrenal insufficiency vomits twice and cannot retain medication. Which response is best?",
+    "choices": [
+      "Inject emergency hydrocortisone and obtain urgent care.",
+      "Continue repeated oral redosing despite inability to retain medication.",
+      "Wait until the next routine appointment.",
+      "Stop all steroids until the stomach settles."
+    ],
+    "answer": 0,
+    "rationale": "Inability to retain medication means oral treatment cannot reliably provide cortisol coverage. Give the prescribed emergency hydrocortisone injection and obtain urgent care for ongoing assessment and treatment. Repeated oral redosing despite vomiting does not solve failed delivery. Waiting for a routine appointment delays necessary treatment. Stopping all glucocorticoids leaves the patient unprotected during illness.",
+    "reviewHref": "#sick-day-preparedness",
+    "difficulty": "application"
+  },
+  "adrenal-insufficiency-26-case": {
+    "id": "adrenal-insufficiency-26-case",
+    "question": "A family member is unsure how to use the patient's emergency hydrocortisone kit. Which response is best?",
+    "choices": [
+      "Assume possession of the kit proves injection competence.",
+      "Provide hands-on retraining and confirm a return demonstration.",
+      "Delay training until the next emergency.",
+      "Check the expiration date but leave the technique problem unresolved."
+    ],
+    "answer": 1,
+    "rationale": "Hands-on retraining with a return demonstration checks whether the family member can use the actual emergency kit. Possessing a kit does not establish injection competence. Waiting until an emergency leaves the technique problem unresolved when treatment is urgent. Checking expiry is necessary but does not address uncertainty about preparation or administration. Review both skills and supplies again during follow-up.",
+    "reviewHref": "#sick-day-preparedness",
+    "difficulty": "application"
+  },
+  "adrenal-insufficiency-27-case": {
+    "id": "adrenal-insufficiency-27-case",
+    "question": "A patient recently stopped chronic prednisone and now has vomiting, confusion, and shock. Which response is best?",
+    "choices": [
+      "Wait for hyperkalemia before considering crisis.",
+      "Exclude crisis because the original treatment was prednisone.",
+      "Treat suspected adrenal crisis immediately.",
+      "Delay treatment until a stimulation test confirms deficiency."
+    ],
+    "answer": 2,
+    "rationale": "Recent chronic prednisone cessation with vomiting, confusion and shock raises concern for adrenal crisis; give immediate parenteral hydrocortisone and fluid resuscitation while investigating. Hyperkalemia is not required, because glucocorticoid-induced disease usually preserves aldosterone. Prior prednisone treatment can suppress the HPA axis and does not exclude crisis. Waiting for stimulation testing delays urgent treatment. Diagnostic samples may be obtained first only if they cause no delay.",
+    "reviewHref": "#adrenal-crisis",
+    "difficulty": "application"
+  },
+  "adrenal-insufficiency-28-case": {
+    "id": "adrenal-insufficiency-28-case",
+    "question": "A hypotensive adult with known primary adrenal insufficiency arrives confused and dehydrated. Which response is best?",
+    "choices": [
+      "Await cortisol results before treating shock.",
+      "Use fludrocortisone alone for the acute cortisol deficit.",
+      "Use only the usual oral maintenance dose despite shock.",
+      "Give hydrocortisone 100 mg immediately, start isotonic saline, and continue stress dosing."
+    ],
+    "answer": 3,
+    "rationale": "For this adult with known primary insufficiency and shock, give hydrocortisone 100 mg IV or IM immediately, start isotonic saline and provide ongoing stress coverage, usually 200 mg over 24 hours or 50 mg every six hours. Do not await cortisol results before treating. Fludrocortisone alone cannot correct the acute cortisol deficit. Usual oral maintenance dosing is inadequate in shock and may not be reliably delivered. Adjust fluids and ongoing treatment to response, electrolytes and comorbidities.",
+    "reviewHref": "#adrenal-crisis",
+    "difficulty": "application"
+  },
+  "adrenal-insufficiency-29-case": {
+    "id": "adrenal-insufficiency-29-case",
+    "question": "A patient stabilizes after a crisis caused by gastroenteritis and delayed injection. Which response is best?",
+    "choices": [
+      "Rebuild the emergency plan and confirm injection competence before discharge.",
+      "Discharge without reviewing the cause once blood pressure normalizes.",
+      "Remove the injection kit because the current crisis has resolved.",
+      "Advise only oral redosing during future persistent vomiting."
+    ],
+    "answer": 0,
+    "rationale": "Rebuild the emergency plan and confirm use of the actual injection kit before discharge, addressing the gastroenteritis and delayed injection that preceded this crisis. Normal blood pressure alone does not correct the failed prevention step. Removing the kit would reduce access to future emergency coverage. Oral redosing alone is unreliable during persistent vomiting. Verify instructions, supplies, caregiver competence and follow-up across care settings.",
+    "reviewHref": "#special-populations-follow-up",
+    "difficulty": "application"
+  },
+  "adrenal-insufficiency-30-case": {
+    "id": "adrenal-insufficiency-30-case",
+    "question": "A pregnant patient with primary adrenal insufficiency enters active labor. Which response is best?",
+    "choices": [
+      "Continue only baseline oral replacement through active labor.",
+      "Provide labor stress-dose hydrocortisone and coordinated obstetric-endocrine care.",
+      "Use fludrocortisone alone for labor stress.",
+      "Switch routinely to dexamethasone because it is inactivated by the placenta."
+    ],
+    "answer": 1,
+    "rationale": "Active labor requires parenteral stress-dose hydrocortisone and coordinated obstetric and endocrine care. Baseline oral replacement alone does not meet this major stress requirement. Fludrocortisone alone does not provide cortisol coverage. Dexamethasone is not inactivated by the placenta as the distractor states; hydrocortisone is preferred for maternal replacement. Reassess replacement after delivery according to the clinical course.",
+    "reviewHref": "#special-populations-follow-up",
+    "difficulty": "application"
+  },
+  "adrenal-insufficiency-pediatric-crisis-dose": {
+    "id": "adrenal-insufficiency-pediatric-crisis-dose",
+    "question": "A small child needs emergency hydrocortisone for suspected adrenal crisis. Which dosing principle is correct?",
+    "choices": [
+      "Apply the fixed adult 100 mg dose to every child",
+      "Wait for a cortisol result before selecting any dose",
+      "Use the pediatric age/body-size emergency protocol without delaying treatment",
+      "Use only fludrocortisone for pediatric crisis"
+    ],
+    "answer": 2,
+    "rationale": "Use the current pediatric age or body-size emergency protocol promptly. Recommendation 4.1 of the primary-insufficiency guideline gives 50 mg/m² initially, followed by 50 to 100 mg/m² over 24 hours; protocols can use age-based doses or body-surface-area ranges. A fixed adult 100 mg dose is not appropriate for every child. Waiting for cortisol results delays emergency care. Fludrocortisone alone does not treat acute cortisol deficiency. Fluids and hypoglycemia treatment also require a pediatric plan.",
+    "reviewHref": "#adrenal-crisis",
+    "difficulty": "clinical"
+  },
+  "adrenal-insufficiency-salt-restriction": {
+    "id": "adrenal-insufficiency-salt-restriction",
+    "question": "An adult with aldosterone-deficient primary adrenal insufficiency takes fludrocortisone and asks whether all replacement patients must restrict salt. Which response is appropriate?",
+    "choices": [
+      "Routine salt restriction is not the default; review symptoms, pressure and electrolytes with the replacement plan",
+      "All patients must eliminate dietary sodium",
+      "Salt intake removes the need for cortisol replacement",
+      "Fludrocortisone dosing never changes with clinical findings"
+    ],
+    "answer": 0,
+    "rationale": "Routine salt restriction is not the default in aldosterone-deficient primary insufficiency because treatment replaces the action needed to retain salt and volume. Review symptoms, blood pressure and electrolytes with the individualized replacement plan. Eliminating sodium for all patients can worsen salt loss. Salt intake cannot replace missing cortisol. Fludrocortisone dosing can require adjustment for clinical findings, heat, sweating or excess effects; it is not permanently fixed.",
+    "reviewHref": "#mineralocorticoid-replacement",
+    "difficulty": "clinical"
+  }
+})) {
+  Object.assign(adrenalInsufficiencyQuestionBank.find((question) => question.id === id), updates);
+}

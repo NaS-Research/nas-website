@@ -365,3 +365,224 @@ Object.assign(adrenalInsufficiencyModule.submodules.find((lesson) => lesson.slug
     "reviewHref": "#morning-cortisol-testing"
   }
 });
+
+
+// Complete mineralocorticoid, emergency preparedness and follow-up teaching.
+Object.assign(adrenalInsufficiencyModule.submodules.find((lesson) => lesson.slug === "mineralocorticoid-replacement"), {
+  "slug": "mineralocorticoid-replacement",
+  "title": "Mineralocorticoid Replacement",
+  "visual": "ai-mineralocorticoid",
+  "summary": "Fludrocortisone replaces missing aldosterone action in primary adrenal insufficiency. Central and glucocorticoid-induced disease usually preserve the RAAS and do not routinely need it.",
+  "concepts": [
+    "Fludrocortisone",
+    "Renin",
+    "Postural blood pressure",
+    "Electrolytes",
+    "Salt and heat"
+  ],
+  "application": "Titrate mineralocorticoid effect from the full volume and electrolyte pattern rather than from one blood pressure value.",
+  "lesson": [
+    {
+      "heading": "Start for aldosterone deficiency",
+      "body": "Adults with confirmed aldosterone deficiency may begin fludrocortisone at 50 to 100 micrograms daily under the replacement plan. Primary adrenal insufficiency alone does not establish that every patient has lost aldosterone action. Dose needs vary with climate, sweating, salt intake, pregnancy, kidney function, and residual adrenal activity. Review changes in symptoms and exposures rather than treating the starting dose as permanent."
+    },
+    {
+      "heading": "Monitor replacement",
+      "body": "Assess salt craving, postural symptoms, sitting and standing blood pressure, weight, edema, sodium, potassium and renin in context. Renin near the upper reference range can be compatible with adequate replacement in a nonpregnant patient. Hypertension, edema, hypokalemia and suppressed renin together suggest excessive mineralocorticoid effect. Renin rises physiologically in pregnancy and is not a reliable dose target there; use clinical findings and electrolytes. Review interacting drugs: phenytoin can increase fludrocortisone clearance, while potassium-depleting diuretics or amphotericin B can increase hypokalemia risk."
+    },
+    {
+      "heading": "Do not default to salt restriction",
+      "body": "Confirmed aldosterone deficiency generally requires adequate salt intake, so routine salt restriction is not the default. Heat and heavy sweating can increase salt and replacement needs. When hypertension develops, assess both glucocorticoid and mineralocorticoid excess and reduce excessive fludrocortisone exposure under supervision. Persistent hypertension can require antihypertensive treatment while necessary replacement continues. Spironolactone and eplerenone oppose the aldosterone action being replaced and are inappropriate for treating this deficiency. Heart or kidney disease requires an individualized volume and salt plan."
+    },
+    {
+      "heading": "Separate treatment layers",
+      "body": "Fludrocortisone does not replace physiologic cortisol and is not routine treatment for secondary, tertiary or glucocorticoid-induced adrenal insufficiency, where aldosterone is usually preserved. Routine hydrocortisone doses have some mineralocorticoid activity but may not fully replace missing aldosterone. During emergency stress treatment, hydrocortisone above 50 mg per 24 hours generally supplies sufficient mineralocorticoid activity without additional fludrocortisone. As hydrocortisone is tapered toward maintenance, reassess and resume necessary mineralocorticoid replacement through the treating team."
+    }
+  ],
+  "keyPoints": [
+    "Fludrocortisone treats aldosterone deficiency.",
+    "Renin and clinical volume findings guide titration.",
+    "Hypertension and hypokalemia can indicate excess.",
+    "Central disease does not routinely require mineralocorticoid replacement."
+  ],
+  "check": {
+    "question": "Which finding most strongly suggests fludrocortisone over-replacement?",
+    "choices": [
+      "Hypertension, edema, hypokalemia, and suppressed renin",
+      "Salt craving with high renin",
+      "Postural hypotension with hyponatremia",
+      "Normal pressure and potassium"
+    ],
+    "answer": 0,
+    "rationale": "Hypertension, edema, hypokalemia and suppressed renin together suggest volume expansion and potassium loss from excessive mineralocorticoid effect. Salt craving with high renin instead suggests insufficient replacement or salt loss. Postural hypotension with hyponatremia warrants assessment for deficiency and other causes, rather than demonstrating excess. Normal pressure and potassium do not by themselves establish over-replacement. Review the full clinical pattern and medications before adjusting treatment.",
+    "reviewHref": "#mineralocorticoid-replacement"
+  }
+});
+Object.assign(adrenalInsufficiencyModule.submodules.find((lesson) => lesson.slug === "sick-day-preparedness"), {
+  "slug": "sick-day-preparedness",
+  "title": "Sick-Day Rules and Emergency Preparedness",
+  "visual": "ai-preparedness",
+  "summary": "Illness, delayed stress dosing, failed oral delivery or an unavailable or unfamiliar injection kit can leave a patient with adrenal insufficiency without adequate cortisol coverage.",
+  "concepts": [
+    "Oral stress dosing",
+    "Emergency injection",
+    "Steroid card",
+    "Vomiting",
+    "Procedure planning"
+  ],
+  "application": "Design the response before illness begins and verify that the patient and close contacts can execute it under pressure.",
+  "lesson": [
+    {
+      "heading": "Scale by stress and absorption",
+      "body": "Minor fever or illness can often be managed with the prescribed oral stress dose when circulation is stable and medication can be retained. Hemodynamic instability, persistent vomiting or severe diarrhea with unreliable oral delivery requires parenteral coverage and urgent assessment. Major illness, significant trauma and procedures under general or regional anesthesia need an appropriate parenteral plan. A procedure under local anesthesia can often use oral coverage when the patient is stable and absorption is intact; the procedure and current glucocorticoid dose matter."
+    },
+    {
+      "heading": "Make the written oral plan concrete",
+      "body": "For established primary insufficiency, the 2016 guideline gives fever examples of doubling hydrocortisone above 38°C or tripling it above 39°C until recovery, often two to three days, with tolerated electrolyte-containing fluids. Use the individualized written plan and review the current dose before adding treatment. These examples are not one regimen for every illness or glucocorticoid exposure. Worsening illness, circulatory instability or unreliable absorption requires escalation rather than repeated oral redosing."
+    },
+    {
+      "heading": "Act when tablets fail",
+      "body": "If oral medication cannot be retained, give the prescribed emergency hydrocortisone injection promptly and obtain urgent medical care. An adult emergency plan commonly uses 100 mg IM; a child needs the prescribed pediatric age or body-size protocol. Repeated tablets during persistent vomiting cannot reliably deliver cortisol replacement. The injection provides initial coverage while medical assessment and ongoing treatment are arranged; feeling better after it does not remove the need for urgent assessment."
+    },
+    {
+      "heading": "Build a reliable system",
+      "body": "Patients need medical identification, a current steroid emergency card, an unexpired injection kit, adequate medicine supply and written sick-day instructions. Teach the exact kit to the patient and family or caregivers, confirm a return demonstration, and repeat training during follow-up. Review expiry dates and supplies before travel or procedures. Give procedure teams the diagnosis and stress-dose plan in advance, including the route needed if oral intake will be interrupted."
+    },
+    {
+      "heading": "Review existing glucocorticoid coverage",
+      "body": "Current or recent glucocorticoid users whose adrenal recovery has not been established may also need stress coverage. Assess all exposure routes and the actual stressor. Do not automatically double a regimen that already provides adequate coverage: the 2024 guideline notes that minor stress usually needs no additional dose when the current daily dose is at least hydrocortisone 40 mg, prednisone 10 mg or dexamethasone 1 mg, unless instability changes the situation. Major stress, prolonged inability to take oral medication or shock requires a separate route and dose plan. Use clinician-directed instructions rather than applying the primary-disease fever examples to every steroid user."
+    }
+  ],
+  "keyPoints": [
+    "Stress dosing depends on severity and absorption.",
+    "Failed oral delivery makes parenteral coverage urgent.",
+    "An injection kit requires hands-on training.",
+    "Procedures need a preplanned stress regimen."
+  ],
+  "check": {
+    "question": "What should a patient with adrenal insufficiency do after repeated vomiting prevents oral hydrocortisone retention?",
+    "choices": [
+      "Use emergency injectable hydrocortisone and seek urgent care",
+      "Wait until the next scheduled tablet",
+      "Take fludrocortisone alone",
+      "Stop all replacement until nausea resolves"
+    ],
+    "answer": 0,
+    "rationale": "Repeated vomiting prevents reliable oral hydrocortisone delivery, so use the prescribed emergency injection and seek urgent care for ongoing coverage and assessment. Waiting for the next tablet leaves the cortisol requirement unmet. Fludrocortisone alone cannot replace missing cortisol. Stopping all replacement also leaves the patient unprotected during illness. The route must change when oral medication cannot be retained.",
+    "reviewHref": "#sick-day-preparedness"
+  }
+});
+Object.assign(adrenalInsufficiencyModule.submodules.find((lesson) => lesson.slug === "adrenal-crisis"), {
+  "slug": "adrenal-crisis",
+  "title": "Adrenal Crisis Recognition and Immediate Treatment",
+  "visual": "ai-crisis",
+  "summary": "Adrenal crisis is a clinical emergency defined by inadequate cortisol action during physiologic stress, often with hypotension or shock and rapidly progressive systemic illness.",
+  "concepts": [
+    "Hydrocortisone 100 mg",
+    "Isotonic saline",
+    "200 mg over 24 hours",
+    "Hypoglycemia",
+    "No treatment delay"
+  ],
+  "application": "When the pattern and risk fit, treat first and refine the diagnosis after circulation and cortisol action are restored.",
+  "lesson": [
+    {
+      "heading": "Recognize the emergency",
+      "body": "Hypotension, volume depletion, vomiting, abdominal pain, fever, weakness, confusion, hypoglycemia, and electrolyte abnormalities can occur. Primary disease may be more hemodynamically severe because aldosterone is also deficient. A recent history of glucocorticoid reduction or cessation also raises concern, even when the original treatment was prednisone or used another route. Central and glucocorticoid-induced disease can cause crisis without hyperkalemia because aldosterone is usually preserved. Neither normal potassium nor an incomplete classic presentation safely excludes crisis when the risk and clinical deterioration fit."
+    },
+    {
+      "heading": "Treat immediately",
+      "body": "For adults, give hydrocortisone 100 mg IV or IM immediately and begin rapid 0.9 percent saline. Continue hydrocortisone 200 mg over 24 hours by infusion or 50 mg IV or IM every six hours, while treating hypoglycemia and the precipitating illness. The initial 100 mg dose is followed by ongoing coverage; 200 mg over 24 hours is an infusion total, not another single bolus. Four doses of 50 mg spaced six hours apart supply 200 mg in a day. Continue frequent clinical reassessment and treatment of the trigger, rather than treating the first injection as the entire course."
+    },
+    {
+      "heading": "Individualize fluid resuscitation",
+      "body": "The adult guideline starts with about one liter of isotonic saline during the first hour, then adjusts further fluid to circulation, urine output, electrolytes and comorbidity. Reassess frequently for fluid overload and treat hypoglycemia. A fixed adult fluid volume is not a pediatric instruction. Assess blood pressure, perfusion, urine output and sodium during treatment, and give glucose for hypoglycemia as indicated. Older adults and patients with cardiac or renal disease require particular attention to overload. Fluid treatment follows the response and comorbidities rather than a fixed volume for every adult."
+    },
+    {
+      "heading": "Use pediatric dosing for children",
+      "body": "Do not apply the fixed adult regimen or adult one-liter fluid volume to a small child. Recommendation 4.1 of the 2016 primary-insufficiency guideline specifies initial hydrocortisone 50 mg/m², followed by 50 to 100 mg/m² over 24 hours. Pediatric emergency protocols may specify age-based doses or body-surface-area ranges; use the current pediatric protocol with experienced clinical support and do not delay treatment. Select fluids and hypoglycemia treatment for the child’s size and clinical condition."
+    },
+    {
+      "heading": "Do not wait",
+      "body": "Cortisol and ACTH may be drawn first only when that causes no delay. The short-term risk of empiric hydrocortisone is small compared with the risk of untreated crisis. Once stable, taper stress dosing toward oral replacement under specialist guidance. Treat suspected crisis while investigating; confirm and refine the diagnosis after stabilization. Reassess the need for ongoing parenteral treatment, taper to oral replacement under specialist guidance, and restore necessary mineralocorticoid replacement as high-dose hydrocortisone is reduced. Before discharge, review the precipitating illness, medication access and the emergency plan."
+    }
+  ],
+  "keyPoints": [
+    "Suspected crisis is treated before confirmation.",
+    "Adult initial hydrocortisone is 100 mg IV or IM.",
+    "Rapid isotonic saline restores volume.",
+    "Ongoing stress coverage is 200 mg per day or 50 mg every six hours."
+  ],
+  "check": {
+    "question": "What is the correct initial treatment for an adult with suspected adrenal crisis?",
+    "choices": [
+      "Hydrocortisone 100 mg IV or IM plus rapid isotonic saline",
+      "Wait for a stimulation test",
+      "Fludrocortisone alone",
+      "Oral dexamethasone after discharge"
+    ],
+    "answer": 0,
+    "rationale": "Give an adult with suspected adrenal crisis hydrocortisone 100 mg IV or IM and rapid isotonic saline immediately, then arrange ongoing stress-dose coverage and monitoring. Waiting for stimulation testing delays necessary treatment. Fludrocortisone alone does not treat the acute cortisol deficit. Oral dexamethasone after discharge is not initial emergency resuscitation and does not address shock or unreliable absorption. Draw useful diagnostic samples only if doing so causes no treatment delay.",
+    "reviewHref": "#adrenal-crisis"
+  }
+});
+Object.assign(adrenalInsufficiencyModule.submodules.find((lesson) => lesson.slug === "special-populations-follow-up"), {
+  "slug": "special-populations-follow-up",
+  "title": "Special Populations and Long-Term Follow-Up",
+  "visual": "ai-follow-up",
+  "summary": "Replacement changes with pregnancy, labor, surgery, childhood, heat exposure, shift schedules, intercurrent disease, and the cause of adrenal failure.",
+  "concepts": [
+    "Pregnancy",
+    "Labor",
+    "Procedures",
+    "Autoimmune surveillance",
+    "Post-crisis review"
+  ],
+  "application": "Use follow-up to review replacement, changing stress needs and the patient’s emergency plan.",
+  "lesson": [
+    {
+      "heading": "Plan pregnancy and delivery",
+      "body": "Hydrocortisone is preferred for replacement in pregnancy because placental enzymes limit fetal exposure; dexamethasone is not inactivated in the same way and is avoided for routine replacement. Review each trimester for under- or over-replacement using symptoms, weight, blood pressure and electrolytes, and adjust hydrocortisone to clinical need, particularly later in pregnancy. Do not apply a mandatory dose increase to every pregnancy. Renin rises physiologically and should not guide mineralocorticoid titration during pregnancy. Plan parenteral stress-dose hydrocortisone for active labor with coordinated obstetric and endocrine care, then reassess the dose after delivery."
+    },
+    {
+      "heading": "Follow the cause and consequences",
+      "body": "Primary autoimmune disease warrants attention to associated autoimmune conditions. Long-term care reviews weight, blood pressure, glucose, bone health, quality of life, adherence, dosing times, fludrocortisone effect, and whether current replacement remains physiologic. Arrange endocrine review at least annually for stable adults, with earlier review for dose changes, new symptoms or a crisis. Associated autoimmune conditions require periodic surveillance; the optimal interval is not fixed for every condition. Look for excessive replacement as well as deficiency, and distinguish dosing or adherence problems from other causes of persistent symptoms."
+    },
+    {
+      "heading": "Learn from every crisis",
+      "body": "After stabilization, identify the trigger and the system failure: no dose escalation, absent kit, expired drug, untrained caregiver, delayed recognition, or inadequate procedure planning. Repair that point before discharge and communicate the plan across care settings. Confirm that the patient or caregiver can actually prepare and administer the current kit, and that medicine and supplies will be accessible after discharge. Normalized blood pressure does not resolve a failed instruction or an unavailable injection. Arrange follow-up and ensure each care team has the revised plan."
+    },
+    {
+      "heading": "Follow growth and body size in children",
+      "body": "Children need specialist follow-up of growth velocity, weight, blood pressure, energy and symptoms as replacement needs change. Hydrocortisone is the preferred glucocorticoid for growing children; long-acting synthetic glucocorticoids can make excess exposure harder to avoid. Dose decisions and emergency instructions must reflect the child’s current size and clinical needs. The primary-insufficiency guideline recommends review at least annually for children and every three to four months for infants, with additional assessment when needed. Pediatric mineralocorticoid treatment requires specialist interpretation of deficiency and monitoring; a guideline recommendation does not establish pediatric approval for every labeled product."
+    },
+    {
+      "heading": "Evaluate persistent symptoms before adding treatment",
+      "body": "Low energy, mood symptoms or low libido require assessment of replacement adequacy, adherence and other causes. The 2016 guideline suggests that selected women with primary adrenal insufficiency and persistent low libido, depressive symptoms or low energy despite optimized glucocorticoid and mineralocorticoid replacement may try DHEA under endocrine supervision. This is not routine treatment for all patients. An initial six-month trial should be stopped if there is no sustained benefit; monitor a morning DHEAS level before the dose and review clinical response."
+    }
+  ],
+  "keyPoints": [
+    "Hydrocortisone is preferred during pregnancy.",
+    "Labor requires stress-dose coverage.",
+    "Long-term monitoring looks for under- and over-replacement.",
+    "Every crisis should trigger a prevention-system review."
+  ],
+  "check": {
+    "question": "Which glucocorticoid is generally preferred for replacement during pregnancy?",
+    "choices": [
+      "Hydrocortisone",
+      "Dexamethasone",
+      "Fludrocortisone alone",
+      "Mifepristone"
+    ],
+    "answer": 0,
+    "rationale": "Hydrocortisone is generally preferred because placental metabolism limits fetal exposure. Dexamethasone is not inactivated by the placenta in the same way and is avoided for routine replacement. Fludrocortisone alone replaces mineralocorticoid action, not the missing cortisol. Mifepristone blocks cortisol and progesterone receptors rather than replacing cortisol and is contraindicated in pregnancy in the Korlym label. Pregnancy replacement and labor stress coverage require a coordinated clinical plan.",
+    "reviewHref": "#special-populations-follow-up"
+  }
+});
+adrenalInsufficiencyModule.references.push(...[
+  {
+    "label": "DailyMed Korlym prescribing information: receptor blockade and pregnancy contraindication",
+    "href": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=542f3fae-8bc8-4f00-9228-e4b66c9ad6a9"
+  }
+]);
