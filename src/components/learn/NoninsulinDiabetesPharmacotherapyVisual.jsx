@@ -45,7 +45,7 @@ const diagrams = {
     title: "Preserve the native signal without duplicating GLP-1 therapy",
     columns: [
       ["Preserve", "Block DPP-4", "Extend endogenous GLP-1 and GIP activity with modest glucose lowering"],
-      ["Adjust", "Kidney clearance", "Dose most products by eGFR while linagliptin generally remains unchanged"],
+      ["Adjust", "Kidney clearance", "Match eGFR or creatinine-clearance criteria; linagliptin needs no renal dose adjustment"],
       ["Watch", "Product safety", "Heart failure, pancreatitis, arthralgia, hypersensitivity, and blistering disease"],
     ],
   },
@@ -113,8 +113,8 @@ export default function NoninsulinDiabetesPharmacotherapyVisual({ type }) {
           <div key={label}>
             <span>{String(index + 1).padStart(2, "0")}</span>
             <strong>{label}</strong>
-            <em style={(type === "noninsulin-selection" || type === "noninsulin-metformin" || type === "noninsulin-sglt2" || type === "noninsulin-glp1") ? { fontSize: "14px", lineHeight: 1.55 } : undefined}>{mechanism}</em>
-            <p style={(type === "noninsulin-selection" || type === "noninsulin-metformin" || type === "noninsulin-sglt2" || type === "noninsulin-glp1") ? { fontSize: "14px", lineHeight: 1.65 } : undefined}>{explanation}</p>
+            <em style={(type === "noninsulin-selection" || type === "noninsulin-metformin" || type === "noninsulin-sglt2" || type === "noninsulin-glp1" || type === "noninsulin-dpp4") ? { fontSize: "14px", lineHeight: 1.55 } : undefined}>{mechanism}</em>
+            <p style={(type === "noninsulin-selection" || type === "noninsulin-metformin" || type === "noninsulin-sglt2" || type === "noninsulin-glp1" || type === "noninsulin-dpp4") ? { fontSize: "14px", lineHeight: 1.65 } : undefined}>{explanation}</p>
           </div>
         ))}
       </div>

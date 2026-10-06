@@ -955,3 +955,91 @@ const verifiedGlp1Questions = {
 for (const item of noninsulinDiabetesPharmacotherapyQuestionBank) {
   if (verifiedGlp1Questions[item.id]) Object.assign(item, verifiedGlp1Questions[item.id]);
 }
+
+
+// Focused DPP-4 cases preserve existing IDs, keys, difficulty and anchors.
+const verifiedDpp4Questions = {
+  "noninsulin-diabetes-12-principle": {
+    "question": "Which statement correctly describes DPP-4 inhibition?",
+    "choices": [
+      "It preserves endogenous GLP-1 and GIP activity with modest, generally weight-neutral glucose lowering.",
+      "It directly activates GLP-1 receptors and reliably reproduces high-dose GLP-1 weight loss.",
+      "It causes glucose-independent insulin release with the same intrinsic hypoglycemia risk as a sulfonylurea.",
+      "It blocks renal glucose reabsorption and establishes heart-failure benefit for every product."
+    ],
+    "rationale": "DPP-4 blockade slows endogenous incretin degradation. It is distinct from direct GLP-1 receptor agonism, glucose-independent secretagogue action and renal SGLT2 blockade. Its modest, generally weight-neutral glycemic effect does not establish uniform weight-loss or heart-failure benefit."
+  },
+  "noninsulin-diabetes-12-safety": {
+    "question": "An adult taking Januvia has eGFR 30 mL/min/1.73 m². Which dose follows the cited renal table?",
+    "choices": [
+      "50 mg once daily.",
+      "100 mg once daily because 30 belongs to the usual-dose category.",
+      "25 mg once daily because exactly 30 is below the 30 threshold.",
+      "50 mg after every dialysis session only, regardless of daily scheduling."
+    ],
+    "rationale": "Sitagliptin is 50 mg daily at eGFR at least 30 but below 45. Exactly 30 is included; 100 mg applies at least 45 and 25 mg below 30 or in ESRD. The label specifies daily dosing, not a dialysis-session-only schedule."
+  },
+  "noninsulin-diabetes-12-case": {
+    "question": "An adult needs a modest oral add-on and begins rifampin while taking Tradjenta 5 mg daily. Which response follows its interaction label?",
+    "choices": [
+      "Review an alternative treatment because strong induction can reduce linagliptin effectiveness.",
+      "Increase linagliptin to 10 mg daily to create a labeled inducer-adjusted dose.",
+      "Reduce linagliptin to 2.5 mg daily using saxagliptin’s strong-inhibitor rule.",
+      "Continue without interaction review because no renal dose adjustment means no drug interactions."
+    ],
+    "rationale": "Strong P-glycoprotein or CYP3A4 inducers such as rifampin reduce linagliptin exposure; an alternative is strongly recommended. The label does not provide a 10 mg compensation dose. Saxagliptin’s 2.5 mg rule concerns strong inhibitors, and absence of renal adjustment does not eliminate interactions."
+  },
+  "noninsulin-diabetes-13-principle": {
+    "question": "Which interpretation of the DPP-4 heart-failure warning is correct?",
+    "choices": [
+      "Saxagliptin and alogliptin signals prompted warnings; warnings in other members do not establish identical trial findings or heart-failure benefit.",
+      "Every member has a proven heart-failure treatment indication because glucose lowering improves all outcomes.",
+      "The warning establishes the same increased hospitalization effect size for all four products.",
+      "Prior heart failure is the same universal formal contraindication as serious hypersensitivity to the prescribed product."
+    ],
+    "rationale": "The book highlights saxagliptin and alogliptin signals. Sitagliptin and linagliptin label warnings refer to observations with other members. This warrants product-specific risk assessment; it does not establish uniform effect sizes, heart-failure efficacy or an identical class-wide formal contraindication."
+  },
+  "noninsulin-diabetes-13-application": {
+    "question": "An adult taking Onglyza has eGFR 70 mL/min/1.73 m² and is prescribed clarithromycin. Which dose restriction applies?",
+    "choices": [
+      "Limit saxagliptin to 2.5 mg once daily because clarithromycin is a strong CYP3A4/5 inhibitor.",
+      "Keep 5 mg daily because only eGFR below 45 can require 2.5 mg.",
+      "Increase to 10 mg daily because CYP3A4/5 inhibition reduces exposure.",
+      "Take 5 mg twice daily to separate it from the antibiotic."
+    ],
+    "rationale": "Strong CYP3A4/5 inhibitors such as clarithromycin increase saxagliptin exposure and limit the dose to 2.5 mg daily even with adequate kidney function. Renal dosing is a separate rule; doubling the dose or frequency does not follow the label."
+  },
+  "noninsulin-diabetes-13-safety": {
+    "question": "An adult taking Nesina reports jaundice and dark urine. What is the priority?",
+    "choices": [
+      "Promptly check liver tests and assess possible hepatic injury, with interruption and investigation if clinically significant abnormalities persist or worsen.",
+      "Dismiss the symptoms because renal dose adjustment prevents all hepatic adverse effects.",
+      "Automatically restart after any abnormal result without investigating another explanation.",
+      "Treat the symptoms as proof of drug causation without considering other causes."
+    ],
+    "rationale": "Alogliptin labeling calls for prompt liver testing with jaundice or dark urine. Clinically significant elevations with persistent or worsening abnormalities call for interruption and investigation; restarting requires another explanation. Renal adjustment does not eliminate liver risk, and reported symptoms alone do not prove causation."
+  },
+  "noninsulin-diabetes-13-case": {
+    "question": "An adult taking sitagliptin develops tense bullae and erosions without an obvious contact trigger. Bullous pemphigoid is suspected. Which response is best?",
+    "choices": [
+      "Discontinue sitagliptin, promptly evaluate the eruption and consider dermatology referral.",
+      "Continue unchanged and use moisturizer alone because all blistering is routine dry skin.",
+      "Halve the dose and defer evaluation until the next routine A1C.",
+      "Switch immediately to another DPP-4 inhibitor because the class has no blistering warning."
+    ],
+    "rationale": "Suspected bullous pemphigoid calls for discontinuing the DPP-4 inhibitor and considering dermatology referral for diagnosis and treatment. Moisturizer alone or a dose reduction with delayed evaluation is inadequate; the warning is reported across the class, so an immediate unassessed switch is not a reliable solution."
+  },
+  "noninsulin-diabetes-12-application": {
+    "question": "Which DPP-4 inhibitor kidney-use distinction is correct?",
+    "choices": [
+      "Sitagliptin, saxagliptin, and alogliptin require kidney-based dose adjustment; linagliptin does not require a renal dose adjustment.",
+      "Linagliptin always requires the same renal adjustment as sitagliptin.",
+      "Every DPP-4 inhibitor has identical renal elimination and adjustment rules.",
+      "Renal dose adjustment establishes that the drug is a proven MASH histologic treatment."
+    ],
+    "rationale": "The supplied book differentiates the renal adjustment requirements, and the linagliptin label confirms no renal dosage adjustment. Linagliptin is primarily eliminated through nonrenal pathways. These pharmacokinetic distinctions do not establish a MASH treatment indication."
+  }
+};
+for (const item of noninsulinDiabetesPharmacotherapyQuestionBank) {
+  if (verifiedDpp4Questions[item.id]) Object.assign(item, verifiedDpp4Questions[item.id]);
+}

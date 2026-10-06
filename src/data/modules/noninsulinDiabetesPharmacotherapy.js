@@ -620,3 +620,106 @@ noninsulinDiabetesPharmacotherapyModule.references.push(...[
     "href": "https://www.novo-pi.com/wegovy.pdf"
   }
 ]);
+
+
+// Whole DPP-4 lesson reviewed against the book and exact product labels.
+Object.assign(noninsulinDiabetesPharmacotherapyModule.submodules.find(item => item.slug === "dpp4-inhibitor-pharmacotherapy"), {
+  "slug": "dpp4-inhibitor-pharmacotherapy",
+  "title": "DPP-4 Inhibitors",
+  "visual": "noninsulin-dpp4",
+  "summary": "DPP-4 inhibition prolongs endogenous incretin activity with modest glucose lowering, weight neutrality, low intrinsic hypoglycemia, and important product differences in renal dosing and heart-failure warnings.",
+  "concepts": [
+    "Endogenous GLP-1 and GIP preservation",
+    "Product-specific eGFR and creatinine-clearance dosing",
+    "Saxagliptin inhibitors and linagliptin inducers",
+    "Heart-failure and alogliptin liver warnings",
+    "Pancreatitis, hypersensitivity, arthralgia and blistering disease"
+  ],
+  "application": "Use a DPP-4 inhibitor when an oral, generally well-tolerated, weight-neutral option fits the modest glycemic need, then select by kidney function, heart-failure risk, interactions, and access.",
+  "lesson": [
+    {
+      "heading": "Preserve endogenous incretins",
+      "body": "DPP-4 inhibitors slow the breakdown of endogenous GLP-1 and GIP. These incretins increase glucose-dependent insulin release and reduce glucagon secretion, thereby reducing hepatic glucose production. The book describes an approximate A1C decrease of 0.5-0.8 percentage points, weight neutrality and low intrinsic hypoglycemia risk. Response varies; this is not the weight-loss or outcome profile of a GLP-1 receptor agonist. Low intrinsic hypoglycemia does not mean that a regimen containing insulin or a sulfonylurea is free of that risk."
+    },
+    {
+      "heading": "Match the clinical purpose and combination",
+      "body": "The cited single-agent labels indicate these oral medicines as adjuncts to diet and exercise for glucose control in adults with type 2 diabetes; they are not treatments for type 1 diabetes. A modest oral, weight-neutral option may fit a patient whose glucose needs, tolerability, access and preferences support it. Do not select DPP-4 inhibition to obtain the proven heart-failure or kidney benefits of an outcome-directed alternative. Avoid combining a DPP-4 inhibitor with a GLP-1 receptor agonist: their overlapping incretin mechanisms do not justify routine duplication. Check each component of a combination tablet separately, because the partner medicine can impose additional renal or administration limits."
+    },
+    {
+      "heading": "Dose sitagliptin at the exact eGFR boundary",
+      "body": "Januvia is taken once daily with or without food. Its usual dose is 100 mg daily when eGFR is at least 45 mL/min/1.73 m². At eGFR at least 30 but below 45, use 50 mg daily; below 30, including end-stage renal disease requiring hemodialysis or peritoneal dialysis, use 25 mg daily. Dialysis timing does not determine administration. Assess renal function before initiation and periodically thereafter. An eGFR exactly 45 belongs to the usual-dose category, not the 50 mg category; exactly 30 belongs to the 50 mg category. The book’s abbreviated 30-45 table entry needs these precise label boundaries."
+    },
+    {
+      "heading": "Use linagliptin without a renal dose reduction",
+      "body": "Tradjenta is 5 mg once daily with or without food and requires no renal dose adjustment. Its predominantly nonrenal elimination can simplify dosing during kidney decline, but it does not remove other safety considerations or guarantee efficacy. Strong P-glycoprotein or CYP3A4 inducers, such as rifampin, can reduce linagliptin exposure and effectiveness; the label strongly recommends an alternative treatment. The book also lists carbamazepine, phenytoin and St. John’s wort as strong-inducer concerns. Do not compensate by inventing a higher linagliptin dose or applying saxagliptin’s inhibitor-based 2.5 mg rule."
+    },
+    {
+      "heading": "Separate saxagliptin renal and interaction rules",
+      "body": "Onglyza is 2.5 mg or 5 mg once daily with or without meals. When eGFR is below 45 mL/min/1.73 m², including end-stage renal disease requiring hemodialysis, the dose is 2.5 mg daily; administer after hemodialysis. At eGFR at least 45, the usual dosing options apply unless another restriction requires 2.5 mg. Strong CYP3A4/5 inhibitors, including clarithromycin, itraconazole, ketoconazole, atazanavir and ritonavir, increase exposure and limit the dose to 2.5 mg daily even when renal function is adequate. Assess kidney function before initiation and as clinically indicated. Peritoneal dialysis has not been studied. Do not cut, crush or chew the tablets; after a missed dose, resume with the next dose rather than taking an extra dose."
+    },
+    {
+      "heading": "Dose alogliptin by creatinine clearance",
+      "body": "Nesina is usually 25 mg once daily with or without food when creatinine clearance is at least 60 mL/min. At creatinine clearance at least 30 but below 60, use 12.5 mg daily; below 30, including end-stage renal disease requiring hemodialysis, use 6.25 mg daily. Hemodialysis timing does not determine administration, and peritoneal dialysis has not been studied. Assess renal function before initiation and periodically thereafter. Creatinine clearance is expressed in mL/min, whereas the sitagliptin and saxagliptin eGFR thresholds use mL/min/1.73 m²; do not substitute one threshold or unit for another. Do not split Nesina tablets or double the next dose after a missed dose."
+    },
+    {
+      "heading": "Keep heart-failure warnings product specific",
+      "body": "The book identifies heart-failure hospitalization signals with saxagliptin and alogliptin and notes that warnings extend across the class. The cited sitagliptin and linagliptin labels refer to heart failure observed with two other DPP-4 inhibitors; that wording does not prove an identical trial result for every member. Consider risks and benefits in patients with heart failure or renal impairment, monitor symptoms and counsel patients to report new breathlessness, swelling or other concerning changes promptly. If heart failure develops, evaluate and manage it and consider discontinuing the DPP-4 inhibitor. A safety warning is not evidence of heart-failure benefit, and it is not a universal formal contraindication equivalent to serious product hypersensitivity."
+    },
+    {
+      "heading": "Respond to pancreatitis and renal deterioration",
+      "body": "Pancreatitis has been reported with DPP-4 inhibitors. Severe persistent abdominal pain, sometimes radiating to the back and with or without vomiting, requires prompt assessment; discontinue the suspected medicine when pancreatitis is suspected and initiate appropriate management. The cited labels do not establish whether prior pancreatitis increases recurrence risk during use, so do not describe that history as either risk free or an identical formal contraindication for all products. Sitagliptin also has postmarketing reports of acute renal failure, including some patients with renal impairment who received inappropriate doses. Monitor renal function and match the dose; a report alone does not establish that every episode of kidney injury is drug caused."
+    },
+    {
+      "heading": "Evaluate alogliptin hepatic symptoms",
+      "body": "The book identifies an alogliptin hepatotoxicity warning. The current Nesina label describes fatal and nonfatal hepatic failure reports while noting that some reports lack enough information to establish the cause. Fatigue, poor appetite, right upper abdominal discomfort, dark urine or jaundice warrants prompt liver testing and clinical evaluation. In that setting, clinically significant enzyme elevations with persistent or worsening abnormalities call for interrupting treatment and investigating the cause; do not restart without another explanation for the abnormalities. Do not reduce this warning to routine reassurance or infer a mandatory baseline-test instruction that the cited current label does not state."
+    },
+    {
+      "heading": "Act on serious hypersensitivity",
+      "body": "A history of a serious hypersensitivity reaction to the exact product or its relevant ingredients is a labeled contraindication. Anaphylaxis, angioedema and severe skin reactions have been reported, sometimes after the first dose. If a serious hypersensitivity reaction is suspected, stop the medicine, evaluate other causes and arrange alternative diabetes treatment. A history of angioedema with a different DPP-4 inhibitor requires caution because cross-predisposition is uncertain; do not turn that caution into proof that switching is safe or an identical formal contraindication in every label. Common nasopharyngitis or respiratory symptoms described in the book do not explain away airway swelling or severe skin disease."
+    },
+    {
+      "heading": "Recognize disabling joint pain and blistering disease",
+      "body": "Severe disabling arthralgia can begin from one day to years after starting a DPP-4 inhibitor. Consider the medicine as a possible cause and discontinue it when appropriate; recurrence has been reported after restarting the same or a different member, so switching does not guarantee resolution. Bullous pemphigoid is a separate serious warning: new blisters or erosions require prompt assessment. If bullous pemphigoid is suspected, discontinue the DPP-4 inhibitor and consider dermatology referral for diagnosis and treatment. Do not treat tense bullae as ordinary dry skin or rely on a dose reduction while delaying evaluation."
+    },
+    {
+      "heading": "Reassess the whole regimen",
+      "body": "Track glucose response, A1C, renal function where required, heart-failure symptoms, adverse effects, access and continued need. Adding a DPP-4 inhibitor to insulin or a secretagogue can increase hypoglycemia, so an individualized reduction of the insulin or secretagogue may be needed with monitoring; there is no universal percentage reduction for this class. During disrupted feeding or poor intake, reconcile the whole glucose-lowering regimen rather than assuming that low intrinsic DPP-4 hypoglycemia makes every accompanying medicine safe. Product administration instructions remain specific: do not apply the no-cut/no-crush Onglyza instruction as proof that every other tablet is suitable for crushing or tube delivery. Check the exact formulation and an appropriate administration reference before changing its dosage form."
+    }
+  ],
+  "keyPoints": [
+    "Modest glucose lowering and weight neutrality do not establish cardiorenal outcome benefit.",
+    "Use exact renal thresholds and units; linagliptin requires no renal dose adjustment.",
+    "Strong CYP3A4/5 inhibitors limit saxagliptin to 2.5 mg daily; strong inducers favor an alternative to linagliptin.",
+    "Suspected pancreatitis, serious hypersensitivity or bullous pemphigoid requires stopping the suspected medicine and prompt evaluation."
+  ],
+  "check": {
+    "question": "Which DPP-4 inhibitor generally does not require kidney-based dose adjustment?",
+    "choices": [
+      "Linagliptin",
+      "Sitagliptin",
+      "Alogliptin",
+      "Saxagliptin"
+    ],
+    "answer": 0,
+    "rationale": "Linagliptin is primarily eliminated through nonrenal pathways and generally does not require renal dose adjustment.",
+    "reviewHref": "#dpp4-inhibitor-pharmacotherapy"
+  }
+});
+noninsulinDiabetesPharmacotherapyModule.references.push(...[
+  {
+    "label": "Merck Januvia prescribing information (July 2023)",
+    "href": "https://www.merck.com/product/usa/pi_circulars/j/januvia/januvia_pi.pdf"
+  },
+  {
+    "label": "DailyMed Tradjenta prescribing information (June 2023)",
+    "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c797ea5c-cab7-494b-9044-27eba0cfe40f"
+  },
+  {
+    "label": "FDA Onglyza prescribing information (October 2024)",
+    "href": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2024/022350s026lbl.pdf"
+  },
+  {
+    "label": "DailyMed Nesina prescribing information (February 2025)",
+    "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a3768c7e-aa4c-44d3-bc53-43bb7346c0b0"
+  }
+]);
