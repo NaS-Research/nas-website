@@ -842,3 +842,72 @@ Object.assign(influenzaAntiviralPharmacologyModule.submodules.find((lesson) => l
     "reviewHref": "#baloxavir-administration-safety"
   }
 });
+
+
+// Complete influenza prevention, vaccine timing and reassessment reconciliation.
+Object.assign(influenzaAntiviralPharmacologyModule.submodules.find((lesson) => lesson.slug === "integrated-influenza-system"), {
+  "slug": "integrated-influenza-system",
+  "title": "Close the Influenza Treatment Loop",
+  "visual": "influenza-antiviral-integrated-influenza-system",
+  "summary": "Close the influenza care loop by distinguishing symptomatic treatment from selected prophylaxis, naming the regimen and exposure calendar, coordinating live vaccination and responding to deterioration.",
+  "concepts": [
+    "Treatment versus prevention",
+    "Exposure and outbreak clocks",
+    "Live-vaccine timing",
+    "Deterioration and resistance",
+    "Current evidence and follow-up"
+  ],
+  "application": "Document the treatment or prevention goal, exact product and regimen, relevant dates, delivery checks, warning signs and reassessment owner; update the plan when symptoms, exposures or current guidance change.",
+  "lesson": [
+    {
+      "heading": "Separate treatment and prevention",
+      "body": "A symptomatic patient needs a treatment assessment, not an automatic once-daily prophylaxis regimen. Hospitalized patients, those with severe or progressive illness and high-risk patients should receive appropriate treatment promptly without waiting for influenza test results. Post-exposure prophylaxis is a separate decision for an asymptomatic exposed person. In a noninstitutional setting, IDSA describes selected circumstances such as a very-high-risk household contact when vaccination is contraindicated, unavailable or expected to work poorly; it does not recommend routine prophylaxis for every community contact. Assess age, host risk, vaccine status, drug suitability and the time since exposure. Start selected post-exposure prophylaxis as soon as possible, ideally within 48 hours of exposure. If that window has passed, IDSA advises against starting once-daily neuraminidase-inhibitor prophylaxis and instead arranging rapid full-dose treatment if symptoms develop and treatment is indicated. Education and ready access to early treatment can be an alternative to prophylaxis. Symptoms developing during prophylaxis require testing and a switch to a treatment regimen; IDSA favors an agent with a different resistance profile when appropriate and not contraindicated."
+    },
+    {
+      "heading": "Name the product and prevention calendar",
+      "body": "Do not transfer one antiviral\u2019s frequency or prevention duration to another. For an adult with normal renal function, the Tamiflu label uses oseltamivir 75 mg once daily for at least 10 days after close contact, versus 75 mg twice daily for five days for uncomplicated treatment. Current CDC and IDSA nonoutbreak prophylaxis guidance instead uses seven days after the most recent exposure. State which source and setting govern the plan, and re-evaluate when exposure continues. The Relenza label uses zanamivir 10 mg, two 5 mg inhalations, once daily for 10 days in the household setting from age 5; its adult/adolescent community-outbreak regimen is once daily for 28 days. Those are distinct from its twice-daily five-day treatment course from age 7. Check its airway, milk-protein allergy and device restrictions. Current baloxavir labeling permits a single weight-based post-exposure dose from age 5 within 48 hours of contact; it is not a daily seven-day course. CDC does not recommend intravenous peramivir for chemoprophylaxis because data are lacking. Product age, renal function, delivery and population limits still apply; a prevention goal does not override them."
+    },
+    {
+      "heading": "Use an outbreak clock and surveillance",
+      "body": "A declared institutional outbreak requires an outbreak-control plan and active surveillance. CDC recommends oral oseltamivir or inhaled zanamivir prophylaxis for a minimum of two weeks, continuing up to one week after the last known case is identified; exposed asymptomatic residents are included even if vaccinated. IDSA recommends prophylaxis for exposed asymptomatic residents or patients in the affected unit regardless of vaccination history. Symptomatic residents need prompt treatment assessment rather than being placed only on a prevention dose. Drug selection remains individual: the Relenza label states prophylaxis efficacy in nursing homes has not been proven, while CDC includes inhaled zanamivir in outbreak guidance, so document the setting and source rather than treating this as a universal label claim. For a calendar example, start on Day 1 and use a plan with both a minimum through Day 14 and seven days after the last identified case. If that case is identified on Day 10, the later endpoint is max(14, 10 + 7) = Day 17. A newer case requires a new endpoint review. This example illustrates the selected outbreak plan, not a standing prescription; reconcile ongoing exposure, actual dates, local public-health direction and clinical suitability."
+    },
+    {
+      "heading": "Coordinate live-vaccine timing",
+      "body": "Antivirals may inhibit replication of the live attenuated influenza vaccine, LAIV, and reduce its effectiveness. CDC advises against giving LAIV when oseltamivir or zanamivir was administered in the preceding 48 hours, peramivir in the preceding five days, or baloxavir in the preceding 17 days. These look-back intervals are agent-specific. If an antiviral is given within two weeks after LAIV, CDC advises revaccination with another appropriate influenza vaccine, such as an inactivated or recombinant product. A patient needing urgent antiviral treatment should receive appropriate care promptly; do not withhold needed treatment merely to protect a vaccine interval. Arrange the vaccine follow-up. Inactivated vaccine does not rely on replication of live vaccine virus, but the Xofluza label states that its interactions with inactivated influenza vaccines have not been evaluated. Avoid turning this evidence gap into a claim of proven absence of every interaction. Vaccination remains central to prevention and is not replaced by antiviral prophylaxis."
+    },
+    {
+      "heading": "Audit worsening illness urgently",
+      "body": "New fever, hypoxemia and focal chest findings after initial improvement raise concern for secondary bacterial pneumonia and require urgent assessment. IDSA recommends investigating and empirically treating bacterial coinfection in patients who deteriorate after initial improvement, as well as those initially presenting with severe disease such as extensive pneumonia, respiratory failure or hypotension. Continue to address the influenza treatment plan and the appropriate level of care. In a patient without improvement after three to five days of antiviral treatment, consider investigating bacterial coinfection; this is not an instruction to wait several days when red flags appear earlier. Evaluate oxygenation, hemodynamics, pneumonia and other complications. Automatic repeat baloxavir, an assumption of resistance or dismissal because the antiviral course has ended can all delay needed care."
+    },
+    {
+      "heading": "Reassess infection and delivery together",
+      "body": "A positive SARS-CoV-2 result does not exclude influenza, and a positive influenza result does not exclude COVID-19. During co-circulation, assess possible coinfection without delaying empiric influenza treatment in priority groups while awaiting results. Also review adherence, absorption and the actual delivered dose: a feeding-tube problem, incorrect inhaler use or cation exposure with baloxavir can undermine a plan. Recheck organ function and the exact drug\u2019s dosing instructions when renal status changes. Review illness severity, immune status and whether the chosen route still works. Intravenous administration does not by itself establish treatment superiority or a prophylaxis indication. Do not replace this assessment with automatic higher doses or another single dose."
+    },
+    {
+      "heading": "Investigate selected resistance concerns",
+      "body": "Deterioration or persistent cough alone does not establish antiviral resistance. IDSA recommends considering neuraminidase-inhibitor resistance testing in selected circumstances, including an immunocompromised patient who remains ill with persistent viral replication, for example a positive RT-PCR or culture after seven to ten days, during or after treatment. Severe illness that fails to improve with persistent replication, laboratory-confirmed influenza arising during or immediately after neuraminidase-inhibitor prophylaxis, or inadvertent subtherapeutic dosing are other situations to assess. A positive result in this context supports considering testing; it does not prove a resistance mutation before testing. Consult infectious-disease and public-health expertise as appropriate. These neuraminidase-inhibitor recommendations do not establish an automatic baloxavir repeat-dose or resistance-testing rule. Use current CDC and WHO susceptibility surveillance; the older adamantanes remain unrecommended because circulating influenza A viruses have widespread resistance."
+    },
+    {
+      "heading": "Use current evidence and assign follow-up",
+      "body": "The educational framework supports verification and clinical reasoning; it is not a patient-specific standing prescription. Reconcile the book\u2019s historical statements with current FDA labeling, CDC seasonal guidance, IDSA recommendations and local outbreak advice. Name any label-versus-guideline difference rather than silently combining them. Record the chosen goal, drug, dose, route, start date, last exposure or outbreak case, planned endpoint and follow-up owner. Give clear instructions for new symptoms, worsening breathing, serious reactions or delivery failure, and update the plan when the context changes. Keep annual vaccination and infection-control measures in the prevention plan. Neither prophylaxis nor completion of an antiviral course removes the need for reassessment or current susceptibility information."
+    }
+  ],
+  "keyPoints": [
+    "Symptomatic treatment and selected asymptomatic prophylaxis use different decisions, frequencies and clocks.",
+    "Distinguish FDA label durations, nonoutbreak guidance and institutional outbreak endpoints.",
+    "CDC LAIV look-backs are 48 hours for oseltamivir/zanamivir, five days for peramivir and 17 days for baloxavir.",
+    "Act promptly on deterioration; investigate coinfection, delivery and selected resistance concerns using current evidence."
+  ],
+  "check": {
+    "question": "A treated patient develops new fever, hypoxemia, and focal crackles. What is the priority?",
+    "choices": [
+      "Evaluate urgently for secondary bacterial pneumonia",
+      "Repeat baloxavir automatically",
+      "Assume resistance without reassessment",
+      "Ignore the change because treatment ended"
+    ],
+    "answer": 0,
+    "rationale": "New fever, hypoxemia and focal crackles require urgent assessment for secondary bacterial pneumonia and the appropriate level of care. IDSA recommends investigating and empirically treating bacterial coinfection when a patient deteriorates after initial improvement. Repeating baloxavir automatically does not treat a bacterial complication; resistance is not established without reassessment, and finishing an antiviral course does not make new warning signs safe to ignore.",
+    "reviewHref": "#integrated-influenza-system"
+  }
+});

@@ -2651,3 +2651,262 @@ for (const [id, updates] of Object.entries({
 })) {
   Object.assign(influenzaAntiviralPharmacologyQuestionBank.find((question) => question.id === id), updates);
 }
+
+
+// Whole integrated influenza questions retain stable IDs and keyed indices.
+for (const [id, updates] of Object.entries({
+  "influenza-antiviral-pharmacology-161": {
+    "id": "influenza-antiviral-pharmacology-161",
+    "lesson": "integrated-influenza-system",
+    "question": "An asymptomatic household contact is very highly immunocompromised and expected to respond poorly to vaccination. What is the appropriate prevention assessment?",
+    "choices": [
+      "Consider prompt post-exposure prophylaxis after checking exposure timing, age and drug suitability",
+      "Give prophylaxis to every community contact without a risk or timing assessment",
+      "Wait for symptomatic influenza and then use only a once-daily prevention dose",
+      "Treat vaccination history as sufficient to rule out any prevention assessment"
+    ],
+    "answer": 0,
+    "rationale": "IDSA permits considering prophylaxis in selected very-high-risk household contacts, with timing and drug suitability checks. It does not support universal community prophylaxis. New symptoms need a treatment assessment, and vaccination does not guarantee adequate protection in this host.",
+    "reviewHref": "#integrated-influenza-system"
+  },
+  "influenza-antiviral-pharmacology-162": {
+    "id": "influenza-antiviral-pharmacology-162",
+    "lesson": "integrated-influenza-system",
+    "question": "According to the Tamiflu label, what post-exposure regimen applies to an adult with normal renal function after close contact?",
+    "choices": [
+      "75 mg once daily for at least 10 days, started within 48 hours of close contact",
+      "75 mg twice daily for five days as the labeled prevention course",
+      "One 75 mg dose with no further scheduled doses",
+      "75 mg once daily for seven days as the label\u2019s stated close-contact duration"
+    ],
+    "answer": 0,
+    "rationale": "The label uses 75 mg daily for at least 10 days after close contact, initiated within 48 hours. Twice daily for five days is uncomplicated treatment; one dose is not this regimen. Seven days after the last exposure is current CDC/IDSA nonoutbreak guidance, not the label\u2019s stated duration. Identify the source and setting.",
+    "reviewHref": "#integrated-influenza-system"
+  },
+  "influenza-antiviral-pharmacology-163": {
+    "id": "influenza-antiviral-pharmacology-163",
+    "lesson": "integrated-influenza-system",
+    "question": "An asymptomatic contact is first assessed more than 48 hours after a completed exposure. What does IDSA advise about once-daily neuraminidase-inhibitor prophylaxis?",
+    "choices": [
+      "Do not start it late; arrange prompt full-dose treatment if symptoms develop and treatment is indicated",
+      "Start it at any time because exposure timing has no role",
+      "Use a twice-daily prevention course indefinitely even while asymptomatic",
+      "Wait for severe respiratory failure before offering treatment if symptoms develop"
+    ],
+    "answer": 0,
+    "rationale": "IDSA advises against starting once-daily prophylaxis after the 48-hour window and supports ready access to full-dose treatment if symptoms develop and treatment is indicated. Timing is relevant; indefinite twice-daily prevention is not the advised alternative, and waiting for respiratory failure delays care.",
+    "reviewHref": "#integrated-influenza-system"
+  },
+  "influenza-antiviral-pharmacology-164": {
+    "id": "influenza-antiviral-pharmacology-164",
+    "lesson": "integrated-influenza-system",
+    "question": "An exposed patient develops influenza symptoms while receiving neuraminidase-inhibitor prophylaxis. What is the appropriate next step?",
+    "choices": [
+      "Test and switch to a treatment regimen, considering an agent with a different resistance profile when appropriate",
+      "Continue only the same prevention dose because symptoms cannot occur during prophylaxis",
+      "Stop all assessment because prophylaxis proves influenza is excluded",
+      "Add an automatic baloxavir repeat dose without assessing suitability"
+    ],
+    "answer": 0,
+    "rationale": "IDSA recommends testing and switching to treatment dosing, favoring a different resistance profile when suitable and not contraindicated. Prophylaxis neither excludes influenza nor makes a prevention dose sufficient for symptomatic disease. An automatic repeat baloxavir dose bypasses the needed assessment.",
+    "reviewHref": "#integrated-influenza-system"
+  },
+  "influenza-antiviral-pharmacology-165": {
+    "id": "influenza-antiviral-pharmacology-165",
+    "lesson": "integrated-influenza-system",
+    "question": "Why can influenza antivirals reduce the effectiveness of LAIV?",
+    "choices": [
+      "They may inhibit replication of the live vaccine virus",
+      "They always increase live vaccine-virus replication",
+      "LAIV works through renal elimination of the antiviral",
+      "Every inactivated vaccine also requires live-virus replication"
+    ],
+    "answer": 0,
+    "rationale": "LAIV relies on live attenuated virus; antiviral inhibition of replication can reduce effectiveness. Increased replication and renal clearance are not the described mechanism. Inactivated vaccine does not depend on live vaccine-virus replication, and unevaluated product interactions should remain qualified.",
+    "reviewHref": "#integrated-influenza-system"
+  },
+  "influenza-antiviral-pharmacology-166": {
+    "id": "influenza-antiviral-pharmacology-166",
+    "lesson": "integrated-influenza-system",
+    "question": "A patient received peramivir three days ago and is scheduled for LAIV today. What is CDC\u2019s relevant look-back interval?",
+    "choices": [
+      "Five days, so this recent peramivir exposure prevents LAIV today",
+      "48 hours, so this exposure is already outside the peramivir interval",
+      "17 days, the peramivir-specific interval",
+      "No interval applies because peramivir is intravenous"
+    ],
+    "answer": 0,
+    "rationale": "CDC specifies five days for peramivir, making three days too recent for LAIV. Forty-eight hours applies to oseltamivir/zanamivir and 17 days to baloxavir. The intravenous route does not remove live-vaccine interference.",
+    "reviewHref": "#integrated-influenza-system"
+  },
+  "influenza-antiviral-pharmacology-167": {
+    "id": "influenza-antiviral-pharmacology-167",
+    "lesson": "integrated-influenza-system",
+    "question": "A patient received baloxavir 10 days ago and is scheduled for LAIV today. What is CDC\u2019s timing conclusion?",
+    "choices": [
+      "It remains within the 17-day look-back, so do not give LAIV today",
+      "It is outside a five-day baloxavir interval, so timing is acceptable",
+      "It is outside a 48-hour baloxavir interval, so timing is acceptable",
+      "A single dose cannot affect a live vaccine given later"
+    ],
+    "answer": 0,
+    "rationale": "CDC\u2019s baloxavir look-back is 17 days, and 10 days remains within it. Five days and 48 hours belong to other antivirals; single-dose frequency does not remove prolonged vaccine interference. Assess another appropriate vaccine or a later LAIV date.",
+    "reviewHref": "#integrated-influenza-system"
+  },
+  "influenza-antiviral-pharmacology-168": {
+    "id": "influenza-antiviral-pharmacology-168",
+    "lesson": "integrated-influenza-system",
+    "question": "A priority-treatment patient received LAIV last week and now has suspected influenza. How should the vaccine issue affect needed antiviral care?",
+    "choices": [
+      "Treat promptly and arrange appropriate revaccination because antiviral use within two weeks after LAIV may reduce effectiveness",
+      "Withhold all needed antiviral treatment until two weeks after vaccination",
+      "Assume LAIV eliminates the possibility of influenza and stop assessment",
+      "Give a second LAIV dose simultaneously with the antiviral to guarantee effectiveness"
+    ],
+    "answer": 0,
+    "rationale": "Needed influenza treatment should proceed promptly. CDC advises appropriate revaccination, for example with an inactivated or recombinant product, when an antiviral is given within two weeks after LAIV. Withholding care is unsafe, vaccination does not exclude illness, and simultaneous repeat LAIV does not guarantee replication or effectiveness.",
+    "reviewHref": "#integrated-influenza-system"
+  },
+  "influenza-antiviral-pharmacology-169": {
+    "id": "influenza-antiviral-pharmacology-169",
+    "lesson": "integrated-influenza-system",
+    "question": "A patient has not improved after four days of influenza antiviral treatment. What additional assessment does IDSA say to consider?",
+    "choices": [
+      "Investigate bacterial coinfection while reassessing other causes and treatment delivery",
+      "Conclude that antiviral resistance is proved by the elapsed time alone",
+      "Ignore the course because an antiviral prevents every bacterial complication",
+      "Wait for a fixed five-day threshold even if urgent respiratory signs appear earlier"
+    ],
+    "answer": 0,
+    "rationale": "IDSA says bacterial coinfection investigation can be considered after three to five days without improvement, alongside broader reassessment. This does not prove resistance or guarantee prevention of bacterial disease. Urgent warning signs require earlier action; the interval is not a mandatory waiting period.",
+    "reviewHref": "#integrated-influenza-system"
+  },
+  "influenza-antiviral-pharmacology-170": {
+    "id": "influenza-antiviral-pharmacology-170",
+    "lesson": "integrated-influenza-system",
+    "question": "During influenza and SARS-CoV-2 co-circulation, a high-risk patient tests positive for SARS-CoV-2 but also has suspected influenza. What is the appropriate influenza approach?",
+    "choices": [
+      "Do not exclude coinfection; start indicated empiric influenza treatment promptly without waiting for influenza results",
+      "Rule out influenza solely because the SARS-CoV-2 test is positive",
+      "Delay priority influenza treatment until every test is finalized",
+      "Use only an asymptomatic influenza prevention regimen for the symptomatic patient"
+    ],
+    "answer": 0,
+    "rationale": "A positive SARS-CoV-2 result does not exclude influenza coinfection. CDC advises prompt empiric treatment of suspected influenza in priority groups without waiting for results. The positive test alone cannot rule influenza out; delay and substituting prophylaxis for symptomatic treatment miss that priority.",
+    "reviewHref": "#integrated-influenza-system"
+  },
+  "influenza-antiviral-pharmacology-171": {
+    "id": "influenza-antiviral-pharmacology-171",
+    "lesson": "integrated-influenza-system",
+    "question": "A treated patient worsens while renal function changes and feeding-tube delivery becomes unreliable. What is the appropriate medication assessment?",
+    "choices": [
+      "Recheck the actual delivered dose, absorption, route and drug-specific renal instructions alongside clinical reassessment",
+      "Automatically double every influenza antiviral dose",
+      "Assume a prescription guarantees complete administration through any tube",
+      "Ignore renal changes because all influenza antivirals share one adjustment rule"
+    ],
+    "answer": 0,
+    "rationale": "Changing renal function and unreliable delivery require product-specific dose and administration review with illness reassessment. Routine dose doubling is not the response; an order does not prove delivery. Renal instructions differ by drug rather than following one class-wide rule.",
+    "reviewHref": "#integrated-influenza-system"
+  },
+  "influenza-antiviral-pharmacology-172": {
+    "id": "influenza-antiviral-pharmacology-172",
+    "lesson": "integrated-influenza-system",
+    "question": "An immunocompromised patient remains ill after eight days of neuraminidase-inhibitor treatment with persistent positive influenza RT-PCR. What resistance conclusion follows from IDSA guidance?",
+    "choices": [
+      "Consider neuraminidase-inhibitor resistance testing; the clinical and replication findings do not by themselves prove a mutation",
+      "A resistance mutation is already proved and testing cannot add information",
+      "Resistance is impossible after eight days of treatment",
+      "Every residual cough in any patient requires the same resistance-testing decision"
+    ],
+    "answer": 0,
+    "rationale": "IDSA includes a persistently ill immunocompromised patient with ongoing viral replication after roughly seven to ten days among situations in which resistance testing can be considered. This is a selected assessment, not proof of a mutation, exclusion of resistance or a universal rule for residual cough.",
+    "reviewHref": "#integrated-influenza-system"
+  },
+  "influenza-antiviral-pharmacology-173": {
+    "id": "influenza-antiviral-pharmacology-173",
+    "lesson": "integrated-influenza-system",
+    "question": "In an affected long-term-care unit with a declared influenza outbreak, does prior vaccination exclude an exposed asymptomatic resident from prophylaxis assessment?",
+    "choices": [
+      "No; outbreak guidance includes exposed asymptomatic residents regardless of vaccination history",
+      "Yes; any vaccination guarantees protection throughout an outbreak",
+      "No; therefore symptomatic residents should receive only prevention dosing",
+      "Yes; only unvaccinated staff can ever receive outbreak prophylaxis"
+    ],
+    "answer": 0,
+    "rationale": "CDC/IDSA outbreak guidance includes exposed asymptomatic residents even when vaccinated. Vaccination is not a guarantee. Symptomatic illness needs treatment assessment, and limiting outbreak prevention to unvaccinated staff misstates resident guidance; drug selection still needs individual suitability checks.",
+    "reviewHref": "#integrated-influenza-system"
+  },
+  "influenza-antiviral-pharmacology-174": {
+    "id": "influenza-antiviral-pharmacology-174",
+    "lesson": "integrated-influenza-system",
+    "question": "An outbreak plan starts on Day 1, requires coverage through at least Day 14 and seven days after the last identified case. The last case is identified on Day 10. With no newer case, what is the later planned endpoint?",
+    "choices": [
+      "Day 17",
+      "Day 14",
+      "Day 10",
+      "Day 7"
+    ],
+    "answer": 0,
+    "rationale": "Compare the two endpoints: Day 14 versus Day 10 + 7 = Day 17. The later is Day 17. Day 14 misses the selected post-case interval; Day 10 ends at the case, and Day 7 misses the minimum. A newer case requires recalculation. This is a calendar example within the specified outbreak plan, not a standing prescription.",
+    "reviewHref": "#integrated-influenza-system"
+  },
+  "influenza-antiviral-pharmacology-175": {
+    "id": "influenza-antiviral-pharmacology-175",
+    "lesson": "integrated-influenza-system",
+    "question": "Why should an older book\u2019s mention of adamantanes not be converted into a current seasonal influenza recommendation?",
+    "choices": [
+      "CDC does not recommend them because circulating influenza A viruses have widespread resistance",
+      "A historical drug listing guarantees current susceptibility",
+      "Adamantanes now treat influenza A and B regardless of resistance",
+      "Original regulatory approval permanently establishes seasonal clinical preference"
+    ],
+    "answer": 0,
+    "rationale": "Current susceptibility matters: CDC does not recommend adamantanes because circulating influenza A viruses have widespread resistance. A historical listing or original approval does not establish current effectiveness or preference, and these drugs are not a resistance-independent treatment for both influenza A and B.",
+    "reviewHref": "#integrated-influenza-system"
+  },
+  "influenza-antiviral-pharmacology-176": {
+    "id": "influenza-antiviral-pharmacology-176",
+    "lesson": "integrated-influenza-system",
+    "question": "A clinician asks whether intravenous peramivir is a recommended chemoprophylaxis option. What does the CDC summary support?",
+    "choices": [
+      "It is not recommended for chemoprophylaxis because data are lacking",
+      "Every influenza antiviral automatically shares a prevention indication",
+      "The intravenous route establishes prevention superiority without evidence",
+      "The single-dose treatment regimen proves a seven-day daily prophylaxis regimen"
+    ],
+    "answer": 0,
+    "rationale": "CDC does not recommend peramivir chemoprophylaxis because supporting data are lacking. An influenza treatment indication, intravenous route or single-dose treatment regimen does not establish a prevention indication, superiority or a daily seven-day prevention schedule.",
+    "reviewHref": "#integrated-influenza-system"
+  },
+  "influenza-antiviral-pharmacology-191": {
+    "id": "influenza-antiviral-pharmacology-191",
+    "lesson": "integrated-influenza-system",
+    "question": "A patient improves, then develops new fever, hypoxemia, and focal crackles. What is the priority?",
+    "choices": [
+      "Evaluate urgently for secondary bacterial pneumonia",
+      "Repeat baloxavir automatically",
+      "Assume antiviral resistance only",
+      "Ignore symptoms because treatment was completed"
+    ],
+    "answer": 0,
+    "rationale": "A biphasic course with new fever, hypoxemia and focal crackles requires urgent assessment for secondary bacterial pneumonia and the appropriate level of care. IDSA recommends investigating and empirically treating bacterial coinfection when illness deteriorates after initial improvement. Automatic repeat baloxavir does not address a bacterial complication. Resistance alone is not established, and completion of an antiviral course does not make new warning signs safe to ignore.",
+    "reviewHref": "#integrated-influenza-system"
+  },
+  "influenza-antiviral-pharmacology-192": {
+    "id": "influenza-antiviral-pharmacology-192",
+    "lesson": "integrated-influenza-system",
+    "question": "What is the correct educational boundary for this module?",
+    "choices": [
+      "Use it to structure verification, then apply current seasonal guidance and patient-specific judgment",
+      "Use each regimen as a standing prescription",
+      "Ignore current susceptibility data",
+      "Replace vaccination with prophylaxis"
+    ],
+    "answer": 0,
+    "rationale": "Use the module to structure verification, then apply current seasonal guidance and patient-specific clinical judgment. An educational regimen is not a standing prescription; current susceptibility data can change treatment choices. Antiviral prophylaxis is an adjunct to prevention rather than a replacement for annual vaccination. Source, setting, age, host, dosing and follow-up all remain patient-specific checks.",
+    "reviewHref": "#integrated-influenza-system"
+  }
+})) {
+  Object.assign(influenzaAntiviralPharmacologyQuestionBank.find((question) => question.id === id), updates);
+}
