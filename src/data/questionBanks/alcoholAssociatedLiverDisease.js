@@ -406,3 +406,131 @@ const verifiedAldDiagnosisQuestions = {
 for (const item of alcoholAssociatedLiverDiseaseQuestionBank) {
   if (verifiedAldDiagnosisQuestions[item.id]) Object.assign(item, verifiedAldDiagnosisQuestions[item.id]);
 }
+
+
+// Distinct steroid and response cases retain stable IDs, keys and lesson anchors.
+const verifiedAldSteroidQuestions = {
+  "alcohol-associated-liver-disease-077": {
+    "question": "An adult with a compatible severe-AH diagnosis has an original MELD score of 52. A learner assumes that greater severity guarantees greater corticosteroid benefit. Which correction best matches the 2024 ACG guideline?",
+    "choices": [
+      "MELD above 50 warrants careful specialist risk-benefit assessment; greater severity does not guarantee greater steroid benefit.",
+      "Double the usual corticosteroid dose because benefit always increases with MELD.",
+      "The score of 52 makes contraindication screening unnecessary.",
+      "A MELD of 52 is below the severe-AH threshold."
+    ],
+    "rationale": "ACG defines severe AH with original MELD greater than 20, identifies the greatest corticosteroid benefit in the 25 to 39 range and urges careful risk-benefit consideration above 50. A score of 52 signals very severe illness, not guaranteed benefit, automatic dose escalation or removal of eligibility assessment."
+  },
+  "alcohol-associated-liver-disease-078": {
+    "question": "For a patient being evaluated for AH, patient PT is 18 seconds, laboratory control PT 12 seconds and total bilirubin 12 mg/dL. Using modified Maddrey DF = 4.6 × (patient PT − control PT) + bilirubin, what is the result?",
+    "choices": [
+      "39.6.",
+      "27.6.",
+      "94.8.",
+      "18.0."
+    ],
+    "rationale": "The PT difference is 18 − 12 = 6 seconds. Multiply by 4.6 to obtain 27.6, then add bilirubin 12 mg/dL: mDF = 39.6. Omitting bilirubin gives 27.6; using patient PT without subtracting the control gives 94.8. The result exceeds the historical threshold of at least 32, but does not prove the diagnosis or establish steroid eligibility by itself."
+  },
+  "alcohol-associated-liver-disease-079": {
+    "question": "A proposed mDF calculation uses INR in place of the PT difference because the laboratory control PT is missing. Which response is best?",
+    "choices": [
+      "Obtain the appropriate laboratory control PT and confirm patient PT in seconds and bilirubin in mg/dL before calculating.",
+      "Use INR directly because it is numerically interchangeable with seconds.",
+      "Set the missing control PT to zero without checking the laboratory.",
+      "Omit bilirubin and label the result a complete mDF."
+    ],
+    "rationale": "Modified Maddrey DF uses 4.6 × (patient PT − laboratory control PT) + total bilirubin, with PT in seconds and bilirubin in mg/dL. INR cannot be substituted numerically for the PT difference. A missing input should be obtained or clarified rather than invented; leaving out bilirubin produces a different, incomplete calculation."
+  },
+  "alcohol-associated-liver-disease-080": {
+    "question": "An adult with severe AH is eligible for corticosteroids, can take oral medication and has a documented early response-review plan. Which oral regimen is described in the 2024 ACG guidance?",
+    "choices": [
+      "Prednisolone 40 mg daily with a planned four-week course if response and safety permit.",
+      "Prednisolone 40 mg once weekly without interim assessment.",
+      "Prednisolone indefinitely after one dose, regardless of response.",
+      "Pentoxifylline as the guideline-recommended equivalent substitute."
+    ],
+    "rationale": "Prednisolone 40 mg/day for four weeks is the commonly studied oral regimen. ACG also describes prednisone 40 mg/day, while generally favoring the more extensively studied prednisolone. Nonresponse or a new contraindication can change the plan, and pentoxifylline is not recommended for severe AH."
+  },
+  "alcohol-associated-liver-disease-081": {
+    "question": "An otherwise eligible adult with severe AH cannot take oral medication. Which alternative drug-dose-route combination does ACG describe?",
+    "choices": [
+      "Methylprednisolone 32 mg IV daily within the specialist treatment plan.",
+      "Methylprednisolone 40 mg IV daily solely by copying the oral prednisolone dose.",
+      "Prednisolone 40 mg orally despite inability to use the oral route.",
+      "An oral supplement as an interchangeable steroid preparation."
+    ],
+    "rationale": "ACG describes IV methylprednisolone 32 mg/day for patients unable to take oral medication. The exact drug, route and order must be verified. Copying the oral prednisolone dose into an IV methylprednisolone order without review is not the specified alternative; oral medication or a supplement does not address this route requirement."
+  },
+  "alcohol-associated-liver-disease-082": {
+    "question": "A patient with severe AH has active, untreated hepatitis B infection. What does the ACG corticosteroid eligibility framework require?",
+    "choices": [
+      "Address the untreated infection and obtain specialist reassessment before starting the AH corticosteroid course.",
+      "Start corticosteroids automatically because any high MELD overrides untreated infection.",
+      "Ignore hepatitis B because only bacterial infections affect steroid eligibility.",
+      "Treat all patients with any past hepatitis B exposure as permanently ineligible, regardless of current status."
+    ],
+    "rationale": "ACG lists active infection, including untreated hepatitis B infection, among contraindications to corticosteroids in AH. Current infection status and its management require specialist review. Severity does not override the hazard, and this statement is not a permanent exclusion based on any historical exposure alone."
+  },
+  "alcohol-associated-liver-disease-083": {
+    "question": "A patient with severe AH has uncontrolled diabetes and ongoing gastrointestinal bleeding. The proposed steroid plan cites only an elevated mDF. Which action is best?",
+    "choices": [
+      "Manage the unresolved hazards and reassess corticosteroid eligibility with the liver team.",
+      "Start corticosteroids immediately because mDF overrides every contraindication.",
+      "Ignore glucose and bleeding once a severity score is available.",
+      "Increase steroid exposure to treat the bleeding directly."
+    ],
+    "rationale": "Uncontrolled diabetes and gastrointestinal bleeding are contraindications in the ACG AH corticosteroid framework. Control or address these problems and reassess the complete clinical state. A severity score alone does not establish eligibility, and steroids do not substitute for urgent bleeding management."
+  },
+  "alcohol-associated-liver-disease-084": {
+    "question": "Before starting an eligible severe-AH corticosteroid course, the team asks when to assess Lille response. Which plan matches ACG guidance?",
+    "choices": [
+      "Arrange the corresponding Lille assessment at treatment day 4 or day 7 using verified baseline and follow-up data.",
+      "Calculate one pretreatment Lille score and omit all follow-up bilirubin measurements.",
+      "Wait until day 28 before evaluating treatment response for the first time.",
+      "Use any isolated bilirubin result without confirming treatment timing or the other inputs."
+    ],
+    "rationale": "Lille is a dynamic response assessment after corticosteroids begin. ACG supports assessment at day 4 or day 7. Verify the timing, baseline and follow-up bilirubin, other required inputs and calculator units, and assign someone to act on the result. A pretreatment score or isolated value cannot replace the intended response review."
+  },
+  "alcohol-associated-liver-disease-085": {
+    "question": "An AH patient has a verified day-7 Lille score of 0.58. Which action follows ACG key concept 27?",
+    "choices": [
+      "Stop the AH corticosteroid course for nonresponse while continuing specialist and supportive care.",
+      "Continue automatically to day 28 because every started course must be completed.",
+      "Double the steroid dose until the Lille score becomes zero.",
+      "End nutrition, infection surveillance and AUD care when steroids stop."
+    ],
+    "rationale": "A Lille score greater than 0.45 identifies nonresponse in ACG key concept 27 and supports discontinuing corticosteroids. The supplied value 0.58 clearly exceeds that cutoff. Stopping an ineffective course does not end nutrition, infection management, organ support, AUD care or specialist assessment."
+  },
+  "alcohol-associated-liver-disease-086": {
+    "question": "A report displays a Lille score of 0.45 rounded to two decimal places. Guideline materials differ at the exact boundary. Which response is most appropriate?",
+    "choices": [
+      "Verify the unrounded score, calculation and applicable liver-team protocol before making the boundary decision.",
+      "Declare definite response solely because the displayed number is not above 0.45.",
+      "Declare definite nonresponse solely from the rounded display without checking its underlying value.",
+      "Ignore the score and continue indefinitely without reassessment."
+    ],
+    "rationale": "ACG key concept 27 and its official highlights use greater than 0.45, while some diagrams and earlier guidance use at least 0.45. A rounded display can obscure which side of the boundary the calculated result occupies. Verify the complete calculation and local specialist protocol rather than forcing a treatment decision from the rounded display alone."
+  },
+  "alcohol-associated-liver-disease-087": {
+    "question": "A patient had a favorable day-4 Lille score of 0.19 but develops new gastrointestinal bleeding during the AH steroid course. What is the best approach?",
+    "choices": [
+      "Urgently assess and manage the bleeding and reconsider continued corticosteroid eligibility, despite the earlier response.",
+      "Continue automatically because the earlier Lille score guarantees steroid safety.",
+      "Ignore bleeding until the planned four-week course ends.",
+      "Use the favorable Lille score to exclude every new complication."
+    ],
+    "rationale": "A favorable response score does not remove a new contraindication or guarantee safety. Gastrointestinal bleeding requires urgent assessment and management, with reconsideration of the AH steroid plan. Continue the rest of the appropriate care while the liver team reviews the evolving condition."
+  },
+  "alcohol-associated-liver-disease-088": {
+    "question": "A patient is a corticosteroid nonresponder in severe AH. A handoff proposes pentoxifylline as a proven salvage replacement. Which correction best matches ACG guidance?",
+    "choices": [
+      "Pentoxifylline is not recommended; continue appropriate support and specialist assessment of further options.",
+      "Pentoxifylline is a proven salvage therapy for every steroid nonresponder.",
+      "Stop all nutrition and AUD care because no steroid response means no further care is useful.",
+      "Guarantee transplant solely from the Lille score without evaluating eligibility."
+    ],
+    "rationale": "ACG recommends against pentoxifylline for severe AH and describes lack of efficacy as steroid-nonresponse salvage. Ongoing nutrition, AUD treatment, infection management and organ support remain necessary. Specialists may assess appropriate trials and early transplant evaluation for highly selected patients; neither nonresponse nor one score guarantees transplant eligibility."
+  }
+};
+for (const item of alcoholAssociatedLiverDiseaseQuestionBank) {
+  if (verifiedAldSteroidQuestions[item.id]) Object.assign(item, verifiedAldSteroidQuestions[item.id]);
+}

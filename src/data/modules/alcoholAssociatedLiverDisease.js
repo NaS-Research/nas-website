@@ -403,3 +403,84 @@ alcoholAssociatedLiverDiseaseModule.references.push(...[
     "href": "https://doi.org/10.1002/hep.30866"
   }
 ]);
+
+
+// Source-reconciled steroid eligibility, regimens and timed AH response review.
+const verifiedAldSteroidLesson = {
+  "metadata": {
+    "summary": "Select corticosteroids for eligible severe AH, verify the regimen, reassess with Lille on day 4 or 7, and stop ineffective or unsafe exposure.",
+    "concepts": [
+      "Original MELD and modified Maddrey DF",
+      "Eligibility and regimen",
+      "Ongoing safety",
+      "Timed Lille response",
+      "Course completion and continuing care"
+    ],
+    "application": "Calculate mDF with verified inputs, identify unresolved contraindications, and assign the response and safety reviews before treatment begins.",
+    "keyPoints": [
+      "Severity and eligibility require separate assessment.",
+      "mDF uses PT minus laboratory control PT and bilirubin in mg/dL.",
+      "Lille is a timed treatment-response assessment.",
+      "Nonresponse and new serious hazards require action."
+    ]
+  },
+  "bodies": [
+    {
+      "heading": "Establish the syndrome and estimate severity",
+      "body": "Confirm a compatible alcohol-associated hepatitis (AH) syndrome and evaluate competing causes before using a prognostic score to select treatment. The 2024 ACG guideline uses original MELD greater than 20 to define severe AH; the score alone does not establish the cause or corticosteroid eligibility. Benefit is not a simple function of increasing severity. ACG identifies the greatest corticosteroid benefit in the MELD 25 to 39 range and calls for careful risk-benefit review above 50. Very severe illness warrants urgent multidisciplinary assessment, not an automatic higher steroid dose."
+    },
+    {
+      "heading": "Calculate modified Maddrey DF with the correct inputs",
+      "body": "The historical modified Maddrey discriminant function (mDF) is 4.6 × [patient prothrombin time − laboratory control prothrombin time] + total bilirubin. Use PT values in seconds and bilirubin in mg/dL; do not substitute INR for the PT difference or silently insert bilirubin reported in another unit. Worked example: patient PT 18 seconds, control PT 12 seconds and bilirubin 12 mg/dL give 4.6 × (18 − 12) + 12 = 39.6. The result exceeds the historical severe-AH threshold of at least 32. This complements clinical assessment; it neither proves AH nor overrides a contraindication. Laboratory-dependent PT limits comparisons across centers."
+    },
+    {
+      "heading": "Control hazards before starting treatment",
+      "body": "Assess active infection, including untreated hepatitis B infection, uncontrolled diabetes, gastrointestinal bleeding and severe renal failure. These are corticosteroid contraindications in the ACG AH framework. Treat or control the problem and let the liver team reassess eligibility; adequately controlled infection, bleeding or renal dysfunction may permit later reconsideration rather than a permanent exclusion. Review other clinical hazards and the overall trajectory. Do not interpret an elevated MELD or mDF as permission to start steroids through an unresolved contraindication."
+    },
+    {
+      "heading": "Select an oral regimen within the liver-team plan",
+      "body": "Prednisolone 40 mg orally each day is the commonly studied regimen for an eligible adult with severe AH, with a planned course of four weeks if response and safety permit. ACG also describes prednisone 40 mg/day, while noting that prednisolone has been more extensively studied and is generally used. The prescription needs an explicit response-review date and ongoing safety checks. Four weeks is a planned duration for appropriate responders, not a commitment to continue despite nonresponse or a new serious complication. Explain that the evidence concerns a selected short-term survival benefit rather than a guaranteed cure or lasting benefit from steroids alone."
+    },
+    {
+      "heading": "Match the alternative drug and route deliberately",
+      "body": "For an eligible patient who cannot take oral medication, ACG describes IV methylprednisolone 32 mg/day as an alternative. This is a different drug-dose-route combination from oral prednisolone 40 mg/day. Verify the exact product and order with pharmacy and the prescribing team; do not copy the oral number into an IV order by assumption. Reconcile the indication, route and administration plan when the patient can resume oral treatment. Neither a route change nor an adjunct such as NAC removes the need for eligibility and response assessment."
+    },
+    {
+      "heading": "Monitor safety throughout corticosteroid exposure",
+      "body": "Continue surveillance for infection, including fungal infection, and follow glucose control, bleeding, kidney function, mental status, liver trajectory and intake. A reassuring earlier response does not erase a newly developed hazard. New infection, gastrointestinal bleeding or organ deterioration requires prompt clinical assessment and reconsideration of continued treatment. Do not prescribe prophylactic antibiotics universally solely because severe AH or steroid treatment is present; active infection and separate cirrhosis-related prevention indications have their own management plans. Nutrition and AUD care continue alongside the steroid plan."
+    },
+    {
+      "heading": "Schedule a dynamic response assessment",
+      "body": "Lille assesses early response after corticosteroid treatment has begun, unlike the baseline severity scores. Arrange calculation at day 4 or day 7 using the corresponding validated timing and a verified calculator. Check the treatment start date, baseline and follow-up bilirubin, age, baseline albumin, PT and renal information, and the units the calculator requires. A single bilirubin value or a pretreatment Lille estimate does not replace this dynamic assessment. Document who will obtain the follow-up results and act on the score; do not wait until the planned four-week course ends to discover nonresponse."
+    },
+    {
+      "heading": "Stop nonresponse and handle the boundary carefully",
+      "body": "ACG key concept 27 and its official guideline summary recommend stopping corticosteroids in nonresponders with Lille greater than 0.45 at day 4 or 7. A verified score of 0.58 therefore supports stopping the AH steroid course while continuing other care and reassessing the patient. Some guideline diagrams and earlier guidance use at least 0.45 at the boundary. If a result is reported only as 0.45 after rounding, verify the unrounded score, calculation and liver-team protocol rather than declaring response or nonresponse from that display alone. A value clearly below the cutoff supports response assessment but does not guarantee safety or survival."
+    },
+    {
+      "heading": "Plan the end of the course with the prescriber",
+      "body": "For a patient who responds and remains suitable for treatment, continue only the clinician-directed course with ongoing reassessment. At the planned end, provide a clear prescribing and follow-up plan. ACG states that evidence does not establish a benefit of rapid versus slow tapering after the four-week AH course; do not invent one mandatory taper for every patient. The liver team must reconcile the individual treatment history, clinical state and any other steroid indication. A response score is not permission for indefinite therapy or for a patient to change the regimen without guidance."
+    },
+    {
+      "heading": "Continue care when steroids stop or cannot be used",
+      "body": "Stopping an ineffective or unsafe AH steroid course does not end care. Continue nutrition, alcohol cessation and AUD treatment, infection management and organ support. ACG recommends against pentoxifylline for severe AH, including its use as a supposed rescue for steroid nonresponse. Discuss specialist assessment, appropriate clinical-trial options and timely transplant evaluation for highly selected patients whose severe AH is unresponsive to medical management. Supportive and goals-of-care discussions should reflect clinical urgency, eligibility and patient preferences; neither a high score nor nonresponse alone dictates one outcome."
+    }
+  ],
+  "check": {
+    "question": "An adult who responded to the prescribed four-week AH corticosteroid course is preparing for discharge. A handoff says every patient must use the same slow taper, regardless of treatment history. What is the best response?",
+    "choices": [
+      "Obtain an individualized end-of-course plan from the prescriber; ACG does not establish a benefit of rapid versus slow tapering after this course.",
+      "Extend corticosteroids indefinitely because a favorable Lille score guarantees continuing benefit.",
+      "Tell the patient to double the daily dose whenever jaundice returns.",
+      "Ignore the treatment history because one taper schedule is proven best for every patient."
+    ],
+    "rationale": "ACG does not identify evidence favoring rapid over slow tapering after the four-week AH regimen. The prescribing team should reconcile the individual course, clinical condition and any other steroid indication and provide clear instructions and follow-up. A response score does not justify indefinite treatment, unsupervised dose changes or a universal taper claim."
+  }
+};
+for (const lesson of alcoholAssociatedLiverDiseaseModule.submodules) {
+  if (lesson.slug === "steroid-lille") {
+    Object.assign(lesson, verifiedAldSteroidLesson.metadata);
+    lesson.lesson = verifiedAldSteroidLesson.bodies;
+    Object.assign(lesson.check, verifiedAldSteroidLesson.check);
+  }
+}
