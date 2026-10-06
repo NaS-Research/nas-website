@@ -105,8 +105,8 @@
     "branch": "audit/rxprep-content-2026-09-24",
     "baseCommit": "51e2ab85fe75dc5d42f8d3a5781a342e3747f625",
     "remoteVerifiedAtStart": true,
-    "commit": null,
-    "push": "pending",
+    "commit": "7bfc285349e641e69f9305c8f63155aa03a731a2",
+    "push": "verified",
     "production": "not verified",
     "receipt": "enteral-nutrition-broader-combination-release.json",
     "contentCommits": [
@@ -251,13 +251,14 @@
       "5fc3a05fca8afc4f78146857b5a758fd8419dd0c",
       "156a409adc3ee0e70646d538ef1b561f1a594e94",
       "af5bae31b3b398861eb3caa0a81d57d9bb1e7206",
-      "5b5930460e9fcada676a447c1ee25a97f8148613"
+      "5b5930460e9fcada676a447c1ee25a97f8148613",
+      "7bfc285349e641e69f9305c8f63155aa03a731a2"
     ],
     "previousVerifiedContentCommit": "65ac22e809246ba35e196493eedaa0bea3b0898b",
     "baseReceipt": "aca4501d4b775c9e5dbb74a1c3e7c337e6ebb87e",
-    "remoteHashObserved": null,
-    "exactRemoteObservedByTool": false,
-    "remoteVerifiedAt": null,
+    "remoteHashObserved": "7bfc285349e641e69f9305c8f63155aa03a731a2",
+    "exactRemoteObservedByTool": true,
+    "remoteVerifiedAt": "2026-10-06T11:17:21.948902+00:00",
     "mainMerge": "not performed"
   },
   "openIssues": [
@@ -23503,6 +23504,17 @@
     "chaptersVerifiedAfter": 6,
     "chapterTotal": 82,
     "chapterCountPercent": 7.32,
-    "workingDraftBoundary": "Working draft contains eleven lessons and ninety-two different authored questions. Prior bytes and reviewing statuses are preserved. This certificate applies to the isolated HEAD-derived audit-branch lesson and twelve stable question IDs; certification of different working-draft variants is not inferred."
+    "workingDraftBoundary": "Working draft contains eleven lessons and ninety-two different authored questions. Prior bytes and reviewing statuses are preserved. This certificate applies to the isolated HEAD-derived audit-branch lesson and twelve stable question IDs; certification of different working-draft variants is not inferred.",
+    "release": {
+      "branch": "audit/rxprep-content-2026-09-24",
+      "commit": "7bfc285349e641e69f9305c8f63155aa03a731a2",
+      "push": "verified",
+      "receipt": "enteral-nutrition-broader-combination-release.json",
+      "mainMerge": "not performed",
+      "production": "not verified",
+      "remoteHashObserved": "7bfc285349e641e69f9305c8f63155aa03a731a2",
+      "exactRemoteObservedByTool": true,
+      "remoteVerifiedAt": "2026-10-06T11:17:21.948902+00:00"
+    }
   }
 }

@@ -1,0 +1,845 @@
+{
+  "verifiedAt": "2026-10-06T11:17:21.948902+00:00",
+  "unit": "enteral-nutrition:broader-combination",
+  "contentCommit": "7bfc285349e641e69f9305c8f63155aa03a731a2",
+  "remoteBranch": "audit/rxprep-content-2026-09-24",
+  "remoteHashObserved": "7bfc285349e641e69f9305c8f63155aa03a731a2",
+  "exactRemoteObservedByTool": true,
+  "coverage": {
+    "evidence": "enteral-nutrition-broader-combination-review.json",
+    "verifiedScope": "One complete audit-branch combination/deintensification/special-settings lesson: twelve whole bodies, metadata, corrected embedded check, reviewed mechanism figure and twelve rewritten whole questions. Parent metadata/reference reconciliation remains open.",
+    "wholeLessonsVerified": {
+      "noninsulin-diabetes-pharmacotherapy": [
+        "combination-deintensification-special-settings"
+      ]
+    },
+    "wholeBodiesVerified": 12,
+    "wholeQuestionsReviewed": 12,
+    "changedWholeQuestions": 12,
+    "existingBodiesExpanded": 5,
+    "newOriginalBodies": 7,
+    "wholeChecksVerified": 1,
+    "wholeMetadataAndFiguresVerified": 1,
+    "wholeBankQuestionIdsVerified": [
+      "noninsulin-diabetes-25-principle",
+      "noninsulin-diabetes-25-application",
+      "noninsulin-diabetes-25-safety",
+      "noninsulin-diabetes-25-case",
+      "noninsulin-diabetes-26-principle",
+      "noninsulin-diabetes-26-application",
+      "noninsulin-diabetes-26-safety",
+      "noninsulin-diabetes-26-case",
+      "noninsulin-diabetes-30-principle",
+      "noninsulin-diabetes-30-application",
+      "noninsulin-diabetes-30-safety",
+      "noninsulin-diabetes-30-case"
+    ],
+    "all48ChoicesIndividuallySourceCompared": true,
+    "newUniqueBankQuestionsVerified": 12,
+    "broaderFeedingBankVerifiedBefore": 1055,
+    "broaderFeedingBankVerifiedAfter": 1067,
+    "sourceVerifiedNoninsulinBankTotalAcrossUnits": 120,
+    "noninsulinAuditBranchBankTotal": 120,
+    "noninsulinAuditBranchLessonTotal": 10,
+    "noninsulinAuditBranchLessonsVerifiedAcrossUnits": 10,
+    "remainingNoninsulinWholeBankIds": [],
+    "remainingNoninsulinAuditBranchLessons": 0,
+    "allPrior108VerifiedNoninsulinQuestionsUnchanged": true,
+    "otherNineWholeLessonsUnchanged": true,
+    "other231WholeModulesUnchanged": true,
+    "associatedCumulativeWholeItemsVerified": [
+      "cumulative-noninsulin-diabetes-pharmacotherapy-noninsulin-diabetes-30-case"
+    ],
+    "other 1179WholeCumulativeObjectsUnchanged": true,
+    "stableIdsKeysDifficultyAnchorsOrderPreserved": true,
+    "newQuestionIdsAdded": 0,
+    "cumulativeSelectorUnchanged": true,
+    "all50ExistingReferencesRetainedAndRuntimeChecked": true,
+    "twoPrimaryReferencesAddedAndRuntimeChecked": true,
+    "wholeParentModuleVerified": false,
+    "parentMetadataAndFullReferenceReconciliationPending": true,
+    "enteralParentVerified": false,
+    "wholeChaptersVerified": false,
+    "committedWholeModulesVerifiedAfter": 61,
+    "committedWholeModulesTotal": 232,
+    "moduleCountPercent": 26.29,
+    "chaptersVerifiedAfter": 6,
+    "chapterTotal": 82,
+    "chapterCountPercent": 7.32,
+    "workingDraftBoundary": "Working draft contains eleven lessons and ninety-two different authored questions. Prior bytes and reviewing statuses are preserved. This certificate applies to the isolated HEAD-derived audit-branch lesson and twelve stable question IDs; certification of different working-draft variants is not inferred."
+  },
+  "validation": {
+    "productionBuild": {
+      "status": "passed",
+      "actualTerminalExitCode": 0,
+      "actualExecSession": 21557,
+      "staticRoutes": 567,
+      "candidateDerivedFromCommit": "51e2ab85fe75dc5d42f8d3a5781a342e3747f625",
+      "productionBuild": true
+    },
+    "structure": {
+      "modules": 1,
+      "questions": 120,
+      "hardErrors": [],
+      "sourceGaps": [],
+      "sizeAdvisories": [],
+      "thinLessons": [],
+      "weakestModules": [
+        {
+          "module": "noninsulin-diabetes-pharmacotherapy",
+          "lessons": 10,
+          "questions": 120,
+          "minimumLessonCoverage": 8
+        }
+      ]
+    },
+    "objectPreservation": {
+      "status": "passed",
+      "modules": 232,
+      "otherWholeModulesUnchanged": 231,
+      "wholeQuestionBankTotal": 120,
+      "wholeQuestionsReviewed": 12,
+      "changedWholeQuestions": 12,
+      "allPrior108VerifiedNoninsulinWholeQuestionsUnchanged": true,
+      "other108WholeQuestionsUnchanged": true,
+      "otherNineWholeLessonsUnchanged": true,
+      "stableKeysIdsDifficultyAnchorsOrder": true,
+      "associatedDerivedCumulative": [
+        "cumulative-noninsulin-diabetes-pharmacotherapy-noninsulin-diabetes-30-case"
+      ],
+      "other1179WholeCumulativeObjectsUnchanged": true,
+      "existingReferencesRetained": 50,
+      "twoPrimaryReferencesAdded": true
+    },
+    "browser": {
+      "status": "passed",
+      "results": [
+        {
+          "width": 1440,
+          "exactWholeBodies": 12,
+          "wholeChecksAllFourOptionsGraded": 1,
+          "wholeQuestionsShuffledCorrectIncorrectFeedbackAndAnchorsVerified": 12,
+          "associatedCumulativeItems": [
+            "cumulative-noninsulin-diabetes-pharmacotherapy-noninsulin-diabetes-30-case"
+          ],
+          "associatedCumulativeWholeCasesShuffledCorrectIncorrectAndReviewLinksVerified": 1,
+          "other1179CumulativeObjectsUnchanged": true,
+          "allReferencesExact": 52,
+          "noHorizontalOverflow": true,
+          "diagrams": [
+            {
+              "width": 1440,
+              "slug": "noninsulin-diabetes-pharmacotherapy",
+              "lessonKey": "combination-deintensification-special-settings",
+              "labels": [
+                {
+                  "tag": "SPAN",
+                  "text": "Regimen design",
+                  "overflow": false,
+                  "fontSize": 10.88
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Add complementary value and remove unnecessary burden",
+                  "overflow": false,
+                  "fontSize": 37.6
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "01",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Combine",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Distinct contribution",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Close the efficacy gap with mechanisms and outcomes that complement",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "02",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Hold",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Transition safety",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Plan for fasting, procedures, illness, contrast, dehydration, and missed meals",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "03",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Simplify",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Benefit-risk review",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Remove redundancy, hypoglycemia, cost, intolerance, and low-value burden",
+                  "overflow": false,
+                  "fontSize": 14
+                }
+              ],
+              "allTextWithinBounds": true
+            }
+          ]
+        },
+        {
+          "width": 390,
+          "exactWholeBodies": 12,
+          "wholeChecksAllFourOptionsGraded": 1,
+          "wholeQuestionsShuffledCorrectIncorrectFeedbackAndAnchorsVerified": 12,
+          "associatedCumulativeItems": [
+            "cumulative-noninsulin-diabetes-pharmacotherapy-noninsulin-diabetes-30-case"
+          ],
+          "associatedCumulativeWholeCasesShuffledCorrectIncorrectAndReviewLinksVerified": 1,
+          "other1179CumulativeObjectsUnchanged": true,
+          "allReferencesExact": 52,
+          "noHorizontalOverflow": true,
+          "diagrams": [
+            {
+              "width": 320,
+              "slug": "noninsulin-diabetes-pharmacotherapy",
+              "lessonKey": "combination-deintensification-special-settings",
+              "labels": [
+                {
+                  "tag": "SPAN",
+                  "text": "Regimen design",
+                  "overflow": false,
+                  "fontSize": 10.88
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Add complementary value and remove unnecessary burden",
+                  "overflow": false,
+                  "fontSize": 23.2
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "01",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Combine",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Distinct contribution",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Close the efficacy gap with mechanisms and outcomes that complement",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "02",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Hold",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Transition safety",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Plan for fasting, procedures, illness, contrast, dehydration, and missed meals",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "03",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Simplify",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Benefit-risk review",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Remove redundancy, hypoglycemia, cost, intolerance, and low-value burden",
+                  "overflow": false,
+                  "fontSize": 14
+                }
+              ],
+              "allTextWithinBounds": true
+            },
+            {
+              "width": 390,
+              "slug": "noninsulin-diabetes-pharmacotherapy",
+              "lessonKey": "combination-deintensification-special-settings",
+              "labels": [
+                {
+                  "tag": "SPAN",
+                  "text": "Regimen design",
+                  "overflow": false,
+                  "fontSize": 10.88
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Add complementary value and remove unnecessary burden",
+                  "overflow": false,
+                  "fontSize": 23.2
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "01",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Combine",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Distinct contribution",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Close the efficacy gap with mechanisms and outcomes that complement",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "02",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Hold",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Transition safety",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Plan for fasting, procedures, illness, contrast, dehydration, and missed meals",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "03",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Simplify",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Benefit-risk review",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Remove redundancy, hypoglycemia, cost, intolerance, and low-value burden",
+                  "overflow": false,
+                  "fontSize": 14
+                }
+              ],
+              "allTextWithinBounds": true
+            },
+            {
+              "width": 639,
+              "slug": "noninsulin-diabetes-pharmacotherapy",
+              "lessonKey": "combination-deintensification-special-settings",
+              "labels": [
+                {
+                  "tag": "SPAN",
+                  "text": "Regimen design",
+                  "overflow": false,
+                  "fontSize": 10.88
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Add complementary value and remove unnecessary burden",
+                  "overflow": false,
+                  "fontSize": 23.2
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "01",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Combine",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Distinct contribution",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Close the efficacy gap with mechanisms and outcomes that complement",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "02",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Hold",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Transition safety",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Plan for fasting, procedures, illness, contrast, dehydration, and missed meals",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "03",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Simplify",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Benefit-risk review",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Remove redundancy, hypoglycemia, cost, intolerance, and low-value burden",
+                  "overflow": false,
+                  "fontSize": 14
+                }
+              ],
+              "allTextWithinBounds": true
+            },
+            {
+              "width": 640,
+              "slug": "noninsulin-diabetes-pharmacotherapy",
+              "lessonKey": "combination-deintensification-special-settings",
+              "labels": [
+                {
+                  "tag": "SPAN",
+                  "text": "Regimen design",
+                  "overflow": false,
+                  "fontSize": 10.88
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Add complementary value and remove unnecessary burden",
+                  "overflow": false,
+                  "fontSize": 23.2
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "01",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Combine",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Distinct contribution",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Close the efficacy gap with mechanisms and outcomes that complement",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "02",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Hold",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Transition safety",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Plan for fasting, procedures, illness, contrast, dehydration, and missed meals",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "03",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Simplify",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Benefit-risk review",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Remove redundancy, hypoglycemia, cost, intolerance, and low-value burden",
+                  "overflow": false,
+                  "fontSize": 14
+                }
+              ],
+              "allTextWithinBounds": true
+            }
+          ]
+        }
+      ],
+      "captures": [
+        "hero-noninsulin-diabetes-pharmacotherapy-1440.png",
+        "body-combination-deintensification-special-settings-0-1440.png",
+        "body-combination-deintensification-special-settings-1-1440.png",
+        "body-combination-deintensification-special-settings-2-1440.png",
+        "body-combination-deintensification-special-settings-3-1440.png",
+        "body-combination-deintensification-special-settings-4-1440.png",
+        "body-combination-deintensification-special-settings-5-1440.png",
+        "body-combination-deintensification-special-settings-6-1440.png",
+        "body-combination-deintensification-special-settings-7-1440.png",
+        "body-combination-deintensification-special-settings-8-1440.png",
+        "body-combination-deintensification-special-settings-9-1440.png",
+        "body-combination-deintensification-special-settings-10-1440.png",
+        "body-combination-deintensification-special-settings-11-1440.png",
+        "summary-combination-deintensification-special-settings-1440.png",
+        "concepts-combination-deintensification-special-settings-1440.png",
+        "keypoints-combination-deintensification-special-settings-1440.png",
+        "application-combination-deintensification-special-settings-1440.png",
+        "figure-combination-deintensification-special-settings-1440.png",
+        "check-combination-deintensification-special-settings-1440.png",
+        "references-noninsulin-diabetes-pharmacotherapy-1440.png",
+        "bank-noninsulin-diabetes-25-application-1440.png",
+        "bank-noninsulin-diabetes-26-case-1440.png",
+        "bank-noninsulin-diabetes-30-safety-1440.png",
+        "bank-noninsulin-diabetes-26-principle-1440.png",
+        "bank-noninsulin-diabetes-25-principle-1440.png",
+        "bank-noninsulin-diabetes-30-application-1440.png",
+        "bank-noninsulin-diabetes-26-safety-1440.png",
+        "bank-noninsulin-diabetes-30-case-1440.png",
+        "bank-noninsulin-diabetes-25-safety-1440.png",
+        "bank-noninsulin-diabetes-26-application-1440.png",
+        "bank-noninsulin-diabetes-25-case-1440.png",
+        "bank-noninsulin-diabetes-30-principle-1440.png",
+        "cumulative-cumulative-noninsulin-diabetes-pharmacotherapy-noninsulin-diabetes-30-case-1440.png",
+        "hero-noninsulin-diabetes-pharmacotherapy-390.png",
+        "body-combination-deintensification-special-settings-0-390.png",
+        "body-combination-deintensification-special-settings-1-390.png",
+        "body-combination-deintensification-special-settings-2-390.png",
+        "body-combination-deintensification-special-settings-3-390.png",
+        "body-combination-deintensification-special-settings-4-390.png",
+        "body-combination-deintensification-special-settings-5-390.png",
+        "body-combination-deintensification-special-settings-6-390.png",
+        "body-combination-deintensification-special-settings-7-390.png",
+        "body-combination-deintensification-special-settings-8-390.png",
+        "body-combination-deintensification-special-settings-9-390.png",
+        "body-combination-deintensification-special-settings-10-390.png",
+        "body-combination-deintensification-special-settings-11-390.png",
+        "summary-combination-deintensification-special-settings-390.png",
+        "concepts-combination-deintensification-special-settings-390.png",
+        "keypoints-combination-deintensification-special-settings-390.png",
+        "application-combination-deintensification-special-settings-390.png",
+        "figure-combination-deintensification-special-settings-390.png",
+        "check-combination-deintensification-special-settings-390.png",
+        "references-noninsulin-diabetes-pharmacotherapy-390.png",
+        "bank-noninsulin-diabetes-25-application-390.png",
+        "bank-noninsulin-diabetes-26-case-390.png",
+        "bank-noninsulin-diabetes-30-safety-390.png",
+        "bank-noninsulin-diabetes-26-principle-390.png",
+        "bank-noninsulin-diabetes-25-principle-390.png",
+        "bank-noninsulin-diabetes-30-application-390.png",
+        "bank-noninsulin-diabetes-26-safety-390.png",
+        "bank-noninsulin-diabetes-30-case-390.png",
+        "bank-noninsulin-diabetes-25-safety-390.png",
+        "bank-noninsulin-diabetes-26-application-390.png",
+        "bank-noninsulin-diabetes-25-case-390.png",
+        "bank-noninsulin-diabetes-30-principle-390.png",
+        "cumulative-cumulative-noninsulin-diabetes-pharmacotherapy-noninsulin-diabetes-30-case-390.png",
+        "native-figure-320.png",
+        "native-figure-640.png"
+      ],
+      "errors": []
+    },
+    "visualInspection": {
+      "status": "passed",
+      "inspectedAt": "2026-10-06T11:16:20.094164+00:00",
+      "method": "Viewed all eleven original-resolution desktop/mobile boards and native 320/640 figure captures; each pair retains original screenshot pixels.",
+      "captureCount": 68,
+      "pairCount": 33,
+      "boardCount": 11,
+      "captureSha256": {
+        "hero-noninsulin-diabetes-pharmacotherapy-1440.png": "357f1a5978f086dd8d7a0c030d2d0ada0d5d12d31ba9402b4fe7c2ee07295c8c",
+        "body-combination-deintensification-special-settings-0-1440.png": "d47f366cc5e618ea411091835310f475d57e3c6865b9f34ad5e33d2f256c6847",
+        "body-combination-deintensification-special-settings-1-1440.png": "2dc067081fc88bf8e756df53ac7cba4203444e6e1b4dd26b78af92f0669c2125",
+        "body-combination-deintensification-special-settings-2-1440.png": "74a5b8fd808536c5b0b30b3aadcb7c644ec7b3888287a646f1e12abea4b30fee",
+        "body-combination-deintensification-special-settings-3-1440.png": "4ed15d9c28bae8d49fbe53f096c2a8a5168212fbad49865de7921b8cacd41bf4",
+        "body-combination-deintensification-special-settings-4-1440.png": "9b01867d7fd70b18ab972abdb366255aa7a3b5ed62b4b870ff8a95db9bd248de",
+        "body-combination-deintensification-special-settings-5-1440.png": "6196b2595416e6796f1c7b0f53ab5e99414ae45aed265c099be12018e069c3a0",
+        "body-combination-deintensification-special-settings-6-1440.png": "877dd3a05eed81a50bd333a3a66c80a8f441740a6fa227436d5a3400208d7437",
+        "body-combination-deintensification-special-settings-7-1440.png": "22e1da116082433f0a6f2e9fbab4a74c385b11c6174de393087df9b680dea580",
+        "body-combination-deintensification-special-settings-8-1440.png": "89f70d6a1d79158416117c3cb11231180dbc3f6ca5ae6a5d87c3463a877c4e95",
+        "body-combination-deintensification-special-settings-9-1440.png": "582dc2e9298e34cff2bad7b75f713d5d940bfccde1293b06381067202cf468f5",
+        "body-combination-deintensification-special-settings-10-1440.png": "e9b50874709ce0f06972f8fbb7f6294b9d8d80c096a5219b072780384a4e1065",
+        "body-combination-deintensification-special-settings-11-1440.png": "ac6d7f5b6c4c4cd331c6d1a242fb130e358e156599994ae6cf0ce620dcdb6b5d",
+        "summary-combination-deintensification-special-settings-1440.png": "8749726cb036aea010af6175ead53d2800f9a48108aa4d95f8c2139ee010f805",
+        "concepts-combination-deintensification-special-settings-1440.png": "0830a8442c68c1ace0e3f2134f49c3ddbb585ecb49e72f14c49f6ecb756137e5",
+        "keypoints-combination-deintensification-special-settings-1440.png": "5352f6f71e05a4e5f7811d395353209575ea78dfddfd7fd89f31ad4424eababf",
+        "application-combination-deintensification-special-settings-1440.png": "8a75f0956fb5853ee0be438a891ee1b01636030e11d7aba4aa77705faf8b4b32",
+        "figure-combination-deintensification-special-settings-1440.png": "a252ff840b7e925bfdac8f5b8314e9f99cdfa8b8b5589382cb02d7c51871f36e",
+        "check-combination-deintensification-special-settings-1440.png": "fd38b5d8c20adcb0943e6c5bd710fbf66bc294d828b50d3e2c8fbeb615921343",
+        "references-noninsulin-diabetes-pharmacotherapy-1440.png": "419fa8ef21941b6c395d7740b5000c8bb1f86b0b584d6c1d9cf28757cfe7e5d3",
+        "bank-noninsulin-diabetes-25-application-1440.png": "e1391bf138b2d4478f0eeb9bc1232582b5ad8e82899a3bd2e127dbb99d1c92b0",
+        "bank-noninsulin-diabetes-26-case-1440.png": "0f0a30dff8c3fc34884573d42e4f30688cf1a8d379b439f73f859c038f9d8b6b",
+        "bank-noninsulin-diabetes-30-safety-1440.png": "c136f6d9b7e6dbd196da8e9ff0602ce7ffaf948c57d65c5659dd409405c2d520",
+        "bank-noninsulin-diabetes-26-principle-1440.png": "259b7c9ff581283c18a6215c8f5a969cae70b405b4b9e269817327e13b826735",
+        "bank-noninsulin-diabetes-25-principle-1440.png": "03eb77580f9f858dba3a0307c3a43d8d5fd78857a080c5aafd606cb75b5d9685",
+        "bank-noninsulin-diabetes-30-application-1440.png": "7b698f038e62b2ad23b9b6c287a455f3814b5fe8d69a944976cc3a6955d6f7f9",
+        "bank-noninsulin-diabetes-26-safety-1440.png": "664c724af25fa0b78a31a2c3830f7487b9ec4aee8b4cbd6f29caf1aa6df55ca4",
+        "bank-noninsulin-diabetes-30-case-1440.png": "b89e95241ae60a3025b69a8b6a19b5728d4a5f2495c4beede9106b41ea53fd74",
+        "bank-noninsulin-diabetes-25-safety-1440.png": "37ecfc508f949a38bbfa737c9f946d15aec6eabcfe0d2cf9cdc31eae84f3ee4a",
+        "bank-noninsulin-diabetes-26-application-1440.png": "01820d11c283ccb0af7f9a22719fd79c90a069da57d7c49d1dfc8ff288756fac",
+        "bank-noninsulin-diabetes-25-case-1440.png": "f9d728aaec9162f97fee267deb7ee39b421997d357431bb665921f67709ba6d8",
+        "bank-noninsulin-diabetes-30-principle-1440.png": "38233d7b1a9d4e212341d376e1a17e7b6d6d162d7791ab3e219a1aef29ae3977",
+        "cumulative-cumulative-noninsulin-diabetes-pharmacotherapy-noninsulin-diabetes-30-case-1440.png": "5d4027f6b47e16e3af3ae4bc2875aef3cfa548b193a7de062fa861a9f61dea76",
+        "hero-noninsulin-diabetes-pharmacotherapy-390.png": "7605aa62fe153bcdc72584c583e906632fc8401732b9ec703a8e86a1cfed0822",
+        "body-combination-deintensification-special-settings-0-390.png": "d187efc476016b9c6298cf5da7a239202e2ba6fb0841125819166edb4229272a",
+        "body-combination-deintensification-special-settings-1-390.png": "799c6872e3dd310caab470219d3f95238416d684c54cacaca379332febfc2b25",
+        "body-combination-deintensification-special-settings-2-390.png": "db6224bf294893cea66db78ecb2c4b17029a3faf99b35abfb0ee7cd2773bf9f5",
+        "body-combination-deintensification-special-settings-3-390.png": "1e7d01689bc11f6899f952f1b33908a1d01eff218854b1cca3b64853972f8ddd",
+        "body-combination-deintensification-special-settings-4-390.png": "ae5f4c168ab94b3eb33fc8e99533e9133f2ffcd554fb8221705bc7b0472c4457",
+        "body-combination-deintensification-special-settings-5-390.png": "1340b7a0e7c6203ab026a90b4c75e0d642bcb758b942cb0c2a9b0a2eb50c6701",
+        "body-combination-deintensification-special-settings-6-390.png": "d894594f9c8f1aea0f74129d3826c0cef63d90a1e2cf0625e443ce746c9e6e73",
+        "body-combination-deintensification-special-settings-7-390.png": "4f4c222c289afff0ac2a573bbe3bb05788de894694e5c526f7aa9b960a44f737",
+        "body-combination-deintensification-special-settings-8-390.png": "cd5419ec4c7ca1aaaf5ed24db7ddca64a64ba2360018ffb529e69846906c50f4",
+        "body-combination-deintensification-special-settings-9-390.png": "34fc5ae521c4126a56df446f503d13c334c0f8e53e0b19c340c904f44397cc1c",
+        "body-combination-deintensification-special-settings-10-390.png": "f7c93c096ef1824a04565752ae54fa45c3bf8060f6aea44a8e994b23fa277983",
+        "body-combination-deintensification-special-settings-11-390.png": "0fd45c0898fe2c7e24ced30e7d83685795c69dda411055d9579cdab02c428b2d",
+        "summary-combination-deintensification-special-settings-390.png": "6e81fc9d12f6442b9d685048f8770efff7889aedd8c8aa9adb42a4a7774fbb04",
+        "concepts-combination-deintensification-special-settings-390.png": "7cbd98e7d5b485430c54c7519a9146ec61d769ffefa6928e7e2b969208aa3bfc",
+        "keypoints-combination-deintensification-special-settings-390.png": "4ef8b990a5d07a3dc45a71323cf0a358d6632250187d2f20ccfdd9f538548648",
+        "application-combination-deintensification-special-settings-390.png": "b049358e9d20f8f29070a04eba545e5403a9e4b608138ecbb2833c96bbac75b8",
+        "figure-combination-deintensification-special-settings-390.png": "582316e898f988c9dbeaaa9d71c5e79a4ee25322a3a65e0ef46bc6aa41c32804",
+        "check-combination-deintensification-special-settings-390.png": "13e3fa3c0cab5471d6e881876e5d423b066ff173f990f6e2fbdbaca524f238a3",
+        "references-noninsulin-diabetes-pharmacotherapy-390.png": "ee42bd2e69439dcee3dfadcaa66f0924fb429f8d4576e1471bdf7bd14dfce9bf",
+        "bank-noninsulin-diabetes-25-application-390.png": "fc13479a93cc8c08327ac36cbc0a09923716bf0efb0a718cbc23a50068276926",
+        "bank-noninsulin-diabetes-26-case-390.png": "3ccbdf1ff1fbee6e6f1c7348b774e761d3355887706e83d75698b9e4715efc74",
+        "bank-noninsulin-diabetes-30-safety-390.png": "4aeeedfd8e39a08f3352dfdb79a83b93e82ba2d4de9762ea7ad53280b2ff7a99",
+        "bank-noninsulin-diabetes-26-principle-390.png": "116b5cd36e6bfd96d990e6e1522fa1aa1c2b8eac48e08ac3df04431f28892a17",
+        "bank-noninsulin-diabetes-25-principle-390.png": "c5d012fb9dc8303b40faa12ee0e29a5d79b8b74d70038d233cfc3f755757138d",
+        "bank-noninsulin-diabetes-30-application-390.png": "36b5dcb7450a194257c31536012028dc9869fd88d7343dd25c8db8ba56b2f114",
+        "bank-noninsulin-diabetes-26-safety-390.png": "4cee314cfb21ee46d610d3ddeb91a96b525bf9d130a356b4df6f4e047466e192",
+        "bank-noninsulin-diabetes-30-case-390.png": "55be2e07967198bfc8c76f0c61ac9ac7077754c72818bc3e1993b4e3e1531d89",
+        "bank-noninsulin-diabetes-25-safety-390.png": "bc71b8934489dddcbc7fe680384cd1e7e80eaa1fa8a67ac6809fb481ad60d4b2",
+        "bank-noninsulin-diabetes-26-application-390.png": "2f93f779d274d3a460eff00fdcae55bca5e734b83f45e783fab877f2fe9606e1",
+        "bank-noninsulin-diabetes-25-case-390.png": "92ef40d5e0049bb2352c84a80df7ff1fc8f0e76c4c8496ec5188ba26bb943856",
+        "bank-noninsulin-diabetes-30-principle-390.png": "98cdeba9e8c7d0ce4f5208971c7a2ef6e971fb639d783293237b582304aaaf52",
+        "cumulative-cumulative-noninsulin-diabetes-pharmacotherapy-noninsulin-diabetes-30-case-390.png": "0e7c38e5890823812a4a83fd83f3772be0620adddf0af8f8b4ffae93b37f5fa6",
+        "native-figure-320.png": "2b08a0a825b4761b3de142266b985aa74de2d13bf0de9cf7bff4402764b8852d",
+        "native-figure-640.png": "08d28d69a8e081c14a24a57cc4cd06c761071061f440e8ffeae0c1f2d195c93d"
+      },
+      "pairSha256": {
+        "pair-hero-noninsulin-diabetes-pharmacotherapy.png": "2f4245c0d7a5cd3b3981f71688284927301a4e0946f18c07c83bc4b5d30c3844",
+        "pair-body-combination-deintensification-special-settings-0.png": "df2e6988d2ff4a04ca65ae6d8a8e518b5a9cc3c9ac2fd37f9d51815fa5f5dffd",
+        "pair-body-combination-deintensification-special-settings-1.png": "7b4d754029f4c914f72e027252c2dea33eacc9073e12830a958c2d0f004dbe6c",
+        "pair-body-combination-deintensification-special-settings-2.png": "2dfa1f2561d2169ace8e8588adf1e7d8c36bf46e082bc30a2df8840eb631f72b",
+        "pair-body-combination-deintensification-special-settings-3.png": "ea33eb8b1ff74a48d3068807fcb15dc0cd2fe95290e75a75cd575dbd1f41f141",
+        "pair-body-combination-deintensification-special-settings-4.png": "b467d4f85528739c7728989c6e55cbb0478406cd4683aa7259d36354c2a33c52",
+        "pair-body-combination-deintensification-special-settings-5.png": "2bdc1903bc2bdc31737e8cced08ed1d5715915d6b9522410bb075710c1f2134e",
+        "pair-body-combination-deintensification-special-settings-6.png": "f612b3ebade1d1bb0ed9890f598de1b1bbeecc8939f9252b5fa921742dbc742f",
+        "pair-body-combination-deintensification-special-settings-7.png": "b0397f44e18362658aa599ba80c67025ad0227359e1e231a0e60cfd26060bc91",
+        "pair-body-combination-deintensification-special-settings-8.png": "b7b27b4e45a77b35ace329996690761a85a19ad28dda68611eb38e1d3a6348b2",
+        "pair-body-combination-deintensification-special-settings-9.png": "d7d7b06c3ad9d683159ab97ddc58b3d25caedf7d4f0e496361ed109eaac608a8",
+        "pair-body-combination-deintensification-special-settings-10.png": "681ab6a47aca9b997bf17fab266cdb19446a0c37efdd6c6f6dca26cbacec3be8",
+        "pair-body-combination-deintensification-special-settings-11.png": "bf04a83e538b5eb51fc7ac70171982caaca7c075b29057829066e185740e4d4a",
+        "pair-summary-combination-deintensification-special-settings.png": "db4fd396c8d24dc39045c11f78f4990f6d3be75b41187603ef5c49fa46008145",
+        "pair-concepts-combination-deintensification-special-settings.png": "df1e8eb45c5579d5a70b66c4db3994040f08d9ec1def72892bd757cffe4ede74",
+        "pair-keypoints-combination-deintensification-special-settings.png": "2653aa70216aaf58541c9e8d7a17d9a5cd5773b18b7c0ed4a9b6a1611410c3c5",
+        "pair-application-combination-deintensification-special-settings.png": "189d49805929fb05090d64f411b71dda9961165e6aba8afb5982be7914bf3e0d",
+        "pair-figure-combination-deintensification-special-settings.png": "b1af52054d2f70ee46388763bb0fc904ecbdd3853289c5b4b21a4532a67d61dc",
+        "pair-check-combination-deintensification-special-settings.png": "8f6cb6cc6669d31918ad1bc9f2bf4cc435381a0de7e37ddf01c30dff03d71416",
+        "pair-references-noninsulin-diabetes-pharmacotherapy.png": "18198f028aa8834836e106a65a30ce99d0730bbc21c310114183e30791f64422",
+        "pair-bank-noninsulin-diabetes-25-application.png": "4c7fd2b54bc1fc567f25bfe3131500aac2b7e70f01404371e36ffa285ac61c4a",
+        "pair-bank-noninsulin-diabetes-26-case.png": "02a9686d99194e015e4f49c39723235ee2a29ef09b15cac70d1cf13ab31950d4",
+        "pair-bank-noninsulin-diabetes-30-safety.png": "31d7b992aec0dce02dd5e93f478d257b8b7922f680128c5fc85ef23820cb75d3",
+        "pair-bank-noninsulin-diabetes-26-principle.png": "293ff923af29ec00a0d65f95d37adddece8670b65980423a77be1b4fe0a3f74b",
+        "pair-bank-noninsulin-diabetes-25-principle.png": "5de320b12211dc5adb019f451a4b3f1c187e7448cdb237f2c285a15ee76e11cf",
+        "pair-bank-noninsulin-diabetes-30-application.png": "11fbb229a5e18af51d034dc62dffd41966a1e4878989711f0999e018145d6f94",
+        "pair-bank-noninsulin-diabetes-26-safety.png": "6fed6b295336604425bc45fa4b59011ae02336e7044a9ee36123b75055126bce",
+        "pair-bank-noninsulin-diabetes-30-case.png": "31fd60bf31d0cb0ec36e641c253c583bd181b0975449567ab86e648ee5b2f6d7",
+        "pair-bank-noninsulin-diabetes-25-safety.png": "8fcabe198b45dbe93c5daca5eaa26ea1931baf531dedcdf48ec8a4de37758760",
+        "pair-bank-noninsulin-diabetes-26-application.png": "36b1931df6ab6d52020145ca8ba0c55049ec4133de958c2e511baac0dc7a7396",
+        "pair-bank-noninsulin-diabetes-25-case.png": "113704db5c018aa6f4458e39433ab7d5e577a6fc3373135b591f7aa9491a30ce",
+        "pair-bank-noninsulin-diabetes-30-principle.png": "1217fe2ac4974ba9e0ef0959875f56a1de4ed195e22ad8675704758f7ecacc29",
+        "pair-cumulative-cumulative-noninsulin-diabetes-pharmacotherapy-noninsulin-diabetes-30-case.png": "e1f4f7d8d2dab216426d38661f0d1caadc96a92651766b6de6cd443b7606e188"
+      },
+      "boardSha256": {
+        "board-00.png": "fc34a63a108dbfe9b8b05de532b478d25a0e17f0157152e7fe1daf9607c41a03",
+        "board-01.png": "44b490810dcc421598081371f82707edcaef5e3ab60b998135e2481d522fe584",
+        "board-02.png": "80c0de99f541061626e956bb46cf689131d5e4387b58774e8acb1ca14929b194",
+        "board-03.png": "c6e39971e0d889068596439b31b4699ca6c70feb88ac80d754f16d92a64b1bc8",
+        "board-04.png": "11d0a8cfe199f8896eb5f7883b67c842aab66ab74f6e4d24c39ab47ec3334d36",
+        "board-05.png": "665984ce0bcaa9611078112d5b0de75abcc73664f3900b5be419ce51526a8a54",
+        "board-06.png": "2396633234b2e408ac7797478db330efe19ce06f5d03e40576b9a12adfc84bb7",
+        "board-07.png": "cc20700db45ad593b6b5c6530d28e28ce2ecb020bf85592694d4f5f8f4068099",
+        "board-08.png": "eb8344c29648a640b5710d77731104cbaee859fee18169622e45c575a3c5c51e",
+        "board-09.png": "7236db784478206fed378efdbe284aadf44943d2392eaeff5536360eb4cfce6a",
+        "board-10.png": "ce4c632ab0d01bc463a8cbf4567023e78c886e12f2b8a47d6cb6ec3b4544b384"
+      },
+      "findings": [
+        "All twelve teaching bodies, summary, concepts, key points and application legible at desktop and mobile widths.",
+        "Embedded check, all twelve bank questions and associated cumulative question show complete prompts, options, grading feedback and review links.",
+        "All fifty-two reference rows legible; link values separately runtime-checked.",
+        "Fourteen figure labels remain inside layout at all tested widths; original 320/640 captures inspected with no clipping."
+      ],
+      "scope": "Isolated audit-branch candidate only; parent reconciliation and working draft certification remain open."
+    },
+    "limits": "Isolated unauthenticated production preview. Complete lesson, all four embedded-check choices and twelve bank cases in correct/incorrect shuffled attempts at 1440/390; figure bounds at five widths. One associated cumulative item verified; other 1179 objects unchanged. Parent metadata/full reference reconciliation, working draft variants, chapters and full goal remain open."
+  },
+  "preservation": {
+    "status": "passed",
+    "baselinePathsChecked": 820,
+    "allUnrelatedDraftBytesAndDeletionsPreservedAtRelease": true,
+    "observedConcurrentUnrelatedChangesRetainedAndExcluded": {},
+    "otherUnrelatedPathsMatchInitialBaseline": true,
+    "preexistingContentBytesRecoveredByRemovingExactScopedTails": true,
+    "allOtherWorkingLedgerFieldsAndEntriesPreserved": true,
+    "allOtherCommittedLedgerFieldsAndEntriesPreserved": true,
+    "oneAuditBranchLessonVerifiedAndWorkingDraftStatusPreserved": true,
+    "onlyVerifiedHeadDerivedContentStagedOrCommitted": true,
+    "onlyTwoCombinationTypographyLinesChangedAndCumulativeSelectorUnchanged": true,
+    "preexistingWorkingRenalCaptionRetainedVerbatim": true,
+    "scope": [
+      "src/data/modules/noninsulinDiabetesPharmacotherapy.js",
+      "src/data/questionBanks/noninsulinDiabetesPharmacotherapy.js",
+      "src/components/learn/NoninsulinDiabetesPharmacotherapyVisual.jsx",
+      "docs/clinical-audit/enteral-nutrition-broader-combination-review.json",
+      "docs/clinical-audit/module-ledger.json",
+      "docs/clinical-audit/chapter-ledger.json",
+      "docs/clinical-audit/sequential-resume.json"
+    ]
+  },
+  "publication": {
+    "mainMerge": "not performed",
+    "production": "not verified"
+  },
+  "wholeGoalComplete": false,
+  "nextAction": "Reconcile the entire noninsulin-diabetes-pharmacotherapy parent: source attribution, description, topics, all outcomes, all 52 references and consistency across the ten verified lessons/120 verified bank questions and all derived cumulative items. Preserve exact prior verified lesson/question content unless fresh evidence requires correction; do not certify the parent until this complete reconciliation and applicable runtime/build checks pass. Preserve separate working draft of eleven lessons/ninety-two authored questions without inferring certification. Whole MASLD/ALD parents are verified; rifaximin HE is verified with nine other lessons/147 questions reserved for Chapter 22. Preserve the 245-match contextual inventory, four HIV PI choices, prior ICU withdrawal and feeding dependencies. Return to Chapter 11 printed 161/PDF 169 after broader feeding dependencies; Chapter 1 printed 7/PDF 19 checklist 15 and Chapters 11/19/22/44 remain open. The full 82-chapter goal continues.",
+  "receiptCommit": "Receipt follows exact verified content commit; its own remote hash separately verified in execution output."
+}
