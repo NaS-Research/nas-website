@@ -1,0 +1,981 @@
+{
+  "verifiedAt": "2026-10-06T10:58:21.341367+00:00",
+  "unit": "enteral-nutrition:broader-cardiorenal",
+  "contentCommit": "5b5930460e9fcada676a447c1ee25a97f8148613",
+  "remoteBranch": "audit/rxprep-content-2026-09-24",
+  "remoteHashObserved": "5b5930460e9fcada676a447c1ee25a97f8148613",
+  "exactRemoteObservedByTool": true,
+  "coverage": {
+    "evidence": "enteral-nutrition-broader-cardiorenal-review.json",
+    "verifiedScope": "One complete audit-branch cardiorenal and weight lesson: twelve whole bodies, metadata, corrected embedded check, reviewed mechanism figure and sixteen linked whole questions. Fifteen questions changed; one previously verified question retained exactly.",
+    "wholeLessonsVerified": {
+      "noninsulin-diabetes-pharmacotherapy": [
+        "cardiorenal-weight-integration"
+      ]
+    },
+    "wholeBodiesVerified": 12,
+    "wholeQuestionsReviewed": 16,
+    "changedWholeQuestions": 15,
+    "existingBodiesExpanded": 4,
+    "newOriginalBodies": 8,
+    "wholeChecksVerified": 1,
+    "wholeMetadataAndFiguresVerified": 1,
+    "wholeBankQuestionIdsVerified": [
+      "noninsulin-diabetes-21-principle",
+      "noninsulin-diabetes-21-application",
+      "noninsulin-diabetes-21-safety",
+      "noninsulin-diabetes-21-case",
+      "noninsulin-diabetes-22-principle",
+      "noninsulin-diabetes-22-application",
+      "noninsulin-diabetes-22-safety",
+      "noninsulin-diabetes-22-case",
+      "noninsulin-diabetes-23-principle",
+      "noninsulin-diabetes-23-application",
+      "noninsulin-diabetes-23-safety",
+      "noninsulin-diabetes-23-case",
+      "noninsulin-diabetes-24-principle",
+      "noninsulin-diabetes-24-application",
+      "noninsulin-diabetes-24-safety",
+      "noninsulin-diabetes-24-case"
+    ],
+    "all64ChoicesIndividuallySourceCompared": true,
+    "previouslyVerifiedWholeQuestionRetainedExactly": "noninsulin-diabetes-24-application",
+    "newUniqueBankQuestionsVerified": 15,
+    "broaderFeedingBankVerifiedBefore": 1040,
+    "broaderFeedingBankVerifiedAfter": 1055,
+    "sourceVerifiedNoninsulinBankTotalAcrossUnits": 108,
+    "noninsulinAuditBranchBankTotal": 120,
+    "noninsulinAuditBranchLessonTotal": 10,
+    "noninsulinAuditBranchLessonsVerifiedAcrossUnits": 9,
+    "remainingNoninsulinWholeBankIds": [
+      "noninsulin-diabetes-25-principle",
+      "noninsulin-diabetes-25-application",
+      "noninsulin-diabetes-25-safety",
+      "noninsulin-diabetes-25-case",
+      "noninsulin-diabetes-26-principle",
+      "noninsulin-diabetes-26-application",
+      "noninsulin-diabetes-26-safety",
+      "noninsulin-diabetes-26-case",
+      "noninsulin-diabetes-30-principle",
+      "noninsulin-diabetes-30-application",
+      "noninsulin-diabetes-30-safety",
+      "noninsulin-diabetes-30-case"
+    ],
+    "remainingNoninsulinAuditBranchLessons": 1,
+    "other104WholeBankQuestionsUnchanged": true,
+    "allPrior93VerifiedNoninsulinQuestionsUnchanged": true,
+    "otherNineWholeLessonsUnchanged": true,
+    "other231WholeModulesUnchanged": true,
+    "associatedCumulativeWholeItemsVerified": [
+      "cumulative-noninsulin-diabetes-pharmacotherapy-noninsulin-diabetes-23-application"
+    ],
+    "other1179WholeCumulativeObjectsUnchanged": true,
+    "stableIdsKeysDifficultyAnchorsOrderPreserved": true,
+    "newQuestionIdsAdded": 0,
+    "cumulativeSelectorUnchanged": true,
+    "all46ExistingReferencesRetainedAndRuntimeChecked": true,
+    "fourPrimaryReferencesAddedAndRuntimeChecked": true,
+    "wholeParentModuleVerified": false,
+    "enteralParentVerified": false,
+    "wholeChaptersVerified": false,
+    "committedWholeModulesVerifiedAfter": 61,
+    "committedWholeModulesTotal": 232,
+    "moduleCountPercent": 26.29,
+    "chaptersVerifiedAfter": 6,
+    "chapterTotal": 82,
+    "chapterCountPercent": 7.32,
+    "workingDraftBoundary": "Working draft contains eleven lessons and ninety-two different authored questions. Prior bytes and reviewing statuses are preserved. This certificate applies to the isolated HEAD-derived audit-branch lesson and sixteen stable question IDs; certification of different working-draft variants is not inferred."
+  },
+  "validation": {
+    "productionBuild": {
+      "status": "passed",
+      "actualTerminalExitCode": 0,
+      "actualExecSession": 17324,
+      "staticRoutes": 567,
+      "candidateDerivedFromCommit": "2ce66c3f79576ee504b7bd89bd9f3d135e09b280",
+      "productionBuild": true
+    },
+    "structure": {
+      "modules": 1,
+      "questions": 120,
+      "hardErrors": [],
+      "sourceGaps": [],
+      "sizeAdvisories": [],
+      "thinLessons": [],
+      "weakestModules": [
+        {
+          "module": "noninsulin-diabetes-pharmacotherapy",
+          "lessons": 10,
+          "questions": 120,
+          "minimumLessonCoverage": 8
+        }
+      ]
+    },
+    "objectPreservation": {
+      "status": "passed",
+      "modules": 232,
+      "otherWholeModulesUnchanged": 231,
+      "wholeQuestionBankTotal": 120,
+      "wholeQuestionsReviewed": 16,
+      "changedWholeQuestions": 15,
+      "previouslyVerifiedWholeQuestionUnchanged": "noninsulin-diabetes-24-application",
+      "other104WholeQuestionsUnchanged": true,
+      "allPrior93VerifiedNoninsulinWholeQuestionsUnchanged": true,
+      "otherNineWholeLessonsUnchanged": true,
+      "stableKeysIdsDifficultyAnchorsOrder": true,
+      "associatedDerivedCumulative": [
+        "cumulative-noninsulin-diabetes-pharmacotherapy-noninsulin-diabetes-23-application"
+      ],
+      "other1179WholeCumulativeObjectsUnchanged": true,
+      "existingReferencesRetained": 46,
+      "fourPrimaryReferencesAdded": true
+    },
+    "browser": {
+      "status": "passed",
+      "results": [
+        {
+          "width": 1440,
+          "exactWholeBodies": 12,
+          "wholeChecksAllFourOptionsGraded": 1,
+          "wholeQuestionsShuffledCorrectIncorrectFeedbackAndAnchorsVerified": 16,
+          "associatedCumulativeItems": [
+            "cumulative-noninsulin-diabetes-pharmacotherapy-noninsulin-diabetes-23-application"
+          ],
+          "associatedCumulativeWholeCasesShuffledCorrectIncorrectAndReviewLinksVerified": 1,
+          "other1179CumulativeObjectsUnchanged": true,
+          "allReferencesExact": 50,
+          "noHorizontalOverflow": true,
+          "diagrams": [
+            {
+              "width": 1440,
+              "slug": "noninsulin-diabetes-pharmacotherapy",
+              "lessonKey": "cardiorenal-weight-integration",
+              "labels": [
+                {
+                  "tag": "SPAN",
+                  "text": "Outcome integration",
+                  "overflow": false,
+                  "fontSize": 10.88
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Treat the organ risk even when glucose is near target",
+                  "overflow": false,
+                  "fontSize": 37.6
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "01",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Vessels",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "ASCVD",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Use a GLP-1 receptor agonist and/or SGLT2 inhibitor with demonstrated benefit",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "02",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Pump and filter",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Heart failure and CKD",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Match proven heart and kidney benefit to product eligibility",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "03",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Metabolism",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Weight and liver",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Match weight and liver treatment to evidence, formulation and liver stage",
+                  "overflow": false,
+                  "fontSize": 14
+                }
+              ],
+              "allTextWithinBounds": true
+            }
+          ]
+        },
+        {
+          "width": 390,
+          "exactWholeBodies": 12,
+          "wholeChecksAllFourOptionsGraded": 1,
+          "wholeQuestionsShuffledCorrectIncorrectFeedbackAndAnchorsVerified": 16,
+          "associatedCumulativeItems": [
+            "cumulative-noninsulin-diabetes-pharmacotherapy-noninsulin-diabetes-23-application"
+          ],
+          "associatedCumulativeWholeCasesShuffledCorrectIncorrectAndReviewLinksVerified": 1,
+          "other1179CumulativeObjectsUnchanged": true,
+          "allReferencesExact": 50,
+          "noHorizontalOverflow": true,
+          "diagrams": [
+            {
+              "width": 320,
+              "slug": "noninsulin-diabetes-pharmacotherapy",
+              "lessonKey": "cardiorenal-weight-integration",
+              "labels": [
+                {
+                  "tag": "SPAN",
+                  "text": "Outcome integration",
+                  "overflow": false,
+                  "fontSize": 10.88
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Treat the organ risk even when glucose is near target",
+                  "overflow": false,
+                  "fontSize": 23.2
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "01",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Vessels",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "ASCVD",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Use a GLP-1 receptor agonist and/or SGLT2 inhibitor with demonstrated benefit",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "02",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Pump and filter",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Heart failure and CKD",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Match proven heart and kidney benefit to product eligibility",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "03",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Metabolism",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Weight and liver",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Match weight and liver treatment to evidence, formulation and liver stage",
+                  "overflow": false,
+                  "fontSize": 14
+                }
+              ],
+              "allTextWithinBounds": true
+            },
+            {
+              "width": 390,
+              "slug": "noninsulin-diabetes-pharmacotherapy",
+              "lessonKey": "cardiorenal-weight-integration",
+              "labels": [
+                {
+                  "tag": "SPAN",
+                  "text": "Outcome integration",
+                  "overflow": false,
+                  "fontSize": 10.88
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Treat the organ risk even when glucose is near target",
+                  "overflow": false,
+                  "fontSize": 23.2
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "01",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Vessels",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "ASCVD",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Use a GLP-1 receptor agonist and/or SGLT2 inhibitor with demonstrated benefit",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "02",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Pump and filter",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Heart failure and CKD",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Match proven heart and kidney benefit to product eligibility",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "03",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Metabolism",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Weight and liver",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Match weight and liver treatment to evidence, formulation and liver stage",
+                  "overflow": false,
+                  "fontSize": 14
+                }
+              ],
+              "allTextWithinBounds": true
+            },
+            {
+              "width": 639,
+              "slug": "noninsulin-diabetes-pharmacotherapy",
+              "lessonKey": "cardiorenal-weight-integration",
+              "labels": [
+                {
+                  "tag": "SPAN",
+                  "text": "Outcome integration",
+                  "overflow": false,
+                  "fontSize": 10.88
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Treat the organ risk even when glucose is near target",
+                  "overflow": false,
+                  "fontSize": 23.2
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "01",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Vessels",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "ASCVD",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Use a GLP-1 receptor agonist and/or SGLT2 inhibitor with demonstrated benefit",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "02",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Pump and filter",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Heart failure and CKD",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Match proven heart and kidney benefit to product eligibility",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "03",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Metabolism",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Weight and liver",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Match weight and liver treatment to evidence, formulation and liver stage",
+                  "overflow": false,
+                  "fontSize": 14
+                }
+              ],
+              "allTextWithinBounds": true
+            },
+            {
+              "width": 640,
+              "slug": "noninsulin-diabetes-pharmacotherapy",
+              "lessonKey": "cardiorenal-weight-integration",
+              "labels": [
+                {
+                  "tag": "SPAN",
+                  "text": "Outcome integration",
+                  "overflow": false,
+                  "fontSize": 10.88
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Treat the organ risk even when glucose is near target",
+                  "overflow": false,
+                  "fontSize": 23.2
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "01",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Vessels",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "ASCVD",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Use a GLP-1 receptor agonist and/or SGLT2 inhibitor with demonstrated benefit",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "02",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Pump and filter",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Heart failure and CKD",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Match proven heart and kidney benefit to product eligibility",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "03",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Metabolism",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Weight and liver",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Match weight and liver treatment to evidence, formulation and liver stage",
+                  "overflow": false,
+                  "fontSize": 14
+                }
+              ],
+              "allTextWithinBounds": true
+            }
+          ]
+        }
+      ],
+      "captures": [
+        "hero-noninsulin-diabetes-pharmacotherapy-1440.png",
+        "body-cardiorenal-weight-integration-0-1440.png",
+        "body-cardiorenal-weight-integration-1-1440.png",
+        "body-cardiorenal-weight-integration-2-1440.png",
+        "body-cardiorenal-weight-integration-3-1440.png",
+        "body-cardiorenal-weight-integration-4-1440.png",
+        "body-cardiorenal-weight-integration-5-1440.png",
+        "body-cardiorenal-weight-integration-6-1440.png",
+        "body-cardiorenal-weight-integration-7-1440.png",
+        "body-cardiorenal-weight-integration-8-1440.png",
+        "body-cardiorenal-weight-integration-9-1440.png",
+        "body-cardiorenal-weight-integration-10-1440.png",
+        "body-cardiorenal-weight-integration-11-1440.png",
+        "summary-cardiorenal-weight-integration-1440.png",
+        "concepts-cardiorenal-weight-integration-1440.png",
+        "keypoints-cardiorenal-weight-integration-1440.png",
+        "application-cardiorenal-weight-integration-1440.png",
+        "figure-cardiorenal-weight-integration-1440.png",
+        "check-cardiorenal-weight-integration-1440.png",
+        "references-noninsulin-diabetes-pharmacotherapy-1440.png",
+        "bank-noninsulin-diabetes-21-safety-1440.png",
+        "bank-noninsulin-diabetes-23-safety-1440.png",
+        "bank-noninsulin-diabetes-22-principle-1440.png",
+        "bank-noninsulin-diabetes-24-safety-1440.png",
+        "bank-noninsulin-diabetes-22-application-1440.png",
+        "bank-noninsulin-diabetes-21-application-1440.png",
+        "bank-noninsulin-diabetes-23-case-1440.png",
+        "bank-noninsulin-diabetes-24-principle-1440.png",
+        "bank-noninsulin-diabetes-21-case-1440.png",
+        "bank-noninsulin-diabetes-23-principle-1440.png",
+        "bank-noninsulin-diabetes-24-case-1440.png",
+        "bank-noninsulin-diabetes-22-case-1440.png",
+        "bank-noninsulin-diabetes-22-safety-1440.png",
+        "bank-noninsulin-diabetes-23-application-1440.png",
+        "bank-noninsulin-diabetes-24-application-1440.png",
+        "bank-noninsulin-diabetes-21-principle-1440.png",
+        "cumulative-cumulative-noninsulin-diabetes-pharmacotherapy-noninsulin-diabetes-23-application-1440.png",
+        "hero-noninsulin-diabetes-pharmacotherapy-390.png",
+        "body-cardiorenal-weight-integration-0-390.png",
+        "body-cardiorenal-weight-integration-1-390.png",
+        "body-cardiorenal-weight-integration-2-390.png",
+        "body-cardiorenal-weight-integration-3-390.png",
+        "body-cardiorenal-weight-integration-4-390.png",
+        "body-cardiorenal-weight-integration-5-390.png",
+        "body-cardiorenal-weight-integration-6-390.png",
+        "body-cardiorenal-weight-integration-7-390.png",
+        "body-cardiorenal-weight-integration-8-390.png",
+        "body-cardiorenal-weight-integration-9-390.png",
+        "body-cardiorenal-weight-integration-10-390.png",
+        "body-cardiorenal-weight-integration-11-390.png",
+        "summary-cardiorenal-weight-integration-390.png",
+        "concepts-cardiorenal-weight-integration-390.png",
+        "keypoints-cardiorenal-weight-integration-390.png",
+        "application-cardiorenal-weight-integration-390.png",
+        "figure-cardiorenal-weight-integration-390.png",
+        "check-cardiorenal-weight-integration-390.png",
+        "references-noninsulin-diabetes-pharmacotherapy-390.png",
+        "bank-noninsulin-diabetes-21-safety-390.png",
+        "bank-noninsulin-diabetes-23-safety-390.png",
+        "bank-noninsulin-diabetes-22-principle-390.png",
+        "bank-noninsulin-diabetes-24-safety-390.png",
+        "bank-noninsulin-diabetes-22-application-390.png",
+        "bank-noninsulin-diabetes-21-application-390.png",
+        "bank-noninsulin-diabetes-23-case-390.png",
+        "bank-noninsulin-diabetes-24-principle-390.png",
+        "bank-noninsulin-diabetes-21-case-390.png",
+        "bank-noninsulin-diabetes-23-principle-390.png",
+        "bank-noninsulin-diabetes-24-case-390.png",
+        "bank-noninsulin-diabetes-22-case-390.png",
+        "bank-noninsulin-diabetes-22-safety-390.png",
+        "bank-noninsulin-diabetes-23-application-390.png",
+        "bank-noninsulin-diabetes-24-application-390.png",
+        "bank-noninsulin-diabetes-21-principle-390.png",
+        "cumulative-cumulative-noninsulin-diabetes-pharmacotherapy-noninsulin-diabetes-23-application-390.png",
+        "native-figure-320.png",
+        "native-figure-640.png"
+      ],
+      "errors": []
+    },
+    "visualInspection": {
+      "status": "passed",
+      "inspectedAt": "2026-10-06T10:57:21.416266+00:00",
+      "captures": [
+        "hero-noninsulin-diabetes-pharmacotherapy-1440.png",
+        "body-cardiorenal-weight-integration-0-1440.png",
+        "body-cardiorenal-weight-integration-1-1440.png",
+        "body-cardiorenal-weight-integration-2-1440.png",
+        "body-cardiorenal-weight-integration-3-1440.png",
+        "body-cardiorenal-weight-integration-4-1440.png",
+        "body-cardiorenal-weight-integration-5-1440.png",
+        "body-cardiorenal-weight-integration-6-1440.png",
+        "body-cardiorenal-weight-integration-7-1440.png",
+        "body-cardiorenal-weight-integration-8-1440.png",
+        "body-cardiorenal-weight-integration-9-1440.png",
+        "body-cardiorenal-weight-integration-10-1440.png",
+        "body-cardiorenal-weight-integration-11-1440.png",
+        "summary-cardiorenal-weight-integration-1440.png",
+        "concepts-cardiorenal-weight-integration-1440.png",
+        "keypoints-cardiorenal-weight-integration-1440.png",
+        "application-cardiorenal-weight-integration-1440.png",
+        "figure-cardiorenal-weight-integration-1440.png",
+        "check-cardiorenal-weight-integration-1440.png",
+        "references-noninsulin-diabetes-pharmacotherapy-1440.png",
+        "bank-noninsulin-diabetes-21-safety-1440.png",
+        "bank-noninsulin-diabetes-23-safety-1440.png",
+        "bank-noninsulin-diabetes-22-principle-1440.png",
+        "bank-noninsulin-diabetes-24-safety-1440.png",
+        "bank-noninsulin-diabetes-22-application-1440.png",
+        "bank-noninsulin-diabetes-21-application-1440.png",
+        "bank-noninsulin-diabetes-23-case-1440.png",
+        "bank-noninsulin-diabetes-24-principle-1440.png",
+        "bank-noninsulin-diabetes-21-case-1440.png",
+        "bank-noninsulin-diabetes-23-principle-1440.png",
+        "bank-noninsulin-diabetes-24-case-1440.png",
+        "bank-noninsulin-diabetes-22-case-1440.png",
+        "bank-noninsulin-diabetes-22-safety-1440.png",
+        "bank-noninsulin-diabetes-23-application-1440.png",
+        "bank-noninsulin-diabetes-24-application-1440.png",
+        "bank-noninsulin-diabetes-21-principle-1440.png",
+        "cumulative-cumulative-noninsulin-diabetes-pharmacotherapy-noninsulin-diabetes-23-application-1440.png",
+        "hero-noninsulin-diabetes-pharmacotherapy-390.png",
+        "body-cardiorenal-weight-integration-0-390.png",
+        "body-cardiorenal-weight-integration-1-390.png",
+        "body-cardiorenal-weight-integration-2-390.png",
+        "body-cardiorenal-weight-integration-3-390.png",
+        "body-cardiorenal-weight-integration-4-390.png",
+        "body-cardiorenal-weight-integration-5-390.png",
+        "body-cardiorenal-weight-integration-6-390.png",
+        "body-cardiorenal-weight-integration-7-390.png",
+        "body-cardiorenal-weight-integration-8-390.png",
+        "body-cardiorenal-weight-integration-9-390.png",
+        "body-cardiorenal-weight-integration-10-390.png",
+        "body-cardiorenal-weight-integration-11-390.png",
+        "summary-cardiorenal-weight-integration-390.png",
+        "concepts-cardiorenal-weight-integration-390.png",
+        "keypoints-cardiorenal-weight-integration-390.png",
+        "application-cardiorenal-weight-integration-390.png",
+        "figure-cardiorenal-weight-integration-390.png",
+        "check-cardiorenal-weight-integration-390.png",
+        "references-noninsulin-diabetes-pharmacotherapy-390.png",
+        "bank-noninsulin-diabetes-21-safety-390.png",
+        "bank-noninsulin-diabetes-23-safety-390.png",
+        "bank-noninsulin-diabetes-22-principle-390.png",
+        "bank-noninsulin-diabetes-24-safety-390.png",
+        "bank-noninsulin-diabetes-22-application-390.png",
+        "bank-noninsulin-diabetes-21-application-390.png",
+        "bank-noninsulin-diabetes-23-case-390.png",
+        "bank-noninsulin-diabetes-24-principle-390.png",
+        "bank-noninsulin-diabetes-21-case-390.png",
+        "bank-noninsulin-diabetes-23-principle-390.png",
+        "bank-noninsulin-diabetes-24-case-390.png",
+        "bank-noninsulin-diabetes-22-case-390.png",
+        "bank-noninsulin-diabetes-22-safety-390.png",
+        "bank-noninsulin-diabetes-23-application-390.png",
+        "bank-noninsulin-diabetes-24-application-390.png",
+        "bank-noninsulin-diabetes-21-principle-390.png",
+        "cumulative-cumulative-noninsulin-diabetes-pharmacotherapy-noninsulin-diabetes-23-application-390.png",
+        "native-figure-320.png",
+        "native-figure-640.png"
+      ],
+      "captureCount": 76,
+      "desktopMobilePairs": 37,
+      "nativePixelBoardsInspected": [
+        "board-00.png",
+        "board-01.png",
+        "board-02.png",
+        "board-03.png",
+        "board-04.png",
+        "board-05.png",
+        "board-06.png",
+        "board-07.png",
+        "board-08.png",
+        "board-09.png",
+        "board-10.png",
+        "board-11.png",
+        "board-12.png"
+      ],
+      "nativeBoardsCount": 13,
+      "nativeFigureWidthsInspected": [
+        320,
+        640
+      ],
+      "rescaledForInspection": false,
+      "observations": [
+        "Whole twelve teaching bodies, metadata, concept labels, application, key points and embedded-check feedback readable without clipping at desktop and mobile sizes.",
+        "All sixteen whole question cards and the derived CKD cumulative card show readable wrapping, choices, answer feedback and review links.",
+        "All fifty reference titles and link arrows wrap within the desktop and mobile panels.",
+        "Outcome figure text remains within bounds, with explanatory text at least 14px at tested widths; narrow-screen column wrapping inspected."
+      ],
+      "screenshotSha256": {
+        "hero-noninsulin-diabetes-pharmacotherapy-1440.png": "357f1a5978f086dd8d7a0c030d2d0ada0d5d12d31ba9402b4fe7c2ee07295c8c",
+        "body-cardiorenal-weight-integration-0-1440.png": "f42384dbfe6b09cb62467d5ae3f8013b854c5503f7a3e2b2a1e25f28acb7eb2e",
+        "body-cardiorenal-weight-integration-1-1440.png": "bfd4449fc1fc393361a40e53d0516e134c4261378a32a2cdf585c95b39ff7713",
+        "body-cardiorenal-weight-integration-2-1440.png": "8c4f04ee70c5b926a2551968e06d5f727e813ed6ba05afe73cba7073649276bc",
+        "body-cardiorenal-weight-integration-3-1440.png": "57d7b8ae86481baec374256315c403045fd8003ba5c3078f03923321d6930e43",
+        "body-cardiorenal-weight-integration-4-1440.png": "abd60c061a5e6817796f266360f1ab7dbbfa22a3ab30bdec6ddffd71f0dd4428",
+        "body-cardiorenal-weight-integration-5-1440.png": "b26d78833fccdf8c5abc52dbc33cfd25e3b975714400bbf0ac5f931d35ddcaaa",
+        "body-cardiorenal-weight-integration-6-1440.png": "585d06542491f6636134744cbb8980eb2056d0be9daf5bfc054d627f7dee460a",
+        "body-cardiorenal-weight-integration-7-1440.png": "6c921f46d68461ca1b29fcefc2d60fc757d5d9c90fa29ee4d6339ffe0297e0df",
+        "body-cardiorenal-weight-integration-8-1440.png": "5529ccd6486acd80e677026f9432fa475e5f9d09949978a55d3e22ca2127acbd",
+        "body-cardiorenal-weight-integration-9-1440.png": "eea504d11308ac6e69529c6ec7585c4ab7c18b4a448a91db1b76928439c969ea",
+        "body-cardiorenal-weight-integration-10-1440.png": "175cc5ef5b2f73815679a3a3586812b9a0e3191ac22b33b6898b5cb401fcfe16",
+        "body-cardiorenal-weight-integration-11-1440.png": "35f7a79700b89d746cfed5062d40301ef378a042287223a529d3c0655c203971",
+        "summary-cardiorenal-weight-integration-1440.png": "d732033f39d82c488a9cdc3bd980e9dff05f847ee6d6c0ce502fbf1df959a098",
+        "concepts-cardiorenal-weight-integration-1440.png": "d5216ab1db0f034b00daaf5963a3eabdb5011c6ae9c3adb7caaea8f12a576624",
+        "keypoints-cardiorenal-weight-integration-1440.png": "4b95935e9d0de8285849c81937bda15e1e9103215aefb964cc8c0808b3dcf5af",
+        "application-cardiorenal-weight-integration-1440.png": "79c36d76e0a553a343a7a17c55809fc5a2e8b3fc9128e26c572dadd3eb14922d",
+        "figure-cardiorenal-weight-integration-1440.png": "1b6e196ed078841d4e6fc2d87bdbe5cfeb86b82d99320f24e3d2abbb706d3aec",
+        "check-cardiorenal-weight-integration-1440.png": "220810d7dd979d309d8494b0866580d99c635123d46f0664cea3cd6ddeb1beb1",
+        "references-noninsulin-diabetes-pharmacotherapy-1440.png": "8a4b62902177abdfd5559ad49a41158de4db9894870b58dae2f944d84c0076fd",
+        "bank-noninsulin-diabetes-21-safety-1440.png": "c1dd91a28ac5c3d1e758c93fa7ce7337b6923223c62feb385747ac1a409ab49d",
+        "bank-noninsulin-diabetes-23-safety-1440.png": "2684e8e709c0c10ec025e47f60c43c431dd825d86a62ad75cb4bb5debbf6d2fd",
+        "bank-noninsulin-diabetes-22-principle-1440.png": "3fbbda3f2921ce12d8cff4010ac612878d6771c24c10a67d228acef1f1298cdc",
+        "bank-noninsulin-diabetes-24-safety-1440.png": "969bb80555bbe76d21a513de6877f5eef26edda598fbe667c49df1bf56d450cb",
+        "bank-noninsulin-diabetes-22-application-1440.png": "8cdd0ee8cb935d127da37df8cf9a1e3098003f282ff55ece825ff739dfdfe20e",
+        "bank-noninsulin-diabetes-21-application-1440.png": "5150e71d0410dafb1f7ea11acfb10f2552ca7c0a17305c33e7fd5f62bd583111",
+        "bank-noninsulin-diabetes-23-case-1440.png": "67821d13068c6c060aed2e88899c2463c71d8cec4bb73da7e91b2422f811ca05",
+        "bank-noninsulin-diabetes-24-principle-1440.png": "006765b0a87aeada08a47083c73d37c3462444867307e19444a8e0e5337400f6",
+        "bank-noninsulin-diabetes-21-case-1440.png": "604682069f90d57b5cd9d89eb52364703ab47d3730432727264b85ee5dc429d6",
+        "bank-noninsulin-diabetes-23-principle-1440.png": "f1419629365f487b035a1ec5635bc615a6765acfe2d358e283c74bd7b3b63dfb",
+        "bank-noninsulin-diabetes-24-case-1440.png": "69c2a3833a012586fac887a558c81aa8862e4d9dfa8201bcf70aa9ff600e7252",
+        "bank-noninsulin-diabetes-22-case-1440.png": "bbc2da33c939a0888a2f133b097db95401a8de2fccc90d62bbb51162d1fe6c20",
+        "bank-noninsulin-diabetes-22-safety-1440.png": "06e2bc2df3cc98e53c61a6f94b4ed98d9b12b0970d40ad26a8d166692a131adb",
+        "bank-noninsulin-diabetes-23-application-1440.png": "a322653e20c0fba3787028197646a459e07a4bf2959cba98f16cd00bcfcc8872",
+        "bank-noninsulin-diabetes-24-application-1440.png": "5d1987612ff933664108db2622ec41b706aecf9f64e36263f9100f3052ae89f8",
+        "bank-noninsulin-diabetes-21-principle-1440.png": "08a21425c04fe340ea662db060548f0abf2431171a599bdd66dc779ddecf5e22",
+        "cumulative-cumulative-noninsulin-diabetes-pharmacotherapy-noninsulin-diabetes-23-application-1440.png": "6b9e4fbb2591c24686d754a416ef9eb9333a00a9b06d2b8fcfa352ea3e19ed38",
+        "hero-noninsulin-diabetes-pharmacotherapy-390.png": "7605aa62fe153bcdc72584c583e906632fc8401732b9ec703a8e86a1cfed0822",
+        "body-cardiorenal-weight-integration-0-390.png": "3e73893d0f5063d307387713a34745cf64738ca68ad02bad7b56bd9cb5333bea",
+        "body-cardiorenal-weight-integration-1-390.png": "32de4a0262d30c77876fe0d217ab4c6a32d6adb1f231baa2868a584cdb37b823",
+        "body-cardiorenal-weight-integration-2-390.png": "98eacccd4202011de4e09453b29440ffedcb067a37bd2d8ba6a30b7c34f51044",
+        "body-cardiorenal-weight-integration-3-390.png": "9729de6ecf41b4d8148949b87877a479303f117f4b37d1e6af093602984679c1",
+        "body-cardiorenal-weight-integration-4-390.png": "82f90a00c030c8ceb5df4979fd3e4975f30e77e60c01bf7875117844039e372b",
+        "body-cardiorenal-weight-integration-5-390.png": "a79fde227f623a62075df2b5d4ba7f1a35f547619dde81dbb7a8d49212fe10cc",
+        "body-cardiorenal-weight-integration-6-390.png": "0458e968feba906a74e2ccc6bf07fa9bb72f8db44278a97e3ce21efc5d0fd6a0",
+        "body-cardiorenal-weight-integration-7-390.png": "90572efc03f68af6fe35e41b8906547ccb12eb005f09f43ae501e2a3958987be",
+        "body-cardiorenal-weight-integration-8-390.png": "03d5be7498a188638b285dca2385b4a1edc2c322571252b51fec981c4d01ce4d",
+        "body-cardiorenal-weight-integration-9-390.png": "aea76dd4081299febddbb7e11489b8622c19240a20b84ee9ac2b9828cd83dc71",
+        "body-cardiorenal-weight-integration-10-390.png": "8d9089d247cd679f19c1d48753c2bbb9d1edffe8855ba89c652bb35518e6de67",
+        "body-cardiorenal-weight-integration-11-390.png": "a75ac40570712cefc0d8ccee98cf7e277428b71fcdf48a5cdafda078a6bb6e6d",
+        "summary-cardiorenal-weight-integration-390.png": "978e07367a1f5fd4c0174e653beef169984c08f3442d68774cd56d7386ee9e67",
+        "concepts-cardiorenal-weight-integration-390.png": "5f00cb7c76552b8c195d49eaf9da59d60e041c1b97f8b7f8e213b1cb2b8ec2e4",
+        "keypoints-cardiorenal-weight-integration-390.png": "777de922927efde841814eaff996bcf6cb893273c6708c8d264def31f52d76d4",
+        "application-cardiorenal-weight-integration-390.png": "88fd5f94ce41d81b58797e1160d879d39818243f5b970023da0b2cfff6094977",
+        "figure-cardiorenal-weight-integration-390.png": "8e6be8f382eaa3d07fa85512cc05f0e0b72a12c89aae9ad04fb5b0d5a483e620",
+        "check-cardiorenal-weight-integration-390.png": "73628501ac50ae6d64e9ad730452225e50944a92b604e8f436669d104e81ee34",
+        "references-noninsulin-diabetes-pharmacotherapy-390.png": "da6ec1f17799901b231bc029811fc8d5fb05e1b246a760a9dd2fefda37768d4d",
+        "bank-noninsulin-diabetes-21-safety-390.png": "475be7b8d02ee89460165ed2009e7d2baec81a141f01eabe01469d72a6abd46d",
+        "bank-noninsulin-diabetes-23-safety-390.png": "19eba22d1122c3d5cbcc760504b9d92dbb18a6ead02b83084f2d401715692051",
+        "bank-noninsulin-diabetes-22-principle-390.png": "b6eaf63d81ac1dcf62b18244d51ff5c88000ad08ed25f069f3d0e26f0417bd69",
+        "bank-noninsulin-diabetes-24-safety-390.png": "f6f0d81abf1f1a6aedbab3344dc10b7e14ff19d2367d359ac410bc630148b50e",
+        "bank-noninsulin-diabetes-22-application-390.png": "7cc08526caac04518340a864dc37a840ce212bc115ce599663fb96b691674cba",
+        "bank-noninsulin-diabetes-21-application-390.png": "47f58b17e20ea16735194aa669f1a6eb741eec1c2b73465776b7615b656be7f6",
+        "bank-noninsulin-diabetes-23-case-390.png": "69a4bedd3eb9f871522659f47d398bd4935afb69f98e15135e90dbc0a8088af2",
+        "bank-noninsulin-diabetes-24-principle-390.png": "195e062aabef1801ee5a9b110dcfe7a26bee007cdb747bc686b3c52505e23dfc",
+        "bank-noninsulin-diabetes-21-case-390.png": "d427c3e47eadfc2266eb7b37ba7531e5b4bc77a32393852d1facc54303aadfd9",
+        "bank-noninsulin-diabetes-23-principle-390.png": "f3d9cca96d5ddaeb838413eec78cbe8cfa99d47621fff46ca21c19738938001c",
+        "bank-noninsulin-diabetes-24-case-390.png": "7efd3b396662e4e17858ca41bc4cdb5507a65274bed268c4d36021d672ae8497",
+        "bank-noninsulin-diabetes-22-case-390.png": "8a057124b83f44dae474c27c98544c8405436fb66bd65bfcc58cfa91d156e048",
+        "bank-noninsulin-diabetes-22-safety-390.png": "c03a46a742661005a0e20fb161460e9a4b3e8eeb41e71a813488f9d6ca2433b5",
+        "bank-noninsulin-diabetes-23-application-390.png": "1afe1e478b4059d151e6504a349aaa3810e95ed3da8154fd0cf11e876d05f5f2",
+        "bank-noninsulin-diabetes-24-application-390.png": "21bc85ab20d1cd715c04bea3685766866837be93e7ecaa8975ff0a8d2e23abc0",
+        "bank-noninsulin-diabetes-21-principle-390.png": "ff16e6c0a75ee6e462c83864eca6b3b33e3ebf6802cd44afa507548dda788752",
+        "cumulative-cumulative-noninsulin-diabetes-pharmacotherapy-noninsulin-diabetes-23-application-390.png": "6b74aadaa563d28a58f54ba9797854d7f97eb617352e6e07bc883643599f72ae",
+        "native-figure-320.png": "55d837e96ec6c10269b56a90bb5d43461ba1b3a711eef259e999aa61582c5b2f",
+        "native-figure-640.png": "c8c4486e968e96359bd6f467debc594b7dfc68cb65e71d9f500b40ae4950d6f9"
+      },
+      "pairAndBoardSha256": {
+        "pair-hero-noninsulin-diabetes-pharmacotherapy.png": "2f4245c0d7a5cd3b3981f71688284927301a4e0946f18c07c83bc4b5d30c3844",
+        "pair-body-cardiorenal-weight-integration-0.png": "96d352c8992306d0dba1efe64f3b2d14bb9604ec59f62da310f2ae7ff7141651",
+        "pair-body-cardiorenal-weight-integration-1.png": "bb6d544d0731e6ae974c2fcf079806bd4a278a21c7b5a09b5e2651f8bdf620c6",
+        "pair-body-cardiorenal-weight-integration-2.png": "68f310c01dac4dac234495091f18ba7dc031238f677045fc100aca8b6c6aad18",
+        "pair-body-cardiorenal-weight-integration-3.png": "15d86260dcf28fcc129742d5132ed18de37d189ae053ce278309ba4c77b02eb4",
+        "pair-body-cardiorenal-weight-integration-4.png": "ccf0e785398b51ac0941e7444a172ee1cfdfd8ce95d33590248fbd105b6c986a",
+        "pair-body-cardiorenal-weight-integration-5.png": "199c37067fc31156477c70850400355f72913102b5a005c7c1ba12bf9f78dc70",
+        "pair-body-cardiorenal-weight-integration-6.png": "c76b9d15462cb564ec24b545f477529455e7be5c9d05c903f6d0cbc34dbd2f75",
+        "pair-body-cardiorenal-weight-integration-7.png": "364c243f406ad90fabca9028ad9fbc4dfa1a00e747f0eb9af7a4482a9b03bddb",
+        "pair-body-cardiorenal-weight-integration-8.png": "0f6b13d3754bf1425f396859f72259418d8122a3b9a1cf727ea598e5d34741cc",
+        "pair-body-cardiorenal-weight-integration-9.png": "b6a4fbdf80b1ee3a461f3a782526c54bd59bd575e5f9243d173d8ce521c8a4ad",
+        "pair-body-cardiorenal-weight-integration-10.png": "39c5d85f48721488803d595149036c48b8269191cc892f764917c5cd82792312",
+        "pair-body-cardiorenal-weight-integration-11.png": "64c693c07f1b3a94b614efae0cad8fe2a6ab55cb54c9f1d9d3fdea6e612b685a",
+        "pair-summary-cardiorenal-weight-integration.png": "755a7f680b41e28e5287842c12605570e2a23f9e9fe9f96b2855d95292458128",
+        "pair-concepts-cardiorenal-weight-integration.png": "cf353dffe0b3e070f916f61863a95264c52560e52fadf553b9947d7db02487cc",
+        "pair-keypoints-cardiorenal-weight-integration.png": "15e56bc763318c0f4cac59c9ec592692fe5470d8da6a1ff1dbf79e7e6ba96a0d",
+        "pair-application-cardiorenal-weight-integration.png": "fb78d2b8bcf211258192ba65e03cdecfe33078dcc4d62cf1867722e489340a72",
+        "pair-figure-cardiorenal-weight-integration.png": "562a705e52d25a41714299ae3d8175ed1c295d2f77b02c9bf7ce27dd3f5c786a",
+        "pair-check-cardiorenal-weight-integration.png": "8aa141eef4e29c77cfe9d1052a1170263a7d3ed8f04afe6cc7524e36d9f7cbfe",
+        "pair-references-noninsulin-diabetes-pharmacotherapy.png": "d84f4c5ab974f795c74d55e567869156200143c527c38c041f6252373edc3bb5",
+        "pair-bank-noninsulin-diabetes-21-safety.png": "6f81b2fb9197f146768c60706ee00598c47099302180aeb003e56251ee2e3fb7",
+        "pair-bank-noninsulin-diabetes-23-safety.png": "5fb9e2c73815d7be88fb2fac0014f4ef19ca397e8cd201f83cc7e7f9ccb15c58",
+        "pair-bank-noninsulin-diabetes-22-principle.png": "e934dab1f2f2b6fa896bfa695e5d5f0c2ebb859b1b0b6c7686d8df7c625219d6",
+        "pair-bank-noninsulin-diabetes-24-safety.png": "402e1107b7ba362cea20b1db4e867d589f390b1c6eb0438b52801dccb6c588f6",
+        "pair-bank-noninsulin-diabetes-22-application.png": "69640ec8f7b516873907e176f1b825b0ba61af29fcffe587ff863d65a102da71",
+        "pair-bank-noninsulin-diabetes-21-application.png": "f4394184f82507ad100b1bcbbe6b6e6726bb4d5b1e284677e1fba350c806b9f3",
+        "pair-bank-noninsulin-diabetes-23-case.png": "573de248b03a7dcd49b9ae6249e31c1fb7bfa43adf9bc637be27022f3d5d5c8b",
+        "pair-bank-noninsulin-diabetes-24-principle.png": "b9cba3e491c03a957d1fef7e912db71348eac9f79b218be8a175d89a4c6e78ce",
+        "pair-bank-noninsulin-diabetes-21-case.png": "a829012cfda303ce0fc81da46a17a734870a54ec37b8e79c636a6be27abe3d82",
+        "pair-bank-noninsulin-diabetes-23-principle.png": "1d72f73b72f27b6fff82fc6f3f50c0b79045715d4024ed16e1c81230fd6b59d7",
+        "pair-bank-noninsulin-diabetes-24-case.png": "235271410e1448bb0bbc5a6b74cd0a1deb270d6486fb461b5819953d1b4c924a",
+        "pair-bank-noninsulin-diabetes-22-case.png": "1be45c1b7461f5f15f2ab978e5fc62363df5dad7aef8223aa24db4b508af131e",
+        "pair-bank-noninsulin-diabetes-22-safety.png": "b0a64ac10c499322b19795745754f56276645bcaeb007d9826c2af1a4b438dff",
+        "pair-bank-noninsulin-diabetes-23-application.png": "c977db0fa875af784c1b773e871758444bed02b9f18a9eac9c5407d309cd9bb5",
+        "pair-bank-noninsulin-diabetes-24-application.png": "2f0639348bc5c7557c1421b79559ef66164007bbf300bdd66a45b5906c8dd1a9",
+        "pair-bank-noninsulin-diabetes-21-principle.png": "7e05ac671da25e19c49ec165aabac45362831336b3f86addeaf1956bf747cc3f",
+        "pair-cumulative-cumulative-noninsulin-diabetes-pharmacotherapy-noninsulin-diabetes-23-application.png": "2c3272b738fb5e42a8340317bd4a2251238eb598f8f204a9fe39948831deb70b",
+        "board-00.png": "bea5f42ad4b29bf0f2f3e5c93c64686fab4710b8ae239d613a65ded66e2c6877",
+        "board-01.png": "3540bc6748078d3fdcc4a690099cdd2252bee49c85f648a95f24cc69f0254cf2",
+        "board-02.png": "b5b88822f104c2dd0521579908c1545fa2f331e438c809570c8c499cb58025e7",
+        "board-03.png": "aa3be5e5e3d28f26a3569f55f5b907ca5ce832fbb46459f3fa50eefd2946c7ac",
+        "board-04.png": "1fb1b7995919a53c10b057aa6e7f255bfd9a5cedadf4753619bdf6243105e5a7",
+        "board-05.png": "8807a23205628c1d20935ce5a952543f2e635b9781f7190d518beaf0011406cd",
+        "board-06.png": "34a40459d085bd37004bd151fe6067ab4c0f0b9350056869b05a624870127553",
+        "board-07.png": "6c9d81ad4797032451c1047f905f6bb9cb66dc7f1f33065249b3d9e5fcfb4164",
+        "board-08.png": "8881d3e0fc878e67415b91a490b5f5ca15ce8b131c95676b805b7e009b471862",
+        "board-09.png": "de1c2087f9e5e601c39630e3f9e09867ae93124fb5b1350e0b759d0d1b1a6d66",
+        "board-10.png": "e99c6ef17fa287bd2ded77addb400dceb05400ae382b91f12ac65dfa2d9bb6db",
+        "board-11.png": "02bce28f2a08a9d9cee0f78ad9ef17f7191c7c81d7e2124ea5bf6e6cd1dd2593",
+        "board-12.png": "2c3272b738fb5e42a8340317bd4a2251238eb598f8f204a9fe39948831deb70b"
+      },
+      "privateSourceViews": "Five whole book pages, thirteen selected product-label pages and ADA Figure9.4 previously read and viewed at original detail; source hashes recorded separately."
+    },
+    "limits": "Isolated unauthenticated production preview. Complete lesson, all four embedded-check choices and sixteen bank cases in correct/incorrect shuffled attempts at 1440/390; figure bounds at five widths. One associated CKD cumulative item verified; other1179 objects unchanged. One lesson, twelve questions, working draft variants, parent chapters and full goal remain open."
+  },
+  "preservation": {
+    "status": "passed",
+    "baselinePathsChecked": 820,
+    "allUnrelatedDraftBytesAndDeletionsPreservedAtRelease": true,
+    "observedConcurrentUnrelatedChangesRetainedAndExcluded": {},
+    "otherUnrelatedPathsMatchInitialBaseline": true,
+    "preexistingContentBytesRecoveredByRemovingExactScopedTails": true,
+    "allOtherWorkingLedgerFieldsAndEntriesPreserved": true,
+    "allOtherCommittedLedgerFieldsAndEntriesPreserved": true,
+    "oneAuditBranchLessonVerifiedAndWorkingDraftStatusPreserved": true,
+    "onlyVerifiedHeadDerivedContentStagedOrCommitted": true,
+    "onlyFourCardiorenalFigureLinesChangedAndCumulativeSelectorUnchanged": true,
+    "preexistingWorkingRenalCaptionRetainedVerbatim": true,
+    "scope": [
+      "src/data/modules/noninsulinDiabetesPharmacotherapy.js",
+      "src/data/questionBanks/noninsulinDiabetesPharmacotherapy.js",
+      "src/components/learn/NoninsulinDiabetesPharmacotherapyVisual.jsx",
+      "docs/clinical-audit/enteral-nutrition-broader-cardiorenal-review.json",
+      "docs/clinical-audit/module-ledger.json",
+      "docs/clinical-audit/chapter-ledger.json",
+      "docs/clinical-audit/sequential-resume.json"
+    ]
+  },
+  "publication": {
+    "mainMerge": "not performed",
+    "production": "not verified"
+  },
+  "wholeGoalComplete": false,
+  "nextAction": "Continue noninsulin-diabetes-pharmacotherapy at combination-deintensification-special-settings, reviewing the whole final lesson, every anchored question and derived cumulative item against the book and approved primary sources. Preserve nine verified lessons and 108 verified bank IDs; one lesson and twelve questions remain open. After its verification, reconcile the full parent module including metadata and complete reference coverage before whole-module certification. Preserve the separate working draft of eleven lessons and ninety-two authored questions without inferring certification. Whole MASLD and ALD parents are verified; rifaximin HE is verified, with nine other lessons/147 questions reserved for the Chapter 22 parent audit. Preserve the 245-match contextual inventory, four HIV PI choices, prior ICU withdrawal and all feeding dependencies. Return to Chapter 11 printed 161/PDF169 after broader feeding dependencies. Chapters 11/19/22/44 and Chapter 1 printed 7/PDF19 checklist 15 remain open; the full 82-chapter goal continues.",
+  "receiptCommit": "Receipt follows exact verified content commit; its own remote hash separately verified in execution output."
+}
