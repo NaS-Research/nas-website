@@ -1629,3 +1629,262 @@ for (const [id, updates] of Object.entries({
 })) {
   Object.assign(influenzaAntiviralPharmacologyQuestionBank.find((question) => question.id === id), updates);
 }
+
+
+// Whole zanamivir questions reviewed with stable IDs and keyed indices.
+for (const [id, updates] of Object.entries({
+  "influenza-antiviral-pharmacology-097": {
+    "id": "influenza-antiviral-pharmacology-097",
+    "lesson": "zanamivir-pharmacology-safety",
+    "question": "Which statement correctly links zanamivir\u2019s antiviral target and its labeled delivery?",
+    "choices": [
+      "It inhibits influenza neuraminidase and is inhaled orally through the supplied Diskhaler",
+      "It inhibits neuraminidase and its Diskhaler powder can be nebulized interchangeably",
+      "It inhibits the M2 channel and is swallowed as a Relenza tablet",
+      "It inhibits the PA endonuclease and is given as an intravenous Relenza push"
+    ],
+    "answer": 0,
+    "rationale": "Zanamivir inhibits neuraminidase and uses the supplied oral-inhalation device. Nebulization of this powder is prohibited; M2 and PA endonuclease are different targets, and Relenza is neither a tablet nor an intravenous push.",
+    "reviewHref": "#zanamivir-pharmacology-safety"
+  },
+  "influenza-antiviral-pharmacology-098": {
+    "id": "influenza-antiviral-pharmacology-098",
+    "lesson": "zanamivir-pharmacology-safety",
+    "question": "Which preparation demonstrates correct Rotadisk placement and piercing?",
+    "choices": [
+      "Place the flat side up, keep the device level and fully raise then close the piercing flap when ready",
+      "Place the flat side down and inhale before piercing any foil",
+      "Pierce all four blisters in advance and store them open for later doses",
+      "Raise the flap only partway so the lower foil stays intact"
+    ],
+    "answer": 0,
+    "rationale": "The flat side faces up with blisters underneath; the level device and fully raised flap allow both foil surfaces to be pierced just before use. The alternatives invert placement, omit piercing, prepare blisters prematurely or leave preparation incomplete.",
+    "reviewHref": "#zanamivir-pharmacology-safety"
+  },
+  "influenza-antiviral-pharmacology-099": {
+    "id": "influenza-antiviral-pharmacology-099",
+    "lesson": "zanamivir-pharmacology-safety",
+    "question": "A trained caregiver is showing a child how to finish a zanamivir dose. Which demonstration is correct?",
+    "choices": [
+      "Exhale away, inhale through the mouthpiece with side holes clear, then advance and repeat with a second blister",
+      "Exhale into the loaded mouthpiece to disperse the powder before inhaling",
+      "Cover both side air holes tightly and inhale through the nose",
+      "Use one blister and count it as the complete 10 mg dose"
+    ],
+    "answer": 0,
+    "rationale": "The technique requires mouth inhalation with open side holes and two separately prepared blisters. Exhaling into the device, blocking airflow or inhaling nasally is incorrect; one blister supplies only 5 mg of the labeled 10 mg dose.",
+    "reviewHref": "#zanamivir-pharmacology-safety"
+  },
+  "influenza-antiviral-pharmacology-100": {
+    "id": "influenza-antiviral-pharmacology-100",
+    "lesson": "zanamivir-pharmacology-safety",
+    "question": "An age-eligible child cannot demonstrate effective Diskhaler use. What is the appropriate next step?",
+    "choices": [
+      "Assess device ability, trained adult supervision and another suitable antiviral route if delivery remains inadequate",
+      "Assume age eligibility guarantees effective inspiratory delivery",
+      "Dissolve the powder for a nebulizer as a routine substitution",
+      "Prescribe additional blisters without evaluating technique"
+    ],
+    "answer": 0,
+    "rationale": "Eligibility alone does not establish delivery. Demonstration and trained adult supervision are required considerations; persistent inability calls for a suitable alternative. Nebulizing the powder is prohibited, and extra blisters do not correct an unassessed device problem.",
+    "reviewHref": "#zanamivir-pharmacology-safety"
+  },
+  "influenza-antiviral-pharmacology-101": {
+    "id": "influenza-antiviral-pharmacology-101",
+    "lesson": "zanamivir-pharmacology-safety",
+    "question": "Which regimen matches labeled zanamivir treatment of uncomplicated influenza in an eligible patient aged 7 years or older?",
+    "choices": [
+      "10 mg by two separate 5 mg inhalations twice daily for five days",
+      "One 5 mg inhalation twice daily for five days",
+      "10 mg by two inhalations once daily as the treatment schedule",
+      "10 mg once by intravenous push"
+    ],
+    "answer": 0,
+    "rationale": "Treatment is two 5 mg inhalations per 10 mg dose, twice daily for five days. One blister underfills the labeled dose; once daily is a prophylaxis frequency, and intravenous push is not the labeled Relenza route.",
+    "reviewHref": "#zanamivir-pharmacology-safety"
+  },
+  "influenza-antiviral-pharmacology-102": {
+    "id": "influenza-antiviral-pharmacology-102",
+    "lesson": "zanamivir-pharmacology-safety",
+    "question": "When two zanamivir treatment doses are possible on the first day, which spacing matches the label?",
+    "choices": [
+      "At least two hours apart on day one, then approximately twelve hours apart on later days",
+      "Both doses at the same moment on day one, then approximately twelve hours apart",
+      "At least two hours apart for every subsequent twice-daily dose throughout the course",
+      "One dose on day one followed by a mandatory skipped second day"
+    ],
+    "answer": 0,
+    "rationale": "The label allows two first-day doses at least two hours apart, followed by approximately twelve-hour spacing. Simultaneous dosing, perpetuating a two-hour interval or inventing a skipped day does not match that schedule.",
+    "reviewHref": "#zanamivir-pharmacology-safety"
+  },
+  "influenza-antiviral-pharmacology-103": {
+    "id": "influenza-antiviral-pharmacology-103",
+    "lesson": "zanamivir-pharmacology-safety",
+    "question": "Which calculation correctly converts the standard five-day twice-daily zanamivir treatment course into blisters?",
+    "choices": [
+      "Ten complete doses require twenty 5 mg blisters",
+      "Ten complete doses require ten 5 mg blisters",
+      "Five complete doses require twenty 5 mg blisters",
+      "Twenty complete doses require ten 5 mg blisters"
+    ],
+    "answer": 0,
+    "rationale": "Two doses daily for five days gives ten doses; each uses two blisters, so twenty are required. Ten blisters supplies only five doses, while the other alternatives mismatch dose and blister counts.",
+    "reviewHref": "#zanamivir-pharmacology-safety"
+  },
+  "influenza-antiviral-pharmacology-104": {
+    "id": "influenza-antiviral-pharmacology-104",
+    "lesson": "zanamivir-pharmacology-safety",
+    "question": "Which statement correctly distinguishes zanamivir prophylaxis durations?",
+    "choices": [
+      "The label\u2019s household course is ten days, while CDC ordinary prophylaxis runs seven days after the last known exposure",
+      "The labeled ten-day household course and CDC seven-day course use an identical duration and stopping clock",
+      "The 28-day labeled community regimen applies automatically to every child aged 5 or older",
+      "All prophylaxis regimens use the treatment frequency of twice daily"
+    ],
+    "answer": 0,
+    "rationale": "The labeled household duration and CDC last-exposure duration need distinct context and clocks. They are not identical. The community label regimen is described for adults/adolescents, and prophylaxis is once daily rather than the treatment frequency.",
+    "reviewHref": "#zanamivir-pharmacology-safety"
+  },
+  "influenza-antiviral-pharmacology-105": {
+    "id": "influenza-antiviral-pharmacology-105",
+    "lesson": "zanamivir-pharmacology-safety",
+    "question": "How should asthma or COPD affect routine selection of inhaled zanamivir?",
+    "choices": [
+      "Choose another suitable antiviral because zanamivir is not recommended in underlying airway disease",
+      "Choose zanamivir routinely because asthma improves inspiratory drug delivery",
+      "Ignore the airway history if the two-blister dose is calculated correctly",
+      "Treat bronchodilator possession as proof that the warning no longer applies"
+    ],
+    "answer": 0,
+    "rationale": "The airway warning supports another suitable antiviral. Asthma does not establish improved delivery; correct dose arithmetic and possession of a bronchodilator do not remove bronchospasm risk.",
+    "reviewHref": "#zanamivir-pharmacology-safety"
+  },
+  "influenza-antiviral-pharmacology-106": {
+    "id": "influenza-antiviral-pharmacology-106",
+    "lesson": "zanamivir-pharmacology-safety",
+    "question": "A patient develops bronchospasm and declining respiratory function during Relenza treatment. What is the appropriate response?",
+    "choices": [
+      "Stop Relenza and obtain immediate respiratory treatment, with hospital care if needed",
+      "Continue every remaining dose before assessing the decline",
+      "Double the next dose to overcome the bronchospasm",
+      "Convert the same powder into a mechanical-ventilation solution"
+    ],
+    "answer": 0,
+    "rationale": "The label directs discontinuation and immediate treatment for bronchospasm or respiratory decline. Continuing without assessment or increasing the dose is not warning management, and an improvised ventilation solution is prohibited.",
+    "reviewHref": "#zanamivir-pharmacology-safety"
+  },
+  "influenza-antiviral-pharmacology-107": {
+    "id": "influenza-antiviral-pharmacology-107",
+    "lesson": "zanamivir-pharmacology-safety",
+    "question": "If a clinician has selected Relenza and a scheduled inhaled bronchodilator is taken at the same time, what instruction matches the label?",
+    "choices": [
+      "Give the bronchodilator before Relenza while retaining the airway-risk assessment and monitoring",
+      "Give Relenza first because the bronchodilator blocks neuraminidase inhibition",
+      "Mix both medicines into a single nebulized Relenza solution",
+      "Use the sequence as proof Relenza is routinely recommended in asthma"
+    ],
+    "answer": 0,
+    "rationale": "The scheduled bronchodilator goes first. This instruction does not cancel the airway warning. The alternatives reverse the labeled sequence, invent a mixing route or falsely make asthma a routine indication.",
+    "reviewHref": "#zanamivir-pharmacology-safety"
+  },
+  "influenza-antiviral-pharmacology-108": {
+    "id": "influenza-antiviral-pharmacology-108",
+    "lesson": "zanamivir-pharmacology-safety",
+    "question": "Which interpretation of Relenza bronchospasm reports is accurate?",
+    "choices": [
+      "Serious events have occurred with and without prior airway disease, and each report does not prove drug causality",
+      "Patients without known airway disease have no possible bronchospasm risk",
+      "Every postmarketing report provides definite proof that zanamivir caused the event",
+      "A report\u2019s uncertain causality permits respiratory decline to be ignored"
+    ],
+    "answer": 0,
+    "rationale": "The warning includes both airway-history groups and qualifies postmarketing causality. Absence of prior disease is not immunity, a report is not certain causal proof, and uncertainty never justifies ignoring respiratory decline.",
+    "reviewHref": "#zanamivir-pharmacology-safety"
+  },
+  "influenza-antiviral-pharmacology-109": {
+    "id": "influenza-antiviral-pharmacology-109",
+    "lesson": "zanamivir-pharmacology-safety",
+    "question": "Which history meets the Relenza ingredient-allergy contraindication?",
+    "choices": [
+      "A prior allergic reaction to milk proteins contained in the lactose vehicle",
+      "Digestive symptoms after lactose without an allergic reaction history",
+      "A preference for less sweet medicines without allergy",
+      "A question about whether the device has a lactose vehicle"
+    ],
+    "answer": 0,
+    "rationale": "An allergic reaction to an ingredient, including milk proteins, is contraindicated. Digestive intolerance requires clarification but is not identical to milk-protein allergy; taste preference and an ingredient question alone do not establish allergy.",
+    "reviewHref": "#zanamivir-pharmacology-safety"
+  },
+  "influenza-antiviral-pharmacology-110": {
+    "id": "influenza-antiviral-pharmacology-110",
+    "lesson": "zanamivir-pharmacology-safety",
+    "question": "A patient says \u201cI am lactose intolerant\u201d when Relenza is being considered. What is the best response?",
+    "choices": [
+      "Clarify digestive intolerance versus true milk-protein allergy and review the exact ingredients",
+      "Automatically diagnose anaphylactic milk allergy from that statement alone",
+      "Guarantee safety without asking about the prior reaction",
+      "Explain that Relenza contains no milk proteins"
+    ],
+    "answer": 0,
+    "rationale": "Clarify the reaction because lactose intolerance and milk-protein allergy differ. Neither automatically assigning anaphylaxis nor guaranteeing suitability is justified. The lactose vehicle does contain milk proteins.",
+    "reviewHref": "#zanamivir-pharmacology-safety"
+  },
+  "influenza-antiviral-pharmacology-111": {
+    "id": "influenza-antiviral-pharmacology-111",
+    "lesson": "zanamivir-pharmacology-safety",
+    "question": "Unless medically indicated, how should intranasal LAIV be timed around a zanamivir course?",
+    "choices": [
+      "Wait at least two weeks after LAIV before zanamivir and at least 48 hours after the final zanamivir dose before LAIV",
+      "Wait 48 hours after the first zanamivir dose before LAIV even while the course continues",
+      "Give zanamivir immediately after LAIV because antiviral activity improves live vaccine replication",
+      "Apply the same mandatory intervals to trivalent inactivated influenza vaccine"
+    ],
+    "answer": 0,
+    "rationale": "The label specifies the two-week vaccine-before-drug interval and 48 hours after cessation for vaccine-after-drug timing. Counting from the first dose is wrong; antiviral activity may interfere with live vaccine replication. Trivalent inactivated vaccine can be given at any time relative to Relenza.",
+    "reviewHref": "#zanamivir-pharmacology-safety"
+  },
+  "influenza-antiviral-pharmacology-112": {
+    "id": "influenza-antiviral-pharmacology-112",
+    "lesson": "zanamivir-pharmacology-safety",
+    "question": "A patient develops oropharyngeal swelling and a suspected allergic skin reaction during Relenza treatment. What is the appropriate response?",
+    "choices": [
+      "Stop Relenza and provide appropriate care for the suspected allergic reaction",
+      "Continue and manage the swelling only by changing the blister order",
+      "Assume the reaction is harmless digestive lactose intolerance",
+      "Nebulize the remaining powder to avoid the allergy"
+    ],
+    "answer": 0,
+    "rationale": "Suspected allergic reactions require stopping and appropriate treatment. Blister order does not treat allergy, swelling is not ordinary digestive intolerance, and nebulizing the powder is prohibited and does not remove its ingredients.",
+    "reviewHref": "#zanamivir-pharmacology-safety"
+  },
+  "influenza-antiviral-pharmacology-184": {
+    "id": "influenza-antiviral-pharmacology-184",
+    "lesson": "zanamivir-pharmacology-safety",
+    "question": "A patient with asthma asks for inhaled zanamivir. What is the best response?",
+    "choices": [
+      "Choose another antiviral because of bronchospasm risk",
+      "Use zanamivir because asthma improves inhalation",
+      "Nebulize the Diskhaler powder",
+      "Double the first dose"
+    ],
+    "answer": 0,
+    "rationale": "Choose another suitable antiviral because Relenza is not recommended in underlying airway disease. Asthma does not improve inhalation safety; nebulizing the Diskhaler powder is prohibited, and doubling the dose does not address bronchospasm risk.",
+    "reviewHref": "#zanamivir-pharmacology-safety"
+  },
+  "influenza-antiviral-pharmacology-185": {
+    "id": "influenza-antiviral-pharmacology-185",
+    "lesson": "zanamivir-pharmacology-safety",
+    "question": "How is one 10 mg zanamivir dose delivered?",
+    "choices": [
+      "Two separate 5 mg Diskhaler inhalations",
+      "One 10 mg tablet",
+      "One 10 mg intravenous push",
+      "Four 2.5 mg nasal sprays"
+    ],
+    "answer": 0,
+    "rationale": "Each labeled 10 mg dose uses two separate 5 mg blisters inhaled orally through the supplied Diskhaler. The labeled Relenza product is not administered as a tablet, an intravenous push or nasal sprays.",
+    "reviewHref": "#zanamivir-pharmacology-safety"
+  }
+})) {
+  Object.assign(influenzaAntiviralPharmacologyQuestionBank.find((question) => question.id === id), updates);
+}

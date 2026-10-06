@@ -54,10 +54,11 @@ const diagrams = {
     descriptions: ["Reassess persistent or severe symptoms.", "Treat serious skin or allergic findings.", "Protect against injury; weigh continuation.", "Pregnancy, lactation and suspension sorbitol."],
   },
   "zanamivir-pharmacology-safety": {
-    eyebrow: "Inhaled system",
+    eyebrow: "Zanamivir delivery",
     title: "Treat the device as part of the drug",
     nodes: ["Rotadisk", "Two inhalations", "Airway screen", "Milk protein"],
-    notes: ["Load correctly", "Build 10 mg", "Avoid bronchospasm risk", "Verify true allergy"],
+    notes: ["Flat side up", "5 mg plus 5 mg", "Review asthma and COPD", "Clarify the reaction"],
+    descriptions: ["Keep level; pierce when ready.", "Advance and inhale a second blister.", "Stop for wheeze or breathing decline.", "Do not use with true ingredient allergy."],
   },
   "peramivir-pharmacology-administration": {
     eyebrow: "Intravenous system",
@@ -99,9 +100,9 @@ export default function InfluenzaAntiviralPharmacologyVisual({ type }) {
         {data.nodes.map((label, index) => (
           <div key={label}>
             <span>{String(index + 1).padStart(2, "0")}</span>
-            <strong style={(type === "influenza-antiviral-influenza-life-cycle-targets" || type === "influenza-antiviral-influenza-selection-timing" || type === "influenza-antiviral-oseltamivir-mechanism-pk" || type === "influenza-antiviral-oseltamivir-safety-populations") ? { fontSize: "14px" } : undefined}>{label}</strong>
-            <em style={(type === "influenza-antiviral-oseltamivir-dosing-administration" || type === "influenza-antiviral-influenza-biology-triage" || type === "influenza-antiviral-influenza-life-cycle-targets" || type === "influenza-antiviral-influenza-selection-timing" || type === "influenza-antiviral-oseltamivir-mechanism-pk" || type === "influenza-antiviral-oseltamivir-safety-populations") ? { fontSize: "14px" } : undefined}>{data.notes[index]}</em>
-            <p style={(type === "influenza-antiviral-oseltamivir-dosing-administration" || type === "influenza-antiviral-influenza-biology-triage" || type === "influenza-antiviral-influenza-life-cycle-targets" || type === "influenza-antiviral-influenza-selection-timing" || type === "influenza-antiviral-oseltamivir-mechanism-pk" || type === "influenza-antiviral-oseltamivir-safety-populations") ? { fontSize: "14px" } : undefined}>{data.descriptions?.[index] ?? (index < data.nodes.length - 1 ? "Carry the verified input forward." : "Own the next clinical action.")}</p>
+            <strong style={(type === "influenza-antiviral-influenza-life-cycle-targets" || type === "influenza-antiviral-influenza-selection-timing" || type === "influenza-antiviral-oseltamivir-mechanism-pk" || type === "influenza-antiviral-oseltamivir-safety-populations" || type === "influenza-antiviral-zanamivir-pharmacology-safety") ? { fontSize: "14px" } : undefined}>{label}</strong>
+            <em style={(type === "influenza-antiviral-oseltamivir-dosing-administration" || type === "influenza-antiviral-influenza-biology-triage" || type === "influenza-antiviral-influenza-life-cycle-targets" || type === "influenza-antiviral-influenza-selection-timing" || type === "influenza-antiviral-oseltamivir-mechanism-pk" || type === "influenza-antiviral-oseltamivir-safety-populations" || type === "influenza-antiviral-zanamivir-pharmacology-safety") ? { fontSize: "14px" } : undefined}>{data.notes[index]}</em>
+            <p style={(type === "influenza-antiviral-oseltamivir-dosing-administration" || type === "influenza-antiviral-influenza-biology-triage" || type === "influenza-antiviral-influenza-life-cycle-targets" || type === "influenza-antiviral-influenza-selection-timing" || type === "influenza-antiviral-oseltamivir-mechanism-pk" || type === "influenza-antiviral-oseltamivir-safety-populations" || type === "influenza-antiviral-zanamivir-pharmacology-safety") ? { fontSize: "14px" } : undefined}>{data.descriptions?.[index] ?? (index < data.nodes.length - 1 ? "Carry the verified input forward." : "Own the next clinical action.")}</p>
           </div>
         ))}
       </div>

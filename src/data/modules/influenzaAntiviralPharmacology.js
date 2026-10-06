@@ -534,3 +534,76 @@ influenzaAntiviralPharmacologyModule.references.push(...[
     "href": "https://www.cdc.gov/flu/hcp/antivirals/treatment_obstetric.html"
   }
 ]);
+
+
+// Complete zanamivir dose, device and safety reconciliation against authorized sources.
+Object.assign(influenzaAntiviralPharmacologyModule.submodules.find((lesson) => lesson.slug === "zanamivir-pharmacology-safety"), {
+  "slug": "zanamivir-pharmacology-safety",
+  "title": "Verify the Zanamivir Device and Airway",
+  "visual": "influenza-antiviral-zanamivir-pharmacology-safety",
+  "summary": "Link inhaled neuraminidase inhibition to the labeled two-blister dose, demonstrated Diskhaler technique, airway and ingredient screening, and the separate treatment, prophylaxis and live-vaccine calendars.",
+  "concepts": [
+    "Two-blister dose",
+    "Diskhaler technique",
+    "Airway warning",
+    "Milk-protein allergy",
+    "Prophylaxis and LAIV calendars"
+  ],
+  "application": "Verify the indication, full two-inhalation dose and demonstrated delivery, then distinguish an airway warning, a true ingredient-allergy contraindication and a live-vaccine timing interaction.",
+  "lesson": [
+    {
+      "heading": "Build the labeled treatment dose",
+      "body": "Zanamivir inhibits influenza neuraminidase, limiting release of viral particles from infected cells and their spread in the respiratory tract. Relenza is labeled for uncomplicated influenza A or B in patients aged 7 years and older who have been symptomatic for no more than two days. Treatment is 10 mg twice daily for five days, with each dose delivered as two separate 5 mg blister inhalations through the supplied Diskhaler. Give two doses on the first day when possible, at least two hours apart; subsequent doses are approximately 12 hours apart. The labeled dose uses the blister strength, not an independently estimated amount deposited in the airway. Priority-patient treatment decisions and later presentation require the separate clinical selection assessment."
+    },
+    {
+      "heading": "Keep prophylaxis calendars distinct",
+      "body": "The book and Relenza label describe 10 mg once daily for prophylaxis: ten days after household exposure in adults and children aged 5 years and older, or 28 days during a community outbreak in adults and adolescents. Current CDC guidance instead describes seven days after the last known exposure for ordinary chemoprophylaxis. For institutional outbreaks, CDC recommends at least two weeks, continuing up to one week after the last known case is identified. Identify whether the plan follows a labeled household or community regimen or a CDC exposure or outbreak protocol, including its starting and stopping clock. Do not interchange treatment\u2019s twice-daily schedule with prophylaxis\u2019s once-daily schedule, or apply the adult/adolescent community regimen to every child simply because the general prophylaxis indication begins at age 5. The label states that prophylaxis efficacy has not been proven in the nursing-home setting; keep that evidence limitation distinct from CDC\u2019s institutional outbreak recommendation."
+    },
+    {
+      "heading": "Load and pierce the Rotadisk",
+      "body": "Demonstrate the supplied device and have the patient or caregiver show the steps. Remove the blue cover and check that the mouthpiece is clear. Pull out the white tray, press its side ridges to remove it, place the Rotadisk on the wheel with its flat side up and the four blisters fitted underneath, and slide the tray fully back in. Keep the Diskhaler level. Only when ready to inhale, raise the piercing flap fully upright to pierce the upper and lower foil of the positioned blister, then close the flap. A partly raised flap or pierced blister stored for later does not demonstrate correct preparation."
+    },
+    {
+      "heading": "Deliver both inhalations",
+      "body": "Exhale before placing the mouthpiece in the mouth, keeping exhaled air away from the powder. Seal the lips around the mouthpiece without covering its side air holes, inhale steadily and deeply through the mouth, and hold the breath for a few seconds. Pull the tray out and push it back without removing it to advance to the next blister; pierce and inhale again to finish the second 5 mg inhalation. Replace the cover afterward. One four-blister Rotadisk supplies two complete 10 mg doses. A standard five-day twice-daily treatment course therefore uses ten doses, or twenty blisters, equal to five Rotadisks. Assess device ability and inspiratory delivery rather than assuming age eligibility proves successful use; children need supervision by an adult trained in the device."
+    },
+    {
+      "heading": "Preserve the labeled route and device",
+      "body": "Relenza inhalation powder is administered by oral inhalation only through the supplied Diskhaler. Do not prepare an improvised solution for a nebulizer or mechanical ventilation. The label describes a fatal report in which lactose from such a solution obstructed equipment. A patient who cannot operate the device or deliver the inhalation needs assessment of another suitable antiviral route; converting this powder into an intravenous, nasal or nebulized preparation is not an administration workaround."
+    },
+    {
+      "heading": "Protect vulnerable airways",
+      "body": "Zanamivir is not recommended for treatment or prophylaxis in people with underlying airway disease such as asthma or COPD because of serious bronchospasm risk. Serious and fatal bronchospasm has also been reported without a prior airway history; postmarketing reports do not establish the drug\u2019s contribution in every case. Stop Relenza for bronchospasm or declining respiratory function and obtain immediate treatment; hospital care may be required. If a clinician nevertheless considers use in underlying airway disease, the label calls for weighing benefit and risk, close monitoring and appropriate support including a fast-acting inhaled bronchodilator. When a scheduled inhaled bronchodilator is taken at the same time, administer it before Relenza. Bronchodilator availability or sequence does not remove the warning or make zanamivir the routine asthma choice."
+    },
+    {
+      "heading": "Identify true ingredient allergy",
+      "body": "The lactose vehicle contains milk proteins. A history of an allergic reaction to any Relenza ingredient, including milk proteins, is a contraindication. Milk-protein allergy differs from digestive lactose intolerance; neither a digestive symptom alone nor a sugar-free preference establishes the contraindication. Clarify the reaction and exact product ingredients rather than guaranteeing suitability from a vague intolerance history. Allergic reactions including oropharyngeal swelling, serious skin reactions and anaphylaxis have been reported. Stop treatment and provide appropriate care if an allergic reaction develops or is suspected."
+    },
+    {
+      "heading": "Separate the live-vaccine intervals",
+      "body": "Zanamivir may interfere with replication of live attenuated influenza vaccine virus. Unless medically indicated, do not give zanamivir until at least two weeks after intranasal LAIV, and do not give LAIV until at least 48 hours after zanamivir has been stopped. The latter interval starts after the final dose, not the first dose of a continuing course. The Relenza label permits trivalent inactivated influenza vaccine at any time relative to the drug. Antiviral use does not replace seasonal influenza vaccination."
+    },
+    {
+      "heading": "Monitor symptoms without assuming their cause",
+      "body": "The book lists headache, throat pain and cough among zanamivir adverse effects. Trial reactions must be interpreted in context: both Relenza and placebo groups inhaled lactose vehicle, and a new cough with worsening breathing requires the airway warning response rather than routine reassurance. Influenza itself can cause seizures, hallucinations, delirium and abnormal behavior. Neuropsychiatric events have been reported during neuraminidase-inhibitor treatment, primarily in children; the drug\u2019s contribution is not established and voluntary reports cannot supply a reliable frequency. Closely monitor behavior, report confusion, seizures or hallucinations promptly to the clinician, and assess continuation benefits and risks individually. Relenza has not been shown to prevent bacterial complications; persistent or worsening illness needs reassessment for coexisting or secondary infection."
+    }
+  ],
+  "keyPoints": [
+    "One 10 mg dose requires two separate 5 mg inhalations through the supplied Diskhaler.",
+    "Keep treatment, labeled prophylaxis and CDC exposure-based calendars distinct.",
+    "Avoid routine zanamivir selection in asthma or COPD; stop for bronchospasm or respiratory decline.",
+    "True ingredient allergy is a contraindication; time LAIV from the relevant vaccine date or final antiviral dose."
+  ],
+  "check": {
+    "question": "Why should a patient with asthma usually receive an alternative to zanamivir?",
+    "choices": [
+      "Zanamivir can cause serious bronchospasm",
+      "Asthma prevents influenza infection",
+      "The drug is renally toxic in every patient",
+      "The Diskhaler contains an antibiotic"
+    ],
+    "answer": 0,
+    "rationale": "Serious bronchospasm risk makes zanamivir not recommended in underlying airway disease such as asthma. Asthma does not prevent influenza infection. The label does not claim renal toxicity in every patient, and the Diskhaler delivers an antiviral rather than an antibiotic.",
+    "reviewHref": "#zanamivir-pharmacology-safety"
+  }
+});
