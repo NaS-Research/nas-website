@@ -22,11 +22,11 @@ const diagrams = {
   "noninsulin-sglt2": {
     accent: "#73a8b8",
     eyebrow: "Renal glucose handling",
-    title: "Move glucose and sodium while protecting heart and kidney",
+    title: "Release urinary glucose; match heart and kidney outcomes",
     columns: [
-      ["Filter", "Proximal tubule", "Increase glucosuria and natriuresis through SGLT2 inhibition"],
+      ["Release", "Proximal glucose reabsorption", "Increase glucosuria and natriuresis through SGLT2 inhibition"],
       ["Protect", "Heart and kidney", "Use demonstrated outcome benefit independently from A1C when indicated"],
-      ["Interrupt", "Fasting and illness", "Prevent ketoacidosis through ketone awareness and procedure planning"],
+      ["Interrupt", "Fasting and illness", "Reduce ketoacidosis risk through ketone awareness and procedure planning"],
     ],
   },
   "noninsulin-glp1": {
@@ -113,8 +113,8 @@ export default function NoninsulinDiabetesPharmacotherapyVisual({ type }) {
           <div key={label}>
             <span>{String(index + 1).padStart(2, "0")}</span>
             <strong>{label}</strong>
-            <em style={(type === "noninsulin-selection" || type === "noninsulin-metformin") ? { fontSize: "14px", lineHeight: 1.55 } : undefined}>{mechanism}</em>
-            <p style={(type === "noninsulin-selection" || type === "noninsulin-metformin") ? { fontSize: "14px", lineHeight: 1.65 } : undefined}>{explanation}</p>
+            <em style={(type === "noninsulin-selection" || type === "noninsulin-metformin" || type === "noninsulin-sglt2") ? { fontSize: "14px", lineHeight: 1.55 } : undefined}>{mechanism}</em>
+            <p style={(type === "noninsulin-selection" || type === "noninsulin-metformin" || type === "noninsulin-sglt2") ? { fontSize: "14px", lineHeight: 1.65 } : undefined}>{explanation}</p>
           </div>
         ))}
       </div>

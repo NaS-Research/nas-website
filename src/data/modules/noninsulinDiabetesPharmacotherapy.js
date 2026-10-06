@@ -362,3 +362,114 @@ noninsulinDiabetesPharmacotherapyModule.references.push(...[
     "href": "https://www.acr.org/Clinical-Resources/Clinical-Tools-and-Reference/Contrast-Manual"
   }
 ]);
+
+
+// Complete SGLT2 lesson reviewed with exact product labels and linked assessments.
+Object.assign(noninsulinDiabetesPharmacotherapyModule.submodules.find(item => item.slug === "sglt2-inhibitor-pharmacotherapy"), {
+  "slug": "sglt2-inhibitor-pharmacotherapy",
+  "title": "SGLT2 Inhibitors",
+  "visual": "noninsulin-sglt2",
+  "summary": "SGLT2 inhibitors increase urinary glucose and alter renal sodium handling. Match the exact product, indication, dose and kidney-use criteria; prevent volume depletion and recognize ketoacidosis even without marked hyperglycemia.",
+  "concepts": [
+    "Proximal-tubule glucose and sodium handling",
+    "Product-specific outcomes, doses and renal limits",
+    "Ketoacidosis and fasting interruption",
+    "Volume, infection and foot safety",
+    "Interactions and monitoring"
+  ],
+  "application": "Document the intended glucose or cardiorenal outcome, renal eligibility, volume assessment and exact dose. Teach infection and ketoacidosis symptoms, product-specific fasting holds and clinical restart criteria.",
+  "lesson": [
+    {
+      "heading": "Trace the proximal-tubule mechanism",
+      "body": "SGLT2 inhibition reduces proximal-tubule glucose reabsorption and increases urinary glucose. It also reduces renal sodium reabsorption, increasing distal sodium delivery; osmotic diuresis and natriuresis can affect circulating volume. Glucose lowering diminishes as kidney function declines, while selected kidney and heart-failure benefits can persist within studied populations and product labeling. The book gives an approximate A1C reduction of 0.7 to 1 percentage point with weight loss, rather than a guaranteed individual response. In adults, intrinsic hypoglycemia risk is low without insulin or a secretagogue; combination treatment and pediatric labeling require separate review."
+    },
+    {
+      "heading": "Match the outcome to the product and population",
+      "body": "In type 2 diabetes with heart failure or CKD, treatment selection can prioritize proven outcomes irrespective of A1C. Empagliflozin and dapagliflozin have adult heart-failure and CKD indications that do not require diabetes. Empagliflozin also reduces cardiovascular death in adults with type 2 diabetes and established cardiovascular disease. Dapagliflozin reduces heart-failure hospitalization in adults with type 2 diabetes and established cardiovascular disease or multiple cardiovascular risk factors. Canagliflozin reduces major cardiovascular events in adults with type 2 diabetes and established cardiovascular disease; its kidney-outcome indication is for adults with type 2 diabetes and diabetic nephropathy with albuminuria above 300 mg/day. These are distinct indications, populations and outcomes. Do not transfer them to ertugliflozin, whose cited label is for adult type 2 diabetes glucose control."
+    },
+    {
+      "heading": "Use empagliflozin dosing and renal evidence precisely",
+      "body": "JARDIANCE is dosed at 10 mg once daily in the morning, with or without food, for its adult cardiorenal indications and for glucose control. A person tolerating 10 mg may increase to 25 mg for additional glucose lowering; 25 mg is not required for the heart-failure or CKD indication. Glucose-control use is not recommended below eGFR 30 mL/min/1.73 m². Its heart-failure trials enrolled adults with eGFR at least 20, and its CKD trial enrolled eGFR 20 to 90. Trials did not initially enroll people below 20 or on dialysis; allowing some enrolled patients to continue after kidney decline or dialysis initiation does not establish unrestricted initiation in those settings."
+    },
+    {
+      "heading": "Separate dapagliflozin initiation from continuation",
+      "body": "For FARXIGA glucose control, start at 5 mg once daily and increase to 10 mg if additional control is needed; this use is not recommended below eGFR 45 mL/min/1.73 m² because glucose lowering is likely ineffective. For its other adult indications, the dose is 10 mg once daily. These indications permit initiation at eGFR at least 25. Initiation below 25 is not recommended, but a person already taking 10 mg whose eGFR later falls below 25 may continue it for the labeled kidney and cardiovascular outcomes if clinically appropriate. A stable fall below an initiation threshold differs from AKI, symptomatic volume depletion or suspected ketoacidosis. Both dapagliflozin and empagliflozin have specific CKD exclusions, including polycystic kidney disease and specified immunosuppressive treatment for kidney disease; check the exact label before generalizing CKD eligibility."
+    },
+    {
+      "heading": "Apply canagliflozin’s usual renal dose limits",
+      "body": "INVOKANA starts at 100 mg once daily before the first meal. For additional glucose lowering, a person tolerating 100 mg with eGFR at least 60 mL/min/1.73 m² may increase to 300 mg daily. Without a UGT-inducer interaction, eGFR 30 to below 60 limits the dose to 100 mg daily. The other adult indications use 100 mg daily. Do not initiate below eGFR 30; adults already taking it with albuminuria above 300 mg/day may continue 100 mg daily for the specified diabetic-nephropathy outcomes. Glucose-control use below 30 is not recommended. The separate UGT-inducer dose adjustment is described below and must not be confused with the usual renal table."
+    },
+    {
+      "heading": "Keep ertugliflozin’s indication and schedule distinct",
+      "body": "STEGLATRO starts at 5 mg once daily in the morning, with or without food, for adults with type 2 diabetes. Increase to 15 mg daily only when tolerated and additional glucose control is needed. Use is not recommended below eGFR 45 mL/min/1.73 m². Its cited label does not establish a heart-failure or CKD indication, and its preprocedure fasting hold is four days rather than the three days used for the other three products reviewed here. A shared mechanism does not establish an identical dose, outcome indication or renal-use boundary."
+    },
+    {
+      "heading": "Assess volume before and after initiation",
+      "body": "Check kidney function, blood pressure, orthostatic symptoms and volume status before treatment; correct volume depletion first. Older age, impaired kidney function and loop diuretics increase the risk of hypotension and volume loss. Review the entire regimen, including other diuretics, renin-angiotensin system medicines and NSAIDs, when dehydration or impaired perfusion is a concern. Increased urination and thirst can occur, but dizziness, poor intake, persistent fluid losses or a substantial creatinine rise need assessment. An early eGFR dip can reflect hemodynamic changes; it does not prove intrinsic kidney toxicity, and it does not justify ignoring symptomatic hypotension or possible AKI. Reassess the SGLT2 inhibitor and accompanying medicines and interrupt treatment when acute volume depletion or metabolic risk makes continued use unsafe."
+    },
+    {
+      "heading": "Recognize ketoacidosis without extreme glucose",
+      "body": "Nausea, vomiting, abdominal pain, malaise or difficulty breathing during SGLT2 use can signal ketoacidosis even when glucose is below 250 mg/dL. Risk factors include missed or reduced insulin, pancreatic disease or insulin deficiency, acute illness, prolonged fasting, surgery, ketogenic diets, dehydration and excess alcohol. Stop the SGLT2 inhibitor if ketoacidosis is suspected and obtain urgent clinical evaluation, including ketones and acid-base status. Symptoms alone do not confirm the diagnosis; glucose below a conventional threshold does not exclude it. Treat confirmed ketoacidosis and monitor its resolution before considering restart. Glucosuria and ketoacidosis can persist after discontinuation, so a recent hold does not remove the need to investigate concerning symptoms."
+    },
+    {
+      "heading": "Write an agent-specific fasting and restart plan",
+      "body": "When possible, withhold empagliflozin, dapagliflozin and canagliflozin for at least three days before surgery or procedures involving prolonged fasting; withhold ertugliflozin for at least four days. A one-day or same-morning hold does not match these labels. Acute illness or other ketoacidosis risks may require temporary interruption even outside scheduled surgery. Resume only when clinically stable and oral intake has returned; after suspected or confirmed ketoacidosis, document resolution before restart. Persistent vomiting, dehydration or insulin deficiency is not resolved by the calendar alone. Coordinate urgent procedures and the rest of the diabetes regimen with the clinical team. For a missed routine dose, follow the product instructions and do not double the next dose."
+    },
+    {
+      "heading": "Distinguish genital infection from urgent perineal disease",
+      "body": "Glucosuria increases genital mycotic infection risk in both males and females. Counsel on genital itching, irritation and other infection symptoms, with assessment and treatment when indicated. Serious urinary infections, including pyelonephritis and urosepsis, require prompt evaluation. Perineal or genital pain, redness or swelling together with fever or malaise raises concern for Fournier gangrene, a rare life-threatening infection. If suspected, stop the SGLT2 inhibitor and urgently obtain medical and surgical evaluation. Treating that systemic pattern as uncomplicated candidiasis with a delayed follow-up can miss an emergency."
+    },
+    {
+      "heading": "Review foot and fracture risk without equating every product",
+      "body": "Canagliflozin’s label describes increased lower-limb amputation risk observed in CANVAS, with greatest risk among people with prior amputation, peripheral vascular disease or neuropathy. Review foot history and teach preventive foot care and prompt reporting of pain, infection, sores or ulcers. Empagliflozin and ertugliflozin labels also direct lower-limb monitoring; that does not establish identical trial results or risk estimates for all agents. Canagliflozin’s label separately reports increased fracture risk observed in CANVAS and advises assessing contributing risk factors before initiation. Weigh the selected product’s benefits and these individual risks; neither an A1C improvement nor an absence of symptoms eliminates the need for monitoring."
+    },
+    {
+      "heading": "Review interactions before changing doses",
+      "body": "UGT inducers such as rifampin, phenytoin, phenobarbital and ritonavir reduce canagliflozin exposure. Its current label specifies that a person tolerating 100 mg with eGFR at least 60 mL/min/1.73 m² increases to 200 mg daily; 300 mg may follow if 200 mg is tolerated and more glucose lowering is needed. With eGFR below 60, the inducer adjustment has a 200 mg daily maximum for someone tolerating 100 mg. Renal eligibility and the full product instructions still apply; this exception is not permission to initiate below 30. Canagliflozin can increase digoxin exposure, requiring monitoring for dose adjustment. The cited empagliflozin, dapagliflozin and canagliflozin labels warn that an SGLT2 inhibitor may decrease serum lithium concentrations; monitor lithium more frequently during initiation or dose changes. Insulin or secretagogue doses may need individualized reduction to prevent hypoglycemia, but abrupt insulin withdrawal can increase ketoacidosis risk."
+    },
+    {
+      "heading": "Choose monitoring that remains interpretable",
+      "body": "Follow blood glucose or A1C, kidney function, volume status, blood pressure and symptoms according to the treatment goal and clinical risk. A positive urine-glucose test is expected during SGLT2 inhibition and should not be used to judge glucose control. The 1,5-anhydroglucitol assay is also unreliable for that purpose. Use alternative glycemic measures. The book describes increases in magnesium and phosphate; the ertugliflozin label reports serum phosphate changes. Canagliflozin labeling describes potassium increases in a moderate-renal-impairment study, particularly with 300 mg. Interpret electrolytes with kidney function and concomitant medicines rather than treating these observations as a universal class-wide monitoring schedule or a reason to exceed renal dose limits."
+    },
+    {
+      "heading": "Check age, pregnancy and product contraindications",
+      "body": "The cited empagliflozin, dapagliflozin and canagliflozin labels permit glucose-control use in type 2 diabetes from age 10; their adult cardiorenal indications do not establish pediatric outcome indications. The ertugliflozin indication reviewed here is adult glucose control. Empagliflozin’s pediatric trial showed higher hypoglycemia risk regardless of insulin use, so the usual adult low-intrinsic-risk shorthand needs qualification. These products are not recommended for type 1 diabetes glucose control. Check pregnancy and lactation precautions: for example, empagliflozin is not recommended during the second or third trimester or during breastfeeding because of potential renal-development risk. Product hypersensitivity is a labeled contraindication. In advanced kidney disease or dialysis, use exact initiation, continuation and evidence boundaries rather than the book’s older blanket dialysis contraindication summary."
+    }
+  ],
+  "keyPoints": [
+    "Match product, indication, dose and renal-use criteria.",
+    "Stop and urgently assess suspected ketoacidosis at any glucose level.",
+    "Correct volume depletion and assess concerning infection or foot symptoms.",
+    "Use three-day or four-day fasting holds and clinical restart criteria."
+  ],
+  "check": {
+    "question": "An empagliflozin user develops nausea, abdominal pain and rapid breathing during prolonged fasting with glucose 176 mg/dL. What is the priority?",
+    "choices": [
+      "Stop empagliflozin and obtain urgent ketone and acid-base evaluation for possible ketoacidosis.",
+      "Continue empagliflozin and reassess only if glucose rises above 250 mg/dL.",
+      "Hold today’s dose but postpone ketone evaluation until after the next A1C result.",
+      "Treat the symptoms as expected osmotic diuresis and resume once a glass of water is tolerated."
+    ],
+    "answer": 0,
+    "rationale": "Fasting and these symptoms warrant urgent evaluation for SGLT2-associated ketoacidosis even at glucose 176. A 250 mg/dL threshold cannot exclude it; holding a dose and waiting for A1C delays assessment, and hydration alone neither excludes acidosis nor establishes safe restart.",
+    "reviewHref": "#sglt2-inhibitor-pharmacotherapy"
+  }
+});
+noninsulinDiabetesPharmacotherapyModule.references.push(...[
+  {
+    "label": "DailyMed JARDIANCE prescribing information",
+    "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=faf3dd6a-9cd0-39c2-0d2e-232cb3f67565"
+  },
+  {
+    "label": "DailyMed FARXIGA prescribing information",
+    "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=72ad22ae-efe6-4cd6-a302-98aaee423d69"
+  },
+  {
+    "label": "DailyMed INVOKANA prescribing information",
+    "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b9057d3b-b104-4f09-8a61-c61ef9d4a3f3"
+  },
+  {
+    "label": "DailyMed STEGLATRO prescribing information",
+    "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e6f3e718-bb99-48f1-ab94-b9f0af05fed6"
+  }
+]);

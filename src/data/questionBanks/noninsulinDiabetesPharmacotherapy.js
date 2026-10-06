@@ -709,3 +709,121 @@ const verifiedMetforminQuestions = {
 for (const item of noninsulinDiabetesPharmacotherapyQuestionBank) {
   if (verifiedMetforminQuestions[item.id]) Object.assign(item, verifiedMetforminQuestions[item.id]);
 }
+
+
+// Focused SGLT2 cases retain stable IDs, keys, difficulty and lesson anchors.
+const verifiedSglt2Questions = {
+  "noninsulin-diabetes-06-principle": {
+    "question": "Which renal mechanism best explains SGLT2 inhibitor glucose lowering?",
+    "choices": [
+      "Reduced proximal glucose reabsorption increases urinary glucose excretion.",
+      "Increased proximal glucose reabsorption lowers glucose by conserving filtered glucose.",
+      "Reduced glomerular glucose filtration increases glucose disposal without glucosuria.",
+      "Reduced urinary glucose excretion lowers blood glucose by retaining glucose in the body."
+    ],
+    "rationale": "SGLT2 inhibition reduces proximal glucose reabsorption and increases glucosuria. Increasing reabsorption or reducing urinary glucose loss would conserve glucose; reducing filtration alone does not describe the labeled glucose-lowering mechanism."
+  },
+  "noninsulin-diabetes-06-safety": {
+    "question": "An adult tolerates canagliflozin 100 mg daily but needs more glucose lowering. eGFR is 38 mL/min/1.73 m² and there is no UGT-inducer interaction. Which plan follows the usual renal-dose table?",
+    "choices": [
+      "Keep canagliflozin within 100 mg daily and reassess another strategy for the remaining glycemic gap.",
+      "Increase canagliflozin to 300 mg daily because it was tolerated at 100 mg.",
+      "Increase canagliflozin to 200 mg daily because every eGFR below 60 permits that usual dose.",
+      "Use the maximum dose automatically because improvement in A1C overrides the renal table."
+    ],
+    "rationale": "At eGFR 30 to below 60, the usual canagliflozin maximum is 100 mg daily. Tolerance alone does not permit 300 mg, the 200 mg adjustment belongs to the separate UGT-inducer setting absent here, and A1C does not override renal limits."
+  },
+  "noninsulin-diabetes-06-case": {
+    "question": "An adult already taking dapagliflozin 10 mg daily for CKD has a stable eGFR decline from 28 to 22 mL/min/1.73 m². There is no AKI, hypotension or ketoacidosis. Which label-based interpretation is best?",
+    "choices": [
+      "Continuation at 10 mg may remain appropriate for the indicated kidney and cardiovascular outcomes, after reassessment.",
+      "Initiating dapagliflozin at 22 and continuing established therapy at 22 have identical label instructions.",
+      "Reduce to 5 mg daily because that is the labeled adult CKD dose below 25.",
+      "Switch to ertugliflozin because every SGLT2 inhibitor has the same CKD indication below 25."
+    ],
+    "rationale": "Dapagliflozin initiation below 25 is not recommended, but an established user whose eGFR falls below 25 may continue 10 mg for labeled outcomes if appropriate. Initiation and continuation differ; 5 mg is not this CKD dose, and ertugliflozin does not inherit this indication or renal boundary."
+  },
+  "noninsulin-diabetes-07-principle": {
+    "question": "Which statement accurately addresses possible ketoacidosis during SGLT2 inhibitor use?",
+    "choices": [
+      "Concerning symptoms require ketone and acid-base assessment even if glucose is below 250 mg/dL.",
+      "Glucose below 250 mg/dL excludes ketoacidosis regardless of symptoms.",
+      "One missed SGLT2 dose guarantees that glucosuria and ketoacidosis risk have ended.",
+      "A1C alone can establish whether current vomiting and dyspnea reflect ketoacidosis."
+    ],
+    "rationale": "SGLT2-associated ketoacidosis can present below 250 mg/dL, so symptoms require prompt evaluation. Effects can persist after discontinuation; one missed dose cannot exclude risk, and A1C cannot replace current ketone and acid-base evidence."
+  },
+  "noninsulin-diabetes-07-application": {
+    "question": "An ertugliflozin user is preparing for elective surgery with prolonged fasting. What is the minimum preprocedure hold in the cited product label, when possible?",
+    "choices": [
+      "At least four days before the procedure.",
+      "At least three days before the procedure.",
+      "At least two days before the procedure.",
+      "Only the morning of the procedure."
+    ],
+    "rationale": "Ertugliflozin specifies at least four days. Three days is the reviewed hold for empagliflozin, dapagliflozin and canagliflozin; two days or a same-morning hold is shorter than ertugliflozin’s instruction."
+  },
+  "noninsulin-diabetes-07-safety": {
+    "question": "After an SGLT2 inhibitor was held for surgery and suspected ketoacidosis, which restart criterion is appropriate?",
+    "choices": [
+      "Clinical stability, resumed oral intake and documented resolution of ketoacidosis.",
+      "The planned restart date alone, even with persistent vomiting.",
+      "A single glucose result below 250 mg/dL despite persistent acidosis.",
+      "The first sip of fluid despite ongoing dehydration and insulin deficiency."
+    ],
+    "rationale": "Restart follows clinical recovery and oral intake, with ketoacidosis resolution when it was suspected or confirmed. A date, modest glucose or one sip does not resolve persistent vomiting, acidosis, dehydration or insulin deficiency."
+  },
+  "noninsulin-diabetes-07-case": {
+    "question": "Two days after surgery, an empagliflozin user has vomiting, dyspnea, anion-gap acidosis and glucose 184 mg/dL. What is the best response?",
+    "choices": [
+      "Stop empagliflozin and urgently evaluate ketones and acid-base status for possible SGLT2-associated ketoacidosis.",
+      "Exclude ketoacidosis because glucose is below 250 mg/dL.",
+      "Give oral fluids and wait until the next day to investigate the acidosis.",
+      "Restart empagliflozin because the postoperative date determines eligibility regardless of symptoms."
+    ],
+    "rationale": "The postoperative symptoms and anion-gap acidosis warrant urgent ketoacidosis evaluation despite glucose 184. The glucose threshold cannot exclude it, oral fluids with delayed assessment can miss the crisis, and persistent illness does not meet restart criteria."
+  },
+  "noninsulin-diabetes-08-principle": {
+    "question": "Why can starting an SGLT2 inhibitor increase volume-depletion risk in an adult taking a loop diuretic?",
+    "choices": [
+      "Glucosuria-related osmotic diuresis and natriuresis can add to the existing fluid-loss burden.",
+      "Glucose retention eliminates urinary fluid losses, making volume assessment unnecessary.",
+      "The SGLT2 inhibitor prevents all diuretic-related hypotension once glucose improves.",
+      "Glucosuria establishes adequate circulating volume regardless of blood pressure."
+    ],
+    "rationale": "Osmotic diuresis and natriuresis can add to loop-diuretic fluid loss. SGLT2 inhibition increases urinary glucose rather than retaining it; neither improved glucose nor glucosuria proves adequate volume or eliminates hypotension risk."
+  },
+  "noninsulin-diabetes-08-application": {
+    "question": "A dapagliflozin user develops perineal pain, redness and swelling with fever and malaise. What is the priority?",
+    "choices": [
+      "Stop dapagliflozin and obtain urgent evaluation for Fournier gangrene with medical and surgical treatment as indicated.",
+      "Treat only as uncomplicated candidiasis and arrange routine follow-up in a week.",
+      "Use a modest blood glucose value to exclude a serious perineal infection.",
+      "Continue dapagliflozin until an A1C result confirms the cause of the symptoms."
+    ],
+    "rationale": "Perineal inflammatory symptoms with fever or malaise raise concern for Fournier gangrene. The label directs immediate evaluation and discontinuation if suspected; routine candidiasis treatment alone, a glucose cutoff or waiting for A1C can delay emergency care."
+  },
+  "noninsulin-diabetes-08-safety": {
+    "question": "Canagliflozin is being considered for an adult with prior amputation, peripheral vascular disease and neuropathy. Which interpretation is best?",
+    "choices": [
+      "Assess the product’s benefits and amputation risk, establish preventive foot care and monitor for new pain, infection or ulcers.",
+      "An acceptable A1C removes the need to review amputation risk.",
+      "Canagliflozin’s CANVAS findings establish an identical risk estimate for every SGLT2 inhibitor.",
+      "A foot examination is unnecessary until another amputation has occurred."
+    ],
+    "rationale": "Prior amputation, peripheral vascular disease and neuropathy identify greater amputation risk in canagliflozin labeling. A1C does not erase that risk, one product’s trial result does not prove identical estimates for all products, and preventive assessment should not wait for another amputation."
+  },
+  "noninsulin-diabetes-08-case": {
+    "question": "An older adult taking a loop diuretic develops orthostasis and a creatinine rise soon after SGLT2 initiation. Which response is best?",
+    "choices": [
+      "Promptly assess volume, kidney function and the full diuretic regimen; interrupt treatment if acute depletion or other safety concerns warrant it.",
+      "Increase both diuretics automatically because a creatinine rise always signals fluid overload.",
+      "Dismiss orthostasis as a harmless expected eGFR dip without clinical assessment.",
+      "Permanently classify every SGLT2 inhibitor as intrinsically nephrotoxic without examining volume or timing."
+    ],
+    "rationale": "Loop diuretics, age and SGLT2-related fluid loss can contribute to volume depletion and AKI. Orthostasis requires assessment; neither automatic intensification, dismissal as an expected dip nor a permanent class-wide toxicity assumption evaluates this patient’s perfusion and regimen."
+  }
+};
+for (const item of noninsulinDiabetesPharmacotherapyQuestionBank) {
+  if (verifiedSglt2Questions[item.id]) Object.assign(item, verifiedSglt2Questions[item.id]);
+}
