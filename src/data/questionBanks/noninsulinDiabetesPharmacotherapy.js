@@ -1131,3 +1131,91 @@ const verifiedSecretagogueQuestions = {
 for (const item of noninsulinDiabetesPharmacotherapyQuestionBank) {
   if (verifiedSecretagogueQuestions[item.id]) Object.assign(item, verifiedSecretagogueQuestions[item.id]);
 }
+
+
+// Focused TZD cases preserve existing IDs, keys, difficulty and anchors.
+const verifiedTzdQuestions = {
+  "noninsulin-diabetes-16-principle": {
+    "question": "Which mechanism best explains pioglitazone’s glucose-lowering action?",
+    "choices": [
+      "Activation of PPAR-gamma with changes in insulin-responsive gene transcription and improved insulin sensitivity.",
+      "Direct beta-cell insulin release through sulfonylurea-receptor binding and potassium-channel closure.",
+      "Renal SGLT2 blockade that increases urinary glucose loss.",
+      "DPP-4 inhibition that prolongs endogenous incretin activity."
+    ],
+    "rationale": "Pioglitazone activates the nuclear receptor PPAR-gamma and improves insulin sensitivity; it is not an insulin secretagogue. Sulfonylurea-receptor action, SGLT2 blockade and DPP-4 inhibition describe other drug classes. It depends on endogenous insulin and is not a rapid correction medicine."
+  },
+  "noninsulin-diabetes-16-application": {
+    "question": "Gemfibrozil is added to pioglitazone 30 mg daily. Which pioglitazone instruction follows its label?",
+    "choices": [
+      "Review the combination and limit pioglitazone to 15 mg daily while the strong CYP2C8 inhibitor is used.",
+      "Keep 30 mg daily and separate the doses by four hours instead of reviewing the ceiling.",
+      "Increase pioglitazone to 45 mg because gemfibrozil induces CYP2C8.",
+      "Treat the combination as pioglitazone’s formal contraindication because that rule applies to repaglinide."
+    ],
+    "rationale": "Gemfibrozil inhibits CYP2C8 and increases pioglitazone exposure, so its labeled maximum with this inhibitor is 15 mg daily. Spacing does not replace the ceiling, and exposure rises rather than falls. Repaglinide with gemfibrozil is contraindicated; that is a different product’s rule."
+  },
+  "noninsulin-diabetes-16-safety": {
+    "question": "Which proposed pioglitazone initiation clearly violates its labeled heart-failure contraindication?",
+    "choices": [
+      "Starting 15 mg daily in an adult with established NYHA class III heart failure.",
+      "Starting 15 mg daily in an adult without heart failure or edema after appropriate safety review.",
+      "Obtaining baseline liver tests before deciding whether to initiate treatment.",
+      "Reviewing fracture risk and bladder history before choosing a glucose-lowering medicine."
+    ],
+    "rationale": "Initiation in established NYHA class III or IV heart failure is contraindicated even at 15 mg. A usual starting dose does not remove that restriction. Baseline liver testing and bone or bladder review are appropriate safety steps; starting 15 mg in a suitable patient without heart failure does not itself violate this contraindication."
+  },
+  "noninsulin-diabetes-16-case": {
+    "question": "Five days after starting pioglitazone, an adult without adverse symptoms asks to double the dose because A1C is unchanged. Which response is best?",
+    "choices": [
+      "Continue the agreed monitoring plan and allow time to assess response before prescriber-directed titration.",
+      "Double the dose independently because five days without an A1C change establishes failure.",
+      "Take an extra dose with each meal because pioglitazone is a rapid prandial secretagogue.",
+      "Stop checking weight and edema until A1C improves because toxicity begins only after maximal benefit."
+    ],
+    "rationale": "TZDs have a delayed response, and A1C does not provide a meaningful five-day test of treatment failure. Pioglitazone is once daily, not a rapid meal-linked secretagogue. Dose changes should follow clinical review, while fluid-related monitoring begins at initiation and continues after dose increases."
+  },
+  "noninsulin-diabetes-17-principle": {
+    "question": "Which pioglitazone bladder-cancer interpretation matches its label?",
+    "choices": [
+      "Do not use in active bladder cancer; prior history requires caution and benefit versus unknown recurrence-risk review.",
+      "Every prior history is listed as the same formal contraindication as NYHA class III heart-failure initiation.",
+      "A nonsignificant cancer finding in one trial proves there is no bladder warning.",
+      "Causal bladder cancer is established in every exposed patient, regardless of conflicting evidence."
+    ],
+    "rationale": "The label distinguishes active disease, where use should be avoided, from prior history requiring cautious benefit-risk review. Prior history is not described as the same formal contraindication as class III/IV heart-failure initiation. Inconsistent study findings do not establish causality in every patient or eliminate the warning."
+  },
+  "noninsulin-diabetes-17-application": {
+    "question": "Which liver follow-up plan follows the pioglitazone label for an adult with normal baseline tests and no liver disease?",
+    "choices": [
+      "Obtain baseline liver tests and promptly investigate warning symptoms; routine periodic tests are not recommended solely because pioglitazone is used.",
+      "Omit baseline testing because an insulin sensitizer cannot cause hepatic concerns.",
+      "Require monthly liver tests in every patient by transferring rosiglitazone’s periodic-monitoring instruction.",
+      "Continue unchanged despite new jaundice until the next routine A1C visit."
+    ],
+    "rationale": "Pioglitazone requires baseline liver tests and prompt evaluation of symptoms suggesting injury, but does not recommend routine periodic liver testing in patients without liver disease. Rosiglitazone has a different monitoring instruction, and neither product justifies ignoring jaundice or omitting baseline assessment."
+  },
+  "noninsulin-diabetes-17-safety": {
+    "question": "An adult with type 2 diabetes and MASH has symptomatic NYHA class III heart failure. Which pioglitazone decision is best?",
+    "choices": [
+      "Do not initiate it; selected off-label liver benefits do not override the heart-failure contraindication.",
+      "Initiate it because steatohepatitis benefit removes the class III restriction.",
+      "Initiate it because an antifibrotic benefit is established for all patients with cirrhosis.",
+      "Substitute rosiglitazone because its removal from a REMS program removes the class heart-failure warning."
+    ],
+    "rationale": "Pioglitazone initiation in NYHA class III or IV heart failure is contraindicated, and use is not recommended in symptomatic heart failure. AASLD’s selected liver-benefit guidance does not override safety or establish an antifibrotic benefit in cirrhosis. Rosiglitazone retains the heart-failure restriction despite REMS removal."
+  },
+  "noninsulin-diabetes-17-case": {
+    "question": "Two weeks after adding pioglitazone, an adult reports rapid weight gain, ankle edema and orthopnea. What is the best response?",
+    "choices": [
+      "Promptly assess fluid retention and heart failure and reassess the causative medicine.",
+      "Treat the gain as harmless fat accumulation and wait several months for full glucose benefit.",
+      "Increase pioglitazone because edema proves insulin sensitivity is improving.",
+      "Add a diuretic without evaluating breathing symptoms or reviewing pioglitazone."
+    ],
+    "rationale": "The symptom combination suggests clinically important TZD fluid retention and possible heart failure. Prompt assessment and drug review are needed; if heart failure develops, manage it and consider dose reduction or discontinuation. Expected delayed glucose benefit does not justify waiting, escalation or treating swelling alone."
+  }
+};
+for (const item of noninsulinDiabetesPharmacotherapyQuestionBank) {
+  if (verifiedTzdQuestions[item.id]) Object.assign(item, verifiedTzdQuestions[item.id]);
+}

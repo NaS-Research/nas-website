@@ -850,3 +850,123 @@ noninsulinDiabetesPharmacotherapyModule.references.push(...[
     "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b41f4180-96a7-411d-b827-5021e534f556"
   }
 ]);
+
+
+// Whole thiazolidinedione lesson reviewed against the book and primary sources.
+Object.assign(noninsulinDiabetesPharmacotherapyModule.submodules.find(item => item.slug === "thiazolidinedione-pharmacotherapy"), {
+  "slug": "thiazolidinedione-pharmacotherapy",
+  "title": "Thiazolidinediones",
+  "visual": "noninsulin-tzd",
+  "summary": "TZDs improve insulin sensitivity through PPAR-gamma signaling. Their delayed glucose effect must be weighed against fluid retention, heart failure, weight gain, fractures and product-specific precautions.",
+  "concepts": [
+    "PPAR-gamma activation and insulin-responsive gene transcription",
+    "Delayed glucose response and product-specific dosing",
+    "Fluid retention, symptomatic heart failure and initiation restrictions",
+    "Liver, bladder, bone, eye and reproductive precautions",
+    "Exact interactions and limits of selected liver or stroke evidence"
+  ],
+  "application": "Assess whether pioglitazone fits an adult with type 2 diabetes after reviewing heart failure, edema, liver tests, bladder history, bone health and concomitant medicines. Use the exact product dose and interaction rules, counsel about warning symptoms and reassess glucose response over weeks. Possible liver or secondary stroke benefits apply to selected populations and do not override safety restrictions.",
+  "lesson": [
+    {
+      "heading": "Change transcription, not acute secretion",
+      "body": "Pioglitazone and rosiglitazone activate the nuclear receptor PPAR-gamma, which regulates insulin-responsive gene transcription in tissues such as adipose tissue, muscle and liver. This improves insulin sensitivity, increases insulin-dependent glucose disposal and reduces hepatic glucose output. Pioglitazone does not directly stimulate beta-cell insulin release. Both medicines depend on endogenous insulin and are labeled for glycemic control in adults with type 2 diabetes as an adjunct to diet and exercise. They are not treatments for type 1 diabetes or diabetic ketoacidosis. The mechanism explains low intrinsic hypoglycemia risk, but accompanying medicines can change that risk."
+    },
+    {
+      "heading": "Allow time to assess glucose response",
+      "body": "A TZD is not a rapid correction medicine for a single high glucose value. Assess glucose trends and A1C over an appropriate interval rather than chasing each daily reading with a dose increase. The book summarizes an A1C reduction of about 0.5-1.4 percentage points; actual response depends on the patient, baseline and regimen. The rosiglitazone label describes about two weeks before a glucose reduction and two to three months for the full effect. That product-specific counseling does not create an exact onset promise for every pioglitazone patient. Five days without an A1C change does not establish treatment failure."
+    },
+    {
+      "heading": "Use pioglitazone’s daily dose and ceiling",
+      "body": "Pioglitazone generally starts at 15 or 30 mg once daily, with or without food, in patients without congestive heart failure. Increase in 15 mg increments according to glycemic response, to a maximum of 45 mg daily. If use is appropriate in NYHA class I or II heart failure, the labeled starting dose is 15 mg daily; this is not permission to use it in symptomatic heart failure. Review weight, edema and breathing symptoms after initiation and dose increases. Known hypersensitivity to pioglitazone or its ingredients is a contraindication. A maximum dose is not an automatic target. Strong CYP2C8 inhibitors such as gemfibrozil lower the maximum to 15 mg daily."
+    },
+    {
+      "heading": "Keep rosiglitazone instructions separate",
+      "body": "The FDA-listed February 2019 Avandia label starts rosiglitazone at 4 mg daily, either once daily or as two divided doses, with or without food. If fasting glucose response remains inadequate after 8-12 weeks, the dose may be increased to a maximum total of 8 mg daily while monitoring fluid-related adverse effects. Do not apply pioglitazone’s 15 mg dose steps to rosiglitazone. The label does not recommend coadministration with insulin and contraindicates use after hypersensitivity to rosiglitazone or its ingredients. These are instructions from the cited archived label, not a statement that a particular brand or strength is currently commercially available. Confirm the exact prescribed product before use."
+    },
+    {
+      "heading": "Treat fluid retention as a mechanism-based toxicity",
+      "body": "TZDs can cause sodium and fluid retention, edema, weight gain and new or worsening heart failure. Both labels carry a heart-failure boxed warning, contraindicate initiation in established NYHA class III or IV heart failure and do not recommend use in symptomatic heart failure. Lower classes still require caution. Rapid weight gain, ankle swelling, dyspnea or trouble breathing when lying down call for prompt assessment. If heart failure develops, manage it and consider stopping or reducing the TZD. Adding a diuretic while leaving the causative drug unreviewed is not a complete response. Pioglitazone-related fluid retention is most common with concomitant insulin."
+    },
+    {
+      "heading": "Apply pioglitazone’s liver follow-up rules",
+      "body": "Obtain ALT, AST, alkaline phosphatase and total bilirubin before starting pioglitazone. Investigate abnormal results and use caution in patients with liver disease. Its label does not recommend routine periodic liver tests during treatment in patients without liver disease; do not replace that instruction with a universal monthly schedule. Fatigue, anorexia, right upper abdominal discomfort, dark urine or jaundice warrant prompt liver tests. In that setting, ALT above three times the upper reference limit requires interruption and investigation. Do not restart without another explanation. ALT above three times and bilirubin above twice the reference limit without another cause carries severe injury concern and prohibits restarting."
+    },
+    {
+      "heading": "Do not transfer one liver rule to the other TZD",
+      "body": "Rosiglitazone’s cited label calls for liver enzymes before treatment and periodic monitoring according to clinical judgment. Do not initiate if there is clinical evidence of active liver disease or baseline ALT above 2.5 times the upper limit of normal. Mild elevations require investigation, caution and follow-up. During treatment, ALT above three times the upper limit should be rechecked promptly; discontinue if it remains above that level. Discontinue if jaundice is observed. Postmarketing hepatic failure has been reported, but the label does not establish causality for every report. Pioglitazone’s different routine-testing instruction should not be copied onto rosiglitazone."
+    },
+    {
+      "heading": "Screen for long-term harms",
+      "body": "Weight gain can reflect both fluid accumulation and increased fat mass. Assess fracture risk and bone health, especially in women; do not infer that men have no fracture risk. Both product labels describe macular edema reports. People with diabetes need regular eye examinations, and new visual symptoms require prompt ophthalmologic assessment rather than waiting for the next A1C visit. Rosiglitazone can reduce hemoglobin and hematocrit, potentially in relation to plasma-volume expansion. These findings belong in longitudinal benefit-risk review, alongside glucose response, rather than being dismissed because the medicine rarely causes hypoglycemia when used alone."
+    },
+    {
+      "heading": "Distinguish active bladder cancer from prior history",
+      "body": "Pioglitazone should not be used in active bladder cancer. With a prior history, consider the glycemic benefit against the unknown risk of recurrence and use caution; the label does not describe every prior history as the same formal contraindication. The book’s abbreviated history-based avoidance statement needs this qualification. Studies of bladder-cancer risk have been inconsistent, so do not present a causal increase as settled for every exposed patient. Counsel patients to report blood or red discoloration in urine, increased urinary need or painful urination promptly. A nonsignificant cancer result from an individual trial does not cancel the product warning."
+    },
+    {
+      "heading": "Discuss ovulation and reproductive plans",
+      "body": "TZDs may restore ovulation in some premenopausal anovulatory patients, creating a possibility of unintended pregnancy even when periods were previously absent or irregular. Discuss reproductive goals and appropriate contraception rather than assuming infertility. Pioglitazone pregnancy data are limited, and its presence and effects in human milk are unknown; those uncertainties do not establish safety in pregnancy or breastfeeding. If pregnancy occurs or is planned, review the diabetes regimen with the treating clinician. Neither product is recommended for routine pediatric use on the basis of the cited adult labels."
+    },
+    {
+      "heading": "Apply the exact CYP2C8 interaction instruction",
+      "body": "Gemfibrozil and other strong CYP2C8 inhibitors increase pioglitazone exposure; limit pioglitazone to 15 mg daily when used together. This is a dose ceiling, unlike repaglinide’s contraindicated gemfibrozil combination. CYP2C8 induction by rifampin can reduce TZD exposure, so reassess glucose control when the inducer starts or stops. Rosiglitazone’s label calls for treatment review according to clinical response when CYP2C8 inhibitors or inducers change; do not invent a pioglitazone-style milligram ceiling for it. Topiramate can reduce pioglitazone exposure: monitor glycemic control. Dose spacing does not replace these interaction instructions."
+    },
+    {
+      "heading": "Reassess combinations and low glucose values",
+      "body": "Although TZDs have low hypoglycemia risk as monotherapy, combinations with insulin or an insulin secretagogue can cause hypoglycemia. If hypoglycemia occurs with pioglitazone and a secretagogue, reduce the secretagogue dose. With pioglitazone and insulin, its label specifies a 10%-25% insulin reduction, followed by individualized adjustment according to glucose response. For example, that initial labeled range corresponds to 6-15 units from a 60-unit dose, leaving 54-45 units; it is not a standing reduction for every patient starting a TZD. Rosiglitazone with insulin is not recommended. Reduced food intake or interrupted feeding requires regimen review and glucose monitoring; low intrinsic risk is not a guarantee."
+    },
+    {
+      "heading": "Use selected benefits without overgeneralizing",
+      "body": "Pioglitazone has evidence for improving steatohepatitis in selected patients. AASLD’s 2023 guidance says it can be considered in patients with NASH, now termed MASH, in the setting of type 2 diabetes. This is an off-label liver use, not a separate pioglitazone indication in the cited Actos label. The guidance does not establish an antifibrotic benefit and notes limited study in cirrhosis. Keep lifestyle and coordinated liver care in place. Possible liver benefit does not override symptomatic heart failure, the class III/IV initiation restriction, active bladder cancer or other material risks. Do not extend this evidence to rosiglitazone or to every cause of fatty liver."
+    },
+    {
+      "heading": "Keep secondary stroke evidence tied to its population",
+      "body": "The IRIS trial studied pioglitazone after a recent ischemic stroke or TIA in adults with insulin resistance who did not have diabetes. It found fewer first strokes or myocardial infarctions than placebo, with more weight gain, edema and fractures. Eligibility exclusions and safety algorithms matter: a history of heart failure was excluded after a protocol change, and adverse symptoms could trigger dose reduction or discontinuation. This supports a selected secondary-prevention discussion, not routine stroke prevention for every adult with type 2 diabetes or an approved class-wide cardiovascular indication. The Actos label still states that conclusive macrovascular risk reduction has not been established."
+    },
+    {
+      "heading": "Separate rosiglitazone ischemic signals from heart-failure risk",
+      "body": "Rosiglitazone’s cited label describes a myocardial-infarction signal in a meta-analysis of mostly short-term trials compared with placebo. Longer-term trials against metformin or sulfonylureas, including RECORD, did not confirm a difference in major cardiovascular events or mortality. FDA removed the rosiglitazone REMS requirement in 2015; that decision did not remove the heart-failure boxed warning or establish cardioprotection. Rosiglitazone monotherapy raised LDL, HDL and total cholesterol in the cited trials, so an HDL rise alone does not prove cardiovascular benefit. Continue glucose, weight, fluid, bone, eye and medicine review. Do not double a missed pioglitazone dose the next day."
+    }
+  ],
+  "keyPoints": [
+    "TZDs improve insulin sensitivity; they are not insulin secretagogues or rapid correction medicines.",
+    "Do not initiate either TZD in NYHA class III or IV heart failure; neither is recommended in symptomatic heart failure.",
+    "Pioglitazone has a 45 mg daily ceiling, reduced to 15 mg with strong CYP2C8 inhibitors such as gemfibrozil.",
+    "Distinguish active bladder cancer from prior history and use each product’s liver-monitoring instructions.",
+    "Selected pioglitazone liver and stroke evidence does not establish a class-wide cardiovascular or antifibrotic benefit."
+  ],
+  "check": {
+    "question": "An adult develops rapid weight gain, ankle edema and trouble breathing while lying down after starting pioglitazone. Which response is best?",
+    "choices": [
+      "Arrange prompt assessment for fluid retention and heart failure and reassess pioglitazone.",
+      "Wait for the next routine A1C because low intrinsic hypoglycemia risk makes these symptoms reassuring.",
+      "Increase pioglitazone to improve glucose control before evaluating the symptoms.",
+      "Treat swelling with a diuretic while leaving pioglitazone and the breathing symptoms unreviewed."
+    ],
+    "answer": 0,
+    "rationale": "Rapid weight gain, edema and breathing difficulty are warning symptoms of TZD-related fluid retention or heart failure and require prompt assessment. If heart failure develops, treat it and consider pioglitazone discontinuation or dose reduction. Low hypoglycemia risk does not remove this toxicity, and waiting, escalation or a diuretic alone leaves the problem unaddressed.",
+    "reviewHref": "#thiazolidinedione-pharmacotherapy"
+  }
+});
+noninsulinDiabetesPharmacotherapyModule.references.push(...[
+  {
+    "label": "DailyMed Takeda Actos prescribing information (March 2025)",
+    "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d2ddc491-88a9-4063-9150-443b4fa4330c"
+  },
+  {
+    "label": "FDA Avandia prescribing information (February 2019)",
+    "href": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2019/021071s052lbl.pdf"
+  },
+  {
+    "label": "FDA rosiglitazone REMS removal letter (December 2015)",
+    "href": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2015/021071Orig1s050,021410Orig1s039,021700Orig1s022ltr.pdf"
+  },
+  {
+    "label": "AASLD 2023 practice guidance on steatotic liver disease",
+    "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10735173/"
+  },
+  {
+    "label": "IRIS trial: pioglitazone after ischemic stroke or TIA (2016)",
+    "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4887756/"
+  }
+]);

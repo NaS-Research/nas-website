@@ -113,8 +113,8 @@ export default function NoninsulinDiabetesPharmacotherapyVisual({ type }) {
           <div key={label}>
             <span>{String(index + 1).padStart(2, "0")}</span>
             <strong>{label}</strong>
-            <em style={(type === "noninsulin-selection" || type === "noninsulin-metformin" || type === "noninsulin-sglt2" || type === "noninsulin-glp1" || type === "noninsulin-dpp4" || type === "noninsulin-secretagogues") ? { fontSize: "14px", lineHeight: 1.55 } : undefined}>{mechanism}</em>
-            <p style={(type === "noninsulin-selection" || type === "noninsulin-metformin" || type === "noninsulin-sglt2" || type === "noninsulin-glp1" || type === "noninsulin-dpp4" || type === "noninsulin-secretagogues") ? { fontSize: "14px", lineHeight: 1.65 } : undefined}>{explanation}</p>
+            <em style={(type === "noninsulin-selection" || type === "noninsulin-metformin" || type === "noninsulin-sglt2" || type === "noninsulin-glp1" || type === "noninsulin-dpp4" || type === "noninsulin-secretagogues" || type === "noninsulin-tzd") ? { fontSize: "14px", lineHeight: 1.55 } : undefined}>{mechanism}</em>
+            <p style={(type === "noninsulin-selection" || type === "noninsulin-metformin" || type === "noninsulin-sglt2" || type === "noninsulin-glp1" || type === "noninsulin-dpp4" || type === "noninsulin-secretagogues" || type === "noninsulin-tzd") ? { fontSize: "14px", lineHeight: 1.65 } : undefined}>{explanation}</p>
           </div>
         ))}
       </div>
