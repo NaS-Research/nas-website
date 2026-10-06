@@ -1888,3 +1888,262 @@ for (const [id, updates] of Object.entries({
 })) {
   Object.assign(influenzaAntiviralPharmacologyQuestionBank.find((question) => question.id === id), updates);
 }
+
+
+// Whole peramivir questions reviewed with stable IDs and keyed indices.
+for (const [id, updates] of Object.entries({
+  "influenza-antiviral-pharmacology-113": {
+    "id": "influenza-antiviral-pharmacology-113",
+    "lesson": "peramivir-pharmacology-administration",
+    "question": "Which statement correctly describes peramivir\u2019s target and labeled clinical role?",
+    "choices": [
+      "It is an intravenous neuraminidase inhibitor for eligible acute uncomplicated influenza as one dose",
+      "It is an oral PA endonuclease inhibitor delivered as a Rapivab tablet",
+      "It is an inhaled M2 blocker delivered through a Rapivab Diskhaler",
+      "It is an intravenous antibiotic that prevents secondary bacterial pneumonia"
+    ],
+    "answer": 0,
+    "rationale": "Peramivir inhibits neuraminidase and is infused for eligible uncomplicated influenza. PA and M2 are different targets, and Rapivab is neither an oral tablet nor a Diskhaler product. It is not an antibiotic or proven bacterial-complication prevention.",
+    "reviewHref": "#peramivir-pharmacology-administration"
+  },
+  "influenza-antiviral-pharmacology-114": {
+    "id": "influenza-antiviral-pharmacology-114",
+    "lesson": "peramivir-pharmacology-administration",
+    "question": "A hospitalized patient with influenza can absorb enteric oseltamivir. Which interpretation of peramivir use matches CDC guidance?",
+    "choices": [
+      "Enteric oseltamivir is routinely recommended; intravenous peramivir is not a routine substitute merely because it is intravenous",
+      "Intravenous route alone establishes peramivir as superior routine monotherapy",
+      "The outpatient single dose is proven sufficient for every severe hospitalized illness",
+      "Peramivir is absolutely contraindicated in every hospitalized patient even when enteric therapy cannot be absorbed"
+    ],
+    "answer": 0,
+    "rationale": "CDC recommends oral/enteric oseltamivir routinely and finds insufficient evidence for routine peramivir. IV route does not prove superiority or adequacy of an outpatient regimen. Selected use may be considered when oseltamivir cannot be tolerated or absorbed; hospitalization is not an absolute product contraindication.",
+    "reviewHref": "#peramivir-pharmacology-administration"
+  },
+  "influenza-antiviral-pharmacology-115": {
+    "id": "influenza-antiviral-pharmacology-115",
+    "lesson": "peramivir-pharmacology-administration",
+    "question": "Which assessment best supports selecting peramivir for an uncomplicated influenza patient?",
+    "choices": [
+      "Verify exact age, onset, illness setting, renal function and whether intravenous delivery is suitable",
+      "Verify intravenous access alone because route establishes the indication",
+      "Ignore onset and renal function because only one dose is given",
+      "Assume clinical failure after any antiviral proves an indication for a fixed 600 mg peramivir dose"
+    ],
+    "answer": 0,
+    "rationale": "Age, onset, clinical setting, renal dose and delivery all matter. IV access alone is insufficient; single dosing does not remove timing or renal limits, and clinical failure needs assessment rather than an automatic fixed-dose switch.",
+    "reviewHref": "#peramivir-pharmacology-administration"
+  },
+  "influenza-antiviral-pharmacology-116": {
+    "id": "influenza-antiviral-pharmacology-116",
+    "lesson": "peramivir-pharmacology-administration",
+    "question": "Which statement correctly describes peramivir for influenza prevention?",
+    "choices": [
+      "CDC does not recommend chemoprophylaxis because data are unavailable",
+      "Its single treatment dose is automatically an approved prevention regimen",
+      "Intravenous delivery makes prophylaxis evidence unnecessary",
+      "All neuraminidase inhibitors share identical prophylaxis indications"
+    ],
+    "answer": 0,
+    "rationale": "The prevention data gap supports CDC\u2019s nonrecommendation. A treatment indication or IV route does not establish a prophylaxis regimen, and indications differ among drugs in the class.",
+    "reviewHref": "#peramivir-pharmacology-administration"
+  },
+  "influenza-antiviral-pharmacology-117": {
+    "id": "influenza-antiviral-pharmacology-117",
+    "lesson": "peramivir-pharmacology-administration",
+    "question": "Which peramivir regimen matches an eligible patient aged 6 months through 12 years with normal renal function?",
+    "choices": [
+      "12 mg/kg once, up to 600 mg",
+      "600 mg once for every patient regardless of weight",
+      "12 mg total once without multiplying by kilograms",
+      "12 mg/kg twice daily for five days"
+    ],
+    "answer": 0,
+    "rationale": "The labeled pediatric regimen is a single weight-based dose capped at 600 mg. A universal adult dose, omission of the weight multiplier or a borrowed twice-daily five-day schedule does not match the label.",
+    "reviewHref": "#peramivir-pharmacology-administration"
+  },
+  "influenza-antiviral-pharmacology-118": {
+    "id": "influenza-antiviral-pharmacology-118",
+    "lesson": "peramivir-pharmacology-administration",
+    "question": "A 12-year-old weighs 60 kg and has normal renal function. Which single peramivir dose follows the label?",
+    "choices": [
+      "600 mg after applying the ceiling to the calculated 720 mg",
+      "720 mg because the weight formula has no maximum",
+      "60 mg because kilograms can be read directly as milligrams",
+      "200 mg because every child receives the adult renal-reduced dose"
+    ],
+    "answer": 0,
+    "rationale": "12 mg/kg \u00d7 60 kg is 720 mg, limited to 600 mg. Weight is not itself milligrams, and the adult renal-reduced dose is not a universal child dose.",
+    "reviewHref": "#peramivir-pharmacology-administration"
+  },
+  "influenza-antiviral-pharmacology-119": {
+    "id": "influenza-antiviral-pharmacology-119",
+    "lesson": "peramivir-pharmacology-administration",
+    "question": "Which claim about peramivir age eligibility should be corrected?",
+    "choices": [
+      "The labeled pediatric regimen is established for every infant younger than 6 months",
+      "The label covers patients aged 6 months and older",
+      "Ages 6 months through 12 years use the pediatric weight regimen when renal function is normal",
+      "Ages 13 years and older use the adult/adolescent normal-function dose"
+    ],
+    "answer": 0,
+    "rationale": "Safety and effectiveness below 6 months have not been established. The other age boundaries and normal-function regimens match the label.",
+    "reviewHref": "#peramivir-pharmacology-administration"
+  },
+  "influenza-antiviral-pharmacology-120": {
+    "id": "influenza-antiviral-pharmacology-120",
+    "lesson": "peramivir-pharmacology-administration",
+    "question": "Which instruction correctly separates the age-specific dose from renal adjustment?",
+    "choices": [
+      "Identify age and weight, then use the applicable renal table before preparing the selected dose",
+      "Apply 12 mg/kg to every age including all adults",
+      "Treat the 600 mg ceiling as the dose for every child with any renal function",
+      "Prepare a full adult dose before checking renal function"
+    ],
+    "answer": 0,
+    "rationale": "Age, weight and the appropriate renal table precede preparation. The pediatric formula is not an all-age rule; a ceiling is not every child\u2019s dose, and renal assessment cannot be postponed until after preparing the full dose.",
+    "reviewHref": "#peramivir-pharmacology-administration"
+  },
+  "influenza-antiviral-pharmacology-121": {
+    "id": "influenza-antiviral-pharmacology-121",
+    "lesson": "peramivir-pharmacology-administration",
+    "question": "What adult peramivir dose is labeled at creatinine clearance exactly 50 mL/min?",
+    "choices": [
+      "600 mg once",
+      "200 mg once",
+      "100 mg once",
+      "No peramivir dose because every renal-category boundary is a contraindication"
+    ],
+    "answer": 0,
+    "rationale": "The at-least-50 category receives 600 mg. The 200 mg and 100 mg rows apply to 30 to 49 and 10 to 29 respectively; a table boundary is not a contraindication.",
+    "reviewHref": "#peramivir-pharmacology-administration"
+  },
+  "influenza-antiviral-pharmacology-122": {
+    "id": "influenza-antiviral-pharmacology-122",
+    "lesson": "peramivir-pharmacology-administration",
+    "question": "A 6-year-old weighs 30 kg with documented creatinine clearance of 35 mL/min. Which single peramivir dose follows the pediatric renal table?",
+    "choices": [
+      "120 mg from 4 mg/kg",
+      "200 mg from the adult 30-to-49 row",
+      "360 mg because single doses need no renal reduction",
+      "60 mg from 2 mg/kg"
+    ],
+    "answer": 0,
+    "rationale": "For ages 2 to 12 at clearance 30 to 49, use 4 mg/kg: 4 \u00d7 30 = 120 mg. The fixed 200 mg adult row, unreduced 12 mg/kg dose and 2 mg/kg row for 10 to 29 do not match this patient\u2019s category.",
+    "reviewHref": "#peramivir-pharmacology-administration"
+  },
+  "influenza-antiviral-pharmacology-123": {
+    "id": "influenza-antiviral-pharmacology-123",
+    "lesson": "peramivir-pharmacology-administration",
+    "question": "For a 10-month-old with creatinine clearance below 50 mL/min, what does Rapivab labeling establish?",
+    "choices": [
+      "No renal-adjustment recommendation can be made from available data in this age group",
+      "The age-2-through-12 renal table is automatically validated for this infant",
+      "Every such infant should receive the adult 100 mg renal dose",
+      "A single dose is exempt from any renal-function concern"
+    ],
+    "answer": 0,
+    "rationale": "The label lacks data for a renal-adjustment recommendation from 6 months to less than 2 years at clearance below 50. Neither the older-child table nor a fixed adult dose is established for that group, and single dosing does not eliminate renal concerns.",
+    "reviewHref": "#peramivir-pharmacology-administration"
+  },
+  "influenza-antiviral-pharmacology-124": {
+    "id": "influenza-antiviral-pharmacology-124",
+    "lesson": "peramivir-pharmacology-administration",
+    "question": "Which instruction matches peramivir use in chronic renal impairment maintained on hemodialysis?",
+    "choices": [
+      "Administer after dialysis at the dose adjusted for renal function",
+      "Administer the full 600 mg adult dose before every dialysis session",
+      "Automatically repeat the original dose after every dialysis session without an indication review",
+      "Copy an oseltamivir peritoneal-dialysis schedule as the peramivir regimen"
+    ],
+    "answer": 0,
+    "rationale": "The label directs administration after hemodialysis at a renal-adjusted dose. It does not establish a full-dose-before-every-session rule, automatic repetitive dosing or another drug\u2019s peritoneal-dialysis schedule.",
+    "reviewHref": "#peramivir-pharmacology-administration"
+  },
+  "influenza-antiviral-pharmacology-125": {
+    "id": "influenza-antiviral-pharmacology-125",
+    "lesson": "peramivir-pharmacology-administration",
+    "question": "For a 600 mg adult peramivir dose at weight at least 20 kg, which preparation meets both labeled concentration and maximum total-volume limits?",
+    "choices": [
+      "100 mL total at 6 mg/mL",
+      "150 mL total at 4 mg/mL",
+      "300 mL total at 2 mg/mL",
+      "60 mL of undiluted stock at 10 mg/mL"
+    ],
+    "answer": 0,
+    "rationale": "The 100 mL maximum and 1 to 6 mg/mL range both apply. 600 mg in 100 mL is 6 mg/mL. The 150 and 300 mL preparations meet the concentration range but exceed the volume maximum; undiluted 10 mg/mL stock is not acceptable.",
+    "reviewHref": "#peramivir-pharmacology-administration"
+  },
+  "influenza-antiviral-pharmacology-126": {
+    "id": "influenza-antiviral-pharmacology-126",
+    "lesson": "peramivir-pharmacology-administration",
+    "question": "A 30 kg child\u2019s selected peramivir dose is 360 mg and the final infusion is 100 mL. Which calculation correctly uses 10 mg/mL stock?",
+    "choices": [
+      "36 mL stock plus 64 mL diluent, giving 3.6 mg/mL",
+      "36 mL stock added to an unchanged 100 mL diluent bag",
+      "3.6 mL stock plus 96.4 mL diluent, giving the full 360 mg",
+      "60 mL stock plus 40 mL diluent, still giving only 360 mg"
+    ],
+    "answer": 0,
+    "rationale": "360 mg \u00f7 10 mg/mL is 36 mL stock; 100 \u2212 36 = 64 mL diluent, and 360 \u00f7 100 = 3.6 mg/mL. Adding 100 mL diluent makes 136 mL total, exceeding the limit. 3.6 mL stock supplies 36 mg, while 60 mL stock supplies 600 mg.",
+    "reviewHref": "#peramivir-pharmacology-administration"
+  },
+  "influenza-antiviral-pharmacology-127": {
+    "id": "influenza-antiviral-pharmacology-127",
+    "lesson": "peramivir-pharmacology-administration",
+    "question": "Anaphylaxis is suspected during a Rapivab infusion. What is the appropriate response?",
+    "choices": [
+      "Stop the infusion and initiate appropriate treatment immediately",
+      "Finish the selected dose before obtaining medical attention",
+      "Only slow the infusion without assessing or treating the suspected reaction",
+      "Give a second peramivir dose to counteract the reaction"
+    ],
+    "answer": 0,
+    "rationale": "Suspected anaphylaxis requires discontinuation and appropriate immediate care. Finishing the dose, merely slowing without treatment or giving another dose is not management of this serious reaction.",
+    "reviewHref": "#peramivir-pharmacology-administration"
+  },
+  "influenza-antiviral-pharmacology-128": {
+    "id": "influenza-antiviral-pharmacology-128",
+    "lesson": "peramivir-pharmacology-administration",
+    "question": "Which statement correctly distinguishes current LAIV timing guidance after peramivir?",
+    "choices": [
+      "CDC uses five days after peramivir before LAIV, while Rapivab labeling states 48 hours unless medically indicated",
+      "CDC and the label both state an identical 48-hour post-peramivir interval",
+      "Peramivir\u2019s IV route eliminates interference with live vaccine replication",
+      "The same mandatory post-peramivir intervals apply to inactivated influenza vaccine"
+    ],
+    "answer": 0,
+    "rationale": "CDC specifies five days, while the label states 48 hours with its medically indicated exception. IV administration does not remove potential live-vaccine interference, and inactivated influenza vaccine may be given at any time relative to peramivir.",
+    "reviewHref": "#peramivir-pharmacology-administration"
+  },
+  "influenza-antiviral-pharmacology-186": {
+    "id": "influenza-antiviral-pharmacology-186",
+    "lesson": "peramivir-pharmacology-administration",
+    "question": "What single peramivir dose is calculated for a 30 kg child with normal renal function?",
+    "choices": [
+      "360 mg",
+      "600 mg",
+      "30 mg",
+      "12 mg"
+    ],
+    "answer": 0,
+    "rationale": "For an eligible child aged 6 months through 12 years with normal renal function, 12 mg/kg \u00d7 30 kg = 360 mg, below the 600 mg ceiling. A ceiling is not the automatic dose; 30 mg confuses weight and dose, while 12 mg omits multiplication by kilograms.",
+    "reviewHref": "#peramivir-pharmacology-administration"
+  },
+  "influenza-antiviral-pharmacology-187": {
+    "id": "influenza-antiviral-pharmacology-187",
+    "lesson": "peramivir-pharmacology-administration",
+    "question": "What adult peramivir dose is labeled when creatinine clearance is 35 mL/min?",
+    "choices": [
+      "200 mg once",
+      "600 mg once",
+      "100 mg once",
+      "No adjustment"
+    ],
+    "answer": 0,
+    "rationale": "An adult clearance of 35 mL/min falls in the 30-to-49 category, which receives 200 mg once. 600 mg is the at-least-50 dose and 100 mg is the 10-to-29 dose; giving no adjustment would ignore the applicable renal category.",
+    "reviewHref": "#peramivir-pharmacology-administration"
+  }
+})) {
+  Object.assign(influenzaAntiviralPharmacologyQuestionBank.find((question) => question.id === id), updates);
+}

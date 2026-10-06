@@ -607,3 +607,80 @@ Object.assign(influenzaAntiviralPharmacologyModule.submodules.find((lesson) => l
     "reviewHref": "#zanamivir-pharmacology-safety"
   }
 });
+
+
+// Complete peramivir dose, preparation and safety reconciliation against authorized sources.
+Object.assign(influenzaAntiviralPharmacologyModule.submodules.find((lesson) => lesson.slug === "peramivir-pharmacology-administration"), {
+  "slug": "peramivir-pharmacology-administration",
+  "title": "Build the Peramivir Infusion",
+  "visual": "influenza-antiviral-peramivir-pharmacology-administration",
+  "summary": "Match intravenous neuraminidase inhibition to the eligible illness, age-specific dose and renal table, then verify stock volume, final concentration, infusion-volume limits, administration and qualified safety evidence.",
+  "concepts": [
+    "Clinical setting",
+    "Age and renal dose",
+    "Stock and final volume",
+    "Controlled infusion",
+    "Safety and vaccine timing"
+  ],
+  "application": "Verify age, illness and renal function before converting the selected dose into a diluted infusion; check both concentration and total-volume limits and recognize reactions or complications that need reassessment.",
+  "lesson": [
+    {
+      "heading": "Define the clinical role",
+      "body": "Peramivir inhibits influenza neuraminidase, limiting release of viral particles from infected cells. Rapivab is labeled for acute uncomplicated influenza in patients aged 6 months and older with symptoms for no more than two days. Its efficacy trials predominantly enrolled influenza A, with limited influenza B enrollment; that evidence limit is not a claim that the drug has no activity against influenza B. CDC does not recommend peramivir for chemoprophylaxis because data are unavailable. Intravenous delivery does not establish superior efficacy in severe hospitalized influenza. CDC recommends oral or enteric oseltamivir routinely in hospitalized patients; peramivir may be considered when that drug cannot be tolerated or absorbed, rather than selected routinely. The label\u2019s serious-influenza trial used daily peramivir for five days plus standard care and did not improve median clinical-resolution time over standard care plus placebo. Do not turn the uncomplicated single-dose regimen into a proven severe-illness regimen."
+    },
+    {
+      "heading": "Calculate the age-specific dose",
+      "body": "With normal renal function, adults and adolescents aged 13 years and older receive 600 mg once. Patients aged 6 months through 12 years receive 12 mg/kg once, up to 600 mg. An eligible 30 kg child therefore receives 12 mg/kg \u00d7 30 kg = 360 mg; a 60 kg patient aged 12 years calculates to 720 mg before the 600 mg ceiling is applied. Verify kilograms and exact age rather than treating every child as an adult or applying the pediatric weight formula beyond its age range. The book\u2019s adult 600 mg single dose remains valid; current labeling supplies the younger-patient regimen. Safety and effectiveness below age 6 months have not been established."
+    },
+    {
+      "heading": "Use the correct renal table",
+      "body": "Peramivir is not significantly metabolized and is cleared mainly through the kidneys as unchanged drug, so a single intravenous dose still requires renal assessment. For patients aged 13 years and older, the labeled dose is 600 mg at creatinine clearance at least 50 mL/min, 200 mg at 30 to 49, and 100 mg at 10 to 29. For ages 2 through 12, the corresponding table doses are 12, 4 and 2 mg/kg, with the table\u2019s 600 mg maximum. Use that pediatric table directly rather than mechanically dividing an already capped adult dose. For a 6-year-old weighing 30 kg with documented clearance of 35 mL/min, 4 mg/kg \u00d7 30 kg = 120 mg. The label cannot recommend a renal adjustment for ages 6 months to less than 2 years with clearance below 50; this is a data gap, not permission to extrapolate the older-child table. In chronic renal impairment on hemodialysis, administer after dialysis at the renal-adjusted dose. Do not invent a below-10 mL/min, peritoneal-dialysis or continuous-replacement schedule from these table rows."
+    },
+    {
+      "heading": "Check concentration and total volume together",
+      "body": "Each single-use vial contains 200 mg in 20 mL, or 10 mg/mL. Dilute the selected dose in 0.9% or 0.45% sodium chloride, 5% dextrose, or lactated Ringer\u2019s to a final concentration of 1 to 6 mg/mL. Also obey the label\u2019s maximum total infusion volume, which includes drug solution and diluent. Its infant category, described as 6 months to 1 year, has a 25 mL maximum. For adults and pediatric patients aged 1 year and older, the weight categories are 5 to less than 10 kg: 25 mL; 10 to less than 15 kg: 50 mL; 15 to less than 20 kg: 75 mL; and at least 20 kg: 100 mL. Check the actual labeled category rather than assuming concentration alone makes a preparation acceptable. For a 600 mg adult dose at weight at least 20 kg, 60 mL of stock plus 40 mL of compatible diluent gives 100 mL total at 6 mg/mL. For the 30 kg child\u2019s 360 mg dose, 36 mL of stock plus 64 mL of diluent gives 100 mL total at 3.6 mg/mL. Adding stock to an unchanged 100 mL bag would exceed that total-volume limit."
+    },
+    {
+      "heading": "Prepare aseptically and control the infusion",
+      "body": "Rapivab contains no preservative or bacteriostatic agent. Use aseptic preparation, reject a broken or missing vial seal, and inspect for particulates or discoloration. Administer the diluted solution as one intravenous infusion over 15 to 30 minutes; the stock vial is not a rapid intravenous push. Do not mix or co-infuse other intravenous medicines with Rapivab, even though the listed diluents and common administration materials are compatible. Give the diluted solution immediately or refrigerate it at 2\u00b0C to 8\u00b0C for up to 24 hours. If refrigerated, let it reach room temperature and administer immediately. Discard unused diluted solution after 24 hours; refrigerated storage is not permission for an additional 24 hours at room temperature."
+    },
+    {
+      "heading": "Respond to serious allergic or skin reactions",
+      "body": "Known serious hypersensitivity or anaphylaxis to peramivir or a product component is a contraindication. The book warns about serious skin reactions including Stevens-Johnson syndrome and toxic epidermal necrolysis; current Rapivab labeling specifically describes Stevens-Johnson syndrome and erythema multiforme, as well as anaphylaxis. Discontinue Rapivab and initiate appropriate treatment if anaphylaxis or a serious skin reaction occurs or is suspected. Stop any ongoing infusion and obtain immediate medical attention rather than finishing the dose or merely reducing its rate. A voluntary postmarketing report does not provide a reliable population frequency or establish causality in every case."
+    },
+    {
+      "heading": "Interpret adverse effects in their trial setting",
+      "body": "The book lists hypertension, insomnia, increased glucose, diarrhea, constipation, neutropenia and increased AST or ALT. Keep those effects in their evidence context. Diarrhea was the most commonly observed reaction in adult uncomplicated-influenza trials; the label\u2019s ALT, glucose and neutrophil findings are treatment-emergent laboratory abnormalities. Constipation, insomnia, increased AST and hypertension were reported more often than placebo in a subset of patients with serious hospitalized influenza. Those findings do not establish that every outpatient infusion causes these effects or that rates from different trials can be compared directly. Pediatric trial findings included vomiting and dipstick proteinuria; those observations likewise do not prove universal renal injury or justify ignoring dose and renal assessment."
+    },
+    {
+      "heading": "Monitor behavior and competing illness",
+      "body": "Influenza itself can cause hallucinations, delirium and abnormal behavior, including in uncomplicated illness. Postmarketing reports during neuraminidase-inhibitor use, including peramivir, describe abrupt behavioral events and injury primarily in children. Voluntary reports do not establish a reliable frequency, and peramivir\u2019s contribution has not been established. Closely monitor behavior, protect the patient from injury and contact the clinician promptly if abnormal behavior occurs after treatment. Peramivir is not an antibiotic and has not been shown to prevent coexisting or secondary bacterial complications. Persistent or worsening illness requires assessment and appropriate treatment when another infection or complication is found."
+    },
+    {
+      "heading": "Separate label and CDC vaccine timing",
+      "body": "Antivirals can inhibit replication of intranasal live attenuated influenza vaccine virus. Rapivab labeling advises avoiding LAIV within two weeks before or 48 hours after its administration unless medically indicated. Current CDC guidance uses a longer interval: LAIV should not be given if peramivir was administered within the preceding five days. CDC also warns that antiviral use within two weeks after LAIV may reduce vaccine effectiveness and calls for revaccination with another appropriate influenza vaccine in that situation. Identify the vaccine product, dates and guidance being followed; do not silently equate the label\u2019s 48-hour interval with CDC\u2019s five-day interval. Inactivated influenza vaccine can be administered at any time relative to peramivir."
+    },
+    {
+      "heading": "Keep population evidence qualified",
+      "body": "Rapivab pregnancy data are insufficient to determine a drug-associated risk of adverse developmental outcomes, while influenza itself poses maternal and fetal risks. Animal findings do not establish zero human risk or a preferred pregnancy treatment. The label has no data on peramivir in human milk, effects on the breastfed infant or effects on milk production; rat milk findings do not prove absent human transfer. Consider breastfeeding benefits, the mother\u2019s clinical need and possible effects of the drug or underlying illness on the child. The book\u2019s preference for oseltamivir during pregnancy and the separate clinical-selection lesson remain relevant when comparing antivirals."
+    }
+  ],
+  "keyPoints": [
+    "Use the labeled uncomplicated-illness regimen and distinguish routine hospitalized treatment from selected alternatives.",
+    "Age and renal category determine the dose; the under-2 renal data gap prevents automatic extrapolation.",
+    "Check stock volume, final concentration and the age/weight maximum total infusion volume.",
+    "Infuse over 15 to 30 minutes, act on suspected serious reactions and distinguish CDC from label LAIV timing."
+  ],
+  "check": {
+    "question": "What peramivir dose is calculated for a 30 kg child with normal renal function?",
+    "choices": [
+      "360 mg",
+      "600 mg",
+      "30 mg",
+      "12 mg"
+    ],
+    "answer": 0,
+    "rationale": "For an eligible child aged 6 months through 12 years with normal renal function, 12 mg/kg \u00d7 30 kg = 360 mg, below the 600 mg ceiling. The ceiling is not the automatic dose for every child; 30 mg confuses weight with dose, and 12 mg omits multiplication by kilograms.",
+    "reviewHref": "#peramivir-pharmacology-administration"
+  }
+});
