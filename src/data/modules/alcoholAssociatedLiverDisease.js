@@ -613,3 +613,90 @@ alcoholAssociatedLiverDiseaseModule.references.push(...[
     "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=40f5497f-fe84-43b2-8ff4-32d59edf3917"
   }
 ]);
+
+
+// Source-reconciled withdrawal assessment, treatment and monitoring.
+const verifiedAldWithdrawalLesson = {
+  "metadata": {
+    "summary": "Assess withdrawal risk, use valid monitoring, select treatment for liver function, and escalate promptly for seizures, delirium or oversedation.",
+    "concepts": [
+      "Withdrawal risk and care setting",
+      "CIWA-Ar limitations",
+      "Benzodiazepines and liver function",
+      "Seizure and delirium care",
+      "Monitored adjuncts",
+      "Continuing recovery"
+    ],
+    "application": "Combine exposure history, prior complicated withdrawal, current illness, communication ability and monitoring capacity to choose and reassess the treatment plan.",
+    "keyPoints": [
+      "A low initial score does not erase future risk.",
+      "CIWA-Ar is not diagnostic or suitable for delirium.",
+      "Liver function changes drug choice and monitoring.",
+      "Autonomic adjuncts do not replace seizure prevention.",
+      "Withdrawal care should connect to sustained AUD treatment."
+    ]
+  },
+  "bodies": [
+    {
+      "heading": "Recognize withdrawal after reduced alcohol intake",
+      "body": "Alcohol withdrawal can follow abrupt cessation or a marked reduction in sustained heavy drinking. Tremor, sweating, anxiety, nausea, insomnia, tachycardia or hypertension may appear within 6 to 24 hours, but the course varies. A positive blood alcohol concentration does not exclude withdrawal. Seizures and delirium can develop even when earlier symptoms seemed limited; do not use a quiet initial examination or an elapsed-time rule as proof of safety. Evaluate other causes of the presentation and obtain urgent care for a seizure, delirium or unstable physiology."
+    },
+    {
+      "heading": "Stratify risk before symptoms peak",
+      "body": "Ask about prior withdrawal seizures or delirium, repeated withdrawal episodes, duration of heavy drinking, current symptoms, medical illness and other substance use. Older age, marked autonomic activity, a seizure during the current episode and physiologic dependence on benzodiazepines or barbiturates increase concern. Multiple risk factors strengthen the need for preventive treatment and monitoring. A current symptom score describes the present examination; it cannot by itself predict the full course. Obtain a reliable history and relevant collateral information when the patient cannot provide it."
+    },
+    {
+      "heading": "Match the setting to risk and available care",
+      "body": "Ambulatory care can be appropriate when risks are limited or mitigated, the patient is medically stable, and reliable follow-up, support and a safe environment are available. Low psychosocial support or an unsafe environment may require more intensive care even when current symptoms are mild. Severe symptoms, a seizure, delirium, worsening illness, unstable vital signs or oversedation require prompt reassessment and transfer to a setting able to manage them. Pregnancy warrants obstetric involvement and consideration of inpatient withdrawal care. Do not select a home plan solely because the initial score is low."
+    },
+    {
+      "heading": "Use assessment scales within their limits",
+      "body": "CIWA-Ar can support symptom assessment and treatment in patients who can communicate reliably. It is not a diagnostic test: infection, other illnesses, concurrent withdrawal and medicines that mask autonomic signs can confound scores. It has not been validated in severe ALD. Do not use CIWA-Ar to direct care in delirium or rely on it when an intubated or otherwise noncommunicative patient cannot report symptoms. Use an appropriate objective clinical protocol; in delirium, structured ICU delirium and sedation assessments such as CAM-ICU and RASS can guide monitoring. Interpret every scale alongside the history, examination and clinical course."
+    },
+    {
+      "heading": "Use benzodiazepines with liver-sensitive safeguards",
+      "body": "Benzodiazepines are first-line treatment for moderate to severe alcohol withdrawal and reduce withdrawal seizures and delirium. Significant liver dysfunction changes drug selection and dosing: ACG identifies lorazepam or oxazepam as safer options than long-acting agents such as diazepam or chlordiazepoxide in poor liver function. This is a relative advantage, not freedom from sedation, respiratory depression or encephalopathy. Select the product, route and regimen for the clinical setting. Withdrawal and hepatic encephalopathy can coexist and both need treatment; carefully titrate benzodiazepines and reassess mental status rather than automatically withholding needed withdrawal treatment."
+    },
+    {
+      "heading": "Choose a usable dosing protocol",
+      "body": "Symptom-triggered benzodiazepine treatment is preferred when symptom assessment is valid and trained staff can reassess promptly. If that method cannot be used, a clinician-directed scheduled regimen with a taper can be appropriate; continue checking symptoms and adverse effects and adjust the plan when needed. Severe withdrawal may require front loading under an experienced team with close monitoring. An anxiety dosing table does not establish an alcohol-withdrawal schedule. Do not copy it into acute care, apply one regimen to every patient, or continue a fixed schedule without reassessing changing liver function, response and sedation."
+    },
+    {
+      "heading": "Monitor response and toxicity together",
+      "body": "Reassess withdrawal symptoms, vital signs, orientation, breathing, hydration, sleep and emotional status, including suicide risk. ASAM describes initial inpatient reassessment every 1 to 4 hours for 24 hours in moderate to severe withdrawal or when pharmacotherapy is needed, with frequency individualized to clinical need. Monitor more closely when the condition or regimen requires it; the interval is not permission to leave an unstable patient unobserved. Review opioid exposure and other CNS depressants because respiratory and sedation risks can add. Persistent agitation requires treatment review, while excessive sedation or impaired breathing calls for prompt safety assessment and an appropriate level of care."
+    },
+    {
+      "heading": "Treat a withdrawal seizure promptly",
+      "body": "After a suspected withdrawal seizure, assess the event and competing causes and provide immediate treatment to prevent another seizure. Benzodiazepines are first line; a fast-acting agent such as lorazepam or diazepam is preferred, with parenteral administration favored in this setting. Continue close observation for recurrent seizures, delirium, fluid needs and electrolyte abnormalities. Phenytoin is not routine prevention for alcohol-withdrawal seizures; it may have a separate role for a concomitant underlying seizure disorder. A new or unusual seizure pattern requires further diagnostic evaluation rather than an automatic withdrawal label."
+    },
+    {
+      "heading": "Reserve advanced drugs for monitored decisions",
+      "body": "Phenobarbital may be an alternative when benzodiazepines are contraindicated or an adjunct in selected monitored inpatient cases. It requires clinicians experienced with its narrow therapeutic window; parenteral use belongs in a highly supervised setting because oversedation and respiratory depression can occur. Clonidine, dexmedetomidine and beta blockers may address persistent autonomic symptoms as selected adjuncts, but they do not replace medication that prevents withdrawal seizures. Improved pulse or blood pressure does not establish that the withdrawal process is controlled. Antipsychotics may supplement benzodiazepines for inadequately controlled withdrawal delirium or hallucinations; they are not monotherapy for withdrawal delirium."
+    },
+    {
+      "heading": "Provide supportive and nutritional care",
+      "body": "Provide reassurance, orientation, fall precautions, hydration and appropriate nutrition while addressing concurrent illness. Give thiamine for Wernicke prevention and use a treatment regimen when Wernicke encephalopathy is suspected; prevention and treatment are different purposes. Assess and correct relevant electrolyte deficiencies, including magnesium, using clinical findings and laboratory results. These measures complement withdrawal medication and monitoring. They do not replace seizure-preventive treatment, and magnesium supplementation alone is not established alcohol-withdrawal therapy. Coordinate the nutrition and liver-care plans as the acute episode resolves."
+    },
+    {
+      "heading": "Continue recovery after the acute episode",
+      "body": "Withdrawal management is an entry into sustained AUD care, not completion of that care. As cognition permits, arrange behavioral treatment, a suitable AUD medication discussion, liver follow-up and a clear handoff to ongoing support. A benzodiazepine prescription given for acute alcohol withdrawal should end after that course under the prescribing plan. Existing long-term benzodiazepine dependence requires separate review and a safe discontinuation plan; do not abruptly stop an established dependent regimen. Explain warning signs, follow-up arrangements and the recovery plan at transitions of care."
+    }
+  ],
+  "check": {
+    "question": "Severe tremor and agitation persist despite treatment at an ambulatory clinic that is closing and cannot provide continuous monitoring. What is the best next step?",
+    "choices": [
+      "Arrange prompt transfer to a setting with the monitoring and treatment resources needed for the uncontrolled withdrawal.",
+      "Send the patient home with an unchanged plan because the clinic cannot stay open.",
+      "Use a normal earlier pulse as proof that ongoing symptoms are harmless.",
+      "Delay reassessment until the next routine appointment."
+    ],
+    "rationale": "Uncontrolled symptoms and inadequate monitoring require reassessment of the level of care and prompt transfer. Current clinical needs and access to observation matter; an earlier vital sign or the clinic schedule does not establish safety."
+  }
+};
+for (const lesson of alcoholAssociatedLiverDiseaseModule.submodules) {
+  if (lesson.slug === "withdrawal") {
+    Object.assign(lesson, verifiedAldWithdrawalLesson.metadata);
+    lesson.lesson = verifiedAldWithdrawalLesson.bodies;
+    Object.assign(lesson.check, verifiedAldWithdrawalLesson.check);
+  }
+}

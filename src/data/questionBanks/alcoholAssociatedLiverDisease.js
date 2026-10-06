@@ -742,3 +742,131 @@ const verifiedAldAudQuestions = {
 for (const item of alcoholAssociatedLiverDiseaseQuestionBank) {
   if (verifiedAldAudQuestions[item.id]) Object.assign(item, verifiedAldAudQuestions[item.id]);
 }
+
+
+// Distinct withdrawal cases retain stable IDs, keys and lesson anchors.
+const verifiedAldWithdrawalQuestions = {
+  "alcohol-associated-liver-disease-033": {
+    "question": "A patient has mild tremor now but a history of withdrawal delirium and repeated withdrawal episodes. Which interpretation is best?",
+    "choices": [
+      "The history increases risk of complicated withdrawal and must influence preventive treatment, setting and monitoring.",
+      "Mild current symptoms rule out later seizures or delirium.",
+      "A low current score cancels all risk from prior episodes.",
+      "Home treatment is always suitable if the patient is awake."
+    ],
+    "rationale": "Prior withdrawal delirium and numerous episodes are important risk factors. Present symptoms are only one part of assessment and can worsen. Choose care from the full risk profile and available monitoring, not the current examination alone."
+  },
+  "alcohol-associated-liver-disease-034": {
+    "question": "A patient with sustained heavy alcohol use develops tremor and sweating after markedly reducing intake, but blood alcohol remains detectable. What is the best conclusion?",
+    "choices": [
+      "Withdrawal remains possible; evaluate the history, examination and competing causes.",
+      "Detectable alcohol excludes withdrawal in every patient.",
+      "A positive result proves withdrawal without any clinical assessment.",
+      "Treatment assessment must wait until alcohol is undetectable."
+    ],
+    "rationale": "Withdrawal can occur after a substantial reduction in intake while blood alcohol remains positive. The result neither excludes nor establishes the diagnosis. Assess the clinical syndrome and do not delay necessary care for a negative test."
+  },
+  "alcohol-associated-liver-disease-035": {
+    "question": "A hospitalized patient has fever from suspected infection and a high CIWA-Ar score. A colleague treats the score as proof of alcohol withdrawal. Which correction is best?",
+    "choices": [
+      "CIWA-Ar measures symptoms and can be confounded; establish the diagnosis clinically and assess infection and other causes.",
+      "Any high CIWA-Ar score identifies the cause of symptoms with certainty.",
+      "Ignore the infection because all fever is caused by withdrawal.",
+      "Use the score as the only basis for every medication dose and disposition decision."
+    ],
+    "rationale": "CIWA-Ar is not a diagnostic tool. Fever and other illnesses can elevate symptom scores, and coexisting conditions need assessment and treatment. The history, examination and course must guide interpretation."
+  },
+  "alcohol-associated-liver-disease-036": {
+    "question": "An intubated patient is delirious and cannot report subjective symptoms. Which monitoring approach is appropriate?",
+    "choices": [
+      "Use an appropriate objective clinical protocol and structured ICU delirium or sedation assessments; do not direct care from CIWA-Ar self-report items.",
+      "Guess the missing CIWA-Ar answers and treat the total as validated.",
+      "Use CIWA-Ar because delirium makes its subjective questions more reliable.",
+      "Stop monitoring because the patient cannot speak."
+    ],
+    "rationale": "CIWA-Ar depends on patient-reported symptoms and is not recommended in delirium. Communication barriers require an appropriate objective approach. ICU delirium and sedation tools can support monitoring alongside clinical assessment; inability to speak does not remove the need for care."
+  },
+  "alcohol-associated-liver-disease-037": {
+    "question": "A patient with significant liver dysfunction needs benzodiazepine treatment for withdrawal. Which selection best reflects ACG guidance?",
+    "choices": [
+      "Consider lorazepam or oxazepam with careful titration and respiratory and mental-status monitoring.",
+      "Choose unmonitored chlordiazepoxide because liver function never affects accumulation.",
+      "Avoid all treatment during severe withdrawal because every benzodiazepine has identical risk.",
+      "Use lorazepam without monitoring because it cannot cause sedation."
+    ],
+    "rationale": "ACG identifies lorazepam and oxazepam as safer options in poor liver function than longer-acting agents. They still require careful selection, titration and monitoring. Relative safety does not eliminate sedation, respiratory depression or encephalopathy risk."
+  },
+  "alcohol-associated-liver-disease-038": {
+    "question": "After withdrawal medication, a patient becomes excessively somnolent and breathing worsens. What is the best response?",
+    "choices": [
+      "Promptly assess breathing, sedation, coexposures and the regimen, and ensure an appropriate monitored level of care.",
+      "Give extra sedatives automatically because sleepiness proves withdrawal is worsening.",
+      "Wait for the next scheduled score before assessing breathing.",
+      "Assume a normal bilirubin result excludes medication toxicity."
+    ],
+    "rationale": "Withdrawal pharmacotherapy requires monitoring for oversedation and respiratory depression. New impairment demands immediate clinical reassessment and adequate observation and treatment resources. A withdrawal score or liver test cannot establish respiratory safety."
+  },
+  "alcohol-associated-liver-disease-039": {
+    "question": "Reliable symptom scoring cannot be obtained during withdrawal treatment. Which alternative plan is defensible?",
+    "choices": [
+      "Use a clinician-directed scheduled regimen with a taper when appropriate, while continuing clinical monitoring and adjustment.",
+      "Copy an anxiety dosing table as a universal withdrawal protocol.",
+      "Continue a fixed regimen without checking response or sedation.",
+      "Withhold every treatment because symptom-triggered dosing is the only permitted method."
+    ],
+    "rationale": "ASAM prefers symptom-triggered dosing when usable but permits a scheduled taper when it cannot be used. Fixed dosing still requires assessment and adjustment. An anxiety table is not an acute withdrawal protocol and an unusable scale does not justify absent care."
+  },
+  "alcohol-associated-liver-disease-040": {
+    "question": "A patient has an alcohol-withdrawal seizure and no established underlying seizure disorder. Which immediate pharmacologic approach is preferred?",
+    "choices": [
+      "A fast-acting benzodiazepine such as lorazepam, with parenteral treatment and close monitoring as appropriate.",
+      "Routine phenytoin alone as the standard prevention of recurrent withdrawal seizures.",
+      "Clonidine alone because reducing pulse prevents recurrent seizures.",
+      "No seizure-preventive treatment once the first seizure ends."
+    ],
+    "rationale": "ASAM recommends immediate medication to prevent another withdrawal seizure, with benzodiazepines first line and parenteral administration preferred. Phenytoin is not routine treatment for withdrawal seizures; a separate underlying seizure disorder may change its role. Autonomic agents do not replace seizure prevention."
+  },
+  "alcohol-associated-liver-disease-041": {
+    "question": "A proposed IV phenobarbital plan is for an unmonitored setting staffed by clinicians unfamiliar with its use. What must change?",
+    "choices": [
+      "Use an experienced treatment team and a highly supervised setting with respiratory and sedation monitoring before pursuing parenteral phenobarbital.",
+      "Keep the setting because IV phenobarbital has no respiratory risk.",
+      "Remove monitoring because the drug is an alternative to benzodiazepines.",
+      "Give it unsupervised as a routine home rescue medicine."
+    ],
+    "rationale": "Phenobarbital has a narrow therapeutic window and can cause oversedation and respiratory depression. ASAM restricts parenteral use to highly supervised settings and stresses clinician experience. Alternative status does not make unmonitored administration safe."
+  },
+  "alcohol-associated-liver-disease-042": {
+    "question": "Clonidine improves pulse and blood pressure during withdrawal. The team proposes using it alone for seizure prevention. Which correction is best?",
+    "choices": [
+      "Autonomic improvement can mask signs; clonidine is an adjunct and does not replace seizure-preventive withdrawal treatment.",
+      "A lower pulse proves seizure and delirium risk are eliminated.",
+      "Clonidine alone is first-line prevention of withdrawal seizures.",
+      "Stop all assessment once blood pressure improves."
+    ],
+    "rationale": "Alpha-2 agonists can address persistent autonomic symptoms as adjuncts to benzodiazepines. They do not prevent or treat withdrawal seizures and should not be used alone to control withdrawal. Vital-sign improvement does not demonstrate control of the underlying process."
+  },
+  "alcohol-associated-liver-disease-043": {
+    "question": "A patient with cirrhosis has evidence of both alcohol withdrawal and hepatic encephalopathy. Which plan is best?",
+    "choices": [
+      "Treat both conditions, carefully titrate withdrawal medication and monitor for worsening cognition and respiratory effects.",
+      "Assume hepatic encephalopathy makes alcohol withdrawal impossible.",
+      "Withhold all severe-withdrawal treatment without assessing its risks.",
+      "Assume every mental-status change is withdrawal and omit encephalopathy care."
+    ],
+    "rationale": "ACG states that withdrawal and hepatic encephalopathy can coexist and both need treatment. Benzodiazepines may precipitate or worsen encephalopathy, so careful titration and reassessment are essential. Neither diagnosis excludes the other."
+  },
+  "alcohol-associated-liver-disease-044": {
+    "question": "Acute withdrawal has resolved after a prescribed course. Which transition best supports recovery?",
+    "choices": [
+      "End the acute withdrawal prescription under the plan and arrange ongoing AUD treatment, support and liver follow-up.",
+      "Describe completed withdrawal as a cure for AUD and cancel follow-up.",
+      "Automatically supply indefinite benzodiazepines for every patient.",
+      "Stop an unrelated established dependent benzodiazepine regimen abruptly without review."
+    ],
+    "rationale": "Withdrawal management should connect to sustained AUD care. The acute benzodiazepine course should end after treatment, while any separate established dependence requires its own safe plan. Symptom resolution is not completion of longitudinal recovery care."
+  }
+};
+for (const item of alcoholAssociatedLiverDiseaseQuestionBank) {
+  if (verifiedAldWithdrawalQuestions[item.id]) Object.assign(item, verifiedAldWithdrawalQuestions[item.id]);
+}
