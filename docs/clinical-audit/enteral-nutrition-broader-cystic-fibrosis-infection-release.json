@@ -1,0 +1,918 @@
+{
+  "verifiedAt": "2026-10-06T22:48:47.189047+00:00",
+  "unit": "enteral-nutrition:broader-cystic-fibrosis-infection",
+  "contentCommit": "196eac0b13b5d9722cfa0f6ba0b63320fcd35910",
+  "remoteBranch": "audit/rxprep-content-2026-09-24",
+  "remoteHashObserved": "196eac0b13b5d9722cfa0f6ba0b63320fcd35910",
+  "exactRemoteObservedByTool": true,
+  "coverage": {
+    "evidence": "enteral-nutrition-broader-cystic-fibrosis-infection-review.json",
+    "moduleSlug": "cystic-fibrosis",
+    "wholeParentModuleVerified": false,
+    "wholeLessonKeys": [
+      "cf-infection-exacerbations"
+    ],
+    "wholeTeachingBodies": 9,
+    "originalTeachingBodiesRetainedAndReconciled": 4,
+    "addedTeachingBodies": 5,
+    "wholeEmbeddedChecks": 1,
+    "embeddedChoices": 4,
+    "wholeFigures": 1,
+    "wholeBankQuestions": 21,
+    "wholeBankChoices": 84,
+    "wholeBankQuestionIds": [
+      "cf-041",
+      "cf-042",
+      "cf-043",
+      "cf-044",
+      "cf-045",
+      "cf-046",
+      "cf-047",
+      "cf-048",
+      "cf-049",
+      "cf-050",
+      "cf-051",
+      "cf-052",
+      "cf-053",
+      "cf-054",
+      "cf-055",
+      "cf-056",
+      "cf-podhaler-cycle-supply",
+      "cf-tobramycin-ampule-concentration",
+      "cf-cayston-missed-dose-spacing",
+      "cf-ntm-positive-culture-hold",
+      "cf-bethkis-room-temperature-limit"
+    ],
+    "originalQuestionIds": [
+      "cf-041",
+      "cf-042",
+      "cf-043",
+      "cf-044",
+      "cf-045",
+      "cf-046",
+      "cf-047",
+      "cf-048",
+      "cf-049",
+      "cf-050",
+      "cf-051",
+      "cf-052",
+      "cf-053",
+      "cf-054",
+      "cf-055",
+      "cf-056"
+    ],
+    "newQuestionIds": [
+      "cf-podhaler-cycle-supply",
+      "cf-tobramycin-ampule-concentration",
+      "cf-cayston-missed-dose-spacing",
+      "cf-ntm-positive-culture-hold",
+      "cf-bethkis-room-temperature-limit"
+    ],
+    "revisedOriginalQuestionIds": [
+      "cf-041",
+      "cf-042",
+      "cf-043",
+      "cf-044",
+      "cf-045",
+      "cf-046",
+      "cf-047",
+      "cf-048",
+      "cf-049",
+      "cf-050",
+      "cf-051",
+      "cf-052",
+      "cf-053",
+      "cf-054",
+      "cf-055",
+      "cf-056"
+    ],
+    "qualifiedCorrectAnswerTexts": [
+      "cf-054"
+    ],
+    "all85PriorVerifiedCFQuestionObjectsUnchanged": true,
+    "associatedCumulativeItems": [],
+    "all1180CumulativeObjectsUnchanged": true,
+    "other113PreexistingQuestionObjectsUnchanged": true,
+    "otherSevenWholeLessonObjectsUnchanged": true,
+    "other231ModuleObjectsUnchanged": true,
+    "newUniqueWholeQuestionsVerified": 21,
+    "broaderFeedingBankVerifiedAfter": 1468,
+    "committedWholeModulesVerifiedAfter": 65,
+    "committedWholeModulesTotal": 232,
+    "moduleCountPercent": 28.02,
+    "chaptersVerifiedAfter": 6,
+    "chapterTotal": 82,
+    "chapterCountPercent": 7.32,
+    "newReferencesAddedAndClinicallyReviewed": 9,
+    "all38ReferenceLinksRenderedExactly": true,
+    "threeOriginalModulatorReferencesClinicalVerificationPending": true,
+    "originalGeneralCfGuidelineReferenceClinicalVerificationPending": true,
+    "wholeModuleMetadataClinicalVerificationPending": true,
+    "bookPdfPagesReadAndActuallyViewed": [
+      740,
+      741,
+      743
+    ],
+    "remainingWholeLessons": 2,
+    "remainingOriginalWholeQuestions": 28,
+    "remainingOriginalBodies": 8,
+    "remainingEmbeddedChecks": 2,
+    "remainingFigures": 2,
+    "totalCFWholeLessonsVerifiedAcrossUnits": 6,
+    "totalCFWholeQuestionsVerifiedAcrossUnits": 106,
+    "fullEnteralParentVerified": false,
+    "wholeGoalComplete": false
+  },
+  "validation": {
+    "structure": {
+      "modules": 1,
+      "questions": 134,
+      "hardErrors": [],
+      "sourceGaps": [],
+      "sizeAdvisories": [],
+      "thinLessons": [],
+      "weakestModules": [
+        {
+          "module": "cystic-fibrosis",
+          "lessons": 8,
+          "questions": 134,
+          "minimumLessonCoverage": 8
+        }
+      ]
+    },
+    "wholeSiteBaselineIssues": {
+      "status": "passed",
+      "allExistingWholeSiteIssueObjectsUnchanged": true,
+      "scopeBankBefore": 129,
+      "scopeBankAfter": 134,
+      "hardErrors": 34,
+      "sizeAdvisories": 37,
+      "thinLessons": 359
+    },
+    "productionCandidateBuild": {
+      "status": "passed",
+      "terminalExitCode": 0,
+      "command": "next build --webpack",
+      "productionCandidate": true
+    },
+    "desktopMobileBrowser": {
+      "status": "passed",
+      "results": [
+        {
+          "width": 1440,
+          "exactWholeBodies": 9,
+          "wholeChecksAllFourOptionsGraded": 1,
+          "wholeQuestionsShuffledCorrectIncorrectFeedbackAndAnchorsVerified": 21,
+          "associatedCumulativeOriginsVerified": 0,
+          "all1180CumulativeObjectsUnchanged": true,
+          "allReferencesExact": 38,
+          "noHorizontalOverflow": true,
+          "diagrams": [
+            {
+              "width": 1440,
+              "slug": "cystic-fibrosis",
+              "lessonKey": "cf-infection-exacerbations",
+              "labels": [
+                {
+                  "tag": "SPAN",
+                  "text": "Longitudinal microbiology",
+                  "overflow": false,
+                  "fontSize": 10.88
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Acquisition, eradication, suppression, and rescue",
+                  "overflow": false,
+                  "fontSize": 37.6
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "01",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Detect",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Serial cultures",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "P",
+                  "text": "Organism history matters more than one snapshot",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "02",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Prevent",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Early eradication",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "P",
+                  "text": "Treat new Pseudomonas before chronic adaptation",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "03",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Control",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Suppression and acute care",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "P",
+                  "text": "Match route and intensity to infection state",
+                  "overflow": false,
+                  "fontSize": 16
+                }
+              ],
+              "allTextWithinBounds": true
+            }
+          ]
+        },
+        {
+          "width": 390,
+          "exactWholeBodies": 9,
+          "wholeChecksAllFourOptionsGraded": 1,
+          "wholeQuestionsShuffledCorrectIncorrectFeedbackAndAnchorsVerified": 21,
+          "associatedCumulativeOriginsVerified": 0,
+          "all1180CumulativeObjectsUnchanged": true,
+          "allReferencesExact": 38,
+          "noHorizontalOverflow": true,
+          "diagrams": [
+            {
+              "width": 320,
+              "slug": "cystic-fibrosis",
+              "lessonKey": "cf-infection-exacerbations",
+              "labels": [
+                {
+                  "tag": "SPAN",
+                  "text": "Longitudinal microbiology",
+                  "overflow": false,
+                  "fontSize": 10.88
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Acquisition, eradication, suppression, and rescue",
+                  "overflow": false,
+                  "fontSize": 23.2
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "01",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Detect",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Serial cultures",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "P",
+                  "text": "Organism history matters more than one snapshot",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "02",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Prevent",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Early eradication",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "P",
+                  "text": "Treat new Pseudomonas before chronic adaptation",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "03",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Control",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Suppression and acute care",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "P",
+                  "text": "Match route and intensity to infection state",
+                  "overflow": false,
+                  "fontSize": 16
+                }
+              ],
+              "allTextWithinBounds": true
+            },
+            {
+              "width": 390,
+              "slug": "cystic-fibrosis",
+              "lessonKey": "cf-infection-exacerbations",
+              "labels": [
+                {
+                  "tag": "SPAN",
+                  "text": "Longitudinal microbiology",
+                  "overflow": false,
+                  "fontSize": 10.88
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Acquisition, eradication, suppression, and rescue",
+                  "overflow": false,
+                  "fontSize": 23.2
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "01",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Detect",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Serial cultures",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "P",
+                  "text": "Organism history matters more than one snapshot",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "02",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Prevent",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Early eradication",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "P",
+                  "text": "Treat new Pseudomonas before chronic adaptation",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "03",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Control",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Suppression and acute care",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "P",
+                  "text": "Match route and intensity to infection state",
+                  "overflow": false,
+                  "fontSize": 16
+                }
+              ],
+              "allTextWithinBounds": true
+            },
+            {
+              "width": 719,
+              "slug": "cystic-fibrosis",
+              "lessonKey": "cf-infection-exacerbations",
+              "labels": [
+                {
+                  "tag": "SPAN",
+                  "text": "Longitudinal microbiology",
+                  "overflow": false,
+                  "fontSize": 10.88
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Acquisition, eradication, suppression, and rescue",
+                  "overflow": false,
+                  "fontSize": 24.446
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "01",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Detect",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Serial cultures",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "P",
+                  "text": "Organism history matters more than one snapshot",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "02",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Prevent",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Early eradication",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "P",
+                  "text": "Treat new Pseudomonas before chronic adaptation",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "03",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Control",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Suppression and acute care",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "P",
+                  "text": "Match route and intensity to infection state",
+                  "overflow": false,
+                  "fontSize": 16
+                }
+              ],
+              "allTextWithinBounds": true
+            },
+            {
+              "width": 720,
+              "slug": "cystic-fibrosis",
+              "lessonKey": "cf-infection-exacerbations",
+              "labels": [
+                {
+                  "tag": "SPAN",
+                  "text": "Longitudinal microbiology",
+                  "overflow": false,
+                  "fontSize": 10.88
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Acquisition, eradication, suppression, and rescue",
+                  "overflow": false,
+                  "fontSize": 24.48
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "01",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Detect",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Serial cultures",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "P",
+                  "text": "Organism history matters more than one snapshot",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "02",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Prevent",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Early eradication",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "P",
+                  "text": "Treat new Pseudomonas before chronic adaptation",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "03",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Control",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Suppression and acute care",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "P",
+                  "text": "Match route and intensity to infection state",
+                  "overflow": false,
+                  "fontSize": 16
+                }
+              ],
+              "allTextWithinBounds": true
+            },
+            {
+              "width": 721,
+              "slug": "cystic-fibrosis",
+              "lessonKey": "cf-infection-exacerbations",
+              "labels": [
+                {
+                  "tag": "SPAN",
+                  "text": "Longitudinal microbiology",
+                  "overflow": false,
+                  "fontSize": 10.88
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Acquisition, eradication, suppression, and rescue",
+                  "overflow": false,
+                  "fontSize": 24.514
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "01",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Detect",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Serial cultures",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "P",
+                  "text": "Organism history matters more than one snapshot",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "02",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Prevent",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Early eradication",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "P",
+                  "text": "Treat new Pseudomonas before chronic adaptation",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "03",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Control",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Suppression and acute care",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "P",
+                  "text": "Match route and intensity to infection state",
+                  "overflow": false,
+                  "fontSize": 16
+                }
+              ],
+              "allTextWithinBounds": true
+            }
+          ]
+        }
+      ],
+      "captures": [
+        "hero-cystic-fibrosis-1440.png",
+        "body-cf-infection-exacerbations-0-1440.png",
+        "body-cf-infection-exacerbations-1-1440.png",
+        "body-cf-infection-exacerbations-2-1440.png",
+        "body-cf-infection-exacerbations-3-1440.png",
+        "body-cf-infection-exacerbations-4-1440.png",
+        "body-cf-infection-exacerbations-5-1440.png",
+        "body-cf-infection-exacerbations-6-1440.png",
+        "body-cf-infection-exacerbations-7-1440.png",
+        "body-cf-infection-exacerbations-8-1440.png",
+        "summary-cf-infection-exacerbations-1440.png",
+        "concepts-cf-infection-exacerbations-1440.png",
+        "keypoints-cf-infection-exacerbations-1440.png",
+        "application-cf-infection-exacerbations-1440.png",
+        "figure-cf-infection-exacerbations-1440.png",
+        "check-cf-infection-exacerbations-1440.png",
+        "references-cystic-fibrosis-1440.png",
+        "bank-cf-049-1440.png",
+        "bank-cf-055-1440.png",
+        "bank-cf-bethkis-room-temperature-limit-1440.png",
+        "bank-cf-050-1440.png",
+        "bank-cf-podhaler-cycle-supply-1440.png",
+        "bank-cf-046-1440.png",
+        "bank-cf-051-1440.png",
+        "bank-cf-044-1440.png",
+        "bank-cf-047-1440.png",
+        "bank-cf-043-1440.png",
+        "bank-cf-042-1440.png",
+        "bank-cf-tobramycin-ampule-concentration-1440.png",
+        "bank-cf-056-1440.png",
+        "bank-cf-ntm-positive-culture-hold-1440.png",
+        "bank-cf-cayston-missed-dose-spacing-1440.png",
+        "bank-cf-052-1440.png",
+        "bank-cf-048-1440.png",
+        "bank-cf-041-1440.png",
+        "bank-cf-053-1440.png",
+        "bank-cf-054-1440.png",
+        "bank-cf-045-1440.png",
+        "hero-cystic-fibrosis-390.png",
+        "body-cf-infection-exacerbations-0-390.png",
+        "body-cf-infection-exacerbations-1-390.png",
+        "body-cf-infection-exacerbations-2-390.png",
+        "body-cf-infection-exacerbations-3-390.png",
+        "body-cf-infection-exacerbations-4-390.png",
+        "body-cf-infection-exacerbations-5-390.png",
+        "body-cf-infection-exacerbations-6-390.png",
+        "body-cf-infection-exacerbations-7-390.png",
+        "body-cf-infection-exacerbations-8-390.png",
+        "summary-cf-infection-exacerbations-390.png",
+        "concepts-cf-infection-exacerbations-390.png",
+        "keypoints-cf-infection-exacerbations-390.png",
+        "application-cf-infection-exacerbations-390.png",
+        "figure-cf-infection-exacerbations-390.png",
+        "check-cf-infection-exacerbations-390.png",
+        "references-cystic-fibrosis-390.png",
+        "bank-cf-049-390.png",
+        "bank-cf-055-390.png",
+        "bank-cf-bethkis-room-temperature-limit-390.png",
+        "bank-cf-050-390.png",
+        "bank-cf-podhaler-cycle-supply-390.png",
+        "bank-cf-046-390.png",
+        "bank-cf-051-390.png",
+        "bank-cf-044-390.png",
+        "bank-cf-047-390.png",
+        "bank-cf-043-390.png",
+        "bank-cf-042-390.png",
+        "bank-cf-tobramycin-ampule-concentration-390.png",
+        "bank-cf-056-390.png",
+        "bank-cf-ntm-positive-culture-hold-390.png",
+        "bank-cf-cayston-missed-dose-spacing-390.png",
+        "bank-cf-052-390.png",
+        "bank-cf-048-390.png",
+        "bank-cf-041-390.png",
+        "bank-cf-053-390.png",
+        "bank-cf-054-390.png",
+        "bank-cf-045-390.png",
+        "native-figure-cf-infection-exacerbations-320.png",
+        "native-figure-cf-infection-exacerbations-721.png"
+      ],
+      "errors": []
+    },
+    "librarySearch": {
+      "status": "passed",
+      "results": [
+        {
+          "width": 1440,
+          "existingInfectionTopicSearchFindsOriginalModuleRoute": true,
+          "lessonCount8": true,
+          "moduleNavigationPassed": true,
+          "noHorizontalOverflow": true
+        },
+        {
+          "width": 390,
+          "existingInfectionTopicSearchFindsOriginalModuleRoute": true,
+          "lessonCount8": true,
+          "moduleNavigationPassed": true,
+          "noHorizontalOverflow": true
+        }
+      ],
+      "captures": [
+        "library-search-1440.png",
+        "library-search-390.png"
+      ]
+    },
+    "manualVisualInspection": {
+      "status": "passed",
+      "checkedAt": "2026-10-06T22:46:41.719455+00:00",
+      "allSelectedBoardsActuallyViewedAtOriginalDetail": 13,
+      "boardsReviewed": [
+        "board-00.png",
+        "board-01.png",
+        "board-02.png",
+        "board-03.png",
+        "board-04.png",
+        "board-05.png",
+        "board-06.png",
+        "board-07.png",
+        "board-08.png",
+        "board-09.png",
+        "board-10.png",
+        "board-11.png",
+        "board-12.png"
+      ],
+      "bothNativeFiguresIndividuallyViewed": true,
+      "nativeFigureWidthsReviewed": [
+        320,
+        721
+      ],
+      "automatedFigureWidths": [
+        320,
+        390,
+        719,
+        720,
+        721,
+        1440
+      ],
+      "all9BodiesAnd21WholeQuestionsActuallyInspectedInDesktopMobilePairs": true,
+      "oneEmbeddedCheckAllFourChoicesReviewed": true,
+      "oneFigureWholeClaimSetReviewed": true,
+      "noScopedCumulativeOrigins": true,
+      "all1180CumulativeObjectsUnchanged": true,
+      "originalInfectionTopicSearchAndRouteInspected": true,
+      "referencesLinksInspected": 38,
+      "legibleTextAndCompleteFeedback": true,
+      "noClippedTextOrHorizontalOverflow": true,
+      "allReviewedFigureFocusAndBodyLabelsAtLeast14px": true,
+      "bookPdfPagesActuallyViewed": [
+        740,
+        741,
+        743
+      ],
+      "finalImagesMatchActuallyInspectedHashes": true
+    },
+    "limits": "Unauthenticated local built candidate;no backend,account,progress,mainmerge,production,orpublicationverificationclaimed."
+  },
+  "preservation": {
+    "status": "passed",
+    "baselinePathsChecked": 2062,
+    "all820InitialDraftPathsPreservedExceptDocumentedScopedLedgerChanges": true,
+    "allThreeScopedSourceFilesMatchedBaselineHeadBeforeApplication": true,
+    "allOtherWorkingAndCommittedLedgerFieldsPreserved": true,
+    "onlyVerifiedHeadDerivedSourceAndScopedLedgerEntriesStagedOrCommitted": true,
+    "scope": [
+      "src/data/modules/cysticFibrosis.js",
+      "src/data/questionBanks/cysticFibrosis.js",
+      "src/components/learn/CysticFibrosisVisual.jsx",
+      "docs/clinical-audit/enteral-nutrition-broader-cystic-fibrosis-infection-review.json",
+      "docs/clinical-audit/module-ledger.json",
+      "docs/clinical-audit/chapter-ledger.json",
+      "docs/clinical-audit/sequential-resume.json"
+    ]
+  },
+  "publication": {
+    "mainMerge": "not performed",
+    "production": "not verified"
+  },
+  "wholeGoalComplete": false,
+  "nextAction": "Continue CF parent at cftr-modulators: verify exact current products, genotype/age/formulation eligibility, interactions, dosing and monitoring; individually review all teaching, 20 original questions, embedded check and figure. Then verify cf-longitudinal-advanced-care with eight original questions, its check/figure, and parent metadata plus three original FDA modulator references and one general CFF reference. Two lessons, eight original bodies, two checks, two figures and28originalquestions remain. Current infection evidence resolves the actual book narrative8hourversustable/review6hour tobramycin discrepancy using currentlabels6hourminimum;historical evidence preserved. Return to Chapter11feedinginventory afterdependencies;Chapter1PDF19checklistentry15fluidneeds remainsopen.",
+  "receiptCommit": "Receipt follows exact verified content commit; its own remote hash separately verified in execution output."
+}
