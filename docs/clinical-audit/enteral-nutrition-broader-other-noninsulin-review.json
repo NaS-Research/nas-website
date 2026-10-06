@@ -1,0 +1,2277 @@
+{
+  "updated": "2026-10-06T10:30:27.392403+00:00",
+  "unit": "enteral-nutrition:broader-other-noninsulin",
+  "status": "Complete other-agent lesson and twelve questions clinically, structurally, runtime and visually verified; push pending.",
+  "baseCommit": "e615509031c969309d726e1411bb8da6dc72aa10",
+  "sourcePolicy": {
+    "primary": "Cover-verified private RxPrep2023",
+    "approvedAuthoritativeSources": {
+      "status": "approved by direct user message: I give approval",
+      "scope": "Official guidelines, FDA labels and primary academic clinical references where the book cannot verify retained content; includes pending calcium, dialysis, aluminum and mineral physiology scopes",
+      "primarySourceRemains": "Supplied cover-verified RxPrep2023 book",
+      "approvalContext": "Response to pending asynchronous request for this additional authoritative source policy",
+      "usedNewlyAuthorizedSourcesInThisUnit": true,
+      "latestEvidence": "enteral-nutrition-broader-tzd-review.json"
+    }
+  },
+  "coverage": {
+    "evidence": "enteral-nutrition-broader-other-noninsulin-review.json",
+    "verifiedScope": "One complete audit-branch other-agent lesson: twenty-three whole bodies, metadata, corrected embedded check, reviewed mechanism figure and twelve linked whole questions. Eleven questions changed; one previously verified question retained exactly.",
+    "wholeLessonsVerified": {
+      "noninsulin-diabetes-pharmacotherapy": [
+        "other-noninsulin-agents"
+      ]
+    },
+    "wholeBodiesVerified": 23,
+    "wholeQuestionsReviewed": 12,
+    "changedWholeQuestions": 11,
+    "existingBodiesExpanded": 4,
+    "newOriginalBodies": 19,
+    "wholeChecksVerified": 1,
+    "wholeMetadataAndFiguresVerified": 1,
+    "wholeBankQuestionIdsVerified": [
+      "noninsulin-diabetes-18-principle",
+      "noninsulin-diabetes-18-application",
+      "noninsulin-diabetes-18-safety",
+      "noninsulin-diabetes-18-case",
+      "noninsulin-diabetes-19-principle",
+      "noninsulin-diabetes-19-application",
+      "noninsulin-diabetes-19-safety",
+      "noninsulin-diabetes-19-case",
+      "noninsulin-diabetes-20-principle",
+      "noninsulin-diabetes-20-application",
+      "noninsulin-diabetes-20-safety",
+      "noninsulin-diabetes-20-case"
+    ],
+    "all48ChoicesIndividuallySourceCompared": true,
+    "previouslyVerifiedWholeQuestionRetainedExactly": "noninsulin-diabetes-18-application",
+    "newUniqueBankQuestionsVerified": 11,
+    "broaderFeedingBankVerifiedBefore": 1029,
+    "broaderFeedingBankVerifiedAfter": 1040,
+    "sourceVerifiedNoninsulinBankTotalAcrossUnits": 93,
+    "noninsulinAuditBranchBankTotal": 120,
+    "noninsulinAuditBranchLessonTotal": 10,
+    "noninsulinAuditBranchLessonsVerifiedAcrossUnits": 8,
+    "remainingNoninsulinWholeBankIds": [
+      "noninsulin-diabetes-21-principle",
+      "noninsulin-diabetes-21-application",
+      "noninsulin-diabetes-21-safety",
+      "noninsulin-diabetes-21-case",
+      "noninsulin-diabetes-22-principle",
+      "noninsulin-diabetes-22-application",
+      "noninsulin-diabetes-22-safety",
+      "noninsulin-diabetes-22-case",
+      "noninsulin-diabetes-23-principle",
+      "noninsulin-diabetes-23-application",
+      "noninsulin-diabetes-23-safety",
+      "noninsulin-diabetes-23-case",
+      "noninsulin-diabetes-24-principle",
+      "noninsulin-diabetes-24-safety",
+      "noninsulin-diabetes-24-case",
+      "noninsulin-diabetes-25-principle",
+      "noninsulin-diabetes-25-application",
+      "noninsulin-diabetes-25-safety",
+      "noninsulin-diabetes-25-case",
+      "noninsulin-diabetes-26-principle",
+      "noninsulin-diabetes-26-application",
+      "noninsulin-diabetes-26-safety",
+      "noninsulin-diabetes-26-case",
+      "noninsulin-diabetes-30-principle",
+      "noninsulin-diabetes-30-application",
+      "noninsulin-diabetes-30-safety",
+      "noninsulin-diabetes-30-case"
+    ],
+    "remainingNoninsulinAuditBranchLessons": 2,
+    "other108WholeBankQuestionsUnchanged": true,
+    "allPrior82VerifiedNoninsulinQuestionsUnchanged": true,
+    "otherNineWholeLessonsUnchanged": true,
+    "other231WholeModulesUnchanged": true,
+    "associatedCumulativeWholeItemsVerified": [],
+    "all1180WholeCumulativeObjectsUnchanged": true,
+    "stableIdsKeysDifficultyAnchorsOrderPreserved": true,
+    "newQuestionIdsAdded": 0,
+    "cumulativeSelectorUnchanged": true,
+    "all41ExistingReferencesRetainedAndRuntimeChecked": true,
+    "fivePrimaryReferencesAddedAndRuntimeChecked": true,
+    "wholeParentModuleVerified": false,
+    "enteralParentVerified": false,
+    "wholeChaptersVerified": false,
+    "committedWholeModulesVerifiedAfter": 61,
+    "committedWholeModulesTotal": 232,
+    "moduleCountPercent": 26.29,
+    "chaptersVerifiedAfter": 6,
+    "chapterTotal": 82,
+    "chapterCountPercent": 7.32,
+    "workingDraftBoundary": "Working draft contains eleven lessons and ninety-two different authored questions. Prior bytes and reviewing statuses are preserved. This certificate applies to the isolated HEAD-derived audit-branch lesson and twelve stable question IDs; certification of different working-draft variants is not inferred."
+  },
+  "changes": {
+    "noninsulin-diabetes-pharmacotherapy": {
+      "lessons": {
+        "other-noninsulin-agents": {
+          "slug": "other-noninsulin-agents",
+          "title": "Alpha-Glucosidase Inhibitors, Pramlintide, and Other Agents",
+          "visual": "noninsulin-other",
+          "summary": "Acarbose, miglitol, pramlintide, colesevelam and bromocriptine-QR have selected roles. Exact meal timing, insulin adjustment, triglyceride limits and product-specific interaction rules determine safe use.",
+          "concepts": [
+            "First-bite alpha-glucosidase inhibition and glucose rescue",
+            "Pramlintide selection, titration and mealtime insulin reduction",
+            "Colesevelam dose, triglyceride limits and bowel precautions",
+            "Direction-specific oral drug and vitamin spacing",
+            "Cycloset morning dosing, orthostasis and dopamine interactions"
+          ],
+          "application": "Match the agent to a defined treatment goal and an achievable administration plan. Check meals, kidney function and gastrointestinal disease for alpha-glucosidase inhibitors; insulin use and hypoglycemia awareness for pramlintide; triglycerides, bowel history and other oral medicines for colesevelam; and waking schedule, orthostasis and interacting medicines for Cycloset. Reassess glucose response, tolerability and burden rather than retaining a modest-effect medicine indefinitely.",
+          "lesson": [
+            {
+              "heading": "Delay carbohydrate absorption",
+              "body": "Acarbose and miglitol inhibit intestinal alpha-glucosidases, delaying carbohydrate digestion and reducing the rise in glucose after meals. They do not directly stimulate insulin release. Take each dose with the first bite of each main meal, rather than at bedtime or well after eating. Flatulence, diarrhea and abdominal discomfort reflect delivery of undigested carbohydrate to the lower intestine and often limit tolerability. These agents have modest glucose efficacy and are not routine substitutes for a regimen selected to address major heart, kidney or weight goals. Review whether meal timing and adverse effects make the treatment practical."
+            },
+            {
+              "heading": "Distinguish acarbose and miglitol dose ceilings",
+              "body": "Both labeled regimens start at 25 mg three times daily with the first bite; gradual introduction from 25 mg once daily can improve tolerability before reaching three daily doses. Acarbose can be adjusted at 4-8 week intervals according to response and tolerability. Its maximum is 50 mg three times daily at a body weight of 60 kg or less, and 100 mg three times daily above 60 kg. Miglitol has a usual maintenance dose of 50 mg three times daily after 4-8 weeks; assess response after about three months and consider 100 mg three times daily if needed and tolerated. Miglitol does not have acarbose’s weight-based ceiling. Do not confuse milligrams per dose with the daily total."
+            },
+            {
+              "heading": "Screen the bowel and use the exact renal restriction",
+              "body": "Both alpha-glucosidase inhibitors are contraindicated in diabetic ketoacidosis, hypersensitivity to the product, inflammatory bowel disease, colonic ulceration, partial intestinal obstruction or predisposition to obstruction, and chronic intestinal disorders that substantially impair digestion or absorption or worsen with increased gas. Acarbose also lists cirrhosis as a contraindication. Acarbose is not recommended when serum creatinine is above 2 mg/dL because long-term studies are lacking. Miglitol is renally eliminated and is not recommended at creatinine clearance below 25 mL/min; its label also discourages use with serum creatinine above 2 mg/dL. These measures and units are different; do not convert one threshold into the other without a patient-specific assessment."
+            },
+            {
+              "heading": "Monitor acarbose’s liver and laboratory effects",
+              "body": "For acarbose, check serum transaminases every three months during the first year and periodically thereafter. Persistent elevations can require dose reduction or withdrawal. Do not copy this product’s liver-testing instruction to miglitol as a universal class schedule. Acarbose’s cited label also warns that the 1,5-anhydroglucitol, or 1,5-AG, assay is unreliable for assessing glycemic control during treatment; use another monitoring method. Glucose trends and A1C help assess response, while symptoms and organ function guide safety review. A glucose improvement does not cancel a liver or bowel warning."
+            },
+            {
+              "heading": "Treat low glucose according to swallowing ability",
+              "body": "Neither drug usually causes hypoglycemia alone, but concomitant insulin or a sulfonylurea can. For an alert patient who can swallow, use glucose tablets or gel for rapid oral correction. Sucrose requires hydrolysis that the inhibitor delays and is unsuitable for prompt treatment; pure glucose does not require that step. The book’s rule of 15 uses 15-20 g of carbohydrate, a glucose recheck after 15 minutes and repeat treatment if the low persists. In this setting choose glucose. Once glucose normalizes, follow with a small meal or snack. If unconscious or unable to swallow safely, do not give oral carbohydrate; use the prescribed rescue plan, glucagon or IV dextrose as appropriate, and obtain urgent help."
+            },
+            {
+              "heading": "Review intestinal interactions and serious symptoms",
+              "body": "Intestinal adsorbents such as charcoal and carbohydrate-splitting enzyme preparations such as amylase or pancreatin can reduce the effect of acarbose and miglitol and should not be used concomitantly. Acarbose can alter digoxin exposure, so review whether monitoring or a dose adjustment is needed rather than assuming no interaction because its main action is intestinal. Gas or loose stools can be expected, but rectal bleeding, mucus discharge or significant abdominal symptoms need assessment. Both labels report rare pneumatosis cystoides intestinalis; if suspected, discontinue the inhibitor and obtain appropriate diagnostic evaluation. Do not normalize severe or unusual gastrointestinal symptoms as routine intolerance."
+            },
+            {
+              "heading": "Replace the amylin signal",
+              "body": "Pramlintide is an amylin analog used alongside mealtime insulin in selected patients with type 1 or type 2 diabetes whose control remains inadequate despite optimized insulin management. It slows gastric emptying, suppresses the postmeal glucagon rise and promotes satiety, reducing food intake. These are distinct amylin effects; insulin is still needed. Nausea, vomiting, reduced appetite and weight loss can occur. Because pramlintide is added to mealtime insulin, severe hypoglycemia is a major risk, particularly in type 1 diabetes. It commonly occurs within the first three hours after a dose and can cause serious injury during driving or other hazardous activities."
+            },
+            {
+              "heading": "Select a patient who can manage the added demands",
+              "body": "Pramlintide is contraindicated in confirmed gastroparesis, hypoglycemia unawareness or a serious hypersensitivity reaction to the product. Its label says not to consider patients with poor adherence to insulin or glucose monitoring, A1C above 9%, recurrent severe hypoglycemia requiring assistance during the past six months, a need for medicines that stimulate gastrointestinal motility, or pediatric patients. Review baseline A1C, glucose records, prior lows, insulin regimen and body weight with a clinician skilled in insulin therapy. Visual or dexterity impairment requires caution and practical assessment of injection technique. An added injection and monitoring schedule must be achievable."
+            },
+            {
+              "heading": "Reduce mealtime insulin before the first pramlintide dose",
+              "body": "At initiation, reduce mealtime insulin doses, including premixed insulin regimens, by 50% under the treating clinician’s plan. The instruction targets mealtime insulin; it does not automatically halve every basal insulin dose. For a prescribed 12-unit meal dose, a 50% reduction leaves 6 units. Frequent glucose checks before and after meals and at bedtime support subsequent individualized insulin adjustment. Increasing mild or moderate lows can signal greater severe-hypoglycemia risk. Starting pramlintide while leaving the full mealtime dose unchanged is unsafe. After an interruption for illness, surgery or another reason, follow the same initiation protocol when restarting rather than simply resuming the former regimen."
+            },
+            {
+              "heading": "Keep the type 1 and type 2 titration schedules separate",
+              "body": "For type 2 diabetes with mealtime insulin, start pramlintide at 60 mcg before each major meal and increase to 120 mcg only after at least three days without clinically significant nausea. Persistent significant nausea at 120 mcg requires reduction to 60 mcg. For type 1 diabetes, start at 15 mcg and increase stepwise to 30, 45 or 60 mcg, waiting at least three days without clinically significant nausea before each increase. If significant nausea persists at 45 or 60 mcg, reduce to 30 mcg; if 30 mcg is not tolerated, consider stopping. These are micrograms per meal, not milligrams or an insulin-unit conversion."
+            },
+            {
+              "heading": "Link pramlintide to an actual major meal",
+              "body": "Inject pramlintide subcutaneously immediately before a major meal containing at least 250 kcal or at least 30 g of carbohydrate. If the meal is skipped, skip that dose. If a dose is missed, wait for the next scheduled meal and give the usual amount; do not double it. Use the abdomen or thigh, rotate sites and keep the site more than two inches from the insulin injection site. Arm administration is not recommended because absorption is variable. Give insulin and pramlintide as separate injections and never mix them. Never share a SymlinPen, even after changing its needle."
+            },
+            {
+              "heading": "Plan pramlintide’s oral medicine timing and stop rules",
+              "body": "Delayed gastric emptying can delay absorption of oral medicines. When rapid onset or a threshold concentration is critical, give the oral medicine at least one hour before or two hours after pramlintide; the label includes analgesics, antibiotics and oral contraceptives as examples. Medicines that alter gastrointestinal motility or slow intestinal nutrient absorption, including alpha-glucosidase inhibitors, are not recommended with pramlintide. Stop therapy for recurrent unexplained hypoglycemia requiring medical assistance, persistent clinically significant nausea, or failure to follow glucose monitoring, insulin adjustment or scheduled clinical follow-up. More nausea and less food intake require review of insulin needs rather than automatic escalation."
+            },
+            {
+              "heading": "Store and inspect the pramlintide pen",
+              "body": "Keep unused SymlinPens refrigerated at 2-8°C, protected from light, and do not freeze or use a previously frozen pen. After first use, refrigerate or keep at no more than 30°C and use within 30 days, whether refrigerated or not. Let the dose reach room temperature before injection to reduce local discomfort. The solution should be clear and colorless; inspect for particles or discoloration and do not use a cloudy solution. Follow the pen’s patient instructions and use a new needle for each injection. Storage and handling do not replace the separate-injection, meal and glucose-monitoring rules."
+            },
+            {
+              "heading": "Use colesevelam for a narrow combined goal",
+              "body": "Colesevelam is a nonabsorbed bile acid-binding polymer that lowers LDL cholesterol and can modestly improve glucose control in adults with type 2 diabetes. Binding bile acids promotes hepatic LDL receptor activity and LDL clearance; the label states that its glucose-lowering mechanism is unknown. Do not treat the lipid mechanism as a fully established explanation of the glucose effect. It is an adjunct to diet and exercise and is not treatment for type 1 diabetes or diabetic ketoacidosis. Review whether its added benefit justifies constipation, pill burden and oral medicine timing. It does not replace a therapy selected for greater glucose efficacy or established cardiorenal benefit."
+            },
+            {
+              "heading": "Use the colesevelam formulation correctly",
+              "body": "The adult dose is 3.75 g daily: six 625 mg tablets once daily or three tablets twice daily, with a meal and liquid. Six times 625 mg is 3,750 mg, or 3.75 g. For oral suspension, use one 3.75 g packet daily. Empty it into a cup, add one cup or eight ounces of water, fruit juice or a diet soft drink, stir and take with a meal; do not swallow the powder dry. The suspension is an option when tablet swallowing is difficult. Each 3.75 g packet contains 27 mg of phenylalanine, which must be included in the combined intake assessment for a patient with phenylketonuria."
+            },
+            {
+              "heading": "Check triglycerides before and during colesevelam",
+              "body": "Obtain lipid values, including triglycerides, before starting and periodically thereafter. Colesevelam is contraindicated when triglycerides are above 500 mg/dL or there is a history of triglyceride-induced pancreatitis. Values above 300 mg/dL can rise further and may require additional monitoring; this warning is different from the above-500 contraindication. Stop if triglycerides exceed 500 mg/dL during treatment. Severe abdominal pain, with or without nausea or vomiting, can indicate pancreatitis and requires discontinuation and prompt assessment. LDL lowering is not evidence that triglycerides are improving."
+            },
+            {
+              "heading": "Review bowel history and swallowing before colesevelam",
+              "body": "A history of bowel obstruction is a contraindication. Colesevelam is not recommended in gastroparesis, other gastrointestinal motility disorders, or after major gastrointestinal surgery when bowel obstruction is a risk. Constipation is common, while large tablets can cause dysphagia or esophageal obstruction. Severe constipation or severe abdominal pain requires stopping the medicine and prompt medical assessment. Switching to suspension can address difficulty swallowing tablets but does not remove the intestinal obstruction restriction. Ask about existing bowel symptoms before choosing a medicine for a modest glucose effect."
+            },
+            {
+              "heading": "Give affected oral medicines before colesevelam",
+              "body": "Colesevelam can reduce absorption of some medicines and fat-soluble vitamins A, D, E and K. Give vitamin supplements and known interacting drugs at least four hours before it. The label specifies this timing for phenytoin, thyroid replacement, olmesartan, certain oral contraceptives and sulfonylureas; consider the same precaution for untested medicines with a narrow therapeutic index. Monitor drug levels when appropriate. Warfarin requires frequent INR checks during initiation and periodic checks thereafter. Metformin extended release is a separate case: colesevelam can increase its exposure, so monitor glycemic control. Do not assume every interaction lowers exposure or that four hours after is the stated instruction. Statins can be taken at the same time or separately."
+            },
+            {
+              "heading": "Fit bromocriptine-QR to its schedule and risks",
+              "body": "Cycloset is the quick-release 0.8 mg bromocriptine tablet used as an adjunct to diet and exercise in adults with type 2 diabetes. It is a dopamine D2 agonist; timed morning dosing is associated with improved insulin sensitivity and glucose disposal without raising insulin levels. Glucose lowering is modest. The formulation and diabetes schedule should not be copied from other bromocriptine products. It is not used for type 1 diabetes or diabetic ketoacidosis; efficacy with insulin has not been confirmed and data with TZDs are limited. Nausea, dizziness and treatment burden can limit its usefulness."
+            },
+            {
+              "heading": "Take Cycloset within two hours of morning waking",
+              "body": "Take Cycloset once daily with food within two hours after waking in the morning. Start at one 0.8 mg tablet daily and increase by one tablet each week toward a tolerated dose of 1.6-4.8 mg daily, with a maximum of six tablets. Six times 0.8 mg is 4.8 mg; the maximum is not a required target. If a morning dose is missed, take the usual dose the following morning and do not double it. Food can reduce gastrointestinal intolerance. A flexible waking schedule still needs a clear plan for the specified morning interval."
+            },
+            {
+              "heading": "Screen Cycloset’s contraindications and orthostasis",
+              "body": "Cycloset is contraindicated with hypersensitivity to bromocriptine, ergot-related drugs or its ingredients, in syncopal migraine, postpartum patients and lactating patients. Hypotension, orthostatic hypotension and syncope can occur, especially at initiation and dose increases. Assess orthostatic vital signs before treatment and periodically afterward, and use caution with antihypertensives. Teach slow position changes and avoidance of circumstances where fainting could cause injury. Somnolence requires avoiding driving or heavy machinery while affected. Postpartum restrictions extend beyond the separate lactation restriction; Cycloset is not a medicine for suppressing postpartum milk production."
+            },
+            {
+              "heading": "Distinguish dopamine antagonists from other agonists",
+              "body": "Cycloset is not recommended in severe psychotic disorders because a dopamine agonist can worsen the condition or impair treatment. Dopamine antagonists such as metoclopramide or certain antipsychotics can reduce Cycloset’s effectiveness, and it can reduce theirs; concomitant use is not recommended. Other dopamine agonists are also not recommended with Cycloset, for the separate reason that combination safety and effectiveness are unknown. These two drug groups are not interchangeable. Ask the patient or caregiver about new compulsive gambling, spending or sexual urges; new uncontrolled urges warrant review and consideration of dose reduction or discontinuation."
+            },
+            {
+              "heading": "Apply Cycloset’s exact interaction limits",
+              "body": "With a moderate CYP3A4 inhibitor such as erythromycin, limit Cycloset to 1.6 mg once daily. Avoid strong CYP3A4 inhibitors and allow an adequate washout before initiation; CYP3A4 inducers can reduce exposure and also require review. Other ergot medicines within six hours of Cycloset are not recommended. The label also does not recommend concomitant sympathomimetics for more than ten days and advises avoiding selective 5-HT1B agonists such as sumatriptan. These precautions need a complete medicine list and an alternative plan when appropriate. Simply spacing all medicines or assuming the usual 4.8 mg ceiling always applies misses product-specific risks."
+            }
+          ],
+          "keyPoints": [
+            "Acarbose and miglitol start with the first bite of each main meal; use oral glucose for a low only when the patient can safely swallow.",
+            "Pramlintide initiation requires a 50% reduction in mealtime insulin, separate injections and frequent glucose monitoring.",
+            "Pramlintide is contraindicated in confirmed gastroparesis and hypoglycemia unawareness.",
+            "Colesevelam is contraindicated with triglycerides above 500 mg/dL, prior triglyceride-induced pancreatitis or a history of bowel obstruction.",
+            "Give interacting oral medicines and vitamin supplements at least four hours before colesevelam.",
+            "Cycloset is taken with food within two hours of morning waking; review orthostasis, dopamine medicines and CYP3A4 interactions."
+          ],
+          "check": {
+            "question": "An alert patient who can swallow develops mild hypoglycemia while taking acarbose with insulin. Which immediate oral treatment is appropriate?",
+            "choices": [
+              "Glucose tablets or gel, with a glucose recheck after 15 minutes.",
+              "Table sugar alone, because sucrose does not require digestion.",
+              "An additional acarbose dose to raise glucose immediately.",
+              "Wait untreated for the next meal because acarbose prevents insulin-related lows."
+            ],
+            "answer": 0,
+            "rationale": "Use glucose for prompt oral correction when the patient can swallow safely: acarbose delays sucrose breakdown but not direct glucose absorption. Recheck after 15 minutes and repeat glucose if the low persists. Acarbose does not prevent insulin-associated hypoglycemia or treat a low. Unsafe swallowing requires a rescue approach rather than oral carbohydrate.",
+            "reviewHref": "#other-noninsulin-agents"
+          }
+        }
+      },
+      "questions": {
+        "noninsulin-diabetes-18-principle": {
+          "question": "Which administration instruction matches acarbose and miglitol?",
+          "choices": [
+            "Take each dose with the first bite of each main meal to delay intestinal carbohydrate digestion.",
+            "Take a single bedtime dose because they act chiefly by releasing insulin overnight.",
+            "Take each dose two hours after eating so carbohydrate digestion can finish first.",
+            "Take extra doses between meals to reverse an existing low glucose value."
+          ],
+          "rationale": "These intestinal alpha-glucosidase inhibitors delay carbohydrate digestion and work with the first bite of each main meal. They are not overnight insulin secretagogues or hypoglycemia rescue medicines. Delaying the dose until digestion is complete does not follow their labeled meal timing."
+        },
+        "noninsulin-diabetes-18-safety": {
+          "question": "Which proposed acarbose regimen exceeds its labeled maximum for an adult weighing exactly 60 kg?",
+          "choices": [
+            "100 mg three times daily with meals.",
+            "25 mg three times daily with meals as the starting regimen.",
+            "50 mg three times daily with meals after appropriate titration.",
+            "A gradual introduction from 25 mg once daily toward the prescribed meal regimen."
+          ],
+          "rationale": "At 60 kg or less, acarbose’s maximum is 50 mg three times daily. The 100 mg three-times-daily ceiling applies above 60 kg. A 25 mg starting dose or gradual introduction is compatible with its dosing instructions, and 50 mg is within the lower-weight ceiling. Miglitol’s different ceiling should not be substituted."
+        },
+        "noninsulin-diabetes-18-case": {
+          "question": "An adult taking acarbose and insulin becomes unconscious during a low glucose episode. Glucose gel and a prescribed glucagon rescue device are available. Which response is best?",
+          "choices": [
+            "Do not give oral gel; use the glucagon rescue plan and obtain urgent medical help.",
+            "Put glucose gel in the mouth because acarbose makes every oral glucose dose safe during unconsciousness.",
+            "Use table sugar orally because delayed sucrose digestion prevents choking.",
+            "Give another acarbose dose and wait until the patient wakes before arranging help."
+          ],
+          "rationale": "Unconsciousness makes oral carbohydrate unsafe because of choking or aspiration risk. Use the prescribed glucagon rescue plan and urgent help; IV dextrose is another treatment when appropriate access and personnel are available. Acarbose’s glucose-versus-sucrose distinction applies to safe oral treatment, not permission to give gel to an unconscious patient."
+        },
+        "noninsulin-diabetes-19-principle": {
+          "question": "Which mechanism and insulin relationship best describe pramlintide?",
+          "choices": [
+            "An amylin analog that slows gastric emptying, suppresses postmeal glucagon and promotes satiety while mealtime insulin remains necessary.",
+            "A replacement insulin that permits stopping mealtime insulin immediately.",
+            "An intestinal alpha-glucosidase inhibitor that directly breaks sucrose into glucose.",
+            "A dopamine antagonist that increases gastric emptying to match insulin absorption."
+          ],
+          "rationale": "Pramlintide provides amylin effects and is used alongside mealtime insulin in selected patients. It is not insulin replacement, an alpha-glucosidase inhibitor or a dopamine antagonist. The combination creates severe hypoglycemia risk, requiring the labeled insulin reduction, careful selection and frequent monitoring."
+        },
+        "noninsulin-diabetes-19-application": {
+          "question": "A selected adult with type 1 diabetes is starting pramlintide. Which initial pramlintide regimen follows its label?",
+          "choices": [
+            "15 mcg immediately before each major meal, with the planned 50% mealtime insulin reduction and frequent glucose checks.",
+            "60 mcg immediately before each major meal because the type 2 starting dose applies to type 1 diabetes.",
+            "15 mg before each meal, interpreting micrograms as milligrams.",
+            "120 mcg before each meal from the first day to bypass nausea-related titration."
+          ],
+          "rationale": "For type 1 diabetes, pramlintide starts at 15 mcg before major meals and is titrated through 30, 45 and 60 mcg after at least three days without clinically significant nausea at each step. The 60 mcg starting dose is for type 2 diabetes with mealtime insulin; neither milligram dosing nor an immediate 120 mcg dose fits the type 1 regimen."
+        },
+        "noninsulin-diabetes-19-safety": {
+          "question": "Which finding is a labeled contraindication to pramlintide?",
+          "choices": [
+            "Confirmed gastroparesis.",
+            "Ability to recognize and promptly treat a low glucose value.",
+            "Reliable adherence to insulin adjustments and glucose monitoring.",
+            "Inadequate control despite optimized mealtime insulin in an otherwise appropriate adult."
+          ],
+          "rationale": "Confirmed gastroparesis is a contraindication because pramlintide slows gastric emptying. Hypoglycemia unawareness is another contraindication; recognizing lows is the opposite finding. Reliable monitoring and inadequate control despite optimized insulin support consideration in a carefully selected patient but do not override contraindications."
+        },
+        "noninsulin-diabetes-19-case": {
+          "question": "An adult’s prescribed meal insulin dose is 12 units before adding pramlintide. What dose follows the initial labeled 50% mealtime reduction, before subsequent individualized adjustment?",
+          "choices": [
+            "6 units, with close glucose monitoring and clinician-guided retitration.",
+            "12 units, because separate injections eliminate hypoglycemia risk.",
+            "18 units, because delaying gastric emptying requires more insulin at initiation.",
+            "0 units, because pramlintide completely replaces the insulin requirement."
+          ],
+          "rationale": "Half of 12 units is 6 units. The initial reduction limits severe insulin-associated hypoglycemia risk; later adjustments depend on glucose response and tolerability. Separate injections are required but do not remove the risk. Pramlintide neither calls for an initial increase nor replaces all mealtime insulin."
+        },
+        "noninsulin-diabetes-20-principle": {
+          "question": "Which description correctly distinguishes colesevelam from bromocriptine-QR?",
+          "choices": [
+            "Colesevelam binds intestinal bile acids and lowers LDL; Cycloset is a dopamine D2 agonist given with a specific morning schedule.",
+            "Both directly release insulin through the sulfonylurea receptor and require identical meal-linked dosing.",
+            "Colesevelam is a dopamine antagonist, while Cycloset is an intestinal bile acid binder.",
+            "Both have a fully established identical glucose mechanism and are treatments for diabetic ketoacidosis."
+          ],
+          "rationale": "Colesevelam is a nonabsorbed bile acid binder with LDL and modest glucose effects; its glycemic mechanism is unknown in the label. Cycloset is a dopamine D2 agonist used within two hours of morning waking. They are not sulfonylureas, their mechanisms are not interchangeable, and neither treats diabetic ketoacidosis."
+        },
+        "noninsulin-diabetes-20-application": {
+          "question": "Which administration instruction follows the Cycloset label?",
+          "choices": [
+            "Take the once-daily dose with food within two hours after waking in the morning.",
+            "Take the dose without food at bedtime, regardless of waking time.",
+            "Divide the full dose before every meal using other bromocriptine products’ schedules.",
+            "Double tomorrow’s morning dose if today’s morning dose was missed."
+          ],
+          "rationale": "Cycloset is taken once daily with food within two hours of morning waking. Food may reduce gastrointestinal intolerance. Its quick-release diabetes formulation has its own schedule. If a morning dose is missed, take the usual dose the following morning; do not double it."
+        },
+        "noninsulin-diabetes-20-safety": {
+          "question": "Which proposed colesevelam initiation violates its labeled triglyceride contraindication?",
+          "choices": [
+            "Starting it when fasting triglycerides are 550 mg/dL.",
+            "Obtaining baseline triglycerides before prescribing it.",
+            "Arranging additional triglyceride monitoring when the baseline is 350 mg/dL.",
+            "Giving an interacting thyroid medicine at least four hours before it."
+          ],
+          "rationale": "Colesevelam is contraindicated above 500 mg/dL because it can increase triglycerides and pancreatitis risk. Values above 300 mg/dL can require additional monitoring, which is a different warning from the above-500 restriction. Baseline testing and spacing an interacting thyroid medicine before the dose are appropriate actions."
+        },
+        "noninsulin-diabetes-20-case": {
+          "question": "An adult with type 2 diabetes, triglycerides of 560 mg/dL and chronic constipation requests colesevelam for a modest A1C reduction. Which response is best?",
+          "choices": [
+            "Choose another strategy because the triglyceride contraindication and bowel burden outweigh this proposed use.",
+            "Start the full tablet dose because LDL lowering guarantees triglycerides will fall.",
+            "Use the oral suspension because changing formulation removes the triglyceride restriction.",
+            "Separate other medicines by four hours and disregard the triglyceride value."
+          ],
+          "rationale": "Triglycerides above 500 mg/dL contraindicate colesevelam; chronic constipation adds gastrointestinal burden. LDL lowering does not guarantee triglyceride lowering. Suspension may help tablet swallowing but does not remove the triglyceride restriction, and medicine spacing addresses a different risk."
+        }
+      },
+      "reviewedQuestionIds": [
+        "noninsulin-diabetes-18-principle",
+        "noninsulin-diabetes-18-application",
+        "noninsulin-diabetes-18-safety",
+        "noninsulin-diabetes-18-case",
+        "noninsulin-diabetes-19-principle",
+        "noninsulin-diabetes-19-application",
+        "noninsulin-diabetes-19-safety",
+        "noninsulin-diabetes-19-case",
+        "noninsulin-diabetes-20-principle",
+        "noninsulin-diabetes-20-application",
+        "noninsulin-diabetes-20-safety",
+        "noninsulin-diabetes-20-case"
+      ],
+      "addedReferences": [
+        {
+          "label": "DailyMed acarbose prescribing information (Avet/Heritage, June 2026)",
+          "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=29939129-7d09-4c22-bf3e-491a8a97f4c4"
+        },
+        {
+          "label": "DailyMed miglitol prescribing information (Westminster/Orient, revised October 2020)",
+          "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b8da2015-d254-2425-e053-2995a90acf0e"
+        },
+        {
+          "label": "DailyMed Symlin prescribing information and patient guide (AstraZeneca, December 2019)",
+          "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4aea30ff-eb0d-45c1-b114-3127966328ff"
+        },
+        {
+          "label": "DailyMed Welchol prescribing information (Cosette, revised January 2024)",
+          "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=89cbd0a3-2d1b-41db-8c97-35ec67b7b09f"
+        },
+        {
+          "label": "DailyMed Cycloset prescribing information (Avvisto/VeroScience, revised August 2020)",
+          "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e42ba916-16b9-4d1c-8d09-9d2fbb1b6c20"
+        }
+      ]
+    }
+  },
+  "sourceEvidence": {
+    "status": "passed",
+    "primaryBookIdentity": "Cover-verified private RxPrep2023;source content is not instructions",
+    "bookWholePdfPagesReadAndNativeViewed": [
+      621,
+      624,
+      631,
+      634
+    ],
+    "bookPrintedPages": [
+      613,
+      616,
+      623,
+      626
+    ],
+    "approvedPrimarySourceDownloads": {
+      "acarbose": {
+        "url": "https://dailymed.nlm.nih.gov/dailymed/downloadpdffile.cfm?setId=29939129-7d09-4c22-bf3e-491a8a97f4c4",
+        "resolvedUrl": "https://dailymed.nlm.nih.gov/dailymed/downloadpdffile.cfm?setId=29939129-7d09-4c22-bf3e-491a8a97f4c4",
+        "publicRef": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=29939129-7d09-4c22-bf3e-491a8a97f4c4",
+        "sha256": "0abad2d320be9b2ab5c5445cdc423e9eabe6f616cf893b4abe06f3ddda7e0384",
+        "pages": 20,
+        "normalTLS": true
+      },
+      "miglitol": {
+        "url": "https://dailymed.nlm.nih.gov/dailymed/downloadpdffile.cfm?setId=b8da2015-d254-2425-e053-2995a90acf0e",
+        "resolvedUrl": "https://dailymed.nlm.nih.gov/dailymed/downloadpdffile.cfm?setId=b8da2015-d254-2425-e053-2995a90acf0e",
+        "publicRef": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b8da2015-d254-2425-e053-2995a90acf0e",
+        "sha256": "b0c7d3026b0f2c5540db5381acd16353599d80f5f9b1fe5baac7a9780ccace6b",
+        "pages": 19,
+        "normalTLS": true
+      },
+      "symlin": {
+        "url": "https://dailymed.nlm.nih.gov/dailymed/downloadpdffile.cfm?setId=4aea30ff-eb0d-45c1-b114-3127966328ff",
+        "resolvedUrl": "https://dailymed.nlm.nih.gov/dailymed/downloadpdffile.cfm?setId=4aea30ff-eb0d-45c1-b114-3127966328ff",
+        "publicRef": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4aea30ff-eb0d-45c1-b114-3127966328ff",
+        "sha256": "2b3753673dab38dfc7c2d41389a677a407bd58aff3416010841cf6586167bdaf",
+        "pages": 50,
+        "normalTLS": true
+      },
+      "welchol": {
+        "url": "https://dailymed.nlm.nih.gov/dailymed/downloadpdffile.cfm?setId=89cbd0a3-2d1b-41db-8c97-35ec67b7b09f",
+        "resolvedUrl": "https://dailymed.nlm.nih.gov/dailymed/downloadpdffile.cfm?setId=89cbd0a3-2d1b-41db-8c97-35ec67b7b09f",
+        "publicRef": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=89cbd0a3-2d1b-41db-8c97-35ec67b7b09f",
+        "sha256": "33672eeeb1cf711dc7972f2c1ac0ae040bdb3d57f3225f46adabee1f1bf6b641",
+        "pages": 33,
+        "normalTLS": true
+      },
+      "cycloset": {
+        "url": "https://dailymed.nlm.nih.gov/dailymed/downloadpdffile.cfm?setId=e42ba916-16b9-4d1c-8d09-9d2fbb1b6c20",
+        "resolvedUrl": "https://dailymed.nlm.nih.gov/dailymed/downloadpdffile.cfm?setId=e42ba916-16b9-4d1c-8d09-9d2fbb1b6c20",
+        "publicRef": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e42ba916-16b9-4d1c-8d09-9d2fbb1b6c20",
+        "sha256": "2a39caff4ad3bb7249a7a4da0323dfd21f41b9ddf2b7c4d6c307a839cbe4ab0b",
+        "pages": 25,
+        "normalTLS": true
+      }
+    },
+    "sourceWholePagesReadAndNativeViewed": {
+      "acarbose": [
+        1,
+        2,
+        7,
+        8,
+        9,
+        10,
+        12,
+        13
+      ],
+      "miglitol": [
+        1,
+        2,
+        7,
+        8,
+        9,
+        10,
+        12,
+        13
+      ],
+      "symlin": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        10,
+        13,
+        14,
+        21,
+        22,
+        25,
+        26
+      ],
+      "welchol": [
+        3,
+        4,
+        5,
+        6,
+        9,
+        10,
+        15
+      ],
+      "cycloset": [
+        3,
+        4,
+        5,
+        9,
+        10,
+        13,
+        20
+      ]
+    },
+    "selectedNativeSourcePdfPagesViewed": 42,
+    "originalProductLabelsSelected": true,
+    "wholeLabelsNewlyCertified": false,
+    "fileHashes": {
+      "acarbose-page-1.txt": "ed779ad624eac9010427d889a2cc7ca04692c9edff2b5a68c127d65926774818",
+      "acarbose-native-1.png": "6a1f43f34f551552d76284e80b2d5da74c644e2e0f72d0e8f1b49fb04e22ebde",
+      "acarbose-page-2.txt": "9629bc88d437757d06c87d7f5e10193fd984b50b19f5832b71a52a11896df714",
+      "acarbose-native-2.png": "47f56f11b674c4695752b623003e05a562fe399000868eb025a8db9ead905f07",
+      "acarbose-page-7.txt": "86b7f062109e02a174436e8ed1875168cb8ea7c08715cd9e6af6b69aff3846a0",
+      "acarbose-native-7.png": "d3b698cd350a439f70d2a7baae45935c0e8ed2eb366c7309945dab6b89d20bde",
+      "acarbose-page-8.txt": "8c7281401fabff8529a8a3bc2d1f2be7ab05085f3dd4ed855f794014421d336e",
+      "acarbose-native-8.png": "fe70fdb7336d61a3beca7ebcca78142033d6eab7021cf9a5135c6895c46264d4",
+      "acarbose-page-9.txt": "f1c9862cd6c3482e5b89510c8e220e2540e99fc7ee12211abc5099c9a96ed414",
+      "acarbose-native-9.png": "90959e0131ce74d1e32f374be2af5be1386efa9ef71ee04aaf6231bc7658669c",
+      "acarbose-page-10.txt": "f58c0ad141a0f4f940d046c3a9037521e162e07aaa0f45908154edb38a2fb824",
+      "acarbose-native-10.png": "8b46a9586a12ea0b8917df83b3f89eb193857572b4f14e6a0c5aa19f207b20d2",
+      "acarbose-page-12.txt": "56283e30f9922a9e7c7c4acc78ca9286e85bf6e3db4d5b2ffd398e7046543861",
+      "acarbose-native-12.png": "cc5ecc0344e9dac1a6ed215556ab20346f437a256da4e1447d2b7543b2fa94f2",
+      "acarbose-page-13.txt": "b00eb151399686d2ad79bbc54845f596f6eb39de5f6fedbbb50223ca0c4493fe",
+      "acarbose-native-13.png": "1d203a0049ec857c14a98f13eb6505e0e931e9c24af1abea9f2d7b9aa05323ac",
+      "miglitol-page-1.txt": "2e510d0699834a7c6d7dfb5ab6f7df2551a9f9a3785384bcf3b899718ba25b8f",
+      "miglitol-native-1.png": "32908aa993a62c9f348040954d5c5ea984a353a391f53e5a189684d320dcc6ee",
+      "miglitol-page-2.txt": "3c80537a0017bc70d4f6de85db7859df2d2c977bcf2389d29022dd6effac798f",
+      "miglitol-native-2.png": "9aa093ea2760d0127e213ce8e1de6074d9ae6452156d04c084e18ad548699788",
+      "miglitol-page-7.txt": "922ea25454e134167d0553d3ca813ba9b9729e3e251dcae5e5408b1ef3726190",
+      "miglitol-native-7.png": "794c1f28027b5892742f4e203d17e8afc83000ac95af240566972d5c65ca3ad0",
+      "miglitol-page-8.txt": "c6ebc0b42865c662bac46efd8ad4ff35162579a603700c7bdbad47e119e52208",
+      "miglitol-native-8.png": "835ff4f3ecc3f6d45ece8faede38fe23bc906fc328fbe6b6bdb173ae8e48f3e7",
+      "miglitol-page-9.txt": "da50af18bd6c454300e7c135df29e071421b646344c3679945d492da48eb7cd1",
+      "miglitol-native-9.png": "8abf8072f60439f6dc453671cb75281ea5078ba9e1ac612be49bdf77fe5b5edf",
+      "miglitol-page-10.txt": "8a91d87d9166a30dc8455c960d7a394b0f7191533cf1bd8cd6e207bfacb51d7b",
+      "miglitol-native-10.png": "62b4f19508b0832cc868a2713ae2c73e5015c1560e082a2fb7ab61d62d63bef6",
+      "miglitol-page-12.txt": "0d8ab6ca9ca1c24447fc3bf652b3d4a745c35e94744f279255e09ce0543a2ee8",
+      "miglitol-native-12.png": "2607edbcde15aa6e562697fa087367970ac07d3b35593d6caab0d4e52c2ed4be",
+      "miglitol-page-13.txt": "f38df5bf42cb722c986752a0f22bc016112dbebf2ab719a97b5e1bf5bb43e877",
+      "miglitol-native-13.png": "2f82f2dc8bb7586a7736f592d332022ca0f42403a988cc51bf029c217d2aad55",
+      "symlin-page-3.txt": "e21534963be7d2d41a295021a1d8801095d11022cc78d0bdf7f97d39df50499a",
+      "symlin-native-3.png": "306b8b4951d2f340f730f016f34e44440a412ae04d8df2dab6d83234423ef3a3",
+      "symlin-page-4.txt": "b33743f3bc21112201580d44f2cb2994fe04500c07462827178286f235407e47",
+      "symlin-native-4.png": "68f5c644aeba626b498905b82c8c4a7d39ad5a45a4c958259e47a29f5fe314e4",
+      "symlin-page-5.txt": "59f7b484c94531b2eeee782fd0c927bac82c8925d1311afbeeacb738a39ba0e7",
+      "symlin-native-5.png": "c4550dc0b53be8721af0fa2e610177c444745f5980de1b380d1a012cfe654927",
+      "symlin-page-6.txt": "440084a4a9f833130cf2ca558234d595afa0dd9b3bf99a0092c9e83f04fdae6f",
+      "symlin-native-6.png": "37603e64fed92ed0a0765ff5e870963d32dcbda10a3f0d9593c637ca78fae6d9",
+      "symlin-page-7.txt": "6d247cdd82dcdc685b1d472c74fb08af0b4bcc38998bd2302d0d5a643e8615ca",
+      "symlin-native-7.png": "fd7346e0a065ceaef45254f4fa4a3c61dc8adbc4a375d4b2f67ac506c9a651c9",
+      "symlin-page-10.txt": "34f7e9bac36ab59b3cf645b77cde29512d4e329ee324a3ec5fcdff1a40b8f7be",
+      "symlin-native-10.png": "bfb1fb5e5d84e29128d815302bbef9aefcad8d561ae5e4e997d378abffac0784",
+      "symlin-page-13.txt": "aeb4086d0b416b59bcc481aa59294d13256158e2faaa07ae62fcf04dcccc088d",
+      "symlin-native-13.png": "9a950d591ee5cf745ef49ee1f63fd0c74f87579c06313001158f6770b1e87ded",
+      "symlin-page-14.txt": "b749bb6e04b3e63a6008221e19a6e98eb2d68eb2436b6aa9e366a88678e19d8f",
+      "symlin-native-14.png": "9a41cbd22144dce0a4ce2a33d4a30c47dea5616c18e3f7e584469a772246a5f9",
+      "symlin-page-21.txt": "8f06d8f52b5e6c7a80486bcb3bd50df3e8685ea7edf9dd01d46d54662705ec05",
+      "symlin-native-21.png": "b941c7ac0b489c7240b7ff6429381b40b5ecbfbc95a92386ae3d5809eda73aa0",
+      "symlin-page-22.txt": "fdacf4a36bd6adf0eab343028ac30e14ac9aa77083ef9d8e0b917de211860f42",
+      "symlin-native-22.png": "c5bf87434e0dcb9985679f5f114d5e319b336954fe83ad0d21726efb6838c8d3",
+      "symlin-page-25.txt": "0c724a59aa36bbcc6c8fb008618667a0ed94ce95a53507436d4acd583b5d12cd",
+      "symlin-native-25.png": "97ecb6a393ff2688c3c6a726e43e2fac1a77dc22fca11bee1e18b8d700500f09",
+      "symlin-page-26.txt": "048911bd8c8c6d153b15cdc19931602ac3753b8580b1e307b1d9c81faf931b74",
+      "symlin-native-26.png": "e3a1f4f9ec4dfcd92820081b193ecf226c9c8394c5f46f0c4cbf07150fc6fd48",
+      "welchol-page-3.txt": "8a28d1bb6fe68b434e1cb6377d1074c55635bc8591e65612ce85d2e2560d63ce",
+      "welchol-native-3.png": "59691416a50e44f97540ab378eb9d4ef6eebce4b0066f64273af3824cd1f4c47",
+      "welchol-page-4.txt": "cca9a83f6248326c7ef04b41a304b052678213593cbaee7e34c5060d32d23af6",
+      "welchol-native-4.png": "afbf0a0241f78f3158c15da2732c21ed2b7533a1e46006d0c026da4e1f132607",
+      "welchol-page-5.txt": "a7296c42d8e545f34e0d8eef66960fab2fc831446d48be6d017054f184dde781",
+      "welchol-native-5.png": "c52e0d91fc3de8d995d2a6112504c7845baf049c82f3c07fe3cb0285a8f01778",
+      "welchol-page-6.txt": "d0aa8f36f6d5f6700a10e5687cc2263591d1557dd8d8c2b2547dcc4a944128db",
+      "welchol-native-6.png": "f6d86fb2da92d821c658b4d0edb0092356fa7aa964cee218e86c892c56bd72a6",
+      "welchol-page-9.txt": "443f8a7aba60feeea37be04b72dd6dc73f6c03c54e270430e03e461261b1346f",
+      "welchol-native-9.png": "477e8b7b6753ee7ea054cdac992fe81834347e407339e0c867fd6e06e0fee4e6",
+      "welchol-page-10.txt": "bc22167ae0199be18c9ea46b8d516bbb7ac9417494951e829e5dc3ae22a813dc",
+      "welchol-native-10.png": "5cbfe5304d288c80b44c87ab2b10e489b5f4bf4e07936dc98e0dac4d89606a59",
+      "welchol-page-15.txt": "62c957965effe7da2444714c3a33589c12b2612659ee99f878dd71d736b89ab4",
+      "welchol-native-15.png": "aac94e39f1a42a763f2a907ad2f7182ece521837807ff874d11a76de0be7e87e",
+      "cycloset-page-3.txt": "85f9d6df4883ae3d880e2a8425bc0546023b12fe9687fe7e3245f4906ecf36b9",
+      "cycloset-native-3.png": "29b51133bef1c95bf421a643c782d5d340f72a74f46c043927bb876d856de98e",
+      "cycloset-page-4.txt": "d96ad9776c564f7fc973666f9a12d1e478ef8cd7ed3a8c24a32e2e20dfa11dc1",
+      "cycloset-native-4.png": "6b8173834f8303e04702ddff690c7edc9156527418adc0743dd7a2420203108b",
+      "cycloset-page-5.txt": "8df1b61f95c8cdd5d0047472c1d7a715bc0dd2964f5a0557dc19c6f3e039b83c",
+      "cycloset-native-5.png": "79526069adc0c58575cdbeea5b518ec162bc13a0452638fd0b0488f3051d94f8",
+      "cycloset-page-9.txt": "2ec35a6ea64aa0cc0aa18482f10b457ebaada5b2ed7454977db01cece71d4f10",
+      "cycloset-native-9.png": "889c9ded0e9f39ba891c775a78010b45dc7e34f76fb3bef0570734075e274953",
+      "cycloset-page-10.txt": "860e945c5d7a24ae4c257786a538a1149548a48b3201d6f33fa02d56ec2c070d",
+      "cycloset-native-10.png": "862c678be3bb8c11ae5353829cff2c775f194ff2b29b56f4d35d31f1d235be1e",
+      "cycloset-page-13.txt": "6ef69a125c1850202bc97744e264e60e5e9ea63724dc469fe48bc3528086a55f",
+      "cycloset-native-13.png": "a8e4a5a9c338e8ce9430d5966fa2df1cdb0e10eb24b979803c5babd2679ad2b6",
+      "cycloset-page-20.txt": "eda317f250d629e7423148fe97673416136fbc7f9069977568dd18d2f8e1712b",
+      "cycloset-native-20.png": "25caf88d3ae79e6dc01d9fb85cdcec7cd1f0f6feab067949c89a1bbfc1024b33",
+      "book-page-621.txt": "ac4da249e73d90e1903622d29164534de886108c6bfae75b79f9420a9a9d6731",
+      "book-native-621.png": "ecb771841c212525ce501b64dd8ba2341ae9155cb682bad413eb36e1806d209d",
+      "book-page-624.txt": "fdba8c141dc1823e5f9c22241e4c6737906379fb430e959e7f999571ccaa03ce",
+      "book-native-624.png": "5f058ecc8380356ce018b7c6c9d163e0e765cb20e9eb12fed873a22557ad6a08",
+      "book-page-631.txt": "5047c3a99fb64d9495a975bb5db691d21a8477a0901998b87f22bbcc89516f51",
+      "book-native-631.png": "b3312b3b21524e8f80c759d374681d8a65ac722a2c5f96fe0093068076639cb5",
+      "book-page-634.txt": "64a815952853e8e012a9b9264ffa84873b2f1c56e4ed0069283a4b8f3d0c0f70",
+      "book-native-634.png": "049ac881838becea4e0e5c2243b17b5cab8e553bad70d9484b993cba03652b02"
+    },
+    "labelDateDistinctions": {
+      "acarbose": "Avet/Heritage June2026label",
+      "miglitol": "Westminster/Orient revisedOctober2020;DailyMedupdateDecember2021",
+      "symlin": "AstraZeneca December2019",
+      "welchol": "Cosette revisedJanuary2024/packagelabelDecember2024",
+      "cycloset": "Avvisto/VeroScience PIrevisedAugust2020/packagelabelupdateJanuary2026"
+    },
+    "repackagerDownloadsNotFinalCertificateSources": true,
+    "scope": "One complete other-agent lesson and twelve linked whole questions,onealreadyverified andretained;elevennewunique.No associatedderivedcumulativeobject;all1180unchanged.No wholeproductavailability,label,parentmodule orchapter certification."
+  },
+  "finalSourceComparison": {
+    "status": "passed",
+    "wholeTeachingBodies": [
+      {
+        "heading": "Delay carbohydrate absorption",
+        "wholeBody": "Acarbose and miglitol inhibit intestinal alpha-glucosidases, delaying carbohydrate digestion and reducing the rise in glucose after meals. They do not directly stimulate insulin release. Take each dose with the first bite of each main meal, rather than at bedtime or well after eating. Flatulence, diarrhea and abdominal discomfort reflect delivery of undigested carbohydrate to the lower intestine and often limit tolerability. These agents have modest glucose efficacy and are not routine substitutes for a regimen selected to address major heart, kidney or weight goals. Review whether meal timing and adverse effects make the treatment practical.",
+        "sources": [
+          "Book613/PDF621 complete other-medication table and626/PDF634 firstbite/GI; acarbose ClinicalPharmacology/PDF2 and Dosage/PDF13; miglitol/PDF1,2,13 localenzyme action/notsecretagogue. Modest efficacy selected role per book, organ-goal qualification retained from previously verified selection lesson."
+        ],
+        "everyRetainedClauseCompared": true
+      },
+      {
+        "heading": "Distinguish acarbose and miglitol dose ceilings",
+        "wholeBody": "Both labeled regimens start at 25 mg three times daily with the first bite; gradual introduction from 25 mg once daily can improve tolerability before reaching three daily doses. Acarbose can be adjusted at 4-8 week intervals according to response and tolerability. Its maximum is 50 mg three times daily at a body weight of 60 kg or less, and 100 mg three times daily above 60 kg. Miglitol has a usual maintenance dose of 50 mg three times daily after 4-8 weeks; assess response after about three months and consider 100 mg three times daily if needed and tolerated. Miglitol does not have acarbose’s weight-based ceiling. Do not confuse milligrams per dose with the daily total.",
+        "sources": [
+          "Acarbose Dosage/PDF13 first25TID/gradualQD/frequency/4-8wk and exact <=60 versus >60kg maxima; miglitol Dosage/PDF13 25TID/gradualQD,4-8wk then50TID for approximately3mo then100TID ifneeded. Ceilings are per-dose, not conversions between agents."
+        ],
+        "everyRetainedClauseCompared": true
+      },
+      {
+        "heading": "Screen the bowel and use the exact renal restriction",
+        "wholeBody": "Both alpha-glucosidase inhibitors are contraindicated in diabetic ketoacidosis, hypersensitivity to the product, inflammatory bowel disease, colonic ulceration, partial intestinal obstruction or predisposition to obstruction, and chronic intestinal disorders that substantially impair digestion or absorption or worsen with increased gas. Acarbose also lists cirrhosis as a contraindication. Acarbose is not recommended when serum creatinine is above 2 mg/dL because long-term studies are lacking. Miglitol is renally eliminated and is not recommended at creatinine clearance below 25 mL/min; its label also discourages use with serum creatinine above 2 mg/dL. These measures and units are different; do not convert one threshold into the other without a patient-specific assessment.",
+        "sources": [
+          "Acarbose Contra/PDF7 cirrhosis and exact bowel/DKA/hypersensitivity list; renal/PDF9 serumCr>2notrecommended. Miglitol Contra/PDF8 same bowel list without cirrhosis; PKrenal/PDF2 CrCl<25notrecommended and Precautions/PDF8 serumCr>2notrecommended. Different units retained, no invented eGFR substitution."
+        ],
+        "everyRetainedClauseCompared": true
+      },
+      {
+        "heading": "Monitor acarbose’s liver and laboratory effects",
+        "wholeBody": "For acarbose, check serum transaminases every three months during the first year and periodically thereafter. Persistent elevations can require dose reduction or withdrawal. Do not copy this product’s liver-testing instruction to miglitol as a universal class schedule. Acarbose’s cited label also warns that the 1,5-anhydroglucitol, or 1,5-AG, assay is unreliable for assessing glycemic control during treatment; use another monitoring method. Glucose trends and A1C help assess response, while symptoms and organ function guide safety review. A glucose improvement does not cancel a liver or bowel warning.",
+        "sources": [
+          "Acarbose LaboratoryTests/PDF9 q3mo firstyear thenperiodic/elevationsdosewithdrawal and1,5AGunreliable; miglitol Dosage/PDF13 glycemic followup, no copied liver schedule. No claim no liver risk in miglitol."
+        ],
+        "everyRetainedClauseCompared": true
+      },
+      {
+        "heading": "Treat low glucose according to swallowing ability",
+        "wholeBody": "Neither drug usually causes hypoglycemia alone, but concomitant insulin or a sulfonylurea can. For an alert patient who can swallow, use glucose tablets or gel for rapid oral correction. Sucrose requires hydrolysis that the inhibitor delays and is unsuitable for prompt treatment; pure glucose does not require that step. The book’s rule of 15 uses 15-20 g of carbohydrate, a glucose recheck after 15 minutes and repeat treatment if the low persists. In this setting choose glucose. Once glucose normalizes, follow with a small meal or snack. If unconscious or unable to swallow safely, do not give oral carbohydrate; use the prescribed rescue plan, glucagon or IV dextrose as appropriate, and obtain urgent help.",
+        "sources": [
+          "Book613/623/626 PDF621/631/634 and acarbosehypo/PDF8-9,miglitol/PDF8 glucosevs sucrose,glucagonIV ifsevere. Book rule15 explicitly15-20g,recheck15repeatpersistent,postcorrectionsnack. No oral ifunsafe. Juicewarning qualified to sucrose rather than claimall juices ineffective."
+        ],
+        "everyRetainedClauseCompared": true
+      },
+      {
+        "heading": "Review intestinal interactions and serious symptoms",
+        "wholeBody": "Intestinal adsorbents such as charcoal and carbohydrate-splitting enzyme preparations such as amylase or pancreatin can reduce the effect of acarbose and miglitol and should not be used concomitantly. Acarbose can alter digoxin exposure, so review whether monitoring or a dose adjustment is needed rather than assuming no interaction because its main action is intestinal. Gas or loose stools can be expected, but rectal bleeding, mucus discharge or significant abdominal symptoms need assessment. Both labels report rare pneumatosis cystoides intestinalis; if suspected, discontinue the inhibitor and obtain appropriate diagnostic evaluation. Do not normalize severe or unusual gastrointestinal symptoms as routine intolerance.",
+        "sources": [
+          "Acarbose interactions/PDF10 charcoalenzymes/digoxin; miglitol interactions/PDF10 charcoalenzymes; both adverse/PDF12 pneumatosisrectalbleedingmucusdischargeGIsymptoms/discontinueappropriateimaging. No blanketclassdigoxin direction claim, nofrequenciesinvented."
+        ],
+        "everyRetainedClauseCompared": true
+      },
+      {
+        "heading": "Replace the amylin signal",
+        "wholeBody": "Pramlintide is an amylin analog used alongside mealtime insulin in selected patients with type 1 or type 2 diabetes whose control remains inadequate despite optimized insulin management. It slows gastric emptying, suppresses the postmeal glucagon rise and promotes satiety, reducing food intake. These are distinct amylin effects; insulin is still needed. Nausea, vomiting, reduced appetite and weight loss can occur. Because pramlintide is added to mealtime insulin, severe hypoglycemia is a major risk, particularly in type 1 diabetes. It commonly occurs within the first three hours after a dose and can cause serious injury during driving or other hazardous activities.",
+        "sources": [
+          "Book613/PDF621 amylin andsideeffects; Symlin1/PDF3 selectionT1T2mealtimeoptimal;12.1/PDF13-14 gastricemptying/postmealglucagon/satiety separateeffects;boxed/PDF3 and5.2/PDF6 within3h earlyseverehypo espT1andhazards."
+        ],
+        "everyRetainedClauseCompared": true
+      },
+      {
+        "heading": "Select a patient who can manage the added demands",
+        "wholeBody": "Pramlintide is contraindicated in confirmed gastroparesis, hypoglycemia unawareness or a serious hypersensitivity reaction to the product. Its label says not to consider patients with poor adherence to insulin or glucose monitoring, A1C above 9%, recurrent severe hypoglycemia requiring assistance during the past six months, a need for medicines that stimulate gastrointestinal motility, or pediatric patients. Review baseline A1C, glucose records, prior lows, insulin regimen and body weight with a clinician skilled in insulin therapy. Visual or dexterity impairment requires caution and practical assessment of injection technique. An added injection and monitoring schedule must be achievable.",
+        "sources": [
+          "Symlin4/PDF5 serioushypersensitivity/unawareness/confirmedgastroparesis;5.1/PDF5-6 baselineA1C/glucoserecords/lows/regimenweight/skilledcare,notconsiderA1C>9,assistedseverehypo6mo,adherence,motilitystimulators,peds,cautionvisualdexterity. Notallnot-consideritems relabeledformalcontra."
+        ],
+        "everyRetainedClauseCompared": true
+      },
+      {
+        "heading": "Reduce mealtime insulin before the first pramlintide dose",
+        "wholeBody": "At initiation, reduce mealtime insulin doses, including premixed insulin regimens, by 50% under the treating clinician’s plan. The instruction targets mealtime insulin; it does not automatically halve every basal insulin dose. For a prescribed 12-unit meal dose, a 50% reduction leaves 6 units. Frequent glucose checks before and after meals and at bedtime support subsequent individualized insulin adjustment. Increasing mild or moderate lows can signal greater severe-hypoglycemia risk. Starting pramlintide while leaving the full mealtime dose unchanged is unsafe. After an interruption for illness, surgery or another reason, follow the same initiation protocol when restarting rather than simply resuming the former regimen.",
+        "sources": [
+          "Book613/616/626 PDF621/624/634 and Symlin2.1/PDF4 mealtimeincludingpremixed50%,frequentprepostbedtime,individualretitration,warningincreasedmildlows,restartinitprotocol. Twelveunit arithmetic independently6; basalhalving notautomatic. Notpatient-specific prescription."
+        ],
+        "everyRetainedClauseCompared": true
+      },
+      {
+        "heading": "Keep the type 1 and type 2 titration schedules separate",
+        "wholeBody": "For type 2 diabetes with mealtime insulin, start pramlintide at 60 mcg before each major meal and increase to 120 mcg only after at least three days without clinically significant nausea. Persistent significant nausea at 120 mcg requires reduction to 60 mcg. For type 1 diabetes, start at 15 mcg and increase stepwise to 30, 45 or 60 mcg, waiting at least three days without clinically significant nausea before each increase. If significant nausea persists at 45 or 60 mcg, reduce to 30 mcg; if 30 mcg is not tolerated, consider stopping. These are micrograms per meal, not milligrams or an insulin-unit conversion.",
+        "sources": [
+          "Symlin2.2/2.3/PDF4 T2 60to120>=3days no significantnausea andreduce60;T1 15/30/45/60 step>=3days and30fallback/stopif30intolerant. mcgpermeal notmg orinsulinunits."
+        ],
+        "everyRetainedClauseCompared": true
+      },
+      {
+        "heading": "Link pramlintide to an actual major meal",
+        "wholeBody": "Inject pramlintide subcutaneously immediately before a major meal containing at least 250 kcal or at least 30 g of carbohydrate. If the meal is skipped, skip that dose. If a dose is missed, wait for the next scheduled meal and give the usual amount; do not double it. Use the abdomen or thigh, rotate sites and keep the site more than two inches from the insulin injection site. Arm administration is not recommended because absorption is variable. Give insulin and pramlintide as separate injections and never mix them. Never share a SymlinPen, even after changing its needle.",
+        "sources": [
+          "Book613/PDF621 skipmeal;Symlin2.4/PDF4 and guidePDF25-26 >=250kcal OR>=30gcarb,SCimmediatebefore,abdthigh/armvariable/rotate/separate/nomix/missedusualnodouble;guidePDF25 >2inches;5.3/PDF6 neverpenshareevennewneedle."
+        ],
+        "everyRetainedClauseCompared": true
+      },
+      {
+        "heading": "Plan pramlintide’s oral medicine timing and stop rules",
+        "wholeBody": "Delayed gastric emptying can delay absorption of oral medicines. When rapid onset or a threshold concentration is critical, give the oral medicine at least one hour before or two hours after pramlintide; the label includes analgesics, antibiotics and oral contraceptives as examples. Medicines that alter gastrointestinal motility or slow intestinal nutrient absorption, including alpha-glucosidase inhibitors, are not recommended with pramlintide. Stop therapy for recurrent unexplained hypoglycemia requiring medical assistance, persistent clinically significant nausea, or failure to follow glucose monitoring, insulin adjustment or scheduled clinical follow-up. More nausea and less food intake require review of insulin needs rather than automatic escalation.",
+        "sources": [
+          "Symlin5.5/PDF6-7 and7.2/PDF10 oralcriticalonset1hbefore/2after;7.3/PDF10 motilitydrugs/AGIsnotrecommended,2.5/PDF5 exactstopcriteria;2.1/PDF4 nauseafoodintakeinsulinadjustment. No universalspacingalloralmeds."
+        ],
+        "everyRetainedClauseCompared": true
+      },
+      {
+        "heading": "Store and inspect the pramlintide pen",
+        "wholeBody": "Keep unused SymlinPens refrigerated at 2-8°C, protected from light, and do not freeze or use a previously frozen pen. After first use, refrigerate or keep at no more than 30°C and use within 30 days, whether refrigerated or not. Let the dose reach room temperature before injection to reduce local discomfort. The solution should be clear and colorless; inspect for particles or discoloration and do not use a cloudy solution. Follow the pen’s patient instructions and use a new needle for each injection. Storage and handling do not replace the separate-injection, meal and glucose-monitoring rules.",
+        "sources": [
+          "Symlin16/PDF21-22 unused2-8Cprotectlightnofreeze,opened<=30C30daysregardlessfridge;2.4/PDF4 roomtempbeforeinj,2.6/PDF5 inspectparticlesdiscoloration;guidePDF25 cloudy/newneedle. No pen-specificsteps imported unreviewed."
+        ],
+        "everyRetainedClauseCompared": true
+      },
+      {
+        "heading": "Use colesevelam for a narrow combined goal",
+        "wholeBody": "Colesevelam is a nonabsorbed bile acid-binding polymer that lowers LDL cholesterol and can modestly improve glucose control in adults with type 2 diabetes. Binding bile acids promotes hepatic LDL receptor activity and LDL clearance; the label states that its glucose-lowering mechanism is unknown. Do not treat the lipid mechanism as a fully established explanation of the glucose effect. It is an adjunct to diet and exercise and is not treatment for type 1 diabetes or diabetic ketoacidosis. Review whether its added benefit justifies constipation, pill burden and oral medicine timing. It does not replace a therapy selected for greater glucose efficacy or established cardiorenal benefit.",
+        "sources": [
+          "Book613/PDF621 dualglucose/lipidlimitedefficacyconstipationbinding;Welchol1/PDF3 adultT2dietexercise/notT1DKA;12.1/PDF15 intestinalnonabsorbedbileacid/LDLreceptors,glucosemechanismunknown. Outcomes qualification retained from prior reviewed selection, no newbenefitclaim."
+        ],
+        "everyRetainedClauseCompared": true
+      },
+      {
+        "heading": "Use the colesevelam formulation correctly",
+        "wholeBody": "The adult dose is 3.75 g daily: six 625 mg tablets once daily or three tablets twice daily, with a meal and liquid. Six times 625 mg is 3,750 mg, or 3.75 g. For oral suspension, use one 3.75 g packet daily. Empty it into a cup, add one cup or eight ounces of water, fruit juice or a diet soft drink, stir and take with a meal; do not swallow the powder dry. The suspension is an option when tablet swallowing is difficult. Each 3.75 g packet contains 27 mg of phenylalanine, which must be included in the combined intake assessment for a patient with phenylketonuria.",
+        "sources": [
+          "Welchol2.2-2.4/PDF4 3.75g6x625QD/3BIDmeal+liquid;packet1cup8oz liquidstirnodry/usewithmeal/swallowdifficulty. 5.5/PDF6 27mgphenylalanineper3.75g accountall sources. Sixx625 checked3750mg3.75g."
+        ],
+        "everyRetainedClauseCompared": true
+      },
+      {
+        "heading": "Check triglycerides before and during colesevelam",
+        "wholeBody": "Obtain lipid values, including triglycerides, before starting and periodically thereafter. Colesevelam is contraindicated when triglycerides are above 500 mg/dL or there is a history of triglyceride-induced pancreatitis. Values above 300 mg/dL can rise further and may require additional monitoring; this warning is different from the above-500 contraindication. Stop if triglycerides exceed 500 mg/dL during treatment. Severe abdominal pain, with or without nausea or vomiting, can indicate pancreatitis and requires discontinuation and prompt assessment. LDL lowering is not evidence that triglycerides are improving.",
+        "sources": [
+          "Welchol2.1/4/PDF4-5 baselineTG>500contra/previousTGpancreatitiscontra;5.1/PDF5 periodicTG,>300additionalmonitor distinctfromcontra,stopif>500,pancreatitiswarning. Not >=500 or universalTG>300contra."
+        ],
+        "everyRetainedClauseCompared": true
+      },
+      {
+        "heading": "Review bowel history and swallowing before colesevelam",
+        "wholeBody": "A history of bowel obstruction is a contraindication. Colesevelam is not recommended in gastroparesis, other gastrointestinal motility disorders, or after major gastrointestinal surgery when bowel obstruction is a risk. Constipation is common, while large tablets can cause dysphagia or esophageal obstruction. Severe constipation or severe abdominal pain requires stopping the medicine and prompt medical assessment. Switching to suspension can address difficulty swallowing tablets but does not remove the intestinal obstruction restriction. Ask about existing bowel symptoms before choosing a medicine for a modest glucose effect.",
+        "sources": [
+          "Welchol4/PDF5 historybowelobstructioncontra;5.2/PDF5 motility/gastroparesis/postsurgeryrisknotrecommended,severeconstipationabdpainstopprompt,largepillsdysphagiaesophagealobstruction/suspoption. No suspensionexception tobowelcontra."
+        ],
+        "everyRetainedClauseCompared": true
+      },
+      {
+        "heading": "Give affected oral medicines before colesevelam",
+        "wholeBody": "Colesevelam can reduce absorption of some medicines and fat-soluble vitamins A, D, E and K. Give vitamin supplements and known interacting drugs at least four hours before it. The label specifies this timing for phenytoin, thyroid replacement, olmesartan, certain oral contraceptives and sulfonylureas; consider the same precaution for untested medicines with a narrow therapeutic index. Monitor drug levels when appropriate. Warfarin requires frequent INR checks during initiation and periodic checks thereafter. Metformin extended release is a separate case: colesevelam can increase its exposure, so monitor glycemic control. Do not assume every interaction lowers exposure or that four hours after is the stated instruction. Statins can be taken at the same time or separately.",
+        "sources": [
+          "Welchol5.3/5.4/PDF5-6 vitaminsADEK>=4hprior,knowninteractorsandnarrowTI;7.1Table4/PDF9-10 phenytoin,thyroid,olmesartan,contraceptives,SUsandmonitorlevels;warfarinINRfrequentinitthenperiodic;7.2Table5/PDF10 metforminER↑exposurecontrolmonitor. 2.3/PDF4 statin sameorapart. Directionbefore notgeneric±spacing."
+        ],
+        "everyRetainedClauseCompared": true
+      },
+      {
+        "heading": "Fit bromocriptine-QR to its schedule and risks",
+        "wholeBody": "Cycloset is the quick-release 0.8 mg bromocriptine tablet used as an adjunct to diet and exercise in adults with type 2 diabetes. It is a dopamine D2 agonist; timed morning dosing is associated with improved insulin sensitivity and glucose disposal without raising insulin levels. Glucose lowering is modest. The formulation and diabetes schedule should not be copied from other bromocriptine products. It is not used for type 1 diabetes or diabetic ketoacidosis; efficacy with insulin has not been confirmed and data with TZDs are limited. Nausea, dizziness and treatment burden can limit its usefulness.",
+        "sources": [
+          "Book613/PDF621 selectedbromocriptinecentralmechanismmodest;Cycloset1/PDF3 adultT2/dietexercise/notT1DKAinsulinunconfirmedTZDlimited;3/PDF4 specific0.8mgQR;12.1/PDF13 D2agonisttimedmorningassociatedinsulinsensitivitydisposalwithoutinsulinrise. No alternativeformulationscheduleoravailabilityclaim."
+        ],
+        "everyRetainedClauseCompared": true
+      },
+      {
+        "heading": "Take Cycloset within two hours of morning waking",
+        "wholeBody": "Take Cycloset once daily with food within two hours after waking in the morning. Start at one 0.8 mg tablet daily and increase by one tablet each week toward a tolerated dose of 1.6-4.8 mg daily, with a maximum of six tablets. Six times 0.8 mg is 4.8 mg; the maximum is not a required target. If a morning dose is missed, take the usual dose the following morning and do not double it. Food can reduce gastrointestinal intolerance. A flexible waking schedule still needs a clear plan for the specified morning interval.",
+        "sources": [
+          "Cycloset2.1/2.2/PDF3 withfoodwithin2hmorningwaking,0.8start↑0.8weeklytolerated1.6-4.8max6tabs,missednextmorningnodouble. Sixx0.8=4.8checked,nomaxforcedtarget."
+        ],
+        "everyRetainedClauseCompared": true
+      },
+      {
+        "heading": "Screen Cycloset’s contraindications and orthostasis",
+        "wholeBody": "Cycloset is contraindicated with hypersensitivity to bromocriptine, ergot-related drugs or its ingredients, in syncopal migraine, postpartum patients and lactating patients. Hypotension, orthostatic hypotension and syncope can occur, especially at initiation and dose increases. Assess orthostatic vital signs before treatment and periodically afterward, and use caution with antihypertensives. Teach slow position changes and avoidance of circumstances where fainting could cause injury. Somnolence requires avoiding driving or heavy machinery while affected. Postpartum restrictions extend beyond the separate lactation restriction; Cycloset is not a medicine for suppressing postpartum milk production.",
+        "sources": [
+          "Cycloset4/5.1/PDF4 hypersensitivityergotcomponents/syncopalmigraine/postpartum/lactating,orthostatinitperiodic/hypotensionearlyuptitration/antihypertensivecaution/posturesafety;5.4/5.7/PDF5 somnolencenodrive/postpartumprohibitionnotlactationsuppression."
+        ],
+        "everyRetainedClauseCompared": true
+      },
+      {
+        "heading": "Distinguish dopamine antagonists from other agonists",
+        "wholeBody": "Cycloset is not recommended in severe psychotic disorders because a dopamine agonist can worsen the condition or impair treatment. Dopamine antagonists such as metoclopramide or certain antipsychotics can reduce Cycloset’s effectiveness, and it can reduce theirs; concomitant use is not recommended. Other dopamine agonists are also not recommended with Cycloset, for the separate reason that combination safety and effectiveness are unknown. These two drug groups are not interchangeable. Ask the patient or caregiver about new compulsive gambling, spending or sexual urges; new uncontrolled urges warrant review and consideration of dose reduction or discontinuation.",
+        "sources": [
+          "Book613/PDF621 metoclopramide+otheragonists shorthand;Cycloset5.2/5.3/5.5/5.6/PDF4-5 severepsychosisnotrecommend,D2antagonistsreducebothefficacy/avoidcoadmin,otherD2agonistscombinationunknownnotrecommend,compulsionsaskcaregiver/reducestop. Separatelyexplainedmechanisms, no conflation."
+        ],
+        "everyRetainedClauseCompared": true
+      },
+      {
+        "heading": "Apply Cycloset’s exact interaction limits",
+        "wholeBody": "With a moderate CYP3A4 inhibitor such as erythromycin, limit Cycloset to 1.6 mg once daily. Avoid strong CYP3A4 inhibitors and allow an adequate washout before initiation; CYP3A4 inducers can reduce exposure and also require review. Other ergot medicines within six hours of Cycloset are not recommended. The label also does not recommend concomitant sympathomimetics for more than ten days and advises avoiding selective 5-HT1B agonists such as sumatriptan. These precautions need a complete medicine list and an alternative plan when appropriate. Simply spacing all medicines or assuming the usual 4.8 mg ceiling always applies misses product-specific risks.",
+        "sources": [
+          "Cycloset2.3/PDF3-4 and7/PDF9-10 moderateCYP3A4max1.6/erythromycin,strongavoidwashout,inducers↓exposurecaution,ergotwithin6hnotrecommend,sympathomimetic>10daysnotrecommend,5HT1Bsumatriptanavoid. Notallformalcontra and notspacingalone."
+        ],
+        "everyRetainedClauseCompared": true
+      }
+    ],
+    "wholeMetadata": {
+      "slug": "other-noninsulin-agents",
+      "title": "Alpha-Glucosidase Inhibitors, Pramlintide, and Other Agents",
+      "summary": "Acarbose, miglitol, pramlintide, colesevelam and bromocriptine-QR have selected roles. Exact meal timing, insulin adjustment, triglyceride limits and product-specific interaction rules determine safe use.",
+      "concepts": [
+        "First-bite alpha-glucosidase inhibition and glucose rescue",
+        "Pramlintide selection, titration and mealtime insulin reduction",
+        "Colesevelam dose, triglyceride limits and bowel precautions",
+        "Direction-specific oral drug and vitamin spacing",
+        "Cycloset morning dosing, orthostasis and dopamine interactions"
+      ],
+      "application": "Match the agent to a defined treatment goal and an achievable administration plan. Check meals, kidney function and gastrointestinal disease for alpha-glucosidase inhibitors; insulin use and hypoglycemia awareness for pramlintide; triglycerides, bowel history and other oral medicines for colesevelam; and waking schedule, orthostasis and interacting medicines for Cycloset. Reassess glucose response, tolerability and burden rather than retaining a modest-effect medicine indefinitely.",
+      "keyPoints": [
+        "Acarbose and miglitol start with the first bite of each main meal; use oral glucose for a low only when the patient can safely swallow.",
+        "Pramlintide initiation requires a 50% reduction in mealtime insulin, separate injections and frequent glucose monitoring.",
+        "Pramlintide is contraindicated in confirmed gastroparesis and hypoglycemia unawareness.",
+        "Colesevelam is contraindicated with triglycerides above 500 mg/dL, prior triglyceride-induced pancreatitis or a history of bowel obstruction.",
+        "Give interacting oral medicines and vitamin supplements at least four hours before colesevelam.",
+        "Cycloset is taken with food within two hours of morning waking; review orthostasis, dopamine medicines and CYP3A4 interactions."
+      ],
+      "visual": "noninsulin-other"
+    },
+    "wholeMetadataCompared": true,
+    "wholeEmbeddedCheck": {
+      "object": {
+        "question": "An alert patient who can swallow develops mild hypoglycemia while taking acarbose with insulin. Which immediate oral treatment is appropriate?",
+        "choices": [
+          "Glucose tablets or gel, with a glucose recheck after 15 minutes.",
+          "Table sugar alone, because sucrose does not require digestion.",
+          "An additional acarbose dose to raise glucose immediately.",
+          "Wait untreated for the next meal because acarbose prevents insulin-related lows."
+        ],
+        "answer": 0,
+        "rationale": "Use glucose for prompt oral correction when the patient can swallow safely: acarbose delays sucrose breakdown but not direct glucose absorption. Recheck after 15 minutes and repeat glucose if the low persists. Acarbose does not prevent insulin-associated hypoglycemia or treat a low. Unsafe swallowing requires a rescue approach rather than oral carbohydrate.",
+        "reviewHref": "#other-noninsulin-agents"
+      },
+      "fourChoicesSeparatelyCompared": [
+        "Book631 rule15 andA8 glucoseoralifsafe.",
+        "A8 sucrosehydrolysisdelayed,notdirectabsorb.",
+        "A2 glucose-loweringnotrescue.",
+        "A8 insulinlowpossible/book631prompttreatnotwait."
+      ],
+      "wholeRationaleCompared": true
+    },
+    "wholeQuestionObjectsAndEachChoiceCompared": [
+      {
+        "wholeObject": {
+          "id": "noninsulin-diabetes-18-principle",
+          "question": "Which administration instruction matches acarbose and miglitol?",
+          "choices": [
+            "Take each dose with the first bite of each main meal to delay intestinal carbohydrate digestion.",
+            "Take a single bedtime dose because they act chiefly by releasing insulin overnight.",
+            "Take each dose two hours after eating so carbohydrate digestion can finish first.",
+            "Take extra doses between meals to reverse an existing low glucose value."
+          ],
+          "answer": 0,
+          "rationale": "These intestinal alpha-glucosidase inhibitors delay carbohydrate digestion and work with the first bite of each main meal. They are not overnight insulin secretagogues or hypoglycemia rescue medicines. Delaying the dose until digestion is complete does not follow their labeled meal timing.",
+          "reviewHref": "#other-noninsulin-agents",
+          "difficulty": "foundational"
+        },
+        "options": [
+          {
+            "index": 0,
+            "choice": "Take each dose with the first bite of each main meal to delay intestinal carbohydrate digestion.",
+            "keyed": true,
+            "independentSourceComparison": "Acarbose13/miglitol13 firstbiteTID/localcarbdigestion."
+          },
+          {
+            "index": 1,
+            "choice": "Take a single bedtime dose because they act chiefly by releasing insulin overnight.",
+            "keyed": false,
+            "independentSourceComparison": "Notsecretagogues;no bedtimeQDregimen."
+          },
+          {
+            "index": 2,
+            "choice": "Take each dose two hours after eating so carbohydrate digestion can finish first.",
+            "keyed": false,
+            "independentSourceComparison": "Firstbite nottwohoursaftercompletedmeal."
+          },
+          {
+            "index": 3,
+            "choice": "Take extra doses between meals to reverse an existing low glucose value.",
+            "keyed": false,
+            "independentSourceComparison": "Notlowrescue;canaddhyporiskwithinsulinSU."
+          }
+        ],
+        "wholeRationaleCompared": true,
+        "oneDefensibleBestAnswer": true,
+        "objectChanged": true
+      },
+      {
+        "wholeObject": {
+          "id": "noninsulin-diabetes-18-application",
+          "question": "An alert patient who can swallow develops mild hypoglycemia while using acarbose with a sulfonylurea. Which oral carbohydrate is appropriate for rapid treatment?",
+          "choices": [
+            "Glucose (dextrose).",
+            "Sucrose, because acarbose accelerates its breakdown.",
+            "Acarbose itself, because it raises glucose directly.",
+            "No carbohydrate, because acarbose makes sulfonylurea-associated hypoglycemia impossible."
+          ],
+          "answer": 0,
+          "rationale": "Acarbose does not usually cause hypoglycemia alone, but concomitant insulin or a secretagogue can. Glucose is directly absorbable; sucrose requires hydrolysis that acarbose delays and is unsuitable for rapid correction. Severe hypoglycemia requires a different rescue approach.",
+          "reviewHref": "#other-noninsulin-agents",
+          "difficulty": "application"
+        },
+        "options": [
+          {
+            "index": 0,
+            "choice": "Glucose (dextrose).",
+            "keyed": true,
+            "independentSourceComparison": "Acarbose8/9 glucose directabsorbalertsafe;book631."
+          },
+          {
+            "index": 1,
+            "choice": "Sucrose, because acarbose accelerates its breakdown.",
+            "keyed": false,
+            "independentSourceComparison": "SucrosedigestiondelayednotacceleratedA8."
+          },
+          {
+            "index": 2,
+            "choice": "Acarbose itself, because it raises glucose directly.",
+            "keyed": false,
+            "independentSourceComparison": "Acarbose glucose-loweringnotraisingmechanismA2."
+          },
+          {
+            "index": 3,
+            "choice": "No carbohydrate, because acarbose makes sulfonylurea-associated hypoglycemia impossible.",
+            "keyed": false,
+            "independentSourceComparison": "Alonelowrisk notinsulinSUprotectionA8/9."
+          }
+        ],
+        "wholeRationaleCompared": true,
+        "oneDefensibleBestAnswer": true,
+        "objectChanged": false
+      },
+      {
+        "wholeObject": {
+          "id": "noninsulin-diabetes-18-safety",
+          "question": "Which proposed acarbose regimen exceeds its labeled maximum for an adult weighing exactly 60 kg?",
+          "choices": [
+            "100 mg three times daily with meals.",
+            "25 mg three times daily with meals as the starting regimen.",
+            "50 mg three times daily with meals after appropriate titration.",
+            "A gradual introduction from 25 mg once daily toward the prescribed meal regimen."
+          ],
+          "answer": 0,
+          "rationale": "At 60 kg or less, acarbose’s maximum is 50 mg three times daily. The 100 mg three-times-daily ceiling applies above 60 kg. A 25 mg starting dose or gradual introduction is compatible with its dosing instructions, and 50 mg is within the lower-weight ceiling. Miglitol’s different ceiling should not be substituted.",
+          "reviewHref": "#other-noninsulin-agents",
+          "difficulty": "advanced"
+        },
+        "options": [
+          {
+            "index": 0,
+            "choice": "100 mg three times daily with meals.",
+            "keyed": true,
+            "independentSourceComparison": "Acarbose13 at60kgmax50TID;100TIDexceeds."
+          },
+          {
+            "index": 1,
+            "choice": "25 mg three times daily with meals as the starting regimen.",
+            "keyed": false,
+            "independentSourceComparison": "A13 starting25TIDcompatible."
+          },
+          {
+            "index": 2,
+            "choice": "50 mg three times daily with meals after appropriate titration.",
+            "keyed": false,
+            "independentSourceComparison": "A13 50TIDequalsmax<=60kg."
+          },
+          {
+            "index": 3,
+            "choice": "A gradual introduction from 25 mg once daily toward the prescribed meal regimen.",
+            "keyed": false,
+            "independentSourceComparison": "A13 gradual25QDfrequencyoptioncompatible."
+          }
+        ],
+        "wholeRationaleCompared": true,
+        "oneDefensibleBestAnswer": true,
+        "objectChanged": true
+      },
+      {
+        "wholeObject": {
+          "id": "noninsulin-diabetes-18-case",
+          "question": "An adult taking acarbose and insulin becomes unconscious during a low glucose episode. Glucose gel and a prescribed glucagon rescue device are available. Which response is best?",
+          "choices": [
+            "Do not give oral gel; use the glucagon rescue plan and obtain urgent medical help.",
+            "Put glucose gel in the mouth because acarbose makes every oral glucose dose safe during unconsciousness.",
+            "Use table sugar orally because delayed sucrose digestion prevents choking.",
+            "Give another acarbose dose and wait until the patient wakes before arranging help."
+          ],
+          "answer": 0,
+          "rationale": "Unconsciousness makes oral carbohydrate unsafe because of choking or aspiration risk. Use the prescribed glucagon rescue plan and urgent help; IV dextrose is another treatment when appropriate access and personnel are available. Acarbose’s glucose-versus-sucrose distinction applies to safe oral treatment, not permission to give gel to an unconscious patient.",
+          "reviewHref": "#other-noninsulin-agents",
+          "difficulty": "clinical"
+        },
+        "options": [
+          {
+            "index": 0,
+            "choice": "Do not give oral gel; use the glucagon rescue plan and obtain urgent medical help.",
+            "keyed": true,
+            "independentSourceComparison": "Book631 nooralifnotpossible/rescueglucagon;A8 IVglucose/glucagonsevere."
+          },
+          {
+            "index": 1,
+            "choice": "Put glucose gel in the mouth because acarbose makes every oral glucose dose safe during unconsciousness.",
+            "keyed": false,
+            "independentSourceComparison": "Unconsciousoralunsafe irrespectiveglucosevs sucrose."
+          },
+          {
+            "index": 2,
+            "choice": "Use table sugar orally because delayed sucrose digestion prevents choking.",
+            "keyed": false,
+            "independentSourceComparison": "Sucrosehydrolysisnotairwayprotection."
+          },
+          {
+            "index": 3,
+            "choice": "Give another acarbose dose and wait until the patient wakes before arranging help.",
+            "keyed": false,
+            "independentSourceComparison": "Acarbose notrescue,waitingunconsciousunsafeBook631."
+          }
+        ],
+        "wholeRationaleCompared": true,
+        "oneDefensibleBestAnswer": true,
+        "objectChanged": true
+      },
+      {
+        "wholeObject": {
+          "id": "noninsulin-diabetes-19-principle",
+          "question": "Which mechanism and insulin relationship best describe pramlintide?",
+          "choices": [
+            "An amylin analog that slows gastric emptying, suppresses postmeal glucagon and promotes satiety while mealtime insulin remains necessary.",
+            "A replacement insulin that permits stopping mealtime insulin immediately.",
+            "An intestinal alpha-glucosidase inhibitor that directly breaks sucrose into glucose.",
+            "A dopamine antagonist that increases gastric emptying to match insulin absorption."
+          ],
+          "answer": 0,
+          "rationale": "Pramlintide provides amylin effects and is used alongside mealtime insulin in selected patients. It is not insulin replacement, an alpha-glucosidase inhibitor or a dopamine antagonist. The combination creates severe hypoglycemia risk, requiring the labeled insulin reduction, careful selection and frequent monitoring.",
+          "reviewHref": "#other-noninsulin-agents",
+          "difficulty": "foundational"
+        },
+        "options": [
+          {
+            "index": 0,
+            "choice": "An amylin analog that slows gastric emptying, suppresses postmeal glucagon and promotes satiety while mealtime insulin remains necessary.",
+            "keyed": true,
+            "independentSourceComparison": "Symlin12.1/13-14 amylin3effects/1+boxedinsulinadjunct."
+          },
+          {
+            "index": 1,
+            "choice": "A replacement insulin that permits stopping mealtime insulin immediately.",
+            "keyed": false,
+            "independentSourceComparison": "Notreplacementinsulin1/3."
+          },
+          {
+            "index": 2,
+            "choice": "An intestinal alpha-glucosidase inhibitor that directly breaks sucrose into glucose.",
+            "keyed": false,
+            "independentSourceComparison": "NotAGIandAGIs inhibitratherthanhydrolyse directly."
+          },
+          {
+            "index": 3,
+            "choice": "A dopamine antagonist that increases gastric emptying to match insulin absorption.",
+            "keyed": false,
+            "independentSourceComparison": "NotD2antagonist;gastricemptyingslows12.1/14."
+          }
+        ],
+        "wholeRationaleCompared": true,
+        "oneDefensibleBestAnswer": true,
+        "objectChanged": true
+      },
+      {
+        "wholeObject": {
+          "id": "noninsulin-diabetes-19-application",
+          "question": "A selected adult with type 1 diabetes is starting pramlintide. Which initial pramlintide regimen follows its label?",
+          "choices": [
+            "15 mcg immediately before each major meal, with the planned 50% mealtime insulin reduction and frequent glucose checks.",
+            "60 mcg immediately before each major meal because the type 2 starting dose applies to type 1 diabetes.",
+            "15 mg before each meal, interpreting micrograms as milligrams.",
+            "120 mcg before each meal from the first day to bypass nausea-related titration."
+          ],
+          "answer": 0,
+          "rationale": "For type 1 diabetes, pramlintide starts at 15 mcg before major meals and is titrated through 30, 45 and 60 mcg after at least three days without clinically significant nausea at each step. The 60 mcg starting dose is for type 2 diabetes with mealtime insulin; neither milligram dosing nor an immediate 120 mcg dose fits the type 1 regimen.",
+          "reviewHref": "#other-noninsulin-agents",
+          "difficulty": "application"
+        },
+        "options": [
+          {
+            "index": 0,
+            "choice": "15 mcg immediately before each major meal, with the planned 50% mealtime insulin reduction and frequent glucose checks.",
+            "keyed": true,
+            "independentSourceComparison": "Symlin2.3/4 T1start15mcg,2.1mealinsulin50monitor."
+          },
+          {
+            "index": 1,
+            "choice": "60 mcg immediately before each major meal because the type 2 starting dose applies to type 1 diabetes.",
+            "keyed": false,
+            "independentSourceComparison": "60mcgT2startnotT1Symlin2.2/2.3."
+          },
+          {
+            "index": 2,
+            "choice": "15 mg before each meal, interpreting micrograms as milligrams.",
+            "keyed": false,
+            "independentSourceComparison": "15mg=15000mcg wrongunits dose1000fold."
+          },
+          {
+            "index": 3,
+            "choice": "120 mcg before each meal from the first day to bypass nausea-related titration.",
+            "keyed": false,
+            "independentSourceComparison": "120mcgT2targetnotT1initial,step/nausea2.3."
+          }
+        ],
+        "wholeRationaleCompared": true,
+        "oneDefensibleBestAnswer": true,
+        "objectChanged": true
+      },
+      {
+        "wholeObject": {
+          "id": "noninsulin-diabetes-19-safety",
+          "question": "Which finding is a labeled contraindication to pramlintide?",
+          "choices": [
+            "Confirmed gastroparesis.",
+            "Ability to recognize and promptly treat a low glucose value.",
+            "Reliable adherence to insulin adjustments and glucose monitoring.",
+            "Inadequate control despite optimized mealtime insulin in an otherwise appropriate adult."
+          ],
+          "answer": 0,
+          "rationale": "Confirmed gastroparesis is a contraindication because pramlintide slows gastric emptying. Hypoglycemia unawareness is another contraindication; recognizing lows is the opposite finding. Reliable monitoring and inadequate control despite optimized insulin support consideration in a carefully selected patient but do not override contraindications.",
+          "reviewHref": "#other-noninsulin-agents",
+          "difficulty": "advanced"
+        },
+        "options": [
+          {
+            "index": 0,
+            "choice": "Confirmed gastroparesis.",
+            "keyed": true,
+            "independentSourceComparison": "Symlin4/5 confirmedgastroparesiscontra."
+          },
+          {
+            "index": 1,
+            "choice": "Ability to recognize and promptly treat a low glucose value.",
+            "keyed": false,
+            "independentSourceComparison": "Unawarenesscontra4/5 oppositeabilityrecognize."
+          },
+          {
+            "index": 2,
+            "choice": "Reliable adherence to insulin adjustments and glucose monitoring.",
+            "keyed": false,
+            "independentSourceComparison": "Adherencepositiveselection5.1/5-6."
+          },
+          {
+            "index": 3,
+            "choice": "Inadequate control despite optimized mealtime insulin in an otherwise appropriate adult.",
+            "keyed": false,
+            "independentSourceComparison": "1/3 selectedadultinadequateoptimal insulin indicationnotcontra."
+          }
+        ],
+        "wholeRationaleCompared": true,
+        "oneDefensibleBestAnswer": true,
+        "objectChanged": true
+      },
+      {
+        "wholeObject": {
+          "id": "noninsulin-diabetes-19-case",
+          "question": "An adult’s prescribed meal insulin dose is 12 units before adding pramlintide. What dose follows the initial labeled 50% mealtime reduction, before subsequent individualized adjustment?",
+          "choices": [
+            "6 units, with close glucose monitoring and clinician-guided retitration.",
+            "12 units, because separate injections eliminate hypoglycemia risk.",
+            "18 units, because delaying gastric emptying requires more insulin at initiation.",
+            "0 units, because pramlintide completely replaces the insulin requirement."
+          ],
+          "answer": 0,
+          "rationale": "Half of 12 units is 6 units. The initial reduction limits severe insulin-associated hypoglycemia risk; later adjustments depend on glucose response and tolerability. Separate injections are required but do not remove the risk. Pramlintide neither calls for an initial increase nor replaces all mealtime insulin.",
+          "reviewHref": "#other-noninsulin-agents",
+          "difficulty": "clinical"
+        },
+        "options": [
+          {
+            "index": 0,
+            "choice": "6 units, with close glucose monitoring and clinician-guided retitration.",
+            "keyed": true,
+            "independentSourceComparison": "Symlin2.1/4 andbook62450%;12x0.5=6."
+          },
+          {
+            "index": 1,
+            "choice": "12 units, because separate injections eliminate hypoglycemia risk.",
+            "keyed": false,
+            "independentSourceComparison": "Separateinj2.4notremoveboxedhyporisk."
+          },
+          {
+            "index": 2,
+            "choice": "18 units, because delaying gastric emptying requires more insulin at initiation.",
+            "keyed": false,
+            "independentSourceComparison": "Increase18not50%reduction."
+          },
+          {
+            "index": 3,
+            "choice": "0 units, because pramlintide completely replaces the insulin requirement.",
+            "keyed": false,
+            "independentSourceComparison": "Pramlintideadjunctinsulin1/3notinsulinreplacement."
+          }
+        ],
+        "wholeRationaleCompared": true,
+        "oneDefensibleBestAnswer": true,
+        "objectChanged": true
+      },
+      {
+        "wholeObject": {
+          "id": "noninsulin-diabetes-20-principle",
+          "question": "Which description correctly distinguishes colesevelam from bromocriptine-QR?",
+          "choices": [
+            "Colesevelam binds intestinal bile acids and lowers LDL; Cycloset is a dopamine D2 agonist given with a specific morning schedule.",
+            "Both directly release insulin through the sulfonylurea receptor and require identical meal-linked dosing.",
+            "Colesevelam is a dopamine antagonist, while Cycloset is an intestinal bile acid binder.",
+            "Both have a fully established identical glucose mechanism and are treatments for diabetic ketoacidosis."
+          ],
+          "answer": 0,
+          "rationale": "Colesevelam is a nonabsorbed bile acid binder with LDL and modest glucose effects; its glycemic mechanism is unknown in the label. Cycloset is a dopamine D2 agonist used within two hours of morning waking. They are not sulfonylureas, their mechanisms are not interchangeable, and neither treats diabetic ketoacidosis.",
+          "reviewHref": "#other-noninsulin-agents",
+          "difficulty": "foundational"
+        },
+        "options": [
+          {
+            "index": 0,
+            "choice": "Colesevelam binds intestinal bile acids and lowers LDL; Cycloset is a dopamine D2 agonist given with a specific morning schedule.",
+            "keyed": true,
+            "independentSourceComparison": "Welchol12.1/15 bilebindingLDL;Cycloset12.1/13 D2morning."
+          },
+          {
+            "index": 1,
+            "choice": "Both directly release insulin through the sulfonylurea receptor and require identical meal-linked dosing.",
+            "keyed": false,
+            "independentSourceComparison": "NotSUmechanismoridenticaltiming."
+          },
+          {
+            "index": 2,
+            "choice": "Colesevelam is a dopamine antagonist, while Cycloset is an intestinal bile acid binder.",
+            "keyed": false,
+            "independentSourceComparison": "Agentmechanismsreversedincorrect."
+          },
+          {
+            "index": 3,
+            "choice": "Both have a fully established identical glucose mechanism and are treatments for diabetic ketoacidosis.",
+            "keyed": false,
+            "independentSourceComparison": "Welcholglycemicmechanismunknown;bothnotDKA1/3."
+          }
+        ],
+        "wholeRationaleCompared": true,
+        "oneDefensibleBestAnswer": true,
+        "objectChanged": true
+      },
+      {
+        "wholeObject": {
+          "id": "noninsulin-diabetes-20-application",
+          "question": "Which administration instruction follows the Cycloset label?",
+          "choices": [
+            "Take the once-daily dose with food within two hours after waking in the morning.",
+            "Take the dose without food at bedtime, regardless of waking time.",
+            "Divide the full dose before every meal using other bromocriptine products’ schedules.",
+            "Double tomorrow’s morning dose if today’s morning dose was missed."
+          ],
+          "answer": 0,
+          "rationale": "Cycloset is taken once daily with food within two hours of morning waking. Food may reduce gastrointestinal intolerance. Its quick-release diabetes formulation has its own schedule. If a morning dose is missed, take the usual dose the following morning; do not double it.",
+          "reviewHref": "#other-noninsulin-agents",
+          "difficulty": "application"
+        },
+        "options": [
+          {
+            "index": 0,
+            "choice": "Take the once-daily dose with food within two hours after waking in the morning.",
+            "keyed": true,
+            "independentSourceComparison": "Cycloset2.1/3 foodwithin2hmorning."
+          },
+          {
+            "index": 1,
+            "choice": "Take the dose without food at bedtime, regardless of waking time.",
+            "keyed": false,
+            "independentSourceComparison": "Foodmorningnotfastedbedtime2.1."
+          },
+          {
+            "index": 2,
+            "choice": "Divide the full dose before every meal using other bromocriptine products’ schedules.",
+            "keyed": false,
+            "independentSourceComparison": "QDdiabetesQRnototherproductmealdividing2.1."
+          },
+          {
+            "index": 3,
+            "choice": "Double tomorrow’s morning dose if today’s morning dose was missed.",
+            "keyed": false,
+            "independentSourceComparison": "Missednextusualnodouble2.1/20."
+          }
+        ],
+        "wholeRationaleCompared": true,
+        "oneDefensibleBestAnswer": true,
+        "objectChanged": true
+      },
+      {
+        "wholeObject": {
+          "id": "noninsulin-diabetes-20-safety",
+          "question": "Which proposed colesevelam initiation violates its labeled triglyceride contraindication?",
+          "choices": [
+            "Starting it when fasting triglycerides are 550 mg/dL.",
+            "Obtaining baseline triglycerides before prescribing it.",
+            "Arranging additional triglyceride monitoring when the baseline is 350 mg/dL.",
+            "Giving an interacting thyroid medicine at least four hours before it."
+          ],
+          "answer": 0,
+          "rationale": "Colesevelam is contraindicated above 500 mg/dL because it can increase triglycerides and pancreatitis risk. Values above 300 mg/dL can require additional monitoring, which is a different warning from the above-500 restriction. Baseline testing and spacing an interacting thyroid medicine before the dose are appropriate actions.",
+          "reviewHref": "#other-noninsulin-agents",
+          "difficulty": "advanced"
+        },
+        "options": [
+          {
+            "index": 0,
+            "choice": "Starting it when fasting triglycerides are 550 mg/dL.",
+            "keyed": true,
+            "independentSourceComparison": "Welchol4/4-5 TG550>500contra."
+          },
+          {
+            "index": 1,
+            "choice": "Obtaining baseline triglycerides before prescribing it.",
+            "keyed": false,
+            "independentSourceComparison": "BaselineTG2.1appropriate."
+          },
+          {
+            "index": 2,
+            "choice": "Arranging additional triglyceride monitoring when the baseline is 350 mg/dL.",
+            "keyed": false,
+            "independentSourceComparison": ">300increasedmonitor5.1notabsolutecontra."
+          },
+          {
+            "index": 3,
+            "choice": "Giving an interacting thyroid medicine at least four hours before it.",
+            "keyed": false,
+            "independentSourceComparison": "Thyroid4hpriorTable4/9-10appropriate."
+          }
+        ],
+        "wholeRationaleCompared": true,
+        "oneDefensibleBestAnswer": true,
+        "objectChanged": true
+      },
+      {
+        "wholeObject": {
+          "id": "noninsulin-diabetes-20-case",
+          "question": "An adult with type 2 diabetes, triglycerides of 560 mg/dL and chronic constipation requests colesevelam for a modest A1C reduction. Which response is best?",
+          "choices": [
+            "Choose another strategy because the triglyceride contraindication and bowel burden outweigh this proposed use.",
+            "Start the full tablet dose because LDL lowering guarantees triglycerides will fall.",
+            "Use the oral suspension because changing formulation removes the triglyceride restriction.",
+            "Separate other medicines by four hours and disregard the triglyceride value."
+          ],
+          "answer": 0,
+          "rationale": "Triglycerides above 500 mg/dL contraindicate colesevelam; chronic constipation adds gastrointestinal burden. LDL lowering does not guarantee triglyceride lowering. Suspension may help tablet swallowing but does not remove the triglyceride restriction, and medicine spacing addresses a different risk.",
+          "reviewHref": "#other-noninsulin-agents",
+          "difficulty": "clinical"
+        },
+        "options": [
+          {
+            "index": 0,
+            "choice": "Choose another strategy because the triglyceride contraindication and bowel burden outweigh this proposed use.",
+            "keyed": true,
+            "independentSourceComparison": "WelcholTG560>500contra4;constipation5.2addsburden."
+          },
+          {
+            "index": 1,
+            "choice": "Start the full tablet dose because LDL lowering guarantees triglycerides will fall.",
+            "keyed": false,
+            "independentSourceComparison": "LDLbenefitnotTGfall5.1/12.1."
+          },
+          {
+            "index": 2,
+            "choice": "Use the oral suspension because changing formulation removes the triglyceride restriction.",
+            "keyed": false,
+            "independentSourceComparison": "SuspensionnotTGexception2.4/4."
+          },
+          {
+            "index": 3,
+            "choice": "Separate other medicines by four hours and disregard the triglyceride value.",
+            "keyed": false,
+            "independentSourceComparison": "SpacinginteractionnotTGcontraexception4/5.4."
+          }
+        ],
+        "wholeRationaleCompared": true,
+        "oneDefensibleBestAnswer": true,
+        "objectChanged": true
+      }
+    ],
+    "all48ChoicesSeparatelyCompared": true,
+    "previouslyVerifiedQuestionRetainedExactly": "noninsulin-diabetes-18-application",
+    "wholeFigure": {
+      "sourceObject": "\"noninsulin-other\": {\n    accent: \"#9aa487\",\n    eyebrow: \"Narrow mechanisms\",\n    title: \"Exact timing turns a niche medicine into useful therapy\",\n    columns: [\n      [\"Digest\", \"Alpha-glucosidase\", \"Delay carbohydrate absorption with the first bite of a meal\"],\n      [\"Replace\", \"Amylin\", \"Pair pramlintide with reduced mealtime insulin and intensive monitoring\"],\n      [\"Target\", \"Selective use\", \"Fit colesevelam or bromocriptine-QR to a defined goal and burden\"],\n    ],\n  },\n  ",
+      "all14LabelsReviewed": true,
+      "contentUnchanged": true,
+      "bodyAndMechanismFonts14px": true,
+      "summaryNotCompleteClinicalAlgorithm": true,
+      "sources": "Book621 table;A13/M13 firstbite;Symlin2.1/4 reductionandmonitor;Welchol3-6 andCycloset3-5 selectedgoal/burden."
+    },
+    "sourceDiscrepancies": {
+      "bookSucrose": "Avoid blanketclaimallfruitjuiceineffective;teachpureglucoseandlimitoralrescue tosafe swallowing.",
+      "amylinMechanism": "Separateemptying,glucagonandsatiety instead of implyingonecausesallothers.",
+      "dopamineCombinations": "D2antagonistsincludingmetoclopramideandotherD2agonistsseparatewarningsverified;bookshorthandnotassumedtypo.",
+      "colesevelamGlucose": "UnknownlabelglycemicmechanismdistinguishedfromestablishedbileacidLDLpathway.",
+      "assessment": "Unrelated truthful distractors and mismatched rationales replacedin11wholeobjects;18applicationretainedexact."
+    },
+    "numericChecks": {
+      "twelveUnitsAfterFiftyPercentReduction": "6.0",
+      "six625mgTabletsGrams": "3.75",
+      "six08mgTabletsMg": "4.8",
+      "acarboseExactly60kgMaxPerMealMg": 50,
+      "acarboseAbove60kgMaxPerMealMg": 100,
+      "miglitolMaxPerMealMg": 100,
+      "colesevelamContraTriglyceridesStrictlyAboveMgDl": 500,
+      "colesevelamAdditionalMonitoringStrictlyAboveMgDl": 300,
+      "pramlintideDosesInMicrogramsNotMilligrams": true,
+      "independentlyChecked": true
+    },
+    "associatedCumulativeItems": [],
+    "all1180CumulativeObjectsUnchanged": true,
+    "remainingTwoLessonsAnd27QuestionsNotCertified": true,
+    "wholeParentModuleVerified": false
+  },
+  "validation": {
+    "productionBuild": {
+      "status": "passed",
+      "exit_code": 0,
+      "actualTerminalCompletionObserved": true,
+      "staticRoutes": 567,
+      "log": "build.log",
+      "productionBuild": "Next.js16.3.5 webpack isolated audit candidate"
+    },
+    "structure": {
+      "modules": 1,
+      "questions": 120,
+      "hardErrors": [],
+      "sourceGaps": [],
+      "sizeAdvisories": [],
+      "thinLessons": [],
+      "weakestModules": [
+        {
+          "module": "noninsulin-diabetes-pharmacotherapy",
+          "lessons": 10,
+          "questions": 120,
+          "minimumLessonCoverage": 8
+        }
+      ]
+    },
+    "objectPreservation": {
+      "status": "passed",
+      "modules": 232,
+      "otherWholeModulesUnchanged": 231,
+      "wholeQuestionBankTotal": 120,
+      "wholeQuestionsReviewed": 12,
+      "changedWholeQuestions": 11,
+      "previouslyVerifiedWholeQuestionUnchanged": "noninsulin-diabetes-18-application",
+      "other108WholeQuestionsUnchanged": true,
+      "allPrior82VerifiedNoninsulinWholeQuestionsUnchanged": true,
+      "otherNineWholeLessonsUnchanged": true,
+      "stableKeysIdsDifficultyAnchorsOrder": true,
+      "associatedDerivedCumulative": [],
+      "all1180WholeCumulativeObjectsUnchanged": true,
+      "existingReferencesRetained": 41,
+      "fivePrimaryReferencesAdded": true
+    },
+    "browser": {
+      "status": "passed",
+      "results": [
+        {
+          "width": 1440,
+          "exactWholeBodies": 23,
+          "wholeChecksAllFourOptionsGraded": 1,
+          "wholeQuestionsShuffledCorrectIncorrectFeedbackAndAnchorsVerified": 12,
+          "associatedCumulativeItems": [],
+          "all1180CumulativeObjectsUnchanged": true,
+          "allReferencesExact": 46,
+          "noHorizontalOverflow": true,
+          "diagrams": [
+            {
+              "width": 1440,
+              "slug": "noninsulin-diabetes-pharmacotherapy",
+              "lessonKey": "other-noninsulin-agents",
+              "labels": [
+                {
+                  "tag": "SPAN",
+                  "text": "Narrow mechanisms",
+                  "overflow": false,
+                  "fontSize": 10.88
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Exact timing turns a niche medicine into useful therapy",
+                  "overflow": false,
+                  "fontSize": 37.6
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "01",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Digest",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Alpha-glucosidase",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Delay carbohydrate absorption with the first bite of a meal",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "02",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Replace",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Amylin",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Pair pramlintide with reduced mealtime insulin and intensive monitoring",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "03",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Target",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Selective use",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Fit colesevelam or bromocriptine-QR to a defined goal and burden",
+                  "overflow": false,
+                  "fontSize": 14
+                }
+              ],
+              "allTextWithinBounds": true
+            }
+          ]
+        },
+        {
+          "width": 390,
+          "exactWholeBodies": 23,
+          "wholeChecksAllFourOptionsGraded": 1,
+          "wholeQuestionsShuffledCorrectIncorrectFeedbackAndAnchorsVerified": 12,
+          "associatedCumulativeItems": [],
+          "all1180CumulativeObjectsUnchanged": true,
+          "allReferencesExact": 46,
+          "noHorizontalOverflow": true,
+          "diagrams": [
+            {
+              "width": 320,
+              "slug": "noninsulin-diabetes-pharmacotherapy",
+              "lessonKey": "other-noninsulin-agents",
+              "labels": [
+                {
+                  "tag": "SPAN",
+                  "text": "Narrow mechanisms",
+                  "overflow": false,
+                  "fontSize": 10.88
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Exact timing turns a niche medicine into useful therapy",
+                  "overflow": false,
+                  "fontSize": 23.2
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "01",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Digest",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Alpha-glucosidase",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Delay carbohydrate absorption with the first bite of a meal",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "02",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Replace",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Amylin",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Pair pramlintide with reduced mealtime insulin and intensive monitoring",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "03",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Target",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Selective use",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Fit colesevelam or bromocriptine-QR to a defined goal and burden",
+                  "overflow": false,
+                  "fontSize": 14
+                }
+              ],
+              "allTextWithinBounds": true
+            },
+            {
+              "width": 390,
+              "slug": "noninsulin-diabetes-pharmacotherapy",
+              "lessonKey": "other-noninsulin-agents",
+              "labels": [
+                {
+                  "tag": "SPAN",
+                  "text": "Narrow mechanisms",
+                  "overflow": false,
+                  "fontSize": 10.88
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Exact timing turns a niche medicine into useful therapy",
+                  "overflow": false,
+                  "fontSize": 23.2
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "01",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Digest",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Alpha-glucosidase",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Delay carbohydrate absorption with the first bite of a meal",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "02",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Replace",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Amylin",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Pair pramlintide with reduced mealtime insulin and intensive monitoring",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "03",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Target",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Selective use",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Fit colesevelam or bromocriptine-QR to a defined goal and burden",
+                  "overflow": false,
+                  "fontSize": 14
+                }
+              ],
+              "allTextWithinBounds": true
+            },
+            {
+              "width": 639,
+              "slug": "noninsulin-diabetes-pharmacotherapy",
+              "lessonKey": "other-noninsulin-agents",
+              "labels": [
+                {
+                  "tag": "SPAN",
+                  "text": "Narrow mechanisms",
+                  "overflow": false,
+                  "fontSize": 10.88
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Exact timing turns a niche medicine into useful therapy",
+                  "overflow": false,
+                  "fontSize": 23.2
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "01",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Digest",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Alpha-glucosidase",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Delay carbohydrate absorption with the first bite of a meal",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "02",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Replace",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Amylin",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Pair pramlintide with reduced mealtime insulin and intensive monitoring",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "03",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Target",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Selective use",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Fit colesevelam or bromocriptine-QR to a defined goal and burden",
+                  "overflow": false,
+                  "fontSize": 14
+                }
+              ],
+              "allTextWithinBounds": true
+            },
+            {
+              "width": 640,
+              "slug": "noninsulin-diabetes-pharmacotherapy",
+              "lessonKey": "other-noninsulin-agents",
+              "labels": [
+                {
+                  "tag": "SPAN",
+                  "text": "Narrow mechanisms",
+                  "overflow": false,
+                  "fontSize": 10.88
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Exact timing turns a niche medicine into useful therapy",
+                  "overflow": false,
+                  "fontSize": 23.2
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "01",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Digest",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Alpha-glucosidase",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Delay carbohydrate absorption with the first bite of a meal",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "02",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Replace",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Amylin",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Pair pramlintide with reduced mealtime insulin and intensive monitoring",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "SPAN",
+                  "text": "03",
+                  "overflow": false,
+                  "fontSize": 10.24
+                },
+                {
+                  "tag": "STRONG",
+                  "text": "Target",
+                  "overflow": false,
+                  "fontSize": 16
+                },
+                {
+                  "tag": "EM",
+                  "text": "Selective use",
+                  "overflow": false,
+                  "fontSize": 14
+                },
+                {
+                  "tag": "P",
+                  "text": "Fit colesevelam or bromocriptine-QR to a defined goal and burden",
+                  "overflow": false,
+                  "fontSize": 14
+                }
+              ],
+              "allTextWithinBounds": true
+            }
+          ]
+        }
+      ],
+      "captures": [
+        "hero-noninsulin-diabetes-pharmacotherapy-1440.png",
+        "body-other-noninsulin-agents-0-1440.png",
+        "body-other-noninsulin-agents-1-1440.png",
+        "body-other-noninsulin-agents-2-1440.png",
+        "body-other-noninsulin-agents-3-1440.png",
+        "body-other-noninsulin-agents-4-1440.png",
+        "body-other-noninsulin-agents-5-1440.png",
+        "body-other-noninsulin-agents-6-1440.png",
+        "body-other-noninsulin-agents-7-1440.png",
+        "body-other-noninsulin-agents-8-1440.png",
+        "body-other-noninsulin-agents-9-1440.png",
+        "body-other-noninsulin-agents-10-1440.png",
+        "body-other-noninsulin-agents-11-1440.png",
+        "body-other-noninsulin-agents-12-1440.png",
+        "body-other-noninsulin-agents-13-1440.png",
+        "body-other-noninsulin-agents-14-1440.png",
+        "body-other-noninsulin-agents-15-1440.png",
+        "body-other-noninsulin-agents-16-1440.png",
+        "body-other-noninsulin-agents-17-1440.png",
+        "body-other-noninsulin-agents-18-1440.png",
+        "body-other-noninsulin-agents-19-1440.png",
+        "body-other-noninsulin-agents-20-1440.png",
+        "body-other-noninsulin-agents-21-1440.png",
+        "body-other-noninsulin-agents-22-1440.png",
+        "summary-other-noninsulin-agents-1440.png",
+        "concepts-other-noninsulin-agents-1440.png",
+        "keypoints-other-noninsulin-agents-1440.png",
+        "application-other-noninsulin-agents-1440.png",
+        "figure-other-noninsulin-agents-1440.png",
+        "check-other-noninsulin-agents-1440.png",
+        "references-noninsulin-diabetes-pharmacotherapy-1440.png",
+        "bank-noninsulin-diabetes-19-principle-1440.png",
+        "bank-noninsulin-diabetes-20-principle-1440.png",
+        "bank-noninsulin-diabetes-18-application-1440.png",
+        "bank-noninsulin-diabetes-19-case-1440.png",
+        "bank-noninsulin-diabetes-18-principle-1440.png",
+        "bank-noninsulin-diabetes-20-application-1440.png",
+        "bank-noninsulin-diabetes-20-case-1440.png",
+        "bank-noninsulin-diabetes-19-application-1440.png",
+        "bank-noninsulin-diabetes-18-safety-1440.png",
+        "bank-noninsulin-diabetes-19-safety-1440.png",
+        "bank-noninsulin-diabetes-20-safety-1440.png",
+        "bank-noninsulin-diabetes-18-case-1440.png",
+        "hero-noninsulin-diabetes-pharmacotherapy-390.png",
+        "body-other-noninsulin-agents-0-390.png",
+        "body-other-noninsulin-agents-1-390.png",
+        "body-other-noninsulin-agents-2-390.png",
+        "body-other-noninsulin-agents-3-390.png",
+        "body-other-noninsulin-agents-4-390.png",
+        "body-other-noninsulin-agents-5-390.png",
+        "body-other-noninsulin-agents-6-390.png",
+        "body-other-noninsulin-agents-7-390.png",
+        "body-other-noninsulin-agents-8-390.png",
+        "body-other-noninsulin-agents-9-390.png",
+        "body-other-noninsulin-agents-10-390.png",
+        "body-other-noninsulin-agents-11-390.png",
+        "body-other-noninsulin-agents-12-390.png",
+        "body-other-noninsulin-agents-13-390.png",
+        "body-other-noninsulin-agents-14-390.png",
+        "body-other-noninsulin-agents-15-390.png",
+        "body-other-noninsulin-agents-16-390.png",
+        "body-other-noninsulin-agents-17-390.png",
+        "body-other-noninsulin-agents-18-390.png",
+        "body-other-noninsulin-agents-19-390.png",
+        "body-other-noninsulin-agents-20-390.png",
+        "body-other-noninsulin-agents-21-390.png",
+        "body-other-noninsulin-agents-22-390.png",
+        "summary-other-noninsulin-agents-390.png",
+        "concepts-other-noninsulin-agents-390.png",
+        "keypoints-other-noninsulin-agents-390.png",
+        "application-other-noninsulin-agents-390.png",
+        "figure-other-noninsulin-agents-390.png",
+        "check-other-noninsulin-agents-390.png",
+        "references-noninsulin-diabetes-pharmacotherapy-390.png",
+        "bank-noninsulin-diabetes-19-principle-390.png",
+        "bank-noninsulin-diabetes-20-principle-390.png",
+        "bank-noninsulin-diabetes-18-application-390.png",
+        "bank-noninsulin-diabetes-19-case-390.png",
+        "bank-noninsulin-diabetes-18-principle-390.png",
+        "bank-noninsulin-diabetes-20-application-390.png",
+        "bank-noninsulin-diabetes-20-case-390.png",
+        "bank-noninsulin-diabetes-19-application-390.png",
+        "bank-noninsulin-diabetes-18-safety-390.png",
+        "bank-noninsulin-diabetes-19-safety-390.png",
+        "bank-noninsulin-diabetes-20-safety-390.png",
+        "bank-noninsulin-diabetes-18-case-390.png",
+        "native-figure-320.png",
+        "native-figure-640.png"
+      ],
+      "errors": []
+    },
+    "visualInspection": {
+      "status": "passed",
+      "inspectedAt": "2026-10-06T10:30:15.625798+00:00",
+      "method": "Actual original-detail visual inspection of all fifteen paired desktop/mobile boards and two native narrow/breakpoint figures. All twenty-three source boards and the additional miglitol page10 were also viewed.",
+      "boardsViewed": [
+        {
+          "file": "board-00.png",
+          "pairs": [
+            "pair-hero-noninsulin-diabetes-pharmacotherapy.png",
+            "pair-body-other-noninsulin-agents-0.png",
+            "pair-body-other-noninsulin-agents-1.png"
+          ],
+          "dimensions": [
+            1870,
+            2362
+          ]
+        },
+        {
+          "file": "board-01.png",
+          "pairs": [
+            "pair-body-other-noninsulin-agents-2.png",
+            "pair-body-other-noninsulin-agents-3.png",
+            "pair-body-other-noninsulin-agents-4.png"
+          ],
+          "dimensions": [
+            1312,
+            1717
+          ]
+        },
+        {
+          "file": "board-02.png",
+          "pairs": [
+            "pair-body-other-noninsulin-agents-5.png",
+            "pair-body-other-noninsulin-agents-6.png",
+            "pair-body-other-noninsulin-agents-7.png"
+          ],
+          "dimensions": [
+            1312,
+            1718
+          ]
+        },
+        {
+          "file": "board-03.png",
+          "pairs": [
+            "pair-body-other-noninsulin-agents-8.png",
+            "pair-body-other-noninsulin-agents-9.png",
+            "pair-body-other-noninsulin-agents-10.png"
+          ],
+          "dimensions": [
+            1312,
+            1581
+          ]
+        },
+        {
+          "file": "board-04.png",
+          "pairs": [
+            "pair-body-other-noninsulin-agents-11.png",
+            "pair-body-other-noninsulin-agents-12.png",
+            "pair-body-other-noninsulin-agents-13.png"
+          ],
+          "dimensions": [
+            1312,
+            1663
+          ]
+        },
+        {
+          "file": "board-05.png",
+          "pairs": [
+            "pair-body-other-noninsulin-agents-14.png",
+            "pair-body-other-noninsulin-agents-15.png",
+            "pair-body-other-noninsulin-agents-16.png"
+          ],
+          "dimensions": [
+            1312,
+            1554
+          ]
+        },
+        {
+          "file": "board-06.png",
+          "pairs": [
+            "pair-body-other-noninsulin-agents-17.png",
+            "pair-body-other-noninsulin-agents-18.png",
+            "pair-body-other-noninsulin-agents-19.png"
+          ],
+          "dimensions": [
+            1312,
+            1608
+          ]
+        },
+        {
+          "file": "board-07.png",
+          "pairs": [
+            "pair-body-other-noninsulin-agents-20.png",
+            "pair-body-other-noninsulin-agents-21.png",
+            "pair-body-other-noninsulin-agents-22.png"
+          ],
+          "dimensions": [
+            1312,
+            1773
+          ]
+        },
+        {
+          "file": "board-08.png",
+          "pairs": [
+            "pair-summary-other-noninsulin-agents.png",
+            "pair-concepts-other-noninsulin-agents.png",
+            "pair-keypoints-other-noninsulin-agents.png"
+          ],
+          "dimensions": [
+            1312,
+            1108
+          ]
+        },
+        {
+          "file": "board-09.png",
+          "pairs": [
+            "pair-application-other-noninsulin-agents.png",
+            "pair-figure-other-noninsulin-agents.png",
+            "pair-check-other-noninsulin-agents.png"
+          ],
+          "dimensions": [
+            1312,
+            1860
+          ]
+        },
+        {
+          "file": "board-10.png",
+          "pairs": [
+            "pair-references-noninsulin-diabetes-pharmacotherapy.png",
+            "pair-bank-noninsulin-diabetes-19-principle.png",
+            "pair-bank-noninsulin-diabetes-20-principle.png"
+          ],
+          "dimensions": [
+            1312,
+            5060
+          ]
+        },
+        {
+          "file": "board-11.png",
+          "pairs": [
+            "pair-bank-noninsulin-diabetes-18-application.png",
+            "pair-bank-noninsulin-diabetes-19-case.png",
+            "pair-bank-noninsulin-diabetes-18-principle.png"
+          ],
+          "dimensions": [
+            1312,
+            2308
+          ]
+        },
+        {
+          "file": "board-12.png",
+          "pairs": [
+            "pair-bank-noninsulin-diabetes-20-application.png",
+            "pair-bank-noninsulin-diabetes-20-case.png",
+            "pair-bank-noninsulin-diabetes-19-application.png"
+          ],
+          "dimensions": [
+            1312,
+            2353
+          ]
+        },
+        {
+          "file": "board-13.png",
+          "pairs": [
+            "pair-bank-noninsulin-diabetes-18-safety.png",
+            "pair-bank-noninsulin-diabetes-19-safety.png",
+            "pair-bank-noninsulin-diabetes-20-safety.png"
+          ],
+          "dimensions": [
+            1312,
+            2256
+          ]
+        },
+        {
+          "file": "board-14.png",
+          "pairs": [
+            "pair-bank-noninsulin-diabetes-18-case.png"
+          ],
+          "dimensions": [
+            1312,
+            821
+          ]
+        }
+      ],
+      "pairedDesktopMobileCapturesViewed": 43,
+      "browserScreenshotsCaptured": 88,
+      "nativeFigureWidthsViewed": [
+        320,
+        640
+      ],
+      "wholeTeachingBodiesVisuallyChecked": 23,
+      "wholeMetadataCheckFigureAndTwelveBankCasesVisuallyChecked": true,
+      "referencesVisuallyChecked": 46,
+      "findings": "Readable complete text, all choices and feedback, intact margins and fourteen-label mechanism summary; no clipping or horizontal overflow. Every bank case has desktop correct and mobile incorrect shuffled feedback.",
+      "runtimeFigureBoundsWidthsPassed": [
+        320,
+        390,
+        639,
+        640,
+        1440
+      ],
+      "viewedImageSha256": {
+        "board-00.png": "49c380791aceca4fc01be2f7adecb1ea861395dd7b355d180b744542fe71d788",
+        "board-01.png": "d01b329c0ea839bec0a6ccaa9bf173fd9de78fa74ba34f805ed06549bc371a2d",
+        "board-02.png": "9f519bcb2faa60233d05ce0c43438cda4817c33a8c628682ac539fb0582dcb2d",
+        "board-03.png": "2b97acc96f4fc4284e4699740131602b85a33f196a9b62087aa69abb3d9b0086",
+        "board-04.png": "44e6e7cb06b95d0e8c905195d11fb8de91488288ba4c82b5b41e50c351897f1e",
+        "board-05.png": "36a553bd87d4d74d2c4680fbdbfe65dc72728b65b3c3f7def960162ad824ce58",
+        "board-06.png": "552373a9722a971440a3ae5953bd9335cf4be4f0f58ba2b3da768166b40f5827",
+        "board-07.png": "a30eccb4448a6d0a26f6fd7afb7817b8978cb9fd2a16d3f2964bab956ca112fe",
+        "board-08.png": "467d9b256659169ab92146376fee8b87f0e3aeb7cb6c388fe7f80e859b277751",
+        "board-09.png": "706ef665e01529c08168d558eaafbc29f9cc707dd31d47791299ea7ceca008d7",
+        "board-10.png": "452be52a5f7a86cb549b630f8f358d796d6921632cf02678cf06509961582050",
+        "board-11.png": "f83142b44b3cee952c3c95aae66b012a74b2a90164705be73ed456015b865ddc",
+        "board-12.png": "22a85d6a0f92d80416d7bf05edb8a85f7ab15636ea6d476d89416dadbce0e632",
+        "board-13.png": "883f6ce3ed551210ff6c42f70c24356e2d205da813db114843767803bc50be1b",
+        "board-14.png": "3e8ed1a9189da44b302f8af07d63c23139a43be8d59b5dc112fd5339f0b9d4de",
+        "native-figure-320.png": "c22fff7103fa08c28a7356e17af29c530bb24db92612a44d5b9e718985978589",
+        "native-figure-640.png": "5b33216654db954c61e08cc92b0f66fec1ffe49702f55dd335884c99605e58e3"
+      }
+    },
+    "limits": "Isolated unauthenticated production preview. Complete lesson, all four embedded-check choices and twelve bank cases in correct/incorrect shuffled attempts at 1440/390; figure bounds at five widths. No associated cumulative item; all 1180 cumulative objects unchanged. Two lessons, twenty-seven questions, working draft variants, parent chapters and full goal remain open."
+  },
+  "remainingReview": {
+    "nextAction": "Continue noninsulin-diabetes-pharmacotherapy in audit-branch lesson order at cardiorenal-weight-integration, including every anchored whole question and derived cumulative item. Read the exact book and approved primary sources. Preserve all eight verified lessons and ninety-three verified bank question IDs; two lessons and twenty-seven questions remain open. Preserve the separate working draft of eleven lessons and ninety-two authored questions without inferring certification. Whole MASLD and ALD parents are verified; rifaximin HE is verified, with nine other lessons/147 questions reserved for the Chapter 22 parent audit. Preserve the 245-match contextual inventory, four HIV PI choices, prior ICU withdrawal and all feeding dependencies. Return to Chapter 11 printed 161/PDF169 after broader feeding dependencies. Chapters 11/19/22/44 and Chapter 1 printed 7/PDF19 checklist 15 remain open; the full 82-chapter goal continues.",
+    "wholeParentModulesPending": true,
+    "remainingNoninsulinAuditBranchLessons": 2,
+    "remainingNoninsulinBankQuestions": 27,
+    "workingDraftVariantsRemainReviewing": true
+  },
+  "release": {
+    "branch": "audit/rxprep-content-2026-09-24",
+    "commit": null,
+    "push": "pending",
+    "receipt": "enteral-nutrition-broader-other-noninsulin-release.json",
+    "mainMerge": "not performed",
+    "production": "not verified"
+  },
+  "wholeGoalComplete": false,
+  "privateSourceFilesInGit": false
+}

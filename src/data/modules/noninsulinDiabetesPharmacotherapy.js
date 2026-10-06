@@ -970,3 +970,156 @@ noninsulinDiabetesPharmacotherapyModule.references.push(...[
     "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4887756/"
   }
 ]);
+
+
+// Whole other-agent lesson reviewed against the book and primary labels.
+Object.assign(noninsulinDiabetesPharmacotherapyModule.submodules.find(item => item.slug === "other-noninsulin-agents"), {
+  "slug": "other-noninsulin-agents",
+  "title": "Alpha-Glucosidase Inhibitors, Pramlintide, and Other Agents",
+  "visual": "noninsulin-other",
+  "summary": "Acarbose, miglitol, pramlintide, colesevelam and bromocriptine-QR have selected roles. Exact meal timing, insulin adjustment, triglyceride limits and product-specific interaction rules determine safe use.",
+  "concepts": [
+    "First-bite alpha-glucosidase inhibition and glucose rescue",
+    "Pramlintide selection, titration and mealtime insulin reduction",
+    "Colesevelam dose, triglyceride limits and bowel precautions",
+    "Direction-specific oral drug and vitamin spacing",
+    "Cycloset morning dosing, orthostasis and dopamine interactions"
+  ],
+  "application": "Match the agent to a defined treatment goal and an achievable administration plan. Check meals, kidney function and gastrointestinal disease for alpha-glucosidase inhibitors; insulin use and hypoglycemia awareness for pramlintide; triglycerides, bowel history and other oral medicines for colesevelam; and waking schedule, orthostasis and interacting medicines for Cycloset. Reassess glucose response, tolerability and burden rather than retaining a modest-effect medicine indefinitely.",
+  "lesson": [
+    {
+      "heading": "Delay carbohydrate absorption",
+      "body": "Acarbose and miglitol inhibit intestinal alpha-glucosidases, delaying carbohydrate digestion and reducing the rise in glucose after meals. They do not directly stimulate insulin release. Take each dose with the first bite of each main meal, rather than at bedtime or well after eating. Flatulence, diarrhea and abdominal discomfort reflect delivery of undigested carbohydrate to the lower intestine and often limit tolerability. These agents have modest glucose efficacy and are not routine substitutes for a regimen selected to address major heart, kidney or weight goals. Review whether meal timing and adverse effects make the treatment practical."
+    },
+    {
+      "heading": "Distinguish acarbose and miglitol dose ceilings",
+      "body": "Both labeled regimens start at 25 mg three times daily with the first bite; gradual introduction from 25 mg once daily can improve tolerability before reaching three daily doses. Acarbose can be adjusted at 4-8 week intervals according to response and tolerability. Its maximum is 50 mg three times daily at a body weight of 60 kg or less, and 100 mg three times daily above 60 kg. Miglitol has a usual maintenance dose of 50 mg three times daily after 4-8 weeks; assess response after about three months and consider 100 mg three times daily if needed and tolerated. Miglitol does not have acarbose’s weight-based ceiling. Do not confuse milligrams per dose with the daily total."
+    },
+    {
+      "heading": "Screen the bowel and use the exact renal restriction",
+      "body": "Both alpha-glucosidase inhibitors are contraindicated in diabetic ketoacidosis, hypersensitivity to the product, inflammatory bowel disease, colonic ulceration, partial intestinal obstruction or predisposition to obstruction, and chronic intestinal disorders that substantially impair digestion or absorption or worsen with increased gas. Acarbose also lists cirrhosis as a contraindication. Acarbose is not recommended when serum creatinine is above 2 mg/dL because long-term studies are lacking. Miglitol is renally eliminated and is not recommended at creatinine clearance below 25 mL/min; its label also discourages use with serum creatinine above 2 mg/dL. These measures and units are different; do not convert one threshold into the other without a patient-specific assessment."
+    },
+    {
+      "heading": "Monitor acarbose’s liver and laboratory effects",
+      "body": "For acarbose, check serum transaminases every three months during the first year and periodically thereafter. Persistent elevations can require dose reduction or withdrawal. Do not copy this product’s liver-testing instruction to miglitol as a universal class schedule. Acarbose’s cited label also warns that the 1,5-anhydroglucitol, or 1,5-AG, assay is unreliable for assessing glycemic control during treatment; use another monitoring method. Glucose trends and A1C help assess response, while symptoms and organ function guide safety review. A glucose improvement does not cancel a liver or bowel warning."
+    },
+    {
+      "heading": "Treat low glucose according to swallowing ability",
+      "body": "Neither drug usually causes hypoglycemia alone, but concomitant insulin or a sulfonylurea can. For an alert patient who can swallow, use glucose tablets or gel for rapid oral correction. Sucrose requires hydrolysis that the inhibitor delays and is unsuitable for prompt treatment; pure glucose does not require that step. The book’s rule of 15 uses 15-20 g of carbohydrate, a glucose recheck after 15 minutes and repeat treatment if the low persists. In this setting choose glucose. Once glucose normalizes, follow with a small meal or snack. If unconscious or unable to swallow safely, do not give oral carbohydrate; use the prescribed rescue plan, glucagon or IV dextrose as appropriate, and obtain urgent help."
+    },
+    {
+      "heading": "Review intestinal interactions and serious symptoms",
+      "body": "Intestinal adsorbents such as charcoal and carbohydrate-splitting enzyme preparations such as amylase or pancreatin can reduce the effect of acarbose and miglitol and should not be used concomitantly. Acarbose can alter digoxin exposure, so review whether monitoring or a dose adjustment is needed rather than assuming no interaction because its main action is intestinal. Gas or loose stools can be expected, but rectal bleeding, mucus discharge or significant abdominal symptoms need assessment. Both labels report rare pneumatosis cystoides intestinalis; if suspected, discontinue the inhibitor and obtain appropriate diagnostic evaluation. Do not normalize severe or unusual gastrointestinal symptoms as routine intolerance."
+    },
+    {
+      "heading": "Replace the amylin signal",
+      "body": "Pramlintide is an amylin analog used alongside mealtime insulin in selected patients with type 1 or type 2 diabetes whose control remains inadequate despite optimized insulin management. It slows gastric emptying, suppresses the postmeal glucagon rise and promotes satiety, reducing food intake. These are distinct amylin effects; insulin is still needed. Nausea, vomiting, reduced appetite and weight loss can occur. Because pramlintide is added to mealtime insulin, severe hypoglycemia is a major risk, particularly in type 1 diabetes. It commonly occurs within the first three hours after a dose and can cause serious injury during driving or other hazardous activities."
+    },
+    {
+      "heading": "Select a patient who can manage the added demands",
+      "body": "Pramlintide is contraindicated in confirmed gastroparesis, hypoglycemia unawareness or a serious hypersensitivity reaction to the product. Its label says not to consider patients with poor adherence to insulin or glucose monitoring, A1C above 9%, recurrent severe hypoglycemia requiring assistance during the past six months, a need for medicines that stimulate gastrointestinal motility, or pediatric patients. Review baseline A1C, glucose records, prior lows, insulin regimen and body weight with a clinician skilled in insulin therapy. Visual or dexterity impairment requires caution and practical assessment of injection technique. An added injection and monitoring schedule must be achievable."
+    },
+    {
+      "heading": "Reduce mealtime insulin before the first pramlintide dose",
+      "body": "At initiation, reduce mealtime insulin doses, including premixed insulin regimens, by 50% under the treating clinician’s plan. The instruction targets mealtime insulin; it does not automatically halve every basal insulin dose. For a prescribed 12-unit meal dose, a 50% reduction leaves 6 units. Frequent glucose checks before and after meals and at bedtime support subsequent individualized insulin adjustment. Increasing mild or moderate lows can signal greater severe-hypoglycemia risk. Starting pramlintide while leaving the full mealtime dose unchanged is unsafe. After an interruption for illness, surgery or another reason, follow the same initiation protocol when restarting rather than simply resuming the former regimen."
+    },
+    {
+      "heading": "Keep the type 1 and type 2 titration schedules separate",
+      "body": "For type 2 diabetes with mealtime insulin, start pramlintide at 60 mcg before each major meal and increase to 120 mcg only after at least three days without clinically significant nausea. Persistent significant nausea at 120 mcg requires reduction to 60 mcg. For type 1 diabetes, start at 15 mcg and increase stepwise to 30, 45 or 60 mcg, waiting at least three days without clinically significant nausea before each increase. If significant nausea persists at 45 or 60 mcg, reduce to 30 mcg; if 30 mcg is not tolerated, consider stopping. These are micrograms per meal, not milligrams or an insulin-unit conversion."
+    },
+    {
+      "heading": "Link pramlintide to an actual major meal",
+      "body": "Inject pramlintide subcutaneously immediately before a major meal containing at least 250 kcal or at least 30 g of carbohydrate. If the meal is skipped, skip that dose. If a dose is missed, wait for the next scheduled meal and give the usual amount; do not double it. Use the abdomen or thigh, rotate sites and keep the site more than two inches from the insulin injection site. Arm administration is not recommended because absorption is variable. Give insulin and pramlintide as separate injections and never mix them. Never share a SymlinPen, even after changing its needle."
+    },
+    {
+      "heading": "Plan pramlintide’s oral medicine timing and stop rules",
+      "body": "Delayed gastric emptying can delay absorption of oral medicines. When rapid onset or a threshold concentration is critical, give the oral medicine at least one hour before or two hours after pramlintide; the label includes analgesics, antibiotics and oral contraceptives as examples. Medicines that alter gastrointestinal motility or slow intestinal nutrient absorption, including alpha-glucosidase inhibitors, are not recommended with pramlintide. Stop therapy for recurrent unexplained hypoglycemia requiring medical assistance, persistent clinically significant nausea, or failure to follow glucose monitoring, insulin adjustment or scheduled clinical follow-up. More nausea and less food intake require review of insulin needs rather than automatic escalation."
+    },
+    {
+      "heading": "Store and inspect the pramlintide pen",
+      "body": "Keep unused SymlinPens refrigerated at 2-8°C, protected from light, and do not freeze or use a previously frozen pen. After first use, refrigerate or keep at no more than 30°C and use within 30 days, whether refrigerated or not. Let the dose reach room temperature before injection to reduce local discomfort. The solution should be clear and colorless; inspect for particles or discoloration and do not use a cloudy solution. Follow the pen’s patient instructions and use a new needle for each injection. Storage and handling do not replace the separate-injection, meal and glucose-monitoring rules."
+    },
+    {
+      "heading": "Use colesevelam for a narrow combined goal",
+      "body": "Colesevelam is a nonabsorbed bile acid-binding polymer that lowers LDL cholesterol and can modestly improve glucose control in adults with type 2 diabetes. Binding bile acids promotes hepatic LDL receptor activity and LDL clearance; the label states that its glucose-lowering mechanism is unknown. Do not treat the lipid mechanism as a fully established explanation of the glucose effect. It is an adjunct to diet and exercise and is not treatment for type 1 diabetes or diabetic ketoacidosis. Review whether its added benefit justifies constipation, pill burden and oral medicine timing. It does not replace a therapy selected for greater glucose efficacy or established cardiorenal benefit."
+    },
+    {
+      "heading": "Use the colesevelam formulation correctly",
+      "body": "The adult dose is 3.75 g daily: six 625 mg tablets once daily or three tablets twice daily, with a meal and liquid. Six times 625 mg is 3,750 mg, or 3.75 g. For oral suspension, use one 3.75 g packet daily. Empty it into a cup, add one cup or eight ounces of water, fruit juice or a diet soft drink, stir and take with a meal; do not swallow the powder dry. The suspension is an option when tablet swallowing is difficult. Each 3.75 g packet contains 27 mg of phenylalanine, which must be included in the combined intake assessment for a patient with phenylketonuria."
+    },
+    {
+      "heading": "Check triglycerides before and during colesevelam",
+      "body": "Obtain lipid values, including triglycerides, before starting and periodically thereafter. Colesevelam is contraindicated when triglycerides are above 500 mg/dL or there is a history of triglyceride-induced pancreatitis. Values above 300 mg/dL can rise further and may require additional monitoring; this warning is different from the above-500 contraindication. Stop if triglycerides exceed 500 mg/dL during treatment. Severe abdominal pain, with or without nausea or vomiting, can indicate pancreatitis and requires discontinuation and prompt assessment. LDL lowering is not evidence that triglycerides are improving."
+    },
+    {
+      "heading": "Review bowel history and swallowing before colesevelam",
+      "body": "A history of bowel obstruction is a contraindication. Colesevelam is not recommended in gastroparesis, other gastrointestinal motility disorders, or after major gastrointestinal surgery when bowel obstruction is a risk. Constipation is common, while large tablets can cause dysphagia or esophageal obstruction. Severe constipation or severe abdominal pain requires stopping the medicine and prompt medical assessment. Switching to suspension can address difficulty swallowing tablets but does not remove the intestinal obstruction restriction. Ask about existing bowel symptoms before choosing a medicine for a modest glucose effect."
+    },
+    {
+      "heading": "Give affected oral medicines before colesevelam",
+      "body": "Colesevelam can reduce absorption of some medicines and fat-soluble vitamins A, D, E and K. Give vitamin supplements and known interacting drugs at least four hours before it. The label specifies this timing for phenytoin, thyroid replacement, olmesartan, certain oral contraceptives and sulfonylureas; consider the same precaution for untested medicines with a narrow therapeutic index. Monitor drug levels when appropriate. Warfarin requires frequent INR checks during initiation and periodic checks thereafter. Metformin extended release is a separate case: colesevelam can increase its exposure, so monitor glycemic control. Do not assume every interaction lowers exposure or that four hours after is the stated instruction. Statins can be taken at the same time or separately."
+    },
+    {
+      "heading": "Fit bromocriptine-QR to its schedule and risks",
+      "body": "Cycloset is the quick-release 0.8 mg bromocriptine tablet used as an adjunct to diet and exercise in adults with type 2 diabetes. It is a dopamine D2 agonist; timed morning dosing is associated with improved insulin sensitivity and glucose disposal without raising insulin levels. Glucose lowering is modest. The formulation and diabetes schedule should not be copied from other bromocriptine products. It is not used for type 1 diabetes or diabetic ketoacidosis; efficacy with insulin has not been confirmed and data with TZDs are limited. Nausea, dizziness and treatment burden can limit its usefulness."
+    },
+    {
+      "heading": "Take Cycloset within two hours of morning waking",
+      "body": "Take Cycloset once daily with food within two hours after waking in the morning. Start at one 0.8 mg tablet daily and increase by one tablet each week toward a tolerated dose of 1.6-4.8 mg daily, with a maximum of six tablets. Six times 0.8 mg is 4.8 mg; the maximum is not a required target. If a morning dose is missed, take the usual dose the following morning and do not double it. Food can reduce gastrointestinal intolerance. A flexible waking schedule still needs a clear plan for the specified morning interval."
+    },
+    {
+      "heading": "Screen Cycloset’s contraindications and orthostasis",
+      "body": "Cycloset is contraindicated with hypersensitivity to bromocriptine, ergot-related drugs or its ingredients, in syncopal migraine, postpartum patients and lactating patients. Hypotension, orthostatic hypotension and syncope can occur, especially at initiation and dose increases. Assess orthostatic vital signs before treatment and periodically afterward, and use caution with antihypertensives. Teach slow position changes and avoidance of circumstances where fainting could cause injury. Somnolence requires avoiding driving or heavy machinery while affected. Postpartum restrictions extend beyond the separate lactation restriction; Cycloset is not a medicine for suppressing postpartum milk production."
+    },
+    {
+      "heading": "Distinguish dopamine antagonists from other agonists",
+      "body": "Cycloset is not recommended in severe psychotic disorders because a dopamine agonist can worsen the condition or impair treatment. Dopamine antagonists such as metoclopramide or certain antipsychotics can reduce Cycloset’s effectiveness, and it can reduce theirs; concomitant use is not recommended. Other dopamine agonists are also not recommended with Cycloset, for the separate reason that combination safety and effectiveness are unknown. These two drug groups are not interchangeable. Ask the patient or caregiver about new compulsive gambling, spending or sexual urges; new uncontrolled urges warrant review and consideration of dose reduction or discontinuation."
+    },
+    {
+      "heading": "Apply Cycloset’s exact interaction limits",
+      "body": "With a moderate CYP3A4 inhibitor such as erythromycin, limit Cycloset to 1.6 mg once daily. Avoid strong CYP3A4 inhibitors and allow an adequate washout before initiation; CYP3A4 inducers can reduce exposure and also require review. Other ergot medicines within six hours of Cycloset are not recommended. The label also does not recommend concomitant sympathomimetics for more than ten days and advises avoiding selective 5-HT1B agonists such as sumatriptan. These precautions need a complete medicine list and an alternative plan when appropriate. Simply spacing all medicines or assuming the usual 4.8 mg ceiling always applies misses product-specific risks."
+    }
+  ],
+  "keyPoints": [
+    "Acarbose and miglitol start with the first bite of each main meal; use oral glucose for a low only when the patient can safely swallow.",
+    "Pramlintide initiation requires a 50% reduction in mealtime insulin, separate injections and frequent glucose monitoring.",
+    "Pramlintide is contraindicated in confirmed gastroparesis and hypoglycemia unawareness.",
+    "Colesevelam is contraindicated with triglycerides above 500 mg/dL, prior triglyceride-induced pancreatitis or a history of bowel obstruction.",
+    "Give interacting oral medicines and vitamin supplements at least four hours before colesevelam.",
+    "Cycloset is taken with food within two hours of morning waking; review orthostasis, dopamine medicines and CYP3A4 interactions."
+  ],
+  "check": {
+    "question": "An alert patient who can swallow develops mild hypoglycemia while taking acarbose with insulin. Which immediate oral treatment is appropriate?",
+    "choices": [
+      "Glucose tablets or gel, with a glucose recheck after 15 minutes.",
+      "Table sugar alone, because sucrose does not require digestion.",
+      "An additional acarbose dose to raise glucose immediately.",
+      "Wait untreated for the next meal because acarbose prevents insulin-related lows."
+    ],
+    "answer": 0,
+    "rationale": "Use glucose for prompt oral correction when the patient can swallow safely: acarbose delays sucrose breakdown but not direct glucose absorption. Recheck after 15 minutes and repeat glucose if the low persists. Acarbose does not prevent insulin-associated hypoglycemia or treat a low. Unsafe swallowing requires a rescue approach rather than oral carbohydrate.",
+    "reviewHref": "#other-noninsulin-agents"
+  }
+});
+noninsulinDiabetesPharmacotherapyModule.references.push(...[
+  {
+    "label": "DailyMed acarbose prescribing information (Avet/Heritage, June 2026)",
+    "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=29939129-7d09-4c22-bf3e-491a8a97f4c4"
+  },
+  {
+    "label": "DailyMed miglitol prescribing information (Westminster/Orient, revised October 2020)",
+    "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b8da2015-d254-2425-e053-2995a90acf0e"
+  },
+  {
+    "label": "DailyMed Symlin prescribing information and patient guide (AstraZeneca, December 2019)",
+    "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4aea30ff-eb0d-45c1-b114-3127966328ff"
+  },
+  {
+    "label": "DailyMed Welchol prescribing information (Cosette, revised January 2024)",
+    "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=89cbd0a3-2d1b-41db-8c97-35ec67b7b09f"
+  },
+  {
+    "label": "DailyMed Cycloset prescribing information (Avvisto/VeroScience, revised August 2020)",
+    "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e42ba916-16b9-4d1c-8d09-9d2fbb1b6c20"
+  }
+]);

@@ -1219,3 +1219,121 @@ const verifiedTzdQuestions = {
 for (const item of noninsulinDiabetesPharmacotherapyQuestionBank) {
   if (verifiedTzdQuestions[item.id]) Object.assign(item, verifiedTzdQuestions[item.id]);
 }
+
+
+// Focused other-agent questions preserve IDs, keys, difficulty and anchors.
+const verifiedOtherNoninsulinQuestions = {
+  "noninsulin-diabetes-18-principle": {
+    "question": "Which administration instruction matches acarbose and miglitol?",
+    "choices": [
+      "Take each dose with the first bite of each main meal to delay intestinal carbohydrate digestion.",
+      "Take a single bedtime dose because they act chiefly by releasing insulin overnight.",
+      "Take each dose two hours after eating so carbohydrate digestion can finish first.",
+      "Take extra doses between meals to reverse an existing low glucose value."
+    ],
+    "rationale": "These intestinal alpha-glucosidase inhibitors delay carbohydrate digestion and work with the first bite of each main meal. They are not overnight insulin secretagogues or hypoglycemia rescue medicines. Delaying the dose until digestion is complete does not follow their labeled meal timing."
+  },
+  "noninsulin-diabetes-18-safety": {
+    "question": "Which proposed acarbose regimen exceeds its labeled maximum for an adult weighing exactly 60 kg?",
+    "choices": [
+      "100 mg three times daily with meals.",
+      "25 mg three times daily with meals as the starting regimen.",
+      "50 mg three times daily with meals after appropriate titration.",
+      "A gradual introduction from 25 mg once daily toward the prescribed meal regimen."
+    ],
+    "rationale": "At 60 kg or less, acarbose’s maximum is 50 mg three times daily. The 100 mg three-times-daily ceiling applies above 60 kg. A 25 mg starting dose or gradual introduction is compatible with its dosing instructions, and 50 mg is within the lower-weight ceiling. Miglitol’s different ceiling should not be substituted."
+  },
+  "noninsulin-diabetes-18-case": {
+    "question": "An adult taking acarbose and insulin becomes unconscious during a low glucose episode. Glucose gel and a prescribed glucagon rescue device are available. Which response is best?",
+    "choices": [
+      "Do not give oral gel; use the glucagon rescue plan and obtain urgent medical help.",
+      "Put glucose gel in the mouth because acarbose makes every oral glucose dose safe during unconsciousness.",
+      "Use table sugar orally because delayed sucrose digestion prevents choking.",
+      "Give another acarbose dose and wait until the patient wakes before arranging help."
+    ],
+    "rationale": "Unconsciousness makes oral carbohydrate unsafe because of choking or aspiration risk. Use the prescribed glucagon rescue plan and urgent help; IV dextrose is another treatment when appropriate access and personnel are available. Acarbose’s glucose-versus-sucrose distinction applies to safe oral treatment, not permission to give gel to an unconscious patient."
+  },
+  "noninsulin-diabetes-19-principle": {
+    "question": "Which mechanism and insulin relationship best describe pramlintide?",
+    "choices": [
+      "An amylin analog that slows gastric emptying, suppresses postmeal glucagon and promotes satiety while mealtime insulin remains necessary.",
+      "A replacement insulin that permits stopping mealtime insulin immediately.",
+      "An intestinal alpha-glucosidase inhibitor that directly breaks sucrose into glucose.",
+      "A dopamine antagonist that increases gastric emptying to match insulin absorption."
+    ],
+    "rationale": "Pramlintide provides amylin effects and is used alongside mealtime insulin in selected patients. It is not insulin replacement, an alpha-glucosidase inhibitor or a dopamine antagonist. The combination creates severe hypoglycemia risk, requiring the labeled insulin reduction, careful selection and frequent monitoring."
+  },
+  "noninsulin-diabetes-19-application": {
+    "question": "A selected adult with type 1 diabetes is starting pramlintide. Which initial pramlintide regimen follows its label?",
+    "choices": [
+      "15 mcg immediately before each major meal, with the planned 50% mealtime insulin reduction and frequent glucose checks.",
+      "60 mcg immediately before each major meal because the type 2 starting dose applies to type 1 diabetes.",
+      "15 mg before each meal, interpreting micrograms as milligrams.",
+      "120 mcg before each meal from the first day to bypass nausea-related titration."
+    ],
+    "rationale": "For type 1 diabetes, pramlintide starts at 15 mcg before major meals and is titrated through 30, 45 and 60 mcg after at least three days without clinically significant nausea at each step. The 60 mcg starting dose is for type 2 diabetes with mealtime insulin; neither milligram dosing nor an immediate 120 mcg dose fits the type 1 regimen."
+  },
+  "noninsulin-diabetes-19-safety": {
+    "question": "Which finding is a labeled contraindication to pramlintide?",
+    "choices": [
+      "Confirmed gastroparesis.",
+      "Ability to recognize and promptly treat a low glucose value.",
+      "Reliable adherence to insulin adjustments and glucose monitoring.",
+      "Inadequate control despite optimized mealtime insulin in an otherwise appropriate adult."
+    ],
+    "rationale": "Confirmed gastroparesis is a contraindication because pramlintide slows gastric emptying. Hypoglycemia unawareness is another contraindication; recognizing lows is the opposite finding. Reliable monitoring and inadequate control despite optimized insulin support consideration in a carefully selected patient but do not override contraindications."
+  },
+  "noninsulin-diabetes-19-case": {
+    "question": "An adult’s prescribed meal insulin dose is 12 units before adding pramlintide. What dose follows the initial labeled 50% mealtime reduction, before subsequent individualized adjustment?",
+    "choices": [
+      "6 units, with close glucose monitoring and clinician-guided retitration.",
+      "12 units, because separate injections eliminate hypoglycemia risk.",
+      "18 units, because delaying gastric emptying requires more insulin at initiation.",
+      "0 units, because pramlintide completely replaces the insulin requirement."
+    ],
+    "rationale": "Half of 12 units is 6 units. The initial reduction limits severe insulin-associated hypoglycemia risk; later adjustments depend on glucose response and tolerability. Separate injections are required but do not remove the risk. Pramlintide neither calls for an initial increase nor replaces all mealtime insulin."
+  },
+  "noninsulin-diabetes-20-principle": {
+    "question": "Which description correctly distinguishes colesevelam from bromocriptine-QR?",
+    "choices": [
+      "Colesevelam binds intestinal bile acids and lowers LDL; Cycloset is a dopamine D2 agonist given with a specific morning schedule.",
+      "Both directly release insulin through the sulfonylurea receptor and require identical meal-linked dosing.",
+      "Colesevelam is a dopamine antagonist, while Cycloset is an intestinal bile acid binder.",
+      "Both have a fully established identical glucose mechanism and are treatments for diabetic ketoacidosis."
+    ],
+    "rationale": "Colesevelam is a nonabsorbed bile acid binder with LDL and modest glucose effects; its glycemic mechanism is unknown in the label. Cycloset is a dopamine D2 agonist used within two hours of morning waking. They are not sulfonylureas, their mechanisms are not interchangeable, and neither treats diabetic ketoacidosis."
+  },
+  "noninsulin-diabetes-20-application": {
+    "question": "Which administration instruction follows the Cycloset label?",
+    "choices": [
+      "Take the once-daily dose with food within two hours after waking in the morning.",
+      "Take the dose without food at bedtime, regardless of waking time.",
+      "Divide the full dose before every meal using other bromocriptine products’ schedules.",
+      "Double tomorrow’s morning dose if today’s morning dose was missed."
+    ],
+    "rationale": "Cycloset is taken once daily with food within two hours of morning waking. Food may reduce gastrointestinal intolerance. Its quick-release diabetes formulation has its own schedule. If a morning dose is missed, take the usual dose the following morning; do not double it."
+  },
+  "noninsulin-diabetes-20-safety": {
+    "question": "Which proposed colesevelam initiation violates its labeled triglyceride contraindication?",
+    "choices": [
+      "Starting it when fasting triglycerides are 550 mg/dL.",
+      "Obtaining baseline triglycerides before prescribing it.",
+      "Arranging additional triglyceride monitoring when the baseline is 350 mg/dL.",
+      "Giving an interacting thyroid medicine at least four hours before it."
+    ],
+    "rationale": "Colesevelam is contraindicated above 500 mg/dL because it can increase triglycerides and pancreatitis risk. Values above 300 mg/dL can require additional monitoring, which is a different warning from the above-500 restriction. Baseline testing and spacing an interacting thyroid medicine before the dose are appropriate actions."
+  },
+  "noninsulin-diabetes-20-case": {
+    "question": "An adult with type 2 diabetes, triglycerides of 560 mg/dL and chronic constipation requests colesevelam for a modest A1C reduction. Which response is best?",
+    "choices": [
+      "Choose another strategy because the triglyceride contraindication and bowel burden outweigh this proposed use.",
+      "Start the full tablet dose because LDL lowering guarantees triglycerides will fall.",
+      "Use the oral suspension because changing formulation removes the triglyceride restriction.",
+      "Separate other medicines by four hours and disregard the triglyceride value."
+    ],
+    "rationale": "Triglycerides above 500 mg/dL contraindicate colesevelam; chronic constipation adds gastrointestinal burden. LDL lowering does not guarantee triglyceride lowering. Suspension may help tablet swallowing but does not remove the triglyceride restriction, and medicine spacing addresses a different risk."
+  }
+};
+for (const item of noninsulinDiabetesPharmacotherapyQuestionBank) {
+  if (verifiedOtherNoninsulinQuestions[item.id]) Object.assign(item, verifiedOtherNoninsulinQuestions[item.id]);
+}
