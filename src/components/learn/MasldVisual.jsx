@@ -236,6 +236,33 @@ export default function MasldVisual({type}){
   ]
 };
   if (key === "resmetirom") return <figure className="chol-visual masld-visual" aria-label={resmetiromView.heading}><figcaption><span>{resmetiromView.eyebrow}</span><strong>{resmetiromView.heading}</strong></figcaption><div className="chol-visual__grid">{resmetiromView.nodes.map(([verb,focus,detail],index)=><div key={verb}><span>{String(index+1).padStart(2,"0")}</span><strong>{verb}</strong><em style={{fontSize:"0.875rem"}}>{focus}</em><p style={{fontSize:"0.875rem"}}>{detail}</p></div>)}</div></figure>;
+  const semaglutideView = {
+  "eyebrow": "Semaglutide for MASH",
+  "heading": "Match the product, then plan the course",
+  "nodes": [
+    [
+      "Confirm",
+      "Adult noncirrhotic F2-F3 MASH",
+      "Use the MASH-specific injection regimen."
+    ],
+    [
+      "Titrate",
+      "0.25 to 2.4 mg weekly",
+      "Escalate in four-week steps as tolerated."
+    ],
+    [
+      "Counsel",
+      "Device, storage, and missed doses",
+      "Restart lower after two missed injections."
+    ],
+    [
+      "Monitor",
+      "Symptoms and treatment response",
+      "Assess safety; one ALT does not establish cure."
+    ]
+  ]
+};
+  if (key === "semaglutide") return <figure className="chol-visual masld-visual" aria-label={semaglutideView.heading}><figcaption><span>{semaglutideView.eyebrow}</span><strong>{semaglutideView.heading}</strong></figcaption><div className="chol-visual__grid">{semaglutideView.nodes.map(([verb,focus,detail],index)=><div key={verb}><span>{String(index+1).padStart(2,"0")}</span><strong>{verb}</strong><em style={{fontSize:"0.875rem"}}>{focus}</em><p style={{fontSize:"0.875rem"}}>{detail}</p></div>)}</div></figure>;
   const labels=views[key]||views["integrated-case"];
   return <figure className="chol-visual masld-visual" aria-label={`MASLD visual: ${key.replaceAll("-"," ")}`}>
     <div className="chol-visual__copy"><span>Metabolic liver disease</span><h3>{key.replaceAll("-"," ")}</h3><p>Connect metabolic load, liver injury, fibrosis risk, and treatment as one changing trajectory.</p></div>

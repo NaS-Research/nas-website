@@ -876,3 +876,131 @@ const verifiedMasldResmetiromQuestions = {
 for (const item of metabolicDysfunctionAssociatedSteatoticLiverDiseaseQuestionBank) {
   if (verifiedMasldResmetiromQuestions[item.id]) Object.assign(item, verifiedMasldResmetiromQuestions[item.id]);
 }
+
+
+// Distinct whole semaglutide cases preserve stable IDs and review links.
+const verifiedMasldSemaglutideQuestions = {
+  "masld-081": {
+    "question": "Which adult meets the MASH-specific Wegovy injection indication?",
+    "choices": [
+      "Noncirrhotic MASH with fibrosis consistent with F2-F3, with diet and increased activity.",
+      "Obesity alone without establishing MASH or qualifying fibrosis.",
+      "F4 MASH cirrhosis solely because no symptoms are present.",
+      "Any abnormal ALT without a defined liver diagnosis."
+    ],
+    "rationale": "The MASH label requires an adult noncirrhotic F2-F3 population. Obesity, symptoms, or ALT alone do not establish that population."
+  },
+  "masld-082": {
+    "question": "A patient asks whether Wegovy tablets or 7.2 mg injections are established MASH regimens. Which answer matches the current label?",
+    "choices": [
+      "Their safety and effectiveness for MASH are not established; use the MASH-specific injection regimen.",
+      "Every Wegovy formulation and dose automatically shares all indications.",
+      "The 25 mg tablet is the required MASH maintenance regimen.",
+      "7.2 mg weekly is the standard MASH maintenance dose."
+    ],
+    "rationale": "MASH maintenance is 2.4 mg injection weekly, with 1.7 mg if not tolerated. The tablet indications and adult 7.2 mg weight-reduction pathway do not establish MASH use."
+  },
+  "masld-083": {
+    "question": "Which mechanism statement best describes semaglutide in MASH teaching?",
+    "choices": [
+      "It activates GLP-1 receptors, while the precise human MASH mechanism remains incompletely understood.",
+      "It is a THR-beta partial agonist identical to resmetirom.",
+      "Its direct antifibrotic mechanism is fully established in every human patient.",
+      "It permanently blocks all insulin secretion."
+    ],
+    "rationale": "Semaglutide is a GLP-1 receptor agonist with appetite and glucose-dependent insulin/glucagon effects. The label qualifies its MASH mechanism rather than claiming a fully established direct antifibrotic pathway."
+  },
+  "masld-084": {
+    "question": "What does Wegovy’s accelerated MASH approval establish?",
+    "choices": [
+      "A defined approved indication based on MASH and fibrosis improvement, with clinical benefit subject to confirmation.",
+      "Guaranteed cure for every treated patient.",
+      "Proven prevention of every future liver complication from one improved ALT.",
+      "Absence of any approved MASH indication."
+    ],
+    "rationale": "Accelerated approval supports the specified indication. Histologic improvement is distinct from guaranteed individual response, cure, or confirmed long-term clinical benefit."
+  },
+  "masld-085": {
+    "question": "An eligible patient tolerates every Wegovy escalation step. What injection dose applies during week 10?",
+    "choices": [
+      "1 mg subcutaneously once weekly.",
+      "0.25 mg subcutaneously once daily.",
+      "2.4 mg weekly starting from the first week.",
+      "7.2 mg daily."
+    ],
+    "rationale": "Weeks 1-4 use 0.25 mg, weeks 5-8 use 0.5 mg, weeks 9-12 use 1 mg, and weeks 13-16 use 1.7 mg, all once weekly. MASH maintenance begins from week 17 if tolerated."
+  },
+  "masld-086": {
+    "question": "A patient cannot tolerate the 1 mg Wegovy escalation step. Which response follows the label?",
+    "choices": [
+      "Consider delaying escalation for four weeks and reassess tolerability.",
+      "Escalate immediately to 7.2 mg to resolve nausea.",
+      "Convert the weekly dose into a daily injection.",
+      "Ignore persistent symptoms because escalation cannot be delayed."
+    ],
+    "rationale": "The label permits a four-week escalation delay when a step is not tolerated. Dose escalation aims to reduce GI reactions; worsening symptoms should not be dismissed or treated with a dosing-frequency error."
+  },
+  "masld-087": {
+    "question": "One Wegovy injection is missed; the next scheduled injection is 72 hours away. What should the patient do?",
+    "choices": [
+      "Take the missed injection as soon as possible, then follow the prescribed weekly schedule.",
+      "Skip every subsequent dose permanently.",
+      "Double the next injection.",
+      "Use the daily tablet missed-dose rule as an automatic injection instruction."
+    ],
+    "rationale": "Seventy-two hours is more than two days, so the label directs administration as soon as possible. If the next dose were less than two days away, skip the missed injection. Do not double; tablet instructions differ."
+  },
+  "masld-088": {
+    "question": "A patient misses two consecutive Wegovy injections and plans to resume the previous high dose. Which plan matches the current label?",
+    "choices": [
+      "Contact the prescriber and reinitiate escalation at a lower dose to reduce GI reactions.",
+      "Automatically resume the full high dose without review.",
+      "Give both missed injections together.",
+      "Increase the next dose to compensate for the gap."
+    ],
+    "rationale": "After two or more consecutive missed injections, the current label directs a lower-dose escalation restart. Doubling, increasing, or automatically resuming the high dose can increase avoidable GI risk."
+  },
+  "masld-089": {
+    "question": "Which history contraindicates Wegovy?",
+    "choices": [
+      "A personal or family history of medullary thyroid carcinoma or MEN2.",
+      "Type 2 diabetes by itself.",
+      "Obesity by itself.",
+      "The need to monitor resting heart rate."
+    ],
+    "rationale": "MTC history and MEN2 are contraindications, as is prior serious semaglutide/excipient hypersensitivity. Diabetes and obesity alone are not contraindications, and required monitoring does not itself prohibit treatment."
+  },
+  "masld-090": {
+    "question": "A Wegovy-treated patient has severe persistent abdominal pain radiating to the back, raising concern for acute pancreatitis. What is appropriate?",
+    "choices": [
+      "Discontinue Wegovy and initiate appropriate evaluation and management.",
+      "Continue without assessment because all abdominal pain is harmless nausea.",
+      "Increase the dose to treat the pain.",
+      "Diagnose MASH cure from the pain pattern."
+    ],
+    "rationale": "Suspected pancreatitis requires discontinuation and management. The symptoms should not be dismissed or addressed with escalation; they do not indicate liver cure."
+  },
+  "masld-091": {
+    "question": "During Wegovy escalation, persistent vomiting and diarrhea raise concern for dehydration. Which plan is appropriate?",
+    "choices": [
+      "Evaluate symptoms and volume status and monitor renal function; do not dismiss the risk of acute kidney injury.",
+      "Ignore symptoms because renal pharmacokinetic findings guarantee freedom from injury.",
+      "Force immediate escalation despite severe symptoms.",
+      "Assume vomiting proves fibrosis improvement."
+    ],
+    "rationale": "GI fluid loss can cause AKI, particularly during initiation or escalation. Clinical and renal assessment remain necessary; pharmacokinetics do not remove volume-depletion risk."
+  },
+  "masld-092": {
+    "question": "A patient using Wegovy for MASH reports pregnancy. Which statement best reflects the label?",
+    "choices": [
+      "Promptly review fetal risk and maternal liver need; MASH use during pregnancy requires potential benefit to justify fetal risk.",
+      "MASH use is proven safe during pregnancy and needs no review.",
+      "Weight reduction is beneficial during every pregnancy, so treatment always continues.",
+      "The oral tablet is an established MASH replacement with guaranteed lactation safety."
+    ],
+    "rationale": "Pregnancy outcome data are insufficient and fetal harm is possible. The MASH label requires a benefit-risk decision; weight/CV indications have discontinuation instructions, planned pregnancy requires advance counseling, and oral tablets do not establish a MASH regimen or unrestricted lactation safety."
+  }
+};
+for (const item of metabolicDysfunctionAssociatedSteatoticLiverDiseaseQuestionBank) {
+  if (verifiedMasldSemaglutideQuestions[item.id]) Object.assign(item, verifiedMasldSemaglutideQuestions[item.id]);
+}

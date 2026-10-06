@@ -596,3 +596,106 @@ Object.assign(resmetiromReference, {
   "label": "FDA Rezdiffra prescribing information (July 2026)",
   "href": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/217785s006lbl.pdf"
 });
+
+
+// Whole semaglutide teaching reconciled to the current MASH product label.
+const verifiedMasldSemaglutideLesson = {
+  "metadata": {
+    "summary": "Use the MASH-specific Wegovy injection regimen, titrate and restart safely, match the actual device, and plan treatment-specific safety and reproductive follow-up.",
+    "concepts": [
+      "GLP-1 effects",
+      "Adult noncirrhotic F2-F3 MASH",
+      "Weekly titration",
+      "Device and missed doses",
+      "Safety and response"
+    ],
+    "application": "Confirm the exact indication and formulation, document the titration and restart plan, train for the dispensed device, and reconcile glucose-lowering medicines, symptoms, procedures, and pregnancy plans.",
+    "keyPoints": [
+      "MASH: Wegovy injection, 2.4 mg weekly; 1.7 mg if maintenance is not tolerated.",
+      "Start 0.25 mg weekly and escalate in four-week steps.",
+      "Two consecutive missed injections require a lower-dose escalation restart.",
+      "Screen MTC/MEN2 and hypersensitivity; assess pancreatic, gallbladder, GI, renal, glycemic, eye, and heart-rate risk.",
+      "Histologic response and improved ALT do not establish cure or confirmed clinical benefit."
+    ]
+  },
+  "bodies": [
+    {
+      "heading": "Use the labeled population",
+      "body": "Wegovy injection is used with a reduced-calorie diet and increased physical activity for adults with noncirrhotic MASH and moderate-to-advanced fibrosis consistent with F2-F3. Obesity alone, steatosis alone, or an obesity indication does not establish MASH eligibility. The MASH indication is under accelerated approval based on improvement in MASH and fibrosis, with confirmation of clinical benefit still required. Wegovy tablets and the 7.2 mg weight-reduction regimen do not have established safety and effectiveness for MASH; do not transfer the injection indication to them or to every semaglutide product. Pediatric obesity approval does not establish pediatric MASH use. Information in MASH with BMI below 25 kg/m2 is limited; that evidence limitation is not a new BMI exclusion in the indication."
+    },
+    {
+      "heading": "Connect GLP-1 effects to liver evidence",
+      "body": "Semaglutide activates GLP-1 receptors, reduces appetite and calorie intake, stimulates insulin secretion and reduces glucagon in a glucose-dependent manner, and delays gastric emptying. These effects support weight and glucose management. Its precise mechanism in human MASH is not fully understood and may involve weight loss and other pathways. Do not describe it as a THR-beta agonist, claim a fully established direct antifibrotic mechanism, or equate animal-model findings with proven human clinical benefit."
+    },
+    {
+      "heading": "Titrate to maintenance",
+      "body": "Start 0.25 mg subcutaneously once weekly during weeks 1-4, then use 0.5 mg in weeks 5-8, 1 mg in weeks 9-12, and 1.7 mg in weeks 13-16. From week 17, the recommended MASH maintenance dose is 2.4 mg weekly. If an escalation step is not tolerated, consider delaying escalation for four weeks. If 2.4 mg maintenance is not tolerated, decrease to 1.7 mg weekly and consider reescalation. The 7.2 mg regimen belongs to a separate adult weight-reduction pathway; it is not the MASH maintenance dose."
+    },
+    {
+      "heading": "Teach the prescribed injection device",
+      "body": "Inject once weekly on the same day, at any time, with or without meals, subcutaneously in the abdomen, thigh, or upper arm; rotate sites. The solution should be clear, colorless, and free of particles. Train the patient for the actual single-dose pen, single-dose syringe, or FlexTouch presentation and retrain after a device change. FlexTouch contains four 2.4 mg doses: 9.6 mg is the total pen content, not one weekly dose. Never share FlexTouch even after changing its needle. Use a new needle each time and store it without a needle attached. Follow the exact Instructions for Use rather than a generic pen technique."
+    },
+    {
+      "heading": "Keep storage specific to the presentation",
+      "body": "Before use, refrigerate injection devices at 2-8 degrees C. Do not freeze or use a device that has been frozen, and protect it from light. Before cap removal, a single-dose pen or syringe may be kept in its original carton at 8-30 degrees C for up to 28 days; discard after use. After first use, FlexTouch may be stored for up to 56 days at 15-30 degrees C or refrigerated at 2-8 degrees C, with its cap on and no needle attached. Do not apply the 56-day multidose rule to a single-dose device. Follow the supplied label for temperature excursions and discard limits."
+    },
+    {
+      "heading": "Counsel across missed-dose transitions",
+      "body": "For one missed injection, take it as soon as possible if the next scheduled dose is more than two days away; if the next dose is less than two days away, skip the missed dose and resume on the scheduled day. Do not double doses. The label does not explicitly assign the exact 48-hour boundary in this instruction; obtain a specific instruction instead of inventing one. After two or more consecutive missed injections, contact the prescriber and reinitiate escalation at a lower dose to reduce gastrointestinal reactions. Changing the weekly injection day requires at least two days since the last injection."
+    },
+    {
+      "heading": "Apply the boxed warning and contraindications",
+      "body": "Do not use Wegovy with a personal or family history of medullary thyroid carcinoma, MEN2, or a prior serious hypersensitivity reaction to semaglutide or its excipients. Rodent thyroid C-cell tumors support the boxed warning, but whether Wegovy causes these tumors in humans is unknown. Counsel about a neck mass, persistent hoarseness, difficulty swallowing, or breathing difficulty. Routine calcitonin testing or thyroid ultrasound has uncertain value for early MTC detection and does not override a contraindication. Discontinue and promptly treat a serious hypersensitivity reaction."
+    },
+    {
+      "heading": "Assess gastrointestinal and renal risk",
+      "body": "Nausea, vomiting, diarrhea, constipation, and abdominal symptoms are common, especially during escalation. Severe or persistent symptoms require evaluation; Wegovy is not recommended in severe gastroparesis. Vomiting or diarrhea can cause dehydration and acute kidney injury. Monitor renal function when adverse effects could cause volume depletion, particularly during initiation and escalation. Do not dismiss persistent vomiting as harmless expected nausea or use a reassuring pharmacokinetic finding to ignore dehydration-related risk. Severe constipation, ileus, and intestinal obstruction have also been reported postmarketing; assess severe or persistent symptoms without assigning a reliable incidence from voluntary reports."
+    },
+    {
+      "heading": "Distinguish pancreatic and gallbladder actions",
+      "body": "Persistent or severe abdominal pain, sometimes radiating to the back, with or without nausea or vomiting, can signal acute pancreatitis. If pancreatitis is suspected, discontinue Wegovy and initiate appropriate management. Suspected gallstones require gallbladder studies and clinical follow-up; rapid weight loss is not the only explanation for gallbladder events. An isolated lipase or amylase elevation without other signs or symptoms has uncertain clinical significance and does not alone establish pancreatitis. Assess the clinical pattern rather than automatically reassuring or diagnosing from one value."
+    },
+    {
+      "heading": "Plan glucose, eye, and heart-rate follow-up",
+      "body": "Monitor glucose before and during treatment in patients with diabetes. Insulin and insulin secretagogues increase hypoglycemia risk; consider reducing their doses and teach symptom recognition and treatment. Glucose-dependent action does not eliminate hypoglycemia. Monitor patients with prior diabetic retinopathy for progression and investigate vision changes. Monitor resting heart rate at usual clinical intervals, ask about palpitations at rest, and discontinue Wegovy for a sustained resting heart-rate increase."
+    },
+    {
+      "heading": "Reconcile oral medicines and overlapping therapy",
+      "body": "Delayed gastric emptying can affect oral medicine absorption. Monitor clinical effects and consider closer clinical or laboratory monitoring for drugs with a narrow therapeutic index or a need for monitoring. The label’s 33% levothyroxine-exposure increase came from an oral semaglutide interaction study; do not automatically apply that percentage to Wegovy injection or to every oral medicine. Concomitant use with another semaglutide-containing product or another GLP-1 receptor agonist is not recommended. The supplied book also advises against combining a GLP-1 receptor agonist with a DPP-4 inhibitor because their incretin mechanisms overlap."
+    },
+    {
+      "heading": "Coordinate planned procedures",
+      "body": "Tell the anesthesia and procedural teams about Wegovy before surgery or deep sedation. Pulmonary aspiration has been reported despite preoperative fasting, consistent with delayed gastric emptying. The product label says available data are insufficient to establish whether changing fasting instructions or temporarily stopping treatment reduces retained gastric contents. Coordinate an individualized procedural plan; do not present an arbitrary universal hold interval as an FDA-label instruction."
+    },
+    {
+      "heading": "Make reproductive decisions by indication",
+      "body": "Discuss pregnancy plans before treatment and promptly report a known or suspected pregnancy. Semaglutide may harm the fetus; human outcome data are insufficient. The full label and Medication Guide advise stopping at least two months before a planned pregnancy because of its long half-life. For MASH during pregnancy, the label permits use only when the potential benefit justifies fetal risk; this requires an explicit benefit-risk decision rather than reassurance of safety. CV-risk or weight-reduction use should stop when pregnancy is recognized. Injection lactation decisions weigh breastfeeding benefits, maternal need, and potential infant effects because injection milk and infant data are absent. The oral tablet has a different SNAC-related lactation restriction and is not a substitute MASH regimen."
+    },
+    {
+      "heading": "Interpret response and trial endpoints",
+      "body": "The week-72 MASH efficacy analysis included 800 adults with biopsy-confirmed F2-F3 disease: 534 received Wegovy injection and 266 placebo. Estimated MASH resolution without worsening fibrosis was 63% versus 34%; fibrosis improvement without worsening MASH was 37% versus 22%. These are separate endpoints. The label reports an adjusted fibrosis response difference of 14 percentage points; subtracting the rounded 37% and 22% gives 15 points and is not a replacement for the adjusted estimate. Histology, weight, ALT, liver fat, and stiffness are different outcomes. Do not call one improved ALT a cure or promise confirmed prevention of long-term liver events. Continue metabolic care, adherence, tolerability, and liver-risk assessment."
+    }
+  ],
+  "check": {
+    "question": "An eligible adult with F3 MASH cannot tolerate Wegovy injection 2.4 mg weekly maintenance. Which plan matches the label?",
+    "choices": [
+      "Decrease to 1.7 mg weekly and consider reescalation to 2.4 mg.",
+      "Increase directly to 7.2 mg weekly as the MASH maintenance dose.",
+      "Replace it with a 25 mg daily tablet as an approved MASH regimen.",
+      "Continue 0.25 mg weekly indefinitely as the labeled maintenance dose."
+    ],
+    "rationale": "For MASH, 2.4 mg weekly is recommended; if it is not tolerated, reduce to 1.7 mg and consider reescalation. The 7.2 mg weight-reduction pathway and oral tablet indications do not establish those MASH regimens, and 0.25 mg is a starting dose."
+  }
+};
+for (const lesson of metabolicDysfunctionAssociatedSteatoticLiverDiseaseModule.submodules) {
+  if (lesson.slug === "semaglutide") {
+    Object.assign(lesson, verifiedMasldSemaglutideLesson.metadata);
+    lesson.lesson = verifiedMasldSemaglutideLesson.bodies;
+    Object.assign(lesson.check, verifiedMasldSemaglutideLesson.check);
+  }
+}
+const semaglutideReference = metabolicDysfunctionAssociatedSteatoticLiverDiseaseModule.references.find((reference) => reference.label === "FDA Wegovy prescribing information");
+Object.assign(semaglutideReference, {
+  "label": "FDA Wegovy prescribing information (June 2026)",
+  "href": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/215256s025lbl.pdf"
+});
