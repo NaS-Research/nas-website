@@ -105,8 +105,8 @@
     "branch": "audit/rxprep-content-2026-09-24",
     "baseCommit": "f271d4c293b1427b39db3422ed1c266de7ff4dab",
     "remoteVerifiedAtStart": true,
-    "commit": null,
-    "push": "pending",
+    "commit": "0748b9c8253cd57d5db9b42c5d19833610328551",
+    "push": "verified",
     "production": "not verified",
     "receipt": "enteral-nutrition-broader-glp1-release.json",
     "contentCommits": [
@@ -245,13 +245,14 @@
       "ee26abfd3869d4361f5141d8d9951093daf59bb5",
       "41a7e941df6313c0dbf8d4d53835bcb0c8a8a154",
       "52a4493124a583fd8a37474fa04fa176db20eac0",
-      "01ba277dc3f047ca4ab563748a9bec6bbac8fbf9"
+      "01ba277dc3f047ca4ab563748a9bec6bbac8fbf9",
+      "0748b9c8253cd57d5db9b42c5d19833610328551"
     ],
     "previousVerifiedContentCommit": "65ac22e809246ba35e196493eedaa0bea3b0898b",
     "baseReceipt": "aca4501d4b775c9e5dbb74a1c3e7c337e6ebb87e",
-    "remoteHashObserved": null,
-    "exactRemoteObservedByTool": false,
-    "remoteVerifiedAt": null,
+    "remoteHashObserved": "0748b9c8253cd57d5db9b42c5d19833610328551",
+    "exactRemoteObservedByTool": true,
+    "remoteVerifiedAt": "2026-10-06T08:52:10.301011+00:00",
     "mainMerge": "not performed"
   },
   "openIssues": [
@@ -22278,6 +22279,17 @@
     "chaptersVerifiedAfter": 6,
     "chapterTotal": 82,
     "chapterCountPercent": 7.32,
-    "workingDraftBoundary": "Working draft contains eleven lessons and ninety-two different authored questions. Prior bytes and reviewing statuses are preserved. This certificate applies to the isolated HEAD-derived audit-branch lesson and twelve stable question IDs; certification of other working-draft variants is not inferred."
+    "workingDraftBoundary": "Working draft contains eleven lessons and ninety-two different authored questions. Prior bytes and reviewing statuses are preserved. This certificate applies to the isolated HEAD-derived audit-branch lesson and twelve stable question IDs; certification of other working-draft variants is not inferred.",
+    "release": {
+      "branch": "audit/rxprep-content-2026-09-24",
+      "commit": "0748b9c8253cd57d5db9b42c5d19833610328551",
+      "push": "verified",
+      "receipt": "enteral-nutrition-broader-glp1-release.json",
+      "mainMerge": "not performed",
+      "production": "not verified",
+      "remoteHashObserved": "0748b9c8253cd57d5db9b42c5d19833610328551",
+      "exactRemoteObservedByTool": true,
+      "remoteVerifiedAt": "2026-10-06T08:52:10.301011+00:00"
+    }
   }
 }
