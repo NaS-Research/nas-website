@@ -1,7 +1,7 @@
 {
   "updated": "2026-10-06T23:29:02.795597+00:00",
   "unit": "enteral-nutrition:broader-cystic-fibrosis-modulator",
-  "status": "One complete longitudinal lesson and 14 whole questions clinically, arithmetically, in-browser and visually verified; exact branch release pending.",
+  "status": "One complete CF longitudinal and advanced-care lesson verified:8 bodies, one check, one figure,14 whole questions. Exact audit-branch content push verified; full CF, feeding parent, and full book goal remain open. Production not verified.",
   "coverage": {
     "evidence": "enteral-nutrition-broader-cystic-fibrosis-longitudinal-review.json",
     "moduleSlug": "cystic-fibrosis",
@@ -1647,11 +1647,14 @@
   "release": {
     "branch": "audit/rxprep-content-2026-09-24",
     "baseCommit": "8c892b2628101baefbd81890c09be94b699253a3",
-    "commit": null,
-    "push": "pending",
+    "commit": "4c633cf70e0d8c2ba1350bdc7350f13109c9eab9",
+    "push": "verified",
     "receipt": "enteral-nutrition-broader-cystic-fibrosis-longitudinal-release.json",
     "mainMerge": "not performed",
-    "production": "not verified"
+    "production": "not verified",
+    "remoteHashObserved": "4c633cf70e0d8c2ba1350bdc7350f13109c9eab9",
+    "exactRemoteObservedByTool": true,
+    "remoteVerifiedAt": "2026-10-06T23:30:20.978022+00:00"
   },
   "remainingReview": "Complete CF parent metadata, outcome/topic/source claims and remaining general guideline bibliography, then reconcile all five Chapter55 source pages against the finished eight lessons,148question bank objects,five cumulative origins,8checks and8figures using exact prior verified evidence. Do not count all lesson statuses alone as whole-parent closure. Preserve the eight clinically verified lessons. Return to Chapter11 feeding inventory after dependencies;Chapter1 PDF19 checklistentry15fluidneeds remains open.",
   "wholeGoalComplete": false,
