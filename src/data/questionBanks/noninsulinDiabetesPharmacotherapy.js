@@ -325,3 +325,51 @@ export const noninsulinDiabetesPharmacotherapyQuestionBank = concepts.flatMap((c
     };
   }),
 );
+
+
+// Whole source-reviewed cases retain stable IDs, keys and review links.
+const verifiedMasldLifestyleCardiometabolicQuestions = {
+  "noninsulin-diabetes-06-application": {
+    "question": "An adult with type 2 diabetes and CKD has reduced glucose lowering from an SGLT2 inhibitor as kidney function falls. Which interpretation is best?",
+    "choices": [
+      "Reduced glucose lowering does not necessarily eliminate cardiorenal benefit; reassess the exact product’s indication, kidney-use criteria, volume status, and safety.",
+      "Every decline in glucose lowering proves that all cardiorenal benefit has disappeared.",
+      "Kidney function and volume status are irrelevant to every SGLT2 prescription.",
+      "All SGLT2 products have identical indications at every level of kidney function."
+    ],
+    "rationale": "SGLT2 glucose-lowering efficacy declines with reduced kidney function, while benefits for selected cardiovascular and kidney outcomes can persist in studied populations. Check the chosen product and clinical context rather than equating glycemic response with every outcome."
+  },
+  "noninsulin-diabetes-12-application": {
+    "question": "Which DPP-4 inhibitor kidney-use distinction is correct?",
+    "choices": [
+      "Sitagliptin, saxagliptin, and alogliptin require kidney-based dose adjustment; linagliptin does not require a renal dose adjustment.",
+      "Linagliptin always requires the same renal adjustment as sitagliptin.",
+      "Every DPP-4 inhibitor has identical renal elimination and adjustment rules.",
+      "Renal dose adjustment establishes that the drug is a proven MASH histologic treatment."
+    ],
+    "rationale": "The supplied book differentiates the renal adjustment requirements, and the linagliptin label confirms no renal dosage adjustment. Linagliptin is primarily eliminated through nonrenal pathways. These pharmacokinetic distinctions do not establish a MASH treatment indication."
+  },
+  "noninsulin-diabetes-18-application": {
+    "question": "An alert patient who can swallow develops mild hypoglycemia while using acarbose with a sulfonylurea. Which oral carbohydrate is appropriate for rapid treatment?",
+    "choices": [
+      "Glucose (dextrose).",
+      "Sucrose, because acarbose accelerates its breakdown.",
+      "Acarbose itself, because it raises glucose directly.",
+      "No carbohydrate, because acarbose makes sulfonylurea-associated hypoglycemia impossible."
+    ],
+    "rationale": "Acarbose does not usually cause hypoglycemia alone, but concomitant insulin or a secretagogue can. Glucose is directly absorbable; sucrose requires hydrolysis that acarbose delays and is unsuitable for rapid correction. Severe hypoglycemia requires a different rescue approach."
+  },
+  "noninsulin-diabetes-24-application": {
+    "question": "An adult with type 2 diabetes, obesity, and symptomatic HFpEF is at their A1C goal. Which treatment reasoning best reflects current ADA guidance?",
+    "choices": [
+      "Consider a GLP-1 or dual GIP/GLP-1 agent with demonstrated benefit for the specific HFpEF population, irrespective of A1C, while checking product-specific eligibility and tolerability.",
+      "Exclude all incretin therapy solely because A1C is at goal.",
+      "Assume every incretin product has identical HFpEF evidence and FDA indications.",
+      "Choose a DPP-4 inhibitor’s renal dose solely as proof of improved HFpEF symptoms."
+    ],
+    "rationale": "ADA 2026 recommendations distinguish selected GLP-1 and dual GIP/GLP-1 therapies with demonstrated benefits for adults with type 2 diabetes, obesity, and symptomatic HFpEF. A1C does not replace the relevant outcome indication; exact product and population evidence, safety, and tolerability matter."
+  }
+};
+for (const item of noninsulinDiabetesPharmacotherapyQuestionBank) {
+  if (verifiedMasldLifestyleCardiometabolicQuestions[item.id]) Object.assign(item, verifiedMasldLifestyleCardiometabolicQuestions[item.id]);
+}

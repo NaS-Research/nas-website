@@ -153,6 +153,62 @@ export default function MasldVisual({type}){
 };
   const foundationView = foundationViews[key];
   if (foundationView) return <figure className="chol-visual masld-visual" aria-label={foundationView.heading}><figcaption><span>{foundationView.eyebrow}</span><strong>{foundationView.heading}</strong></figcaption><div className="chol-visual__grid">{foundationView.nodes.map(([verb,focus,detail],index)=><div key={verb}><span>{String(index+1).padStart(2,"0")}</span><strong>{verb}</strong><em style={{fontSize:"0.875rem"}}>{focus}</em><p style={{fontSize:"0.875rem"}}>{detail}</p></div>)}</div></figure>;
+  const lifestyleCardiometabolicViews = {
+  "lifestyle": {
+    "eyebrow": "Measurable lifestyle therapy",
+    "heading": "Plan for benefit and durability",
+    "nodes": [
+      [
+        "Set goals",
+        "Name the outcome",
+        "Weight targets do not prove scar regression."
+      ],
+      [
+        "Choose",
+        "Nutrition and activity",
+        "Adapt to needs, ability and preferences."
+      ],
+      [
+        "Address",
+        "Alcohol and fibrosis",
+        "F2 or greater: complete abstinence."
+      ],
+      [
+        "Support",
+        "Continuing follow-up",
+        "Build access, behavior and maintenance."
+      ]
+    ]
+  },
+  "cardiometabolic-care": {
+    "eyebrow": "Coordinated risk reduction",
+    "heading": "Match the treatment to the outcome",
+    "nodes": [
+      [
+        "Protect",
+        "Cardiovascular health",
+        "Use indicated therapy in clinical context."
+      ],
+      [
+        "Match",
+        "Product and population",
+        "Glucose and organ benefits differ."
+      ],
+      [
+        "Check",
+        "Safety and liver stage",
+        "Heart failure and cirrhosis change decisions."
+      ],
+      [
+        "Review",
+        "Whole-patient response",
+        "Connect monitoring and follow-up."
+      ]
+    ]
+  }
+};
+  const lifestyleCardiometabolicView = lifestyleCardiometabolicViews[key];
+  if (lifestyleCardiometabolicView) return <figure className="chol-visual masld-visual" aria-label={lifestyleCardiometabolicView.heading}><figcaption><span>{lifestyleCardiometabolicView.eyebrow}</span><strong>{lifestyleCardiometabolicView.heading}</strong></figcaption><div className="chol-visual__grid">{lifestyleCardiometabolicView.nodes.map(([verb,focus,detail],index)=><div key={verb}><span>{String(index+1).padStart(2,"0")}</span><strong>{verb}</strong><em style={{fontSize:"0.875rem"}}>{focus}</em><p style={{fontSize:"0.875rem"}}>{detail}</p></div>)}</div></figure>;
   const labels=views[key]||views["integrated-case"];
   return <figure className="chol-visual masld-visual" aria-label={`MASLD visual: ${key.replaceAll("-"," ")}`}>
     <div className="chol-visual__copy"><span>Metabolic liver disease</span><h3>{key.replaceAll("-"," ")}</h3><p>Connect metabolic load, liver injury, fibrosis risk, and treatment as one changing trajectory.</p></div>

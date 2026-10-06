@@ -540,3 +540,171 @@ const verifiedMasldFoundationQuestions = {
 for (const item of metabolicDysfunctionAssociatedSteatoticLiverDiseaseQuestionBank) {
   if (verifiedMasldFoundationQuestions[item.id]) Object.assign(item, verifiedMasldFoundationQuestions[item.id]);
 }
+
+
+// Whole source-reviewed cases retain stable IDs, keys and review links.
+const verifiedMasldLifestyleCardiometabolicQuestions = {
+  "masld-049": {
+    "question": "Which weight-loss interpretation best matches AASLD’s outcome-specific guidance for an adult with overweight and MASLD?",
+    "choices": [
+      "A 3-5% loss can improve steatosis; improvement in steatohepatitis and fibrosis generally requires greater sustained loss, above 10%.",
+      "A 3% loss guarantees fibrosis regression.",
+      "No liver outcome can improve until weight loss exceeds 10%.",
+      "All patients, including those with malnutrition, require the same calorie deficit."
+    ],
+    "rationale": "Modest loss is associated with steatosis improvement, while greater sustained loss is generally needed for MASH and fibrosis improvement. These are not guaranteed responses, and nutritional status affects the plan."
+  },
+  "masld-050": {
+    "question": "An adult’s weight changes from 100 kg to 96 kg during MASLD care. What is the percentage loss from starting weight?",
+    "choices": [
+      "4%.",
+      "4.17%, using current weight as the denominator.",
+      "96%.",
+      "0.04%."
+    ],
+    "rationale": "The change is 4 kg. Divide by the 100 kg starting weight and multiply by 100: 4 / 100 × 100 = 4%. Using 96 kg changes the denominator incorrectly; 0.04 is the fraction before conversion to a percentage."
+  },
+  "masld-051": {
+    "question": "A lean adult with MASLD asks whether healthy eating and activity are useful if weight loss is not needed. Which response is best?",
+    "choices": [
+      "Diet quality and increased activity can benefit liver and cardiovascular health even when weight loss is not indicated.",
+      "Obesity is required before lifestyle treatment can benefit MASLD.",
+      "Every lean patient must lose more than 10% of body weight.",
+      "Exercise should begin only after ALT becomes abnormal."
+    ],
+    "rationale": "AASLD supports diet quality and activity even when weight loss is not needed. Apply weight-reduction targets to the appropriate nutritional phenotype; do not prescribe them indiscriminately or wait for an ALT rise."
+  },
+  "masld-052": {
+    "question": "A patient with MASLD has clinically significant F2 fibrosis. Which alcohol recommendation is appropriate?",
+    "choices": [
+      "Complete alcohol abstinence.",
+      "Continue alcohol whenever intake is below the MetALD classification threshold.",
+      "Use a normal ALT to establish that drinking is safe.",
+      "Recommend alcohol for cardiovascular protection regardless of liver fibrosis."
+    ],
+    "rationale": "AASLD recommends complete abstinence with clinically significant fibrosis, F2 or greater. SLD classification thresholds and normal enzymes are not evidence of a safe intake for this patient."
+  },
+  "masld-053": {
+    "question": "A patient with MASLD becomes more active but has unchanged body weight. Which interpretation is supported?",
+    "choices": [
+      "Physical activity can confer liver and cardiometabolic benefit independently of weight loss.",
+      "Activity has no possible benefit unless weight falls.",
+      "Stable weight proves fibrosis has progressed.",
+      "Activity eliminates the need for any metabolic or liver follow-up."
+    ],
+    "rationale": "Exercise can help independently of weight loss. Scale weight alone neither proves lack of benefit nor establishes fibrosis change, and continuing assessment remains necessary."
+  },
+  "masld-054": {
+    "question": "A patient can safely perform five moderate aerobic sessions of 30 minutes each week. What weekly total does this provide?",
+    "choices": [
+      "150 minutes, matching a practical moderate aerobic target.",
+      "120 minutes, because the fifth session is excluded.",
+      "30 minutes, because only one session counts.",
+      "750 minutes, because both the number of sessions and weekly total are multiplied again."
+    ],
+    "rationale": "Five sessions × 30 minutes per session = 150 minutes per week. Tailor activity to ability and preferences; this arithmetic does not establish an individual histologic response."
+  },
+  "masld-055": {
+    "question": "Which nutrition plan best reflects the guidance for an adult with obesity and MASLD?",
+    "choices": [
+      "A sustainable calorie deficit with fiber-rich foods and unsaturated fats, reduced sugar-sweetened beverages, and culturally feasible choices.",
+      "Mandatory prolonged fasting for every patient regardless of medications and nutritional status.",
+      "Elimination of all vegetables, legumes, and whole grains because they contain carbohydrate.",
+      "A claim that one diet guarantees fibrosis regression in every patient."
+    ],
+    "rationale": "AASLD favors an appropriate calorie deficit and food quality, with fiber and unsaturated fats and reduced excess saturated fat and refined carbohydrates. Feasibility and nutrition matter; no diet guarantees a particular fibrosis response."
+  },
+  "masld-056": {
+    "question": "A patient with decompensated cirrhosis, muscle loss, and poor intake is referred for weight advice. Which plan is most appropriate?",
+    "choices": [
+      "Coordinate specialist nutrition and activity care that protects protein intake and muscle function; routine weight-loss surgery is inappropriate in this setting.",
+      "Apply a severe calorie deficit without assessing malnutrition.",
+      "Schedule routine bariatric surgery solely because steatosis is present.",
+      "Remove all protein to avoid liver work."
+    ],
+    "rationale": "Cirrhosis requires attention to protein, muscle function, frailty, and physical limitations. Decompensation raises major surgical risk and is not a routine metabolic-surgery indication. Indiscriminate restriction can worsen nutritional problems."
+  },
+  "masld-057": {
+    "question": "Why should cardiovascular risk remain a major treatment priority in MASLD?",
+    "choices": [
+      "Cardiovascular disease is a leading competing cause of death, so indicated risk-reduction care should accompany liver assessment.",
+      "Steatosis proves that cardiovascular disease cannot occur.",
+      "A normal ALT removes the need to assess blood pressure or lipids.",
+      "Fibrosis assessment substitutes for all cardiovascular prevention."
+    ],
+    "rationale": "MASLD care includes both liver-related risk and major competing cardiovascular risk. ALT or a fibrosis assessment does not replace assessment and treatment of lipids, blood pressure, glucose, and smoking."
+  },
+  "masld-058": {
+    "question": "An adult with type 2 diabetes and heart failure is at their A1C goal. Which approach best reflects current guidance?",
+    "choices": [
+      "Consider an SGLT2 inhibitor with demonstrated benefit for the heart-failure context, checking the exact product’s eligibility and safety irrespective of A1C.",
+      "Exclude all agents with heart-failure benefits whenever A1C is at goal.",
+      "Assume every glucose-lowering medicine has identical heart-failure outcome evidence.",
+      "Select pioglitazone solely because edema is already present."
+    ],
+    "rationale": "ADA recommends therapy with demonstrated heart-failure benefit in type 2 diabetes irrespective of A1C. Product-specific criteria and safety still apply. Glucose lowering is not proof of heart-failure benefit, and pioglitazone can exacerbate fluid retention and heart failure."
+  },
+  "masld-059": {
+    "question": "An adult with type 2 diabetes and MASH also has symptomatic NYHA class III heart failure. Which pioglitazone interpretation is correct?",
+    "choices": [
+      "Initiating pioglitazone is contraindicated; possible liver benefit does not override the heart-failure restriction.",
+      "MASH removes the labeled heart-failure contraindication.",
+      "Pioglitazone treats fluid retention and should be started to reduce edema.",
+      "All medicines discussed for MASH have identical cardiac safety."
+    ],
+    "rationale": "The pioglitazone label contraindicates initiation in NYHA class III or IV heart failure and does not recommend use in symptomatic heart failure. Its potential benefit in selected patients with diabetes and MASH must be weighed against weight gain, edema, and heart-failure risk."
+  },
+  "masld-060": {
+    "question": "An adult with obesity and MASLD has severe symptomatic hyperglycemia requiring insulin consideration. Which reasoning is most appropriate?",
+    "choices": [
+      "Assess and treat the severe hyperglycemia, including insulin when needed, while planning weight and hypoglycemia management.",
+      "Withhold insulin solely because it can cause weight gain.",
+      "Wait for ALT to rise before treating hyperglycemia.",
+      "Assume MASLD prevents all hypoglycemia during insulin treatment."
+    ],
+    "rationale": "Insulin may be necessary for severe or symptomatic hyperglycemia. Weight gain and hypoglycemia risks require a plan, but do not justify withholding necessary treatment solely because obesity or MASLD is present."
+  },
+  "masld-061": {
+    "question": "An adult with MASLD and compensated cirrhosis has an established ASCVD indication for a statin, with no suspected drug-induced liver injury. Which plan is best?",
+    "choices": [
+      "Select an appropriate statin for cardiovascular risk and monitor in the drug and clinical context.",
+      "Withhold every statin because hepatic steatosis is present.",
+      "Use the statin as a proven therapy for MASH histology.",
+      "Wait for hepatic decompensation before addressing ASCVD."
+    ],
+    "rationale": "An indicated statin should not be withheld solely because MASLD or compensated cirrhosis is present. Statins reduce cardiovascular risk; they are not MASH-directed histologic treatment. Decompensation warrants greater caution, not delayed cardiovascular assessment."
+  },
+  "masld-062": {
+    "question": "Which distinction is most accurate when considering a statin in decompensated cirrhosis?",
+    "choices": [
+      "Safety data are more limited and adverse-event risk may be higher, requiring an individualized benefit-risk assessment and careful monitoring.",
+      "Decompensation has exactly the same evidence and risk profile as compensated cirrhosis.",
+      "Any cardiovascular benefit proves that the statin reverses MASH fibrosis.",
+      "A single normal ALT eliminates the need for a clinical safety assessment."
+    ],
+    "rationale": "AASLD describes more limited evidence and greater caution in decompensated cirrhosis. Selected patients with high cardiovascular risk may still be considered for treatment with careful monitoring, rather than applying a blanket rule from compensated disease."
+  },
+  "masld-063": {
+    "question": "Which conclusion about diabetes medicines and MASH is justified?",
+    "choices": [
+      "Match the exact product, formulation, indication, and patient population; glycemic efficacy alone does not establish MASH histologic benefit.",
+      "Every GLP-1 product and dose has the same FDA MASH indication.",
+      "Metformin’s glucose lowering proves it treats MASH histology.",
+      "A DPP-4 inhibitor’s renal dose adjustment proves antifibrotic efficacy."
+    ],
+    "rationale": "Glucose, weight, cardiovascular, kidney, and MASH outcomes must be distinguished. Specific Wegovy injection approval does not extend to every incretin product or dose. Metformin and DPP-4 inhibitors should not be selected as MASH-directed therapy on the basis of glucose lowering alone."
+  },
+  "masld-064": {
+    "question": "Which safety interpretation of pioglitazone matches its label?",
+    "choices": [
+      "Avoid use in active bladder cancer; a prior history requires caution and assessment of benefit versus uncertain recurrence risk.",
+      "Active bladder cancer is irrelevant whenever the patient has MASH.",
+      "A prior history and active bladder cancer are described as identical restrictions in the current label.",
+      "Possible MASH benefit removes the need to consider fractures or fluid retention."
+    ],
+    "rationale": "The label distinguishes active bladder cancer, where pioglitazone should not be used, from a prior history requiring caution and benefit-risk review. Fractures, fluid retention, weight gain, and heart-failure risk remain relevant."
+  }
+};
+for (const item of metabolicDysfunctionAssociatedSteatoticLiverDiseaseQuestionBank) {
+  if (verifiedMasldLifestyleCardiometabolicQuestions[item.id]) Object.assign(item, verifiedMasldLifestyleCardiometabolicQuestions[item.id]);
+}

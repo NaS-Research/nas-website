@@ -364,3 +364,148 @@ metabolicDysfunctionAssociatedSteatoticLiverDiseaseModule.references.push(...[
     "href": "https://www.aasld.org/new-masld-nomenclature"
   }
 ] );
+
+
+// Verified lifestyle outcomes and product-specific cardiometabolic decisions.
+const verifiedMasldLifestyleCardiometabolicLessons = {
+  "lifestyle": {
+    "metadata": {
+      "summary": "Translate nutrition, activity, alcohol counseling, and appropriate weight management into a supported plan with measurable goals and follow-up.",
+      "concepts": [
+        "Outcome-specific weight goals",
+        "Food quality",
+        "Physical activity",
+        "Alcohol abstinence with F2 or greater",
+        "Long-term support"
+      ],
+      "application": "Agree on a feasible nutrition change and activity schedule, document the outcome being targeted, arrange support, and set a reassessment date.",
+      "keyPoints": [
+        "Modest weight loss can improve steatosis; fibrosis improvement generally requires greater loss.",
+        "Activity can benefit the liver without weight loss.",
+        "Clinically significant fibrosis warrants complete alcohol abstinence.",
+        "Tailor the plan to nutrition, function, access, and preferences."
+      ]
+    },
+    "bodies": [
+      {
+        "heading": "Match weight loss to outcome",
+        "body": "For an adult with overweight or obesity, an individualized calorie deficit can support weight reduction. AASLD describes 3-5% weight loss as improving steatosis, while greater sustained loss, generally above 10%, is needed to improve steatohepatitis and fibrosis. These are outcome-specific associations, not guaranteed responses or proof that a particular patient’s scar has resolved. A lean patient can benefit from diet quality and activity without automatically needing weight loss."
+      },
+      {
+        "heading": "Work the percentage correctly",
+        "body": "Weight loss (%) = (starting weight - current weight) / starting weight × 100. A change from 100 kg to 96 kg is 4%: (100 - 96) / 100 × 100 = 4. This fits the modest-loss range associated with steatosis improvement; it does not demonstrate MASH resolution or fibrosis regression. Keep the same units and starting-weight denominator when following the trend."
+      },
+      {
+        "heading": "Build the eating pattern",
+        "body": "Favor fiber-rich vegetables, legumes, whole grains, and unsaturated fats while reducing excess saturated fat, refined carbohydrates, and sugar-sweetened beverages. A Mediterranean-style pattern has cardiovascular benefits and can reduce liver fat, but superiority over every other sustainable dietary approach is not established. Adapt food choices to culture, preferences, affordability, and nutritional needs rather than prescribing one universal restrictive diet."
+      },
+      {
+        "heading": "Prescribe activity",
+        "body": "Physical activity has liver and cardiometabolic benefits independent of weight loss. Tailor aerobic and resistance activity to the patient’s abilities and preferences. A practical moderate aerobic target is at least 150 minutes per week when feasible; five 30-minute sessions total 150 minutes. Start from current function and progress safely. A stable scale weight or normal ALT is not a reason to defer activity."
+      },
+      {
+        "heading": "Address alcohol explicitly",
+        "body": "Reassess the amount and pattern of alcohol use over time. Alcohol can contribute to liver disease progression, and a nomenclature boundary is not a safe-drinking limit. AASLD recommends complete abstinence for clinically significant fibrosis, F2 or greater. A general diabetes recommendation to avoid or moderate alcohol must not override this fibrosis-specific advice."
+      },
+      {
+        "heading": "Design maintenance",
+        "body": "Arrange continuing dietitian and behavioral support, assess social and psychological barriers, and schedule follow-up. Review weight trajectory, activity, diet, metabolic measures, and liver-risk assessment in context. Consider anti-obesity pharmacotherapy or metabolic surgery assessment when indicated; these support sustained treatment rather than replace nutrition and activity. Discuss sleep symptoms and connect suspected sleep apnea with appropriate evaluation."
+      },
+      {
+        "heading": "Respect nutrition and cirrhosis boundaries",
+        "body": "Metabolic surgery can benefit eligible patients without cirrhosis, but eligibility and procedure selection require an individualized assessment. Compensated cirrhosis calls for expert benefit-risk review; decompensated cirrhosis is not a routine weight-loss surgery indication. In cirrhosis, prioritize adequate protein, muscle function, and avoidance of malnutrition, with activity adapted to physical limitations. Do not apply a calorie deficit indiscriminately to a frail or malnourished patient."
+      }
+    ],
+    "check": {
+      "question": "An adult with obesity and MASLD has lost 4% of starting weight. Which counseling statement is most accurate?",
+      "choices": [
+        "This can improve steatosis, while MASH and fibrosis outcomes require separate assessment and generally greater sustained loss.",
+        "A 4% loss proves complete fibrosis regression.",
+        "Any loss below 10% provides no liver benefit.",
+        "The percentage must be calculated using current weight as the denominator."
+      ],
+      "rationale": "AASLD links modest 3-5% loss with steatosis improvement and generally greater than 10% loss with improvement in steatohepatitis and fibrosis. Neither a weight target nor its achievement proves an individual histologic response. Calculate percentage change from starting weight."
+    }
+  },
+  "cardiometabolic-care": {
+    "metadata": {
+      "summary": "Treat cardiovascular, kidney, diabetes, obesity, and sleep-related risk alongside fibrosis care, using evidence for the exact product and patient population.",
+      "concepts": [
+        "ASCVD prevention",
+        "Statins and cirrhosis context",
+        "Cardiorenal diabetes therapy",
+        "Pioglitazone safety",
+        "Coordinated longitudinal care"
+      ],
+      "application": "Connect each medicine to its intended outcome, verify product-specific eligibility and safety, and document who will reassess cardiometabolic and liver findings.",
+      "keyPoints": [
+        "MASLD alone does not justify withholding an indicated statin.",
+        "Compensated and decompensated cirrhosis require different risk assessment.",
+        "Glucose, heart failure, kidney, weight, and MASH benefits are separate claims.",
+        "Pioglitazone’s possible liver benefit does not remove its heart-failure risk."
+      ]
+    },
+    "bodies": [
+      {
+        "heading": "Use statins appropriately",
+        "body": "Cardiovascular disease is a leading competing cause of death in MASLD. Select statin therapy and intensity according to lipid findings and ASCVD risk, with monitoring matched to the drug and clinical context. MASLD alone does not justify withholding an indicated statin; statins are generally safe in compensated cirrhosis. Decompensated cirrhosis requires greater caution, an individualized benefit-risk decision, and careful monitoring. Suspected drug-induced liver injury still needs evaluation."
+      },
+      {
+        "heading": "Separate cardiovascular and liver outcomes",
+        "body": "A statin treats cardiovascular risk; it is not a treatment for MASH histology. Similarly, metformin and DPP-4 inhibitors may serve a glycemic indication but should not be selected as MASH-directed treatment on the assumption that glucose lowering proves histologic benefit. Continue appropriate comorbidity treatment while assessing liver disease separately."
+      },
+      {
+        "heading": "Choose diabetes therapy deliberately",
+        "body": "For adults with type 2 diabetes, consider ASCVD, heart failure, kidney disease, weight goals, hypoglycemia risk, cost, and preferences alongside A1C. Current ADA guidance recommends agents with demonstrated cardiovascular or kidney benefits in the relevant population irrespective of A1C. SGLT2 glucose lowering declines as kidney function falls, while cardiorenal benefit can persist; check the exact product’s indication, kidney-use criteria, volume status, and safety rather than treating every product as interchangeable."
+      },
+      {
+        "heading": "Match incretin evidence to the phenotype",
+        "body": "ADA recommends selected GLP-1 or dual GIP/GLP-1 therapy with demonstrated benefit for adults with type 2 diabetes, obesity, and symptomatic HFpEF, irrespective of A1C. For type 2 diabetes with MASLD and overweight or obesity, consider agents with demonstrated or potential MASH benefit as part of glycemic and weight management. Distinguish evidence, approved indication, formulation, and fibrosis stage. Wegovy injection has a specific FDA indication for adults with noncirrhotic MASH and F2-F3 fibrosis under accelerated approval based on histologic improvement, with clinical benefit subject to confirmatory verification. This does not confer a MASH indication on every incretin product or dose."
+      },
+      {
+        "heading": "Weigh pioglitazone benefit against harm",
+        "body": "Pioglitazone is a PPAR-gamma agonist that improves insulin sensitivity. It can be considered for selected adults with type 2 diabetes and MASH, but its FDA indication is glycemic control in type 2 diabetes. Weight gain, edema, heart-failure exacerbation, and fracture risk affect selection. The label does not recommend use in symptomatic heart failure and contraindicates initiation in NYHA class III or IV heart failure. Assess baseline liver tests and investigate suspected injury; potential liver benefit is not a safety exemption."
+      },
+      {
+        "heading": "Reconcile other pioglitazone precautions",
+        "body": "Do not use pioglitazone in active bladder cancer; a prior history calls for caution and consideration of benefit versus uncertain recurrence risk, rather than being described as the same contraindication. Review bone health and symptoms of fluid retention. Pioglitazone may restore ovulation in some premenopausal anovulatory patients, so discuss reproductive goals and unintended pregnancy risk. Check concomitant therapy and the exact label before prescribing."
+      },
+      {
+        "heading": "Treat obesity and severe hyperglycemia",
+        "body": "Use sustained behavioral support and consider weight-management pharmacotherapy or metabolic surgery assessment when indicated. Insulin can promote weight gain and hypoglycemia, but may still be needed for severe or symptomatic hyperglycemia; do not withhold necessary insulin solely because MASLD or obesity is present. Individualize glucose monitoring, hypoglycemia prevention, and treatment adjustment as nutritional intake and weight change."
+      },
+      {
+        "heading": "Protect the entire system",
+        "body": "Address blood pressure, lipids, smoking, kidney disease, and sleep apnea within coordinated follow-up. AASLD advises screening for sleep apnea in patients with metabolic steatotic liver disease who have overweight or obesity and considering sleep studies when risk is high. Keep indicated preventive care, reproductive goals, and access barriers in view. Assign responsibility for follow-up so liver, primary-care, diabetes, and cardiovascular plans remain connected."
+      }
+    ],
+    "check": {
+      "question": "An adult with MASLD and compensated cirrhosis has an established cardiovascular indication for a statin and no suspected drug-induced injury. What is the best approach?",
+      "choices": [
+        "Use an appropriate statin for cardiovascular risk with monitoring matched to the drug and clinical context.",
+        "Withhold all statins because MASLD is present.",
+        "Prescribe the statin as a proven treatment for MASH histology.",
+        "Apply the same safety assessment to every patient with decompensated cirrhosis."
+      ],
+      "rationale": "MASLD and compensated cirrhosis do not automatically preclude an indicated statin. Its purpose is cardiovascular risk reduction, not MASH histologic treatment. Decompensation requires a more cautious individualized assessment."
+    }
+  }
+};
+for (const lesson of metabolicDysfunctionAssociatedSteatoticLiverDiseaseModule.submodules) {
+  const verified = verifiedMasldLifestyleCardiometabolicLessons[lesson.slug];
+  if (verified) {
+    Object.assign(lesson, verified.metadata);
+    lesson.lesson = verified.bodies;
+    Object.assign(lesson.check, verified.check);
+  }
+}
+metabolicDysfunctionAssociatedSteatoticLiverDiseaseModule.references.push(...[
+  {
+    "label": "ADA 2026: glucose-lowering treatment, cardiorenal and metabolic comorbidities",
+    "href": "https://doi.org/10.2337/dc26-S009"
+  },
+  {
+    "label": "ACTOS (pioglitazone) prescribing information: indication and safety",
+    "href": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=d2ddc491-88a9-4063-9150-443b4fa4330c&type=display"
+  }
+]);
