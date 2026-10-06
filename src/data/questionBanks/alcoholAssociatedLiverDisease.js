@@ -998,3 +998,131 @@ const verifiedAldSpectrumQuestions = {
 for (const item of alcoholAssociatedLiverDiseaseQuestionBank) {
   if (verifiedAldSpectrumQuestions[item.id]) Object.assign(item, verifiedAldSpectrumQuestions[item.id]);
 }
+
+
+// Distinct screening and staging cases retain stable IDs, keys and anchors.
+const verifiedAldScreeningQuestions = {
+  "alcohol-associated-liver-disease-013": {
+    "question": "An adult screens positive on AUDIT-C at a routine visit. Which response best uses the result?",
+    "choices": [
+      "Follow with a fuller alcohol-use and risk assessment to determine care.",
+      "Use the screen alone to diagnose alcohol-associated hepatitis.",
+      "Assign an exact fibrosis stage from the score.",
+      "Treat the result as a complete diagnostic assessment of AUD severity."
+    ],
+    "rationale": "USPSTF recommends follow-up assessment after a positive brief screen. Screening identifies a need for assessment; AUD severity and liver stage require additional evidence."
+  },
+  "alcohol-associated-liver-disease-014": {
+    "question": "Which distinction between AUDIT-C and the full AUDIT is correct?",
+    "choices": [
+      "AUDIT-C has three consumption questions; the ten-item AUDIT also covers dependence-related features and problems.",
+      "AUDIT-C measures liver stiffness; the full AUDIT measures serum alcohol.",
+      "Both questionnaires have ten items with identical coverage.",
+      "The full AUDIT replaces all clinical assessment after a positive score."
+    ],
+    "rationale": "AUDIT-C asks about frequency, typical quantity and heavy-use occasions. The full AUDIT adds seven questions on dependence-related signs and alcohol-related problems; neither measures fibrosis or eliminates clinical assessment."
+  },
+  "alcohol-associated-liver-disease-015": {
+    "question": "A patient reports two 16 fl oz cans of beer at 7.5% ABV. Using 0.6 fl oz of alcohol per U.S. standard drink, how many standard drinks is this?",
+    "choices": [
+      "4 standard drinks.",
+      "2 standard drinks.",
+      "1.2 standard drinks.",
+      "8 standard drinks."
+    ],
+    "rationale": "Each can contains 16 × 0.075 = 1.2 fl oz of alcohol; 1.2 ÷ 0.6 = 2 standard drinks per can. Two cans contain 4 standard drinks. Container count alone understates exposure in this example."
+  },
+  "alcohol-associated-liver-disease-016": {
+    "question": "A clinic screens only adults whose appearance seems to suggest heavy alcohol use. Which change follows ACG guidance?",
+    "choices": [
+      "Use standardized, nonbiased screening across clinical encounters rather than appearance-based selection.",
+      "Keep appearance-based selection and add a universal liver biopsy requirement.",
+      "Replace interview screening with an assumption based on occupation.",
+      "Screen only after a patient develops jaundice or ascites."
+    ],
+    "rationale": "ACG recommends standardized screening at medical encounters and attention to nonbiased practice. Clinical appearance or advanced symptoms should not be the gate for routine alcohol-use screening."
+  },
+  "alcohol-associated-liver-disease-017": {
+    "question": "Which exposure-window comparison matches ACG Table 4?",
+    "choices": [
+      "Urine EtG/EtS reflect a shorter window of 3-7 days; blood PEth reflects about 30 days, with test limitations.",
+      "Urine EtG guarantees detection of every drinking episode during the previous year.",
+      "Blood PEth determines the exact hour of the last drink.",
+      "All alcohol biomarkers use the same specimen and detection window."
+    ],
+    "rationale": "ACG lists urine EtG and EtS windows of 3-7 days and blood PEth at 30 days. These are reported windows with variable performance, not guarantees of exact timing or identical detection."
+  },
+  "alcohol-associated-liver-disease-018": {
+    "question": "A negative urine EtG is obtained today. The clinical question concerns alcohol use three weeks earlier. What interpretation is justified?",
+    "choices": [
+      "The negative short-window test cannot establish abstinence throughout that earlier period.",
+      "It proves there was no alcohol use in the entire preceding month.",
+      "It establishes that any liver injury has a nonalcohol cause.",
+      "It proves that AUD is absent regardless of the history."
+    ],
+    "rationale": "A urine EtG window of 3-7 days does not cover a use episode three weeks earlier. Select testing for the clinical time window and combine results with the history; a negative result does not independently exclude AUD or ALD."
+  },
+  "alcohol-associated-liver-disease-019": {
+    "question": "A positive PEth result is reviewed without any other assessment. Which conclusion goes beyond what the test establishes?",
+    "choices": [
+      "It determines the patient’s exact fibrosis stage and AUD severity.",
+      "It provides exposure information to interpret with the clinical history.",
+      "It can supplement an alcohol-use assessment.",
+      "Its meaning depends on the assay and time window."
+    ],
+    "rationale": "PEth is an exposure biomarker, not a fibrosis-stage or AUD-severity test. The result should be interpreted with history, clinical assessment and its limitations."
+  },
+  "alcohol-associated-liver-disease-020": {
+    "question": "A patient clearly discloses heavy recent drinking. What does ACG say about obtaining a biomarker solely to confirm that disclosed exposure?",
+    "choices": [
+      "It adds no clinical utility solely for that confirmation; testing should answer a specific clinical question.",
+      "It is required before any discussion of alcohol-related care.",
+      "It replaces assessment of withdrawal and liver disease.",
+      "It provides the exact amount consumed without an exposure history."
+    ],
+    "rationale": "ACG notes no added clinical utility from biomarkers in patients who disclose heavy recent drinking. Biomarkers may help when interview or exposure information is unavailable or uncertain; they do not replace other care or judge character."
+  },
+  "alcohol-associated-liver-disease-021": {
+    "question": "An asymptomatic patient has suspected ALD. Which pair does ACG identify as useful initial noninvasive fibrosis assessments?",
+    "choices": [
+      "FIB-4 and hepatic transient elastography.",
+      "AUDIT-C and PEth as direct fibrosis-stage measurements.",
+      "Urine EtG and EtS as histologic fibrosis measurements.",
+      "Alcohol container count and an unstructured impression of liver symptoms."
+    ],
+    "rationale": "ACG identifies the blood-based FIB-4 score and transient elastography for initial noninvasive fibrosis assessment in ALD. Alcohol screening and exposure biomarkers answer different questions."
+  },
+  "alcohol-associated-liver-disease-022": {
+    "question": "FIB-4 is elevated during active alcohol use with a low platelet count. Which interpretation is strongest?",
+    "choices": [
+      "Alcohol-related platelet reduction can affect the estimate; integrate other liver-stage evidence.",
+      "The score supplies an exact irreversible fibrosis stage regardless of the platelet change.",
+      "A low platelet count excludes advanced liver disease.",
+      "A positive AUDIT-C can be used to correct the FIB-4 numerically."
+    ],
+    "rationale": "ACG notes that active alcohol use may reduce platelets and affect FIB-4 accuracy. Context and other staging evidence are needed; neither declaring the estimate exact nor automatically excluding fibrosis is justified."
+  },
+  "alcohol-associated-liver-disease-023": {
+    "question": "Liver stiffness is high during marked inflammatory liver injury with elevated AST and bilirubin. What is the best interpretation?",
+    "choices": [
+      "Inflammation can overestimate stiffness; interpret it with the clinical context and arrange further assessment if uncertain.",
+      "Stiffness always equals an exact fibrosis stage even during acute injury.",
+      "Elevated bilirubin proves the stiffness measurement is falsely low.",
+      "The result makes evaluation for competing liver disease unnecessary."
+    ],
+    "rationale": "ACG describes inflammation and steatohepatitis as confounders that can overestimate liver stiffness. Further contextual assessment is appropriate; the possibility of confounding neither proves nor excludes fibrosis."
+  },
+  "alcohol-associated-liver-disease-024": {
+    "question": "Noninvasive assessment leaves unresolved diagnostic uncertainty in suspected ALD. Which statement about biopsy is appropriate?",
+    "choices": [
+      "Biopsy may help resolve uncertainty or competing diagnoses, although it is not routinely required just to stage fibrosis.",
+      "Every patient with harmful alcohol use must undergo biopsy before any counseling.",
+      "Biopsy can never be considered when noninvasive tests are inconclusive.",
+      "A urine alcohol biomarker provides the same diagnostic information as liver histology."
+    ],
+    "rationale": "ACG supports noninvasive staging and selective biopsy when diagnostic uncertainty remains. A biopsy requirement should not be applied universally, and exposure biomarkers do not supply liver histology."
+  }
+};
+for (const item of alcoholAssociatedLiverDiseaseQuestionBank) {
+  if (verifiedAldScreeningQuestions[item.id]) Object.assign(item, verifiedAldScreeningQuestions[item.id]);
+}

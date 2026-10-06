@@ -790,3 +790,93 @@ alcoholAssociatedLiverDiseaseModule.references.push(...[
     "href": "https://arcr.niaaa.nih.gov/media/631/download"
   }
 ] );
+
+
+// Source-reconciled adult alcohol screening and contextual ALD staging.
+const verifiedAldScreeningLesson = {
+  "metadata": {
+    "summary": "Use validated adult screening, quantify exposure, interpret alcohol biomarkers in context and assess fibrosis without treating an estimate as a diagnosis.",
+    "concepts": [
+      "AUDIT-C and diagnostic follow-up",
+      "U.S. standard drinks",
+      "EtG, EtS and PEth windows",
+      "Transparent testing",
+      "FIB-4 and liver stiffness",
+      "Selective biopsy and referral"
+    ],
+    "application": "Turn the alcohol-use history, screening result, biomarker window and liver-stage evidence into a clear assessment and follow-up plan.",
+    "keyPoints": [
+      "A positive brief screen needs a fuller assessment.",
+      "Count beverage volume and strength, not just containers.",
+      "A biomarker answers a time-limited exposure question.",
+      "Explain testing and avoid stigma.",
+      "Platelets and inflammation can confound fibrosis estimates.",
+      "Noninvasive staging and selective biopsy have different roles."
+    ]
+  },
+  "bodies": [
+    {
+      "heading": "Screen adults consistently and without assumptions",
+      "body": "Use a validated brief alcohol-use screen in routine adult care rather than selecting patients by appearance or stereotypes. ACG recommends standardized, nonbiased screening across clinical settings. Ask about use with neutral language and an empathic, collaborative approach. The purpose is to identify unhealthy use and offer assessment and care, not to assign blame. Routine screening recommendations do not replace clinical evaluation when a person already has diagnosed AUD or is seeking treatment."
+    },
+    {
+      "heading": "Follow a positive screen with assessment",
+      "body": "AUDIT-C has three questions about frequency, typical quantity and heavy-use occasions. The full AUDIT has ten questions and adds dependence-related features and alcohol-related problems. A positive brief screen prompts a more detailed risk assessment; it does not by itself diagnose AUD, cirrhosis or alcohol-associated hepatitis. Clarify the pattern, impaired control, consequences, last use and withdrawal history, then determine appropriate safety assessment, brief intervention or referral. Use the selected tool as validated rather than inventing a universal score cutoff."
+    },
+    {
+      "heading": "Count alcohol rather than containers",
+      "body": "A U.S. standard drink contains about 14 g or 0.6 fluid ounces of pure alcohol. Examples are 12 fl oz of beer at 5% alcohol by volume (ABV), 5 fl oz of wine at 12% ABV, or 1.5 fl oz of spirits at 40% ABV. Serving sizes and strengths vary. For a beverage measured in fluid ounces, standard drinks = volume multiplied by ABV as a decimal, divided by 0.6. A 16 fl oz can at 7.5% ABV contains 16 times 0.075 = 1.2 fl oz of alcohol, or 2 standard drinks; two such cans contain 4. Record duration, frequency, heavy-use episodes and recent change as well as the total. A drink equivalent measures exposure, not a safe allowance for liver disease."
+    },
+    {
+      "heading": "Match the biomarker to the exposure window",
+      "body": "Alcohol biomarkers supplement the interview and screening tools when they answer a clinical question. Select the specimen and test for the time period of interest. ACG Table 4 reports urine ethyl glucuronide (EtG) and ethyl sulfate (EtS) windows of 3-7 days and a blood phosphatidylethanol (PEth) window of about 30 days. These are reported detection windows, not guarantees for every patient or assay. Blood, urine and hair tests are not interchangeable. A negative short-window result cannot establish abstinence throughout an earlier month."
+    },
+    {
+      "heading": "Interpret an adjunct without overclaiming",
+      "body": "Direct biomarkers such as EtG, EtS and PEth generally perform better for detecting exposure than indirect measures such as gamma-glutamyltransferase, mean corpuscular volume or carbohydrate-deficient transferrin. Indirect measures have substantial variability and limited utility. Neither a positive alcohol biomarker nor an isolated abnormal liver test determines AUD severity, exact alcohol quantity or fibrosis stage. ACG notes that biomarkers add no clinical utility simply to confirm heavy recent drinking already disclosed; they may help when a patient cannot be interviewed or the exposure history is uncertain. Interpret the result alongside the history, clinical findings and the assay limitations."
+    },
+    {
+      "heading": "Explain testing and protect access to care",
+      "body": "Explain why a biomarker is being obtained, the time period it may reflect, its limitations and how the result will inform care. Use an ethical and transparent process. ACG specifically cautions that biomarker use in transplant assessment can have lasting stigmatizing effects and affect access to transplantation. A result should supplement assessment rather than substitute for a comprehensive psychosocial evaluation or become a judgment of character. Follow the clinical setting’s testing and consent process and use unexpected results to clarify the history and care needs."
+    },
+    {
+      "heading": "Assess fibrosis even before symptoms appear",
+      "body": "People with suspected ALD may have fibrosis while feeling well. ACG identifies FIB-4, a blood-based score, and hepatic transient elastography as useful initial noninvasive fibrosis assessments. FIB-4 estimates risk from clinical laboratory information; transient elastography measures liver stiffness. Neither is an alcohol-use screen. Evaluate these results with other liver-stage evidence, competing causes of injury and the presence of complications. A reassuring aminotransferase value alone does not supply a complete fibrosis assessment."
+    },
+    {
+      "heading": "Recognize confounding before assigning a stage",
+      "body": "Active alcohol use can lower platelet counts and affect the accuracy of FIB-4. Inflammation and steatohepatitis, particularly with markedly elevated AST or bilirubin, can overestimate liver stiffness on transient elastography. A high estimate during active injury should not automatically be called an exact irreversible fibrosis stage. Review the clinical setting and other stage evidence, and arrange further assessment when results are uncertain or discordant. Do not assume that every abnormal estimate is false or that a single improved laboratory value proves fibrosis has resolved."
+    },
+    {
+      "heading": "Resolve uncertainty and connect both kinds of care",
+      "body": "Heavy alcohol use with noninvasive evidence of ALD warrants counseling about progression risk and referral to a clinician with liver expertise. Advanced fibrosis with ongoing drinking also needs addiction care. Liver biopsy is not routinely required just to stage ALD fibrosis; it may be appropriate when noninvasive assessment leaves diagnostic uncertainty or competing diagnoses. Maintain a plan for liver follow-up and sustained AUD care. Screening, a biomarker result or a fibrosis estimate is a starting point for a care pathway rather than the endpoint."
+    }
+  ],
+  "check": {
+    "question": "An adult has a positive AUDIT-C during routine screening. What is the best next step?",
+    "choices": [
+      "Complete a nonjudgmental assessment of alcohol use, consequences and safety, then determine appropriate care.",
+      "Diagnose cirrhosis from the screening score.",
+      "Assign AUD severity from AUDIT-C alone without further assessment.",
+      "Order PEth to determine the exact fibrosis stage."
+    ],
+    "rationale": "A positive brief screen calls for more detailed assessment to confirm unhealthy alcohol use and determine care. It does not establish a liver diagnosis or replace assessment of AUD features and safety."
+  }
+};
+for (const lesson of alcoholAssociatedLiverDiseaseModule.submodules) {
+  if (lesson.slug === "screening-staging") {
+    Object.assign(lesson, verifiedAldScreeningLesson.metadata);
+    lesson.lesson = verifiedAldScreeningLesson.bodies;
+    Object.assign(lesson.check, verifiedAldScreeningLesson.check);
+  }
+}
+alcoholAssociatedLiverDiseaseModule.references.push(...[
+  {
+    "label": "NIAAA official U.S. standard-drink definition and beverage equivalents.",
+    "href": "https://www.niaaa.nih.gov/alcohols-effects-health/what-standard-drink"
+  },
+  {
+    "label": "USPSTF final adult alcohol-use screening recommendation (2018): follow-up after a positive brief screen.",
+    "href": "https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/unhealthy-alcohol-use-in-adolescents-and-adults-screening-and-behavioral-counseling-interventions"
+  }
+] );
