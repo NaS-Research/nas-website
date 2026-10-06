@@ -345,3 +345,64 @@ influenzaAntiviralPharmacologyModule.references.push(...[
     "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3445474/"
   }
 ]);
+
+
+// Complete influenza selection and timing reconciliation against authorized sources.
+Object.assign(influenzaAntiviralPharmacologyModule.submodules.find((lesson) => lesson.slug === "influenza-selection-timing"), {
+  "slug": "influenza-selection-timing",
+  "title": "Match Drug to Patient and Setting",
+  "visual": "influenza-antiviral-influenza-selection-timing",
+  "summary": "Treat priority patients promptly, interpret the two-day window in context, and match the antiviral to setting, age, route and evidence limits.",
+  "concepts": [
+    "Timing and treatment priority",
+    "Hospitalized oseltamivir",
+    "Unreliable enteral absorption",
+    "Age and route eligibility",
+    "Baloxavir population limits"
+  ],
+  "application": "Choose an antiviral from the patient\u2019s treatment priority, setting and delivery needs; verify product-specific eligibility, safety and interactions before selecting for convenience.",
+  "lesson": [
+    {
+      "heading": "Use time and priority together",
+      "body": "Benefit is greatest when treatment starts early, ideally within two days of symptom onset. The book and CDC support prompt treatment for hospitalized patients, severe or progressive illness, and patients at higher risk of complications even when more than 48 hours have passed. Do not delay treatment in these priority groups while awaiting influenza test results. For an otherwise healthy outpatient without higher-risk features, CDC permits consideration of early treatment based on clinical judgment when it can start within two days; this is not a requirement to treat every uncomplicated illness."
+    },
+    {
+      "heading": "Prefer oseltamivir in hospitalized influenza",
+      "body": "CDC recommends oral or enterically administered oseltamivir as soon as possible for hospitalized patients with suspected or confirmed influenza, including those presenting after two days. Inhaled zanamivir, IV peramivir and oral baloxavir are not routinely recommended for hospitalized influenza because evidence of clinical benefit is insufficient. A single-dose outpatient indication or an IV route does not establish a preferred hospital regimen. These hospital recommendations draw on evidence beyond the acute uncomplicated influenza indications in FDA labeling."
+    },
+    {
+      "heading": "Assess an unreliable enteral route",
+      "body": "Hospitalization or a feeding tube alone does not mean oseltamivir cannot be delivered or absorbed. Evaluate actual enteral tolerance and absorption. CDC states that IV peramivir may be considered when a hospitalized patient cannot tolerate or absorb oral or enteric oseltamivir, such as with gastric stasis, malabsorption or gastrointestinal bleeding. This is a qualified alternative, not proof of routine inpatient efficacy: the Rapivab label states that efficacy could not be established in serious influenza requiring hospitalization. Review renal function and the clinical context rather than automatically substituting a single outpatient dose."
+    },
+    {
+      "heading": "Verify treatment age and route",
+      "body": "For eligible uncomplicated outpatients presenting within two days, CDC lists oral oseltamivir, inhaled zanamivir, IV peramivir and oral baloxavir. Verify each product: FDA treatment ages are at least two weeks for oseltamivir, seven years for zanamivir, six months for peramivir and five years for baloxavir. CDC and AAP also recommend oseltamivir treatment in younger infants outside that labeled age. Treatment ages differ from prophylaxis ages. Zanamivir requires correct Diskhaler use and is not recommended with underlying airway disease because of serious bronchospasm risk; milk-protein allergy is a labeled contraindication. Check renal dosing needs for oseltamivir and peramivir and verify the specific formulation, weight-based dose and access."
+    },
+    {
+      "heading": "Respect baloxavir population limits",
+      "body": "The current Xofluza label permits treatment of acute uncomplicated influenza within 48 hours in patients at least five years old who are otherwise healthy or at high risk of complications. CDC does not recommend baloxavir during pregnancy or breastfeeding because relevant human efficacy and safety data are unavailable; oral oseltamivir is the preferred influenza treatment during pregnancy. CDC also does not recommend baloxavir monotherapy in severely immunosuppressed patients, where prolonged replication raises resistance concerns. Do not broaden that wording to every immune condition or assume its outpatient high-risk indication establishes efficacy for hospitalized or complicated/progressive illness. These evidence-based recommendations are distinct from the label\u2019s hypersensitivity contraindication."
+    },
+    {
+      "heading": "Make delivery part of selection",
+      "body": "A convenient schedule cannot overcome poor delivery, an unsuitable population or a clinically important interaction. Relenza is a dry powder for oral inhalation through the supplied Diskhaler, not a powder to place in a nebulizer or ventilator. Assess the patient\u2019s ability to use the device and provide instruction. Xofluza has oral suspension presentations for swallowing difficulty or enteral administration; follow the instructions for the actual presentation. Avoid taking baloxavir with dairy products, calcium-fortified beverages, or polyvalent-cation-containing antacids, laxatives or oral supplements because these can reduce exposure. Availability of a suspension or feeding-tube route does not change its population or illness-setting limits."
+    }
+  ],
+  "keyPoints": [
+    "Start priority patients promptly; more than 48 hours does not rule out treatment.",
+    "Oral or enteric oseltamivir is the routine hospitalized choice.",
+    "Verify product-specific age, delivery, safety and renal dosing requirements.",
+    "Baloxavir convenience does not overcome its evidence limits or cation interactions."
+  ],
+  "check": {
+    "question": "What routine antiviral does CDC recommend for hospitalized influenza?",
+    "choices": [
+      "Oral or enterically administered oseltamivir",
+      "Single-dose baloxavir",
+      "Inhaled zanamivir for every patient",
+      "No therapy after 48 hours"
+    ],
+    "answer": 0,
+    "rationale": "CDC recommends oral or enterically administered oseltamivir promptly for hospitalized influenza, including presentation after 48 hours. Baloxavir and inhaled zanamivir are not routine hospitalized choices; zanamivir also requires airway and device suitability. The two-day window is not a reason to withhold treatment from a hospitalized patient.",
+    "reviewHref": "#influenza-selection-timing"
+  }
+});

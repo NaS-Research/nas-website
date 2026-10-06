@@ -894,3 +894,248 @@ for (const [id, updates] of Object.entries({
 })) {
   Object.assign(influenzaAntiviralPharmacologyQuestionBank.find((question) => question.id === id), updates);
 }
+
+
+// Whole influenza selection questions reviewed with stable IDs and keyed indices.
+for (const [id, updates] of Object.entries({
+  "influenza-antiviral-pharmacology-033": {
+    "id": "influenza-antiviral-pharmacology-033",
+    "lesson": "influenza-selection-timing",
+    "question": "A patient hospitalized with suspected influenza presents four days after symptoms began. What should the timing decision be?",
+    "choices": [
+      "Start recommended antiviral treatment promptly rather than applying a universal 48-hour cutoff",
+      "Withhold all influenza antivirals because two days have passed",
+      "Delay treatment until symptoms have lasted seven days",
+      "Treat only if the patient was not vaccinated"
+    ],
+    "answer": 0,
+    "rationale": "Hospitalized influenza is a treatment-priority condition even after two days. There is no seven-day waiting requirement, and vaccination history does not remove the treatment indication.",
+    "reviewHref": "#influenza-selection-timing"
+  },
+  "influenza-antiviral-pharmacology-034": {
+    "id": "influenza-antiviral-pharmacology-034",
+    "lesson": "influenza-selection-timing",
+    "question": "An otherwise healthy outpatient without higher-risk features has uncomplicated influenza symptoms for one day. How does CDC frame antiviral treatment?",
+    "choices": [
+      "It may be considered on clinical judgment when it can start within two days",
+      "It is mandatory for every uncomplicated illness regardless of clinical judgment",
+      "It should be delayed until the third day",
+      "It requires hospitalization before it can be considered"
+    ],
+    "answer": 0,
+    "rationale": "CDC allows early treatment consideration in non-high-risk outpatients based on clinical judgment. It does not require universal treatment, delayed initiation or admission.",
+    "reviewHref": "#influenza-selection-timing"
+  },
+  "influenza-antiviral-pharmacology-035": {
+    "id": "influenza-antiviral-pharmacology-035",
+    "lesson": "influenza-selection-timing",
+    "question": "A high-risk outpatient has suspected influenza and treatment is indicated. Which action best reflects CDC treatment priority?",
+    "choices": [
+      "Begin treatment promptly without waiting for influenza laboratory confirmation",
+      "Wait for laboratory confirmation before any treatment in every case",
+      "Wait until the patient becomes hospitalized",
+      "Withhold treatment solely because symptoms exceed 48 hours"
+    ],
+    "answer": 0,
+    "rationale": "Priority patients should be treated promptly without awaiting test confirmation. Hospitalization is not required, and elapsed time beyond two days alone does not exclude treatment of high-risk patients.",
+    "reviewHref": "#influenza-selection-timing"
+  },
+  "influenza-antiviral-pharmacology-036": {
+    "id": "influenza-antiviral-pharmacology-036",
+    "lesson": "influenza-selection-timing",
+    "question": "Which interpretation of the early influenza treatment window should be corrected?",
+    "choices": [
+      "The greatest benefit within two days means no patient can benefit from later treatment",
+      "Early treatment generally provides the greatest benefit",
+      "Hospitalized patients should still receive recommended treatment after two days",
+      "Timing must be interpreted with severity and risk of complications"
+    ],
+    "answer": 0,
+    "rationale": "An early-benefit window is not a universal exclusion rule. Early treatment is preferable, but hospital, severity and high-risk context support later treatment.",
+    "reviewHref": "#influenza-selection-timing"
+  },
+  "influenza-antiviral-pharmacology-037": {
+    "id": "influenza-antiviral-pharmacology-037",
+    "lesson": "influenza-selection-timing",
+    "question": "Which regimen is CDC\u2019s routine preferred antiviral approach for a hospitalized patient with suspected influenza?",
+    "choices": [
+      "Oral or enterically administered oseltamivir started promptly",
+      "Single-dose baloxavir chosen solely for convenience",
+      "Inhaled zanamivir regardless of airway disease or device ability",
+      "IV peramivir for every admission because intravenous delivery proves superior benefit"
+    ],
+    "answer": 0,
+    "rationale": "CDC recommends oral or enteric oseltamivir for hospitalized influenza. Baloxavir, zanamivir and peramivir are not routinely recommended there because clinical-benefit evidence is insufficient; convenience or an IV route does not establish superiority.",
+    "reviewHref": "#influenza-selection-timing"
+  },
+  "influenza-antiviral-pharmacology-038": {
+    "id": "influenza-antiviral-pharmacology-038",
+    "lesson": "influenza-selection-timing",
+    "question": "Why are baloxavir, inhaled zanamivir and IV peramivir not routinely recommended for hospitalized influenza?",
+    "choices": [
+      "Evidence of clinical benefit in hospitalized patients is insufficient",
+      "All three are FDA contraindicated in every hospitalized patient",
+      "All three have no antiviral activity against influenza",
+      "Every hospitalized patient is unable to absorb oseltamivir"
+    ],
+    "answer": 0,
+    "rationale": "CDC cites insufficient hospitalized clinical-benefit evidence, not universal FDA contraindications or lack of antiviral activity. Hospitalization alone does not establish failed enteral absorption.",
+    "reviewHref": "#influenza-selection-timing"
+  },
+  "influenza-antiviral-pharmacology-039": {
+    "id": "influenza-antiviral-pharmacology-039",
+    "lesson": "influenza-selection-timing",
+    "question": "A hospitalized patient has gastric stasis and cannot absorb enteric oseltamivir. Which statement fits CDC guidance?",
+    "choices": [
+      "IV peramivir may be considered as a qualified alternative after clinical and renal assessment",
+      "Peramivir is proven superior for all hospitalized influenza",
+      "Use a single outpatient peramivir dose without assessing the hospitalized illness",
+      "Replace oseltamivir with baloxavir solely because both have oral suspension options"
+    ],
+    "answer": 0,
+    "rationale": "CDC allows consideration of IV peramivir when oral or enteric oseltamivir cannot be tolerated or absorbed. Inpatient benefit is not established generally, an outpatient regimen cannot be automatically transferred, and a baloxavir suspension does not solve a setting-evidence problem.",
+    "reviewHref": "#influenza-selection-timing"
+  },
+  "influenza-antiviral-pharmacology-040": {
+    "id": "influenza-antiviral-pharmacology-040",
+    "lesson": "influenza-selection-timing",
+    "question": "A hospitalized patient receives medications through a functioning feeding tube and has no identified malabsorption. Which inference should be corrected?",
+    "choices": [
+      "A feeding tube alone proves oseltamivir cannot be absorbed and requires routine peramivir",
+      "Enteric oseltamivir remains CDC\u2019s routine hospitalized option",
+      "Delivery and absorption should be assessed individually",
+      "An IV route alone does not prove better clinical benefit"
+    ],
+    "answer": 0,
+    "rationale": "A functioning tube does not by itself establish failed enteral delivery or absorption. Individual assessment and the routine enteric oseltamivir recommendation remain appropriate; intravenous delivery alone is not superiority evidence.",
+    "reviewHref": "#influenza-selection-timing"
+  },
+  "influenza-antiviral-pharmacology-041": {
+    "id": "influenza-antiviral-pharmacology-041",
+    "lesson": "influenza-selection-timing",
+    "question": "Which age statement correctly describes the FDA treatment indication for inhaled zanamivir?",
+    "choices": [
+      "Acute uncomplicated influenza treatment is indicated from seven years of age; the prophylaxis age differs",
+      "Its treatment indication begins at five years because that is its prophylaxis age",
+      "Its treatment indication begins at six months because peramivir is approved then",
+      "There is no need to check age for an inhaled antiviral"
+    ],
+    "answer": 0,
+    "rationale": "Relenza treatment begins at seven years; prophylaxis begins at five years. Peramivir\u2019s six-month treatment age cannot be applied to zanamivir, and age must be verified.",
+    "reviewHref": "#influenza-selection-timing"
+  },
+  "influenza-antiviral-pharmacology-042": {
+    "id": "influenza-antiviral-pharmacology-042",
+    "lesson": "influenza-selection-timing",
+    "question": "An outpatient with asthma is being considered for influenza therapy. What is the appropriate interpretation of inhaled zanamivir?",
+    "choices": [
+      "It is not recommended with underlying airway disease because of serious bronchospasm risk",
+      "It is preferred because all inhaled medicines improve asthma",
+      "Its dry powder should be mixed into a nebulizer to eliminate risk",
+      "Only milk-protein allergy matters; airway disease can be ignored"
+    ],
+    "answer": 0,
+    "rationale": "The book, CDC and Relenza labeling identify bronchospasm risk with underlying airway disease. Inhalation does not imply asthma benefit; the supplied powder must not be nebulized. Milk-protein allergy is a separate contraindication and does not replace airway assessment.",
+    "reviewHref": "#influenza-selection-timing"
+  },
+  "influenza-antiviral-pharmacology-043": {
+    "id": "influenza-antiviral-pharmacology-043",
+    "lesson": "influenza-selection-timing",
+    "question": "Which statement correctly separates oseltamivir\u2019s FDA treatment age from CDC/AAP recommendations?",
+    "choices": [
+      "FDA labeling begins at two weeks, while CDC/AAP also recommend treatment in younger infants",
+      "FDA labeling begins at one year because that is the prophylaxis age",
+      "CDC prohibits treatment in all infants younger than two weeks",
+      "The baloxavir five-year age can be applied to oseltamivir"
+    ],
+    "answer": 0,
+    "rationale": "Tamiflu labeling permits treatment from two weeks, with younger-infant treatment recommended by CDC/AAP outside that labeled age. Prophylaxis and other-drug ages cannot be substituted.",
+    "reviewHref": "#influenza-selection-timing"
+  },
+  "influenza-antiviral-pharmacology-044": {
+    "id": "influenza-antiviral-pharmacology-044",
+    "lesson": "influenza-selection-timing",
+    "question": "An eligible outpatient is considering baloxavir while taking an oral calcium supplement. What should be addressed?",
+    "choices": [
+      "Avoid concomitant use with polyvalent-cation-containing supplements and verify the product-specific dose and presentation",
+      "Take the supplement with baloxavir to improve absorption",
+      "Use a dairy beverage to avoid the cation interaction",
+      "Assume one-dose convenience removes the need to review interactions"
+    ],
+    "answer": 0,
+    "rationale": "Xofluza labeling advises avoiding concomitant polyvalent cations because exposure can be reduced. Dairy and calcium-fortified beverages are also included; a single dose still requires interaction and formulation review.",
+    "reviewHref": "#influenza-selection-timing"
+  },
+  "influenza-antiviral-pharmacology-045": {
+    "id": "influenza-antiviral-pharmacology-045",
+    "lesson": "influenza-selection-timing",
+    "question": "Which immune-host statement accurately reflects CDC\u2019s baloxavir monotherapy recommendation?",
+    "choices": [
+      "It is not recommended in severely immunosuppressed patients because prolonged replication raises resistance concern",
+      "It is prohibited for every patient with any immune condition regardless of severity",
+      "It is preferred in severe immunosuppression solely because it is one dose",
+      "Its uncomplicated high-risk indication proves efficacy for every immunosuppressed hospitalized patient"
+    ],
+    "answer": 0,
+    "rationale": "CDC specifies severely immunosuppressed patients for this monotherapy recommendation. Do not broaden it to every immune condition or infer universal severe-host inpatient benefit from convenience or an outpatient high-risk indication.",
+    "reviewHref": "#influenza-selection-timing"
+  },
+  "influenza-antiviral-pharmacology-046": {
+    "id": "influenza-antiviral-pharmacology-046",
+    "lesson": "influenza-selection-timing",
+    "question": "Why does CDC not recommend baloxavir during pregnancy or breastfeeding?",
+    "choices": [
+      "Relevant human efficacy and safety data are unavailable; this recommendation is distinct from the label\u2019s hypersensitivity contraindication",
+      "The FDA label lists pregnancy as an absolute hypersensitivity contraindication",
+      "Animal data alone establish proven human safety in both settings",
+      "Being oral makes baloxavir the preferred treatment in pregnancy"
+    ],
+    "answer": 0,
+    "rationale": "CDC cites unavailable relevant human data. The labeled contraindication concerns hypersensitivity, and animal results do not establish human pregnancy or lactation safety. Oral oseltamivir is preferred during pregnancy.",
+    "reviewHref": "#influenza-selection-timing"
+  },
+  "influenza-antiviral-pharmacology-047": {
+    "id": "influenza-antiviral-pharmacology-047",
+    "lesson": "influenza-selection-timing",
+    "question": "Which patient fits the current Xofluza labeled treatment population, subject to the remaining safety and dosing checks?",
+    "choices": [
+      "An otherwise healthy six-year-old with acute uncomplicated influenza beginning yesterday",
+      "A four-year-old selected solely because suspension is available",
+      "A hospitalized adult with complicated influenza selected solely for a one-dose schedule",
+      "An adult with uncomplicated influenza beginning five days ago selected under the within-48-hour label"
+    ],
+    "answer": 0,
+    "rationale": "The label permits acute uncomplicated treatment from five years within 48 hours, including otherwise healthy patients. A suspension does not lower the age, and convenience does not extend the labeled setting or symptom window.",
+    "reviewHref": "#influenza-selection-timing"
+  },
+  "influenza-antiviral-pharmacology-048": {
+    "id": "influenza-antiviral-pharmacology-048",
+    "lesson": "influenza-selection-timing",
+    "question": "A patient cannot swallow tablets. Which statement about a baloxavir suspension is correct?",
+    "choices": [
+      "An appropriate suspension presentation may address delivery, but age, illness setting and interactions still must be checked",
+      "Suspension availability establishes routine efficacy in hospitalized influenza",
+      "Suspension eliminates interactions with calcium products",
+      "Every suspension presentation has identical preparation instructions"
+    ],
+    "answer": 0,
+    "rationale": "The label provides suspension presentations for swallowing difficulty and enteral administration. Delivery options do not establish hospital efficacy or remove cation interactions, and instructions differ by presentation.",
+    "reviewHref": "#influenza-selection-timing"
+  },
+  "influenza-antiviral-pharmacology-179": {
+    "id": "influenza-antiviral-pharmacology-179",
+    "lesson": "influenza-selection-timing",
+    "question": "A hospitalized patient has had symptoms for four days. What routine antiviral does CDC recommend?",
+    "choices": [
+      "Oral or enterically administered oseltamivir",
+      "No treatment because 48 hours passed",
+      "Single-dose baloxavir",
+      "Inhaled zanamivir regardless of airway disease"
+    ],
+    "answer": 0,
+    "rationale": "CDC recommends oral or enterically administered oseltamivir promptly for hospitalized influenza, including four days after symptom onset. The 48-hour window does not exclude treatment here. Baloxavir and inhaled zanamivir are not routine hospitalized choices, and zanamivir also requires assessment of airway disease and device suitability.",
+    "reviewHref": "#influenza-selection-timing"
+  }
+})) {
+  Object.assign(influenzaAntiviralPharmacologyQuestionBank.find((question) => question.id === id), updates);
+}

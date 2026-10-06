@@ -27,10 +27,11 @@ const diagrams = {
     descriptions: ["Oseltamivir, zanamivir and peramivir.", "Baloxavir inhibits cap snatching.", "Adamantanes are not recommended.", "Check exposure, host and complications."],
   },
   "influenza-selection-timing": {
-    eyebrow: "Selection logic",
-    title: "Match the product to the patient",
-    nodes: ["Onset", "Setting", "Route and age", "Evidence boundary"],
-    notes: ["Treat early", "Hospital or outpatient", "Delivery must fit", "Do not overextend"],
+    eyebrow: "Antiviral selection",
+    title: "Match timing, setting and delivery",
+    nodes: ["Priority", "Setting", "Delivery", "Evidence limits"],
+    notes: ["Treat promptly", "Hospitalized oseltamivir", "Verify age and route", "Check population and illness"],
+    descriptions: ["Two days is not a universal cutoff.", "Oral or enteric is the routine choice.", "Check device, absorption and interactions.", "Convenience does not establish benefit."],
   },
   "oseltamivir-mechanism-pk": {
     eyebrow: "Prodrug pathway",
@@ -96,9 +97,9 @@ export default function InfluenzaAntiviralPharmacologyVisual({ type }) {
         {data.nodes.map((label, index) => (
           <div key={label}>
             <span>{String(index + 1).padStart(2, "0")}</span>
-            <strong style={type === "influenza-antiviral-influenza-life-cycle-targets" ? { fontSize: "14px" } : undefined}>{label}</strong>
-            <em style={(type === "influenza-antiviral-oseltamivir-dosing-administration" || type === "influenza-antiviral-influenza-biology-triage" || type === "influenza-antiviral-influenza-life-cycle-targets") ? { fontSize: "14px" } : undefined}>{data.notes[index]}</em>
-            <p style={(type === "influenza-antiviral-oseltamivir-dosing-administration" || type === "influenza-antiviral-influenza-biology-triage" || type === "influenza-antiviral-influenza-life-cycle-targets") ? { fontSize: "14px" } : undefined}>{data.descriptions?.[index] ?? (index < data.nodes.length - 1 ? "Carry the verified input forward." : "Own the next clinical action.")}</p>
+            <strong style={(type === "influenza-antiviral-influenza-life-cycle-targets" || type === "influenza-antiviral-influenza-selection-timing") ? { fontSize: "14px" } : undefined}>{label}</strong>
+            <em style={(type === "influenza-antiviral-oseltamivir-dosing-administration" || type === "influenza-antiviral-influenza-biology-triage" || type === "influenza-antiviral-influenza-life-cycle-targets" || type === "influenza-antiviral-influenza-selection-timing") ? { fontSize: "14px" } : undefined}>{data.notes[index]}</em>
+            <p style={(type === "influenza-antiviral-oseltamivir-dosing-administration" || type === "influenza-antiviral-influenza-biology-triage" || type === "influenza-antiviral-influenza-life-cycle-targets" || type === "influenza-antiviral-influenza-selection-timing") ? { fontSize: "14px" } : undefined}>{data.descriptions?.[index] ?? (index < data.nodes.length - 1 ? "Carry the verified input forward." : "Own the next clinical action.")}</p>
           </div>
         ))}
       </div>
