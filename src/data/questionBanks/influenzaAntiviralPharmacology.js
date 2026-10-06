@@ -145,3 +145,262 @@ const sourceReviewedAdministrationQuestions = {
 };
 export const influenzaAntiviralPharmacologyQuestionBank = [...generated,...cases].map((question) => sourceReviewedAdministrationQuestions[question.id] ? { ...question, ...sourceReviewedAdministrationQuestions[question.id] } : question);
 if(influenzaAntiviralPharmacologyQuestionBank.length<100)throw new Error(`Influenza antiviral pharmacology bank must contain at least 100 questions, found ${influenzaAntiviralPharmacologyQuestionBank.length}.`);
+
+
+// Whole oseltamivir questions reviewed, with stable IDs and keyed indices.
+for (const [id, updates] of Object.entries({
+  "influenza-antiviral-pharmacology-065": {
+    "id": "influenza-antiviral-pharmacology-065",
+    "lesson": "oseltamivir-dosing-administration",
+    "question": "Which principle best characterizes oseltamivir adult treatment?",
+    "choices": [
+      "The standard adult uncomplicated-influenza treatment regimen is 75 mg twice daily for five days",
+      "Adults receive 75 mg once daily for five days as the standard treatment course",
+      "Adults receive 75 mg twice daily for one day as the standard treatment course",
+      "Adults receive 600 mg intravenously once as the standard oseltamivir treatment course"
+    ],
+    "answer": 0,
+    "rationale": "The book specifies oral oseltamivir 75 mg twice daily for five days for adult treatment. Once-daily dosing belongs to its prophylaxis schedule, and 600 mg intravenously once is its adult peramivir regimen. Renal impairment requires separate adjustment.",
+    "reviewHref": "#oseltamivir-dosing-administration"
+  },
+  "influenza-antiviral-pharmacology-066": {
+    "id": "influenza-antiviral-pharmacology-066",
+    "lesson": "oseltamivir-dosing-administration",
+    "question": "A hospitalized adult has suspected influenza, symptoms for four days and impaired renal function. Which action best fits oseltamivir treatment?",
+    "choices": [
+      "Start as early as possible and adjust for renal function, dialysis, setting, and current guidance",
+      "Withhold oseltamivir solely because symptoms began more than 48 hours ago",
+      "Use the once-daily prophylaxis interval regardless of kidney function",
+      "Automatically double the standard dose because every hospitalized patient needs more drug"
+    ],
+    "answer": 0,
+    "rationale": "CDC recommends prompt oral or enteric oseltamivir for hospitalized suspected or confirmed influenza even after 48 hours. Check renal function, dialysis and actual illness course; neither a prophylaxis schedule nor automatic higher dosing substitutes for that review.",
+    "reviewHref": "#oseltamivir-dosing-administration"
+  },
+  "influenza-antiviral-pharmacology-067": {
+    "id": "influenza-antiviral-pharmacology-067",
+    "lesson": "oseltamivir-dosing-administration",
+    "question": "Before delivering oseltamivir through an enteral route to an adult with influenza, which assessment best addresses dose and delivery?",
+    "choices": [
+      "Assess indication, onset, age, renal function, dialysis, enteral route, adherence, and vomiting",
+      "Review the capsule color alone and use a standard dose despite renal failure",
+      "Check onset alone and ignore whether the complete dose can be delivered",
+      "Assume tube delivery proves absorption and omit review of vomiting or intolerance"
+    ],
+    "answer": 0,
+    "rationale": "CDC supports enteric oseltamivir, while the dose and schedule depend on indication, renal function and dialysis. Verify the actual formulation, route and ability to deliver and absorb the ordered dose. A tube does not remove the need to assess intolerance or supply; no universal feeding hold or flush is established by these sources.",
+    "reviewHref": "#oseltamivir-dosing-administration"
+  },
+  "influenza-antiviral-pharmacology-068": {
+    "id": "influenza-antiviral-pharmacology-068",
+    "lesson": "oseltamivir-dosing-administration",
+    "question": "Which reasoning hazard is most important to prevent with oseltamivir adult treatment?",
+    "choices": [
+      "Confusing once-daily prophylaxis with twice-daily treatment",
+      "Confirming a twice-daily treatment interval",
+      "Recording the five-day treatment duration",
+      "Separating the treatment order from a prevention order"
+    ],
+    "answer": 0,
+    "rationale": "The book gives oseltamivir 75 mg twice daily for five days for adult treatment and 75 mg once daily for ten days for prophylaxis. Importing the once-daily prevention interval into a treatment order confuses the two purposes; checking the interval, duration and indication prevents that error.",
+    "reviewHref": "#oseltamivir-dosing-administration"
+  },
+  "influenza-antiviral-pharmacology-069": {
+    "id": "influenza-antiviral-pharmacology-069",
+    "lesson": "oseltamivir-dosing-administration",
+    "question": "Which statement matches the Tamiflu label for pediatric influenza treatment before any individualized adjustment?",
+    "choices": [
+      "Current labeling uses 3 mg/kg twice daily from 2 weeks to less than 1 year and weight bands from 1 through 12 years",
+      "The adult dose row means oseltamivir treatment is prohibited below age 13",
+      "Every infant receives 75 mg twice daily regardless of weight or prematurity",
+      "Treatment and prophylaxis are both labeled from birth with the same twice-daily interval"
+    ],
+    "answer": 0,
+    "rationale": "The label gives 3 mg/kg per dose twice daily from 2 weeks to less than 1 year and weight-band treatment from ages 1 through 12. CDC recommendations for younger infants and AAP/prematurity regimens are distinct from this labeled rule; labeled prophylaxis starts at age 1.",
+    "reviewHref": "#oseltamivir-dosing-administration"
+  },
+  "influenza-antiviral-pharmacology-070": {
+    "id": "influenza-antiviral-pharmacology-070",
+    "lesson": "oseltamivir-dosing-administration",
+    "question": "After selecting an age-appropriate oseltamivir regimen, which action best converts it into a measurable pediatric dose?",
+    "choices": [
+      "Calculate from kilograms and verify the 6 mg/mL suspension volume or capsule strength",
+      "Use pounds as kilograms without conversion",
+      "Treat a 45 mg order as 45 mL regardless of concentration",
+      "Use one fixed adult capsule dose for every child below age 13"
+    ],
+    "answer": 0,
+    "rationale": "Use current kilograms for the infant calculation or child weight band, then verify the actual concentration or capsule strength. At 6 mg/mL, 45 mg is 7.5 mL. Pounds, milligrams and milliliters cannot be substituted for one another.",
+    "reviewHref": "#oseltamivir-dosing-administration"
+  },
+  "influenza-antiviral-pharmacology-071": {
+    "id": "influenza-antiviral-pharmacology-071",
+    "lesson": "oseltamivir-dosing-administration",
+    "question": "Which assessment is most appropriate before choosing an oseltamivir dose for an infant or child?",
+    "choices": [
+      "Assess age, weight, prematurity, concentration, milligrams, milliliters, device, renal function, and course",
+      "Use the infant weight alone and omit postmenstrual age in premature infants",
+      "Choose a dose from bottle size without confirming age or indication",
+      "Apply the adult renal table to every infant without an individualized plan"
+    ],
+    "answer": 0,
+    "rationale": "The label separates infant mg/kg doses from child weight bands and adult renal schedules. CDC identifies postmenstrual-age dosing in premature infants and additional infant recommendations. Verify the dose, concentration, device and course; the label does not supply a general pediatric renal-adjustment table.",
+    "reviewHref": "#oseltamivir-dosing-administration"
+  },
+  "influenza-antiviral-pharmacology-072": {
+    "id": "influenza-antiviral-pharmacology-072",
+    "lesson": "oseltamivir-dosing-administration",
+    "question": "Which error is most important to avoid when interpreting the book adult oseltamivir dose row?",
+    "choices": [
+      "Treating the adult-dose age row as the minimum age for all oseltamivir treatment",
+      "Recognizing that the label includes treatment from age 2 weeks",
+      "Checking postmenstrual age before dosing a premature infant",
+      "Separating labeled infant dosing from CDC and AAP recommendations"
+    ],
+    "answer": 0,
+    "rationale": "The book also says pediatric doses are weight based; its adult row is not a prohibition on all younger patients. The current label and CDC provide distinct infant and premature-infant guidance. The other actions preserve those distinctions.",
+    "reviewHref": "#oseltamivir-dosing-administration"
+  },
+  "influenza-antiviral-pharmacology-073": {
+    "id": "influenza-antiviral-pharmacology-073",
+    "lesson": "oseltamivir-dosing-administration",
+    "question": "Which principle best characterizes oseltamivir suspension calculation?",
+    "choices": [
+      "The constituted commercial suspension contains 6 mg/mL, so a 45 mg dose requires 7.5 mL",
+      "The constituted suspension contains 6 mg/mL, so a 45 mg dose requires 45 mL",
+      "The constituted suspension contains 6 mg/mL, so a 45 mg dose requires 6 mL",
+      "The constituted suspension contains 6 mg/mL, so a 45 mg dose requires 2.7 mL"
+    ],
+    "answer": 0,
+    "rationale": "The book lists a 6 mg/mL oseltamivir suspension. Divide the prescribed 45 mg by 6 mg/mL to obtain 7.5 mL. The alternatives would deliver 270 mg, 36 mg and 16.2 mg, respectively.",
+    "reviewHref": "#oseltamivir-dosing-administration"
+  },
+  "influenza-antiviral-pharmacology-074": {
+    "id": "influenza-antiviral-pharmacology-074",
+    "lesson": "oseltamivir-dosing-administration",
+    "question": "Which clinical action best applies to oseltamivir suspension calculation?",
+    "choices": [
+      "Divide ordered milligrams by concentration and measure with an oral dosing device",
+      "Use the ordered milligram number as the milliliter number without division",
+      "Use the concentration number as the dose volume for every prescription",
+      "Divide concentration by the ordered milligrams and record that result as milliliters"
+    ],
+    "answer": 0,
+    "rationale": "Volume equals ordered mass divided by concentration: 45 mg divided by 6 mg/mL is 7.5 mL. Measuring that calculated oral volume is the practical application of the book concentration; a concentration is not itself a dose volume.",
+    "reviewHref": "#oseltamivir-dosing-administration"
+  },
+  "influenza-antiviral-pharmacology-075": {
+    "id": "influenza-antiviral-pharmacology-075",
+    "lesson": "oseltamivir-dosing-administration",
+    "question": "Which assessment is most appropriate for oseltamivir suspension calculation?",
+    "choices": [
+      "Assess concentration, prescribed milligrams, calculated milliliters, device markings, caregiver technique, and total volume",
+      "Review the ordered milligrams alone and omit concentration and milliliters",
+      "Review bottle capacity alone and omit the dose and measuring device",
+      "Assume every suspension uses the same concentration and skip the calculation"
+    ],
+    "answer": 0,
+    "rationale": "An accurate oral delivery review connects the book 6 mg/mL concentration to the prescribed mass and calculated volume. Device markings, caregiver technique and available volume help establish whether the calculated dose can be measured and delivered accurately.",
+    "reviewHref": "#oseltamivir-dosing-administration"
+  },
+  "influenza-antiviral-pharmacology-076": {
+    "id": "influenza-antiviral-pharmacology-076",
+    "lesson": "oseltamivir-dosing-administration",
+    "question": "Which reasoning hazard is most important to prevent with oseltamivir suspension calculation?",
+    "choices": [
+      "Confusing the 6 mg/mL concentration with a 6 mL dose",
+      "Dividing 45 mg by 6 mg/mL to obtain 7.5 mL",
+      "Keeping concentration units separate from dose-volume units",
+      "Checking the calculated volume against the prescribed mass"
+    ],
+    "answer": 0,
+    "rationale": "The book concentration of 6 mg/mL describes mass per volume. It does not mean every dose is 6 mL: 6 mL would contain 36 mg, while an ordered 45 mg requires 7.5 mL. The other actions preserve that distinction.",
+    "reviewHref": "#oseltamivir-dosing-administration"
+  },
+  "influenza-antiviral-pharmacology-077": {
+    "id": "influenza-antiviral-pharmacology-077",
+    "lesson": "oseltamivir-dosing-administration",
+    "question": "Which statement correctly describes oral oseltamivir administration and suspension storage?",
+    "choices": [
+      "Capsules and suspension may be taken with or without food, food can improve tolerability, and constituted suspension has product-specific storage limits",
+      "All oseltamivir doses require fasting and permanent avoidance of dairy products",
+      "Commercial and emergency suspensions have identical stability because both contain 6 mg/mL",
+      "Constituted commercial suspension may be frozen to extend the expiration date"
+    ],
+    "answer": 0,
+    "rationale": "Food is optional and may improve tolerability. Commercial constituted Tamiflu suspension is used within 17 refrigerated days or 10 days at controlled room temperature and must not be frozen. The labeled emergency capsule preparation instead has five-week refrigerated or five-day room-temperature stability.",
+    "reviewHref": "#oseltamivir-dosing-administration"
+  },
+  "influenza-antiviral-pharmacology-078": {
+    "id": "influenza-antiviral-pharmacology-078",
+    "lesson": "oseltamivir-dosing-administration",
+    "question": "Which action best applies to a bottle of constituted commercial Tamiflu suspension?",
+    "choices": [
+      "Shake the suspension, measure accurately, use within the labeled storage interval, and consider food for nausea",
+      "Skip shaking because the calculated concentration guarantees a uniform dose",
+      "Extend the commercial expiration to five weeks refrigerated by borrowing the emergency-batch rule",
+      "Measure each dose with an uncalibrated household spoon"
+    ],
+    "answer": 0,
+    "rationale": "The product label requires shaking and a suitable milliliter dosing device. Use the commercial preparation storage interval, not the emergency preparation interval. Taking a dose with food may reduce gastrointestinal upset.",
+    "reviewHref": "#oseltamivir-dosing-administration"
+  },
+  "influenza-antiviral-pharmacology-079": {
+    "id": "influenza-antiviral-pharmacology-079",
+    "lesson": "oseltamivir-dosing-administration",
+    "question": "Which assessment best verifies commercial oseltamivir suspension handling and tolerability?",
+    "choices": [
+      "Assess constitution date, refrigeration, room temperature, expiration label, shaking, device, food, and vomiting",
+      "Review drug name alone and assume every suspension has the same expiration",
+      "Use refrigeration as proof that a bottle remains usable indefinitely",
+      "Check taste alone and omit the preparation date and measured volume"
+    ],
+    "answer": 0,
+    "rationale": "Link the exact preparation and date to its storage history and labeled expiration. Shaking and the calibrated device help deliver the calculated volume; food and vomiting identify tolerability or delivery concerns. Refrigeration does not remove the finite storage limit.",
+    "reviewHref": "#oseltamivir-dosing-administration"
+  },
+  "influenza-antiviral-pharmacology-080": {
+    "id": "influenza-antiviral-pharmacology-080",
+    "lesson": "oseltamivir-dosing-administration",
+    "question": "Which error most directly threatens an accurate oseltamivir suspension expiration label?",
+    "choices": [
+      "Applying emergency-compounded storage rules to the commercial suspension",
+      "Identifying whether the suspension came from commercial powder or an emergency capsule preparation",
+      "Using the commercial 17-day refrigerated limit for constituted branded powder",
+      "Using the emergency five-day room-temperature limit for its labeled capsule preparation"
+    ],
+    "answer": 0,
+    "rationale": "The same 6 mg/mL concentration does not make the preparations interchangeable. Commercial powder suspension has 17-day refrigerated or 10-day room-temperature limits; the specified emergency preparation has five-week refrigerated or five-day room-temperature limits. Identify the preparation before assigning its expiration.",
+    "reviewHref": "#oseltamivir-dosing-administration"
+  },
+  "influenza-antiviral-pharmacology-181": {
+    "id": "influenza-antiviral-pharmacology-181",
+    "lesson": "oseltamivir-dosing-administration",
+    "question": "A 45 mg oseltamivir dose is ordered from a 6 mg/mL suspension. What volume is required?",
+    "choices": [
+      "7.5 mL",
+      "45 mL",
+      "6 mL",
+      "2.7 mL"
+    ],
+    "answer": 0,
+    "rationale": "Forty-five milligrams divided by 6 mg per mL equals 7.5 mL.",
+    "reviewHref": "#oseltamivir-dosing-administration"
+  },
+  "influenza-antiviral-pharmacology-182": {
+    "id": "influenza-antiviral-pharmacology-182",
+    "lesson": "oseltamivir-dosing-administration",
+    "question": "What is the standard adult uncomplicated-influenza treatment regimen?",
+    "choices": [
+      "75 mg twice daily for five days",
+      "75 mg once daily for five days",
+      "600 mg intravenously once",
+      "40 mg orally once for every weight"
+    ],
+    "answer": 0,
+    "rationale": "Treatment uses twice-daily oseltamivir for five days before renal adjustment.",
+    "reviewHref": "#oseltamivir-dosing-administration"
+  }
+})) {
+  Object.assign(influenzaAntiviralPharmacologyQuestionBank.find((question) => question.id === id), updates);
+}

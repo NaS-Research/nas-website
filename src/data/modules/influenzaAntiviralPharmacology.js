@@ -110,3 +110,84 @@ export const influenzaAntiviralPharmacologyModule={
   ],
   questionBank:influenzaAntiviralPharmacologyQuestionBank
 };
+
+
+// Complete oseltamivir dosing and delivery reconciliation against authorized sources.
+for (const [slug, updates] of Object.entries({
+  "oseltamivir-dosing-administration": {
+    "slug": "oseltamivir-dosing-administration",
+    "title": "Calculate Oseltamivir Exposure",
+    "visual": "influenza-antiviral-oseltamivir-dosing-administration",
+    "summary": "Choose the indication and calendar, verify age and weight, adjust for kidney function and dialysis, then deliver and store the exact oseltamivir preparation.",
+    "concepts": [
+      "Treatment versus prophylaxis",
+      "Age and weight dosing",
+      "6 mg/mL conversion",
+      "Renal and dialysis schedule",
+      "Commercial versus emergency suspension"
+    ],
+    "application": "Write the dose, interval, duration, route and preparation explicitly; show that the measured volume and available supply can deliver the complete course.",
+    "lesson": [
+      {
+        "heading": "Separate treatment from prophylaxis",
+        "body": "For adults and adolescents at least 13 years old with uncomplicated influenza and no renal adjustment, treatment is 75 mg twice daily for five days. The same 75 mg dose is used once daily for prophylaxis. Start treatment promptly: the label describes uncomplicated illness within 48 hours, while the book and CDC support later treatment for hospitalized, severe, progressive or high-risk illness. Hospitalized or prolonged severe illness can require an individualized duration; do not automatically double the dose or apply a five-day outpatient course to every admission."
+      },
+      {
+        "heading": "Use current pediatric dosing",
+        "body": "Under the Tamiflu label, infants from 2 weeks to less than 1 year receive 3 mg/kg per dose twice daily for five days. For children 1 through 12 years, each treatment dose is 30 mg at 15 kg or less, 45 mg above 15 through 23 kg, 60 mg above 23 through 40 kg, and 75 mg above 40 kg, given twice daily. Labeled prophylaxis starts at age 1 year and uses those same weight-band doses once daily. Verify age, current kilograms, indication and renal context before converting milligrams into volume."
+      },
+      {
+        "heading": "Calculate suspension volume",
+        "body": "The commercial constituted suspension contains 6 mg/mL. Divide the ordered milligrams by 6 mg/mL: 30, 45, 60 and 75 mg require 5, 7.5, 10 and 12.5 mL respectively. A 45 mg twice-daily five-day course requires ten doses, or 75 mL; one commercial bottle delivers 60 mL, so it is insufficient for that course. Shake well and use a suitable milliliter-marked oral device. Check the concentration, individual dose, measuring technique and total course supply together."
+      },
+      {
+        "heading": "Adjust and store precisely",
+        "body": "Adult renal adjustment uses estimated creatinine clearance and the indication. Above 60 mL/min, use the standard regimen. Above 30 through 60 mL/min, treatment is 30 mg twice daily for five days and prophylaxis is 30 mg once daily. Above 10 through 30 mL/min, treatment is 30 mg once daily for five days and prophylaxis is 30 mg every other day. Exactly 30 mL/min belongs to the lower-dose band. Pediatric renal dosing is not supplied in the Tamiflu label; obtain an appropriate individualized plan rather than applying the adult table indiscriminately. Storage also depends on the exact preparation, as described below."
+      },
+      {
+        "heading": "Name the prophylaxis calendar",
+        "body": "The book gives a ten-day post-exposure course; the Tamiflu label specifies at least ten days after close contact for adults and ten days for children. CDC guidance recommends seven days after the last known exposure. For institutional outbreaks, CDC recommends at least two weeks and continuation through one week after the last known case. The label separately allows community-outbreak prophylaxis for up to six weeks, or up to twelve weeks in immunocompromised patients. Identify the setting, exposure endpoint and chosen guidance when documenting the duration; these different calendars are not interchangeable."
+      },
+      {
+        "heading": "Distinguish term and premature infants",
+        "body": "CDC recommends treatment even below the labeled age of 14 days and prophylaxis from age 3 months to less than 1 year at 3 mg/kg once daily. Below 3 months, prophylaxis is generally avoided unless the situation is critical. CDC notes the AAP treatment recommendation of 3.5 mg/kg twice daily for infants 9 to 11 months, distinct from the label dose. Premature infants require postmenstrual age, calculated as gestational plus chronological age: CDC treatment doses are 1 mg/kg twice daily below 38 weeks, 1.5 mg/kg twice daily at 38 through 40 weeks, and 3 mg/kg twice daily above 40 weeks. Do not apply the full-term infant dose without that assessment."
+      },
+      {
+        "heading": "Choose a deliverable formulation",
+        "body": "Capsules and suspension can be taken with or without food; food may reduce stomach upset. Suspension is preferred when capsules cannot be swallowed. If the commercial suspension is unavailable, the label permits opening an appropriate-strength capsule and mixing its contents with a specified sweetened liquid under pharmacist or clinician instructions. CDC recommends oral or enterically administered oseltamivir for hospitalized influenza, but impaired absorption or tolerance requires reassessment. Verify the exact product, prescribed dose and local tube-delivery procedure; the oral label does not establish a universal feeding hold, dilution or flushing schedule. Vomiting or an incompletely delivered dose needs clinical review rather than automatic redosing."
+      },
+      {
+        "heading": "Link dialysis doses to the actual schedule",
+        "body": "For adults with end-stage renal disease on hemodialysis, the label gives 30 mg immediately, then 30 mg after each hemodialysis cycle for treatment, over no more than five days. Prophylaxis uses 30 mg immediately and after alternate cycles. The initial treatment dose does not replace the dose after the next dialysis session. For continuous ambulatory peritoneal dialysis, labeled treatment is one 30 mg dose; CDC specifies immediately after an exchange. Labeled prophylaxis is 30 mg immediately and then once weekly. These CAPD data do not define every dialysis modality, and oseltamivir is not recommended in end-stage renal disease without dialysis."
+      },
+      {
+        "heading": "Label the commercial suspension",
+        "body": "For the branded Tamiflu powder bottle, the pharmacist adds 55 mL water and shakes for 15 seconds, producing a usable 60 mL of 6 mg/mL suspension. The water added is not the final deliverable volume. Label the preparation date, expiration and shaking instructions. Use this constituted commercial product within 17 days at 2 to 8 degrees C without freezing, or within ten days at controlled room temperature, 25 degrees C. Confirm the instructions for the actual dispensed product rather than transferring branded preparation instructions to a different product."
+      },
+      {
+        "heading": "Keep emergency preparation separate",
+        "body": "When the commercial suspension and suitable capsule strengths are unavailable in an emergency, the label supplies a pharmacist preparation from 75 mg Tamiflu capsules to 6 mg/mL. Follow its complete capsule, water, vehicle and volume tables; the studied vehicles are Cherry Syrup, Ora-Sweet SF or simple syrup, with glass or PET containers. This emergency preparation is stable for five weeks refrigerated at 2 to 8 degrees C or five days at 25 degrees C. Its calendar differs from the commercial powder suspension even though both contain 6 mg/mL. Do not improvise a batch recipe from the concentration alone; label the formulation and discard remaining suspension after the course."
+      }
+    ],
+    "keyPoints": [
+      "Treatment and prophylaxis use different frequencies and may use different duration guidance.",
+      "Infant, premature-infant and pediatric weight-band regimens require separate assessment.",
+      "A 45 mg dose at 6 mg/mL is 7.5 mL; ten doses require 75 mL.",
+      "Match renal/dialysis dosing and storage to the indication and exact preparation."
+    ],
+    "check": {
+      "question": "What volume of 6 mg/mL oseltamivir suspension provides 45 mg?",
+      "choices": [
+        "7.5 mL",
+        "45 mL",
+        "6 mL",
+        "2.7 mL"
+      ],
+      "answer": 0,
+      "rationale": "Divide 45 mg by 6 mg per mL.",
+      "reviewHref": "#oseltamivir-dosing-administration"
+    }
+  }
+})) {
+  Object.assign(influenzaAntiviralPharmacologyModule.submodules.find((lesson) => lesson.slug === slug), updates);
+}

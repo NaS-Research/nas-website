@@ -41,7 +41,7 @@ const diagrams = {
     eyebrow: "Dose system",
     title: "Convert the order into delivery",
     nodes: ["Indication", "Age and weight", "6 mg per mL", "Renal schedule"],
-    notes: ["Treatment or prophylaxis", "Select the band", "Calculate volume", "Preserve the calendar"],
+    notes: ["Treatment or prophylaxis", "Age-specific dose", "Calculate volume", "Preserve the calendar"],
   },
   "oseltamivir-safety-populations": {
     eyebrow: "Safety map",
@@ -96,8 +96,8 @@ export default function InfluenzaAntiviralPharmacologyVisual({ type }) {
           <div key={label}>
             <span>{String(index + 1).padStart(2, "0")}</span>
             <strong>{label}</strong>
-            <em>{data.notes[index]}</em>
-            <p>{index < data.nodes.length - 1 ? "Carry the verified input forward." : "Own the next clinical action."}</p>
+            <em style={type === "influenza-antiviral-oseltamivir-dosing-administration" ? { fontSize: "14px" } : undefined}>{data.notes[index]}</em>
+            <p style={type === "influenza-antiviral-oseltamivir-dosing-administration" ? { fontSize: "14px" } : undefined}>{index < data.nodes.length - 1 ? "Carry the verified input forward." : "Own the next clinical action."}</p>
           </div>
         ))}
       </div>
