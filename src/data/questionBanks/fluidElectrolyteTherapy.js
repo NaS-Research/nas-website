@@ -1174,3 +1174,265 @@ Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-elec
   "rationale": "This is a clinically toxic presentation with impaired clearance. The reviewed label describes possible absent reflexes and respiratory paralysis near 10 mEq/L; 10 mEq/L equals 5 mmol/L, not 1. Calcium is temporary antagonism, so support and removal assessment remain necessary. Symptoms and units guide urgent care rather than a universal numeric threshold.",
   "reviewHref": "#magnesium-disorders"
 });
+
+// Source-reconciled fluid calculations and monitoring questions; stable IDs, keys and anchors retained.
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-051"), {
+  "id": "fluid-electrolyte-051",
+  "question": "What makes a fluid calculation clinically defensible?",
+  "choices": [
+    "The method, units, weight assumption, other intake and losses, monitoring and adjustment criteria are explicit",
+    "The total volume is correct even though the patient\u2019s other intake was omitted",
+    "The result has many decimal places, so patient-specific adjustment is unnecessary",
+    "A single equation supplies the same prescription for maintenance, shock and deficit replacement"
+  ],
+  "answer": 0,
+  "rationale": "Correct arithmetic addresses only the stated model. The method and its assumptions must fit the indication, with all relevant intake and losses included and a response plan. Precision cannot correct missing clinical inputs or make different fluid needs interchangeable.",
+  "reviewHref": "#calculations-monitoring"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-052"), {
+  "id": "fluid-electrolyte-052",
+  "question": "Which approach accords with NICE routine-maintenance guidance for an adult with obesity?",
+  "choices": [
+    "Use ideal body weight and lower per-kg volumes with clinical review",
+    "Scale the prescription to actual weight without considering obesity or other intake",
+    "Use the book\u2019s PN total-weight assumption as if it were the same maintenance recommendation",
+    "Restrict every patient with obesity to an identical daily volume regardless of losses"
+  ],
+  "answer": 0,
+  "rationale": "NICE specifies ideal body weight in obesity and lower per-kg volumes, with expert help for marked obesity. This is distinct from the book\u2019s stated PN calculation assumption. The patient still needs an individual assessment; obesity alone does not establish an identical fixed volume for everyone.",
+  "reviewHref": "#calculations-monitoring"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-053"), {
+  "id": "fluid-electrolyte-053",
+  "question": "An otherwise correct routine-maintenance estimate omits substantial ongoing ostomy losses. What needs review?",
+  "choices": [
+    "The loss volume and composition and an appropriate replacement plan beyond maintenance",
+    "Only the number of decimal places in the multiplication",
+    "Only the brand name of the maintenance bag, without reviewing the losses",
+    "Nothing, because maintenance automatically includes every abnormal loss"
+  ],
+  "answer": 0,
+  "rationale": "Maintenance does not automatically replace abnormal losses. Assess the ostomy output and its composition, other intake, existing deficits and the response. Rounding or changing a brand without addressing the missing loss cannot make the fluid budget complete.",
+  "reviewHref": "#calculations-monitoring"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-054"), {
+  "id": "fluid-electrolyte-054",
+  "question": "When should the response to fluid resuscitation be reassessed?",
+  "choices": [
+    "Promptly after the intervention and repeatedly with continuous clinical monitoring during instability",
+    "Only when the next daily chemistry panel is scheduled, despite instability",
+    "Only after the full written daily maintenance volume has been delivered",
+    "By checking the bag is empty without assessing breathing or perfusion"
+  ],
+  "answer": 0,
+  "rationale": "Resuscitation needs rapid clinical feedback and continuous monitoring of respiratory and circulatory status and perfusion. Daily maintenance schedules and delivered volume cannot establish benefit or exclude overload. Reassess before assuming another bolus is appropriate.",
+  "reviewHref": "#calculations-monitoring"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-055"), {
+  "id": "fluid-electrolyte-055",
+  "question": "Which finding most strongly raises concern for possible fluid-overload harm during IV therapy?",
+  "choices": [
+    "New breathlessness with evidence of pulmonary edema",
+    "The prescribed number of bags has been administered",
+    "The solution\u2019s labeled volume matches the order",
+    "A single electrolyte result is within its reference range"
+  ],
+  "answer": 0,
+  "rationale": "Pulmonary edema and new breathlessness warrant prompt clinical reassessment for overload and other causes. Bag counts, matching volumes and one normal electrolyte result do not establish clinical safety or prove that further fluid is needed. This finding signals concern, not proof that IV fluid was the only cause.",
+  "reviewHref": "#calculations-monitoring"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-056"), {
+  "id": "fluid-electrolyte-056",
+  "question": "Which approach best handles uncertainty in a weight-based fluid estimate?",
+  "choices": [
+    "Use a justified starting range, adjust to the patient and reassess the response",
+    "Choose the upper bound for everyone because the calculation is a range",
+    "Report a precise value while omitting the weight assumption and losses",
+    "Keep the starting estimate unchanged even when new intake or edema develops"
+  ],
+  "answer": 0,
+  "rationale": "Weight-based methods estimate need rather than proving it. Choose the method and range appropriate to the indication, include clinical inputs and monitor the response. Automatic upper-bound dosing, concealed assumptions and ignoring new information undermine the prescription.",
+  "reviewHref": "#calculations-monitoring"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-057"), {
+  "id": "fluid-electrolyte-057",
+  "question": "A specified final preparation has 20 mEq potassium in 500 mL over two hours. Which pair correctly states concentration and potassium delivery rate?",
+  "choices": [
+    "40 mEq/L and 10 mEq/hour",
+    "20 mEq/L and 10 mEq/hour",
+    "40 mEq/L and 250 mEq/hour",
+    "10 mEq/L and 40 mEq/hour"
+  ],
+  "answer": 0,
+  "rationale": "500 mL is 0.5 L, so 20 mEq \u00f7 0.5 L = 40 mEq/L. Delivery is 20 mEq \u00f7 2 hours = 10 mEq/hour; the pump volume rate is 250 mL/hour, not 250 mEq/hour. Correct calculations do not independently authorize the product, access, dilution or clinical rate.",
+  "reviewHref": "#calculations-monitoring"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-058"), {
+  "id": "fluid-electrolyte-058",
+  "question": "During treatment of hyponatremia, which observation requires urgent review of the correction plan?",
+  "choices": [
+    "The sodium rise is exceeding the patient\u2019s planned correction limit",
+    "The chart documents kilograms as the weight unit",
+    "The pretreatment sodium value has been recorded",
+    "Urine output is being measured as planned"
+  ],
+  "answer": 0,
+  "rationale": "A rise beyond the patient\u2019s risk-specific correction limit needs prompt expert reassessment because overrapid correction can cause osmotic demyelination. A documented baseline, weight units and urine-output monitoring are safeguards, not reasons by themselves to stop a correctly progressing plan.",
+  "reviewHref": "#calculations-monitoring"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-059"), {
+  "id": "fluid-electrolyte-059",
+  "question": "A specified infusion is 1,000 mL over eight hours. Which volume rate is correct?",
+  "choices": [
+    "125 mL/hour",
+    "8 mL/hour",
+    "80 mL/hour",
+    "1,000 mL/hour"
+  ],
+  "answer": 0,
+  "rationale": "Divide the total volume by the prescribed duration: 1,000 mL \u00f7 8 hours = 125 mL/hour. Eight is the time, 80 is not this quotient, and 1,000 mL/hour would deliver the entire volume in one hour. The arithmetic still needs the clinical prescription and product safeguards.",
+  "reviewHref": "#calculations-monitoring"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-060"), {
+  "id": "fluid-electrolyte-060",
+  "question": "A recovering patient can meet fluid needs through oral or enteral intake. Which IV-fluid review is appropriate?",
+  "choices": [
+    "Reassess the complete intake and loss plan and stop IV therapy when it is no longer needed",
+    "Continue every scheduled IV bag solely because it was ordered earlier",
+    "Give an additional bolus for any abnormal laboratory value without assessment",
+    "Keep IV maintenance unchanged while adding full oral intake without counting it"
+  ],
+  "answer": 0,
+  "rationale": "NICE reserves IV fluids for needs that oral or enteral routes cannot meet and recommends stopping as soon as feasible. Include all intake and losses in the reassessment. An earlier order or an isolated laboratory abnormality does not independently justify continued or additional IV exposure.",
+  "reviewHref": "#calculations-monitoring"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-071"), {
+  "id": "fluid-electrolyte-071",
+  "question": "Using the book\u2019s stated nutrition-fluid formula for weight above 20 kg, what is the estimate at 65 kg?",
+  "choices": [
+    "2,400 mL/day",
+    "1,950 mL/day",
+    "1,300 mL/day",
+    "2,800 mL/day"
+  ],
+  "answer": 0,
+  "rationale": "The book\u2019s method gives 1,500 + 20 \u00d7 (65 \u2212 20) = 2,400 mL/day. 1,950 uses a different 30 mL/kg/day method; 1,300 is 20 \u00d7 65 without the formula\u2019s base; 2,800 omits subtraction of the first 20 kg. This estimate is not an automatically authorized IV prescription.",
+  "reviewHref": "#calculations-monitoring"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-072"), {
+  "id": "fluid-electrolyte-072",
+  "question": "Use 2.2 lb/kg and the book\u2019s nutrition-fluid formula above 20 kg. What is the estimate for a specified 154 lb adult?",
+  "choices": [
+    "2,500 mL/day",
+    "1,750 mL/day",
+    "2,100 mL/day",
+    "4,180 mL/day"
+  ],
+  "answer": 0,
+  "rationale": "154 lb \u00f7 2.2 lb/kg = 70 kg. The book\u2019s method gives 1,500 + 20 \u00d7 (70 \u2212 20) = 2,500 mL/day. 1,750 and 2,100 instead use 25 and 30 mL/kg/day; 4,180 incorrectly enters pounds into the kilogram formula. Clinical adjustment remains necessary.",
+  "reviewHref": "#calculations-monitoring"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-073"), {
+  "id": "fluid-electrolyte-073",
+  "question": "The selected total water target is 1,800 mL/day. Usable oral intake is 600 mL/day and IV medicines supply 400 mL/day. What is the remaining allowance before other adjustments?",
+  "choices": [
+    "800 mL/day",
+    "1,200 mL/day",
+    "1,400 mL/day",
+    "1,800 mL/day"
+  ],
+  "answer": 0,
+  "rationale": "Subtract both counted sources: 1,800 \u2212 600 \u2212 400 = 800 mL/day. The 1,200 and 1,400 results omit one source; 1,800 counts neither. This budget still needs review for deficits, losses, redistribution, composition and the patient\u2019s response.",
+  "reviewHref": "#calculations-monitoring"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-074"), {
+  "id": "fluid-electrolyte-074",
+  "question": "A reviewed plan selects 30 mL/kg/day at 80 kg, counts 1,000 mL/day from other intake and specifies the remaining volume over 14 hours. What volume rate follows?",
+  "choices": [
+    "100 mL/hour",
+    "171.4 mL/hour",
+    "58.3 mL/hour",
+    "2,400 mL/hour"
+  ],
+  "answer": 0,
+  "rationale": "The total target is 80 \u00d7 30 = 2,400 mL/day. Subtracting 1,000 leaves 1,400 mL; 1,400 \u00f7 14 = 100 mL/hour. 171.4 divides the full target without subtracting other intake; 58.3 uses 24 rather than the specified 14 hours; 2,400 is a daily total, not the hourly rate. The selected schedule must also be clinically appropriate.",
+  "reviewHref": "#calculations-monitoring"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-075"), {
+  "id": "fluid-electrolyte-075",
+  "question": "At 90 kg, the book\u2019s nutrition formula gives 2,900 mL/day while a selected 25 mL/kg/day adult maintenance estimate gives 2,250 mL/day. Which interpretation is correct?",
+  "choices": [
+    "The methods and contexts differ; assess the indication and patient rather than treating either result as a universal prescription",
+    "Both methods must give the same result, so one answer can be accepted without checking its assumptions",
+    "The higher answer should always be selected because it prevents all deficits",
+    "The lower answer automatically includes every ongoing abnormal loss"
+  ],
+  "answer": 0,
+  "rationale": "1,500 + 20 \u00d7 (90 \u2212 20) = 2,900, while 90 \u00d7 25 = 2,250. Both arithmetic results follow their stated methods, which have different contexts and assumptions. Neither automatically includes all losses or determines the correct individual prescription.",
+  "reviewHref": "#calculations-monitoring"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-076"), {
+  "id": "fluid-electrolyte-076",
+  "question": "After clinical review, 20 mL/kg/day is selected for a frail 48 kg adult. What is the initial total water estimate?",
+  "choices": [
+    "960 mL/day",
+    "1,200 mL/day",
+    "1,440 mL/day",
+    "480 mL/day"
+  ],
+  "answer": 0,
+  "rationale": "48 \u00d7 20 = 960 mL/day. The 1,200 and 1,440 answers use different 25 and 30 mL/kg/day factors; 480 uses 10. NICE suggests considering lower volumes in relevant risk groups, but frailty does not automatically select one dose or remove the need to count other intake and reassess.",
+  "reviewHref": "#calculations-monitoring"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-077"), {
+  "id": "fluid-electrolyte-077",
+  "question": "A reviewed maintenance calculation selects 22 mL/kg/day at 60 kg and distributes that total evenly over 24 hours. Which pair is correct?",
+  "choices": [
+    "1,320 mL/day and 55 mL/hour",
+    "1,320 mL/day and 22 mL/hour",
+    "1,500 mL/day and 55 mL/hour",
+    "1,320 mL/hour and 55 mL/day"
+  ],
+  "answer": 0,
+  "rationale": "60 \u00d7 22 = 1,320 mL/day; 1,320 \u00f7 24 = 55 mL/hour. The factor 22 is not the pump rate, 1,500 uses a different per-kg factor, and the last option reverses day and hour units. Other intake and clinical adjustments may change the actual IV volume.",
+  "reviewHref": "#calculations-monitoring"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-078"), {
+  "id": "fluid-electrolyte-078",
+  "question": "Over the same interval, the chart records 2,200 mL intake and 1,600 mL output. Which interpretation is correct?",
+  "choices": [
+    "Recorded balance is +600 mL and still needs clinical interpretation",
+    "Recorded balance is \u2212600 mL because intake must be subtracted from output",
+    "Recorded balance is +3,800 mL because intake and output should be added",
+    "The +600 mL result proves exactly 600 mL of intravascular expansion"
+  ],
+  "answer": 0,
+  "rationale": "Recorded intake minus output is 2,200 \u2212 1,600 = +600 mL. Adding the quantities or reversing the subtraction is incorrect. A chart can omit insensible losses and contain measurement error, and fluid distributes between compartments; interpret it with weight, examination and laboratory trends.",
+  "reviewHref": "#calculations-monitoring"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-079"), {
+  "id": "fluid-electrolyte-079",
+  "question": "An adult with obesity weighs 120 kg and has a reviewed ideal body weight of 76 kg. Using the NICE obesity weight approach and a selected 25 mL/kg/day factor, what is the estimate?",
+  "choices": [
+    "1,900 mL/day",
+    "3,000 mL/day",
+    "2,280 mL/day",
+    "760 mL/day"
+  ],
+  "answer": 0,
+  "rationale": "For this NICE maintenance approach use the specified ideal body weight: 76 \u00d7 25 = 1,900 mL/day. 3,000 uses actual weight; 2,280 uses 30 rather than 25 with ideal weight; 760 uses 10. The result remains a starting total water estimate subject to other intake, losses and clinical review.",
+  "reviewHref": "#calculations-monitoring"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-0710"), {
+  "id": "fluid-electrolyte-0710",
+  "question": "A specified solution contains 154 mmol sodium per liter. How much sodium is supplied in 250 mL?",
+  "choices": [
+    "38.5 mmol",
+    "154 mmol",
+    "15.4 mmol",
+    "38,500 mmol"
+  ],
+  "answer": 0,
+  "rationale": "250 mL = 0.25 L, so 154 mmol/L \u00d7 0.25 L = 38.5 mmol. 154 is the amount in one liter; 15.4 uses 0.1 L; 38,500 incorrectly treats milliliters as liters. Count the amount with other electrolyte intake; this calculation does not select an appropriate solution for a patient.",
+  "reviewHref": "#calculations-monitoring"
+});

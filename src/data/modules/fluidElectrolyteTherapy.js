@@ -658,3 +658,84 @@ fluidElectrolyteTherapyModule.references.push(...[
     "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8287009/"
   }
 ]);
+
+// Source-reconciled fluid calculations and monitoring lesson.
+Object.assign(fluidElectrolyteTherapyModule.submodules.find(s => s.slug === "calculations-monitoring"), {
+  "slug": "calculations-monitoring",
+  "title": "Calculations, Administration, and Monitoring",
+  "summary": "A calculation becomes clinically useful only when units, assumptions, administration constraints, monitoring, and the next decision are explicit.",
+  "concepts": [
+    "Estimated osmolality",
+    "Weight-based maintenance",
+    "Infusion rate and units",
+    "Reassessment and escalation"
+  ],
+  "visual": "monitoring",
+  "application": "Show the formula, substitute units, state the result with a sensible precision, and explain what patient-specific factor could invalidate the estimate.",
+  "lesson": [
+    {
+      "heading": "Identify the formula and its clinical context",
+      "body": "The supplied book estimates daily fluid needs for nutrition planning, at weights above 20 kg, as 1,500 mL/day + 20 mL/kg/day \u00d7 (weight in kg \u2212 20 kg). It generally uses measured total body weight for its PN calculations unless the problem specifies otherwise. This is a starting estimate, not a complete prescription or a resuscitation dose. The book also describes institutional adult estimates of 30 to 40 mL/kg/day; these should not be silently substituted for a different guideline\u2019s routine-maintenance approach. State the method and weight assumption before calculating."
+    },
+    {
+      "heading": "Work the book\u2019s fluid estimate with units",
+      "body": "Using the book\u2019s method at 65 kg gives 1,500 + 20 \u00d7 (65 \u2212 20) = 2,400 mL/day. A specified 154 lb weight converts to 70 kg using the book\u2019s 2.2 lb/kg factor; the same method gives 2,500 mL/day. Carry units through the calculation and round the final result sensibly. Neither answer automatically determines additional IV volume: heart or kidney dysfunction, accumulation, oral intake, nutrition and medication volumes can change the actual plan."
+    },
+    {
+      "heading": "Distinguish adult routine maintenance from nutrition estimates",
+      "body": "For routine maintenance alone, NICE CG174 starts with 25 to 30 mL/kg/day of water, adjusted to the patient. At 72 kg this is 1,800 to 2,160 mL/day. NICE uses ideal body weight in obesity with lower per-kg volumes, and suggests considering 20 to 25 mL/kg/day for older or frail patients, renal impairment, cardiac failure or refeeding risk. These are contextual starting ranges, not automatic restrictions for every diagnosis. The book\u2019s nutrition calculation and this adult maintenance method are not interchangeable; neither replaces assessment of shock, deficits or ongoing losses."
+    },
+    {
+      "heading": "Build a complete intake and loss budget",
+      "body": "Count oral and enteral fluids, PN, IV medicines and their carriers, blood products and other infusions toward total intake. Account separately for existing deficits or excesses, abnormal losses and redistribution. For a selected total water target of 1,800 mL/day with 600 mL usable oral intake and 400 mL from IV medicines, the arithmetic remaining allowance is 800 mL/day before further clinical adjustments. An ostomy loss cannot simply disappear from the plan because the maintenance multiplication was correct; assess its amount and composition and plan appropriate replacement."
+    },
+    {
+      "heading": "Check electrolyte and glucose provision separately",
+      "body": "A water-volume result does not establish adequate or safe electrolyte provision. NICE\u2019s routine-maintenance starting estimates include about 1 mmol/kg/day each of sodium, potassium and chloride and 50 to 100 g/day of glucose to limit starvation ketosis; that glucose is not complete nutritional support. Adjust to actual laboratory results, kidney function, other intake and losses. Concentration in mmol/L multiplied by volume in liters gives the amount supplied: a specified 154 mmol/L sodium solution supplies 38.5 mmol in 250 mL. Use approved prepared products and authorized pharmacy procedures; do not add concentrated potassium to a bag at the bedside."
+    },
+    {
+      "heading": "Separate total dose, concentration and delivery rate",
+      "body": "For a specified final preparation containing 20 mEq potassium in 500 mL over two hours, concentration is 20 \u00f7 0.5 = 40 mEq/L, pump rate is 500 \u00f7 2 = 250 mL/hour, and potassium delivery is 20 \u00f7 2 = 10 mEq/hour. A specified 1,000 mL over eight hours is 125 mL/hour. These answers solve different questions and must retain their units. Verify the actual product, dilution, access, renal status, monitoring and authorized dose and rate; correct arithmetic alone does not establish safety, and concentrated potassium must not be injected undiluted."
+    },
+    {
+      "heading": "Interpret fluid-balance records as part of the assessment",
+      "body": "Recorded balance equals recorded intake minus recorded output over the same interval. With 2,200 mL intake and 1,600 mL output, the recorded balance is +600 mL. This chart may omit insensible losses or contain measurement errors; it does not directly measure intravascular expansion. Compare the record with weight trends, perfusion, breathing, edema, kidney function and the clinical history. A normal single laboratory value does not establish that the next scheduled bag remains necessary."
+    },
+    {
+      "heading": "Keep concentration estimates separate from volume assessment",
+      "body": "Use the osmolality and tonicity distinctions in the fluid-physiology lesson when interpreting sodium, glucose and urea. Confirm units and the chosen equation rather than treating calculated osmolality, measured osmolality and effective tonicity as identical. A serum concentration does not by itself specify circulating volume or a replacement dose. State which patient-specific assumptions may fail and interpret the result with symptoms, fluid distribution and ongoing losses."
+    },
+    {
+      "heading": "Set reassessment frequency by the intervention",
+      "body": "During resuscitation, reassess the response promptly and monitor breathing, circulation and perfusion continuously according to the emergency protocol. A completed bolus is not proof of benefit or permission for automatic repetition. For ongoing stable IV therapy, NICE initially calls for at least daily review of fluid status, urea, creatinine, electrolytes and balance charts, with weight twice weekly; replacement, redistribution or instability may need more frequent checks. Follow local protocols and the actual risk, and document any justified reduction in monitoring for longer-term stable therapy."
+    },
+    {
+      "heading": "Escalate when a calculation reaches its limits",
+      "body": "Seek experienced help for shock, severe sodium abnormalities, complex redistribution, oliguria or significant renal, liver or cardiac impairment. New breathlessness, pulmonary edema, dangerous ECG findings or a correction trajectory beyond the planned limit require prompt reassessment. In hyponatremia, overrapid correction can cause osmotic demyelination; follow the risk-specific sodium plan and review changes in urine output rather than assuming an infusion formula predicts the whole response. Do not wait for routine daily labs when the patient is deteriorating."
+    },
+    {
+      "heading": "Document the plan, handoff and stop point",
+      "body": "An IV-fluid order needs the fluid type, volume, rate, indication and assessment plan. Review the next 24-hour prescription and all other intake, and reassess on transfer to another care setting. Explain relevant symptoms the patient should report. Use oral or enteral routes when they can meet the need and stop unnecessary IV therapy as soon as feasible. Document the reason for continuing, modifying or stopping treatment so that the next clinician can reassess the same assumptions."
+    }
+  ],
+  "keyPoints": [
+    "Name the formula, weight assumption and intended use.",
+    "Keep nutrition estimates and routine-maintenance ranges distinct.",
+    "Count all intake and assess deficits, losses and redistribution.",
+    "Carry units through volume, concentration and delivery-rate calculations.",
+    "Match monitoring and escalation to instability and the treatment risk.",
+    "Review the indication, next prescription and stop point."
+  ],
+  "check": {
+    "question": "Using a selected 25 mL/kg/day routine-maintenance estimate, what is the initial total water target for a stable 72 kg adult before other intake and clinical adjustments?",
+    "choices": [
+      "1,800 mL/day",
+      "2,160 mL/day",
+      "2,540 mL/day",
+      "75 mL/day"
+    ],
+    "answer": 0,
+    "rationale": "72 kg \u00d7 25 mL/kg/day = 1,800 mL/day. The 2,160 mL result uses 30 mL/kg/day; 2,540 mL uses the book\u2019s different nutrition formula. Dividing 1,800 by 24 gives 75 mL/hour, not per day. Account for other intake, losses and clinical factors before prescribing additional IV fluid.",
+    "reviewHref": "#calculations-monitoring"
+  }
+});
