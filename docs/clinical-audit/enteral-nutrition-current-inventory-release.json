@@ -1,0 +1,123 @@
+{
+  "updated": "2026-10-07T00:30:27.745575+00:00",
+  "unit": "Current EN source/evidence reconciliation, feeding-origin inventory and narrow-width figure correction",
+  "status": "content commit pushed and exact remote verified; receipt commit follows",
+  "branch": "audit/rxprep-content-2026-09-24",
+  "baseCommit": "10dcdcdd0f37e02b53ed435850e45b7eece9c9d0",
+  "contentCommit": "e3ba804f78c4092821be2d728930bf0265ee65b7",
+  "contentPush": {
+    "status": "passed",
+    "terminalExitCode": 0,
+    "commit": "e3ba804f78c4092821be2d728930bf0265ee65b7",
+    "remoteHash": "e3ba804f78c4092821be2d728930bf0265ee65b7",
+    "branch": "audit/rxprep-content-2026-09-24",
+    "verifiedAt": "2026-10-07T00:30:09.901002+00:00"
+  },
+  "files": [
+    "docs/clinical-audit/enteral-nutrition-current-inventory-review.json",
+    "docs/clinical-audit/enteral-nutrition-current-feeding-inventory.json",
+    "docs/clinical-audit/module-ledger.json",
+    "docs/clinical-audit/chapter-ledger.json",
+    "docs/clinical-audit/sequential-resume.json",
+    "src/app/globals.css"
+  ],
+  "validation": {
+    "build": {
+      "status": "passed",
+      "exitCode": 0,
+      "command": "next build --webpack",
+      "staticPages": 567,
+      "candidate": "Committed HEAD plus scoped final enteral-node CSS only",
+      "receipt": "build-terminal.json",
+      "logSha256": "28a7f3555ce37188fe96da2078f175b4f4a008af2302d7c10b4439759a8b8b78"
+    },
+    "structure": {
+      "status": "passed",
+      "modules": 1,
+      "questions": 108,
+      "hardErrors": 0,
+      "receipt": "structure.json"
+    },
+    "browser": {
+      "status": "passed",
+      "terminalExitCode": 0,
+      "fullAssessmentWidths": [
+        1440,
+        390
+      ],
+      "wholeQuestionsPerWidth": 108,
+      "allChoicesPerQuestion": 4,
+      "correctAndIncorrectFeedbackVerified": true,
+      "wholeBodiesPerWidth": 37,
+      "embeddedChecksPerWidth": 6,
+      "embeddedChoicesPerWidth": 24,
+      "referencesPerWidth": 12,
+      "fullAssessmentReceipt": "full-assessment-browser.json",
+      "finalFigureReceipt": "final-figures.json",
+      "finalFigureWidths": [
+        320,
+        379,
+        380,
+        381,
+        390,
+        719,
+        720,
+        721,
+        1440
+      ],
+      "finalFigureCases": 54,
+      "arrowTextOverlaps": 0,
+      "finalBodiesAndReferencesRecheckedAt": [
+        1440,
+        390
+      ],
+      "assessmentValidationTiming": "Full grading passed before final figure padding adjustment. Educational objects and assessment renderer hashes remained identical; final build and all54figure cases plus37body/12reference DOM checks passed after final padding. Five cumulative origins source-reconciled; cumulative quiz not rerun in this unit."
+    },
+    "visualReview": {
+      "status": "passed",
+      "actualInspectionBoards": 10,
+      "unscaledCapturePairs": 45,
+      "nativeFigureInspections": 12,
+      "nativeWidths": [
+        320,
+        721
+      ],
+      "sourceCapturesCovered": 102,
+      "bookOriginalPagesActuallyViewed": [
+        158,
+        169,
+        170,
+        171,
+        172
+      ],
+      "inspectionHashes": "actually-inspected-hashes.json",
+      "captureHashes": "visually-covered-capture-hashes.json",
+      "boardMapping": "boards.json",
+      "result": "All final figure text and arrows readable; no text clipping or arrow crowding. Desktop/mobile bodies, metadata, checks, references and sampled bank feedback inspected on unscaled boards. Existing floating pharmacy utility visible without covering clinical text."
+    },
+    "independentInventory": {
+      "status": "passed",
+      "receipt": "independent-inventory-check.json"
+    },
+    "privateEvidenceArchive": {
+      "status": "prepared; independent final archive reread follows release",
+      "path": "/Volumes/AGNDJ 6TB/NaS-Codex-Private/Learn-Audit/en-current-10dcdcdd"
+    }
+  },
+  "wholeModuleCounts": {
+    "verified": 66,
+    "total": 232
+  },
+  "wholeChapterCounts": {
+    "verified": 7,
+    "total": 82
+  },
+  "broaderVerifiedWholeQuestionIds": 1510,
+  "newWholeModuleOrChapterCertifications": 0,
+  "wholeEnteralParentVerified": false,
+  "wholeGoalComplete": false,
+  "privateEvidence": "Private final archive and independent reread retained externally after receipt push. Public receipt does not assert those later steps already happened.",
+  "mainMerge": "not performed",
+  "production": "not verified",
+  "nextAction": "Begin whole fluid-electrolyte-therapy parent audit from fluid-physiology-assessment, compare all22currentbodies/100wholequestions/sixchecks/sixfigures with relevant supplied book and approved official sources. Preserve two completed feeding items016/083 and their full intake/loss body. Use current feeding inventory to review pending whole questions; differentiate completed feeding clauses from unsupported remaining assertions. EN031/renal metadata have no current gap. Keep Chapter1PDF19 checklistentry15 as frontier; do not markEN orChapter11 complete while broaderquestion/semantic scope remains open."
+}
