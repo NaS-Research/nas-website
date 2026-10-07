@@ -3,7 +3,7 @@ const cards = {
     title: "One ratio, two organs",
     content: <div className="acid-visual__buffer">
       <div><span>Lungs</span><strong>CO₂</strong><small>Ventilation changes the acid component within minutes.</small></div>
-      <div className="acid-visual__equation"><strong>pH ∝ HCO₃⁻ / PaCO₂</strong><small>The ratio matters more than either value alone.</small></div>
+      <div className="acid-visual__equation"><strong>HCO₃⁻ / PaCO₂</strong><small>pH changes with the logarithm of this buffer ratio.</small></div>
       <div><span>Kidneys</span><strong>HCO₃⁻</strong><small>Reabsorption and net acid excretion change the base component over hours to days.</small></div>
     </div>,
   },

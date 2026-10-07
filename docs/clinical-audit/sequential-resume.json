@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-07T19:55:13.982685+00:00",
+  "updated": "2026-10-07T21:24:36.416659+00:00",
   "status": "working",
   "sourcePolicy": {
     "educational": "Supplied RxPrep 2023 book remains primary; explicit user approval on 2026-10-01 authorizes the existing official ASPEN, USP, FDA and CDC references for remaining PN clinical and safety claims. Explicit human approval on 2026-10-02 authorizes primary neonatal and pediatric renal nutrition guidelines for the retained pediatric PN water-loss, GIR/brain, CKRT/catabolism/wound protein claims, and primary ASPEN/SCCM enteral clinical guidance plus FDA guidance/product labeling for the unfinished EN audit. Direct human approval on2026-10-04 authorizes the National Academies2005Water reference for EN031 and the retained renal-solute concept only. Directhumanapproval I giveapproval authorizesthe specificallyrequestedEndocrineSocietyprimary-adrenal-insufficiency andSCCM/ASHPstress-ulcer-prophylaxisguidance forretainedadultsteroidtransition andfeeding-relatedICUquestions only;fullsourceverificationbeforeadoptionremainsrequired. Direct human approval \"I give approval\" authorizes the specifically requested KDIGO2017 CKD-MBD, Endocrine Society hypercalcemia-of-malignancy, and Society for Endocrinology acute hypocalcemia/hypercalcemia sources for retained calcium claims; source review remains required before adoption. Direct human approval authorizes additional official guidelines,FDA labels and primary academic clinical references where the supplied book does not verify retained claims;current ESE2025 and academic mineral/dialysis sources used with full relevant source review.",
@@ -88,8 +88,8 @@
     "dependencyChapter": 11,
     "dependencyPrintedPage": 150,
     "dependencyPdfPage": 158,
-    "sectionAudit": "Whole metabolic treatment lesson expanded from four to six bodies, with cause-directed stabilization, adult DKA potassium/bicarbonate qualifications, bicarbonate ventilation and fluid/electrolyte monitoring, accurate BICARICU-2 primary mortality versus secondary day28 dialysis interpretation, and chloride/volume/potassium alkalosis mechanisms with selected rescue care. All twelve existing whole questions and 48 choices plus embedded check and four choices source-reviewed. Question092 now points to its reviewed metabolic-treatment context. No new dose regimen, IDs, questions or figure introduced. One cumulative derivative updated; all1184 prior IDs and1183 other whole objects retained. Other five lessons,89 bank objects and231 modules unchanged. Whole-module and broader closure remain open.",
-    "nextAction": "Continue broader fluid dependencies and source-bound whole lesson reviews. Metabolic treatment is now scoped verified with twelve existing whole questions and one cumulative derivative; the other five acid-base lessons and 89 bank objects remain open. Nutrition care-planning review and prior nine calcium/adrenal reviews retain continuity. Chapter 1 printed 7/PDF19 entry15, Chapter11 fluid needs and broader assessment associations remain open. Use the external Learn lifecycle and preserve the IV-fluid checkpoint.",
+    "sectionAudit": "Whole acid-base module coverage completes the five previously open lessons, 89 questions and 356 choices, alongside the exact prior six-body metabolic lesson, 12 questions and 48 choices. Corrected the logarithmic buffer figure and bracketed anion-gap teaching; qualified specimen and PaCO2 comparisons, compensation timing, urine-gap limits in CKD and lung mechanics during airway support. Made the existing septic-shock gas consistent and supplied sodium and chloride. Documented the book gas examples 31 and 32 as inconsistent without copying them as new cases. All 101 question IDs and keys remain stable, with no new questions or dose protocols. Revised 59 whole questions and two existing cumulative derivatives; retained all 1184 cumulative IDs. The whole module passed its verification gates; broader fluid dependencies and chapters remain open.",
+    "nextAction": "Continue broader fluid dependencies from the narrow 100 direct-stem candidate inventory. Review each associated whole lesson, source context, question and choice, or retain qualifying exact prior evidence. Acid-base interpretation now has all six lessons and 101 questions covered; retain the metabolic-treatment, nutrition and prior nine calcium/adrenal reviews. Chapter 1 printed 7/PDF 19 entry 15 and Chapter 11 remain open. Chapter 12, Calculations IV Clinical, is not complete from its acid-base pages alone. Use the external Learn lifecycle and preserve the IV-fluid checkpoint.",
     "nextDependencyPrintedPage": 161,
     "nextDependencyPdfPage": 169
   },
@@ -103,13 +103,10 @@
   },
   "release": {
     "branch": "audit/rxprep-content-2026-09-24",
-    "baseCommit": "8ca01f6b840ffe4a441541808c0fe94064023c03",
-    "commit": "89d950b838ffe3e8f846f6ea0ae3086c6e0e6f93",
-    "push": "verified",
-    "receipt": "fluid-broader-metabolic-treatment-release.json",
-    "remoteHashObserved": "89d950b838ffe3e8f846f6ea0ae3086c6e0e6f93",
-    "exactRemoteObservedByTool": true,
-    "remoteVerifiedAt": "2026-10-07T19:59:48.189176+00:00",
+    "baseCommit": "2ba81249e2233bdfb2deb2c90fe0dc8a9591a0bc",
+    "commit": null,
+    "push": "pending",
+    "receipt": "fluid-broader-acid-base-completion-release.json",
     "mainMerge": "not performed",
     "production": "not verified"
   },
@@ -170,19 +167,20 @@
       "chapterCountPercent": 8.54
     },
     "workingModuleLedger": {
-      "markedVerified": 60,
+      "markedVerified": 61,
       "total": 235,
-      "moduleCountPercent": 25.53
+      "moduleCountPercent": 25.96,
+      "scope": "Marked original working ledger rows only; the mixed original runtime is not certified."
     },
     "committedModuleLedger": {
-      "markedVerified": 66,
+      "markedVerified": 67,
       "total": 232,
-      "moduleCountPercent": 28.45
+      "moduleCountPercent": 28.88
     },
-    "interpretation": "Metabolic treatment logical unit verified; whole fluid/acid-base modules and broader dependencies remain open.66/232 modules and7/82 chapters unchanged.",
-    "checkedAt": "2026-10-07T19:55:13.982685+00:00"
+    "interpretation": "Whole acid-base module verified; broader fluid dependencies and chapters remain open. Verified coverage is 67/232 modules and 7/82 chapters.",
+    "checkedAt": "2026-10-07T21:24:36.416659+00:00"
   },
-  "lastVerifiedLogicalUnit": "Metabolic treatment whole six-body lesson, embedded check and twelve existing whole questions; one reviewed cumulative derivative",
+  "lastVerifiedLogicalUnit": "Whole acid-base interpretation module: all six lessons, 101 whole questions and five existing cumulative origins",
   "lastVerifiedSections": {
     "enteral-nutrition": {
       "evidence": "enteral-nutrition-renal-solute-review.json",
@@ -15479,12 +15477,12 @@
   },
   "latestGoalContinuationAudit": {
     "currentTurnClassification": "progress",
-    "currentTurnEvidence": "Whole dependency lesson and associated assessments source-reviewed and structurally/build/browser/visually verified in external candidate.",
+    "currentTurnEvidence": "Whole acid-base module covered; guarded structural, build, browser, source and visual gates passed. All six lessons and 101 whole questions are accounted for.",
     "genuineBlocker": false,
     "consecutiveImpasseTurns": 0,
     "wholeGoalComplete": false,
-    "nextAction": "Continue broader fluid dependencies and source-bound whole lesson reviews. Metabolic treatment is now scoped verified with twelve existing whole questions and one cumulative derivative; the other five acid-base lessons and 89 bank objects remain open. Nutrition care-planning review and prior nine calcium/adrenal reviews retain continuity. Chapter 1 printed 7/PDF19 entry15, Chapter11 fluid needs and broader assessment associations remain open. Use the external Learn lifecycle and preserve the IV-fluid checkpoint.",
-    "goalToolState": "Original82chapter objective active."
+    "nextAction": "Continue broader fluid dependencies from the narrow 100 direct-stem candidate inventory. Review each associated whole lesson, source context, question and choice, or retain qualifying exact prior evidence. Acid-base interpretation now has all six lessons and 101 questions covered; retain the metabolic-treatment, nutrition and prior nine calcium/adrenal reviews. Chapter 1 printed 7/PDF 19 entry 15 and Chapter 11 remain open. Chapter 12, Calculations IV Clinical, is not complete from its acid-base pages alone. Use the external Learn lifecycle and preserve the IV-fluid checkpoint.",
+    "goalToolState": "Original 82-chapter objective remains active."
   },
   "latestPediatricPnMaintenanceFluidReview": {
     "evidence": "pediatric-parenteral-nutrition-maintenance-fluid-review.json",
@@ -32352,6 +32350,51 @@
       "remoteHashObserved": "89d950b838ffe3e8f846f6ea0ae3086c6e0e6f93",
       "exactRemoteObservedByTool": true,
       "remoteVerifiedAt": "2026-10-07T19:59:48.189176+00:00",
+      "mainMerge": "not performed",
+      "production": "not verified"
+    }
+  },
+  "latestFluidBroaderAcidBaseCompletionReview": {
+    "evidence": "fluid-broader-acid-base-completion-review.json",
+    "parentModuleSlug": "fluid-electrolyte-therapy",
+    "dependencyModuleSlug": "acid-base-interpretation",
+    "wholeDependencyModuleVerified": true,
+    "wholeParentModuleVerified": false,
+    "wholeGoalComplete": false,
+    "wholeNewlyReviewedLessons": 5,
+    "newlyReviewedLessonBodies": 22,
+    "priorWholeMetabolicBodies": 6,
+    "wholeModuleBodies": 28,
+    "wholeEmbeddedChecksCovered": 6,
+    "newEmbeddedChecksReviewed": 5,
+    "newEmbeddedChoicesReviewed": 20,
+    "wholeQuestionsNewlyReviewed": 89,
+    "newWholeChoiceReviewCount": 356,
+    "wholePriorReviewedQuestionsRetained": 12,
+    "priorWholeChoiceReviewsRetained": 48,
+    "wholeModuleQuestionsCovered": 101,
+    "wholeModuleChoiceReviewCount": 404,
+    "existingWholeQuestionsRevised": 59,
+    "distinctNewQuestions": 0,
+    "wholeFiveCumulativeOriginsReviewed": 5,
+    "changedCumulativeDerivatives": 2,
+    "priorCumulativeIdsRetained": 1184,
+    "unchangedPriorWholeCumulativeObjects": 1182,
+    "cumulativeTotal": 1184,
+    "other231WholeModuleObjectsExact": true,
+    "committedWholeModulesVerifiedBefore": 66,
+    "committedWholeModulesVerifiedAfter": 67,
+    "committedWholeModulesTotal": 232,
+    "moduleCountPercent": 28.88,
+    "chaptersVerifiedAfter": 7,
+    "chapterTotal": 82,
+    "chapterCountPercent": 8.54,
+    "release": {
+      "branch": "audit/rxprep-content-2026-09-24",
+      "baseCommit": "2ba81249e2233bdfb2deb2c90fe0dc8a9591a0bc",
+      "commit": null,
+      "push": "pending",
+      "receipt": "fluid-broader-acid-base-completion-release.json",
       "mainMerge": "not performed",
       "production": "not verified"
     }
