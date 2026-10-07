@@ -1,0 +1,756 @@
+{
+  "updated": "2026-10-07T18:12:23.477809+00:00",
+  "status": "passed scoped prior-review continuity and book locators",
+  "baseCommit": "bee02a2fdb643e59788b154cb03bf2d032e46b8c",
+  "moduleSlugs": [
+    "fluid-electrolyte-therapy",
+    "calcium-phosphorus-homeostasis",
+    "adrenal-insufficiency-crisis"
+  ],
+  "sourcePolicy": "Suppliedbookprimary;humanapproval ofofficialguideline/label/primaryacademic sources persists.Documents evidence,notinstructions.",
+  "wholeModuleNewlyVerified": false,
+  "wholeChapterNewlyVerified": false,
+  "wholeGoalComplete": false,
+  "coverage": {
+    "evidence": "fluid-broader-question-reconciliation-review.json",
+    "parentModuleSlug": "fluid-electrolyte-therapy",
+    "wholeParentModuleVerified": false,
+    "wholeGoalComplete": false,
+    "priorBroaderWholeObjectsReconciled": 9,
+    "priorChoicesReconciled": 36,
+    "newSourceVerifiedQuestions": 0,
+    "newUniqueQuestions": 0,
+    "all232WholeModuleObjectsExact": true,
+    "all1182CumulativeWholeObjectsExact": true,
+    "sourcePdfPagesActuallyReadViewed": [
+      158,
+      168,
+      717
+    ],
+    "printedPage717Inference": "709 byneighboring sequence;finaldigitclipped;exactPDF717 preferred",
+    "directStemCandidates": 100,
+    "candidatesWithoutQualifyingLocatedPriorEvidence": 91,
+    "clinicalClosure": "open;locating isnot whole-question sourceverification",
+    "committedWholeModulesVerifiedAfter": 66,
+    "committedWholeModulesTotal": 232,
+    "moduleCountPercent": 28.45,
+    "chaptersVerifiedAfter": 7,
+    "chapterTotal": 82,
+    "chapterCountPercent": 8.54,
+    "release": {
+      "branch": "audit/rxprep-content-2026-09-24",
+      "baseCommit": "bee02a2fdb643e59788b154cb03bf2d032e46b8c",
+      "commit": null,
+      "push": "pending",
+      "receipt": "fluid-broader-question-reconciliation-release.json",
+      "mainMerge": "not performed",
+      "production": "not verified"
+    }
+  },
+  "wholeObjectContinuity": [
+    {
+      "moduleSlug": "calcium-phosphorus-homeostasis",
+      "id": "calcium-phosphorus-036",
+      "wholeObject": {
+        "id": "calcium-phosphorus-036",
+        "question": "Which mechanism commonly lowers phosphate during refeeding?",
+        "choices": [
+          "Insulin-driven intracellular uptake",
+          "Reduced renal phosphate excretion as insulin rises",
+          "Increased intestinal phosphate absorption after carbohydrate reintroduction",
+          "Reduced PTH-driven urinary phosphate loss alone"
+        ],
+        "answer": 0,
+        "rationale": "After carbohydrate reintroduction, rising insulin promotes intracellular phosphate uptake for metabolism and can rapidly lower serum phosphate in a depleted patient. Reduced urinary phosphate loss or increased intestinal absorption does not explain this characteristic shift. Potassium can fall too; the mechanism for the accompanying magnesium decline is less well established. Assess all three electrolytes and the clinical nutrition exposure.",
+        "reviewHref": "#hypophosphatemia"
+      },
+      "allStemFourChoicesKeyRationaleAnchorExactToPriorReview": true,
+      "anchorExistsInCurrentModule": true,
+      "priorRecords": [
+        {
+          "reviewFile": "enteral-nutrition-broader-calcium-completion-review.json",
+          "committedReviewSha256": "b88c939e60c03f9705eeff8ad021e6c2d9e642d39ee5fe9d2cce57125c1049c6",
+          "objectJsonPointer": "/finalSourceComparison/questionReview/37/finalWholeQuestion",
+          "wholeObjectExact": true,
+          "explicitPriorAllChoicesReviewFlag": true,
+          "recordedSources": [
+            "Private book PDF158 nutrition/717 phosphorus/913-914 antacid context;phosphate factors hypothetical arithmetic only",
+            "ASPEN2020 full pathophysiology and adult Table6/footnote/special-population limits;erratum",
+            "Schmid2012 full relevant clinical review/Table2/footnotes",
+            "FDA potassium-phosphates2024 full adopted sections1/2/3/4/5/6/7/8.6;own sodium label full adopted sections",
+            "Injectafer August2026 complete boxed warning/2.1/5.1/17/patient information;2018 original FGF23 RCT"
+          ],
+          "sourceContinuity": [
+            "enteral-nutrition-broader-phosphate-mechanism-safety-review.json/questionReview/0/after",
+            "enteral-nutrition-broader-phosphate-mechanism-safety-review.json/changes/questions/calcium-phosphorus-036/after"
+          ],
+          "choiceDefenses": null,
+          "priorDecision": "Refined weak alternatives and corresponding feedback without changing objective or key",
+          "priorSingleBestAnswer": true,
+          "priorRelease": {
+            "branch": "audit/rxprep-content-2026-09-24",
+            "commit": "296ec937d38411a3f3facda1dbae27bbc8766bd0",
+            "push": "verified",
+            "receipt": "enteral-nutrition-broader-calcium-completion-release.json",
+            "mainMerge": "not performed",
+            "production": "not verified",
+            "remoteHashObserved": "296ec937d38411a3f3facda1dbae27bbc8766bd0",
+            "exactRemoteObservedByTool": true,
+            "remoteVerifiedAt": "2026-10-05T08:13:58.315337+00:00"
+          },
+          "scope": "Prior exact-object evidence located;not a new therapeutic/source certification"
+        }
+      ],
+      "countedAsNewUniqueQuestion": false,
+      "freshTherapeuticSourceCertification": false
+    },
+    {
+      "moduleSlug": "calcium-phosphorus-homeostasis",
+      "id": "calcium-phosphorus-037",
+      "wholeObject": {
+        "id": "calcium-phosphorus-037",
+        "question": "Why can severe hypophosphatemia cause respiratory failure?",
+        "choices": [
+          "ATP depletion weakens respiratory muscles",
+          "Increased ATP availability suppresses respiratory muscle contraction",
+          "Phosphate depletion improves muscle energy delivery but reduces albumin binding",
+          "Respiratory muscle weakness is excluded if hemoglobin concentration is normal"
+        ],
+        "answer": 0,
+        "rationale": "Phosphate is required for ATP production, and severe depletion can impair respiratory muscle function enough to cause respiratory failure. The book identifies weakness and respiratory failure; ASPEN describes the energy and muscle link. Depletion does not improve ATP availability or muscle energy delivery. A normal hemoglobin concentration does not exclude respiratory muscle dysfunction, and altered tissue oxygen delivery can also contribute.",
+        "reviewHref": "#hypophosphatemia"
+      },
+      "allStemFourChoicesKeyRationaleAnchorExactToPriorReview": true,
+      "anchorExistsInCurrentModule": true,
+      "priorRecords": [
+        {
+          "reviewFile": "enteral-nutrition-broader-calcium-completion-review.json",
+          "committedReviewSha256": "b88c939e60c03f9705eeff8ad021e6c2d9e642d39ee5fe9d2cce57125c1049c6",
+          "objectJsonPointer": "/finalSourceComparison/questionReview/38/finalWholeQuestion",
+          "wholeObjectExact": true,
+          "explicitPriorAllChoicesReviewFlag": true,
+          "recordedSources": [
+            "Private book PDF158 nutrition/717 phosphorus/913-914 antacid context;phosphate factors hypothetical arithmetic only",
+            "ASPEN2020 full pathophysiology and adult Table6/footnote/special-population limits;erratum",
+            "Schmid2012 full relevant clinical review/Table2/footnotes",
+            "FDA potassium-phosphates2024 full adopted sections1/2/3/4/5/6/7/8.6;own sodium label full adopted sections",
+            "Injectafer August2026 complete boxed warning/2.1/5.1/17/patient information;2018 original FGF23 RCT"
+          ],
+          "sourceContinuity": [
+            "enteral-nutrition-broader-phosphate-mechanism-safety-review.json/questionReview/1/after",
+            "enteral-nutrition-broader-phosphate-mechanism-safety-review.json/changes/questions/calcium-phosphorus-037/after"
+          ],
+          "choiceDefenses": null,
+          "priorDecision": "Refined weak alternatives and corresponding feedback without changing objective or key",
+          "priorSingleBestAnswer": true,
+          "priorRelease": {
+            "branch": "audit/rxprep-content-2026-09-24",
+            "commit": "296ec937d38411a3f3facda1dbae27bbc8766bd0",
+            "push": "verified",
+            "receipt": "enteral-nutrition-broader-calcium-completion-release.json",
+            "mainMerge": "not performed",
+            "production": "not verified",
+            "remoteHashObserved": "296ec937d38411a3f3facda1dbae27bbc8766bd0",
+            "exactRemoteObservedByTool": true,
+            "remoteVerifiedAt": "2026-10-05T08:13:58.315337+00:00"
+          },
+          "scope": "Prior exact-object evidence located;not a new therapeutic/source certification"
+        }
+      ],
+      "countedAsNewUniqueQuestion": false,
+      "freshTherapeuticSourceCertification": false
+    },
+    {
+      "moduleSlug": "calcium-phosphorus-homeostasis",
+      "id": "calcium-phosphorus-041",
+      "wholeObject": {
+        "id": "calcium-phosphorus-041",
+        "question": "Which iron product has a current label warning for serious symptomatic hypophosphatemia, especially after repeated exposure?",
+        "choices": [
+          "Ferric carboxymaltose",
+          "Ferrous sulfate",
+          "Iron sucrose",
+          "Oral carbonyl iron"
+        ],
+        "answer": 0,
+        "rationale": "Ferric carboxymaltose is the product identified by the current Injectafer warning. A randomized trial and its physiological substudy support increased biologically active FGF23 and renal phosphate wasting after this product; the mechanism and warning should not be generalized to every iron formulation. Severe or prolonged symptomatic hypophosphatemia, including osteomalacia and fractures, can follow single or repeated exposure. Repeated exposure is not required. Review the current product-specific label for phosphate testing and management.",
+        "reviewHref": "#hypophosphatemia"
+      },
+      "allStemFourChoicesKeyRationaleAnchorExactToPriorReview": true,
+      "anchorExistsInCurrentModule": true,
+      "priorRecords": [
+        {
+          "reviewFile": "enteral-nutrition-broader-calcium-completion-review.json",
+          "committedReviewSha256": "b88c939e60c03f9705eeff8ad021e6c2d9e642d39ee5fe9d2cce57125c1049c6",
+          "objectJsonPointer": "/finalSourceComparison/questionReview/42/finalWholeQuestion",
+          "wholeObjectExact": true,
+          "explicitPriorAllChoicesReviewFlag": true,
+          "recordedSources": [
+            "Private book PDF158 nutrition/717 phosphorus/913-914 antacid context;phosphate factors hypothetical arithmetic only",
+            "ASPEN2020 full pathophysiology and adult Table6/footnote/special-population limits;erratum",
+            "Schmid2012 full relevant clinical review/Table2/footnotes",
+            "FDA potassium-phosphates2024 full adopted sections1/2/3/4/5/6/7/8.6;own sodium label full adopted sections",
+            "Injectafer August2026 complete boxed warning/2.1/5.1/17/patient information;2018 original FGF23 RCT"
+          ],
+          "sourceContinuity": [
+            "enteral-nutrition-broader-phosphate-physiology-review.json/changes/questions/calcium-phosphorus-041/after"
+          ],
+          "choiceDefenses": null,
+          "priorDecision": "Refined weak alternatives and corresponding feedback without changing objective or key",
+          "priorSingleBestAnswer": true,
+          "priorRelease": {
+            "branch": "audit/rxprep-content-2026-09-24",
+            "commit": "296ec937d38411a3f3facda1dbae27bbc8766bd0",
+            "push": "verified",
+            "receipt": "enteral-nutrition-broader-calcium-completion-release.json",
+            "mainMerge": "not performed",
+            "production": "not verified",
+            "remoteHashObserved": "296ec937d38411a3f3facda1dbae27bbc8766bd0",
+            "exactRemoteObservedByTool": true,
+            "remoteVerifiedAt": "2026-10-05T08:13:58.315337+00:00"
+          },
+          "scope": "Prior exact-object evidence located;not a new therapeutic/source certification"
+        }
+      ],
+      "countedAsNewUniqueQuestion": false,
+      "freshTherapeuticSourceCertification": false
+    },
+    {
+      "moduleSlug": "calcium-phosphorus-homeostasis",
+      "id": "calcium-phosphorus-iron-persistent-warning",
+      "wholeObject": {
+        "id": "calcium-phosphorus-iron-persistent-warning",
+        "question": "After Injectafer, an adult develops persistent hypophosphatemia and new bone pain. Which response follows its August 2026 warning?",
+        "choices": [
+          "Continue repeat courses without reassessing phosphate",
+          "Treat the hypophosphatemia and consider permanent discontinuation",
+          "Attribute every symptom to anemia without evaluation",
+          "Assume hypophosphatemia can occur only after multiple doses"
+        ],
+        "answer": 1,
+        "rationale": "Assess the symptoms and phosphate abnormality, treat as medically indicated, and consider permanently discontinuing Injectafer for severe symptomatic or persistent hypophosphatemia. This is a clinical consideration, not an automatic mandate in every mild transient case. The warning includes single-dose events, normal baseline phosphate and patients without apparent risk factors; anemia-like symptoms should not prevent evaluation.",
+        "reviewHref": "#hypophosphatemia",
+        "difficulty": "clinical"
+      },
+      "allStemFourChoicesKeyRationaleAnchorExactToPriorReview": true,
+      "anchorExistsInCurrentModule": true,
+      "priorRecords": [
+        {
+          "reviewFile": "enteral-nutrition-broader-calcium-completion-review.json",
+          "committedReviewSha256": "b88c939e60c03f9705eeff8ad021e6c2d9e642d39ee5fe9d2cce57125c1049c6",
+          "objectJsonPointer": "/finalSourceComparison/questionReview/75/finalWholeQuestion",
+          "wholeObjectExact": true,
+          "explicitPriorAllChoicesReviewFlag": true,
+          "recordedSources": [
+            "Private book PDF158 nutrition/717 phosphorus/913-914 antacid context;phosphate factors hypothetical arithmetic only",
+            "ASPEN2020 full pathophysiology and adult Table6/footnote/special-population limits;erratum",
+            "Schmid2012 full relevant clinical review/Table2/footnotes",
+            "FDA potassium-phosphates2024 full adopted sections1/2/3/4/5/6/7/8.6;own sodium label full adopted sections",
+            "Injectafer August2026 complete boxed warning/2.1/5.1/17/patient information;2018 original FGF23 RCT"
+          ],
+          "sourceContinuity": [
+            "enteral-nutrition-broader-phosphate-mechanism-safety-review.json/questionReview/5/after",
+            "enteral-nutrition-broader-phosphate-mechanism-safety-review.json/changes/questions/calcium-phosphorus-iron-persistent-warning/after"
+          ],
+          "choiceDefenses": null,
+          "priorDecision": "Retained after individual clinical and distractor review",
+          "priorSingleBestAnswer": true,
+          "priorRelease": {
+            "branch": "audit/rxprep-content-2026-09-24",
+            "commit": "296ec937d38411a3f3facda1dbae27bbc8766bd0",
+            "push": "verified",
+            "receipt": "enteral-nutrition-broader-calcium-completion-release.json",
+            "mainMerge": "not performed",
+            "production": "not verified",
+            "remoteHashObserved": "296ec937d38411a3f3facda1dbae27bbc8766bd0",
+            "exactRemoteObservedByTool": true,
+            "remoteVerifiedAt": "2026-10-05T08:13:58.315337+00:00"
+          },
+          "scope": "Prior exact-object evidence located;not a new therapeutic/source certification"
+        }
+      ],
+      "countedAsNewUniqueQuestion": false,
+      "freshTherapeuticSourceCertification": false
+    },
+    {
+      "moduleSlug": "calcium-phosphorus-homeostasis",
+      "id": "calcium-phosphorus-098",
+      "wholeObject": {
+        "id": "calcium-phosphorus-098",
+        "question": "A patient with severe hypophosphatemia has potassium 5.8 mEq/L and oliguric kidney injury. Which interpretation or action is most defensible?",
+        "choices": [
+          "Avoid automatic potassium phosphate and obtain specialist protocol guidance",
+          "Select potassium phosphate because severe depletion outweighs the potassium result",
+          "Select sodium phosphate and repeat it without reassessing sodium, calcium or kidney function",
+          "Use the same replacement amount as a patient with normal kidney function because phosphate is low"
+        ],
+        "answer": 0,
+        "rationale": "Potassium 5.8 mEq/L is hyperkalemia, and potassium phosphates injection is contraindicated in hyperkalemia. Oliguric kidney injury requires an urgent individualized replacement and monitoring plan. Sodium phosphate avoids that potassium load but adds sodium, has high-sodium, high-phosphate and low-calcium contraindications, and requires caution in renal impairment. Neither severe depletion nor a non-potassium product establishes a fixed safe regimen. The stem does not select a replacement dose.",
+        "reviewHref": "#hypophosphatemia"
+      },
+      "allStemFourChoicesKeyRationaleAnchorExactToPriorReview": true,
+      "anchorExistsInCurrentModule": true,
+      "priorRecords": [
+        {
+          "reviewFile": "enteral-nutrition-broader-calcium-completion-review.json",
+          "committedReviewSha256": "b88c939e60c03f9705eeff8ad021e6c2d9e642d39ee5fe9d2cce57125c1049c6",
+          "objectJsonPointer": "/finalSourceComparison/questionReview/94/finalWholeQuestion",
+          "wholeObjectExact": true,
+          "explicitPriorAllChoicesReviewFlag": true,
+          "recordedSources": [
+            "Private book PDF158 nutrition/717 phosphorus/913-914 antacid context;phosphate factors hypothetical arithmetic only",
+            "ASPEN2020 full pathophysiology and adult Table6/footnote/special-population limits;erratum",
+            "Schmid2012 full relevant clinical review/Table2/footnotes",
+            "FDA potassium-phosphates2024 full adopted sections1/2/3/4/5/6/7/8.6;own sodium label full adopted sections",
+            "Injectafer August2026 complete boxed warning/2.1/5.1/17/patient information;2018 original FGF23 RCT"
+          ],
+          "sourceContinuity": [
+            "enteral-nutrition-broader-phosphate-route-label-review.json/questionReview/3/after",
+            "enteral-nutrition-broader-phosphate-route-label-review.json/remainingReview/allFinalLessonQuestionObjects/17"
+          ],
+          "choiceDefenses": null,
+          "priorDecision": "Refined weak alternatives and corresponding feedback without changing objective or key",
+          "priorSingleBestAnswer": true,
+          "priorRelease": {
+            "branch": "audit/rxprep-content-2026-09-24",
+            "commit": "296ec937d38411a3f3facda1dbae27bbc8766bd0",
+            "push": "verified",
+            "receipt": "enteral-nutrition-broader-calcium-completion-release.json",
+            "mainMerge": "not performed",
+            "production": "not verified",
+            "remoteHashObserved": "296ec937d38411a3f3facda1dbae27bbc8766bd0",
+            "exactRemoteObservedByTool": true,
+            "remoteVerifiedAt": "2026-10-05T08:13:58.315337+00:00"
+          },
+          "scope": "Prior exact-object evidence located;not a new therapeutic/source certification"
+        }
+      ],
+      "countedAsNewUniqueQuestion": false,
+      "freshTherapeuticSourceCertification": false
+    },
+    {
+      "moduleSlug": "calcium-phosphorus-homeostasis",
+      "id": "calcium-phosphorus-103",
+      "wholeObject": {
+        "id": "calcium-phosphorus-103",
+        "question": "A patient with high phosphate and low calcium after tumor treatment develops rising creatinine and hyperkalemia. What is the best next interpretation or management principle?",
+        "choices": [
+          "Recognize tumor lysis physiology and manage the full emergency",
+          "Correct calcium alone and defer assessment of potassium and kidney function",
+          "Treat phosphate as a dietary-adherence problem without urgent evaluation",
+          "Arrange only routine outpatient follow-up because the abnormalities are expected"
+        ],
+        "answer": 0,
+        "rationale": "Tumor cell lysis releases phosphate and potassium, can lower calcium through phosphate binding, and can produce kidney injury. These linked findings require urgent integrated evaluation and management. Correcting only calcium or phosphate, or waiting routinely for spontaneous recovery, misses the potassium and kidney components of the emergency.",
+        "reviewHref": "#hyperphosphatemia-ckd-mbd"
+      },
+      "allStemFourChoicesKeyRationaleAnchorExactToPriorReview": true,
+      "anchorExistsInCurrentModule": true,
+      "priorRecords": [
+        {
+          "reviewFile": "enteral-nutrition-broader-calcium-completion-review.json",
+          "committedReviewSha256": "b88c939e60c03f9705eeff8ad021e6c2d9e642d39ee5fe9d2cce57125c1049c6",
+          "objectJsonPointer": "/finalSourceComparison/questionReview/99/finalWholeQuestion",
+          "wholeObjectExact": true,
+          "explicitPriorAllChoicesReviewFlag": true,
+          "recordedSources": [
+            "Private book PDF297-299 full CKD/binder/active-D tables and footnotes;PDF814 TLS whole figure/text",
+            "KDIGO2017 full relevant recommendations and rationale printed15-17/25/28-33",
+            "Fosrenol2/5.1/7.2-7.4;Renvela2.2/Table4/5.1/7/Table5",
+            "KDOQI2003 historical aluminum toxicity full relevant statements/rationale",
+            "Howard2011 full TLS acute renal/mineral management text and original Figure1/caption"
+          ],
+          "sourceContinuity": [
+            "enteral-nutrition-broader-ckd-binder-review.json/changes/questions/calcium-phosphorus-103/after",
+            "enteral-nutrition-broader-ckd-binder-review.json/finalSourceComparison/wholeQuestionComparison/9/final",
+            "enteral-nutrition-broader-ckd-binder-review.json/questionReview/9/final"
+          ],
+          "choiceDefenses": null,
+          "priorDecision": "Retained after individual clinical and distractor review",
+          "priorSingleBestAnswer": true,
+          "priorRelease": {
+            "branch": "audit/rxprep-content-2026-09-24",
+            "commit": "296ec937d38411a3f3facda1dbae27bbc8766bd0",
+            "push": "verified",
+            "receipt": "enteral-nutrition-broader-calcium-completion-release.json",
+            "mainMerge": "not performed",
+            "production": "not verified",
+            "remoteHashObserved": "296ec937d38411a3f3facda1dbae27bbc8766bd0",
+            "exactRemoteObservedByTool": true,
+            "remoteVerifiedAt": "2026-10-05T08:13:58.315337+00:00"
+          },
+          "scope": "Prior exact-object evidence located;not a new therapeutic/source certification"
+        }
+      ],
+      "countedAsNewUniqueQuestion": false,
+      "freshTherapeuticSourceCertification": false
+    },
+    {
+      "moduleSlug": "adrenal-insufficiency-crisis",
+      "id": "adrenal-insufficiency-01-case",
+      "wholeObject": {
+        "id": "adrenal-insufficiency-01-case",
+        "question": "A patient has low cortisol, high ACTH, hyperkalemia, and salt craving. Which response is best?",
+        "choices": [
+          "Classify primary adrenal insufficiency and assess aldosterone deficiency.",
+          "Classify central insufficiency because cortisol is low, without considering ACTH.",
+          "Exclude mineralocorticoid deficiency because ACTH is elevated.",
+          "Treat the pattern as isolated glucocorticoid excess."
+        ],
+        "answer": 0,
+        "rationale": "Low cortisol with high ACTH favors primary cortical failure; hyperkalemia and salt craving support possible mineralocorticoid loss. Assess renin and aldosterone together. Low cortisol alone cannot distinguish primary from central disease, so ignoring ACTH misclassifies the pattern. Elevated ACTH does not exclude aldosterone deficiency. Glucocorticoid excess does not explain this low-cortisol pattern; confirm the clinical and hormonal assessment rather than treating the case as an isolated cortisol value.",
+        "reviewHref": "#levels-of-failure",
+        "difficulty": "application"
+      },
+      "allStemFourChoicesKeyRationaleAnchorExactToPriorReview": true,
+      "anchorExistsInCurrentModule": true,
+      "priorRecords": [
+        {
+          "reviewFile": "enteral-nutrition-broader-adrenal-foundations-review.json",
+          "committedReviewSha256": "427c241c0d55e24531173d7e8d7bd43407969b3b15c64d86ff31843541967979",
+          "objectJsonPointer": "/finalSourceComparison/wholeQuestionComparisons/0/wholeQuestion",
+          "wholeObjectExact": true,
+          "explicitPriorAllChoicesReviewFlag": true,
+          "recordedSources": [
+            "Book634-635 HPA",
+            "Primary introduction and2.5",
+            "Central2.4",
+            "Primary introduction",
+            "Central2.1,2.4",
+            "Book635 HPA/withdrawal",
+            "Steroid introduction,R2.10",
+            "Primary1.1-1.3,2.4-2.5",
+            "SteroidR3.2"
+          ],
+          "sourceContinuity": null,
+          "choiceDefenses": [
+            {
+              "index": 0,
+              "choice": "Classify primary adrenal insufficiency and assess aldosterone deficiency.",
+              "comparison": "ACTH/cortisol pattern favorsprimary; renin/aldo assesses suspectedloss",
+              "correctForStem": true
+            },
+            {
+              "index": 1,
+              "choice": "Classify central insufficiency because cortisol is low, without considering ACTH.",
+              "comparison": "Lowcortalone ignoresACTH centraldistinction",
+              "correctForStem": false
+            },
+            {
+              "index": 2,
+              "choice": "Exclude mineralocorticoid deficiency because ACTH is elevated.",
+              "comparison": "ACTHrise doesnotexcludemineraldeficiency",
+              "correctForStem": false
+            },
+            {
+              "index": 3,
+              "choice": "Treat the pattern as isolated glucocorticoid excess.",
+              "comparison": "Lowcortnotisolatedexcess",
+              "correctForStem": false
+            }
+          ],
+          "priorDecision": null,
+          "priorSingleBestAnswer": null,
+          "priorRelease": {
+            "branch": "audit/rxprep-content-2026-09-24",
+            "commit": "0e4001a21e1cf7b79be8d83a70fd8608d71c9464",
+            "push": "verified",
+            "receipt": "enteral-nutrition-broader-adrenal-foundations-release.json",
+            "mainMerge": "not performed",
+            "production": "not verified",
+            "remoteHashObserved": "0e4001a21e1cf7b79be8d83a70fd8608d71c9464",
+            "exactRemoteObservedByTool": true,
+            "remoteVerifiedAt": "2026-10-06T18:24:43.667722+00:00"
+          },
+          "scope": "Prior exact-object evidence located;not a new therapeutic/source certification"
+        }
+      ],
+      "countedAsNewUniqueQuestion": false,
+      "freshTherapeuticSourceCertification": false
+    },
+    {
+      "moduleSlug": "adrenal-insufficiency-crisis",
+      "id": "adrenal-insufficiency-05-case",
+      "wholeObject": {
+        "id": "adrenal-insufficiency-05-case",
+        "question": "An anticoagulated patient with sepsis develops sudden flank pain, hypotension, hyponatremia, and hyperkalemia. Which response is best?",
+        "choices": [
+          "Treat possible adrenal crisis and evaluate for bilateral adrenal hemorrhage.",
+          "Wait for antibody testing before treating the shock.",
+          "Exclude adrenal injury because the patient is taking an anticoagulant.",
+          "Assume chronic autoimmune disease is the only possible cause."
+        ],
+        "answer": 0,
+        "rationale": "Sepsis and anticoagulation with sudden pain, shock and this electrolyte pattern raise concern for acute bilateral adrenal hemorrhage and possible adrenal crisis. Begin appropriate parenteral glucocorticoids and fluid resuscitation while evaluating the cause; obtain useful samples only if doing so is safe and does not delay treatment. Waiting for antibodies delays urgent care. Anticoagulation does not exclude adrenal injury, and chronic autoimmunity is not the only cause of primary failure. The pattern raises concern; it does not establish hemorrhage without evaluation.",
+        "reviewHref": "#primary-adrenal-insufficiency",
+        "difficulty": "application"
+      },
+      "allStemFourChoicesKeyRationaleAnchorExactToPriorReview": true,
+      "anchorExistsInCurrentModule": true,
+      "priorRecords": [
+        {
+          "reviewFile": "enteral-nutrition-broader-adrenal-foundations-review.json",
+          "committedReviewSha256": "427c241c0d55e24531173d7e8d7bd43407969b3b15c64d86ff31843541967979",
+          "objectJsonPointer": "/finalSourceComparison/wholeQuestionComparisons/4/wholeQuestion",
+          "wholeObjectExact": true,
+          "explicitPriorAllChoicesReviewFlag": true,
+          "recordedSources": [
+            "Primary2.6,5.3 and surveillance evidence",
+            "Primary introduction,Table1 and1.1 evidence",
+            "PrimaryTable2,1.3",
+            "Primary2.6 complete evidence,Figure1 caption"
+          ],
+          "sourceContinuity": null,
+          "choiceDefenses": [
+            {
+              "index": 0,
+              "choice": "Treat possible adrenal crisis and evaluate for bilateral adrenal hemorrhage.",
+              "comparison": "Treatpossiblecrisis evaluatebilateralhemorrhage notconfirmedbycasealone",
+              "correctForStem": true
+            },
+            {
+              "index": 1,
+              "choice": "Wait for antibody testing before treating the shock.",
+              "comparison": "Do notwaitAbshock",
+              "correctForStem": false
+            },
+            {
+              "index": 2,
+              "choice": "Exclude adrenal injury because the patient is taking an anticoagulant.",
+              "comparison": "Anticoagsepsis supportsnotexcludeshemorrhage",
+              "correctForStem": false
+            },
+            {
+              "index": 3,
+              "choice": "Assume chronic autoimmune disease is the only possible cause.",
+              "comparison": "Autoimmunenotonlyprimarycause",
+              "correctForStem": false
+            }
+          ],
+          "priorDecision": null,
+          "priorSingleBestAnswer": null,
+          "priorRelease": {
+            "branch": "audit/rxprep-content-2026-09-24",
+            "commit": "0e4001a21e1cf7b79be8d83a70fd8608d71c9464",
+            "push": "verified",
+            "receipt": "enteral-nutrition-broader-adrenal-foundations-release.json",
+            "mainMerge": "not performed",
+            "production": "not verified",
+            "remoteHashObserved": "0e4001a21e1cf7b79be8d83a70fd8608d71c9464",
+            "exactRemoteObservedByTool": true,
+            "remoteVerifiedAt": "2026-10-06T18:24:43.667722+00:00"
+          },
+          "scope": "Prior exact-object evidence located;not a new therapeutic/source certification"
+        }
+      ],
+      "countedAsNewUniqueQuestion": false,
+      "freshTherapeuticSourceCertification": false
+    },
+    {
+      "moduleSlug": "adrenal-insufficiency-crisis",
+      "id": "adrenal-insufficiency-19-case",
+      "wholeObject": {
+        "id": "adrenal-insufficiency-19-case",
+        "question": "A patient on fludrocortisone develops edema, hypertension, hypokalemia, and suppressed renin. Which response is best?",
+        "choices": [
+          "Increase fludrocortisone to correct the low potassium.",
+          "Ignore the pattern because replacement doses cannot cause toxicity.",
+          "Reduce mineralocorticoid exposure and reassess volume status.",
+          "Stop all cortisol replacement to treat mineralocorticoid excess."
+        ],
+        "answer": 2,
+        "rationale": "Edema, hypertension, hypokalemia and suppressed renin together support excessive mineralocorticoid effect, so reduce excessive fludrocortisone exposure under supervision and reassess volume status and medications. Increasing fludrocortisone can worsen potassium loss. Replacement dosing can still cause excess effects, so the findings cannot be ignored. Stopping necessary cortisol replacement does not safely correct mineralocorticoid excess. Also assess glucocorticoid over-replacement when evaluating hypertension.",
+        "reviewHref": "#mineralocorticoid-replacement",
+        "difficulty": "application"
+      },
+      "allStemFourChoicesKeyRationaleAnchorExactToPriorReview": true,
+      "anchorExistsInCurrentModule": true,
+      "priorRecords": [
+        {
+          "reviewFile": "enteral-nutrition-broader-adrenal-completion-review.json",
+          "committedReviewSha256": "8154d1539a7eb6e08adb258ee5b0edae68324effa9b2cd7d5305594042951b89",
+          "objectJsonPointer": "/finalSourceComparison/wholeQuestionComparisons/1/wholeQuestion",
+          "wholeObjectExact": true,
+          "explicitPriorAllChoicesReviewFlag": true,
+          "recordedSources": [
+            "Primary3.7 and full mineral evidence",
+            "Primary3.8-3.10 and pregnancy evidence",
+            "Fludrocortisone monitoring/interaction rows",
+            "Primary3.7-3.10 full evidence",
+            "Fludrocortisone precautions",
+            "Primary4.3 evidence HC>50mg24h",
+            "SteroidR2.12"
+          ],
+          "sourceContinuity": null,
+          "choiceDefenses": [
+            {
+              "index": 0,
+              "choice": "Increase fludrocortisone to correct the low potassium.",
+              "comparison": "Increase worsens potassiumloss/excess",
+              "correctForStem": false
+            },
+            {
+              "index": 1,
+              "choice": "Ignore the pattern because replacement doses cannot cause toxicity.",
+              "comparison": "Replacement doses can still cause excess",
+              "correctForStem": false
+            },
+            {
+              "index": 2,
+              "choice": "Reduce mineralocorticoid exposure and reassess volume status.",
+              "comparison": "Reduce excess MC and reassess volume,meds andGC",
+              "correctForStem": true
+            },
+            {
+              "index": 3,
+              "choice": "Stop all cortisol replacement to treat mineralocorticoid excess.",
+              "comparison": "Stop cortisol notsafe treatment forMCexcess",
+              "correctForStem": false
+            }
+          ],
+          "priorDecision": null,
+          "priorSingleBestAnswer": null,
+          "priorRelease": {
+            "branch": "audit/rxprep-content-2026-09-24",
+            "commit": "1f410fa8f21b0469bbe1d6b5caacab8eb9ec6078",
+            "push": "verified",
+            "receipt": "enteral-nutrition-broader-adrenal-completion-release.json",
+            "mainMerge": "not performed",
+            "production": "not verified",
+            "remoteHashObserved": "1f410fa8f21b0469bbe1d6b5caacab8eb9ec6078",
+            "exactRemoteObservedByTool": true,
+            "remoteVerifiedAt": "2026-10-06T19:11:07.378231+00:00"
+          },
+          "scope": "Prior exact-object evidence located;not a new therapeutic/source certification"
+        }
+      ],
+      "countedAsNewUniqueQuestion": false,
+      "freshTherapeuticSourceCertification": false
+    }
+  ],
+  "priorReleaseContinuity": {
+    "enteral-nutrition-broader-calcium-completion-review.json": {
+      "committedReviewSha256": "b88c939e60c03f9705eeff8ad021e6c2d9e642d39ee5fe9d2cce57125c1049c6",
+      "contentCommit": "296ec937d38411a3f3facda1dbae27bbc8766bd0",
+      "isAncestorOfCurrentBase": true,
+      "historicExactRemoteReceipt": "enteral-nutrition-broader-calcium-completion-release.json",
+      "status": "prior released review proof matches current wholeobject;not a fresh therapeutic audit"
+    },
+    "enteral-nutrition-broader-adrenal-foundations-review.json": {
+      "committedReviewSha256": "427c241c0d55e24531173d7e8d7bd43407969b3b15c64d86ff31843541967979",
+      "contentCommit": "0e4001a21e1cf7b79be8d83a70fd8608d71c9464",
+      "isAncestorOfCurrentBase": true,
+      "historicExactRemoteReceipt": "enteral-nutrition-broader-adrenal-foundations-release.json",
+      "status": "prior released review proof matches current wholeobject;not a fresh therapeutic audit"
+    },
+    "enteral-nutrition-broader-adrenal-completion-review.json": {
+      "committedReviewSha256": "8154d1539a7eb6e08adb258ee5b0edae68324effa9b2cd7d5305594042951b89",
+      "contentCommit": "1f410fa8f21b0469bbe1d6b5caacab8eb9ec6078",
+      "isAncestorOfCurrentBase": true,
+      "historicExactRemoteReceipt": "enteral-nutrition-broader-adrenal-completion-release.json",
+      "status": "prior released review proof matches current wholeobject;not a fresh therapeutic audit"
+    }
+  },
+  "bookLocatorReview": {
+    "suppliedBookSha256": "5e60f0b3ce20601985515c259c9503bd7ee2681836efecf03906a7da3dddf6ef",
+    "actualFullTextReadAndRenderedPagesViewed": [
+      158,
+      168,
+      717
+    ],
+    "sourceFooterImagesActuallyViewed": [
+      "book-714-footer-left.png",
+      "book-715-footer-right.png",
+      "book-716-footer-left.png",
+      "book-717-footer-right.png",
+      "book-718-footer-left.png"
+    ],
+    "exactPdfLocators": {
+      "158": {
+        "printedPage": 150,
+        "scope": "PN overview/refeeding/fluidneeds with formula/weightfootnote and both workedexamples"
+      },
+      "168": {
+        "printedPage": 160,
+        "scope": "Calcium correction/productexample and calcium-phosphate solubility;this is a valid separate source,not a misidentified fluidneeds page"
+      },
+      "717": {
+        "printedPageInferred": 709,
+        "inferenceBasis": "Adjacent actual fullfooter706 atPDF714,708 atPDF716 and710 atPDF718; lastdigit clipped at rightedge of actualPDF717source scan. Exact source locator isPDF717.",
+        "scope": "Potassium/Mg/phosphorus subsection andfull exampleKtable;numericregimens remaincontextual,current verified product/guideline distinctions retained"
+      }
+    },
+    "priorCalciumCompletionFootnote": "Its freshSourcesRead says PDF717 printed705. Preserve that historical record;use exact PDF717 and qualifying adjacent-sequence inference for printed709 in this continuity clarification. No literal fully visible9 claimed.",
+    "fullChaptersNewlyCertified": 0,
+    "newDosingOrCompoundingRulesAdopted": 0,
+    "notAdoptedFromBookAlone": [
+      "Calcium correction as universal proof of biologicallyactive calcium",
+      "Fixed45mEq/L calcium/phosphate solubility rule as universalcompatibilityclearance",
+      "Historical phosphate/Mg/Kexamples as universal currentreplacement instructions"
+    ]
+  },
+  "independentDocumentaryArithmetic": [
+    {
+      "context": "Book158 fluid65kg",
+      "result": "2400",
+      "expected": "2400"
+    },
+    {
+      "context": "Book158154lb/2.2,70kg fluid",
+      "result": "2500",
+      "expected": "2500"
+    },
+    {
+      "context": "Book168 hypothetical correctedtotalCa example",
+      "result": "9.60",
+      "expected": "9.60"
+    },
+    {
+      "context": "Book168 hypothetical8mEq/0.465mEq per mL,nearestwholemL",
+      "result": "17",
+      "expected": "17"
+    }
+  ],
+  "validation": {
+    "all232WholeModuleAnd1182CumulativeObjectsExact": true,
+    "all9CurrentAnchorsResolve": true,
+    "allPriorRecordedReleaseCommitsAreAncestorsOfCurrentBase": true,
+    "allPriorRecordedExactRemoteReceiptsMatch": true,
+    "sourcePagesActuallyReadViewed": [
+      158,
+      168,
+      717
+    ],
+    "priorRuntimeValidation": "Unchanged website content equals bee02a2f,whose metadata unit passed gated567pagebuild anddesktop/mobile verification. No runtime source changed;build/browser repetition isnotneeded fordocumentation-only continuity.",
+    "newClinicalRegimensAdopted": 0
+  },
+  "preservation": {
+    "allExistingWebsiteDataObjectsExact": true,
+    "historicCalciumReviewUnchanged": "enteral-nutrition-broader-calcium-completion-review.json;old freshSourcesRead string and entire original record remainpreserved;this newrecord clarifies its clipped-footer interpretation",
+    "priorParentMetadataArchiveIndependentlyReopened": {
+      "status": "passed",
+      "archive": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/archives/fluid-parent-metadata-bibliography-20261007",
+      "independentlyReopenedAndHashed": {
+        "source": 1515,
+        "evidence": 197,
+        "outputs": 0
+      },
+      "exactPriorRemote": "bee02a2fdb643e59788b154cb03bf2d032e46b8c",
+      "permanentDeletions": 0
+    },
+    "privateSourceFilesInGit": false,
+    "originalWorkspacePreserved": true
+  },
+  "sourceComparison": "Documentation-only continuity:9current broader wholequestions/36choices in calcium-phosphorus andadrenal-insufficiency match prior released explicit wholequestion/individualchoice reviews;three priorreview hashes/historicexactremote receipts/commitancestry verified. All232currentwholemodules and1182cumulativeobjects unchanged. ActualbookPDF158printed150 and168printed160 fullyread/viewed;717wholetext/image read/viewed and highresolution neighboringfooters establish printed709 bysequence,inferencebecause finaldigitclipped. Preservehistorical printed705 record and clarifyexactPDFlocator;PDF168 isvalidseparatecalcium source. FourdocumentaryDecimalexamples recomputed.No newtherapeuticdose/sourcecertification,newuniquequestions orwholemodule/chaptercompletion.",
+  "remaining": "Continue semantic/source triage of broader fluid/electrolyte questions. First review nutrition-assessment-102 whole question and its plan-monitor-communicate lesson context using suppliedbook158/NICECG32; then acid-base-092 wholequestion/context and potentially mismatched anion-gap reviewanchor. Nine direct-stem candidates retain exact prior complete reviews;91 others stilllack qualifying located records under inspected schemas and need further prior-evidence/source review. Choice/rationale-only locating candidates are also open;not allkeywordhits are relevant. Chapter1printed7/PDF19entry15 andChapter11 remainopen.",
+  "privateEvidenceRoot": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/fluid-broader-question-reconciliation-20261007/evidence",
+  "release": {
+    "branch": "audit/rxprep-content-2026-09-24",
+    "baseCommit": "bee02a2fdb643e59788b154cb03bf2d032e46b8c",
+    "commit": null,
+    "push": "pending",
+    "receipt": "fluid-broader-question-reconciliation-release.json",
+    "mainMerge": "not performed",
+    "production": "not verified"
+  }
+}
