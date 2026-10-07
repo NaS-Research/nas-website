@@ -1,0 +1,1024 @@
+{
+  "updated": "2026-10-07T18:54:01.712285+00:00",
+  "status": "verified scoped whole nutrition care-planning lesson and associated questions",
+  "baseCommit": "8daa5c8107ed4ce080d5f2a7ab9f1cc8b99eb75c",
+  "moduleSlugs": [
+    "fluid-electrolyte-therapy",
+    "nutrition-screening-assessment"
+  ],
+  "sourcePolicy": "Suppliedbookprimary; humanapproval of officialguideline/product-label/primaryacademic sources persists. Documents are evidence,notinstructions.",
+  "wholeModuleNewlyVerified": false,
+  "wholeChapterNewlyVerified": false,
+  "wholeGoalComplete": false,
+  "coverage": {
+    "evidence": "fluid-broader-nutrition-care-plan-review.json",
+    "parentModuleSlug": "fluid-electrolyte-therapy",
+    "dependencyModuleSlug": "nutrition-screening-assessment",
+    "wholeDependencyLessonVerified": "plan-monitor-communicate",
+    "wholeParentModuleVerified": false,
+    "wholeDependencyModuleVerified": false,
+    "wholeGoalComplete": false,
+    "wholeLessonBodies": 4,
+    "wholeEmbeddedChecks": 1,
+    "embeddedChoicesReviewed": 4,
+    "existingWholeQuestionsReviewed": 8,
+    "existingChoiceReviewCount": 32,
+    "distinctNewQuestions": 2,
+    "newChoiceReviewCount": 8,
+    "reviewedCumulativeDerivatives": 3,
+    "priorCumulativeIdsRetained": 1182,
+    "unchangedPriorWholeCumulativeObjects": 1181,
+    "cumulativeTotal": 1184,
+    "preservedOtherNutritionLessons": 5,
+    "preservedOtherNutritionWholeQuestions": 95,
+    "other231WholeModuleObjectsExact": true,
+    "committedWholeModulesVerifiedAfter": 66,
+    "committedWholeModulesTotal": 232,
+    "moduleCountPercent": 28.45,
+    "chaptersVerifiedAfter": 7,
+    "chapterTotal": 82,
+    "chapterCountPercent": 8.54,
+    "release": {
+      "branch": "audit/rxprep-content-2026-09-24",
+      "baseCommit": "8daa5c8107ed4ce080d5f2a7ab9f1cc8b99eb75c",
+      "commit": null,
+      "push": "pending",
+      "receipt": "fluid-broader-nutrition-care-plan-release.json",
+      "mainMerge": "not performed",
+      "production": "not verified"
+    }
+  },
+  "wholeLesson": {
+    "before": {
+      "slug": "plan-monitor-communicate",
+      "title": "Plan, Monitor, and Communicate",
+      "visual": "nutrition-care-loop",
+      "summary": "The assessment matters only when it changes care. A complete plan states the problem, intervention, surveillance, and decision points.",
+      "concepts": [
+        "Problem prioritization",
+        "Interdisciplinary intervention",
+        "Medication review",
+        "Outcome and safety monitoring"
+      ],
+      "application": "Write a plan that another clinician can execute. Include who will act, what will be measured, when it will be measured, and what finding will trigger escalation.",
+      "lesson": [
+        {
+          "heading": "Connect cause to intervention",
+          "body": "Address reversible barriers such as nausea, constipation, dysphagia, pain, food access, medication timing, and overly restrictive diets. Coordinate with dietitians, nurses, prescribers, speech language pathology, social work, and the patient according to the problem identified."
+        },
+        {
+          "heading": "Monitor both benefit and harm",
+          "body": "Follow intake, weight trajectory, volume status, symptoms, physical findings, function, and relevant laboratory data. A high risk patient who begins aggressive nutrition support may also require focused surveillance for electrolyte shifts, glycemic complications, fluid intolerance, and refeeding risk."
+        }
+      ],
+      "keyPoints": [
+        "A monitoring plan needs a measure, interval, goal, and action threshold.",
+        "Reconcile medicines that may worsen intake or gastrointestinal tolerance.",
+        "Escalate urgently when severe intake restriction, unsafe swallowing, major electrolyte risk, or rapid decline is present."
+      ],
+      "check": {
+        "question": "Which follow up plan is most actionable?",
+        "choices": [
+          "Record meal intake each shift, measure weight under consistent conditions twice weekly, and reassess barriers in 72 hours",
+          "Monitor nutrition",
+          "Repeat every laboratory test daily forever",
+          "Wait until discharge to reassess"
+        ],
+        "answer": 0,
+        "rationale": "An actionable plan identifies what will be measured, how often it will be measured, and when the team will reassess the cause and response.",
+        "reviewHref": "#plan-monitor-communicate"
+      }
+    },
+    "after": {
+      "slug": "plan-monitor-communicate",
+      "title": "Plan, Monitor, and Communicate",
+      "visual": "nutrition-care-loop",
+      "summary": "An assessment becomes a care plan when the team names the problem, acts on its cause, measures benefit and harm, and assigns the next decision.",
+      "concepts": [
+        "Causal barriers and team roles",
+        "Risk-based safety monitoring",
+        "Patient outcomes and process measures",
+        "Fidelity and accountable follow-up"
+      ],
+      "application": "State the evidence and uncertainty, the proposed action and responsible clinician, the measure and goal, the review interval, and the finding that triggers escalation. Confirm that the receiving team can carry out the plan.",
+      "lesson": [
+        {
+          "heading": "Connect cause to intervention",
+          "body": "Investigate barriers such as nausea, constipation, dysphagia, pain, food access, and medicine effects before choosing an intervention. A symptom that follows a new medicine suggests a possible contribution, not proof of causation. Review its indication and alternatives with the prescriber, address other plausible causes, and measure the response. Coordinate dietitian, nursing, pharmacy, swallowing, and social support according to the problem; involve the patient in the plan."
+        },
+        {
+          "heading": "Monitor benefit and harm from the start",
+          "body": "Track actual intake and delivered feed, symptoms, weight with fluid balance, clinical condition, and relevant laboratory trends. The supplied book highlights glucose intolerance, electrolyte shifts, and fluid accumulation during parenteral nutrition. High refeeding risk calls for cautious, individualized initiation by an experienced team and planned surveillance, not aggressive feeding followed by optional monitoring. A new electrolyte decline or clinical deterioration requires prompt reassessment of feeding, replacement, and fluid management under the agreed protocol."
+        },
+        {
+          "heading": "Choose intervals for the patient and setting",
+          "body": "NICE CG32 provides adult nutrition-support monitoring examples. In hospital, initially assess intake daily and chart fluid balance during enteral or parenteral support. Check weight daily when fluid balance is a concern; otherwise use weekly weights, reducing frequency with stability. Its laboratory table calls for baseline tests, daily sodium, potassium, urea and creatinine until stable, glucose once or twice daily until stable, and daily magnesium and phosphate when refeeding risk is present. This table chiefly addresses parenteral nutrition and is selectively applicable to oral or enteral support. Acute instability may require more frequent assessment; these are not universal intervals for every patient."
+        },
+        {
+          "heading": "Separate the patient result from delivery of care",
+          "body": "Improved intake or relief of nausea is a patient outcome. Recording intake and completing an agreed medicine review are care processes. In the Proctor implementation framework, fidelity asks whether a pathway was delivered as intended; adherence to its required steps can be one fidelity measure. Adoption concerns initial uptake, acceptability asks whether the pathway is agreeable, and feasibility asks whether it can be carried out in the setting. A completed checklist does not itself prove clinical benefit. Document both the action taken and the patient response, with a named owner, next review, and agreed escalation threshold."
+        }
+      ],
+      "keyPoints": [
+        "Link the intervention to a supported cause and document uncertainty.",
+        "Specify the measure, goal, interval, action threshold, and responsible clinician.",
+        "Plan refeeding surveillance before support begins and adapt it to clinical changes.",
+        "Measure patient benefit separately from completion of the care process."
+      ],
+      "check": {
+        "question": "An adult inpatient has nausea and reduced intake. The team has agreed an intake goal and a safe medicine adjustment. Which follow-up plan is most actionable?",
+        "choices": [
+          "Name the nurse to record daily intake against the goal and the prescriber to review response tomorrow, with earlier contact for worsening symptoms or intake below the agreed threshold",
+          "Name the nurse to record daily intake but leave the target and response to a low result unspecified",
+          "Set an intake goal and a review tomorrow but leave who will assess and act unspecified",
+          "Assign a prescriber to review the medicine at discharge without tracking the intake response"
+        ],
+        "answer": 0,
+        "rationale": "The complete plan connects an agreed intervention with ownership, a measure and goal, a review time, and an earlier action trigger. The other plans each leave an essential part of that loop unspecified. The review time is part of this case plan, not a universal nutrition-monitoring interval.",
+        "reviewHref": "#plan-monitor-communicate"
+      }
+    },
+    "unchangedFigure": "NutritionScreeningAssessmentVisual.jsx nutrition-care-loop;conceptualworkflow,not anatomical or measuredfigure"
+  },
+  "wholeQuestionAndIndividualChoiceReviews": [
+    {
+      "id": "nutrition-assessment-091",
+      "wholeQuestion": {
+        "id": "nutrition-assessment-091",
+        "question": "Which implementation outcome most directly measures whether clinicians deliver an assessment pathway according to its required steps?",
+        "choices": [
+          "Fidelity",
+          "Adoption",
+          "Acceptability",
+          "Feasibility"
+        ],
+        "answer": 0,
+        "rationale": "Fidelity concerns delivery as intended. Adoption concerns initial uptake, acceptability concerns whether the pathway is agreeable, and feasibility concerns whether it can be carried out in the setting. Step adherence is a fidelity measure, not proof of patient benefit.",
+        "reviewHref": "#plan-monitor-communicate"
+      },
+      "sourceAndApplicationScope": "Proctor2011 Table1,nominal acceptability/adoption/feasibility/fidelity definitions;Background and conceptualframework",
+      "stemKeyRationaleAnchorReviewed": true,
+      "fourIndividualChoicesReviewed": [
+        {
+          "index": 0,
+          "text": "Fidelity",
+          "correctFlag": true,
+          "review": "Correct: adherence to required steps is a fidelity measure."
+        },
+        {
+          "index": 1,
+          "text": "Adoption",
+          "correctFlag": false,
+          "review": "Adoption measures initial uptake, not adherence."
+        },
+        {
+          "index": 2,
+          "text": "Acceptability",
+          "correctFlag": false,
+          "review": "Acceptability measures stakeholder agreeableness, not adherence."
+        },
+        {
+          "index": 3,
+          "text": "Feasibility",
+          "correctFlag": false,
+          "review": "Feasibility measures whether implementation can be carried out in the setting, not adherence."
+        }
+      ],
+      "uniqueTeachingPurpose": "Stable existing concept clarified"
+    },
+    {
+      "id": "nutrition-assessment-095",
+      "wholeQuestion": {
+        "id": "nutrition-assessment-095",
+        "question": "A pharmacist review identifies a plausible medicine-related intake barrier. Which evaluation best connects the review to a change in patient care?",
+        "choices": [
+          "Document the agreed medicine action and reassess nausea and intake against the goal",
+          "Count completed reviews without recording subsequent actions or patient response",
+          "Compare the number of laboratory results before and after the review",
+          "Report the admission nutrition-risk score without reassessing the barrier"
+        ],
+        "answer": 0,
+        "rationale": "Link the recommendation to the action taken and the patient response. Review counts are process measures, available laboratory results alone do not show benefit, and an admission screen does not evaluate the effect of the medicine intervention.",
+        "reviewHref": "#plan-monitor-communicate"
+      },
+      "sourceAndApplicationScope": "NICECG32 1.1.3-4,1.5.1,Table1 intake/GI symptoms/drugtherapy/goals;Proctor conceptualframework;NaS case application",
+      "stemKeyRationaleAnchorReviewed": true,
+      "fourIndividualChoicesReviewed": [
+        {
+          "index": 0,
+          "text": "Document the agreed medicine action and reassess nausea and intake against the goal",
+          "correctFlag": true,
+          "review": "Correct: evaluates both action taken and actual symptom/intake response."
+        },
+        {
+          "index": 1,
+          "text": "Count completed reviews without recording subsequent actions or patient response",
+          "correctFlag": false,
+          "review": "Completed review counts show process completion, not patient benefit."
+        },
+        {
+          "index": 2,
+          "text": "Compare the number of laboratory results before and after the review",
+          "correctFlag": false,
+          "review": "Availability of lab results alone does not establish the proposed intervention response."
+        },
+        {
+          "index": 3,
+          "text": "Report the admission nutrition-risk score without reassessing the barrier",
+          "correctFlag": false,
+          "review": "An admission screen alone does not evaluate the current barrier or response."
+        }
+      ],
+      "uniqueTeachingPurpose": "Stable existing concept clarified"
+    },
+    {
+      "id": "nutrition-assessment-096",
+      "wholeQuestion": {
+        "id": "nutrition-assessment-096",
+        "question": "Why should nutrition-monitoring intervals change with clinical risk, care setting, and stability?",
+        "choices": [
+          "A useful interval detects meaningful benefit or harm in time to inform the next decision",
+          "The discharge review interval is sufficient for every inpatient because support is prescribed",
+          "A single fixed interval permits comparison even when the patient becomes unstable",
+          "Normal baseline tests justify keeping the longest interval throughout initiation"
+        ],
+        "answer": 0,
+        "rationale": "NICE CG32 adapts review to the patient and setting and allows intervals to lengthen with stability. Early support or clinical deterioration can require closer observation; normal baseline values do not exclude subsequent shifts.",
+        "reviewHref": "#plan-monitor-communicate"
+      },
+      "sourceAndApplicationScope": "NICECG32 1.5.1-6 andTables1/2,especially scope/acute-instability qualification",
+      "stemKeyRationaleAnchorReviewed": true,
+      "fourIndividualChoicesReviewed": [
+        {
+          "index": 0,
+          "text": "A useful interval detects meaningful benefit or harm in time to inform the next decision",
+          "correctFlag": true,
+          "review": "Correct: interval should permit useful benefit/safety reassessment."
+        },
+        {
+          "index": 1,
+          "text": "The discharge review interval is sufficient for every inpatient because support is prescribed",
+          "correctFlag": false,
+          "review": "Discharge-only review ignores initial inpatient monitoring."
+        },
+        {
+          "index": 2,
+          "text": "A single fixed interval permits comparison even when the patient becomes unstable",
+          "correctFlag": false,
+          "review": "Unchanging interval during instability ignores risk adaptation."
+        },
+        {
+          "index": 3,
+          "text": "Normal baseline tests justify keeping the longest interval throughout initiation",
+          "correctFlag": false,
+          "review": "Baseline normality does not establish continued safety after initiation."
+        }
+      ],
+      "uniqueTeachingPurpose": "Stable existing concept clarified"
+    },
+    {
+      "id": "nutrition-assessment-097",
+      "wholeQuestion": {
+        "id": "nutrition-assessment-097",
+        "question": "Which pair correctly separates a patient outcome from a nutrition-care process measure?",
+        "choices": [
+          "Outcome: intake improves toward the goal; process: scheduled intake records are completed",
+          "Outcome: a medicine review is documented; process: nausea resolves",
+          "Outcome: the feed order is signed; process: the patient tolerates feeding",
+          "Outcome: the assessment checklist is completed; process: intake meets the agreed goal"
+        ],
+        "answer": 0,
+        "rationale": "The patient outcome describes a change in the patient, whereas the process describes delivery or documentation of care. The other pairs reverse those roles. A process can be completed without achieving the intended outcome.",
+        "reviewHref": "#plan-monitor-communicate"
+      },
+      "sourceAndApplicationScope": "Proctor Background/conceptualframework distinguishes clinical from implementation outcomes;NICETable1 intake/goal/drugtherapy monitoring;NaS concrete examples",
+      "stemKeyRationaleAnchorReviewed": true,
+      "fourIndividualChoicesReviewed": [
+        {
+          "index": 0,
+          "text": "Outcome: intake improves toward the goal; process: scheduled intake records are completed",
+          "correctFlag": true,
+          "review": "Correct: improved intake is a patient result;record completion is a process."
+        },
+        {
+          "index": 1,
+          "text": "Outcome: a medicine review is documented; process: nausea resolves",
+          "correctFlag": false,
+          "review": "Reverses documentation process and nausea outcome."
+        },
+        {
+          "index": 2,
+          "text": "Outcome: the feed order is signed; process: the patient tolerates feeding",
+          "correctFlag": false,
+          "review": "Reverses order-signing process and feeding-tolerance outcome."
+        },
+        {
+          "index": 3,
+          "text": "Outcome: the assessment checklist is completed; process: intake meets the agreed goal",
+          "correctFlag": false,
+          "review": "Reverses checklist process and intake-goal outcome."
+        }
+      ],
+      "uniqueTeachingPurpose": "Stable existing concept clarified"
+    },
+    {
+      "id": "nutrition-assessment-100",
+      "wholeQuestion": {
+        "id": "nutrition-assessment-100",
+        "question": "What makes a nutrition assessment and resulting plan scientifically defensible?",
+        "choices": [
+          "Show the source findings, chosen criteria, confounders and uncertainty, then link the proposed action to a measurable follow-up plan",
+          "Use a screening score to establish the diagnosis without assessing its underlying findings",
+          "List measurements without stating how they support the problem or intervention",
+          "Document the intervention as effective before measuring the patient response"
+        ],
+        "answer": 0,
+        "rationale": "Transparent reasoning makes the evidence, inference, uncertainty, and response assessable. Screening is a risk signal, an unconnected data list does not explain a care decision, and an intended effect should not be recorded as an observed benefit.",
+        "reviewHref": "#plan-monitor-communicate"
+      },
+      "sourceAndApplicationScope": "NICECG32 1.2screening,1.3indications,1.4prescription and1.5goal/response review;NaS evidence-transparent reasoning application;no new GLIMthreshold certification",
+      "stemKeyRationaleAnchorReviewed": true,
+      "fourIndividualChoicesReviewed": [
+        {
+          "index": 0,
+          "text": "Show the source findings, chosen criteria, confounders and uncertainty, then link the proposed action to a measurable follow-up plan",
+          "correctFlag": true,
+          "review": "Correct: evidence,criteria,uncertainty and measured response can be reviewed."
+        },
+        {
+          "index": 1,
+          "text": "Use a screening score to establish the diagnosis without assessing its underlying findings",
+          "correctFlag": false,
+          "review": "A screen alone supplies risk information, not an independently established diagnosis."
+        },
+        {
+          "index": 2,
+          "text": "List measurements without stating how they support the problem or intervention",
+          "correctFlag": false,
+          "review": "Unconnected measurements do not explain the decision."
+        },
+        {
+          "index": 3,
+          "text": "Document the intervention as effective before measuring the patient response",
+          "correctFlag": false,
+          "review": "An intended benefit is not an observed response."
+        }
+      ],
+      "uniqueTeachingPurpose": "Stable existing concept clarified"
+    },
+    {
+      "id": "nutrition-assessment-101",
+      "wholeQuestion": {
+        "id": "nutrition-assessment-101",
+        "question": "Reduced intake and nausea begin after a new medicine. Which medication-focused intervention best addresses this possible barrier?",
+        "choices": [
+          "Review timing and competing causes, agree a safe adjustment with the prescriber if appropriate, and reassess nausea and intake",
+          "Declare the medicine causal from timing alone and stop it without reviewing its indication",
+          "Continue the nutrition plan without assessing whether the suspected medicine can be changed safely",
+          "Change the medicine with the prescriber but omit any assessment of symptoms or intake afterward"
+        ],
+        "answer": 0,
+        "rationale": "The temporal relationship supports investigation, not certainty. Review the indication and competing causes, agree an appropriate action, and measure the response. The other choices prematurely infer causality, leave the barrier unassessed, or fail to evaluate the intervention.",
+        "reviewHref": "#plan-monitor-communicate"
+      },
+      "sourceAndApplicationScope": "NICECG32 1.1.3-4,Table1 GI symptoms/drugtherapy/goals,1.6.4drugreview in dysphagia;NaS nonspecificmedicine-barrier case application",
+      "stemKeyRationaleAnchorReviewed": true,
+      "fourIndividualChoicesReviewed": [
+        {
+          "index": 0,
+          "text": "Review timing and competing causes, agree a safe adjustment with the prescriber if appropriate, and reassess nausea and intake",
+          "correctFlag": true,
+          "review": "Correct: investigate plausible contribution,review indication/alternatives andmeasure response."
+        },
+        {
+          "index": 1,
+          "text": "Declare the medicine causal from timing alone and stop it without reviewing its indication",
+          "correctFlag": false,
+          "review": "Temporal association alone is insufficient to assign causation or stop therapy indiscriminately."
+        },
+        {
+          "index": 2,
+          "text": "Continue the nutrition plan without assessing whether the suspected medicine can be changed safely",
+          "correctFlag": false,
+          "review": "Leaves the possible barrier and safe adjustment unassessed."
+        },
+        {
+          "index": 3,
+          "text": "Change the medicine with the prescriber but omit any assessment of symptoms or intake afterward",
+          "correctFlag": false,
+          "review": "An action without response assessment leaves benefit unmeasured."
+        }
+      ],
+      "uniqueTeachingPurpose": "Stable existing concept clarified"
+    },
+    {
+      "id": "nutrition-assessment-102",
+      "wholeQuestion": {
+        "id": "nutrition-assessment-102",
+        "question": "An adult at high refeeding risk is beginning cautiously prescribed nutrition support. Which monitoring plan best covers benefit and safety?",
+        "choices": [
+          "Arrange baseline and risk-appropriate repeat electrolytes and glucose, follow intake and fluid and clinical status, and assign review times, action thresholds, and an owner",
+          "Follow daily intake and weight with an owner, but defer electrolyte checks until symptoms develop",
+          "Arrange repeat electrolytes and glucose but omit fluid balance, intake, and clinical reassessment",
+          "Copy a stable outpatient schedule without adapting its intervals to initiation and high refeeding risk"
+        ],
+        "answer": 0,
+        "rationale": "Prospective surveillance must cover biochemical shifts and the patient response, including fluid balance and actual intake. Symptom-triggered tests alone may miss early changes; laboratory tests alone omit bedside information; a stable outpatient schedule does not establish an appropriate high-risk initiation plan. Use the applicable specialist protocol to set frequencies and actions.",
+        "reviewHref": "#plan-monitor-communicate"
+      },
+      "sourceAndApplicationScope": "RxPrep2023 printed150/PDF158 PNmonitoring/fluidneeds;NICECG32 1.4.4-8,1.5.1-4 andTables1/2",
+      "stemKeyRationaleAnchorReviewed": true,
+      "fourIndividualChoicesReviewed": [
+        {
+          "index": 0,
+          "text": "Arrange baseline and risk-appropriate repeat electrolytes and glucose, follow intake and fluid and clinical status, and assign review times, action thresholds, and an owner",
+          "correctFlag": true,
+          "review": "Correct: prospectivelycovers biochemical andbedside benefit/safety withaccountability."
+        },
+        {
+          "index": 1,
+          "text": "Follow daily intake and weight with an owner, but defer electrolyte checks until symptoms develop",
+          "correctFlag": false,
+          "review": "Symptoms-only testing omits planned biochemical monitoring."
+        },
+        {
+          "index": 2,
+          "text": "Arrange repeat electrolytes and glucose but omit fluid balance, intake, and clinical reassessment",
+          "correctFlag": false,
+          "review": "Laboratories alone omit delivered intake/fluid/clinical response."
+        },
+        {
+          "index": 3,
+          "text": "Copy a stable outpatient schedule without adapting its intervals to initiation and high refeeding risk",
+          "correctFlag": false,
+          "review": "Stable community intervals cannot be applied unchanged to high-risk initiation."
+        }
+      ],
+      "uniqueTeachingPurpose": "Stable existing concept clarified"
+    },
+    {
+      "id": "nutrition-assessment-103",
+      "wholeQuestion": {
+        "id": "nutrition-assessment-103",
+        "question": "What information most clearly closes the loop after a nutrition recommendation?",
+        "choices": [
+          "The agreed action, responsible clinician, measure and goal, review time, and escalation trigger",
+          "The action and measurement goal, with responsibility left to whichever team reads the note",
+          "The responsible clinician and a general monitoring instruction, without a measure or review time",
+          "The measurements and review date, with no decision planned if the goal is missed"
+        ],
+        "answer": 0,
+        "rationale": "The first plan assigns responsibility and connects an action to measurable follow-up and a response to concerning findings. Each alternative omits ownership, operational measurement and timing, or the decision needed after reassessment.",
+        "reviewHref": "#plan-monitor-communicate"
+      },
+      "sourceAndApplicationScope": "NICECG32 1.1.3coordinatedcare,1.5.1goalreviews/1.5.7adverse-response training,Table1 goals;NaS executablehandoff synthesis",
+      "stemKeyRationaleAnchorReviewed": true,
+      "fourIndividualChoicesReviewed": [
+        {
+          "index": 0,
+          "text": "The agreed action, responsible clinician, measure and goal, review time, and escalation trigger",
+          "correctFlag": true,
+          "review": "Correct: action,owner,measure/goal,time andresponse trigger makefollowup executable."
+        },
+        {
+          "index": 1,
+          "text": "The action and measurement goal, with responsibility left to whichever team reads the note",
+          "correctFlag": false,
+          "review": "Leaves responsibility unspecified."
+        },
+        {
+          "index": 2,
+          "text": "The responsible clinician and a general monitoring instruction, without a measure or review time",
+          "correctFlag": false,
+          "review": "Leaves operational measurement and timing unspecified."
+        },
+        {
+          "index": 3,
+          "text": "The measurements and review date, with no decision planned if the goal is missed",
+          "correctFlag": false,
+          "review": "Leaves response to a missed goal unspecified."
+        }
+      ],
+      "uniqueTeachingPurpose": "Stable existing concept clarified"
+    },
+    {
+      "id": "nutrition-assessment-104",
+      "wholeQuestion": {
+        "id": "nutrition-assessment-104",
+        "question": "Under the NICE CG32 adult nutrition-support monitoring examples, which weight schedule best fits a stable patient without fluid concerns and a patient with new edema during parenteral nutrition?",
+        "choices": [
+          "Weekly weight for the stable patient and daily weight when fluid balance is a concern",
+          "Daily weight for the stable patient and weekly weight during new edema",
+          "Monthly weight for both patients from the first day of support",
+          "Weekly weight for both patients regardless of changing fluid balance"
+        ],
+        "answer": 0,
+        "rationale": "NICE Table 1 uses daily weight when fluid balance is a concern, otherwise weekly with reduced frequency as stability permits. Interpret the weight trend with fluid balance; new edema can reflect fluid gain rather than improved nutrition.",
+        "reviewHref": "#plan-monitor-communicate"
+      },
+      "sourceAndApplicationScope": "NICECG32 Table1 weight/fluidbalance rows,PDF18;RxPrepPDF158fluidaccumulation context",
+      "stemKeyRationaleAnchorReviewed": true,
+      "fourIndividualChoicesReviewed": [
+        {
+          "index": 0,
+          "text": "Weekly weight for the stable patient and daily weight when fluid balance is a concern",
+          "correctFlag": true,
+          "review": "Correct: weekly otherwise,daily withfluidbalance concern;stability permits lessfrequent schedule."
+        },
+        {
+          "index": 1,
+          "text": "Daily weight for the stable patient and weekly weight during new edema",
+          "correctFlag": false,
+          "review": "Reverses the risk-adjusted schedule."
+        },
+        {
+          "index": 2,
+          "text": "Monthly weight for both patients from the first day of support",
+          "correctFlag": false,
+          "review": "Monthly from initiation ignores initial/risk monitoring."
+        },
+        {
+          "index": 3,
+          "text": "Weekly weight for both patients regardless of changing fluid balance",
+          "correctFlag": false,
+          "review": "Weekly despite newfluidconcern ignores dailyweight indication."
+        }
+      ],
+      "uniqueTeachingPurpose": "Adapt weight interval to fluid-balance concern,not numericdosemath."
+    },
+    {
+      "id": "nutrition-assessment-105",
+      "wholeQuestion": {
+        "id": "nutrition-assessment-105",
+        "question": "An adult at high refeeding risk has normal baseline magnesium and phosphate. Under NICE CG32, what is the appropriate laboratory-monitoring approach as support begins?",
+        "choices": [
+          "Obtain baseline values and monitor magnesium and phosphate daily while refeeding risk is present, adapting frequency if instability requires it",
+          "Repeat magnesium and phosphate only if symptoms appear because baseline values are normal",
+          "Measure glucose regularly but defer magnesium and phosphate until the stable weekly schedule",
+          "Measure magnesium and phosphate once weekly from initiation because there is no baseline deficit"
+        ],
+        "answer": 0,
+        "rationale": "NICE Table 2 calls for baseline magnesium and phosphate and daily testing when refeeding risk is present. A normal baseline does not establish that subsequent electrolyte shifts will not occur. The table is chiefly for parenteral nutrition and may be selectively used for at-risk oral or enteral support; more frequent assessment may be needed in acute instability.",
+        "reviewHref": "#plan-monitor-communicate"
+      },
+      "sourceAndApplicationScope": "NICECG32 Table2 Mg/phosphate rowPDF22 and1.5.4scope/instabilityqualification PDF16;Box1 riskdefinition PDF15",
+      "stemKeyRationaleAnchorReviewed": true,
+      "fourIndividualChoicesReviewed": [
+        {
+          "index": 0,
+          "text": "Obtain baseline values and monitor magnesium and phosphate daily while refeeding risk is present, adapting frequency if instability requires it",
+          "correctFlag": true,
+          "review": "Correct: baselineplusdaily while refeedingriskpresent,frequency adapted ifneeded."
+        },
+        {
+          "index": 1,
+          "text": "Repeat magnesium and phosphate only if symptoms appear because baseline values are normal",
+          "correctFlag": false,
+          "review": "Normal baseline doesnot justify deferring tests to symptoms."
+        },
+        {
+          "index": 2,
+          "text": "Measure glucose regularly but defer magnesium and phosphate until the stable weekly schedule",
+          "correctFlag": false,
+          "review": "Glucose monitoring doesnot replace magnesium/phosphate surveillance."
+        },
+        {
+          "index": 3,
+          "text": "Measure magnesium and phosphate once weekly from initiation because there is no baseline deficit",
+          "correctFlag": false,
+          "review": "Stable weekly cadence isnot the stated risk-period cadence."
+        }
+      ],
+      "uniqueTeachingPurpose": "Normalbaseline doesnot cancel high-risk Mg/P surveillance."
+    }
+  ],
+  "embeddedWholeCheck": {
+    "wholeCheck": {
+      "question": "An adult inpatient has nausea and reduced intake. The team has agreed an intake goal and a safe medicine adjustment. Which follow-up plan is most actionable?",
+      "choices": [
+        "Name the nurse to record daily intake against the goal and the prescriber to review response tomorrow, with earlier contact for worsening symptoms or intake below the agreed threshold",
+        "Name the nurse to record daily intake but leave the target and response to a low result unspecified",
+        "Set an intake goal and a review tomorrow but leave who will assess and act unspecified",
+        "Assign a prescriber to review the medicine at discharge without tracking the intake response"
+      ],
+      "answer": 0,
+      "rationale": "The complete plan connects an agreed intervention with ownership, a measure and goal, a review time, and an earlier action trigger. The other plans each leave an essential part of that loop unspecified. The review time is part of this case plan, not a universal nutrition-monitoring interval.",
+      "reviewHref": "#plan-monitor-communicate"
+    },
+    "sourceAndApplicationScope": "NICECG32 coordinatedcare/goalreview/intakemonitoring plus NaS executablecase plan;tomorrow is case-specific agreed reviewtime,notguidelineinterval",
+    "stemKeyRationaleAnchorReviewed": true,
+    "fourIndividualChoicesReviewed": [
+      {
+        "index": 0,
+        "text": "Name the nurse to record daily intake against the goal and the prescriber to review response tomorrow, with earlier contact for worsening symptoms or intake below the agreed threshold",
+        "correctFlag": true,
+        "review": "Correct: owner/goal/measure/time/earlytrigger supplied."
+      },
+      {
+        "index": 1,
+        "text": "Name the nurse to record daily intake but leave the target and response to a low result unspecified",
+        "correctFlag": false,
+        "review": "Goal and response to low intake missing."
+      },
+      {
+        "index": 2,
+        "text": "Set an intake goal and a review tomorrow but leave who will assess and act unspecified",
+        "correctFlag": false,
+        "review": "Ownership missing."
+      },
+      {
+        "index": 3,
+        "text": "Assign a prescriber to review the medicine at discharge without tracking the intake response",
+        "correctFlag": false,
+        "review": "No intake response assessed;discharge-onlyreview misses earlierdecision."
+      }
+    ]
+  },
+  "primarySourceReview": [
+    {
+      "source": "Supplied RxPrep2023",
+      "privateOriginal": "/Users/agndj/Library/Mobile Documents/com~apple~CloudDocs/Downloads/NAPLEX 2024.pdf",
+      "originalBookSha256": "5e60f0b3ce20601985515c259c9503bd7ee2681836efecf03906a7da3dddf6ef",
+      "actualPdfPageReadViewed": 158,
+      "printedFooterActuallyRead": "150",
+      "scope": "Complete PN overview/fluidneeds page;glucose/refeeding/electrolyte/fluid warnings support this dependency. No new nutrientdose or PNindication/filterregimen certification.",
+      "textSha256": "68355240072216ef80f1a1a13d233c6fb7072dc0ed74d2da65587a5576c530bd",
+      "fullPageImageSha256": "c32995122e3c05802d197b70fdd1726921df0dca3962f903f23f88224cac3c2a"
+    },
+    {
+      "source": "NICECG32 officialguideline",
+      "href": "https://www.nice.org.uk/guidance/cg32/chapter/Recommendations",
+      "lastUpdated": "2017-08-04;2026PDFcopyright notclinicalrevision",
+      "actualCompletePdfPagesReadViewed": [
+        9,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        26,
+        27
+      ],
+      "freshOfficialHtmlSha256": "c803505044a62df75abda167c3a8a572744ad9b1eb72f5d04b99f8f532a9c987",
+      "retainedOfficialPdfSha256": "d479edcc5763134597e45c34f8e3f411115719c14bf5af34e829a10cd4bf2915",
+      "scope": "Multidisciplinarycare,cautioushighriskinitiation,Tables1intake/fluid/weight/GI/clinical/drug/goals andTable2NaKrenal/glucose/MgPmonitoring withadult/setting/instabilityqualifications. Table1completepages17-21read/viewed;Table2relevantcompletepages21-22read/viewed;remainingTable2page23 not newly certified. Dysphagiareview1.6.4read,notappliedasgeneraldoseinstruction. Nutrient/kcal/thiamin/electrolytesupplement doseprotocols areoutside thislesson."
+    },
+    {
+      "source": "Proctor etal implementation-outcomes conceptualpaper",
+      "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3068522/",
+      "doi": "10.1007/s10488-010-0319-7",
+      "issueYear": 2011,
+      "onlineDate": "2010-10-19",
+      "freshFullHtmlSha256": "878ec0ad7bc5bfd21c569e61446fd25d6e5fb9dc1f0b16579c84c09ba7a9085f",
+      "actuallyRead": "Abstract,Background,conceptualframework,methods scope,wholeTable1,andacceptability/adoption/feasibility/fidelitydefinitionparagraphs. Figure1image notusedor newlycertified.",
+      "scope": "Heuristic conceptualtaxonomy largely grounded in mental/behavioralhealthimplementation;supportsdefinitions anddistinction fromclinicaloutcomes,notnutrition efficacy orcausalbenefit."
+    }
+  ],
+  "numericSourceIntervals": [
+    {
+      "parameter": "Intake",
+      "source": "NICE Table1PDF17",
+      "reading": "Dailyinitially,twiceweeklywhenstable;lessonusesinitialdaily"
+    },
+    {
+      "parameter": "Fluidbalance",
+      "source": "NICE Table1PDF18",
+      "reading": "Enteral/parenteral dailyinitially,twiceweeklystable;lessonexplicitlyscopesroutes"
+    },
+    {
+      "parameter": "Weight",
+      "source": "NICE Table1PDF18",
+      "reading": "Dailyiffluidbalanceconcern,otherwiseweeklyreducingtomonthly;lessonand104retainqualification"
+    },
+    {
+      "parameter": "Na/K/urea/creatinine",
+      "source": "NICE Table2PDF21",
+      "reading": "Baseline,dailyuntilstable,then1or2timesweek;lessonusesbaseline/initialdaily"
+    },
+    {
+      "parameter": "Glucose",
+      "source": "NICE Table2PDF21",
+      "reading": "Baseline1or2timesadayormoreifneededuntilstable,thenweekly;lessonexplicitacuteinstabilityqualification"
+    },
+    {
+      "parameter": "Magnesium/phosphate",
+      "source": "NICE Table2PDF22",
+      "reading": "Baseline,dailyifrefeedingrisk,3timesweekuntilstable,thenweekly;lesson105use risk-perioddaily,notuniversalinterval"
+    }
+  ],
+  "arithmetic": "No new drug dose,conversion or derived arithmetic in this unit;numericmonitoring intervals checked directly against rendered source rows.",
+  "cumulativeReview": {
+    "wholeReviewedDerivatives": [
+      {
+        "originId": "nutrition-assessment-103",
+        "wholeDerivative": {
+          "id": "cumulative-nutrition-screening-assessment-nutrition-assessment-103",
+          "question": "What information most clearly closes the loop after a nutrition recommendation?",
+          "choices": [
+            "The agreed action, responsible clinician, measure and goal, review time, and escalation trigger",
+            "The action and measurement goal, with responsibility left to whichever team reads the note",
+            "The responsible clinician and a general monitoring instruction, without a measure or review time",
+            "The measurements and review date, with no decision planned if the goal is missed"
+          ],
+          "answer": 0,
+          "rationale": "The first plan assigns responsibility and connects an action to measurable follow-up and a response to concerning findings. Each alternative omits ownership, operational measurement and timing, or the decision needed after reassessment.",
+          "reviewHref": "/learn/pharmacy/modules/nutrition-screening-assessment",
+          "module": "Nutrition Screening, Assessment, and Malnutrition"
+        },
+        "allStemChoicesKeyRationaleMatchReviewedOrigin": true,
+        "stableAnchor": "Module route resolves;wholelesson ispresent onroute",
+        "status": "existingderivedupdatedwithsameID"
+      },
+      {
+        "originId": "nutrition-assessment-104",
+        "wholeDerivative": {
+          "id": "cumulative-nutrition-screening-assessment-nutrition-assessment-104",
+          "question": "Under the NICE CG32 adult nutrition-support monitoring examples, which weight schedule best fits a stable patient without fluid concerns and a patient with new edema during parenteral nutrition?",
+          "choices": [
+            "Weekly weight for the stable patient and daily weight when fluid balance is a concern",
+            "Daily weight for the stable patient and weekly weight during new edema",
+            "Monthly weight for both patients from the first day of support",
+            "Weekly weight for both patients regardless of changing fluid balance"
+          ],
+          "answer": 0,
+          "rationale": "NICE Table 1 uses daily weight when fluid balance is a concern, otherwise weekly with reduced frequency as stability permits. Interpret the weight trend with fluid balance; new edema can reflect fluid gain rather than improved nutrition.",
+          "reviewHref": "/learn/pharmacy/modules/nutrition-screening-assessment",
+          "module": "Nutrition Screening, Assessment, and Malnutrition"
+        },
+        "allStemChoicesKeyRationaleMatchReviewedOrigin": true,
+        "stableAnchor": "Module route resolves;wholelesson ispresent onroute",
+        "status": "newderived"
+      },
+      {
+        "originId": "nutrition-assessment-105",
+        "wholeDerivative": {
+          "id": "cumulative-nutrition-screening-assessment-nutrition-assessment-105",
+          "question": "An adult at high refeeding risk has normal baseline magnesium and phosphate. Under NICE CG32, what is the appropriate laboratory-monitoring approach as support begins?",
+          "choices": [
+            "Obtain baseline values and monitor magnesium and phosphate daily while refeeding risk is present, adapting frequency if instability requires it",
+            "Repeat magnesium and phosphate only if symptoms appear because baseline values are normal",
+            "Measure glucose regularly but defer magnesium and phosphate until the stable weekly schedule",
+            "Measure magnesium and phosphate once weekly from initiation because there is no baseline deficit"
+          ],
+          "answer": 0,
+          "rationale": "NICE Table 2 calls for baseline magnesium and phosphate and daily testing when refeeding risk is present. A normal baseline does not establish that subsequent electrolyte shifts will not occur. The table is chiefly for parenteral nutrition and may be selectively used for at-risk oral or enteral support; more frequent assessment may be needed in acute instability.",
+          "reviewHref": "/learn/pharmacy/modules/nutrition-screening-assessment",
+          "module": "Nutrition Screening, Assessment, and Malnutrition"
+        },
+        "allStemChoicesKeyRationaleMatchReviewedOrigin": true,
+        "stableAnchor": "Module route resolves;wholelesson ispresent onroute",
+        "status": "newderived"
+      }
+    ],
+    "explicitOrigins": [
+      "nutrition-assessment-001",
+      "nutrition-assessment-027",
+      "nutrition-assessment-052",
+      "nutrition-assessment-078",
+      "nutrition-assessment-103",
+      "nutrition-assessment-104",
+      "nutrition-assessment-105"
+    ],
+    "all1182PriorIdsRetained": true,
+    "all1181UnchangedPriorWholeObjectsExact": true,
+    "noClaimOfNewReviewForUnchangedFourNutritionDerivatives": true
+  },
+  "preservation": {
+    "status": "passed",
+    "wholeScopedLessonExact": true,
+    "wholeReviewedExistingQuestions": 8,
+    "allReviewedChoiceCount": 32,
+    "distinctNewQuestions": 2,
+    "newChoiceCount": 8,
+    "wholeBankCount": 105,
+    "unchangedWholeBankObjects": 95,
+    "unchangedOtherLessons": 5,
+    "other231WholeModulesExact": true,
+    "all1181UnchangedPriorWholeCumulativeObjectsExact": true,
+    "priorCumulativeIdsPreserved": 1182,
+    "wholeCumulativeChangedFromReviewedOrigin": 1,
+    "newDerivedCumulativeWholeObjects": 2,
+    "cumulativeTotal": 1184,
+    "existingFigureBytesUnchanged": true,
+    "allOriginalQuestionIdsAndKeysPreserved": true,
+    "wholeModuleVerified": false
+  },
+  "validation": {
+    "structuralAudit": {
+      "status": "passed",
+      "result": {
+        "modules": 1,
+        "questions": 105,
+        "hardErrors": [],
+        "sourceGaps": [],
+        "sizeAdvisories": [],
+        "thinLessons": [],
+        "weakestModules": [
+          {
+            "module": "nutrition-screening-assessment",
+            "lessons": 6,
+            "questions": 105,
+            "minimumLessonCoverage": 10
+          }
+        ]
+      },
+      "guardedNpmHookExecuted": true
+    },
+    "build": {
+      "status": "passed",
+      "exitCode": 0,
+      "command": "npm run build (required prebuild storage gate)",
+      "externalCandidate": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/fluid-broader-nutrition-care-plan-20261007/candidate"
+    },
+    "managedBrowser": {
+      "status": "passed",
+      "results": [
+        {
+          "width": 1440,
+          "wholeLessonBodiesExact": 4,
+          "allLessonMetadataExact": true,
+          "unchangedFigureTextExact": true,
+          "embeddedCheckAllFourChoicesGraded": true,
+          "wholeQuestionsShuffledChoicesKeyRationaleAndCorrectIncorrectFeedback": 10,
+          "allReferencesExact": 6,
+          "all1182PriorCumulativeIdsPreserved": true,
+          "all1181UnchangedCumulativeWholeObjectsExact": true,
+          "cumulativeWholeObjectsGradedBothWays": 3,
+          "noHorizontalOverflow": true
+        },
+        {
+          "width": 390,
+          "wholeLessonBodiesExact": 4,
+          "allLessonMetadataExact": true,
+          "unchangedFigureTextExact": true,
+          "embeddedCheckAllFourChoicesGraded": true,
+          "wholeQuestionsShuffledChoicesKeyRationaleAndCorrectIncorrectFeedback": 10,
+          "allReferencesExact": 6,
+          "all1182PriorCumulativeIdsPreserved": true,
+          "all1181UnchangedCumulativeWholeObjectsExact": true,
+          "cumulativeWholeObjectsGradedBothWays": 3,
+          "noHorizontalOverflow": true
+        }
+      ],
+      "figureWidths": [
+        320,
+        390,
+        720,
+        1440
+      ],
+      "captures": [
+        "captures/body-0-1440.png",
+        "captures/body-1-1440.png",
+        "captures/body-2-1440.png",
+        "captures/body-3-1440.png",
+        "captures/summary-1440.png",
+        "captures/concepts-1440.png",
+        "captures/keypoints-1440.png",
+        "captures/application-1440.png",
+        "captures/figure-1440.png",
+        "captures/check-1440.png",
+        "captures/references-1440.png",
+        "captures/bank-nutrition-assessment-091-1440.png",
+        "captures/bank-nutrition-assessment-097-1440.png",
+        "captures/bank-nutrition-assessment-104-1440.png",
+        "captures/bank-nutrition-assessment-102-1440.png",
+        "captures/bank-nutrition-assessment-105-1440.png",
+        "captures/bank-nutrition-assessment-095-1440.png",
+        "captures/bank-nutrition-assessment-100-1440.png",
+        "captures/bank-nutrition-assessment-096-1440.png",
+        "captures/bank-nutrition-assessment-103-1440.png",
+        "captures/bank-nutrition-assessment-101-1440.png",
+        "captures/cumulative-cumulative-nutrition-screening-assessment-nutrition-assessment-104-1440.png",
+        "captures/cumulative-cumulative-nutrition-screening-assessment-nutrition-assessment-103-1440.png",
+        "captures/cumulative-cumulative-nutrition-screening-assessment-nutrition-assessment-105-1440.png",
+        "captures/body-0-390.png",
+        "captures/body-1-390.png",
+        "captures/body-2-390.png",
+        "captures/body-3-390.png",
+        "captures/summary-390.png",
+        "captures/concepts-390.png",
+        "captures/keypoints-390.png",
+        "captures/application-390.png",
+        "captures/figure-390.png",
+        "captures/check-390.png",
+        "captures/references-390.png",
+        "captures/bank-nutrition-assessment-091-390.png",
+        "captures/bank-nutrition-assessment-097-390.png",
+        "captures/bank-nutrition-assessment-104-390.png",
+        "captures/bank-nutrition-assessment-102-390.png",
+        "captures/bank-nutrition-assessment-105-390.png",
+        "captures/bank-nutrition-assessment-095-390.png",
+        "captures/bank-nutrition-assessment-100-390.png",
+        "captures/bank-nutrition-assessment-096-390.png",
+        "captures/bank-nutrition-assessment-103-390.png",
+        "captures/bank-nutrition-assessment-101-390.png",
+        "captures/cumulative-cumulative-nutrition-screening-assessment-nutrition-assessment-104-390.png",
+        "captures/cumulative-cumulative-nutrition-screening-assessment-nutrition-assessment-103-390.png",
+        "captures/cumulative-cumulative-nutrition-screening-assessment-nutrition-assessment-105-390.png",
+        "captures/native-figure-320.png",
+        "captures/native-figure-720.png"
+      ],
+      "errors": []
+    },
+    "actualVisualInspection": {
+      "status": "passed",
+      "actuallyViewed": [
+        {
+          "file": "captures/boards/board-00.png",
+          "sha256": "642a233ba223228d30e3d157b3461e2517e98ab823e40458afe6213022161b98",
+          "actuallyViewed": true
+        },
+        {
+          "file": "captures/boards/board-01.png",
+          "sha256": "e2bd66eb2d2cd476bb373a6b03a3ae3ecc3342e2e45baf8fca61207ff01a1a71",
+          "actuallyViewed": true
+        },
+        {
+          "file": "captures/boards/board-02.png",
+          "sha256": "5634156ad2a0ecc2012d55a0bdadb9cf2cc8ca34a0470312f2e133f344337b96",
+          "actuallyViewed": true
+        },
+        {
+          "file": "captures/boards/board-03.png",
+          "sha256": "addcdfcb724748949ebfb9a8ecf09144093d69cf85ba27a18034bc5ae55da0b9",
+          "actuallyViewed": true
+        },
+        {
+          "file": "captures/boards/board-04.png",
+          "sha256": "593dfb0422547860a20ddeb6990f5ae8735d5e45afa5e2ee17dc6711a1fcaad4",
+          "actuallyViewed": true
+        },
+        {
+          "file": "captures/boards/board-05.png",
+          "sha256": "7875182e15ec195b8ad7ef160229779e1d8a436ceb096d8a3d4d9a607d5cda2a",
+          "actuallyViewed": true
+        },
+        {
+          "file": "captures/boards/board-06.png",
+          "sha256": "f90cd1857c8420e501799d0f9f8e82aa0e5703d0e2e2014a674f651e02e1a94a",
+          "actuallyViewed": true
+        },
+        {
+          "file": "captures/native-figure-320.png",
+          "sha256": "a0ccf0b84609e7c16f5268882e1dd7cd6185ecfc15c3dcae70b625f47794dd7f",
+          "actuallyViewed": true
+        },
+        {
+          "file": "captures/native-figure-720.png",
+          "sha256": "56eb4e4866c8bab9d89a2d3eb680b3c2289a7b80621e282bb9cf1513c968e090",
+          "actuallyViewed": true
+        }
+      ],
+      "originalCaptures": 50,
+      "unscaledDesktopMobilePairs": 24,
+      "boardCount": 7,
+      "sourcePdfPagesActuallyReadViewed": [
+        9,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        26,
+        27
+      ],
+      "bookPdfPageActuallyReadViewed": 158,
+      "observations": "All four lesson bodies, summary/concepts/keypoints/application, unchanged three-column conceptual figure, embedded check, six reference labels, ten bank questions and three cumulative derivatives are legible and complete at desktop/mobile sizes. Correct and incorrect feedback identifies the same reviewed keys after shuffling. Native 320/720 figure inspected: clean wrapping, no overlapping or clipped text. No sticky-bar obstruction in final captures.",
+      "materialDefects": [],
+      "scope": "Existing visual architecture retained; no new anatomical or observed-data image."
+    }
+  },
+  "originalDrafts": "Original local module/bank bytes retained as prefixes; appended only scoped lesson/reference/cumulative-ID and question reconciliations. Canonical external candidate verified; old mixed local runtime isnot certified.",
+  "privateEvidenceRoot": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/fluid-broader-nutrition-care-plan-20261007/evidence",
+  "privateSourceFilesInGit": false,
+  "sourceComparison": "One whole nutrition care-planning lesson revised from2to4bodies: cautious high-risk initiation and prospective monitoring replace aggressive/optional language; adult NICE intervals and setting/risk qualifications explicit; medicine temporal association isnot assumed causal; patient outcomes,care processes and Proctor fidelity separated. Embedded check now includes owner/goal/actiontrigger with case-specific timing. Eightwholeexisting questions/all32choices and2distinctnew monitoring cases/all8choices reviewed. Stable IDs/keys/anchors preserved. Fiveexisting cumulative origins pinned to prevent incidental reselection; prior103 derivative updated from reviewed origin,104/105added;all1182prior cumulativeIDs retained and1181priorwholeobjects unchanged. Fiveotherlessons/95bankobjects/231othermodules preserved. Broader and parent closure remainopen.",
+  "remaining": "Continue broader fluid dependencies with acid-base-092 and its whole metabolic-treatment lesson/context; review potentially mismatched anion-gap review anchor against supplied book and approved primary sources. Nutrition plan-monitor-communicate whole lesson/embedded check/8 existing bank objects/all32choices and2distinctnew cases/all8choices are now scoped verified,with3reviewed cumulative derivatives. Other5nutritionlessons/95wholebankobjects and other broader fluid dependencies remain open; prior9 calcium/adrenal whole-object reviews retain continuity. Chapter1printed7/PDF19entry15 andChapter11 remainopen. Use managed external Learn lifecycle.",
+  "priorArchiveReopened": {
+    "status": "passed",
+    "archive": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/archives/fluid-broader-question-reconciliation-20261007",
+    "independentlyReopenedAndHashed": {
+      "source": 1517,
+      "evidence": 59,
+      "outputs": 0
+    },
+    "exactPriorRemote": "8daa5c8107ed4ce080d5f2a7ab9f1cc8b99eb75c",
+    "permanentDeletions": 0
+  },
+  "release": {
+    "branch": "audit/rxprep-content-2026-09-24",
+    "baseCommit": "8daa5c8107ed4ce080d5f2a7ab9f1cc8b99eb75c",
+    "commit": null,
+    "push": "pending",
+    "receipt": "fluid-broader-nutrition-care-plan-release.json",
+    "mainMerge": "not performed",
+    "production": "not verified"
+  }
+}

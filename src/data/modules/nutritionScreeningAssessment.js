@@ -119,24 +119,53 @@ export const nutritionScreeningAssessmentModule = {
       check: { question: "A patient has low BMI and reduced muscle mass but no evidence of reduced intake, malabsorption, or disease burden with inflammation. Does the patient meet GLIM diagnosis on the available data?", choices: ["No, an etiologic criterion is also required", "Yes, any single phenotypic criterion is sufficient", "Yes, two phenotypic criteria are always sufficient", "No, serum albumin must be low first"], answer: 0, rationale: "GLIM requires at least one phenotypic criterion and at least one etiologic criterion after risk screening.", reviewHref: "#diagnostic-frameworks" },
     },
     {
-      slug: "plan-monitor-communicate",
-      title: "Plan, Monitor, and Communicate",
-      visual: "nutrition-care-loop",
-      summary: "The assessment matters only when it changes care. A complete plan states the problem, intervention, surveillance, and decision points.",
-      concepts: ["Problem prioritization", "Interdisciplinary intervention", "Medication review", "Outcome and safety monitoring"],
-      application: "Write a plan that another clinician can execute. Include who will act, what will be measured, when it will be measured, and what finding will trigger escalation.",
-      lesson: [
-        {
-          heading: "Connect cause to intervention",
-          body: "Address reversible barriers such as nausea, constipation, dysphagia, pain, food access, medication timing, and overly restrictive diets. Coordinate with dietitians, nurses, prescribers, speech language pathology, social work, and the patient according to the problem identified.",
-        },
-        {
-          heading: "Monitor both benefit and harm",
-          body: "Follow intake, weight trajectory, volume status, symptoms, physical findings, function, and relevant laboratory data. A high risk patient who begins aggressive nutrition support may also require focused surveillance for electrolyte shifts, glycemic complications, fluid intolerance, and refeeding risk.",
-        },
+      "slug": "plan-monitor-communicate",
+      "title": "Plan, Monitor, and Communicate",
+      "visual": "nutrition-care-loop",
+      "summary": "An assessment becomes a care plan when the team names the problem, acts on its cause, measures benefit and harm, and assigns the next decision.",
+      "concepts": [
+        "Causal barriers and team roles",
+        "Risk-based safety monitoring",
+        "Patient outcomes and process measures",
+        "Fidelity and accountable follow-up"
       ],
-      keyPoints: ["A monitoring plan needs a measure, interval, goal, and action threshold.", "Reconcile medicines that may worsen intake or gastrointestinal tolerance.", "Escalate urgently when severe intake restriction, unsafe swallowing, major electrolyte risk, or rapid decline is present."],
-      check: { question: "Which follow up plan is most actionable?", choices: ["Record meal intake each shift, measure weight under consistent conditions twice weekly, and reassess barriers in 72 hours", "Monitor nutrition", "Repeat every laboratory test daily forever", "Wait until discharge to reassess"], answer: 0, rationale: "An actionable plan identifies what will be measured, how often it will be measured, and when the team will reassess the cause and response.", reviewHref: "#plan-monitor-communicate" },
+      "application": "State the evidence and uncertainty, the proposed action and responsible clinician, the measure and goal, the review interval, and the finding that triggers escalation. Confirm that the receiving team can carry out the plan.",
+      "lesson": [
+        {
+          "heading": "Connect cause to intervention",
+          "body": "Investigate barriers such as nausea, constipation, dysphagia, pain, food access, and medicine effects before choosing an intervention. A symptom that follows a new medicine suggests a possible contribution, not proof of causation. Review its indication and alternatives with the prescriber, address other plausible causes, and measure the response. Coordinate dietitian, nursing, pharmacy, swallowing, and social support according to the problem; involve the patient in the plan."
+        },
+        {
+          "heading": "Monitor benefit and harm from the start",
+          "body": "Track actual intake and delivered feed, symptoms, weight with fluid balance, clinical condition, and relevant laboratory trends. The supplied book highlights glucose intolerance, electrolyte shifts, and fluid accumulation during parenteral nutrition. High refeeding risk calls for cautious, individualized initiation by an experienced team and planned surveillance, not aggressive feeding followed by optional monitoring. A new electrolyte decline or clinical deterioration requires prompt reassessment of feeding, replacement, and fluid management under the agreed protocol."
+        },
+        {
+          "heading": "Choose intervals for the patient and setting",
+          "body": "NICE CG32 provides adult nutrition-support monitoring examples. In hospital, initially assess intake daily and chart fluid balance during enteral or parenteral support. Check weight daily when fluid balance is a concern; otherwise use weekly weights, reducing frequency with stability. Its laboratory table calls for baseline tests, daily sodium, potassium, urea and creatinine until stable, glucose once or twice daily until stable, and daily magnesium and phosphate when refeeding risk is present. This table chiefly addresses parenteral nutrition and is selectively applicable to oral or enteral support. Acute instability may require more frequent assessment; these are not universal intervals for every patient."
+        },
+        {
+          "heading": "Separate the patient result from delivery of care",
+          "body": "Improved intake or relief of nausea is a patient outcome. Recording intake and completing an agreed medicine review are care processes. In the Proctor implementation framework, fidelity asks whether a pathway was delivered as intended; adherence to its required steps can be one fidelity measure. Adoption concerns initial uptake, acceptability asks whether the pathway is agreeable, and feasibility asks whether it can be carried out in the setting. A completed checklist does not itself prove clinical benefit. Document both the action taken and the patient response, with a named owner, next review, and agreed escalation threshold."
+        }
+      ],
+      "keyPoints": [
+        "Link the intervention to a supported cause and document uncertainty.",
+        "Specify the measure, goal, interval, action threshold, and responsible clinician.",
+        "Plan refeeding surveillance before support begins and adapt it to clinical changes.",
+        "Measure patient benefit separately from completion of the care process."
+      ],
+      "check": {
+        "question": "An adult inpatient has nausea and reduced intake. The team has agreed an intake goal and a safe medicine adjustment. Which follow-up plan is most actionable?",
+        "choices": [
+          "Name the nurse to record daily intake against the goal and the prescriber to review response tomorrow, with earlier contact for worsening symptoms or intake below the agreed threshold",
+          "Name the nurse to record daily intake but leave the target and response to a low result unspecified",
+          "Set an intake goal and a review tomorrow but leave who will assess and act unspecified",
+          "Assign a prescriber to review the medicine at discharge without tracking the intake response"
+        ],
+        "answer": 0,
+        "rationale": "The complete plan connects an agreed intervention with ownership, a measure and goal, a review time, and an earlier action trigger. The other plans each leave an essential part of that loop unspecified. The review time is part of this case plan, not a universal nutrition-monitoring interval.",
+        "reviewHref": "#plan-monitor-communicate"
+      }
     },
   ],
   references: [
@@ -144,6 +173,9 @@ export const nutritionScreeningAssessmentModule = {
     { label: "GLIM consensus approach, five year update", href: "https://pmc.ncbi.nlm.nih.gov/articles/PMC12053077/" },
     { label: "ASPEN position paper on visceral proteins", href: "https://pubmed.ncbi.nlm.nih.gov/33125793/" },
     { label: "GLIM diagnostic criteria consensus report", href: "https://pmc.ncbi.nlm.nih.gov/articles/PMC6438340/" },
+    {"label": "NICE CG32: Adult nutrition support, recommendations and monitoring tables (updated 2017)", "href": "https://www.nice.org.uk/guidance/cg32/chapter/Recommendations"},
+    {"label": "Proctor et al. (2011): Implementation outcomes and fidelity", "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3068522/"},
   ],
+  cumulativeQuestionIds: ["nutrition-assessment-001", "nutrition-assessment-027", "nutrition-assessment-052", "nutrition-assessment-078", "nutrition-assessment-103", "nutrition-assessment-104", "nutrition-assessment-105"],
   questionBank: nutritionScreeningAssessmentQuestionBank,
 };
