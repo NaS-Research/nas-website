@@ -1,0 +1,234 @@
+{
+  "status": "content push verified",
+  "release": {
+    "branch": "audit/rxprep-content-2026-09-24",
+    "baseCommit": "8daa5c8107ed4ce080d5f2a7ab9f1cc8b99eb75c",
+    "commit": "928b89aa1202476756ef0c2fb23bf5a44eaaf552",
+    "push": "verified",
+    "receipt": "fluid-broader-nutrition-care-plan-release.json",
+    "remoteHashObserved": "928b89aa1202476756ef0c2fb23bf5a44eaaf552",
+    "exactRemoteObservedByTool": true,
+    "remoteVerifiedAt": "2026-10-07T18:56:35.679201+00:00",
+    "mainMerge": "not performed",
+    "production": "not verified"
+  },
+  "verifiedScope": "One whole nutrition care-planning lesson,embeddedcheck/all4choices,8existingwholequestions/all32choices,2distinctnewcases/all8choices and3reviewedcumulative derivatives. All1182prior cumulativeIDs retained;1181priorwholeobjects unchanged. Wholeparent/dependencymodule/chapter/goal remainopen.",
+  "validation": {
+    "structure": {
+      "status": "passed",
+      "result": {
+        "modules": 1,
+        "questions": 105,
+        "hardErrors": [],
+        "sourceGaps": [],
+        "sizeAdvisories": [],
+        "thinLessons": [],
+        "weakestModules": [
+          {
+            "module": "nutrition-screening-assessment",
+            "lessons": 6,
+            "questions": 105,
+            "minimumLessonCoverage": 10
+          }
+        ]
+      },
+      "guardedNpmHookExecuted": true
+    },
+    "build": {
+      "status": "passed",
+      "exitCode": 0,
+      "command": "npm run build (required prebuild storage gate)",
+      "externalCandidate": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/fluid-broader-nutrition-care-plan-20261007/candidate"
+    },
+    "browser": {
+      "status": "passed",
+      "results": [
+        {
+          "width": 1440,
+          "wholeLessonBodiesExact": 4,
+          "allLessonMetadataExact": true,
+          "unchangedFigureTextExact": true,
+          "embeddedCheckAllFourChoicesGraded": true,
+          "wholeQuestionsShuffledChoicesKeyRationaleAndCorrectIncorrectFeedback": 10,
+          "allReferencesExact": 6,
+          "all1182PriorCumulativeIdsPreserved": true,
+          "all1181UnchangedCumulativeWholeObjectsExact": true,
+          "cumulativeWholeObjectsGradedBothWays": 3,
+          "noHorizontalOverflow": true
+        },
+        {
+          "width": 390,
+          "wholeLessonBodiesExact": 4,
+          "allLessonMetadataExact": true,
+          "unchangedFigureTextExact": true,
+          "embeddedCheckAllFourChoicesGraded": true,
+          "wholeQuestionsShuffledChoicesKeyRationaleAndCorrectIncorrectFeedback": 10,
+          "allReferencesExact": 6,
+          "all1182PriorCumulativeIdsPreserved": true,
+          "all1181UnchangedCumulativeWholeObjectsExact": true,
+          "cumulativeWholeObjectsGradedBothWays": 3,
+          "noHorizontalOverflow": true
+        }
+      ],
+      "figureWidths": [
+        320,
+        390,
+        720,
+        1440
+      ],
+      "captures": [
+        "captures/body-0-1440.png",
+        "captures/body-1-1440.png",
+        "captures/body-2-1440.png",
+        "captures/body-3-1440.png",
+        "captures/summary-1440.png",
+        "captures/concepts-1440.png",
+        "captures/keypoints-1440.png",
+        "captures/application-1440.png",
+        "captures/figure-1440.png",
+        "captures/check-1440.png",
+        "captures/references-1440.png",
+        "captures/bank-nutrition-assessment-091-1440.png",
+        "captures/bank-nutrition-assessment-097-1440.png",
+        "captures/bank-nutrition-assessment-104-1440.png",
+        "captures/bank-nutrition-assessment-102-1440.png",
+        "captures/bank-nutrition-assessment-105-1440.png",
+        "captures/bank-nutrition-assessment-095-1440.png",
+        "captures/bank-nutrition-assessment-100-1440.png",
+        "captures/bank-nutrition-assessment-096-1440.png",
+        "captures/bank-nutrition-assessment-103-1440.png",
+        "captures/bank-nutrition-assessment-101-1440.png",
+        "captures/cumulative-cumulative-nutrition-screening-assessment-nutrition-assessment-104-1440.png",
+        "captures/cumulative-cumulative-nutrition-screening-assessment-nutrition-assessment-103-1440.png",
+        "captures/cumulative-cumulative-nutrition-screening-assessment-nutrition-assessment-105-1440.png",
+        "captures/body-0-390.png",
+        "captures/body-1-390.png",
+        "captures/body-2-390.png",
+        "captures/body-3-390.png",
+        "captures/summary-390.png",
+        "captures/concepts-390.png",
+        "captures/keypoints-390.png",
+        "captures/application-390.png",
+        "captures/figure-390.png",
+        "captures/check-390.png",
+        "captures/references-390.png",
+        "captures/bank-nutrition-assessment-091-390.png",
+        "captures/bank-nutrition-assessment-097-390.png",
+        "captures/bank-nutrition-assessment-104-390.png",
+        "captures/bank-nutrition-assessment-102-390.png",
+        "captures/bank-nutrition-assessment-105-390.png",
+        "captures/bank-nutrition-assessment-095-390.png",
+        "captures/bank-nutrition-assessment-100-390.png",
+        "captures/bank-nutrition-assessment-096-390.png",
+        "captures/bank-nutrition-assessment-103-390.png",
+        "captures/bank-nutrition-assessment-101-390.png",
+        "captures/cumulative-cumulative-nutrition-screening-assessment-nutrition-assessment-104-390.png",
+        "captures/cumulative-cumulative-nutrition-screening-assessment-nutrition-assessment-103-390.png",
+        "captures/cumulative-cumulative-nutrition-screening-assessment-nutrition-assessment-105-390.png",
+        "captures/native-figure-320.png",
+        "captures/native-figure-720.png"
+      ],
+      "errors": []
+    },
+    "visual": {
+      "status": "passed",
+      "actuallyViewed": [
+        {
+          "file": "captures/boards/board-00.png",
+          "sha256": "642a233ba223228d30e3d157b3461e2517e98ab823e40458afe6213022161b98",
+          "actuallyViewed": true
+        },
+        {
+          "file": "captures/boards/board-01.png",
+          "sha256": "e2bd66eb2d2cd476bb373a6b03a3ae3ecc3342e2e45baf8fca61207ff01a1a71",
+          "actuallyViewed": true
+        },
+        {
+          "file": "captures/boards/board-02.png",
+          "sha256": "5634156ad2a0ecc2012d55a0bdadb9cf2cc8ca34a0470312f2e133f344337b96",
+          "actuallyViewed": true
+        },
+        {
+          "file": "captures/boards/board-03.png",
+          "sha256": "addcdfcb724748949ebfb9a8ecf09144093d69cf85ba27a18034bc5ae55da0b9",
+          "actuallyViewed": true
+        },
+        {
+          "file": "captures/boards/board-04.png",
+          "sha256": "593dfb0422547860a20ddeb6990f5ae8735d5e45afa5e2ee17dc6711a1fcaad4",
+          "actuallyViewed": true
+        },
+        {
+          "file": "captures/boards/board-05.png",
+          "sha256": "7875182e15ec195b8ad7ef160229779e1d8a436ceb096d8a3d4d9a607d5cda2a",
+          "actuallyViewed": true
+        },
+        {
+          "file": "captures/boards/board-06.png",
+          "sha256": "f90cd1857c8420e501799d0f9f8e82aa0e5703d0e2e2014a674f651e02e1a94a",
+          "actuallyViewed": true
+        },
+        {
+          "file": "captures/native-figure-320.png",
+          "sha256": "a0ccf0b84609e7c16f5268882e1dd7cd6185ecfc15c3dcae70b625f47794dd7f",
+          "actuallyViewed": true
+        },
+        {
+          "file": "captures/native-figure-720.png",
+          "sha256": "56eb4e4866c8bab9d89a2d3eb680b3c2289a7b80621e282bb9cf1513c968e090",
+          "actuallyViewed": true
+        }
+      ],
+      "originalCaptures": 50,
+      "unscaledDesktopMobilePairs": 24,
+      "boardCount": 7,
+      "sourcePdfPagesActuallyReadViewed": [
+        9,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        26,
+        27
+      ],
+      "bookPdfPageActuallyReadViewed": 158,
+      "observations": "All four lesson bodies, summary/concepts/keypoints/application, unchanged three-column conceptual figure, embedded check, six reference labels, ten bank questions and three cumulative derivatives are legible and complete at desktop/mobile sizes. Correct and incorrect feedback identifies the same reviewed keys after shuffling. Native 320/720 figure inspected: clean wrapping, no overlapping or clipped text. No sticky-bar obstruction in final captures.",
+      "materialDefects": [],
+      "scope": "Existing visual architecture retained; no new anatomical or observed-data image."
+    }
+  },
+  "workingBoundary": {
+    "status": "passed",
+    "baselinePaths": 2093,
+    "allOutsideScopedPathsPreserved": true,
+    "stagedPaths": [
+      "src/data/modules/nutritionScreeningAssessment.js",
+      "src/data/questionBanks/nutritionScreeningAssessment.js",
+      "docs/clinical-audit/module-ledger.json",
+      "docs/clinical-audit/chapter-ledger.json",
+      "docs/clinical-audit/sequential-resume.json",
+      "docs/clinical-audit/fluid-broader-nutrition-care-plan-review.json"
+    ],
+    "allStagedBlobsEqualVerifiedScopedRecords": true,
+    "allUnrelatedLedgerRowsExact": true,
+    "wholeModuleVerifiedCount": 66,
+    "wholeChapterVerifiedCount": 7
+  },
+  "remaining": "Continue broader fluid dependencies with acid-base-092 and its whole metabolic-treatment lesson/context; review potentially mismatched anion-gap review anchor against supplied book and approved primary sources. Nutrition plan-monitor-communicate whole lesson/embedded check/8 existing bank objects/all32choices and2distinctnew cases/all8choices are now scoped verified,with3reviewed cumulative derivatives. Other5nutritionlessons/95wholebankobjects and other broader fluid dependencies remain open; prior9 calcium/adrenal whole-object reviews retain continuity. Chapter1printed7/PDF19entry15 andChapter11 remainopen. Use managed external Learn lifecycle.",
+  "committedWholeModules": {
+    "verified": 66,
+    "total": 232,
+    "percent": 28.45
+  },
+  "wholeChapters": {
+    "verified": 7,
+    "total": 82,
+    "percent": 8.54
+  },
+  "receiptCommit": "Follow-updocumentation commit;exactremotehash verifiedprivately afterpush."
+}
