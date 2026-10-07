@@ -1393,7 +1393,9 @@
         "enteral-nutrition-broader-cystic-fibrosis-infection-review.json",
         "enteral-nutrition-broader-cystic-fibrosis-modulator-review.json",
         "enteral-nutrition-broader-cystic-fibrosis-longitudinal-review.json",
-        "enteral-nutrition-broader-cystic-fibrosis-parent-review.json"
+        "enteral-nutrition-broader-cystic-fibrosis-parent-review.json",
+        "enteral-nutrition-current-inventory-review.json",
+        "enteral-nutrition-current-feeding-inventory.json"
       ],
       "latestBookCalculationReview": {
         "evidence": "enteral-nutrition-book-calculations-review.json",
@@ -2071,7 +2073,8 @@
         "Enteral formula-selection review verifies seven additional bank questions (025,026,027,028,029,032,103), four whole teaching bodies, the whole formula-selection figure and cumulative EN028. Aggregate91/108bank,28/36bodies,4/6checks,4/6figures,5/5cumulative; whole module and Chapter11 remain open. Adult ICU fiber caution now includes both soluble and insoluble fiber; density does not establish water delivery; specialty choices require patient-specific evidence/composition/tolerance/cost. Two dated sponsored ASPEN practice tools distinguished from guidelines; definitions/selected fat-malabsorption option only, no pediatric allergy or device protocol adopted. Existing108 IDs/keys/anchors,101 other bank objects,32 other bodies,all6checks,other5figures,allmetadata,12 prior references and1179 other cumulative objects preserved. Isolated567-page build, focused108-question structural audit, and desktop/mobile QA passed.",
         "Enteral medication-delivery and related-complication review verifies seven additional bank questions (034,038,039,045,046,048,102), three whole teaching bodies, the medication-administration check and unchanged whole medication figure. Aggregate98/108bank,31/36bodies,5/6checks,5/6figures,5/5cumulative; whole module and Chapter11 remain open. Brief administration/flush pause distinguished from prolonged drug-specific feeding hold; jejunal formulation/site reassessment explicit; sorbitol/osmolality evaluated with other diarrhea causes; gentle warm-water declogging followed by trained protocol escalation. All108 IDs/keys/anchors,101 other bank objects,33 other bodies,five other checks,all6figures,metadata,14 references and1180 cumulative objects preserved. Isolated567-page build, focused108-question audit and desktop/mobile QA passed.",
         "Final current EN source-object comparison complete:36/36 whole teaching bodies,107/108 full module questions,6/6 embedded checks,6/6 complete figures,5/5 associated cumulative items and78/79 metadata statements reconciled. Five fully supported lessons verified; formula-selection remains reviewing for EN031 and concepts[3]. Full private book EN section and fluid context visually reread;37 existing question computations,5 worked bodies,2 embedded calculations and6 book exercises independently rechecked. No product changes or new questions/calculation/module/chapter closures. Retained production build matches927 tracked product files; fresh desktop/mobile six-figure DOM and all six correct/incorrect check feedback,anchors,320px overflow and visual review passed.",
-        "Approved renal-solute unit verified:one original body and one approved2005reference added;EN031 full stem/distractors/rationale corrected whileID/key/correcttext/anchor remain stable. All108EN questions,37bodies,6checks/figures,5EN cumulative copies and79metadata objects reconciled. Formula lesson verified;six lessons nowcovered;broaderfeeding dependencies keepfullEN/Chapter11/Chapter1fluidneeds reviewing. Build567pages anddesktop/mobile37body/allmetadata/referenceDOM,shuffled031correct/incorrectgrading,320overflow andeightactuallyviewedcaptures passed."
+        "Approved renal-solute unit verified:one original body and one approved2005reference added;EN031 full stem/distractors/rationale corrected whileID/key/correcttext/anchor remain stable. All108EN questions,37bodies,6checks/figures,5EN cumulative copies and79metadata objects reconciled. Formula lesson verified;six lessons nowcovered;broaderfeeding dependencies keepfullEN/Chapter11/Chapter1fluidneeds reviewing. Build567pages anddesktop/mobile37body/allmetadata/referenceDOM,shuffled031correct/incorrectgrading,320overflow andeightactuallyviewedcaptures passed.",
+        "Current EN source-object reconciliation passed:108whole questions/432choices,37bodies,79metadata,6checks/24choices,6figures,12references and5cumulative origins match retained individual final/renal source reviews. Six lesson closures retained; EN031/renal concept already approved and corrected, not current blockers. Current232module/27996question/1180cumulative locating inventory rebuilt:all233historical candidates reconciled,130whole-question IDs still unregistered;416focused/historical candidates,39off-topic PEG/polyethylene glycol matches,174unregistered potentialfeeding wholequestions including51primary-field matches;2046secondary signals require relevance triage. No new clinical claim or new source-question/module/chapter closures. Scoped enteral figureCSS stacksnode index/details at<=380px and reservesarrowspaceacrossENnodes afterfreshnarrow-widthlabel/text-clearancefailures;allotherstyles andclinicalobjects preserved. FullEN/Chapter11/Chapter1entry15 andgoalremainopen."
       ],
       "latestAccessSafetyReview": {
         "evidence": "enteral-nutrition-access-safety-review.json",
@@ -3016,17 +3019,14 @@
         "reopenedBodyScopesThisUnit": 1
       },
       "remainingIndicationsMetadataReview": {
-        "questionIds": [
-          "enteral-nutrition-031"
-        ],
-        "wholeBodyHeadings": [
-          "Connect the route to its advantages"
-        ],
-        "renalSoluteConcept": "Free water and renal solute load",
-        "sourceAuthorizationQuestion": "Direct human response pending to National Academies water/electrolyte reference request; no adoption without authorization. Entire1032-page book text search found no renal solute/solute load/obligatory literals; not proof of semantic absence.2009ASPEN searched primary PDF supplied no established support.",
-        "metadataStatus": "Final whole parent/six-lesson clinical metadata review remains pending; this unit closes only the four changed statements plus reference attribution.",
-        "clinicalReconciliation": "2022Q3 Table5 source visual and corrigendum; reconcile whole route-advantage body plus EN007/008 and relevant metadata before full-module closure.",
-        "finalWholeModuleQA": true
+        "status": "superseded by current own-content/inventory reconciliation",
+        "evidence": "enteral-nutrition-current-inventory-review.json",
+        "currentENQuestionIds": [],
+        "currentENBodyHeadings": [],
+        "currentENMetadataPaths": [],
+        "renalSoluteSourceApproval": "Previously authorized and completed in enteral-nutrition-renal-solute-review.json; not a current blocker",
+        "broaderFeedingInventory": "enteral-nutrition-current-feeding-inventory.json",
+        "wholeModuleVerified": false
       },
       "latestRouteComparisonReview": {
         "evidence": "enteral-nutrition-route-comparison-review.json",
@@ -3167,15 +3167,14 @@
         "reopenedBodyScopesThisUnit": 0
       },
       "remainingRouteComparisonReview": {
-        "questionIds": [
-          "enteral-nutrition-031"
-        ],
-        "wholeBodyHeadings": [],
-        "renalSoluteConcept": "Free water and renal solute load",
-        "sourceAuthorizationQuestion": "Direct human response pending to National Academies water/electrolyte reference request; no adoption without authorization. Entire1032-page book text search found no renal solute/solute load/obligatory literals; not proof of semantic absence.2009ASPEN searched primary PDF supplied no established support.",
-        "metadataStatus": "One route key point closed in this unit; final full clinical metadata review and renal-solute concept remain open.",
-        "clinicalReconciliation": "2022Q3 route-comparison scope reconciled. Complete all parent/six-lesson metadata and final whole-module source/object reconciliation.",
-        "finalWholeModuleQA": true
+        "status": "superseded by current own-content/inventory reconciliation",
+        "evidence": "enteral-nutrition-current-inventory-review.json",
+        "currentENQuestionIds": [],
+        "currentENBodyHeadings": [],
+        "currentENMetadataPaths": [],
+        "renalSoluteSourceApproval": "Previously authorized and completed in enteral-nutrition-renal-solute-review.json; not a current blocker",
+        "broaderFeedingInventory": "enteral-nutrition-current-feeding-inventory.json",
+        "wholeModuleVerified": false
       },
       "latestClinicalMetadataReview": {
         "evidence": "enteral-nutrition-clinical-metadata-review.json",
@@ -3319,15 +3318,14 @@
         "remainingMetadataStatements": 1
       },
       "remainingClinicalMetadataReview": {
-        "questionIds": [
-          "enteral-nutrition-031"
-        ],
-        "wholeBodyHeadings": [],
-        "renalSoluteConcept": "Free water and renal solute load",
-        "sourceAuthorizationQuestion": "Direct human response pending to National Academies water/electrolyte reference request; no adoption without authorization. Entire1032-page book text search found no renal solute/solute load/obligatory literals; not proof of semantic absence.2009ASPEN searched primary PDF supplied no established support.",
-        "metadataStatus": "Only formula-selection.concepts[3] renal-solute support pending;78other statements reconciled.",
-        "clinicalReconciliation": "Whole-module final source/object reconciliation and rendered assessment closure remain pending; no full EN closure.",
-        "finalWholeModuleQA": true
+        "status": "superseded by current own-content/inventory reconciliation",
+        "evidence": "enteral-nutrition-current-inventory-review.json",
+        "currentENQuestionIds": [],
+        "currentENBodyHeadings": [],
+        "currentENMetadataPaths": [],
+        "renalSoluteSourceApproval": "Previously authorized and completed in enteral-nutrition-renal-solute-review.json; not a current blocker",
+        "broaderFeedingInventory": "enteral-nutrition-current-feeding-inventory.json",
+        "wholeModuleVerified": false
       },
       "latestFinalReconciliationReview": {
         "evidence": "enteral-nutrition-final-reconciliation-review.json",
@@ -3475,10 +3473,14 @@
         "wholeChapterVerified": false
       },
       "remainingFinalReconciliationReview": {
-        "currentENBank": [],
-        "currentENMetadata": [],
-        "broaderFeedingDependencies": "Retained parent review records include unsupported full nonfeeding topics and feeding-related adsorption/administration gaps; reconcile this inventory before whole topic/module closure. No unsupported parent claim silently adopted or removed.",
-        "nextAction": "Start with earliest outstanding tetracycline adsorption row069 and shared distractors017/041/121 in existing broader DDI/tetracycline review; use approved ASPEN/FDA scope where applicable, distinguish unsupported drug-specific assertion from source-backed cation interaction. Keep Chapter1fluidneeds/Chapter11/54 open."
+        "status": "superseded by current own-content/inventory reconciliation",
+        "evidence": "enteral-nutrition-current-inventory-review.json",
+        "currentENQuestionIds": [],
+        "currentENBodyHeadings": [],
+        "currentENMetadataPaths": [],
+        "renalSoluteSourceApproval": "Previously authorized and completed in enteral-nutrition-renal-solute-review.json; not a current blocker",
+        "broaderFeedingInventory": "enteral-nutrition-current-feeding-inventory.json",
+        "wholeModuleVerified": false
       },
       "latestRenalSoluteReview": {
         "evidence": "enteral-nutrition-renal-solute-review.json",
@@ -14504,6 +14506,91 @@
         ],
         "fullEnteralParentVerified": false,
         "wholeGoalComplete": false
+      },
+      "latestCurrentFeedingInventoryReview": {
+        "evidence": "enteral-nutrition-current-inventory-review.json",
+        "inventoryEvidence": "enteral-nutrition-current-feeding-inventory.json",
+        "bank": 108,
+        "sourceVerifiedCurrentBank": 108,
+        "bodies": 37,
+        "sourceVerifiedCurrentBodies": 37,
+        "metadataStatements": 79,
+        "sourceVerifiedCurrentMetadata": 79,
+        "embeddedChecks": 6,
+        "figures": 6,
+        "references": 12,
+        "cumulativeOrigins": 5,
+        "currentENQuestionGaps": [],
+        "currentENBodyGaps": [],
+        "currentENMetadataGaps": [],
+        "sixLessonSourceCoverageRetained": true,
+        "broaderRegistryUniqueWholeQuestionIds": 1510,
+        "historical233UnregisteredWholeQuestions": 130,
+        "currentFocusedBankCandidates": 416,
+        "offTopicPEGQuestions": 39,
+        "currentUnregisteredFeedingCandidates": 174,
+        "currentUnregisteredPrimaryFieldFeedingCandidates": 51,
+        "secondarySemanticLocatingCandidates": 2046,
+        "wholeModuleVerified": false,
+        "wholeChapter11Verified": false,
+        "wholeGoalComplete": false
+      },
+      "supersededRemainingReviewSnapshots": [
+        {
+          "supersededAt": "2026-10-07T00:10:28.134402+00:00",
+          "supersededBy": "enteral-nutrition-current-inventory-review.json",
+          "values": {
+            "remainingIndicationsMetadataReview": {
+              "questionIds": [
+                "enteral-nutrition-031"
+              ],
+              "wholeBodyHeadings": [
+                "Connect the route to its advantages"
+              ],
+              "renalSoluteConcept": "Free water and renal solute load",
+              "sourceAuthorizationQuestion": "Direct human response pending to National Academies water/electrolyte reference request; no adoption without authorization. Entire1032-page book text search found no renal solute/solute load/obligatory literals; not proof of semantic absence.2009ASPEN searched primary PDF supplied no established support.",
+              "metadataStatus": "Final whole parent/six-lesson clinical metadata review remains pending; this unit closes only the four changed statements plus reference attribution.",
+              "clinicalReconciliation": "2022Q3 Table5 source visual and corrigendum; reconcile whole route-advantage body plus EN007/008 and relevant metadata before full-module closure.",
+              "finalWholeModuleQA": true
+            },
+            "remainingRouteComparisonReview": {
+              "questionIds": [
+                "enteral-nutrition-031"
+              ],
+              "wholeBodyHeadings": [],
+              "renalSoluteConcept": "Free water and renal solute load",
+              "sourceAuthorizationQuestion": "Direct human response pending to National Academies water/electrolyte reference request; no adoption without authorization. Entire1032-page book text search found no renal solute/solute load/obligatory literals; not proof of semantic absence.2009ASPEN searched primary PDF supplied no established support.",
+              "metadataStatus": "One route key point closed in this unit; final full clinical metadata review and renal-solute concept remain open.",
+              "clinicalReconciliation": "2022Q3 route-comparison scope reconciled. Complete all parent/six-lesson metadata and final whole-module source/object reconciliation.",
+              "finalWholeModuleQA": true
+            },
+            "remainingClinicalMetadataReview": {
+              "questionIds": [
+                "enteral-nutrition-031"
+              ],
+              "wholeBodyHeadings": [],
+              "renalSoluteConcept": "Free water and renal solute load",
+              "sourceAuthorizationQuestion": "Direct human response pending to National Academies water/electrolyte reference request; no adoption without authorization. Entire1032-page book text search found no renal solute/solute load/obligatory literals; not proof of semantic absence.2009ASPEN searched primary PDF supplied no established support.",
+              "metadataStatus": "Only formula-selection.concepts[3] renal-solute support pending;78other statements reconciled.",
+              "clinicalReconciliation": "Whole-module final source/object reconciliation and rendered assessment closure remain pending; no full EN closure.",
+              "finalWholeModuleQA": true
+            },
+            "remainingFinalReconciliationReview": {
+              "currentENBank": [],
+              "currentENMetadata": [],
+              "broaderFeedingDependencies": "Retained parent review records include unsupported full nonfeeding topics and feeding-related adsorption/administration gaps; reconcile this inventory before whole topic/module closure. No unsupported parent claim silently adopted or removed.",
+              "nextAction": "Start with earliest outstanding tetracycline adsorption row069 and shared distractors017/041/121 in existing broader DDI/tetracycline review; use approved ASPEN/FDA scope where applicable, distinguish unsupported drug-specific assertion from source-backed cation interaction. Keep Chapter1fluidneeds/Chapter11/54 open."
+            }
+          }
+        }
+      ],
+      "remainingCurrentFeedingReview": {
+        "currentENQuestionIds": [],
+        "currentENBodyHeadings": [],
+        "currentENMetadataPaths": [],
+        "broaderFeedingQuestionReview": "Current inventory is authoritative locating checkpoint; no wholeENclosure.",
+        "semanticInventoryClosure": false,
+        "nextAction": "Begin whole fluid-electrolyte-therapy parent audit from fluid-physiology-assessment, compare all22currentbodies/100wholequestions/sixchecks/sixfigures with relevant supplied book and approved official sources. Preserve two completed feeding items016/083 and their full intake/loss body. Use current feeding inventory to review pending whole questions; differentiate completed feeding clauses from unsupported remaining assertions. EN031/renal metadata have no current gap. Keep Chapter1PDF19 checklistentry15 as frontier; do not markEN orChapter11 complete while broaderquestion/semantic scope remains open."
       }
     },
     {

@@ -1,0 +1,1685 @@
+{
+  "updated": "2026-10-07T00:29:29.411722+00:00",
+  "unit": "Current EN source/evidence reconciliation, feeding-origin inventory and narrow-width figure correction",
+  "status": "verified reconciliation and rendering logical unit; whole EN remains reviewing",
+  "baseCommit": "10dcdcdd0f37e02b53ed435850e45b7eece9c9d0",
+  "sourcePolicy": "Supplied RxPrep2023book remains primary; earlier expressly human-approved official and primary academic sources retained. Document instructions are source material, not task authority. No new outside source or clinical claim adopted.",
+  "coverage": {
+    "evidence": "enteral-nutrition-current-inventory-review.json",
+    "inventoryEvidence": "enteral-nutrition-current-feeding-inventory.json",
+    "bank": 108,
+    "sourceVerifiedCurrentBank": 108,
+    "bodies": 37,
+    "sourceVerifiedCurrentBodies": 37,
+    "metadataStatements": 79,
+    "sourceVerifiedCurrentMetadata": 79,
+    "embeddedChecks": 6,
+    "figures": 6,
+    "references": 12,
+    "cumulativeOrigins": 5,
+    "currentENQuestionGaps": [],
+    "currentENBodyGaps": [],
+    "currentENMetadataGaps": [],
+    "sixLessonSourceCoverageRetained": true,
+    "broaderRegistryUniqueWholeQuestionIds": 1510,
+    "historical233UnregisteredWholeQuestions": 130,
+    "currentFocusedBankCandidates": 416,
+    "offTopicPEGQuestions": 39,
+    "currentUnregisteredFeedingCandidates": 174,
+    "currentUnregisteredPrimaryFieldFeedingCandidates": 51,
+    "secondarySemanticLocatingCandidates": 2046,
+    "wholeModuleVerified": false,
+    "wholeChapter11Verified": false,
+    "wholeGoalComplete": false
+  },
+  "exactOwnContentReconciliation": {
+    "method": "Current raw module compared with retained renal candidate;current107unchangedquestions and36bodies matched final individual clinical records;corrected031 and37thbody matched later renal clinical records;allchecks/figures/metadata/references/cumulative exact. Hash matching reconciles those completed source reviews and does not itself establish clinical support.",
+    "serialization": "SHA256 of sorted compact JSON, ensure_ascii=False; compiled registry area removed only for raw module comparison. Area is a registry-derived addition, not content drift.",
+    "currentRawModuleSha256": "ff5686ef0aa791c1613a8c508e868652c728a14a28861edcc43ec33060bcc3b2",
+    "compiledModuleSha256": "8f72d043ec1776e2e0b25a34a8753a59b0abd3355ee1d727299730f383e42798",
+    "priorFinalEvidence": {
+      "file": "enteral-nutrition-final-reconciliation-review.json",
+      "sha256": "f5e7979786b18cfa7a34b4eede1bd79f25e89368bacf84f0682c66220c920600"
+    },
+    "laterRenalEvidence": {
+      "file": "enteral-nutrition-renal-solute-review.json",
+      "sha256": "8f2e29b96baa75794688f889f115788d1e8faa7894117a077be8114a2fef6842"
+    },
+    "verifiedRetainedEvidenceFileHashes": {
+      "enteral-nutrition-route-comparison-review.json": "1e179027a2bd222d6f65a7b2662c5c3849e47bdef836487a4a4b93ab73096bb6",
+      "enteral-nutrition-primary-decision-review.json": "89b062e713966c072c4af6c97e4da168e3d030c8b3ccd96888813306176b0339",
+      "enteral-nutrition-book-calculations-review.json": "22ec53aeb2bc25b1eaa46d83d5a8f29d249b4a3ee6dedab176b34ffa5750f6ae",
+      "enteral-nutrition-book-route-water-review.json": "ba731c92d84dfd7a86e897c17415012bf7ba1247174cd7d7f37add69adf46e7f",
+      "enteral-nutrition-route-delivery-review.json": "8766af85fa8bee94e78ec3957c76cf1a2d444f7a164c20b5fab4f86865617993",
+      "enteral-nutrition-access-safety-review.json": "3f92a254e072f908aaa54aef4da27eb70273cc228ddcb2f993acbd23b35008d5",
+      "enteral-nutrition-monitoring-refeeding-review.json": "b133dde83890554db260500dd4813d563f7f5a6ffa94e36812e021a1267e4d53",
+      "enteral-nutrition-book-safety-coverage-review.json": "7eef143c41efb5f6bd991f981da6a2d71ec3d4bf5e15bd7e3a239db391d7f6a6",
+      "enteral-nutrition-formula-selection-review.json": "3e0c811b69b1e70cbd108abb196cfdb6dcb4a0188682483198baeaa6cd740555",
+      "enteral-nutrition-book-medication-review.json": "3cba6e0d23d967be68cfc42db0f61872aa65e00db189efee8d4293635211a0e6",
+      "enteral-nutrition-medication-delivery-review.json": "18f967b06865f095ad44f19fdd6b835aa6395068e4526732cc35d772f8acfc47",
+      "enteral-nutrition-preparation-monitoring-review.json": "a4a2f1577098392d7d832ae59fdb99f094c055b060528cd0cac867d2dd5f3bae",
+      "enteral-nutrition-indications-metadata-review.json": "529d15307fb214148b57fa940c041e143e87b2b2c0f5ea30b9872962ac362a63",
+      "enteral-nutrition-clinical-metadata-review.json": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98",
+      "enteral-nutrition-final-reconciliation-review.json": "f5e7979786b18cfa7a34b4eede1bd79f25e89368bacf84f0682c66220c920600"
+    },
+    "currentQuestionHashes": {
+      "enteral-nutrition-001": "9a33d35829787209bdb83408adce5c20c57b80fe929d7f542a338efeb5b82796",
+      "enteral-nutrition-002": "858b210be616da001063b1c145d2f6eb64f4f448f3d8267093c70516b6e085c9",
+      "enteral-nutrition-003": "7547c7b52e27db962e6ff570922a2e4aa3800cbefb9626d1ebef18074cf89cbf",
+      "enteral-nutrition-004": "3d446e375e9891f843569f9d4ee835aeefd9be6d6e66bd90f255f6c8052042af",
+      "enteral-nutrition-005": "b9a7b9ea7d2521bd95a4230b91c697e651f5116884bbd410801143e2498bf68b",
+      "enteral-nutrition-006": "4cd6f295ede599465e7dc8f78c283864b695b9dd465a20ba5c87d8be2187c7b4",
+      "enteral-nutrition-007": "e583448b53cedc226494dcdf5c2cc1a73cee0acb592b57f197bf8d8344cd46b3",
+      "enteral-nutrition-008": "2c8410ba36e79467480b3c2e771a697125cd7d8ed9f6fa54400ebd7f8294e189",
+      "enteral-nutrition-009": "4f7e4b0fbdb87d5b8224b80753b3606a7d6c73707306b0f8207e20e50e2c00d1",
+      "enteral-nutrition-010": "4e7e5055c1963fcb7b9845ea5913bb43852636b8d1ba8959da781893b44e909d",
+      "enteral-nutrition-011": "9e0d92d1eb35b37a400b000691418188e6ad48feccba19c206c75bcabafe5e38",
+      "enteral-nutrition-012": "e69a64db41e3ca6e5e7c980d4ab1566b8c32c8102d341ff7aae46ed8ac6ef140",
+      "enteral-nutrition-013": "868be920d10c7eb6acd25b611119ac5856c315fda97d05afe10a5c74a864b430",
+      "enteral-nutrition-014": "e88d96f7a771c844731a444aa9f34644070abe3427349dad7d9e1d2e57cffe62",
+      "enteral-nutrition-015": "3aba66e620bdddbc72c8241ccf85aba906463a5c65319fa9692d3cdacb56d48a",
+      "enteral-nutrition-016": "b8ac325b0eef2abfa7d39d0d8b86e5a2253d02c1ed519cf12b5c800f27afc27f",
+      "enteral-nutrition-017": "b63c64922ebaf4b1fa1eeee96c073c31990313637bf35bbdc1e734b6d7cf197d",
+      "enteral-nutrition-018": "65f5a00dff71e03de64904c98e4deb6b1ef6b331f6dc1f360e823cc020ba57f0",
+      "enteral-nutrition-019": "bcbc50c7f312c910dbdac2c7897d78c57f6fcb704fb9fe37c169d01e72336478",
+      "enteral-nutrition-020": "11aa5e7649f6bd15edcf8058ccb3907b41f640b0d17d1d17e89074e4ec23c279",
+      "enteral-nutrition-021": "42df1eae02a8928b93323c6d44a07a286c4ca495930509855548c16b13ce2a26",
+      "enteral-nutrition-022": "9afd5c337028e7021745ff1d89eeb084eff4a565fe08aa96e7ec3952eb359ccb",
+      "enteral-nutrition-023": "c71b44655e946f21d47c8c0cb026dc592a82bc3abc147b5ef748e60f80194aff",
+      "enteral-nutrition-024": "4022ccf6f6a8a16ba68c13e7e6c36b67e0985e974bbcc83dde931b8611baa4ef",
+      "enteral-nutrition-025": "7785d2559f0765ab2ac147997b861e92ed103b96f7d8da9c27016706fccb68c5",
+      "enteral-nutrition-026": "c13be2232b28c196e5d6529a1c88068fd4d59a8f61079ee072170794838c3fa5",
+      "enteral-nutrition-027": "dd9c335152a95a0d902aa8e4120603af7def9df89958f8b579121b8cac9049ad",
+      "enteral-nutrition-028": "2576bf30d66cfdcb5a6dc2e502fb61ab1190bb28253fb7715b945178ea1fb7af",
+      "enteral-nutrition-029": "ad7c7de284afedb082c8db6afdeaa662116fe2bca3bf96c833a8c62f356bf0ba",
+      "enteral-nutrition-030": "32a88a89ea71b098d4420660b09e33cf56b50ef076a80ca1560a5bb25ac2f5f6",
+      "enteral-nutrition-031": "366619db7d50fe6903cd2cb6b74bd6f5601cc7ee9a9eab2e0671993691201ea7",
+      "enteral-nutrition-032": "7b1c4c838773fd7c27d2eb9c1eaeffbcd8fac49a842dec430a42b81c1ca1c1da",
+      "enteral-nutrition-033": "5f987b7f3eb1863cfb05fb0775ec58e010b92d5372ce0ccbdd09b67ef624b7fa",
+      "enteral-nutrition-034": "0f350e90c2ff6c2ee154d41beb2eb3b839c14a4a77e4b2c0c4a136d1e84bccbf",
+      "enteral-nutrition-035": "de95847d36da985f44aad9a567a671c420ce078d6f45f591a753eb8061953265",
+      "enteral-nutrition-036": "ee4db486059b77f6684934908c4c9182d721968ad3dd1cbccb48828cf773de05",
+      "enteral-nutrition-037": "526cc789538656c3feeeb1af8e987a446065dc2451ea8b9fe86f337e42759d4f",
+      "enteral-nutrition-038": "2a65e2540742fc8738eff673fe7cb2eed04d3ac3d45c6a57217fac3901c7248d",
+      "enteral-nutrition-039": "06cae8a37cbe02c3fad7cd72edc93386c60850a88be7d583c5e3dd0be4b964e5",
+      "enteral-nutrition-040": "ed3d9d842d02669d79e175ec4610f804dcd816e75cdfb4edc8b42d9c942310b8",
+      "enteral-nutrition-041": "e3f77672013c5039d445b2118abc1e4c5c986dfa909c79092567c6ffc6310b6a",
+      "enteral-nutrition-042": "3523d4d93fa35847259baabde2b08bd5508af2c11a2fadcaf40ad06e9533a9d4",
+      "enteral-nutrition-043": "31484e7f42415e519f25920aa20f960fdbe6bcf39d775381d368694db949ee6f",
+      "enteral-nutrition-044": "5ab5769a16fd2a189b30e9ffae380c34cbfb0bdebff684d12d50ecc16886484a",
+      "enteral-nutrition-045": "7abc4602a83344f64ec722ba3344ac449854f0a11f59997df6a1bab6d1250edb",
+      "enteral-nutrition-046": "0f94dfdfe92d826e694bbafd93802aad7e405c1d8c2e70ebd153d2727d8c209f",
+      "enteral-nutrition-047": "29fb04e09af0f3ea4b5489058f13acd7ebc8e60d11751e50901590e368b1d517",
+      "enteral-nutrition-048": "6561e611176d6c5ba0aae1845cf2500099795dc7c5add8f99fd9f6b76d0019cf",
+      "enteral-nutrition-049": "903d6d7fba2720db43fbba50da58f2f35fea3cd5849c24d0509f12c5fbdff93b",
+      "enteral-nutrition-050": "5b2a73d511b132ddd283336ea27bedbbe0a036b26bfa4a77524577d13d7e7605",
+      "enteral-nutrition-060": "74cc283438a2c2b86522c644f818e4c6b4892216126540f36b31d648d8256c84",
+      "enteral-nutrition-061": "8c520c2845dd38ca112e796c3bee50dfe4dd63f736c268e9448d510dbc6e3a9e",
+      "enteral-nutrition-062": "f6b438478a89e4862250271a82228f81a26b13990b33cced309cbbd6c709b12c",
+      "enteral-nutrition-063": "ce46d366350f32ebec41c6701e73457a950bee2a72bbdd38e3672ef275e1e4ef",
+      "enteral-nutrition-064": "c40d5b22c124e354d956ed6d782763e7d311f1f3b945bda966f98af0af68b20f",
+      "enteral-nutrition-065": "347b64c8461daa6d791fda90104a6c517af966964f29b3484b9544fd094284df",
+      "enteral-nutrition-066": "218f4939acb7c305eb6c8c1cdc1f36fc028dfc824837a16ac1a4280e300320a3",
+      "enteral-nutrition-067": "38cf8a6bf9d7716aef432e9193c7e130d1373e7d41a458bc8f1b461025a9e973",
+      "enteral-nutrition-068": "1c823d44ae8d15d6426c6aea360f5ad43c245192632c391036f05b4cbbf78186",
+      "enteral-nutrition-069": "6f480e9abe732aaeff6a2427a68197de6a6df37611e76cfaabd615babdfe2ec6",
+      "enteral-nutrition-070": "9ac6b8517641fcce7834ca21e0b4340a96218462eedfd4004f5465323cf21aa0",
+      "enteral-nutrition-071": "2f5f5c95b981098720aa985e6bcf604ce4e6dcd18dde9fb755de77c88fe69925",
+      "enteral-nutrition-072": "8224adb88a4ba3aa3a4280bcb39ee5595ab6622aeca319be84bf539f4b9de96b",
+      "enteral-nutrition-073": "59a46429bd500f9dcf4bc143cc122d485121efa03512ae68fc0284ebebdb780d",
+      "enteral-nutrition-074": "8ebe6680de86b62987ac45025385c211bd8a1dbaa26dcde31e81ce78d16c7f54",
+      "enteral-nutrition-075": "9522640a124044fc284f367753d8631126084a3436e88d5d5fa6153885365df1",
+      "enteral-nutrition-076": "04cd454ae5b34601fe0faf49e75246592cc83897a07598a803a23e68bd7a224e",
+      "enteral-nutrition-077": "d019cb50e5bcaf0dd37b3060b441319c2191afeae5b63998df8ab8659a9a05a8",
+      "enteral-nutrition-078": "f9a9a1e86e3ee4e634993be398b4133762a09d7acd600b9eef455948e00385e1",
+      "enteral-nutrition-079": "6509d78c5feac5c5482cff411f2c123b33e8913c169bfc76822016548368732e",
+      "enteral-nutrition-080": "8a3abf4fcf2ba879d34297fea1fc620454ed3077f75e5500dc032035e209cb02",
+      "enteral-nutrition-081": "dd04277efdfc1259b69330d08620f2bafabea2aeb8a8bc15bc8fa3d3c7ae53ff",
+      "enteral-nutrition-082": "ff38e930cfd365f875b1d740a97e29f098c3056c2bbeb22a0b365ceebd6a89bd",
+      "enteral-nutrition-083": "0aa2e2f3c7d9c00e32c528231aca390bef1b81293b19b775969df10d8789f94e",
+      "enteral-nutrition-084": "6c12e325bd5ecdff7675b81c235b1490372c3bd5b155f00c786d8c45b1a0d299",
+      "enteral-nutrition-085": "e9f6e5fd2b0d180b3b651567ca271b5aa85335677acc9853525671678659284b",
+      "enteral-nutrition-086": "0acea3683f102fca08ec896fb0745ce258cc9dfda4e2532eabb3f07f34e14f4e",
+      "enteral-nutrition-087": "e6395fdeb9d6247fabe23177ef5d1ca085c69055ffae7cf09ae22ebb75b2aaa6",
+      "enteral-nutrition-088": "b771b616b8ac8871d5bb5929c7624b92f7e11e235cb4da16a8d48fc9a2971167",
+      "enteral-nutrition-089": "b275a03b33207f40527ebabb99e5e850bb2761c8bf4b9a9816447737a2ba9192",
+      "enteral-nutrition-090": "03a738eccc3351b6990d2ad93e4fc1df601050ce0900866541712b5bab601519",
+      "enteral-nutrition-091": "5c00e4556ec94171c3506f31c960ead39beaa35b6ef475a80af92c14986c8df2",
+      "enteral-nutrition-092": "6c2b12b20667bf59bce4568383dd4f60730ebf5c7c0c4d30be45f2a7c0e55b8e",
+      "enteral-nutrition-093": "bd9457fae7f65b6f91fad07d07909015d64f09dbdb0b3464aaf96b65f996a9ab",
+      "enteral-nutrition-094": "beeded57f3bf559a71cf4aa6193c2748ddaa1a7f790a8dcf1d376866b692d53c",
+      "enteral-nutrition-095": "bf370d7db0bc526b63ca7230ca9b4cc15bdfc511c38e93f1acdfdc6d9614a983",
+      "enteral-nutrition-096": "95abc05724df33f3dca92f2bc59c52f65a485a7e3188cd39b434765a72728772",
+      "enteral-nutrition-097": "7636132844c6e71e1fb61c04893c61ced44ee9efc2c2fbe68ce110ed691b71f0",
+      "enteral-nutrition-098": "e266355b71584213eb334f0d82f9ccccc9875accd6c8940fa0efbc35bf9683d9",
+      "enteral-nutrition-099": "57d78e8586de6f92560824c8c78b6dcacd1604d04639eb6cb47269bd74ccf651",
+      "enteral-nutrition-100": "ff445f38fccdaa691b6a8f8a02d441dc9309d2ddd68c52637969c1641670b4f5",
+      "enteral-nutrition-101": "a242ec737199052b3289c9a0203fa5f6832e490e17f4c0c140628abd98e1f031",
+      "enteral-nutrition-102": "d585977ab495d05f89dd5be3cf3c7d186a743f426cf748069a0928768cc70057",
+      "enteral-nutrition-103": "b69bc6ec7cf57124536013d72296cf6560917187d605fb7bd27b433692f7229d",
+      "enteral-nutrition-104": "37322226b96225993c1ce0773e78faafca4d111e1ea4370901196f5f7299e839",
+      "enteral-nutrition-105": "86ee9179baf6f6c80a93ea19b0389b72cad5fa2aa22163ddbdbf66f02c348a10",
+      "enteral-nutrition-106": "fc0c9fd00ed90a08bf6dbaa974a66b81d1c82687696f2a25fcbad67720dd6645",
+      "enteral-nutrition-107": "d7c69d07351825decd82f828e01f4845039f4dd565bfd7acd9417557af4bb0d5",
+      "enteral-nutrition-108": "7d80d7c7576309dbf58409143cb98d9e29f75d4a0fc9525930cf1fb24c7f23d0",
+      "enteral-nutrition-109": "ddb448f538d37ea40493f0e1aad45d1f0250f3ed2b22908e2f7f278f4a0bd212",
+      "enteral-nutrition-110": "5f3c4aef3937de2f0938dd633ab29087dfe29b16a78310a7719169687b01deb1",
+      "enteral-nutrition-111": "89ef3eb843a66f79aad084d4992af3fcc70c42fad2c14c8fa9fee97f32c77bc7",
+      "enteral-nutrition-112": "650979c0b9e60329d88ddff35408fad8c32aa6799f4bcabf788a4b9201f6f14e",
+      "enteral-nutrition-113": "70729808daf9b3d4b1a1e23b796d384f294ccea60828e889bdd2c1be027622f5",
+      "enteral-nutrition-114": "587b353c446fcc32854414c70b69bd2bbcfef99910952be13e323ffe76fb22d2",
+      "enteral-nutrition-115": "9821d89b99c14a68607845b75f027c3e711f28542d584ed6c9e7555985f31db5",
+      "enteral-nutrition-116": "7e68441c6003d22c0fd03916f0df35a6841ab1a095effa01270ff010c729a4b9",
+      "enteral-nutrition-117": "59f519ad3f59a423a463eac6fbc5190e841606278f566d8a8aa0fe1a5ddc9faf"
+    },
+    "currentBodyHashes": [
+      {
+        "lesson": "enteral-decision",
+        "heading": "Prefer the gut when it is usable",
+        "objectSha256": "6aa59b91e0ebfd4e39fb0038394d0076ce70532de7bc5f9f1cb14ed76986da8b"
+      },
+      {
+        "lesson": "enteral-decision",
+        "heading": "Connect the route to its advantages",
+        "objectSha256": "6277073bfcda06ef83aff35cb8425841bf18c0dca073ddf0fad60fdab043b04b"
+      },
+      {
+        "lesson": "enteral-decision",
+        "heading": "Recognize the patient who needs support",
+        "objectSha256": "56b4a5d2d3fd74ef2b9671a7a414a1287c400d5804fed0fd256f1385841dce2f"
+      },
+      {
+        "lesson": "enteral-decision",
+        "heading": "Do not feed through active instability",
+        "objectSha256": "da6f90dd3423df116065b7dbedd62dd70365c30882166d054175aace7714698e"
+      },
+      {
+        "lesson": "enteral-decision",
+        "heading": "Use early feeding with clinical judgment",
+        "objectSha256": "0e760115ac3e15c1a92e0bc69a66636e26126e7eaa62d89f71a88aad611fdbce"
+      },
+      {
+        "lesson": "access-route",
+        "heading": "Name where the tube ends",
+        "objectSha256": "8fea58d8f91cf98c8f2977118e71c8a988a44c6bb5c20aa82a502cb8ece8e6fa"
+      },
+      {
+        "lesson": "access-route",
+        "heading": "Separate duration from destination",
+        "objectSha256": "74f64f352a8e912e7134f1a26b5d42a638918e9d596d2586cfac4cba10b1d56e"
+      },
+      {
+        "lesson": "access-route",
+        "heading": "Start with the stomach when appropriate",
+        "objectSha256": "48ce916a544cace3214c9ae972005e7db7c311d1b94087eb7ea87b7f20c31061"
+      },
+      {
+        "lesson": "access-route",
+        "heading": "Move beyond the pylorus for a reason",
+        "objectSha256": "05ae2cbcc8ed4d2348ade634ddd00c80afbb37fd07259ef93952b5a256c922fc"
+      },
+      {
+        "lesson": "access-route",
+        "heading": "Confirm before first use",
+        "objectSha256": "33552aff66bc4bc997966b9d970f64928210263e41144c4a48500d38459a0650"
+      },
+      {
+        "lesson": "access-route",
+        "heading": "Prevent wrong-route connections",
+        "objectSha256": "f29670fea7efc8a906884a97bfa9ed55331b06078567524ba21636e80560bcd5"
+      },
+      {
+        "lesson": "delivery-prescription",
+        "heading": "Match method to access and tolerance",
+        "objectSha256": "98e37f7ddd7f70e23c76a79a0ad10e26669912bb6271e24ce6edb2b5394ab101"
+      },
+      {
+        "lesson": "delivery-prescription",
+        "heading": "Prescribe the full system",
+        "objectSha256": "607c4359fb32f510a339589f893c41df2f7e47a330bb5dfe2185173a17e75c26"
+      },
+      {
+        "lesson": "delivery-prescription",
+        "heading": "State how a calculated rate is rounded",
+        "objectSha256": "68880cad0430fb4b4ed54b2b5a55ddb246295aca0d001d748afdbf1306a59e64"
+      },
+      {
+        "lesson": "delivery-prescription",
+        "heading": "Advance according to risk",
+        "objectSha256": "970e390cc945e442f1db885e3669a64774d89372895efeb17244f32680bd9c7d"
+      },
+      {
+        "lesson": "delivery-prescription",
+        "heading": "Manage interruptions deliberately",
+        "objectSha256": "36e7e9d566e9b8625e21fe382cc25ad2a608726714bd6da7df0765d9896561b7"
+      },
+      {
+        "lesson": "formula-selection",
+        "heading": "Read energy from the stated formula label",
+        "objectSha256": "21ebc94c24f4c33a417c8e6a5eead8cdc34d216df556b4c8af22f880d907afe8"
+      },
+      {
+        "lesson": "formula-selection",
+        "heading": "Scale nutrients to the amount actually received",
+        "objectSha256": "ef56ed7ebea8eba33ee6dd495c549aff15f293415e54f169128a4e79f41f4372"
+      },
+      {
+        "lesson": "formula-selection",
+        "heading": "Use standard formulas when digestion works",
+        "objectSha256": "06b89c15674280601f85788b538a8499053e1feeb14e702a24266e5f2b1ef0a8"
+      },
+      {
+        "lesson": "formula-selection",
+        "heading": "Use density to solve a volume problem",
+        "objectSha256": "91cf2f810f1ff4db66db61ea2e11eb89e27d0571a3f0c5d36f2978ab0b6d2766"
+      },
+      {
+        "lesson": "formula-selection",
+        "heading": "Treat fiber and specialty claims carefully",
+        "objectSha256": "00bfe79fe4767635af2252e3b16d632b678e6fc65c86f16b5e693958010c62e5"
+      },
+      {
+        "lesson": "formula-selection",
+        "heading": "Build the water prescription",
+        "objectSha256": "2db765675452c9c9a0091855b6318ed30b7776cfbc6634cf7259641b38c899c2"
+      },
+      {
+        "lesson": "formula-selection",
+        "heading": "Account for each water source once",
+        "objectSha256": "17e3f802bfd9e1d0c481a5701da263a6c5942964db5cf58944d6fcddca57e008"
+      },
+      {
+        "lesson": "formula-selection",
+        "heading": "Reassess hydration signals in context",
+        "objectSha256": "db85e7696bdf46238fc23ede53ae61d8c8a43722e0d98a86e85cc7c80a2ce68d"
+      },
+      {
+        "lesson": "medication-administration",
+        "heading": "Review the dosage form before altering it",
+        "objectSha256": "d4b8ec12b6330b653c42e59fc560120989c2fa6e71a2f5b067a66864932abbb8"
+      },
+      {
+        "lesson": "medication-administration",
+        "heading": "Check liquids as carefully as tablets",
+        "objectSha256": "cdc036d366703fac44dc12f098ed7d4ba684c49e48b6ab8c91d06527f31b6d49"
+      },
+      {
+        "lesson": "medication-administration",
+        "heading": "Separate medications from formula and each other",
+        "objectSha256": "1fb8fb66a89a7d146af9770a3b4b9351302b65f54a3e0f38d1edd8d4dd49b68b"
+      },
+      {
+        "lesson": "medication-administration",
+        "heading": "Manage interactions by mechanism",
+        "objectSha256": "c5e24886c78cc9021cf6a0b51d5d96ea2ad297f9c16094401b852534cd8e5a1d"
+      },
+      {
+        "lesson": "medication-administration",
+        "heading": "Distinguish ciprofloxacin formulations",
+        "objectSha256": "aa24e2fba18ace2d09c4bf992554b40f2ee0e97c81aa80a3f86d09788c69ab7f"
+      },
+      {
+        "lesson": "medication-administration",
+        "heading": "Reconcile warfarin with the feeding plan",
+        "objectSha256": "ee5eff019c961b9447278aca127ac6721b3e6be5b6a1fd75ec80cff072af24a6"
+      },
+      {
+        "lesson": "medication-administration",
+        "heading": "Monitor phenytoin when feeding changes",
+        "objectSha256": "44c82b745a7d014f67b2d51594935d528fd2f536a1eb13e23021d9488c571b3c"
+      },
+      {
+        "lesson": "medication-administration",
+        "heading": "Respect the tube tip",
+        "objectSha256": "71ef56c5d27e85a6db7179d66b59e6329efc1422193d3d47f66f6dcb43e9e955"
+      },
+      {
+        "lesson": "monitoring-complications",
+        "heading": "Prevent aspiration with a bundle",
+        "objectSha256": "6e140e76778e48e17a2a45fb1cb004ae64384a60f1de6e95845b6b81025a0e04"
+      },
+      {
+        "lesson": "monitoring-complications",
+        "heading": "Use gastric residuals selectively",
+        "objectSha256": "2a2d41b9c92e289ab8d90e95e1aefe7fccee7ab798527319f1f8daa0433940ad"
+      },
+      {
+        "lesson": "monitoring-complications",
+        "heading": "Find the cause of diarrhea and clogging",
+        "objectSha256": "3afca096bb9160be4a7033b132fd3f0d25fb800cf05a392e0bc5274611b9d8f6"
+      },
+      {
+        "lesson": "monitoring-complications",
+        "heading": "Monitor delivery and metabolic safety",
+        "objectSha256": "3da9b5e52796e53e75a13fe6338dccfbaa2f6d20587e40ba7f72f6bf846f6899"
+      },
+      {
+        "lesson": "formula-selection",
+        "heading": "Distinguish renal solute load from formula water",
+        "objectSha256": "c2fe4be616e4dd28cd4503028e05c1171e5e591b6e5e8df75646da9d914fc36a"
+      }
+    ],
+    "metadataStatementReview": {
+      "total": 79,
+      "verified": 79,
+      "pending": 0,
+      "inventory": [
+        {
+          "path": "title",
+          "value": "Enteral Nutrition",
+          "status": "retained source-verified",
+          "objectSha256": "f8e20f67577de803d2e873618b7ba4b9c641c9abd30098f70058820199fd044d",
+          "sourceEvidence": [
+            {
+              "file": "enteral-nutrition-clinical-metadata-review.json",
+              "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+            }
+          ]
+        },
+        {
+          "path": "source",
+          "value": "Clinical nutrition support",
+          "status": "retained source-verified",
+          "objectSha256": "b3d1cf71dd1f8190df6c101230219680ebc1356899c2c643dd0846eedbbb5c53",
+          "sourceEvidence": [
+            {
+              "file": "enteral-nutrition-clinical-metadata-review.json",
+              "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+            }
+          ]
+        },
+        {
+          "path": "description",
+          "value": "Translate gastrointestinal function, access, formula composition, medication handling, and monitoring into a safe enteral nutrition plan.",
+          "status": "retained source-verified",
+          "objectSha256": "66afc86d84fe766c11604531e80ea88b6569c6240f3ad9e4256a37f594722fa0",
+          "sourceEvidence": [
+            {
+              "file": "enteral-nutrition-clinical-metadata-review.json",
+              "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+            }
+          ]
+        },
+        {
+          "path": "topics[0]",
+          "value": "Indications and timing",
+          "status": "retained source-verified",
+          "objectSha256": "251f1547c301d739b122027f8e1387146e47d9672ffb4d1ba9c34cc33a0ceb19",
+          "sourceEvidence": [
+            {
+              "file": "enteral-nutrition-clinical-metadata-review.json",
+              "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+            }
+          ]
+        },
+        {
+          "path": "topics[1]",
+          "value": "Access and delivery",
+          "status": "retained source-verified",
+          "objectSha256": "2a81651f067d856bc166de45a18709b44156e6bc7bb4940b1531840f7cb40fa3",
+          "sourceEvidence": [
+            {
+              "file": "enteral-nutrition-clinical-metadata-review.json",
+              "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+            }
+          ]
+        },
+        {
+          "path": "topics[2]",
+          "value": "Formula selection",
+          "status": "retained source-verified",
+          "objectSha256": "dcf4949a675350bd9943d9baf28f4a83d87290e17dcacb8ef456f3e2e8198ed9",
+          "sourceEvidence": [
+            {
+              "file": "enteral-nutrition-clinical-metadata-review.json",
+              "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+            }
+          ]
+        },
+        {
+          "path": "topics[3]",
+          "value": "Medication safety",
+          "status": "retained source-verified",
+          "objectSha256": "ffaa3667ce33d90d795a2b029cbf0550039424dd04ead1ab964e654d9a696f3e",
+          "sourceEvidence": [
+            {
+              "file": "enteral-nutrition-clinical-metadata-review.json",
+              "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+            }
+          ]
+        },
+        {
+          "path": "topics[4]",
+          "value": "Monitoring and complications",
+          "status": "retained source-verified",
+          "objectSha256": "373f66dc694381f4c356977240ce956172fdd334f82f3420699ccce42c125b62",
+          "sourceEvidence": [
+            {
+              "file": "enteral-nutrition-clinical-metadata-review.json",
+              "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+            }
+          ]
+        },
+        {
+          "path": "outcomes[0]",
+          "value": "Determine when enteral nutrition is appropriate and when feeding should be delayed or withheld.",
+          "status": "retained source-verified",
+          "objectSha256": "1f70373745baa19fd95c1b7d594f62232074259ae6333245c7f30f4ac805ee5a",
+          "sourceEvidence": [
+            {
+              "file": "enteral-nutrition-clinical-metadata-review.json",
+              "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+            }
+          ]
+        },
+        {
+          "path": "outcomes[1]",
+          "value": "Select an access site and administration method that match duration, gastric function, aspiration risk, and patient goals.",
+          "status": "retained source-verified",
+          "objectSha256": "c69399a236210ea717d790d89aeea379ce82290b3a91c6483ed30001a720e93c",
+          "sourceEvidence": [
+            {
+              "file": "enteral-nutrition-clinical-metadata-review.json",
+              "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+            }
+          ]
+        },
+        {
+          "path": "outcomes[2]",
+          "value": "Compare formula composition and calculate delivery, free water, and supplemental flush requirements.",
+          "status": "retained source-verified",
+          "objectSha256": "f4fc01a19317dd58babe50a95b662b79376b753c429e8a1cc1bae664cb44fb47",
+          "sourceEvidence": [
+            {
+              "file": "enteral-nutrition-clinical-metadata-review.json",
+              "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+            }
+          ]
+        },
+        {
+          "path": "outcomes[3]",
+          "value": "Administer medications through enteral access without compromising the drug, formula, or tube.",
+          "status": "retained source-verified",
+          "objectSha256": "5b3aa80e6e06a4e607e85c3fc204be1d8c26384309c07626e302db8cdeebe0f4",
+          "sourceEvidence": [
+            {
+              "file": "enteral-nutrition-clinical-metadata-review.json",
+              "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+            }
+          ]
+        },
+        {
+          "path": "outcomes[4]",
+          "value": "Recognize signs that warrant assessment for intolerance, refeeding risk, aspiration, contamination, or mechanical complications.",
+          "status": "retained source-verified",
+          "objectSha256": "15b8ce1298742084c8578342d3c1c08cfdf9a0594d9570dcd5e34d7797bc7691",
+          "sourceEvidence": [
+            {
+              "file": "enteral-nutrition-clinical-metadata-review.json",
+              "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+            }
+          ]
+        },
+        {
+          "path": "submodules.enteral-decision.title",
+          "value": "The Enteral Decision",
+          "status": "retained source-verified",
+          "objectSha256": "4403006383e2780bec958022b3ef855f772995760d4de7bff37461040c5fcaa3",
+          "sourceEvidence": [
+            {
+              "file": "enteral-nutrition-clinical-metadata-review.json",
+              "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+            }
+          ]
+        },
+        {
+          "path": "submodules.enteral-decision.summary",
+          "value": "Use the gastrointestinal tract when it can safely receive and absorb nutrients, but separate a functioning gut from a patient who is not yet adequately resuscitated.",
+          "status": "retained source-verified",
+          "objectSha256": "36a02105990d0e590cb2283992191af4d1d124209bcdad75808f0c55c4b89483",
+          "sourceEvidence": [
+            {
+              "file": "enteral-nutrition-clinical-metadata-review.json",
+              "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+            }
+          ]
+        },
+        {
+          "path": "submodules.enteral-decision.concepts[0]",
+          "value": "Indications and goals",
+          "status": "retained source-verified",
+          "objectSha256": "3ce73ae62b166b226e0ba6d232199a3e16e8e5610ce5f59284d949cf674392e2",
+          "sourceEvidence": [
+            {
+              "file": "enteral-nutrition-clinical-metadata-review.json",
+              "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+            }
+          ]
+        },
+        {
+          "path": "submodules.enteral-decision.concepts[1]",
+          "value": "Hemodynamic stability",
+          "status": "retained source-verified",
+          "objectSha256": "d05b8c8832f443d5b3e80d906c080ebebea4efe9c994b86aadb4d4c0a6ea6f11",
+          "sourceEvidence": [
+            {
+              "file": "enteral-nutrition-clinical-metadata-review.json",
+              "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+            }
+          ]
+        },
+        {
+          "path": "submodules.enteral-decision.concepts[2]",
+          "value": "Contraindications",
+          "status": "retained source-verified",
+          "objectSha256": "cb71b7885a0686848760cf96fc7de0d1b5452782c4f4e5f5e2f6fd30dd564230",
+          "sourceEvidence": [
+            {
+              "file": "enteral-nutrition-clinical-metadata-review.json",
+              "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+            }
+          ]
+        },
+        {
+          "path": "submodules.enteral-decision.concepts[3]",
+          "value": "Early critical care feeding",
+          "status": "retained source-verified",
+          "objectSha256": "3be2b97f41470edc3bfeb09540c4847891e12451d1231bcd953277fc98adbec7",
+          "sourceEvidence": [
+            {
+              "file": "enteral-nutrition-clinical-metadata-review.json",
+              "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+            }
+          ]
+        },
+        {
+          "path": "submodules.enteral-decision.application",
+          "value": "Before writing a feeding order, state why oral intake is inadequate, whether the gut is usable, whether perfusion is adequate, and what clinical outcome the therapy should support.",
+          "status": "retained source-verified",
+          "objectSha256": "ccdab0d1dced93f09d24c331c0f1bcb431dfcd187bbf7fc08515e0f8a853c709",
+          "sourceEvidence": [
+            {
+              "file": "enteral-nutrition-clinical-metadata-review.json",
+              "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+            }
+          ]
+        },
+        {
+          "path": "submodules.enteral-decision.keyPoints[0]",
+          "value": "A functional, safe gut supports enteral nutrition; compare routes within the applicable clinical setting.",
+          "status": "retained source-verified",
+          "objectSha256": "66d6f1a18c92c1e37c39b29274a18c0a25c268d4ea0ca4dbfa996f26883f12c6",
+          "sourceEvidence": [
+            {
+              "file": "enteral-nutrition-clinical-metadata-review.json",
+              "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+            }
+          ]
+        },
+        {
+          "path": "submodules.enteral-decision.keyPoints[1]",
+          "value": "Nutrition risk and expected inadequacy guide initiation.",
+          "status": "retained source-verified",
+          "objectSha256": "808e7dbad0d0c12e4f3442ef2cd4bbc03231e9aa736ed2256103017c74e72559",
+          "sourceEvidence": [
+            {
+              "file": "enteral-nutrition-clinical-metadata-review.json",
+              "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+            }
+          ]
+        },
+        {
+          "path": "submodules.enteral-decision.keyPoints[2]",
+          "value": "Withhold feeding for suspected bowel ischemia, complete intestinal obstruction, or hemodynamic instability; reassess before initiation or resumption.",
+          "status": "corrected source-verified",
+          "objectSha256": "81acc935b850f884ea858b148670af50d99a0534add55b9e1abcc44bc8cf30b1",
+          "sourceEvidence": [
+            {
+              "file": "enteral-nutrition-clinical-metadata-review.json",
+              "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+            }
+          ]
+        },
+        {
+          "path": "submodules.enteral-decision.keyPoints[3]",
+          "value": "Early feeding is a monitored strategy, not an automatic full-rate order.",
+          "status": "retained source-verified",
+          "objectSha256": "6c68053b9c220703f335551c0a3868bacee16bab61c4271ac6a8f1df94558450",
+          "sourceEvidence": [
+            {
+              "file": "enteral-nutrition-clinical-metadata-review.json",
+              "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+            }
+          ]
+        },
+        {
+          "path": "submodules.access-route.title",
+          "value": "Access and Route Selection",
+          "status": "retained source-verified",
+          "objectSha256": "7448e3d2156fa190915d437f5a52b6af4b1f2e8d1789d496ebd9d31ad2523d8c",
+          "sourceEvidence": [
+            {
+              "file": "enteral-nutrition-clinical-metadata-review.json",
+              "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+            }
+          ]
+        },
+        {
+          "path": "submodules.access-route.summary",
+          "value": "Access is chosen by expected duration, anatomy, gastric emptying, aspiration risk, procedural burden, and the therapies that must pass through the tube.",
+          "status": "retained source-verified",
+          "objectSha256": "648fae5fee64e68051c2d54819029c9ac0c2ad3d09c5754bff97f9210c502715",
+          "sourceEvidence": [
+            {
+              "file": "enteral-nutrition-clinical-metadata-review.json",
+              "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+            }
+          ]
+        },
+        {
+          "path": "submodules.access-route.concepts[0]",
+          "value": "Gastric versus postpyloric",
+          "status": "retained source-verified",
+          "objectSha256": "59cf510bf3e07d5c753c948c9a5a2ac919420e0e3a766c6a6f820758a8cdcebf",
+          "sourceEvidence": [
+            {
+              "file": "enteral-nutrition-clinical-metadata-review.json",
+              "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+            }
+          ]
+        },
+        {
+          "path": "submodules.access-route.concepts[1]",
+          "value": "Nasal versus percutaneous",
+          "status": "retained source-verified",
+          "objectSha256": "0c727a568d5faf356c16d0395b57861fdd90918fea25db4c87b21c0406d99317",
+          "sourceEvidence": [
+            {
+              "file": "enteral-nutrition-clinical-metadata-review.json",
+              "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+            }
+          ]
+        },
+        {
+          "path": "submodules.access-route.concepts[2]",
+          "value": "Placement confirmation",
+          "status": "retained source-verified",
+          "objectSha256": "8e419b02d4b4ad8a5a3d743c4d1918b31810089bff0bcf8b6fe99e14386793ab",
+          "sourceEvidence": [
+            {
+              "file": "enteral-nutrition-clinical-metadata-review.json",
+              "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+            }
+          ]
+        },
+        {
+          "path": "submodules.access-route.concepts[3]",
+          "value": "ENFit safety",
+          "status": "retained source-verified",
+          "objectSha256": "11c81fca612b4042f42bf6198a5d55e6cc423ec8d6a0d5e5fcd65abe308c3761",
+          "sourceEvidence": [
+            {
+              "file": "enteral-nutrition-clinical-metadata-review.json",
+              "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+            }
+          ]
+        },
+        {
+          "path": "submodules.access-route.application",
+          "value": "Choose the least invasive route that can reliably deliver the prescribed therapy, then build a placement, securement, skin care, and reassessment plan around it.",
+          "status": "retained source-verified",
+          "objectSha256": "3267df73f9ee8b9095fbf446e74c4feb5fda77ef223d8cd7fa9232a3e69a421f",
+          "sourceEvidence": [
+            {
+              "file": "enteral-nutrition-clinical-metadata-review.json",
+              "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+            }
+          ]
+        },
+        {
+          "path": "submodules.access-route.keyPoints[0]",
+          "value": "Gastric access permits bolus, intermittent, or continuous feeding when function, tolerance, and aspiration risk allow.",
+          "status": "corrected source-verified",
+          "objectSha256": "9dfc8586e8808ceec26ecf5ed7ace5d486cd999eba013bd8b5535d2c77489e57",
+          "sourceEvidence": [
+            {
+              "file": "enteral-nutrition-clinical-metadata-review.json",
+              "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+            }
+          ]
+        },
+        {
+          "path": "submodules.access-route.keyPoints[1]",
+          "value": "Postpyloric access is selected for a clinical reason, not by habit.",
+          "status": "retained source-verified",
+          "objectSha256": "60604933582d574ebe368c7b43003429bb6d21cea17651db0fb16aa9090bebfa",
+          "sourceEvidence": [
+            {
+              "file": "enteral-nutrition-clinical-metadata-review.json",
+              "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+            }
+          ]
+        },
+        {
+          "path": "submodules.access-route.keyPoints[2]",
+          "value": "Confirm initial placement before use and reassess possible migration.",
+          "status": "retained source-verified",
+          "objectSha256": "5dd993d7c6a1d803b1463d9edf8c967ec1802a755e30eb1e6af4bd223f44f124",
+          "sourceEvidence": [
+            {
+              "file": "enteral-nutrition-clinical-metadata-review.json",
+              "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+            }
+          ]
+        },
+        {
+          "path": "submodules.access-route.keyPoints[3]",
+          "value": "Use enteral-specific connectors to reduce the risk of wrong-route connections.",
+          "status": "corrected source-verified",
+          "objectSha256": "1c9c2ce597ce14eeca7cb6c3ca5c7ae1b251bd7be5df7dc537cd46f5ea9bf122",
+          "sourceEvidence": [
+            {
+              "file": "enteral-nutrition-clinical-metadata-review.json",
+              "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+            }
+          ]
+        },
+        {
+          "path": "submodules.delivery-prescription.title",
+          "value": "Delivery and the Feeding Prescription",
+          "status": "retained source-verified",
+          "objectSha256": "45c74a18eeaf8c201249ac0c1152870cddd88253648a1cec1bbe3011a602abde",
+          "sourceEvidence": [
+            {
+              "file": "enteral-nutrition-clinical-metadata-review.json",
+              "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+            }
+          ]
+        },
+        {
+          "path": "submodules.delivery-prescription.summary",
+          "value": "The prescription links a daily nutrient and fluid target to a formula, route, rate, schedule, flush plan, and advancement strategy.",
+          "status": "retained source-verified",
+          "objectSha256": "c3d99b513de1ba64c5afeb8106dc5a0f2c2e551060d6a2b2fab4171c9711f9a3",
+          "sourceEvidence": [
+            {
+              "file": "enteral-nutrition-clinical-metadata-review.json",
+              "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+            }
+          ]
+        },
+        {
+          "path": "submodules.delivery-prescription.concepts[0]",
+          "value": "Bolus, intermittent, and continuous delivery",
+          "status": "retained source-verified",
+          "objectSha256": "b506a78ad3169fa23e94c16429c860adb1efd5d29192c5ccd1e046d29af8f4b5",
+          "sourceEvidence": [
+            {
+              "file": "enteral-nutrition-clinical-metadata-review.json",
+              "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+            }
+          ]
+        },
+        {
+          "path": "submodules.delivery-prescription.concepts[1]",
+          "value": "Daily volume targets",
+          "status": "retained source-verified",
+          "objectSha256": "f3929223c85e321eca68bcfc3ec1969dc05f3bb2f81bb9fd7f2ab895d54c9a96",
+          "sourceEvidence": [
+            {
+              "file": "enteral-nutrition-clinical-metadata-review.json",
+              "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+            }
+          ]
+        },
+        {
+          "path": "submodules.delivery-prescription.concepts[2]",
+          "value": "Rate calculations",
+          "status": "retained source-verified",
+          "objectSha256": "9fd0f852ee320c391b770da361ec81831d9e3e8dec6101ee078961a51644ba29",
+          "sourceEvidence": [
+            {
+              "file": "enteral-nutrition-clinical-metadata-review.json",
+              "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+            }
+          ]
+        },
+        {
+          "path": "submodules.delivery-prescription.concepts[3]",
+          "value": "Advancement and interruptions",
+          "status": "retained source-verified",
+          "objectSha256": "6bc622132c072aced3c834bea814d170fc40a996db5d4050f68a4873d4fb3004",
+          "sourceEvidence": [
+            {
+              "file": "enteral-nutrition-clinical-metadata-review.json",
+              "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+            }
+          ]
+        },
+        {
+          "path": "submodules.delivery-prescription.application",
+          "value": "Every order should make the intended daily volume visible. Calculate what will actually be delivered after holds, procedures, medication windows, and pump downtime.",
+          "status": "retained source-verified",
+          "objectSha256": "00a35b025d4bf5b4462fe1d799889a56a7f82023e6e9960fd253bc52478dc658",
+          "sourceEvidence": [
+            {
+              "file": "enteral-nutrition-clinical-metadata-review.json",
+              "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+            }
+          ]
+        },
+        {
+          "path": "submodules.delivery-prescription.keyPoints[0]",
+          "value": "Bolus feeding is generally a gastric strategy.",
+          "status": "retained source-verified",
+          "objectSha256": "162d4865d0a131b6ad6b76cc7231bb7974a17989aa2b967e5e9cea18215ef5e9",
+          "sourceEvidence": [
+            {
+              "file": "enteral-nutrition-clinical-metadata-review.json",
+              "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+            }
+          ]
+        },
+        {
+          "path": "submodules.delivery-prescription.keyPoints[1]",
+          "value": "Rate multiplied by hours equals delivered volume.",
+          "status": "retained source-verified",
+          "objectSha256": "8e12cc00173df1ad625c63b26cd61772fde087cec99b8e6d9014d3238f3f5090",
+          "sourceEvidence": [
+            {
+              "file": "enteral-nutrition-clinical-metadata-review.json",
+              "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+            }
+          ]
+        },
+        {
+          "path": "submodules.delivery-prescription.keyPoints[2]",
+          "value": "Advancement follows tolerance and refeeding risk.",
+          "status": "retained source-verified",
+          "objectSha256": "270d4c59d1e44c79c717fbea63409c5788ec688cd4bdd3237eabbf1b491519fb",
+          "sourceEvidence": [
+            {
+              "file": "enteral-nutrition-clinical-metadata-review.json",
+              "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+            }
+          ]
+        },
+        {
+          "path": "submodules.delivery-prescription.keyPoints[3]",
+          "value": "Track prescribed volume against actual delivery.",
+          "status": "retained source-verified",
+          "objectSha256": "ae94209d6276f2ca28625507c8f4288c32268ef78d60819fba62a33e3b00e4fe",
+          "sourceEvidence": [
+            {
+              "file": "enteral-nutrition-clinical-metadata-review.json",
+              "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+            }
+          ]
+        },
+        {
+          "path": "submodules.formula-selection.title",
+          "value": "Formula Selection and Hydration",
+          "status": "retained source-verified",
+          "objectSha256": "75490b8e44681344c26b5da6d3cce052445835d819d986b950edfe70521c6d4d",
+          "sourceEvidence": [
+            {
+              "file": "enteral-nutrition-clinical-metadata-review.json",
+              "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+            }
+          ]
+        },
+        {
+          "path": "submodules.formula-selection.summary",
+          "value": "Match formula composition to nutrient, volume, digestion, absorption, electrolyte, and tolerance needs; greater complexity does not establish greater benefit.",
+          "status": "retained source-verified",
+          "objectSha256": "8280c45c2878ea990cfd2429be9f96bac446eeee43b21d449aa81f3a962702c8",
+          "sourceEvidence": [
+            {
+              "file": "enteral-nutrition-clinical-metadata-review.json",
+              "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+            }
+          ]
+        },
+        {
+          "path": "submodules.formula-selection.concepts[0]",
+          "value": "Polymeric and peptide-based formulas",
+          "status": "retained source-verified",
+          "objectSha256": "a53977c0ffd7d3d7a79728477d2a7c7f3a3ccc042d969c8f4b566764b7ab036e",
+          "sourceEvidence": [
+            {
+              "file": "enteral-nutrition-clinical-metadata-review.json",
+              "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+            }
+          ]
+        },
+        {
+          "path": "submodules.formula-selection.concepts[1]",
+          "value": "Caloric density",
+          "status": "retained source-verified",
+          "objectSha256": "327c36456e22d84eb0297d51680991fe3cda9ff547ded63b996d8698d148d166",
+          "sourceEvidence": [
+            {
+              "file": "enteral-nutrition-clinical-metadata-review.json",
+              "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+            }
+          ]
+        },
+        {
+          "path": "submodules.formula-selection.concepts[2]",
+          "value": "Fiber and disease-specific products",
+          "status": "retained source-verified",
+          "objectSha256": "f70171fb90b6558b938dbde9539b958d4dd9bf8f18a4a39074bc6748c433f4a7",
+          "sourceEvidence": [
+            {
+              "file": "enteral-nutrition-clinical-metadata-review.json",
+              "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+            }
+          ]
+        },
+        {
+          "path": "submodules.formula-selection.concepts[3]",
+          "value": "Free water and renal solute load",
+          "status": "source-verified; renal solute mechanism and distinction from delivered formula water",
+          "objectSha256": "d4e0704a937eca44ea24bc539a3f086569e5d84a2f51663fbae2d5969bc8f59b",
+          "sourceEvidence": [
+            {
+              "file": "enteral-nutrition-renal-solute-review.json",
+              "scope": "approved2005Water81-83,135-136,144-145; retained product-water/individualized-prescription source review"
+            }
+          ]
+        },
+        {
+          "path": "submodules.formula-selection.application",
+          "value": "Start with physiology and the nutrition prescription. Product marketing cannot substitute for an assessment of protein, calories, fluid, electrolytes, fiber, absorption, cost, and evidence.",
+          "status": "retained source-verified",
+          "objectSha256": "1b33286b426bc5fae9bd21f1838bb7af55e72f52cbc1db54ba1fc20b0654a04c",
+          "sourceEvidence": [
+            {
+              "file": "enteral-nutrition-clinical-metadata-review.json",
+              "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+            }
+          ]
+        },
+        {
+          "path": "submodules.formula-selection.keyPoints[0]",
+          "value": "Polymeric formula is a reasonable starting point when digestion and absorption are intact.",
+          "status": "retained source-verified",
+          "objectSha256": "5fcca20350861980af8d1102cba6974132f95d055f93ab5a66214037da8bfad4",
+          "sourceEvidence": [
+            {
+              "file": "enteral-nutrition-clinical-metadata-review.json",
+              "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+            }
+          ]
+        },
+        {
+          "path": "submodules.formula-selection.keyPoints[1]",
+          "value": "Calculate formula water from product composition and the volume actually delivered.",
+          "status": "retained source-verified",
+          "objectSha256": "ab27eb4e6e4b90ba6113c9315b4f2e00355666160f91ac51427ada96f2e97f4e",
+          "sourceEvidence": [
+            {
+              "file": "enteral-nutrition-clinical-metadata-review.json",
+              "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+            }
+          ]
+        },
+        {
+          "path": "submodules.formula-selection.keyPoints[2]",
+          "value": "Specialty formulas require a patient-specific rationale.",
+          "status": "retained source-verified",
+          "objectSha256": "784fbaca814e5f42dd8b99ff5036a5fb7c6c2817fb4e582a5198ffee59ab6f16",
+          "sourceEvidence": [
+            {
+              "file": "enteral-nutrition-clinical-metadata-review.json",
+              "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+            }
+          ]
+        },
+        {
+          "path": "submodules.formula-selection.keyPoints[3]",
+          "value": "Formula volume and water volume are not interchangeable.",
+          "status": "retained source-verified",
+          "objectSha256": "a8ef03fbf6c2ac38c66a0cc77e94f26fbf45e7f26dbf3a909c66de4cc15fad4c",
+          "sourceEvidence": [
+            {
+              "file": "enteral-nutrition-clinical-metadata-review.json",
+              "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+            }
+          ]
+        },
+        {
+          "path": "submodules.medication-administration.title",
+          "value": "Medication Administration Through Enteral Access",
+          "status": "retained source-verified",
+          "objectSha256": "db7c293d313ce9e25209cb0d6c8109a4066cdc13a492deff00e167a9256a85a5",
+          "sourceEvidence": [
+            {
+              "file": "enteral-nutrition-clinical-metadata-review.json",
+              "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+            }
+          ]
+        },
+        {
+          "path": "submodules.medication-administration.summary",
+          "value": "Safe medication delivery requires a dosage-form review, absorption-site review, drug-specific feeding plan, and flush sequence for every administration.",
+          "status": "retained source-verified",
+          "objectSha256": "9c9c6b60856821946128751fedfe7cd5b91f7e7dc58444019cc689e332b93b6e",
+          "sourceEvidence": [
+            {
+              "file": "enteral-nutrition-clinical-metadata-review.json",
+              "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+            }
+          ]
+        },
+        {
+          "path": "submodules.medication-administration.concepts[0]",
+          "value": "Do-not-crush formulations",
+          "status": "retained source-verified",
+          "objectSha256": "69185786bf74c1a8bf38e54954b0525dd155c1ee374e91be49939122a3f791f1",
+          "sourceEvidence": [
+            {
+              "file": "enteral-nutrition-clinical-metadata-review.json",
+              "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+            }
+          ]
+        },
+        {
+          "path": "submodules.medication-administration.concepts[1]",
+          "value": "Drug and nutrient interactions",
+          "status": "retained source-verified",
+          "objectSha256": "ee8a97c89b9c1f113baffab814a1beec78d399f497ca7d59916e6f62eecf8fb2",
+          "sourceEvidence": [
+            {
+              "file": "enteral-nutrition-clinical-metadata-review.json",
+              "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+            }
+          ]
+        },
+        {
+          "path": "submodules.medication-administration.concepts[2]",
+          "value": "Flush sequence",
+          "status": "retained source-verified",
+          "objectSha256": "28e2e7438ffa4adf46293538f18093aeed7666182719be69ceab2ad0600dae83",
+          "sourceEvidence": [
+            {
+              "file": "enteral-nutrition-clinical-metadata-review.json",
+              "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+            }
+          ]
+        },
+        {
+          "path": "submodules.medication-administration.concepts[3]",
+          "value": "Tube site and dosage form",
+          "status": "retained source-verified",
+          "objectSha256": "582372d8cdc86998cda128df44b21f02184dafefb6fb05269f445433fa1e1e6e",
+          "sourceEvidence": [
+            {
+              "file": "enteral-nutrition-clinical-metadata-review.json",
+              "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+            }
+          ]
+        },
+        {
+          "path": "submodules.medication-administration.application",
+          "value": "Do not ask only whether a tablet can fit through a tube. Ask whether the dosage form can be altered, whether the drug can be absorbed beyond the tube tip, and whether feeding changes exposure.",
+          "status": "retained source-verified",
+          "objectSha256": "037d3d81d808601faab6f44932514fcc69ef8a2f50658224f5721eeef95e9463",
+          "sourceEvidence": [
+            {
+              "file": "enteral-nutrition-clinical-metadata-review.json",
+              "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+            }
+          ]
+        },
+        {
+          "path": "submodules.medication-administration.keyPoints[0]",
+          "value": "Check product-specific instructions before altering or administering any dosage form through a tube.",
+          "status": "corrected source-verified",
+          "objectSha256": "472f6e6500875b794ecd79052206eaca468de37b8ca5fb8d8b10e0374fcee5d8",
+          "sourceEvidence": [
+            {
+              "file": "enteral-nutrition-clinical-metadata-review.json",
+              "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+            }
+          ]
+        },
+        {
+          "path": "submodules.medication-administration.keyPoints[1]",
+          "value": "Give medications separately from formula and from one another.",
+          "status": "retained source-verified",
+          "objectSha256": "6b7d99da36e7066c5a238227cccf3c9e3230186959ad1070978215e55553758a",
+          "sourceEvidence": [
+            {
+              "file": "enteral-nutrition-clinical-metadata-review.json",
+              "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+            }
+          ]
+        },
+        {
+          "path": "submodules.medication-administration.keyPoints[2]",
+          "value": "Use drug-specific feeding holds rather than a universal rule.",
+          "status": "retained source-verified",
+          "objectSha256": "ad27a71f60d4a90e029157b816b8405bdb8d394880d1f000ab78670067514bf1",
+          "sourceEvidence": [
+            {
+              "file": "enteral-nutrition-clinical-metadata-review.json",
+              "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+            }
+          ]
+        },
+        {
+          "path": "submodules.medication-administration.keyPoints[3]",
+          "value": "The tube tip can change drug absorption and effect.",
+          "status": "retained source-verified",
+          "objectSha256": "43ef8346ad6ddba3f654f8184fc5b51916ad8415289d2f182406117a3bb59af4",
+          "sourceEvidence": [
+            {
+              "file": "enteral-nutrition-clinical-metadata-review.json",
+              "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+            }
+          ]
+        },
+        {
+          "path": "submodules.monitoring-complications.title",
+          "value": "Monitoring and Complication Prevention",
+          "status": "retained source-verified",
+          "objectSha256": "a5902741a30b812511df3ea6e91c3b6bfffdade9c55cb0a1115eec4efe5a4917",
+          "sourceEvidence": [
+            {
+              "file": "enteral-nutrition-clinical-metadata-review.json",
+              "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+            }
+          ]
+        },
+        {
+          "path": "submodules.monitoring-complications.summary",
+          "value": "Tolerance is a clinical pattern. Integrate delivered volume, symptoms, examination, stool, fluid balance, glucose, electrolytes, access integrity, and infection risk.",
+          "status": "retained source-verified",
+          "objectSha256": "a5710cc0725a088b37a82f6439e36cf2bfeb730687f0222c080b5b6fc45780e5",
+          "sourceEvidence": [
+            {
+              "file": "enteral-nutrition-clinical-metadata-review.json",
+              "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+            }
+          ]
+        },
+        {
+          "path": "submodules.monitoring-complications.concepts[0]",
+          "value": "Aspiration prevention",
+          "status": "retained source-verified",
+          "objectSha256": "2fc9c232e918c9edcbfe9bb571f71de02cf247cb7740212d8b9cd4f4b1014ed2",
+          "sourceEvidence": [
+            {
+              "file": "enteral-nutrition-clinical-metadata-review.json",
+              "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+            }
+          ]
+        },
+        {
+          "path": "submodules.monitoring-complications.concepts[1]",
+          "value": "Diarrhea and intolerance",
+          "status": "retained source-verified",
+          "objectSha256": "b5e8ca7f7ae55685005cb8b32172058eef191ee8fa337ab9a0e7e2a5f26d89e0",
+          "sourceEvidence": [
+            {
+              "file": "enteral-nutrition-clinical-metadata-review.json",
+              "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+            }
+          ]
+        },
+        {
+          "path": "submodules.monitoring-complications.concepts[2]",
+          "value": "Tube obstruction and displacement",
+          "status": "retained source-verified",
+          "objectSha256": "6581815187fa5a8a59eea11b298e9931a807b16d7c124215c1f5afa0dc8e1d84",
+          "sourceEvidence": [
+            {
+              "file": "enteral-nutrition-clinical-metadata-review.json",
+              "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+            }
+          ]
+        },
+        {
+          "path": "submodules.monitoring-complications.concepts[3]",
+          "value": "Refeeding and metabolic monitoring",
+          "status": "retained source-verified",
+          "objectSha256": "c603b6a8aedc2b908b6ff167bd016ac4d9e2df86706bd6029365fd9b77da928a",
+          "sourceEvidence": [
+            {
+              "file": "enteral-nutrition-clinical-metadata-review.json",
+              "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+            }
+          ]
+        },
+        {
+          "path": "submodules.monitoring-complications.application",
+          "value": "When a problem appears, assess gastrointestinal, metabolic, mechanical, medication-related, and infectious causes. Respond promptly to urgent findings and reassess the feeding plan.",
+          "status": "retained source-verified",
+          "objectSha256": "5ed08351e41d79b78326368c3fd8464d195ca516a52adf6978ab299db4295388",
+          "sourceEvidence": [
+            {
+              "file": "enteral-nutrition-clinical-metadata-review.json",
+              "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+            }
+          ]
+        },
+        {
+          "path": "submodules.monitoring-complications.keyPoints[0]",
+          "value": "Aspiration prevention uses several coordinated measures.",
+          "status": "retained source-verified",
+          "objectSha256": "644abda3c11331a90c5912b99e6e744d6fef930afacf2f825a9b487ed1ee8a96",
+          "sourceEvidence": [
+            {
+              "file": "enteral-nutrition-clinical-metadata-review.json",
+              "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+            }
+          ]
+        },
+        {
+          "path": "submodules.monitoring-complications.keyPoints[1]",
+          "value": "A residual value must be interpreted in clinical context.",
+          "status": "retained source-verified",
+          "objectSha256": "96c039db0b5a573048a0f4fb3dd1258e3e9e935cfb0fe6ee501acab7dc248a8a",
+          "sourceEvidence": [
+            {
+              "file": "enteral-nutrition-clinical-metadata-review.json",
+              "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+            }
+          ]
+        },
+        {
+          "path": "submodules.monitoring-complications.keyPoints[2]",
+          "value": "Assess medications as possible causes of diarrhea and tube obstruction.",
+          "status": "corrected source-verified",
+          "objectSha256": "97dab9363621a261a508cf469037c38cfb5483cae23de30483301ea5b0af136e",
+          "sourceEvidence": [
+            {
+              "file": "enteral-nutrition-clinical-metadata-review.json",
+              "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+            }
+          ]
+        },
+        {
+          "path": "submodules.monitoring-complications.keyPoints[3]",
+          "value": "Monitor what was delivered, not only what was ordered.",
+          "status": "retained source-verified",
+          "objectSha256": "3eca38387dac4923efbbf6e1f9c5c763f99376e122afcace17a0cbd0584d8c07",
+          "sourceEvidence": [
+            {
+              "file": "enteral-nutrition-clinical-metadata-review.json",
+              "sha256": "45622bd9c8b64e98beebab0830dfa6dfe51d9c947b45ed1cdedde16364e16a98"
+            }
+          ]
+        }
+      ]
+    },
+    "embeddedCheckHashes": {
+      "enteral-decision": "9d79be13d8a94df6da6cab0b5fda6053cd3df000b5961bb69d0062ed9427b20f",
+      "access-route": "0deb9a72754a620d67642e1a8159efd13d9b3e2496e0a0861522bb5058159185",
+      "delivery-prescription": "1fefc4220c3f33b8c3745a72d9f6187acd54912a6ac03362707aaaa1d9af7545",
+      "formula-selection": "57f082dc0a570b65c22bc4a9e124d18906743daa3375618e5be678edb4f92838",
+      "medication-administration": "cba5e651c9d329b07b8899d4bfd33e2a51888e2ebc1b146f80332f341f0d966f",
+      "monitoring-complications": "301c18c0f4f4f122d637fa88205b32b1a8bee443edc155c794e0c0e7cc54ead5"
+    },
+    "figureHashes": {
+      "enteral-decision": "c8326a876c4a35fb111847e806ddbfd4eef9612752c53ae053b0b8bb70d079d2",
+      "access-route": "a6e8f5e91d49cc353c3f9fe6b6490330b6f229457ee99791da78aa258f2f857d",
+      "delivery-prescription": "867db95a3a16fd8c3417d31b7f681cfbc6d21f6613b694f21f95370b49dfb689",
+      "formula-selection": "ae89b32226f18fc7ff864e2d6841fb13552762d5d3a442f111f9679f80419901",
+      "medication-administration": "203f4b733df6703465a63c41d08cdd762380d2d00b24a8978e0cd3e3e1f8b5b4",
+      "monitoring-complications": "852d85bc855eab8446b33cb9718485729f49823e5976724ff22758e20f55d9ec"
+    },
+    "figureComponentSha256": "757041ab5f0d6bf15da4599ef64b2e3be98fa24caf70667ae326b90043005609",
+    "figureComponentMatchesRetainedCandidate": true,
+    "currentCumulativeHashes": {
+      "cumulative-enteral-nutrition-enteral-nutrition-001": "2ef8c81d3bc2ff536492332b00560cef90388c703b6fe00434d4f6e4ffdb3829",
+      "cumulative-enteral-nutrition-enteral-nutrition-028": "650a98df38c3c1f6d3e36c240e4a5c65b9310c44585b28ab8b14d76323c135ce",
+      "cumulative-enteral-nutrition-enteral-nutrition-064": "9b9fb9789cdf8ac3432912a3e500457499e9962661260a41ebfe421c1c51bd7e",
+      "cumulative-enteral-nutrition-enteral-nutrition-090": "da29a6def1fd54c204c4d1cb712ac87cdb153e817ce23b2a687e23330fd5759f",
+      "cumulative-enteral-nutrition-enteral-nutrition-117": "834e6b881da379a1e56070f6f0ca3a0fce3090da23a2175ae3e3d395a640fdef"
+    },
+    "references": [
+      {
+        "label": "Institute of Medicine. Dietary Reference Intakes: Water, 2005, Chapter 4",
+        "href": "https://www.nationalacademies.org/read/10925/chapter/6"
+      },
+      {
+        "label": "ASPEN practice tool: enteral nutrition in patients with fat malabsorption, 2023",
+        "href": "https://nutritioncare.org/wp-content/uploads/2024/12/EN-Patients-With-Fat-Malabsorption-Practice-Tool.pdf"
+      },
+      {
+        "label": "ASPEN practice tool: hypoallergenic formula composition and pediatric indications, 2023",
+        "href": "https://nutritioncare.org/wp-content/uploads/2024/12/Hypoallergenic-Formula-Practice-Tool.pdf"
+      },
+      {
+        "label": "McGrath et al. AuSPEN clinical consensus on jejunal tube feeding in children, 2024",
+        "href": "https://aspenjournals.onlinelibrary.wiley.com/doi/10.1002/jpen.2615"
+      },
+      {
+        "label": "FDA. Tips for Health Care Providers to Reduce Medical Device Misconnections",
+        "href": "https://www.fda.gov/medical-devices/medical-device-connectors/tips-health-care-providers-reduce-medical-device-misconnections"
+      },
+      {
+        "label": "FDA. Enteral Small-Bore Connector Misconnection Guidance, 2015",
+        "href": "https://www.fda.gov/media/83412/download"
+      },
+      {
+        "label": "SCCM/ASPEN. Adult Critical Care Nutrition Guideline, 2016",
+        "href": "https://sccmmedia.sccm.org/documents/LearnICU/Guidelines/Nutrition-SCCM-ASPEN.pdf"
+      },
+      {
+        "label": "ASPEN. Enteral Nutrition Indications in Critical Illness Practice Tool, August 2023",
+        "href": "https://nutritioncare.org/wp-content/uploads/2024/12/EN-Indications-Critical-Illness-Practice-Tool.pdf"
+      },
+      {
+        "label": "ASPEN. Safe Practices for Enteral Nutrition Therapy, 2017",
+        "href": "https://aspenjournals.onlinelibrary.wiley.com/doi/full/10.1177/0148607116673053"
+      },
+      {
+        "label": "ASPEN. Adult Critical Care Nutrition Guideline, 2022: Selected Nutrition-Support Questions",
+        "href": "https://doi.org/10.1002/jpen.2267"
+      },
+      {
+        "label": "ASPEN. Consensus Recommendations for Refeeding Syndrome, 2020",
+        "href": "https://doi.org/10.1002/ncp.10474"
+      },
+      {
+        "label": "FDA medical device connector safety resources",
+        "href": "https://www.fda.gov/medical-devices/general-hospital-devices-and-supplies/medical-device-connectors"
+      }
+    ],
+    "lessonCoverage": [
+      {
+        "slug": "enteral-decision",
+        "status": "verified",
+        "bodies": 5,
+        "verifiedQuestions": 9,
+        "totalQuestions": 9,
+        "verifiedMetadata": 11,
+        "totalMetadata": 11,
+        "embeddedCheckVerified": true,
+        "figureVerified": true,
+        "pendingQuestions": [],
+        "pendingMetadata": []
+      },
+      {
+        "slug": "access-route",
+        "status": "verified",
+        "bodies": 6,
+        "verifiedQuestions": 12,
+        "totalQuestions": 12,
+        "verifiedMetadata": 11,
+        "totalMetadata": 11,
+        "embeddedCheckVerified": true,
+        "figureVerified": true,
+        "pendingQuestions": [],
+        "pendingMetadata": []
+      },
+      {
+        "slug": "delivery-prescription",
+        "status": "verified",
+        "bodies": 5,
+        "verifiedQuestions": 32,
+        "totalQuestions": 32,
+        "verifiedMetadata": 11,
+        "totalMetadata": 11,
+        "embeddedCheckVerified": true,
+        "figureVerified": true,
+        "pendingQuestions": [],
+        "pendingMetadata": []
+      },
+      {
+        "slug": "formula-selection",
+        "status": "verified",
+        "bodies": 9,
+        "verifiedQuestions": 26,
+        "totalQuestions": 26,
+        "verifiedMetadata": 11,
+        "totalMetadata": 11,
+        "embeddedCheckVerified": true,
+        "figureVerified": true,
+        "pendingQuestions": [],
+        "pendingMetadata": []
+      },
+      {
+        "slug": "medication-administration",
+        "status": "verified",
+        "bodies": 8,
+        "verifiedQuestions": 16,
+        "totalQuestions": 16,
+        "verifiedMetadata": 11,
+        "totalMetadata": 11,
+        "embeddedCheckVerified": true,
+        "figureVerified": true,
+        "pendingQuestions": [],
+        "pendingMetadata": []
+      },
+      {
+        "slug": "monitoring-complications",
+        "status": "verified",
+        "bodies": 4,
+        "verifiedQuestions": 13,
+        "totalQuestions": 13,
+        "verifiedMetadata": 11,
+        "totalMetadata": 11,
+        "embeddedCheckVerified": true,
+        "figureVerified": true,
+        "pendingQuestions": [],
+        "pendingMetadata": []
+      }
+    ]
+  },
+  "sourceBookRecomparison": {
+    "sourceFileSha256": "5e60f0b3ce20601985515c259c9503bd7ee2681836efecf03906a7da3dddf6ef",
+    "completeOriginalPagesActuallyViewed": [
+      158,
+      169,
+      170,
+      171,
+      172
+    ],
+    "printedPages": [
+      150,
+      161,
+      162,
+      163,
+      164
+    ],
+    "scope": "Fluid formula/context,EN route/advantages,tube diagram/types/access/water,full medication administration and nutrient-interaction section,alltwo original nutrition labels,EN exercises35-40,andfollowingPNorder/examples visible on samepages. Prior approved ASPEN qualifications,product-specific tube/hold rules and renal-solute source-review limitations retained; no historical brand label treated as current composition.",
+    "sourceBookCopiedIntoGit": false
+  },
+  "bookCalculationRechecks": [
+    {
+      "bookExercise": 35,
+      "raw": "22.02247191011235955056179775",
+      "expectedRounded": 22
+    },
+    {
+      "bookExercise": 36,
+      "raw": "160.2",
+      "expectedRounded": 160
+    },
+    {
+      "bookExercise": 37,
+      "raw": "45.00",
+      "expectedRounded": 45
+    },
+    {
+      "bookExercise": 38,
+      "raw": "74.8",
+      "expectedRounded": 75
+    },
+    {
+      "bookExercise": 39,
+      "raw": "52.49122807017543859649122807",
+      "expectedRounded": 52
+    },
+    {
+      "bookExercise": 40,
+      "raw": "213.75",
+      "expectedExact": "213.75"
+    }
+  ],
+  "retainedCalculationEvidence": {
+    "bankComputations": 37,
+    "workedBodies": 5,
+    "embeddedComputations": 2,
+    "sourceExercises": 6,
+    "method": "Current unchanged whole objects match prior source and independent arithmetic; six book EN exercises additionally recomputed here. No new distinct calculation or numeric prescription counted."
+  },
+  "inventory": {
+    "file": "enteral-nutrition-current-feeding-inventory.json",
+    "sha256": "1e39216cb71a8d7e039295f40802dcbe48e7a93dc04f7a30106b8f39de937da6",
+    "method": "Exact current modulebank/lesson/cumulative locating passes and233historical reconciliation; eachcurrentquestion ID/hash and fieldmatched preserved. Current module titles/topics/headings provided additional semantic locating signals.39PEG-onlywholeobjectsclassifiedoff-topicusingtheircurrentlaxative/ointmentcontext. No incidental clause or lexical signal upgrades a whole question or whole parent.",
+    "counts": {
+      "modules": 232,
+      "moduleQuestions": 27996,
+      "primaryPatternOrHistoricalBankCandidates": 416,
+      "secondaryBankCandidates": 2046,
+      "lessonLocatingCandidates": 85,
+      "cumulativeLocatingCandidates": 30,
+      "historicalCandidates": 233,
+      "historicalStatuses": {
+        "retained whole-question review ID; not newly certified": 79,
+        "retained verified parent; not newly certified": 24,
+        "whole-question review not registered; requires source review": 130
+      },
+      "historicalUnregisteredWholeQuestions": 130,
+      "currentUnregisteredWholeQuestions": 213,
+      "currentUnregisteredPrimaryFieldQuestions": 66,
+      "offTopicPEGQuestions": 39,
+      "currentUnregisteredFeedingCandidates": 174,
+      "currentUnregisteredPrimaryFieldFeedingCandidates": 51,
+      "broaderUniquePreviouslyReviewedWholeQuestionIds": 1510
+    },
+    "notYetComplete": "174potentialfeeding wholequestions lack a registered whole-question review;51matchstem/key/explanation. Secondary2046signal items require relevance triage. These are locating counts,notweightedcompletion or newly certified claims. Somependingwholeobjects contain earlierverifiedfeeding clauses."
+  },
+  "validation": {
+    "build": {
+      "status": "passed",
+      "exitCode": 0,
+      "command": "next build --webpack",
+      "staticPages": 567,
+      "candidate": "Committed HEAD plus scoped final enteral-node CSS only",
+      "receipt": "build-terminal.json",
+      "logSha256": "28a7f3555ce37188fe96da2078f175b4f4a008af2302d7c10b4439759a8b8b78"
+    },
+    "structure": {
+      "status": "passed",
+      "modules": 1,
+      "questions": 108,
+      "hardErrors": 0,
+      "receipt": "structure.json"
+    },
+    "browser": {
+      "status": "passed",
+      "terminalExitCode": 0,
+      "fullAssessmentWidths": [
+        1440,
+        390
+      ],
+      "wholeQuestionsPerWidth": 108,
+      "allChoicesPerQuestion": 4,
+      "correctAndIncorrectFeedbackVerified": true,
+      "wholeBodiesPerWidth": 37,
+      "embeddedChecksPerWidth": 6,
+      "embeddedChoicesPerWidth": 24,
+      "referencesPerWidth": 12,
+      "fullAssessmentReceipt": "full-assessment-browser.json",
+      "finalFigureReceipt": "final-figures.json",
+      "finalFigureWidths": [
+        320,
+        379,
+        380,
+        381,
+        390,
+        719,
+        720,
+        721,
+        1440
+      ],
+      "finalFigureCases": 54,
+      "arrowTextOverlaps": 0,
+      "finalBodiesAndReferencesRecheckedAt": [
+        1440,
+        390
+      ],
+      "assessmentValidationTiming": "Full grading passed before final figure padding adjustment. Educational objects and assessment renderer hashes remained identical; final build and all54figure cases plus37body/12reference DOM checks passed after final padding. Five cumulative origins source-reconciled; cumulative quiz not rerun in this unit."
+    },
+    "visualReview": {
+      "status": "passed",
+      "actualInspectionBoards": 10,
+      "unscaledCapturePairs": 45,
+      "nativeFigureInspections": 12,
+      "nativeWidths": [
+        320,
+        721
+      ],
+      "sourceCapturesCovered": 102,
+      "bookOriginalPagesActuallyViewed": [
+        158,
+        169,
+        170,
+        171,
+        172
+      ],
+      "inspectionHashes": "actually-inspected-hashes.json",
+      "captureHashes": "visually-covered-capture-hashes.json",
+      "boardMapping": "boards.json",
+      "result": "All final figure text and arrows readable; no text clipping or arrow crowding. Desktop/mobile bodies, metadata, checks, references and sampled bank feedback inspected on unscaled boards. Existing floating pharmacy utility visible without covering clinical text."
+    },
+    "independentInventory": {
+      "status": "passed",
+      "receipt": "independent-inventory-check.json"
+    },
+    "privateEvidenceArchive": {
+      "status": "prepared; independent final archive reread follows release",
+      "path": "/Volumes/AGNDJ 6TB/NaS-Codex-Private/Learn-Audit/en-current-10dcdcdd"
+    }
+  },
+  "preservation": {
+    "productChanges": 1,
+    "currentModuleObjects": 232,
+    "currentBankQuestions": 27996,
+    "currentCumulativeObjects": 1180,
+    "broaderVerifiedIDsUnchanged": 1510,
+    "wholeModuleStatusesUnchanged": true,
+    "wholeChapterStatusesUnchanged": true,
+    "sixLessonStatusesUnchanged": true,
+    "sourceReferencesUnchanged": true,
+    "userProgressAndAccountsUnchanged": true,
+    "privateSourcesExcluded": true,
+    "scopedProductChange": "src/app/globals.css: reserve3rembottompaddingin desktop/mobile enteral-node rules;seven-line media blockstacksnodeindex/detailsonlyat<=380px.Allclinicalobjects andotherstylebytes preserved."
+  },
+  "remainingReview": {
+    "currentENQuestionIds": [],
+    "currentENBodyHeadings": [],
+    "currentENMetadataPaths": [],
+    "broaderFeedingQuestionReview": "Current inventory is authoritative locating checkpoint; no wholeENclosure.",
+    "semanticInventoryClosure": false,
+    "nextAction": "Begin whole fluid-electrolyte-therapy parent audit from fluid-physiology-assessment, compare all22currentbodies/100wholequestions/sixchecks/sixfigures with relevant supplied book and approved official sources. Preserve two completed feeding items016/083 and their full intake/loss body. Use current feeding inventory to review pending whole questions; differentiate completed feeding clauses from unsupported remaining assertions. EN031/renal metadata have no current gap. Keep Chapter1PDF19 checklistentry15 as frontier; do not markEN orChapter11 complete while broaderquestion/semantic scope remains open."
+  },
+  "release": {
+    "branch": "audit/rxprep-content-2026-09-24",
+    "baseCommit": "10dcdcdd0f37e02b53ed435850e45b7eece9c9d0",
+    "commit": null,
+    "push": "pending",
+    "receipt": "enteral-nutrition-current-inventory-release.json",
+    "production": "not verified",
+    "mainMerge": "not performed"
+  },
+  "wholeGoalComplete": false,
+  "renderingCorrection": {
+    "trigger": "Fresh complete-module browser run reached320pxfigure checks after currentdesktop/mobilebody,metadata,check,andbank comparisons;Percutaneousindex text measured112pxwithin102pxallocatedcolumn.",
+    "originalFailedRun": "Preserved pre-fix-browser.log,pre-fix-browser-terminal.json andexactharness;notreportedasa completepass.",
+    "originalActuallyViewedCapture": "issue-before-320.png",
+    "finding": "Longindexandadjacentheadingcompetedat320px;label exceededitsownallocatedcolumn.",
+    "change": "Reserve3rembottompaddinginexistingdesktop/mobileenteralnode rules fordecorativearrows;at<=380pxstackindexoverheading/detailwith0.75remgap.",
+    "scope": "OnlyEnteralNutritionVisual usesenteral-visual__node;only its existingdesktop/mobile rules andone scoped<=380pxmedia rule changed.",
+    "outside380px": "Existingcolumnlayoutretained; bottompaddingreserveappliesacrossallENfigures topreventarrow/textcrowding,includingat381px.",
+    "newBreakpointValidation": "320,379,380,381,390,719,720,721,1440px acrossall6figures;exactlabels,fonts,overflow,manualcapturesrequired.",
+    "validationSequence": "Initial320pxlabel bounds failed. First stacked layout passed full desktop/mobile assessments; manual320pxview exposed arrow crowding. Glyph-range checks rejected2.25remreserve at320px and narrow-only3remreserve at381px. Final3remreserve across allENnodes passed freshbuild,54figure cases atninewidths,37body/12reference DOM checks and final manual320/721/1440/390views. Clinical objects and assessment renderer remained identical.",
+    "toolingAndIteration": "Glyph-range clearance checks retained strict rectangle intersection; final3remreserve passed withzeroarrow-text overlaps."
+  }
+}

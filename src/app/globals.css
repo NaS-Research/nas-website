@@ -393,6 +393,7 @@
   gap: 1rem;
   min-height: 8.8rem;
   padding: 1.4rem;
+  padding-bottom: 3rem;
   border-right: 1px solid rgba(255, 255, 255, 0.09);
   border-bottom: 1px solid rgba(255, 255, 255, 0.09);
 }
@@ -446,6 +447,14 @@
     grid-template-columns: minmax(3rem, auto) 1fr;
     min-height: 7rem;
     padding: 1.15rem;
+    padding-bottom: 3rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .enteral-visual__node {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.75rem;
   }
 }
 
