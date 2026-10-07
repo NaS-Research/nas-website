@@ -832,3 +832,187 @@ Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-elec
   "rationale": "SAMSCA is contraindicated in hypovolemic hyponatremia. Hospital monitoring and a labeled dose do not override that restriction. V2 blockade increases water excretion and can worsen depletion; assess and restore volume as indicated while monitoring for aquaresis and rapid sodium correction.",
   "reviewHref": "#sodium-water-disorders"
 });
+
+// Source-reconciled potassium questions; stable IDs, answer keys and anchors retained.
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-031"), {
+  "id": "fluid-electrolyte-031",
+  "question": "Which treatment is used for hyperkalemic ECG toxicity without lowering serum potassium?",
+  "choices": [
+    "IV calcium",
+    "IV insulin with glucose",
+    "Nebulized albuterol",
+    "Hemodialysis"
+  ],
+  "answer": 0,
+  "rationale": "Calcium antagonizes cardiac toxicity without shifting or removing potassium. Insulin and albuterol shift it into cells; hemodialysis removes it. Calcium use and reassessment follow the emergency protocol, and clinical outcome evidence remains limited.",
+  "reviewHref": "#potassium-disorders"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-032"), {
+  "id": "fluid-electrolyte-032",
+  "question": "An adult receives insulin with dextrose for hyperkalemia. Why are subsequent glucose checks still required?",
+  "choices": [
+    "Hypoglycemia can occur despite the administered dextrose, including after the initial response",
+    "The dextrose guarantees protection once the first glucose result is normal",
+    "Only patients with known diabetes can become hypoglycemic",
+    "Potassium normalization proves that glucose has remained safe"
+  ],
+  "answer": 0,
+  "rationale": "Dextrose reduces risk but does not eliminate insulin-related hypoglycemia. Monitoring applies to all treated patients, including those without diabetes. A potassium result does not establish the glucose concentration. The cited UK protocol checks glucose repeatedly through six hours, with further monitoring as indicated.",
+  "reviewHref": "#potassium-disorders"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-033"), {
+  "id": "fluid-electrolyte-033",
+  "question": "An anuric adult has persistent severe hyperkalemia despite temporary shifting treatment. Which intervention can remove potassium definitively?",
+  "choices": [
+    "Urgently arranged renal replacement therapy, with modality and timing selected by the specialist",
+    "Repeated calcium doses as the sole potassium-lowering treatment",
+    "Insulin alone as proof that total body potassium has fallen",
+    "Furosemide alone with an assumption of urinary removal despite anuria"
+  ],
+  "answer": 0,
+  "rationale": "Renal replacement therapy removes potassium; urgent nephrology or critical-care assessment selects the appropriate method. Calcium does not lower potassium, and insulin only redistributes it. Anuria prevents the assumed urinary removal. Continue indicated emergency medical care while definitive treatment is arranged.",
+  "reviewHref": "#potassium-disorders"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-034"), {
+  "id": "fluid-electrolyte-034",
+  "question": "How should the U.S. LOKELMA and VELTASSA limitations be interpreted for life-threatening hyperkalemia?",
+  "choices": [
+    "Their labels exclude emergency treatment because onset is delayed; urgent rescue must not be replaced by a binder",
+    "Both labels authorize emergency rescue whenever another drug is also given",
+    "A reported onset within an hour guarantees immediate protection from arrhythmia",
+    "The UK acute pathway automatically changes the U.S. approved labeling"
+  ],
+  "answer": 0,
+  "rationale": "Both U.S. labels say the products should not be used as emergency treatment for life-threatening hyperkalemia. This is broader than a monotherapy-only warning. National guideline recommendations can discuss adjunctive roles but do not rewrite U.S. labeling. Reported potassium changes do not guarantee immediate cardiac protection.",
+  "reviewHref": "#potassium-disorders"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-035"), {
+  "id": "fluid-electrolyte-035",
+  "question": "Which finding provides a possible acid-base indication to consider bicarbonate as an adjunct during hyperkalemia care?",
+  "choices": [
+    "Clinically important metabolic acidemia, assessed with its cause and sodium/volume burden",
+    "Metabolic alkalosis with no bicarbonate deficit",
+    "A normal acid-base state in every patient with high potassium",
+    "Respiratory alkalosis used as proof of a metabolic bicarbonate deficiency"
+  ],
+  "answer": 0,
+  "rationale": "Bicarbonate may be considered for clinically important metabolic acidemia, but its potassium effect is variable and routine acute use is not recommended by UK guidance. Metabolic or respiratory alkalosis and a normal acid-base state do not establish this indication. It does not replace other required emergency measures.",
+  "reviewHref": "#potassium-disorders"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-036"), {
+  "id": "fluid-electrolyte-036",
+  "question": "Potassium remains low during replacement in an adult receiving a loop diuretic. Which assessment addresses a frequent reason for failure?",
+  "choices": [
+    "Check magnesium and ongoing renal or gastrointestinal potassium losses",
+    "Assume each replacement dose must have raised potassium by an identical amount",
+    "Treat the low potassium as proof that there can be no renal wasting",
+    "Check sodium alone and stop investigating the replacement response"
+  ],
+  "answer": 0,
+  "rationale": "Magnesium deficiency can aggravate renal potassium wasting, and ongoing losses can offset replacement. Serum response is variable; repeated low results do not exclude renal loss. Sodium alone does not assess magnesium or explain potassium balance. Correct identified deficits and causes with continued monitoring.",
+  "reviewHref": "#potassium-disorders"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-037"), {
+  "id": "fluid-electrolyte-037",
+  "question": "Which order involving Hospira potassium chloride for injection concentrate, 2 mEq/mL, requires immediate correction?",
+  "choices": [
+    "Direct IV push of the undiluted concentrate",
+    "Dilution and complete mixing into an appropriate infusion solution",
+    "Product-specific renal and cardiac safety assessment before prescribing",
+    "Controlled infusion with appropriate repeat potassium measurements"
+  ],
+  "answer": 0,
+  "rationale": "The vial is a concentrate requiring dilution before infusion. Direct undiluted injection can cause fatal arrhythmia or cardiac arrest; IV push is unsafe. The other actions are necessary safeguards. A separately labeled ready-to-use bag does not authorize direct injection of this vial.",
+  "reviewHref": "#potassium-disorders"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-038"), {
+  "id": "fluid-electrolyte-038",
+  "question": "A specified ready-to-use bag contains 40 mEq potassium chloride in 100 mL and is proposed at 50 mL/hour. Which review is correct?",
+  "choices": [
+    "It contains 400 mEq/L and delivers 20 mEq/hour; central access, monitoring and justification beyond routine limits require review",
+    "It contains 40 mEq/L and delivers 2 mEq/hour, suitable for routine peripheral use",
+    "It delivers 50 mEq/hour because the pump displays 50 mL/hour",
+    "Correct calculation alone proves that the rate and peripheral route are appropriate"
+  ],
+  "answer": 0,
+  "rationale": "40/0.100 = 400 mEq/L; 40/100 x 50 = 20 mEq/hour. The reviewed ICU Medical label requires central access for 400 mEq/L and continuous monitoring for these concentrated products; 20 exceeds its usual 10 mEq/hour rate. Pump volume is not a potassium dose, and arithmetic does not independently authorize an order.",
+  "reviewHref": "#potassium-disorders"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-039"), {
+  "id": "fluid-electrolyte-039",
+  "question": "Which combination most directly combines reduced renal potassium elimination with medicines that promote retention?",
+  "choices": [
+    "Kidney impairment with an ACE inhibitor and a potassium-sparing diuretic",
+    "Normal kidney function with diarrhea and a loop diuretic",
+    "Normal kidney function with insulin and nebulized albuterol",
+    "Vomiting with alkalosis and thiazide treatment"
+  ],
+  "answer": 0,
+  "rationale": "Kidney impairment reduces elimination; RAAS inhibition and potassium-sparing diuretics can further promote retention. The other scenarios primarily favor losses or movement into cells rather than this combined retention mechanism. Review supplements, trimethoprim and other contributors as well.",
+  "reviewHref": "#potassium-disorders"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-040"), {
+  "id": "fluid-electrolyte-040",
+  "question": "After insulin and nebulized albuterol, serum potassium falls. What does this response demonstrate?",
+  "choices": [
+    "Movement into cells can lower the serum concentration without proving removal of total body potassium",
+    "The measured fall proves that insulin has excreted potassium through the kidneys",
+    "Albuterol has necessarily removed potassium through the gastrointestinal tract",
+    "Total stores and serum concentration are interchangeable measurements"
+  ],
+  "answer": 0,
+  "rationale": "Insulin and beta agonists change distribution. They do not prove urinary or gastrointestinal elimination; total stores and the serum concentration are distinct. Arrange removal when indicated and monitor for rebound as the shifting effect wanes.",
+  "reviewHref": "#potassium-disorders"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-091"), {
+  "id": "fluid-electrolyte-091",
+  "question": "An adult has confirmed potassium 6.9 mmol/L and a new widened QRS. Which response best addresses the immediate problem?",
+  "choices": [
+    "Give protocol-directed IV calcium and promptly initiate shifting, removal assessment and monitoring",
+    "Treat with an oral binder alone and await its effect on the QRS",
+    "Delay rescue until a second sample tomorrow proves the same value",
+    "Give calcium and stop all further care when the first ECG improves"
+  ],
+  "answer": 0,
+  "rationale": "Hyperkalemic ECG toxicity calls for prompt monitored cardiac protection while the potassium is addressed. A binder cannot replace immediate rescue; delaying until tomorrow is inappropriate. Calcium does not lower potassium, so improvement in the tracing does not complete treatment.",
+  "reviewHref": "#potassium-disorders"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-092"), {
+  "id": "fluid-electrolyte-092",
+  "question": "An adult has persistent potassium 2.7 mmol/L after repeated replacement, without current paralysis or arrhythmia. What should the ongoing treatment review include?",
+  "choices": [
+    "Magnesium, continued losses, medicines, kidney function and repeat potassium-directed adjustment",
+    "Automatic rapid infusion of an undiluted concentrate because prior doses failed",
+    "A potassium binder to improve absorption of the replacement",
+    "A fixed prediction that the next 10 mEq must raise potassium by exactly 0.1 mEq/L"
+  ],
+  "answer": 0,
+  "rationale": "Investigate refractory hypokalemia while adjusting replacement safely. Magnesium deficiency, losses and medicines may explain failure. Undiluted rapid infusion is dangerous; a binder removes potassium and can worsen depletion. The serum response is not an exact fixed conversion.",
+  "reviewHref": "#potassium-disorders"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-093"), {
+  "id": "fluid-electrolyte-093",
+  "question": "An anuric adult still has potassium 7.1 mmol/L after an initial shifting response. Which next plan is most appropriate?",
+  "choices": [
+    "Obtain urgent nephrology or critical-care assessment for renal replacement therapy while continuing indicated monitored emergency treatment",
+    "Use repeated insulin alone as a durable removal plan",
+    "Use a loop diuretic and assume substantial urinary potassium loss despite anuria",
+    "Wait for an oral binder without urgent specialist assessment"
+  ],
+  "answer": 0,
+  "rationale": "Persistent severe hyperkalemia with anuria requires urgent consideration of definitive extracorporeal removal. Shifts are temporary, urinary removal cannot be assumed without urine, and an oral binder must not delay rescue or specialist escalation. The specialist determines timing and modality.",
+  "reviewHref": "#potassium-disorders"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-094"), {
+  "id": "fluid-electrolyte-094",
+  "question": "An acutely ill adult has potassium 6.4 mmol/L and significant metabolic acidemia, with no hyperkalemic ECG changes on the initial tracing. Which approach is most appropriate?",
+  "choices": [
+    "Use monitored potassium-lowering care guided by acuity and trajectory; consider bicarbonate for the acidemia without replacing shifting or removal",
+    "Give calcium automatically because every potassium above 6.0 requires it regardless of ECG or setting",
+    "Use bicarbonate alone and assume an immediate, predictable potassium response",
+    "Use an oral binder alone and omit glucose and potassium follow-up"
+  ],
+  "answer": 0,
+  "rationale": "Moderate hyperkalemia requires context-based acute assessment and monitored treatment. UK guidance suggests insulin-glucose in this range and advises against routine bicarbonate for hyperkalemia. Acidemia can provide a separate reason to consider bicarbonate, but it is not sole rescue. The initial normal ECG does not exclude risk or mandate calcium automatically; follow-up remains essential.",
+  "reviewHref": "#potassium-disorders"
+});

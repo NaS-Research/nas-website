@@ -429,3 +429,128 @@ fluidElectrolyteTherapyModule.references.push(...[
     "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12407122/"
   }
 ]);
+
+// Source-reconciled potassium disorders lesson.
+Object.assign(fluidElectrolyteTherapyModule.submodules.find(s => s.slug === "potassium-disorders"), {
+  "slug": "potassium-disorders",
+  "title": "Potassium Disorders",
+  "summary": "Potassium emergencies are electrical and physiologic problems. The serum value, ECG, acid-base state, kidney function, medications, and ongoing shifts all matter.",
+  "concepts": [
+    "Hypokalemia and magnesium",
+    "ECG toxicity",
+    "Intracellular redistribution",
+    "Definitive potassium removal"
+  ],
+  "visual": "potassium",
+  "application": "For hyperkalemia, write separate orders for myocardial protection, intracellular shifting, potassium removal, and monitoring. For hypokalemia, identify the loss or shift and correct magnesium when needed.",
+  "lesson": [
+    {
+      "heading": "Separate concentration, stores and distribution",
+      "body": "Hypokalemia is serum potassium below 3.5 mEq/L. A low concentration can reflect potassium depletion, movement into cells or both. Gastrointestinal loss, renal wasting and insufficient intake differ from the intracellular shifts caused by insulin or beta agonists. Interpret potassium with symptoms, ECG, glucose, acid-base status, kidney function and medicines. A deficit estimate or the familiar 10 mEq for a 0.1 mEq/L rise is an approximation: ongoing losses, changing distribution and renal elimination make the individual response variable. Repeat measurements guide replacement."
+    },
+    {
+      "heading": "Investigate persistent hypokalemia",
+      "body": "Check magnesium when potassium remains low despite replacement. Magnesium depletion can aggravate renal potassium wasting, so potassium alone may not correct the problem. Replace deficient magnesium as part of the plan while continuing urgent potassium care when indicated. Review diarrhea, vomiting, diuretics, amphotericin and recent insulin or beta-agonist treatment. Urinary potassium assessment and acid-base findings help distinguish renal wasting from gastrointestinal loss or redistribution. Treat the cause and account for ongoing losses rather than repeatedly escalating a fixed replacement schedule."
+    },
+    {
+      "heading": "Match oral potassium to the actual formulation",
+      "body": "Oral replacement is generally preferred when the patient is stable and can use the gastrointestinal route. The reviewed Upsher-Smith 8 and 10 mEq extended-release tablets have a typical treatment range of 40 to 100 mEq/day, divided so no dose exceeds 40 mEq; prophylaxis is typically 20 mEq/day. These are product instructions, not a universal schedule. Take these tablets whole with a meal and liquid; do not crush, chew or suck them. Solid potassium can injure the gastrointestinal tract: consider a liquid formulation for significant swallowing or motility problems. This label directs IV replacement below 2.5 mEq/L and contraindicates concomitant amiloride or triamterene."
+    },
+    {
+      "heading": "Distinguish an IV concentrate from a ready-to-use bag",
+      "body": "Potassium chloride must never be given by IV push. The Hospira 2 mEq/mL concentrate requires dilution and complete mixing before infusion; undiluted injection can cause fatal arrhythmia or cardiac arrest. The reviewed ICU Medical 100 to 400 mEq/L bags are specifically labeled ready to use with a calibrated infusion device. Their existence does not authorize injecting the vial concentrate directly. The bag label recommends central administration whenever possible and requires central access for its 300 and 400 mEq/L concentrations. Verify the product, access, prescribed concentration, rate, ECG monitoring and repeat testing before administration. Renal failure or potassium retention can be labeled contraindications; obtain product-specific clinical review."
+    },
+    {
+      "heading": "Calculate both infusion concentration and potassium rate",
+      "body": "For routine use when potassium exceeds 2.5 mEq/L, the reviewed concentrate label gives a ceiling of 10 mEq/hour and 40 mEq/L after dilution. Ready-to-use products have separate concentration and access instructions. For a specified bag containing 40 mEq in 100 mL, concentration is 400 mEq/L; at 50 mL/hour it delivers 20 mEq/hour. Correct arithmetic alone does not make that order appropriate: the reviewed bag requires central access and monitoring, and the rate exceeds its usual 10 mEq/hour limit. Rare urgent label exceptions for profound hypokalemia require specialist care, continuous ECG and frequent potassium measurements. Never apply them as routine peripheral replacement."
+    },
+    {
+      "heading": "Confirm a high result while assessing urgency",
+      "body": "A hemolyzed or poorly handled sample can produce a falsely elevated potassium result. If the value conflicts with the clinical picture, arrange a prompt, carefully collected repeat and discuss laboratory confirmation. A normal ECG does not exclude severe hyperkalemia. Evaluate the concentration and rate of rise alongside perfusion, symptoms, kidney function and potassium exposure. UK Kidney Association guidance calls for an urgent ECG at 6.0 mmol/L or above in hospitalized adults and continuous monitoring in severe disease or other high-risk circumstances. Suspected hyperkalemic arrhythmia requires emergency treatment while confirmation proceeds; repeating a sample must not delay rescue."
+    },
+    {
+      "heading": "Protect the heart when ECG toxicity is present",
+      "body": "IV calcium antagonizes hyperkalemic cardiac toxicity; it neither lowers serum potassium nor removes potassium from the body. The July 2026 UK Kidney Association update retains a suggestion to give calcium for hyperkalemic ECG changes, while downgrading the evidence grade to 2C. Clinical outcome evidence is limited, so do not describe a guaranteed mortality benefit. Use the local emergency protocol to select the calcium salt, dose, secure access and ECG reassessment. A normal ECG in moderate hyperkalemia does not automatically warrant calcium. Shifting and removal treatment must address the potassium itself."
+    },
+    {
+      "heading": "Shift potassium and prevent insulin-related hypoglycemia",
+      "body": "Insulin moves potassium into cells temporarily; glucose reduces the associated hypoglycemia risk. In the cited UK adult protocol, severe hyperkalemia is treated with 10 units soluble insulin in 25 g glucose by IV infusion, with a suggestion for moderate disease. When pretreatment glucose is below 7.0 mmol/L, that protocol follows treatment with 10 percent glucose at 50 mL/hour for five hours. Check the local regimen and pretreatment glucose rather than treating this as a universal order. Nebulized albuterol, called salbutamol in UK guidance, is an adjunct; it is not adequate monotherapy for severe hyperkalemia."
+    },
+    {
+      "heading": "Use bicarbonate for a specific acid-base indication",
+      "body": "Metabolic acidemia can make bicarbonate a physiologically reasonable adjunct, but it is not a reliable universal potassium-shifting treatment. UK guidance advises against routine IV bicarbonate for acute hyperkalemia. Consider the cause and severity of acidemia, sodium and volume burden, and the patient’s ability to tolerate treatment. Its use does not replace indicated cardiac protection, insulin-based shifting or definitive potassium removal. Metabolic alkalosis or a normal acid-base state does not justify giving bicarbonate automatically for an elevated potassium."
+    },
+    {
+      "heading": "Plan removal before temporary shifts wear off",
+      "body": "Insulin and beta agonists redistribute potassium without reducing total stores. Removal requires urinary excretion, gastrointestinal elimination or dialysis. A loop diuretic depends on kidney function and urine production; an anuric patient cannot be expected to excrete potassium simply because furosemide is prescribed. Severe persistent hyperkalemia with kidney failure needs urgent nephrology or critical-care assessment for renal replacement therapy. Continue indicated emergency medical treatment while dialysis is arranged. Reassess after treatment because redistribution can wear off and potassium can rebound."
+    },
+    {
+      "heading": "Distinguish binder labeling from an emergency pathway",
+      "body": "The U.S. LOKELMA and VELTASSA labels explicitly exclude emergency treatment of life-threatening hyperkalemia because onset is delayed. This limitation is broader than merely saying not to use them alone. UK guidance includes selected binders alongside other treatments in its acute pathway; that recommendation does not change U.S. labeling. Do not substitute an oral binder for urgent cardiac assessment, indicated stabilization, rapid shifting and timely dialysis assessment. State the jurisdiction and protocol when discussing an adjunctive acute role."
+    },
+    {
+      "heading": "Apply LOKELMA dosing and sodium precautions",
+      "body": "For adults not using the chronic hemodialysis schedule, the reviewed U.S. LOKELMA label starts at 10 g three times daily for up to 48 hours, then recommends 10 g daily for continued treatment. Maintenance titration uses 5 g increments at intervals of at least a week; the range is 5 g every other day to 15 g daily. Chronic hemodialysis uses a distinct non-dialysis-day regimen. Each 5 g contains about 400 mg sodium, with uncertain absorption, so monitor edema and fluid status. Avoid use in severe constipation or obstruction. Generally separate other oral medicines by two hours; the label provides a pH-dependent-solubility exception."
+    },
+    {
+      "heading": "Apply VELTASSA dosing and magnesium precautions",
+      "body": "The reviewed U.S. VELTASSA label covers adults and patients aged 12 years or older. Adults start at 8.4 g daily and titrate in 8.4 g increments at intervals of at least a week, to a maximum 25.2 g daily. The adolescent starting dose and increments are 4 g, with the same maximum. Prepare a suspension; do not heat it or take dry powder. Separate other oral medicines by three hours unless a clinically important interaction has been excluded as described in the label; levothyroxine requires separation. Monitor potassium and magnesium, and avoid use with severe constipation or obstruction."
+    },
+    {
+      "heading": "Recognize sodium polystyrene sulfonate limitations",
+      "body": "Sodium polystyrene sulfonate removes potassium through the gut, but its effect is variable and may take hours to days. Its label warns of intestinal necrosis and other serious bowel injury; assess bowel function, obstruction, constipation and relevant risk factors. The supplied book’s suggestion that gastrointestinal toxicity confines use to emergencies should not be interpreted as an emergency preference. The reviewed SPS suspension label advises considering other definitive measures, including dialysis, for severe emergency presentations. It does not establish rectal administration as a dependable rapid rescue."
+    },
+    {
+      "heading": "Monitor response, hypoglycemia and recurrence",
+      "body": "Record pretreatment potassium and glucose, the intervention times and the follow-up plan. In the cited UK protocol, glucose checks after insulin-glucose occur at baseline and 30, 60, 90, 120, 180, 240, 300 and 360 minutes; giving dextrose does not remove the need for monitoring. Suggested potassium checks are at least 1, 2, 4, 6 and 24 hours, with additional testing as the clinical course requires. Review ACE inhibitors, ARBs, potassium-sparing diuretics, trimethoprim, supplements and potassium-containing fluids. Address reversible causes and plan individualized long-term medication management rather than assuming that the first improved value completes treatment."
+    }
+  ],
+  "keyPoints": [
+    "Choose potassium formulation, concentration and rate separately.",
+    "Correct magnesium deficiency and identify ongoing losses.",
+    "A normal ECG does not exclude dangerous hyperkalemia.",
+    "Calcium, temporary shifting and removal have different purposes.",
+    "Binder labels and national acute guidelines have distinct scopes.",
+    "Monitor glucose after insulin and potassium for rebound."
+  ],
+  "check": {
+    "question": "A patient with confirmed hyperkalemia has a widened QRS. Which treatment is used for cardiac protection without shifting or removing potassium?",
+    "choices": [
+      "IV calcium under the monitored emergency protocol",
+      "Insulin with glucose to reduce total body potassium",
+      "Nebulized albuterol to eliminate potassium through the gut",
+      "Hemodialysis to protect the myocardium without removing potassium"
+    ],
+    "answer": 0,
+    "rationale": "Calcium antagonizes hyperkalemic cardiac toxicity while shifting and removal are arranged. Insulin and albuterol move potassium into cells without reducing stores; dialysis removes it. The July 2026 UK guidance retains a calcium suggestion for ECG changes with limited outcome evidence, not a guaranteed mortality benefit.",
+    "reviewHref": "#potassium-disorders"
+  }
+});
+fluidElectrolyteTherapyModule.references[4] = {"label": "FDA label: AstraZeneca LOKELMA prescribing information", "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=90bf8e28-748d-4e4b-a19f-9cf483370eff"};
+fluidElectrolyteTherapyModule.references[6] = {"label": "FDA label: Hospira potassium chloride for injection concentrate", "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=559a0a8c-a8fe-40a5-b196-21f9308780ab"};
+fluidElectrolyteTherapyModule.references.push(...[
+  {
+    "label": "UK Kidney Association: adult hyperkalemia guideline, July 2026 update",
+    "href": "https://www.ukkidney.org/health-professionals/guidelines/treatment-acute-hyperkalaemia-adults-0"
+  },
+  {
+    "label": "FDA label: VELTASSA (patiromer), dosing and interactions",
+    "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bf002984-d6c9-46df-aecb-a07733f763c1"
+  },
+  {
+    "label": "FDA label: ICU Medical ready-to-use potassium chloride injection",
+    "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=eb56a807-ea94-4edb-9811-a04b19568468"
+  },
+  {
+    "label": "FDA label: Upsher-Smith 8 and 10 mEq potassium chloride extended-release tablets",
+    "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=616f0de7-8843-44a1-8fa6-274d889286aa"
+  },
+  {
+    "label": "Kardalas et al. 2018: hypokalemia evaluation and treatment review",
+    "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5881435/"
+  },
+  {
+    "label": "FDA label: SPS suspension, bowel toxicity and emergency limitations",
+    "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=12d48dcf-07bd-4b06-bd6c-7543f1be8357"
+  }
+]);
