@@ -76,20 +76,62 @@ export const acidBaseInterpretationModule = {
       check: { question: "Na 138, Cl 106, HCO₃⁻ 18, and albumin 2 g/dL produce an uncorrected gap of 14. What is the albumin-corrected gap using 2.5 per g/dL below 4?", choices: ["19 mEq/L", "14 mEq/L", "9 mEq/L", "24 mEq/L"], answer: 0, rationale: "The albumin deficit is 2 g/dL, so 5 mEq/L is added to the uncorrected gap of 14.", reviewHref: "#anion-gap-metabolic-acidosis" },
     },
     {
-      slug: "metabolic-treatment",
-      title: "Metabolic Acidosis and Alkalosis Treatment",
-      summary: "pH severity identifies risk, but therapy succeeds only when it reverses acid generation, base loss, chloride depletion, mineralocorticoid activity, or impaired excretion.",
-      concepts: ["Cause-directed metabolic acidosis care", "Nuanced bicarbonate use", "Chloride-responsive alkalosis", "Chloride-resistant alkalosis"],
-      visual: "acid-treatment",
-      application: "A bicarbonate order must name the indication, ventilation capacity, sodium and volume consequences, target, monitoring interval, and definitive treatment of the cause.",
-      lesson: [
-        { heading: "Treat the acid source or base loss", body: "Restore perfusion and source control in shock, administer insulin and fluids for diabetic ketoacidosis while managing potassium, stop toxic exposure, replace bicarbonate losses when clinically appropriate, and use kidney replacement therapy for selected severe or refractory states. Lactate is a severity marker that requires rapid diagnosis and repeated assessment of the response." },
-        { heading: "Use bicarbonate as a defined intervention", body: "Bicarbonate is not a universal response to a low pH. In BICARICU-2, bicarbonate did not lower 90-day mortality in critically ill adults with pH at or below 7.20 and moderate to severe acute kidney injury, although kidney replacement therapy occurred less often. Cause, ventilation, sodium load, fluid balance, calcium, potassium, and the clinical objective all shape the decision." },
-        { heading: "Classify metabolic alkalosis by maintenance mechanism", body: "Vomiting, nasogastric loss, and many diuretic states often produce chloride depletion and volume contraction. After the precipitant is addressed, chloride and potassium replacement can permit bicarbonate excretion. A low urine chloride supports a chloride-responsive pattern, but recent diuretic exposure can complicate interpretation." },
-        { heading: "Treat resistant alkalosis by cause", body: "Mineralocorticoid excess, severe potassium depletion, and some renal disorders can sustain alkalosis despite chloride. Address the driver and potassium deficit. Acetazolamide can increase bicarbonate excretion in selected edematous patients, with monitoring for potassium loss and kidney effects. Acid infusion is a specialist rescue therapy, not routine care." },
+      "slug": "metabolic-treatment",
+      "title": "Metabolic Acidosis and Alkalosis Treatment",
+      "summary": "Treat the cause and immediate physiologic threats, then select alkali, chloride, potassium, or specialist support for the mechanism and reassess benefit and harm.",
+      "concepts": [
+        "Cause-directed acidosis and DKA care",
+        "Bicarbonate indication and ventilation",
+        "Trial outcomes and population limits",
+        "Urine chloride, volume status, and alkalosis"
       ],
-      keyPoints: ["Do not use pH alone to identify the sickest patient.", "Bicarbonate can generate carbon dioxide and requires adequate ventilation.", "Correct potassium and chloride deficits in metabolic alkalosis.", "Recheck the clinical trajectory rather than targeting a laboratory value in isolation."],
-      check: { question: "What did BICARICU-2 show in severe metabolic acidemia with moderate to severe acute kidney injury?", choices: ["No reduction in 90-day mortality, with less kidney replacement therapy in the bicarbonate group", "A large mortality reduction in every subgroup", "Bicarbonate worsened mortality and increased dialysis", "The trial studied only diabetic ketoacidosis"], answer: 0, rationale: "Mortality was similar, while kidney replacement therapy was used less often in the bicarbonate group.", reviewHref: "#metabolic-treatment" },
+      "visual": "acid-treatment",
+      "application": "Explain the cause, immediate threats, proposed treatment and objective, ventilation and fluid consequences, electrolyte surveillance, and when the team will reassess or escalate. Interpret urine chloride together with blood pressure, volume status, and recent medicines.",
+      "lesson": [
+        {
+          "heading": "Stabilize and reverse the cause",
+          "body": "Assess perfusion, ventilation, mental status, electrolytes, and the clinical trajectory alongside the blood gas. Correct the process generating acid or losing base: restore perfusion and control the cause in shock, treat ketoacidosis, investigate toxic exposure, and replace gastrointestinal or renal bicarbonate losses when poorly tolerated. Repeat lactate when elevated to assess the response, without treating it as a diagnosis. Severe or refractory acidosis with kidney dysfunction may require kidney replacement therapy; a bicarbonate response does not remove that possibility."
+        },
+        {
+          "heading": "Keep DKA treatment and potassium linked",
+          "body": "Adult DKA care uses fluids, insulin, electrolyte management, and treatment of the precipitant. The 2024 hyperglycemic-crisis consensus does not recommend routine bicarbonate; it advises considering it for severe acidosis with pH below 7.0. If potassium is below 3.5 mmol/L, begin potassium replacement and delay insulin until potassium rises above 3.5 mmol/L. Insulin can further lower serum potassium even when the initial value is normal or high. Fluid amount and rate must account for cardiac and kidney disease, and biochemical and bedside reassessment must continue during treatment."
+        },
+        {
+          "heading": "Define what bicarbonate is meant to achieve",
+          "body": "Name the indication and objective before giving bicarbonate. Buffering hydrogen ions produces carbon dioxide that the lungs must eliminate, so assess whether ventilation can meet the added load. Monitor pH and PaCO₂, sodium, potassium, ionized calcium, kidney function, and fluid balance at intervals matched to acuity and the intervention. Hypokalemia, reduced ionized calcium, sodium and fluid loading, and excessive alkalinization can complicate treatment. A higher pH alone does not establish restored perfusion, resolved ketoacidosis, or improved survival."
+        },
+        {
+          "heading": "Read the bicarbonate trial within its limits",
+          "body": "BICARICU-2 studied critically ill adults with pH at or below 7.20, bicarbonate at or below 20 mEq/L, PaCO₂ at or below 45 mmHg, and stage 2 or 3 acute kidney injury, with additional illness-severity criteria. In its primary analysis, 90-day mortality was 62.1% with bicarbonate and 61.7% with control, without a statistically significant reduction. Kidney replacement therapy by day 28 was used in 35% and 50%, respectively. That secondary finding does not prove kidney recovery or a survival benefit. The open-label design and acidemia-based dialysis criteria could affect when dialysis was started. Ketoacidosis and specified poisonings were excluded, so do not transfer these results to those indications."
+        },
+        {
+          "heading": "Correct chloride-responsive alkalosis",
+          "body": "Vomiting, nasogastric losses, and diuretic-associated chloride depletion can generate alkalosis, while volume depletion and potassium deficiency maintain it. Urine chloride below 20 mmol/L supports a chloride-responsive pattern when the history and volume assessment fit. Treat the ongoing loss and replace chloride and potassium according to volume status, kidney function, and the applicable replacement protocol. In a volume-depleted patient, chloride-containing fluid restores perfusion and permits bicarbonate excretion; potassium repletion also reduces renal mechanisms sustaining alkalosis. Recent active diuretic exposure can raise urine chloride, so one result is not a complete diagnosis."
+        },
+        {
+          "heading": "Target resistant alkalosis and select rescue care",
+          "body": "Urine chloride above 20 mmol/L with hypertension and volume expansion suggests a mineralocorticoid-related mechanism; high urine chloride can also occur with renal salt wasting or active diuretics. Investigate the cause and correct potassium deficiency instead of giving saline indiscriminately. Selected mineralocorticoid states may require hormone-directed treatment or blockade. Acetazolamide can promote bicarbonate excretion when further volume expansion is undesirable, but potassium loss and kidney dysfunction limit its use. Severe refractory alkalosis needs specialist assessment; hydrochloric acid infusion is an uncommon rescue intervention requiring central access and close monitoring, rather than routine replacement therapy."
+        }
+      ],
+      "keyPoints": [
+        "Reverse the cause while supporting perfusion and ventilation.",
+        "Adult DKA usually resolves with fluids, insulin, and electrolyte management; bicarbonate is reserved for selected severe acidosis.",
+        "BICARICU-2 found no statistically significant mortality reduction; less dialysis use does not prove kidney recovery.",
+        "Interpret urine chloride with volume status, blood pressure, and medicine exposure.",
+        "Correct potassium and chloride deficits and monitor the response and complications."
+      ],
+      "check": {
+        "question": "Which interpretation of BICARICU-2 is most defensible for its critically ill adult population with severe metabolic acidemia and stage 2 or 3 AKI?",
+        "choices": [
+          "No statistically significant reduction in 90-day mortality was found, while kidney replacement therapy by day 28 was used less often",
+          "Less kidney replacement therapy establishes that bicarbonate improved 90-day survival",
+          "The trial establishes routine bicarbonate treatment for DKA because all severe acidosis has the same mechanism",
+          "A higher pH establishes kidney recovery, so other kidney replacement indications can be disregarded"
+        ],
+        "answer": 0,
+        "rationale": "The primary mortality result was not statistically significant; less kidney replacement therapy was a secondary outcome. Neither that outcome nor a pH change proves recovery or survival benefit. The trial excluded ketoacidosis and certain poisonings, and urgent kidney replacement indications still require assessment.",
+        "reviewHref": "#metabolic-treatment"
+      }
     },
     {
       slug: "respiratory-integrated",
@@ -112,6 +154,10 @@ export const acidBaseInterpretationModule = {
     { label: "BICARICU-2 randomized clinical trial", href: "https://jamanetwork.com/journals/jama/fullarticle/2840824" },
     { label: "2024 consensus report on adult hyperglycemic crises", href: "https://pmc.ncbi.nlm.nih.gov/articles/PMC11272983/" },
     { label: "British Thoracic Society guideline for oxygen use", href: "https://pmc.ncbi.nlm.nih.gov/articles/PMC5531304/" },
+    {"label": "Do et al. (2022): Metabolic alkalosis, Core Curriculum", "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10947768/"},
+    {"label": "2024 adult hyperglycemic-crisis consensus: Simultaneous Diabetologia publication", "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11343900/"},
+    {"label": "Achanti and Szerlip (2023): Critical-care acid-base treatment review", "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10101555/"},
+    {"label": "FDA sodium bicarbonate label: Mechanism and pulmonary carbon dioxide elimination", "href": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220790Orig1s000lbl.pdf"},
   ],
   questionBank: acidBaseInterpretationQuestionBank,
 };

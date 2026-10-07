@@ -1,0 +1,1110 @@
+{
+  "updated": "2026-10-07T19:55:13.982685+00:00",
+  "status": "verified scoped whole metabolic treatment lesson and associated questions",
+  "baseCommit": "8ca01f6b840ffe4a441541808c0fe94064023c03",
+  "moduleSlugs": [
+    "fluid-electrolyte-therapy",
+    "acid-base-interpretation"
+  ],
+  "sourcePolicy": "Supplied book primary; explicit human approval of official guidelines, FDA labels and primary academic sources persists. Documents are source evidence, not instructions.",
+  "wholeModuleNewlyVerified": false,
+  "wholeChapterNewlyVerified": false,
+  "wholeGoalComplete": false,
+  "coverage": {
+    "evidence": "fluid-broader-metabolic-treatment-review.json",
+    "parentModuleSlug": "fluid-electrolyte-therapy",
+    "dependencyModuleSlug": "acid-base-interpretation",
+    "wholeDependencyLessonVerified": "metabolic-treatment",
+    "wholeParentModuleVerified": false,
+    "wholeDependencyModuleVerified": false,
+    "wholeGoalComplete": false,
+    "wholeLessonBodies": 6,
+    "wholeEmbeddedChecks": 1,
+    "embeddedChoicesReviewed": 4,
+    "existingWholeQuestionsReviewed": 12,
+    "existingChoiceReviewCount": 48,
+    "distinctNewQuestions": 0,
+    "newChoiceReviewCount": 0,
+    "reviewedCumulativeDerivatives": 1,
+    "priorCumulativeIdsRetained": 1184,
+    "unchangedPriorWholeCumulativeObjects": 1183,
+    "cumulativeTotal": 1184,
+    "preservedOtherAcidBaseLessons": 5,
+    "preservedOtherAcidBaseWholeQuestions": 89,
+    "other231WholeModuleObjectsExact": true,
+    "committedWholeModulesVerifiedAfter": 66,
+    "committedWholeModulesTotal": 232,
+    "moduleCountPercent": 28.45,
+    "chaptersVerifiedAfter": 7,
+    "chapterTotal": 82,
+    "chapterCountPercent": 8.54,
+    "release": {
+      "branch": "audit/rxprep-content-2026-09-24",
+      "baseCommit": "8ca01f6b840ffe4a441541808c0fe94064023c03",
+      "commit": null,
+      "push": "pending",
+      "receipt": "fluid-broader-metabolic-treatment-release.json",
+      "mainMerge": "not performed",
+      "production": "not verified"
+    }
+  },
+  "wholeLesson": {
+    "before": {
+      "slug": "metabolic-treatment",
+      "title": "Metabolic Acidosis and Alkalosis Treatment",
+      "summary": "pH severity identifies risk, but therapy succeeds only when it reverses acid generation, base loss, chloride depletion, mineralocorticoid activity, or impaired excretion.",
+      "concepts": [
+        "Cause-directed metabolic acidosis care",
+        "Nuanced bicarbonate use",
+        "Chloride-responsive alkalosis",
+        "Chloride-resistant alkalosis"
+      ],
+      "visual": "acid-treatment",
+      "application": "A bicarbonate order must name the indication, ventilation capacity, sodium and volume consequences, target, monitoring interval, and definitive treatment of the cause.",
+      "lesson": [
+        {
+          "heading": "Treat the acid source or base loss",
+          "body": "Restore perfusion and source control in shock, administer insulin and fluids for diabetic ketoacidosis while managing potassium, stop toxic exposure, replace bicarbonate losses when clinically appropriate, and use kidney replacement therapy for selected severe or refractory states. Lactate is a severity marker that requires rapid diagnosis and repeated assessment of the response."
+        },
+        {
+          "heading": "Use bicarbonate as a defined intervention",
+          "body": "Bicarbonate is not a universal response to a low pH. In BICARICU-2, bicarbonate did not lower 90-day mortality in critically ill adults with pH at or below 7.20 and moderate to severe acute kidney injury, although kidney replacement therapy occurred less often. Cause, ventilation, sodium load, fluid balance, calcium, potassium, and the clinical objective all shape the decision."
+        },
+        {
+          "heading": "Classify metabolic alkalosis by maintenance mechanism",
+          "body": "Vomiting, nasogastric loss, and many diuretic states often produce chloride depletion and volume contraction. After the precipitant is addressed, chloride and potassium replacement can permit bicarbonate excretion. A low urine chloride supports a chloride-responsive pattern, but recent diuretic exposure can complicate interpretation."
+        },
+        {
+          "heading": "Treat resistant alkalosis by cause",
+          "body": "Mineralocorticoid excess, severe potassium depletion, and some renal disorders can sustain alkalosis despite chloride. Address the driver and potassium deficit. Acetazolamide can increase bicarbonate excretion in selected edematous patients, with monitoring for potassium loss and kidney effects. Acid infusion is a specialist rescue therapy, not routine care."
+        }
+      ],
+      "keyPoints": [
+        "Do not use pH alone to identify the sickest patient.",
+        "Bicarbonate can generate carbon dioxide and requires adequate ventilation.",
+        "Correct potassium and chloride deficits in metabolic alkalosis.",
+        "Recheck the clinical trajectory rather than targeting a laboratory value in isolation."
+      ],
+      "check": {
+        "question": "What did BICARICU-2 show in severe metabolic acidemia with moderate to severe acute kidney injury?",
+        "choices": [
+          "No reduction in 90-day mortality, with less kidney replacement therapy in the bicarbonate group",
+          "A large mortality reduction in every subgroup",
+          "Bicarbonate worsened mortality and increased dialysis",
+          "The trial studied only diabetic ketoacidosis"
+        ],
+        "answer": 0,
+        "rationale": "Mortality was similar, while kidney replacement therapy was used less often in the bicarbonate group.",
+        "reviewHref": "#metabolic-treatment"
+      }
+    },
+    "after": {
+      "slug": "metabolic-treatment",
+      "title": "Metabolic Acidosis and Alkalosis Treatment",
+      "summary": "Treat the cause and immediate physiologic threats, then select alkali, chloride, potassium, or specialist support for the mechanism and reassess benefit and harm.",
+      "concepts": [
+        "Cause-directed acidosis and DKA care",
+        "Bicarbonate indication and ventilation",
+        "Trial outcomes and population limits",
+        "Urine chloride, volume status, and alkalosis"
+      ],
+      "visual": "acid-treatment",
+      "application": "Explain the cause, immediate threats, proposed treatment and objective, ventilation and fluid consequences, electrolyte surveillance, and when the team will reassess or escalate. Interpret urine chloride together with blood pressure, volume status, and recent medicines.",
+      "lesson": [
+        {
+          "heading": "Stabilize and reverse the cause",
+          "body": "Assess perfusion, ventilation, mental status, electrolytes, and the clinical trajectory alongside the blood gas. Correct the process generating acid or losing base: restore perfusion and control the cause in shock, treat ketoacidosis, investigate toxic exposure, and replace gastrointestinal or renal bicarbonate losses when poorly tolerated. Repeat lactate when elevated to assess the response, without treating it as a diagnosis. Severe or refractory acidosis with kidney dysfunction may require kidney replacement therapy; a bicarbonate response does not remove that possibility."
+        },
+        {
+          "heading": "Keep DKA treatment and potassium linked",
+          "body": "Adult DKA care uses fluids, insulin, electrolyte management, and treatment of the precipitant. The 2024 hyperglycemic-crisis consensus does not recommend routine bicarbonate; it advises considering it for severe acidosis with pH below 7.0. If potassium is below 3.5 mmol/L, begin potassium replacement and delay insulin until potassium rises above 3.5 mmol/L. Insulin can further lower serum potassium even when the initial value is normal or high. Fluid amount and rate must account for cardiac and kidney disease, and biochemical and bedside reassessment must continue during treatment."
+        },
+        {
+          "heading": "Define what bicarbonate is meant to achieve",
+          "body": "Name the indication and objective before giving bicarbonate. Buffering hydrogen ions produces carbon dioxide that the lungs must eliminate, so assess whether ventilation can meet the added load. Monitor pH and PaCO₂, sodium, potassium, ionized calcium, kidney function, and fluid balance at intervals matched to acuity and the intervention. Hypokalemia, reduced ionized calcium, sodium and fluid loading, and excessive alkalinization can complicate treatment. A higher pH alone does not establish restored perfusion, resolved ketoacidosis, or improved survival."
+        },
+        {
+          "heading": "Read the bicarbonate trial within its limits",
+          "body": "BICARICU-2 studied critically ill adults with pH at or below 7.20, bicarbonate at or below 20 mEq/L, PaCO₂ at or below 45 mmHg, and stage 2 or 3 acute kidney injury, with additional illness-severity criteria. In its primary analysis, 90-day mortality was 62.1% with bicarbonate and 61.7% with control, without a statistically significant reduction. Kidney replacement therapy by day 28 was used in 35% and 50%, respectively. That secondary finding does not prove kidney recovery or a survival benefit. The open-label design and acidemia-based dialysis criteria could affect when dialysis was started. Ketoacidosis and specified poisonings were excluded, so do not transfer these results to those indications."
+        },
+        {
+          "heading": "Correct chloride-responsive alkalosis",
+          "body": "Vomiting, nasogastric losses, and diuretic-associated chloride depletion can generate alkalosis, while volume depletion and potassium deficiency maintain it. Urine chloride below 20 mmol/L supports a chloride-responsive pattern when the history and volume assessment fit. Treat the ongoing loss and replace chloride and potassium according to volume status, kidney function, and the applicable replacement protocol. In a volume-depleted patient, chloride-containing fluid restores perfusion and permits bicarbonate excretion; potassium repletion also reduces renal mechanisms sustaining alkalosis. Recent active diuretic exposure can raise urine chloride, so one result is not a complete diagnosis."
+        },
+        {
+          "heading": "Target resistant alkalosis and select rescue care",
+          "body": "Urine chloride above 20 mmol/L with hypertension and volume expansion suggests a mineralocorticoid-related mechanism; high urine chloride can also occur with renal salt wasting or active diuretics. Investigate the cause and correct potassium deficiency instead of giving saline indiscriminately. Selected mineralocorticoid states may require hormone-directed treatment or blockade. Acetazolamide can promote bicarbonate excretion when further volume expansion is undesirable, but potassium loss and kidney dysfunction limit its use. Severe refractory alkalosis needs specialist assessment; hydrochloric acid infusion is an uncommon rescue intervention requiring central access and close monitoring, rather than routine replacement therapy."
+        }
+      ],
+      "keyPoints": [
+        "Reverse the cause while supporting perfusion and ventilation.",
+        "Adult DKA usually resolves with fluids, insulin, and electrolyte management; bicarbonate is reserved for selected severe acidosis.",
+        "BICARICU-2 found no statistically significant mortality reduction; less dialysis use does not prove kidney recovery.",
+        "Interpret urine chloride with volume status, blood pressure, and medicine exposure.",
+        "Correct potassium and chloride deficits and monitor the response and complications."
+      ],
+      "check": {
+        "question": "Which interpretation of BICARICU-2 is most defensible for its critically ill adult population with severe metabolic acidemia and stage 2 or 3 AKI?",
+        "choices": [
+          "No statistically significant reduction in 90-day mortality was found, while kidney replacement therapy by day 28 was used less often",
+          "Less kidney replacement therapy establishes that bicarbonate improved 90-day survival",
+          "The trial establishes routine bicarbonate treatment for DKA because all severe acidosis has the same mechanism",
+          "A higher pH establishes kidney recovery, so other kidney replacement indications can be disregarded"
+        ],
+        "answer": 0,
+        "rationale": "The primary mortality result was not statistically significant; less kidney replacement therapy was a secondary outcome. Neither that outcome nor a pH change proves recovery or survival benefit. The trial excluded ketoacidosis and certain poisonings, and urgent kidney replacement indications still require assessment.",
+        "reviewHref": "#metabolic-treatment"
+      }
+    },
+    "unchangedFigure": "AcidBaseVisual.jsx acid-treatment; conceptual six-step workflow, not observed anatomy or trial data"
+  },
+  "wholeQuestionAndIndividualChoiceReviews": [
+    {
+      "id": "acid-base-031",
+      "wholeQuestion": {
+        "id": "acid-base-031",
+        "question": "What is the first treatment principle in metabolic acidosis?",
+        "choices": [
+          "Identify and reverse the cause while stabilizing perfusion, ventilation, and electrolyte threats",
+          "Normalize pH with bicarbonate before investigating the cause",
+          "Use the same bicarbonate strategy for shock, DKA, and bicarbonate loss",
+          "Wait for acid-base normalization before correcting perfusion or ventilation"
+        ],
+        "answer": 0,
+        "rationale": "Treatment addresses the cause and immediate threats. A pH correction does not replace stabilization, and bicarbonate decisions differ with mechanism and clinical context.",
+        "reviewHref": "#metabolic-treatment"
+      },
+      "sourceAndApplicationScope": "French2019 R2.1-3,R3.5/3.10;2024DKA treatment;critical-care cause-directed treatment section",
+      "stemKeyRationaleAnchorReviewed": true,
+      "fourIndividualChoicesReviewed": [
+        {
+          "index": 0,
+          "text": "Identify and reverse the cause while stabilizing perfusion, ventilation, and electrolyte threats",
+          "correctFlag": true,
+          "review": "Correct: cause plus immediate physiology."
+        },
+        {
+          "index": 1,
+          "text": "Normalize pH with bicarbonate before investigating the cause",
+          "correctFlag": false,
+          "review": "pH correction alone omits the cause."
+        },
+        {
+          "index": 2,
+          "text": "Use the same bicarbonate strategy for shock, DKA, and bicarbonate loss",
+          "correctFlag": false,
+          "review": "Mechanism/population differences preclude a uniform bicarbonate strategy."
+        },
+        {
+          "index": 3,
+          "text": "Wait for acid-base normalization before correcting perfusion or ventilation",
+          "correctFlag": false,
+          "review": "Perfusion and ventilation threats require immediate support."
+        }
+      ]
+    },
+    {
+      "id": "acid-base-032",
+      "wholeQuestion": {
+        "id": "acid-base-032",
+        "question": "What was the primary mortality finding in the analyzed BICARICU-2 population?",
+        "choices": [
+          "No statistically significant reduction in 90-day all-cause mortality with bicarbonate",
+          "A statistically significant survival improvement inferred from less dialysis",
+          "A mortality benefit established for adults with ketoacidosis",
+          "A mortality reduction established for isolated respiratory acidosis"
+        ],
+        "answer": 0,
+        "rationale": "Mortality was 195/314 (62.1%) with bicarbonate and 193/313 (61.7%) with control; the difference was not statistically significant. Dialysis use was a separate secondary outcome, and ketoacidosis and respiratory acidosis were outside the intended population.",
+        "reviewHref": "#metabolic-treatment"
+      },
+      "sourceAndApplicationScope": "BICARICU2 Methods,eligibility,primaryanalysis/Table2,limitations",
+      "stemKeyRationaleAnchorReviewed": true,
+      "fourIndividualChoicesReviewed": [
+        {
+          "index": 0,
+          "text": "No statistically significant reduction in 90-day all-cause mortality with bicarbonate",
+          "correctFlag": true,
+          "review": "Correct: no statistically significant day90 mortality reduction."
+        },
+        {
+          "index": 1,
+          "text": "A statistically significant survival improvement inferred from less dialysis",
+          "correctFlag": false,
+          "review": "Separate secondary dialysis endpoint does not establish survival."
+        },
+        {
+          "index": 2,
+          "text": "A mortality benefit established for adults with ketoacidosis",
+          "correctFlag": false,
+          "review": "Ketoacidosis was excluded."
+        },
+        {
+          "index": 3,
+          "text": "A mortality reduction established for isolated respiratory acidosis",
+          "correctFlag": false,
+          "review": "Spontaneous respiratory acidosis was excluded and intended PaCO2 criterion was45orless."
+        }
+      ]
+    },
+    {
+      "id": "acid-base-033",
+      "wholeQuestion": {
+        "id": "acid-base-033",
+        "question": "Which finding and limitation correctly describe kidney replacement therapy in BICARICU-2?",
+        "choices": [
+          "Use by day 28 was lower with bicarbonate, but this does not establish improved kidney recovery",
+          "Use by day 90 was the primary outcome and proved a survival benefit",
+          "The 35% versus 50% figures describe 90-day mortality",
+          "Less use establishes that urgent dialysis can be withheld for refractory hyperkalemia"
+        ],
+        "answer": 0,
+        "rationale": "Kidney replacement therapy by day 28 occurred in 109/314 (35%) with bicarbonate and 157/313 (50%) with control. This secondary outcome concerns treatment use, not proof of kidney recovery. Open-label treatment and acidemia-based initiation criteria can influence use; urgent indications remain relevant.",
+        "reviewHref": "#metabolic-treatment"
+      },
+      "sourceAndApplicationScope": "BICARICU2 completeTable2includingfootnotes,Outcomes/Discussion/Limitations",
+      "stemKeyRationaleAnchorReviewed": true,
+      "fourIndividualChoicesReviewed": [
+        {
+          "index": 0,
+          "text": "Use by day 28 was lower with bicarbonate, but this does not establish improved kidney recovery",
+          "correctFlag": true,
+          "review": "Correct: day28 dialysis use lower,not proof of recovery."
+        },
+        {
+          "index": 1,
+          "text": "Use by day 90 was the primary outcome and proved a survival benefit",
+          "correctFlag": false,
+          "review": "Primaryendpoint wasday90mortality,not day90dialysis."
+        },
+        {
+          "index": 2,
+          "text": "The 35% versus 50% figures describe 90-day mortality",
+          "correctFlag": false,
+          "review": "35/50describe dialysisbyday28,notmortality."
+        },
+        {
+          "index": 3,
+          "text": "Less use establishes that urgent dialysis can be withheld for refractory hyperkalemia",
+          "correctFlag": false,
+          "review": "Urgentkidneyreplacement indications arenot erased by secondaryoutcome."
+        }
+      ]
+    },
+    {
+      "id": "acid-base-034",
+      "wholeQuestion": {
+        "id": "acid-base-034",
+        "question": "Why must ventilation be assessed before and during bicarbonate treatment of metabolic acidosis?",
+        "choices": [
+          "Buffering generates carbon dioxide that requires pulmonary elimination",
+          "A rise in serum bicarbonate guarantees that carbon dioxide is being eliminated",
+          "The kidneys remove all generated carbon dioxide, so ventilation is irrelevant",
+          "Monitoring sodium and fluid balance replaces assessment of carbon dioxide removal"
+        ],
+        "answer": 0,
+        "rationale": "Bicarbonate buffering can form carbon dioxide, which is excreted by the lungs. Inadequate elimination can increase carbon dioxide and worsen acid stress; a bicarbonate or pH rise alone does not establish adequate ventilation. Sodium and fluid monitoring address different risks.",
+        "reviewHref": "#metabolic-treatment"
+      },
+      "sourceAndApplicationScope": "FDA2026 label12.1-3,page5;French2019R3.5risks;critical-careacidosistreatment",
+      "stemKeyRationaleAnchorReviewed": true,
+      "fourIndividualChoicesReviewed": [
+        {
+          "index": 0,
+          "text": "Buffering generates carbon dioxide that requires pulmonary elimination",
+          "correctFlag": true,
+          "review": "Correct: CO2production needs lungelimination."
+        },
+        {
+          "index": 1,
+          "text": "A rise in serum bicarbonate guarantees that carbon dioxide is being eliminated",
+          "correctFlag": false,
+          "review": "Bicarbonate rise doesnot prove CO2clearance."
+        },
+        {
+          "index": 2,
+          "text": "The kidneys remove all generated carbon dioxide, so ventilation is irrelevant",
+          "correctFlag": false,
+          "review": "The label specifically identifieslungexcretion ofCO2;renalbicarbonate regulation isdifferent."
+        },
+        {
+          "index": 3,
+          "text": "Monitoring sodium and fluid balance replaces assessment of carbon dioxide removal",
+          "correctFlag": false,
+          "review": "Na/fluids andventilation addressdifferent risks."
+        }
+      ]
+    },
+    {
+      "id": "acid-base-035",
+      "wholeQuestion": {
+        "id": "acid-base-035",
+        "question": "An adult has DKA with pH 7.15 and potassium sufficient to begin insulin under the protocol. Which approach follows the 2024 consensus?",
+        "choices": [
+          "Use fluids, insulin, potassium surveillance and replacement, and precipitant treatment without routine bicarbonate",
+          "Replace insulin with bicarbonate until the bicarbonate concentration normalizes",
+          "Give routine bicarbonate whenever DKA pH is below 7.30",
+          "Stop potassium surveillance once the first serum potassium is normal"
+        ],
+        "answer": 0,
+        "rationale": "Routine bicarbonate is not recommended in adult DKA; the consensus advises considering it when pH is below 7.0. Fluids and insulin address the disease process, and serum potassium may fall during treatment despite a normal initial value.",
+        "reviewHref": "#metabolic-treatment"
+      },
+      "sourceAndApplicationScope": "2024consensus simultaneousDiabetologia fulltext:Fluidtherapy/Insulin/Potassium/Bicarbonate;adultscope",
+      "stemKeyRationaleAnchorReviewed": true,
+      "fourIndividualChoicesReviewed": [
+        {
+          "index": 0,
+          "text": "Use fluids, insulin, potassium surveillance and replacement, and precipitant treatment without routine bicarbonate",
+          "correctFlag": true,
+          "review": "Correct: insulin/fluids/electrolytes/cause,without routinebicarbonate atpH7.15."
+        },
+        {
+          "index": 1,
+          "text": "Replace insulin with bicarbonate until the bicarbonate concentration normalizes",
+          "correctFlag": false,
+          "review": "Bicarbonate doesnot replace disease-directedinsulin."
+        },
+        {
+          "index": 2,
+          "text": "Give routine bicarbonate whenever DKA pH is below 7.30",
+          "correctFlag": false,
+          "review": "Consensus severe-acidosisbicarbonateconsideration is pHbelow7.0,notroutinebelow7.30."
+        },
+        {
+          "index": 3,
+          "text": "Stop potassium surveillance once the first serum potassium is normal",
+          "correctFlag": false,
+          "review": "Normalinitialpotassiumdoesnot excludesubsequent decline."
+        }
+      ]
+    },
+    {
+      "id": "acid-base-036",
+      "wholeQuestion": {
+        "id": "acid-base-036",
+        "question": "Which pattern most strongly supports chloride-responsive metabolic alkalosis?",
+        "choices": [
+          "Vomiting with volume depletion, hypokalemia, and urine chloride 8 mmol/L",
+          "Hypertension and volume expansion with persistent urine chloride above 20 mmol/L",
+          "High urine chloride during active loop diuretic exposure without a volume assessment",
+          "A low bicarbonate concentration with diarrhea and a normal anion gap"
+        ],
+        "answer": 0,
+        "rationale": "Gastric chloride loss, volume depletion, hypokalemia, and urine chloride below 20 mmol/L support a chloride-responsive pattern. The hypertension pattern suggests mineralocorticoid activity, an active diuretic complicates a single urine result, and the diarrhea pattern suggests metabolic acidosis.",
+        "reviewHref": "#metabolic-treatment"
+      },
+      "sourceAndApplicationScope": "CoreCurriculum2022 workup/Clresponsive/Clresistant,Box1;book37/188/189directionand717Kcontext",
+      "stemKeyRationaleAnchorReviewed": true,
+      "fourIndividualChoicesReviewed": [
+        {
+          "index": 0,
+          "text": "Vomiting with volume depletion, hypokalemia, and urine chloride 8 mmol/L",
+          "correctFlag": true,
+          "review": "Correct: gastricCl loss,volumedepletion,Kdeficiency andurineCl8below20."
+        },
+        {
+          "index": 1,
+          "text": "Hypertension and volume expansion with persistent urine chloride above 20 mmol/L",
+          "correctFlag": false,
+          "review": "Hypertension/volumeexpansion/highClsuggestdifferentmechanism."
+        },
+        {
+          "index": 2,
+          "text": "High urine chloride during active loop diuretic exposure without a volume assessment",
+          "correctFlag": false,
+          "review": "DiureticrenalCl loss meansonehighurineCl withoutvolumecontextisinsufficient."
+        },
+        {
+          "index": 3,
+          "text": "A low bicarbonate concentration with diarrhea and a normal anion gap",
+          "correctFlag": false,
+          "review": "Diarrhea/lowbicarbonate describesmetabolicacidosis."
+        }
+      ]
+    },
+    {
+      "id": "acid-base-037",
+      "wholeQuestion": {
+        "id": "acid-base-037",
+        "question": "Why does correcting potassium deficiency help reverse some metabolic alkalosis?",
+        "choices": [
+          "It reduces renal mechanisms generating and retaining bicarbonate and supports bicarbonate secretion",
+          "It directly removes carbon dioxide without changing kidney handling",
+          "It treats alkalosis only by diluting the extracellular bicarbonate concentration",
+          "It eliminates the need to assess chloride loss and volume status"
+        ],
+        "answer": 0,
+        "rationale": "Potassium depletion promotes ammoniagenesis, bicarbonate generation and reabsorption, and impaired bicarbonate secretion. Repletion reverses these maintenance mechanisms but does not replace chloride and volume assessment or directly remove carbon dioxide.",
+        "reviewHref": "#metabolic-treatment"
+      },
+      "sourceAndApplicationScope": "CoreCurriculum2022 completePotassiumDeficiency paragraphs andClresponsivesection",
+      "stemKeyRationaleAnchorReviewed": true,
+      "fourIndividualChoicesReviewed": [
+        {
+          "index": 0,
+          "text": "It reduces renal mechanisms generating and retaining bicarbonate and supports bicarbonate secretion",
+          "correctFlag": true,
+          "review": "Correct:reversesmultiplekidney maintenance mechanisms."
+        },
+        {
+          "index": 1,
+          "text": "It directly removes carbon dioxide without changing kidney handling",
+          "correctFlag": false,
+          "review": "KrepletiondoesnotdirectlyremoveCO2."
+        },
+        {
+          "index": 2,
+          "text": "It treats alkalosis only by diluting the extracellular bicarbonate concentration",
+          "correctFlag": false,
+          "review": "Mechanismisnotmeredilution."
+        },
+        {
+          "index": 3,
+          "text": "It eliminates the need to assess chloride loss and volume status",
+          "correctFlag": false,
+          "review": "Ongoinglosses andvolume/Clstillrequireassessment."
+        }
+      ]
+    },
+    {
+      "id": "acid-base-038",
+      "wholeQuestion": {
+        "id": "acid-base-038",
+        "question": "Which situation most appropriately prompts consideration of acetazolamide for metabolic alkalosis?",
+        "choices": [
+          "A selected edematous patient in whom further volume expansion is undesirable, after potassium and kidney risks are assessed",
+          "A volume-depleted vomiting patient in place of assessing and correcting chloride and fluid losses",
+          "A patient with severe untreated hypokalemia, because acetazolamide prevents further potassium loss",
+          "A patient with isolated respiratory acidosis, because acetazolamide restores ventilation"
+        ],
+        "answer": 0,
+        "rationale": "Acetazolamide promotes renal bicarbonate excretion when further volume expansion is undesirable. It can worsen potassium loss, and impaired renal clearance limits use. It does not replace correction of volume and chloride depletion or restore ventilation in respiratory acidosis.",
+        "reviewHref": "#metabolic-treatment"
+      },
+      "sourceAndApplicationScope": "AchantiSzerlip2023 actuallyreadwholeTreatmentofMetabolicAlkalosis section;CoreCurriculum2022 case2Question4 acetazolamide paragraph",
+      "stemKeyRationaleAnchorReviewed": true,
+      "fourIndividualChoicesReviewed": [
+        {
+          "index": 0,
+          "text": "A selected edematous patient in whom further volume expansion is undesirable, after potassium and kidney risks are assessed",
+          "correctFlag": true,
+          "review": "Correct:selectedpatientwhereexpansionundesirable,afterK/renalassessment."
+        },
+        {
+          "index": 1,
+          "text": "A volume-depleted vomiting patient in place of assessing and correcting chloride and fluid losses",
+          "correctFlag": false,
+          "review": "Volume/Clloss remainsimportant;acetazolamideeffectpartlybluntedwithECFcontraction."
+        },
+        {
+          "index": 2,
+          "text": "A patient with severe untreated hypokalemia, because acetazolamide prevents further potassium loss",
+          "correctFlag": false,
+          "review": "AcetazolamidecanworsenKloss,notpreventit."
+        },
+        {
+          "index": 3,
+          "text": "A patient with isolated respiratory acidosis, because acetazolamide restores ventilation",
+          "correctFlag": false,
+          "review": "Doesnotrestoreventilationintheprimaryrespiratorydisorder."
+        }
+      ]
+    },
+    {
+      "id": "acid-base-039",
+      "wholeQuestion": {
+        "id": "acid-base-039",
+        "question": "Why is hydrochloric acid infusion an uncommon specialist rescue intervention for severe refractory metabolic alkalosis?",
+        "choices": [
+          "Direct acid administration requires central access and close monitoring of the response and overcorrection risk",
+          "It is preferred before chloride and potassium deficits are assessed",
+          "A peripheral infusion is sufficient whenever serum bicarbonate is high",
+          "Its use eliminates the need to identify and treat the alkalosis mechanism"
+        ],
+        "answer": 0,
+        "rationale": "The critical-care treatment review describes central administration only in selected refractory alkalosis. Preparation, access, and serial acid-base and electrolyte assessment require specialist care; it is not routine first-line replacement and does not remove the underlying cause.",
+        "reviewHref": "#metabolic-treatment"
+      },
+      "sourceAndApplicationScope": "AchantiSzerlip2023 actuallyreadwholeTreatmentofMetabolicAlkalosis section;noHCl dosingprotocolintroduced",
+      "stemKeyRationaleAnchorReviewed": true,
+      "fourIndividualChoicesReviewed": [
+        {
+          "index": 0,
+          "text": "Direct acid administration requires central access and close monitoring of the response and overcorrection risk",
+          "correctFlag": true,
+          "review": "Correct:centralaccess/closeresponse monitoringforselectedrescue."
+        },
+        {
+          "index": 1,
+          "text": "It is preferred before chloride and potassium deficits are assessed",
+          "correctFlag": false,
+          "review": "Notroutinefirstlinebeforedeficitsassessed."
+        },
+        {
+          "index": 2,
+          "text": "A peripheral infusion is sufficient whenever serum bicarbonate is high",
+          "correctFlag": false,
+          "review": "The source describes central,notperipheral administration."
+        },
+        {
+          "index": 3,
+          "text": "Its use eliminates the need to identify and treat the alkalosis mechanism",
+          "correctFlag": false,
+          "review": "Underlyingcause treatment remainsnecessary."
+        }
+      ]
+    },
+    {
+      "id": "acid-base-040",
+      "wholeQuestion": {
+        "id": "acid-base-040",
+        "question": "Which monitoring plan best supports cause-directed metabolic acidosis treatment?",
+        "choices": [
+          "Reassess perfusion, ventilation, pH and PaCO₂, electrolytes, fluid balance, and cause-specific markers at an acuity-matched interval",
+          "Follow pH alone because normalization establishes cause resolution",
+          "Follow sodium and fluid balance but omit ventilation and the blood gas after bicarbonate",
+          "Stop electrolyte checks after one normal potassium despite ongoing insulin or alkali treatment"
+        ],
+        "answer": 0,
+        "rationale": "Clinical response and cause-specific markers must be assessed alongside acid-base and treatment risks. pH alone does not prove cause resolution; sodium surveillance does not assess carbon dioxide elimination; insulin and alkali can alter potassium after a normal initial value.",
+        "reviewHref": "#metabolic-treatment"
+      },
+      "sourceAndApplicationScope": "French2019 R2.1-3/R3.5 andFDA12.3;2024DKA Potassiummonitoring;NaS acuity-matched monitoring synthesis",
+      "stemKeyRationaleAnchorReviewed": true,
+      "fourIndividualChoicesReviewed": [
+        {
+          "index": 0,
+          "text": "Reassess perfusion, ventilation, pH and PaCO₂, electrolytes, fluid balance, and cause-specific markers at an acuity-matched interval",
+          "correctFlag": true,
+          "review": "Correct:clinical,cause-specific,acid-base andtreatment-risk response."
+        },
+        {
+          "index": 1,
+          "text": "Follow pH alone because normalization establishes cause resolution",
+          "correctFlag": false,
+          "review": "pHalone doesnot establishcauseresolution."
+        },
+        {
+          "index": 2,
+          "text": "Follow sodium and fluid balance but omit ventilation and the blood gas after bicarbonate",
+          "correctFlag": false,
+          "review": "Na/fluidssurveillance omitsventilationandgas."
+        },
+        {
+          "index": 3,
+          "text": "Stop electrolyte checks after one normal potassium despite ongoing insulin or alkali treatment",
+          "correctFlag": false,
+          "review": "One normalKdoesnot justify stopping checks during ongoinginsulin/alkali."
+        }
+      ]
+    },
+    {
+      "id": "acid-base-092",
+      "wholeQuestion": {
+        "id": "acid-base-092",
+        "question": "A patient with repeated vomiting has pH 7.52, HCO₃⁻ 38 mmol/L, hypokalemia, volume depletion, and urine chloride 8 mmol/L. Which interpretation best fits?",
+        "choices": [
+          "Chloride-responsive metabolic alkalosis",
+          "Chloride-resistant alkalosis from mineralocorticoid excess with volume expansion",
+          "Primary respiratory alkalosis as the explanation for the raised bicarbonate",
+          "Normal-gap metabolic acidosis from gastrointestinal bicarbonate loss"
+        ],
+        "answer": 0,
+        "rationale": "Alkalemia with raised bicarbonate identifies a metabolic alkalosis pattern. Vomiting, volume depletion, potassium deficiency, and urine chloride below 20 mmol/L support chloride responsiveness. The other choices do not fit the stated mechanism and values; the complete blood gas is still needed to assess additional disorders.",
+        "reviewHref": "#metabolic-treatment"
+      },
+      "sourceAndApplicationScope": "Book37/188/189metabolicdirection,717Kcontext;CoreCurriculum2022 Clresponsive workup/treatment",
+      "stemKeyRationaleAnchorReviewed": true,
+      "fourIndividualChoicesReviewed": [
+        {
+          "index": 0,
+          "text": "Chloride-responsive metabolic alkalosis",
+          "correctFlag": true,
+          "review": "Correct:alkalemia/highbicarbonate plusgastricCl loss,Kdeficit,lowurineClandvolumedepletion."
+        },
+        {
+          "index": 1,
+          "text": "Chloride-resistant alkalosis from mineralocorticoid excess with volume expansion",
+          "correctFlag": false,
+          "review": "StatedvolumeClpattern doesnotfitmineralocorticoidvolumeexpansion."
+        },
+        {
+          "index": 2,
+          "text": "Primary respiratory alkalosis as the explanation for the raised bicarbonate",
+          "correctFlag": false,
+          "review": "Raisedbicarbonateisnotexplainedascompensationforprimaryrespiratoryalkalosis."
+        },
+        {
+          "index": 3,
+          "text": "Normal-gap metabolic acidosis from gastrointestinal bicarbonate loss",
+          "correctFlag": false,
+          "review": "Highbicarbonate/alkalemia opposite metabolicacidosis;wholegas stillneededformixedprocess."
+        }
+      ]
+    },
+    {
+      "id": "acid-base-0910",
+      "wholeQuestion": {
+        "id": "acid-base-0910",
+        "question": "A critically ill adult with severe metabolic acidemia (pH 7.16) and stage 3 AKI is considered for bicarbonate. Which interpretation is most defensible?",
+        "choices": [
+          "Define the objective and assess ventilation, sodium and fluid load, electrolytes, cause, and kidney replacement indications without promising a mortality benefit",
+          "Promise a survival benefit because BICARICU-2 patients received dialysis less often",
+          "Treat the pH response as proof of kidney recovery and stop assessing dialysis indications",
+          "Apply the trial result to DKA and toxic alcohol poisoning without checking its exclusions"
+        ],
+        "answer": 0,
+        "rationale": "BICARICU-2 found no statistically significant 90-day mortality reduction in its studied population, while kidney replacement therapy was used less often by day 28. It excluded ketoacidosis and certain poisonings. Treatment must retain a defined objective, risk monitoring, and cause-directed and kidney replacement assessment.",
+        "reviewHref": "#metabolic-treatment"
+      },
+      "sourceAndApplicationScope": "BICARICU2 Methods/primaryanalysis/Table2/limitations;French riskandcauseassessment;notfulltrialeligibilitycasecertification",
+      "stemKeyRationaleAnchorReviewed": true,
+      "fourIndividualChoicesReviewed": [
+        {
+          "index": 0,
+          "text": "Define the objective and assess ventilation, sodium and fluid load, electrolytes, cause, and kidney replacement indications without promising a mortality benefit",
+          "correctFlag": true,
+          "review": "Correct:definedobjective/risks/cause/KRTwithoutpromisedsurvival."
+        },
+        {
+          "index": 1,
+          "text": "Promise a survival benefit because BICARICU-2 patients received dialysis less often",
+          "correctFlag": false,
+          "review": "Lessdialysisnotprovenmortalitybenefit."
+        },
+        {
+          "index": 2,
+          "text": "Treat the pH response as proof of kidney recovery and stop assessing dialysis indications",
+          "correctFlag": false,
+          "review": "pHresponsenotkidneyrecoveryordisappearanceofKRTindications."
+        },
+        {
+          "index": 3,
+          "text": "Apply the trial result to DKA and toxic alcohol poisoning without checking its exclusions",
+          "correctFlag": false,
+          "review": "ExcludedDKA/specifiedpoisonings cannotreceiveextrapolatedtrialregimen."
+        }
+      ]
+    }
+  ],
+  "embeddedWholeCheck": {
+    "wholeCheck": {
+      "question": "Which interpretation of BICARICU-2 is most defensible for its critically ill adult population with severe metabolic acidemia and stage 2 or 3 AKI?",
+      "choices": [
+        "No statistically significant reduction in 90-day mortality was found, while kidney replacement therapy by day 28 was used less often",
+        "Less kidney replacement therapy establishes that bicarbonate improved 90-day survival",
+        "The trial establishes routine bicarbonate treatment for DKA because all severe acidosis has the same mechanism",
+        "A higher pH establishes kidney recovery, so other kidney replacement indications can be disregarded"
+      ],
+      "answer": 0,
+      "rationale": "The primary mortality result was not statistically significant; less kidney replacement therapy was a secondary outcome. Neither that outcome nor a pH change proves recovery or survival benefit. The trial excluded ketoacidosis and certain poisonings, and urgent kidney replacement indications still require assessment.",
+      "reviewHref": "#metabolic-treatment"
+    },
+    "sourceAndApplicationScope": "BICARICU2 Methods/primaryanalysis/completeTable2/limitations",
+    "fourIndividualChoicesReviewed": [
+      {
+        "index": 0,
+        "text": "No statistically significant reduction in 90-day mortality was found, while kidney replacement therapy by day 28 was used less often",
+        "correctFlag": true,
+        "review": "Correct:primarymortality andsecondaryKRTseparated."
+      },
+      {
+        "index": 1,
+        "text": "Less kidney replacement therapy establishes that bicarbonate improved 90-day survival",
+        "correctFlag": false,
+        "review": "SecondaryKRTuse doesnotprovesurvival."
+      },
+      {
+        "index": 2,
+        "text": "The trial establishes routine bicarbonate treatment for DKA because all severe acidosis has the same mechanism",
+        "correctFlag": false,
+        "review": "Ketoacidosis excluded;mechanismsnotidentical."
+      },
+      {
+        "index": 3,
+        "text": "A higher pH establishes kidney recovery, so other kidney replacement indications can be disregarded",
+        "correctFlag": false,
+        "review": "pH isnotrecoveryandKRTindicationspersist."
+      }
+    ]
+  },
+  "primarySourceReview": [
+    {
+      "source": "SuppliedRxPrep2023",
+      "originalBookSha256": "5e60f0b3ce20601985515c259c9503bd7ee2681836efecf03906a7da3dddf6ef",
+      "completePdfPagesReadViewed": [
+        37,
+        188,
+        189,
+        190,
+        632,
+        717,
+        720,
+        724
+      ],
+      "printedFooterScope": {
+        "37": "25",
+        "188": "180",
+        "189": "181",
+        "190": "182",
+        "632": "624;Chapter44",
+        "717": "709 inferred;lastdigitclipped,exactPDFpage preferred",
+        "720": "712",
+        "724": "716"
+      },
+      "scope": "Acidbasedirection/bicarbonate-carbonicacidbuffer andKlossmechanismcontext. 720/724readforscopetriageonly;no newnitroprusside/sedationdosecertification. 190contextread,no newbufferionizationregimencertification. BookPDF632/printed624 wholepage andtreatmentbox read/viewed: fluids/regularinsulin/Ksurveillance andbicarbonate ifpHbelow6.9. Approved2024adultconsensus supersedes that selectivebicarbonate threshold withpHbelow7.0 andadds explicitKbelow3.5insulindelay/resumeabove3.5; newerprimaryguidance isdistinguished frombook. No fullbookDKAdiagnostic/fluid/insulindoseprotocolcertification. Relevantbookacidbasepages donotestablishmodern2025trial orurineCl-basedalkalosismechanisms;explicithumanapproved primarysupplementation. Bookblood-gascases31/32areillustrativeandnotcopiedasfullyconsistentABGs;no newwholefoundationscertification."
+    },
+    {
+      "source": "Frenchexpertpanel2019",
+      "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6695455/",
+      "fullXmlSha256": "3bbd562c56de9d17943e36e8a7372f92f7aa53a2925ad352fba3e6a47e52697d",
+      "actuallyRead": "CompleteR2.1-3 andR3.5-10includingrationales;Table2whole;R3.6olderAKIsurvivalsignalcomparedwith2025trial.",
+      "scope": "Cause/severity/monitoring/base-loss selectedalkali andsalicylatescope. No claimthat2019grade2+prognosisrecommendation provesbenefitafter2025trial;no newuniversalKRTpHcutoff."
+    },
+    {
+      "source": "BICARICU2JAMA2025",
+      "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12573113/",
+      "doi": "10.1001/jama.2025.20231",
+      "online": "2025-10-29",
+      "issue": "2025-12-09",
+      "actualPrimaryTextRetained": [
+        "bicaricu2-web-methods.txt",
+        "bicaricu2-web-table-and-limitations.txt"
+      ],
+      "actuallyRead": "Methods/eligibility/exclusions/intervention,primaryanalysis,WHOLETable2/allfootnotes,discussion/limitations. Trialfigures/supplementtablesnotnewlycertified.",
+      "scope": "627analyzed/640randomized,adult43FrenchICUs;day90mortality195/314vs193/313;day28KRT109/314vs157/313;openlabel/exclusions/secondarynotproofkidneyrecovery. Maintextstates17eligibilityoutliers;no newflowchartfigureclaim."
+    },
+    {
+      "source": "DoVasquezSoleimaniCoreCurriculum2022",
+      "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10947768/",
+      "doi": "10.1053/j.ajkd.2021.12.016",
+      "issue": "2022-10;PMCavailability2024-03-18notclinicalrevision",
+      "fullXmlSha256": "c71448729986db067436cfc552a60f5aa9704eb09141847a01f65541fecfdb79",
+      "actuallyRead": "Introduction/generation-maintenance,Box1,diureticmechanisms,completeKdeficiency,workup andchloride-responsive/resistantsections,case2acetazolamideparagraph. Figure6captionread;imageandmoleculardiagramsnotusedornewlycertified.",
+      "thresholdScope": "<20Clresponsive,>20Clresistantintext;exact20notassignedautomatically;volume/BP/renalClwasting andactive diureticsqualifyinterpretation."
+    },
+    {
+      "source": "2024adultDKA/HHSconsensus simultaneousDiabetologia publication",
+      "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11343900/",
+      "doi": "10.1007/s00125-024-06183-8",
+      "fullXmlSha256": "6f63be2ff5309d444bcc946344666df478db8b709df3b9e864d67f36edcc4def",
+      "actuallyRead": "Treatment setting,completeFluidtherapy/Insulin/Potassium/Bicarbonateparagraphs andresolutioncontext. Figuresand fullHHSdoseprotocolnotnewlycertified.",
+      "scope": "AdultDKAfluid/insulin/Krisk/lowKdelay andselectivepHbelow7.0bicarbonate;no newinsulin/bicarbonate/Kinfusiondose orfullDKAmodulecertification."
+    },
+    {
+      "source": "AchantiSzerlipcriticalcarereview2023",
+      "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10101555/",
+      "issue": "2023-01;online2022-08-23",
+      "actualPrimarySectionFile": "critical-treatment-web-section.txt",
+      "actuallyRead": "WholeTreatmentofMetabolicAlkalosissection via publicweb toolsearchprimaryPMCcontent;abstractandAcidosistreatment contextread. FullXMLendpoint500;no claimofcompletepaperorfigurecertification.",
+      "scope": "Selectedacetazolamidewhenexpansionundesirable,Kmonitoring,andcentralHClrescue;no infusiondose/rate/targetthresholdprotocolcopied. OlderAKImortalitystatementnotusedas2025benefitproof."
+    },
+    {
+      "source": "FDAsodiumbicarbonatelabel2026",
+      "href": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220790Orig1s000lbl.pdf",
+      "referenceID": "5831325",
+      "revision": "7/2026",
+      "pdfSha256": "8d2f2e40525860cf5ae8b2bfc128915d255b6fcf146c608ff2c136b4b7d9a533",
+      "completePdfPagesReadViewed": [
+        1,
+        5
+      ],
+      "scope": "Amneal1.26%ready-to-use150mEq/1000mL infusionbag,onlymechanism/CO2lungelimination12.1-3andselectedrisksused. No borrowedconcentration/dose/administrationinstructionforBICARICU24.2%orotherproducts;notfullproductprotocolcertification."
+    }
+  ],
+  "numericChecks": [
+    {
+      "claim": "day90mortality-bicarbonate",
+      "numerator": 195,
+      "denominator": 314,
+      "recomputedPercent": "62.1",
+      "status": "passed"
+    },
+    {
+      "claim": "day90mortality-control",
+      "numerator": 193,
+      "denominator": 313,
+      "recomputedPercent": "61.7",
+      "status": "passed"
+    },
+    {
+      "claim": "day28KRT-bicarbonate",
+      "numerator": 109,
+      "denominator": 314,
+      "recomputedPercent": "35",
+      "status": "passed"
+    },
+    {
+      "claim": "day28KRT-control",
+      "numerator": 157,
+      "denominator": 313,
+      "recomputedPercent": "50",
+      "status": "passed"
+    },
+    {
+      "claim": "DKAcasepH",
+      "value": "7.15",
+      "comparison": "greater 7.0",
+      "status": "passed"
+    },
+    {
+      "claim": "vomitingpH",
+      "value": "7.52",
+      "comparison": "greater 7.45",
+      "status": "passed"
+    },
+    {
+      "claim": "vomitingHCO3",
+      "value": "38",
+      "comparison": "greater 26",
+      "status": "passed"
+    },
+    {
+      "claim": "vomitingurineCl",
+      "value": "8",
+      "comparison": "less 20",
+      "status": "passed"
+    },
+    {
+      "claim": "Adult2024potassiumthreshold",
+      "reading": "Below3.5:replaceK/delayinsulin;resumeabove3.5. Exactequalboundarynotinvented.",
+      "status": "directsourcechecked"
+    }
+  ],
+  "cumulativeReview": {
+    "wholeReviewedDerivatives": [
+      "50"
+    ],
+    "all1184PriorIdsRetained": true,
+    "all1183UnchangedPriorWholeObjectsExact": true,
+    "fourUnchangedAcidBaseDerivativesNotNewlyCertified": true
+  },
+  "preservation": {
+    "status": "passed",
+    "wholeScopedLessonExact": true,
+    "wholeReviewedExistingQuestions": 12,
+    "allReviewedChoiceCount": 48,
+    "distinctNewQuestions": 0,
+    "wholeBankCount": 101,
+    "unchangedWholeBankObjects": 89,
+    "unchangedOtherLessons": 5,
+    "other231WholeModulesExact": true,
+    "all1183UnchangedPriorWholeCumulativeObjectsExact": true,
+    "priorCumulativeIdsPreserved": 1184,
+    "wholeCumulativeChangedFromReviewedOrigin": 1,
+    "newDerivedCumulativeWholeObjects": 0,
+    "cumulativeTotal": 1184,
+    "existingFigureBytesUnchanged": true,
+    "allOriginalQuestionIdsAndKeysPreserved": true,
+    "wholeModuleVerified": false
+  },
+  "validation": {
+    "structuralAudit": {
+      "status": "passed",
+      "result": {
+        "modules": 1,
+        "questions": 101,
+        "hardErrors": [],
+        "sourceGaps": [],
+        "sizeAdvisories": [],
+        "thinLessons": [],
+        "weakestModules": [
+          {
+            "module": "acid-base-interpretation",
+            "lessons": 6,
+            "questions": 101,
+            "minimumLessonCoverage": 8
+          }
+        ]
+      },
+      "guardedNpmHookExecuted": true
+    },
+    "build": {
+      "status": "passed",
+      "exitCode": 0,
+      "command": "npm run build (required prebuild storage gate)",
+      "externalCandidate": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/fluid-broader-metabolic-treatment-20261007/candidate"
+    },
+    "managedBrowser": {
+      "status": "passed",
+      "results": [
+        {
+          "width": 1440,
+          "wholeLessonBodiesExact": 6,
+          "allLessonMetadataExact": true,
+          "unchangedFigureTextExact": true,
+          "embeddedCheckAllFourChoicesGraded": true,
+          "wholeQuestionsShuffledChoicesKeyRationaleAndCorrectIncorrectFeedback": 12,
+          "allReferencesExact": 8,
+          "all1184PriorCumulativeIdsPreserved": true,
+          "all1183UnchangedCumulativeWholeObjectsExact": true,
+          "cumulativeWholeObjectsGradedBothWays": 1,
+          "noHorizontalOverflow": true
+        },
+        {
+          "width": 390,
+          "wholeLessonBodiesExact": 6,
+          "allLessonMetadataExact": true,
+          "unchangedFigureTextExact": true,
+          "embeddedCheckAllFourChoicesGraded": true,
+          "wholeQuestionsShuffledChoicesKeyRationaleAndCorrectIncorrectFeedback": 12,
+          "allReferencesExact": 8,
+          "all1184PriorCumulativeIdsPreserved": true,
+          "all1183UnchangedCumulativeWholeObjectsExact": true,
+          "cumulativeWholeObjectsGradedBothWays": 1,
+          "noHorizontalOverflow": true
+        }
+      ],
+      "figureWidths": [
+        320,
+        390,
+        720,
+        1440
+      ],
+      "captures": [
+        "captures/body-0-1440.png",
+        "captures/body-1-1440.png",
+        "captures/body-2-1440.png",
+        "captures/body-3-1440.png",
+        "captures/body-4-1440.png",
+        "captures/body-5-1440.png",
+        "captures/summary-1440.png",
+        "captures/concepts-1440.png",
+        "captures/keypoints-1440.png",
+        "captures/application-1440.png",
+        "captures/figure-1440.png",
+        "captures/check-1440.png",
+        "captures/references-1440.png",
+        "captures/bank-acid-base-040-1440.png",
+        "captures/bank-acid-base-037-1440.png",
+        "captures/bank-acid-base-039-1440.png",
+        "captures/bank-acid-base-035-1440.png",
+        "captures/bank-acid-base-036-1440.png",
+        "captures/bank-acid-base-033-1440.png",
+        "captures/bank-acid-base-092-1440.png",
+        "captures/bank-acid-base-034-1440.png",
+        "captures/bank-acid-base-0910-1440.png",
+        "captures/bank-acid-base-031-1440.png",
+        "captures/bank-acid-base-038-1440.png",
+        "captures/bank-acid-base-032-1440.png",
+        "captures/cumulative-cumulative-acid-base-interpretation-acid-base-0910-1440.png",
+        "captures/body-0-390.png",
+        "captures/body-1-390.png",
+        "captures/body-2-390.png",
+        "captures/body-3-390.png",
+        "captures/body-4-390.png",
+        "captures/body-5-390.png",
+        "captures/summary-390.png",
+        "captures/concepts-390.png",
+        "captures/keypoints-390.png",
+        "captures/application-390.png",
+        "captures/figure-390.png",
+        "captures/check-390.png",
+        "captures/references-390.png",
+        "captures/bank-acid-base-040-390.png",
+        "captures/bank-acid-base-037-390.png",
+        "captures/bank-acid-base-039-390.png",
+        "captures/bank-acid-base-035-390.png",
+        "captures/bank-acid-base-036-390.png",
+        "captures/bank-acid-base-033-390.png",
+        "captures/bank-acid-base-092-390.png",
+        "captures/bank-acid-base-034-390.png",
+        "captures/bank-acid-base-0910-390.png",
+        "captures/bank-acid-base-031-390.png",
+        "captures/bank-acid-base-038-390.png",
+        "captures/bank-acid-base-032-390.png",
+        "captures/cumulative-cumulative-acid-base-interpretation-acid-base-0910-390.png",
+        "captures/native-figure-320.png",
+        "captures/native-figure-720.png"
+      ],
+      "errors": []
+    },
+    "actualVisualInspection": {
+      "status": "passed",
+      "actuallyViewed": [
+        {
+          "file": "captures/boards/board-00.png",
+          "sha256": "07b80b0449d8dbe58a7c0e016efa4097bd37f385321b469dfc36a49b15698d3c",
+          "actuallyViewed": true
+        },
+        {
+          "file": "captures/boards/board-01.png",
+          "sha256": "029b68264c8505fe954f876e48a92d4c63838c998d5f639868d56c7eb4345085",
+          "actuallyViewed": true
+        },
+        {
+          "file": "captures/boards/board-02.png",
+          "sha256": "6420106801b14ae1df849aca564eced5789493c3f47a487c2f848d4e6cfa2338",
+          "actuallyViewed": true
+        },
+        {
+          "file": "captures/boards/board-03.png",
+          "sha256": "2da2f7cabb9b43c4bcee39cdc065465cad30ac68d55329e9eacdc89d3ae12c69",
+          "actuallyViewed": true
+        },
+        {
+          "file": "captures/boards/board-04.png",
+          "sha256": "82b7eeffe59dab4dfe3f96fed7bc6bbf72a31a66e0df8cedebf67d82d4590b06",
+          "actuallyViewed": true
+        },
+        {
+          "file": "captures/boards/board-05.png",
+          "sha256": "b8089eedb057bcb086d423c9a4a369e75575ab41353e2e150ef869eee93bdcb2",
+          "actuallyViewed": true
+        },
+        {
+          "file": "captures/boards/board-06.png",
+          "sha256": "36c1a3545756052f7c16247390121956eaff8fd7d5997aefca1107f1cfda0dbd",
+          "actuallyViewed": true
+        },
+        {
+          "file": "captures/boards/board-07.png",
+          "sha256": "634860012e38c31c02d17d24eaca0fb92904814bf5c4d6070f7f3fd96534b74a",
+          "actuallyViewed": true
+        },
+        {
+          "file": "captures/native-figure-320.png",
+          "sha256": "ce5f25eb53b9f1a156e2166a05674b6e0bbffdae39b5b165d858015cca1c6fb5",
+          "actuallyViewed": true
+        },
+        {
+          "file": "captures/native-figure-720.png",
+          "sha256": "924a5447676a448a8ec7bb8583b9525d8c6c74f6e221b6ba17122abed4e27674",
+          "actuallyViewed": true
+        }
+      ],
+      "originalCaptures": 54,
+      "unscaledDesktopMobilePairs": 26,
+      "boardCount": 8,
+      "observations": "All six bodies, summary, concepts, key points, application, unchanged six-step conceptual figure, embedded check, eight references, twelve whole bank questions and one cumulative derivative inspected. Desktop and mobile text wraps legibly without clipping or overlap. Correct and incorrect feedback matches reviewed keys after shuffling. Native 320/720 figure inspected.",
+      "materialDefects": [],
+      "scope": "Conceptual workflow retained; no new anatomical or observed-data figure."
+    }
+  },
+  "originalDrafts": "Existing local module/bank bytes preserved as prefixes. Only scoped lesson/reference and twelve whole question reconciliations appended. Verified canonical external candidate; mixed original local runtime not certified.",
+  "privateEvidenceRoot": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/fluid-broader-metabolic-treatment-20261007/evidence",
+  "privateSourceFilesInGit": false,
+  "sourceComparison": "Whole metabolic treatment lesson expanded from four to six bodies, with cause-directed stabilization, adult DKA potassium/bicarbonate qualifications, bicarbonate ventilation and fluid/electrolyte monitoring, accurate BICARICU-2 primary mortality versus secondary day28 dialysis interpretation, and chloride/volume/potassium alkalosis mechanisms with selected rescue care. All twelve existing whole questions and 48 choices plus embedded check and four choices source-reviewed. Question092 now points to its reviewed metabolic-treatment context. No new dose regimen, IDs, questions or figure introduced. One cumulative derivative updated; all1184 prior IDs and1183 other whole objects retained. Other five lessons,89 bank objects and231 modules unchanged. Whole-module and broader closure remain open.",
+  "remaining": "Continue broader fluid dependencies and source-bound whole lesson reviews. Metabolic treatment is now scoped verified with twelve existing whole questions and one cumulative derivative; the other five acid-base lessons and 89 bank objects remain open. Nutrition care-planning review and prior nine calcium/adrenal reviews retain continuity. Chapter 1 printed 7/PDF19 entry15, Chapter11 fluid needs and broader assessment associations remain open. Use the external Learn lifecycle and preserve the IV-fluid checkpoint.",
+  "priorArchiveReopened": {
+    "status": "passed",
+    "archive": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/archives/fluid-broader-nutrition-care-plan-20261007",
+    "independentlyReopenedAndHashed": {
+      "source": 1519,
+      "evidence": 220,
+      "outputs": 0
+    },
+    "exactPriorRemote": "8ca01f6b840ffe4a441541808c0fe94064023c03",
+    "permanentDeletions": 0
+  },
+  "release": {
+    "branch": "audit/rxprep-content-2026-09-24",
+    "baseCommit": "8ca01f6b840ffe4a441541808c0fe94064023c03",
+    "commit": null,
+    "push": "pending",
+    "receipt": "fluid-broader-metabolic-treatment-release.json",
+    "mainMerge": "not performed",
+    "production": "not verified"
+  }
+}

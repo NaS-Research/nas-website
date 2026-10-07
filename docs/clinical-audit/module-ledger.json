@@ -139,7 +139,8 @@
         "phosphate-replacement-review.json",
         "fluid-parent-metadata-bibliography-review.json",
         "fluid-broader-question-reconciliation-review.json",
-        "fluid-broader-nutrition-care-plan-review.json"
+        "fluid-broader-nutrition-care-plan-review.json",
+        "fluid-broader-metabolic-treatment-review.json"
       ],
       "latestFluidIntakeLossReview": {
         "evidence": "enteral-nutrition-broader-fluid-intake-loss-review.json",
@@ -734,6 +735,44 @@
           "mainMerge": "not performed",
           "production": "not verified"
         }
+      },
+      "latestFluidBroaderMetabolicTreatmentReview": {
+        "evidence": "fluid-broader-metabolic-treatment-review.json",
+        "parentModuleSlug": "fluid-electrolyte-therapy",
+        "dependencyModuleSlug": "acid-base-interpretation",
+        "wholeDependencyLessonVerified": "metabolic-treatment",
+        "wholeParentModuleVerified": false,
+        "wholeDependencyModuleVerified": false,
+        "wholeGoalComplete": false,
+        "wholeLessonBodies": 6,
+        "wholeEmbeddedChecks": 1,
+        "embeddedChoicesReviewed": 4,
+        "existingWholeQuestionsReviewed": 12,
+        "existingChoiceReviewCount": 48,
+        "distinctNewQuestions": 0,
+        "newChoiceReviewCount": 0,
+        "reviewedCumulativeDerivatives": 1,
+        "priorCumulativeIdsRetained": 1184,
+        "unchangedPriorWholeCumulativeObjects": 1183,
+        "cumulativeTotal": 1184,
+        "preservedOtherAcidBaseLessons": 5,
+        "preservedOtherAcidBaseWholeQuestions": 89,
+        "other231WholeModuleObjectsExact": true,
+        "committedWholeModulesVerifiedAfter": 66,
+        "committedWholeModulesTotal": 232,
+        "moduleCountPercent": 28.45,
+        "chaptersVerifiedAfter": 7,
+        "chapterTotal": 82,
+        "chapterCountPercent": 8.54,
+        "release": {
+          "branch": "audit/rxprep-content-2026-09-24",
+          "baseCommit": "8ca01f6b840ffe4a441541808c0fe94064023c03",
+          "commit": null,
+          "push": "pending",
+          "receipt": "fluid-broader-metabolic-treatment-release.json",
+          "mainMerge": "not performed",
+          "production": "not verified"
+        }
       }
     },
     {
@@ -759,7 +798,8 @@
         },
         {
           "slug": "metabolic-treatment",
-          "status": "unreviewed"
+          "status": "verified",
+          "evidence": "fluid-broader-metabolic-treatment-review.json"
         },
         {
           "slug": "respiratory-integrated",
@@ -767,8 +807,48 @@
         }
       ],
       "questions": 101,
-      "status": "unreviewed",
-      "evidence": []
+      "status": "reviewing",
+      "evidence": [
+        "fluid-broader-metabolic-treatment-review.json"
+      ],
+      "latestFluidBroaderMetabolicTreatmentReview": {
+        "evidence": "fluid-broader-metabolic-treatment-review.json",
+        "parentModuleSlug": "fluid-electrolyte-therapy",
+        "dependencyModuleSlug": "acid-base-interpretation",
+        "wholeDependencyLessonVerified": "metabolic-treatment",
+        "wholeParentModuleVerified": false,
+        "wholeDependencyModuleVerified": false,
+        "wholeGoalComplete": false,
+        "wholeLessonBodies": 6,
+        "wholeEmbeddedChecks": 1,
+        "embeddedChoicesReviewed": 4,
+        "existingWholeQuestionsReviewed": 12,
+        "existingChoiceReviewCount": 48,
+        "distinctNewQuestions": 0,
+        "newChoiceReviewCount": 0,
+        "reviewedCumulativeDerivatives": 1,
+        "priorCumulativeIdsRetained": 1184,
+        "unchangedPriorWholeCumulativeObjects": 1183,
+        "cumulativeTotal": 1184,
+        "preservedOtherAcidBaseLessons": 5,
+        "preservedOtherAcidBaseWholeQuestions": 89,
+        "other231WholeModuleObjectsExact": true,
+        "committedWholeModulesVerifiedAfter": 66,
+        "committedWholeModulesTotal": 232,
+        "moduleCountPercent": 28.45,
+        "chaptersVerifiedAfter": 7,
+        "chapterTotal": 82,
+        "chapterCountPercent": 8.54,
+        "release": {
+          "branch": "audit/rxprep-content-2026-09-24",
+          "baseCommit": "8ca01f6b840ffe4a441541808c0fe94064023c03",
+          "commit": null,
+          "push": "pending",
+          "receipt": "fluid-broader-metabolic-treatment-release.json",
+          "mainMerge": "not performed",
+          "production": "not verified"
+        }
+      }
     },
     {
       "slug": "calcium-phosphorus-homeostasis",
