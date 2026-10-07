@@ -1,0 +1,228 @@
+{
+  "status": "content push verified",
+  "release": {
+    "branch": "audit/rxprep-content-2026-09-24",
+    "baseCommit": "8ca01f6b840ffe4a441541808c0fe94064023c03",
+    "commit": "89d950b838ffe3e8f846f6ea0ae3086c6e0e6f93",
+    "push": "verified",
+    "receipt": "fluid-broader-metabolic-treatment-release.json",
+    "remoteHashObserved": "89d950b838ffe3e8f846f6ea0ae3086c6e0e6f93",
+    "exactRemoteObservedByTool": true,
+    "remoteVerifiedAt": "2026-10-07T19:59:48.189176+00:00",
+    "mainMerge": "not performed",
+    "production": "not verified"
+  },
+  "verifiedScope": "One whole metabolic treatment lesson, embedded check and all four choices, twelve existing whole questions and all 48 choices, and one cumulative derivative. All 1184 prior cumulative IDs retained; 1183 prior whole objects unchanged. Whole parent/dependency modules, chapters and goal remain open.",
+  "validation": {
+    "structure": {
+      "status": "passed",
+      "result": {
+        "modules": 1,
+        "questions": 101,
+        "hardErrors": [],
+        "sourceGaps": [],
+        "sizeAdvisories": [],
+        "thinLessons": [],
+        "weakestModules": [
+          {
+            "module": "acid-base-interpretation",
+            "lessons": 6,
+            "questions": 101,
+            "minimumLessonCoverage": 8
+          }
+        ]
+      },
+      "guardedNpmHookExecuted": true
+    },
+    "build": {
+      "status": "passed",
+      "exitCode": 0,
+      "command": "npm run build (required prebuild storage gate)",
+      "externalCandidate": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/fluid-broader-metabolic-treatment-20261007/candidate"
+    },
+    "browser": {
+      "status": "passed",
+      "results": [
+        {
+          "width": 1440,
+          "wholeLessonBodiesExact": 6,
+          "allLessonMetadataExact": true,
+          "unchangedFigureTextExact": true,
+          "embeddedCheckAllFourChoicesGraded": true,
+          "wholeQuestionsShuffledChoicesKeyRationaleAndCorrectIncorrectFeedback": 12,
+          "allReferencesExact": 8,
+          "all1184PriorCumulativeIdsPreserved": true,
+          "all1183UnchangedCumulativeWholeObjectsExact": true,
+          "cumulativeWholeObjectsGradedBothWays": 1,
+          "noHorizontalOverflow": true
+        },
+        {
+          "width": 390,
+          "wholeLessonBodiesExact": 6,
+          "allLessonMetadataExact": true,
+          "unchangedFigureTextExact": true,
+          "embeddedCheckAllFourChoicesGraded": true,
+          "wholeQuestionsShuffledChoicesKeyRationaleAndCorrectIncorrectFeedback": 12,
+          "allReferencesExact": 8,
+          "all1184PriorCumulativeIdsPreserved": true,
+          "all1183UnchangedCumulativeWholeObjectsExact": true,
+          "cumulativeWholeObjectsGradedBothWays": 1,
+          "noHorizontalOverflow": true
+        }
+      ],
+      "figureWidths": [
+        320,
+        390,
+        720,
+        1440
+      ],
+      "captures": [
+        "captures/body-0-1440.png",
+        "captures/body-1-1440.png",
+        "captures/body-2-1440.png",
+        "captures/body-3-1440.png",
+        "captures/body-4-1440.png",
+        "captures/body-5-1440.png",
+        "captures/summary-1440.png",
+        "captures/concepts-1440.png",
+        "captures/keypoints-1440.png",
+        "captures/application-1440.png",
+        "captures/figure-1440.png",
+        "captures/check-1440.png",
+        "captures/references-1440.png",
+        "captures/bank-acid-base-040-1440.png",
+        "captures/bank-acid-base-037-1440.png",
+        "captures/bank-acid-base-039-1440.png",
+        "captures/bank-acid-base-035-1440.png",
+        "captures/bank-acid-base-036-1440.png",
+        "captures/bank-acid-base-033-1440.png",
+        "captures/bank-acid-base-092-1440.png",
+        "captures/bank-acid-base-034-1440.png",
+        "captures/bank-acid-base-0910-1440.png",
+        "captures/bank-acid-base-031-1440.png",
+        "captures/bank-acid-base-038-1440.png",
+        "captures/bank-acid-base-032-1440.png",
+        "captures/cumulative-cumulative-acid-base-interpretation-acid-base-0910-1440.png",
+        "captures/body-0-390.png",
+        "captures/body-1-390.png",
+        "captures/body-2-390.png",
+        "captures/body-3-390.png",
+        "captures/body-4-390.png",
+        "captures/body-5-390.png",
+        "captures/summary-390.png",
+        "captures/concepts-390.png",
+        "captures/keypoints-390.png",
+        "captures/application-390.png",
+        "captures/figure-390.png",
+        "captures/check-390.png",
+        "captures/references-390.png",
+        "captures/bank-acid-base-040-390.png",
+        "captures/bank-acid-base-037-390.png",
+        "captures/bank-acid-base-039-390.png",
+        "captures/bank-acid-base-035-390.png",
+        "captures/bank-acid-base-036-390.png",
+        "captures/bank-acid-base-033-390.png",
+        "captures/bank-acid-base-092-390.png",
+        "captures/bank-acid-base-034-390.png",
+        "captures/bank-acid-base-0910-390.png",
+        "captures/bank-acid-base-031-390.png",
+        "captures/bank-acid-base-038-390.png",
+        "captures/bank-acid-base-032-390.png",
+        "captures/cumulative-cumulative-acid-base-interpretation-acid-base-0910-390.png",
+        "captures/native-figure-320.png",
+        "captures/native-figure-720.png"
+      ],
+      "errors": []
+    },
+    "visual": {
+      "status": "passed",
+      "actuallyViewed": [
+        {
+          "file": "captures/boards/board-00.png",
+          "sha256": "07b80b0449d8dbe58a7c0e016efa4097bd37f385321b469dfc36a49b15698d3c",
+          "actuallyViewed": true
+        },
+        {
+          "file": "captures/boards/board-01.png",
+          "sha256": "029b68264c8505fe954f876e48a92d4c63838c998d5f639868d56c7eb4345085",
+          "actuallyViewed": true
+        },
+        {
+          "file": "captures/boards/board-02.png",
+          "sha256": "6420106801b14ae1df849aca564eced5789493c3f47a487c2f848d4e6cfa2338",
+          "actuallyViewed": true
+        },
+        {
+          "file": "captures/boards/board-03.png",
+          "sha256": "2da2f7cabb9b43c4bcee39cdc065465cad30ac68d55329e9eacdc89d3ae12c69",
+          "actuallyViewed": true
+        },
+        {
+          "file": "captures/boards/board-04.png",
+          "sha256": "82b7eeffe59dab4dfe3f96fed7bc6bbf72a31a66e0df8cedebf67d82d4590b06",
+          "actuallyViewed": true
+        },
+        {
+          "file": "captures/boards/board-05.png",
+          "sha256": "b8089eedb057bcb086d423c9a4a369e75575ab41353e2e150ef869eee93bdcb2",
+          "actuallyViewed": true
+        },
+        {
+          "file": "captures/boards/board-06.png",
+          "sha256": "36c1a3545756052f7c16247390121956eaff8fd7d5997aefca1107f1cfda0dbd",
+          "actuallyViewed": true
+        },
+        {
+          "file": "captures/boards/board-07.png",
+          "sha256": "634860012e38c31c02d17d24eaca0fb92904814bf5c4d6070f7f3fd96534b74a",
+          "actuallyViewed": true
+        },
+        {
+          "file": "captures/native-figure-320.png",
+          "sha256": "ce5f25eb53b9f1a156e2166a05674b6e0bbffdae39b5b165d858015cca1c6fb5",
+          "actuallyViewed": true
+        },
+        {
+          "file": "captures/native-figure-720.png",
+          "sha256": "924a5447676a448a8ec7bb8583b9525d8c6c74f6e221b6ba17122abed4e27674",
+          "actuallyViewed": true
+        }
+      ],
+      "originalCaptures": 54,
+      "unscaledDesktopMobilePairs": 26,
+      "boardCount": 8,
+      "observations": "All six bodies, summary, concepts, key points, application, unchanged six-step conceptual figure, embedded check, eight references, twelve whole bank questions and one cumulative derivative inspected. Desktop and mobile text wraps legibly without clipping or overlap. Correct and incorrect feedback matches reviewed keys after shuffling. Native 320/720 figure inspected.",
+      "materialDefects": [],
+      "scope": "Conceptual workflow retained; no new anatomical or observed-data figure."
+    }
+  },
+  "workingBoundary": {
+    "status": "passed",
+    "baselinePaths": 2095,
+    "allOutsideScopedPathsPreserved": true,
+    "stagedPaths": [
+      "src/data/modules/acidBaseInterpretation.js",
+      "src/data/questionBanks/acidBaseInterpretation.js",
+      "docs/clinical-audit/module-ledger.json",
+      "docs/clinical-audit/chapter-ledger.json",
+      "docs/clinical-audit/sequential-resume.json",
+      "docs/clinical-audit/fluid-broader-metabolic-treatment-review.json"
+    ],
+    "allStagedBlobsEqualVerifiedScopedRecords": true,
+    "allUnrelatedLedgerRowsExact": true,
+    "wholeModuleVerifiedCount": 66,
+    "wholeChapterVerifiedCount": 7
+  },
+  "remaining": "Continue broader fluid dependencies and source-bound whole lesson reviews. Metabolic treatment is now scoped verified with twelve existing whole questions and one cumulative derivative; the other five acid-base lessons and 89 bank objects remain open. Nutrition care-planning review and prior nine calcium/adrenal reviews retain continuity. Chapter 1 printed 7/PDF19 entry15, Chapter11 fluid needs and broader assessment associations remain open. Use the external Learn lifecycle and preserve the IV-fluid checkpoint.",
+  "committedWholeModules": {
+    "verified": 66,
+    "total": 232,
+    "percent": 28.45
+  },
+  "wholeChapters": {
+    "verified": 7,
+    "total": 82,
+    "percent": 8.54
+  },
+  "receiptCommit": "Follow-updocumentation commit;exactremotehash verifiedprivately afterpush."
+}
