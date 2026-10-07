@@ -418,9 +418,76 @@
         "pharmacy-isotonicity-calculations-review.json",
         "pharmacy-moles-millimoles-review.json",
         "pharmacy-milliequivalent-calculations-review.json",
-        "parenteral-nutrition-calculations-review.json"
+        "parenteral-nutrition-calculations-review.json",
+        "fluid-physiology-assessment-review.json"
       ],
-      "pdfRangeStatus": "start verified; end provisional"
+      "pdfRangeStatus": "start verified; end provisional",
+      "latestFluidPhysiologyAssessmentReview": {
+        "evidence": "fluid-physiology-assessment-review.json",
+        "wholeParentModuleVerified": false,
+        "wholeGoalComplete": false,
+        "wholeLessonKeys": [
+          "fluid-physiology-assessment"
+        ],
+        "wholeTeachingBodies": 7,
+        "newTeachingBodies": 4,
+        "wholeEmbeddedChecks": 1,
+        "embeddedChoices": 4,
+        "wholeFigures": 1,
+        "wholeBankQuestions": 20,
+        "wholeBankChoices": 80,
+        "wholeBankQuestionIds": [
+          "fluid-electrolyte-001",
+          "fluid-electrolyte-002",
+          "fluid-electrolyte-003",
+          "fluid-electrolyte-004",
+          "fluid-electrolyte-005",
+          "fluid-electrolyte-006",
+          "fluid-electrolyte-007",
+          "fluid-electrolyte-008",
+          "fluid-electrolyte-009",
+          "fluid-electrolyte-010",
+          "fluid-electrolyte-061",
+          "fluid-electrolyte-062",
+          "fluid-electrolyte-063",
+          "fluid-electrolyte-064",
+          "fluid-electrolyte-065",
+          "fluid-electrolyte-066",
+          "fluid-electrolyte-067",
+          "fluid-electrolyte-068",
+          "fluid-electrolyte-069",
+          "fluid-electrolyte-0610"
+        ],
+        "newQuestionIds": [],
+        "parentBankQuestions": 100,
+        "parentBodies": 26,
+        "parentReferences": 12,
+        "other80WholeQuestionObjectsUnchanged": true,
+        "otherFiveWholeLessonObjectsUnchanged": true,
+        "all100IdsKeysAnchorsAndOrderPreserved": true,
+        "other231ModuleObjectsUnchanged": true,
+        "changedDerivedCumulativeIds": [
+          "cumulative-fluid-electrolyte-therapy-fluid-electrolyte-001"
+        ],
+        "other1179CumulativeObjectsUnchanged": true,
+        "priorFeedingItems016And083Unchanged": true,
+        "broaderFeedingRegistryUniqueIdsUnchanged": 1510,
+        "committedWholeModulesVerifiedAfter": 66,
+        "committedWholeModulesTotal": 232,
+        "moduleCountPercent": 28.45,
+        "chaptersVerifiedAfter": 7,
+        "chapterTotal": 82,
+        "chapterCountPercent": 8.54,
+        "release": {
+          "branch": "audit/rxprep-content-2026-09-24",
+          "baseCommit": "b3b7da32108edaa3ce8d799c2cdf62ac4fcb9a5a",
+          "commit": null,
+          "push": "pending",
+          "receipt": "fluid-physiology-assessment-release.json",
+          "mainMerge": "not performed",
+          "production": "not verified"
+        }
+      }
     },
     {
       "chapter": 2,
@@ -2257,7 +2324,8 @@
         "enteral-nutrition-broader-cystic-fibrosis-longitudinal-review.json",
         "enteral-nutrition-broader-cystic-fibrosis-parent-review.json",
         "enteral-nutrition-current-inventory-review.json",
-        "enteral-nutrition-current-feeding-inventory.json"
+        "enteral-nutrition-current-feeding-inventory.json",
+        "fluid-physiology-assessment-review.json"
       ],
       "pdfRangeStatus": "All 20 pages visually verified",
       "verifiedModules": [
@@ -14550,6 +14618,72 @@
         "wholeModuleVerified": false,
         "wholeChapter11Verified": false,
         "wholeGoalComplete": false
+      },
+      "latestFluidPhysiologyAssessmentReview": {
+        "evidence": "fluid-physiology-assessment-review.json",
+        "wholeParentModuleVerified": false,
+        "wholeGoalComplete": false,
+        "wholeLessonKeys": [
+          "fluid-physiology-assessment"
+        ],
+        "wholeTeachingBodies": 7,
+        "newTeachingBodies": 4,
+        "wholeEmbeddedChecks": 1,
+        "embeddedChoices": 4,
+        "wholeFigures": 1,
+        "wholeBankQuestions": 20,
+        "wholeBankChoices": 80,
+        "wholeBankQuestionIds": [
+          "fluid-electrolyte-001",
+          "fluid-electrolyte-002",
+          "fluid-electrolyte-003",
+          "fluid-electrolyte-004",
+          "fluid-electrolyte-005",
+          "fluid-electrolyte-006",
+          "fluid-electrolyte-007",
+          "fluid-electrolyte-008",
+          "fluid-electrolyte-009",
+          "fluid-electrolyte-010",
+          "fluid-electrolyte-061",
+          "fluid-electrolyte-062",
+          "fluid-electrolyte-063",
+          "fluid-electrolyte-064",
+          "fluid-electrolyte-065",
+          "fluid-electrolyte-066",
+          "fluid-electrolyte-067",
+          "fluid-electrolyte-068",
+          "fluid-electrolyte-069",
+          "fluid-electrolyte-0610"
+        ],
+        "newQuestionIds": [],
+        "parentBankQuestions": 100,
+        "parentBodies": 26,
+        "parentReferences": 12,
+        "other80WholeQuestionObjectsUnchanged": true,
+        "otherFiveWholeLessonObjectsUnchanged": true,
+        "all100IdsKeysAnchorsAndOrderPreserved": true,
+        "other231ModuleObjectsUnchanged": true,
+        "changedDerivedCumulativeIds": [
+          "cumulative-fluid-electrolyte-therapy-fluid-electrolyte-001"
+        ],
+        "other1179CumulativeObjectsUnchanged": true,
+        "priorFeedingItems016And083Unchanged": true,
+        "broaderFeedingRegistryUniqueIdsUnchanged": 1510,
+        "committedWholeModulesVerifiedAfter": 66,
+        "committedWholeModulesTotal": 232,
+        "moduleCountPercent": 28.45,
+        "chaptersVerifiedAfter": 7,
+        "chapterTotal": 82,
+        "chapterCountPercent": 8.54,
+        "release": {
+          "branch": "audit/rxprep-content-2026-09-24",
+          "baseCommit": "b3b7da32108edaa3ce8d799c2cdf62ac4fcb9a5a",
+          "commit": null,
+          "push": "pending",
+          "receipt": "fluid-physiology-assessment-release.json",
+          "mainMerge": "not performed",
+          "production": "not verified"
+        }
       }
     },
     {
@@ -31162,13 +31296,33 @@
             "unrelatedDraftsPreserved": true
           },
           "wholeChapterSourceRead": false
+        },
+        {
+          "topic": "Fluid physiology and assessment dependency",
+          "printedPages": [
+            706,
+            708
+          ],
+          "pdfPages": [
+            714,
+            716
+          ],
+          "status": "reviewing",
+          "targets": [
+            "fluid-electrolyte-therapy"
+          ],
+          "evidence": "fluid-physiology-assessment-review.json",
+          "wholeCorrespondingModuleVerified": false,
+          "verifiedWholeLesson": "fluid-physiology-assessment",
+          "note": "One whole lesson/20questions plus approved primary references verified; full fluid/acute critical care chapter remains open."
         }
       ],
       "moduleSlugs": [
         "parenteral-nutrition-calculations",
         "parenteral-nutrition",
         "perioperative-critical-care-pharmacology",
-        "calcium-phosphorus-homeostasis"
+        "calcium-phosphorus-homeostasis",
+        "fluid-electrolyte-therapy"
       ],
       "findings": [
         "Rendered printed 716/PDF 724 confirms propofol 1.1 kcal/mL for PN calculation dependency; this does not verify the sedative table or clinical ICU module.",
@@ -31190,7 +31344,8 @@
         "enteral-nutrition-broader-perioperative-induction-review.json",
         "enteral-nutrition-broader-perioperative-nmba-review.json",
         "enteral-nutrition-broader-perioperative-hemostasis-review.json",
-        "enteral-nutrition-broader-perioperative-parent-review.json"
+        "enteral-nutrition-broader-perioperative-parent-review.json",
+        "fluid-physiology-assessment-review.json"
       ],
       "latestPhosphateRouteLabelReview": {
         "evidence": "enteral-nutrition-broader-phosphate-route-label-review.json",
@@ -32123,6 +32278,72 @@
         "enteralParentVerified": false,
         "wholeGoalComplete": false,
         "workingBoundary": "Current12 working lesson objects and96 question objects by stableID equal reviewed committed candidate. Original working question order and76 references preserved;61 committed references verified in candidate. Certification applies to assembled committed parent."
+      },
+      "latestFluidPhysiologyAssessmentReview": {
+        "evidence": "fluid-physiology-assessment-review.json",
+        "wholeParentModuleVerified": false,
+        "wholeGoalComplete": false,
+        "wholeLessonKeys": [
+          "fluid-physiology-assessment"
+        ],
+        "wholeTeachingBodies": 7,
+        "newTeachingBodies": 4,
+        "wholeEmbeddedChecks": 1,
+        "embeddedChoices": 4,
+        "wholeFigures": 1,
+        "wholeBankQuestions": 20,
+        "wholeBankChoices": 80,
+        "wholeBankQuestionIds": [
+          "fluid-electrolyte-001",
+          "fluid-electrolyte-002",
+          "fluid-electrolyte-003",
+          "fluid-electrolyte-004",
+          "fluid-electrolyte-005",
+          "fluid-electrolyte-006",
+          "fluid-electrolyte-007",
+          "fluid-electrolyte-008",
+          "fluid-electrolyte-009",
+          "fluid-electrolyte-010",
+          "fluid-electrolyte-061",
+          "fluid-electrolyte-062",
+          "fluid-electrolyte-063",
+          "fluid-electrolyte-064",
+          "fluid-electrolyte-065",
+          "fluid-electrolyte-066",
+          "fluid-electrolyte-067",
+          "fluid-electrolyte-068",
+          "fluid-electrolyte-069",
+          "fluid-electrolyte-0610"
+        ],
+        "newQuestionIds": [],
+        "parentBankQuestions": 100,
+        "parentBodies": 26,
+        "parentReferences": 12,
+        "other80WholeQuestionObjectsUnchanged": true,
+        "otherFiveWholeLessonObjectsUnchanged": true,
+        "all100IdsKeysAnchorsAndOrderPreserved": true,
+        "other231ModuleObjectsUnchanged": true,
+        "changedDerivedCumulativeIds": [
+          "cumulative-fluid-electrolyte-therapy-fluid-electrolyte-001"
+        ],
+        "other1179CumulativeObjectsUnchanged": true,
+        "priorFeedingItems016And083Unchanged": true,
+        "broaderFeedingRegistryUniqueIdsUnchanged": 1510,
+        "committedWholeModulesVerifiedAfter": 66,
+        "committedWholeModulesTotal": 232,
+        "moduleCountPercent": 28.45,
+        "chaptersVerifiedAfter": 7,
+        "chapterTotal": 82,
+        "chapterCountPercent": 8.54,
+        "release": {
+          "branch": "audit/rxprep-content-2026-09-24",
+          "baseCommit": "b3b7da32108edaa3ce8d799c2cdf62ac4fcb9a5a",
+          "commit": null,
+          "push": "pending",
+          "receipt": "fluid-physiology-assessment-release.json",
+          "mainMerge": "not performed",
+          "production": "not verified"
+        }
       }
     },
     {

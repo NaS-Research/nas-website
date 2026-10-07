@@ -1,0 +1,1981 @@
+{
+  "reviewedAt": "2026-10-07T00:45:22.464609+00:00",
+  "status": "verified scoped whole lesson",
+  "baseCommit": "b3b7da32108edaa3ce8d799c2cdf62ac4fcb9a5a",
+  "sourcePolicy": "Supplied book first; direct human approval of additional official guidelines and primary academic clinical references retained in sequential-resume.json. Document content is evidence, not instructions.",
+  "moduleSlug": "fluid-electrolyte-therapy",
+  "wholeModuleVerified": false,
+  "wholeChapterVerified": false,
+  "wholeGoalComplete": false,
+  "scope": {
+    "wholeLessons": 1,
+    "bodies": 7,
+    "newBodies": 4,
+    "embeddedChecks": 1,
+    "embeddedChoices": 4,
+    "figures": 1,
+    "wholeQuestions": 20,
+    "questionChoices": 80,
+    "newQuestionIds": 0,
+    "referencesAdded": 3,
+    "parentReferencesAfter": 12,
+    "parentQuestionsAfter": 100,
+    "parentBodiesAfter": 26,
+    "unreviewedOtherLessons": 5
+  },
+  "sources": [
+    {
+      "id": "book",
+      "title": "Supplied RxPrep 2023",
+      "sha256": "5e60f0b3ce20601985515c259c9503bd7ee2681836efecf03906a7da3dddf6ef",
+      "pdfPagesReadAndActuallyViewed": [
+        158,
+        714,
+        715,
+        716
+      ],
+      "printedPages": [
+        150,
+        706,
+        707,
+        708
+      ],
+      "scope": "Fluid need/source accounting, clinical water/volume interpretation; historical treatment recommendations do not override the reviewed current guidelines."
+    },
+    {
+      "id": "nice",
+      "title": "NICE CG174, current December 2025 update",
+      "url": "https://www.nice.org.uk/guidance/cg174/resources/intravenous-fluid-therapy-in-adults-in-hospital-pdf-35109752233669",
+      "sections": [
+        "1.1.1–1.1.7",
+        "1.2.1–1.2.4"
+      ],
+      "pdfPagesReadAndActuallyViewed": [
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "additionalUpdatePageRead": 30,
+      "scope": "Clinical assessment, intake, monitoring and reassessment. Weight twice weekly initially, not a universal daily schedule. Removed resuscitation recommendations are not adopted."
+    },
+    {
+      "id": "european",
+      "title": "2014 joint European hyponatraemia clinical practice guideline, original NDT reprint",
+      "url": "https://www.saedyn.es/wp-content/uploads/2024/02/Clinical-practice-guideline-on-diagnosis-and-treatment-of-hyponatraemia.pdf",
+      "doi": "10.1093/ndt/gfu040",
+      "pdfPagesReadAndActuallyViewed": [
+        8,
+        11,
+        12,
+        16,
+        28
+      ],
+      "scope": "Effective versus ineffective osmoles; measured <275 hypotonicity; SIAD exclusion; volume assessment limitations; water diuresis after vasopressin suppression. The guideline uses an alternative sodium/potassium formula; the lesson formula is supported by ADA Figure 2."
+    },
+    {
+      "id": "ada",
+      "title": "2024 ADA/EASD hyperglycemic crises consensus, original Figure 2",
+      "url": "https://link.springer.com/article/10.1007/s00125-024-06183-8",
+      "figureUrl": "https://link.springer.com/article/10.1007/s00125-024-06183-8/figures/2",
+      "figureActuallyViewed": true,
+      "scope": "SI total 2Na+glucose+urea and effective 2Na+glucose equations. Selected physiology reviewed; no whole HHS chapter certification."
+    },
+    {
+      "id": "asim",
+      "title": "Asim et al. Dehydration and volume depletion: How to handle the misconceptions",
+      "url": "https://www.wjgnet.com/2220-6124/full/v8/i1/23.htm",
+      "doi": "10.5527/wjn.v8.i1.23",
+      "scope": "Original academic article water distribution and effective circulation discussion read online. Approximate adult model, small transcellular volume omitted. No locally downloaded full paper claimed."
+    },
+    {
+      "id": "iowa",
+      "title": "University of Iowa clinical laboratory osmolal gap handbook",
+      "url": "https://www.healthcare.uiowa.edu/path_handbook/appendix/chem/osmo_gap.html",
+      "scope": "Same-sample measured minus calculated gap; US analyte conversions and lab formula variation. Its local equation uses 1.15 glucose factor, so its gap cutoffs are not imported into the lesson."
+    }
+  ],
+  "lessonBefore": {
+    "slug": "fluid-physiology-assessment",
+    "title": "Fluid Physiology and Assessment",
+    "summary": "A serum value describes concentration. A bedside assessment explains perfusion, congestion, losses, and the compartment in which water is moving.",
+    "concepts": [
+      "Intracellular and extracellular water",
+      "Osmolality and effective tonicity",
+      "Perfusion versus congestion",
+      "Input, output, weight, and trend"
+    ],
+    "visual": "compartments",
+    "application": "Before ordering fluid, name the problem being treated, the evidence supporting it, the expected physiologic response, and the finding that will stop or change the plan.",
+    "lesson": [
+      {
+        "heading": "Separate concentration from volume",
+        "body": "Sodium is primarily a water-balance concentration, not a direct measurement of total body sodium. A patient may be hyponatremic while intravascularly depleted, clinically euvolemic, or edematous. Volume assessment integrates history, examination, urine output, weight, hemodynamics, kidney function, and the direction of change."
+      },
+      {
+        "heading": "Use osmolality to explain water movement",
+        "body": "Estimated serum osmolality can be calculated as two times sodium plus glucose divided by 18 plus blood urea nitrogen divided by 2.8, with values entered in conventional US units. Effective tonicity excludes urea because urea crosses cell membranes relatively freely. Hyperglycemia can therefore pull water from cells and lower measured sodium while increasing tonicity."
+      },
+      {
+        "heading": "Treat the trajectory",
+        "body": "A single measurement can be misleading. Acute intake, gastrointestinal losses, diuretics, fever, drains, edema, changes in weight, and urine output create the clinical story. Repeated measurements obtained under comparable conditions are more informative than isolated values."
+      }
+    ],
+    "keyPoints": [
+      "Do not infer volume status from sodium alone.",
+      "Distinguish measured osmolality from calculated osmolality and effective tonicity.",
+      "Document the indication for fluid and the response target before administration."
+    ],
+    "check": {
+      "question": "A patient with decompensated heart failure has edema and a sodium of 128 mmol/L. Which interpretation is best?",
+      "choices": [
+        "The patient may have hypervolemic hypotonic hyponatremia",
+        "The low sodium proves total body sodium depletion",
+        "Edema excludes a water-balance disorder",
+        "Serum sodium directly measures intravascular volume"
+      ],
+      "answer": 0,
+      "rationale": "Edematous states can retain both sodium and water, with proportionally greater water retention producing hypervolemic hyponatremia.",
+      "reviewHref": "#fluid-physiology-assessment"
+    }
+  },
+  "lessonAfter": {
+    "slug": "fluid-physiology-assessment",
+    "title": "Fluid Physiology and Assessment",
+    "summary": "A serum value describes concentration. A bedside assessment explains perfusion, congestion, losses, and the compartment in which water is moving.",
+    "concepts": [
+      "Intracellular and extracellular water",
+      "Osmolality and effective tonicity",
+      "Perfusion versus congestion",
+      "Input, output, weight, and trend"
+    ],
+    "visual": "compartments",
+    "application": "Before ordering fluid, name the problem being treated, the evidence supporting it, the expected physiologic response, and the finding that will stop or change the plan.",
+    "lesson": [
+      {
+        "heading": "Locate the water compartments",
+        "body": "A useful approximate adult model places about two-thirds of total body water inside cells and one-third outside them. Extracellular water includes interstitial and intravascular water; the small transcellular spaces are omitted from this simplified diagram. These fractions describe a model, not the percentage of body weight that is water or a measurement in this patient. Water moves between compartments according to effective osmotic gradients, while a large interstitial volume does not prove that tissue perfusion is adequate."
+      },
+      {
+        "heading": "Separate concentration from volume",
+        "body": "Sodium is primarily a water-balance concentration, not a direct measurement of total body sodium. A patient may be hyponatremic while intravascularly depleted, clinically euvolemic, or edematous. Volume assessment integrates history, examination, urine output, weight, hemodynamics, kidney function, and the direction of change."
+      },
+      {
+        "heading": "Use osmolality to explain water movement",
+        "body": "For this lesson, estimate total serum osmolality as 2 x sodium + glucose/18 + BUN/2.8, using sodium in mmol/L and glucose and blood urea nitrogen (BUN) in mg/dL; the result is approximately mOsm/kg. If glucose is already in mmol/L, use that value directly instead of dividing by 18. BUN is not the same as a urea mass concentration. Estimate effective tonicity as 2 x sodium + glucose/18 in these units, leaving out BUN because urea crosses cell membranes readily. With sodium 140 mmol/L, glucose 90 mg/dL and BUN 14 mg/dL, total osmolality is 280 + 5 + 5 = 290 mOsm/kg, while effective tonicity is 285 mOsm/kg. These are estimates, not laboratory measurements; unmeasured osmoles and the laboratory's validated formula can change their interpretation. Extracellular glucose can increase tonicity, draw water out of cells and lower measured sodium."
+      },
+      {
+        "heading": "Treat the trajectory",
+        "body": "Combine serial intake and output records with comparable weights, examination and laboratory trends. Review limited intake, gastrointestinal losses, drains, medicines, urine output, edema and kidney function. A discrepancy between the fluid chart and the patient's weight or examination calls for reconciliation, not automatic acceptance of either number. NICE recommends at least daily reassessment of clinical status, urea, creatinine, electrolytes and fluid balance initially during ongoing adult IV therapy, with weight twice weekly; replacement or redistribution problems can need more frequent monitoring, and stable longer-term therapy may need less. A monitoring interval must match the clinical situation."
+      },
+      {
+        "heading": "Assess perfusion alongside congestion",
+        "body": "Examine pulse, blood pressure, capillary refill, peripheral temperature, jugular venous pressure and pulmonary or peripheral edema. Cold extremities or delayed capillary refill may support circulatory compromise, but no isolated sign establishes the full diagnosis or the correct fluid dose. Edema and reduced effective circulating volume can coexist. Document the clinical purpose, expected response and signs of harm, then reassess; do not prescribe a bolus from sodium, edema or a low albumin value alone."
+      },
+      {
+        "heading": "Investigate a measured-to-calculated gap",
+        "body": "The osmolal gap is measured serum osmolality minus the calculated estimate. Compare measurements from the same sample and verify the units and the laboratory's calculation method. An unexpected positive gap can reflect substances omitted from that formula, but it does not identify a particular substance, prove SIADH or directly measure volume depletion. Review exposures and the clinical and acid-base findings. A low calculated value alone does not exclude an unmeasured effective osmole; measured osmolality below 275 mOsm/kg in a hyponatremic patient establishes hypotonicity."
+      },
+      {
+        "heading": "Watch for an unexpected water diuresis",
+        "body": "During treatment of hyponatremia, a sudden increase in dilute urine output may accelerate the sodium rise even after a saline infusion stops. Restoration of circulating volume can suppress vasopressin and increase free-water clearance. Track urine output with serial sodium measurements and urgently reassess an unexpectedly rapid rise under the applicable correction protocol. Urine output is an early warning, not a substitute for measuring sodium or a reason to normalize it rapidly."
+      }
+    ],
+    "keyPoints": [
+      "Do not infer volume status from sodium alone.",
+      "Distinguish measured osmolality from calculated osmolality and effective tonicity.",
+      "Document the indication for fluid and the response target before administration."
+    ],
+    "check": {
+      "question": "A patient with decompensated heart failure has edema, sodium 128 mmol/L and measured serum osmolality 260 mOsm/kg. Which interpretation is best?",
+      "choices": [
+        "The patient may have hypervolemic hypotonic hyponatremia",
+        "The low sodium proves total body sodium depletion",
+        "Edema excludes a water-balance disorder",
+        "Serum sodium directly measures intravascular volume"
+      ],
+      "answer": 0,
+      "rationale": "The low measured osmolality establishes hypotonicity. Heart failure with edema is compatible with hypervolemic hyponatremia, in which water retention is proportionally greater than sodium retention. Serum sodium is a concentration; it neither directly measures total body sodium nor establishes effective circulating volume.",
+      "reviewHref": "#fluid-physiology-assessment"
+    }
+  },
+  "lessonSha256": "0a7540501a3913b69e003e5aba19d460b2573781591a88b63a41ae699f99e182",
+  "bodyReviews": [
+    {
+      "heading": "Locate the water compartments",
+      "status": "verified",
+      "before": null,
+      "after": {
+        "heading": "Locate the water compartments",
+        "body": "A useful approximate adult model places about two-thirds of total body water inside cells and one-third outside them. Extracellular water includes interstitial and intravascular water; the small transcellular spaces are omitted from this simplified diagram. These fractions describe a model, not the percentage of body weight that is water or a measurement in this patient. Water moves between compartments according to effective osmotic gradients, while a large interstitial volume does not prove that tissue perfusion is adequate."
+      },
+      "sources": [
+        "asim",
+        "european"
+      ]
+    },
+    {
+      "heading": "Separate concentration from volume",
+      "status": "verified",
+      "before": {
+        "heading": "Separate concentration from volume",
+        "body": "Sodium is primarily a water-balance concentration, not a direct measurement of total body sodium. A patient may be hyponatremic while intravascularly depleted, clinically euvolemic, or edematous. Volume assessment integrates history, examination, urine output, weight, hemodynamics, kidney function, and the direction of change."
+      },
+      "after": {
+        "heading": "Separate concentration from volume",
+        "body": "Sodium is primarily a water-balance concentration, not a direct measurement of total body sodium. A patient may be hyponatremic while intravascularly depleted, clinically euvolemic, or edematous. Volume assessment integrates history, examination, urine output, weight, hemodynamics, kidney function, and the direction of change."
+      },
+      "sources": [
+        "book",
+        "european",
+        "nice"
+      ]
+    },
+    {
+      "heading": "Use osmolality to explain water movement",
+      "status": "verified",
+      "before": {
+        "heading": "Use osmolality to explain water movement",
+        "body": "Estimated serum osmolality can be calculated as two times sodium plus glucose divided by 18 plus blood urea nitrogen divided by 2.8, with values entered in conventional US units. Effective tonicity excludes urea because urea crosses cell membranes relatively freely. Hyperglycemia can therefore pull water from cells and lower measured sodium while increasing tonicity."
+      },
+      "after": {
+        "heading": "Use osmolality to explain water movement",
+        "body": "For this lesson, estimate total serum osmolality as 2 x sodium + glucose/18 + BUN/2.8, using sodium in mmol/L and glucose and blood urea nitrogen (BUN) in mg/dL; the result is approximately mOsm/kg. If glucose is already in mmol/L, use that value directly instead of dividing by 18. BUN is not the same as a urea mass concentration. Estimate effective tonicity as 2 x sodium + glucose/18 in these units, leaving out BUN because urea crosses cell membranes readily. With sodium 140 mmol/L, glucose 90 mg/dL and BUN 14 mg/dL, total osmolality is 280 + 5 + 5 = 290 mOsm/kg, while effective tonicity is 285 mOsm/kg. These are estimates, not laboratory measurements; unmeasured osmoles and the laboratory's validated formula can change their interpretation. Extracellular glucose can increase tonicity, draw water out of cells and lower measured sodium."
+      },
+      "sources": [
+        "ada",
+        "iowa",
+        "european"
+      ]
+    },
+    {
+      "heading": "Treat the trajectory",
+      "status": "verified",
+      "before": {
+        "heading": "Treat the trajectory",
+        "body": "A single measurement can be misleading. Acute intake, gastrointestinal losses, diuretics, fever, drains, edema, changes in weight, and urine output create the clinical story. Repeated measurements obtained under comparable conditions are more informative than isolated values."
+      },
+      "after": {
+        "heading": "Treat the trajectory",
+        "body": "Combine serial intake and output records with comparable weights, examination and laboratory trends. Review limited intake, gastrointestinal losses, drains, medicines, urine output, edema and kidney function. A discrepancy between the fluid chart and the patient's weight or examination calls for reconciliation, not automatic acceptance of either number. NICE recommends at least daily reassessment of clinical status, urea, creatinine, electrolytes and fluid balance initially during ongoing adult IV therapy, with weight twice weekly; replacement or redistribution problems can need more frequent monitoring, and stable longer-term therapy may need less. A monitoring interval must match the clinical situation."
+      },
+      "sources": [
+        "nice"
+      ]
+    },
+    {
+      "heading": "Assess perfusion alongside congestion",
+      "status": "verified",
+      "before": null,
+      "after": {
+        "heading": "Assess perfusion alongside congestion",
+        "body": "Examine pulse, blood pressure, capillary refill, peripheral temperature, jugular venous pressure and pulmonary or peripheral edema. Cold extremities or delayed capillary refill may support circulatory compromise, but no isolated sign establishes the full diagnosis or the correct fluid dose. Edema and reduced effective circulating volume can coexist. Document the clinical purpose, expected response and signs of harm, then reassess; do not prescribe a bolus from sodium, edema or a low albumin value alone."
+      },
+      "sources": [
+        "nice",
+        "european",
+        "asim"
+      ]
+    },
+    {
+      "heading": "Investigate a measured-to-calculated gap",
+      "status": "verified",
+      "before": null,
+      "after": {
+        "heading": "Investigate a measured-to-calculated gap",
+        "body": "The osmolal gap is measured serum osmolality minus the calculated estimate. Compare measurements from the same sample and verify the units and the laboratory's calculation method. An unexpected positive gap can reflect substances omitted from that formula, but it does not identify a particular substance, prove SIADH or directly measure volume depletion. Review exposures and the clinical and acid-base findings. A low calculated value alone does not exclude an unmeasured effective osmole; measured osmolality below 275 mOsm/kg in a hyponatremic patient establishes hypotonicity."
+      },
+      "sources": [
+        "iowa",
+        "european"
+      ]
+    },
+    {
+      "heading": "Watch for an unexpected water diuresis",
+      "status": "verified",
+      "before": null,
+      "after": {
+        "heading": "Watch for an unexpected water diuresis",
+        "body": "During treatment of hyponatremia, a sudden increase in dilute urine output may accelerate the sodium rise even after a saline infusion stops. Restoration of circulating volume can suppress vasopressin and increase free-water clearance. Track urine output with serial sodium measurements and urgently reassess an unexpectedly rapid rise under the applicable correction protocol. Urine output is an early warning, not a substitute for measuring sodium or a reason to normalize it rapidly."
+      },
+      "sources": [
+        "european"
+      ]
+    }
+  ],
+  "lessonMetadataReview": {
+    "status": "verified",
+    "paths": [
+      "slug",
+      "title",
+      "summary",
+      "concepts[0:4]",
+      "application",
+      "keyPoints[0:3]"
+    ],
+    "unchangedFromCommittedHead": true,
+    "sources": [
+      "nice",
+      "asim",
+      "european",
+      "ada"
+    ]
+  },
+  "checkReview": {
+    "status": "verified",
+    "wholeObject": {
+      "question": "A patient with decompensated heart failure has edema, sodium 128 mmol/L and measured serum osmolality 260 mOsm/kg. Which interpretation is best?",
+      "choices": [
+        "The patient may have hypervolemic hypotonic hyponatremia",
+        "The low sodium proves total body sodium depletion",
+        "Edema excludes a water-balance disorder",
+        "Serum sodium directly measures intravascular volume"
+      ],
+      "answer": 0,
+      "rationale": "The low measured osmolality establishes hypotonicity. Heart failure with edema is compatible with hypervolemic hyponatremia, in which water retention is proportionally greater than sodium retention. Serum sodium is a concentration; it neither directly measures total body sodium nor establishes effective circulating volume.",
+      "reviewHref": "#fluid-physiology-assessment"
+    },
+    "choicesReviewed": 4,
+    "sources": [
+      "book",
+      "european"
+    ],
+    "defenses": [
+      "Measured260<275 and heart failure/edema compatible with hypervolemic hypotonic hyponatremia.",
+      "Low sodium does not prove sodium amount depletion.",
+      "Edema can coexist with water imbalance.",
+      "Sodium is a concentration, not intravascular volume."
+    ],
+    "keyAndAnchorPreserved": true
+  },
+  "figureReview": {
+    "status": "verified",
+    "visual": "compartments",
+    "unchanged": true,
+    "sources": [
+      "asim",
+      "european"
+    ],
+    "claims": "Approximate adult TBW100%, ICFabout2/3, ECFabout1/3 with interstitial/intravascular; patient-specific and small transcellular limitations explicit."
+  },
+  "questions": [
+    {
+      "id": "fluid-electrolyte-001",
+      "status": "verified",
+      "before": {
+        "id": "fluid-electrolyte-001",
+        "question": "Which statement best distinguishes serum sodium from total body sodium?",
+        "choices": [
+          "Serum sodium is a concentration governed strongly by water balance",
+          "Serum sodium directly equals exchangeable body sodium",
+          "Serum sodium measures intravascular volume",
+          "Serum sodium is independent of glucose"
+        ],
+        "answer": 0,
+        "rationale": "Serum sodium is a concentration and must be interpreted with water balance, tonicity, and volume status.",
+        "reviewHref": "#fluid-physiology-assessment"
+      },
+      "after": {
+        "id": "fluid-electrolyte-001",
+        "question": "Which statement best distinguishes serum sodium from total body sodium?",
+        "choices": [
+          "Serum sodium is a concentration governed strongly by water balance",
+          "Serum sodium directly equals exchangeable body sodium",
+          "Serum sodium measures intravascular volume",
+          "Serum sodium is independent of glucose"
+        ],
+        "answer": 0,
+        "rationale": "Serum sodium describes concentration relative to water, rather than the amount of sodium in the body. Interpret it with tonicity and the clinical volume assessment. Hyperglycemia can change measured sodium by moving water into extracellular fluid.",
+        "reviewHref": "#fluid-physiology-assessment"
+      },
+      "sha256": "07e83e6a9fa0d9ed9e897c69c9c262f2fa9958ae695853b05293306c105ef2ff",
+      "sources": [
+        "nice",
+        "european",
+        "asim",
+        "ada"
+      ],
+      "choices": [
+        {
+          "index": 0,
+          "text": "Serum sodium is a concentration governed strongly by water balance",
+          "keyed": true,
+          "defense": "Concentration relative to water."
+        },
+        {
+          "index": 1,
+          "text": "Serum sodium directly equals exchangeable body sodium",
+          "keyed": false,
+          "defense": "Body sodium amount is not a concentration."
+        },
+        {
+          "index": 2,
+          "text": "Serum sodium measures intravascular volume",
+          "keyed": false,
+          "defense": "Clinical volume requires assessment."
+        },
+        {
+          "index": 3,
+          "text": "Serum sodium is independent of glucose",
+          "keyed": false,
+          "defense": "Glucose changes water distribution."
+        }
+      ],
+      "allFourChoicesIndividuallyReviewed": true,
+      "anchorPreserved": true,
+      "keyPreserved": true
+    },
+    {
+      "id": "fluid-electrolyte-002",
+      "status": "verified",
+      "before": {
+        "id": "fluid-electrolyte-002",
+        "question": "Which solute contributes to calculated osmolality but is excluded from effective tonicity?",
+        "choices": [
+          "Urea nitrogen",
+          "Sodium",
+          "Glucose",
+          "Mannitol"
+        ],
+        "answer": 0,
+        "rationale": "Urea crosses cell membranes relatively freely and contributes little sustained transcellular water shift.",
+        "reviewHref": "#fluid-physiology-assessment"
+      },
+      "after": {
+        "id": "fluid-electrolyte-002",
+        "question": "Which solute contributes to calculated osmolality but is excluded from effective tonicity?",
+        "choices": [
+          "Urea nitrogen",
+          "Sodium",
+          "Glucose",
+          "Mannitol"
+        ],
+        "answer": 0,
+        "rationale": "Urea contributes to total osmolality, but readily crosses cell membranes and is excluded from the simplified effective-tonicity estimate. Sodium salts, glucose and mannitol can act as effective extracellular osmoles; BUN is the reported nitrogen component of urea.",
+        "reviewHref": "#fluid-physiology-assessment"
+      },
+      "sha256": "521cd59300a7fa4dc9f34badb80078414eb5e11a7d6cde2d2904f44708491261",
+      "sources": [
+        "nice",
+        "european",
+        "asim",
+        "ada"
+      ],
+      "choices": [
+        {
+          "index": 0,
+          "text": "Urea nitrogen",
+          "keyed": true,
+          "defense": "Urea readily equilibrates; BUN is its nitrogen component."
+        },
+        {
+          "index": 1,
+          "text": "Sodium",
+          "keyed": false,
+          "defense": "Sodium salts are effective osmoles."
+        },
+        {
+          "index": 2,
+          "text": "Glucose",
+          "keyed": false,
+          "defense": "Glucose can be an effective extracellular osmole."
+        },
+        {
+          "index": 3,
+          "text": "Mannitol",
+          "keyed": false,
+          "defense": "Mannitol can be an effective extracellular osmole."
+        }
+      ],
+      "allFourChoicesIndividuallyReviewed": true,
+      "anchorPreserved": true,
+      "keyPreserved": true
+    },
+    {
+      "id": "fluid-electrolyte-003",
+      "status": "verified",
+      "before": {
+        "id": "fluid-electrolyte-003",
+        "question": "Why can a patient with marked edema still have reduced effective circulating volume?",
+        "choices": [
+          "Fluid can be retained outside the vascular space while perfusion remains inadequate",
+          "Edema proves plasma volume is high",
+          "Interstitial water cannot exchange with plasma",
+          "Edema eliminates neurohormonal activation"
+        ],
+        "answer": 0,
+        "rationale": "Total body fluid excess does not guarantee adequate effective arterial circulation.",
+        "reviewHref": "#fluid-physiology-assessment"
+      },
+      "after": {
+        "id": "fluid-electrolyte-003",
+        "question": "Why can a patient with marked edema still have reduced effective circulating volume?",
+        "choices": [
+          "Fluid can be retained outside the vascular space while perfusion remains inadequate",
+          "Edema proves plasma volume is high",
+          "Interstitial water cannot exchange with plasma",
+          "Edema eliminates neurohormonal activation"
+        ],
+        "answer": 0,
+        "rationale": "Interstitial fluid accumulation does not guarantee adequate effective circulation. Fluid compartments exchange water, and disorders with reduced effective circulation can activate water-retaining mechanisms despite edema. Assess perfusion and congestion together.",
+        "reviewHref": "#fluid-physiology-assessment"
+      },
+      "sha256": "3189bba180114ec1d1b65b94fbd8ef6f97c12a9c5294c5569e084633a7c2c762",
+      "sources": [
+        "nice",
+        "european",
+        "asim",
+        "ada"
+      ],
+      "choices": [
+        {
+          "index": 0,
+          "text": "Fluid can be retained outside the vascular space while perfusion remains inadequate",
+          "keyed": true,
+          "defense": "Interstitial retention and inadequate circulation can coexist."
+        },
+        {
+          "index": 1,
+          "text": "Edema proves plasma volume is high",
+          "keyed": false,
+          "defense": "Edema does not establish adequate vascular perfusion."
+        },
+        {
+          "index": 2,
+          "text": "Interstitial water cannot exchange with plasma",
+          "keyed": false,
+          "defense": "Water exchanges between compartments."
+        },
+        {
+          "index": 3,
+          "text": "Edema eliminates neurohormonal activation",
+          "keyed": false,
+          "defense": "Reduced effective circulation can activate retention mechanisms."
+        }
+      ],
+      "allFourChoicesIndividuallyReviewed": true,
+      "anchorPreserved": true,
+      "keyPreserved": true
+    },
+    {
+      "id": "fluid-electrolyte-004",
+      "status": "verified",
+      "before": {
+        "id": "fluid-electrolyte-004",
+        "question": "Which measurement is most useful for detecting a new water diuresis during correction of hyponatremia?",
+        "choices": [
+          "Urine output trend",
+          "Serum albumin",
+          "LDL cholesterol",
+          "Platelet count"
+        ],
+        "answer": 0,
+        "rationale": "An abrupt rise in dilute urine output can precede unexpectedly rapid sodium correction.",
+        "reviewHref": "#fluid-physiology-assessment"
+      },
+      "after": {
+        "id": "fluid-electrolyte-004",
+        "question": "Which measurement is most useful for detecting a new water diuresis during correction of hyponatremia?",
+        "choices": [
+          "Urine output trend",
+          "Body weight measured only at discharge",
+          "A repeat serum sodium without recording urine output",
+          "The amount of saline already prescribed"
+        ],
+        "answer": 0,
+        "rationale": "A sudden increase in dilute urine output can signal rising free-water clearance and precede unexpectedly rapid sodium correction. Track output with serial sodium measurements; sodium must still be checked, but it does not directly record the emerging diuresis.",
+        "reviewHref": "#fluid-physiology-assessment"
+      },
+      "sha256": "aff11a43ede0a95e2ebaf41348d06bb639d732236d07352fedaf97a261fcbba1",
+      "sources": [
+        "nice",
+        "european",
+        "asim",
+        "ada"
+      ],
+      "choices": [
+        {
+          "index": 0,
+          "text": "Urine output trend",
+          "keyed": true,
+          "defense": "Output trend detects emerging diuresis; serial sodium remains necessary."
+        },
+        {
+          "index": 1,
+          "text": "Body weight measured only at discharge",
+          "keyed": false,
+          "defense": "Discharge weight cannot detect emerging urine output."
+        },
+        {
+          "index": 2,
+          "text": "A repeat serum sodium without recording urine output",
+          "keyed": false,
+          "defense": "Sodium alone does not record urine output."
+        },
+        {
+          "index": 3,
+          "text": "The amount of saline already prescribed",
+          "keyed": false,
+          "defense": "Prescribed saline is not measured free-water clearance."
+        }
+      ],
+      "allFourChoicesIndividuallyReviewed": true,
+      "anchorPreserved": true,
+      "keyPreserved": true
+    },
+    {
+      "id": "fluid-electrolyte-005",
+      "status": "verified",
+      "before": {
+        "id": "fluid-electrolyte-005",
+        "question": "A measured osmolality is substantially greater than the calculated osmolality. What does the difference suggest?",
+        "choices": [
+          "An osmolar gap that may reflect an unmeasured osmole",
+          "Definitive SIADH",
+          "Normal effective tonicity",
+          "A direct measure of dehydration"
+        ],
+        "answer": 0,
+        "rationale": "The osmolar gap prompts assessment for unmeasured osmoles and analytic context.",
+        "reviewHref": "#fluid-physiology-assessment"
+      },
+      "after": {
+        "id": "fluid-electrolyte-005",
+        "question": "A measured osmolality is substantially greater than the calculated osmolality. What does the difference suggest?",
+        "choices": [
+          "An osmolar gap that may reflect an unmeasured osmole",
+          "Definitive SIADH",
+          "Normal effective tonicity",
+          "A direct measure of dehydration"
+        ],
+        "answer": 0,
+        "rationale": "Measured minus calculated osmolality is the osmolal gap. An unexpectedly positive gap may reflect an osmole omitted from the formula or analytic context. Check the same-sample measurements, units and exposures; the gap alone does not diagnose SIADH, prove normal tonicity or quantify volume depletion.",
+        "reviewHref": "#fluid-physiology-assessment"
+      },
+      "sha256": "08ced9098f29174fa8213027606717cea15dcfe6296770525f57723036bcf9b5",
+      "sources": [
+        "nice",
+        "european",
+        "asim",
+        "ada"
+      ],
+      "choices": [
+        {
+          "index": 0,
+          "text": "An osmolar gap that may reflect an unmeasured osmole",
+          "keyed": true,
+          "defense": "Positive measured-minus-calculated difference can signal omitted osmoles."
+        },
+        {
+          "index": 1,
+          "text": "Definitive SIADH",
+          "keyed": false,
+          "defense": "Gap is not a SIADH diagnosis."
+        },
+        {
+          "index": 2,
+          "text": "Normal effective tonicity",
+          "keyed": false,
+          "defense": "Gap alone does not establish effective tonicity."
+        },
+        {
+          "index": 3,
+          "text": "A direct measure of dehydration",
+          "keyed": false,
+          "defense": "Gap does not measure volume depletion."
+        }
+      ],
+      "allFourChoicesIndividuallyReviewed": true,
+      "anchorPreserved": true,
+      "keyPreserved": true
+    },
+    {
+      "id": "fluid-electrolyte-006",
+      "status": "verified",
+      "before": {
+        "id": "fluid-electrolyte-006",
+        "question": "Why is daily weight often more informative than a single intake and output total?",
+        "choices": [
+          "It integrates net changes that may be missed by incomplete fluid records",
+          "It measures serum tonicity directly",
+          "It identifies every source of edema",
+          "It replaces physical examination"
+        ],
+        "answer": 0,
+        "rationale": "Fluid records are frequently incomplete, while a comparable daily weight can reveal the net trajectory.",
+        "reviewHref": "#fluid-physiology-assessment"
+      },
+      "after": {
+        "id": "fluid-electrolyte-006",
+        "question": "The intake/output chart suggests neutral balance, but comparable weights rise and examination shows new edema. What is the best interpretation?",
+        "choices": [
+          "Reconcile the chart with the weight and examination before revising the fluid plan",
+          "The chart rules out fluid accumulation despite the examination",
+          "The weight trend alone proves hypotonic hyponatremia",
+          "The weights identify the cause of the edema without further assessment"
+        ],
+        "answer": 0,
+        "rationale": "Discordant findings require reconciliation. Weight is one part of the fluid assessment, alongside intake/output, examination, medicines and laboratory trends. Neither a chart nor a weight trend establishes tonicity or the cause by itself; a daily-weight schedule is not required for every patient.",
+        "reviewHref": "#fluid-physiology-assessment"
+      },
+      "sha256": "54f07efdcefc02589c4d29dde53544a5d2858ddc8bdd404fabfb95a6c0fdf205",
+      "sources": [
+        "nice",
+        "european",
+        "asim",
+        "ada"
+      ],
+      "choices": [
+        {
+          "index": 0,
+          "text": "Reconcile the chart with the weight and examination before revising the fluid plan",
+          "keyed": true,
+          "defense": "Reconcile discordant clinical data."
+        },
+        {
+          "index": 1,
+          "text": "The chart rules out fluid accumulation despite the examination",
+          "keyed": false,
+          "defense": "A chart does not rule out accumulation when other findings differ."
+        },
+        {
+          "index": 2,
+          "text": "The weight trend alone proves hypotonic hyponatremia",
+          "keyed": false,
+          "defense": "Weight does not establish serum tonicity."
+        },
+        {
+          "index": 3,
+          "text": "The weights identify the cause of the edema without further assessment",
+          "keyed": false,
+          "defense": "Weight alone does not diagnose edema etiology."
+        }
+      ],
+      "allFourChoicesIndividuallyReviewed": true,
+      "anchorPreserved": true,
+      "keyPreserved": true
+    },
+    {
+      "id": "fluid-electrolyte-007",
+      "status": "verified",
+      "before": {
+        "id": "fluid-electrolyte-007",
+        "question": "Which finding most directly supports impaired perfusion rather than isolated interstitial edema?",
+        "choices": [
+          "Delayed capillary refill with cool extremities",
+          "Bilateral ankle swelling alone",
+          "A low serum albumin alone",
+          "Stable body weight"
+        ],
+        "answer": 0,
+        "rationale": "Peripheral perfusion findings help identify circulatory compromise, although the full clinical context remains necessary.",
+        "reviewHref": "#fluid-physiology-assessment"
+      },
+      "after": {
+        "id": "fluid-electrolyte-007",
+        "question": "Which finding most directly supports impaired perfusion rather than isolated interstitial edema?",
+        "choices": [
+          "Delayed capillary refill with cool extremities",
+          "Bilateral ankle swelling alone",
+          "A low serum albumin alone",
+          "Stable body weight"
+        ],
+        "answer": 0,
+        "rationale": "Delayed capillary refill and cool extremities are clinical indicators of possible impaired circulation. Ankle edema and low albumin do not by themselves establish perfusion, and stable weight does not exclude an acute problem. Use the full assessment before selecting therapy.",
+        "reviewHref": "#fluid-physiology-assessment"
+      },
+      "sha256": "010a1cf49c9825bbf302bd9cbf6f21a2b515712711ebd8825bbd8f18a77d4d9e",
+      "sources": [
+        "nice",
+        "european",
+        "asim",
+        "ada"
+      ],
+      "choices": [
+        {
+          "index": 0,
+          "text": "Delayed capillary refill with cool extremities",
+          "keyed": true,
+          "defense": "Delayed refill and cool peripheries support possible circulatory compromise."
+        },
+        {
+          "index": 1,
+          "text": "Bilateral ankle swelling alone",
+          "keyed": false,
+          "defense": "Ankle edema alone does not establish impaired perfusion."
+        },
+        {
+          "index": 2,
+          "text": "A low serum albumin alone",
+          "keyed": false,
+          "defense": "Albumin alone does not establish perfusion."
+        },
+        {
+          "index": 3,
+          "text": "Stable body weight",
+          "keyed": false,
+          "defense": "Stable weight does not exclude acute circulatory compromise."
+        }
+      ],
+      "allFourChoicesIndividuallyReviewed": true,
+      "anchorPreserved": true,
+      "keyPreserved": true
+    },
+    {
+      "id": "fluid-electrolyte-008",
+      "status": "verified",
+      "before": {
+        "id": "fluid-electrolyte-008",
+        "question": "Hyperglycemia lowers measured sodium primarily through which mechanism?",
+        "choices": [
+          "Water shifts from cells into extracellular fluid",
+          "Sodium enters cells with glucose",
+          "Urea becomes an effective osmole",
+          "The kidney immediately loses all sodium"
+        ],
+        "answer": 0,
+        "rationale": "Extracellular glucose raises tonicity and draws water out of cells, diluting extracellular sodium.",
+        "reviewHref": "#fluid-physiology-assessment"
+      },
+      "after": {
+        "id": "fluid-electrolyte-008",
+        "question": "Hyperglycemia lowers measured sodium primarily through which mechanism?",
+        "choices": [
+          "Water shifts from cells into extracellular fluid",
+          "Sodium enters cells with glucose",
+          "Urea becomes an effective osmole",
+          "The kidney immediately loses all sodium"
+        ],
+        "answer": 0,
+        "rationale": "In hyperglycemia, extracellular glucose can act as an effective osmole and draw water from cells into extracellular fluid, lowering measured sodium by dilution. This is not simply sodium moving into cells, conversion of urea into an effective osmole or immediate loss of all renal sodium.",
+        "reviewHref": "#fluid-physiology-assessment"
+      },
+      "sha256": "afbe93bed259deeed82afd66e9cd1d2787c6c45196126b5c1c136f95aa8bb165",
+      "sources": [
+        "nice",
+        "european",
+        "asim",
+        "ada"
+      ],
+      "choices": [
+        {
+          "index": 0,
+          "text": "Water shifts from cells into extracellular fluid",
+          "keyed": true,
+          "defense": "Extracellular glucose draws water out of cells."
+        },
+        {
+          "index": 1,
+          "text": "Sodium enters cells with glucose",
+          "keyed": false,
+          "defense": "Sodium movement into cells is not this mechanism."
+        },
+        {
+          "index": 2,
+          "text": "Urea becomes an effective osmole",
+          "keyed": false,
+          "defense": "Urea does not become an effective osmole because glucose is high."
+        },
+        {
+          "index": 3,
+          "text": "The kidney immediately loses all sodium",
+          "keyed": false,
+          "defense": "Immediate total renal sodium loss is not this mechanism."
+        }
+      ],
+      "allFourChoicesIndividuallyReviewed": true,
+      "anchorPreserved": true,
+      "keyPreserved": true
+    },
+    {
+      "id": "fluid-electrolyte-009",
+      "status": "verified",
+      "before": {
+        "id": "fluid-electrolyte-009",
+        "question": "Which design best tests whether a dynamic fluid protocol improves care across hospital wards?",
+        "choices": [
+          "A pragmatic cluster randomized trial with patient-centered and safety outcomes",
+          "A case report of one successful bolus",
+          "A cross-sectional survey of clinician preference",
+          "An in vitro crystalloid comparison alone"
+        ],
+        "answer": 0,
+        "rationale": "A pragmatic cluster trial can evaluate a workflow while limiting contamination between clinicians.",
+        "reviewHref": "#fluid-physiology-assessment"
+      },
+      "after": {
+        "id": "fluid-electrolyte-009",
+        "question": "A patient has ankle edema, cool extremities and delayed capillary refill. What assessment best avoids assuming that edema proves adequate circulation?",
+        "choices": [
+          "Assess perfusion and congestion together, using history, examination and trends",
+          "Treat ankle edema as proof that effective circulation is adequate",
+          "Infer circulating volume from serum sodium alone",
+          "Use low albumin alone to select an albumin infusion"
+        ],
+        "answer": 0,
+        "rationale": "Edema and inadequate effective circulation can coexist. The fluid assessment combines examination, history, input/output, weight and laboratory trends. Neither sodium concentration nor albumin alone establishes circulating volume or an infusion indication.",
+        "reviewHref": "#fluid-physiology-assessment"
+      },
+      "sha256": "44199ceba926f349e29d3cb7230dd9fde3622b81837ebdbf62b10bcca8d9ba14",
+      "sources": [
+        "nice",
+        "european",
+        "asim",
+        "ada"
+      ],
+      "choices": [
+        {
+          "index": 0,
+          "text": "Assess perfusion and congestion together, using history, examination and trends",
+          "keyed": true,
+          "defense": "Integrated perfusion and congestion assessment is warranted."
+        },
+        {
+          "index": 1,
+          "text": "Treat ankle edema as proof that effective circulation is adequate",
+          "keyed": false,
+          "defense": "Edema does not prove adequate effective circulation."
+        },
+        {
+          "index": 2,
+          "text": "Infer circulating volume from serum sodium alone",
+          "keyed": false,
+          "defense": "Sodium cannot independently define circulating volume."
+        },
+        {
+          "index": 3,
+          "text": "Use low albumin alone to select an albumin infusion",
+          "keyed": false,
+          "defense": "Albumin alone is not an infusion indication."
+        }
+      ],
+      "allFourChoicesIndividuallyReviewed": true,
+      "anchorPreserved": true,
+      "keyPreserved": true
+    },
+    {
+      "id": "fluid-electrolyte-010",
+      "status": "verified",
+      "before": {
+        "id": "fluid-electrolyte-010",
+        "question": "What is the strongest reason to document the intended response before administering IV fluid?",
+        "choices": [
+          "It creates a measurable stopping or revision point",
+          "It guarantees the fluid is harmless",
+          "It eliminates the need for reassessment",
+          "It converts maintenance into resuscitation"
+        ],
+        "answer": 0,
+        "rationale": "A fluid order is safer when its clinical goal and stopping rule are explicit.",
+        "reviewHref": "#fluid-physiology-assessment"
+      },
+      "after": {
+        "id": "fluid-electrolyte-010",
+        "question": "What is the strongest reason to document the intended response before administering IV fluid?",
+        "choices": [
+          "It creates a measurable stopping or revision point",
+          "It guarantees the fluid is harmless",
+          "It eliminates the need for reassessment",
+          "It converts maintenance into resuscitation"
+        ],
+        "answer": 0,
+        "rationale": "An explicit intended response and monitoring plan make reassessment actionable, including stopping or revising fluid when it does not help or causes harm. Documentation does not make any fluid harmless, remove monitoring or change the indication from maintenance to resuscitation.",
+        "reviewHref": "#fluid-physiology-assessment"
+      },
+      "sha256": "b4cde450dd93aa930c152a746dd2a37b5e0bf4d0bb5e066beb1437bda2a65b8e",
+      "sources": [
+        "nice",
+        "european",
+        "asim",
+        "ada"
+      ],
+      "choices": [
+        {
+          "index": 0,
+          "text": "It creates a measurable stopping or revision point",
+          "keyed": true,
+          "defense": "A response target makes reassessment and revision actionable."
+        },
+        {
+          "index": 1,
+          "text": "It guarantees the fluid is harmless",
+          "keyed": false,
+          "defense": "Documentation does not guarantee safety."
+        },
+        {
+          "index": 2,
+          "text": "It eliminates the need for reassessment",
+          "keyed": false,
+          "defense": "Monitoring is still required."
+        },
+        {
+          "index": 3,
+          "text": "It converts maintenance into resuscitation",
+          "keyed": false,
+          "defense": "The indication remains the clinical indication."
+        }
+      ],
+      "allFourChoicesIndividuallyReviewed": true,
+      "anchorPreserved": true,
+      "keyPreserved": true
+    },
+    {
+      "id": "fluid-electrolyte-061",
+      "status": "verified",
+      "before": {
+        "id": "fluid-electrolyte-061",
+        "question": "Using 2(Na) + glucose/18 + BUN/2.8, what is the estimated serum osmolality for Na 140 mmol/L, glucose 90 mg/dL, and BUN 14 mg/dL?",
+        "choices": [
+          "290 mOsm/kg",
+          "270 mOsm/kg",
+          "325 mOsm/kg",
+          "145 mOsm/kg"
+        ],
+        "answer": 0,
+        "rationale": "Substitution gives approximately 290 mOsm/kg. The estimate should be compared with measured osmolality and the clinical context.",
+        "reviewHref": "#fluid-physiology-assessment"
+      },
+      "after": {
+        "id": "fluid-electrolyte-061",
+        "question": "Using 2(Na) + glucose/18 + BUN/2.8, what is the estimated serum osmolality for Na 140 mmol/L, glucose 90 mg/dL, and BUN 14 mg/dL?",
+        "choices": [
+          "290 mOsm/kg",
+          "270 mOsm/kg",
+          "325 mOsm/kg",
+          "145 mOsm/kg"
+        ],
+        "answer": 0,
+        "rationale": "2 x 140 + 90/18 + 14/2.8 = 280 + 5 + 5 = 290 mOsm/kg. Sodium is in mmol/L and glucose/BUN in mg/dL. The other choices reflect incorrect substitution or arithmetic. This is an estimate of total osmolality, not a measured result or a direct volume assessment.",
+        "reviewHref": "#fluid-physiology-assessment"
+      },
+      "sha256": "bff018bfa840217096d9126fe8c61aa1969020e3c4770f75cfd498db770abf2e",
+      "sources": [
+        "ada",
+        "european",
+        "iowa"
+      ],
+      "choices": [
+        {
+          "index": 0,
+          "text": "290 mOsm/kg",
+          "keyed": true,
+          "defense": "280+5+5=290."
+        },
+        {
+          "index": 1,
+          "text": "270 mOsm/kg",
+          "keyed": false,
+          "defense": "270 fails the specified substitution."
+        },
+        {
+          "index": 2,
+          "text": "325 mOsm/kg",
+          "keyed": false,
+          "defense": "325 fails the specified substitution."
+        },
+        {
+          "index": 3,
+          "text": "145 mOsm/kg",
+          "keyed": false,
+          "defense": "145 fails the specified substitution."
+        }
+      ],
+      "allFourChoicesIndividuallyReviewed": true,
+      "anchorPreserved": true,
+      "keyPreserved": true
+    },
+    {
+      "id": "fluid-electrolyte-062",
+      "status": "verified",
+      "before": {
+        "id": "fluid-electrolyte-062",
+        "question": "Using 2(Na) + glucose/18 + BUN/2.8, what is the estimated serum osmolality for Na 132 mmol/L, glucose 540 mg/dL, and BUN 28 mg/dL?",
+        "choices": [
+          "304 mOsm/kg",
+          "284 mOsm/kg",
+          "339 mOsm/kg",
+          "152 mOsm/kg"
+        ],
+        "answer": 0,
+        "rationale": "Substitution gives approximately 304 mOsm/kg. The estimate should be compared with measured osmolality and the clinical context.",
+        "reviewHref": "#fluid-physiology-assessment"
+      },
+      "after": {
+        "id": "fluid-electrolyte-062",
+        "question": "Using 2(Na) + glucose/18 for effective tonicity, what is the estimate for sodium 132 mmol/L, glucose 540 mg/dL and BUN 28 mg/dL?",
+        "choices": [
+          "294 mOsm/kg",
+          "304 mOsm/kg",
+          "274 mOsm/kg",
+          "264 mOsm/kg"
+        ],
+        "answer": 0,
+        "rationale": "Effective tonicity is 2 x 132 + 540/18 = 264 + 30 = 294 mOsm/kg. Adding BUN/2.8 would give total osmolality 304; urea is omitted from effective tonicity. 274 omits much of the glucose contribution, and 264 omits it entirely.",
+        "reviewHref": "#fluid-physiology-assessment"
+      },
+      "sha256": "3f4c27eee24c23ecaa67b8b9e348198f7617871b0b6413b400aefb5a00a3abda",
+      "sources": [
+        "ada",
+        "european",
+        "iowa"
+      ],
+      "choices": [
+        {
+          "index": 0,
+          "text": "294 mOsm/kg",
+          "keyed": true,
+          "defense": "264+30=294, excluding urea."
+        },
+        {
+          "index": 1,
+          "text": "304 mOsm/kg",
+          "keyed": false,
+          "defense": "304 includes BUN and is total rather than effective."
+        },
+        {
+          "index": 2,
+          "text": "274 mOsm/kg",
+          "keyed": false,
+          "defense": "274 understates the glucose contribution."
+        },
+        {
+          "index": 3,
+          "text": "264 mOsm/kg",
+          "keyed": false,
+          "defense": "264 omits glucose."
+        }
+      ],
+      "allFourChoicesIndividuallyReviewed": true,
+      "anchorPreserved": true,
+      "keyPreserved": true
+    },
+    {
+      "id": "fluid-electrolyte-063",
+      "status": "verified",
+      "before": {
+        "id": "fluid-electrolyte-063",
+        "question": "Using 2(Na) + glucose/18 + BUN/2.8, what is the estimated serum osmolality for Na 128 mmol/L, glucose 108 mg/dL, and BUN 11 mg/dL?",
+        "choices": [
+          "265.9 mOsm/kg",
+          "246 mOsm/kg",
+          "301 mOsm/kg",
+          "133 mOsm/kg"
+        ],
+        "answer": 0,
+        "rationale": "Substitution gives approximately 265.9 mOsm/kg. The estimate should be compared with measured osmolality and the clinical context.",
+        "reviewHref": "#fluid-physiology-assessment"
+      },
+      "after": {
+        "id": "fluid-electrolyte-063",
+        "question": "An adult has sodium 128 mmol/L and measured serum osmolality 266 mOsm/kg. What classification follows from the measured osmolality?",
+        "choices": [
+          "Hypotonic hyponatremia; assess symptoms and cause next",
+          "Hypertonic hyponatremia caused by the low sodium itself",
+          "Confirmed SIADH without further assessment",
+          "Proven intravascular depletion from the sodium alone"
+        ],
+        "answer": 0,
+        "rationale": "Measured osmolality below 275 mOsm/kg with hyponatremia establishes hypotonicity. It does not establish SIADH or volume depletion; symptom severity and the broader diagnostic assessment remain necessary.",
+        "reviewHref": "#fluid-physiology-assessment"
+      },
+      "sha256": "d6c037c96f327b14477c3291b35214b024f6ef6aa0cf1ab4fd57638a890131f6",
+      "sources": [
+        "ada",
+        "european",
+        "iowa"
+      ],
+      "choices": [
+        {
+          "index": 0,
+          "text": "Hypotonic hyponatremia; assess symptoms and cause next",
+          "keyed": true,
+          "defense": "Measured 266<275 establishes hypotonicity."
+        },
+        {
+          "index": 1,
+          "text": "Hypertonic hyponatremia caused by the low sodium itself",
+          "keyed": false,
+          "defense": "Low sodium alone does not cause hypertonicity."
+        },
+        {
+          "index": 2,
+          "text": "Confirmed SIADH without further assessment",
+          "keyed": false,
+          "defense": "SIADH needs an appropriate pattern and exclusions."
+        },
+        {
+          "index": 3,
+          "text": "Proven intravascular depletion from the sodium alone",
+          "keyed": false,
+          "defense": "Volume depletion is not proved by sodium."
+        }
+      ],
+      "allFourChoicesIndividuallyReviewed": true,
+      "anchorPreserved": true,
+      "keyPreserved": true
+    },
+    {
+      "id": "fluid-electrolyte-064",
+      "status": "verified",
+      "before": {
+        "id": "fluid-electrolyte-064",
+        "question": "Using 2(Na) + glucose/18 + BUN/2.8, what is the estimated serum osmolality for Na 150 mmol/L, glucose 126 mg/dL, and BUN 35 mg/dL?",
+        "choices": [
+          "319.5 mOsm/kg",
+          "300 mOsm/kg",
+          "355 mOsm/kg",
+          "160 mOsm/kg"
+        ],
+        "answer": 0,
+        "rationale": "Substitution gives approximately 319.5 mOsm/kg. The estimate should be compared with measured osmolality and the clinical context.",
+        "reviewHref": "#fluid-physiology-assessment"
+      },
+      "after": {
+        "id": "fluid-electrolyte-064",
+        "question": "For sodium 150 mmol/L, glucose 126 mg/dL and BUN 35 mg/dL, which pair correctly gives estimated TOTAL osmolality and EFFECTIVE tonicity using this lesson's formulas?",
+        "choices": [
+          "319.5 and 307 mOsm/kg",
+          "307 and 319.5 mOsm/kg",
+          "319.5 and 319.5 mOsm/kg",
+          "300 and 300 mOsm/kg"
+        ],
+        "answer": 0,
+        "rationale": "Total = 300 + 7 + 12.5 = 319.5 mOsm/kg; effective = 300 + 7 = 307. The reversed pair places effective above total; equal 319.5 values incorrectly include urea in tonicity, while 300 values omit glucose and, for total, BUN.",
+        "reviewHref": "#fluid-physiology-assessment"
+      },
+      "sha256": "45683c7b8b43b6030510bd072dca6dba6af0b21b9f8d9448571785467be22578",
+      "sources": [
+        "ada",
+        "european",
+        "iowa"
+      ],
+      "choices": [
+        {
+          "index": 0,
+          "text": "319.5 and 307 mOsm/kg",
+          "keyed": true,
+          "defense": "Total319.5; effective307."
+        },
+        {
+          "index": 1,
+          "text": "307 and 319.5 mOsm/kg",
+          "keyed": false,
+          "defense": "The pair is reversed."
+        },
+        {
+          "index": 2,
+          "text": "319.5 and 319.5 mOsm/kg",
+          "keyed": false,
+          "defense": "Second number includes urea incorrectly."
+        },
+        {
+          "index": 3,
+          "text": "300 and 300 mOsm/kg",
+          "keyed": false,
+          "defense": "Both omit glucose; total also omits BUN."
+        }
+      ],
+      "allFourChoicesIndividuallyReviewed": true,
+      "anchorPreserved": true,
+      "keyPreserved": true
+    },
+    {
+      "id": "fluid-electrolyte-065",
+      "status": "verified",
+      "before": {
+        "id": "fluid-electrolyte-065",
+        "question": "Using 2(Na) + glucose/18 + BUN/2.8, what is the estimated serum osmolality for Na 136 mmol/L, glucose 360 mg/dL, and BUN 21 mg/dL?",
+        "choices": [
+          "299.5 mOsm/kg",
+          "280 mOsm/kg",
+          "335 mOsm/kg",
+          "150 mOsm/kg"
+        ],
+        "answer": 0,
+        "rationale": "Substitution gives approximately 299.5 mOsm/kg. The estimate should be compared with measured osmolality and the clinical context.",
+        "reviewHref": "#fluid-physiology-assessment"
+      },
+      "after": {
+        "id": "fluid-electrolyte-065",
+        "question": "A colleague enters a UREA result reported in mg/dL into the BUN/2.8 term. Which response is appropriate?",
+        "choices": [
+          "Verify the analyte and convert units or use the appropriate laboratory formula before calculating",
+          "Accept it because urea mass and BUN mass are interchangeable",
+          "Use the same number but label the result mL/kg",
+          "Double the sodium term again to compensate"
+        ],
+        "answer": 0,
+        "rationale": "BUN reports the nitrogen component of urea, not the full urea mass. The divisor 2.8 applies to BUN in mg/dL. Correct the analyte/unit mismatch before calculation; changing the output label or sodium multiplier cannot fix it.",
+        "reviewHref": "#fluid-physiology-assessment"
+      },
+      "sha256": "5fd009cb8fb80751745ab1156c64b8d43fa0bc7ad788f34d09c10bdde1ee2363",
+      "sources": [
+        "ada",
+        "european",
+        "iowa"
+      ],
+      "choices": [
+        {
+          "index": 0,
+          "text": "Verify the analyte and convert units or use the appropriate laboratory formula before calculating",
+          "keyed": true,
+          "defense": "Verify urea/BUN analyte and appropriate conversion."
+        },
+        {
+          "index": 1,
+          "text": "Accept it because urea mass and BUN mass are interchangeable",
+          "keyed": false,
+          "defense": "Urea mass and nitrogen mass differ."
+        },
+        {
+          "index": 2,
+          "text": "Use the same number but label the result mL/kg",
+          "keyed": false,
+          "defense": "Output units cannot repair an analyte mismatch."
+        },
+        {
+          "index": 3,
+          "text": "Double the sodium term again to compensate",
+          "keyed": false,
+          "defense": "Sodium multiplier cannot repair an analyte mismatch."
+        }
+      ],
+      "allFourChoicesIndividuallyReviewed": true,
+      "anchorPreserved": true,
+      "keyPreserved": true
+    },
+    {
+      "id": "fluid-electrolyte-066",
+      "status": "verified",
+      "before": {
+        "id": "fluid-electrolyte-066",
+        "question": "Using 2(Na) + glucose/18 + BUN/2.8, what is the estimated serum osmolality for Na 145 mmol/L, glucose 72 mg/dL, and BUN 42 mg/dL?",
+        "choices": [
+          "309 mOsm/kg",
+          "289 mOsm/kg",
+          "344 mOsm/kg",
+          "155 mOsm/kg"
+        ],
+        "answer": 0,
+        "rationale": "Substitution gives approximately 309 mOsm/kg. The estimate should be compared with measured osmolality and the clinical context.",
+        "reviewHref": "#fluid-physiology-assessment"
+      },
+      "after": {
+        "id": "fluid-electrolyte-066",
+        "question": "Calculated osmolality is available, but measured osmolality was not obtained. What can be concluded about the osmolal gap?",
+        "choices": [
+          "It cannot be determined without measured osmolality",
+          "It must be zero because the calculation was completed",
+          "It equals the BUN contribution alone",
+          "It proves that no unmeasured effective osmole is present"
+        ],
+        "answer": 0,
+        "rationale": "The gap is measured minus calculated osmolality. A calculation alone cannot provide the missing measured value or exclude an unmeasured osmole. BUN is already represented in the total-osmolality formula.",
+        "reviewHref": "#fluid-physiology-assessment"
+      },
+      "sha256": "a09d355d74a3f6d351dae6599d13925b21111ac37d261c0b44be9f204c23676a",
+      "sources": [
+        "ada",
+        "european",
+        "iowa"
+      ],
+      "choices": [
+        {
+          "index": 0,
+          "text": "It cannot be determined without measured osmolality",
+          "keyed": true,
+          "defense": "Measured osmolality is required for the gap."
+        },
+        {
+          "index": 1,
+          "text": "It must be zero because the calculation was completed",
+          "keyed": false,
+          "defense": "Completing calculation does not establish zero gap."
+        },
+        {
+          "index": 2,
+          "text": "It equals the BUN contribution alone",
+          "keyed": false,
+          "defense": "BUN is included in calculated total, not the gap."
+        },
+        {
+          "index": 3,
+          "text": "It proves that no unmeasured effective osmole is present",
+          "keyed": false,
+          "defense": "Calculation alone cannot exclude omitted effective osmoles."
+        }
+      ],
+      "allFourChoicesIndividuallyReviewed": true,
+      "anchorPreserved": true,
+      "keyPreserved": true
+    },
+    {
+      "id": "fluid-electrolyte-067",
+      "status": "verified",
+      "before": {
+        "id": "fluid-electrolyte-067",
+        "question": "Using 2(Na) + glucose/18 + BUN/2.8, what is the estimated serum osmolality for Na 125 mmol/L, glucose 900 mg/dL, and BUN 18 mg/dL?",
+        "choices": [
+          "306.4 mOsm/kg",
+          "286 mOsm/kg",
+          "341 mOsm/kg",
+          "153 mOsm/kg"
+        ],
+        "answer": 0,
+        "rationale": "Substitution gives approximately 306.4 mOsm/kg. The estimate should be compared with measured osmolality and the clinical context.",
+        "reviewHref": "#fluid-physiology-assessment"
+      },
+      "after": {
+        "id": "fluid-electrolyte-067",
+        "question": "An adult has sodium 125 mmol/L and glucose 900 mg/dL. Using 2(Na) + glucose/18, effective tonicity is 300 mOsm/kg. What interpretation is most defensible?",
+        "choices": [
+          "Low sodium alone does not establish hypotonicity when glucose raises effective tonicity",
+          "The sodium value alone confirms hypotonic SIADH",
+          "Glucose lowers tonicity by drawing water into cells",
+          "The result directly establishes total body sodium depletion"
+        ],
+        "answer": 0,
+        "rationale": "2 x 125 + 900/18 = 250 + 50 = 300 mOsm/kg. Hyperglycemic water movement can lower measured sodium while raising effective tonicity. Neither the sodium nor this estimate alone proves SIADH or total sodium depletion; it also does not establish a complete hyperglycemic-crisis diagnosis.",
+        "reviewHref": "#fluid-physiology-assessment"
+      },
+      "sha256": "ea9824adbb4860f697e8d6b8c5252f1b629190cb3f617a39ef9ce8f793d8d7ff",
+      "sources": [
+        "ada",
+        "european",
+        "iowa"
+      ],
+      "choices": [
+        {
+          "index": 0,
+          "text": "Low sodium alone does not establish hypotonicity when glucose raises effective tonicity",
+          "keyed": true,
+          "defense": "250+50=300; low sodium alone does not establish hypotonicity."
+        },
+        {
+          "index": 1,
+          "text": "The sodium value alone confirms hypotonic SIADH",
+          "keyed": false,
+          "defense": "Low sodium alone does not establish SIADH."
+        },
+        {
+          "index": 2,
+          "text": "Glucose lowers tonicity by drawing water into cells",
+          "keyed": false,
+          "defense": "Glucose draws water out of cells and can raise tonicity."
+        },
+        {
+          "index": 3,
+          "text": "The result directly establishes total body sodium depletion",
+          "keyed": false,
+          "defense": "A concentration does not determine total sodium depletion."
+        }
+      ],
+      "allFourChoicesIndividuallyReviewed": true,
+      "anchorPreserved": true,
+      "keyPreserved": true
+    },
+    {
+      "id": "fluid-electrolyte-068",
+      "status": "verified",
+      "before": {
+        "id": "fluid-electrolyte-068",
+        "question": "Using 2(Na) + glucose/18 + BUN/2.8, what is the estimated serum osmolality for Na 138 mmol/L, glucose 180 mg/dL, and BUN 56 mg/dL?",
+        "choices": [
+          "306 mOsm/kg",
+          "286 mOsm/kg",
+          "341 mOsm/kg",
+          "153 mOsm/kg"
+        ],
+        "answer": 0,
+        "rationale": "Substitution gives approximately 306 mOsm/kg. The estimate should be compared with measured osmolality and the clinical context.",
+        "reviewHref": "#fluid-physiology-assessment"
+      },
+      "after": {
+        "id": "fluid-electrolyte-068",
+        "question": "Sodium is 138 mmol/L, glucose is ALREADY reported as 10 mmol/L and BUN is 56 mg/dL. Which substitution correctly estimates total osmolality?",
+        "choices": [
+          "2 x 138 + 10 + 56/2.8 = 306 mOsm/kg",
+          "2 x 138 + 10/18 + 56/2.8 = 296.6 mOsm/kg",
+          "138 + 10 + 56/2.8 = 168 mOsm/kg",
+          "2 x 138 + 10 + 56 = 342 mOsm/kg"
+        ],
+        "answer": 0,
+        "rationale": "Glucose in mmol/L is already in the form needed for the calculation, so do not divide it by 18. BUN remains in mg/dL and contributes 56/2.8 = 20. Total = 276 + 10 + 20 = 306 mOsm/kg. The alternatives repeat a conversion, omit the sodium multiplier or fail to convert BUN.",
+        "reviewHref": "#fluid-physiology-assessment"
+      },
+      "sha256": "e413652b4e2a9dcbd87ca63942a30faeb6121652b3f79167ca42756aafb6dd6e",
+      "sources": [
+        "ada",
+        "european",
+        "iowa"
+      ],
+      "choices": [
+        {
+          "index": 0,
+          "text": "2 x 138 + 10 + 56/2.8 = 306 mOsm/kg",
+          "keyed": true,
+          "defense": "276+10+20=306."
+        },
+        {
+          "index": 1,
+          "text": "2 x 138 + 10/18 + 56/2.8 = 296.6 mOsm/kg",
+          "keyed": false,
+          "defense": "Division by18 repeats the glucose conversion."
+        },
+        {
+          "index": 2,
+          "text": "138 + 10 + 56/2.8 = 168 mOsm/kg",
+          "keyed": false,
+          "defense": "The sodium multiplier was omitted."
+        },
+        {
+          "index": 3,
+          "text": "2 x 138 + 10 + 56 = 342 mOsm/kg",
+          "keyed": false,
+          "defense": "BUN conversion was omitted."
+        }
+      ],
+      "allFourChoicesIndividuallyReviewed": true,
+      "anchorPreserved": true,
+      "keyPreserved": true
+    },
+    {
+      "id": "fluid-electrolyte-069",
+      "status": "verified",
+      "before": {
+        "id": "fluid-electrolyte-069",
+        "question": "Using 2(Na) + glucose/18 + BUN/2.8, what is the estimated serum osmolality for Na 142 mmol/L, glucose 234 mg/dL, and BUN 25 mg/dL?",
+        "choices": [
+          "305.9 mOsm/kg",
+          "286 mOsm/kg",
+          "341 mOsm/kg",
+          "153 mOsm/kg"
+        ],
+        "answer": 0,
+        "rationale": "Substitution gives approximately 305.9 mOsm/kg. The estimate should be compared with measured osmolality and the clinical context.",
+        "reviewHref": "#fluid-physiology-assessment"
+      },
+      "after": {
+        "id": "fluid-electrolyte-069",
+        "question": "The same sample has measured osmolality 326 mOsm/kg and calculated osmolality 305.9 mOsm/kg. What is the osmolal gap, and what does it establish?",
+        "choices": [
+          "20.1 mOsm/kg; investigate the formula, measurements and unmeasured osmoles",
+          "-20.1 mOsm/kg; subtraction order does not matter",
+          "20.1 mOsm/kg; this identifies methanol as the cause",
+          "631.9 mOsm/kg; adding the two values gives the gap"
+        ],
+        "answer": 0,
+        "rationale": "The gap is measured minus calculated: 326 - 305.9 = 20.1 mOsm/kg. It is a reason to investigate, not a substance-specific diagnosis. Reverse subtraction changes the sign; addition does not calculate a gap. Interpret with the laboratory's validated method and clinical findings.",
+        "reviewHref": "#fluid-physiology-assessment"
+      },
+      "sha256": "79de694f028ffef2add70f625a1cbc20fc456a5944b55dda4ebdd521506b9e45",
+      "sources": [
+        "ada",
+        "european",
+        "iowa"
+      ],
+      "choices": [
+        {
+          "index": 0,
+          "text": "20.1 mOsm/kg; investigate the formula, measurements and unmeasured osmoles",
+          "keyed": true,
+          "defense": "326−305.9=20.1; investigate without naming an agent."
+        },
+        {
+          "index": 1,
+          "text": "-20.1 mOsm/kg; subtraction order does not matter",
+          "keyed": false,
+          "defense": "Reversing subtraction changes the sign."
+        },
+        {
+          "index": 2,
+          "text": "20.1 mOsm/kg; this identifies methanol as the cause",
+          "keyed": false,
+          "defense": "Gap does not identify methanol."
+        },
+        {
+          "index": 3,
+          "text": "631.9 mOsm/kg; adding the two values gives the gap",
+          "keyed": false,
+          "defense": "Adding does not calculate a gap."
+        }
+      ],
+      "allFourChoicesIndividuallyReviewed": true,
+      "anchorPreserved": true,
+      "keyPreserved": true
+    },
+    {
+      "id": "fluid-electrolyte-0610",
+      "status": "verified",
+      "before": {
+        "id": "fluid-electrolyte-0610",
+        "question": "Using 2(Na) + glucose/18 + BUN/2.8, what is the estimated serum osmolality for Na 130 mmol/L, glucose 450 mg/dL, and BUN 7 mg/dL?",
+        "choices": [
+          "287.5 mOsm/kg",
+          "268 mOsm/kg",
+          "323 mOsm/kg",
+          "144 mOsm/kg"
+        ],
+        "answer": 0,
+        "rationale": "Substitution gives approximately 287.5 mOsm/kg. The estimate should be compared with measured osmolality and the clinical context.",
+        "reviewHref": "#fluid-physiology-assessment"
+      },
+      "after": {
+        "id": "fluid-electrolyte-0610",
+        "question": "A patient has low sodium and high BUN, with measured total osmolality above 275 mOsm/kg. Which conclusion is safest?",
+        "choices": [
+          "Assess effective tonicity because high urea can raise total osmolality without a sustained transcellular osmotic effect",
+          "The total osmolality guarantees hypertonic plasma regardless of the solutes present",
+          "High BUN proves that sodium was diluted by urea drawing water from cells",
+          "The measured total osmolality alone diagnoses SIADH"
+        ],
+        "answer": 0,
+        "rationale": "Urea raises total measured osmolality but is relatively ineffective at producing sustained water shifts across cell membranes. A total result above 275 does not by itself establish effective tonicity when ineffective osmoles are present. Review glucose and other osmoles; SIADH still requires an appropriate pattern and exclusions.",
+        "reviewHref": "#fluid-physiology-assessment"
+      },
+      "sha256": "dc04fae6aa1a8823e75a8efd2e29ac811a967a7f7084e85f2505d13f3ce23f99",
+      "sources": [
+        "ada",
+        "european",
+        "iowa"
+      ],
+      "choices": [
+        {
+          "index": 0,
+          "text": "Assess effective tonicity because high urea can raise total osmolality without a sustained transcellular osmotic effect",
+          "keyed": true,
+          "defense": "Ineffective urea can increase total without sustained water shifts."
+        },
+        {
+          "index": 1,
+          "text": "The total osmolality guarantees hypertonic plasma regardless of the solutes present",
+          "keyed": false,
+          "defense": "Total osmolality alone does not identify effective solutes."
+        },
+        {
+          "index": 2,
+          "text": "High BUN proves that sodium was diluted by urea drawing water from cells",
+          "keyed": false,
+          "defense": "Urea readily crosses membranes, so that mechanism is wrong."
+        },
+        {
+          "index": 3,
+          "text": "The measured total osmolality alone diagnoses SIADH",
+          "keyed": false,
+          "defense": "SIADH requires further pattern and exclusions."
+        }
+      ],
+      "allFourChoicesIndividuallyReviewed": true,
+      "anchorPreserved": true,
+      "keyPreserved": true
+    }
+  ],
+  "referenceReview": {
+    "newSources": [
+      {
+        "label": "ADA/EASD 2024 hyperglycemic-crisis consensus: total and effective osmolality formulas",
+        "href": "https://link.springer.com/article/10.1007/s00125-024-06183-8"
+      },
+      {
+        "label": "Asim et al. 2019: body fluid compartments and volume depletion",
+        "href": "https://www.wjgnet.com/2220-6124/full/v8/i1/23.htm"
+      },
+      {
+        "label": "University of Iowa clinical laboratory: osmolal-gap calculation and interpretation",
+        "href": "https://www.healthcare.uiowa.edu/path_handbook/appendix/chem/osmo_gap.html"
+      }
+    ],
+    "oldNineRetained": true,
+    "allTwelveUrlsRenderedExactly": true,
+    "clinicalVerificationScope": "Three additions and existing NICE/hyponatremia sources relevant to this lesson. Other bibliography topics remain for their lessons."
+  },
+  "validation": {
+    "objectsAndIndependentArithmetic": {
+      "status": "passed",
+      "allOther231ModulesUnchanged": true,
+      "allOther80QuestionObjectsUnchanged": true,
+      "otherFiveLessonsUnchanged": true,
+      "allExisting100IdsKeysAnchorsAndOrderPreserved": true,
+      "newQuestions": 0,
+      "wholeBodiesAfter": 26,
+      "lessonBodiesAfter": 7,
+      "newBodies": 4,
+      "cumulativeChanged": [
+        "cumulative-fluid-electrolyte-therapy-fluid-electrolyte-001"
+      ],
+      "otherCumulativeUnchanged": 1179,
+      "originalTenCalculations": [
+        {
+          "id": "fluid-electrolyte-061",
+          "result": "290.0",
+          "originalKeyMatched": true
+        },
+        {
+          "id": "fluid-electrolyte-062",
+          "result": "304.0",
+          "originalKeyMatched": true
+        },
+        {
+          "id": "fluid-electrolyte-063",
+          "result": "265.9",
+          "originalKeyMatched": true
+        },
+        {
+          "id": "fluid-electrolyte-064",
+          "result": "319.5",
+          "originalKeyMatched": true
+        },
+        {
+          "id": "fluid-electrolyte-065",
+          "result": "299.5",
+          "originalKeyMatched": true
+        },
+        {
+          "id": "fluid-electrolyte-066",
+          "result": "309.0",
+          "originalKeyMatched": true
+        },
+        {
+          "id": "fluid-electrolyte-067",
+          "result": "306.4",
+          "originalKeyMatched": true
+        },
+        {
+          "id": "fluid-electrolyte-068",
+          "result": "306.0",
+          "originalKeyMatched": true
+        },
+        {
+          "id": "fluid-electrolyte-069",
+          "result": "305.9",
+          "originalKeyMatched": true
+        },
+        {
+          "id": "fluid-electrolyte-0610",
+          "result": "287.5",
+          "originalKeyMatched": true
+        }
+      ],
+      "revisedCalculations": {
+        "061_total": "290",
+        "062_effective": "294",
+        "064_total": "319.5",
+        "064_effective": "307",
+        "067_effective": "300",
+        "068_SI_glucose_total": "306",
+        "069_gap": "20.1",
+        "check_hypotonic_comparison": "True"
+      },
+      "workedExample": {
+        "total": "290",
+        "effective": "285"
+      },
+      "questionHashes": {
+        "fluid-electrolyte-001": "07e83e6a9fa0d9ed9e897c69c9c262f2fa9958ae695853b05293306c105ef2ff",
+        "fluid-electrolyte-002": "521cd59300a7fa4dc9f34badb80078414eb5e11a7d6cde2d2904f44708491261",
+        "fluid-electrolyte-003": "3189bba180114ec1d1b65b94fbd8ef6f97c12a9c5294c5569e084633a7c2c762",
+        "fluid-electrolyte-004": "aff11a43ede0a95e2ebaf41348d06bb639d732236d07352fedaf97a261fcbba1",
+        "fluid-electrolyte-005": "08ced9098f29174fa8213027606717cea15dcfe6296770525f57723036bcf9b5",
+        "fluid-electrolyte-006": "54f07efdcefc02589c4d29dde53544a5d2858ddc8bdd404fabfb95a6c0fdf205",
+        "fluid-electrolyte-007": "010a1cf49c9825bbf302bd9cbf6f21a2b515712711ebd8825bbd8f18a77d4d9e",
+        "fluid-electrolyte-008": "afbe93bed259deeed82afd66e9cd1d2787c6c45196126b5c1c136f95aa8bb165",
+        "fluid-electrolyte-009": "44199ceba926f349e29d3cb7230dd9fde3622b81837ebdbf62b10bcca8d9ba14",
+        "fluid-electrolyte-010": "b4cde450dd93aa930c152a746dd2a37b5e0bf4d0bb5e066beb1437bda2a65b8e",
+        "fluid-electrolyte-061": "bff018bfa840217096d9126fe8c61aa1969020e3c4770f75cfd498db770abf2e",
+        "fluid-electrolyte-062": "3f4c27eee24c23ecaa67b8b9e348198f7617871b0b6413b400aefb5a00a3abda",
+        "fluid-electrolyte-063": "d6c037c96f327b14477c3291b35214b024f6ef6aa0cf1ab4fd57638a890131f6",
+        "fluid-electrolyte-064": "45683c7b8b43b6030510bd072dca6dba6af0b21b9f8d9448571785467be22578",
+        "fluid-electrolyte-065": "5fd009cb8fb80751745ab1156c64b8d43fa0bc7ad788f34d09c10bdde1ee2363",
+        "fluid-electrolyte-066": "a09d355d74a3f6d351dae6599d13925b21111ac37d261c0b44be9f204c23676a",
+        "fluid-electrolyte-067": "ea9824adbb4860f697e8d6b8c5252f1b629190cb3f617a39ef9ce8f793d8d7ff",
+        "fluid-electrolyte-068": "e413652b4e2a9dcbd87ca63942a30faeb6121652b3f79167ca42756aafb6dd6e",
+        "fluid-electrolyte-069": "79de694f028ffef2add70f625a1cbc20fc456a5944b55dda4ebdd521506b9e45",
+        "fluid-electrolyte-0610": "dc04fae6aa1a8823e75a8efd2e29ac811a967a7f7084e85f2505d13f3ce23f99"
+      },
+      "lessonHash": "0a7540501a3913b69e003e5aba19d460b2573781591a88b63a41ae699f99e182"
+    },
+    "structure": {
+      "modules": 1,
+      "questions": 100,
+      "hardErrors": [],
+      "sourceGaps": [],
+      "sizeAdvisories": [],
+      "thinLessons": [],
+      "weakestModules": [
+        {
+          "module": "fluid-electrolyte-therapy",
+          "lessons": 6,
+          "questions": 100,
+          "minimumLessonCoverage": 12
+        }
+      ]
+    },
+    "build": {
+      "status": "passed",
+      "exitCode": 0,
+      "command": "next build --webpack",
+      "candidate": "Committed HEAD plus reviewed first fluid lesson and existing questions"
+    },
+    "browser": {
+      "status": "passed",
+      "results": [
+        {
+          "width": 1440,
+          "wholeLessonBodiesExact": 7,
+          "allLessonMetadataExact": true,
+          "embeddedCheckAllFourChoicesGraded": true,
+          "wholeQuestionsShuffledChoicesKeyRationaleAndCorrectIncorrectFeedback": 20,
+          "allReferencesExact": 12,
+          "noHorizontalOverflow": true
+        },
+        {
+          "width": 390,
+          "wholeLessonBodiesExact": 7,
+          "allLessonMetadataExact": true,
+          "embeddedCheckAllFourChoicesGraded": true,
+          "wholeQuestionsShuffledChoicesKeyRationaleAndCorrectIncorrectFeedback": 20,
+          "allReferencesExact": 12,
+          "noHorizontalOverflow": true
+        }
+      ],
+      "figureWidths": [
+        320,
+        390,
+        720,
+        1440
+      ],
+      "captures": [
+        "captures/body-0-1440.png",
+        "captures/body-1-1440.png",
+        "captures/body-2-1440.png",
+        "captures/body-3-1440.png",
+        "captures/body-4-1440.png",
+        "captures/body-5-1440.png",
+        "captures/body-6-1440.png",
+        "captures/summary-1440.png",
+        "captures/concepts-1440.png",
+        "captures/keypoints-1440.png",
+        "captures/application-1440.png",
+        "captures/figure-1440.png",
+        "captures/check-1440.png",
+        "captures/references-1440.png",
+        "captures/bank-fluid-electrolyte-008-1440.png",
+        "captures/bank-fluid-electrolyte-005-1440.png",
+        "captures/bank-fluid-electrolyte-010-1440.png",
+        "captures/bank-fluid-electrolyte-001-1440.png",
+        "captures/bank-fluid-electrolyte-003-1440.png",
+        "captures/bank-fluid-electrolyte-069-1440.png",
+        "captures/bank-fluid-electrolyte-004-1440.png",
+        "captures/bank-fluid-electrolyte-066-1440.png",
+        "captures/bank-fluid-electrolyte-002-1440.png",
+        "captures/bank-fluid-electrolyte-065-1440.png",
+        "captures/bank-fluid-electrolyte-007-1440.png",
+        "captures/bank-fluid-electrolyte-063-1440.png",
+        "captures/bank-fluid-electrolyte-061-1440.png",
+        "captures/bank-fluid-electrolyte-0610-1440.png",
+        "captures/bank-fluid-electrolyte-064-1440.png",
+        "captures/bank-fluid-electrolyte-062-1440.png",
+        "captures/bank-fluid-electrolyte-009-1440.png",
+        "captures/bank-fluid-electrolyte-068-1440.png",
+        "captures/bank-fluid-electrolyte-067-1440.png",
+        "captures/bank-fluid-electrolyte-006-1440.png",
+        "captures/body-0-390.png",
+        "captures/body-1-390.png",
+        "captures/body-2-390.png",
+        "captures/body-3-390.png",
+        "captures/body-4-390.png",
+        "captures/body-5-390.png",
+        "captures/body-6-390.png",
+        "captures/summary-390.png",
+        "captures/concepts-390.png",
+        "captures/keypoints-390.png",
+        "captures/application-390.png",
+        "captures/figure-390.png",
+        "captures/check-390.png",
+        "captures/references-390.png",
+        "captures/bank-fluid-electrolyte-008-390.png",
+        "captures/bank-fluid-electrolyte-005-390.png",
+        "captures/bank-fluid-electrolyte-010-390.png",
+        "captures/bank-fluid-electrolyte-001-390.png",
+        "captures/bank-fluid-electrolyte-003-390.png",
+        "captures/bank-fluid-electrolyte-069-390.png",
+        "captures/bank-fluid-electrolyte-004-390.png",
+        "captures/bank-fluid-electrolyte-066-390.png",
+        "captures/bank-fluid-electrolyte-002-390.png",
+        "captures/bank-fluid-electrolyte-065-390.png",
+        "captures/bank-fluid-electrolyte-007-390.png",
+        "captures/bank-fluid-electrolyte-063-390.png",
+        "captures/bank-fluid-electrolyte-061-390.png",
+        "captures/bank-fluid-electrolyte-0610-390.png",
+        "captures/bank-fluid-electrolyte-064-390.png",
+        "captures/bank-fluid-electrolyte-062-390.png",
+        "captures/bank-fluid-electrolyte-009-390.png",
+        "captures/bank-fluid-electrolyte-068-390.png",
+        "captures/bank-fluid-electrolyte-067-390.png",
+        "captures/bank-fluid-electrolyte-006-390.png",
+        "captures/native-figure-320.png",
+        "captures/native-figure-720.png"
+      ],
+      "errors": []
+    },
+    "visual": {
+      "status": "passed",
+      "actuallyViewedUnscaledBoards": [
+        "captures/boards/board-00.png",
+        "captures/boards/board-01.png",
+        "captures/boards/board-02.png",
+        "captures/boards/board-03.png",
+        "captures/boards/board-04.png",
+        "captures/boards/board-05.png",
+        "captures/boards/board-06.png",
+        "captures/boards/board-07.png",
+        "captures/boards/board-08.png",
+        "captures/boards/board-09.png"
+      ],
+      "sourceCapturePairsCovered": 34,
+      "sourceCapturesCovered": 68,
+      "nativeFiguresActuallyViewed": [
+        "captures/native-figure-320.png",
+        "captures/native-figure-720.png"
+      ],
+      "totalCapturesActuallyViewedViaBoardsOrNative": 70,
+      "findings": "All seven teaching bodies and metadata readable at desktop/mobile. Formula units and complete worked example visible. All20 stems,80choices per width, feedback and lesson links legible. Figure labels/model limitations readable at320/390/720/1440. No clipped text, overlap or horizontal overflow identified.",
+      "sourcePagesActuallyViewed": {
+        "book": [
+          158,
+          714,
+          715,
+          716
+        ],
+        "nice": [
+          13,
+          14,
+          15,
+          16,
+          17
+        ],
+        "european": [
+          8,
+          11,
+          12,
+          16,
+          28
+        ],
+        "ada": "Figure2"
+      }
+    }
+  },
+  "finalSourceComparison": "Entire finished seven-body lesson, all lesson metadata, check/choices, retained figure labels and all20 whole questions/80 choices reread against relevant sources. Formula variation and measurement limits explicit. No numeric hyponatremia correction protocol, PN dosing or complete HHS diagnosis added.",
+  "remaining": "Audit iv-fluid-selection then other four original lessons; preserve two earlier feeding questions016/083 and intake/loss body. Full parent metadata/bibliography, Chapter1entry15 and Chapter11 remain open.",
+  "privateEvidenceRoot": "/Volumes/AGNDJ 6TB/NaS-Codex-Private/Learn-Audit/fluid-physiology-b3b7da32",
+  "release": {
+    "branch": "audit/rxprep-content-2026-09-24",
+    "baseCommit": "b3b7da32108edaa3ce8d799c2cdf62ac4fcb9a5a",
+    "commit": null,
+    "push": "pending",
+    "receipt": "fluid-physiology-assessment-release.json",
+    "mainMerge": "not performed",
+    "production": "not verified"
+  }
+}

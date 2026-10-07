@@ -150,3 +150,265 @@ Object.assign(fluidElectrolyteTherapyQuestionBank.find((question) => question.id
   ],
   "rationale": "Measured gastric drainage is an abnormal ongoing loss. Review its quantity and composition, the patient’s fluid status, laboratory trends and all intake, then adjust replacement alongside any maintenance requirement. Ordinary maintenance does not automatically cover this loss; formula is not an interchangeable loss-replacement prescription, and a changing output requires reassessment. The stem does not establish a resuscitation bolus or an exact replacement solution, rate or volume."
 });
+
+// Individually reviewed fluid physiology cases; retain existing question IDs.
+Object.assign(fluidElectrolyteTherapyQuestionBank.find((question) => question.id === "fluid-electrolyte-001"), {
+  "id": "fluid-electrolyte-001",
+  "question": "Which statement best distinguishes serum sodium from total body sodium?",
+  "choices": [
+    "Serum sodium is a concentration governed strongly by water balance",
+    "Serum sodium directly equals exchangeable body sodium",
+    "Serum sodium measures intravascular volume",
+    "Serum sodium is independent of glucose"
+  ],
+  "answer": 0,
+  "rationale": "Serum sodium describes concentration relative to water, rather than the amount of sodium in the body. Interpret it with tonicity and the clinical volume assessment. Hyperglycemia can change measured sodium by moving water into extracellular fluid.",
+  "reviewHref": "#fluid-physiology-assessment"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find((question) => question.id === "fluid-electrolyte-002"), {
+  "id": "fluid-electrolyte-002",
+  "question": "Which solute contributes to calculated osmolality but is excluded from effective tonicity?",
+  "choices": [
+    "Urea nitrogen",
+    "Sodium",
+    "Glucose",
+    "Mannitol"
+  ],
+  "answer": 0,
+  "rationale": "Urea contributes to total osmolality, but readily crosses cell membranes and is excluded from the simplified effective-tonicity estimate. Sodium salts, glucose and mannitol can act as effective extracellular osmoles; BUN is the reported nitrogen component of urea.",
+  "reviewHref": "#fluid-physiology-assessment"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find((question) => question.id === "fluid-electrolyte-003"), {
+  "id": "fluid-electrolyte-003",
+  "question": "Why can a patient with marked edema still have reduced effective circulating volume?",
+  "choices": [
+    "Fluid can be retained outside the vascular space while perfusion remains inadequate",
+    "Edema proves plasma volume is high",
+    "Interstitial water cannot exchange with plasma",
+    "Edema eliminates neurohormonal activation"
+  ],
+  "answer": 0,
+  "rationale": "Interstitial fluid accumulation does not guarantee adequate effective circulation. Fluid compartments exchange water, and disorders with reduced effective circulation can activate water-retaining mechanisms despite edema. Assess perfusion and congestion together.",
+  "reviewHref": "#fluid-physiology-assessment"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find((question) => question.id === "fluid-electrolyte-004"), {
+  "id": "fluid-electrolyte-004",
+  "question": "Which measurement is most useful for detecting a new water diuresis during correction of hyponatremia?",
+  "choices": [
+    "Urine output trend",
+    "Body weight measured only at discharge",
+    "A repeat serum sodium without recording urine output",
+    "The amount of saline already prescribed"
+  ],
+  "answer": 0,
+  "rationale": "A sudden increase in dilute urine output can signal rising free-water clearance and precede unexpectedly rapid sodium correction. Track output with serial sodium measurements; sodium must still be checked, but it does not directly record the emerging diuresis.",
+  "reviewHref": "#fluid-physiology-assessment"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find((question) => question.id === "fluid-electrolyte-005"), {
+  "id": "fluid-electrolyte-005",
+  "question": "A measured osmolality is substantially greater than the calculated osmolality. What does the difference suggest?",
+  "choices": [
+    "An osmolar gap that may reflect an unmeasured osmole",
+    "Definitive SIADH",
+    "Normal effective tonicity",
+    "A direct measure of dehydration"
+  ],
+  "answer": 0,
+  "rationale": "Measured minus calculated osmolality is the osmolal gap. An unexpectedly positive gap may reflect an osmole omitted from the formula or analytic context. Check the same-sample measurements, units and exposures; the gap alone does not diagnose SIADH, prove normal tonicity or quantify volume depletion.",
+  "reviewHref": "#fluid-physiology-assessment"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find((question) => question.id === "fluid-electrolyte-006"), {
+  "id": "fluid-electrolyte-006",
+  "question": "The intake/output chart suggests neutral balance, but comparable weights rise and examination shows new edema. What is the best interpretation?",
+  "choices": [
+    "Reconcile the chart with the weight and examination before revising the fluid plan",
+    "The chart rules out fluid accumulation despite the examination",
+    "The weight trend alone proves hypotonic hyponatremia",
+    "The weights identify the cause of the edema without further assessment"
+  ],
+  "answer": 0,
+  "rationale": "Discordant findings require reconciliation. Weight is one part of the fluid assessment, alongside intake/output, examination, medicines and laboratory trends. Neither a chart nor a weight trend establishes tonicity or the cause by itself; a daily-weight schedule is not required for every patient.",
+  "reviewHref": "#fluid-physiology-assessment"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find((question) => question.id === "fluid-electrolyte-007"), {
+  "id": "fluid-electrolyte-007",
+  "question": "Which finding most directly supports impaired perfusion rather than isolated interstitial edema?",
+  "choices": [
+    "Delayed capillary refill with cool extremities",
+    "Bilateral ankle swelling alone",
+    "A low serum albumin alone",
+    "Stable body weight"
+  ],
+  "answer": 0,
+  "rationale": "Delayed capillary refill and cool extremities are clinical indicators of possible impaired circulation. Ankle edema and low albumin do not by themselves establish perfusion, and stable weight does not exclude an acute problem. Use the full assessment before selecting therapy.",
+  "reviewHref": "#fluid-physiology-assessment"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find((question) => question.id === "fluid-electrolyte-008"), {
+  "id": "fluid-electrolyte-008",
+  "question": "Hyperglycemia lowers measured sodium primarily through which mechanism?",
+  "choices": [
+    "Water shifts from cells into extracellular fluid",
+    "Sodium enters cells with glucose",
+    "Urea becomes an effective osmole",
+    "The kidney immediately loses all sodium"
+  ],
+  "answer": 0,
+  "rationale": "In hyperglycemia, extracellular glucose can act as an effective osmole and draw water from cells into extracellular fluid, lowering measured sodium by dilution. This is not simply sodium moving into cells, conversion of urea into an effective osmole or immediate loss of all renal sodium.",
+  "reviewHref": "#fluid-physiology-assessment"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find((question) => question.id === "fluid-electrolyte-009"), {
+  "id": "fluid-electrolyte-009",
+  "question": "A patient has ankle edema, cool extremities and delayed capillary refill. What assessment best avoids assuming that edema proves adequate circulation?",
+  "choices": [
+    "Assess perfusion and congestion together, using history, examination and trends",
+    "Treat ankle edema as proof that effective circulation is adequate",
+    "Infer circulating volume from serum sodium alone",
+    "Use low albumin alone to select an albumin infusion"
+  ],
+  "answer": 0,
+  "rationale": "Edema and inadequate effective circulation can coexist. The fluid assessment combines examination, history, input/output, weight and laboratory trends. Neither sodium concentration nor albumin alone establishes circulating volume or an infusion indication.",
+  "reviewHref": "#fluid-physiology-assessment"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find((question) => question.id === "fluid-electrolyte-010"), {
+  "id": "fluid-electrolyte-010",
+  "question": "What is the strongest reason to document the intended response before administering IV fluid?",
+  "choices": [
+    "It creates a measurable stopping or revision point",
+    "It guarantees the fluid is harmless",
+    "It eliminates the need for reassessment",
+    "It converts maintenance into resuscitation"
+  ],
+  "answer": 0,
+  "rationale": "An explicit intended response and monitoring plan make reassessment actionable, including stopping or revising fluid when it does not help or causes harm. Documentation does not make any fluid harmless, remove monitoring or change the indication from maintenance to resuscitation.",
+  "reviewHref": "#fluid-physiology-assessment"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find((question) => question.id === "fluid-electrolyte-061"), {
+  "id": "fluid-electrolyte-061",
+  "question": "Using 2(Na) + glucose/18 + BUN/2.8, what is the estimated serum osmolality for Na 140 mmol/L, glucose 90 mg/dL, and BUN 14 mg/dL?",
+  "choices": [
+    "290 mOsm/kg",
+    "270 mOsm/kg",
+    "325 mOsm/kg",
+    "145 mOsm/kg"
+  ],
+  "answer": 0,
+  "rationale": "2 x 140 + 90/18 + 14/2.8 = 280 + 5 + 5 = 290 mOsm/kg. Sodium is in mmol/L and glucose/BUN in mg/dL. The other choices reflect incorrect substitution or arithmetic. This is an estimate of total osmolality, not a measured result or a direct volume assessment.",
+  "reviewHref": "#fluid-physiology-assessment"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find((question) => question.id === "fluid-electrolyte-062"), {
+  "id": "fluid-electrolyte-062",
+  "question": "Using 2(Na) + glucose/18 for effective tonicity, what is the estimate for sodium 132 mmol/L, glucose 540 mg/dL and BUN 28 mg/dL?",
+  "choices": [
+    "294 mOsm/kg",
+    "304 mOsm/kg",
+    "274 mOsm/kg",
+    "264 mOsm/kg"
+  ],
+  "answer": 0,
+  "rationale": "Effective tonicity is 2 x 132 + 540/18 = 264 + 30 = 294 mOsm/kg. Adding BUN/2.8 would give total osmolality 304; urea is omitted from effective tonicity. 274 omits much of the glucose contribution, and 264 omits it entirely.",
+  "reviewHref": "#fluid-physiology-assessment"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find((question) => question.id === "fluid-electrolyte-063"), {
+  "id": "fluid-electrolyte-063",
+  "question": "An adult has sodium 128 mmol/L and measured serum osmolality 266 mOsm/kg. What classification follows from the measured osmolality?",
+  "choices": [
+    "Hypotonic hyponatremia; assess symptoms and cause next",
+    "Hypertonic hyponatremia caused by the low sodium itself",
+    "Confirmed SIADH without further assessment",
+    "Proven intravascular depletion from the sodium alone"
+  ],
+  "answer": 0,
+  "rationale": "Measured osmolality below 275 mOsm/kg with hyponatremia establishes hypotonicity. It does not establish SIADH or volume depletion; symptom severity and the broader diagnostic assessment remain necessary.",
+  "reviewHref": "#fluid-physiology-assessment"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find((question) => question.id === "fluid-electrolyte-064"), {
+  "id": "fluid-electrolyte-064",
+  "question": "For sodium 150 mmol/L, glucose 126 mg/dL and BUN 35 mg/dL, which pair correctly gives estimated TOTAL osmolality and EFFECTIVE tonicity using this lesson's formulas?",
+  "choices": [
+    "319.5 and 307 mOsm/kg",
+    "307 and 319.5 mOsm/kg",
+    "319.5 and 319.5 mOsm/kg",
+    "300 and 300 mOsm/kg"
+  ],
+  "answer": 0,
+  "rationale": "Total = 300 + 7 + 12.5 = 319.5 mOsm/kg; effective = 300 + 7 = 307. The reversed pair places effective above total; equal 319.5 values incorrectly include urea in tonicity, while 300 values omit glucose and, for total, BUN.",
+  "reviewHref": "#fluid-physiology-assessment"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find((question) => question.id === "fluid-electrolyte-065"), {
+  "id": "fluid-electrolyte-065",
+  "question": "A colleague enters a UREA result reported in mg/dL into the BUN/2.8 term. Which response is appropriate?",
+  "choices": [
+    "Verify the analyte and convert units or use the appropriate laboratory formula before calculating",
+    "Accept it because urea mass and BUN mass are interchangeable",
+    "Use the same number but label the result mL/kg",
+    "Double the sodium term again to compensate"
+  ],
+  "answer": 0,
+  "rationale": "BUN reports the nitrogen component of urea, not the full urea mass. The divisor 2.8 applies to BUN in mg/dL. Correct the analyte/unit mismatch before calculation; changing the output label or sodium multiplier cannot fix it.",
+  "reviewHref": "#fluid-physiology-assessment"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find((question) => question.id === "fluid-electrolyte-066"), {
+  "id": "fluid-electrolyte-066",
+  "question": "Calculated osmolality is available, but measured osmolality was not obtained. What can be concluded about the osmolal gap?",
+  "choices": [
+    "It cannot be determined without measured osmolality",
+    "It must be zero because the calculation was completed",
+    "It equals the BUN contribution alone",
+    "It proves that no unmeasured effective osmole is present"
+  ],
+  "answer": 0,
+  "rationale": "The gap is measured minus calculated osmolality. A calculation alone cannot provide the missing measured value or exclude an unmeasured osmole. BUN is already represented in the total-osmolality formula.",
+  "reviewHref": "#fluid-physiology-assessment"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find((question) => question.id === "fluid-electrolyte-067"), {
+  "id": "fluid-electrolyte-067",
+  "question": "An adult has sodium 125 mmol/L and glucose 900 mg/dL. Using 2(Na) + glucose/18, effective tonicity is 300 mOsm/kg. What interpretation is most defensible?",
+  "choices": [
+    "Low sodium alone does not establish hypotonicity when glucose raises effective tonicity",
+    "The sodium value alone confirms hypotonic SIADH",
+    "Glucose lowers tonicity by drawing water into cells",
+    "The result directly establishes total body sodium depletion"
+  ],
+  "answer": 0,
+  "rationale": "2 x 125 + 900/18 = 250 + 50 = 300 mOsm/kg. Hyperglycemic water movement can lower measured sodium while raising effective tonicity. Neither the sodium nor this estimate alone proves SIADH or total sodium depletion; it also does not establish a complete hyperglycemic-crisis diagnosis.",
+  "reviewHref": "#fluid-physiology-assessment"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find((question) => question.id === "fluid-electrolyte-068"), {
+  "id": "fluid-electrolyte-068",
+  "question": "Sodium is 138 mmol/L, glucose is ALREADY reported as 10 mmol/L and BUN is 56 mg/dL. Which substitution correctly estimates total osmolality?",
+  "choices": [
+    "2 x 138 + 10 + 56/2.8 = 306 mOsm/kg",
+    "2 x 138 + 10/18 + 56/2.8 = 296.6 mOsm/kg",
+    "138 + 10 + 56/2.8 = 168 mOsm/kg",
+    "2 x 138 + 10 + 56 = 342 mOsm/kg"
+  ],
+  "answer": 0,
+  "rationale": "Glucose in mmol/L is already in the form needed for the calculation, so do not divide it by 18. BUN remains in mg/dL and contributes 56/2.8 = 20. Total = 276 + 10 + 20 = 306 mOsm/kg. The alternatives repeat a conversion, omit the sodium multiplier or fail to convert BUN.",
+  "reviewHref": "#fluid-physiology-assessment"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find((question) => question.id === "fluid-electrolyte-069"), {
+  "id": "fluid-electrolyte-069",
+  "question": "The same sample has measured osmolality 326 mOsm/kg and calculated osmolality 305.9 mOsm/kg. What is the osmolal gap, and what does it establish?",
+  "choices": [
+    "20.1 mOsm/kg; investigate the formula, measurements and unmeasured osmoles",
+    "-20.1 mOsm/kg; subtraction order does not matter",
+    "20.1 mOsm/kg; this identifies methanol as the cause",
+    "631.9 mOsm/kg; adding the two values gives the gap"
+  ],
+  "answer": 0,
+  "rationale": "The gap is measured minus calculated: 326 - 305.9 = 20.1 mOsm/kg. It is a reason to investigate, not a substance-specific diagnosis. Reverse subtraction changes the sign; addition does not calculate a gap. Interpret with the laboratory's validated method and clinical findings.",
+  "reviewHref": "#fluid-physiology-assessment"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find((question) => question.id === "fluid-electrolyte-0610"), {
+  "id": "fluid-electrolyte-0610",
+  "question": "A patient has low sodium and high BUN, with measured total osmolality above 275 mOsm/kg. Which conclusion is safest?",
+  "choices": [
+    "Assess effective tonicity because high urea can raise total osmolality without a sustained transcellular osmotic effect",
+    "The total osmolality guarantees hypertonic plasma regardless of the solutes present",
+    "High BUN proves that sodium was diluted by urea drawing water from cells",
+    "The measured total osmolality alone diagnoses SIADH"
+  ],
+  "answer": 0,
+  "rationale": "Urea raises total measured osmolality but is relatively ineffective at producing sustained water shifts across cell membranes. A total result above 275 does not by itself establish effective tonicity when ineffective osmoles are present. Review glucose and other osmoles; SIADH still requires an appropriate pattern and exclusions.",
+  "reviewHref": "#fluid-physiology-assessment"
+});

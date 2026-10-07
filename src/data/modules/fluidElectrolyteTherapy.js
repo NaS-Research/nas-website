@@ -130,3 +130,79 @@ fluidElectrolyteTherapyModule.references.push({
   "label": "NICE CG174 full guidance: adult IV fluids, including December 2025 update",
   "href": "https://www.nice.org.uk/guidance/cg174/resources/intravenous-fluid-therapy-in-adults-in-hospital-pdf-35109752233669"
 });
+
+// Source-reviewed fluid physiology and assessment.
+Object.assign(fluidElectrolyteTherapyModule.submodules.find((lesson) => lesson.slug === "fluid-physiology-assessment"), {
+  "slug": "fluid-physiology-assessment",
+  "title": "Fluid Physiology and Assessment",
+  "summary": "A serum value describes concentration. A bedside assessment explains perfusion, congestion, losses, and the compartment in which water is moving.",
+  "concepts": [
+    "Intracellular and extracellular water",
+    "Osmolality and effective tonicity",
+    "Perfusion versus congestion",
+    "Input, output, weight, and trend"
+  ],
+  "visual": "compartments",
+  "application": "Before ordering fluid, name the problem being treated, the evidence supporting it, the expected physiologic response, and the finding that will stop or change the plan.",
+  "lesson": [
+    {
+      "heading": "Locate the water compartments",
+      "body": "A useful approximate adult model places about two-thirds of total body water inside cells and one-third outside them. Extracellular water includes interstitial and intravascular water; the small transcellular spaces are omitted from this simplified diagram. These fractions describe a model, not the percentage of body weight that is water or a measurement in this patient. Water moves between compartments according to effective osmotic gradients, while a large interstitial volume does not prove that tissue perfusion is adequate."
+    },
+    {
+      "heading": "Separate concentration from volume",
+      "body": "Sodium is primarily a water-balance concentration, not a direct measurement of total body sodium. A patient may be hyponatremic while intravascularly depleted, clinically euvolemic, or edematous. Volume assessment integrates history, examination, urine output, weight, hemodynamics, kidney function, and the direction of change."
+    },
+    {
+      "heading": "Use osmolality to explain water movement",
+      "body": "For this lesson, estimate total serum osmolality as 2 x sodium + glucose/18 + BUN/2.8, using sodium in mmol/L and glucose and blood urea nitrogen (BUN) in mg/dL; the result is approximately mOsm/kg. If glucose is already in mmol/L, use that value directly instead of dividing by 18. BUN is not the same as a urea mass concentration. Estimate effective tonicity as 2 x sodium + glucose/18 in these units, leaving out BUN because urea crosses cell membranes readily. With sodium 140 mmol/L, glucose 90 mg/dL and BUN 14 mg/dL, total osmolality is 280 + 5 + 5 = 290 mOsm/kg, while effective tonicity is 285 mOsm/kg. These are estimates, not laboratory measurements; unmeasured osmoles and the laboratory's validated formula can change their interpretation. Extracellular glucose can increase tonicity, draw water out of cells and lower measured sodium."
+    },
+    {
+      "heading": "Treat the trajectory",
+      "body": "Combine serial intake and output records with comparable weights, examination and laboratory trends. Review limited intake, gastrointestinal losses, drains, medicines, urine output, edema and kidney function. A discrepancy between the fluid chart and the patient's weight or examination calls for reconciliation, not automatic acceptance of either number. NICE recommends at least daily reassessment of clinical status, urea, creatinine, electrolytes and fluid balance initially during ongoing adult IV therapy, with weight twice weekly; replacement or redistribution problems can need more frequent monitoring, and stable longer-term therapy may need less. A monitoring interval must match the clinical situation."
+    },
+    {
+      "heading": "Assess perfusion alongside congestion",
+      "body": "Examine pulse, blood pressure, capillary refill, peripheral temperature, jugular venous pressure and pulmonary or peripheral edema. Cold extremities or delayed capillary refill may support circulatory compromise, but no isolated sign establishes the full diagnosis or the correct fluid dose. Edema and reduced effective circulating volume can coexist. Document the clinical purpose, expected response and signs of harm, then reassess; do not prescribe a bolus from sodium, edema or a low albumin value alone."
+    },
+    {
+      "heading": "Investigate a measured-to-calculated gap",
+      "body": "The osmolal gap is measured serum osmolality minus the calculated estimate. Compare measurements from the same sample and verify the units and the laboratory's calculation method. An unexpected positive gap can reflect substances omitted from that formula, but it does not identify a particular substance, prove SIADH or directly measure volume depletion. Review exposures and the clinical and acid-base findings. A low calculated value alone does not exclude an unmeasured effective osmole; measured osmolality below 275 mOsm/kg in a hyponatremic patient establishes hypotonicity."
+    },
+    {
+      "heading": "Watch for an unexpected water diuresis",
+      "body": "During treatment of hyponatremia, a sudden increase in dilute urine output may accelerate the sodium rise even after a saline infusion stops. Restoration of circulating volume can suppress vasopressin and increase free-water clearance. Track urine output with serial sodium measurements and urgently reassess an unexpectedly rapid rise under the applicable correction protocol. Urine output is an early warning, not a substitute for measuring sodium or a reason to normalize it rapidly."
+    }
+  ],
+  "keyPoints": [
+    "Do not infer volume status from sodium alone.",
+    "Distinguish measured osmolality from calculated osmolality and effective tonicity.",
+    "Document the indication for fluid and the response target before administration."
+  ],
+  "check": {
+    "question": "A patient with decompensated heart failure has edema, sodium 128 mmol/L and measured serum osmolality 260 mOsm/kg. Which interpretation is best?",
+    "choices": [
+      "The patient may have hypervolemic hypotonic hyponatremia",
+      "The low sodium proves total body sodium depletion",
+      "Edema excludes a water-balance disorder",
+      "Serum sodium directly measures intravascular volume"
+    ],
+    "answer": 0,
+    "rationale": "The low measured osmolality establishes hypotonicity. Heart failure with edema is compatible with hypervolemic hyponatremia, in which water retention is proportionally greater than sodium retention. Serum sodium is a concentration; it neither directly measures total body sodium nor establishes effective circulating volume.",
+    "reviewHref": "#fluid-physiology-assessment"
+  }
+});
+fluidElectrolyteTherapyModule.references.push(...[
+  {
+    "label": "ADA/EASD 2024 hyperglycemic-crisis consensus: total and effective osmolality formulas",
+    "href": "https://link.springer.com/article/10.1007/s00125-024-06183-8"
+  },
+  {
+    "label": "Asim et al. 2019: body fluid compartments and volume depletion",
+    "href": "https://www.wjgnet.com/2220-6124/full/v8/i1/23.htm"
+  },
+  {
+    "label": "University of Iowa clinical laboratory: osmolal-gap calculation and interpretation",
+    "href": "https://www.healthcare.uiowa.edu/path_handbook/appendix/chem/osmo_gap.html"
+  }
+]);
