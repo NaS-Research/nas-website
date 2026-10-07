@@ -4,13 +4,15 @@ export const fluidElectrolyteTherapyModule = {
   slug: "fluid-electrolyte-therapy",
   number: "02",
   title: "Fluid and Electrolyte Therapy",
-  source: "NaS synthesis of current fluid and electrolyte guidance",
+  source: "NaS synthesis of adult fluid and electrolyte guidance and prescribing information",
   description: "Reason from compartments, tonicity, symptoms, and organ function to a fluid or electrolyte plan that can be measured and revised.",
-  topics: ["IV fluid therapy", "Sodium and water", "Potassium", "Magnesium and monitoring"],
+  topics: ["Fluid physiology and assessment", "IV fluid therapy", "Sodium and water", "Potassium", "Magnesium", "Phosphate replacement", "Calculations and monitoring"],
   outcomes: [
     "Distinguish resuscitation, maintenance, replacement, and redistribution needs.",
     "Classify sodium disorders by tonicity, symptoms, and volume status.",
     "Sequence urgent potassium treatment by stabilization, redistribution, and removal.",
+    "Choose magnesium replacement according to symptoms, route, and kidney function.",
+    "Calculate phosphate and companion-electrolyte quantities for the actual product.",
     "Calculate common fluid needs and build a safe monitoring plan.",
   ],
   submodules: [
@@ -109,12 +111,12 @@ export const fluidElectrolyteTherapyModule = {
     },
   ],
   references: [
-    { label: "NICE CG174: Intravenous fluid therapy in adults", href: "https://www.nice.org.uk/guidance/cg174/chapter/recommendations" },
-    { label: "European clinical practice guideline on hyponatremia", href: "https://academic.oup.com/ejendo/article/170/3/G1/6668028" },
-    { label: "Society for Endocrinology emergency guidance for severe symptomatic hyponatremia", href: "https://pmc.ncbi.nlm.nih.gov/articles/PMC5314809/" },
-    { label: "KDIGO conference report on acute hyperkalemia", href: "https://pmc.ncbi.nlm.nih.gov/articles/PMC7448835/" },
+    { label: "NICE CG174: intravenous fluid therapy in adults in hospital", href: "https://www.nice.org.uk/guidance/cg174/chapter/recommendations" },
+    { label: "European 2014 clinical practice guideline: diagnosis and treatment of hyponatraemia", href: "https://academic.oup.com/ejendo/article/170/3/G1/6668028" },
+    { label: "Society for Endocrinology 2016 emergency guidance: severe symptomatic hyponatraemia", href: "https://pmc.ncbi.nlm.nih.gov/articles/PMC5314809/" },
+    { label: "KDIGO 2020 conference report: acute hyperkalemia in the emergency department", href: "https://pmc.ncbi.nlm.nih.gov/articles/PMC7448835/" },
     { label: "FDA label: Sodium zirconium cyclosilicate", href: "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=8833d6e6-33ab-4ea9-b78f-3ec30a904ef8" },
-    { label: "FDA label: Tolvaptan", href: "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5526617c-c7b9-4556-886d-729bbabbc566" },
+    { label: "FDA label: Otsuka SAMSCA (tolvaptan), revised April 2021", href: "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5526617c-c7b9-4556-886d-729bbabbc566" },
     { label: "FDA label: Potassium chloride injection", href: "https://www.accessdata.fda.gov/drugsatfda_docs/label/2024/019904Orig1s025lbl.pdf" },
     { label: "FDA label: Magnesium sulfate injection", href: "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=8c6b8b3d-9c04-4ed7-86b8-89065b6bf50d&type=display" },
   ],
@@ -198,7 +200,7 @@ fluidElectrolyteTherapyModule.references.push(...[
     "href": "https://link.springer.com/article/10.1007/s00125-024-06183-8"
   },
   {
-    "label": "Asim et al. 2019: body fluid compartments and volume depletion",
+    "label": "Asim et al. 2019: dehydration and volume depletion",
     "href": "https://www.wjgnet.com/2220-6124/full/v8/i1/23.htm"
   },
   {
@@ -303,11 +305,11 @@ fluidElectrolyteTherapyModule.references.push(...[
     "href": "https://www.fda.gov/vaccines-blood-biologics/safety-availability-biologics/labeling-changes-mortality-kidney-injury-and-excess-bleeding-hydroxyethyl-starch-products"
   },
   {
-    "label": "FDA-approved Baxter 5% dextrose label",
+    "label": "FDA label: Baxter 5% dextrose injection, revised June 2025",
     "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=36e9478c-5df0-4b47-b97d-de3626d7cb29"
   },
   {
-    "label": "FDA-approved B. Braun lactated Ringer’s label",
+    "label": "FDA label: B. Braun lactated Ringer’s injection, revised October 2025",
     "href": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=f6d82772-638c-4584-b9d3-8833669f5963"
   }
 ]);
@@ -526,15 +528,15 @@ Object.assign(fluidElectrolyteTherapyModule.submodules.find(s => s.slug === "pot
     "reviewHref": "#potassium-disorders"
   }
 });
-fluidElectrolyteTherapyModule.references[4] = {"label": "FDA label: AstraZeneca LOKELMA prescribing information", "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=90bf8e28-748d-4e4b-a19f-9cf483370eff"};
-fluidElectrolyteTherapyModule.references[6] = {"label": "FDA label: Hospira potassium chloride for injection concentrate", "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=559a0a8c-a8fe-40a5-b196-21f9308780ab"};
+fluidElectrolyteTherapyModule.references[4] = {"label": "FDA label: AstraZeneca LOKELMA, revised February 2024", "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=90bf8e28-748d-4e4b-a19f-9cf483370eff"};
+fluidElectrolyteTherapyModule.references[6] = {"label": "FDA label: Hospira potassium chloride for injection concentrate, revised January 2026", "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=559a0a8c-a8fe-40a5-b196-21f9308780ab"};
 fluidElectrolyteTherapyModule.references.push(...[
   {
     "label": "UK Kidney Association: adult hyperkalemia guideline, July 2026 update",
     "href": "https://www.ukkidney.org/health-professionals/guidelines/treatment-acute-hyperkalaemia-adults-0"
   },
   {
-    "label": "FDA label: VELTASSA (patiromer), dosing and interactions",
+    "label": "FDA label: VELTASSA (patiromer), revised January 2025",
     "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bf002984-d6c9-46df-aecb-a07733f763c1"
   },
   {
@@ -550,7 +552,7 @@ fluidElectrolyteTherapyModule.references.push(...[
     "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5881435/"
   },
   {
-    "label": "FDA label: SPS suspension, bowel toxicity and emergency limitations",
+    "label": "FDA label: sodium polystyrene sulfonate suspension, bowel toxicity and emergency limitations",
     "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=12d48dcf-07bd-4b06-bd6c-7543f1be8357"
   }
 ]);
@@ -638,11 +640,11 @@ Object.assign(fluidElectrolyteTherapyModule.submodules.find(s => s.slug === "mag
 fluidElectrolyteTherapyModule.references[7] = {"label": "FDA label: RemedyRepack magnesium sulfate 50% concentrate", "href": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=8c6b8b3d-9c04-4ed7-86b8-89065b6bf50d&type=display"};
 fluidElectrolyteTherapyModule.references.push(...[
   {
-    "label": "FDA label: Hospira magnesium sulfate 50% concentrate",
+    "label": "FDA label: Hospira magnesium sulfate 50% concentrate, revised August 2021",
     "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e175d329-315f-4f3b-bb4c-06ad4e042967"
   },
   {
-    "label": "NHS SPS: treating acute hypomagnesaemia in adults",
+    "label": "NHS SPS 2024: treating acute hypomagnesaemia in adults",
     "href": "https://sps.nhs.uk/articles/treating-acute-hypomagnesaemia-in-adults/"
   },
   {

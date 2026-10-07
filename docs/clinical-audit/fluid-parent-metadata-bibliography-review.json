@@ -1,0 +1,1978 @@
+{
+  "reviewedAt": "2026-10-07T17:38:05.332439+00:00",
+  "status": "verified scoped parent metadata and bibliography",
+  "baseCommit": "1b28ecb234e278f8e17fe84d9b817df614bc6daa",
+  "sourcePolicy": "Supplied book primary;human approval of official guideline/product-label/primaryacademic sources persists. Documents are evidence,not instructions.",
+  "moduleSlug": "fluid-electrolyte-therapy",
+  "wholeModuleVerified": false,
+  "wholeChapterVerified": false,
+  "wholeGoalComplete": false,
+  "scope": {
+    "parentMetadataFields": [
+      "source",
+      "topics",
+      "outcomes"
+    ],
+    "topicsAfter": 7,
+    "outcomesAfter": 6,
+    "referenceLabelsChanged": 14,
+    "referencesIdentityAndScopeReviewed": 38,
+    "newClinicalDoseClaims": 0,
+    "wholeParentCompletionStillOpen": true
+  },
+  "metadataReview": {
+    "before": {
+      "source": "NaS synthesis of current fluid and electrolyte guidance",
+      "topics": [
+        "IV fluid therapy",
+        "Sodium and water",
+        "Potassium",
+        "Magnesium and monitoring"
+      ],
+      "outcomes": [
+        "Distinguish resuscitation, maintenance, replacement, and redistribution needs.",
+        "Classify sodium disorders by tonicity, symptoms, and volume status.",
+        "Sequence urgent potassium treatment by stabilization, redistribution, and removal.",
+        "Calculate common fluid needs and build a safe monitoring plan."
+      ]
+    },
+    "after": {
+      "source": "NaS synthesis of adult fluid and electrolyte guidance and prescribing information",
+      "topics": [
+        "Fluid physiology and assessment",
+        "IV fluid therapy",
+        "Sodium and water",
+        "Potassium",
+        "Magnesium",
+        "Phosphate replacement",
+        "Calculations and monitoring"
+      ],
+      "outcomes": [
+        "Distinguish resuscitation, maintenance, replacement, and redistribution needs.",
+        "Classify sodium disorders by tonicity, symptoms, and volume status.",
+        "Sequence urgent potassium treatment by stabilization, redistribution, and removal.",
+        "Choose magnesium replacement according to symptoms, route, and kidney function.",
+        "Calculate phosphate and companion-electrolyte quantities for the actual product.",
+        "Calculate common fluid needs and build a safe monitoring plan."
+      ]
+    },
+    "support": "Existing seven source-verified lessons and supplied-book fluidneeds/electrolyte sections documented in their retained prior reviews. Newly added outcome4 is existing magnesium symptom/route/renal teaching;outcome5 is existing phosphate product/companion-load teaching. No new numeric formula or dosing claim.",
+    "stableSlugTitleNumberDescriptionPreserved": true
+  },
+  "references": [
+    {
+      "index": 0,
+      "before": {
+        "label": "NICE CG174: Intravenous fluid therapy in adults",
+        "href": "https://www.nice.org.uk/guidance/cg174/chapter/recommendations"
+      },
+      "after": {
+        "label": "NICE CG174: intravenous fluid therapy in adults in hospital",
+        "href": "https://www.nice.org.uk/guidance/cg174/chapter/recommendations"
+      },
+      "identityReview": "passed bibliography identity/scope review",
+      "identityDateAndLimitations": "CG174 recommendations, adult hospital IV fluids; duplicate full-PDF reference has distinct format and December2025 update evidence. HTML header2017 does not supersede PDF update history.",
+      "priorVerifiedLessonEvidence": "physiology/IV/calculations",
+      "acquisition": {
+        "index": 0,
+        "reference": {
+          "label": "NICE CG174: Intravenous fluid therapy in adults",
+          "href": "https://www.nice.org.uk/guidance/cg174/chapter/recommendations"
+        },
+        "requestedUrl": "https://www.nice.org.uk/guidance/cg174/chapter/recommendations",
+        "checkedAt": "2026-10-07T17:12:10.367262+00:00",
+        "status": "acquired; not yet reviewed",
+        "resolvedUrl": "https://www.nice.org.uk/guidance/cg174/chapter/recommendations",
+        "httpStatus": 200,
+        "file": "reference-00.html",
+        "sha256": "61770d0f83334cbbfbe7e454d18584078b081e1ce2c4e292631c9efc0b52884f",
+        "bytes": 1238492
+      },
+      "wholeSourceNewlyCertified": false,
+      "acquiredFileHashRechecked": true
+    },
+    {
+      "index": 1,
+      "before": {
+        "label": "European clinical practice guideline on hyponatremia",
+        "href": "https://academic.oup.com/ejendo/article/170/3/G1/6668028"
+      },
+      "after": {
+        "label": "European 2014 clinical practice guideline: diagnosis and treatment of hyponatraemia",
+        "href": "https://academic.oup.com/ejendo/article/170/3/G1/6668028"
+      },
+      "identityReview": "passed bibliography identity/scope review",
+      "identityDateAndLimitations": "Original joint2014 guideline, EJE170:G1–G47; publisher fetch403. Prior sodium review contains hashed original PDF copy and relevant-page/figure review. Publisher access error does not establish broken learner link.",
+      "priorVerifiedLessonEvidence": "physiology/sodium",
+      "acquisition": {
+        "index": 1,
+        "reference": {
+          "label": "European clinical practice guideline on hyponatremia",
+          "href": "https://academic.oup.com/ejendo/article/170/3/G1/6668028"
+        },
+        "requestedUrl": "https://academic.oup.com/ejendo/article/170/3/G1/6668028",
+        "checkedAt": "2026-10-07T17:12:10.367709+00:00",
+        "status": "access failure; unresolved",
+        "error": "HTTP Error 403: Forbidden"
+      },
+      "wholeSourceNewlyCertified": false,
+      "accessResolution": "Prior hashed source copy and source review retained; original publisher URL preserved"
+    },
+    {
+      "index": 2,
+      "before": {
+        "label": "Society for Endocrinology emergency guidance for severe symptomatic hyponatremia",
+        "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5314809/"
+      },
+      "after": {
+        "label": "Society for Endocrinology 2016 emergency guidance: severe symptomatic hyponatraemia",
+        "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5314809/"
+      },
+      "identityReview": "passed bibliography identity/scope review",
+      "identityDateAndLimitations": "Society for Endocrinology emergency guidance2016; severe symptomatic hyponatraemia, not a general asymptomatic algorithm.",
+      "priorVerifiedLessonEvidence": "physiology/sodium",
+      "acquisition": {
+        "index": 2,
+        "reference": {
+          "label": "Society for Endocrinology emergency guidance for severe symptomatic hyponatremia",
+          "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5314809/"
+        },
+        "requestedUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5314809/",
+        "checkedAt": "2026-10-07T17:12:10.367797+00:00",
+        "status": "acquired; not yet reviewed",
+        "resolvedUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5314809/",
+        "httpStatus": 200,
+        "file": "reference-02.html",
+        "sha256": "f912eff53cb11ae1e140ae3b385337070e34ad26b180a27986cc4d4c50e9701a",
+        "bytes": 103656
+      },
+      "wholeSourceNewlyCertified": false,
+      "acquiredFileHashRechecked": true
+    },
+    {
+      "index": 3,
+      "before": {
+        "label": "KDIGO conference report on acute hyperkalemia",
+        "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7448835/"
+      },
+      "after": {
+        "label": "KDIGO 2020 conference report: acute hyperkalemia in the emergency department",
+        "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7448835/"
+      },
+      "identityReview": "passed bibliography identity/scope review",
+      "identityDateAndLimitations": "KDIGO conference report2020; acute hyperkalemia in ED, not a blanket chronic replacement regimen.",
+      "priorVerifiedLessonEvidence": "potassium",
+      "acquisition": {
+        "index": 3,
+        "reference": {
+          "label": "KDIGO conference report on acute hyperkalemia",
+          "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7448835/"
+        },
+        "requestedUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7448835/",
+        "checkedAt": "2026-10-07T17:12:10.367860+00:00",
+        "status": "acquired; not yet reviewed",
+        "resolvedUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7448835/",
+        "httpStatus": 200,
+        "file": "reference-03.html",
+        "sha256": "f931f362f04a9cdcd73862094aada43cf63a282ff9d8c64a128614855a4310de",
+        "bytes": 226683
+      },
+      "wholeSourceNewlyCertified": false,
+      "acquiredFileHashRechecked": true
+    },
+    {
+      "index": 4,
+      "before": {
+        "label": "FDA label: AstraZeneca LOKELMA prescribing information",
+        "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=90bf8e28-748d-4e4b-a19f-9cf483370eff"
+      },
+      "after": {
+        "label": "FDA label: AstraZeneca LOKELMA, revised February 2024",
+        "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=90bf8e28-748d-4e4b-a19f-9cf483370eff"
+      },
+      "identityReview": "passed bibliography identity/scope review",
+      "identityDateAndLimitations": "AstraZeneca LOKELMA PI revised2/2024, NDA207078; exact binder product.",
+      "priorVerifiedLessonEvidence": "potassium",
+      "acquisition": {
+        "index": 4,
+        "reference": {
+          "label": "FDA label: AstraZeneca LOKELMA prescribing information",
+          "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=90bf8e28-748d-4e4b-a19f-9cf483370eff"
+        },
+        "requestedUrl": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=90bf8e28-748d-4e4b-a19f-9cf483370eff&type=display",
+        "checkedAt": "2026-10-07T17:12:10.367937+00:00",
+        "status": "acquired; not yet reviewed",
+        "resolvedUrl": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=90bf8e28-748d-4e4b-a19f-9cf483370eff&type=display",
+        "httpStatus": 200,
+        "file": "reference-04.html",
+        "sha256": "5d45075ee5f994dcdaddcc42cbfdb0292db8f5f2281ed9403c9f666c99eeb3cd",
+        "bytes": 54834
+      },
+      "wholeSourceNewlyCertified": false,
+      "acquiredFileHashRechecked": true
+    },
+    {
+      "index": 5,
+      "before": {
+        "label": "FDA label: Tolvaptan",
+        "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5526617c-c7b9-4556-886d-729bbabbc566"
+      },
+      "after": {
+        "label": "FDA label: Otsuka SAMSCA (tolvaptan), revised April 2021",
+        "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5526617c-c7b9-4556-886d-729bbabbc566"
+      },
+      "identityReview": "passed bibliography identity/scope review",
+      "identityDateAndLimitations": "Otsuka SAMSCA tolvaptan PI highlights revised4/2021; SPL listing5/2026. This is SAMSCA, not JYNARQUE; date distinction preserved.",
+      "priorVerifiedLessonEvidence": "sodium",
+      "acquisition": {
+        "index": 5,
+        "reference": {
+          "label": "FDA label: Tolvaptan",
+          "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5526617c-c7b9-4556-886d-729bbabbc566"
+        },
+        "requestedUrl": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=5526617c-c7b9-4556-886d-729bbabbc566&type=display",
+        "checkedAt": "2026-10-07T17:12:10.368005+00:00",
+        "status": "acquired; not yet reviewed",
+        "resolvedUrl": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=5526617c-c7b9-4556-886d-729bbabbc566&type=display",
+        "httpStatus": 200,
+        "file": "reference-05.html",
+        "sha256": "8e1d8ee21c93cdc5003c3938febbfeaaa28a8bc8f75b362e56a0b2372cf4e7ec",
+        "bytes": 99176
+      },
+      "wholeSourceNewlyCertified": false,
+      "acquiredFileHashRechecked": true
+    },
+    {
+      "index": 6,
+      "before": {
+        "label": "FDA label: Hospira potassium chloride for injection concentrate",
+        "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=559a0a8c-a8fe-40a5-b196-21f9308780ab"
+      },
+      "after": {
+        "label": "FDA label: Hospira potassium chloride for injection concentrate, revised January 2026",
+        "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=559a0a8c-a8fe-40a5-b196-21f9308780ab"
+      },
+      "identityReview": "passed bibliography identity/scope review",
+      "identityDateAndLimitations": "Hospira KCl injection concentrate PI revised01/2026; SPL7/2026. Concentrate distinguished from ready-to-use products.",
+      "priorVerifiedLessonEvidence": "potassium/calculations",
+      "acquisition": {
+        "index": 6,
+        "reference": {
+          "label": "FDA label: Hospira potassium chloride for injection concentrate",
+          "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=559a0a8c-a8fe-40a5-b196-21f9308780ab"
+        },
+        "requestedUrl": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=559a0a8c-a8fe-40a5-b196-21f9308780ab&type=display",
+        "checkedAt": "2026-10-07T17:12:10.456235+00:00",
+        "status": "acquired; not yet reviewed",
+        "resolvedUrl": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=559a0a8c-a8fe-40a5-b196-21f9308780ab&type=display",
+        "httpStatus": 200,
+        "file": "reference-06.html",
+        "sha256": "705f246638c0a213dea07d151004b0a5153fdd143bd9da5c924f46d973ce81d3",
+        "bytes": 35576
+      },
+      "wholeSourceNewlyCertified": false,
+      "acquiredFileHashRechecked": true
+    },
+    {
+      "index": 7,
+      "before": {
+        "label": "FDA label: RemedyRepack magnesium sulfate 50% concentrate",
+        "href": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=8c6b8b3d-9c04-4ed7-86b8-89065b6bf50d&type=display"
+      },
+      "after": {
+        "label": "FDA label: RemedyRepack magnesium sulfate 50% concentrate",
+        "href": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=8c6b8b3d-9c04-4ed7-86b8-89065b6bf50d&type=display"
+      },
+      "identityReview": "passed bibliography identity/scope review",
+      "identityDateAndLimitations": "RemedyRepack magnesium sulfate50%500mg/mL IV/IM repack; NDA019316/source NDC63323-064 verified from actual marketing data. Repack8/2026 does not establish a new manufacturer PI clinical revision.",
+      "priorVerifiedLessonEvidence": "magnesium",
+      "acquisition": {
+        "index": 7,
+        "reference": {
+          "label": "FDA label: RemedyRepack magnesium sulfate 50% concentrate",
+          "href": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=8c6b8b3d-9c04-4ed7-86b8-89065b6bf50d&type=display"
+        },
+        "requestedUrl": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=8c6b8b3d-9c04-4ed7-86b8-89065b6bf50d&type=display",
+        "checkedAt": "2026-10-07T17:12:10.585299+00:00",
+        "status": "acquired; not yet reviewed",
+        "resolvedUrl": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=8c6b8b3d-9c04-4ed7-86b8-89065b6bf50d&type=display",
+        "httpStatus": 200,
+        "file": "reference-07.html",
+        "sha256": "a5bc4758598c2be186b617a5accb4f2235298d0c63f20601c1080cd11b1f732b",
+        "bytes": 35018
+      },
+      "wholeSourceNewlyCertified": false,
+      "acquiredFileHashRechecked": true
+    },
+    {
+      "index": 8,
+      "before": {
+        "label": "NICE CG174 full guidance: adult IV fluids, including December 2025 update",
+        "href": "https://www.nice.org.uk/guidance/cg174/resources/intravenous-fluid-therapy-in-adults-in-hospital-pdf-35109752233669"
+      },
+      "after": {
+        "label": "NICE CG174 full guidance: adult IV fluids, including December 2025 update",
+        "href": "https://www.nice.org.uk/guidance/cg174/resources/intravenous-fluid-therapy-in-adults-in-hospital-pdf-35109752233669"
+      },
+      "identityReview": "passed bibliography identity/scope review",
+      "identityDateAndLimitations": "Official CG17430page PDF includes December2025 changes; cover last-updated2017/copyright2026 are separate metadata. Prior calculations review fully read relevant recommendations/Table2/footnotes.",
+      "priorVerifiedLessonEvidence": "physiology/IV/calculations",
+      "acquisition": {
+        "index": 8,
+        "reference": {
+          "label": "NICE CG174 full guidance: adult IV fluids, including December 2025 update",
+          "href": "https://www.nice.org.uk/guidance/cg174/resources/intravenous-fluid-therapy-in-adults-in-hospital-pdf-35109752233669"
+        },
+        "requestedUrl": "https://www.nice.org.uk/guidance/cg174/resources/intravenous-fluid-therapy-in-adults-in-hospital-pdf-35109752233669",
+        "checkedAt": "2026-10-07T17:12:10.637465+00:00",
+        "status": "acquired; not yet reviewed",
+        "resolvedUrl": "https://www.nice.org.uk/guidance/cg174/resources/intravenous-fluid-therapy-in-adults-in-hospital-pdf-35109752233669",
+        "httpStatus": 200,
+        "file": "reference-08.pdf",
+        "sha256": "d04e4fb6236094549dc3a4b8bbe48ce78842f80476d8773dc1daa6c8bf183a9e",
+        "bytes": 1048820,
+        "pages": 30
+      },
+      "wholeSourceNewlyCertified": false,
+      "acquiredFileHashRechecked": true
+    },
+    {
+      "index": 9,
+      "before": {
+        "label": "ADA/EASD 2024 hyperglycemic-crisis consensus: total and effective osmolality formulas",
+        "href": "https://link.springer.com/article/10.1007/s00125-024-06183-8"
+      },
+      "after": {
+        "label": "ADA/EASD 2024 hyperglycemic-crisis consensus: total and effective osmolality formulas",
+        "href": "https://link.springer.com/article/10.1007/s00125-024-06183-8"
+      },
+      "identityReview": "passed bibliography identity/scope review",
+      "identityDateAndLimitations": "ADA/EASD2024 hyperglycaemic-crises consensus; total/effective osmolality formulas supported by original Figure2 as documented in physiology review.",
+      "priorVerifiedLessonEvidence": "physiology",
+      "acquisition": {
+        "index": 9,
+        "reference": {
+          "label": "ADA/EASD 2024 hyperglycemic-crisis consensus: total and effective osmolality formulas",
+          "href": "https://link.springer.com/article/10.1007/s00125-024-06183-8"
+        },
+        "requestedUrl": "https://link.springer.com/article/10.1007/s00125-024-06183-8",
+        "checkedAt": "2026-10-07T17:12:10.641216+00:00",
+        "status": "acquired; not yet reviewed",
+        "resolvedUrl": "https://link.springer.com/article/10.1007/s00125-024-06183-8?error=cookies_not_supported&code=08d03a24-2d8f-444f-aeda-7a286e60ccef",
+        "httpStatus": 200,
+        "file": "reference-09.html",
+        "sha256": "c5e3f9b6a56b5c54bde0edb523b892c004723556c065e77709687739657b5c9b",
+        "bytes": 1023433
+      },
+      "wholeSourceNewlyCertified": false,
+      "acquiredFileHashRechecked": true
+    },
+    {
+      "index": 10,
+      "before": {
+        "label": "Asim et al. 2019: body fluid compartments and volume depletion",
+        "href": "https://www.wjgnet.com/2220-6124/full/v8/i1/23.htm"
+      },
+      "after": {
+        "label": "Asim et al. 2019: dehydration and volume depletion",
+        "href": "https://www.wjgnet.com/2220-6124/full/v8/i1/23.htm"
+      },
+      "identityReview": "passed bibliography identity/scope review",
+      "identityDateAndLimitations": "Asim et al2019, Dehydration and volume depletion: How to handle the misconceptions, WJN8(1):23–32 DOI10.5527/wjn.v8.i1.23. Publisher403 in urllib; web full primary paper succeeds. No new dose/formula taken from incidental typographical errors.",
+      "priorVerifiedLessonEvidence": "physiology",
+      "acquisition": {
+        "index": 10,
+        "reference": {
+          "label": "Asim et al. 2019: body fluid compartments and volume depletion",
+          "href": "https://www.wjgnet.com/2220-6124/full/v8/i1/23.htm"
+        },
+        "requestedUrl": "https://www.wjgnet.com/2220-6124/full/v8/i1/23.htm",
+        "checkedAt": "2026-10-07T17:12:10.645679+00:00",
+        "status": "access failure; unresolved",
+        "error": "HTTP Error 403: Forbidden"
+      },
+      "wholeSourceNewlyCertified": false,
+      "accessResolution": "Current primary web text available and read for identity/scope; see limitations in note"
+    },
+    {
+      "index": 11,
+      "before": {
+        "label": "University of Iowa clinical laboratory: osmolal-gap calculation and interpretation",
+        "href": "https://www.healthcare.uiowa.edu/path_handbook/appendix/chem/osmo_gap.html"
+      },
+      "after": {
+        "label": "University of Iowa clinical laboratory: osmolal-gap calculation and interpretation",
+        "href": "https://www.healthcare.uiowa.edu/path_handbook/appendix/chem/osmo_gap.html"
+      },
+      "identityReview": "passed bibliography identity/scope review",
+      "identityDateAndLimitations": "University of Iowa laboratory osmolal gap calculation and interpretation; local validated formula includes glucose1.15 factor. This differs from the teaching estimate. TLS chain error in urllib; web full63line page succeeds, without disabling certificate verification. Source example contains apparent denominator/ethanol inconsistencies; those are not adopted in the lesson.",
+      "priorVerifiedLessonEvidence": "physiology",
+      "acquisition": {
+        "index": 11,
+        "reference": {
+          "label": "University of Iowa clinical laboratory: osmolal-gap calculation and interpretation",
+          "href": "https://www.healthcare.uiowa.edu/path_handbook/appendix/chem/osmo_gap.html"
+        },
+        "requestedUrl": "https://www.healthcare.uiowa.edu/path_handbook/appendix/chem/osmo_gap.html",
+        "checkedAt": "2026-10-07T17:12:10.709758+00:00",
+        "status": "access failure; unresolved",
+        "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1010)>"
+      },
+      "wholeSourceNewlyCertified": false,
+      "accessResolution": "Current primary web text available and read for identity/scope; see limitations in note"
+    },
+    {
+      "index": 12,
+      "before": {
+        "label": "ESICM 2024 fluid guideline, Part 1: resuscitation fluid choice",
+        "href": "https://link.springer.com/article/10.1007/s00134-024-07369-9"
+      },
+      "after": {
+        "label": "ESICM 2024 fluid guideline, Part 1: resuscitation fluid choice",
+        "href": "https://link.springer.com/article/10.1007/s00134-024-07369-9"
+      },
+      "identityReview": "passed bibliography identity/scope review",
+      "identityDateAndLimitations": "ESICM2024 Part1 resuscitation-fluid-choice guideline; prior IV review records original author postprint and actual conditional-evidence distinctions.",
+      "priorVerifiedLessonEvidence": "IV",
+      "acquisition": {
+        "index": 12,
+        "reference": {
+          "label": "ESICM 2024 fluid guideline, Part 1: resuscitation fluid choice",
+          "href": "https://link.springer.com/article/10.1007/s00134-024-07369-9"
+        },
+        "requestedUrl": "https://link.springer.com/article/10.1007/s00134-024-07369-9",
+        "checkedAt": "2026-10-07T17:12:10.775698+00:00",
+        "status": "acquired; not yet reviewed",
+        "resolvedUrl": "https://link.springer.com/article/10.1007/s00134-024-07369-9?error=cookies_not_supported&code=62304888-1b4a-4e93-bd0a-c020b52b9803",
+        "httpStatus": 200,
+        "file": "reference-12.html",
+        "sha256": "a33cae93eeed1ed2d823d868407507a4a897b7427e73ac33974c084a59621070",
+        "bytes": 585403
+      },
+      "wholeSourceNewlyCertified": false,
+      "acquiredFileHashRechecked": true
+    },
+    {
+      "index": 13,
+      "before": {
+        "label": "NICE NG253: adult suspected-sepsis IV fluid recommendations",
+        "href": "https://www.nice.org.uk/guidance/ng253/chapter/managing-suspected-sepsis"
+      },
+      "after": {
+        "label": "NICE NG253: adult suspected-sepsis IV fluid recommendations",
+        "href": "https://www.nice.org.uk/guidance/ng253/chapter/managing-suspected-sepsis"
+      },
+      "identityReview": "passed bibliography identity/scope review",
+      "identityDateAndLimitations": "NICE NG253 suspected sepsis, adults16+ nonpregnant/notrecentlypregnant; published19Nov2025,lastupdated23Sep2026. Scope and recommendations already checked in IV review; no different-population bolus transferred.",
+      "priorVerifiedLessonEvidence": "IV",
+      "acquisition": {
+        "index": 13,
+        "reference": {
+          "label": "NICE NG253: adult suspected-sepsis IV fluid recommendations",
+          "href": "https://www.nice.org.uk/guidance/ng253/chapter/managing-suspected-sepsis"
+        },
+        "requestedUrl": "https://www.nice.org.uk/guidance/ng253/chapter/managing-suspected-sepsis",
+        "checkedAt": "2026-10-07T17:12:10.785358+00:00",
+        "status": "acquired; not yet reviewed",
+        "resolvedUrl": "https://www.nice.org.uk/guidance/ng253/chapter/managing-suspected-sepsis",
+        "httpStatus": 200,
+        "file": "reference-13.html",
+        "sha256": "efcb030834ad93f5ea39a23025d85421184dee219d656be352dbbfdee71aebd5",
+        "bytes": 149725
+      },
+      "wholeSourceNewlyCertified": false,
+      "acquiredFileHashRechecked": true
+    },
+    {
+      "index": 14,
+      "before": {
+        "label": "FDA safety communication: hydroxyethyl starch",
+        "href": "https://www.fda.gov/vaccines-blood-biologics/safety-availability-biologics/labeling-changes-mortality-kidney-injury-and-excess-bleeding-hydroxyethyl-starch-products"
+      },
+      "after": {
+        "label": "FDA safety communication: hydroxyethyl starch",
+        "href": "https://www.fda.gov/vaccines-blood-biologics/safety-availability-biologics/labeling-changes-mortality-kidney-injury-and-excess-bleeding-hydroxyethyl-starch-products"
+      },
+      "identityReview": "passed bibliography identity/scope review",
+      "identityDateAndLimitations": "FDA HES labeling safety communication about mortality,kidney injury,excess bleeding; safety communication distinct from a brand dose label.",
+      "priorVerifiedLessonEvidence": "IV",
+      "acquisition": {
+        "index": 14,
+        "reference": {
+          "label": "FDA safety communication: hydroxyethyl starch",
+          "href": "https://www.fda.gov/vaccines-blood-biologics/safety-availability-biologics/labeling-changes-mortality-kidney-injury-and-excess-bleeding-hydroxyethyl-starch-products"
+        },
+        "requestedUrl": "https://www.fda.gov/vaccines-blood-biologics/safety-availability-biologics/labeling-changes-mortality-kidney-injury-and-excess-bleeding-hydroxyethyl-starch-products",
+        "checkedAt": "2026-10-07T17:12:10.810997+00:00",
+        "status": "acquired; not yet reviewed",
+        "resolvedUrl": "https://www.fda.gov/vaccines-blood-biologics/safety-availability-biologics/labeling-changes-mortality-kidney-injury-and-excess-bleeding-hydroxyethyl-starch-products",
+        "httpStatus": 200,
+        "file": "reference-14.html",
+        "sha256": "f906714da75851f42683889b2475839061145a9d4245c22b0ebd875c7a0bab7c",
+        "bytes": 42836
+      },
+      "wholeSourceNewlyCertified": false,
+      "acquiredFileHashRechecked": true
+    },
+    {
+      "index": 15,
+      "before": {
+        "label": "FDA-approved Baxter 5% dextrose label",
+        "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=36e9478c-5df0-4b47-b97d-de3626d7cb29"
+      },
+      "after": {
+        "label": "FDA label: Baxter 5% dextrose injection, revised June 2025",
+        "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=36e9478c-5df0-4b47-b97d-de3626d7cb29"
+      },
+      "identityReview": "passed bibliography identity/scope review",
+      "identityDateAndLimitations": "Baxter5%dextrose injection actual PI revised6/2025, not generic saline or an inferred in-vivo isotonic resuscitation fluid.",
+      "priorVerifiedLessonEvidence": "IV",
+      "acquisition": {
+        "index": 15,
+        "reference": {
+          "label": "FDA-approved Baxter 5% dextrose label",
+          "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=36e9478c-5df0-4b47-b97d-de3626d7cb29"
+        },
+        "requestedUrl": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=36e9478c-5df0-4b47-b97d-de3626d7cb29&type=display",
+        "checkedAt": "2026-10-07T17:12:11.068888+00:00",
+        "status": "acquired; not yet reviewed",
+        "resolvedUrl": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=36e9478c-5df0-4b47-b97d-de3626d7cb29&type=display",
+        "httpStatus": 200,
+        "file": "reference-15.html",
+        "sha256": "d7fe18cc9db92c7aeb0d060c474b5660a525b42a510639949b582b109cee146c",
+        "bytes": 102489
+      },
+      "wholeSourceNewlyCertified": false,
+      "acquiredFileHashRechecked": true
+    },
+    {
+      "index": 16,
+      "before": {
+        "label": "FDA-approved B. Braun lactated Ringer’s label",
+        "href": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=f6d82772-638c-4584-b9d3-8833669f5963"
+      },
+      "after": {
+        "label": "FDA label: B. Braun lactated Ringer’s injection, revised October 2025",
+        "href": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=f6d82772-638c-4584-b9d3-8833669f5963"
+      },
+      "identityReview": "passed bibliography identity/scope review",
+      "identityDateAndLimitations": "B.Braun lactated Ringer’s actual PI revised10/2025 versus SPL11/2025; product-specific composition/cautions retained.",
+      "priorVerifiedLessonEvidence": "IV",
+      "acquisition": {
+        "index": 16,
+        "reference": {
+          "label": "FDA-approved B. Braun lactated Ringer’s label",
+          "href": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=f6d82772-638c-4584-b9d3-8833669f5963"
+        },
+        "requestedUrl": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=f6d82772-638c-4584-b9d3-8833669f5963&type=display",
+        "checkedAt": "2026-10-07T17:12:11.393392+00:00",
+        "status": "acquired; not yet reviewed",
+        "resolvedUrl": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=f6d82772-638c-4584-b9d3-8833669f5963&type=display",
+        "httpStatus": 200,
+        "file": "reference-16.html",
+        "sha256": "283e8ecf5e56a98ad74bb9cf6668605f96b224652d2a1169d2ff9ea145fbb4ba",
+        "bytes": 65939
+      },
+      "wholeSourceNewlyCertified": false,
+      "acquiredFileHashRechecked": true
+    },
+    {
+      "index": 17,
+      "before": {
+        "label": "Sterns et al. 2024: hyponatremia correction limits and high-risk safeguards",
+        "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10843202/"
+      },
+      "after": {
+        "label": "Sterns et al. 2024: hyponatremia correction limits and high-risk safeguards",
+        "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10843202/"
+      },
+      "identityReview": "passed bibliography identity/scope review",
+      "identityDateAndLimitations": "Sterns et al2024 Treatment Guidelines for Hyponatremia: Stay the Course; expert clinical perspective, not new randomized-trial evidence.",
+      "priorVerifiedLessonEvidence": "sodium",
+      "acquisition": {
+        "index": 17,
+        "reference": {
+          "label": "Sterns et al. 2024: hyponatremia correction limits and high-risk safeguards",
+          "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10843202/"
+        },
+        "requestedUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10843202/",
+        "checkedAt": "2026-10-07T17:12:11.563028+00:00",
+        "status": "acquired; not yet reviewed",
+        "resolvedUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10843202/",
+        "httpStatus": 200,
+        "file": "reference-17.html",
+        "sha256": "3d559764d578beb03b86ac47087a379386c7ebbb8f7f1a9672e249306609173d",
+        "bytes": 205362
+      },
+      "wholeSourceNewlyCertified": false,
+      "acquiredFileHashRechecked": true
+    },
+    {
+      "index": 18,
+      "before": {
+        "label": "European 2014 hyponatremia guideline: published correction",
+        "href": "https://academic.oup.com/ejendo/article/171/1/X1/6661472"
+      },
+      "after": {
+        "label": "European 2014 hyponatremia guideline: published correction",
+        "href": "https://academic.oup.com/ejendo/article/171/1/X1/6661472"
+      },
+      "identityReview": "passed bibliography identity/scope review",
+      "identityDateAndLimitations": "Published guideline correction, EJE171(1):X1,1July2014 DOI10.1530/EJE-13-1020e. Full correction web text read; Table7 disorder and SI glucose equation correction identified. Web formula serialization garbled; no new formula inferred or erratum image claimed viewed.",
+      "priorVerifiedLessonEvidence": "sodium",
+      "acquisition": {
+        "index": 18,
+        "reference": {
+          "label": "European 2014 hyponatremia guideline: published correction",
+          "href": "https://academic.oup.com/ejendo/article/171/1/X1/6661472"
+        },
+        "requestedUrl": "https://academic.oup.com/ejendo/article/171/1/X1/6661472",
+        "checkedAt": "2026-10-07T17:12:11.578149+00:00",
+        "status": "access failure; unresolved",
+        "error": "HTTP Error 403: Forbidden"
+      },
+      "wholeSourceNewlyCertified": false,
+      "accessResolution": "Current primary web text available and read for identity/scope; see limitations in note"
+    },
+    {
+      "index": 19,
+      "before": {
+        "label": "VAPRISOL full prescribing information, manufacturer-linked September 2017 label",
+        "href": "https://www.vaprisol.com/pdf/vaprisol-pi-sept2017.pdf"
+      },
+      "after": {
+        "label": "VAPRISOL full prescribing information, manufacturer-linked September 2017 label",
+        "href": "https://www.vaprisol.com/pdf/vaprisol-pi-sept2017.pdf"
+      },
+      "identityReview": "passed bibliography identity/scope review",
+      "identityDateAndLimitations": "VAPRISOL manufacturer-linked fullPI September2017; not a newly revised2026 regimen.",
+      "priorVerifiedLessonEvidence": "sodium",
+      "acquisition": {
+        "index": 19,
+        "reference": {
+          "label": "VAPRISOL full prescribing information, manufacturer-linked September 2017 label",
+          "href": "https://www.vaprisol.com/pdf/vaprisol-pi-sept2017.pdf"
+        },
+        "requestedUrl": "https://www.vaprisol.com/pdf/vaprisol-pi-sept2017.pdf",
+        "checkedAt": "2026-10-07T17:12:11.625396+00:00",
+        "status": "acquired; not yet reviewed",
+        "resolvedUrl": "https://www.vaprisol.com/pdf/vaprisol-pi-sept2017.pdf",
+        "httpStatus": 200,
+        "file": "reference-19.pdf",
+        "sha256": "07f33878e00c72cbff40aa3cfa28c9afb1cc8997c3814b48ae45874a8d3016a8",
+        "bytes": 1018861,
+        "pages": 13
+      },
+      "wholeSourceNewlyCertified": false,
+      "acquiredFileHashRechecked": true
+    },
+    {
+      "index": 20,
+      "before": {
+        "label": "Yun et al. 2023: evaluation and management of adult hypernatremia",
+        "href": "https://www.kjim.org/journal/view.php?doi=10.3904/kjim.2022.346"
+      },
+      "after": {
+        "label": "Yun et al. 2023: evaluation and management of adult hypernatremia",
+        "href": "https://www.kjim.org/journal/view.php?doi=10.3904/kjim.2022.346"
+      },
+      "identityReview": "passed bibliography identity/scope review",
+      "identityDateAndLimitations": "Yun et al2023 Evaluation and management of hypernatremia in adults: clinical perspectives; DOI10.3904/kjim.2022.346, primary journal fullPDF acquired. Prior sodium review includes algorithms/Figs1/2.",
+      "priorVerifiedLessonEvidence": "sodium",
+      "acquisition": {
+        "index": 20,
+        "reference": {
+          "label": "Yun et al. 2023: evaluation and management of adult hypernatremia",
+          "href": "https://www.kjim.org/journal/view.php?doi=10.3904/kjim.2022.346"
+        },
+        "requestedUrl": "https://www.kjim.org/journal/view.php?doi=10.3904/kjim.2022.346",
+        "checkedAt": "2026-10-07T17:12:11.714575+00:00",
+        "status": "acquired; not yet reviewed",
+        "resolvedUrl": "https://www.kjim.org/journal/view.php?doi=10.3904/kjim.2022.346",
+        "httpStatus": 200,
+        "file": "reference-20.html",
+        "sha256": "ca8f5548baf32d771351799f00f59f63bb5d29d364b2140493163252574de795",
+        "bytes": 23
+      },
+      "wholeSourceNewlyCertified": false,
+      "acquiredFileHashRechecked": true
+    },
+    {
+      "index": 21,
+      "before": {
+        "label": "Chacon-Palma et al. 2025: observational hypernatremia correction outcomes",
+        "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12407122/"
+      },
+      "after": {
+        "label": "Chacon-Palma et al. 2025: observational hypernatremia correction outcomes",
+        "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12407122/"
+      },
+      "identityReview": "passed bibliography identity/scope review",
+      "identityDateAndLimitations": "Chacon-Palma et al2025 Relationship between Rate of Hypernatremia Correction and Outcomes in Hospitalized Patients; observational association, not causal treatment proof.",
+      "priorVerifiedLessonEvidence": "sodium",
+      "acquisition": {
+        "index": 21,
+        "reference": {
+          "label": "Chacon-Palma et al. 2025: observational hypernatremia correction outcomes",
+          "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12407122/"
+        },
+        "requestedUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12407122/",
+        "checkedAt": "2026-10-07T17:12:11.793375+00:00",
+        "status": "acquired; not yet reviewed",
+        "resolvedUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12407122/",
+        "httpStatus": 200,
+        "file": "reference-21.html",
+        "sha256": "4b9661ec223b73186cdc27942990c8b44f0cbab22f37d3b73ceb958dda10e6c8",
+        "bytes": 213120
+      },
+      "wholeSourceNewlyCertified": false,
+      "acquiredFileHashRechecked": true
+    },
+    {
+      "index": 22,
+      "before": {
+        "label": "UK Kidney Association: adult hyperkalemia guideline, July 2026 update",
+        "href": "https://www.ukkidney.org/health-professionals/guidelines/treatment-acute-hyperkalaemia-adults-0"
+      },
+      "after": {
+        "label": "UK Kidney Association: adult hyperkalemia guideline, July 2026 update",
+        "href": "https://www.ukkidney.org/health-professionals/guidelines/treatment-acute-hyperkalaemia-adults-0"
+      },
+      "identityReview": "passed bibliography identity/scope review",
+      "identityDateAndLimitations": "UK Kidney Association adult acute hyperkalemia; landing page publication2023 and upcoming review2026 separate from actual linked UPDATED JULY2026 PDF. Prior potassium review hashes/reviews that updated file.",
+      "priorVerifiedLessonEvidence": "potassium",
+      "acquisition": {
+        "index": 22,
+        "reference": {
+          "label": "UK Kidney Association: adult hyperkalemia guideline, July 2026 update",
+          "href": "https://www.ukkidney.org/health-professionals/guidelines/treatment-acute-hyperkalaemia-adults-0"
+        },
+        "requestedUrl": "https://www.ukkidney.org/health-professionals/guidelines/treatment-acute-hyperkalaemia-adults-0",
+        "checkedAt": "2026-10-07T17:12:12.050139+00:00",
+        "status": "acquired; not yet reviewed",
+        "resolvedUrl": "https://www.ukkidney.org/health-professionals/guidelines/treatment-acute-hyperkalaemia-adults-0",
+        "httpStatus": 200,
+        "file": "reference-22.html",
+        "sha256": "152f81ec84d06c7ba48d2d0a16dd83c2dfe662188b08339dcc97ed41626b9f2c",
+        "bytes": 62978
+      },
+      "wholeSourceNewlyCertified": false,
+      "acquiredFileHashRechecked": true
+    },
+    {
+      "index": 23,
+      "before": {
+        "label": "FDA label: VELTASSA (patiromer), dosing and interactions",
+        "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bf002984-d6c9-46df-aecb-a07733f763c1"
+      },
+      "after": {
+        "label": "FDA label: VELTASSA (patiromer), revised January 2025",
+        "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bf002984-d6c9-46df-aecb-a07733f763c1"
+      },
+      "identityReview": "passed bibliography identity/scope review",
+      "identityDateAndLimitations": "VELTASSA patiromer PI revised1/2025; formulation-specific spacing/dosing not transferred from LOKELMA.",
+      "priorVerifiedLessonEvidence": "potassium",
+      "acquisition": {
+        "index": 23,
+        "reference": {
+          "label": "FDA label: VELTASSA (patiromer), dosing and interactions",
+          "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bf002984-d6c9-46df-aecb-a07733f763c1"
+        },
+        "requestedUrl": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=bf002984-d6c9-46df-aecb-a07733f763c1&type=display",
+        "checkedAt": "2026-10-07T17:12:12.073983+00:00",
+        "status": "acquired; not yet reviewed",
+        "resolvedUrl": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=bf002984-d6c9-46df-aecb-a07733f763c1&type=display",
+        "httpStatus": 200,
+        "file": "reference-23.html",
+        "sha256": "b988e139cf78dc9662bb6c8d1cc7a5295bada87ceaf75218660f727be7c3cb9a",
+        "bytes": 71358
+      },
+      "wholeSourceNewlyCertified": false,
+      "acquiredFileHashRechecked": true
+    },
+    {
+      "index": 24,
+      "before": {
+        "label": "FDA label: ICU Medical ready-to-use potassium chloride injection",
+        "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=eb56a807-ea94-4edb-9811-a04b19568468"
+      },
+      "after": {
+        "label": "FDA label: ICU Medical ready-to-use potassium chloride injection",
+        "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=eb56a807-ea94-4edb-9811-a04b19568468"
+      },
+      "identityReview": "passed bibliography identity/scope review",
+      "identityDateAndLimitations": "ICU Medical ready-to-use KCl injection PI June2018; different from concentrate and oral forms.",
+      "priorVerifiedLessonEvidence": "potassium",
+      "acquisition": {
+        "index": 24,
+        "reference": {
+          "label": "FDA label: ICU Medical ready-to-use potassium chloride injection",
+          "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=eb56a807-ea94-4edb-9811-a04b19568468"
+        },
+        "requestedUrl": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=eb56a807-ea94-4edb-9811-a04b19568468&type=display",
+        "checkedAt": "2026-10-07T17:12:12.629332+00:00",
+        "status": "acquired; not yet reviewed",
+        "resolvedUrl": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=eb56a807-ea94-4edb-9811-a04b19568468&type=display",
+        "httpStatus": 200,
+        "file": "reference-24.html",
+        "sha256": "113a85fa433edff362602eccdde46e88cf110f9a3f1b98c7bbfb14266945a7cb",
+        "bytes": 48847
+      },
+      "wholeSourceNewlyCertified": false,
+      "acquiredFileHashRechecked": true
+    },
+    {
+      "index": 25,
+      "before": {
+        "label": "FDA label: Upsher-Smith 8 and 10 mEq potassium chloride extended-release tablets",
+        "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=616f0de7-8843-44a1-8fa6-274d889286aa"
+      },
+      "after": {
+        "label": "FDA label: Upsher-Smith 8 and 10 mEq potassium chloride extended-release tablets",
+        "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=616f0de7-8843-44a1-8fa6-274d889286aa"
+      },
+      "identityReview": "passed bibliography identity/scope review",
+      "identityDateAndLimitations": "Upsher-Smith KCl8/10mEq extended-release tablets PI12/2020; does not establish instructions for20mEq tablets or liquid.",
+      "priorVerifiedLessonEvidence": "potassium",
+      "acquisition": {
+        "index": 25,
+        "reference": {
+          "label": "FDA label: Upsher-Smith 8 and 10 mEq potassium chloride extended-release tablets",
+          "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=616f0de7-8843-44a1-8fa6-274d889286aa"
+        },
+        "requestedUrl": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=616f0de7-8843-44a1-8fa6-274d889286aa&type=display",
+        "checkedAt": "2026-10-07T17:12:12.629483+00:00",
+        "status": "acquired; not yet reviewed",
+        "resolvedUrl": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=616f0de7-8843-44a1-8fa6-274d889286aa&type=display",
+        "httpStatus": 200,
+        "file": "reference-25.html",
+        "sha256": "60efcb9b09c9e46979cb25150b71053a5cc186abc9c30abd70e2b23df5f7ed28",
+        "bytes": 43401
+      },
+      "wholeSourceNewlyCertified": false,
+      "acquiredFileHashRechecked": true
+    },
+    {
+      "index": 26,
+      "before": {
+        "label": "Kardalas et al. 2018: hypokalemia evaluation and treatment review",
+        "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5881435/"
+      },
+      "after": {
+        "label": "Kardalas et al. 2018: hypokalemia evaluation and treatment review",
+        "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5881435/"
+      },
+      "identityReview": "passed bibliography identity/scope review",
+      "identityDateAndLimitations": "Kardalas et al2018 Hypokalemia: a clinical update; clinical review, not actual manufacturer preparation instructions.",
+      "priorVerifiedLessonEvidence": "potassium",
+      "acquisition": {
+        "index": 26,
+        "reference": {
+          "label": "Kardalas et al. 2018: hypokalemia evaluation and treatment review",
+          "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5881435/"
+        },
+        "requestedUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5881435/",
+        "checkedAt": "2026-10-07T17:12:12.754571+00:00",
+        "status": "acquired; not yet reviewed",
+        "resolvedUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5881435/",
+        "httpStatus": 200,
+        "file": "reference-26.html",
+        "sha256": "201fb4d6401dcabc5999079bd39d04b7c2c48ed2e4ece897f4ca36920ca06b4e",
+        "bytes": 203678
+      },
+      "wholeSourceNewlyCertified": false,
+      "acquiredFileHashRechecked": true
+    },
+    {
+      "index": 27,
+      "before": {
+        "label": "FDA label: SPS suspension, bowel toxicity and emergency limitations",
+        "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=12d48dcf-07bd-4b06-bd6c-7543f1be8357"
+      },
+      "after": {
+        "label": "FDA label: sodium polystyrene sulfonate suspension, bowel toxicity and emergency limitations",
+        "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=12d48dcf-07bd-4b06-bd6c-7543f1be8357"
+      },
+      "identityReview": "passed bibliography identity/scope review",
+      "identityDateAndLimitations": "Sodium polystyrene sulfonate suspension product, listing8/2021; bowel toxicity and delayed-action/emergency limitations, not calcium polystyrene or another binder.",
+      "priorVerifiedLessonEvidence": "potassium",
+      "acquisition": {
+        "index": 27,
+        "reference": {
+          "label": "FDA label: SPS suspension, bowel toxicity and emergency limitations",
+          "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=12d48dcf-07bd-4b06-bd6c-7543f1be8357"
+        },
+        "requestedUrl": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=12d48dcf-07bd-4b06-bd6c-7543f1be8357&type=display",
+        "checkedAt": "2026-10-07T17:12:12.943491+00:00",
+        "status": "acquired; not yet reviewed",
+        "resolvedUrl": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=12d48dcf-07bd-4b06-bd6c-7543f1be8357&type=display",
+        "httpStatus": 200,
+        "file": "reference-27.html",
+        "sha256": "46d6a3f2e437e8e926017e1aa7fae1fb82ded76e988ae4ea6e95be0ec24a88c0",
+        "bytes": 33606
+      },
+      "wholeSourceNewlyCertified": false,
+      "acquiredFileHashRechecked": true
+    },
+    {
+      "index": 28,
+      "before": {
+        "label": "FDA label: Hospira magnesium sulfate 50% concentrate",
+        "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e175d329-315f-4f3b-bb4c-06ad4e042967"
+      },
+      "after": {
+        "label": "FDA label: Hospira magnesium sulfate 50% concentrate, revised August 2021",
+        "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e175d329-315f-4f3b-bb4c-06ad4e042967"
+      },
+      "identityReview": "passed bibliography identity/scope review",
+      "identityDateAndLimitations": "Hospira magnesium sulfate50%500mg/mL concentrate PI revised8/2021 vs SPL2/2026; obstetric/IM regimens not generalized to adult deficiency.",
+      "priorVerifiedLessonEvidence": "magnesium",
+      "acquisition": {
+        "index": 28,
+        "reference": {
+          "label": "FDA label: Hospira magnesium sulfate 50% concentrate",
+          "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e175d329-315f-4f3b-bb4c-06ad4e042967"
+        },
+        "requestedUrl": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=e175d329-315f-4f3b-bb4c-06ad4e042967&type=display",
+        "checkedAt": "2026-10-07T17:12:12.947934+00:00",
+        "status": "acquired; not yet reviewed",
+        "resolvedUrl": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=e175d329-315f-4f3b-bb4c-06ad4e042967&type=display",
+        "httpStatus": 200,
+        "file": "reference-28.html",
+        "sha256": "4e9b0dd2bf998ccb7c31d4c28cd8da35049b96e5cf53059c52acbece48cdddf0",
+        "bytes": 33608
+      },
+      "wholeSourceNewlyCertified": false,
+      "acquiredFileHashRechecked": true
+    },
+    {
+      "index": 29,
+      "before": {
+        "label": "NHS SPS: treating acute hypomagnesaemia in adults",
+        "href": "https://sps.nhs.uk/articles/treating-acute-hypomagnesaemia-in-adults/"
+      },
+      "after": {
+        "label": "NHS SPS 2024: treating acute hypomagnesaemia in adults",
+        "href": "https://sps.nhs.uk/articles/treating-acute-hypomagnesaemia-in-adults/"
+      },
+      "identityReview": "passed bibliography identity/scope review",
+      "identityDateAndLimitations": "NHS SPS Treating acute hypomagnesaemia in adults, published19Dec2024; local policy/renal/route considerations; UK guidance distinct from US labeling.",
+      "priorVerifiedLessonEvidence": "magnesium",
+      "acquisition": {
+        "index": 29,
+        "reference": {
+          "label": "NHS SPS: treating acute hypomagnesaemia in adults",
+          "href": "https://sps.nhs.uk/articles/treating-acute-hypomagnesaemia-in-adults/"
+        },
+        "requestedUrl": "https://sps.nhs.uk/articles/treating-acute-hypomagnesaemia-in-adults/",
+        "checkedAt": "2026-10-07T17:12:13.128081+00:00",
+        "status": "acquired; not yet reviewed",
+        "resolvedUrl": "https://sps.nhs.uk/articles/treating-acute-hypomagnesaemia-in-adults/",
+        "httpStatus": 200,
+        "file": "reference-29.html",
+        "sha256": "0b60e7d75529889cbd69a423b1083df3e3fc6aa3e20157eb1d6f97132a73e4ed",
+        "bytes": 143161
+      },
+      "wholeSourceNewlyCertified": false,
+      "acquiredFileHashRechecked": true
+    },
+    {
+      "index": 30,
+      "before": {
+        "label": "AHA 2025 adult advanced life support: polymorphic VT and torsades",
+        "href": "https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/adult-advanced-life-support"
+      },
+      "after": {
+        "label": "AHA 2025 adult advanced life support: polymorphic VT and torsades",
+        "href": "https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/adult-advanced-life-support"
+      },
+      "identityReview": "passed bibliography identity/scope review",
+      "identityDateAndLimitations": "AHA2025 Part9 Adult Advanced Life Support; polymorphicVT/torsades section reviewed previously. urllib403, current web primary page succeeds. Scope-specific magnesium use distinct from routine cardiac-arrest therapy.",
+      "priorVerifiedLessonEvidence": "magnesium",
+      "acquisition": {
+        "index": 30,
+        "reference": {
+          "label": "AHA 2025 adult advanced life support: polymorphic VT and torsades",
+          "href": "https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/adult-advanced-life-support"
+        },
+        "requestedUrl": "https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/adult-advanced-life-support",
+        "checkedAt": "2026-10-07T17:12:13.128439+00:00",
+        "status": "access failure; unresolved",
+        "error": "HTTP Error 403: Forbidden"
+      },
+      "wholeSourceNewlyCertified": false,
+      "accessResolution": "Current primary web text available and read for identity/scope; see limitations in note"
+    },
+    {
+      "index": 31,
+      "before": {
+        "label": "Aal-Hamad et al. 2023: hypermagnesemia in clinical practice",
+        "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10384947/"
+      },
+      "after": {
+        "label": "Aal-Hamad et al. 2023: hypermagnesemia in clinical practice",
+        "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10384947/"
+      },
+      "identityReview": "passed bibliography identity/scope review",
+      "identityDateAndLimitations": "Aal-Hamad et al2023 Hypermagnesemia in Clinical Practice; author/title match, not a product label.",
+      "priorVerifiedLessonEvidence": "magnesium",
+      "acquisition": {
+        "index": 31,
+        "reference": {
+          "label": "Aal-Hamad et al. 2023: hypermagnesemia in clinical practice",
+          "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10384947/"
+        },
+        "requestedUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10384947/",
+        "checkedAt": "2026-10-07T17:12:13.137866+00:00",
+        "status": "acquired; not yet reviewed",
+        "resolvedUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10384947/",
+        "httpStatus": 200,
+        "file": "reference-31.html",
+        "sha256": "70db4798cf3796d851fe204a2be2f572ea588ffa60b3b85e35a18bd5d54b631a",
+        "bytes": 212665
+      },
+      "wholeSourceNewlyCertified": false,
+      "acquiredFileHashRechecked": true
+    },
+    {
+      "index": 32,
+      "before": {
+        "label": "Liamis et al. 2021: drug-induced hypomagnesemia",
+        "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8287009/"
+      },
+      "after": {
+        "label": "Liamis et al. 2021: drug-induced hypomagnesemia",
+        "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8287009/"
+      },
+      "identityReview": "passed bibliography identity/scope review",
+      "identityDateAndLimitations": "Liamis et al2021 An overview of diagnosis and management of drug-induced hypomagnesemia; causes/management review, not a new renal dosing protocol.",
+      "priorVerifiedLessonEvidence": "magnesium",
+      "acquisition": {
+        "index": 32,
+        "reference": {
+          "label": "Liamis et al. 2021: drug-induced hypomagnesemia",
+          "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8287009/"
+        },
+        "requestedUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8287009/",
+        "checkedAt": "2026-10-07T17:12:13.208698+00:00",
+        "status": "acquired; not yet reviewed",
+        "resolvedUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8287009/",
+        "httpStatus": 200,
+        "file": "reference-32.html",
+        "sha256": "5257c46e96cc66b3b0d7b10d5d2d69442e957f4d9abdc064cd2344bbfb26a55a",
+        "bytes": 329612
+      },
+      "wholeSourceNewlyCertified": false,
+      "acquiredFileHashRechecked": true
+    },
+    {
+      "index": 33,
+      "before": {
+        "label": "Civica potassium-phosphates concentrate prescribing information, revised April 2026",
+        "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f7702b2f-d0d1-4696-896d-571607fc0dc8"
+      },
+      "after": {
+        "label": "Civica potassium-phosphates concentrate prescribing information, revised April 2026",
+        "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f7702b2f-d0d1-4696-896d-571607fc0dc8"
+      },
+      "identityReview": "passed bibliography identity/scope review",
+      "identityDateAndLimitations": "Civica K-phosphates concentrate3mmolP/4.4mEqK per mL; PI4/2026 vs SPL7/2026, NDA212832. Printed4mEq/dL serum-K unit discrepancy documented previously; no numeric cutoff adopted.",
+      "priorVerifiedLessonEvidence": "phosphate",
+      "acquisition": {
+        "index": 33,
+        "reference": {
+          "label": "Civica potassium-phosphates concentrate prescribing information, revised April 2026",
+          "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f7702b2f-d0d1-4696-896d-571607fc0dc8"
+        },
+        "requestedUrl": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=f7702b2f-d0d1-4696-896d-571607fc0dc8&type=display",
+        "checkedAt": "2026-10-07T17:12:13.215448+00:00",
+        "status": "acquired; not yet reviewed",
+        "resolvedUrl": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=f7702b2f-d0d1-4696-896d-571607fc0dc8&type=display",
+        "httpStatus": 200,
+        "file": "reference-33.html",
+        "sha256": "c8a39bf54c18ac0a2232fc4fda8510719ac277370e314acd08a89e1345c623f8",
+        "bytes": 69635
+      },
+      "wholeSourceNewlyCertified": false,
+      "acquiredFileHashRechecked": true
+    },
+    {
+      "index": 34,
+      "before": {
+        "label": "Fresenius Kabi potassium-phosphates concentrate prescribing information, revised February 2025",
+        "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=475f5cd7-45bd-412a-b419-9962585d6cda"
+      },
+      "after": {
+        "label": "Fresenius Kabi potassium-phosphates concentrate prescribing information, revised February 2025",
+        "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=475f5cd7-45bd-412a-b419-9962585d6cda"
+      },
+      "identityReview": "passed bibliography identity/scope review",
+      "identityDateAndLimitations": "Fresenius Kabi same3P/4.4K concentrate NDA212832; PI2/2025. Not4.7K formulation or fixed bag; same unit discrepancy preserved.",
+      "priorVerifiedLessonEvidence": "phosphate",
+      "acquisition": {
+        "index": 34,
+        "reference": {
+          "label": "Fresenius Kabi potassium-phosphates concentrate prescribing information, revised February 2025",
+          "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=475f5cd7-45bd-412a-b419-9962585d6cda"
+        },
+        "requestedUrl": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=475f5cd7-45bd-412a-b419-9962585d6cda&type=display",
+        "checkedAt": "2026-10-07T17:12:13.238702+00:00",
+        "status": "acquired; not yet reviewed",
+        "resolvedUrl": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=475f5cd7-45bd-412a-b419-9962585d6cda&type=display",
+        "httpStatus": 200,
+        "file": "reference-34.html",
+        "sha256": "db34ef05633c5d3eb77b6d96576611317064dacbbefb9451a21d816e1c9258bc",
+        "bytes": 83981
+      },
+      "wholeSourceNewlyCertified": false,
+      "acquiredFileHashRechecked": true
+    },
+    {
+      "index": 35,
+      "before": {
+        "label": "Glenmark sodium-phosphates concentrate prescribing information, revised January 2026",
+        "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c968f70b-a670-4aef-a7e0-89468ad62d9c"
+      },
+      "after": {
+        "label": "Glenmark sodium-phosphates concentrate prescribing information, revised January 2026",
+        "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c968f70b-a670-4aef-a7e0-89468ad62d9c"
+      },
+      "identityReview": "passed bibliography identity/scope review",
+      "identityDateAndLimitations": "Glenmark Na-phosphates concentrate3mmolP/4mEqNa per mL; PIJanuary2026 vs SPLMarch2026; ANDA220683. No automatic transfer of K-phosphate rate/renal restrictions.",
+      "priorVerifiedLessonEvidence": "phosphate",
+      "acquisition": {
+        "index": 35,
+        "reference": {
+          "label": "Glenmark sodium-phosphates concentrate prescribing information, revised January 2026",
+          "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c968f70b-a670-4aef-a7e0-89468ad62d9c"
+        },
+        "requestedUrl": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=c968f70b-a670-4aef-a7e0-89468ad62d9c&type=display",
+        "checkedAt": "2026-10-07T17:12:13.355383+00:00",
+        "status": "acquired; not yet reviewed",
+        "resolvedUrl": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=c968f70b-a670-4aef-a7e0-89468ad62d9c&type=display",
+        "httpStatus": 200,
+        "file": "reference-35.html",
+        "sha256": "565764fced68c31ad921b90750987231d35432246a26afc8a82263517b0df261",
+        "bytes": 34690
+      },
+      "wholeSourceNewlyCertified": false,
+      "acquiredFileHashRechecked": true
+    },
+    {
+      "index": 36,
+      "before": {
+        "label": "Imel and Econs 2012: approach to the hypophosphatemic patient",
+        "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3319220/"
+      },
+      "after": {
+        "label": "Imel and Econs 2012: approach to the hypophosphatemic patient",
+        "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3319220/"
+      },
+      "identityReview": "passed bibliography identity/scope review",
+      "identityDateAndLimitations": "Imel and Econs2012 Approach to the Hypophosphatemic Patient; clinical review, variable small studies not universal current dosing. Chronic therapy not certified by acute scope.",
+      "priorVerifiedLessonEvidence": "phosphate",
+      "acquisition": {
+        "index": 36,
+        "reference": {
+          "label": "Imel and Econs 2012: approach to the hypophosphatemic patient",
+          "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3319220/"
+        },
+        "requestedUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3319220/",
+        "checkedAt": "2026-10-07T17:12:13.456966+00:00",
+        "status": "acquired; not yet reviewed",
+        "resolvedUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3319220/",
+        "httpStatus": 200,
+        "file": "reference-36.html",
+        "sha256": "e6d5bb191e9e9a64f7082222d109a834b65b3a2c090dc9783e2566efd3d5428e",
+        "bytes": 243482
+      },
+      "wholeSourceNewlyCertified": false,
+      "acquiredFileHashRechecked": true
+    },
+    {
+      "index": 37,
+      "before": {
+        "label": "NICE CG32: nutrition support, refeeding risk and biochemical monitoring",
+        "href": "https://www.nice.org.uk/guidance/cg32/chapter/Recommendations"
+      },
+      "after": {
+        "label": "NICE CG32: nutrition support, refeeding risk and biochemical monitoring",
+        "href": "https://www.nice.org.uk/guidance/cg32/chapter/Recommendations"
+      },
+      "identityReview": "passed bibliography identity/scope review",
+      "identityDateAndLimitations": "NICE CG32 Nutrition support for adults; published22Feb2006,lastupdate4Aug2017,2026copyright is not a new regimen. Refeeding/biochemical monitoring scope separate from full nutrition module.",
+      "priorVerifiedLessonEvidence": "phosphate",
+      "acquisition": {
+        "index": 37,
+        "reference": {
+          "label": "NICE CG32: nutrition support, refeeding risk and biochemical monitoring",
+          "href": "https://www.nice.org.uk/guidance/cg32/chapter/Recommendations"
+        },
+        "requestedUrl": "https://www.nice.org.uk/guidance/cg32/chapter/Recommendations",
+        "checkedAt": "2026-10-07T17:12:13.463386+00:00",
+        "status": "acquired; not yet reviewed",
+        "resolvedUrl": "https://www.nice.org.uk/guidance/cg32/chapter/Recommendations",
+        "httpStatus": 200,
+        "file": "reference-37.html",
+        "sha256": "c803505044a62df75abda167c3a8a572744ad9b1eb72f5d04b99f8f532a9c987",
+        "bytes": 108976
+      },
+      "wholeSourceNewlyCertified": false,
+      "acquiredFileHashRechecked": true
+    }
+  ],
+  "priorWholeObjectReconciliation": {
+    "evidenceRoot": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/fluid-parent-metadata-bibliography-20261007/evidence",
+    "status": "passed prior-object reconciliation; whole-parent closure not yet certified",
+    "allSevenLessonObjectsExact": true,
+    "all110WholeQuestionObjectsExact": true,
+    "allSevenDerivedCumulativeWholeObjectsMatchReviewedOrigins": true,
+    "questionEvidenceById": {
+      "fluid-electrolyte-051": "fluid-calculations-monitoring-review.json",
+      "fluid-electrolyte-052": "fluid-calculations-monitoring-review.json",
+      "fluid-electrolyte-053": "fluid-calculations-monitoring-review.json",
+      "fluid-electrolyte-054": "fluid-calculations-monitoring-review.json",
+      "fluid-electrolyte-055": "fluid-calculations-monitoring-review.json",
+      "fluid-electrolyte-056": "fluid-calculations-monitoring-review.json",
+      "fluid-electrolyte-057": "fluid-calculations-monitoring-review.json",
+      "fluid-electrolyte-058": "fluid-calculations-monitoring-review.json",
+      "fluid-electrolyte-059": "fluid-calculations-monitoring-review.json",
+      "fluid-electrolyte-060": "fluid-calculations-monitoring-review.json",
+      "fluid-electrolyte-071": "fluid-calculations-monitoring-review.json",
+      "fluid-electrolyte-072": "fluid-calculations-monitoring-review.json",
+      "fluid-electrolyte-073": "fluid-calculations-monitoring-review.json",
+      "fluid-electrolyte-074": "fluid-calculations-monitoring-review.json",
+      "fluid-electrolyte-075": "fluid-calculations-monitoring-review.json",
+      "fluid-electrolyte-076": "fluid-calculations-monitoring-review.json",
+      "fluid-electrolyte-077": "fluid-calculations-monitoring-review.json",
+      "fluid-electrolyte-078": "fluid-calculations-monitoring-review.json",
+      "fluid-electrolyte-079": "fluid-calculations-monitoring-review.json",
+      "fluid-electrolyte-0710": "fluid-calculations-monitoring-review.json",
+      "fluid-electrolyte-001": "fluid-physiology-assessment-review.json",
+      "fluid-electrolyte-002": "fluid-physiology-assessment-review.json",
+      "fluid-electrolyte-003": "fluid-physiology-assessment-review.json",
+      "fluid-electrolyte-004": "fluid-physiology-assessment-review.json",
+      "fluid-electrolyte-005": "fluid-physiology-assessment-review.json",
+      "fluid-electrolyte-006": "fluid-physiology-assessment-review.json",
+      "fluid-electrolyte-007": "fluid-physiology-assessment-review.json",
+      "fluid-electrolyte-008": "fluid-physiology-assessment-review.json",
+      "fluid-electrolyte-009": "fluid-physiology-assessment-review.json",
+      "fluid-electrolyte-010": "fluid-physiology-assessment-review.json",
+      "fluid-electrolyte-061": "fluid-physiology-assessment-review.json",
+      "fluid-electrolyte-062": "fluid-physiology-assessment-review.json",
+      "fluid-electrolyte-063": "fluid-physiology-assessment-review.json",
+      "fluid-electrolyte-064": "fluid-physiology-assessment-review.json",
+      "fluid-electrolyte-065": "fluid-physiology-assessment-review.json",
+      "fluid-electrolyte-066": "fluid-physiology-assessment-review.json",
+      "fluid-electrolyte-067": "fluid-physiology-assessment-review.json",
+      "fluid-electrolyte-068": "fluid-physiology-assessment-review.json",
+      "fluid-electrolyte-069": "fluid-physiology-assessment-review.json",
+      "fluid-electrolyte-0610": "fluid-physiology-assessment-review.json",
+      "fluid-electrolyte-011": "iv-fluid-selection-review.json",
+      "fluid-electrolyte-012": "iv-fluid-selection-review.json",
+      "fluid-electrolyte-013": "iv-fluid-selection-review.json",
+      "fluid-electrolyte-014": "iv-fluid-selection-review.json",
+      "fluid-electrolyte-015": "iv-fluid-selection-review.json",
+      "fluid-electrolyte-016": "iv-fluid-selection-review.json",
+      "fluid-electrolyte-017": "iv-fluid-selection-review.json",
+      "fluid-electrolyte-018": "iv-fluid-selection-review.json",
+      "fluid-electrolyte-019": "iv-fluid-selection-review.json",
+      "fluid-electrolyte-020": "iv-fluid-selection-review.json",
+      "fluid-electrolyte-081": "iv-fluid-selection-review.json",
+      "fluid-electrolyte-082": "iv-fluid-selection-review.json",
+      "fluid-electrolyte-083": "iv-fluid-selection-review.json",
+      "fluid-electrolyte-084": "iv-fluid-selection-review.json",
+      "fluid-electrolyte-085": "iv-fluid-selection-review.json",
+      "fluid-electrolyte-086": "iv-fluid-selection-review.json",
+      "fluid-electrolyte-087": "iv-fluid-selection-review.json",
+      "fluid-electrolyte-088": "iv-fluid-selection-review.json",
+      "fluid-electrolyte-041": "magnesium-disorders-review.json",
+      "fluid-electrolyte-042": "magnesium-disorders-review.json",
+      "fluid-electrolyte-043": "magnesium-disorders-review.json",
+      "fluid-electrolyte-044": "magnesium-disorders-review.json",
+      "fluid-electrolyte-045": "magnesium-disorders-review.json",
+      "fluid-electrolyte-046": "magnesium-disorders-review.json",
+      "fluid-electrolyte-047": "magnesium-disorders-review.json",
+      "fluid-electrolyte-048": "magnesium-disorders-review.json",
+      "fluid-electrolyte-049": "magnesium-disorders-review.json",
+      "fluid-electrolyte-050": "magnesium-disorders-review.json",
+      "fluid-electrolyte-095": "magnesium-disorders-review.json",
+      "fluid-electrolyte-096": "magnesium-disorders-review.json",
+      "fluid-electrolyte-phosphate-route": "phosphate-replacement-review.json",
+      "fluid-electrolyte-phosphate-cause": "phosphate-replacement-review.json",
+      "fluid-electrolyte-phosphate-renal": "phosphate-replacement-review.json",
+      "fluid-electrolyte-phosphate-cap": "phosphate-replacement-review.json",
+      "fluid-electrolyte-phosphate-access": "phosphate-replacement-review.json",
+      "fluid-electrolyte-phosphate-load": "phosphate-replacement-review.json",
+      "fluid-electrolyte-phosphate-sodium": "phosphate-replacement-review.json",
+      "fluid-electrolyte-phosphate-dose": "phosphate-replacement-review.json",
+      "fluid-electrolyte-phosphate-compatibility": "phosphate-replacement-review.json",
+      "fluid-electrolyte-phosphate-refeeding": "phosphate-replacement-review.json",
+      "fluid-electrolyte-031": "potassium-disorders-review.json",
+      "fluid-electrolyte-032": "potassium-disorders-review.json",
+      "fluid-electrolyte-033": "potassium-disorders-review.json",
+      "fluid-electrolyte-034": "potassium-disorders-review.json",
+      "fluid-electrolyte-035": "potassium-disorders-review.json",
+      "fluid-electrolyte-036": "potassium-disorders-review.json",
+      "fluid-electrolyte-037": "potassium-disorders-review.json",
+      "fluid-electrolyte-038": "potassium-disorders-review.json",
+      "fluid-electrolyte-039": "potassium-disorders-review.json",
+      "fluid-electrolyte-040": "potassium-disorders-review.json",
+      "fluid-electrolyte-091": "potassium-disorders-review.json",
+      "fluid-electrolyte-092": "potassium-disorders-review.json",
+      "fluid-electrolyte-093": "potassium-disorders-review.json",
+      "fluid-electrolyte-094": "potassium-disorders-review.json",
+      "fluid-electrolyte-021": "sodium-water-disorders-review.json",
+      "fluid-electrolyte-022": "sodium-water-disorders-review.json",
+      "fluid-electrolyte-023": "sodium-water-disorders-review.json",
+      "fluid-electrolyte-024": "sodium-water-disorders-review.json",
+      "fluid-electrolyte-025": "sodium-water-disorders-review.json",
+      "fluid-electrolyte-026": "sodium-water-disorders-review.json",
+      "fluid-electrolyte-027": "sodium-water-disorders-review.json",
+      "fluid-electrolyte-028": "sodium-water-disorders-review.json",
+      "fluid-electrolyte-029": "sodium-water-disorders-review.json",
+      "fluid-electrolyte-030": "sodium-water-disorders-review.json",
+      "fluid-electrolyte-089": "sodium-water-disorders-review.json",
+      "fluid-electrolyte-0810": "sodium-water-disorders-review.json",
+      "fluid-electrolyte-097": "sodium-water-disorders-review.json",
+      "fluid-electrolyte-098": "sodium-water-disorders-review.json",
+      "fluid-electrolyte-099": "sodium-water-disorders-review.json",
+      "fluid-electrolyte-0910": "sodium-water-disorders-review.json"
+    },
+    "clinicalScopes": [
+      {
+        "scope": "fluid-physiology-assessment",
+        "file": "fluid-physiology-assessment-review.json",
+        "sha256": "f043e6dd672db23c64f90b10c0875b592dd68219c354c8ca4e4d8a27aa261234",
+        "status": "verified scoped whole lesson",
+        "release": {
+          "branch": "audit/rxprep-content-2026-09-24",
+          "baseCommit": "b3b7da32108edaa3ce8d799c2cdf62ac4fcb9a5a",
+          "commit": "37e7ebb240efbe00224683d6b731dcb77391d4c0",
+          "push": "verified",
+          "receipt": "fluid-physiology-assessment-release.json",
+          "remoteHashObserved": "37e7ebb240efbe00224683d6b731dcb77391d4c0",
+          "exactRemoteObservedByTool": true,
+          "remoteVerifiedAt": "2026-10-07T00:46:31.717728+00:00",
+          "mainMerge": "not performed",
+          "production": "not verified"
+        },
+        "scopeSummary": {
+          "wholeLessons": 1,
+          "bodies": 7,
+          "newBodies": 4,
+          "embeddedChecks": 1,
+          "embeddedChoices": 4,
+          "figures": 1,
+          "wholeQuestions": 20,
+          "questionChoices": 80,
+          "newQuestionIds": 0,
+          "referencesAdded": 3,
+          "parentReferencesAfter": 12,
+          "parentQuestionsAfter": 100,
+          "parentBodiesAfter": 26,
+          "unreviewedOtherLessons": 5
+        }
+      },
+      {
+        "scope": "iv-fluid-selection",
+        "file": "iv-fluid-selection-review.json",
+        "sha256": "decf4f65063a79ccc4c35a60d4a61daa17d95fbcd3c10957149ee4b79f08def1",
+        "status": "verified scoped whole lesson",
+        "release": {
+          "branch": "audit/rxprep-content-2026-09-24",
+          "baseCommit": "33508e1eef6f7eabe5188d3cef6875fabe9bd6b8",
+          "commit": "3e25b3564fa695a2df44cc203d85a5bd5ee4b95c",
+          "push": "verified",
+          "receipt": "iv-fluid-selection-release.json",
+          "remoteHashObserved": "3e25b3564fa695a2df44cc203d85a5bd5ee4b95c",
+          "exactRemoteObservedByTool": true,
+          "remoteVerifiedAt": "2026-10-07T13:59:33.541223+00:00",
+          "mainMerge": "not performed",
+          "production": "not verified"
+        },
+        "scopeSummary": {
+          "wholeLessons": 1,
+          "bodies": 12,
+          "newBodies": 7,
+          "embeddedChecks": 1,
+          "embeddedChoices": 4,
+          "figures": 1,
+          "wholeQuestions": 18,
+          "questionChoices": 72,
+          "changedQuestions": 16,
+          "newQuestionIds": 0,
+          "referencesAdded": 5,
+          "parentReferencesAfter": 17,
+          "parentQuestionsAfter": 100,
+          "parentBodiesAfter": 33,
+          "otherLessonsRemaining": 4
+        }
+      },
+      {
+        "scope": "sodium-water-disorders",
+        "file": "sodium-water-disorders-review.json",
+        "sha256": "705c2dec1e0ac50cc60655740761ef4cd71632880071f67c79e190e9e1424b4f",
+        "status": "verified scoped whole lesson",
+        "release": {
+          "branch": "audit/rxprep-content-2026-09-24",
+          "baseCommit": "730d115422179bf3d5aaad6ec2eb409172149cee",
+          "commit": "6005ea2404d078e0a9fd031a37620700c5b9e469",
+          "push": "verified",
+          "receipt": "sodium-water-disorders-release.json",
+          "remoteHashObserved": "6005ea2404d078e0a9fd031a37620700c5b9e469",
+          "exactRemoteObservedByTool": true,
+          "remoteVerifiedAt": "2026-10-07T14:38:29.613025+00:00",
+          "mainMerge": "not performed",
+          "production": "not verified"
+        },
+        "scopeSummary": {
+          "wholeLessons": 1,
+          "bodies": 15,
+          "newBodies": 11,
+          "embeddedChecks": 1,
+          "embeddedChoices": 4,
+          "figures": 1,
+          "wholeQuestions": 16,
+          "questionChoices": 64,
+          "changedQuestions": 16,
+          "derivedCumulativeWholeObjects": 2,
+          "derivedCumulativeChoices": 8,
+          "genericResearchQuestion030ReplacedWithSourceBoundWaterDeficitCalculation": true,
+          "newQuestionIds": 0,
+          "referencesAdded": 5,
+          "parentReferencesAfter": 22,
+          "parentQuestionsAfter": 100,
+          "parentBodiesAfter": 44,
+          "otherLessonsRemaining": 3
+        }
+      },
+      {
+        "scope": "potassium-disorders",
+        "file": "potassium-disorders-review.json",
+        "sha256": "cbe52f2d78fd806b9ad33f4424817042e1f25d0c97c8096dcd4ff1c9865a6674",
+        "status": "verified scoped whole lesson",
+        "release": {
+          "branch": "audit/rxprep-content-2026-09-24",
+          "baseCommit": "8106586458d4c9b91be67a4ae3723821d0ad8d06",
+          "commit": "3dbdb7bdbf834b5c10f67c354177e487d1ec2a26",
+          "pushedHead": "a2385683bcf9d4b6f9ad00055eaf16bd0a5ee4ae",
+          "push": "verified",
+          "receipt": "potassium-disorders-release.json",
+          "remoteHashObserved": "a2385683bcf9d4b6f9ad00055eaf16bd0a5ee4ae",
+          "exactRemoteObservedByTool": true,
+          "remoteVerifiedAt": "2026-10-07T15:17:57.614464+00:00",
+          "mainMerge": "not performed",
+          "production": "not verified"
+        },
+        "scopeSummary": {
+          "wholeLessons": 1,
+          "bodies": 15,
+          "newBodies": 11,
+          "embeddedChecks": 1,
+          "embeddedChoices": 4,
+          "figures": 1,
+          "wholeQuestions": 14,
+          "questionChoices": 56,
+          "changedQuestions": 14,
+          "derivedCumulativeWholeObjects": 0,
+          "all1180CumulativeObjectsUnchanged": true,
+          "question038ReplacesApproximationRecallWithRateCalculationUsingStableId": true,
+          "newQuestionIds": 0,
+          "referencesAdded": 6,
+          "referencesCorrected": 2,
+          "parentReferencesAfter": 28,
+          "parentQuestionsAfter": 100,
+          "parentBodiesAfter": 55,
+          "otherLessonsRemaining": 2
+        }
+      },
+      {
+        "scope": "magnesium-disorders",
+        "file": "magnesium-disorders-review.json",
+        "sha256": "743ec9555df11040350cf00dee4312f52ffd87e98a0b97ee50813b58b951330f",
+        "status": "verified scoped whole lesson",
+        "release": {
+          "branch": "audit/rxprep-content-2026-09-24",
+          "baseCommit": "688b381cbe381ebec6cdb2422b1b549291f0a14a",
+          "commit": "923a7f5a0a6135759278843154678996cea840c8",
+          "push": "verified",
+          "receipt": "magnesium-disorders-release.json",
+          "remoteHashObserved": "923a7f5a0a6135759278843154678996cea840c8",
+          "exactRemoteObservedByTool": true,
+          "remoteVerifiedAt": "2026-10-07T15:47:03.580135+00:00",
+          "mainMerge": "not performed",
+          "production": "not verified"
+        },
+        "scopeSummary": {
+          "wholeLessons": 1,
+          "bodies": 11,
+          "newBodies": 8,
+          "embeddedChecks": 1,
+          "embeddedChoices": 4,
+          "figures": 1,
+          "wholeQuestions": 12,
+          "questionChoices": 48,
+          "changedQuestions": 12,
+          "derivedCumulativeWholeObjects": 0,
+          "all1180CumulativeObjectsUnchanged": true,
+          "question047NowDirectValenceCalculation": true,
+          "question049NowSpecifiedConcentrateVolumeAndRateCalculation": true,
+          "question095NowCurrentlyPerfusingRecurrentTorsadesWithShockContingency": true,
+          "question096ToxicityScenarioNow10MeqPerLWithImpairedClearance": true,
+          "newQuestionIds": 0,
+          "referencesAdded": 5,
+          "referencesClarified": 1,
+          "parentReferencesAfter": 33,
+          "parentQuestionsAfter": 100,
+          "parentBodiesAfter": 63,
+          "otherLessonsRemaining": 1
+        }
+      },
+      {
+        "scope": "fluid-calculations-monitoring",
+        "file": "fluid-calculations-monitoring-review.json",
+        "sha256": "4a3a2a8be3314afd467317974be0909dc8af6b0ca2afb977e8d745c6b8ed5da6",
+        "status": "verified scoped whole lesson",
+        "release": {
+          "branch": "audit/rxprep-content-2026-09-24",
+          "baseCommit": "a8c0c66d99a78a26c9768f81039e10842344663a",
+          "commit": "fa2b9c6f145d6a00d845f8067c4be49cd74edaab",
+          "push": "verified",
+          "receipt": "fluid-calculations-monitoring-release.json",
+          "remoteHashObserved": "fa2b9c6f145d6a00d845f8067c4be49cd74edaab",
+          "exactRemoteObservedByTool": true,
+          "remoteVerifiedAt": "2026-10-07T16:22:01.257004+00:00",
+          "mainMerge": "not performed",
+          "production": "not verified"
+        },
+        "scopeSummary": {
+          "wholeLessons": 1,
+          "bodies": 11,
+          "newBodies": 8,
+          "embeddedChecks": 1,
+          "embeddedChoices": 4,
+          "figures": 1,
+          "wholeQuestions": 20,
+          "questionChoices": 80,
+          "changedQuestions": 20,
+          "derivedCumulativeWholeObjects": 2,
+          "derivedCumulativeChoices": 8,
+          "other1178CumulativeObjectsUnchanged": true,
+          "newQuestionIds": 0,
+          "referencesAdded": 0,
+          "parentReferencesAfter": 33,
+          "parentQuestionsAfter": 100,
+          "parentBodiesAfter": 71,
+          "otherCurrentlyCommittedLessonsUnreviewed": 0,
+          "parentCompletionStillOpen": true,
+          "plannedPhosphateDependencyRemainsOpen": true
+        }
+      },
+      {
+        "scope": "phosphate-replacement",
+        "file": "phosphate-replacement-review.json",
+        "sha256": "6b8a8302763d7882f6dc08a6adf875979bc2235c9c3090e756dfec563fac8646",
+        "status": "verified scoped whole lesson",
+        "release": {
+          "branch": "audit/rxprep-content-2026-09-24",
+          "baseCommit": "a89650f68aa25f025121d6232d4af01c0a4b1717",
+          "commit": "44888e0c7bf79ac5dfbbea97022bcd71ae361a62",
+          "push": "verified",
+          "receipt": "phosphate-replacement-release.json",
+          "remoteHashObserved": "44888e0c7bf79ac5dfbbea97022bcd71ae361a62",
+          "exactRemoteObservedByTool": true,
+          "remoteVerifiedAt": "2026-10-07T17:00:54.895976+00:00",
+          "mainMerge": "not performed",
+          "production": "not verified"
+        },
+        "scopeSummary": {
+          "wholeLessons": 1,
+          "bodies": 13,
+          "draftBodiesReconciled": 9,
+          "embeddedChecks": 1,
+          "embeddedChoices": 4,
+          "figures": 1,
+          "wholeQuestions": 10,
+          "questionChoices": 40,
+          "newCanonicalQuestionIds": 10,
+          "draftQuestionIdsReused": 5,
+          "newUniqueIdsBeyondPreservedDraft": 5,
+          "derivedCumulativeWholeObjects": 2,
+          "derivedCumulativeChoices": 8,
+          "all1180PriorCumulativeObjectsExact": true,
+          "allPrior100BankQuestionsExact": true,
+          "allPriorSixLessonsExact": true,
+          "referencesAdded": 5,
+          "parentReferencesAfter": 38,
+          "parentQuestionsAfter": 110,
+          "parentBodiesAfter": 84,
+          "wholeParentCompletionStillOpen": true
+        }
+      }
+    ]
+  },
+  "preservation": {
+    "status": "passed",
+    "slug": "fluid-electrolyte-therapy",
+    "metadataBefore": {
+      "source": "NaS synthesis of current fluid and electrolyte guidance",
+      "topics": [
+        "IV fluid therapy",
+        "Sodium and water",
+        "Potassium",
+        "Magnesium and monitoring"
+      ],
+      "outcomes": [
+        "Distinguish resuscitation, maintenance, replacement, and redistribution needs.",
+        "Classify sodium disorders by tonicity, symptoms, and volume status.",
+        "Sequence urgent potassium treatment by stabilization, redistribution, and removal.",
+        "Calculate common fluid needs and build a safe monitoring plan."
+      ]
+    },
+    "metadataAfter": {
+      "source": "NaS synthesis of adult fluid and electrolyte guidance and prescribing information",
+      "topics": [
+        "Fluid physiology and assessment",
+        "IV fluid therapy",
+        "Sodium and water",
+        "Potassium",
+        "Magnesium",
+        "Phosphate replacement",
+        "Calculations and monitoring"
+      ],
+      "outcomes": [
+        "Distinguish resuscitation, maintenance, replacement, and redistribution needs.",
+        "Classify sodium disorders by tonicity, symptoms, and volume status.",
+        "Sequence urgent potassium treatment by stabilization, redistribution, and removal.",
+        "Choose magnesium replacement according to symptoms, route, and kidney function.",
+        "Calculate phosphate and companion-electrolyte quantities for the actual product.",
+        "Calculate common fluid needs and build a safe monitoring plan."
+      ]
+    },
+    "referenceLabelChanges": [
+      {
+        "index": 0,
+        "before": {
+          "label": "NICE CG174: Intravenous fluid therapy in adults",
+          "href": "https://www.nice.org.uk/guidance/cg174/chapter/recommendations"
+        },
+        "after": {
+          "label": "NICE CG174: intravenous fluid therapy in adults in hospital",
+          "href": "https://www.nice.org.uk/guidance/cg174/chapter/recommendations"
+        }
+      },
+      {
+        "index": 1,
+        "before": {
+          "label": "European clinical practice guideline on hyponatremia",
+          "href": "https://academic.oup.com/ejendo/article/170/3/G1/6668028"
+        },
+        "after": {
+          "label": "European 2014 clinical practice guideline: diagnosis and treatment of hyponatraemia",
+          "href": "https://academic.oup.com/ejendo/article/170/3/G1/6668028"
+        }
+      },
+      {
+        "index": 2,
+        "before": {
+          "label": "Society for Endocrinology emergency guidance for severe symptomatic hyponatremia",
+          "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5314809/"
+        },
+        "after": {
+          "label": "Society for Endocrinology 2016 emergency guidance: severe symptomatic hyponatraemia",
+          "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5314809/"
+        }
+      },
+      {
+        "index": 3,
+        "before": {
+          "label": "KDIGO conference report on acute hyperkalemia",
+          "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7448835/"
+        },
+        "after": {
+          "label": "KDIGO 2020 conference report: acute hyperkalemia in the emergency department",
+          "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7448835/"
+        }
+      },
+      {
+        "index": 4,
+        "before": {
+          "label": "FDA label: AstraZeneca LOKELMA prescribing information",
+          "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=90bf8e28-748d-4e4b-a19f-9cf483370eff"
+        },
+        "after": {
+          "label": "FDA label: AstraZeneca LOKELMA, revised February 2024",
+          "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=90bf8e28-748d-4e4b-a19f-9cf483370eff"
+        }
+      },
+      {
+        "index": 5,
+        "before": {
+          "label": "FDA label: Tolvaptan",
+          "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5526617c-c7b9-4556-886d-729bbabbc566"
+        },
+        "after": {
+          "label": "FDA label: Otsuka SAMSCA (tolvaptan), revised April 2021",
+          "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5526617c-c7b9-4556-886d-729bbabbc566"
+        }
+      },
+      {
+        "index": 6,
+        "before": {
+          "label": "FDA label: Hospira potassium chloride for injection concentrate",
+          "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=559a0a8c-a8fe-40a5-b196-21f9308780ab"
+        },
+        "after": {
+          "label": "FDA label: Hospira potassium chloride for injection concentrate, revised January 2026",
+          "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=559a0a8c-a8fe-40a5-b196-21f9308780ab"
+        }
+      },
+      {
+        "index": 10,
+        "before": {
+          "label": "Asim et al. 2019: body fluid compartments and volume depletion",
+          "href": "https://www.wjgnet.com/2220-6124/full/v8/i1/23.htm"
+        },
+        "after": {
+          "label": "Asim et al. 2019: dehydration and volume depletion",
+          "href": "https://www.wjgnet.com/2220-6124/full/v8/i1/23.htm"
+        }
+      },
+      {
+        "index": 15,
+        "before": {
+          "label": "FDA-approved Baxter 5% dextrose label",
+          "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=36e9478c-5df0-4b47-b97d-de3626d7cb29"
+        },
+        "after": {
+          "label": "FDA label: Baxter 5% dextrose injection, revised June 2025",
+          "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=36e9478c-5df0-4b47-b97d-de3626d7cb29"
+        }
+      },
+      {
+        "index": 16,
+        "before": {
+          "label": "FDA-approved B. Braun lactated Ringer’s label",
+          "href": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=f6d82772-638c-4584-b9d3-8833669f5963"
+        },
+        "after": {
+          "label": "FDA label: B. Braun lactated Ringer’s injection, revised October 2025",
+          "href": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=f6d82772-638c-4584-b9d3-8833669f5963"
+        }
+      },
+      {
+        "index": 23,
+        "before": {
+          "label": "FDA label: VELTASSA (patiromer), dosing and interactions",
+          "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bf002984-d6c9-46df-aecb-a07733f763c1"
+        },
+        "after": {
+          "label": "FDA label: VELTASSA (patiromer), revised January 2025",
+          "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bf002984-d6c9-46df-aecb-a07733f763c1"
+        }
+      },
+      {
+        "index": 27,
+        "before": {
+          "label": "FDA label: SPS suspension, bowel toxicity and emergency limitations",
+          "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=12d48dcf-07bd-4b06-bd6c-7543f1be8357"
+        },
+        "after": {
+          "label": "FDA label: sodium polystyrene sulfonate suspension, bowel toxicity and emergency limitations",
+          "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=12d48dcf-07bd-4b06-bd6c-7543f1be8357"
+        }
+      },
+      {
+        "index": 28,
+        "before": {
+          "label": "FDA label: Hospira magnesium sulfate 50% concentrate",
+          "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e175d329-315f-4f3b-bb4c-06ad4e042967"
+        },
+        "after": {
+          "label": "FDA label: Hospira magnesium sulfate 50% concentrate, revised August 2021",
+          "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e175d329-315f-4f3b-bb4c-06ad4e042967"
+        }
+      },
+      {
+        "index": 29,
+        "before": {
+          "label": "NHS SPS: treating acute hypomagnesaemia in adults",
+          "href": "https://sps.nhs.uk/articles/treating-acute-hypomagnesaemia-in-adults/"
+        },
+        "after": {
+          "label": "NHS SPS 2024: treating acute hypomagnesaemia in adults",
+          "href": "https://sps.nhs.uk/articles/treating-acute-hypomagnesaemia-in-adults/"
+        }
+      }
+    ],
+    "candidateSourceSha256": "365fae6c0aa64f2c7608ed835c92f0252eeca7d075543e0d942d8238455b3d54",
+    "all7Lessons84BodiesAnd7ChecksExact": true,
+    "all110QuestionObjects440ChoicesExact": true,
+    "all1182CumulativeWholeObjectsExact": true,
+    "other231ModuleWholeObjectsExact": true,
+    "all38ReferenceUrlsAndOrderExact": true,
+    "wholeParentModuleVerified": false,
+    "wholeGoalComplete": false
+  },
+  "sourceDiscrepanciesRetained": [
+    "Phosphate serum-K unit discrepancy: no numeric cutoff adopted.",
+    "Iowa localvalidated osmolality formula differs from lessonestimate supported by ADA; apparent sourceworked-example errors not adopted.",
+    "Old book/older clinicalreviews do not override actual currentproduct instructions;studyassociation is not causation.",
+    "PIrevision, SPLlisting, guidelineupdate, copyright and future review date are distinct."
+  ],
+  "accessLimitations": [
+    {
+      "referenceIndex": 1,
+      "resolution": "Prior hashed source copy and source review retained; original publisher URL preserved",
+      "identityScopeNote": "Original joint2014 guideline, EJE170:G1–G47; publisher fetch403. Prior sodium review contains hashed original PDF copy and relevant-page/figure review. Publisher access error does not establish broken learner link."
+    },
+    {
+      "referenceIndex": 10,
+      "resolution": "Current primary web text available and read for identity/scope; see limitations in note",
+      "identityScopeNote": "Asim et al2019, Dehydration and volume depletion: How to handle the misconceptions, WJN8(1):23–32 DOI10.5527/wjn.v8.i1.23. Publisher403 in urllib; web full primary paper succeeds. No new dose/formula taken from incidental typographical errors."
+    },
+    {
+      "referenceIndex": 11,
+      "resolution": "Current primary web text available and read for identity/scope; see limitations in note",
+      "identityScopeNote": "University of Iowa laboratory osmolal gap calculation and interpretation; local validated formula includes glucose1.15 factor. This differs from the teaching estimate. TLS chain error in urllib; web full63line page succeeds, without disabling certificate verification. Source example contains apparent denominator/ethanol inconsistencies; those are not adopted in the lesson."
+    },
+    {
+      "referenceIndex": 18,
+      "resolution": "Current primary web text available and read for identity/scope; see limitations in note",
+      "identityScopeNote": "Published guideline correction, EJE171(1):X1,1July2014 DOI10.1530/EJE-13-1020e. Full correction web text read; Table7 disorder and SI glucose equation correction identified. Web formula serialization garbled; no new formula inferred or erratum image claimed viewed."
+    },
+    {
+      "referenceIndex": 30,
+      "resolution": "Current primary web text available and read for identity/scope; see limitations in note",
+      "identityScopeNote": "AHA2025 Part9 Adult Advanced Life Support; polymorphicVT/torsades section reviewed previously. urllib403, current web primary page succeeds. Scope-specific magnesium use distinct from routine cardiac-arrest therapy."
+    }
+  ],
+  "broaderQuestionCoverage": {
+    "status": "open",
+    "privateEvidence": "broader-fluid-locating-inventory.json",
+    "bankKeywordCandidates": 3746,
+    "cumulativeKeywordCandidates": 159,
+    "modulesWithCandidates": 170,
+    "interpretation": "Locating only;whole objects retained privately for individualreview.All110fluidownedwholeobjects alreadyreviewed; outside topic relevance and whole-object/source verification remainopen."
+  },
+  "validation": {
+    "structure": "Guarded audit passed110questions,zero hard/source/thin/size issues",
+    "build": {
+      "status": "passed",
+      "exitCode": 0,
+      "command": "npm run build (required prebuild storage gate)",
+      "externalCandidate": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/fluid-parent-metadata-bibliography-20261007/candidate"
+    },
+    "browser": {
+      "status": "passed",
+      "results": [
+        {
+          "width": 1440,
+          "overviewAnd6OutcomesExact": true,
+          "all7LessonMetadataAnd84WholeBodiesUnchangedAndRenderedExact": true,
+          "all7EmbeddedPromptsAnd28ChoicesExact": true,
+          "all38ReferenceLabelsAndUrlsOrderedExact": true,
+          "randomized10WholeQuestionAssessmentGradedCorrectly": true,
+          "newTopicSearch": [
+            "phosphate",
+            "magnesium",
+            "calculations"
+          ],
+          "noHorizontalOverflow": true
+        },
+        {
+          "width": 390,
+          "overviewAnd6OutcomesExact": true,
+          "all7LessonMetadataAnd84WholeBodiesUnchangedAndRenderedExact": true,
+          "all7EmbeddedPromptsAnd28ChoicesExact": true,
+          "all38ReferenceLabelsAndUrlsOrderedExact": true,
+          "randomized10WholeQuestionAssessmentGradedCorrectly": true,
+          "newTopicSearch": [
+            "phosphate",
+            "magnesium",
+            "calculations"
+          ],
+          "noHorizontalOverflow": true
+        }
+      ],
+      "additionalNativeWidths": [
+        320,
+        720
+      ],
+      "captures": [
+        "captures/overview-1440.png",
+        "captures/references-heading-1440.png",
+        "captures/references-00-1440.png",
+        "captures/references-06-1440.png",
+        "captures/references-12-1440.png",
+        "captures/references-18-1440.png",
+        "captures/references-24-1440.png",
+        "captures/references-30-1440.png",
+        "captures/references-36-1440.png",
+        "captures/curriculum-1440.png",
+        "captures/overview-390.png",
+        "captures/references-heading-390.png",
+        "captures/references-00-390.png",
+        "captures/references-06-390.png",
+        "captures/references-12-390.png",
+        "captures/references-18-390.png",
+        "captures/references-24-390.png",
+        "captures/references-30-390.png",
+        "captures/references-36-390.png",
+        "captures/curriculum-390.png",
+        "captures/native-overview-320.png",
+        "captures/native-overview-720.png"
+      ],
+      "errors": []
+    },
+    "visual": {
+      "status": "passed",
+      "inspectedAt": "2026-10-07T17:37:38.999935+00:00",
+      "method": "All3 finalunscaleddesktop/mobileboards andnative320/720overviewcaptures actuallyviewed. Originalimages retained; earliercaptures/boards preserved separately before scroll-position adjustment.",
+      "boardsActuallyViewed": [
+        "captures/boards/board-00.png",
+        "captures/boards/board-01.png",
+        "captures/boards/board-02.png"
+      ],
+      "desktopMobilePairsActuallyViewed": 10,
+      "captureCount": 22,
+      "nativeOverviewsActuallyViewed": [
+        "captures/native-overview-320.png",
+        "captures/native-overview-720.png"
+      ],
+      "findings": "Sixoutcomes and all38reference labels legible without stickytoolbar obstruction in finalcaptures;curriculum seven topics visible. No truncation/overlap/horizontaloverflow observed. ExistingNaS design retained.",
+      "priorCaptureRefinement": "Initial referencecaptures intersected existing sticky navigation;capture scrollposition adjusted,without site source/style change.",
+      "otherLessonsAndAssessment": "Priorwholeobjects remainexact;all7metadata/84bodies/7checkprompts28choices DOMchecked and randomized10questionassessments gradedcorrectly at1440/390. Not claimed visually recertified in full here."
+    }
+  },
+  "sourceComparison": "Parent source/topics/outcomes aligned with seven previously verified fluid lessons;14of38citation labels clarified with exact product/identity and PIrevision dates separate from SPL listings. All38URLs/order,sevenwholelessons84bodies/checks,110wholebankobjects440choices,1182wholecumulativeobjects and231otherwholemodules exact. No new clinicaldoseclaims; prior therapeutic-source review scopes and discrepancies retained. Broader3746bank/159cumulative keyword matches across170modules are locating only,not certified or necessarily all topic-related.",
+  "privateEvidenceRoot": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/fluid-parent-metadata-bibliography-20261007/evidence",
+  "storage": {
+    "managedModule": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/fluid-parent-metadata-bibliography-20261007",
+    "externalDependenciesAndBrowser": true,
+    "npmHooksEnforced": true,
+    "priorPhosphateArchiveIndependentlyReopened": {
+      "status": "passed",
+      "archive": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/archives/phosphate-replacement-20261007",
+      "independentlyReopenedAndHashed": {
+        "source": 1513,
+        "evidence": 344,
+        "outputs": 0
+      },
+      "exactPriorRemote": "1b28ecb234e278f8e17fe84d9b817df614bc6daa",
+      "permanentDeletions": 0
+    },
+    "archiveAndRecovery": "Pending passed module finish"
+  },
+  "remaining": "Audit and triage the whole broader fluid/electrolyte-related questions,including all choices/key/rationale and clinical dependencies,before whole-parent closure. Existing seven lessons,110wholeownedbankobjects,and sevenfluidderivedwholeobjects match prior verified evidence. Chapter1printed7/PDF19entry15 and Chapter11 remainopen. Use managed external Learn lifecycle.",
+  "release": {
+    "branch": "audit/rxprep-content-2026-09-24",
+    "baseCommit": "1b28ecb234e278f8e17fe84d9b817df614bc6daa",
+    "commit": null,
+    "push": "pending",
+    "receipt": "fluid-parent-metadata-bibliography-release.json",
+    "mainMerge": "not performed",
+    "production": "not verified"
+  }
+}
