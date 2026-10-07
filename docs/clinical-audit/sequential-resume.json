@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-07T00:45:22.464609+00:00",
+  "updated": "2026-10-07T13:59:17.794382+00:00",
   "status": "working",
   "sourcePolicy": {
     "educational": "Supplied RxPrep 2023 book remains primary; explicit user approval on 2026-10-01 authorizes the existing official ASPEN, USP, FDA and CDC references for remaining PN clinical and safety claims. Explicit human approval on 2026-10-02 authorizes primary neonatal and pediatric renal nutrition guidelines for the retained pediatric PN water-loss, GIR/brain, CKRT/catabolism/wound protein claims, and primary ASPEN/SCCM enteral clinical guidance plus FDA guidance/product labeling for the unfinished EN audit. Direct human approval on2026-10-04 authorizes the National Academies2005Water reference for EN031 and the retained renal-solute concept only. Directhumanapproval I giveapproval authorizesthe specificallyrequestedEndocrineSocietyprimary-adrenal-insufficiency andSCCM/ASHPstress-ulcer-prophylaxisguidance forretainedadultsteroidtransition andfeeding-relatedICUquestions only;fullsourceverificationbeforeadoptionremainsrequired. Direct human approval \"I give approval\" authorizes the specifically requested KDIGO2017 CKD-MBD, Endocrine Society hypercalcemia-of-malignancy, and Society for Endocrinology acute hypocalcemia/hypercalcemia sources for retained calcium claims; source review remains required before adoption. Direct human approval authorizes additional official guidelines,FDA labels and primary academic clinical references where the supplied book does not verify retained claims;current ESE2025 and academic mineral/dialysis sources used with full relevant source review.",
@@ -88,8 +88,8 @@
     "dependencyChapter": 11,
     "dependencyPrintedPage": 150,
     "dependencyPdfPage": 158,
-    "sectionAudit": "Entire finished seven-body lesson, all lesson metadata, check/choices, retained figure labels and all20 whole questions/80 choices reread against relevant sources. Formula variation and measurement limits explicit. No numeric hyponatremia correction protocol, PN dosing or complete HHS diagnosis added. First whole fluid lesson verified; full fluid parent remains reviewing.",
-    "nextAction": "Continue the whole fluid parent with iv-fluid-selection: read relevant original book pages and approved current IV fluid guidance, review every teaching body, check, figure and all associated whole questions. Reconcile the December2025 NICE removed resuscitation recommendations before adopting dose/composition claims. Keep Chapter1PDF19 entry15 as frontier; all five other fluid lessons, full parent metadata/bibliography, broader EN coverage and Chapter11 remain open.",
+    "sectionAudit": "Whole final12bodylesson,allmetadata,embeddedcheck/fourchoices,retainedfiveRsfigure and18wholequestions/72choices rereadagainst namedscoped sources. Generic500mL andsepsis250mL separated;all formulas,weightandwater/electrolyteunits independentlyrecomputed;conditionalESICMcertainty retained. Prior016/083 andintake/lossbodyexact.",
+    "nextAction": "Continue fluid parent with sodium-water-disorders: review whole sodium/water lesson,check,figure andallassociatedwholebank/broaderquestions againstbook andapprovedcurrenthyponatremia/hypernatremia sources. Chapter1printed7/PDF19entry15 determiningfluidneeds remainsfrontier. Fourfluidlessons,fullparentmetadata/bibliography,broaderEN/fluidcoverage andChapter11 remainopen. NewworkmustcontinuethroughmanagedexternalLearnlifecycle.",
     "nextDependencyPrintedPage": 161,
     "nextDependencyPdfPage": 169
   },
@@ -103,13 +103,10 @@
   },
   "release": {
     "branch": "audit/rxprep-content-2026-09-24",
-    "baseCommit": "b3b7da32108edaa3ce8d799c2cdf62ac4fcb9a5a",
-    "commit": "37e7ebb240efbe00224683d6b731dcb77391d4c0",
-    "push": "verified",
-    "receipt": "fluid-physiology-assessment-release.json",
-    "remoteHashObserved": "37e7ebb240efbe00224683d6b731dcb77391d4c0",
-    "exactRemoteObservedByTool": true,
-    "remoteVerifiedAt": "2026-10-07T00:46:31.717728+00:00",
+    "baseCommit": "33508e1eef6f7eabe5188d3cef6875fabe9bd6b8",
+    "commit": null,
+    "push": "pending",
+    "receipt": "iv-fluid-selection-release.json",
     "mainMerge": "not performed",
     "production": "not verified"
   },
@@ -179,10 +176,10 @@
       "total": 232,
       "moduleCountPercent": 28.45
     },
-    "interpretation": "First whole fluid lesson source verified.66/232wholemodules and7/82wholechapters unchanged; no weighted overall completion estimate.",
-    "checkedAt": "2026-10-07T00:45:22.464609+00:00"
+    "interpretation": "Secondwholefluidlessonverified;66/232wholemodules and7/82wholechapters unchanged. No weightedoverall completionestimate.",
+    "checkedAt": "2026-10-07T13:59:17.794382+00:00"
   },
-  "lastVerifiedLogicalUnit": "Whole fluid physiology and assessment lesson, its check, retained figure and20whole questions",
+  "lastVerifiedLogicalUnit": "Whole IV-fluid-selection lesson,embeddedcheck,fiveRsfigure and18wholequestions",
   "lastVerifiedSections": {
     "enteral-nutrition": {
       "evidence": "enteral-nutrition-renal-solute-review.json",
@@ -15479,14 +15476,13 @@
   },
   "latestGoalContinuationAudit": {
     "currentTurnClassification": "progress",
-    "previousGoalTurnClassification": "progress",
-    "previousGoalTurnEvidence": "EN current inventory/figure checkpoint content e3ba804 and receipt b3b7da32 remote verified; private archive1745files independently reopened/hashed.",
-    "currentTurnEvidence": "First whole fluid lesson7bodies/onecheck/onefigure/20whole questions80choices clinically source reviewed and validated.",
+    "previousGoalTurnClassification": "no progress while storage held; blocker resolved by verified Learn readiness receipt",
+    "currentTurnEvidence": "WholeIVlesson12bodies,onecheck/figure,18Qs72choices source-reviewed andvalidated throughmanagedexternalrun.",
     "genuineBlocker": false,
     "consecutiveImpasseTurns": 0,
     "wholeGoalComplete": false,
-    "nextAction": "Continue the whole fluid parent with iv-fluid-selection: read relevant original book pages and approved current IV fluid guidance, review every teaching body, check, figure and all associated whole questions. Reconcile the December2025 NICE removed resuscitation recommendations before adopting dose/composition claims. Keep Chapter1PDF19 entry15 as frontier; all five other fluid lessons, full parent metadata/bibliography, broader EN coverage and Chapter11 remain open.",
-    "goalToolState": "Original82chapterobjective remains active."
+    "nextAction": "Continue fluid parent with sodium-water-disorders: review whole sodium/water lesson,check,figure andallassociatedwholebank/broaderquestions againstbook andapprovedcurrenthyponatremia/hypernatremia sources. Chapter1printed7/PDF19entry15 determiningfluidneeds remainsfrontier. Fourfluidlessons,fullparentmetadata/bibliography,broaderEN/fluidcoverage andChapter11 remainopen. NewworkmustcontinuethroughmanagedexternalLearnlifecycle.",
+    "goalToolState": "Original82chapterobjective remainsactive."
   },
   "latestPediatricPnMaintenanceFluidReview": {
     "evidence": "pediatric-parenteral-nutrition-maintenance-fluid-review.json",
@@ -31818,6 +31814,67 @@
       "remoteHashObserved": "37e7ebb240efbe00224683d6b731dcb77391d4c0",
       "exactRemoteObservedByTool": true,
       "remoteVerifiedAt": "2026-10-07T00:46:31.717728+00:00",
+      "mainMerge": "not performed",
+      "production": "not verified"
+    }
+  },
+  "latestIVFluidSelectionReview": {
+    "evidence": "iv-fluid-selection-review.json",
+    "wholeParentModuleVerified": false,
+    "wholeGoalComplete": false,
+    "wholeLessonKeys": [
+      "iv-fluid-selection"
+    ],
+    "wholeTeachingBodies": 12,
+    "newTeachingBodies": 7,
+    "wholeEmbeddedChecks": 1,
+    "embeddedChoices": 4,
+    "wholeFigures": 1,
+    "wholeBankQuestions": 18,
+    "wholeBankChoices": 72,
+    "wholeBankQuestionIds": [
+      "fluid-electrolyte-011",
+      "fluid-electrolyte-012",
+      "fluid-electrolyte-013",
+      "fluid-electrolyte-014",
+      "fluid-electrolyte-015",
+      "fluid-electrolyte-016",
+      "fluid-electrolyte-017",
+      "fluid-electrolyte-018",
+      "fluid-electrolyte-019",
+      "fluid-electrolyte-020",
+      "fluid-electrolyte-081",
+      "fluid-electrolyte-082",
+      "fluid-electrolyte-083",
+      "fluid-electrolyte-084",
+      "fluid-electrolyte-085",
+      "fluid-electrolyte-086",
+      "fluid-electrolyte-087",
+      "fluid-electrolyte-088"
+    ],
+    "newQuestionIds": [],
+    "parentBankQuestions": 100,
+    "parentBodies": 33,
+    "parentReferences": 17,
+    "other82QuestionsUnchanged": true,
+    "otherFiveLessonsUnchanged": true,
+    "all100IdsKeysAnchorsAndOrderPreserved": true,
+    "other231ModuleObjectsUnchanged": true,
+    "all1180CumulativeObjectsUnchanged": true,
+    "priorFeedingItems016And083AndIntakeBodyUnchanged": true,
+    "broaderFeedingRegistryUniqueIdsUnchanged": 1510,
+    "committedWholeModulesVerifiedAfter": 66,
+    "committedWholeModulesTotal": 232,
+    "moduleCountPercent": 28.45,
+    "chaptersVerifiedAfter": 7,
+    "chapterTotal": 82,
+    "chapterCountPercent": 8.54,
+    "release": {
+      "branch": "audit/rxprep-content-2026-09-24",
+      "baseCommit": "33508e1eef6f7eabe5188d3cef6875fabe9bd6b8",
+      "commit": null,
+      "push": "pending",
+      "receipt": "iv-fluid-selection-release.json",
       "mainMerge": "not performed",
       "production": "not verified"
     }

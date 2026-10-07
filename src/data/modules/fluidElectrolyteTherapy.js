@@ -206,3 +206,108 @@ fluidElectrolyteTherapyModule.references.push(...[
     "href": "https://www.healthcare.uiowa.edu/path_handbook/appendix/chem/osmo_gap.html"
   }
 ]);
+
+// Source-reconciled IV fluid selection lesson.
+Object.assign(fluidElectrolyteTherapyModule.submodules.find(s => s.slug === "iv-fluid-selection"), {
+  "slug": "iv-fluid-selection",
+  "title": "IV Fluid Selection and the Five Rs",
+  "summary": "The correct fluid depends on the job. Resuscitation, routine maintenance, replacement, redistribution, and reassessment require different prescriptions.",
+  "concepts": [
+    "Crystalloids and albumin",
+    "Resuscitation versus maintenance",
+    "Ongoing loss replacement",
+    "Balanced solutions and saline"
+  ],
+  "visual": "fluids",
+  "application": "Use IV fluid only when oral or enteral routes cannot meet the need. Specify the type, rate, volume, duration, monitoring plan, and stopping rule.",
+  "lesson": [
+    {
+      "heading": "Name the indication",
+      "body": "Use all Five Rs: resuscitation, routine maintenance, replacement, redistribution and reassessment. Resuscitation treats impaired circulation from hypovolemia. Routine maintenance supplies ordinary water, electrolyte and limited glucose needs when intake is inadequate. Replacement matches abnormal losses such as gastrointestinal drainage. Redistribution addresses complex states in which edema can coexist with reduced effective circulation. Reassessment closes the loop: decide whether the treatment helped, caused harm or is still needed. Oral or enteral delivery is preferred when it can meet the requirement."
+    },
+    {
+      "heading": "Understand what the bag becomes",
+      "body": "Dextrose 5 percent in water (D5W) contains 50 g of dextrose per liter. The reviewed Baxter label gives a calculated osmolarity of 252 mOsm/L; after glucose metabolism, the solution behaves physiologically as electrolyte-free water. It supplies water and limited calories, but no sodium, potassium or chloride replacement, and does not provide durable intravascular expansion for resuscitation. Dextrose combined with saline is a different formulation: read both components. Isotonic electrolyte crystalloids primarily expand extracellular volume. Hypertonic saline serves selected monitored sodium emergencies rather than routine volume replacement."
+    },
+    {
+      "heading": "Use evidence without pretending one fluid fits every patient",
+      "body": "The 2024 ESICM guideline conditionally favors balanced crystalloids over isotonic saline for volume expansion in adult critically ill patients in general, with low certainty of evidence. This does not establish improvement in every outcome or every population. Composition, electrolyte and acid-base findings, brain injury, compatibility, availability and the local protocol still matter. Balanced fluid may be prioritized when large volumes or hyperchloremia/acidosis are concerns; saline can be appropriate when balanced fluid is unavailable or when hypochloremia or metabolic alkalosis informs the choice. These recommendations concern volume expansion, not the complete maintenance prescription."
+    },
+    {
+      "heading": "Calculate maintenance conservatively",
+      "body": "For routine adult maintenance alone, NICE CG174 suggests an initial water allowance of 25 to 30 mL/kg/day. A stable 70 kg adult without abnormal losses has an estimated total daily water requirement of 1,750 to 2,100 mL, before counting water already received by other routes. Consider 20 to 25 mL/kg/day for older or frail patients, renal impairment, cardiac failure or refeeding risk: at 60 kg this is 1,200 to 1,500 mL/day. In obesity, NICE uses ideal body weight and the lower end of the range, with expert advice for BMI above 40 kg/m². These estimates address maintenance alone; acute resuscitation and abnormal losses require separate assessment."
+    },
+    {
+      "heading": "Count intake and replace abnormal losses",
+      "body": "For a stable hospitalized adult, assess the water and electrolytes actually received from oral intake, tube feeds, prescribed water flushes, medication fluids and other IV sources before adding IV maintenance. Reduce or stop IV fluid when oral or enteral delivery meets the need; starting a feed alone does not establish adequate hydration. A tube used for gastric drainage instead removes fluid: measure the loss, review its composition and adjust the prescription for abnormal losses alongside ordinary maintenance needs. Reassess fluid balance, clinical status, kidney function and electrolyte trends as intake or output changes. These principles do not select one fixed daily volume or an exact replacement solution for every patient."
+    },
+    {
+      "heading": "Plan electrolytes and limited glucose separately",
+      "body": "NICE's initial maintenance framework includes approximately 1 mmol/kg/day each of sodium, potassium and chloride, plus 50 to 100 g/day of glucose to limit starvation ketosis. That glucose amount does not meet nutritional needs. For a 70 kg adult, the initial electrolyte estimate is about 70 mmol/day of each, before clinical adjustment and all other intake are counted. Do not infer that one bag automatically supplies the whole prescription. Use available prepared electrolyte-containing solutions and the authorized pharmacy process; do not manually add potassium at the bedside. Kidney function, laboratory trends and available products govern the final plan."
+    },
+    {
+      "heading": "Compare composition rather than bag names",
+      "body": "Normal saline contains sodium and chloride at 154 mmol/L each. Large-volume administration can contribute to hyperchloremic metabolic acidosis. Balanced crystalloids replace some chloride with other anions, such as lactate, acetate or gluconate, and differ in potassium, calcium and magnesium content. Lactated Ringer's contains potassium and calcium as well as sodium, chloride and lactate; lactate metabolism can provide an alkalinizing effect. Verify the actual formulation and label for electrolyte content, contraindications and compatibility. Balanced products are not interchangeable, and lower chloride does not make any volume harmless."
+    },
+    {
+      "heading": "Distinguish colloid expansion from a clinical indication",
+      "body": "The book distinguishes small-solute crystalloids from protein or starch colloids, which exert oncotic effects and generally produce greater intravascular expansion for a given volume. Greater expansion does not itself establish better clinical outcomes. Albumin has selected indications, including some cirrhosis-related circumstances; low serum albumin or edema alone does not select an infusion, and albumin is not nutritional supplementation. Hydroxyethyl starch carries FDA boxed warnings for mortality, kidney injury and excess bleeding. FDA directs that it should not be used unless adequate alternative treatment is unavailable; it is not a routine resuscitation choice."
+    },
+    {
+      "heading": "Match a bolus recommendation to its population",
+      "body": "NICE CG174 retains a general adult resuscitation recommendation for a crystalloid containing sodium 130 to 154 mmol/L, 500 mL over less than 15 minutes. It directs suspected sepsis to separate guidance. In NICE NG253 for people aged 16 or over who are not pregnant or recently pregnant, high-risk suspected sepsis warrants a prompt IV bolus unless contraindicated. For those needing fluid resuscitation, use an isotonic balanced electrolyte crystalloid, or 0.9 percent saline if balanced fluid is unavailable, starting with 250 mL ideally over 10 to 15 minutes. Reassess after each bolus; further 250 mL boluses may be given if needed up to 1,000 mL total, including prior fluids. If improvement remains insufficient after that total, obtain senior clinical advice. The total is not a requirement to give fluid despite harm. Apply the appropriate local emergency protocol and monitor during treatment."
+    },
+    {
+      "heading": "Keep the book calculation in its stated setting",
+      "body": "The book's PN fluid estimate for weight above 20 kg is 1,500 mL/day + 20 mL/kg/day x (weight in kg − 20 kg), using total body weight unless specified otherwise. At 70 kg it gives 2,500 mL/day. Its alternative adult estimate is 30 to 40 mL/kg/day, with adjustment for fluid accumulation and medication volumes. NICE's routine adult IV maintenance range gives 1,750 to 2,100 mL/day at the same weight. Name the method and setting rather than treating these different starting estimates as interchangeable mandates. Tailor delivery to the patient and count all sources. For example, a specified total water target of 1,750 mL/day minus 800 mL of oral water and 450 mL of medication fluid leaves 500 mL for an IV water allowance, before a separate electrolyte plan and any loss adjustments."
+    },
+    {
+      "heading": "Treat brain injury as a separate fluid context",
+      "body": "For volume expansion in adult critically ill patients with traumatic brain injury, ESICM conditionally suggests isotonic saline rather than balanced crystalloids or albumin, with very low certainty of evidence. The guideline advises avoiding more hypotonic balanced fluids such as Ringer's lactate in this context. Do not transfer a general balanced-fluid preference to every patient with brain injury, or use D5W for extracellular volume support. This volume-expansion decision does not itself establish an indication or regimen for hypertonic saline; follow the neurocritical care assessment and protocol."
+    },
+    {
+      "heading": "Write and reassess a complete prescription",
+      "body": "Document the indication, solution, rate, total volume, duration, expected response, monitoring and stopping rule, with a 24-hour management plan. During resuscitation, repeatedly assess circulation and signs of benefit or harm. New dyspnea or crackles during an infusion require stopping and urgent reassessment for possible fluid-related harm rather than reflexively completing the bag. Initially, ongoing adult IV therapy needs at least daily clinical, kidney-function, electrolyte and fluid-balance reassessment; monitoring is more frequent when the patient or losses are unstable. With chloride-rich fluids, review chloride and acid-base trends and revise the prescription when necessary. Stop unnecessary IV fluid when oral or enteral intake meets the need."
+    }
+  ],
+  "keyPoints": [
+    "Use the Five Rs as a prescribing checklist.",
+    "Stop IV fluid as soon as the need can be met enterally.",
+    "Do not manually add potassium to an IV bag at the bedside.",
+    "Consider ideal body weight and expert review when obesity or complex redistribution makes simple weight-based estimates unreliable."
+  ],
+  "check": {
+    "question": "Which prescription most clearly represents routine adult maintenance rather than resuscitation?",
+    "choices": [
+      "A daily water and electrolyte plan for a stable patient who cannot drink",
+      "A rapid crystalloid bolus for shock",
+      "Three percent saline for seizure from hyponatremia",
+      "Matched replacement of high-output ostomy losses"
+    ],
+    "answer": 0,
+    "rationale": "Maintenance replaces normal daily requirements in a stable patient, while the other choices serve resuscitation, emergency correction, or replacement purposes.",
+    "reviewHref": "#iv-fluid-selection"
+  }
+});
+fluidElectrolyteTherapyModule.references.push(...[
+  {
+    "label": "ESICM 2024 fluid guideline, Part 1: resuscitation fluid choice",
+    "href": "https://link.springer.com/article/10.1007/s00134-024-07369-9"
+  },
+  {
+    "label": "NICE NG253: adult suspected-sepsis IV fluid recommendations",
+    "href": "https://www.nice.org.uk/guidance/ng253/chapter/managing-suspected-sepsis"
+  },
+  {
+    "label": "FDA safety communication: hydroxyethyl starch",
+    "href": "https://www.fda.gov/vaccines-blood-biologics/safety-availability-biologics/labeling-changes-mortality-kidney-injury-and-excess-bleeding-hydroxyethyl-starch-products"
+  },
+  {
+    "label": "FDA-approved Baxter 5% dextrose label",
+    "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=36e9478c-5df0-4b47-b97d-de3626d7cb29"
+  },
+  {
+    "label": "FDA-approved B. Braun lactated Ringer’s label",
+    "href": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=f6d82772-638c-4584-b9d3-8833669f5963"
+  }
+]);

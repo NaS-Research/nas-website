@@ -412,3 +412,213 @@ Object.assign(fluidElectrolyteTherapyQuestionBank.find((question) => question.id
   "rationale": "Urea raises total measured osmolality but is relatively ineffective at producing sustained water shifts across cell membranes. A total result above 275 does not by itself establish effective tonicity when ineffective osmoles are present. Review glucose and other osmoles; SIADH still requires an appropriate pattern and exclusions.",
   "reviewHref": "#fluid-physiology-assessment"
 });
+
+// Stable question IDs, answer keys and review anchors retained.
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-011"), {
+  "id": "fluid-electrolyte-011",
+  "question": "Which of the Five Rs describes fluid given to match abnormal gastrointestinal drainage?",
+  "choices": [
+    "Replacement",
+    "Resuscitation",
+    "Routine maintenance",
+    "Redistribution"
+  ],
+  "answer": 0,
+  "rationale": "Replacement matches abnormal ongoing drainage according to measured volume and composition. Resuscitation addresses impaired perfusion, maintenance ordinary daily requirements, and redistribution complex shifts. A patient may need more than one component; replacement does not mean an unassessed fixed-volume order.",
+  "reviewHref": "#iv-fluid-selection"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-012"), {
+  "id": "fluid-electrolyte-012",
+  "question": "Why is dextrose 5 percent in water unsuitable as a primary resuscitation fluid?",
+  "choices": [
+    "After glucose metabolism it behaves mainly as electrolyte-free water",
+    "It remains entirely intravascular",
+    "It contains excessive chloride",
+    "It cannot deliver any water"
+  ],
+  "answer": 0,
+  "rationale": "After glucose metabolism, D5W supplies electrolyte-free water that distributes beyond the vascular space. It does not remain entirely intravascular, has no excessive chloride load and does deliver water; it provides poor durable volume expansion for primary resuscitation. A dextrose-saline combination is a different product.",
+  "reviewHref": "#iv-fluid-selection"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-013"), {
+  "id": "fluid-electrolyte-013",
+  "question": "Under NICE CG174 general adult IV resuscitation guidance, with suspected sepsis handled by its separate guideline, which starting prescription matches recommendation 1.3.1?",
+  "choices": [
+    "A sodium 130 to 154 mmol/L crystalloid, 500 mL over less than 15 minutes, with reassessment",
+    "D5W, 500 mL over less than 15 minutes, as equivalent extracellular volume expansion",
+    "A sodium-containing crystalloid continued at a maintenance rate until perfusion is reassessed the next day",
+    "A 500 mL crystalloid bolus repeated automatically until a fixed total is reached"
+  ],
+  "answer": 0,
+  "rationale": "CG174 retains the sodium range and 500 mL bolus recommendation. D5W is not an equivalent resuscitation fluid, a maintenance rate with delayed reassessment does not address acute perfusion needs, and repeat boluses require benefit/harm assessment. NG253 has a distinct initial 250 mL recommendation for its suspected-sepsis population; do not conflate the two.",
+  "reviewHref": "#iv-fluid-selection"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-014"), {
+  "id": "fluid-electrolyte-014",
+  "question": "What is the main physiologic concern with large volumes of 0.9 percent sodium chloride?",
+  "choices": [
+    "A high chloride load can contribute to hyperchloremic acidosis",
+    "It always causes severe hypernatremia",
+    "It contains no sodium",
+    "It acts as free water"
+  ],
+  "answer": 0,
+  "rationale": "Normal saline has sodium and chloride at 154 mmol/L each. Large volumes can contribute to hyperchloremic metabolic acidosis. This is a risk, not inevitable severe hypernatremia; saline contains sodium and is an extracellular electrolyte solution rather than electrolyte-free water.",
+  "reviewHref": "#iv-fluid-selection"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-015"), {
+  "id": "fluid-electrolyte-015",
+  "question": "Which statement best represents the current balanced crystalloid evidence?",
+  "choices": [
+    "Results differ across populations, so fluid choice remains context dependent",
+    "Balanced fluids improve every outcome in every patient",
+    "Saline is superior in every clinical setting",
+    "Solution composition has no physiologic effect"
+  ],
+  "answer": 0,
+  "rationale": "ESICM conditionally favors balanced crystalloids for general adult critical-care volume expansion, with low certainty of evidence. Outcomes and populations differ, and traumatic brain injury has a separate recommendation. Neither balanced fluids nor saline improve every outcome in every setting; composition affects chloride exposure and acid-base physiology.",
+  "reviewHref": "#iv-fluid-selection"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-017"), {
+  "id": "fluid-electrolyte-017",
+  "question": "Which patient is most likely to need an initial adult maintenance estimate below 25 to 30 mL/kg/day?",
+  "choices": [
+    "An older adult with heart failure and renal impairment",
+    "A healthy adult with high-output diarrhea",
+    "A patient in hemorrhagic shock",
+    "An athlete drinking normally"
+  ],
+  "answer": 0,
+  "rationale": "NICE suggests considering a lower initial maintenance volume, such as 20 to 25 mL/kg/day, for older or frail adults and people with cardiac or renal impairment. High-output diarrhea requires separate loss replacement; hemorrhagic shock is a resuscitation problem. An athlete drinking adequately does not automatically require IV maintenance.",
+  "reviewHref": "#iv-fluid-selection"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-018"), {
+  "id": "fluid-electrolyte-018",
+  "question": "Which statement best explains why hydroxyethyl starch should not be selected for routine resuscitation?",
+  "choices": [
+    "FDA warns of mortality, kidney injury and excess bleeding, and restricts use when adequate alternatives are available",
+    "Its oncotic effect establishes better clinical outcomes than crystalloid in every patient",
+    "Its starch content makes it a complete nutritional replacement for low serum albumin",
+    "A smaller infusion volume eliminates the need to monitor kidney function or bleeding"
+  ],
+  "answer": 0,
+  "rationale": "The FDA safety warning directs that HES should not be used unless adequate alternative treatment is unavailable. Oncotic volume expansion is not proof of superior outcomes. HES is not a nutritional substitute, and a smaller volume does not remove its safety concerns or monitoring needs.",
+  "reviewHref": "#iv-fluid-selection"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-019"), {
+  "id": "fluid-electrolyte-019",
+  "question": "An IV order says 'normal saline at 100 mL/hour' with no other fluid plan. What is the most appropriate next step?",
+  "choices": [
+    "Clarify the indication, total volume/duration, response, monitoring and stopping rule",
+    "Infer from the rate that the prescription is complete resuscitation for any adult",
+    "Add a full maintenance allowance without counting this infusion",
+    "Continue until oral intake resumes without assessing fluid status or losses"
+  ],
+  "answer": 0,
+  "rationale": "A rate alone does not establish the purpose or duration. At 100 mL/hour a 24-hour infusion would provide 2,400 mL, which must be counted in total intake. The rate does not prove a resuscitation indication; adding uncounted maintenance or continuing without reassessment risks an inappropriate prescription.",
+  "reviewHref": "#iv-fluid-selection"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-020"), {
+  "id": "fluid-electrolyte-020",
+  "question": "What is the best endpoint after a resuscitation fluid challenge?",
+  "choices": [
+    "A predefined change in perfusion with assessment for harm",
+    "Completion of the bag regardless of response",
+    "A rise in body weight",
+    "Development of edema"
+  ],
+  "answer": 0,
+  "rationale": "A fluid challenge should assess a predefined perfusion response and potential harm to guide the next decision. Bag completion is not a clinical endpoint; weight gain or edema does not establish useful resuscitation and may accompany fluid accumulation.",
+  "reviewHref": "#iv-fluid-selection"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-081"), {
+  "id": "fluid-electrolyte-081",
+  "question": "A stable 70 kg adult needs routine IV maintenance alone, cannot drink and has no abnormal losses or reason for a lower initial estimate. Under NICE 25 to 30 mL/kg/day, what total daily water range is estimated before counting other intake?",
+  "choices": [
+    "1,750 to 2,100 mL/day",
+    "1,400 to 1,750 mL/day",
+    "2,100 to 2,800 mL/day",
+    "25 to 30 mL/day"
+  ],
+  "answer": 0,
+  "rationale": "70 x 25 = 1,750 and 70 x 30 = 2,100 mL/day. 1,400 to 1,750 uses the lower 20 to 25 range; 2,100 to 2,800 uses 30 to 40. 25 to 30 omits multiplication by weight. This estimates maintenance water, not losses or resuscitation, and other intake still counts.",
+  "reviewHref": "#iv-fluid-selection"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-082"), {
+  "id": "fluid-electrolyte-082",
+  "question": "A nonpregnant adult, not recently pregnant, has high-risk suspected sepsis in hospital. Fluid resuscitation is indicated and no contraindication is identified. Under NICE NG253, which initial action is appropriate?",
+  "choices": [
+    "Give an isotonic balanced crystalloid 250 mL bolus, ideally over 10 to 15 minutes, then reassess",
+    "Give 1,000 mL without reassessment because it is a required minimum total",
+    "Give D5W 250 mL as equivalent extracellular volume support",
+    "Defer the indicated resuscitation until the routine next-day fluid review"
+  ],
+  "answer": 0,
+  "rationale": "NG253 uses an initial 250 mL isotonic electrolyte crystalloid bolus, ideally over 10 to 15 minutes, with reassessment after each bolus. Use saline if a balanced solution is unavailable. Further boluses are conditional on need; 1,000 mL is not a mandatory minimum. D5W is not equivalent, and high-risk indicated resuscitation should not be deferred to next-day review.",
+  "reviewHref": "#iv-fluid-selection"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-084"), {
+  "id": "fluid-electrolyte-084",
+  "question": "A patient with cirrhosis has ascites, edema and suspected reduced effective circulation. What is the best next fluid-planning approach?",
+  "choices": [
+    "Assess complex redistribution and seek expert input using perfusion, congestion, intake and laboratory findings",
+    "Treat edema as proof that effective circulating volume is adequate",
+    "Select albumin solely because serum albumin is low",
+    "Apply an unchanged maintenance volume based only on scale weight"
+  ],
+  "answer": 0,
+  "rationale": "NICE recommends expert input for complex redistribution and significant liver disease. Edema can coexist with reduced effective circulation; assess both. Low albumin alone does not establish an albumin infusion indication, and weight alone does not determine a safe prescription. Selected albumin indications require the full clinical context.",
+  "reviewHref": "#iv-fluid-selection"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-085"), {
+  "id": "fluid-electrolyte-085",
+  "question": "A stable adult has a specified total water target of 1,750 mL/day, receives 800 mL of oral water plus 450 mL of medication fluid, and has no other intake or abnormal losses. What IV WATER allowance remains before a separate electrolyte plan?",
+  "choices": [
+    "500 mL/day",
+    "950 mL/day",
+    "1,750 mL/day",
+    "3,000 mL/day"
+  ],
+  "answer": 0,
+  "rationale": "Other intake totals 800 + 450 = 1,250 mL/day; 1,750 − 1,250 = 500 mL/day. 950 subtracts only oral water, 1,750 ignores both sources and 3,000 adds them to the target. This water accounting does not specify the IV formulation or prove that electrolyte requirements have been met.",
+  "reviewHref": "#iv-fluid-selection"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-086"), {
+  "id": "fluid-electrolyte-086",
+  "question": "An adult critically ill patient with traumatic brain injury needs volume expansion. Which approach best reflects the 2024 ESICM recommendation?",
+  "choices": [
+    "Consider isotonic saline rather than balanced crystalloid or albumin, and follow the neurocritical protocol",
+    "Apply the general balanced-fluid preference without considering brain injury or tonicity",
+    "Select albumin because every colloid provides better clinical outcomes",
+    "Use D5W because its glucose makes it a durable intravascular volume expander"
+  ],
+  "answer": 0,
+  "rationale": "For this population, ESICM conditionally suggests isotonic saline over balanced crystalloids or albumin, with very low certainty of evidence. More hypotonic Ringer's lactate is discouraged in TBI. A general balanced preference does not apply automatically, colloid expansion does not prove superior outcomes, and metabolized D5W acts as free water. This question does not select osmotic therapy for intracranial pressure.",
+  "reviewHref": "#iv-fluid-selection"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-087"), {
+  "id": "fluid-electrolyte-087",
+  "question": "A frail 60 kg older adult with heart failure needs temporary routine maintenance alone. A clinician chooses NICE's lower initial 20 to 25 mL/kg/day estimate. What total water range follows before subtracting other intake?",
+  "choices": [
+    "1,200 to 1,500 mL/day",
+    "1,500 to 1,800 mL/day",
+    "2,100 to 2,400 mL/day",
+    "20 to 25 mL/day"
+  ],
+  "answer": 0,
+  "rationale": "60 x 20 = 1,200 and 60 x 25 = 1,500 mL/day. 1,500 to 1,800 uses 25 to 30; 2,100 to 2,400 does not use the specified range. 20 to 25 omits weight. Tailor the initial estimate after counting intake and reassessing congestion, kidney function and electrolytes; it is not a bolus or a fixed ongoing mandate.",
+  "reviewHref": "#iv-fluid-selection"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-088"), {
+  "id": "fluid-electrolyte-088",
+  "question": "New dyspnea and crackles develop during an IV fluid infusion. What is the best immediate fluid-related response?",
+  "choices": [
+    "Stop the infusion and urgently reassess for possible harm and the ongoing indication",
+    "Complete the prescribed bag before reviewing the new respiratory findings",
+    "Give a further bolus automatically because crackles demonstrate inadequate volume",
+    "Continue at the same rate if the most recent serum sodium was normal"
+  ],
+  "answer": 0,
+  "rationale": "New respiratory findings can indicate fluid-related harm and require stopping and urgent clinical reassessment. They are not proof of one diagnosis or a reason to complete the bag or give more fluid automatically. Normal sodium does not exclude overload or remove the need to assess the patient.",
+  "reviewHref": "#iv-fluid-selection"
+});
