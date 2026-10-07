@@ -311,3 +311,121 @@ fluidElectrolyteTherapyModule.references.push(...[
     "href": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=f6d82772-638c-4584-b9d3-8833669f5963"
   }
 ]);
+
+// Source-reconciled sodium and water disorders lesson.
+Object.assign(fluidElectrolyteTherapyModule.submodules.find(s => s.slug === "sodium-water-disorders"), {
+  "slug": "sodium-water-disorders",
+  "title": "Sodium and Water Disorders",
+  "summary": "The safest sodium plan begins with tonicity and symptoms, then integrates volume status, cause, chronicity, urine studies, and correction trajectory.",
+  "concepts": [
+    "Hypotonic hyponatremia",
+    "Severe neurologic symptoms",
+    "Hypernatremia and water deficit",
+    "SIADH and diabetes insipidus"
+  ],
+  "visual": "sodium",
+  "application": "In a sodium emergency, state both the immediate neurologic goal and the maximum acceptable correction trajectory. Measure often enough to detect an unexpected water diuresis before overshoot occurs.",
+  "lesson": [
+    {
+      "heading": "Recognize urgency while confirming tonicity",
+      "body": "Hyponatremia means serum sodium below 135 mmol/L; the number alone does not identify its mechanism or urgency. Check glucose and measured serum osmolality, and consider other effective osmoles. Marked lipid or protein concentrations can cause pseudohyponatremia with some laboratory methods; hyperglycemia can cause a water shift with non-hypotonic hyponatremia. A measured osmolality below 275 mOsm/kg confirms hypotonicity, but a higher total osmolality does not by itself exclude low effective tonicity when ineffective osmoles such as urea are present. Severe neurologic symptoms plausibly attributable to hypotonic hyponatremia require immediate monitored treatment while testing proceeds. Do not wait for the complete etiologic workup."
+    },
+    {
+      "heading": "Use urine studies with the clinical assessment",
+      "body": "For hypotonic hyponatremia, obtain contemporaneous serum and spot urine samples when feasible. The European diagnostic approach starts with urine osmolality: 100 mOsm/kg or less suggests excess water intake relative to solute, including low-solute intake. When urine osmolality exceeds 100, interpret urine sodium alongside circulation, extracellular volume, medications and kidney function. Urine sodium 30 mmol/L or less supports low effective arterial volume; edema in heart failure or cirrhosis can coexist with this state. A value above 30 does not establish SIADH. Diuretics and kidney disease can confound the result, and clinical volume assessment alone can misclassify patients. Emergency symptom treatment takes priority over this diagnostic sequence."
+    },
+    {
+      "heading": "Establish an SIADH pattern by exclusion",
+      "body": "SIADH, also termed SIAD, involves persistent antidiuresis despite hypotonicity. The European criteria include effective serum osmolality below 275 mOsm/kg, urine osmolality above 100, clinical euvolemia and urine sodium above 30 mmol/L with usual salt and water intake. Exclude adrenal, thyroid, pituitary and renal insufficiency and recent diuretic use before assigning the diagnosis. Review pulmonary and central nervous system disorders, malignancy and implicated medicines, such as SSRIs or carbamazepine. Urine concentration alone is insufficient: hypovolemia also stimulates vasopressin, and adrenal insufficiency can resemble SIADH."
+    },
+    {
+      "heading": "Relieve severe symptoms with a limited initial rise",
+      "body": "Seizures, coma or other severe symptoms attributable to hypotonic hyponatremia call for urgent monitored hypertonic saline under an emergency protocol. The European guideline uses 150 mL of 3 percent saline over 20 minutes, checking sodium after the bolus and repeating with reassessment until an initial rise of about 5 mmol/L is achieved. Its advice includes considering weight-based volume in markedly different body composition. The immediate aim is to reduce dangerous cerebral edema, not to normalize sodium in an hour. If symptoms improve after this initial rise, stop the hypertonic infusion and move to cause-specific care and prevention of excessive cumulative correction. Persistent symptoms require expert reassessment of treatment and alternative causes."
+    },
+    {
+      "heading": "Count the initial rise within the daily limit",
+      "body": "European guidance limits the total rise to 10 mmol/L during the first 24 hours and 8 mmol/L during each 24 hours thereafter in the relevant moderate or profound hyponatremia settings. The initial symptom-relieving rise counts toward the total; it is not a separate allowance. For example, sodium 116 to 121 mmol/L is already a 5 mmol/L rise. Under that first-day ceiling, 126 mmol/L would represent the total 10 mmol/L increase, not a target that must be reached. Treat unknown duration cautiously as chronic unless evidence supports an acute process. Record the starting sodium, timestamps, cumulative change and risk-specific limits, and aim below the ceiling to allow for measurement uncertainty and unexpected water losses."
+    },
+    {
+      "heading": "Use a stricter plan for high demyelination risk",
+      "body": "The US/Irish expert recommendations discussed by Sterns and colleagues use a maximum rise of 8 mmol/L in any 24 hours for patients at high risk of osmotic demyelination, with a daily goal of 4 to 6 mmol/L. Risk factors include sodium 105 mmol/L or lower, alcohol use disorder, severe hypokalemia, malnutrition and advanced liver disease. A normal neurologic examination does not remove these risks. A high-risk patient whose sodium rises from 108 to 114 has already increased by 6 mmol/L; further rise is not required to reach the ceiling. These risk-specific recommendations are more conservative than the general European first-day limit. A label warning about rises above 12 mmol/L/day is not permission to target 12 in a vulnerable patient."
+    },
+    {
+      "heading": "Detect water diuresis before correction overshoots",
+      "body": "Restoring circulation in hypovolemic hyponatremia can suppress the non-osmotic vasopressin stimulus and abruptly increase electrolyte-free water excretion. Sodium may then rise faster than predicted from the saline dose. Follow urine output, fluid balance, sodium and neurologic status throughout correction; potassium replacement also contributes to sodium correction and must be considered. The European guideline flags a sudden urine-output increase above 100 mL/hour and advises sodium checks every 2 hours until stable in this situation. If correction exceeds the applicable limit, stop the active correction and obtain urgent expert guidance. Carefully monitored electrolyte-free water and/or desmopressin may be used to prevent or reverse overshoot; they are not automatic treatment for every initial 5 mmol/L rise."
+    },
+    {
+      "heading": "Match longer-term hyponatremia treatment to the cause",
+      "body": "Hypovolemic hypotonic hyponatremia generally requires isotonic volume restoration; unstable circulation requires immediate resuscitation with close biochemical monitoring. For chronic SIADH without severe symptoms, address the cause, withdraw contributing treatment when feasible and consider fluid restriction. The European guideline lists urea or low-dose loop diuretic plus oral sodium chloride as possible second-line choices, with low-certainty recommendations. The book describes off-label demeclocycline, but the European guideline recommends against demeclocycline and lithium in moderate or profound SIADH. Expanded-volume states need management of the underlying disease and congestion. Do not treat every low sodium with saline, salt tablets or water restriction without identifying the physiology."
+    },
+    {
+      "heading": "Separate a vaptan indication from a routine preference",
+      "body": "Vaptans increase electrolyte-free water excretion by opposing vasopressin activity: oral tolvaptan blocks V2 receptors, while IV conivaptan blocks V1a and V2 receptors. US labels allow selected euvolemic or hypervolemic hyponatremia treatment, whereas the European guideline advises against vaptans in its moderate or profound SIADH and expanded-volume recommendations. An approved indication does not establish a preferred treatment for every patient or a proven symptomatic benefit. Both drugs can cause rapid correction, thirst and volume depletion, and are unsuitable for hypovolemic hyponatremia. Choose only within the applicable label, clinical guidance and specialist plan; tolvaptan must not replace urgent hypertonic saline for serious neurologic symptoms."
+    },
+    {
+      "heading": "Apply the SAMSCA safeguards",
+      "body": "SAMSCA is labeled for clinically significant euvolemic or hypervolemic hyponatremia: sodium below 125 mEq/L, or less marked symptomatic hyponatremia that has resisted fluid restriction. Initiate and reinitiate only in hospital with close monitoring. The labeled starting dose is 15 mg once daily; titration to 30 mg requires at least 24 hours, with a maximum of 60 mg/day. Limit treatment to 30 days and avoid underlying liver disease, including cirrhosis. Avoid fluid restriction in the first 24 hours and allow drinking in response to thirst. Contraindications include inability to sense or respond to thirst, hypovolemic hyponatremia, anuria and strong CYP3A inhibitors. Concomitant hypertonic saline is not recommended; review other interactions, including moderate CYP3A inhibitors and V2 agonists such as desmopressin. Use at CrCl below 10 mL/min is not recommended."
+    },
+    {
+      "heading": "Apply the distinct VAPRISOL regimen",
+      "body": "The manufacturer-linked VAPRISOL label describes hospital IV treatment starting with conivaptan 20 mg over 30 minutes, then 20 mg/day by continuous infusion; after the first day the infusion may increase to 40 mg/day. Infusion after the loading dose must not exceed 4 days. Moderate or severe hepatic impairment uses a lower 10 mg loading dose and 10 mg/day, titratable to 20 mg/day. Severe renal impairment with CrCl below 30 mL/min is not recommended; mild or moderate impairment does not require adjustment. Hypovolemic hyponatremia, potent CYP3A inhibitors and anuria are contraindications. Use a large vein, change the infusion site every 24 hours and monitor sodium, circulation and infusion reactions. Stop for hypovolemia, hypotension or an undesirable correction rate. Its regimen and renal threshold are not interchangeable with SAMSCA."
+    },
+    {
+      "heading": "Stabilize hypernatremia and identify the balance problem",
+      "body": "Hypernatremia means sodium above 145 mmol/L and reflects water deficit relative to sodium, caused by water loss, inadequate water access or hypertonic sodium gain. Review duration, symptoms, intake, fever, gastrointestinal losses, urine volume and concentration, medicines and volume status. Shock or hypotension requires isotonic saline or an appropriate balanced crystalloid to restore circulation before a controlled free-water plan. Once stable, oral or enteral water when feasible, or a suitable hypotonic IV solution, can address the deficit. A saline-containing solution supplies less free water than an equal volume of D5W. Hypervolemic sodium gain needs a plan for both water replacement and sodium removal rather than automatic additional isotonic fluid."
+    },
+    {
+      "heading": "Estimate water deficit without turning it into an order",
+      "body": "A starting estimate is water deficit in liters = estimated total body water in liters x (serum sodium / 140 − 1). Total body water fractions vary with age, sex, body composition and water depletion; state the fraction used. In a specified 70 kg example using 0.50, total body water is 35 L. At sodium 154 mmol/L, 35 x (154/140 − 1) = 3.5 L. This estimates the positive water balance needed to reach 140 under simplifying assumptions, not a command to deliver 3.5 L immediately. Account for ongoing renal, gastrointestinal and insensible losses, current intake, electrolyte replacement and the chosen correction schedule. Repeated sodium measurements and fluid reassessment are essential because the estimate cannot predict all changes."
+    },
+    {
+      "heading": "Tailor hypernatremia correction to duration and evidence",
+      "body": "Chronic or unknown-duration hypernatremia is traditionally lowered cautiously, commonly below 0.5 mmol/L/hour and about 12 mmol/L/day, as described in the 2023 clinical review. Much of the neurologic rationale comes from pediatric data, and the optimal adult rate remains uncertain. Adult observational studies have reported different outcome associations; the 2025 Kidney360 cohort explicitly cannot establish causation or an optimal treatment rate. Do not claim that faster correction is universally safe or that one numerical ceiling guarantees safety. Document a monitored, patient-specific plan that avoids both uncontrolled rapid change and ineffective prolonged correction. Acute symptomatic sodium loading is a distinct specialist emergency and should not be treated by applying a chronic protocol automatically."
+    },
+    {
+      "heading": "Distinguish vasopressin deficiency from renal resistance",
+      "body": "Hypernatremia with polyuria and inappropriately dilute urine suggests a water diuresis such as diabetes insipidus. Central disease reflects vasopressin deficiency and generally responds to desmopressin; nephrogenic disease reflects renal resistance. A substantial rise in urine osmolality after supervised desmopressin supports central disease, but partial disorders and osmotic diuresis can complicate interpretation. Evaluate glucose, urine studies, potassium, calcium and implicated medicines rather than diagnosing from sodium alone. Nephrogenic treatment includes addressing causes such as lithium exposure and electrolyte abnormalities, with a tailored specialist regimen. Desmopressin and water replacement in central disease require sodium, intake and urine-output monitoring to avoid switching from water loss to excess water retention."
+    }
+  ],
+  "keyPoints": [
+    "Urgent symptom treatment and diagnostic testing proceed together.",
+    "The initial sodium rise counts within the risk-specific daily correction limit.",
+    "New water diuresis can cause overshoot even after an appropriate saline prescription.",
+    "Vaptan labels and clinical guideline preferences have different scopes.",
+    "A water-deficit estimate needs an ongoing-loss and monitoring plan."
+  ],
+  "check": {
+    "question": "An adult with severe symptomatic hypotonic hyponatremia improves as sodium rises from 116 to 121 mmol/L. The clinician is using the European first-day 10 mmol/L limit and has assessed additional risk factors. What is the next safety priority?",
+    "choices": [
+      "Stop the hypertonic infusion after symptom improvement and monitor the cumulative rise, urine output and cause-specific plan",
+      "Treat 121 as a new baseline and permit a further 10 mmol/L rise in the same first 24 hours",
+      "Continue hypertonic saline until 135 mmol/L because symptoms have improved",
+      "Automatically give desmopressin and D5W after any 5 mmol/L rise regardless of trajectory"
+    ],
+    "answer": 0,
+    "rationale": "The initial rise is 121 − 116 = 5 mmol/L and counts toward the first-day limit. After symptom improvement, European guidance stops the hypertonic infusion and shifts to cause-specific care and close monitoring. Resetting the baseline or normalizing immediately could cause excessive correction. Relowering measures require a risk- and trajectory-based expert decision; a 5 mmol/L initial response alone does not mandate them.",
+    "reviewHref": "#sodium-water-disorders"
+  }
+});
+fluidElectrolyteTherapyModule.references.push(...[
+  {
+    "label": "Sterns et al. 2024: hyponatremia correction limits and high-risk safeguards",
+    "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10843202/"
+  },
+  {
+    "label": "European 2014 hyponatremia guideline: published correction",
+    "href": "https://academic.oup.com/ejendo/article/171/1/X1/6661472"
+  },
+  {
+    "label": "VAPRISOL full prescribing information, manufacturer-linked September 2017 label",
+    "href": "https://www.vaprisol.com/pdf/vaprisol-pi-sept2017.pdf"
+  },
+  {
+    "label": "Yun et al. 2023: evaluation and management of adult hypernatremia",
+    "href": "https://www.kjim.org/journal/view.php?doi=10.3904/kjim.2022.346"
+  },
+  {
+    "label": "Chacon-Palma et al. 2025: observational hypernatremia correction outcomes",
+    "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12407122/"
+  }
+]);

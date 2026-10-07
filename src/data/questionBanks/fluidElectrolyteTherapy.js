@@ -622,3 +622,213 @@ Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-elec
   "rationale": "New respiratory findings can indicate fluid-related harm and require stopping and urgent clinical reassessment. They are not proof of one diagnosis or a reason to complete the bag or give more fluid automatically. Normal sodium does not exclude overload or remove the need to assess the patient.",
   "reviewHref": "#iv-fluid-selection"
 });
+
+// Source-reconciled sodium questions; stable IDs, answer keys and anchors retained.
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-021"), {
+  "id": "fluid-electrolyte-021",
+  "question": "A clinically stable patient has a low measured sodium before an etiology is assigned. What laboratory distinction should guide the next diagnostic steps?",
+  "choices": [
+    "Determine effective tonicity using glucose, serum osmolality and the clinical context",
+    "Assign SIADH solely because the measured sodium is below 135 mmol/L",
+    "Use the urine sodium alone to exclude pseudohyponatremia",
+    "Interpret a high total osmolality as proof that hypotonicity is impossible"
+  ],
+  "answer": 0,
+  "rationale": "Glucose, effective osmoles and measurement artifact can change interpretation of a low sodium. Total osmolality includes ineffective osmoles such as urea, so a higher total result does not alone exclude low effective tonicity. Urine sodium does not identify a serum measurement artifact, and low sodium alone does not establish SIADH. Severe symptoms would require urgent care alongside testing.",
+  "reviewHref": "#sodium-water-disorders"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-022"), {
+  "id": "fluid-electrolyte-022",
+  "question": "A patient has effective serum osmolality 260 mOsm/kg, urine osmolality 420 mOsm/kg, urine sodium 55 mmol/L on usual intake and clinical euvolemia. Adrenal, thyroid, pituitary and renal insufficiency and recent diuretic use have been excluded. Which interpretation fits best?",
+  "choices": [
+    "The findings support an SIADH pattern while its cause is investigated",
+    "The concentrated urine proves central diabetes insipidus",
+    "The urine sodium establishes gastrointestinal hypovolemia regardless of examination",
+    "The low sodium is necessarily a lipid-related measurement artifact"
+  ],
+  "answer": 0,
+  "rationale": "The stated hypotonicity, antidiuresis, urine sodium above 30 and exclusions fit the European essential SIAD criteria. They do not identify the underlying cause. Central DI typically produces dilute urine during water loss; a high urine sodium does not prove gastrointestinal volume loss. A measured hypotonic pattern is not explained simply by a lipid artifact.",
+  "reviewHref": "#sodium-water-disorders"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-023"), {
+  "id": "fluid-electrolyte-023",
+  "question": "During urgent monitored treatment of severe symptomatic hypotonic hyponatremia, what is the initial sodium objective?",
+  "choices": [
+    "A small controlled rise sufficient to relieve dangerous cerebral edema, followed by reassessment",
+    "Immediate normalization to 135 mmol/L before reassessing symptoms",
+    "The largest possible water diuresis before the next sodium measurement",
+    "Completion of every endocrine test before starting symptom-directed treatment"
+  ],
+  "answer": 0,
+  "rationale": "European guidance aims for an initial rise of about 5 mmol/L; US/Irish experts describe 4 to 6 mmol/L over the early treatment period. Both emphasize a limited symptom-relieving rise rather than immediate normalization. Uncontrolled aquaresis risks overshoot, and severe symptoms should not wait for the full diagnostic workup.",
+  "reviewHref": "#sodium-water-disorders"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-024"), {
+  "id": "fluid-electrolyte-024",
+  "question": "Under the cited European general first-day limit, sodium rises from 116 to 121 mmol/L and severe symptoms improve. Which statement correctly accounts for the initial response?",
+  "choices": [
+    "The 5 mmol/L rise is included within the total first-day 10 mmol/L limit; later 24-hour limits are 8 mmol/L",
+    "The first 5 mmol/L is excluded, allowing a total 15 mmol/L rise during the first day",
+    "The first-day limit is a target requiring sodium to reach exactly 126 mmol/L",
+    "The daily limit can be reset each time a saline bolus finishes"
+  ],
+  "answer": 0,
+  "rationale": "The original baseline and elapsed time govern the cumulative change. The initial 5 counts within 10; it does not create an additional allowance. A ceiling is not a mandatory target, and a new bolus does not reset the clock. High-risk patients require a stricter limit, such as the US/Irish maximum of 8 mmol/L in any 24 hours.",
+  "reviewHref": "#sodium-water-disorders"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-025"), {
+  "id": "fluid-electrolyte-025",
+  "question": "An adult with chronic sodium 108 mmol/L has malnutrition and alcohol use disorder. Which correction plan best reflects the high-risk US/Irish recommendations discussed by Sterns and colleagues?",
+  "choices": [
+    "Aim for 4 to 6 mmol/L/day and do not exceed 8 mmol/L in any 24 hours",
+    "Use the general European 10 mmol/L first-day ceiling as a required minimum",
+    "Target 12 mmol/L/day because a product label warns about rises above 12",
+    "Remove the daily limit if the neurologic examination is initially normal"
+  ],
+  "answer": 0,
+  "rationale": "Malnutrition and alcohol use disorder increase demyelination risk even with an initially normal examination. The high-risk recommendations use a daily goal of 4 to 6 and a ceiling of 8 in any 24 hours. Neither a general ceiling nor a label warning is a required target or permission for faster correction in this patient.",
+  "reviewHref": "#sodium-water-disorders"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-026"), {
+  "id": "fluid-electrolyte-026",
+  "question": "After isotonic saline restores volume in hypovolemic hypotonic hyponatremia, urine output abruptly increases and sodium rises faster than predicted. Which mechanism best explains the change?",
+  "choices": [
+    "The hypovolemic vasopressin stimulus resolves, allowing increased electrolyte-free water excretion",
+    "Saline chemically destroys vasopressin before it reaches the kidney",
+    "Chloride moves entirely into cells and independently raises serum sodium",
+    "The saline becomes an electrolyte-free solution after its sodium is metabolized"
+  ],
+  "answer": 0,
+  "rationale": "Restoring circulation can suppress non-osmotic vasopressin release and produce water diuresis. Saline does not chemically destroy the hormone or become free water by sodium metabolism; its chloride is not entirely intracellular. Monitor sodium and urine output closely because correction can accelerate beyond the calculated saline effect.",
+  "reviewHref": "#sodium-water-disorders"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-027"), {
+  "id": "fluid-electrolyte-027",
+  "question": "A specialist selects SAMSCA for a hospitalized adult with persistent clinically significant euvolemic hyponatremia, without an urgent neurologic indication or contraindication. Which initiation safeguard follows its label?",
+  "choices": [
+    "Avoid fluid restriction in the first 24 hours, allow fluid in response to thirst and monitor sodium and volume closely",
+    "Start outside hospital if the first dose is only 15 mg",
+    "Maintain strict fluid restriction during the first day to prevent excessive correction",
+    "Add hypertonic saline automatically whenever tolvaptan is started"
+  ],
+  "answer": 0,
+  "rationale": "SAMSCA initiation and reinitiation require hospital monitoring. Restriction during the first 24 hours can increase rapid-correction risk; the label advises avoiding it and allowing thirst-directed intake. Concomitant hypertonic saline is not recommended. The approved role does not make tolvaptan an emergency treatment for serious neurologic symptoms.",
+  "reviewHref": "#sodium-water-disorders"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-028"), {
+  "id": "fluid-electrolyte-028",
+  "question": "An adult has sodium 158 mmol/L, hypotension and poor perfusion after gastrointestinal losses. What is the immediate fluid priority?",
+  "choices": [
+    "Restore circulation with an appropriate isotonic crystalloid, then plan monitored free-water replacement",
+    "Use D5W alone as equivalent durable intravascular resuscitation",
+    "Lower sodium to 140 mmol/L before addressing circulation",
+    "Avoid all sodium-containing fluid because sodium is elevated"
+  ],
+  "answer": 0,
+  "rationale": "Shock or hypotension requires isotonic saline or an appropriate balanced crystalloid to restore circulation despite hypernatremia. D5W is not equivalent durable extracellular volume support. Immediate normalization is not the initial objective. After stabilization, choose a controlled water-replacement plan that includes losses and repeat sodium measurements.",
+  "reviewHref": "#sodium-water-disorders"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-029"), {
+  "id": "fluid-electrolyte-029",
+  "question": "An adult with hypernatremia and polyuria has urine osmolality 120 mOsm/kg. Under supervised testing, desmopressin produces a substantial rise in urine osmolality and reduces urine volume. Which mechanism is most supported?",
+  "choices": [
+    "Central vasopressin deficiency causing diabetes insipidus",
+    "Complete renal resistance to vasopressin with no expected desmopressin response",
+    "SIADH causing water retention despite low effective tonicity",
+    "Normal maximal urine concentration in response to hypernatremia"
+  ],
+  "answer": 0,
+  "rationale": "Dilute urine during hypernatremia indicates impaired water conservation. A substantial concentrating response to desmopressin supports central DI; complete nephrogenic resistance would respond poorly. SIADH describes inappropriate antidiuresis during hypotonicity. The initial urine is not maximally concentrated. Partial disorders require fuller specialist interpretation.",
+  "reviewHref": "#sodium-water-disorders"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-030"), {
+  "id": "fluid-electrolyte-030",
+  "question": "For a specified water-deficit estimate, a 70 kg adult has sodium 154 mmol/L and the chosen total-body-water fraction is 0.50. Using TBW x (Na/140 − 1), which result and interpretation are correct?",
+  "choices": [
+    "3.5 L estimated deficit; ongoing losses and the monitored correction schedule still require assessment",
+    "7.0 L estimated deficit, using total body weight directly as liters of water",
+    "35 L estimated deficit, equal to the total-body-water estimate itself",
+    "3.5 L that must be infused immediately to normalize sodium"
+  ],
+  "answer": 0,
+  "rationale": "TBW = 70 x 0.50 = 35 L; 154/140 − 1 = 0.10; deficit = 35 x 0.10 = 3.5 L. Using weight directly doubles the result, and 35 L is TBW rather than deficit. The result is a simplifying estimate, not an immediate infusion order; body-water assumptions, losses, intake and serial sodium measurements still matter.",
+  "reviewHref": "#sodium-water-disorders"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-089"), {
+  "id": "fluid-electrolyte-089",
+  "question": "An adult with confirmed hypotonic hyponatremia develops a seizure plausibly related to the sodium disorder. Which response best addresses the immediate danger?",
+  "choices": [
+    "Use the local monitored hypertonic-saline emergency protocol while diagnostic assessment proceeds",
+    "Use tolvaptan first because any sodium-raising drug is equivalent in this emergency",
+    "Delay symptom-directed treatment until SIADH is fully confirmed",
+    "Give D5W to raise sodium rapidly without repeated measurements"
+  ],
+  "answer": 0,
+  "rationale": "Severe neurologic symptoms attributable to hypotonic hyponatremia require urgent controlled hypertonic saline and reassessment. SAMSCA is excluded for urgent serious neurologic indications, and a full etiologic diagnosis must not delay emergency care. D5W supplies free water and does not raise sodium as proposed; treatment requires repeated monitoring.",
+  "reviewHref": "#sodium-water-disorders"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-0810"), {
+  "id": "fluid-electrolyte-0810",
+  "question": "After isotonic resuscitation restores perfusion in a hypernatremic adult with no current congestion, which next plan best addresses the sodium disorder?",
+  "choices": [
+    "Assess duration and ongoing losses, choose suitable water replacement and adjust it using serial sodium and fluid findings",
+    "Continue isotonic boluses until sodium reaches 140 regardless of perfusion response",
+    "Give the entire calculated water deficit in one hour without considering duration",
+    "Use urine volume alone to set treatment without checking sodium again"
+  ],
+  "answer": 0,
+  "rationale": "After circulation is restored, treatment must address water balance and the correction schedule, including ongoing losses and intake. Continuing unneeded isotonic boluses can add volume and sodium; rapid unmonitored delivery ignores chronicity and risk. Urine output is useful but does not replace sodium and clinical reassessment.",
+  "reviewHref": "#sodium-water-disorders"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-097"), {
+  "id": "fluid-electrolyte-097",
+  "question": "A patient with chronic hypotonic hyponatremia, malnutrition and alcohol use disorder rises from sodium 109 to 118 mmol/L in 12 hours during treatment. What is the best next action?",
+  "choices": [
+    "Stop active correction and obtain urgent expert management of overcorrection, with frequent sodium and urine monitoring",
+    "Continue because the high-risk daily ceiling is not exceeded until the rise reaches 12 mmol/L",
+    "Treat 118 as a fresh baseline and allow a further 8 mmol/L rise",
+    "Wait for neurologic deficits before changing the correction plan"
+  ],
+  "answer": 0,
+  "rationale": "118 − 109 = 9 mmol/L in 12 hours, exceeding the high-risk maximum of 8 in any 24 hours. Stop active correction and urgently assess expert-guided relowering or prevention of further rise. Resetting the baseline or using 12 as this patient’s limit is incorrect. Neurologic injury may be delayed; do not wait for deficits to respond to the trajectory.",
+  "reviewHref": "#sodium-water-disorders"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-098"), {
+  "id": "fluid-electrolyte-098",
+  "question": "An adult has sodium 151 mmol/L, urine output 5 L/day and urine osmolality 90 mOsm/kg. Which next diagnostic approach is most appropriate?",
+  "choices": [
+    "Evaluate hypotonic water diuresis, including central or nephrogenic DI, with medication, electrolyte and specialist assessment",
+    "Diagnose central DI from the sodium value alone and disregard renal resistance",
+    "Assign SIADH because all polyuria reflects excess vasopressin activity",
+    "Assume fever-related water loss explains the dilute urine without further assessment"
+  ],
+  "answer": 0,
+  "rationale": "Polyuria with inappropriately dilute urine during hypernatremia suggests impaired renal water conservation. DI is a possibility, but distinguishing vasopressin deficiency from resistance needs fuller assessment; medication causes, potassium, calcium and other mechanisms matter. SIADH is inappropriate antidiuresis, and pure extrarenal loss normally stimulates urine concentration.",
+  "reviewHref": "#sodium-water-disorders"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-099"), {
+  "id": "fluid-electrolyte-099",
+  "question": "A stable adult develops hypotonic hyponatremia after starting an implicated medicine. Urine is concentrated and examination suggests euvolemia. What is the best next cause-directed approach?",
+  "choices": [
+    "Review and withdraw or replace the implicated medicine when feasible, while checking the full SIADH criteria and exclusions",
+    "Confirm SIADH solely from the new medicine and concentrated urine",
+    "Give isotonic saline automatically because every low sodium reflects depleted circulation",
+    "Start demeclocycline routinely because the book describes an off-label SIADH use"
+  ],
+  "answer": 0,
+  "rationale": "Medication review and cause removal are appropriate, but adrenal, thyroid, pituitary and renal disorders and diuretics must be considered before assigning SIADH. Concentrated urine is not diagnostic by itself; universal saline is inappropriate. Off-label mention does not establish a preferred therapy, and the European guideline recommends against demeclocycline in moderate or profound SIADH.",
+  "reviewHref": "#sodium-water-disorders"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-0910"), {
+  "id": "fluid-electrolyte-0910",
+  "question": "SAMSCA is proposed for a volume-depleted patient with hypotonic hyponatremia after gastrointestinal losses. Which assessment is correct?",
+  "choices": [
+    "Hypovolemic hyponatremia is a labeled contraindication; address the volume problem with monitored cause-specific care",
+    "Hospital initiation removes the hypovolemic contraindication",
+    "A 15 mg dose is permitted in any low-sodium state because it is the labeled starting dose",
+    "V2 blockade restores depleted circulating volume and prevents water diuresis"
+  ],
+  "answer": 0,
+  "rationale": "SAMSCA is contraindicated in hypovolemic hyponatremia. Hospital monitoring and a labeled dose do not override that restriction. V2 blockade increases water excretion and can worsen depletion; assess and restore volume as indicated while monitoring for aquaresis and rapid sodium correction.",
+  "reviewHref": "#sodium-water-disorders"
+});
