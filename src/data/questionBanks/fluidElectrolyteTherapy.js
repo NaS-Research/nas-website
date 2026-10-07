@@ -1436,3 +1436,135 @@ Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-elec
   "rationale": "250 mL = 0.25 L, so 154 mmol/L \u00d7 0.25 L = 38.5 mmol. 154 is the amount in one liter; 15.4 uses 0.1 L; 38,500 incorrectly treats milliliters as liters. Count the amount with other electrolyte intake; this calculation does not select an appropriate solution for a patient.",
   "reviewHref": "#calculations-monitoring"
 });
+
+// Source-reconciled phosphate questions; preserve all existing canonical IDs and items.
+{ const q = {
+  "id": "fluid-electrolyte-phosphate-route",
+  "question": "A stable adult with moderate phosphate deficiency can swallow and absorb medicines and has no severe symptoms. Which route discussion is appropriate?",
+  "choices": [
+    "IV therapy is mandatory for every low phosphate result",
+    "Consider oral replacement with follow-up, checking the product's sodium/potassium load and gastrointestinal tolerance",
+    "No laboratory follow-up is needed after oral treatment",
+    "All oral phosphate products contain identical electrolyte quantities"
+  ],
+  "answer": 1,
+  "rationale": "Oral treatment may suit a stable patient with usable gastrointestinal absorption. Diarrhea can limit tolerance; formulation and accompanying electrolyte loads still matter. IV is not mandatory for every low result, oral treatment still needs follow-up, and oral formulations are not interchangeable.",
+  "reviewHref": "#phosphate-replacement"
+}; const old = fluidElectrolyteTherapyQuestionBank.find(x => x.id === q.id); if (old) Object.assign(old, q); else fluidElectrolyteTherapyQuestionBank.push(q); }
+{ const q = {
+  "id": "fluid-electrolyte-phosphate-cause",
+  "question": "Phosphate repeatedly falls after replacement in a patient taking phosphate-binding medicines and eating very little. What should the review address?",
+  "choices": [
+    "Increase IV doses without reviewing the cause",
+    "Assume serum phosphate proves normal total-body stores",
+    "Stop all nutritional assessment once a phosphate dose is prescribed",
+    "Review reduced intake and binding medicines, plus refeeding risk as nutrition resumes"
+  ],
+  "answer": 3,
+  "rationale": "A replacement dose does not remove continuing causes. Intake, absorption, renal loss and redistribution should be assessed rather than repeatedly treating an isolated value. Increasing doses without a cause review or abandoning the nutrition assessment can leave these drivers untreated; a serum result alone does not prove adequate stores.",
+  "reviewHref": "#phosphate-replacement"
+}; const old = fluidElectrolyteTherapyQuestionBank.find(x => x.id === q.id); if (old) Object.assign(old, q); else fluidElectrolyteTherapyQuestionBank.push(q); }
+{ const q = {
+  "id": "fluid-electrolyte-phosphate-renal",
+  "question": "An adult with phosphorus 0.8 mg/dL has an eGFR of 24 mL/min/1.73 m2. An order specifies the cited potassium-phosphates concentrate. What should the pharmacist do first?",
+  "choices": [
+    "Use half the calculated dose without contacting the prescriber",
+    "Use the full dose because phosphorus is below 1 mg/dL",
+    "Hold this product and obtain an individualized replacement plan because its label contraindicates this degree of renal impairment",
+    "Give the concentrate undiluted to avoid fluid overload"
+  ],
+  "answer": 2,
+  "rationale": "The cited product is contraindicated at eGFR below 30. Choosing the low end of its dose range applies to moderate impairment, not a workaround for this contraindication. Severe hypophosphatemia still needs prompt clinical management with an appropriate alternative plan. An unapproved half dose does not resolve a contraindication, and undiluted administration is unsafe.",
+  "reviewHref": "#phosphate-replacement"
+}; const old = fluidElectrolyteTherapyQuestionBank.find(x => x.id === q.id); if (old) Object.assign(old, q); else fluidElectrolyteTherapyQuestionBank.push(q); }
+{ const q = {
+  "id": "fluid-electrolyte-phosphate-cap",
+  "question": "For a 90-kg adult whose weight is appropriate for the calculation, a verified protocol selects 0.64 mmol phosphorus/kg from the cited potassium-phosphates concentrate. What initial dose ceiling must be applied?",
+  "choices": [
+    "57.6 mmol because weight-based dosing overrides the maximum",
+    "45 mmol phosphorus",
+    "66 mmol phosphorus",
+    "90 mmol phosphorus"
+  ],
+  "answer": 1,
+  "rationale": "90 x 0.64 = 57.6 mmol before the cap. The cited label limits an initial or single dose to 45 mmol phosphorus, which accompanies 66 mEq potassium with this formulation. Eligibility, rate, access and monitoring must still be checked. Neither 66 nor 90 mmol is the phosphorus ceiling; 66 is the accompanying potassium amount in mEq.",
+  "reviewHref": "#phosphate-replacement"
+}; const old = fluidElectrolyteTherapyQuestionBank.find(x => x.id === q.id); if (old) Object.assign(old, q); else fluidElectrolyteTherapyQuestionBank.push(q); }
+{ const q = {
+  "id": "fluid-electrolyte-phosphate-access",
+  "question": "An adult order for review contains 18 mmol phosphorus from the cited potassium-phosphates concentrate in a FINAL volume of 150 mL over 3 hours through a peripheral line. Which concentration-and-rate assessment is correct?",
+  "choices": [
+    "Both concentration and rate fit the cited peripheral limits",
+    "Only the infusion rate exceeds the peripheral limit",
+    "Changing to a 6-hour infusion fixes the concentration problem",
+    "The rate fits, but the concentration exceeds the peripheral limit; revise the preparation or access before administration"
+  ],
+  "answer": 3,
+  "rationale": "18/3 = 6 mmol/hour, below 6.8 mmol/hour. However, 18/150 x 100 = 12 mmol/100 mL, above 6.8 mmol/100 mL. A slower infusion does not dilute the bag. Pharmacy must reconcile concentration, fluid tolerance and access rather than approve from rate alone. Potassium delivery is 8.8 mEq/hour, while its concentration is 17.6 mEq/100 mL, also above the cited peripheral concentration ceiling. This comparison does not establish eligibility, compatibility or stability for the entire preparation and administration interval.",
+  "reviewHref": "#phosphate-replacement"
+}; const old = fluidElectrolyteTherapyQuestionBank.find(x => x.id === q.id); if (old) Object.assign(old, q); else fluidElectrolyteTherapyQuestionBank.push(q); }
+{ const q = {
+  "id": "fluid-electrolyte-phosphate-load",
+  "question": "A reviewed product contains 3 mmol phosphorus/mL and 4.4 mEq potassium/mL. Which quantities accompany a specified 30 mmol phosphorus dose?",
+  "choices": [
+    "10 mL concentrate and 44 mEq potassium",
+    "30 mL concentrate and 44 mEq potassium",
+    "10 mL concentrate and 30 mEq potassium",
+    "10 mL concentrate and 13.2 mEq potassium"
+  ],
+  "answer": 0,
+  "rationale": "30 \u00f7 3 = 10 mL; 10 \u00d7 4.4 = 44 mEq potassium. Thirty mL would contain 90 mmol phosphorus; 30 mEq incorrectly equates phosphorus mmol with potassium mEq; 13.2 multiplies the two concentration numbers without using the required volume. Verify the actual formulation, eligibility, dilution and clinical plan before administration.",
+  "reviewHref": "#phosphate-replacement"
+}; const old = fluidElectrolyteTherapyQuestionBank.find(x => x.id === q.id); if (old) Object.assign(old, q); else fluidElectrolyteTherapyQuestionBank.push(q); }
+{ const q = {
+  "id": "fluid-electrolyte-phosphate-sodium",
+  "question": "The cited sodium-phosphates concentrate provides 3 mmol phosphorus/mL and 4 mEq sodium/mL. What accompanies a specified 30 mmol phosphorus dose?",
+  "choices": [
+    "10 mL and 30 mEq sodium",
+    "30 mL and 120 mEq sodium",
+    "10 mL and 40 mEq sodium",
+    "10 mL and 44 mEq sodium"
+  ],
+  "answer": 2,
+  "rationale": "30 \u00f7 3 = 10 mL and 10 \u00d7 4 = 40 mEq sodium. Thirty mEq confuses the phosphorus dose with sodium; 30 mL would deliver 90 mmol phosphorus; 44 mEq borrows a different potassium-phosphates formulation. Avoiding potassium does not eliminate sodium, renal, calcium or fluid risks.",
+  "reviewHref": "#phosphate-replacement"
+}; const old = fluidElectrolyteTherapyQuestionBank.find(x => x.id === q.id); if (old) Object.assign(old, q); else fluidElectrolyteTherapyQuestionBank.push(q); }
+{ const q = {
+  "id": "fluid-electrolyte-phosphate-dose",
+  "question": "An individualized review has selected 0.32 mmol phosphorus/kg for an eligible adult with a specified appropriate 40 kg dosing weight. What is the calculated phosphorus dose before other administration checks?",
+  "choices": [
+    "128 mmol",
+    "12.8 mmol",
+    "40 mmol",
+    "0.8 mmol"
+  ],
+  "answer": 1,
+  "rationale": "40 kg \u00d7 0.32 mmol/kg = 12.8 mmol phosphorus. The 128 result is a decimal error; 40 uses the weight as the dose; 0.8 does not follow multiplication with the stated units. The question supplies a reviewed factor and weight rather than selecting them automatically from age or one laboratory result. Still check product eligibility, cap, companion electrolyte, preparation, access and monitoring.",
+  "reviewHref": "#phosphate-replacement"
+}; const old = fluidElectrolyteTherapyQuestionBank.find(x => x.id === q.id); if (old) Object.assign(old, q); else fluidElectrolyteTherapyQuestionBank.push(q); }
+{ const q = {
+  "id": "fluid-electrolyte-phosphate-compatibility",
+  "question": "Which statement correctly applies the cited potassium-phosphates concentrate\u2019s calcium precautions?",
+  "choices": [
+    "A clear bag proves calcium compatibility for any shared infusion",
+    "A single pump makes calcium co-infusion compatible",
+    "Because PN can contain both ions, IV replacement may always share calcium-containing fluids",
+    "Do not co-infuse with calcium-containing IV fluids; a compounded PN formula needs a separate pharmacy compatibility and stability review"
+  ],
+  "answer": 3,
+  "rationale": "The replacement label prohibits infusion with calcium-containing IV fluids. PN admixture requires a separate formulation-specific assessment of calcium-phosphate compatibility and stability. Appearance and pump arrangement cannot prove compatibility, and permission to compound an assessed PN formula does not authorize unrestricted co-infusion.",
+  "reviewHref": "#phosphate-replacement"
+}; const old = fluidElectrolyteTherapyQuestionBank.find(x => x.id === q.id); if (old) Object.assign(old, q); else fluidElectrolyteTherapyQuestionBank.push(q); }
+{ const q = {
+  "id": "fluid-electrolyte-phosphate-refeeding",
+  "question": "Phosphate falls as nutrition resumes after prolonged inadequate intake. Which response addresses the broader risk?",
+  "choices": [
+    "Treat the isolated phosphate result and omit the nutrition history",
+    "Stop monitoring potassium and magnesium once phosphate is prescribed",
+    "Coordinate nutrition, thiamine, fluid and electrolyte assessment and monitoring under a refeeding plan",
+    "Assume one IV replacement dose prevents every subsequent electrolyte fall"
+  ],
+  "answer": 2,
+  "rationale": "Refeeding risk requires coordinated nutrition support and assessment of fluid, thiamine and multiple electrolytes. A phosphate dose alone does not remove continuing redistribution or other causes. Omitting the history or other electrolyte monitoring and assuming one dose prevents further falls leaves the broader risk unaddressed.",
+  "reviewHref": "#phosphate-replacement"
+}; const old = fluidElectrolyteTherapyQuestionBank.find(x => x.id === q.id); if (old) Object.assign(old, q); else fluidElectrolyteTherapyQuestionBank.push(q); }

@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-07T16:21:51.503687+00:00",
+  "updated": "2026-10-07T16:57:53.193454+00:00",
   "status": "working",
   "sourcePolicy": {
     "educational": "Supplied RxPrep 2023 book remains primary; explicit user approval on 2026-10-01 authorizes the existing official ASPEN, USP, FDA and CDC references for remaining PN clinical and safety claims. Explicit human approval on 2026-10-02 authorizes primary neonatal and pediatric renal nutrition guidelines for the retained pediatric PN water-loss, GIR/brain, CKRT/catabolism/wound protein claims, and primary ASPEN/SCCM enteral clinical guidance plus FDA guidance/product labeling for the unfinished EN audit. Direct human approval on2026-10-04 authorizes the National Academies2005Water reference for EN031 and the retained renal-solute concept only. Directhumanapproval I giveapproval authorizesthe specificallyrequestedEndocrineSocietyprimary-adrenal-insufficiency andSCCM/ASHPstress-ulcer-prophylaxisguidance forretainedadultsteroidtransition andfeeding-relatedICUquestions only;fullsourceverificationbeforeadoptionremainsrequired. Direct human approval \"I give approval\" authorizes the specifically requested KDIGO2017 CKD-MBD, Endocrine Society hypercalcemia-of-malignancy, and Society for Endocrinology acute hypocalcemia/hypercalcemia sources for retained calcium claims; source review remains required before adoption. Direct human approval authorizes additional official guidelines,FDA labels and primary academic clinical references where the supplied book does not verify retained claims;current ESE2025 and academic mineral/dialysis sources used with full relevant source review.",
@@ -88,8 +88,8 @@
     "dependencyChapter": 11,
     "dependencyPrintedPage": 150,
     "dependencyPdfPage": 158,
-    "sectionAudit": "Final11 whole calculations/administration/monitoring bodies, all metadata, full check/fourchoices, retained monitoring loop,20wholebankquestions/80choices and2derivedwholecumulativequestions/8choices compared with book158/715/717, current official NICE sections/Table2 and actual KCl concentrate label. Book PN method distinguished from NICE adult maintenance; all intake, loss, weight, unit, rate, monitoring and stop-point assumptions explicit.19Decimal computations independently recomputed.100stable IDs/keys/anchors/order,other80bankitems,fivepreviouslessons,231othermodules and1178other cumulativeobjects exact. Parent and whole goal remain open.",
-    "nextAction": "Continue the fluid parent with the planned phosphate-replacement dependency and parent metadata/bibliography and broader question coverage. Preserve and review existing phosphate drafts before any scoped integration. Chapter1 printed7/PDF19 entry15 determining fluid needs remains the frontier; Chapter11 remains open. Use the managed external Learn lifecycle.",
+    "sectionAudit": "All13wholephosphatebodies,metadata,keypoints,fullcheck/fourchoices,conceptfigure and10wholequestions/40choices plus2newderivedwholequestions/8choices reconciled with suppliedbook717,currentactual concentrate PIs,NICE refeeding/monitoring and primary clinical review.16Decimal computations independently recomputed. Stable previously committed100bankobjects,sixlessons,1180cumulativeobjects and231othermodules exact;fiveprior cumulative origins explicitly pinned before adding two phosphate origins. Parent metadata,bibliography and broader question closure remainopen.",
+    "nextAction": "Complete fluid parent metadata/bibliography and broader associated question dependencies before whole-parent closure. Chapter1printed7/PDF19entry15 remains frontier;Chapter11 remainsopen. Use managedexternalLearnlifecycle.",
     "nextDependencyPrintedPage": 161,
     "nextDependencyPdfPage": 169
   },
@@ -103,13 +103,10 @@
   },
   "release": {
     "branch": "audit/rxprep-content-2026-09-24",
-    "baseCommit": "a8c0c66d99a78a26c9768f81039e10842344663a",
-    "commit": "fa2b9c6f145d6a00d845f8067c4be49cd74edaab",
-    "push": "verified",
-    "receipt": "fluid-calculations-monitoring-release.json",
-    "remoteHashObserved": "fa2b9c6f145d6a00d845f8067c4be49cd74edaab",
-    "exactRemoteObservedByTool": true,
-    "remoteVerifiedAt": "2026-10-07T16:22:01.257004+00:00",
+    "baseCommit": "a89650f68aa25f025121d6232d4af01c0a4b1717",
+    "commit": null,
+    "push": "pending",
+    "receipt": "phosphate-replacement-release.json",
     "mainMerge": "not performed",
     "production": "not verified"
   },
@@ -179,10 +176,10 @@
       "total": 232,
       "moduleCountPercent": 28.45
     },
-    "interpretation": "Six currently committed fluid lessons reviewed; planned phosphate dependency and parent/broader completion still open.66/232wholemodules and7/82wholechapters unchanged; no weighted overall estimate.",
-    "checkedAt": "2026-10-07T16:21:51.503687+00:00"
+    "interpretation": "Seven fluidlesson scopedreviews complete;wholeparent metadata,bibliography andbroader dependencies open.66/232wholemodules and7/82wholechapters unchanged.",
+    "checkedAt": "2026-10-07T16:57:53.193454+00:00"
   },
-  "lastVerifiedLogicalUnit": "Whole fluid calculations-monitoring lesson:11bodies,fullcheck,conceptfigure,20wholequestions80choices and2derivedcumulativewholequestions8choices",
+  "lastVerifiedLogicalUnit": "Whole phosphate-replacement lesson13bodies,fullcheck,figure,10wholebankquestions40choices and2newderivedwholequestions8choices",
   "lastVerifiedSections": {
     "enteral-nutrition": {
       "evidence": "enteral-nutrition-renal-solute-review.json",
@@ -15479,12 +15476,12 @@
   },
   "latestGoalContinuationAudit": {
     "currentTurnClassification": "progress",
-    "currentTurnEvidence": "Whole magnesium and fluid calculations units verified through managed external Learn controls; prior archives fully reopened and hashed.",
+    "currentTurnEvidence": "Whole phosphate unit verified through managed external Learn controls;prior calculations archive independently reopened/hashed.",
     "genuineBlocker": false,
     "consecutiveImpasseTurns": 0,
     "wholeGoalComplete": false,
-    "nextAction": "Continue the fluid parent with the planned phosphate-replacement dependency and parent metadata/bibliography and broader question coverage. Preserve and review existing phosphate drafts before any scoped integration. Chapter1 printed7/PDF19 entry15 determining fluid needs remains the frontier; Chapter11 remains open. Use the managed external Learn lifecycle.",
-    "goalToolState": "Original82chapter objective active."
+    "nextAction": "Complete fluid parent metadata/bibliography and broader associated question dependencies before whole-parent closure. Chapter1printed7/PDF19entry15 remains frontier;Chapter11 remainsopen. Use managedexternalLearnlifecycle.",
+    "goalToolState": "Original82chapterobjectiveactive."
   },
   "latestPediatricPnMaintenanceFluidReview": {
     "evidence": "pediatric-parenteral-nutrition-maintenance-fluid-review.json",
@@ -32131,6 +32128,70 @@
       "remoteHashObserved": "fa2b9c6f145d6a00d845f8067c4be49cd74edaab",
       "exactRemoteObservedByTool": true,
       "remoteVerifiedAt": "2026-10-07T16:22:01.257004+00:00",
+      "mainMerge": "not performed",
+      "production": "not verified"
+    }
+  },
+  "latestPhosphateReplacementReview": {
+    "evidence": "phosphate-replacement-review.json",
+    "wholeParentModuleVerified": false,
+    "wholeGoalComplete": false,
+    "wholeLessonKeys": [
+      "phosphate-replacement"
+    ],
+    "wholeTeachingBodies": 13,
+    "wholeEmbeddedChecks": 1,
+    "embeddedChoices": 4,
+    "wholeFigures": 1,
+    "wholeBankQuestions": 10,
+    "wholeBankChoices": 40,
+    "wholeBankQuestionIds": [
+      "fluid-electrolyte-phosphate-route",
+      "fluid-electrolyte-phosphate-cause",
+      "fluid-electrolyte-phosphate-renal",
+      "fluid-electrolyte-phosphate-cap",
+      "fluid-electrolyte-phosphate-access",
+      "fluid-electrolyte-phosphate-load",
+      "fluid-electrolyte-phosphate-sodium",
+      "fluid-electrolyte-phosphate-dose",
+      "fluid-electrolyte-phosphate-compatibility",
+      "fluid-electrolyte-phosphate-refeeding"
+    ],
+    "derivedCumulativeWholeObjects": 2,
+    "derivedCumulativeChoices": 8,
+    "newCanonicalQuestionIds": [
+      "fluid-electrolyte-phosphate-route",
+      "fluid-electrolyte-phosphate-cause",
+      "fluid-electrolyte-phosphate-renal",
+      "fluid-electrolyte-phosphate-cap",
+      "fluid-electrolyte-phosphate-access",
+      "fluid-electrolyte-phosphate-load",
+      "fluid-electrolyte-phosphate-sodium",
+      "fluid-electrolyte-phosphate-dose",
+      "fluid-electrolyte-phosphate-compatibility",
+      "fluid-electrolyte-phosphate-refeeding"
+    ],
+    "draftQuestionIdsReused": 5,
+    "newUniqueIdsBeyondPreservedDraft": 5,
+    "parentBankQuestions": 110,
+    "parentBodies": 84,
+    "parentReferences": 38,
+    "prior100BankObjectsExact": true,
+    "priorSixLessonsExact": true,
+    "prior1180CumulativeObjectsExact": true,
+    "other231ModuleObjectsExact": true,
+    "committedWholeModulesVerifiedAfter": 66,
+    "committedWholeModulesTotal": 232,
+    "moduleCountPercent": 28.45,
+    "chaptersVerifiedAfter": 7,
+    "chapterTotal": 82,
+    "chapterCountPercent": 8.54,
+    "release": {
+      "branch": "audit/rxprep-content-2026-09-24",
+      "baseCommit": "a89650f68aa25f025121d6232d4af01c0a4b1717",
+      "commit": null,
+      "push": "pending",
+      "receipt": "phosphate-replacement-release.json",
       "mainMerge": "not performed",
       "production": "not verified"
     }

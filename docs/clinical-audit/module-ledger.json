@@ -68,6 +68,12 @@
           "evidence": "magnesium-disorders-review.json"
         },
         {
+          "slug": "phosphate-replacement",
+          "title": "Phosphate Replacement and Salt Selection",
+          "status": "verified",
+          "evidence": "phosphate-replacement-review.json"
+        },
+        {
           "slug": "calculations-monitoring",
           "status": "verified",
           "evidence": "fluid-calculations-monitoring-review.json"
@@ -82,7 +88,8 @@
         "sodium-water-disorders-review.json",
         "potassium-disorders-review.json",
         "magnesium-disorders-review.json",
-        "fluid-calculations-monitoring-review.json"
+        "fluid-calculations-monitoring-review.json",
+        "phosphate-replacement-review.json"
       ],
       "latestFluidIntakeLossReview": {
         "evidence": "enteral-nutrition-broader-fluid-intake-loss-review.json",
@@ -494,6 +501,70 @@
           "remoteHashObserved": "fa2b9c6f145d6a00d845f8067c4be49cd74edaab",
           "exactRemoteObservedByTool": true,
           "remoteVerifiedAt": "2026-10-07T16:22:01.257004+00:00",
+          "mainMerge": "not performed",
+          "production": "not verified"
+        }
+      },
+      "latestPhosphateReplacementReview": {
+        "evidence": "phosphate-replacement-review.json",
+        "wholeParentModuleVerified": false,
+        "wholeGoalComplete": false,
+        "wholeLessonKeys": [
+          "phosphate-replacement"
+        ],
+        "wholeTeachingBodies": 13,
+        "wholeEmbeddedChecks": 1,
+        "embeddedChoices": 4,
+        "wholeFigures": 1,
+        "wholeBankQuestions": 10,
+        "wholeBankChoices": 40,
+        "wholeBankQuestionIds": [
+          "fluid-electrolyte-phosphate-route",
+          "fluid-electrolyte-phosphate-cause",
+          "fluid-electrolyte-phosphate-renal",
+          "fluid-electrolyte-phosphate-cap",
+          "fluid-electrolyte-phosphate-access",
+          "fluid-electrolyte-phosphate-load",
+          "fluid-electrolyte-phosphate-sodium",
+          "fluid-electrolyte-phosphate-dose",
+          "fluid-electrolyte-phosphate-compatibility",
+          "fluid-electrolyte-phosphate-refeeding"
+        ],
+        "derivedCumulativeWholeObjects": 2,
+        "derivedCumulativeChoices": 8,
+        "newCanonicalQuestionIds": [
+          "fluid-electrolyte-phosphate-route",
+          "fluid-electrolyte-phosphate-cause",
+          "fluid-electrolyte-phosphate-renal",
+          "fluid-electrolyte-phosphate-cap",
+          "fluid-electrolyte-phosphate-access",
+          "fluid-electrolyte-phosphate-load",
+          "fluid-electrolyte-phosphate-sodium",
+          "fluid-electrolyte-phosphate-dose",
+          "fluid-electrolyte-phosphate-compatibility",
+          "fluid-electrolyte-phosphate-refeeding"
+        ],
+        "draftQuestionIdsReused": 5,
+        "newUniqueIdsBeyondPreservedDraft": 5,
+        "parentBankQuestions": 110,
+        "parentBodies": 84,
+        "parentReferences": 38,
+        "prior100BankObjectsExact": true,
+        "priorSixLessonsExact": true,
+        "prior1180CumulativeObjectsExact": true,
+        "other231ModuleObjectsExact": true,
+        "committedWholeModulesVerifiedAfter": 66,
+        "committedWholeModulesTotal": 232,
+        "moduleCountPercent": 28.45,
+        "chaptersVerifiedAfter": 7,
+        "chapterTotal": 82,
+        "chapterCountPercent": 8.54,
+        "release": {
+          "branch": "audit/rxprep-content-2026-09-24",
+          "baseCommit": "a89650f68aa25f025121d6232d4af01c0a4b1717",
+          "commit": null,
+          "push": "pending",
+          "receipt": "phosphate-replacement-release.json",
           "mainMerge": "not performed",
           "production": "not verified"
         }

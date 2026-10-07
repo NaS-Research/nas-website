@@ -739,3 +739,98 @@ Object.assign(fluidElectrolyteTherapyModule.submodules.find(s => s.slug === "cal
     "reviewHref": "#calculations-monitoring"
   }
 });
+
+// Source-reconciled phosphate lesson; retain all prior lessons and cumulative origins.
+{ const lesson = {
+  "slug": "phosphate-replacement",
+  "title": "Phosphate Replacement and Salt Selection",
+  "summary": "A phosphate prescription also delivers another electrolyte. Check the complete formulation before choosing the dose.",
+  "concepts": [
+    "Phosphorus dose",
+    "Potassium load",
+    "Renal restrictions",
+    "Repeat laboratory assessment"
+  ],
+  "visual": "phosphate",
+  "application": "Write both the phosphorus amount and the accompanying electrolyte load in the replacement plan.",
+  "lesson": [
+    {
+      "heading": "Recognize the deficit and its cause",
+      "body": "Assess symptoms alongside the phosphorus result. Severe depletion can cause marked weakness and respiratory failure; the book describes severe hypophosphatemia below 1 mg/dL. Causes include reduced intake or absorption, phosphate-binding medicines, alcohol-related illness, renal phosphate loss and movement into cells during refeeding. Hyperparathyroidism can contribute to renal loss. A serum concentration alone does not establish total-body stores. Review associated potassium and magnesium deficits and address ongoing causes rather than repeatedly treating an isolated result."
+    },
+    {
+      "heading": "Select the route for the patient",
+      "body": "Stable patients with less severe deficiency and usable gastrointestinal absorption may be managed with oral replacement and follow-up. Oral phosphate can cause diarrhea, and sodium and potassium content vary by product. Severe symptoms, major depletion, critical illness or inability to use an adequate oral or enteral route may require monitored IV treatment. The cited potassium-phosphates concentrate is labeled for correction when oral or enteral replacement is impossible, insufficient or contraindicated. Route selection requires clinical judgment; every low result does not mandate IV therapy."
+    },
+    {
+      "heading": "Connect replacement with the refeeding plan",
+      "body": "When nutrition resumes after inadequate intake, phosphate, potassium and magnesium can fall as metabolism changes. Review the nutrition history and other refeeding risk factors rather than assuming one replacement dose solves the problem. At-risk nutrition support needs coordinated feeding, thiamine provision, fluid assessment and electrolyte monitoring under an appropriate clinical plan. NICE CG32 links low baseline phosphorus, potassium or magnesium with refeeding risk. Arrange a complete, individualized nutrition-support plan for refeeding risk."
+    },
+    {
+      "heading": "Read the actual concentrate label",
+      "body": "The cited Civica and Fresenius Kabi potassium-phosphates concentrates provide 3 mmol phosphorus and 4.4 mEq potassium per mL. They require dilution or admixture before infusion; never administer an undiluted vial or IV push. The label specifies normal saline or D5W for dilution in IV replacement. Product name alone does not establish the accompanying potassium content, presentation or administration rules. Verify the actual product and account for other phosphorus and potassium sources; do not borrow a different concentrate or premixed bag\u2019s instructions."
+    },
+    {
+      "heading": "Calculate both electrolyte quantities",
+      "body": "For this specified 3 mmol/mL phosphorus and 4.4 mEq/mL potassium concentrate, 30 mmol phosphorus requires 30 \u00f7 3 = 10 mL and supplies 10 \u00d7 4.4 = 44 mEq potassium. At 15 mmol phosphorus, the corresponding 5 mL supplies 22 mEq potassium. Millimoles of phosphorus are not interchangeable with milliequivalents of potassium. State both amounts in the review; these calculations do not by themselves authorize the dose, dilution or infusion."
+    },
+    {
+      "heading": "Check eligibility before selecting a dose",
+      "body": "Check renal function, serum potassium and calcium and the full product eligibility criteria before administration; normalize calcium as directed by the label. The cited potassium-phosphates concentrate is contraindicated with hyperkalemia, hyperphosphatemia, hypercalcemia, significant hypocalcemia, eGFR below 30 mL/min/1.73 m\u00b2 or end-stage renal disease. At eGFR 30 to below 60, start at the low end of its dose range. That adjustment is not a workaround for a contraindication. Resolve discrepancies in laboratory units or product instructions with pharmacy and the prescriber before approval. Review medicines that raise potassium and all other potassium sources."
+    },
+    {
+      "heading": "Apply the product-specific initial dose range and cap",
+      "body": "For adult IV replacement, the cited concentrate\u2019s general initial or single-dose ranges are 0.16 to 0.31 mmol phosphorus/kg at phosphorus 1.8 mg/dL to the lower reference limit, 0.32 to 0.43 mmol/kg at 1 to 1.7 mg/dL, and 0.44 to 0.64 mmol/kg below 1 mg/dL. Use the actual assay\u2019s reference range and individualize the factor. The label uses actual body weight and suggests considering adjusted weight when substantially above ideal weight. Cap an initial or single dose at 45 mmol phosphorus, accompanying 66 mEq potassium. For a specified appropriate 90 kg weight and selected 0.64 mmol/kg factor, 57.6 mmol before the cap does not override that ceiling."
+    },
+    {
+      "heading": "Keep book examples and product instructions in context",
+      "body": "The supplied book describes a lower weight-based IV phosphate example diluted over six hours. This older teaching example is not the same as the current product\u2019s severity-based ranges, dose cap, access limits or renal contraindications. Neither example is a universal regimen, and this lesson does not authorize direct substitution between them. Use the actual formulation, current approved local protocol and patient-specific review. Published adult IV studies vary in dose and response and do not establish one replacement regimen for every patient."
+    },
+    {
+      "heading": "Check concentration and delivery rate separately",
+      "body": "For adults, the cited potassium-phosphates labels give maximum peripheral concentration of 6.8 mmol phosphorus/100 mL, accompanying 10 mEq potassium/100 mL, and maximum peripheral rate of 6.8 mmol phosphorus/hour, accompanying 10 mEq potassium/hour. Central limits are 18 mmol phosphorus/100 mL with 26.4 mEq potassium/100 mL, and 15 mmol phosphorus/hour with 22 mEq potassium/hour. These are product-specific ceilings, not default targets or pediatric instructions. For an adult potassium rate above 10 mEq/hour, the labels recommend central access and continuous ECG monitoring. Verify the final preparation, access, fluid tolerance and clinical monitoring independently of dose arithmetic."
+    },
+    {
+      "heading": "Work both checks for the final preparation",
+      "body": "A specified 18 mmol phosphorus dose in a FINAL 150 mL volume over three hours delivers 6 mmol phosphorus/hour and 8.8 mEq potassium/hour. Concentration is 12 mmol phosphorus/100 mL with 17.6 mEq potassium/100 mL. The rates fit the cited adult peripheral ceilings, but the concentrations exceed them. Slowing the infusion reduces the rates without changing either concentration. Revise the preparation or access through clinical and pharmacy review before administration; recommended diluent volumes cannot replace a concentration check. Compatibility and the actual product\u2019s stability limit also need review for the entire planned preparation and administration interval."
+    },
+    {
+      "heading": "Calculate the sodium alternative without assuming safety",
+      "body": "The cited Glenmark sodium-phosphates concentrate provides 3 mmol phosphorus and 4 mEq sodium per mL. A specified 30 mmol phosphorus dose requires 10 mL and contributes 40 mEq sodium. Avoiding potassium does not eliminate risk: the label contraindicates hypernatremia and conditions with high phosphorus or low calcium, and calls for particular caution with sodium retention, heart failure or severe renal impairment. It requires dilution and mixing. Review sodium, phosphorus, calcium and the patient\u2019s fluid tolerance; the potassium product\u2019s dose and administration ceilings cannot automatically be assigned to this formulation."
+    },
+    {
+      "heading": "Distinguish calcium co-infusion from PN compatibility",
+      "body": "Do not infuse the cited potassium-phosphates product with calcium-containing IV fluids. A clear-looking solution or a shared pump does not establish compatibility. Adding calcium and phosphate within a compounded PN formulation is a separate pharmacy compatibility and stability assessment, influenced by pH, temperature and the relative ion concentrations. Excess addition can form calcium-phosphate precipitates and cause serious harm. Check the full formulation and inspect as directed; PN admixture instructions do not authorize calcium co-infusion during replacement."
+    },
+    {
+      "heading": "Reassess before another dose",
+      "body": "Monitor phosphorus, potassium, calcium and magnesium with renal function and the clinical response. Before additional potassium-phosphates doses, assess the patient, obtain phosphorus, calcium and potassium levels, and adjust the plan. Severe or unstable illness and IV replacement may need checks more often than routine nutrition monitoring. NICE CG32 calls for baseline magnesium and phosphate and daily checks with refeeding risk, followed by reduced frequency when stable; that schedule is not an adequate universal rule for acute severe replacement. Review recurrent causes and all ongoing electrolyte sources. Pulmonary distress during the infusion requires stopping it and prompt medical evaluation under the product instructions."
+    }
+  ],
+  "keyPoints": [
+    "Match the route and product to the patient and cause.",
+    "Calculate phosphorus and the accompanying potassium or sodium separately.",
+    "Check eligibility, the initial dose cap, final concentration and delivery rate.",
+    "Slowing an infusion does not dilute its preparation.",
+    "Keep calcium co-infusion restrictions separate from compounded PN compatibility.",
+    "Reassess the clinical response and laboratory results before repeating."
+  ],
+  "check": {
+    "question": "A concentrate contains 3 mmol phosphorus/mL and 4.4 mEq potassium/mL. How much potassium accompanies 15 mmol phosphorus?",
+    "choices": [
+      "5 mEq",
+      "15 mEq",
+      "22 mEq",
+      "66 mEq"
+    ],
+    "answer": 2,
+    "rationale": "15 mmol phosphorus \u00f7 3 mmol/mL = 5 mL; 5 mL \u00d7 4.4 mEq potassium/mL = 22 mEq potassium. Five is the vial volume, not the potassium amount; 15 confuses the phosphorus dose with potassium, and 66 mEq accompanies 45 mmol phosphorus. This arithmetic does not authorize administration without product and patient checks.",
+    "reviewHref": "#phosphate-replacement"
+  }
+}; const old = fluidElectrolyteTherapyModule.submodules.findIndex(s => s.slug === lesson.slug); if (old >= 0) fluidElectrolyteTherapyModule.submodules[old] = lesson; else fluidElectrolyteTherapyModule.submodules.splice(fluidElectrolyteTherapyModule.submodules.findIndex(s => s.slug === "calculations-monitoring"), 0, lesson); }
+fluidElectrolyteTherapyModule.cumulativeQuestionIds = ["fluid-electrolyte-001", "fluid-electrolyte-026", "fluid-electrolyte-051", "fluid-electrolyte-075", "fluid-electrolyte-0910", "fluid-electrolyte-phosphate-load", "fluid-electrolyte-phosphate-access"];
+if (!fluidElectrolyteTherapyModule.references.some(r => r.href === "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f7702b2f-d0d1-4696-896d-571607fc0dc8")) fluidElectrolyteTherapyModule.references.push({"label": "Civica potassium-phosphates concentrate prescribing information, revised April 2026", "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f7702b2f-d0d1-4696-896d-571607fc0dc8"});
+if (!fluidElectrolyteTherapyModule.references.some(r => r.href === "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=475f5cd7-45bd-412a-b419-9962585d6cda")) fluidElectrolyteTherapyModule.references.push({"label": "Fresenius Kabi potassium-phosphates concentrate prescribing information, revised February 2025", "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=475f5cd7-45bd-412a-b419-9962585d6cda"});
+if (!fluidElectrolyteTherapyModule.references.some(r => r.href === "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c968f70b-a670-4aef-a7e0-89468ad62d9c")) fluidElectrolyteTherapyModule.references.push({"label": "Glenmark sodium-phosphates concentrate prescribing information, revised January 2026", "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c968f70b-a670-4aef-a7e0-89468ad62d9c"});
+if (!fluidElectrolyteTherapyModule.references.some(r => r.href === "https://pmc.ncbi.nlm.nih.gov/articles/PMC3319220/")) fluidElectrolyteTherapyModule.references.push({"label": "Imel and Econs 2012: approach to the hypophosphatemic patient", "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3319220/"});
+if (!fluidElectrolyteTherapyModule.references.some(r => r.href === "https://www.nice.org.uk/guidance/cg32/chapter/Recommendations")) fluidElectrolyteTherapyModule.references.push({"label": "NICE CG32: nutrition support, refeeding risk and biochemical monitoring", "href": "https://www.nice.org.uk/guidance/cg32/chapter/Recommendations"});

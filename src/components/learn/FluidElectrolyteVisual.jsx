@@ -19,6 +19,10 @@ const visualCopy = {
     title: "Connect concentration to physiology",
     note: "Symptoms, kidney function, potassium, calcium, and cardiac rhythm determine the urgency and safety of treatment.",
   },
+  phosphate: {
+    title: "Read both electrolyte quantities",
+    note: "Match the calculation to the actual product concentration.",
+  },
   monitoring: {
     title: "Prescribe a feedback loop",
     note: "The monitoring interval must match the acuity, intervention, and risk of overshoot.",
@@ -69,6 +73,10 @@ export default function FluidElectrolyteVisual({ type }) {
         <div><span>Deficit</span><strong>Find the cause</strong><small>Intake, gastrointestinal loss, medicine exposure, or renal wasting</small></div>
         <div><span>Replace</span><strong>Match route to urgency</strong><small>Oral for stable deficiency, IV for severe symptoms or selected arrhythmias</small></div>
         <div><span>Excess</span><strong>Protect and remove</strong><small>Stop exposure, use IV calcium for toxicity, and assess elimination</small></div>
+      </div>}
+
+      {type === "phosphate" && <div className="fluid-visual__steps">
+        {[['01', 'Phosphorus', 'Prescribed in mmol'], ['02', 'Companion electrolyte', 'Count potassium or sodium separately'], ['03', 'Administration', 'Verify concentration, rate, compatibility, and access'], ['04', 'Reassessment', 'Clinical response and repeat laboratory results']].map(([n, label, text]) => <div key={label}><span>{n}</span><strong>{label}</strong><small>{text}</small></div>)}
       </div>}
 
       {type === "monitoring" && <div className="fluid-visual__loop">
