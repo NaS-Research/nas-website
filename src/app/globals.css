@@ -10774,3 +10774,19 @@ summary:focus-visible {
   color: #b8b3ad;
   line-height: 1.5;
 }
+
+/* Scoped beta-2 book citation: match linked bibliography spacing and contrast. */
+.pharmacy-module-layout:has(#beta2-agonist-therapy) .pharmacy-module-references li > span {
+  display: inline-block;
+  width: calc(100% - 2rem);
+  padding: 1.15rem 0 1.15rem 1rem;
+  color: #b8b3ad;
+  line-height: 1.5;
+  vertical-align: top;
+}
+.pharmacy-module-layout:has(#beta2-agonist-therapy) .pharmacy-module-references li > p {
+  margin: -0.6rem 0 1.15rem;
+  padding-inline: 2rem 1rem;
+  color: #b8b3ad;
+  line-height: 1.5;
+}

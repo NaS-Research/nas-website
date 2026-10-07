@@ -127,3 +127,98 @@ export const adrenergicAgonistsModule = {
   ],
   questionBank: adrenergicAgonistsQuestionBank,
 };
+
+// Beta-2 bronchodilator lesson: product, airway, and potassium review.
+Object.assign(adrenergicAgonistsModule.submodules.find((lesson) => lesson.slug === "beta2-agonist-therapy"), {
+  "slug": "beta2-agonist-therapy",
+  "title": "Beta-2 Agonist Therapy",
+  "summary": "Connect airway beta-2 signaling to relief of bronchospasm, then separate product technique, anti-inflammatory disease control, potassium redistribution, and immediate treatment hazards.",
+  "concepts": [
+    "Albuterol and R-enantiomer levalbuterol",
+    "Reliever, maintenance, and ICS-formoterol roles",
+    "Product-specific preparation and technique",
+    "Potassium redistribution, diuretics, and lactate"
+  ],
+  "visual": "adr-beta2",
+  "application": "When rescue use rises, assess the airway and the regimen promptly. When potassium falls, distinguish redistribution from concurrent losses before deciding how to replace it.",
+  "lesson": [
+    {
+      "heading": "Use inhaled albuterol for reversible bronchospasm",
+      "body": "Albuterol is a relatively selective beta-2 agonist that relaxes airway smooth muscle through Gs, adenylyl cyclase, cAMP, and protein kinase A signaling. Bronchodilation relieves reversible constriction; it does not establish that airway inflammation has resolved. The referenced albuterol aerosol is labeled for treatment or prevention of bronchospasm and prevention of exercise-induced bronchospasm in patients aged four years and older. Verify the actual product: metered-dose aerosols, dry powders, and nebulizer solutions have different preparation, delivery, and dose instructions. A shared ingredient name does not make devices or concentrations interchangeable."
+    },
+    {
+      "heading": "Distinguish rescue from maintenance",
+      "body": "Short-acting beta-2 agonists can provide rapid symptom relief. For asthma, GINA 2026 recommends an ICS-containing treatment plan rather than SABA-only treatment for adults, adolescents, and children aged 6-11 years. Long-acting agonist roles depend on the combination and regimen: in adults and adolescents, specified low-dose ICS-formoterol combinations can serve as anti-inflammatory relievers; in maintenance-and-reliever therapy (MART), the same appropriate ICS-formoterol product supplies both roles. An ICS-LABA combination without formoterol cannot be used as MART, and ICS-formoterol should not be added as reliever to maintenance ICS-LABA containing a different LABA. LABA without ICS is inappropriate in asthma. These guideline roles do not establish local product approval or permit arbitrary substitution; check age, formulation, labeling, and the prescribed action plan."
+    },
+    {
+      "heading": "Verify the device before escalating exposure",
+      "body": "Ask the patient to demonstrate use of the exact inhaler, including its preparation, actuator, dose indicator, and cleaning. For example, the referenced Preferred Pharmaceuticals repackaged albuterol aerosol requires three priming sprays before first use or after more than two weeks without use. XOPENEX HFA requires four test sprays before first use or after more than three days without use. Both require shaking and at least weekly actuator washing and thorough air drying; each must use its own supplied actuator. These are two specific HFA product instructions, not a universal albuterol rule or nebulizer preparation instruction. Poor delivery and deteriorating disease can coexist, so checking technique must not postpone urgent assessment when symptoms worsen."
+    },
+    {
+      "heading": "Separate stereochemistry from clinical guarantees",
+      "body": "Levalbuterol is the R enantiomer of albuterol; racemic albuterol contains R and S enantiomers. Both provide beta-2 bronchodilation. Removing the S enantiomer does not remove every cardiovascular, tremor, potassium, or paradoxical bronchospasm risk: XOPENEX HFA retains those relevant warnings. Judge an individual response using the actual formulation, appropriate prescribed dose, symptom and airflow response, adverse effects, access, and cost. Do not infer universal clinical superiority or a universal dose conversion from stereochemistry. Adverse-event percentages from separate trials are not a valid direct comparison of the products."
+    },
+    {
+      "heading": "Expect systemic spillover at higher exposure",
+      "body": "Inhaled delivery does not eliminate systemic effects. Tremor, tachycardia, palpitations, changes in glucose, and hypokalemia can occur, especially with high or repeated exposure. Cardiac disease and other adrenergic drugs may increase the clinical consequences. Both cited aerosol labels caution that loop or thiazide diuretic-associated hypokalemia and ECG changes can be worsened by beta-agonists, particularly if recommended beta-agonist exposure is exceeded; they advise considering potassium monitoring. Reconstruct the dose history and full regimen while assessing airflow, work of breathing, pulse, symptoms, and rhythm when indicated. A faster pulse alone neither proves treatment success nor establishes the entire cause of deterioration."
+    },
+    {
+      "heading": "Distinguish potassium redistribution from potassium loss",
+      "body": "Beta-2 stimulation can move potassium from extracellular fluid into cells, lowering the measured serum concentration without removing that potassium from the body. The cited aerosol labels describe the decrease as usually transient and generally not requiring supplementation; that wording does not mean every low value is harmless or that replacement is never indicated. Loop or thiazide therapy, gastrointestinal losses, inadequate intake, magnesium deficiency, and other causes may coexist. Assess the potassium trend, symptoms, rhythm, kidney function, magnesium, acid-base state, losses, and recent treatment exposures. Clinically significant hypokalemia still needs prompt assessment and individualized treatment. Avoid translating an isolated shift into a fixed total-body deficit or giving unmonitored replacement, especially when kidney clearance is impaired and the shift may reverse."
+    },
+    {
+      "heading": "Interpret lactate with the whole clinical picture",
+      "body": "A small randomized placebo-controlled study in 28 healthy adults found higher lactate and lower potassium after nebulized albuterol. This supports the possibility of an exposure-related metabolic contribution; its healthy-volunteer results do not determine the cause of a lactate rise in a patient with an exacerbation. Interpret lactate alongside airflow response, oxygenation, work of breathing, perfusion, other causes, recent doses, and the clinical trajectory. Neither assume that every rise proves worsening shock nor dismiss persistent distress as a drug effect. Continue reassessment and necessary airway care; this observation is not an instruction to stop all bronchodilation or escalate treatment solely to normalize lactate."
+    },
+    {
+      "heading": "Recognize paradoxical bronchospasm and treatment failure",
+      "body": "New or worsening bronchospasm immediately after inhalation can be paradoxical and life-threatening, including with first use of a new canister. Both cited aerosol labels direct immediate discontinuation of the implicated product and alternative treatment. Obtain urgent assessment and airway care rather than repeatedly challenging the patient with the same suspected trigger. Timing, the exact product and device, administration, airflow change, and associated hypersensitivity findings help assess the differential; timing alone does not identify a particular excipient as the cause. Distinguish this immediate pattern from progressively increasing rescue need or diminishing benefit over hours or days. Those patterns also require prompt medical attention and reassessment of severity, diagnosis, technique, adherence, and anti-inflammatory treatment."
+    }
+  ],
+  "keyPoints": [
+    "Bronchodilation does not replace an asthma ICS plan.",
+    "Only appropriate ICS-formoterol regimens supply both maintenance and reliever roles.",
+    "Preparation instructions belong to the exact product and device.",
+    "Levalbuterol retains clinically relevant beta-agonist risks.",
+    "Potassium can shift into cells while losses coexist.",
+    "Immediate bronchospasm after inhalation requires stopping the implicated product and alternative care."
+  ],
+  "check": {
+    "question": "An adult with asthma needs albuterol increasingly often and gets less relief. What is the best next interpretation and action?",
+    "choices": [
+      "Disease may be destabilizing; arrange prompt assessment of severity, technique, adherence, and the ICS-containing plan",
+      "Temporary relief proves that inflammation is controlled, so only provide extra canisters",
+      "Replace the anti-inflammatory plan with scheduled SABA alone",
+      "Assume a technique error and defer assessment until the next routine visit"
+    ],
+    "answer": 0,
+    "rationale": "Increasing use and diminishing benefit are deterioration signals in the label. Assess the patient and regimen promptly, including delivery and anti-inflammatory treatment. Temporary bronchodilation does not prove inflammatory control; extra canisters or scheduled SABA alone do not correct the problem. Technique review matters, but assuming it is the only cause and postponing assessment can delay needed care.",
+    "reviewHref": "#beta2-agonist-therapy"
+  }
+});
+adrenergicAgonistsModule.references.push(...[
+  {
+    "label": "RxPrep 2023. Renal disease and asthma: printed pp. 292-293, 571-573, 575-577, 583, 585. Supplied course book.",
+    "locator": "Supplied RxPrep 2023 course book, printed pp. 292-293, 571-573, 575-577, 583, 585 (PDF pp. 300-301, 579-581, 583-585, 591, 593)."
+  },
+  {
+    "label": "DailyMed. XOPENEX HFA (levalbuterol tartrate); Lupin, prescribing information revised July 2025.",
+    "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=70a35706-d7a8-4a48-98c6-1cab1c42fe8d"
+  },
+  {
+    "label": "GINA 2026 Summary Guide. Asthma reliever and maintenance roles; pp. 15, 24-26, 38-40, 43.",
+    "href": "https://ginasthma.org/wp-content/uploads/2026/07/GINA-Summary-Guide-2026-WEB-WMS.pdf"
+  },
+  {
+    "label": "Rasmussen et al. 2011. β2 adrenergic receptor-Gs complex; abstract and introduction.",
+    "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3184188/"
+  },
+  {
+    "label": "Zitek et al. 2016. Nebulized albuterol, lactate and potassium in healthy adults; primary study abstract.",
+    "href": "https://pubmed.ncbi.nlm.nih.gov/26857949/"
+  },
+  {
+    "label": "Kardalas et al. 2018. Hypokalemia: a clinical update; potassium distribution, losses, evaluation and treatment.",
+    "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5881435/"
+  }
+]);
