@@ -1,0 +1,42 @@
+{
+  "status": "documentation content push verified",
+  "release": {
+    "branch": "audit/rxprep-content-2026-09-24",
+    "baseCommit": "d18853ca6d8935649f1214bfe9d07f9deb56d44b",
+    "commit": "d768b5c5dc4d4e164b78abcf67eb151902ce5228",
+    "push": "verified",
+    "receipt": "fluid-broader-prior-evidence-continuity-release.json",
+    "remoteHashObserved": "d768b5c5dc4d4e164b78abcf67eb151902ce5228",
+    "exactRemoteObservedByTool": true,
+    "remoteVerifiedAt": "2026-10-07T22:02:56.837280+00:00",
+    "mainMerge": "not performed",
+    "production": "not verified"
+  },
+  "scope": "Nine previously source-reviewed whole questions,36 choices and eight complete lesson objects reconciled with exact historical pushed releases. Eleven prior direct candidates retained;20/100 supported,80 pending. No new question, clinical claim, executable source, whole module or chapter.",
+  "validation": {
+    "status": "passed for documentation continuity",
+    "all232WholeModuleObjectsUnchanged": true,
+    "all1184CumulativeWholeObjectsUnchanged": true,
+    "nineQuestionAndEightWholeLessonObjectsExactToHistoricalGitReleases": true,
+    "priorClinicalSourcesChoicesChecksFiguresAndModuleBuildRenderEvidenceRetained": true,
+    "freshBuildOrBrowserRun": false,
+    "reason": "No executable source, clinical content, figures or visible UI changed. This unit verifies evidence continuity; it does not claim a new rendering or production check.",
+    "originalWorkingRuntimeNotCertified": true
+  },
+  "preservation": {
+    "status": "passed",
+    "baselinePaths": 2099,
+    "allOutsideScopedPathsPreserved": true,
+    "allUnrelatedLedgerRowsExact": true,
+    "scopedPaths": [
+      "docs/clinical-audit/module-ledger.json",
+      "docs/clinical-audit/chapter-ledger.json",
+      "docs/clinical-audit/sequential-resume.json",
+      "docs/clinical-audit/fluid-broader-prior-evidence-continuity-review.json"
+    ],
+    "runtimeUnchanged": true
+  },
+  "remaining": "Continue the broader fluid dependency audit with the complete adrenergic-agonists beta2/potassium lesson and its four direct candidates077-080, using approved primary sources and all question choices. Retain20 qualified direct candidates and keep80 pending. Older adrenal/Cushing/supplement/SLE narrative records remain locators until exact source, lesson and release provenance is reconstructed. HF-pathophysiology115 was found only in a related-question inventory, so it remains pending. Chapter1 printed7/PDF19 entry15, Chapter11 and the parent fluid/enteral dependencies remain open. Preserve the IV-fluid checkpoint and use the external Learn lifecycle.",
+  "wholeGoalComplete": false,
+  "receiptCommit": "Follow-up documentation commit; its exact remote hash is verified privately after push."
+}
