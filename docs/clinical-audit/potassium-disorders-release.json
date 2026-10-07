@@ -1,37 +1,53 @@
 {
-  "status": "content verified locally; push failed",
+  "status": "content push verified",
   "release": {
     "branch": "audit/rxprep-content-2026-09-24",
     "baseCommit": "8106586458d4c9b91be67a4ae3723821d0ad8d06",
     "commit": "3dbdb7bdbf834b5c10f67c354177e487d1ec2a26",
-    "push": "failed remote Internal Server Error",
+    "pushedHead": "a2385683bcf9d4b6f9ad00055eaf16bd0a5ee4ae",
+    "push": "verified",
     "receipt": "potassium-disorders-release.json",
-    "remoteHashObserved": "8106586458d4c9b91be67a4ae3723821d0ad8d06",
-    "exactContentRemoteVerified": false,
-    "checkedAt": "2026-10-07T15:13:59.759817+00:00",
-    "attempts": 4,
+    "remoteHashObserved": "a2385683bcf9d4b6f9ad00055eaf16bd0a5ee4ae",
+    "exactRemoteObservedByTool": true,
+    "remoteVerifiedAt": "2026-10-07T15:17:57.614464+00:00",
     "mainMerge": "not performed",
-    "production": "not verified",
-    "archive": "pending exact push and passed lifecycle finish",
-    "failure": "GitHub rejected four normal push attempts, including a self-contained pack, with remote Internal Server Error. No authorization request or branch-protection error was returned. Await server recovery; do not force-push or bypass the Learn lifecycle."
+    "production": "not verified"
   },
-  "verifiedScope": {
-    "wholeLessonBodies": 15,
-    "embeddedCheck": 1,
-    "wholeQuestions": 14,
-    "questionChoices": 56,
-    "all1180CumulativeObjectsUnchanged": true
-  },
+  "verifiedScope": "Whole potassium-disorders lesson15bodies/onecheck/onefigure/14wholequestions56choices andall1180cumulativeobjects unchanged;100existingIDs/keys/anchors/order preserved. Fullfluidparent/Chapter1entry15/Chapter11/goal remainopen.",
   "validation": {
-    "sourceComparison": "passed",
+    "structure": "passed100questionmodule",
+    "build": "passed567staticpages",
     "independentArithmetic": "passed",
-    "structuralAudit": "passed",
-    "guardedBuild": "passed;567 static pages",
-    "guardedBrowser": "passed;74 captures",
-    "visualInspection": "passed;11 boards and2 native figures"
+    "desktopMobileBrowser": "passed; full lesson andmodule assessment captures;no associated cumulativeorigin",
+    "visualInspection": "all browser captures represented in unscaled boards andtwo native figures actually viewed",
+    "privateSourcePages": "book292–294/709;July2026UKguideline summary,ECG,mechanism,monitoring andhospitalalgorithm;actual KCloral/concentrate/premixed andbinderPIpages viewed;hypokalemiafulltext relevantsections read"
   },
-  "privateEvidenceRoot": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/potassium-disorders-20261007/evidence",
-  "fullGoalComplete": false,
-  "managedModuleFinish": "pending",
-  "nextAction": "Retry the normal potassium content push from the preserved managed module. Verify the exact remote, commit and push the release receipt, run final preservation checks, then finish the managed archive. Only after successful finish begin magnesium-disorders. Chapter 1 printed 7/PDF 19 entry 15 determining fluid needs remains open."
+  "workingBoundary": {
+    "status": "passed",
+    "baselinePaths": 2081,
+    "allOutsideScopedPathsPreserved": true,
+    "stagedPaths": [
+      "src/data/modules/fluidElectrolyteTherapy.js",
+      "src/data/questionBanks/fluidElectrolyteTherapy.js",
+      "docs/clinical-audit/module-ledger.json",
+      "docs/clinical-audit/chapter-ledger.json",
+      "docs/clinical-audit/sequential-resume.json",
+      "docs/clinical-audit/potassium-disorders-review.json"
+    ],
+    "allStagedBlobsEqualVerifiedCandidate": true,
+    "allUnrelatedLedgerRowsExact": true,
+    "wholeModuleVerifiedCount": 66,
+    "wholeChapterVerifiedCount": 7
+  },
+  "committedWholeModules": {
+    "verified": 66,
+    "total": 232,
+    "percent": 28.45
+  },
+  "wholeChapters": {
+    "verified": 7,
+    "total": 82,
+    "percent": 8.54
+  },
+  "receiptCommit": "Follow-up documentation commit; its exact remote hash is verified privately after push."
 }
