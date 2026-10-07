@@ -554,3 +554,107 @@ fluidElectrolyteTherapyModule.references.push(...[
     "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=12d48dcf-07bd-4b06-bd6c-7543f1be8357"
   }
 ]);
+
+// Source-reconciled magnesium disorders lesson.
+Object.assign(fluidElectrolyteTherapyModule.submodules.find(s => s.slug === "magnesium-disorders"), {
+  "slug": "magnesium-disorders",
+  "title": "Magnesium Disorders",
+  "summary": "Magnesium influences neuromuscular function, cardiac repolarization, and potassium handling. Renal function changes both the cause and the safety of treatment.",
+  "concepts": [
+    "Hypomagnesemia",
+    "Refractory hypokalemia",
+    "IV magnesium safety",
+    "Hypermagnesemia"
+  ],
+  "visual": "magnesium",
+  "application": "Choose route and intensity by symptoms, concentration, gastrointestinal tolerance, kidney function, and the urgency of associated arrhythmia or electrolyte disturbance.",
+  "lesson": [
+    {
+      "heading": "Check magnesium units before interpreting the result",
+      "body": "The supplied book gives a magnesium reference range of 1.3 to 2.1 mEq/L and defines hypomagnesemia below 1.3 mEq/L. Other laboratories and guidelines use different ranges: UK SPS defines deficiency below 0.7 mmol/L and severe deficiency below 0.5 mmol/L. Magnesium is divalent, so 1 mmol/L equals 2 mEq/L; neither unit is interchangeable with mg/dL. Use the reported units and local reference range, then assess symptoms and trajectory. A serum concentration also does not directly measure total body stores."
+    },
+    {
+      "heading": "Identify gastrointestinal loss, renal wasting and medicines",
+      "body": "Low intake, chronic alcohol use, vomiting, diarrhea and malabsorption can contribute to deficiency. Review loop or thiazide diuretics, aminoglycosides, amphotericin B, cisplatin and proton pump inhibitors. These exposures do not all have the same mechanism: several drugs promote renal magnesium loss, while reduced intestinal absorption is implicated with PPIs. Cisplatin-related wasting can persist after treatment. Address the cause and consider a clinically appropriate medicine change; replacing magnesium without reviewing continued losses may be inadequate."
+    },
+    {
+      "heading": "Correct associated potassium and calcium problems",
+      "body": "Magnesium deficiency can coexist with hypokalemia and hypocalcemia and contribute to neuromuscular irritability, seizures and ventricular arrhythmias. Check magnesium when potassium remains low despite replacement; depletion can promote renal potassium wasting. Correct confirmed deficiencies together with their causes. The book emphasizes magnesium replacement when both magnesium and potassium are low, but urgent potassium or arrhythmia treatment must not be postponed until a magnesium course is completed."
+    },
+    {
+      "heading": "Use a tolerated oral product for stable deficiency",
+      "body": "Oral replacement is reasonable for many patients with mild, asymptomatic deficiency and adequate gastrointestinal absorption. The book commonly uses magnesium oxide, but formulation choice should follow the local formulary and tolerance. Verify the labeled elemental magnesium content rather than equating the mass of a salt with the mass of magnesium. Oral salts can cause dose-limiting diarrhea, which can itself sustain losses. Divided doses with meals, dose adjustment or a different product may improve tolerance; severe symptoms, poor absorption or persistent intolerance may require IV treatment."
+    },
+    {
+      "heading": "Choose IV treatment and duration by clinical need",
+      "body": "Severe or symptomatic deficiency requires monitored hospital treatment with IV magnesium sulfate; seizures or an associated dangerous rhythm need urgent care. The book uses magnesium below 1 mEq/L to identify severe presentations, while contemporary guidance also weighs symptoms, absorption and kidney function. Select a product-specific regimen and reassess after each IV dose. The book\u2019s five-day course is not a universal duration: serum levels can recover before intracellular stores, and ongoing losses may require further replacement. Plan repeat magnesium, potassium and calcium testing."
+    },
+    {
+      "heading": "Separate sulfate grams, magnesium equivalents and pump rate",
+      "body": "The reviewed Hospira 50% concentrate contains 0.5 g magnesium sulfate heptahydrate and 4.06 mEq magnesium per mL. One gram of this salt supplies approximately 8.12 mEq magnesium, not one gram of elemental magnesium. For a specified 2 g order made to a final volume of 100 mL and infused over two hours, withdraw 4 mL concentrate, dilute to the final volume, and use 50 mL/hour: the delivery is 1 g/hour at 2% w/v. These calculations verify an order; they do not independently authorize its dose, route or rate. The 50% product must be diluted before IV use, with this label requiring 20% or less; local peripheral-access limits may be lower."
+    },
+    {
+      "heading": "Review contraindications, interactions and special indications",
+      "body": "The reviewed parenteral label contraindicates use in heart block or myocardial damage. CNS depressants and neuromuscular blocking agents can increase depression or blockade; digitalis exposure also requires particular caution. Review the actual product, indication, access and monitoring plan before administration. Obstetric seizure regimens have a separate indication and supervision requirements and should not be borrowed for routine deficiency. Continuous maternal use beyond five to seven days carries a fetal bone-abnormality warning; a fixed replacement course is not automatically appropriate in pregnancy."
+    },
+    {
+      "heading": "Account for kidney function and monitor exposure",
+      "body": "Renal elimination is central to magnesium balance. Advanced CKD, acute kidney injury and dialysis require specialist replacement advice; a standard schedule or a nominally small dose does not guarantee safety. Lower or less frequent IV exposure may be needed, guided by the product and repeat results. Review all oral and parenteral magnesium sources. During IV treatment assess blood pressure, breathing, reflexes, urine output, kidney function and serum magnesium; ECG monitoring is particularly important with severe symptoms or arrhythmias. Impaired kidneys do not prove that magnesium must already be high."
+    },
+    {
+      "heading": "Distinguish torsades treatment from immediate rhythm rescue",
+      "body": "Torsades de pointes is polymorphic ventricular tachycardia associated with a prolonged QT interval. The 2025 AHA guideline allows consideration of magnesium for recurrent episodes, while sustained polymorphic VT requires immediate unsynchronized shock; pulseless patients need the cardiac-arrest response. Magnesium must not delay indicated defibrillation. Correct contributing electrolyte abnormalities and review QT-prolonging medicines. Magnesium is not routine treatment for every ventricular rhythm: AHA advises against routine magnesium for polymorphic VT with a normal QT interval. Use the emergency protocol and expert assessment."
+    },
+    {
+      "heading": "Recognize magnesium toxicity from the whole presentation",
+      "body": "Excess magnesium can depress reflexes, blood pressure, respiration and cardiac conduction. Kidney impairment and magnesium-containing antacids, laxatives, supplements or infusions increase concern. Confirm the laboratory units: a value expressed in mg/dL is not the same numerical exposure in mEq/L. The reviewed label describes reduced reflexes above 4 mEq/L and possible absent reflexes near 10 mEq/L, where respiratory paralysis can occur; individual signs are variable. Hypotension, absent reflexes or respiratory depression demand urgent assessment rather than waiting for a particular threshold."
+    },
+    {
+      "heading": "Antagonize toxicity and arrange actual removal",
+      "body": "Stop magnesium exposure and support ventilation and circulation when clinically important toxicity is present. Protocol-directed IV calcium can temporarily antagonize neuromuscular and cardiovascular effects; it does not remove the magnesium. Fluids and loop diuresis depend on renal clearance and the ability to tolerate volume, so they are not a dependable elimination plan in anuria. Severe toxicity with inadequate kidney clearance needs urgent nephrology or critical-care assessment for dialysis. Continue monitoring magnesium, ECG, respiration and other electrolytes, including calcium during dialysis."
+    }
+  ],
+  "keyPoints": [
+    "Confirm units and the local reference range before grading severity.",
+    "Correct magnesium and associated potassium or calcium deficiencies together.",
+    "Check elemental content, sulfate concentration and delivery rate separately.",
+    "Renal impairment requires individualized exposure and close monitoring.",
+    "Magnesium for torsades does not replace indicated defibrillation.",
+    "IV calcium antagonizes toxicity; elimination requires renal clearance or dialysis."
+  ],
+  "check": {
+    "question": "Why can aggressive magnesium replacement be hazardous in advanced kidney failure?",
+    "choices": [
+      "Reduced renal elimination can cause accumulation and neuromuscular or cardiac toxicity",
+      "A corrected potassium value proves that additional magnesium cannot accumulate",
+      "Using the oral route eliminates accumulation risk regardless of exposure",
+      "Diluting an IV dose guarantees that renal function no longer affects safety"
+    ],
+    "answer": 0,
+    "rationale": "Kidney impairment reduces magnesium elimination. Route, dilution and a potassium response do not establish safe cumulative exposure. Review the actual dose, clinical need and all magnesium sources, obtain specialist advice in advanced disease, and monitor serum magnesium and clinical effects.",
+    "reviewHref": "#magnesium-disorders"
+  }
+});
+fluidElectrolyteTherapyModule.references[7] = {"label": "FDA label: RemedyRepack magnesium sulfate 50% concentrate", "href": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=8c6b8b3d-9c04-4ed7-86b8-89065b6bf50d&type=display"};
+fluidElectrolyteTherapyModule.references.push(...[
+  {
+    "label": "FDA label: Hospira magnesium sulfate 50% concentrate",
+    "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e175d329-315f-4f3b-bb4c-06ad4e042967"
+  },
+  {
+    "label": "NHS SPS: treating acute hypomagnesaemia in adults",
+    "href": "https://sps.nhs.uk/articles/treating-acute-hypomagnesaemia-in-adults/"
+  },
+  {
+    "label": "AHA 2025 adult advanced life support: polymorphic VT and torsades",
+    "href": "https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/adult-advanced-life-support"
+  },
+  {
+    "label": "Aal-Hamad et al. 2023: hypermagnesemia in clinical practice",
+    "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10384947/"
+  },
+  {
+    "label": "Liamis et al. 2021: drug-induced hypomagnesemia",
+    "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8287009/"
+  }
+]);

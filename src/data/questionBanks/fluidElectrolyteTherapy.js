@@ -1016,3 +1016,161 @@ Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-elec
   "rationale": "Moderate hyperkalemia requires context-based acute assessment and monitored treatment. UK guidance suggests insulin-glucose in this range and advises against routine bicarbonate for hyperkalemia. Acidemia can provide a separate reason to consider bicarbonate, but it is not sole rescue. The initial normal ECG does not exclude risk or mandate calcium automatically; follow-up remains essential.",
   "reviewHref": "#potassium-disorders"
 });
+
+// Source-reconciled magnesium questions; stable IDs, keys and anchors retained.
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-041"), {
+  "id": "fluid-electrolyte-041",
+  "question": "Which coexisting electrolyte deficiency can contribute to refractory hypokalemia and torsades risk?",
+  "choices": [
+    "Magnesium",
+    "Phosphate alone",
+    "Chloride alone",
+    "Sodium alone"
+  ],
+  "answer": 0,
+  "rationale": "Magnesium depletion can promote renal potassium loss and ventricular electrical instability. The other deficiencies may need their own assessment, but they do not best explain this combined magnesium-related pattern. Assess the rhythm, magnesium and other electrolytes and correct the relevant causes.",
+  "reviewHref": "#magnesium-disorders"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-042"), {
+  "id": "fluid-electrolyte-042",
+  "question": "Why does advanced kidney impairment increase magnesium replacement risk?",
+  "choices": [
+    "Reduced renal elimination permits magnesium accumulation",
+    "Renal impairment prevents all intestinal magnesium absorption",
+    "Dilution of an IV dose makes renal elimination irrelevant",
+    "A low potassium value excludes magnesium toxicity"
+  ],
+  "answer": 0,
+  "rationale": "Renal elimination is central to magnesium balance. Intestinal absorption can continue, and dilution changes concentration rather than eliminating the administered dose. Potassium does not establish magnesium safety. Individualize treatment and monitor exposure and clinical signs.",
+  "reviewHref": "#magnesium-disorders"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-043"), {
+  "id": "fluid-electrolyte-043",
+  "question": "Which presentation most strongly suggests clinically important magnesium excess?",
+  "choices": [
+    "Diminished or absent reflexes with hypotension during magnesium exposure",
+    "Muscle cramps with a confirmed low magnesium result",
+    "An isolated creatinine increase without neuromuscular or cardiovascular depression",
+    "Diarrhea alone after a small oral dose"
+  ],
+  "answer": 0,
+  "rationale": "Magnesium excess can depress reflexes, circulation, breathing and conduction. A low magnesium result with cramps suggests deficiency; creatinine indicates clearance risk but is not itself toxicity, and diarrhea alone may reflect oral intolerance. Interpret the exposure and concentration with the clinical signs.",
+  "reviewHref": "#magnesium-disorders"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-044"), {
+  "id": "fluid-electrolyte-044",
+  "question": "An oral magnesium regimen causes persistent diarrhea. Which review is most appropriate?",
+  "choices": [
+    "Reassess dose and formulation, continued losses and whether oral treatment remains feasible",
+    "Increase every dose because diarrhea proves adequate absorption",
+    "Continue the same regimen indefinitely without repeat magnesium testing",
+    "Switch automatically to undiluted 50% magnesium by IV injection"
+  ],
+  "answer": 0,
+  "rationale": "Oral magnesium can cause dose-limiting diarrhea and continued gastrointestinal loss. Adjust the regimen, consider an alternative tolerated product, and monitor the response. IV treatment may be needed for intolerance or severity, but the concentrate must be appropriately diluted and supervised.",
+  "reviewHref": "#magnesium-disorders"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-045"), {
+  "id": "fluid-electrolyte-045",
+  "question": "Which statement correctly describes IV calcium in serious magnesium toxicity?",
+  "choices": [
+    "It temporarily antagonizes toxic effects while exposure is stopped and elimination is addressed",
+    "It removes all excess magnesium by converting it into an inactive blood constituent",
+    "It replaces ventilation even when respiratory depression persists",
+    "It restores renal excretion reliably in an anuric patient"
+  ],
+  "answer": 0,
+  "rationale": "IV calcium provides physiologic antagonism at neuromuscular and cardiovascular sites; it is not magnesium removal. Airway and circulatory support remain necessary, and anuria prevents assumed renal elimination. Arrange definitive clearance when indicated.",
+  "reviewHref": "#magnesium-disorders"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-046"), {
+  "id": "fluid-electrolyte-046",
+  "question": "Which exposure is a recognized cause of renal magnesium wasting that can persist after therapy?",
+  "choices": [
+    "Cisplatin",
+    "Magnesium hydroxide laxative use with advanced kidney failure",
+    "Magnesium sulfate infusion above the prescribed dose",
+    "Calcium gluconate used for magnesium toxicity"
+  ],
+  "answer": 0,
+  "rationale": "Cisplatin can injure renal tubular magnesium handling, and wasting may persist after therapy ends. Magnesium-containing laxatives or excess infused magnesium increase magnesium exposure, especially with poor clearance. Calcium antagonism does not represent the characteristic persistent wasting mechanism.",
+  "reviewHref": "#magnesium-disorders"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-047"), {
+  "id": "fluid-electrolyte-047",
+  "question": "A laboratory reports magnesium as 1.0 mmol/L. Which equivalent in mEq/L is correct for this divalent ion?",
+  "choices": [
+    "2.0 mEq/L",
+    "1.0 mEq/L",
+    "0.5 mEq/L",
+    "4.0 mEq/L"
+  ],
+  "answer": 0,
+  "rationale": "Milliequivalents equal millimoles multiplied by ionic charge. Magnesium has a charge of two, so 1.0 mmol/L equals 2.0 mEq/L. This conversion does not make mmol/L or mEq/L numerically interchangeable with mg/dL; check the local reference range before clinical interpretation.",
+  "reviewHref": "#magnesium-disorders"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-048"), {
+  "id": "fluid-electrolyte-048",
+  "question": "What is an appropriate starting approach for stable mild asymptomatic magnesium deficiency with intact gastrointestinal function?",
+  "choices": [
+    "Consider a tolerated oral regimen, address the cause and arrange repeat testing",
+    "Use the obstetric rapid IV loading regimen for every patient",
+    "Start dialysis solely because magnesium is below the reference range",
+    "Give a five-day course without any assessment of response or ongoing losses"
+  ],
+  "answer": 0,
+  "rationale": "Oral therapy is reasonable in stable mild deficiency when absorption and tolerance permit. Severity, symptoms and kidney function can change the plan. Obstetric loading and dialysis have different indications, and the book\u2019s five-day course does not replace individualized duration or follow-up.",
+  "reviewHref": "#magnesium-disorders"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-049"), {
+  "id": "fluid-electrolyte-049",
+  "question": "A specified order is 2 g magnesium sulfate from 50% stock, diluted to a final 100 mL and infused over two hours. Which calculation is correct?",
+  "choices": [
+    "Withdraw 4 mL stock; the pump rate is 50 mL/hour and delivery is 1 g/hour",
+    "Withdraw 2 mL stock; the pump rate is 50 mL/hour and delivery is 1 g/hour",
+    "Withdraw 4 mL stock; the pump rate is 100 mL/hour and delivery is 1 g/hour",
+    "Withdraw 4 mL stock and inject it directly because 50% is ready for IV use"
+  ],
+  "answer": 0,
+  "rationale": "50% w/v is 0.5 g/mL, so 2 g requires 4 mL. A final 100 mL over two hours gives 50 mL/hour and 1 g/hour. Two mL contains only 1 g; 100 mL/hour would deliver 2 g/hour. The concentrate requires dilution, and correct arithmetic still requires clinical review of dose, access, rate and renal function.",
+  "reviewHref": "#magnesium-disorders"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-050"), {
+  "id": "fluid-electrolyte-050",
+  "question": "Severe magnesium toxicity persists in an anuric patient with kidney failure. Which strategy can provide definitive removal?",
+  "choices": [
+    "Urgently assess for dialysis while continuing indicated stabilization and monitoring",
+    "Give calcium alone and assume total body magnesium is now normal",
+    "Use furosemide alone and assume urinary excretion despite anuria",
+    "Wait for oral phosphate to eliminate magnesium without follow-up"
+  ],
+  "answer": 0,
+  "rationale": "Dialysis can remove magnesium when renal clearance is inadequate. Calcium temporarily antagonizes effects rather than removing magnesium, and anuria defeats assumed urinary clearance. Continue appropriate emergency support and monitor magnesium and other electrolytes, including calcium.",
+  "reviewHref": "#magnesium-disorders"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-095"), {
+  "id": "fluid-electrolyte-095",
+  "question": "An adult has recurrent self-terminating torsades with a prolonged QT and low magnesium and is currently perfusing between episodes. Which approach is appropriate?",
+  "choices": [
+    "Use monitored IV magnesium, correct contributors and prepare immediate shock if polymorphic VT becomes sustained",
+    "Delay intervention until the next day because each episode ended spontaneously",
+    "Treat with oral magnesium alone and omit rhythm monitoring",
+    "Use magnesium instead of defibrillation even if sustained polymorphic VT develops"
+  ],
+  "answer": 0,
+  "rationale": "AHA permits consideration of magnesium for recurrent polymorphic VT with prolonged QT, and confirmed deficiency also needs correction. Recurrence is dangerous despite spontaneous termination. Sustained polymorphic VT requires immediate unsynchronized shock; magnesium must not delay rescue. Assess potassium and provoking medicines as well.",
+  "reviewHref": "#magnesium-disorders"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-096"), {
+  "id": "fluid-electrolyte-096",
+  "question": "A patient with kidney failure receiving magnesium has a level of 10 mEq/L, hypotension, absent reflexes and slowed breathing. Which response best addresses the presentation?",
+  "choices": [
+    "Stop magnesium, support ventilation and circulation, give protocol-directed IV calcium and urgently assess for dialysis",
+    "Continue replacement because 10 mEq/L equals 1.0 mmol/L",
+    "Give calcium alone and stop monitoring once blood pressure improves",
+    "Give a loop diuretic and assume magnesium removal even without urine"
+  ],
+  "answer": 0,
+  "rationale": "This is a clinically toxic presentation with impaired clearance. The reviewed label describes possible absent reflexes and respiratory paralysis near 10 mEq/L; 10 mEq/L equals 5 mmol/L, not 1. Calcium is temporary antagonism, so support and removal assessment remain necessary. Symptoms and units guide urgent care rather than a universal numeric threshold.",
+  "reviewHref": "#magnesium-disorders"
+});
