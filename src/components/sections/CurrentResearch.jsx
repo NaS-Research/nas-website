@@ -11,10 +11,10 @@ export default function CurrentResearch() {
     const artwork = publicationArtwork[slug];
     return item && artwork ? [{
       slug, title: item.shortTitle || item.title, type: item.type,
-      area: item.area, image: artwork.heroSrc || artwork.src,
-      video: artwork.film || artwork.video || item.heroVideo || null,
-      compactVideo: artwork.previewFilm || null,
-      workspaceFilm: Boolean(artwork.workspaceFilm), mark: Boolean(artwork.mark), contain: Boolean(artwork.contain),
+      area: item.area, image: artwork.coverPoster || artwork.heroSrc || artwork.src,
+      video: artwork.coverFilm || artwork.film || artwork.video || item.heroVideo || null,
+      compactVideo: artwork.coverFilm || artwork.previewFilm || null,
+      workspaceFilm: Boolean(artwork.workspaceFilm), mark: Boolean(artwork.mark), contain: Boolean(artwork.coverContain || artwork.contain),
     }] : [];
   });
   return <ResearchGallery studies={studies} />;
