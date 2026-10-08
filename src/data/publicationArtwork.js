@@ -11,8 +11,8 @@ export const publicationArtwork = {
   },
   "introducing-nas-workspace": { workspaceFilm: true, src: "/workspace/particles-v2/poster-1920.webp", alt: "White and gold particles forming a flowing loop against black, the NaS workspace visual" },
   "blood-brain-barrier-prediction-audit": {
-    src: "/research/bbb-audit/cover-v1.webp",
-    alt: "Diagram of the blood-brain barrier and surrounding tissue",
+    src: "/research/bbb-audit/cover-v2.webp",
+    alt: "Violet-toned cerebral capillary with surrounding cellular structures",
     creditUrl: "/research/bbb-audit/artwork.txt",
     // Add an approved film URL here later; the still remains its poster fallback.
   },
