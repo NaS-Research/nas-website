@@ -6,7 +6,11 @@ export const denialsRelease = {
   area: "Healthcare Operations",
   date: "September 5, 2026",
   dateISO: "2026-09-05",
-  version: "1.1",
+  version: "1.2",
+  updatedDate: "October 7, 2026",
+  updatedDateISO: "2026-10-07",
+  revisionNote: "Editorial update: section numbering removed. Article text and reported results are unchanged.",
+  pdfVersion: "1.1",
   authors: ["NaS Research"],
   readTime: "12 min read",
   pdfUrl: "/research/papers/introducing-nas-denials.pdf",
@@ -31,7 +35,7 @@ export const denialsRelease = {
   sections: [
     {
       id: "payment-friction",
-      title: "1 Payment friction after care",
+      title: "Payment friction after care",
       paragraphs: [
         "The United States spent $5.3 trillion on health care in 2024. Hospital care and physician and clinical services accounted for approximately $2.7 trillion of that total. The financial system surrounding that care remains fragmented across clinical records, claim transactions, clearinghouses, payer rules, remittance files, portals, faxes, and manual work queues.",
         "KFF found that HealthCare.gov insurers ultimately denied 20 percent of reported in-network claims in 2023. Consumers internally appealed fewer than 1 percent of those denials. These figures do not measure specialty-practice appeal rates or the share of claims recoverable through NaS. Claims initially denied but subsequently resubmitted and paid are excluded from KFF's reported denial rate.",
@@ -40,7 +44,7 @@ export const denialsRelease = {
     },
     {
       id: "where-work-breaks",
-      title: "2 Where the current workflow breaks",
+      title: "Where the current workflow breaks",
       paragraphs: [
         "Clearinghouses are effective at transmitting transactions and applying broad edits. Practice-management systems track balances and work queues. Electronic health records contain much of the clinical record. Outsourced revenue-cycle teams add expertise and labor. Payer portals expose status and submission channels. Each component matters, but none necessarily owns the complete path from a payer's reason for denial to the evidence used in response and the cash ultimately received.",
         "The missing unit is an accountable case. A denial case should preserve the claim and remittance source, the exact payer product and policy version, the relevant chart evidence, missing or contradictory information, the filing deadline, the human decision, the submitted packet, the payer outcome, and any later reversal or payment. Without that lineage, organizations may repeat preventable errors or report theoretical opportunity as recovered revenue.",
@@ -48,7 +52,7 @@ export const denialsRelease = {
     },
     {
       id: "what-we-are-building",
-      title: "3 What we are building",
+      title: "What we are building",
       paragraphs: [
         "NaS Denials is designed as an evidence-linked workbench for specialty denial prevention and appeals. The current software foundation is designed to accept controlled claim, remittance, denial, authorization, policy, and chart inputs; normalize a case; identify the governed policy selected for that case; label supporting, missing, uncertain, or contradictory evidence; recommend an operational path; and prepare a draft packet for qualified human review.",
         "The system distinguishes an appeal from correction, resubmission, escalation, review, and write-off. It does not assume that every unpaid claim is recoverable. It does not independently determine coverage, change a chart or billing code, make a clinical attestation, or submit an appeal. Consequential assertions remain with qualified people designated by the customer.",
@@ -57,7 +61,7 @@ export const denialsRelease = {
     },
     {
       id: "workflow",
-      title: "4 The operating workflow",
+      title: "The operating workflow",
       paragraphs: [
         "The first product is a managed software workflow. NaS and the customer define one exact queue, use controlled file exports before deep integration, and keep the customer's existing staff responsible for decisions and submissions.",
         "● Intake controlled 837 claim files or claim exports, 835 remittances, denial letters, authorization records, governed policy material, and relevant chart documents. Production use of X12 transactions will require an approved validation service and deployment.● Reconcile every accepted source record and preserve its hash and location.● Classify the denial and select the exact payer, product, jurisdiction, policy version, procedure scope, and appeal level.● Show evidence with page or field citations and label missing, inaccessible, uncertain, or contradictory information.● Route the case to a qualified reviewer and require separate approval before a packet can be treated as ready.● Record external submission and payer decisions as human attestations rather than claiming the software submitted them.● Calculate changes in payer-reported claim payments from validated matching remittances; confirm received cash separately.",
@@ -66,7 +70,7 @@ export const denialsRelease = {
     },
     {
       id: "specialty-scope",
-      title: "5 A platform for specialties that begins with one narrow queue",
+      title: "A platform for specialties that begins with one narrow queue",
       paragraphs: [
         "The design is not limited to orthopedics. The same case and evidence model is intended to be adapted for gastroenterology, oncology, cardiology, radiology, rheumatology, neurology, infusion, dermatology, and other specialty settings. Each new specialty, payer product, procedure scope, and policy family will require its own governed rules and validation. Billing companies may also be able to use the platform across multiple clients, provided each customer's data, policies, permissions, and outcomes remain isolated.",
         "A broad platform still needs narrow validation. Payer policies differ by product and jurisdiction. Specialties document medical necessity differently. Authorization rules, coding context, appeal windows, source systems, and reviewer responsibilities vary. A system that performs well for one procedure and payer cannot safely claim the same performance everywhere without new evidence.",
@@ -76,7 +80,7 @@ export const denialsRelease = {
     },
     {
       id: "system-design",
-      title: "6 Evidence before automation",
+      title: "Evidence before automation",
       paragraphs: [
         "NaS uses deterministic logic for identity, permissions, policy applicability, deadlines, arithmetic, approval boundaries, and payment reconciliation. Models may assist with bounded extraction, classification, and drafting, but every consequential output must retain its source and uncertainty. Missing evidence stays missing. A plausible sentence is not evidence.",
         "The current software foundation implements tenant-scoped access controls, governed policy versions, quarantine-first document intake, human review states, appeal packet controls, hash-chained audit records, retention workflows, operational alerts, and remittance-based payment reconciliation. On September 5, 2026, the repository passed 224 automated tests locally. A fresh run of the 100-case engineering-created synthetic cohort matched its provisional answer key for evidence state and citation precision, with zero unsupported assertions in that cohort.",
@@ -85,7 +89,7 @@ export const denialsRelease = {
     },
     {
       id: "safety-and-privacy",
-      title: "7 Safety privacy and accountability",
+      title: "Safety privacy and accountability",
       paragraphs: [
         "A vendor that creates, receives, maintains, or transmits protected health information on behalf of a covered entity is generally a business associate. HHS guidance states that cloud service providers handling electronic protected health information on behalf of covered entities or business associates need appropriate business associate agreements, and that covered entities and business associates must conduct risk analyses. HHS does not endorse or recognize private HIPAA Security Rule certifications.",
         "NaS has implemented and locally tested specific software controls, including tenant-scoped authorization, quarantine-first intake, human approval boundaries, retention logic, and audit integrity checks. Those engineering tests are not a finding of HIPAA compliance. NaS has not completed the contracts, approved cloud deployment, vendor agreements, documented operating evidence, independent penetration testing, incident and recovery exercises, or customer security acceptance required for an electronic protected health information deployment. A fresh internal readiness check on September 5, 2026 therefore returned blocked from ePHI. Prospective partners should share only workflow descriptions, aggregate non-patient statistics, and synthetic examples until NaS and the customer approve a formal data path. Do not send NaS patient records or other patient-level data at this stage.",
@@ -94,7 +98,7 @@ export const denialsRelease = {
     },
     {
       id: "validation-program",
-      title: "8 The design partner program",
+      title: "The design partner program",
       paragraphs: [
         "The next stage is a retrospective diagnostic followed by a shadow pilot. A suitable partner has a meaningful denial queue, an identifiable economic buyer, access to the underlying records and remittance outcomes, and qualified people who can review the work independently.",
         "NaS and the partner will select one payer product, procedure scope, denial family, jurisdiction, and appeal level. Before reviewing software output, two qualified reviewers will independently label a frozen set of historical cases and adjudicate disagreements. The system will then be measured against those labels for state accuracy, citation precision, contradiction and missing-evidence recall, unsupported assertions, substantive correction rate, and active review time.",
@@ -103,7 +107,7 @@ export const denialsRelease = {
     },
     {
       id: "who-we-want-to-work-with",
-      title: "9 Who we want to work with",
+      title: "Who we want to work with",
       paragraphs: [
         "We are opening conversations with independent specialty practices, multispecialty groups, management services organizations, ambulatory surgery and imaging operators, and specialty billing companies. The most useful first contact is usually a chief financial officer, practice administrator, revenue-cycle leader, billing manager, or experienced denial specialist rather than a physician who does not own the payment workflow.",
         "Physicians remain essential. They can identify where a documentation request is clinically sensible, where administrative work interrupts care, and where software would create unsafe extra work. A design partnership should include them without making them responsible for correcting a stream of machine-generated drafts.",
@@ -112,7 +116,7 @@ export const denialsRelease = {
     },
     {
       id: "what-comes-next",
-      title: "10 What comes next",
+      title: "What comes next",
       paragraphs: [
         "NaS will earn the right to broaden the platform one workflow at a time. The immediate work is to secure a design partner, complete the legal and security path for approved data, deploy the system in an accepted environment, and test it against real historical records and prospective shadow cases.",
         "Deeper connections to electronic health records, clearinghouses, payer services, and products such as Epic can follow validated demand. CMS API requirements for certain medical prior authorizations generally begin in 2027 for impacted payers and exclude drug prior authorizations. Those requirements may improve data exchange without eliminating evidence assembly, exception management, human accountability, or outcome reconciliation.",

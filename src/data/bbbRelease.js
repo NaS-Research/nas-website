@@ -6,7 +6,11 @@ export const bbbRelease = {
   "area": "Drug Discovery",
   "date": "September 27, 2026",
   "dateISO": "2026-09-27",
-  "version": "1.1",
+  "version": "1.2",
+  updatedDate: "October 7, 2026",
+  updatedDateISO: "2026-10-07",
+  revisionNote: "Editorial update: section numbering removed. Article text and reported results are unchanged.",
+  pdfVersion: "1.1",
   "authors": [
     "NaS Research"
   ],

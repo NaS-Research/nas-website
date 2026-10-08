@@ -1,3 +1,4 @@
+import { publicationSectionTitle } from "@/lib/publicationHeadings";
 import NicolePreviewInterface from "@/components/research/NicolePreviewInterface";
 import MobileContents from "@/components/research/MobileContents";
 import { publicationArtwork } from "@/data/publicationArtwork";
@@ -110,6 +111,7 @@ export default async function ResearchPublicationPage({ params }) {
     description: item.abstract,
     ...(item.publicationStatus === "draft" ? { dateCreated: item.dateISO } : { datePublished: item.dateISO }),
     ...(item.updatedDateISO ? { dateModified: item.updatedDateISO } : {}),
+    version: item.version,
     image: `https://nasresearch.bio${publicationArtwork[item.slug]?.src || "/og.png"}`,
     mainEntityOfPage: `https://nasresearch.bio/research/${item.slug}`,
     url: `https://nasresearch.bio/research/${item.slug}`,
@@ -163,11 +165,11 @@ export default async function ResearchPublicationPage({ params }) {
           <div className="publication-byline">
             <p>By {item.authors.join(", ")}{item.affiliation && <span> · {item.affiliation}</span>}</p>
             <p>
-              {[isResearchPublication && item.version ? `Version ${item.version}` : null, item.readTime].filter(Boolean).join(" · ")}
+              {[item.version ? `${pdfUrl ? "Web version" : "Version"} ${item.version}` : null, item.readTime].filter(Boolean).join(" · ")}
               {item.updatedDate ? ` · Updated ${item.updatedDate}` : ""}
             </p>
           </div>
-          <PublicationActions citation={isResearchPublication ? citation : undefined} pdfUrl={pdfUrl} />
+          <PublicationActions citation={isResearchPublication ? citation : undefined} pdfUrl={pdfUrl} pdfVersion={item.pdfVersion} />
           {item.reviewState && <p className="publication-review-state">{item.reviewState}</p>}
           {item.reproducibilityUrl && <a className="publication-reproduce" href={item.reproducibilityUrl}>Download data and analysis ↗</a>}
         </div>
@@ -187,7 +189,7 @@ export default async function ResearchPublicationPage({ params }) {
                 className={section.level === 2 ? "publication-toc__subsection" : undefined}
                 key={section.id}
               >
-                {section.title.replace(/^\d+(?:\.\d+)?\s*/, "")}
+                {publicationSectionTitle(section.title)}
               </a>
             ))}
             {item.sources?.length > 0 && <a href="#sources">Sources</a>}
@@ -217,7 +219,7 @@ export default async function ResearchPublicationPage({ params }) {
               className={`publication-section publication-section--level-${section.level ?? 1}`}
               key={section.id}
             >
-              {section.level === 2 ? <h3>{section.title}</h3> : <h2>{section.title}</h2>}
+              {section.level === 2 ? <h3>{publicationSectionTitle(section.title)}</h3> : <h2>{publicationSectionTitle(section.title)}</h2>}
               {(section.blocks ?? section.paragraphs).map((block, index) => (
                 <Fragment key={`${section.id}-${index}`}>
                   <PublicationBlock block={block} sourceRefs={section.citationsByParagraph?.[index]} />
@@ -277,7 +279,7 @@ export default async function ResearchPublicationPage({ params }) {
             <p className="publication-section-label">Publication details</p>
             <h2>Cite this work</h2>
             <p className="publication-citation__text">{citation}</p>
-            <PublicationActions citation={citation} pdfUrl={pdfUrl}  />
+            <PublicationActions citation={citation} pdfUrl={pdfUrl} pdfVersion={item.pdfVersion}  />
             {publicationArtwork[item.slug]?.creditUrl && <p className="publication-note"><a href={publicationArtwork[item.slug].creditUrl}>Artwork credits and license ↗</a></p>}
             {item.reproducibilityUrl && <a className="publication-resource-link" href={item.reproducibilityUrl}>Download data and analysis <span aria-hidden="true">↗</span></a>}
             <p className="publication-note">
@@ -286,6 +288,8 @@ export default async function ResearchPublicationPage({ params }) {
           </section>}
 
           {!isResearchPublication && publicationArtwork[item.slug]?.creditUrl && <p className="publication-note"><a href={publicationArtwork[item.slug].creditUrl}>Artwork credits and license ↗</a></p>}
+
+          {item.revisionNote && <p className="publication-note">{item.revisionNote}</p>}
 
           {related.length > 0 && (
             <section className="publication-related">

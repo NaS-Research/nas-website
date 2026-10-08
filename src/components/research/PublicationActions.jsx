@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 
-export default function PublicationActions({ citation, pdfUrl }) {
+export default function PublicationActions({ citation, pdfUrl, pdfVersion }) {
   const [copied, setCopied] = useState("");
 
   async function copyCitation() {
@@ -28,7 +28,7 @@ export default function PublicationActions({ citation, pdfUrl }) {
   return (
     <div className="publication-actions">
       {pdfUrl ? (
-        <a className="publication-action publication-action--primary" href={pdfUrl} target="_blank" rel="noreferrer">View PDF ↗</a>
+        <a className="publication-action publication-action--primary" href={pdfUrl} target="_blank" rel="noreferrer">View PDF{pdfVersion ? ` (v${pdfVersion})` : ""} ↗</a>
       ) : null}
       {citation && <button className="publication-action" type="button" onClick={copyCitation}>{copied === "citation" ? "Copied" : "Copy citation"}</button>}
       <button className="publication-action" type="button" onClick={sharePublication}>{copied === "link" ? "Link copied" : "Share"}</button>

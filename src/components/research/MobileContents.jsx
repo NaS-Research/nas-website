@@ -1,5 +1,6 @@
 "use client";
 
+import { publicationSectionTitle } from "@/lib/publicationHeadings";
 import { useEffect, useRef } from "react";
 
 export default function MobileContents({ sections, hasSources, hasCitation = true }) {
@@ -19,7 +20,7 @@ export default function MobileContents({ sections, hasSources, hasCitation = tru
     <dialog ref={dialog} className="mobile-contents__sheet" aria-labelledby="mobile-contents-title" onClose={() => trigger.current?.focus({ preventScroll: true })} onClick={event => { if (event.target === dialog.current) close(); }}>
       <div className="mobile-contents__panel">
         <header><h2 id="mobile-contents-title">In this publication</h2><button autoFocus onClick={close} aria-label="Close contents">✕</button></header>
-        <nav aria-label="Article sections">{links.map(section => <a key={section.id} href={`#${section.id}`} onClick={close}>{section.title.replace(/^\d+(?:\.\d+)?\.?\s*/, "")}</a>)}</nav>
+        <nav aria-label="Article sections">{links.map(section => <a key={section.id} href={`#${section.id}`} onClick={close}>{publicationSectionTitle(section.title)}</a>)}</nav>
       </div>
     </dialog>
   </div>;

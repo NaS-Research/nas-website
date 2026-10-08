@@ -21,6 +21,10 @@ export const researchItems = [
     "NaS Research"
   ],
   "readTime": "3 min read",
+  "version": "1.0",
+  updatedDate: "October 7, 2026",
+  updatedDateISO: "2026-10-07",
+  revisionNote: "Editorial update: section numbering removed. Article text and reported results are unchanged.",
   "pdfUrl": null,
   "pdfStatus": "none",
   "abstract": "A place for scientific work. Explore research, build understanding, and work with tools for the life sciences.",
@@ -91,7 +95,11 @@ export const researchItems = [
     area: "Scientific Infrastructure",
     date: "May 12, 2025",
     dateISO: "2025-05-12",
-    version: "1.0",
+    version: "1.1",
+    updatedDate: "October 7, 2026",
+    updatedDateISO: "2026-10-07",
+    revisionNote: "Editorial update: section numbering removed. Article text and reported results are unchanged.",
+    pdfVersion: "1.0",
     authors: ["NaS"],
     readTime: "42 min read",
     pdfUrl: "/research/papers/nas-cortex-knowledge-architecture.pdf",
@@ -107,7 +115,7 @@ export const researchItems = [
     overviewSections: [
       {
         id: "biological-imperative",
-        title: "1. Introduction: The Biological Imperative",
+        title: "Introduction: The Biological Imperative",
         paragraphs: [
           "Life-science discovery faces a tempo gap: experiments generate new hypotheses faster than wet-lab throughput, regulatory processes, and human analysis can resolve them. Genomics, multi-omics, and clinical systems produce data at a scale that cannot be interpreted manually in real time.",
           "The paper positions Nicole as a coordinating agent for literature, in-silico screening, laboratory protocols, and iterative research. Before that orchestration is possible, Nicole requires a structured knowledge brain capable of integrating new scientific findings while preserving specialized expertise.",
@@ -115,7 +123,7 @@ export const researchItems = [
       },
       {
         id: "time-outruns-bench",
-        title: "2. When Time Outruns the Bench",
+        title: "When Time Outruns the Bench",
         paragraphs: [
           "Biological investigation behaves like a maze that expands with each answer. Mutations, resistance, environmental consequences, and new experimental variables continually reopen questions that appeared settled. Linear increases in staffing improve throughput, but they do not match the combinatorial growth of the problem space.",
           "The paper argues that machine-scale computation can reduce this gap. GPU clusters, predictive models, autonomous laboratories, large scientific corpora, and high-throughput storage provide acceleration, but they require a common intelligence and knowledge architecture to coordinate their outputs.",
@@ -123,7 +131,7 @@ export const researchItems = [
       },
       {
         id: "nas-brain",
-        title: "3. The NaS Brain",
+        title: "The NaS Brain",
         paragraphs: [
           "The proposed cortex contains eight inaugural digital gyri: Autoimmune and Inflammatory Disease; Chronic and Metabolic Disease; Genomics and Personalized Medicine; Infectious Disease and Epidemiology; Neuro and Degenerative Disease; Oncology; Regenerative Medicine; and Systems Biology.",
           "Each gyrus begins as a focused dense transformer and may mature into a sparse Mixture of Experts. Nicole sits above the constellation as an orchestration layer, selecting relevant gyri, reconciling their outputs, and returning an integrated response. Sparse routing is intended to activate only the experts relevant to a token, conserving compute while retaining specialized capacity.",
@@ -132,7 +140,7 @@ export const researchItems = [
       },
       {
         id: "prototype",
-        title: "4. Prototype Experiments and Early Constraints",
+        title: "Prototype Experiments and Early Constraints",
         paragraphs: [
           "The initial pilot used a TinyLLaMA-1B life-science gyrus trained on a 16 GB M1 Mac mini. The first full run processed 36,451 JSON-Lines records from two PubMed snapshots, producing approximately 31 million domain tokens. Manual review of 100 queries exposed expected early-stage limitations including abstract repetition, recycled phrases, weak evidence synthesis, and placeholder citations.",
           "The experiments showed that hardware throughput and unified-memory pressure became practical constraints before theoretical parameter capacity. Longer sequences and larger corpora substantially increased training time, motivating tighter data selection, smaller adapter updates, benchmark-driven iteration, and a staged move to more capable hardware.",
@@ -141,7 +149,7 @@ export const researchItems = [
       },
       {
         id: "compute-bottleneck",
-        title: "5. Compute Bottleneck and the Hardware Fork",
+        title: "Compute Bottleneck and the Hardware Fork",
         paragraphs: [
           "The paper evaluates two broad scaling paths: NVIDIA GPU systems optimized for training throughput and Apple Silicon clusters optimized for unified memory, lower power consumption, and quieter operation. NVIDIA offers the more mature CUDA, NCCL, DeepSpeed, and sharding ecosystem, while high-memory Mac Studio systems can keep larger models resident with substantially lower acoustic and power demands.",
           "The proposed interim strategy continues early prototyping on available Apple hardware, evaluates a high-memory Mac Studio path for inference and adapter updates, and preserves a transition to NVIDIA-based training as model size, funding, and validated computational requirements grow. All performance projections are presented as optimistic estimates requiring real-world benchmarking.",
@@ -149,7 +157,7 @@ export const researchItems = [
       },
       {
         id: "distributed-training",
-        title: "6. Distributed-Training Gap",
+        title: "Distributed-Training Gap",
         paragraphs: [
           "A central engineering challenge is the absence of a production-grade Apple equivalent to NVIDIA NCCL for distributed model training. The paper compares experimental MLX distributed tooling, EXO Labs, CPU-based Gloo coordination, a lightweight gRPC fallback, and temporary CUDA cloud capacity.",
           "The plan of record is to benchmark one-, two-, and three-node configurations, measure actual scaling efficiency, retain MLX as a fallback, and avoid blocking core model development on an immature collective layer. Heavy multi-epoch work can move to CUDA while trained weights return to quieter systems for inference and incremental updates.",
@@ -157,7 +165,7 @@ export const researchItems = [
       },
       {
         id: "conclusion",
-        title: "7. Conclusion: Where NaS Goes Next",
+        title: "Conclusion: Where NaS Goes Next",
         paragraphs: [
           "The roadmap is evolutionary: establish the cortical architecture, prioritize quality over raw corpus volume, phase hardware pragmatically, validate distributed systems before scaling them, and publish stronger safety and performance evidence as the work matures.",
           "Immediate milestones in the paper include completing internal audits of the eight foundational gyri, evaluating distributed scaling, and attempting cross-domain expert fusion only after multiple gyri stabilize. Collaboration is invited across data curation, retrieval, efficient training, and scientific evaluation.",
@@ -165,7 +173,7 @@ export const researchItems = [
       },
       {
         id: "references",
-        title: "8. References",
+        title: "References",
         paragraphs: [
           "The complete paper cites work on SARS-CoV-2 ensemble docking, Switch Transformers, LoRA, retrieval-augmented generation, NVIDIA A100 architecture, AlphaFold, and the SAMPLE self-driving laboratory platform. Full bibliographic references appear in the PDF version of record.",
         ],
@@ -180,9 +188,10 @@ export const researchItems = [
     area: "Institutional",
     date: "May 8, 2025",
     dateISO: "2025-05-08",
-    updatedDate: "July 20, 2026",
-    updatedDateISO: "2026-07-20",
-    version: "2.0",
+    version: "2.1",
+    updatedDate: "October 7, 2026",
+    updatedDateISO: "2026-10-07",
+    revisionNote: "Editorial update: section numbering removed. Article text and reported results are unchanged.",
     authors: ["NaS Research"],
     readTime: "18 min read",
     pdfUrl: null,
@@ -197,7 +206,7 @@ export const researchItems = [
     sections: [
       {
         id: "a-place-for-an-institution",
-        title: "1. A Place for an Institution",
+        title: "A Place for an Institution",
         paragraphs: [
           "Choosing a home for NaS was not a branding exercise. The place where a research institution is built affects the people it can learn from, the infrastructure it can reach, the problems it encounters, the standards it absorbs, and the community to which it becomes accountable. A durable institution grows through repeated contact: with scientists and clinicians, with students and manufacturers, with patients and neighborhoods, with funders and critics, and with other organizations whose work has survived long enough to become part of a city’s fabric.",
           "Chicago is unusually suited to that kind of institution-building. It is a global city at the center of the continent; a university city, a hospital city, a manufacturing city, a transportation city, and a city of neighborhoods. Its scientific assets are not confined to one campus or one industry. They stretch from Hyde Park to Streeterville, through the Illinois Medical District and Fulton Market, into the pharmaceutical and medical-device corridor of Lake County, and outward to national laboratories, community colleges, production facilities, and logistics networks across northern Illinois.",
@@ -206,7 +215,7 @@ export const researchItems = [
       },
       {
         id: "life-science-scale",
-        title: "2. A Life-Science Economy at Meaningful Scale",
+        title: "A Life-Science Economy at Meaningful Scale",
         paragraphs: [
           "Greater Chicago already operates at a scale that matters to the life sciences. World Business Chicago reports more than 90,000 life-science professionals across the region and more than $45 billion in life-science gross regional product. It identifies the metro as a national center for biotechnology, medical technology, health innovation, and medical-device manufacturing. Those numbers matter because scientific ecosystems become more resilient when expertise exists across many employers and disciplines rather than inside a single dominant company.",
           "The region’s geography creates several complementary clusters. Downtown and the Near West Side are adding laboratories, incubators, university-linked programs, and company-building infrastructure. The North Side and northern suburbs connect research hospitals and universities to established pharmaceutical, diagnostics, device, and healthcare companies. Lake County contains one of the country’s largest concentrations of life-science companies and the largest such concentration in the Midwest, according to Illinois’ economic growth plan.",
@@ -215,7 +224,7 @@ export const researchItems = [
       },
       {
         id: "universities-and-medicine",
-        title: "3. Universities, Medical Schools, and Academic Medicine",
+        title: "Universities, Medical Schools, and Academic Medicine",
         paragraphs: [
           "Chicago’s strongest scientific advantage is the density of institutions that create, test, and teach biomedical knowledge. Northwestern University, the University of Chicago, and the University of Illinois Chicago form three major research anchors with distinct strengths and patient communities. The Chicago Biomedical Consortium was created around these universities precisely because collaboration across them can move discoveries further than any institution working alone.",
           "Northwestern’s Feinberg School of Medicine sits in downtown Chicago within a major academic medical environment. Feinberg reports $695.4 million in awards for the 2024-2025 academic year and maintains 34 research core facilities across its Chicago and Evanston campuses. Its relationships with Northwestern Medicine, Lurie Children’s research programs, Shirley Ryan AbilityLab, the Jesse Brown VA Medical Center, and other affiliates connect fundamental science, engineering, clinical investigation, rehabilitation, and patient care.",
@@ -226,7 +235,7 @@ export const researchItems = [
       },
       {
         id: "pharmacy-and-drug-discovery",
-        title: "4. Pharmacy, Drug Discovery, and Translational Science",
+        title: "Pharmacy, Drug Discovery, and Translational Science",
         paragraphs: [
           "For an organization interested in medicines and biomedical intelligence, Chicago’s pharmacy tradition is especially important. UIC’s Retzky College of Pharmacy began as the Chicago College of Pharmacy in 1859, making it one of the oldest pharmacy colleges in the United States. The college describes its program as the country’s largest and most comprehensive, with more than 200 clinical faculty and seven college-run ambulatory pharmacies. It is also a major research institution working across drug discovery and development, infectious disease, cancer, women’s health, pharmacoepidemiology, personalized medicine, and community health outcomes.",
           "This combination of pharmaceutical science and clinical practice is exactly what translation requires. Medicinal chemistry, pharmacognosy, drug delivery, molecular biology, health outcomes, pharmacy practice, and patient care sit within one academic health enterprise. UIC’s pharmaceutical-sciences programs are located in the Illinois Medical District, near hospitals, research laboratories, public-health expertise, and a deeply varied patient population.",
@@ -235,7 +244,7 @@ export const researchItems = [
       },
       {
         id: "industry-and-manufacturing",
-        title: "5. An Industry Base That Reaches from Discovery to Manufacturing",
+        title: "An Industry Base That Reaches from Discovery to Manufacturing",
         paragraphs: [
           "Chicago’s life-science economy is not purely academic. Northern Illinois is home to companies whose work spans research, drug development, diagnostics, devices, nutrition, manufacturing, regulatory operations, and global commercialization. AbbVie’s world headquarters and 570-acre North Chicago campus bring together discovery research, development sciences, genomics, clinical work, regulatory functions, manufacturing, and other capabilities across immunology, neuroscience, oncology, aesthetics, and specialty medicine. Abbott, which began in a Chicago pharmacy, is headquartered at Abbott Park and operates globally across diagnostics, medical devices, nutrition, and medicines.",
           "The regional company base also includes Baxter’s long-standing Deerfield presence; Astellas Pharma US in Northbrook; Fresenius Kabi, Lundbeck, CSL Behring, Horizon’s legacy operations, medical-device and diagnostics companies, contract manufacturers, suppliers, and specialized service organizations throughout the suburbs. These companies create an experienced workforce that understands what happens after a promising experiment: process development, quality systems, clinical operations, regulatory strategy, production, distribution, and support at global scale.",
@@ -245,7 +254,7 @@ export const researchItems = [
       },
       {
         id: "translation-ecosystem",
-        title: "6. A Translation Ecosystem Taking Shape",
+        title: "A Translation Ecosystem Taking Shape",
         paragraphs: [
           "Chicago is building more of the connective tissue that turns academic work into companies and shared platforms. The Chicago Biomedical Consortium works across Illinois universities to identify promising science, provide milestone-based support, and develop biotechnology companies rooted in the region. MATTER supports healthcare innovation; Portal Innovations and Fulton Labs add company-building and laboratory infrastructure; university technology-transfer offices and hospital innovation programs provide additional routes from research to application.",
           "The Chan Zuckerberg Biohub Chicago represents an important vote of confidence in the city’s collaborative capacity. Built around the University of Chicago, Northwestern, and UIC, the Biohub is focused on new technologies for understanding inflammation and human tissue, with laboratories, meeting space, and a biofoundry intended to support cross-institutional science. Its selection of Chicago demonstrated that the city’s universities can compete together for major scientific platforms rather than only as separate institutions.",
@@ -255,7 +264,7 @@ export const researchItems = [
       },
       {
         id: "continental-infrastructure",
-        title: "7. The Infrastructure of a Continental City",
+        title: "The Infrastructure of a Continental City",
         paragraphs: [
           "Chicago’s central location is often described casually, but for science and manufacturing it is a concrete operational advantage. The metropolitan region is North America’s principal rail interchange: the Chicago Metropolitan Agency for Planning reports that roughly one quarter of U.S. freight trains and half of all intermodal trains pass through the region. Ten interstate highways, six Class I railroads, O’Hare’s air-cargo system, and access to Great Lakes and Mississippi River maritime networks connect the city to suppliers, research partners, production sites, and customers across the continent.",
           "In 2023, nearly 700 million tons of goods valued at more than $1 trillion moved to, from, or within northeastern Illinois. In 2024, the regional freight industry employed more than 210,000 people across more than 14,000 establishments. The scale can create congestion and environmental burdens that require serious planning, but it also means that Chicago possesses logistics knowledge and physical infrastructure few American regions can match.",
@@ -264,7 +273,7 @@ export const researchItems = [
       },
       {
         id: "global-access",
-        title: "8. Access to the Country and the World",
+        title: "Access to the Country and the World",
         paragraphs: [
           "O’Hare makes Chicago unusually accessible for a city in the middle of the continent. As of July 2026, the Chicago Department of Aviation listed approximately 1,154 daily direct flights from O’Hare to 197 U.S. cities and 150 daily direct flights to 69 international destinations. That reach makes it practical to maintain relationships with laboratories, universities, companies, conferences, investors, and collaborators across North America, Europe, Asia, and beyond without treating the coasts as the only gateways to the world.",
           "Chicago is also one of the few cities with direct rail service to two major airports. The CTA Blue Line serves O’Hare and the Orange Line serves Midway, while Metra and Amtrak connect downtown to the suburbs and other cities. The regional network is imperfect and must continue improving, but it gives students, employees, visitors, and partners multiple ways to reach the city and move through it.",
@@ -273,7 +282,7 @@ export const researchItems = [
       },
       {
         id: "education-and-talent",
-        title: "9. Education as a Regional Pipeline",
+        title: "Education as a Regional Pipeline",
         paragraphs: [
           "A scientific institution needs a pipeline wider than elite graduate programs. Chicago’s educational system stretches from neighborhood schools and career programs through community colleges, research universities, medical schools, and postgraduate training. Chicago Public Schools offers career and technical education pathways in health sciences, information technology, agricultural science, manufacturing, and pre-engineering, along with dual-credit and early-college options. These programs create opportunities for students to encounter scientific and technical work before deciding that such careers belong to someone else.",
           "City Colleges of Chicago connects accessible education to the region’s economy through programs in healthcare, natural sciences, advanced manufacturing, information technology, and transportation and logistics. Truman College’s biotechnology associate program includes hands-on training in the biomanufacturing of products using bacterial, yeast, algal, and eukaryotic cell systems. That is an unusually direct bridge between community-college education and the technical workforce required by a growing biotechnology sector.",
@@ -283,7 +292,7 @@ export const researchItems = [
       },
       {
         id: "diversity-and-culture",
-        title: "10. Diversity Is Scientific Infrastructure",
+        title: "Diversity Is Scientific Infrastructure",
         paragraphs: [
           "Chicago is a city of people, languages, histories, and neighborhoods. Census data for 2020-2024 estimate that 20.9 percent of city residents were born outside the United States and that 35.4 percent of residents age five and older spoke a language other than English at home. Across 77 community areas, the city includes major Black, Latino, Asian, European, Middle Eastern, immigrant, refugee, and multigenerational communities, each with distinct institutions and experiences.",
           "For biomedical research, diversity is not decorative. Disease burden, environmental exposure, access to care, trust in institutions, language, diet, work, housing, and family history all shape health. A city with wide human variation forces scientific systems to confront the limits of narrow datasets and universal claims. It creates opportunities for more representative research, but only when communities are treated as partners and beneficiaries rather than convenient sources of data.",
@@ -293,7 +302,7 @@ export const researchItems = [
       },
       {
         id: "why-it-fits-nas",
-        title: "11. Why Chicago Fits NaS",
+        title: "Why Chicago Fits NaS",
         paragraphs: [
           "NaS is not being built as a coastal imitation. Chicago’s character is better aligned with the institution we want to become: ambitious without requiring spectacle, technically serious, shaped by industry as well as theory, and conscious that knowledge must eventually survive contact with the physical world. This is a city that designed skyscrapers, reversed a river, organized continental rail, built global companies, trained generations of physicians, and repeatedly turned practical constraints into new forms of engineering and culture.",
           "The city also rewards the long view. Chicago’s most important institutions were not weekend projects. They were built through decades of teaching, care, experimentation, philanthropy, public investment, labor, conflict, and revision. NaS intends to follow that institutional timescale. Models will change. Hardware will change. Individual research programs may succeed, fail, or evolve. The organization must be capable of learning through all of it.",
@@ -302,7 +311,7 @@ export const researchItems = [
       },
       {
         id: "our-commitment",
-        title: "12. Our Commitment to Chicago",
+        title: "Our Commitment to Chicago",
         paragraphs: [
           "Choosing Chicago creates an obligation. NaS should not simply use the city as an address while directing all value elsewhere. As the organization develops, we intend to publish research openly where responsible, collaborate across institutions, create tools that expand local scientific capacity, support pathways into technical work, and contribute to a life-science ecosystem that is more connected and more representative of the city around it.",
           "We will begin modestly. NaS is still founder-led and early. We do not yet possess the laboratories, workforce, partnerships, or resources implied by our long-term vision. Our immediate responsibility is to do credible work, describe it honestly, invite serious criticism, and build relationships before making promises on behalf of communities or institutions we have not earned the right to represent.",
@@ -343,9 +352,10 @@ export const researchItems = [
     area: "Institutional",
     date: "July 20, 2026",
     dateISO: "2026-07-20",
-    updatedDate: "July 21, 2026",
-    updatedDateISO: "2026-07-21",
-    version: "1.1",
+    version: "1.2",
+    updatedDate: "October 7, 2026",
+    updatedDateISO: "2026-10-07",
+    revisionNote: "Editorial update: section numbering removed. Article text and reported results are unchanged.",
     authors: ["NaS Research"],
     readTime: "8 min read",
     pdfUrl: null,
@@ -363,7 +373,7 @@ export const researchItems = [
     sections: [
       {
         id: "the-mismatch",
-        title: "1. A Mismatch We Could Not Ignore",
+        title: "A Mismatch We Could Not Ignore",
         paragraphs: [
           "NaS did not begin because the world needed another technology company. We began because modern technology had demonstrated extraordinary capability, and because too little of that capability was reaching the people working on biology’s hardest problems.",
           "Our founder came to software engineering from a background in biology. While working for a Silicon Valley company, he encountered systems that could organize enormous amounts of information, automate complex work, and give small teams capabilities that would have seemed impossible only a few years earlier. He saw sophisticated infrastructure, intelligent software, and an engineering culture capable of turning an idea into a tool used at extraordinary scale.",
@@ -373,7 +383,7 @@ export const researchItems = [
       },
       {
         id: "scientists-deserve-better",
-        title: "2. Scientists Deserve Better Tools",
+        title: "Scientists Deserve Better Tools",
         paragraphs: [
           "The problem was never that scientists lacked intelligence, imagination, or discipline. The problem was that their working environment did not always compound those qualities. Biological knowledge was distributed across papers, databases, specialties, institutions, and formats that were never designed to function as one coherent system. Valuable time was spent finding information, reconciling terminology, moving between incompatible tools, and rebuilding context that should have remained available.",
           "Modern software had already shown what happens when people receive better abstractions and better infrastructure. A well-designed tool does not diminish expertise. It gives expertise reach. It removes unnecessary friction, preserves context, and allows a person to spend more of their attention on the part of the work that only they can do.",
@@ -382,7 +392,7 @@ export const researchItems = [
       },
       {
         id: "stopped-waiting",
-        title: "3. We Stopped Waiting",
+        title: "We Stopped Waiting",
         paragraphs: [
           "For a time, our founder expected someone else to build it. The need seemed too obvious and the opportunity too important. He looked for an institution that would bring the full force of contemporary software engineering to the life sciences without reducing biology to a marketing category or treating researchers as an afterthought.",
           "Eventually, we stopped waiting.",
@@ -392,7 +402,7 @@ export const researchItems = [
       },
       {
         id: "shovels-for-discovery",
-        title: "4. Shovels for Discovery",
+        title: "Shovels for Discovery",
         paragraphs: [
           "The purpose of NaS is to empower scientists. We want to give them the foundations, resources, and instruments required to explore and to build the modern shovels with which new scientific ground can be opened.",
           "A shovel does not decide where to dig. A microscope does not determine which observation matters. A knowledge system does not replace the scientist who understands the experiment, recognizes the anomaly, or sees a possibility that no benchmark anticipated. The instrument matters because of what it allows a capable person to do.",
@@ -402,7 +412,7 @@ export const researchItems = [
       },
       {
         id: "the-oasis",
-        title: "5. An Oasis for Scientific Work",
+        title: "An Oasis for Scientific Work",
         paragraphs: [
           "Our long-term ambition is larger than a single model, application, or publication. We want NaS to become an oasis for scientific work: a place where biologists, researchers, clinicians, engineers, and other life-science people can find the knowledge, tools, infrastructure, and freedom required to pursue difficult questions.",
           "An oasis does not promise that every experiment will succeed. Science advances through uncertainty, failed hypotheses, incomplete evidence, and patient revision. What it can provide is the environment in which ambitious investigation remains possible: the time to think, the instruments to test, the systems to remember, and the company of people who understand why the question is worth pursuing.",
@@ -411,7 +421,7 @@ export const researchItems = [
       },
       {
         id: "where-we-begin",
-        title: "6. Where We Begin",
+        title: "Where We Begin",
         paragraphs: [
           "We begin with the systems we can build now. The NaS Cortex is an early expression of the mission: a knowledge architecture intended to organize life-science information into specialized domains while preserving the relationships needed for scientific reasoning. It is not the final form of NaS. It is the first foundation.",
           "This work starts in software because software can extend the reach of a small, early institution. It allows us to develop architectures, study scientific information, create tools, publish our reasoning, and learn before claiming capabilities we have not yet earned. Over time, those systems can support richer forms of investigation, stronger collaborations, experimental infrastructure, and research programs that move between computation and the physical world.",
@@ -420,7 +430,7 @@ export const researchItems = [
       },
       {
         id: "the-work-ahead",
-        title: "7. The Work Ahead",
+        title: "The Work Ahead",
         paragraphs: [
           "NaS will be built over a long horizon. Individual technologies will change. Models will be replaced, research directions will evolve, and some experiments will fail. The institution must be more durable than any one implementation. Its purpose is to keep learning how better systems can serve scientific discovery and to turn those lessons into tools researchers can actually use.",
           "We will organize knowledge. We will develop scientific instruments. We will create stronger foundations for discovery. We will work toward an environment in which researchers have more freedom to explore, create, and attempt what presently appears beyond reach.",
@@ -438,7 +448,10 @@ export const researchItems = [
     area: "Community",
     date: "July 21, 2026",
     dateISO: "2026-07-21",
-    version: "1.0",
+    version: "1.1",
+    updatedDate: "October 7, 2026",
+    updatedDateISO: "2026-10-07",
+    revisionNote: "Editorial update: section numbering removed. Article text and reported results are unchanged.",
     authors: ["NaS Research"],
     readTime: "5 min read",
     pdfUrl: null,
@@ -456,7 +469,7 @@ export const researchItems = [
     sections: [
       {
         id: "home-before-strategy",
-        title: "1. Home Before Strategy",
+        title: "Home Before Strategy",
         paragraphs: [
           "We did not choose Hyde Park through a corporate search for the most advantageous address. Hyde Park was home to our founder before it became home to NaS. It is where the institution’s earliest ideas took shape and where our purpose found a community capable of giving those ideas room to grow.",
           "That personal connection matters. An institution should understand the place in which it intends to build, not simply arrive because the location appears useful. Our roots here give NaS a starting point based on belonging, memory, and responsibility rather than convenience alone.",
@@ -464,7 +477,7 @@ export const researchItems = [
       },
       {
         id: "room-for-ideas",
-        title: "2. A Place That Makes Room for Ideas",
+        title: "A Place That Makes Room for Ideas",
         paragraphs: [
           "Hyde Park has a rare intellectual and creative character. Scientists, students, artists, writers, musicians, activists, lifelong residents, and people from many traditions share the neighborhood. Different pursuits coexist here, and unusual ideas are allowed to become serious work.",
           "The University of Chicago strengthens that culture through its commitment to rigorous inquiry, interdisciplinary research, and the testing of difficult ideas. But Hyde Park is larger than the university. Its bookstores, theaters, museums, music, architecture, conversations, and community institutions create an environment where scholarship remains connected to public and creative life.",
@@ -472,7 +485,7 @@ export const researchItems = [
       },
       {
         id: "beauty-and-place",
-        title: "3. Beauty Is Part of the Place",
+        title: "Beauty Is Part of the Place",
         paragraphs: [
           "Hyde Park sits beside Lake Michigan, surrounded by parks, paths, museums, historic buildings, and streets made for walking and reflection. The lake changes the scale of the neighborhood. It gives people space to think, breathe, gather, and return to their work with a different perspective.",
           "Beauty is not separate from institution-building. Difficult work asks people to remain with a problem for years. Places retain thoughtful and creative people when those people can also find community, movement, culture, and a life worth inhabiting. Hyde Park offers that depth.",
@@ -480,7 +493,7 @@ export const researchItems = [
       },
       {
         id: "the-south-side",
-        title: "4. Our Responsibility to the South Side",
+        title: "Our Responsibility to the South Side",
         paragraphs: [
           "Hyde Park belongs to Chicago’s South Side. That identity carries pride and responsibility. The South Side has given the world extraordinary science, medicine, literature, music, architecture, political thought, and cultural invention. It has also experienced persistent disinvestment, unequal access to care, food insecurity, and serious health disparities.",
           "UChicago Medicine’s 2024 to 2025 Community Health Needs Assessment gathered input from nearly 1,800 South Side residents. It identified chronic disease, trauma and behavioral health, and social inequities such as access to care, food insecurity, and workforce development as continuing priorities. These are not abstractions. They shape the lives of the communities surrounding us.",
@@ -489,7 +502,7 @@ export const researchItems = [
       },
       {
         id: "worthy-of-home",
-        title: "5. Becoming Worthy of Our Home",
+        title: "Becoming Worthy of Our Home",
         paragraphs: [
           "As NaS grows, our presence should create value beyond the boundaries of the institution. That may eventually include scientific tools, educational pathways, research opportunities, technical employment, and work that strengthens local capacity in the life sciences. We will define those efforts with community partners when we possess the resources and relationships required to do them well.",
           "We are early, so we will not announce commitments before we can honor them. Our responsibility now is to produce credible work, listen carefully, build relationships, and ensure that the future of NaS develops with an awareness of the place that made its beginning possible.",

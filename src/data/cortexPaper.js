@@ -10,7 +10,7 @@ export const cortexPaperSections = [
   },
   {
     "id": "biological-imperative",
-    "title": "1 Introduction: The Biological Imperative",
+    "title": "Introduction: The Biological Imperative",
     "level": 1,
     "blocks": [
       "Life-science discovery suffers a tempo gap: every experiment spawns dozens of new hypotheses, yet wet-lab throughput is limited by cell-doubling times, animal cohorts, and long regulatory queues. Cancer genomes contain billions of mutable states, antibiotic resistance evolves faster than drug pipelines, and multi-omics repositories now pour out petabytes of data that humans cannot parse in real time. The result is a structural lag between biological insight and clinical intervention. As Richard Feynman noted, he preferred *“questions that cannot be answered to answers that cannot be questioned.”*¹ Biology now spawns such questions at machine pace, and only machine-scale reasoning can keep up. GPUs, large-language models, autonomous robots, and quantum simulators offer the raw horsepower, yet without a conductor they remain a jumble of virtuoso instruments. Nicole is that conductor: a sovereign agent designed to read the literature, launch in-silico screens, dispatch lab protocols, and fuse every result into the next, better question.",
@@ -19,7 +19,7 @@ export const cortexPaperSections = [
   },
   {
     "id": "time-outruns-bench",
-    "title": "2 When Time Outruns the Bench",
+    "title": "When Time Outruns the Bench",
     "level": 1,
     "blocks": [
       "Life-science discovery is limited less by imagination than by time. Each experimental result branches into a lattice of new hypotheses, and the backlog expands faster than laboratory hours can accumulate. The widening gap between biological complexity and empirical cadence is the primary obstacle we now confront.",
@@ -29,7 +29,7 @@ export const cortexPaperSections = [
   },
   {
     "id": "endless-maze",
-    "title": "2.1 The Endless Maze",
+    "title": "The Endless Maze",
     "level": 2,
     "blocks": [
       "The investigative journey in biology resembles a maze that regenerates the farther one walks. Every answered question unlocks several branching corridors, each lined with doors. Mapping one gene’s role in a metabolic disorder exposes its splice variants, its epigenetic regulators, its evolutionary homologs, and the downstream networks it touches in different cell types. The route never straightens into a single hallway that ends in certainty. Persistence alone cannot reach the center; the structure lengthens with each step.",
@@ -38,7 +38,7 @@ export const cortexPaperSections = [
   },
   {
     "id": "computation-time-cutter",
-    "title": "2.2 Computation as Time-Cutter",
+    "title": "Computation as Time-Cutter",
     "level": 2,
     "blocks": [
       "Adding people scales linearly: more graduate students, more clinicians, even fleets of lab robots raise throughput only in step with head-count. Crowdsourced efforts like Foldit and Galaxy Zoo confirm the pattern. Each extra worker opens a new lane, but the speed limit hardly changes.",
@@ -48,7 +48,7 @@ export const cortexPaperSections = [
   },
   {
     "id": "nas-brain",
-    "title": "3 The NaS Brain",
+    "title": "The NaS Brain",
     "level": 1,
     "blocks": [
       "The acceleration tools described in the previous section (quantum processors, GPU clusters, autonomous laboratories, and vast data stores) are valuable only insofar as they are guided by a capable intelligence. NaS therefore starts with a single overriding requirement: the creation of a knowledge brain, Nicole, that can survey the biological maze, delegate questions to specialised engines, and combine their findings into coherent guidance for research, manufacturing, and venture work. The pages that follow trace both the biological inspiration and the technical design of this brain, moving from cortical principles to large-language-model architecture and finally to the memory and training cycles that will keep the system learning without pause."
@@ -56,7 +56,7 @@ export const cortexPaperSections = [
   },
   {
     "id": "cognition-design",
-    "title": "3.1 Cognition by Design",
+    "title": "Cognition by Design",
     "level": 2,
     "blocks": [
       "The human cortex supplies the blueprint for our knowledge engine. We trust this architecture not only because it is the product of long evolutionary refinement but also because, in our view, it is the framework God chose for reasoning and creativity. The brain seldom commits its entire volume to a single problem; task-relevant regions ignite in coordinated clusters while the remainder stays quiet. Sensory input routes to primary cortices, symbolic processing coalesces in language hubs, and executive planning emerges from prefrontal circuits, all without global saturation. Neuroanatomy charts this division of labor with remarkable precision. Brodmann’s map of fifty-two cyto-architectural areas reveals distinct micro-circuits for vision, somato-sensation, language, and motor control. Broca’s area governs speech production, Wernicke’s supports comprehension, and parietal association zones fuse multisensory data for spatial reasoning. Each region specialises, yet fibers such as the arcuate fasciculus and corpus callosum let information flow so that local insight becomes global understanding. NaS applies the same gyral logic. Nicole begins life as a dense transformer, the analogue of an infant cortex in which many neurons fire broadly. As her corpus grows we will fold the surface; independent gyri, complete domain models for oncology, epidemiology, genomics, and other disciplines, will appear as separate checkpoints. When a gyrus matures, its interior layers will divide into a sparse MoE whose experts serve as digital Brodmann areas. A router then activates only the two or three experts most relevant to each token, conserving compute just as the biological brain conserves energy by letting only a subset of neurons spike.",
@@ -65,7 +65,7 @@ export const cortexPaperSections = [
   },
   {
     "id": "gyri-graphs",
-    "title": "3.2 From Gyri to Graphs",
+    "title": "From Gyri to Graphs",
     "level": 2,
     "blocks": [
       "The cerebral cortex partitions expertise by region. Brodmann mapped fifty-two areas, each tuned to a distinct facet of perception or action. NaS follows the same topology in code. We begin by training a constellation of specialised language models, each devoted to a major branch of the life sciences. Listed alphabetically, our inaugural digital gyri are ● Autoimmune and Inflammatory Disease",
@@ -80,7 +80,7 @@ export const cortexPaperSections = [
   },
   {
     "id": "expert-formation",
-    "title": "3.3 Expert Formation: Digital Brodmann Areas",
+    "title": "Expert Formation: Digital Brodmann Areas",
     "level": 2,
     "blocks": [
       "Modern language models gain most quickly by adding parameters, yet a dense network wastes computation on weights that are irrelevant to a given token. Recent developments in transformer architectures using sparse Mixture of Experts (MoE), such as the Switch Transformer model, confirm substantial efficiency gains by activating only a few expert blocks per token, significantly speeding up training times and improving computational efficiency compared to traditional dense transformers (Fedus et al., 2022).3 The biological cortex solves the same problem with locality, only the neurons tuned to a stimulus fire, while their neighbors rest. NaS copies that idea by turning the deepest",
@@ -93,7 +93,7 @@ export const cortexPaperSections = [
   },
   {
     "id": "training-evolution",
-    "title": "3.4 Training and Evolution Cycle",
+    "title": "Training and Evolution Cycle",
     "level": 2,
     "blocks": [
       "Biology shows that adding neurons alone does not guarantee sharper cognition. Beyond a point extra synapses add noise, and the cortex prunes weak connections while reinforcing the useful ones. NaS follows the same rule. Parameter counts rise only until accuracy plateaus on domain benchmarks; after that we refine or split existing gyri instead of inflating the core without limit.",
@@ -106,7 +106,7 @@ export const cortexPaperSections = [
   },
   {
     "id": "expert-fusion",
-    "title": "3.5 From Federated Gyri to Expert Fusion",
+    "title": "From Federated Gyri to Expert Fusion",
     "level": 2,
     "blocks": [
       "Nicole’s brain begins in a strictly modular state. Every domain lives in its own digital gyrus, so a query fans out to several checkpoints, each returns a local answer, and Nicole stitches the pieces into one clinical recommendation. The layout is valuable during early research: an epidemiology mis-tune cannot corrupt oncology, updates ship as small files instead of 200-gigabyte monoliths, and rollback is just a matter of pointing the router at yesterday’s model. Once a gyrus stabilizes, meaning its corpus grows slowly and weekly fine-tunes no longer shift benchmarks, we freeze its base weights and limit new learning to lightweight LoRA or IA³ adapters. Low-Rank Adaptation (LoRA)addresses the computational inefficiency of full fine-tuning large foundation models by freezing the original network weights and injecting small, low-rank matrices that significantly reduce trainable parameters, often cutting parameters by factors of thousands compared to full fine-tuning, with substantially lower memory consumption and equal or improved task performance. Infused Adapter by Inhibiting and Amplifying Inner Activations (IA³) similarly achieves high task performance by applying small-scale vectors to hidden activations, providing comparable efficiency gains with minimal additional parameters.⁴ The strategy keeps VRAM and audit footprints small while letting us patch a domain overnight whenever a pivotal paper appears. Maturity eventually flips the cost balance. Routing through many separate checkpoints adds latency, and the larger memory budget of a frozen gyrus can support a sparse MoE without risk. At that stage we merge the busiest gyri behind a shared router. For each",
@@ -115,7 +115,7 @@ export const cortexPaperSections = [
   },
   {
     "id": "corpus-capacity",
-    "title": "3.6 Balancing Corpus and Capacity",
+    "title": "Balancing Corpus and Capacity",
     "level": 2,
     "blocks": [
       "Machine learning practice offers a rule of thumb: maintain roughly ten to twenty training tokens per learnable parameter. A one-billion-parameter network is therefore “well fed” by ten to twenty billion tokens; beyond that point, additional data yield diminishing returns.",
@@ -129,7 +129,7 @@ export const cortexPaperSections = [
   },
   {
     "id": "safety-governance",
-    "title": "3.7 Safety & Governance Roadmap",
+    "title": "Safety & Governance Roadmap",
     "level": 2,
     "blocks": [
       "Nicole is still in an internal-prototype phase: the only data ingested so far are public-domain literature, and no clinical decisions are being made. Before any patient-facing deployment we will add a lightweight but concrete governance loop:",
@@ -142,7 +142,7 @@ export const cortexPaperSections = [
   },
   {
     "id": "prototype-experiments",
-    "title": "4 Prototype Experiments and Early Constraints",
+    "title": "Prototype Experiments and Early Constraints",
     "level": 1,
     "blocks": [
       "We began with a single pilot gyrus, a general-purpose life-science model fine-tuned from TinyLLaMA-1 B (≈1 B parameters). A model of that size fits on a deskside Mac, yet is large enough to expose data-cleaning bugs, stress the training scheduler, and reveal which evaluation signals track real scientific value. Over time the open-source sweep could reach eight million articles (≈40 B tokens). At that scale each domain gyrus is expected to mature into a ≈30 B-parameter expert, giving Nicole a constellation of large but still tractable specialists. Starting small lets us perfect the pipeline before paying the memory and runtime bill for those future models. The pilot serves as a sandbox for every moving part: learning-rate schedules, prompt schema, and evaluation metrics. Just as important, it surfaces the gradient we must climb next, including how token volume stretches wall-clock, how shared memory becomes the first ceiling, and how quickly even a modest corpus outgrows a single M-series node."
@@ -150,7 +150,7 @@ export const cortexPaperSections = [
   },
   {
     "id": "qualitative-improvement",
-    "title": "4.1 Qualitative Improvement",
+    "title": "Qualitative Improvement",
     "level": 2,
     "blocks": [
       "Data set. The first full run loaded 36 451 JSON-Lines records from two PubMed snapshots (May 2013 and January 2025). After tokenization we obtained about 31 million domain tokens, roughly 0.03 tokens per parameter because the base model already contains its general-language pre-training.",
@@ -168,7 +168,7 @@ export const cortexPaperSections = [
   },
   {
     "id": "capacity-signals",
-    "title": "4.2 Early Capacity Signals",
+    "title": "Early Capacity Signals",
     "level": 2,
     "blocks": [
       "A common rule of thumb holds that a language model remains well behaved while its training corpus stays below about twenty tokens per learnable parameter. A one-billion-parameter network can therefore absorb roughly twenty billion tokens before capacity begins to limit learning. Our pilot gyrus sits far beneath that line: the first full run processed about thirty-one million tokens, or 0.03 token per parameter. Even if the refresh cadence stays at ten to twelve thousand new papers per month (about fifteen million tokens) plus updated instruction pairs, the total would rise to only three-hundred million tokens in a year and cross one billion tokens in two to three years. Parameter capacity will not be the first barrier; two other constraints surface much sooner. ● Wall-clock time: The initial two-epoch LoRA fine-tune lasted about seventy-five hours on a single M-series Mac mini. If runtime grows linearly, doubling the corpus pushes a single epoch toward four days, and a ten-fold expansion stretches one epoch beyond a month, breaking the overnight cadence required for daily incremental learning. ● Unified-memory head-room: The Mac mini’s 16 GB pool already forces micro-batches and heavy gradient accumulation. Moving to a two-billion-parameter dense model would double activations and optimizer states; a thirty-billion-parameter target in standard 32-bit precision would require roughly 240 to 300 GB active memory (about 60 GB FP16 weights, 60 GB FP16 gradients, 120 GB FP32 Adam moments, and 20 to 60 GB activations). macOS will not crash when that footprint exceeds physical RAM; it silently pages tensors to the SSD. Training continues, but effective memory bandwidth collapses from hundreds of gigabytes per second to a few gigabytes per second, turning minute-long steps into multi-minute stalls and pushing epoch time far beyond the twenty-four-hour budget. Throughput, not allocation failure, therefore sets the practical ceiling.",
@@ -178,7 +178,7 @@ export const cortexPaperSections = [
   },
   {
     "id": "training-time",
-    "title": "4.3 Escalating Training Time",
+    "title": "Escalating Training Time",
     "level": 2,
     "blocks": [
       "The first production run completed a single-epoch LoRA fine-tune in about 14 hours on a 16 GB M1 Mac mini while processing 14 685 cleaned chunks, roughly 15 million tokens. If we simply triple the corpus to about 45 000 chunks, ≈ 45 million tokens, the same code path is projected to need forty hours or more. Training cost is rising faster than token count.",
@@ -192,7 +192,7 @@ export const cortexPaperSections = [
   },
   {
     "id": "precision-roadmap",
-    "title": "4.4 Precision Roadmap",
+    "title": "Precision Roadmap",
     "level": 2,
     "blocks": [
       "Our present pipeline uses a single precision level for data preparation and model updates while reserving reduced precision for serving:",
@@ -206,7 +206,7 @@ export const cortexPaperSections = [
   },
   {
     "id": "compute-bottleneck",
-    "title": "5 Compute Bottleneck and the Hardware Fork",
+    "title": "Compute Bottleneck and the Hardware Fork",
     "level": 1,
     "blocks": [
       "Our pilot runs already show the bottleneck shifting from algorithms to hardware. Even before we reach our goal of daily fine-tuning, the single M1 workstation has exhausted its GPU share of unified memory, and wall-clock time is climbing faster than the corpus. To keep pace and ultimately support a 24-hour refresh cycle, NaS needs far more compute, both in memory capacity and raw throughput, than any standalone box can offer. A market scan and budget review leave two practical architectures on the table: 1. An NVIDIA GPU rack (e.g., RTX 5090 or H100) with NVLink-class interconnect.",
@@ -215,7 +215,7 @@ export const cortexPaperSections = [
   },
   {
     "id": "nvidia-rack",
-    "title": "5.1 NVIDIA GPU Rack",
+    "title": "NVIDIA GPU Rack",
     "level": 2,
     "blocks": [
       "Compute Unified Device Architecture (CUDA) GPUs remain the most direct and efficient route from electricity and budget to gradient steps. A single board offers thousands of floating-point (FP) and integer (INT) tensor cores, and multi-card rigs stitched together with Neural Collective Communication Library (NCCL) or NVLink on data-center or workstation models can process an entire transformer layer in one sweep. Modern optimizers such as DeepSpeed, Zero Redundancy Optimizer (ZeRO-3), Fully Sharded Data Parallel (FSDP), and Megatron are developed for this ecosystem first. The remaining choice is the class of card and the count needed for the task.",
@@ -236,7 +236,7 @@ export const cortexPaperSections = [
   },
   {
     "id": "apple-cluster",
-    "title": "5.2 Apple-Silicon Cluster",
+    "title": "Apple-Silicon Cluster",
     "level": 2,
     "blocks": [
       "Apple’s Mac Studio M3 Ultra offers a very different route to the same destination: enormous unified memory, low-ish wattage, and near-silent deskside operation.",
@@ -255,7 +255,7 @@ export const cortexPaperSections = [
   },
   {
     "id": "interim-decision",
-    "title": "5.3 Interim Decision - and the problem we still have to solve",
+    "title": "Interim Decision - and the problem we still have to solve",
     "level": 2,
     "blocks": [
       "For now, NaS will continue leveraging Apple Silicon hardware (currently a 16 GB M1 Mac mini) due primarily to resource availability and budget constraints. While Apple hardware currently lacks mature collective training frameworks compared to NVIDIA’s CUDA/NCCL ecosystem, it offers sufficient capabilities for initial experimentation, prototyping, and incremental fine-tuning tasks. As the knowledge model grows and scaling requirements increase, we plan a deliberate transition toward more proven NVIDIA-based architectures, such as RTX 5090 or Blackwell GPU racks. This phased hardware strategy balances current constraints with future scalability. This disciplined approach incurs minimal costs during initial budget constraints. The first capital purchase, however, will be a Mac Studio M3 Ultra configured with the announced 512 GB of unified ECC memory. A single node in that class is projected to sustain ≈ 70 TFLOPs FP16 (about seven times the 10-TFLOP kernel rate we measure on the M1 mini), cutting the pilot fine-tune from roughly three days to ≈ 10 hours. The 512 GB head-room also keeps a 24-billion-parameter Nicole fully resident in FP16, leaving space for optimizer states or a pair of LoRA branches Once the Studio lands, iteration speed will again be hardware-bound. Adding a second and third Studio will be the natural next step once we acquire the first, but it exposes a gap: macOS still lacks a production-grade collective on par with NVIDIA’s NCCL/DeepSpeed stack. Apple’s open-source MLX collectives and EXO Labs’ exo runtime are promising, yet neither has shown more than approximately 70% scaling on 10-GbE links, which is the bandwidth we can wire inside an apartment. Our near-term engineering sprint therefore has two tracks:",
@@ -267,13 +267,13 @@ export const cortexPaperSections = [
   },
   {
     "id": "distributed-training",
-    "title": "6 Distributed-Training Gap: turning many Macs into one accelerator",
+    "title": "Distributed-Training Gap: turning many Macs into one accelerator",
     "level": 1,
     "blocks": []
   },
   {
     "id": "missing-today",
-    "title": "6.1 What is missing today",
+    "title": "What is missing today",
     "level": 2,
     "blocks": [
       "Unlike CUDA, which ships with NCCL for multi-GPU collectives, Apple’s Metal stack still lacks a production-grade equivalent, although MLX now offers an experimental mlx.distributed module. Currently, available options are limited: ● Run data-parallel jobs by launching an independent process on each Mac and averaging weights over torch.distributed’s CPU/Gloo backend (slow, Python-only; gradients traverse CPU and Ethernet with minimal compute/I/O overlap); or",
@@ -282,7 +282,7 @@ export const cortexPaperSections = [
   },
   {
     "id": "candidate-solutions",
-    "title": "6.2 Candidate solutions",
+    "title": "Candidate solutions",
     "level": 2,
     "blocks": [
       "The candidate runtime paths are EXO Labs’ distributed runtime, Apple’s MLX collective prototype, a NaS-operated gRPC plus torch.distributed layer, and cloud bursting to CUDA for training. EXO offers Metal-native collectives and tensor sharding; MLX offers lightweight Apple-maintained primitives; the internal path offers full ownership; and cloud CUDA avoids a dependency on Metal collectives. Estimates reflect the options available in April 2025."
@@ -290,7 +290,7 @@ export const cortexPaperSections = [
   },
   {
     "id": "plan-of-record",
-    "title": "6.3 Plan of record",
+    "title": "Plan of record",
     "level": 2,
     "blocks": [
       "1. Prototype on EXO Labs. One → two → three Studios until we hit ≥ 70 % efficiency on our 1.5 B-token benchmark. EXO is source-available and free for ≤ 4 nodes; if it stabilizes, we let them host the runtime and buy a support tier, keeping only minimal model glue. 2. Keep MLX as fallback. The same benchmark runs nightly on MLX; if Apple’s numbers overtake EXO’s, we switch.",
@@ -302,7 +302,7 @@ export const cortexPaperSections = [
   },
   {
     "id": "conclusion",
-    "title": "7 Conclusion - where NaS goes next",
+    "title": "Conclusion - where NaS goes next",
     "level": 1,
     "blocks": [
       "Life science is an unfinished manuscript: every day adds new pages faster than any one mind can read them. NaS exists to keep pace with that expansion, turning yesterday’s experiment into tonight’s weight update and tomorrow’s clinical suggestion. Our roadmap is deliberately evolutionary: ● Cortical architecture first. Eight specialized gyri train in parallel, LoRA adapters keep them fresh, and Nicole blends their voices.",
@@ -317,7 +317,7 @@ export const cortexPaperSections = [
   },
   {
     "id": "references",
-    "title": "8 References",
+    "title": "References",
     "level": 1,
     "blocks": [
       "¹ Feynman, R. P. Messenger Lectures, Cornell University, 1964. ² Sedova A. et al., “Supercomputer-Based Ensemble Docking Pipeline for SARS-CoV-2,” High-Performance Computing 2020; see also Nature Sci Data 10, 2023.",
