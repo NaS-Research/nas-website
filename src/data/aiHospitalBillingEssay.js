@@ -13,7 +13,7 @@ export const aiHospitalBillingEssay = {
   readTime: "9 min read",
   variant: "paper",
   theme: "dark",
-  showArticleArtwork: false,
+  showArticleArtwork: true,
   citable: true,
   pdfUrl: null,
   pdfStatus: "none",
