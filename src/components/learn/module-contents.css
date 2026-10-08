@@ -47,25 +47,12 @@ body:has(.module-contents) { overflow-x: clip; overflow-y: visible; }
   border-radius: 0 5px 5px 0;
   transition: transform 320ms cubic-bezier(.22, 1, .36, 1), width 320ms ease, height 320ms ease;
 }
+/* The lesson rail is desktop-only; mobile reading uses the full content width. */
 @media (max-width: 860px) {
-  .module-contents-slot { display: contents; }
-  .pharmacy-module-nav.module-contents {
-    top: 5rem;
-    z-index: 20;
-    padding-block: .65rem;
-    background: #080808;
-    border-bottom: 1px solid rgba(185, 147, 117, .3);
-  }
-  .module-contents > p { margin-bottom: .45rem; }
-  .pharmacy-module-nav.module-contents nav {
-    display: flex;
-    max-height: none;
-    overflow-x: auto;
-    overflow-y: hidden;
-  }
-  .pharmacy-module-nav.module-contents nav a { flex: 0 0 auto; max-width: 16rem; border-bottom: 0; }
+  .module-contents-slot,
+  .pharmacy-module-nav.module-contents { display: none; }
   .pharmacy-module-page .pharmacy-submodule,
-  .pharmacy-module-page #module-test { scroll-margin-top: 13rem; }
+  .pharmacy-module-page #module-test { scroll-margin-top: 7rem; }
 }
 @media (prefers-reduced-motion: reduce) {
   .module-contents__marker, .pharmacy-module-nav.module-contents nav a { transition: none; }
