@@ -1,3 +1,5 @@
+import { getLatestLearningVideos } from "@/lib/learningVideoFeed";
+import { learningVideos } from "@/data/learningVideos";
 import Link from "next/link";
 import Footer from "@/components/Footer";
 import WatchCollection from "@/components/learn/WatchCollection";
@@ -10,7 +12,10 @@ export const metadata = {
   openGraph: { title: "Watch | NaS Learn", description: "Scientific ideas, brought into focus. Films from NaS Research.", url: "/learn/watch", siteName: "NaS Research", type: "website", images: [{ url: "/nas-logo-share-v1.png", width: 1200, height: 630, alt: "NaS Research" }] },
 };
 
-export default function WatchPage() {
+export default async function WatchPage() {
+  const latest = await getLatestLearningVideos();
+  const latestIds = new Set(latest.map((video) => video.id));
+  const videos = [...latest, ...learningVideos.filter((video) => !latestIds.has(video.id))];
   return (
     <div className="nas-page learning-index-page">
       <header className="learning-index-hero">
@@ -20,7 +25,7 @@ export default function WatchPage() {
           <div className="learning-index-hero__intro"><p>Films on living systems, medicines, and the mechanisms that connect them.</p><a href={learningChannelUrl} target="_blank" rel="noopener noreferrer">Visit our YouTube channel ↗</a></div>
         </div>
       </header>
-      <div data-page-main><WatchCollection /></div>
+      <div data-page-main><WatchCollection videos={videos} /></div>
       <Footer />
     </div>
   );

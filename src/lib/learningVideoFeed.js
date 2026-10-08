@@ -14,7 +14,7 @@ export async function getLatestLearningVideos() {
     if (!videos.length) throw new Error('YouTube feed contained no valid uploads');
     return videos.map((video) => {
       const reviewed = learningVideos.find((item) => item.id === video.id);
-      return { subject: 'NaS Research', ...reviewed, ...video };
+      return { ...reviewed, ...video, subject: reviewed?.subject || video.subject, description: reviewed?.description || video.description };
     });
   } catch (error) {
     console.warn('YouTube uploads unavailable; using the reviewed video collection.', error.message);

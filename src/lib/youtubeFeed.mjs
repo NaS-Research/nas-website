@@ -1,3 +1,4 @@
+import { videoSubject, videoSummary } from "./youtubeVideoMetadata.mjs";
 // Parse only the fields used from YouTube's public Atom upload feed.
 const decode = (text) => text.replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, '$1').replace(/&(#x[\da-f]+|#\d+|amp|lt|gt|quot|apos);/gi, (_, entity) => {
   const named = { amp: '&', lt: '<', gt: '>', quot: '"', apos: "'" };
@@ -16,6 +17,7 @@ export function parseYoutubeFeed(xml, channelId) {
     const publishedAt = field(entry, 'published');
     if (field(entry, 'yt:channelId') !== channelId || !/^[\w-]{11}$/.test(id) || !title || !Number.isFinite(Date.parse(publishedAt)) || seen.has(id)) return [];
     seen.add(id);
-    return [{ id, title, publishedAt }];
+    const description = field(entry, 'media:description');
+    return [{ id, title, publishedAt, subject: videoSubject(description, title), description: videoSummary(description) }];
   }).sort((a, b) => Date.parse(b.publishedAt) - Date.parse(a.publishedAt));
 }

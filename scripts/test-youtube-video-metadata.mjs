@@ -1,0 +1,24 @@
+import assert from 'node:assert/strict';
+import {videoSubject,videoSummary} from '../src/lib/youtubeVideoMetadata.mjs';
+import {parseYoutubeFeed} from '../src/lib/youtubeFeed.mjs';
+assert.equal(videoSubject('Subject: Human anatomy', 'Agonists and receptors'), 'Anatomy');
+assert.equal(videoSubject('Category: pharmacology', 'New lesson'), 'Pharmacology');
+assert.equal(videoSubject('Subject: arbitrary', 'Agonists vs Antagonists'), 'Pharmacology');
+assert.equal(videoSubject('', 'How the Heart Works: Chambers, Valves & Blood Flow'), 'Anatomy');
+assert.equal(videoSubject('', 'New science lesson'), 'Life sciences');
+assert.equal(videoSummary('Subject: Anatomy\r\n\r\nFollow blood through the heart.\r\n\r\nCHAPTERS\r\n00:00 Intro'), 'Follow blood through the heart.');
+assert.equal(videoSummary('Summary: Receptors activate cellular responses.\n\nA longer upload introduction.'), 'Receptors activate cellular responses.');
+assert.equal(videoSummary('https://example.com\n\nA focused lesson.\n\nSOURCES\nReference'), 'A focused lesson.');
+assert.equal(videoSummary(''), '');
+const long='A complete first sentence. '+ 'Another detailed sentence about the mechanism and how it affects the body. '.repeat(8);
+const short=videoSummary(long);
+assert.ok(short.length<=220 && short.endsWith('.') && !short.includes('…'));
+assert.ok(videoSummary('word '.repeat(80)).length<=220);
+const channel='UCtest';
+const xml='<feed><entry><yt:channelId>UCtest</yt:channelId><yt:videoId>aaaaaaaaaaa</yt:videoId><title>Heart &amp; valves</title><published>2026-10-08</published><media:group><media:description><![CDATA[Summary: Follow the heart & its valves.\nSubject: Anatomy\n\nCHAPTERS\n00:00 Intro]]></media:description></media:group></entry></feed>';
+const [video]=parseYoutubeFeed(xml,channel);
+assert.equal(video.description,'Follow the heart & its valves.');
+assert.equal(video.subject,'Anatomy');
+console.log('Video metadata: explicit subjects, title fallbacks, summary extraction, sentence boundaries, boilerplate exclusion, empty descriptions, and feed integration passed.');
+
+assert.equal(videoSummary('Subject: Anatomy\n\nSOURCES\nReference text'), '');

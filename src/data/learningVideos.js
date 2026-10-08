@@ -2,6 +2,18 @@
 // Add reviewed videos here to update both Learn and Watch.
 export const learningVideos = [
   {
+    id: "HNftmft7T0s",
+    title: "How the Heart Works: Chambers, Valves & Blood Flow",
+    subject: "Anatomy",
+    description: "Follow blood through the heart, lungs, and body. Explore how chambers and valves keep circulation moving.",
+  },
+  {
+    id: "TyBZvTlBrys",
+    title: "Agonists vs Antagonists: How Drugs Activate or Block Receptors",
+    subject: "Pharmacology",
+    description: "Explore how agonists activate receptors and antagonists block agonist action, and why binding and activation differ.",
+  },
+  {
     id: "wMJuoJkX5eM",
     title: "Ionotropic vs Metabotropic Receptors: Gate or Relay?",
     subject: "Pharmacology",

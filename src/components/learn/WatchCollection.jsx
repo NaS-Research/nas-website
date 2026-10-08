@@ -1,17 +1,16 @@
 "use client";
 
 import { useState } from "react";
-import { learningVideos } from "@/data/learningVideos";
 import LearningVideoCard from "./LearningVideoCard";
 import styles from "./LearningVideos.module.css";
 
-const subjects = [...new Set(learningVideos.map((video) => video.subject))];
 
-export default function WatchCollection() {
+export default function WatchCollection({ videos }) {
+  const subjects = [...new Set(videos.map((video) => video.subject))];
   const [query, setQuery] = useState("");
   const [subject, setSubject] = useState("All subjects");
   const [visible, setVisible] = useState(9);
-  const filtered = learningVideos.filter((video) =>
+  const filtered = videos.filter((video) =>
     (subject === "All subjects" || video.subject === subject) &&
     `${video.title} ${video.description} ${video.subject}`.toLowerCase().includes(query.trim().toLowerCase())
   );
