@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import LearningCatalog from "@/components/learn/LearningCatalog";
 import { pharmacyModules } from "@/data/pharmacyModules";
 import { pharmacyLessons } from "@/data/pharmacyLearning";
+import learningCatalogMetadata from "@/data/learningCatalogMetadata.json";
 import "./library.css";
 
 export const metadata = {
@@ -24,7 +25,7 @@ export default function LearningLibraryPage() {
       topics: [], type: "Study guide", detail: lesson.readTime,
       href: `/learn/pharmacy/${lesson.slug}`,
     })),
-  ].sort((a, b) => a.title.localeCompare(b.title));
+  ].map(entry => ({ ...entry, updatedAt: learningCatalogMetadata[entry.href]?.updatedAt, createdAt: learningCatalogMetadata[entry.href]?.createdAt }));
   return <div className="nas-page learning-catalog-page">
     <header className="learning-index-hero"><div className="nas-shell">
       <Link href="/learn" className="learning-back">← Learn</Link>

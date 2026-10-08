@@ -7,7 +7,12 @@
     "test:brca-release": "node scripts/test-nas-brca-002-release.mjs",
     "dev": "next dev",
     "build": "next build --webpack",
-    "start": "next start"
+    "start": "next start",
+    "predev": "node scripts/require-external-production.cjs && node --experimental-loader ./scripts/learning-catalog-loader.mjs scripts/update-learning-catalog.mjs",
+    "prebuild": "node scripts/require-external-production.cjs && node --experimental-loader ./scripts/learning-catalog-loader.mjs scripts/update-learning-catalog.mjs",
+    "prestart": "node scripts/require-external-production.cjs",
+    "preaudit:pharmacy": "node scripts/require-external-production.cjs",
+    "catalog:refresh": "node --experimental-loader ./scripts/learning-catalog-loader.mjs scripts/update-learning-catalog.mjs"
   },
   "repository": {
     "type": "git",
