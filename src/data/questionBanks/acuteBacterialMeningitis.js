@@ -121,7 +121,197 @@ const bookAdministrationRepairs = {
   }
 };
 
-export const acuteBacterialMeningitisQuestionBank = [...generated, ...cases].map(question => bookAdministrationRepairs[question.id] ? { ...question, ...bookAdministrationRepairs[question.id] } : question);
+const supportComplicationsRepairs = {
+  "acute-bacterial-meningitis-129": {
+    "question": "A patient with bacterial meningitis has hypoxemia and shock. Why is an effective antibiotic alone insufficient?",
+    "choices": [
+      "Antibiotics must be paired with airway, oxygenation, perfusion, and shock management",
+      "Treating the pathogen reliably reverses shock before supportive treatment is needed",
+      "Respiratory and circulatory support should be withheld until the organism is identified",
+      "Supportive treatment is indicated only when cerebrospinal fluid remains culture-positive"
+    ],
+    "answer": 0,
+    "rationale": "WHO identifies hemodynamic, respiratory and metabolic support as components of urgent meningitis care. An antibiotic targets infection but does not immediately correct hypoxemia or shock. Neither organism identification nor persistent culture positivity is a prerequisite for treating unstable physiology."
+  },
+  "acute-bacterial-meningitis-130": {
+    "question": "An adult receiving empiric treatment for bacterial meningitis remains hypotensive and hypoxemic. Which supportive-care approach is appropriate?",
+    "choices": [
+      "Apply current sepsis care while avoiding hypotension and hypoxemia that worsen cerebral injury",
+      "Give repeated fluid boluses until lactate normalizes, irrespective of fluid responsiveness",
+      "Defer oxygen and circulatory support until lumbar puncture is completed",
+      "Restrict fluids below maintenance solely because meningitis may cause cerebral edema"
+    ],
+    "answer": 0,
+    "rationale": "Support infection treatment with prompt respiratory and hemodynamic care. The 2026 adult sepsis recommendations call for repeated assessment and individualized fluids, using dynamic measures and lactate trends in context; lactate normalization is not a mandate for continued fluid loading. A diagnostic procedure or the meningitis label must not defer stabilization."
+  },
+  "acute-bacterial-meningitis-131": {
+    "question": "An adult with meningitis-associated septic shock is being reassessed after initial resuscitation. Which monitoring plan best evaluates ongoing perfusion and respiratory support?",
+    "choices": [
+      "Monitor airway, oxygenation, blood pressure, lactate, capillary refill, urine output, vasopressors, and fluid response",
+      "Use a single serum lactate value as the sole measure of fluid responsiveness",
+      "Use the antibiotic start time as the sole indicator that shock has resolved",
+      "Use fever resolution as the sole criterion for stopping circulatory monitoring"
+    ],
+    "answer": 0,
+    "rationale": "Repeated physiologic assessment is required. The 2026 adult sepsis recommendations support oxygenation and blood-pressure monitoring, dynamic assessment of fluid response, serial lactate interpreted in context, and capillary refill as an adjunct. Urine output is also interpreted with renal function and the fluid balance. A single lactate value, an administered antibiotic, or a lower temperature does not establish restored perfusion."
+  },
+  "acute-bacterial-meningitis-132": {
+    "question": "An adult with suspected bacterial meningitis is in shock. Which action creates a preventable supportive-care delay?",
+    "choices": [
+      "Focusing on lumbar puncture while shock remains untreated",
+      "Providing respiratory support for hypoxemia while antibiotics are arranged",
+      "Reassessing perfusion and response during circulatory support",
+      "Correcting a clinically important metabolic disturbance during stabilization"
+    ],
+    "answer": 0,
+    "rationale": "Shock requires urgent treatment alongside empiric antibiotics. Prioritizing lumbar puncture while shock remains untreated delays life-saving support. Respiratory care, serial perfusion assessment, and correction of metabolic disturbances are appropriate parallel actions under WHO general-management guidance."
+  },
+  "acute-bacterial-meningitis-133": {
+    "question": "During bacterial meningitis treatment, a patient develops a new pupil abnormality and rapidly declining consciousness. Which principle should guide the response?",
+    "choices": [
+      "New anisocoria, focal deficit, declining consciousness, or recurrent seizure requires urgent reassessment for secondary neurologic injury",
+      "These changes can be assumed to be expected recovery after antibiotics begin",
+      "A known pathogen excludes a new intracranial complication",
+      "Neurologic assessment can wait until a follow-up visit if fever is improving"
+    ],
+    "answer": 0,
+    "rationale": "Rapid consciousness or pupil change may indicate increased intracranial pressure and impending herniation. WHO treats this as a medical emergency requiring prompt assessment and intensive care management. Antibiotic administration, organism identification, or an improving fever does not make new deterioration safe to defer."
+  },
+  "acute-bacterial-meningitis-134": {
+    "question": "A patient with bacterial meningitis has rapidly worsening consciousness and loss of pupillary reaction. Which action is appropriate?",
+    "choices": [
+      "Escalate immediately for critical-care and neurologic management, with emergency support and targeted imaging as appropriate",
+      "Postpone emergency support until the complete cause has been established by imaging",
+      "Give glycerol routinely as the definitive response to any neurologic decline",
+      "Continue ward observation because antimicrobial therapy has already started"
+    ],
+    "answer": 0,
+    "rationale": "Urgent critical-care and neurologic evaluation must accompany emergency stabilization. WHO allows selected non-glycerol osmotic agents as a temporary measure for increased intracranial pressure and impending herniation while more durable management is arranged. Imaging should support diagnosis without becoming a gate before emergency care; glycerol is not a routine adjunct or a definitive solution."
+  },
+  "acute-bacterial-meningitis-135": {
+    "question": "A patient receiving bacterial meningitis treatment is becoming less responsive. Which reassessment best addresses evolving neurologic injury?",
+    "choices": [
+      "Trend Glasgow Coma Scale, pupils, focal signs, seizure, blood pressure, ventilation, sodium, and imaging",
+      "Record temperature alone and assume defervescence excludes intracranial deterioration",
+      "Record antimicrobial doses alone and defer pupil and consciousness checks",
+      "Review a single prior examination and treat the neurologic state as unchanged"
+    ],
+    "answer": 0,
+    "rationale": "Consciousness, pupils, focal findings and seizures require repeated assessment, alongside respiratory and circulatory status and relevant metabolic abnormalities. A change may need targeted imaging and urgent intervention. Temperature, dose records, and an earlier examination cannot substitute for reassessing the current neurologic state."
+  },
+  "acute-bacterial-meningitis-136": {
+    "question": "A patient with bacterial meningitis is awake, hemodynamically stable, and has no signs of increased intracranial pressure. Which proposed plan is a reasoning error?",
+    "choices": [
+      "Giving routine osmotic therapy without identifying the cause",
+      "Monitoring consciousness and pupils for a new neurologic change",
+      "Reassessing sodium and volume abnormalities when they arise",
+      "Arranging hearing and neurologic follow-up before discharge"
+    ],
+    "answer": 0,
+    "rationale": "A meningitis diagnosis alone does not justify routine osmotic treatment. WHO advises against routine glycerol and distinguishes routine adjunct use from selected non-glycerol temporizing therapy for impending herniation. Monitoring neurology, investigating fluid disorders, and planning recovery are appropriate; an emergency herniation situation would require immediate reassessment and treatment rather than this stable-patient reasoning."
+  },
+  "acute-bacterial-meningitis-137": {
+    "question": "A patient with confirmed bacterial meningitis is stable and has no specific indication for restriction. Which maintenance-fluid principle is supported?",
+    "choices": [
+      "Routine fluid restriction below maintenance is not recommended for confirmed bacterial meningitis",
+      "The meningitis diagnosis requires half-maintenance fluids in every patient",
+      "Maintenance hydration should be stopped until the cerebrospinal fluid is sterile",
+      "All maintenance fluids should be replaced with an osmotic agent"
+    ],
+    "answer": 0,
+    "rationale": "WHO recommends against routine fluid restriction in acute bacterial meningitis, a conditional recommendation based on very-low-certainty evidence. Oral or enteric maintenance is preferred when feasible; isotonic intravenous maintenance may be used when needed. Blanket restriction, withholding hydration until culture clearance, and substituting osmotic therapy do not follow that principle."
+  },
+  "acute-bacterial-meningitis-138": {
+    "question": "An adult with bacterial meningitis develops hyponatremia. Which approach should guide the fluid decision?",
+    "choices": [
+      "Diagnose shock, dehydration, SIADH, cerebral salt wasting, or renal dysfunction and treat the actual disorder",
+      "Diagnose SIADH from the low serum sodium alone and restrict immediately",
+      "Diagnose cerebral salt wasting from the meningitis label alone and give unmonitored fluid",
+      "Apply the same restriction regimen whether the patient is shocked or euvolemic"
+    ],
+    "answer": 0,
+    "rationale": "Fluid decisions depend on the disorder and the current physiology. WHO permits considering moderate restriction for SIADH only without shock or hypovolemia. The dated joint adult hyponatraemia guideline describes SIAD as a diagnosis of exclusion and warns that cerebral salt wasting can be overdiagnosed. Assess the cause and treat urgent instability concurrently; neither serum sodium nor the meningitis label establishes a universal fluid regimen."
+  },
+  "acute-bacterial-meningitis-139": {
+    "question": "An adult with meningitis develops hypotonic hyponatremia. Which assessment best supports choosing a cause-specific fluid plan?",
+    "choices": [
+      "Assess volume status, sodium trend, urine output, urine studies when needed, perfusion, kidney function, and intake",
+      "Use serum sodium alone to distinguish SIADH from volume depletion",
+      "Use urine sodium alone to diagnose SIADH despite kidney dysfunction or diuretic use",
+      "Use one bedside volume examination to establish the cause without laboratory context"
+    ],
+    "answer": 0,
+    "rationale": "Assess perfusion and fluid balance while using appropriate paired blood and urine studies. The joint adult hyponatraemia guideline prioritizes urine osmolality and urine sodium in the diagnostic work-up, but cautions that bedside volume assessment can misclassify patients and kidney dysfunction or diuretics can confound urine findings. No isolated finding establishes SIADH; severe symptoms or shock require immediate treatment alongside the investigation."
+  },
+  "acute-bacterial-meningitis-140": {
+    "question": "Several patients with meningitis have different volume states and sodium results. Which policy would create a fluid-management error?",
+    "choices": [
+      "Restricting every patient solely because meningitis can cause hyponatremia",
+      "Consider moderate restriction for suggestive SIADH only when shock and hypovolemia are absent",
+      "Use isotonic intravenous maintenance when oral or enteric maintenance cannot be given",
+      "Monitor volume and electrolytes and reassess when the clinical state changes"
+    ],
+    "answer": 0,
+    "rationale": "WHO advises against routine restriction based on meningitis alone. Suggestive SIADH without shock or hypovolemia may justify moderate restriction with clinical judgement, but dehydrated or shocked patients need a different approach. Oral or enteric maintenance is preferred when possible, and isotonic intravenous maintenance and serial volume/electrolyte review are appropriate when indicated."
+  },
+  "acute-bacterial-meningitis-141": {
+    "question": "A patient completes treatment for bacterial meningitis and the infection has resolved. Which recovery principle remains important?",
+    "choices": [
+      "Hearing loss and neurologic or cognitive disability can persist after microbiologic cure",
+      "Microbiologic cure excludes subsequent cognitive or hearing problems",
+      "Finishing antibiotics establishes that rehabilitation is unnecessary",
+      "A normal discharge hearing screen guarantees that later hearing loss cannot occur"
+    ],
+    "answer": 0,
+    "rationale": "WHO describes lasting neurologic and cognitive impairment, hearing loss, and after-effects that may be subtle or emerge later. Antibiotic completion does not establish full functional recovery. WHO also calls for a second formal audiological screen after a normal predischarge result, without specifying a universal repeat interval in that recommendation."
+  },
+  "acute-bacterial-meningitis-142": {
+    "question": "A meningitis survivor is preparing for discharge. Which plan best addresses recovery needs?",
+    "choices": [
+      "Arrange hearing assessment and individualized neurologic, cognitive, communication, mobility, school, work, and rehabilitation follow-up",
+      "Wait for the patient to report hearing loss before offering formal audiological screening",
+      "Schedule the first sequelae assessment at six months regardless of current deficits",
+      "Delay rehabilitation until all possible long-term problems have become permanent"
+    ],
+    "answer": 0,
+    "rationale": "WHO calls for sequelae review before discharge and at least once within four weeks, with subsequent care individualized to persistent problems. Formal hearing screening should occur before discharge, or within four weeks if it cannot occur beforehand. Rehabilitation should begin as soon as possible when sequelae are identified; waiting for a complaint, a fixed late visit, or permanent disability creates avoidable delay."
+  },
+  "acute-bacterial-meningitis-143": {
+    "question": "At follow-up after meningitis, which assessment best evaluates functional recovery?",
+    "choices": [
+      "Assess hearing, cranial nerves, cognition, behavior, speech, mobility, daily function, family needs, and access",
+      "Limit the review to fever and antibiotic completion because infection clearance proves recovery",
+      "Assess only gross motor strength and omit hearing, cognition and communication",
+      "Use the absence of a spontaneous complaint as proof that sequelae are absent"
+    ],
+    "answer": 0,
+    "rationale": "WHO highlights hearing, focal neurologic and neuropsychological impairments, subtle after-effects, daily function, and coordinated family support. A review should examine relevant domains and access to ongoing care. Fever resolution, gross motor strength alone, and absence of an unsolicited complaint do not exclude hearing, cognitive, communication or participation difficulties."
+  },
+  "acute-bacterial-meningitis-144": {
+    "question": "A patient has completed antibiotics for meningitis but still has hearing and mobility difficulties. Which plan is a recovery-care error?",
+    "choices": [
+      "Ending follow-up when antibiotics stop",
+      "Refer promptly for rehabilitation directed at the identified deficits",
+      "Coordinate follow-up and support with the patient and caregivers",
+      "Continue individualized review when sequelae persist beyond the first month"
+    ],
+    "answer": 0,
+    "rationale": "Antibiotic completion is not an endpoint for sequelae care. WHO recommends assessment before discharge and at follow-up, rehabilitation as soon as possible when deficits are identified, and ongoing individualized visits for persistent sequelae. Prompt referrals, coordination with caregivers, and continued review are appropriate."
+  },
+  "acute-bacterial-meningitis-170": {
+    "question": "An adult with bacterial meningitis develops hyponatremia, hypotension, and poor urine output. Which initial approach is appropriate?",
+    "choices": [
+      "Treat impaired perfusion urgently while assessing volume, renal function, and the cause to guide the fluid plan",
+      "Restrict fluids immediately because any meningitis-associated hyponatremia establishes SIADH",
+      "Diagnose cerebral salt wasting from the low sodium alone and use an unmonitored fluid plan",
+      "Complete all sodium studies before treating the hypotension or impaired perfusion"
+    ],
+    "answer": 0,
+    "rationale": "Urgently address hypotension and impaired perfusion while assessing volume, renal function, fluid balance, and the cause of hyponatremia. WHO does not support routine restriction, and its SIADH restriction remark applies only without shock or hypovolemia. The joint adult hyponatraemia guideline warns that SIAD is a diagnosis of exclusion and cerebral salt wasting can be overdiagnosed. Investigation must accompany emergency stabilization rather than postpone it."
+  }
+};
+
+export const acuteBacterialMeningitisQuestionBank = [...generated, ...cases].map(question => ({ ...question, ...(bookAdministrationRepairs[question.id] || {}), ...(supportComplicationsRepairs[question.id] || {}) }));
 
 if (acuteBacterialMeningitisQuestionBank.length < 100) {
   throw new Error(`Acute bacterial meningitis question bank must contain at least 100 questions, found ${acuteBacterialMeningitisQuestionBank.length}.`);
