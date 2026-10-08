@@ -9,7 +9,7 @@ export const atlasRelease = {
   "version": "1.4",
   updatedDate: "October 7, 2026",
   updatedDateISO: "2026-10-07",
-  revisionNote: "Editorial update: section numbering removed. Article text and reported results are unchanged.",
+  revisionNote: "Editorial update: section numbering removed. Scientific content and reported results are unchanged.",
   pdfVersion: "1.3",
   "authors": ["Dalron J. Robertson"],
   "affiliation": "NaS Research",

@@ -9,7 +9,7 @@ export const brcaRepeatabilityRelease = {
   version: "1.0.2",
   updatedDate: "October 7, 2026",
   updatedDateISO: "2026-10-07",
-  revisionNote: "Editorial update: section numbering removed. Article text and reported results are unchanged.",
+  revisionNote: "Editorial update: section numbering removed. Scientific content and reported results are unchanged.",
   pdfVersion: "1.0.1",
   authors: ["Dalron J. Robertson"],
   affiliation: "NaS Research",
