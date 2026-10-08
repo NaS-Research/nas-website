@@ -8,6 +8,7 @@ import PublicationArtwork from "@/components/research/PublicationArtwork";
 import "@/components/research/publication-artwork.css";
 import "./publication-refinements.css";
 import "./paper-article.css";
+import "./immersive-article.css";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -105,6 +106,8 @@ export default async function ResearchPublicationPage({ params }) {
   const isOriginStory = item.variant === "institutional-origin";
   const hasHeroVideo = Boolean(item.heroVideo);
   const hasHeroImage = false;
+  const hasImmersiveHero = item.slug === "blood-brain-barrier-prediction-audit";
+  const ReadingSurface = hasImmersiveHero ? "div" : Fragment;
   const citation = `${item.authors.join(", ")} (${item.date.slice(-4)}). ${item.title}. NaS Research. ${item.version ? `Version ${item.version}. ` : ""}${item.publicationStatus === "draft" ? "Draft. " : ""}https://nasresearch.bio/research/${item.slug}`;
   const structuredData = {
     "@context": "https://schema.org",
@@ -126,10 +129,29 @@ export default async function ResearchPublicationPage({ params }) {
   };
   const related = getRelatedResearch(item, researchItems);
 
+  const publicationDetails = (<>
+          <div className="publication-byline">
+            <p>By {item.authors.join(", ")}{item.affiliation && <span> · {item.affiliation}</span>}</p>
+            <p>
+              {[item.version ? `${pdfUrl ? "Web version" : "Version"} ${item.version}` : null, item.readTime].filter(Boolean).join(" · ")}
+              {item.updatedDate ? ` · Updated ${item.updatedDate}` : ""}
+            </p>
+          </div>
+          <PublicationActions citation={isResearchPublication ? citation : undefined} pdfUrl={pdfUrl} pdfVersion={item.pdfVersion} />
+          {item.reviewState && <p className="publication-review-state">{item.reviewState}</p>}
+          {item.reproducibilityUrl && <a className="publication-reproduce" href={item.reproducibilityUrl}>Download data and analysis ↗</a>}
+  </>);
+
   return (
-    <div className={`nas-page publication-page${isPaperArticle ? " publication-page--paper" : ""}${item.theme === "dark" ? " publication-page--dark" : ""}`}>
+    <div className={`nas-page publication-page${hasImmersiveHero ? " publication-page--immersive" : ""}${isPaperArticle ? " publication-page--paper" : ""}${item.theme === "dark" ? " publication-page--dark" : ""}`}>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData).replace(/</g, "\\u003c") }} />
       <header className={`publication-hero ${isOriginStory ? "publication-hero--origin" : ""} ${hasHeroVideo ? "publication-hero--place" : ""} ${hasHeroImage ? "publication-hero--visual" : ""}`}>
+        {hasImmersiveHero && <>
+          <div className="publication-immersive-image">
+            <Image src={publicationArtwork[item.slug].src} alt={publicationArtwork[item.slug].alt} fill sizes="100vw" priority />
+          </div>
+          <div className="publication-immersive-shade" aria-hidden="true" />
+        </>}
         {hasHeroVideo && (
           <>
             <video
@@ -156,7 +178,7 @@ export default async function ResearchPublicationPage({ params }) {
         )}
         <div className="nas-shell publication-hero__inner">
           <Link href="/research" className="publication-back">← Research library</Link>
-          {isPaperArticle && <Image className="publication-paper-mark" src="/assets/images/NaSLogo-transparent-hd.png" alt="NaS gold emblem" width={76} height={76} priority />}
+          {isPaperArticle && !hasImmersiveHero && <Image className="publication-paper-mark" src="/assets/images/NaSLogo-transparent-hd.png" alt="NaS gold emblem" width={76} height={76} priority />}
           <div className="publication-meta-line">
             <time dateTime={item.dateISO}>{item.date}</time>
             <span>{item.area}</span>
@@ -164,20 +186,12 @@ export default async function ResearchPublicationPage({ params }) {
           </div>
           <h1>{item.title}</h1>
           <p className="publication-abstract">{item.abstract}</p>
-          <div className="publication-byline">
-            <p>By {item.authors.join(", ")}{item.affiliation && <span> · {item.affiliation}</span>}</p>
-            <p>
-              {[item.version ? `${pdfUrl ? "Web version" : "Version"} ${item.version}` : null, item.readTime].filter(Boolean).join(" · ")}
-              {item.updatedDate ? ` · Updated ${item.updatedDate}` : ""}
-            </p>
-          </div>
-          <PublicationActions citation={isResearchPublication ? citation : undefined} pdfUrl={pdfUrl} pdfVersion={item.pdfVersion} />
-          {item.reviewState && <p className="publication-review-state">{item.reviewState}</p>}
-          {item.reproducibilityUrl && <a className="publication-reproduce" href={item.reproducibilityUrl}>Download data and analysis ↗</a>}
+          {!hasImmersiveHero && publicationDetails}
         </div>
       </header>
 
-      {!hasHeroVideo && item.showArticleArtwork !== false && <PublicationArtwork slug={item.slug} hero />}
+      {!hasImmersiveHero && !hasHeroVideo && item.showArticleArtwork !== false && <PublicationArtwork slug={item.slug} hero />}
+      <ReadingSurface {...(hasImmersiveHero ? { className: "publication-reading-surface" } : {})}>
       <MobileContents sections={item.sections.map(({ id, title }) => ({ id, title }))} hasSources={Boolean(item.sources?.length)} hasCitation={isResearchPublication} />
       <div className="nas-shell publication-layout">
         <aside className="publication-toc" aria-label="Publication contents">
@@ -201,6 +215,7 @@ export default async function ResearchPublicationPage({ params }) {
         </aside>
 
         <article className="publication-body">
+          {hasImmersiveHero && <div className="publication-reading-details">{publicationDetails}</div>}
           <section id="summary" className="publication-summary">
             <p className="publication-section-label">Summary</p>
             <p>{item.summary}</p>
@@ -298,6 +313,7 @@ export default async function ResearchPublicationPage({ params }) {
       </div>
       <RelatedResearch items={related} />
       <Footer />
+      </ReadingSurface>
     </div>
   );
 }

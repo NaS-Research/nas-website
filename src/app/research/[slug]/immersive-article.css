@@ -1,0 +1,68 @@
+/* One article opts in: native scrolling brings the opaque reading surface over the pinned cover. */
+.publication-page.publication-page--immersive {
+  overflow: visible;
+  isolation: isolate;
+  padding-top: 4rem;
+  background: #000;
+}
+.publication-page--immersive .publication-hero {
+  position: sticky;
+  top: 4rem;
+  z-index: 0;
+  display: flex;
+  align-items: flex-end;
+  height: calc(100svh - 4rem);
+  min-height: 36rem;
+  padding: 3rem 0 4rem;
+  border: 0;
+  background: #000;
+}
+.publication-immersive-image,
+.publication-immersive-shade {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+.publication-immersive-image { overflow: hidden; }
+.publication-immersive-image img { object-fit: cover; object-position: center; }
+.publication-immersive-shade {
+  background: linear-gradient(180deg, #00000008 15%, #00000030 42%, #000000b3 100%);
+}
+.publication-page--immersive .publication-hero__inner { position: relative; z-index: 1; }
+.publication-page--immersive .publication-back { margin: 0 auto 1.5rem; color: #eee; }
+.publication-page--immersive .publication-meta-line { color: #eee; }
+.publication-page--immersive .publication-hero h1 {
+  max-width: 58rem;
+  margin-inline: auto;
+  color: #fff;
+  font-size: clamp(2.5rem, 5.3vw, 5.25rem);
+}
+.publication-page--immersive .publication-abstract {
+  max-width: 42rem;
+  margin: 1.5rem auto 0;
+  color: #fff;
+  line-height: 1.55;
+}
+.publication-reading-surface {
+  position: relative;
+  z-index: 1;
+  min-height: 100svh;
+  background: #000;
+  padding-top: clamp(3rem, 7vw, 6rem);
+}
+.publication-page--immersive .publication-layout { border-top: 0; padding-top: 0; }
+.publication-reading-details { margin-bottom: 3.5rem; }
+.publication-reading-details .publication-byline { margin-top: 0; }
+@media (max-width: 767px) {
+  .publication-page--immersive .publication-hero { min-height: 32rem; padding-bottom: 2.5rem; }
+  .publication-page--immersive .publication-hero h1 { font-size: clamp(2.2rem, 8.5vw, 3.8rem); }
+  .publication-page--immersive .publication-abstract { font-size: 1rem; }
+  .publication-page--immersive .publication-back { margin-bottom: 1rem; }
+  .publication-reading-surface { padding-top: 2.5rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .publication-page--immersive .publication-hero { position: relative; top: auto; }
+}
+.publication-page--immersive .publication-reading-details .publication-actions { justify-content: flex-start; }
+.publication-reading-details .publication-review-state { text-align: left; }
+.publication-reading-details .publication-reproduce { margin-inline: 0; }
