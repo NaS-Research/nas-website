@@ -33,3 +33,272 @@ const concepts=[
 const dimensions=[["principle","Which principle best characterizes"],["action","Which clinical action best applies to"],["assessment","Which assessment is most appropriate for"],["hazard","Which reasoning hazard is most important to prevent with"]];
 function distractors(i,f){return [5,11,17].map(o=>concepts[(i+o)%concepts.length][f]);}
 export const acuteKidneyInjuryQuestionBank=concepts.flatMap((c,i)=>dimensions.map(([f,p],j)=>({id:`acute-kidney-injury-${String(i*4+j+1).padStart(3,"0")}`,question:`${p} ${c.name}?`,choices:[c[f],...distractors(i,f)],answer:0,rationale:c.why,reviewHref:`#${c.lesson}`})));
+
+// Individually reviewed existing kidney-support items; IDs, order and answer keys remain stable.
+const akiSupportReviewOverrides = [
+  {
+    "id": "acute-kidney-injury-093",
+    "question": "Which principle best characterizes hyperkalemia in AKI?",
+    "choices": [
+      "Severe hyperkalemia management stabilizes myocardium, shifts potassium intracellularly, removes potassium, and treats the cause.",
+      "Calcium administration removes excess potassium from the body",
+      "Insulin shifting provides definitive potassium elimination, so no removal plan is needed",
+      "A normal ECG excludes severe potassium-related danger"
+    ],
+    "answer": 0,
+    "rationale": "Severe disease needs myocardial stabilization when indicated, intracellular shifting, definitive elimination, and cause-directed care. Calcium does not lower potassium. Insulin redistributes it and can be followed by rebound. ECG sensitivity is incomplete, so a normal tracing does not establish safety.",
+    "reviewHref": "#complications-and-kidney-support"
+  },
+  {
+    "id": "acute-kidney-injury-094",
+    "question": "Which clinical action best applies to hyperkalemia in AKI?",
+    "choices": [
+      "Use ECG-guided calcium, insulin with glucose and selected adjuncts, elimination, and frequent rebound monitoring.",
+      "Use an oral potassium binder alone as emergency rescue for life-threatening disease",
+      "Stop glucose monitoring after insulin because kidney impairment prevents delayed hypoglycemia",
+      "Delay credible emergency treatment until all repeat samples and cause studies return"
+    ],
+    "answer": 0,
+    "rationale": "The correct plan combines indicated calcium, monitored shifting, elimination, and repeated assessment. U.S. binder labels exclude emergency treatment of life-threatening hyperkalemia; acute adjunct use in UKKA pathways does not replace rescue treatment. Insulin can cause delayed hypoglycemia, with greater concern in kidney impairment and repeat treatment. Artifact evaluation must not delay treatment of a credible emergency.",
+    "reviewHref": "#complications-and-kidney-support"
+  },
+  {
+    "id": "acute-kidney-injury-095",
+    "question": "Which assessment is most appropriate for hyperkalemia in AKI?",
+    "choices": [
+      "Review potassium and hemolysis, ECG, glucose, acid-base status, drugs, urine output, tissue breakdown, and KRT access.",
+      "Use the initial ECG alone and omit potassium trends and hemolysis review",
+      "Review potassium alone and omit glucose after insulin treatment",
+      "Assume dialysis access and urine output are irrelevant once shifting therapy starts"
+    ],
+    "answer": 0,
+    "rationale": "Potassium and sample validity, electrical risk, glucose, acid-base state, causes, and removal capacity all matter. An ECG alone cannot exclude danger or characterize rebound. Glucose monitoring is necessary after insulin. Urine output and access inform whether and how definitive removal can occur; shifting does not remove that need.",
+    "reviewHref": "#complications-and-kidney-support"
+  },
+  {
+    "id": "acute-kidney-injury-096",
+    "question": "Which statement correctly describes hyperkalemia risk in AKI?",
+    "choices": [
+      "A normal initial ECG does not make a rapidly rising severe potassium safe.",
+      "A normal initial ECG guarantees that severe rising potassium can be observed without further assessment",
+      "A fall after insulin proves that body potassium has been eliminated",
+      "A rapid measured response to an oral binder overrides its U.S. emergency-use limitation"
+    ],
+    "answer": 0,
+    "rationale": "A normal ECG cannot exclude dangerous hyperkalemia, particularly with a worsening trajectory. Temporary shifting can lower the measured concentration without removing body potassium and can be followed by rebound. Apparent early binder activity does not override labeled emergency limitations or replace immediately indicated stabilization and definitive clearance.",
+    "reviewHref": "#complications-and-kidney-support"
+  },
+  {
+    "id": "acute-kidney-injury-097",
+    "question": "Which principle best characterizes metabolic acidosis in AKI?",
+    "choices": [
+      "Acidosis reflects cause, ventilation, buffer loss, and reduced acid excretion, and treatment targets physiology rather than bicarbonate alone.",
+      "Low bicarbonate identifies the entire cause without checking pH or PCO2",
+      "Expected respiratory compensation always normalizes pH",
+      "Every metabolic acidosis in AKI requires bicarbonate regardless of the cause or fluid status"
+    ],
+    "answer": 0,
+    "rationale": "The acid-base process depends on cause, ventilation, buffer balance, and kidney function. Bicarbonate alone does not establish the complete disorder. Compensation can leave an abnormal pH, and an unexpected response raises concern for a mixed process. Bicarbonate is selected according to physiology and risks rather than prescribed automatically for every result.",
+    "reviewHref": "#complications-and-kidney-support"
+  },
+  {
+    "id": "acute-kidney-injury-098",
+    "question": "Which clinical action best applies to metabolic acidosis in AKI?",
+    "choices": [
+      "Treat shock or toxin, assess ventilation, use bicarbonate selectively, and initiate KRT for refractory life-threatening acidemia.",
+      "Treat the bicarbonate number while leaving the acid source and ventilation unassessed",
+      "Give sodium bicarbonate routinely as the sole rescue treatment for acute severe hyperkalemia",
+      "Wait for a fixed creatinine threshold despite refractory life-threatening acidemia"
+    ],
+    "answer": 0,
+    "rationale": "Cause-directed care and ventilation assessment come first, with selective bicarbonate and KRT for refractory life-threatening failure. Changing bicarbonate does not remove an ongoing acid source. Bicarbonate is not routine acute hyperkalemia rescue and does not replace stabilization, shifting, or removal. Severe refractory acidemia cannot safely be deferred until an arbitrary creatinine value is reached; toxin decisions require toxin-specific expertise.",
+    "reviewHref": "#complications-and-kidney-support"
+  },
+  {
+    "id": "acute-kidney-injury-099",
+    "question": "Which assessment is most appropriate for metabolic acidosis in AKI?",
+    "choices": [
+      "Review pH, PCO2, bicarbonate, anion gap, lactate, ketones, toxins, chloride, potassium, hemodynamics, and volume.",
+      "Interpret bicarbonate in isolation and omit pH, PCO2, and clinical cause",
+      "Use an unqualified anion gap without considering albumin or possible mixed disorders",
+      "Omit ventilation and volume status because bicarbonate therapy cannot affect either"
+    ],
+    "answer": 0,
+    "rationale": "pH, PCO2, bicarbonate, the gap and albumin context, causes, potassium, perfusion, and fluid status belong together. Bicarbonate in isolation cannot characterize a mixed process. Albumin influences the interpretation of the gap. Bicarbonate treatment adds sodium and volume and produces carbon dioxide, so respiratory capacity and fluid tolerance remain relevant.",
+    "reviewHref": "#complications-and-kidney-support"
+  },
+  {
+    "id": "acute-kidney-injury-100",
+    "question": "Which statement correctly describes a risk of bicarbonate treatment in AKI?",
+    "choices": [
+      "Giving bicarbonate without checking ventilation and sodium load can worsen hypernatremia, volume, or CO2 burden.",
+      "Carbon dioxide generated by bicarbonate is eliminated independently of pulmonary ventilation",
+      "Sodium bicarbonate cannot add sodium or contribute to fluid overload",
+      "A corrected bicarbonate value proves that the underlying acid source has resolved"
+    ],
+    "answer": 0,
+    "rationale": "Bicarbonate can add sodium and volume and generates carbon dioxide requiring pulmonary elimination. Limited ventilation can therefore make the treatment burden important. Sodium and fluid overload remain possible, and chemistry needs reassessment. Improving the measured buffer value alone does not prove that shock, toxin exposure, or another acid source is resolved.",
+    "reviewHref": "#complications-and-kidney-support"
+  },
+  {
+    "id": "acute-kidney-injury-101",
+    "question": "Which principle best characterizes KRT initiation?",
+    "choices": [
+      "Kidney replacement therapy begins for refractory electrolyte, acid-base, volume, uremic, or dialyzable-toxin problems, not a creatinine number alone.",
+      "Every creatinine elevation is an independent indication for immediate KRT",
+      "Any mild edema requires KRT regardless of oxygenation, treatment response, or trajectory",
+      "KRT should be delayed until a fixed BUN threshold even with life-threatening homeostatic failure"
+    ],
+    "answer": 0,
+    "rationale": "KRT targets severe or refractory homeostatic complications and the broader clinical situation rather than an isolated biomarker. Creatinine alone is not a start rule. Mild edema is not equivalent to refractory organ-threatening overload. A fixed BUN threshold cannot justify delaying urgent treatment. A dialyzable-toxin problem requires toxin-specific assessment rather than an automatic rule for every exposure.",
+    "reviewHref": "#complications-and-kidney-support"
+  },
+  {
+    "id": "acute-kidney-injury-102",
+    "question": "Which clinical action best applies to KRT initiation?",
+    "choices": [
+      "Integrate severity, trajectory, reversibility, goals, access, and modality before complications become irreversible.",
+      "Ignore treatment response and reversibility once a creatinine value is available",
+      "Choose the start decision solely from hospital bed availability",
+      "Assume patient goals do not matter when selecting kidney support"
+    ],
+    "answer": 0,
+    "rationale": "Severity, trajectory, reversibility, goals, access, and modality guide timely support. The creatinine number does not replace assessment of complications or treatment response. Resources affect delivery planning but do not define the physiological indication by themselves. Patient goals remain part of the decision alongside urgent threats.",
+    "reviewHref": "#complications-and-kidney-support"
+  },
+  {
+    "id": "acute-kidney-injury-103",
+    "question": "Which assessment is most appropriate for KRT initiation?",
+    "choices": [
+      "Review potassium, pH, oxygenation, volume, uremic symptoms, toxin, urine output, hemodynamics, neurologic status, and goals.",
+      "Review creatinine alone without potassium, pH, oxygenation, or symptoms",
+      "Ignore urine output and hemodynamics because they cannot affect kidney-support decisions",
+      "Treat every reported toxin exposure as requiring the same modality without identifying the toxin"
+    ],
+    "answer": 0,
+    "rationale": "The complete clinical assessment identifies the urgent physiological problem and appropriate support. Creatinine alone omits direct threats. Urine output and hemodynamics help assess trajectory, removal capacity, and tolerance. Toxin clearance is toxin-specific and needs appropriate specialist input; it is not one universal modality rule.",
+    "reviewHref": "#complications-and-kidney-support"
+  },
+  {
+    "id": "acute-kidney-injury-104",
+    "question": "Which statement correctly describes KRT timing?",
+    "choices": [
+      "Waiting for an arbitrary creatinine threshold can delay treatment of life-threatening complications.",
+      "Wait for a creatinine threshold even when severe refractory potassium threatens the heart",
+      "Treat a transient potassium shift as definitive removal and cancel the clearance plan automatically",
+      "Use any edema finding as proof that urgent dialysis is mandatory"
+    ],
+    "answer": 0,
+    "rationale": "An arbitrary creatinine threshold can delay treatment of life-threatening complications. Refractory hyperkalemia requires an urgent clinical response even without that number. Shifting is temporary and may be followed by rebound, so definitive elimination still needs assessment. Edema alone does not establish refractory organ-threatening overload or mandate KRT.",
+    "reviewHref": "#complications-and-kidney-support"
+  },
+  {
+    "id": "acute-kidney-injury-105",
+    "question": "Which principle best characterizes KRT modality?",
+    "choices": [
+      "Intermittent, continuous, and prolonged therapies differ in clearance rate, hemodynamic tolerance, fluid precision, and logistics.",
+      "All modalities provide identical clearance rates and fluid control regardless of prescription",
+      "Continuous treatment has proven mortality superiority for every patient with AKI",
+      "Hemodynamic tolerance and available expertise cannot influence modality selection"
+    ],
+    "answer": 0,
+    "rationale": "Modalities differ in solute and fluid delivery, tolerance, and logistics. They are not interchangeable under every prescription or circumstance. Continuous therapy has not established general mortality superiority over intermittent therapy. Circulation and available expertise help determine which strategy can achieve the clinical goals.",
+    "reviewHref": "#complications-and-kidney-support"
+  },
+  {
+    "id": "acute-kidney-injury-106",
+    "question": "Which clinical action best applies to KRT modality?",
+    "choices": [
+      "Match modality and prescription to hemodynamics, brain injury, catabolism, fluid goals, toxins, access, and resources.",
+      "Choose continuous therapy automatically for every AKI patient without assessing goals",
+      "Choose only by the machine name and ignore the actual prescription",
+      "Ignore toxin identity, brain injury, access, and available staff when planning delivery"
+    ],
+    "answer": 0,
+    "rationale": "The strategy and prescription must match physiology, urgency, goals, and practical delivery. Continuous treatment is useful in selected contexts, not an automatic rule for all AKI. A modality label does not prove the prescribed clearance or fluid removal will be delivered. Brain and toxin-specific concerns, access, and staff expertise can materially affect that choice.",
+    "reviewHref": "#complications-and-kidney-support"
+  },
+  {
+    "id": "acute-kidney-injury-107",
+    "question": "Which assessment is most appropriate for KRT modality?",
+    "choices": [
+      "Review pressure and vasopressors, intracranial concerns, solute urgency, fluid input, body size, access, anticoagulation, and staffing.",
+      "Assess the machine label alone and omit circulation and intracranial concerns",
+      "Assume a prescription proves delivery despite circuit clotting or treatment interruptions",
+      "Use fluid input alone without assessing solute urgency, access, or anticoagulation"
+    ],
+    "answer": 0,
+    "rationale": "Pressure support, brain concerns, solute and fluid goals, body size, access, anticoagulation, and staffing inform selection and delivery. A machine label cannot substitute for physiology. Clotting and interruptions can reduce actual treatment. Fluid intake is one part of the assessment and does not describe clearance urgency or delivery constraints.",
+    "reviewHref": "#complications-and-kidney-support"
+  },
+  {
+    "id": "acute-kidney-injury-108",
+    "question": "Which statement correctly describes effectiveness of KRT modalities?",
+    "choices": [
+      "Calling continuous therapy inherently more effective ignores delivered dose and patient-specific goals.",
+      "Continuous therapy is inherently superior regardless of clinical response or actual delivery",
+      "A prescribed dose guarantees that no treatment is lost to interruptions",
+      "Serial potassium, acid-base, and fluid response are unnecessary once therapy has begun"
+    ],
+    "answer": 0,
+    "rationale": "Effectiveness depends on goal-matched treatment that is actually delivered, not the modality name. Continuous treatment has no established general mortality superiority. Interruptions and circuit problems can lower delivery below the prescription. Serial solute, acid-base, and volume response remains necessary to assess whether support is achieving its goals.",
+    "reviewHref": "#complications-and-kidney-support"
+  },
+  {
+    "id": "acute-kidney-injury-109",
+    "question": "Which principle best characterizes nutrition during critical illness with AKI?",
+    "choices": [
+      "Nutrition in AKI should address illness severity, catabolism, treatment losses, electrolyte and fluid abnormalities, and feeding tolerance rather than restrict protein to delay KRT.",
+      "High creatinine alone establishes the same protein restriction for all critically ill patients",
+      "Protein should be restricted solely to postpone KRT despite ongoing critical-illness catabolism",
+      "KRT removes the need to account for amino-acid and protein losses"
+    ],
+    "answer": 0,
+    "rationale": "Critical illness and KRT can alter needs and cause nutrient losses independently of creatinine. One creatinine-based restriction cannot characterize every patient. In critically ill AKI, reducing protein solely to postpone KRT can worsen inadequate nutrition rather than treat the underlying illness. Extracorporeal nutrient losses must be considered; noncatabolic kidney dysfunction has a different context.",
+    "reviewHref": "#complications-and-kidney-support"
+  },
+  {
+    "id": "acute-kidney-injury-110",
+    "question": "Which clinical action best applies to nutrition during AKI?",
+    "choices": [
+      "Set individualized energy and protein goals, account for KRT losses, and monitor metabolic response and delivery.",
+      "Use a fixed renal diet without assessing catabolism, tolerance, or delivery",
+      "Count prescribed feed alone as proof of actual nutrient intake",
+      "Ignore glucose or citrate calories supplied by KRT when estimating total energy"
+    ],
+    "answer": 0,
+    "rationale": "Individual goals need illness, treatment-loss, metabolic, and delivery assessment. A fixed diet ignores changing needs and chemistry. Prescription does not prove actual intake when feeds are interrupted or poorly tolerated. KRT-related glucose or citrate can supply nonnutritional energy and belongs in the total-energy assessment.",
+    "reviewHref": "#complications-and-kidney-support"
+  },
+  {
+    "id": "acute-kidney-injury-111",
+    "question": "Which assessment is most appropriate for nutrition during AKI?",
+    "choices": [
+      "Review catabolic state, body size, intake, glucose, electrolytes, fluid, nitrogen balance when useful, feeding tolerance, and KRT modality.",
+      "Use serum creatinine alone to determine nutrition and protein needs",
+      "Use fluid-loaded body weight without considering the usual or pre-illness weight",
+      "Assume electrolytes and refeeding risk need no assessment during KRT"
+    ],
+    "answer": 0,
+    "rationale": "Catabolism, body-size context, intake, glucose, chemistry, fluid, tolerance, and KRT delivery support an individualized plan. Creatinine alone does not quantify needs. Fluid accumulation can distort current weight and should be considered. KRT does not remove electrolyte disturbances or refeeding risk; ongoing monitoring is necessary.",
+    "reviewHref": "#complications-and-kidney-support"
+  },
+  {
+    "id": "acute-kidney-injury-112",
+    "question": "Which statement correctly describes a nutrition risk during AKI?",
+    "choices": [
+      "Applying one low-protein renal diet to every patient can worsen underfeeding and lean-tissue loss without preventing dialysis.",
+      "One low-protein renal diet safely prevents KRT in every patient with AKI",
+      "A renal-specific formula is obligatory regardless of actual electrolyte and fluid needs",
+      "More energy is always better, so overfeeding cannot be harmful"
+    ],
+    "answer": 0,
+    "rationale": "A single restrictive diet can worsen underfeeding and lean-tissue loss, especially in critical illness, and is not a universal means of avoiding KRT. Renal formulas should be selected for the actual clinical and metabolic needs rather than used automatically. Both underfeeding and overfeeding need prevention, with reassessment of delivery, losses, chemistry, and tolerance.",
+    "reviewHref": "#complications-and-kidney-support"
+  }
+];
+for (const reviewed of akiSupportReviewOverrides) {
+  const existing = acuteKidneyInjuryQuestionBank.find(item => item.id === reviewed.id);
+  if (!existing || existing.answer !== reviewed.answer || existing.reviewHref !== reviewed.reviewHref) throw new Error("AKI support review identity mismatch");
+  Object.assign(existing, reviewed);
+}

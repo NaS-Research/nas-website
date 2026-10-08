@@ -76,19 +76,59 @@ export const acuteKidneyInjuryModule = {
       check: { question: "Why should an antibiotic loading dose not be reduced automatically in AKI?", choices: ["Loading dose depends mainly on distribution rather than clearance", "AKI increases every drug's clearance", "Maintenance and loading doses are identical", "Drug exposure cannot be monitored"], answer: 0, rationale: "Reduced clearance mainly changes maintenance, while critical illness can actually expand the distribution volume needed for loading.", reviewHref: "#medication-and-exposure-stewardship" },
     },
     {
-      slug: "complications-and-kidney-support", title: "Complications and Kidney Support", visual: "aki-complications",
-      summary: "Electrolyte, acid-base, volume, uremic, and toxin complications determine urgency. Kidney replacement therapy treats failed homeostasis, not an isolated creatinine value.",
-      concepts: ["Hyperkalemia", "Acidosis", "Volume overload", "Uremia and toxins", "KRT timing and modality"],
-      application: "Identify the immediate physiologic threat, use temporary stabilization and definitive removal appropriately, anticipate rebound, and select KRT by clinical indication, hemodynamics, clearance goal, and patient values.",
-      lesson: [
-        { heading: "Treat hyperkalemia in separate tasks", body: "IV calcium stabilizes the myocardium when indicated, insulin with glucose and selected adjuncts shift potassium, and kidney excretion, binders, or dialysis remove it. Confirm the sample, obtain an ECG, review drugs and tissue breakdown, monitor glucose, and expect rebound after temporary shifting." },
-        { heading: "Treat the cause of acidosis", body: "Interpret pH, respiratory compensation, anion gap, lactate, ketones, toxins, chloride, potassium, and hemodynamics. Bicarbonate is selective, not automatic, because sodium, volume, ionized calcium, and carbon dioxide can change. Refractory life-threatening acidemia can require KRT." },
-        { heading: "Start KRT for failed homeostasis", body: "Initiate KRT for refractory electrolyte disturbance, acidemia, pulmonary or systemic volume overload, uremic complications, or a dialyzable toxin, considering trajectory and goals. Creatinine alone is not a start threshold." },
-        { heading: "Match modality and delivered dose", body: "Intermittent, continuous, and prolonged therapies differ in solute rate, fluid precision, hemodynamic tolerance, brain effects, anticoagulation, staffing, and access. Choose the strategy that can achieve the patient's clearance and fluid goals, then verify delivered rather than prescribed treatment." },
-        { heading: "Feed the patient, not the creatinine", body: "AKI increases the risk of catabolism and underfeeding, especially during critical illness and kidney replacement therapy. Estimate energy and protein needs from the whole clinical state, account for losses through continuous therapy, and monitor electrolytes, glucose, volume, nitrogen balance when useful, and feeding tolerance. Do not restrict protein solely to postpone dialysis. Adjust sodium, potassium, phosphorus, and fluid to measured abnormalities and treatment delivery rather than applying a single renal diet to every patient." },
+      "slug": "complications-and-kidney-support",
+      "title": "Complications and Kidney Support",
+      "visual": "aki-complications",
+      "summary": "Recognize electrolyte, acid-base, volume, and uremic threats; distinguish temporary stabilization from definitive clearance. Match kidney support and nutrition to the clinical trajectory.",
+      "concepts": [
+        "Hyperkalemia stabilization and removal",
+        "Cause-directed acidosis care",
+        "KRT indications and modality",
+        "Delivered treatment",
+        "Nutrition and treatment losses"
       ],
-      keyPoints: ["Shifting potassium is temporary.", "Acidosis treatment is mechanistic.", "KRT starts for clinical indications.", "Modality must achieve a defined goal.", "Nutrition follows catabolism and treatment losses."],
-      check: { question: "Which finding is the strongest reason to initiate urgent KRT?", choices: ["Refractory hyperkalemia with ongoing ECG risk", "Creatinine of 4 mg/dL without complications", "A single mildly elevated BUN", "The presence of any edema"], answer: 0, rationale: "KRT urgency follows refractory life-threatening homeostatic failure rather than a creatinine threshold.", reviewHref: "#complications-and-kidney-support" },
+      "application": "Identify the immediate threat, act without delaying emergency care for a complete workup, plan definitive clearance and rebound monitoring, and reassess kidney support and nutrition against measured response and patient goals.",
+      "lesson": [
+        {
+          "heading": "Treat hyperkalemia in separate tasks",
+          "body": "A normal ECG does not exclude dangerous hyperkalemia. Review the potassium trajectory, sampling or hemolysis, drugs, tissue breakdown, acid-base state, and urine output; checking a possible sample artifact must not delay treatment of a credible emergency. IV calcium, when indicated, temporarily stabilizes the myocardium without lowering potassium. Insulin with glucose shifts potassium into cells; monitor glucose for delayed hypoglycemia, especially with impaired kidney function or repeat treatment. A beta-2 agonist is an adjunct with a variable response, not sole therapy for severe disease. Shifting does not remove potassium from the body: plan elimination, repeat potassium assessment, and rebound monitoring. Kidney excretion depends on remaining function, and life-threatening or refractory disease may require urgent KRT. Oral binders remove potassium through the gastrointestinal tract, but the U.S. SPS, patiromer, and sodium zirconium cyclosilicate labels exclude emergency treatment of life-threatening hyperkalemia because of delayed onset. The UKKA guideline uses newer binders as adjuncts in some acute-care pathways; that does not replace immediate stabilization, shifting, or dialysis when indicated. Review bowel function and the individual label: SPS carries serious intestinal-injury risk and should not be combined with sorbitol; patiromer can lower magnesium; sodium zirconium cyclosilicate adds sodium and can cause edema. Oral-drug separation requirements and exceptions differ by product and interacting medicine."
+        },
+        {
+          "heading": "Treat the cause of acidosis",
+          "body": "Distinguish the low-pH state from the process producing it. Interpret pH, bicarbonate, and PCO2 together, compare the respiratory response with expected compensation, and consider a mixed disorder when the response differs. Compensation does not guarantee normal pH. Use the anion gap with albumin context, chloride, lactate, ketones, exposure history, perfusion, and kidney function to identify acid generation, buffer loss, or impaired excretion. Treat the cause and assess ventilation rather than chasing bicarbonate alone. Sodium bicarbonate is selective: it adds sodium and volume, can alter potassium and calcium, and generates carbon dioxide that requires pulmonary elimination. Reassess chemistry, fluid burden, and respiratory capacity during treatment. It is not routine acute hyperkalemia therapy or a universal substitute for treating shock, toxin exposure, or the underlying acid source. Refractory life-threatening acidemia can require KRT; use the whole clinical context rather than an isolated laboratory cutoff."
+        },
+        {
+          "heading": "Start KRT for failed homeostasis",
+          "body": "Urgent KRT addresses life-threatening or refractory electrolyte, acid-base, or volume problems and relevant uremic complications. Compare severity, treatment response, oxygenation, urine output, the trajectory, reversibility, and patient goals; do not wait for an arbitrary creatinine or BUN threshold. Temporary potassium stabilization and shifting can bridge to definitive treatment but cannot establish that body potassium has been removed. A suspected dialyzable poisoning needs toxin-specific specialist assessment; kidney dysfunction alone is not a universal toxin-clearance rule. Arrange appropriate expertise and access while treating immediate threats. KRT supports homeostasis while the cause is managed; neither every episode of AKI nor every mild edema finding requires it."
+        },
+        {
+          "heading": "Match modality and delivered dose",
+          "body": "Intermittent, continuous, and prolonged therapies are complementary delivery strategies. Intermittent treatment can provide rapid solute clearance; continuous treatment can support gradual fluid and solute control when hemodynamic tolerance or intracranial concerns favor it. Selection still depends on urgency, circulation, brain injury, catabolism, toxin-specific goals, access, anticoagulation, staffing, and available expertise. Continuous therapy is not inherently more effective and has not established general mortality superiority over intermittent therapy. A prescription is not proof of delivery: interruptions, access dysfunction, and circuit clotting can reduce treatment. Review actual delivery and serial potassium, acid-base and volume response, then revise the strategy against its clinical goals."
+        },
+        {
+          "heading": "Feed the patient, not the creatinine",
+          "body": "Separate critical illness with catabolism from noncatabolic kidney dysfunction. In critically ill AKI, do not reduce protein solely to postpone KRT: illness and extracorporeal amino-acid and protein losses can increase needs even when creatinine is high. Individualize energy and protein goals with nutrition expertise, using the clinical state, usual or pre-illness body size where appropriate, feeding tolerance, actual intake, and treatment delivery. Fluid accumulation can distort weight. Avoid both underfeeding and overfeeding, and include nonnutritional calories from KRT-related glucose or citrate when present. Monitor glucose, potassium, phosphorus, magnesium, sodium, fluid, and nitrogen balance when useful, with attention to refeeding risk. Adjust the plan to measured deficits or excesses and the current KRT modality; a single low-protein renal diet or a renal-specific formula is not appropriate for every patient."
+        }
+      ],
+      "keyPoints": [
+        "Calcium stabilizes; shifting is temporary; elimination is definitive.",
+        "A normal ECG cannot exclude dangerous hyperkalemia.",
+        "Acidosis care follows cause, ventilation, and treatment risks.",
+        "KRT urgency follows clinical homeostatic failure and trajectory.",
+        "Delivered treatment and individualized nutrition need reassessment."
+      ],
+      "check": {
+        "question": "Which finding is the strongest reason to initiate urgent KRT?",
+        "choices": [
+          "Refractory hyperkalemia with ongoing ECG risk",
+          "Creatinine of 4 mg/dL without complications",
+          "A single mildly elevated BUN",
+          "The presence of any edema"
+        ],
+        "answer": 0,
+        "rationale": "Refractory hyperkalemia with ongoing electrical risk represents a life-threatening failure of homeostasis and can require urgent KRT while temporary stabilization continues. Creatinine of 4 mg/dL without complications is not an independent start rule. A single mildly elevated BUN also lacks that context. Any edema is not equivalent to refractory volume overload impairing organ function.",
+        "reviewHref": "#complications-and-kidney-support"
+      }
     },
     {
       slug: "recovery-akd-and-follow-up", title: "Recovery, Acute Kidney Disease, and Follow-Up", visual: "aki-recovery",
@@ -110,6 +150,14 @@ export const acuteKidneyInjuryModule = {
     { label: "KDIGO 2012 Published AKI Guideline", href: "https://kdigo.org/wp-content/uploads/2016/10/KDIGO-2012-AKI-Guideline-English.pdf" },
     { label: "KDIGO 2026 AKI and AKD Public Review Draft", href: "https://kdigo.org/wp-content/uploads/2026/03/KDIGO-2026-AKI-AKD-Guideline-Public-Review-Draft-March-2026.pdf" },
     { label: "ACR Manual on Contrast Media", href: "https://www.acr.org/Clinical-Resources/Clinical-Tools-and-Reference/Contrast-Manual" },
+    {"label": "UK Kidney Association. Adult hyperkalaemia guideline (July 2026 update): acute-care recommendations", "href": "https://www.ukkidney.org/health-professionals/guidelines/treatment-acute-hyperkalaemia-adults-0"},
+    {"label": "DailyMed. Sodium polystyrene sulfonate (Epic): emergency limitation and safety", "href": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=61cc890b-eb3d-494c-ae45-629a27e721ce"},
+    {"label": "DailyMed. Veltassa: emergency limitation and product-specific interactions", "href": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=bf002984-d6c9-46df-aecb-a07733f763c1"},
+    {"label": "DailyMed. Lokelma (AS repackaged label): emergency limitation and sodium/edema precautions", "href": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=7f7ed64d-8480-4143-a207-29c24a0b9363"},
+    {"label": "Lameire and Kellum. KDIGO AKI summary, Part 2 (2013): kidney support", "href": "https://doi.org/10.1186/cc11455"},
+    {"label": "Sabatino et al. ESPEN practical kidney nutrition guideline (2024)", "href": "https://doi.org/10.1016/j.clnu.2024.08.002"},
+    {"label": "Jung et al. French metabolic acidosis recommendations (2019): diagnosis and physiological treatment risks", "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6695455/"},
+    {"label": "FDA. Amneal ready-to-use 1.26% sodium bicarbonate label (2026): sodium, volume, electrolyte and carbon-dioxide risks", "href": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220790Orig1s000lbl.pdf"},
   ],
   questionBank: acuteKidneyInjuryQuestionBank,
 };
