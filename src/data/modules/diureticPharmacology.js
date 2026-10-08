@@ -125,3 +125,134 @@ export const diureticPharmacologyModule = {
   ],
   questionBank: diureticPharmacologyQuestionBank,
 };
+
+// Reviewed scope: fluid-broader-thiazide-safety; stable lesson identity retained.
+Object.assign(diureticPharmacologyModule.submodules.find((lesson) => lesson.slug === "thiazide-like-diuretics"), {
+  "summary": "Thiazide and thiazide-like drugs share a principal NCC target in the distal convoluted tubule. Product duration, formulation, kidney response and electrolyte risk still require separate assessment.",
+  "application": "Choose the exact product for the blood-pressure or edema goal. Assess sodium, potassium, magnesium, kidney function, volume and interacting medicines; treat sodium abnormalities according to symptoms, cause and trajectory.",
+  "lesson": [
+    {
+      "heading": "Map the transport target",
+      "body": "The principal thiazide-sensitive sodium chloride cotransporter, NCC, is predominantly expressed in the distal convoluted tubule. Blocking sodium chloride reclamation increases downstream sodium delivery. This segment map distinguishes NCC from the loop target NKCC2 and collecting-duct ENaC. It is a simplified physiological map: human expression can extend into the connecting tubule."
+    },
+    {
+      "heading": "Distinguish the products",
+      "body": "Chlorothiazide, hydrochlorothiazide, chlorthalidone, indapamide and metolazone belong in a common pharmacological discussion, but they are not interchangeable milligram for milligram. The reviewed hydrochlorothiazide label describes 6-12 hours of diuretic activity, chlorthalidone 48-72 hours, and metolazone 24 hours or more. Indapamide's approximately 14-hour whole-blood half-life is a different measurement, not a directly comparable duration of diuresis. Select by the exact product, indication, clinical response and monitoring plan; the hydrochlorothiazide label states that its antihypertensive mechanism is unknown."
+    },
+    {
+      "heading": "Read adult doses by product and indication",
+      "body": "The book's adult hypertension overview includes hydrochlorothiazide 12.5-50 mg/day and chlorthalidone 12.5-25 mg/day. The referenced product labels describe hydrochlorothiazide starting at 25 mg daily, with titration to 50 mg; chlorthalidone starting at 25 mg daily, with lower maintenance doses possible and escalation to 50 or 100 mg if needed; indapamide starting at 1.25 mg each morning; metolazone 2.5-5 mg once daily; and oral chlorothiazide 500-1,000 mg daily in one or two doses, with up to 2,000 mg/day in divided doses rarely required for hypertension. These are product-label examples, not equivalent doses or a universal starting regimen. Indapamide may increase to 2.5 mg after four weeks of insufficient response, then to 5 mg after another four weeks, with another antihypertensive considered. Edema schedules differ: the metolazone label lists 5-20 mg once daily, while indapamide starts at 2.5 mg each morning and may increase to 5 mg after one week. Choose the lowest effective dose using the exact indication, formulation, response and laboratory findings; higher doses can increase electrolyte harm without proportional benefit."
+    },
+    {
+      "heading": "Match chlorothiazide formulation and route",
+      "body": "Chlorothiazide has oral tablet and suspension formulations and a separately labeled sodium salt for intravenous use. The referenced oral suspension contains 250 mg per 5 mL: 250 mg / 5 mL = 50 mg/mL, so an ordered 1,000 mg oral dose requires 1,000 mg / 50 mg/mL = 20 mL. Confirm the actual bottle concentration and oral route before measuring. The intravenous label reserves use for patients unable to take oral medication or for emergency situations; it describes slow intravenous injection or infusion, not intramuscular or subcutaneous administration, and requires avoidance of extravasation. Its usual adult dose is 500 mg to 1 g once or twice daily. Oral concentration calculations do not determine intravenous preparation, compatibility or administration rate; follow that exact injectable product label."
+    },
+    {
+      "heading": "Account for kidney function and formulation",
+      "body": "Reduced kidney function can alter both response and toxicity; do not treat one renal cutoff as proof that every thiazide-like product is ineffective. The reviewed metolazone label describes possible diuresis even at very low glomerular filtration rates, together with renal impairment, azotemia and accumulation precautions. It also warns against equal-dose interchange between formulations with different bioavailability. This warning does not establish current availability of a historical brand. Adding metolazone to furosemide can produce unusually large or prolonged fluid and electrolyte losses."
+    },
+    {
+      "heading": "Separate urine calcium from clinical benefit",
+      "body": "Thiazides tend to reduce urinary calcium, contrasting with loop-associated urinary calcium loss. Increased calcium reclamation is a physiological explanation, not a guarantee of stone prevention or of a normal serum calcium concentration. Consider the effect within the patient's stone, sodium intake, kidney function, volume and calcium context. A serum calcium rise warrants evaluation of medication contribution and other causes; marked hypercalcemia should not be attributed to the drug without assessment."
+    },
+    {
+      "heading": "Recognize the electrolyte cost",
+      "body": "Hyponatremia and hypokalemia can be clinically important or severe. Increased downstream sodium delivery and volume-related responses favor potassium and hydrogen secretion, contributing to hypokalemic alkalosis. Magnesium loss can also occur. Product labels call for electrolyte measurement and clinical review of thirst, weakness, cramps, dizziness, hypotension and other imbalance symptoms. Severe hyponatremia with hypokalemia has been reported with indapamide, particularly in older women; a selected trial's absence of a severe event does not establish absence of risk. Potassium-rich foods, supplements or a potassium-sparing combination may be considered within an individualized plan, but do not guarantee prevention of hypokalemia. Use measured electrolyte needs, kidney function and the complete regimen to guide correction."
+    },
+    {
+      "heading": "Check contraindications and organ vulnerability",
+      "body": "The product labels list anuria and known hypersensitivity contraindications; assess the exact drug and documented reaction rather than treating a vague allergy entry as a complete clinical assessment. The metolazone label also contraindicates hepatic coma or precoma. Severe kidney impairment, progressive azotemia and hepatic disease require particular caution: changes in volume and electrolytes can worsen kidney function or precipitate hepatic encephalopathy. Thiazide labels describe possible activation or exacerbation of systemic lupus erythematosus. Other antihypertensives can add to the pressure effect, and alcohol or sedating drugs can worsen orthostatic symptoms. Monitor pressure, symptoms, weight or intake/output when relevant, kidney function and electrolytes; counsel about appropriate dose timing to limit disruptive nocturia."
+    },
+    {
+      "heading": "Recognize eye and skin warning signs",
+      "body": "Hydrochlorothiazide can cause acute transient myopia and secondary angle-closure glaucoma. New ocular pain or a sudden decline in vision after initiation requires prompt evaluation and rapid discontinuation of the suspected hydrochlorothiazide; untreated angle closure can cause permanent visual loss. The indapamide label also describes acute angle-closure glaucoma and choroidal effusion. Photosensitivity and rash are reported adverse effects. The hydrochlorothiazide label describes an association with non-melanoma skin cancer and calls for sun protection and regular skin screening; this does not establish that every exposed person will develop cancer or that every thiazide has the same evidence. Review tolerability, including dizziness and sexual adverse effects, alongside efficacy."
+    },
+    {
+      "heading": "Evaluate thiazide-associated hyponatremia",
+      "body": "Reduced urinary dilution, water intake, solute intake and individual susceptibility can combine with sodium loss and vasopressin responses. The patient may be volume depleted or have a SIAD-like presentation. Assess neurologic symptoms, sodium trajectory and duration, serum tonicity, contemporaneous urine studies, medication timing, intake and volume context. A raised urine sodium during diuretic therapy does not prove SIAD or reliably define volume status. Persistent hyponatremia after withdrawal requires reconsideration of other causes."
+    },
+    {
+      "heading": "Match sodium care to urgency and cause",
+      "body": "Stop the suspected contributing drug and reassess the treatment need. Severe neurologic symptoms require immediate monitored care and controlled correction according to the clinical protocol. Mild asymptomatic hyponatremia does not automatically have the same urgency. Fluid restriction is not the treatment for every cause: an SIAD-like water excess and true circulating-volume depletion require different approaches. Follow sodium trajectory and urine output because restoration of water excretion can cause unexpectedly rapid correction and osmotic demyelination risk. This lesson supplies no universal saline dose or numerical correction ceiling."
+    },
+    {
+      "heading": "Review metabolic effects and interactions",
+      "body": "Thiazide-like therapy can increase urate, precipitate gout and alter glucose tolerance. Review these effects with the patient's symptoms and metabolic context. Cholesterol and triglyceride increases are also described in thiazide labeling; assess the individual lipid trend rather than assuming a change in every patient. Diuretic-induced sodium loss can reduce lithium clearance; toxicity can develop despite an unchanged lithium prescription. Coordinate lithium concentrations, dose timing, clinical toxicity assessment, sodium, hydration and kidney function when the diuretic is started, changed or stopped. Dose adjustments follow concentrations and clinical response. NSAIDs may blunt the diuretic or antihypertensive response in some patients and add kidney risk; reconcile nonprescription use and monitor the response rather than treating every combination as an automatic prohibition."
+    },
+    {
+      "heading": "Identify the exact dofetilide interaction",
+      "body": "The dofetilide label specifically contraindicates hydrochlorothiazide, alone or in combinations such as hydrochlorothiazide/triamterene, because dofetilide exposure and QT prolongation can increase. Do not dispense that combination on the assumption that electrolyte monitoring alone removes the contraindication. This named-drug contraindication is different from the broader warning that potassium-depleting diuretics can cause hypokalemia or hypomagnesemia and increase torsades risk. Other diuretic choices still require interaction review and potassium, magnesium and kidney assessment; the specific hydrochlorothiazide prohibition does not prove another product safe."
+    },
+    {
+      "heading": "Explain paradoxical antidiuresis without overstating the model",
+      "body": "In selected patients with nephrogenic diabetes insipidus, a thiazide may reduce urine volume. A physiological model involves mild extracellular volume contraction, increased proximal sodium and water reclamation, and less downstream fluid delivery. A small human mechanistic study supports proximal reclamation; cell and mouse experiments suggest additional NCC-independent actions. These sources do not establish an exclusive mechanism or a universal patient regimen. A reduced urine volume does not prove restoration of vasopressin sensitivity or establish safe water balance. Confirm the cause, distinguish nephrogenic from central disease, and individualize hydration, solute strategy and monitoring of sodium, potassium, pressure, volume and kidney function. In lithium-associated disease, review lithium exposure and consider cause-specific options; the lithium label allows consideration of amiloride."
+    }
+  ],
+  "keyPoints": [
+    "NCC is the principal thiazide target; products differ in exposure and formulation.",
+    "Urinary calcium reduction does not guarantee stone prevention or normal serum calcium.",
+    "Sodium care follows symptoms, cause and trajectory; prevent uncontrolled correction.",
+    "Lithium interactions and NDI treatment require clinical, electrolyte and kidney monitoring."
+  ],
+  "check": {
+    "question": "A patient taking a thiazide has lower urinary calcium. Which conclusion is best supported?",
+    "choices": [
+      "The medicine can reduce urinary calcium; serum calcium and clinical outcomes still need separate assessment",
+      "A lower urinary calcium result guarantees that serum calcium cannot rise",
+      "The result proves that the patient's next stone will be prevented",
+      "The result establishes that thiazide and loop calcium effects are identical"
+    ],
+    "answer": 0,
+    "rationale": "\"A urinary effect with separate serum and outcome assessment\" is correct: urinary calcium reduction is a physiological effect, while serum calcium and stone recurrence are separate outcomes. \"Guaranteed absence of serum calcium elevation\" ignores possible serum calcium elevation. \"Guaranteed prevention of the next stone\" treats a urinary measurement as guaranteed prevention. \"Identical loop and thiazide calcium effects\" overlooks the contrasting loop-associated urinary calcium loss. Assess the patient's broader calcium, sodium, volume and kidney context.",
+    "reviewHref": "#thiazide-like-diuretics"
+  }
+});
+diureticPharmacologyModule.references.push(...[
+  {
+    "label": "DailyMed. Hydrochlorothiazide tablets: product-specific precautions and interactions",
+    "href": "https://dailymed.nlm.nih.gov/dailymed/getFile.cfm?setid=4ee35bcf-1eb0-1cca-e063-6294a90adeed&type=pdf"
+  },
+  {
+    "label": "DailyMed. Indapamide tablets: product-specific electrolyte and metabolic precautions",
+    "href": "https://dailymed.nlm.nih.gov/dailymed/getFile.cfm?setid=59cd3331-7afe-432a-8b50-39533fd5f392&type=pdf"
+  },
+  {
+    "label": "DailyMed. Metolazone tablets: formulation, kidney response and combination warnings",
+    "href": "https://dailymed.nlm.nih.gov/dailymed/getFile.cfm?setid=1a8c38aa-362e-6bcc-e063-6294a90a1e05&type=pdf"
+  },
+  {
+    "label": "Spasovski et al. Hyponatraemia guideline (2014): adult hypotonic disease, diuretic caveats and cause-specific care",
+    "href": "https://doi.org/10.1093/ndt/gfu040"
+  },
+  {
+    "label": "Obermüller et al. NCC expression in rat and human kidney (1995): indexed primary abstract",
+    "href": "https://pubmed.ncbi.nlm.nih.gov/8594886/"
+  },
+  {
+    "label": "Jakobsson and Berg. Thiazide effects in four boys with NDI or partial NDI (1994): indexed primary abstract",
+    "href": "https://pubmed.ncbi.nlm.nih.gov/8086732/"
+  },
+  {
+    "label": "Sinke et al. Experimental NCC-independent thiazide effects in lithium-induced NDI (2014): indexed primary abstract",
+    "href": "https://pubmed.ncbi.nlm.nih.gov/24352504/"
+  },
+  {
+    "label": "Fujita et al. Furosemide, salt loading and urinary calcium in eight normal subjects (1984): indexed primary abstract",
+    "href": "https://pubmed.ncbi.nlm.nih.gov/6089014/"
+  },
+  {
+    "label": "DailyMed. DIURIL chlorothiazide oral suspension: concentration and adult dosing",
+    "href": "https://dailymed.nlm.nih.gov/dailymed/getFile.cfm?setid=bd936e35-1af8-42da-bcc0-f22489d68574&type=pdf"
+  },
+  {
+    "label": "DailyMed. Chlorothiazide sodium for injection: product-specific route and adult dosing",
+    "href": "https://dailymed.nlm.nih.gov/dailymed/getFile.cfm?setid=377dc515-e381-4196-8bc7-b738606c57ac&type=pdf"
+  },
+  {
+    "label": "DailyMed/Pfizer. TIKOSYN dofetilide label: hydrochlorothiazide contraindication and electrolyte warnings",
+    "href": "https://dailymed.nlm.nih.gov/dailymed/getFile.cfm?setid=02438044-d6a3-49e9-a1ac-3aad21ef2c8c&type=pdf"
+  }
+]);
+
+// Preserve the five existing cumulative selections as this module bank grows.
+diureticPharmacologyModule.cumulativeQuestionIds = ["diuretic-pharmacology-001", "diuretic-pharmacology-030", "diuretic-pharmacology-059", "diuretic-pharmacology-087", "diuretic-pharmacology-116"];

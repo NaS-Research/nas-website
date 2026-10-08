@@ -15,3 +15,32 @@ export default function DiureticPharmacologyVisual({ type }) {
     <div className="chol-visual__grid">{diagram.columns.map(([name, action, detail], index) => <div key={name}><span>{String(index + 1).padStart(2, "0")}</span><strong>{name}</strong><em>{action}</em><p>{detail}</p></div>)}</div>
   </figure>;
 }
+
+// Reviewed scope: fluid-broader-thiazide-safety; other five diagrams remain exact.
+Object.assign(diagrams["diuretic-thiazide"], {
+  "eyebrow": "Thiazide and thiazide-like therapy",
+  "title": "NCC blockade connects salt handling with calcium and water balance.",
+  "accent": "#c3a165",
+  "columns": [
+    [
+      "Transport",
+      "NCC: mainly distal convoluted tubule",
+      "Select the exact product and formulation"
+    ],
+    [
+      "Sodium + potassium",
+      "Dilution and downstream secretion",
+      "Na/K loss; assess symptoms and trajectory"
+    ],
+    [
+      "Calcium",
+      "Urinary calcium tends to fall",
+      "Serum calcium and clinical benefit differ"
+    ],
+    [
+      "Nephrogenic DI",
+      "Proximal reclamation: one model",
+      "Individualize hydration and cause-specific care"
+    ]
+  ]
+});

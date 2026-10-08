@@ -686,3 +686,25 @@ export const allergicRhinitisModule = {
   ],
   questionBank: allergicRhinitisQuestionBank,
 };
+
+// Editorial punctuation only; preserve every clinical word, number and question.
+for (const change of [
+  {
+    "module": "allergic-rhinitis",
+    "lesson": "exposure-control-irrigation-and-technique",
+    "index": 2,
+    "heading": "Make the dust-mite plan practical",
+    "field": "body",
+    "before": "For clinically relevant dust-mite exposure, combine allergen-impermeable bedding covers with weekly laundering of sheets, pillowcases and blankets. Clean carpets weekly with a small-particle or HEPA-filter vacuum, wash washable rugs and mop hard floors. Consider reducing carpet and other dust reservoirs when feasible. Control indoor moisture and repair leaks; AAAAI advises relative humidity of 30–50%. Select measures the household can sustain and reassess symptoms rather than promising that one cover or cleaning session will eliminate allergy.",
+    "after": "For clinically relevant dust-mite exposure, combine allergen-impermeable bedding covers with weekly laundering of sheets, pillowcases and blankets. Clean carpets weekly with a small-particle or HEPA-filter vacuum, wash washable rugs and mop hard floors. Consider reducing carpet and other dust reservoirs when feasible. Control indoor moisture and repair leaks; AAAAI advises relative humidity of 30-50%. Select measures the household can sustain and reassess symptoms rather than promising that one cover or cleaning session will eliminate allergy."
+  }
+]) {
+  if (change.field === "body") {
+    const lesson = allergicRhinitisModule.submodules.find((item) => item.slug === change.lesson);
+    const body = lesson?.lesson?.[change.index];
+    if (body?.heading === change.heading && body.body === change.before) body.body = change.after;
+  } else {
+    const reference = allergicRhinitisModule.references[change.referenceIndex];
+    if (reference?.label === change.before && reference.href === change.href) reference.label = change.after;
+  }
+}

@@ -293,3 +293,304 @@ export const glaucomaPharmacotherapyModule = {
   ],
   questionBank: glaucomaPharmacotherapyQuestionBank,
 };
+
+// Editorial punctuation only; preserve every clinical word, number and question.
+for (const change of [
+  {
+    "module": "glaucoma-pharmacotherapy",
+    "lesson": "prostaglandin-pathway-therapy",
+    "index": 4,
+    "heading": "Track storage and ocular exclusions",
+    "field": "body",
+    "before": "Protect Xalatan from light and refrigerate unopened bottles at 2–8°C; an opened bottle may be kept at up to 25°C for six weeks. Avoid it in active herpes simplex keratitis and generally avoid use during active intraocular inflammation. A history of these conditions, aphakia, a torn posterior lens capsule after lens replacement, or other macular-edema risk requires careful review.",
+    "after": "Protect Xalatan from light and refrigerate unopened bottles at 2-8°C; an opened bottle may be kept at up to 25°C for six weeks. Avoid it in active herpes simplex keratitis and generally avoid use during active intraocular inflammation. A history of these conditions, aphakia, a torn posterior lens capsule after lens replacement, or other macular-edema risk requires careful review."
+  },
+  {
+    "module": "glaucoma-pharmacotherapy",
+    "lesson": "prostaglandin-pathway-therapy",
+    "index": 5,
+    "heading": "Handle Vyzulta as its own product",
+    "field": "body",
+    "before": "Vyzulta is latanoprostene bunod 0.024%: one drop in each affected eye every evening. Its metabolites support trabecular and uveoscleral outflow. Refrigerate unopened bottles at 2–8°C; after opening, store at 2–25°C for eight weeks. Protect from light and freezing. It contains benzalkonium chloride; remove lenses and wait 15 minutes before reinsertion. Separate other eye medicines by at least five minutes.",
+    "after": "Vyzulta is latanoprostene bunod 0.024%: one drop in each affected eye every evening. Its metabolites support trabecular and uveoscleral outflow. Refrigerate unopened bottles at 2-8°C; after opening, store at 2-25°C for eight weeks. Protect from light and freezing. It contains benzalkonium chloride; remove lenses and wait 15 minutes before reinsertion. Separate other eye medicines by at least five minutes."
+  },
+  {
+    "module": "glaucoma-pharmacotherapy",
+    "lesson": "prostaglandin-pathway-therapy",
+    "index": 6,
+    "heading": "Distinguish Zioptan pouch storage from single-dose use",
+    "field": "body",
+    "before": "Zioptan is preservative-free tafluprost 0.0015%, one drop in each affected eye every evening. Refrigerate unopened pouches at 2–8°C. Under the April 2026 label, unopened units in an opened pouch may remain at 20–25°C for 30 days, protected from moisture; record the opening date. Once a unit is opened, use it immediately for the prescribed eye or eyes and discard the remainder. Separate other eye medicines by five minutes; remove lenses and wait 15 minutes before reinsertion.",
+    "after": "Zioptan is preservative-free tafluprost 0.0015%, one drop in each affected eye every evening. Refrigerate unopened pouches at 2-8°C. Under the April 2026 label, unopened units in an opened pouch may remain at 20-25°C for 30 days, protected from moisture; record the opening date. Once a unit is opened, use it immediately for the prescribed eye or eyes and discard the remainder. Separate other eye medicines by five minutes; remove lenses and wait 15 minutes before reinsertion."
+  },
+  {
+    "module": "glaucoma-pharmacotherapy",
+    "lesson": "prostaglandin-pathway-therapy",
+    "index": 7,
+    "heading": "Recognize that BAK-free does not mean preservative-free",
+    "field": "body",
+    "before": "Travatan Z contains travoprost 0.004% with the sofZia preservative system, rather than benzalkonium chloride. Use one drop in each affected eye every evening. Store at 2–25°C; its label permits use after opening until the bottle expiration date. It still requires lens removal with a 15-minute wait before reinsertion and at least five minutes between eye medicines. Assess individual tolerance rather than promising that changing preservatives will resolve all surface symptoms.",
+    "after": "Travatan Z contains travoprost 0.004% with the sofZia preservative system, rather than benzalkonium chloride. Use one drop in each affected eye every evening. Store at 2-25°C; its label permits use after opening until the bottle expiration date. It still requires lens removal with a 15-minute wait before reinsertion and at least five minutes between eye medicines. Assess individual tolerance rather than promising that changing preservatives will resolve all surface symptoms."
+  },
+  {
+    "module": "glaucoma-pharmacotherapy",
+    "lesson": "prostaglandin-pathway-therapy",
+    "index": 8,
+    "heading": "Keep Lumigan concentration and storage explicit",
+    "field": "body",
+    "before": "Lumigan 0.01% is bimatoprost, one drop in each affected eye every evening. Store at 2–25°C; the opened bottle can be used until its expiration date. It contains benzalkonium chloride: remove lenses, wait 15 minutes before reinsertion, and separate other eye medicines by five minutes. Hypersensitivity to its ingredients is a contraindication. Review inflammation and macular-edema risk; periorbital fat changes, pigmentation and eyelash effects can affect adherence.",
+    "after": "Lumigan 0.01% is bimatoprost, one drop in each affected eye every evening. Store at 2-25°C; the opened bottle can be used until its expiration date. It contains benzalkonium chloride: remove lenses, wait 15 minutes before reinsertion, and separate other eye medicines by five minutes. Hypersensitivity to its ingredients is a contraindication. Review inflammation and macular-edema risk; periorbital fat changes, pigmentation and eyelash effects can affect adherence."
+  },
+  {
+    "module": "glaucoma-pharmacotherapy",
+    "lesson": "prostaglandin-pathway-therapy",
+    "index": 9,
+    "heading": "Check the Xelpros formulation",
+    "field": "body",
+    "before": "Xelpros is latanoprost 0.005% emulsion, preserved with potassium sorbate rather than BAK. Use one drop each evening. Its current label permits storage at 2–25°C, protected from light, and use after opening until the stamped expiration date. Do not apply Xalatan’s refrigeration and six-week rule to this product. Remove lenses for 15 minutes and separate other eye medicines by five minutes.",
+    "after": "Xelpros is latanoprost 0.005% emulsion, preserved with potassium sorbate rather than BAK. Use one drop each evening. Its current label permits storage at 2-25°C, protected from light, and use after opening until the stamped expiration date. Do not apply Xalatan’s refrigeration and six-week rule to this product. Remove lenses for 15 minutes and separate other eye medicines by five minutes."
+  },
+  {
+    "module": "glaucoma-pharmacotherapy",
+    "lesson": "prostaglandin-pathway-therapy",
+    "index": 10,
+    "heading": "Reconcile both Rocklatan ingredients",
+    "field": "body",
+    "before": "Rocklatan combines netarsudil 0.02% with latanoprost 0.005%, one drop each evening. Adding Rhopressa or Xalatan duplicates an ingredient; clarify the intended regimen. Refrigerate unopened bottles at 2–8°C. After opening, the limit is six weeks at 2–25°C, or the stamped expiration if kept refrigerated at 2–8°C. Protect from light; remove lenses for 15 minutes and separate drops by five minutes. Eye pain or decreased vision warrants prompt evaluation for possible epithelial corneal edema.",
+    "after": "Rocklatan combines netarsudil 0.02% with latanoprost 0.005%, one drop each evening. Adding Rhopressa or Xalatan duplicates an ingredient; clarify the intended regimen. Refrigerate unopened bottles at 2-8°C. After opening, the limit is six weeks at 2-25°C, or the stamped expiration if kept refrigerated at 2-8°C. Protect from light; remove lenses for 15 minutes and separate drops by five minutes. Eye pain or decreased vision warrants prompt evaluation for possible epithelial corneal edema."
+  },
+  {
+    "module": "glaucoma-pharmacotherapy",
+    "lesson": "prostaglandin-pathway-therapy",
+    "index": 12,
+    "heading": "Interpret reproductive evidence without promising safety",
+    "field": "body",
+    "before": "Rocklatan lacks adequate human pregnancy studies; its label reserves use for situations where expected benefit justifies fetal risk. Lumigan and Latisse also require an individual benefit–risk decision despite reassuring bimatoprost postmarketing observations. Animal findings and low systemic exposure do not establish human safety. Their lactation labels describe uncertainty about human milk exposure and call for weighing breastfeeding benefits, maternal need and possible infant effects. Arrange ophthalmology and obstetric review rather than stopping sight-preserving therapy without a plan.",
+    "after": "Rocklatan lacks adequate human pregnancy studies; its label reserves use for situations where expected benefit justifies fetal risk. Lumigan and Latisse also require an individual benefit-risk decision despite reassuring bimatoprost postmarketing observations. Animal findings and low systemic exposure do not establish human safety. Their lactation labels describe uncertainty about human milk exposure and call for weighing breastfeeding benefits, maternal need and possible infant effects. Arrange ophthalmology and obstetric review rather than stopping sight-preserving therapy without a plan."
+  },
+  {
+    "module": "glaucoma-pharmacotherapy",
+    "lesson": "prostaglandin-pathway-therapy",
+    "index": 13,
+    "heading": "Keep eyelash treatment evidence separate",
+    "field": "body",
+    "before": "Rocklatan has no established pediatric safety or effectiveness. Latisse has limited pediatric eyelash-treatment study data, which do not establish a pediatric glaucoma indication or override Lumigan’s age restriction. For Latisse counseling, remove lenses and wait 15 minutes before reinsertion; store at 2–25°C. Skip a missed application and resume the next evening. Extra applications do not speed growth, and eyelash benefits gradually diminish after stopping.",
+    "after": "Rocklatan has no established pediatric safety or effectiveness. Latisse has limited pediatric eyelash-treatment study data, which do not establish a pediatric glaucoma indication or override Lumigan’s age restriction. For Latisse counseling, remove lenses and wait 15 minutes before reinsertion; store at 2-25°C. Skip a missed application and resume the next evening. Extra applications do not speed growth, and eyelash benefits gradually diminish after stopping."
+  },
+  {
+    "module": "glaucoma-pharmacotherapy",
+    "lesson": "aqueous-production-suppressors",
+    "index": 1,
+    "heading": "Use the Betoptic S suspension correctly",
+    "field": "body",
+    "before": "Betoptic S 0.25% supplies one drop twice daily after shaking well. Give other topical eye medicines at least ten minutes before it. Remove contacts and wait 15 minutes before reinsertion. Store upright at 2–25°C; opened bottles can be used until their expiration date. Do not infer the 0.5% solution’s instructions from this suspension’s concentration or name.",
+    "after": "Betoptic S 0.25% supplies one drop twice daily after shaking well. Give other topical eye medicines at least ten minutes before it. Remove contacts and wait 15 minutes before reinsertion. Store upright at 2-25°C; opened bottles can be used until their expiration date. Do not infer the 0.5% solution’s instructions from this suspension’s concentration or name."
+  },
+  {
+    "module": "glaucoma-pharmacotherapy",
+    "lesson": "aqueous-production-suppressors",
+    "index": 2,
+    "heading": "Check the betaxolol solution separately",
+    "field": "body",
+    "before": "The Sandoz 0.5% solution label specifies one or two drops in each affected eye twice daily and storage at 20–25°C. It contains BAK. Its concentration, dose range and storage differ from Betoptic S suspension. Pediatric safety and effectiveness are not established for this solution; do not transfer the suspension’s pediatric evidence to it.",
+    "after": "The Sandoz 0.5% solution label specifies one or two drops in each affected eye twice daily and storage at 20-25°C. It contains BAK. Its concentration, dose range and storage differ from Betoptic S suspension. Pediatric safety and effectiveness are not established for this solution; do not transfer the suspension’s pediatric evidence to it."
+  },
+  {
+    "module": "glaucoma-pharmacotherapy",
+    "lesson": "aqueous-production-suppressors",
+    "index": 3,
+    "heading": "Do not confuse intrinsic activity with airway safety",
+    "field": "body",
+    "before": "Carteolol 1% is a nonselective beta blocker with intrinsic sympathomimetic activity. Its dose is one drop twice daily; store at 15–25°C, protected from light. Asthma or its history, severe COPD, sinus bradycardia, second- or third-degree AV block, overt cardiac failure and cardiogenic shock remain contraindications. Intrinsic activity does not remove systemic beta-blocker risk.",
+    "after": "Carteolol 1% is a nonselective beta blocker with intrinsic sympathomimetic activity. Its dose is one drop twice daily; store at 15-25°C, protected from light. Asthma or its history, severe COPD, sinus bradycardia, second- or third-degree AV block, overt cardiac failure and cardiogenic shock remain contraindications. Intrinsic activity does not remove systemic beta-blocker risk."
+  },
+  {
+    "module": "glaucoma-pharmacotherapy",
+    "lesson": "aqueous-production-suppressors",
+    "index": 4,
+    "heading": "Check levobunolol dose and sulfite sensitivity",
+    "field": "body",
+    "before": "The Bausch + Lomb 0.5% solution starts at one or two drops once daily; severe or uncontrolled disease may require twice-daily treatment. Above one drop twice daily generally adds no benefit. It contains sodium metabisulfite, which can provoke allergic or asthmatic reactions. Apply its nonselective beta-blocker contraindications and avoid duplicate topical beta blockers. Store at 15–25°C, protected from light, and recap immediately.",
+    "after": "The Bausch + Lomb 0.5% solution starts at one or two drops once daily; severe or uncontrolled disease may require twice-daily treatment. Above one drop twice daily generally adds no benefit. It contains sodium metabisulfite, which can provoke allergic or asthmatic reactions. Apply its nonselective beta-blocker contraindications and avoid duplicate topical beta blockers. Store at 15-25°C, protected from light, and recap immediately."
+  },
+  {
+    "module": "glaucoma-pharmacotherapy",
+    "lesson": "aqueous-production-suppressors",
+    "index": 5,
+    "heading": "Reconcile levobunolol precautions",
+    "field": "body",
+    "before": "Remove soft contacts before levobunolol and wait at least 15 minutes before reinsertion. Review oral beta blockers, calcium-channel blockers, digoxin, reserpine and phenothiazines for additive cardiovascular effects. Reduced cerebral perfusion symptoms require reassessment. Pediatric safety is unestablished; pregnancy requires an individual benefit–risk decision, and nursing warrants caution. Low topical doses do not establish safety for every patient.",
+    "after": "Remove soft contacts before levobunolol and wait at least 15 minutes before reinsertion. Review oral beta blockers, calcium-channel blockers, digoxin, reserpine and phenothiazines for additive cardiovascular effects. Reduced cerebral perfusion symptoms require reassessment. Pediatric safety is unestablished; pregnancy requires an individual benefit-risk decision, and nursing warrants caution. Low topical doses do not establish safety for every patient."
+  },
+  {
+    "module": "glaucoma-pharmacotherapy",
+    "lesson": "aqueous-production-suppressors",
+    "index": 8,
+    "heading": "Check the actual timolol dispenser",
+    "field": "body",
+    "before": "This Sandoz bottle instructs one shake before use and pressure on the bottle bottom, not squeezing the sides. Separate other eye medicines by at least ten minutes before or after; remove soft contacts and wait 15 minutes. Store upright at 15–30°C, protected from light and freezing; opened bottles remain usable until their expiration date. These instructions belong to this dispenser, not every timolol solution.",
+    "after": "This Sandoz bottle instructs one shake before use and pressure on the bottle bottom, not squeezing the sides. Separate other eye medicines by at least ten minutes before or after; remove soft contacts and wait 15 minutes. Store upright at 15-30°C, protected from light and freezing; opened bottles remain usable until their expiration date. These instructions belong to this dispenser, not every timolol solution."
+  },
+  {
+    "module": "glaucoma-pharmacotherapy",
+    "lesson": "aqueous-production-suppressors",
+    "index": 9,
+    "heading": "Identify the once-daily timolol solution",
+    "field": "body",
+    "before": "The Bausch + Lomb 0.5% once-daily solution uses one drop each morning. Separate other eye medicines by five minutes; remove contacts and wait 15 minutes. It contains BAK and potassium sorbate. Store at 15–25°C; an opened bottle may be used until its expiration date. Pediatric safety and effectiveness are not established for this product. Confirm the dispensed formulation before changing a twice-daily prescription.",
+    "after": "The Bausch + Lomb 0.5% once-daily solution uses one drop each morning. Separate other eye medicines by five minutes; remove contacts and wait 15 minutes. It contains BAK and potassium sorbate. Store at 15-25°C; an opened bottle may be used until its expiration date. Pediatric safety and effectiveness are not established for this product. Confirm the dispensed formulation before changing a twice-daily prescription."
+  },
+  {
+    "module": "glaucoma-pharmacotherapy",
+    "lesson": "aqueous-production-suppressors",
+    "index": 10,
+    "heading": "Handle preservative-free timolol vials correctly",
+    "field": "body",
+    "before": "Ingenus single-dose timolol starts at one drop of 0.25% twice daily, with possible escalation to 0.5% twice daily. Assess pressure after about four weeks; once-daily maintenance requires satisfactory control and checks at different times of day. Use an opened vial immediately for the prescribed eye or eyes, then discard any remainder. Keep unused vials in their foil overwrap at 15–30°C, protected from light and freezing; use within one month of opening the pouch. Preservative removal does not remove systemic beta-blocker contraindications.",
+    "after": "Ingenus single-dose timolol starts at one drop of 0.25% twice daily, with possible escalation to 0.5% twice daily. Assess pressure after about four weeks; once-daily maintenance requires satisfactory control and checks at different times of day. Use an opened vial immediately for the prescribed eye or eyes, then discard any remainder. Keep unused vials in their foil overwrap at 15-30°C, protected from light and freezing; use within one month of opening the pouch. Preservative removal does not remove systemic beta-blocker contraindications."
+  },
+  {
+    "module": "glaucoma-pharmacotherapy",
+    "lesson": "aqueous-production-suppressors",
+    "index": 15,
+    "heading": "Separate the peri-laser apraclonidine product",
+    "field": "body",
+    "before": "Iopidine 1% controls pressure spikes after specified anterior-segment laser procedures. Give one drop in the operative eye one hour before laser and another immediately afterward, using a fresh single-dose container each time and discarding it after use. Store at 2–25°C, protected from light. The US product contains BAK despite single-dose packaging; do not assume preservative-free.",
+    "after": "Iopidine 1% controls pressure spikes after specified anterior-segment laser procedures. Give one drop in the operative eye one hour before laser and another immediately afterward, using a fresh single-dose container each time and discarding it after use. Store at 2-25°C, protected from light. The US product contains BAK despite single-dose packaging; do not assume preservative-free."
+  },
+  {
+    "module": "glaucoma-pharmacotherapy",
+    "lesson": "aqueous-production-suppressors",
+    "index": 19,
+    "heading": "Give Azopt its own administration instructions",
+    "field": "body",
+    "before": "Azopt is brinzolamide 1% suspension: shake well and instill one drop in each affected eye three times daily. Separate other eye medicines by at least ten minutes. Remove contact lenses and wait 15 minutes before reinsertion. Store at 4–30°C; after opening, use until the bottle expiration. Wait until vision is clear before driving.",
+    "after": "Azopt is brinzolamide 1% suspension: shake well and instill one drop in each affected eye three times daily. Separate other eye medicines by at least ten minutes. Remove contact lenses and wait 15 minutes before reinsertion. Store at 4-30°C; after opening, use until the bottle expiration. Wait until vision is clear before driving."
+  },
+  {
+    "module": "glaucoma-pharmacotherapy",
+    "lesson": "aqueous-production-suppressors",
+    "index": 21,
+    "heading": "Match oral acetazolamide dosing to the formulation",
+    "field": "body",
+    "before": "For chronic open-angle glaucoma, the tablet label describes 250–1,000 mg per day, dividing amounts above 250 mg. The extended-release regimen is 500 mg twice daily. Doses above 1,000 mg daily generally add no benefit in this setting. Acute preoperative regimens differ and require specialist supervision; these are not instructions for self-treating a painful eye.",
+    "after": "For chronic open-angle glaucoma, the tablet label describes 250-1,000 mg per day, dividing amounts above 250 mg. The extended-release regimen is 500 mg twice daily. Doses above 1,000 mg daily generally add no benefit in this setting. Acute preoperative regimens differ and require specialist supervision; these are not instructions for self-treating a painful eye."
+  },
+  {
+    "module": "glaucoma-pharmacotherapy",
+    "lesson": "aqueous-production-suppressors",
+    "index": 25,
+    "heading": "Distinguish methazolamide from acetazolamide",
+    "field": "body",
+    "before": "Methazolamide’s labeled dose is 50–100 mg two or three times daily. Less renal clearance does not make it appropriate in marked kidney disease; renal, hepatic, electrolyte, adrenal and acidosis restrictions still apply. Obtain baseline and periodic CBC, platelets and electrolytes. Review high-dose aspirin and steroid-associated hypokalemia. Long-term treatment of angle closure is contraindicated because reduced pressure can mask continued angle obstruction.",
+    "after": "Methazolamide’s labeled dose is 50-100 mg two or three times daily. Less renal clearance does not make it appropriate in marked kidney disease; renal, hepatic, electrolyte, adrenal and acidosis restrictions still apply. Obtain baseline and periodic CBC, platelets and electrolytes. Review high-dose aspirin and steroid-associated hypokalemia. Long-term treatment of angle closure is contraindicated because reduced pressure can mask continued angle obstruction."
+  },
+  {
+    "module": "glaucoma-pharmacotherapy",
+    "lesson": "aqueous-production-suppressors",
+    "index": 28,
+    "heading": "Verify renal dosing rather than copying the usual schedule",
+    "field": "body",
+    "before": "Acetazolamide’s U.S. label contraindicates marked renal dysfunction without giving a numerical adjustment table. A January 2026 Vancouver Coastal Health adult IV protocol uses 125–250 mg every 12 hours for creatinine clearance 10–50 mL/min in acute glaucoma and still excludes severe renal impairment. That institutional IV schedule is not a universal oral or extended-release regimen. Confirm formulation, renal function, acid–base status and the applicable specialist protocol; a dose reduction does not cancel a contraindication.",
+    "after": "Acetazolamide’s U.S. label contraindicates marked renal dysfunction without giving a numerical adjustment table. A January 2026 Vancouver Coastal Health adult IV protocol uses 125-250 mg every 12 hours for creatinine clearance 10-50 mL/min in acute glaucoma and still excludes severe renal impairment. That institutional IV schedule is not a universal oral or extended-release regimen. Confirm formulation, renal function, acid-base status and the applicable specialist protocol; a dose reduction does not cancel a contraindication."
+  },
+  {
+    "module": "glaucoma-pharmacotherapy",
+    "lesson": "conventional-outflow-and-procedures",
+    "index": 2,
+    "heading": "Use the Rhopressa schedule and storage conditions",
+    "field": "body",
+    "before": "Rhopressa 0.02% is dosed as one drop in each affected eye every evening. Resume at the next evening dose after a missed dose; twice-daily dosing is not recommended. Refrigerate unopened bottles at 2–8°C. After opening, storage at 2–25°C permits up to six weeks; the current label permits use until the stamped expiration if kept refrigerated at 2–8°C. Verify the actual bottle label and storage history rather than extending a room-temperature bottle by refrigerating it later.",
+    "after": "Rhopressa 0.02% is dosed as one drop in each affected eye every evening. Resume at the next evening dose after a missed dose; twice-daily dosing is not recommended. Refrigerate unopened bottles at 2-8°C. After opening, storage at 2-25°C permits up to six weeks; the current label permits use until the stamped expiration if kept refrigerated at 2-8°C. Verify the actual bottle label and storage history rather than extending a room-temperature bottle by refrigerating it later."
+  },
+  {
+    "module": "glaucoma-pharmacotherapy",
+    "lesson": "conventional-outflow-and-procedures",
+    "index": 4,
+    "heading": "Apply pilocarpine product precautions",
+    "field": "body",
+    "before": "For open-angle pressure control, Somerset pilocarpine 1%, 2% or 4% is one drop up to four times daily; begin treatment-naïve patients at 1%. Obtain a retinal examination before treatment. Avoid use with iritis. Do not drive with unclear vision. This product specifies two-minute punctal occlusion, five-minute drug separation and ten-minute contact-lens reinsertion. Store at 15–25°C without freezing.",
+    "after": "For open-angle pressure control, Somerset pilocarpine 1%, 2% or 4% is one drop up to four times daily; begin treatment-naïve patients at 1%. Obtain a retinal examination before treatment. Avoid use with iritis. Do not drive with unclear vision. This product specifies two-minute punctal occlusion, five-minute drug separation and ten-minute contact-lens reinsertion. Store at 15-25°C without freezing."
+  },
+  {
+    "module": "glaucoma-pharmacotherapy",
+    "lesson": "acute-angle-closure-and-drug-triggers",
+    "index": 3,
+    "heading": "Verify the acute acetazolamide order",
+    "field": "body",
+    "before": "The Hikma injection label describes 250 mg every four hours for some acute preoperative cases, or an initial 500 mg followed by 125–250 mg every four hours, individualized by the treating clinician. EGS instead specifies 10 mg/kg intravenously when rapid treatment is needed. Keep the selected regimen, renal assessment and monitoring explicit; do not add a weight-based loading dose to a fixed-dose schedule without an order.",
+    "after": "The Hikma injection label describes 250 mg every four hours for some acute preoperative cases, or an initial 500 mg followed by 125-250 mg every four hours, individualized by the treating clinician. EGS instead specifies 10 mg/kg intravenously when rapid treatment is needed. Keep the selected regimen, renal assessment and monitoring explicit; do not add a weight-based loading dose to a fixed-dose schedule without an order."
+  },
+  {
+    "module": "glaucoma-pharmacotherapy",
+    "lesson": "acute-angle-closure-and-drug-triggers",
+    "index": 7,
+    "heading": "Verify the ordered mannitol regimen",
+    "field": "body",
+    "before": "The reviewed ICU Medical 20% mannitol label gives 1.5–2 g/kg intravenously over at least 30 minutes for lowering intraocular pressure. EGS describes a lower 0.5–1.5 g/kg range for acute angle closure. These are different source regimens: confirm the specialist order, concentration and institutional protocol rather than combining their dose and rate instructions. Mannitol can cause fluid overload or kidney injury, so repeated dosing is not automatic.",
+    "after": "The reviewed ICU Medical 20% mannitol label gives 1.5-2 g/kg intravenously over at least 30 minutes for lowering intraocular pressure. EGS describes a lower 0.5-1.5 g/kg range for acute angle closure. These are different source regimens: confirm the specialist order, concentration and institutional protocol rather than combining their dose and rate instructions. Mannitol can cause fluid overload or kidney injury, so repeated dosing is not automatic."
+  },
+  {
+    "module": "glaucoma-pharmacotherapy",
+    "lesson": "glaucoma-selection-and-monitoring",
+    "index": 1,
+    "heading": "Distinguish pregnancy evidence from a safety ranking",
+    "field": "body",
+    "before": "Do not select a glaucoma drug solely from an old pregnancy letter category. Current Alphagan P labeling describes insufficient human evidence and requires a benefit–risk decision; EGS advises avoiding brimonidine in late pregnancy because of potential neonatal apnea. Beta blockers have more clinical experience, but newborn cardiac and respiratory effects remain concerns. An observational study finding no statistically significant excess low birth weight with topical beta blockers does not prove absence of all fetal risks. Prostaglandin and carbonic anhydrase inhibitor animal findings likewise do not establish a precise human risk.",
+    "after": "Do not select a glaucoma drug solely from an old pregnancy letter category. Current Alphagan P labeling describes insufficient human evidence and requires a benefit-risk decision; EGS advises avoiding brimonidine in late pregnancy because of potential neonatal apnea. Beta blockers have more clinical experience, but newborn cardiac and respiratory effects remain concerns. An observational study finding no statistically significant excess low birth weight with topical beta blockers does not prove absence of all fetal risks. Prostaglandin and carbonic anhydrase inhibitor animal findings likewise do not establish a precise human risk."
+  },
+  {
+    "module": "glaucoma-pharmacotherapy",
+    "lesson": "glaucoma-selection-and-monitoring",
+    "index": 9,
+    "heading": "Check both components for interactions",
+    "field": "body",
+    "before": "Cosopt PF and Simbrinza are not recommended with oral carbonic anhydrase inhibitors; assess high-dose salicylate exposure because acid–base and electrolyte interactions are possible. Timolol-containing combinations require review of systemic beta blockers, calcium-channel blockers, digoxin and CYP2D6 inhibitors for additive cardiovascular effects. Brimonidine combinations require caution with CNS depressants, antihypertensives, tricyclic antidepressants and MAO inhibitors; distinguish a label precaution from a formal contraindication.",
+    "after": "Cosopt PF and Simbrinza are not recommended with oral carbonic anhydrase inhibitors; assess high-dose salicylate exposure because acid-base and electrolyte interactions are possible. Timolol-containing combinations require review of systemic beta blockers, calcium-channel blockers, digoxin and CYP2D6 inhibitors for additive cardiovascular effects. Brimonidine combinations require caution with CNS depressants, antihypertensives, tricyclic antidepressants and MAO inhibitors; distinguish a label precaution from a formal contraindication."
+  },
+  {
+    "module": "glaucoma-pharmacotherapy",
+    "lesson": "glaucoma-selection-and-monitoring",
+    "index": 11,
+    "heading": "Distinguish the preserved Cosopt bottle",
+    "field": "body",
+    "before": "Preserved Cosopt has the same dorzolamide 2%/timolol 0.5% strengths and twice-daily one-drop regimen, but contains BAK 0.0075%. For the reviewed Théa bottle, separate other eye drops by at least five minutes, remove soft contacts and wait 15 minutes before reinsertion. Store at 20–25°C protected from light; after opening, use through the labeled expiration date. Do not apply Cosopt PF’s 15-day pouch limit to this multidose bottle. Both formulations retain the renal, corneal, pulmonary, cardiac and interaction precautions of their active ingredients.",
+    "after": "Preserved Cosopt has the same dorzolamide 2%/timolol 0.5% strengths and twice-daily one-drop regimen, but contains BAK 0.0075%. For the reviewed Théa bottle, separate other eye drops by at least five minutes, remove soft contacts and wait 15 minutes before reinsertion. Store at 20-25°C protected from light; after opening, use through the labeled expiration date. Do not apply Cosopt PF’s 15-day pouch limit to this multidose bottle. Both formulations retain the renal, corneal, pulmonary, cardiac and interaction precautions of their active ingredients."
+  },
+  {
+    "module": "glaucoma-pharmacotherapy",
+    "lesson": "glaucoma-selection-and-monitoring",
+    "index": 12,
+    "heading": "Date the Cosopt PF pouch",
+    "field": "body",
+    "before": "Store Cosopt PF at 20–25°C without freezing. Keep unused vials inside the original foil pouch to protect them from light, record the opening date, and discard remaining vials 15 days later. This pouch limit is separate from the immediate disposal of each opened vial. Space other ophthalmic medicines by at least five minutes.",
+    "after": "Store Cosopt PF at 20-25°C without freezing. Keep unused vials inside the original foil pouch to protect them from light, record the opening date, and discard remaining vials 15 days later. This pouch limit is separate from the immediate disposal of each opened vial. Space other ophthalmic medicines by at least five minutes."
+  },
+  {
+    "module": "glaucoma-pharmacotherapy",
+    "lesson": "glaucoma-selection-and-monitoring",
+    "index": 13,
+    "heading": "Store Combigan as its own product",
+    "field": "body",
+    "before": "Keep Combigan at 15–25°C, protected from light, and replace the cap after use. Do not use beyond the labeled expiration date or if its appearance changes. It contains BAK: remove soft contacts and wait 15 minutes before reinsertion. Drowsiness can impair driving and other activities requiring alertness.",
+    "after": "Keep Combigan at 15-25°C, protected from light, and replace the cap after use. Do not use beyond the labeled expiration date or if its appearance changes. It contains BAK: remove soft contacts and wait 15 minutes before reinsertion. Drowsiness can impair driving and other activities requiring alertness."
+  },
+  {
+    "module": "glaucoma-pharmacotherapy",
+    "lesson": "glaucoma-selection-and-monitoring",
+    "index": 14,
+    "heading": "Finish Simbrinza counseling",
+    "field": "body",
+    "before": "Store Simbrinza at 2–25°C; an opened bottle can be used until its labeled expiration date. Remove contacts before dosing and wait 15 minutes before reinsertion. Warn about temporary blur and drowsiness. Serious skin or other hypersensitivity reactions require stopping the product and prompt medical assessment. Its lactation label calls for a decision between discontinuing nursing or the drug; assess the infant risk from brimonidine rather than assuming that a beta-blocker-free combination is safe.",
+    "after": "Store Simbrinza at 2-25°C; an opened bottle can be used until its labeled expiration date. Remove contacts before dosing and wait 15 minutes before reinsertion. Warn about temporary blur and drowsiness. Serious skin or other hypersensitivity reactions require stopping the product and prompt medical assessment. Its lactation label calls for a decision between discontinuing nursing or the drug; assess the infant risk from brimonidine rather than assuming that a beta-blocker-free combination is safe."
+  }
+]) {
+  if (change.field === "body") {
+    const lesson = glaucomaPharmacotherapyModule.submodules.find((item) => item.slug === change.lesson);
+    const body = lesson?.lesson?.[change.index];
+    if (body?.heading === change.heading && body.body === change.before) body.body = change.after;
+  } else {
+    const reference = glaucomaPharmacotherapyModule.references[change.referenceIndex];
+    if (reference?.label === change.before && reference.href === change.href) reference.label = change.after;
+  }
+}
