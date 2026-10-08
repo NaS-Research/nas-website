@@ -1,3 +1,5 @@
+import RelatedResearch from "@/components/research/RelatedResearch";
+import { getRelatedResearch } from "@/lib/relatedResearch.mjs";
 import { publicationSectionTitle } from "@/lib/publicationHeadings";
 import NicolePreviewInterface from "@/components/research/NicolePreviewInterface";
 import MobileContents from "@/components/research/MobileContents";
@@ -122,7 +124,7 @@ export default async function ResearchPublicationPage({ params }) {
     })),
     publisher: { "@id": "https://nasresearch.bio/#organization", "@type": "Organization", name: "NaS Research", url: "https://nasresearch.bio" },
   };
-  const related = researchItems.filter((candidate) => candidate.slug !== item.slug && candidate.area === item.area).slice(0, 2);
+  const related = getRelatedResearch(item, researchItems);
 
   return (
     <div className={`nas-page publication-page${isPaperArticle ? " publication-page--paper" : ""}${item.theme === "dark" ? " publication-page--dark" : ""}`}>
@@ -291,20 +293,10 @@ export default async function ResearchPublicationPage({ params }) {
 
           {item.revisionNote && <p className="publication-note">{item.revisionNote}</p>}
 
-          {related.length > 0 && (
-            <section className="publication-related">
-              <p className="publication-section-label">Related research</p>
-              {related.map((relatedItem) => (
-                <Link href={`/research/${relatedItem.slug}`} key={relatedItem.slug}>
-                  <span>{relatedItem.type}</span>
-                  <strong>{relatedItem.title}</strong>
-                  <span aria-hidden="true">↗</span>
-                </Link>
-              ))}
-            </section>
-          )}
+
         </article>
       </div>
+      <RelatedResearch items={related} />
       <Footer />
     </div>
   );

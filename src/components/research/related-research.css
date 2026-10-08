@@ -1,0 +1,32 @@
+.related-research {
+  padding-block: 4rem 6rem;
+  border-top: 1px solid #ffffff26;
+  color: #f4f2ec;
+}
+.related-research__header { display: flex; align-items: baseline; justify-content: space-between; gap: 1.5rem; margin-bottom: 2.5rem; }
+.related-research__header h2 { margin: 0; font-size: clamp(1.7rem, 3vw, 2.35rem); font-weight: 500; letter-spacing: -.04em; }
+.related-research__header > a { font-size: .85rem; color: #a9a69f; }
+.related-research__grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.75rem; }
+.related-research__card { min-width: 0; display: flex; flex-direction: column; text-decoration: none; }
+.related-research__art { aspect-ratio: 4 / 3; overflow: hidden; background: #000; margin-bottom: 1.5rem; }
+.related-research__art .publication-artwork { margin: 0; width: 100%; height: 100%; }
+.related-research__art .publication-artwork__frame { height: 100%; aspect-ratio: auto; }
+.related-research__art img, .related-research__art video { transition: transform .4s ease; }
+.related-research__card:hover img, .related-research__card:hover video { transform: scale(1.025); }
+.related-research__area { margin: 0 0 .7rem; color: #bda477; font-size: .75rem; }
+.related-research__card h3 { margin: 0 0 1rem; font-size: clamp(1.2rem, 1.8vw, 1.55rem); line-height: 1.25; letter-spacing: -.025em; font-weight: 500; }
+.related-research__meta { display: flex; flex-wrap: wrap; gap: .35rem 1rem; color: #99968f; font-size: .75rem; line-height: 1.6; margin-top: auto; }
+.related-research__read { margin-top: 1.3rem; color: #c7c3b9; font-size: .8rem; }
+.related-research a:focus-visible { outline: 2px solid #c9ab72; outline-offset: 6px; }
+.publication-page--paper:not(.publication-page--dark) .related-research { color: #171717; border-color: #dedbd4; }
+.publication-page--paper:not(.publication-page--dark) .related-research__meta,
+.publication-page--paper:not(.publication-page--dark) .related-research__read,
+.publication-page--paper:not(.publication-page--dark) .related-research__header > a { color: #666; }
+.publication-page--paper:not(.publication-page--dark) .related-research__area { color: #84602c; }
+@media (max-width: 767px) {
+  .related-research { padding-block: 3rem 4rem; }
+  .related-research__header { align-items: flex-start; margin-bottom: 1.75rem; }
+  .related-research__header > a { max-width: 7rem; text-align: right; }
+  .related-research__grid { grid-template-columns: 1fr; gap: 2.75rem; }
+}
+@media (prefers-reduced-motion: reduce) { .related-research__art img, .related-research__art video { transition: none; } }
