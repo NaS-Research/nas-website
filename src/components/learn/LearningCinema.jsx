@@ -1,7 +1,7 @@
 import "./learning-cinema.css";
 
-const videoId = "e3WmNwY95h0";
-const filmTitle = "How Opioids Work: Pain Relief, Breathing Risk & Naloxone";
+const videoId = "TyBZvTlBrys";
+const filmTitle = "Agonists vs Antagonists: How Drugs Activate or Block Receptors";
 const watchUrl = `https://www.youtube.com/watch?v=${videoId}`;
 const previewUrl = `https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&mute=1&loop=1&playlist=${videoId}&playsinline=1&rel=0`;
 
