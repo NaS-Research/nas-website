@@ -33,3 +33,220 @@ const concepts = [
 const dimensions=[["principle","Which principle best characterizes"],["action","Which clinical action best applies to"],["assessment","Which assessment is most appropriate for"],["hazard","Which reasoning hazard is most important to prevent with"]];
 function distractors(i,f){return [5,11,17].map(o=>concepts[(i+o)%concepts.length][f]);}
 export const acuteDecompensatedHeartFailureQuestionBank=concepts.flatMap((c,i)=>dimensions.map(([f,p],j)=>({id:`acute-decompensated-hf-${String(i*4+j+1).padStart(3,"0")}`,question:`${p} ${c.name}?`,choices:[c[f],...distractors(i,f)],answer:0,rationale:c.why,reviewHref:`#${c.lesson}`})));
+
+// Case-specific review of existing cardiorenal items; retain IDs, order, and answer keys.
+const cardiorenalReviewOverrides = [
+  {
+    "id": "acute-decompensated-hf-041",
+    "question": "During decongestion, a patient has improving edema and breathing, maintained urine output and perfusion, and a small creatinine rise. How should that rise be interpreted?",
+    "choices": [
+      "It may reflect a functional change in filtration; it does not by itself prove tubular injury",
+      "Definite tubular injury, regardless of the treatment response",
+      "Proof that no kidney injury is possible during further diuresis",
+      "Proof that all residual congestion has resolved"
+    ],
+    "answer": 0,
+    "rationale": "The response and adequate perfusion make a functional filtration change possible, while continued assessment is necessary. A creatinine rise alone cannot establish tubular injury. It also cannot exclude later injury. Kidney chemistry is not proof that congestion has resolved.",
+    "reviewHref": "#congestion-kidney-electrolytes"
+  },
+  {
+    "id": "acute-decompensated-hf-042",
+    "question": "A patient receiving intensive diuresis develops new hypotension, cool extremities, sharply falling urine output, and a rising creatinine. What is the most appropriate response?",
+    "choices": [
+      "Promptly reassess perfusion, volume, drug exposure, and other causes of kidney dysfunction, then adjust treatment to the findings",
+      "Continue unchanged because every rise during diuresis is a benign functional change",
+      "Increase fluid removal based solely on the creatinine rise",
+      "Withhold reassessment until a discharge creatinine is available"
+    ],
+    "answer": 0,
+    "rationale": "The new hypoperfusion and oliguria require urgent reassessment and individualized treatment. The reassuring interpretation from successful, well-perfused decongestion cannot be applied automatically here. Creatinine alone does not justify more fluid removal. Waiting until discharge misses a worsening trajectory.",
+    "reviewHref": "#congestion-kidney-electrolytes"
+  },
+  {
+    "id": "acute-decompensated-hf-043",
+    "question": "A congested patient has a creatinine increase after several IV loop doses. Which assessment best distinguishes a tolerated filtration change from a concerning trajectory?",
+    "choices": [
+      "Compare congestion response, perfusion, pressure, urine output, serial chemistry, relevant urinalysis, and nephrotoxic exposure",
+      "Use the creatinine value alone to decide whether the kidney is structurally injured",
+      "Use a single normal blood-pressure reading to exclude kidney hypoperfusion or venous congestion",
+      "Ignore the medication timeline if weight has fallen"
+    ],
+    "answer": 0,
+    "rationale": "The combined trajectory provides context for both filtration and injury. Creatinine alone does not identify the mechanism. One cuff pressure cannot characterize tissue flow or venous pressure. Weight change cannot replace review of medication and nephrotoxin exposure.",
+    "reviewHref": "#congestion-kidney-electrolytes"
+  },
+  {
+    "id": "acute-decompensated-hf-044",
+    "question": "Why can automatically stopping decongestion for a small creatinine rise be harmful when congestion is improving but still present and perfusion remains adequate?",
+    "choices": [
+      "It may leave clinically important residual congestion untreated without demonstrating kidney benefit",
+      "A small creatinine rise proves the patient needs a large saline bolus",
+      "Residual venous congestion cannot affect kidney function",
+      "It establishes that the diuretic must be continued unchanged under every later circumstance"
+    ],
+    "answer": 0,
+    "rationale": "A small rise can accompany effective decongestion, and residual congestion still matters; decisions need the whole trajectory. The rise does not prove depletion or justify a saline bolus. Venous congestion can impair renal function. This reasoning also does not support unconditional continuation if perfusion or urine output worsens.",
+    "reviewHref": "#congestion-kidney-electrolytes"
+  },
+  {
+    "id": "acute-decompensated-hf-045",
+    "question": "A patient with decompensated heart failure and edema has a low serum sodium. Which interpretation should guide the initial workup?",
+    "choices": [
+      "Water retention with reduced effective arterial filling is possible, but tonicity and depletion or other causes still need evaluation",
+      "Edema proves sodium depletion and makes isotonic fluid the default treatment",
+      "Heart failure establishes SIADH without further evaluation",
+      "The sodium concentration alone distinguishes water excess from excessive diuresis"
+    ],
+    "answer": 0,
+    "rationale": "Heart failure can promote water retention despite reduced effective arterial filling, while diuresis and other mechanisms can also cause hyponatremia. Edema does not establish sodium depletion or an automatic fluid prescription. Heart failure is not itself a diagnosis of SIADH. The sodium number alone cannot determine tonicity or volume mechanism.",
+    "reviewHref": "#congestion-kidney-electrolytes"
+  },
+  {
+    "id": "acute-decompensated-hf-046",
+    "question": "A patient with confirmed hypotonic hyponatremia develops seizures attributed to the sodium disorder. What takes priority?",
+    "choices": [
+      "Urgent monitored treatment of the neurologic emergency while the cause is evaluated",
+      "Delay treatment until every urine study has returned",
+      "Start tolvaptan as the urgent neurologic rescue drug",
+      "Use outpatient fluid restriction alone and defer hospital monitoring"
+    ],
+    "answer": 0,
+    "rationale": "Serious neurologic symptoms require urgent monitored correction and ongoing investigation. A complete urine workup must not delay emergency care. The tolvaptan label excludes patients who need sodium raised urgently for serious neurologic symptoms. Outpatient restriction alone does not address this emergency.",
+    "reviewHref": "#congestion-kidney-electrolytes"
+  },
+  {
+    "id": "acute-decompensated-hf-047",
+    "question": "A patient with low sodium has recently received a loop diuretic and also has kidney dysfunction. How should urine sodium and osmolality be used?",
+    "choices": [
+      "Interpret them with a contemporaneous blood sample, tonicity, clinical findings, diuretic timing, and kidney function",
+      "Diagnose SIADH from an elevated urine sodium alone",
+      "Assume diuretic use excludes all other causes of hyponatremia",
+      "Ignore serum osmolality because urine values establish hypotonicity by themselves"
+    ],
+    "answer": 0,
+    "rationale": "Paired measurements help, but diuretics and impaired kidney function complicate interpretation. An elevated urine sodium alone does not establish SIADH. Diuretics may contribute without excluding another cause. Serum tonicity still needs assessment; urine values cannot establish it alone.",
+    "reviewHref": "#congestion-kidney-electrolytes"
+  },
+  {
+    "id": "acute-decompensated-hf-048",
+    "question": "A patient with hypotonic hyponatremia is markedly congested, without evidence of true volume depletion. What error should be avoided?",
+    "choices": [
+      "Giving isotonic fluid automatically just because the serum sodium is low",
+      "Reviewing symptoms and the correction trajectory during cause-specific treatment",
+      "Considering whether diuretics or intake contribute to the sodium disorder",
+      "Reassessing perfusion as congestion is treated"
+    ],
+    "answer": 0,
+    "rationale": "An automatic isotonic-fluid prescription can aggravate congestion when water excess is the mechanism. Symptom and correction monitoring are appropriate. Diuretics and intake deserve review because mechanisms can overlap. Perfusion reassessment remains necessary during decongestion.",
+    "reviewHref": "#congestion-kidney-electrolytes"
+  },
+  {
+    "id": "acute-decompensated-hf-049",
+    "question": "A patient taking digoxin develops low potassium and magnesium during loop-plus-thiazide diuresis. Why does this combination deserve prompt attention?",
+    "choices": [
+      "Electrolyte depletion increases rhythm risk and susceptibility to digoxin toxicity",
+      "Low potassium protects against digoxin toxicity",
+      "Low magnesium makes the potassium result clinically unimportant",
+      "The absence of edema proves that electrolyte monitoring can stop"
+    ],
+    "answer": 0,
+    "rationale": "Potassium and magnesium depletion can increase electrical instability and digoxin susceptibility. Low potassium does not provide protection. Low magnesium adds risk and can hinder potassium correction. Improved edema does not establish safe electrolyte concentrations or remove the need for monitoring.",
+    "reviewHref": "#congestion-kidney-electrolytes"
+  },
+  {
+    "id": "acute-decompensated-hf-050",
+    "question": "A patient needs potassium replacement after diuresis and also has kidney impairment and an MRA-containing regimen. What is the safest planning principle?",
+    "choices": [
+      "Individualize replacement and repeat monitoring using kidney function, urine output, rhythm risk, ongoing losses, and potassium-raising therapy",
+      "Use the same replacement amount for every low potassium result",
+      "Assume an MRA eliminates the need to treat or monitor hypokalemia",
+      "Increase replacement automatically as kidney function declines"
+    ],
+    "answer": 0,
+    "rationale": "Replacement must account for the current deficit and the risks of accumulation and potassium-raising medicines. A fixed amount ignores severity and changing clearance. An MRA does not remove an existing deficit or the need to monitor. Declining kidney function is not a reason to increase replacement automatically.",
+    "reviewHref": "#congestion-kidney-electrolytes"
+  },
+  {
+    "id": "acute-decompensated-hf-051",
+    "question": "After repeated potassium replacement during intensive diuresis, which reassessment best supports the next replacement decision?",
+    "choices": [
+      "Serial potassium and magnesium, renal function and urine output, ECG or rhythm findings, acid-base state, drug exposure, and ongoing losses",
+      "Only the original potassium value before any replacement",
+      "Only the amount of weight lost since admission",
+      "Only the absence of muscle symptoms"
+    ],
+    "answer": 0,
+    "rationale": "Current chemistry and clearance, electrical risk, medicines, and losses inform whether more replacement is appropriate. The original result cannot describe the response to doses already given. Weight loss does not measure potassium or magnesium. Clinically important abnormalities can occur without muscle symptoms.",
+    "reviewHref": "#congestion-kidney-electrolytes"
+  },
+  {
+    "id": "acute-decompensated-hf-052",
+    "question": "Potassium remains low despite replacement in a patient receiving diuretics. What should be considered next alongside continued severity-appropriate care?",
+    "choices": [
+      "Assess magnesium deficiency and other ongoing losses while reviewing kidney function and the replacement plan",
+      "Keep increasing potassium indefinitely without rechecking magnesium or renal function",
+      "Assume a normal magnesium result from before diuresis excludes a current deficit",
+      "Assume repeated replacement guarantees that potassium has normalized"
+    ],
+    "answer": 0,
+    "rationale": "Magnesium deficiency can impede potassium correction, so it belongs in the assessment together with ongoing losses and clearance. Unchecked escalation can cause harm as physiology changes. A magnesium result from before subsequent losses does not exclude a current deficit. Repeated doses require reassessment; they do not prove normalization.",
+    "reviewHref": "#congestion-kidney-electrolytes"
+  },
+  {
+    "id": "acute-decompensated-hf-113",
+    "question": "Under the U.S. tolvaptan hyponatremia label, which situation meets the sodium-related eligibility conditions after tonicity and volume classification?",
+    "choices": [
+      "Hypervolemic or euvolemic hyponatremia below 125 mEq/L, or a less marked reduction that is symptomatic and has resisted fluid restriction",
+      "Any congested heart-failure patient with a normal serum sodium",
+      "A less marked sodium reduction that is asymptomatic and has not undergone fluid-restriction assessment",
+      "Serious neurologic symptoms requiring an urgent sodium rise"
+    ],
+    "answer": 0,
+    "rationale": "The hypervolemic or euvolemic hyponatremia option matches the labeled alternatives, but still requires a full appropriateness and safety review. Congestion with normal sodium is not this indication. A less marked reduction requires both symptoms and resistance to fluid restriction. Urgent neurologic rescue is specifically outside labeled use.",
+    "reviewHref": "#congestion-kidney-electrolytes"
+  },
+  {
+    "id": "acute-decompensated-hf-114",
+    "question": "After interruption, a patient is being considered for restarting tolvaptan for hyponatremia. What plan follows the U.S. label?",
+    "choices": [
+      "Reinitiate in hospital with close sodium and volume monitoring, access to water, and avoidance of fluid restriction during the first 24 hours",
+      "Restart at home because a previous tolerated course eliminates the hospital requirement",
+      "Enforce tight fluid restriction immediately to maximize the initial sodium rise",
+      "Check sodium only at the next routine monthly visit"
+    ],
+    "answer": 0,
+    "rationale": "The hospital requirement applies to reinitiation as well as the first start. Prior tolerance does not remove rapid-correction risk. Initial fluid restriction can increase that risk, and the label advises avoiding it for 24 hours while allowing drinking in response to thirst. Monthly-only sodium review is inadequate during initiation.",
+    "reviewHref": "#congestion-kidney-electrolytes"
+  },
+  {
+    "id": "acute-decompensated-hf-115",
+    "question": "Before a tolvaptan decision, which finding is a labeled contraindication rather than simply a reason for individualized review?",
+    "choices": [
+      "Anuria",
+      "Any reduction in kidney function, regardless of urine production",
+      "Stable use of a potassium-raising medicine, by itself",
+      "A remote, resolved episode of hyponatremia, by itself"
+    ],
+    "answer": 0,
+    "rationale": "Anuria is a contraindication and offers no expected benefit. Kidney impairment is not equivalent to anuria, although renal function must inform appropriateness. Potassium-raising medicines call for potassium monitoring rather than being a universal contraindication by themselves. A remote episode does not determine current eligibility; current disease and risks need evaluation.",
+    "reviewHref": "#congestion-kidney-electrolytes"
+  },
+  {
+    "id": "acute-decompensated-hf-116",
+    "question": "A plan proposes indefinite tolvaptan solely to improve survival in a congested heart-failure patient. What concern most directly challenges that plan?",
+    "choices": [
+      "The hyponatremia label limits exposure to 30 days because of liver risk, and the studied heart-failure outcome benefit was not demonstrated",
+      "A rise in sodium automatically proves a survival benefit",
+      "The liver-exposure limit applies only when sodium fails to rise",
+      "The medicine removes the need for disease-directed heart-failure treatment and monitoring"
+    ],
+    "answer": 0,
+    "rationale": "The proposed purpose and duration conflict with the labeled limits and outcome evidence. Raising sodium does not establish improved survival. A sodium response does not waive the 30-day liver-risk limit. Tolvaptan does not replace disease-directed therapy or clinical and laboratory monitoring.",
+    "reviewHref": "#congestion-kidney-electrolytes"
+  }
+];
+for (const reviewed of cardiorenalReviewOverrides) {
+  const existing = acuteDecompensatedHeartFailureQuestionBank.find(item => item.id === reviewed.id);
+  if (!existing || existing.answer !== reviewed.answer || existing.reviewHref !== reviewed.reviewHref) throw new Error("Cardiorenal review identity mismatch");
+  Object.assign(existing, reviewed);
+}
