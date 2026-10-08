@@ -16,7 +16,7 @@ export default function HomeBillingFeature() {
         <Link className={styles.link} href={`/research/${essay.slug}`}>Read the essay <span aria-hidden="true">↗</span></Link>
       </div>
       <div className={styles.artwork}>
-        <ArtworkFilm src={artwork.previewFilm} poster={artwork.heroSrc} alt={artwork.alt} showControl />
+        <ArtworkFilm src={artwork.previewFilm} poster={artwork.heroSrc} alt={artwork.alt} />
       </div>
     </div>
   </section>;
