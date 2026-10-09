@@ -11,32 +11,32 @@ const diagrams = {
   },
   "venous-access": {
     eyebrow: "Access architecture",
-    title: "Concentration determines the route.",
+    title: "Match concentration and duration to access.",
     columns: [
       ["Peripheral", "Short bridge", "Lower osmolarity, larger volume, frequent site review"],
-      ["PICC", "Intermediate access", "Central tip with insertion and thrombosis considerations"],
+      ["PICC", "Vascular risk", "Central tip with thrombosis and vein-preservation considerations"],
       ["Tunneled", "Long horizon", "Durable external access for selected home therapy"],
       ["Port", "Implanted access", "Intermittent access with needle and care requirements"],
     ],
   },
   "macronutrient-design": {
     eyebrow: "Prescription engine",
-    title: "Protein first, then safe energy.",
+    title: "Fluid, protein, and energy.",
     columns: [
+      ["Volume", "All sources", "Fit the nutrient plan inside the fluid prescription"],
       ["AA", "4 kcal per gram", "Match protein to illness, losses, organ support, and goals"],
       ["Dextrose", "3.4 kcal per gram", "Check glucose infusion rate and glycemic tolerance"],
       ["Lipid", "Product specific", "Account for essential fatty acids and non-PN calories"],
-      ["Volume", "All sources", "Fit the nutrient plan inside the fluid prescription"],
     ],
   },
   "micronutrient-balance": {
     eyebrow: "Daily balance",
-    title: "Replace what the patient loses.",
+    title: "Daily provision plus replacement.",
     columns: [
       ["Electrolytes", "Trend and context", "Kidney function, acid base state, losses, and medicines"],
       ["Vitamins", "Daily provision", "Use an age-appropriate complete parenteral product when available"],
-      ["Trace elements", "Adjust selectively", "Cholestasis, kidney failure, wounds, diarrhea, and duration matter"],
-      ["Shortages", "Protect essentials", "Use current ASPEN and ASHP guidance, not a permanent workaround"],
+      ["Trace elements", "Adjust selectively", "Check product content, cholestasis, losses, and duration"],
+      ["Shortages", "Protect essentials", "Use current product-specific guidance and reassess as supply recovers"],
     ],
   },
   "compounding-safety": {

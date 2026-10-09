@@ -36,48 +36,48 @@ c("closed-loop ocular follow-up","special-populations-follow-up","Every self-car
 ];
 const dimensions=[["principle","Which principle best characterizes"],["action","Which clinical action best applies to"],["assessment","Which assessment is most appropriate for"],["hazard","Which reasoning hazard is most important to prevent with"]];
 const distractors=(i,f)=>[7,15,23].map(o=>concepts[(i+o)%concepts.length][f]);
-export const commonEyeConditionsQuestionBank=concepts.flatMap((x,i)=>dimensions.map(([f,stem],j)=>({id:`common-eye-${String(i*4+j+1).padStart(3,"0")}`,lesson:x.lesson,question:`${stem} ${x.name}?`,choices:[x[f],...distractors(i,f)],answer:0,rationale:x.why,reviewHref:`#${x.lesson}`})));
+const publishedBaseCommonEyeConditionsQuestionBank = concepts.flatMap((x,i)=>dimensions.map(([f,stem],j)=>({id:`common-eye-${String(i*4+j+1).padStart(3,"0")}`,lesson:x.lesson,question:`${stem} ${x.name}?`,choices:[x[f],...distractors(i,f)],answer:0,rationale:x.why,reviewHref:`#${x.lesson}`})));
 
-commonEyeConditionsQuestionBank.push(
+publishedBaseCommonEyeConditionsQuestionBank.push(
 {"id": "common-eye-azasite-course", "lesson": "infectious-conjunctivitis", "question": "A patient finishes the prescribed seven-day AzaSite course but notes that the bottle may be kept for fourteen days after opening. What should the pharmacist clarify?", "choices": ["The discard deadline does not extend the prescribed course", "Continue twice-daily dosing until day fourteen", "Use it preventively in the unaffected eye until empty", "Save the bottle for the next episode of red eye"], "answer": 0, "rationale": "Treatment duration and opened-container usability answer different questions. Follow the prescribed course and discard deadline separately.", "reviewHref": "#infectious-conjunctivitis"},
 {"id": "common-eye-polytrim-neonate", "lesson": "infectious-conjunctivitis", "question": "A caregiver proposes using leftover polymyxin B/trimethoprim drops for a newborn with eye discharge. Which response is appropriate?", "choices": ["Arrange prompt neonatal evaluation; this product is not indicated for ophthalmia neonatorum", "Use the adult regimen because the infection is on the surface", "Dilute the bottle with tap water before use", "Wait until the infant is two months old before seeking care"], "answer": 0, "rationale": "Neonatal conjunctivitis requires prompt assessment. The label excludes this indication and does not establish safety and effectiveness below two months.", "reviewHref": "#infectious-conjunctivitis"}
 );
 
-commonEyeConditionsQuestionBank.push({"id": "common-eye-moxifloxacin-formulation", "lesson": "infectious-conjunctivitis", "question": "A prescription names Vigamox 0.5%, but a saved counseling sheet describes twice-daily Moxeza 0.5%. What should be done before counseling?", "choices": ["Verify the exact product and its prescribed schedule; concentration alone does not make the instructions interchangeable", "Use twice daily because both contain 0.5% moxifloxacin", "Combine both schedules to ensure adequate exposure", "Use the topical bottle as an intracameral preparation"], "answer": 0, "rationale": "Vigamox and Moxeza have different labeled frequencies. Identify the dispensed formulation and resolve conflicting instructions before use.", "reviewHref": "#infectious-conjunctivitis"});
+publishedBaseCommonEyeConditionsQuestionBank.push({"id": "common-eye-moxifloxacin-formulation", "lesson": "infectious-conjunctivitis", "question": "A prescription names Vigamox 0.5%, but a saved counseling sheet describes twice-daily Moxeza 0.5%. What should be done before counseling?", "choices": ["Verify the exact product and its prescribed schedule; concentration alone does not make the instructions interchangeable", "Use twice daily because both contain 0.5% moxifloxacin", "Combine both schedules to ensure adequate exposure", "Use the topical bottle as an intracameral preparation"], "answer": 0, "rationale": "Vigamox and Moxeza have different labeled frequencies. Identify the dispensed formulation and resolve conflicting instructions before use.", "reviewHref": "#infectious-conjunctivitis"});
 
-commonEyeConditionsQuestionBank.push({"id": "common-eye-ulcer-regimen", "lesson": "infectious-conjunctivitis", "question": "An ophthalmologist prescribes intensive ciprofloxacin drops for a bacterial corneal ulcer. A patient wants to substitute a friend\u2019s simpler conjunctivitis schedule. What is the best response?", "choices": ["Keep the ulcer-specific plan and clarify any difficulty with the ophthalmologist promptly", "Reduce frequency because both diagnoses involve the same eye", "Use redness alone to decide when to stop", "Switch to a steroid combination without examination"], "answer": 0, "rationale": "The diagnosis and affected tissue determine treatment intensity and follow-up. A conjunctivitis schedule cannot replace a prescribed corneal-ulcer regimen.", "reviewHref": "#infectious-conjunctivitis"});
+publishedBaseCommonEyeConditionsQuestionBank.push({"id": "common-eye-ulcer-regimen", "lesson": "infectious-conjunctivitis", "question": "An ophthalmologist prescribes intensive ciprofloxacin drops for a bacterial corneal ulcer. A patient wants to substitute a friend\u2019s simpler conjunctivitis schedule. What is the best response?", "choices": ["Keep the ulcer-specific plan and clarify any difficulty with the ophthalmologist promptly", "Reduce frequency because both diagnoses involve the same eye", "Use redness alone to decide when to stop", "Switch to a steroid combination without examination"], "answer": 0, "rationale": "The diagnosis and affected tissue determine treatment intensity and follow-up. A conjunctivitis schedule cannot replace a prescribed corneal-ulcer regimen.", "reviewHref": "#infectious-conjunctivitis"});
 
-commonEyeConditionsQuestionBank.push(
+publishedBaseCommonEyeConditionsQuestionBank.push(
 {"id": "common-eye-gonococcal-dose", "lesson": "gonococcal-and-neonatal-eye-infections", "question": "Which CDC regimen specifically applies to gonococcal conjunctivitis in an adult?", "choices": ["Ceftriaxone 1 g IM once with specialist care", "Ceftriaxone 250 mg IM once as an unchanged historical genital regimen", "Topical erythromycin alone", "Daily redness-relief drops until discharge stops"], "answer": 0, "rationale": "CDC lists a single 1-g IM ceftriaxone dose for adult/adolescent gonococcal conjunctivitis; evaluation and partner management remain necessary.", "reviewHref": "#gonococcal-and-neonatal-eye-infections"},
 {"id": "common-eye-erythromycin-total", "lesson": "gonococcal-and-neonatal-eye-infections", "question": "A 3.2-kg infant is prescribed erythromycin 50 mg/kg/day in four divided doses for confirmed chlamydial infection. What is the amount per dose?", "choices": ["40 mg", "160 mg", "12.5 mg", "640 mg"], "answer": 0, "rationale": "3.2 kg × 50 mg/kg/day = 160 mg/day; divide by four to obtain 40 mg per dose. Confirm formulation concentration separately before calculating mL.", "reviewHref": "#gonococcal-and-neonatal-eye-infections"}
 );
 
-commonEyeConditionsQuestionBank.push(
+publishedBaseCommonEyeConditionsQuestionBank.push(
 {"id": "common-eye-ganciclovir-healing", "lesson": "infectious-conjunctivitis", "question": "An ophthalmologist confirms healing of a dendritic ulcer during Zirgan treatment. Which labeled step follows the initial five-times-daily phase?", "choices": ["One drop three times daily for seven additional days", "Stop immediately because redness has improved", "Continue five times daily indefinitely", "Replace the antiviral with leftover steroid drops"], "answer": 0, "rationale": "The label includes a seven-day, three-times-daily phase after healing. Symptom improvement alone does not establish corneal healing.", "reviewHref": "#infectious-conjunctivitis"},
 {"id": "common-eye-herpes-steroid-context", "lesson": "infectious-conjunctivitis", "question": "A patient with suspected active epithelial herpes keratitis asks to use a relative’s steroid eye drops. What is the appropriate response?", "choices": ["Arrange prompt ophthalmic care and avoid unsupervised steroid use", "Use the steroid because all viral eye disease benefits from it", "Use an antibiotic-steroid combination to eliminate HSV", "Assume steroids can never be used for any form of herpetic eye disease"], "answer": 0, "rationale": "Active epithelial infection and immune-mediated deeper disease need different management. Steroids can worsen epithelial infection; selected deeper inflammatory disease may need specialist-directed steroids with antiviral coverage.", "reviewHref": "#infectious-conjunctivitis"}
 );
 
-commonEyeConditionsQuestionBank.push({"id": "common-eye-adult-chlamydia", "lesson": "infectious-conjunctivitis", "question": "An adult has persistent follicular conjunctivitis despite topical antibiotics, and testing confirms chlamydia. Which plan addresses the infection comprehensively?", "choices": ["Coordinate systemic treatment, evaluation for associated STIs, partner care and ocular follow-up", "Keep changing topical antibiotics without systemic evaluation", "Treat only if genital symptoms are present", "Use steroid drops alone to suppress the follicles"], "answer": 0, "rationale": "Adult inclusion conjunctivitis can coexist with genital infection. Systemic treatment and partner management address infection and reinfection beyond the visible eye findings.", "reviewHref": "#infectious-conjunctivitis"});
+publishedBaseCommonEyeConditionsQuestionBank.push({"id": "common-eye-adult-chlamydia", "lesson": "infectious-conjunctivitis", "question": "An adult has persistent follicular conjunctivitis despite topical antibiotics, and testing confirms chlamydia. Which plan addresses the infection comprehensively?", "choices": ["Coordinate systemic treatment, evaluation for associated STIs, partner care and ocular follow-up", "Keep changing topical antibiotics without systemic evaluation", "Treat only if genital symptoms are present", "Use steroid drops alone to suppress the follicles"], "answer": 0, "rationale": "Adult inclusion conjunctivitis can coexist with genital infection. Systemic treatment and partner management address infection and reinfection beyond the visible eye findings.", "reviewHref": "#infectious-conjunctivitis"});
 
-commonEyeConditionsQuestionBank.push({"id": "common-eye-olopatadine-schedule", "lesson": "allergic-conjunctivitis", "question": "A patient replaces Pataday 0.1% with Pataday 0.7% and plans to keep using one drop twice daily. What should counseling clarify?", "choices": ["The 0.7% label directs one drop once daily, no more than once per day", "Every olopatadine concentration uses the same twice-daily schedule", "The 0.7% product should be used every six hours", "Higher strength removes the need for contact-lens precautions"], "answer": 0, "rationale": "The reviewed 0.1% and 0.7% products have different labeled frequencies. Confirm the actual bottle rather than carrying forward an old schedule.", "reviewHref": "#allergic-conjunctivitis"});
+publishedBaseCommonEyeConditionsQuestionBank.push({"id": "common-eye-olopatadine-schedule", "lesson": "allergic-conjunctivitis", "question": "A patient replaces Pataday 0.1% with Pataday 0.7% and plans to keep using one drop twice daily. What should counseling clarify?", "choices": ["The 0.7% label directs one drop once daily, no more than once per day", "Every olopatadine concentration uses the same twice-daily schedule", "The 0.7% product should be used every six hours", "Higher strength removes the need for contact-lens precautions"], "answer": 0, "rationale": "The reviewed 0.1% and 0.7% products have different labeled frequencies. Confirm the actual bottle rather than carrying forward an old schedule.", "reviewHref": "#allergic-conjunctivitis"});
 
-commonEyeConditionsQuestionBank.push({"id": "common-eye-zerviate-container", "lesson": "allergic-conjunctivitis", "question": "A patient notices that a Zerviate single-use container contains preservative and wants to save the remainder for the evening dose. What should counseling explain?", "choices": ["Discard the container after dosing; preservative content does not override single-use instructions", "Recap it and reuse it for seven days", "Transfer the remainder into an old eye-drop bottle", "Dilute the remainder with water to restore the original volume"], "answer": 0, "rationale": "The reviewed Zerviate label directs immediate use after opening and disposal after administration, even though the formulation contains benzalkonium chloride.", "reviewHref": "#allergic-conjunctivitis"});
+publishedBaseCommonEyeConditionsQuestionBank.push({"id": "common-eye-zerviate-container", "lesson": "allergic-conjunctivitis", "question": "A patient notices that a Zerviate single-use container contains preservative and wants to save the remainder for the evening dose. What should counseling explain?", "choices": ["Discard the container after dosing; preservative content does not override single-use instructions", "Recap it and reuse it for seven days", "Transfer the remainder into an old eye-drop bottle", "Dilute the remainder with water to restore the original volume"], "answer": 0, "rationale": "The reviewed Zerviate label directs immediate use after opening and disposal after administration, even though the formulation contains benzalkonium chloride.", "reviewHref": "#allergic-conjunctivitis"});
 
-commonEyeConditionsQuestionBank.push({"id": "common-eye-lotilaner-missed", "lesson": "blepharitis-demodex", "question": "A patient misses a morning Xdemvy dose during the prescribed six-week course. What does the label direct?", "choices": ["Continue with the next scheduled dose", "Double the evening dose", "Restart the entire six-week course", "Stop treatment until collarettes recur"], "answer": 0, "rationale": "The lotilaner label directs continuing with the next scheduled dose after a missed dose, without doubling or restarting the course.", "reviewHref": "#blepharitis-demodex"});
+publishedBaseCommonEyeConditionsQuestionBank.push({"id": "common-eye-lotilaner-missed", "lesson": "blepharitis-demodex", "question": "A patient misses a morning Xdemvy dose during the prescribed six-week course. What does the label direct?", "choices": ["Continue with the next scheduled dose", "Double the evening dose", "Restart the entire six-week course", "Stop treatment until collarettes recur"], "answer": 0, "rationale": "The lotilaner label directs continuing with the next scheduled dose after a missed dose, without doubling or restarting the course.", "reviewHref": "#blepharitis-demodex"});
 
-commonEyeConditionsQuestionBank.push({"id": "common-eye-vevye-delivery", "lesson": "dry-eye-pharmacotherapy", "question": "A patient sees a Vevye drop enter the eye but does not feel it. What should counseling clarify?", "choices": ["A drop may not be felt; do not add extra doses based only on sensation", "Keep squeezing until the eye stings", "Refrigerate the bottle to make the dose easier to feel", "Replace the solution with Restasis using the same bottle"], "answer": 0, "rationale": "Vevye labeling notes that the drop may not be felt. Teach the bottle-specific technique and prescribed drop count rather than using discomfort as evidence of delivery.", "reviewHref": "#dry-eye-pharmacotherapy"});
+publishedBaseCommonEyeConditionsQuestionBank.push({"id": "common-eye-vevye-delivery", "lesson": "dry-eye-pharmacotherapy", "question": "A patient sees a Vevye drop enter the eye but does not feel it. What should counseling clarify?", "choices": ["A drop may not be felt; do not add extra doses based only on sensation", "Keep squeezing until the eye stings", "Refrigerate the bottle to make the dose easier to feel", "Replace the solution with Restasis using the same bottle"], "answer": 0, "rationale": "Vevye labeling notes that the drop may not be felt. Teach the bottle-specific technique and prescribed drop count rather than using discomfort as evidence of delivery.", "reviewHref": "#dry-eye-pharmacotherapy"});
 
-commonEyeConditionsQuestionBank.push({"id": "common-eye-lifitegrast-allergy", "lesson": "dry-eye-pharmacotherapy", "question": "After Xiidra, a patient develops wheezing and tongue swelling. What is the appropriate response?", "choices": ["Seek emergency medical care immediately", "Wait for the next routine visit", "Repeat the dose to confirm the reaction", "Treat this as an expected taste disturbance"], "answer": 0, "rationale": "These symptoms suggest serious hypersensitivity, not routine dysgeusia. Immediate evaluation is necessary.", "reviewHref": "#dry-eye-pharmacotherapy"});
+publishedBaseCommonEyeConditionsQuestionBank.push({"id": "common-eye-lifitegrast-allergy", "lesson": "dry-eye-pharmacotherapy", "question": "After Xiidra, a patient develops wheezing and tongue swelling. What is the appropriate response?", "choices": ["Seek emergency medical care immediately", "Wait for the next routine visit", "Repeat the dose to confirm the reaction", "Treat this as an expected taste disturbance"], "answer": 0, "rationale": "These symptoms suggest serious hypersensitivity, not routine dysgeusia. Immediate evaluation is necessary.", "reviewHref": "#dry-eye-pharmacotherapy"});
 
-commonEyeConditionsQuestionBank.push({"id": "common-eye-miebo-lenses", "question": "A patient plans to reinsert contact lenses fifteen minutes after Miebo. What adjustment is needed?", "choices": ["Wait at least thirty minutes after dosing", "Reinsert immediately", "Wear the lenses during dosing", "Use twice the dose to compensate"], "rationale": "Lens timing depends on the product. Miebo requires at least thirty minutes.", "lesson": "dry-eye-pharmacotherapy", "answer": 0, "reviewHref": "#dry-eye-pharmacotherapy"});
+publishedBaseCommonEyeConditionsQuestionBank.push({"id": "common-eye-miebo-lenses", "question": "A patient plans to reinsert contact lenses fifteen minutes after Miebo. What adjustment is needed?", "choices": ["Wait at least thirty minutes after dosing", "Reinsert immediately", "Wear the lenses during dosing", "Use twice the dose to compensate"], "rationale": "Lens timing depends on the product. Miebo requires at least thirty minutes.", "lesson": "dry-eye-pharmacotherapy", "answer": 0, "reviewHref": "#dry-eye-pharmacotherapy"});
 
-commonEyeConditionsQuestionBank.push({"id": "common-eye-tyrvaya-route", "question": "A patient assumes Tyrvaya should be sprayed into the eyes because it treats dry eye. What should the pharmacist clarify?", "choices": ["Use the nasal route and demonstrate the device", "Spray directly onto each cornea", "Transfer it into an eye-drop bottle", "Use oral varenicline instead"], "rationale": "The intended nasal route is essential; the treated organ does not determine the administration route.", "lesson": "dry-eye-pharmacotherapy", "answer": 0, "reviewHref": "#dry-eye-pharmacotherapy"});
+publishedBaseCommonEyeConditionsQuestionBank.push({"id": "common-eye-tyrvaya-route", "question": "A patient assumes Tyrvaya should be sprayed into the eyes because it treats dry eye. What should the pharmacist clarify?", "choices": ["Use the nasal route and demonstrate the device", "Spray directly onto each cornea", "Transfer it into an eye-drop bottle", "Use oral varenicline instead"], "rationale": "The intended nasal route is essential; the treated organ does not determine the administration route.", "lesson": "dry-eye-pharmacotherapy", "answer": 0, "reviewHref": "#dry-eye-pharmacotherapy"});
 
-commonEyeConditionsQuestionBank.push({"id": "common-eye-tryptyr-pouch", "lesson": "dry-eye-pharmacotherapy", "question": "An unopened Tryptyr vial remains in a foil pouch opened eight days ago. Can it still be used?", "choices": ["No; the opened-pouch deadline has passed", "Yes, because the vial remains sealed", "Yes, if the solution looks clear", "Yes, after recooling it"], "answer": 0, "rationale": "The seven-day pouch limit applies even to unopened vials. Refrigeration does not restart that clock.", "reviewHref": "#dry-eye-pharmacotherapy"});
+publishedBaseCommonEyeConditionsQuestionBank.push({"id": "common-eye-tryptyr-pouch", "lesson": "dry-eye-pharmacotherapy", "question": "An unopened Tryptyr vial remains in a foil pouch opened eight days ago. Can it still be used?", "choices": ["No; the opened-pouch deadline has passed", "Yes, because the vial remains sealed", "Yes, if the solution looks clear", "Yes, after recooling it"], "answer": 0, "rationale": "The seven-day pouch limit applies even to unopened vials. Refrigeration does not restart that clock.", "reviewHref": "#dry-eye-pharmacotherapy"});
 
-commonEyeConditionsQuestionBank.push({"id": "common-eye-ozurdex-route", "lesson": "inflammation-steroid-boundaries", "question": "A learner classifies Ozurdex as a steroid eye drop. Which correction is needed?", "choices": ["It is an intravitreal implant administered by an eye specialist", "It is an oral tablet", "It is a contact-lens disinfectant", "It is an OTC redness drop"], "answer": 0, "rationale": "Route and formulation determine administration and monitoring. A shared steroid ingredient does not make products interchangeable.", "reviewHref": "#inflammation-steroid-boundaries"});
+publishedBaseCommonEyeConditionsQuestionBank.push({"id": "common-eye-ozurdex-route", "lesson": "inflammation-steroid-boundaries", "question": "A learner classifies Ozurdex as a steroid eye drop. Which correction is needed?", "choices": ["It is an intravitreal implant administered by an eye specialist", "It is an oral tablet", "It is a contact-lens disinfectant", "It is an OTC redness drop"], "answer": 0, "rationale": "Route and formulation determine administration and monitoring. A shared steroid ingredient does not make products interchangeable.", "reviewHref": "#inflammation-steroid-boundaries"});
 
-commonEyeConditionsQuestionBank.push({"id": "common-eye-eysuvis-renewal", "lesson": "dry-eye-pharmacotherapy", "question": "A patient finishes two weeks of Eysuvis but has medicine left. What is appropriate before extending treatment?", "choices": ["Prescriber reassessment with ocular examination and pressure evaluation", "Continue until the bottle is empty", "Double the dose if dryness persists", "Use the expiration date as the treatment stop date"], "answer": 0, "rationale": "Container usability does not determine steroid-course duration. Renewal requires clinical reassessment.", "reviewHref": "#dry-eye-pharmacotherapy"});
+publishedBaseCommonEyeConditionsQuestionBank.push({"id": "common-eye-eysuvis-renewal", "lesson": "dry-eye-pharmacotherapy", "question": "A patient finishes two weeks of Eysuvis but has medicine left. What is appropriate before extending treatment?", "choices": ["Prescriber reassessment with ocular examination and pressure evaluation", "Continue until the bottle is empty", "Double the dose if dryness persists", "Use the expiration date as the treatment stop date"], "answer": 0, "rationale": "Container usability does not determine steroid-course duration. Renewal requires clinical reassessment.", "reviewHref": "#dry-eye-pharmacotherapy"});
 
 // Scenario-specific replacements avoid multiple reasonable answers in broad triage stems.
 const triageRevisions=[
@@ -155,9 +155,9 @@ const triageRevisions=[
   }
 ];
 for (const revision of triageRevisions) {
-  const index = commonEyeConditionsQuestionBank.findIndex(question => question.id === revision.id);
+  const index = publishedBaseCommonEyeConditionsQuestionBank.findIndex(question => question.id === revision.id);
   if (index < 0) throw new Error(`Missing question ${revision.id}`);
-  commonEyeConditionsQuestionBank[index] = { ...commonEyeConditionsQuestionBank[index], ...revision };
+  publishedBaseCommonEyeConditionsQuestionBank[index] = { ...publishedBaseCommonEyeConditionsQuestionBank[index], ...revision };
 }
 
 const conjunctivitisRevisions=[
@@ -203,9 +203,9 @@ const conjunctivitisRevisions=[
   }
 ];
 for (const revision of conjunctivitisRevisions) {
-  const index = commonEyeConditionsQuestionBank.findIndex(question => question.id === revision.id);
+  const index = publishedBaseCommonEyeConditionsQuestionBank.findIndex(question => question.id === revision.id);
   if (index < 0) throw new Error(`Missing question ${revision.id}`);
-  commonEyeConditionsQuestionBank[index] = { ...commonEyeConditionsQuestionBank[index], ...revision };
+  publishedBaseCommonEyeConditionsQuestionBank[index] = { ...publishedBaseCommonEyeConditionsQuestionBank[index], ...revision };
 }
 
 // Each retained answer is paired with topic-specific incorrect alternatives.
@@ -272,13 +272,13 @@ const allergyDistractorRevisions={
   ]
 };
 for (const [id, alternatives] of Object.entries(allergyDistractorRevisions)) {
-  const question = commonEyeConditionsQuestionBank.find(item => item.id === id);
+  const question = publishedBaseCommonEyeConditionsQuestionBank.find(item => item.id === id);
   if (!question) throw new Error(`Missing question ${id}`);
   question.choices = [question.choices[question.answer], ...alternatives];
   question.answer = 0;
 }
 
-Object.assign(commonEyeConditionsQuestionBank.find(question => question.id === "common-eye-028"), {
+Object.assign(publishedBaseCommonEyeConditionsQuestionBank.find(question => question.id === "common-eye-028"), {
   question: "Which new symptom during presumed eye allergy requires reassessment rather than simply increasing allergy drops?",
   choices: ["Reduced vision with eye pain", "Mild bilateral itching after pollen exposure", "Watery tearing with a familiar seasonal pattern", "Sneezing during the usual pollen season"],
   answer: 0,
@@ -383,7 +383,7 @@ const lidAndDryEyeDistractorRevisions={
   ]
 };
 for (const [id, alternatives] of Object.entries(lidAndDryEyeDistractorRevisions)) {
-  const question = commonEyeConditionsQuestionBank.find(item => item.id === id);
+  const question = publishedBaseCommonEyeConditionsQuestionBank.find(item => item.id === id);
   if (!question) throw new Error(`Missing question ${id}`);
   question.choices = [question.choices[question.answer], ...alternatives];
   question.answer = 0;
@@ -398,7 +398,7 @@ const lidAndDryEyeRationales={
   "common-eye-059": "Selection requires reviewing both formulation tolerance and product safety rather than treating all lubricants as equivalent."
 };
 for (const [id, rationale] of Object.entries(lidAndDryEyeRationales)) {
-  commonEyeConditionsQuestionBank.find(question => question.id === id).rationale = rationale;
+  publishedBaseCommonEyeConditionsQuestionBank.find(question => question.id === id).rationale = rationale;
 }
 
 const prescriptionDryEyeDistractors={
@@ -449,13 +449,13 @@ const prescriptionDryEyeDistractors={
   ]
 };
 for (const [id, alternatives] of Object.entries(prescriptionDryEyeDistractors)) {
-  const question = commonEyeConditionsQuestionBank.find(item => item.id === id);
+  const question = publishedBaseCommonEyeConditionsQuestionBank.find(item => item.id === id);
   if (!question) throw new Error(`Missing question ${id}`);
   question.choices = [question.choices[question.answer], ...alternatives];
   question.answer = 0;
 }
 
-Object.assign(commonEyeConditionsQuestionBank.find(question => question.id === "common-eye-069"), {
+Object.assign(publishedBaseCommonEyeConditionsQuestionBank.find(question => question.id === "common-eye-069"), {
   question: "Which molecular interaction does lifitegrast inhibit?",
   choices: ["LFA-1 binding to ICAM-1", "Histamine binding to H1 receptors", "Bacterial DNA gyrase activity", "Carbonic anhydrase activity"],
   answer: 0,
@@ -530,7 +530,7 @@ const inflammationInjuryDistractors={
   ]
 };
 for (const [id, alternatives] of Object.entries(inflammationInjuryDistractors)) {
-  const question = commonEyeConditionsQuestionBank.find(item => item.id === id);
+  const question = publishedBaseCommonEyeConditionsQuestionBank.find(item => item.id === id);
   if (!question) throw new Error(`Missing question ${id}`);
   question.choices = [question.choices[question.answer], ...alternatives];
   question.answer = 0;
@@ -630,13 +630,13 @@ const administrationSterilityDistractors = {
   ]
 };
 for (const [id, alternatives] of Object.entries(administrationSterilityDistractors)) {
-  const question = commonEyeConditionsQuestionBank.find(item => item.id === id);
+  const question = publishedBaseCommonEyeConditionsQuestionBank.find(item => item.id === id);
   if (!question) throw new Error(`Missing question ${id}`);
   question.choices = [question.choices[question.answer], ...alternatives];
   question.answer = 0;
 }
 
-Object.assign(commonEyeConditionsQuestionBank.find(item => item.id === "common-eye-106"), {
+Object.assign(publishedBaseCommonEyeConditionsQuestionBank.find(item => item.id === "common-eye-106"), {
   question: "A patient uses Restasis MultiDose and lubricant drops. Which instruction follows the Restasis label?",
   choices: ["Separate these products by 15 minutes", "Use both immediately together", "Separate them by only 5 minutes", "Mix them in the Restasis bottle"],
   answer: 0,
@@ -648,7 +648,7 @@ const preservativeRationales = {
   "common-eye-119": "Multiple prescribed and OTC products contribute to exposure. A complete inventory helps distinguish formulation intolerance from other causes of symptoms."
 };
 for (const [id, rationale] of Object.entries(preservativeRationales)) {
-  commonEyeConditionsQuestionBank.find(item => item.id === id).rationale = rationale;
+  publishedBaseCommonEyeConditionsQuestionBank.find(item => item.id === id).rationale = rationale;
 }
 
 const specialPopulationDistractors = {
@@ -699,7 +699,7 @@ const specialPopulationDistractors = {
   ]
 };
 for (const [id, alternatives] of Object.entries(specialPopulationDistractors)) {
-  const question = commonEyeConditionsQuestionBank.find(item => item.id === id);
+  const question = publishedBaseCommonEyeConditionsQuestionBank.find(item => item.id === id);
   if (!question) throw new Error(`Missing question ${id}`);
   question.choices = [question.choices[question.answer], ...alternatives];
   question.answer = 0;
@@ -726,12 +726,12 @@ const hydroxychloroquineRevisions = {
   }
 };
 for (const [id, revision] of Object.entries(hydroxychloroquineRevisions)) {
-  const question = commonEyeConditionsQuestionBank.find(item => item.id === id);
+  const question = publishedBaseCommonEyeConditionsQuestionBank.find(item => item.id === id);
   if (!question) throw new Error(`Missing question ${id}`);
   Object.assign(question, revision);
 }
 
-commonEyeConditionsQuestionBank.push(...[
+publishedBaseCommonEyeConditionsQuestionBank.push(...[
   {
     "id": "common-eye-topiramate-urgency",
     "question": "A patient develops eye pain and sudden blur ten days after starting topiramate. What is the priority?",
@@ -776,7 +776,7 @@ commonEyeConditionsQuestionBank.push(...[
   }
 ]);
 
-commonEyeConditionsQuestionBank.push(...[
+publishedBaseCommonEyeConditionsQuestionBank.push(...[
   {
     "id": "common-eye-amiodarone-deposits",
     "question": "An ophthalmologist documents asymptomatic corneal microdeposits in a patient taking amiodarone. Do deposits alone require stopping it?",
@@ -821,7 +821,7 @@ commonEyeConditionsQuestionBank.push(...[
   }
 ]);
 
-commonEyeConditionsQuestionBank.push(...[
+publishedBaseCommonEyeConditionsQuestionBank.push(...[
   {
     "id": "common-eye-sildenafil-vision-loss",
     "question": "A patient reports sudden vision loss in one eye after sildenafil. What is the appropriate response?",
@@ -880,7 +880,7 @@ commonEyeConditionsQuestionBank.push(...[
   }
 ]);
 
-commonEyeConditionsQuestionBank.push(...[
+publishedBaseCommonEyeConditionsQuestionBank.push(...[
   {
     "id": "common-eye-tobradex-st-lenses",
     "question": "A patient plans to reinsert contact lenses fifteen minutes after TobraDex ST. What should counseling clarify?",
@@ -911,7 +911,7 @@ commonEyeConditionsQuestionBank.push(...[
   }
 ]);
 
-commonEyeConditionsQuestionBank.push(...[
+publishedBaseCommonEyeConditionsQuestionBank.push(...[
   {
     "id": "common-eye-neomycin-sensitization",
     "question": "During neomycin-containing ophthalmic ointment treatment, itching and lid swelling increase and healing stalls. What should be considered?",
@@ -956,7 +956,7 @@ commonEyeConditionsQuestionBank.push(...[
   }
 ]);
 
-commonEyeConditionsQuestionBank.push({
+publishedBaseCommonEyeConditionsQuestionBank.push({
   "id": "common-eye-chloroquine-surveillance",
   "question": "A patient stops chloroquine because retinal toxicity is suspected. Which follow-up statement is correct?",
   "choices": [
@@ -971,7 +971,7 @@ commonEyeConditionsQuestionBank.push({
   "reviewHref": "#redness-medication-injury"
 });
 
-commonEyeConditionsQuestionBank.push(...[
+publishedBaseCommonEyeConditionsQuestionBank.push(...[
   {
     "id": "common-eye-ketorolac-formulations",
     "question": "Which ketorolac regimen matches the named product label?",
@@ -1002,7 +1002,7 @@ commonEyeConditionsQuestionBank.push(...[
   }
 ]);
 
-commonEyeConditionsQuestionBank.push({
+publishedBaseCommonEyeConditionsQuestionBank.push({
   "id": "common-eye-nepafenac-schedule",
   "question": "Which statement correctly compares the labeled cataract-surgery schedules for Ilevro and Nevanac?",
   "choices": [
@@ -1017,7 +1017,7 @@ commonEyeConditionsQuestionBank.push({
   "reviewHref": "#inflammation-steroid-boundaries"
 });
 
-commonEyeConditionsQuestionBank.push({
+publishedBaseCommonEyeConditionsQuestionBank.push({
   "id": "common-eye-pred-mild-monitoring",
   "question": "A patient using Pred Mild for twelve days believes its lower concentration removes the need for pressure checks. Which response is correct?",
   "choices": [
@@ -1032,7 +1032,7 @@ commonEyeConditionsQuestionBank.push({
   "reviewHref": "#inflammation-steroid-boundaries"
 });
 
-commonEyeConditionsQuestionBank.push({
+publishedBaseCommonEyeConditionsQuestionBank.push({
   "id": "common-eye-maxidex-ingredients",
   "question": "Which statement correctly identifies Maxidex 0.1% ophthalmic suspension?",
   "choices": [
@@ -1047,7 +1047,7 @@ commonEyeConditionsQuestionBank.push({
   "reviewHref": "#inflammation-steroid-boundaries"
 });
 
-commonEyeConditionsQuestionBank.push({
+publishedBaseCommonEyeConditionsQuestionBank.push({
   "id": "common-eye-fluorometholone-pressure",
   "question": "Does a slower average pressure response to fluorometholone remove the need for intraocular pressure monitoring?",
   "choices": [
@@ -1062,7 +1062,7 @@ commonEyeConditionsQuestionBank.push({
   "reviewHref": "#inflammation-steroid-boundaries"
 });
 
-commonEyeConditionsQuestionBank.push({
+publishedBaseCommonEyeConditionsQuestionBank.push({
   "id": "common-eye-alrex-lenses",
   "question": "A patient with a red eye asks to use Alrex to make contact-lens wear comfortable. What is appropriate?",
   "choices": [
@@ -1077,7 +1077,7 @@ commonEyeConditionsQuestionBank.push({
   "reviewHref": "#inflammation-steroid-boundaries"
 });
 
-commonEyeConditionsQuestionBank.push({
+publishedBaseCommonEyeConditionsQuestionBank.push({
   "id": "common-eye-ointment-vision",
   "question": "After applying a prescribed ophthalmic ointment, a patient has temporary blurred vision and plans to drive immediately. What should the pharmacist advise?",
   "choices": [
@@ -1091,3 +1091,25 @@ commonEyeConditionsQuestionBank.push({
   "lesson": "ophthalmic-dosage-technique",
   "reviewHref": "#ophthalmic-dosage-technique"
 });
+
+
+const sourceReviewedQuestions = new Map([
+  [
+    "common-eye-088",
+    {
+      "id": "common-eye-088",
+      "lesson": "redness-medication-injury",
+      "question": "Which reasoning hazard is most important to prevent with ocular vasoconstrictors?",
+      "choices": [
+        "Mistaking reduced redness for proof that infection or inflammation has resolved",
+        "Checking for pain and visual change before self-care",
+        "Reviewing labeled stop rules",
+        "Reassessing persistent redness"
+      ],
+      "answer": 0,
+      "rationale": "Redness is a sign whose cause determines treatment",
+      "reviewHref": "#redness-medication-injury"
+    }
+  ]
+]);
+export const commonEyeConditionsQuestionBank = publishedBaseCommonEyeConditionsQuestionBank.map((question) => sourceReviewedQuestions.get(question.id) || question);

@@ -49,8 +49,30 @@ const reviewLessonByConcept = {
 const dimensions = [["principle", "Which statement is most accurate?", 0], ["action", "Which action best applies the evidence?", 1], ["assessment", "Which plan demonstrates the strongest clinical reasoning?", 1], ["hazard", "Which error creates the greatest avoidable risk?", 2]];
 const generic = ["Use one isolated value without reviewing the trajectory, clinical state, medications, or competing causes.", "Assume symptom improvement removes the need for surveillance, prevention, and transplant-aware follow-up.", "Apply a historical textbook algorithm without checking current guidance, labeling, resistance, or patient-specific risk."];
 
-export const cirrhosisDecompensatedLiverDiseaseQuestionBank = concepts.flatMap(([slug, principle, action, hazard], conceptIndex) => dimensions.map(([dimension, stem, answerType], dimensionIndex) => {
+const publishedBaseCirrhosisDecompensatedLiverDiseaseQuestionBank = concepts.flatMap(([slug, principle, action, hazard], conceptIndex) => dimensions.map(([dimension, stem, answerType], dimensionIndex) => {
   const correct = [principle, action, hazard][answerType];
   const choices = dimension === "hazard" ? [hazard, principle, action, generic[(conceptIndex + dimensionIndex) % 3]] : [correct, hazard, generic[(conceptIndex + dimensionIndex) % 3], generic[(conceptIndex + dimensionIndex + 1) % 3]];
   return { id: `cirrhosis-decompensated-${String(conceptIndex * 4 + dimensionIndex + 1).padStart(3, "0")}`, question: `${stem} Focus: ${slug.replaceAll("-", " ")}.`, choices, answer: 0, rationale: `${principle} ${action}`, reviewHref: `#${reviewLessonByConcept[slug]}`, difficulty: dimensionIndex < 2 ? "foundational" : "advanced" };
 }));
+
+
+const sourceReviewedQuestions = new Map([
+  [
+    "cirrhosis-decompensated-090",
+    {
+      "id": "cirrhosis-decompensated-090",
+      "question": "A caregiver asks how to adjust maintenance lactulose after recovery from overt HE. Which instruction is best?",
+      "choices": [
+        "Follow the prescribed plan for about 2 to 3 soft stools daily and report profuse diarrhea, weakness or recurrent confusion.",
+        "Increase the dose until every bowel movement is watery.",
+        "Use the ammonia concentration alone to decide each dose.",
+        "Stop prevention immediately after the first day of normal cognition."
+      ],
+      "answer": 0,
+      "rationale": "Stool consistency and frequency, cognition, hydration and electrolytes guide the plan. Excess diarrhea can precipitate dehydration and HE. Recurrence prevention is not automatically stopped after early recovery, and ammonia does not provide a maintenance titration target.",
+      "reviewHref": "#encephalopathy",
+      "difficulty": "foundational"
+    }
+  ]
+]);
+export const cirrhosisDecompensatedLiverDiseaseQuestionBank = publishedBaseCirrhosisDecompensatedLiverDiseaseQuestionBank.map((question) => sourceReviewedQuestions.get(question.id) || question);

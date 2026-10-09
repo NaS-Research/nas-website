@@ -110,7 +110,7 @@ const integrationCases = [
   ["A CKD patient reports taking every binder but often skips meals and takes the tablets at bedtime.", "Reconcile each dose with actual phosphate-containing food", "Adherence includes correct timing and indication, not tablet count alone.", "hyperphosphatemia-ckd-mbd"],
 ].map(([caseText, correct, rationale, lesson], index) => q(`10${index}`, `${caseText} What is the best next interpretation or management principle?`, [correct, "Normalize one laboratory value without a mechanism", "Use the same fixed plan for every patient", "Ignore medication timing"], 0, rationale, lesson));
 
-export const calciumPhosphorusHomeostasisQuestionBank = [
+const publishedBaseCalciumPhosphorusHomeostasisQuestionBank = [
   ...core,
   ...correctedCalciumCases,
   ...elementalCalciumCases,
@@ -119,6 +119,27 @@ export const calciumPhosphorusHomeostasisQuestionBank = [
   ...integrationCases,
 ];
 
-if (calciumPhosphorusHomeostasisQuestionBank.length !== 100) {
-  throw new Error(`Calcium and phosphorus question bank must contain 100 questions, found ${calciumPhosphorusHomeostasisQuestionBank.length}.`);
+if (publishedBaseCalciumPhosphorusHomeostasisQuestionBank.length !== 100) {
+  throw new Error(`Calcium and phosphorus question bank must contain 100 questions, found ${publishedBaseCalciumPhosphorusHomeostasisQuestionBank.length}.`);
 }
+
+
+const sourceReviewedQuestions = new Map([
+  [
+    "calcium-phosphorus-060",
+    {
+      "id": "calcium-phosphorus-060",
+      "question": "Using total calcium + 0.8(4 - albumin), what is the estimated corrected calcium for total calcium 7.2 mg/dL and albumin 2 g/dL? Round to the nearest tenth.",
+      "choices": [
+        "8.8 mg/dL",
+        "7.2 mg/dL",
+        "5.6 mg/dL",
+        "9.2 mg/dL"
+      ],
+      "answer": 0,
+      "rationale": "Use total calcium in mg/dL and albumin in g/dL: 7.2 + 0.8(4 - 2) = 7.2 + 1.6 = 8.8 mg/dL, or 8.8 mg/dL rounded to the nearest tenth. The other choices do not equal this rounded result. This is an albumin-adjusted total-calcium estimate, not a directly measured ionized-calcium result.",
+      "reviewHref": "#calcium-measurement"
+    }
+  ]
+]);
+export const calciumPhosphorusHomeostasisQuestionBank = publishedBaseCalciumPhosphorusHomeostasisQuestionBank.map((question) => sourceReviewedQuestions.get(question.id) || question);

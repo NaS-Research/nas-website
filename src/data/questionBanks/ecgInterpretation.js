@@ -33,4 +33,25 @@ const concepts = [
 
 const dimensions = [["principle", "Which principle best characterizes"], ["action", "Which clinical action best applies to"], ["assessment", "Which assessment is most appropriate for"], ["hazard", "Which reasoning hazard is most important to prevent with"]];
 function distractors(index, field) { return [5, 11, 17].map((offset) => concepts[(index + offset) % concepts.length][field]); }
-export const ecgInterpretationQuestionBank = concepts.flatMap((concept, conceptIndex) => dimensions.map(([field, prefix], dimensionIndex) => ({ id: `ecg-interpretation-${String(conceptIndex * 4 + dimensionIndex + 1).padStart(3, "0")}`, question: `${prefix} ${concept.name}?`, choices: [concept[field], ...distractors(conceptIndex, field)], answer: 0, rationale: concept.why, reviewHref: `#${concept.lesson}` })));
+const publishedBaseEcgInterpretationQuestionBank = concepts.flatMap((concept, conceptIndex) => dimensions.map(([field, prefix], dimensionIndex) => ({ id: `ecg-interpretation-${String(conceptIndex * 4 + dimensionIndex + 1).padStart(3, "0")}`, question: `${prefix} ${concept.name}?`, choices: [concept[field], ...distractors(conceptIndex, field)], answer: 0, rationale: concept.why, reviewHref: `#${concept.lesson}` })));
+
+
+const sourceReviewedQuestions = new Map([
+  [
+    "ecg-interpretation-090",
+    {
+      "id": "ecg-interpretation-090",
+      "question": "Which clinical action best applies to QT-prolonging medications?",
+      "choices": [
+        "Correct modifiable risks, review interactions and organ function, and select or discontinue therapy according to benefit and risk.",
+        "Continue avoidable QT-active combinations without reviewing electrolyte depletion.",
+        "Treat every long QT with a widened QRS as proof of acquired long-QT physiology.",
+        "Stop every beneficial medicine solely because one automated QTc value is elevated."
+      ],
+      "answer": 0,
+      "rationale": "Correct modifiable contributors, review exposure and organ function, and weigh therapeutic benefit against risk. Check uncertain QT measurements and QRS context. Neither unreviewed continuation nor reflex discontinuation substitutes for this assessment.",
+      "reviewHref": "#ischemia-electrolytes-and-drugs"
+    }
+  ]
+]);
+export const ecgInterpretationQuestionBank = publishedBaseEcgInterpretationQuestionBank.map((question) => sourceReviewedQuestions.get(question.id) || question);

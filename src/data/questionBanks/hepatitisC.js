@@ -43,8 +43,30 @@ const reviewLessonByConcept = {
 };
 const dimensions = [["principle", "Which statement is most accurate?", 0], ["action", "Which action best applies the evidence?", 1], ["assessment", "Which plan demonstrates the strongest clinical reasoning?", 1], ["hazard", "Which error creates the greatest avoidable risk?", 2]];
 const generic = ["Use one result without reviewing fibrosis, prior treatment, interactions, coinfection, or liver compensation.", "Assume every DAA combination, genotype, and cirrhosis state is interchangeable.", "Stop follow-up when the last tablet is taken without confirming SVR12 or planning cirrhosis surveillance."];
-export const hepatitisCQuestionBank = concepts.flatMap(([slug, principle, action, hazard], conceptIndex) => dimensions.map(([dimension, stem, answerType], dimensionIndex) => {
+const publishedBaseHepatitisCQuestionBank = concepts.flatMap(([slug, principle, action, hazard], conceptIndex) => dimensions.map(([dimension, stem, answerType], dimensionIndex) => {
   const correct = [principle, action, hazard][answerType];
   const choices = dimension === "hazard" ? [hazard, principle, action, generic[(conceptIndex + dimensionIndex) % 3]] : [correct, hazard, generic[(conceptIndex + dimensionIndex) % 3], generic[(conceptIndex + dimensionIndex + 1) % 3]];
   return { id: `hepatitis-c-${String(conceptIndex * 4 + dimensionIndex + 1).padStart(3, "0")}`, question: `${stem} Focus: ${slug.replaceAll("-", " ")}.`, choices, answer: 0, rationale: `${principle} ${action}`, reviewHref: `#${reviewLessonByConcept[slug]}`, difficulty: dimensionIndex < 2 ? "foundational" : "advanced" };
 }));
+
+
+const sourceReviewedQuestions = new Map([
+  [
+    "hepatitis-c-081",
+    {
+      "id": "hepatitis-c-081",
+      "question": "Which statement is most accurate? Focus: svr cure.",
+      "choices": [
+        "Undetectable or nonquantifiable HCV RNA twelve or more weeks after treatment documents SVR12",
+        "Reactive antibody at twelve weeks proves virologic cure",
+        "Normal bilirubin alone establishes SVR12",
+        "End-of-treatment RNA alone establishes SVR12"
+      ],
+      "answer": 0,
+      "rationale": "SVR12 uses a sensitive post-treatment RNA test. Current guidance permits a limited SVR4 alternative without cirrhosis or prior DAA exposure, especially when barriers threaten SVR12 assessment; this does not redefine an end-of-treatment test as cure.",
+      "reviewHref": "#svr-follow-up",
+      "difficulty": "foundational"
+    }
+  ]
+]);
+export const hepatitisCQuestionBank = publishedBaseHepatitisCQuestionBank.map((question) => sourceReviewedQuestions.get(question.id) || question);

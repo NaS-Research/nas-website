@@ -4,6 +4,7 @@ import LearningCatalog from "@/components/learn/LearningCatalog";
 import { pharmacyModules } from "@/data/pharmacyModules";
 import { pharmacyLessons } from "@/data/pharmacyLearning";
 import learningCatalogMetadata from "@/data/learningCatalogMetadata.json";
+import { pharmacyCumulativeReview } from "@/data/pharmacyCumulativeReview";
 import "./library.css";
 
 export const metadata = {
@@ -15,6 +16,11 @@ export const metadata = {
 
 export default function LearningLibraryPage() {
   const entries = [
+    {
+      title: "Pharmacy Knowledge Review", description: "Bring mechanisms, monitoring, counseling, calculations, and clinical cases together in a 30-question review.",
+      subject: "Across pharmacy", topics: ["Pharmacy", "Clinical reasoning", "Calculations", "Cumulative review"],
+      type: "Knowledge review", detail: `${pharmacyCumulativeReview.length} questions · 10 per attempt`, href: "/learn/pharmacy/review",
+    },
     ...pharmacyModules.map(module => ({
       title: module.title, description: module.description, subject: module.area || "Foundations",
       topics: module.topics || [], type: "Module", detail: `${module.submodules.length} lessons`,

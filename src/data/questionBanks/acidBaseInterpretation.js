@@ -105,8 +105,29 @@ const integratedCases = [
   ["A patient with severe acidemia and stage 3 AKI is considered for bicarbonate infusion.", "Define the objective and discuss uncertain mortality benefit, sodium load, ventilation, and kidney replacement strategy", "BICARICU-2 found no mortality benefit but less kidney replacement therapy, so treatment remains contextual."],
 ].map(([caseText, correct, rationale], index) => q(`09${index + 1}`, `${caseText} Which interpretation or action is most defensible?`, [correct, "Treat the pH number without identifying the mechanism", "Assume compensation is always appropriate", "Delay stabilization until every laboratory result returns"], 0, rationale, index < 4 ? "anion-gap-metabolic-acidosis" : index < 7 ? "compensation-mixed-disorders" : index < 9 ? "respiratory-integrated" : "metabolic-treatment"));
 
-export const acidBaseInterpretationQuestionBank = [...core, ...primaryCases, ...winterCases, ...gapCases, ...correctedCases, ...integratedCases];
+const publishedBaseAcidBaseInterpretationQuestionBank = [...core, ...primaryCases, ...winterCases, ...gapCases, ...correctedCases, ...integratedCases];
 
-if (acidBaseInterpretationQuestionBank.length < 100) {
-  throw new Error(`Acid-base question bank must contain at least 100 questions, found ${acidBaseInterpretationQuestionBank.length}.`);
+if (publishedBaseAcidBaseInterpretationQuestionBank.length < 100) {
+  throw new Error(`Acid-base question bank must contain at least 100 questions, found ${publishedBaseAcidBaseInterpretationQuestionBank.length}.`);
 }
+
+
+const sourceReviewedQuestions = new Map([
+  [
+    "acid-base-050",
+    {
+      "id": "acid-base-050",
+      "question": "Which acid-base communication is most complete?",
+      "choices": [
+        "State the measured pH state, processes, compensation result, suspected cause, threats, plan, and reassessment",
+        "Report pH alone as the complete diagnosis",
+        "Report the gap without its albumin or assay context",
+        "Name a mnemonic without connecting it to the patient"
+      ],
+      "answer": 0,
+      "rationale": "A complete interpretation connects measurements and arithmetic to physiology, evidence limits, cause-directed care, and follow-up.",
+      "reviewHref": "#systematic-blood-gas"
+    }
+  ]
+]);
+export const acidBaseInterpretationQuestionBank = publishedBaseAcidBaseInterpretationQuestionBank.map((question) => sourceReviewedQuestions.get(question.id) || question);

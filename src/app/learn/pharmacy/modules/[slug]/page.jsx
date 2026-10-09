@@ -1,3 +1,10 @@
+import PharmacyUnitConversionVisual from "@/components/learn/PharmacyUnitConversionVisual";
+import PharmacyConcentrationVisual from "@/components/learn/PharmacyConcentrationVisual";
+import PharmacyDilutionVisual from "@/components/learn/PharmacyDilutionVisual";
+import PharmacyOsmolarityVisual from "@/components/learn/PharmacyOsmolarityVisual";
+import PharmacyIsotonicityVisual from "@/components/learn/PharmacyIsotonicityVisual";
+import PharmacyMolesMillimolesVisual from "@/components/learn/PharmacyMolesMillimolesVisual";
+import PharmacyMilliequivalentVisual from "@/components/learn/PharmacyMilliequivalentVisual";
 import ModuleContents from "@/components/learn/ModuleContents";
 import AutoimmuneFoundationsVisual from "@/components/learn/AutoimmuneFoundationsVisual";
 import Link from "next/link";
@@ -234,7 +241,7 @@ import { getPharmacyStudyContent } from "@/data/pharmacyStudyContent";
 const calciumVisualTypes = ["mineral-regulation", "calcium-fractions", "hypocalcemia-response", "hypercalcemia-response", "phosphate-balance", "ckd-mbd"];
 const enteralVisualTypes = ["enteral-decision", "access-route", "delivery-prescription", "formula-selection", "medication-administration", "monitoring-complications"];
 const parenteralVisualTypes = ["pn-decision", "venous-access", "macronutrient-design", "micronutrient-balance", "compounding-safety", "monitoring-transition"];
-const parenteralCalculationVisualTypes = ["pn-calc-foundations", "pn-calc-protein-energy", "pn-calc-dextrose", "pn-calc-lipid", "pn-calc-stock", "pn-calc-audit"];
+const parenteralCalculationVisualTypes = ["pn-calc-energy", "pn-calc-nitrogen", "pn-calc-fluid", "pn-calc-foundations", "pn-calc-protein-energy", "pn-calc-dextrose", "pn-calc-lipid", "pn-calc-stock", "pn-calc-audit"];
 const pediatricParenteralVisualTypes = ["peds-pn-decision", "peds-pn-glucose", "peds-pn-macros", "peds-pn-micros", "peds-pn-safety", "peds-pn-audit"];
 const autonomicVisualTypes = ["ans-architecture", "ans-transmitter-map", "ans-receptor-signaling", "ans-cholinergic-cycle", "ans-adrenergic-cycle", "ans-reflex-integration"];
 const cholinergicVisualTypes = ["chol-classification", "chol-direct-agonists", "chol-clinical-selection", "chol-peripheral-inhibitors", "chol-central-inhibitors", "chol-safety"];
@@ -344,6 +351,16 @@ const scopedAntibioticVisualModules = new Set([
   "polymyxin-pharmacology",
 ]);
 
+const pharmacyCalculationVisuals = {
+  "pharmacy-unit-conversions": PharmacyUnitConversionVisual,
+  "pharmacy-concentrations-specific-gravity": PharmacyConcentrationVisual,
+  "pharmacy-dilution-alligation": PharmacyDilutionVisual,
+  "pharmacy-osmolarity-calculations": PharmacyOsmolarityVisual,
+  "pharmacy-isotonicity-calculations": PharmacyIsotonicityVisual,
+  "pharmacy-moles-millimoles": PharmacyMolesMillimolesVisual,
+  "pharmacy-milliequivalent-calculations": PharmacyMilliequivalentVisual,
+};
+
 export function generateStaticParams() {
   return pharmacyModules.map((module) => ({ slug: module.slug }));
 }
@@ -364,6 +381,7 @@ export default async function PharmacyModulePage({ params }) {
   const { slug } = await params;
   const module = getPharmacyModule(slug);
   if (!module) notFound();
+  const CalculationVisual = pharmacyCalculationVisuals[module.slug];
 
   const embeddedQuestions = module.submodules.map((submodule) => ({
     ...submodule.check,
@@ -406,7 +424,8 @@ export default async function PharmacyModulePage({ params }) {
                 <span>What to learn</span>
                 <ul>{submodule.concepts.map((concept) => <li key={concept}>{concept}</li>)}</ul>
               </div>
-              {!scopedAntibioticVisualModules.has(module.slug) && <>
+              {CalculationVisual && <CalculationVisual type={submodule.visual} />}
+              {!CalculationVisual && !scopedAntibioticVisualModules.has(module.slug) && <>
               {nutritionScreeningAssessmentVisualTypes.includes(submodule.visual) && <NutritionScreeningAssessmentVisual type={submodule.visual} />}
               {!nutritionScreeningAssessmentVisualTypes.includes(submodule.visual) && <>
               {submodule.visual && !submodule.visual.startsWith("acid-") && !calciumVisualTypes.includes(submodule.visual) && !enteralVisualTypes.includes(submodule.visual) && !parenteralVisualTypes.includes(submodule.visual) && !parenteralCalculationVisualTypes.includes(submodule.visual) && !pediatricParenteralVisualTypes.includes(submodule.visual) && !autonomicVisualTypes.includes(submodule.visual) && !cholinergicVisualTypes.includes(submodule.visual) && !antimuscarinicVisualTypes.includes(submodule.visual) && !cholinergicMedicinalChemistryVisualTypes.includes(submodule.visual) && !anticholinergicMedicinalChemistryVisualTypes.includes(submodule.visual) && !cholinergicToxicologyVisualTypes.includes(submodule.visual) && !adrenergicAgonistVisualTypes.includes(submodule.visual) && !adrenergicAntagonistVisualTypes.includes(submodule.visual) && !adrenergicMedicinalChemistryVisualTypes.includes(submodule.visual) && !diureticPharmacologyVisualTypes.includes(submodule.visual) && !diureticMedicinalChemistryVisualTypes.includes(submodule.visual) && !glaucomaPharmacotherapyVisualTypes.includes(submodule.visual) && !hypertensionFoundationsVisualTypes.includes(submodule.visual) && !resistantSecondaryHypertensionVisualTypes.includes(submodule.visual) && !hypertensiveEmergenciesVisualTypes.includes(submodule.visual) && !antihypertensiveMedicinalChemistryVisualTypes.includes(submodule.visual) && !dyslipidemiaRiskVisualTypes.includes(submodule.visual) && !lipidLoweringPharmacologyVisualTypes.includes(submodule.visual) && !dyslipidemiaTherapeuticsVisualTypes.includes(submodule.visual) && !chronicCoronaryDiseaseVisualTypes.includes(submodule.visual) && !acuteCoronarySyndromesVisualTypes.includes(submodule.visual) && !antiplateletPharmacologyVisualTypes.includes(submodule.visual) && !coagulationAnticoagulantVisualTypes.includes(submodule.visual) && !venousThromboembolismVisualTypes.includes(submodule.visual) && !warfarinManagementVisualTypes.includes(submodule.visual) && !directOralAnticoagulantsVisualTypes.includes(submodule.visual) && !parenteralAnticoagulantsVisualTypes.includes(submodule.visual) && !ecgInterpretationVisualTypes.includes(submodule.visual) && !arrhythmiaPathophysiologyVisualTypes.includes(submodule.visual) && !atrialArrhythmiasVisualTypes.includes(submodule.visual) && !ventricularArrhythmiasVisualTypes.includes(submodule.visual) && !antiarrhythmicPharmacologyVisualTypes.includes(submodule.visual) && !heartFailurePathophysiologyVisualTypes.includes(submodule.visual) && !diabeticKetoacidosisVisualTypes.includes(submodule.visual) && !hyperosmolarHyperglycemicStateVisualTypes.includes(submodule.visual) && !thyroidDisordersVisualTypes.includes(submodule.visual) && !thyroidMedicinalChemistryVisualTypes.includes(submodule.visual) && !adrenalPharmacologyVisualTypes.includes(submodule.visual) && !cushingSyndromeVisualTypes.includes(submodule.visual) && !adrenalInsufficiencyVisualTypes.includes(submodule.visual) && !gonadalHormonePharmacologyVisualTypes.includes(submodule.visual) && !gynecologicDisordersVisualTypes.includes(submodule.visual) && !infertilityOvulationInductionVisualTypes.includes(submodule.visual) && !contraceptivePharmacotherapyVisualTypes.includes(submodule.visual) && !gastroesophagealRefluxDiseaseVisualTypes.includes(submodule.visual) && !pepticUlcerDiseaseVisualTypes.includes(submodule.visual) && !irritableBowelSyndromeVisualTypes.includes(submodule.visual) && !chronicIdiopathicConstipationVisualTypes.includes(submodule.visual) && !diarrheaAssessmentVisualTypes.includes(submodule.visual) && !inflammatoryBowelDiseaseVisualTypes.includes(submodule.visual) && !motionSicknessVisualTypes.includes(submodule.visual) && !medicationSafetyQualityVisualTypes.includes(submodule.visual) && !infectionPreventionControlVisualTypes.includes(submodule.visual) && !drugAllergiesAdverseReactionsVisualTypes.includes(submodule.visual) && !pharmacokineticsVisualTypes.includes(submodule.visual) && !toxicologyAntidotesVisualTypes.includes(submodule.visual) && !gynecologicOncologyVisualTypes.includes(submodule.visual) && !pelvicOrganProlapseFistulaCareVisualTypes.includes(submodule.visual) && !genderAffirmingHormoneCareVisualTypes.includes(submodule.visual) && !immunoglobulinTherapyVisualTypes.includes(submodule.visual) && !anemiaVisualTypes.includes(submodule.visual) && <FluidElectrolyteVisual type={submodule.visual} />}
@@ -678,9 +697,12 @@ export default async function PharmacyModulePage({ params }) {
 
           {module.references && <section className="pharmacy-module-references" aria-labelledby="module-references-title">
             <p className="nas-section-label">References</p>
-            <h2 id="module-references-title">Current clinical foundation.</h2>
-            <p>Core source material was synthesized with the following contemporary guidance. Verify local policy and current guidance before applying clinical information.</p>
-            <ol>{module.references.map((reference) => <li key={reference.href}><a href={reference.href} target="_blank" rel="noreferrer">{reference.label}<span aria-hidden="true">↗</span></a></li>)}</ol>
+            <h2 id="module-references-title">{module.referenceHeading || "Current clinical foundation."}</h2>
+            <p>{module.referenceIntroduction || "Core source material was synthesized with the following contemporary guidance. Verify local policy and current guidance before applying clinical information."}</p>
+            <ol>{module.references.map((reference) => <li key={reference.href || reference.label}>
+              {reference.href ? <a href={reference.href} target="_blank" rel="noreferrer">{reference.label}<span aria-hidden="true">↗</span></a> : <span>{reference.label}</span>}
+              {reference.locator && <p>{reference.locator}</p>}
+            </li>)}</ol>
           </section>}
 
           <aside className="lesson-disclaimer">

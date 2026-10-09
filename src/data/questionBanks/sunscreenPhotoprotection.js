@@ -804,4 +804,26 @@ const regulatoryCases = [
   }
 ];
 
-export const sunscreenPhotoprotectionQuestionBank = [...generated, ...calculations, ...regulatoryCases];
+const publishedBaseSunscreenPhotoprotectionQuestionBank = [...generated, ...calculations, ...regulatoryCases];
+
+
+const sourceReviewedQuestions = new Map([
+  [
+    "sunscreen-photoprotection-060",
+    {
+      "id": "sunscreen-photoprotection-060",
+      "lesson": "reapplication-water",
+      "question": "Which approach to product storage and expiration should be avoided?",
+      "choices": [
+        "Leaving sunscreen in direct sun or extreme vehicle heat and assuming unchanged performance",
+        "Excess heat, direct sun, and expiration can compromise reliable use",
+        "Avoid excessive heat and direct sun; discard expired or abnormal product and undated sunscreen three years after purchase or when its age is unknown",
+        "Assess expiration date, storage location, odor, separation, and label"
+      ],
+      "answer": 0,
+      "rationale": "Product condition is part of dose reliability",
+      "reviewHref": "#reapplication-water"
+    }
+  ]
+]);
+export const sunscreenPhotoprotectionQuestionBank = publishedBaseSunscreenPhotoprotectionQuestionBank.map((question) => sourceReviewedQuestions.get(question.id) || question);

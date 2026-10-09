@@ -47,8 +47,30 @@ const reviewLessonByConcept = {
 const dimensions = [["principle", "Which statement is most accurate?", 0], ["action", "Which action best applies the evidence?", 1], ["assessment", "Which plan demonstrates the strongest clinical reasoning?", 1], ["hazard", "Which error creates the greatest avoidable risk?", 2]];
 const generic = ["Use one isolated laboratory value without reviewing the full serology pattern, fibrosis, treatment history, or current guidance.", "Assume viral suppression removes every need for monitoring, vaccination, or cancer surveillance.", "Select therapy from drug name alone without kidney, bone, liver, pregnancy, resistance, coinfection, or adherence context."];
 
-export const chronicHepatitisBQuestionBank = concepts.flatMap(([slug, principle, action, hazard], conceptIndex) => dimensions.map(([dimension, stem, answerType], dimensionIndex) => {
+const publishedBaseChronicHepatitisBQuestionBank = concepts.flatMap(([slug, principle, action, hazard], conceptIndex) => dimensions.map(([dimension, stem, answerType], dimensionIndex) => {
   const correct = [principle, action, hazard][answerType];
   const choices = dimension === "hazard" ? [hazard, principle, action, generic[(conceptIndex + dimensionIndex) % 3]] : [correct, hazard, generic[(conceptIndex + dimensionIndex) % 3], generic[(conceptIndex + dimensionIndex + 1) % 3]];
   return { id: `chronic-hepatitis-b-${String(conceptIndex * 4 + dimensionIndex + 1).padStart(3, "0")}`, question: `${stem} Focus: ${slug.replaceAll("-", " ")}.`, choices, answer: 0, rationale: `${principle} ${action}`, reviewHref: `#${reviewLessonByConcept[slug]}`, difficulty: dimensionIndex < 2 ? "foundational" : "advanced" };
 }));
+
+
+const sourceReviewedQuestions = new Map([
+  [
+    "chronic-hepatitis-b-057",
+    {
+      "id": "chronic-hepatitis-b-057",
+      "question": "Which statement is most accurate? Focus: peginterferon monitoring.",
+      "choices": [
+        "Peginterferon requires early blood-count checks plus continuing laboratory, psychiatric and symptom monitoring despite its finite duration",
+        "Normal baseline blood counts eliminate the need for CBC monitoring on treatment",
+        "Flu-like symptoms are the only adverse effects that need discussion before treatment",
+        "Completing 48 weeks automatically ends all HBV follow-up and indicated cancer surveillance"
+      ],
+      "answer": 0,
+      "rationale": "The label calls for hematologic testing at weeks 2 and 4, biochemical testing at week 4 and subsequent periodic testing. Serious psychiatric, marrow, hepatic, endocrine, autoimmune, infectious and eye effects require active review. HBV follow-up continues after a finite course.",
+      "reviewHref": "#peginterferon-selection",
+      "difficulty": "foundational"
+    }
+  ]
+]);
+export const chronicHepatitisBQuestionBank = publishedBaseChronicHepatitisBQuestionBank.map((question) => sourceReviewedQuestions.get(question.id) || question);

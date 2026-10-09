@@ -1396,4 +1396,28 @@ const longitudinalQuestions = [
     "reviewHref": "#longitudinal-care"
   }
 ];
-export const multipleSclerosisQuestionBank = [...courseQuestions, ...diagnosticQuestions, ...oralQuestions, ...s1pQuestions, ...biologicQuestions, ...reconstitutionQuestions, ...rehabilitationQuestions, ...relapseQuestions, ...injectableQuestions, ...longitudinalQuestions];
+const publishedBaseMultipleSclerosisQuestionBank = [...courseQuestions, ...diagnosticQuestions, ...oralQuestions, ...s1pQuestions, ...biologicQuestions, ...reconstitutionQuestions, ...rehabilitationQuestions, ...relapseQuestions, ...injectableQuestions, ...longitudinalQuestions];
+
+
+const sourceReviewedQuestions = new Map([
+  [
+    "ms-cladribine-low-count",
+    {
+      "id": "ms-cladribine-low-count",
+      "conceptGroup": "cladribine-low-count",
+      "lesson": "immune-reconstitution",
+      "difficulty": "Applied",
+      "question": "Two months after the start of a cladribine (Mavenclad) treatment course for multiple sclerosis, lymphocytes are 180 cells/µL. What is the next action?",
+      "choices": [
+        "Wait until month six to recheck because the dosing cycle ended",
+        "Repeat counts monthly but omit prophylaxis unless a rash appears",
+        "Monthly counts through month six and herpes prophylaxis; hold therapy",
+        "Stop blood-count monitoring once tablets are held"
+      ],
+      "answer": 2,
+      "explanation": "This count crosses the labeled severe-lymphopenia action threshold.",
+      "reviewHref": "#immune-reconstitution"
+    }
+  ]
+]);
+export const multipleSclerosisQuestionBank = publishedBaseMultipleSclerosisQuestionBank.map((question) => sourceReviewedQuestions.get(question.id) || question);

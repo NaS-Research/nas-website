@@ -18,7 +18,7 @@ export default function LearningCatalog({ entries }) {
         <input type="search" placeholder="Search topics, modules, and guides" value={query} onChange={event => { setQuery(event.target.value); setLimit(12); }} />
       </label>
       <label className="learning-filter"><span className="sr-only">Subject</span><select value={subject} onChange={event => { setSubject(event.target.value); setLimit(12); }}><option value="">All subjects</option>{subjects.map(name => <option key={name}>{name}</option>)}</select></label>
-      <label className="learning-filter"><span className="sr-only">Content type</span><select value={type} onChange={event => { setType(event.target.value); setLimit(12); }}><option value="">All formats</option><option>Module</option><option>Study guide</option></select></label>
+      <label className="learning-filter"><span className="sr-only">Content type</span><select value={type} onChange={event => { setType(event.target.value); setLimit(12); }}><option value="">All formats</option><option>Module</option><option>Study guide</option><option>Knowledge review</option></select></label>
     </div>
     <div className="learning-library__meta"><span>{query.trim() ? "Most relevant" : "Recently updated"}</span>{(query || subject || type) && <button onClick={reset}>Clear filters</button>}</div>
     <div className="learning-results">{results.slice(0, limit).map(entry => <Link className="learning-result" key={entry.href} href={entry.href}>

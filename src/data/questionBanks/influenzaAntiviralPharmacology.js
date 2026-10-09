@@ -78,5 +78,44 @@ const caseRows=[
   ["integrated-influenza-system","What is the correct educational boundary for this module?",["Use it to structure verification, then apply current seasonal guidance and patient-specific judgment","Use each regimen as a standing prescription","Ignore current susceptibility data","Replace vaccination with prophylaxis"],"Influenza decisions change with season, resistance, labeling, and patient context."]
 ];
 const cases=caseRows.map((item,index)=>({id:`influenza-antiviral-pharmacology-${String(generated.length+index+1).padStart(3,"0")}`,lesson:item[0],question:item[1],choices:item[2],answer:0,rationale:item[3],reviewHref:`#${item[0]}`}));
-export const influenzaAntiviralPharmacologyQuestionBank=[...generated,...cases];
-if(influenzaAntiviralPharmacologyQuestionBank.length<100)throw new Error(`Influenza antiviral pharmacology bank must contain at least 100 questions, found ${influenzaAntiviralPharmacologyQuestionBank.length}.`);
+const publishedBaseInfluenzaAntiviralPharmacologyQuestionBank = [...generated,...cases];
+if(publishedBaseInfluenzaAntiviralPharmacologyQuestionBank.length<100)throw new Error(`Influenza antiviral pharmacology bank must contain at least 100 questions, found ${publishedBaseInfluenzaAntiviralPharmacologyQuestionBank.length}.`);
+
+
+const sourceReviewedQuestions = new Map([
+  [
+    "influenza-antiviral-pharmacology-049",
+    {
+      "id": "influenza-antiviral-pharmacology-049",
+      "lesson": "oseltamivir-mechanism-pk",
+      "question": "Which statement correctly describes oseltamivir activation after oral administration?",
+      "choices": [
+        "The ester prodrug is converted predominantly by hepatic esterases to active oseltamivir carboxylate",
+        "CYP3A4 produces the active carboxylate as the principal activation pathway",
+        "Sorbitol in the suspension is converted into the active antiviral",
+        "The administered phosphate salt remains the only active circulating species"
+      ],
+      "answer": 0,
+      "rationale": "Esterase hydrolysis produces oseltamivir carboxylate. It is not a CYP3A4 product or a sorbitol metabolite, and the administered parent salt should not be equated with the final active form.",
+      "reviewHref": "#oseltamivir-mechanism-pk"
+    }
+  ],
+  [
+    "influenza-antiviral-pharmacology-144",
+    {
+      "id": "influenza-antiviral-pharmacology-144",
+      "lesson": "baloxavir-target-dosing",
+      "question": "An eligible 16 kg child is prescribed bottle suspension at 2 mg/kg. Its concentration is 2 mg/mL. What single volume is needed?",
+      "choices": [
+        "16 mL",
+        "15 mL",
+        "32 mL",
+        "8 mL"
+      ],
+      "answer": 0,
+      "rationale": "The bottle dose is 2 mg/kg × 16 kg = 32 mg, and 32 mg ÷ 2 mg/mL = 16 mL. At this concentration, 15 mL is 30 mg, 32 mL is 64 mg and 8 mL is 16 mg. The separate 30 mg packet regimen for this weight band does not change a specifically prescribed bottle calculation.",
+      "reviewHref": "#baloxavir-target-dosing"
+    }
+  ]
+]);
+export const influenzaAntiviralPharmacologyQuestionBank = publishedBaseInfluenzaAntiviralPharmacologyQuestionBank.map((question) => sourceReviewedQuestions.get(question.id) || question);

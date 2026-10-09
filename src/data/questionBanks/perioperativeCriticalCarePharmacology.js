@@ -1,6 +1,6 @@
-export const perioperativeCriticalCarePharmacologyQuestionBank = [];
+const publishedBasePerioperativeCriticalCarePharmacologyQuestionBank = [];
 
-perioperativeCriticalCarePharmacologyQuestionBank.push(...[
+publishedBasePerioperativeCriticalCarePharmacologyQuestionBank.push(...[
   {
     "id": "periop-pediatric-reversal-1",
     "question": "A 5 kg infant undergoing surgery has reappearance of T2 after rocuronium. BRIDION has been diluted to 10 mg/mL. What volume provides the labeled 2 mg/kg dose?",
@@ -31,7 +31,7 @@ perioperativeCriticalCarePharmacologyQuestionBank.push(...[
   }
 ]);
 
-perioperativeCriticalCarePharmacologyQuestionBank.push(...[
+publishedBasePerioperativeCriticalCarePharmacologyQuestionBank.push(...[
   {
     "id": "periop-neostigmine-depth-1",
     "question": "An adult weighing 60 kg has a quantitative TOF ratio of 0.5. Under ASA guidance for minimal blockade, what is the upper neostigmine dose for this initial reversal?",
@@ -62,7 +62,7 @@ perioperativeCriticalCarePharmacologyQuestionBank.push(...[
   }
 ]);
 
-perioperativeCriticalCarePharmacologyQuestionBank.push(...[
+publishedBasePerioperativeCriticalCarePharmacologyQuestionBank.push(...[
   {
     "id": "periop-reversal-case-1",
     "question": "An adult can lift the head, but the quantitative adductor-pollicis TOF ratio is 0.72. What should determine readiness?",
@@ -177,7 +177,7 @@ perioperativeCriticalCarePharmacologyQuestionBank.push(...[
   }
 ]);
 
-perioperativeCriticalCarePharmacologyQuestionBank.push({
+publishedBasePerioperativeCriticalCarePharmacologyQuestionBank.push({
   id: "periop-pancuronium-reversal-boundary",
   question: "A patient remains paralyzed after pancuronium. A trainee proposes sugammadex because pancuronium is a steroidal neuromuscular blocker. Which response is correct?",
   choices: [
@@ -192,7 +192,7 @@ perioperativeCriticalCarePharmacologyQuestionBank.push({
   difficulty: "clinical"
 });
 
-perioperativeCriticalCarePharmacologyQuestionBank.push(...[
+publishedBasePerioperativeCriticalCarePharmacologyQuestionBank.push(...[
   {
     "id": "periop-sugammadex-contraception",
     "question": "A patient using a hormonal contraceptive implant receives sugammadex during surgery. Which discharge instruction follows BRIDION labeling?",
@@ -419,7 +419,7 @@ perioperativeCriticalCarePharmacologyQuestionBank.push(...[
 }
 ]);
 
-perioperativeCriticalCarePharmacologyQuestionBank.push(...[
+publishedBasePerioperativeCriticalCarePharmacologyQuestionBank.push(...[
   {
     "id": "periop-safety-stock",
     "question": "A ward without routine neuromuscular-blocker use keeps rocuronium beside antibiotics. What is the best system correction?",
@@ -478,7 +478,7 @@ perioperativeCriticalCarePharmacologyQuestionBank.push(...[
   }
 ]);
 
-perioperativeCriticalCarePharmacologyQuestionBank.push(...[
+publishedBasePerioperativeCriticalCarePharmacologyQuestionBank.push(...[
   {
     "id": "periop-sup-fed-risk",
     "question": "An enterally fed ICU patient still has significant coagulopathy. Does feeding alone justify stopping stress-ulcer prophylaxis?",
@@ -565,7 +565,7 @@ perioperativeCriticalCarePharmacologyQuestionBank.push(...[
   }
 ]);
 
-perioperativeCriticalCarePharmacologyQuestionBank.push(...[
+publishedBasePerioperativeCriticalCarePharmacologyQuestionBank.push(...[
   {
     "id": "periop-local-additive",
     "question": "A team plans lidocaine infiltration and a bupivacaine block in the same patient. Which safety assumption is correct?",
@@ -708,7 +708,7 @@ perioperativeCriticalCarePharmacologyQuestionBank.push(...[
   }
 ]);
 
-perioperativeCriticalCarePharmacologyQuestionBank.push(...[
+publishedBasePerioperativeCriticalCarePharmacologyQuestionBank.push(...[
   {
     "id": "periop-mh-recognition",
     "question": "During sevoflurane anesthesia, end-tidal carbon dioxide rises despite ventilation and generalized rigidity appears before marked fever. Which response is best?",
@@ -795,7 +795,7 @@ perioperativeCriticalCarePharmacologyQuestionBank.push(...[
   }
 ]);
 
-perioperativeCriticalCarePharmacologyQuestionBank.push(...[
+publishedBasePerioperativeCriticalCarePharmacologyQuestionBank.push(...[
   {
     "id": "periop-antifib-route",
     "question": "An unlabeled syringe believed to contain tranexamic acid is on an epidural tray. What action is appropriate?",
@@ -882,7 +882,7 @@ perioperativeCriticalCarePharmacologyQuestionBank.push(...[
   }
 ]);
 
-perioperativeCriticalCarePharmacologyQuestionBank.push(...[
+publishedBasePerioperativeCriticalCarePharmacologyQuestionBank.push(...[
   {
     "id": "periop-etomidate-infusion",
     "question": "Etomidate was selected for induction because blood pressure was marginal. A prolonged infusion is proposed for ongoing ICU sedation. What is the best response?",
@@ -941,7 +941,7 @@ perioperativeCriticalCarePharmacologyQuestionBank.push(...[
   }
 ]);
 
-perioperativeCriticalCarePharmacologyQuestionBank.push(...[
+publishedBasePerioperativeCriticalCarePharmacologyQuestionBank.push(...[
   {
     "id": "periop-ketamine-dilution",
     "question": "A prescribed 100 mg ketamine IV induction dose will be prepared from a 100 mg/mL vial. Which preparation follows the cited product label?",
@@ -1000,7 +1000,7 @@ perioperativeCriticalCarePharmacologyQuestionBank.push(...[
   }
 ]);
 
-perioperativeCriticalCarePharmacologyQuestionBank.push(...[
+publishedBasePerioperativeCriticalCarePharmacologyQuestionBank.push(...[
   {
     "id": "periop-propofol-reserve",
     "question": "A frail, hypovolemic older adult needs induction. Which approach best addresses propofol risk?",
@@ -1059,7 +1059,7 @@ perioperativeCriticalCarePharmacologyQuestionBank.push(...[
   }
 ]);
 
-perioperativeCriticalCarePharmacologyQuestionBank.push({
+publishedBasePerioperativeCriticalCarePharmacologyQuestionBank.push({
   "id": "periop-sup-sepsis",
   "question": "An adult with septic shock and coagulopathy is being assessed for stress-ulcer prevention. Which statement accurately describes the 2026 Surviving Sepsis Campaign recommendation?",
   "choices": [
@@ -1074,7 +1074,7 @@ perioperativeCriticalCarePharmacologyQuestionBank.push({
   "difficulty": "advanced"
 });
 
-perioperativeCriticalCarePharmacologyQuestionBank.push(...[
+publishedBasePerioperativeCriticalCarePharmacologyQuestionBank.push(...[
   {
     "id": "periop-nmba-proning",
     "question": "An adult with ARDS is proned and is meeting ventilation targets on sedation. A continuous paralytic infusion is proposed solely because of the prone position. What is the best assessment?",
@@ -1105,7 +1105,7 @@ perioperativeCriticalCarePharmacologyQuestionBank.push(...[
   }
 ]);
 
-perioperativeCriticalCarePharmacologyQuestionBank.push({
+publishedBasePerioperativeCriticalCarePharmacologyQuestionBank.push({
   "id": "periop-rocuronium-rsi-scope",
   "question": "A teaching slide states that rocuronium\u2019s general intubation indication establishes labeled rapid-sequence use for every age and for cesarean delivery. What correction is needed?",
   "choices": [
@@ -1120,7 +1120,7 @@ perioperativeCriticalCarePharmacologyQuestionBank.push({
   "difficulty": "advanced"
 });
 
-perioperativeCriticalCarePharmacologyQuestionBank.push(...[
+publishedBasePerioperativeCriticalCarePharmacologyQuestionBank.push(...[
   {
     "id": "periop-txa-trauma-timing",
     "question": "An adult arrives 90 minutes after injury with major bleeding. Under the 2023 European trauma guideline, should TXA wait for viscoelastic confirmation of hyperfibrinolysis?",
@@ -1151,7 +1151,7 @@ perioperativeCriticalCarePharmacologyQuestionBank.push(...[
   }
 ]);
 
-perioperativeCriticalCarePharmacologyQuestionBank.push(...[
+publishedBasePerioperativeCriticalCarePharmacologyQuestionBank.push(...[
   {
     "id": "periop-pph-early-recognition",
     "question": "After vaginal birth, objectively measured blood loss is 350 mL and pulse is 112/min. Which interpretation fits WHO 2025 first-response criteria?",
@@ -1181,3 +1181,25 @@ perioperativeCriticalCarePharmacologyQuestionBank.push(...[
     "difficulty": "application"
   }
 ]);
+
+
+const sourceReviewedQuestions = new Map([
+  [
+    "periop-antifib-dilution",
+    {
+      "id": "periop-antifib-dilution",
+      "question": "A 250 mg/mL aminocaproic-acid vial is supplied for a prescribed 5-g initial dose. Which preparation statement is correct?",
+      "choices": [
+        "Withdraw 20 mL and prepare the prescribed diluted infusion over the first hour",
+        "Inject 20 mL undiluted rapidly",
+        "Withdraw 2 mL for a 5-g dose",
+        "Replace the initial infusion with an intrathecal injection"
+      ],
+      "answer": 0,
+      "rationale": "5 g is 5000 mg; dividing by 250 mg/mL gives 20 mL of stock. The label requires dilution and discourages rapid undiluted IV injection. Two mL supplies only 500 mg, one tenth of 5 g. Rapid undiluted injection can cause hypotension, bradycardia or arrhythmia. Intrathecal injection is not this product’s labeled IV infusion route.",
+      "reviewHref": "#antifibrinolytic-hemostasis",
+      "difficulty": "clinical"
+    }
+  ]
+]);
+export const perioperativeCriticalCarePharmacologyQuestionBank = publishedBasePerioperativeCriticalCarePharmacologyQuestionBank.map((question) => sourceReviewedQuestions.get(question.id) || question);

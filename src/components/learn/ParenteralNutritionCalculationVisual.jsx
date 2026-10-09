@@ -1,4 +1,22 @@
 const diagrams = {
+  "pn-calc-energy": {
+    eyebrow: "Basal to total energy",
+    title: "Name the endpoint before applying factors.",
+    steps: [["WHA", "Inputs", "kg, cm and years; stated equation"], ["BEE", "Basal", "Supplied BEE: 1,600 kcal/day"], ["x", "Factors", "Activity 1.2; stress 1.4"], ["TEE", "Total", "1,600 x 1.2 x 1.4 = 2,688 kcal/day"]],
+    formula: "TEE = BEE x activity factor x stress factor",
+  },
+  "pn-calc-nitrogen": {
+    eyebrow: "Nitrogen and nonprotein calories",
+    title: "Keep protein, nitrogen and NPC separate.",
+    steps: [["AA", "Protein", "700 mL of 10% w/v = 70 g/day"], ["N", "Nitrogen", "70 / 6.25 = 11.2 g/day"], ["NPC", "Calories", "680 dextrose + 440 lipid = 1,120 kcal/day"], [":", "Ratio", "1,120 / 11.2 = 100:1"]],
+    formula: "NPC:N = daily nonprotein kcal / daily nitrogen g",
+  },
+  "pn-calc-fluid": {
+    eyebrow: "Daily fluid calculation",
+    title: "Estimate the total, then count other fluids.",
+    steps: [["kg", "Weight", "52 kg; scope is above 20 kg"], ["Σ", "Daily estimate", "1,500 + 20(52 - 20) = 2,140 mL/day"], ["−", "Other fluids", "Medicines supply 290 mL/day"], ["PN", "Remaining", "2,140 - 290 = 1,850 mL/day"]],
+    formula: "Above 20 kg: daily mL = 1,500 + 20 × (weight in kg - 20)",
+  },
   "pn-calc-foundations": {
     eyebrow: "Calculation foundation",
     title: "Patient data becomes a defensible estimate.",
@@ -21,7 +39,7 @@ const diagrams = {
     eyebrow: "Lipid ledger",
     title: "Dose, volume, energy, tolerance.",
     steps: [["1", "Dose", "kg × ordered g/kg"], ["2", "Volume", "grams ÷ product g/mL"], ["3", "Energy", "mL × labeled kcal/mL"], ["4", "Audit", "add propofol and other lipid"]],
-    formula: "20% lipid = 0.2 g/mL",
+    formula: "Stated 20% w/v lipid = 0.2 g/mL",
   },
   "pn-calc-stock": {
     eyebrow: "Compounding translation",
@@ -32,7 +50,7 @@ const diagrams = {
   "pn-calc-audit": {
     eyebrow: "Independent verification",
     title: "Rebuild the order before release.",
-    steps: [["A", "Daily totals", "grams, calories, electrolytes"], ["B", "Container", "source volumes and final volume"], ["C", "Pump", "hours, taper, mL/hour, GIR"], ["D", "Patient", "plausibility and monitoring"]],
+    steps: [["A", "Daily totals", "grams, calories, electrolytes"], ["B", "Container", "source volumes and final volume"], ["C", "Pump", "stated hours, mL/hour, GIR"], ["D", "Patient", "plausibility and monitoring"]],
     formula: "Constant rate = total mL ÷ infusion hours",
   },
 };

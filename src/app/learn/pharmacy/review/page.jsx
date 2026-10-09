@@ -2,11 +2,10 @@ import Link from "next/link";
 import Footer from "@/components/Footer";
 import PharmacyAssessment from "@/components/learn/PharmacyAssessment";
 import { pharmacyCumulativeReview } from "@/data/pharmacyCumulativeReview";
-import { pharmacyModules, pharmacySubmoduleCount } from "@/data/pharmacyModules";
 
 export const metadata = {
   title: "Knowledge Review: Pharmacy | NaS",
-  description: "A cumulative pharmacy review combining foundational questions with patient cases across the complete NaS Learn sequence.",
+  description: "A 30-question pharmacy review connecting mechanisms, monitoring, counseling, calculations, and clinical cases.",
   alternates: { canonical: "/learn/pharmacy/review" },
     openGraph: { url: "/learn/pharmacy/review", siteName: "NaS Research", type: "website", images: [{ url: "/nas-logo-share-v1.png", width: 1200, height: 630, alt: "NaS Research" }] },
 };
@@ -19,12 +18,12 @@ export default function PharmacyReviewPage() {
           <Link href="/learn/library" className="learning-back">← Learning library</Link>
           <p className="nas-kicker">Cumulative review</p>
           <h1>Bring the systems together.</h1>
-          <p>This review moves between mechanisms, monitoring, patient counseling, calculations, and clinical cases across all {pharmacyModules.length} modules and {pharmacySubmoduleCount} lessons. New modules join the review automatically.</p>
+          <p>Connect mechanisms, monitoring, patient counseling, calculations, and clinical cases. Each attempt draws 10 questions from a 30-question review bank. Module practice remains available within each topic.</p>
           <div><span>{pharmacyCumulativeReview.length} questions in rotation</span><span>10 per attempt</span><span>Reasoning shown after submission</span></div>
         </div>
       </header>
       <div data-page-main className="nas-shell pharmacy-review-main">
-        <PharmacyAssessment questions={pharmacyCumulativeReview} questionCount={10} randomize moduleId="pharmacy-cumulative-review" />
+        <PharmacyAssessment questions={pharmacyCumulativeReview} questionCount={10} randomize moduleId="pharmacy-cumulative-review" bankLabel="the combined review bank" />
         <aside className="lesson-disclaimer"><strong>Educational use only</strong><p>This review supports learning and does not replace current prescribing information, institutional policy, clinical guidelines, or professional judgment.</p></aside>
       </div>
       <Footer />

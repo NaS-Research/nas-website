@@ -310,7 +310,7 @@ const dimensions = [
 
 const offsets = [6, 12, 18];
 
-export const noninsulinDiabetesPharmacotherapyQuestionBank = concepts.flatMap((concept, conceptIndex) =>
+const publishedBaseNoninsulinDiabetesPharmacotherapyQuestionBank = concepts.flatMap((concept, conceptIndex) =>
   dimensions.map((dimension, dimensionIndex) => {
     const correct = concept[dimension.correct];
     const distractors = offsets.map((offset) => concepts[(conceptIndex + offset) % concepts.length][dimension.correct]);
@@ -325,3 +325,42 @@ export const noninsulinDiabetesPharmacotherapyQuestionBank = concepts.flatMap((c
     };
   }),
 );
+
+
+const sourceReviewedQuestions = new Map([
+  [
+    "noninsulin-diabetes-08-safety",
+    {
+      "id": "noninsulin-diabetes-08-safety",
+      "question": "Canagliflozin is being considered for an adult with prior amputation, peripheral vascular disease and neuropathy. Which interpretation is best?",
+      "choices": [
+        "Assess the product’s benefits and amputation risk, establish preventive foot care and monitor for new pain, infection or ulcers.",
+        "An acceptable A1C removes the need to review amputation risk.",
+        "Canagliflozin’s CANVAS findings establish an identical risk estimate for every SGLT2 inhibitor.",
+        "A foot examination is unnecessary until another amputation has occurred."
+      ],
+      "answer": 0,
+      "rationale": "Prior amputation, peripheral vascular disease and neuropathy identify greater amputation risk in canagliflozin labeling. A1C does not erase that risk, one product’s trial result does not prove identical estimates for all products, and preventive assessment should not wait for another amputation.",
+      "reviewHref": "#sglt2-inhibitor-pharmacotherapy",
+      "difficulty": "advanced"
+    }
+  ],
+  [
+    "noninsulin-diabetes-23-application",
+    {
+      "id": "noninsulin-diabetes-23-application",
+      "question": "A nonpregnant adult with type 2 diabetes, hypertension and albuminuric CKD has an indication for kidney-protective glucose therapy. Which comprehensive approach is appropriate?",
+      "choices": [
+        "Layer eligible outcome therapy with blood-pressure care and an ACE inhibitor or ARB, monitoring kidney function, potassium, volume and albuminuria.",
+        "Replace indicated blood-pressure treatment with glucose therapy alone.",
+        "Combine an ACE inhibitor and an ARB to obtain routine additional kidney protection.",
+        "Add potassium-affecting therapy without checking kidney function or potassium."
+      ],
+      "answer": 0,
+      "rationale": "For hypertension with albuminuria, ADA recommends an ACE inhibitor or ARB and appropriate monitoring alongside eligible outcome therapy. Combining ACE inhibitor and ARB is discouraged. Kidney function, potassium and volume checks remain necessary; glucose therapy does not replace blood-pressure care.",
+      "reviewHref": "#cardiorenal-weight-integration",
+      "difficulty": "application"
+    }
+  ]
+]);
+export const noninsulinDiabetesPharmacotherapyQuestionBank = publishedBaseNoninsulinDiabetesPharmacotherapyQuestionBank.map((question) => sourceReviewedQuestions.get(question.id) || question);

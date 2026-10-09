@@ -88,8 +88,29 @@ const integratedCases = [
   ["A child with cholestasis receives the same fixed trace-element mix for months.", "Review copper and manganese accumulation risk while preventing deficiency with individualized dosing", "Biliary impairment changes trace-element handling, but blanket omission can also cause harm.", "pediatric-minerals-micros"],
 ].map(([caseText,correct,rationale,lesson], index) => q(`10${index}`, `${caseText} What is the most defensible next action?`, [correct, "Continue unchanged without reassessment", "Apply an adult default without calculation", "Wait until discharge to review the order"], 0, rationale, lesson));
 
-export const pediatricParenteralNutritionQuestionBank = [...core, ...fluidCases, ...girToGramsCases, ...gramsToGirCases, ...proteinCases, ...lipidCases, ...integratedCases];
+const publishedBasePediatricParenteralNutritionQuestionBank = [...core, ...fluidCases, ...girToGramsCases, ...gramsToGirCases, ...proteinCases, ...lipidCases, ...integratedCases];
 
-if (pediatricParenteralNutritionQuestionBank.length !== 100) {
-  throw new Error(`Pediatric parenteral nutrition question bank must contain 100 questions, found ${pediatricParenteralNutritionQuestionBank.length}.`);
+if (publishedBasePediatricParenteralNutritionQuestionBank.length !== 100) {
+  throw new Error(`Pediatric parenteral nutrition question bank must contain 100 questions, found ${publishedBasePediatricParenteralNutritionQuestionBank.length}.`);
 }
+
+
+const sourceReviewedQuestions = new Map([
+  [
+    "pedpn-060",
+    {
+      "id": "pedpn-060",
+      "question": "A 1 kg patient is prescribed a GIR of 6 mg/kg/min over 24 hours. How many grams of dextrose are delivered daily? Round to the nearest hundredth of a gram when needed.",
+      "choices": [
+        "8.64 g",
+        "17.28 g",
+        "13.64 g",
+        "4.32 g"
+      ],
+      "answer": 0,
+      "rationale": "6 times 1 times 1,440 divided by 1,000 equals 8.64 g/day after rounding to the nearest hundredth when needed.",
+      "reviewHref": "#pediatric-fluid-glucose"
+    }
+  ]
+]);
+export const pediatricParenteralNutritionQuestionBank = publishedBasePediatricParenteralNutritionQuestionBank.map((question) => sourceReviewedQuestions.get(question.id) || question);

@@ -11,41 +11,41 @@ const q = (id, question, choices, answer, rationale, lesson, extra = {}) => ({
 const core = [
   q("001", "Which finding most strongly supports parenteral nutrition?", ["Severe malnutrition with complete intestinal obstruction and no usable enteral route", "A central line without a nutrition deficit", "One missed meal", "Adequate oral intake"], 0, "PN is justified when a meaningful nutrition need cannot be met through the gastrointestinal tract.", "pn-decision"),
   q("002", "Which principle should be evaluated before starting parenteral nutrition?", ["Whether oral or enteral delivery can safely meet the need", "Whether the patient prefers a particular bag color", "Whether a central line is convenient", "Whether albumin is below one fixed threshold"], 0, "The least invasive effective route remains preferred when the gut is usable.", "pn-decision"),
-  q("003", "Which condition is a common indication for parenteral nutrition?", ["Short bowel syndrome with inadequate absorption", "Stable constipation with adequate intake", "Controlled hypertension", "Uncomplicated seasonal allergies"], 0, "Severe malabsorption after extensive intestinal loss can make intravenous nutrition necessary.", "pn-decision"),
-  q("004", "A well-nourished stable adult is expected to resume adequate enteral intake tomorrow. What is the best approach?", ["Continue assessment rather than automatically starting PN for a brief interruption", "Start indefinite central PN", "Place a tunneled catheter immediately", "Provide full energy despite uncontrolled metabolic abnormalities"], 0, "A brief interruption in a stable, well-nourished adult usually does not justify immediate PN.", "pn-decision"),
-  q("005", "How does severe malnutrition affect PN timing when the gut cannot be used?", ["It can support earlier initiation after safety issues are addressed", "It always requires a fourteen-day delay", "It removes refeeding risk", "It guarantees tolerance of full energy"], 0, "Higher nutrition risk can justify earlier support, but initiation still must account for refeeding and instability.", "pn-decision"),
-  q("006", "Which finding should delay aggressive PN advancement?", ["Uncontrolled shock with severe electrolyte abnormalities", "A stable catheter and corrected electrolytes", "A documented nutrition goal", "Reliable monitoring capacity"], 0, "Hemodynamic and metabolic instability increases risk from immediate full-dose delivery.", "pn-decision"),
-  q("007", "What makes a high-output fistula a possible PN indication?", ["Inability to use distal bowel while losses prevent adequate enteral absorption", "The presence of any skin opening", "A normal oral diet", "A low heart rate alone"], 0, "Route anatomy and losses can prevent adequate gastrointestinal delivery.", "pn-decision"),
-  q("008", "Which statement best describes the role of goals of care in PN?", ["Benefits, burdens, patient preferences, and stopping criteria should be discussed", "PN must continue whenever vascular access exists", "Goals matter only after discharge", "PN has no treatment burden"], 0, "PN is a medical treatment whose value depends on the patient's goals and clinical context.", "pn-decision"),
+  q("003", "Which condition is a common indication for parenteral nutrition?", ["Short bowel syndrome with inadequate absorption", "Short bowel syndrome with stable weight and adequate oral absorption", "Severe pancreatitis with adequate, tolerated enteral delivery", "A high-output fistula whose usable distal bowel meets nutrition needs"], 0, "Short bowel syndrome can require PN when remaining bowel cannot absorb enough nutrition. The diagnosis alone is insufficient: adequate oral absorption, tolerated EN or usable distal feeding can allow gastrointestinal support.", "pn-decision"),
+  q("004", "A well-nourished stable adult has had a one-day interruption in adequate intake and is expected to resume adequate enteral intake tomorrow. What is the best approach?", ["Continue assessment rather than automatically starting PN for a brief interruption", "Start indefinite central PN", "Place a tunneled catheter immediately", "Provide full energy despite uncontrolled metabolic abnormalities"], 0, "A brief interruption in a stable, well-nourished adult usually does not justify immediate PN.", "pn-decision"),
+  q("005", "How does severe malnutrition affect PN timing when the gut cannot be used?", ["It can support earlier initiation after safety issues are addressed", "It always requires a fourteen-day delay", "It removes refeeding risk", "It guarantees tolerance of full energy"], 0, "Baseline moderate or severe malnutrition with insufficient or impossible oral/enteral nutrition supports PN as soon as feasible. Severe metabolic instability and refeeding risk still require stabilization and a cautious calorie plan.", "pn-decision"),
+  q("006", "Which finding should delay aggressive PN advancement?", ["Uncontrolled shock with severe electrolyte abnormalities", "A stable catheter and corrected electrolytes", "A documented nutrition goal", "Reliable monitoring capacity"], 0, "Severe metabolic instability warrants delaying PN until the condition improves. Severely low phosphate, potassium or magnesium should be corrected before calorie initiation or advancement; a nutrition goal or patent line does not establish metabolic readiness.", "pn-decision"),
+  q("007", "What makes a high-output fistula a possible PN indication?", ["Inability to use distal bowel while losses prevent adequate enteral absorption", "A fistula with distal feeding that reliably meets nutrition needs", "A healed fistula with adequate oral intake and stable hydration", "A low-output fistula without a nutrition deficit or intolerance"], 0, "A high-output fistula can bypass absorptive bowel, prevent enteral access or cause losses that preclude adequate gastrointestinal support. The presence of a fistula alone is not enough when usable distal feeding or oral intake meets the need.", "pn-decision"),
+  q("008", "Which statement best describes the role of goals of care in PN?", ["Benefits, burdens, patient preferences, and stopping criteria should be discussed", "Discussion can be deferred until the planned PN course has finished", "A patent catheter is sufficient reason to continue despite changing goals", "A time-limited trial should start without agreeing how its benefit will be assessed"], 0, "PN is a medical treatment requiring discussion of benefits, burdens and patient preferences. When benefit is uncertain, a time-limited trial may be considered with goals and reassessment criteria agreed before starting. Access alone does not justify continuation.", "pn-decision"),
 
   q("009", "What is the main limitation of peripheral parenteral nutrition?", ["Vein tolerance limits concentration and can require a large fluid volume", "It can only contain water", "It never causes infiltration", "It is always suitable for long-term full nutrition"], 0, "Peripheral veins tolerate less osmolar load than central circulation.", "venous-access"),
   q("010", "Which patient is most likely to require central PN?", ["A fluid-restricted patient needing concentrated full nutrition for several weeks", "A patient needing one day of low-osmolar supplemental support", "A patient meeting needs orally", "A patient refusing all vascular access"], 0, "Concentrated and longer-duration therapy commonly requires central access.", "venous-access"),
-  q("011", "Why is a dedicated PN lumen preferred when feasible?", ["It reduces manipulations, incompatibility exposure, and contamination opportunities", "It eliminates hand hygiene", "It makes every medication compatible", "It prevents all thrombosis"], 0, "Fewer access events and less coadministration improve line safety.", "venous-access"),
-  q("012", "Which finding is most concerning for a catheter complication?", ["New arm swelling and resistance during infusion through a PICC", "An intact dressing without symptoms", "A normal infusion pump display", "Stable external catheter length"], 0, "Swelling and resistance can signal thrombosis, malposition, or mechanical failure.", "venous-access"),
-  q("013", "What should be considered before placing a PICC in advanced chronic kidney disease?", ["Preservation of veins for possible future dialysis access", "The patient's preferred tape color", "Automatic placement in the dominant arm", "Avoiding all central access forever"], 0, "Future dialysis access can be compromised by thrombosis or stenosis related to upper-extremity devices.", "venous-access"),
+  q("011", "Why is a dedicated PN lumen preferred when feasible?", ["It reduces manipulations, incompatibility exposure, and contamination opportunities", "It eliminates hand hygiene", "It makes every medication compatible", "It prevents all thrombosis"], 0, "A dedicated lumen can reduce unnecessary access and incompatible coadministration. Its infection-prevention benefit is not established by CDC; aseptic technique and the full catheter-care bundle remain necessary.", "venous-access"),
+  q("012", "Which finding is most concerning for a catheter complication?", ["New arm swelling and resistance during infusion through a PICC", "An intact dressing without symptoms", "A normal infusion pump display", "Stable external catheter length"], 0, "New swelling with altered catheter function warrants prompt clinical assessment, including the site and device position as indicated. These findings do not establish one specific cause. ASPEN includes upper-extremity edema in catheter surveillance; an intact dressing, a normal pump display or stable external length alone does not exclude a complication.", "venous-access"),
+  q("013", "What should be considered before placing a PICC in advanced chronic kidney disease?", ["Preservation of veins for possible future dialysis access", "Automatic substitution of an arm midline because it always preserves dialysis veins", "Selection from kidney-disease stage alone without considering urgency or likely dialysis needs", "Automatic PICC placement whenever concentrated PN is indicated"], 0, "Preserve peripheral and central veins for possible future hemodialysis access. The MAGIC panel rated arm PICCs and midlines inappropriate in stage 3b or greater CKD, while emphasizing individualized alternatives, urgency and the likelihood of dialysis. Nephrology consultation helps when kidney-disease severity is uncertain; a PN indication does not automatically select a PICC.", "venous-access"),
   q("014", "Which practice reduces catheter-related infection risk?", ["Aseptic hub access and minimizing unnecessary line manipulation", "Routine systemic antibiotics for every patient", "Opening the line for frequent sampling", "Using extra lumens without a clinical need"], 0, "Hub disinfection, hand hygiene, and fewer access events reduce contamination opportunities.", "venous-access"),
-  q("015", "What is the best response to fever and rigors that begin during PN infusion?", ["Stop and assess promptly for catheter-related infection and other causes", "Increase the infusion rate", "Ignore the timing", "Add an unverified antibiotic to the bag"], 0, "Temporal association with line infusion raises concern for a bloodstream infection and requires urgent evaluation.", "venous-access"),
+  q("015", "What is the best response to fever and rigors that begin during PN infusion?", ["Stop and assess promptly for catheter-related infection and other causes", "Continue the infusion until routine laboratory follow-up if the dressing is intact", "Assume catheter infection is proven and remove the line without evaluating other causes", "Restart the same infusion immediately after the fever subsides without investigation"], 0, "Fever and rigors during infusion warrant prompt assessment, including appropriate blood cultures when catheter infection is suspected. Timing raises concern but does not prove infection; assess other causes, including an infusion reaction. An intact dressing or transient improvement does not exclude bloodstream infection, and fever alone does not mandate catheter removal.", "venous-access"),
   q("016", "Which statement about catheter anticoagulation is most accurate?", ["Routine anticoagulation is not recommended solely to prevent catheter infection", "Every PN bag should contain heparin", "Anticoagulation eliminates biofilm", "Heparin is compatible with every formulation"], 0, "CDC guidance does not support routine anticoagulant therapy solely for infection prevention.", "venous-access"),
 
   q("017", "How many kilocalories are provided by one gram of dextrose in PN?", ["3.4 kcal", "4 kcal", "7 kcal", "9 kcal"], 0, "Intravenous dextrose provides 3.4 kcal per gram.", "macronutrient-design"),
   q("018", "How many kilocalories are conventionally assigned to one gram of amino acids?", ["4 kcal", "3.4 kcal", "7 kcal", "9 kcal"], 0, "Amino acids are assigned 4 kcal per gram, though their primary role is protein provision.", "macronutrient-design"),
   q("019", "Why is glucose infusion rate clinically useful?", ["It expresses dextrose delivery relative to weight and time", "It measures catheter length", "It replaces glucose monitoring", "It determines trace-element compatibility"], 0, "GIR makes carbohydrate exposure comparable across weights and infusion durations.", "macronutrient-design"),
-  q("020", "Which finding can reflect excessive carbohydrate delivery?", ["Hyperglycemia with increased carbon dioxide production", "Isolated improved wound healing", "A lower catheter infection rate", "Reduced infusion volume without other changes"], 0, "Dextrose overfeeding can worsen glycemia, lipogenesis, hepatic fat, and carbon dioxide production.", "macronutrient-design"),
+  q("020", "Which finding can reflect excessive carbohydrate delivery?", ["Hyperglycemia with increased carbon dioxide production", "Stable glucose with improved wound healing alone", "Lower catheter infection risk with unchanged metabolic findings", "A lower infusion volume with unchanged carbohydrate dose and rate"], 0, "Excess energy from carbohydrate can worsen glycemic control and increase lipogenesis and carbon dioxide production. This pattern warrants review of total energy and rate; it does not prove overfeeding or exclude other causes. Improved healing, fewer catheter infections or a smaller volume alone do not establish excessive carbohydrate exposure.", "macronutrient-design"),
   q("021", "Why must propofol be included in the energy assessment?", ["Its lipid vehicle provides clinically meaningful calories", "It contains intravenous protein", "It supplies all vitamins", "It has no nutritional contribution"], 0, "Propofol contributes about 1.1 kcal per mL from lipid and can materially change energy and fat delivery.", "macronutrient-design"),
   q("022", "Which statement about adult lipid injectable emulsions is most accurate?", ["Dose, composition, allergy information, rate, and compatibility are product specific", "All products are interchangeable at any rate", "Lipid never affects triglycerides", "Lipid can be omitted indefinitely without consequence"], 0, "ILE products differ and must be prescribed using current labeling and patient factors.", "macronutrient-design"),
   q("023", "What triglyceride threshold does ASPEN adult guidance use to consider holding or limiting ILE?", ["Greater than 400 mg per dL", "Greater than 40 mg per dL", "Greater than 100 mg per dL", "Greater than 10 mg per dL"], 0, "ASPEN adult ILE guidance advises holding or limiting lipid when triglycerides exceed 400 mg per dL.", "macronutrient-design"),
   q("024", "Why should prolonged lipid omission be avoided?", ["It can produce essential fatty acid deficiency", "It always lowers glucose to zero", "It causes immediate catheter fracture", "It eliminates amino acid delivery"], 0, "Lipid supplies essential fatty acids in addition to energy.", "macronutrient-design"),
-  q("025", "Which approach to protein in renal dysfunction is most defensible?", ["Individualize for illness, losses, renal replacement therapy, and goals rather than automatically restricting", "Eliminate amino acids in every patient", "Use the same dose regardless of dialysis", "Base the dose only on serum albumin"], 0, "Protein needs depend on the complete clinical context, including catabolism and renal replacement losses.", "macronutrient-design"),
+  q("025", "Which approach to protein in renal dysfunction is most defensible?", ["Individualize for illness, losses, renal replacement therapy, and goals rather than automatically restricting", "Restrict protein in every acutely ill patient solely to delay dialysis", "Keep the same protein target when renal replacement losses and illness change", "Adjust the protein dose using serum albumin alone"], 0, "Renal dysfunction does not select one protein dose. Assess illness, losses, renal support and goals, then reassess actual delivery. The ASPEN/SCCM critical-care guideline discourages restriction solely to delay dialysis and recognizes amino acid losses with renal replacement therapy. Albumin alone cannot establish protein adequacy; this is not a universal high-protein prescription for every patient with chronic kidney disease.", "macronutrient-design"),
 
-  q("026", "Why is acetate used in PN?", ["It can provide base equivalents after metabolism and help balance chloride delivery", "It directly replaces phosphate", "It sterilizes the admixture", "It is identical to bicarbonate in compatibility"], 0, "Acetate can help adjust the acid-base contribution without adding incompatible bicarbonate.", "micronutrient-balance"),
-  q("027", "Which statement about PN electrolyte ranges is most accurate?", ["Published ranges are starting references that require patient-specific adjustment", "They are mandatory fixed doses", "Kidney function does not matter", "Gastrointestinal losses do not matter"], 0, "Electrolyte needs vary with losses, organ function, medicines, and laboratory trends.", "micronutrient-balance"),
+  q("026", "Why is acetate used in PN?", ["It can provide base equivalents after metabolism and help balance chloride delivery", "It directly replaces phosphate", "It sterilizes the admixture", "It is identical to bicarbonate in compatibility"], 0, "The book describes sodium acetate being converted to sodium bicarbonate and helping correct acidosis. Choosing the acetate salt also changes how much chloride is supplied.", "micronutrient-balance"),
+  q("027", "Which statement about PN electrolyte ranges is most accurate?", ["Published ranges are starting references that require patient-specific adjustment", "A dose within a published range should remain unchanged despite new laboratory abnormalities", "A standard range replaces assessment of kidney function and urine output", "PN electrolytes can be selected without accounting for gastrointestinal losses or separate replacement"], 0, "The book requires individualization, including adjustment for renal disease. ASPEN also calls for review of biochemical data, medicines, fluid balance and gastrointestinal output. A published range cannot override those findings, other electrolyte sources or formulation compatibility limits.", "micronutrient-balance"),
   q("028", "What makes calcium-phosphate precipitation difficult to predict?", ["Multiple formulation and process variables interact", "Only serum phosphate matters", "Only the bag volume matters", "The risk is always visible before infusion"], 0, "Salts, products, concentrations, pH, temperature, sequence, and time all influence solubility.", "micronutrient-balance"),
   q("029", "Which calcium salt is generally preferred in PN because of lower dissociation and precipitation risk?", ["Calcium gluconate", "Calcium chloride", "Calcium carbonate tablets", "Calcium hydroxide"], 0, "Calcium gluconate is usually preferred in PN compatibility design.", "micronutrient-balance"),
-  q("030", "Why may zinc requirements rise in a patient with a high-output ostomy?", ["Large gastrointestinal losses can increase zinc loss", "Zinc prevents every catheter infection", "Zinc replaces all sodium", "The ostomy blocks renal zinc clearance"], 0, "High gastrointestinal output can cause substantial zinc loss.", "micronutrient-balance"),
-  q("031", "Why can manganese be reduced or omitted in cholestasis?", ["Biliary excretion is impaired and accumulation can cause neurotoxicity", "It causes immediate hypoglycemia", "It is the main source of PN protein", "It cannot enter the bloodstream"], 0, "Manganese is largely eliminated through bile and can accumulate in cholestasis.", "micronutrient-balance"),
-  q("032", "Which micronutrient deserves additional attention when initiating nutrition in a patient at high refeeding risk?", ["Thiamine", "Fluoride only", "Vitamin K only", "Manganese only"], 0, "Thiamine demand rises with carbohydrate metabolism and deficiency can cause severe complications.", "micronutrient-balance"),
-  q("033", "How should a current multivitamin shortage be managed?", ["Use current ASPEN and ASHP shortage guidance with a documented substitution and monitoring plan", "Apply a permanent three-times-weekly rule to every future patient", "Omit all vitamins without assessment", "Double every trace element"], 0, "Shortage strategies are time sensitive and should not become permanent standards.", "micronutrient-balance"),
-  q("034", "Why is routine iron addition to a total nutrient admixture avoided?", ["Iron can destabilize the emulsion and has compatibility and safety concerns", "Iron has no clinical use", "Iron provides too much protein", "Iron always causes hypocalcemia"], 0, "Strongly charged iron can disrupt lipid stability, so deficiency is usually treated separately.", "micronutrient-balance"),
+  q("030", "Why may zinc requirements rise in a patient with a high-output ostomy?", ["Large gastrointestinal losses can increase zinc loss", "Zinc should replace sodium and fluid replacement for the lost output", "Every trace element must be increased by the same proportion as zinc", "A fixed multitrace dose always covers zinc needs regardless of output"], 0, "ASPEN describes increased zinc needs with diarrhea, intestinal drainage and enterocutaneous fistula losses. High ostomy output warrants an individualized zinc assessment along with fluid and electrolyte replacement. Additional zinc does not replace sodium or fluid, require an identical increase in every element, or make a fixed multitrace dose sufficient for all loss states.", "micronutrient-balance"),
+  q("031", "Why can manganese be reduced or omitted in cholestasis?", ["Biliary excretion is impaired and accumulation can cause neurotoxicity", "Cholestasis requires an automatic increase in manganese to match every other nutrient", "A normal whole-blood manganese result always excludes neurologic toxicity", "The same fixed multitrace combination is suitable when a lower manganese dose is needed"], 0, "Cholestasis increases the risk of manganese accumulation and neurotoxicity. The FDA Tralement label calls for neurologic surveillance, whole-blood manganese and liver monitoring, and consideration of individual trace products when the fixed combination is unsuitable. Toxicity has also been reported with normal blood manganese; a concentration alone does not replace clinical assessment.", "micronutrient-balance"),
+  q("032", "Which micronutrient deserves additional attention when initiating nutrition in a patient at high refeeding risk?", ["Thiamine", "Fluoride only", "Vitamin K only", "Manganese only"], 0, "Thiamine supports carbohydrate metabolism, and renewed calorie delivery can expose deficiency. ASPEN recommends preventive thiamine before feeding or dextrose-containing IV fluids in adults at refeeding risk; vitamin K, manganese or fluoride alone cannot replace it.", "micronutrient-balance"),
+  q("033", "How should a current multivitamin shortage be managed?", ["Use current product-specific ASPEN guidance with a documented substitution and monitoring plan", "Continue reduced-frequency multivitamins routinely after adequate supply returns", "Substitute an oral multivitamin without evaluating absorption or its vitamin profile", "Use a pediatric multivitamin as an automatically equivalent adult replacement"], 0, "ASPEN shortage measures are temporary and should be reversed when adequate supply returns. Oral or enteral substitution requires clinical suitability and a complete vitamin profile; severe malabsorption can make it unsuitable. Pediatric vitamin doses and ratios are not automatically appropriate for adults. Routine daily, patient-appropriate vitamin provision remains the standard outside a shortage.", "micronutrient-balance"),
+  q("034", "Why is routine iron addition to a total nutrient admixture avoided?", ["Iron can destabilize the emulsion and has compatibility and safety concerns", "Iron has no clinical use", "Iron provides too much protein", "Iron always causes hypocalcemia"], 0, "Trivalent iron can weaken the electrostatic barrier that keeps lipid droplets apart. Iron products also have formulation-specific compatibility and safety concerns; assess deficiency and replacement separately rather than routinely adding iron to a TNA.", "micronutrient-balance"),
 
   q("035", "What distinguishes a total nutrient admixture from a two-in-one PN formulation?", ["A total nutrient admixture includes lipid in the same container", "A two-in-one contains no amino acids", "A total nutrient admixture contains no dextrose", "A two-in-one is always peripheral"], 0, "TNA combines dextrose, amino acids, and lipid in one container.", "compounding-safety"),
   q("036", "Which visual finding requires a PN admixture to be quarantined?", ["Visible precipitate or free oil", "A complete label", "An intact seal", "A uniform appearance within validated specifications"], 0, "Particles, precipitate, or emulsion cracking can be dangerous and require investigation.", "compounding-safety"),
@@ -53,17 +53,17 @@ const core = [
   q("038", "Which filter should be used for current administration of a total nutrient admixture?", ["A 1.2 micron in-line filter", "A 0.22 micron filter", "No filter", "A 10 micron filter"], 0, "ASPEN recommends a 1.2 micron filter for TNA and all other PN formulations.", "compounding-safety"),
   q("039", "Which old practice was replaced by ASPEN's current filtration recommendation?", ["Using a 0.22 micron filter for lipid-free PN", "Using aseptic technique", "Inspecting the final bag", "Verifying the order"], 0, "Current guidance simplifies filtration to a 1.2 micron filter for all PN formulations.", "compounding-safety"),
   q("040", "Why should medication coadministration with PN generally be avoided?", ["It adds incompatibility, line manipulation, and infection risk", "Every medication increases calories", "PN blocks all receptors", "A filter makes every drug inactive"], 0, "A separate route is safer when available; unavoidable coadministration requires pharmacist review.", "compounding-safety"),
-  q("041", "Which statement about USP chapter 797 is current?", ["The former low, medium, and high risk categories and their fixed BUDs are obsolete", "Every PN has a five-day refrigerated BUD", "All sterile preparations share one BUD", "Visual inspection replaces sterility controls"], 0, "Current USP chapter 797 uses revised categories and a risk-based system for beyond-use dating.", "compounding-safety"),
-  q("042", "What does a complete final verification include?", ["Order match, ingredients, quantities, label, container, appearance, and validated process", "Appearance alone", "Patient weight alone", "Pump rate alone"], 0, "PN safety depends on verifying the complete order-to-product system.", "compounding-safety"),
+  q("041", "Which statement about USP chapter 797 is current?", ["The former low, medium, and high risk categories and their fixed BUDs are obsolete", "Every PN has a five-day refrigerated BUD", "All sterile preparations share one BUD", "Visual inspection replaces sterility controls"], 0, "Current USP chapter 797 uses Category 1, 2 and 3 requirements. Beyond-use dating must account for the applicable category, sterility assurance, formulation stability, container and storage.", "compounding-safety"),
+  q("042", "Which set spans order review, in-process checks, and final PN inspection?", ["Order match, ingredients, quantities, label, container integrity, appearance, and compounding checks", "Appearance alone", "Patient weight alone", "Pump rate alone"], 0, "The book describes pharmacist order review, checking the actual ingredient volume before compounding continues, and inspecting the finished preparation and its container. Required label information is another check. A normal appearance alone cannot verify the order, amounts, or labeling.", "compounding-safety"),
 
-  q("043", "Which laboratory values require especially close follow-up during refeeding risk?", ["Phosphate, potassium, magnesium, and glucose", "LDL and HDL only", "Amylase only", "Troponin only"], 0, "Insulin-driven shifts can rapidly lower phosphate, potassium, and magnesium while glucose delivery changes.", "monitoring-transition"),
-  q("044", "Which finding suggests PN overfeeding?", ["Hyperglycemia, rising triglycerides, fluid retention, and increased carbon dioxide production", "Stable weight and improving strength", "A clean catheter site", "Reliable enteral intake"], 0, "Excess energy and carbohydrate can produce this metabolic pattern.", "monitoring-transition"),
-  q("045", "What is the first step when hyperglycemia develops after PN advancement?", ["Review total dextrose, all calories, illness, medicines, and infusion rate", "Add unlimited insulin without reviewing the prescription", "Stop all amino acids permanently", "Ignore non-PN dextrose"], 0, "The prescription and all glucose sources should be assessed before compensating for excessive delivery.", "monitoring-transition"),
+  q("043", "Which laboratory values require especially close follow-up during refeeding risk?", ["Phosphate, potassium, magnesium, and glucose", "LDL and HDL only", "Amylase only", "Troponin only"], 0, "Refeeding can rapidly lower phosphate, potassium and magnesium while glucose exposure changes. Insulin promotes intracellular potassium and phosphate movement; the magnesium mechanism is less clearly established. Normal initial serum levels do not exclude depleted body stores.", "monitoring-transition"),
+  q("044", "Which finding suggests PN overfeeding?", ["Hyperglycemia, rising triglycerides, fluid retention, and increased carbon dioxide production", "Stable metabolic measurements with improving strength alone", "A clean catheter site without changes in energy delivery or tolerance", "Reliable enteral intake after PN has been appropriately reduced to account for it"], 0, "This constellation warrants review of total energy, carbohydrate and lipid exposure, rate, and fluid balance. Excess energy can worsen glycemia, triglycerides and carbon dioxide burden; fluid retention is a separate, nonspecific balance finding. Illness, medicines and organ dysfunction can also contribute, so these findings suggest a need for assessment rather than proving overfeeding. The other observations alone do not establish excess delivery.", "monitoring-transition"),
+  q("045", "What is the first step when hyperglycemia develops after PN advancement?", ["Assess severity and review total dextrose, all calories, illness, medicines, and infusion rate", "Increase insulin alone without reassessing energy delivery or the patient's condition", "Reduce amino acids alone while keeping all carbohydrate sources unchanged", "Review bag dextrose while excluding other intravenous glucose sources"], 0, "Assess and treat clinically significant hyperglycemia promptly while reviewing actual delivery, all glucose and energy sources, medicines and illness. Consider reducing excessive feeding when appropriate. Insulin may still be needed; prescription review must not delay urgent treatment, and neither protein reduction alone nor ignoring non-PN glucose resolves the assessment.", "monitoring-transition"),
   q("046", "Why can cyclic PN increase glycemic risk?", ["The same daily dextrose may be delivered over fewer hours", "Cycling removes all dextrose", "Cycling prevents insulin action", "It eliminates monitoring"], 0, "Shorter infusion time raises the hourly glucose delivery rate.", "monitoring-transition"),
-  q("047", "Is a taper mandatory for every stable adult receiving cyclic PN?", ["No, starting and stopping should be individualized", "Yes, every patient requires a four-hour taper", "Yes, because abrupt stopping always causes coma", "No, because glucose never changes"], 0, "Tapering depends on patient factors, insulin exposure, infusion pattern, and local protocol.", "monitoring-transition"),
-  q("048", "Which complication belongs in long-term PN surveillance?", ["Metabolic bone disease", "Improved visual acuity", "Seasonal rhinitis", "Dental caries only"], 0, "Long-term PN can affect bone through multiple nutrient and metabolic pathways.", "monitoring-transition"),
-  q("049", "What is required before home PN discharge?", ["A trained patient or caregiver, coordinated team, supplies, line-care plan, monitoring, and emergency instructions", "A catheter without teaching", "A bag and no follow-up", "A promise to avoid all oral intake"], 0, "Home PN is a coordinated high-risk therapy that requires competency and support.", "monitoring-transition"),
-  q("050", "When should PN be reduced?", ["As documented oral or enteral intake reliably replaces the delivered nutrients", "Whenever albumin rises once", "When the bag changes color", "Only after the central line is removed"], 0, "Transition follows measured gastrointestinal delivery and tolerance.", "monitoring-transition"),
+  q("047", "Is a taper mandatory for every stable adult receiving cyclic PN?", ["No, starting and stopping should be individualized", "Yes, every stable adult requires the same four-hour taper", "Yes, abrupt stopping necessarily causes severe hypoglycemia in every adult", "No, start and stop glucose checks are unnecessary during conversion"], 0, "ASPEN's safety consensus describes abrupt stopping as generally tolerated in stable adults, while start/stop procedures remain individualized. Glucose monitoring during conversion and attention to insulin exposure are still needed; a universal taper and guaranteed hypoglycemia are unsupported.", "monitoring-transition"),
+  q("048", "Which complication belongs in long-term PN surveillance?", ["Metabolic bone disease", "Primary open-angle glaucoma", "Seasonal allergic rhinitis", "Congenital tooth agenesis"], 0, "Metabolic bone disease belongs in long-term PN surveillance, along with liver, micronutrient and catheter risks. Assess bone health in context; this does not establish that PN is the sole cause. The other listed conditions are not characteristic PN-associated complications.", "monitoring-transition"),
+  q("049", "What is required before home PN discharge?", ["A trained patient or caregiver, coordinated team, supplies, line-care plan, monitoring, and emergency instructions", "A stable catheter and normal baseline tests, with teaching deferred until a complication", "A complete PN order and supplies, with follow-up responsibility left unassigned", "Pump teaching alone, without demonstrated catheter-care skills or an emergency plan"], 0, "Safe home PN requires clinical suitability, demonstrated patient or caregiver understanding, a coordinated team, supplies, catheter care, monitoring and emergency planning. Normal tests, a patent catheter, an order or pump teaching alone cannot replace these supports.", "monitoring-transition"),
+  q("050", "Which change supports reassessing the need for intravenous nutrition in the book's route framework?", ["As documented oral or enteral intake reliably replaces the delivered nutrients", "Whenever albumin rises once", "When the bag changes color", "Only after the central line is removed"], 0, "The source prefers gastrointestinal delivery when it functions and can maintain nutritional status. Actual delivery and tolerance must support that route assessment.", "monitoring-transition"),
 ];
 
 const dextroseEnergyCases = [100, 125, 150, 175, 200, 225, 250, 275, 300, 325].map((grams, index) => {
@@ -76,7 +76,7 @@ const girCases = [
   [160, 55, 20], [280, 85, 18], [220, 65, 16], [190, 70, 12], [260, 100, 24],
 ].map(([grams, weight, hours], index) => {
   const gir = Math.round((grams * 1000 / weight / (hours * 60)) * 100) / 100;
-  return q(`07${index}`, `A ${weight} kg adult receives ${grams} g of dextrose over ${hours} hours. What is the glucose infusion rate?`, [`${gir} mg/kg/min`, `${Math.round(gir * 10) / 10} g/kg/min`, `${Math.round(gir * 2 * 100) / 100} mg/kg/min`, `${Math.round(gir / 2 * 100) / 100} mg/kg/min`], 0, `Convert grams to milligrams, then divide by ${weight} kg and ${hours * 60} minutes. The result is ${gir} mg/kg/min.`, "macronutrient-design");
+  return q(`07${index}`, `A ${weight} kg adult receives ${grams} g of dextrose over ${hours} hours. What is the glucose infusion rate to the nearest hundredth?`, [`${gir} mg/kg/min`, `${Math.round(gir * 10) / 10} g/kg/min`, `${Math.round(gir * 2 * 100) / 100} mg/kg/min`, `${Math.round(gir / 2 * 100) / 100} mg/kg/min`], 0, `Convert grams to milligrams, then divide by ${weight} kg and ${hours * 60} minutes. The result is ${gir} mg/kg/min.`, "macronutrient-design");
 });
 
 const proteinCases = [
@@ -97,17 +97,476 @@ const lipidCases = [
 });
 
 const integrationCases = [
-  ["A malnourished patient with obstruction has phosphate 1.3 mg/dL, potassium 2.8 mEq/L, and magnesium 1.1 mg/dL before PN.", "Correct and closely monitor deficits, give thiamine as indicated, and begin energy cautiously", "The pattern creates high refeeding risk and makes full immediate energy unsafe.", "pn-decision"],
+  ["A malnourished patient with obstruction has phosphate 1.3 mg/dL, potassium 2.8 mEq/L, and magnesium 1.1 mg/dL before PN.", "Correct deficits and reassess severity before cautiously starting calories; give thiamine and monitor closely", "These prefeeding deficits require correction and close monitoring in a malnourished patient. Severely low levels warrant delaying calorie initiation or increases until corrected; thiamine does not replace electrolyte treatment. Full immediate energy is unsafe, and omitting lipid does not remove risk from dextrose.", "pn-decision", ["Correct deficits and reassess severity before cautiously starting calories; give thiamine and monitor closely", "Start the full calorie target now and replace electrolytes only after the next bag", "Start full-dose dextrose now because lipid omission prevents refeeding", "Give thiamine alone and postpone electrolyte replacement until PN reaches its target"]],
   ["A fluid-restricted patient needs full nutrition, but the peripheral formulation would require 3.5 L per day.", "Reassess for appropriate central access and a concentrated prescription", "Peripheral concentration limits can prevent adequate delivery within the fluid allowance.", "venous-access"],
-  ["A patient receiving PN and propofol develops triglycerides of 520 mg/dL.", "Count all lipid calories and hold or limit ILE while evaluating causes and tolerance", "ASPEN advises limiting or holding ILE above 400 mg/dL, and propofol adds lipid exposure.", "macronutrient-design"],
-  ["A patient with cholestasis has received a standard multi-trace product for months and develops neurologic changes.", "Review manganese exposure, cholestasis, concentrations, and the complete trace-element plan", "Manganese accumulation can cause neurologic toxicity when biliary elimination is impaired.", "micronutrient-balance"],
-  ["A new PN formula exceeds the compounding software's calcium-phosphate limit, but the bag appears clear.", "Do not dispense until a pharmacist resolves compatibility using validated formulation data", "Clear appearance cannot prove compatibility or prevent delayed precipitation.", "compounding-safety"],
-  ["A unit requests a 0.22 micron filter for a lipid-free PN bag because that was the old protocol.", "Use the current 1.2 micron ASPEN recommendation and update the protocol", "Current ASPEN guidance uses a 1.2 micron filter for all PN formulations.", "compounding-safety"],
-  ["A PN-dependent patient has recurrent fever only during connection and a damaged catheter hub.", "Stop and investigate a catheter-related infection while protecting access and obtaining appropriate cultures", "The infusion pattern and hub damage strongly suggest line-related risk.", "venous-access"],
-  ["A stable home PN patient is moving from 24-hour infusion to a 12-hour cycle.", "Recalculate hourly glucose and fluid exposure and monitor tolerance during the transition", "Cycling compresses the same daily delivery into fewer hours.", "monitoring-transition"],
-  ["A patient now receives 75 percent of needs enterally for three days with stable tolerance.", "Reduce PN while continuing to verify actual enteral delivery and clinical response", "Reliable gastrointestinal delivery supports a measured transition away from PN.", "monitoring-transition"],
-  ["An older handout assigns every compounded PN a five-day refrigerated beyond-use date.", "Replace the rule with current USP chapter 797, stability data, process, container, and storage assessment", "The former fixed risk categories and BUDs are obsolete.", "compounding-safety"],
-].map(([caseText, correct, rationale, lesson], index) => q(`10${index}`, `${caseText} What is the most defensible next action?`, [correct, "Continue unchanged without reassessment", "Use a fixed rule that ignores the patient's current state", "Delay action until after discharge"], 0, rationale, lesson));
+  ["A patient receiving PN and propofol develops triglycerides of 520 mg/dL.", "Count all lipid calories and hold or limit ILE while evaluating causes and tolerance", "ASPEN advises limiting or holding ILE above 400 mg/dL, and propofol adds lipid exposure. Changing brands or reducing dextrose alone does not remove the need to review total lipid delivery. Prolonged lipid omission also requires reassessment because of essential fatty acid deficiency risk.", "macronutrient-design", ["Count all lipid calories and hold or limit ILE while evaluating causes and tolerance", "Reduce dextrose alone and continue both lipid sources without reassessment", "Switch ILE brands at the same dose without reviewing total lipid exposure", "Omit ILE indefinitely without reassessing essential fatty acid provision"]],
+  ["A patient with cholestasis has received a standard multi-trace product for months and develops neurologic changes.", "Promptly assess possible manganese toxicity and withhold the manganese-containing product pending evaluation", "Cholestasis and prolonged manganese exposure raise concern for accumulation, but new neurologic changes require assessment of other causes as well. The FDA Tralement label advises temporary discontinuation for suspected toxicity, whole-blood manganese testing and consideration of brain MRI. Check the actual product and complete trace plan; a normal concentration does not always exclude toxicity, and indefinitely stopping every micronutrient can cause deficiencies.", "micronutrient-balance", ["Promptly assess possible manganese toxicity and withhold the manganese-containing product pending evaluation", "Continue the same product if a single whole-blood manganese result is normal", "Increase the entire multitrace dose without evaluating the neurologic changes", "Permanently omit all vitamins and trace elements without an individual replacement plan"]],
+  ["A new PN formula exceeds the compounding software's calcium-phosphate limit, but the bag appears clear.", "Do not dispense until a pharmacist resolves compatibility using validated formulation data", "The source describes calcium-phosphate solubility data and compounding software as risk checks. A clear-looking bag does not override a formulation limit.", "compounding-safety", ["Do not dispense until a pharmacist resolves compatibility using validated formulation data", "Dispense because visual clarity overrides the software warning", "Refrigerate the bag and dispense without resolving the formulation warning", "Use central access to make the incompatible formulation acceptable"]],
+  ["A unit requests a 0.22 micron filter for a lipid-free PN bag because that was the old protocol.", "Use the current 1.2 micron ASPEN recommendation and update the protocol", "ASPEN recommends a 1.2 micron filter for all PN formulations, including lipid-free PN. Filtering is required from the start; removing the filter or waiting for visible precipitate defeats particulate protection.", "compounding-safety", ["Use the current 1.2 micron ASPEN recommendation and update the protocol", "Continue the 0.22 micron protocol because this bag contains no lipid", "Remove the filter from lipid-free PN to prevent filter occlusion", "Add a 1.2 micron filter only after precipitate becomes visible"]],
+  ["A PN-dependent patient has recurrent fever only during connection and a damaged catheter hub.", "Stop and investigate a catheter-related infection while protecting access and obtaining appropriate cultures", "Connection-associated fever can signal catheter colonization, and a damaged hub adds a safety concern. Stop the affected infusion, assess the catheter and patient promptly, obtain appropriate cultures and evaluate other causes. Neither immediate restart nor automatic removal solely because of fever is justified; preserve needed access while the team determines management.", "venous-access", ["Stop and investigate a catheter-related infection while protecting access and obtaining appropriate cultures", "Continue PN through the damaged hub because the fever is intermittent", "Treat the connection timing as proof of infection and remove access without further assessment", "Replace the hub and restart immediately without investigating the fever"]],
+  ["A stable PN patient is moving the same daily PN prescription from a 24-hour infusion to a 12-hour cycle.", "Recalculate hourly glucose and fluid exposure and monitor tolerance during the transition", "Delivering the same daily amount over fewer hours increases hourly delivery. Recalculate the rate and assess tolerance; the scenario does not establish a universal home-PN or taper protocol.", "monitoring-transition", ["Recalculate hourly glucose and fluid exposure and monitor tolerance during the transition", "Keep the previous hourly rate for twelve hours and assume the daily amount is unchanged", "Keep the daily amount unchanged and assume the hourly delivery is unchanged", "Stop glucose monitoring because the daily dextrose amount is unchanged"]],
+  ["A patient now receives 75 percent of needs enterally for three days with stable tolerance.", "Reduce PN while continuing to verify actual enteral delivery and clinical response", "Reliable gastrointestinal delivery supports reducing the portion supplied by PN while checking intake and tolerance. The observed 75 percent and three days describe this case; they are not a universal stopping threshold.", "monitoring-transition", ["Reduce PN while continuing to verify actual enteral delivery and clinical response", "Stop PN completely because any enteral intake replaces all intravenous nutrition", "Continue the full PN prescription indefinitely despite reliable enteral delivery", "Reduce enteral nutrition solely to preserve the existing full PN prescription"]],
+  ["An older handout assigns every compounded PN a five-day refrigerated beyond-use date.", "Replace the rule with current USP chapter 797, stability data, process, container, and storage assessment", "The former risk categories have been replaced by Category 1, 2 and 3 requirements. An assigned BUD must also respect formulation stability and storage; a clear appearance does not establish sterility or stability. A category maximum cannot override a shorter stability limit, and colder storage does not extend the original assigned BUD.", "compounding-safety", ["Replace the rule with current USP chapter 797, stability data, process, container, and storage assessment", "Assign five refrigerated days whenever the bag passes visual inspection", "Use the category maximum even when formulation stability permits less time", "Extend the original BUD by moving a room-temperature bag into refrigeration"]],
+].map(([caseText, correct, rationale, lesson, choices], index) => q(`10${index}`, `${caseText} What is the most defensible next action?`, choices || [correct, "Continue unchanged without reassessment", "Use a fixed rule that ignores the patient's current state", "Delay action until after discharge"], 0, rationale, lesson));
+
+const bookReviewCases = [
+  {
+    "question": "In the supplied book, which route includes both oral food and formula delivered into the gastrointestinal tract?",
+    "choices": [
+      "Enteral nutrition",
+      "Intravenous PN only",
+      "An intra-arterial infusion",
+      "A central venous line"
+    ],
+    "answer": 0,
+    "rationale": "The book EN definition includes gastrointestinal delivery by mouth or by feeding formula.",
+    "reviewHref": "#pn-decision",
+    "id": "parenteral-nutrition-book-001"
+  },
+  {
+    "question": "The source describes inability to absorb adequate GI nutrition for more than five days. How should that statement be read?",
+    "choices": [
+      "As a mandatory wait for every malnourished patient",
+      "As a possible PN indication in the source discussion",
+      "As proof that a central line is sufficient indication",
+      "As a rule that every missed meal requires PN"
+    ],
+    "answer": 1,
+    "rationale": "The source indication is contextual; it does not provide a complete timing algorithm or mandate waiting for every patient.",
+    "reviewHref": "#pn-decision",
+    "id": "parenteral-nutrition-book-002"
+  },
+  {
+    "question": "Which source route comparison explains why a functioning gastrointestinal route is preferred when it meets the need?",
+    "choices": [
+      "PN has no catheter risks",
+      "PN always costs less",
+      "EN is more physiologic and has fewer complications",
+      "EN cannot provide protein"
+    ],
+    "answer": 2,
+    "rationale": "The book favors EN when the gut functions, describing fewer complications and generally lower cost.",
+    "reviewHref": "#pn-decision",
+    "id": "parenteral-nutrition-book-003"
+  },
+  {
+    "question": "Why does the source qualify short-term peripheral PN as something that may be possible?",
+    "choices": [
+      "Peripheral PN is always suitable for full nutrition",
+      "A short duration eliminates vein damage",
+      "PN contains only water",
+      "Peripheral vein irritation and the formulation still matter"
+    ],
+    "answer": 3,
+    "rationale": "The book describes possible use for less than one week but emphasizes phlebitis and vein damage.",
+    "reviewHref": "#venous-access",
+    "id": "parenteral-nutrition-book-004"
+  },
+  {
+    "question": "A PICC begins in a peripheral vein. Which feature makes its infusion access central in the source description?",
+    "choices": [
+      "The tip ends in a large central vessel",
+      "The skin entry must be in the chest",
+      "The bag must contain only saline",
+      "The catheter name alone prevents infection"
+    ],
+    "answer": 0,
+    "rationale": "The IV chapter identifies the central tip location, and its PICC example ends in the superior vena cava.",
+    "reviewHref": "#venous-access",
+    "id": "parenteral-nutrition-book-005"
+  },
+  {
+    "question": "Which source compatibility result is needed before putting two ingredients in the same PN container?",
+    "choices": [
+      "Any Y-site result regardless of concentration",
+      "Additive compatibility for the actual container conditions",
+      "A result for a different diluent only",
+      "A statement that both are IV drugs"
+    ],
+    "answer": 1,
+    "rationale": "Additive and Y-site entries address different contact conditions and cannot simply be substituted.",
+    "reviewHref": "#venous-access",
+    "id": "parenteral-nutrition-book-006"
+  },
+  {
+    "question": "Why can central access deliver a concentrated admixture in the source explanation?",
+    "choices": [
+      "It removes the need for sterility",
+      "It changes dextrose into lipid",
+      "Contents enter a large vessel and are rapidly diluted",
+      "It prevents all thrombosis"
+    ],
+    "answer": 2,
+    "rationale": "The IV-principles chapter explains rapid dilution in a large central vessel.",
+    "reviewHref": "#venous-access",
+    "id": "parenteral-nutrition-book-007"
+  },
+  {
+    "question": "An exercise explicitly orders protein using IBW. What should happen to that weight basis?",
+    "choices": [
+      "Replace it with adjusted weight automatically",
+      "Use height without weight",
+      "Always substitute actual weight",
+      "Use the IBW requested by the exercise"
+    ],
+    "answer": 3,
+    "rationale": "The book uses total weight for most PN work unless a question specifies another basis; some protein orders specify IBW.",
+    "reviewHref": "#macronutrient-design",
+    "id": "parenteral-nutrition-book-008"
+  },
+  {
+    "question": "A PN exercise labels its target as nonprotein calories. Which energy must be kept outside that NPC target?",
+    "choices": [
+      "Amino acid energy",
+      "Dextrose energy",
+      "Lipid energy",
+      "Both dextrose and lipid energy"
+    ],
+    "answer": 0,
+    "rationale": "NPC includes dextrose and lipid; a goal that includes amino acid calories is a different total-energy convention.",
+    "reviewHref": "#macronutrient-design",
+    "id": "parenteral-nutrition-book-009"
+  },
+  {
+    "question": "What source distinction prevents automatically exchanging traditional ILE and Smoflipid?",
+    "choices": [
+      "Neither contains oil",
+      "Their soybean-only versus four-oil formulations differ",
+      "Both supply no calories",
+      "Both are amino acid solutions"
+    ],
+    "answer": 1,
+    "rationale": "The book distinguishes traditional soybean-oil emulsion from four-oil Smoflipid.",
+    "reviewHref": "#macronutrient-design",
+    "id": "parenteral-nutrition-book-010"
+  },
+  {
+    "question": "Which schedule change does the book discuss when triglycerides are high?",
+    "choices": [
+      "Every weekly dose must be infused daily",
+      "Lipid frequency must always increase",
+      "Lipid may be reduced to three times weekly or once weekly",
+      "All nutrients must permanently stop"
+    ],
+    "answer": 2,
+    "rationale": "The source gives these reduced frequencies; the actual prescribed schedule remains part of the patient plan.",
+    "reviewHref": "#macronutrient-design",
+    "id": "parenteral-nutrition-book-011"
+  },
+  {
+    "question": "A supplied PN stock is potassium phosphate. Which additional quantity must be counted alongside phosphate?",
+    "choices": [
+      "Only sterile water",
+      "Only amino acid calories",
+      "Vitamin K",
+      "Potassium from that same stock"
+    ],
+    "answer": 3,
+    "rationale": "A phosphate salt contributes its counterion, so potassium from potassium phosphate is included in the potassium total.",
+    "reviewHref": "#micronutrient-balance",
+    "id": "parenteral-nutrition-book-012"
+  },
+  {
+    "question": "How does the source say the PN phosphate order should identify the ingredient?",
+    "choices": [
+      "In mmol of phosphate with the sodium or potassium salt specified",
+      "As an unspecified number of milliliters only",
+      "As calories of phosphorus",
+      "As the bag color"
+    ],
+    "answer": 0,
+    "rationale": "The source distinguishes mmol of phosphate and the selected salt form.",
+    "reviewHref": "#micronutrient-balance",
+    "id": "parenteral-nutrition-book-013"
+  },
+  {
+    "question": "Why does the source prefer calcium gluconate to calcium chloride in its PN precipitation discussion?",
+    "choices": [
+      "It eliminates all phosphate",
+      "It leaves less free calcium available to bind phosphate",
+      "It is an oral calcium tablet",
+      "It removes all other compatibility variables"
+    ],
+    "answer": 1,
+    "rationale": "The book describes lower dissociation and less calcium-phosphate precipitation risk; this does not prove complete compatibility.",
+    "reviewHref": "#micronutrient-balance",
+    "id": "parenteral-nutrition-book-014"
+  },
+  {
+    "question": "Which source sequence supports limiting calcium-phosphate precipitation?",
+    "choices": [
+      "Calcium first before any other fluid",
+      "Phosphate and calcium without mixing",
+      "Phosphate after dextrose/amino acids, then calcium near the end",
+      "All salts added to an empty bag at once"
+    ],
+    "answer": 2,
+    "rationale": "The book describes phosphate first after the macronutrients, agitation and calcium near the end at larger volume.",
+    "reviewHref": "#micronutrient-balance",
+    "id": "parenteral-nutrition-book-015"
+  },
+  {
+    "question": "What does a calcium-phosphate point above the source solubility curve indicate?",
+    "choices": [
+      "Proof of sterility",
+      "Proof of lower glucose",
+      "A requirement to add more calcium",
+      "Precipitation risk"
+    ],
+    "answer": 3,
+    "rationale": "The book describes points above the curve as indicating precipitation risk.",
+    "reviewHref": "#micronutrient-balance",
+    "id": "parenteral-nutrition-book-016"
+  },
+  {
+    "question": "Which temperature direction does the source associate with more calcium-phosphate dissociation and precipitation risk?",
+    "choices": [
+      "Increasing temperature",
+      "Refrigeration alone proves compatibility",
+      "Temperature has no role",
+      "Removing the bag label"
+    ],
+    "answer": 0,
+    "rationale": "The source states that higher temperature increases dissociation and precipitation risk.",
+    "reviewHref": "#micronutrient-balance",
+    "id": "parenteral-nutrition-book-017"
+  },
+  {
+    "question": "What distinguishes the source MVI-12 mixture from MVI-13?",
+    "choices": [
+      "MVI-12 contains no water-soluble vitamins",
+      "MVI-12 omits vitamin K",
+      "MVI-12 contains only lipid",
+      "MVI-12 doubles every trace element"
+    ],
+    "answer": 1,
+    "rationale": "The source identifies vitamin K as absent from MVI-12.",
+    "reviewHref": "#micronutrient-balance",
+    "id": "parenteral-nutrition-book-018"
+  },
+  {
+    "question": "Which source monitoring instruction connects warfarin with PN vitamin provision?",
+    "choices": [
+      "Monitor only BMI",
+      "Stop all amino acids",
+      "Monitor INR",
+      "Ignore which vitamin mixture is used"
+    ],
+    "answer": 2,
+    "rationale": "The book specifically calls for INR monitoring when a PN patient receives warfarin.",
+    "reviewHref": "#micronutrient-balance",
+    "id": "parenteral-nutrition-book-019"
+  },
+  {
+    "question": "How is thiamine classified in the source MVI-13 discussion?",
+    "choices": [
+      "A lipid calorie source",
+      "A phosphate salt",
+      "A fat-soluble vitamin",
+      "One of the water-soluble vitamins"
+    ],
+    "answer": 3,
+    "rationale": "Thiamine is included among the source's nine water-soluble vitamins.",
+    "reviewHref": "#micronutrient-balance",
+    "id": "parenteral-nutrition-book-020"
+  },
+  {
+    "question": "Which pair does the 2023 book name in its severe liver-disease trace-element withholding discussion?",
+    "choices": [
+      "Manganese and copper",
+      "Dextrose and amino acids",
+      "Sodium and chloride",
+      "Vitamins A and E only"
+    ],
+    "answer": 0,
+    "rationale": "The source names manganese and copper. This attributed review group does not replace the actual patient/product plan.",
+    "reviewHref": "#micronutrient-balance",
+    "id": "parenteral-nutrition-book-021"
+  },
+  {
+    "question": "Which group does the 2023 book name in its severe renal-disease trace-element withholding discussion?",
+    "choices": [
+      "All four fat-soluble vitamins",
+      "Chromium, molybdenum and selenium",
+      "Dextrose, lipid and amino acids",
+      "Sodium, acetate and chloride only"
+    ],
+    "answer": 1,
+    "rationale": "These are the source's named elements; an actual formulation still needs component-by-component patient review.",
+    "reviewHref": "#micronutrient-balance",
+    "id": "parenteral-nutrition-book-022"
+  },
+  {
+    "question": "Why does the source generally discourage adding other IV drugs to a PN preparation?",
+    "choices": [
+      "Every IV drug supplies vitamins",
+      "It makes the drug enteral",
+      "Changing or stopping the drug can waste the entire PN bag",
+      "All drugs require a lipid vehicle"
+    ],
+    "answer": 2,
+    "rationale": "The source gives loss of the entire PN preparation when a drug changes as a reason to avoid routine additions.",
+    "reviewHref": "#micronutrient-balance",
+    "id": "parenteral-nutrition-book-023"
+  },
+  {
+    "question": "Before administration, what happens to the separating seal in the source two-chamber premixed PN example?",
+    "choices": [
+      "It is kept intact throughout infusion",
+      "It is replaced with a feeding tube",
+      "It changes the route to oral",
+      "It is broken so amino acid and dextrose chambers mix"
+    ],
+    "answer": 3,
+    "rationale": "The book describes mixing the separate chamber contents before administration by breaking the seal.",
+    "reviewHref": "#compounding-safety",
+    "id": "parenteral-nutrition-book-024"
+  },
+  {
+    "question": "What does the book specifically identify as present in Clinimix-E?",
+    "choices": [
+      "Electrolytes",
+      "Only oral food",
+      "No amino acids in any product",
+      "A fixed insulin dose for every patient"
+    ],
+    "answer": 0,
+    "rationale": "Clinimix-E is the source example containing electrolytes.",
+    "reviewHref": "#compounding-safety",
+    "id": "parenteral-nutrition-book-025"
+  },
+  {
+    "question": "Which distinction matters when a sterile PN preparation also contains a potentially incompatible ingredient?",
+    "choices": [
+      "Sterility proves all salts stay dissolved",
+      "Sterile preparation and physical/chemical compatibility are separate requirements",
+      "A clear label eliminates precipitation",
+      "Central access eliminates chemical reactions"
+    ],
+    "answer": 1,
+    "rationale": "The book separately addresses sterile preparation and incompatibilities such as precipitation or drug degradation.",
+    "reviewHref": "#compounding-safety",
+    "id": "parenteral-nutrition-book-026"
+  },
+  {
+    "question": "Which PN complication does the source associate with intracellular electrolyte loss, especially phosphate?",
+    "choices": [
+      "Seasonal rhinitis",
+      "A catheter tip seen on x-ray",
+      "Refeeding syndrome",
+      "An isolated change in bag color"
+    ],
+    "answer": 2,
+    "rationale": "The source PN monitoring discussion identifies refeeding and especially phosphate loss.",
+    "reviewHref": "#monitoring-transition",
+    "id": "parenteral-nutrition-book-027"
+  },
+  {
+    "question": "An arithmetic-only exercise supplies a prior sliding-scale requirement of 24 units and asks for one-half. What is that number?",
+    "choices": [
+      "24 units",
+      "48 units",
+      "6 units",
+      "12 units"
+    ],
+    "answer": 3,
+    "rationale": "24/2 = 12 units. This supplied exercise mirrors the book arithmetic example; it does not independently establish an actual insulin-in-bag order.",
+    "reviewHref": "#monitoring-transition",
+    "id": "parenteral-nutrition-book-028"
+  },
+  {
+    "question": "An original energy exercise supplies propofol at 14 mL/hour for eight hours and 1.1 kcal/mL. What energy is delivered?",
+    "choices": [
+      "123.2 kcal",
+      "112 kcal",
+      "14.3 kcal",
+      "246.4 kcal"
+    ],
+    "answer": 0,
+    "rationale": "14 x 8 = 112 mL; 112 x 1.1 = 123.2 kcal. This computes energy, not an anesthetic dose.",
+    "reviewHref": "#macronutrient-design",
+    "id": "parenteral-nutrition-book-029"
+  },
+  {
+    "question": "An original exercise gives 180 mL of lipid once weekly at a supplied 1.1 kcal/mL. What is the average daily energy to the nearest tenth?",
+    "choices": [
+      "198 kcal/day",
+      "28.3 kcal/day",
+      "180 kcal/day",
+      "1,386 kcal/day"
+    ],
+    "answer": 1,
+    "rationale": "180 x 1.1 = 198 kcal per weekly dose; 198/7 = 28.3 kcal/day to the nearest tenth. The average does not change the weekly schedule.",
+    "reviewHref": "#macronutrient-design",
+    "id": "parenteral-nutrition-book-030"
+  },
+  {
+    "id": "parenteral-nutrition-book-031",
+    "question": "Which container interaction does the supplied book specifically identify for insulin?",
+    "choices": [
+      "It is converted into a lipid by glass",
+      "It dissolves every plastic container",
+      "It adsorbs to PVC",
+      "It cannot interact with any IV container"
+    ],
+    "answer": 2,
+    "rationale": "The source states that insulin adsorbs to PVC. Adsorption is adherence to a surface, rather than absorption into the container.",
+    "reviewHref": "#monitoring-transition"
+  },
+  {
+    "id": "parenteral-nutrition-book-032",
+    "question": "Which solution color is listed for multivitamins for infusion in the source IV-principles table?",
+    "choices": [
+      "Blue",
+      "Red",
+      "Brown",
+      "Yellow"
+    ],
+    "answer": 3,
+    "rationale": "The table lists multivitamins for infusion as yellow. This identifies the ingredient example; it does not prove final PN compatibility or absence of particles.",
+    "reviewHref": "#compounding-safety"
+  },
+  {
+    "id": "parenteral-nutrition-book-033",
+    "question": "Which quantity verification method does the source prefer during sterile compounding?",
+    "choices": [
+      "The pharmacist checks the actual product volume in the syringe before compounding continues",
+      "An empty syringe is pulled back later to a remembered volume",
+      "The final bag color is used to infer each ingredient volume",
+      "Only the empty vial labels are checked after all ingredients are combined"
+    ],
+    "answer": 0,
+    "rationale": "The book prefers seeing the actual volume before transfer. The empty-syringe pull-back method relies on memory and is not recommended.",
+    "reviewHref": "#compounding-safety"
+  },
+  {
+    "id": "parenteral-nutrition-book-034",
+    "question": "A compounded PN label lists ingredient names and concentrations. Which additional set of information does the source require?",
+    "choices": [
+      "Total volume and route only, because concentrations determine storage",
+      "Total volume, route, storage requirements, and a beyond-use date",
+      "Storage requirements and route only, because the beyond-use date is kept off the label",
+      "Total volume and storage only, because all PN products share one route and beyond-use date"
+    ],
+    "answer": 1,
+    "rationale": "The source label requirements include ingredient names and amounts or concentrations, total volume, beyond-use date, route and storage requirements. Listing a beyond-use date does not establish which date is appropriate for the actual preparation.",
+    "reviewHref": "#compounding-safety"
+  }
+];
+
+const approvedNutritionQuestions = [
+  q("timing-001", "A stable, well-nourished adult has received less than 50% of estimated needs orally or enterally for seven days, and adequate gastrointestinal delivery remains unavailable. Which ASPEN adult timing recommendation applies?", ["PN after seven days of inadequate intake in this setting", "A universal five-day waiting period regardless of nutrition status", "A mandatory fourteen-day wait regardless of intake", "PN only when serum albumin crosses a fixed threshold"], 0, "ASPEN recommends PN after seven days for a stable, well-nourished adult unable to receive at least 50% of estimated needs orally or enterally. A universal five-day rule, an obligatory fourteen-day delay and albumin alone do not describe this recommendation.", "pn-decision"),
+  q("timing-002", "A nutritionally at-risk adult is unlikely to achieve adequate oral or enteral intake and has no severe metabolic instability. Which ASPEN timing window is appropriate?", ["After seven days using the stable, well-nourished adult recommendation", "Within three to five days", "Only after moderate or severe malnutrition develops", "Immediately at the full calorie goal without assessing refeeding"], 1, "ASPEN recommends PN within three to five days for nutritionally at-risk adults unlikely to achieve adequate oral/enteral intake. The seven-day recommendation describes stable, well-nourished adults, and moderate or severe baseline malnutrition supports initiation as soon as feasible.", "pn-decision"),
+  q("refeeding-001", "A malnourished adult has normal serum potassium, magnesium and phosphate immediately before nutrition is restarted. What do these results establish?", ["Refeeding risk has been excluded", "Full energy must be delivered immediately", "Body stores may still be depleted, so risk assessment and monitoring remain necessary", "Thiamine is unnecessary because phosphate is normal"], 2, "Normal serum values do not exclude total-body depletion. Assess nutrition history and other risk factors, give indicated thiamine and monitor electrolytes during renewed calorie delivery.", "monitoring-transition"),
+  q("refeeding-002", "For an adult at refeeding risk, when does ASPEN recommend the preventive 100 mg thiamine dose?", ["Only after glucose intolerance develops", "Only after the first week of full PN", "After the first dextrose bag has finished", "Before feeding or dextrose-containing IV fluids"], 3, "ASPEN recommends 100 mg thiamine before feeding or before starting dextrose-containing IV fluids in at-risk adults, followed by daily supplementation as indicated. This preventive step does not replace treatment of a suspected deficiency syndrome.", "micronutrient-balance"),
+];
+
+const approvedCareQuestions = [
+  q("care-001", "An adult PN admixture containing SMOFlipid has a final osmolarity of exactly 900 mOsm/L. Which access requirement applies from its July 2025 label?", ["Peripheral access because the general ASPEN upper limit includes 900", "Central access because this label requires it at 900 mOsm/L or above", "Peripheral access whenever the course is shorter than one week", "Either route without checking the actual admixture or product instructions"], 1, "The SMOFlipid label requires central administration for an admixture at 900 mOsm/L or above. ASPEN's general adult peripheral ceiling does not override that product-specific requirement, and short duration alone cannot establish peripheral suitability.", "venous-access"),
+  q("care-002", "A long-term PN patient develops abnormal liver tests and new biliary symptoms. Which interpretation best supports the review?", ["The PN bag is necessarily the sole cause", "Changing lipid brands guarantees prevention of further liver or biliary disease", "Review illness, infection, overfeeding, lipid exposure and lack of enteral stimulation, and evaluate the symptoms promptly", "Normal baseline liver tests exclude a PN-associated hepatobiliary problem"], 2, "PN-associated hepatobiliary abnormalities are multifactorial. Consider illness, infection, nutrient excess, lipid exposure and limited enteral stimulation; monitor liver tests and evaluate biliary symptoms. Neither the bag alone nor a guaranteed benefit from brand substitution is an adequate explanation.", "monitoring-transition"),
+  q("care-003", "An adult with a documented peanut allergy is being assessed for SMOFlipid. What does its July 2025 label require?", ["Proceed because peanut is not a listed active oil", "Proceed if fish and egg allergies are absent", "Ignore the allergy because the product contains several oils", "Do not use SMOFlipid: known peanut hypersensitivity is a labeled contraindication"], 3, "The label contraindicates known hypersensitivity to fish, egg, soybean, peanut or any ingredient. It lists soybean, fish and other oils, with egg phospholipids, and describes soybean-peanut cross-reactivity; absence of peanut as an active oil does not remove the contraindication.", "macronutrient-design"),
+  q("care-004", "A home-infusion provider cannot obtain an electrolyte salt in the discharging PN order. What is the best receiving-order response?", ["Substitute another salt at the same stated volume without recalculating the ions", "Review the actual products, salt, dose, units and compatibility, revise the order as needed and communicate it to the accountable teams", "Keep the unavailable ingredient on the order and omit it silently during compounding", "Use the discharging bag label as the complete plan and leave follow-up unassigned"], 1, "A safe PN transition requires a complete receiving order and named follow-up responsibility. Product availability and formulary differences must be resolved through review and clearly communicated changes. Equal volumes do not establish equivalent electrolyte delivery or compatibility, and silent omission is unsafe.", "monitoring-transition"),
+];
 
 export const parenteralNutritionQuestionBank = [
   ...core,
@@ -116,8 +575,11 @@ export const parenteralNutritionQuestionBank = [
   ...proteinCases,
   ...lipidCases,
   ...integrationCases,
+  ...bookReviewCases,
+  ...approvedNutritionQuestions,
+  ...approvedCareQuestions,
 ];
 
-if (parenteralNutritionQuestionBank.length !== 100) {
-  throw new Error(`Parenteral nutrition question bank must contain 100 questions, found ${parenteralNutritionQuestionBank.length}.`);
+if (parenteralNutritionQuestionBank.length !== 142) {
+  throw new Error(`Parenteral nutrition question bank must contain 142 questions, found ${parenteralNutritionQuestionBank.length}.`);
 }

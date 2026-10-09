@@ -186,7 +186,7 @@ const appliedDistractors = [
   ]
 ];
 
-export const adrenalInsufficiencyQuestionBank = concepts.map((concept, index) => {
+const publishedBaseAdrenalInsufficiencyQuestionBank = concepts.map((concept, index) => {
   const answer = index % 4;
   const choices = [...appliedDistractors[index]];
   choices.splice(answer, 0, concept.caseAnswer);
@@ -198,7 +198,7 @@ export const adrenalInsufficiencyQuestionBank = concepts.map((concept, index) =>
   };
 });
 
-adrenalInsufficiencyQuestionBank.push({
+publishedBaseAdrenalInsufficiencyQuestionBank.push({
   "id": "adrenal-insufficiency-granule-tube",
   "question": "A caregiver plans to mix Alkindi Sprinkle granules into liquid and deliver them through a gastric tube. Which correction follows the label?",
   "choices": [
@@ -213,7 +213,7 @@ adrenalInsufficiencyQuestionBank.push({
   "difficulty": "clinical"
 });
 
-adrenalInsufficiencyQuestionBank.push({
+publishedBaseAdrenalInsufficiencyQuestionBank.push({
   "id": "adrenal-insufficiency-diagnosis-versus-recovery",
   "question": "A stable adult being evaluated for new pituitary-related adrenal insufficiency has an 8 AM cortisol of 11 micrograms/dL. No recent steroid exposure confounds testing. Which interpretation is appropriate?",
   "choices": [
@@ -228,7 +228,7 @@ adrenalInsufficiencyQuestionBank.push({
   "difficulty": "clinical"
 });
 
-adrenalInsufficiencyQuestionBank.push({
+publishedBaseAdrenalInsufficiencyQuestionBank.push({
   "id": "adrenal-insufficiency-pediatric-crisis-dose",
   "question": "A small child needs emergency hydrocortisone for suspected adrenal crisis. Which dosing principle is correct?",
   "choices": [
@@ -243,7 +243,7 @@ adrenalInsufficiencyQuestionBank.push({
   "difficulty": "clinical"
 });
 
-adrenalInsufficiencyQuestionBank.push({
+publishedBaseAdrenalInsufficiencyQuestionBank.push({
   "id": "adrenal-insufficiency-actovial-volume",
   "question": "A prepared 100 mg Solu-Cortef Act-O-Vial contains 2 mL. A verified order calls for 25 mg. What volume corresponds to that dose?",
   "choices": [
@@ -258,7 +258,7 @@ adrenalInsufficiencyQuestionBank.push({
   "difficulty": "clinical"
 });
 
-adrenalInsufficiencyQuestionBank.push({
+publishedBaseAdrenalInsufficiencyQuestionBank.push({
   "id": "adrenal-insufficiency-salt-restriction",
   "question": "An adult with aldosterone-deficient primary adrenal insufficiency takes fludrocortisone and asks whether all replacement patients must restrict salt. Which response is appropriate?",
   "choices": [
@@ -272,3 +272,25 @@ adrenalInsufficiencyQuestionBank.push({
   "reviewHref": "#mineralocorticoid-replacement",
   "difficulty": "clinical"
 });
+
+
+const sourceReviewedQuestions = new Map([
+  [
+    "adrenal-insufficiency-18-case",
+    {
+      "id": "adrenal-insufficiency-18-case",
+      "question": "A patient with autoimmune primary adrenal insufficiency and confirmed aldosterone deficiency has salt craving, high renin, and postural hypotension. Which response is best?",
+      "choices": [
+        "Stop glucocorticoid replacement once fludrocortisone begins.",
+        "Add fludrocortisone while continuing glucocorticoid replacement.",
+        "Use spironolactone to restore aldosterone action.",
+        "Withhold mineralocorticoid assessment because primary disease never affects aldosterone."
+      ],
+      "answer": 1,
+      "rationale": "Confirmed aldosterone deficiency with salt craving, high renin and postural hypotension calls for fludrocortisone while necessary glucocorticoid replacement continues. Stopping glucocorticoid leaves cortisol deficiency untreated. Spironolactone blocks the mineralocorticoid action that is missing rather than restoring it. Primary cortical disease can affect aldosterone, so withholding mineralocorticoid assessment is inappropriate. Follow symptoms, posture, pressure and electrolytes with renin in the nonpregnant clinical context.",
+      "reviewHref": "#mineralocorticoid-replacement",
+      "difficulty": "application"
+    }
+  ]
+]);
+export const adrenalInsufficiencyQuestionBank = publishedBaseAdrenalInsufficiencyQuestionBank.map((question) => sourceReviewedQuestions.get(question.id) || question);

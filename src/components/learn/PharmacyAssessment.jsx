@@ -64,7 +64,7 @@ function createAttempt(questions, questionCount, previousIds) {
   return shuffle(selected.map(prepareQuestion));
 }
 
-export default function PharmacyAssessment({ questions, compact = false, moduleId = "pharmacy-review", questionCount, randomize = false }) {
+export default function PharmacyAssessment({ questions, compact = false, moduleId = "pharmacy-review", questionCount, randomize = false, bankLabel = "this module bank" }) {
   const [answers, setAnswers] = useState({});
   const [submitted, setSubmitted] = useState(false);
   const [attempt, setAttempt] = useState(randomize ? [] : questions);
@@ -112,7 +112,7 @@ export default function PharmacyAssessment({ questions, compact = false, moduleI
   if (randomize && displayQuestions.length === 0) {
     return (
       <div className={`pharmacy-assessment pharmacy-assessment--launch ${compact ? "pharmacy-assessment--compact" : ""}`}>
-        <span>{questions.length} questions in this module bank</span>
+        <span>{questions.length} questions in {bankLabel}</span>
         <strong>{Math.min(questionCount || questions.length, questions.length)} questions per attempt</strong>
         <p>Each attempt draws a fresh set and rearranges the answer choices.</p>
         <button type="button" disabled={busy} onClick={beginAttempt}>Begin practice</button>

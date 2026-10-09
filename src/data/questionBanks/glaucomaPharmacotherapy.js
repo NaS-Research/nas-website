@@ -276,7 +276,7 @@ const reviewedProductionCases = {
   }
 };
 
-export const glaucomaPharmacotherapyQuestionBank = generatedGlaucomaQuestions.map(question =>
+const publishedBaseGlaucomaPharmacotherapyQuestionBank = generatedGlaucomaQuestions.map(question =>
   reviewedProductionCases[question.id] ? { ...question, ...reviewedProductionCases[question.id] } : question
 ).concat([
   {
@@ -602,3 +602,24 @@ export const glaucomaPharmacotherapyQuestionBank = generatedGlaucomaQuestions.ma
     "reviewHref": "#acute-angle-closure-and-drug-triggers"
   }
 ]);
+
+
+const sourceReviewedQuestions = new Map([
+  [
+    "glaucoma-pharmacotherapy-105",
+    {
+      "id": "glaucoma-pharmacotherapy-105",
+      "question": "Which principle best characterizes physical barrier to eye-drop use?",
+      "choices": [
+        "Dexterity, vision, cognition, strength, tremor, and bottle design can affect whether the prescribed dose reaches the eye.",
+        "Aqueous humor moves from the ciliary processes through the posterior chamber and pupil into the anterior chamber before drainage.",
+        "FP receptor signaling increases outflow, especially through uveoscleral remodeling.",
+        "Rho kinase inhibition is believed to lower pressure by increasing trabecular aqueous outflow."
+      ],
+      "answer": 0,
+      "rationale": "A prescription is only effective if the patient can execute the device task.",
+      "reviewHref": "#ophthalmic-administration-and-safety"
+    }
+  ]
+]);
+export const glaucomaPharmacotherapyQuestionBank = publishedBaseGlaucomaPharmacotherapyQuestionBank.map((question) => sourceReviewedQuestions.get(question.id) || question);
