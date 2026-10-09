@@ -139,7 +139,155 @@ const feedingQuestionRepairs = {
   }
 };
 
+const pharmacodynamicQuestionRepairs = {
+  "clinical-drug-interactions-017": {
+    "choices": [
+      "Several depressants can impair alertness, airway protection, and ventilation without changing one another's concentrations.",
+      "Respiratory depression requires a CYP-mediated rise in every depressant concentration.",
+      "Using different CNS depressant classes prevents additive impairment of breathing.",
+      "An unchanged concentration excludes pharmacodynamic harm."
+    ],
+    "rationale": "The depressants can converge on alertness, airway protection and ventilation. A kinetic change is not required; different drug classes do not make the combined response safe."
+  },
+  "clinical-drug-interactions-018": {
+    "choices": [
+      "Reduce avoidable depressants and define sedation and respiratory monitoring.",
+      "Continue all depressants unchanged because each has a separate prescription.",
+      "Stop a long-term benzodiazepine abruptly to eliminate the interaction immediately.",
+      "Replace respiratory assessment with a check for CYP interactions only."
+    ],
+    "rationale": "Review necessity and reduce avoidable depressant exposure while defining sedation and respiratory assessment. Separate prescriptions do not remove combined risk. Benzodiazepine withdrawal requires an individualized plan rather than abrupt cessation."
+  },
+  "clinical-drug-interactions-019": {
+    "choices": [
+      "Review opioids, benzodiazepines, alcohol, antihistamines, muscle relaxants, sleep apnea, and pulmonary reserve.",
+      "Review prescribed opioids only; omit alcohol and nonprescription sedating products.",
+      "Review concentrations only; omit sleep-disordered breathing and pulmonary disease.",
+      "Record the number of medicines without identifying depressant effects or patient reserve."
+    ],
+    "rationale": "Reconcile the actual depressant exposures and respiratory vulnerability. Sedating antihistamines and muscle relaxants are examples, not claims that every member of those classes has identical risk. Prescription count or concentrations alone are incomplete."
+  },
+  "clinical-drug-interactions-020": {
+    "choices": [
+      "Checking only CYP pathways misses a pharmacodynamic respiratory stack.",
+      "Reconciling alcohol and nonprescription sedatives alongside prescribed depressants.",
+      "Assessing breathing and sedation when a depressant is added or changed.",
+      "Reviewing whether an avoidable depressant can be removed safely."
+    ],
+    "rationale": "A CYP-only review misses harm caused by overlapping responses even when concentrations are unchanged. The other choices are protective reconciliation, assessment and necessity review, not the reasoning hazard."
+  },
+  "clinical-drug-interactions-021": {
+    "choices": [
+      "Anticoagulants, antiplatelets, NSAIDs, and selected serotonergic drugs can impair hemostasis through different mechanisms.",
+      "Bleeding risk increases only if one medicine raises the concentration of another.",
+      "An anticoagulant eliminates the bleeding contribution of an antiplatelet medicine.",
+      "Nonprescription NSAIDs cannot contribute to bleeding during anticoagulation."
+    ],
+    "rationale": "Different effects on hemostasis can combine without a kinetic interaction. The Eliquis label identifies antiplatelets, NSAIDs and selected serotonergic medicines as contributors. Neither a separate mechanism nor nonprescription status establishes compatibility."
+  },
+  "clinical-drug-interactions-022": {
+    "choices": [
+      "Preserve indicated therapy while removing avoidable exposures and managing bleeding risk.",
+      "Stop every indicated antithrombotic permanently whenever an interaction alert appears.",
+      "Keep all nonprescription NSAIDs because they are outside the prescription regimen.",
+      "Ignore bleeding counseling unless an anticoagulant concentration has increased."
+    ],
+    "rationale": "With an ongoing indication and no active pathological bleeding, remove avoidable contributors and manage bleeding risk while preserving necessary protection. Reflex discontinuation can increase thrombosis risk. Active pathological hemorrhage is a different situation requiring urgent product-specific management.",
+    "question": "A patient has an ongoing antithrombotic indication and no active pathological bleeding. Which action best addresses combined bleeding risk?"
+  },
+  "clinical-drug-interactions-023": {
+    "choices": [
+      "Review indication, dose, renal and liver function, prior bleeding, hemoglobin, stool symptoms, and gastroprotection.",
+      "Review the interaction alert color alone and omit the treatment indication.",
+      "Review the anticoagulant dose alone and omit bleeding symptoms and organ function.",
+      "Record nonprescription products as harmless without reviewing their ingredients."
+    ],
+    "rationale": "The indication, organ function, prior bleeding and current signs inform the benefit-risk decision. Hemoglobin and stool symptoms can contribute to assessment; gastroprotection is considered when indicated, not assumed for every patient. A dose or alert color alone cannot replace this review."
+  },
+  "clinical-drug-interactions-024": {
+    "choices": [
+      "Stopping essential antithrombotic therapy reflexively can exchange bleeding risk for thrombosis.",
+      "Confirming the antithrombotic indication before making a treatment change.",
+      "Reviewing avoidable NSAIDs and other contributors to bleeding.",
+      "Treating active pathological hemorrhage as a reason for urgent assessment."
+    ],
+    "rationale": "Reflex withdrawal of necessary antithrombotic protection can create thrombosis risk. The other choices are appropriate review or escalation steps. This does not advise continuation during active pathological hemorrhage."
+  },
+  "clinical-drug-interactions-025": {
+    "choices": [
+      "QT-active drugs interact with bradycardia, electrolytes, exposure, and cardiac substrate.",
+      "QT risk is determined solely by whether one medicine appears on a QT list.",
+      "Normal potassium excludes risk from bradycardia or another QT-active medicine.",
+      "A prolonged QT proves that torsades will occur."
+    ],
+    "rationale": "Repolarization risk reflects medicines, exposure, electrolyte state, heart rate and cardiac vulnerability. One normal variable does not exclude other contributors, and QT prolongation is not a guarantee of torsades."
+  },
+  "clinical-drug-interactions-026": {
+    "choices": [
+      "Correct modifiable risks and choose a safer regimen when the repolarization stack is unfavorable.",
+      "Continue all QT-active medicines without reviewing low potassium or magnesium.",
+      "Treat every long QT during a widened QRS as proof of acquired long-QT syndrome.",
+      "Use a normal electrolyte result to omit ECG and patient-context review."
+    ],
+    "rationale": "Correct modifiable contributors and choose a safer regimen when appropriate. Low potassium, low magnesium and bradycardia matter. A widened QRS may lengthen QT through depolarization; interpretation must distinguish that from delayed repolarization."
+  },
+  "clinical-drug-interactions-027": {
+    "choices": [
+      "Review QTc, QRS, heart rate, potassium, magnesium, kidney function, all QT drugs, and syncope.",
+      "Review the medicine list only and omit ECG, heart rate and electrolytes.",
+      "Review QTc only and disregard QRS duration and measurement method.",
+      "Review syncope only and omit kidney function and interacting exposures."
+    ],
+    "rationale": "Assess the complete electrical and exposure context. QRS duration and consistent measurement help interpret QT; kidney function can affect exposure, and potassium, magnesium, heart rate and symptoms contribute to the risk assessment."
+  },
+  "clinical-drug-interactions-028": {
+    "choices": [
+      "Treating QT risk as a property of one medicine ignores the patient system.",
+      "Reviewing all QT-active exposures alongside bradycardia and electrolytes.",
+      "Interpreting QT with attention to QRS duration and a consistent method.",
+      "Reassessing the regimen when kidney function or interacting therapy changes."
+    ],
+    "rationale": "A single-medicine view misses combined electrical and exposure factors. The other choices address the patient system and changing risk rather than representing the hazard."
+  },
+  "clinical-drug-interactions-029": {
+    "choices": [
+      "Potassium-raising medicines can combine with impaired renal excretion and supplements.",
+      "An absence of symptoms excludes potassium accumulation from interacting medicines.",
+      "Potassium-containing salt substitutes cannot add to medicine-related potassium risk.",
+      "Impaired kidney excretion prevents potassium-raising medicines from causing hyperkalemia."
+    ],
+    "rationale": "Potassium-raising exposures can combine with reduced excretion. Supplements and potassium-containing salt substitutes count as exposures, and hyperkalemia can occur without symptoms. Laboratory assessment is needed; it does not promise prevention."
+  },
+  "clinical-drug-interactions-030": {
+    "choices": [
+      "Review necessity and establish potassium and kidney monitoring after changes.",
+      "Wait for palpitations before ordering potassium or kidney tests.",
+      "Apply the same testing interval to every drug and every kidney trajectory.",
+      "Order potassium tests without naming who will review and act on the results."
+    ],
+    "rationale": "Review necessity, establish potassium and kidney testing after relevant changes, and name the reviewer and response plan. Timing depends on the product and patient. Waiting for symptoms, using one universal interval, or leaving results unowned is inadequate."
+  },
+  "clinical-drug-interactions-031": {
+    "choices": [
+      "Review baseline potassium, renal trajectory, volume status, diabetes, RAAS drugs, trimethoprim, and supplements.",
+      "Review potassium symptoms only and omit the measured baseline value.",
+      "Review supplements only and omit RAAS medicines and trimethoprim.",
+      "Use one old kidney result and omit recent volume or medicine changes."
+    ],
+    "rationale": "Combine measured potassium with the current kidney trajectory, volume and diabetes context, and all relevant medicine and supplement exposures. Renin-angiotensin system medicines and trimethoprim can contribute. Partial histories and an old isolated value miss changing risk."
+  },
+  "clinical-drug-interactions-032": {
+    "choices": [
+      "Waiting for symptoms can miss dangerous asymptomatic hyperkalemia.",
+      "Reviewing potassium and kidney results after relevant treatment changes.",
+      "Reconciling potassium-containing supplements and salt substitutes.",
+      "Assigning a clinician to review results and implement the response plan."
+    ],
+    "rationale": "Hyperkalemia may be asymptomatic, so waiting for symptoms can miss an important abnormality. Testing and an owned response plan support detection and action but cannot guarantee detection before arrhythmia. The other choices are protective steps."
+  }
+};
+
 export const clinicalDrugInteractionsQuestionBank = generated.map((question) => {
-  const repair = feedingQuestionRepairs[question.id];
+  const repair = pharmacodynamicQuestionRepairs[question.id] || feedingQuestionRepairs[question.id];
   return repair ? { ...question, ...repair } : question;
 });
