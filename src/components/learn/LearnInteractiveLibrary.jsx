@@ -74,7 +74,7 @@ export default function LearnInteractiveLibrary() {
             <div className={`${styles.card} ${styles[item.kind]}`}>
               <div className={styles.cardHeading}><span>{item.title}</span><span className={styles.mark}>NaS</span></div>
               {item.kind === "lesson" ? <div className={styles.lessonPreview}>
-                <video src="/learn/interactive/heart-electrical-v1/showcase.mp4" poster="/learn/interactive/heart-electrical-v1/poster.png" muted loop playsInline preload="metadata" tabIndex={-1} />
+                <video src="/learn/interactive/heart-electrical-v2/showcase.mp4" poster="/learn/interactive/heart-electrical-v2/poster.png" muted loop playsInline preload="metadata" tabIndex={-1} />
               </div> : <Diagram kind={item.kind} />}
               <p className={styles.cardCaption}>{item.caption}</p>
             </div>
