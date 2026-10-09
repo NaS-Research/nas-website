@@ -23,7 +23,6 @@
 .card { border:1px solid #766b5414; border-radius:12px; padding:18px 20px 15px; background:#ece5d9; color:#302c25; }
 .heart { background:#ede0d3; }.potential { background:#e4e7e1; }.receptor { background:#e6e2da; }.kinetics { background:#e9e4d5; }
 .cardHeading { display:flex; justify-content:space-between; align-items:center; gap:10px; font-size:.85rem; font-weight:550; letter-spacing:-.02em; }
-.mark { color:#8d7345; font-size:.68rem; letter-spacing:0; }
 .card svg { display:block; width:100%; height:155px; margin-block:10px; }
 .card svg text { fill:#6b6457; font-family:inherit; font-size:10px; }
 .cardCaption { margin:0; padding-top:10px; border-top:1px solid #766b5426; color:#6b6253; font-size:.65rem; line-height:1.5; }
@@ -42,3 +41,6 @@
 .lessonPreview { width:100%; aspect-ratio:16/9; margin-block:6px; overflow:hidden; border-radius:6px; background:#f8f8f5; border:1px solid #d7d8cf; }
 .lessonPreview video { display:block; width:100%; height:100%; object-fit:cover; transform:none; }
 @media(prefers-reduced-motion:reduce) { .lessonPreview video { visibility:hidden; }.lessonPreview { background:#f8f8f5 url('/learn/interactive/heart-electrical-v2/poster.png') center/cover no-repeat; } }
+
+.lesson .cardHeading { display:block; padding-block:2px; font-size:1.125rem; font-weight:450; letter-spacing:-.035em; line-height:1.2; color:#272923; }
+.lesson .cardCaption { padding-top:6px; color:#7a776c; letter-spacing:.01em; }

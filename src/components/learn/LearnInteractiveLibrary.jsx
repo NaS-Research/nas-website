@@ -5,7 +5,7 @@ import styles from "./LearnInteractiveLibrary.module.css";
 
 const previews = [
   { kind: "heart", prompt: "Follow the heart’s electrical signal.", title: "Heart electrical conduction", caption: "SA node → AV node → His–Purkinje system" },
-  { kind: "lesson", prompt: "Trace the heart’s electrical signal.", title: "The heart’s electrical system", caption: "Follow the pathway. Connect it to the ECG." },
+  { kind: "lesson", prompt: "Trace the heart’s electrical signal.", title: "Cardiac conduction", caption: "Trace the signal. Read the ECG." },
   { kind: "receptor", prompt: "Connect a receptor to its response.", title: "Receptor signaling", caption: "Binding → Activation → Cellular response" },
   { kind: "kinetics", prompt: "See what happens between doses.", title: "Drug concentration over time", caption: "Dose · Interval · Elimination" },
 ];
@@ -66,13 +66,13 @@ export default function LearnInteractiveLibrary() {
         </dl>
       </div>
       <div className={styles.previewPanel}>
-        <div className={styles.panelCopy}><p>NaS Learn</p><h3>See the<br />mechanism.</h3><span>Signals. Responses. Connections.</span></div>
+        <div className={styles.panelCopy}><p>Interactive learning</p><h3>See the<br />mechanism.</h3><span>Signals. Responses. Connections.</span></div>
       <div ref={viewport} className={styles.showcase} data-running={running} aria-hidden="true">
         <div className={styles.track}>
           {reel.map((item, index) => <div className={styles.item} key={`${item.kind}-${index}`}>
             <p className={styles.prompt}>{item.prompt}</p>
             <div className={`${styles.card} ${styles[item.kind]}`}>
-              <div className={styles.cardHeading}><span>{item.title}</span><span className={styles.mark}>NaS</span></div>
+              <div className={styles.cardHeading}><span>{item.title}</span></div>
               {item.kind === "lesson" ? <div className={styles.lessonPreview}>
                 <video src="/learn/interactive/heart-electrical-v2/showcase.mp4" poster="/learn/interactive/heart-electrical-v2/poster.png" muted loop playsInline preload="metadata" tabIndex={-1} />
               </div> : <Diagram kind={item.kind} />}
