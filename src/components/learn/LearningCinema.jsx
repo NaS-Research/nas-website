@@ -3,7 +3,7 @@ import "./learning-cinema.css";
 const videoId = "TyBZvTlBrys";
 const filmTitle = "Agonists vs Antagonists: How Drugs Activate or Block Receptors";
 const watchUrl = `https://www.youtube.com/watch?v=${videoId}`;
-const previewUrl = `https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&mute=1&loop=1&playlist=${videoId}&playsinline=1&rel=0`;
+const previewUrl = `https://www.youtube-nocookie.com/embed/${videoId}?start=20&autoplay=1&mute=1&loop=1&playlist=${videoId}&playsinline=1&rel=0`;
 
 export default function LearningCinema() {
   return <section id="films" className="learning-cinema" aria-labelledby="learning-cinema-title">
