@@ -33,7 +33,272 @@ const concepts = [
 
 const dimensions = [["principle", "Which principle best characterizes"], ["action", "Which clinical action best applies to"], ["assessment", "Which assessment is most appropriate for"], ["hazard", "Which reasoning hazard is most important to prevent with"]];
 function distractors(index, field) { return [5, 11, 17].map((offset) => concepts[(index + offset) % concepts.length][field]); }
-export const ckdComplicationsQuestionBank = concepts.flatMap((concept, conceptIndex) => dimensions.map(([field, prompt], dimensionIndex) => ({
+const generatedCkdComplicationsQuestions = concepts.flatMap((concept, conceptIndex) => dimensions.map(([field, prompt], dimensionIndex) => ({
   id: `ckd-complications-${String(conceptIndex * 4 + dimensionIndex + 1).padStart(3, "0")}`,
   question: `${prompt} ${concept.name}?`, choices: [concept[field], ...distractors(conceptIndex, field)], answer: 0, rationale: concept.why, reviewHref: `#${concept.lesson}`,
 })));
+
+const reviewedElectrolyteQuestions = [
+  {
+    "id": "ckd-complications-061",
+    "question": "Which principle distinguishes acute treatment from chronic control of hyperkalemia?",
+    "choices": [
+      "Severe, rapidly rising, symptomatic, or ECG-associated hyperkalemia requires acute stabilization and removal, while chronic control addresses recurrence.",
+      "A chronic diet plan provides immediate cardiac stabilization in a dangerous presentation.",
+      "Insulin permanently removes excess potassium from the body.",
+      "A fall in potassium after shifting eliminates the need to assess recurrence."
+    ],
+    "answer": 0,
+    "rationale": "Acute danger requires prompt stabilization when indicated, potassium shifting and an appropriate removal plan. Chronic measures address recurrence. Calcium does not lower potassium, and shifting does not remove it, so the response must be reassessed.",
+    "reviewHref": "#potassium-and-acid-base-disorders"
+  },
+  {
+    "id": "ckd-complications-062",
+    "question": "A patient with CKD has a potentially dangerous potassium result. Which action is appropriate?",
+    "choices": [
+      "Confirm artifact when possible without delaying cardiac stabilization in a dangerous presentation.",
+      "Delay all assessment until a repeat sample is available, regardless of symptoms.",
+      "Treat every unexpected sample as artifact and discharge the patient.",
+      "Use a long-term diet change as the only response to an unstable presentation."
+    ],
+    "answer": 0,
+    "rationale": "Check for artifact and obtain appropriate confirmation while assessing and treating immediate danger. Confirmation is important, but it must not delay stabilization when the presentation is dangerous. Chronic dietary counseling cannot replace acute care.",
+    "reviewHref": "#potassium-and-acid-base-disorders"
+  },
+  {
+    "id": "ckd-complications-063",
+    "question": "Which assessment best informs urgency and mechanism when potassium is elevated?",
+    "choices": [
+      "Review potassium trend, hemolysis, ECG, weakness, glucose, acid-base state, tissue breakdown, drugs, excretion, and access to emergency care.",
+      "Use the potassium concentration alone and omit symptoms and kidney function.",
+      "Review only dietary potassium without checking medications or sample validity.",
+      "Assess the ECG once and omit the potassium trend and clinical setting."
+    ],
+    "answer": 0,
+    "rationale": "Interpret the result with its trajectory, symptoms, sample validity, kidney excretion, medicines, glucose and acid-base status. These factors help distinguish artifact, impaired elimination and redistribution. Neither dietary history nor one ECG supplies the entire assessment.",
+    "reviewHref": "#potassium-and-acid-base-disorders"
+  },
+  {
+    "id": "ckd-complications-064",
+    "question": "Which statement best prevents unsafe interpretation of an ECG in a patient with severe hyperkalemia?",
+    "choices": [
+      "A normal ECG does not exclude serious risk from severe or rapidly changing potassium.",
+      "A normal ECG proves that severe hyperkalemia is harmless.",
+      "Absence of weakness rules out dangerous hyperkalemia.",
+      "Chronic dietary measures make urgent reassessment unnecessary."
+    ],
+    "answer": 0,
+    "rationale": "The ECG has limited sensitivity: severe hyperkalemia can be present without typical changes. Assess the confirmed potassium result and clinical context rather than using a normal ECG or absent symptoms to dismiss risk. Chronic control does not substitute for urgent assessment.",
+    "reviewHref": "#potassium-and-acid-base-disorders"
+  },
+  {
+    "id": "ckd-complications-065",
+    "question": "Which principle best explains multiple contributors to chronic hyperkalemia in CKD?",
+    "choices": [
+      "RAAS drugs, MRA therapy, NSAIDs, trimethoprim, supplements, salt substitutes, constipation, acidosis, hyperglycemia, and reduced excretion can combine.",
+      "Diet is the only possible cause when potassium is elevated.",
+      "A prescribed medicine cannot contribute if its dose has not recently changed.",
+      "Constipation and glucose-related shifts are irrelevant to potassium assessment."
+    ],
+    "answer": 0,
+    "rationale": "Reduced excretion can combine with medicine effects, dietary or supplemental potassium, bowel function, acidosis and glucose-related changes. Review interacting drivers rather than attributing every result to food or assuming a stable prescription cannot contribute.",
+    "reviewHref": "#potassium-and-acid-base-disorders"
+  },
+  {
+    "id": "ckd-complications-066",
+    "question": "For a stable nonemergent potassium elevation during indicated ACE inhibitor therapy, which action is appropriate?",
+    "choices": [
+      "Correct reversible contributors and preserve outcome-improving therapy when safe measures can control potassium.",
+      "Permanently stop every kidney-protective medicine after one mild result.",
+      "Continue unchanged despite uncontrolled hyperkalemia and omit follow-up.",
+      "Prescribe a binder and disregard any product-specific withholding rules."
+    ],
+    "answer": 0,
+    "rationale": "Correct reversible contributors and consider appropriate measures that permit safe continuation of an indicated medicine. This approach still requires repeat testing and action on uncontrolled hyperkalemia; a mitigation plan does not waive medicine-specific hold rules.",
+    "reviewHref": "#potassium-and-acid-base-disorders"
+  },
+  {
+    "id": "ckd-complications-067",
+    "question": "Which assessment best identifies chronic hyperkalemia contributors and a monitored response?",
+    "choices": [
+      "Review full medication and diet history, bowel pattern, glucose, bicarbonate, volume, GFR, urine, and serial potassium.",
+      "Review diet alone and omit nonprescription supplements and salt substitutes.",
+      "Review creatinine alone and omit serial potassium, glucose and bowel function.",
+      "Review the last potassium result but omit volume, medicines and follow-up."
+    ],
+    "answer": 0,
+    "rationale": "A complete review includes prescribed and nonprescription exposures, diet, bowel function, kidney excretion, glucose, acid-base and volume status, and potassium trajectory. Narrow review can leave a reversible contributor or a monitoring need unidentified.",
+    "reviewHref": "#potassium-and-acid-base-disorders"
+  },
+  {
+    "id": "ckd-complications-068",
+    "question": "Which statement identifies a reasoning hazard in managing a mild potassium increase during indicated RAAS therapy?",
+    "choices": [
+      "Permanently stopping RAAS therapy after one mild result can sacrifice kidney and cardiovascular benefit.",
+      "Assign repeat potassium testing and a clinician responsible for the result.",
+      "Review medicines and salt substitutes before deciding the long-term plan.",
+      "Assess whether suitable mitigation can permit safe continuation."
+    ],
+    "answer": 0,
+    "rationale": "Reflex permanent withdrawal after one mild result may sacrifice an indicated treatment before reversible causes are addressed. The other choices describe appropriate follow-up or assessment. Preservation of benefit still depends on controlling potassium safely.",
+    "reviewHref": "#potassium-and-acid-base-disorders"
+  },
+  {
+    "id": "ckd-complications-069",
+    "question": "Which principle should guide potassium dietary counseling in CKD?",
+    "choices": [
+      "Dietary management should target actual sources, processing, portions, and salt substitutes while preserving fiber and nutritional quality.",
+      "All foods with the same potassium content have identical bioavailability.",
+      "Replace every fruit and vegetable with highly processed foods regardless of additives.",
+      "Ignore salt substitutes because they cannot contain potassium."
+    ],
+    "answer": 0,
+    "rationale": "Assess actual intake and the bioavailability associated with food sources and processing, including potassium-containing additives and salt substitutes. Individualized substitutions should preserve nutrition and fiber rather than imposing a universal plant-food ban.",
+    "reviewHref": "#potassium-and-acid-base-disorders"
+  },
+  {
+    "id": "ckd-complications-070",
+    "question": "Which action best supports individualized potassium dietary management?",
+    "choices": [
+      "Use a dietitian and individualized substitutions rather than banning all plant foods.",
+      "Ban all plant foods without reviewing measured potassium or current intake.",
+      "Recommend unrestricted potassium-containing salt substitutes to reduce sodium.",
+      "Use one fixed food list for every person without reviewing nutritional needs."
+    ],
+    "answer": 0,
+    "rationale": "Renal dietitian support and individualized substitutions can address readily absorbable potassium while preserving diet quality. Broad plant-food bans, unchecked potassium salt substitutes and fixed lists can overlook the actual source, risk and nutritional consequences.",
+    "reviewHref": "#potassium-and-acid-base-disorders"
+  },
+  {
+    "id": "ckd-complications-071",
+    "question": "Which dietary assessment is most useful when planning chronic potassium management?",
+    "choices": [
+      "Review dietary recall, processed foods, additives, cultural foods, constipation, food access, diabetes, nutrition, and potassium trajectory.",
+      "Count fruit servings only and omit processed foods and additives.",
+      "Review the food list alone without considering bowel function or access to food.",
+      "Assume salt substitutes are potassium-free without reading their composition."
+    ],
+    "answer": 0,
+    "rationale": "Review the actual pattern, sources, additives and salt substitutes with nutrition, bowel function, diabetes, access and potassium trend. These factors make counseling actionable; counting one food group or assuming product composition can misidentify the problem.",
+    "reviewHref": "#potassium-and-acid-base-disorders"
+  },
+  {
+    "id": "ckd-complications-072",
+    "question": "Which statement identifies a reasoning hazard in potassium dietary counseling?",
+    "choices": [
+      "Indiscriminate restriction can worsen constipation and diet quality, which may undermine potassium control and health.",
+      "Review potassium additives and salt-substitute composition.",
+      "Use a renal dietitian to plan substitutions that preserve nutrition.",
+      "Consider bowel function and the measured potassium trajectory."
+    ],
+    "answer": 0,
+    "rationale": "Indiscriminate restriction can reduce fiber and diet quality and worsen constipation, a relevant contributor to impaired potassium elimination. The other choices describe appropriate assessment and individualized counseling rather than that hazard.",
+    "reviewHref": "#potassium-and-acid-base-disorders"
+  },
+  {
+    "id": "ckd-complications-073",
+    "question": "Which statement most accurately describes chronic metabolic acidosis and alkali evidence in CKD?",
+    "choices": [
+      "Declining hydrogen-ion excretion and bicarbonate generation can cause chronic metabolic acidosis; observed adverse-outcome associations do not prove that alkali prevents kidney failure.",
+      "A higher bicarbonate after treatment proves that kidney failure has been prevented.",
+      "Every low bicarbonate result proves that CKD is the only cause.",
+      "A fixed bicarbonate target removes the need to assess blood pressure or fluid status."
+    ],
+    "answer": 0,
+    "rationale": "As GFR falls, hydrogen-ion excretion and bicarbonate generation can decrease. Adverse outcomes are associated with acidosis, but that does not establish causation or demonstrate that oral alkali prevents kidney failure. Diagnose the disorder and monitor treatment rather than equating biochemical response with clinical benefit.",
+    "reviewHref": "#potassium-and-acid-base-disorders"
+  },
+  {
+    "id": "ckd-complications-074",
+    "question": "Which action is appropriate for a low bicarbonate result in a person with CKD?",
+    "choices": [
+      "Confirm the disorder and consider diet or pharmacologic alkali for clinically important acidosis with monitored response.",
+      "Treat one low total CO2 result as a complete diagnosis without clinical review.",
+      "Escalate alkali regardless of fluid retention or rising blood pressure.",
+      "Present the KDIGO below-18 example as a mandatory boundary for every adult."
+    ],
+    "answer": 0,
+    "rationale": "Confirm and characterize the disorder before selecting individualized dietary or pharmacologic treatment. KDIGO gives bicarbonate below 18 mmol/L in adults as an example of acidosis with potential clinical implications; treatment still needs context and monitoring for bicarbonate excess, blood pressure, potassium and fluid effects.",
+    "reviewHref": "#potassium-and-acid-base-disorders"
+  },
+  {
+    "id": "ckd-complications-075",
+    "question": "Which assessment best characterizes a possible metabolic acidosis before and during treatment?",
+    "choices": [
+      "Review repeat bicarbonate, blood gas when needed, anion gap, potassium, diarrhea, medications, nutrition, pressure, volume, and respiratory compensation.",
+      "Use total CO2 alone and omit pH, PaCO2 and clinical context when the disorder is uncertain.",
+      "Review sodium alone and omit diarrhea, medicines and kidney function.",
+      "Review symptoms only and omit the bicarbonate trend and treatment-related volume effects."
+    ],
+    "answer": 0,
+    "rationale": "Use the bicarbonate trend and clinical context, with blood gas assessment when needed, to distinguish metabolic and respiratory processes or a mixed disorder. Anion gap, potassium, gastrointestinal losses, medicines, nutrition, blood pressure and volume inform cause and safety. One isolated measure is not the whole diagnosis.",
+    "reviewHref": "#potassium-and-acid-base-disorders"
+  },
+  {
+    "id": "ckd-complications-076",
+    "question": "Which statement identifies a reasoning hazard when a low serum total CO2 is found?",
+    "choices": [
+      "Treating one low total CO2 as a complete acid-base diagnosis can miss chronic respiratory alkalosis or a mixed disorder.",
+      "Use the blood gas and clinical history when the acid-base disorder is uncertain.",
+      "Consider gastrointestinal losses and medication effects as possible causes.",
+      "Assess the bicarbonate trend and treatment-related blood pressure or volume effects."
+    ],
+    "answer": 0,
+    "rationale": "A low bicarbonate or total CO2 result does not by itself prove metabolic acidosis: chronic respiratory alkalosis or a mixed disorder can also lower bicarbonate. Sample and clinical assessment are important. The other choices support confirmation, a differential or safety monitoring.",
+    "reviewHref": "#potassium-and-acid-base-disorders"
+  },
+  {
+    "id": "ckd-complications-077",
+    "question": "Which principle best describes the safety of sodium-containing oral alkali in CKD?",
+    "choices": [
+      "Sodium-containing oral alkali can improve bicarbonate but adds sodium and can affect blood pressure, fluid status, potassium and treatment burden.",
+      "Sodium bicarbonate cannot affect fluid status because it is used to treat acidosis.",
+      "All oral alkali formulations have identical sodium content and monitoring needs.",
+      "A rise in bicarbonate removes the need to monitor potassium or blood pressure."
+    ],
+    "answer": 0,
+    "rationale": "Sodium-containing alkali can improve bicarbonate while adding sodium burden. Monitor the response alongside blood pressure, potassium and fluid status; avoid bicarbonate above the upper limit of normal. Formulation and patient factors matter, so neither a biochemical response nor a class label establishes safety.",
+    "reviewHref": "#potassium-and-acid-base-disorders"
+  },
+  {
+    "id": "ckd-complications-078",
+    "question": "Which action best supports safe selection and titration of oral sodium bicarbonate?",
+    "choices": [
+      "Select and titrate therapy with explicit bicarbonate, weight, edema, pressure, and electrolyte follow-up.",
+      "Increase the dose until bicarbonate exceeds the upper limit of normal.",
+      "Check bicarbonate alone and disregard rising weight or edema.",
+      "Continue the same dose without reassessment after blood pressure worsens."
+    ],
+    "answer": 0,
+    "rationale": "Define follow-up for bicarbonate, potassium, blood pressure and fluid status, including weight and edema where relevant. Biochemical correction must not overshoot the normal range or worsen congestion and pressure control; titration requires reassessment of benefit and harm.",
+    "reviewHref": "#potassium-and-acid-base-disorders"
+  },
+  {
+    "id": "ckd-complications-079",
+    "question": "Which assessment best identifies risks and practical limits of sodium-containing alkali treatment?",
+    "choices": [
+      "Review sodium sensitivity, heart failure, edema, pressure, potassium, GI tolerance, medication burden, and dietary acid load.",
+      "Review bicarbonate alone and assume heart failure has no relevance.",
+      "Omit tolerance and medicine burden because they cannot affect continuation.",
+      "Assume dietary acid load and potassium needs are the same for every patient."
+    ],
+    "answer": 0,
+    "rationale": "Review sodium sensitivity, heart failure, edema, blood pressure, potassium, tolerance, treatment burden and dietary context. These factors help select an individualized, monitored plan. A bicarbonate value alone does not capture cardiovascular volume risk or practical treatment limits.",
+    "reviewHref": "#potassium-and-acid-base-disorders"
+  },
+  {
+    "id": "ckd-complications-080",
+    "question": "Which statement identifies a reasoning hazard when escalating sodium bicarbonate in CKD?",
+    "choices": [
+      "Escalating sodium bicarbonate without volume monitoring can worsen congestion.",
+      "Reassess fluid status and blood pressure when the dose is adjusted.",
+      "Monitor serum bicarbonate to avoid exceeding the upper limit of normal.",
+      "Review potassium and tolerability as part of the treatment response."
+    ],
+    "answer": 0,
+    "rationale": "Sodium bicarbonate adds sodium, so escalation without volume surveillance can worsen fluid retention or congestion. The other choices describe appropriate reassessment. A bicarbonate increase is only one part of judging the response.",
+    "reviewHref": "#potassium-and-acid-base-disorders"
+  }
+];
+const reviewedElectrolyteById = new Map(reviewedElectrolyteQuestions.map((item) => [item.id, item]));
+export const ckdComplicationsQuestionBank = generatedCkdComplicationsQuestions.map((item) => reviewedElectrolyteById.get(item.id) ?? item);

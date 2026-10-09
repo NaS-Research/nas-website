@@ -59,19 +59,79 @@ export const ckdComplicationsModule = {
       check: { question: "What is the best initial response to a rising PTH in nondialysis CKD?", choices: ["Evaluate phosphate, calcium, vitamin D, intake, and CKD progression as modifiable factors", "Normalize PTH immediately with high-dose calcitriol in every patient", "Ignore calcium and phosphate", "Start a calcium binder despite normal phosphate"], answer: 0, rationale: "KDIGO recommends evaluating modifiable drivers before routine active vitamin D treatment in nondialysis CKD.", reviewHref: "#mineral-bone-and-vascular-disorder" },
     },
     {
-      slug: "potassium-and-acid-base-disorders", title: "Potassium and Acid-Base Disorders", visual: "ckdc-electrolytes",
-      summary: "Reduced potassium and acid excretion interact with diabetes, RAAS therapy, diet, constipation, tissue breakdown, and medicines. Chronic management should preserve outcome-improving therapy when it can be done safely.",
-      concepts: ["Hyperkalemia confirmation", "Medication drivers", "Dietary source", "Potassium binders", "Metabolic acidosis"],
-      application: "Confirm the abnormality, determine urgency and mechanism, remove avoidable contributors, restore elimination, and define monitoring and escalation without reflexively abandoning kidney-protective therapy.",
-      lesson: [
-        { heading: "Separate acute danger from chronic control", body: "Repeat a hemolyzed or unexpected potassium while responding immediately to severe or symptomatic hyperkalemia. ECG change, rapid rise, muscle weakness, acidosis, tissue breakdown, and impaired excretion increase urgency. Chronic control cannot substitute for acute cardiac stabilization and shifting when danger is present." },
-        { heading: "Correct reversible drivers", body: "Review RAAS and MRA therapy, NSAIDs, trimethoprim, potassium supplements and salt substitutes, constipation, glucose and insulin deficiency, acidosis, dehydration, tissue breakdown, and laboratory artifact. Preserve disease-modifying therapy when dose adjustment, diuresis, acidosis treatment, dietary modification, or a binder can control risk." },
-        { heading: "Use dietary counseling with precision", body: "Assess actual sources, portions, processing, salt substitutes, cultural pattern, constipation, and nutritional quality. Plant foods differ in bioavailability and benefit. Avoid broad restriction that replaces healthy foods with highly processed low-potassium products or worsens fiber intake." },
-        { heading: "Treat clinically important acidosis", body: "Confirm metabolic acidosis and its cause. KDIGO 2024 suggests considering pharmacologic treatment to prevent clinically important acidosis, particularly when bicarbonate is below about 18 mmol/L, while monitoring pressure, potassium, fluid, and treatment effects. Nutrition and oral alkali choices require individualized sodium and volume assessment." },
-      ],
-      keyPoints: ["Confirm without delaying danger treatment.", "Mechanism guides chronic control.", "Preserve beneficial therapy when safe.", "Alkali needs volume monitoring."],
-      check: { question: "What is the best chronic hyperkalemia strategy when RAAS therapy has a strong kidney indication?", choices: ["Correct reversible drivers and consider measures that permit safe continuation", "Stop every RAAS drug permanently after one mild result", "Ignore potassium until ECG changes", "Eliminate all fruits and vegetables"], answer: 0, rationale: "A mechanism-based plan can often control potassium while preserving outcome-improving therapy.", reviewHref: "#potassium-and-acid-base-disorders" },
+  "slug": "potassium-and-acid-base-disorders",
+  "title": "Potassium and Acid-Base Disorders",
+  "visual": "ckdc-electrolytes",
+  "summary": "Reduced potassium and acid excretion interact with diabetes, RAAS therapy, diet, constipation, tissue breakdown, and medicines. Chronic management should preserve outcome-improving therapy when it can be done safely.",
+  "concepts": [
+    "Hyperkalemia confirmation",
+    "Medication drivers",
+    "Dietary source",
+    "Potassium binders",
+    "Metabolic acidosis"
+  ],
+  "application": "Confirm the abnormality, determine urgency and mechanism, remove avoidable contributors, restore elimination, and define monitoring and escalation without reflexively abandoning kidney-protective therapy.",
+  "lesson": [
+    {
+      "heading": "Confirm the result without delaying urgent treatment",
+      "body": "Interpret the potassium concentration and trajectory with symptoms, kidney function, urine output, medication exposure and the clinical setting. A hemolyzed or unexpected sample can require prompt repeat measurement; sample collection, handling and differences between serum and plasma can affect the result. Severe or symptomatic hyperkalemia requires immediate clinical assessment and appropriate treatment. Confirmation must not become a reason to postpone care for a dangerous presentation. A normal ECG does not exclude serious hyperkalemia; interpret it with the potassium result and the clinical presentation."
     },
+    {
+      "heading": "Distinguish stabilization, shifting and removal",
+      "body": "Acute treatment has different goals. Intravenous calcium stabilizes cardiac cells when indicated but does not lower potassium. Insulin with glucose and a beta-2 agonist can shift potassium into cells without removing it from the body. Potassium elimination requires an appropriate renal, gastrointestinal or dialysis strategy. Review glucose for hypoglycemia after insulin and reassess potassium after treatment and assess the need for ongoing removal and recurrence prevention; a chronic dietary or binder plan does not replace urgent stabilization and shifting."
+    },
+    {
+      "heading": "Identify interacting potassium drivers",
+      "body": "Reduced kidney excretion can combine with impaired cellular uptake, tissue breakdown, acidosis, hyperglycemia or insulin deficiency. Review ACE inhibitors or ARBs, mineralocorticoid receptor antagonists, potassium-sparing diuretics, NSAIDs, trimethoprim, potassium supplements and potassium-containing salt substitutes. Include nonprescription products and the bowel pattern. Constipation can matter because gastrointestinal potassium excretion becomes more important as CKD advances. Do not attribute every elevated result to dietary intake alone."
+    },
+    {
+      "heading": "Build a monitored plan for nonemergent hyperkalemia",
+      "body": "For a stable nonemergent presentation, address correctable contributors and actual dietary exposure, then consider suitable diuresis, treatment of clinically important acidosis or a licensed potassium exchange agent. When safe, these measures may allow an indicated ACE inhibitor or ARB to continue. Uncontrolled hyperkalemia still requires a treatment change, and product-specific withholding rules remain applicable. Set a repeat potassium date, an escalation plan and a clinician responsible for reviewing the result; any temporary medicine hold also needs reassessment and restart criteria."
+    },
+    {
+      "heading": "Target dietary sources while preserving nutrition",
+      "body": "Individualize counseling using the actual food pattern, portions, processing, additives, supplements and salt substitutes. Potassium bioavailability varies: many highly processed foods and potassium-chloride salt substitutes provide readily absorbable potassium. Broadly banning fruits and vegetables can reduce dietary quality and fiber. A renal dietitian can help choose substitutions that fit the potassium result, diabetes, bowel function, nutritional needs, preferences and access to food. Dietary restriction does not replace review of medicines and impaired excretion."
+    },
+    {
+      "heading": "Choose a potassium binder by its clinical constraints",
+      "body": "Potassium exchange agents differ in onset, formulation, counterion content, tolerability and interactions with other medicines. Review the selected product instructions, gastrointestinal function, potassium response and other required electrolyte monitoring. Sodium-containing products can matter when edema or sodium burden is a concern; magnesium effects and oral medicine separation are relevant for some agents. Access and local availability also affect the plan. Do not assume that a faster onset makes an oral binder equivalent to emergency cardiac stabilization or potassium shifting."
+    },
+    {
+      "heading": "Recognize acidosis without overstating treatment benefit",
+      "body": "Declining kidney function can reduce hydrogen-ion excretion and bicarbonate generation, contributing to chronic metabolic acidosis. Evaluate a low bicarbonate result and its cause rather than assuming CKD explains every abnormality. Acidosis is associated with muscle wasting and other adverse outcomes, but association does not prove that correcting bicarbonate prevents kidney failure. KDIGO 2024 notes that placebo-controlled evidence does not establish an important kidney-failure benefit from oral sodium bicarbonate."
+    },
+    {
+      "heading": "Diagnose a low bicarbonate result",
+      "body": "A low serum bicarbonate or total CO2 result alone does not establish metabolic acidosis. Chronic respiratory alkalosis and mixed acid-base disorders can also lower bicarbonate. Review repeat chemistry and the clinical history; use blood gas assessment when the diagnosis or respiratory response is uncertain. Consider the anion gap, potassium, kidney function, gastrointestinal losses and medicine exposure when evaluating the cause. Confirm the disorder before treating a low value as CKD-related metabolic acidosis."
+    },
+    {
+      "heading": "Use the current guideline threshold in context",
+      "body": "KDIGO 2024 advises considering pharmacologic treatment, with or without dietary intervention, to prevent acidosis with potential clinical implications. It gives serum bicarbonate below 18 mmol/L in adults as an example, rather than a universal mandatory treatment boundary. The older review book uses a below-22 mEq/L ambulatory threshold. Distinguish that earlier teaching from the later guideline and individualize the decision using repeat results, the cause, severity, symptoms and treatment risks."
+    },
+    {
+      "heading": "Monitor alkali, sodium and volume together",
+      "body": "Oral sodium bicarbonate can raise serum bicarbonate but adds sodium and may worsen fluid retention or blood pressure control. Monitor the bicarbonate response so it does not exceed the upper limit of normal, and follow potassium, blood pressure, weight, edema and fluid status. Review tolerance and medicine burden when selecting or adjusting therapy. Dietary measures that reduce net acid production may complement treatment, but potassium and nutritional needs still require an individualized plan. A better bicarbonate number is not sufficient if congestion or other complications worsen."
+    }
+  ],
+  "keyPoints": [
+    "Confirm without delaying danger treatment.",
+    "Mechanism guides chronic control.",
+    "Preserve beneficial therapy when safe.",
+    "Alkali needs volume monitoring."
+  ],
+  "check": {
+    "question": "What is the best chronic hyperkalemia strategy when RAAS therapy has a strong kidney indication?",
+    "choices": [
+      "Correct reversible drivers and consider measures that permit safe continuation",
+      "Stop every RAAS drug permanently after one mild result",
+      "Ignore potassium until ECG changes",
+      "Eliminate all fruits and vegetables"
+    ],
+    "answer": 0,
+    "rationale": "Correct reversible contributors and use suitable potassium-lowering measures when these allow an indicated ACE inhibitor or ARB to continue safely. Repeat testing, a responsible clinician and an escalation plan remain necessary. Uncontrolled hyperkalemia or product-specific withholding rules can still require a medicine change.",
+    "reviewHref": "#potassium-and-acid-base-disorders"
+  }
+},
     {
       slug: "volume-nutrition-and-metabolic-health", title: "Volume, Nutrition, and Metabolic Health", visual: "ckdc-volume",
       summary: "Sodium and water excess can coexist with poor intake, sarcopenia, and protein-energy wasting. Weight, edema, albumin, and appetite must be interpreted as a system.",
@@ -122,6 +182,8 @@ export const ckdComplicationsModule = {
     { label: "KDIGO 2024 CKD Guideline", href: "https://kdigo.org/wp-content/uploads/2024/03/KDIGO-2024-CKD-Guideline.pdf" },
     { label: "KDIGO Potassium Management Resources", href: "https://kdigo.org/conferences/controversies-conference-potassium-management/" },
     { label: "DailyMed Current Medication Labeling", href: "https://dailymed.nlm.nih.gov/dailymed/" },
+    {"label": "KDIGO Acute Hyperkalemia Conference Report (2020)", "href": "https://kdigo.org/wp-content/uploads/2018/04/KDIGO-Acute-Hyperkalemia-conf-report-FINAL.pdf"},
+    {"label": "Metabolic Acidosis or Respiratory Alkalosis? (AJKD, 2017)", "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5572668/"},
   ],
   questionBank: ckdComplicationsQuestionBank,
 };
