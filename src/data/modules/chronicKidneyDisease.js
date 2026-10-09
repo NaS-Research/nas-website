@@ -106,11 +106,51 @@ export const chronicKidneyDiseaseModule = {
       concepts: ["RAAS response", "Hyperkalemia mitigation", "SGLT2 safety", "Finerenone titration", "Response ownership"],
       application: "Translate each disease-modifying therapy into a baseline assessment, timed laboratory plan, expected physiologic response, danger threshold, mitigation strategy, and explicit next action.",
       lesson: [
-        { heading: "Monitor RAAS blockade as a pathway", body: "Before and after starting or increasing an ACE inhibitor or ARB, assess pressure, creatinine, potassium, volume, NSAID exposure, and interacting medicines. Recheck within two to four weeks, or sooner when risk is high. Continue when changes are expected and stable. A creatinine rise above 30 percent within four weeks prompts evaluation for volume depletion, medications, obstruction, or renal artery disease before a final dose decision." },
-        { heading: "Manage potassium before surrendering benefit", body: "When RAAS therapy causes hyperkalemia, review diet in context, constipation, supplements, salt substitutes, NSAIDs, trimethoprim, potassium-sparing drugs, acidosis, and volume status. Diuretics, bicarbonate for appropriate metabolic acidosis, and potassium binders may preserve indicated therapy. Reduce or stop treatment when hyperkalemia remains uncontrolled or symptomatic hypotension persists despite mitigation." },
-        { heading: "Pair SGLT2 benefit with practical safety", body: "Assess volume and diuretic burden, genital infection history, diabetes medicines, ketosis risk, fasting, and procedures. Counsel on genital hygiene, symptoms of infection, volume depletion, and ketoacidosis. Withhold during prolonged fasting, surgery, or critical illness, then document restart criteria. A reversible early eGFR dip usually does not require extra CKD monitoring by itself." },
-        { heading: "Use potassium to govern finerenone", body: "Confirm type 2 diabetes with CKD, persistent albuminuria, tolerated RAAS inhibition, eGFR eligibility, serum potassium, and absence of a strong CYP3A4 inhibitor. Select the labeled starting dose from eGFR, repeat potassium at about four weeks, and use the current label thresholds to continue, titrate, hold, or restart rather than improvising a fixed rule." },
-      ],
+        {
+                "heading": "Monitor ACE inhibitor or ARB treatment as a pathway",
+                "body": "Before initiation or titration, establish blood pressure, creatinine, potassium, volume status and relevant medication exposure. Reassess blood pressure, creatinine and potassium within two to four weeks, with earlier review when kidney function, potassium or clinical risk warrants it. Interpret the size, timing and trajectory of a change alongside symptoms and volume; a small stable hemodynamic change does not by itself establish structural kidney injury."
+        },
+        {
+                "heading": "Calculate the change using the correct kidney metric",
+                "body": "For a creatinine increase, calculate (new creatinine minus baseline creatinine) divided by baseline creatinine, then multiply by 100. A rise from 1.0 to 1.4 mg/dL is 40 percent; a rise to 1.3 mg/dL is exactly 30 percent. KDIGO practice point 3.6.4 uses a creatinine increase greater than 30 percent within four weeks. Its response algorithm separately uses an eGFR decrease of at least 30 percent as an investigation trigger: an eGFR decline from 50 to 35 mL/min/1.73 m2 is 30 percent. A percentage creatinine rise and a percentage eGFR fall are different measurements and must not be substituted for each other."
+        },
+        {
+                "heading": "Investigate a concerning renal response and act on unsafe findings",
+                "body": "Review volume depletion, acute illness, blood pressure, diuretics, NSAIDs and other interacting medicines, and consider obstruction or renovascular disease when the presentation warrants it. Correct reversible contributors and reassess before deciding the long-term dose. Symptomatic hypotension or hyperkalemia uncontrolled despite treatment can require ACE inhibitor or ARB dose reduction or discontinuation. Dangerous findings require prompt action rather than waiting for a routine follow-up date. A low eGFR below 30 mL/min/1.73 m2 alone is not a universal reason to stop an indicated ACE inhibitor or ARB."
+        },
+        {
+                "heading": "Separate urgent potassium danger from nonemergent mitigation",
+                "body": "Assess the potassium result, clinical context, symptoms, kidney function and relevant ECG findings when severe hyperkalemia is suspected. Consider sample validity, including hemolysis, and repeat a potentially spurious measurement in an appropriate time frame; do not let confirmation delay necessary treatment of a dangerous presentation. Nonemergent hyperkalemia during an indicated ACE inhibitor or ARB can often be addressed by treating reversible contributors and assigning repeat testing. Do not replace emergency stabilization and potassium-shifting or removal treatment with a routine chronic mitigation plan."
+        },
+        {
+                "heading": "Choose potassium mitigation for the individual patient",
+                "body": "Review potassium supplements and salt substitutes, constipation, dietary exposure, NSAIDs, trimethoprim, potassium-sparing medicines, acidosis and volume status. A suitable diuretic, treatment of clinically important metabolic acidosis, or a potassium binder may help preserve indicated therapy, but selection depends on the patient and the medicine-specific instructions. Dietary advice should address the measured problem and preserve nutrition; a renal dietitian can help tailor it. Repeat potassium on a schedule matched to severity and risk. ACE inhibitor or ARB mitigation does not override finerenone withholding rules."
+        },
+        {
+                "heading": "Pair SGLT2 benefit with individual safety surveillance",
+                "body": "Review volume status, blood pressure, renal function, diuretic burden, diabetes medicines and ketosis risk before treatment. The dapagliflozin label calls for correction of volume depletion before initiation and follow-up of hypotension symptoms and renal function after initiation in patients at increased volume risk, including older people, those with impaired renal function and those taking loop diuretics. This safety plan complements the KDIGO statement that SGLT2 use alone does not require a change in routine CKD monitoring frequency. A small reversible early eGFR dip is not by itself a reason to discontinue treatment; symptoms or a larger concerning change need reassessment."
+        },
+        {
+                "heading": "Plan SGLT2 interruption, warning symptoms and restart",
+                "body": "Withhold SGLT2 treatment during prolonged fasting, surgery or critical illness when ketosis risk increases. For dapagliflozin specifically, the June 2026 label instructs withholding for at least three days, if possible, before surgery or a procedure associated with prolonged fasting; resume when clinically stable and oral intake has restarted. Nausea, vomiting, abdominal pain, malaise or shortness of breath can signal ketoacidosis even without marked hyperglycemia: stop the drug and seek prompt evaluation when suspected, and establish resolution before restarting. Missed doses or excessive reductions in insulin can contribute to ketosis, so adjustments to concomitant therapy require an individualized plan. Evaluate urinary or genital infection symptoms promptly; genital or perineal pain, redness or swelling with fever or malaise warrants immediate assessment for necrotizing infection."
+        },
+        {
+                "heading": "Identify the current finerenone CKD indication",
+                "body": "The September 2026 FDA label includes CKD associated with type 2 diabetes and CKD associated with type 1 diabetes. The type 2 indication describes reductions in kidney and cardiovascular events; the type 1 indication describes reduction in urine albumin-to-creatinine ratio, with kidney-outcome benefit expected from that reduction rather than directly demonstrated by the type 1 trial endpoint. For the established KDIGO 2024 type 2 pathway, review persistent albuminuria despite a maximum tolerated ACE inhibitor or ARB and the kidney function and potassium criteria. Do not imply the 2024 guideline already evaluated the later type 1 label expansion, or substitute the separate heart-failure dosing algorithm for CKD."
+        },
+        {
+                "heading": "Select the finerenone starting dose from the CKD label",
+                "body": "Measure potassium and eGFR before initiation. Do not initiate when potassium is above 5.0 mEq/L; an initial value above 4.8 through 5.0 mEq/L requires clinical judgment and additional potassium monitoring within the first four weeks if treatment is started. Start 20 mg orally once daily at eGFR at least 60 mL/min/1.73 m2, or 10 mg once daily at eGFR at least 25 but below 60. Initiation below 25 is not recommended. The CKD target dose is 20 mg daily. These instructions use eGFR rather than substituting creatinine clearance or a generic potassium-sparing-drug cutoff."
+        },
+        {
+                "heading": "Use the complete finerenone CKD potassium table",
+                "body": "Measure potassium four weeks after initiation and four weeks after a dose adjustment, then periodically with additional review for increased risk. At potassium at or below 4.8 mEq/L, increase 10 mg to 20 mg daily unless eGFR has fallen by more than 30 percent from the previous measurement, in which case maintain 10 mg; maintain an existing 20 mg dose. Above 4.8 through 5.5 mEq/L, maintain the current 10 mg or 20 mg dose. Above 5.5 mEq/L, withhold treatment and use the CKD restart instruction at 10 mg daily once potassium is at or below 5.0 mEq/L. The initiation boundary, titration boundary and restart boundary serve different decisions; do not collapse them into one remembered cutoff."
+        },
+        {
+                "heading": "Review interactions and close the monitoring loop",
+                "body": "Finerenone is contraindicated with a strong CYP3A4 inhibitor, in adrenal insufficiency and in patients with hypersensitivity to the product. Avoid grapefruit and strong or moderate CYP3A4 inducers. Moderate or weak CYP3A4 inhibitors require potassium monitoring when either medicine is initiated or adjusted, with finerenone dose adjustment as appropriate. Potassium-raising medicines or supplements can require more frequent surveillance. Document the test date, action thresholds, person responsible for reviewing results and any temporary-hold restart criteria. Monitoring cannot make a contraindicated combination acceptable."
+        }
+],
       keyPoints: ["Every prescription needs a measurement plan.", "A creatinine change triggers context, not reflex discontinuation.", "Mitigate potassium when safe.", "Temporary holds require restart criteria."],
       check: { question: "A patient's creatinine rises more than 30 percent within four weeks of ACE inhibitor titration. What should happen first?", choices: ["Evaluate volume status, interacting medicines, obstruction, and renovascular disease", "Permanently label ACE inhibitors as an allergy", "Add an ARB", "Ignore the change for one year"], answer: 0, rationale: "A rise beyond the expected range requires a structured search for reversible hemodynamic and obstructive causes before the long-term plan is decided.", reviewHref: "#treatment-monitoring-and-response" },
     },
@@ -134,6 +174,7 @@ export const chronicKidneyDiseaseModule = {
     { label: "KDIGO 2024 CKD Executive Summary", href: "https://kdigo.org/wp-content/uploads/2017/02/KDIGO-2024-CKD-Guideline-Executive-Summary.pdf" },
     { label: "FDA Farxiga Prescribing Information", href: "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/202293s035lbl.pdf" },
     { label: "FDA Kerendia Prescribing Information", href: "https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/215341s009lbl.pdf" },
+    { label: "FDA Kerendia September 2026 Prescribing Information", href: "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/215341s011lbl.pdf" },
     { label: "DailyMed Current Medication Labeling", href: "https://dailymed.nlm.nih.gov/dailymed/" },
   ],
   questionBank: chronicKidneyDiseaseQuestionBank,

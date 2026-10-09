@@ -42,7 +42,7 @@ function distractors(index, field) {
   return [5, 11, 17].map((offset) => concepts[(index + offset) % concepts.length][field]);
 }
 
-export const chronicKidneyDiseaseQuestionBank = concepts.flatMap((concept, conceptIndex) =>
+const generatedChronicKidneyDiseaseQuestions = concepts.flatMap((concept, conceptIndex) =>
   dimensions.map(([field, prompt], dimensionIndex) => ({
     id: `chronic-kidney-disease-${String(conceptIndex * 4 + dimensionIndex + 1).padStart(3, "0")}`,
     question: `${prompt} ${concept.name}?`,
@@ -51,4 +51,168 @@ export const chronicKidneyDiseaseQuestionBank = concepts.flatMap((concept, conce
     rationale: concept.why,
     reviewHref: `#${concept.lesson}`,
   })),
+);
+
+// Individually reviewed monitoring questions retain their existing identifiers and keys.
+const monitoringQuestionOverrides = [
+  {
+    "id": "chronic-kidney-disease-109",
+    "question": "After an ACE inhibitor is started or increased in a patient with CKD, which monitoring principle is appropriate?",
+    "choices": [
+      "Pressure, creatinine, and potassium should be reassessed within two to four weeks after starting or increasing an ACE inhibitor or ARB, with earlier review for higher-risk patients.",
+      "Recheck only urine albumin at the next annual visit.",
+      "Check potassium only if muscle weakness develops.",
+      "Wait three months before checking blood pressure or kidney function."
+    ],
+    "answer": 0,
+    "rationale": "Review blood pressure, creatinine and potassium after initiation or titration. KDIGO uses a two-to-four-week interval based on kidney function and potassium; higher-risk patients may need earlier review. Annual albuminuria surveillance does not replace drug-safety follow-up.",
+    "reviewHref": "#treatment-monitoring-and-response"
+  },
+  {
+    "id": "chronic-kidney-disease-110",
+    "question": "How should a concerning early kidney-function change after ACE inhibitor titration be handled?",
+    "choices": [
+      "Classify the response as expected, concerning, or unsafe, then investigate reversible drivers before reducing an indicated therapy.",
+      "Permanently discontinue the ACE inhibitor for every creatinine increase.",
+      "Add an ARB before evaluating the change.",
+      "Continue the same dose without reviewing symptoms, volume or interacting medicines."
+    ],
+    "answer": 0,
+    "rationale": "Classify the magnitude, timing and clinical context, then evaluate reversible causes. A concerning change calls for a response plan; neither automatic permanent withdrawal nor ignoring deterioration is appropriate.",
+    "reviewHref": "#treatment-monitoring-and-response"
+  },
+  {
+    "id": "chronic-kidney-disease-111",
+    "question": "Which assessment best informs the response to a creatinine increase after ACE inhibitor titration?",
+    "choices": [
+      "Review percentage creatinine change, potassium, pressure, symptoms, volume, diuretics, NSAIDs, obstruction, renal artery disease, and interval from titration.",
+      "Use the absolute creatinine value alone without a pretreatment baseline.",
+      "Review albuminuria alone and omit potassium and symptoms.",
+      "Assume the creatinine increase proves allergy without reviewing volume or medication exposure."
+    ],
+    "answer": 0,
+    "rationale": "Compare baseline and follow-up values and review potassium, blood pressure, symptoms, volume, medication exposure and possible obstruction or renovascular disease. The same numerical change can have different implications in different clinical settings.",
+    "reviewHref": "#treatment-monitoring-and-response"
+  },
+  {
+    "id": "chronic-kidney-disease-112",
+    "question": "Which statement identifies an unsafe reasoning pattern when interpreting kidney-function changes after ACE inhibitor titration?",
+    "choices": [
+      "Stopping after any creatinine increase removes benefit, while ignoring a rise above 30 percent can miss important hemodynamic or obstructive disease.",
+      "A large creatinine increase should prompt evaluation of reversible causes.",
+      "Blood pressure, potassium and kidney function should be reassessed after titration.",
+      "A small stable hemodynamic change should be interpreted in its clinical context."
+    ],
+    "answer": 0,
+    "rationale": "Small expected hemodynamic changes should not automatically remove beneficial treatment. A creatinine increase above 30 percent within four weeks requires evaluation; it must not be dismissed because another disease marker improves. Routine ACE inhibitor plus ARB therapy adds risk.",
+    "reviewHref": "#treatment-monitoring-and-response"
+  },
+  {
+    "id": "chronic-kidney-disease-113",
+    "question": "Which principle should guide potassium management during kidney-protective therapy?",
+    "choices": [
+      "Mitigate hyperkalemia when safely possible to preserve indicated therapy, while following drug-specific hold rules and acting on uncontrolled hyperkalemia.",
+      "Continue every potassium-raising drug at the same dose despite uncontrolled hyperkalemia.",
+      "Permanently stop all kidney-protective medicines after any isolated potassium increase.",
+      "Apply the ACE inhibitor mitigation pathway instead of the product-specific finerenone hold rules."
+    ],
+    "answer": 0,
+    "rationale": "Balance immediate potassium safety with the benefit of indicated therapy. Reversible contributors can often be addressed, but uncontrolled hyperkalemia requires action. Finerenone has product-specific hold and restart instructions that must still be followed.",
+    "reviewHref": "#treatment-monitoring-and-response"
+  },
+  {
+    "id": "chronic-kidney-disease-114",
+    "question": "For nonemergent hyperkalemia during indicated ACE inhibitor or ARB treatment, which action is appropriate?",
+    "choices": [
+      "Remove potassium contributors, correct appropriate reversible factors, consider diuretic, bicarbonate, or binder strategies, and repeat potassium on a risk-based schedule.",
+      "Add a potassium supplement to prevent future hypokalemia.",
+      "Use a potassium-containing salt substitute without reassessing the potassium level.",
+      "Wait for the next annual visit without reviewing contributors or setting repeat testing."
+    ],
+    "answer": 0,
+    "rationale": "Review potassium contributors and appropriate reversible factors, consider suitable treatment options, and assign timely repeat testing. Diuretic, bicarbonate or binder use depends on the patient and indication; it is not a substitute for emergency treatment when immediate danger is present.",
+    "reviewHref": "#treatment-monitoring-and-response"
+  },
+  {
+    "id": "chronic-kidney-disease-115",
+    "question": "Which assessment is appropriate when evaluating hyperkalemia during kidney-protective therapy?",
+    "choices": [
+      "Review ECG and symptoms when severe, laboratory validity, kidney function, constipation, diet, salt substitutes, supplements, trimethoprim, NSAIDs, potassium-sparing drugs, acidosis, and volume.",
+      "Assume one abnormal sample proves persistent hyperkalemia without considering validity.",
+      "Exclude medication and supplement exposure if the prescribed dose has not changed.",
+      "Assess only dietary potassium and omit kidney function, symptoms and volume status."
+    ],
+    "answer": 0,
+    "rationale": "Establish the severity and clinical context, consider sample validity, and review kidney function, medications, supplements, diet, constipation, acid-base status and volume. Suspected dangerous hyperkalemia requires prompt assessment; verification must not become a reason to delay necessary treatment.",
+    "reviewHref": "#treatment-monitoring-and-response"
+  },
+  {
+    "id": "chronic-kidney-disease-116",
+    "question": "Which statement identifies a reasoning hazard in potassium management during kidney-protective therapy?",
+    "choices": [
+      "Continuing despite uncontrolled hyperkalemia is unsafe, but reflex discontinuation without mitigation can also worsen long-term outcomes.",
+      "Review supplements and potassium-containing salt substitutes as possible contributors.",
+      "Follow the finerenone CKD label when potassium requires withholding or restarting treatment.",
+      "Assign repeat potassium testing and a clinician responsible for acting on the result."
+    ],
+    "answer": 0,
+    "rationale": "Both immediate safety and long-term benefit matter. Mitigation may preserve indicated ACE inhibitor or ARB treatment when safe, but uncontrolled hyperkalemia cannot be ignored, and finerenone hold rules are not waived by prescribing a binder.",
+    "reviewHref": "#treatment-monitoring-and-response"
+  },
+  {
+    "id": "chronic-kidney-disease-117",
+    "question": "Which principle governs finerenone dosing and continuation in CKD?",
+    "choices": [
+      "Finerenone dosing and continuation are governed by eGFR, serum potassium, interacting drugs, and the current product label.",
+      "Use the same starting dose for every patient without measuring eGFR.",
+      "Use the heart-failure titration table for all CKD indications.",
+      "Ignore interacting medicines if potassium was normal before treatment."
+    ],
+    "answer": 0,
+    "rationale": "Use the current CKD label, baseline eGFR and potassium, subsequent potassium values and interaction review. CKD and heart-failure dosing tables differ; a normal baseline potassium result does not eliminate later interaction or hyperkalemia risk.",
+    "reviewHref": "#treatment-monitoring-and-response"
+  },
+  {
+    "id": "chronic-kidney-disease-118",
+    "question": "Which action is appropriate when starting finerenone for a qualifying CKD indication?",
+    "choices": [
+      "Verify eligibility, choose the eGFR-based starting dose, recheck potassium at about four weeks, and titrate, hold, or restart using labeled thresholds.",
+      "Start without obtaining baseline potassium and check it only if symptoms appear.",
+      "Initiate treatment when potassium is above 5.0 mEq/L.",
+      "Combine it with a strong CYP3A4 inhibitor and rely on routine annual potassium testing."
+    ],
+    "answer": 0,
+    "rationale": "Verify the indication and baseline eGFR and potassium, choose the labeled starting dose, and use labeled follow-up and titration rules. The September 2026 label prohibits initiation above 5.0 mEq/L and contraindicates strong CYP3A4 inhibitors.",
+    "reviewHref": "#treatment-monitoring-and-response"
+  },
+  {
+    "id": "chronic-kidney-disease-119",
+    "question": "In an adult being evaluated for finerenone for CKD associated with type 2 diabetes, which assessment is most appropriate?",
+    "choices": [
+      "Review type 2 diabetes, albuminuria, tolerated RAAS therapy, eGFR, potassium trend, strong CYP3A4 inhibitors, volume, adherence, and follow-up access.",
+      "Confirm diabetes alone without checking kidney function, potassium or interacting medicines.",
+      "Use serum creatinine alone and substitute the heart-failure dose table.",
+      "Check only the last potassium result and omit follow-up access and medication reconciliation."
+    ],
+    "answer": 0,
+    "rationale": "For this type 2 diabetes scenario, review the CKD phenotype, albuminuria, tolerated RAAS therapy, eGFR, potassium, interactions and the practical monitoring plan. The current label also includes a distinct type 1 diabetes CKD indication; this stem specifies type 2 diabetes rather than implying it is the only CKD indication.",
+    "reviewHref": "#treatment-monitoring-and-response"
+  },
+  {
+    "id": "chronic-kidney-disease-120",
+    "question": "Which statement identifies a reasoning hazard when titrating or restarting finerenone for CKD?",
+    "choices": [
+      "Using a remembered fixed potassium rule without the current label can produce an unsafe start, missed hold, or inappropriate permanent discontinuation.",
+      "Select the starting dose using the current label and measured eGFR.",
+      "Use the CKD-specific potassium table for a CKD indication.",
+      "Review strong CYP3A4 inhibitors before prescribing finerenone."
+    ],
+    "answer": 0,
+    "rationale": "Use the current indication-specific label rather than a remembered fixed rule. CKD titration, withholding and restart thresholds differ from the heart-failure algorithm, and strong CYP3A4 inhibition is contraindicated rather than managed by an improvised dose reduction.",
+    "reviewHref": "#treatment-monitoring-and-response"
+  }
+];
+
+export const chronicKidneyDiseaseQuestionBank = generatedChronicKidneyDiseaseQuestions.map(
+  (question) => monitoringQuestionOverrides.find((item) => item.id === question.id) ?? question,
 );
