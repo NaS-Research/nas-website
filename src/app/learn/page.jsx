@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import LearningCinema from "@/components/learn/LearningCinema";
 import LearnVideos from "@/components/learn/LearnVideos";
 import LearnDrugLibrary from "@/components/learn/LearnDrugLibrary";
+import LearnInteractiveLibrary from "@/components/learn/LearnInteractiveLibrary";
 import styles from "@/components/learn/LearnDrugLibrary.module.css";
 
 export const metadata = {
@@ -46,6 +47,8 @@ export default function LearningPage() {
         <LearnVideos />
 
         <LearnDrugLibrary />
+
+        <LearnInteractiveLibrary />
 
 
         <section className="learning-standard">
