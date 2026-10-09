@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-09T10:05:09.539790+00:00",
+  "updated": "2026-10-09T10:16:39.541351+00:00",
   "status": "working",
   "sourcePolicy": {
     "educational": "Supplied RxPrep 2023 book remains primary; explicit user approval on 2026-10-01 authorizes the existing official ASPEN, USP, FDA and CDC references for remaining PN clinical and safety claims. Explicit human approval on 2026-10-02 authorizes primary neonatal and pediatric renal nutrition guidelines for the retained pediatric PN water-loss, GIR/brain, CKRT/catabolism/wound protein claims, and primary ASPEN/SCCM enteral clinical guidance plus FDA guidance/product labeling for the unfinished EN audit. Direct human approval on2026-10-04 authorizes the National Academies2005Water reference for EN031 and the retained renal-solute concept only. Directhumanapproval I giveapproval authorizesthe specificallyrequestedEndocrineSocietyprimary-adrenal-insufficiency andSCCM/ASHPstress-ulcer-prophylaxisguidance forretainedadultsteroidtransition andfeeding-relatedICUquestions only;fullsourceverificationbeforeadoptionremainsrequired. Direct human approval \"I give approval\" authorizes the specifically requested KDIGO2017 CKD-MBD, Endocrine Society hypercalcemia-of-malignancy, and Society for Endocrinology acute hypocalcemia/hypercalcemia sources for retained calcium claims; source review remains required before adoption. Direct human approval authorizes additional official guidelines,FDA labels and primary academic clinical references where the supplied book does not verify retained claims;current ESE2025 and academic mineral/dialysis sources used with full relevant source review.",
@@ -89,7 +89,7 @@
     "dependencyPrintedPage": 150,
     "dependencyPdfPage": 158,
     "sectionAudit": "Complete canonical ECG ischemia/electrolytes/drugs lesson compared with the selected supplied-book and authorized primary source sections: seven teaching bodies and retained teaching metadata, embedded check/all four choices, four-panel diagram, and twenty whole questions/all eighty choices. Revised isolated ST-elevation and diagnostic-pattern distinctions; broad ST-T differential; variable potassium findings without a mandatory sequence; potassium/magnesium context; QT versus QU and T-wave endpoint uncertainty; QRS-related QT lengthening versus delayed repolarization; and patient/exposure benefit-risk judgment. One associated cumulative derivative reconciled. All 120 module IDs/order/keys/correct-answer texts/anchors and all 1184 cumulative IDs/order/keys/correct-answer texts/links preserved. Other five whole ECG lessons, 100 whole ECG questions, 231 whole modules and 1183 whole cumulative objects exact. Build, structural preservation, grading/link checks and all 126 actually viewed product renderings passed. No question addition/removal, new numerical dose, threshold, formula or universal monitoring schedule. Native source review is limited to the specifically recorded pages, figures and sections. AHA2025 figure9 and AHA2021 native slides remain uncertified; no inaccessible-visual claim adopted. Whole parent/dependency modules, chapters and full goal remain open.",
-    "nextAction": "Release this verified ECG unit to the audit branch after complete staged-diff inspection and exact remote verification. Then review the sixteen remaining direct fluid candidates, beginning with heart-failure-pathophysiology-113 through 116 and their complete associated lesson. Implement reversible curation of exactly fifty verified questions in the broader combined bank; module assessments remain separate. Preserve IV-fluid resume point iv-fluid-selection, all stable IDs/history and original local drafts. Whole ECG module, fluid parent, Chapter1 entry15 and full82-chapter audit remain open.",
+    "nextAction": "Continue the sixteen remaining direct fluid candidates, beginning with heart-failure-pathophysiology-113 through116 and their complete associated lesson. Preserve84/100 qualified direct whole objects and the IV-fluid checkpoint iv-fluid-selection. Implement reversible curation of exactly50 verified questions in the broader combined bank; module assessments remain separate. Preserve stable IDs/history and original local drafts. Whole ECG module, fluid parent, Chapter1 entry15 and full82-chapter audit remain open. The current release is audit-branch-only; no main merge or production deployment performed.",
     "nextDependencyPrintedPage": 161,
     "nextDependencyPdfPage": 169
   },
@@ -104,11 +104,14 @@
   "release": {
     "branch": "audit/rxprep-content-2026-09-24",
     "baseCommit": "c84ba6a53e6ccd53a9b001a8fcbd82611b4a6a63",
-    "commit": null,
-    "push": "pending",
+    "commit": "f90770486db013eb8441f7a1941a1d4cd4f35fa1",
+    "push": "verified",
     "receipt": "fluid-broader-ecg-electrolytes-release.json",
     "mainMerge": "not performed",
-    "production": "not verified"
+    "production": "not verified",
+    "remoteHashObserved": "f90770486db013eb8441f7a1941a1d4cd4f35fa1",
+    "exactRemoteObservedByTool": true,
+    "remoteVerifiedAt": "2026-10-09T10:16:39.425616+00:00"
   },
   "openIssues": [
     "Remaining Chapter 1 checklist entries and all reference tables require source review.",
@@ -177,10 +180,10 @@
       "total": 232,
       "moduleCountPercent": 28.88
     },
-    "interpretation": "ECG scoped source/native verification passed;84/100 direct fluid candidates qualify at this gate,16pending; release still pending.67/232 whole modules and7/82 chapters unchanged. Combined-bank50 target is not yet implemented.",
+    "interpretation": "ECG scoped lesson source/build/native checks and content audit-branch push verified;84/100 direct fluid candidates qualify,16pending.67/232 whole modules and7/82 chapters unchanged. Combined-bank50 target is not yet implemented.",
     "checkedAt": "2026-10-09T10:05:09.539790+00:00"
   },
-  "lastVerifiedLogicalUnit": "Scoped canonical ECG lesson:7 bodies,20 whole questions/all80 choices,one cumulative derivative;84/100 direct fluid candidates qualify at source/native gate,release pending",
+  "lastVerifiedLogicalUnit": "Scoped canonical ECG lesson:7 bodies,20 whole questions/all80 choices,one cumulative derivative;84/100 direct fluid candidates qualify;content audit-branch push verified",
   "lastVerifiedSections": {
     "enteral-nutrition": {
       "evidence": "enteral-nutrition-renal-solute-review.json",
@@ -15476,13 +15479,13 @@
     "independentLabelTableRowsThisUnit": 12
   },
   "latestGoalContinuationAudit": {
-    "previousTurnClassification": "no progress toward content release; native goal-edit limitation revalidated",
+    "previousTurnClassification": "progress: separate canonical/original-draft ledger candidates prepared and preserved",
     "currentTurnClassification": "progress",
-    "currentTurnEvidence": "Prepared separate canonical and original-working-draft ledger candidates, resolved printed709 toChapter53, and propagated resolved50-question amendment. No index mutation or push performed.",
+    "currentTurnEvidence": "Complete staged semantic diff reviewed;seven scoped paths committed and exact audit-branch remote verified.50 combined-bank target recorded; bank reduction remains pending.",
     "genuineBlocker": false,
     "consecutiveImpasseTurns": 0,
     "wholeGoalComplete": false,
-    "nextAction": "Release this verified ECG unit to the audit branch after complete staged-diff inspection and exact remote verification. Then review the sixteen remaining direct fluid candidates, beginning with heart-failure-pathophysiology-113 through 116 and their complete associated lesson. Implement reversible curation of exactly fifty verified questions in the broader combined bank; module assessments remain separate. Preserve IV-fluid resume point iv-fluid-selection, all stable IDs/history and original local drafts. Whole ECG module, fluid parent, Chapter1 entry15 and full82-chapter audit remain open.",
+    "nextAction": "Continue the sixteen remaining direct fluid candidates, beginning with heart-failure-pathophysiology-113 through116 and their complete associated lesson. Preserve84/100 qualified direct whole objects and the IV-fluid checkpoint iv-fluid-selection. Implement reversible curation of exactly50 verified questions in the broader combined bank; module assessments remain separate. Preserve stable IDs/history and original local drafts. Whole ECG module, fluid parent, Chapter1 entry15 and full82-chapter audit remain open. The current release is audit-branch-only; no main merge or production deployment performed.",
     "goalToolState": "Original82-chapter goal active; saved human amendment requires50 combined-bank questions, separate module assessments retained."
   },
   "latestPediatricPnMaintenanceFluidReview": {
@@ -34596,15 +34599,18 @@
     "chaptersVerifiedAfter": 7,
     "chapterTotal": 82,
     "chapterCountPercent": 8.54,
-    "coverageGate": "Scoped source/build/native checks passed; audit-branch release pending. Counts must not be reported as remotely released until exact push verification.",
+    "coverageGate": "Scoped source/build/native checks passed; content audit-branch push verified by exact remote hash. Whole modules/chapters remain open.",
     "release": {
       "branch": "audit/rxprep-content-2026-09-24",
       "baseCommit": "c84ba6a53e6ccd53a9b001a8fcbd82611b4a6a63",
-      "commit": null,
-      "push": "pending",
+      "commit": "f90770486db013eb8441f7a1941a1d4cd4f35fa1",
+      "push": "verified",
       "receipt": "fluid-broader-ecg-electrolytes-release.json",
       "mainMerge": "not performed",
-      "production": "not verified"
+      "production": "not verified",
+      "remoteHashObserved": "f90770486db013eb8441f7a1941a1d4cd4f35fa1",
+      "exactRemoteObservedByTool": true,
+      "remoteVerifiedAt": "2026-10-09T10:16:39.425616+00:00"
     }
   }
 }
