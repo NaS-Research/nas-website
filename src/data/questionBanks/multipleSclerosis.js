@@ -362,7 +362,7 @@ const reconstitutionQuestions = [
   "conceptGroup": "cladribine-low-count",
   "lesson": "immune-reconstitution",
   "difficulty": "Applied",
-  "question": "At month two, lymphocytes are 180 cells/µL. What next?",
+  "question": "Two months after the start of a cladribine (Mavenclad) treatment course for multiple sclerosis, lymphocytes are 180 cells/µL. What is the next action?",
   "choices": [
     "Wait until month six to recheck because the dosing cycle ended",
     "Repeat counts monthly but omit prophylaxis unless a rash appears",

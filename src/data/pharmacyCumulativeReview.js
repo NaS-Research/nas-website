@@ -1,3 +1,4 @@
+import { pharmacyCumulativeSelectionIds } from "@/data/pharmacyCumulativeSelection";
 import { pharmacyModules } from "@/data/pharmacyModules";
 import { pharmacyFinalReview } from "@/data/pharmacyReview";
 
@@ -20,7 +21,7 @@ function selectAcrossBank(questionBank = [], questionIds) {
   });
 }
 
-export const pharmacyCumulativeReview = [
+export const pharmacyCumulativeReviewPool = [
   ...pharmacyFinalReview,
   ...pharmacyModules.flatMap((module) =>
     selectAcrossBank(module.questionBank, module.cumulativeQuestionIds).map((question) => ({
@@ -31,3 +32,13 @@ export const pharmacyCumulativeReview = [
     })),
   ),
 ];
+
+const cumulativeById = new Map(pharmacyCumulativeReviewPool.map((question) => [question.id, question]));
+if (cumulativeById.size !== pharmacyCumulativeReviewPool.length) throw new Error("Duplicate cumulative-review question ID");
+if (pharmacyCumulativeSelectionIds.length !== 50 || new Set(pharmacyCumulativeSelectionIds).size !== 50) throw new Error("Cumulative review requires 50 unique selected questions");
+
+export const pharmacyCumulativeReview = pharmacyCumulativeSelectionIds.map((id) => {
+  const question = cumulativeById.get(id);
+  if (!question) throw new Error(`Missing selected cumulative-review question: ${id}`);
+  return question;
+});
