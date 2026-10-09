@@ -5,7 +5,7 @@ import styles from "./LearnInteractiveLibrary.module.css";
 
 const previews = [
   { kind: "heart", prompt: "Follow the heart’s electrical signal.", title: "Heart electrical conduction", caption: "SA node → AV node → His–Purkinje system" },
-  { kind: "potential", prompt: "What changes the membrane potential?", title: "Membrane potential", caption: "Depolarization · Repolarization · Hyperpolarization" },
+  { kind: "lesson", prompt: "Trace the heart’s electrical signal.", title: "The heart’s electrical system", caption: "Follow the pathway. Connect it to the ECG." },
   { kind: "receptor", prompt: "Connect a receptor to its response.", title: "Receptor signaling", caption: "Binding → Activation → Cellular response" },
   { kind: "kinetics", prompt: "See what happens between doses.", title: "Drug concentration over time", caption: "Dose · Interval · Elimination" },
 ];
@@ -18,11 +18,6 @@ function Diagram({ kind }) {
     <circle cx="148" cy="42" r="6" fill="#87683b" /><circle cx="169" cy="72" r="5" fill="#87683b" />
     <path d="M141 42H82M173 72h100M209 129h64" stroke="#b49a7a" />
     <text x="35" y="46">SA node</text><text x="279" y="76">AV node</text><text x="279" y="133">Purkinje</text>
-  </svg>;
-  if (kind === "potential") return <svg {...common}>
-    <path d="M42 15v126h289" stroke="#a9a7a0" /><path d="M42 94h290" stroke="#b8aea0" strokeDasharray="4 5" />
-    <path d="M44 117h57c12 0 16-19 25-29s12-58 28-63c13-4 11 65 33 90s25 22 39 18 20-16 40-16h64" stroke="#8f713e" strokeWidth="3" strokeLinecap="round" />
-    <text x="10" y="29">+30</text><text x="10" y="98">−55</text><text x="10" y="122">−70</text><text x="280" y="88">Threshold</text><text x="306" y="155">Time</text><text x="9" y="12">mV</text>
   </svg>;
   if (kind === "receptor") return <svg {...common}>
     <path d="M25 79h110M225 79h110M25 105h110M225 105h110" stroke="#c2b599" strokeWidth="8" strokeDasharray="2 10" />
@@ -50,6 +45,13 @@ export default function LearnInteractiveLibrary() {
     document.addEventListener("visibilitychange", update); motion.addEventListener("change", update);
     return () => { observer.disconnect(); document.removeEventListener("visibilitychange", update); motion.removeEventListener("change", update); };
   }, []);
+  useEffect(() => {
+    const videos = viewport.current.querySelectorAll("video");
+    videos.forEach((video) => {
+      if (running) video.play().catch(() => {});
+      else video.pause();
+    });
+  }, [running]);
   const reel = [previews.at(-1), ...previews, previews[0], previews[1]];
   return <section className={styles.section} id="interactive-library" aria-labelledby="interactive-library-title">
     <div className={`nas-shell ${styles.layout}`}>
@@ -71,7 +73,9 @@ export default function LearnInteractiveLibrary() {
             <p className={styles.prompt}>{item.prompt}</p>
             <div className={`${styles.card} ${styles[item.kind]}`}>
               <div className={styles.cardHeading}><span>{item.title}</span><span className={styles.mark}>NaS</span></div>
-              <Diagram kind={item.kind} />
+              {item.kind === "lesson" ? <div className={styles.lessonPreview}>
+                <video src="/learn/interactive/heart-electrical-v1/showcase.mp4" poster="/learn/interactive/heart-electrical-v1/poster.png" muted loop playsInline preload="metadata" tabIndex={-1} />
+              </div> : <Diagram kind={item.kind} />}
               <p className={styles.cardCaption}>{item.caption}</p>
             </div>
           </div>)}

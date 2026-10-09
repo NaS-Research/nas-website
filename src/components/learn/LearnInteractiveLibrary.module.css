@@ -37,3 +37,8 @@
 @media(max-width:1000px) { .layout { grid-template-columns:minmax(0,1fr); gap:2rem; }.intro { grid-column:1; grid-row:2; padding-block:0; }.previewPanel { grid-column:1; grid-row:1; }.subjects { display:grid; grid-template-columns:1fr 1fr; gap:1.5rem; }.description { max-width:32rem; } }
 @media(max-width:600px) { .previewPanel { grid-template-columns:minmax(0,1fr); padding-inline:1.25rem; gap:0; }.panelCopy { grid-column:1; grid-row:1; padding-top:2rem; }.panelCopy h3 br { display:none; }.panelCopy span { max-width:none; }.showcase { grid-column:1; grid-row:2; height:390px; --offset:-298px; max-width:420px; margin-inline:auto; }.card { padding:16px; }.cardHeading { font-size:.8rem; }.prompt { font-size:.73rem; }.subjects { grid-template-columns:1fr; gap:0; } }
 @media(prefers-reduced-motion:reduce) { .track { animation:none; will-change:auto; }.showcase { height:340px; mask-image:none; --offset:0px; }.item { display:none; }.item:nth-child(2) { display:block; } }
+
+.lesson { background:#f0eee7; }
+.lessonPreview { width:100%; aspect-ratio:1740/820; margin-block:14px; overflow:hidden; border-radius:6px; background:#f8f8f5; border:1px solid #d7d8cf; }
+.lessonPreview video { display:block; width:100%; height:100%; object-fit:cover; transform:scale(1.105); }
+@media(prefers-reduced-motion:reduce) { .lessonPreview video { visibility:hidden; }.lessonPreview { background:#f8f8f5 url('/learn/interactive/heart-electrical-v1/poster.png') center/cover no-repeat; } }
