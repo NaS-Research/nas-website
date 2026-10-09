@@ -8,7 +8,7 @@ import Link from "next/link";
 import { useEffect, useMemo, useRef, useState } from "react";
 import "./research-gallery.css";
 
-function ResearchRail({ studies, label, compact, paused, reduced }) {
+function ResearchRail({ studies, label, compact, reduced }) {
   const rail = useRef(null);
   const [batches, setBatches] = useState(() => [0, 1, 2, 3].map(id => ({ id, studies })));
   const batchesRef = useRef(batches); batchesRef.current = batches;
@@ -21,7 +21,6 @@ function ResearchRail({ studies, label, compact, paused, reduced }) {
     }));
   }, [studies]);
   const collectionKey = studies.map(study => study.slug).join("|");
-  const pausedRef = useRef(paused); pausedRef.current = paused;
   const group = useRef(null);
   const interacting = useRef(false);
   const dragging = useRef(null);
@@ -46,7 +45,7 @@ function ResearchRail({ studies, label, compact, paused, reduced }) {
     const tick = time => {
       const elapsed = previous ? Math.min(time - previous, 50) : 0;
       previous = time;
-      if (cycle > 0 && !reduced && visible && !document.hidden && !pausedRef.current && !interacting.current && !dragging.current && !element.contains(document.activeElement)) {
+      if (cycle > 0 && !reduced && visible && !document.hidden && !interacting.current && !dragging.current && !element.contains(document.activeElement)) {
         if (Math.abs(element.scrollLeft - written) > 1) position = element.scrollLeft;
         // Recycle only the fully offscreen batch. Visible cards retain their keys
         // and positions while a fresh shuffled pass is appended beyond the viewport.
@@ -98,7 +97,7 @@ function ResearchRail({ studies, label, compact, paused, reduced }) {
       onClickCapture={e => { if (suppressClick.current) { e.preventDefault(); e.stopPropagation(); suppressClick.current = false; } }}>
       {(reduced ? [{ id: "still", studies }] : batches).map((batch, copy) => <div className="research-gallery__group" ref={copy === (reduced ? 0 : 1) ? group : undefined} key={batch.id} aria-hidden={!reduced && copy !== 1 ? true : undefined}>
         {batch.studies.map(study => <Link key={study.slug} href={`/research/${study.slug}`} className={`research-gallery__card${study.mark ? " research-gallery__card--mark" : ""}${study.contain ? " research-gallery__card--contain" : ""}`} tabIndex={!reduced && copy !== 1 ? -1 : undefined} aria-label={`${study.title}. ${study.type}. Read publication.`}>
-          {study.workspaceFilm || study.video ? <WorkspacePreviewFilm className="research-gallery__film" compact={compact} paused={paused || reduced} src={(compact ? study.compactVideo || study.video : study.video) || undefined} poster={study.workspaceFilm ? undefined : study.image} /> : <Image src={study.image} alt="" fill sizes={compact ? "(max-width: 600px) 78vw, 35vw" : "(max-width: 600px) 88vw, 78vw"} draggable={false} />}
+          {study.workspaceFilm || study.video ? <WorkspacePreviewFilm className="research-gallery__film" compact={compact} paused={reduced} src={(compact ? study.compactVideo || study.video : study.video) || undefined} poster={study.workspaceFilm ? undefined : study.image} /> : <Image src={study.image} alt="" fill sizes={compact ? "(max-width: 600px) 78vw, 35vw" : "(max-width: 600px) 88vw, 78vw"} draggable={false} />}
           <div className="research-gallery__shade" />
           <div className="research-gallery__caption">
             <p>{study.area} <span>· {study.type}</span></p>
@@ -117,7 +116,6 @@ export default function ResearchGallery({ studies }) {
     perspectives: studies.filter(study => study.type === "Institutional Essay" || study.type === "Release"),
     publications: studies.filter(study => study.type !== "Institutional Essay" && study.type !== "Release"),
   }), [studies]);
-  const [paused, setPaused] = useState(false);
   // Start still for SSR; enable movement only after checking the visitor's preference.
   const [reduced, setReduced] = useState(true);
   useEffect(() => {
@@ -132,13 +130,10 @@ export default function ResearchGallery({ studies }) {
       <p>Research at NaS</p><h2 id="research-gallery-title">Selected research.</h2>
       <Link href="/research">Explore all research <span aria-hidden="true">↗</span></Link>
     </header>
-    {perspectives.length > 0 && <ResearchRail studies={perspectives} label="Perspectives & releases" paused={paused} reduced={reduced} />}
-    {publications.length > 0 && <ResearchRail studies={publications} label="Research & publications" compact paused={paused} reduced={reduced} />}
+    {perspectives.length > 0 && <ResearchRail studies={perspectives} label="Perspectives & releases" reduced={reduced} />}
+    {publications.length > 0 && <ResearchRail studies={publications} label="Research & publications" compact reduced={reduced} />}
     <div className="research-gallery__footer">
       <span>Research, releases & perspectives</span>
-      <div className="research-gallery__controls" role="group" aria-label="Research gallery controls">
-      {!reduced && <button onClick={() => setPaused(value => !value)} aria-label={paused ? "Play research gallery" : "Pause research gallery"} aria-pressed={paused}><span aria-hidden="true">{paused ? "▶" : "Ⅱ"}</span> {paused ? "Play" : "Pause"}</button>}
-      </div>
     </div>
   </section>;
 }
