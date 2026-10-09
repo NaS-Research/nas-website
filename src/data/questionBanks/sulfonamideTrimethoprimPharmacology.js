@@ -47,4 +47,189 @@ const cases = [
   ["136", "clinical-selection", "An older note lists TMP-SMX as preferred monotherapy for invasive S. maltophilia. What should the learner do?", ["Use current 2026 IDSA guidance, which places TMP-SMX as an alternative component rather than automatic preferred monotherapy", "Keep the older hierarchy without review", "Treat colonization automatically", "Use ceftazidime regardless of susceptibility"], "Current guidance has changed and must supersede the legacy shortcut."],
 ].map(([id, lesson, question, choices, rationale]) => ({ id: `sulfonamide-trimethoprim-pharmacology-${id}`, lesson, question, choices, answer: 0, rationale, reviewHref: `#${lesson}` }));
 
-export const sulfonamideTrimethoprimPharmacologyQuestionBank = [...generated, ...cases];
+const electrolyteQuestionRepairs = {
+  "sulfonamide-trimethoprim-pharmacology-061": {
+    "id": "sulfonamide-trimethoprim-pharmacology-061",
+    "lesson": "electrolytes",
+    "question": "Which renal effect explains trimethoprim-associated hyperkalemia?",
+    "choices": [
+      "Trimethoprim can reduce distal potassium secretion through an amiloride-like effect",
+      "Trimethoprim directly increases distal potassium secretion",
+      "Hyperkalemia occurs only when the infecting organism is resistant",
+      "Recommended antibiotic doses prevent any effect on renal potassium handling"
+    ],
+    "answer": 0,
+    "rationale": "The amiloride-like distal sodium-channel effect reduces potassium secretion. This is a renal drug effect rather than evidence of bacterial resistance. The current label warns that susceptible patients can develop hyperkalemia even at recommended doses.",
+    "reviewHref": "#electrolytes"
+  },
+  "sulfonamide-trimethoprim-pharmacology-062": {
+    "id": "sulfonamide-trimethoprim-pharmacology-062",
+    "lesson": "electrolytes",
+    "question": "Which clinical action best manages TMP-SMX potassium risk in a high-risk patient?",
+    "choices": [
+      "Check potassium early in high-risk patients and change therapy when risk is unacceptable",
+      "Measure potassium only after the antibiotic course ends",
+      "Keep treatment unchanged despite a significant potassium abnormality",
+      "Add a potassium supplement routinely to counter the antibiotic effect"
+    ],
+    "answer": 0,
+    "rationale": "Plan potassium follow-up while the patient is receiving treatment, review kidney function and interacting medicines, and act on significant abnormalities. Waiting until the final dose, continuing through a significant abnormality or adding potassium does not address potassium-retention risk.",
+    "reviewHref": "#electrolytes"
+  },
+  "sulfonamide-trimethoprim-pharmacology-063": {
+    "id": "sulfonamide-trimethoprim-pharmacology-063",
+    "lesson": "electrolytes",
+    "question": "Which assessment best addresses TMP-SMX-associated hyperkalemia risk?",
+    "choices": [
+      "Assess baseline potassium, kidney function, dose, ACE inhibitor, ARB, MRA, potassium products, and follow-up time",
+      "Use the prescribed tablet strength alone to determine potassium safety",
+      "Review creatinine but omit baseline potassium and potassium-raising medicines",
+      "Confirm a normal baseline potassium and omit any follow-up plan"
+    ],
+    "answer": 0,
+    "rationale": "Potassium risk reflects the result, kidney function, dose and combined medicines or products. A tablet name, creatinine alone or one normal baseline cannot replace the full assessment and a timed follow-up plan.",
+    "reviewHref": "#electrolytes"
+  },
+  "sulfonamide-trimethoprim-pharmacology-064": {
+    "id": "sulfonamide-trimethoprim-pharmacology-064",
+    "lesson": "electrolytes",
+    "question": "Which monitoring error is most important to prevent in a high-risk TMP-SMX potassium combination?",
+    "choices": [
+      "Waiting until the end of therapy to monitor a high-risk combination",
+      "Reviewing kidney function and baseline potassium before treatment",
+      "Arranging repeat potassium during the antibiotic course",
+      "Assigning a clinician to review and act on follow-up results"
+    ],
+    "answer": 0,
+    "rationale": "The error is postponing surveillance until treatment is finished. Risk assessment, testing during exposure and clear review ownership help detect harm while the plan can still be changed.",
+    "reviewHref": "#electrolytes"
+  },
+  "sulfonamide-trimethoprim-pharmacology-065": {
+    "id": "sulfonamide-trimethoprim-pharmacology-065",
+    "lesson": "electrolytes",
+    "question": "Which principle best explains a possible sodium effect during high-dose trimethoprim therapy?",
+    "choices": [
+      "High-dose trimethoprim can promote natriuresis and clinically important hyponatremia",
+      "Every low sodium result during TMP-SMX proves SIADH",
+      "Trimethoprim cannot affect sodium excretion because it is an antibiotic",
+      "Higher trimethoprim exposure guarantees that serum sodium stays normal"
+    ],
+    "answer": 0,
+    "rationale": "Primary transport evidence and clinical observations support a sodium-losing effect, and the label warns about serious hyponatremia. A low sodium result still requires a clinical assessment; neither SIADH nor a trimethoprim salt-losing mechanism follows from the drug name alone.",
+    "reviewHref": "#electrolytes"
+  },
+  "sulfonamide-trimethoprim-pharmacology-066": {
+    "id": "sulfonamide-trimethoprim-pharmacology-066",
+    "lesson": "electrolytes",
+    "question": "Which clinical action best addresses sodium risk during high-intensity TMP-SMX therapy?",
+    "choices": [
+      "Monitor sodium and volume status during high-intensity therapy",
+      "Diagnose SIADH from the first low sodium value without reviewing volume",
+      "Wait until treatment ends before evaluating symptomatic hyponatremia",
+      "Apply the same fluid restriction to every TMP-SMX sodium abnormality"
+    ],
+    "answer": 0,
+    "rationale": "Follow sodium together with symptoms and volume status. The current label requires evaluation and appropriate correction for symptomatic hyponatremia. A fixed diagnosis or universal fluid restriction can overlook a salt-losing presentation.",
+    "reviewHref": "#electrolytes"
+  },
+  "sulfonamide-trimethoprim-pharmacology-067": {
+    "id": "sulfonamide-trimethoprim-pharmacology-067",
+    "lesson": "electrolytes",
+    "question": "Which assessment best evaluates a falling sodium result during TMP-SMX treatment?",
+    "choices": [
+      "Assess sodium trend, volume, dose, renal function, diuretics, intake, and neurologic symptoms",
+      "Use one sodium value and assume the antibiotic proves the mechanism",
+      "Review diuretic names but omit sodium trend, intake and volume",
+      "Review kidney function only and disregard neurologic symptoms"
+    ],
+    "answer": 0,
+    "rationale": "Use the sodium trajectory and complete dose, renal, medicine, intake, symptom and volume context. One value or one category of data cannot distinguish the relevant mechanisms or determine urgency.",
+    "reviewHref": "#electrolytes"
+  },
+  "sulfonamide-trimethoprim-pharmacology-068": {
+    "id": "sulfonamide-trimethoprim-pharmacology-068",
+    "lesson": "electrolytes",
+    "question": "Which diagnostic error should be avoided when sodium falls during TMP-SMX therapy?",
+    "choices": [
+      "Assuming every low sodium value is SIADH",
+      "Reviewing the sodium trajectory and volume status",
+      "Considering a trimethoprim-related sodium-losing effect",
+      "Evaluating symptoms and other sodium-altering medicines"
+    ],
+    "answer": 0,
+    "rationale": "Automatically labeling every low sodium result SIADH ignores alternative mechanisms. Considering drug-related salt loss, reviewing the trajectory and medicines, and assessing symptoms and volume are appropriate parts of the evaluation.",
+    "reviewHref": "#electrolytes"
+  },
+  "sulfonamide-trimethoprim-pharmacology-069": {
+    "id": "sulfonamide-trimethoprim-pharmacology-069",
+    "lesson": "electrolytes",
+    "question": "Which principle best supports a TMP-SMX fluid and crystalluria plan?",
+    "choices": [
+      "Adequate hydration and renal monitoring help reduce concentrated urinary exposure and crystal risk",
+      "A large fixed fluid load is appropriate regardless of congestion",
+      "A normal baseline creatinine eliminates the need to assess urine output",
+      "Adequate water intake makes electrolyte follow-up unnecessary"
+    ],
+    "answer": 0,
+    "rationale": "The book identifies crystalluria and advises water; the label specifies adequate fluid intake and urine output. Hydration advice should fit volume and kidney context, and it does not eliminate the need for electrolyte or renal surveillance.",
+    "reviewHref": "#electrolytes"
+  },
+  "sulfonamide-trimethoprim-pharmacology-070": {
+    "id": "sulfonamide-trimethoprim-pharmacology-070",
+    "lesson": "electrolytes",
+    "question": "Which clinical action best applies to TMP-SMX hydration counseling?",
+    "choices": [
+      "Create an individualized fluid plan and avoid automatic overhydration in heart or kidney failure",
+      "Prescribe a universal large fluid volume without assessing congestion",
+      "Withhold all fluid automatically from every patient with CKD",
+      "Replace the potassium and sodium plan with advice to drink more water"
+    ],
+    "answer": 0,
+    "rationale": "Make adequate hydration compatible with the patient's intake, output, kidney reserve and volume constraints. Neither indiscriminate loading nor automatic total fluid avoidance is an individualized plan; water advice cannot replace laboratory follow-up.",
+    "reviewHref": "#electrolytes"
+  },
+  "sulfonamide-trimethoprim-pharmacology-071": {
+    "id": "sulfonamide-trimethoprim-pharmacology-071",
+    "lesson": "electrolytes",
+    "question": "Which assessment best informs TMP-SMX hydration and crystalluria counseling?",
+    "choices": [
+      "Assess intake, urine output, volume status, heart failure, kidney function, route, and dose",
+      "Use the tablet name alone and omit volume or kidney assessment",
+      "Check reported thirst only and omit urine output and congestion",
+      "Treat a normal initial potassium as proof that any fluid load is suitable"
+    ],
+    "answer": 0,
+    "rationale": "Review actual intake, urine output, volume status, heart failure and kidney function alongside product route and exposure. Tablet identity, thirst alone or potassium alone does not establish a suitable fluid plan.",
+    "reviewHref": "#electrolytes"
+  },
+  "sulfonamide-trimethoprim-pharmacology-072": {
+    "id": "sulfonamide-trimethoprim-pharmacology-072",
+    "lesson": "electrolytes",
+    "question": "Which error should be prevented in TMP-SMX fluid counseling?",
+    "choices": [
+      "Giving a universal large fluid load regardless of congestion",
+      "Checking congestion and urine output before advising fluid intake",
+      "Reconciling the fluid advice with kidney function and prescribed exposure",
+      "Keeping potassium and sodium follow-up in the treatment plan"
+    ],
+    "answer": 0,
+    "rationale": "An automatic large fluid load disregards congestion and limited kidney reserve. Checking volume and output, reconciling exposure and maintaining electrolyte surveillance are appropriate safeguards.",
+    "reviewHref": "#electrolytes"
+  },
+  "sulfonamide-trimethoprim-pharmacology-134": {
+    "id": "sulfonamide-trimethoprim-pharmacology-134",
+    "lesson": "electrolytes",
+    "question": "A patient with CKD takes lisinopril and spironolactone. TMP-SMX is proposed. What is the most important immediate safety plan?",
+    "choices": [
+      "Choose an alternative when possible or arrange early potassium and renal monitoring",
+      "Wait until therapy ends to measure potassium",
+      "Add potassium supplementation",
+      "Double spironolactone"
+    ],
+    "answer": 0,
+    "rationale": "CKD, lisinopril and spironolactone create a strong potassium-retention risk when TMP-SMX is proposed. Review an effective alternative when feasible, or arrange potassium and renal follow-up during treatment with a named reviewer and escalation plan. Recommended antibiotic dosing does not remove the risk. The current label requires action on significant electrolyte or renal abnormalities.",
+    "reviewHref": "#electrolytes"
+  }
+};
+
+export const sulfonamideTrimethoprimPharmacologyQuestionBank = [...generated, ...cases].map((q) => electrolyteQuestionRepairs[q.id] || q);
