@@ -5,7 +5,7 @@ import { pharmacyCumulativeReview } from "@/data/pharmacyCumulativeReview";
 
 export const metadata = {
   title: "Cumulative Pharmacy Review | NaS Learn",
-  description: "A 50-question pharmacy review covering calculations, clinical reasoning, medicines, monitoring, and patient counseling.",
+  description: "A 30-question pharmacy review covering calculations, clinical reasoning, medicines, monitoring, and patient counseling.",
   alternates: { canonical: "/learn/pharmacy/review" },
 };
 
@@ -17,7 +17,7 @@ export default function PharmacyReviewPage() {
           <Link href="/learn/pharmacy#curriculum" className="learning-back">← Pharmacy curriculum</Link>
           <p className="nas-kicker">Cumulative review</p>
           <h1>Bring the systems together.</h1>
-          <p>Practice calculations, clinical reasoning, medicine safety, monitoring, and patient counseling. Each attempt draws 10 questions from this focused bank of 50.</p>
+          <p>Practice calculations, clinical reasoning, medicine safety, monitoring, and patient counseling. Each attempt draws 10 questions from this focused bank of 30.</p>
           <div><span>{pharmacyCumulativeReview.length} questions in rotation</span><span>10 per attempt</span><span>Reasoning shown after submission</span></div>
         </div>
       </header>

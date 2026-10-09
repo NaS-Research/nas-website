@@ -35,7 +35,7 @@ export const pharmacyCumulativeReviewPool = [
 
 const cumulativeById = new Map(pharmacyCumulativeReviewPool.map((question) => [question.id, question]));
 if (cumulativeById.size !== pharmacyCumulativeReviewPool.length) throw new Error("Duplicate cumulative-review question ID");
-if (pharmacyCumulativeSelectionIds.length !== 50 || new Set(pharmacyCumulativeSelectionIds).size !== 50) throw new Error("Cumulative review requires 50 unique selected questions");
+if (pharmacyCumulativeSelectionIds.length !== 30 || new Set(pharmacyCumulativeSelectionIds).size !== 30) throw new Error("Cumulative review requires 30 unique selected questions");
 
 export const pharmacyCumulativeReview = pharmacyCumulativeSelectionIds.map((id) => {
   const question = cumulativeById.get(id);
