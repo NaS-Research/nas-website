@@ -29,7 +29,7 @@ export const publicationArtwork = {
     src: "/research/cortex/visuals/cortex-brain-v2.webp",
     alt: "Illustration of the cerebral cortex with natural folds and fine surface vessels",
     creditUrl: "/research/cortex/visuals/brain-attribution-v2.txt",
-    coverFilm: "/research/cortex/cover-v3/loop-720p60.mp4",
+    coverFilm: "/research/cortex/cover-v4/loop-720p60.mp4",
     coverPoster: "/research/cortex/cover-v3/poster-1280.webp",
     coverCreditUrl: "/research/cortex/cover-v3/license.txt",
     coverContain: true,
