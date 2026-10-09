@@ -24,3 +24,24 @@
 .learning-cinema__actions .learning-cinema__watch{color:#e1c699;font-size:inherit}
 .learning-cinema__watch span{color:inherit;margin-left:8px}
 .learning-cinema__screen{min-height:200px}
+
+/* Quiet, visible feedback for the film and channel links. */
+.learning-cinema__actions a {
+  display:inline-flex;
+  align-items:center;
+  min-height:44px;
+  text-decoration-line:underline;
+  text-decoration-color:transparent;
+  text-decoration-thickness:1px;
+  text-underline-offset:5px;
+  transition:color 180ms ease, text-decoration-color 180ms ease, opacity 120ms ease;
+}
+.learning-cinema__actions a:hover,
+.learning-cinema__actions a:focus-visible {
+  color:#f4f2ec;
+  text-decoration-color:#f4f2ec99;
+}
+.learning-cinema__actions a:active { opacity:.65; }
+@media (prefers-reduced-motion:reduce) {
+  .learning-cinema__actions a { transition:none; }
+}
