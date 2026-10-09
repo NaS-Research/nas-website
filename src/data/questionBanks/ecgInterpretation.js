@@ -33,4 +33,191 @@ const concepts = [
 
 const dimensions = [["principle", "Which principle best characterizes"], ["action", "Which clinical action best applies to"], ["assessment", "Which assessment is most appropriate for"], ["hazard", "Which reasoning hazard is most important to prevent with"]];
 function distractors(index, field) { return [5, 11, 17].map((offset) => concepts[(index + offset) % concepts.length][field]); }
-export const ecgInterpretationQuestionBank = concepts.flatMap((concept, conceptIndex) => dimensions.map(([field, prefix], dimensionIndex) => ({ id: `ecg-interpretation-${String(conceptIndex * 4 + dimensionIndex + 1).padStart(3, "0")}`, question: `${prefix} ${concept.name}?`, choices: [concept[field], ...distractors(conceptIndex, field)], answer: 0, rationale: concept.why, reviewHref: `#${concept.lesson}` })));
+const generated = concepts.flatMap((concept, conceptIndex) => dimensions.map(([field, prefix], dimensionIndex) => ({ id: `ecg-interpretation-${String(conceptIndex * 4 + dimensionIndex + 1).padStart(3, "0")}`, question: `${prefix} ${concept.name}?`, choices: [concept[field], ...distractors(conceptIndex, field)], answer: 0, rationale: concept.why, reviewHref: `#${concept.lesson}` })));
+
+const ischemiaElectrolyteQuestionRepairs = {
+  "ecg-interpretation-073": {
+    "choices": [
+      "ST elevation is interpreted by contiguous leads, morphology, reciprocal change, symptoms, timing, and differential rather than voltage alone.",
+      "ST elevation establishes acute coronary occlusion from voltage alone.",
+      "Reciprocal changes are required before symptoms or timing can be considered.",
+      "A prior tracing cannot help interpret an ST-elevation pattern."
+    ],
+    "rationale": "Contiguous distribution, morphology, reciprocal change, symptoms and timing inform the differential. ST elevation alone is not proof of acute occlusion, and the absence of reciprocal change does not rule it out."
+  },
+  "ecg-interpretation-074": {
+    "choices": [
+      "Activate an urgent ischemia pathway when the clinical and electrocardiographic pattern supports acute coronary occlusion without waiting for biomarker confirmation.",
+      "Wait for troponin to rise before activating the emergency ischemia pathway.",
+      "Dismiss diagnostic ECG findings because the initial troponin is normal.",
+      "Require every possible ECG mimic to be excluded before escalating a diagnostic acute pattern."
+    ],
+    "rationale": "When the presentation and ECG are diagnostic, initiate the urgent ischemia pathway without waiting for biomarker confirmation. The question does not treat isolated ST elevation as sufficient; the clinical and ECG context is specified.",
+    "question": "The clinical presentation and ECG pattern are diagnostic of acute coronary occlusion. Which action is most appropriate?"
+  },
+  "ecg-interpretation-075": {
+    "choices": [
+      "Review symptoms, onset, contiguous leads, J-point measurement, reciprocal changes, prior ECG, posterior and right-sided leads, and mimics.",
+      "Review ST voltage in one lead only, omitting symptoms, onset and the prior tracing.",
+      "Review troponin alone and omit the ECG territory and reciprocal changes.",
+      "Record the automated diagnosis without checking morphology or possible mimics."
+    ],
+    "rationale": "Interpret the territory and waveform with symptoms, timing and prior or serial ECGs. Additional posterior or right-sided leads are considered when clinically indicated; this is not an instruction to obtain them for every ST-elevation tracing."
+  },
+  "ecg-interpretation-076": {
+    "choices": [
+      "A normal initial troponin can falsely reassure during early occlusion myocardial infarction.",
+      "Comparing contiguous leads and the prior ECG when interpreting ST elevation.",
+      "Escalating a diagnostic acute ischemic pattern without awaiting biomarker confirmation.",
+      "Considering additional leads when the suspected territory is not fully shown."
+    ],
+    "rationale": "A normal early troponin can provide false reassurance when the clinical and ECG pattern is diagnostic. The other choices support interpretation or timely escalation rather than representing the asked hazard."
+  },
+  "ecg-interpretation-077": {
+    "choices": [
+      "ST depression and T-wave inversion can reflect ischemia, reciprocal change, strain, conduction abnormality, electrolyte disturbance, drugs, or normal variation.",
+      "Every inverted T wave proves acute coronary ischemia.",
+      "ST depression excludes an electrolyte or medicine contribution.",
+      "A conduction abnormality prevents secondary ST-T changes."
+    ],
+    "rationale": "ST-T changes have ischemic and nonischemic causes. Distribution, QRS context, symptoms and change over time help distinguish them; an isolated shape cannot establish the diagnosis."
+  },
+  "ecg-interpretation-078": {
+    "choices": [
+      "Interpret distribution and dynamics with symptoms, QRS morphology, prior ECG, and serial testing.",
+      "Classify the cause from T-wave inversion alone without considering symptoms.",
+      "Ignore a new dynamic pattern whenever the automated report is nondiagnostic.",
+      "Treat a prior baseline repolarization pattern as proof of new infarction."
+    ],
+    "rationale": "Compare distribution and dynamics with symptoms, QRS morphology and prior or serial tracings. Neither an automated description nor one unchanged baseline pattern establishes an acute ischemic cause."
+  },
+  "ecg-interpretation-079": {
+    "choices": [
+      "Review contiguous lead pattern, depth, horizontality, T-wave symmetry, reciprocal elevation, QRS and voltage, drugs, and electrolytes.",
+      "Review T-wave polarity only and omit QRS morphology and the affected leads.",
+      "Review symptoms only and omit the tracing, medicine exposures and electrolytes.",
+      "Review ST depth only and omit reciprocal changes and the prior ECG."
+    ],
+    "rationale": "The lead pattern, waveform, QRS context and exposures contribute together. Each alternative omits relevant information; no one waveform feature is a stand-alone diagnosis."
+  },
+  "ecg-interpretation-080": {
+    "choices": [
+      "Treating every T-wave inversion as acute ischemia ignores secondary repolarization and baseline patterns.",
+      "Comparing ST-T changes with QRS morphology and baseline patterns.",
+      "Considering electrolyte and medicine effects alongside ischemia.",
+      "Reassessing symptoms and serial changes when the initial diagnosis remains uncertain."
+    ],
+    "rationale": "Treating every T-wave inversion as acute ischemia ignores the broader differential. The other choices are appropriate comparison and reassessment steps."
+  },
+  "ecg-interpretation-081": {
+    "choices": [
+      "Hyperkalemia can progress from peaked T waves and shortened repolarization to PR prolongation, P-wave loss, QRS widening, sine-wave pattern, and arrest, but ECG sensitivity is imperfect.",
+      "Every dangerous potassium level produces peaked T waves before conduction changes.",
+      "A normal QRS excludes severe hyperkalemia.",
+      "A sine-wave tracing is required before hyperkalemia can cause an arrhythmia."
+    ],
+    "rationale": "The listed findings are possible manifestations, not a mandatory sequence or a reliable prediction of serum potassium. Severe hyperkalemia can have a nondiagnostic ECG, and dangerous arrhythmias can occur without preceding textbook changes."
+  },
+  "ecg-interpretation-082": {
+    "choices": [
+      "Treat clinically dangerous hyperkalemia promptly using laboratory and clinical context rather than waiting for a textbook sequence.",
+      "Wait for loss of P waves and a sine-wave pattern before escalating dangerous hyperkalemia.",
+      "Disregard a dangerous measured potassium level when the ECG is nondiagnostic.",
+      "Use T-wave height alone to choose the response, omitting kidney function and clinical acuity."
+    ],
+    "rationale": "Use measured potassium and clinical severity with the ECG. Promptly escalate clinically dangerous hyperkalemia rather than waiting for a particular waveform; the absence of classic findings does not establish safety."
+  },
+  "ecg-interpretation-083": {
+    "choices": [
+      "Review potassium, kidney function, medications, T waves, PR, P waves, QRS width, bradycardia, symptoms, and sampling quality.",
+      "Review the ECG only and omit potassium testing and sampling quality.",
+      "Review symptoms only because asymptomatic hyperkalemia cannot be dangerous.",
+      "Review one prior potassium value and omit current kidney function and medicine changes."
+    ],
+    "rationale": "Review the current laboratory and clinical context together with the tracing. Sampling quality matters when assessing a result, but possible sampling error must not become a reason to ignore clinical danger while confirmation is arranged."
+  },
+  "ecg-interpretation-084": {
+    "choices": [
+      "A nondiagnostic ECG does not exclude severe hyperkalemia.",
+      "A normal QRS establishes a safe potassium level.",
+      "Dangerous hyperkalemia always produces a sine wave first.",
+      "The absence of peaked T waves removes the need to review potassium results."
+    ],
+    "rationale": "A nondiagnostic ECG does not exclude severe hyperkalemia. The other statements incorrectly treat absent ECG findings as proof of safety; measured potassium and clinical acuity remain essential.",
+    "question": "Which statement prevents false reassurance when assessing possible severe hyperkalemia?"
+  },
+  "ecg-interpretation-085": {
+    "choices": [
+      "Low potassium can cause ST depression, T-wave flattening, prominent U waves, and ventricular ectopy, while low magnesium amplifies repolarization instability and torsades risk.",
+      "Prominent U waves prove that potassium and magnesium are normal.",
+      "Low magnesium removes torsades risk if potassium is also low.",
+      "ST depression or flattened T waves excludes an electrolyte contribution."
+    ],
+    "rationale": "Low potassium can alter ST, T and U morphology and increase ventricular ectopy. Low magnesium contributes to repolarization risk and can complicate correction of potassium depletion. These patterns require laboratory and clinical correlation."
+  },
+  "ecg-interpretation-086": {
+    "choices": [
+      "Correct magnesium and potassium while removing contributors and monitoring rhythm in high-risk patients.",
+      "Replace potassium without reviewing a concurrent magnesium deficit.",
+      "Use the ECG alone to select replacement without measuring electrolytes or kidney function.",
+      "Continue avoidable losses and contributing medicines without reassessment."
+    ],
+    "rationale": "Review and correct potassium and magnesium together, address contributors and monitor rhythm in high-risk patients. Hypomagnesemia can make potassium depletion difficult to correct. This choice does not specify a universal dose, rate or monitoring schedule."
+  },
+  "ecg-interpretation-087": {
+    "choices": [
+      "Review potassium, magnesium, QT and QU appearance, U waves, ectopy, diuretics, GI losses, drugs, and renal function.",
+      "Review potassium only and omit magnesium and contributing losses.",
+      "Accept the automated QT value without looking for prominent or fused U waves.",
+      "Review the medicine count only and omit kidney function and electrolyte measurements."
+    ],
+    "rationale": "Assess the measured electrolytes and causes of loss with raw QT or QU appearance and ectopy. Diuretics, gastrointestinal losses, medicine exposures and kidney function inform the response; no single item replaces that assessment."
+  },
+  "ecg-interpretation-088": {
+    "choices": [
+      "Measuring a U wave as part of the T wave can overestimate QT and obscure the underlying electrolyte pattern.",
+      "Identifying the T-wave end in a lead with clear morphology.",
+      "Reviewing prominent U waves together with measured potassium and magnesium.",
+      "Rechecking automated interval measurements when T and U waves are difficult to distinguish."
+    ],
+    "rationale": "Including a U wave can make a measured interval appear to be QT when it includes QU. The other choices are protective measurement and correlation steps. The tracing and a consistent method are needed rather than an automated number alone."
+  },
+  "ecg-interpretation-089": {
+    "choices": [
+      "Drug-associated torsades risk depends on QTc, dose and exposure, multiple QT drugs, electrolytes, bradycardia, structural disease, sex, age, and congenital susceptibility.",
+      "The presence of one QT-active medicine predicts torsades independently of the patient.",
+      "A normal potassium level excludes risk from bradycardia or interacting exposures.",
+      "Kidney and liver function cannot affect drug-associated repolarization risk."
+    ],
+    "rationale": "Drug-associated torsades risk combines exposure, interacting medicines, electrolytes, heart rate and patient vulnerability. Normality of one variable does not remove the others, and QT prolongation does not prove torsades will occur."
+  },
+  "ecg-interpretation-090": {
+    "choices": [
+      "Correct modifiable risks, review interactions and organ function, and select or discontinue therapy according to benefit and risk.",
+      "Continue avoidable QT-active combinations without reviewing electrolyte depletion.",
+      "Treat every long QT with a widened QRS as proof of acquired long-QT physiology.",
+      "Stop every beneficial medicine solely because one automated QTc value is elevated."
+    ],
+    "rationale": "Correct modifiable contributors, review exposure and organ function, and weigh therapeutic benefit against risk. Check uncertain QT measurements and QRS context. Neither unreviewed continuation nor reflex discontinuation substitutes for this assessment."
+  },
+  "ecg-interpretation-091": {
+    "choices": [
+      "Review QTc method, change from baseline, heart rate, potassium, magnesium, calcium, kidney and liver function, drug list, and symptoms.",
+      "Review one QTc number only and omit its method, baseline and heart rate.",
+      "Review the prescription list only and omit electrolytes and organ function.",
+      "Review symptoms only and omit QTc, QRS context and interacting medicine exposure."
+    ],
+    "rationale": "Review how QTc was measured and corrected, its change from baseline, rate, electrolytes, exposures and patient context. Kidney or liver dysfunction may change exposure. The question asks for the complete assessment, not one isolated variable."
+  },
+  "ecg-interpretation-092": {
+    "choices": [
+      "Using one QTc cutoff without considering change, rate, QRS, and patient risk can misclassify danger.",
+      "Using a consistent measurement method when comparing baseline and follow-up tracings.",
+      "Reviewing QRS width and heart rate before interpreting an apparent long QT.",
+      "Considering electrolyte depletion and interacting exposure alongside the QTc."
+    ],
+    "rationale": "One isolated cutoff can miss measurement problems and combined patient risk. The other choices address those problems. A widened QRS can lengthen QT through depolarization, so that alone does not establish acquired long-QT physiology."
+  }
+};
+
+export const ecgInterpretationQuestionBank = generated.map((question) => ({ ...question, ...(ischemiaElectrolyteQuestionRepairs[question.id] || {}) }));
