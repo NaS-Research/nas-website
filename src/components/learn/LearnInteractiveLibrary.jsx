@@ -58,8 +58,13 @@ export default function LearnInteractiveLibrary() {
         <h2 id="interactive-library-title">Learn by<br />doing.</h2>
         <p className={styles.description}>Explore biological systems, test mechanisms, and build understanding.</p>
         <p className={styles.detail}>Follow a signal. Change a condition. Connect the mechanism to the response.</p>
-        <ul className={styles.subjects}><li>Heart electrical conduction</li><li>Membrane potential</li><li>Receptor signaling</li><li>Drug kinetics</li></ul>
+        <dl className={styles.subjects}>
+          <div><dt>Follow a signal</dt><dd>From cardiac conduction to cellular responses.</dd></div>
+          <div><dt>Explore a change</dt><dd>Connect membrane potential, receptor activity, and drug concentration.</dd></div>
+        </dl>
       </div>
+      <div className={styles.previewPanel}>
+        <div className={styles.panelCopy}><p>NaS Learn</p><h3>See the<br />mechanism.</h3><span>Signals. Responses. Connections.</span></div>
       <div ref={viewport} className={styles.showcase} data-running={running} aria-hidden="true">
         <div className={styles.track}>
           {reel.map((item, index) => <div className={styles.item} key={`${item.kind}-${index}`}>
@@ -71,6 +76,7 @@ export default function LearnInteractiveLibrary() {
             </div>
           </div>)}
         </div>
+      </div>
       </div>
     </div>
   </section>;
