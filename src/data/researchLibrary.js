@@ -196,7 +196,7 @@ export const researchItems = [
     readTime: "18 min read",
     pdfUrl: null,
     pdfStatus: "none",
-    heroVideo: "/assets/videos/ChicagoThree.mp4#t=2",
+    heroVideo: "/assets/videos/ChicagoThree-trimmed-v2.mp4",
     abstract:
       "Why NaS Research chose Chicago: a life-science, medical, manufacturing, educational, and global city with the depth required to build a durable scientific institution.",
     summary:
@@ -456,7 +456,7 @@ export const researchItems = [
     readTime: "5 min read",
     pdfUrl: null,
     pdfStatus: "none",
-    heroVideo: "/assets/videos/ChicagoThree.mp4#t=2",
+    heroVideo: "/assets/videos/ChicagoThree-trimmed-v2.mp4",
     abstract:
       "Why NaS is being built in Hyde Park: a place our founder calls home, a community shaped by inquiry and creativity, and a responsibility to serve Chicago’s South Side.",
     summary:

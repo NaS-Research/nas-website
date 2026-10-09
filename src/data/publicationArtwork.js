@@ -35,6 +35,6 @@ export const publicationArtwork = {
     coverContain: true,
   },
   "chicago-our-chosen-home": { video: "/assets/videos/ChicagoOne.mp4", src: "/research/covers/chicago.webp", alt: "Chicago cityscape" },
-  "why-hyde-park": { video: "/assets/videos/ChicagoThree.mp4", src: "/research/covers/hyde-park.webp", alt: "Chicago, home to NaS Research" },
+  "why-hyde-park": { video: "/assets/videos/ChicagoThree-trimmed-v2.mp4", src: "/research/covers/hyde-park.webp", alt: "Chicago, home to NaS Research" },
   "why-nas-exists": { src: "/assets/images/NaSLogo-transparent-hd.png", alt: "The NaS gold emblem", mark: true },
 };
