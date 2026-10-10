@@ -1,6 +1,7 @@
 /* Navigation state stays on the words, with no filled active item. */
-.publication-page .publication-meta-line a { color: inherit; transition: color 280ms ease, opacity 280ms ease; text-underline-offset: .3em; }
-.publication-page .publication-meta-line a:hover { color: #c8a46e; text-decoration: underline; }
+.publication-page .publication-meta-line a { color: inherit; opacity: .75; text-decoration: none; transition: opacity 500ms ease; }
+.publication-page .publication-meta-line a:hover,
+.publication-page .publication-meta-line a:focus-visible { color: inherit; opacity: 1; text-decoration: none; }
 .publication-page .publication-meta-line a:active { opacity: .65; }
 .publication-page .publication-meta-line a::before { color: #666; }
 .publication-page .publication-toc a,
