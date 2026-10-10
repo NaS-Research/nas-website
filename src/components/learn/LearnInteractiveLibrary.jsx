@@ -5,8 +5,8 @@ import styles from "./LearnInteractiveLibrary.module.css";
 
 const previews = [
   { kind: "heart", prompt: "Follow the heart’s electrical signal.", title: "Heart electrical conduction", caption: "SA node → AV node → His–Purkinje system" },
-  { kind: "lesson", prompt: "Trace the heart’s electrical signal.", title: "Cardiac conduction", caption: "Trace the signal. Read the ECG." },
-  { kind: "receptor", prompt: "Connect a receptor to its response.", title: "Receptor signaling", caption: "Binding → Activation → Cellular response" },
+  { kind: "lesson", prompt: "Trace the heart’s electrical signal.", title: "Cardiac conduction", caption: "Trace the signal. Read the ECG.", video: "heart-electrical-v2" },
+  { kind: "receptor", prompt: "Compare activation with blockade.", title: "Activate or block", caption: "Agonist · Competitive antagonist", video: "agonist-antagonist-v1" },
   { kind: "kinetics", prompt: "See what happens between doses.", title: "Drug concentration over time", caption: "Dose · Interval · Elimination" },
 ];
 
@@ -71,10 +71,10 @@ export default function LearnInteractiveLibrary() {
         <div className={styles.track}>
           {reel.map((item, index) => <div className={styles.item} key={`${item.kind}-${index}`}>
             <p className={styles.prompt}>{item.prompt}</p>
-            <div className={`${styles.card} ${styles[item.kind]}`}>
+            <div className={`${styles.card} ${item.video ? styles.lesson : styles[item.kind]}`}>
               <div className={styles.cardHeading}><span>{item.title}</span></div>
-              {item.kind === "lesson" ? <div className={styles.lessonPreview}>
-                <video src="/learn/interactive/heart-electrical-v2/showcase.mp4" poster="/learn/interactive/heart-electrical-v2/poster.png" muted loop playsInline preload="metadata" tabIndex={-1} />
+              {item.video ? <div className={styles.lessonPreview}>
+                <video src={`/learn/interactive/${item.video}/showcase.mp4`} poster={`/learn/interactive/${item.video}/poster.png`} muted loop playsInline preload="metadata" tabIndex={-1} />
               </div> : <Diagram kind={item.kind} />}
               <p className={styles.cardCaption}>{item.caption}</p>
             </div>
