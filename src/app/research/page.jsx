@@ -9,13 +9,14 @@ export const metadata = {
   description: "Browse research reports, white papers, research notes, releases, and essays from NaS Research.",
 };
 
-export default function ResearchPage() {
+export default async function ResearchPage({ searchParams }) {
+  const filters = await searchParams;
   return (
     <div className="nas-page research-index-page">
       <header className="research-index-header research-index-header--minimal"><div className="nas-shell research-heading-row"><h1>Research</h1><Link href="/research/areas">Research areas <span aria-hidden="true">↗</span></Link></div></header>
 
       <div data-page-main className="nas-shell research-index-main">
-        <ResearchLibrary items={researchItems} types={researchTypes} />
+        <ResearchLibrary items={researchItems} types={researchTypes} initialArea={typeof filters.area === "string" ? filters.area : "All areas"} initialType={typeof filters.type === "string" ? filters.type : "All"} />
       </div>
       <Footer />
     </div>

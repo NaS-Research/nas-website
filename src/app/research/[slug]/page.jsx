@@ -1,3 +1,4 @@
+import PublicationContents from "@/components/research/PublicationContents";
 import RelatedResearch from "@/components/research/RelatedResearch";
 import { getRelatedResearch } from "@/lib/relatedResearch.mjs";
 import { publicationSectionTitle } from "@/lib/publicationHeadings";
@@ -9,6 +10,7 @@ import "@/components/research/publication-artwork.css";
 import "./publication-refinements.css";
 import "./paper-article.css";
 import "./immersive-article.css";
+import "@/components/research/publication-navigation.css";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -181,8 +183,8 @@ export default async function ResearchPublicationPage({ params }) {
           {isPaperArticle && !hasImmersiveHero && <Image className="publication-paper-mark" src="/assets/images/NaSLogo-transparent-hd.png" alt="NaS gold emblem" width={76} height={76} priority />}
           <div className="publication-meta-line">
             <time dateTime={item.dateISO}>{item.date}</time>
-            <span>{item.area}</span>
-            <span>{item.type}</span>
+            <Link href={`/research?area=${encodeURIComponent(item.area)}`}>{item.area}</Link>
+            <Link href={`/research?type=${encodeURIComponent(item.type)}`}>{item.type}</Link>
           </div>
           <h1>{item.title}</h1>
           <p className="publication-abstract">{item.abstract}</p>
@@ -194,25 +196,7 @@ export default async function ResearchPublicationPage({ params }) {
       <ReadingSurface {...(hasImmersiveHero ? { className: "publication-reading-surface" } : {})}>
       <MobileContents sections={item.sections.map(({ id, title }) => ({ id, title }))} hasSources={Boolean(item.sources?.length)} hasCitation={isResearchPublication} />
       <div className="nas-shell publication-layout">
-        <aside className="publication-toc" aria-label="Publication contents">
-          <details className="publication-contents" open>
-          <summary>In this publication</summary>
-          <nav>
-            <a href="#summary">Summary</a>
-            {item.sections.map((section) => (
-              <a
-                href={`#${section.id}`}
-                className={section.level === 2 ? "publication-toc__subsection" : undefined}
-                key={section.id}
-              >
-                {publicationSectionTitle(section.title)}
-              </a>
-            ))}
-            {item.sources?.length > 0 && <a href="#sources">Sources</a>}
-            {isResearchPublication && <a href="#citation">Citation</a>}
-          </nav>
-          </details>
-        </aside>
+        <PublicationContents sections={item.sections.map(({ id, title, level }) => ({ id, title: publicationSectionTitle(title), level }))} hasSources={Boolean(item.sources?.length)} hasCitation={isResearchPublication} />
 
         <article className="publication-body">
           {hasImmersiveHero && <div className="publication-reading-details">{publicationDetails}</div>}

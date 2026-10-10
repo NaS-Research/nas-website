@@ -1,0 +1,12 @@
+/* Navigation state stays on the words, with no filled active item. */
+.publication-page .publication-meta-line a { color: inherit; transition: color 280ms ease, opacity 280ms ease; text-underline-offset: .3em; }
+.publication-page .publication-meta-line a:hover { color: #c8a46e; text-decoration: underline; }
+.publication-page .publication-meta-line a:active { opacity: .65; }
+.publication-page .publication-meta-line a::before { color: #666; }
+.publication-page .publication-toc a,
+.publication-page .mobile-contents__panel nav a { transition: color 380ms cubic-bezier(.22,1,.36,1); background: transparent; box-shadow: none; }
+.publication-page .publication-toc a[aria-current="location"],
+.publication-page .mobile-contents__panel nav a[aria-current="location"] { color: #c8a46e; background: transparent; }
+.publication-page--paper:not(.publication-page--dark) .publication-toc a[aria-current="location"] { color: #826037; }
+.publication-page .publication-toc a:hover { background: transparent; }
+@media (prefers-reduced-motion: reduce) { .publication-page .publication-toc a, .publication-page .mobile-contents__panel nav a, .publication-page .publication-meta-line a { transition: none; } }

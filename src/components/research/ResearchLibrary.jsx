@@ -5,19 +5,36 @@ import "./publication-artwork.css";
 import Link from "next/link";
 import { useEffect, useMemo, useRef, useState } from "react";
 
-import { matchesResearchType } from "@/data/researchTaxonomy.mjs";
+import { matchesResearchType, researchTypeGroup } from "@/data/researchTaxonomy.mjs";
 
 const viewPageSizes = { grid: 6, compact: 7, preview: 3 };
 
-export default function ResearchLibrary({ items, types }) {
-  const [activeType, setActiveType] = useState("All");
-  const [area, setArea] = useState("All areas");
+export default function ResearchLibrary({ items, types, initialArea = "All areas", initialType = "All" }) {
+  const validType = value => types.includes(value) || items.some(item => item.type === value) ? value : "All";
+  const validArea = value => items.some(item => item.area === value) ? value : "All areas";
+  const [activeType, setActiveType] = useState(() => validType(initialType));
+  const [area, setArea] = useState(() => validArea(initialArea));
   const [sort, setSort] = useState("newest");
   const [query, setQuery] = useState("");
   const [view, setView] = useState("grid");
 
   const [limit, setLimit] = useState(6);
   const toolbar = useRef(null);
+  useEffect(() => {
+    setActiveType(validType(initialType)); setArea(validArea(initialArea)); setLimit(viewPageSizes[view]);
+  }, [initialType, initialArea]);
+  useEffect(() => {
+    const restore = () => { const p = new URLSearchParams(window.location.search); setActiveType(validType(p.get('type'))); setArea(validArea(p.get('area'))); setLimit(viewPageSizes[view]); };
+    window.addEventListener('popstate', restore);
+    return () => window.removeEventListener('popstate', restore);
+  }, [items, types, view]);
+  const updateURL = (type, nextArea) => {
+    const url = new URL(window.location.href);
+    type === 'All' ? url.searchParams.delete('type') : url.searchParams.set('type', type);
+    nextArea === 'All areas' ? url.searchParams.delete('area') : url.searchParams.set('area', nextArea);
+    window.history.replaceState(null, '', url.pathname + url.search + url.hash);
+  };
+
   useEffect(() => {
     const close = (event) => {
       if (event.type === "keydown" && event.key !== "Escape") return;
@@ -31,7 +48,7 @@ export default function ResearchLibrary({ items, types }) {
     document.addEventListener("keydown", close);
     return () => { document.removeEventListener("pointerdown", close); document.removeEventListener("keydown", close); };
   }, []);
-  const change = (setter, value) => { setter(value); setLimit(viewPageSizes[view]); };
+  const change = (setter, value) => { setter(value); setLimit(viewPageSizes[view]); if (setter === setActiveType) updateURL(value, area); if (setter === setArea) updateURL(activeType, value); };
   const areas = [...new Set(items.map((item) => item.area))].sort();
 
   const filteredItems = useMemo(() => {
@@ -54,6 +71,7 @@ export default function ResearchLibrary({ items, types }) {
   }, [activeType, area, items, query, sort]);
 
   const clearFilters = () => {
+    updateURL("All", "All areas");
     setActiveType("All");
     setArea("All areas");
     setQuery("");
@@ -68,8 +86,8 @@ export default function ResearchLibrary({ items, types }) {
             key={type}
             type="button"
 
-            aria-pressed={activeType === type}
-            className={activeType === type ? "is-active" : ""}
+            aria-pressed={researchTypeGroup(activeType) === type}
+            className={researchTypeGroup(activeType) === type ? "is-active" : ""}
             onClick={() => change(setActiveType, type)}
           >
             {type}
@@ -100,6 +118,7 @@ export default function ResearchLibrary({ items, types }) {
 
       {(activeType !== "All" || area !== "All areas" || query) && (
         <div className="research-results-meta">
+          <span>{[activeType !== "All" ? activeType : null, area !== "All areas" ? area : null].filter(Boolean).join(" · ")}</span>
           <button type="button" onClick={clearFilters}>Clear filters</button>
         </div>
       )}

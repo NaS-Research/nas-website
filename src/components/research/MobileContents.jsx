@@ -2,6 +2,7 @@
 
 import { publicationSectionTitle } from "@/lib/publicationHeadings";
 import { useEffect, useRef } from "react";
+import usePublicationSection from "./usePublicationSection";
 
 export default function MobileContents({ sections, hasSources, hasCitation = true }) {
   const dialog = useRef(null);
@@ -15,12 +16,13 @@ export default function MobileContents({ sections, hasSources, hasCitation = tru
   }, []);
   const links = [{ id: "summary", title: "Summary" }, ...sections,
     ...(hasSources ? [{ id: "sources", title: "Sources" }] : []), ...(hasCitation ? [{ id: "citation", title: "Citation" }] : [])];
+  const active = usePublicationSection(links.map(section => section.id));
   return <div className="mobile-contents">
     <button ref={trigger} className="mobile-contents__trigger" aria-haspopup="dialog" onClick={() => dialog.current.showModal()}>Contents <span aria-hidden="true">↑</span></button>
     <dialog ref={dialog} className="mobile-contents__sheet" aria-labelledby="mobile-contents-title" onClose={() => trigger.current?.focus({ preventScroll: true })} onClick={event => { if (event.target === dialog.current) close(); }}>
       <div className="mobile-contents__panel">
         <header><h2 id="mobile-contents-title">In this publication</h2><button autoFocus onClick={close} aria-label="Close contents">✕</button></header>
-        <nav aria-label="Article sections">{links.map(section => <a key={section.id} href={`#${section.id}`} onClick={close}>{publicationSectionTitle(section.title)}</a>)}</nav>
+        <nav aria-label="Article sections">{links.map(section => <a key={section.id} href={`#${section.id}`} aria-current={active === section.id ? "location" : undefined} onClick={close}>{publicationSectionTitle(section.title)}</a>)}</nav>
       </div>
     </dialog>
   </div>;
