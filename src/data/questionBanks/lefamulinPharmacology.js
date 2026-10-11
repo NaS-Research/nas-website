@@ -231,7 +231,91 @@ const oralAdministrationRepairs = {
   }
 };
 
+const historicalQuestionRepairs = {
+  "lefamulin-pharmacology-023": {
+    "choices": [
+      "Assess exposure history, diagnostics, severity, QT risks, local pathway, and companion needs",
+      "Assume atypical activity also supplies Pseudomonas coverage without reviewing pathogen risks",
+      "Use the likely atypical pathogen as the only selection criterion and omit QT and interaction review",
+      "Ignore culture and susceptibility results once an atypical pathogen has been considered"
+    ],
+    "rationale": "Assess the pneumonia syndrome, likely pathogens, diagnostic evidence, severity and medication risks together. Lefamulin has labeled activity against Legionella, Mycoplasma and Chlamydophila, but that does not supply Pseudomonas coverage. A possible atypical pathogen does not waive QT or interaction review, and available culture and susceptibility findings still inform treatment."
+  },
+  "lefamulin-pharmacology-027": {
+    "choices": [
+      "Assess prior isolation, recent IV antibiotics, structural lung disease, hospitalization, cultures, and severity",
+      "Assume the CABP indication guarantees activity against every gram-negative respiratory isolate",
+      "Exclude Pseudomonas risk whenever the patient can swallow oral tablets",
+      "Review cultures only after choosing lefamulin and disregard a prior Pseudomonas isolate"
+    ],
+    "rationale": "Assess prior organisms, recent hospitalization and parenteral antibiotics, structural lung disease, current microbiology and illness severity before relying on lefamulin. Its CABP indication does not provide universal gram-negative coverage, and it is not active against Pseudomonas. Swallowing ability does not determine the pathogen, and prior isolation must inform the coverage decision rather than be ignored."
+  },
+  "lefamulin-pharmacology-028": {
+    "choices": [
+      "Using lefamulin monotherapy for a patient whose pneumonia requires Pseudomonas coverage",
+      "Reviewing a prior Pseudomonas isolate before choosing pneumonia coverage",
+      "Selecting a regimen with Pseudomonas activity when that coverage is required",
+      "Reassessing coverage when current cultures identify an organism outside lefamulin activity"
+    ],
+    "rationale": "The hazard is relying on lefamulin alone when Pseudomonas coverage is required: the label states that lefamulin is not active against that organism. Reviewing prior isolates, selecting adequate coverage when needed, and reassessing with current microbiology are appropriate safeguards. A historical isolate informs risk assessment; it does not by itself prove the cause of every later pneumonia."
+  },
+  "lefamulin-pharmacology-047": {
+    "choices": [
+      "Assess shock, ventilation, oxygenation, multilobar disease, cultures, resistant-pathogen risks, and organ failure",
+      "Classify pneumonia as nonsevere whenever an oral tablet can be swallowed",
+      "Choose lefamulin monotherapy before assessing respiratory support or hemodynamic instability",
+      "Use the meal schedule to decide whether severe CAP combination therapy is needed"
+    ],
+    "rationale": "Assess severe CAP physiology and resistant-pathogen risks before selecting treatment. The pathway uses shock, respiratory failure and other severity criteria, and separates severe from nonsevere regimens. Oral swallowing or meal timing cannot classify disease severity. Lefamulin is listed as an alternative for selected nonsevere patients, so selecting monotherapy before this assessment bypasses the severity decision."
+  },
+  "lefamulin-pharmacology-051": {
+    "choices": [
+      "Assess fever, heart rate, respiratory rate, oxygenation, blood pressure, mental status, imaging, cultures, and viral results",
+      "Use the tablet count alone to decide whether the pneumonia diagnosis remains supported",
+      "Assess nausea only and omit respiratory status, hemodynamics, and diagnostic results",
+      "Assume nonresponse confirms the original diagnosis and continue without checking complications"
+    ],
+    "rationale": "Reassess clinical progression, respiratory and circulatory stability, mentation and diagnostic evidence. Tablet count or nausea alone cannot establish pneumonia response or confirm the diagnosis. Lack of improvement warrants assessment for complications and a renewed diagnostic review, rather than assuming that the original diagnosis must remain correct."
+  },
+  "lefamulin-pharmacology-052": {
+    "choices": [
+      "Continuing the original pneumonia plan despite nonresponse without reassessing diagnosis or complications",
+      "Reviewing vital signs and oxygenation to assess clinical improvement",
+      "Assessing for pneumonia complications when clinical improvement is absent",
+      "Using updated microbiology to reconsider pathogen-directed treatment"
+    ],
+    "rationale": "The hazard is continuing automatically despite nonresponse. The pathway calls for diagnostic and clinical progression review, complication assessment when there is no improvement, and pathogen-directed decisions based on available tests. Reviewing stability, complications or microbiology supports that reassessment rather than bypassing it."
+  },
+  "lefamulin-pharmacology-151": {
+    "choices": [
+      "Assess stool pattern, hydration, infusion site, liver tests, bleeding, ECG symptoms, and timing",
+      "Assume every episode of diarrhea is harmless intolerance and omit C. difficile assessment",
+      "Check only the infusion site because oral therapy cannot cause gastrointestinal or hepatic adverse effects",
+      "Ignore palpitations and medication timing once the first lefamulin dose was tolerated"
+    ],
+    "rationale": "Assess symptoms, timing and relevant safety findings rather than presuming a benign reaction. The label identifies gastrointestinal and hepatic adverse reactions, infusion-site reactions, QT risk and less common thrombocytopenia. Diarrhea requires consideration of C. difficile; oral therapy still has adverse effects, and tolerating one dose does not eliminate later cardiac symptoms or interaction risk. Bleeding is a symptom to assess, not a claim that it is a common labeled reaction."
+  },
+  "lefamulin-pharmacology-155": {
+    "choices": [
+      "Assess the complete pneumonia, patient, product, regimen, monitoring ownership, follow-up, and alternative trigger",
+      "Confirm the CABP indication but omit route feasibility, medication risks, and follow-up",
+      "Check QT risk alone and assume that this establishes adequate coverage and treatment response",
+      "Confirm that the tablet is intact and defer all diagnosis and interaction review until discharge"
+    ],
+    "rationale": "A complete plan combines the supported pneumonia indication and pathogen coverage with the patient-specific regimen, administration feasibility, safety review, response monitoring and follow-up. The indication alone does not settle route or safety, QT review does not prove coverage or response, and intact tablets do not remove the need for diagnosis and interaction checks. Assigning follow-up and a reassessment trigger makes these required decisions actionable."
+  },
+  "lefamulin-pharmacology-156": {
+    "choices": [
+      "Choosing lefamulin without assessing why standard CAP options are unsuitable",
+      "Documenting why standard options are unsuitable before choosing the pathway alternative",
+      "Reviewing diagnosis, coverage, QT and interaction risks before selecting lefamulin",
+      "Arranging response review and follow-up for the selected treatment"
+    ],
+    "rationale": "The hazard is selecting the pathway alternative without assessing why standard options are unsuitable. The IDSA pathway lists lefamulin as an option for selected nonsevere patients who are not candidates for beta-lactams, macrolides or fluoroquinolones; that positioning is distinct from its labeled adult CABP indication. Documenting the selection rationale, reviewing coverage and safety, and arranging follow-up support a complete plan."
+  }
+};
+
 export const lefamulinPharmacologyQuestionBank = [...generated, ...cases].map((question) => {
-  const repair = oralAdministrationRepairs[question.id];
+  const repair = historicalQuestionRepairs[question.id] || oralAdministrationRepairs[question.id];
   return repair ? { ...question, ...repair } : question;
 });
