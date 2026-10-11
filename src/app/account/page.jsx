@@ -11,5 +11,7 @@ export default async function AccountPage(){
  if(!authReady())redirect('/login');
  const client=await authClient();const {data:{user},error}=await client.auth.getUser();
  if(error||!user)redirect('/login');
- return <><MemberHome /><div className="member-account-bar"><Link href="/login?mode=reset">Reset password</Link><form action={signOut}><button>Log out</button></form></div></>;
+ const profileName=user.user_metadata?.full_name;
+ const displayName=typeof profileName==='string'&&profileName.trim()?profileName.trim().slice(0,100):user.email;
+ return <><MemberHome /><div className="member-account-bar"><span className="member-identity">Signed in as {displayName}</span><Link href="/login?mode=reset">Reset password</Link><form action={signOut}><button>Log out</button></form></div></>;
 }

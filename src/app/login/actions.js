@@ -13,8 +13,11 @@ export async function authenticate(previous,form) {
  try {
   const client=await authClient();
   if(mode==='signup') {
+   const fullName=String(form.get('fullName')||'').trim();
+   const affiliation=String(form.get('affiliation')||'').trim();
+   if(!fullName || fullName.length>100 || affiliation.length>160) return {error:'Enter your name (up to 100 characters) and an affiliation up to 160 characters.'};
    if(form.get('consent')!=='yes') return {error:'Please accept the terms before creating an account.'};
-   const {error}=await client.auth.signUp({email,password,options:{emailRedirectTo:`${siteOrigin()}/auth/callback`}});
+   const {error}=await client.auth.signUp({email,password,options:{data:{full_name:fullName,affiliation},emailRedirectTo:`${siteOrigin()}/auth/callback`}});
    if(error) return {error:'We could not complete signup. Try again later, or use password recovery if you already have an account.'};
    return {message:'Check your email to continue. If you already have an account, sign in or reset your password.'};
   }

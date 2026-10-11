@@ -34,8 +34,8 @@ Requires Apple's developer configuration: App ID with Sign in with Apple, Servic
 ## Release gates still requiring external configuration
 
 1. Create/connect the NaS Supabase project and production email delivery.
-2. Configure Google and Apple in their developer consoles.
-3. Test email signup, confirmation, login, recovery, Google and Apple callbacks, session refresh, signout, and expired/reused links with real test accounts.
+2. If enabling Google or Apple, configure those providers in their developer consoles. They are optional for the initial email/password release.
+3. Test email signup, confirmation, login, recovery, session refresh, signout, and expired/reused links with real test accounts. Test Google and Apple callbacks if those providers are enabled.
 4. Validate abuse controls, email deliverability, provider downtime, and per-client rate limiting.
 5. Update public privacy terms to explain account email, provider identity, essential session cookies, Supabase, deletion requests, and actual retention. Current privacy text says no accounts; do not enable while it remains inaccurate.
 6. Provide a verified account deletion process before launch. The member_items migration defines private workspace storage with RLS; apply it before activation.
@@ -46,3 +46,7 @@ The account page now provides Continue, Saved, History, and Notes. Cloud persist
 ## Implementation checks
 
 Server-only Supabase client with HttpOnly, SameSite=Lax, production Secure cookies. Next Server Actions supply origin validation for state-changing form requests. OAuth uses the SDK PKCE flow. Callback destinations are fixed, not arbitrary next URLs. Server account access calls getUser; it never trusts raw session cookies. Auth routes are private/no-store and noindex. Global signout follows password change (issued access tokens can survive until expiry; choose a short lifetime). Never cache authenticated responses at the CDN.
+
+## Scientist account profiles
+
+Registration collects full name and optional institutional affiliation in Supabase user metadata. These fields are display-only and do not confer a scientist role, staff access, or institutional verification. Private workspace access still uses the server-verified user ID and database ownership policies. Never authorize from profile metadata. The October 10 account-screen candidate does not activate registration or claim production sign-in verification; configuration and activation checks above remain required.

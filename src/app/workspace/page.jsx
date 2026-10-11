@@ -1,4 +1,5 @@
 import { completePageMetadata } from "@/lib/pageMetadata.mjs";
+import { authReady } from "@/lib/auth/config.mjs";
 import Link from "next/link";
 import Footer from "@/components/Footer";
 import WorkspaceAtmosphere from "./WorkspaceAtmosphere";
@@ -16,6 +17,7 @@ const paths = [
   { name: "Build", text: "Explore the systems we’re developing and help shape what comes next.", href: "/products", link: "See what we’re building" },
 ];
 export default function WorkspacePage() {
+  const accountsEnabled = authReady();
   const medicine = getDrugAtlasLesson("albuterol");
   const primary = study.sections.find(s => s.id === "results").resultsTable[1];
   return <div className="nas-page workspace-page"><WorkspaceAtmosphere /><div data-page-main>
@@ -24,7 +26,7 @@ export default function WorkspacePage() {
         <p className="workspace-label">The NaS workspace</p>
         <h1>A place for<br />scientific<br /><span>work.</span></h1>
         <p className="workspace-opening-description">Tools, knowledge, and room<br />to pursue your next question.</p>
-        <div className="workspace-actions"><a className="workspace-light-button" href="#overview">Explore the workspace <span aria-hidden="true">↓</span></a><a className="workspace-text-link" href="#nicole">Meet Nicole <Arrow /></a></div>
+        <div className="workspace-actions">{accountsEnabled && <Link className="workspace-light-button" href="/account">Open your workspace <Arrow /></Link>}<a className="workspace-light-button" href="#overview">Explore the workspace <span aria-hidden="true">↓</span></a><a className="workspace-text-link" href="#nicole">Meet Nicole <Arrow /></a></div>
       </div></div>
       <p className="workspace-opening-footnote">For researchers, clinicians, and the people learning alongside them.</p>
     </header>
