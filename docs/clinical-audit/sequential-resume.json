@@ -90,7 +90,7 @@
     "dependencyPrintedPage": 150,
     "dependencyPdfPage": 158,
     "sectionAudit": "Most recent completed dependency: whole nutrition-screening-assessment module;105 complete questions,420 choices,six whole lessons/checks/figures,15 references and30 independent calculations source/product/live verified. The determining-fluid-needs checklist entry and broader Chapter11 work remain open.",
-    "nextAction": "Resume the earliest unfinished historical whole-question feeding candidate listed in nutrition-reconciliation-v1.json, then remaining secondary semantic relevance/source review. Preserve Chapter1 entry15, Chapter11 feeding dependency and iv-fluid-selection checkpoints. Nutrition module is verified and live. Older Audit/public differences remain pending; complete all82chapters/232modules.",
+    "nextAction": "Continue earliest unfinished historical whole-question candidate in semantic-whole-object-inventory-v5.json, then remaining secondary semantic relevance/source review. Preserve Chapter1 entry15, Chapter11 feeding dependency and iv-fluid-selection checkpoints.99historical candidates remain; olderAudit/public differences require exact release reconciliation. Full82chapters/232modules goal remains active.",
     "nextDependencyPrintedPage": 161,
     "nextDependencyPdfPage": 169
   },
@@ -181,13 +181,13 @@
       "total": 232,
       "moduleCountPercent": 29.74
     },
-    "interpretation": "69/232 whole modules and7/82 chapters verified. Nutrition105 questions exactly bound to retained source/product/live/archive evidence. Remaining historical candidates and secondary semantic coverage are open; no new clinical certification. Selected30/10 unchanged.",
-    "checkedAt": "2026-10-11T18:26:54.602793+00:00",
+    "interpretation": "69/232whole modules and7/82chapters verified. Five historical anticoagulant questions live verified;99historical candidates remain. Selected30/10 unchanged. No new whole module/chapter closure.",
+    "checkedAt": "2026-10-11T18:58:50.128088+00:00",
     "wholeModulesVerified": 69,
     "wholeModulesTotal": 232,
     "moduleCountPercent": 29.74
   },
-  "lastVerifiedLogicalUnit": "Exact retained nutrition source/product/live/archive evidence reconciled for105whole questions/420choices with the broader feeding registry. No new module or chapter closure.",
+  "lastVerifiedLogicalUnit": "Five historical anticoagulant whole questions/20choices: source, guarded build and actual desktop/mobile/live checks passed; Main aa73ca0f3e5b34974c971924065f2bca09880865. No whole module/chapter closure.",
   "lastVerifiedSections": {
     "enteral-nutrition": {
       "evidence": "enteral-nutrition-renal-solute-review.json",
@@ -13813,6 +13813,7 @@
     "diarrhea-13-case",
     "diarrhea-13-principle",
     "diarrhea-13-safety",
+    "direct-oral-anticoagulants-007",
     "direct-oral-anticoagulants-025",
     "direct-oral-anticoagulants-026",
     "direct-oral-anticoagulants-027",
@@ -13825,6 +13826,7 @@
     "direct-oral-anticoagulants-050",
     "direct-oral-anticoagulants-051",
     "direct-oral-anticoagulants-052",
+    "direct-oral-anticoagulants-099",
     "fidaxomicin-pharmacology-041",
     "fidaxomicin-pharmacology-042",
     "fidaxomicin-pharmacology-043",
@@ -14881,10 +14883,13 @@
     "vancomycin-pharmacology-122",
     "vancomycin-pharmacology-123",
     "vancomycin-pharmacology-124",
+    "warfarin-management-011",
+    "warfarin-management-035",
     "warfarin-management-053",
     "warfarin-management-054",
     "warfarin-management-055",
     "warfarin-management-056",
+    "warfarin-management-103",
     "warfarin-management-enteral-feeding"
   ],
   "latestEnteralBroaderWarfarinReview": {
@@ -39210,8 +39215,8 @@
   },
   "currentFeedingSemanticCoverageReconciliation": {
     "managedModule": "feeding-semantic-coverage-reconciliation-20261011",
-    "externalReceipt": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-nutrition-evidence-reconciliation-20261011/evidence/nutrition-reconciliation-v1.json",
-    "status": "nutrition105_exact_archived_release_bindings_reconciled_remaining_semantics_pending",
+    "externalReceipt": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-anticoagulant-historical-review-20261011/evidence/completion-anticoagulant-v1.json",
+    "status": "five_anticoagulant_historical_questions_live_qualified_remaining99_open",
     "counts": {
       "historicalRows": 233,
       "historicalChangedWholeObjects": 27,
@@ -39220,9 +39225,9 @@
       "retainedSecondaryRows": 2046,
       "currentFocusedRows": 405,
       "currentSecondaryLocatingRows": 1881,
-      "priorUnregisteredHistoricalStillPending": 104,
-      "historicalCurrentExactReleaseBindings": 28,
-      "historicalPriorUnregisteredNowExactBound": 26,
+      "priorUnregisteredHistoricalStillPending": 99,
+      "historicalCurrentExactReleaseBindings": 33,
+      "historicalPriorUnregisteredNowExactBound": 31,
       "changedWholeObjectsWithoutCurrentExactReleaseBinding": 36
     },
     "retainedExactWholeQuestionReleaseBindings": 48,
@@ -39250,7 +39255,7 @@
       "cytomegalovirus-pharmacotherapy": 3
     },
     "verificationReceipt": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-semantic-coverage-reconciliation-20261011/evidence/completion-semantic-v1.json",
-    "newClinicalQuestionCertifications": 0,
+    "newClinicalQuestionCertifications": 5,
     "wholeModuleVerified": false,
     "wholeChapterVerified": false,
     "nutritionWholeQuestionBindings": 105
@@ -39450,5 +39455,154 @@
       "nutrition-live-pixel-comparison-v2.json": "b85b305be6fdf76c56f18e16407f3e67f0f86b25cd9ce797c6903626816ff3e0",
       "nutrition-main-owner-native-v1.json": "2e92151a33ae1f86d31ddd485bf69814866cc3638d32f606b5123fd468db6f3a"
     }
+  },
+  "latestHistoricalAnticoagulantScopedRelease": {
+    "status": "verified_scoped_public_release",
+    "checkedUTC": "2026-10-11T18:58:50.128088+00:00",
+    "questionIds": [
+      "warfarin-management-011",
+      "warfarin-management-035",
+      "warfarin-management-103",
+      "direct-oral-anticoagulants-007",
+      "direct-oral-anticoagulants-099"
+    ],
+    "wholeQuestionsReviewed": 5,
+    "individualChoicesReviewed": 20,
+    "sourceNativePagesActuallyInspected": 26,
+    "mainBase": "7413f7fb32b6d4d20c1a3427e89a11b084e9b99f",
+    "nativeCapturesActuallyInspected": 26,
+    "evidenceSHA256": {
+      "anticoagulant-question-review-v1.json": "c0c395f39a3cc8cacefe9f7d885d9924bff9efbb278a6d01641a6a031796d28b",
+      "main-integration-anticoagulant-v2.json": "0398a7663a87fb26050f4753b22990129e1ac3e0e78663b3d3a858e8c4b4fc83",
+      "browser-anticoagulant-main-v1.json": "63c9e47dd40eb7dab55ccaa8e85c6aca74b028356449053b53d11de40c2173e7",
+      "actual-native-anticoagulant-complete-v1.json": "c11045327df9fdcc50f0c144fe954fabe1dda8a4bda91c2d53ec21e590b8d430",
+      "browser-anticoagulant-live-v1.json": "e02134219c2afb301b8a76e9205533f4f66441a6863c079e136b94c87965b4da",
+      "public-pixel-comparison-anticoagulant-v1.json": "c2c649c46c6bc3a3be415681a307cf0451a53b45181322212e4e1236ecfa44f3",
+      "original-preservation-anticoagulant-v1.json": "9da3bef16fb080ce43c6c5136be6f5dbf80eae15aa568a7be75256c7a50576d1"
+    },
+    "selected30WholeObjectsExact": true,
+    "entireCumulativePoolExact": true,
+    "other230ModulesExact": true,
+    "wholeModulesVerified": 69,
+    "chaptersVerified": 7,
+    "wholeModuleVerified": false,
+    "wholeChapterVerified": false,
+    "productionLiveVerified": true,
+    "wholeGoalComplete": false,
+    "release": {
+      "mainCommit": "aa73ca0f3e5b34974c971924065f2bca09880865",
+      "auditReviewCommit": "cdd1a8044592a906a5164728d7566faeebb6dfdf",
+      "exactRemoteMainVerified": true,
+      "liveBrowserPassed": true,
+      "publicCapturesRGBIdenticalToActuallyInspectedMain": 26,
+      "extraPublicDifferences": 0,
+      "newestFirstAndSearchRelevanceVerified": true
+    },
+    "olderAuditDifferencesPreserved": [
+      {
+        "module": "warfarin-management",
+        "id": "warfarin-management-053",
+        "status": "older_audit_difference_not_published_here",
+        "absentFromMain": false
+      },
+      {
+        "module": "warfarin-management",
+        "id": "warfarin-management-054",
+        "status": "older_audit_difference_not_published_here",
+        "absentFromMain": false
+      },
+      {
+        "module": "warfarin-management",
+        "id": "warfarin-management-055",
+        "status": "older_audit_difference_not_published_here",
+        "absentFromMain": false
+      },
+      {
+        "module": "warfarin-management",
+        "id": "warfarin-management-056",
+        "status": "older_audit_difference_not_published_here",
+        "absentFromMain": false
+      },
+      {
+        "module": "warfarin-management",
+        "id": "warfarin-management-enteral-feeding",
+        "status": "older_audit_difference_not_published_here",
+        "absentFromMain": true
+      },
+      {
+        "module": "direct-oral-anticoagulants",
+        "id": "direct-oral-anticoagulants-025",
+        "status": "older_audit_difference_not_published_here",
+        "absentFromMain": false
+      },
+      {
+        "module": "direct-oral-anticoagulants",
+        "id": "direct-oral-anticoagulants-026",
+        "status": "older_audit_difference_not_published_here",
+        "absentFromMain": false
+      },
+      {
+        "module": "direct-oral-anticoagulants",
+        "id": "direct-oral-anticoagulants-027",
+        "status": "older_audit_difference_not_published_here",
+        "absentFromMain": false
+      },
+      {
+        "module": "direct-oral-anticoagulants",
+        "id": "direct-oral-anticoagulants-028",
+        "status": "older_audit_difference_not_published_here",
+        "absentFromMain": false
+      },
+      {
+        "module": "direct-oral-anticoagulants",
+        "id": "direct-oral-anticoagulants-029",
+        "status": "older_audit_difference_not_published_here",
+        "absentFromMain": false
+      },
+      {
+        "module": "direct-oral-anticoagulants",
+        "id": "direct-oral-anticoagulants-030",
+        "status": "older_audit_difference_not_published_here",
+        "absentFromMain": false
+      },
+      {
+        "module": "direct-oral-anticoagulants",
+        "id": "direct-oral-anticoagulants-031",
+        "status": "older_audit_difference_not_published_here",
+        "absentFromMain": false
+      },
+      {
+        "module": "direct-oral-anticoagulants",
+        "id": "direct-oral-anticoagulants-032",
+        "status": "older_audit_difference_not_published_here",
+        "absentFromMain": false
+      },
+      {
+        "module": "direct-oral-anticoagulants",
+        "id": "direct-oral-anticoagulants-049",
+        "status": "older_audit_difference_not_published_here",
+        "absentFromMain": false
+      },
+      {
+        "module": "direct-oral-anticoagulants",
+        "id": "direct-oral-anticoagulants-050",
+        "status": "older_audit_difference_not_published_here",
+        "absentFromMain": false
+      },
+      {
+        "module": "direct-oral-anticoagulants",
+        "id": "direct-oral-anticoagulants-051",
+        "status": "older_audit_difference_not_published_here",
+        "absentFromMain": false
+      },
+      {
+        "module": "direct-oral-anticoagulants",
+        "id": "direct-oral-anticoagulants-052",
+        "status": "older_audit_difference_not_published_here",
+        "absentFromMain": false
+      }
+    ],
+    "remainingHistoricalQuestions": 99,
+    "limits": "Five whole questions/20 choices only. No whole module or chapter closure. Older17Audit differences including one Audit-only question remain preserved and not published here. The selected30and entire cumulative pool remain exact."
   }
 }

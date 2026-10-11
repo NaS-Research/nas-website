@@ -1,14 +1,14 @@
 {
-  "status": "nutrition105_exact_archived_release_bindings_reconciled_remaining_semantics_pending",
-  "checkedUTC": "2026-10-11T18:26:54.602793+00:00",
+  "status": "five_anticoagulant_historical_questions_live_qualified_remaining99_open",
+  "checkedUTC": "2026-10-11T18:58:50.128088+00:00",
   "sourceHEAD": "a403e8e2da7679186f4244847635a73c400d7633",
   "scope": "All current232 modules and whole bank fields, historical233 rows, focused416 and secondary2046 retained rows. Rebuild locating inventory, compare exact whole objects and bind48 completed source/render/live releases. Keyword results and retained ID labels are not clinical qualification.",
   "modules": 232,
   "wholeBankObjects": 28012,
   "selectedCumulativeWholeObjectsExact": true,
   "priorRegistryIds": 1510,
-  "retainedExactPublishedWholeQuestionBindings": 264,
-  "registryIdsAfter": 1772,
+  "retainedExactPublishedWholeQuestionBindings": 269,
+  "registryIdsAfter": 1777,
   "archives": [
     {
       "path": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/archives/feeding-primary-nutrition-question-review-20261011",
@@ -716,9 +716,9 @@
     "retainedSecondaryRows": 2046,
     "currentFocusedRows": 405,
     "currentSecondaryLocatingRows": 1881,
-    "priorUnregisteredHistoricalStillPending": 104,
-    "historicalCurrentExactReleaseBindings": 28,
-    "historicalPriorUnregisteredNowExactBound": 26,
+    "priorUnregisteredHistoricalStillPending": 99,
+    "historicalCurrentExactReleaseBindings": 33,
+    "historicalPriorUnregisteredNowExactBound": 31,
     "changedWholeObjectsWithoutCurrentExactReleaseBinding": 36
   },
   "currentPrimaryQuestionInventory": {
@@ -739,9 +739,9 @@
   "newWholeModuleOrChapterClosures": 0,
   "wholeGoalComplete": false,
   "additionalArchivedQuestionBindings": 111,
-  "newRegistryIdsAddedThisPhase": 105,
+  "newRegistryIdsAddedThisPhase": 5,
   "ownEnteralQuestionHashesReconciled": 108,
-  "newClinicalQuestionCertifications": 0,
+  "newClinicalQuestionCertifications": 5,
   "additionalProof": [
     {
       "path": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/archives/fluid-parent-closure-reconciliation-20261011",
@@ -770,8 +770,6 @@
     }
   ],
   "remainingHistoricalUnregisteredPendingByModule": {
-    "warfarin-management": 3,
-    "direct-oral-anticoagulants": 2,
     "thyroid-medicinal-chemistry": 3,
     "genitourinary-medicinal-chemistry": 3,
     "fluoroquinolone-pharmacology": 9,
@@ -1183,5 +1181,154 @@
     "wholeGoalComplete": false,
     "locatingFieldsRemainHistoricalSnapshot": true
   },
-  "locatingFieldsRemainHistoricalSnapshot": true
+  "locatingFieldsRemainHistoricalSnapshot": true,
+  "latestHistoricalAnticoagulantRelease": {
+    "status": "verified_scoped_public_release",
+    "checkedUTC": "2026-10-11T18:58:50.128088+00:00",
+    "questionIds": [
+      "warfarin-management-011",
+      "warfarin-management-035",
+      "warfarin-management-103",
+      "direct-oral-anticoagulants-007",
+      "direct-oral-anticoagulants-099"
+    ],
+    "wholeQuestionsReviewed": 5,
+    "individualChoicesReviewed": 20,
+    "sourceNativePagesActuallyInspected": 26,
+    "mainBase": "7413f7fb32b6d4d20c1a3427e89a11b084e9b99f",
+    "nativeCapturesActuallyInspected": 26,
+    "evidenceSHA256": {
+      "anticoagulant-question-review-v1.json": "c0c395f39a3cc8cacefe9f7d885d9924bff9efbb278a6d01641a6a031796d28b",
+      "main-integration-anticoagulant-v2.json": "0398a7663a87fb26050f4753b22990129e1ac3e0e78663b3d3a858e8c4b4fc83",
+      "browser-anticoagulant-main-v1.json": "63c9e47dd40eb7dab55ccaa8e85c6aca74b028356449053b53d11de40c2173e7",
+      "actual-native-anticoagulant-complete-v1.json": "c11045327df9fdcc50f0c144fe954fabe1dda8a4bda91c2d53ec21e590b8d430",
+      "browser-anticoagulant-live-v1.json": "e02134219c2afb301b8a76e9205533f4f66441a6863c079e136b94c87965b4da",
+      "public-pixel-comparison-anticoagulant-v1.json": "c2c649c46c6bc3a3be415681a307cf0451a53b45181322212e4e1236ecfa44f3",
+      "original-preservation-anticoagulant-v1.json": "9da3bef16fb080ce43c6c5136be6f5dbf80eae15aa568a7be75256c7a50576d1"
+    },
+    "selected30WholeObjectsExact": true,
+    "entireCumulativePoolExact": true,
+    "other230ModulesExact": true,
+    "wholeModulesVerified": 69,
+    "chaptersVerified": 7,
+    "wholeModuleVerified": false,
+    "wholeChapterVerified": false,
+    "productionLiveVerified": true,
+    "wholeGoalComplete": false,
+    "release": {
+      "mainCommit": "aa73ca0f3e5b34974c971924065f2bca09880865",
+      "auditReviewCommit": "cdd1a8044592a906a5164728d7566faeebb6dfdf",
+      "exactRemoteMainVerified": true,
+      "liveBrowserPassed": true,
+      "publicCapturesRGBIdenticalToActuallyInspectedMain": 26,
+      "extraPublicDifferences": 0,
+      "newestFirstAndSearchRelevanceVerified": true
+    },
+    "olderAuditDifferencesPreserved": [
+      {
+        "module": "warfarin-management",
+        "id": "warfarin-management-053",
+        "status": "older_audit_difference_not_published_here",
+        "absentFromMain": false
+      },
+      {
+        "module": "warfarin-management",
+        "id": "warfarin-management-054",
+        "status": "older_audit_difference_not_published_here",
+        "absentFromMain": false
+      },
+      {
+        "module": "warfarin-management",
+        "id": "warfarin-management-055",
+        "status": "older_audit_difference_not_published_here",
+        "absentFromMain": false
+      },
+      {
+        "module": "warfarin-management",
+        "id": "warfarin-management-056",
+        "status": "older_audit_difference_not_published_here",
+        "absentFromMain": false
+      },
+      {
+        "module": "warfarin-management",
+        "id": "warfarin-management-enteral-feeding",
+        "status": "older_audit_difference_not_published_here",
+        "absentFromMain": true
+      },
+      {
+        "module": "direct-oral-anticoagulants",
+        "id": "direct-oral-anticoagulants-025",
+        "status": "older_audit_difference_not_published_here",
+        "absentFromMain": false
+      },
+      {
+        "module": "direct-oral-anticoagulants",
+        "id": "direct-oral-anticoagulants-026",
+        "status": "older_audit_difference_not_published_here",
+        "absentFromMain": false
+      },
+      {
+        "module": "direct-oral-anticoagulants",
+        "id": "direct-oral-anticoagulants-027",
+        "status": "older_audit_difference_not_published_here",
+        "absentFromMain": false
+      },
+      {
+        "module": "direct-oral-anticoagulants",
+        "id": "direct-oral-anticoagulants-028",
+        "status": "older_audit_difference_not_published_here",
+        "absentFromMain": false
+      },
+      {
+        "module": "direct-oral-anticoagulants",
+        "id": "direct-oral-anticoagulants-029",
+        "status": "older_audit_difference_not_published_here",
+        "absentFromMain": false
+      },
+      {
+        "module": "direct-oral-anticoagulants",
+        "id": "direct-oral-anticoagulants-030",
+        "status": "older_audit_difference_not_published_here",
+        "absentFromMain": false
+      },
+      {
+        "module": "direct-oral-anticoagulants",
+        "id": "direct-oral-anticoagulants-031",
+        "status": "older_audit_difference_not_published_here",
+        "absentFromMain": false
+      },
+      {
+        "module": "direct-oral-anticoagulants",
+        "id": "direct-oral-anticoagulants-032",
+        "status": "older_audit_difference_not_published_here",
+        "absentFromMain": false
+      },
+      {
+        "module": "direct-oral-anticoagulants",
+        "id": "direct-oral-anticoagulants-049",
+        "status": "older_audit_difference_not_published_here",
+        "absentFromMain": false
+      },
+      {
+        "module": "direct-oral-anticoagulants",
+        "id": "direct-oral-anticoagulants-050",
+        "status": "older_audit_difference_not_published_here",
+        "absentFromMain": false
+      },
+      {
+        "module": "direct-oral-anticoagulants",
+        "id": "direct-oral-anticoagulants-051",
+        "status": "older_audit_difference_not_published_here",
+        "absentFromMain": false
+      },
+      {
+        "module": "direct-oral-anticoagulants",
+        "id": "direct-oral-anticoagulants-052",
+        "status": "older_audit_difference_not_published_here",
+        "absentFromMain": false
+      }
+    ],
+    "remainingHistoricalQuestions": 99,
+    "limits": "Five whole questions/20 choices only. No whole module or chapter closure. Older17Audit differences including one Audit-only question remain preserved and not published here. The selected30and entire cumulative pool remain exact."
+  }
 }

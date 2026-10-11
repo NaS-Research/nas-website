@@ -21549,7 +21549,8 @@
       "questions": 117,
       "status": "reviewing",
       "evidence": [
-        "enteral-nutrition-broader-warfarin-review.json"
+        "enteral-nutrition-broader-warfarin-review.json",
+        "anticoagulant-historical-live-release-review.json"
       ],
       "latestEnteralDependencyReview": {
         "evidence": "enteral-nutrition-broader-warfarin-review.json",
@@ -21569,6 +21570,17 @@
         ],
         "releasedBank": 117,
         "unreleasedDraftBankItems": 0,
+        "wholeModuleVerified": false
+      },
+      "historicalAnticoagulantScopedReview": {
+        "evidence": "anticoagulant-historical-live-release-review.json",
+        "verifiedQuestionIds": [
+          "warfarin-management-011",
+          "warfarin-management-035",
+          "warfarin-management-103"
+        ],
+        "productionLiveVerified": true,
+        "mainCommit": "aa73ca0f3e5b34974c971924065f2bca09880865",
         "wholeModuleVerified": false
       }
     },
@@ -21628,7 +21640,8 @@
       "evidence": [
         "enteral-nutrition-broader-doac-review.json",
         "enteral-nutrition-broader-doac-label-review.json",
-        "enteral-nutrition-broader-doac-delivery-review.json"
+        "enteral-nutrition-broader-doac-delivery-review.json",
+        "anticoagulant-historical-live-release-review.json"
       ],
       "latestEnteralDependencyReview": {
         "evidence": "enteral-nutrition-broader-doac-review.json",
@@ -21735,6 +21748,16 @@
         "wholeENModuleVerified": false,
         "wholeChapterVerified": false,
         "workingDraftPreservedUnreleased": true
+      },
+      "historicalAnticoagulantScopedReview": {
+        "evidence": "anticoagulant-historical-live-release-review.json",
+        "verifiedQuestionIds": [
+          "direct-oral-anticoagulants-007",
+          "direct-oral-anticoagulants-099"
+        ],
+        "productionLiveVerified": true,
+        "mainCommit": "aa73ca0f3e5b34974c971924065f2bca09880865",
+        "wholeModuleVerified": false
       }
     },
     {
