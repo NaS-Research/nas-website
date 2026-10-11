@@ -102,7 +102,7 @@ function ResearchRail({ studies, label, compact, reduced }) {
           <div className="research-gallery__caption">
             <p>{study.area} <span>· {study.type}</span></p>
             <h3>{study.title}</h3>
-            <span className="research-gallery__read">{study.type === "White Paper" ? "Read paper" : study.type === "Release" ? "Read announcement" : study.type === "Institutional Essay" ? "Read article" : "Read study"}</span>
+            <span className="research-gallery__read">{study.type === "Publications" ? "Read paper" : study.type === "Releases" ? "Read announcement" : study.type === "Essays" ? "Read article" : "Read study"}</span>
           </div>
         </Link>)}
       </div>)}
@@ -113,8 +113,8 @@ function ResearchRail({ studies, label, compact, reduced }) {
 
 export default function ResearchGallery({ studies }) {
   const { perspectives, publications } = useMemo(() => ({
-    perspectives: studies.filter(study => study.type === "Institutional Essay" || study.type === "Release"),
-    publications: studies.filter(study => study.type !== "Institutional Essay" && study.type !== "Release"),
+    perspectives: studies.filter(study => study.type === "Essays" || study.type === "Releases"),
+    publications: studies.filter(study => study.type !== "Essays" && study.type !== "Releases"),
   }), [studies]);
   // Start still for SSR; enable movement only after checking the visitor's preference.
   const [reduced, setReduced] = useState(true);

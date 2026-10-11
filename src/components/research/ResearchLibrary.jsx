@@ -5,13 +5,13 @@ import "./publication-artwork.css";
 import Link from "next/link";
 import { useEffect, useMemo, useRef, useState } from "react";
 
-import { matchesResearchType, researchTypeGroup } from "@/data/researchTaxonomy.mjs";
+import { matchesResearchType, researchTypeGroup, researchAreaGroup } from "@/data/researchTaxonomy.mjs";
 
 const viewPageSizes = { grid: 6, compact: 7, preview: 3 };
 
 export default function ResearchLibrary({ items, types, initialArea = "All areas", initialType = "All" }) {
-  const validType = value => types.includes(value) || items.some(item => item.type === value) ? value : "All";
-  const validArea = value => items.some(item => item.area === value) ? value : "All areas";
+  const validType = value => types.includes(researchTypeGroup(value)) ? researchTypeGroup(value) : "All";
+  const validArea = value => items.some(item => item.area === researchAreaGroup(value)) ? researchAreaGroup(value) : "All areas";
   const [activeType, setActiveType] = useState(() => validType(initialType));
   const [area, setArea] = useState(() => validArea(initialArea));
   const [sort, setSort] = useState("newest");

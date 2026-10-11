@@ -1,22 +1,19 @@
-// Publication format and scientific area are separate classifications.
+// The public library uses four formats and a reviewed subject vocabulary.
 export const researchTypeGroups = {
-  Publications: ["Publication", "Research Report", "Technical Report", "White Paper"],
-  "Model Cards": ["Model Card"],
+  Publications: ["Publication", "Research Report", "Technical Report", "White Paper", "Model Card", "Model Cards"],
   "Research Notes": ["Research Note"],
   Releases: ["Release"],
   Essays: ["Institutional Essay"],
 };
-export const matchesResearchType = (item, group) =>
-  group === "All" || item.type === group || Boolean(researchTypeGroups[group]?.includes(item.type));
-// Announcements and essays are web articles, even when they are citable.
-// A research format may offer a PDF only when an actual paper is available.
-export const getResearchPdfUrl = (item) =>
-  ["Publications", "Research Notes", "Model Cards"].some(group => matchesResearchType(item, group))
-    ? item.pdfUrl || null
-    : null;
-export const availableResearchTypes = (items) => [
-  "All",
-  ...Object.keys(researchTypeGroups).filter(group => items.some(item => matchesResearchType(item, group))),
-];
-
-export const researchTypeGroup = (type) => Object.keys(researchTypeGroups).find(group => researchTypeGroups[group].includes(type)) || type;
+export const researchAreas = ["Drug Discovery", "Genomics", "Healthcare Operations", "Institutional", "Oncology", "Scientific Infrastructure"];
+// Preserve links shared before the editorial taxonomy update.
+export const researchTypeGroup = type => Object.keys(researchTypeGroups).find(group => group === type || researchTypeGroups[group].includes(type)) || type;
+export const researchAreaGroup = area => area === "Community" ? "Institutional" : area;
+export const matchesResearchType = (item, group) => group === "All" || researchTypeGroup(item.type) === researchTypeGroup(group);
+export const getResearchPdfUrl = item => ["Publications", "Research Notes"].includes(researchTypeGroup(item.type)) ? item.pdfUrl || null : null;
+export const availableResearchTypes = items => ["All", ...Object.keys(researchTypeGroups).filter(group => items.some(item => matchesResearchType(item, group)))];
+export function validateResearchTaxonomy(items) {
+  for (const item of items) {
+    if (!Object.hasOwn(researchTypeGroups, item.type) || !researchAreas.includes(item.area)) throw new Error(`Unreviewed research classification: ${item.slug} (${item.type}, ${item.area})`);
+  }
+}

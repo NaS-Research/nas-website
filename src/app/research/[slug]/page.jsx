@@ -102,7 +102,7 @@ export default async function ResearchPublicationPage({ params }) {
   const item = getResearchItem(slug);
   if (!item) notFound();
 
-  const isResearchPublication = ["Research Report", "Research Note", "White Paper"].includes(item.type) || Boolean(item.citable);
+  const isResearchPublication = ["Publications", "Research Notes"].includes(item.type) || Boolean(item.citable);
   const pdfUrl = getResearchPdfUrl(item);
   const isPaperArticle = item.variant === "paper";
   const isOriginStory = item.variant === "institutional-origin";

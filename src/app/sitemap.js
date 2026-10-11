@@ -30,7 +30,7 @@ export default function sitemap() {
     url: `${baseUrl}/research/${item.slug}`,
     lastModified: new Date(item.updatedDateISO || item.dateISO),
     changeFrequency: "monthly",
-    priority: item.type === "White Paper" ? 0.9 : 0.7,
+    priority: item.type === "Publications" ? 0.9 : 0.7,
   }));
 
   const projectPages = researchProjects.map((project) => ({
